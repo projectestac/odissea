@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Permet només els usuaris amb un rol de curs especificat.';
+$string['title'] = 'Rol';

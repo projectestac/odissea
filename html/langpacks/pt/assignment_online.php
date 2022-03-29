@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_uploaded'] = 'Um texto online foi carregado';
+$string['event_assessable_uploaded'] = 'Foi carregado um texto online';
 $string['pluginname'] = 'Online';
 $string['privacy:metadata'] = 'O módulo Trabalho online não armazena quaisquer dados pessoais.';

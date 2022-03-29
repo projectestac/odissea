@@ -37,7 +37,7 @@ $string['clihelp'] = 'Print deze hulp uit.';
 $string['climissingargument'] = 'Argument - {$a} is vereist';
 $string['clititle'] = 'Commandoregel Upload gebruikerstool.';
 $string['clivalidationerror'] = 'Validatiefout:';
-$string['csvdelimiter'] = 'Scheidingsteken voor CSV';
+$string['csvdelimiter'] = 'CSV scheidingsteken';
 $string['defaultvalues'] = 'Standaardwaarden';
 $string['deleteerrors'] = 'Verwijder fouten';
 $string['encoding'] = 'Codering';
@@ -81,7 +81,7 @@ $string['uploadusers'] = 'Uploaden';
 $string['uploadusers_help'] = 'Gebruikers kunnen geïmporteerd worden en optioneel aangemeld worden in een cursus vanuit een tekstbestand. Het bestand moet er als volgt uitzien:
 
 * Elke lijn van het bestand moet één record bevatten
-* Elke record is een datareeks, gescheiden door komma\'s (of andere scheidingstekens)
+* Elke record is een datareeks, gescheiden door het geselecteerde scheidingsteken
 * Het eerste record van het bestand is speciaal: het bevat de lijst met veldnamen. Dit bepaalt de opmaak van de rest van het bestand.
 * Vereiste veldnamen zijn: username, firstname,  lastname, email';
 $string['uploaduserspreview'] = 'Voorbeeld uploaden gebruikers';

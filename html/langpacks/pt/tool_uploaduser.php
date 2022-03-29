@@ -37,7 +37,7 @@ $string['clihelp'] = 'Imprimir esta ajuda.';
 $string['climissingargument'] = 'Argumento -- {$a} é obrigatório';
 $string['clititle'] = 'Linha de comando da ferramenta de carregamento do utilizador.';
 $string['clivalidationerror'] = 'Erro de validação:';
-$string['csvdelimiter'] = 'Delimitador CSV';
+$string['csvdelimiter'] = 'Separador CSV';
 $string['defaultvalues'] = 'Valores predefinidos';
 $string['deleteerrors'] = 'Apagar erros';
 $string['encoding'] = 'Codificação';
@@ -76,10 +76,10 @@ $string['uploadpictures'] = 'Carregar fotos dos utilizadores';
 $string['uploadpictures_help'] = 'As fotos dos utilizadores podem ser carregadas como um ficheiro Zip ou um ficheiro de imagem. Os ficheiros de imagem devem ser nomeados com nome-de-utilizador.extensão.<br>Por exemplo, o ficheiro "user1234.jpg" para o utilizador com o nome de utilizador user1234.';
 $string['uploaduser:uploaduserpictures'] = 'Carregar fotos dos utilizadores';
 $string['uploadusers'] = 'Carregar utilizadores';
-$string['uploadusers_help'] = 'Os utilizadores podem ser carregados (e opcionalmente inscritos nas disciplinas) através de ficheiro de texto. O ficheiro deve ter o seguinte formato:
+$string['uploadusers_help'] = 'Os utilizadores podem ser carregados (e opcionalmente inscritos nas disciplinas) via ficheiro de texto. O ficheiro deve ter o seguinte formato:
 
 * Cada linha do ficheiro contém um registo
-* Cada registo é uma linha com dados separados por vírgulas (ou outro delimitador)
+* Cada registo é uma linha com uma série de dados separados pelo separador selecionado
 * A primeira linha contém a lista dos nomes dos campos que define o formato do ficheiro
 * Os nomes dos campos obrigatórios são: username, password, firstname, lastname, email';
 $string['uploaduserspreview'] = 'Pré-visualizar os utilizadores carregados';

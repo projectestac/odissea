@@ -76,14 +76,12 @@ $string['uploadpictures'] = 'Déposer des avatars';
 $string['uploadpictures_help'] = 'Les avatars des utilisateurs peuvent être déposés sous la forme d\'un fichier compressé (zip) de fichiers images. Le nom des fichiers images doit être de la forme <em>attribut-choisi.extension</em>. Par exemple, si vous choisissez pour la correspondance des images l\'attribut « nom d\'utilisateur » et que le nom d\'utilisateur de l\'utilisateur concerné est « user1234 », le nom de fichier devrait être « user1234.jpg ».';
 $string['uploaduser:uploaduserpictures'] = 'Déposer des avatars';
 $string['uploadusers'] = 'Importation d\'utilisateurs';
-$string['uploadusers_help'] = 'Il est possible d\'importer manuellement des comptes utilisateurs (et optionnellement inscrits à des cours) à partir d\'un fichier texte, ce fichier doit être formaté de la façon suivante :
+$string['uploadusers_help'] = 'Il est possible d\'importer manuellement des comptes utilisateurs (et optionnellement inscrits à des cours) à partir d\'un fichier texte. Le format de ce fichier doit être le suivant :
 
 * chaque ligne du fichier contient un enregistrement ;
-* les données de chaque enregistrement sont séparées par une virgule (ou un autre caractère de séparation) ;
-* le premier enregistrement contient le nom des champs qui composent les enregistrements, et détermine ainsi la structure de la suite du fichier ;
-* les champs requis sont username, password, firstname, lastname, email
-
-<a href="https://docs.moodle.org/fr/Importer_des_utilisateurs" target="_blank">Plus d\'aide à ce sujet</a>';
+* chaque enregistrement est constitué d\'une série de données séparées par le caractère de séparation sélectionné ;
+* le premier enregistrement contient la liste des noms des champs définissant le format du reste du fichier ;
+* les champs requis sont username, password, firstname, lastname, email.';
 $string['uploaduserspreview'] = 'Prévisualisation de la création d\'utilisateurs';
 $string['uploadusersresult'] = 'Résultats de la création d\'utilisateurs';
 $string['useraccountupdated'] = 'Utilisateur modifié';
@@ -97,7 +95,7 @@ $string['usersskipped'] = 'Utilisateurs ignorés';
 $string['usersupdated'] = 'Utilisateurs modifiés';
 $string['usersweakpassword'] = 'Utilisateurs avec mot de passe faible';
 $string['userthemesnotallowed'] = 'Les thèmes d\'utilisateur ne sont pas activés ; de tels thèmes inclus dans le fichier d\'utilisateurs seront ignorés.';
-$string['uubulk'] = 'Sélectionner pour des opérations en lots';
+$string['uubulk'] = 'Sélectionner pour des opérations par lots';
 $string['uubulkall'] = 'Tous les utilisateurs';
 $string['uubulknew'] = 'Nouveaux utilisateurs';
 $string['uubulkupdated'] = 'Utilisateurs mis à jour';

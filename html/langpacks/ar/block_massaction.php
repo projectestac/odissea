@@ -25,6 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['jsdisabled'] = 'ينبغي عليك تمكين Javascript لاستعمال هذه الكتلة.';
 $string['massaction:addinstance'] = 'إضافة كتلة جديدة من إجراءات بالجملة';
 $string['massaction:use'] = 'استعمل كتلة إجراءات بالجملة';

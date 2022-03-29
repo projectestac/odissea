@@ -26,33 +26,48 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action_delete'] = 'Löschen';
+$string['action_duplicate'] = 'Duplizieren';
+$string['action_duplicatetosection'] = 'Nach Abschnitt duplizieren';
 $string['action_hide'] = 'Verbergen';
+$string['action_makeavailable'] = 'Verfügbar machen';
+$string['action_moveleft'] = 'Nach links verschieben';
+$string['action_moveright'] = 'Nach rechts verschieben';
+$string['action_movetosection'] = 'In Abschnitt verschieben';
 $string['action_show'] = 'Anzeigen';
-$string['allitems'] = 'Alles auswählen in Abschnitt:';
+$string['backgroundtaskinformation'] = 'Die von Ihnen gewünschte Aktion wird aus Performancegründen im Hintergrund ausgeführt. Sie können in der Zwischenzeit weiterarbeiten.';
 $string['blockname'] = 'Stapeloperationen';
 $string['blocktitle'] = 'Stapeloperationen';
-$string['confirmation'] = 'Sind Sie sicher, dass Sie {$a} Elemente löschen möchten?';
+$string['deletecheck'] = 'Löschen mehrerer Aktivitäten bestätigen';
+$string['deletecheckconfirm'] = 'Möchten Sie die folgenden Aktivitäten wirklich löschen?';
+$string['deselectall'] = 'Alles abwählen';
+$string['duplicatemaxactivities'] = 'Maximale Anzahl von Aktivitäten zum Duplizieren';
+$string['duplicatemaxactivities_description'] = 'Die maximale Anzahl an Aktivitäten, die im Stapeloperationen-Block direkt ohne Hintergrund-Task dupliziert werden. Wenn auf "0" gesetzt, wird der Duplizierungsvorgang immer als Hintergrund-Task ausgeführt.';
 $string['invalidaction'] = 'Unbekannte Aktion: {$a}';
 $string['invalidcourseid'] = 'Ungültige Kurs-ID';
 $string['invalidcoursemodule'] = 'Ungültiges Kursmodul';
 $string['invalidmoduleid'] = 'Ungültige Modul-ID: {$a}';
-$string['itemsin'] = 'Elemente in';
-$string['jsdisabled'] = 'Sie müssen Javascript aktivieren, um diesen Block nutzen zu können.';
-$string['massaction:addinstance'] = 'Einen neuen Stapeloperationen Block hinzufügen';
-$string['massaction:use'] = 'Den Stapeloperationen Block nutzen';
-$string['missingparam'] = 'Programmierfehler: benötigter JSON Parameter "{$a}" fehlt';
-$string['noaction'] = 'Keine Operation ausgewählt';
-$string['noitemselected'] = 'Bitte wählen Sie mindestens ein Element aus, um die Stapeloperation auszuführen';
-$string['pluginname'] = 'Stapeloperationen Block';
-$string['section'] = 'Thema';
-$string['section_zero'] = 'Allgemein';
+$string['jsonerror'] = 'Programmierfehler: Ungültiges JSON-format.';
+$string['massaction:addinstance'] = 'Stapeloperationen-Block hinzufügen';
+$string['massaction:use'] = 'Benutzung des Stapeloperationen-Blocks';
+$string['modulename'] = 'Aktivitätsname';
+$string['moduletype'] = 'Aktivitätstyp';
+$string['noaction'] = 'Keine Aktion ausgewählt';
+$string['noactionsavailable'] = 'Sie haben kein Recht, Aktivitäten durchzuführen, die von diesem Block bereitgestellt werden.';
+$string['noitemselected'] = 'Bitte wählen Sie mindestens eine Aktivität aus, auf die die gewählte Aktion angewendet werden soll';
+$string['nomovingtargetselected'] = 'Bitte wählen Sie einen Zielabschnitt';
+$string['pluginname'] = 'Stapeloperationen';
+$string['privacy:metadata'] = 'Dieser Block ermöglicht es lediglich, Standardaktionen für mehrere Aktivitäten gleichzeitig durchzuführen. Von diesem Block werden keinerlei Daten gespeichert.';
 $string['sectionnotexist'] = 'Zielabschnitt existiert nicht';
+$string['sectionselect'] = 'Abschnittsauswahl';
+$string['sectionselect_help'] = 'Sie können nur Abschnitte auswählen, die Aktivitäten enthalten.
+Im Kachel- und Ein-Themen-Format können Sie außerdem nur die Abschnitte auswählen, die aktuell zu sehen sind.';
 $string['selectall'] = 'Alles auswählen';
-$string['selecttarget'] = 'Bitte wählen Sie einen Zielabschnitt aus, in welchen die Elemente bewegt werden sollen';
-$string['topic'] = 'Thema';
-$string['usage'] = 'Stapeloperationen Hilfe';
-$string['usage_help'] = '<p>Dieser Block ermöglicht es Trainer/innen in einem Kurs Operationen für mehrere Materialien oder Aktivitäten gleichzeitig auszuführen anstatt wiederholt dieselbe Operation auf die einzelnen Elemente anwenden zu müssen.</p>
-<p>Um diesen Block nutzen zu können, muss JavaScript im Browser aktiviert sein, Sie müssen sich im Bearbeitungsmodus des Kurses befinden und AJAX muss deaktiviert sein. Es werden nur Kurse im Themen- oder Wochenformat unterstützt.</p>
-<p>Die unterstützen Operationen beinhalten Massenlöschen, -verbergen, -anzeigen und -verschieben von Modulen. Sie können Elemente auswählen, indem Sie die Checkbox hinter einem Modul aktivieren. Wenn Sie alle Elemente auswählen oder die Auswahl wieder aufheben möchten, können Sie dies direkt über die entsprechende Option im Block selbst tun.</p>';
-$string['week'] = 'W';
-$string['withselected'] = 'Mit der Auswahl';
+$string['selectallinsection'] = 'Alles in Abschnitt auswählen';
+$string['unusable'] = 'Stapeloperationen stehen in diesem Kursformat oder diesem Design nicht zur Verfügung';
+$string['usage'] = 'Nutzung des Stapeloperationen-Blocks';
+$string['usage_help'] = '<p>Dieser Block ermöglicht es Trainer/innen, Aktionen für mehrere Aktivitäten im Bearbeitungsmodus durchzuführen statt sie einzeln auf jede Aktivität anzuwenden.</p>
+<p>Um diesen Block zu verwenden, muss im Browser Javascript aktiviert sein und sich der Kurs im Bearbeitungsmodus befinden. Aktuell unterstützte Kursformate sind Wochenformat, Themenformat, Einklappbare Abschnitte, Ein-Themen-Format und Kachelformat.</p>
+<p>Unterstützte Aktionen sind Löschen, Einrücken (Verschieben nach links/rechts), Verbergen/Anzeigen und Verschieben in andere Abschnitte.
+Um Aktivitäten auszuwählen, setzen Sie einfach den Haken in der Checkbox links neben der jeweiligen Aktivität. Alternativ können Sie alle Aktivitäten im Kurs oder eines Abschnitts über die Links im Stapeloperationen-Block aus- bzw. abwählen.</p>
+<p>Um dann eine Aktion darauf anzuwenden, klicken Sie einfach auf die jeweilige Aktion im Stapeloperationen-Block.</p>';
+$string['withselected'] = 'Mit ausgewählten Aktivitäten';

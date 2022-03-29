@@ -85,6 +85,7 @@ $string['type'] = 'Тип';
 $string['unlisted'] = 'вне списка';
 $string['unsupported'] = 'Этот тип контента не поддерживается.';
 $string['upload'] = 'Загрузить';
+$string['uses'] = 'Связанные места';
 $string['visibilitychoicepublic'] = 'Общедоступный';
 $string['visibilitychoiceunlisted'] = 'Вне списка';
 $string['visibilitypref'] = 'Видимость контента по умолчанию';

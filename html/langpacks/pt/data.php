@@ -167,7 +167,7 @@ $string['failedpresetdelete'] = 'Ocorreu um erro durante a eliminação do prot�
 $string['fieldadded'] = 'O campo foi adicionado';
 $string['fieldallowautolink'] = 'Permitir hiperligações automáticas';
 $string['fielddeleted'] = 'O campo foi apagado';
-$string['fielddelimiter'] = 'Delimitador de campo';
+$string['fielddelimiter'] = 'Separador de campo';
 $string['fielddescription'] = 'Descrição do campo';
 $string['fieldenclosure'] = 'Limites do campo';
 $string['fieldheight'] = 'Altura';
@@ -399,11 +399,11 @@ $string['unsupportedfieldslist'] = 'Os seguintes campos não podem ser exportado
 $string['updatefield'] = 'Atualizar um campo existente';
 $string['uploadfile'] = 'Enviar ficheiro';
 $string['uploadrecords'] = 'Importar registos a partir de ficheiro';
-$string['uploadrecords_help'] = 'Os registos podem ser inseridos através de um ficheiro de texto. O formato do ficheiro deve respeitar as seguintes regras:
+$string['uploadrecords_help'] = 'Os registos podem ser carregados via ficheiro de texto. O ficheiro deve ter o seguinte formato:
 
-* Cada linha do ficheiro corresponde a um registo
-* Cada registo tem um conjunto de valores para os diferentes campos, separados por vírgulas (ou outros caracteres)
-* A primeira linha do ficheiro contém os nomes dos campos, definindo a ordem pela qual os mesmos são apresentados em todo o ficheiro
+* Cada linha do ficheiro contém um registo
+* Cada registo é uma linha com uma série de dados separados pelo separador selecionado
+*O primeiro registo contém uma lista com os nomes dos campos, definindo assim o formato do resto do ficheiro
 
 O delimitador dos valores dos campos é um carácter que marca o início e fim do valor de cada campo. Em geral pode deixar indefinido.';
 $string['uploadrecords_link'] = 'mod/data/import';

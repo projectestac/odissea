@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_uploaded'] = 'S\'ha pujat un text en línia.';
 $string['pluginname'] = 'En línia';
+$string['privacy:metadata'] = 'El connector de tasca en línia no emmagatzema cap dada personal.';

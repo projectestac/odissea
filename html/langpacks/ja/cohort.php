@@ -62,10 +62,10 @@ $string['eventcohortupdated'] = 'コーホートが更新されました。';
 $string['external'] = '外部コーホート';
 $string['idnumber'] = 'コーホートID';
 $string['invalidtheme'] = 'コーホートテーマが存在しません。';
-$string['memberscount'] = 'コーホート数';
+$string['memberscount'] = 'コーホートサイズ';
 $string['name'] = '名称';
 $string['namecolumnmissing'] = 'CSVファイルのフォーマットに問題があります。正しいカラム名が含まれていることを確認してください。ユーザをコーホートに追加するにはサイト管理の「ユーザをアップロードする」に移動してください。';
-$string['namefieldempty'] = 'フィールド名を空白にすることはできません。';
+$string['namefieldempty'] = 'フィールド名は空白にできません。';
 $string['newidnumberfor'] = 'コーホート {$a} の新しいIDナンバー';
 $string['newnamefor'] = 'コーホート {$a} の新しい名称';
 $string['nocomponent'] = '手動作成';
@@ -76,22 +76,22 @@ $string['privacy:metadata:cohort_members'] = 'ユーザのコーホートに関�
 $string['privacy:metadata:cohort_members:cohortid'] = 'コーホートのIDです。';
 $string['privacy:metadata:cohort_members:timeadded'] = 'タイムスタンプはユーザがコーホートに追加された日時を示します。';
 $string['privacy:metadata:cohort_members:userid'] = 'コーホートに関連するユーザのIDです。';
-$string['removeuserwarning'] = 'コーホートからユーザを削除することにより、結果としてユーザ設定、評定、グループメンバーシップおよびコースに関係するユーザ情報も含めて、複数のコースからユーザを登録解除することになります。';
+$string['removeuserwarning'] = 'コーホートからユーザを削除することにより、結果としてユーザ設定、評定、グループメンバーシップおよびコースに関係するユーザ情報も含めて複数のコースからユーザを登録解除することになります。';
 $string['search'] = '検索';
 $string['searchcohort'] = 'コーホートを検索する';
 $string['selectfromcohort'] = 'コーホートからメンバーを選択する';
 $string['systemcohorts'] = 'システムコーホート';
 $string['unknowncohort'] = '不明なコーホートです ({$a})!';
 $string['uploadcohorts'] = 'コーホートをアップロードする';
-$string['uploadcohorts_help'] = 'テキストファイルによってコーホートをアップロードすることができます。ファイルのフォーマットは以下に従ってください:
+$string['uploadcohorts_help'] = 'テキストファイルでコーホートをアップロードできます。ファイルのフォーマットは以下に従ってください:
 
 * それぞれの行に1レコードを含んでください。
-* それぞれのレコードはカンマ (またはデリミタ) によって区切られた一連のデータです。
+* それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
 * 最初のレコードにはファイルの残りの部分のフォーマットを定義するフィールド名一覧を含んでください。
 * 必須フィールド名は「name」です。
 * 任意フィールド名は「idnumber」「description」「descriptionformat」「context」「category」「category_id」「category_idnumber」「category_path」です。';
-$string['uploadedcohorts'] = '{$a} 件のコーホートをアップロードする';
+$string['uploadedcohorts'] = '{$a} 件のコーホートがアップロードされました。';
 $string['useradded'] = 'ユーザがコーホート「 {$a} 」に追加されました。';
 $string['visible'] = '可視性';
-$string['visible_help'] = 'コーホートコンテクスト内で「moodle/cohort:view」ケイパビリティが割り当てられたユーザはコーホートすべてを閲覧することができます。<br />
-また、利用可能なコーホートはコース内のユーザによって閲覧することもできます。';
+$string['visible_help'] = 'コーホートコンテクスト内で「moodle/cohort:view」ケイパビリティが割り当てられたユーザはすべてのコーホートを閲覧できます。<br />
+また、閲覧可能なコーホートはコース内のユーザによっても閲覧できます。';

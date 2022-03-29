@@ -29,6 +29,7 @@ $string['confirmquestionsaveasedited'] = 'أؤكد أنني أريد أن يتم
 $string['confirmsave'] = 'تأكيد ثم حفظ {$a}';
 $string['correctanswer'] = 'الإجابة الصحيحة';
 $string['correctanswerandfeedback'] = 'الجواب الصحيح والإفادة';
+$string['corruptedquestion'] = 'هذا السؤال تالف ويتضمن أسئلة فرعية ليست موجودة في نظامك.';
 $string['decodeverifyquestiontext'] = 'فك الترميز والتحقق من نص السؤال';
 $string['invalidmultianswerquestion'] = 'سؤال الإجابات المضمنة (Cloze) غير صالح ({$a}).';
 $string['layout'] = 'تصميم';
@@ -38,6 +39,7 @@ $string['layoutmultiple_vertical'] = 'العمود الرأسي من خانات 
 $string['layoutselectinline'] = 'القائمة المنسدلة مضمنة في النص';
 $string['layoutundefined'] = 'تصميم غير معروف';
 $string['layoutvertical'] = 'عمود رأسي من أزرار الراديو';
+$string['missingsubquestion'] = 'هذا السؤال الفرعي مفقود من نظامك ولا يمكن عرضه.';
 $string['nooptionsforsubquestion'] = 'غير قادر على الحصول على خيارات السؤال للجزء # {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'السؤال أكمل الفراغ (الإجابات المتعددة) "<strong>{$a}</strong>" لا يحتوي على أي سؤال';
 $string['pleaseananswerallparts'] = 'يرجى الإجابة على جميع أجزاء السؤال.';

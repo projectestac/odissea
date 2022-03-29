@@ -98,18 +98,10 @@ $string['config_importrecordings_enabled'] = 'استيراد التسجيلات 
 $string['config_importrecordings_enabled_description'] = 'عند تمكينه مع تمكين ميزة التسجيل، سيكون ممكنًا استيراد التسجيلات من مقررات مختلفة إلى النشاط.';
 $string['config_importrecordings_from_deleted_enabled'] = 'استيراد التسجيلات من نشاطات محذوفة مُمَكَّن';
 $string['config_importrecordings_from_deleted_enabled_description'] = 'عند تمكين ميزة التسجيل والاستيراد ، فمن الممكن استيراد التسجيلات من الأنشطة التي لم تعد موجودة في المقرر الدراسي.';
-$string['config_lockedlayout_default'] = 'تأمين التصميم مُمَكَّن إفتراضيًا';
-$string['config_lockedlayout_default_description'] = 'عند تمكينه، تصميم الجلسة سيكون مؤمَّنًا.';
-$string['config_lockedlayout_editable'] = 'تأمين التصميم يمكن تحريره';
-$string['config_lockedlayout_editable_description'] = 'تأمين التصميم إفتراضيًا يمكن تحريره عند إضافة المثيل أو تحديثه.';
 $string['config_lockonjoin_default'] = 'تجاهل التأمين عند الانضمام مُمَكَّن إفتراضيًا';
 $string['config_lockonjoin_default_description'] = 'عند تمكينه، سيتم تجاهل إعدادات التأمين. تهيئة التأمين ينبغي تمكينها ليتم تطبيقه.';
 $string['config_lockonjoin_editable'] = 'تجاهل التأمين عند الانضمام يمكن تحريره';
 $string['config_lockonjoin_editable_description'] = 'تجاهل التأمين عند الانضمام إفتراضيًا يمكن تحريره عند إضافة المثيل أو تحديثه.';
-$string['config_lockonjoinconfigurable_default'] = 'تهيئة التأمين مُمَكَّنة إفتراضيًا';
-$string['config_lockonjoinconfigurable_default_description'] = 'عند تمكينه، سيكون بالإمكان تمكين أو تعطيل إعدادات تأمين الجلسة من أدوات السيطرة أعلاه.';
-$string['config_lockonjoinconfigurable_editable'] = 'تهيئة التأمين يمكن تحريرها';
-$string['config_lockonjoinconfigurable_editable_description'] = 'تهيئة التأمين إفتراضيًا يمكن تحريرها عند إضافة المثيل أو تحديثه.';
 $string['config_locksettings'] = 'التهيئة لإعدادات التأمين';
 $string['config_locksettings_description'] = 'هذه الإعدادات تُمكن أو تُعطل الخيارات في واجهة المستخدم لإعدادات التأمين، وكذلك تعريف القيم الافتراضية لتلك الخيارات.';
 $string['config_meetingevents_enabled'] = 'تسجيل الأحداث المباشرة';
@@ -144,8 +136,6 @@ $string['config_recording_hide_button_default'] = 'زر إخفاء التسجي�
 $string['config_recording_hide_button_default_description'] = 'عند تأشيره، زر التسجيل سيتم إخفاؤه.';
 $string['config_recording_hide_button_editable'] = 'إخفاء زر التسجيل يمكن تحريره';
 $string['config_recording_hide_button_editable_description'] = 'عند تأشيره، ستتضمن الواجهة خيار تمكين أو تعطيل ميزة إخفاء زر التسجيل.';
-$string['config_recording_icons_enabled'] = 'إدارة أيقونات التسجيل';
-$string['config_recording_icons_enabled_description'] = 'عند تمكينه، ستُظهر لوحة إدارة التسجيل أيقونات لإجراءات النشر/عدم النشر والحذف.';
 $string['config_recordingready_enabled'] = 'إرسال الإشعارات عند جهوزية التسجيل';
 $string['config_recordingready_enabled_description'] = 'تمكين الملحق من إرسال الإشعارات عندما يصير التسجيل جاهزاً. (هذا يصلح فقط عند تمكين النص البرمجي post_publish_recording_ready_callback في مخدم غرف اجتماعات BBB)';
 $string['config_recordings'] = 'التهيئة لميزة "إظهار التسجيلات"';
@@ -299,9 +289,7 @@ $string['mod_form_field_instanceprofiles'] = 'نوع المثيل';
 $string['mod_form_field_instanceprofiles_help'] = 'حدد النوع لمثيل BBB هذا.';
 $string['mod_form_field_intro'] = 'الوصف';
 $string['mod_form_field_intro_help'] = 'وصف موجز للغرفة أو المؤتمر.';
-$string['mod_form_field_lockedlayout'] = 'تأمين تصميم الغرفة';
 $string['mod_form_field_lockonjoin'] = 'تجاهل إعدادات التأمين';
-$string['mod_form_field_lockonjoinconfigurable'] = 'السماح بتجاهل إعدادات التأمين';
 $string['mod_form_field_muteonstart'] = 'إكتم الصوت عند البدء';
 $string['mod_form_field_name'] = 'اسم الفصل الافتراضي';
 $string['mod_form_field_nosettings'] = 'لا يمكن تعديل أي إعدادات';

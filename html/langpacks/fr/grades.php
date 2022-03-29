@@ -402,9 +402,9 @@ $string['importcsv'] = 'Importation CSV';
 $string['importcsv_help'] = 'Les notes peuvent être importées d\'un fichier CSV dont le format est le suivant :
 
 * chaque ligne du fichier contient un enregistrement ;
-* chaque enregistrement est constitué d\'une série de données séparées par des virgules ou un autre caractère de séparation :
-* le premier enregistrement contient la liste des champs, définissant ainsi le format du reste du fichier ;
-* un champ contenant l\'identité de l\'utilisateur est requis — soit le nom d\'utilisateur, soit le numéro d\'ID, soit l\'adresse de courriel.
+* chaque enregistrement est constitué d\'une série de données séparées par le caractère de séparation sélectionné ;
+* le premier enregistrement contient la liste des noms des champs définissant le format du reste du fichier ;
+* un champ contenant l\'identité de l\'utilisateur est requis : soit le nom d\'utilisateur, soit le numéro d\'ID, soit l\'adresse de courriel.
 
 Un fichier dont la syntaxe est correcte peut être obtenu à titre d\'exemple en exportant quelques notes. Le fichier peut alors être modifié et enregistré en format CSV.';
 $string['importcustom'] = 'Importer comme objectifs de ce cours';

@@ -73,9 +73,9 @@ $string['courseupdated'] = 'Disciplina atualizada';
 $string['createall'] = 'Criar todas e incrementar o nome curto, se necessário';
 $string['createnew'] = 'Criar apenas as novas disciplinas, ignorar as existentes';
 $string['createorupdate'] = 'Criar as novas disciplinas ou atualizar as existentes';
-$string['csvdelimiter'] = 'Delimitador CSV';
-$string['csvdelimiter_help'] = 'Delimitador CSV do ficheiro CSV (Comma Separated Values, valores separados por vírgulas).';
-$string['csvfileerror'] = 'Algo de errado se passa com o formato do ficheiro CSV. Por favor, verifique a correspondência entre o número de cabeçalhos e colunas, e que o delimitador e ficheiro de codificação estão corretos: {$a}';
+$string['csvdelimiter'] = 'Separador CSV';
+$string['csvdelimiter_help'] = 'O caráter que separa a série de dados em cada registo.';
+$string['csvfileerror'] = 'Existe algo de errado com o formato do ficheiro CSV. Verifique a correspondência entre o número de cabeçalhos e colunas e que o separador e a codificação do ficheiro estão corretos. {$a}';
 $string['csvline'] = 'Linha';
 $string['customfieldinvalid'] = 'O campo personalizado \'{$a}\' está em branco ou contém dados inválidos';
 $string['defaultvalues'] = 'Valores predefinidos da disciplina';
@@ -132,14 +132,11 @@ $string['updateonly'] = 'Apenas atualizar disciplinas existentes';
 $string['updatewithdataonly'] = 'Atualizar apenas com os dados do CSV';
 $string['updatewithdataordefaults'] = 'Atualizar com os dados do CSV e dos predefinidos';
 $string['uploadcourses'] = 'Carregar disciplinas';
-$string['uploadcourses_help'] = 'O carregamento das disciplinas pode ser feito via ficheiro de texto. O formato do ficheiro deve estar de acordo com as seguintes indicações:
+$string['uploadcourses_help'] = 'As disciplinas podem ser carregadas via ficheiro de texto. O ficheiro deve ter o seguinte formato:
 
-* Cada linha do ficheiro deve conter um registo;
-
-* Cada registo consiste numa série de dados separados por vírgulas (ou outro tipo de delimitador);
-
-* O primeiro registo deve conter uma lista do nome dos campos que definem o formato do resto do ficheiro;
-
+* Cada linha do ficheiro contém um registo
+* Cada registo é uma linha com uma série de dados separados pelo separador selecionado
+* A primeira linha contém a lista dos nomes dos campos que define o formato do ficheiro
 * Os nomes dos campos obrigatórios são: shortname, fullname, e category';
 $string['uploadcoursespreview'] = 'Pré-visualizar carregamento de disciplinas';
 $string['uploadcoursesresult'] = 'Resultados do carregamento de disciplinas';

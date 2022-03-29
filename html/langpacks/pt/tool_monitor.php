@@ -64,7 +64,7 @@ $string['managesubscriptions'] = 'Monitorização de eventos';
 $string['managesubscriptionslink'] = 'Pode subscrever as regras da página {$a}.';
 $string['messageprovider:notification'] = 'Notificações de subscrições de regras';
 $string['messagetemplate'] = 'Mensagem de notificação';
-$string['messagetemplate_help'] = 'Uma mensagem de notificação é enviada aos subscritores assim que o limite de notificação tenha sido atingido. A notificação pode incluir qualquer um, ou todos, os seguintes espaços reservados:
+$string['messagetemplate_help'] = 'Uma mensagem de notificação é enviada aos subscritores assim que o limite de notificação seja atingido. A notificação pode incluir qualquer um, ou todos, os seguintes espaços reservados:
 
 * Hiperligação para a localização do evento {link}
 * Hiperligação para a área monitorizada {modulelink}
@@ -85,7 +85,7 @@ $string['privacy:metadata:eventname'] = 'Nome completo do evento';
 $string['privacy:metadata:frequency'] = 'Frequência de notificações';
 $string['privacy:metadata:historysummary'] = 'Armazena o histórico de notificações do envio de mensagens';
 $string['privacy:metadata:inactivedate'] = 'Período de tempo, em dias, depois do qual uma subscrição inativa será removida completamente';
-$string['privacy:metadata:lastnotificationsent'] = 'Quando a notificação foi enviada pela última vez para esta subscrição';
+$string['privacy:metadata:lastnotificationsent'] = 'Último envio da notificação para esta subscrição';
 $string['privacy:metadata:messagesummary'] = 'Notificações foram enviadas para o sistema de mensagens.';
 $string['privacy:metadata:name'] = 'Nome da regra';
 $string['privacy:metadata:plugin'] = 'Nome Frankenstlye do módulo';

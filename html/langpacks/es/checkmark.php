@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['editmysubmission'] = 'Editar mi entrega';
+$string['format'] = 'Formato';

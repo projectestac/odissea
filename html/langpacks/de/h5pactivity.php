@@ -127,6 +127,7 @@ $string['review_on_completion'] = 'Teilnehmer/innen können ihre eigenen Versuch
 $string['review_user_attempts'] = 'Nutzerversuche ansehen ({$a})';
 $string['score'] = 'Punktzahl';
 $string['score_out_of'] = '{$a->rawscore} von {$a->maxscore}';
+$string['search:activity'] = 'H5P - Aktivitätsinformation';
 $string['startdate'] = 'Startdatum';
 $string['statement_received'] = 'xAPI Statement empfangen';
 $string['totalscore'] = 'Gesamtpunktzahl';

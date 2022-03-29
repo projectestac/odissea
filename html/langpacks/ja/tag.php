@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = '標準タグが追加されました。';
-$string['addotags'] = '標準タタグを追加する';
+$string['addotags'] = '標準タグを追加する';
 $string['addtagcoll'] = 'タグコレクションを追加する';
 $string['addtagtomyinterests'] = '私の「興味のあること」に「 {$a} 」を追加する';
 $string['alltagpages'] = 'すべてのタグページ';

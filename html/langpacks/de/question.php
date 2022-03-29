@@ -247,6 +247,7 @@ $string['importingquestions'] = '{$a} Frage(n) werden aus der Datei importiert';
 $string['importparseerror'] = 'Fehler beim Einlesen der Importdatei gefunden. Es wurden daher keine Fragen importiert. Zum Einlesen fehlerfreier Fragen setzen Sie die Einstellung \'Bei Fehler stoppen\' auf \'Nein\'.';
 $string['importquestions'] = 'Fragen aus Datei importieren';
 $string['importquestions_help'] = 'Die Funktion ermöglicht es Ihnen Fragen mit verschiedene Fragetypen aus eienr Textdatei zu importieren. Achtung: die Datei muss im UTF-8 Format codiert sein. ';
+$string['importwrongfileencoding'] = 'Die von Ihnen gewählte Datei ist nicht UTF-8 kodiert. {$a}-Dateien müssen aber UTF-8 verwenden.';
 $string['importwrongfiletype'] = 'Die Inhalte der Datei ({$a->actualtype}) passen nicht zum Format der gewählten Importdatei ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Unzulässiges Zeichen {$a} innerhalb der Klammern entdeckt';
 $string['includesubcategories'] = 'Fragen aus Unterkategorien anzeigen';

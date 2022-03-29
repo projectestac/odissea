@@ -327,6 +327,13 @@ if ($hassiteconfig) {
     $temp->add(new admin_setting_managedataformats());
     $ADMIN->add('dataformatsettings', $temp);
 
+    $plugins = core_plugin_manager::instance()->get_plugins_of_type('dataformat');
+    core_collator::asort_objects_by_property($plugins, 'displayname');
+    foreach ($plugins as $plugin) {
+        /** @var \core\plugininfo\dataformat $plugin */
+        $plugin->load_settings($ADMIN, 'dataformatsettings', $hassiteconfig);
+    }
+
     // XTEC ************ AFEGIT - Allow access only to xtecadmin user
     // 2016.08.16 @sarjona
     // 2021.05.20 @aginard

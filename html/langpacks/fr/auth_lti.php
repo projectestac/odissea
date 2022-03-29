@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_ltidescription'] = 'Le plugin d\'authentification LTI, conjointement avec le plugin d\'inscription LTI, permet à des utilisateurs externes d\'accéder à des cours ou des activités particulières. En d\'autres mots, votre plateforme se comporte comme un fournisseur d\'outils LTI.';
+$string['auth_ltidescription'] = 'Le plugin d\'authentification LTI, conjointement avec le plugin « Publier comme outil LTI », permet à des utilisateurs externes d\'accéder à des cours ou des activités particulières. En d\'autres mots, votre plateforme se comporte comme un fournisseur d\'outils LTI.';
 $string['pluginname'] = 'LTI';
 $string['privacy:metadata'] = 'Le plugin d\'authentification LTI n\'enregistre aucune donnée personnelle.';

@@ -25,8 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['blindmarkingname'] = 'Participant {$a}';
+$string['blindmarkingviewfullname'] = 'Participant {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'Habilitat per defecte';
 $string['default_help'] = 'Si està actiu, aquest mètode de tramesa s\'habilitarà per defecte per a totes les tasques noves.';
 $string['enabled'] = 'Comentaris de la tramesa';
 $string['enabled_help'] = 'Si està habilitat, l\'estudiant pot deixar comentaris sobre la seva pròpia tramesa. Açò pot emprar-se per a permetre que l\'alumne avisi el professor sobre quin dels fitxers és el principal, en els casos de fitxers relacionats; per exemple, «index.html» en un conjunt de pàgines web.';
 $string['pluginname'] = 'Comentaris de la tramesa';
+$string['privacy:metadata:commentpurpose'] = 'Comentaris de la tramesa d\'una tasca entre estudiant i docent.';

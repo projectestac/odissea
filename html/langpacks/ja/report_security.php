@@ -61,7 +61,7 @@ $string['check_embed_details'] = '<p>無制限のオブジェクト埋め込み�
 $string['check_embed_error'] = '無制限のオブジェクト埋め込みが許可されています - これは大部分のサーバで非常に危険な設定です。';
 $string['check_embed_name'] = 'EMBEDおよびOBJECTを許可する';
 $string['check_embed_ok'] = '無制限のオブジェクト埋め込みは許可されていません。';
-$string['check_frontpagerole_details'] = '<p>すべての登録ユーザのフロントページ活動にはデフォルトのフロントページロールのケイパビリティが割り当てられます。このロールにリスクのあるケイパビリティが許可されているかどうか確認してください。</p>
+$string['check_frontpagerole_details'] = '<p>すべての登録ユーザのサイトホーム活動にはデフォルトのサイトホームロールのケイパビリティが割り当てられます。このロールにリスクのあるケイパビリティが許可されているかどうか確認してください。</p>
 <p>この目的のため、特別なロールを作成してレガシータイプのロールは使用しないことをお勧めします。</p>';
 $string['check_frontpagerole_error'] = '正しくないフロントページロール「 {$a} 」の割り当てが検出されました!';
 $string['check_frontpagerole_name'] = 'フロントページロール';

@@ -116,6 +116,7 @@ $string['assign_notify_student:group:subject'] = '[{$a->courseid}{$a->courseshor
 $string['assign_notify_student:smallmessage'] = 'Una cita con {$a->slot_teacher} el {$a->date} a las {$a->time} le ha sido asignada por {$a->sendername}.';
 $string['assign_notify_student:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Cita asignada por el profesor';
 $string['configdigest_label'] = 'Enviar resumen de citas a los profesores';
+$string['format'] = 'Formato';
 $string['message_warning_no_slots_added'] = '¡Ninguna celda nueva añadida!';
 $string['message_warning_no_slots_selected'] = '¡Debe seleccionar al menos una celda primero!';
 $string['min'] = 'min';

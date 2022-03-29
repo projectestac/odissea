@@ -29,6 +29,7 @@ $string['confirmquestionsaveasedited'] = 'Je confirme que je veux enregistrer la
 $string['confirmsave'] = 'Confirmer, puis enregistrer {$a}';
 $string['correctanswer'] = 'Réponse correcte';
 $string['correctanswerandfeedback'] = 'Réponse correcte et feedback';
+$string['corruptedquestion'] = 'Cette question est altérée et contient des sous-questions qui ne sont pas présentes dans votre système.';
 $string['decodeverifyquestiontext'] = 'Décoder et vérifier le texte de la question';
 $string['invalidmultianswerquestion'] = 'Question à réponses intégrées (Cloze) ({$a}).';
 $string['layout'] = 'Disposition';
@@ -38,6 +39,7 @@ $string['layoutmultiple_vertical'] = 'Colonne verticale de cases à cocher';
 $string['layoutselectinline'] = 'Menu déroulant intégré au texte';
 $string['layoutundefined'] = 'Disposition non définie';
 $string['layoutvertical'] = 'Colonne verticale de boutons radio';
+$string['missingsubquestion'] = 'Cette sous-question manque dans votre système et ne peut pas être affichée.';
 $string['nooptionsforsubquestion'] = 'Impossible d\'obtenir les options de la partie de question no {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'La question Cloze (multianswer) « <strong>{$a}</strong> » ne contient aucune question';
 $string['pleaseananswerallparts'] = 'Merci de répondre à tous les éléments de la question.';

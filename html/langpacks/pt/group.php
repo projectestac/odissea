@@ -45,7 +45,7 @@ $string['creategrouping'] = 'Criar agrupamento';
 $string['creategroupinselectedgrouping'] = 'Criar grupo no agrupamento';
 $string['createingrouping'] = 'Agrupamento de grupos criados automaticamente';
 $string['createorphangroup'] = 'Criar grupo órfão';
-$string['csvdelimiter'] = 'Delimitador CSV';
+$string['csvdelimiter'] = 'Separador CSV';
 $string['databaseupgradegroups'] = 'A versão de grupos é, agora, {$a}';
 $string['defaultgrouping'] = 'Agrupamento predefinido';
 $string['defaultgroupingname'] = 'Agrupamento';
@@ -138,11 +138,11 @@ $string['groupsvisible'] = 'Grupos visíveis';
 $string['grouptemplate'] = 'Grupo @';
 $string['hidepicture'] = 'Ocultar imagem';
 $string['importgroups'] = 'Importar grupos';
-$string['importgroups_help'] = 'Os grupos podem ser importados a partir de um ficheiro de texto. O formato do ficheiro deve ser o seguinte:
+$string['importgroups_help'] = 'Os grupos podem ser importados via ficheiro de texto. O ficheiro deve ter o seguinte formato:
 
 * Cada linha do ficheiro contém um registo
-* Cada registo é uma série de dados separados por vírgulas
-* O primeiro registo contém uma lista de nomes dos campos que definem o formato do resto do ficheiro
+* Cada registo é uma linha com uma série de dados separados pelo separador selecionado
+* A primeira linha contém a lista dos nomes dos campos que define o formato do ficheiro
 * O campo groupname (nome do grupo) é obrigatório
 * Os campos opcionais são groupidnumber, description, enrolmentkey, groupingname, enablemessaging (ID do grupo, descrição, senha de inscrição, nome do agrupamento, mensagens)';
 $string['importgroups_link'] = 'grupo/importar';

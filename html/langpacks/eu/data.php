@@ -56,8 +56,8 @@ $string['availabletodatevalidation'] = 'Amaiera-data ezin da hasiera-data baino 
 $string['blank'] = 'Hutsik';
 $string['buttons'] = 'Ekintzak';
 $string['bynameondate'] = 'Egilea eta data: {$a->name} - {$a->date}';
-$string['calendarend'] = '{$a}-(r)en itxiera-data:';
-$string['calendarstart'] = '{$a}-(r)en hasiera-data';
+$string['calendarend'] = '{$a}(r)en itxiera-data:';
+$string['calendarstart'] = '{$a}(r)en hasiera-data';
 $string['cancel'] = 'Utzi';
 $string['cannotaccesspresentsother'] = 'Ez duzu beste erabiltzaile batzuen aurretiko ezarpenetara sartzeko baimenik';
 $string['cannotadd'] = 'Ezin duzu sarrerarik gehitu!';
@@ -167,7 +167,7 @@ $string['failedpresetdelete'] = 'Errorea aurretiko ezarpena ezabatzean!';
 $string['fieldadded'] = 'Eremua gehitu da';
 $string['fieldallowautolink'] = 'Baimendu esteka automatikoa';
 $string['fielddeleted'] = 'Eremua ezabatu da';
-$string['fielddelimiter'] = 'Eremu-bereizlea';
+$string['fielddelimiter'] = 'Eremu banatzailea';
 $string['fielddescription'] = 'Eremuaren deskribapena';
 $string['fieldenclosure'] = 'Eremu-itxitura';
 $string['fieldheight'] = 'Altuera';
@@ -403,7 +403,7 @@ $string['uploadrecords'] = 'Igo datuak fitxategi batetik';
 $string['uploadrecords_help'] = 'Sarrerak testu-fitxategien bitartez igo daitezke. Fitxategiaren formatuak honelakoa izan behar du:
 
 * Fitxategiko errenkada bakoitzak erregistro bana du
-* Erregistro bakoitza komaz (edo bestelako bereizle batez) banatutako datu-multzo bat da
+* Erregistro bakoitza aukeratutako banatzaileaz banatutako datu-multzo bat da
 * Fitxategiko lehen errenkadak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
 
 Eremu-itxitura erregistro bakoitzaren eremu bakoitza inguratzen duen karaktere bat da. Normalean ezarri gabe utzi daiteke.';

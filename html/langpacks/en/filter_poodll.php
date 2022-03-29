@@ -142,6 +142,7 @@ $string['jumpcat_heading'] = 'Poodll filter settings';
 $string['legacysettings'] = 'Legacy Settings';
 $string['license_details'] = '<br> -------------- <br> License type: {$a->license_type} <br> Expires(JST): {$a->expire_date} <br> Registered URL: {$a->registered_url}';
 $string['lowquality'] = 'low';
+$string['maxmonth'] = 'Highest Month';
 $string['mediumquality'] = 'medium';
 $string['memberdashboard'] = 'Member Dashboard';
 $string['memberdashboard_desc'] = '';

@@ -45,7 +45,7 @@ $string['creategrouping'] = 'Sortu talde-multzoa';
 $string['creategroupinselectedgrouping'] = 'Sortu taldea aukeratutako talde-multzoan';
 $string['createingrouping'] = 'Automatikoki sortutako taldeen talde-multzoa';
 $string['createorphangroup'] = 'Sortu talde umezurtza';
-$string['csvdelimiter'] = 'CSV bereizlea';
+$string['csvdelimiter'] = 'CSV banatzailea';
 $string['databaseupgradegroups'] = '{$a} da orain taldeen bertsioa';
 $string['defaultgrouping'] = 'Lehenetsitako talde-multzoa';
 $string['defaultgroupingname'] = 'Talde-multzoa';
@@ -59,7 +59,7 @@ $string['deletegroupsconfirm'] = 'Ziur zaude ondorengo taldeak ezabatu nahi ditu
 $string['deleteselectedgroup'] = 'Ezabatu aukeratutako taldea';
 $string['editgroupingsettings'] = 'Editatu talde-multzoaren ezarpenak';
 $string['editgroupsettings'] = 'Editatu taldearen ezarpenak';
-$string['editusersgroupsa'] = 'Editatu taldeak "{$a}"-(r)entzat';
+$string['editusersgroupsa'] = 'Editatu taldeak "{$a}"(r)entzat';
 $string['enablemessaging'] = 'Taldeko mezularitza';
 $string['enablemessaging_help'] = 'Gaituz gero, taldekideek mezuen nabigazio-kutxatik mezuak elkarri bidal diezazkiekete.';
 $string['encoding'] = 'Kodifikazioa';
@@ -141,7 +141,7 @@ $string['importgroups'] = 'Inportatu taldeak';
 $string['importgroups_help'] = 'Taldeak testu-fitxategien bitartez inporta daitezke. Horretarako fitxategiaren formatua hurrengoa izan beharko da:
 
 * Fitxategiko errenkada bakoitzak erregistro bana izango du
-* Erregistro bakoitza komaz banatutako datu-multzo bat da
+* Erregistro bakoitza aukeratutako banatzaileaz banatutako datu-multzo bat da
 * Fitxategiko lehen errenkadak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
 * <i>groupname</i> eremua (taldearen izena) derrigorrezkoa da
 * Aukerako eremuak <i>groupidnumber</i> (talde-multzoaren IDa), <i>description</i> (deskribapena), <i>enrolmentkey</i> (matrikulazio-gakoa), <i>groupingname</i> (talde-multzoaren izena) eta <i>enablemessaging</i> (gaitu mezularitza) dira';

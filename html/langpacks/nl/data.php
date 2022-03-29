@@ -424,10 +424,10 @@ $string['unsupportedfieldslist'] = 'De volgende velden kunnen niet worden geëxp
 $string['updatefield'] = 'Update een bestaand veld';
 $string['uploadfile'] = 'Upload bestand';
 $string['uploadrecords'] = 'Upload records uit een bestand';
-$string['uploadrecords_help'] = 'Items kunnen geüploaded worden via een tekstbestand. De opmaak van dat bestand moet als volgt zijn:
+$string['uploadrecords_help'] = 'Items kunnen geüpload worden via een tekstbestand. De opmaak van dat bestand moet als volgt zijn:
 
 * Elke lijn van het bestand bevat één record
-* Elke record is een reeks gegevens, gescheiden door komma\'s (of andere scheidingstekens)
+* Elke record is een reeks gegevens, gescheiden door het geselecteerde scheidingsteken
 * De eerste record bevat een lijst met veldnamen die de opmaak van de rest van het bestand bepalen.
 
 De velden kunnen ingesloten worden door een teken in elk veld van elke record, maar dit kan ook weggelaten worden.';

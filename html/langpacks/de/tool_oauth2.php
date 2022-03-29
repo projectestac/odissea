@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptrisk'] = 'Ich weiß, dass die Deaktivierung der E-Mail-Bestätigung ein Sicherheitsproblem darstellen kann.';
+$string['acceptrisk_help'] = 'Das Deaktivieren der E-Mail-Bestätigung kann ein Sicherheitsproblem darstellen. Eventuell ist es für Nutzer/innen möglich, sich unter den bestimmten Umständen als andere authentifizieren zu können.';
 $string['authconfirm'] = 'Diese Aktion gewährt Moodle einen permanenten API-Zugriff für das authentifizierte Konto. Dies soll als Systemaccount für die Verwaltung von Dateien von Moodle verwendet werden.';
 $string['authconnected'] = 'Der Systemaccount ist nun für Offline-Zugriffe verbunden.';
 $string['authnotconnected'] = 'Der Systemaccount wurde nicht für Offline-Zugriffe verbunden.';
@@ -33,7 +35,7 @@ $string['configuredstatus'] = 'Konfiguriert';
 $string['connectsystemaccount'] = 'Mit Systemaccount verbinden';
 $string['createfromtemplate'] = 'OAuth 2-Service aus einer Vorlage anlegen';
 $string['createfromtemplatedesc'] = 'Wählen Sie eine der Vorlagen aus, um einen OAuth 2-Service mit einer gültigen Konfiguration zu erstellen. Der OAuth 2-Service wird mit allen Parametern und den richtigen Endpoints erstellt, die für die Authentifizierung notwendig sind. Sie müssen anschließend nur noch die Client-ID und das Client-Secret in Moodle eingeben, um den OAuth 2-Service verwenden zu können.';
-$string['createnewendpoint'] = 'Neuen Endpoint für den Service/Identitätsaussteller \'{$a}\' anlegen';
+$string['createnewendpoint'] = 'Neuen Endpoint für den Service \'{$a}\' anlegen';
 $string['createnewfacebookissuer'] = 'Neuen Facebook-Service anlegen';
 $string['createnewgoogleissuer'] = 'Neuen Google-Service anlegen';
 $string['createnewissuer'] = 'Neuen eigenen Service anlegen';

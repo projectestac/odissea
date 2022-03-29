@@ -716,7 +716,7 @@ Normalerweise dürfen Sie auswählen, ob Sie die Beiträge bekommen möchten. Ma
 $string['subscriptionandtracking'] = 'Abonnement und Tracking';
 $string['subscriptionauto'] = 'Automatisch';
 $string['subscriptiondisabled'] = 'Deaktiviert';
-$string['subscriptionforced'] = 'Verbindliches Abonnement';
+$string['subscriptionforced'] = 'Verbindlich';
 $string['subscriptionmode'] = 'Abonnement';
 $string['subscriptionmode_help'] = 'Alle Abonnent/innen dieses Forums bekommen die Beiträge als Mitteilungen gesendet. Es gibt unterschiedliche Modi für ein Abonnement:
 

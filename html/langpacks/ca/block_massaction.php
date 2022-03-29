@@ -25,17 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['action_clone'] = 'Duplica a la secció';
 $string['action_delete'] = 'Suprimeix';
 $string['action_hide'] = 'Amaga';
-$string['action_indent'] = 'Fes un sagnat (mou a la dreta)';
-$string['action_move'] = 'Mou a la secció';
-$string['action_outdent'] = 'Fes un sagnat negatiu (mou a l\'esquerra)';
 $string['action_show'] = 'Mostra';
-$string['allitems'] = 'Selecciona-ho tot a la secció:';
 $string['blockname'] = 'Accions massives';
 $string['blocktitle'] = 'Accions massives';
 $string['pluginname'] = 'Bloc d\'acció massiva';
 $string['selectall'] = 'Selecciona-ho tot';
-$string['selectnone'] = 'Desselecciona-ho tot';
 $string['withselected'] = 'Amb el que s\'ha seleccionat';

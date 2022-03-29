@@ -44,7 +44,7 @@ $string['gradingmethodnone'] = 'Kalifikazio zuzen arrunta';
 $string['gradingmethods'] = 'Kalifikazio-metodoak';
 $string['manageactionclone'] = 'Sortu beste kalifikazio-formulario bat txantiloi batetik';
 $string['manageactiondelete'] = 'Ezabatu definitutako formularioa';
-$string['manageactiondeleteconfirm'] = '\'{$a->formname}\' kalifikazio-formularioa eta \'{$a->component} ({$a->area})\'-(r)ekin erlazionaturiko informazio guztia ezabatzera zoaz. Mesedez ziurtatu hurrengo ondorioak ulertzen dituzula:
+$string['manageactiondeleteconfirm'] = '\'{$a->formname}\' kalifikazio-formularioa eta \'{$a->component} ({$a->area})\'(r)ekin erlazionaturiko informazio guztia ezabatzera zoaz. Mesedez ziurtatu hurrengo ondorioak ulertzen dituzula:
 
 * Ekintza honek ez dauka atzera bueltarik.
 * Beste kalifikazio-metodo bat aukera dezakezu, \'Kalifikazio zuzen arrunta\' barne, formulario hau ezabatu gabe.

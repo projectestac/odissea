@@ -83,12 +83,12 @@ $string['selectfromcohort'] = 'Sélectionner des membres de la cohorte';
 $string['systemcohorts'] = 'Cohortes système';
 $string['unknowncohort'] = 'Cohorte inconnue ({$a}) !';
 $string['uploadcohorts'] = 'Déposer des cohortes';
-$string['uploadcohorts_help'] = 'Des cohortes peuvent être déposées au moyen d\'un fichier texte. Le format de ce fichier doit répondre aux critères ci-dessous :
+$string['uploadcohorts_help'] = 'Des cohortes peuvent être déposées au moyen d\'un fichier texte. Le format de ce fichier doit être le suivant :
 
 * chaque ligne du fichier contient un enregistrement ;
-* chaque enregistrement est une série de données séparées par une virgule ou un autre délimiteur ;
-* un seul champ est obligatoire, dénommé <em>name</em> ;
-* les autres champs sont optionnels, et sont dénommés <em>idnumber</em>, <em>description</em>, <em>descriptionformat</em>, <em>visible</em>, <em>context</em>, <em>category</em>, <em>category_id</em>, <em>category_idnumber</em>, <em>category_path</em>.';
+* chaque enregistrement est une série de données séparées par le caractère de séparation sélectionné ;
+* le seul champ requis est name ;
+* les champs optionnels sont idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path.';
 $string['uploadedcohorts'] = '{$a} cohortes déposées';
 $string['useradded'] = 'Utilisateur ajouté à la cohorte « {$a} »';
 $string['visible'] = 'Visible';

@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['healthnoproblemsfound'] = 'Não foram encontrados quaisquer problemas!';
-$string['healthproblemsdetected'] = 'Detectados problemas de funcionamento!';
+$string['healthproblemsdetected'] = 'Detetados problemas de funcionamento!';
 $string['healthproblemsolution'] = 'Solução dos problemas';
-$string['healthreturntomain'] = 'Continar';
+$string['healthreturntomain'] = 'Continuar';
 $string['healthsolution'] = 'Solução';
 $string['pluginname'] = 'Centro de resolução de problemas';
-$string['privacy:metadata'] = 'O módulo Centro de ajuda não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Centro de resolução de problemas não armazena quaisquer dados pessoais.';

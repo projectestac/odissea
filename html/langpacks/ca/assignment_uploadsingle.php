@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Càrrega senzilla';
+$string['privacy:metadata'] = 'El connector per carregar una tasca individual no emmagatzema cap dada personal.';

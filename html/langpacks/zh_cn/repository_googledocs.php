@@ -27,4 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = '配置Google文件插件';
 $string['googledocs:view'] = '查看google文件容器';
+$string['mydrive'] = '我的驱动器';
 $string['pluginname'] = 'Google文件';
+$string['searchfor'] = '搜索结果：';
+$string['shareddrives'] = '共享驱动器';

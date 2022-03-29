@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actionsforgraderinterface'] = 'Действия для интерфейса оценщика';
+$string['actionsforpost'] = 'Действия для сообщения';
 $string['activitydate:due'] = 'Срок сдачи:';
 $string['activityoverview'] = 'Имеются новые сообщения на форуме';
 $string['addanewdiscussion'] = 'Добавить тему для обсуждения';

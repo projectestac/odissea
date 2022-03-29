@@ -74,7 +74,7 @@ $string['createall'] = 'Maak alle, verhoog korte naam indien nodig';
 $string['createnew'] = 'Maak enkel nieuwe cursussen, bestaande overslaan';
 $string['createorupdate'] = 'Maak nieuwe cursussen of pas bestaande aan';
 $string['csvdelimiter'] = 'CSV scheidingsteken';
-$string['csvdelimiter_help'] = 'CSV scheidingsteken van het CSV-bestand.';
+$string['csvdelimiter_help'] = 'Het teken dat de reeks gegevens in elke record scheidt.';
 $string['csvfileerror'] = 'Er is iets mis met de opmaak van het CSV-bestand. Controleer of het aantal titels en kolommen overeenkomen en dat het scheidingsteken en de bestands-encoding juist zijn: {$a}';
 $string['csvline'] = 'Lijn';
 $string['customfieldinvalid'] = 'Aangepast veld \'{$a}\' is leeg of bevat ongeldige gegevens';
@@ -135,7 +135,7 @@ $string['uploadcourses'] = 'Cursussen uploaden';
 $string['uploadcourses_help'] = 'Cursussen kunnen via een tekstbestand geüploaded worden. De opmaak moet als volgt zijn:
 
 * Elke lijn bevat één record
-* Elke record is een reeks gegevens, gescheiden door komma\'s of andere scheidingstekens
+* Elke record is een reeks gegevens, gescheiden door het geselecteerde scheidingsteken
 * De eerste record bevat een lijst met veldnamen die de opmaak van de rest van het bestand bepalen.
 * Vereiste veldnamen zijn shortname, fullname en category.';
 $string['uploadcoursespreview'] = 'Bekijk uploaden cursussen';

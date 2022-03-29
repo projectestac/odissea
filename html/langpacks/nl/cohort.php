@@ -86,7 +86,7 @@ $string['uploadcohorts'] = 'Site-groepen uploaden';
 $string['uploadcohorts_help'] = 'Site-groepen kunnen geüpload worden via een tekstbestand. Het formaat moet als volgt zijn:
 
 * Elke lijn van het bestand bevat één record
-* Elke record is een reeks gegevens, gescheiden door komma\'s (of andere scheidingstekens)
+* Elke record is een reeks gegevens, gescheiden het geselecteerde scheidingsteken
 * De eerste record bevat een lijst met veldnamen die de opmaak van de rest van het bestand bepalen
 * Vereiste veldnaam is name
 * Optionele veldnamen zijn idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';

@@ -92,7 +92,7 @@ $string['dataprivacy:requestdelete'] = 'Eskatu zure datuen ezabatzea';
 $string['dataprivacy:requestdeleteforotheruser'] = 'Eskatu datuen ezabatzea beste erabiltzaile baten izenean';
 $string['dataregistry'] = 'Datuen erregistroa';
 $string['dataregistryinfo'] = 'Datu-erregistroak kategoriak (datu motak) eta helburuak (datua prozesatzeko arrazoia) guneko eduki guztiei aplikatzeko aukera ematen dute - erabiltzaile eta ikastaroetatik jarduera eta blokeetaraino. Helburu bakoitzarentzat atxikipen-epe bat zehaztu daiteke. Atxikipen-epe bat iraungitzen denean, datuak markatzen dira eta ezabatzeko zerrendan sartzen dira, kudeatzailearen berrespenaren zain.';
-$string['datarequestcreatedforuser'] = 'Datu-eskaera sortu da {$a}-(r)entzat';
+$string['datarequestcreatedforuser'] = 'Datu-eskaera sortu da {$a}(r)entzat';
 $string['datarequestcreatedfromscheduledtask'] = 'Programatutako ataza batez automatikoki sortua (lehenengo erabiltzaile ezabatua).';
 $string['datarequestcreatedupondelete'] = 'Erabiltzailea ezabatutakoan automatikoki sortua.';
 $string['datarequestemailsubject'] = 'Datu-eskaera: {$a}';
@@ -156,7 +156,7 @@ $string['errornoexpiredcontexts'] = 'Ez dago prozesatu beharreko testuingururik'
 $string['errorrequestalreadyexists'] = 'Dagoeneko baduzu aribidean dagoen eskaera bat.';
 $string['errorrequestnotfound'] = 'Ez da eskaera aurkitu';
 $string['errorrequestnotwaitingforapproval'] = 'Eskaera ez dago onartzeko zai. Oraindik ez dago prest edo dagoeneko prozesatu da.';
-$string['errorsendingmessagetodpo'] = 'Errore bat gertatu da {$a}-(r)i mezu bat bidaltzen saiatzean.';
+$string['errorsendingmessagetodpo'] = 'Errore bat gertatu da {$a}(r)i mezu bat bidaltzen saiatzean.';
 $string['exceptionnotificationbody'] = '<p>Salbuespena gertatu da <b>{$a->fullmethodname}</b>(e)ra deitzean.<br>Honek esan nahi du <b>{$a->component}</b> pluginak ez duela datu-prozesatzea osatu. Salbuespenaren inguruko hurrengo informazioa pluginaren garatzaileari helarazi ahal dioz:</p><pre>{$a->message}<br>
 
 {$a->backtrace}</pre>';

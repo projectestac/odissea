@@ -73,9 +73,9 @@ $string['courseupdated'] = 'Cours modifié';
 $string['createall'] = 'Tour créer, en incrémentant si nécessaire le nom abrégé';
 $string['createnew'] = 'Créer uniquement les nouveaux cours et passer les cours existants';
 $string['createorupdate'] = 'Créer de nouveaux cours ou modifier les cours existants';
-$string['csvdelimiter'] = 'Délimiteur CSV';
-$string['csvdelimiter_help'] = 'Délimiteur du fichier CSV';
-$string['csvfileerror'] = 'Le format de ce fichier CSV comporte des erreurs. Veuillez vérifier que le nombre des champs d\'entête et celui des champs des lignes suivantes correspondent et que le délimiteur et l\'encodage du fichier soient correctement définis : {$a}';
+$string['csvdelimiter'] = 'Séparateur CSV';
+$string['csvdelimiter_help'] = 'Le caractère de séparation des données de chaque enregistrement.';
+$string['csvfileerror'] = 'Le format de ce fichier CSV comporte des erreurs. Veuillez vérifier que le nombre des champs d\'entête et celui des champs des lignes suivantes correspondent et que le séparateur et l\'encodage du fichier soient correctement définis : {$a}';
 $string['csvline'] = 'Ligne';
 $string['customfieldinvalid'] = 'Le champ personnalisé « {$a} » est vide ou contient des données non valides';
 $string['defaultvalues'] = 'Réglages par défaut pour les cours';
@@ -131,12 +131,12 @@ $string['updatemodedoessettonothing'] = 'Le mode de modification choisi ne perme
 $string['updateonly'] = 'Ne modifier que les cours existants';
 $string['updatewithdataonly'] = 'Ne modifier qu\'à partir des données CSV';
 $string['updatewithdataordefaults'] = 'Modifier à partir des données CSV et des réglages par défaut';
-$string['uploadcourses'] = 'Modifier des cours en lots';
-$string['uploadcourses_help'] = 'Des cours peuvent être créés ou modifiés en déposant un fichier texte. Le format du fichier doit être le suivant :
+$string['uploadcourses'] = 'Modifier des cours par lots';
+$string['uploadcourses_help'] = 'Des cours peuvent être créés ou modifiés en déposant un fichier texte.  Le format de ce fichier doit être le suivant :
 
 * chaque ligne du fichier contient un seul enregistrement ;
-* chaque enregistrement consiste en une série de données séparées par des virgules (ou d\'autres séparateurs) ;
-* le premier enregistrement contient une liste des champs (en anglais), définissant ainsi le format du reste du fichier ;
+* chaque enregistrement est constitué d\'une série de données séparées par le caractère de séparation sélectionné ;
+* le premier enregistrement contient la liste des noms des champs définissant le format du reste du fichier ;
 * les champs requis sont le nom abrégé (shortname), le nom complet (fullname) et la catégorie du cours (category).';
 $string['uploadcoursespreview'] = 'Prévisualisation du fichier de cours déposé';
 $string['uploadcoursesresult'] = 'Résultats du traitement du fichier de cours';

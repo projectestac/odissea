@@ -101,7 +101,7 @@ $string['mobileappsubscription'] = 'Subscrição da Aplicação móvel Moodle';
 $string['mobileauthentication'] = 'Autenticação em dispositivos móveis';
 $string['mobilecssurl'] = 'CSS';
 $string['mobilefeatures'] = 'Funcionalidades da Aplicação móvel';
-$string['mobilenotificationsdisabledwarning'] = 'As notificações móveis não estão ativas. Têm de ser ativadas nas configurações de Notificação.';
+$string['mobilenotificationsdisabledwarning'] = 'As notificações móveis não estão ativadas. Têm de ser ativadas nas configurações das notificações.';
 $string['mobilesettings'] = 'Configurações para dispositivos móveis';
 $string['moodleappsportalfeatureswarning'] = 'Tenha em atenção que algumas funcionalidades podem ser limitadas, dependendo da sua subscrição da Aplicação móvel Moodle. Para mais detalhes, consulte o <a href="{$a}" target="_blank">Portal das Aplicações móveis Moodle</a>.';
 $string['notifications'] = 'Notificações';

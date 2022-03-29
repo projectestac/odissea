@@ -39,7 +39,7 @@ $string['cannotreadbackupfile'] = 'バックアップファイルを読めませ
 $string['cannotrenamecoursenotexist'] = '存在しないコースをリネームできません。';
 $string['cannotrenameidnumberconflict'] = '既存のコースとIDナンバーが衝突しているため、コースをリネームできません。';
 $string['cannotrenameshortnamealreadyinuse'] = 'すでに省略名が使用されているため、コースをリネームできません。';
-$string['cannotupdatefrontpage'] = 'フロントページの修正は禁止されています。';
+$string['cannotupdatefrontpage'] = 'サイトホームの修正は禁止されています。';
 $string['canonlyrenameinupdatemode'] = '更新が許可されたコースのみリネームできます。';
 $string['canonlyresetcourseinupdatemode'] = '更新モードの場合のみコースをリセットできます。';
 $string['couldnotresolvecatgorybyid'] = 'IDでカテゴリを解決できませんでした。';
@@ -73,9 +73,9 @@ $string['courseupdated'] = 'コースが更新されました。';
 $string['createall'] = 'すべてを作成する、必要であれば省略名を増分する';
 $string['createnew'] = '新しいコースのみ作成する、既存のコースをスキップする';
 $string['createorupdate'] = '新しいコースを作成する、または既存のコースを更新する';
-$string['csvdelimiter'] = 'CSVデリミタ';
-$string['csvdelimiter_help'] = 'CSVファイルのCSVデリミタです。';
-$string['csvfileerror'] = 'CSVファイルのフォーマットに問題があります。ヘッディングの数およびカラムが合致しているか、またデリミタおよびファイルエンコーディングが正しいか確認してください: {$a}';
+$string['csvdelimiter'] = 'CSVセパレータ';
+$string['csvdelimiter_help'] = 'それぞれのレコードの一連のデータを区切る文字です。';
+$string['csvfileerror'] = 'CSVファイルのフォーマットに問題があります。ヘッディングの数およびカラムが合致しているか、またセパレータおよびファイルエンコーディングが正しいか確認してください: {$a}';
 $string['csvline'] = '行';
 $string['customfieldinvalid'] = 'カスタムフィールド「 {$a} 」が空または無効なデータが含まれています。';
 $string['defaultvalues'] = 'デフォルトコース値';
@@ -135,7 +135,7 @@ $string['uploadcourses'] = 'コースをアップロードする';
 $string['uploadcourses_help'] = 'コースはテキストファイルでアップロードできます。ファイルのフォーマットは以下のとおりです:
 
 * ファイルのそれぞれの行に1レコードを含みます。
-* それぞれのレコードはカンマ (または他のデリミタ) で区切られた一連のデータです。
+* それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
 * 最初の行にはファイルの残りのフォーマットを決定する一連のフィールド名を含みます。
 * 必須フィールド名はshortname、fullnameおよびcategoryです。';
 $string['uploadcoursespreview'] = 'アップロードコースプレビュー';

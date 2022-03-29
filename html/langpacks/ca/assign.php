@@ -377,6 +377,7 @@ $string['overdue'] = '<font color="red">La tasca ha vençut fa: {$a}</font>';
 $string['override'] = 'Excepció';
 $string['overridegroup'] = 'Estableix una excepció per al grup';
 $string['overridegroupeventname'] = '{$a->assign} - {$a->group}';
+$string['overrides'] = 'Excepcions';
 $string['overrideuser'] = 'Estableix una excepció per a l\'usuari';
 $string['page-mod-assign-view'] = 'Pàgina principal del mòdul de tasques';
 $string['page-mod-assign-x'] = 'Pàgina de qualsevol mòdul de tasques';

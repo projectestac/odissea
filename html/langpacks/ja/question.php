@@ -237,6 +237,7 @@ $string['importingquestions'] = 'ファイルより {$a} 問の問題をイン�
 $string['importparseerror'] = 'インポートファイルの構文解析時にエラーが見つかりました。問題はインポートされませんでした。正常な問題をインポートするには「エラーで中止する」を「No」にして再度お試しください。';
 $string['importquestions'] = 'ファイルから問題をインポートする';
 $string['importquestions_help'] = 'この機能ではテキストファイルを使用して様々なフォーマットで問題をインポートすることができます。ファイルにはUTF-8文字コードを使用する必要があることに留意してください。';
+$string['importwrongfileencoding'] = 'あなたが選択したファイルの文字コードはUFT-8ではありません。{$a} ファイルにはUTF-8を使用する必要があります。';
 $string['importwrongfiletype'] = 'あなたが選択したファイルタイプ ({$a->actualtype}) はこのインポートフォーマット ({$a->expectedtype}) に期待されるタイプに合致しません。';
 $string['impossiblechar'] = '丸括弧として使用できない文字 {$a} が見つかりました。';
 $string['includesubcategories'] = 'サブカテゴリの問題も表示する';

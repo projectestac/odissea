@@ -58,7 +58,7 @@ $string['filtershowstrings'] = 'Texte anzeigen';
 $string['filterstringid'] = 'Text-ID';
 $string['filtersubstring'] = 'Textteil';
 $string['headingcomponent'] = 'Komponente';
-$string['headinglocal'] = 'Lokale Sprachanpassung';
+$string['headinglocal'] = 'Lokale Sprachanpassungen';
 $string['headingstandard'] = 'Standardtext';
 $string['headingstringid'] = 'Text';
 $string['import'] = 'Sprachanpassungen importieren';
@@ -86,7 +86,7 @@ $string['placeholder_help'] = 'Platzhalter sind spezielle Statements wie `{$a}` 
 Es ist wichtig, die Platzhalter ganz genauso wie im Originaltext zu schreiben. Platzhalter werden weder übersetzt noch in ihrer links-rechts Orientierung geändert.
 ';
 $string['placeholderwarning'] = 'Text enthält einen Platzhalter';
-$string['pluginname'] = 'Sprachanpassung';
+$string['pluginname'] = 'Sprachanpassungen';
 $string['privacy:metadata'] = 'Das Plugin \'Sprachanpassungen\' speichert keine personenbezogenen Daten.';
 $string['savecheckin'] = 'Texte im lokalen Sprachpaket speichern';
 $string['savecontinue'] = 'Sichern und Texte weiter bearbeiten';

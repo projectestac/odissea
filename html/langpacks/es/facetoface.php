@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addnewfield'] = 'Añadir un nuevo campo personalizado';
 $string['cancellationconfirm'] = '¿Está seguro que quiere cancelar su reserva para esta sesión?';
+$string['format'] = 'Formato';
 $string['modulename_help'] = 'El módulo de la actividad Cara-a-Cara le permite al profesor configurar un sistema voluntario de reservaciones  para una o varias sesiones basadas en salón de clase o con-personas.
 
 Cada sesión dentro de una actividad Cara-a-Cara puede tener configuraciones personalizadas sobre lugar, sitio, hora de inicio, hora de término, costo, capacidad, etc. Estas pueden configurarse para comprender varios días  o para permitir sesiones no-agendadas o en lista de espera.

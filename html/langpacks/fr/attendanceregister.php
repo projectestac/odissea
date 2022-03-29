@@ -129,6 +129,7 @@ $string['participants_attendance_report_viewed'] = 'Visualisation du rapport de 
 $string['pluginadministration'] = 'Administration du registre de présence';
 $string['pluginname'] = 'Registre de présence';
 $string['prev_site_login'] = 'Connexion précédente sur le site';
+$string['privacy:metadata:attendanceregister_session:userid'] = 'L\'identifiant de l\'utilisateur';
 $string['recalc_already_pending'] = '(Déjà en cours d\'exécution sur le Cron suivant)';
 $string['recalc_complete'] = 'Recalcul des sessions complet';
 $string['recalc_scheduled'] = 'Le recalcul de la session a été programmé. Il s\'exécute au prochain Cron';

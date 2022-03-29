@@ -1,6 +1,6 @@
 <?php
 
-define('NO_OUTPUT_BUFFERING', true);
+const NO_OUTPUT_BUFFERING = true;
 
 require_once('../../../config.php');
 \core\session\manager::write_close();

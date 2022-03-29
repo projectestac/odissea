@@ -45,10 +45,12 @@ $string['check_defaultuserrole_error'] = '默认角色“{$a}”未正确定义�
 $string['check_defaultuserrole_name'] = '所有用户的缺省角色';
 $string['check_defaultuserrole_notset'] = '缺省角色未设置。';
 $string['check_defaultuserrole_ok'] = '为所有用户定义的缺省角色是正确的。';
+$string['check_dirindex_info'] = '不应启用目录索引';
 $string['check_displayerrors_details'] = '<p>不建议在正式网站打开PHP设置<code>display_errors</code>，因为错误信息可能会暴露服务器上的一些敏感信息。</p>';
 $string['check_displayerrors_error'] = '显示错误信息的PHP设置被打开。建议关闭它。';
 $string['check_displayerrors_name'] = '显示 PHP 错误信息';
 $string['check_displayerrors_ok'] = '显示 PHP 错误信息已禁用。';
+$string['check_dotfiles_info'] = '除了/.well-known/*以外的所有点阵文件都不应该是公开的。';
 $string['check_emailchangeconfirmation_details'] = '<p>建议用户在个人资料中修改email地址后，必须做email确认。如果禁用，可能会有人通过发送垃圾信息来攻击服务器。</p>
 <p>认证插件中可能已经锁定了email域，这一步在这里没有考虑。</p>';
 $string['check_emailchangeconfirmation_error'] = '用户可以使用任意 Email 地址。';
@@ -83,6 +85,9 @@ $string['check_passwordpolicy_details'] = '<p>建议您设定一个密码策略�
 $string['check_passwordpolicy_error'] = '密码策略未设置。';
 $string['check_passwordpolicy_name'] = '密码策略';
 $string['check_passwordpolicy_ok'] = '密码策略已激活。';
+$string['check_publicpaths_403'] = '（返回的是403，理想情况下应为404）';
+$string['check_publicpaths_generic'] = '{$a}文件不应该是公开的';
+$string['check_publicpaths_name'] = '检查所有公共/私有路径';
 $string['check_riskadmin_detailsok'] = '<p>请确认下列人员为系统管理员：</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>请确认下列系统管理员：</p>{$a->admins}
 <p>建议只在系统场景下分配管理员角色。下列用户在其它场景中被分配了管理员角色（不支持）：</p>{$a->unsupported}';

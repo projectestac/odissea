@@ -183,8 +183,8 @@ $string['privacy:metadata'] = 'Le plugin Éditeur XMLDB n\'enregistre aucune don
 $string['reconcile_files'] = 'Rechercher des fichiers XMLDB nécessitant régénération';
 $string['reconcile_files_intro'] = 'Cette fonctionnalité vérifie si les fichiers XMLDB actuels correspondent aux résultats de leur génération par l\'éditeur XMLDB.
 
-Une liste des fichiers nécessitant d\'être régénérés sera affichée, et l\'éditeur XMLDB devra être utilisé pour corriger les problèmes.';
-$string['reconcile_files_no'] = 'Tous les fichiers sont en ordre ; aucune action de régénération n\'est nécessaire';
+Une liste des fichiers nécessitant d\'être régénérés sera affichée, et l\'éditeur XMLDB peut être utilisé pour corriger les problèmes.';
+$string['reconcile_files_no'] = 'Tous les fichiers sont en ordre ; aucune action de régénération n\'est nécessaire.';
 $string['reconcile_files_yes'] = 'Fichiers nécessitant régénération';
 $string['reconcilefiles'] = 'Régénérer les fichiers XMLDB';
 $string['reserved'] = 'Réservé';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['database:config'] = 'Configurar instâncias de inscrição da base de dados';
 $string['database:unenrol'] = 'Cancelar a inscrição de utilizadores suspensos';
 $string['dbencoding'] = 'Codificação da base de dados';
-$string['dbhost'] = 'Servidor de base de dados';
+$string['dbhost'] = 'Servidor da base de dados';
 $string['dbhost_desc'] = 'Digite o IP do servidor da base de dados ou o nome do host. Use um nome do sistema DSN se estiver a usar ODBC. Use PDO DSN se estiver a usar PDO.';
 $string['dbname'] = 'Nome da base de dados';
 $string['dbname_desc'] = 'Deixe em branco se estiver a usar um nome DSN na base de dados do host.';

@@ -483,6 +483,6 @@ $string['whichtries'] = 'Какие попытки';
 $string['withselected'] = 'С выбранными';
 $string['wrongprefix'] = 'Некорректный формат префикса названия {$a}';
 $string['xoutofmax'] = '{$a->mark} из {$a->max}';
-$string['yougotnright'] = 'Вы правильно выбрали {$a->num}.';
+$string['yougotnright'] = 'Вы выбрали правильных вариантов: {$a->num}.';
 $string['youmustselectaqtype'] = 'Вы должны выбрать тип вопроса.';
 $string['yourfileshoulddownload'] = 'Загрузка экспортируемого файла вскоре должна начаться. Если этого не произошло, <a href="{$a}">нажмите сюда</a>.';

@@ -37,7 +37,7 @@ $string['clihelp'] = 'このヘルプをプリントアウトします。';
 $string['climissingargument'] = '引数 --{$a} は必須です。';
 $string['clititle'] = 'コマンドラインアップロードユーザツールです。';
 $string['clivalidationerror'] = '確認エラー:';
-$string['csvdelimiter'] = 'CSVデリミタ';
+$string['csvdelimiter'] = 'CSVセパレータ';
 $string['defaultvalues'] = 'デフォルト値';
 $string['deleteerrors'] = '削除エラー';
 $string['encoding'] = 'エンコーディング';
@@ -79,7 +79,7 @@ $string['uploadusers'] = 'ユーザをアップロードする';
 $string['uploadusers_help'] = 'テキストファイルでユーザをアップロード (および任意でコース登録) できます。ファイルのフォーマットは以下のとおりです:
 
 * ファイルのそれぞれの行に1レコードを含みます。
-* それぞれのレコードはカンマ区切り (または他のデリミタ) の一連のデータです。
+* それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
 * 先頭レコードにはファイルの残りのフォーマットを定義したフィールド名一覧を含みます。
 * 必須フィールド名は次のとおりです: username, password, firstname, lastname, email';
 $string['uploaduserspreview'] = 'アップロードユーザプレビュー';

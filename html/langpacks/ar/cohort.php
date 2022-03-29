@@ -83,10 +83,10 @@ $string['selectfromcohort'] = 'إختر أعضاءً من الدفعة';
 $string['systemcohorts'] = 'دفعات النظام';
 $string['unknowncohort'] = 'دفعة مرة غير معروفة ({$a})!';
 $string['uploadcohorts'] = 'رفع الدفعات';
-$string['uploadcohorts_help'] = 'يمكن رفع الدفعات عبر ملف نصي. يجب أن يكون تنسيق الملف كما يلي:
+$string['uploadcohorts_help'] = 'يمكن رفع الزمر عبر ملف نصي. يجب أن يكون تنسيق الملف كما يلي:
 
 * يحتوي كل سطر من الملف على سجل واحد
-* كل سجل عبارة عن سلسلة من البيانات مفصولة بفوارز (أو محددات أخرى)
+* كل سجل عبارة عن سلسلة من البيانات مفصولة بالفاصلة المحددة
 * يحتوي السجل الأول على قائمة بأسماء الحقول التي تحدد تنسيق باقي الملف
 * الحقل المطلوب هو حقل name
 * الحقول الاختيارية هي idnumber، description، descriptionformat، visible، context، category، category_id، category_idnumber، category_path';

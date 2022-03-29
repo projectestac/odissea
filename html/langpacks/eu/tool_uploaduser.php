@@ -37,7 +37,7 @@ $string['clihelp'] = 'Inprimatu laguntza hau.';
 $string['climissingargument'] = '--{$a} parametroa beharrezkoa da';
 $string['clititle'] = 'Komando lerro bidezko Igo erabiltzaileak tresna.';
 $string['clivalidationerror'] = 'Balioztatze-errorea:';
-$string['csvdelimiter'] = 'CSV bereizlea';
+$string['csvdelimiter'] = 'CSV banatzailea';
 $string['defaultvalues'] = 'Lehenetsitako balioak';
 $string['deleteerrors'] = 'Ezabatu erroreak';
 $string['encoding'] = 'Kodifikazioa';
@@ -79,7 +79,7 @@ $string['uploadusers'] = 'Igo erabiltzaileak';
 $string['uploadusers_help'] = 'Erabiltzaileak testu-fitxategi bidez igo (eta aukeran ikastaroetan matrikulatu) daitezke. Fitxategiak hurrengo formatua izan behar du:
 
 * Fitxategiko errenkada bakoitzak erregistro bat du
-* Erregistro bakoitza komaz (edo bestelako bereizleak) banatutako datu-multzo bat da
+* Erregistro bakoitza aukeratutako banatzaileaz banatutako datu-multzo bat da
 * Fitxategiko lehen errenkadak fitxategiaren formatua definitzen duten eremuen zerrenda du.
 * Derrigorrezko eremuen izenak: \'username\' (erabiltzaile-izena), \'firstname\' (izena), \'lastname\' (abizena) eta \'email\' (helbide elektronikoa)';
 $string['uploaduserspreview'] = 'Aurreikusi igotako erabiltzaileak';

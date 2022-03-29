@@ -73,9 +73,9 @@ $string['courseupdated'] = 'Ikastaroa eguneratu da';
 $string['createall'] = 'Sortu guztiak, behar izanez gero izen laburrari kontagailua gehituta';
 $string['createnew'] = 'Sortu soilik ikastaro berriak, lehendik existitzen direnak alde batera utziz';
 $string['createorupdate'] = 'Sortu ikastaro berriak, edo eguneratu existitzen direnak';
-$string['csvdelimiter'] = 'CSV bereizlea';
-$string['csvdelimiter_help'] = 'CSV fitxategiaren CSV bereizlea';
-$string['csvfileerror'] = 'CSV fitxategiaren formatuan zerbait gaizki dago. Mesedez egiaztatu zutabe-izenburu eta zutabe kopurua bat datozela, eta bereizlea zein fitxategiaren kodifikazioa egokiak direla: {$a}';
+$string['csvdelimiter'] = 'CSV banatzailea';
+$string['csvdelimiter_help'] = 'Erregistro bakoitzeko datu-seria banatzen duen karakterea.';
+$string['csvfileerror'] = 'CSV fitxategiaren formatuan zerbait gaizki dago. Mesedez egiaztatu zutabe-izenburu eta zutabe kopurua bat datozela, eta banatzailea zein fitxategiaren kodifikazioa egokiak direla. {$a}';
 $string['csvline'] = 'Errenkada';
 $string['customfieldinvalid'] = '\'{$a}\' eremu pertsonalizatua hutsik dago edo eduki baliogabea du';
 $string['defaultvalues'] = 'Lehenetsitako ikastaro-balioak';
@@ -135,7 +135,7 @@ $string['uploadcourses'] = 'Igo ikastaroak';
 $string['uploadcourses_help'] = 'Ikastaroak testu-fitxategi bat igota sortu daitezke. Fitxategiak hurrengo formatua izan behar du:
 
 * Fitxategiko errenkada bakoitzak erregistro bana du
-* Erregistro bakoitza komaz (edo bestelako bereizle batez) banatutako datu-multzo bat da
+* Erregistro bakoitza aukeratutako banatzaileaz banatutako datu-multzo bat da
 * Fitxategiko lehen errenkadak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
 * Derrigorrezko eremuak <i>shortname</i> (izen laburra), <i>fullname</i> (izen osoa), eta <i>\'category\'</i> (kategoria) dira';
 $string['uploadcoursespreview'] = 'Aurreikusi igotako ikastaroak';

@@ -45,7 +45,7 @@ $string['creategrouping'] = 'グルーピングを作成する';
 $string['creategroupinselectedgrouping'] = 'グルーピングにグループを作成する';
 $string['createingrouping'] = '自動作成グループのグルーピング';
 $string['createorphangroup'] = '迷子グループを作成する';
-$string['csvdelimiter'] = 'CSVデリミタ';
+$string['csvdelimiter'] = 'CSVセパレータ';
 $string['databaseupgradegroups'] = '現在のグループバージョン: {$a}';
 $string['defaultgrouping'] = 'デフォルトグルーピング';
 $string['defaultgroupingname'] = 'グルーピング';
@@ -141,7 +141,7 @@ $string['importgroups'] = 'グループをインポートする';
 $string['importgroups_help'] = 'テキストファイル経由でグループをインポートすることができます。ファイルのフォーマットは以下のとおりです:
 
 * それぞれの行に1レコードを記述してください。
-* それぞれのレコードはカンマ区切りのデータです。
+* それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
 * 先頭レコードには残りのデータのフォーマットを定義したフィールド名を記述してください。
 * 必須フィールド名は「groupname」です。
 * 任意フィールド名は「groupidnumber」「description」「enrolmentkey」「groupingname」「enablemessaging」です。';

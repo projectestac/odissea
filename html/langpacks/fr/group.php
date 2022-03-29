@@ -141,7 +141,7 @@ $string['importgroups'] = 'Importer des groupes';
 $string['importgroups_help'] = 'Les groupes peuvent être importés depuis un fichier texte. Le format de ce fichier doit être le suivant :
 
 * chaque ligne du fichier contient un enregistrement ;
-* chaque enregistrement est une série de données séparées par des virgules ;
+* chaque enregistrement est constitué d\'une série de données séparées par le caractère de séparation sélectionné ;
 * le premier enregistrement contient la liste des noms des champs définissant le format du reste du fichier ;
 * le seul champ requis est groupname ;
 * les champs optionnels sont groupidnumber, description, enrolmentkey, groupingname, enablemessaging ;

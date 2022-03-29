@@ -140,6 +140,7 @@ $string['effectiveretentionperioduser'] = '{$a}(自用户上次访问该站点�
 $string['emailsalutation'] = '亲爱的{$a},';
 $string['errorcannotrequestdeleteforother'] = '您没有权限为该用户创建删除请求。';
 $string['errorcannotrequestdeleteforself'] = '您没有权限为自己创建删除请求。';
+$string['errorcontactdpodisabled'] = '联系隐私官的选项被禁用。';
 $string['errorcontexthasunexpiredchildren'] = '场景“{$a}”仍然有尚未过期的子场景。没有场景被标记为要删除。';
 $string['errorinvalidrequestcreationmethod'] = '无效的请求创建方法！';
 $string['errorinvalidrequeststatus'] = '无效的请求状态！';

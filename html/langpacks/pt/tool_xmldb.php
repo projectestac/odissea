@@ -165,7 +165,7 @@ $string['nomissingorextraindexesfound'] = 'Nenhum índice extra ou em falta foi 
 $string['noreffieldsspecified'] = 'Não existem campos de referência especificados';
 $string['noreftablespecified'] = 'Tabela de referência especificada não encontrada';
 $string['noviolatedforeignkeysfound'] = 'Não foram encontradas violações de chaves estrangeiras';
-$string['nowrongdefaultsfound'] = 'Não foram encontradas predefinições inconsistentes. A sua BD não necessita de ações subsequentes.';
+$string['nowrongdefaultsfound'] = 'Não foram encontradas predefinições inconsistentes. A sua base de dados não requer ações subsequentes.';
 $string['nowrongintsfound'] = 'Não foram encontrados inteiros errados. A sua BD não necessita de ações subsequentes.';
 $string['nowrongoraclesemanticsfound'] = 'Não foram encontradas colunas Oracle usando semânticas BYTE. A sua BD não necessita de ações subsequentes.';
 $string['numberincorrectdecimals'] = 'Número incorreto de decimais para campo numérico';
@@ -180,11 +180,11 @@ $string['persistentfieldsexist'] = 'Já existem os campos seguintes:';
 $string['pluginname'] = 'Editor XMLDB';
 $string['primarykeyonlyallownotnullfields'] = 'As chaves primárias não podem ser nulas';
 $string['privacy:metadata'] = 'O módulo Editor XMLDB não armazena dados pessoais.';
-$string['reconcile_files'] = 'Procurar ficheiros XMLDB que precisem de reconciliação';
-$string['reconcile_files_intro'] = 'Esta funcionalidade procura o conteúdo atual de todos os ficheiros XMLDB, verificando se eles correspondem aos resultados caso fossem gerados a partir do Editor XMLDB.
+$string['reconcile_files'] = 'Procurar ficheiros XMLDB que presisam de reconciliação';
+$string['reconcile_files_intro'] = 'Esta funcionalidade examina o conteúdo de todos os ficheiros XMLDB para verificar se eles correspondem aos resultados caso fossem gerados a partir do Editor XMLDB.
 
-A lista dos ficheiros que precisam de ser reconciliados (regenerados) será exibida e deverá usar o Editor XMLDB para corrigi-los.';
-$string['reconcile_files_no'] = 'Todos os ficheiros estão em conformidade. Nenhuma ação de reconciliação é necessária';
+A lista dos ficheiros que precisam de ser reconciliados (regenerados) será exibida e poderá usar o Editor XMLDB para corrigi-los.';
+$string['reconcile_files_no'] = 'Todos os ficheiros estão em conformidade. Nenhuma ação de reconciliação é necessária.';
 $string['reconcile_files_yes'] = 'Ficheiros encontrados para reconciliar:&nbsp;';
 $string['reconcilefiles'] = 'Reconciliar ficheiros XMLDB';
 $string['reserved'] = 'Reservada';
@@ -230,7 +230,7 @@ $string['wrongreservedwords'] = 'Palavras reservadas utilizadas<br />(tenha em a
 $string['yesextraindexesfound'] = 'Foram encontrados os seguintes índices adicionais.';
 $string['yesmissingindexesfound'] = '<p>Foram encontrados índices em falta na sua BD. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL favorita para os criar todos (não se esqueça de fazer primeiro uma cópia de segurança dos seus dados).</p>
 <p>Depois de executar os comandos é altamente recomendado que execute esta funcionalidade novamente para verificar que não existem mais índices em falta.</p>';
-$string['yeswrongdefaultsfound'] = '<p>Foram encontradas predefinições erradas na sua BD. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL favorita para os criar todos (não se esqueça de fazer primeiro uma cópia de segurança dos seus dados).</p>
+$string['yeswrongdefaultsfound'] = '<p>Foram encontradas predefinições erradas na sua base de dados. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL favorita para os criar todos (não se esqueça de fazer primeiro uma cópia de segurança dos seus dados).</p>
 <p>Depois de executar os comandos é altamente recomendado que execute esta funcionalidade novamente para verificar que não existem mais índices em falta.</p>';
 $string['yeswrongintsfound'] = '<p>Foram encontrados números inteiros errados na sua BD. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL favorita para os corrigir. Não se esqueça de fazer uma cópia de segurança da sua informação antes de o fazer.</p>
 <p>Depois de os corrigir, é altamente recomendado que execute esta funcionalidade novamente para verificar que não existem mais números inteiros errados.';

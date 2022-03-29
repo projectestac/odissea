@@ -30,4 +30,4 @@ $string['ltiservice_toolsettings'] = 'Tool-Einstellungen';
 $string['ltiservice_toolsettings_help'] = 'Erlauben Sie dem Tool, Einstellungswerte zu speichern und abzurufen.';
 $string['notallow'] = 'Diesen Service nicht verwenden';
 $string['pluginname'] = 'Tool Einstellungsservice';
-$string['privacy:metadata'] = 'Das Einstellungs-Service-Plugin speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Tool-Einstellungsservice-Plugin speichert keine personenbezogenen Daten.';

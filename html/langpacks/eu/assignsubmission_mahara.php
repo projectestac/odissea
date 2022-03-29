@@ -66,6 +66,6 @@ $string['privacy:path'] = 'Mahara-ko orri eta bildumak';
 $string['selectmaharaview'] = 'Aukeratu beheko zerrendako portfolio-orri edo bilduma bat, edo <a target="_blank" href="{$a->jumpurl}">klikatu hemen</a> "{$a->name}" bisitatu eta berri bat sortzeko.';
 $string['site'] = 'Gunea';
 $string['site_help'] = 'Ezarpen honek ahalbidetzen dizu aukeratzea zure ikasleek Mahara-ko zer gunetako orriak bidali ahal izango dituzten.';
-$string['viewsby'] = '{$a}-(r)en orriak';
+$string['viewsby'] = '{$a}(r)en orriak';
 $string['yeskeeplocked'] = 'Bai, mantendu blokeatuta';
 $string['yesunlock'] = 'Bai, baina desblokeatu kalifikatu ondoren';

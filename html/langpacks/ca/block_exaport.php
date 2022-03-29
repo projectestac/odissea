@@ -41,6 +41,7 @@ $string['invalidinstance'] = 'Aquesta no és una instància vàlida';
 $string['mediacontent'] = 'URL o codi d\'incrustació *';
 $string['new'] = 'Nou';
 $string['resume_enddate'] = 'Data de finalització';
+$string['role'] = 'Rol';
 $string['selectall'] = 'Selecciona-ho tot';
 $string['showsummary'] = '(mostra el resum)';
 $string['type'] = 'Tipus';

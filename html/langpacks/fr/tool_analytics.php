@@ -68,7 +68,7 @@ $string['erroronlycli'] = 'Le lancement n\'est autorisé qu\'au moyen de la lign
 $string['errortrainingdataexport'] = 'Les données d\'entraînement du modèle n\'ont pas pu être exportées';
 $string['evaluate'] = 'Évaluer';
 $string['evaluatemodel'] = 'Évaluer le modèle';
-$string['evaluationinbatches'] = 'Les contenus du site sont calculés et stockés en lots. Le processus d\'évaluation peut être arrêté à tout moment. Lors du prochain lancement, il continuera là où il s\'est arrêté.';
+$string['evaluationinbatches'] = 'Les contenus du site sont calculés et stockés par lots. Le processus d\'évaluation peut être arrêté à tout moment. Lors du prochain lancement, il continuera là où il s\'est arrêté.';
 $string['evaluationmode'] = 'Mode d\'évaluation';
 $string['evaluationmode_help'] = 'Il y a deux modes d\'évaluation :
 

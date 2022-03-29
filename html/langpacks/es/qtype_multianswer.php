@@ -29,6 +29,7 @@ $string['confirmquestionsaveasedited'] = 'Confirmo que deseo que la pregunta se 
 $string['confirmsave'] = 'Confirmar y luego guardar {$a}';
 $string['correctanswer'] = 'Respuesta correcta';
 $string['correctanswerandfeedback'] = 'Respuesta correcta y retroalimentación';
+$string['corruptedquestion'] = 'Esta pregunta está dañada y contiene subpreguntas que no están presentes en su sistema.';
 $string['decodeverifyquestiontext'] = 'Decodificar y verificar el enunciado de la pregunta';
 $string['invalidmultianswerquestion'] = 'Pregunta de respuestas incrustadas no válidas (Cloze) ({$ a}).';
 $string['layout'] = 'Esquema';
@@ -38,6 +39,7 @@ $string['layoutmultiple_vertical'] = 'Columna vertical de casillas de verificaci
 $string['layoutselectinline'] = 'Menú desplegable en línea en el texto';
 $string['layoutundefined'] = 'Esquema indefinido';
 $string['layoutvertical'] = 'Columna vertical de botones de opción';
+$string['missingsubquestion'] = 'Esta subpregunta no se encuentra en su sistema y no se puede mostrar.';
 $string['nooptionsforsubquestion'] = 'Imposible conseguir opciones para la parte de la pregunta # {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'La pregunta \'cloze\' (multi-respuesta) "<strong>{$a}</strong>" no contiene ninguna pregunta';
 $string['pleaseananswerallparts'] = 'Por favor, responda a todas las partes de la pregunta.';

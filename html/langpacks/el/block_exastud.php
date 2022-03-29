@@ -98,7 +98,6 @@ $string['configuration_classes_onlyadmin'] = 'Πρόσβαση διαχειρι�
 $string['copy_class_from_last_period'] = 'Αντιγραφή τάξης από τελευταία περίοδο';
 $string['cross_competences_for_head'] = 'Διαθεματικά προσόντα';
 $string['de:Bildungsstandards'] = 'Εκπαιδευτικά πρότυπα προς εκπλήρωση';
-$string['de:Fachbezeichnungen'] = 'Θέματα';
 $string['delete'] = 'Διαγραφή';
 $string['delete_class_only_without_users'] = 'Μόνο τάξεις χωρίς μαθητές μπορούν να διαγραφούν';
 $string['delete_class_refused'] = 'Άρνηση';

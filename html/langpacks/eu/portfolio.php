@@ -114,13 +114,13 @@ $string['intro'] = 'Zuk sortutako edukiak, hala nola zereginetako bidalketak, fo
 Erabili nahi ez duzun edozein portfolio ezkuta dezakezu edukiak esportatzerakoan aukeren zerrendan ager ez dadin.';
 $string['invalidaddformat'] = 'portfolio_add_button-ri add format baliogabea pasatu zaio.  ({$a}) PORTFOLIO_ADD_XXX-ko bat izan behar da';
 $string['invalidbuttonproperty'] = 'Ezin izan da portfolio_button-en ({$a}) ezaugarria aurkitu';
-$string['invalidconfigproperty'] = 'Ezin izan da {$a->class})-(r)en ezarpenen ezaugarri hori ({$a->property}  aurkitu';
+$string['invalidconfigproperty'] = 'Ezin izan da {$a->class})(r)en ezarpenen ezaugarri hori ({$a->property} aurkitu';
 $string['invalidexportproperty'] = 'Ezin izan da aurkitu esportatze-konfigurazioko ezaugarria ({$a->class}-ko {$a->property})';
 $string['invalidfileareaargs'] = 'set_file_and_format_data-ri fitxategi-eremuko argumentu baliogabea pasa zaio - contextid, component, filearea eta itemid izan behar ditu';
 $string['invalidformat'] = 'Zerbait formatu baliogabe bat {$a} esportatzen ari da';
 $string['invalidinstance'] = 'Ezin izan da portfolio-instantzia hori aurkitu';
 $string['invalidpreparepackagefile'] = 'prepare_package_file-ri egindako dei baliogabea - single edo multifiles zehaztu behar da';
-$string['invalidproperty'] = 'Ezin izan da {$a->class})-(r)en ezaugarria ({$a->property} aurkitu';
+$string['invalidproperty'] = 'Ezin izan da {$a->class})(r)en ezaugarria ({$a->property} aurkitu';
 $string['invalidsha1file'] = 'get_sha1_file-ri egindako dei baliogabea - single edo multifiles zehaztu behar da';
 $string['invalidtempid'] = 'Esportatzeko ID baliogabea: agian iraungi da';
 $string['invaliduserproperty'] = 'Ezin izan da aurkitu erabiltzaile-konfigurazioko ezaugarria ({$a->class}-ko {$a->property})';

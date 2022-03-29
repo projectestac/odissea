@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Exige que les étudiants utilisent une langue spécifique.';
+$string['description'] = 'Nécessite que les étudiants utilisent une langue spécifique.';
 $string['getdescription'] = 'La langue de l\'étudiant est {$a}';
 $string['getdescriptionnot'] = 'La langue de l\'étudiant n\'est pas {$a}';
 $string['missing'] = 'Vous devez sélectionner une langue.';

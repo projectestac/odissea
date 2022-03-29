@@ -85,11 +85,12 @@ $string['selectfromcohort'] = 'Mitglieder aus globaler Gruppe wählen';
 $string['systemcohorts'] = 'Systemweite globale Gruppen';
 $string['unknowncohort'] = 'Unbekannte globale Gruppe \'{$a}\'!';
 $string['uploadcohorts'] = 'Globale Gruppen hochladen';
-$string['uploadcohorts_help'] = 'Mitglieder für globale Gruppen können über eine Textdatei hochgeladen werden. Das Format der Datei ist folgendermaßen festgelegt:
+$string['uploadcohorts_help'] = 'Globale Gruppen können über eine Textdatei angelegt werden. Die Textdatei sollte folgendes Format haben:
 
-* Jede Zeile enthält einen Datensatz
-* Jeder Datensatz besteht aus einer Reihe von Daten, die durch Kommas (oder ein anderes Trennzeichen) getrennt sind
-* Der erste Datensatz enthält eine Liste von Feldnamen und definiert das Format der übrigen Datensätze
+* Jede Zeile enthält einen genau Datensatz
+* Jeder Datensatz enthält eine Serie von Daten, getrennt durch das gewählte Trennzeichen
+* Die erste Zeile enthält eine Liste der Feldnamen und definiert die Struktur der übrigen Datensätze
+* Die Feldnamen müssen in der englischen Bezeichnung angegeben sein
 * Notwendiger Feldname ist \'name\'
 * Optionale Feldnamen sind idnumber, description, descriptionformat, context, category, category_id, category_idnumber, category_path';
 $string['uploadedcohorts'] = 'Globale Gruppen hochgeladen: {$a}';

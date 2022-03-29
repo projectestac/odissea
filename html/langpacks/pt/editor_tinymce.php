@@ -344,7 +344,7 @@ $string['contextmenu:full'] = 'Justificado';
 $string['contextmenu:left'] = 'Esquerda';
 $string['contextmenu:right'] = 'Direita';
 $string['customconfig'] = 'Configuração personalizada';
-$string['customconfig_desc'] = 'Configuração personalizada avançada do TinyMCE no formato JSON, por exemplo, {"option1" : "value2", "option2" : "value2"}. Quaisquer opções especificadas aqui substituirão as definições padrão e as dos módulos.';
+$string['customconfig_desc'] = 'Configuração personalizada avançada do TinyMCE no formato JSON, por exemplo: {"option1" : "value2", "option2" : "value2"}. Quaisquer opções especificadas aqui substituirão as definições padrão e as dos módulos.';
 $string['customtoolbar'] = 'Barra de ferramentas do Editor';
 $string['customtoolbar_desc'] = 'Cada linha contém uma lista de nomes de botões separados por vírgulas, use "|" como separador de grupo, as linhas vazias serão ignoradas. Ver aqui a lista de botões predefinidos do TinyMCE <a href="{$a}" target="_blank">{$a}</a> .';
 $string['directionality:ltr_desc'] = 'Da esquerda para direita';

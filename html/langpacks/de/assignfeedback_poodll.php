@@ -44,5 +44,5 @@ $string['replyvideo'] = 'Videorecorder';
 $string['replyvoice'] = 'Audiorecorder Red5';
 $string['replywhiteboard'] = 'Whiteboard';
 $string['showcurrentfeedback'] = 'Aktuelles Feedback anzeigen';
-$string['showcurrentfeedbackdetails'] = 'Zeigt bereits aufgenommene PoodLL-Feedbacks in der Bewerterübersicht an.';
+$string['showcurrentfeedbackdetails'] = 'Zeigt bereits aufgenommene PoodLL-Feedbacks in der Bewertungsübersicht an.';
 $string['yes'] = 'Ja';

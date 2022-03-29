@@ -81,4 +81,5 @@ $string['sessionstart'] = 'Inicio';
 $string['sessionstarthelp'] = 'Los participantes pueden unirse a la sesión 15 minutos antes de que empiece';
 $string['testapi'] = 'Probar conexión';
 $string['timezone'] = 'Zona horaria: {$a}';
+$string['unrestored'] = 'Un moderador debe ver o unirse a la sesión antes de que puedas acceder a ella.';
 $string['viewrec'] = 'Ver grabación';

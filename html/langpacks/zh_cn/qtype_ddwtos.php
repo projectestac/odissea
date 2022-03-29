@@ -36,3 +36,7 @@ $string['pluginname_help'] = '拖放填空题要求做题者拖放词语或短�
 $string['pluginnameadding'] = '添加一个拖放填空题';
 $string['pluginnameediting'] = '编辑一个拖放填空题';
 $string['pluginnamesummary'] = '用拖放的方式填充题目中缺失的词语。';
+$string['privacy:metadata'] = '图片拖拽题类型插件允许出题者将默认选项设置为用户首选项。';
+$string['privacy:preference:defaultmark'] = '为给定问题设置的默认分数。';
+$string['privacy:preference:penalty'] = '在使用 "多次尝试交互 "或 "自适应模式 "运行问题时，对每次错误尝试的罚分。';
+$string['privacy:preference:shuffleanswers'] = '答案是否自动重新排序';

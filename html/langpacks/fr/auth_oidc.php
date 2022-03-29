@@ -50,7 +50,7 @@ $string['cfg_field_mapping_desc'] = 'Les données de profil utilisateur peuvent 
 <ul>
 <li>Les données de profil de base sont disponibles à partir des jetons d\'identification de tous les IdP.</li>
 <li>Si Azure AD est utilisé comme IdP, des données de profil supplémentaires peuvent être mises à disposition en installant et en configurant le <a href="https://moodle.org/plugins/local_o365">plugin d\'intégration Microsoft 365 (local_o365)</a>.</li>
-<li>Si la fonction de synchronisation de profil SDS est activée dans le plug-in local_o365, certains champs de profil peuvent être synchronisés de SDS vers Moodle, lors de l\'exécution de la tâche planifiée « Sync avec SDS », et ne se produira pas lors de l\'exécution de la tâche planifiée « Synchroniser les utilisateurs avec Azure AD », ni lorsque l\'utilisateur se connecte.</li>
+<li>Si la fonction de synchronisation de profil SDS est activée dans le plug-in local_o365, certains champs de profil peuvent être synchronisés de SDS vers Moodle, lors de l\'exécution de la tâche programmée « Sync avec SDS », et ne se produira pas lors de l\'exécution de la tâche programmée « Synchroniser les utilisateurs avec Azure AD », ni lorsque l\'utilisateur se connecte.</li>
 </ul>';
 $string['cfg_forceredirect_desc'] = 'En cas d\'activation, sautera la page d\'index de connexion et redirigera vers la page OpenID Connect. Peut être contourné avec le paramètre d\'URL ?noredirect=1';
 $string['cfg_forceredirect_key'] = 'Forcer la redirection';

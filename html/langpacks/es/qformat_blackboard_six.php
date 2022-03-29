@@ -33,6 +33,6 @@ $string['importedcategory'] = 'Categoría importada {$a}';
 $string['importnotext'] = 'Pregunta no encontrada en el archivo XML';
 $string['notenoughtsubans'] = 'No se puede importar la pregunta coincidente \'{$a}\' porque una pregunta coincidente debe contener al menos dos preguntas y tres respuestas.';
 $string['pluginname'] = 'Blackboard';
-$string['pluginname_help'] = 'El formato Blackboard V6+ permite importar via fichero zip las preguntas guardadas en el formato de exportación Blackboard. El soporte para Blackboard versiones 6 y 7 es limitado.';
+$string['pluginname_help'] = 'El formato Blackboard permite importar a través de ficheros datos o zip las preguntas guardadas en cualquier formato de exportación de Blackboard. Para ficheros zip se permite la importación de imágenes.';
 $string['privacy:metadata'] = 'El complemento de formato de pregunta de Blackbard no almacena ningún dato personal.';
 $string['unhandledpresblock'] = 'Bloque de presentación no manejado';

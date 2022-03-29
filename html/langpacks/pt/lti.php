@@ -58,7 +58,7 @@ $string['basiclti_base_string'] = 'Base String do LTI OAuth';
 $string['basiclti_endpoint'] = 'Endpoint do arranque de LTI';
 $string['basiclti_in_new_window'] = 'A sua atividade abriu numa nova janela';
 $string['basiclti_in_new_window_open'] = 'Abrir numa nova janela';
-$string['basiclti_parameters'] = 'Parâmetros de arranque do LTI';
+$string['basiclti_parameters'] = 'Parâmetros do arranque de LTI';
 $string['basicltiactivities'] = 'Atividades LTI';
 $string['basicltifieldset'] = 'Exemplo de fieldset personalisado';
 $string['basicltiintro'] = 'Descrição da atividade';
@@ -132,14 +132,13 @@ $string['display_description_help'] = 'Se selecionado, a descrição da atividad
 
 A descrição pode ser usada para dar instruções adicionais para os utilizadores da ferramenta, mas não é necessária.
 
-A descrição nunca é exibido quando a ferramenta é aberta numa nova janela.';
-$string['display_name'] = 'Mostrar nome da atividade quando abre';
+A descrição nunca é exibida quando a ferramenta é aberta numa nova janela.';
+$string['display_name'] = 'Mostrar nome da atividade quando for iniciada';
 $string['display_name_help'] = 'Se selecionado, o nome da atividade (especificada acima) será exibida acima do conteúdo da ferramenta.
 
-É possível que o fornecedor de ferramenta possa também apresentar o título. Esta opção pode impedir que o título da atividade
-seja exibido em duplicado.
+É possível que o fornecedor de ferramenta possa também apresentar o título. Esta opção pode impedir que o título da atividade seja exibido em duplicado.
 
-O título nunca é exibido quando o modo de visualização é uma nova janela.';
+O título nunca é exibido quando quando a ferramenta é aberta numa nova janela.';
 $string['domain_mismatch'] = 'O domínio do URL da ferramenta não corresponde à configuração da ferramenta.';
 $string['donot'] = 'Não enviar';
 $string['donotaccept'] = 'Não aceitar';
@@ -195,7 +194,7 @@ $string['fixnew'] = 'Nova configuração';
 $string['fixnewconf'] = 'Definir uma nova configuração para a instância mal configurada';
 $string['fixold'] = 'Usar existente';
 $string['force_ssl'] = 'Forçar SSL';
-$string['force_ssl_help'] = 'Selecionar esta opção obriga todos os arranques desta ferramenta a usar SSL.
+$string['force_ssl_help'] = 'Selecionar esta opção obriga todas as inicializações desta ferramenta a usarem SSL.
 
 Além disso, todas as solicitações de web services do fornecedor de ferramenta usarão SSL.
 
@@ -250,9 +249,9 @@ $string['lti:addcoursetool'] = 'Adicionar configurações específicas da Ferram
 $string['lti:addinstance'] = 'Adicionar nova ferramenta externa';
 $string['lti:addmanualinstance'] = 'Adicionar uma ferramenta configurada manualmente';
 $string['lti:addpreconfiguredinstance'] = 'Adicionar uma ferramentas pré-configurada';
-$string['lti:admin'] = 'Tornar-se um administrador quando a ferramenta for iniciada';
+$string['lti:admin'] = 'Ser um administrador quando a ferramenta for iniciada';
 $string['lti:grade'] = 'Ver notas devolvidas pela Ferramenta LTI';
-$string['lti:manage'] = 'Ser um Instrutor quando a Ferramenta LTI arranca';
+$string['lti:manage'] = 'Ser um Instrutor quando a Ferramenta LTI for iniciada';
 $string['lti:requesttooladd'] = 'Requerer que a Ferramenta LTI seja configurada ao nível do site';
 $string['lti:view'] = 'Arrancar atividades Ferramenta LTI';
 $string['lti_administration'] = 'Editar ferramenta pré-configurada';
@@ -287,9 +286,9 @@ $string['misconfiguredtools'] = 'Foram encontradas instâncias mal configuradas 
 $string['missingparameterserror'] = 'A página "{$a}" está mal configurada';
 $string['module_class_type'] = 'Tipo de módulo do Moodle';
 $string['modulename'] = 'Ferramenta externa';
-$string['modulename_help'] = 'A atividade Ferramenta LTI (Learning Tools Interoperability) permite aos alunos interagir com recursos de aprendizagem e atividades que se encontram alojados noutros sites. Por exemplo, a ferramenta LTI pode proporcionar acesso a um novo tipo de atividade ou a materiais de aprendizagem de uma editora.
+$string['modulename_help'] = 'A atividade Ferramenta LTI (Learning Tools Interoperability) permite aos alunos interagir com recursos de aprendizagem e atividades que se encontram alojadas noutros sites. Por exemplo, a ferramenta LTI pode proporcionar acesso a um novo tipo de atividade ou a materiais de aprendizagem de uma editora.
 
-Para criar uma atividade de ferramenta LTI, é necessário um fornecedor de ferramenta que suporte LTI (Learning Tools Interoperability). Um professor pode criar uma atividade ferramenta LTI ou usar uma ferramenta configurada pelo administrador da plataforma.
+Para criar uma atividade de ferramenta LTI, é necessário um fornecedor de ferramenta que suporte LTI (Interoperacionalidade das Ferramentas de Aprendizagem ). Um professor pode criar uma atividade ferramenta LTI ou usar uma ferramenta configurada pelo administrador da plataforma.
 
 As atividades ferramenta LTI diferem dos recursos URL em alguns aspetos:
 
@@ -434,7 +433,7 @@ $string['secure_icon_url_help'] = 'Similar ao URL do ícone, mas usado quando o 
 $string['secure_launch_url'] = 'URL da ferramenta segura';
 $string['secure_launch_url_help'] = 'Similar ao URL de arranque mas usado caso seja necessária uma segurança elevada. O Moodle irá usar o URL de arranque seguro ao invés do URL de arranque se o Moodle for acedido partir de SSL, ou se as configurações da ferramenta estão definidas para iniciar sempre com SSL.
 
-O URL de arranque também pode ser definido para um endereço https que force a entrada através de SSL, e este campo pode ficar em branco.';
+O URL de arranque também pode ser definido para um endereço https que force a entrada através de SSL e, se assim for, este campo pode ficar em branco.';
 $string['selectcontent'] = 'Selecionar conteúdo';
 $string['send'] = 'Enviar';
 $string['services'] = 'Serviços';
@@ -442,8 +441,8 @@ $string['services_help'] = 'Selecione os serviços que pretende disponibilizar a
 $string['setupoptions'] = 'Opções de configuração';
 $string['share_email'] = 'Partilhar e-mail do utilizador com a ferramenta';
 $string['share_email_admin'] = 'Partilhar e-mail do utilizador com a ferramenta';
-$string['share_email_admin_help'] = 'Especifique se o endereço de e-mail do utilizador, que inicia a ferramenta, será partilhado com o fornecedor da ferramenta.
-O fornecedor da ferramenta pode utilizar o e-mail para distinguir os utilizadores com o mesmo nome na UI, ou enviar e-mails para utilizadores com base nas suas ações dentro da ferramenta.';
+$string['share_email_admin_help'] = 'Especifica se o endereço de e-mail do utilizador que inicia a ferramenta, será, ou não, partilhado com o fornecedor da ferramenta.
+O fornecedor da ferramenta pode utilizar o e-mail para distinguir os utilizadores com o mesmo nome na interface do utilizador (UI), ou enviar e-mails para utilizadores com base nas suas ações dentro da ferramenta.';
 $string['share_email_help'] = 'Define se o endereço de e-mail do utilizador que inicia a ferramenta será, ou não, partilhado junto com o fornecedor da ferramenta.
 
 O fornecedor da ferramenta pode precisar do e-mail para distinguir os utilizadores com o mesmo nome, ou enviar e-mails para utilizadores com base nas suas ações dentro da ferramenta.
@@ -460,7 +459,7 @@ O fornecedor da ferramenta pode precisar dos nomes dos utilizadores para mostrar
 Tenha em atenção que esta configuração pode ser alterada na configuração da ferramenta.';
 $string['share_roster'] = 'Permitir à ferramenta aceder ao roster da disciplina';
 $string['share_roster_admin'] = 'A ferramenta pode aceder ao roster da disciplina';
-$string['share_roster_admin_help'] = 'Define se a ferramenta pode aceder à lista de utilizadores inscritos em disciplinas a partir das quais este tipo de ferramenta é iniciado.';
+$string['share_roster_admin_help'] = 'Define se a ferramenta pode aceder, ou não, à lista de utilizadores inscritos em disciplinas a partir das quais este tipo de ferramenta é iniciado.';
 $string['share_roster_help'] = 'Define se a ferramenta pode, ou não, aceder à lista de utilizadores inscritos nesta disciplina.
 
 Tenha em atenção que esta configuração pode ser alterada na configuração da ferramenta.';
@@ -495,7 +494,7 @@ Deve descrever o que a ferramenta é e o que ela faz, além de outras informaç�
 $string['tooldetailsaccesstokenurl'] = 'URL do token de acesso';
 $string['tooldetailsauthrequesturl'] = 'URL da solicitação de autenticação';
 $string['tooldetailsclientid'] = 'ID do cliente';
-$string['tooldetailsdeploymentid'] = 'ID de desenvolvimento';
+$string['tooldetailsdeploymentid'] = 'ID de implementação';
 $string['tooldetailsmailtosubject'] = 'Configuração da ferramenta LTI';
 $string['tooldetailsmodalemail'] = 'E-mail';
 $string['tooldetailsmodallink'] = 'Ver detalhes da configuração';

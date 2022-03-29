@@ -70,7 +70,7 @@ $string['filetypeexclusionlistplaceholder'] = 'Uitsluitlijst met bestanden voor 
 $string['forcedurlscheme'] = 'Als je wilt toestaan dat alleen de aan jouw organisatie aangepaste app kan geopend worden via een browser venster, specificeer hier dan het URL schema daarvan. Als je enkel de officiële app wil toestaan, zet de standaardwaarde dan hier. Laat het veld leeg als je gelijk welke app wil toestaan.';
 $string['forcedurlscheme_key'] = 'URL-schema';
 $string['forcelogout'] = 'Verplicht afmelden';
-$string['forcelogout_desc'] = 'Indien ingeschakeld wordt de optie \'Wijzig site\' gewijzigd in \'Uitloggen\'. Hierdoor wordt de gebruiker volledig uitgelogd. Die moet dan zijn gebruikersnaam en wachtwoord opnieuw ingeven wanneer ze een volgende keer toegang willen tot de site.';
+$string['forcelogout_desc'] = 'Indien ingeschakeld worden gebruikers altijd volledig uitgelogd als ze van account wisselen. Ze moeten dan hun gebruikersnaam en wachtwoord opnieuw ingeven wanneer ze een volgende keer toegang willen tot de site.';
 $string['getmoodleonyourmobile'] = 'Installeer de mobiele app';
 $string['h5poffline'] = 'Bekijk H5P-inhoud offline';
 $string['httpsrequired'] = 'HTTPS vereist';
@@ -145,6 +145,7 @@ $string['subscriptionfeatures'] = 'Abonnementsfuncties';
 $string['subscriptionlimitsurpassed'] = 'Abonnementslimiet overschreden';
 $string['subscriptionregister'] = 'Bezoek voor meer informatie over de verschillende abonnementsplannen voor de app en voor toegang tot de gebruikersstatistieken, de<a href="{$a}" target="_blank">Moodle Apps Portal</a>.';
 $string['subscriptionsseemore'] = 'Opmerking; de getoonde informatie is niet in real time. Je moet afmelden en terug aanmelden om aanpassingen te zien. Voor meer informatie over het upgraden van je abonnement kun je aanmelden op de  <a href="{$a}" target="_blank">Moodle Apps Portal</a>.';
+$string['switchaccount'] = 'Wissel account';
 $string['typeoflogin'] = 'Soort login';
 $string['typeoflogin_desc'] = 'Als de site een SSO-authenticatiemethode gebruikt, selecteer dan via een browservenster of via een ingebedde browser. Een ingebedde browser geeft een betere gebruikerservaring, maar het werkt niet met alle SSO-plugins.';
 $string['viewqrcode'] = 'Bekijk QR-code';

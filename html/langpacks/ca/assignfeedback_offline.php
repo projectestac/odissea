@@ -47,6 +47,6 @@ $string['pluginname'] = 'Full de qualificació fora de línia';
 $string['privacy:nullproviderreason'] = 'Aquest connector no disposa de base de dades on emmagatzema informació de l\'usuari. Solament fa ús de l\'API del mod_assign per facilitar la visualització de la interfície de qualificació.';
 $string['processgrades'] = 'Importa qualificacions';
 $string['skiprecord'] = 'Omet aquest registre';
-$string['updatedgrades'] = 'S\'han actualitzat {$a} qualificacions i retroalimentacions.';
+$string['updatedgrades'] = 'S\'han actualitzat <strong>{$a->gradeupdatescount}</strong> qualificacions i <strong>{$a->feedbackupdatescount}</strong> retroalimentacions.';
 $string['updaterecord'] = 'Actualitza el registre';
 $string['uploadgrades'] = 'Puja un full de qualificacions';

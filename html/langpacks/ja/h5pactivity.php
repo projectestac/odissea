@@ -127,6 +127,7 @@ $string['review_on_completion'] = '参加者は自分の受験をレビューで
 $string['review_user_attempts'] = 'ユーザ受験を表示する ({$a})';
 $string['score'] = '点数';
 $string['score_out_of'] = '$a->rawscore} / {$a->maxscore}';
+$string['search:activity'] = 'H5P -  活動情報';
 $string['startdate'] = '開始日';
 $string['statement_received'] = 'xAPI記述受信';
 $string['totalscore'] = '合計点';
