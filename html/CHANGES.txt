@@ -4,6 +4,18 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
 
+Changes 22.04.05
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.6+
+- Updated langpacks
+- auth_saml2: Upgraded module
+- auth_saml2: Added support for logging GICAR errors
+- Wiris: Upgraded all components
+- HVP: Upgraded module
+- GeoGebra: Upgraded module
+- Remove records in table assignfeedback_editpdf_rot during course reset (MDL-69570)
+
+
 Changes 21.11.23
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 3.11.4
