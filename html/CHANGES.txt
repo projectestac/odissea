@@ -4,6 +4,14 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
 
+Changes 22.04.26
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.6+
+- H5P Core: Allowed access to all administrators
+- HVP: Disabled creation of new activities
+- migratehvp2h5p: Allowed access to all administrators 
+
+
 Changes 22.04.05
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 3.11.6+
