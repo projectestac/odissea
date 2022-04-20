@@ -38,18 +38,6 @@ use tool_migratehvp2h5p\api;
 require_once(__DIR__ . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user
-// 2021.06.23 @aginard
-if (!get_protected_agora()) {
-    redirect(
-        new moodle_url('/index.php'),
-        get_string('accessdenied', 'core_admin'),
-        null,
-        \core\output\notification::NOTIFY_ERROR
-    );
-}
-// ************ FI
-
 $context = context_system::instance();
 $url = new moodle_url('/admin/tool/migratehvp2h5p/index.php');
 

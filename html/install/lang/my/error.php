@@ -41,3 +41,6 @@ $string['cannotsavemd5file'] = 'md5 ဖိုင်ကို မသိမ်း�
 $string['cannotsavezipfile'] = 'ZIP ဖိုင်ကို မသိမ်းဆည်းနိုင်ပါ';
 $string['cannotunzipfile'] = 'ZIP ဖိုင် ဖြည်၍မရပါ';
 $string['componentisuptodate'] = 'Component နောက်ဆုံးပေါ်ဖြစ်သည်။';
+$string['dmlexceptiononinstall'] = '<p>A database error has occurred [{$a->errorcode}].<br />{$a->debuginfo}</p>';
+$string['downloadedfilecheckfailed'] = 'ဒေါင်းလုဒ်ပြုလုပ်ထားသော ဖိုင် စစ်ဆေးခြင်း မအောင်မြင်ပါ';
+$string['invalidmd5'] = 'ပြောင်းလဲမှုစစ်ဆေးခြင်း မှားယွင်း‌နေပါသည် - ထပ်မံကြိုးစားကြည့်ပါ';

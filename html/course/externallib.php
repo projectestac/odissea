@@ -4325,20 +4325,6 @@ class core_course_external extends external_api {
         $contentitemservice = \core_course\local\factory\content_item_service_factory::get_content_item_service();
 
         $contentitems = $contentitemservice->get_content_items_for_user_in_course($USER, $course);
-
-        // XTEC ************ AFEGIT - Allow access only to xtecadmin user. (H5P core in activity chooser)
-        // 2021.07.08 @aginard
-        global $CFG;
-
-        if (!$CFG->isagora || !get_protected_agora()) {
-            foreach ($contentitems as $key => $contentitem) {
-                if ($contentitem->name == 'h5pactivity') {
-                    unset($contentitems[$key]);
-                }
-            }
-        }
-        // ************ FI
-
         return ['content_items' => $contentitems];
     }
 
