@@ -3187,16 +3187,6 @@ function initialise_filepicker($args) {
     $return->return_types = $args->return_types;
     $templates = array();
     foreach ($repositories as $repository) {
-
-        // XTEC ************ AFEGIT - Allow access only to xtecadmin user. (H5P core in filepicker)
-        // 2021.07.08 @aginard
-        if (!$CFG->isagora || !get_protected_agora()) {
-            if (isset($repository->options['type']) && $repository->options['type'] == 'contentbank') {
-                continue ;
-            }
-        }
-        // ************ FI
-
         $meta = $repository->get_meta();
         // Please note that the array keys for repositories are used within
         // JavaScript a lot, the key NEEDS to be the repository id.

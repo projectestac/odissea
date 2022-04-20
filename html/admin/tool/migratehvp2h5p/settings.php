@@ -25,15 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-// XTEC ************ MODIFICAT - Allow access only to xtecadmin user
-// 2021.06.23 @aginard
-if ($hassiteconfig && get_protected_agora()) {
-// ************ ORIGINAL
-/*
 if ($hassiteconfig) {
-*/
-// ************ FI
-
     $modhvp = core_plugin_manager::instance()->get_plugin_info('mod_hvp');
     if (!empty($modhvp)) {
         // The migration tool is only displayed when the HVP is installed.
