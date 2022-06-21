@@ -19,9 +19,6 @@ $CFG->updateminmaturity = 0;
 $CFG->updatenotifybuilds = false;
 $CFG->slasharguments = true;
 
-// Activate X-SendFile
-$CFG->xsendfile = 'X-Sendfile';
-
 // E-mail
 $CFG->smtpsecure = 'tls';
 $CFG->smtpmaxbulk = 15;
@@ -37,14 +34,12 @@ $CFG->skiplangupgrade = true;
 $CFG->altcacheconfigpath = __DIR__ . '/local/agora/muc/';
 $CFG->siteidentifier = 'odi_';
 
-
 $CFG->memcache_prefix = 'odi_';
 $CFG->redis_prefix = 'odi_';
 
 // $CFG->session_handler_class = '\core\session\database';
 // $CFG->session_database_acquire_lock_timeout = 120;
 $CFG->sessioncookie = 'odissea';
-
 
 // Configure redis for sessions
 $CFG->session_handler_class = '\core\session\redis';
@@ -88,5 +83,3 @@ $CFG->forced_plugin_settings = [
         'uninstall' => 1,
     ],
 ];
-
-
