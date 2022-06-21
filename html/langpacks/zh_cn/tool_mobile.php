@@ -38,7 +38,26 @@ $string['cachedef_subscriptiondata'] = '它存储Moodle应用的订阅信息。'
 $string['clickheretolaunchtheapp'] = '如果应用没有自动打开，请点击这里。';
 $string['configmobilecssurl'] = '定制您的移动应用界面的CSS文件。';
 $string['customlangstrings'] = '自定义语言字符串';
+$string['customlangstrings_desc'] = '应用程序中显示的单词和短语可以在此处自定义。在新行中输入每个自定义语言字符串，格式为：字符串标识符、自定义语言字符串和语言代码，用管道字符分隔。例如：
+<pre>
+mm.user.student |Learner | en
+mm.user.student|Aprendiz|es
+</pre>
+有关字符串标识符的完整列表，请参阅文档。';
 $string['custommenuitems'] = '自定义菜单项';
+$string['custommenuitems_desc'] = '通过在此处指定，可以将其他项目添加到应用程序的主菜单中。在新的行中输入每个自定义菜单项目，格式为：项目文本、链接URL、链接打开方式和语言代码（可选，仅对指定语言的用户显示该项目），用管道字符（ “|” ）分隔。
+
+链接打开方式有：应用程序（用于链接到应用程序支持的活动）、应用浏览器（用于在浏览器中打开链接而不离开应用程序）、浏览器（用于在应用程序之外的设备默认浏览器中打开链接）和嵌入式（用于在应用程序的新页面中的iframe中显示链接）。
+
+当项目缺少指定语言的翻译时，它们将使用其他语言作为后备，除非在语言代码中附加"_only "。
+
+例如：
+<pre>
+应用程序帮助|https://someurl.xyz/help|应用浏览器
+我的成绩|https://someurl.xyz/local/mygrades/index.php|嵌入式|en
+在我的资格中|https://someurl.xyz/local/mygrades/index.php|嵌入式|es
+你只能在英语中看到这个|https://someurl.xyz/english|浏览器|en_only
+</pre>';
 $string['darkmode'] = '深色模式';
 $string['disabledfeatures'] = '禁用功能';
 $string['disabledfeatures_desc'] = '在这里为您的站点选择您想要在移动应用中禁用的功能。请注意，这里列出的一些功能可能已经通过其他站点设置被禁用。您必须退出并再次登录应用才能看到变化。';
@@ -47,6 +66,9 @@ $string['downloadcourse'] = '下载课程';
 $string['downloadcourses'] = '下载课程';
 $string['enablesmartappbanners'] = '启用应用头图';
 $string['enablesmartappbanners_desc'] = '如果启用，在使用移动设备浏览器访问站点时，将显示一个推广移动应用的头图。';
+$string['filetypeexclusionlist'] = '文件类型排除列表';
+$string['filetypeexclusionlist_desc'] = '选择所有不适合在移动设备上使用的文件类型。这类文件将在课程中列出，如果用户试图打开它们，将显示一条警告提示该文件类型不适合在移动设备上使用。如果用户坚持打开该文件，可以取消或无视该警告。';
+$string['filetypeexclusionlistplaceholder'] = '移动文件类型排除列表';
 $string['forcedurlscheme'] = '如果您只允许您的自定义品牌应用通过浏览器窗口打开，那么在这里指定它的URL方案。如果您只允许官方应用，那么设置为默认值。如果您想允许任何应用，请将字段留空。';
 $string['forcedurlscheme_key'] = 'URL方案';
 $string['forcelogout'] = '强制退出';
@@ -66,7 +88,9 @@ $string['launchviasiteinbrowser'] = '通过系统浏览器中的站点启动';
 $string['loginintheapp'] = '通过应用（APP）';
 $string['logininthebrowser'] = '通过浏览器窗口(用于SSO插件)';
 $string['loginintheembeddedbrowser'] = '通过嵌入式浏览器(用于SSO插件)';
+$string['logoutconfirmation'] = '确定要从您的移动设备上的移动应用程序内注销吗？注销后，您将需要在所有安装了该应用程序的设备上重新输入用户名和密码。';
 $string['mainmenu'] = '主菜单';
+$string['managefiletypes'] = '管理文件类型';
 $string['minimumversion'] = '如果指定了应用版本(3.8.0或更高版本)，任何使用较老版本应用的用户将被提示升级他们的应用，然后才能访问站点。';
 $string['minimumversion_key'] = '最低应用版本要求';
 $string['mobileapp'] = '移动应用';

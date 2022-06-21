@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptrisk'] = 'Ik begrijp dat het uitschakelen van e-mailverificatie een beveiligingsprobleem kan zijn.';
+$string['acceptrisk_help'] = 'Als je e-mailverificatie uitschakelt, kan een gebruiker zich mogelijk als een andere gebruiker verifiëren.';
 $string['authconfirm'] = 'Deze actie geeft een permanente API-toegang tot Moodle voor de geauthenticeerde account. Dit is bedoeld om gebruikt te worden als een systeemaccount voor het beheren van bestanden waarvan Moodle eigenaar is.';
 $string['authconnected'] = 'De systeemaccount is nu verbonden voor offline toegang';
 $string['authnotconnected'] = 'De systeemaccount is niet verbonden voor offline toegang';

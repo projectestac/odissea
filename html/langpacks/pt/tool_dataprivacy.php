@@ -144,6 +144,7 @@ $string['effectiveretentionperioduser'] = '{$a} (Desde a última vez que o utili
 $string['emailsalutation'] = 'Caro/a {$a},';
 $string['errorcannotrequestdeleteforother'] = 'Não tem permissão para criar uma solicitação de eliminação de dados para este utilizador.';
 $string['errorcannotrequestdeleteforself'] = 'Não tem permissão para criar uma solicitação de eliminação dos seus dados.';
+$string['errorcannotrequestexportforself'] = 'Não tem permissão para criar uma solicitação de exportação para si mesmo.';
 $string['errorcontactdpodisabled'] = 'O contacto com o responsável pela privacidade está desativado.';
 $string['errorcontexthasunexpiredchildren'] = 'O contexto "{$a}" ainda tem subcontextos que ainda não expiraram. Nenhum contexto foi assinalado para apagamento.';
 $string['errorinvalidrequestcomments'] = 'O campo de comentário apenas pode conter texto simples.';

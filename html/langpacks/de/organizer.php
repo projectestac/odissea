@@ -585,6 +585,7 @@ $string['messageprovider:register_notify_teacher_register'] = 'Terminplaner Regi
 $string['messageprovider:register_notify_teacher_reregister'] = 'Terminplaner Re-Registrierungsbenachrichtigung';
 $string['messageprovider:register_notify_teacher_unqueue'] = 'Benachrichtigung des Organisators beim Austragen aus der Warteliste';
 $string['messageprovider:register_notify_teacher_unregister'] = 'Terminplaner Abmeldungsbenachrichtigung';
+$string['messageprovider:register_promotion_student'] = 'Terminplaner Systemnachricht zum Nachrücken aus Warteliste';
 $string['messageprovider:register_reminder_student'] = 'Terminplaner Registrierungserinnerung';
 $string['messageprovider:slotdeleted_notify_student'] = 'Terminplaner Slot absagen';
 $string['messageprovider:test'] = 'Terminplaner Test Nachricht';
@@ -804,6 +805,9 @@ $string['register_notify_teacher:unregister:group:smallmessage'] = 'Teilnehmer/i
 $string['register_notify_teacher:unregister:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Gruppe abgemeldet';
 $string['register_notify_teacher:unregister:smallmessage'] = 'Teilnehmer/in {$a->sendername} hat sich vom Zeitslot am {$a->date} um {$a->time} im/in {$a->location} abgemeldet.';
 $string['register_notify_teacher:unregister:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Teilnehmer/in abgemeldet';
+$string['register_promotion_student:fullmessage'] = 'Ihre Registrierung für einen Slot wurde vom Status "Warteliste" in "Gebucht" geändert.';
+$string['register_promotion_student:smallmessage'] = 'Ihre Registrierung für einen Slot wurde vom Status "Warteliste" in "Gebucht" geändert.';
+$string['register_promotion_student:subject'] = 'Moodle Terminplaner: Von Warteliste nachgerückt';
 $string['register_reminder_student:fullmessage'] = 'Hallo {$a->receivername}!
 
 Im Rahmen des Kurses {$a->courseid} {$a->coursefullname}, haben Sie sich entweder noch nicht für einen Zeitslot angemeldet, oder denjenigen verpasst für den Sie sich angemeldet haben.

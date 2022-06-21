@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accountexists'] = 'Es existiert bereits ein Nutzer mit diesem Benutzernamen. Falls es sich dabei um Ihren Nutzeraccount handelt, melden Sie sich bitte mit Ihrem Benutzernamen und Kennwort an und fügen Sie ihn über Ihre Favoritenseite als verbundenen Login hinzu.';
+$string['accountexists'] = 'Es existiert bereits ein Nutzer mit diesem Nutzer/innennamen. Falls es sich dabei um Ihren Nutzeraccount handelt, melden Sie sich bitte mit Ihrem Benutzernamen und Kennwort an und fügen Sie ihn über Ihre Favoritenseite als verbundenen Login hinzu.';
 $string['alreadylinked'] = 'Dieser externe Account ist bereits mit einem Nutzerkonto auf dieser Seite verknüpft.';
 $string['auth_oauth2description'] = 'OAuth 2 Standard-basierte Authentifizierung';
 $string['auth_oauth2settings'] = 'Einstellungen zur OAuth 2 Authentifizierung';
@@ -39,13 +39,13 @@ Bitte folgen Sie diesem Link, um das neue Profil zu bestätigen:
 
 In den meisten E-Mail-Programmen sollte dieser Link in blau angezeigt werden, so dass Sie ihn anklicken können. Sollte dies nicht der Fall sein, kopieren Sie bitte den Link und fügen ihn in der Adresszeile Ihres Browserfensters ein.
 
-Falls Sie Hilfe benötigen, kontaktieren Sie bitte den Administrator der Website,
+Falls Sie Hilfe benötigen, kontaktieren Sie bitte den/die Administrator/in der Website,
 {$a->admin}
 
 Ihr E-Learning-Team';
 $string['confirmaccountemailsubject'] = '{$a}: Bestätigung für das Nutzerkonto';
 $string['confirmationinvalid'] = 'Der Bestätigungslink ist ungültig oder bereits abgelaufen. Starten Sie den Anmeldevorgang erneut, um eine neue Bestätigungs-E-Mail zu erhalten.';
-$string['confirmationpending'] = 'Dieses Nutzerkonto wartet auf eine E-Mail-Bestätiging.';
+$string['confirmationpending'] = 'Dieses Nutzerkonto wartet auf eine E-Mail-Bestätigung.';
 $string['confirmlinkedloginemail'] = 'Guten Tag {$a->fullname},
 
 unter Angabe Ihrer E-Mail-Adresse wurde eine Anfrage gestellt, das {$a->issuername}-Login \'{$a->linkedemail}\' mit Ihrem Nutzerkonto auf \'{$a->sitename}\' zu verbinden.

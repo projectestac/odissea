@@ -47,3 +47,4 @@ $string['myprofile:addinstance'] = '新增已登录用户版块';
 $string['myprofile:myaddinstance'] = '在个人主页新增一个已登录用户版块';
 $string['myprofile_settings'] = '用户公开信息';
 $string['pluginname'] = '已登录用户';
+$string['privacy:metadata'] = '“已登录用户”板块仅显示有关登录用户的信息，本身并不存储数据。';

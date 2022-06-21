@@ -36,6 +36,7 @@ $string['addcfgipblock'] = 'Add blocked IP to site configuration';
 $string['addcfgipblock_desc'] = 'Check this option if you wish to add a blocked IP to the global list of <a href="{$a}">blocked IP addresses</a>.';
 $string['antihammer:administration'] = 'Administer auth antihammer';
 $string['antihammer:delete'] = 'Remove records';
+$string['antihammer:notifyblocking'] = 'Be notified about antihammer account blocking.';
 $string['ap:log'] = 'Antihammer logs';
 $string['ap:logdetails'] = 'Antihammer log detail';
 $string['ap:report'] = 'Antihammer reports';
@@ -146,3 +147,5 @@ $string['type:ip'] = 'IP block';
 $string['type:user'] = 'User block';
 $string['usemessaging'] = 'use messaging API?';
 $string['usemessaging_desc'] = 'Check this option if you want the messaging API to be used to inform applicable recipients';
+$string['warn:moodlelockoutactive'] = 'Moodle <a href="{$a}">account lockout</a> as well as antihammer\'s user blocking is active.<br/>
+This can cause unintended side-effects. Please consider disabling one.';

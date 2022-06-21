@@ -32,6 +32,7 @@ $string['privacy:metadata'] = 'Il pluign "convertitore di documenti Unoconv" non
 $string['test_unoconv'] = 'Test del percorso di unoconv';
 $string['test_unoconvdoesnotexist'] = 'Il percorso di unoconv non punta all\'eseguibile unoconv. Devi verificare il percorso impostato.';
 $string['test_unoconvdownload'] = 'Scarica il file pdf di test converito';
+$string['test_unoconvempty'] = 'Il percorso di unoconv non è impostato. Per favore controllare le impostazioni.';
 $string['test_unoconvisdir'] = 'Il percorso di unoconv punta ad un cartella, nel percorso devi includere anche il nome dell\'eseguibile';
 $string['test_unoconvnotestfile'] = 'Manca Il documento di test da convertire in PDF.';
 $string['test_unoconvnotexecutable'] = 'Il percorso di unoconv punta ad un file che non è eseguibile';

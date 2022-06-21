@@ -256,17 +256,6 @@ $string['spaceleft'] = 'praza dispoñíbel';
 $string['spacesleft'] = 'prazas dispoñíbeis';
 $string['startendtimeknown'] = 'As datas de comezo e remate do curso son coñecidas';
 $string['starttimenotset'] = 'Data de comezo sen configurar';
-$string['statuschangebookedmessage'] = 'Ola {$a->participant}:
-
-Modificouse o estado da súa reserva. Agora está rexistrado en {$a->title}.
-
-Estado da reserva: {$a->status}
-Participante: {$a->participant}
-Curso: {$a->title}
-Data: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-To view all your booked courses click on the following link: {$a->bookinglink}
-The associated course can be found here: {$a->courselink}';
-$string['statuschangebookedsubject'] = 'Estado da reserva modificado para {$a->title}';
 $string['statuschangetext'] = 'Mensaxe de cambio de estado';
 $string['statuschangetext_help'] = 'Deixe isto en branco para usar o texto por defecto. Pode usar calquera das seguintes variables:
 <ul>

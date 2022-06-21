@@ -35,7 +35,7 @@ if (!interface_exists('com_wiris_util_sys_AccessProvider')) {
     require_once($CFG->dirroot . '/question/type/wq/quizzes/lib/com/wiris/util/sys/AccessProvider.interface.php');
 }
 
-class accessprovider  implements com_wiris_util_sys_AccessProvider{
+class accessprovider implements com_wiris_util_sys_AccessProvider {
 
     /**
      * This method is called before all service. We use it as a wrapper to call

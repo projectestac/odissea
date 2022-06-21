@@ -19,7 +19,7 @@ global $CFG;
 require_once($CFG->dirroot . '/question/type/wq/quizzes/quizzes.php');
 require_once($CFG->dirroot . '/question/type/wq/lib.php');
 
-class moodle1_qtype_truefalsewiris_handler extends moodle1_qtype_truefalse_handler{
+class moodle1_qtype_truefalsewiris_handler extends moodle1_qtype_truefalse_handler {
 
     public function get_question_subpaths() {
         return array(

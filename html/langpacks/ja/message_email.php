@@ -47,4 +47,5 @@ $string['privacy:metadata:replyto'] = '返信先のメールアドレスです�
 $string['privacy:metadata:replytoname'] = '受信者への返信名です。';
 $string['privacy:metadata:subject'] = 'メッセージの件名行です。';
 $string['privacy:metadata:userfrom'] = 'メッセージを送信したユーザです。';
+$string['privacy:preference:email'] = '推奨メール通知アドレス';
 $string['tasksendemail'] = 'メッセージダイジェストメーリング';

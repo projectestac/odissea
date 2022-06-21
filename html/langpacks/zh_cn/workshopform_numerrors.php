@@ -41,3 +41,5 @@ $string['grademapping'] = '成绩映射表';
 $string['maperror'] = '加权的错误个数小于或相等';
 $string['mapgrade'] = '作业成绩';
 $string['pluginname'] = '错误数';
+$string['privacy:export:metadata:map'] = '如果加权错误数达到{$a->nonegative}，则分数为{$a->grade}个百分点。';
+$string['privacy:metadata'] = '错误数插件仅存储评估表单的详细信息。如何填写表格的实际个人数据存储在研讨会模块中，并附在导出的评估中。';

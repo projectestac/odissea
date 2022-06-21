@@ -30,7 +30,6 @@ $string['accredible:manage'] = 'Zertifikat oder Auszeichnung verwalten';
 $string['accredible:student'] = 'Zertifikat oder Auszeichnung abrufen';
 $string['accredible:view'] = 'Zertifikat oder Auszeichnung anzeigen';
 $string['achievementid'] = 'Leistungs-ID / Lerngruppenname (muss eindeutig sein)';
-$string['activitydescription'] = 'Dieses Modul erstellt und aktualisiert automatisch eine Credential Group auf Accredible. Sämtliche vergebenen Zertifikate und Badges befinden sich in dieser Gruppe, ihr Aussehen und ihre Daten können auf <a href="https://dashboard.accredible.com" target="_blank">dem Dashboard</a> aktualisiert werden.';
 $string['activityname'] = 'Aktivitätsbezeichnung';
 $string['additionalactivitiesone'] = 'Achtung: Sie fügen einem Kurs mehr als eine Aktivität hinzu.<br/>Beide Aktivitäten können von Teilnehmer/innen eingesehen werden, geben Sie ihnen also unterschiedliche Namen.';
 $string['additionalactivitiesthree'] = 'Dies ist der Name, der auf dem Zertifikat erscheinen wird';

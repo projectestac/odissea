@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['globalsearch:addinstance'] = '新增一个全站搜索版块';
 $string['globalsearch:myaddinstance'] = '在个人主页新增一个全站搜索版块';
 $string['pluginname'] = '全站搜索';
+$string['privacy:metadata'] = '“全局搜索”板块仅显示存储在其他位置的数据。';

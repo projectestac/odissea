@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/elearningsoftware/moodle-mod_journal.svg?branch=master)](https://travis-ci.org/elearningsoftware/moodle-mod_journal)
+![Build Status](https://github.com//elearningsoftware/moodle-mod_journal/workflows/Moodle%20Plugin%20CI/badge.svg?branch=master)
 
 # Moodle Journal module
 - Documentation: http://docs.moodle.org/en/Journal_module

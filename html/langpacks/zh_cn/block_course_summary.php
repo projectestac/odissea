@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['course_summary:addinstance'] = '添加一个课程/网站描述版块';
 $string['coursesummary'] = '课程简介';
 $string['pluginname'] = '课程/网站简介';
+$string['privacy:metadata'] = '“课程/站点概要”板块仅显示有关课程的信息，本身并不存储数据。';

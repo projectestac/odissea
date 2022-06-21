@@ -89,6 +89,7 @@ $string['advanced:redo_desc'] = '恢复（Ctrl+Y）';
 $string['advanced:removeformat_desc'] = '清除格式';
 $string['advanced:rich_text_area'] = '富文本';
 $string['advanced:samp'] = '代码范例';
+$string['advanced:shortcuts_desc'] = '可访问性功能帮助';
 $string['advanced:striketrough_desc'] = '删除线';
 $string['advanced:style_select'] = '样式';
 $string['advanced:sub_desc'] = '下标';

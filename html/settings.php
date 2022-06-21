@@ -42,8 +42,8 @@ $CFG->timezone = 99; // Changed by default to Server's local time
 $CFG->cronremotepassword = '';
 $CFG->cronclionly = 1;
 
-// Activate X-SendFile
-$CFG->xsendfile = 'X-Sendfile';
+// Encryption in https is provided by the load balancer.
+$CFG->sslproxy = true;
 
 // Captcha keys
 $CFG->recaptchapublickey = $agora['recaptchapublickey'];
@@ -170,7 +170,7 @@ $CFG->forced_plugin_settings = [
         'backup_auto_min_kept' => 1,
     ],
     'tool_recyclebin' => [
-        'coursebinenable' => 1,
+//        'coursebinenable' => 1,
         'coursebinexpiry' => 604800,
         'categorybinenable' => 1,
         'categorybinexpiry' => 604800,

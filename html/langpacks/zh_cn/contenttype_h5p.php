@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['description'] = 'H5P互动内容';
 $string['h5p:access'] = '访问内容库中的H5P内容';
+$string['h5p:upload'] = '上传新的H5P内容';
+$string['h5p:useeditor'] = '使用H5P编辑器创建或编辑内容';
+$string['pluginname'] = 'H5P';
 $string['pluginname_help'] = '内容库上传和共享H5P内容';
 $string['privacy:metadata'] = 'H5P内容库插件不存储任何个人数据。';

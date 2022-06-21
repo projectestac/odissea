@@ -36,6 +36,7 @@ $string['passwordinvalidhint'] = '密码不正确，请重试<br />
 （小提示：密码以“{$a}”开头）';
 $string['pluginname'] = '访客可访问';
 $string['pluginname_desc'] = '访客访问插件只给用户临时访问课程的权限，并不会真的给用户选课。';
+$string['privacy:metadata'] = '访客访问注册插件不存储任何个人数据。';
 $string['requirepassword'] = '必须有访客访问密码';
 $string['requirepassword_desc'] = '要求新课程必须设置访问密码，并禁止已有课程删除密码。';
 $string['showhint'] = '显示提示';

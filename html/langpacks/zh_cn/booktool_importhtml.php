@@ -32,6 +32,7 @@ $string['importhtml:import'] = '导入章节';
 $string['importing'] = '正在导入';
 $string['importingchapters'] = '将章节导入到图书中';
 $string['pluginname'] = '图书导入 HTML';
+$string['privacy:metadata'] = '图书章节导入插件不存储任何个人数据。';
 $string['relinking'] = '重新链接';
 $string['type'] = '类型';
 $string['typeonefile'] = '把标题做为章节的一个 HTML 文件';

@@ -124,6 +124,7 @@ class qtype_wq extends question_type {
         $question->createdby = &$question->base->createdby;
         $question->modifiedby = &$question->base->modifiedby;
         $question->hints = &$question->base->hints;
+        $question->questionbankentryid = &$question->base->questionbankentryid;
 
         // Load question xml into Wiris Quizzes API question object.
         if (empty($question->parent)) {

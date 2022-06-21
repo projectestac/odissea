@@ -395,8 +395,8 @@
     "id": "newElementByLabel",
     "title": "tt_elementMML",
     "icon": {
-      "name": "functions",
-      "type": "material"
+      "name": "function",
+      "type": "svg"
     }
   },
   {
@@ -672,6 +672,12 @@
   {
     "id": "logBase",
     "title": "log<sub style=\"font-size: 7pt; vertical-align: sub; line-height: 0px;\">&#9647;</sub>",
+    "value": "log",
+    "titleHtml": true
+  },
+  {
+    "id": "log",
+    "title": "log",
     "value": "log",
     "titleHtml": true
   },

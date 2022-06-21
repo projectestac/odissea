@@ -82,5 +82,5 @@ $string['responsetemplate'] = 'Antwoordsjabloon';
 $string['responsetemplate_help'] = 'Alle tekst die hier gezet wordt, zal getoond worden in de antwoordbox wanneer een nieuwe poging voor het beantwoorden van de vraag begint.';
 $string['responsetemplateheader'] = 'Antwoordsjabloon';
 $string['wordcount'] = 'Aantal woorden: {$a}';
-$string['wordcounttoofew'] = 'Aantal woorden: {{$a->count}, minder dan de vereiste {$a->limit} woorden.';
+$string['wordcounttoofew'] = 'Aantal woorden: {{$a->count}, dit is minder dan de vereiste {$a->limit} woorden.';
 $string['wordcounttoomuch'] = 'Aantal woorden: {$a->count}, meer dan de limiet van {$a->limit} woorden.';

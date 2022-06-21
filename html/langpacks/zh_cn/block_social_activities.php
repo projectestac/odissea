@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '社区活动';
+$string['privacy:metadata'] = '“社交活动”板块仅显示存储在其他位置的数据。';
 $string['social_activities:addinstance'] = '新增社区活动版块';

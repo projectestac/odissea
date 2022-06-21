@@ -33,8 +33,6 @@
  *    l'step és read-only.
  * **/
 
-defined('MOODLE_INTERNAL') || die();
-
 class qtype_wirisstep {
     const MAX_ATTEMPS_SHORTANSWER_WIRIS = 2;
 

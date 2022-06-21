@@ -32,7 +32,7 @@ $string['copy2cb'] = 'Caldria afegir aquests continguts al banc de contingut?';
 $string['copy2cb_no'] = 'No, s\'haurien de crear només en l\'activitat';
 $string['copy2cb_yeswithlink'] = 'Sí, i caldria utilitzar un enllaç a aquests fitxers en l\'activitat';
 $string['copy2cb_yeswithoutlink'] = 'Sí, però s\'utilitzarà una còpia en l\'activitat (els canvis en el banc de contingut no es veuran reflectits en l\'activitat)';
-$string['error_contenttypeh5p_disabled'] = 'El tipus de contingut H5P està deshabilitat. Cal habilitar-lo per a migrar activitats des del mod_hvp i afegir-les també al banc de contingut. Podeu habilitar aquest tipus de contingut des de l\'«Administració del lloc | Connectors | Banc de contingut | Gestiona els tipus de contingut» o executar de nou l\'eina de migració i triar «No, s\'haurien de crear només en l\'activitat» (o bé «copy2cb=0» si esteu executant CLI) per a evitar crear fitxers en el banc de contingut.';
+$string['error_contenttypeh5p_disabled'] = 'El tipus de contingut H5P està inhabilitat. Cal habilitar-lo per migrar activitats des del mod_hvp i afegir-les també al banc de contingut. Podeu habilitar aquest tipus de contingut des de l\'«Administració del lloc | Connectors | Banc de contingut | Gestiona els tipus de contingut» o executar de nou l\'eina de migració i triar «No, s\'haurien de crear només en l\'activitat» (o bé «copy2cb=0» si esteu executant CLI) per evitar crear fitxers al banc de contingut.';
 $string['error_modh5pactivity_disabled'] = 'L\'activitat H5P està deshabilitada. Cal habilitar-la per a migrar activitats des del mod_hvp';
 $string['event_hvp_migrated'] = 'S\'ha migrat mod_hvp a mod_h5pactivity';
 $string['graded'] = 'Usuaris qualificats';

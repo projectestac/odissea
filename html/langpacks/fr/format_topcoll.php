@@ -28,6 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['addsection'] = 'Ajouter une section';
 $string['arrow'] = 'Flèche';
 $string['bulb'] = 'Ampoule';
+$string['cachedef_activitymodulecountcache'] = 'Met en cache le nombre d\'étudiants qui peuvent accéder à un module donné dans un cours donné.';
+$string['cachedef_activitystudentrolescache'] = 'Met en cache les rôles des étudiants.';
+$string['cachedef_activitystudentscache'] = 'Met en cache les identifiants des étudiants d\'un cours donné.';
+$string['cachedef_activityusercreatedcache'] = 'Met en cache les identifiants des nouveaux utilisateurs d\'un cours donné.';
+$string['cannotgetactivitycacheslock'] = 'Impossible d\'obtenir le verrouillage des caches d\'activité pour l\'identifiant de cours {$a}.';
 $string['center'] = 'Centre';
 $string['cloud'] = 'Nuage';
 $string['colourrule'] = 'Veuillez entrer une couleur RVB valide, six chiffres hexadécimaux ou « - » par défaut.';
@@ -35,26 +40,38 @@ $string['columnhorizontal'] = 'Horizontal';
 $string['columnvertical'] = 'Vertical';
 $string['configurationheadingsub'] = 'Configuration';
 $string['configurationheadingsubdesc'] = 'Paramètres de configuration';
+$string['courseadditionalmoddatamaxstudents'] = 'Définir le nombre maximum d\'étudiants d\'un cours auquel s\'appliquera l\'option « Afficher les informations supplémentaires »';
+$string['courseadditionalmoddatamaxstudentsdesc'] = 'Les informations supplémentaires peuvent prendre du temps à calculer, en particulier pour les cours de grande taille. Vous pouvez donc définir ici le nombre maximum d\'étudiants qu\'un cours peut avoir pour que la fonctionnalité s\'affiche sur ce cours.  Au-delà de cette valeur, les « Informations supplémentaires » ne seront PAS calculées ni affichées, quels que soient les paramètres du cours !  Une valeur à « 0 » signifie « illimité ».  Remarque : Il faut purger les caches lorsqu\'ils sont modifiés.';
+$string['courseadditionalmoddatastudentsinfo'] = 'Statut d\'information supplémentaire :';
+$string['courseadditionalmoddatastudentsinfolimitednoshow'] = 'Les informations supplémentaires ne seront PAS affichées pour les activités activées pour les étudiants {$a->étudiants} car le nombre dépasse le maximum « {$a->maxstudents} » défini par l\'administrateur dans le paramètre « courseadditionalmoddatamaxstudents » du format de cours Sections Réduites.';
+$string['courseadditionalmoddatastudentsinfolimitedshow'] = 'Des informations supplémentaires seront affichées pour les activités activées pour les  {$a->étudiants} étudiants si le nombre ne dépasse pas le maximum « {$a->maxstudents} » défini par l\'administrateur dans le paramètre « courseadditionalmoddatamaxstudents » du format de cours Sections Réduites.';
+$string['courseadditionalmoddatastudentsinfounlimited'] = 'Des informations supplémentaires s\'afficheront pour les activités activées pour {$a} étudiants.';
 $string['coursesectionactivityfurtherinformation'] = 'Page du cours pour plus d\'informations';
 $string['coursesectionactivityfurtherinformationassign'] = 'Afficher les informations sur le devoir';
-$string['coursesectionactivityfurtherinformationassigndesc'] = 'Afficher les informations sur le devoir, tels que la date d\'échéance et l\'état du rendu. Pour les enseignants / administrateurs, indiquer le nombre de rendus.';
+$string['coursesectionactivityfurtherinformationassigndesc'] = 'Permet de sélectionner les informations sur les devoirs à afficher dans un cours.  Pour les enseignants/administrateurs, afficher le nombre de rendus.';
 $string['coursesectionactivityfurtherinformationchoice'] = 'Afficher les choix';
-$string['coursesectionactivityfurtherinformationchoicedesc'] = 'Afficher les choix, tels que l\'état du rendu. Pour les enseignants / administrateurs, indiquer le nombre de rendus.';
+$string['coursesectionactivityfurtherinformationchoicedesc'] = 'Permet de sélectionner les informations de choix à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
 $string['coursesectionactivityfurtherinformationdata'] = 'Afficher les informations sur la base de données';
-$string['coursesectionactivityfurtherinformationdatadesc'] = 'Afficher les informations sur les données, tel que l\'état du rendu. Pour les enseignants / administrateurs, indiquer le nombre de rendus.';
+$string['coursesectionactivityfurtherinformationdatadesc'] = 'Permet de sélectionner les informations sur les données à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
 $string['coursesectionactivityfurtherinformationfeedback'] = 'Afficher les informations de retour (feedback)';
-$string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'Afficher les informations de retour, tel que l\'état de rendu. Pour les enseignants / administrateurs, indiquer le nombre de rendus.';
+$string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'Permet de sélectionner les informations sur les retours à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
+$string['coursesectionactivityfurtherinformationforum'] = 'Afficher les informations du forum';
+$string['coursesectionactivityfurtherinformationforumdesc'] = 'Permet aux informations du forum d\'être sélectionnées pour être affichées sur un cours.  Pour les enseignants/administrateurs, afficher le nombre de contributions lorsque le classement du forum entier est activé.';
 $string['coursesectionactivityfurtherinformationlesson'] = 'Afficher les informations sur la leçon';
-$string['coursesectionactivityfurtherinformationlessondesc'] = 'Afficher les informations de la leçon, tel que l\'état du rendu. Pour les enseignants / administrateurs, indiquer le nombre de rendus.';
+$string['coursesectionactivityfurtherinformationlessondesc'] = 'Permet de sélectionner les informations sur les leçons à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
 $string['coursesectionactivityfurtherinformationquiz'] = 'Afficher les informations du quiz';
-$string['coursesectionactivityfurtherinformationquizdesc'] = 'Afficher les informations du quiz, tel que l\'état du rendu. Pour les enseignants / administrateurs, indiquer le nombre de rendus.';
+$string['coursesectionactivityfurtherinformationquizdesc'] = 'Permet de sélectionner les informations sur les tests à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
 $string['creatingsection'] = 'Créer une nouvelle section';
 $string['ctreset'] = 'Réinitialisation des options des sections réduites';
 $string['ctreset_help'] = 'Rétablir les paramètres par défaut des sections réduites.';
 $string['currentsection'] = 'Cette section';
 $string['default'] = 'Défaut - {$a}';
+$string['defaultdisplayblocks'] = 'Blocs à afficher';
+$string['defaultdisplayblocks_desc'] = 'Choisir les blocs à afficher dans le cours lorsqu\'il est créé pour la première fois et que ce format est sélectionné.  Utilisez la touche « Ctrl » en combinaison avec la souris pour en sélectionner plusieurs ou aucun.  Remarque : ce paramètre ne s\'appliquera qu\'à la création du cours et à aucun autre moment, par exemple si vous passez d\'un autre format à celui de Section Réduite.';
+$string['defaultdisplayblocksloc'] = 'Emplacement d\'affichage du bloc';
+$string['defaultdisplayblocksloc_desc'] = 'Choisir l\'emplacement d\'affichage des blocs choisis ci-dessus, avant ou après le côté.';
 $string['defaultdisplayinstructions'] = 'Afficher les instructions aux utilisateurs';
-$string['defaultdisplayinstructions_desc'] = 'Afficher des instructions aux utilisateurs leur expliquant l\'utilisation des sections réduites.';
+$string['defaultdisplayinstructions_desc'] = 'Afficher des instructions aux utilisateurs les informant de la manière d\'utiliser les boutons.  Peut être oui ou non.';
 $string['defaultheadingsub'] = 'Défauts';
 $string['defaultheadingsubdesc'] = 'Paramètres par défaut';
 $string['defaultlayoutcolumnorientation'] = 'Orientation de la colonne';
@@ -62,45 +79,15 @@ $string['defaultlayoutcolumnorientation_desc'] = 'Orientation de la colonne par 
 $string['defaultlayoutcolumns'] = 'Nombre de colonnes';
 $string['defaultlayoutcolumns_desc'] = 'Nombre de colonne entre un et quatre';
 $string['defaultlayoutelement'] = 'Mise en page';
-$string['defaultlayoutelement_desc'] = 'Le réglage de la mise en page peut être :
-
-- « Par défaut » avec tout qui s\'affiche
-
-- Pas de « Section x » / « Semaine x » / « Jour x à basculer »
-
-- Pas de numéro de section
-
--Pas de « Section x » / « Semaine x » / « Jour x à basculer » ni aucun numéro de section.
-
-- Pas de mot « Basculer ».
-
-- Pas de mot « Basculer », ni de « Sujet x » / « Semaine x » / « Jour x à basculer ».
-
-- Pas de mot « Basculer», ni de « Sujet x » / « Semaine x » / « Jour x à basculer », ni aucun numéro de section.';
-$string['defaultlayoutelement_descpositive'] = 'Le réglage de la mise en page peut être :
-
-- Mention de « Basculer », « Section x » / « Semaine x » / «  Jour x à basculer » et numéro de section.
-
-- Mention de « Basculer » et « Section x » / « Semaine x » / « Jour x à basculer ».
-
-- Mention de « Basculer » et numéro de section.
-
-- Mention de « Sujet x » / « Semaine x » / « Jour x à basculer » et numéro de section.
-
-- Mention de « Basculer».
-
-- Mention de « Sujet x » / « Semaine x » / « Jour x à basculer ».
-
-- Mention du numéro de section.
-
-- Sans ajout';
+$string['defaultlayoutelement_desc'] = 'Le réglage de la mise en page peut être : <br />« Par défaut » avec tout qui s\'affiche.<br />Pas de « Sujet x » / « Semaine x » / « Jour x ».<br />Pas de numéro de section.<br />Pas de « Sujet x » / « Semaine x » / « Jour x » ni aucun numéro de section.<br />Pas de mention de « Basculer ».<br />Pas de mention de « Basculer », ni de « Sujet x » / « Semaine x » / « Jour x ».<br />Pas de mention de « Basculer », ni de « Sujet x » / « Semaine x » / « Jour x », ni aucun numéro de section.';
+$string['defaultlayoutelement_descpositive'] = 'Le réglage de la mise en page peut être : <br />« Basculer », « Sujet x » / « Semaine x » / « Jour x » et numéro de section.<br />« Basculer » et « Sujet x » / « Semaine x » / « Jour x ».<br />« Basculer » et  numéro de section.<br />« Sujet x » / « Semaine x » / « Jour x » et numéro de section.<br />« Basculer ».<br />« Sujet x » / « Semaine x » / « Jour x ».<br />Numéro de section.<br />Sans ajout.';
 $string['defaultlayoutstructure'] = 'Configuration de la structure';
 $string['defaultlayoutstructure_desc'] = 'Le paramètre de structure peut être l\'un des suivants : <br />Sujet<br />Semaine<br />Dernière semaine en premier<br />Sujet actuel en premier<br />Jour';
 $string['defaultonesection'] = 'Une section';
-$string['defaultonesection_desc'] = 'Détermine si une seule section devrait être ouverte à la fois. Note : ce paramètre est ignoré en mode édition pour permettre le déplacement d\'éléments entre les sections.';
-$string['defaultshowadditionalmoddata'] = 'Cours par défaut « Afficher des informations supplémentaires » s\'il n\'est pas déjà défini';
+$string['defaultonesection_desc'] = 'Indique si une seule section devrait être ouverte à la fois. Note : ce paramètre est ignoré en mode édition pour permettre le déplacement d\'éléments entre les sections.';
+$string['defaultshowadditionalmoddata'] = 'Cours par défaut « Afficher des informations supplémentaires »';
 $string['defaultshowadditionalmoddatadesc'] = 'Si une activité est définie au niveau du site (ci-dessous) pour afficher des informations supplémentaires, ce paramètre indique l\'état par défaut de l\'instance spécifique au cours.';
-$string['defaultshowsectionsummary'] = 'Afficher le résumé de la section si réduite';
+$string['defaultshowsectionsummary'] = 'Afficher le résumé de la section lorsqu\'elle est réduite';
 $string['defaultshowsectionsummary_desc'] = 'Fixe le résumé de la section toujours affiché même si la section est réduite.';
 $string['defaulttgbgcolour'] = 'Changer la couleur d\'arrière-plan';
 $string['defaulttgbgcolour_desc'] = 'Définit la couleur du fond de la section réduite.';
@@ -139,11 +126,9 @@ $string['defaulttoggleiconset_desc'] = '<table><tbody><tr><td>Flèche</td><td>{$
 $string['defaulttoggleiconsize'] = 'Taille des icônes';
 $string['defaulttoggleiconsize_desc'] = 'Taille des icônes : petit = 16px, moyen = 24px et grand = 32px';
 $string['defaulttogglepersistence'] = 'Persistance de la bascule';
-$string['defaulttogglepersistence_desc'] = '« On » ou « Off ». Vous devriez peut être mettre sur \'Off\' pour améliorer la performance AJAX, mais la position des sections basculées par l\'utilisateur ne sera pas rappelée à l\'actualisatin de la page.
-
-Remarque : mettre la persistance sur \'Off\' supprime toutes les lignes contenant \'topcoll_toggle_x\' dans le champ \'name\' de la table \'user_preferences de la base de données (quand \'x\' dans \'topcoll_toggle_x\' correspond à l\'id du cours).';
-$string['defaultuserpreference'] = 'Que faire avec les sections basculées lorsque l\'utilisateur accède pour la première fois au cours, ou lors d\'ajout de sections.';
-$string['defaultuserpreference_desc'] = 'Ce réglage établit le comportement de base des sections réduites lorsque l\'utilisateur accède pour la première fois au cours, ou lorsque sont ajoutées des sections au cours.';
+$string['defaulttogglepersistence_desc'] = '« On » ou « Off ». Mettre sur « Off » pour améliorer la performance AJAX, mais la position des sections basculées par l\'utilisateur ne sera pas rappelée à l\'actualisation de la page.<br /> Remarque : Lorsque vous désactivez la persistance, veuillez supprimer toutes les lignes contenant « topcoll_toggle_x » dans le champ « name » de la table « user_preferences » de la base de données.  Le « x » de « topcoll_toggle_x » correspond à l\'identifiant du cours.  Ceci permet de gagner de la place si vous n\'avez pas l\'intention de le réactiver.';
+$string['defaultuserpreference'] = 'État initial des bascules';
+$string['defaultuserpreference_desc'] = 'Indique ce qu\'il faut faire avec les boutons à bascule lorsque l\'utilisateur accède au cours pour la première fois, l\'état des sections supplémentaires lorsqu\'elles sont ajoutées ou que la persistance des boutons à bascule est désactivée.';
 $string['defaultviewsinglesectionenabled'] = 'Afficher une seule section active';
 $string['defaultviewsinglesectionenabled_desc'] = 'Indique si la fonctionnalité d\'affichage d\'une seule section doit être activée.';
 $string['deletesection'] = 'Supprimer la section';
@@ -152,7 +137,7 @@ $string['displayinstructions_help'] = 'Définit si les instructions seront affic
 $string['donotshowdate'] = 'Ne pas afficher la date';
 $string['donotshowdate_help'] = 'Ne pas afficher la date lors de l\'utilisation d\'une structure hebdomadaire avec l\'option ­« nom de la section par défaut » décochée.';
 $string['duplicate'] = 'Dupliquer';
-$string['duplicateconfirm'] = 'Voulez-vous vraiment dupliquer la section actuelle ? Cela peut prendre un certain temps en fonction de la quantité de ressources.';
+$string['duplicateconfirm'] = 'Voulez-vous vraiment dupliquer la section actuelle ? Cela peut prendre un certain temps en fonction de la quantité de ressources.';
 $string['duplicating'] = 'Duplication en cours';
 $string['editsection'] = 'Modifier la section';
 $string['editsectionname'] = 'Modifier le nom de la section';
@@ -197,12 +182,14 @@ $string['em3_7'] = '3.7em';
 $string['em3_8'] = '3.8em';
 $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
+$string['enableadditionalmoddata'] = 'Activer les informations supplémentaires';
+$string['enableadditionalmoddatadesc'] = 'Il s\'agit d\'un paramétrage au « niveau du site » permettant d\'activer ou de désactiver les informations sur les activités.  Il doit être activé pour que les paramètres associés qui fonctionnent au niveau du cours prennent effet.  Comme cette fonctionnalité peut être coûteuse en termes de calcul, il est fortement conseillé d\'effectuer des tests complets avant de l\'utiliser sur un système de production.  Note : I faut purger les caches lorsqu\'ils sont modifiés.';
 $string['errornosectioninfo'] = 'Le sujet indiqué n\'a pas d\'information';
 $string['eye'] = 'Œil';
 $string['feedbackavailable'] = 'Commentaire (feedback) disponible';
 $string['folder'] = 'Dossier';
 $string['formatresponsive'] = 'Format responsive';
-$string['formatresponsive_desc'] = 'Activez si vous utiliser un thème non-responsive et le format s\'adaptera à la taille de l\'écran/appareil. Désactivez si vous utilisez un thème responsive. Le support Bootstrab 2.3.2 est inclus, pour les autres versions et frameworks, passez outre les méthodes \'get_row_class()\' et \'get_column_class()\' dans renderer.php.';
+$string['formatresponsive_desc'] = 'Activez cette option si vous utilisez un thème non réactif et le format s\'adaptera à la taille de l\'écran/du périphérique.  Désactivez cette option si vous utilisez un thème réactif.  La prise en charge de Bootstrap 2.3.2 est intégrée. Pour les autres cadres et versions, remplacez les méthodes « get_row_class() » et « get_column_class() » dans renderer.php.';
 $string['formatsettings'] = 'Réinitialisation des réglages du format';
 $string['formatsettingsinformation'] = '<br />Pour modifier les paramètres du format du cours, cliquez sur l\'icône à droite.';
 $string['four'] = 'Quatre';
@@ -225,41 +212,46 @@ $string['off'] = 'Off';
 $string['on'] = 'On';
 $string['one'] = 'Une';
 $string['onesection'] = 'Une section';
-$string['onesection_help'] = 'Indique si une seule section doit être ouverte à un moment donné. Remarque: réglage ignoré lors de l\'édition pour permettre le déplacement des activités et des ressources dans les sections.';
+$string['onesection_help'] = 'Indique si une seule section doit être ouverte à un moment donné. Remarque : ce réglage est ignoré lors de l\'édition pour permettre le déplacement des activités et des ressources dans les sections.';
 $string['page-course-view-topcoll'] = 'Toutes les pages du cours principal au format sections réduites';
 $string['page-course-view-topcoll-x'] = 'Toutes les pages du cours au format sections réduites';
 $string['pluginname'] = 'Sections réduites';
 $string['point'] = 'Point';
 $string['power'] = 'Power';
 $string['privacy:metadata:preference:toggle'] = 'L\'état des bascules dans un cours.';
+$string['privacy:request:preference:toggle'] = 'L\'identifiant du cours « {$a->name} » a la valeur « {$a->value} » qui représente « {$a->decoded} » pour l\'état des bascules.';
 $string['progresscounter'] = 'Duplication d\'activités ({$a->current}/{$a->size})';
 $string['progressfull'] = 'Duplication de sujet';
 $string['radio'] = 'Radio';
 $string['readme_desc'] = 'Veuillez cliquer sur « {$a->url} » pour plus d\'informations sur les Sections Réduites.';
 $string['readme_title'] = 'Fichier « lisez-moi » (en anglais)';
 $string['rebuildcoursecache'] = 'Reconstruire le cache du cours';
+$string['resetactivitymeta'] = 'Informations complémentaires sur les modules';
+$string['resetactivitymeta_help'] = 'Réinitialise les informations du module supplémentaire pour suivre la valeur par défaut du site.';
+$string['resetallactivitymeta'] = 'Toutes les informations supplémentaires sur les modules';
+$string['resetallactivitymeta_help'] = 'Réinitialise toutes les informations supplémentaires du module pour suivre la valeur par défaut du site.';
 $string['resetallcolour'] = 'Les couleurs';
-$string['resetallcolour_help'] = 'Réinitialise les couleurs et les opacités pour tous les cours afin qu\'elles redeviennent identiques à celles d\'une première utilisation du format Sections réduites .';
+$string['resetallcolour_help'] = 'Réinitialise les couleurs et les opacités pour suivre la valeur par défaut du site.';
 $string['resetalldisplayinstructions'] = 'L\'affichage des instructions';
-$string['resetalldisplayinstructions_help'] = 'Réinitialise l\'affichage des instructions par défaut pour tous les cours. Ce sera la même valeur que lors de la première utilisation du format sections réduites dans un cours.';
+$string['resetalldisplayinstructions_help'] = 'Réinitialise les instructions d\'affichage pour suivre la valeur par défaut du site.';
 $string['resetallgrp'] = 'Tout réinitialiser :';
 $string['resetalllayout'] = 'La mise en page';
-$string['resetalllayout_help'] = 'Réinitialise la mise en page par défaut pour tous les cours. Ce sera la même valeur que lors de la première utilisation du format sections réduites dans un cours.';
+$string['resetalllayout_help'] = 'Réinitialise l\'élément de mise en page, la structure, les colonnes, le basculement de tous les éléments, l\'affichage d\'une seule section, la position de l\'icône, une section et le résumé de la section affichée pour suivre la valeur par défaut du site.';
 $string['resetalltogglealignment'] = 'L\'alignement du texte';
-$string['resetalltogglealignment_help'] = 'Réinitialise l\'alignement du texte par défaut pour tous les cours. Ce sera la même valeur que lors de la première utilisation du format sections réduites dans un cours.';
+$string['resetalltogglealignment_help'] = 'Réinitialise tous les alignements de bascule pour suivre la valeur par défaut du site.';
 $string['resetalltoggleiconset'] = 'Le jeu d\'icônes';
-$string['resetalltoggleiconset_help'] = 'Réinitialise le jeu d\'icônes par défaut pour tous les cours. Ce sera la même valeur que lors de la première utilisation du format sections réduites dans un cours.';
+$string['resetalltoggleiconset_help'] = 'Réinitialise l\'ensemble des icônes de bascule et le survol de toutes les icônes de bascule pour suivre la valeur par défaut du site.';
 $string['resetcolour'] = 'Couleur';
-$string['resetcolour_help'] = 'Réinitialise les couleurs par défaut. Ce sera la même valeur que lors de la première utilisation du format sections réduites dans un cours.';
+$string['resetcolour_help'] = 'Réinitialise les couleurs et les opacités pour suivre la valeur par défaut du site.';
 $string['resetdisplayinstructions'] = 'L\'affichage des instructions';
-$string['resetdisplayinstructions_help'] = 'Réinitialise l\'affichage des instructions par défaut. Ce sera la même valeur que lors de la première utilisation du format sections réduites dans un cours.';
+$string['resetdisplayinstructions_help'] = 'Réinitialise les instructions d\'affichage pour suivre la valeur par défaut du site.';
 $string['resetgrp'] = 'Réinitialiser :';
 $string['resetlayout'] = 'La mise en page';
-$string['resetlayout_help'] = 'Réinitialise la mise en page par défaut. Ce sera la même valeur que lors de la première utilisation du format sections réduites dans un cours.';
+$string['resetlayout_help'] = 'Réinitialise l\'élément de mise en page, la structure, les colonnes, le basculement de tous les éléments, l\'affichage d\'une seule section, la position de l\'icône, une section et le résumé de la section affichée pour suivre la valeur par défaut du site.';
 $string['resettogglealignment'] = 'L\'alignement du texte';
-$string['resettogglealignment_help'] = 'Réinitialise l\'alignement du texte par défaut. Ce sera la même valeur que lors de la première utilisation du format sections réduites dans un cours.';
+$string['resettogglealignment_help'] = 'Réinitialise tous les alignements de bascule pour suivre la valeur par défaut du site.';
 $string['resettoggleiconset'] = 'Le jeu d\'icônes';
-$string['resettoggleiconset_help'] = 'Réinitialise le jeu d\'icônes par défaut. Ce sera la même valeur que lors de la première utilisation du format sections réduites dans un cours.';
+$string['resettoggleiconset_help'] = 'Réinitialise l\'ensemble des icônes de bascule et le survol de toutes les icônes de bascule pour suivre la valeur par défaut du site.';
 $string['right'] = 'Droite';
 $string['sctcloseall'] = 'Tout fermer {$a}';
 $string['sctopenall'] = 'Tout ouvrir {$a}';
@@ -281,7 +273,7 @@ $string['setlayout_no_toggle_word_toggle_section_x_section_no'] = 'Pas de mot, p
 $string['setlayout_section_number'] = 'Nombre de sections';
 $string['setlayout_toggle_section_x'] = 'Mention de « Sujet x » / « Semaine x » / « Jour x à basculer »';
 $string['setlayout_toggle_section_x_section_number'] = 'Mention de « Sujet x » / « Semaine x » / « Jour x à basculer » et numéro de section';
-$string['setlayout_toggle_word'] = 'Mention de « Basculer»';
+$string['setlayout_toggle_word'] = 'Mention de « Basculer »';
 $string['setlayout_toggle_word_section_number'] = 'Mention de « Basculer » et numéro de section';
 $string['setlayout_toggle_word_section_x'] = 'Mention de « Basculer » et « Section x » / « Semaine x » / « Jour x à basculer »';
 $string['setlayoutcolumnorientation'] = 'Orientation des colonnes';
@@ -291,17 +283,7 @@ $string['setlayoutcolumns_help'] = 'Définit le nombre de colonnes à utiliser.'
 $string['setlayoutelements'] = 'Éléments';
 $string['setlayoutelements_help'] = 'Quelles informations souhaitez-vous afficher sur le bandeau ?';
 $string['setlayoutstructure'] = 'Structure';
-$string['setlayoutstructure_help'] = 'Structure et disposition de la page. Vous pouvez choisir entre :
-
-« Format thématique » - ce format est organisé en sections thématiques numérotées.
-
-« Format hebdomadaire » - le cours est organisé par semaine avec des dates de début et de fin.
-
-« Dernière semaine en premier » - basé sur le « format hebdomadaire », la semaine en cours est affichée en haut et les semaines précédentes dans un ordre descendant, sauf en mode édition où la structure revient au format initial hebdomadaire.
-
-« Section actuelle en premier » - basé sur le « format thématique », la section actuelle est affichée en haut si elle a été fixée.
-
-« Jour » - chaque section est présentée par un jour, à partir de la date du début du cours.';
+$string['setlayoutstructure_help'] = 'La structure de mise en page du cours. Vous pouvez choisir entre :<br />« Sujets » - où chaque section est présentée comme un sujet dans l\'ordre des numéros de section.<br />« Semaines » - où chaque section est présentée comme une semaine dans l\'ordre croissant des semaines à partir de la date de début du cours.<br />« Semaine en cours en premier » - qui est identique à semaines mais la semaine en cours est affichée en haut et les semaines précédentes par ordre décroissant sont affichées en dessous sauf en mode édition où la structure est la même que « Semaines ».<br />« Sujet actuel en premier » - qui est identique à « Sujets » sauf que le sujet actuel est affiché en haut s\'il a été défini.<br />« Jour » - où chaque section est présentée par jour dans l\'ordre croissant des jours à partir de la date de début du cours.';
 $string['setlayoutstructurecurrenttopicfirst'] = 'Sujet actuel en premier';
 $string['setlayoutstructureday'] = 'Jour';
 $string['setlayoutstructurelatweekfirst'] = 'Semaine actuelle en premier';
@@ -332,20 +314,23 @@ $string['settoggleforegroundhoveropacity_help'] = 'Définit l\'opacité du texte
 $string['settoggleforegroundopacity'] = 'Opacité du premier plan';
 $string['settoggleforegroundopacity_help'] = 'Définit l\'opacité du texte sur la bascule entre 0 et 1 par incréments de 0,1.';
 $string['settoggleiconposition'] = 'Position des icônes';
-$string['settoggleiconposition_help'] = 'Ce régl';
-$string['settoggleiconset'] = 'Jeu d\'icône';
+$string['settoggleiconposition_help'] = 'Indique que l\'icône doit se trouver à gauche ou à droite du texte de basculement.';
+$string['settoggleiconset'] = 'Jeu d\'icônes';
 $string['settoggleiconset_help'] = 'Définit le type d\'icônes dans le bandeau de la section réduite';
-$string['setviewsinglesectionenabled'] = 'Afficher une seule section : activée';
-$string['setviewsinglesectionenabled_help'] = 'Afficher la fonctionnalité de section unique : activée.';
+$string['setviewsinglesectionenabled'] = 'Afficher une seule section activée';
+$string['setviewsinglesectionenabled_help'] = 'La fonctionnalité d\'affichage d\'une seule section est activée.';
 $string['showadditionalmoddata'] = 'Afficher des informations supplémentaires pour : {$a} dans le cours';
 $string['showadditionalmoddata_help'] = 'Autoriser tous les utilisateurs à voir la date limite de l\'activité et les utilisateurs disposant d\'une autorisation de notation à voir le nombre de dépôts sur la page du cours pour les activités.';
 $string['showfromothers'] = 'Afficher la section';
+$string['sidepost'] = 'Après';
+$string['sidepre'] = 'Avant';
 $string['small'] = 'Petit';
 $string['smiley'] = 'Smiley';
 $string['square'] = 'Carré';
 $string['sunmoon'] = 'Soleil / Lune';
 $string['switch'] = 'Interrupteur';
 $string['three'] = 'Trois';
+$string['topcoll:changeactivitymeta'] = 'Modifier ou réinitialiser l\'activité meta';
 $string['topcoll:changecolour'] = 'Modifier ou réinitialiser les couleurs';
 $string['topcoll:changelayout'] = 'Modifier ou réinitialiser la configuration';
 $string['topcoll:changetogglealignment'] = 'Modifier ou réinitialiser l\'alignement du texte';
@@ -363,6 +348,8 @@ $string['xcontributed'] = '{$a->completed} ont contribué';
 $string['xofyanswered'] = '{$a->completed} sur {$a->participants} ont répondu';
 $string['xofyattempted'] = '{$a->completed} sur {$a->participants} ont tenté';
 $string['xofycontributed'] = '{$a->completed} sur {$a->participants} ont contribué';
+$string['xofyposted'] = '{$a->completed} sur {$a->participants} postés';
 $string['xofysubmitted'] = '{$a->completed} sur {$a->participants} ont rendu';
+$string['xposted'] = '{$a->completed} postés';
 $string['xsubmitted'] = '{$a->completed} ont rendu';
 $string['xungraded'] = '{$a} non notés';

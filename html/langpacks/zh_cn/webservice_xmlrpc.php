@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XML-RPC 协议';
+$string['privacy:metadata'] = 'XML-RPC协议插件不存储任何个人数据。';
 $string['xmlrpc:use'] = '使用XML-RPC协议';

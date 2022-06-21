@@ -21,6 +21,21 @@ class com_wiris_quizzes_wrap_SlotWrap implements com_wiris_quizzes_api_Slot{
 			}
 		}
 	}
+	public function copy($model) {
+		try {
+			$this->wrapper->start();
+			$r = $this->slot->copy($model);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function getAnswerFieldType() {
 		try {
 			$this->wrapper->start();

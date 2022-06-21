@@ -22,14 +22,16 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace block_completion_progress\tests;
+namespace block_completion_progress;
 
 defined('MOODLE_INTERNAL') || die();
 
 global $CFG;
-require_once($CFG->dirroot.'/blocks/completion_progress/lib.php');
 require_once($CFG->dirroot.'/mod/quiz/lib.php');
 require_once($CFG->dirroot.'/mod/quiz/locallib.php');
+
+use block_completion_progress\completion_progress;
+use block_completion_progress\defaults;
 
 /**
  * Quiz activity-related unit tests for Completion Progress block.
@@ -38,25 +40,7 @@ require_once($CFG->dirroot.'/mod/quiz/locallib.php');
  * @copyright  2020 Jonathon Fowler <fowlerj@usq.edu.au>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class quiz_completion_testcase extends \advanced_testcase {
-    /**
-     * Assert a user's completion status for a course module.
-     * @param object $course
-     * @param object $student
-     * @param object $cm
-     * @param integer|string $status
-     */
-    private function assert_progress_completion($course, $student, $cm, $status) {
-        $activities = [ ['id' => $cm->id ]];
-        $submissions = block_completion_progress_submissions($course->id, $student->id);
-        $completions = block_completion_progress_completions($activities, $student->id,
-            $course, $submissions);
-        $this->assertEquals(
-            [$cm->id => $status],
-            $completions
-        );
-    }
-
+class quiz_completion_test extends \block_completion_progress\tests\completion_testcase {
     /**
      * A data provider supplying each of the possible quiz grade methods.
      * @return array
@@ -76,21 +60,14 @@ class quiz_completion_testcase extends \advanced_testcase {
      *
      * @param integer $grademethod
      *
+     * @covers \block_completion_progress\completion_progress
      * @dataProvider grademethod_provider
      */
     public function test_quiz_passfail($grademethod) {
-        global $CFG;
-
-        $CFG->enablecompletion = 1;
-        $this->resetAfterTest();
-
         $generator = $this->getDataGenerator();
 
-        $course = $generator->create_course([
-            'enablecompletion' => 1,
-        ]);
         $instance = $generator->create_module('quiz', [
-            'course' => $course->id,
+            'course' => $this->course->id,
             'grade' => 100,
             'sumgrades' => 100,
             'layout' => '1,0',  // One question.
@@ -103,7 +80,7 @@ class quiz_completion_testcase extends \advanced_testcase {
         $cm = get_coursemodule_from_id('quiz', $instance->cmid);
 
         // Set the passing grade.
-        $item = \grade_item::fetch(['courseid' => $course->id, 'itemtype' => 'mod',
+        $item = \grade_item::fetch(['courseid' => $this->course->id, 'itemtype' => 'mod',
             'itemmodule' => 'quiz', 'iteminstance' => $instance->id, 'outcomeid' => null]);
         $item->gradepass = 50;
         $item->update();
@@ -120,38 +97,38 @@ class quiz_completion_testcase extends \advanced_testcase {
         ]);
         quiz_add_quiz_question($question->id, $instance, 1);
 
-        $teacher = $generator->create_and_enrol($course, 'editingteacher');
+        $teacher = $generator->create_and_enrol($this->course, 'editingteacher');
 
         // Student 1 submits to the activity and gets graded correctly.
-        $student1 = $generator->create_and_enrol($course, 'student');
-        $this->assert_progress_completion($course, $student1, $cm, COMPLETION_INCOMPLETE);
+        $student1 = $generator->create_and_enrol($this->course, 'student');
+        $this->assert_progress_completion($student1, $cm, COMPLETION_INCOMPLETE);
         $attempt = $this->submit_for_student($student1, $instance, 1);
-        $this->assert_progress_completion($course, $student1, $cm, 'submitted');
+        $this->assert_progress_completion($student1, $cm, 'submitted');
         $this->mark_student($attempt, $teacher, 75);      // Pass.
-        $this->assert_progress_completion($course, $student1, $cm, COMPLETION_COMPLETE_PASS);
+        $this->assert_progress_completion($student1, $cm, COMPLETION_COMPLETE_PASS);
 
         // Student 2 submits to the activity and gets graded incorrectly.
-        $student2 = $generator->create_and_enrol($course, 'student');
-        $this->assert_progress_completion($course, $student2, $cm, COMPLETION_INCOMPLETE);
+        $student2 = $generator->create_and_enrol($this->course, 'student');
+        $this->assert_progress_completion($student2, $cm, COMPLETION_INCOMPLETE);
         $attempt = $this->submit_for_student($student2, $instance, 1);
-        $this->assert_progress_completion($course, $student2, $cm, 'submitted');
+        $this->assert_progress_completion($student2, $cm, 'submitted');
         $this->mark_student($attempt, $teacher, 25);      // Fail.
-        $this->assert_progress_completion($course, $student2, $cm, COMPLETION_COMPLETE_FAIL);
+        $this->assert_progress_completion($student2, $cm, COMPLETION_COMPLETE_FAIL);
 
         // Student 2 then submits again.
         $attempt = $this->submit_for_student($student2, $instance, 2);
         switch ($grademethod) {
             case QUIZ_GRADEHIGHEST:
-                $this->assert_progress_completion($course, $student2, $cm, 'submitted');
+                $this->assert_progress_completion($student2, $cm, 'submitted');
                 break;
             case QUIZ_GRADEAVERAGE:
-                $this->assert_progress_completion($course, $student2, $cm, 'submitted');
+                $this->assert_progress_completion($student2, $cm, 'submitted');
                 break;
             case QUIZ_ATTEMPTFIRST:
-                $this->assert_progress_completion($course, $student2, $cm, COMPLETION_COMPLETE_FAIL);
+                $this->assert_progress_completion($student2, $cm, COMPLETION_COMPLETE_FAIL);
                 break;
             case QUIZ_ATTEMPTLAST:
-                $this->assert_progress_completion($course, $student2, $cm, 'submitted');
+                $this->assert_progress_completion($student2, $cm, 'submitted');
                 break;
         }
     }
@@ -161,21 +138,14 @@ class quiz_completion_testcase extends \advanced_testcase {
      *
      * @param integer $grademethod
      *
+     * @covers \block_completion_progress\completion_progress
      * @dataProvider grademethod_provider
      */
     public function test_quiz_basic($grademethod) {
-        global $CFG;
-
-        $CFG->enablecompletion = 1;
-        $this->resetAfterTest();
-
         $generator = $this->getDataGenerator();
 
-        $course = $generator->create_course([
-            'enablecompletion' => 1,
-        ]);
         $instance = $generator->create_module('quiz', [
-            'course' => $course->id,
+            'course' => $this->course->id,
             'grade' => 100,
             'sumgrades' => 100,
             'layout' => '1,0',  // One question.
@@ -199,38 +169,38 @@ class quiz_completion_testcase extends \advanced_testcase {
         ]);
         quiz_add_quiz_question($question->id, $instance, 1);
 
-        $teacher = $generator->create_and_enrol($course, 'editingteacher');
+        $teacher = $generator->create_and_enrol($this->course, 'editingteacher');
 
         // Student 1 submits to the activity and gets graded correct.
-        $student1 = $generator->create_and_enrol($course, 'student');
-        $this->assert_progress_completion($course, $student1, $cm, COMPLETION_INCOMPLETE);
+        $student1 = $generator->create_and_enrol($this->course, 'student');
+        $this->assert_progress_completion($student1, $cm, COMPLETION_INCOMPLETE);
         $attempt = $this->submit_for_student($student1, $instance, 1);
-        $this->assert_progress_completion($course, $student1, $cm, 'submitted');
+        $this->assert_progress_completion($student1, $cm, 'submitted');
         $this->mark_student($attempt, $teacher, 75);      // Pass.
-        $this->assert_progress_completion($course, $student1, $cm, COMPLETION_COMPLETE);
+        $this->assert_progress_completion($student1, $cm, COMPLETION_COMPLETE);
 
         // Student 2 submits to the activity and gets graded incorrect.
-        $student2 = $generator->create_and_enrol($course, 'student');
-        $this->assert_progress_completion($course, $student2, $cm, COMPLETION_INCOMPLETE);
+        $student2 = $generator->create_and_enrol($this->course, 'student');
+        $this->assert_progress_completion($student2, $cm, COMPLETION_INCOMPLETE);
         $attempt = $this->submit_for_student($student2, $instance, 1);
-        $this->assert_progress_completion($course, $student2, $cm, 'submitted');
+        $this->assert_progress_completion($student2, $cm, 'submitted');
         $this->mark_student($attempt, $teacher, 25);      // Fail.
-        $this->assert_progress_completion($course, $student2, $cm, COMPLETION_COMPLETE);
+        $this->assert_progress_completion($student2, $cm, COMPLETION_COMPLETE);
 
         // Student 2 then submits again.
         $attempt = $this->submit_for_student($student2, $instance, 2);
         switch ($grademethod) {
             case QUIZ_GRADEHIGHEST:
-                $this->assert_progress_completion($course, $student2, $cm, COMPLETION_COMPLETE);
+                $this->assert_progress_completion($student2, $cm, COMPLETION_COMPLETE);
                 break;
             case QUIZ_GRADEAVERAGE:
-                $this->assert_progress_completion($course, $student2, $cm, COMPLETION_COMPLETE);
+                $this->assert_progress_completion($student2, $cm, COMPLETION_COMPLETE);
                 break;
             case QUIZ_ATTEMPTFIRST:
-                $this->assert_progress_completion($course, $student2, $cm, COMPLETION_COMPLETE);
+                $this->assert_progress_completion($student2, $cm, COMPLETION_COMPLETE);
                 break;
             case QUIZ_ATTEMPTLAST:
-                $this->assert_progress_completion($course, $student2, $cm, 'submitted');
+                $this->assert_progress_completion($student2, $cm, 'submitted');
                 break;
         }
     }
@@ -243,11 +213,8 @@ class quiz_completion_testcase extends \advanced_testcase {
      * @return quiz_attempt
      */
     private function submit_for_student($student, $quiz, $attemptnumber) {
-        // Before 3.8 quiz_prepare_and_start_new_attempt could not be passed the user id.
-        $this->setUser($student);
-
         $quizobj = \quiz::create($quiz->id, $student->id);
-        $attempt = quiz_prepare_and_start_new_attempt($quizobj, $attemptnumber, null);
+        $attempt = quiz_prepare_and_start_new_attempt($quizobj, $attemptnumber, null, false, [], [], $student->id);
         $attemptobj = \quiz_attempt::create($attempt->id);
 
         // Save a response for the essay in the first slot.
@@ -259,8 +226,6 @@ class quiz_completion_testcase extends \advanced_testcase {
 
         // Finish the attempt.
         $attemptobj->process_attempt(time(), true, false, 1);
-
-        $this->setUser(null);
 
         return $attemptobj;
     }

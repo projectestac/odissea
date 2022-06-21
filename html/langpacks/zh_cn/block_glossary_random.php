@@ -40,6 +40,7 @@ $string['noentriesyet'] = '所选词汇表里还没有词条。';
 $string['notyetconfigured'] = '请用编辑图标配置此版块';
 $string['notyetglossary'] = '至少要选择一个词汇。';
 $string['pluginname'] = '随机词汇表条目';
+$string['privacy:metadata'] = '“随机词汇表条目”板块仅显示存储在其他位置的数据。';
 $string['random'] = '随机条目';
 $string['refresh'] = '选择一个新条目之前的天数';
 $string['select_glossary'] = '从这个词汇表取词条';

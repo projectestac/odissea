@@ -150,10 +150,10 @@ $string['couldnotdeletereplies'] = 'Désolé, la suppression n\'est plus possibl
 $string['couldnotupdate'] = 'Impossible de modifier votre message à cause d\'une erreur inconnue';
 $string['created'] = 'Création';
 $string['crontask'] = 'Envoi des messages et maintenance des forums';
-$string['cutoffdate'] = 'Date limite';
+$string['cutoffdate'] = 'Date butoir';
 $string['cutoffdate_help'] = 'Si ce réglage est activé, le forum n\'acceptera pas de message après cette date.';
-$string['cutoffdatereached'] = 'L\'échéance pour écrire dans ce forum est atteinte ; il n\'est plus possible de poster de message.';
-$string['cutoffdatevalidation'] = 'La date limite ne peut pas être antérieure au délai de remise.';
+$string['cutoffdatereached'] = 'La date butoir pour poster dans ce forum est atteinte ; il n\'est plus possible de poster de message.';
+$string['cutoffdatevalidation'] = 'La date butoir ne peut pas être antérieure à la date limite de remise.';
 $string['delete'] = 'Supprimer';
 $string['deleteddiscussion'] = 'Le sujet de discussion a été supprimé';
 $string['deletedpost'] = 'Ce message a été supprimé';
@@ -221,9 +221,9 @@ $string['displaystart_help'] = 'Ce réglage détermine si un message de forum do
 $string['displaystartdate'] = 'Début d\'affichage : {$a}.';
 $string['displaywordcount'] = 'Afficher le nombre de mots';
 $string['displaywordcount_help'] = 'Ce réglage détermine si le nombre de mots de chaque message est affiché ou non.';
-$string['duedate'] = 'Date de remise';
-$string['duedate_help'] = 'La date jusqu\'à laquelle il faut écrire un message dans le forum. Bien que cette date soit affichée dans le calendrier comme délai du forum, il sera néanmoins possible d\'y poster des messages après cette date. Pour empêcher de poster dans un forum après une certaine date, veuillez indiquer une date limite.';
-$string['duedatetodisplayincalendar'] = 'Délai à afficher dans le calendrier';
+$string['duedate'] = 'Date limite';
+$string['duedate_help'] = 'La date jusqu\'à laquelle il faut poster un message dans le forum. Bien que cette date soit affichée dans le calendrier comme date limite du forum, il sera néanmoins possible d\'y poster des messages après cette date. Pour empêcher de poster dans un forum après une certaine date, veuillez indiquer une date butoir.';
+$string['duedatetodisplayincalendar'] = 'Date limite à afficher dans le calendrier';
 $string['eachuserforum'] = 'Chaque personne lance une discussion unique';
 $string['edit'] = 'Modifier';
 $string['editedby'] = 'Modifié par {$a->name}. Écrit initialement le {$a->date}';
@@ -242,9 +242,11 @@ $string['emaildigesttype_help'] = 'Le type de notification que vous recevrez pou
 * Récapitulatif - objets seulement – vous recevrez un courriel par jour ne contenant que l\'objet de chaque message de forum.';
 $string['emptymessage'] = 'Il y a eu un problème avec votre message. Peut-être est-il vide ou alors la taille de l\'annexe est trop grande. Vos modifications n\'ont pas été enregistrées.';
 $string['errorcannotlock'] = 'Vous n\'avez pas les permissions requises pour verrouiller les discussions.';
+$string['errordiscussionnotfound'] = 'La discussion est introuvable';
 $string['erroremptymessage'] = 'Un message ne peut pas être vide';
 $string['erroremptysubject'] = 'L\'objet d\'un message ne peut pas être vide';
 $string['errorenrolmentrequired'] = 'Vous devez être inscrit dans ce cours pour avoir accès à ce contenu';
+$string['errorforumnotfound'] = 'Le forum d\'où provient cette discussion est introuvable';
 $string['errorwhiledelete'] = 'Une erreur est survenue lors de la suppression de l\'enregistrement.';
 $string['eventassessableuploaded'] = 'Contenu posté';
 $string['eventcoursesearched'] = 'Cours recherché';
@@ -291,7 +293,7 @@ $string['forum:addinstance'] = 'Ajouter un forum';
 $string['forum:addnews'] = 'Ajouter des annonces';
 $string['forum:addquestion'] = 'Ajouter une question';
 $string['forum:allowforcesubscribe'] = 'Permettre d\'imposer l\'abonnement';
-$string['forum:canoverridecutoff'] = 'Poster un message dans un forum après sa date d\'échéance';
+$string['forum:canoverridecutoff'] = 'Poster un message dans un forum après sa date butoir';
 $string['forum:canoverridediscussionlock'] = 'Répondre aux discussions verrouillées';
 $string['forum:canposttomygroups'] = 'Poster dans tous les groupes auxquel on a accès';
 $string['forum:cantogglefavourite'] = 'Marquer des discussions comme favorites';
@@ -722,8 +724,8 @@ $string['subscriptionoptional'] = 'Abonnement facultatif';
 $string['subscriptions'] = 'Abonnements';
 $string['tagarea_forum_posts'] = 'Messages de forum';
 $string['tagsdeleted'] = 'Les tags de forum ont été supprimés';
-$string['thisforumhasduedate'] = 'Le délai pour poster dans ce forum est le {$a}.';
-$string['thisforumisdue'] = 'Le délai pour poster dans ce forum était le {$a}.';
+$string['thisforumhasduedate'] = 'La date limite pour poster dans ce forum est le {$a}.';
+$string['thisforumisdue'] = 'La date limite pour poster dans ce forum était le {$a}.';
 $string['thisforumisthrottled'] = 'Ce forum a une limite du nombre de messages que vous pouvez poster durant une période donnée. Cette limite est actuellement de {$a->blockafter} message(s) durant {$a->blockperiod}';
 $string['timed'] = 'Temporisé';
 $string['timeddiscussion'] = 'Discussion temporisée';
@@ -742,9 +744,9 @@ $string['trackingoptional'] = 'Facultatif';
 $string['trackingtype'] = 'Suivi des messages';
 $string['trackingtype_help'] = 'Le suivi des messages permet aux participants de vérifier facilement les messages qu\'ils n\'ont pas encore vu en les signalant visuellement.
 
-Si le réglage est mis sur « Facultatif », les participants peuvent activer ou désactiver à discrétion le suivi des messages dans le menu des actions ou le bloc d\'administration, selon le thème (le suivi des messages doit d\'abord être activé dans leurs préférences de forum).
+Si le réglage est mis sur « Facultatif », les participants peuvent activer ou désactiver à discrétion le suivi des messages pour le forum (le suivi des messages doit d\'abord être activé dans leurs préférences de forum).
 
-Si le réglage « Permettre d\'imposer le suivi des messages » est activé dans l\'administration de la plateforme, une option supplémentaire est affichée : « Imposé ». Le suivi est alors toujours activé, indépendamment des préférences de forum de l\'utilisateur.';
+Si le réglage « Permettre d\'imposer le suivi des messages » est activée par un administrateur du site, une option supplémentaire est affichée : « Imposé ». Le suivi est alors toujours activé, indépendamment des préférences de forum de l\'utilisateur.';
 $string['trackreadposts_header'] = 'Suivi des messages de forum';
 $string['unlockdiscussion'] = 'Déverrouiller cette discussion';
 $string['unpindiscussion'] = 'Dépingler cette discussion';

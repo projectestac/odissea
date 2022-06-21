@@ -242,9 +242,11 @@ $string['emaildigesttype_help'] = 'Foro bakoitzetik jasoko duzun jakinarazpen mo
 * Laburpena - gaiak soilik - egun bakoitzean foro bakoitzeko mezuen izenburuak dituen laburpen-mezu bat jasoko duzu.';
 $string['emptymessage'] = 'Zerbait oker dabil zure mezuarekin. Agian hutsik utzi duzu, edo eranskina handiegia da.  Zure aldaketak EZ dira gorde.';
 $string['errorcannotlock'] = 'Ez duzu eztabaidak blokeatzeko baimenik.';
+$string['errordiscussionnotfound'] = 'Eztabaida ez da aurkitu';
 $string['erroremptymessage'] = 'Mezua ezin da hutsik egon';
 $string['erroremptysubject'] = 'Mezuaren gaia ezin da hutsik egon';
 $string['errorenrolmentrequired'] = 'Ikastaro honetan matrikulatuta egon behar duzu eduki hau ikusteko.';
+$string['errorforumnotfound'] = 'Eztabaida honi dagokion foroa ez da aurkitu';
 $string['errorwhiledelete'] = 'Errorea gertatu da erregistroa ezabatzean.';
 $string['eventassessableuploaded'] = 'Mezua bidali da.';
 $string['eventcoursesearched'] = 'Ikastaroa bilatu da';
@@ -740,9 +742,9 @@ $string['trackingoptional'] = 'Aukeran';
 $string['trackingtype'] = 'Irakurri gabekoen nabarmentzea';
 $string['trackingtype_help'] = 'Irakurketaren jarraipenaren bitartez partaideek irakurri gabeko mezuak konprobatu egin ditzakete mezu berriak nabarmenduz.
 
-Aukeran utziz gero partaideek nabarmentzea ala ez aukeratu dezakete ekintza-menuan edo kudeaketa blokean, azalaren arabera. (Foroen nabarmentzea erabiltzailearen profilean ere gaituta egon behar du.)
+Aukeran utziz gero partaideek foroaren nabarmentzea gaitzea ala ere aukeratu dezakete. (Foroen nabarmentzea erabiltzailearen profilean ere gaituta egon behar du.)
 
-Gunearen kudeaketan "Baimendu Irakurri gabekoak nabarmentzea behartzea" gaituta badago, beste aukera bat agertuko da - behartuta. Aukera honek jarraipena beti gaituta egotea ahalbidetzen du, erabiltzailearen hobespenak edozein izanda ere.';
+Kudeatzaile batek \'Baimendu Irakurri gabekoak nabarmentzea behartzea\' gaitzen badu, beste aukera bat agertuko da - behartuta. Aukera honek jarraipena beti gaituta egotea ahalbidetzen du, erabiltzailearen hobespenak edozein izanda ere.';
 $string['trackreadposts_header'] = 'Foroetako jarraipena';
 $string['unlockdiscussion'] = 'Desblokeatu eztabaida hau';
 $string['unpindiscussion'] = 'Kendu eztabaida honen finkatzea';

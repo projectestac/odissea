@@ -37,4 +37,6 @@ $string['levelgroup'] = '此等级的成绩和定义';
 $string['levels'] = '等级';
 $string['mustbeunique'] = '在一个评判标准中，层级分数必须是唯一的';
 $string['mustchooseone'] = '您必须从这些项目中选择一项';
+$string['mustdefinelevel'] = '至少需要一个级别';
 $string['pluginname'] = '量规';
+$string['privacy:metadata'] = 'Rubric插件只存储评估表单的详细信息。如何填写表格的实际个人数据存储在研讨会模块中，并附在导出的评估中。';

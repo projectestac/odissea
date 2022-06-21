@@ -40,6 +40,7 @@ $string['noentriesyet'] = 'No hi ha entrades al glossari escollit.';
 $string['notyetconfigured'] = 'Configureu aquest bloc utilitzant la icona d\'edició.';
 $string['notyetglossary'] = 'Necessiteu tenir almenys un glossari per triar.';
 $string['pluginname'] = 'Entrada aleatòria de glossari';
+$string['privacy:metadata'] = 'El bloc Entrada aleatòria de glossari només mostra dades emmagatzemades en altres llocs.';
 $string['random'] = 'Entrada aleatòria';
 $string['refresh'] = 'Dies que han de passar abans de seleccionar una entrada nova';
 $string['select_glossary'] = 'Agafa les entrades d\'aquest glossari';

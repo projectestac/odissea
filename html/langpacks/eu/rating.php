@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'Puntuazioak ez du balio';
 $string['ratings'] = 'Puntuazioak';
 $string['ratingtime'] = 'Mugatu puntuazioak tarte honetako elementuetara';
 $string['rolewarning'] = 'Puntuatzeko baimena duten rolak';
-$string['rolewarning_help'] = 'Kalifikazioak bidaltzeko, beharrezkoa da \'moodle/rating:rate\' gaitasuna, bai eta moduluari buruzko edozein gaitasun espezifiko ere. Ondoko rolak dituzten erabiltzaileek kalifikazioak emateko modua izan behar dute. Rol-zerrenda alda daiteke ekintza-menu edo kudeaketa blokean (azalaren arabera) dagoen gaitasunetarako estekaren bidez.';
+$string['rolewarning_help'] = 'Kalifikazioak emateko baimena duten rolak \'moodle/rating:rate\' gaitasuna eta jarduera mailako kalifikazio-gaitasunekin. Kalifikazioak emateko rolei gaitasun gehiago eman ditzakezu Baimenak orriaren bitartez.';
 $string['scaleselectionrequired'] = 'Puntuazioen agregazio motak aukeratzean eskala edo gehieneko puntuazioak ere aukeratu behar dituzu.';

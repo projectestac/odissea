@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Blanco voor {no} meer keuzes';
 $string['answer'] = 'Antwoord';
+$string['blanknumber'] = 'Leeg {$a}';
 $string['choices'] = 'Keuzes';
 $string['choicex'] = 'Keuze [[{no}]]';
 $string['combinedcontrolnamegapselect'] = 'rolmenu';

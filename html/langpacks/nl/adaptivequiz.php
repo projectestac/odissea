@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attemptclosed'] = 'Deze poging werd manueel afgesloten.';
+$string['attemptclosedstatus'] = 'Manueel afgesloten door {$a->current_user_name} (user-id: {$a->current_user_id}) op {$a->now}.';
 $string['attemptfirst'] = 'Eerste poging';
 $string['attemptlast'] = 'Vorige poging';
 $string['attemptquestion_rightwrong'] = 'Juist/Onjuist';
+$string['errorclosingattempt_alreadycomplete'] = 'Deze poging is bijna compleet, ze kan niet manueel afgesloten worden.';

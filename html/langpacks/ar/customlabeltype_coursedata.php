@@ -119,7 +119,7 @@ $string['template'] = '<table class="custombox-coursedata">
     <%if %%showfollowers%% %>
     <tr valign="top">
         <td class="custombox-param coursedata" width="<%%leftcolumnratio%%>">
-            المساقات اللاحقة:
+            المقررات الدراسية اللاحقة:
         </td>
         <td class="custombox-value coursedata" width="<%%rightcolumnratio%%>">
             <%%followers%%>

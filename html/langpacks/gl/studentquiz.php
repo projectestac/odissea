@@ -46,7 +46,6 @@ $string['before_answering_start_date'] = 'Aberto a respostas dende {$a}.';
 $string['before_submission_end_date'] = 'Ese cuestionario pecharase para o seu envío en {$a}.';
 $string['before_submission_start_date'] = 'Aberto para envío de respostas dende {$a}.';
 $string['cannotcapturecommenthistory'] = 'Non se pode acceder ao historial de rexistros de comentarios';
-$string['changeselectedsstate'] = 'Cambiar o estado das seguintes preguntas:<br /><br />{$a}';
 $string['collapseall'] = 'Repregar os comentarios';
 $string['collapsecomment'] = 'Repregar o comentario';
 $string['comment_author'] = 'Autor';

@@ -47,7 +47,6 @@ $string['before_submission_end_date'] = 'Dieses StudentQuiz schließt für das E
 $string['before_submission_start_date'] = 'Offen für das Einreichen von Fragen ab {$a}.';
 $string['cachedef_permissionssync'] = 'Synchronisationstracking für die StudentQuiz-Rechte';
 $string['cannotcapturecommenthistory'] = 'Kann keine Aufzeichnung des Kommentarverlaufs finden';
-$string['changeselectedsstate'] = 'Status der folgenden Fragen ändern:<br /><br />{$a}';
 $string['collapseall'] = 'Alle Kommentare einklappen';
 $string['collapsecomment'] = 'Kommentar einklappen';
 $string['comment_author'] = 'Autor/in';

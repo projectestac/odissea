@@ -47,4 +47,5 @@ $string['privacy:metadata:replyto'] = 'Het e-mailadres om naar te antwoorden.';
 $string['privacy:metadata:replytoname'] = 'Naam van de beantwoorde ontvanger.';
 $string['privacy:metadata:subject'] = 'De onderwerpregel van het bericht.';
 $string['privacy:metadata:userfrom'] = 'De gebruiker die het bericht verstuurd.';
+$string['privacy:preference:email'] = 'Voorkeursadres voor e-mailmelding';
 $string['tasksendemail'] = 'Berichtenoverzicht mailings';

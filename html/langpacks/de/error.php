@@ -404,7 +404,7 @@ $string['loginasonecourse'] = 'Sie können sich in diesen Kurs nicht eintragen.<
 $string['maxareabytes'] = 'Diese Datei ist größer als der in diesem Bereich verfügbare Platz.';
 $string['maxbytesfile'] = 'Die Datei {$a->file} ist zu groß. Die maximale Größe zum Hochladen ist {$a->size}.';
 $string['maxdraftitemids'] = 'Ihre Datei-Uploads sind vorübergehend eingeschränkt, nachdem Sie eine große Anzahl von Dateien hochgeladen haben. Versuchen Sie es bitte später noch einmal.';
-$string['messageundeliveredbynotificationsettings'] = 'Die Nachricht konnte nicht gesendet werden, da persönliche Nachrichten zwischen Benutzern (in den Benachrichtigungseinstellungen) von einem Site-Administrator deaktiviert wurden.';
+$string['messageundeliveredbynotificationsettings'] = 'Die Nachricht konnte nicht gesendet werden, da persönliche Nachrichten zwischen Nutzenden (in den Benachrichtigungseinstellungen) von einem Site-Administrator deaktiviert wurden.';
 $string['messagingdisable'] = 'Die Mitteilungen sind für diese Website deaktiviert.';
 $string['mimetexisnotexist'] = 'Ihr System ist nicht konfiguriert, um mimeTeX ausführen zu können. Sie müssen den C-Quellcode unter <a href="https://www.forkosh.com/mimetex.zip"> https://www.forkosh.com/mimetex.zip</a> herunterladen, kompilieren und das ausführbare Programm in das Verzeichnis moodle/filter/tex/ legen.';
 $string['mimetexnotexecutable'] = 'Das spezifische Programm mimetex ist nicht ausführbar!';
@@ -437,7 +437,7 @@ $string['myisamproblem'] = 'Die Datenbank nutzt die Database Engine MyISAM. Es w
 $string['needcopy'] = 'Sie müssen zuerst etwas kopieren';
 $string['needcoursecategroyid'] = 'Die Kurs-ID oder der Kursbereich muss definiert werden.';
 $string['needphpext'] = 'Sie müssen {$a} -Unterstützung in Ihrer PHP-Installation hinzufügen';
-$string['noadmins'] = 'Keine Adminstratoren!';
+$string['noadmins'] = 'Keine Adminstrator/innen!';
 $string['noblocks'] = 'Keine Blöcke gefunden!';
 $string['nocapabilitytousethisservice'] = 'Nutzer/in besitzt nicht die notwendige Berechtigung, um diesen Service zu nutzen';
 $string['nocategorydelete'] = 'Kursbereich "{$a}" kann nicht gelöscht werden!';

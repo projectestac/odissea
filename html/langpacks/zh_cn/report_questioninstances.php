@@ -26,10 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['editquestionshere'] = '编辑此场景中的题目';
+$string['eventreportviewed'] = '已查看的报告';
 $string['getreport'] = '获取报表';
 $string['hiddenquestions'] = '隐藏';
 $string['intro'] = '此报表列出系统中所有使用了指定类型的题目的场景。';
 $string['pluginname'] = '题目实例';
+$string['privacy:metadata'] = '问题实例插件不存储任何个人数据。';
 $string['questioninstances:view'] = '查看题目实例报表';
 $string['reportforallqtypes'] = '所有题目类型的报表';
 $string['reportformissingqtypes'] = '未知类型题目的报表';

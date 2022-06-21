@@ -65,10 +65,10 @@
 		"unitprefixes": "Einheitenpräfixe",
 		"syntaxparams": "Syntaxoptionen",
 
-		"authoring_field_button_tooltip": "Öffne Quizzes Studio",
+		"authoring_field_button_tooltip": "Öffne WirisQuizzes Studio",
 		"authoring_field_text_field_label": "Richtige Antwort",
 
-		"quizzes_studio_home_activity_title": "Funktionen für Mathematik und Naturwissenschaften",
+		"quizzes_studio_home_activity_title": "WirisQuizzes Studio",
 		"quizzes_studio_input_options_activity_title": "Eingabeoptionen",
 		"quizzes_studio_validation_options_activity_title": "Validierungsoptionen",
 		"quizzes_studio_variables_options_activity_title": "Lege Zufallsvariablen und Funktionen fest",
@@ -80,17 +80,19 @@
 		"quizzes_studio_toolbar_back_button_tooltip": "Zurück",
 		"quizzes_studio_toolbar_test_question_button_tooltip": "Teste diese Frage",
 		"quizzes_studio_toolbar_help_button_tooltip": "Hilfe",
-		"quizzes_studio_toolbar_send_feedback_button_tooltip": "Send feedback",
+		"quizzes_studio_send_feedback_label": "Feedback senden",
+		"quizzes_studio_training_label": "Enroll in our training course",
+		"quizzes_studio_website_label": "Visit our website",
+		"quizzes_studio_report_issue_label": "Report an issue",
 
 		"quizzes_studio_toolbar_more_options_dropdown_tooltip": "weitere Optionen",
 		"quizzes_studio_toolbar_more_options_dropdown_import_label": "Importieren",
 		"quizzes_studio_toolbar_more_options_dropdown_export_label": "Exportieren",
 		"quizzes_studio_toolbar_more_options_dropdown_view_source_label": "Quelle anzeigen",
-		"quizzes_studio_toolbar_more_options_dropdown_send_feedback_label": "Feedback senden",
 		"quizzes_studio_toolbar_more_options_dropdown_help_label": "Hilfe",
 		"quizzes_studio_toolbar_more_options_dropdown_about_label": "Über",
 
-		"quizzes_studio_home_answer_type_label": "Wähle die Antwortart aus",
+		"quizzes_studio_home_answer_type_label": "Art der Antwort",
 		"quizzes_studio_home_answer_type_equation_label": "Gleichung",
 		"quizzes_studio_home_answer_type_graphic_label": "Grafik",
 		"quizzes_studio_home_answer_type_text_label": "Text",
@@ -109,9 +111,10 @@
 		"quizzes_studio_home_initial_graph_content_label": "Anfangsinhalt",
 		"quizzes_studio_home_correct_graph_answer_label": "Richtige Antwort",
 
+		"quizzes_studio_home_activity_list_label": "Settings",
 		"quizzes_studio_home_input_options_label": "Eingabeoptionen",
 		"quizzes_studio_home_validation_options_label": "Bewertungsoptionen",
-		"quizzes_studio_home_variables_options_label": "Lege Zufallsvariablen und Funktionen fest",
+		"quizzes_studio_home_variables_options_label": "Zufällige Variablen",
 
 		"quizzes_studio_customize_graph_toolbar_label": "Wähle Werkzeuge aus, die dem Schüler zur Beantwortung der Frage zur Verfügung gestellt werden sollen.",
 		"quizzes_studio_customize_graph_toolbar_header": "Passe die Symbolleiste an",
@@ -534,8 +537,25 @@
 		"parameter": "parameter",
 		"answer": "antwort",
 
-		"quizzes_studio_home_copy_initial_content_button_text": "Copy initial content",
-		"quizzes_studio_home_copy_correct_answer_button_text": "Copy correct answer"
+		"quizzes_studio_home_copy_initial_content_button_text": "Copy from initial content",
+		"quizzes_studio_home_copy_correct_answer_button_text": "Copy from correct answer",
+		"quizzes_studio_home_answer_type_geometry_label": "Plotter",
+		"quizzes_studio_home_answer_type_statistical_charts_label": "Statistics charts",
+		
+		"quizzes_studio_home_correct_answer_description_math": "Enter the correct answer for this question. You can modify the criteria used to compare it to your students' answer using the validation options menu.",
+		"quizzes_studio_home_correct_answer_description_graphic": "Enter the correct answer for this question. You can modify how it is compared to your students' answer and which elements are graded using the settings menu.",
+		"quizzes_studio_home_correct_answer_description_text": "Enter the correct answer for this question. You can modify the criteria used to compare it to your students' answer using the validation options menu.",
+		"quizzes_studio_home_initial_content_description_math": "This is the initial state of the math editor your students will see when attempting the question. This way you can provide a structure for their answer or blanks to fill in.",
+		"quizzes_studio_home_initial_content_description_graphic": "This is the initial state of the graph editor your students will see when attempting the question. You can customize the toolbar elements they will see in the input options.",
+		"quizzes_studio_home_initial_content_description_text": "This is the initial state of the text editor your students will see when attempting the question. This answer type is not evaluated mathematically.",
+				
+		"quizzes_studio_home_product_message_header_label": "You are using WirisQuizzes 4.5!",
+		"quizzes_studio_home_product_message_text_label": "This version features a renovated WirisQuizzes Studio and also includes performance improvements. We've also added a new input settings feature - now you can lock the initial content.",
+		"quizzes_studio_home_product_message_release_notes_link": "Check out our release notes.",		
+
+		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Initial content",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Lock initial content",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Do not allow the student to modify the answer outside of the empty placeholders left in the initial content. If this setting is enabled the student will only be able to fill in the boxes of the initial content."
 	}
 }
 

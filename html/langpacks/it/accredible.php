@@ -30,7 +30,6 @@ $string['accredible:manage'] = 'Gestire un certificato/badge';
 $string['accredible:student'] = 'Recuperare un certificato/badge';
 $string['accredible:view'] = 'Visualizzare un certificato/badge';
 $string['achievementid'] = 'Archiviazione id/nome del gruppo globale (deve essere unico)';
-$string['activitydescription'] = 'Il modulo crea e aggiorna automaticamente un Credential Group su Accredible. Tutti i certificati e i badge emessi sono contenuti in questo gruppo e il loro aspetto e le informazioni possono essere aggiornati sulla  <a href="https://dashboard.accredible.com" target="_blank"> dashboard </a>.';
 $string['activityname'] = 'Nome attività';
 $string['additionalactivitiesone'] = 'Attenzione: stai aggiungendo più di un\'attività ad un corso.
 Entrambe le attività sono visibili agli studenti, quindi assicurati di dare loro nomi differenti.';

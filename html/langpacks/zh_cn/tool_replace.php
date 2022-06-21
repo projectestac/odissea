@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalskiptables'] = '附加的跳表';
+$string['additionalskiptables_desc'] = '运行数据库搜索和替换时应跳过的表的列表（用逗号分隔）。';
 $string['cannotfit'] = '这个替换比原始的长，且不允许缩短，无法执行。';
 $string['disclaimer'] = '我明白这个操作的风险';
 $string['doit'] = '是的，执行！';
@@ -36,6 +38,7 @@ $string['notimplemented'] = '对不起，这个功能无法在你的数据库系
 $string['notsupported'] = '不支持此脚本，总是在进行前做完全备份！<br />此操作无法恢复！';
 $string['pageheader'] = '在整个数据库中的搜索和替换文本';
 $string['pluginname'] = 'DB 搜索和替换';
+$string['privacy:metadata'] = 'DB搜索和替换插件不存储任何个人数据。';
 $string['replacewith'] = '用这个字符串替换：';
 $string['replacewithhelp'] = '通常是新服务器的 URL 地址';
 $string['searchwholedb'] = '在整个数据库中搜索：';

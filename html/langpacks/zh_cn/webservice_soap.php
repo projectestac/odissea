@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'SOAP 协议';
+$string['privacy:metadata'] = 'SOAP协议插件不存储任何个人数据。';
 $string['soap:use'] = '使用SOAP协议';

@@ -15,22 +15,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Test performance of questionnaire.
- * @author    Guy Thomas
- * @copyright Copyright (c) 2015 Moodlerooms Inc. (http://www.moodlerooms.com)
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
-defined('MOODLE_INTERNAL') || die();
-
-/**
  * Performance test for questionnaire module.
+ * @package mod_questionnaire
  * @group mod_questionnaire
  * @author     Guy Thomas
  * @copyright Copyright (c) 2015 Moodlerooms Inc. (http://www.moodlerooms.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 class mod_questionnaire_csvexport_test extends advanced_testcase {
 
     public function setUp(): void {
@@ -70,17 +61,17 @@ class mod_questionnaire_csvexport_test extends advanced_testcase {
         $questionnaires = $qdg->questionnaires();
         foreach ($questionnaires as $questionnaire) {
             list ($course, $cm) = get_course_and_cm_from_instance($questionnaire->id, 'questionnaire', $questionnaire->course);
-            $questionnaireinst = new questionnaire(0, $questionnaire, $course, $cm);
+            $questionnaireinst = new questionnaire($course, $cm, 0, $questionnaire);
 
             // Test for only complete responses.
-            $newoutput = $this->get_csv_text($questionnaireinst->generate_csv('', '', 0, 0, 0, 0));
+            $newoutput = $this->get_csv_text($questionnaireinst->generate_csv(0, '', '', 0, 0, 0));
             $this->assertEquals(count($newoutput), count($this->expected_complete_output()));
             foreach ($newoutput as $key => $output) {
                 $this->assertEquals($this->expected_complete_output()[$key], $output);
             }
 
             // Test for all responses.
-            $newoutput = $this->get_csv_text($questionnaireinst->generate_csv('', '', 0, 0, 0, 1));
+            $newoutput = $this->get_csv_text($questionnaireinst->generate_csv(0, '', '', 0, 0, 1));
             $this->assertEquals(count($newoutput), count($this->expected_incomplete_output()));
             foreach ($newoutput as $key => $output) {
                 $this->assertEquals($this->expected_incomplete_output()[$key], $output);
@@ -88,6 +79,10 @@ class mod_questionnaire_csvexport_test extends advanced_testcase {
         }
     }
 
+    /**
+     * Return the expected output.
+     * @return string[]
+     */
     private function expected_complete_output() {
         return ["Institution	Department	Course	Group	Full name	Username	Q01_Text Box 1000	Q02_Essay Box 1002	" .
             "Q03_Numeric 1004	Q04_Date 1006	Q05_Radio Buttons 1008	Q06_Drop Down 1010	Q07_Check Boxes 1012->four	" .
@@ -107,6 +102,10 @@ class mod_questionnaire_csvexport_test extends advanced_testcase {
             "27/12/2017	wind	three	0	0	0	0	0	0	0	0	0	1	1	2	3	4	5	1	2	3	4	"];
     }
 
+    /**
+     * Return the exepected incomplete output.
+     * @return string[]
+     */
     private function expected_incomplete_output() {
         return ["Institution	Department	Course	Group	Full name	Username	Complete	Q01_Text Box 1000	" .
             "Q02_Essay Box 1002	" .

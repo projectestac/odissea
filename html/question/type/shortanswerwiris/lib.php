@@ -14,10 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-defined('MOODLE_INTERNAL') || die();
-
-
-
 function wrsqz_convert_for_compound($text) {
     $answerarray = array();
     $compoundanswertext = '<math xmlns="http://www.w3.org/1998/Math/MathML">';

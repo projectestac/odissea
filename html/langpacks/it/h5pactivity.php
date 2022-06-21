@@ -128,6 +128,7 @@ $string['review_on_completion'] = 'I partecipanti possono rivedere i propri tent
 $string['review_user_attempts'] = 'Visualizza tentativi dell\'utente ({$a})';
 $string['score'] = 'Punteggio';
 $string['score_out_of'] = '{$a->rawscore} su {$a->maxscore}';
+$string['search:activity'] = 'H5P - Informazioni sull\'attività';
 $string['startdate'] = 'Data di inizio';
 $string['statement_received'] = 'Ricevuto statement xAPI';
 $string['totalscore'] = 'Punteggio totale';

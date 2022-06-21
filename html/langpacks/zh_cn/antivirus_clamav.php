@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['antivirusfailed'] = '目前防病毒扫描存在问题。您的文件{$a->item}尚未上载。请稍后再试。';
+$string['antivirusfailed'] = '目前防病毒扫描存在问题。您的文件{$a->item}尚未上传。请稍后再试。';
 $string['clamfailed'] = 'Clam AV运行失败。返回的错误信息是{$a}。下面是Clam的输出:';
 $string['clamfailureonupload'] = 'ClamAV上传失败';
 $string['configclamactlikevirus'] = '文件疑似病毒';
 $string['configclamdonothing'] = '文件正常';
 $string['configclamfailureonupload'] = '如果您已经配置了使用ClamAV扫描上传的文件，但它的配置不正确或未能运行等出现一些未知原因时，它应该如何表现？如果您选择“文件疑似病毒”，那么文件将被转移到隔离区或删除。如果您选择“文件正常”，文件将被移动到目标目录。无论哪种方式，管理员会警告文件上传失败。如果你选择把“文件疑似病毒”和某些原因ClamAV无法运行（通常是因为你输入了一个无效的ClamAV文件夹），所有上传文件将被移动到隔离区或被删除。小心这个设置。';
-$string['configclamtryagain'] = '拒绝上传，请再试一次';
+$string['configclamtryagain'] = '拒绝上传，请重试';
 $string['errorcantopensocket'] = '连接到Unix域名套接字导致错误{$a}';
 $string['errorclamavnoresponse'] = 'ClamAV 没有反应；请检查 daemon 执行状态';
 $string['errornounixsocketssupported'] = '这个系统不支持Unix域名套接字的传输。请使用"命令行"的选项代替。';
@@ -46,14 +46,14 @@ $string['quarantinedir'] = '隔离文件夹';
 $string['runningmethod'] = '运行方法';
 $string['runningmethodcommandline'] = '命令行';
 $string['runningmethoddesc'] = '执行ClamAV的方式。默认使用"命令行"，但在Unix系统上，使用系统套接字可以得到更好的性能表现';
-$string['runningmethodtcpsocket'] = 'TCP套接字';
+$string['runningmethodtcpsocket'] = 'TCP 套接字';
 $string['runningmethodunixsocket'] = 'Unix域名套接字';
 $string['tcpsockethost'] = 'TCP套接字主机名';
-$string['tcpsockethostdesc'] = 'ClamAV服务器域名';
+$string['tcpsockethostdesc'] = 'ClamAV服务器的域名';
 $string['tcpsocketport'] = 'TCP套接字端口';
-$string['tcpsocketportdesc'] = '此端口被用于连接ClamAV';
+$string['tcpsocketportdesc'] = '连接到ClamAV时要使用的端口';
 $string['tries'] = '扫描尝试';
 $string['tries_desc'] = '如果扫描过程中出现错误，ClamAV进行的尝试次数。';
 $string['tries_notice'] = 'Clamav扫描尝试了 {$a->tries} 次。
-{$a->notice}';
+ {$a->notice}';
 $string['unknownerror'] = 'clam发生了未知错误。';

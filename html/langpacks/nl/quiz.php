@@ -424,7 +424,7 @@ $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}';
 $string['gradetopassmustbeset'] = 'Slaagcijfer kan geen nul zijn omdat de test is ingesteld om een slaagcijfer te behalen als voltooiingsmethode. Geef hier een andere waarde dan een nul.';
 $string['gradetopassnotset'] = 'Deze test heeft geen slaagcijfer ingesteld. Gebruik de vereist cijfer-instelling bij de instellingen van de test.';
 $string['gradetopassoutof'] = 'Slaagcijfer: {$a->grade} op {$a->maxgrade}';
-$string['gradingdetails'] = 'Punten voor deze inzending:
+$string['gradingdetails'] = 'Cijfer voor deze inzending:
 {$a->raw}/{$a->max}';
 $string['gradingdetailsadjustment'] = 'Met de vorige strafpunten geeft dit
 <strong>{$a->cur}/{$a->max}</strong>';
@@ -498,7 +498,7 @@ $string['manualgradequestion'] = 'Beoordeel vraag  {$a->question} in {$a->quiz} 
 $string['manualgrading'] = 'Beoordelen';
 $string['mark'] = 'Bewaren';
 $string['markall'] = 'Pagina bewaren';
-$string['marks'] = 'Punten';
+$string['marks'] = 'Cijfers';
 $string['marks_help'] = 'De numerieke cijfers voor elke vraag en de algemene score voor de poging.';
 $string['match'] = 'Koppelen';
 $string['matchanswer'] = 'Koppel antwoord';
@@ -620,7 +620,7 @@ $string['overduehandling_help'] = 'Deze instelling controleert wat er gebeurt wa
 $string['overduehandlingautoabandon'] = 'Pogingen moeten ingestuurd worden voor de tijd verlopen is of ze worden niet meegeteld';
 $string['overduehandlingautosubmit'] = 'Open pogingen worden automatisch ingestuurd';
 $string['overduehandlinggraceperiod'] = 'Er is extra tijd voorzien om open pogingen in te sturen, maar niet om meer vragen te beantwoorden';
-$string['overduemustbesubmittedby'] = 'Deze poging is nu over tijd. Ze zou al moeten ingestuurd geweest zijn. Als je wil dat deze poging beoordeeld wordt, dan moet je ze insturen voor {$a}. Als je dit niet doet, dan zullen er voor deze poging geen punten gegeven worden.';
+$string['overduemustbesubmittedby'] = 'Deze poging is nu over tijd. Ze zou al moeten ingestuurd geweest zijn. Als je wil dat deze poging beoordeeld wordt, dan moet je ze insturen voor {$a}. Als je dit niet doet, dan zal er voor deze poging geen cijfer gegeven worden.';
 $string['override'] = 'Overschrijf';
 $string['overridedeletegroupsure'] = 'Ben je er zeker van dat je de overschrijving voor groep {$a} wil verwijderen?';
 $string['overridedeleteusersure'] = 'Ben je er zeker van dat je de overschrijving voor gebruiker {$a} wil verwijderen?';

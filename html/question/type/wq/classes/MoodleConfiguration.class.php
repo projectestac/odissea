@@ -18,7 +18,7 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once(dirname(__FILE__) . '/../quizzes/lib/com/wiris/quizzes/api/Configuration.interface.php');
 
-class MoodleConfiguration implements com_wiris_quizzes_api_Configuration{
+class MoodleConfiguration implements com_wiris_quizzes_api_Configuration {
 
     public function get($key) {
         global $CFG;

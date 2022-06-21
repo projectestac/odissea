@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'Ungültige Bewertung';
 $string['ratings'] = 'Bewertungen';
 $string['ratingtime'] = 'Bewertungen auf Beiträge beschränken, die im Zeitraum erstellt wurden';
 $string['rolewarning'] = 'Rollen, die Bewertungen vornehmen dürfen';
-$string['rolewarning_help'] = 'Nutzer/innen benötigen das Recht moodle/rating:rate und modulspezifische Rechte, um Bewertungen durchführen zu können. Nutzer/innen mit folgenden Rollen sollten Beiträge bewerten können. Eine Anpassung ist über \'Rechte ändern\' im Aktionsmenü oder im Block \'Administration\' möglich.';
+$string['rolewarning_help'] = 'Rollen mit Berechtigung zum Bewerten sind Rollen mit der Fähigkeit moodle/rating:rate und allen aktivitätsspezifischen Bewertungsfähigkeiten. Über die Seite "Rechte ändern" können Sie weiteren Rollen die Berechtigung zum Bewerten zuweisen.';
 $string['scaleselectionrequired'] = 'Wenn Sie die Aggregation von Bewertungen verwenden, müssen Sie zusätzlich eine Skala oder einen Höchstwert festlegen.';

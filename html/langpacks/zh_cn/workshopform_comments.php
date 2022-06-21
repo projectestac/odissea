@@ -30,3 +30,4 @@ $string['dimensioncommentfor'] = '评论 {$a}';
 $string['dimensiondescription'] = '描述';
 $string['dimensionnumber'] = '采分点 {$a}';
 $string['pluginname'] = '评语';
+$string['privacy:metadata'] = '评语评分插件仅存储评估表单的详细信息。如何填写表格的实际个人数据由车间模块本身存储，并附在导出的评估中。';

@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '私人文件';
+$string['privacy:metadata'] = '“私有文件”板块仅提供用户私有文件的视图和链接。';
 $string['private_files:addinstance'] = '新增私人文件版块';
 $string['private_files:myaddinstance'] = '在个人主页新增一个私人文件版块';
 $string['privatefiles'] = '私人文件';

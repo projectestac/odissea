@@ -168,10 +168,10 @@ $string['updatemethod'] = 'Método de atualização';
 $string['updaterate'] = 'Frequência de atualização:';
 $string['userlist'] = 'Lista de utilizadores';
 $string['usingchat'] = 'A usar o chat';
-$string['usingchat_help'] = 'O módulo de chat inclui algumas caraterísticas para tornar o chat mais agradável.
-* Ícones expressivos - Qualquer ícone expressivo (emoticon) que pode usar noutras partes do Moodle pode ser usada também aqui e será substituída pela imagem correspondente. Por exemplo, :-)
+$string['usingchat_help'] = 'O módulo Chat inclui algumas caraterísticas para tornar o chat mais agradável.
+* Ícones expressivos - Qualquer ícone expressivo (emoticon) que pode usar noutras partes do Moodle pode ser usado também aqui e será substituído pela imagem correspondente. Por exemplo, :-)
 * Hiperligações - Os endereços da Web serão transformados automaticamente em hiperligações.
-* Personalização - Pode começar uma linha com "/me" ou ":" para personalizar a mensagem. Por exemplo, se o seu nome for Joaquim, e escrever ":sorriu!" ou "/me sorri!", todos os outros participantes verão "Joaquim sorriu!"
-* Beeps - Pode enviar um som a os outros participantes clicando em "chamar" junto dos seus nomes. Um atalho útil para chamar todos os participantes consiste em escrever "beep all".
-* HTML - Se souber algum código HTML, poderá usá-lo no seu texto para fazer coisas como, por exemplo, inserir imagens, tocar sons, ou enviar texto com cores diferentes.';
+* Personalização - Pode começar uma linha com "/me" ou ":" para personalizar a mensagem. Por exemplo, se o seu nome for Joaquim, e escrever ":sorriu!" ou "/me sorriu!", todos os outros participantes verão "Joaquim sorriu!"
+* Beeps - Pode enviar um som aos outros participantes clicando em "chamar" junto dos seus nomes. Um atalho útil para chamar todos os participantes consiste em escrever "beep all".
+* HTML - Se souber algum código HTML, poderá usá-lo no seu texto para fazer coisas como, por exemplo, inserir imagens, tocar sons ou enviar texto com diferentes cores.';
 $string['viewreport'] = 'Ver gravações de sessões anteriores';

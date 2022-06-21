@@ -25,5 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['invaliddata'] = '没有足够的数据';
 $string['participants'] = '参与课程人数';
+$string['percent'] = '确保的百分比（%）';
 $string['pluginname'] = '图表报表';
+$string['privacy:metadata'] = '图表报告仅显示存储在其他位置的数据。';

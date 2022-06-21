@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'REST 协议';
+$string['privacy:metadata'] = 'REST协议插件不存储任何个人数据。';
 $string['rest:use'] = '使用REST协议';

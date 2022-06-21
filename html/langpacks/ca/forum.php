@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actionsforgraderinterface'] = 'Accions per a la interfície del qualificador';
 $string['actionsforpost'] = 'Accions per a la publicació';
+$string['activitydate:due'] = 'Venciment:';
 $string['activityoverview'] = 'Hi ha missatges nous al fòrum';
 $string['addanewdiscussion'] = 'Afegeix un tema de debat nou';
 $string['addanewquestion'] = 'Afegeix una pregunta nova';
@@ -107,6 +108,9 @@ $string['clicktounlockdiscussion'] = 'Feu clic per desblocar aquest debat.';
 $string['clicktounsubscribe'] = 'Us heu subscrit a aquest debat. Cliqueu per cancel·lar la subscripció.';
 $string['close'] = 'Tanca';
 $string['closegrader'] = 'Tanca el qualificador';
+$string['completiondetail:discussions'] = 'Comença debats: {$a}';
+$string['completiondetail:posts'] = 'Envia missatges al fòrum: {$a}';
+$string['completiondetail:replies'] = 'Envia respostes: {$a}';
 $string['completiondiscussions'] = 'L\'estudiant ha d\'obrir debats:';
 $string['completiondiscussionsdesc'] = 'L\'estudiant ha de crear almenys {$a} debat(s)';
 $string['completiondiscussionsgroup'] = 'Requereix obrir debats';
@@ -530,13 +534,12 @@ $string['postbymailsuccess'] = 'La vostra resposta «{$a->subject}» s\'ha afegi
 $string['postbymailsuccess_html'] = 'La vostra resposta <a href="{$a->discussionurl}">{$a->subject}</a> s\'ha publicat amb èxit.';
 $string['postbyuser'] = '{$a->post} de {$a->user}';
 $string['postincontext'] = 'Mostra aquest missatge en el seu context';
-$string['postisprivatereply'] = 'Aquesta resposta és privada. Els altres participants no la poden veure.';
-$string['postmailinfo'] = 'Això és una còpia d\'un missatge enviat al lloc web {$a}.
-
-Per respondre-hi cliqueu damunt d\'aquest enllaç:';
+$string['postisprivatereply'] = 'Aquesta resposta és privada. Només la podeu veure vós i qualsevol persona amb la capacitat de veure respostes privades, com ara docents o gestors.';
+$string['postmailinfo'] = 'Això és una còpia d\'un missatge enviat a {$a}.';
 $string['postmailinfolink'] = 'Aquesta és una còpia d\'un missatge enviat al curs {$a->coursename}.
 Per respondre, feu clic en aquest enllaç: {$a->replylink}';
 $string['postmailnow'] = '<p>Aquest missatge s\'enviarà per correu, immediatament, a tots els subscriptors del fòrum.</p>';
+$string['postmailreply'] = 'Per respondre-hi cliqueu damunt d\'aquest enllaç: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = 'Sobretot coneixements separats';
 $string['postrating2'] = 'Separats i connectats';
@@ -749,9 +752,9 @@ $string['trackingoptional'] = 'Opcional';
 $string['trackingtype'] = 'Seguiment de missatges llegits';
 $string['trackingtype_help'] = 'El seguiment de missatges llegits habilita els participants per comprovar fàcilment quins missatges no han vist mitjançant el realçament de qualsevol missatge nou.
 
-Si es defineix com a opcional, els participants poden triar si activen o desactiven el seguiment mitjançant un enllaç al bloc d\'administració. (Els usuaris han d\'habilitar també el seguiment dels fòrums en les seves preferències del fòrum.)
+Si s\'estableix com a opcional, els participants poden triar si activen o desactiven el seguiment mitjançant un enllaç al menú d\'accions o al bloc d\'administració. (Els usuaris han d\'habilitar també el seguiment dels fòrums en les seves preferències del fòrum.)
 
-Si s\'habilita «Habilita el seguiment de lectura forçat» a l\'administració del lloc, apareixerà una nova opció —obligat. Això vol dir que el seguiment estarà sempre actiu, malgrat les preferències de fòrum dels usuaris.';
+Si l\'administrador del lloc ha habilitat l\'opció «Permet el seguiment de lectura forçat», apareixerà una nova opció —obligat. Això vol dir que el seguiment estarà sempre actiu, malgrat les preferències de fòrum dels usuaris.';
 $string['trackreadposts_header'] = 'Seguiment dels fòrums';
 $string['unlockdiscussion'] = 'Desbloqueja aquest debat';
 $string['unpindiscussion'] = 'No fixis aquest debat';

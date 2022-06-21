@@ -34,3 +34,4 @@ $string['comparisonlevel7'] = '宽松';
 $string['comparisonlevel9'] = '十分宽松';
 $string['configcomparison'] = '影响评分核定的默认参数值';
 $string['pluginname'] = '与最佳评价相比较';
+$string['privacy:metadata'] = '与最佳评估插件的比较不会存储任何个人数据。具体个人数据用户的成绩存储在研讨会模块中，并附加到导出的提交和评估数据中。';

@@ -52,4 +52,5 @@ $string['morehelp'] = '更多说明';
 $string['performance:view'] = '查看性能报告';
 $string['performancereportdesc'] = '这份报告将列出可能影响网站{$a}性能的问题。';
 $string['pluginname'] = '性能综览';
+$string['privacy:metadata'] = '性能概览插件不存储任何个人数据。';
 $string['value'] = '数值';

@@ -29,10 +29,11 @@ Feature: Test creating a Multianswer Wiris (Cloze) question
       | Question text        | {1:SHORTANSWER:=#r1} is the number one.  |
       | General feedback     | The capital of Germany is #r1.           |
     And I open Wiris Quizzes Studio
-    And I click on "Define random variables and functions" "text"
+    And I click on "Random variables" "text"
     And I wait "10" seconds
     And I add the variable "r1" with value "1"
-    And I click on "//*[@id='wrsUI_quizzesStudioHomeSaveButton']" "xpath_element"
+    And I go back in Wiris Quizzes Studio
+    And I save Wiris Quizzes Studio
     And I click on "//*[@id='id_submitbutton']" "xpath_element"
     Then I should see "multianswer-wiris-001" in the "categoryquestions" "table"
 
@@ -42,10 +43,11 @@ Feature: Test creating a Multianswer Wiris (Cloze) question
     And I choose the question type "Cloze - science"
     And I set the field "Question name" to "multianswer-wiris-002"
     And I open Wiris Quizzes Studio
-    And I click on "Define random variables and functions" "text"
+    And I click on "Random variables" "text"
     And I add the variable "r1" with value "1"
     And I add the variable "r2" with value "5"
-    And I click on "//*[@id='wrsUI_quizzesStudioHomeSaveButton']" "xpath_element"
+    And I go back in Wiris Quizzes Studio
+    And I save Wiris Quizzes Studio
     And I set the field "Question text" to "Please select number one {1:MC:=#r1}"
     And I set the field "General feedback" to "You are the number one."
     When I press "id_submitbutton"
@@ -72,9 +74,10 @@ Feature: Test creating a Multianswer Wiris (Cloze) question
       | Question name | multianswer-wiris-004                                                                                    |
       | Question text | <p>Type -10: {:SA:=\#a}</p> <p>Type 5: {:SA:=5}</p> <p>Choose 5/57: {:MC:=\#b~1~2}</p> <p>Formula #b</p> |
     And I open Wiris Quizzes Studio
-    And I click on "Define random variables and functions" "text"
+    And I click on "Random variables" "text"
     And I wait "10" seconds
     And I add the variable "a" with value "-10"
     And I add the variable "b" with value "15/171"
-    And I click on "//*[@id='wrsUI_quizzesStudioHomeSaveButton']" "xpath_element"
+    And I go back in Wiris Quizzes Studio
+    And I save Wiris Quizzes Studio
     And I press "id_submitbutton"

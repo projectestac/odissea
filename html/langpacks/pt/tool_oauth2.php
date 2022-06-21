@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['acceptrisk'] = 'Entendo que desativar a verificação de e-mail pode causar um problema de segurança';
-$string['acceptrisk_help'] = 'Desativar a verificação de e-mail pode causar um problema de segurança. Pode potencialmente permitir que os utilizadores se autentiquem como outro nas circunstâncias corretas.';
+$string['acceptrisk'] = 'Entendo que desativar a verificação de e-mail pode causar um problema de segurança.';
+$string['acceptrisk_help'] = 'Desativar a verificação de e-mail pode potencialmente permitir que um utilizador se autentique como outro.';
 $string['authconfirm'] = 'Esta ação concederá à API acesso permanente ao Moodle para a conta autenticada. Destina-se a ser usada como uma conta de sistema para gerir ficheiros que são propriedade do Moodle.';
 $string['authconnected'] = 'A conta de sistema está ligada para acesso offline';
 $string['authnotconnected'] = 'A conta de sistema não está ligada para acesso offline';

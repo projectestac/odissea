@@ -27,15 +27,15 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['account_works'] = 'تسجيل الدخول إلى مخدم PageOne';
 $string['all_course_messages'] = 'كل رسائل المستخدمين لهذا المساق';
-$string['all_messages'] = 'كل رسائل المستخدمين لكل المساقات';
-$string['all_own_messages'] = 'الرسائل لكل مساقاتي';
+$string['all_messages'] = 'كل رسائل المستخدمين لكل المقررات الدراسية';
+$string['all_own_messages'] = 'الرسائل لكل مقرراتي';
 $string['config_account_num'] = 'رقم حساب PageOne';
 $string['config_account_pass'] = 'كلمة المرور لحساب PageOne';
 $string['error_code_502'] = 'رقم غير صحيح';
 $string['message_time'] = 'وقت الرسالة';
 $string['no_permission'] = 'يبدو أنه ليست لديك صلاحية استعمال جوال مودل في أي مكان من النظام.';
 $string['no_permission_view'] = 'عذرًا، لكن ليست لديك صلاحية معاينة رسائل المستخدمين الآخرين.';
-$string['no_suitable_course'] = 'لم يتم تحديد أي مساق والمستخدم الذي تحاول التواصل معه لم يتم العثور عليه في أي من المساقات التي تمتلك فيها صلاحية استعمال جوال مودل.';
+$string['no_suitable_course'] = 'لم يتم تحديد أي مقرر والمستخدم الذي تحاول التواصل معه لم يتم العثور عليه في أي من المقررات الدراسية التي تمتلك فيها صلاحية استعمال جوال مودل.';
 $string['no_view_priv'] = 'تنبيه: ليس مسموحًا لك بمشاهدة تفاصيل المستخدم، لذلك تم إخفاء التفاصيل الكاملة لتلك الأخطاء.';
 $string['not_configured'] = 'لم يتم إدخال إعدادات حساب PageOne. تم تعطيل الكتلة.';
 $string['own_messages'] = 'رسائلي لهذا المساق حصرًا';

@@ -67,13 +67,13 @@ $string['emailconfirmlinksent'] = '<p>已有既有用户使用了相同的电子
 <p>只有在绑定后才可使用第三方登陆。</p>
 <p>已向您的邮箱 <b>{$a}</b> 发送了一封包含绑定方法的邮件。</p>
 <p>如果遇到问题，请与站点管理员联系。</p>';
-$string['emailpasswordchangeinfo'] = '你好{$a->firstname}，
+$string['emailpasswordchangeinfo'] = '您好 {$a->firstname}，
 
-有人（可能是你）在“{$a->sitename}”上为你的帐户请求了一个新密码。
+有人（可能是您）为您在“{$a->sitename}”上的帐户申请设置新密码。
 
-但是，您的密码无法重置，因为您正在使用另一个站点上的帐户登录。
+但是您的密码无法被重置，因为您正在使用您在另一个网站上的账户登录。
 
-请像以前一样登录，使用登录页面上的链接。
+请像以前一样，使用登录页面上的链接登录。
 {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}：确定改变密码';
 $string['info'] = '第三方账户';

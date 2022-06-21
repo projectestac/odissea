@@ -49,7 +49,7 @@ $string['bulkactivitydetail'] = 'Wählen Sie die Aktivitäten, die Sie bearbeite
 $string['bulkcompletiontracking'] = 'Abschlussverfolgung';
 $string['bulkcompletiontracking_help'] = '<strong>Keine:</strong> Aktivitätsabschluss wird nicht angezeigt
 
-<strong>Manuell:</strong> Teilnehmer können die Aufgabe manuell als abgeschlossen markieren
+<strong>Manuell:</strong> Teilnehmer/innen können die Aufgabe manuell als abgeschlossen markieren
 
 <strong>Unter Bedingung(en):</strong> Aktivität wird als abgeschlossen angezeigt, wenn die Bedingungen erfüllt sind';
 $string['checkactivity'] = 'Kontrollfeld für Aktivität: {$a}';
@@ -97,7 +97,7 @@ $string['completionexpectedfor'] = 'Abschluss erwartet für {$a->instancename}';
 $string['completionicons'] = 'Markierung zur Fortschrittsanzeige';
 $string['completionicons_help'] = 'Das Kästchen an der Seite neben der Aktivität zeigt an, ob Sie die Aktivität abgeschlossen haben.
 
-Falls ein Kästchen mit gepunktetem Rand zu sehen ist, wird darin automatisch ein Häkchen erscheinen, sobald Sie die Aktivität entsprechend den Trainervorgaben abgeschlossen haben.
+Falls ein Kästchen mit gepunktetem Rand zu sehen ist, wird darin automatisch ein Häkchen erscheinen, sobald Sie die Aktivität entsprechend den Trainer/innenvorgaben abgeschlossen haben.
 
 Falls ein Kästchen mit durchgezogenem Rand zu sehen ist, können Sie es anklicken, wenn diese Aktivität Ihrer Meinung nach abgeschlossen ist. (Ein erneuter Klick entfernt das Häkchen wieder, falls Sie Ihre Meinung nachträglich ändern sollten.)';
 $string['completionmenuitem'] = 'Abschluss';
@@ -154,7 +154,7 @@ $string['err_nograde'] = 'Eine Bestehensgrenze wurde für diesen Kurs nicht ange
 $string['err_noroles'] = 'Keine der Rollen im Kurs hat die Fähigkeit \'moodle/course:markcomplete\'.';
 $string['err_nousers'] = 'In diesem Kurs oder in dieser Gruppe gibt es keine Teilnehmer/innen, für die Abschlussinformationen angezeigt werden. (Abschlussinformationen werden ausschließlich für Teilnehmer/innen mit der Fähigkeit \'In Abschlussverfolgung anzeigen\' angezeigt. Die Fähigkeit ist nur für die Standardrolle Teilnehmer/in erlaubt. Wenn es also keine gibt, so sehen Sie diese Fehlermeldung. Administrator/innen können diese Einstellung im Administrationsmenü ändern.)';
 $string['err_settingslocked'] = 'Die Einstellung wurde gesperrt, weil bereits jemand ein Abschlusskriterium erfüllt hat. Wenn Sie die Abschlussbedingungen entsperren, werden die vorhandenen Nutzerdaten gelöscht und es könnte zu Verwirrungen kommen.';
-$string['err_system'] = 'Ein interner Fehler ist im Abschluss-System aufgetreten. (Systemadministratoren können den Debug-Modus aktivieren um weitere Details angezeigt zu bekommen.)';
+$string['err_system'] = 'Ein interner Fehler ist im Abschluss-System aufgetreten. (Systemadministrator/innen können den Debug-Modus aktivieren um weitere Details angezeigt zu bekommen.)';
 $string['eventcoursecompleted'] = 'Kurs beendet';
 $string['eventcoursecompletionupdated'] = 'Kursabschluss aktualisiert';
 $string['eventcoursemodulecompletionupdated'] = 'Abschluss für Aktivität aktualisiert';

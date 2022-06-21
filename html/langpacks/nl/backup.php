@@ -33,7 +33,7 @@ $string['asyncbackuperrordetail'] = 'Het back-up proces is mislukt. Neem contact
 $string['asyncbackuppending'] = 'Het back-up proces is in behandeling';
 $string['asyncbackupprocessing'] = 'De back-up is bezig';
 $string['asyncbadexecution'] = 'Slechte uitvoering van backup-controller. Het is {$a} en zou 2 moeten zijn.';
-$string['asynccheckprogress'] = 'Je kunt de voortgang op elk gewenst moment controleren op de <a href="{$a}">restore page</a';
+$string['asynccheckprogress'] = 'Je kunt de voortgang op elk gewenst moment controleren op de <a href="{$a}">herstelpagina</a';
 $string['asyncemailenable'] = 'Schakel berichtmeldingen in';
 $string['asyncemailenabledetail'] = 'Indien ingeschakeld, ontvangen gebruikers een bericht wanneer een asynchrone back-up of herstel is voltooid.';
 $string['asyncgeneralsettings'] = 'Asynchrone backup / restore';

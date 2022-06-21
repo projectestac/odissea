@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Espaços para mais {no} opções';
 $string['answer'] = 'Resposta';
+$string['blanknumber'] = 'Em branco {$a}';
 $string['choices'] = 'Opções';
 $string['choicex'] = 'Opção [[{no}]]';
 $string['combinedcontrolnamegapselect'] = 'lista pendente';

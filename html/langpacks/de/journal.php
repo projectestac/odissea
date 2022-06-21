@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessdenied'] = 'Kein Zugriff';
 $string['alwaysopen'] = 'Immer verfügbar';
 $string['blankentry'] = 'Leerer Eintrag';
+$string['crontask'] = 'Hintergrundverarbeitung für Journal';
 $string['daysavailable'] = 'Tage verfügbar';
 $string['deadline'] = 'Tage offen';
 $string['editingended'] = 'Bearbeitungszeitraum ist abgelaufen';
@@ -43,8 +44,8 @@ $string['eventjournaldeleted'] = 'Journal gelöscht';
 $string['eventjournalviewed'] = 'Journal angezeigt';
 $string['feedbackupdated'] = 'Feedback für {$a} Einträge aktualisiert';
 $string['gradeingradebook'] = 'Aktuelle Bewertung in der Bewertungsübersicht';
-$string['journal:addentries'] = 'Journaleinträge erstellen';
-$string['journal:addinstance'] = 'Journal anlegen';
+$string['journal:addentries'] = 'Journaleinträge hinzufügen';
+$string['journal:addinstance'] = 'Journal hinzufügen';
 $string['journal:manageentries'] = 'Journaleinträge verwalten';
 $string['journalmail'] = '{$a->teacher} hat ein Feedback zu Ihrem Eintrag im Journal \'{$a->journal}\' abgegeben.
 
@@ -56,7 +57,7 @@ $string['journalname'] = 'Name des Journals';
 $string['journalquestion'] = 'Beschreibung';
 $string['mailsubject'] = 'Feedback zum Journal';
 $string['modulename'] = 'Journal';
-$string['modulename_help'] = '<p>Die Aktivität \'Journal\' ermöglicht es, von Teilnehmer/innen eine Rückmeldung zu einem bestimmten Thema zu erhalten, die ausschließlich die schreibende Person selbst und die Trainer/innen lesen können.</p><p>Anwendungsbeispiele sind u.a.<ul><li>Tagebücher zum Projektverlauf</li><li>Rechenschaftsberichte</li></ul></p>';
+$string['modulename_help'] = '<p>Die Aktivität Journal ermöglicht es, von Teilnehmer/innen eine Rückmeldung zu einem bestimmten Thema zu erhalten, die ausschließlich die schreibende Person selbst und die Trainer/innen lesen können.</p><p>Anwendungsbeispiele sind u.a.<ul><li>Tagebücher zum Projektverlauf</li><li>Rechenschaftsberichte</li></ul></p>';
 $string['modulenameplural'] = 'Journale';
 $string['needsregrade'] = 'Eintrag wurde verändert, seit dem das letzte Feedback gespeichert wurde.';
 $string['newjournalentries'] = 'Neue Journaleinträge';

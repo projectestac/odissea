@@ -373,7 +373,7 @@ $string['invalidscaleid'] = 'Неверный ID шкалы';
 $string['invalidsection'] = 'Запись модуля курса содержит неверный раздел';
 $string['invalidsesskey'] = 'Ваш сеанс, по-видимому, истек. Пожалуйста, войдите снова.';
 $string['invalidshortname'] = 'Некорректное краткое название курса';
-$string['invalidsourcefield'] = 'Неверное поле источника файлов проекта';
+$string['invalidsourcefield'] = 'Неверное поле источника файлов черновиков';
 $string['invalidstatedetected'] = 'Что-то пошло не так: {$a}.
 Такого обычно никогда не должно происходить.';
 $string['invalidurl'] = 'Некорректный URL';

@@ -80,17 +80,19 @@
 		"quizzes_studio_toolbar_back_button_tooltip": "Enrere",
 		"quizzes_studio_toolbar_test_question_button_tooltip": "Previsualització",
 		"quizzes_studio_toolbar_help_button_tooltip": "Ajuda",
-		"quizzes_studio_toolbar_send_feedback_button_tooltip": "Doneu la vostra opinió",
+		"quizzes_studio_send_feedback_label": "Doneu la vostra opinió",
+		"quizzes_studio_training_label": "Apunteu-vos a la nostra formació",
+		"quizzes_studio_website_label": "Visiteu el nostre web",
+		"quizzes_studio_report_issue_label": "Aviseu d'un error",
 
 		"quizzes_studio_toolbar_more_options_dropdown_tooltip": "Més opcions",
 		"quizzes_studio_toolbar_more_options_dropdown_import_label": "Importar",
 		"quizzes_studio_toolbar_more_options_dropdown_export_label": "Exportar",
 		"quizzes_studio_toolbar_more_options_dropdown_view_source_label": "Veure codi font",
-		"quizzes_studio_toolbar_more_options_dropdown_send_feedback_label": "Doneu la vostra opinió",
 		"quizzes_studio_toolbar_more_options_dropdown_help_label": "Ajuda",
 		"quizzes_studio_toolbar_more_options_dropdown_about_label": "Sobre Wiris Quizzes",
 
-		"quizzes_studio_home_answer_type_label": "Esculli el tipus de resposta",
+		"quizzes_studio_home_answer_type_label": "Tipus de resposta",
 		"quizzes_studio_home_answer_type_equation_label": "Equació",
 		"quizzes_studio_home_answer_type_graphic_label": "Gràfica",
 		"quizzes_studio_home_answer_type_text_label": "Text",
@@ -109,9 +111,10 @@
 		"quizzes_studio_home_initial_graph_content_label": "Contingut inicial",
 		"quizzes_studio_home_correct_graph_answer_label": "Resposta correcta",
 
+		"quizzes_studio_home_activity_list_label": "Settings",
 		"quizzes_studio_home_input_options_label": "Opcions d'entrada",
 		"quizzes_studio_home_validation_options_label": "Opcions de validació",
-		"quizzes_studio_home_variables_options_label": "Variables aleatòries i funcions",
+		"quizzes_studio_home_variables_options_label": "Variables aleatòries",
 
 		"quizzes_studio_customize_graph_toolbar_label": "Escolliu les eines que es mostraran a l'estudiant per a respondre la pregunta.",
 		"quizzes_studio_customize_graph_toolbar_header": "Personalizació de la barra d'eines",
@@ -455,7 +458,7 @@
 		"quizzes_studio_view_source_reserved_words_label": "Paraules reservades",
 
 		"quizzes_studio_summary_title": "Validació i variables",
-		"quizzes_studio_summary_input_method_title": "Tipus de entrada",
+		"quizzes_studio_summary_input_method_title": "Tipus d'entrada",
 		"quizzes_studio_summary_allowed_input_title": "Entrada permesa",
 		"quizzes_studio_summary_comparison_title": "Comparació",
 		"quizzes_studio_summary_properties_title": "Propietats",
@@ -535,7 +538,24 @@
 		"answer": "resposta",
 
 		"quizzes_studio_home_copy_initial_content_button_text": "Copia el contingut inicial",
-		"quizzes_studio_home_copy_correct_answer_button_text": "Copia la resposta correcta"
+		"quizzes_studio_home_copy_correct_answer_button_text": "Copia la resposta correcta",
+		"quizzes_studio_home_answer_type_geometry_label": "Tauler gràfic",
+		"quizzes_studio_home_answer_type_statistical_charts_label": "Gràfics d'estadística",
+		
+		"quizzes_studio_home_correct_answer_description_math": "Inseriu la resposta correcta per a aquesta pregunta. Podeu modificar com es compara amb la resposta de l'estudiant fent servir el menú de configuració.",
+		"quizzes_studio_home_correct_answer_description_graphic": "Inseriu la resposta correcta per a aquesta pregunta. Podeu modificar com es compara amb la resposta de l'estudiant i quins elements del tauler gràfic s'avaluaran fent servir el menú de configuració.",
+		"quizzes_studio_home_correct_answer_description_text": "Inseriu la resposta correcta per a aquesta pregunta. Podeu modificar com es compara amb la resposta de l'estudiant fent servir el menú de configuració.",
+		"quizzes_studio_home_initial_content_description_math": "Aquest és l'estat inicial de l'editor d'equacions que els vostres estudiants veuran quan intentin la pregunta. Podeu fer-ho servir crear una expressió amb capses en blanc que l'estudiant ha d'omplir.",
+		"quizzes_studio_home_initial_content_description_graphic": "Aquest és l'estat inicial de l'editor gràfic que els vostres estudiants veuran quan intentin la pregunta. Podeu modificar la barra d'eines que veuran a les opcions d'entrada.",
+		"quizzes_studio_home_initial_content_description_text": "Aquest és l'estat inicial de la capsa de text que els vostres estudiants veuran quan intentin la pregunta. Aquest tipus de resposta no s'avalua matemàticament.",
+				
+		"quizzes_studio_home_product_message_header_label": "Esteu fent servir WirisQuizzes 4.5!",
+		"quizzes_studio_home_product_message_text_label": "Aquesta versió inclou una renovació del WirisQuizzes Studio i millores de rendiment. També hem afegit una nova opció d'entrada - ara pots fixar el contingut inicial perquè l'estudiant només pugui editar els espais en blanc!",
+		"quizzes_studio_home_product_message_release_notes_link": "Visiteu la llista dels canvis i millores.",		
+
+		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Contingut inicial",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Bloqueja el contingut initial",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "No permetis que l'estudiant modifiqui el contingut inicial fora de les caixes blanques d'aquest. Si aquesta opció està activada, l'estudiant només podrar entrar text i fórmules als blancs que hi hagi al contingut inicial. "
 	}
 }
 

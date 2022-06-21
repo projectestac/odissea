@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accountexists'] = 'Já existe neste site utilizador com esse nome de utilizador. Se esta for a sua conta, autentique-se digitando o seu nome de utilizador e senha e adicione-o como um acesso vinculado na sua página de preferências.';
+$string['accountexists'] = 'Já existe neste site um utilizador com este nome de utilizador. Se esta for a sua conta, autentique-se com o seu nome de utilizador e senha e adicione-o como um acesso vinculado na sua página de preferências.';
 $string['alreadylinked'] = 'Essa conta externa já está vinculada a uma conta neste site';
 $string['auth_oauth2description'] = 'Autenticação baseada nos padrões OAuth 2';
 $string['auth_oauth2settings'] = 'Configurações da autenticação OAuth 2';
@@ -75,7 +75,7 @@ $string['emailpasswordchangeinfo'] = 'Olá {$a->firstname},
 
 Solicitou uma nova senha para a sua conta em \'{$a->sitename}\'.
 
-No entanto, a sua senha não pode ser redefinida porque está a usar a sua conta em outro site para se autenticar.
+No entanto, a sua senha não pode ser redefinida porque está a usar a sua conta noutro site para se autenticar.
 
 Por favor, autentique-se usando a hiperligação na página de autenticação.
 {$a->admin}';

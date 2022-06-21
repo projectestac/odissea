@@ -33,9 +33,6 @@ require_once $CFG->dirroot . '/report/coursequotas/constants.php';
 
 admin_externalpage_setup('filemanager', '', null, '', ['pagelayout' => 'report']);
 
-$PAGE->requires->jquery();
-$PAGE->requires->jquery_plugin('ui');
-
 echo $OUTPUT->header();
 echo $OUTPUT->heading(get_string('filemanager', REPORT_COMPONENTNAME), 3);
 

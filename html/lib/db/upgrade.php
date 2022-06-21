@@ -2682,5 +2682,43 @@ function xmldb_main_upgrade($oldversion) {
         upgrade_main_savepoint(true, 2021051700.05);
     }
 
+    if ($oldversion < 2021051706.12) {
+        // Social custom fields could had been created linked to category id = 1. Let's check category 1 exists.
+        if (!$DB->get_record('user_info_category', ['id' => 1])) {
+            // Let's check if we have any custom field linked to category id = 1.
+            $fields = $DB->get_records('user_info_field', ['categoryid' => 1]);
+            if (!empty($fields)) {
+                $categoryid = $DB->get_field_sql('SELECT min(id) from {user_info_category}');
+                foreach ($fields as $field) {
+                    $field->categoryid = $categoryid;
+                    $DB->update_record('user_info_field', $field);
+                }
+            }
+        }
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2021051706.12);
+    }
+
+    if ($oldversion < 2021051707.05) {
+
+        // Changing precision of field hidden on table grade_categories to (10).
+        $table = new xmldb_table('grade_categories');
+        $field = new xmldb_field('hidden', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0', 'timemodified');
+
+        // Launch change of precision for field hidden.
+        $dbman->change_field_precision($table, $field);
+
+        // Changing precision of field hidden on table grade_categories_history to (10).
+        $table = new xmldb_table('grade_categories_history');
+        $field = new xmldb_field('hidden', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0', 'aggregatesubcats');
+
+        // Launch change of precision for field hidden.
+        $dbman->change_field_precision($table, $field);
+
+        // Main savepoint reached.
+        upgrade_main_savepoint(true, 2021051707.05);
+    }
+
     return true;
 }

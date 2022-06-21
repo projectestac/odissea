@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actionsforgraderinterface'] = 'Acties voor de beoordeel-interface';
 $string['actionsforpost'] = 'Acties voor bericht';
-$string['activitydate:due'] = 'Tegen:';
+$string['activitydate:due'] = 'Sluit op:';
 $string['activityoverview'] = 'Er zijn nieuwe forumberichten';
 $string['addanewdiscussion'] = 'Voeg een nieuw discussieonderwerp toe';
 $string['addanewquestion'] = 'Voeg een nieuwe vraag toe';
@@ -250,9 +250,11 @@ $string['emaildigesttype_help'] = 'Het type melding dat je zult krijgen voor elk
 * Samenvattende e-mail - enkel onderwerpen - je krijgt één samenvattende e-mail per dag met daarin enkel het onderwerp van elk forumbericht.';
 $string['emptymessage'] = 'Er was iets mis met je bericht. Misschien heb je het leeg gelaten of was de bijlage te groot. Je wijzigingen zijn NIET bewaard.';
 $string['errorcannotlock'] = 'Je bent niet gemachtigd om discussies te sluiten.';
+$string['errordiscussionnotfound'] = 'De discussie kon niet gevonden worden';
 $string['erroremptymessage'] = 'Bericht kan niet leeg zijn';
 $string['erroremptysubject'] = 'Onderwerp kan niet leeg zijn';
 $string['errorenrolmentrequired'] = 'Je moet aangemeld zijn in deze cursus om de inhoud te zien';
+$string['errorforumnotfound'] = 'Het forum waar deze discussie bij hoort, kan niet gevonden worden';
 $string['errorwhiledelete'] = 'Er is een fout opgetreden bij het verwijderen van een record';
 $string['eventassessableuploaded'] = 'Er is inhoud gepost';
 $string['eventcoursesearched'] = 'Cursus doorzocht';
@@ -756,9 +758,9 @@ $string['trackingoff'] = 'Uit';
 $string['trackingon'] = 'Verplicht';
 $string['trackingoptional'] = 'Optioneel';
 $string['trackingtype'] = 'Lezen van dit forum opvolgen';
-$string['trackingtype_help'] = 'Als \'Volgen forum\' is ingeschakeld, dan kunnen gebruikers makkelijk zien welke berichten ze gelezen hebben en welke berichten niet door het oplichten van nieuwe berichten.
+$string['trackingtype_help'] = 'Als \'Volgen forum\' is ingeschakeld, dan kunnen gebruikers makkelijk zien welke berichten ze niet gelezen hebben door het markeren van nieuwe berichten.
 
-Indien deze instelling als optioneel is gezet, dan kunnen deelnemers het volgen inschakelen of uitschakelen via een link in het beheerblok. (Gebruikers moeten ook forum volgen inschakelen in hun forum voorkeuren.)
+Indien deze instelling als optioneel is gezet, dan kunnen deelnemers het volgen inschakelen of uitschakelen. (Gebruikers moeten ook forum volgen inschakelen in hun forum voorkeuren.)
 
 Als \'Forum opvolgen verplicht\' ingeschakeld is in het site-beheer, dan is er nog een optie mogelijk - verplicht. Dit betekent dat het opvolgen altijd aan is, ongeacht de forumvoorkeuren van de gebruiker.';
 $string['trackreadposts_header'] = 'Forum opvolgen';

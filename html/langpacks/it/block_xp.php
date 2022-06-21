@@ -34,7 +34,7 @@ $string['additionalresources'] = 'Risorse aggiuntive';
 $string['addoninstallationerror'] = 'E\' stato rilevato un problema con l\'addon (local_xp), non sembra sia stato installato correttamente. Un amministratore dovrebbe completare l\'installazione.';
 $string['addrulesformhelp'] = 'L\'ultima colonna definisce la quantità di punti esperienza ottenuti quando un criterio è soddisfatto.';
 $string['admindefaultrulesintro'] = 'Le seguenti regole verranno utilizzate come default nei corsi dove il blocco è stato aggiunto.';
-$string['admindefaultsettingsintro'] = 'Le seguenti impostazioni verranno utilizzate come default nei corsi dove il blocco verrà aggiunto.';
+$string['admindefaultsettingsintro'] = 'Le seguenti impostazioni verranno utilizzate come default nei corsi dove il blocco verrà aggiunto. Alcune impostazioni possono essere bloccate, e in tal caso i loro valori saranno forzatamente utilizzati in tutte le istanze del blocco.';
 $string['admindefaultvisualsintro'] = 'Le seguenti impostazioni verranno utilizzate come default nei corsi dove il blocco verrà aggiunto.';
 $string['anonymity'] = 'Anonimato';
 $string['anonymity_help'] = 'Questa impostazione controlla se i partecipanti possono visualizzare i nomi o gli avatar degli altri.';
@@ -88,7 +88,9 @@ $string['displayrelativerank'] = 'Visualizza posizione relativa';
 $string['documentation'] = 'Documentazione';
 $string['editinstructions'] = 'Modifica le informazioni';
 $string['enablecheatguard'] = 'Attiva il controllo degli imbrogli';
-$string['enablecheatguard_help'] = 'Il controllo degli imbrogli consente di avere un semplice meccanismo di prevenzione di abusi del sistema da parte degli studenti, come il refresh continuo della stessa pagina o la ripetizione continua della stessa azione.';
+$string['enablecheatguard_help'] = 'Il controllo degli imbrogli consente di avere un semplice meccanismo di prevenzione di abusi del sistema da parte degli studenti, come il refresh continuo della stessa pagina o la ripetizione continua della stessa azione.
+
+[Maggiori informazioni](https://levelup.plus/docs/article/level-up-cheat-guard?ref=blockxp_help)';
 $string['enableinfos'] = 'Abilita la pagina delle informazioni';
 $string['enableinfos_help'] = 'Selezionando \'No\', gli studenti non visualizzeranno la pagina delle informazioni.';
 $string['enableladder'] = 'Abilita classifica';
@@ -295,15 +297,78 @@ $string['send'] = 'Invia';
 $string['setpoints'] = 'Imposta punti';
 $string['shortcode:xpbadge'] = 'Il badge che corrisponde al livello dell\'utente attuale.';
 $string['shortcode:xpiflevel'] = 'Visualizza il contenuto nel momento in cui il livello dell\'utente corrisponde.';
+$string['shortcode:xpiflevel_help'] = 'Fare riferimento agli esempi sottostanti per l\'utilizzo degli shortcode. Quando un livello è specificato direttamente, il contenuto sarà visualizzato a prescindere dalle altre regole.
+Le regole _maggiore di_ e _minore di_ devono risultare tutte verificate per mostrare il contenuto. Fare quindi attenzione perché si potrebbe avere casi in cui il contenuto non è mai visualizzato!
+Notare che i docenti, o altri utenti con autorizzazioni di modifica, vedranno sempre tutto.
+
+```
+[xpiflevel 1 3 5]
+    Visualizzato se il livello utente è esattamente 1, 3 o 5.
+[/xpiflevel]
+
+[xpiflevel >3]
+    Visualizzato se il livello utente è maggiore di 3.
+[/xpiflevel]
+
+[xpiflevel >=3]
+    Visualizzato se il livello utente è maggiore o uguale a 3.
+[/xpiflevel]
+
+[xpiflevel >=10 <20 30]
+    Visualizzato se il livello utente è maggiore o uguale a 10 E se è strettamente minore di 20
+    O esattamente uguale a 30.
+[/xpiflevel]
+
+[xpiflevel <=10 >=20]
+    Mai visualizzato perché il livello utente non può mai essere minore o uguale a 10 E
+    maggiore o uguale a 20.
+[/xpiflevel]
+```
+
+Notare che questi shortcode non possono essere utilizzati innestati.';
 $string['shortcode:xpladder'] = 'Desideri una parte della classifica.';
+$string['shortcode:xpladder_help'] = 'Di base, è visualizzata solo una porzione della classifica intorno alla posizione dell\'utente.
+
+```
+[xpladder]
+```
+
+Per visualizzare i primi 10 studenti invece dei vicini dell\'utente corrente, impostare il parametro `top`. Si può opzionalmente impostare il numero di utenti da visualizzare.
+```
+[xpladder top]
+[xpladder top=15]
+```
+
+Un collegamento alla classifica completa viene normalmente visualizzato sotto la tabella. Se non si vuole mostrare, aggiungere il parametro `hidelink`.
+
+```
+[xpladder hidelink]
+```
+
+Di base, la tabella non include la colonna dei progressi, che mostra una barra di avanzamento. Se questa colonna è stata selezionata tra le colonne aggiuntive nelle impostazioni della classifica, si può usare il parametro `withprogress` per visualizzala.
+
+```
+[xpladder withprogress]
+```
+
+Notare che quando in un corso si usano i gruppi, la classifica ipotizzerà quale gruppo visualizzare.';
 $string['shortcode:xplevelname'] = 'Visualizza il nome del livello.';
+$string['shortcode:xplevelname_help'] = 'Di base il tag visualizza il nome del livello corrente dell\'utente.
+In alternativa, si può usare il parametro `level` per visualizzare il nome di uno specifico livello.
+
+```
+[xplevelname]
+[xplevelname level=5]
+```
+
+Se il parametro `level` è impostata ma il livello non esiste, non viene visualizzato nulla.';
 $string['shortcode:xpprogressbar'] = 'La barra di avanzamento dell\'utente verso il prossimo livello.';
 $string['someoneelse'] = 'Qualcun altro';
 $string['somethinghappened'] = 'E\' successo qualcosa';
 $string['taskcollectionloggerpurge'] = 'Elimina i log della raccolta';
 $string['thankyou'] = 'Grazie!';
 $string['timebetweensameactions'] = 'Tempo richiesto tra due azioni identiche';
-$string['timebetweensameactions_help'] = 'Il tempo minimo, in secondi, richiesto tra due azioni identiche. Un\'azione è considerata identica se è svolta nello stesso contesto ed oggetto, leggere uno stesso messaggio nei forum più di una volta sarà considerata un\'azione identica.';
+$string['timebetweensameactions_help'] = 'Il tempo minimo, in secondi, richiesto tra due azioni identiche. Un\'azione è considerata identica se è svolta nello stesso contesto e oggetto, leggere uno stesso messaggio nei forum più di una volta sarà considerata un\'azione identica. Quando questo valore è vuoto o zero, non si applica.';
 $string['timeformaxactions'] = 'Intervallo di tempo per numero massimo di azioni';
 $string['timeformaxactions_help'] = 'L\'intervallo di tempo (in secondi) durante il quale l\'utente non dovrebbe eccedere il numero massimo di azioni svolte.';
 $string['tinytimedays'] = '{$a}g';

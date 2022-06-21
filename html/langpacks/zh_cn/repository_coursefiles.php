@@ -31,4 +31,5 @@ $string['emptyfilelist'] = '没有可显示的文件';
 $string['notitle'] = '无标题';
 $string['pluginname'] = '旧版Moodle的课程文件';
 $string['pluginname_help'] = '旧版Moodle的课程文件';
+$string['privacy:metadata'] = '过去的课程文件存储库插件不存储或传输任何个人数据。';
 $string['remember'] = '记住我';

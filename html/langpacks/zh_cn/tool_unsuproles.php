@@ -30,3 +30,4 @@ $string['contextlevel'] = '场景级别';
 $string['count'] = '总数';
 $string['noprolbems'] = '没有不支持的角色分配。';
 $string['pluginname'] = '不支持的角色分配';
+$string['privacy:metadata'] = '不支持的角色分配插件不存储任何个人数据。';

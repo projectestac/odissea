@@ -6,6 +6,21 @@ class com_wiris_quizzes_wrap_AuthorAnswerWrap implements com_wiris_quizzes_api_A
 		$this->authorAnswer = $authorAnswer;
 		$this->wrapper = com_wiris_system_CallWrapper::getInstance();
 	}}
+	public function copy($model) {
+		try {
+			$this->wrapper->start();
+			$r = $this->authorAnswer->copy($model);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function serialize() {
 		try {
 			$this->wrapper->start();

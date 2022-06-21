@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['name'] = '公历';
 $string['pluginname'] = '公历';
+$string['privacy:metadata'] = '公历格式插件不存储任何个人数据。';

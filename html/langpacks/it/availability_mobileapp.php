@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['description'] = 'Criterio di accesso basato sull\'accesso tramite App mobile.';
 $string['label_access'] = 'Tipo di accesso:';
 $string['pluginname'] = 'Condizioni di accesso da App mobile';
+$string['privacy:metadata'] = 'Restrizione di Mobile app non salva le informazioni personali';
 $string['requires_app'] = 'Accesso da App mobile';
 $string['requires_notapp'] = 'Accesso NON da App mobile';
 $string['title'] = 'App Mobile';

@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['enabledock'] = '允许用户停靠此版块';
 $string['pluginname'] = '系统管理';
+$string['privacy:metadata'] = '“管理”板块仅显示存储在其他位置的数据。';
 $string['settings:addinstance'] = '新增管理版块';
 $string['settings:myaddinstance'] = '在个人主页新增一个管理版块';

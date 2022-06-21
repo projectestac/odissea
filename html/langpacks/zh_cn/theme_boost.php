@@ -51,3 +51,4 @@ $string['rawscss_desc'] = '在此处提供 SCSS 或 CSS 代码，代码将被添
 $string['rawscsspre'] = '原始初始SCSS';
 $string['rawscsspre_desc'] = '可在此处提供初始化 SCSS 代码，代码将被添加到最开始。绝大多数情况下主要用于定义变量。';
 $string['region-side-pre'] = '右侧';
+$string['totop'] = '回到顶部';

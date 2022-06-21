@@ -127,6 +127,7 @@ $string['review_on_completion'] = 'Deltagare kan granska egna försök';
 $string['review_user_attempts'] = 'Visa användarförsök ({$a})';
 $string['score'] = 'Poäng';
 $string['score_out_of'] = '{$a->rawscore} av {$a->maxscore}';
+$string['search:activity'] = 'H5P - Aktivitetsinformation';
 $string['startdate'] = 'Startdatum';
 $string['statement_received'] = 'xAPI-uttryck mottaget';
 $string['totalscore'] = 'Totalpoäng';

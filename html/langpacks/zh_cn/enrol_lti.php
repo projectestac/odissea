@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowframeembedding'] = '注意:建议启用站点管理设置“允许框架嵌入”，以便工具显示在框架中，而不是显示在新窗口中。';
 $string['authltimustbeenabled'] = '注意:这个插件也需要启用LTI身份验证插件。';
+$string['cartridgeurl'] = 'Cartridge URL';
 $string['couldnotestablishproxy'] = '无法与使用者建立代理关系。';
 $string['enrolenddate'] = '结束日期';
 $string['enrolenddate_help'] = '如果启用，用户只能访问到此日期。';

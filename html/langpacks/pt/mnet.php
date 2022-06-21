@@ -268,6 +268,6 @@ Este pacote de dados não parece ter a sua assinatura.';
 $string['version'] = 'versão';
 $string['warning'] = 'Aviso';
 $string['wrong-ip'] = 'O seu endereço de IP não coincide com o endereço registado.';
-$string['xmlrpc-missing'] = 'A extensão XML-RPC do PHP tem que estar instalada para poder usar esta funcionalidade.';
+$string['xmlrpc-missing'] = 'A extensão XML-RPC do PHP tem de estar instalada para poder usar esta funcionalidade.';
 $string['yourhost'] = 'O seu servidor';
 $string['yourpeers'] = 'Os seus pares';

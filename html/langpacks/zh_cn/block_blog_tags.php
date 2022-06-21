@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['blog_tags:addinstance'] = '新增一个博客标签版块';
 $string['configtitle'] = '博客分类的版块名称';
 $string['pluginname'] = '博客标签';
+$string['privacy:metadata'] = '”博客标记“板块仅显示存储在其他位置的数据。';

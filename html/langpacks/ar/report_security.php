@@ -90,7 +90,7 @@ $string['check_passwordpolicy_details'] = '<p>من الموصى به وضع سي
 $string['check_passwordpolicy_error'] = 'سياسة كلمة المرور غير مُعدة.';
 $string['check_passwordpolicy_name'] = 'سياسة كلمة المرور';
 $string['check_passwordpolicy_ok'] = 'سياسة كلمة المرور مُمَكَّنة.';
-$string['check_preventexecpath_details'] = '<p>السماح بوضع المسارات القابلة للتنفيذ عبر واجهة المشرف هو توجه نحو تصعيد الامتيازات. ينبغي فرض ذلك في الملف config.php:</p><p><code>$CFG->preventexecpath = true;<code></p>';
+$string['check_preventexecpath_details'] = '<p>السماح بتعيين المسارات القابلة للتنفيذ عبر واجهة المشرف هو توجه نحو تصعيد الامتيازات. ينبغي فرض ذلك في الملف config.php:</p><p><code>$CFG->preventexecpath = true;<code></p>';
 $string['check_preventexecpath_name'] = 'المسارات القابلة للتنفيذ';
 $string['check_preventexecpath_ok'] = 'المسارات القابلة للتنفيذ يمكن إعدادها حصراً في config.php.';
 $string['check_preventexecpath_warning'] = 'يمكن ضبط المسارات القابلة للتنفيذ في واجهة المحاورة الرسومية للمشرف.';

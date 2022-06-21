@@ -31,8 +31,6 @@ use core_privacy\local\request\deletion_criteria;
 use core_privacy\local\request\helper;
 use core_privacy\local\request\writer;
 
-defined('MOODLE_INTERNAL') || die();
-
 class provider implements
     // This plugin stores personal data.
     \core_privacy\local\metadata\provider,

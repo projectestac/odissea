@@ -28,30 +28,48 @@ defined('MOODLE_INTERNAL') || die();
 $string['addsection'] = 'Abschnitt hinzufügen';
 $string['arrow'] = 'Pfeil abgerundet';
 $string['bulb'] = 'Glühbirne';
+$string['cachedef_activitymodulecountcache'] = 'Speichert die Anzahl der Teilnehmer/innen, die auf ein bestimmtes Modul in einem bestimmten Kurs zugreifen können.';
+$string['cachedef_activitystudentrolescache'] = 'Speichert die Rollen der Teilnehmer/innen';
+$string['cachedef_activitystudentscache'] = 'Speichert die IDs der Teilnehmer/innen für einen bestimmten Kurs';
+$string['cachedef_activityusercreatedcache'] = 'Speichert die IDs der neuen Nutzer/innen für einen bestimmten Kurs';
+$string['cannotgetactivitycacheslock'] = 'Die Sperre der Aktivitäts-Caches für die Kurs-ID {$a} kann nicht abgerufen werden.';
 $string['center'] = 'Zentriert';
 $string['cloud'] = 'Wolke';
-$string['colourrule'] = 'Geben Sie eine gültige RGB-Farbe ein (z.B. #336699).';
+$string['colourrule'] = 'Geben Sie bitte eine gültige RGB-Farbe (z.B. #336699) oder \'-\' für Standard ein.';
 $string['columnhorizontal'] = 'Waagerecht';
 $string['columnvertical'] = 'Senkrecht';
 $string['configurationheadingsub'] = 'Konfiguration';
 $string['configurationheadingsubdesc'] = 'Konfigurationseinstellungen';
-$string['coursesectionactivityfurtherinformation'] = 'Weitere Informationen der Kursseite';
-$string['coursesectionactivityfurtherinformationassign'] = 'Aufgaben-Informationen anzeigen';
-$string['coursesectionactivityfurtherinformationassigndesc'] = 'Aufgaben-Informationen anzeigen, z.B. Fälligkeitsdatum, Abgabestatus. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['coursesectionactivityfurtherinformationchoice'] = 'Abstimmungs-Informationen anzeigen';
-$string['coursesectionactivityfurtherinformationchoicedesc'] = 'Abstimmungs-Informationen anzeigen, z.B. Abgabestatus. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['coursesectionactivityfurtherinformationdata'] = 'Datenbank-Informationen anzeigen';
-$string['coursesectionactivityfurtherinformationdatadesc'] = 'Datenbank-Informationen anzeigen, z.B. Abgabestatus. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['coursesectionactivityfurtherinformationfeedback'] = 'Feedback-Informationen anzeigen';
-$string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'Feedback-Informationen anzeigen, z.B. Abgabestatus. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['coursesectionactivityfurtherinformationlesson'] = 'Lektionen-Informationen anzeigen';
-$string['coursesectionactivityfurtherinformationlessondesc'] = 'Lektionen-Informationen anzeigen, z.B. Abgabestatus. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['coursesectionactivityfurtherinformationquiz'] = 'Test-Informationen anzeigen';
-$string['coursesectionactivityfurtherinformationquizdesc'] = 'Test-Informationen anzeigen, z.B. Abgabestatus. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
+$string['courseadditionalmoddatamaxstudents'] = 'Legen Sie die maximale Anzahl von Teilnehmer/innen in einem Kurs fest, für die "Zusätzliche Infos anzeigen" gelten soll';
+$string['courseadditionalmoddatamaxstudentsdesc'] = 'Die Berechnung zusätzlicher Infos kann einige Zeit dauern, besonders bei großen Kursen. Daher können Sie hier die maximale Anzahl von Teilnehmer/innen festlegen, die ein Kurs haben kann, damit die Funktionalität in diesem Kurs angezeigt wird. Oberhalb dieses Wertes werden die \'Zusätzlichen Infos\' unabhängig von den Kurseinstellungen NICHT berechnet oder angezeigt! Ein Wert von \'0\' bedeutet \'unbegrenzt\'. Hinweis: Löscht die Cache-Caches, wenn sie geändert werden.';
+$string['courseadditionalmoddatastudentsinfo'] = 'Status für zusätzliche Infos';
+$string['courseadditionalmoddatastudentsinfolimitednoshow'] = 'Zusätzliche Infos werden für die aktivierten Aktivitäten für {$a->students} Teilnehmer/innen NICHT angezeigt, da die maximale Anzahl {$a->maxstudents} überschritten ist, die administrativ in der Einstellung "courseadditionalmoddatamaxstudents" Für das Format "komprimierte Abschnitte" festgelegt wurde.';
+$string['courseadditionalmoddatastudentsinfolimitedshow'] = 'Zusätzliche Infos werden für die aktivierten Aktivitäten für {$a->students} Teilnehmer/innen angezeigt, da maximale Anzahl {$a->maxstudents} nicht überschritten ist, die administrativ in der Einstellung "courseadditionalmoddatamaxstudents" Für das Format "komprimierte Abschnitte" festgelegt wurde.';
+$string['courseadditionalmoddatastudentsinfounlimited'] = 'Zusätzliche Infos werden für die aktivierten Aktivitäten für {$a} Teilnehmer/innen  angezeigt.';
+$string['coursesectionactivityfurtherinformation'] = 'Weitere Infos der Kursseite';
+$string['coursesectionactivityfurtherinformationassign'] = 'Aufgabeninfos anzeigen';
+$string['coursesectionactivityfurtherinformationassigndesc'] = 'Im Kurs anzuzeigende Aufgabeninfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
+$string['coursesectionactivityfurtherinformationchoice'] = 'Abstimmungsinfos anzeigen';
+$string['coursesectionactivityfurtherinformationchoicedesc'] = 'Im Kurs anzuzeigende Abstimmungsinfos festlegen.  Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
+$string['coursesectionactivityfurtherinformationdata'] = 'Datenbankinfos anzeigen';
+$string['coursesectionactivityfurtherinformationdatadesc'] = 'Im Kurs anzuzeigende Datenbankinfos festlegen.  Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
+$string['coursesectionactivityfurtherinformationfeedback'] = 'Feedbackinfos anzeigen';
+$string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'Im Kurs anzuzeigende Feedbackinfos festlegen.  Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
+$string['coursesectionactivityfurtherinformationforum'] = 'Foreninfo anzeigen';
+$string['coursesectionactivityfurtherinformationforumdesc'] = 'Im Kurs anzuzeigende Foreninfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Beiträge anzeigt, wenn die Bewertung des gesamten Forums aktiviert ist.';
+$string['coursesectionactivityfurtherinformationlesson'] = 'Lektionsinfos anzeigen';
+$string['coursesectionactivityfurtherinformationlessondesc'] = 'Im Kurs anzuzeigende Lektionsinfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
+$string['coursesectionactivityfurtherinformationquiz'] = 'Testinfos anzeigen';
+$string['coursesectionactivityfurtherinformationquizdesc'] = 'Im Kurs anzuzeigende Testinfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
 $string['creatingsection'] = 'Neuer Abschnitt wird erstellt ...';
 $string['ctreset'] = 'Rücksetzoptionen für komprimierte Abschnitte';
 $string['ctreset_help'] = 'Die Einstellungen können auf die Standardwerte für komprimierte Abschnitte zurückgesetzt werden.';
 $string['currentsection'] = 'Dieser Abschnitt';
+$string['default'] = 'Standardmäßig - {$a}';
+$string['defaultdisplayblocks'] = 'Blöcke zum Anzeigen';
+$string['defaultdisplayblocks_desc'] = 'Wählen Sie die Blöcke aus, die im Kurs angezeigt werden sollen, wenn er zum ersten Mal erstellt wird und dieses Format ausgewählt ist. Verwenden Sie die \'Strg\'-Taste in Kombination mit der Maus, um mehr als eine oder keine auszuwählen. Hinweis: Diese Einstellung gilt nur bei der eigentlichen Kurserstellung und zu keinem anderen Zeitpunkt, d.h. beim Wechsel zu reduzierten Themen von einem anderen Format.';
+$string['defaultdisplayblocksloc'] = 'Ort für den Block in der Anzeige';
+$string['defaultdisplayblocksloc_desc'] = 'Wählen Sie den Ort für die ausgewählten Blöcke, um sie anzuzeigen, vor oder nach Seite.';
 $string['defaultdisplayinstructions'] = 'Bedienhinweis';
 $string['defaultdisplayinstructions_desc'] = 'Diese Option legt fest, ob ein kurzer Hinweis zur Bedienung angezeigt wird.';
 $string['defaultheadingsub'] = 'Standardeinstellungen';
@@ -61,12 +79,33 @@ $string['defaultlayoutcolumnorientation_desc'] = 'Die Spaltenrichtung kann senkr
 $string['defaultlayoutcolumns'] = 'Spaltenanzahl';
 $string['defaultlayoutcolumns_desc'] = 'Die Spaltenanzahl kann von 1 bis 4 sein.';
 $string['defaultlayoutelement'] = 'Inhalt der Abschnittstasten';
-$string['defaultlayoutelement_desc'] = 'Diese Option legt den Inhalt und das Layout der Abschnittstasten fest.';
-$string['defaultlayoutelement_descpositive'] = 'Diese Option legt den Inhalt und das Layout der Abschnittstasten fest.';
+$string['defaultlayoutelement_desc'] = 'Die Layouteinstellung kann eine der folgenden sein:
+<br />\'Standard\', wobei alles angezeigt wird.
+<br />Kein \'Thema x\' / \'Woche x\' / \'Tag x\'.
+<br />Keine Abschnittsnummer.
+<br / >Kein \'Thema x\' / \'Woche x\' / \'Tag x\' und keine Abschnittsnummer.
+<br />Kein \'Umschalten\'-Wort.
+<br />Kein \'Umschalten\' und kein \'Thema x\' / \'Woche x \' / \'Tag x\'.
+<br />Kein \'Umschalten\', kein \'Thema x\' / \'Woche x\' / \'Tag x\' und keine Abschnittsnummer.';
+$string['defaultlayoutelement_descpositive'] = 'Die Layouteinstellung kann eine der folgenden sein:
+<br />\'Umschalten\', \'Thema x\' / \'Woche x\' / \'Tag x\' und Abschnittsnummer.
+<br />\'Umschalten\' und \'Thema x\' / \'Woche x\' / \'Tag x\'.
+<br />\'Umschalten\' und Abschnittsnummer.
+<br />\'Thema x\' / \'Woche x\' / \'Tag x\' und Abschnittsnummer.
+<br />\'Umschalten‘-Wort.
+<br />\'Thema x\' / \'Woche x\' / \'Tag x\'.
+<br />Abschnittsnummer.
+<br />Ohne Zusätze.';
 $string['defaultlayoutstructure'] = 'Abschnittsformat';
-$string['defaultlayoutstructure_desc'] = 'Diese Option legt fest, in welchem Abschnittsformat der Kurs angezeigt wird.';
+$string['defaultlayoutstructure_desc'] = 'Die Struktureinstellung kann eine der folgenden sein:
+<br />Thema
+<br />Woche
+<br />Neueste Woche zuerst
+<br />Aktuelles Thema zuerst<br />Tag';
 $string['defaultonesection'] = 'Ein Abschnitt';
-$string['defaultonesection_desc'] = 'Diese Option legt fest, dass immer nur genau ein Abschnitt zur gleichen Zeit angezeigt werden soll. (Während der Kurs bearbeitet wird, wird diese Einstellung ignoriert, um Drag&Drop zu ermöglichen.)';
+$string['defaultonesection_desc'] = 'Diese Option legt fest, dass immer nur genau ein Abschnitt zur gleichen Zeit angezeigt werden soll. Während der Kurs bearbeitet wird, wird diese Einstellung ignoriert, um Drag&Drop zu ermöglichen.';
+$string['defaultshowadditionalmoddata'] = 'Standardmäßiges \'Weitere Infos anzeigen\' im Kurs';
+$string['defaultshowadditionalmoddatadesc'] = 'Wenn eine Aktivität auf Website-Ebene (unten) so eingestellt ist, dass zusätzliche Infos angezeigt werden, gibt diese Einstellung den Standardstatus der kursspezifischen Instanz davon an.';
 $string['defaultshowsectionsummary'] = 'Abschnittsbeschreibung anzeigen';
 $string['defaultshowsectionsummary_desc'] = 'Diese Option legt fest, ob die Abschnittsbeschreibungen angezeigt werden, auch wenn die Abschnitte eingeklappt sind.';
 $string['defaulttgbgcolour'] = 'Hintergrundfarbe';
@@ -99,17 +138,14 @@ $string['defaulttoggleborderradiustl'] = 'Radius links oben';
 $string['defaulttoggleborderradiustl_desc'] = 'Die Option legt die Rundung der Abschnittstasten links oben fest.';
 $string['defaulttoggleborderradiustr'] = 'Radius rechts oben';
 $string['defaulttoggleborderradiustr_desc'] = 'Die Option legt die Rundung der Abschnittstasten rechts oben fest.';
-$string['defaulttoggleiconposition'] = 'Symbolposition';
-$string['defaulttoggleiconposition_desc'] = 'Standardeinstellung für die Position des Umschalticons. Darstellung ist  links oder rechts vom Text möglich.';
+$string['defaulttoggleiconposition'] = 'Icon Position';
+$string['defaulttoggleiconposition_desc'] = 'Standardeinstellung für die Position des Umschalticons. Darstellung ist links oder rechts vom Text möglich.';
 $string['defaulttoggleiconset'] = 'Symbol';
 $string['defaulttoggleiconset_desc'] = 'Diese Option legt fest, welches Symbol standardmäßig auf den Abschnittstasten angezeigt wird.';
 $string['defaulttoggleiconsize'] = 'Symbolgröße';
 $string['defaulttoggleiconsize_desc'] = 'Die Symbolgröße kann klein (=16px), mittel (=24px) oder groß (=32px) sein.';
 $string['defaulttogglepersistence'] = 'Schaltzustand merken';
-$string['defaulttogglepersistence_desc'] = 'Diese Option legt fest, ob die Auf- und Zuklappzustände der Abschnitte für alle Nutzer/innen gespeichert werden.
-
-An: Alle nutzerspezifischen Zustände werden gespeichert und bleiben für den nächsten Besuch des Kurses bestehen.
-Aus: Alle nutzerspezifischen Zustände werden gelöscht.';
+$string['defaulttogglepersistence_desc'] = '\'An oder aus\'. Deaktivieren Sie diese Option, um die AJAX-Leistung zu steigern, aber die Umschaltauswahl von Nutzer/innen wird bei einer Seitenaktualisierung oder einem erneuten Besuch nicht gespeichert.<br />Hinweis: Wenn Sie die Persistenz deaktivieren, entfernen Sie bitte alle Zeilen, die \'topcoll_toggle_x\' im Feld \'name\' der Tabelle \'user_preferences\' enthalten. Wobei das "x" in "topcoll_toggle_x" eine Kurs-ID ist. Dies dient der Platzersparnis, wenn Sie nicht beabsichtigen, es wieder einzuschalten.';
 $string['defaultuserpreference'] = 'Schaltzustand beim ersten Aufruf';
 $string['defaultuserpreference_desc'] = 'Diese Option legt fest, ob Nutzer/innen beim ersten Aufruf eines Kurses standardmäßig alle Abschnitte geöffnet oder geschlossen angezeigt bekommen.';
 $string['defaultviewsinglesectionenabled'] = '"Einzelne Abschnitte anzeigen" aktiviert';
@@ -165,7 +201,9 @@ $string['em3_7'] = '3.7em';
 $string['em3_8'] = '3.8em';
 $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
-$string['errornosectioninfo'] = 'Das angegebene Thema hat keine Informationen.';
+$string['enableadditionalmoddata'] = 'Zusätzliche Infos aktivieren';
+$string['enableadditionalmoddatadesc'] = 'Dies ist ein Schalter auf „Website-Ebene“, um die Aktivitätsinfos ein- oder auszuschalten. Es muss aktiviert sein, damit die entsprechenden Einstellungen auf Kursebene wirksam werden. Da diese Funktionalität rechenintensiv sein kann, wird dringend empfohlen, dass Sie vor der Verwendung auf einem Produktionssystem vollständige Tests durchführen. Hinweis: Löscht die Cache-Caches, wenn sie geändert werden.';
+$string['errornosectioninfo'] = 'Das angegebene Thema hat keine Infos.';
 $string['eye'] = 'Auge';
 $string['feedbackavailable'] = 'Feedback verfügbar';
 $string['folder'] = 'Verzeichnis';
@@ -175,7 +213,7 @@ $string['formatsettings'] = 'Standardwerte für das Format';
 $string['formatsettingsinformation'] = '<br />Klicken Sie auf das Symbol rechts, um die Einstellungen auf die Standardwerte zurückzusetzen.';
 $string['four'] = '4';
 $string['groundsignal'] = 'Massesignal';
-$string['hidefromothers'] = 'Abschnitt ausblenden';
+$string['hidefromothers'] = 'Abschnitt verbergen';
 $string['instructions'] = 'Hinweis: Ein Klick auf den Abschnittsnamen blendet den Inhalt ein oder aus.';
 $string['large'] = 'Groß';
 $string['layoutstructuredays'] = 'Tage';
@@ -205,36 +243,40 @@ $string['progresscounter'] = 'Aktivitäten werden dupliziert ({$a->current}/{$a-
 $string['progressfull'] = 'Abschnitt wird dupliziert ....';
 $string['radio'] = 'Radiobutton';
 $string['readme_desc'] = 'In der Datei \'{$a->url}\' finden Sie weitere Informationen zum Kursformat \'komprimierte Abschnitte\'.';
-$string['readme_title'] = 'Weitere Informationen';
+$string['readme_title'] = 'Weitere Infos';
 $string['rebuildcoursecache'] = 'Kurscache neu bauen';
+$string['resetactivitymeta'] = 'Zusätzliche Modulinfo';
+$string['resetactivitymeta_help'] = 'Zusätzliche Modulinfo zurücksetzen, um den Standardwert für die Website einzustellen.';
+$string['resetallactivitymeta'] = 'Alle zusätzlichen Modulinfos';
+$string['resetallactivitymeta_help'] = 'Alle zusätzliche Modulinfos zurücksetzen, um die jeweiligen Standardwerte für die Website einzustellen.';
 $string['resetallcolour'] = 'Farbe';
-$string['resetallcolour_help'] = 'Die Einstellungen für die Farben werden in allen Kursen im Format \'komprimierte Abschnitte\' auf die Standardwerte zurückgesetzt.';
+$string['resetallcolour_help'] = 'Die Einstellungen für Farben und Transparenz werden auf die Standardwerte der Website zurückgesetzt.';
 $string['resetalldisplayinstructions'] = 'Bedienhinweis';
-$string['resetalldisplayinstructions_help'] = 'Die Einstellung für die Anzeige des Bedienhinweises wird in allen Kursen im Format \'komprimierte Abschnitte\' auf die Standardeinstellung zurückgesetzt.';
+$string['resetalldisplayinstructions_help'] = 'Die Einstellung für die Anzeige des Bedienhinweises wird auf die Standardwerte der Website zurückgesetzt.';
 $string['resetallgrp'] = 'Alle zurücksetzen:';
 $string['resetalllayout'] = 'Inhalt';
-$string['resetalllayout_help'] = 'Alle Einstellungen für den Inhalt der Abschnittstasten (Struktur, Spalten, Symbol, Abschnittsbeschreibung) werden in allen Kursen im Format \'komprimierte Abschnitte\' auf die Standardwerte zurückgesetzt.';
+$string['resetalllayout_help'] = 'Alle Einstellungen für Layoutelement, Struktur, Spalten, Umschalten, Einzelabschnitt, Symbolposition, und die angezeigte Abschnittsbeschreibung werden auf die Standardwerte der Website zurückgesetzt.';
 $string['resetalltogglealignment'] = 'Ausrichtung';
-$string['resetalltogglealignment_help'] = 'Die Einstellung für die Ausrichtung des Abschnittstitels wird in allen Kursen im Format \'komprimierte Abschnitte\' auf die Standardeinstellung zurückgesetzt.';
+$string['resetalltogglealignment_help'] = 'Die Einstellung für die Ausrichtung des Abschnittstitels wird auf die Standardwerte der Website zurückgesetzt.';
 $string['resetalltoggleiconset'] = 'Symbol';
-$string['resetalltoggleiconset_help'] = 'Die Einstellungen für das Symbol werden in allen Kursen im Format \'komprimierte Abschnitte\' auf die Standardwerte zurückgesetzt.';
+$string['resetalltoggleiconset_help'] = 'Die Einstellungen für das Symbol werden auf die Standardwerte der Website zurückgesetzt.';
 $string['resetcolour'] = 'Farbe';
-$string['resetcolour_help'] = 'Die Einstellungen für die Farben werden in diesem Kurs auf die Standardwerte zurückgesetzt.';
+$string['resetcolour_help'] = 'Die Einstellungen für Farben und Transparenz werden auf die Standardwerte zurückgesetzt.';
 $string['resetdisplayinstructions'] = 'Bedienhinweis';
-$string['resetdisplayinstructions_help'] = 'Die Einstellung für die Anzeige des Bedienhinweises wird in diesem Kurs auf die Standardeinstellung zurückgesetzt.';
+$string['resetdisplayinstructions_help'] = 'Die Einstellung für die Anzeige des Bedienhinweises wird auf die Standardwerte der Website zurückgesetzt.';
 $string['resetgrp'] = 'Zurücksetzen:';
 $string['resetlayout'] = 'Inhalt';
-$string['resetlayout_help'] = 'Alle Einstellungen für den Inhalt der Abschnittstasten (Struktur, Spalten, Symbol, Abschnittsbeschreibung) werden in diesem Kurse auf die Standardwerte zurückgesetzt.';
+$string['resetlayout_help'] = 'Alle Einstellungen für Layoutelement, Struktur, Spalten, Umschalten, Einzelabschnitt, Symbolposition, und die angezeigte Abschnittsbeschreibung werden auf die Standardwerte der Website zurückgesetzt.';
 $string['resettogglealignment'] = 'Ausrichtung';
-$string['resettogglealignment_help'] = 'Die Einstellung für die Ausrichtung des Abschnittstitels wird in diesem Kurs auf die Standardeinstellung zurückgesetzt.';
+$string['resettogglealignment_help'] = 'Die Einstellung für die Ausrichtung des Abschnittstitels wird auf die Standardwerte der Website zurückgesetzt.';
 $string['resettoggleiconset'] = 'Symbol';
-$string['resettoggleiconset_help'] = 'Die Einstellungen für das Symbol werden in diesem Kurs auf die Standardwerte zurückgesetzt.';
+$string['resettoggleiconset_help'] = 'Die Einstellungen für das Symbol werden auf die Standardwerte der Website zurückgesetzt.';
 $string['right'] = 'Rechts';
 $string['sctcloseall'] = 'Alle {$a} schließen';
 $string['sctopenall'] = 'Alle {$a} öffnen';
 $string['section0name'] = 'Allgemein';
 $string['sectionname'] = 'Abschnitt';
-$string['setcolour'] = 'Farbe festlegen';
+$string['setcolour'] = 'Farbe';
 $string['setcolour_help'] = 'Farbeinstellung für Text, Hintergrund und Hintergrund bei Mauskontakt';
 $string['setlayout'] = 'Layout festlegen';
 $string['setlayout_all'] = 'Anzeigen von Thema/Woche/Tag';
@@ -308,13 +350,18 @@ $string['settoggleiconset'] = 'Symbol';
 $string['settoggleiconset_help'] = 'Auswahl des Symbols';
 $string['setviewsinglesectionenabled'] = '"Einzelne Abschnitte anzeigen" aktiviert';
 $string['setviewsinglesectionenabled_help'] = '"Einzelne Abschnitte anzeigen" ist aktiviert.';
+$string['showadditionalmoddata'] = 'Zusätzliche Infos für {$a} im Kurs anzeigen';
+$string['showadditionalmoddata_help'] = 'Ermöglichen Sie allen Nutzer/innen, die Aktivitätsfrist anzuzeigen, und Trainer/innen, die Anzahl der Aktivitätseinreichungen auf der Kursseite anzuzeigen.';
 $string['showfromothers'] = 'Abschnitt zeigen';
+$string['sidepost'] = 'Nach';
+$string['sidepre'] = 'Vor';
 $string['small'] = 'Klein';
 $string['smiley'] = 'Smiley';
 $string['square'] = 'Quadrat';
 $string['sunmoon'] = 'Sonne / Mond';
 $string['switch'] = 'Schalter';
 $string['three'] = '3';
+$string['topcoll:changeactivitymeta'] = 'Aktivitätsmeta ändern oder zurücksetzen';
 $string['topcoll:changecolour'] = 'Farben der Abschnittstasten ändern';
 $string['topcoll:changelayout'] = 'Inhalt der Abschnittstasten ändern';
 $string['topcoll:changetogglealignment'] = 'Ausrichtung der Abschnittstasten ändern';
@@ -332,6 +379,8 @@ $string['xcontributed'] = '{$a->completed} haben beigetragen';
 $string['xofyanswered'] = '{$a->completed} von {$a->participants} haben beantwortet';
 $string['xofyattempted'] = '{$a->completed} von {$a->participants} haben versucht';
 $string['xofycontributed'] = '{$a->completed} von {$a->participants} haben beigetragen';
+$string['xofyposted'] = '{$a->completed} von {$a->participants} haben gepostet';
 $string['xofysubmitted'] = '{$a->completed} von {$a->participants} haben abgegeben';
+$string['xposted'] = '{$a->completed} haben gepostet';
 $string['xsubmitted'] = '{$a->completed} haben abgegeben';
 $string['xungraded'] = '{$a} unbewertet';

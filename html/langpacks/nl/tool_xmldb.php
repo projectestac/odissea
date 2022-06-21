@@ -179,6 +179,13 @@ $string['persistentfieldsexist'] = 'De volgende velden bestaan al:';
 $string['pluginname'] = 'XMLDB editor';
 $string['primarykeyonlyallownotnullfields'] = 'Primaire sleutel kan niet nul zijn';
 $string['privacy:metadata'] = 'De XMLDB editor-plugin bewaart geen persoonlijke gegevens.';
+$string['reconcile_files'] = 'Zoek naar XMLDB-bestanden die moeten worden afgestemd';
+$string['reconcile_files_intro'] = 'Deze functionaliteit zoekt door de inhoud van alle XMLDB-bestanden om te verifiëren dat ze overeenkomen met de resultaten van het genereren ervan vanuit de XMLDB-editor.
+
+Er wordt een lijst weergegeven met bestanden die moeten worden afgestemd (geregenereerd) en de XMLDB-editor kan worden gebruikt om ze te herstellen.';
+$string['reconcile_files_no'] = 'Alle bestanden zijn in orde. Er is geen afstemming nodig.';
+$string['reconcile_files_yes'] = 'Gevonden bestanden om af te stemmen:';
+$string['reconcilefiles'] = 'XMLDB-bestanden afstemmen';
 $string['reserved'] = 'Gereserveerd';
 $string['reservedwords'] = 'Gereserveerde woorden';
 $string['revert'] = 'Maak ongedaan';

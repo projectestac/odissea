@@ -457,17 +457,6 @@ $string['spaceleft'] = 'espace disponible';
 $string['spacesleft'] = 'espaces disponibles';
 $string['startendtimeknown'] = 'Les dates de début et fin de cours sont connues';
 $string['starttimenotset'] = 'Date de départ non renseignée';
-$string['statuschangebookedmessage'] = 'Bonjour {$a->participant},
-
-Votre statut de réservation a changé. Vous êtes maintenant inscrit sur {$a->title}.
-
-Statut de réservation: {$a->status}
-Participant: {$a->participant}
-Cours: {$a->title}
-Date: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Pour voir tous vos cours réservés cliquez sur le lien suivant: {$a->bookinglink}
-Le lien associé peut être trouvé ici: {$a->courselink}';
-$string['statuschangebookedsubject'] = 'Statut de réservation changé pour {$a->title}';
 $string['statuschangetext'] = 'Message de changement de statut';
 $string['statuschangetext_help'] = 'Laissez ce champ vide pour utiliser le texte par défaut du site. Vous pouvez utiliser les variables suivantes dans le texte:
 <ul>

@@ -25,8 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['apikey'] = 'API密钥';
 $string['configplugin'] = 'YouTube容器配置';
+$string['information'] = '为您的Moodle站点获取一个<a href=”https://developers.google.com/youtube/v3/getting-started“>Google API密钥</a>。';
 $string['pluginname'] = 'Youtube视频';
+$string['privacy:metadata:repository_youtube'] = 'YouTube视频存储库插件不存储任何个人数据，但将用户数据从Moodle传输到远程系统。';
+$string['privacy:metadata:repository_youtube:searchtext'] = 'YouTube视频库的用户搜索文本查询';
 $string['search'] = '搜索视频';
 $string['sortby'] = '排序';
 $string['sortpublished'] = '发布日期';

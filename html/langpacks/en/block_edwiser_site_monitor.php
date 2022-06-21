@@ -42,6 +42,7 @@ $string['cpulowerlimit'] = 'CPU lower limit';
 $string['cpulowerlimit_help'] = 'Lower limit of CPU usage';
 $string['cpuusage'] = 'CPU usage';
 $string['crontask'] = 'Edwiser Site Monitor - Collect 24 hours usage statistics';
+$string['crontaskwarning'] = 'To see 24 hours usage data you need to run cron task for every 5 minutes. Follow this <a target="_blank" href="{$a}">link</a> to setup cron.';
 $string['deletedusers'] = 'Deleted';
 $string['edwiser_site_monitor:addinstance'] = 'Add a new site monitor block';
 $string['edwiser_site_monitor:myaddinstance'] = 'Add a new site monitor to Dashboard';

@@ -25,15 +25,16 @@ Feature: Test creating a Matching Wiris question
     When I click on "Create a new question ..." "button"
     And I choose the question type "Matching - science"
     Then I open Wiris Quizzes Studio
-    And I click on "Define random variables and functions" "text"
+    And I click on "Random variables" "text"
     And I add the variable "a" with value "1"
     And I add the variable "b" with value "2"
     And I add the variable "c" with value "3"
-    And I click on "//*[@id='wrsUI_quizzesStudioHomeSaveButton']" "xpath_element"
+    And I go back in Wiris Quizzes Studio
+    And I save Wiris Quizzes Studio
     Then I set the following fields to these values:
       | Question name                      | match-wiris-001                  |
       | Question text                      | Match the numbers.               |
-      | General feedback                   | One=#a, Two=#b and Three=#3.     |
+      | General feedback                   | One=#a, Two=#b and Three=#c.     |
       | id_subquestions_0                  | One                              |
       | id_subanswers_0                    | #a                               |
       | id_subquestions_1                  | Two                              |

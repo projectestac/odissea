@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Gehitu {no} zuriune aukera gehiagorako';
 $string['answer'] = 'Erantzuna';
+$string['blanknumber'] = '{$a} hutsik';
 $string['choices'] = 'Aukerak';
 $string['choicex'] = '[[{no}]] aukera';
 $string['combinedcontrolnamegapselect'] = 'Zabaltzen den menua';

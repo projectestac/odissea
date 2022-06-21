@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['login:addinstance'] = '添加一个登录版块';
 $string['pluginname'] = '登录';
+$string['privacy:metadata'] = '“登录”板块只提供登录的方式，本身不存储任何数据。';

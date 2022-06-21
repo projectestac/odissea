@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtitle'] = 'العنوان';
 $string['description'] = 'الوصف';
-$string['moderator_guide:viewguidestatus'] = 'معاينة إحصائيات كل إرشادات المساقات';
+$string['moderator_guide:viewguidestatus'] = 'معاينة إحصائيات كل إرشادات المقررات الدراسية';
 $string['name'] = 'الاسم';

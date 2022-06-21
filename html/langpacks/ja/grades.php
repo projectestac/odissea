@@ -181,7 +181,7 @@ $string['editverbose'] = '{$a->category} {$a->itemmodule} {$a->itemname} を編�
 $string['enableajax'] = 'AJAXを有効にする';
 $string['enableajax_help'] = '一般的な操作を単純化および高速化するAJAX機能のレイヤーを評定者レポートに追加します。ユーザのブラウザレベルでJavaScriptが有効にされているかどうかに依存します。';
 $string['enableoutcomes'] = 'アウトカムを有効にする';
-$string['enableoutcomes_help'] = 'この設定を有効にした場合、アウトカム記述に関する１つまたはそれ以上の評価尺度を使用して評定項目を評定することができます。';
+$string['enableoutcomes_help'] = 'この設定を有効にした場合、アウトカム記述に関する１つ以上の評価尺度を使用して評定項目を評定することができます。';
 $string['encoding'] = 'エンコーディング';
 $string['encoding_help'] = 'データの使用する文字エンコーディングを選択してください (標準的なエンコーディングはUTF-8です)。間違って正しくないエンコーディングが選択された場合、インポートデータをプレビューする時点で簡単に確認できます。';
 $string['errorcalculationbroken'] = '恐らく、循環参照または計算式が壊れています。';
@@ -408,7 +408,7 @@ $string['importcsv_help'] = '以下のフォーマットのCSVファイルを使
 
 正しいフォーマットのファイルは最初に評定をエクスポートすることにより取得することができます。そのファイルを編集して、CSVファイルとして保存することができます。';
 $string['importcustom'] = 'カスタムアウトカムとしてインポートする (このコースのみ)';
-$string['importdata'] = '日付';
+$string['importdata'] = 'データ';
 $string['importdata_help'] = '評定はOpenDocumentまたはExcelスプレッドシートから直接貼り付けることができます。
 
 * 少なくとも1つの列にはユーザ名、メールアドレス、IDナンバー等のユーザ識別データを含む必要があります。
@@ -852,7 +852,7 @@ $string['usergrade'] = '評定項目 {$a->gradeidnumber} のユーザ {$a->fulln
 $string['userid'] = 'ユーザID';
 $string['useridnumberwarning'] = 'インポートできないため、IDナンバーのないユーザはエクスポートから除外されます。';
 $string['usermappingerror'] = 'ユーザマッピングエラー: 「 {$a->field} 」が「 {$a->value} 」のユーザを見つけることができませんでした。';
-$string['usermappingerrorcurrentgroup'] = 'ユーザは現在のグループのメンバーではありません。';
+$string['usermappingerrorcurrentgroup'] = 'ユーザは現在のグループのメンバではありません。';
 $string['usermappingerrormultipleusersfound'] = 'ユーザマッピングエラー: 「 {$a->value} 」の {$a->field} に複数のユーザが見つかりました。さらにユニークなマッピングフィールドを使用してください。';
 $string['usermappingerrorusernotfound'] = 'ユーザマッピングエラー: ユーザを見つけることができませんでした。';
 $string['userpreferences'] = 'ユーザプリファレンス';

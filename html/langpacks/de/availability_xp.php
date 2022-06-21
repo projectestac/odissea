@@ -27,9 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Zugriff über den Level einer Person regeln';
 $string['invalidlevel'] = 'Ungültiger Level';
+$string['levelconditionoperator'] = 'Level Bedingungsoperator';
 $string['levelgreaterorequalto'] = 'Level ist größer als oder gleich';
-$string['levelnnotrequiredtoaccess'] = 'Sie haben nicht den Level {$a}.';
-$string['levelnrequiredtoaccess'] = 'Sie haben den Level {$a} oder mehr.';
+$string['levelis'] = 'Level:';
+$string['levelnexactlynotrequiredtoaccess'] = 'Sie sind nicht auf Level {$a}.';
+$string['levelnexactlyrequiredtoaccess'] = 'Sie sind genau auf Level {$a}.';
+$string['levelnnotrequiredtoaccess'] = 'Sie sind nicht auf Level {$a}.';
+$string['levelnrequiredtoaccess'] = 'Sie sind auf Level {$a} oder höher.';
+$string['levelnumber'] = 'Level-Nummer';
+$string['opequalto'] = 'Genau gleich wie';
+$string['opgreaterorequalto'] = 'Größer oder gleich wie';
 $string['pluginname'] = 'Voraussetzung: Level';
 $string['privacy:metadata'] = 'Das Plugin \'Voraussetzung: Level\' speichert keine personenbezogenen Daten.';
 $string['title'] = 'Level';

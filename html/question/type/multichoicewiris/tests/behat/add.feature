@@ -27,7 +27,7 @@ Feature: Test creating a Multiple choice wiris question without template
       | Question name | multichoiceanswer-wiris-001 random name |
       | Question text | This is a multichoice wiris question    |
     And I open Wiris Quizzes Studio
-    And I click on "Define random variables and functions" "text"
+    And I click on "Random variables" "text"
     And I press the left key
     And I type "a"
     And I press the right key
@@ -37,7 +37,8 @@ Feature: Test creating a Multiple choice wiris question without template
     And I type "b"
     And I press the right key
     And I type "-15"
-    And I click on "//*[@id='wrsUI_quizzesStudioHomeSaveButton']" "xpath_element"
+    And I go back in Wiris Quizzes Studio
+    And I save Wiris Quizzes Studio
     Then I set the following fields to these values:
       | Choice 1      | #a   |
       | id_fraction_0 | 100% |

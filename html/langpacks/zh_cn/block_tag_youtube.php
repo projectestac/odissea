@@ -26,8 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = '任何类别';
+$string['apierror'] = '未设置YouTube API密钥。请与管理员联系。';
+$string['apikey'] = 'API密钥';
+$string['apikeyinfo'] = '为您的Moodle站点获取一个<a href=”https://developers.google.com/youtube/v3/getting-started“>Google API密钥</a>。';
 $string['autosvehicles'] = '汽车和交通工具';
 $string['category'] = '类别';
+$string['categoryerror'] = '获取类别列表失败。<br>{$a}';
 $string['comedy'] = '喜剧';
 $string['configtitle'] = '标题';
 $string['education'] = '教育';
@@ -38,10 +42,13 @@ $string['howtodiy'] = '如何做和 DIY';
 $string['includeonlyvideosfromplaylist'] = '仅从播放列表中包括视频';
 $string['music'] = '音乐';
 $string['newspolitics'] = '新闻和政治';
+$string['nonprofitactivism'] = '非营利组织与行动主义';
 $string['numberofvideos'] = '视频数';
 $string['peopleblogs'] = '人和博客';
 $string['petsanimals'] = '宠物和动物';
 $string['pluginname'] = 'Youtube';
+$string['privacy:metadata'] = 'YouTube板块仅显示存储在其他位置的数据。';
+$string['requesterror'] = '无法从服务器获取数据。如果问题仍然存在，请与管理员联系。';
 $string['scienceandtech'] = '科技';
 $string['sports'] = '体育';
 $string['tag_youtube:addinstance'] = '新增 Youtube 版块';

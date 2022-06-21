@@ -47,7 +47,6 @@ $string['before_submission_end_date'] = 'Deze StudentQuiz sluit voor insturen vr
 $string['before_submission_start_date'] = 'Open voor insturen vragen vanaf {$a}.';
 $string['cachedef_permissionssync'] = 'Volgen StudentQuiz permissie-synchronisatie';
 $string['cannotcapturecommenthistory'] = 'Kan geen opmerkingsgeschiedenisregel vastleggen';
-$string['changeselectedsstate'] = 'Status wijzigen van de volgende vragen:<br /><br />{$a}';
 $string['collapseall'] = 'Alle opmerkingen inklappen';
 $string['collapsecomment'] = 'Opmerking inklappen';
 $string['comment_author'] = 'Auteur';

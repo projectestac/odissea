@@ -25,7 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = '已查看的参与报告';
+$string['nologreaderenabled'] = '未启用日志读取器';
 $string['page-report-participation-index'] = '课程成员报告';
 $string['page-report-participation-x'] = '任何成员报告';
 $string['participation:view'] = '查看课程成员报表';
 $string['pluginname'] = '课程成员';
+$string['privacy:metadata'] = '课程参与插件不存储任何个人数据。';

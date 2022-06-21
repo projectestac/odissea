@@ -30,7 +30,6 @@ $string['accredible:manage'] = 'Gestionar una petición de certificado/insignia'
 $string['accredible:student'] = 'Recuperar un certificado o una insignia';
 $string['accredible:view'] = 'Ver un certificado o insignia';
 $string['achievementid'] = 'Denominación del id / cohorte del logro (debe ser único)';
-$string['activitydescription'] = 'Este módulo crea y actualiza automáticamente Credential Group en Accredible. Cualquier certificado e insignia emitidos en este grupo y su apariencia e información pueden ser actualizados en <a href="https://dashboard.accredible.com" target="_blank"> el área personal</a>.';
 $string['activityname'] = 'Nombre de actividad';
 $string['additionalactivitiesone'] = 'Atención: Estás añadiendo más de una actividad a un curso.<br/>Todas las  actividades son visibles para los alumnos, así que asegúrate de darles diferentes nombres.';
 $string['additionalactivitiesthree'] = 'Este nombre aparecerá en el certificado.';

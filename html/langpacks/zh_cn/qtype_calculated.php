@@ -115,6 +115,7 @@ $string['pluginnameadding'] = '增加一道计算题';
 $string['pluginnameediting'] = '编辑计算问题';
 $string['pluginnamesummary'] = '计算题和数值题类似，但在答题时，题目中的数可以从一个集合中随机选择。';
 $string['possiblehdr'] = '仅在题干中有通配符';
+$string['privacy:metadata'] = '计算题类型插件不存储任何个人数据。';
 $string['questiondatasets'] = '题目数据集';
 $string['questiondatasets_help'] = '题目中使用的通配符的数据集';
 $string['questionstoredname'] = '题目名存为';

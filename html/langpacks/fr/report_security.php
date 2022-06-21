@@ -84,7 +84,7 @@ $string['check_passwordpolicy_details'] = '<p>Il est recommandé de définir une
 $string['check_passwordpolicy_error'] = 'Politique de mots de passe non définie.';
 $string['check_passwordpolicy_name'] = 'Politique de mots de passe';
 $string['check_passwordpolicy_ok'] = 'Politique de mots de passe active.';
-$string['check_preventexecpath_details'] = '<p>Permettre la configuration des chemins des programmes exécutables dans l\'interface graphique d\'administration est un vecteur d\'escalade de privilèges. Le réglage suivant doit être imposé dans le fichier config.php :</p><p><code>$CFG->preventexecpath = true;<code></p>';
+$string['check_preventexecpath_details'] = '<p>Permettre la configuration des chemins des programmes exécutables dans l\'interface graphique d\'administration est un vecteur d\'escalade de privilèges. Le réglage suivant doit être imposé dans le fichier config.php :</p><p><code>$CFG->preventexecpath = true;</code></p>';
 $string['check_preventexecpath_name'] = 'Chemins des programmes exécutables';
 $string['check_preventexecpath_ok'] = 'Les chemins des exécutables ne peuvent être configurés que dans config.php.';
 $string['check_preventexecpath_warning'] = 'Les chemins des exécutables peuvent être configurés dans l\'interface graphique d\'administration.';

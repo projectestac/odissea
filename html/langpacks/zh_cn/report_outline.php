@@ -26,10 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventactivityreportviewed'] = '查看了活动报表';
+$string['eventoutlinereportviewed'] = '浏览大纲报告';
 $string['neverseen'] = '从未查看';
+$string['nocapability'] = '无法访问用户概要报告';
+$string['nologreaderenabled'] = '未启用日志读取器';
 $string['numviews'] = '由{$a->distinctusers} 用户浏览{$a->numviews}次';
 $string['outline:view'] = '查看课程活跃度报表';
+$string['outline:viewuserreport'] = '查看用户活动报告';
 $string['page-report-outline-index'] = '课程大纲报告';
 $string['page-report-outline-user'] = '用户课程大纲报告';
 $string['page-report-outline-x'] = '任何大纲报告';
 $string['pluginname'] = '课程活动';
+$string['privacy:metadata'] = '活动报告插件不存储任何个人数据。';

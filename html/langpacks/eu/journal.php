@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessdenied'] = 'Sarbide ukatua';
 $string['alwaysopen'] = 'Beti zabalik';
 $string['blankentry'] = 'Sarrera hutsik';
+$string['crontask'] = 'Egunkaria moduluaren atzeko planoko prozesamendua';
 $string['daysavailable'] = 'Zenbat egunetan eskuragarri';
 $string['deadline'] = 'Zenbat egunetan zabalik';
 $string['editingended'] = 'Editatzeko epea amaitu da';

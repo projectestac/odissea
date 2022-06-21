@@ -33,9 +33,6 @@ require_once $CFG->dirroot . '/report/coursequotas/constants.php';
 
 admin_externalpage_setup(REPORT_COURSEQUOTAS_NAME, '', null, '/report/coursequotas/course.php', array('pagelayout' => REPORT_COURSEQUOTAS_REPORTSTRING));
 
-$PAGE->requires->jquery();
-$PAGE->requires->jquery_plugin('ui');
-
 echo $OUTPUT->header();
 
 // Check restricted hour

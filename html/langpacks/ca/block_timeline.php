@@ -37,3 +37,4 @@ $string['overdue'] = 'Vençuda';
 $string['pluginname'] = 'Cronologia';
 $string['sortbycourses'] = 'Ordena per cursos';
 $string['sortbydates'] = 'Ordena per data';
+$string['viewcourse'] = 'Visualitza el curs';

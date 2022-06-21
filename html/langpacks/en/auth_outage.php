@@ -32,6 +32,8 @@ $string['allowedipsnoconfig'] = 'Your config.php does not have the extra setup t
 $string['auth_outagedescription'] = 'Auxiliary plugin that warns users about a future outage and prevents them from logging in once the outage starts.';
 $string['autostart'] = 'Auto start maintenance mode.';
 $string['autostart_help'] = 'If selected, when the outage starts it will automatically turn on Moodle maintenance mode.';
+$string['builtinallowediplist'] = 'Builtin Allowed IP List';
+$string['builtinallowediplist_desc'] = 'A second allowed IP list which makes it easier to have some IPs forced in config.php and others editable in the UI';
 $string['clicreateexamples'] = 'Create an outage starting in 10 seconds\\n\\n> php create.php -s=10';
 $string['clicreatehelp'] = 'Creates a new outage.';
 $string['clicreateparamautostart'] = 'must be Y or N, sets if the outage automatically triggers maintenance mode.';
@@ -106,6 +108,7 @@ $string['infostart'] = 'start';
 $string['infostartofwarning'] = 'start of warning';
 $string['infostaticpage'] = 'static page';
 $string['infountil'] = 'Until:';
+$string['ips_combine'] = 'The IPs listed above will be combined with the IPs listed below.';
 $string['menumanage'] = 'Manage outages';
 $string['menusettings'] = 'Settings';
 $string['messageoutagebackonline'] = 'We are back online!';

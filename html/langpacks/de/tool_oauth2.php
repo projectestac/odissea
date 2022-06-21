@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['acceptrisk'] = 'Ich weiß, dass die Deaktivierung der E-Mail-Bestätigung ein Sicherheitsproblem darstellen kann.';
-$string['acceptrisk_help'] = 'Das Deaktivieren der E-Mail-Bestätigung kann ein Sicherheitsproblem darstellen. Eventuell ist es für Nutzer/innen möglich, sich unter den bestimmten Umständen als andere authentifizieren zu können.';
+$string['acceptrisk'] = 'Ich weiß, dass die Deaktivierung der E-Mail-Bestätigung ein Sicherheitsproblem sein kann.';
+$string['acceptrisk_help'] = 'Das Deaktivieren der E-Mail-Bestätigung kann ein Sicherheitsproblem sein. Nutzer/innen könnten sich als jemand anderes authentifizieren.';
 $string['authconfirm'] = 'Diese Aktion gewährt Moodle einen permanenten API-Zugriff für das authentifizierte Konto. Dies soll als Systemaccount für die Verwaltung von Dateien von Moodle verwendet werden.';
 $string['authconnected'] = 'Der Systemaccount ist nun für Offline-Zugriffe verbunden.';
 $string['authnotconnected'] = 'Der Systemaccount wurde nicht für Offline-Zugriffe verbunden.';

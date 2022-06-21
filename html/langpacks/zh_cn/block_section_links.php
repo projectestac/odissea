@@ -36,6 +36,7 @@ $string['numsections1_help'] = '当课程小节达到设定值，就会使用递
 $string['numsections2'] = '可选小节数量';
 $string['numsections2_help'] = '当课程小节达到设定值，就会使用可选小节数量。';
 $string['pluginname'] = '小节链接';
+$string['privacy:metadata'] = '“部分链接”板块仅显示存储在其他位置的数据';
 $string['section_links:addinstance'] = '新增小节链接版块';
 $string['showsectionname'] = '显示章节名称';
 $string['showsectionname_help'] = '除显示章节编号外，还显示章节名称';

@@ -29,4 +29,5 @@ $string['configplugin'] = '用户私人文件容器配置';
 $string['emptyfilelist'] = '没有可显示的文件';
 $string['pluginname'] = '私人文件';
 $string['pluginname_help'] = '用户私人空间中的文件';
+$string['privacy:metadata'] = '私人文件存储库插件不存储或传输任何个人数据。';
 $string['user:view'] = '查看用户的私人文件';

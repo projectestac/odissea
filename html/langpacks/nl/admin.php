@@ -201,7 +201,7 @@ $string['configcountry'] = 'Als je hier een land invult, wordt dit land als stan
 $string['configcoursegraceperiodafter'] = 'Classificeer eerdere cursussen als in uitvoering voor dit aantal dagen na de einddatum van de cursus.';
 $string['configcoursegraceperiodbefore'] = 'Classificeer toekomstige cursussen als in uitvoering voor dit aantal  dagen voorafgaand aan de startdatum van de cursus.';
 $string['configcourseoverviewfilesext'] = 'Een kommagescheiden lijst van toegestane bestandsextenties voor cursusafbeeldingen.';
-$string['configcourseoverviewfileslimit'] = 'Het maximaal aantal bestanden dat naast een cursussamenvatting getoond kan worden op de pagina met de cursussenlijst. Het eerste afbeeldingsbestand dat toegevoegd wordt, wordt gebruikt als cursusafbeelding in het cursusoverzicht op de startpagina van de gebruiker. Bijkomende bestanden worden enkel getoond op de pagina met de cursussenlijst.';
+$string['configcourseoverviewfileslimit'] = 'Het maximaal aantal bestanden dat naast een cursussamenvatting getoond kan worden op de pagina met de cursussenlijst. Het eerste afbeeldingsbestand dat toegevoegd wordt, wordt gebruikt als cursusafbeelding in het cursusoverzicht op de startpagina van de gebruiker. Bijkomende bestanden worden enkel getoond op de pagina met de cursuslijst.';
 $string['configcourserequestnotify'] = 'Geef de gebruikersnaam van de gebruiker die een melding moeten krijgen wanneer er een nieuwe cursus aangevraagd wordt.';
 $string['configcourserequestnotify2'] = 'Gebruikers die een melding zullen krijgen als er een nieuwe cursus wordt aangevraagd. Alleen gebruikers die een cursus kunnen goedkeuren, worden hier getoond.';
 $string['configcoursesperpage'] = 'Geef het maximale aantal te tonen cursussen per pagina in een cursuslijst';
@@ -893,7 +893,7 @@ $string['moodlepartners_help'] = '<p>Moodle Partners zijn door Moodle HQ gecerti
 <a href="https://moodle.com/partners">Moodle Partner zoeken</a>';
 $string['moodleservices'] = 'Moodle services';
 $string['moodleservices_help'] = 'Haal het beste uit je Moodle leeromgeving door gebruik te maken van volgende Moodle services:';
-$string['multilangforceold'] = 'Forceer oude multilang syntax: <span> zonder de class="multilang" en <lang>';
+$string['multilangforceold'] = 'Oude multilang syntax opleggen: &lt;span&gt; zonder class="multilang" en &lt;lang&gt;';
 $string['mustenablestats'] = 'Op deze server zijn Statistieken nog uitgeschakeld';
 $string['mycoursesperpage'] = 'Maximaal aantal cursussen';
 $string['mydashboard'] = 'Standaard startpagina van het systeem';

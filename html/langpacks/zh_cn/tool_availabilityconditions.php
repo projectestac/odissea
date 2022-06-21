@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = '管理限制';
 $string['pluginname'] = '可用性状态管理';
+$string['privacy:metadata'] = '可用性条件管理插件不存储任何个人数据。';

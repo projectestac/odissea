@@ -88,7 +88,7 @@ $string['check_passwordpolicy_details'] = '<p>パスワードの推測は不正�
 $string['check_passwordpolicy_error'] = 'パスワードポリシーが設定されていません。';
 $string['check_passwordpolicy_name'] = 'パスワードポリシー';
 $string['check_passwordpolicy_ok'] = 'パスワードポリシーが有効にされています。';
-$string['check_preventexecpath_details'] = '<p>管理画面による実行可能パス設定を許可することにより権限昇格の可能性が生じます。</p>これはconfig.phpで次のように強制されるべきです:</p><p><code>$CFG->preventexecpath = true;<code></p>';
+$string['check_preventexecpath_details'] = '<p>管理画面による実行可能パス設定を許可することにより権限昇格の可能性が生じます。</p>これはconfig.phpで次のように強制されるべきです:</p><p><code>$CFG->preventexecpath = true;</code></p>';
 $string['check_preventexecpath_name'] = '実行可能パス';
 $string['check_preventexecpath_ok'] = '実行可能パスはconfig.phpのみで設定することができます。';
 $string['check_preventexecpath_warning'] = '実行可能パスは管理画面で設定することができます。';

@@ -243,7 +243,6 @@ $string['cancancelbookdays'] = 'Gebruikers mogen hun boeking niet n dagen voor s
 $string['cancancelbookdaysno'] = 'Geen limiet';
 $string['cancel'] = 'Annuleren';
 $string['cancelbooking'] = 'Annuleer inschrijving';
-$string['canmanageoptiontemplates'] = 'Heeft het recht om boekingsoptie templates te beheren.';
 $string['cannotremovesubscriber'] = 'Je moet de activiteitsvoltooing verwijderen voor je de boeking kunt annuleren. De boeking is niet geannuleerd!';
 $string['categories'] = 'Categorieën';
 $string['category'] = 'Categorie';
@@ -826,18 +825,6 @@ $string['status_failed'] = 'Onvoldoende/mislukt';
 $string['status_incomplete'] = 'Incompleet';
 $string['status_noshow'] = 'Niet aanwezig';
 $string['status_unknown'] = 'Onbekend';
-$string['statuschangebookedmessage'] = 'Beste {$a->participant},
-
-Je inschrijfstatus is veranderd. Je bent nu geregistreerd in {$a->title}.
-
-Inschrijf status: {$a->status}
-Deelnemer:   {$a->participant}
-Cursus:   {$a->title}
-Datum: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Link: {$a->bookinglink}
-Klik op de link om alle cursussen te bekijken waar je voor ingeschreven bent: {$a->bookinglink}
-De gekoppelde cursus is hier te vinden: {$a->courselink}';
-$string['statuschangebookedsubject'] = 'Inschrijfstatus veranderd voor {$a->title}';
 $string['statuschangetext'] = 'Bericht wijziging status';
 $string['statuschangetext_help'] = 'Laat het veld leeg om de standaard tekst te gebruiken. Je kunt een van de volgende plaatshouders gebruiken in de tekst:
 <ul>

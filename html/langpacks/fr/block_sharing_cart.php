@@ -65,32 +65,32 @@ $string['movedir'] = 'Déplacer dans un dossier';
 $string['no_backup_support'] = 'Le support de la sauvegarde n\'est pas géré pour cet élément';
 $string['notarget'] = 'Cible non trouvée';
 $string['pluginname'] = 'Panier d\'activités';
-$string['privacy:metadata:block_sharing_cart'] = 'Les données du panier de partage sont stockées ici';
-$string['privacy:metadata:block_sharing_cart:ctime'] = 'Temps passé';
+$string['privacy:metadata:block_sharing_cart'] = 'Les données du panier d\'activités sont stockées ici';
+$string['privacy:metadata:block_sharing_cart:ctime'] = 'Heure de création';
 $string['privacy:metadata:block_sharing_cart:modicon'] = 'Icône du module d\'activité';
 $string['privacy:metadata:block_sharing_cart:modname'] = 'Le nom du module d\'activité';
 $string['privacy:metadata:block_sharing_cart:modtext'] = 'Le titre du module d\'activité';
-$string['privacy:metadata:block_sharing_cart:tree'] = 'Le titre du dossier du panier de partage qui s\'affiche dans le bloc';
+$string['privacy:metadata:block_sharing_cart:tree'] = 'Le titre du dossier du panier d\'activités qui s\'affiche dans le bloc';
 $string['privacy:metadata:block_sharing_cart:userid'] = 'L\'identifiant de l\'utilisateur';
 $string['privacy:metadata:block_sharing_cart:weight'] = 'Ordre des articles, tri par ordre croissant';
-$string['privacy:metadata:block_sharing_cart_plugins'] = 'Les données des plugins de panier de partage sont stockées ici';
-$string['privacy:metadata:block_sharing_cart_plugins:data'] = 'Partage des données des plugins du panier';
+$string['privacy:metadata:block_sharing_cart_plugins'] = 'Les données des plugins de panier d\'activités sont stockées ici';
+$string['privacy:metadata:block_sharing_cart_plugins:data'] = 'Données des plugins de panier d\'activités';
 $string['privacy:metadata:block_sharing_cart_plugins:plugin'] = 'Le nom du plugin';
 $string['privacy:metadata:block_sharing_cart_plugins:userid'] = 'L\'identifiant de l\'utilisateur';
 $string['recordnotfound'] = 'Impossible de trouver l\'élément';
 $string['requireajax'] = 'Le panier d\'activités nécessite l\'activation d\'AJAX';
-$string['requirejs'] = 'Le JavaScript de votre navigateur doit être activé pour pouvoir utiliser le panier d\'activités';
+$string['requirejs'] = 'Le panier d\'activités nécessite l\'activation de JavaScript dans votre navigateur';
 $string['restore'] = 'Coller dans le cours';
 $string['restore_heavy_load_warning_message'] = 'Les durées de chargement sont plus longues, car plus de 10 activités / ressources sont en cours de traitement.';
 $string['section_name_conflict'] = 'Conflit de titre de section';
 $string['settings:userdata_copyable_modtypes'] = 'Type de module avec données utilisateur copiables';
-$string['settings:userdata_copyable_modtypes_desc'] = 'Lors de la copie d\'une activité dans le partage de panier, une boîte de dialogue affiche une option si une copie d\'une activité comprend les données utilisateur ou non, si ce type de module est coché ci-dessus et qu\'un opérateur a les capacités <strong>moodle/backup:userinfo</strong>, <strong>moodle/backup:anonymise</strong> et <strong>moodle/restore:userinfo</strong> (par défaut, seul le rôle de gestionnaire a ces capacités.)';
+$string['settings:userdata_copyable_modtypes_desc'] = 'Lors de la copie d\'une activité dans le panier d\'activités, une boîte de dialogue affiche une option si une copie d\'une activité comprend les données utilisateur ou non, si ce type de module est coché ci-dessus et qu\'un opérateur a les capacités <strong>moodle/backup:userinfo</strong>, <strong>moodle/backup:anonymise</strong> et <strong>moodle/restore:userinfo</strong> (par défaut, seul le rôle de gestionnaire a ces capacités.)';
 $string['settings:workaround_qtypes'] = 'Solution pour les types de questions';
 $string['settings:workaround_qtypes_desc'] = 'La solution pour la restauration de question sera effectuée si son type de question est cochée.
 Cependant, lorsque les questions à restaurer existent déjà, ces données seront incompatibles, cette solution de contournement va essayer de faire un autre doublon au lieu de réutiliser les données existantes.
 Cette solution peut être utile pour éviter certaines erreurs de restauration, telles que <i>error_question_match_sub_missing_in_db</i>.';
 $string['sharing_cart'] = 'Panier d\'activités';
-$string['sharing_cart:addinstance'] = 'Ajouter le bloc panier d\'activités';
+$string['sharing_cart:addinstance'] = 'Ajouter un bloc panier d\'activités';
 $string['sharing_cart_help'] = '<div>
  <strong>Copier un élément du cours vers le panier d\'activités</strong>
 <p>Dans le menu contextuel de l\'activité ou de la ressource, vous verrez apparaitre la fonction "Copier dans le panier d\'activités".  Cliquez sur cette fonction pour envoyer une copie de la ressource/activité vers le panier d\'activités. L\'élément sera copié dans le panier. Suivant le type d\'élément copié, il vous sera parfois demandé si vous souhaitez y inclure les données utilisateurs. L\'élément sera copié avec ou sans données utilisateurs.</p>
@@ -100,5 +100,5 @@ $string['sharing_cart_help'] = '<div>
 <p>Cliquez sur l\'icône "Déplacer dans un dossier" de l\'élément que vous souhaitez déplacer.  Si vous n\'avez pas de dossier sur le panier, vous serez invité à saisir le nom du nouveau dossier à créer.  Si vous avez déjà des dossiers sur votre panier, vous pouvez sélectionner un dossier existant dans la liste déroulante.   Pour basculer sur le champ de saisie d\'un nouveau nom de dossier, cliquez sur l\'icône "Modifier".</p>
 </div>';
 $string['unexpectederror'] = 'Une erreur inattendue est survenue';
-$string['uninstalled_plugin_warning_title'] = 'Ce plugin est désinstallé. Essayer de le récupérer sans réinstaller le plugin : {$a} provoquera des erreurs. La restauration est désactivée';
+$string['uninstalled_plugin_warning_title'] = 'Ce plugin est désinstallé. Essayer de récupérer cela sans réinstaller le plugin : {$a} provoquera des erreurs. La restauration est désactivée';
 $string['variouscourse'] = 'de différents cours';

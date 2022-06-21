@@ -34,7 +34,7 @@ $string['fn_mentor:viewblock'] = 'معاينة الكتلة';
 $string['idnumber'] = 'رقم المُعرَّف';
 $string['linktomentorpage'] = 'رابط التقرير عبر الإنترنت: <a href="{$a}">{$a}</a>';
 $string['markinmanagerscoursecatsdesc'] = 'حدد تصنيفات المساقات التي ستتم معالجتها من قبل كتلة مدير المرشدين في صفحة واجهة مودل وفي لوحة التحكم.';
-$string['mentee_without_course'] = 'إظهار التلاميذ الذين بلا مساقات';
+$string['mentee_without_course'] = 'إظهار التلاميذ الذين بلا مقررات دراسية';
 $string['mentees_without_groups'] = 'التلاميذ الذين بلا مجموعات';
 $string['mentees_without_mentor'] = 'التلاميذ الذين بلا مرشد';
 $string['mentors_without_groups'] = 'المرشدون الذين بلا مجموعات';

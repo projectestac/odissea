@@ -31,7 +31,7 @@ global $CFG;
 require_once($CFG->dirroot.'/mod/questionnaire/locallib.php');
 
 /**
- * Unit tests for {@link questionnaire_questiontypes_testcase}.
+ * Unit tests for questionnaire_questiontypes_testcase.
  * @group mod_questionnaire
  */
 class mod_questionnaire_questiontypes_testcase extends advanced_testcase {
@@ -93,6 +93,13 @@ class mod_questionnaire_questiontypes_testcase extends advanced_testcase {
 
     // General tests to call from specific tests above.
 
+    /**
+     * Create a test question.
+     * @param int $qtype
+     * @param question $questionclass
+     * @param array $questiondata
+     * @param null|array $choicedata
+     */
     private function create_test_question($qtype, $questionclass, $questiondata = array(), $choicedata = null) {
         global $DB;
 
@@ -129,7 +136,7 @@ class mod_questionnaire_questiontypes_testcase extends advanced_testcase {
         }
 
         // Questionnaire object should now have question record(s).
-        $questionnaire = new questionnaire($questionnaire->id, null, $course, $cm, true);
+        $questionnaire = new questionnaire($course, $cm, $questionnaire->id, null, true);
         $this->assertTrue($DB->record_exists('questionnaire_question', array('id' => $question->id)));
         $this->assertEquals('array', gettype($questionnaire->questions));
         $this->assertTrue(array_key_exists($question->id, $questionnaire->questions));
@@ -139,6 +146,13 @@ class mod_questionnaire_questiontypes_testcase extends advanced_testcase {
         }
     }
 
+    /**
+     * Create a test question with choices.
+     * @param int $qtype
+     * @param question $questionclass
+     * @param array $questiondata
+     * @param null|array $choicedata
+     */
     private function create_test_question_with_choices($qtype, $questionclass, $questiondata = array(), $choicedata = null) {
         if ($choicedata === null) {
             $choicedata = array(

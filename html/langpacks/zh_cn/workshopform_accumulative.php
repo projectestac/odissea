@@ -41,6 +41,7 @@ $string['mustchoosegrade'] = '您必须为此采分点打分';
 $string['pluginname'] = '累加分数';
 $string['poor'] = '不足';
 $string['present'] = '出席';
+$string['privacy:metadata'] = '累积评分插件仅存储评估表单的详细信息。如何填写表格的实际个人数据存储在研讨会模块中，并附在导出的评估中。';
 $string['scalename0'] = '是/否（2分）';
 $string['scalename1'] = '出席/缺勤 （2分）';
 $string['scalename2'] = '正确/错误 （2分）';

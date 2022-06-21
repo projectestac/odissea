@@ -29,6 +29,7 @@ $string['configplugin'] = 'WebDAV配置';
 $string['http'] = 'HTTP';
 $string['https'] = 'HTTPS';
 $string['pluginname'] = 'WebDAV容器';
+$string['privacy:metadata'] = 'WebDAV存储库插件并不存储任何个人数据，但它会从Moodle传输到远程系统。';
 $string['webdav'] = 'WebDAV';
 $string['webdav:view'] = '查看WebDAV容器';
 $string['webdav_password'] = 'WebDAV服务器密码';

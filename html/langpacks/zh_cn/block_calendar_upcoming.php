@@ -29,3 +29,4 @@ $string['calendar_upcoming:addinstance'] = '新增一个即将到来事件版块
 $string['calendar_upcoming:myaddinstance'] = '在个人主页新增一个即将到来事件版块';
 $string['gotocalendar'] = '转到日历…';
 $string['pluginname'] = '即将到来的事件';
+$string['privacy:metadata'] = '“即将发生的事件”板块仅显示现有日历数据。';

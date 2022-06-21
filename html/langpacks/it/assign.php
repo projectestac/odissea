@@ -87,7 +87,8 @@ $string['attemptheading'] = 'Tentativo {$a->attemptnumber}: {$a->submissionsumma
 $string['attempthistory'] = 'Tentativo precedente';
 $string['attemptnumber'] = 'Numero tentativo';
 $string['attemptreopenmethod'] = 'Tentativi aggiuntivi';
-$string['attemptreopenmethod_help'] = 'Imposta la modalità di riapertura dei tentativi di consegna. Opzioni disponibili:
+$string['attemptreopenmethod_help'] = 'Imposta la modalità di riapertura dei tentativi di consegna.
+Per ogni tentativo, la valutazione e il commento saranno salvati e potranno essere visualizzati sia dal docente sia dallo studente. Le opzioni disponibili sono:
 
 * Mai - Il tentativo di consegna non potrà essere riaperto.
 * Manualmente - Il tentativo di consegna potrà essere riaperto da un docente.

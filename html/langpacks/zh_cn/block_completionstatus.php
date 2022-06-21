@@ -30,5 +30,6 @@ $string['completionstatus:addinstance'] = '添加一个课程进度版块';
 $string['criteriagroup'] = '条件组';
 $string['firstofsecond'] = '{$a->second}中的{$a->first}';
 $string['pluginname'] = '课程进度状态';
+$string['privacy:metadata'] = '“课程完成状态”板块仅显示有关课程完成的信息，本身不存储任何数据。';
 $string['requirement'] = '前提条件';
 $string['returntocourse'] = '返回课程';

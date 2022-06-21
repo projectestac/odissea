@@ -38,7 +38,7 @@ $string['createnewcategories'] = 'Neue (verborgene) Kursbereiche anlegen, wenn n
 $string['createnewcategories_desc'] = 'Wenn das &lt;org&gt;&lt;orgunit&gt;-Element in der importierten Datei enthalten ist, wird es benutzt um einen Kurs einer Kurskategorie zuzuordnen, sofern der Kurs neu angelegt wird. Bereits bestehende Kurse werden dadurch NICHT verschoben.
 Wenn keine Kategorie mit dem Namen existiert, wird diese neu als verborgene Kategorie angelegt.';
 $string['createnewcourses'] = 'Erstelle neue (verborgene) Kurse, wenn nicht in Moodle gefunden';
-$string['createnewcourses_desc'] = 'Funktion: Das IMS-Einschreibungsplugin kann neue Kurse anlegen wenn es diese in der IMS Datei, nicht aber in der Moodle-Datenbank findet. Jeder neue Kurs wird so angelegt, dasser für Teilnehmer nicht verfügbar ist. ';
+$string['createnewcourses_desc'] = 'Funktion: Das IMS-Einschreibungsplugin kann neue Kurse anlegen wenn es diese in der IMS Datei, nicht aber in der Moodle-Datenbank findet. Jeder neue Kurs wird so angelegt, dasser für Teilnehmer/innen nicht verfügbar ist.';
 $string['createnewusers'] = 'Erstelle neue Nutzerzugänge, wenn Nutzer noch nicht in Moodle registriert';
 $string['createnewusers_desc'] = 'Die IMS Enterprise Einschreibungsdatei enthält in der Regel eine Liste von Teilnehmer/innen. Mit der Funktion kann für Personen, die noch nicht in Moodle registriert sind, ein Nutzerkonto angelegt werden.
 Teilnehmer/innen werden zunächst aufgrund der ID-Nummer und dann nach dem Anmeldenamen in Moodle gesucht. Aus dem IMS Enterprise Plugin werden keine Kennwörter importiert. Hierfür wird die Nutzung eines Authentifizierungsplugin empfohlen.';
@@ -90,6 +90,6 @@ $string['updatecourses_desc'] = 'Bei Aktivierung kann das IMS Enterprise Einschr
 $string['updateusers'] = 'Nutzeraccounts aktualisieren, falls dies in IMS Daten festgelegt ist';
 $string['updateusers_desc'] = 'Bei Aktivierung können IMS Enterprise Enschreibungs-Daten Veränderungen in Nutzer Accounts festlegen (wenn die "recstatus"-Markierung durch \'2\' ein Update signalisiert).';
 $string['usecapitafix'] = 'Haken setzen, wenn "Großbuchstaben" verwendet werden (XML-Format ist fehlerhaft)';
-$string['usecapitafix_desc'] = 'Nur für Nutzer des Teilnehmerverwaltungssystem CAPITA: Der XML Output von Capita enthält einen Fehler. Bei Verwendung von Capita sollte diese Einstellung deaktiviert sein.';
+$string['usecapitafix_desc'] = 'Nur für Nutzende des Teilnehmendenverwaltungssystem CAPITA: Der XML Output von Capita enthält einen Fehler. Bei Verwendung von Capita sollte diese Einstellung deaktiviert sein.';
 $string['usersettings'] = 'Nutzerdateneinstellungen';
 $string['zeroisnotruncation'] = '0 bedeutet nicht abschneiden';

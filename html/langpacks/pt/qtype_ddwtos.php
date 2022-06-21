@@ -29,6 +29,7 @@ $string['addmorechoiceblanks'] = 'Espaços para mais {no} escolhas';
 $string['answer'] = 'Pergunta';
 $string['blank'] = 'Em branco';
 $string['correctansweris'] = 'Resposta correta: {$a}';
+$string['errorlimitedchoice'] = 'A opção [[{$a}]] foi usada mais do que uma vez sem ser definida como "Ilimitado". Por favor, verifique novamente esta pergunta.';
 $string['infinite'] = 'Ilimitado';
 $string['pleaseputananswerineachbox'] = 'Por favor, coloque uma resposta em cada caixa.';
 $string['pluginname'] = 'Arrastar e largar num texto';

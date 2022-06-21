@@ -38,3 +38,6 @@ $string['clitypevaluedefault'] = 'တန်ဖိုး ထည့်သွင်
 $string['cliunknowoption'] = 'အသိအမှတ် မပြုထားသော ရွေးချယ်မှုများ :
     {$a}
 ကျေးဇူးပြု၍ -- အကူအညီရယူရန် ကိုနှိပ်ပါ။';
+$string['environmentrequireinstall'] = 'ထည့်သွင်းပြီး အသုံးပြုခွင့်ဖွင့်ပါ';
+$string['environmentrequireversion'] = 'ဗားရှင်း{$a->needed} ကို လိုအပ်ပြီး သင်သည် {$a->current} ကိုအသုံးပြုနေပါသည်';
+$string['upgradekeyset'] = 'ကီး အဆင့်မြှင့်တင်ပါ (မချမှတ်ရန် ကွက်လပ်ချန်ခဲ့ပါ)';

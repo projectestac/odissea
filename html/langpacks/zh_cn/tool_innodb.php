@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '转换为 InnoDB 数据库引擎';
+$string['privacy:metadata'] = '转换为InnoDB插件不存储任何个人数据。';

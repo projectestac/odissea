@@ -25,11 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = '配置数据库注册实例';
 $string['database:unenrol'] = '移除禁用的用户';
 $string['dbencoding'] = '数据库编码';
 $string['dbhost'] = '数据库主机';
 $string['dbhost_desc'] = '输入数据库服务器IP地址或域名';
 $string['dbname'] = '数据库名';
+$string['dbname_desc'] = '如果在数据库主机中使用DSN名称，则保留为空。';
 $string['dbpass'] = '数据库密码';
 $string['dbsetupsql'] = '数据库设置命令';
 $string['dbsetupsql_desc'] = '设置某些数据库的SQL命令。通常用来设置通信编码 — 例如在MySQL和PostgreSQL中：<em>SET NAMES \'utf8\'</em>';
@@ -58,10 +60,13 @@ $string['newcoursetable'] = '远程新课程数据表';
 $string['newcoursetable_desc'] = '指定一个表名，它应该包含所有要自动新建的课程。留空表示不创建任何课程。';
 $string['pluginname'] = '外部数据库';
 $string['pluginname_desc'] = '您可以使用几乎所有类型的外部数据库控制您的选课。您的外部数据库至少要有一个课程ID字段和一个用户ID字段。它们会和本地课程表和用户表中您选择的字段相匹配。';
+$string['privacy:metadata'] = '外部数据库注册插件不存储任何个人数据。';
 $string['remotecoursefield'] = '远程课程字段';
 $string['remotecoursefield_desc'] = '用来和课程表匹配的远程表中的字段名。';
 $string['remoteenroltable'] = '远程用户选课数据表';
 $string['remoteenroltable_desc'] = '指定包含用户选课信息的表名。留空表示不同步任何用户的选课。';
+$string['remoteotheruserfield'] = '其他远程用户字段';
+$string['remoteotheruserfield_desc'] = '远程表格中用于标记“其他用户”角色分配的字段的名称。';
 $string['remoterolefield'] = '远程角色字段';
 $string['remoterolefield_desc'] = '用来和角色表匹配的远程表中的字段名';
 $string['remoteuserfield'] = '远程用户字段';
@@ -70,5 +75,6 @@ $string['settingsheaderdb'] = '外部数据库连接';
 $string['settingsheaderlocal'] = '本地字段映射';
 $string['settingsheadernewcourses'] = '创建新课程';
 $string['settingsheaderremote'] = '同步远程选课';
+$string['syncenrolmentstask'] = '同步外部数据库注册任务';
 $string['templatecourse'] = '新课程模板';
 $string['templatecourse_desc'] = '可选：自动创建的课程可以从模板课程拷贝设置。在此输入模板课程的简称。';

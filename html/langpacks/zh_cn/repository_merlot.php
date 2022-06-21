@@ -30,3 +30,7 @@ $string['licensekey'] = '授权密钥';
 $string['merlot:view'] = '查看Merlot容器';
 $string['pluginname'] = 'Merlot.org';
 $string['pluginname_help'] = 'Merlot.org';
+$string['privacy:metadata:repository_merlot'] = 'Merlot.org 存储库插件不存储任何个人数据，但将用户数据从Moodle传输到远程系统。';
+$string['privacy:metadata:repository_merlot:author'] = 'Merlot.org存储库内容作者。';
+$string['privacy:metadata:repository_merlot:keywords'] = 'Merlot.org存储库用户搜索文本查询。';
+$string['privacy:metadata:repository_merlot:licencekey'] = 'Merlot.org存储库许可证密钥。';

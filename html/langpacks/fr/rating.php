@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'L\'évaluation n\'est pas valide';
 $string['ratings'] = 'Évaluations';
 $string['ratingtime'] = 'Restreindre l\'évaluation aux éléments dont les dates sont dans cet intervalle :';
 $string['rolewarning'] = 'Rôles avec permission d\'évaluer';
-$string['rolewarning_help'] = 'Pour donner des évaluations, les utilisateurs ont besoin de la capacité moodle/rating:rate, ainsi que de capacités spécifiques des modules. Les utilisateurs avec les rôles suivants peuvent évaluer des éléments. Cette liste peut être modifiée via le lien permissions dans le menu des actions ou le bloc administration, selon le thème.';
+$string['rolewarning_help'] = 'Les rôles permettant d\'évaluer sont ceux qui ont la capacité moodle/rating:rate, ainsi que toute capacité d\'évaluation spécifique aux activités. Il est possible de donner plus de permissions d\'évaluation via la page Permissions.';
 $string['scaleselectionrequired'] = 'Lors du choix d\'un type de tendance centrale pour des notes, vous devez également doit choisir un barème, soit fixer un nombre de points maximum.';

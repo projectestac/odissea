@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blog_menu:addinstance'] = '新增一个博客目录版块';
 $string['pluginname'] = '博客菜单';
+$string['privacy:metadata'] = '“博客菜单”板块仅显示存储在其他位置的数据。';

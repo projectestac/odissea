@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actionsaved'] = 'S\'ha desat la vostra opinió sobre \'{$a}\'.';
 $string['insights'] = 'Prediccions';
 $string['justpredictions'] = 'Tingueu en compte que les prediccions següents són això, prediccions. No és possible predir el futur amb certesa. Les prediccions s\'ofereixen per tal que es puguin prendre les accions necessàries per evitar que les prediccions es facin realitat.';
 $string['outcome'] = 'Resultat';

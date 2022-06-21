@@ -88,7 +88,7 @@ $string['check_passwordpolicy_details'] = '<p>Aangeraden wordt om een wachtwoord
 $string['check_passwordpolicy_error'] = 'Wachtwoordbeleid niet ingesteld';
 $string['check_passwordpolicy_name'] = 'Wachtwoordbeleid';
 $string['check_passwordpolicy_ok'] = 'Wachtwoordbeleid ingeschakeld';
-$string['check_preventexecpath_details'] = '<p>Het instellen van uitvoerbare paden via de administratiepagina\'s is een bijkomend risico voor escalatie van privileges. Dit moet afgedwongen worden in config.php: </p><p><code>$CFG->preventexecpath = true;<code></p></p>';
+$string['check_preventexecpath_details'] = '<p>Het instellen van uitvoerbare paden via de administratiepagina\'s is een bijkomend risico voor escalatie van privileges. Dit moet afgedwongen worden in config.php: </p><p><code>$CFG->preventexecpath = true;<code></p>';
 $string['check_preventexecpath_name'] = 'Paden voor uitvoerbare programma\'s';
 $string['check_preventexecpath_ok'] = 'Paden voor uitvoerbare programma\'s kunnen enkel in config.php ingesteld worden.';
 $string['check_preventexecpath_warning'] = 'Paden voor uitvoerbare programma\'s kunnen in de beheerdersinterface ingesteld worden.';
@@ -104,7 +104,7 @@ $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->
 $string['check_riskadmin_warning'] = '{$a->admincount} beheerdersaccounts gevonden en {$a->unsupcount} niet-ondersteunde beheerdersrollen toegewezen.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Dit instellen geeft gebruikers het recht om gebruikersgegevens in back-ups te zetten. Laat dit alleen toe als het echt nodig is.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Volgende systeemrollen kunnen gebruikersgegevens in de back-ups zetten. Laat dit alleen toe als het echt nodig is.</p> {$a}';
-$string['check_riskbackup_details_users'] = '<b>Door de bovenstaande roloverschrijvingen kunnen volgende gebruikers back-ups maken met daaring privégegevens van alle gebruikers in hun cursus. Zorg ervoor dat ze te vertrouwen zijn en beschermd door sterke wachtwoorden:<p> {$a}';
+$string['check_riskbackup_details_users'] = '<p>Door de bovenstaande roloverschrijvingen kunnen volgende gebruikers back-ups maken met daarin privégegevens van alle gebruikers in hun cursus. Zorg ervoor dat ze te vertrouwen zijn en beschermd door sterke wachtwoorden:<p> {$a}';
 $string['check_riskbackup_detailsok'] = 'Er is geen enkele rol die toelaat om gebruikersgegevens in back-ups te zetten. Merk op dat beheerders met de "doe alles"-mogelijkheid dit wel nog kunnen.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} in {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';

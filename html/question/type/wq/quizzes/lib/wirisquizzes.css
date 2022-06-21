@@ -131,37 +131,6 @@
   --quizzes-studio-min-height: 720px;
   min-height: min(100%, var(--quizzes-studio-min-height));
 }
-.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton {
-  color: #077680;
-}
-.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton:not(:disabled):hover:not(.wrsUI_focused), .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton:not(:disabled):hover:not(.wrsUI_focused) {
-  background: rgba(7, 118, 128, 0.04);
-}
-.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton:not(:disabled):active, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton:not(:disabled):active {
-  background: rgba(7, 118, 128, 0.12) !important;
-}
-.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_focused, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_focused {
-  background: rgba(7, 118, 128, 0.12);
-}
-.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained {
-  color: #fefefe;
-  background: #077680;
-}
-.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained:not(:disabled):hover:not(.wrsUI_focused), .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained:not(:disabled):hover:not(.wrsUI_focused) {
-  background: rgba(7, 118, 128, 0.92);
-}
-.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained:not(:disabled):active, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained:not(:disabled):active {
-  background: rgba(7, 118, 128, 0.76) !important;
-}
-.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained.wrsUI_focused, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained.wrsUI_focused {
-  background: rgba(7, 118, 128, 0.76);
-}
-.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_icon, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_icon {
-  color: inherit;
-}
-.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_ripple, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_ripple {
-  background: rgba(7, 118, 128, 0.32);
-}
 @media (min-width: 1085px) {
   .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent {
     max-width: 1125px;
@@ -205,89 +174,46 @@
     min-width: unset !important;
   }
 }
-@media (min-height: 1151px) {
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent {
+@media (min-height: 1041px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent {
     max-height: 1125px;
     height: calc(100% - 128px);
   }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
     max-height: unset !important;
     height: 100%;
   }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
     max-height: unset !important;
     height: 100%;
   }
 }
-@media (max-height: 1150px) {
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent {
+@media (max-height: 1040px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent {
     max-height: unset !important;
     height: 920px;
   }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
     max-height: unset !important;
     height: 100%;
   }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
     max-height: unset !important;
     height: 100%;
   }
 }
 @media (max-height: 920px) {
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent {
     min-height: unset !important;
     position: fixed !important;
     top: 1px !important;
     bottom: 1px !important;
     height: auto !important;
   }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
     min-height: unset !important;
   }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
-    min-height: unset !important;
-  }
-}
-@media (min-height: 901px) {
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent {
-    max-height: 1125px;
-    height: calc(100% - 128px);
-  }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
-    max-height: unset !important;
-    height: 100%;
-  }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
-    max-height: unset !important;
-    height: 100%;
-  }
-}
-@media (max-height: 900px) {
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent {
-    max-height: unset !important;
-    height: 720px;
-  }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
-    max-height: unset !important;
-    height: 100%;
-  }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
-    max-height: unset !important;
-    height: 100%;
-  }
-}
-@media (max-height: 720px) {
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent {
-    min-height: unset !important;
-    position: fixed !important;
-    top: 1px !important;
-    bottom: 1px !important;
-    height: auto !important;
-  }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
-    min-height: unset !important;
-  }
-  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
     min-height: unset !important;
   }
 }
@@ -533,6 +459,37 @@
   cursor: pointer;
 }
 
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton {
+  color: #077680;
+}
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton:not(:disabled):hover:not(.wrsUI_focused) {
+  background: rgba(7, 118, 128, 0.04);
+}
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton:not(:disabled):active {
+  background: rgba(7, 118, 128, 0.12) !important;
+}
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_focused {
+  background: rgba(7, 118, 128, 0.12);
+}
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained {
+  color: #fefefe;
+  background: #077680;
+}
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained:not(:disabled):hover:not(.wrsUI_focused) {
+  background: rgba(7, 118, 128, 0.92);
+}
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained:not(:disabled):active {
+  background: rgba(7, 118, 128, 0.76) !important;
+}
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained.wrsUI_focused {
+  background: rgba(7, 118, 128, 0.76);
+}
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_icon {
+  color: inherit;
+}
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_ripple {
+  background: rgba(7, 118, 128, 0.32);
+}
 .wrsUI_app .wrsUI_quizzesStudio {
   outline: 0;
   grid-template: 72px 1fr 76px/repeat(3, 1fr);
@@ -578,6 +535,9 @@
   overflow-x: hidden;
   overflow-y: overlay;
 }
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_activityPanel.wrsUI_quizzesStudioHome .wrsUI_quizzesStudioHomeLeftPanel {
+  flex: 1;
+}
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_buttonPanel > .wrsUI_aux_ripple {
   background: rgba(0, 0, 0, 0.12);
 }
@@ -592,30 +552,14 @@
   opacity: 0.54;
   transform: scale(0.75);
 }
-.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab > .wrsUI_label, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab > .wrsUI_iconBox {
-  opacity: 0.76;
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_productMessagePanel {
+  width: calc(100% - 32px);
+  margin: 8px 0px !important;
 }
-.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab:not(:disabled):hover:not(.wrsUI_focused) {
-  background: rgba(7, 118, 128, 0.04);
-}
-.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab:not(:disabled):active {
-  background: rgba(7, 118, 128, 0.12);
-}
-.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab.wrsUI_focused {
-  background: rgba(7, 118, 128, 0.12);
-}
-.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab > .wrsUI_label {
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_productMessagePanel .wrsUI_labelHeader {
+  color: #077680;
+  font-size: 16;
   font-weight: 400;
-  color: #077680 !important;
-}
-.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab > .wrsUI_aux_ripple {
-  background: rgba(7, 118, 128, 0.32);
-}
-.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_indicator {
-  background: #077680;
-}
-.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelContainer .wrsUI_borderPanel.wrsUI_initialContentTab {
-  overflow-y: auto;
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar {
   height: 72px;
@@ -625,6 +569,16 @@
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_button {
   color: rgba(0, 0, 0, 0.54);
   border-radius: 50%;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_button.wrsUI_quizzesStudioFileButton {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: auto;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_button.wrsUI_quizzesStudioFileButton > .wrsUI_aux_button_value {
+  top: 2px;
+  margin-right: 10px;
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_button:not(:disabled):hover:not(.wrsUI_focused) {
   background: rgba(0, 0, 0, 0.04);
@@ -650,17 +604,44 @@
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_label.wrsUI_labelHeader {
   margin-left: 40px;
 }
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioCorrectAnswerComponent {
+  flex: 4;
+  min-width: 0px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioCorrectAnswerComponent .wrsUI_aux_mathTypeComponentWrapper {
+  display: inline;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioCorrectAnswerComponent .wrsUI_aux_mathTypeComponentWrapper .wrs_editor {
+  min-height: 300px;
+}
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList {
   cursor: pointer;
   background: #fff;
-  margin: 12px 24px;
-  width: calc(100% - 48px);
+  width: 100%;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  margin: 0px 0px 24px 0px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList .wrsUI_labelHeader {
+  margin: 12px;
+  margin-bottom: 24px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList.wrsUI_answerTypeList .wrsUI_buttonPanel {
+  justify-content: start !important;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList.wrsUI_answerTypeList .wrsUI_buttonPanel .wrsUI_iconBox ~ .wrsUI_label {
+  margin-left: 16px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList.wrsUI_answerTypeList .wrsUI_buttonPanel.wrsUI_selected {
+  background: rgba(7, 118, 128, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList.wrsUI_answerTypeList .wrsUI_buttonPanel.wrsUI_selected > .wrsUI_label {
+  font-weight: 500;
+  color: rgba(7, 118, 128, 0.87) !important;
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList > .wrsUI_flowPanel {
   height: 48px;
   box-sizing: border-box;
-  padding: 8px 12px 8px 24px;
+  padding: 8px 12px 8px 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList > .wrsUI_flowPanel > .wrsUI_label {
@@ -773,6 +754,18 @@
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer .wrsUI_button > .wrsUI_aux_ripple {
   background: rgba(0, 0, 0, 0.12);
 }
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioCorrectAnswerComponent .wrsUI_textField {
+  line-height: 50p;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioCorrectAnswerComponent .wrsUI_toggleButtonsPanel > .wrsUI_toggleButton {
+  flex: auto;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_hyperlinkLabel {
+  color: #000 !important;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_hyperlinkLabel::after {
+  display: none !important;
+}
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toggleButtonsPanel .wrsUI_button.wrsUI_toggleButton {
   font-weight: 300;
   text-transform: none;
@@ -785,6 +778,7 @@
   color: rgba(7, 118, 128, 0.87);
   border-color: rgba(7, 118, 128, 0.87);
   background: rgba(7, 118, 128, 0.12);
+  font-weight: 500;
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioGraphInputOptions > .wrsUI_panel > .wrsUI_label {
   margin-left: 24px;

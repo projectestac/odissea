@@ -25,7 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cleanuptask'] = '“最近活动”板块的清理任务';
 $string['pluginname'] = '课程动态';
+$string['privacy:metadata'] = '“最近活动”板块包含存储在Moodle中其他位置的数据缓存。';
+$string['privacy:metadata:block_recent_activity'] = '最近教师活动的临时日志。两天后移除';
+$string['privacy:metadata:block_recent_activity:action'] = '操作：创建、更新或删除';
+$string['privacy:metadata:block_recent_activity:cmid'] = '课程活动ID';
+$string['privacy:metadata:block_recent_activity:courseid'] = '课程ID';
+$string['privacy:metadata:block_recent_activity:modname'] = '模块类型名称（用于删除操作）';
+$string['privacy:metadata:block_recent_activity:timecreated'] = '执行操作的时间';
+$string['privacy:metadata:block_recent_activity:userid'] = '执行操作的用户';
 $string['recent_activity:addinstance'] = '新增课程动态版块';
 $string['recent_activity:viewaddupdatemodule'] = '查看近期活动板块中新增和更新的模块';
 $string['recent_activity:viewdeletemodule'] = '查看近期活动板块中删除的模块';

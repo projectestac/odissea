@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,7 +11,7 @@
    height="29"
    id="svg2992"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
    sodipodi:docname="angle.svg"
    inkscape:export-filename="C:\projects\GRAPH\resources-graph\icons\circle2.png"
    inkscape:export-xdpi="90"
@@ -35,7 +33,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="64"
+     inkscape:zoom="8"
      inkscape:cx="19.78595"
      inkscape:cy="15.21445"
      inkscape:document-units="px"
@@ -45,13 +43,14 @@
      guidetolerance="10000"
      objecttolerance="10000"
      inkscape:object-nodes="true"
-     inkscape:window-width="2560"
-     inkscape:window-height="1387"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1280"
+     inkscape:window-height="748"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
      inkscape:window-maximized="1"
      inkscape:snap-grids="true"
-     showguides="true">
+     showguides="true"
+     inkscape:document-rotation="0">
     <inkscape:grid
        type="xygrid"
        id="grid3000"
@@ -94,12 +93,6 @@
        sodipodi:end="0.59207448"
        d="m 14.5,1031.8621 a 10,9.9999828 0 0 1 -0.05288,11.0823"
        sodipodi:open="true" />
-    <circle
-       style="fill:#6793a9;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       id="path2984-1-7"
-       cx="52.551144"
-       cy="1033.9872"
-       r="2.5" />
     <path
        id="path937"
        d="m 6.1492703,1037.3636 12.4999997,-8.5"
@@ -112,12 +105,6 @@
        style="fill:none;stroke:#2f4b59;stroke-width:1.00157475;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
-    <circle
-       style="fill:#6793a9;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       id="path2984-1"
-       cx="44.197502"
-       cy="1026.3915"
-       r="2.5" />
     <path
        style="fill:#2f4b59;fill-opacity:0.3137255;stroke:#a0a1a0;stroke-width:0.0625;stroke-opacity:1"
        d="m 10.690053,1039.8174 c -1.950241,-1.3278 -3.5393035,-2.4353 -3.5312502,-2.461 0.026,-0.083 7.0747272,-4.849 7.1254392,-4.8177 0.107531,0.066 0.628158,1.1961 0.826397,1.793 0.560616,1.6881 0.649885,3.3486 0.273985,5.0962 -0.191637,0.8909 -0.75727,2.3254 -1.065446,2.702 -0.07429,0.091 -0.464279,-0.1577 -3.629125,-2.3125 z"

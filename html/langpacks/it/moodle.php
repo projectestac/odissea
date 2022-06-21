@@ -316,7 +316,7 @@ $string['convertingwikitomarkdown'] = 'E\' in corso la conversione del wiki al f
 $string['cookiesenabled'] = 'Il browser deve avere i cookie abilitati';
 $string['cookiesenabled_help'] = 'Il sito utilizza due tipi di cookie:
 
-Il primo è un cookie di sessione ed è normalmente MoodleSession. E\' indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.
+Il primo è un cookie di sessione ed è normalmente chiamato MoodleSession. E\' un cookie essenziale ed è indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.
 
 Il secondo cookie, generalmente chiamato MOODLEID, serve solo per ricordare il proprio username all\'interno del browser. Grazie a questo cookie quando si ritorna a far vista allo stesso sito, il campo della pagina di login sarà già compilato con lo username. Non ci sono problemi a rifiutare questo cookie, l\'unico inconveniente sarà quello di dover inserire nuovamente lo username nella pagina di login.';
 $string['cookiesenabledonlysession'] = 'Il browser deve avere i cookie abilitati';
@@ -1054,7 +1054,7 @@ $string['import'] = 'Importa';
 $string['importdata'] = 'Importa i dati del corso';
 $string['importdataexported'] = 'I dati del corso \'from\' sono stati esportati correttamente..<br /> Prosegui con l\'importazione nel tuo corso \'to\'';
 $string['importdatafinished'] = 'Importazione completa! Accedi al corso';
-$string['importdatafrom'] = 'Trova un corso e importa i dati:';
+$string['importdatafrom'] = 'Scelta del corso e importazione dati:';
 $string['inactive'] = 'Non attivo';
 $string['include'] = 'Includi';
 $string['includeallusers'] = 'Includi tutti gli utenti';

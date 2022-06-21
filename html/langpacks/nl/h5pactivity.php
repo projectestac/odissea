@@ -127,6 +127,7 @@ $string['review_on_completion'] = 'Deelnemers kunnen hun eigen pogingen bekijken
 $string['review_user_attempts'] = 'Bekijk pogingen van gebruikers ({$a})';
 $string['score'] = 'Cijfer';
 $string['score_out_of'] = '{$a->rawscore} op {$a->maxscore}';
+$string['search:activity'] = 'H5P - activiteitsinformatie';
 $string['startdate'] = 'Startdatum';
 $string['statement_received'] = 'xAPI-instructie ontvangen';
 $string['totalscore'] = 'Totaalcijfer';

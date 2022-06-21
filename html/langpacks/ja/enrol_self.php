@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['canntenrol'] = '登録は無効にされているか停止しています。';
 $string['canntenrolearly'] = 'あなたはまだ登録することはできません。登録は {$a} に開始されます。';
 $string['canntenrollate'] = '{$a} に登録が終了したため、あなたはこれ以上登録することはできません。';
-$string['cohortnonmemberinfo'] = 'コーホート「 {$a} 」のメンバーのみ自己登録することができます。';
-$string['cohortonly'] = 'コーホートメンバーのみ';
-$string['cohortonly_help'] = '指定されたコーホートのメンバーにのみ自己登録を制限することができます。この設定の変更により、既存の登録は影響を受けないことに留意してください。';
+$string['cohortnonmemberinfo'] = 'コーホート「 {$a} 」のメンバのみ自己登録することができます。';
+$string['cohortonly'] = 'コーホートメンバのみ';
+$string['cohortonly_help'] = '指定されたコーホートのメンバにのみ自己登録を制限することができます。この設定の変更により、既存の登録は影響を受けないことに留意してください。';
 $string['confirmbulkdeleteenrolment'] = '本当にこれらのユーザ登録を削除してもよろしいですか?';
 $string['customwelcomemessage'] = 'カスタムウェルカムメッセージ';
 $string['customwelcomemessage_help'] = 'プレインテキストまたはHTMLタグおよびmulti-langタグを含むMoodleオートフォーマットとしてカスタムウェルカムメッセージを追加することができます。

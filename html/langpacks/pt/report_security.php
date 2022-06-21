@@ -90,7 +90,7 @@ No entanto, não devem ser definidas regras demasiado exigentes, para que os uti
 $string['check_passwordpolicy_error'] = 'Devem ser definidas regras para as palavras-chaves.';
 $string['check_passwordpolicy_name'] = 'Regras para as senhas';
 $string['check_passwordpolicy_ok'] = 'Estão definidas regras para as palavras-chaves.';
-$string['check_preventexecpath_details'] = '<p>Permitir que os caminhos para executáveis sejam definidos através da interface de Administração, é um vetor para escalonamento de privilégios. Tem de ser forçada no ficheiro config.php:</p><p><code>$CFG->preventexecpath = true;<code></p></p>';
+$string['check_preventexecpath_details'] = '<p>Permitir que os caminhos para executáveis sejam definidos através da interface de Administração é um vetor para escalonamento de privilégios. Tem de ser forçada no ficheiro config.php:</p><p><code>$CFG->preventexecpath = true;</code></p>';
 $string['check_preventexecpath_name'] = 'Caminhos executáveis';
 $string['check_preventexecpath_ok'] = 'Os caminhos executáveis apenas podem ser configurados no config.php.';
 $string['check_preventexecpath_warning'] = 'Os caminhos executáveis podem ser configurados na Administração GUI (Graphical User Interface).';

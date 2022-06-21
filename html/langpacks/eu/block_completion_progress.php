@@ -80,6 +80,7 @@ $string['how_ordering_works_help'] = '<p>Bi era daude Osaketaren Jarraipena blok
 </ul>';
 $string['how_selectactivities_works'] = 'Nola funtzionatzen du jarduerak sartzeak';
 $string['how_selectactivities_works_help'] = '<p>Eskuz sartu beharreko jarduerak aukeratzeko konprobatu "Jarduerak barne" aukeran "Aukeratutako jarduerak" zehaztuta dagoela.</p><p>Soilik osaketaren jarraipena zehaztuta duten jarduerak sartu daitezke.</p><p>Eutsi CTRL teklari jarduera bat baino gehiago aukeratzeko.</p>';
+$string['indeterminate'] = '?';
 $string['lastonline'] = 'Azkenengoz konektatuta';
 $string['mouse_over_prompt'] = 'Sagua blokearen gainean jarri informazio gehiago izateko.';
 $string['no_activities_config_message'] = 'Ez dago jarraipena zehaztuta duen jarduera edo baliabiderik, edo ez da jarduera edo baliabiderik aukeratu. Zehaztu jarraipena jarduera eta baliabideetan eta ondoren bloke honen ezarpenak zehaztu itzazu.';
@@ -97,7 +98,7 @@ $string['pluginname'] = 'Osaketaren Jarraipena';
 $string['privacy:metadata'] = 'Osaketaren Jarraipena blokeak existitzen diren osaketa-datuak erakutsi baino ez du egiten.';
 $string['progress'] = 'Aurrerapena';
 $string['progressbar'] = 'Osaketaren Jarraipena';
-$string['selectitem'] = 'Aukeratu \'{$a}\\';
+$string['selectitem'] = 'Aukeratu \'{$a}\'';
 $string['shortname'] = 'Ikastaroaren izen laburra';
 $string['showallinfo'] = 'Erakutsi informazio guztia';
 $string['showinactive'] = 'Erakutsi ikasle ez-aktiboak ikuspegi orokorrean';

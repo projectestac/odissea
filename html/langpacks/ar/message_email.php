@@ -47,4 +47,5 @@ $string['privacy:metadata:replyto'] = 'عنوان البريد الالكترو�
 $string['privacy:metadata:replytoname'] = 'اسم المستلم للرد';
 $string['privacy:metadata:subject'] = 'سطر الموضوع في الرسالة';
 $string['privacy:metadata:userfrom'] = 'المستخدم المرسِل للرسالة';
+$string['privacy:preference:email'] = 'عنوان البريد الالكتروني المفضل للإشعار';
 $string['tasksendemail'] = 'مراسلات إيجاز الرسائل';

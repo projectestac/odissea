@@ -36,3 +36,4 @@ $string['modeall'] = 'Tout ou rien';
 $string['modeone'] = 'Au moins une';
 $string['modeproportional'] = 'Proportionnel';
 $string['pluginname'] = 'Crédit de participation';
+$string['privacy:metadata'] = 'Le plugin Crédit de participation n\'enregistre aucune donnée personnelle';

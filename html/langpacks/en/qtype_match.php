@@ -48,4 +48,4 @@ $string['privacy:preference:defaultmark'] = 'The default mark set for a given qu
 $string['privacy:preference:penalty'] = 'The penalty for each incorrect try when questions are run using the \'Interactive with multiple tries\' or \'Adaptive mode\' behaviour.';
 $string['privacy:preference:shuffleanswers'] = 'Whether the answers should be automatically shuffled.';
 $string['shuffle'] = 'Shuffle';
-$string['shuffle_help'] = 'If enabled, the order of the statements (answers) is randomly shuffled for each attempt, provided that "Shuffle within questions" in the activity settings is also enabled.';
+$string['shuffle_help'] = 'If enabled, the order of the questions is randomly shuffled for each attempt, provided that "Shuffle within questions" in the activity settings is also enabled. In a matching question, only the questions are affected by this parameter. The answer choices will always be shuffled.';

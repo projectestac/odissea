@@ -245,9 +245,11 @@ $string['emaildigesttype_help'] = 'Tipos de resumos que vai receber diariamente 
 *Assuntos - irá receber um e-mail diário com os assuntos de cada mensagem publicada no fórum.';
 $string['emptymessage'] = 'Foi encontrado um erro na sua mensagem. Ou estava em branco ou continha um anexo demasiado grande. As suas alterações não foram guardadas.';
 $string['errorcannotlock'] = 'Não tem permissão para bloquear tópicos.';
+$string['errordiscussionnotfound'] = 'O tópico não foi encontrado';
 $string['erroremptymessage'] = 'O texto da mensagem não pode estar em branco';
 $string['erroremptysubject'] = 'A assunto da mensagem não pode estar em branco';
 $string['errorenrolmentrequired'] = 'Tem de estar inscrito nesta disciplina para aceder a este conteúdo';
+$string['errorforumnotfound'] = 'Não foi encontrado o fórum ao qual pertence este tópico';
 $string['errorwhiledelete'] = 'Ocorreu um erro ao apagar';
 $string['eventassessableuploaded'] = 'Foi publicado algum conteúdo.';
 $string['eventcoursesearched'] = 'Disciplina procurada';
@@ -497,7 +499,7 @@ $string['nosubscribers'] = 'Ainda não existem subscritores neste fórum';
 $string['notexists'] = 'O tópico já não existe';
 $string['notgraded'] = 'Não avaliado';
 $string['nothingnew'] = 'Nenhuma novidade em {$a}';
-$string['notingroup'] = 'Lamentamos mas tem que pertencer a algum grupo para poder visualizar este fórum.';
+$string['notingroup'] = 'Lamentamos mas tem de pertencer a algum grupo para poder visualizar este fórum.';
 $string['notinstalled'] = 'O módulo Fórum não está instalado';
 $string['notlocked'] = 'Bloquear';
 $string['notpartofdiscussion'] = 'Esta mensagem não faz parte de um tópico de discussão!';
@@ -742,11 +744,11 @@ $string['trackingoff'] = 'Desativada';
 $string['trackingon'] = 'Obrigatória';
 $string['trackingoptional'] = 'Opcional';
 $string['trackingtype'] = 'Assinalar mensagens não lidas';
-$string['trackingtype_help'] = 'A sinalização de mensagens permite que os participantes identifiquem facilmente os tópicos do fórum que ainda não leram, uma vez que estes aparecem assinalados.
+$string['trackingtype_help'] = 'A sinalização de mensagens permite que os participantes identifiquem os tópicos do fórum que ainda não leram, uma vez que estes aparecem assinalados.
 
-Se selecionar a opção "Opcional", os participantes podem optar por ligar ou desligar a sinalização de mensagens através do bloco de administração. Os utilizadores deverão ativar a opção "Assinalar mensagens não lidas nos fóruns"  nas suas preferências do fórum.
+Se selecionar a opção "Opcional", os participantes podem optar por ligar ou desligar a sinalização de mensagens do fórum. Os utilizadores deverão ativar a opção "Assinalar mensagens não lidas nos fóruns" nas suas preferências do fórum.
 
-A opção "Obrigatória" só estará disponível se o administrador a ativar. Ao selecionar esta opção a configuração "Assinalar mensagens não lidas" estará sempre ativada, independentemente das preferências do fórum escolhidas pelos utilizadores.';
+A opção "Obrigatória" só estará disponível se um administrador do site a ativar. Ao selecionar esta opção a configuração "Assinalar mensagens não lidas" estará sempre ativada, independentemente das preferências do fórum escolhidas pelos utilizadores.';
 $string['trackreadposts_header'] = 'Assinalar mensagens não lidas nos fóruns';
 $string['unlockdiscussion'] = 'Desbloquear este tópico';
 $string['unpindiscussion'] = 'Remover destaque deste tópico';

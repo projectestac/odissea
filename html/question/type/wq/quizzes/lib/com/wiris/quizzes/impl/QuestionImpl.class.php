@@ -539,7 +539,7 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 	public function addNewSlotFromModel($slot) {
 		$newSlot = $this->addNewSlot();
 		if($slot !== null) {
-			$newSlot->copyData($slot);
+			$newSlot->copyData($slot, true);
 		}
 		return $newSlot;
 	}

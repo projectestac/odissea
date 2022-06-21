@@ -168,6 +168,7 @@ $string['required'] = 'Necessario';
 $string['requiredcapability'] = 'Privilegio richiesto';
 $string['requiredcapability_help'] = 'Solo gli utenti in possesso del privilegio richiesto potranno accedere al servizio.';
 $string['requiredcaps'] = 'Privilegi richiesti';
+$string['resettokencomplete'] = 'Il token selezionato è stato resettato';
 $string['resettokenconfirm'] = 'Sei sicuro di reimpostare la chiave web service di <strong>{$a->user}</strong> relativa al servizio <strong>{$a->service}</strong>?';
 $string['resettokenconfirmsimple'] = 'Sei sicuro di volere reimpostare questa chiave? Tutti i link che utilizzano questa chiave cesseranno di funzionare.';
 $string['response'] = 'Risposta';

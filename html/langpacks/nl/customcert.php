@@ -74,8 +74,8 @@ $string['elements_help'] = 'Deze lijst van elementen wordt getoond op het certif
 De elementen worden getoond in deze volgorde. De volgorde kan gewijzigd worden met behulp van de pijltjes voor elk element.';
 $string['elementwidth'] = 'Breedte';
 $string['elementwidth_help'] = 'Specificeer de breedte van het element - \'0\' betekent dat er geen breedtebeperking is.';
-$string['emailnonstudentbody'] = 'Bijgevoegd is het certificaat\'{$a->certificatename}\' voor \'{$ a-> userfullname}\' voor de cursus \'{$ a-> coursefullname}\'.';
-$string['emailnonstudentbodyplaintext'] = 'Bijgevoegd is het certificaat\'{$a->certificatename}\' voor \'{$ a-> userfullname}\' voor de cursus \'{$ a-> coursefullname}\'.';
+$string['emailnonstudentbody'] = 'Bijgevoegd is het certificaat \'{$a->certificatename}\' voor \'{$a->userfullname}\' voor de cursus \'{$a->coursefullname}\'.';
+$string['emailnonstudentbodyplaintext'] = 'Bijgevoegd is het certificaat \'{$a->certificatename}\' voor \'{$a->userfullname}\' voor de cursus \'{$a->coursefullname}\'.';
 $string['emailnonstudentcertificatelinktext'] = 'Bekijk certificaatrapport';
 $string['emailnonstudentgreeting'] = 'Hallo';
 $string['emailnonstudentsubject'] = '{$a->coursefullname}: {$a->certificatename}';

@@ -31,3 +31,4 @@ $string['mentees:addinstance'] = '新增一个新学员版块';
 $string['mentees:myaddinstance'] = '在个人主页新增一个新学员版块';
 $string['newmenteesblock'] = '（新学员版块）';
 $string['pluginname'] = '学员';
+$string['privacy:metadata'] = '“学员”板块仅显示存储在其他位置的数据。';

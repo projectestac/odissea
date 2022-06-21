@@ -431,10 +431,10 @@ $string['movecategoryparentconflict'] = 'Não pode fazer da categoria \'{$a}\' u
 $string['mssqlrcsmodemissing'] = 'A base de dados não está a utilizar o modo READ_COMMITTED_SNAPSHOT esperado, o que poderá conduzir a resultados inesperados, principalmente em cenários de alta concorrência. Por favor, proceda à sua ativação para um funcionamento correto. Para mais informações, consulte a documentação <a href="https://docs.moodle.org/en/Installing_MSSQL_for_PHP">Instalação MSSQL para PHP</a>.';
 $string['multiplerecordsfound'] = 'Foram encontrados vários registos, apenas era esperado um registo.';
 $string['multiplerestorenotallow'] = 'Não são permitidas várias restaurações!';
-$string['mustbeloggedin'] = 'Tem que ter uma sessão ativa para fazer isto';
+$string['mustbeloggedin'] = 'Tem de ter uma sessão ativa para fazer isto';
 $string['mustbeteacher'] = 'Só os professores podem ver esta página';
 $string['myisamproblem'] = 'As tabelas da base de dados estão a usar o motor de base de dados MyISAM. É recomendado o uso de um motor compatível com ACID, com suporte completo de transações. Ex: InnoDB.';
-$string['needcopy'] = 'Tem que copiar alguma coisa antes';
+$string['needcopy'] = 'Tem de copiar alguma coisa antes';
 $string['needcoursecategroyid'] = 'Tem de indicar o ID da disciplina ou o ID da categoria';
 $string['needphpext'] = 'Necessita de adicionar suporte {$a} à sua instalação PHP';
 $string['noadmins'] = 'Não há administradores!';

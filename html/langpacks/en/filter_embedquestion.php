@@ -26,8 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['attemptoptions'] = 'Attempt options';
+$string['authorizedsecrets'] = 'Authorized secrets';
+$string['authorizedsecrets_desc'] = 'Add secrets from other servers here, each one per line, so the imported embed questions can work correctly.<br/><br/>The secret of this server is <code>{$a}</code>.';
 $string['chooserandomly'] = 'Choose an embeddable question from this category randomly';
 $string['corruptattempt'] = 'Your previous attempt at a question here has stopped working. If you click continue, it will be removed and a new attempt created.';
+$string['corruptattemptwithreason'] = 'Your previous attempt at a question here has stopped working. ({$a}) If you click continue, it will be removed and a new attempt created.';
 $string['defaultsheading'] = 'Default options for embedding questions';
 $string['defaultsheading_desc'] = 'These are the defaults for the options that control how embedded questions display and function. These are the values that will be used if a particular option is not set when the question is embedded.';
 $string['defaultx'] = 'Default ({$a})';
@@ -45,9 +48,9 @@ $string['howquestionbehaves_desc'] = 'The default behaviour to use for embedded 
 $string['iframetitle'] = 'Embedded question';
 $string['invalidcategory'] = 'The category with idnumber "{$a->catid}" does not exist in "{$a->contextname}".';
 $string['invalidemptycategory'] = 'The category "{$a->catname}" in "{$a->contextname}" does not contain any embeddable questions.';
-$string['invalidquestion'] = 'The question with idnumber "{$a->qid}" does not exist in category "{$a->catname}".';
+$string['invalidquestion'] = 'The question with idnumber "{$a->qid}" does not exist in category "{$a->catname} [{$a->catidnumber}]".';
 $string['invalidrandomquestion'] = 'Cannot generate a random question from the question category "{$a}".';
-$string['invalidtoken'] = 'This question may not be embedded here.';
+$string['invalidtoken'] = 'This embedded question is incorrectly configured.';
 $string['markdp_desc'] = 'The default number of digits that should be shown after the decimal point when displaying grades in embedded questions.';
 $string['markedoutof'] = 'Marked out of';
 $string['marks_desc'] = 'Whether numerical mark information should be shown by default in embedded questions.';
@@ -59,9 +62,13 @@ $string['notyourattempt'] = 'This is not your attempt.';
 $string['pluginname'] = 'Embed questions';
 $string['privacy:metadata'] = 'The Embed questions filter does not store any personal data.';
 $string['questionidnumber'] = 'Question id number';
+$string['questionidnumberchanged'] = 'The question being attempted here no longer has idnumber {$a}.';
+$string['questionnolongerhasidnumber'] = 'The question being attempted here no longer has an idnumber';
+$string['questionnolongerincategory'] = 'The question being attempted here is no longer in the category with idnumber {$a}.';
 $string['responsehistory_desc'] = 'Whether the response history table should be shown by default for embedded questions.';
 $string['restart'] = 'Start again';
 $string['rightanswer_desc'] = 'Whether the automatically generated display of the right answer is shown by default for embedded questions. We recommend that you do not used this, but instead encoruage question authors to explain the right answer in the general feedback.';
+$string['securityheading'] = 'Security settings';
 $string['specificfeedback_desc'] = 'Whether the feedback specific to the student\'s response should be shown by default in embedded questions.';
 $string['taskcleanup'] = 'Clean up old embedded question attempts';
 $string['title'] = 'Embedded question';

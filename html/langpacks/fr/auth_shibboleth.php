@@ -56,7 +56,7 @@ $string['auth_shibboleth_login_long'] = 'Connexion à Moodle via Shibboleth';
 $string['auth_shibboleth_manual_login'] = 'Connexion manuelle';
 $string['auth_shibboleth_select_member'] = 'Je suis membre de…';
 $string['auth_shibboleth_select_organization'] = 'Pour l\'authentification via Shibboleth, veuillez sélectionner votre organisation dans le menu déroulant :';
-$string['auth_shibbolethdescription'] = 'Cette méthode permet de créer et d\'authentifier des utilisateurs avec Shibboleth. Pour des informations sur la configuration, consultez le <a href="{$a}">Shibboleth README</a>.';
+$string['auth_shibbolethdescription'] = 'Cette méthode permet de créer et d\'authentifier des utilisateurs avec Shibboleth. Pour plus d\'informations sur la configuration, consulter le <a href="{$a}">Shibboleth README</a>.';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = 'Le plugin d\'authentification Shibboleth n\'enregistre aucune donnée personnelle.';
 $string['shib_invalid_account_error'] = 'Il semble que vous soyez authentifié via Shibboleth, mais Moodle n\'a pas de compte valide pour votre nom d\'utilisateur. Il est possible que votre compte n\'existe pas ou qu\'il soit suspendu.';

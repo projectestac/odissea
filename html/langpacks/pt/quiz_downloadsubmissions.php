@@ -31,6 +31,6 @@ $string['noattempts'] = 'Nenhuma tentativa encontrada.';
 $string['noessayquestion'] = 'O teste não tem perguntas de desenvolvimento.';
 $string['noquestions'] = 'Ainda não foi adicionada qualquer pergunta.';
 $string['nosubmission'] = 'Nenhuma submissão encontrada.';
-$string['plugindescription'] = 'Descarregar ficheiros submetidos como anexos por todos os alunos (em todas as tentativas) nas resposta a perguntas de desenvolvimento do Teste.';
+$string['plugindescription'] = 'Descarregar ficheiros submetidos como anexos por todos os alunos (em todas as tentativas) nas resposta a perguntas de desenvolvimento do teste.<br><br>';
 $string['pluginname'] = 'Descarregar submissões (perguntas de desenvolvimento)';
 $string['reportdownloadsubmissions'] = 'Descarregar relatório de submissões';

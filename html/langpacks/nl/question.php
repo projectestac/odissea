@@ -217,7 +217,7 @@ $string['hintnoptions'] = 'Hint {no} opties';
 $string['hinttext'] = 'Hint tekst';
 $string['howquestionsbehave'] = 'Hoe vragen zich gedragen';
 $string['howquestionsbehave_help'] = 'Leerlingen kunnen op verschillende manieren interageren met de vragen. Bijvoorbeeld kun je wensen dat de leerlingen elke vraag beantwoorden en dan de test insturen voor er ook maar iets beoordeeld wordt of feedback gegeven wordt. Dat is dan de  "Uitgestelde feedback" modus.
-Je zou ook kunnen willen dat leerlingen bij elke vraag die ze insturen onmiddellijk feedback krijgen, en als ze het niet juist hebben, een tweede kans krijgen voor minder punten. Dat is dan de "Interactief met meerdere pogingen"-modus.';
+Je zou ook kunnen willen dat leerlingen bij elke vraag die ze insturen onmiddellijk feedback krijgen, en als ze het niet juist hebben, een tweede kans krijgen voor een lager cijfer. Dat is dan de "Interactief met meerdere pogingen"-modus.';
 $string['idnumber'] = 'ID nummer';
 $string['idnumber_help'] = 'Indien gebruikt, moet het ID-nummer uniek zijn binnen elke vraagcategorie. Het biedt een andere manier om een vraag te identificeren die soms nuttig is, maar meestal leeg kan blijven.';
 $string['ignorebroken'] = 'Negeer gebroken links';
@@ -234,6 +234,7 @@ $string['importingquestions'] = '{$a} vragen importeren uit bestand';
 $string['importparseerror'] = 'Fout(en) gevonden tijdens het verwerken van het importbestand. Er zijn geen vragen geïmporteerd. Om eventuele juiste vragen te importeren, wijzig de instelling \'Stop bij fout\' naar \'Nee\'';
 $string['importquestions'] = 'Importeer vragen uit een bestand';
 $string['importquestions_help'] = 'Deze functie maakt het mogelijk om verschillende vraagtypes te importeren via een tekstbestand. Merk op dat het bestand UTF-8-encodering moet gebruiken.';
+$string['importwrongfileencoding'] = 'Het geselecteerde bestand is niet in UFT-8-tekencodering. {$a} bestanden moeten UTF-8 gebruiken.';
 $string['importwrongfiletype'] = 'Het type bestand dat je selecteerde ({$a->actualtype}) komt niet overeen met het type dat verwacht werd met dit importformaat ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Onmogelijk teken {$a} gevonden als haakje';
 $string['includesubcategories'] = 'Toon ook vragen uit subcategorieën';
@@ -332,7 +333,7 @@ $string['penaltyfactor_help'] = '<p>Je kunt instellen welk deel van de behaalde 
 $string['penaltyforeachincorrecttry'] = 'Strafpunt voor elke foute poging';
 $string['penaltyforeachincorrecttry_help'] = 'Wanneer je vragen laat lopen met het vraaggedrag \'Interactief met meerdere pogingen\' of met \'Adaptieve modus\', zodat de leerling meerdere pogingen heeft om het antwoord juist te hebben, dan controleert deze optie hoe veel strafpunten ze krijgen voor elke foute poging.
 
-Het aantal strafpunten is een deel van het totaal aantal punten voor de vraag, dus als de vraag drie punten waard is en het aantal strafpunten is 0,3333333, dan zal de leerling een 3 krijgen als die het antwoord van de eerste keer juist heeft, een 3 als die het bij de tweede poging juist heeft en een 1 bij de derde poging.
+Het aantal strafpunten is een deel van het totaalcijfer voor de vraag, dus als de vraag drie punten waard is en het aantal strafpunten is 0,3333333, dan zal de leerling een 3 krijgen als die het antwoord van de eerste keer juist heeft, een 3 als die het bij de tweede poging juist heeft en een 1 bij de derde poging.
 
 Voor sommige vragen uit meerdere delen kan deze beoordelingslogica toegepast worden op elk deel van de vraag. De details hangen af van het vraagtype en kunnen ingewikkeld zijn, maar het principe is om de leerling een cijfer te geven voor de getoonde kennis en dit zo eerlijk mogelijk.';
 $string['permissionedit'] = 'Bewerk deze vraag';

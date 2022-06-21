@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'さらに {no} 個の空白の選択肢を追加する';
 $string['answer'] = '答え';
+$string['blanknumber'] = '空白 {$a}';
 $string['choices'] = '選択肢';
 $string['choicex'] = '選択肢 [[{no}]]';
 $string['combinedcontrolnamegapselect'] = 'ドロップダウンメニュー';

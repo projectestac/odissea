@@ -72,6 +72,16 @@ class qtype_wq_edit_form extends question_edit_form {
             }
         }
 
+        if (isset($this->customfieldpluginenabled)) {
+            // Reference: https://docs.moodle.org/dev/Custom_fields_API .
+            if ($this->customfieldpluginenabled) {
+                // Add custom fields to the form.
+                $this->customfieldhandler = qbank_customfields\customfield\question_handler::create();
+                $this->customfieldhandler->set_parent_context($this->categorycontext); // For question handler only.
+                $this->customfieldhandler->instance_form_definition($mform, empty($this->question->id) ? 0 : $this->question->id);
+            }
+        }
+
         $defaultvalues = array();
         $defaultvalues['wirisquestion'] = $program;
         $mform->setDefaults($defaultvalues);

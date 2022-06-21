@@ -14,6 +14,14 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * This page handles the main question editing screen.
+ *
+ * @package    mod_questionnaire
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright  2016 Mike Churchward (mike.churchward@poetopensource.org)
+ */
+
 require_once("../../config.php");
 require_once($CFG->dirroot.'/mod/questionnaire/questionnaire.class.php');
 require_once($CFG->dirroot.'/mod/questionnaire/classes/question/question.php'); // Needed for question type constants.
@@ -50,7 +58,7 @@ if ($qid) {
 $PAGE->set_url($url);
 $PAGE->set_context($context);
 
-$questionnaire = new questionnaire(0, $questionnaire, $course, $cm);
+$questionnaire = new questionnaire($course, $cm, 0, $questionnaire);
 
 // Add renderer and page objects to the questionnaire object for display use.
 $questionnaire->add_renderer($PAGE->get_renderer('mod_questionnaire'));
@@ -305,7 +313,7 @@ if ($action == 'main') {
 // Reload the form data if called for...
 if ($reload) {
     unset($questionsform);
-    $questionnaire = new questionnaire($questionnaire->id, null, $course, $cm);
+    $questionnaire = new questionnaire($course, $cm, $questionnaire->id, null);
     // Add renderer and page objects to the questionnaire object for display use.
     $questionnaire->add_renderer($PAGE->get_renderer('mod_questionnaire'));
     $questionnaire->add_page(new \mod_questionnaire\output\questionspage());

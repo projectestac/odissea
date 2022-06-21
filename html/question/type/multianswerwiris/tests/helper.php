@@ -98,24 +98,12 @@ class qtype_multianswerwiris_test_helper extends question_test_helper {
         $mc->penalty = 0.0;
         $mc->qtype = 'multichoicewiris';
 
-        $mc->options = new stdClass();
-        $mc->options->layout = 0;
-        $mc->options->single = 1;
-        $mc->options->shuffleanswers = 0;
-        $mc->options->correctfeedback = '';
-        $mc->options->correctfeedbackformat = 1;
-        $mc->options->partiallycorrectfeedback = '';
-        $mc->options->partiallycorrectfeedbackformat = 1;
-        $mc->options->incorrectfeedback = '';
-        $mc->options->incorrectfeedbackformat = 1;
-        $mc->options->answernumbering = 0;
-        $mc->options->shownumcorrect = 0;
-
-        $mc->options->answers = array(
+        $answers = array(
             23 => new question_answer(23, '#b', 1, 'Well done!', FORMAT_HTML),
             24 => new question_answer(24,  '1', 0, '...',        FORMAT_HTML),
             25 => new question_answer(25,  '2', 0, '...',        FORMAT_HTML),
         );
+        $this->set_mc_options($mc, $answers);
 
         $qdata->options = new stdClass();
         $qdata->options->questions = array(
@@ -185,6 +173,24 @@ class qtype_multianswerwiris_test_helper extends question_test_helper {
         $mc->penalty = 0.0;
         $mc->qtype = 'multichoice';
 
+        $answers = array(
+            23 => new question_answer(23, 'y,y,$3', 0, '', FORMAT_HTML),
+            24 => new question_answer(24, '$3,y,y', 0, '', FORMAT_HTML),
+        );
+        $this->set_mc_options($mc, $answers);
+
+        $qdata->options = new stdClass();
+        $qdata->options->questions = array(
+            1 => $mc,
+        );
+
+        $qdata->hints = array(
+        );
+
+        return $qdata;
+    }
+
+    private function set_mc_options($mc, $answers) {
         $mc->options = new stdClass();
         $mc->options->layout = 0;
         $mc->options->single = 1;
@@ -198,20 +204,7 @@ class qtype_multianswerwiris_test_helper extends question_test_helper {
         $mc->options->answernumbering = 0;
         $mc->options->shownumcorrect = 0;
 
-        $mc->options->answers = array(
-            23 => new question_answer(23, 'y,y,$3', 0, '', FORMAT_HTML),
-            24 => new question_answer(24, '$3,y,y', 0, '', FORMAT_HTML),
-        );
-
-        $qdata->options = new stdClass();
-        $qdata->options->questions = array(
-            1 => $mc,
-        );
-
-        $qdata->hints = array(
-        );
-
-        return $qdata;
+        $mc->options->answers = $answers;
     }
 
     /**

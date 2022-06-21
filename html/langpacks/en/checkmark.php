@@ -27,6 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['absent'] = 'Absent';
 $string['activateindividuals'] = 'Activate individual function';
+$string['activitydate:submissionsdue'] = 'Due:';
+$string['activitydate:submissionsopen'] = 'Opens:';
+$string['activitydate:submissionsopened'] = 'Opened:';
 $string['addnewgroupoverride'] = 'Add group override';
 $string['addnewuseroverride'] = 'Add user override';
 $string['addsubmission'] = 'Add submission';

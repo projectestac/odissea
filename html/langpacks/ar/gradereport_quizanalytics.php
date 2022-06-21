@@ -50,3 +50,4 @@ $string['tab4subtab1'] = 'الدرجات حسب النسب المئوية (كل 
 $string['timechartdes'] = 'هذا الرسم البياني يظهر ما أحرزه نظراؤك من درجات مقارنة بك.';
 $string['totalquizattempt'] = 'إجمالي المحاولات';
 $string['userscore'] = 'درجة المستخدم';
+$string['viewanalytics'] = 'معاينة التحليلات';

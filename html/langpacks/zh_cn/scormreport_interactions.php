@@ -26,9 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '交互式报表';
+$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = '是否在SCORM交互报告中显示问题概要';
+$string['privacy:metadata:preference:scorm_report_interactions_resp'] = '是否在SCORM交互报告中显示响应概要';
+$string['privacy:metadata:preference:scorm_report_interactions_result'] = '是否在SCORM交互报告中显示结果概要';
+$string['privacy:metadata:preference:scorm_report_interactions_right'] = '是否在SCORM交互报告中显示正确答案概要';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = '要在SCORM报告中显示的用户数';
 $string['questionx'] = '问题{$a}';
 $string['responsex'] = '回答{$a}';
+$string['resultx'] = '结果{$a}';
 $string['rightanswerx'] = '正确的答案{$a}';
 $string['summaryofquestiontext'] = '问题汇总';
 $string['summaryofresponse'] = '回答汇总';
+$string['summaryofresult'] = '结果摘要';
 $string['summaryofrightanswer'] = '正确答案汇总';

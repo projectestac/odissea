@@ -14,10 +14,23 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Upgrade script for mod_journal
+ *
+ * @package mod_journal
+ * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ **/
 defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->dirroot.'/mod/journal/lib.php');
 
+/**
+ * Upgrade steps for mod_journal
+ *
+ * @param integer $oldversion Old plugin version
+ * @return bool True if succesfull, false otherwise
+ */
 function xmldb_journal_upgrade($oldversion=0) {
     global $DB;
 
@@ -67,6 +80,30 @@ function xmldb_journal_upgrade($oldversion=0) {
 
         // Journal savepoint reached.
         upgrade_mod_savepoint(true, 2012032001, 'journal');
+    }
+
+    if ($oldversion < 2022041100) {
+
+        // Changing the default of field rating on table
+        // journal_entries to fix
+        // https://github.com/elearningsoftware/moodle-mod_journal/issues/61.
+        $table = new xmldb_table('journal_entries');
+        $field = new xmldb_field('rating', XMLDB_TYPE_INTEGER, '10', null, null, null, -1, 'format');
+
+        // Launch change of default for field rating.
+        $dbman->change_field_default($table, $field);
+
+        // Updating the non-marked entries with rating = -1.
+        $entries = $DB->get_records('journal_entries', array('timemarked' => 0));
+        if ($entries) {
+            foreach ($entries as $entry) {
+                $entry->rating = -1;
+                $DB->update_record('journal_entries', $entry);
+            }
+        }
+
+        // Journal savepoint reached.
+        upgrade_mod_savepoint(true, 2022041100, 'journal');
     }
 
     return true;

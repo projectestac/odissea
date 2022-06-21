@@ -577,17 +577,6 @@ $string['spaceleft'] = 'Verfügbarer Platz';
 $string['spacesleft'] = 'Verfügbarer Platz';
 $string['startendtimeknown'] = 'Beginn und Ende sind bekannt';
 $string['starttimenotset'] = 'Beginn ist nicht angegeben';
-$string['statuschangebookedmessage'] = 'Guten Tag {$a->participant},
-
-Ihr Buchungsstatus hat sich geändert. Sie haben {$a->title} gebucht
-
-Status der Buchung: {$a->status}
-Nutzer/in: {$a->participant}
-Titel: {$a->title}
-Termin: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Link: {$a->bookinglink}
-Kurs: {$a->courselink}';
-$string['statuschangebookedsubject'] = 'Buchungstatus für {$a->title} geändert';
 $string['statuschangetext'] = 'Benachrichtigung über Statusänderung';
 $string['statuschangetext_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
 <ul>

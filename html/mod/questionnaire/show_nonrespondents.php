@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- *
+ * Show the non-respondents to a questionnaire.
  * @author Joseph Rézeau (copied from feedback plugin show_nonrespondents by original author Andreas Grabs)
+ * @copyright  2016 Mike Churchward (mike.churchward@poetopensource.org)
  * @license http://www.gnu.org/copyleft/gpl.html GNU Public License
- * @package    mod
- * @subpackage questionnaire
+ * @package mod_questionnaire
  *
  */
 
@@ -78,7 +78,7 @@ require_course_login($course, true, $cm);
 $url = new moodle_url('/mod/questionnaire/show_nonrespondents.php', array('id' => $cm->id));
 $PAGE->set_url($url);
 
-$questionnaire = new questionnaire($sid, $questionnaire, $course, $cm);
+$questionnaire = new questionnaire($course, $cm, $sid, $questionnaire);
 
 // Add renderer and page objects to the questionnaire object for display use.
 $questionnaire->add_renderer($PAGE->get_renderer('mod_questionnaire'));

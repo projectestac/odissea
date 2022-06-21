@@ -30,6 +30,7 @@ $string['contentbank:accesscoursecategorycontent'] = '访问课程类别内容�
 $string['contentbank:accesscoursecontent'] = '访问课程内容库文件';
 $string['contentbank:accessgeneralcontent'] = '访问系统内容库文件';
 $string['contentbank:view'] = '查看内容库存储库';
+$string['emptyfilelist'] = '没有要显示的文件';
 $string['pluginname'] = '内容库';
 $string['pluginname_help'] = '内容库中的文件';
 $string['privacy:metadata'] = '内容库存储库插件不存储或传输任何个人数据。';

@@ -97,7 +97,7 @@ $string['auth_ldapdescription'] = 'Cette méthode permet l\'authentification aup
 $string['auth_ldapextrafields'] = '<p>Ces zones sont facultatives. Il vous est possible de remplir certains champs de Moodle avec des données provenant des <strong>attributs de l\'annuaire LDAP</strong>.</p><p>Si vous laissez ces zones vides, aucune donnée ne sera récupérée de l\'annuaire LDAP et les valeurs par défaut de Moodle seront utilisées.</p><p>Dans tous les cas, l\'utilisateur a la possibilité de modifier tous ces champs, une fois connecté.</p>';
 $string['auth_ldapnotinstalled'] = 'Impossible d\'utiliser l\'authentification LDAP. Le module PHP LDAP n\'est pas installé.';
 $string['auth_ntlmsso'] = 'SSO NTLM';
-$string['auth_ntlmsso_enabled'] = 'Sélectionner Oui pour authentifier les utilisateurs via un domaine NTLM. Remarque : pour fonctionner, cette méthode d\'authentification requiert d\'autres réglages sur votre serveur. Voir <a href="https://docs.moodle.org/fr/Authentification_NTLM">https://docs.moodle.org/fr/Authentification_NTLM</a>';
+$string['auth_ntlmsso_enabled'] = 'Sélectionner Oui pour authentifier les utilisateurs via un domaine NTLM. Remarque : pour fonctionner, cette méthode d\'authentification requiert d\'autres réglages sur votre serveur. Voir la documentation <a href="https://docs.moodle.org/fr/Authentification_NTLM">Authentification NTLM</a> pour plus d\'information.';
 $string['auth_ntlmsso_enabled_key'] = 'Activer';
 $string['auth_ntlmsso_ie_fastpath'] = 'Activer le chemin rapide NTLM SSO (saute certaines étapes si le navigateur client est Internet Explorer).';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Tenter NTLM avec tous les navigateurs';
@@ -158,7 +158,7 @@ $string['updatepasserrorexpiregrace'] = 'Erreur dans user_update_password() lors
 $string['updateremfail'] = 'Erreur de modification de l\'enregistrement LDAP. Code d\'erreur : {$a->errno} ; Texte d\'erreur : {$a->errstring}<br/>Clef ({$a->key}) - ancienne valeur moodle : « {$a->ouvalue} » ; nouvelle valeur : « {$a->nuvalue} »';
 $string['updateremfailamb'] = 'Échec de la mise à jour de LDAP sur le champ ambigu {$a->key} ; ancienne valeur moodle : « {$a->ouvalue} » ; nouvelle valeur : « {$a->nuvalue} »';
 $string['updateremfailfield'] = 'Échec de modification LDAP avec un champ non existant (« {$a->ldapkey} »). Clef ({$a->key}) - ancienne valeur Moodle : « {$a->ouvalue} », nouvelle valeur : « {$a->nuvalue} »';
-$string['updateusernotfound'] = 'Impossible de trouver l\'utilisateur lors de la mise à jour externe. Des détails suivent. Base de recherche : « {$a->userdn} »; filtre de recherche : « (objectClass=*) »; attributs de recherche : {$a->attribs}';
+$string['updateusernotfound'] = 'Impossible de trouver l\'utilisateur lors de la mise à jour externe. Des informations suivent. Base de recherche : « {$a->userdn} »; filtre de recherche : « (objectClass=*) »; attributs de recherche : {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'La fonction auth: ldap user_activate() ne supporte pas le type d\'utilisateur sélectionné : {$a}';
 $string['user_disablenotsupportusertype'] = 'La fonction auth: ldap user_disable() ne supporte pas le type d\'utilisateur sélectionné : {$a}';
 $string['useracctctrlerror'] = 'Erreur lors de la récupération de userAccountControl pour {$a}';
