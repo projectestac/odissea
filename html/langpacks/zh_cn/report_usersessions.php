@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['mysessions'] = '我的活动会话';
 $string['navigationlink'] = '浏览器会话';
 $string['pluginname'] = '用户会话报表';
+$string['privacy:metadata'] = '用户会话报告插件不存储任何个人数据。';
 $string['thissession'] = '当前会话';
 $string['usersessions:manageownsessions'] = '管理用户的浏览器会话';

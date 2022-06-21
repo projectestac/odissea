@@ -29,4 +29,5 @@ $string['blog_recent:addinstance'] = '新增一个博客文章版块';
 $string['norecentblogentries'] = '最近没有发表新博客';
 $string['numentriestodisplay'] = '显示几篇最近的博客文章';
 $string['pluginname'] = '最近博客更新';
+$string['privacy:metadata'] = '“最近的博客条目”板块仅显示存储在其他位置的数据。';
 $string['recentinterval'] = '多长时间以内算“最近”';

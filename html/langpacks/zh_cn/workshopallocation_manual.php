@@ -32,4 +32,5 @@ $string['allocationexists'] = '分配方案已经存在';
 $string['areyousuretodeallocate'] = '您确定要解除分配已选定的评价吗？';
 $string['areyousuretodeallocategraded'] = '您将删除已评分的评价。您真的确定要这么做吗？';
 $string['pluginname'] = '手动分配';
+$string['privacy:metadata:preference:perpage'] = '用户希望在一页上看到的已分配评价数量。';
 $string['showallparticipants'] = '显示所有参与者';

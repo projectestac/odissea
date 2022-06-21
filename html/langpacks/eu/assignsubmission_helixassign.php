@@ -26,6 +26,22 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowhelixassignsubmissions'] = 'Gaituta';
-$string['default'] = 'Berez gaituta';
+$string['default'] = 'Gaituta modu lehenetsian';
+$string['default_help'] = 'Markatuz gero, zeregin berri guztietan bidalketa metodo hau gaituta egongo da modu lehenetsian.';
+$string['enabled'] = 'MEDIAL Bideo Zereginak gaituta';
+$string['enabled_help'] = 'Gaituz gero, ikasleek bideoak bidali ahalko dituzte MEDIAL bidalketa-mota erabilita.';
+$string['eventassessableuploaded'] = 'MEDIAL bidalketa igo egin da.';
+$string['helixassign'] = 'MEDIAL Bideo Zeregina';
+$string['helixassign:can_use'] = 'Zeregin-jarduera berriak sortzerakoan bideo-bidalketak gaitu ditzake';
+$string['helixassignfilename'] = 'helixassign.html';
+$string['helixassignsubmission'] = 'Baimendu MEDIAL Bideo Zeregina';
+$string['helixsubmissionlog'] = 'MEDIAL Bidalketa';
+$string['no_permission'] = 'Ez duzu MEDIAL Bideo Zereginak erabiltzeko baimenik';
+$string['nopermission'] = 'Ez duzu MEDIAL Bideo Zereginak erabiltzeko baimenik';
+$string['nosubmission'] = 'Ez da ezer bidali MEDIALera zeregin honetarako';
+$string['nosubmissionshort'] = 'MEDIAL bidalketarik ez';
+$string['pluginname'] = 'MEDIAL Zeregina';
 $string['version_warning_head'] = 'KONTUZ';
-$string['view_submission'] = 'Ikusi bidalketa';
+$string['version_warning_mes'] = 'MEDIAL bidalketa pluginak MEDIAL jarduera moduluaren';
+$string['version_warning_mes2'] = 'bertsioa zure Moodle sisteman instalatuta izatea behar du.';
+$string['view_submission'] = 'Ikusi Bideo Bidalketa';

@@ -33,10 +33,40 @@
 		"tt_length": "${tt_length}",
 		"tt_labels": "${tt_labels}",
 		"tt_elementMML": "${tt_elementMML}",
+		"tt_image": "${tt_image}",
 
 		"tt_bold": "${bold}",
 		"tt_italic": "${italic}",
 		"tt_color": "${color}",
+
+		"tt_barChart": "${tt_barChart}",
+		"tt_newPackBars": "${tt_newPackBars}",
+		"tt_newSideBars": "${tt_newSideBars}",
+		"tt_deletePackBars": "${tt_deletePackBars}",
+		"tt_deleteSideBars": "${tt_deleteSideBars}",
+		"tt_stackBars": "${tt_stackBars}",
+		"tt_unstackBars": "${tt_unstackBars}", 
+
+		"tt_pieChart": "${tt_pieChart}",
+		"tt_newPie": "${tt_newPie}",
+		"tt_deletePie": "${tt_deletePie}",
+		"tt_newPieClockwise": "${tt_newPieClockwise}",
+		"tt_newPieCounterclockwise": "${tt_newPieCounterclockwise}",
+		"tt_pie2D": "${tt_pie2D}",
+		"tt_pie3D": "${tt_pie3D}",
+		
+		"tt_lineChart": "${tt_lineChart}",
+		"tt_newLineLineChart": "${tt_newLineLineChart}",
+		"tt_newPointsLineChart": "${tt_newPointsLineChart}",
+		"tt_deleteLineLineChart": "${tt_deleteLineLineChart}",
+		"tt_deletePointsLineChart": "${tt_deletePointsLineChart}",
+		"tt_addPointsLeft": "${tt_addPointsLeft}",
+		"tt_addPointsRight": "${tt_addPointsRight}",
+
+		"tt_fitPlotterToStats": "${tt_fitPlotterToStats}",
+		"tt_horizontal": "${tt_horizontal}",
+		"tt_vertical": "${tt_vertical}",
+		"tt_pointDiameter": "${tt_pointDiameter}",
 
 		"tt_fraction": "${fraction}",
 		"tt_superscript": "${superscript}",
@@ -129,6 +159,9 @@
 		"sizeInPixels": "${sizeInPixels}",
 		"insertANumber": "${insertANumber}",
 
+		"uploadImageErrorTitle": "${uploadImageErrorTitle}",
+		"uploadImageErrorText": "${uploadImageErrorText}",
+
 		"type_point": "${geometry_element_type_point}",
 		"type_line": "${geometry_element_type_line}",
 		"type_line_segment": "${geometry_element_type_line_segment}",
@@ -157,6 +190,12 @@
 		"type_length": "${geometry_element_type_length}",
 		"type_distance": "${geometry_element_type_distance}",
 		"type_label": "${geometry_element_type_label}",
+		
+		"type_bar_chart": "${statistics_element_type_bar_chart}",
+		"type_line_chart": "${statistics_element_type_line_chart}",
+		"type_pie_chart": "${statistics_element_type_pie_chart}",
+		"type_box_plot": "${statistics_element_type_box_plot}",
+		"type_histogram": "${statistics_element_type_histogram}",
 
 		"equation": "${equation}"
 	}

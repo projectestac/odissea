@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '纯文本';
+$string['privacy:metadata'] = '纯文本区域编辑器插件不存储任何个人数据。';

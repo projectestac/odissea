@@ -47,4 +47,4 @@ $string['privacy:preference:defaultmark'] = 'Le nombre de points par défaut pou
 $string['privacy:preference:penalty'] = 'La pénalité pour chaque tentative incorrecte lorsque les questions sont utilisées dans le comportement « Interactif avec essais multiples » ou « Adaptatif ».';
 $string['privacy:preference:shuffleanswers'] = 'Si les réponses doivent être mélangées automatiquement.';
 $string['shuffle'] = 'Mélanger';
-$string['shuffle_help'] = 'Si vous activez cette option, les réponses seront mélangées aléatoirement avant chaque tentative, pour autant que l\'option « Mélanger les réponses possibles » soit activée dans les paramètres du test.';
+$string['shuffle_help'] = 'Si ce réglage est activé, l\'ordre des questions est fixé aléatoirement avant chaque tentative, pour autant que l\'option « Mélanger les réponses possibles » soit activée dans les paramètres du test. Dans une question d\'appariement, seules les questions sont affectées par ce réglage. Les choix de réponses sont toujours mélangés aléatoirement.';

@@ -22,21 +22,20 @@
  * @copyright  2016
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
  */
-
 defined('MOODLE_INTERNAL') || die();
 
 global $CFG;
 require_once($CFG->dirroot . '/filter/wiris/filter.php');
 require_once($CFG->dirroot . '/filter/wiris/integration/lib/com/wiris/system/CallWrapper.class.php');
 
-class filter_wiris_filter_performance_svg_testcase extends advanced_testcase
-{   protected $wirisfilter;
+class filter_performance_svg_test extends advanced_testcase {
+    protected $wirisfilter;
     protected $safexml;
     protected $xml;
     protected $image;
     protected $cachetable;
 
-    protected function setUp() {
+    protected function setUp(): void {
         parent::setUp();
         $this->resetAfterTest(true);
         filter_wiris_pluginwrapper::set_configuration(array('wirispluginperformance' => 'true',

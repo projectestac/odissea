@@ -47,6 +47,12 @@ $string['cfg_err_invalidauthendpoint'] = 'Неверная конечная то
 $string['cfg_err_invalidclientid'] = 'Неверный ID клиента';
 $string['cfg_err_invalidclientsecret'] = 'Неверный ключ клиента';
 $string['cfg_err_invalidtokenendpoint'] = 'Неверная конечная точка авторизации';
+$string['cfg_field_mapping_desc'] = 'Данные профиля пользователя Moodle можно сопоставить с данными провайдера идентификации (IdP) OpenID Connect.<br/>
+<ул>
+<li>Основные данные профиля доступны из токенов ID всех провайдеров идентификации.</li>
+<li>Если  в качестве IdP используется Azure AD, то дополнительные данные профиля можно сделать доступными, установив и настроив <a href="https://moodle.org/plugins/local_o365">подключаемый модуль интеграции Microsoft 365 (local_o365)< /а>.</li>
+<li>Если в подключаемом модуле local_o365 включена функция синхронизации профиля SDS, то определенные поля профиля можно синхронизировать из SDS в Moodle при выполнении запланированной задачи "Синхронизация с SDS". <br/>При этом синхронизации не будет ни при выполнении запланированной задачи "Синхронизация пользователей с Azure AD", ни при входе пользователя в систему.</li>
+</ul>';
 $string['cfg_forceredirect_desc'] = 'При включенном параметре страница входа в систему будет пропущена и произойдет перенаправление на страницу OpenID Connect. Можно обойти с помощью параметра URL  ?noredirect=1';
 $string['cfg_forceredirect_key'] = 'Принудительно перенаправлять';
 $string['cfg_icon_desc'] = 'Значок, отображаемый рядом с именем провайдера на странице входа.';
@@ -164,6 +170,7 @@ $string['privacy:metadata:auth_oidc_token:token'] = 'Токен';
 $string['privacy:metadata:auth_oidc_token:tokenresource'] = 'Ресурс токена';
 $string['privacy:metadata:auth_oidc_token:userid'] = 'ID пользователя Moodle.';
 $string['privacy:metadata:auth_oidc_token:username'] = 'Логин пользователя Moodle.';
+$string['settings_fieldmap_feild_not_mapped'] = '(не сопоставлено)';
 $string['table_action'] = 'Действие';
 $string['table_matching_details'] = 'Подробности';
 $string['table_oidc_username'] = 'Логин OIDC';
@@ -182,3 +189,5 @@ $string['ucp_o365accountconnected'] = 'Эта учетная запись Micros
 $string['ucp_status_disabled'] = 'Отключено';
 $string['ucp_status_enabled'] = 'Включено';
 $string['ucp_title'] = 'Управление {$a}';
+$string['update_oncreate_and_onlogin_and_usersync'] = 'При создании, при каждом входе и при каждом запуске синхронизации пользователя';
+$string['update_onlogin_and_usersync'] = 'При каждом входе и при каждом запуске синхронизации пользователя';

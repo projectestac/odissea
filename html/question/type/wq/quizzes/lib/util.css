@@ -383,13 +383,7 @@ md-elevation-transition {
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-@font-face {
-  font-family: "Material Icons";
-  font-weight: 400;
-  font-style: normal;
-  src: url("fonts/MaterialIcons-Regular.eot");
-  src: url("fonts/MaterialIcons-Regular.eot?#iefix") format("eot"), url("fonts/MaterialIcons-Regular.woff") format("woff"), url("fonts/MaterialIcons-Regular.ttf") format("truetype"), url("fonts/MaterialIcons-Regular.svg#") format("svg");
-}
+
 .wrsUI_app .wrsUI_aux_materialIcon {
   font-family: "Material Icons";
   font-weight: normal;
@@ -1427,10 +1421,10 @@ md-elevation-transition {
 }
 
 .wrsUI_app .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer {
-  background: url("decoration/drawing_panel_empty.svg?v=4.4.2") center center no-repeat;
+  background: url("decoration/drawing_panel_empty.svg?v=4.5.0") center center no-repeat;
 }
 .wrsUI_app .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer canvas {
-  background: url("decoration/drawing_panel_grid.png?v=4.4.2");
+  background: url("decoration/drawing_panel_grid.png?v=4.5.0");
 }
 .wrsUI_app .wrsUI_drawingPanel .wrsUI_aux_canvasContainer {
   position: absolute;
@@ -2953,6 +2947,11 @@ md-elevation-transition {
 .wrsUI_app .wrsUI_chip.wrsUI_chipOutlined {
   background: #fff;
   border: 1px solid #ededed;
+}
+.wrsUI_app .wrsUI_chip:disabled {
+  background: rgba(0, 0, 0, 0.05) !important;
+  color: rgba(0, 0, 0, 0.35) !important;
+  cursor: not-allowed;
 }
 
 .wrsUI_app.wrsUI_animated .wrsUI_chip {

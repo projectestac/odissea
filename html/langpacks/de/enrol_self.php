@@ -33,7 +33,7 @@ $string['cohortonly'] = 'Nur für Mitglieder der globalen Gruppe';
 $string['cohortonly_help'] = 'Die Selbsteinschreibung kann auf Mitglieder einer globalen Gruppe beschränkt werden. Eine Änderung dieser Einstellung wirkt sich nicht auf bestehende Einschreibungen aus.';
 $string['confirmbulkdeleteenrolment'] = 'Möchten Sie die Einschreibungen dieser Nutzer/innen wirklich löschen?';
 $string['customwelcomemessage'] = 'Begrüßungstext';
-$string['customwelcomemessage_help'] = 'Ein Begrüßungstext kann ein unformatierter Text sein oder im Moodle-Auto-Format auch HTML-Tags und Multi-lang-Tags enthalten.
+$string['customwelcomemessage_help'] = 'Ein Begrüßungstext kann ein einfacher Text sein oder im Moodle-Auto-Format auch HTML-Tags und MultiLang-Tags enthalten.
 
 Sie können folgende Platzhalter im Text verwenden:
 
@@ -66,11 +66,11 @@ Ihr E-Learning-Team';
 $string['expirymessageenrolledsubject'] = 'In Kürze endet Ihr Kurs';
 $string['expirymessageenrollerbody'] = 'Guten Tag,
 
-im Kurs \'{$a->course}\' läuft für folgende Nutzer/in/nen innerhalb der nächsten  {$a->threshold}  die Einschreibung ab:
+im Kurs \'{$a->course}\' läuft für folgende Nutzer/innen innerhalb der nächsten  {$a->threshold} die Einschreibung ab:
 
 {$a->users}
 
-Sie können auf der folgenden Seite die Teilnahmedauer indivduell verlängern oder entfristen (jeweils über das Zahnrad): {$a->extendurl}
+Sie können auf der folgenden Seite die Teilnahmedauer indivduell verlängern oder entfristen: {$a->extendurl}
 
 Ihr E-Learning-Team';
 $string['expirymessageenrollersubject'] = 'In Kürze endet Ihr Kurs';

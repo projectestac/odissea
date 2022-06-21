@@ -51,6 +51,34 @@ class behat_wq_base extends behat_base {
     }
 
     /**
+     * Goes back in the Wiris Quizzes Studio interface.
+     *
+     * @When I go back in Wiris Quizzes Studio
+     */
+    public function i_go_back_in_wiris_quizzes_studio() {
+        $node = $this->get_text_selector_node(
+            'xpath_element',
+            "//*[@id='wrsUI_quizzesStudioBackButton']"
+        );
+        $this->ensure_node_is_visible($node);
+        $node->click();
+    }
+
+    /**
+     * Saves Wiris Quizzes Studio.
+     *
+     * @When I save Wiris Quizzes Studio
+     */
+    public function i_save_wiris_quizzes_studio() {
+        $node = $this->get_text_selector_node(
+            'xpath_element',
+            "//*[@id='wrsUI_quizzesStudioHomeSaveButton']"
+        );
+        $this->ensure_node_is_visible($node);
+        $node->click();
+    }
+
+    /**
      * Opens the n instance of Wiris Quizzes Studio when editing a question.
      *
      * @When I Open Wiris Quizzes Studio Instance :instance

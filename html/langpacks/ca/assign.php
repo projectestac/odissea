@@ -85,7 +85,7 @@ $string['assignsubmissionpluginname'] = 'Connector de la tramesa';
 $string['attemptheading'] = 'Intent {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Intents previs';
 $string['attemptnumber'] = 'Número d\'intent';
-$string['attemptreopenmethod'] = 'Intents reoberts';
+$string['attemptreopenmethod'] = 'Intents addicionals';
 $string['attemptreopenmethod_help'] = 'Determina com es tornen a obrir els intents de trameses de l\'estudiant. Les opcions disponibles són les següents:
 <ul>
 <li>Mai. La tramesa de l\'estudiant no es pot tornar a obrir.</li>
@@ -373,7 +373,7 @@ $string['offline'] = 'No es requereix cap tramesa en línia';
 $string['open'] = 'Obert';
 $string['outlinegrade'] = 'Qualificació: {$a}';
 $string['outof'] = '{$a->current} de {$a->total}';
-$string['overdue'] = '<font color="red">La tasca ha vençut fa: {$a}</font>';
+$string['overdue'] = 'La tasca ha vençut fa: {$a}';
 $string['override'] = 'Excepció';
 $string['overridegroup'] = 'Estableix una excepció per al grup';
 $string['overridegroupeventname'] = '{$a->assign} - {$a->group}';

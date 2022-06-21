@@ -49,6 +49,6 @@ $string['pluginname'] = '离线评分表格';
 $string['privacy:nullproviderreason'] = '此插件没有存储用户信息的数据库。它只使用 mod_assign模块中的应用程序接帮助显示成绩界面。';
 $string['processgrades'] = '导入成绩';
 $string['skiprecord'] = '跳过记录';
-$string['updatedgrades'] = '更新{$a}的分数及反馈';
+$string['updatedgrades'] = '更新了<strong>{$a->gradeupdatescount}</strong> 等级和<strong>{$a->feedbackupdatescount}</strong> 反馈实例。';
 $string['updaterecord'] = '更新记录';
 $string['uploadgrades'] = '上传计分评价表';

@@ -80,13 +80,15 @@
 		"quizzes_studio_toolbar_back_button_tooltip": "${quizzes_studio_toolbar_back_button_tooltip}",
 		"quizzes_studio_toolbar_test_question_button_tooltip": "${quizzes_studio_toolbar_test_question_button_tooltip}",
 		"quizzes_studio_toolbar_help_button_tooltip": "${quizzes_studio_toolbar_help_button_tooltip}",
-		"quizzes_studio_toolbar_send_feedback_button_tooltip": "${quizzes_studio_toolbar_send_feedback_button_tooltip}",
+		"quizzes_studio_send_feedback_label": "${quizzes_studio_send_feedback_label}",
+		"quizzes_studio_training_label": "${quizzes_studio_training_label}",
+		"quizzes_studio_website_label": "${quizzes_studio_website_label}",
+		"quizzes_studio_report_issue_label": "${quizzes_studio_report_issue_label}",
 
 		"quizzes_studio_toolbar_more_options_dropdown_tooltip": "${quizzes_studio_toolbar_more_options_dropdown_tooltip}",
 		"quizzes_studio_toolbar_more_options_dropdown_import_label": "${quizzes_studio_toolbar_more_options_dropdown_import_label}",
 		"quizzes_studio_toolbar_more_options_dropdown_export_label": "${quizzes_studio_toolbar_more_options_dropdown_export_label}",
 		"quizzes_studio_toolbar_more_options_dropdown_view_source_label": "${quizzes_studio_toolbar_more_options_dropdown_view_source_label}",
-		"quizzes_studio_toolbar_more_options_dropdown_send_feedback_label": "${quizzes_studio_toolbar_more_options_dropdown_send_feedback_label}",
 		"quizzes_studio_toolbar_more_options_dropdown_help_label": "${quizzes_studio_toolbar_more_options_dropdown_help_label}",
 		"quizzes_studio_toolbar_more_options_dropdown_about_label": "${quizzes_studio_toolbar_more_options_dropdown_about_label}",
 
@@ -109,6 +111,7 @@
 		"quizzes_studio_home_initial_graph_content_label": "${quizzes_studio_home_initial_graph_content_label}",
 		"quizzes_studio_home_correct_graph_answer_label": "${quizzes_studio_home_correct_graph_answer_label}",
 
+		"quizzes_studio_home_activity_list_label": "${quizzes_studio_home_activity_list_label}",
 		"quizzes_studio_home_input_options_label": "${quizzes_studio_home_input_options_label}",
 		"quizzes_studio_home_validation_options_label": "${quizzes_studio_home_validation_options_label}",
 		"quizzes_studio_home_variables_options_label": "${quizzes_studio_home_variables_options_label}",
@@ -535,7 +538,24 @@
 		"answer": "${answer}",
 
 		"quizzes_studio_home_copy_initial_content_button_text": "${quizzes_studio_home_copy_initial_content_button_text}",
-		"quizzes_studio_home_copy_correct_answer_button_text": "${quizzes_studio_home_copy_correct_answer_button_text}"
+		"quizzes_studio_home_copy_correct_answer_button_text": "${quizzes_studio_home_copy_correct_answer_button_text}",
+		"quizzes_studio_home_answer_type_geometry_label": "${quizzes_studio_home_answer_type_geometry_label}",
+		"quizzes_studio_home_answer_type_statistical_charts_label": "${quizzes_studio_home_answer_type_statistical_charts_label}",
+		
+		"quizzes_studio_home_correct_answer_description_math": "${quizzes_studio_home_correct_answer_description_math}",
+		"quizzes_studio_home_correct_answer_description_graphic": "${quizzes_studio_home_correct_answer_description_graphic}",
+		"quizzes_studio_home_correct_answer_description_text": "${quizzes_studio_home_correct_answer_description_text}",
+		"quizzes_studio_home_initial_content_description_math": "${quizzes_studio_home_initial_content_description_math}",
+		"quizzes_studio_home_initial_content_description_graphic": "${quizzes_studio_home_initial_content_description_graphic}",
+		"quizzes_studio_home_initial_content_description_text": "${quizzes_studio_home_initial_content_description_text}",
+				
+		"quizzes_studio_home_product_message_header_label": "${quizzes_studio_home_product_message_header_label}",
+		"quizzes_studio_home_product_message_text_label": "${quizzes_studio_home_product_message_text_label}",
+		"quizzes_studio_home_product_message_release_notes_link": "${quizzes_studio_home_product_message_release_notes_link}",		
+
+		"quizzes_studio_input_options_answer_input_method_initial_content_label": "${quizzes_studio_input_options_answer_input_method_initial_content_label}",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "${quizzes_studio_input_options_answer_input_method_lock_initial_content_label}",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "${quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text}"
 	}
 }
 

@@ -26,8 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['attemptoptions'] = 'Saiakeren aukerak';
+$string['authorizedsecrets'] = 'Baimendutako sekretuak';
+$string['authorizedsecrets_desc'] = 'Gehitu itzazu hemen beste zerbitzarietako sekretuak, errenkada bakoitzean bat, inportatutako galdera txertatuek ondo funtzionatu dezaten.<br/><br/>Zerbitzari honen sekretua <code>{$a}</code> da.';
 $string['chooserandomly'] = 'Aukeratu ausaz txertatzeko galdera bat kategoria honetatik';
 $string['corruptattempt'] = 'Hemengo galdera bateko zure aurreko saiakeraren funtzionamendua eten egin da. Jarraitzen baduzu aurreko saiakera ezabatu eta berri bat sortuko da.';
+$string['corruptattemptwithreason'] = 'Hemengo galdera bateko zure aurreko saiakerak funtzionatzeari utzi dio. ({$a}) Jarraitu estekan klik eginez gero, aurreko saiakera ezabatu eta saiakera berri bat sortuko da.';
 $string['defaultsheading'] = 'Galderak txertatzeko lehenetsitako aukerak';
 $string['defaultsheading_desc'] = 'Hauek dira txertatutako galderak erakutsi eta funtzionatzeko lehenetsitako aukerak. Balio hauek erabiliko dira galdera bat txertatzean aukeraren bat zehazten ez bada.';
 $string['defaultx'] = 'Lehenetsitakoa ({$a})';
@@ -45,9 +48,9 @@ $string['howquestionbehaves_desc'] = 'Galdera txertatuetan erabiltzeko jokaera l
 $string['iframetitle'] = 'Galdera txertatua';
 $string['invalidcategory'] = '"{$a->contextname}" testuinguruan ez da "{$a->catid}" ID zenbakia duen kategoria existitzen.';
 $string['invalidemptycategory'] = '"{$a->contextname}" testuinguruko "{$a->catname}" kategoriak ez dauka txertatu daitekeen galderarik.';
-$string['invalidquestion'] = '"{$a->catname}" kategorian ez da "{$a->qid}" ID zenbakia duen galderarik existitzen.';
+$string['invalidquestion'] = '"{$a->catname}" kategorian ez da "{$a->qid}" ID zenbakia duen galderarik existitzen [{$a->catidnumber}]".';
 $string['invalidrandomquestion'] = 'Ezin da "{$a}" galdera-kategoriako ausazko galderarik sortu.';
-$string['invalidtoken'] = 'Galdera hau ezin da hemen txertatu.';
+$string['invalidtoken'] = 'Txertatutako galdera hau ez dago ondo konfiguratuta.';
 $string['markdp_desc'] = 'Galdera txertatuen kalifikazioak erakustean erabili beharreko hamartar kopurua.';
 $string['markedoutof'] = 'Honela puntuatu';
 $string['marks_desc'] = 'Modu lehenetsian galdera txertatuetan kalifikazio numerikoa erakutsi behar den edo ez.';
@@ -59,9 +62,13 @@ $string['notyourattempt'] = 'Hau ez da zure saiakera.';
 $string['pluginname'] = 'Galdera txertatuak';
 $string['privacy:metadata'] = 'Galdera txertatuak iragazkiak ez du inolako datu pertsonalik biltzen.';
 $string['questionidnumber'] = 'Galderaren ID zenbakia';
+$string['questionidnumberchanged'] = 'Hemen erantzuten saiatu den galderak dagoeneko ez dauka {$a} ID zenbakia.';
+$string['questionnolongerhasidnumber'] = 'Hemen erantzuten saiatu den galderak dagoeneko ez dauka ID zenbakirik.';
+$string['questionnolongerincategory'] = 'Hemen erantzuten saiatu den galdera dagoeneko ez dago {$a} ID zenbakia duen kategorian.';
 $string['responsehistory_desc'] = 'Modu lehenetsian galdera txertatuen erantzunen historia-taula erakutsiko den edo ez.';
 $string['restart'] = 'Hasi berriz';
 $string['rightanswer_desc'] = 'Modu lehenetsian galdera txertatuetan erantzun zuzena erakutsiko den edo ez. Aukera hau ez erabiltzea gomendatzen da, eta horren ordez galderaren egileak feedback orokorrean erantzun zuzena azaldu dezaten sustatzea.';
+$string['securityheading'] = 'Segurtasun ezarpenak';
 $string['specificfeedback_desc'] = 'Modu lehenetsian galdera txertatuetan ikaslearen erantzunaren araberako feedback zehatza erakutsiko den edo ez.';
 $string['taskcleanup'] = 'Garbitu galdera txertatuen saiakera zaharrak';
 $string['title'] = 'Galdera txertatua';

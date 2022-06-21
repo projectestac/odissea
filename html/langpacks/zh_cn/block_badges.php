@@ -30,3 +30,4 @@ $string['badges:myaddinstance'] = '在个人主页新增一个最新勋章版块
 $string['nothingtodisplay'] = '您没有可以显示的勋章';
 $string['numbadgestodisplay'] = '最新勋章显示个数';
 $string['pluginname'] = '最新勋章';
+$string['privacy:metadata'] = '“最新的徽章”板块仅显示存储在其他位置的数据。';

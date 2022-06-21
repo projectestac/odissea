@@ -1889,8 +1889,7 @@ class quiz_attempt {
         $bc = new block_contents();
         $bc->attributes['id'] = 'mod_quiz_navblock';
         $bc->attributes['role'] = 'navigation';
-        $bc->attributes['aria-labelledby'] = 'mod_quiz_navblock_title';
-        $bc->title = html_writer::span(get_string('quiznavigation', 'quiz'), '', array('id' => 'mod_quiz_navblock_title'));
+        $bc->title = get_string('quiznavigation', 'quiz');
         $bc->content = $output->navigation_panel($panel);
         return $bc;
     }
@@ -2462,7 +2461,15 @@ class quiz_attempt {
             if ($becomingabandoned) {
                 $this->process_abandon($timenow, true);
             } else {
-                $this->process_finish($timenow, !$toolate, $toolate ? $timeclose : $timenow);
+                if (!$toolate || $this->get_quiz()->overduehandling == 'graceperiod') {
+                    // Normally, we record the accurate finish time when the student is online.
+                    $finishtime = $timenow;
+                } else {
+                    // But, if there is no grade period, and the final responses were too
+                    // late to be processed, record the close time, to reduce confusion.
+                    $finishtime = $timeclose;
+                }
+                $this->process_finish($timenow, !$toolate, $finishtime);
             }
 
         } catch (question_out_of_sequence_exception $e) {

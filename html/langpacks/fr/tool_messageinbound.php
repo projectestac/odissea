@@ -73,11 +73,11 @@ $string['messageinboundhostuser_desc'] = 'Nom d\'utilisateur fourni par votre fo
 $string['messageinboundmailboxconfiguration_desc'] = 'Lorsque les messages sont envoyés, l\'adresse d\'expédition est composée dans le format « adresse+données@exemple.fr ». Afin de générer de manière fiable ces adresses, veuillez indiquer la partie que vous utilisez normalement avant le signe @ et de manière séparée le domaine que vous utilisez après le @. Par exemple, le nom de la boîte dans l\'exemple ci-dessus est « adresse » et le domaine est « exemple.fr ». Veuillez utiliser un compte de courriel dédié pour cette fonction.';
 $string['messageprocessingerror'] = 'Vous avez récemment envoyé un courriel « {$a->subject} », qui n\'a malheureusement pas pu être traité.
 
-Les détails de l\'erreur sont indiqués ci-dessous.
+Les infos détaillées sur l\'erreur sont indiquées ci-dessous.
 
 {$a->error}';
 $string['messageprocessingerrorhtml'] = '<p>Vous avez récemment envoyé un courriel « {$a->subject} », qui n\'a malheureusement pas pu être traité.</p>
-<p>Les détails de l\'erreur sont indiqués ci-dessous.</p>
+<p>Les infos détaillées sur l\'erreur sont indiquées ci-dessous.</p>
 <p>{$a->error}</p>';
 $string['messageprocessingfailed'] = 'Le courriel « {$a->subject} » n\'a pas pu être traité. Voici le message d\'erreur qui a été renvoyé : « {$a->message} ».';
 $string['messageprocessingfailedunknown'] = 'Le courriel « {$a->subject} » n\'a pas pu être traité. Veuillez contacter l\'administrateur du Moodle pour plus d\'informations.';

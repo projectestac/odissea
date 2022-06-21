@@ -25,5 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['objectivescore'] = '显示目标分数';
+$string['objectivex'] = '目标{$a}';
 $string['pluginname'] = '目标报表';
+$string['privacy:metadata:preference:scorm_report_objectives_score'] = '是否在SCORM报告中显示目标分数';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = '要在SCORM报告中显示的用户数';
+$string['score'] = '分数';
 $string['status'] = '状态';

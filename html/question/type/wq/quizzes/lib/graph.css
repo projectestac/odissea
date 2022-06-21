@@ -25,6 +25,9 @@
   text-align: left !important;
 }
 
+.wrsUI_app.wrsUI_graph .wrs_editor .wrs_formulaDisplay {
+  height: auto !important;
+}
 .wrsUI_app.wrsUI_graph .wrs_editor .wrs_formulaDisplay,
 .wrsUI_app.wrsUI_graph .wrs_editor .wrs_container {
   border: 0;

@@ -41,6 +41,7 @@ $string['currentstatusresult'] = '最近的执行结果';
 $string['enablescheduled'] = '启用预计划分配';
 $string['enablescheduledinfo'] = '在提交阶段结束时自动分配作业';
 $string['pluginname'] = '预计划分配';
+$string['privacy:metadata'] = '计划分配插件不存储任何个人数据。关于谁将评估谁的具体个人数据存储在研讨会模块中，它们构成导出评估详细信息的基础。';
 $string['randomallocationsettings'] = '分配设置';
 $string['randomallocationsettings_help'] = '在此定义随机分配方式的参数。它随机分配插件会使用它们进行实际作业分配。';
 $string['resultdisabled'] = '预计划分配禁用';

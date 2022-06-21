@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '主菜单';
+$string['privacy:metadata'] = '“主菜单”板块仅显示存储在其他位置的数据。';
 $string['site_main_menu:addinstance'] = '新增主菜单版块';

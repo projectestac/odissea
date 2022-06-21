@@ -30,7 +30,6 @@ $string['accredible:manage'] = 'Управлять экземпляром мод
 $string['accredible:student'] = 'Получать сертификат или значок';
 $string['accredible:view'] = 'Просматривать сертификат или значок';
 $string['achievementid'] = 'Идентификатор достижения';
-$string['activitydescription'] = 'Этот модуль автоматически создает и обновляет группу учетных данных в Accredible. Все выпущенные сертификаты и значки находятся в этой группе, и их внешний вид и информация могут быть обновлены на <a href="https://dashboard.accredible.com" target="_blank">панели управления</a>.';
 $string['activityname'] = 'Название активного элемента';
 $string['additionalactivitiesone'] = 'Внимание: Вы выбираете в курсе более одного активного элемента. Они будут видимы для студентов, поэтому дайте им разные имена.';
 $string['additionalactivitiesthree'] = 'Данное имя будет указано в сертификате.';

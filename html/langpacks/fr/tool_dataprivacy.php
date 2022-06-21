@@ -145,6 +145,7 @@ $string['effectiveretentionperioduser'] = '{$a} (depuis le dernier accès de l\'
 $string['emailsalutation'] = 'Cher {$a},';
 $string['errorcannotrequestdeleteforother'] = 'Vous n\'avez pas les permissions requises pour créer une demande de suppression de données pour cet utilisateur.';
 $string['errorcannotrequestdeleteforself'] = 'Vous n\'avez pas les permissions requises pour créer une demande de suppression de données pour vous-même.';
+$string['errorcannotrequestexportforself'] = 'Vous n\'avez pas les permissions requises pour créer des demandes d\'exportation pour vous-même.';
 $string['errorcontactdpodisabled'] = 'Le réglage permettant de contacter le délégué à la protection des données est désactivé.';
 $string['errorcontexthasunexpiredchildren'] = 'Le contexte « {$a} » comporte des sous-contextes qui ne sont pas encore échus. Aucun contexte n\'a été confirmé pour suppression.';
 $string['errorinvalidrequestcomments'] = 'Le champ commentaires ne peut contenir que du texte pur.';
@@ -208,7 +209,7 @@ $string['hide'] = 'Tout replier';
 $string['httpwarning'] = 'Certaines données téléchargées de ce site ne sont pas chiffrées. Veuillez contacter l\'administrateur système et demander d\'installer SSL sur ce site.';
 $string['inherit'] = 'Hériter';
 $string['lawfulbases'] = 'Bases légales';
-$string['lawfulbases_help'] = 'Veuillez sélectionner au moins une des options, qui servira de base légale au traitement des données personnelles. Pour des détails sur ces bases légales, consultez l\'article 6 du <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32016R0679" target="_blank">RGPD</a>';
+$string['lawfulbases_help'] = 'Veuillez sélectionner au moins une des options, qui servira de base légale au traitement des données personnelles. Pour des infos détaillées sur ces bases légales, consulter l\'article 6 du <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32016R0679" target="_blank">RGPD</a>';
 $string['markcomplete'] = 'Marquer comme terminée';
 $string['markedcomplete'] = 'Votre demande a été marquée comme terminée par le délégué à la protection des données.';
 $string['message'] = 'Message';

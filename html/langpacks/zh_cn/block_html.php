@@ -35,3 +35,5 @@ $string['html:addinstance'] = '添加一个HTML版块';
 $string['html:myaddinstance'] = '在个人主页新增一个HTML版块';
 $string['newhtmlblock'] = '（新HTML版块）';
 $string['pluginname'] = 'HTML';
+$string['privacy:metadata:block'] = 'HTML块将其所有数据存储在块子系统中。';
+$string['search:content'] = 'HTML版块内容';

@@ -42,7 +42,6 @@ $string['before_answering_end_date'] = 'Αυτό το Κουίζ μαθητή κ
 $string['before_answering_start_date'] = 'Ανοιχτό για απαντήσεις από {$a}.';
 $string['before_submission_end_date'] = 'Αυτό το Κουίζ μαθητή κλείνει για υποβολή ερώτησης στις {$a}.';
 $string['before_submission_start_date'] = 'Ανοιχτό για υποβολή ερώτησης από {$a}.';
-$string['changeselectedsstate'] = 'Αλλαγή της κατάστασης των ακόλουθων ερωτήσεων:<br /><br />{$a}';
 $string['collapseall'] = 'Σύμπτυξη όλων των σχολίων';
 $string['collapsecomment'] = 'Σύμπτυξη σχολίου';
 $string['comment_author'] = 'Συγγραφέας';

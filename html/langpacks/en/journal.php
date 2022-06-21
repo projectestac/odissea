@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessdenied'] = 'Access denied';
 $string['alwaysopen'] = 'Always open';
 $string['blankentry'] = 'Blank entry';
+$string['crontask'] = 'Background processing for journal module';
 $string['daysavailable'] = 'Days available';
 $string['deadline'] = 'Days Open';
 $string['editingended'] = 'Editing period has ended';

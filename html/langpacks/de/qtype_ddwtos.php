@@ -29,6 +29,7 @@ $string['addmorechoiceblanks'] = 'Leerfelder für {no} weitere Wahlmöglichkeite
 $string['answer'] = 'Antwort';
 $string['blank'] = 'leer';
 $string['correctansweris'] = 'Die richtige Antwort lautet: {$a}';
+$string['errorlimitedchoice'] = 'Die Wahlmöglichkeit [[{$a}]] wurde mehr als einmal verwendet, ohne auf "Unbegrenzt" gesetzt zu sein. Bitte überprüfen Sie diese Frage erneut.';
 $string['infinite'] = 'Unbegrenzt';
 $string['pleaseputananswerineachbox'] = 'Schieben Sie eine Antwort in jedes Feld.';
 $string['pluginname'] = 'Drag-and-drop auf Text';

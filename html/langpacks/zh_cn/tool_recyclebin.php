@@ -51,6 +51,7 @@ $string['invalidcontext'] = '无效的内容被提供了';
 $string['noitemsinbin'] = '回收站中没有条目';
 $string['notenabled'] = '报歉，回收站已被管理员禁用';
 $string['pluginname'] = '回收站';
+$string['privacy:metadata'] = '回收站插件不存储任何个人数据。';
 $string['recyclebin:deleteitems'] = '删除回收站条目';
 $string['recyclebin:restoreitems'] = '恢复回收站条目';
 $string['recyclebin:viewitems'] = '查看回收站条目';

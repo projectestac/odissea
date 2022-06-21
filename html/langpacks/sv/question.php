@@ -236,6 +236,7 @@ $string['importingquestions'] = 'Importerar {$a} frågor från fil';
 $string['importparseerror'] = 'Fel uppstod vid analys av importfilen. Inga frågor har importerats. Om du vill prova att importera de eventuella frågor i filen som är i rätt format, ändra inställningen "Stoppa vid fel" till "Nej".';
 $string['importquestions'] = 'Importera frågor från fil';
 $string['importquestions_help'] = 'Denna funktion möjliggör att frågor i en mängd olika format kan importeras från textfil. Notera att filen måste använda teckenkodning UTF-8.';
+$string['importwrongfileencoding'] = 'Den valda filen är inte kodad enligt UFT-8 teckenkodningen. {$a} filer måste använda UFT-8.';
 $string['importwrongfiletype'] = 'Den typ av fil som du valde ({$a->actualtype}) motsvarar inte den typ som förväntas av detta importformat ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Ogiltligt tecken {$a} identifierades som parentestecken';
 $string['includesubcategories'] = 'Visa även frågor från underkategorier';

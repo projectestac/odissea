@@ -31,4 +31,5 @@ $string['error_roamcapabilityneeded'] = '用户需要‘通过MNet漫游到远�
 $string['mnet_hosts:addinstance'] = '新增网络服务器版块';
 $string['mnet_hosts:myaddinstance'] = '在个人主页新增一个网络服务器版块';
 $string['pluginname'] = '网络服务器';
+$string['privacy:metadata'] = '“网络服务器”板块只允许与网络服务器进行交互，本身既不存储也不输出数据。';
 $string['server'] = '服务器';

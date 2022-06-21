@@ -33,6 +33,7 @@ $string['mnet_enrol_description'] = '发布该服务将允许在 {$a} 上的管�
 $string['mnet_enrol_name'] = '远程选课服务';
 $string['pluginname'] = 'MNet远程选课';
 $string['pluginname_desc'] = '允许远程MNet主机把其用户加入我们的课程中。';
+$string['privacy:metadata'] = 'MNet远程注册插件不存储任何个人数据。';
 $string['remotesubscriber'] = '远程主机';
 $string['remotesubscriber_help'] = '选择“所有主机”，会将此课程开放给所有的我们提供MNet远程选课的主机。或者选择只开放给一个主机。';
 $string['remotesubscribersall'] = '所有主机';

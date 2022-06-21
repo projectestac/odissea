@@ -34,3 +34,4 @@ $string['course_list:myaddinstance'] = '在个人主页添加一个课程列表�
 $string['hideallcourseslink'] = '隐藏“所有课程”链接';
 $string['owncourses'] = '管理员可看到自己的课程';
 $string['pluginname'] = '课程';
+$string['privacy:metadata'] = '“课程”板块仅显示有关课程的数据，本身不存储任何数据。';

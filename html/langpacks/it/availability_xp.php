@@ -27,9 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Criterio di accesso basato sul livello dell\'utente.';
 $string['invalidlevel'] = 'Livello non valido';
+$string['levelconditionoperator'] = 'L\'operatore del livello della condizione';
 $string['levelgreaterorequalto'] = 'Il livello è superiore o uguale a';
-$string['levelnnotrequiredtoaccess'] = 'Il tuo livello non è {$a}';
+$string['levelis'] = 'Il livello è';
+$string['levelnexactlynotrequiredtoaccess'] = 'Il tuo livello non è {$a}';
+$string['levelnexactlyrequiredtoaccess'] = 'Il tuo livello è esattamente {$a}';
+$string['levelnnotrequiredtoaccess'] = 'Il tuo livello non è {$a} o superiore';
 $string['levelnrequiredtoaccess'] = 'Il tuo livello è {$a} o superiore';
+$string['levelnumber'] = 'Il numero del livello';
+$string['opequalto'] = 'Strettamente uguale a';
+$string['opgreaterorequalto'] = 'Maggiore o uguale a';
 $string['pluginname'] = 'Criterio basato sul livello';
 $string['privacy:metadata'] = 'Il plugin non memorizza dati personali.';
 $string['title'] = 'Livello';

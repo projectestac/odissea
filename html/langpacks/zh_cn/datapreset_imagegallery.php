@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = '相册';
 $string['pluginname'] = '图片库';
+$string['privacy:metadata'] = '图像库插件不存储任何个人数据。';

@@ -14,6 +14,14 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Language strings for mod_journal
+ *
+ * @package mod_journal
+ * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ **/
+
 $string['eventjournalcreated'] = 'Journal created';
 $string['eventjournalviewed'] = 'Journal viewed';
 $string['evententriesviewed'] = 'Journal entries viewed';
@@ -81,3 +89,4 @@ $string['privacy:metadata:journal_entries:modified'] = 'The start time of the jo
 $string['privacy:metadata:journal_entries:text'] = 'The text written by user';
 $string['privacy:metadata:journal_entries:rating'] = 'The rating received by user to journl';
 $string['privacy:metadata:journal_entries:entrycomment'] = 'The comment received by user to journal';
+$string['crontask'] = 'Background processing for journal module';

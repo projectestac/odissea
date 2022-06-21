@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'A avaliação não é válida';
 $string['ratings'] = 'Avaliações';
 $string['ratingtime'] = 'Restringir a avaliação para itens de um intervalo de datas';
 $string['rolewarning'] = 'Papéis com permissão para avaliar';
-$string['rolewarning_help'] = 'Para avaliar atividades, os papéis dos utilizadores têm de incluir a permissão \'moodle/rating:rate\' e eventuais permissões especificas do módulo. Os utilizadores com os papéis aqui mostrados devem poder avaliar itens. A lista de papéis pode ser modificada, a partir da hiperligação Permissões no menu de ações ou no bloco Administração, dependendo do tema utilizado.';
+$string['rolewarning_help'] = 'Os papeis com permissão para avaliar são papeis com a permissão moodle/rating:rate além de quaisquer capacidades de avaliação específicas da atividade. Pode dar permissão a mais papeis para avaliar via página Permissões.';
 $string['scaleselectionrequired'] = 'Quando selecionar um tipo de agregação de avaliações, também deverá selecionar se vai usar uma escala ou definir uma pontuação máxima.';

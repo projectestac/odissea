@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acohortroleassignmentssaved'] = '{$a} 件のコーホートロール割り当てが保存されました。';
 $string['assign'] = '割り当て';
-$string['assignroletocohort'] = 'すべてのコーホートメンバーにユーザコンテクストロールを割り当てる';
+$string['assignroletocohort'] = 'すべてのコーホートメンバにユーザコンテクストロールを割り当てる';
 $string['backgroundsync'] = '注意: 新しいコーホートロール割り当てはすぐには適用されません。ロール割り当ての変更はスケジュールタスクによって実行されます。';
 $string['cohortroleassignmentnotremoved'] = 'コーホートロール割り当ては削除されませんでした。';
 $string['cohortroleassignmentremoved'] = 'コーホートロール割り当てが削除されました。';

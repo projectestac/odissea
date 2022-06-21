@@ -68,7 +68,7 @@ $string['auth_dbsyncuserstask'] = 'Synchroniser les tâches utilisateur';
 $string['auth_dbtable'] = 'Nom de la table dans la base de données';
 $string['auth_dbtable_key'] = 'Table';
 $string['auth_dbtableempty'] = 'La table externe est vide.';
-$string['auth_dbtype'] = 'Type de la base de données (pour des détails, voir la documentation <a href="http://adodb.org/dokuwiki/doku.php" target="_blank"> ADOdb - Couche d\'abstraction de base de données pour PHP</a>).';
+$string['auth_dbtype'] = 'Type de la base de données (pour plus d\'informations, voir la documentation <a href="http://adodb.org/dokuwiki/doku.php" target="_blank"> ADOdb - Couche d\'abstraction de base de données pour PHP</a>).';
 $string['auth_dbtype_key'] = 'Base de données';
 $string['auth_dbupdateerror'] = 'Erreur lors de la modification de la base de données externe.';
 $string['auth_dbupdateusers'] = 'Modifier les utilisateurs';

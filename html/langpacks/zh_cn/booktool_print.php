@@ -33,3 +33,4 @@ $string['printbook'] = '打印图书';
 $string['printchapter'] = '打印本章节';
 $string['printdate'] = '日期';
 $string['printedby'] = '打印';
+$string['privacy:metadata'] = '图书打印插件不存储任何个人数据。';

@@ -47,4 +47,4 @@ $string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio 
 $string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
 $string['privacy:preference:shuffleanswers'] = 'Erantzunak automatikoki nahastu behar diren edo ez.';
 $string['shuffle'] = 'Nahastu';
-$string['shuffle_help'] = 'Gaituz gero, saiakera bakoitzean erantzunak ausaz ordenatzen dirak, betiere galdetegiaren ezarpenetako "Galderen barruan nahastu" ezarpenean "Bai" ezarrita badago.';
+$string['shuffle_help'] = 'Gaituz gero, saiakera bakoitzeko galderak ausaz ordenatzen dira, betiere galdetegiaren ezarpenetako "Galderen barruan nahastu" ezarpena ere markatuta badago. Lotu motako galderetan aldagai honek galderari baino ez dio eragiten, erantzunerako aukerak beti nahastuko dira.';

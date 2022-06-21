@@ -29,6 +29,7 @@ $string['addmorechoiceblanks'] = 'Espaces vides pour {no} choix supplémentaires
 $string['answer'] = 'Réponse';
 $string['blank'] = 'vide';
 $string['correctansweris'] = 'La réponse correcte est : {$a}';
+$string['errorlimitedchoice'] = 'Le marqueur [[{$a}]] est utilisé plus d\'une fois alors qu\'il n\'est pas indiqué comme « Réutilisable ». Veuillez vérifier cette question.';
 $string['infinite'] = 'Réutilisable';
 $string['pleaseputananswerineachbox'] = 'Veuillez entrer une réponse dans chaque boîte.';
 $string['pluginname'] = 'Glisser-déposer sur texte';

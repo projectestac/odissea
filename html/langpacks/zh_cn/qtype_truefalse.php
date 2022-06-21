@@ -37,5 +37,6 @@ $string['pluginname_help'] = '回答问题（可以包含图片）时，答题�
 $string['pluginnameadding'] = '添加判断题';
 $string['pluginnameediting'] = '编辑判断题';
 $string['pluginnamesummary'] = '选择题的一种简单形式，只有“对”和“错”两个选项。';
+$string['privacy:metadata'] = '判断题类型插件不存储任何个人数据。';
 $string['selectone'] = '选择一项：';
 $string['true'] = '对';

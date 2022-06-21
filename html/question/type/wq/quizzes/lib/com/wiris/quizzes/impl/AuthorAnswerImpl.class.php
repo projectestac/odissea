@@ -97,7 +97,8 @@ class com_wiris_quizzes_impl_AuthorAnswerImpl extends com_wiris_util_xml_Seriali
 		$s->serializeArrayName($this->validations, com_wiris_quizzes_impl_AuthorAnswerImpl::$VALIDATIONS_TAGNAME);
 		$s->endTag();
 	}
-	public function copyData($aa) {
+	public function copy($model) {
+		$aa = $model;
 		$this->setValue($aa->getValue());
 		$this->comparison->importAssertionNameAndParams($aa->comparison->copy());
 		if($this->validations === null) {
@@ -119,6 +120,7 @@ class com_wiris_quizzes_impl_AuthorAnswerImpl extends com_wiris_util_xml_Seriali
 				}
 			}
 		}
+		return $this;
 	}
 	public $slot;
 	public $question;

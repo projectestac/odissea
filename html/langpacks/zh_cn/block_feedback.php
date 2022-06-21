@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['feedback'] = '反馈';
 $string['feedback:addinstance'] = '添加一个反馈版块';
 $string['pluginname'] = '反馈';
+$string['privacy:metadata'] = '“反馈”板块仅显示存储在其他位置的数据。';

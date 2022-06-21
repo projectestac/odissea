@@ -145,6 +145,7 @@ $string['effectiveretentionperioduser'] = '{$a} (since the last time the user ac
 $string['emailsalutation'] = 'Dear {$a},';
 $string['errorcannotrequestdeleteforother'] = 'You don\'t have permission to create deletion request for this user.';
 $string['errorcannotrequestdeleteforself'] = 'You don\'t have permission to create deletion request for yourself.';
+$string['errorcannotrequestexportforself'] = 'You don\'t have permission to create export request for yourself.';
 $string['errorcontactdpodisabled'] = 'The option to contact the privacy officer is disabled.';
 $string['errorcontexthasunexpiredchildren'] = 'The context "{$a}" still has sub-contexts that have not yet expired. No contexts have been flagged for deletion.';
 $string['errorinvalidrequestcomments'] = 'The comments field may contain plain text only.';

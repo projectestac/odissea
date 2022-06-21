@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Afegeix una categoria';
 $string['addcomment'] = 'Afegeix un comentari';
 $string['addentry'] = 'Afegeix una entrada';
 $string['addingcomment'] = 'S\'està afegint un comentari';
@@ -102,7 +103,9 @@ $string['commentdeleted'] = 'S\'ha suprimit el comentari.';
 $string['comments'] = 'Comentaris';
 $string['commentson'] = 'Comentaris actius';
 $string['commentupdated'] = 'S\'ha actualitzat el comentari';
+$string['completiondetail:entries'] = 'Afegiu entrades: {$a}';
 $string['completionentries'] = 'Cal que els alumnes creïn entrades:';
+$string['completionentriesdesc'] = 'L\'estudiant pot crear almenys {$a} entrada/entrades';
 $string['completionentriesgroup'] = 'Entrades requerides';
 $string['concept'] = 'Concepte';
 $string['concepts'] = 'Conceptes';
@@ -119,7 +122,9 @@ $string['defaultsortkey'] = 'Clau d\'ordenació per defecte';
 $string['defaultsortorder'] = 'Ordenació per defecte';
 $string['definition'] = 'Definició';
 $string['definitions'] = 'Definicions';
+$string['deletecategory'] = 'Suprimeix la categoria';
 $string['deleteentry'] = 'Suprimeix entrada';
+$string['deleteentrya'] = 'Suprimeix l\'entrada: {$a}';
 $string['deletenotenrolled'] = 'Suprimeix les entrades d\'usuaris no inscrits';
 $string['deletingcomment'] = 'S\'està suprimint un comentari';
 $string['deletingnoneemptycategory'] = 'Suprimir aquesta categoria no suprimirà les entrades que conté: simplement aquestes es marcaran com a no categoritzades.';
@@ -177,7 +182,9 @@ $string['editalways_help'] = '<p>Aquesta opció us permet decidir si els estudia
 <li><b>No:</b> les entrades es poden editar durant un temps configurable.</li>
 </ul>';
 $string['editcategories'] = 'Edita categories';
+$string['editcategory'] = 'Edita la categoria';
 $string['editentry'] = 'Edita entrada';
+$string['editentrya'] = 'Edita l\'entrada: {$a}';
 $string['editingcomment'] = 'S\'està editant un comentari';
 $string['entbypage'] = 'Nombre d\'entrades per pàgina';
 $string['entries'] = 'Entrades';
@@ -189,6 +196,8 @@ $string['entrydeleted'] = 'S\'ha suprimit l\'entrada';
 $string['entryexported'] = 'L\'entrada s\'ha exportat amb èxit';
 $string['entryishidden'] = '(aquesta entrada actualment està oculta)';
 $string['entryleveldefaultsettings'] = 'Paràmetres per defecte al nivell d\'entrada';
+$string['entrylink'] = 'Enllaç de l\'entrada: {$a}';
+$string['entrynotapproved'] = 'L\'entrada no s\'ha aprovat';
 $string['entrysaved'] = 'S\'ha desat aquesta entrada';
 $string['entryupdated'] = 'S\'ha actualitzat aquesta entrada';
 $string['entryusedynalink'] = 'Aquesta entrada s\'ha d\'enllaçar automàticament';
@@ -255,7 +264,14 @@ $string['importedentries'] = 'Entrades importades';
 $string['importentries'] = 'Importa entrades';
 $string['importentriesfromxml'] = 'Importa entrades d\'un fitxer XML';
 $string['includegroupbreaks'] = 'Inclou marcador de grup';
+$string['indicator:cognitivedepth'] = 'Glossari cognitiu';
+$string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva assolida per l\'estudiant en una activitat del tipus Glossari.';
+$string['indicator:cognitivedepthdef'] = 'Glossari cognitiu';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Glossari en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament)';
+$string['indicator:socialbreadth'] = 'Glossari social';
+$string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en l\'extensió social assolida per l\'estudiant en una activitat del tipus Glossari.';
+$string['indicator:socialbreadthdef'] = 'Glossari social';
+$string['indicator:socialbreadthdef_help'] = 'El participant ha assolit aquest percentatge de compromís social oferit per les activitats Glossari durant l\'interval de l\'anàlisi (Nivells = Cap participació, Participant solitari)';
 $string['isglobal'] = 'Aquest glossari és global?';
 $string['isglobal_help'] = 'Les entrades d\'un glossari global s\'enllacen des de tot el lloc, no sols des del curs al qual pertany el glossari. Només els administradors poden fer que un glossari sigui global.';
 $string['letter'] = 'lletra';
@@ -306,9 +322,22 @@ $string['popupformat'] = 'Format emergent';
 $string['print'] = 'Imprimeix';
 $string['printerfriendly'] = 'Versió per imprimir';
 $string['printviewnotallowed'] = 'La visualització per a impressora no està autoritzada';
+$string['privacy'] = 'Privacitat dels resultats';
+$string['privacy:metadata:core_comments'] = 'Els comentaris fets en les definicions del glossari s\'emmagatzemen utilitzant el sistema core_comment';
+$string['privacy:metadata:core_files'] = 'Els fitxers enllaçats en les definicions del glossari s\'emmagatzemen utilitzant el sistema core_files';
+$string['privacy:metadata:core_rating'] = 'Les puntuacions afegides a les definicions del glossari s\'emmagatzemen utilitzant el sistema core_rating';
+$string['privacy:metadata:core_tag'] = 'Les etiquetes afegides a les definicions del glossari s\'emmagatzemen utilitzant el sistema core_tag';
+$string['privacy:metadata:glossary_entries'] = 'Informació sobre les entrades de l\'usuari per a una activitat glossari donada';
+$string['privacy:metadata:glossary_entries:attachment'] = 'L\'adjunt de l\'entrada que l\'usuari ha afegit';
+$string['privacy:metadata:glossary_entries:concept'] = 'El concepte de l\'entrada que l\'usuari ha afegit';
+$string['privacy:metadata:glossary_entries:definition'] = 'La definició de l\'entrada que l\'usuari ha afegit';
+$string['privacy:metadata:glossary_entries:glossaryid'] = 'L\'ID de l\'activitat glossari';
+$string['privacy:metadata:glossary_entries:timemodified'] = 'La marca de temps que indica quan l\'usuari ha modificat l\'entrada del glossari';
+$string['privacy:metadata:glossary_entries:userid'] = 'L\'ID de l\'usuari que està afegint aquesta entrada al glossari';
 $string['question'] = 'Qüestió';
 $string['rejectedentries'] = 'Entrades rebutjades';
 $string['rejectionrpt'] = 'Informe de rebuigs';
+$string['removeallglossarytags'] = 'Suprimeix totes les etiquetes del glossari';
 $string['resetglossaries'] = 'Suprimeix entrades de';
 $string['resetglossariesall'] = 'Suprimeix entrades de tots els glossaris';
 $string['rssarticles'] = 'Nombre d\'articles RSS recents';
@@ -337,7 +366,7 @@ $string['showall_help'] = '<p>Podeu personalitzar l\'estil de navegació d\'un g
 <p><b>MOSTRA ALFABET</b> Habilita o inhabilita la navegació per les lletres de l\'alfabet.</p>
 
 <p><b>MOSTRA TOT</b> Habilita o inhabilita la navegació de totes les entrades a l\'hora.</p>';
-$string['showalphabet'] = 'Mostra l\'alfabet';
+$string['showalphabet'] = 'Mostra els enllaços de l\'alfabet';
 $string['showalphabet_help'] = '<p>Podeu personalitzar l\'estil de navegació d\'un glossari. Sempre es pot navegar i cercar, però podeu definir tres opcions més:</p>
 
 <p><b>MOSTRA ESPECIAL</b> Habilita o inhabilita la navegació de caràcters especials com ara @, #, etc.</p>
@@ -361,6 +390,7 @@ $string['special'] = 'Especial';
 $string['standardview'] = 'Navega alfabèticament';
 $string['studentcanpost'] = 'Els estudiants poden afegir entrades';
 $string['tagarea_glossary_entries'] = 'Entrades del glossari';
+$string['tagsdeleted'] = 'S\'han suprimit les etiquetes del glossari';
 $string['totalentries'] = 'Total d\'entrades';
 $string['usedynalink'] = 'Enllaça automàticament les entrades del glossari';
 $string['usedynalink_help'] = '<p>Activar aquesta característica permet que es creïn enllaços automàtics a les entrades del glossari sempre que apareguin les paraules o frases del concepte en qualsevol part del mateix curs: en els missatges dels fòrums, en recursos interns, en els resums de les setmanes o temes, etc.</p>

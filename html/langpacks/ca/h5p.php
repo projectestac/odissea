@@ -140,6 +140,7 @@ $string['licensee'] = 'Llicenciat';
 $string['licenseextras'] = 'Extres de la llicència';
 $string['licenseversion'] = 'Versió de la llicència';
 $string['lockh5pdeploy'] = 'No es pot accedir al contingut H5P perquè s\'està utilitzant. Proveu-ho més tard.';
+$string['mainlibrarydisabled'] = 'Aquest arxiu no es pot mostrar perquè el seu tipus de contingut està deshabilitat. Poseu-vos en contacte amb el vostre administrador per a demanar-li que habiliti el tipus de contingut.';
 $string['missingcontentfolder'] = 'Falta una carpeta de contingut vàlida';
 $string['missingcoreversion'] = 'El sistema no ha pogut instal·lar el component {$a->%component} del paquet, donat que requereix una versió més nova del connector H5P. Aquest lloc actualment està utilitzant la versió {$a->%current}, mentre que la versió requerida és la {$a->%required} o superior. Actualitzeu-lo i proveu-ho de nou.';
 $string['missingdependency'] = 'Falta la dependència {$a->@dep} requerida per {$a->@lib}.';

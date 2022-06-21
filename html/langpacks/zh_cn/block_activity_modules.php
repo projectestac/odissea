@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_modules:addinstance'] = '新增一个活动版块';
 $string['pluginname'] = '活动';
+$string['privacy:metadata'] = '”活动板块“仅显示存储在其他位置的数据。';

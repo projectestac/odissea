@@ -32,4 +32,5 @@ $string['local:view'] = '查看服务器容器';
 $string['notitle'] = '无标题';
 $string['pluginname'] = '服务器文件';
 $string['pluginname_help'] = '以前上传到Moodle服务器的文件';
+$string['privacy:metadata'] = '服务器文件存储库插件不存储或传输任何个人数据。';
 $string['remember'] = '记住我';

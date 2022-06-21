@@ -26,10 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = '一个还是多个答案？';
+$string['answerhowmany_desc'] = '确认默认一个答案（即单选按钮）或多个答案（即复选框）。';
 $string['answernumbering'] = '对选项编号？';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
+$string['answernumbering_desc'] = '默认的编号方式。';
 $string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingnone'] = '不编号';
@@ -42,6 +44,7 @@ $string['clozeaid'] = '键入缺少的词';
 $string['correctansweris'] = '正确答案是：{$a}';
 $string['correctanswersare'] = '正确答案是：{$a}';
 $string['correctfeedback'] = '给任意正确答案';
+$string['deletedchoice'] = '此选项在尝试开始后被删除。';
 $string['errfractionsaddwrong'] = '您选择的正数成绩之和未达到100%<br />它们加起来是{$a}%';
 $string['errfractionsnomax'] = '要有一个选项的分数是100%，这样才可能<br />在这道题中得到满分。';
 $string['errgradesetanswerblank'] = '有成绩，但答案为空';
@@ -72,7 +75,10 @@ $string['privacy:preference:shuffleanswers'] = '答案是否自动重新排序�
 $string['privacy:preference:single'] = '答案是带有单选按钮的单个答案还是带有复选框的多个答案。';
 $string['selectmulti'] = '选择一项或多项：';
 $string['selectone'] = '选择一项：';
+$string['showstandardinstruction'] = '显示标准说明';
+$string['showstandardinstruction_help'] = '是否在多选题答案前显示 "选择一个："或 "选择一个或多个："的说明。';
 $string['shuffleanswers'] = '随机排列答案？';
+$string['shuffleanswers_desc'] = '默认情况下，是否每次尝试时选项都随机排序';
 $string['shuffleanswers_help'] = '如果启用，且活动设置中的”随机排列题目选项“也被启用，那么每次答题时选项的顺序都会是随机的。';
 $string['singleanswer'] = '选择一个答案。';
 $string['toomanyselected'] = '您选择了太多的选项。';

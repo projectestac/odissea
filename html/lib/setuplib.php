@@ -829,6 +829,19 @@ function initialise_fullme() {
     $rurl = setup_get_remote_url();
     $wwwroot = parse_url($CFG->wwwroot.'/');
 
+    // XTEC ************ AFEGIT - Fixed incompatibility of Moodle with Agora multisite system.
+    // 2012.04.18 @aginard
+    // 2022.05.10 @aginard
+    //    More info: $rurl['path'] comes from $_SERVER['SCRIPT_NAME'] and $wwwroot['path']
+    //    comes from $CFG. In Agora this two values will always be different due to the
+    //    use of Apache's mod_rewrite to transform the URLs.
+    //    This fix involves the removing of the security check. It is not expected
+    //    to be a potential security issue.
+    if (function_exists('is_agora') && is_agora()) {
+        $rurl['path'] = $wwwroot['path'];
+    }
+    // ************ FI
+
     if (empty($rurl['host'])) {
         // missing host in request header, probably not a real browser, let's ignore them
 
@@ -838,17 +851,9 @@ function initialise_fullme() {
         // Do not abuse this to try to solve lan/wan access problems!!!!!
 
     } else {
-		// XTEC ************ MODIFICAT - Allow softlinks on paths
-		// 2014.07.30 @pferre22
-		if (($rurl['host'] !== $wwwroot['host']) or (!empty($wwwroot['port']) and $rurl['port'] != $wwwroot['port'])) {
-		// ************ ORIGINAL
-		/*
         if (($rurl['host'] !== $wwwroot['host']) or
                 (!empty($wwwroot['port']) and $rurl['port'] != $wwwroot['port']) or
                 (strpos($rurl['path'], $wwwroot['path']) !== 0)) {
-		*/
-		//************ FI
-
             // Explain the problem and redirect them to the right URL
             if (!defined('NO_MOODLE_COOKIES')) {
                 define('NO_MOODLE_COOKIES', true);
@@ -871,16 +876,6 @@ function initialise_fullme() {
         }
     }
 
-    // XTEC ************ ELIMINAT - Removed code to avoid incompatibility of Moodle 2.x with Agora multisite system.
-    // 2012.04.18 @aginard
-    //    More info: $rurl['path'] comes from $_SERVER['SCRIPT_NAME'] and $wwwroot['path']
-    //    comes from $CFG. In Agora this two values will always be different due to the
-    //    use of Apache's modrewrite to transform the URL's.
-    //    There's no references to this in Moodle tracker as Agora's multisite system
-    //    is not used anywhere else.
-    //    This fix involves the removing of the security check. It is not expected
-    //    to be a potential security issue.
-    /*
     // Check that URL is under $CFG->wwwroot.
     if (strpos($rurl['path'], $wwwroot['path']) === 0) {
         $SCRIPT = substr($rurl['path'], strlen($wwwroot['path'])-1);
@@ -889,8 +884,6 @@ function initialise_fullme() {
         $SCRIPT = $FULLSCRIPT = $FULLME = $ME = null;
         return;
     }
-    */
-    // ************ FI
 
     // $CFG->sslproxy specifies if external SSL appliance is used
     // (That is, the Moodle server uses http, with an external box translating everything to https).
@@ -967,21 +960,7 @@ function setup_get_remote_url() {
     }
     $rurl['port'] = (int)$_SERVER['SERVER_PORT'];
     $rurl['path'] = $_SERVER['SCRIPT_NAME']; // Script path without slash arguments
-
-    // XTEC ************ MODIFICAT - Fixed login using https and BigIP
-    // 2012.11.29 @aginard
-    if (isset($_SERVER['HTTP_X_FORWARDED_PROTO'])) {
-        $rurl['scheme'] = $_SERVER['HTTP_X_FORWARDED_PROTO'];
-    } elseif (isset($_SERVER['HTTPS'])) {
-        $rurl['scheme'] = strtolower($_SERVER['HTTPS']) == 'off' ? 'http' : 'https';
-    } else {
-        $rurl['scheme'] = 'http';
-    }
-    // ************ ORIGINAL
-    /*
     $rurl['scheme'] = (empty($_SERVER['HTTPS']) or $_SERVER['HTTPS'] === 'off' or $_SERVER['HTTPS'] === 'Off' or $_SERVER['HTTPS'] === 'OFF') ? 'http' : 'https';
-    */
-    //************ FI
 
     if (stripos($_SERVER['SERVER_SOFTWARE'], 'apache') !== false) {
         //Apache server

@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comments'] = 'Comentaris';
+$string['highlighted'] = 'Realçat';
 $string['reply'] = 'Respon';

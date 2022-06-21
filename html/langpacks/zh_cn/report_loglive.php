@@ -27,9 +27,15 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventcomponent'] = '组件';
 $string['eventcontext'] = '事件情境';
+$string['eventloggedas'] = '{a->realusername}作为{$a->asusername}';
+$string['eventorigin'] = '起源';
 $string['eventrelatedfullnameuser'] = '受影响的用户';
 $string['eventreportviewed'] = '查看了实时日志报表';
 $string['livelogs'] = '一小时内的实时日志';
 $string['loglive:view'] = '查看实时日志';
+$string['nologreaderenabled'] = '未启用日志读取器';
+$string['pause'] = '暂停实时更新';
 $string['pluginname'] = '实时日志';
+$string['privacy:metadata'] = '实时日志插件不存储任何个人数据。';
+$string['resume'] = '恢复实时更新';
 $string['selectlogreader'] = '选择日志阅读器';

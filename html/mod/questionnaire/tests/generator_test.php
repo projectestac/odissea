@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Unit tests for {@link questionnaire_generator_testcase}.
+ * Unit tests for questionnaire_generator_testcase.
  * @group mod_questionnaire
  */
 class mod_questionnaire_generator_testcase extends advanced_testcase {
@@ -73,7 +73,7 @@ class mod_questionnaire_generator_testcase extends advanced_testcase {
         $generator = $this->getDataGenerator()->get_plugin_generator('mod_questionnaire');
         $questionnaire = $generator->create_instance(array('course' => $course->id));
         $cm = get_coursemodule_from_instance('questionnaire', $questionnaire->id);
-        $questionnaire = new questionnaire($questionnaire->id, null, $course, $cm, false);
+        $questionnaire = new questionnaire($course, $cm, $questionnaire->id, null, false);
 
         $newcontent = array(
             'title'         => 'New title',

@@ -30,7 +30,6 @@ $string['accredible:manage'] = 'Gérer une instance de certificat/badge';
 $string['accredible:student'] = 'Récupérer un certificat ou un badge';
 $string['accredible:view'] = 'Consulter un certificat ou un badge';
 $string['achievementid'] = 'Identifiant d’achèvement / nom de la cohorte (doit être unique)';
-$string['activitydescription'] = 'Ce module crée et met à jour automatiquement un groupe de référence sur Accredible. Tous les certificats et badges émis dans ce groupe, leur apparence, et les informations qui les concernent, sont mis à jour sur le <a href="https://dashboard.accredible.com" target="_blank">tableau de bord</a>.';
 $string['activityname'] = 'Nom de l\'activité';
 $string['additionalactivitiesone'] = 'Avertissement : vous allez ajouter plus qu\'une activité à un cours.<br/>Ces activités sont visibles par les étudiants, donc assurez-vous de leurs donner des noms différents.';
 $string['additionalactivitiesthree'] = 'Le nom qui apparaîtra sur le certificat.';

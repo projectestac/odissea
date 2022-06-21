@@ -271,6 +271,7 @@ $string['configextramemorylimit'] = '某些脚本（如搜索、备份、还原�
 $string['configfilterall'] = '过滤全部字符串，包括头部、标题、导航栏等等。当使用多语言过滤时，这是非常有用的，否则它只会给您的系统带来额外的负担。';
 $string['configfiltermatchoneperpage'] = '自动链接过滤器在过滤内容时，仅在一页中首次匹配到的地方生成链接，而忽略掉后面的。';
 $string['configfiltermatchonepertext'] = '自动链接过滤器在过滤内容时，仅在一篇文字(如资源、版块)中首次匹配到地方生成链接，而忽略掉后面的。如果每页只过滤一次的选项为<i>是</i>，则此选项会被忽略。';
+$string['configfilternavigationwithsystemcontext'] = '过滤的正常使用与使用它的上下文（例如课程上下文）有关，但对于站点导航，使用“内容和标题”过滤时，显式使用站点上下文进行所有过滤可以提高性能。';
 $string['configfilteruploadedfiles'] = '使用该设置会让Moodle在显示上传的HTML和文本前用过滤器处理他们。';
 $string['configforcelogin'] = '通常，不需要登录即可看到首页和课程列表(但不是课程)。如果您想要禁止在登录前做任何事，请使用此项设置。';
 $string['configforceloginforprofiles'] = '启用这个选项会强制访问者在查看用户信息页面时必须以真实(非访客)身份登录。如果您禁用了该选项，那么可能会有用户在个人信息中发布广告（垃圾信息）或其他不和谐的内容，这些全世界都可见。';
@@ -644,6 +645,7 @@ $string['filestoredinhelp'] = '文件将保存于此';
 $string['filterall'] = '过滤全部字符串';
 $string['filtermatchoneperpage'] = '每页只过滤一次';
 $string['filtermatchonepertext'] = '每篇只过滤一次';
+$string['filternavigationwithsystemcontext'] = '使用系统上下文过滤导航';
 $string['filters'] = '过滤器';
 $string['filtersettings'] = '管理过滤器';
 $string['filtersettingsgeneral'] = '常规过滤设置';
@@ -733,7 +735,7 @@ $string['iplookupgeoplugin'] = '当前正在使用 <a href="http://www.geoplugin
 $string['iplookupinfo'] = '默认情况下，Moodle使用免费的在线NetGeo (The Internet Geographic Database) 服务器查询IP地址的位置，不幸的是，现在这个数据不能再使用。会返回<em>wildly incorrect</em> 数据。
 因此强烈推荐安装免费GeoLite City数据库MaxMind。<br />
 IP地址位置会显示在简单的地图或者Google Maps上。请注意，您需要一个Google帐号，并申请免费的 Google Maps API key。';
-$string['iplookupmaxmindnote'] = '该产品包括由MaxMind创建的GeoLite2数据，可通过 <a href="http://www.maxmind.com/">http://www.maxmind.com/访问</a>。';
+$string['iplookupmaxmindnote'] = '该产品包括由MaxMind创建的GeoLite2数据，可通过 <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>获取。';
 $string['iscustomadminwarnings'] = '检测到你的网站使用了自定义的管理员目录。此功能已经不受支持并将会在Moodle4.2版本后删除。';
 $string['ishttpswarning'] = '已经检测到你的网站没有使用 HTTPS 来增加安全。强烈建议您将您的网站改用HTTPS 以增加安全性，并改进与其他系统的整合。';
 $string['keeptagnamecase'] = '保持标签名大小写';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowedtypes'] = '允许类型';
 $string['allowedtypes_desc'] = '哪些录制按钮应显示在 Atto 中。除此设置外, 还有可以针对特定内容，控制特定用户对按钮的访问的功能。';
-$string['attachrecording'] = '附加录制';
+$string['attachrecording'] = '贴上录制';
 $string['audioandvideo'] = '音频和视频';
 $string['audiobitrate'] = '音频比特率';
 $string['audiobitrate_desc'] = '录音质量 (数值越大质量越高)';

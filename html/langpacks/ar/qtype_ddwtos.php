@@ -29,6 +29,7 @@ $string['addmorechoiceblanks'] = 'إضافة {no} خيارات أخرى';
 $string['answer'] = 'الإجابة';
 $string['blank'] = 'فراغ';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}';
+$string['errorlimitedchoice'] = 'الخيار [[{$a}]] تم استعماله لأكثر من مرة دون ضبطه على "غير محدود". رجاءً، تحقق من هذا السؤال مرة أخرى.';
 $string['infinite'] = 'غير محدود';
 $string['pleaseputananswerineachbox'] = 'يرجى وضع إجابة في كل مربع.';
 $string['pluginname'] = 'السحب والإفلات في النص';

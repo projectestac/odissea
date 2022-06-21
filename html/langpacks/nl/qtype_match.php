@@ -47,4 +47,4 @@ $string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een be
 $string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
 $string['privacy:preference:shuffleanswers'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
 $string['shuffle'] = 'Vragen in willekeurige volgorde';
-$string['shuffle_help'] = 'Indien ingesteld, dan zal de volgorde van de verklaringen (antwoorden) bij elke poging willekeurig dooreengeschud worden, op voorwaarde dat ook de "Willekeurige volgorde in vragen" in de activiteitsinstellingen is ingeschakeld.';
+$string['shuffle_help'] = 'Indien ingesteld, dan zal de volgorde van de vragen bij elke poging willekeurig dooreengeschud worden, op voorwaarde dat ook de "Willekeurige volgorde in vragen" in de activiteitsinstellingen is ingeschakeld.';

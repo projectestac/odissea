@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'PHPUnit 测试';
+$string['privacy:metadata'] = 'PHPUnit测试插件不存储任何个人数据。';

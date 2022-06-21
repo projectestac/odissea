@@ -52,7 +52,7 @@ $string['course_fullname_updateonsync'] = '同期スクリプトでフルネー�
 $string['course_fullname_updateonsync_key'] = 'フルネームを更新する';
 $string['course_idnumber'] = 'コースIDナンバーを取得するLDAP属性です。通常、「cn」または「uid」です。';
 $string['course_idnumber_key'] = 'IDナンバー';
-$string['course_search_sub'] = 'サブコンテクストよりグループメンバーシップを検索する';
+$string['course_search_sub'] = 'サブコンテクストよりグループメンバシップを検索する';
 $string['course_search_sub_key'] = 'サブコンテクストを検索する';
 $string['course_settings'] = 'コース登録設定';
 $string['course_shortname'] = '任意: 「省略名」を取得するLDAPフィールドです。';
@@ -83,17 +83,17 @@ $string['extremovedunenrol'] = 'コース「 {$a->course_shortname} (id {$a->cou
 $string['failed'] = '失敗!';
 $string['general_options'] = '一般オプション';
 $string['group_memberofattribute'] = 'ユーザまたはグループが属するグループの識別名です (例 memberOf、groupMembership等)。';
-$string['group_memberofattribute_key'] = 'メンバー属性';
+$string['group_memberofattribute_key'] = 'メンバ属性';
 $string['host_url'] = '「ldap://ldap.myorg.com/」または「ldaps://ldap.myorg.com/」のようにLDAPホストをURLの形式で指定してください。';
 $string['host_url_key'] = 'ホストURL';
-$string['idnumber_attribute'] = 'グループメンバーシップに識別名が含まれている場合、LDAP認証設定のユーザ「IDナンバー」マッピングで指定されている属性と同じ属性を指定してください。';
+$string['idnumber_attribute'] = 'グループメンバシップに識別名が含まれている場合、LDAP認証設定のユーザ「IDナンバー」マッピングで指定されている属性と同じ属性を指定してください。';
 $string['idnumber_attribute_key'] = 'IDナンバー属性';
 $string['ldap:manage'] = 'LDAP登録インスタンスを管理する';
 $string['ldap_encoding'] = 'LDAPサーバで使用するエンコーディングを指定してください。ほとんどの場合、UTF-8ですが、MS AD v2ユーザデフォルトプラットフォームのエンコーディングではcp1252、cp1250等のようになります。';
 $string['ldap_encoding_key'] = 'LDAPエンコーディング';
-$string['memberattribute'] = 'LDAPメンバー属性';
-$string['memberattribute_isdn'] = 'グループメンバーシップに識別名が含まれている場合、あなたはここで指定する必要があります。その場合、このセクションの残りの項目も設定する必要があります。';
-$string['memberattribute_isdn_key'] = 'ユーザDNのメンバー属性';
+$string['memberattribute'] = 'LDAPメンバ属性';
+$string['memberattribute_isdn'] = 'グループメンバシップに識別名が含まれている場合、あなたはここで指定する必要があります。その場合、このセクションの残りの項目も設定する必要があります。';
+$string['memberattribute_isdn_key'] = 'ユーザDNのメンバ属性';
 $string['nested_groups'] = '登録にネストグループ (グループ内のグループ) を使用しますか?';
 $string['nested_groups_key'] = 'ネストグループ';
 $string['nested_groups_settings'] = 'ネストグループ設定';
@@ -101,19 +101,19 @@ $string['nosuchrole'] = 'このようなロールはありません: {$a}';
 $string['objectclass'] = 'コース検索に使用するobjectClassです。通常、「group」または「posixGroup」です。';
 $string['objectclass_key'] = 'オブジェクトクラス';
 $string['ok'] = 'OK!';
-$string['opt_deref'] = 'グループメンバーシップに識別名が含まれている場合、検索時にどのようにエイリアスが処理されるか指定してください。次の値を選択してください: NO = LDAP_DEREF_NEVERまたはYes = LDAP_DEREF_ALWAYS';
+$string['opt_deref'] = 'グループメンバシップに識別名が含まれている場合、検索時にどのようにエイリアスが処理されるか指定してください。次の値を選択してください: NO = LDAP_DEREF_NEVERまたはYes = LDAP_DEREF_ALWAYS';
 $string['opt_deref_key'] = 'エイリアスの修飾参照';
 $string['phpldap_noextension'] = 'PHP LDAPモジュールが存在しないようです。あなたがこの登録プラグインを使用したい場合、当該モジュールがインストールおよび有効化されていることを確認してください。';
 $string['pluginname'] = 'LDAP登録';
-$string['pluginname_desc'] = '<p>あなたのユーザ登録をコントロールするためLDAPサーバを使用することができます。LDAPの使用はあなたのLDAPツリーがコースにマップするグループを含んでいること、それぞれのグループ/コース内に学生をマップするためのメンバーシップエントリを持つことを前提とします。</p>
-<p>コースはLDAP内でグループとして定義され、ユニークなユーザ識別を含む複数のメンバーシップフィールド (<em>member</em> または <em>memberUid</em>) を持っていることを前提とします。</p>
-<p>LDAPを使用してユーザを登録するにはユーザが有効なIDナンバーフィールドを<strong>持つ必要</strong>があります。LDAPグループはユーザがコースに登録できるようメンバーフィールドの中にIDナンバーを持つ必要があります。あなたがすでにLDAP認証を使用している場合、通常これらは正常に動作します。</p>
+$string['pluginname_desc'] = '<p>あなたのユーザ登録をコントロールするためLDAPサーバを使用することができます。LDAPの使用はあなたのLDAPツリーがコースにマップするグループを含んでいること、それぞれのグループ/コース内に学生をマップするためのメンバシップエントリを持つことを前提とします。</p>
+<p>コースはLDAP内でグループとして定義され、ユニークなユーザ識別を含む複数のメンバシップフィールド (<em>member</em> または <em>memberUid</em>) を持っていることを前提とします。</p>
+<p>LDAPを使用してユーザを登録するにはユーザが有効なIDナンバーフィールドを<strong>持つ必要</strong>があります。LDAPグループはユーザがコースに登録できるようメンバフィールドの中にIDナンバーを持つ必要があります。あなたがすでにLDAP認証を使用している場合、通常これらは正常に動作します。</p>
 <p>ユーザ登録情報はユーザのログイン時に更新されます。登録情報の同期をとるため、スクリプトを実行させることもできます。<em>enrol/ldap/enrol_ldap_sync.php</em>をご覧ください。</p>
 <p>このプラグインでは新しいグループがLDAP内に作成された場合、自動的に新しいコースを作成することも可能です。</p>';
 $string['pluginnotenabled'] = 'プラグインが有効にされていません!';
 $string['privacy:metadata'] = 'LDAP登録プラグインはいかなる個人データも保存しません。';
-$string['role_mapping'] = '<p>それぞれのロールにおいて、あなたはコースが置かれている場所を表すグループのLDAPコンテクストすべてを指定する必要があります。異なるコンテクストはセミコロン (;) で分離してください。</p><p>また、あなたのLDAPサーバがグループメンバーを保持するため使用する属性も指定する必要があります。通常、「member」または「memberUid」です。</p>';
-$string['role_mapping_attribute'] = '{$a} のLDAPメンバー属性';
+$string['role_mapping'] = '<p>それぞれのロールにおいて、あなたはコースが置かれている場所を表すグループのLDAPコンテクストすべてを指定する必要があります。異なるコンテクストはセミコロン (;) で分離してください。</p><p>また、あなたのLDAPサーバがグループメンバを保持するため使用する属性も指定する必要があります。通常、「member」または「memberUid」です。</p>';
+$string['role_mapping_attribute'] = '{$a} のLDAPメンバ属性';
 $string['role_mapping_context'] = '{$a} のLDAPコンテクスト';
 $string['role_mapping_key'] = 'LDAPからロールをマップする';
 $string['roles'] = 'ロールマッピング';
@@ -126,14 +126,14 @@ $string['unassignrole'] = 'コース 「{$a->course_shortname} (id {$a->course_i
 $string['unassignrolefailed'] = 'コース 「{$a->course_shortname} (id {$a->course_id}) 」のユーザ「 {$a->user_username} 」のロール「 {$a->role_shortname} 」の割り当て解除に失敗しました。';
 $string['unassignroleid'] = 'ロールID「 {$a->role_id} 」をユーザID「 {$a->user_id} 」から割り当て解除';
 $string['updatelocal'] = 'ローカルデータを更新する';
-$string['user_attribute'] = 'グループメンバーシップに識別名が含まれている場合、name/searchユーザに使用される属性を指定してください。あなたがLDAP認証を使用している場合、この値はLDAP認証プラグインの「IDナンバー」マッピングで指定されている属性と合致する必要があります。';
+$string['user_attribute'] = 'グループメンバシップに識別名が含まれている場合、name/searchユーザに使用される属性を指定してください。あなたがLDAP認証を使用している場合、この値はLDAP認証プラグインの「IDナンバー」マッピングで指定されている属性と合致する必要があります。';
 $string['user_attribute_key'] = 'IDナンバー属性';
-$string['user_contexts'] = 'グループメンバーシップに識別名が含まれている場合、ユーザが配置されているコンテクスト一覧を指定してください。異なるコンテクストはセミコロン「;」で分離します。例えば次のようになります: ou=users,o=org; ou=others,o=org';
+$string['user_contexts'] = 'グループメンバシップに識別名が含まれている場合、ユーザが配置されているコンテクスト一覧を指定してください。異なるコンテクストはセミコロン「;」で分離します。例えば次のようになります: ou=users,o=org; ou=others,o=org';
 $string['user_contexts_key'] = 'コンテクスト';
-$string['user_search_sub'] = 'グループメンバーシップに識別名が含まれている場合、ユーザ検索時にサブコンテクストも同時に検索するかどうか指定してください。';
+$string['user_search_sub'] = 'グループメンバシップに識別名が含まれている場合、ユーザ検索時にサブコンテクストも同時に検索するかどうか指定してください。';
 $string['user_search_sub_key'] = 'サブコンテクストを検索する';
 $string['user_settings'] = 'ユーザルックアップ設定';
-$string['user_type'] = 'グループメンバーシップに識別名が含まれている場合、ユーザがLDAPにどのように保存されるか指定してください。';
+$string['user_type'] = 'グループメンバシップに識別名が含まれている場合、ユーザがLDAPにどのように保存されるか指定してください。';
 $string['user_type_key'] = 'ユーザタイプ';
 $string['version'] = 'あなたのサーバが使用しているLDAPプロトコルのバージョンです。';
 $string['version_key'] = 'バージョン';

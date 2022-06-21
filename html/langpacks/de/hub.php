@@ -118,7 +118,7 @@ $string['none'] = 'Keine';
 $string['nosearch'] = 'Hub oder Kurse nicht veröffentlichen';
 $string['notregisteredonhub'] = 'Administrator/innen müssen diese Seite bei Moodle.net zunächst registrieren, bevor Sie einen Kurs veröffentlichen können.';
 $string['operation'] = 'Aktionen';
-$string['participantnumberaverage'] = 'Durchschnittsteilnehmerzahl ({$a})';
+$string['participantnumberaverage'] = 'Durchschnittsteilnehmendenzahl ({$a})';
 $string['policyagreed'] = 'Datenschutzerklärung und Datenverarbeitungsvereinbarung';
 $string['policyagreeddesc'] = 'Ich stimme der <a href="{$a}" target="_blank">Datenschutzerklärung und der Datenverarbeitungsvereinbarung</a> zu.';
 $string['postaladdress'] = 'Postadresse';

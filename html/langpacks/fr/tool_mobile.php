@@ -105,7 +105,7 @@ $string['mobilecssurl'] = 'CSS';
 $string['mobilefeatures'] = 'Fonctionnalités pour mobiles';
 $string['mobilenotificationsdisabledwarning'] = 'Les notifications mobiles ne sont pas activées. Elles doivent être activées dans les Réglages de notification.';
 $string['mobilesettings'] = 'Réglages pour mobiles';
-$string['moodleappsportalfeatureswarning'] = 'Certaines fonctionnalités peuvent être restreintes, selon votre abonnement à l\'app Moodle. Pour plus d\'information, visiter le <a href="{$a}" target="_blank">portail des apps Moodle</a>.';
+$string['moodleappsportalfeatureswarning'] = 'Certaines fonctionnalités peuvent être restreintes, selon votre abonnement à l\'app Moodle. Pour plus d\'informations, visiter le <a href="{$a}" target="_blank">portail des apps Moodle</a>.';
 $string['notifications'] = 'Notifications';
 $string['notificationsactivedevices'] = 'Appareils actifs';
 $string['notificationscurrentactivedevices'] = 'Appareils recevant des notifications ce mois';

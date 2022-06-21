@@ -145,6 +145,7 @@ $string['effectiveretentionperioduser'] = '{$a} (erabiltzailea gunean azkenengoz
 $string['emailsalutation'] = '{$a} agurgarria,';
 $string['errorcannotrequestdeleteforother'] = 'Ez duzu erabiltzaile honentzako ezabatze-eskaera egiteko baimenik.';
 $string['errorcannotrequestdeleteforself'] = 'Ez duzu zuretzako ezabatze-eskaera egiteko baimenik.';
+$string['errorcannotrequestexportforself'] = 'Ez duzu esportatze-eskaera bat egiteko baimenik.';
 $string['errorcontactdpodisabled'] = 'Pribatutasunerako ordezkariarekin harremanetan jartzeko aukera desgaituta dago';
 $string['errorcontexthasunexpiredchildren'] = '"{$a}" testuinguruak oraindik ditu iraungi ez diren azpi-testuinguruak. Ez da ezabatzeko testuingururik markatu.';
 $string['errorinvalidrequestcomments'] = 'Iruzkinen eremuan testu-soila baino ezin da gehitu.';

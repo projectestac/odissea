@@ -58,7 +58,7 @@ $string['notheme'] = 'Aucun thème défini pour cet utilisateur.';
 $string['pluginname'] = 'Déposer des comptes utilisateurs';
 $string['privacy:metadata'] = 'Le plugin Déposer des comptes utilisateurs n\'enregistre aucune donnée personnelle.';
 $string['renameerrors'] = 'Erreurs lors du changement de nom';
-$string['requiredtemplate'] = 'Requis. Vous pouvez utiliser ici la syntaxe de modèle (%l = nom, %f = prénom, %u = nom d\'utilisateur). Voir l\'aide pour des détails et des exemples.';
+$string['requiredtemplate'] = 'Requis. Vous pouvez utiliser ici la syntaxe de modèle (%l = nom, %f = prénom, %u = nom d\'utilisateur). Voir l\'aide pour des informations additionnelles et des exemples.';
 $string['rowpreviewnum'] = 'Rangées de prévisualisation';
 $string['unassignedsysrole'] = 'Retirer le rôle système {$a}';
 $string['uploadpicture_baduserfield'] = 'L\'attribut indiqué n\'est pas valide. Veuillez essayer à nouveau.';

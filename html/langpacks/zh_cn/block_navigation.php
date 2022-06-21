@@ -35,6 +35,7 @@ $string['linkcategoriesdesc'] = '以链接的方式显示类别';
 $string['navigation:addinstance'] = '新增导航版块';
 $string['navigation:myaddinstance'] = '在个人主页新增一个导航版块';
 $string['pluginname'] = '导航';
+$string['privacy:metadata'] = '“导航”板块仅显示存储在其他位置的数据。';
 $string['trimlength'] = '剪裁到只剩几个字符';
 $string['trimmode'] = '剪裁模式';
 $string['trimmodecenter'] = '从中间开始剪裁字符';

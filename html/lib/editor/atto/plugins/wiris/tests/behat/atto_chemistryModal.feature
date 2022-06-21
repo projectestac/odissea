@@ -1,4 +1,4 @@
-@editor @editor_atto @atto @atto_wiris @_bug_phantomjs @wiris_mathtype
+@editor @editor_atto @atto @atto_wiris @_bug_phantomjs @wiris_mathtype @3.x
 Feature: Use atto to post a chemistry formula
 In order to check whether a chemistry formula can be displayed correctly
 As an admin
@@ -27,6 +27,7 @@ I need to write a chemistry formula
       | Name | Test MathType for Atto on Moodle chemistry formulas |
     And I press "ChemType" in "Page content" field in Atto editor
     And I set MathType formula to '<math><mi mathvariant="normal">H</mi><mn>2</mn><mi mathvariant="normal">O</mi></math>'
+    And I wait "1" seconds
     And I press accept button in MathType Editor
     And I press "Save and display"
     Then I wait until Wirisformula formula exists

@@ -120,7 +120,7 @@ $string['delete'] = 'Löschen';
 $string['delete_confirmation'] = 'Möchten Sie dieses vorkonfigurierte Tool wirklich löschen?';
 $string['deletetype'] = 'Vorkonfiguriertes Tool löschen.';
 $string['display_description'] = 'Beschreibung bei Start anzeigen';
-$string['display_description_help'] = 'Die oben eingegebene Beschreibung wird bei Aktivierung über dem Inhalt des Tools angezeigt. Die Beschreibung kann genutzt werden, um Teilnehmern zusätzliche Hinweise zugeben. Sie ist nicht unbedingt erforderlich. Wenn die Darstellung im neuen Fenster erfolgt, kann die Beschreibung nie angezeigt werden.';
+$string['display_description_help'] = 'Die oben eingegebene Beschreibung wird bei Aktivierung über dem Inhalt des Tools angezeigt. Die Beschreibung kann genutzt werden, um Teilnehmenden zusätzliche Hinweise zugeben. Sie ist nicht unbedingt erforderlich. Wenn die Darstellung im neuen Fenster erfolgt, kann die Beschreibung nie angezeigt werden.';
 $string['display_name'] = 'Aktivitätenname bei Start anzeigen';
 $string['display_name_help'] = 'Der Aktivitätenname kann über dem Inhalt des Toolanbieters angezeigt werden. Es ist auch möglich, dass der Toolanbieter den Namen direkt anzeigt. Die Option kann damit eine doppelte Anzeige verhindern. Die Titelanzeige ist nicht verfügbar wenn das Tool in einem neuen Fenster geöffnet wird.';
 $string['domain_mismatch'] = 'Die Domain der Tool-URL passt nicht zum Eintrag in Tool-Konfiguration';
@@ -154,7 +154,7 @@ $string['errortooltypenotfound'] = 'LTI Tool-Typ nicht gefunden';
 $string['existing_window'] = 'Vorhandenes Fenster';
 $string['extensions'] = 'LTI Extension Services';
 $string['external_tool_type'] = 'Vorkonfiguriertes Tool';
-$string['external_tool_type_help'] = '* **Automatisch mit Tool-URL** - Diese Einstellung ist meistens ausreichend. Moodle verwendet dann die passendste Konfiguration über die Tool-URL. Es können Tools verwendet werden, die vom Administrator vorkonfiguriert oder im Kurs angelegt wurden.
+$string['external_tool_type_help'] = '* **Automatisch mit Tool-URL** - Diese Einstellung ist meistens ausreichend. Moodle verwendet dann die passendste Konfiguration über die Tool-URL. Es können Tools verwendet werden, die von dem/der Administrator/in vorkonfiguriert oder im Kurs angelegt wurden.
 Sofern eine Start-URL definiert ist, erzeugt Moodle ein Feedback, ob dieses erkannt wird oder nicht. Sollte dieser Zugang scheitern, können Konfigurationsinformationen manuell eingetragen werden.
 * **Ein spezifischer vorkonfigurierter Tool-Typ** - Die Auswahl erzwingt eine bestimmte Konfiguration zur Kommunikation mit dem Tool-Anbieter zu nutzen. Sollte die eingetragene Start-URL nicht zu dem Tool-Anbieter passen, erfolgt eine Warnung. Manchmal ist es nicht nötig eine Start-URL einzutragen falls ein spezifischer Tool-Typ verwandt wird.
 * **Individuelle Konfiguration** - Die spezifische Konfiguration wird nur für die spezielle Instanz verwandt. Unter erweiterten Einstellungen können Anwenderschlüsssel und Kennwörter (shared secret) eingetragen werden. Beide werden durch den Tool Provider zur Verfügung gestellt. Falls das Tool diese Einstellungen nicht benötigt, können die Felder leer bleiben.
@@ -249,8 +249,8 @@ $string['main_admin_help'] = 'Externe Tools ermöglichen es Moodle Nutzern nahtl
 Die Tools auf dieser Seite sind in drei unterschiedliche Typen klassifiziert:
 
 * ** Aktiv** - Diese Toolanbieter wurden durch eine/n Administrator/in geprüft und konfiguriert. Sie können in jedem Kurs genutzt werden. Wenn ein Anwenderschlüssel und ein Kennwort eingegeben werden, wird eine geschützte Verbindung zwischen Moodle und dem Toolanbieter aufgebaut.
-* **Abwarten** - Diese Tool Anbieter wurden im Rahmen eines Paketimports im System hinterlegt. Sie sind noch nicht von einer/m Administrator/in konfiguriert worden. Trainer können diese Tools verwenden, wenn sie selber über einen Anwenderschlüssel und ein Kennwort verfügen, oder dies nicht erforderlich ist.
-* **Gesperrt** - Diese Toolanbieter sind von Administrator/innen nicht zur systemweiten Nutzung freigegeben worden. Trainer können die Tools dennoch nutzen, wenn sie über einen Anwenderschlüssel und ein Kennwort für dieses Tool verfügen, oder dies nicht erforderlich ist.';
+* **Abwarten** - Diese Tool Anbieter wurden im Rahmen eines Paketimports im System hinterlegt. Sie sind noch nicht von einer/m Administrator/in konfiguriert worden. Trainer/innen können diese Tools verwenden, wenn sie selber über einen Anwenderschlüssel und ein Kennwort verfügen, oder dies nicht erforderlich ist.
+* **Gesperrt** - Diese Toolanbieter sind von Administrator/innen nicht zur systemweiten Nutzung freigegeben worden. Trainer/innen können die Tools dennoch nutzen, wenn sie über einen Anwenderschlüssel und ein Kennwort für dieses Tool verfügen, oder dies nicht erforderlich ist.';
 $string['manage_external_tools'] = 'Tools verwalten';
 $string['manage_tool_proxies'] = 'Registrierung von externen Tools verwalten';
 $string['manage_tools'] = 'Vorkonfigurierte Tools verwalten';
@@ -268,7 +268,7 @@ Hinweis zum Datenschutz: Häufig werden Namen und E-Mail-Adressen Ihrer Teilnehm
 
 Externe Tool-Aktivitäten unterscheiden sich in einigen Punkten von URL-Ressourcen:
 
-* Externe Tools sind kontextabhängig, d.h. sie haben Zugriff auf Informationen über den Benutzer, der das Tool gestartet hat, wie z.B. Institution, Kurs und Name.
+* Externe Tools sind kontextabhängig, d.h. sie haben Zugriff auf Informationen über den/die Nutzender, der das Tool gestartet hat, wie z.B. Institution, Kurs und Name.
 * Externe Tools unterstützen das Lesen, Aktualisieren und Löschen von Bewertungen, die mit der Aktivitätsinstanz verbunden sind
 * Konfigurationen von externen Tools schaffen eine wechselseitige Beziehung zwischen Ihrer Website und dem Werkzeuganbieter und ermöglichen eine sichere Kommunikation zwischen ihnen.';
 $string['modulenameplural'] = 'Externe Tools';
@@ -417,13 +417,13 @@ $string['share_name_admin_help'] = 'Festlegen, ob der Name des Anwenders an den 
 $string['share_name_help'] = 'Diese Option legt fest, ob der vollständige Nutzername an den Tool-Provider übergeben wird, wenn die Tool-Instanz verwendet wird. Nutzer/innen können so bei einem wiederholten Zugriff wiedererkannt werden und personalisierte Informationen erhalten.
 
 Diese Einstellung kann in der Tool-Konfiguration überschrieben wreden.';
-$string['share_roster'] = 'Tool Zugriff auf Teilnehmerliste geben';
-$string['share_roster_admin'] = 'Tool kann auf Teilnehmerliste zugreifen.';
-$string['share_roster_admin_help'] = 'Festlegen, ob das Tool auf die Liste der Teilnehmer derjenigen Kurse zugreifen darf, in denen das Tool gestartet wurde.';
+$string['share_roster'] = 'Tool Zugriff auf Teilnehmendenliste geben';
+$string['share_roster_admin'] = 'Tool kann auf Teilnehmendenliste zugreifen.';
+$string['share_roster_admin_help'] = 'Festlegen, ob das Tool auf die Liste der Teilnehmer/innen derjenigen Kurse zugreifen darf, in denen das Tool gestartet wurde.';
 $string['share_roster_help'] = 'Diese Option legt fest, ob das Tool auf die Teilnehmerliste des Kurses zugreifen darf.
 
 Diese Einstellung kann in der Tool-Konfiguration überschrieben werden.';
-$string['show_in_course_activity_chooser'] = 'In Aktivitätsauswahl als vorkonfiguriertes Tool anzeigen.';
+$string['show_in_course_activity_chooser'] = 'In Aktivitätsauswahl und als vorkonfiguriertes Tool anzeigen.';
 $string['show_in_course_lti1'] = 'Verwendung der Toolkonfiguration';
 $string['show_in_course_lti1_help'] = 'Dieses Tool kann in der Aktivitätsauswahl für Trainer/innen angezeigt werden, um es zu einem Kurs hinzuzufügen. Alternativ kann es ist im vorkonfigurierten Tool-Menü angezeigt werden, wenn ein externes Tool zu einem Kurs hinzugefügt wird. Des Weiteren kann die Tool-Konfiguration auch verwendet werden, um die genaue Tool-URL zu erfahren, wenn ein externes Tool zu einem Kurs hinzugefügt wird.';
 $string['show_in_course_lti2'] = 'Verwendung der Toolkonfiguration';

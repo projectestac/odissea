@@ -117,7 +117,8 @@ class com_wiris_quizzes_impl_SlotImpl extends com_wiris_util_xml_SerializableImp
 		$this->initialContent = $s->serializeChildName($this->initialContent, com_wiris_quizzes_impl_InitialContent::$TAGNAME);
 		$s->endTag();
 	}
-	public function copyData($slot) {
+	public function copyData($slotModel, $copyAuthorAnswers) {
+		$slot = $slotModel;
 		$this->setInitialContent($slot->getInitialContent());
 		$this->syntax->importAssertionNameAndParams($slot->syntax->copy());
 		if($slot->localData !== null) {
@@ -134,17 +135,21 @@ class com_wiris_quizzes_impl_SlotImpl extends com_wiris_util_xml_SerializableImp
 			}
 		}
 		$authorAnswers = $slot->authorAnswers;
-		if($authorAnswers !== null) {
+		if($copyAuthorAnswers && $authorAnswers !== null) {
 			$_g = 0;
 			while($_g < $authorAnswers->length) {
 				$aa = $authorAnswers[$_g];
 				++$_g;
 				$aaClone = com_wiris_quizzes_impl_AuthorAnswerImpl::newWithQuestionCallback($this->question, $this);
-				$aaClone->copyData($aa);
+				$aaClone->copy($aa);
 				$this->addAuthorAnswerImpl($aaClone);
 				unset($aaClone,$aa);
 			}
 		}
+	}
+	public function copy($slotModel) {
+		$this->copyData($slotModel, false);
+		return $this;
 	}
 	public $question;
 	public $localData;

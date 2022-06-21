@@ -195,7 +195,11 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             for ($i = 0; $i < count($correctanswers); $i++) {
                 $wqgrade = $qi->getAnswerGrade($i, 0, $this->wirisquestion);
                 $grade = $wqgrade * $correctanswers[$i]->fraction;
-                if ($grade > $max) {
+
+                // Use the option that maximizes the grade of a student.
+                // In the event of a tie, chose the answer that is closest to an author answer
+                // ordered by wq grade.
+                if ($grade > $max || ($grade == $max && $wqgrade > $maxwqgrade)) {
                     $max = $grade;
                     $maxwqgrade = $wqgrade;
                     $answer = $correctanswers[$i];

@@ -212,7 +212,7 @@ $string['modulename_help'] = 'Die gegenseitige Beurteilung (Peer Assessment, fr�
 
 Die Teilnehmer/innen können beliebige digitalen Inhalte (Dateien), wie z.B. textverarbeitete Dokumente oder Tabellenkalkulationen einreichen und mit dem Texteditor auch direkt Text in ein Feld eingeben.
 
-Die Einreichungen werden anhand eines von der Trainerin/vom Trainer festgelegten Beurteilungsbogen mit mehreren Kriterien bewertet. Der Prozess der gegenseitige Beurteilung und des Verständnisses des Beurteilungsbogen kann im Voraus anhand von Beispieleinreichungen geübt werden, die von der Trainerin/vom Trainer zusammen mit einer Referenzbeurteilung zur Verfügung gestellt werden. Die Teilnehmer/innen haben die Möglichkeit, eine oder mehrere Einreichungen ihrer Kolleg/innen zu beurteilen. Einreichungen und Bewerter können bei Bedarf anonym bleiben.
+Die Einreichungen werden anhand eines von dem/der Trainer/in festgelegten Beurteilungsbogen mit mehreren Kriterien bewertet. Der Prozess der gegenseitige Beurteilung und des Verständnisses des Beurteilungsbogen kann im Voraus anhand von Beispieleinreichungen geübt werden, die von der/dem Trainer/in zusammen mit einer Referenzbeurteilung zur Verfügung gestellt werden. Die Teilnehmer/innen haben die Möglichkeit, eine oder mehrere Einreichungen ihrer Kolleg/innen zu beurteilen. Einreichungen und Bewerter können bei Bedarf anonym bleiben.
 
 Hinweis: Es müssen nicht alle Schritte aktiviert werden.
 

@@ -67,9 +67,9 @@
 			</content>
 		</action>
 
-		<action id="log" offset="4">
+		<action id="logBase" offset="4">
 			<content>
-				<math><mi>log</mi><mfenced><mrow/></mfenced></math>
+				<math><msub><mi>log</mi><mrow/></msub><mfenced><mrow/></mfenced></math>
 			</content>
 		</action>
 		<action id="ln" offset="3">
@@ -77,53 +77,11 @@
 				<math><mi>ln</mi><mfenced><mrow/></mfenced></math>
 			</content>
 		</action>
-		<action id="nlog" offset="4">
-			<content>
-				<math><msub><mi>ln</mi><mrow/></msub><mfenced><mrow/></mfenced></math>
-			</content>
-		</action>
 		<action id="exp" offset="4">
 			<content>
 				<math><mi>exp</mi><mfenced><mrow/></mfenced></math>
 			</content>
 		</action>
-
-		<!-- action id="parenthesis">
-			<content>
-				<mfenced><mrow/></mfenced>
-			</content>
-		</action>
-		
-		<action id="squareBracket">
-			<content>
-				<mfenced open="[" close="]"><mrow/></mfenced>
-			</content>
-		</action>
-		
-		<action id="verticalBar">
-			<content>
-				<mfenced open="|" close="|"><mrow/></mfenced>
-			</content>
-		</action>
-		
-		<action id="subscript">
-			<content>
-				<msub><maction actiontype="argument"><mrow/></maction><mrow/></msub>
-			</content>
-		</action>
-		
-		
-		<action id="subsuperscript">
-			<content>
-				<msubsup><maction actiontype="argument"><mrow/></maction><mrow/><mrow/></msubsup>
-			</content>
-		</action>
-		
-		<action id="table">
-			<content>
-				<mtable><mtr><mtd/><mtd/><mtd/></mtr><mtr><mtd/><mtd/><mtd/></mtr><mtr><mtd/><mtd/><mtd/></mtr></mtable>
-			</content>
-		</action-->
 	</actions>
 	
 	<toolbar>

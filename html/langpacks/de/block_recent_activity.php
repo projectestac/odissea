@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['cleanuptask'] = 'Task zum Bereinigen des Blocks \'Letzte Aktivitäten\'';
 $string['pluginname'] = 'Neue Aktivitäten';
 $string['privacy:metadata'] = 'Der letzte Aktivitäten-Block enthält einen Cache mit Daten, die an anderen Stellen in Moodle gespeichert wurden.';
-$string['privacy:metadata:block_recent_activity'] = 'Temporärer Log früherer Traineraktivitäten. Wird nach zwei Tagen gelöscht.';
+$string['privacy:metadata:block_recent_activity'] = 'Temporärer Log früherer Trainer/innenaktivitäten. Wird nach zwei Tagen gelöscht.';
 $string['privacy:metadata:block_recent_activity:action'] = 'Aktion: erstellt, aktualisiert oder gelöscht';
 $string['privacy:metadata:block_recent_activity:cmid'] = 'Kursaktivitäts-ID';
 $string['privacy:metadata:block_recent_activity:courseid'] = 'Kurs-ID';

@@ -348,7 +348,7 @@ $string['coursebackup'] = 'Back-up  van cursussen';
 $string['coursebulkaction'] = 'Bulkacties voor geselecteerde cursussen';
 $string['coursecategories'] = 'Cursuscategorieën';
 $string['coursecategory'] = 'Cursuscategorie';
-$string['coursecategory_help'] = 'Deze instelling bepaalt de categorie waarin je cursus verschijnt in de cursussenlijst.';
+$string['coursecategory_help'] = 'Deze instelling bepaalt de categorie waarin je cursus verschijnt in de cursuslijst.';
 $string['coursecategorydeleted'] = 'Verwijder cursuscategorie {$a}';
 $string['coursecatmanagement'] = 'Cursus- en categoriebeheer';
 $string['coursecompletion'] = 'Cursus voltooien';
@@ -687,7 +687,7 @@ $string['emailenable'] = 'Dit e-mailadres is ingeschakeld';
 $string['emailenableclick'] = 'Klik hier om ervoor te zorgen dat Moodle terug e-mail naar dit adres stuurt';
 $string['emailexists'] = 'Dit e-mailadres is al geregistreerd.';
 $string['emailexistshintlink'] = 'Vergeten gebruikersnaam of wachtwoord herstellen';
-$string['emailexistssignuphint'] = 'Miscchien heb je vroeger al eens een account gemaakt. ($a)';
+$string['emailexistssignuphint'] = 'Miscchien heb je vroeger al eens een account gemaakt. {$a}';
 $string['emailformat'] = 'E-mailopmaak';
 $string['emailmustbereal'] = 'N.B. je e-mailadres moet een bestaand en werkend adres zijn';
 $string['emailnotallowed'] = 'E-mailadressen van deze domeinen zijn niet toegelaten ({$a})';
@@ -773,7 +773,7 @@ $string['emptydragdropregion'] = 'lege zone';
 $string['enable'] = 'Schakel in';
 $string['encryptedcode'] = 'Geëncrypteerde code';
 $string['enddate'] = 'Cursus einddatum';
-$string['enddate_help'] = 'De cursusduur wordt gebruikt om  te bepalen of een cursus in de cursuslijst van een gebruiker wordt opgenomen. Na deze datum verschijnt de cursus niet meer in de navigatie van de gebruiker en wordt die als afgelopen getoond in het cursusoverzicht. De cursus einddatum kan ook gebruikt worden voor rapportages. Gebruikers kunnen nog steeds in de cursus na de einddatum. De datum beperkt de toegangsrechten niet.';
+$string['enddate_help'] = 'De cursus einddatum wordt gebruikt om  te bepalen of een cursus in de lijst met voltooide cursussen van een gebruiker wordt opgenomen. De cursus einddatum kan ook gebruikt worden voor aangepaste rapportages. Merk op dat gebruikers nog steeds in de cursus kunnen na de einddatum. De datum beperkt de toegangsrechten niet.';
 $string['english'] = 'Engels';
 $string['enrolmentmethods'] = 'Aanmeldingsmethodes';
 $string['entercourse'] = 'Klik om deze cursus binnen te gaan';
@@ -995,7 +995,7 @@ $string['guestsyes'] = 'Laat gasten zonder sleutel toe';
 $string['guestuser'] = 'Gastgebruiker';
 $string['guestuserinfo'] = 'Deze gebruiker is een speciale gebruiker met alleen-lezen toegang tot sommige cursussen.';
 $string['help'] = 'Help';
-$string['helpprefix2'] = 'Hulp voor {$a}';
+$string['helpprefix2'] = 'Klik voor hulp over \'{$a}\'';
 $string['helpwiththis'] = 'Hulp hierbij';
 $string['hiddenassign'] = 'Verborgen rol';
 $string['hiddenfromstudents'] = 'Verborgen voor leerlingen';
@@ -2055,7 +2055,7 @@ $string['summary_help'] = '<p>Een onderwerpbeschrijving is een korte tekst die d
 binnen dit onderwerp (of week).</p>
 
 
-<p>De beschrijving zou erg kort moeten zijn, zodat de pagina met de cursussenlijst niet te lang wordt.</p>
+<p>De beschrijving zou erg kort moeten zijn, zodat de pagina met de cursuslijst niet te lang wordt.</p>
 
 
 <p>Als je vindt dat je meer wil schrijven dan een tweetal zinnen, overweeg dan om een bron

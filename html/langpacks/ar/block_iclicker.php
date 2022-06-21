@@ -32,7 +32,7 @@ $string['admin.username.header'] = 'اسم المستخدم';
 $string['app.activate'] = 'تفعيل';
 $string['config_domain_url'] = 'رابط المجال';
 $string['config_enable_shortname_desc'] = 'تمكين استعمال الاسم المختصر للمساق كجزء من المساق المعروض في تطبيق iclicker';
-$string['config_max_courses_desc'] = 'يتحكم بالعدد الأقصى من المساقات التي يتم إحضارها للمرشد من قبل تطبيق iclicker.
+$string['config_max_courses_desc'] = 'يتحكم بالعدد الأقصى من المقررات الدراسية التي يتم إحضارها للمرشد من قبل تطبيق iclicker.
 تنبيه: زيادة هذه القيمة قد يؤدي إلى مشاكل في الأداء';
 $string['config_notify_emails_desc'] = 'عناوين البريد الالكتروني التي تُرسل إليها الإشعارات عند الفشل. الفارغة تعني التعطيل.';
 $string['config_sso_enabled'] = 'دعم تسجيل الدخول بمرة واحدة مُمَكَّن.';
@@ -43,7 +43,7 @@ $string['config_webservices_username_desc'] = 'اسم مستخدم خدمات ا
 $string['iclicker:addinstance'] = 'إضافة كتلة جديدة من i>clicker';
 $string['iclicker:myaddinstance'] = 'إضافة كتلة جديدة من i>clicker إلىى صفحة مودل الخاصة بي';
 $string['inst.course.view.students'] = 'معاينة الطلاب';
-$string['inst.courses.table.summary'] = 'يستعرض المساقات المقدمة من قبل هذا المرشد؛ العنوان، رابط إلى قائمة الطلاب';
+$string['inst.courses.table.summary'] = 'يستعرض المقررات الدراسية المقدمة من قبل هذا المرشد؛ العنوان، رابط إلى قائمة الطلاب';
 $string['inst.no.courses'] = 'بدون مقررات';
 $string['inst.student.name.header'] = 'الاسم';
 $string['inst.students'] = 'الطلاب';

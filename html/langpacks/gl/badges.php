@@ -396,7 +396,7 @@ $string['makepublic'] = 'Facer pública';
 $string['managebackpacks'] = 'Xestionar as mochilas';
 $string['managebadges'] = 'Xestionar as insignias';
 $string['message'] = 'Corpo da mensaxe';
-$string['messagebody'] = '<p>Concedéuselle unha insignia «% badgename»!</p>
+$string['messagebody'] = '<p>Concedéuselle unha insignia «%badgename%»!</p>
 <p>Pode atopar máis información sobre esta insignia en %badgelink%.</p>
 <p>Pode xestionar e descargar a insignia da páxina {$a}.</p>';
 $string['messagesubject'] = 'Parabéns! Vén de concedérselle unha insignia!';

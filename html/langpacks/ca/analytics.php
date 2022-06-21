@@ -41,6 +41,7 @@ $string['errornoroles'] = 'No s\'han definit rols d\'estudiant o professor. Defi
 $string['errorunknownaction'] = 'Acció desconeguda';
 $string['eventinsightsviewed'] = 'Prediccions visualitzades';
 $string['fixedack'] = 'Accepta';
+$string['incorrectlyflagged'] = 'Marcat incorrectament';
 $string['insightinfomessageaction'] = '{$a->text}: {$a->url}';
 $string['insightinfomessagehtml'] = 'El sistema ha generat algunes prediccions: <a href="{$a}">{$a}</a>.';
 $string['insightinfomessageplain'] = 'El sistema ha generat algunes prediccions: {$a}';
@@ -94,5 +95,6 @@ $string['privacy:metadata:analytics:indicatorcalc:timecreated'] = 'Quan es va fe
 $string['privacy:metadata:analytics:indicatorcalc:value'] = 'El valor calculat';
 $string['privacy:metadata:analytics:predictionactions'] = 'Accions de predicció';
 $string['privacy:metadata:analytics:predictionactions:actionname'] = 'El nom de l\'acció';
+$string['useful'] = 'Útil';
 $string['viewdetails'] = 'Mostra els detalls';
 $string['washelpful'] = 'Això us ha semblat útil?';

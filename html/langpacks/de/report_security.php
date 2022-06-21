@@ -57,12 +57,11 @@ $string['check_emailchangeconfirmation_error'] = 'Es dürfen beliebige E-Mail-Ad
 $string['check_emailchangeconfirmation_info'] = 'Es dürfen ausschließlich E-Mail-Adressen von zugelassenen Domains eingetragen werden';
 $string['check_emailchangeconfirmation_name'] = 'E-Mail-Adressänderungen';
 $string['check_emailchangeconfirmation_ok'] = 'Änderungen von E-Mail-Adressen müssen bestätigt werden';
-$string['check_embed_details'] = '<p>Die uneingeschränkte Nutzung von EMBED/OBJECT ist äußerst gefährlich, weil alle registrierten Nutzer/innen einen XSS-Angriff gegen andere Servernutzer starten könnten. Diese Einstellung sollte auf produktiven Servern deaktiviert sein.</p>';
+$string['check_embed_details'] = '<p>Die uneingeschränkte Nutzung von Objekteinbettungen ist äußerst gefährlich, weil registrierte Nutzer/innen den Server über Cross-Website-Scripting (XSS) angreifen könnten. Diese Einstellung sollte auf produktiven Servern deaktiviert sein.</p>';
 $string['check_embed_error'] = 'Die uneingeschränkte Nutzung von EMBED/OBJECT ist aktiviert. Diese Einstellung ist für die meisten Webserver sehr gefährlich.';
 $string['check_embed_name'] = 'EMBED/OBJECT';
 $string['check_embed_ok'] = 'Die uneingeschränkte Nutzung von EMBED/OBJECT ist nicht erlaubt.';
-$string['check_frontpagerole_details'] = '<p>Diese Rolle für die Startseite erhalten alle angemeldeten Nutzer/innen. Beachten Sie, dass für die Startseite keine bedenklichen Rechte vergeben werden dürfen.</p>
-<p>Es wird empfohlen, immer eine Rolle neu anzulegen und keine vorgegebene Rolle zu verändern.</p>';
+$string['check_frontpagerole_details'] = '<p>Die standardmäßige Rolle für die Startseite erhalten alle angemeldeten Nutzer/innen für Aktivitäten auf der Startseite. Beachten Sie, dass für die Startseite keine bedenklichen Rechte vergeben werden dürfen.</p> <p>Es wird empfohlen, immer eine Rolle neu anzulegen und keine vorgegebene Rolle zu verändern.</p>';
 $string['check_frontpagerole_error'] = 'Rolle für die Startseite \'{$a}\' ist falsch definiert!';
 $string['check_frontpagerole_name'] = 'Rolle für die Startseite';
 $string['check_frontpagerole_notset'] = 'Keine Rolle für die Startseite angelegt.';
@@ -73,7 +72,7 @@ $string['check_guestrole_error'] = 'Die Definition der Gastrolle "{$a}" ist fehl
 $string['check_guestrole_name'] = 'Gastrolle';
 $string['check_guestrole_notset'] = 'Die Gastrolle ist nicht eingestellt..';
 $string['check_guestrole_ok'] = 'Die Definition der Gastrolle ist in Ordnung.';
-$string['check_mediafilterswf_details'] = '<p>Die automatische Einbindung von Flash-Dateien im Format .swf ist sehr gefährlich. Jeder registrierte Nutzer könnte damit eine XSS-Attacke gegen den Server auslösen. Bitte deaktivieren Sie diese Funktion unbedingt auf produktiven Servern.</p>';
+$string['check_mediafilterswf_details'] = '<p>Die automatische Einbettung von Flash-Dateien .swf ist äußerst gefährlich, weil registrierte Nutzer/innen den Server über Cross-Website-Scripting (XSS) angreifen könnten. Diese Einstellung sollte auf produktiven Servern deaktiviert sein.</p>';
 $string['check_mediafilterswf_error'] = 'Der Flash-Mediafilter (.swf) ist aktiviert - dies ist für die meisten Webserver sehr gefährlich.';
 $string['check_mediafilterswf_name'] = 'Mediafilter (.swf)';
 $string['check_mediafilterswf_ok'] = 'Der Flash-Mediafilter (.swf) ist nicht aktiv.';
@@ -88,20 +87,20 @@ $string['check_passwordpolicy_details'] = '<p>Kennwortregeln sollten unbedingt f
 $string['check_passwordpolicy_error'] = 'Die Kennwortregeln sind nicht eingerichtet.';
 $string['check_passwordpolicy_name'] = 'Kennwortregeln';
 $string['check_passwordpolicy_ok'] = 'Die Kennwortregeln sind aktiviert.';
-$string['check_preventexecpath_details'] = '<p>Wenn Sie zulassen, dass ausführbare Verzeichnisse über die Admin-Oberfläche angepasst werden können, handelt es sich um ein Risiko.</p>';
+$string['check_preventexecpath_details'] = '<p>Zulassen, dass ausführbare Pfade über die Admin-GUI festgelegt werden können, ist umfassende Rechteausweitung. Dies muss ausdrücklich in der config.php freigegeben werden:</p><p><code>$CFG->preventexecpath = true;</code></p>';
 $string['check_preventexecpath_name'] = 'Pfade zu ausführbaren Programmen';
 $string['check_preventexecpath_ok'] = 'Pfade zu ausführbaren Programmen einstellbar über config.php';
 $string['check_preventexecpath_warning'] = 'Pfade zu ausführbaren Programmen einstellbar über Admin GUI';
 $string['check_publicpaths_403'] = '(Rückgabe 403 - dies sollte besser 404 sein)';
 $string['check_publicpaths_generic'] = '{$a} Dateien sollten nicht öffentlich sein';
 $string['check_publicpaths_name'] = 'Alle öffentlichen / privaten Pfade prüfen';
-$string['check_riskadmin_detailsok'] = '<p>Bitte prüfen Sie die folgende Liste von Serveradministrator(en):</p>{$a}';
+$string['check_riskadmin_detailsok'] = '<p>Bitte prüfen Sie die folgende Liste von Serveradministrator/innen:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Prüfen Sie bitte die folgende Liste von Serveradministrator/innen:</p>{$a->admins}
 <p>Es wird empfohlen, die Rolle "Administrator/innen" nur auf Systemebene zu vergeben. Die folgenden Nutzer verfügen über nicht unterstützte Zuweisungen zur Rolle "Administrator/innen":</p>{$a->unsupported}';
 $string['check_riskadmin_name'] = 'Administrator/innen';
-$string['check_riskadmin_ok'] = '{$a} Serveradministrator(en) gefunden';
+$string['check_riskadmin_ok'] = '{$a} Serveradministrator/innen gefunden';
 $string['check_riskadmin_unassign'] = 'Rollenzuweisung überprüfen bei <a href="{$a->url}">{$a->fullname} ({$a->email})</a>';
-$string['check_riskadmin_warning'] = '{$a->admincount} Serveradministrator/inn/en und {$a->unsupcount} nicht unterstützte Zuweisung(en) zur Administrator/innenrolle gefunden.';
+$string['check_riskadmin_warning'] = '{$a->admincount} Serveradministrator/innen und {$a->unsupcount} nicht unterstützte Zuweisung(en) zur Administrationsrolle gefunden.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Diese aktivierten Änderungen geben Nutzern/innen die Möglichkeit, auch Nutzerdaten in eine Kurssicherung einzubeziehen. Bitte prüfen Sie, ob diese Berechtigung nötig ist.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Die folgenden Systemrollen erlauben es aktuell, Nutzerdaten in eine Kurssicherung einzubeziehen. Bitte prüfen Sie, ob diese Berechtigung nötig ist.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>Mit den obigen Rollen oder lokalen Rollenänderungen haben folgende Nutzerkonten die Berechtigung, personenbezogene Daten von allen in ihren Kursen eingetragenen Nutzern/innen in Kurssicherungen einzubeziehen. Stellen Sie unbedingt sicher, dass diese Konten (a) vertrauenswürdig und (b) mit sicheren Kennwörtern gesichert sind:</p> {$a}';
@@ -112,10 +111,10 @@ $string['check_riskbackup_name'] = 'Sicherung von Nutzerdaten';
 $string['check_riskbackup_ok'] = 'Keine Rolle erlaubt das Sichern von Nutzerdaten';
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->contextname})</a>';
 $string['check_riskbackup_warning'] = '{$a->rolecount} Rolle(n), {$a->overridecount} Rollenänderung(en) und {$a->usercount} Nutzer mit der Möglichkeit zur Sicherung von Nutzerdaten gefunden.';
-$string['check_riskxss_details'] = '<p>RISK_XSS bezeichnet alle bedenklichen Berechtigungen, die ausschließlich absolut vertrauenswürdige Nutzer/innen ausführen dürfen.</p>
-<p>Bitte prüfen Sie die folgende Nutzerliste und stellen Sie sicher, dass Sie ihnen völlig trauen können:</p><p>{$a}</p>';
-$string['check_riskxss_name'] = 'XSS-vertrauenswürdige Nutzer';
-$string['check_riskxss_warning'] = '{$a} Nutzer gefunden, denen bezüglich XSS vertraut werden muss!';
+$string['check_riskxss_details'] = '<p>RISK_XSS bezeichnet alle bedenklichen Berechtigungen, die ausschließlich nur absolut vertrauenswürdige Nutzer/innen ausführen dürfen.</p>
+<p>Prüfen Sie bitte die folgende Nutzerliste und stellen Sie sicher, dass Sie ihnen voll trauen können:</p><p>{$a}</p>';
+$string['check_riskxss_name'] = 'XSS-vertrauenswürdige Nutzer/innen';
+$string['check_riskxss_warning'] = 'RISK_XSS - {$a} Nutzer/innen gefunden, denen bezüglich Cross-Website-Scripting (XSS) vertraut werden muss!';
 $string['check_unsecuredataroot_details'] = '<p>Das Verzeichnis \'dataroot\' sollte nicht aus dem Internet aufrufbar sein. Am besten legen Sie es außerhalb des öffentlich zugänglichen Verzeichnisses an, beim Webserver Apache also üblicherweise außerhalb von \'htdocs\'.</p>
 <p>Wenn Sie das Verzeichnis \'dataroot\' verschieben, müssen Sie auch unbedingt den Eintrag <code>$CFG->dataroot</code> in der Datei  <code>config.php</code> entsprechend anpassen.</p>';
 $string['check_unsecuredataroot_error'] = 'Ihr Verzeichnis \'dataroot\'  liegt an der falschen Stelle <code>{$a}</code> und ist aus dem Web aufrufbar!';

@@ -27,7 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['access_key'] = 'Access key';
 $string['configplugin'] = 'Amazon S3设置';
+$string['endpoint'] = 'Amazon S3 端点';
 $string['needaccesskey'] = '必须提供access key';
 $string['pluginname'] = 'Amazon S3';
+$string['privacy:metadata'] = 'Amazon S3 存储库插件不存储任何个人数据，但将用户数据从Moodle传输到远程系统。';
 $string['s3:view'] = '查看Amazon s3容器';
 $string['secret_key'] = 'Secret key';

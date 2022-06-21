@@ -57,7 +57,7 @@ $string['expirymessageenrollerbody'] = 'De aanmelding in cursus  \'{$a->course}\
 
 Ga naar  {$a->extendurl} om hun aanmelding te verlengen.';
 $string['expirymessageenrollersubject'] = 'Melding voor het vervallen van de aanmelding';
-$string['manual:config'] = 'Maneel aanmelden van gebruikers configureren';
+$string['manual:config'] = 'Manueel aanmelden van gebruikers configureren';
 $string['manual:enrol'] = 'Gebruikers manueel aanmelden';
 $string['manual:manage'] = 'Beheer gebruikersaanmeldingen';
 $string['manual:unenrol'] = 'Gebruikers van de cursus afmelden';

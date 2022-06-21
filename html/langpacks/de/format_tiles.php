@@ -95,8 +95,8 @@ $string['customcss'] = 'Angepasstes CSS';
 $string['customcssdesc'] = 'Angepasstes CSS, dass auf der Kursseite mit diesem Kursformat verwendet wird. Das CSS wird nicht überprüft. Achten Sie deswegen darauf, gültigen Code einzugeben, z.B.: <p>.section { color: red; }</p><p>li.activity.subtile.resource.pdf { background-color: orange !important; }</p>';
 $string['datapref'] = 'Datenpräferenz';
 $string['datapreferror'] = 'Die Datenpräferenz-Funktion ist nur verfügbar, wenn Sie JavaScript in Ihrem Browser verfügbar haben. Andernfalls kann die Datenspeicherung nicht aktiviert werden.';
-$string['dataprefquestion'] = '<p>Um die Nutzung dieser Website zu vereinfachen, speichern wir in Ihrem Browser funktionale Informationen wie die ID-Nummer der zuletzt geöffneten Kachel. Diese bleibt für kurze Zeit auf Ihrem Computer, falls Sie diese Seite erneut besuchen. Wir verwenden es nicht zur Verfolgung. Ist das in Ordnung?</p>
-<p>Ihre Wahl bleibt gespeichert, bis Sie Ihren Browserverlauf löschen. Zum Deaktivieren der Option klicken Sie auf "Abbrechen".</p>';
+$string['dataprefquestion'] = '<p>Um die Nutzung dieses Kursformats zu vereinfachen, speichert Moodle in Ihrem Browser funktionale Informationen wie die ID-Nummer der zuletzt geöffneten Kachel. Diese wird beim nächsten Besuch dann wieder geöffnet angezeigt. Wir verwenden es nicht zur Verfolgung. Ist das in Ordnung?</p>
+<p>Ihre Wahl bleibt gespeichert, bis Sie Ihren Browserverlauf löschen. Zum Deaktivieren der Funktion klicken Sie auf "Abbrechen".</p>';
 $string['defaultthiscourse'] = 'Standard für diesen Kurs';
 $string['defaulttilecolour'] = 'Standardfarbe für Kacheln';
 $string['defaulttileicon'] = 'Kachel-Symbol';

@@ -19,17 +19,6 @@
  * @subpackage backup-moodle2
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-
-defined('MOODLE_INTERNAL') || die();
-
-
-/**
- * Provides the information to backup match questions
- *
- * @copyright  2010 onwards Eloy Lafuente (stronk7) {@link http://stronk7.com}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 class backup_qtype_matchwiris_plugin extends backup_qtype_match_plugin {
 
     /**

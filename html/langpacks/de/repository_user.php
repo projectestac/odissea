@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Einstellungen für \'Meine Dateien\'';
 $string['emptyfilelist'] = 'Es gibt keine Dateien anzuzeigen';
 $string['pluginname'] = 'Meine Dateien';
-$string['pluginname_help'] = 'Dateien im privaten Benutzerbereich';
+$string['pluginname_help'] = 'Dateien im privaten Nutzungsbereich';
 $string['privacy:metadata'] = 'Das persönliche Dateien Repository-Plugin speichert keine personenbezogenen Dateien.';
 $string['user:view'] = 'Meine Dateien anzeigen';

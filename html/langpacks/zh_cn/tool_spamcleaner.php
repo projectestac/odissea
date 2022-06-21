@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '垃圾清除者';
+$string['privacy:metadata'] = '垃圾邮件清理器插件不存储任何个人数据。';
 $string['spamauto'] = '自动检测常见的垃圾行为';
 $string['spamcannotdelete'] = '无法删除此用户';
 $string['spamcannotfinduser'] = '没有找到符合条件的用户';

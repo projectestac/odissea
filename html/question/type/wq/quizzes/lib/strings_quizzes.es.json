@@ -80,17 +80,19 @@
 		"quizzes_studio_toolbar_back_button_tooltip": "Atrás",
 		"quizzes_studio_toolbar_test_question_button_tooltip": "Vista previa",
 		"quizzes_studio_toolbar_help_button_tooltip": "Ayuda",
-		"quizzes_studio_toolbar_send_feedback_button_tooltip": "Dé su opinión",
+		"quizzes_studio_send_feedback_label": "Dé su opinión",
+		"quizzes_studio_training_label": "Apúntese a nuestra formación",
+		"quizzes_studio_website_label": "Visite nuestra web",
+		"quizzes_studio_report_issue_label": "Avise de un error",
 
 		"quizzes_studio_toolbar_more_options_dropdown_tooltip": "Más opciones",
 		"quizzes_studio_toolbar_more_options_dropdown_import_label": "Importar",
 		"quizzes_studio_toolbar_more_options_dropdown_export_label": "Exportar",
 		"quizzes_studio_toolbar_more_options_dropdown_view_source_label": "Ver código fuente",
-		"quizzes_studio_toolbar_more_options_dropdown_send_feedback_label": "Dé su opinión",
 		"quizzes_studio_toolbar_more_options_dropdown_help_label": "Ayuda",
 		"quizzes_studio_toolbar_more_options_dropdown_about_label": "Acerca de",
 
-		"quizzes_studio_home_answer_type_label": "Escoja el tipo de respuesta",
+		"quizzes_studio_home_answer_type_label": "Tipo de respuesta",
 		"quizzes_studio_home_answer_type_equation_label": "Ecuación",
 		"quizzes_studio_home_answer_type_graphic_label": "Gráfico",
 		"quizzes_studio_home_answer_type_text_label": "Texto",
@@ -109,9 +111,10 @@
 		"quizzes_studio_home_initial_graph_content_label": "Contenido inicial",
 		"quizzes_studio_home_correct_graph_answer_label": "Respuesta correcta",
 
+		"quizzes_studio_home_activity_list_label": "Settings",
 		"quizzes_studio_home_input_options_label": "Opciones de entrada",
 		"quizzes_studio_home_validation_options_label": "Opciones de validación",
-		"quizzes_studio_home_variables_options_label": "Variables aleatorias y funciones",
+		"quizzes_studio_home_variables_options_label": "Variables aleatorias",
 
 		"quizzes_studio_customize_graph_toolbar_label": "Escoja las herramientas que se mostrarán al estudiante para responder la pregunta.",
 		"quizzes_studio_customize_graph_toolbar_header": "Personalización de la barra de herramientas",
@@ -535,7 +538,24 @@
 		"answer": "respuesta",
 
 		"quizzes_studio_home_copy_initial_content_button_text": "Copia el contenido inicial",
-		"quizzes_studio_home_copy_correct_answer_button_text": "Copia la respuesta correcta"
+		"quizzes_studio_home_copy_correct_answer_button_text": "Copia la respuesta correcta",
+		"quizzes_studio_home_answer_type_geometry_label": "Tablero gráfico",
+		"quizzes_studio_home_answer_type_statistical_charts_label": "Gráficos estadísticos",
+		
+		"quizzes_studio_home_correct_answer_description_math": "Inserte la respuesta correcta para esta pregunta. Puede modificar cómo se compara con la respuesta de los estudiantes usando las opciones de validación.",
+		"quizzes_studio_home_correct_answer_description_graphic": "Inserte la respuesta correcta para esta pregunta. Puede modificar cómo se compara con la respuesta de los estudiantes y qué elementos se evalúan usando las opciones de validación",
+		"quizzes_studio_home_correct_answer_description_text": "Inserte la respuesta correcta para esta pregunta. Puede modificar cómo se compara con la respuesta de los estudiantes usando las opciones de validación.",
+		"quizzes_studio_home_initial_content_description_math": "Este es el estado inicial del editor de fórmulas que verán los estudiantes cuando intenten la pregunta. Se puede usar para dejar blancos que los estudiantes tengan que rellenar en su respuesta.",
+		"quizzes_studio_home_initial_content_description_graphic": "Este es el estado inicial del editor gráfico que verán los estudiantes cuando intenten la pregunta. Puede personalizar la barra de herramientas que verá el estudiante en las opciones de entrada.",
+		"quizzes_studio_home_initial_content_description_text": "Este es el estado inicial de la caja de texto que verán los estudiantes cuando intenten la pregunta. Este tipo de respuesta no se evalúa matemáticamente.",
+				
+		"quizzes_studio_home_product_message_header_label": "¡Está usando WirisQuizzes 4.5!",
+		"quizzes_studio_home_product_message_text_label": "Esta versión incluye una renovación del WirisQuizzes Studio y mejoras de rendimiento. Además, hemos añadido una nueva opción de entrada - ahora puedes fijar el contenido inicial para que el estudiante sólo pueda rellenar los blancos de este.",
+		"quizzes_studio_home_product_message_release_notes_link": "Visite la lista completa de mejoras.",		
+
+		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Contenido inicial",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Bloquear contenido inicial",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "No permitir al estudiante modificar la respuesta fuera de las cajas en blanco del contenido inicial. Si esta configuración está activa, el estudiante solamente podrá escribir en los blancos del contenido inicial."
 	}
 }
 

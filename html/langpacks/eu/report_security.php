@@ -91,7 +91,7 @@ Hala ere, ez zehaztu baldintza zorrotzegiak, horrek erabiltzaileek pasahitza ez 
 $string['check_passwordpolicy_error'] = 'Pasahitzen politika ez da ezarri.';
 $string['check_passwordpolicy_name'] = 'Pasahitzen politika';
 $string['check_passwordpolicy_ok'] = 'Pasahitzen politika gaituta dago.';
-$string['check_preventexecpath_details'] = '<p>Exekutagarrietarako bideak kudeatzailearen interfaze grafikoaren bidez zehaztea baimentzea baimenetan gora egiteko bektore bat da. Hau config.php fitxategian behartu behar da</p><p><code>$CFG->preventexecpath = true;<code></p>';
+$string['check_preventexecpath_details'] = '<p>Exekutagarrietarako bideak kudeatzailearen interfaze grafikoaren bidez zehaztea baimentzea baimenetan gora egiteko bektore bat da. Hau config.php fitxategian behartu behar da</p><p><code>$CFG->preventexecpath = true;</code></p>';
 $string['check_preventexecpath_name'] = 'Exekutagarrietarako bideak';
 $string['check_preventexecpath_ok'] = 'Exekutagarrietarako bideak config.php fitxategian baino ezin dira konfiguratu.';
 $string['check_preventexecpath_warning'] = 'Exekutagarrietarako bideak kudeatzailearen interfaz grafikoan konfiguratu daitezke.';

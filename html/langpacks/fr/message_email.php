@@ -47,4 +47,5 @@ $string['privacy:metadata:replyto'] = 'L\'adresse de courriel à laquelle répon
 $string['privacy:metadata:replytoname'] = 'Le nom auquel répondre, pour le destinataire.';
 $string['privacy:metadata:subject'] = 'L\'objet du message';
 $string['privacy:metadata:userfrom'] = 'L\'utilisateur qui envoie le message.';
+$string['privacy:preference:email'] = 'Adresse de courriel de notification préférée';
 $string['tasksendemail'] = 'Envois des récapitulatifs des messages';

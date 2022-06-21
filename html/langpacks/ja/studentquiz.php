@@ -35,7 +35,6 @@ $string['approved_column_name'] = '承認済み';
 $string['average_column_name'] = '平均';
 $string['before_answering_start_date'] = '{$a} から問題回答を開始します。';
 $string['before_submission_start_date'] = '{$a} から問題投稿を受け付けます。';
-$string['changeselectedsstate'] = '以下の問題の状態を変更します：<br /><br />{$a}';
 $string['collapseall'] = 'すべてのコメントを閉じる';
 $string['collapsecomment'] = 'コメントを閉じる';
 $string['comment_column_name'] = 'コメント';

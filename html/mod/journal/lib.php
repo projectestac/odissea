@@ -14,9 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-
-defined('MOODLE_INTERNAL') || die();
-
+/**
+ * mod_journal lib file
+ *
+ * @package    mod_journal
+ * @copyright  2014 David Monllao <david.monllao@gmail.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
 /**
  * Given an object containing all the necessary data,
@@ -33,6 +37,9 @@ function journal_add_instance($journal) {
     $journal->id = $DB->insert_record("journal", $journal);
 
     journal_grade_item_update($journal);
+
+    $completiontimeexpected = !empty($journal->completionexpected) ? $journal->completionexpected : null;
+    \core_completion\api::update_completion_date_event($journal->coursemodule, 'journal', $journal->id, $completiontimeexpected);
 
     return $journal->id;
 }
@@ -56,6 +63,9 @@ function journal_update_instance($journal) {
 
     journal_update_grades($journal, 0, false);
 
+    $completiontimeexpected = !empty($journal->completionexpected) ? $journal->completionexpected : null;
+    \core_completion\api::update_completion_date_event($journal->coursemodule, 'journal', $journal->id, $completiontimeexpected);
+
     return $result;
 }
 
@@ -70,6 +80,9 @@ function journal_delete_instance($id) {
     global $DB;
 
     $result = true;
+
+    $cm = get_coursemodule_from_instance('journal', $id);
+    \core_completion\api::update_completion_date_event($cm->id, 'journal', $id, null);
 
     if (! $journal = $DB->get_record("journal", array("id" => $id))) {
         return false;
@@ -86,7 +99,12 @@ function journal_delete_instance($id) {
     return $result;
 }
 
-
+/**
+ * List of feature supported
+ *
+ * @param int $feature Feature constant
+ * @return bool|null True if feature is supported, falsy if it is not
+ */
 function journal_supports($feature) {
     switch($feature) {
         case FEATURE_MOD_INTRO:
@@ -107,22 +125,41 @@ function journal_supports($feature) {
             return true;
         case FEATURE_BACKUP_MOODLE2:
             return true;
+        case FEATURE_SHOW_DESCRIPTION:
+            return true;
         default:
             return null;
     }
 }
 
-
+/**
+ * Return list of actions for the view
+ *
+ * @return array Array of actions
+ */
 function journal_get_view_actions() {
     return array('view', 'view all', 'view responses');
 }
 
-
+/**
+ * Return list of actions for the post method
+ *
+ * @return array Array of actions
+ */
 function journal_get_post_actions() {
     return array('add entry', 'update entry', 'update feedback');
 }
 
 
+/**
+ * User outline
+ *
+ * @param stdClass $course Course object
+ * @param stdClass $user User object
+ * @param stdClass $mod Mod object
+ * @param stdClass $journal Journal object
+ * @return stdClass|null User outline object or null
+ */
 function journal_user_outline($course, $user, $mod, $journal) {
 
     global $DB;
@@ -139,7 +176,15 @@ function journal_user_outline($course, $user, $mod, $journal) {
     return null;
 }
 
-
+/**
+ * User complete check
+ *
+ * @param stdClass $course Course object
+ * @param stdClass $user User object
+ * @param stdClass $mod Mod object
+ * @param stdClass $journal Journal object
+ * @return void
+ */
 function journal_user_complete($course, $user, $mod, $journal) {
 
     global $DB, $OUTPUT;
@@ -167,121 +212,10 @@ function journal_user_complete($course, $user, $mod, $journal) {
 }
 
 /**
- * Function to be run periodically according to the moodle cron.
- * Finds all journal notifications that have yet to be mailed out, and mails them.
- */
-function journal_cron () {
-    global $CFG, $USER, $DB;
-
-    $cutofftime = time() - $CFG->maxeditingtime;
-
-    if ($entries = journal_get_unmailed_graded($cutofftime)) {
-        $timenow = time();
-
-        $usernamefields = get_all_user_name_fields();
-        $requireduserfields = 'id, auth, mnethostid, email, mailformat, maildisplay, lang, deleted, suspended, '
-                .implode(', ', $usernamefields);
-
-        // To save some db queries.
-        $users = array();
-        $courses = array();
-
-        foreach ($entries as $entry) {
-
-            echo "Processing journal entry $entry->id\n";
-
-            if (!empty($users[$entry->userid])) {
-                $user = $users[$entry->userid];
-            } else {
-                if (!$user = $DB->get_record("user", array("id" => $entry->userid), $requireduserfields)) {
-                    echo "Could not find user $entry->userid\n";
-                    continue;
-                }
-                $users[$entry->userid] = $user;
-            }
-
-            $USER->lang = $user->lang;
-
-            if (!empty($courses[$entry->course])) {
-                $course = $courses[$entry->course];
-            } else {
-                if (!$course = $DB->get_record('course', array('id' => $entry->course), 'id, shortname')) {
-                    echo "Could not find course $entry->course\n";
-                    continue;
-                }
-                $courses[$entry->course] = $course;
-            }
-
-            if (!empty($users[$entry->teacher])) {
-                $teacher = $users[$entry->teacher];
-            } else {
-                if (!$teacher = $DB->get_record("user", array("id" => $entry->teacher), $requireduserfields)) {
-                    echo "Could not find teacher $entry->teacher\n";
-                    continue;
-                }
-                $users[$entry->teacher] = $teacher;
-            }
-
-            // All cached.
-            $coursejournals = get_fast_modinfo($course)->get_instances_of('journal');
-            if (empty($coursejournals) || empty($coursejournals[$entry->journal])) {
-                echo "Could not find course module for journal id $entry->journal\n";
-                continue;
-            }
-            $mod = $coursejournals[$entry->journal];
-
-            // This is already cached internally.
-            $context = context_module::instance($mod->id);
-            $canadd = has_capability('mod/journal:addentries', $context, $user);
-            $entriesmanager = has_capability('mod/journal:manageentries', $context, $user);
-
-            if (!$canadd and $entriesmanager) {
-                continue;  // Not an active participant.
-            }
-
-            $journalinfo = new stdClass();
-            $journalinfo->teacher = fullname($teacher);
-            $journalinfo->journal = format_string($entry->name, true);
-            $journalinfo->url = "$CFG->wwwroot/mod/journal/view.php?id=$mod->id";
-            $modnamepl = get_string( 'modulenameplural', 'journal' );
-            $msubject = get_string( 'mailsubject', 'journal' );
-
-            $postsubject = "$course->shortname: $msubject: ".format_string($entry->name, true);
-            $posttext  = "$course->shortname -> $modnamepl -> ".format_string($entry->name, true)."\n";
-            $posttext .= "---------------------------------------------------------------------\n";
-            $posttext .= get_string("journalmail", "journal", $journalinfo)."\n";
-            $posttext .= "---------------------------------------------------------------------\n";
-            if ($user->mailformat == 1) {  // HTML.
-                $posthtml = "<p><font face=\"sans-serif\">".
-                "<a href=\"$CFG->wwwroot/course/view.php?id=$course->id\">$course->shortname</a> ->".
-                "<a href=\"$CFG->wwwroot/mod/journal/index.php?id=$course->id\">journals</a> ->".
-                "<a href=\"$CFG->wwwroot/mod/journal/view.php?id=$mod->id\">".format_string($entry->name, true)."</a></font></p>";
-                $posthtml .= "<hr /><font face=\"sans-serif\">";
-                $posthtml .= "<p>".get_string("journalmailhtml", "journal", $journalinfo)."</p>";
-                $posthtml .= "</font><hr />";
-            } else {
-                $posthtml = "";
-            }
-
-            if (! email_to_user($user, $teacher, $postsubject, $posttext, $posthtml)) {
-                echo "Error: Journal cron: Could not send out mail for id $entry->id to user $user->id ($user->email)\n";
-            }
-            if (!$DB->set_field("journal_entries", "mailed", "1", array("id" => $entry->id))) {
-                echo "Could not update the mailed field for id $entry->id\n";
-            }
-        }
-    }
-
-    return true;
-}
-
-/**
  * Given a course and a time, this module should find recent activity
  * that has occurred in journal activities and print it out.
  * Return true if there was output, or false if there was none.
  *
- * @global stdClass $DB
- * @global stdClass $OUTPUT
  * @param stdClass $course
  * @param bool $viewfullnames
  * @param int $timestart
@@ -437,9 +371,8 @@ function journal_scale_used ($journalid, $scaleid) {
 
 /**
  * Checks if scale is being used by any instance of journal
- *
  * This is used to find out if scale used anywhere
- * @param $scaleid int
+ * @param int $scaleid Scale id
  * @return boolean True if the scale is used by any journal
  */
 function journal_scale_used_anywhere($scaleid) {
@@ -466,8 +399,8 @@ function journal_reset_course_form_definition(&$mform) {
 /**
  * Course reset form defaults.
  *
- * @param object $course
- * @return array
+ * @param object $course Course object
+ * @return array Array with defaults
  */
 function journal_reset_course_form_defaults($course) {
     return array('reset_journal' => 1);
@@ -476,7 +409,7 @@ function journal_reset_course_form_defaults($course) {
 /**
  * Removes all entries
  *
- * @param object $data
+ * @param object $data Data array
  */
 function journal_reset_userdata($data) {
 
@@ -500,8 +433,14 @@ function journal_reset_userdata($data) {
     return $status;
 }
 
+/**
+ * Print journal overview
+ *
+ * @param array $courses Courses array
+ * @param array $htmlarray HTML array
+ * @return void
+ */
 function journal_print_overview($courses, &$htmlarray) {
-
     global $USER, $CFG, $DB;
 
     if (!get_config('journal', 'overview')) {
@@ -556,6 +495,13 @@ function journal_print_overview($courses, &$htmlarray) {
     }
 }
 
+/**
+ * Get user grade
+ *
+ * @param stdClass $journal Journal object
+ * @param integer $userid User id
+ * @return array Array of grades
+ */
 function journal_get_user_grades($journal, $userid=0) {
     global $DB;
 
@@ -647,7 +593,7 @@ function journal_update_grades($journal=null, $userid=0, $nullifnone=true) {
  * Create grade item for given journal
  *
  * @param object $journal object with extra cmidnumber
- * @param mixed optional array/object of grade(s); 'reset' means reset grades in gradebook
+ * @param mixed $grades optional array/object of grade(s); 'reset' means reset grades in gradebook
  * @return int 0 if ok, error code otherwise
  */
 function journal_grade_item_update($journal, $grades=null) {
@@ -700,8 +646,13 @@ function journal_grade_item_delete($journal) {
     return grade_update('mod/journal', $journal->course, 'mod', 'journal', $journal->id, 0, null, array('deleted' => 1));
 }
 
-
-
+/**
+ * Return array of users who completed journal
+ *
+ * @param stdClass $journal Journal object
+ * @param int $currentgroup Group id
+ * @return array Array of users
+ */
 function journal_get_users_done($journal, $currentgroup) {
     global $DB;
 
@@ -743,6 +694,9 @@ function journal_get_users_done($journal, $currentgroup) {
 
 /**
  * Counts all the journal entries (optionally in a given group)
+ * @param stdClass $journal Journal object
+ * @param int $groupid Group id
+ * @return int Number of entries
  */
 function journal_count_entries($journal, $groupid = 0) {
     global $DB;
@@ -784,15 +738,28 @@ function journal_count_entries($journal, $groupid = 0) {
     return count($journals);
 }
 
+/**
+ * Get list of graded unmailed users
+ *
+ * @param int $cutofftime Timestamp
+ * @return array Array of users
+ */
 function journal_get_unmailed_graded($cutofftime) {
     global $DB;
 
     $sql = "SELECT je.*, j.course, j.name FROM {journal_entries} je
             JOIN {journal} j ON je.journal = j.id
-            WHERE je.mailed = '0' AND je.timemarked < ? AND je.timemarked > 0";
-    return $DB->get_records_sql($sql, array($cutofftime));
+            WHERE je.mailed = '0' AND je.timemarked < ? AND je.timemarked > 0
+            AND (je.rating <> -1 OR (je.entrycomment IS NOT NULL AND trim(je.entrycomment) <> ?))";
+    return $DB->get_records_sql($sql, array($cutofftime, ''));
 }
 
+/**
+ * Log info
+ *
+ * @param stdClass $log Log object
+ * @return stdClass|null Log object
+ */
 function journal_log_info($log) {
     global $DB;
 
@@ -807,8 +774,8 @@ function journal_log_info($log) {
 /**
  * Returns the journal instance course_module id
  *
- * @param integer $journal
- * @return object
+ * @param integer $journalid Journal id
+ * @return object Course module object
  */
 function journal_get_coursemodule($journalid) {
 
@@ -820,9 +787,17 @@ function journal_get_coursemodule($journalid) {
 }
 
 
-
+/**
+ * Print user entry
+ *
+ * @param object $course Course object
+ * @param object $user User object
+ * @param object $entry Entry object
+ * @param array $teachers Teachers array
+ * @param array $grades Grades array
+ * @return void
+ */
 function journal_print_user_entry($course, $user, $entry, $teachers, $grades) {
-
     global $USER, $OUTPUT, $DB, $CFG;
 
     require_once($CFG->dirroot.'/lib/gradelib.php');
@@ -885,7 +860,8 @@ function journal_print_user_entry($course, $user, $entry, $teachers, $grades) {
 
         // Grade selector.
         $attrs['id'] = 'r' . $entry->id;
-        echo html_writer::label(fullname($user)." ".get_string('grade'), 'r'.$entry->id, true, array('class' => 'accesshide'));
+        $gradestring = get_string_manager()->string_exists('gradenoun', 'moodle') ? get_string('gradenoun') : get_string('grade');
+        echo html_writer::label(fullname($user)." ".$gradestring, 'r'.$entry->id, true, array('class' => 'accesshide'));
         echo html_writer::select($grades, 'r'.$entry->id, $entry->rating, get_string("nograde").'...', $attrs);
         echo $hiddengradestr;
         // Rewrote next three lines to show entry needs to be regraded due to resubmission.
@@ -911,6 +887,14 @@ function journal_print_user_entry($course, $user, $entry, $teachers, $grades) {
 
 }
 
+/**
+ * Print feedback
+ *
+ * @param object $course Course object
+ * @param object $entry Entry object
+ * @param array $grades Grades array
+ * @return void
+ */
 function journal_print_feedback($course, $entry, $grades) {
 
     global $CFG, $DB, $OUTPUT;
@@ -918,7 +902,7 @@ function journal_print_feedback($course, $entry, $grades) {
     require_once($CFG->dirroot.'/lib/gradelib.php');
 
     if (! $teacher = $DB->get_record('user', array('id' => $entry->teacher))) {
-        print_error('Weird journal error');
+        throw new \moodle_exception(get_string('Weird journal error'));
     }
 
     echo '<table class="feedbackbox">';
@@ -942,7 +926,8 @@ function journal_print_feedback($course, $entry, $grades) {
     // Gradebook preference.
     $gradinginfo = grade_get_grades($course->id, 'mod', 'journal', $entry->journal, array($entry->userid));
     if (!empty($gradinginfo->items[0]->grades[$entry->userid]->str_long_grade)) {
-        echo get_string('grade').': ';
+        $gradestring = get_string_manager()->string_exists('gradenoun', 'moodle') ? get_string('gradenoun') : get_string('grade');
+        echo $gradestring.': ';
         echo $gradinginfo->items[0]->grades[$entry->userid]->str_long_grade;
     } else {
         print_string('nograde');
@@ -1009,6 +994,14 @@ function journal_pluginfile($course, $cm, $context, $filearea, $args, $forcedown
     send_stored_file($file, null, 0, $forcedownload, $options);
 }
 
+/**
+ * Format entry text
+ *
+ * @param object $entry Entry object
+ * @param object $course Course object
+ * @param object $cm Course module object
+ * @return string Formatted text
+ */
 function journal_format_entry_text($entry, $course = false, $cm = false) {
 
     if (!$cm) {
@@ -1031,3 +1024,52 @@ function journal_format_entry_text($entry, $course = false, $cm = false) {
     return format_text($entrytext, $entry->format, $formatoptions);
 }
 
+
+/**
+ * This function receives a calendar event and returns the action associated with it, or null if there is none.
+ *
+ * This is used by block_myoverview in order to display the event appropriately. If null is returned then the event
+ * is not displayed on the block.
+ *
+ * @param calendar_event $event
+ * @param \core_calendar\action_factory $factory
+ * @param int $userid User id to use for all capability checks, etc. Set to 0 for current user (default).
+ * @return \core_calendar\local\event\entities\action_interface|null
+ */
+function mod_journal_core_calendar_provide_event_action(calendar_event $event,
+                                                     \core_calendar\action_factory $factory,
+                                                     int $userid = 0) {
+    global $USER;
+
+    if (empty($userid)) {
+        $userid = $USER->id;
+    }
+
+    $cm = get_fast_modinfo($event->courseid, $userid)->instances['journal'][$event->instance];
+
+    if (!$cm->uservisible) {
+        // The module is not visible to the user for any reason.
+        return null;
+    }
+
+    $context = context_module::instance($cm->id);
+
+    if (!has_capability('mod/journal:addentries', $context, $userid)) {
+        return null;
+    }
+
+    $completion = new \completion_info($cm->get_course());
+
+    $completiondata = $completion->get_data($cm, false, $userid);
+
+    if ($completiondata->completionstate != COMPLETION_INCOMPLETE) {
+        return null;
+    }
+
+    return $factory->create_instance(
+        get_string('view'),
+        new \moodle_url('/mod/journal/view.php', ['id' => $cm->id]),
+        1,
+        true
+    );
+}

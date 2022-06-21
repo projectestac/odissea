@@ -191,7 +191,7 @@ $string['fileencoding'] = 'Kodifikazioa';
 $string['filesnotgenerated'] = 'Ez dira fitxategi guztiak sortu: {$a}';
 $string['filtername'] = 'Datu-basearen esteka automatikoa';
 $string['footer'] = 'Orri-oina';
-$string['forcelinkname'] = 'Estekarako behartutako izena';
+$string['forcelinkname'] = 'Estekarako izen behartua';
 $string['foundnorecords'] = 'Ez dago erregistrorik (<a href="{$a->reseturl}">Garbitu iragazkiak</a>)';
 $string['foundrecords'] = 'Erregistroak: {$a->num}/{$a->max} (<a href="{$a->reseturl}">Garbitu iragazkiak</a>)';
 $string['fromfile'] = 'Inportatu zip fitxategitik';

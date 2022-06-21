@@ -1,6 +1,7 @@
 <?php
 
 interface com_wiris_quizzes_api_AuthorAnswer extends com_wiris_quizzes_api_Serializable{
+	function copy($model);
 	function setWeight($weight);
 	function getWeight();
 	function removeValidation($validation);

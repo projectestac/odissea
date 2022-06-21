@@ -83,7 +83,7 @@ Das folgende Beispiel kann dies verdeutlichen:
     <li>Wert 1 ist als "Extrapunkte" aktiviert, Wert 2 jedoch nicht.</li>
     <li>Beide Werte gehören zur Kategorie 1. Für diese gilt, dass die Summe der Bewertungen ermittelt werden soll </li>
     <li>Kategorie 1 wird gesamt mit 0-75 bewertet</li>
-    <li>Ein Teilnehmer erhält nun die Bewertung 20 für Wert 1 und 75 für Wert 2</li>
+    <li>Ein/e Teilnehmer/in erhält nun die Bewertung 20 für Wert 1 und 75 für Wert 2</li>
     <li>Die Berechnung für Kategorie 1 ist nun 75/75 (20+70 = 95; Wert 1 wird als Extrapunkte gewertet. Der Höchstwert kann jedoch nur 75 sein, daher ist die Endnote 75.)</li>
 </ul>';
 $string['aggregationcoefextrasumabbr'] = '+';
@@ -95,7 +95,7 @@ $string['aggregationcoefextraweight_help'] = 'Bei der Berechnung der Extrapunkte
     <li>Wert 2 wird bewertet mit 0-100 und "Extrapunkte" Wert bleibt auf 0.0000</li>
     <li>Wert 3 wird bewertet mit 0-100 und "Extrapunkte" Wert bleibt auf 0.0000</li>
     <li>Alle 3 Werte gehören in Kategorie 1, mit der Bewertungsstrategie "Durchschnitt der Einzelbewertungen (mit Extrapunkten)" als Berechnungsverfahren</li>
-    <li>Ein Teilnehmer erhält nun folgende Einzelbewertungen 20 für Wert 1, 40 für Wert 2 und 70 für Wert 3</li>
+    <li>Ein/e Teilnehmer/in erhält nun folgende Einzelbewertungen 20 für Wert 1, 40 für Wert 2 und 70 für Wert 3</li>
     <li>Die Gesamtbewertung für Kategorie 1 ist nun 50/100 (20*2 + 40 + 70) / 3</li>
 </ul>';
 $string['aggregationcoefweight'] = 'Gewichtung der Aspekte';
@@ -163,7 +163,7 @@ $string['coursescales'] = 'Kursskalen';
 $string['coursesettings'] = 'Kurseinstellungen';
 $string['coursesettingsexplanation'] = 'Die Kurseinstellungen legen fest, wie die Bewertungen für alle Teilnehmer/innen im Kurs gezeigt werden';
 $string['coursesiamtaking'] = 'Kurse - Teilnehmer/in';
-$string['coursesiamteaching'] = 'Kurse - Trainer/in';
+$string['coursesiamteaching'] = 'Kurse,die ich unterrichte';
 $string['coursetotal'] = 'Kurs gesamt';
 $string['createcategory'] = 'Kategorie anlegen';
 $string['createcategoryerror'] = 'Neue Kategorie konnte nicht erstellt werden';
@@ -368,7 +368,7 @@ $string['gradepreferenceshelp'] = 'Hilfe für Bewertungseinstellungen';
 $string['gradepublishing'] = 'Veröffentlichen erlauben';
 $string['gradepublishing_help'] = 'Aktiviert die Export und Importfunktion: Exportierte Bewertungen können für andere verlinkt werden, ohne dass sie sich im Moodle-System einloggen müssen.  Bewertungen können auf die gleiche Art und Weise importiert werden. Damit können Bewertungen, die aus anderen Systemen stammen integriert werden. Normalerweise können nur Administrator/innen diese Funktion nutzen. Falls dieses Recht weitergegeben wird, sind die betroffenen Personen darauf hinzuweisen, dass mit entsprechender Sorgfalt mit diesen persönlichen Daten umgegangen wird.
 
-Das Veröffentlichen von Bewertungen ist eine Möglichkeit, Bewertungen über eine URL zu importieren und zu exportieren, ohne bei Moodle angemeldet zu sein. Wenn diese Option aktiviert ist, werden für Administrator/innen und Nutzer/innen mit der Berechtigung zum Veröffentlichen von Bewertungen (meist nur Benutzer mit der Managerrolle) die Einstellungen zum Veröffentlichen von Bewertungsexporten angeboten.';
+Das Veröffentlichen von Bewertungen ist eine Möglichkeit, Bewertungen über eine URL zu importieren und zu exportieren, ohne bei Moodle angemeldet zu sein. Wenn diese Option aktiviert ist, werden für Administrator/innen und Nutzer/innen mit der Berechtigung zum Veröffentlichen von Bewertungen (meist nur Nutzende mit der Manager/innenrolle) die Einstellungen zum Veröffentlichen von Bewertungsexporten angeboten.';
 $string['gradepublishinglink'] = 'Herunterladen: {$a}';
 $string['gradereport'] = 'Bewertungsbericht';
 $string['graderreport'] = 'Bewertungsübersicht';
@@ -470,7 +470,7 @@ $string['incorrectcourseid'] = 'Ungültige Kurs-ID';
 $string['incorrectcustomscale'] = '(Fehlerhafte Skalenanpassung - bitte ändern)';
 $string['incorrectminmax'] = 'Der unterste Wert muss niedriger als der höchste Wert sein.';
 $string['inherit'] = 'Vererben';
-$string['intersectioninfo'] = 'Info zu Teilnehmer/Bewertung';
+$string['intersectioninfo'] = 'Info zu Teilnehmendne/Bewertung';
 $string['invalidgradeexporteddate'] = 'Das Exportdatum ist ungültig, da es älter als ein Jahr ist, in der Zukunft liegt oder das Format fehlerhaft ist.';
 $string['item'] = 'Aspekt';
 $string['iteminfo'] = 'Info zum Aspekt';
@@ -887,7 +887,7 @@ $string['userid'] = 'Nutzer-ID';
 $string['useridnumberwarning'] = 'Nutzer/innen ohne ID-Nummer sind vom Export ausgeschlossen, da sie nicht importiert werden können.';
 $string['usermappingerror'] = 'Nutzerzuordnungsfehler: Nutzer mit {$a->field} von "{$a->value}" wurde nicht gefunden.';
 $string['usermappingerrorcurrentgroup'] = 'Nutzer/in ist nicht Mitglied dieser Gruppe.';
-$string['usermappingerrormultipleusersfound'] = 'Fehler bei der Benutzerzuordnung: Mehrere Benutzer mit {$a->field} von "{$a->value}" gefunden. Bitte verwenden Sie ein eindeutigeres Mapping-Feld.';
+$string['usermappingerrormultipleusersfound'] = 'Fehler bei der Nutzendenzuordnung: Mehrere Nutzende mit {$a->field} von "{$a->value}" gefunden. Bitte verwenden Sie ein eindeutigeres Mapping-Feld.';
 $string['usermappingerrorusernotfound'] = 'Nutzer-Zuordnungsfehler. Nutzer kann nicht gefunden werden.';
 $string['userpreferences'] = 'Nutzereinstellungen';
 $string['useweighted'] = 'Gewichtung verwenden';

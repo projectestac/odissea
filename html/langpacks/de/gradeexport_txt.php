@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Bewertung als TXT exportiert';
 $string['pluginname'] = 'Textdatei';
-$string['privacy:metadata'] = 'Das Einfache Textdatei-Exportformat für Bewertungen speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin "Bewertungsexport als Textdatei" speichert keine personenbezogenen Daten.';
 $string['timeexported'] = 'Zuletzt aus diesem Kurs geladen';
 $string['txt:publish'] = 'Bewertungen als Textdatei veröffentlichen';
 $string['txt:view'] = 'Bewertungen als Textdatei exportieren';

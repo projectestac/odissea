@@ -65,5 +65,5 @@ server.url.com
 ipaddress:port
 </pre>';
 $string['testservers'] = 'テストサーバ';
-$string['testservers_desc'] = 'memcachedサーバをテストするための1つまたはそれ以上の接続ストリングです。テストサーバが指定された場合、管理ブロックのキャッシュパフォーマンスページを使用してmemcacheパフォーマンスをテストすることができます。
+$string['testservers_desc'] = 'memcachedサーバをテストするための1つ以上の接続ストリングです。テストサーバが指定された場合、管理ブロックのキャッシュパフォーマンスページを使用してmemcacheパフォーマンスをテストすることができます。
 例: 127.0.0.1:11211';

@@ -25,4 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['backupofcourselogs'] = '{$a}的备份日志';
+$string['logsofbackupexecutedon'] = '在{$a}上执行的备份日志';
+$string['nobackupsfound'] = '没有找到备份。';
+$string['nologsfound'] = '找不到此备份的日志。';
 $string['pluginname'] = '备份报告';
+$string['privacy:metadata'] = '备份报告插件不存储任何个人数据。';
+$string['strftimetime'] = '%I:%M:%S %p';
+$string['viewlogs'] = '查看日志';

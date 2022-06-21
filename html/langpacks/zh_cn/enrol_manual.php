@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = '高级';
 $string['alterstatus'] = '修改状态';
 $string['altertimeend'] = '修改结束时间';
 $string['altertimestart'] = '修改开始时间';
 $string['assignrole'] = '分配角色';
+$string['assignroles'] = '分配角色';
 $string['browsecohorts'] = '浏览群';
 $string['browseusers'] = '浏览用户';
 $string['confirmbulkdeleteenrolment'] = '你确信要删除该用户的选课吗？';
@@ -65,13 +67,17 @@ $string['messageprovider:expiry_notification'] = '人工选课截止通知';
 $string['now'] = '现在';
 $string['pluginname'] = '人工选课';
 $string['pluginname_desc'] = '通过人工选课插件，有权限的用户（例如教师）可以在课程管理设置中的一个链接里手工为其它用户选课。此插件通常都是启用的，因为有其它插件（比如自助选课）需要调用它。';
+$string['privacy:metadata'] = '手动注册插件不存储任何个人数据。';
 $string['selectcohorts'] = '选择群组';
+$string['selection'] = '筛选';
 $string['selectusers'] = '选择用户';
+$string['sendexpirynotificationstask'] = '手动报名发送到期通知任务';
 $string['status'] = '启用人工选课';
 $string['status_desc'] = '允许内部选课的用户访问课程。大多数情况都应该启用这个选项。';
 $string['status_help'] = '此设置决定用户是否可以被人工选课。教师等有权限的用户可以在课程管理设置中的一个链接里人工选择用户，加入课程。';
 $string['statusdisabled'] = '已禁用';
 $string['statusenabled'] = '已启用';
+$string['syncenrolmentstask'] = '同步手动报名任务';
 $string['unenrol'] = '撤销选课';
 $string['unenrolselectedusers'] = '撤销选定用户的选课';
 $string['unenrolselfconfirm'] = '您确定要撤销您自己对“{$a}”课程的选课吗？';

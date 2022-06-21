@@ -83,7 +83,7 @@ $string['closebeforeopen'] = 'Especificou uma data de fim anterior à data de in
 $string['collapsetocwinsize'] = 'Contrair índice quando o tamanho da janela é inferior a';
 $string['collapsetocwinsizedesc'] = 'Esta configuração permite especificar o tamanho da janela, abaixo da qual o índice deverá contrair automaticamente.';
 $string['compatibilitysettings'] = 'Configurações de compatibilidade';
-$string['completed'] = 'Concluída';
+$string['completed'] = 'Concluído';
 $string['completiondetail:allscos'] = 'Realizar todas as partes desta atividade';
 $string['completiondetail:completionscore'] = 'Receber pontuação de {$a} ou mais';
 $string['completiondetail:completionstatuscompleted'] = 'Concluir a atividade';
@@ -92,7 +92,7 @@ $string['completiondetail:completionstatuspassed'] = 'Ficar aprovado na atividad
 $string['completionscorerequired'] = 'Exigir nota mínima';
 $string['completionscorerequired_help'] = 'Ativar esta configuração vai exigir que o utilizador tenha pelo menos a pontuação mínima inserida para marcar como concluída esta atividade SCORM, bem como quaisquer outros requisitos de conclusão da atividade.';
 $string['completionscorerequireddesc'] = 'É necessária uma nota mínima de {$a} para concluir';
-$string['completionstatus_completed'] = 'Concluída';
+$string['completionstatus_completed'] = 'Concluído';
 $string['completionstatus_passed'] = 'Aprovado';
 $string['completionstatusallscos'] = 'Exigir que todos os scos devolvam o estado de conclusão exigido';
 $string['completionstatusallscos_help'] = 'Alguns pacotes SCORM contêm vários componentes ou "scos" - quando esta opção  está ativa, todos os scos dentro do pacote devem devolver o lesson_status relevante desta atividade para poder ser sinalizada como concluída.';
@@ -149,16 +149,16 @@ $string['exit'] = 'Sair';
 $string['exitactivity'] = 'Sair da atividade';
 $string['expired'] = 'A atividade fechou em {$a} e já não está disponível';
 $string['external'] = 'Atualizar calendarização dos pacotes externos';
-$string['failed'] = 'Reprovada';
+$string['failed'] = 'Reprovado';
 $string['finishscorm'] = 'Se terminou de visualizar este recurso, {$a}';
 $string['finishscormlinkname'] = 'clique aqui para voltar à página da disciplina';
 $string['firstaccess'] = 'Primeiro acesso';
 $string['firstattempt'] = 'Primeira tentativa';
 $string['floating'] = 'Flutuante';
 $string['forceattemptalways'] = 'Sempre';
-$string['forceattemptoncomplete'] = 'Se tentativa anterior foi concluída, aprovada ou reprovada';
+$string['forceattemptoncomplete'] = 'Se o estado da tentativa anterior for concluído, aprovado ou reprovado';
 $string['forcecompleted'] = 'Forçar conclusão';
-$string['forcecompleted_help'] = 'Se ativar esta opção, o estado da tentativa atual é forçado para "concluída". Esta configuração apenas é aplicável a pacotes SCORM 1.2.';
+$string['forcecompleted_help'] = 'Se ativar esta opção, o estado da tentativa atual é forçado para "concluído". Esta configuração apenas é aplicável a pacotes SCORM 1.2.';
 $string['forcecompleteddesc'] = 'Define o valor predefinido para a configuração \'Forçar conclusão\'';
 $string['forcejavascript'] = 'Forçar utilizadores a ativar JavaScript';
 $string['forcejavascript_desc'] = 'Se ativar esta opção (recomendado), o acesso a objetos SCORM será impedido quando o JavaScript não é suportado ou não está ativo no navegador dos utilizadores. Se esta opção estiver desativada, o utilizador pode visualizar o SCORM, mas a comunicação API irá falhar e as informações sobre a nota não serão guardadas.';
@@ -166,8 +166,8 @@ $string['forcejavascriptmessage'] = 'É necessário ter o JavaScript ativo para 
 $string['forcenewattempts'] = 'Forçar nova tentativa';
 $string['forcenewattempts_help'] = 'Existem 3 opções:
 
-* Não - Se uma tentativa anterior foi concluída, aprovada ou reprovada, o aluno terá a opção de entrar no modo de revisão ou iniciar uma nova tentativa.
-* Se tentativa anterior foi concluída, aprovada ou reprovada - Depende do pacote SCORM definir o estado de \'concluída\', \'aprovada\' ou \'reprovada\'.
+* Não - Se uma tentativa anterior tem o estado concluído, aprovado ou reprovado, o aluno terá a opção de entrar no modo de revisão ou iniciar uma nova tentativa.
+* Se tentativa anterior tem o estado concluído, aprovado ou reprovado - Depende do pacote SCORM definir o estado \'concluído\', \'aprovado\' ou \'reprovado\'.
 * Sempre - Cada reentrada na atividade SCORM gerará uma nova tentativa e o aluno não retornará ao mesmo ponto que alcançou na tentativa anterior.';
 $string['found'] = 'Manifesto encontrado';
 $string['frameheight'] = 'Altura da frame ou janela.';
@@ -287,7 +287,7 @@ $string['noreports'] = 'Não há relatórios para exibir';
 $string['normal'] = 'Normal';
 $string['noscriptnoscorm'] = 'O seu navegador não suporta JavaScript ou tem o suporte para JavaScript desativado. Este SCORM poderá ser inacessível ou não registará quaisquer dados.';
 $string['not_corr_type'] = 'Discrepância de tipo para a tag {$a->tag}';
-$string['notattempted'] = 'Sem tentativas';
+$string['notattempted'] = 'Não iniciou';
 $string['notopenyet'] = 'Esta atividade não está disponível até {$a}';
 $string['objectives'] = 'Objetivos';
 $string['openafterclose'] = 'A data de abertura está definida para depois da data de fecho';
@@ -296,7 +296,7 @@ $string['optattemptsonly'] = 'apenas utilizadores com tentativas';
 $string['options'] = 'Opções (Disponível apenas em alguns navegadores)';
 $string['optionsadv'] = 'Opções (Avançado)';
 $string['optionsadv_desc'] = 'Se selecionar esta opção, a largura e altura serão listadas como configurações avançadas.';
-$string['optnoattemptsonly'] = 'apenas utilizadores sem tentativas';
+$string['optnoattemptsonly'] = 'apenas utilizadores que não iniciaram';
 $string['organization'] = 'Organização';
 $string['organizations'] = 'Organizações';
 $string['othersettings'] = 'Definições adicionais';
@@ -452,13 +452,13 @@ $string['versionwarning'] = 'No identificador {$a->tag} a versão do manifesto �
 $string['viewallreports'] = 'Ver relatórios de {$a} tentativas';
 $string['viewalluserreports'] = 'Ver relatórios de {$a} utilizadores';
 $string['whatgrade'] = 'Método de avaliação';
-$string['whatgrade_help'] = 'Se forem permitidas múltiplas tentativas, esta opção define se a nota da atividade corresponde à da Tentativa com melhor nota, Média das tentativas, Primeira tentativa ou Última tentativa concluída. A opção "Última tentativa concluída" não inclui as tentativas com o estado \'Reprovada\'.
+$string['whatgrade_help'] = 'Se forem permitidas múltiplas tentativas, esta opção define se a nota da atividade corresponde à da Tentativa com melhor nota, Média das tentativas, Primeira tentativa ou Última tentativa concluída. A opção "Última tentativa concluída" não inclui as tentativas com o estado \'Reprovado\'.
 
 Notas sobre a gestão das múltiplas tentativas:
 
 * A possibilidade de iniciar nova tentativa é facultada através de uma caixa de seleção acima do botão \'Entrar\' na página de entrada do SCORM. Certifique-se de que permite o acesso a esta página se pretende permitir mais do que uma tentativa.
 
-* Alguns pacotes SCORM reconhecem as novas tentativas, outros não. Isto significa que se o aluno entra numa tentativa existente, e o pacote SCORM não possuir lógica interna para evitar a sobreposição dos dados anteriores, estes poderão ser substituídos mesmo que à tentativa já tenha sido atribuído o estado \'Concluída\' ou \'Aprovada\'.
+* Alguns pacotes SCORM reconhecem as novas tentativas, outros não. Isto significa que se o aluno entra numa tentativa existente, e o pacote SCORM não possuir lógica interna para evitar a sobreposição dos dados anteriores, estes poderão ser substituídos mesmo que à tentativa já tenha sido atribuído o estado \'Concluído\' ou \'Aprovado\'.
 
 * As configurações "Forçar conclusão", "Forçar nova tentativa" e "Bloquear após tentativa final" também permitem gerir as definições das múltiplas tentativas.';
 $string['whatgradedesc'] = 'Caso sejam permitidas múltiplas tentativas, esta configuração define como é obtida a nota da atividade que é exibida na pauta.';

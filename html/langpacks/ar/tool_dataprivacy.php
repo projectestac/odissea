@@ -146,6 +146,7 @@ $string['effectiveretentionperioduser'] = '{$a} (منذ آخر مرة قام ف�
 $string['emailsalutation'] = 'عزيزي {$a}،';
 $string['errorcannotrequestdeleteforother'] = 'ليس لديك صلاحية إنشاء طلب حذف لهذا المستخدم.';
 $string['errorcannotrequestdeleteforself'] = 'ليس لديك صلاحية إنشاء طلب حذف لنفسك.';
+$string['errorcannotrequestexportforself'] = 'ليست لديك صلاحية إنشاء طلب تصدير لنفسك.';
 $string['errorcontactdpodisabled'] = 'خيار الاتصال مع موظف الخصوصية مُعطَّل.';
 $string['errorcontexthasunexpiredchildren'] = 'لا يزال للسياق "{$a}" سياقات فرعية لم تنته صلاحيتها بعد. لم يتم وضع علامة على أي سياقات للحذف.';
 $string['errorinvalidrequestcomments'] = 'حقل التعليقات ينبغي أن يحتوي نصاً عادياً فقط.';

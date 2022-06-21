@@ -97,7 +97,7 @@ $string['calmonths'] = 'Gener,Febrer,Març,Abril,Maig,Juny,Juliol,Agost,Setembre
 $string['calshow'] = 'Escolliu data';
 $string['caltoday'] = 'Avui';
 $string['calweekdays'] = 'Dg,Dl,Dm,Dc,Dj,Dv,Ds';
-$string['cannottakeforgroup'] = 'No podeu prendre l\'assistència per al grup "{$a}"';
+$string['cannottakeforgroup'] = 'No podeu registrar l\'assistència del grup «{$a}»';
 $string['cantaddstatus'] = 'Heu d\'establir un acrònim i una descripció quan s\'afegeixi un estat nou.';
 $string['categoryreport'] = 'Informe de categoria de curs';
 $string['changeattendance'] = 'Modifica l\'assistència';
@@ -121,8 +121,8 @@ $string['coursesummary'] = 'Informe de resum del curs';
 $string['createmultiplesessions'] = 'Crea múltiples sessions';
 $string['createmultiplesessions_help'] = 'Aquesta funció permet crear múltiples sessions d\'una sola vegada.
 
- * <strong>Data inici sessió</strong>: Seleccioneu la data d\'inici del vostre curs (el primer dia de classe)
-  * <strong>Data final sessió</strong>: Seleccioneu l\'últim dia de classe (l\'últim dia que voleu prendre l\'assistència).
+ * <strong>Data inici sessió</strong>: Seleccioneu la data d\'inici del vostre curs (el primer dia de classe).
+  * <strong>Data final sessió</strong>: Seleccioneu l\'últim dia de classe (l\'últim dia que voleu registrar l\'assistència).
   * <strong>Dies de les sessions</strong>: Seleccioneu els dies de la setmana en què tindran lloc les classes (per exemple, Dilluns/Dimecres/Divendres).
   * <strong>Freqüència</strong>: Això permet un ajust de la freqüència. Si la vostra classe té lloc un cop per setmana, seleccioneu 1; si té lloc cada dues setmanes, seleccioneu 2; cada 3 setmanes, seleccioneu 3, etc.';
 $string['createonesession'] = 'Crea una sessió per al curs';
@@ -197,7 +197,7 @@ $string['enablecalendar_desc'] = 'Si està habilitat, es crearà un esdeveniment
 $string['enablewarnings'] = 'Habilita els advertiments';
 $string['enablewarnings_desc'] = 'Això permet definir un conjunt d\'advertiments per a una assistència i notificacions per correu electrònic als usuaris quan l\'assistència cau per sota del llindar configurat. <br/> <strong> ATENCIÓ: aquesta és una funció nova i no s\'ha provat de manera exhaustiva. Utilitzeu-la sota el vostre propi risc; si creieu que funciona bé, comenteu-ho als fòrums de Moodle. </ Strong>';
 $string['encoding'] = 'Codificació';
-$string['endofperiod'] = 'Final del periode';
+$string['endofperiod'] = 'Final del període';
 $string['endtime'] = 'Final de la sessió';
 $string['enrolmentend'] = 'L\'inscripció de l\'usuari finalitza el {$a}';
 $string['enrolmentstart'] = 'L\'inscripció de l\'usuari comença el {$a}';
@@ -253,6 +253,7 @@ $string['importsessions'] = 'Importa les sessions';
 $string['includeabsentee'] = 'Inclou les sessions en calcular l\'informe d\'absentisme';
 $string['includeabsentee_help'] = 'Si està marcada, aquesta sessió s\'inclourà en els càlculs de l\'informe d\'absentisme.';
 $string['includeall'] = 'Selecciona totes les sessions';
+$string['includedescription'] = 'Inclou una descripció de la sessió';
 $string['includenottaken'] = 'Inclou les sessions no realitzades';
 $string['includeqrcode'] = 'Inclou el codi QR';
 $string['includeremarks'] = 'Inclou comentaris';
@@ -280,9 +281,9 @@ $string['maxwarn'] = 'Nombre màxim d\'advertències per correu electrònic';
 $string['maxwarn_help'] = 'El nombre màxim de vegades que s\'ha d\'enviar un avís (només s\'envia una advertiment per sessió)';
 $string['mergeuser'] = 'Fusiona l\'usuari';
 $string['modulename'] = 'Assistència';
-$string['modulename_help'] = 'El mòdul d\'activitat d\'assistència permet a un professor prendre nota de l\'assistència a les classes i els estudiants els permet el seu propi registre d\'assistència.
+$string['modulename_help'] = 'El mòdul d\'activitat d\'assistència permet que un professor registri l\'assistència a les classes i que els estudiants vegin el seu propi registre d\'assistència.
 
-El professor pot crear diverses sessions i pot marcar l\'estat d\'assistència com a «Present», «Absent», «Tard», o «Justificat», o modificar els estats per adaptar-se a les seves necessitats.
+El professor pot crear diverses sessions i pot marcar l\'estat d\'assistència com a «Present», «Absent», «Tard», o «Justificat», o modificar els estats per adaptar-los a les seves necessitats.
 
 Els informes estan disponibles per a tota la classe o per als estudiants individualment.';
 $string['modulenameplural'] = 'Assistència';
@@ -299,7 +300,7 @@ $string['newstatusset'] = 'Nou conjunt d\'estats';
 $string['noabsentstatusset'] = 'L\'estat establert en ús no té estat per ser utilitzat quan no està marcat.';
 $string['noattendanceusers'] = 'No és possible exportar dades, ja que no hi ha estudiants matriculats al curs.';
 $string['noattforuser'] = 'No existeix cap registre de l\'assitència per aquest usuari';
-$string['noautomark'] = 'Deshabilitat';
+$string['noautomark'] = 'Inhabilitat';
 $string['nodescription'] = 'Sessió de classe regular';
 $string['noeventstoreset'] = 'No hi ha esdeveniments del calendari que requereixin una actualització.';
 $string['nogroups'] = 'No podeu afegir sessions de grup. No hi ha cap grup en aquest curs.';
@@ -332,9 +333,10 @@ $string['oversessionstaken_help'] = 'Mostra estadístiques de les sessions on s\
     <li><strong>Points</strong>: punts atorgats en funció de les sessions registrades.</li>
     <li><strong>Percentage</strong>: percentatge de punts atorgats al màxim de punts possibles per a totes les sessions.</li>
     </ul>';
+$string['pageof'] = 'Pàgina {$a->page} de {$a->numpages}';
 $string['participant'] = 'Participant';
 $string['password'] = 'Contrasenya';
-$string['passwordgrp'] = 'Contrasenya d\'estudiant';
+$string['passwordgrp'] = 'Contrasenya de l\'estudiant';
 $string['passwordgrp_help'] = 'Si s\'estableix, els estudiants hauran d\'introduir aquesta contrasenya abans que puguin establir el seu propi estat d\'assistència per a la sessió. Si està buit, no cal una contrasenya.';
 $string['passwordrequired'] = 'Heu d\'introduir la contrasenya de la sessió abans de poder enviar la vostra assistència';
 $string['percentage'] = 'Percentatge';
@@ -348,7 +350,7 @@ $string['pointssessionscompleted'] = 'Punts sobre les sessions realitzades';
 $string['preferences_desc'] = 'Els canvis en els conjunts d\'estat afectaran les sessions d\'assistència existents i poden afectar la classificació.';
 $string['preventsharederror'] = 'S\'ha desactivat l\'autocontrol per a una sessió perquè sembla que aquest dispositiu s\'ha utilitzat per registrar l\'assistència d\'un altre estudiant.';
 $string['preventsharedip'] = 'Evita que els estudiants comparteixin una adreça IP';
-$string['preventsharedip_help'] = 'Impedeix que els estudiants utilitzin el mateix dispositiu (identificat mitjançant l\'adreça IP) per tenir assistència per a altres estudiants.';
+$string['preventsharedip_help'] = 'Impedeix que els estudiants utilitzin el mateix dispositiu (identificat mitjançant l\'adreça IP) per registrar l\'assistència d\'altres estudiants.';
 $string['preventsharediptime'] = 'Temps per permetre la reutilització de l\'adreça IP (minuts)';
 $string['preventsharediptime_help'] = 'Permetre que es reutilitzi una adreça IP per prendre assistència en aquesta sessió després d\'haver transcorregut aquest temps.';
 $string['priorto'] = 'La data de la sessió és anterior a la data d\'inici del curs ({$a}), perquè les noves sessions programades abans d\'aquesta data quedaran ocultes (no accessibles). Podeu canviar la data d\'inici del curs en qualsevol moment (consulteu la configuració del curs) per poder accedir a sessions anteriors. <br> <br> Canvieu la data de la sessió o simplement feu clic de nou al botó «Afegeix una sessió» per confirmar.';
@@ -377,8 +379,8 @@ $string['qrcode'] = 'Codi QR';
 $string['randompassword'] = 'Contrasenya aleatòria';
 $string['remark'] = 'Observacions per: {a}';
 $string['remarks'] = 'Observacions';
-$string['repeatasfollows'] = 'Repeteix la sessió anterior de la següent manera';
-$string['repeatevery'] = 'Repeteix tot';
+$string['repeatasfollows'] = 'Repeteix la sessió anterior de la manera següent';
+$string['repeatevery'] = 'Repeteix-ho tot';
 $string['repeaton'] = 'Repeteix en';
 $string['repeatuntil'] = 'Repeteix fins a';
 $string['report'] = 'Informe';
@@ -428,6 +430,7 @@ $string['resetstatuses'] = 'Restableix estats per defecte';
 $string['restoredefaults'] = 'Restaura els valors predeterminats';
 $string['resultsperpage'] = 'Resultats per pàgina';
 $string['resultsperpage_desc'] = 'Nombre d\'estudiants mostrats per pàgina';
+$string['rotateqrcode'] = 'Gira el codi QR';
 $string['save'] = 'Desa l\'assistència';
 $string['search:activity'] = 'Assistència - informació d\'activitat';
 $string['session'] = 'Sessió';
@@ -456,7 +459,7 @@ $string['sessiontype_help'] = 'Podeu afegir sessions per a tots els estudiants o
 $string['sessiontypeshort'] = 'Tipus';
 $string['sessionunknowngroup'] = 'Una sessió especifica grup/s desconegut/s: {$a}';
 $string['sessionupdated'] = 'Sessió actualitzada correctament';
-$string['set_by_student'] = 'Auto-registrat';
+$string['set_by_student'] = 'Autoregistrat';
 $string['setallstatuses'] = 'Estableix l\'estat per a tots els usuaris';
 $string['setallstatusesto'] = 'Estableix l\'estat per a tots els usuaris a  «{$a}»';
 $string['setperiod'] = 'Temps especificat en minuts per alliberar la IP';
@@ -480,19 +483,20 @@ $string['statusdeleted'] = 'Estat esborrat';
 $string['statuses'] = 'Estats';
 $string['statusset'] = 'Estat configurat {$a}';
 $string['statussetsettings'] = 'Estat configurat';
+$string['statusunselected'] = 'no seleccionat';
 $string['strftimedm'] = '%d.%m';
 $string['strftimedmy'] = '%d.%m.%Y';
 $string['strftimedmyhm'] = '%d.%m.%Y %H.%M';
 $string['strftimedmyw'] = '%d.%m.%y (%a)';
 $string['strftimehm'] = '%H:%M';
 $string['strftimeshortdate'] = '%d.%m.%Y';
-$string['studentavailability'] = 'Disponible per a estudiants (minuts)';
+$string['studentavailability'] = 'Disponible per als estudiants (minuts)';
 $string['studentavailability_help'] = 'Quan els estudiants marquen la seva pròpia assistència, el nombre de minuts que aquest estat està disponible després que la sessió comenci.
  <br/> Si està buit, aquest estat sempre estarà disponible, Si s\'estableix a 0, sempre quedarà amagat als estudiants';
 $string['studentid'] = 'ID de l\'estudiant';
 $string['studentmarked'] = 'S\'ha registrat la vostra assistència en aquesta sessió.';
 $string['studentmarking'] = 'Enregistrament de l\'estudiant';
-$string['studentpassword'] = 'Contrasenya d\'estudiant';
+$string['studentpassword'] = 'Contrasenya de l\'estudiant';
 $string['studentrecordingexpanded'] = 'Enregistrament expandit de l\'estudiant';
 $string['studentrecordingexpanded_desc'] = 'Mostra les configuracions d\'«Enregistrament de l\'estudiant» com a expandides per defecte en crear sessions noves.';
 $string['studentscanmark'] = 'Permet que els alumnes registrin l\'assistència personalment';
@@ -502,7 +506,7 @@ $string['studentscanmarksessiontime'] = 'Els alumnes registren l\'assistència d
 $string['studentscanmarksessiontime_desc'] = 'Si està marcada, els estudiants només poden registrar la seva assistència durant la sessió.';
 $string['studentscanmarksessiontimeend'] = 'Final de sessió (minuts)';
 $string['studentscanmarksessiontimeend_desc'] = 'Si la sessió no té un temps de finalització, quants minuts hauria d\'estar disponible la sessió perquè els estudiants registrin la seva assistència.';
-$string['submitattendance'] = 'Enviar assistència';
+$string['submitattendance'] = 'Tramet l\'assistència';
 $string['subnet'] = 'Subxarxa';
 $string['subnetactivitylevel'] = 'Permet la configuració de subxarxa a nivell d\'activitat';
 $string['subnetactivitylevel_desc'] = 'Si està habilitat, els professors poden substituir la subxarxa predeterminada en el nivell d\'activitat quan es crea una assistència. En cas contrari, s\'utilitzarà el lloc predeterminat quan es crea una sessió.';
@@ -510,7 +514,7 @@ $string['subnetwrong'] = 'L\'assistència només es pot registrar des de determi
 $string['summary'] = 'Resum';
 $string['tablerenamefailed'] = 'Ha fallat el canvi de nom de la antiga taula attforblock a attendance';
 $string['tactions'] = 'Acció';
-$string['takeattendance'] = 'Pren l\'assistència';
+$string['takeattendance'] = 'Registra l\'assistència';
 $string['takensessions'] = 'Sessions registrades';
 $string['tcreated'] = 'Creat';
 $string['tempaddform'] = 'Afegeix un usuari temporal';
@@ -535,6 +539,7 @@ $string['tuseremail'] = 'Correu electrònic';
 $string['tusername'] = 'Nom complet';
 $string['unknowngroup'] = 'Grup desconegut';
 $string['update'] = 'Actualitza';
+$string['uploadattendance'] = 'Puja l\'assistència amb un fitxer CSV';
 $string['usedefaultsubnet'] = 'Ús per defecte';
 $string['usemessageform'] = 'o utilitzeu el següent formulari per enviar un missatge als estudiants seleccionats';
 $string['userexists'] = 'Ja hi ha un usuari real amb aquesta adreça de correu electrònic';

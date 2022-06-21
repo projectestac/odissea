@@ -44,4 +44,4 @@ $string['status'] = 'Gastzugang erlauben';
 $string['status_desc'] = 'Gastzugang erlauben';
 $string['status_help'] = 'Die Option legt fest, ob für den Kurs ein Gastzugang möglich ist, ohne sich direkt einschreiben zu müssen';
 $string['usepasswordpolicy'] = 'Kennwortregeln verwenden';
-$string['usepasswordpolicy_desc'] = 'Die Kennwortregeln gelten auch für Gastschlüssel.';
+$string['usepasswordpolicy_desc'] = 'Die Kennwortregeln gelten auch für die Gastschlüssel.';

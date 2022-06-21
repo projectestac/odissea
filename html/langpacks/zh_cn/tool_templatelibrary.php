@@ -34,6 +34,7 @@ $string['example'] = '实例';
 $string['noresults'] = '没有结果';
 $string['notemplateselected'] = '没有选择的模板';
 $string['pluginname'] = '模板库';
+$string['privacy:metadata'] = '模板库插件不存储任何个人数据。';
 $string['search'] = '搜索';
 $string['searchtemplates'] = '搜索模板';
 $string['templatehasnoexample'] = '这个模板没有实例背景，它无法在此使用。要为这个模板添加一个实例背景，插入一个Mustache说明"Example context (json):"，然后是这个模板的JSon编码的实例背景。';

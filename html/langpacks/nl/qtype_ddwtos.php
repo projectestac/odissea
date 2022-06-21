@@ -29,6 +29,7 @@ $string['addmorechoiceblanks'] = 'Blanco voor {no} meer keuzes';
 $string['answer'] = 'Antwoord';
 $string['blank'] = 'blanco';
 $string['correctansweris'] = 'Het goede antwoord is: {$a}';
+$string['errorlimitedchoice'] = 'Keuze [[{$a}]] is meer dan eens gebruikt zonder deze in te stellen op "Onbeperkt". Controleer deze vraag.';
 $string['infinite'] = 'Onbeperkt';
 $string['pleaseputananswerineachbox'] = 'Zet een antwoord in elke box';
 $string['pluginname'] = 'Slepen en neerzetten in tekst';

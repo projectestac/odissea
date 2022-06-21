@@ -47,4 +47,4 @@ $string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für ei
 $string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
 $string['privacy:preference:shuffleanswers'] = 'Ob die Antworten automatisch gemischt werden sollen.';
 $string['shuffle'] = 'Mischen';
-$string['shuffle_help'] = 'Wenn diese Option aktiviert ist, ist die Reihenfolge der Begriffe oder Aussagen (Antworten) bei jedem Versuch zufällig, sofern die Option "In Fragen zufällig mischen" in den Einstellungen des Tests ebenfalls aktiviert ist.';
+$string['shuffle_help'] = 'Wenn diese Option aktiviert ist, ist die Reihenfolge der Begriffe oder Aussagen (Antworten) bei jedem Versuch zufällig, sofern die Option "Antworten innerhalb der Fragen mischen" in den Einstellungen des Tests ebenfalls aktiviert ist. Bei einer Zuordnungsfrage sind nur die Fragen von diesem Parameter betroffen. Die Antwortmöglichkeiten werden immer gemischt.';

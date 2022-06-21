@@ -25,9 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['maximacode'] = 'Maxima-code';
+$string['nostackquestions'] = 'Deze test bevat geen STACK-vragen';
+$string['offlineanalysis'] = 'Deze code kan in Maxima gekopieerd worden voor offline analyse.';
+$string['pluginname'] = 'STACK antwoord-analyse';
+$string['questionreporting'] = 'Rapport over pogingen per vraag.';
+$string['questionreportingscore'] = 'Score';
+$string['questionreportingsummary'] = 'Invoersamenvatting';
 $string['questionreportingtotal'] = 'Totaal';
 $string['stack'] = 'STACK antwoordanalyse';
 $string['stack:componentname'] = 'STACK antwoordanalyse';
 $string['stack:view'] = 'Bekijk het STACK antwoordanalyse verslag';
 $string['stackquestionsinthisquiz'] = 'STACK vragen in deze test';
+$string['stackquestionsinthisquiz_descript'] = 'Deze pagina toont enkel STACK-vragen in de test en geeft toegang tot gegevens over pogingen voor individuele versies van deze vragen.';
 $string['variantx'] = 'Variant:';

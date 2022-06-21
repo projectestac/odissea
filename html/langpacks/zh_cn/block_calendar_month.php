@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['calendar_month:addinstance'] = '添加一个新日历版块';
 $string['calendar_month:myaddinstance'] = '在个人主页新增一个新日历版块';
 $string['pluginname'] = '日历';
+$string['privacy:metadata'] = '“日历”板块仅显示现有日历数据。';

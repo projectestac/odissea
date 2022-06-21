@@ -14,8 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-defined('MOODLE_INTERNAL') || die();
-class restore_qtype_truefalsewiris_plugin extends restore_qtype_truefalse_plugin{
+class restore_qtype_truefalsewiris_plugin extends restore_qtype_truefalse_plugin {
 
     protected function define_question_plugin_structure() {
 

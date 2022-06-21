@@ -32,9 +32,6 @@ require_once $CFG->dirroot . '/report/coursequotas/constants.php';
 
 admin_externalpage_setup(REPORT_COURSEQUOTAS_NAME, '', null, '/report/coursequotas/index.php', array('pagelayout' => REPORT_COURSEQUOTAS_REPORTSTRING));
 
-$PAGE->requires->jquery();
-$PAGE->requires->jquery_plugin('ui');
-
 // Check restricted hour
 function_exists('require_not_rush_hour') && require_not_rush_hour();
 

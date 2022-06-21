@@ -19,18 +19,6 @@
  * @subpackage backup-moodle2
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-
-defined('MOODLE_INTERNAL') || die();
-
-
-/**
- * restore plugin class that provides the necessary information
- * needed to restore one match qtype plugin
- *
- * @copyright  2010 onwards Eloy Lafuente (stronk7) {@link http://stronk7.com}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
 class restore_qtype_matchwiris_plugin extends restore_qtype_match_plugin {
 
     /**

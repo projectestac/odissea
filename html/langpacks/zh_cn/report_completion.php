@@ -25,11 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clicktomarkusercomplete'] = '单击以标记用户为已完成';
 $string['completion:view'] = '查看课程进度报告';
 $string['completiondate'] = '完成日期';
+$string['eventreportviewed'] = '已查看的用户完成情况报告';
+$string['eventuserreportviewed'] = '已查看的用户完成报告';
 $string['id'] = 'ID';
 $string['name'] = '姓名';
+$string['nocapability'] = '无法访问用户完成报告';
 $string['page-report-completion-index'] = '课程进度报告';
 $string['page-report-completion-user'] = '用户课程进度报告';
 $string['page-report-completion-x'] = '任何进度报告';
 $string['pluginname'] = '课程进度';
+$string['privacy:metadata'] = '课程完成报告仅显示存储在其他位置的数据。';

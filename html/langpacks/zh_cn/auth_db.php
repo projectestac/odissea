@@ -70,7 +70,7 @@ $string['auth_dbtable_key'] = '数据表';
 $string['auth_dbtableempty'] = '外部表为空。';
 $string['auth_dbtype'] = '数据库类型（详情请看 <a href="http://phplens.com/adodb/supported.databases.html" target="_blank">ADOdb文档</a>）';
 $string['auth_dbtype_key'] = '数据库';
-$string['auth_dbupdateerror'] = '更新外部数据库时的错误。';
+$string['auth_dbupdateerror'] = '更新外部数据库时出现错误。';
 $string['auth_dbupdateusers'] = '更新用户';
 $string['auth_dbupdateusers_description'] = '在加入新用户同时，更新现有用户。';
 $string['auth_dbupdatinguser'] = '更新用户{$a->name}，id {$a->id}';

@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['application/dash_xml'] = 'Transmissió dinàmica adaptativa per HTTP (MPEG-DASH)';
 $string['application/epub_zip'] = 'Llibre electrònic EPUB';
+$string['application/json'] = '{$a->MIMETYPE2} text';
 $string['application/msword'] = 'Document MS Word';
 $string['application/pdf'] = 'Document PDF';
 $string['application/vnd.moodle.backup'] = 'Còpia de seguretat Moodle';
@@ -46,6 +48,7 @@ $string['application/x-iwork-keynote-sffkey'] = 'Presentació de Keynote iWork';
 $string['application/x-iwork-numbers-sffnumbers'] = 'Full de càlcul de Numbers iWork';
 $string['application/x-iwork-pages-sffpages'] = 'Document de Pages iWork';
 $string['application/x-javascript'] = 'Codi font de JavaScript';
+$string['application/x-mpegURL'] = 'Transmissió en directe HTTP (HLS)';
 $string['application/x-mspublisher'] = 'Document de Publisher';
 $string['application/x-shockwave-flash'] = 'Animació de Flash';
 $string['application/xhtml_xml'] = 'Document XHTML';
@@ -60,6 +63,8 @@ $string['group:html_audio'] = 'Fitxers d\'àudio admesos nativament pels navegad
 $string['group:html_track'] = 'Fitxers de seguiment HTML';
 $string['group:html_video'] = 'Fitxers de vídeo admesos nativament pels navegadors';
 $string['group:image'] = 'Fitxers d\'imatge';
+$string['group:media_source'] = 'Transmissió de mitjans';
+$string['group:optimised_image'] = 'Fitxers d\'imatge a optimitzar, com ara insígnies';
 $string['group:presentation'] = 'Fitxers de presentació de diapositives';
 $string['group:sourcecode'] = 'Codi font';
 $string['group:spreadsheet'] = 'Fitxers de full de càlcul';

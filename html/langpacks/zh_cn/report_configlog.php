@@ -26,9 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configlog'] = '配置变化';
+$string['datefrom'] = '日期从';
+$string['dateto'] = '日期至';
 $string['plugin'] = '插件';
 $string['pluginname'] = '配置变化';
+$string['privacy:metadata'] = '配置更改插件不存储任何个人数据。';
 $string['setting'] = '设置';
 $string['timemodified'] = '日期';
+$string['user'] = '使用者';
+$string['user_help'] = '按用户名字或姓氏搜索';
+$string['usernone'] = 'CLI或安装';
+$string['value'] = '值';
+$string['value_help'] = '按配置的新值或原始值搜索';
 $string['valuenew'] = '新值';
 $string['valueold'] = '原值';

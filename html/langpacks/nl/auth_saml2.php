@@ -25,10 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowcreate'] = 'Aanmaken toestaan';
+$string['allowcreate_help'] = 'Sta toe dat nieuwe IdP-gebruikers gemaakt worden';
 $string['alterlogout'] = 'Alternatieve URL om af te melden';
 $string['alterlogout_help'] = 'De URL om een gebruiker naar toe te sturen nadat alle interne afmeldingsmechanismen gelopen hebben';
 $string['anyauth'] = 'Gelijk welk authenticatietype toestaan';
 $string['anyauth_help'] = 'Ja: SAML-login toestaan voor alle gebruikers? Nee: enkel gebruikers die saml2 als login-type hebben.';
+$string['anyauthotherdisabled'] = 'Je bent aangemeld als \'{$a->username}\' maar je authenticatietype \'{$a->auth}\' is uitgeschakeld.';
+$string['assertionsconsumerservices'] = 'Assertion consumer services';
+$string['assertionsconsumerservices_help'] = 'Lijst met verbindingen die de SP moet ondersteunen';
 $string['attemptsignout'] = 'Probeer Idp Afmelden';
 $string['attemptsignout_help'] = 'Dit zal proberen mte de IDP te communiceren en een vraag om afmelden te versturen';
 $string['attrsimple'] = 'Vereenvoudig attributen';
@@ -38,12 +43,20 @@ $string['auth_fieldlock_expl'] = '<p><b>Blokkeer waarde</b> Indien ingeschakeld 
 $string['auth_fieldlockfield'] = 'Blokkeer waarde ({$a})';
 $string['auth_fieldlocks'] = 'Blokkeer gebruikersvelden';
 $string['auth_fieldmapping'] = 'Gegevenskoppeling ({$a})';
-$string['auth_saml2blockredirectdescription'] = 'Redirect of toon bericht aan SAML2-logins gebaseerd op geconfigureerde groepsbeperkingen.';
-$string['auth_saml2description'] = 'Authenticeer met een SAML2 Idp';
+$string['auth_saml2blockredirectdescription'] = 'Redirect of toon bericht aan SAML2-logins gebaseerd op geconfigureerde groepsbeperkingen';
+$string['auth_saml2description'] = 'Authenticeer met een SAML2 Identity provideder (IdP)';
 $string['auth_updatelocalfield'] = 'Lokaal updaten ({$a})';
 $string['auth_updateremotefield'] = 'Extern updaten ({$a})';
+$string['authncontext'] = 'AuthnContext';
+$string['authncontext_help'] = 'Staat verhoging van assertions toe. Laat leeg tenzij dit nodig is';
 $string['autocreate'] = 'Maak gebruikers automatisch aan';
-$string['autocreate_help'] = 'Als gebruikers wel bestaan in de Idp, maar niet in Moodle, maak dan een nieuwe Moodle-account.';
+$string['autocreate_help'] = 'Sta toe dat nieuwe Moodlegebruikers aangemaakt worden';
+$string['autologin'] = 'Auto-login';
+$string['autologin_help'] = 'Op pagina\'s die gasttoegang toestaan zonder aanmelding de gebruiker automatisch aanmelden in Moodle met een echte gebruikersaccount als ze aangemeld zijn in de IdP (met passieve authenticatie).';
+$string['autologinbycookie'] = 'Controleer of de opgegeven cookie bestaat of wijzigt';
+$string['autologinbysession'] = 'Controleer één keer per sessie';
+$string['autologincookie'] = 'Auto-login cookie';
+$string['autologincookie_help'] = 'Naam van de cookie die gebruikt wordt om auto-login te proberen (enkel relevant als de cookie-optie hierboven is ingeschakeld.';
 $string['availableidps'] = 'Selecteer beschikbare IdP\'s';
 $string['availableidps_help'] = 'Als een IdP metadata xml meerdere IdP\'s bevat, dan moet je selecteren van welke IdP\'s gebruikers mogen inloggen.';
 $string['blockredirectheading'] = 'Account blokkeer-acties';
@@ -56,7 +69,14 @@ $string['certificatedetailshelp'] = '<h1>Inhoud automatisch gegenereerd SAML2 ce
 $string['certificatelock'] = 'Blokkeer certificaat';
 $string['certificatelock_help'] = 'Het blokkeren van het certificaat verhindert dat het wordt overschreven eens het gecreëerd is.';
 $string['certificatelock_locked'] = 'Het certificaat is geblokkeerd';
-$string['certificatelock_warning'] = 'Waarschuwing: je gaat de certificaten blokkeren. Ben je zeker dat je dit wil doen?';
+$string['certificatelock_lockedmessage'] = 'De certificaten zijn nu geblokkeerd.';
+$string['certificatelock_regenerate'] = 'Certificaten worden niet opnieuw gegenereerd want ze zijn geblokkeerd!';
+$string['certificatelock_unlock'] = 'Certificaten deblokkeren';
+$string['certificatelock_warning'] = 'Waarschuwing: je gaat de certificaten blokkeren. Ben je zeker dat je dit wil doen?<br>De certificaten zijn nu niet geblokkeerd';
+$string['checkcertificateexpired'] = 'SAML-certificaat is {$a} geleden verlopen';
+$string['checkcertificateexpiry'] = 'SAML-certificaat verloop';
+$string['checkcertificateok'] = 'SAML-certificaat zal verlopen na {$a}';
+$string['checkcertificatewarn'] = 'SAML-certificaat zal verlopen na {$a}';
 $string['commonname'] = 'Common Name';
 $string['countryname'] = 'Land';
 $string['debug'] = 'Fouten opsporen';
@@ -67,6 +87,8 @@ $string['duallogin_help'] = '<p>Indien ingeschakeld kunnen gebruikers zowel de k
 <p>Indien ingeschakeld kunnen externe pagina\'s diep linken in Moodle door gebruik te maken van saml, vb /course/view.php?id=45&saml=on</p>';
 $string['emailtaken'] = 'Kan geen nieuwe account maken want  het e-mailadres {$a} is al geregistreerd';
 $string['emailtakenupdate'] = 'Je e-mailadres is niet geüpdatet want {$a} is al geregistreerd';
+$string['error'] = 'Login fout';
+$string['errorinvalidautologin'] = 'Ongeldig autologin-verzoek';
 $string['errorparsingxml'] = 'Fout bij het verwerken van de XML: {$a}';
 $string['exception'] = 'SAML2 uitzondering: {$a}';
 $string['expirydays'] = 'Vervaldag';
@@ -81,6 +103,15 @@ $string['flagredirecturl_help'] = '<p>De URL waarnaar een gebruiker gestuurd wor
 <p>(Wordt enkel getoond wanneer \'Antwoordtype\' is ingesteld op \'Redirect naar externe URL\').</p>';
 $string['flagresponsetype'] = 'Antwoordtype account blokkeren';
 $string['flagresponsetype_help'] = 'Als de toegang geblokkeerd is op basis van geconfigureerde groepsbeperkingen, wat moet Moodle dan doen?';
+$string['grouprules'] = 'Groep regels';
+$string['grouprules_help'] = '<p>Een lijst met regels waarmee toegang gecontroleerd kan worden op basis van de waarde van het group attribute.</p>
+<p>Elke regel moet één regel hebben in het formaat: {allow or deny} {groups attribute}={value}.</p>
+<p>Hoger in de lijst wordt eerst toegepast.</p>
+Voorbeeld: <br/>
+allow admins=yes<br>
+deny admins=no<br>
+allow examrole=proctor<br>
+deny library=overdue<br>';
 $string['idpattr'] = 'Koppel IdP';
 $string['idpattr_help'] = 'Welk IdP-attribuut moet gekoppeld worden met een Moodle gebruikersveld?';
 $string['idpmetadata'] = 'Idp metadata XML of publieke xml URL';
@@ -101,12 +132,20 @@ $string['logdir_help'] = 'De log map waarnaar SSPHP zal schrijven. Het bestand z
 $string['logdirdefault'] = '/tmp/';
 $string['logtofile'] = 'Logbestand inschakelen';
 $string['logtofile_help'] = 'Dit inschakelen zal de SSPHP logs naar een bestand in de logmap sturen';
-$string['manageidpsheading'] = 'Beheer beschikbare IdP\'s';
+$string['manageidpsheading'] = 'Beheer beschikbare Identity Providers (IdP\'s)';
 $string['mdlattr'] = 'Koppelen van Moodle';
 $string['mdlattr_help'] = 'Met welk Moodle gebruikersveld moet het IdP-attribuut gekoppeld worden?';
 $string['metadatafetchfailed'] = 'Ophalen van metadata mislukt: {$a}';
 $string['metadatafetchfailedstatus'] = 'Ophalen van metadata mislukt: statuscode {$a}';
 $string['metadatafetchfailedunknown'] = 'Ophalen van metadata mislukt: onbekende cURL-fout';
+$string['multiidp:label:active'] = 'Actief';
+$string['multiidp:label:admin'] = 'Enkel voor beheerders';
+$string['multiidp:label:admin_help'] = 'Alle gebruikers die via deze IdP aanmelden zullen automatisch beheerder gemaakt worden';
+$string['multiidp:label:alias'] = 'Alias';
+$string['multiidp:label:defaultidp'] = 'Standaard IdP';
+$string['multiidp:label:displayname'] = 'Getoonde naam';
+$string['multiidp:label:whitelist'] = 'Doorgestuurde IP adressen';
+$string['multiidp:label:whitelist_help'] = 'Indien ingesteld zullen gebruikers naar deze IdP doorgestuurd worden. Opmaak: xxx.xxx.xxx.xxx/bitmask. Zet meerdere subnets op nieuwe lijnen.';
 $string['multiidpbuttons'] = 'Knoppen met icoontjes';
 $string['multiidpdisplay'] = 'Type tonen van meerdere IdP\'s';
 $string['multiidpdisplay_help'] = 'Als een IdP metadata xml meerdere IdP\'s bevat, hoe wordt elke IdP dan getoond?';
@@ -115,7 +154,6 @@ $string['multiidpinfo'] = '<ul>
 <li>Een IdP kan alleen gebruikt worden als die actief staat</li>
 <li>Wanneer duaal aanmelden is ingeschakeld, zullen alle actieve IdP\'s op de login-pagina getoond worden</li>
 <li>Wanneer een IdP als standaard is ingesteld en Duaal aanmelden is niet ingeschakeld, dan zal deze IdP automatisch gebruikt worden behalve als  ?multiidp=on of saml=off wordt doorgegeven aan /login/index.php</li>
-<li>Wanneer een IdP als beheerder is ingesteld zullen alle gebruikers die via deze IdP aanmelden automatisch een beheerder zijn</li>
 <li>Een IdP kan een alias gegeven worden wanneer je naar /login/index.php?idpalias={alias} gaat, kan de alias van de te gebruiken IdP rechtstreeks doorgegeven worden.</li>
 </ul>';
 $string['nameidasattrib'] = 'Toon NameID als attribuut';
@@ -132,11 +170,17 @@ $string['organizationname'] = 'Organisatie';
 $string['passivemode'] = 'Passieve modus';
 $string['phone1'] = 'Telefoonnummer';
 $string['phone2'] = 'Mobiel telefoonnummer';
+$string['plugindisabled'] = 'SAML2 authenticatieplugin is uitgeschakeld';
 $string['pluginname'] = 'SAML2';
 $string['privacy:no_data_reason'] = 'De SAML2 authenticatie-plugin bewaart geen persoonlijke gegevens.';
 $string['privatekeypass'] = 'Wachtwoord private certificaatsleutel';
 $string['privatekeypass_help'] = 'Dit wordt gebruikt om het lokale Moodle-certificaat te tekenen. Door dit te wijzigen vervalt het huidige certificaat.';
 $string['regenerate_submit'] = 'Opnieuw genereren';
+$string['regenerateheader'] = 'Private sleutel en certificaat opnieuw genereren';
+$string['regenerateheading'] = 'Private sleutel en certificaat opnieuw genereren';
+$string['regeneratepath'] = 'Certificaatspad: {$a}';
+$string['regeneratesuccess'] = 'Private sleutel en certificaat met succes opnieuw gegenereerd';
+$string['regeneratewarning'] = 'Waarschuwing! Het opnieuw genereren van een certificaat zal het huidige certificaat overschrijven en het zou kunnen dat je dit moet aanpassen op je IdP';
 $string['rememberidp'] = 'Aanmeldservice onthouden';
 $string['required'] = 'Dit veld is vereist';
 $string['requireint'] = 'Dit veld is vereist en moet een positief geheel getal zijn';
@@ -149,6 +193,9 @@ $string['showidplink'] = 'Toon IdP-link';
 $string['showidplink_help'] = 'Dit toont een link naar de IDP wanneer de site geconfigureerd is.';
 $string['signaturealgorithm'] = 'Ondertekeningsalgoritme';
 $string['signaturealgorithm_help'] = 'Dit is het algoritme dat wordt gebruikt om SAML-aanvragen te ondertekenen. Waarschuwing: het SH1-algoritme wordt enkel voor terugwaartse compatibiliteit aangeboden. Gebruik het enkel wanneer het echt niet anders kan. Aangeraden wordt om minstens SHA256 te gebruiken.';
+$string['source'] = 'Bron: {$a}';
+$string['spentityid'] = 'Entity ID';
+$string['spentityid_help'] = 'Overschrijf de entity ID van de service provider. Meestal leeg laten en er zal een goede standaardwaarde gebruikt worden.';
 $string['spmetadata'] = 'SP metadata';
 $string['spmetadata_help'] = '<a href=\'{$a}\'>Bekijk de  Service Provider Metadata</a> | <a href=\'{$a}?download=1\'>Download SP Metadata</a>
 <p>Je moet dit waarschijnlijk aan de beheerder van je Idp geven om je op de toegelaten lijst te zetten.</p>';
@@ -156,18 +203,27 @@ $string['spmetadatasign'] = 'SP Metadata ondertekening';
 $string['spmetadatasign_help'] = 'Onderteken de SP Metadata';
 $string['sspversion'] = 'SimpleSAMLphp-versie';
 $string['stateorprovincename'] = 'Staat of provincie';
+$string['status'] = 'Status';
 $string['suspendeduser'] = 'Je bent succesvol aangemeld als \'{$a}\', maar je account is geschorst in Moodle.';
 $string['taskmetadatarefresh'] = 'Metadata ververs-taak';
 $string['test_auth_button_login'] = 'IdP login';
 $string['test_auth_button_logout'] = 'IdP afmelden';
 $string['test_auth_str'] = 'Test isAuthenticated en login';
+$string['test_noticetestrequirements'] = 'Om de test te gebruiken, moet de plugin geconfigureerd zij, ingeschakeld en foutopsporing moet ingeschakeld zijn in de plugin-instellingen.';
 $string['test_passive_str'] = 'Test gebruik isPassive';
-$string['tolower'] = 'Kleine letters';
-$string['tolower_help'] = 'Kleine letters toepassen op Idp-attribuut voor het koppelen?';
+$string['tolower'] = 'Hoofdlettergevoelig';
+$string['tolower:caseinsensitive'] = 'Niet hoofdlettergevoelig';
+$string['tolower:exact'] = 'Exact';
+$string['tolower:lowercase'] = 'Kleine letters';
+$string['tolower_help'] = '<p>Exact: hoofdlettergevoelig (standaard).</p>
+<p>Kleine letters: het IdP attribuut wordt in kleine letters omgezet voor het koppelen.</p>
+<p>Niet hoofdlettergevoelig: niet hoofdlettergevoelig bij het koppelen.</p>';
 $string['unlocked'] = 'Niet geblokkeerd';
 $string['unlockedifempty'] = 'Niet geblokkeerd indien leeg';
 $string['update_never'] = 'Nooit';
 $string['update_oncreate'] = 'Bij aanmaken';
 $string['update_onlogin'] = 'Bij elke login';
 $string['update_onupdate'] = 'Bij aanpassen';
+$string['wantassertionssigned'] = 'Wil getekende assertions';
+$string['wantassertionssigned_help'] = 'Of assertions van deze SP getekend moeten worden';
 $string['wrongauth'] = 'Login als  \'{$a}\' is gelukt, maar je hebt geen rechten om deze Moodle-site te gebruiken.';

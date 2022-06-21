@@ -33,7 +33,7 @@ $string['auth_shib_changepasswordurl'] = '更改密码 URL';
 $string['auth_shib_contact_administrator'] = '如果你与所提到的组织没有关系，但是你需要访问此服务器上的一个课程，那么请联系<a href="mailto:{$a}">Moodle管理员</a>。';
 $string['auth_shib_convert_data'] = '数据修改 API';
 $string['auth_shib_convert_data_description'] = '您可以是用此 API 将修改过的数据提交给 Shibboleth。要了解细节，请参考<a href="../auth/shibboleth/README.txt" target="_blank">README</a>。';
-$string['auth_shib_convert_data_filepath_warning'] = '不能将位于当前站点数据目录（$CFG->dataroot）中的文件用作数据修改API。';
+$string['auth_shib_convert_data_filepath_warning'] = '你不能使用位于当前网站数据目录（$CFG->dataroot）内的文件作为数据修改API。';
 $string['auth_shib_convert_data_warning'] = '此文件不存在或无法被 Web 服务器读取！';
 $string['auth_shib_idp_list'] = '身份提供者';
 $string['auth_shib_idp_list_description'] = '提供身份提供者的 entityID 列表，供用户在登录页面选择。<br />每行都必须是一个半角逗号分隔的二元组，一个是 IdP（在Shibboleth 元数据文件中）的 entityID，另一个是显示在下拉列表中的 IdP 的名字。<br />如果您的 Moodle 是多联邦配置的一部分，那么会使用可选的第三个参数，那是 Shibboleth 会话起始器的位置。';

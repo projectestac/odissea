@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['invaliddata'] = 'Nicht genug Daten';
-$string['participants'] = 'Teilnehmerzahl';
+$string['participants'] = 'Teilnehmendenzahl';
 $string['percent'] = 'Mindestprozent (%) notwendig';
 $string['pluginname'] = 'Bilddarstellung';
 $string['privacy:metadata'] = 'Der grafische Bericht zeigt nur Daten an, die an anderer Stelle gespeichert werden.';

@@ -61,7 +61,7 @@ $string['assignmentoptions'] = 'Opzioni di assegnazione';
 $string['assignrole'] = 'Assegna ruolo';
 $string['assignrolenameincontext'] = 'Assegna ruolo \'{$a->role}\' in {$a->context}';
 $string['assignroles'] = 'Ruoli';
-$string['assignroles_help'] = 'Assegnando un ruolo ad un utente in uno dato contesto, l\'utente riceverà tutti i privilegi previsti dal ruolo nel contesto di assegnazione ed in tutti i contesti sottostanti.
+$string['assignroles_help'] = 'Assegnando un ruolo ad un utente in un dato contesto, l\'utente riceverà tutti i privilegi previsti dal ruolo nel contesto di assegnazione ed in tutti i contesti sottostanti.
 Ad esempio, assegnando ad un utente il ruolo studente in un corso, l\'utente avrà tale ruolo nel corso, in tutti  blocchi ed in tutte le attività appartenenti al medesimo corso.';
 $string['assignrolesin'] = 'Assegna ruoli nel contesto \'{$a}\'';
 $string['assignrolesrelativetothisuser'] = 'Assegna ruoli relativi a questo utente';

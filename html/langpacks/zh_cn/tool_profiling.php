@@ -43,6 +43,7 @@ $string['lastrunof'] = '{$a} 最后一次的运行摘要';
 $string['markreferencerun'] = '标记为 运行/评论';
 $string['memory'] = '内存使用';
 $string['pluginname'] = 'PHP 性能检测模块运行';
+$string['privacy:metadata'] = '分析运行插件不存储任何个人数据。';
 $string['profilingfocusscript'] = '监控运行的 PHP 性能检测模块脚本: {$a}';
 $string['profilingruns'] = 'PHP 性能检测模块运行';
 $string['profilingrunsfor'] = '为 {$a} 运行 PHP 性能检测模块';

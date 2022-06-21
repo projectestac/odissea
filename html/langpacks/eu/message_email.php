@@ -47,4 +47,5 @@ $string['privacy:metadata:replyto'] = 'Erantzuteko helbide elektronikoa.';
 $string['privacy:metadata:replytoname'] = 'Erantzuteko jasotzailearen izena.';
 $string['privacy:metadata:subject'] = 'Mezuaren gaia duen lerroa.';
 $string['privacy:metadata:userfrom'] = 'Mezua bidaltzen duen erabiltzailea.';
+$string['privacy:preference:email'] = 'Jakinarazpenetarako hobetsitako helbide elektronikoa';
 $string['tasksendemail'] = 'Laburpen-mezuen bidalketak';

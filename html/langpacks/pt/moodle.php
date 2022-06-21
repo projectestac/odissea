@@ -313,13 +313,13 @@ $string['contentexport_viewfilename'] = 'Visualizar o ficheiro "{$a}"';
 $string['continue'] = 'Continuar';
 $string['continuetocourse'] = 'Carregue aqui para entrar na sua disciplina';
 $string['convertingwikitomarkdown'] = 'A converter Wiki para Markdown';
-$string['cookiesenabled'] = 'Tem que ativar o suporte para cookies no seu navegador';
+$string['cookiesenabled'] = 'Tem de ativar o suporte para cookies no seu navegador';
 $string['cookiesenabled_help'] = 'Neste site são utilizados dois cookies:
 
 O essencial é o cookie da sessão, normalmente chamado de MoodleSession. Deve permitir este cookie no seu navegador para manter a sua autenticação quando navega de página para página. Quando sair ou fechar o navegador este cookie é eliminado (no seu navegador e no servidor).
 
 O outro cookie é puramente por conveniência, geralmente chamado de MOODLEID ou similar. Apenas guarda o seu nome de utilizador no navegador. Isto significa que quando voltar a este site o nome de utilizador na página de autenticação já estará preenchido. É seguro recusar este cookie - apenas terá que escrever o seu nome de utilizador cada vez que acede à plataforma.';
-$string['cookiesenabledonlysession'] = 'Tem que ativar o suporte para cookies no seu navegador';
+$string['cookiesenabledonlysession'] = 'Tem de ativar o suporte para cookies no seu navegador';
 $string['cookiesenabledonlysession_help'] = 'Este site usa um cookie de sessão, geralmente chamado MoodleSession. Tem de permitir este cookie no seu navegador para permitir a continuidade e para que permaneça autenticado ao navegar pelo site. Quando sai ou fecha o navegador, o cookie é destruído (no seu navegador e no servidor).';
 $string['cookiesnotenabled'] = 'Infelizmente o seu navegador tem os cookies desativados';
 $string['copy'] = 'Duplicar';
@@ -688,7 +688,7 @@ $string['emailexists'] = 'Este e-mail já foi registado.';
 $string['emailexistshintlink'] = 'Recuperar nome de utilizador ou senha';
 $string['emailexistssignuphint'] = 'Talvez já tenha criado uma conta no passado? {$a}';
 $string['emailformat'] = 'Formato do e-mail';
-$string['emailmustbereal'] = '<b>Atenção</b>: O seu e-mail tem que ser verdadeiro';
+$string['emailmustbereal'] = '<b>Atenção</b>: O seu e-mail tem de ser verdadeiro';
 $string['emailnotallowed'] = 'Não são permitidos endereços de e-mail nestes domínios ({$a})';
 $string['emailnotfound'] = 'O e-mail não foi encontrado na base de dados';
 $string['emailonlyallowed'] = 'Este e-mail não está entre os permitidos ({$a})';
@@ -776,7 +776,7 @@ $string['emptydragdropregion'] = 'região vazia';
 $string['enable'] = 'Ativar';
 $string['encryptedcode'] = 'Código encriptado';
 $string['enddate'] = 'Data de fim';
-$string['enddate_help'] = 'A data de fim é usada para determinar se a disciplina deve, ou não, ser incluída na lista de disciplinas do utilizador. Quando a data de fim é ultrapassada, a disciplina deixa de aparecer na lista de navegação e passa a estar disponível apenas no Histórico na visão global do Painel do utilizador. A data de fim da disciplina também pode ser usada em relatórios personalizados. Os utilizadores podem continuar a aceder à disciplina após a data de fim, ou seja, esta data não restringe o acesso.';
+$string['enddate_help'] = 'A data de fim determina se a disciplina é, ou não, listada no Histórico da visão global das disciplinas. A data de fim da disciplina também pode ser usada em relatórios personalizados. Tenha em atenção que os utilizadores podem continuar a aceder à disciplina após a data de fim, ou seja, esta data não restringe o acesso.';
 $string['english'] = 'Inglês';
 $string['enrolmentmethods'] = 'Métodos de inscrição';
 $string['entercourse'] = 'Clique para aceder à disciplina';
@@ -788,7 +788,7 @@ $string['error'] = 'Erro';
 $string['errorcreatingactivity'] = 'Não é possível criar a instância da atividade \'{$a}\'';
 $string['errorfiletoobig'] = 'O tamanho do ficheiro é maior do que o limite permitido ({$a} bytes)';
 $string['errornouploadrepo'] = 'Não existe repositório de carregamento para este site';
-$string['errorwhenconfirming'] = 'A sua conta ainda não está confirmada porque ocorreu um erro. Se clicou numa hiperligação de uma mensagem para chegar aqui, assegure-se de que não havia um parágrafo ou retorno de linha na linha da mensagem. Tem que usar a opção cortar-colar para reconstruir o endereço completo.';
+$string['errorwhenconfirming'] = 'A sua conta ainda não está confirmada porque ocorreu um erro. Se clicou numa hiperligação de uma mensagem para chegar aqui, assegure-se de que não havia um parágrafo ou retorno de linha na linha da mensagem. Tem de usar a opção cortar-colar para reconstruir o endereço completo.';
 $string['eventcommentcreated'] = 'Comentário criado';
 $string['eventcommentdeleted'] = 'Comentário apagado';
 $string['eventcommentsviewed'] = 'Comentários visualizados';
@@ -1168,7 +1168,7 @@ $string['loggedinnot'] = 'Utilizador não autenticado';
 $string['login'] = 'Entrar';
 $string['login_failure_logs'] = 'Relatórios de tentativas de autenticação sem sucesso';
 $string['loginactivity'] = 'Atividade de autenticação';
-$string['loginagain'] = 'Autentique-se novamente';
+$string['loginagain'] = 'Autenticar-se novamente';
 $string['loginalready'] = 'Já está autenticado como';
 $string['loginas'] = 'Entrar como';
 $string['loginaspasswordexplain'] = '<p>Para poder utilizar esta opção terá que inserir a senha especial para "Entrar como".<br />Se não souber essa senha, contacte o  administrador do servidor.</p>';
@@ -1176,7 +1176,7 @@ $string['loginguest'] = 'Entrar como visitante';
 $string['loginsite'] = 'Entrar no site';
 $string['loginsteps'] = 'Para ter acesso completo a este site, primeiro tem de criar uma conta de utilizador.';
 $string['loginstepsnone'] = '<p>Viva!</p>
-<p>Para ter acesso total às disciplinas, tem que criar a sua própria conta de utilizador.</p>
+<p>Para ter acesso total às disciplinas, tem de criar a sua própria conta de utilizador.</p>
 <p>Só precisa de escolher um nome de utilizador e uma senha e usá-los no formulário desta página!</p>
 <p>Se o nome de utilizador pretendido já foi escolhido por alguém, deverá tentar com um nome diferente.</p>';
 $string['loginto'] = 'Entrar em {$a}';
@@ -1261,7 +1261,7 @@ $string['mins'] = 'minutos';
 $string['minute'] = 'minuto';
 $string['minutes'] = 'minutos';
 $string['miscellaneous'] = 'Diversos';
-$string['missingcategory'] = 'Tem que escolher uma categoria';
+$string['missingcategory'] = 'Tem de escolher uma categoria';
 $string['missingdescription'] = 'Falta a descrição';
 $string['missingemail'] = 'Falta o endereço de e-mail';
 $string['missingfirstname'] = 'Falta o nome';
@@ -1278,9 +1278,9 @@ $string['missingshortsitename'] = 'Falta o nome curto do site';
 $string['missingsitedescription'] = 'Falta a descrição do site';
 $string['missingsitename'] = 'Falta o nome do site';
 $string['missingstrings'] = 'Detetar variáveis que faltam';
-$string['missingstudent'] = 'Tem que escolher algo';
+$string['missingstudent'] = 'Tem de escolher algo';
 $string['missingsummary'] = 'Falta o sumário';
-$string['missingteacher'] = 'Tem que escolher algo';
+$string['missingteacher'] = 'Tem de escolher algo';
 $string['missingurl'] = 'Falta o URL';
 $string['missingusername'] = 'Falta o nome de utilizador';
 $string['moddoesnotsupporttype'] = 'A atividade {$a->modname} não suporta carregamentos do tipo {$a->type}';
@@ -1539,7 +1539,7 @@ $string['passwordconfirmchange'] = 'Confirme alteração de senha';
 $string['passwordextlink'] = 'O seguinte apontador permite-lhe substituir a sua senha esquecida. Este apontador conduz para o site Moodle que está utilizar.';
 $string['passwordforgotten'] = 'Senha esquecida';
 $string['passwordforgotteninstructions'] = 'Primeiro teremos que identificar os seus dados na base de dados. Por favor, diga-nos <strong>um dos dois dados seguintes</strong> no campo respetivo: o seu nome de utilizador no site Moodle ou o e-mail com que está registado. Não tem de indicar as duas informações.';
-$string['passwordforgotteninstructions2'] = 'Para redefinir a sua senha, insira o seu nome de utilizador ou endereço de e-mail. Se um deles for encontrado na base de dados, será enviada uma mensagem para o seu endereço de e-mail com instruções para obter acesso novamente.';
+$string['passwordforgotteninstructions2'] = 'Para redefinir a sua senha, indique o seu nome de utilizador ou o endereço de e-mail. Se qualquer um deles for encontrado na base de dados, será enviada uma mensagem para o seu endereço de e-mail com instruções para obter acesso novamente.';
 $string['passwordnohelp'] = 'Não é possível ajudar a recuperar a sua senha. Por favor, contacte o administrador do site Moodle.';
 $string['passwordpolicynomatch'] = 'A sua senha atual já não cumpre a política de senhas definida.
     {$a}';

@@ -32,6 +32,7 @@ $string['addarule'] = 'Add a rule';
 $string['addinstructions'] = 'Add more information';
 $string['additionalresources'] = 'Additional resources';
 $string['addoninstallationerror'] = 'We are detecting an issue with the add-on (local_xp), it does not seem to be installed properly. An administrator should finalise its installation.';
+$string['addonnotactivated'] = 'The addon is not activated.';
 $string['addrulesformhelp'] = 'The last column defines the amount of experience points gained when the criteria is met.';
 $string['admindefaultrulesintro'] = 'The following rules will be used as default for courses in which the block is added.';
 $string['admindefaultsettingsintro'] = 'The settings below will be used as defaults when the block is newly added to a course. Some settings can be locked,  in which case their value is strictly enforced in all instances of the plugin.';
@@ -41,6 +42,7 @@ $string['anonymity_help'] = 'This setting controls whether participants can see 
 $string['awardaxpwhen'] = '<strong>{$a}</strong> points are earned when:';
 $string['basexp'] = 'Algorithm base';
 $string['blockappearance'] = 'Block appearance';
+$string['blockappearancemovedtopluginsettings'] = 'The block appearance settings were moved to the plugin\'s settings page.';
 $string['cachedef_filters'] = 'Level filters';
 $string['cachedef_ruleevent_eventslist'] = 'List of some events';
 $string['cannotshowblockconfig'] = 'I would usually display the appearance settings here, but I could not find your block. To change the block\'s appearance, head back [here]({$a}) (or where you added the block), turn editing mode on, and follow the "Configure" option in the block\'s dropdown. If you cannot find the block, add it to your course again.';
@@ -77,7 +79,7 @@ $string['deletecondition'] = 'Delete condition';
 $string['deleterule'] = 'Delete rule';
 $string['description'] = 'Description';
 $string['difference'] = 'Diff.';
-$string['discoverlevelupplus'] = 'Discover Level up! Plus';
+$string['discoverlevelupplus'] = 'Discover Level Up XP+';
 $string['dismissnotice'] = 'Dismiss notice';
 $string['displayeveryone'] = 'Display everyone';
 $string['displaynneighbours'] = 'Display {$a} neighbours';
@@ -103,8 +105,8 @@ $string['enablexpgain_help'] = 'When set to \'No\', nobody will earn points in t
 
 Please note that this can also be controlled more granularly using the capability _block/xp:earnxp_.';
 $string['entersearchterm'] = 'Enter a search term';
-$string['errorcontextcoursemismatchforwholesite'] = 'The URL of this <em>Level up!</em> page does not match the current plugin configuration. Your current configuration declares <em>Level up!</em> to be used \'For the whole site\', however this page expected it to be used \'Per course\'. Please <a href="{$a->nexturl}">click here</a> to navigate to the right page. Search for the admin setting \'block_xp_context\' if you wish to change your configuration.';
-$string['errorcontextcoursemismatchpercourse'] = 'The URL of this <em>Level up!</em> page does not match the current plugin configuration. Your current configuration declares <em>Level up!</em> to be used \'Per course\', but this page expects it to be used \'For the whole site\'. It most likely originates from a <em>block</em> that was added to the dashboard or front page while in a different configuration. You should remove the block from the latter pages, and only use the block from within individual courses.';
+$string['errorcontextcoursemismatchforwholesite'] = 'The URL of this <em>Level Up XP</em> page does not match the current plugin configuration. Your current configuration declares <em>Level Up XP</em> to be used \'For the whole site\', however this page expected it to be used \'Per course\'. Please <a href="{$a->nexturl}">click here</a> to navigate to the right page. Search for the admin setting \'block_xp_context\' if you wish to change your configuration.';
+$string['errorcontextcoursemismatchpercourse'] = 'The URL of this <em>Level Up XP</em> page does not match the current plugin configuration. Your current configuration declares <em>Level Up XP</em> to be used \'Per course\', but this page expects it to be used \'For the whole site\'. It most likely originates from a <em>block</em> that was added to the dashboard or front page while in a different configuration. You should remove the block from the latter pages, and only use the block from within individual courses.';
 $string['errorformvalues'] = 'There are some issues in the form values, please fix them.';
 $string['errorlevelsincorrect'] = 'The minimum number of levels is 2';
 $string['errornotalllevelsbadgesprovided'] = 'Not all the level badges have been provided. Missing: {$a}';
@@ -159,7 +161,7 @@ $string['levelname_help'] = 'A short name to display instead of the default _Lev
 $string['levels'] = 'Levels';
 $string['levelswillbereset'] = 'Warning! Saving this form will recalculate the levels of everyone!';
 $string['levelup'] = 'Level up!';
-$string['levelupplus'] = 'Level up! Plus';
+$string['levelupplus'] = 'Level Up XP+';
 $string['levelx'] = 'Level #{$a}';
 $string['likenotice'] = '<strong>Do you like the plugin?</strong> Please take a moment to <a href="{$a->moodleorg}" target="_blank">add it to your favourites</a> on Moodle.org and <a href="{$a->github}" target="_blank">star it on GitHub</a>.';
 $string['limitparticipants'] = 'Limit participants';
@@ -175,8 +177,10 @@ $string['name'] = 'Name';
 $string['navinfos'] = 'Info';
 $string['navladder'] = 'Ladder';
 $string['navlevels'] = 'Levels';
+$string['navlevelssetup'] = 'Setup';
 $string['navlog'] = 'Log';
-$string['navpromo'] = 'Plus';
+$string['navpoints'] = 'Points';
+$string['navpromo'] = 'XP+';
 $string['navreport'] = 'Report';
 $string['navrules'] = 'Rules';
 $string['navsettings'] = 'Settings';
@@ -185,14 +189,15 @@ $string['nodescription'] = 'No description';
 $string['nologsrecordedyet'] = 'Logs have not been recorded yet.';
 $string['noname'] = 'No name';
 $string['notesomesettingslocked'] = 'Note that some settings may not be editable when they have been locked by an administrator.';
+$string['occasionally'] = 'Occasionally';
 $string['participant'] = 'Participant';
 $string['participatetolevelup'] = 'Participate in the course to gain experience points and level up!';
 $string['perpagecolon'] = 'Per page:';
 $string['pickaconditiontype'] = 'Pick a condition type';
-$string['pluginname'] = 'Level up!';
+$string['pluginname'] = 'Level Up XP';
 $string['pluginsoutofsync'] = '__The plugins are out of sync!__
 
-This means that you have upgraded _Level up!_ but not _Level up! Plus_. While we do our best to try and prevent any issues, some features may no longer function properly, including in _Level up!_ itself. We recommend that you upgrade _Level up! Plus_ to its latest release. [Read more]({$a->url})';
+This means that you have upgraded _Level Up XP_ but not _Level Up XP+_. While we do our best to try and prevent any issues, some features may no longer function properly, including in _Level Up XP_ itself. We recommend that you upgrade _Level Up XP+_ to its latest release. [Read more]({$a->url})';
 $string['pointsintimelinker'] = 'per';
 $string['pointsrequired'] = 'Points required';
 $string['privacy:metadata:log'] = 'Stores a log of events';
@@ -214,15 +219,15 @@ $string['privacy:path:level'] = 'Level';
 $string['privacy:path:logs'] = 'Logs';
 $string['progress'] = 'Progress';
 $string['progressbar'] = 'Progress bar';
-$string['promocheatguard'] = 'This cheat guard is not designed to cover long time frames. Please consider upgrading to <em>Level up! Plus</em> to unlock greater time frames and other features. <a href="{$a->url}">Read more here</a>.';
+$string['promocheatguard'] = 'This cheat guard is not designed to cover long time frames. Please consider upgrading to <em>Level Up XP+</em> to unlock greater time frames and other features. <a href="{$a->url}">Read more here</a>.';
 $string['promocontactintro'] = 'Contact us for more information. We don\'t bite and we reply quickly!';
 $string['promocontactus'] = 'Get in touch';
 $string['promoemailusat'] = 'E-mail us at _levelup@branchup.tech_.';
 $string['promoerrorsendingemail'] = 'Ouch! We could not send the message... please e-mail us directly at: {$a}. Thanks!';
 $string['promoifpreferemailusat'] = 'Psst! If you prefer, e-mail us directly at _{$a}_.';
-$string['promointro'] = 'The add-on for _Level up!_ with features that can encourage learners to achieve their full potential!';
-$string['promointroinstalled'] = 'The add-on _Level up! Plus_ is installed on your system and all of its features have been enabled.';
-$string['promorulesdidyouknow'] = 'Did you know that with <em>Level up! Plus</em> students can receive points for <em>completing courses</em> and <em>activities</em>, or even receive points according to their <em>grades</em>? <a href="{$a->url}">Discover more here</a>.';
+$string['promointro'] = 'Become the game master, and unleash Level Up to its full potential. Unlock additional features with Level Up XP+!';
+$string['promointroinstalled'] = 'The add-on _Level Up XP+_ is installed on your system and all of its features have been enabled.';
+$string['promorulesdidyouknow'] = 'Did you know that with <em>Level Up XP+</em> students can receive points for <em>completing courses</em> and <em>activities</em>, or even receive points according to their <em>grades</em>? <a href="{$a->url}">Discover more here</a>.';
 $string['promoyourmessagewassent'] = 'Thank you, your message was sent. We will get back to you very shortly.';
 $string['property:action'] = 'Event action';
 $string['property:component'] = 'Event component';
@@ -234,7 +239,7 @@ $string['ranking'] = 'Ranking';
 $string['ranking_help'] = 'The rank is the absolute position of the current user in the ladder. The relative rank is the difference in experience points between a user and their neighbours.';
 $string['reallydeleteuserstate'] = 'Deleting a user is only useful to remove them from the ladder. For any other reasons, we recommend setting their points to 0 instead. Note that deleting them does not affect their ability to earn points in the future.
 
-Importantly, when using _Level up!_ for the whole site, deleting them will make them disappear from the report, in which case you will not be able to re-assign them points. However, if you are using _Level up!_ per course, the student may still appear in the report if they are enrolled in the course.
+Importantly, when using _Level Up XP_ for the whole site, deleting them will make them disappear from the report, in which case you will not be able to re-assign them points. However, if you are using _Level Up XP_ per course, the student may still appear in the report if they are enrolled in the course.
 
 Do you really want to delete the points of this user?';
 $string['reallyresetallcoursestodefaults'] = 'Really reset all courses rules to the default rules? This action is not reversible.';
@@ -362,10 +367,12 @@ Alternatively, you can use the `level` argument to display the name of a specifi
 ```
 
 If the `level` argument is provided and the level does not exist, nothing will be displayed.';
+$string['shortcode:xppoints'] = 'Display a number of points formatted as experience points.';
 $string['shortcode:xpprogressbar'] = 'The current user\'s progress bar towards the next level.';
 $string['someoneelse'] = 'Someone else';
 $string['somethinghappened'] = 'Something happened';
 $string['taskcollectionloggerpurge'] = 'Purge collection logs';
+$string['taskusagereport'] = 'Usage report';
 $string['thankyou'] = 'Thank you!';
 $string['timebetweensameactions'] = 'Time required between identical actions';
 $string['timebetweensameactions_help'] = 'The minimum time required before an action that already happened previously is accepted again. An action is considered identical if it was placed in the same context and object, reading a forum post will be considered identifical if the same post is read again. When this value is empty, or equals to zero, it does not apply.';
@@ -384,6 +391,8 @@ $string['unknowneventa'] = 'Unknown event ({$a})';
 $string['updateandpreview'] = 'Update and preview';
 $string['upgradingplugins'] = 'Upgrading the plugins';
 $string['urlaccessdeprecated'] = 'Access via this URL is deprecated, please update your links.';
+$string['usagereport'] = 'Share usage report';
+$string['usagereport_desc'] = 'Periodically share anonymous usage information with the plugin developers. This information will help better understand how the plugin is being used and will influence its development. The information shared contains basic information about the Moodle site (URL, version), and usage information about the plugin (number of users earning points, settings overview, rules used, ...).';
 $string['usealgo'] = 'Use the algorithm';
 $string['usecustomlevelbadges'] = 'Use custom level badges';
 $string['usecustomlevelbadges_help'] = 'When set to yes, you must provide an image for each level.';
@@ -405,6 +414,7 @@ $string['xp:manage'] = 'Manage all aspects of experience points';
 $string['xp:myaddinstance'] = 'Add the block to my dashboard';
 $string['xp:view'] = 'View the block and its related pages';
 $string['xp:viewlogs'] = 'View the logs';
+$string['xp:viewreport'] = 'View the report';
 $string['xpgaindisabled'] = 'Points gain disabled';
 $string['xprequired'] = 'XP required';
 $string['xptogo'] = '[[{$a}]] to go';

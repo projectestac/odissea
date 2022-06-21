@@ -79,6 +79,6 @@ $string['showstandardinstruction'] = 'Standard-Anweisungen anzeigen';
 $string['showstandardinstruction_help'] = 'Die Option gibt an, ob die Anweisungen "Wählen Sie eine:" oder "Wählen Sie eine oder mehrere:" vor Multiple-Choice-Antworten angezeigt werden sollen.';
 $string['shuffleanswers'] = 'Antworten mischen?';
 $string['shuffleanswers_desc'] = 'Sollen die Antwortmöglichkeiten neuer Multiple-Choice-Fragen gemischt werden?';
-$string['shuffleanswers_help'] = 'Wenn diese Option aktiviert ist, ist die Reihenfolge der Antworten bei jedem Versuch zufällig, sofern die Option "In Fragen zufällig mischen" in den Einstellungen des Tests ebenfalls aktiviert ist.';
+$string['shuffleanswers_help'] = 'Wenn diese Option aktiviert ist, ist die Reihenfolge der Antworten bei jedem Versuch zufällig, sofern die Option "Antworten innerhalb der Fragen mischen" in den Einstellungen des Tests ebenfalls aktiviert ist.';
 $string['singleanswer'] = 'Antwort wählen:';
 $string['toomanyselected'] = 'Sie haben zu viele Optionen gewählt.';

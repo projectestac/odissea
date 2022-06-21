@@ -25,4 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cachedef_foldername'] = '文件夹名称缓存';
+$string['clientid'] = '客户端ID';
+$string['configplugin'] = '配置Microsoft OneDrive（旧版）';
 $string['deprecatedwarning'] = '警告:这个存储库插件使用的API已经被微软弃用，它最终将停止工作。请迁移到新的“Microsoft OneDrive”存储库。';
+$string['oauthinfo'] = '<p>要使用此插件，您必须注册您的站点<a href="https://account.live.com/developers/applications“>使用Microsoft</a>.<p>作为注册过程的一部分，您需要输入以下URL作为“重定向域”：</p><p>{$a->callbackurl}</p>一旦注册，您将获得一个客户端ID和密码，可以在此处输入</p>';
+$string['pluginname'] = 'Microsoft OneDrive（旧版）';
+$string['privacy:metadata'] = 'Microsoft OneDrive（旧版）存储库插件不存储任何个人数据，但将用户数据从Moodle传输到远程系统。';
+$string['secret'] = '私钥';
+$string['skydrive:view'] = '查看OneDrive（旧版）';

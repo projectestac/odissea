@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsearch'] = '高级搜索';
 $string['pluginname'] = '搜索讨论区';
+$string['privacy:metadata'] = '“搜索论坛”板块仅显示存储在其他位置的数据。';
 $string['search_forums:addinstance'] = '新增搜索讨论区版块';

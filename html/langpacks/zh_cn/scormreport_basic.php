@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '基础报表';
+$string['privacy:metadata:preference:scorm_report_detailed'] = '是否追踪SCORM基本报告中的详细信息';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = '要在SCORM报告中显示的用户数';

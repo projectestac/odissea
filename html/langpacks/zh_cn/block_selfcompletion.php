@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['alreadyselfcompleted'] = '您已在此课程中将自己标为完成';
 $string['completecourse'] = '完成课程';
 $string['pluginname'] = '自设完成';
+$string['privacy:metadata'] = '“自完成”板块仅显示存储在其他位置的数据。';
 $string['selfcompletion:addinstance'] = '新增自设完成版块';
 $string['selfcompletionnotenabled'] = '本课程未启用自设完成条件';

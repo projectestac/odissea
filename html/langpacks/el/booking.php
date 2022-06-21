@@ -557,7 +557,6 @@ $string['status_failed'] = 'Απέτυχε';
 $string['status_incomplete'] = 'Ανολοκλήρωτο';
 $string['status_noshow'] = 'Όχι εμφάνιση';
 $string['status_unknown'] = 'Άγνωστος';
-$string['statuschangebookedsubject'] = 'Η κατάσταση κράτησης άλλαξε για {$a->title}';
 $string['statuschangetext'] = 'Μήνυμα αλλαγής κατάστασης';
 $string['statuschangetext_help'] = 'Αφήστε το κενό για να χρησιμοποιήσετε το προεπιλεγμένο κείμενο του ιστοτόπου. Μπορείτε να χρησιμοποιήσετε οποιοδήποτε από τα παρακάτω σύμβολα κράτησης θέσης στο κείμενο:
 <ul>

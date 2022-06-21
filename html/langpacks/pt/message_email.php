@@ -47,4 +47,5 @@ $string['privacy:metadata:replyto'] = 'O endereço de e-mail para responder.';
 $string['privacy:metadata:replytoname'] = 'O nome do destinatário da resposta.';
 $string['privacy:metadata:subject'] = 'A linha de conteúdo da mensagem.';
 $string['privacy:metadata:userfrom'] = 'O utilizador a enviar a mensagem.';
+$string['privacy:preference:email'] = 'Endereço de e-mail preferido para notificação';
 $string['tasksendemail'] = 'Envio de resumos das mensagens';

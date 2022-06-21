@@ -30,7 +30,6 @@ $string['accredible:manage'] = 'Gerir um certificado/medalha';
 $string['accredible:student'] = 'Recuperar um certificado ou medalha';
 $string['accredible:view'] = 'Ver um certificado ou medalha';
 $string['achievementid'] = 'ID da Conquista / Nome do Grupo global (tem de ser único)';
-$string['activitydescription'] = 'Este módulo cria e atualiza automaticamente um Grupo de credenciais no Accredible. Todos os certificados e medalhas emitidos pertencem a esse grupo e sua aparência e informações podem ser atualizadas no <a href="https://dashboard.accredible.com" target="_blank"> painel de controlo </a>.';
 $string['activityname'] = 'Nome da atividade';
 $string['additionalactivitiesone'] = 'Aviso: Está a adicionar mais do que uma atividade a uma disciplina.<br/>Ambas as atividades podem ser visualizadas pelos alunos, por isso será melhor atribuir-lhes nomes diferentes.';
 $string['additionalactivitiesthree'] = 'Este é o nome que aparecerá no certificado.';

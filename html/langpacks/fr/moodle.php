@@ -709,7 +709,7 @@ $string['emailpasswordchangeinfofail'] = 'Bonjour {$a->firstname},
 
 Quelqu\'un (probablement vous) a demandé un nouveau mot de passe pour votre compte sur « {$a->sitename} ».
 
-Malheureusement, les mots de passe ne peuvent pas être réinitialisés sur ce site. Veuillez contacter l\'administrateur du site, {$a->admin}.';
+Malheureusement, les mots de passe ne peuvent pas être réinitialisés sur ce site. Veuillez contacter l\'administrateur du site, {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a} : information sur le changement de mot de passe';
 $string['emailpasswordconfirmation'] = 'Bonjour {$a->firstname},
 
@@ -765,7 +765,7 @@ $string['emptydragdropregion'] = 'région vide';
 $string['enable'] = 'Activer';
 $string['encryptedcode'] = 'Code chiffré';
 $string['enddate'] = 'Date de fin du cours';
-$string['enddate_help'] = 'La date de fin de cours est utilisée pour déterminer si le cours doit être affiché dans la liste des cours de l\'utilisateur. Lorsqu\'elle se situe dans le passé, le cours n\'est plus affiché dans la navigation et apparaît dans la liste des cours passés. Cette date peut aussi être utilisée dans des rapports personnalisés. Les utilisateurs pourront entrer dans le cours même après la date de fin du cours ; en d\'autres termes, la date de fin du cours ne restreint pas l\'accès au cours.';
+$string['enddate_help'] = 'La date de fin de cours indique si un cours doit être affiché comme passé dans la liste des cours. Cette date peut aussi être utilisée dans des rapports personnalisés. Les utilisateurs peuvent continuer d\'entrer dans le cours même après la date de fin du cours ; en d\'autres termes, la date de fin du cours ne restreint pas l\'accès au cours.';
 $string['english'] = 'Anglais';
 $string['enrolmentmethods'] = 'Méthodes d\'inscription';
 $string['entercourse'] = 'Cliquer pour entrer dans le cours';
@@ -940,14 +940,14 @@ Ce programme est libre, vous pouvez le redistribuer et/ou le modifier selon les 
 
 Ce programme est distribué car potentiellement utile, mais SANS AUCUNE GARANTIE : sans même la garantie implicite de COMMERCIALISABILITÉ ni d’ADÉQUATION À UN OBJECTIF PARTICULIER.
 
-Pour plus de détails, reportez-vous à la page d\'information sur la Licence Moodle : https://docs.moodle.org/fr/Licence';
+Pour plus d\'infos, reportez-vous à la page d\'information sur la Licence Moodle : https://docs.moodle.org/fr/Licence';
 $string['gpl3'] = 'Copyright (C) 1999 et années ultérieures, Martin Dougiamas (https://moodle.com/)
 
 Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier suivant les termes de la GNU General Public License telle que publiée par la Free Software Foundation : soit la version 3 de cette licence, soit (à votre gré) toute version ultérieure.
 
 Ce programme est distribué dans l’espoir qu’il vous sera utile, mais SANS AUCUNE GARANTIE : sans même la garantie implicite de COMMERCIALISABILITÉ ni d’ADÉQUATION À UN OBJECTIF PARTICULIER.
 
-Pour plus de détails, reportez-vous à la page d\'information sur la Licence Moodle : https://docs.moodle.org/fr/Licence';
+Pour plus d\'infos, reportez-vous à la page d\'information sur la Licence Moodle : https://docs.moodle.org/fr/Licence';
 $string['gpllicense'] = 'Licence GPL';
 $string['grade'] = 'Note';
 $string['gradenoun'] = 'Note';
@@ -1561,7 +1561,7 @@ $string['pleaseusesearch'] = 'Veuillez utiliser la recherche';
 $string['plugin'] = 'Plugin';
 $string['plugincheck'] = 'Vérifications plugins';
 $string['plugindeletefiles'] = 'Toutes les données associées au plugin « {$a->name} » ont été supprimées de la base de données. Pour empêcher que le plugin ne se réinstalle, veuillez supprimer le dossier « {$a->directory} » de votre serveur.';
-$string['pluginsetup'] = 'Mise en place des tables de plug-ins';
+$string['pluginsetup'] = 'Mise en place des tables de plugins';
 $string['policyaccept'] = 'Je comprends et je me déclare d\'accord';
 $string['policyagree'] = 'Vous devez accepter de vous conformer à cette politique pour continuer à utiliser ce site. Acceptez-vous cette politique ?';
 $string['policyagreement'] = 'Acceptation de la politique du site';

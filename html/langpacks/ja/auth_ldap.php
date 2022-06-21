@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_ldap_ad_create_req'] = 'Active Directoryに新しいアカウントを作成できません。アカウントを作成するためのすべての必要条件 (LDAPSコネクション、必要な権限を持ったユーザのバインド等) に合致しているか確認してください。';
-$string['auth_ldap_attrcreators'] = 'メンバーが属性の作成を許可されているグループまたはコンテクストの一覧です。複数のグループは「;」で区切ってください。通常、「cn=teachers,ou=staff,o=myorg」のように指定します。';
+$string['auth_ldap_attrcreators'] = 'メンバが属性の作成を許可されているグループまたはコンテクストの一覧です。複数のグループは「;」で区切ってください。通常、「cn=teachers,ou=staff,o=myorg」のように指定します。';
 $string['auth_ldap_attrcreators_key'] = '属性作成者';
 $string['auth_ldap_auth_user_create_key'] = '外部にユーザを作成する';
 $string['auth_ldap_bind_dn'] = 'あなたがユーザ検索にバインドユーザを使用したい場合、ここで指定してください。「cn=ldapuser,ou=public,o=org」のように指定します。';
@@ -50,17 +50,17 @@ $string['auth_ldap_graceattr_desc'] = '任意: 猶予ログイン属性をオー
 $string['auth_ldap_gracelogin_key'] = '猶予ログイン属性';
 $string['auth_ldap_gracelogins_desc'] = 'LDAPの猶予ログインサポートを有効にします。パスワードの有効期限が切れた後、猶予ログインカウントがゼロになるまでログインすることができます。この設定を有効にした場合、パスワードの有効期限が切れた時に猶予ログインメッセージが表示されます。';
 $string['auth_ldap_gracelogins_key'] = '猶予ログイン';
-$string['auth_ldap_groupecreators'] = 'メンバーがグループの作成を許可されているグループまたはコンテクストの一覧です。複数のグループは「;」で区切ってください。通常、「cn=teachers,ou=staff,o=myorg」のように指定します。';
+$string['auth_ldap_groupecreators'] = 'メンバがグループの作成を許可されているグループまたはコンテクストの一覧です。複数のグループは「;」で区切ってください。通常、「cn=teachers,ou=staff,o=myorg」のように指定します。';
 $string['auth_ldap_groupecreators_key'] = 'グループ作成者';
 $string['auth_ldap_host_url'] = 'LDAPホストのURLを「ldap://ldap.myorg.com/」または「ldaps://ldap.myorg.com/」のように明示してください。複数サーバのフェイルオーバーをサポートするには「;」で区切ってください。';
 $string['auth_ldap_host_url_key'] = 'ホストURL';
 $string['auth_ldap_ldap_encoding'] = 'LDAPサーバで使用するエンコーディングです。ほとんどの場合、UTF-8ですが、MS AD v2ユーザデフォルトプラットフォームのエンコーディングではcp1252、cp1250等のようになります。';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAPエンコーディング';
 $string['auth_ldap_login_settings'] = 'ログイン設定';
-$string['auth_ldap_memberattribute'] = '任意: ユーザがグループに属している場合、ユーザメンバーをオーバライドします。通常、「member」です。';
-$string['auth_ldap_memberattribute_isdn'] = 'メンバー属性値をオーバーライドします。';
-$string['auth_ldap_memberattribute_isdn_key'] = 'ユーザDNのメンバー属性';
-$string['auth_ldap_memberattribute_key'] = 'メンバー属性';
+$string['auth_ldap_memberattribute'] = '任意: ユーザがグループに属している場合、ユーザメンバをオーバライドします。通常、「member」です。';
+$string['auth_ldap_memberattribute_isdn'] = 'メンバ属性値をオーバーライドします。';
+$string['auth_ldap_memberattribute_isdn_key'] = 'ユーザDNのメンバ属性';
+$string['auth_ldap_memberattribute_key'] = 'メンバ属性';
 $string['auth_ldap_no_mbstring'] = 'Active Directoryにアカウントを作成するにはmbstring拡張モジュールが必要です。';
 $string['auth_ldap_noconnect'] = 'LDAPモジュールがサーバに接続できません: {$a}';
 $string['auth_ldap_noconnect_all'] = 'LDAPモジュールがすべてのサーバに接続できません: {$a}';

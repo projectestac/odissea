@@ -51,7 +51,7 @@ $string['enrolenddaterror'] = 'Datum för registrering kan inte vara senare än 
 $string['enrolme'] = 'Registrera mig';
 $string['enrolperiod'] = 'Registreringens varaktighet';
 $string['enrolperiod_desc'] = 'Standarvaraktighet för registreringens giltighet. 0 = obegränsad.';
-$string['enrolperiod_help'] = 'Tidslängd som inskrivningen är giltig, med början i det ögonblick användaren registrerar sig. Om inaktiverad, kommer inskrivning varaktigheten vara obegränsad.';
+$string['enrolperiod_help'] = 'Den tid som registreringen är giltig, med början i det ögonblick då användaren registrerar sig. Om du inaktiverat kommer tiden för registreringens giltighet vara obegränsad.';
 $string['enrolstartdate'] = 'Startdatum';
 $string['enrolstartdate_help'] = 'Om aktiverat, kan användare registrera sig på kursen med registreringsnyckel från och med det angivna datumet.';
 $string['expiredaction'] = 'Åtgärd vid förfallen registrering';

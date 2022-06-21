@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['competencyscale'] = '能力等级：{$a}';
+$string['competencyscaledescription'] = '通过导入创建的能力量表';
 $string['confirm'] = '确认';
 $string['confirmcolumnmappings'] = '确认列映射';
 $string['csvdelimiter'] = 'CSV 分隔符';
@@ -37,12 +39,14 @@ $string['exportnavlink'] = '导出能力框架';
 $string['idnumber'] = 'ID 号';
 $string['import'] = '导入';
 $string['importfile'] = 'CSV 框架描述文件';
+$string['importfile_help'] = '能力框架可以通过文本文件导入。文件的格式可以通过在网站上创建新的能力框架，然后将其导出来确定。';
 $string['importingfile'] = '正在导入文件数据';
 $string['invalidimportfile'] = '文件格式无效。';
 $string['isframework'] = '是能力框架';
 $string['noframeworks'] = '尚未建立任何能力框架';
 $string['parentidnumber'] = '父 ID 号';
 $string['pluginname'] = '导入能力框架';
+$string['privacy:metadata'] = '导入能力框架插件不存储任何个人数据';
 $string['processingfile'] = '正在处理文件';
 $string['relatedidnumbers'] = '交叉引用能力 ID 号';
 $string['ruleconfig'] = '规则配置 (可选)';

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activitydate:submissionsdue'] = 'Tegen:';
-$string['activitydate:submissionsopen'] = 'Opent:';
+$string['activitydate:submissionsdue'] = 'Sluit op:';
+$string['activitydate:submissionsopen'] = 'Geopend vanaf:';
 $string['activitydate:submissionsopened'] = 'Geopend:';
 $string['activityoverview'] = 'Je hebt opdrachten die nagekeken moeten worden';
 $string['addattempt'] = 'Nog een poging toestaan';
@@ -164,7 +164,7 @@ $string['downloadasfolders_help'] = 'inzendingen kunnen gedownload worden in map
 $string['downloadselectedsubmissions'] = 'Download geselecteerde inzendingen';
 $string['duedate'] = 'Uiterste inleverdatum';
 $string['duedate_help'] = 'Dit is wanneer de opdracht moet afgegeven worden. Opdrachten mogen te laat afgegeven worden,  maar zullen dan als te laat gemarkeerd worden. Om te verhinderen dat opdrachten na een bepaalde datum ingestuurd worden, kun je een afsluitdatum instellen.';
-$string['duedatecolon'] = 'Klaar tegen: {$a}';
+$string['duedatecolon'] = 'Sluit op: {$a}';
 $string['duedateno'] = 'Geen uiterste inleverdatum';
 $string['duedatereached'] = 'De datum waarop deze opdracht moest afgegeven worden is nu voorbij.';
 $string['duedatevalidation'] = 'Einddatum kan niet voor startdatum zijn.';
@@ -463,7 +463,7 @@ $string['requireallteammemberssubmit_help'] = 'Indien ingeschakeld moeten alle l
 $string['requiresubmissionstatement'] = 'Eis dat leerlingen de voorwaarden voor insturen aanvaarden.';
 $string['requiresubmissionstatement_help'] = 'Eisen dat leerlingen de voorwaarden voor insturen aanvaarden voor deze opdracht.';
 $string['revealidentities'] = 'Toon identiteit leerlingen';
-$string['revealidentitiesconfirm'] = 'Weet je zeker dat je de identiteit van de leerlingen wil tonen voor deze opdracht? Deze operatie kan niet ongedaan gemaakt worden. Als de identiteit van de leerlingen getoond wordt, dan worden de punten vrijgegeven in de cijferlijst.';
+$string['revealidentitiesconfirm'] = 'Weet je zeker dat je de identiteit van de leerlingen wil tonen voor deze opdracht? Deze operatie kan niet ongedaan gemaakt worden. Als de identiteit van de leerlingen getoond wordt, dan wordt het cijfer vrijgegeven in de cijferlijst.';
 $string['reverttodefaults'] = 'Draai terug naar standaardinstellingen voor de opdracht';
 $string['reverttodraft'] = 'Zet de ingestuurde opdracht terug naar kladwerk';
 $string['reverttodraftforstudent'] = 'Zet de ingestuurde opdracht terug naar kladwerk voor leerling:  (id={$a->id}, naam={$a->fullname}).';

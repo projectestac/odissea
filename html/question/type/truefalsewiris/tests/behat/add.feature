@@ -27,15 +27,15 @@ Feature: A teacher creaters true false random
     Then I set the following fields to these values:
       | Question name | true-false-wiris-001 random name    |
       | Question text | This is a Wiris True/False question |
-
     And I open Wiris Quizzes Studio
-    And I click on "Define random variables and functions" "text"
+    And I click on "Random variables" "text"
     And I type "a = 10"
     And I press the enter key
     And I type "b = x^2 + 1"
     And I press the enter key
     And I type "r = true"
-    And I click on "//*[@id='wrsUI_quizzesStudioHomeSaveButton']" "xpath_element"
+    And I go back in Wiris Quizzes Studio
+    And I save Wiris Quizzes Studio
     Then I set the following fields to these values:
       | Correct answer variable | #r |
     And I click on "//*[@id='id_updatebutton']" "xpath_element"

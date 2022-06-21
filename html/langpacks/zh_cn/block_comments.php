@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['comments:addinstance'] = '新增一个评论版块';
 $string['comments:myaddinstance'] = '在个人主页新增一个评论版块';
 $string['pluginname'] = '评论';
+$string['privacy:metadata:core_comment'] = '一条评论记录已被添加。';

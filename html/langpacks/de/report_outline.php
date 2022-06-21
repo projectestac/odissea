@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventactivityreportviewed'] = 'Aktivitätsbericht gesehen';
 $string['eventoutlinereportviewed'] = 'Lernzielbericht gesehen';
 $string['neverseen'] = 'Nie gesehen';
-$string['nocapability'] = 'Zugriff auf Benutzer-Gliederungsbericht nicht möglich';
+$string['nocapability'] = 'Zugriff auf Nutzungsgliederungsbericht nicht möglich';
 $string['nologreaderenabled'] = 'Anzeige für Logdaten deaktiviert';
 $string['numviews'] = '{$a->numviews} Ansichten von {$a->distinctusers} Nutzer/innen';
 $string['outline:view'] = 'Übersicht der Kursaktivitäten ansehen';

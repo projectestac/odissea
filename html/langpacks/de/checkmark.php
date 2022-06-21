@@ -27,6 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['absent'] = 'Nicht anwesend';
 $string['activateindividuals'] = 'Individualfunktionen aktivieren';
+$string['activitydate:submissionsdue'] = 'Fällig:';
+$string['activitydate:submissionsopen'] = 'Öffnet:';
+$string['activitydate:submissionsopened'] = 'Geöffnet:';
 $string['addnewgroupoverride'] = 'Verfügbarkeitsänderungen für Gruppen anlegen';
 $string['addnewuseroverride'] = 'Verfügbarkeitsänderung für Nutzer/in anlegen';
 $string['addsubmission'] = 'Abgabe hinzufügen';

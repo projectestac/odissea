@@ -31,3 +31,4 @@ $string['healthproblemsolution'] = '健康问题解决方案';
 $string['healthreturntomain'] = '继续';
 $string['healthsolution'] = '解决方案';
 $string['pluginname'] = '健康中心';
+$string['privacy:metadata'] = '健康中心插件不存储任何个人数据。';

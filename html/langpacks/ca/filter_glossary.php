@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Enllaçat automàtic al glossari';
+$string['glossarycategory'] = '{$a->glossary}: Categoria {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
+$string['privacy:metadata'] = 'El connector Enllaç automàtic del glossari no emmagatzema cap dada personal.';

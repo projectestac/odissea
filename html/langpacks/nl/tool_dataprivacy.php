@@ -145,6 +145,7 @@ $string['effectiveretentionperioduser'] = '{$a} sinds de laatste keer dat de geb
 $string['emailsalutation'] = 'Beste {$a},';
 $string['errorcannotrequestdeleteforother'] = 'Je bent niet gemachtigd om verwijderingsverzoeken voor deze gebruiker te maken.';
 $string['errorcannotrequestdeleteforself'] = 'Je bent niet gemachtigd om een verwijderingsverzoek voor jezelf te maken.';
+$string['errorcannotrequestexportforself'] = 'Je hebt geen rechten om een exportverzoek voor jezelf te maken.';
 $string['errorcontactdpodisabled'] = 'De optie om contact op te nemen met de privacy-verantwoordelijke is uitgeschakeld.';
 $string['errorcontexthasunexpiredchildren'] = 'De context "{$a}" heeft subcontexten die nog niet vervallen zijn. Er zijn geen contexten gemarkeerd voor verwijdering.';
 $string['errorinvalidrequestcomments'] = 'Het opmerkingenveld mag alleen platte tekst bevatten.';

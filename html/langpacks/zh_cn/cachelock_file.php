@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '锁定档案';
+$string['privacy:metadata'] = '文件锁定插件不存储任何个人数据。';

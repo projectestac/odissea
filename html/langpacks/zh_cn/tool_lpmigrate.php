@@ -25,12 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowedcourses'] = '允许的课程';
 $string['allowedcourses_help'] = '选择要迁移到新框架的课程。如果没有指定课程，那么所有课程都将被迁移。';
 $string['continuetoframeworks'] = '继续框架';
 $string['coursecompetencymigrations'] = '课程能力迁移';
 $string['coursemodulecompetencymigrations'] = '课程活动和资源能力迁移';
+$string['coursemodulesfound'] = '找到的课程活动或资源';
+$string['coursesfound'] = '找到的课程';
 $string['coursestartdate'] = '课程开始日期';
 $string['coursestartdate_help'] = '如果启用，开始日期在指定日期之前的课程将不会被迁移。';
+$string['disallowedcourses'] = '不被允许的课程';
 $string['disallowedcourses_help'] = '选择不迁移到新框架的课程。';
 $string['errorcannotmigratetosameframework'] = '不能在同一框架中迁移';
 $string['errorcouldnotmapcompetenciesinframework'] = '不能在这个框架映射任何能力。';
@@ -55,10 +59,13 @@ $string['migratemore'] = '迁移更多';
 $string['migrateto'] = '迁移到';
 $string['migrateto_help'] = '选择框架的新版本。仅仅可能选择一个没有隐藏的框架。';
 $string['migratingcourses'] = '迁移课程';
+$string['missingmappings'] = '缺少映射';
 $string['performmigration'] = '执行迁移';
 $string['pluginname'] = '能力迁移工具';
+$string['privacy:metadata'] = '能力迁移工具插件不存储任何个人数据。';
 $string['results'] = '结果';
 $string['startdatefrom'] = '开始日期';
+$string['unmappedin'] = '在{$a}中未映射';
 $string['warningcouldnotremovecoursecompetency'] = '这个课程的能力不能被移除。';
 $string['warningcouldnotremovemodulecompetency'] = '这个活动或资源的能力不能被移除。';
 $string['warningdestinationcoursecompetencyalreadyexists'] = '目标课程能力已经存在。';

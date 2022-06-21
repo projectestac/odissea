@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['displaycategories'] = '显示类别';
+$string['displaycategories_help'] = '在带星号的课程块项目上显示课程类别。';
 $string['nocourses'] = '没有标星的课程';
 $string['pluginname'] = '标星的课程';
 $string['privacy:metadata'] = '星号标记课程不存储个人数据';

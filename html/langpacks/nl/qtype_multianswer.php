@@ -29,6 +29,7 @@ $string['confirmquestionsaveasedited'] = 'Ik bevestig dat ik de vraag wil beware
 $string['confirmsave'] = 'Bevestig en bewaar dan {$a}';
 $string['correctanswer'] = 'Juist antwoord';
 $string['correctanswerandfeedback'] = 'Juist antwoord en feedback';
+$string['corruptedquestion'] = 'Deze vraag is beschadigd en bevat subvragen die niet aanwezig zijn in uw systeem.';
 $string['decodeverifyquestiontext'] = 'Decodeer en verifieer de tekst van de vraag';
 $string['invalidmultianswerquestion'] = 'Ongeldige ingebedde antwoorden (Cloze) vraag ({$a}).';
 $string['layout'] = 'Opmaak';
@@ -38,6 +39,7 @@ $string['layoutmultiple_vertical'] = 'Verticale kolom met selectievakjes';
 $string['layoutselectinline'] = 'Rolmenu in lijn met de tekst';
 $string['layoutundefined'] = 'Ongedefiniëerde opmaak';
 $string['layoutvertical'] = 'Verticale kolom keuzerondjes';
+$string['missingsubquestion'] = 'Deze subvraag ontbreekt in uw systeem en kan niet worden weergegeven.';
 $string['nooptionsforsubquestion'] = 'Kan opties voor vraagdeel {$a->sub} (question->id={$a->id}) niet vinden';
 $string['noquestions'] = 'De gatentekst-vraag "<strong>{$a}</strong>" bevat geen vraag';
 $string['pleaseananswerallparts'] = 'Beantwoord alle delen van de vraag.';

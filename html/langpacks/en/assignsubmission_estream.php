@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['currentsubmission'] = 'Current Submission';
 $string['default'] = 'Enabled by default';
 $string['default_help'] = 'If set, this submission method will be enabled by default for all newly created assignments.';
+$string['emptyoverride'] = 'Override "No File Uploaded" Message';
+$string['emptyoverride_help'] = 'Change the message that is displayed when users complete a submission without uploading a file using the activated Planet eStream plugin. Depending on your institutional policies you may want to change this to an Error message rather than feedback.';
 $string['enabled'] = 'Planet eStream Submissions enabled';
 $string['enabled_help'] = 'If enabled, students are able to submit upload video/audio files for assessment via Planet eStream when using the text editor plugins.';
 $string['nosubmission'] = 'Nothing has yet been submitted';

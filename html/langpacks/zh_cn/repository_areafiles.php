@@ -26,5 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['areafiles:view'] = '查看容器内嵌文件';
+$string['configplugin'] = '存储库嵌入文件的配置';
 $string['pluginname'] = '内嵌文件';
 $string['pluginname_help'] = '嵌入到当前编辑器的文件';
+$string['privacy:metadata'] = '嵌入式文件存储库插件不存储或传输任何个人数据。';

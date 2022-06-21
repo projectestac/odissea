@@ -38,7 +38,7 @@ $string['configuseflash'] = 'Der FlashPlayer wird verwendet, wenn das Audio- ode
 Wenn diese Option aktiviert ist, wird VideoJS für jede Dateiendung aus der obigen Liste ohne Browser-Überprüfung aktiviert. Beachten Sie, dass Flash in mobilen Browsern nicht verfügbar ist und auch in Desktop-Browsern nicht mehr genutzt wird.';
 $string['configvideocssclass'] = 'CSS Class, die zum &lt;video&gt;-Element hinzugefügt wird.
 
-Nutzen Sie z.B. die CSS Class \'vjs-big-play-centered\', um eine Abspieltaste in der Mitte zu platzieren. Alle Details zu den Einstellungen, inclusive aller Anpassungen für ein eigenes Erscheinungsbild, finden Sie unter <a href="docs.videojs.com">docs.videojs.com</a>.';
+Nutzen Sie z.B. die CSS Class \'vjs-big-play-centered\', um eine Abspieltaste in der Mitte zu platzieren. Alle Details zu den Einstellungen, inclusive aller Anpassungen für ein eigenes Erscheinungsbild, finden Sie unter <a href="https://docs.videojs.com">docs.videojs.com</a>.';
 $string['configvideoextensions'] = 'Kommagetrennte Liste der unterstützten Video-Dateiendungen. VideoJS versucht, den nativen VideoPlayer des Browsers (wenn verfügbar) zu nutzen.
 
 Falls dies nicht gelingt, wird der FlashPlayer verwendet, aber nur wenn der Browser Flash unterstützt und das Flash-Fallback aktiviert ist.';

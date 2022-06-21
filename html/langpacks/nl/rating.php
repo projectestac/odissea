@@ -60,5 +60,5 @@ $string['ratinginvalid'] = 'Beoordeling niet geldig';
 $string['ratings'] = 'Beoordelingen';
 $string['ratingtime'] = 'Beperk beoordelingen tot items met een datum in dit bereik:';
 $string['rolewarning'] = 'Rollen met het recht om te beoordelen';
-$string['rolewarning_help'] = 'Om beoordelingen te kunnen insturen hebben gebruikers de mogelijkheid moodle/rating:rate nodig en soms module specifieke mogelijkheden. Gebruikers met de volgende rollen zouden moeten kunnen items beoordelen. De lijst met rollen kan aangepast worden via de rechten link in het actie-menu of instellingen blok, afhankelijk van het gebruikte thema.';
+$string['rolewarning_help'] = 'Rollen met het recht om te beoordelen zijn rollen met de mogelijkheid moodle/rating:rate  en soms module specifieke mogelijkheden. Je kunt meerdere rollen rechten geven via de rechtenpagina.';
 $string['scaleselectionrequired'] = 'Bij het selecteren van een beoordelingsaggregaat type moet je er ook voor kiezen om ofwel een schaal te gebruiken of om  een maximum aantal punten in te stellen.';

@@ -30,3 +30,4 @@ $string['exportimscp:export'] = '导出图书为IMS内容包';
 $string['generateimscp'] = '生成 IMS CP';
 $string['nochapters'] = '没有发现图书章节，因此不能导出到 IMS CP。';
 $string['pluginname'] = '图书导出 IMS CP';
+$string['privacy:metadata'] = '图书IMS CP导出插件不存储任何个人数据。';

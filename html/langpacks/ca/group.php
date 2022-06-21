@@ -135,7 +135,7 @@ $string['groupsvisible'] = 'Grups visibles';
 $string['grouptemplate'] = 'Grup @';
 $string['hidepicture'] = 'Oculta la imatge';
 $string['importgroups'] = 'Importa grups';
-$string['importgroups_help'] = 'Els grups poden ser importats amb el fitxer de text. El format del fitxer ha de ser de la següent manera:
+$string['importgroups_help'] = 'Els grups poden ser importats amb el fitxer de text. El format del fitxer ha de ser de la manera següent:
 * Cada línia del fitxer conté un registre
 * Cada registre és una seqüència de dades separades per comes
 * El primer registre conté una llista de noms de camps que defineixen el format de la resta del fitxer

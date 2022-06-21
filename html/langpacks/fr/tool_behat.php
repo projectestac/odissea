@@ -54,6 +54,6 @@ $string['warndirrootconfigfound'] = 'Un fichier de configuration a été trouvé
 $string['wheninfo'] = 'Quand. Action qui provoque un événement';
 $string['wrongbehatsetup'] = 'Quelque chose n\'est pas correct dans vos réglages behat, qui empêche l\'affichage de la définition des étapes : <b>{$a->errormsg}</b><br/><br/>Assurez-vous que
 <ul>
-<li>les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot sont définies config.php avec des valeurs différentes de $CFG->dataroot, $CFG->prefix et $CFG->wwwroot ;</li>
+<li>les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot sont définies dans config.php avec des valeurs différentes de $CFG->dataroot, $CFG->prefix et $CFG->wwwroot ;</li>
 <li>vous avez lancé la commande « {$a->behatinit} » depuis votre dossier moodle ;</li>
 <li>les dépendances sont installées dans le dossier vendor/ et le fichier {$a->behatcommand} possède les droits d\'accès pour être lancé.</li></ul>';

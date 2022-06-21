@@ -29,6 +29,7 @@ $string['addmorechoiceblanks'] = 'Gehitu {no} zuriune aukera gehiagorako';
 $string['answer'] = 'Erantzuna';
 $string['blank'] = 'hutsik';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
+$string['errorlimitedchoice'] = '[[{$a}]] aukera behin baino gehiagotan erabili da "Mugarik gabe" aukera markatu gabe. Egiaztatu berriro mesedez galdera hau.';
 $string['infinite'] = 'Mugarik gabe';
 $string['pleaseputananswerineachbox'] = 'Mesedez, eman erantzuna lauki bakoitzean';
 $string['pluginname'] = 'Hartu eta eraman testura';

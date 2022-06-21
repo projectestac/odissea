@@ -37,6 +37,7 @@ $string['exportdata'] = '导出数据';
 $string['notargetconectexception'] = '抱歉，无法连接目标数据库。';
 $string['options'] = '选项';
 $string['pluginname'] = '数据库导入';
+$string['privacy:metadata'] = '数据库传输插件不存储任何个人数据。';
 $string['targetdatabase'] = '目标数据库';
 $string['targetdatabasenotempty'] = '目标数据库的表不能使用给定的前缀！';
 $string['transferdata'] = '传输数据';

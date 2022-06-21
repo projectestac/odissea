@@ -67,7 +67,7 @@ $string['cachedef_forum_is_tracked'] = 'ユーザのフォーラムトラッキ�
 $string['calendardue'] = '{$a} が期限です。';
 $string['cancelreply'] = '返信をキャンセルする';
 $string['cannotadd'] = 'このフォーラムにディスカッションを追加できませんでした。';
-$string['cannotadddiscussion'] = 'このフォーラムにディスカッションを追加するにはグループのメンバーである必要があります。';
+$string['cannotadddiscussion'] = 'このフォーラムにディスカッションを追加するにはグループのメンバである必要があります。';
 $string['cannotadddiscussionall'] = 'あなたにはすべての参加者のための新しいディスカッショントピックを追加するためのパーミッションがありません。';
 $string['cannotadddiscussiongroup'] = 'あなたはどのグループにも属していないため、ディスカッションを作成することはできません。';
 $string['cannotaddsubscriber'] = 'このフォーラムにID {$a} の購読者を追加できませんでした!';
@@ -93,7 +93,7 @@ $string['cannotpurgecachedrss'] = 'ソースまたは対象フォーラムに関
 $string['cannotremovesubscriber'] = 'このフォーラムからID {$a} の購読者を削除できませんでした!';
 $string['cannotreply'] = 'あなたはこの投稿に返信できません。';
 $string['cannotsplit'] = 'このフォーラムのディスカッションは分割できません。';
-$string['cannotsubscribe'] = '申し訳ございません、あなたが購読するにはグループメンバーである必要があります。';
+$string['cannotsubscribe'] = '申し訳ございません、あなたが購読するにはグループメンバである必要があります。';
 $string['cannottrack'] = 'フォーラムの未読管理を停止できませんでした。';
 $string['cannotunsubscribe'] = 'あなたをフォーラムから購読解除できませんでした。';
 $string['cannotupdatepost'] = 'あなたはこの投稿を更新できません。';
@@ -242,9 +242,11 @@ $string['emaildigesttype_help'] = 'あなたがそれぞれの投稿に関して
 * ダイジェスト - 件名のみ - あなたはそれぞれのフォーラム投稿に関する件名を含むメールダイジェストを1日1通受信します。';
 $string['emptymessage'] = 'あなたの投稿に問題があります。おそらく投稿が空白のままか、添付ファイルのサイズが大きすぎます。あなたの変更は保存されませんでした。';
 $string['errorcannotlock'] = 'あなたにはディスカッションをロックするためのパーミッションがありません。';
+$string['errordiscussionnotfound'] = 'ディスカッションが見つかりませんでした。';
 $string['erroremptymessage'] = '投稿メッセージを空にすることはできません。';
 $string['erroremptysubject'] = '投稿件名を空にすることはできません。';
 $string['errorenrolmentrequired'] = 'このコンテンツにアクセスするにはあなたはこのコースに登録する必要があります。';
+$string['errorforumnotfound'] = 'このディスカッションが属するフォーラムが見つかりませんでした。';
 $string['errorwhiledelete'] = 'レコードの削除中にエラーが発生しました。';
 $string['eventassessableuploaded'] = 'コンテンツが投稿されました。';
 $string['eventcoursesearched'] = 'コースが検索されました。';
@@ -741,11 +743,11 @@ $string['trackingoff'] = 'Off';
 $string['trackingon'] = '強制';
 $string['trackingoptional'] = '任意';
 $string['trackingtype'] = '未読管理';
-$string['trackingtype_help'] = '未読管理により新しい投稿がハイライトされることで参加者はまだ閲覧していない投稿を簡単に確認できます。
+$string['trackingtype_help'] = '未読管理により新しい投稿がハイライトされることで参加者はまだ閲覧していない投稿を確認できます。
 
-「任意」に設定された場合、参加者はテーマによりアクションメニューまたは管理ブロック内のリンクで未読管理を有効または無効にできます (ユーザは自分のフォーラムプリファレンスでフォーラム未読管理を有効にする必要があります)。
+「任意」に設定された場合、参加者はフォーラムで未読管理の有効または無効を選択できます (ユーザは自分のフォーラムプリファレンスでフォーラム未読管理を有効にする必要があります)。
 
-サイト管理者が「未読管理の強制を許可する」を有効にした場合、さらなるオプション「強制」を使用できます。これはユーザのフォーラムプリファレンスに限らず常に未読管理が有効にされることを意味します。';
+サイト管理者が「未読管理の強制を許可する」を有効にした場合、さらなるオプション「強制」を利用できます。これはユーザのフォーラムプリファレンスに限らず常に未読管理が有効にされることを意味します。';
 $string['trackreadposts_header'] = '未読管理';
 $string['unlockdiscussion'] = 'このディスカッションのロックを解除する';
 $string['unpindiscussion'] = 'このディスカッションのピン留めを外す';

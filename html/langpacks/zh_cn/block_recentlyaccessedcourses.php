@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['displaycategories'] = '显示类别';
+$string['displaycategories_help'] = '在“最近访问的课程”块项目中显示课程类别。';
 $string['nocourses'] = '没有最近的课程';
 $string['pluginname'] = '最近访问的课程';
 $string['privacy:metadata'] = '最近访问过的课程版块不保存任何个人数据';

@@ -19,7 +19,7 @@ require_once($CFG->dirroot . '/question/type/wq/renderer.php');
 require_once($CFG->dirroot . '/question/type/essay/renderer.php');
 
 
-class qtype_essaywiris_renderer extends qtype_wq_renderer  {
+class qtype_essaywiris_renderer extends qtype_wq_renderer {
     public function __construct(moodle_page $page, $target) {
         parent::__construct(new qtype_essay_renderer($page, $target), $page, $target);
     }

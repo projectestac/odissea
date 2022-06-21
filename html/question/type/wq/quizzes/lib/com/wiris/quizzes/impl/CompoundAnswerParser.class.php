@@ -89,6 +89,14 @@ class com_wiris_quizzes_impl_CompoundAnswerParser {
 		}
 		return $answers;
 	}
+	static function compoundAnswerIsEquality($compoundAnswer) {
+		if($compoundAnswer->length === 1) {
+			$lhs = com_wiris_util_xml_MathMLUtils::mathMLToText($compoundAnswer[0][0]);
+			return com_wiris_util_type_StringUtils::contains($lhs, "+") || com_wiris_util_type_StringUtils::contains($lhs, "*") || com_wiris_util_type_StringUtils::contains($lhs, "/") || _hx_index_of($lhs, "-", null) !== _hx_last_index_of($lhs, "-", null) || $lhs === "y=" || $lhs === "x=";
+		} else {
+			return false;
+		}
+	}
 	static function joinCompoundAnswer($answers) {
 		$sb = new StringBuf();
 		$m = new com_wiris_quizzes_impl_MathContent();
@@ -149,6 +157,35 @@ class com_wiris_quizzes_impl_CompoundAnswerParser {
 		}
 		$t1 = $t1 . ">";
 		return $t1;
+	}
+	static function getCompoundInitialContent($correctAnswer, $previousInitialContent, $mathml) {
+		$content = new com_wiris_quizzes_impl_MathContent();
+		$content->set($correctAnswer);
+		$compoundModel = com_wiris_quizzes_impl_CompoundAnswerParser::parseCompoundAnswer($content);
+		$content->set($previousInitialContent);
+		$compoundInitialContent = com_wiris_quizzes_impl_CompoundAnswerParser::parseCompoundAnswer($content);
+		$i = 0;
+		while($i < $compoundModel->length) {
+			if($i >= $compoundInitialContent->length) {
+				$part = new _hx_array(array());
+				$part[0] = $compoundModel[$i][0];
+				$part[1] = "";
+				$compoundInitialContent->push($part);
+				unset($part);
+			} else {
+				$compoundInitialContent[$i][0] = $compoundModel[$i][0];
+				if($mathml && com_wiris_quizzes_impl_MathContent::getMathType($compoundInitialContent[$i][1]) === com_wiris_quizzes_impl_MathContent::$TYPE_TEXT) {
+					$tools = new com_wiris_quizzes_impl_HTMLTools();
+					$compoundInitialContent[$i][1] = $tools->textToMathML($compoundInitialContent[$i][1]);
+					unset($tools);
+				}
+			}
+			$i++;
+		}
+		while($i < $compoundInitialContent->length) {
+			$compoundInitialContent->pop();
+		}
+		return com_wiris_quizzes_impl_CompoundAnswerParser::joinCompoundAnswer($compoundInitialContent)->content;
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.CompoundAnswerParser'; }
 }

@@ -47,7 +47,6 @@ $string['before_submission_end_date'] = 'Este Auto-Teste fechará o envio de per
 $string['before_submission_start_date'] = 'Abre para envio de perguntas em {$a}.';
 $string['cachedef_permissionssync'] = 'Monitorização da sincronização de permissão no Auto-Teste';
 $string['cannotcapturecommenthistory'] = 'Não é possível capar o registo do histórico de comentários';
-$string['changeselectedsstate'] = 'Alterar o estado das seguintes perguntas:<br /><br />{$a}';
 $string['collapseall'] = 'Contrair todos os comentários';
 $string['collapsecomment'] = 'Contrair comentário';
 $string['comment_author'] = 'Autor';

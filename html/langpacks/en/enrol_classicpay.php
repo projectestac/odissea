@@ -148,6 +148,7 @@ $string['classicpay:plus:status:valid'] = 'You have a classicpay plus account';
 $string['classicpay:unenrol'] = 'Unenrol users';
 $string['classicpay:unenrolself'] = 'Unenrol self';
 $string['cost'] = 'Enrol cost';
+$string['costerror'] = 'Error: the cost must be a numerical value';
 $string['coupon:delete'] = 'Delete Coupon';
 $string['coupon:delete:warn'] = '<p>You are about to remove a coupon with the following details.</p>
 <p>Course: <i>{$a->course}</i><br/>Couponcode: <i>{$a->code}</i><br/>Validity: <i>{$a->validfrom} - {$a->validto}</i></p>
@@ -318,6 +319,7 @@ $string['title:legal'] = 'Classicpay - liability information';
 $string['title:returnpage'] = 'Payment Status';
 $string['title:service'] = 'Classicpay - account information';
 $string['title:transactions'] = 'ClassicPay - Transactions';
+$string['unenrolselfconfirm'] = 'Please confirm you want to unenrol from {$a}?';
 $string['validfrom'] = 'Valid from';
 $string['validfromhigherthanvalidto'] = 'Validity from data is past validity to date';
 $string['validfrommissing'] = 'Start date of validity must be set';

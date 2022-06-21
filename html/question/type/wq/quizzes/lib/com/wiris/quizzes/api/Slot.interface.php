@@ -1,6 +1,7 @@
 <?php
 
 interface com_wiris_quizzes_api_Slot extends com_wiris_quizzes_api_Serializable{
+	function copy($model);
 	function getAnswerFieldType();
 	function setAnswerFieldType($answerFieldType);
 	function setInitialContent($content);

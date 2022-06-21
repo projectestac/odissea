@@ -38,7 +38,7 @@ $string['configenrolplugins'] = '必要なプラグインすべてを選択し�
 $string['custominstancename'] = 'カスタムインスタンス名';
 $string['defaultenrol'] = '新しいコースにインスタンスを追加する';
 $string['defaultenrol_desc'] = 'このプラグインを新しいコースすべてにデフォルトで追加することができます。';
-$string['deleteinstanceconfirm'] = 'あなたは登録方法「 {$a->name} 」を削除しようとしています。この登録方法を使用して登録している {$a->users} 名のユーザすべては登録解除され、ユーザ評定、グループメンバーシップ、フォーラム購読のようなコース関連データすべてが削除されます。
+$string['deleteinstanceconfirm'] = 'あなたは登録方法「 {$a->name} 」を削除しようとしています。この登録方法を使用して登録している {$a->users} 名のユーザすべては登録解除され、ユーザ評定、グループメンバシップ、フォーラム購読のようなコース関連データすべてが削除されます。
 
 本当に続けてもよろしいですか?';
 $string['deleteinstanceconfirmself'] = 'あなたがこのコースにアクセスできるインスタンス「 {$a->name} 」を本当に削除してもよろしいですか? 続ける場合、あなたはこのコースにアクセスできなくなります。';
@@ -77,7 +77,7 @@ $string['errajaxfailedenrol'] = 'ユーザの登録に失敗しました。';
 $string['errajaxsearch'] = 'ユーザ検索中にエラーが発生しました。';
 $string['erroreditenrolment'] = 'ユーザ登録の編集中にエラーが発生しました。';
 $string['errorenrolcohort'] = 'このコース内でのコーホート同期登録インスタンス作成中にエラーが発生しました。';
-$string['errorenrolcohortusers'] = 'このコースへのコーホートメンバー登録中にエラーが発生しました。';
+$string['errorenrolcohortusers'] = 'このコースへのコーホートメンバ登録中にエラーが発生しました。';
 $string['errorthresholdlow'] = '通知閾値は少なくとも1日にする必要があります。';
 $string['errorwithbulkoperation'] = 'あなたのバルク登録変更処理中にエラーが発生しました。';
 $string['eventenrolinstancecreated'] = '登録インスタンスが作成されました。';

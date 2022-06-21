@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['courseoverview:view'] = '查看课程总览报表';
 $string['pluginname'] = '课程概览';
+$string['privacy:metadata'] = '课程概览插件不存储任何个人数据。';

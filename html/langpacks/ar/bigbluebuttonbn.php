@@ -25,41 +25,59 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'لديك جلسات قادمة لغرف اجتماعات BBB';
+$string['activityoverview'] = 'لديك جلسات قادمة لغرف  BBB';
 $string['bbbduetimeoverstartingtime'] = 'وقت استحقاق هذا النشاط ينبغي أن يكون بعد تاريخ البدء';
 $string['bbbdurationwarning'] = 'أقصى مدة لهذه الجلسة هي %duration% دقيقة.';
 $string['bbbrecordallfromstartwarning'] = 'يتم تسجيل هذه الجلسة من البداية.';
 $string['bbbrecordwarning'] = 'قد يتم تسجيل هذه الجلسة.';
 $string['bigbluebuttonbn'] = 'غرف اجتماعات BBB';
 $string['bigbluebuttonbn:addinstance'] = 'إضافة غرفة/نشاط جديد من BBB';
-$string['bigbluebuttonbn:join'] = 'انضم إلى اجتماع غرف اجتماعات BBB';
+$string['bigbluebuttonbn:addinstancewithmeeting'] = 'إنشاء مثيلات من الجلسات المباشرة';
+$string['bigbluebuttonbn:addinstancewithrecording'] = 'إنشاء مثيلات ذات إمكانيات التسجيل';
+$string['bigbluebuttonbn:deleterecordings'] = 'حذف التسجيلات';
+$string['bigbluebuttonbn:importrecordings'] = 'استيراد التسجيلات';
+$string['bigbluebuttonbn:join'] = 'انضم إلى اجتماع غرف  BBB';
 $string['bigbluebuttonbn:managerecordings'] = 'إدارة تسجيلات غرف اجتماعات BBB';
-$string['bigbluebuttonbn:meeting'] = 'إنشاء مثيلات مع إمكانات الاجتماع المباشر';
-$string['bigbluebuttonbn:recording'] = 'إنشاء مثيلات مع إمكانات التسجيل';
-$string['bigbluebuttonbn:view'] = 'معاينة غرفة/نشاط';
+$string['bigbluebuttonbn:protectrecordings'] = 'حماية التسجيلات';
+$string['bigbluebuttonbn:publishrecordings'] = 'نشر التسجيلات';
+$string['bigbluebuttonbn:unprotectrecordings'] = 'إلغاء حماية التسجيلات';
+$string['bigbluebuttonbn:unpublishrecordings'] = 'إلغاء نشر التسجيلات';
+$string['bigbluebuttonbn:view'] = 'معاينة غرفة BBB';
+$string['cachedef_currentfetch'] = 'بيانات لاستعراض أي تسجيلات تم جلبها مؤخرًا.';
+$string['cachedef_recordings'] = 'البيانات الوصفية للتسجيل';
+$string['cachedef_serverinfo'] = 'معلومات المخدم البعيد';
+$string['cachedef_validatedurls'] = 'خبء عمليات التحقق من عناوين الروابط';
 $string['calendarstarts'] = '{$a} مجدول لغرض';
+$string['cannotperformaction'] = 'يتعذر القيام بإجراء {$a} لهذا التسجيل';
 $string['completionattendance'] = 'يجب على الطالب حضور الاجتماع من أجل:';
-$string['completionattendancedesc'] = 'يجب على الطالب حضور الاجتماع والبقاء في الجلسة لمدة {$a} من الدقائق على الأقل';
+$string['completionattendance_desc'] = 'على الطالب دخول الغرفة والبقاء في جلستها لمدة {$a} من الدقائق على الأقل';
+$string['completionattendance_event_desc'] = 'قام الطالب بدخول الغرفة والبقاء في جلستها لمدة {$a} من الدقائق على الأقل';
 $string['completionattendancegroup'] = 'تتطلب الحضور';
 $string['completionattendancegroup_help'] = 'حضور الاجتماع لمدة (س) من الدقائق مطلوب للإكمال';
+$string['completionengagement_desc'] = 'على الطالب الانخراط في النشاطات خلال الاجتماع';
 $string['completionengagementchats'] = 'أحداث الدردشة';
-$string['completionengagementdesc'] = 'ينبغي على الطالب المشاركة في الأنشطة خلال الاجتماع';
+$string['completionengagementchats_desc'] = 'على الطالب المشاركة في {$a} من المحادثات لإكماله';
+$string['completionengagementchats_event_desc'] = 'قد أثار {$a} من المحادثات';
 $string['completionengagementemojis'] = 'الرموز التعبيرية';
+$string['completionengagementemojis_desc'] = 'على الطالب إرسال {$a} من الرموز التعبيرية في الاستطلاعات لإكماله.';
+$string['completionengagementemojis_event_desc'] = 'قد أثار {$a} من الرموز التعبيرية';
 $string['completionengagementgroup'] = 'تتطلب المشاركة';
 $string['completionengagementgroup_help'] = 'المشاركة النشطة خلال الجلسة مطلوبة للإكمال';
 $string['completionengagementpollvotes'] = 'أصوات الاستبيان';
+$string['completionengagementpollvotes_desc'] = 'على الطالب التصويب في الاستطلاعات {$a} من المرات لإكماله.';
+$string['completionengagementpollvotes_event_desc'] = 'قد أثار {$a} من تصويتات الاستطلاعات';
 $string['completionengagementraisehand'] = 'أحداث رفع اليد';
+$string['completionengagementraisehand_desc'] = 'على الطالب رفع اليد {$a} من المرات لإكماله.';
+$string['completionengagementraisehand_event_desc'] = 'قد رفع اليد {$a} من المرات';
 $string['completionengagementtalks'] = 'أحداث الحديث';
-$string['completionengagementtalktime'] = 'وقت الكلام';
+$string['completionengagementtalks_desc'] = 'على الطالب التحدث {$a} من المرات لإكماله';
+$string['completionengagementtalks_event_desc'] = 'قد أثار {$a} من الأحاديث';
 $string['completionupdatestate'] = 'حالة تحديث الإكمال';
 $string['completionvalidatestate'] = 'تحقق من الإكمال';
 $string['completionvalidatestatetriggered'] = 'تم تشغيل التحقق من الإكمال.';
-$string['config_clienttype'] = 'التهيئة لنوع "عميل الويب"';
-$string['config_clienttype_default'] = 'نوع عميل الويب الافتراضي';
-$string['config_clienttype_default_description'] = 'إختر ما بين عميل Adobe Flash الكلاسيكي أو عميل HTML5 الجديد.';
-$string['config_clienttype_description'] = 'يعمل هذا الإعداد على تمكين/تعطيل إختيار عميل الويب لكل غرفة.';
-$string['config_clienttype_editable'] = 'خيار عميل الويب يمكن تحريره';
-$string['config_clienttype_editable_description'] = 'هذا الخيار يقوم بتمكين التخيير ما بين عملاء الويب (AdobeFlash/HTML5) من نموذج تحرير الغرفة.';
+$string['completionview'] = 'يتطلب المعاينة';
+$string['completionview_desc'] = 'يجب على الطالب مشاهدة الغرفة لإكمالها.';
+$string['completionview_event_desc'] = 'شاهدَ صفحة الغرفة.';
 $string['config_default_messages'] = 'الرسائل الافتراضية';
 $string['config_default_messages_description'] = 'ضبط إفتراضيات الرسائل للنشاطات';
 $string['config_disablecam_default'] = 'تعطيل الكامرة مُمَكَّن إفتراضيًا';
@@ -98,14 +116,14 @@ $string['config_importrecordings_enabled'] = 'استيراد التسجيلات 
 $string['config_importrecordings_enabled_description'] = 'عند تمكينه مع تمكين ميزة التسجيل، سيكون ممكنًا استيراد التسجيلات من مقررات مختلفة إلى النشاط.';
 $string['config_importrecordings_from_deleted_enabled'] = 'استيراد التسجيلات من نشاطات محذوفة مُمَكَّن';
 $string['config_importrecordings_from_deleted_enabled_description'] = 'عند تمكين ميزة التسجيل والاستيراد ، فمن الممكن استيراد التسجيلات من الأنشطة التي لم تعد موجودة في المقرر الدراسي.';
-$string['config_lockonjoin_default'] = 'تجاهل التأمين عند الانضمام مُمَكَّن إفتراضيًا';
-$string['config_lockonjoin_default_description'] = 'عند تمكينه، سيتم تجاهل إعدادات التأمين. تهيئة التأمين ينبغي تمكينها ليتم تطبيقه.';
-$string['config_lockonjoin_editable'] = 'تجاهل التأمين عند الانضمام يمكن تحريره';
-$string['config_lockonjoin_editable_description'] = 'تجاهل التأمين عند الانضمام إفتراضيًا يمكن تحريره عند إضافة المثيل أو تحديثه.';
+$string['config_lockonjoin_default'] = 'تم تمكين القفل عند الانضمام افتراضيًا';
+$string['config_lockonjoin_default_description'] = 'في حالة التمكين ، يتم تطبيق الإعدادات التي تم تأمينها بواسطة التكوين على المستخدم عند انضمامه. يجب تمكين تكوين القفل حتى يتم تطبيق هذا.';
+$string['config_lockonjoin_editable'] = 'يمكن تحرير القفل عند الانضمام';
+$string['config_lockonjoin_editable_description'] = 'يمكن تحرير القفل عند الانضمام افتراضيًا عند إضافة المثيل أو تحديثه.';
 $string['config_locksettings'] = 'التهيئة لإعدادات التأمين';
 $string['config_locksettings_description'] = 'هذه الإعدادات تُمكن أو تُعطل الخيارات في واجهة المستخدم لإعدادات التأمين، وكذلك تعريف القيم الافتراضية لتلك الخيارات.';
 $string['config_meetingevents_enabled'] = 'تسجيل الأحداث المباشرة';
-$string['config_meetingevents_enabled_description'] = 'تمكين الملحق من قبول ومعالجة الأحداث المباشرة بعد انتهاء الجلسة. (ينبغي تمكينها من أجل "إكمال النشاط" وستكون جاهزة فقط عندما تكون لمخدم غرف اجتماعات BBB إمكانية معالجة نصوص post_events)';
+$string['config_meetingevents_enabled_description'] = 'تمكين الملحق من قبول ومعالجة الأحداث المباشرة بعد انتهاء الجلسة. (ينبغي تمكينها من أجل "إكمال النشاط" وستكون جاهزة فقط عندما تكون لمخدم غرف  BBB إمكانية معالجة نصوص post_events)';
 $string['config_muteonstart'] = 'التهيئة لميزة "الكتم عند البدء"';
 $string['config_muteonstart_default'] = 'الكتم عند البدء مُمَكَّن إفتراضيًا';
 $string['config_muteonstart_default_description'] = 'عند تمكينه، الجلسة ستكون مكتومة عند بدئها.';
@@ -119,25 +137,29 @@ $string['config_participant_moderator_default_description'] = 'تسعمل هذه
 $string['config_presentation_default'] = 'الملف الافتراضي لميزة "الرفع المسبق للعرض التقديمي"';
 $string['config_presentation_default_description'] = 'يسمح هذا الإعداد بتحديد الملف المستعمل تلقائيًا في كل مثيلات غرف اجتماعات BBB إذا تم تمكين "الرفع المسبق للعرض التقديمي".';
 $string['config_preuploadpresentation'] = 'التهيئة لميزة "الرفع المسبق للعرض التقديمي"';
-$string['config_preuploadpresentation_description'] = 'تعمل هذه الإعدادات على تمكين أو تعطيل الخيارات في واجهة المستخدم وكذلك تحديد القيم الافتراضية لهذه الخيارات. تعمل الميزة فقط إذا كان مخدم مودل قابل للوصول إليه من قبل غرف اجتماعات BBB..';
+$string['config_preuploadpresentation_description'] = 'تعمل هذه الإعدادات على تمكين أو تعطيل الخيارات في واجهة المستخدم وكذلك تحديد القيم الافتراضية لهذه الخيارات. تعمل الميزة فقط إذا كان مخدم مودل قابل للوصول إليه من قبل غرف  BBB..';
 $string['config_preuploadpresentation_editable'] = 'التحميل المسبق للعرض قابل للتحرير';
 $string['config_preuploadpresentation_editable_description'] = 'ميزة التحميل المسبق للعرض قابلة للتعديل في واجهة المستخدم عند إضافة أو تحديث الغرفة أو المؤتمر.';
 $string['config_recording'] = 'التهيئة لميزة "تسجيل الاجتماع"';
 $string['config_recording_all_from_start_default'] = 'تسجيل الكل منذ البدء';
-$string['config_recording_all_from_start_default_description'] = 'عند تأشيره، سيتم تسجيل الاجتماع من البدء.';
+$string['config_recording_all_from_start_default_description'] = 'هل يجب تمكين الإعداد "بدء التسجيل من البداية" افتراضيًا عند إضافة غرفة BBB جديدة؟';
 $string['config_recording_all_from_start_editable'] = 'تسجيل الكل منذ البدء يمكن تحريره';
-$string['config_recording_all_from_start_editable_description'] = 'عند تأشيره، ستتضمن الواجهة خيار تمكين أو تعطيل ميزة تسجيل الكل من البدء.';
+$string['config_recording_all_from_start_editable_description'] = 'هل يجب أن يكون "بدء التسجيل من البداية" قابلاً للتعديل في إعدادات نشاط BBB؟';
 $string['config_recording_default'] = 'ميزة التسجيل مُمَكَّنة إفتراضيًا';
-$string['config_recording_default_description'] = 'عند تمكينه، الجلسات المنشأة في غرف اجتماعات BBB ستمتلك إمكانات التسجيل.';
+$string['config_recording_default_description'] = 'هل يجب تمكين الإعداد "يمكن تسجيل الجلسة" افتراضيًا عند إضافة غرفة BBB جديدة؟';
 $string['config_recording_description'] = 'هذه الإعدادات متخصصة بالميزة';
 $string['config_recording_editable'] = 'ميزة التسجيل يمكن تحريرها';
-$string['config_recording_editable_description'] = 'عند تأشيره، ستتضمن الواجهة خيار تمكين أو تعطيل ميزة التسجيل.';
+$string['config_recording_editable_description'] = 'هل يجب أن تكون "الجلسة يمكن تسجيلها" قابلة للتعديل في إعدادات نشاط BBB؟';
 $string['config_recording_hide_button_default'] = 'زر إخفاء التسجيل';
 $string['config_recording_hide_button_default_description'] = 'عند تأشيره، زر التسجيل سيتم إخفاؤه.';
 $string['config_recording_hide_button_editable'] = 'إخفاء زر التسجيل يمكن تحريره';
-$string['config_recording_hide_button_editable_description'] = 'عند تأشيره، ستتضمن الواجهة خيار تمكين أو تعطيل ميزة إخفاء زر التسجيل.';
+$string['config_recording_hide_button_editable_description'] = 'هل يجب أن يكون "إخفاء زر التسجيل" قابلاً للتعديل في إعدادات نشاط BBB؟';
+$string['config_recording_protect_editable'] = 'حالة التسجيلات المحمية يمكن تحريرها';
+$string['config_recording_protect_editable_description'] = 'عند تأشيره، ستتضمن الواجهة خيارًا لحماية/إلغاء حماية التسجيلات.';
+$string['config_recording_refresh_period'] = 'مهلة تنشيط التسجيل (بالثواني)';
+$string['config_recording_refresh_period_description'] = 'ما هو تواتر استقدام البيانات من مخدم Bigbluebutton لتحديث المعلومات لدى المستخدمين بالنسبة إلى التسجيل؟';
 $string['config_recordingready_enabled'] = 'إرسال الإشعارات عند جهوزية التسجيل';
-$string['config_recordingready_enabled_description'] = 'تمكين الملحق من إرسال الإشعارات عندما يصير التسجيل جاهزاً. (هذا يصلح فقط عند تمكين النص البرمجي post_publish_recording_ready_callback في مخدم غرف اجتماعات BBB)';
+$string['config_recordingready_enabled_description'] = 'تمكين الملحق من إرسال الإشعارات عندما يصير التسجيل جاهزاً. (هذا يصلح فقط عند تمكين النص البرمجي post_publish_recording_ready_callback في مخدم غرف  BBB)';
 $string['config_recordings'] = 'التهيئة لميزة "إظهار التسجيلات"';
 $string['config_recordings_deleted_default'] = 'تضمين التسجيلات من النشاطات المحذوفة مُمَكَّن إفتراضيًا';
 $string['config_recordings_deleted_default_description'] = 'عند تمكينه، سيضم جدول التسجيل تسجيلات عائدة إلى نشاطات محذوفة إن وجدت.';
@@ -146,10 +168,6 @@ $string['config_recordings_deleted_editable_description'] = 'تضمين التس
 $string['config_recordings_description'] = 'هذه الإعدادات متخصصة بالميزة';
 $string['config_recordings_general'] = 'إظهار إعدادات التسجيل';
 $string['config_recordings_general_description'] = 'تستعمل هذه الإعدادات فقط عند إظهار التسجيلات';
-$string['config_recordings_html_default'] = 'واجهة المستخدم بشكل html مُمَكَّنة إفتراضيًا';
-$string['config_recordings_html_default_description'] = 'عند تمكينه، سيتم إظهار جدول التسجيل بتنسيق html عادي إفتراضيًا.';
-$string['config_recordings_html_editable'] = 'ميزة واجهة المستخدم بشكل html يمكن تحريرها';
-$string['config_recordings_html_editable_description'] = 'قيمة واجهة المستخدم بشكل html إفتراضيًا يمكن تحريرها عند إضافة المثيل أو تحديثه.';
 $string['config_recordings_imported_default'] = 'إظهار الروابط المستوردة فقط مُمَكَّن إفتراضيًا';
 $string['config_recordings_imported_default_description'] = 'عند تمكينه، جدول التسجيل سيتضمن الروابط المستوردة للتسجيلات فقط.';
 $string['config_recordings_imported_editable'] = 'إظهار الروابط المستوردة فقط يمكن تحريره';
@@ -160,24 +178,18 @@ $string['config_recordings_preview_editable'] = 'يمكن تحرير ميزة ا
 $string['config_recordings_preview_editable_description'] = 'يمكن تحرير ميزة المعاينة عند إضافة النشاط أو تحديثه.';
 $string['config_recordings_sortorder'] = 'ترتيب التسجيلات ترتيباً تصاعدياً.';
 $string['config_recordings_sortorder_description'] = 'إفتراضيًا، يتم عرض التسجيلات تنازلياً. عند التأشير، ستترتب تصاعدياً.';
-$string['config_recordings_validate_url'] = 'التحقق من الرابط';
-$string['config_recordings_validate_url_description'] = 'إذا تم تأشيره، سيتم التحقق من صحة عنوان الرابط الخاص بالتشغيل قبل وصول المستخدم إليه.';
 $string['config_scheduled'] = 'التهيئة لـ "الجلسات المجدولة"';
 $string['config_scheduled_description'] = 'تحدد هذه الإعدادات بعض السلوك الافتراضي للجلسات المجدولة.';
-$string['config_scheduled_duration_compensation'] = 'الوقت التعويضي (بالدقائق)';
-$string['config_scheduled_duration_compensation_description'] = 'الدقائق المضافة إلى الإغلاق المُجدوَل عند احتساب المدة.';
-$string['config_scheduled_duration_enabled'] = 'إحتساب المدة مُمَكَّن';
-$string['config_scheduled_duration_enabled_description'] = 'يتم احتساب مدة الجلسة المجدولة بناءً على وقتي الفتح والإغلاق.';
 $string['config_scheduled_pre_opening'] = 'متاح قبل وقت الفتح (بالدقائق)';
 $string['config_scheduled_pre_opening_description'] = 'الوقت بالدقائق الذي تكون فيه الجلسة متاحة للوصول إليها قبل موعد فتحها.';
 $string['config_sendnotifications'] = 'التهيئة لميزة "إرسال الإشعارات"';
 $string['config_sendnotifications_description'] = 'هذه الإعدادات تقوم بتمكين الخيارات أو تعطيلها في واجهة المستخدم كما تُعرِّف القيم الافتراضية لتلك الخيارات.';
 $string['config_sendnotifications_enabled'] = 'إرسال الإشعارات مُمَكَّن';
 $string['config_sendnotifications_enabled_description'] = 'عند تمكينه، واجهة المستخدم لتحرير النشاط ستتضمن خيار إرسال الإشعارات إلى المستخدمين المنضمين عند إضافة النشاط أو تحريره.';
-$string['config_server_url'] = 'عنوان الرابط لمخدم غرف اجتماعات BBB';
-$string['config_server_url_description'] = 'يجب أن ينتهي عنوان الرابط لمخدم غرف اجتماعات BBB بـ /bigbluebutton/. (عنوان الرابط الافتراضي هذا مخصص لمخدم غرف اجتماعات BBB الذي توفره Blindside Networks والذي يمكنك استعماله لأغراض الاختبار).';
-$string['config_shared_secret'] = 'السر المشارك لـ BigBlueButton';
-$string['config_shared_secret_description'] = 'الشفرة الفريدة لمخدم غرف اجتماعات BBB. (هذ الشفرة الفريدة هي لمخدم غرف اجتماعات BBB الذي توفره Blindside Networks والذي يمكنك استعماله لأغراض الاختبار).';
+$string['config_server_url'] = 'عنوان الرابط لمخدم غرف  BBB';
+$string['config_server_url_description'] = 'يجب أن ينتهي عنوان الرابط لمخدم غرف  BBB بـ /bigbluebutton/. (عنوان الرابط الافتراضي هذا مخصص لمخدم غرف  BBB الذي توفره Blindside Networks والذي يمكنك استعماله لأغراض الاختبار).';
+$string['config_shared_secret'] = 'السر المشارك لـ BBB';
+$string['config_shared_secret_description'] = 'الشفرة الفريدة لمخدم غرف  BBB. (هذ الشفرة الفريدة هي لمخدم غرف  BBB الذي توفره Blindside Networks والذي يمكنك استعماله لأغراض الاختبار).';
 $string['config_uidelegation_enabled'] = 'تفويض واجهة المستخدم مُمَكَّن';
 $string['config_uidelegation_enabled_description'] = 'تعمل هذه الإعدادات على تمكين أو تعطيل تفويض واجهة المستخدم لمخدم غرف اجتماعات BBB.';
 $string['config_userlimit'] = 'التهيئة لميزة "تحديد المستخدمين"';
@@ -197,7 +209,7 @@ $string['config_waitformoderator_default'] = 'إنتظار المشرف مُمَ
 $string['config_waitformoderator_default_description'] = 'ميزة انتظار المشرف مُمَكَّنة إفتراضيًا عند إضافة غرفة أو مؤتمر جديدين.';
 $string['config_waitformoderator_description'] = 'هذه الإعدادات متخصصة بالميزة';
 $string['config_waitformoderator_editable'] = 'ميزة انتظار المشرف يمكن تحريرها';
-$string['config_waitformoderator_editable_description'] = 'ميزة انتظار المشرف إفتراضيًا يمكن تحريرها عند إضافة الغرفة أو المؤتمر أو تحريرهما.';
+$string['config_waitformoderator_editable_description'] = 'هل يجب أن يكون "انتظار الوسيط" قابلاً للتعديل في إعدادات نشاط BBB؟';
 $string['config_waitformoderator_ping_interval'] = 'مدة استغراق إرسال ping لميزة انتظار المشرف (بالثواني)';
 $string['config_waitformoderator_ping_interval_description'] = 'عند تمكين ميزة انتظار المشرف، يقوم المستخدم باختبار حالة الجلسة كل [كذا] ثانية. تحدد هذه المعامل الفاصل الزمني بين الطلبات المقدمة إلى مخدم مودل.';
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'يستعمل BBB الملف config.php مع متغير عام تم إهماله. يرجى تحويل الملف لأنه لن يتم دعمه في الإصدارات المستقبلية';
@@ -206,22 +218,13 @@ $string['config_welcome_default'] = 'رسالة الترحيب الافتراض�
 $string['config_welcome_default_description'] = 'يستبدل الرسالة الافتراضية الموضوعة مسبقاً لمخدم BBB. يمكن للرسالة أن تتضمن الكلمات المفتاحية (%%CONFNAME%%، %%DIALNUM%%، %%CONFNUM%%) والتي سيتم استبدالها تلقائيًا، وكذلك وسوم html مثل <b>...</b> أو <i></i>';
 $string['config_welcome_editable'] = 'يمكن للمعلمين تعديل رسالة الترحيب الافتراضية';
 $string['config_welcome_editable_description'] = 'يمكن تحرير رسالة الترحيب عند إضافة المثيل أو تحديثه';
-$string['email_body_notification_meeting_by'] = 'من قِبَل';
-$string['email_body_notification_meeting_description'] = 'الوصف';
-$string['email_body_notification_meeting_details'] = 'التفاصيل';
-$string['email_body_notification_meeting_end_date'] = 'تاريخ الانتهاء';
-$string['email_body_notification_meeting_has_been'] = 'كان';
-$string['email_body_notification_meeting_start_date'] = 'تاريخ البدء';
-$string['email_body_notification_meeting_title'] = 'العنوان';
-$string['email_body_recording_ready_for'] = 'التسجيل لـ';
-$string['email_body_recording_ready_is_ready'] = 'جاهز';
-$string['email_footer_sent_by'] = 'تم إرسال الإشعار التلقائي هذا بواسطة';
-$string['email_footer_sent_from'] = 'من المقرر الدراسي';
+$string['end_session_confirm'] = 'هل أنت متأكد من رغبتك في إنهاء الجلسة؟';
+$string['end_session_confirm_title'] = 'أحقًا تريد إنهاء الجلسة؟';
+$string['end_session_notification'] = 'لقد تم إنهاء الجلسة.';
 $string['ends_at'] = 'ينتهي';
 $string['event_activity_created'] = 'نشاط تم إنشاؤه';
 $string['event_activity_deleted'] = 'نشاط تم حذفه';
 $string['event_activity_updated'] = 'نشاط تم تحديثه';
-$string['event_activity_viewed'] = 'نشاط تمت معاينته';
 $string['event_live_session'] = 'حدث الجلسة المباشرة';
 $string['event_meeting_created'] = 'اجتماع تم إنشاؤه';
 $string['event_meeting_ended'] = 'اجتماع  تم إنهاؤه قسرًا';
@@ -235,8 +238,13 @@ $string['event_recording_published'] = 'تسجيل تم نشره';
 $string['event_recording_unprotected'] = 'تسجيل تم إلغاء حمايته';
 $string['event_recording_unpublished'] = 'تسجيل تم إلغاء نشره';
 $string['event_recording_viewed'] = 'تسجيل تمت معاينته';
+$string['event_unknown'] = 'حدث غير معلوم';
+$string['general_error_cannot_create_meeting'] = 'يتعذرإنشاء الجلسة.';
+$string['general_error_cannot_get_recordings'] = 'يتعذرإحضار التسجيلات.';
+$string['general_error_no_answer'] = 'استجابة فارغة. لطفًا تحقق من عنوان رابط مخدم BigBlueButton وتأكد من كونه شغال فعلاً.';
 $string['general_error_not_allowed_to_create_instances'] = 'لا يسمح للمستخدم بإنشاء أي نوع من المثيلات.';
-$string['general_error_unable_connect'] = 'غير قادر على الاتصال. يرجى التحقق من عنوان رابط مخدم غرف اجتماعات BBB والتحقق لمعرفة ما إذا كان المخدم قيد التشغيل.';
+$string['general_error_not_found'] = 'المكون غير موجود: {$a}.';
+$string['general_error_unable_connect'] = 'غير قادر على الاتصال. يرجى التحقق من عنوان رابط مخدم غرف  BBB والتحقق لمعرفة ما إذا كان المخدم قيد التشغيل.';
 $string['index_confirm_end'] = 'هل ترغب في إنهاء الصف الافتراضي؟';
 $string['index_disabled'] = 'معطلة';
 $string['index_enabled'] = 'مُمَكَّنة';
@@ -244,9 +252,9 @@ $string['index_ending'] = 'إنهاء الصف الافتراضي ... من فض�
 $string['index_error_bbtn'] = 'مُعرَّف غرف اجتماعات BBB {$a} غير صحيح';
 $string['index_error_checksum'] = 'وقع خطأ عند فحص السلامة. تأكد من أنك قد أدخلت الشفرة الفريدة الصحيحة.';
 $string['index_error_forciblyended'] = 'لا يمكن الانضمام إلى هذه الجلسة لأنه قد قم إنهاؤها يدويًا.';
-$string['index_error_noinstances'] = 'لا توجد مثيلات من غرف اجتماعات BBB';
-$string['index_error_unable_display'] = 'يتعذر عرض الاجتماعات. يرجى التحقق من عنوان الرابط لمخدم غرف اجتماعات BBB والتحقق لمعرفة ما إذا كان المخدم قيد التشغيل.';
-$string['index_heading'] = 'غرف اجتماعات BBB';
+$string['index_error_noinstances'] = 'لا توجد مثيلات من غرف  BBB';
+$string['index_error_unable_display'] = 'يتعذر عرض . يرجى التحقق من عنوان الرابط لمخدم غرف اجتماعات BBB والتحقق لمعرفة ما إذا كان المخدم قيد التشغيل.';
+$string['index_heading'] = 'غرف  BBB';
 $string['index_heading_actions'] = 'الإجراءات';
 $string['index_heading_group'] = 'المجموعة';
 $string['index_heading_moderator'] = 'مشرفون';
@@ -261,11 +269,11 @@ $string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على �
 $string['instance_type_default'] = 'الغرفة / النشاط مع التسجيلات';
 $string['instance_type_recording_only'] = 'التسجيلات فقط';
 $string['instance_type_room_only'] = 'الغرفة / النشاط فقط';
+$string['instanceprofilewithoutrecordings'] = 'نسخة المثيل هذه لا يمكنها عرض التسجيلات';
+$string['messageprovider:instance_updated'] = 'تم تحديث جلسة BBB';
+$string['messageprovider:recording_ready'] = 'تسجيل BBB جاهز للمعاينة';
 $string['minute'] = 'دقيقة';
 $string['minutes'] = 'دقائق';
-$string['mod_form_block_clienttype'] = 'تقنية عميل الويب';
-$string['mod_form_block_clienttype_flash'] = 'العميل المستند إلى تقنية Adobe Flash';
-$string['mod_form_block_clienttype_html5'] = 'العميل المستند إلى تقنية HTML5';
 $string['mod_form_block_general'] = 'الإعدادات العامة';
 $string['mod_form_block_participants'] = 'الدور المعين في أثناء الجلسة الحية';
 $string['mod_form_block_presentation'] = 'محتوى العرض';
@@ -274,7 +282,6 @@ $string['mod_form_block_record'] = 'إعدادات التسجيل';
 $string['mod_form_block_recordings'] = 'معاينة التسجيل';
 $string['mod_form_block_room'] = 'إعدادات النشاط / الغرفة';
 $string['mod_form_block_schedule'] = 'جدوِل الجلسة';
-$string['mod_form_field_block_clienttype'] = 'تقنية عميل الويب';
 $string['mod_form_field_closingtime'] = 'الانضمام مغلق';
 $string['mod_form_field_conference_name'] = 'اسم المؤتمر';
 $string['mod_form_field_disablecam'] = 'تعطيل كاميرات الويب';
@@ -289,7 +296,7 @@ $string['mod_form_field_instanceprofiles'] = 'نوع المثيل';
 $string['mod_form_field_instanceprofiles_help'] = 'حدد النوع لمثيل BBB هذا.';
 $string['mod_form_field_intro'] = 'الوصف';
 $string['mod_form_field_intro_help'] = 'وصف موجز للغرفة أو المؤتمر.';
-$string['mod_form_field_lockonjoin'] = 'تجاهل إعدادات التأمين';
+$string['mod_form_field_lockonjoin'] = 'قفل الإعدادات عند الانضمام';
 $string['mod_form_field_muteonstart'] = 'إكتم الصوت عند البدء';
 $string['mod_form_field_name'] = 'اسم الفصل الافتراضي';
 $string['mod_form_field_nosettings'] = 'لا يمكن تعديل أي إعدادات';
@@ -298,8 +305,6 @@ $string['mod_form_field_notification_created_help'] = 'أرسل إشعاراً �
 $string['mod_form_field_notification_help'] = 'أرسل إشعاراً إلى كل المستخدمين المنضمين لإعلامهم بإضافة هذا النشاط أو تحديثه';
 $string['mod_form_field_notification_modified_help'] = 'أرسل إشعاراً إلى كل المستخدمين المنضمين لإعلامهم بأنه تم تحديث هذا النشاط';
 $string['mod_form_field_notification_msg_at'] = 'في';
-$string['mod_form_field_notification_msg_created'] = 'تمت إضافته';
-$string['mod_form_field_notification_msg_modified'] = 'تم تحديثه';
 $string['mod_form_field_openingtime'] = 'الانضمام مفتوح';
 $string['mod_form_field_participant_add'] = 'أضف دوراً خاصًاً';
 $string['mod_form_field_participant_bbb_role_moderator'] = 'مشرف';
@@ -324,7 +329,7 @@ $string['mod_form_field_userlimit'] = 'محدد المستخدمين';
 $string['mod_form_field_userlimit_help'] = 'الحد الأقصى لعدد المستخدمين المسموح به في الاجتماع. إذا تم تعيين الحد على 0، فسيكون عدد المستخدمين غير محدود.';
 $string['mod_form_field_voicebridge'] = 'الجسرالصوتي [####]';
 $string['mod_form_field_voicebridge_format_error'] = 'خطأ في التنسيق. ينبغي أن تدخل رقماً من 1 حتى 9999.';
-$string['mod_form_field_voicebridge_help'] = 'رقم المؤتمر الصوتي الذي يدخله المشاركون للانضمام إلى المؤتمر الصوتي عند استعمال الاتصال الهاتفي. يجب كتابة رقم بين 1 و 9999. إذا كانت القيمة تساوي 0، فسيتم تجاهل رقم جسر الصوت الثابت وسيتم إنشاء رقم عشوائي بواسطة غرف اجتماعات BBB. سيسبق الرقم 7 الأرقام الأربعة المكتوبة.';
+$string['mod_form_field_voicebridge_help'] = 'رقم المؤتمر الصوتي الذي يدخله المشاركون للانضمام إلى المؤتمر الصوتي عند استعمال الاتصال الهاتفي. يجب كتابة رقم بين 1 و 9999. إذا كانت القيمة تساوي 0، فسيتم تجاهل رقم جسر الصوت الثابت وسيتم إنشاء رقم عشوائي بواسطة غرف  BBB. سيسبق الرقم 7 الأرقام الأربعة المكتوبة.';
 $string['mod_form_field_voicebridge_notunique_error'] = 'ليست قيمة فريدة. هذا الرقم مستعمل من قبل غرفة أو مؤتمر آخر.';
 $string['mod_form_field_wait'] = 'انتظر المشرف';
 $string['mod_form_field_wait_help'] = 'يجب على المشاهدين الانتظار حتى يدخل المشرف الجلسة قبل أن يتمكنوا من القيام بذلك';
@@ -337,12 +342,28 @@ $string['modulename_help'] = 'يتيح لك BigBlueButton إنشاء روابط 
 
 باستعمال BigBlueButton، يمكنك تحديد العنوان والوصف ومُدخل التقويم (الذي يعطي نطاقًا زمنيًا للانضمام إلى الجلسة) والمجموعات وتفاصيل تسجيل الجلسة عبر الإنترنت.';
 $string['modulenameplural'] = 'BBB';
+$string['new_bigblubuttonbn_activities'] = 'نشاط BBB';
+$string['nosuchinstance'] = 'ليس هناك مثيل كـ {$a->entity} بالمُعرَّف: {$a->id}';
+$string['notification_instance_created_intro'] = 'لقد تم إنشاء غرفة BigBlueButton <a href="{$a->link}">{$a->name}</a>.';
+$string['notification_instance_created_small'] = 'لقد تم إنشاء غرفة BigBlueButton جديدة بالتسمية {$a->name}';
+$string['notification_instance_created_subject'] = 'لقد تم إنشاء غرفة BigBlueButton جديدة';
+$string['notification_instance_description'] = 'الوصف';
+$string['notification_instance_end_date'] = 'تاريخ الإنهاء';
+$string['notification_instance_name'] = 'العنوان';
+$string['notification_instance_start_date'] = 'تاريخ البدء';
+$string['notification_instance_updated_intro'] = 'تم تحديث غرفة BigBlueButton <a href="{$a->link}">{$a->name}</a>.';
+$string['notification_instance_updated_small'] = 'تم تحديث جلسة BigBlueButton {$a->name}.';
+$string['notification_instance_updated_subject'] = 'تم تحديث غرفتك في BigBlueButton.';
+$string['notification_recording_ready_html'] = 'هناك تسجيل متاح للجلسة في غرفة BBB <b><a href="{$a->link}">{$a->name}</a></b>.';
+$string['notification_recording_ready_plain'] = 'هناك تسجيل متاح للجلسة التي في غرفة BBB {$a->name}. إذهب إلى {$a->link} للوصول إلى رابط التسجيل.';
+$string['notification_recording_ready_small'] = 'هناك تسجيل جديد متاح لغرفة BigBlueButton {$a->name}.';
+$string['notification_recording_ready_subject'] = 'التسجيل متاح';
 $string['pluginadministration'] = 'إدارة غرف اجتماعات BBB';
 $string['pluginname'] = 'BBB';
 $string['privacy:metadata:bigbluebutton'] = 'من أجل إنشاء جلسات غرف اجتماعات BBB والانضمام إليها، يجب تبادل بيانات المستخدم مع المخدم.';
-$string['privacy:metadata:bigbluebutton:fullname'] = 'الاسم الكامل للمستخدم الذي يصل إلى مخدم غرف اجتماعات BBB';
-$string['privacy:metadata:bigbluebutton:userid'] = 'مُعرَّف المستخدم الذي يقوم بالوصول إلى مخدم غرف اجتماعات BBB';
-$string['privacy:metadata:bigbluebuttonbn'] = 'يخزن إعدادات الغرفة أو النشاط الذي يحدد الميزات والسلوك العام لجلسة غرف اجتماعات BBB';
+$string['privacy:metadata:bigbluebutton:fullname'] = 'الاسم الكامل للمستخدم الذي يصل إلى مخدم غرف  BBB';
+$string['privacy:metadata:bigbluebutton:userid'] = 'مُعرَّف المستخدم الذي يقوم بالوصول إلى مخدم غرف  BBB';
+$string['privacy:metadata:bigbluebuttonbn'] = 'يخزن إعدادات الغرفة أو النشاط الذي يحدد الميزات والسلوك العام لجلسة غرف  BBB';
 $string['privacy:metadata:bigbluebuttonbn:participants'] = 'قائمة القواعد التي تحدد أدوار المستخدمين في الجلسة المباشرة. يمكن خزن مُعرَّف المستخدم بمثابة صلاحيات يمكن منحها للدور أو للمستخدم';
 $string['privacy:metadata:bigbluebuttonbn_logs'] = 'يخزن الأحداث الناتجة عن استعمال الملحق';
 $string['privacy:metadata:bigbluebuttonbn_logs:log'] = 'نوع الحدث الذي أطلقه المستخدم';
@@ -350,6 +371,10 @@ $string['privacy:metadata:bigbluebuttonbn_logs:meetingid'] = 'مُعرَّف ا�
 $string['privacy:metadata:bigbluebuttonbn_logs:meta'] = 'قد يتضمن معلومات إضافية عن الاجتماع أو التسجيل المتأثر بالحدث.';
 $string['privacy:metadata:bigbluebuttonbn_logs:timecreated'] = 'الوقت الذي تم فيه إنشاء سجل الوقوعات';
 $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'مُعرَّف المستخدم الذي أثار الحدث';
+$string['privacy:metadata:bigbluebuttonbn_recordings'] = 'يخزن البيانات الوصفية للتسجيلات';
+$string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'مُعرَّف المستخدم الذي أجرى آخر تغيير في التسجيل';
+$string['recordings_from_deleted_activities'] = 'التسجيلات من النشاطات المحذوفة';
+$string['recordingurlnotfound'] = 'عنوان رابط الاجتماع غير صالح.';
 $string['removedevents'] = 'الأحداث المحذوفة';
 $string['removedlogs'] = 'سجلات الوقوعات المخصصة المحذوفة';
 $string['removedrecordings'] = 'التسجيلات المحذوفة';
@@ -363,13 +388,16 @@ $string['resettags'] = 'حذف الوسوم';
 $string['search:activity'] = 'BBB - معلومات النشاط';
 $string['search:tags'] = 'BBB - معلومات الوسوم';
 $string['sendnotification'] = 'إرسال الإشعار';
+$string['settings'] = 'إعدادات BigBlueButton';
 $string['started_at'] = 'بدأت';
 $string['starts_at'] = 'تبدأ';
+$string['taskname:check_pending_recordings'] = 'إحضار التسجيلات التي قيد الانتظار';
+$string['userlimitreached'] = 'تم بلوغ العدد المسموح به من المستخدمين في الجلسة.';
 $string['view_conference_action_end'] = 'إنهاء الجلسة';
 $string['view_conference_action_join'] = 'انضم إلى الجلسة';
 $string['view_error_action_not_completed'] = 'تعذر إكمال الإجراء';
 $string['view_error_bigbluebutton'] = 'استجاب BigBlueButton مع وجود أخطاء. {$a}';
-$string['view_error_create'] = 'استجاب مخدم غرف اجتماعات BBB برسالة خطأ، وتعذر إنشاء الاجتماع.';
+$string['view_error_create'] = 'استجاب مخدم غرف  BBB برسالة خطأ، وتعذر إنشاء الاجتماع.';
 $string['view_error_current_state_not_found'] = 'لم يتم العثور على الحالة الحالية. ربما تم حذف التسجيل أو أن مخدم غرف اجتماعات BBB غير متوافق مع الإجراء المنفذ.';
 $string['view_error_import_no_courses'] = 'لا توجد مقررات دراسية للبحث فيها عن التسجيلات';
 $string['view_error_import_no_recordings'] = 'لا توجد تسجيلات في هذا المقرر الدراسي لاستيرادها';
@@ -379,9 +407,9 @@ $string['view_error_meeting_not_running'] = 'هناك خطأ ما، الاجتم
 $string['view_error_no_group'] = 'ليست هناك مجموعات مُعرَّفة بعد. يرجى تعيين المجموعات قبل محاولة الانضمام إلى الاجتماع.';
 $string['view_error_no_group_student'] = 'لستَ منضمًا إلى أي مجموعة. يرجى التوال مع معلمك أو مع المشرف.';
 $string['view_error_no_group_teacher'] = 'ليست هناك مجموعات مُعرَّفة بعد. يرجى تعيين المجموعات أو التواصل مع المشرف.';
-$string['view_error_unable_join'] = 'تعذر الانضمام إلى الاجتماع. يرجى التحقق من عنوان الرابط لمخدم غرف اجتماعات BBB والتحقق لمعرفة ما إذا كان المخدم قيد التشغيل.';
-$string['view_error_unable_join_student'] = 'تعذر الاتصال بمخدم غرف اجتماعات BBB. يرجى الاتصال بالمعلم أو المشرف.';
-$string['view_error_unable_join_teacher'] = 'تعذر الاتصال بمخدم غرف اجتماعات BBB. يرجى الاتصال بالمشرف.';
+$string['view_error_unable_join'] = 'تعذر الانضمام إلى الاجتماع. يرجى التحقق من عنوان الرابط لمخدم غرف  BBB والتحقق لمعرفة ما إذا كان المخدم قيد التشغيل.';
+$string['view_error_unable_join_student'] = 'تعذر الاتصال بمخدم غرف  BBB. يرجى الاتصال بالمعلم أو المشرف.';
+$string['view_error_unable_join_teacher'] = 'تعذر الاتصال بمخدم غرف  BBB. يرجى الاتصال بالمشرف.';
 $string['view_error_url_missing_parameters'] = 'هناك معاملات مفقودة في عنوان الرابط هذا';
 $string['view_error_userlimit_reached'] = 'لقد تم الوصول إلى العدد المسموح به من المستخدمين في الاجتماع.';
 $string['view_groups_nogroups_warning'] = 'لقد تمت تهيئة الغرفة لاستعمال المجموعات ولكن لم يتم تعريف أي منها في المقرر الدراسي.';
@@ -427,7 +455,7 @@ $string['view_message_viewer'] = 'من المشاهدين';
 $string['view_message_viewers'] = 'من المشاهدين';
 $string['view_mobile_message_groups_not_supported'] = 'تم تمكين هذا المثيل للعمل مع المجموعات، ولكن لا يدعم تطبيق الجوال ذلك. يرجى فتحه من سطح المكتب إن كنت ترغب باستعمال الدعم للمجموعات.';
 $string['view_mobile_message_reload_page_creation_time_meeting'] = 'لقد تجاوزت الدقائق 45 في هذه الصفحة، يرجى إعادة تحميلها للانضمام إلى الاجتماع بشكل صحيح.';
-$string['view_noguests'] = 'BBB غير مفتوح للضيوف';
+$string['view_noguests'] = 'غرفة BBB غير مفتوحة للضيوف.';
 $string['view_nojoin'] = 'لستَ بدورٍ يسمح لك بالانضمام إلى هذه الجلسة.';
 $string['view_recording'] = 'التسجيل';
 $string['view_recording_actionbar'] = 'شريط الأدوات';
@@ -440,6 +468,8 @@ $string['view_recording_delete_confirmation'] = 'هل أنت متأكد من ر�
 $string['view_recording_delete_confirmation_warning_p'] = 'يرتبط هذا التسجيل مع {$a} من الروابط التي تم استيرادها إلى مقررات أو نشاطات مختلفة. إذا تم حذف التسجيل، ستتم إزالة تلك الروابط أيضًا';
 $string['view_recording_delete_confirmation_warning_s'] = 'يرتبط هذا التسجيل مع {$a} من الروابط التي تم استيرادها إلى مقرر أو نشاط مختلف. إذا تم حذف التسجيل، ستتم إزالة ذلك الرابط أيضًا';
 $string['view_recording_description'] = 'الوصف';
+$string['view_recording_description_edithint'] = 'بالإمكان إضافة وصف للمساعدة في التعرف على التسجيل.';
+$string['view_recording_description_editlabel'] = 'تحرير الوصف';
 $string['view_recording_duration'] = 'المدة';
 $string['view_recording_duration_min'] = 'دقيقة';
 $string['view_recording_format_errror_unreachable'] = 'يتعذر الوصول إلى عنوان الرابط لتنسيق التسجيل هذا.';
@@ -481,14 +511,26 @@ $string['view_recording_meeting'] = 'الاجتماع';
 $string['view_recording_modal_button'] = 'تطبيق';
 $string['view_recording_modal_title'] = 'تعيين القيم للتسجيل';
 $string['view_recording_name'] = 'الاسم';
+$string['view_recording_name_edithint'] = 'يمكن إضافة اسم للمساعدة في التعرف على التسجيل.';
+$string['view_recording_name_editlabel'] = 'تحرير الاسم';
 $string['view_recording_playback'] = 'تشغيل';
 $string['view_recording_preview'] = 'معاينة';
 $string['view_recording_preview_help'] = 'قم بالمرور فوق الصورة لمشاهدتها بالحجم الكامل';
-$string['view_recording_publish_link_deleted'] = 'لا يمكن إعادة نشر هذا الرابط لأن التسجيل الفعلي غير موجود في مخدم غرف اجتماعات BBB الحالي. يجب إزالة الرابط.';
+$string['view_recording_protect_confirmation'] = 'هل أنت متأكد من رغبتك في حماية {$a} هذا ؟';
+$string['view_recording_protect_confirmation_warning_p'] = 'يحتوي هذا التسجيل على روابط {$a} متعلقة به سبق وأن تم استيرادها إلى مساقات أو نشاطات مختلفة. إذا كان التسجيل محميًا فسيؤثر هذا أيضًا على الروابط المستوردة.';
+$string['view_recording_protect_confirmation_warning_s'] = 'يحتوي هذا التسجيل على رابط {$a} متعلق به سبق وأن تم استيراده إلى مساق أو نشاط مختلف. إذا كان التسجيل محميًا فسيؤثر هذا أيضًا على الروابط المستوردة.';
+$string['view_recording_publish_confirmation'] = 'هل أنت متأكد من رغبتك في نشر {$a} هذا؟';
+$string['view_recording_publish_confirmation_warning_p'] = 'يحتوي هذا التسجيل على روابط {$a} متعلقة به سبق وأن تم استيرادها إلى مساقات أو نشاطات مختلفة. إذا كان التسجيل منشورًا فستصير تلك الروابط منشورة أيضًا.';
+$string['view_recording_publish_confirmation_warning_s'] = 'يحتوي هذا التسجيل على رابط {$a} متعلق به سبق وأن تم استيراده إلى مساق أو نشاط مختلف. إذا كان التسجيل منشورًا فسيصير ذلك الرابط منشورًا أيضًا';
+$string['view_recording_publish_link_deleted'] = 'لا يمكن إعادة نشر هذا الرابط لأن التسجيل الفعلي غير موجود في مخدم غرف  BBB الحالي. يجب إزالة الرابط.';
 $string['view_recording_publish_link_not_published'] = 'لا يمكن إعادة نشر الرابط لأن التسجيل الفعلي ليس منشورًا';
 $string['view_recording_recording'] = 'التسجيل';
+$string['view_recording_select_course'] = 'إختر المساق أولاً في الائمة المنسدلة';
 $string['view_recording_tags'] = 'الوسوم';
-$string['view_recording_unprotect_link_deleted'] = 'لا يمكن إلغاء حماية هذا الرابط لأن التسجيل الفعلي غير موجود في مخدم غرف اجتماعات BBB الحالي. يجب إزالة الرابط.';
+$string['view_recording_unprotect_confirmation'] = 'هل أنت متأكد من رغبتك في إلغاء حماية {$a} هذا؟';
+$string['view_recording_unprotect_confirmation_warning_p'] = 'يحتوي هذا التسجيل على روابط {$a} متعلقة به سبق وأن تم استيرادها إلى مساقات أو نشاطات مختلفة. إذا كان التسجيل غير محمي فسيؤثر هذا أيضًا على الروابط المستوردة.';
+$string['view_recording_unprotect_confirmation_warning_s'] = 'يحتوي هذا التسجيل على رابط {$a} متعلق به سبق وأن تم استيراده إلى مساق أو نشاط مختلف. إذا كان التسجيل غير محمي فسيؤثر هذا أيضًا على الروابط المستوردة.';
+$string['view_recording_unprotect_link_deleted'] = 'لا يمكن إلغاء حماية هذا الرابط لأن التسجيل الفعلي غير موجود في مخدم غرف  BBB الحالي. يجب إزالة الرابط.';
 $string['view_recording_unprotect_link_not_unprotected'] = 'لا يمكن إلغاء الحماية عن هذا الرابط لأن التسجيل الفعلي محمي';
 $string['view_recording_unpublish_confirmation'] = 'هل أنت متأكد من رغبتك في إلغاء نشر {$a}؟';
 $string['view_recording_unpublish_confirmation_warning_p'] = 'يرتبط هذا التسجيل مع {$a} من الروابط التي تم استيرادها إلى مقررات أو نشاطات مختلفة. إذا تم إلغاء نشر التسجيل، سيتم إلغاء نشر تلك الروابط أيضًا';
@@ -504,4 +546,5 @@ $string['view_recording_yui_show_all'] = 'إظهار الكل';
 $string['view_room'] = 'معاينة الغرفة';
 $string['view_section_title_presentation'] = 'ملف العرض';
 $string['view_section_title_recordings'] = 'التسجيلات';
-$string['view_warning_default_server'] = 'يستفيد مخدم مودل هذا من مخدم اختبار غرف اجتماعات BBB الذي يأتي مسبق التهيئة إفتراضيًا. يجب استبداله للإنتاج.';
+$string['view_warning_default_server'] = 'يستفيد مخدم مودل هذا من مخدم اختبار غرف  BBB الذي يأتي مسبق التهيئة إفتراضيًا. يجب استبداله للإنتاج.';
+$string['waitformoderator'] = 'بانتظار المشرف لينضم.';
