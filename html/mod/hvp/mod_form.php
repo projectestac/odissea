@@ -31,7 +31,9 @@ class mod_hvp_mod_form extends moodleform_mod {
 
         // XTEC ************ AFEGIT - Block creation of HVP content
         // 2022.03.24 @aginard
-        print_error('hvpdisabled', 'local_agora');
+        if (!is_xtecadmin()) {
+            print_error('hvpdisabled', 'local_agora');
+        }
         // ************ FI
 
         global $CFG, $COURSE, $PAGE;
