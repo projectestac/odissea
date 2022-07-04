@@ -116,6 +116,12 @@ class upload_files extends \core_form\dynamic_form {
             $maxareabytes = FILE_AREA_MAX_BYTES_UNLIMITED;
         }
 
+        // XTEC ************ AFEGIT - Ignore file size limits in content bank (MDL-69722)
+        // 2022.07.04 @aginard
+        $maxbytes = USER_CAN_IGNORE_FILE_SIZE_LIMITS;
+        $maxareabytes = FILE_AREA_MAX_BYTES_UNLIMITED;
+        // ************ FI
+
         $cb = new \core_contentbank\contentbank();
         $id = $this->optional_param('id', null, PARAM_INT);
         if ($id) {

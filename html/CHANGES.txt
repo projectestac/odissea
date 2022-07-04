@@ -4,6 +4,11 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 22.07.04
+---------------------------------------------------------------------------------------
+- Ignore file size limits in content bank
+
+
 Changes 22.06.30
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 3.11.7+
