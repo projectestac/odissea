@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 12.9 (Ubuntu 12.9-0ubuntu0.20.04.1)
--- Dumped by pg_dump version 12.9 (Ubuntu 12.9-0ubuntu0.20.04.1)
+-- Dumped from database version 12.12 (Ubuntu 12.12-0ubuntu0.20.04.1)
+-- Dumped by pg_dump version 12.12 (Ubuntu 12.12-0ubuntu0.20.04.1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -1209,6 +1209,396 @@ CREATE SEQUENCE public.m2assignsubmission_onlinetext_id_seq
 --
 
 ALTER SEQUENCE public.m2assignsubmission_onlinetext_id_seq OWNED BY public.m2assignsubmission_onlinetext.id;
+
+
+--
+-- Name: m2assignsubmission_snap; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2assignsubmission_snap (
+    id bigint NOT NULL,
+    assignment bigint DEFAULT 0 NOT NULL,
+    submission bigint DEFAULT 0 NOT NULL,
+    snap_xmlproject text
+);
+
+
+--
+-- Name: TABLE m2assignsubmission_snap; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2assignsubmission_snap IS 'Info about Snap! submission';
+
+
+--
+-- Name: m2assignsubmission_snap_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2assignsubmission_snap_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2assignsubmission_snap_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2assignsubmission_snap_id_seq OWNED BY public.m2assignsubmission_snap.id;
+
+
+--
+-- Name: m2attendance; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2attendance (
+    id bigint NOT NULL,
+    course bigint DEFAULT 0 NOT NULL,
+    name character varying(255),
+    grade bigint DEFAULT 100 NOT NULL,
+    timemodified bigint DEFAULT 0 NOT NULL,
+    intro text,
+    introformat smallint DEFAULT 0 NOT NULL,
+    subnet character varying(255),
+    sessiondetailspos character varying(5) DEFAULT 'left'::character varying NOT NULL,
+    showsessiondetails smallint DEFAULT 1 NOT NULL,
+    showextrauserdetails smallint DEFAULT 1 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2attendance; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2attendance IS 'Attendance module table';
+
+
+--
+-- Name: m2attendance_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2attendance_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2attendance_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2attendance_id_seq OWNED BY public.m2attendance.id;
+
+
+--
+-- Name: m2attendance_log; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2attendance_log (
+    id bigint NOT NULL,
+    sessionid bigint DEFAULT 0 NOT NULL,
+    studentid bigint DEFAULT 0 NOT NULL,
+    statusid bigint DEFAULT 0 NOT NULL,
+    statusset character varying(1333),
+    timetaken bigint DEFAULT 0 NOT NULL,
+    takenby bigint DEFAULT 0 NOT NULL,
+    remarks character varying(255),
+    ipaddress character varying(45) DEFAULT ''::character varying
+);
+
+
+--
+-- Name: TABLE m2attendance_log; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2attendance_log IS 'attendance_log table retrofitted from MySQL';
+
+
+--
+-- Name: m2attendance_log_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2attendance_log_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2attendance_log_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2attendance_log_id_seq OWNED BY public.m2attendance_log.id;
+
+
+--
+-- Name: m2attendance_rotate_passwords; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2attendance_rotate_passwords (
+    id bigint NOT NULL,
+    attendanceid bigint NOT NULL,
+    password character varying(20) DEFAULT ''::character varying NOT NULL,
+    expirytime bigint NOT NULL
+);
+
+
+--
+-- Name: TABLE m2attendance_rotate_passwords; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2attendance_rotate_passwords IS 'Table to hold temporary passwords for rotate QR code feature.';
+
+
+--
+-- Name: m2attendance_rotate_passwords_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2attendance_rotate_passwords_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2attendance_rotate_passwords_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2attendance_rotate_passwords_id_seq OWNED BY public.m2attendance_rotate_passwords.id;
+
+
+--
+-- Name: m2attendance_sessions; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2attendance_sessions (
+    id bigint NOT NULL,
+    attendanceid bigint DEFAULT 0 NOT NULL,
+    groupid bigint DEFAULT 0 NOT NULL,
+    sessdate bigint DEFAULT 0 NOT NULL,
+    duration bigint DEFAULT 0 NOT NULL,
+    lasttaken bigint,
+    lasttakenby bigint DEFAULT 0 NOT NULL,
+    timemodified bigint,
+    description text NOT NULL,
+    descriptionformat smallint DEFAULT 0 NOT NULL,
+    studentscanmark smallint DEFAULT 0 NOT NULL,
+    autoassignstatus smallint DEFAULT 0 NOT NULL,
+    studentpassword character varying(50) DEFAULT ''::character varying,
+    subnet character varying(255),
+    automark smallint DEFAULT 0 NOT NULL,
+    automarkcompleted smallint DEFAULT 0 NOT NULL,
+    statusset integer DEFAULT 0 NOT NULL,
+    absenteereport smallint DEFAULT 1 NOT NULL,
+    preventsharedip smallint DEFAULT 0 NOT NULL,
+    preventsharediptime bigint,
+    caleventid bigint DEFAULT 0 NOT NULL,
+    calendarevent smallint DEFAULT 1 NOT NULL,
+    includeqrcode smallint DEFAULT 0 NOT NULL,
+    rotateqrcode smallint DEFAULT 0 NOT NULL,
+    rotateqrcodesecret character varying(10),
+    automarkcmid bigint DEFAULT 0
+);
+
+
+--
+-- Name: TABLE m2attendance_sessions; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2attendance_sessions IS 'attendance_sessions table';
+
+
+--
+-- Name: m2attendance_sessions_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2attendance_sessions_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2attendance_sessions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2attendance_sessions_id_seq OWNED BY public.m2attendance_sessions.id;
+
+
+--
+-- Name: m2attendance_statuses; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2attendance_statuses (
+    id bigint NOT NULL,
+    attendanceid bigint DEFAULT 0 NOT NULL,
+    acronym character varying(2) DEFAULT ''::character varying NOT NULL,
+    description character varying(30) DEFAULT ''::character varying NOT NULL,
+    grade numeric(5,2) DEFAULT 0 NOT NULL,
+    studentavailability bigint,
+    setunmarked smallint,
+    visible smallint DEFAULT 1 NOT NULL,
+    deleted smallint DEFAULT 0 NOT NULL,
+    setnumber integer DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2attendance_statuses; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2attendance_statuses IS 'attendance_statuses table retrofitted from MySQL';
+
+
+--
+-- Name: m2attendance_statuses_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2attendance_statuses_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2attendance_statuses_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2attendance_statuses_id_seq OWNED BY public.m2attendance_statuses.id;
+
+
+--
+-- Name: m2attendance_tempusers; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2attendance_tempusers (
+    id bigint NOT NULL,
+    studentid bigint,
+    courseid bigint,
+    fullname character varying(100),
+    email character varying(100),
+    created bigint
+);
+
+
+--
+-- Name: TABLE m2attendance_tempusers; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2attendance_tempusers IS 'Stores temporary users details';
+
+
+--
+-- Name: m2attendance_tempusers_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2attendance_tempusers_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2attendance_tempusers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2attendance_tempusers_id_seq OWNED BY public.m2attendance_tempusers.id;
+
+
+--
+-- Name: m2attendance_warning; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2attendance_warning (
+    id bigint NOT NULL,
+    idnumber bigint NOT NULL,
+    warningpercent bigint NOT NULL,
+    warnafter bigint NOT NULL,
+    maxwarn bigint DEFAULT 1 NOT NULL,
+    emailuser smallint NOT NULL,
+    emailsubject character varying(255) DEFAULT ''::character varying NOT NULL,
+    emailcontent text NOT NULL,
+    emailcontentformat smallint NOT NULL,
+    thirdpartyemails text
+);
+
+
+--
+-- Name: TABLE m2attendance_warning; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2attendance_warning IS 'Warning configuration';
+
+
+--
+-- Name: m2attendance_warning_done; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2attendance_warning_done (
+    id bigint NOT NULL,
+    notifyid bigint NOT NULL,
+    userid bigint NOT NULL,
+    timesent bigint NOT NULL
+);
+
+
+--
+-- Name: TABLE m2attendance_warning_done; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2attendance_warning_done IS 'Warnings processed';
+
+
+--
+-- Name: m2attendance_warning_done_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2attendance_warning_done_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2attendance_warning_done_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2attendance_warning_done_id_seq OWNED BY public.m2attendance_warning_done.id;
+
+
+--
+-- Name: m2attendance_warning_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2attendance_warning_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2attendance_warning_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2attendance_warning_id_seq OWNED BY public.m2attendance_warning.id;
 
 
 --
@@ -7710,7 +8100,7 @@ CREATE TABLE public.m2grade_categories (
     aggregateoutcomes smallint DEFAULT 0 NOT NULL,
     timecreated bigint NOT NULL,
     timemodified bigint NOT NULL,
-    hidden smallint DEFAULT 0 NOT NULL
+    hidden bigint DEFAULT 0 NOT NULL
 );
 
 
@@ -7743,7 +8133,7 @@ CREATE TABLE public.m2grade_categories_history (
     aggregateonlygraded smallint DEFAULT 0 NOT NULL,
     aggregateoutcomes smallint DEFAULT 0 NOT NULL,
     aggregatesubcats smallint DEFAULT 0 NOT NULL,
-    hidden smallint DEFAULT 0 NOT NULL
+    hidden bigint DEFAULT 0 NOT NULL
 );
 
 
@@ -9265,7 +9655,9 @@ CREATE TABLE public.m2hotpot (
     timemodified bigint DEFAULT 0 NOT NULL,
     completionmingrade numeric(6,2) DEFAULT 0.00 NOT NULL,
     completionpass smallint DEFAULT 0 NOT NULL,
-    completioncompleted smallint DEFAULT 0 NOT NULL
+    completioncompleted smallint DEFAULT 0 NOT NULL,
+    intro text,
+    introformat smallint DEFAULT 0 NOT NULL
 );
 
 
@@ -10516,7 +10908,7 @@ CREATE TABLE public.m2journal_entries (
     modified bigint DEFAULT 0 NOT NULL,
     text text NOT NULL,
     format smallint DEFAULT 0 NOT NULL,
-    rating bigint,
+    rating bigint DEFAULT '-1'::integer,
     entrycomment text,
     teacher bigint DEFAULT 0 NOT NULL,
     timemarked bigint DEFAULT 0 NOT NULL,
@@ -22846,6 +23238,69 @@ ALTER TABLE ONLY public.m2assignsubmission_onlinetext ALTER COLUMN id SET DEFAUL
 
 
 --
+-- Name: m2assignsubmission_snap id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2assignsubmission_snap ALTER COLUMN id SET DEFAULT nextval('public.m2assignsubmission_snap_id_seq'::regclass);
+
+
+--
+-- Name: m2attendance id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance ALTER COLUMN id SET DEFAULT nextval('public.m2attendance_id_seq'::regclass);
+
+
+--
+-- Name: m2attendance_log id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_log ALTER COLUMN id SET DEFAULT nextval('public.m2attendance_log_id_seq'::regclass);
+
+
+--
+-- Name: m2attendance_rotate_passwords id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_rotate_passwords ALTER COLUMN id SET DEFAULT nextval('public.m2attendance_rotate_passwords_id_seq'::regclass);
+
+
+--
+-- Name: m2attendance_sessions id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_sessions ALTER COLUMN id SET DEFAULT nextval('public.m2attendance_sessions_id_seq'::regclass);
+
+
+--
+-- Name: m2attendance_statuses id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_statuses ALTER COLUMN id SET DEFAULT nextval('public.m2attendance_statuses_id_seq'::regclass);
+
+
+--
+-- Name: m2attendance_tempusers id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_tempusers ALTER COLUMN id SET DEFAULT nextval('public.m2attendance_tempusers_id_seq'::regclass);
+
+
+--
+-- Name: m2attendance_warning id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_warning ALTER COLUMN id SET DEFAULT nextval('public.m2attendance_warning_id_seq'::regclass);
+
+
+--
+-- Name: m2attendance_warning_done id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_warning_done ALTER COLUMN id SET DEFAULT nextval('public.m2attendance_warning_done_id_seq'::regclass);
+
+
+--
 -- Name: m2auth_oauth2_linked_login id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -26397,7 +26852,7 @@ COPY public.m2analytics_train_samples (id, modelid, analysableid, timesplitting,
 --
 
 COPY public.m2analytics_used_analysables (id, modelid, action, analysableid, firstanalysis, timeanalysed) FROM stdin;
-1	2	prediction	1	1637234391	1650457809
+1	2	prediction	1	1637234391	1663840833
 \.
 
 
@@ -26558,6 +27013,82 @@ COPY public.m2assignsubmission_file (id, assignment, submission, numfiles) FROM 
 --
 
 COPY public.m2assignsubmission_onlinetext (id, assignment, submission, onlinetext, onlineformat) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2assignsubmission_snap; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2assignsubmission_snap (id, assignment, submission, snap_xmlproject) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2attendance; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2attendance (id, course, name, grade, timemodified, intro, introformat, subnet, sessiondetailspos, showsessiondetails, showextrauserdetails) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2attendance_log; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2attendance_log (id, sessionid, studentid, statusid, statusset, timetaken, takenby, remarks, ipaddress) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2attendance_rotate_passwords; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2attendance_rotate_passwords (id, attendanceid, password, expirytime) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2attendance_sessions; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2attendance_sessions (id, attendanceid, groupid, sessdate, duration, lasttaken, lasttakenby, timemodified, description, descriptionformat, studentscanmark, autoassignstatus, studentpassword, subnet, automark, automarkcompleted, statusset, absenteereport, preventsharedip, preventsharediptime, caleventid, calendarevent, includeqrcode, rotateqrcode, rotateqrcodesecret, automarkcmid) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2attendance_statuses; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2attendance_statuses (id, attendanceid, acronym, description, grade, studentavailability, setunmarked, visible, deleted, setnumber) FROM stdin;
+1	0	P	Present	2.00	\N	\N	1	0	0
+2	0	A	Absent	0.00	\N	\N	1	0	0
+3	0	T	Tard	1.00	\N	\N	1	0	0
+4	0	J	Justificat	1.00	\N	\N	1	0	0
+\.
+
+
+--
+-- Data for Name: m2attendance_tempusers; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2attendance_tempusers (id, studentid, courseid, fullname, email, created) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2attendance_warning; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2attendance_warning (id, idnumber, warningpercent, warnafter, maxwarn, emailuser, emailsubject, emailcontent, emailcontentformat, thirdpartyemails) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2attendance_warning_done; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2attendance_warning_done (id, notifyid, userid, timesent) FROM stdin;
 \.
 
 
@@ -26910,7 +27441,8 @@ COPY public.m2cache_filters (id, filter, version, md5key, rawtext, timemodified)
 --
 
 COPY public.m2cache_flags (id, flagtype, name, timemodified, value, expiry) FROM stdin;
-4	accesslib/dirtycontexts	/1	1650457231	1	1650464431
+4	accesslib/dirtycontexts	/1	1663840687	1	1663847887
+5	userpreferenceschanged	2	1663840704	1	1663847904
 \.
 
 
@@ -27711,6 +28243,19 @@ COPY public.m2capabilities (id, name, captype, contextlevel, component, riskbitm
 790	quizaccess/seb:manage_seb_regexallowed	write	70	quizaccess_seb	0
 791	quizaccess/seb:manage_seb_expressionsblocked	write	70	quizaccess_seb	0
 792	quizaccess/seb:manage_seb_regexblocked	write	70	quizaccess_seb	0
+793	mod/attendance:view	read	70	mod_attendance	0
+794	mod/attendance:addinstance	write	50	mod_attendance	4
+795	mod/attendance:viewreports	read	70	mod_attendance	8
+796	mod/attendance:takeattendances	write	70	mod_attendance	32
+797	mod/attendance:changeattendances	write	70	mod_attendance	32
+798	mod/attendance:manageattendances	write	70	mod_attendance	2
+799	mod/attendance:changepreferences	write	70	mod_attendance	2
+800	mod/attendance:export	read	70	mod_attendance	8
+801	mod/attendance:canbelisted	read	70	mod_attendance	8
+802	mod/attendance:managetemporaryusers	write	70	mod_attendance	32
+803	mod/attendance:viewsummaryreports	read	40	mod_attendance	8
+804	mod/attendance:warningemails	write	70	mod_attendance	32
+805	mod/attendance:import	write	70	mod_attendance	8
 \.
 
 
@@ -28449,8 +28994,8 @@ COPY public.m2config (id, name, value) FROM stdin;
 517	hotpot_storedetails	0
 518	hotpot_maxeventlength	5
 543	divertallemailsto	
-411	branch	311
 544	divertallemailsexcept	
+411	branch	311
 28	licenses	unknown,allrightsreserved,public,cc,cc-nd,cc-nc-nd,cc-nc,cc-nc-sa,cc-sa
 545	emaildkimselector	
 546	emailheaders	
@@ -28480,18 +29025,18 @@ COPY public.m2config (id, name, value) FROM stdin;
 325	pathtophp	/usr/bin/php
 327	aspellpath	/usr/bin/aspell
 541	pathtopdftoppm	/usr/bin/pdftoppm
-30	version	2021051706.09
-410	release	3.11.6+ (Build: 20220415)
-414	allversionshash	90b5323a6f0813e0e06b76e6c9f3cbb0085888ea
-24	themerev	1650457234
-158	langrev	1650457234
-25	jsrev	1650457234
-26	templaterev	1650457234
-13	filterall	0
-412	localcachedirpurged	1650457234
-413	scheduledtaskreset	1650457234
 551	filternavigationwithsystemcontext	0
-549	scorm_updatetimelast	1650457808
+414	allversionshash	ebc9be94c9f7bec76460210341b197f65513c854
+24	themerev	1663840819
+158	langrev	1663840819
+25	jsrev	1663840819
+26	templaterev	1663840819
+13	filterall	0
+412	localcachedirpurged	1663840819
+413	scheduledtaskreset	1663840819
+549	scorm_updatetimelast	1663840833
+30	version	2021051710.01
+410	release	3.11.10+ (Build: 20220915)
 \.
 
 
@@ -30534,6 +31079,44 @@ COPY public.m2config_log (id, userid, timemodified, plugin, name, value, oldvalu
 2032	2	1650457248	\N	filternavigationwithsystemcontext	0	\N
 2033	2	1650457250	geogebra	deployggb	//www.geogebra.org/apps/deployggb.js	\N
 2034	2	1650457250	geogebra	fflate	//unpkg.com/fflate	\N
+2035	2	1663670379	attendance	resultsperpage	25	\N
+2036	2	1663670379	attendance	studentscanmark	1	\N
+2037	2	1663670379	attendance	rotateqrcodeinterval	15	\N
+2038	2	1663670379	attendance	rotateqrcodeexpirymargin	2	\N
+2039	2	1663670379	attendance	studentscanmarksessiontime	1	\N
+2040	2	1663670379	attendance	studentscanmarksessiontimeend	60	\N
+2041	2	1663670379	attendance	subnetactivitylevel	1	\N
+2042	2	1663670379	attendance	defaultview	2	\N
+2043	2	1663670379	attendance	multisessionexpanded	0	\N
+2044	2	1663670379	attendance	showsessiondescriptiononreport	0	\N
+2045	2	1663670379	attendance	studentrecordingexpanded	1	\N
+2046	2	1663670379	attendance	enablecalendar	1	\N
+2047	2	1663670379	attendance	enablewarnings	0	\N
+2048	2	1663670379	attendance	automark_useempty	1	\N
+2049	2	1663670379	attendance	customexportfields	id	\N
+2050	2	1663670379	attendance	mobilesessionfrom	21600	\N
+2051	2	1663670379	attendance	mobilesessionto	86400	\N
+2052	2	1663670379	attendance	subnet		\N
+2053	2	1663670379	attendance	calendarevent_default	1	\N
+2054	2	1663670379	attendance	absenteereport_default	1	\N
+2055	2	1663670379	attendance	studentscanmark_default	0	\N
+2056	2	1663670379	attendance	automark_default	0	\N
+2057	2	1663670379	attendance	randompassword_default	0	\N
+2058	2	1663670379	attendance	includeqrcode_default	0	\N
+2059	2	1663670379	attendance	rotateqrcode_default	0	\N
+2060	2	1663670379	attendance	autoassignstatus	0	\N
+2061	2	1663670379	attendance	preventsharedip	0	\N
+2062	2	1663670379	attendance	preventsharediptime		\N
+2063	2	1663670379	attendance	warningpercent	70	\N
+2064	2	1663670379	attendance	warnafter	5	\N
+2065	2	1663670379	attendance	maxwarn	1	\N
+2066	2	1663670379	attendance	emailuser	1	\N
+2067	2	1663670379	attendance	emailsubject	Advertiment d'assistència	\N
+2068	2	1663670379	attendance	emailcontent	Hola, %userfirstname%,\nLa vostra assistència a %coursename% %attendancename% ha baixat per sota del %warningpercent% i, actualment, és del %percent%; esperem que estigueu bé!\n\nPer treure el màxim profit d'aquest curs, haureu de millorar la vostra assistència. Poseu-vos en contacte amb nosaltres si necessiteu ajuda.	\N
+2069	2	1663840701	auth_saml2	fielddelimiter	,	\N
+2070	2	1663840701	assignsubmission_snap	default	0	\N
+2071	2	1663840701	assignsubmission_snap	distros	snap | Snap! | https://snap.berkeley.edu/snap/snap.html	\N
+2072	2	1663840701	assignsubmission_snap	cloud	0	\N
 \.
 
 
@@ -30781,7 +31364,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 224	qtype_randomsamatch	version	2021051700
 225	qtype_shortanswer	version	2021051700
 226	qtype_truefalse	version	2021051700
-227	mod_assign	version	2021051700
 228	mod_assignment	version	2021051700
 231	mod_chat	version	2021051700
 230	mod_book	version	2021051700
@@ -30824,7 +31406,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 298	enrol_guest	version	2021051700
 299	enrol_imsenterprise	version	2021051700
 301	enrol_ldap	version	2021051700
-303	enrol_lti	version	2021051700
 304	enrol_manual	version	2021051700
 306	enrol_meta	version	2021051700
 308	enrol_mnet	version	2021051700
@@ -30839,6 +31420,8 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 330	message	airnotifier_provider_enrol_flatfile_flatfile_enrolment_permitted	permitted
 220	qtype_multianswer	version	2021051701
 244	mod_lti	version	2021051701
+227	mod_assign	version	2021051701
+303	enrol_lti	version	2021051701
 331	message	airnotifier_provider_mod_assignment_assignment_updates_permitted	permitted
 332	message	airnotifier_provider_mod_assign_assign_notification_permitted	permitted
 333	message	airnotifier_provider_moodle_notices_permitted	permitted
@@ -32375,7 +32958,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1942	tool_mobile	disabledfeatures	
 1943	tool_mobile	custommenuitems	
 1944	tool_mobile	customlangstrings	
-1955	mod_hotpot	version	2020060544
 1959	mod_hvp	site_type	network
 1960	mod_hvp	site_uuid	6e65fbab-7198-43a2-8924-6c684d6893b5
 1962	mod_hvp	hub_is_enabled	1
@@ -32391,7 +32973,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1972	message	popup_provider_mod_hvp_confirmation_permitted	permitted
 1973	message	message_provider_mod_hvp_confirmation_loggedin	airnotifier,email
 1974	message	message_provider_mod_hvp_confirmation_loggedoff	airnotifier,email
-1977	mod_journal	version	2020091100
 1980	message	airnotifier_provider_mod_questionnaire_message_permitted	permitted
 1981	message	email_provider_mod_questionnaire_message_permitted	permitted
 1982	message	jabber_provider_mod_questionnaire_message_permitted	permitted
@@ -32403,7 +32984,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1987	message	email_provider_mod_questionnaire_notification_permitted	permitted
 1949	qtype_ordering	version	2021091404
 1975	mod_jclic	version	2021060100
-1978	mod_questionnaire	version	2020111101
 1988	message	jabber_provider_mod_questionnaire_notification_permitted	permitted
 1989	message	popup_provider_mod_questionnaire_notification_permitted	permitted
 1990	message	message_provider_mod_questionnaire_notification_loggedin	email
@@ -32416,7 +32996,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2008	qformat_hotpot	version	2019111022
 2011	local_agora	version	2020072300
 2012	local_alexandriaimporter	version	2016021600
-2013	local_bigdata	version	2016021601
 2015	local_oauth	version	2016021600
 2016	local_rcommon	version	2017101000
 2018	rcommon	enabled	1
@@ -32437,14 +33016,16 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2056	mybooks	viewer_opening	1
 2057	mybooks	addkey	1
 2058	block_configurable_reports	cron_hour	0
-1947	qtype_multianswerwiris	version	2022031600
-1948	qtype_multichoicewiris	version	2022031600
-1950	qtype_shortanswerwiris	version	2022031600
-1951	qtype_truefalsewiris	version	2022031600
-1952	qtype_wq	version	2022031600
-1954	mod_geogebra	version	2022011600
 1957	mod_hvp	version	2022012000
 2059	block_configurable_reports	cron_minute	0
+1948	qtype_multichoicewiris	version	2022061500
+1950	qtype_shortanswerwiris	version	2022061500
+1951	qtype_truefalsewiris	version	2022061500
+1955	mod_hotpot	version	2022091548
+1954	mod_geogebra	version	2022060900
+1978	mod_questionnaire	version	2021062301
+1952	qtype_wq	version	2022090700
+1977	mod_journal	version	2022091600
 2060	block_configurable_reports	crrepository	jleyva/moodle-configurable_reports_repository
 2061	block_configurable_reports	sharedsqlrepository	jleyva/moodle-custom_sql_report_queries
 2062	block_configurable_reports	sqlsyntaxhighlight	0
@@ -32497,7 +33078,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2110	rcontent	popupheight	800
 1999	block_courses_vicensvives	version	2021072700
 2000	block_licenses_vicensvives	version	2021072700
-2004	filter_wiris	version	2021110900
 2006	format_vv	version	2021072700
 2009	tool_odisseagtafsync	version	2021032300
 2007	report_coursequotas	version	2021062300
@@ -32505,7 +33085,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2010	theme_xtec2020	version	2021011201
 2019	local_wsvicensvives	version	2021072700
 2031	atto_cloze	version	2017072803
-2034	atto_wiris	version	2021110900
 2111	rcontent	tracer	
 2112	rcontent	registersperreportpage	20
 2113	choicegroup	sortgroupsby	1
@@ -32547,6 +33126,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2150	theme_xtec2020	whatsapp	
 2151	theme_xtec2020	facebook	
 2152	theme_xtec2020	twitter	
+2034	atto_wiris	version	2022070100
 2153	theme_xtec2020	instagram	
 2154	theme_xtec2020	flickr	
 2155	theme_xtec2020	linkedin	
@@ -32684,7 +33264,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2287	block_myoverview	displaygroupingfavourites	1
 216	qtype_essay	version	2021051700
 217	qtype_gapselect	version	2021051700
-1953	mod_choicegroup	version	2021083100
 2284	mod_h5pactivity	version	2021051700
 242	mod_label	version	2021051700
 1139	auth_cas	memberattribute_isdn	0
@@ -32697,7 +33276,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 469	message_popup	version	2021051700
 2286	block_accessreview	version	2021051700
 512	block_calendar_month	version	2021051700
-1997	block_completion_progress	version	2021070900
 1998	block_configurable_reports	version	2020110300
 532	block_private_files	version	2021051700
 543	block_settings	version	2021051700
@@ -32753,6 +33331,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2325	restore	restore_general_permissions_locked	
 2299	tool_moodlenet	version	2021051701
 2326	restore	restore_general_contentbankcontent	1
+1953	mod_choicegroup	version	2022090700
 2327	restore	restore_general_contentbankcontent_locked	
 2328	restore	restore_general_legacyfiles	1
 2329	restore	restore_general_legacyfiles_locked	
@@ -32802,7 +33381,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2375	auth_saml2	field_updateremote_username	0
 2376	auth_saml2	field_lock_username	unlocked
 2377	block_configurable_reports	allowedsqlusers	
-1961	mod_hvp	content_type_cache_updated_at	1637234392
 2383	tool_brickfield	bfregvalidationchecktime	1637234392
 2384	tool_brickfield	bfregvalidationtime	1637234392
 2385	tool_brickfield	bfsummarytime	1637234392
@@ -32811,9 +33389,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2388	tool_brickfield	id	0
 1920	logstore_standard	loglifetime	10
 2366	theme_xtec2020	xtec_type	odissea
-1945	qtype_essaywiris	version	2022031600
-1946	qtype_matchwiris	version	2022031600
-2167	auth_saml2	version	2022032200
 2391	auth_saml2	spentityid	
 2392	auth_saml2	wantassertionssigned	0
 2393	auth_saml2	assertionsconsumerservices	
@@ -32821,15 +33396,62 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2395	auth_saml2	authncontext	
 2396	geogebra	deployggb	//www.geogebra.org/apps/deployggb.js
 2397	geogebra	fflate	//unpkg.com/fflate
-2378	tool_task	lastcronstart	1650457807
-2398	tool_task	lastcroninterval	13223418
-2379	enrol_manual	expirynotifylast	1650457808
-2380	enrol_self	expirynotifylast	1650457808
+1945	qtype_essaywiris	version	2022061500
+1946	qtype_matchwiris	version	2022061500
+1947	qtype_multianswerwiris	version	2022061500
+1997	block_completion_progress	version	2022042000
+2401	attendance	resultsperpage	25
+2402	attendance	studentscanmark	1
+2403	attendance	rotateqrcodeinterval	15
+2404	attendance	rotateqrcodeexpirymargin	2
+2405	attendance	studentscanmarksessiontime	1
+2406	attendance	studentscanmarksessiontimeend	60
+2407	attendance	subnetactivitylevel	1
+2408	attendance	defaultview	2
+2409	attendance	multisessionexpanded	0
+2410	attendance	showsessiondescriptiononreport	0
+2411	attendance	studentrecordingexpanded	1
+2412	attendance	enablecalendar	1
+2413	attendance	enablewarnings	0
+2414	attendance	automark_useempty	1
+2415	attendance	customexportfields	id
+2416	attendance	mobilesessionfrom	21600
+2417	attendance	mobilesessionto	86400
+2418	attendance	subnet	
+2419	attendance	calendarevent_default	1
+2420	attendance	absenteereport_default	1
+2421	attendance	studentscanmark_default	0
+2422	attendance	automark_default	0
+2423	attendance	randompassword_default	0
+2424	attendance	includeqrcode_default	0
+2425	attendance	rotateqrcode_default	0
+2426	attendance	autoassignstatus	0
+2427	attendance	preventsharedip	0
+2428	attendance	preventsharediptime	
+2429	attendance	warningpercent	70
+2399	mod_attendance	version	2021082609
+2167	auth_saml2	version	2022083100
+2004	filter_wiris	version	2022070100
+2378	tool_task	lastcronstart	1663840831
+2398	tool_task	lastcroninterval	13383024
+1961	mod_hvp	content_type_cache_updated_at	1663840833
+2379	enrol_manual	expirynotifylast	1663840833
+2380	enrol_self	expirynotifylast	1663840833
 2381	local_agora	adware_detected	0
+2389	theme_boost	themerev	1663840834
 2382	tool_brickfield	bfregstatus	0
-2389	theme_boost	themerev	1650457810
-2390	theme_classic	themerev	1650457814
-2372	theme_xtec2020	themerev	1650457819
+2430	attendance	warnafter	5
+2431	attendance	maxwarn	1
+2432	attendance	emailuser	1
+2433	attendance	emailsubject	Advertiment d'assistència
+2434	attendance	emailcontent	Hola, %userfirstname%,\nLa vostra assistència a %coursename% %attendancename% ha baixat per sota del %warningpercent% i, actualment, és del %percent%; esperem que estigueu bé!\n\nPer treure el màxim profit d'aquest curs, haureu de millorar la vostra assistència. Poseu-vos en contacte amb nosaltres si necessiteu ajuda.
+2435	assignsubmission_snap	version	2022080500
+2436	auth_saml2	fielddelimiter	,
+2437	assignsubmission_snap	default	0
+2438	assignsubmission_snap	distros	snap | Snap! | https://snap.berkeley.edu/snap/snap.html
+2439	assignsubmission_snap	cloud	0
+2390	theme_classic	themerev	1663840837
+2372	theme_xtec2020	themerev	1663840840
 \.
 
 
@@ -32895,7 +33517,7 @@ COPY public.m2context_temp (id, path, depth, locked) FROM stdin;
 --
 
 COPY public.m2course (id, category, sortorder, fullname, shortname, idnumber, summary, summaryformat, format, showgrades, newsitems, startdate, enddate, relativedatesmode, marker, maxbytes, legacyfiles, showreports, visible, visibleold, groupmode, groupmodeforce, defaultgroupingid, lang, calendartype, theme, timecreated, timemodified, requested, enablecompletion, completionnotify, cacherev, originalcourseid, downloadcontent, showactivitydates, showcompletionconditions) FROM stdin;
-1	0	0	Odissea Dev	odissea		<p>Versió de desenvolupament d'Odissea<br></p>	0	site	1	3	0	0	0	0	0	0	0	1	1	0	0	0				1603909020	1603909308	0	0	0	1650457234	\N	\N	0	\N
+1	0	0	Odissea Dev	odissea		<p>Versió de desenvolupament d'Odissea<br></p>	0	site	1	3	0	0	0	0	0	0	0	1	1	0	0	0				1603909020	1603909308	0	0	0	1663840819	\N	\N	0	\N
 \.
 
 
@@ -33855,6 +34477,14 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 640	tool_moodlenet_search_courses	tool_moodlenet\\external	search_courses	\N	tool_moodlenet		moodle_mobile_app
 641	paygw_paypal_get_config_for_js	paygw_paypal\\external\\get_config_for_js	execute	\N	paygw_paypal		\N
 642	paygw_paypal_create_transaction_complete	paygw_paypal\\external\\transaction_complete	execute	\N	paygw_paypal		\N
+643	mod_attendance_add_attendance	mod_attendance_external	add_attendance	mod/attendance/externallib.php	mod_attendance		\N
+644	mod_attendance_remove_attendance	mod_attendance_external	remove_attendance	mod/attendance/externallib.php	mod_attendance		\N
+645	mod_attendance_add_session	mod_attendance_external	add_session	mod/attendance/externallib.php	mod_attendance		\N
+646	mod_attendance_remove_session	mod_attendance_external	remove_session	mod/attendance/externallib.php	mod_attendance		\N
+647	mod_attendance_get_courses_with_today_sessions	mod_attendance_external	get_courses_with_today_sessions	mod/attendance/externallib.php	mod_attendance		\N
+648	mod_attendance_get_session	mod_attendance_external	get_session	mod/attendance/externallib.php	mod_attendance		\N
+649	mod_attendance_update_user_status	mod_attendance_external	update_user_status	mod/attendance/externallib.php	mod_attendance		\N
+650	mod_attendance_get_sessions	mod_attendance_external	get_sessions	mod/attendance/externallib.php	mod_attendance		\N
 \.
 
 
@@ -33867,6 +34497,7 @@ COPY public.m2external_services (id, name, enabled, requiredcapability, restrict
 2	mod_questionnaire_ws	1	\N	1	mod_questionnaire	1603910603	\N	\N	0	0
 4	Vicens Vives Services	1	\N	0	local_wsvicensvives	1603910609	\N	\N	0	0
 3	Clickedu	0	\N	1	local_clickedu	1603910607	\N	\N	0	0
+5	Attendance	1	\N	0	mod_attendance	1663670363	\N	mod_attendance	0	0
 \.
 
 
@@ -33880,388 +34511,396 @@ COPY public.m2external_services_functions (id, externalserviceid, functionname) 
 367	3	local_clickedu_get_grades
 368	4	local_wsvicensvives_update_lti_grade
 369	4	local_wsvicensvives_get_lti_grade
-759	1	core_badges_get_user_badges
-760	1	core_blog_get_entries
-761	1	core_blog_view_entries
-762	1	core_calendar_get_calendar_monthly_view
-763	1	core_calendar_get_calendar_day_view
-764	1	core_calendar_get_calendar_upcoming_view
-765	1	core_calendar_update_event_start_day
-766	1	core_calendar_create_calendar_events
-767	1	core_calendar_delete_calendar_events
-768	1	core_calendar_get_calendar_events
-769	1	core_calendar_get_action_events_by_timesort
-770	1	core_calendar_get_action_events_by_course
-771	1	core_calendar_get_action_events_by_courses
-772	1	core_calendar_get_calendar_event_by_id
-773	1	core_calendar_submit_create_update_form
-774	1	core_calendar_get_calendar_access_information
-775	1	core_calendar_get_allowed_event_types
-776	1	core_comment_get_comments
-777	1	core_comment_add_comments
-778	1	core_comment_delete_comments
-779	1	core_completion_get_activities_completion_status
-780	1	core_completion_get_course_completion_status
-781	1	core_completion_mark_course_self_completed
-782	1	core_completion_update_activity_completion_status_manually
-783	1	core_course_get_categories
-784	1	core_course_get_contents
-785	1	core_course_get_course_module
-786	1	core_course_get_course_module_by_instance
-787	1	core_course_get_courses
-788	1	core_course_search_courses
-789	1	core_course_view_course
-790	1	core_course_get_user_navigation_options
-791	1	core_course_get_user_administration_options
-792	1	core_course_get_courses_by_field
-793	1	core_course_check_updates
-794	1	core_course_get_updates_since
-795	1	core_course_get_enrolled_courses_by_timeline_classification
-796	1	core_course_get_recent_courses
-797	1	core_course_set_favourite_courses
-798	1	core_enrol_get_course_enrolment_methods
-799	1	core_enrol_get_enrolled_users
-800	1	core_enrol_search_users
-801	1	core_enrol_get_users_courses
-802	1	core_files_get_files
-803	1	core_get_component_strings
-804	1	core_grades_grader_gradingpanel_point_fetch
-805	1	core_grades_grader_gradingpanel_point_store
-806	1	core_message_get_conversations
-807	1	core_grades_grader_gradingpanel_scale_fetch
-808	1	core_grades_grader_gradingpanel_scale_store
-809	1	core_group_get_activity_allowed_groups
-810	1	core_group_get_activity_groupmode
-811	1	core_group_get_course_groupings
-812	1	core_group_get_course_groups
-813	1	core_group_get_course_user_groups
-814	1	core_message_mute_conversations
-815	1	core_message_unmute_conversations
-816	1	core_message_block_user
-817	1	core_message_get_contact_requests
-818	1	core_message_create_contact_request
-819	1	core_message_confirm_contact_request
-820	1	core_message_decline_contact_request
-821	1	core_message_get_received_contact_requests_count
-822	1	core_message_delete_contacts
-823	1	core_message_delete_conversations_by_id
-824	1	core_message_delete_message
-825	1	core_message_get_blocked_users
-826	1	core_message_data_for_messagearea_search_messages
-827	1	core_message_message_search_users
-828	1	core_message_get_user_contacts
-829	1	core_message_get_conversation
-830	1	core_message_get_conversation_between_users
-831	1	core_message_get_self_conversation
-832	1	core_message_get_messages
-833	1	core_message_get_conversation_counts
-834	1	core_message_get_unread_conversation_counts
-835	1	core_message_get_conversation_members
-836	1	core_message_get_member_info
-837	1	core_message_get_unread_conversations_count
-838	1	core_message_mark_all_notifications_as_read
-839	1	core_message_mark_all_conversation_messages_as_read
-840	1	core_message_mark_message_read
-841	1	core_message_mark_notification_read
-842	1	core_message_message_processor_config_form
-843	1	core_message_search_contacts
-844	1	core_message_send_instant_messages
-845	1	core_message_send_messages_to_conversation
-846	1	core_message_get_conversation_messages
-847	1	core_message_unblock_user
-848	1	core_message_get_user_notification_preferences
-849	1	core_message_get_user_message_preferences
-850	1	core_message_set_favourite_conversations
-851	1	core_message_unset_favourite_conversations
-852	1	core_message_delete_message_for_all_users
-853	1	core_notes_create_notes
-854	1	core_notes_delete_notes
-855	1	core_notes_get_course_notes
-856	1	core_notes_view_notes
-857	1	core_question_update_flag
-858	1	core_rating_get_item_ratings
-859	1	core_rating_add_rating
-860	1	core_tag_get_tagindex
-861	1	core_tag_get_tagindex_per_area
-862	1	core_tag_get_tag_areas
-863	1	core_tag_get_tag_collections
-864	1	core_tag_get_tag_cloud
-865	1	core_user_add_user_device
-866	1	core_user_add_user_private_files
-867	1	core_user_get_course_user_profiles
-868	1	core_user_get_users_by_field
-869	1	core_user_remove_user_device
-870	1	core_user_update_user_preferences
-871	1	core_user_view_user_list
-872	1	core_user_view_user_profile
-873	1	core_user_get_user_preferences
-874	1	core_user_update_picture
-875	1	core_user_set_user_preferences
-876	1	core_user_agree_site_policy
-877	1	core_user_get_private_files_info
-878	1	core_competency_competency_viewed
-879	1	core_competency_list_course_competencies
-880	1	core_competency_get_scale_values
-881	1	core_competency_user_competency_viewed
-882	1	core_competency_user_competency_viewed_in_plan
-883	1	core_competency_user_competency_viewed_in_course
-884	1	core_competency_user_competency_plan_viewed
-885	1	core_competency_grade_competency_in_course
-886	1	core_competency_delete_evidence
-887	1	core_webservice_get_site_info
-888	1	core_block_get_course_blocks
-889	1	core_block_get_dashboard_blocks
-890	1	core_filters_get_available_in_context
-891	1	core_h5p_get_trusted_h5p_file
-892	1	mod_assign_get_grades
-893	1	mod_assign_get_assignments
-894	1	mod_assign_get_submissions
-895	1	mod_assign_get_user_flags
-896	1	mod_assign_set_user_flags
-897	1	mod_assign_get_user_mappings
-898	1	mod_assign_revert_submissions_to_draft
-899	1	mod_assign_lock_submissions
-900	1	mod_assign_unlock_submissions
-901	1	mod_assign_save_submission
-902	1	mod_assign_submit_for_grading
-903	1	mod_assign_save_grade
-904	1	mod_assign_save_grades
-905	1	mod_assign_save_user_extensions
-906	1	mod_assign_reveal_identities
-907	1	mod_assign_view_grading_table
-908	1	mod_assign_view_submission_status
-909	1	mod_assign_get_submission_status
-910	1	mod_assign_list_participants
-911	1	mod_assign_submit_grading_form
-912	1	mod_assign_get_participant
-913	1	mod_assign_view_assign
-914	1	mod_book_view_book
-915	1	mod_book_get_books_by_courses
-916	1	mod_chat_login_user
-917	1	mod_chat_get_chat_users
-918	1	mod_chat_send_chat_message
-919	1	mod_chat_get_chat_latest_messages
-920	1	mod_chat_view_chat
-921	1	mod_chat_get_chats_by_courses
-922	1	mod_chat_get_sessions
-923	1	mod_chat_get_session_messages
-924	1	mod_choice_get_choice_results
-925	1	mod_choice_get_choice_options
-926	1	mod_choice_submit_choice_response
-927	1	mod_choice_view_choice
-928	1	mod_choice_get_choices_by_courses
-929	1	mod_choice_delete_choice_responses
-930	1	mod_data_get_databases_by_courses
-931	1	mod_data_view_database
-932	1	mod_data_get_data_access_information
-933	1	mod_data_get_entries
-934	1	mod_data_get_entry
-935	1	mod_data_get_fields
-936	1	mod_data_search_entries
-937	1	mod_data_approve_entry
-938	1	mod_data_delete_entry
-939	1	mod_data_add_entry
-940	1	mod_data_update_entry
-941	1	mod_feedback_get_feedbacks_by_courses
-942	1	mod_feedback_get_feedback_access_information
-943	1	mod_feedback_view_feedback
-944	1	mod_feedback_get_current_completed_tmp
-945	1	mod_feedback_get_items
-946	1	mod_feedback_launch_feedback
-947	1	mod_feedback_get_page_items
-948	1	mod_feedback_process_page
-949	1	mod_feedback_get_analysis
-950	1	mod_feedback_get_unfinished_responses
-951	1	mod_feedback_get_finished_responses
-952	1	mod_feedback_get_non_respondents
-953	1	mod_feedback_get_responses_analysis
-954	1	mod_feedback_get_last_completed
-955	1	mod_folder_view_folder
-956	1	mod_folder_get_folders_by_courses
-957	1	mod_forum_get_forums_by_courses
-958	1	mod_forum_get_discussion_posts
-959	1	mod_forum_get_forum_discussion_posts
-960	1	mod_forum_get_forum_discussions_paginated
-961	1	mod_forum_get_forum_discussions
-962	1	mod_forum_view_forum
-963	1	mod_forum_view_forum_discussion
-964	1	mod_forum_add_discussion_post
-965	1	mod_forum_add_discussion
-966	1	mod_forum_can_add_discussion
-967	1	mod_forum_get_forum_access_information
-968	1	mod_forum_set_subscription_state
-969	1	mod_forum_set_lock_state
-970	1	mod_forum_toggle_favourite_state
-971	1	mod_page_view_page
-972	1	mod_forum_set_pin_state
-973	1	mod_forum_delete_post
-974	1	mod_forum_get_discussion_post
-975	1	mod_forum_prepare_draft_area_for_post
-976	1	mod_forum_update_discussion_post
-977	1	mod_glossary_get_glossaries_by_courses
-978	1	mod_glossary_view_glossary
-979	1	mod_glossary_view_entry
-980	1	mod_glossary_get_entries_by_letter
-981	1	mod_glossary_get_entries_by_date
-982	1	mod_glossary_get_categories
-983	1	mod_glossary_get_entries_by_category
-984	1	mod_glossary_get_authors
-985	1	mod_glossary_get_entries_by_author
-986	1	mod_glossary_get_entries_by_author_id
-987	1	mod_glossary_get_entries_by_search
-988	1	mod_glossary_get_entries_by_term
-989	1	mod_glossary_get_entries_to_approve
-990	1	mod_glossary_get_entry_by_id
-991	1	mod_glossary_add_entry
-992	1	mod_imscp_view_imscp
-993	1	mod_imscp_get_imscps_by_courses
-994	1	mod_label_get_labels_by_courses
-995	1	mod_lesson_get_lessons_by_courses
-996	1	mod_lesson_get_lesson_access_information
-997	1	mod_lesson_view_lesson
-998	1	mod_lesson_get_questions_attempts
-999	1	mod_lesson_get_user_grade
-1000	1	mod_lesson_get_user_attempt_grade
-1001	1	mod_lesson_get_content_pages_viewed
-1002	1	mod_lesson_get_user_timers
-1003	1	mod_lesson_get_pages
-1004	1	mod_lesson_launch_attempt
-1005	1	mod_lesson_get_page_data
-1006	1	mod_lesson_process_page
-1007	1	mod_lesson_finish_attempt
-1008	1	mod_lesson_get_attempts_overview
-1009	1	mod_lesson_get_user_attempt
-1010	1	mod_lesson_get_pages_possible_jumps
-1011	1	mod_lesson_get_lesson
-1012	1	mod_lti_get_tool_launch_data
-1013	1	mod_lti_get_ltis_by_courses
-1014	1	mod_lti_view_lti
-1015	1	mod_page_get_pages_by_courses
-1016	1	mod_quiz_get_quizzes_by_courses
-1017	1	mod_quiz_view_quiz
-1018	1	mod_quiz_get_user_attempts
-1019	1	mod_quiz_get_user_best_grade
-1020	1	mod_quiz_get_combined_review_options
-1021	1	mod_quiz_start_attempt
-1022	1	mod_quiz_get_attempt_data
-1023	1	mod_quiz_get_attempt_summary
-1024	1	mod_quiz_save_attempt
-1025	1	mod_quiz_process_attempt
-1026	1	mod_quiz_get_attempt_review
-1027	1	mod_quiz_view_attempt
-1028	1	mod_quiz_view_attempt_summary
-1029	1	mod_quiz_view_attempt_review
-1030	1	mod_quiz_get_quiz_feedback_for_grade
-1031	1	mod_quiz_get_quiz_access_information
-1032	1	mod_quiz_get_attempt_access_information
-1033	1	mod_quiz_get_quiz_required_qtypes
-1034	1	mod_resource_view_resource
-1035	1	mod_resource_get_resources_by_courses
-1036	1	mod_scorm_view_scorm
-1037	1	mod_scorm_get_scorm_attempt_count
-1038	1	mod_scorm_get_scorm_scoes
-1039	1	mod_scorm_get_scorm_user_data
-1040	1	mod_scorm_insert_scorm_tracks
-1041	1	mod_scorm_get_scorm_sco_tracks
-1042	1	mod_scorm_get_scorms_by_courses
-1043	1	mod_scorm_launch_sco
-1044	1	mod_scorm_get_scorm_access_information
-1045	1	mod_survey_get_surveys_by_courses
-1046	1	mod_survey_view_survey
-1047	1	mod_survey_get_questions
-1048	1	mod_survey_submit_answers
-1049	1	mod_url_view_url
-1050	1	mod_url_get_urls_by_courses
-1051	1	mod_wiki_get_wikis_by_courses
-1052	1	mod_wiki_view_wiki
-1053	1	mod_wiki_view_page
-1054	1	mod_wiki_get_subwikis
-1055	1	mod_wiki_get_subwiki_pages
-1056	1	mod_wiki_get_subwiki_files
-1057	1	mod_wiki_get_page_contents
-1058	1	mod_wiki_get_page_for_editing
-1059	1	mod_wiki_new_page
-1060	1	mod_wiki_edit_page
-1061	1	mod_workshop_get_workshops_by_courses
-1062	1	mod_workshop_get_workshop_access_information
-1063	1	mod_workshop_get_user_plan
-1064	1	mod_workshop_view_workshop
-1065	1	mod_workshop_add_submission
-1066	1	mod_workshop_update_submission
-1067	1	mod_workshop_delete_submission
-1068	1	mod_workshop_get_submissions
-1069	1	mod_workshop_get_submission
-1070	1	mod_workshop_get_submission_assessments
-1071	1	mod_workshop_get_assessment
-1072	1	mod_workshop_get_assessment_form_definition
-1073	1	mod_workshop_get_reviewer_assessments
-1074	1	mod_workshop_update_assessment
-1075	1	mod_workshop_get_grades
-1076	1	mod_workshop_evaluate_assessment
-1077	1	mod_workshop_get_grades_report
-1078	1	mod_workshop_view_submission
-1079	1	mod_workshop_evaluate_submission
-1080	1	enrol_guest_get_instance_info
-1081	1	enrol_self_get_instance_info
-1082	1	enrol_self_enrol_user
-1083	1	message_airnotifier_is_system_configured
-1084	1	message_airnotifier_are_notification_preferences_configured
-1085	1	message_airnotifier_get_user_devices
-1086	1	message_airnotifier_enable_device
-1087	1	message_popup_get_popup_notifications
-1088	1	message_popup_get_unread_popup_notification_count
-1089	1	block_recentlyaccesseditems_get_recent_items
-1090	1	block_starredcourses_get_starred_courses
-1091	1	report_insights_set_notuseful_prediction
-1092	1	report_insights_set_fixed_prediction
-1093	1	report_insights_action_executed
-1094	1	gradereport_overview_get_course_grades
-1095	1	gradereport_overview_view_grade_report
-1096	1	gradereport_user_get_grades_table
-1097	1	gradereport_user_view_grade_report
-1098	1	gradereport_user_get_grade_items
-1099	1	tool_analytics_potential_contexts
-1100	1	tool_lp_data_for_course_competencies_page
-1101	1	tool_lp_data_for_plans_page
-1102	1	tool_lp_data_for_plan_page
-1103	1	tool_lp_data_for_user_evidence_list_page
-1104	1	tool_lp_data_for_user_evidence_page
-1105	1	tool_lp_data_for_user_competency_summary
-1106	1	tool_lp_data_for_user_competency_summary_in_plan
-1107	1	tool_lp_data_for_user_competency_summary_in_course
-1108	1	tool_mobile_get_plugins_supporting_mobile
-1109	1	tool_mobile_get_public_config
-1110	1	tool_mobile_get_config
-1111	1	tool_mobile_get_autologin_key
-1112	1	tool_mobile_get_content
-1113	1	tool_mobile_call_external_functions
-1114	1	mod_choicegroup_get_choicegroup_options
-1115	1	mod_choicegroup_submit_choicegroup_response
-1116	1	mod_choicegroup_view_choicegroup
-1117	1	mod_choicegroup_delete_choicegroup_responses
-1118	1	mod_journal_get_entry
-1119	1	mod_journal_set_text
-1120	1	mod_questionnaire_submit_questionnaire_response
-1121	1	core_calendar_get_calendar_export_token
-1122	1	core_files_delete_draft_files
-1123	1	core_files_get_unused_draft_itemid
-1124	1	core_block_fetch_addable_blocks
-1125	1	core_table_get_dynamic_table_content
-1126	1	core_xapi_statement_post
-1127	1	mod_glossary_delete_entry
-1128	1	mod_glossary_update_entry
-1129	1	mod_glossary_prepare_entry_for_edition
-1130	1	mod_h5pactivity_get_h5pactivity_access_information
-1131	1	mod_h5pactivity_view_h5pactivity
-1132	1	mod_h5pactivity_get_attempts
-1133	1	mod_h5pactivity_get_results
-1134	1	mod_h5pactivity_get_h5pactivities_by_courses
-1135	1	mod_h5pactivity_log_report_viewed
-1136	1	mod_h5pactivity_get_user_attempts
-1137	1	tool_mobile_validate_subscription_key
-1138	1	tool_mobile_get_tokens_for_qr_login
-1139	1	tool_moodlenet_verify_webfinger
-1140	1	tool_moodlenet_search_courses
+1531	1	core_badges_get_user_badges
+1532	1	core_blog_get_entries
+1533	1	core_blog_view_entries
+1534	1	core_calendar_get_calendar_monthly_view
+1535	1	core_calendar_get_calendar_day_view
+1536	1	core_calendar_get_calendar_upcoming_view
+1537	1	core_calendar_update_event_start_day
+1538	1	core_calendar_create_calendar_events
+1539	1	core_calendar_delete_calendar_events
+1540	1	core_calendar_get_calendar_events
+1541	1	core_calendar_get_action_events_by_timesort
+1542	1	core_calendar_get_action_events_by_course
+1543	1	core_calendar_get_action_events_by_courses
+1544	1	core_calendar_get_calendar_event_by_id
+1545	1	core_calendar_submit_create_update_form
+1546	1	core_calendar_get_calendar_access_information
+1547	1	core_calendar_get_allowed_event_types
+1548	1	core_comment_get_comments
+1549	1	core_comment_add_comments
+1550	1	core_comment_delete_comments
+1551	1	core_completion_get_activities_completion_status
+1552	1	core_completion_get_course_completion_status
+1553	1	core_completion_mark_course_self_completed
+1554	1	core_completion_update_activity_completion_status_manually
+1555	1	core_course_get_categories
+1556	1	core_course_get_contents
+1557	1	core_course_get_course_module
+1558	1	core_course_get_course_module_by_instance
+1559	1	core_course_get_courses
+1560	1	core_course_search_courses
+1561	1	core_course_view_course
+1562	1	core_course_get_user_navigation_options
+1563	1	core_course_get_user_administration_options
+1564	1	core_course_get_courses_by_field
+1565	1	core_course_check_updates
+1566	1	core_course_get_updates_since
+1567	1	core_course_get_enrolled_courses_by_timeline_classification
+1568	1	core_course_get_recent_courses
+1569	1	core_course_set_favourite_courses
+1570	1	core_enrol_get_course_enrolment_methods
+1571	1	core_enrol_get_enrolled_users
+1572	1	core_enrol_search_users
+1573	1	core_enrol_get_users_courses
+1574	1	core_files_get_files
+1575	1	core_get_component_strings
+1576	1	core_grades_grader_gradingpanel_point_fetch
+1577	1	core_grades_grader_gradingpanel_point_store
+1578	1	core_message_get_conversations
+1579	1	core_grades_grader_gradingpanel_scale_fetch
+1580	1	core_grades_grader_gradingpanel_scale_store
+1581	1	core_group_get_activity_allowed_groups
+1582	1	core_group_get_activity_groupmode
+1583	1	core_group_get_course_groupings
+1584	1	core_group_get_course_groups
+1585	1	core_group_get_course_user_groups
+1586	1	core_message_mute_conversations
+1587	1	core_message_unmute_conversations
+1588	1	core_message_block_user
+1589	1	core_message_get_contact_requests
+1590	1	core_message_create_contact_request
+1591	1	core_message_confirm_contact_request
+1592	1	core_message_decline_contact_request
+1593	1	core_message_get_received_contact_requests_count
+1594	1	core_message_delete_contacts
+1595	1	core_message_delete_conversations_by_id
+1596	1	core_message_delete_message
+1597	1	core_message_get_blocked_users
+1598	1	core_message_data_for_messagearea_search_messages
+1599	1	core_message_message_search_users
+1600	1	core_message_get_user_contacts
+1601	1	core_message_get_conversation
+1602	1	core_message_get_conversation_between_users
+1603	1	core_message_get_self_conversation
+1604	1	core_message_get_messages
+1605	1	core_message_get_conversation_counts
+1606	1	core_message_get_unread_conversation_counts
+1607	1	core_message_get_conversation_members
+1608	1	core_message_get_member_info
+1609	1	core_message_get_unread_conversations_count
+1610	1	core_message_mark_all_notifications_as_read
+1611	1	core_message_mark_all_conversation_messages_as_read
+1612	1	core_message_mark_message_read
+1613	1	core_message_mark_notification_read
+1614	1	core_message_message_processor_config_form
+1615	1	core_message_search_contacts
+1616	1	core_message_send_instant_messages
+1617	1	core_message_send_messages_to_conversation
+1618	1	core_message_get_conversation_messages
+1619	1	core_message_unblock_user
+1620	1	core_message_get_user_notification_preferences
+1621	1	core_message_get_user_message_preferences
+1622	1	core_message_set_favourite_conversations
+1623	1	core_message_unset_favourite_conversations
+1624	1	core_message_delete_message_for_all_users
+1625	1	core_notes_create_notes
+1626	1	core_notes_delete_notes
+1627	1	core_notes_get_course_notes
+1628	1	core_notes_view_notes
+1629	1	core_question_update_flag
+1630	1	core_rating_get_item_ratings
+1631	1	core_rating_add_rating
+1632	1	core_tag_get_tagindex
+1633	1	core_tag_get_tagindex_per_area
+1634	1	core_tag_get_tag_areas
+1635	1	core_tag_get_tag_collections
+1636	1	core_tag_get_tag_cloud
+1637	1	core_user_add_user_device
+1638	1	core_user_add_user_private_files
+1639	1	core_user_get_course_user_profiles
+1640	1	core_user_get_users_by_field
+1641	1	core_user_remove_user_device
+1642	1	core_user_update_user_preferences
+1643	1	core_user_view_user_list
+1644	1	core_user_view_user_profile
+1645	1	core_user_get_user_preferences
+1646	1	core_user_update_picture
+1647	1	core_user_set_user_preferences
+1648	1	core_user_agree_site_policy
+1649	1	core_user_get_private_files_info
+1650	1	core_competency_competency_viewed
+1651	1	core_competency_list_course_competencies
+1652	1	core_competency_get_scale_values
+1653	1	core_competency_user_competency_viewed
+1654	1	core_competency_user_competency_viewed_in_plan
+1655	1	core_competency_user_competency_viewed_in_course
+1656	1	core_competency_user_competency_plan_viewed
+1657	1	core_competency_grade_competency_in_course
+1658	1	core_competency_delete_evidence
+1659	1	core_webservice_get_site_info
+1660	1	core_block_get_course_blocks
+1661	1	core_block_get_dashboard_blocks
+1662	1	core_filters_get_available_in_context
+1663	1	core_h5p_get_trusted_h5p_file
+1664	1	mod_assign_get_grades
+1665	1	mod_assign_get_assignments
+1666	1	mod_assign_get_submissions
+1667	1	mod_assign_get_user_flags
+1668	1	mod_assign_set_user_flags
+1669	1	mod_assign_get_user_mappings
+1670	1	mod_assign_revert_submissions_to_draft
+1671	1	mod_assign_lock_submissions
+1672	1	mod_assign_unlock_submissions
+1673	1	mod_assign_save_submission
+1674	1	mod_assign_submit_for_grading
+1675	1	mod_assign_save_grade
+1676	1	mod_assign_save_grades
+1677	1	mod_assign_save_user_extensions
+1678	1	mod_assign_reveal_identities
+1679	1	mod_assign_view_grading_table
+1680	1	mod_assign_view_submission_status
+1681	1	mod_assign_get_submission_status
+1682	1	mod_assign_list_participants
+1683	1	mod_assign_submit_grading_form
+1684	1	mod_assign_get_participant
+1685	1	mod_assign_view_assign
+1686	1	mod_book_view_book
+1687	1	mod_book_get_books_by_courses
+1688	1	mod_chat_login_user
+1689	1	mod_chat_get_chat_users
+1690	1	mod_chat_send_chat_message
+1691	1	mod_chat_get_chat_latest_messages
+1692	1	mod_chat_view_chat
+1693	1	mod_chat_get_chats_by_courses
+1694	1	mod_chat_get_sessions
+1695	1	mod_chat_get_session_messages
+1696	1	mod_choice_get_choice_results
+1697	1	mod_choice_get_choice_options
+1698	1	mod_choice_submit_choice_response
+1699	1	mod_choice_view_choice
+1700	1	mod_choice_get_choices_by_courses
+1701	1	mod_choice_delete_choice_responses
+1702	1	mod_data_get_databases_by_courses
+1703	1	mod_data_view_database
+1704	1	mod_data_get_data_access_information
+1705	1	mod_data_get_entries
+1706	1	mod_data_get_entry
+1707	1	mod_data_get_fields
+1708	1	mod_data_search_entries
+1709	1	mod_data_approve_entry
+1710	1	mod_data_delete_entry
+1711	1	mod_data_add_entry
+1712	1	mod_data_update_entry
+1713	1	mod_feedback_get_feedbacks_by_courses
+1714	1	mod_feedback_get_feedback_access_information
+1715	1	mod_feedback_view_feedback
+1716	1	mod_feedback_get_current_completed_tmp
+1717	1	mod_feedback_get_items
+1718	1	mod_feedback_launch_feedback
+1719	1	mod_feedback_get_page_items
+1720	1	mod_feedback_process_page
+1721	1	mod_feedback_get_analysis
+1722	1	mod_feedback_get_unfinished_responses
+1723	1	mod_feedback_get_finished_responses
+1724	1	mod_feedback_get_non_respondents
+1725	1	mod_feedback_get_responses_analysis
+1726	1	mod_feedback_get_last_completed
+1727	1	mod_folder_view_folder
+1728	1	mod_folder_get_folders_by_courses
+1729	1	mod_forum_get_forums_by_courses
+1730	1	mod_forum_get_discussion_posts
+1731	1	mod_forum_get_forum_discussion_posts
+1732	1	mod_forum_get_forum_discussions_paginated
+1733	1	mod_forum_get_forum_discussions
+1734	1	mod_forum_view_forum
+1735	1	mod_forum_view_forum_discussion
+1736	1	mod_forum_add_discussion_post
+1737	1	mod_forum_add_discussion
+1738	1	mod_forum_can_add_discussion
+1739	1	mod_forum_get_forum_access_information
+1740	1	mod_forum_set_subscription_state
+1741	1	mod_forum_set_lock_state
+1742	1	mod_forum_toggle_favourite_state
+1743	1	mod_page_view_page
+1744	1	mod_forum_set_pin_state
+1745	1	mod_forum_delete_post
+1746	1	mod_forum_get_discussion_post
+1747	1	mod_forum_prepare_draft_area_for_post
+1748	1	mod_forum_update_discussion_post
+1749	1	mod_glossary_get_glossaries_by_courses
+1750	1	mod_glossary_view_glossary
+1751	1	mod_glossary_view_entry
+1752	1	mod_glossary_get_entries_by_letter
+1753	1	mod_glossary_get_entries_by_date
+1754	1	mod_glossary_get_categories
+1755	1	mod_glossary_get_entries_by_category
+1756	1	mod_glossary_get_authors
+1757	1	mod_glossary_get_entries_by_author
+1758	1	mod_glossary_get_entries_by_author_id
+1759	1	mod_glossary_get_entries_by_search
+1760	1	mod_glossary_get_entries_by_term
+1761	1	mod_glossary_get_entries_to_approve
+1762	1	mod_glossary_get_entry_by_id
+1763	1	mod_glossary_add_entry
+1764	1	mod_imscp_view_imscp
+1765	1	mod_imscp_get_imscps_by_courses
+1766	1	mod_label_get_labels_by_courses
+1767	1	mod_lesson_get_lessons_by_courses
+1768	1	mod_lesson_get_lesson_access_information
+1769	1	mod_lesson_view_lesson
+1770	1	mod_lesson_get_questions_attempts
+1771	1	mod_lesson_get_user_grade
+1772	1	mod_lesson_get_user_attempt_grade
+1773	1	mod_lesson_get_content_pages_viewed
+1774	1	mod_lesson_get_user_timers
+1775	1	mod_lesson_get_pages
+1776	1	mod_lesson_launch_attempt
+1777	1	mod_lesson_get_page_data
+1778	1	mod_lesson_process_page
+1779	1	mod_lesson_finish_attempt
+1780	1	mod_lesson_get_attempts_overview
+1781	1	mod_lesson_get_user_attempt
+1782	1	mod_lesson_get_pages_possible_jumps
+1783	1	mod_lesson_get_lesson
+1784	1	mod_lti_get_tool_launch_data
+1785	1	mod_lti_get_ltis_by_courses
+1786	1	mod_lti_view_lti
+1787	1	mod_page_get_pages_by_courses
+1788	1	mod_quiz_get_quizzes_by_courses
+1789	1	mod_quiz_view_quiz
+1790	1	mod_quiz_get_user_attempts
+1791	1	mod_quiz_get_user_best_grade
+1792	1	mod_quiz_get_combined_review_options
+1793	1	mod_quiz_start_attempt
+1794	1	mod_quiz_get_attempt_data
+1795	1	mod_quiz_get_attempt_summary
+1796	1	mod_quiz_save_attempt
+1797	1	mod_quiz_process_attempt
+1798	1	mod_quiz_get_attempt_review
+1799	1	mod_quiz_view_attempt
+1800	1	mod_quiz_view_attempt_summary
+1801	1	mod_quiz_view_attempt_review
+1802	1	mod_quiz_get_quiz_feedback_for_grade
+1803	1	mod_quiz_get_quiz_access_information
+1804	1	mod_quiz_get_attempt_access_information
+1805	1	mod_quiz_get_quiz_required_qtypes
+1806	1	mod_resource_view_resource
+1807	1	mod_resource_get_resources_by_courses
+1808	1	mod_scorm_view_scorm
+1809	1	mod_scorm_get_scorm_attempt_count
+1810	1	mod_scorm_get_scorm_scoes
+1811	1	mod_scorm_get_scorm_user_data
+1812	1	mod_scorm_insert_scorm_tracks
+1813	1	mod_scorm_get_scorm_sco_tracks
+1814	1	mod_scorm_get_scorms_by_courses
+1815	1	mod_scorm_launch_sco
+1816	1	mod_scorm_get_scorm_access_information
+1817	1	mod_survey_get_surveys_by_courses
+1818	1	mod_survey_view_survey
+1819	1	mod_survey_get_questions
+1820	1	mod_survey_submit_answers
+1821	1	mod_url_view_url
+1822	1	mod_url_get_urls_by_courses
+1823	1	mod_wiki_get_wikis_by_courses
+1824	1	mod_wiki_view_wiki
+1825	1	mod_wiki_view_page
+1826	1	mod_wiki_get_subwikis
+1827	1	mod_wiki_get_subwiki_pages
+1828	1	mod_wiki_get_subwiki_files
+1829	1	mod_wiki_get_page_contents
+1830	1	mod_wiki_get_page_for_editing
+1831	1	mod_wiki_new_page
+1832	1	mod_wiki_edit_page
+1833	1	mod_workshop_get_workshops_by_courses
+1834	1	mod_workshop_get_workshop_access_information
+1141	5	mod_attendance_add_attendance
+1142	5	mod_attendance_remove_attendance
+1143	5	mod_attendance_add_session
+1144	5	mod_attendance_remove_session
+1145	5	mod_attendance_get_courses_with_today_sessions
+1146	5	mod_attendance_get_session
+1147	5	mod_attendance_update_user_status
+1148	5	mod_attendance_get_sessions
+1835	1	mod_workshop_get_user_plan
+1836	1	mod_workshop_view_workshop
+1837	1	mod_workshop_add_submission
+1838	1	mod_workshop_update_submission
+1839	1	mod_workshop_delete_submission
+1840	1	mod_workshop_get_submissions
+1841	1	mod_workshop_get_submission
+1842	1	mod_workshop_get_submission_assessments
+1843	1	mod_workshop_get_assessment
+1844	1	mod_workshop_get_assessment_form_definition
+1845	1	mod_workshop_get_reviewer_assessments
+1846	1	mod_workshop_update_assessment
+1847	1	mod_workshop_get_grades
+1848	1	mod_workshop_evaluate_assessment
+1849	1	mod_workshop_get_grades_report
+1850	1	mod_workshop_view_submission
+1851	1	mod_workshop_evaluate_submission
+1852	1	enrol_guest_get_instance_info
+1853	1	enrol_self_get_instance_info
+1854	1	enrol_self_enrol_user
+1855	1	message_airnotifier_is_system_configured
+1856	1	message_airnotifier_are_notification_preferences_configured
+1857	1	message_airnotifier_get_user_devices
+1858	1	message_airnotifier_enable_device
+1859	1	message_popup_get_popup_notifications
+1860	1	message_popup_get_unread_popup_notification_count
+1861	1	block_recentlyaccesseditems_get_recent_items
+1862	1	block_starredcourses_get_starred_courses
+1863	1	report_insights_set_notuseful_prediction
+1864	1	report_insights_set_fixed_prediction
+1865	1	report_insights_action_executed
+1866	1	gradereport_overview_get_course_grades
+1867	1	gradereport_overview_view_grade_report
+1868	1	gradereport_user_get_grades_table
+1869	1	gradereport_user_view_grade_report
+1870	1	gradereport_user_get_grade_items
+1871	1	tool_analytics_potential_contexts
+1872	1	tool_lp_data_for_course_competencies_page
+1873	1	tool_lp_data_for_plans_page
+1874	1	tool_lp_data_for_plan_page
+1875	1	tool_lp_data_for_user_evidence_list_page
+1876	1	tool_lp_data_for_user_evidence_page
+1877	1	tool_lp_data_for_user_competency_summary
+1878	1	tool_lp_data_for_user_competency_summary_in_plan
+1879	1	tool_lp_data_for_user_competency_summary_in_course
+1880	1	tool_mobile_get_plugins_supporting_mobile
+1881	1	tool_mobile_get_public_config
+1882	1	tool_mobile_get_config
+1883	1	tool_mobile_get_autologin_key
+1884	1	tool_mobile_get_content
+1885	1	tool_mobile_call_external_functions
+1886	1	mod_choicegroup_get_choicegroup_options
+1887	1	mod_choicegroup_submit_choicegroup_response
+1888	1	mod_choicegroup_view_choicegroup
+1889	1	mod_choicegroup_delete_choicegroup_responses
+1890	1	mod_journal_get_entry
+1891	1	mod_journal_set_text
+1892	1	mod_questionnaire_submit_questionnaire_response
+1893	1	core_calendar_get_calendar_export_token
+1894	1	core_files_delete_draft_files
+1895	1	core_files_get_unused_draft_itemid
+1896	1	core_block_fetch_addable_blocks
+1897	1	core_table_get_dynamic_table_content
+1898	1	core_xapi_statement_post
+1899	1	mod_glossary_delete_entry
+1900	1	mod_glossary_update_entry
+1901	1	mod_glossary_prepare_entry_for_edition
+1902	1	mod_h5pactivity_get_h5pactivity_access_information
+1903	1	mod_h5pactivity_view_h5pactivity
+1904	1	mod_h5pactivity_get_attempts
+1905	1	mod_h5pactivity_get_results
+1906	1	mod_h5pactivity_get_h5pactivities_by_courses
+1907	1	mod_h5pactivity_log_report_viewed
+1908	1	mod_h5pactivity_get_user_attempts
+1909	1	tool_mobile_validate_subscription_key
+1910	1	tool_mobile_get_tokens_for_qr_login
+1911	1	tool_moodlenet_verify_webfinger
+1912	1	tool_moodlenet_search_courses
 \.
 
 
@@ -34845,7 +35484,7 @@ COPY public.m2h5pactivity_attempts_results (id, attemptid, subcontent, timecreat
 -- Data for Name: m2hotpot; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2hotpot (id, course, name, sourcefile, sourcetype, sourcelocation, configfile, configlocation, entrycm, entrygrade, entrypage, entrytext, entryformat, exitpage, entryoptions, exittext, exitformat, exitoptions, exitcm, exitgrade, outputformat, navigation, title, stopbutton, stoptext, allowpaste, usefilters, useglossary, usemediafilter, studentfeedback, studentfeedbackurl, timeopen, timeclose, timelimit, delay1, delay2, delay3, password, subnet, reviewoptions, attemptlimit, grademethod, gradeweighting, clickreporting, discarddetails, timecreated, timemodified, completionmingrade, completionpass, completioncompleted) FROM stdin;
+COPY public.m2hotpot (id, course, name, sourcefile, sourcetype, sourcelocation, configfile, configlocation, entrycm, entrygrade, entrypage, entrytext, entryformat, exitpage, entryoptions, exittext, exitformat, exitoptions, exitcm, exitgrade, outputformat, navigation, title, stopbutton, stoptext, allowpaste, usefilters, useglossary, usemediafilter, studentfeedback, studentfeedbackurl, timeopen, timeclose, timelimit, delay1, delay2, delay3, password, subnet, reviewoptions, attemptlimit, grademethod, gradeweighting, clickreporting, discarddetails, timecreated, timemodified, completionmingrade, completionpass, completioncompleted, intro, introformat) FROM stdin;
 \.
 
 
@@ -34974,54 +35613,57 @@ COPY public.m2hvp_libraries_cachedassets (id, library_id, hash) FROM stdin;
 --
 
 COPY public.m2hvp_libraries_hub_cache (id, machine_name, major_version, minor_version, patch_version, h5p_major_version, h5p_minor_version, title, summary, description, icon, created_at, updated_at, is_recommended, popularity, screenshots, license, example, tutorial, keywords, categories, owner) FROM stdin;
-45	H5P.Accordion	1	0	27	1	5	Accordion	Create vertically stacked expandable items	Reduce the amount of text presented to readers by using this responsive accordion. Readers decide which headlines to take a closer look at by expanding the title. Excellent for providing an overview with optional in-depth explanations.	https://h5p.org/sites/default/files/accordion.svg	1488282378	1636127099	1	9	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/accordion-01.png?itok=qnXarBZ5","alt":"Collapsed"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/accordion-02.png?itok=lnTobl4C","alt":"Expanded"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/accordion	https://h5p.org/tutorial-accordion	["accordion","collapsible text"]	["Other"]	Joubel
-46	H5P.ArithmeticQuiz	1	1	15	1	0	Arithmetic Quiz	Create time-based arithmetic quizzes	Create arithmetic quizzes consisting of multiple choice questions. As an author, all you have to do is decide the type and length of the quiz. Users keep track of score and time spent when solving the quiz.	https://h5p.org/sites/default/files/arithmetic%20quiz.svg	1488283418	1608213331	1	21	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-01.png?itok=w00QVe4N","alt":"Arithmetic quiz start screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-02.png?itok=k6nal6kx","alt":"Arithmetic quiz question"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-03.png?itok=oHISx8VF","alt":"Arithmetic quiz correct answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-04.png?itok=JIcoDl58","alt":"Arithmetic quiz end screen"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/arithmetic-quiz	https://h5p.org/tutorial-arithmetic-quiz	["math","arithmetic quiz","countdown"]	["Tasks"]	Joubel
-47	H5P.Chart	1	2	18	1	21	Chart	Quickly generate bar and pie charts	Need to present simple statistical data graphically without creating the artwork manually? Chart is your answer.	https://h5p.org/sites/default/files/chart.svg	1488283592	1611144757	1	41	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-01_0.png?itok=iRQawZtl","alt":"Pie chart view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-02_0.png?itok=6G-3NLs-","alt":"Bar chart view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-03_0.png?itok=dGg4KIiV","alt":"Bar chart view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/chart	https://h5p.org/tutorial-chart	["chart","bar chart","pie chart","graph"]	["Other"]	Joubel
-48	H5P.Collage	0	3	16	1	7	Collage	Create a collage of multiple images	The Collage tool allows you to organize images into a soothing composition. 	https://h5p.org/sites/default/files/college.svg	1488374773	1611144757	1	36	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/collage-04_0.png?itok=Ix3CDsjz","alt":"Collage editor with no images"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/collage-03_0.png?itok=idf9cgYV","alt":"Collage editor with three images"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/collage-01_0.png?itok=-UtwiYRz","alt":"A collage containing 3 images of flowers"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/collage-02_0.png?itok=aTHRDus1","alt":"A collage containing 4 images of snowy mountains"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/collage	https://h5p.org/tutorial-collage	["collage","image"]	["Other"]	Joubel
-49	H5P.Column	1	13	1	1	19	Column	Organize H5P content into a column layout	Organize your content type into a column layout with H5P Column. Content types that address similar material or share a common theme can now be grouped together to create a coherent learning experience. In addition, authors are free to be creative by combining almost all of the existing H5P content types.	https://h5p.org/sites/default/files/column.svg	1488375032	1611144757	1	6	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/column-01.png?itok=37ibbzhk","alt":"A column containing an image, a text block and a question"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/column-02.png?itok=e2km4R4C","alt":"A column containing different content types"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/column-03.png?itok=nilYMNyC","alt":"A drag and drop inside a column"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/column	https://h5p.org/tutorial-column	["column","layout","compound"]	["Larger Resources"]	Joubel
-54	H5P.DragText	1	8	17	1	19	Drag the Words	Create text-based drag and drop tasks	Drag the Words allows content designers to create textual expressions with missing pieces of text. The end user drags a missing piece of text to its correct place, to form a complete expression. May be used to check if the user remembers a text she has read, or if she understands something. Helps the user think through a text. It's super easy to create a drag the words task. The editor just writes the text and encloses the words that are to be draggable with asterisk signs like *draggableWord*.	https://h5p.org/sites/default/files/drag%20the%20words.svg	1488376477	1635775065	1	5	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-the-words-01.png?itok=dpMCvPPe","alt":"Drag text - initial state."},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-the-words-02.png?itok=njr_aEqB","alt":"Drag text after clicking the \\"check\\" button"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-the-words-03.png?itok=2xeHtKBa","alt":"Tip in drag text"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/drag-the-words	https://h5p.org/documentation/content-author-guide/tutorials-for-authors/drag-the-words	["drag","words"]	["Tasks"]	Joubel
-50	H5P.CoursePresentation	1	22	7	1	23	Course Presentation	Create a presentation with interactive slides	Course presentations consist of slides with multimedia, text, and many different types of interactions like interactive summaries, multiple choice questions and interactive videos. Learners can experience new interactive learning material and test their knowledge and memory in Course Presentations. As always with H5P, content is editable in web browsers, and the Course Presentation activity type includes a WYSIWYG drag and drop based authoring tool. A typical use of the Course Presentation activity is to use a few slides to introduce a subject and follow these with a few more slides in which the user’s knowledge is tested. Course Presentations may however be used in many different ways, including as a presentation tool for use in the classroom, or as a game where the usual navigation is replaced with navigation buttons on top of the slides to let the user make choices and see the consequences of their choices.	https://h5p.org/sites/default/files/course%20presentation.svg	1488375267	1629457359	1	1	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-01.png?itok=ilSK_sEu","alt":"Adding an image to the editor"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-02_0.png?itok=NrkD9l5t","alt":"A single Choice Set inside the editor"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-03.png?itok=cJiwaVzi","alt":"A single Choice Set and an image of a cloudberry inside the editor"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-04_0.png?itok=CIQbHd-t","alt":"First slide of a presentation containing text and a clickable image"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-05_0.png?itok=z-6dFoL1","alt":"Summary slide"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-06_0.png?itok=gHNw6Vt0","alt":"Active surface mode"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-07_0.png?itok=oAOD70di","alt":"A slide containing video and text"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/presentation	https://h5p.org/tutorial-course-presentation	["course presentation","slides","powerpoint"]	["Larger Resources"]	Joubel
-51	H5P.Dialogcards	1	8	7	1	15	Dialog Cards	Create text-based turning cards	Dialog cards can be used as a drill to help learners memorize words, expressions or sentences. On the front of the card, there's a hint for a word or expression. By turning the card the learner reveals a corresponding word or expression. Dialog cards can be used in language learning, to present math problems or help learners remember facts such as historical events, formulas or names.	https://h5p.org/sites/default/files/dialog%20cards%20.svg	1488375538	1636381493	1	10	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dialog-cards-01_0.png?itok=OgMQk8D5","alt":"Dialog card - front"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dialog-cards-02_0.png?itok=Pv49ouxC","alt":"Dialog card - back"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dialog-cards-03.png?itok=8wwQDVUw","alt":"Dialog card - front"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dialog-cards-04.png?itok=8VFY5QY3","alt":"Dialog card - back"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/dialog-cards	https://h5p.org/tutorial-dialog-cards	["dialog cards"]	["Other"]	Joubel
-52	H5P.DocumentationTool	1	8	9	1	19	Documentation Tool	Create a form wizard with text export	The documentation tool aims to make it easy to create assessment wizards for goal driven activities. It can also be used as a form wizard. While editing, the author can add multiple steps to the wizard. In each step, the author can define which content goes into that step. Content can be plain text, input fields, goal definition and goal assessment. Once published, the end user will be taken through the steps of the wizard. On the last step of the wizard, the user can generate a document with all the input that has been submitted. This document can be downloaded. The Documentation tool is fully responsive and works great on smaller screens as well as on your desktop.	https://h5p.org/sites/default/files/documentation%20tool%20.svg	1488375711	1637054873	1	14	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/documentation-tool-01.png?itok=mIhHTIX3","alt":"User's view \\u2013 document your project"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/documentation-tool-02.png?itok=WCPC1IpT","alt":"User's view \\u2013 Goals"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/documentation-tool-03.png?itok=GWEa3LZf","alt":"User's view \\u2013 Done"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/documentation-tool-04.png?itok=yFf2Qa-n","alt":"User's view \\u2013 Document your project"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/documentation-tool	https://h5p.org/tutorial-documentation-tool	["dialog cards"]	["Larger Resources"]	Joubel
-53	H5P.DragQuestion	1	13	15	1	23	Drag and Drop	Create drag and drop tasks with images	Drag and drop question enables the learner to associate two or more elements and to make logical connections in a visual way. Create Drag and drop questions using both text and images as draggable alternatives. H5P Drag and drop questions support one-to-one, one-to-many, many-to-one and many-to-many relations between questions and answers. 	https://h5p.org/sites/default/files/drag%20and%20drop%20.svg	1488376151	1636017750	1	7	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-01.png?itok=xS6wYXCj","alt":"A drag and drop with one dropzone (strawberry) and three draggables"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-03.png?itok=BMTD9pmT","alt":"A drag and drop where the learner shall match flags and country names"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-04.png?itok=_QbzXvhm","alt":"A drag and drop where the learner shall match images of berries with their names"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-02.png?itok=xcDAfXTD","alt":"A drag and drop where the learner shall drag verbs, adjectives and nouns in the correct places"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-06.png?itok=jONaT2bA","alt":"A drag and drop where the learner shall place the draggables on spots on the background image"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-05.png?itok=wngjR93X","alt":"The drag and drop result view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/drag-and-drop	https://h5p.org/tutorial-drag-and-drop-question	["drag and drop"]	["Tasks"]	Joubel
-61	H5P.MemoryGame	1	3	7	1	20	Memory Game	Create the classic image pairing game	Create your own memory games and test the memory of your site's users with this simple yet beautiful HTML5 game.	https://h5p.org/sites/default/files/memmory%20game.svg	1488379742	1607082982	1	12	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/memmory-game-02.png?itok=wrU2ytID","alt":"Student's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/memmory-game-03.png?itok=dCb0YlGe","alt":"Student's view - feedback after the match"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/memmory-game-01.png?itok=AeOPD5HE","alt":"Student's view - matching two different images"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/memory-game	https://h5p.org/documentation/content-author-guide/tutorials-for-authors/memory-game	["memory","game","cards"]	["Tasks"]	Joubel
-55	H5P.Blanks	1	12	11	1	19	Fill in the Blanks	Create a task with missing words in a text	Learners fill in the missing words in a text. The learner is shown a solution after filling in all the missing words, or after each word depending on settings. Authors enter text and mark words to be replaced with an asterix. In addition to native and second language learning, Fill in the blanks can be used to test the learner's ability to reproduce facts or produce mathematical inferences.	https://h5p.org/sites/default/files/fill%20in%20the%20blanks.svg	1488376747	1616161818	1	4	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/fill-in-the-blanks-01.png?itok=EwyBhMVL","alt":"The student's initial view - empty blanks"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/fill-in-the-blanks-02.png?itok=ByI6y9m-","alt":"The result view showing corrects and wrongs"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/fill-in-the-blanks-03.png?itok=49rZ2yTY","alt":"Tip inside blanks"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/fill-in-the-blanks-04.png?itok=m8MnJh16","alt":"A blank with \\"Automatically check answers after input\\" enabled"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/fill-in-the-blanks	https://h5p.org/tutorial-fill-in-the-blanks	["fill","blanks","text"]	["Tasks"]	Joubel
-56	H5P.ImageHotspotQuestion	1	8	13	1	23	Find the Hotspot	Create image hotspots for users to find	This content type allows end users to press somewhere on an image and get feedback on whether that was correct or incorrect according to the task description. The author uploads an image and defines various hotspots corresponding to details or sections of the image. Hotspots can either be defined as correct or incorrect, and the author provides appropriate feedback text in both cases. The author can also define a feedback if the end user presses somewhere which is neither defined as a correct nor incorrect hotspot.	https://h5p.org/sites/default/files/find%20the%20hotspot.svg	1488377636	1629455847	0	26	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/find-the-hotspot-01.png?itok=G5zJHEh0","alt":"Learner's view - correct answer is selected"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/find-the-hotspot-02.png?itok=mNIZ5J08","alt":"Editor view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/image-hotspot-question		["find","hotspot","image"]	["Tasks"]	Joubel
-57	H5P.GuessTheAnswer	1	4	10	1	19	Guess the Answer	Create an image with a question and answer	This content type allows authors to upload an image and add a suitable description. End users can guess the answer and press the bar below the image to reveal the correct answer.	https://h5p.org/sites/default/files/guess%20the%20answer.svg	1488377905	1611144757	1	35	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/guess-the-answer-01.png?itok=cKWhsf7W","alt":"Learner's initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/guess-the-answer-02.png?itok=k9g-O8UW","alt":"Learner's view revealing the correct answer"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/guess-the-answer	https://h5p.org/tutorial-guess-the-answer	["guess","answer"]	["Other"]	Joubel
-58	H5P.IFrameEmbed	1	0	26	1	0	Iframe Embedder	Embed from a url or a set of files	The Iframe embedder makes it easy to make an H5P of already existing JavaScript applications.	https://h5p.org/sites/default/files/iframe%20embedder.svg	1488378484	1607083149	0	18	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/iFrame-embedder-01.png?itok=CehXfNpd","alt":"End user's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/iFrame-embedder-02.png?itok=p5V0tHcY","alt":"End user's view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/iframe-embedder		["embed","iframe"]	["Other"]	Joubel
-59	H5P.InteractiveVideo	1	22	10	1	23	Interactive Video	Create videos enriched with interactions	Add interactivity to your video with explanations, extra pictures, tables, Fill in the Blank and multiple choice questions. Quiz questions support adaptivity, meaning that you can jump to another part of the video based on the user's input.  Interactive summaries can be added at the end of the video. Interactive videos are created and edited using the H5P authoring tool in a standard web browser.	https://h5p.org/sites/default/files/interactive%20video.svg	1488379462	1634817463	1	0	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-01.png?itok=WgAmEzb0","alt":"Interactive video start screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-02.png?itok=9P0-eiaB","alt":"The editor with a multiple choice question"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-03.png?itok=2X03y0pe","alt":"Inside the editor showing the multiple choice editor"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-04.png?itok=NtKe_dhK","alt":"Bookmarks menu"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-05.png?itok=Xy-1r3Dt","alt":"Drag and drop inside the video"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-06.png?itok=aVysZc0i","alt":"Summary at the end of the video"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/interactive-video	https://h5p.org/tutorial-interactive-video	["interactive","video"]	["Larger Resources"]	Joubel
-60	H5P.MarkTheWords	1	9	15	1	19	Mark the Words	Create a task where users highlight words	Mark the words allows content designers to create textual expressions with a defined set of correct words. The end user highlights words according to the task description and is given a score. For the editor it is super easy to create a click the words challenge. The editor types in the text and encloses the words that the user is supposed to click, the right answers, in asterix like *correctWord*.	https://h5p.org/sites/default/files/mark%20the%20words.svg	1488379610	1616162727	1	16	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/mark-the-words-01_0.png?itok=FTe4BK8x","alt":"Learner's initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/mark-the-words-03_0.png?itok=veoD8bpQ","alt":"Learner's view - showing solution"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/mark-the-words	https://h5p.org/documentation/content-author-guide/tutorials-for-authors/mark-the-words	["mark","words"]	["Tasks"]	Joubel
-62	H5P.MultiChoice	1	14	7	1	19	Multiple Choice	Create flexible multiple choice questions	Multiple Choice questions can be an effective assesment tool. The learner is given immediate performance feedback. The H5P Multiple Choice questions can have a single or multiple correct options per question.	https://h5p.org/sites/default/files/multiple%20choice.svg	1488379865	1611144757	1	2	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-choice-01.png?itok=CiwAg_Sn","alt":"Learner's initial view (radio buttons)"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-choice-02.png?itok=f5hGmJWk","alt":"Learner answered correct"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-choice-03.png?itok=R7zb6rTZ","alt":"Learner's initial view (check buttons)"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-choice-04.png?itok=eSNsVzFo","alt":"Learner has clicked the \\"check\\" button"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/multichoice	https://h5p.org/tutorial-multichoice-question	["multiple","choice","quiz"]	["Tasks"]	Joubel
-63	H5P.PersonalityQuiz	1	0	8	1	0	Personality Quiz	Create personality quizzes	In this content type, the author defines a series of questions with alternatives, where each alternative is matched against one or more personalities. At the end of the quiz, the end user will see which personality matches the best. There are several ways of making this quiz visually appealing, by eg. representing questions, alternatives, and personalities using images.	https://h5p.org/sites/default/files/personality%20quiz.svg	1488380090	1607083118	0	38	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/personality-quiz-01.png?itok=ygSGXtZF","alt":"Student's view - starting screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/personality-quiz-02.png?itok=79jwUFNT","alt":"Student's view - question 1"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/personality-quiz-03.png?itok=lDhEO4KA","alt":"Student's view - question 2"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/personality-quiz-04.png?itok=1zBGhax9","alt":"Student's view - question 3"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/personality-quiz-05.png?itok=rdoNJ4-j","alt":"Student's view - end screen"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/personality-quiz		["personality","quiz"]	["Other"]	Lumenia
-64	H5P.Questionnaire	1	3	2	1	0	Questionnaire	Create a questionnaire to receive feedback	Gain feedback and ask open ended questions in Interactive Videos and other content types with Questionnaire. Questionnaire makes the user's answers available via an xAPI integration. This means that website owners may store the answers in many different ways. Answers may be stored in an LRS, the sites own custom storage or a script can fetch the e-mail address and use it to send the user an e-mail. On H5P.org answers are stored in Google Analytics.	https://h5p.org/sites/default/files/questionaire.svg	1488380236	1607083107	0	39	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/questionnaire-01.png?itok=zVNElQ9C","alt":"Student's view - question 1"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/questionnaire-02.png?itok=SdSQGHbW","alt":"Student's view - question 2"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/questionnaire-03.png?itok=sNnbfkv_","alt":"Student's view - question 3"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/questionnaire-04.png?itok=J8eZGmV0","alt":"Student's view - end screen"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/questionnaire		["questionnaire"]	["Other"]	Joubel
-65	H5P.QuestionSet	1	17	6	1	19	Quiz (Question Set)	Create a sequence of various question types	Question Set is your typical quiz content type. It allows the learner to solve a sequence of various question types such as Multichoice, Drag and drop and Fill in the blanks in a Question set. As an author, there are many settings you can use to make it behave just the way you want it to. You may, for instance, customize the Question set with background images and define a pass percentage for the learner. The Question Set also allows you to add videos that are played at the end. One video for success, another if the learner fails the test. This might motivate learners to try again if they fail so that they get to see the success video.	https://h5p.org/sites/default/files/question-set.svg	1488380337	1631696798	1	3	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/question-set-01.png?itok=7xWQV7Vm","alt":"A multiple choice inside a question set"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/question-set-02_0.png?itok=ku46xHQX","alt":"A drag and drop inside a question set"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/question-set-03.png?itok=n1cnLs5j","alt":"A multiple choice inside a question set"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/question-set-04.png?itok=TrmmsdwT","alt":"The summary page"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/question-set	https://h5p.org/tutorial-question-set	["question set","collection","quiz"]	["Larger Resources"]	Joubel
-71	H5P.ImageMultipleHotspotQuestion	1	0	1	1	6	Find Multiple Hotspots	Create many hotspots for users to find	A free HTML5 based question type allowing creatives to create an image based test where the learner is to find the correct spots on an image. Use this content type with the H5P plugin for WordPress, Moodle or Drupal to challenge your users.	https://h5p.org/sites/default/files/find%20multiple%20hotspots.svg	1491482530	1607082894	0	24	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-hotspots-01.png?itok=Gbi-unNy","alt":"User's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-hotspots-02.png?itok=ctq2RdVL","alt":"Authoring experience - adding hotspots"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-hotspots-03.png?itok=uAshALHJ","alt":"User's view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/find-multiple-hotspots		[]	["Tasks"]	lukemuller
-66	H5P.SingleChoiceSet	1	11	14	1	19	Single Choice Set	Create questions with one correct answer	Single choice set allows content designers to create question sets with one correct answer per question. The end user gets immediate feedback after submitting each answer.	https://h5p.org/sites/default/files/single%20choice%20set.svg	1488380512	1616159387	1	11	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/single-choice-set-01.png?itok=IzXoN6tp","alt":"Learner's initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/single-choice-set-02.png?itok=yrj9-jB0","alt":"Correct answer given for an alternative"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/single-choice-set-03.png?itok=o-b5R46U","alt":"Summary page"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/single-choice-set-04.png?itok=0BlfuOy3","alt":"Showing solution"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/single-choice-set	https://h5p.org/documentation/content-author-guide/tutorials-for-authors/single-choice-set	["collection","quiz","choice"]	["Tasks"]	Joubel
-67	H5P.Summary	1	10	11	1	19	Summary	Create tasks with a list of statements	Summaries help the learner remember key information in a text, video or presentation, by actively buliding a summary about the topic at hand. When the learner has completed a summary, a complete list of key statements about the topic is shown.	https://h5p.org/sites/default/files/summary.svg	1488380637	1616160559	1	30	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/summary-01.png?itok=ICk8qnxS","alt":"Learner's initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/summary-02.png?itok=DY9wdA0S","alt":"Wrong answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/summary-03.png?itok=nWaNT-Ll","alt":"First correct statement found"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/summary-04.png?itok=EYtv3B7n","alt":"Second correct statement found"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/summary-05.png?itok=tVHuEHqv","alt":"Summary"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/summary	https://h5p.org/tutorial-summary	["summary"]	["Tasks"]	Joubel
-68	H5P.Timeline	1	1	21	1	0	Timeline	Create a timeline of events with multimedia	This is Timeline.js developed by Knight Lab, packaged as an H5P content type in order to make timelines easily editable, shareable and reuseable. The Timeline content type allows you to place a sequence of events in a chronological order. For each event you may add images and texts. You may also include assets from Twitter, YouTube, Flickr, Vimeo, Google Maps and SoundCloud.	https://h5p.org/sites/default/files/timeline.svg	1488380771	1607083139	0	22	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/timeline-01.png?itok=6BO75od2","alt":"Student's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/timeline-02.png?itok=-SsDe4Zb","alt":"Student's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/timeline-03.png?itok=Fmbxyxix","alt":"Student's view - full screen preview"}]	{"id":"MPL2","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/timeline	https://h5p.org/documentation/content-author-guide/tutorials-for-authors/timeline	["timeline","slider"]	["Larger Resources"]	Joubel
-69	H5P.TrueFalse	1	6	7	1	19	True/False Question	Create True/False questions	True/False Question is a simple and straightforward content type that can work by itself or be inserted into other content types such as Course Presentation. A more complex question can be created by adding an image or a video.	https://h5p.org/sites/default/files/true%20false.svg	1488380892	1611144757	1	15	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/true-false-01.png?itok=LKXT7ZAG","alt":"Learner's initial view (image and question)"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/true-false-02.png?itok=5AvPOokc","alt":"Correct answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/true-false-03.png?itok=YCVfBTig","alt":"Wrong answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/true-false-04.png?itok=88ogDrvt","alt":"Learner's initial view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/true-false	https://h5p.org/tutorial-true-false	["true","false"]	["Tasks"]	Joubel
-70	H5P.ImageHotspots	1	9	7	1	19	Image Hotspots	Create an image with multiple info hotspots	Image hotspots makes it possible to create an image with interactive hotspots. When the user presses a hotspot, a popup containing a header and text or video is displayed. Using the H5P editor, you may add as many hotspots as you like.	https://h5p.org/sites/default/files/image%20hotpots.svg	1491400692	1620050697	1	8	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-hotspots-01.png?itok=-GthrRP1","alt":"View - hotspots"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-hotspots-02.png?itok=AP-FWcHh","alt":"View - video as a hotspot"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-hotspots-03.png?itok=Zt1V7UYE","alt":"View - text as a hotspot"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/image-hotspots	https://h5p.org/tutorial-image-hotspots	["image","hotspot"]	["Other"]	Joubel
-72	H5P.ImageJuxtaposition	1	4	1	1	15	Image Juxtaposition	Create interactive images	A free HTML5-based image content type that allows users to compare two images interactively. Tell your image stories with H5P and Image Juxtaposition on WordPress, Moodle or Drupal.	https://h5p.org/sites/default/files/before-after-image_0.svg	1491482694	1607082948	0	29	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-juxtaposition-01.png?itok=EmBa43Us","alt":"User's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-juxtaposition-02.png?itok=idPJFSr2","alt":"User's view"}]	{"id":"MPL2","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/image-juxtaposition		[]	["Other"]	otacke
-73	H5P.Audio	1	4	5	1	19	Audio	Upload an audio recording	Upload an audio recording in .mp3, .wav, .ogg or provide the link for an audio recording.	https://h5p.org/sites/default/files/audio.svg	1491918006	1611144757	1	19	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/audio-01.png?itok=z6wayrwd","alt":"Audio player"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/audio-02.png?itok=NdFP2pcq","alt":"Audio player muted"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/audio		[]	["Other"]	Joubel
-74	H5P.AudioRecorder	1	0	21	1	12	Audio Recorder	Create an audio recording	An HTML5 audio recorder. Record your voice and play back or download a .wav file of your recording. Use the H5P plugin to create the H5P Audio Recorder to your Drupal, Wordpress or Moodle site. 	https://h5p.org/sites/default/files/icon_1.svg	1493377972	1607083009	0	32	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/audio-recorder-1.png?itok=vAcuqLSA","alt":"Start screen for audio recorder"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/audio-recorder-2.png?itok=qoLWgAaq","alt":"Recording screen for audio recorder"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/audio-recorder-3.png?itok=EnH5rwO4","alt":"Finish screen for audio recorder"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/audio-recorder		["audio","recorder"]	["Other"]	Joubel
-75	H5P.SpeakTheWords	1	3	11	1	14	Speak the Words	Answer a question using your voice (Chrome only)	Speak the Words is only supported in browsers that implements the Web Speech API (Chrome browsers, except on iOS). You need a microphone to answer the question. Ask a question to users and make them answer using their voice. You can choose multiple correct answers. The user will be able to see what his words were interpreted as, and how close it was to the correct answers.	https://h5p.org/sites/default/files/speak%20the%20words_0.svg	1493897505	1607083088	0	25	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/QuestionPagev2.png?itok=WYSV9ON0","alt":"Question text and answer with microphone screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/ShowSolutionPagev2_0.png?itok=vUTAG0RT","alt":"Interpreted and correct answers screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/CorrectSolutionPage.png?itok=poT-tQ6Z","alt":"Correct answer screen"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/node/72682		["language","translation","voice","recognition","speech","mic","microphone"]	["Tasks"]	thomasmars
-76	H5P.Agamotto	1	5	2	1	19	Agamotto (Image Blender)	Present a sequence of images and explanations	Present a sequence of images that people are supposed to look at one after the other, e.g. photos of an item that changes over time, schematics or maps that are organized in different layers or images that reveal more and more details.	https://h5p.org/sites/default/files/icon_2.svg	1494963576	1607082936	0	33	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/agamotto-02.png?itok=xlA7OqvC","alt":"Agamotto shown as a layered map"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/agamotto-01.png?itok=nxg6d8eA","alt":"Agamotto transforming between different seasons"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/node/79243	https://h5p.org/agamotto-tutorial	["image","images","transition"]	["Other"]	otacke
-77	H5P.ImageSequencing	1	1	0	1	12	Image Sequencing	Place images in the correct order	A free HTML5 based image sequencing content type that allows authors to add a sequence of their own images (and optional image description) to the game in a particular order. The order of the images will be randomized and players will have to reorder them based on the task description. 	https://h5p.org/sites/default/files/icon_3.svg	1503485910	1607083030	0	27	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Selection_386.png?itok=HzsvJWBU","alt":"Initial screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Selection_387.png?itok=m28lDPwX","alt":"Drag and drop images"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Selection_388.png?itok=IGV1PN-F","alt":"Result screen when one or more is incorrect"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Selection_389.png?itok=VZQIfLEN","alt":"Result screen when all image are correctly ordered"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/image-sequencing	https://h5p.org/tutorial-image-sequencing	["image","sequence","order"]	["Tasks"]	jithin
-78	H5P.Flashcards	1	5	20	1	4	Flashcards	Create stylish and modern flashcards	This content type allows authors to create a single flash card or a set of flashcards, where each card has images paired with questions and answers. Learners are required to fill in the text field and then check the correctness of their solution.	https://h5p.org/sites/default/files/icon_4.svg	1503910719	1633066335	1	13	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/flashcards-01_0.png?itok=5xeC6hkY","alt":"Learner has not given any answer yet"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/flashcards-02_0.png?itok=DQTjS65M","alt":"Correct answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/flashcards-03_0.png?itok=833omhR4","alt":"Wrong answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/flashcards-04.png?itok=6S_kGNS4","alt":"Summary"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/flashcards	https://h5p.org/tutorial-flashcards	["cards","animation"]	["Tasks"]	Joubel
-79	H5P.SpeakTheWordsSet	1	1	10	1	14	Speak the Words Set	Create a series of questions answered by speech (Chrome only)	Speak the Words Set is only supported in browsers that implement the Web Speech API (Chrome browsers, except on ios). You need a microphone to answer the question. Create a set of questions that learners can answer using their voice. you can choose multiple correct answers. The user will be able to see what his words were interpreted as, and how close it was to the correct answers.	https://h5p.org/sites/default/files/speak%20the%20words%20set.svg	1506503229	1607083077	0	23	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01.png?itok=92yvDMEt","alt":"An image showing the start screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-02.png?itok=SSpDaEf6","alt":"An image showing the question screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-03.png?itok=QRR1KWn3","alt":"An image showing the recording taking place"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-04.png?itok=3vjLOvF3","alt":"An image showing a correct answer is given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-05.png?itok=74miXXWG","alt":"An image showing the solution view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-06.png?itok=UBAPLNJI","alt":"An image showing the finish screen"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/speak-the-words-set		["language","translation","voice","quiz","set","recognition","mic","microphone"]	["Larger Resources"]	Joubel
-80	H5P.ImageSlider	1	1	2	1	14	Image Slider	Easily create an Image Slider	Present your images in an appealing way with ease. Authors just have to upload images and provide alternative texts for the images. \r\n\r\nThe next two images are always preloaded so switching between images will usually be snappy with no delay for loading the next image.\r\n\r\nImages may be experienced as part of the page or in full-screen mode. When used as part of the page the system will pick a fixed aspect ratio depending on the images being used. Authors may decide to handle aspect ratios differently.	https://h5p.org/sites/default/files/icon_5.svg	1508146690	1608213501	1	17	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_0.png?itok=PRJNeyt3","alt":"Preview using full width"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-02_0.png?itok=NXMcjo0p","alt":"Preview with a portrait image"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-03_0.png?itok=jqQysnpP","alt":"Full-screen preview"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/image-slider	https://h5p.org/tutorial-image-slider	["image","images","slider","carousel"]	["Other"]	falcon
-81	H5P.Essay	1	2	3	1	13	Essay	Create Essay with instant feedback	In this content type, the author defines a set of keywords that represent crucial aspects of a topic. These keywords are matched against a text that students have composed and can be used to immediately provide feedback - either suggesting to revise certain topic details if a keyword is missing or, confirming the student's ideas if the text contains a keyword.\r\n	https://h5p.org/sites/default/files/icon_6.svg	1515752007	1607082926	0	20	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/essay-01.png?itok=PJmHwrPp","alt":"Initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/essay-02.png?itok=b8u7DK0a","alt":"Showing sample (show solution clicked)"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/essay-03.png?itok=m8BrMhVW","alt":"Feedback given"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/essay	https://h5p.org/tutorial-essay	["Essay"]	["Tasks"]	otacke
-82	H5P.ImagePair	1	4	0	1	14	Image Pairing	Drag and drop image matching game	Image pairing is a simple and effective activity that require learners to match pairs of images. Since it is not required for both images in a pair to be the same, authors are also able to test the understanding of a relation between two different images. 	https://h5p.org/sites/default/files/icon_7.svg	1525354557	1608213486	0	31	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-pairing-01.png?itok=6CRqBI7P","alt":"Initial screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-pairing-02.png?itok=ZgStVtVj","alt":"After check - with errors"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-pairing-03.png?itok=yIpQuIMP","alt":"In action"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/image-pairing	https://h5p.org/tutorial-image-pairing	["image images matching pair"]	["Tasks"]	jithin
-83	H5P.Dictation	1	1	1	1	13	Dictation	Create a dictation with instant feedback	You can add audio samples containing a sentence for dictation and enter the correct transcription. Your students can listen to the samples and enter what they have heard in to a text field. Their answers will be evaluated automatically. Several options will allow you to control the exercise's difficulty. You can optionally add a second audio sample for a sentence that could hold a version spoken slowly. You can also set a limit for how often a sample can be played, define if punctuation should be relevant for scoring, and decide whether small mistakes like typing errors should be counted as no mistake, a full mistake, or just a half mistake.	https://h5p.org/sites/default/files/icon_8.svg	1544698878	1634817463	1	34	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dictation-1_0.png?itok=Wu85TuX8","alt":"Initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dictation-2_0.png?itok=Mg0TRDj5","alt":"Show score"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dictation-3_0.png?itok=eKpbR2t2","alt":"Showing solution"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dictation-berries_0.png?itok=m9KR17o8","alt":"A dictation about berries"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/dictation	https://h5p.org/tutorial-dictation	["language","audio"]	["Tasks"]	otacke
-84	H5P.BranchingScenario	1	5	4	1	20	Branching Scenario	Create dilemmas and self paced learning	Branching Scenario allow authors to present the learners with a variety of rich interactive content and choices. The choices the learners make will determine the next content they see. May be used to create dilemmas, serious games, and self-paced learning.	https://h5p.org/sites/default/files/icon_9.svg	1551271593	1623605799	1	37	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_0_0.png?itok=eRgwKqbj","alt":"Screenshot 01"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_1.png?itok=mDY0Y_ys","alt":"Screenshot 02"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_2.png?itok=YVxss_-c","alt":"Screenshot 03"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_3.png?itok=TdTgaM87","alt":"Screenshot 04"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_4.png?itok=DPsyysid","alt":"Screenshot 05"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_5.png?itok=BrCSMC1L","alt":"Screenshot 06"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/branching-scenario	https://h5p.org/tutorial-branching-scenario	[]	["Larger Resources"]	Joubel
-85	H5P.ThreeImage	0	4	10	1	20	Virtual Tour (360)	Create 360 environments with interactions	360 (equirectangular) and normal images may be enriched with interactivities like explanations, videos, sounds, and interactive questions. The images create scenes that also may be linked together to give the user an impression of moving between environments or between different viewpoints within the same environment.	https://h5p.org/sites/default/files/360-icon.svg	1551273005	1618947367	1	40	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_1_0.png?itok=GUmLlxSY","alt":"Screenshot 02"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_2_0.png?itok=t5YmuLiK","alt":"Screenshot 03"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_3_0.png?itok=58i8supV","alt":"Screenshot 04"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/virtual-tour-360	https://h5p.org/tutorial-virtual-tour	[]	["Larger Resources"]	Joubel
-86	H5P.FindTheWords	1	4	4	1	20	Find the words	Grid word search game	A free HTML5-based word search activity that allows authors to create a list of words that will be drawn in a grid. The learner's task is to find and select the words in the grid.	https://h5p.org/sites/default/files/icon_10.svg	1563536197	1607082972	0	28	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/find-the-words-01.png?itok=O2BgqYiR","alt":"Learners has chosen 5 of 12 correct words"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/find-the-words-02.png?itok=J9s5I6oM","alt":"Show solution mode"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/find-the-words-03.png?itok=vz4BrCJd","alt":"Greek characters"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/find-the-words		[]	["Tasks"]	jithin
-87	H5P.InteractiveBook	1	3	4	1	23	Interactive Book	Create small courses, books and tests	Create small courses, books, or tests. Interactive Book allows authors to combine large amounts of interactive content like interactive videos, questions, course presentations, and more on multiple pages. There is a summary at the end summing up the scores obtained by the learner throughout the book.	https://h5p.org/sites/default/files/icon_11.svg	1596534830	1607082854	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-book-01_1.png?itok=Pe4eW1mb","alt":"Interactive book page"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-book-01_2.png?itok=Vz7aDDvh","alt":"Interactive book summary page"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-book-01_3.png?itok=nBDvwn__","alt":"Footer"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-book-01_4.png?itok=FFNO5sLk","alt":"Start screen (book cover)"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/interactive-book		["book","course"]	["Larger Resources"]	fnoks
-88	H5P.KewArCode	0	2	1	1	23	KewAr Code	Create QR codes for different purposes	KewAr Code enables content designers to create well-known QR codes. Those QR codes can encode URLs, but also contact information, events, geo-locations, etc. People can scan them with a QR code reader in order to trigger the chosen action.	https://h5p.org/sites/default/files/icon_12.svg	1600860059	1607082713	0	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/KewAr-code-01.png?itok=aaHcorAK","alt":"QR code"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/KewAr-code-02.png?itok=sCtAhvIA","alt":"QR code opening contact information"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/KewAr-code-03.png?itok=7kCRw1ad","alt":"Customize the display of the QR code"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/kewar-code		["QR"]	["Other"]	otacke
-89	H5P.AdventCalendar	0	2	3	1	23	Advent Calendar (beta)	Create surprises that will be unveiled daily	Build and customize a beautiful advent calendar. You may add a background image to the entire calendar, on each door, and as a background on the content inside each door. You may also add snow- effect and music. Inside each door, you may add a sound, video, text, image, or link.\r\n\r\nDo note that it is easy for computer-savvy users to reveal the content of all doors right away. If you plan to reveal big secrets on future days you should wait until that day before adding your big secrets to the calendar.	https://h5p.org/sites/default/files/icon_13.svg	1606734037	1607082486	0	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent-05.JPG?itok=1OYc0iWb","alt":"Merry christmas"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent_01.png?itok=Ww182qDz","alt":"Advent calendar unopened"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent_02.png?itok=FeZ3qJMH","alt":"Video behind hatch"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent_03.png?itok=RWXEKKY9","alt":"16 hatches opened"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent_04.png?itok=H-fLXnHD","alt":"2 hatches opened"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent_05.png?itok=bNrzhj0z","alt":"Three random hatches opened"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/advent-calendar		["christmas","advent","holidays","calendar"]	["Larger Resources"]	otacke
-90	H5P.Crossword	0	4	8	1	23	Crossword	Create a crossword puzzle	Build and customize a beautiful crossword to engage your audience. The crossword is highly customizable allowing you to configure all colors, upload a background image, decide how scoring should work and even randomize the words in it so that your audience gets a new crossword each time if you want.	https://h5p.org/sites/default/files/crosswords.png	1628679621	1628706223	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/01%20%282%29.png?itok=v092kMg4","alt":"Green theme"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/02%20%282%29.png?itok=ehX9fDHz","alt":"Red theme"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/03%20%282%29.png?itok=BZ2RNlBc","alt":"Background image"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/04%20%281%29.png?itok=WOMexfuI","alt":"Blue theme"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/crossword		["crossword","games"]	["Tasks"]	otacke
-91	H5P.SortParagraphs	0	10	7	1	23	Sort the Paragraphs	Create a set of paragraphs to be sorted	Type or paste in a list of paragraphs that will be randomized. You may for instance let each paragraph be a part of a song, a block of code or steps in a recipe. Learners are to sort the paragraphs into the correct order. By default learners will get one point for each paragraph that follows the paragraph it is supposed to follow, but you may decide to award a point for each paragraph that is in the correct place instead.	https://h5p.org/sites/default/files/sort-paragraphs.png	1628680823	1628706244	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/01%20%281%29.png?itok=P8PkYw_5","alt":"Student view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/02%20%281%29.png?itok=b3HrmSzM","alt":"Dragging a paragraph"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/03%20%281%29.png?itok=rxMP2Sgy","alt":"Checking answers"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/04_13.png?itok=V_7gqBel","alt":"Showing solution"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/sort-the-paragraphs		["sorting","games","tasks"]	["Tasks"]	otacke
-92	H5P.MultiMediaChoice	0	1	7	1	23	Image Choice	Create a task were the alternatives are images	Build beautiful multiple or single choice questions were the alternatives are images. You may customize the layout for the alternatives and choose between fixed aspect ratios or just use the aspect ratios the images already have.	https://h5p.org/sites/default/files/image-choice.png	1628681468	1628706263	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/01_23.png?itok=PFljIMHl","alt":"Student view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/02_18.png?itok=UqqF2jf9","alt":"Showing solutions"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/03_12.png?itok=0C2e1Kj4","alt":"Images may displayed with a fixed aspect ratio"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/image-choice		["sorting","games","tasks"]	["Tasks"]	Joubel
+93	H5P.Accordion	1	0	30	1	5	Accordion	Create vertically stacked expandable items	Reduce the amount of text presented to readers by using this responsive accordion. Readers decide which headlines to take a closer look at by expanding the title. Excellent for providing an overview with optional in-depth explanations.	https://h5p.org/sites/default/files/accordion.svg	1488282378	1661252352	1	9	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/accordion-01.png?itok=qnXarBZ5","alt":"Collapsed"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/accordion-02.png?itok=lnTobl4C","alt":"Expanded"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/accordion	https://h5p.org/tutorial-accordion	["accordion","collapsible text"]	["Other"]	Joubel
+94	H5P.ArithmeticQuiz	1	1	19	1	0	Arithmetic Quiz	Create time-based arithmetic quizzes	Create arithmetic quizzes consisting of multiple choice questions. As an author, all you have to do is decide the type and length of the quiz. Users keep track of score and time spent when solving the quiz.	https://h5p.org/sites/default/files/arithmetic%20quiz.svg	1488283418	1608213331	1	21	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-01.png?itok=w00QVe4N","alt":"Arithmetic quiz start screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-02.png?itok=k6nal6kx","alt":"Arithmetic quiz question"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-03.png?itok=oHISx8VF","alt":"Arithmetic quiz correct answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-04.png?itok=JIcoDl58","alt":"Arithmetic quiz end screen"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/arithmetic-quiz	https://h5p.org/tutorial-arithmetic-quiz	["math","arithmetic quiz","countdown"]	["Tasks"]	Joubel
+95	H5P.Chart	1	2	21	1	21	Chart	Quickly generate bar and pie charts	Need to present simple statistical data graphically without creating the artwork manually? Chart is your answer.	https://h5p.org/sites/default/files/chart.svg	1488283592	1661256089	1	41	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-01_0.png?itok=iRQawZtl","alt":"Pie chart view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-02_0.png?itok=6G-3NLs-","alt":"Bar chart view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/arithmetic-quiz-03_0.png?itok=dGg4KIiV","alt":"Bar chart view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/chart	https://h5p.org/tutorial-chart	["chart","bar chart","pie chart","graph"]	["Other"]	Joubel
+96	H5P.Collage	0	3	17	1	7	Collage	Create a collage of multiple images	The Collage tool allows you to organize images into a soothing composition. 	https://h5p.org/sites/default/files/college.svg	1488374773	1661257537	1	36	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/collage-04_0.png?itok=Ix3CDsjz","alt":"Collage editor with no images"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/collage-03_0.png?itok=idf9cgYV","alt":"Collage editor with three images"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/collage-01_0.png?itok=-UtwiYRz","alt":"A collage containing 3 images of flowers"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/collage-02_0.png?itok=aTHRDus1","alt":"A collage containing 4 images of snowy mountains"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/collage	https://h5p.org/tutorial-collage	["collage","image"]	["Other"]	Joubel
+97	H5P.Column	1	13	1	1	19	Column	Organize H5P content into a column layout	Organize your content type into a column layout with H5P Column. Content types that address similar material or share a common theme can now be grouped together to create a coherent learning experience. In addition, authors are free to be creative by combining almost all of the existing H5P content types.	https://h5p.org/sites/default/files/column.svg	1488375032	1661432310	1	6	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/column-01.png?itok=37ibbzhk","alt":"A column containing an image, a text block and a question"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/column-02.png?itok=e2km4R4C","alt":"A column containing different content types"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/column-03.png?itok=nilYMNyC","alt":"A drag and drop inside a column"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/column	https://h5p.org/tutorial-column	["column","layout","compound"]	["Larger Resources"]	Joubel
+102	H5P.DragText	1	10	3	1	19	Drag the Words	Create text-based drag and drop tasks	Drag the Words allows content designers to create textual expressions with missing pieces of text. The end user drags a missing piece of text to its correct place, to form a complete expression. May be used to check if the user remembers a text she has read, or if she understands something. Helps the user think through a text. It's super easy to create a drag the words task. The editor just writes the text and encloses the words that are to be draggable with asterisk signs like *draggableWord*.	https://h5p.org/sites/default/files/drag%20the%20words.svg	1488376477	1662383304	1	5	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-the-words-01.png?itok=dpMCvPPe","alt":"Drag text - initial state."},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-the-words-02.png?itok=njr_aEqB","alt":"Drag text after clicking the \\"check\\" button"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-the-words-03.png?itok=2xeHtKBa","alt":"Tip in drag text"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/drag-the-words	https://h5p.org/documentation/content-author-guide/tutorials-for-authors/drag-the-words	["drag","words"]	["Tasks"]	Joubel
+98	H5P.CoursePresentation	1	24	1	1	23	Course Presentation	Create a presentation with interactive slides	Course presentations consist of slides with multimedia, text, and many different types of interactions like interactive summaries, multiple choice questions and interactive videos. Learners can experience new interactive learning material and test their knowledge and memory in Course Presentations. As always with H5P, content is editable in web browsers, and the Course Presentation activity type includes a WYSIWYG drag and drop based authoring tool. A typical use of the Course Presentation activity is to use a few slides to introduce a subject and follow these with a few more slides in which the user’s knowledge is tested. Course Presentations may however be used in many different ways, including as a presentation tool for use in the classroom, or as a game where the usual navigation is replaced with navigation buttons on top of the slides to let the user make choices and see the consequences of their choices.	https://h5p.org/sites/default/files/course%20presentation.svg	1488375267	1653481418	1	1	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-01.png?itok=ilSK_sEu","alt":"Adding an image to the editor"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-02_0.png?itok=NrkD9l5t","alt":"A single Choice Set inside the editor"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-03.png?itok=cJiwaVzi","alt":"A single Choice Set and an image of a cloudberry inside the editor"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-04_0.png?itok=CIQbHd-t","alt":"First slide of a presentation containing text and a clickable image"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-05_0.png?itok=z-6dFoL1","alt":"Summary slide"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-06_0.png?itok=gHNw6Vt0","alt":"Active surface mode"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/course-presentation-07_0.png?itok=oAOD70di","alt":"A slide containing video and text"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/presentation	https://h5p.org/tutorial-course-presentation	["course presentation","slides","powerpoint"]	["Larger Resources"]	Joubel
+99	H5P.Dialogcards	1	9	6	1	15	Dialog Cards	Create text-based turning cards	Dialog cards can be used as a drill to help learners memorize words, expressions or sentences. On the front of the card, there's a hint for a word or expression. By turning the card the learner reveals a corresponding word or expression. Dialog cards can be used in language learning, to present math problems or help learners remember facts such as historical events, formulas or names.	https://h5p.org/sites/default/files/dialog%20cards%20.svg	1488375538	1661251767	1	10	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dialog-cards-01_0.png?itok=OgMQk8D5","alt":"Dialog card - front"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dialog-cards-02_0.png?itok=Pv49ouxC","alt":"Dialog card - back"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dialog-cards-03.png?itok=8wwQDVUw","alt":"Dialog card - front"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dialog-cards-04.png?itok=8VFY5QY3","alt":"Dialog card - back"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/dialog-cards	https://h5p.org/tutorial-dialog-cards	["dialog cards"]	["Other"]	Joubel
+100	H5P.DocumentationTool	1	8	15	1	19	Documentation Tool	Create a form wizard with text export	The documentation tool aims to make it easy to create assessment wizards for goal driven activities. It can also be used as a form wizard. While editing, the author can add multiple steps to the wizard. In each step, the author can define which content goes into that step. Content can be plain text, input fields, goal definition and goal assessment. Once published, the end user will be taken through the steps of the wizard. On the last step of the wizard, the user can generate a document with all the input that has been submitted. This document can be downloaded. The Documentation tool is fully responsive and works great on smaller screens as well as on your desktop.	https://h5p.org/sites/default/files/documentation%20tool%20.svg	1488375711	1661322167	1	14	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/documentation-tool-01.png?itok=mIhHTIX3","alt":"User's view \\u2013 document your project"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/documentation-tool-02.png?itok=WCPC1IpT","alt":"User's view \\u2013 Goals"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/documentation-tool-03.png?itok=GWEa3LZf","alt":"User's view \\u2013 Done"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/documentation-tool-04.png?itok=yFf2Qa-n","alt":"User's view \\u2013 Document your project"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/documentation-tool	https://h5p.org/tutorial-documentation-tool	["dialog cards"]	["Larger Resources"]	Joubel
+101	H5P.DragQuestion	1	14	7	1	23	Drag and Drop	Create drag and drop tasks with images	Drag and drop question enables the learner to associate two or more elements and to make logical connections in a visual way. Create Drag and drop questions using both text and images as draggable alternatives. H5P Drag and drop questions support one-to-one, one-to-many, many-to-one and many-to-many relations between questions and answers. 	https://h5p.org/sites/default/files/drag%20and%20drop%20.svg	1488376151	1662381986	1	7	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-01.png?itok=xS6wYXCj","alt":"A drag and drop with one dropzone (strawberry) and three draggables"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-03.png?itok=BMTD9pmT","alt":"A drag and drop where the learner shall match flags and country names"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-04.png?itok=_QbzXvhm","alt":"A drag and drop where the learner shall match images of berries with their names"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-02.png?itok=xcDAfXTD","alt":"A drag and drop where the learner shall drag verbs, adjectives and nouns in the correct places"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-06.png?itok=jONaT2bA","alt":"A drag and drop where the learner shall place the draggables on spots on the background image"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/drag-and-drop-05.png?itok=wngjR93X","alt":"The drag and drop result view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/drag-and-drop	https://h5p.org/tutorial-drag-and-drop-question	["drag and drop"]	["Tasks"]	Joubel
+109	H5P.MemoryGame	1	3	10	1	20	Memory Game	Create the classic image pairing game	Create your own memory games and test the memory of your site's users with this simple yet beautiful HTML5 game.	https://h5p.org/sites/default/files/memmory%20game.svg	1488379742	1607082982	1	12	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/memmory-game-02.png?itok=wrU2ytID","alt":"Student's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/memmory-game-03.png?itok=dCb0YlGe","alt":"Student's view - feedback after the match"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/memmory-game-01.png?itok=AeOPD5HE","alt":"Student's view - matching two different images"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/memory-game	https://h5p.org/documentation/content-author-guide/tutorials-for-authors/memory-game	["memory","game","cards"]	["Tasks"]	Joubel
+103	H5P.Blanks	1	14	2	1	19	Fill in the Blanks	Create a task with missing words in a text	Learners fill in the missing words in a text. The learner is shown a solution after filling in all the missing words, or after each word depending on settings. Authors enter text and mark words to be replaced with an asterix. In addition to native and second language learning, Fill in the blanks can be used to test the learner's ability to reproduce facts or produce mathematical inferences.	https://h5p.org/sites/default/files/fill%20in%20the%20blanks.svg	1488376747	1661252078	1	4	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/fill-in-the-blanks-01.png?itok=EwyBhMVL","alt":"The student's initial view - empty blanks"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/fill-in-the-blanks-02.png?itok=ByI6y9m-","alt":"The result view showing corrects and wrongs"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/fill-in-the-blanks-03.png?itok=49rZ2yTY","alt":"Tip inside blanks"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/fill-in-the-blanks-04.png?itok=m8MnJh16","alt":"A blank with \\"Automatically check answers after input\\" enabled"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/fill-in-the-blanks	https://h5p.org/tutorial-fill-in-the-blanks	["fill","blanks","text"]	["Tasks"]	Joubel
+104	H5P.ImageHotspotQuestion	1	8	19	1	23	Find the Hotspot	Create image hotspots for users to find	This content type allows end users to press somewhere on an image and get feedback on whether that was correct or incorrect according to the task description. The author uploads an image and defines various hotspots corresponding to details or sections of the image. Hotspots can either be defined as correct or incorrect, and the author provides appropriate feedback text in both cases. The author can also define a feedback if the end user presses somewhere which is neither defined as a correct nor incorrect hotspot.	https://h5p.org/sites/default/files/find%20the%20hotspot.svg	1488377636	1662127583	0	26	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/find-the-hotspot-01.png?itok=G5zJHEh0","alt":"Learner's view - correct answer is selected"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/find-the-hotspot-02.png?itok=mNIZ5J08","alt":"Editor view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/image-hotspot-question		["find","hotspot","image"]	["Tasks"]	Joubel
+105	H5P.GuessTheAnswer	1	5	1	1	19	Guess the Answer	Create an image with a question and answer	This content type allows authors to upload an image and add a suitable description. End users can guess the answer and press the bar below the image to reveal the correct answer.	https://h5p.org/sites/default/files/guess%20the%20answer.svg	1488377905	1662127264	1	35	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/guess-the-answer-01.png?itok=cKWhsf7W","alt":"Learner's initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/guess-the-answer-02.png?itok=k9g-O8UW","alt":"Learner's view revealing the correct answer"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/guess-the-answer	https://h5p.org/tutorial-guess-the-answer	["guess","answer"]	["Other"]	Joubel
+106	H5P.IFrameEmbed	1	0	27	1	0	Iframe Embedder	Embed from a url or a set of files	The Iframe embedder makes it easy to make an H5P of already existing JavaScript applications.	https://h5p.org/sites/default/files/iframe%20embedder.svg	1488378484	1607083149	0	18	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/iFrame-embedder-01.png?itok=CehXfNpd","alt":"End user's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/iFrame-embedder-02.png?itok=p5V0tHcY","alt":"End user's view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/iframe-embedder		["embed","iframe"]	["Other"]	Joubel
+107	H5P.InteractiveVideo	1	24	2	1	23	Interactive Video	Create videos enriched with interactions	Add interactivity to your video with explanations, extra pictures, tables, Fill in the Blank and multiple choice questions. Quiz questions support adaptivity, meaning that you can jump to another part of the video based on the user's input.  Interactive summaries can be added at the end of the video. Interactive videos are created and edited using the H5P authoring tool in a standard web browser.	https://h5p.org/sites/default/files/interactive%20video.svg	1488379462	1661257398	1	0	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-01.png?itok=WgAmEzb0","alt":"Interactive video start screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-02.png?itok=9P0-eiaB","alt":"The editor with a multiple choice question"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-03.png?itok=2X03y0pe","alt":"Inside the editor showing the multiple choice editor"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-04.png?itok=NtKe_dhK","alt":"Bookmarks menu"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-05.png?itok=Xy-1r3Dt","alt":"Drag and drop inside the video"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-video-06.png?itok=aVysZc0i","alt":"Summary at the end of the video"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/interactive-video	https://h5p.org/tutorial-interactive-video	["interactive","video"]	["Larger Resources"]	Joubel
+108	H5P.MarkTheWords	1	11	1	1	19	Mark the Words	Create a task where users highlight words	Mark the words allows content designers to create textual expressions with a defined set of correct words. The end user highlights words according to the task description and is given a score. For the editor it is super easy to create a click the words challenge. The editor types in the text and encloses the words that the user is supposed to click, the right answers, in asterix like *correctWord*.	https://h5p.org/sites/default/files/mark%20the%20words.svg	1488379610	1662128229	1	16	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/mark-the-words-01_0.png?itok=FTe4BK8x","alt":"Learner's initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/mark-the-words-03_0.png?itok=veoD8bpQ","alt":"Learner's view - showing solution"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/mark-the-words	https://h5p.org/documentation/content-author-guide/tutorials-for-authors/mark-the-words	["mark","words"]	["Tasks"]	Joubel
+110	H5P.MultiChoice	1	16	3	1	19	Multiple Choice	Create flexible multiple choice questions	Multiple Choice questions can be an effective assesment tool. The learner is given immediate performance feedback. The H5P Multiple Choice questions can have a single or multiple correct options per question.	https://h5p.org/sites/default/files/multiple%20choice.svg	1488379865	1661256758	1	2	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-choice-01.png?itok=CiwAg_Sn","alt":"Learner's initial view (radio buttons)"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-choice-02.png?itok=f5hGmJWk","alt":"Learner answered correct"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-choice-03.png?itok=R7zb6rTZ","alt":"Learner's initial view (check buttons)"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-choice-04.png?itok=eSNsVzFo","alt":"Learner has clicked the \\"check\\" button"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/multichoice	https://h5p.org/tutorial-multichoice-question	["multiple","choice","quiz"]	["Tasks"]	Joubel
+111	H5P.PersonalityQuiz	1	0	8	1	0	Personality Quiz	Create personality quizzes	In this content type, the author defines a series of questions with alternatives, where each alternative is matched against one or more personalities. At the end of the quiz, the end user will see which personality matches the best. There are several ways of making this quiz visually appealing, by eg. representing questions, alternatives, and personalities using images.	https://h5p.org/sites/default/files/personality%20quiz.svg	1488380090	1607083118	0	38	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/personality-quiz-01.png?itok=ygSGXtZF","alt":"Student's view - starting screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/personality-quiz-02.png?itok=79jwUFNT","alt":"Student's view - question 1"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/personality-quiz-03.png?itok=lDhEO4KA","alt":"Student's view - question 2"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/personality-quiz-04.png?itok=1zBGhax9","alt":"Student's view - question 3"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/personality-quiz-05.png?itok=rdoNJ4-j","alt":"Student's view - end screen"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/personality-quiz		["personality","quiz"]	["Other"]	Lumenia
+112	H5P.Questionnaire	1	3	5	1	0	Questionnaire	Create a questionnaire to receive feedback	Gain feedback and ask open ended questions in Interactive Videos and other content types with Questionnaire. Questionnaire makes the user's answers available via an xAPI integration. This means that website owners may store the answers in many different ways. Answers may be stored in an LRS, the sites own custom storage or a script can fetch the e-mail address and use it to send the user an e-mail. On H5P.org answers are stored in Google Analytics.	https://h5p.org/sites/default/files/questionaire.svg	1488380236	1607083107	0	39	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/questionnaire-01.png?itok=zVNElQ9C","alt":"Student's view - question 1"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/questionnaire-02.png?itok=SdSQGHbW","alt":"Student's view - question 2"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/questionnaire-03.png?itok=sNnbfkv_","alt":"Student's view - question 3"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/questionnaire-04.png?itok=J8eZGmV0","alt":"Student's view - end screen"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/questionnaire		["questionnaire"]	["Other"]	Joubel
+113	H5P.QuestionSet	1	20	7	1	19	Quiz (Question Set)	Create a sequence of various question types	Question Set is your typical quiz content type. It allows the learner to solve a sequence of various question types such as Multichoice, Drag and drop and Fill in the blanks in a Question set. As an author, there are many settings you can use to make it behave just the way you want it to. You may, for instance, customize the Question set with background images and define a pass percentage for the learner. The Question Set also allows you to add videos that are played at the end. One video for success, another if the learner fails the test. This might motivate learners to try again if they fail so that they get to see the success video.	https://h5p.org/sites/default/files/question-set.svg	1488380337	1661256661	1	3	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/question-set-01.png?itok=7xWQV7Vm","alt":"A multiple choice inside a question set"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/question-set-02_0.png?itok=ku46xHQX","alt":"A drag and drop inside a question set"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/question-set-03.png?itok=n1cnLs5j","alt":"A multiple choice inside a question set"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/question-set-04.png?itok=TrmmsdwT","alt":"The summary page"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/question-set	https://h5p.org/tutorial-question-set	["question set","collection","quiz"]	["Larger Resources"]	Joubel
+119	H5P.ImageMultipleHotspotQuestion	1	0	1	1	6	Find Multiple Hotspots	Create many hotspots for users to find	A free HTML5 based question type allowing creatives to create an image based test where the learner is to find the correct spots on an image. Use this content type with the H5P plugin for WordPress, Moodle or Drupal to challenge your users.	https://h5p.org/sites/default/files/find%20multiple%20hotspots.svg	1491482530	1607082894	0	24	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-hotspots-01.png?itok=Gbi-unNy","alt":"User's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-hotspots-02.png?itok=ctq2RdVL","alt":"Authoring experience - adding hotspots"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/multiple-hotspots-03.png?itok=uAshALHJ","alt":"User's view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/find-multiple-hotspots		[]	["Tasks"]	lukemuller
+114	H5P.SingleChoiceSet	1	11	19	1	19	Single Choice Set	Create questions with one correct answer	Single choice set allows content designers to create question sets with one correct answer per question. The end user gets immediate feedback after submitting each answer.	https://h5p.org/sites/default/files/single%20choice%20set.svg	1488380512	1661251522	1	11	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/single-choice-set-01.png?itok=IzXoN6tp","alt":"Learner's initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/single-choice-set-02.png?itok=yrj9-jB0","alt":"Correct answer given for an alternative"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/single-choice-set-03.png?itok=o-b5R46U","alt":"Summary page"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/single-choice-set-04.png?itok=0BlfuOy3","alt":"Showing solution"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/single-choice-set	https://h5p.org/documentation/content-author-guide/tutorials-for-authors/single-choice-set	["collection","quiz","choice"]	["Tasks"]	Joubel
+115	H5P.Summary	1	10	14	1	19	Summary	Create tasks with a list of statements	Summaries help the learner remember key information in a text, video or presentation, by actively buliding a summary about the topic at hand. When the learner has completed a summary, a complete list of key statements about the topic is shown.	https://h5p.org/sites/default/files/summary.svg	1488380637	1661252844	1	30	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/summary-01.png?itok=ICk8qnxS","alt":"Learner's initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/summary-02.png?itok=DY9wdA0S","alt":"Wrong answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/summary-03.png?itok=nWaNT-Ll","alt":"First correct statement found"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/summary-04.png?itok=EYtv3B7n","alt":"Second correct statement found"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/summary-05.png?itok=tVHuEHqv","alt":"Summary"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/summary	https://h5p.org/tutorial-summary	["summary"]	["Tasks"]	Joubel
+116	H5P.Timeline	1	1	23	1	0	Timeline	Create a timeline of events with multimedia	This is Timeline.js developed by Knight Lab, packaged as an H5P content type in order to make timelines easily editable, shareable and reuseable. The Timeline content type allows you to place a sequence of events in a chronological order. For each event you may add images and texts. You may also include assets from Twitter, YouTube, Flickr, Vimeo, Google Maps and SoundCloud.	https://h5p.org/sites/default/files/timeline.svg	1488380771	1607083139	0	22	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/timeline-01.png?itok=6BO75od2","alt":"Student's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/timeline-02.png?itok=-SsDe4Zb","alt":"Student's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/timeline-03.png?itok=Fmbxyxix","alt":"Student's view - full screen preview"}]	{"id":"MPL2","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/timeline	https://h5p.org/documentation/content-author-guide/tutorials-for-authors/timeline	["timeline","slider"]	["Larger Resources"]	Joubel
+117	H5P.TrueFalse	1	8	2	1	19	True/False Question	Create True/False questions	True/False Question is a simple and straightforward content type that can work by itself or be inserted into other content types such as Course Presentation. A more complex question can be created by adding an image or a video.	https://h5p.org/sites/default/files/true%20false.svg	1488380892	1661251610	1	15	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/true-false-01.png?itok=LKXT7ZAG","alt":"Learner's initial view (image and question)"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/true-false-02.png?itok=5AvPOokc","alt":"Correct answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/true-false-03.png?itok=YCVfBTig","alt":"Wrong answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/true-false-04.png?itok=88ogDrvt","alt":"Learner's initial view"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/true-false	https://h5p.org/tutorial-true-false	["true","false"]	["Tasks"]	Joubel
+118	H5P.ImageHotspots	1	10	1	1	19	Image Hotspots	Create an image with multiple info hotspots	Image hotspots makes it possible to create an image with interactive hotspots. When the user presses a hotspot, a popup containing a header and text or video is displayed. Using the H5P editor, you may add as many hotspots as you like.	https://h5p.org/sites/default/files/image%20hotpots.svg	1491400692	1662127667	1	8	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-hotspots-01.png?itok=-GthrRP1","alt":"View - hotspots"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-hotspots-02.png?itok=AP-FWcHh","alt":"View - video as a hotspot"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-hotspots-03.png?itok=Zt1V7UYE","alt":"View - text as a hotspot"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/image-hotspots	https://h5p.org/tutorial-image-hotspots	["image","hotspot"]	["Other"]	Joubel
+120	H5P.ImageJuxtaposition	1	4	1	1	15	Image Juxtaposition	Create interactive images	A free HTML5-based image content type that allows users to compare two images interactively. Tell your image stories with H5P and Image Juxtaposition on WordPress, Moodle or Drupal.	https://h5p.org/sites/default/files/before-after-image_0.svg	1491482694	1607082948	0	29	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-juxtaposition-01.png?itok=EmBa43Us","alt":"User's view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-juxtaposition-02.png?itok=idPJFSr2","alt":"User's view"}]	{"id":"MPL2","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/image-juxtaposition		[]	["Other"]	otacke
+121	H5P.Audio	1	5	1	1	19	Audio	Upload an audio recording	Upload an audio recording in .mp3, .wav, .ogg or provide the link for an audio recording.	https://h5p.org/sites/default/files/audio.svg	1491918006	1661348798	1	19	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/audio-01.png?itok=z6wayrwd","alt":"Audio player"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/audio-02.png?itok=NdFP2pcq","alt":"Audio player muted"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/audio		[]	["Other"]	Joubel
+122	H5P.AudioRecorder	1	0	23	1	12	Audio Recorder	Create an audio recording	An HTML5 audio recorder. Record your voice and play back or download a .wav file of your recording. Use the H5P plugin to create the H5P Audio Recorder to your Drupal, Wordpress or Moodle site. 	https://h5p.org/sites/default/files/icon_1.svg	1493377972	1607083009	0	32	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/audio-recorder-1.png?itok=vAcuqLSA","alt":"Start screen for audio recorder"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/audio-recorder-2.png?itok=qoLWgAaq","alt":"Recording screen for audio recorder"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/audio-recorder-3.png?itok=EnH5rwO4","alt":"Finish screen for audio recorder"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/audio-recorder		["audio","recorder"]	["Other"]	Joubel
+123	H5P.SpeakTheWords	1	5	3	1	14	Speak the Words	Answer a question using your voice (Chrome only)	Speak the Words is only supported in browsers that implements the Web Speech API (Chrome browsers, except on iOS). You need a microphone to answer the question. Ask a question to users and make them answer using their voice. You can choose multiple correct answers. The user will be able to see what their words were interpreted as, and how close it was to the correct answers.	https://h5p.org/sites/default/files/speak%20the%20words_0.svg	1493897505	1656400434	0	25	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/QuestionPagev2.png?itok=WYSV9ON0","alt":"Question text and answer with microphone screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/ShowSolutionPagev2_0.png?itok=vUTAG0RT","alt":"Interpreted and correct answers screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/CorrectSolutionPage.png?itok=poT-tQ6Z","alt":"Correct answer screen"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/node/72682		["language","translation","voice","recognition","speech","mic","microphone"]	["Tasks"]	thomasmars
+124	H5P.Agamotto	1	5	2	1	19	Agamotto (Image Blender)	Present a sequence of images and explanations	Present a sequence of images that people are supposed to look at one after the other, e.g. photos of an item that changes over time, schematics or maps that are organized in different layers or images that reveal more and more details.	https://h5p.org/sites/default/files/icon_2.svg	1494963576	1607082936	0	33	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/agamotto-02.png?itok=xlA7OqvC","alt":"Agamotto shown as a layered map"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/agamotto-01.png?itok=nxg6d8eA","alt":"Agamotto transforming between different seasons"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/node/79243	https://h5p.org/agamotto-tutorial	["image","images","transition"]	["Other"]	otacke
+125	H5P.ImageSequencing	1	1	0	1	12	Image Sequencing	Place images in the correct order	A free HTML5 based image sequencing content type that allows authors to add a sequence of their own images (and optional image description) to the game in a particular order. The order of the images will be randomized and players will have to reorder them based on the task description. 	https://h5p.org/sites/default/files/icon_3.svg	1503485910	1607083030	0	27	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Selection_386.png?itok=HzsvJWBU","alt":"Initial screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Selection_387.png?itok=m28lDPwX","alt":"Drag and drop images"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Selection_388.png?itok=IGV1PN-F","alt":"Result screen when one or more is incorrect"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Selection_389.png?itok=VZQIfLEN","alt":"Result screen when all image are correctly ordered"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/image-sequencing	https://h5p.org/tutorial-image-sequencing	["image","sequence","order"]	["Tasks"]	jithin
+126	H5P.Flashcards	1	5	24	1	4	Flashcards	Create stylish and modern flashcards	This content type allows authors to create a single flash card or a set of flashcards, where each card has images paired with questions and answers. Learners are required to fill in the text field and then check the correctness of their solution.	https://h5p.org/sites/default/files/icon_4.svg	1503910719	1662030866	1	13	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/flashcards-01_0.png?itok=5xeC6hkY","alt":"Learner has not given any answer yet"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/flashcards-02_0.png?itok=DQTjS65M","alt":"Correct answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/flashcards-03_0.png?itok=833omhR4","alt":"Wrong answer given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/flashcards-04.png?itok=6S_kGNS4","alt":"Summary"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/flashcards	https://h5p.org/tutorial-flashcards	["cards","animation"]	["Tasks"]	Joubel
+127	H5P.SpeakTheWordsSet	1	3	2	1	14	Speak the Words Set	Create a series of questions answered by speech (Chrome only)	Speak the Words Set is only supported in browsers that implement the Web Speech API (Chrome browsers, except on ios). You need a microphone to answer the question. Create a set of questions that learners can answer using their voice. you can choose multiple correct answers. The user will be able to see what their words were interpreted as, and how close it was to the correct answers.	https://h5p.org/sites/default/files/speak%20the%20words%20set.svg	1506503229	1656400427	0	23	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01.png?itok=92yvDMEt","alt":"An image showing the start screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-02.png?itok=SSpDaEf6","alt":"An image showing the question screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-03.png?itok=QRR1KWn3","alt":"An image showing the recording taking place"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-04.png?itok=3vjLOvF3","alt":"An image showing a correct answer is given"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-05.png?itok=74miXXWG","alt":"An image showing the solution view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-06.png?itok=UBAPLNJI","alt":"An image showing the finish screen"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/speak-the-words-set		["language","translation","voice","quiz","set","recognition","mic","microphone"]	["Larger Resources"]	Joubel
+128	H5P.ImageSlider	1	1	4	1	14	Image Slider	Easily create an Image Slider	Present your images in an appealing way with ease. Authors just have to upload images and provide alternative texts for the images. \r\n\r\nThe next two images are always preloaded so switching between images will usually be snappy with no delay for loading the next image.\r\n\r\nImages may be experienced as part of the page or in full-screen mode. When used as part of the page the system will pick a fixed aspect ratio depending on the images being used. Authors may decide to handle aspect ratios differently.	https://h5p.org/sites/default/files/icon_5.svg	1508146690	1608213501	1	17	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_0.png?itok=PRJNeyt3","alt":"Preview using full width"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-02_0.png?itok=NXMcjo0p","alt":"Preview with a portrait image"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-03_0.png?itok=jqQysnpP","alt":"Full-screen preview"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/image-slider	https://h5p.org/tutorial-image-slider	["image","images","slider","carousel"]	["Other"]	falcon
+129	H5P.Essay	1	5	3	1	13	Essay	Create Essay with instant feedback	In this content type, the author defines a set of keywords that represent crucial aspects of a topic. These keywords are matched against a text that students have composed and can be used to immediately provide feedback - either suggesting to revise certain topic details if a keyword is missing or, confirming the student's ideas if the text contains a keyword.\r\n	https://h5p.org/sites/default/files/icon_6.svg	1515752007	1661257310	0	20	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/essay-01.png?itok=PJmHwrPp","alt":"Initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/essay-02.png?itok=b8u7DK0a","alt":"Showing sample (show solution clicked)"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/essay-03.png?itok=m8BrMhVW","alt":"Feedback given"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/essay	https://h5p.org/tutorial-essay	["Essay"]	["Tasks"]	otacke
+130	H5P.ImagePair	1	4	0	1	14	Image Pairing	Drag and drop image matching game	Image pairing is a simple and effective activity that require learners to match pairs of images. Since it is not required for both images in a pair to be the same, authors are also able to test the understanding of a relation between two different images. 	https://h5p.org/sites/default/files/icon_7.svg	1525354557	1608213486	0	31	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-pairing-01.png?itok=6CRqBI7P","alt":"Initial screen"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-pairing-02.png?itok=ZgStVtVj","alt":"After check - with errors"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/image-pairing-03.png?itok=yIpQuIMP","alt":"In action"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/image-pairing	https://h5p.org/tutorial-image-pairing	["image images matching pair"]	["Tasks"]	jithin
+131	H5P.Dictation	1	1	2	1	13	Dictation	Create a dictation with instant feedback	You can add audio samples containing a sentence for dictation and enter the correct transcription. Your students can listen to the samples and enter what they have heard in to a text field. Their answers will be evaluated automatically. Several options will allow you to control the exercise's difficulty. You can optionally add a second audio sample for a sentence that could hold a version spoken slowly. You can also set a limit for how often a sample can be played, define if punctuation should be relevant for scoring, and decide whether small mistakes like typing errors should be counted as no mistake, a full mistake, or just a half mistake.	https://h5p.org/sites/default/files/icon_8.svg	1544698878	1640604345	1	34	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dictation-1_0.png?itok=Wu85TuX8","alt":"Initial view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dictation-2_0.png?itok=Mg0TRDj5","alt":"Show score"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dictation-3_0.png?itok=eKpbR2t2","alt":"Showing solution"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/dictation-berries_0.png?itok=m9KR17o8","alt":"A dictation about berries"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/dictation	https://h5p.org/tutorial-dictation	["language","audio"]	["Tasks"]	otacke
+132	H5P.BranchingScenario	1	7	0	1	20	Branching Scenario	Create dilemmas and self paced learning	Branching Scenario allow authors to present the learners with a variety of rich interactive content and choices. The choices the learners make will determine the next content they see. May be used to create dilemmas, serious games, and self-paced learning.	https://h5p.org/sites/default/files/icon_9.svg	1551271593	1623605799	1	37	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_0_0.png?itok=eRgwKqbj","alt":"Screenshot 01"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_1.png?itok=mDY0Y_ys","alt":"Screenshot 02"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_2.png?itok=YVxss_-c","alt":"Screenshot 03"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_3.png?itok=TdTgaM87","alt":"Screenshot 04"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_4.png?itok=DPsyysid","alt":"Screenshot 05"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_5.png?itok=BrCSMC1L","alt":"Screenshot 06"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/branching-scenario	https://h5p.org/tutorial-branching-scenario	[]	["Larger Resources"]	Joubel
+133	H5P.ThreeImage	0	5	6	1	20	Virtual Tour (360)	Create 360 environments with interactions	360 (equirectangular) and normal images may be enriched with interactivities like explanations, videos, sounds, and interactive questions. The images create scenes that also may be linked together to give the user an impression of moving between environments or between different viewpoints within the same environment.	https://h5p.org/sites/default/files/360-icon.svg	1551273005	1661256325	1	40	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_1_0.png?itok=GUmLlxSY","alt":"Screenshot 02"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_2_0.png?itok=t5YmuLiK","alt":"Screenshot 03"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screenshot-01_3_0.png?itok=58i8supV","alt":"Screenshot 04"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/virtual-tour-360	https://h5p.org/tutorial-virtual-tour	[]	["Larger Resources"]	Joubel
+134	H5P.FindTheWords	1	4	4	1	20	Find the words	Grid word search game	A free HTML5-based word search activity that allows authors to create a list of words that will be drawn in a grid. The learner's task is to find and select the words in the grid.	https://h5p.org/sites/default/files/icon_10.svg	1563536197	1607082972	0	28	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/find-the-words-01.png?itok=O2BgqYiR","alt":"Learners has chosen 5 of 12 correct words"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/find-the-words-02.png?itok=J9s5I6oM","alt":"Show solution mode"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/find-the-words-03.png?itok=vz4BrCJd","alt":"Greek characters"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/find-the-words		[]	["Tasks"]	jithin
+135	H5P.InteractiveBook	1	6	4	1	23	Interactive Book	Create small courses, books and tests	Create small courses, books, or tests. Interactive Book allows authors to combine large amounts of interactive content like interactive videos, questions, course presentations, and more on multiple pages. There is a summary at the end summing up the scores obtained by the learner throughout the book.	https://h5p.org/sites/default/files/icon_11.svg	1596534830	1653381776	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-book-01_1.png?itok=Pe4eW1mb","alt":"Interactive book page"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-book-01_2.png?itok=Vz7aDDvh","alt":"Interactive book summary page"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-book-01_3.png?itok=nBDvwn__","alt":"Footer"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/interactive-book-01_4.png?itok=FFNO5sLk","alt":"Start screen (book cover)"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/interactive-book		["book","course"]	["Larger Resources"]	Joubel
+136	H5P.KewArCode	0	2	1	1	23	KewAr Code	Create QR codes for different purposes	KewAr Code enables content designers to create well-known QR codes. Those QR codes can encode URLs, but also contact information, events, geo-locations, etc. People can scan them with a QR code reader in order to trigger the chosen action.	https://h5p.org/sites/default/files/icon_12.svg	1600860059	1607082713	0	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/KewAr-code-01.png?itok=aaHcorAK","alt":"QR code"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/KewAr-code-02.png?itok=sCtAhvIA","alt":"QR code opening contact information"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/KewAr-code-03.png?itok=7kCRw1ad","alt":"Customize the display of the QR code"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/kewar-code		["QR"]	["Other"]	otacke
+142	H5P.ARScavenger	1	2	9	1	23	AR Scavenger	Augmented reality fun!	Let learners explore reality augmented with 3D models or H5P exercises. You can define markers similar to QR codes that your students can scan with their device's camera. Those markers can trigger blending a 3D model of your choice with the camera view, or they can display an H5P interaction.	https://h5p.org/sites/default/files/icon%20AR.svg	1646308495	1646315452	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Screenshot%202022-03-03%20at%2012.52.13.png?itok=y9mFb9DE","alt":"Starting screen for an AR Scavenger"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/screen.jpg?itok=XkMkT0G7","alt":"Phone filming augmented reality marker showing a strawberry"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/ar-scavenger		[]	["Other"]	otacke
+137	H5P.AdventCalendar	0	2	5	1	23	Advent Calendar (beta)	Create surprises that will be unveiled daily	Build and customize a beautiful advent calendar. You may add a background image to the entire calendar, on each door, and as a background on the content inside each door. You may also add snow- effect and music. Inside each door, you may add a sound, video, text, image, or link.\r\n\r\nDo note that it is easy for computer-savvy users to reveal the content of all doors right away. If you plan to reveal big secrets on future days you should wait until that day before adding your big secrets to the calendar.	https://h5p.org/sites/default/files/icon_13.svg	1606734037	1607082486	0	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent-05.JPG?itok=1OYc0iWb","alt":"Merry christmas"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent_01.png?itok=Ww182qDz","alt":"Advent calendar unopened"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent_02.png?itok=FeZ3qJMH","alt":"Video behind hatch"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent_03.png?itok=RWXEKKY9","alt":"16 hatches opened"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent_04.png?itok=H-fLXnHD","alt":"2 hatches opened"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/advent_05.png?itok=bNrzhj0z","alt":"Three random hatches opened"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/advent-calendar		["christmas","advent","holidays","calendar"]	["Larger Resources"]	otacke
+138	H5P.Crossword	0	4	9	1	23	Crossword	Create a crossword puzzle	Build and customize a beautiful crossword to engage your audience. The crossword is highly customizable allowing you to configure all colors, upload a background image, decide how scoring should work and even randomize the words in it so that your audience gets a new crossword each time if you want.	https://h5p.org/sites/default/files/crosswords.png	1628679621	1628706223	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/01%20%282%29.png?itok=v092kMg4","alt":"Green theme"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/02%20%282%29.png?itok=ehX9fDHz","alt":"Red theme"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/03%20%282%29.png?itok=BZ2RNlBc","alt":"Background image"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/04%20%281%29.png?itok=WOMexfuI","alt":"Blue theme"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/crossword		["crossword","games"]	["Tasks"]	otacke
+139	H5P.SortParagraphs	0	11	2	1	23	Sort the Paragraphs	Create a set of paragraphs to be sorted	Type or paste in a list of paragraphs that will be randomized. You may for instance let each paragraph be a part of a song, a block of code or steps in a recipe. Learners are to sort the paragraphs into the correct order. By default learners will get one point for each paragraph that follows the paragraph it is supposed to follow, but you may decide to award a point for each paragraph that is in the correct place instead.	https://h5p.org/sites/default/files/sort-paragraphs.png	1628680823	1628706244	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/01%20%281%29.png?itok=P8PkYw_5","alt":"Student view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/02%20%281%29.png?itok=b3HrmSzM","alt":"Dragging a paragraph"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/03%20%281%29.png?itok=rxMP2Sgy","alt":"Checking answers"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/04_13.png?itok=V_7gqBel","alt":"Showing solution"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/sort-the-paragraphs		["sorting","games","tasks"]	["Tasks"]	otacke
+140	H5P.MultiMediaChoice	0	3	1	1	23	Image Choice	Create a task were the alternatives are images	Build beautiful multiple or single choice questions were the alternatives are images. You may customize the layout for the alternatives and choose between fixed aspect ratios or just use the aspect ratios the images already have.	https://h5p.org/sites/default/files/image-choice.png	1628681468	1628706263	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/01_23.png?itok=PFljIMHl","alt":"Student view"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/02_18.png?itok=UqqF2jf9","alt":"Showing solutions"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/03_12.png?itok=0C2e1Kj4","alt":"Images may displayed with a fixed aspect ratio"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/image-choice		["sorting","games","tasks"]	["Tasks"]	Joubel
+141	H5P.Cornell	0	1	4	1	23	Cornell Notes	Take notes using the Cornell system	Present learners with a video, text or audio and encourage them to make notes using the Cornell note taking system.	https://h5p.org/sites/default/files/icon_14.svg	1646241032	1646315511	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Screenshot%202022-03-02%20at%2018.04.31.png?itok=EVwJvgED","alt":"Cornell notes screenshot"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Screenshot%202022-03-02%20at%2018.10.11.png?itok=ZhP3FO8-","alt":"Filled in Cornell Notes"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/node/1252534		[]	["Other"]	otacke
+143	H5P.StructureStrip	1	0	0	1	23	Structure Strip	Interactive structure strip	A structure strip is traditionally put next to a sheet of paper (or even glued onto it). It provides students with a scaffold for a text and helps them to keep the lengths of different text segments in good proportions. With Structure Strip, you can now use the same approach in H5P without paper.	https://h5p.org/sites/default/files/icon-SS.svg	1646310106	1646315531	1	42	[{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Screenshot%202022-03-03%20at%2013.16.03.png?itok=v0OhAmlL","alt":"Structure Strip start screen."},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Screenshot%202022-03-03%20at%2013.16.28.png?itok=C2C7-P8-","alt":"Description of what to do"},{"url":"https:\\/\\/h5p.org\\/sites\\/default\\/files\\/styles\\/h5p-content-type-hub-screenshot\\/public\\/Screenshot%202022-03-03%20at%2013.18.30.png?itok=65tHGwKO","alt":"Screenshot of a Structure Strip where the student has filled in a text area"}]	{"id":"MIT","attributes":{"useCommercially":true,"modifiable":true,"distributable":true,"sublicensable":true,"canHoldLiable":false,"mustIncludeCopyright":true,"mustIncludeLicense":true}}	https://h5p.org/content-types/structure-strip		[]	["Other"]	otacke
 \.
 
 
@@ -35497,14 +36139,77 @@ COPY public.m2log_queries (id, qtype, sqltext, sqlparams, error, info, backtrace
 --
 
 COPY public.m2logstore_standard_log (id, eventname, component, action, target, objecttable, objectid, crud, edulevel, contextid, contextlevel, contextinstanceid, userid, courseid, relateduserid, anonymous, other, timecreated, origin, ip, realuserid) FROM stdin;
-1869	\\core\\event\\config_log_created	core	created	config_log	config_log	2027	c	0	1	10	0	2	0	\N	0	{"name":"spentityid","oldvalue":null,"value":"","plugin":"auth_saml2"}	1650457246	cli	\N	\N
-1870	\\core\\event\\config_log_created	core	created	config_log	config_log	2028	c	0	1	10	0	2	0	\N	0	{"name":"wantassertionssigned","oldvalue":null,"value":"0","plugin":"auth_saml2"}	1650457246	cli	\N	\N
-1871	\\core\\event\\config_log_created	core	created	config_log	config_log	2029	c	0	1	10	0	2	0	\N	0	{"name":"assertionsconsumerservices","oldvalue":null,"value":"","plugin":"auth_saml2"}	1650457246	cli	\N	\N
-1872	\\core\\event\\config_log_created	core	created	config_log	config_log	2030	c	0	1	10	0	2	0	\N	0	{"name":"allowcreate","oldvalue":null,"value":"0","plugin":"auth_saml2"}	1650457246	cli	\N	\N
-1873	\\core\\event\\config_log_created	core	created	config_log	config_log	2031	c	0	1	10	0	2	0	\N	0	{"name":"authncontext","oldvalue":null,"value":"","plugin":"auth_saml2"}	1650457246	cli	\N	\N
-1874	\\core\\event\\config_log_created	core	created	config_log	config_log	2032	c	0	1	10	0	2	0	\N	0	{"name":"filternavigationwithsystemcontext","oldvalue":null,"value":"0","plugin":null}	1650457248	cli	\N	\N
-1875	\\core\\event\\config_log_created	core	created	config_log	config_log	2033	c	0	1	10	0	2	0	\N	0	{"name":"deployggb","oldvalue":null,"value":"\\/\\/www.geogebra.org\\/apps\\/deployggb.js","plugin":"geogebra"}	1650457250	cli	\N	\N
-1876	\\core\\event\\config_log_created	core	created	config_log	config_log	2034	c	0	1	10	0	2	0	\N	0	{"name":"fflate","oldvalue":null,"value":"\\/\\/unpkg.com\\/fflate","plugin":"geogebra"}	1650457250	cli	\N	\N
+1877	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:view","oldpermission":0,"permission":1}	1663670361	cli	\N	\N
+1878	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:view","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1879	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:view","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1880	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:view","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1881	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:addinstance","oldpermission":0,"permission":"1"}	1663670362	cli	\N	\N
+1882	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:addinstance","oldpermission":0,"permission":"1"}	1663670362	cli	\N	\N
+1883	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:viewreports","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1884	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:viewreports","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1885	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:viewreports","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1886	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:takeattendances","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1887	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:takeattendances","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1888	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:takeattendances","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1889	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:changeattendances","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1890	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:changeattendances","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1891	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:changeattendances","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1892	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:manageattendances","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1893	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:manageattendances","oldpermission":0,"permission":1}	1663670362	cli	\N	\N
+1894	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:changepreferences","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1895	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:changepreferences","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1896	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:export","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1897	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:export","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1898	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:canbelisted","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1899	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:managetemporaryusers","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1900	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:managetemporaryusers","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1901	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:managetemporaryusers","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1902	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:viewsummaryreports","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1903	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:warningemails","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1904	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:warningemails","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1905	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/attendance:warningemails","oldpermission":0,"permission":1}	1663670363	cli	\N	\N
+1906	\\core\\event\\config_log_created	core	created	config_log	config_log	2035	c	0	1	10	0	2	0	\N	0	{"name":"resultsperpage","oldvalue":null,"value":"25","plugin":"attendance"}	1663670379	cli	\N	\N
+1907	\\core\\event\\config_log_created	core	created	config_log	config_log	2036	c	0	1	10	0	2	0	\N	0	{"name":"studentscanmark","oldvalue":null,"value":"1","plugin":"attendance"}	1663670379	cli	\N	\N
+1908	\\core\\event\\config_log_created	core	created	config_log	config_log	2037	c	0	1	10	0	2	0	\N	0	{"name":"rotateqrcodeinterval","oldvalue":null,"value":"15","plugin":"attendance"}	1663670379	cli	\N	\N
+1909	\\core\\event\\config_log_created	core	created	config_log	config_log	2038	c	0	1	10	0	2	0	\N	0	{"name":"rotateqrcodeexpirymargin","oldvalue":null,"value":"2","plugin":"attendance"}	1663670379	cli	\N	\N
+1910	\\core\\event\\config_log_created	core	created	config_log	config_log	2039	c	0	1	10	0	2	0	\N	0	{"name":"studentscanmarksessiontime","oldvalue":null,"value":"1","plugin":"attendance"}	1663670379	cli	\N	\N
+1911	\\core\\event\\config_log_created	core	created	config_log	config_log	2040	c	0	1	10	0	2	0	\N	0	{"name":"studentscanmarksessiontimeend","oldvalue":null,"value":"60","plugin":"attendance"}	1663670379	cli	\N	\N
+1912	\\core\\event\\config_log_created	core	created	config_log	config_log	2041	c	0	1	10	0	2	0	\N	0	{"name":"subnetactivitylevel","oldvalue":null,"value":"1","plugin":"attendance"}	1663670379	cli	\N	\N
+1913	\\core\\event\\config_log_created	core	created	config_log	config_log	2042	c	0	1	10	0	2	0	\N	0	{"name":"defaultview","oldvalue":null,"value":"2","plugin":"attendance"}	1663670379	cli	\N	\N
+1914	\\core\\event\\config_log_created	core	created	config_log	config_log	2043	c	0	1	10	0	2	0	\N	0	{"name":"multisessionexpanded","oldvalue":null,"value":"0","plugin":"attendance"}	1663670379	cli	\N	\N
+1915	\\core\\event\\config_log_created	core	created	config_log	config_log	2044	c	0	1	10	0	2	0	\N	0	{"name":"showsessiondescriptiononreport","oldvalue":null,"value":"0","plugin":"attendance"}	1663670379	cli	\N	\N
+1916	\\core\\event\\config_log_created	core	created	config_log	config_log	2045	c	0	1	10	0	2	0	\N	0	{"name":"studentrecordingexpanded","oldvalue":null,"value":"1","plugin":"attendance"}	1663670379	cli	\N	\N
+1917	\\core\\event\\config_log_created	core	created	config_log	config_log	2046	c	0	1	10	0	2	0	\N	0	{"name":"enablecalendar","oldvalue":null,"value":"1","plugin":"attendance"}	1663670379	cli	\N	\N
+1918	\\core\\event\\config_log_created	core	created	config_log	config_log	2047	c	0	1	10	0	2	0	\N	0	{"name":"enablewarnings","oldvalue":null,"value":"0","plugin":"attendance"}	1663670379	cli	\N	\N
+1919	\\core\\event\\config_log_created	core	created	config_log	config_log	2048	c	0	1	10	0	2	0	\N	0	{"name":"automark_useempty","oldvalue":null,"value":"1","plugin":"attendance"}	1663670379	cli	\N	\N
+1920	\\core\\event\\config_log_created	core	created	config_log	config_log	2049	c	0	1	10	0	2	0	\N	0	{"name":"customexportfields","oldvalue":null,"value":"id","plugin":"attendance"}	1663670379	cli	\N	\N
+1921	\\core\\event\\config_log_created	core	created	config_log	config_log	2050	c	0	1	10	0	2	0	\N	0	{"name":"mobilesessionfrom","oldvalue":null,"value":"21600","plugin":"attendance"}	1663670379	cli	\N	\N
+1922	\\core\\event\\config_log_created	core	created	config_log	config_log	2051	c	0	1	10	0	2	0	\N	0	{"name":"mobilesessionto","oldvalue":null,"value":"86400","plugin":"attendance"}	1663670379	cli	\N	\N
+1923	\\core\\event\\config_log_created	core	created	config_log	config_log	2052	c	0	1	10	0	2	0	\N	0	{"name":"subnet","oldvalue":null,"value":"","plugin":"attendance"}	1663670379	cli	\N	\N
+1924	\\core\\event\\config_log_created	core	created	config_log	config_log	2053	c	0	1	10	0	2	0	\N	0	{"name":"calendarevent_default","oldvalue":null,"value":"1","plugin":"attendance"}	1663670379	cli	\N	\N
+1925	\\core\\event\\config_log_created	core	created	config_log	config_log	2054	c	0	1	10	0	2	0	\N	0	{"name":"absenteereport_default","oldvalue":null,"value":"1","plugin":"attendance"}	1663670379	cli	\N	\N
+1926	\\core\\event\\config_log_created	core	created	config_log	config_log	2055	c	0	1	10	0	2	0	\N	0	{"name":"studentscanmark_default","oldvalue":null,"value":"0","plugin":"attendance"}	1663670379	cli	\N	\N
+1927	\\core\\event\\config_log_created	core	created	config_log	config_log	2056	c	0	1	10	0	2	0	\N	0	{"name":"automark_default","oldvalue":null,"value":"0","plugin":"attendance"}	1663670379	cli	\N	\N
+1928	\\core\\event\\config_log_created	core	created	config_log	config_log	2057	c	0	1	10	0	2	0	\N	0	{"name":"randompassword_default","oldvalue":null,"value":"0","plugin":"attendance"}	1663670379	cli	\N	\N
+1929	\\core\\event\\config_log_created	core	created	config_log	config_log	2058	c	0	1	10	0	2	0	\N	0	{"name":"includeqrcode_default","oldvalue":null,"value":"0","plugin":"attendance"}	1663670379	cli	\N	\N
+1930	\\core\\event\\config_log_created	core	created	config_log	config_log	2059	c	0	1	10	0	2	0	\N	0	{"name":"rotateqrcode_default","oldvalue":null,"value":"0","plugin":"attendance"}	1663670379	cli	\N	\N
+1931	\\core\\event\\config_log_created	core	created	config_log	config_log	2060	c	0	1	10	0	2	0	\N	0	{"name":"autoassignstatus","oldvalue":null,"value":"0","plugin":"attendance"}	1663670379	cli	\N	\N
+1932	\\core\\event\\config_log_created	core	created	config_log	config_log	2061	c	0	1	10	0	2	0	\N	0	{"name":"preventsharedip","oldvalue":null,"value":"0","plugin":"attendance"}	1663670379	cli	\N	\N
+1933	\\core\\event\\config_log_created	core	created	config_log	config_log	2062	c	0	1	10	0	2	0	\N	0	{"name":"preventsharediptime","oldvalue":null,"value":"","plugin":"attendance"}	1663670379	cli	\N	\N
+1934	\\core\\event\\config_log_created	core	created	config_log	config_log	2063	c	0	1	10	0	2	0	\N	0	{"name":"warningpercent","oldvalue":null,"value":"70","plugin":"attendance"}	1663670379	cli	\N	\N
+1935	\\core\\event\\config_log_created	core	created	config_log	config_log	2064	c	0	1	10	0	2	0	\N	0	{"name":"warnafter","oldvalue":null,"value":"5","plugin":"attendance"}	1663670379	cli	\N	\N
+1936	\\core\\event\\config_log_created	core	created	config_log	config_log	2065	c	0	1	10	0	2	0	\N	0	{"name":"maxwarn","oldvalue":null,"value":"1","plugin":"attendance"}	1663670379	cli	\N	\N
+1937	\\core\\event\\config_log_created	core	created	config_log	config_log	2066	c	0	1	10	0	2	0	\N	0	{"name":"emailuser","oldvalue":null,"value":"1","plugin":"attendance"}	1663670379	cli	\N	\N
+1938	\\core\\event\\config_log_created	core	created	config_log	config_log	2067	c	0	1	10	0	2	0	\N	0	{"name":"emailsubject","oldvalue":null,"value":"Advertiment d'assist\\u00e8ncia","plugin":"attendance"}	1663670379	cli	\N	\N
+1939	\\core\\event\\config_log_created	core	created	config_log	config_log	2068	c	0	1	10	0	2	0	\N	0	{"name":"emailcontent","oldvalue":null,"value":"Hola, %userfirstname%,\\nLa vostra assist\\u00e8ncia a %coursename% %attendancename% ha baixat per sota del %warningpercent% i, actualment, \\u00e9s del %percent%; esperem que estigueu b\\u00e9!\\n\\nPer treure el m\\u00e0xim profit d'aquest curs, haureu de millorar la vostra assist\\u00e8ncia. Poseu-vos en contacte amb nosaltres si necessiteu ajuda.","plugin":"attendance"}	1663670379	cli	\N	\N
+1940	\\core\\event\\course_viewed	core	viewed	course	\N	\N	r	2	2	50	1	0	1	\N	0	null	1663840587	web	192.168.33.1	\N
+1941	\\core\\event\\user_loggedin	core	loggedin	user	user	2	r	0	1	10	0	2	0	\N	0	{"username":"admin"}	1663840595	web	192.168.33.1	\N
+1942	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	2	0	\N	0	{"capability":"mod\\/attendance:import","oldpermission":0,"permission":1}	1663840688	web	192.168.33.1	\N
+1943	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	2	0	\N	0	{"capability":"mod\\/attendance:import","oldpermission":0,"permission":1}	1663840688	web	192.168.33.1	\N
+1944	\\core\\event\\config_log_created	core	created	config_log	config_log	2069	c	0	1	10	0	2	0	\N	0	{"name":"fielddelimiter","oldvalue":null,"value":",","plugin":"auth_saml2"}	1663840701	web	192.168.33.1	\N
+1945	\\core\\event\\config_log_created	core	created	config_log	config_log	2070	c	0	1	10	0	2	0	\N	0	{"name":"default","oldvalue":null,"value":"0","plugin":"assignsubmission_snap"}	1663840701	web	192.168.33.1	\N
+1946	\\core\\event\\config_log_created	core	created	config_log	config_log	2071	c	0	1	10	0	2	0	\N	0	{"name":"distros","oldvalue":null,"value":"snap | Snap! | https:\\/\\/snap.berkeley.edu\\/snap\\/snap.html","plugin":"assignsubmission_snap"}	1663840701	web	192.168.33.1	\N
+1947	\\core\\event\\config_log_created	core	created	config_log	config_log	2072	c	0	1	10	0	2	0	\N	0	{"name":"cloud","oldvalue":null,"value":"0","plugin":"assignsubmission_snap"}	1663840701	web	192.168.33.1	\N
 \.
 
 
@@ -35985,7 +36690,8 @@ COPY public.m2modules (id, name, cron, lastcron, search, visible) FROM stdin;
 31	rcontent	0	0		1
 4	chat	0	0		0
 32	h5pactivity	0	0		1
-28	journal	60	1650457808		1
+33	attendance	0	0		1
+28	journal	0	1650457808		1
 \.
 
 
@@ -38811,6 +39517,37 @@ COPY public.m2role_capabilities (id, contextid, roleid, capability, permission, 
 1695	1	3	quizaccess/seb:manage_seb_expressionsblocked	1	1637065529	0
 1696	1	1	quizaccess/seb:manage_seb_regexblocked	1	1637065529	0
 1697	1	3	quizaccess/seb:manage_seb_regexblocked	1	1637065530	0
+1698	1	5	mod/attendance:view	1	1663670361	0
+1699	1	4	mod/attendance:view	1	1663670362	0
+1700	1	3	mod/attendance:view	1	1663670362	0
+1701	1	1	mod/attendance:view	1	1663670362	0
+1702	1	3	mod/attendance:addinstance	1	1663670362	0
+1703	1	1	mod/attendance:addinstance	1	1663670362	0
+1704	1	4	mod/attendance:viewreports	1	1663670362	0
+1705	1	3	mod/attendance:viewreports	1	1663670362	0
+1706	1	1	mod/attendance:viewreports	1	1663670362	0
+1707	1	4	mod/attendance:takeattendances	1	1663670362	0
+1708	1	3	mod/attendance:takeattendances	1	1663670362	0
+1709	1	1	mod/attendance:takeattendances	1	1663670362	0
+1710	1	4	mod/attendance:changeattendances	1	1663670362	0
+1711	1	3	mod/attendance:changeattendances	1	1663670362	0
+1712	1	1	mod/attendance:changeattendances	1	1663670362	0
+1713	1	3	mod/attendance:manageattendances	1	1663670362	0
+1714	1	1	mod/attendance:manageattendances	1	1663670362	0
+1715	1	3	mod/attendance:changepreferences	1	1663670363	0
+1716	1	1	mod/attendance:changepreferences	1	1663670363	0
+1717	1	3	mod/attendance:export	1	1663670363	0
+1718	1	1	mod/attendance:export	1	1663670363	0
+1719	1	5	mod/attendance:canbelisted	1	1663670363	0
+1720	1	4	mod/attendance:managetemporaryusers	1	1663670363	0
+1721	1	3	mod/attendance:managetemporaryusers	1	1663670363	0
+1722	1	1	mod/attendance:managetemporaryusers	1	1663670363	0
+1723	1	1	mod/attendance:viewsummaryreports	1	1663670363	0
+1724	1	4	mod/attendance:warningemails	1	1663670363	0
+1725	1	3	mod/attendance:warningemails	1	1663670363	0
+1726	1	1	mod/attendance:warningemails	1	1663670363	0
+1727	1	3	mod/attendance:import	1	1663840688	2
+1728	1	1	mod/attendance:import	1	1663840688	2
 \.
 
 
@@ -38968,6 +39705,7 @@ COPY public.m2search_simpledb_index (id, docid, itemid, title, content, contexti
 --
 
 COPY public.m2sessions (id, state, sid, userid, sessdata, timecreated, timemodified, firstip, lastip) FROM stdin;
+22	0	ajrb4qs5q5b62ite5su481l51k	2	\N	1663840595	1663840812	192.168.33.1	192.168.33.1
 \.
 
 
@@ -39353,6 +40091,75 @@ COPY public.m2task_log (id, type, component, classname, userid, timestart, timee
 157	0	tool_brickfield	tool_brickfield\\task\\process_analysis_requests	0	1650457810.1044000000	1650457810.1088000000	2	1	0	Execute scheduled task: Process content analysis requests (tool_brickfield\\task\\process_analysis_requests)\n... started 14:30:10. Current memory use 12.5MB.\n... used 3 dbqueries\n... used 0.0035030841827393 seconds\nScheduled task complete: Process content analysis requests (tool_brickfield\\task\\process_analysis_requests)\n	default	40976
 158	0	tool_odisseagtafsync	tool_odisseagtafsync\\task\\cron_task	0	1650457810.1234000000	1650457810.1369000000	1	0	0	Execute scheduled task: Sincronitza (tool_odisseagtafsync\\task\\cron_task)\n... started 14:30:10. Current memory use 12.5MB.\nNo hi ha cap fitxer pendent de processar.\n... used 1 dbqueries\n... used 0.012401819229126 seconds\nScheduled task complete: Sincronitza (tool_odisseagtafsync\\task\\cron_task)\n	default	40976
 159	1		core\\task\\build_installed_themes_task	0	1650457810.1553000000	1650457824.1035000000	7	3	0	Execute adhoc task: core\\task\\build_installed_themes_task\n... started 14:30:10. Current memory use 12.6MB.\n... used 10 dbqueries\n... used 13.947103023529 seconds\nAdhoc task complete: core\\task\\build_installed_themes_task\n	default	40976
+160	0	mod_journal	mod_journal\\task\\cron_task	0	1663840831.6449000000	1663840831.6649000000	1	0	0	Execute scheduled task: Background processing for journal module (mod_journal\\task\\cron_task)\n... started 12:00:31. Current memory use 3.3MB.\n... used 1 dbqueries\n... used 0.014567852020264 seconds\nScheduled task complete: Background processing for journal module (mod_journal\\task\\cron_task)\n	default	1757
+161	0	moodle	core\\task\\delete_unconfirmed_users_task	0	1663840831.6742000000	1663840831.6768000000	1	0	0	Execute scheduled task: Suprimeix usuaris no confirmats (core\\task\\delete_unconfirmed_users_task)\n... started 12:00:31. Current memory use 4MB.\n... used 1 dbqueries\n... used 0.00081706047058105 seconds\nScheduled task complete: Suprimeix usuaris no confirmats (core\\task\\delete_unconfirmed_users_task)\n	default	1757
+162	0	moodle	core\\task\\password_reset_cleanup_task	0	1663840831.6847000000	1663840831.6867000000	0	1	0	Execute scheduled task: Neteja els registres d'intents de restabliment de contrasenya (core\\task\\password_reset_cleanup_task)\n... started 12:00:31. Current memory use 4MB.\n Cleaned up old password reset records\n... used 1 dbqueries\n... used 0.0011889934539795 seconds\nScheduled task complete: Neteja els registres d'intents de restabliment de contrasenya (core\\task\\password_reset_cleanup_task)\n	default	1757
+163	0	mod_lti	mod_lti\\task\\clean_access_tokens	0	1663840831.6923000000	1663840831.6974000000	0	1	0	Execute scheduled task: External tool removal of expired access tokens (mod_lti\\task\\clean_access_tokens)\n... started 12:00:31. Current memory use 4MB.\n... used 1 dbqueries\n... used 0.0036671161651611 seconds\nScheduled task complete: External tool removal of expired access tokens (mod_lti\\task\\clean_access_tokens)\n	default	1757
+164	0	mod_hvp	mod_hvp\\task\\look_for_updates	0	1663840831.7037000000	1663840833.0616000000	11	53	0	Execute scheduled task: Cerca actualitzacions de l'H5P (mod_hvp\\task\\look_for_updates)\n... started 12:00:31. Current memory use 4.1MB.\n... used 64 dbqueries\n... used 1.3568451404572 seconds\nScheduled task complete: Cerca actualitzacions de l'H5P (mod_hvp\\task\\look_for_updates)\n	default	1757
+165	0	mod_hvp	mod_hvp\\task\\remove_tmpfiles	0	1663840833.0675000000	1663840833.0692000000	1	0	0	Execute scheduled task: Elimina els fitxers temporals antics de l'H5P (mod_hvp\\task\\remove_tmpfiles)\n... started 12:00:33. Current memory use 5.4MB.\n... used 1 dbqueries\n... used 0.001133918762207 seconds\nScheduled task complete: Elimina els fitxers temporals antics de l'H5P (mod_hvp\\task\\remove_tmpfiles)\n	default	1757
+166	0	mod_hvp	mod_hvp\\task\\remove_old_log_entries	0	1663840833.0742000000	1663840833.0769000000	0	1	0	Execute scheduled task: Elimina les entrades antigues del registre de l'H5P (mod_hvp\\task\\remove_old_log_entries)\n... started 12:00:33. Current memory use 5.4MB.\n... used 1 dbqueries\n... used 0.0019679069519043 seconds\nScheduled task complete: Elimina les entrades antigues del registre de l'H5P (mod_hvp\\task\\remove_old_log_entries)\n	default	1757
+167	0	mod_hvp	mod_hvp\\task\\remove_old_auth_tokens	0	1663840833.0829000000	1663840833.0869000000	0	1	0	Execute scheduled task: Elimina les entrades d'autenticació de mòbil de l'H5P (mod_hvp\\task\\remove_old_auth_tokens)\n... started 12:00:33. Current memory use 5.4MB.\n... used 1 dbqueries\n... used 0.0032050609588623 seconds\nScheduled task complete: Elimina les entrades d'autenticació de mòbil de l'H5P (mod_hvp\\task\\remove_old_auth_tokens)\n	default	1757
+168	0	moodle	core\\task\\session_cleanup_task	0	1663840833.0918000000	1663840833.0967000000	7	1	0	Execute scheduled task: Neteja sessions velles (core\\task\\session_cleanup_task)\n... started 12:00:33. Current memory use 5.4MB.\n... used 8 dbqueries\n... used 0.0042440891265869 seconds\nScheduled task complete: Neteja sessions velles (core\\task\\session_cleanup_task)\n	default	1757
+169	0	moodle	core\\task\\send_new_user_passwords_task	0	1663840833.1020000000	1663840833.1032000000	1	0	0	Execute scheduled task: Envia contrasenyes dels nous usuaris (core\\task\\send_new_user_passwords_task)\n... started 12:00:33. Current memory use 5.6MB.\n... used 1 dbqueries\n... used 0.00048089027404785 seconds\nScheduled task complete: Envia contrasenyes dels nous usuaris (core\\task\\send_new_user_passwords_task)\n	default	1757
+170	0	moodle	core\\task\\send_failed_login_notifications_task	0	1663840833.1080000000	1663840833.1089000000	0	0	0	Execute scheduled task: Envia notificacions d'intents d'inici de sessió erronis (core\\task\\send_failed_login_notifications_task)\n... started 12:00:33. Current memory use 5.6MB.\n... used 0 dbqueries\n... used 5.0067901611328E-5 seconds\nScheduled task complete: Envia notificacions d'intents d'inici de sessió erronis (core\\task\\send_failed_login_notifications_task)\n	default	1757
+171	0	moodle	core\\task\\legacy_plugin_cron_task	0	1663840833.1149000000	1663840833.1249000000	3	0	0	Execute scheduled task: Processament antic del cron per als connectors (core\\task\\legacy_plugin_cron_task)\n... started 12:00:33. Current memory use 5.6MB.\nRunning auth crons if required...\nRunning enrol crons if required...\nStarting activity modules\nFinished activity modules\nStarting blocks\nProcessing cron function for configurable_reports....done.\nFinished blocks\nStarting admin reports\nFinished admin reports\nStarting course reports\nFinished course reports\nStarting gradebook plugins\nFinished gradebook plugins\n... used 3 dbqueries\n... used 0.008915901184082 seconds\nScheduled task complete: Processament antic del cron per als connectors (core\\task\\legacy_plugin_cron_task)\n	default	1757
+172	0	moodle	core\\task\\grade_cron_task	0	1663840833.1293000000	1663840833.1403000000	2	0	0	Execute scheduled task: Processament en segon pla del butlletí de qualificacions (core\\task\\grade_cron_task)\n... started 12:00:33. Current memory use 5.7MB.\n... used 2 dbqueries\n... used 0.010091066360474 seconds\nScheduled task complete: Processament en segon pla del butlletí de qualificacions (core\\task\\grade_cron_task)\n	default	1757
+173	0	moodle	core\\task\\completion_regular_task	0	1663840833.1452000000	1663840833.1776000000	6	0	0	Execute scheduled task: Calcula les dades ordinàries de compleció (core\\task\\completion_regular_task)\n... started 12:00:33. Current memory use 5.7MB.\n... used 6 dbqueries\n... used 0.031813859939575 seconds\nScheduled task complete: Calcula les dades ordinàries de compleció (core\\task\\completion_regular_task)\n	default	1757
+174	0	moodle	core\\task\\portfolio_cron_task	0	1663840833.1832000000	1663840833.1841000000	0	0	0	Execute scheduled task: Processament en segon pla dels connectors de portafolis (core\\task\\portfolio_cron_task)\n... started 12:00:33. Current memory use 5.8MB.\n... used 0 dbqueries\n... used 4.4107437133789E-5 seconds\nScheduled task complete: Processament en segon pla dels connectors de portafolis (core\\task\\portfolio_cron_task)\n	default	1757
+175	0	moodle	core\\task\\plagiarism_cron_task	0	1663840833.1897000000	1663840833.1904000000	0	0	0	Execute scheduled task: Processament en segon pla del cron heretat en els connectors de detecció de plagi (core\\task\\plagiarism_cron_task)\n... started 12:00:33. Current memory use 5.8MB.\n... used 0 dbqueries\n... used 3.6954879760742E-5 seconds\nScheduled task complete: Processament en segon pla del cron heretat en els connectors de detecció de plagi (core\\task\\plagiarism_cron_task)\n	default	1757
+176	0	moodle	core\\task\\calendar_cron_task	0	1663840833.1949000000	1663840833.2066000000	1	0	0	Execute scheduled task: Envia notificacions del calendari (core\\task\\calendar_cron_task)\n... started 12:00:33. Current memory use 5.8MB.\n... used 1 dbqueries\n... used 0.011130094528198 seconds\nScheduled task complete: Envia notificacions del calendari (core\\task\\calendar_cron_task)\n	default	1757
+177	0	moodle	core\\task\\blog_cron_task	0	1663840833.2112000000	1663840833.2153000000	1	1	0	Execute scheduled task: Sincronitza bitàcoles externes (core\\task\\blog_cron_task)\n... started 12:00:33. Current memory use 6MB.\n... used 2 dbqueries\n... used 0.00341796875 seconds\nScheduled task complete: Sincronitza bitàcoles externes (core\\task\\blog_cron_task)\n	default	1757
+178	0	moodle	core\\task\\question_preview_cleanup_task	0	1663840833.2207000000	1663840833.2576000000	1	4	0	Execute scheduled task: Processament en segon pla del netejador de previsualitzacions de qüestions (core\\task\\question_preview_cleanup_task)\n... started 12:00:33. Current memory use 6MB.\n\n  Cleaning up old question previews...done.\n... used 5 dbqueries\n... used 0.036298036575317 seconds\nScheduled task complete: Processament en segon pla del netejador de previsualitzacions de qüestions (core\\task\\question_preview_cleanup_task)\n	default	1757
+179	0	moodle	core\\task\\question_stats_cleanup_task	0	1663840833.2624000000	1663840833.2684000000	1	3	0	Execute scheduled task: Background processing for cleaning up question statistics caches (core\\task\\question_stats_cleanup_task)\n... started 12:00:33. Current memory use 6.4MB.\n\n  Cleaning up old question statistics cache records...done.\n... used 4 dbqueries\n... used 0.0051708221435547 seconds\nScheduled task complete: Background processing for cleaning up question statistics caches (core\\task\\question_stats_cleanup_task)\n	default	1757
+180	0	moodle	core\\task\\badges_cron_task	0	1663840833.2732000000	1663840833.2792000000	1	0	0	Execute scheduled task: Concedeix insígnies (core\\task\\badges_cron_task)\n... started 12:00:33. Current memory use 6.4MB.\nStarted reviewing available badges.\nBadges were issued 0 time(s).\n... used 1 dbqueries\n... used 0.0053589344024658 seconds\nScheduled task complete: Concedeix insígnies (core\\task\\badges_cron_task)\n	default	1757
+181	0	moodle	core\\task\\badges_message_task	0	1663840833.2843000000	1663840833.2854000000	1	0	0	Execute scheduled task: Background processing for sending badges notifications (core\\task\\badges_message_task)\n... started 12:00:33. Current memory use 6.4MB.\nSending scheduled badge notifications.\n... used 1 dbqueries\n... used 0.00046896934509277 seconds\nScheduled task complete: Background processing for sending badges notifications (core\\task\\badges_message_task)\n	default	1757
+182	0	moodle	core\\task\\search_index_task	0	1663840833.2898000000	1663840833.2909000000	0	0	0	Execute scheduled task: Indexació de la cerca global (core\\task\\search_index_task)\n... started 12:00:33. Current memory use 6.4MB.\n... used 0 dbqueries\n... used 0.00048589706420898 seconds\nScheduled task complete: Indexació de la cerca global (core\\task\\search_index_task)\n	default	1757
+183	0	qtype_random	qtype_random\\task\\remove_unused_questions	0	1663840833.2982000000	1663840833.3036000000	1	0	0	Execute scheduled task: Remove unused random questions (qtype_random\\task\\remove_unused_questions)\n... started 12:00:33. Current memory use 6.1MB.\nCleaned up 0 unused random questions.\n... used 1 dbqueries\n... used 0.0046601295471191 seconds\nScheduled task complete: Remove unused random questions (qtype_random\\task\\remove_unused_questions)\n	default	1757
+184	0	mod_assign	mod_assign\\task\\cron_task	0	1663840833.3090000000	1663840833.3736000000	4	0	0	Execute scheduled task: Processament en segon pla del mòdul de tasques (mod_assign\\task\\cron_task)\n... started 12:00:33. Current memory use 6.1MB.\n... used 4 dbqueries\n... used 0.063353061676025 seconds\nScheduled task complete: Processament en segon pla del mòdul de tasques (mod_assign\\task\\cron_task)\n	default	1757
+185	0	mod_forum	mod_forum\\task\\cron_task	0	1663840833.3925000000	1663840833.4056000000	1	1	0	Execute scheduled task: Tasques de manteniment i missatgeria del fòrum (mod_forum\\task\\cron_task)\n... started 12:00:33. Current memory use 6.4MB.\nRemoving old digest records from 7 days ago.\nRemoved all old digest records.\nFetching unmailed posts.\n  No posts found.\n... used 2 dbqueries\n... used 0.011586904525757 seconds\nScheduled task complete: Tasques de manteniment i missatgeria del fòrum (mod_forum\\task\\cron_task)\n	default	1757
+186	0	mod_quiz	mod_quiz\\task\\update_overdue_attempts	0	1663840833.4344000000	1663840833.4498000000	1	0	0	Execute scheduled task: Updating overdue quiz attempts (mod_quiz\\task\\update_overdue_attempts)\n... started 12:00:33. Current memory use 6.4MB.\n  Looking for quiz overdue quiz attempts...\n  Considered 0 attempts in 0 quizzes.\n... used 1 dbqueries\n... used 0.013653039932251 seconds\nScheduled task complete: Updating overdue quiz attempts (mod_quiz\\task\\update_overdue_attempts)\n	default	1757
+187	0	mod_quiz	mod_quiz\\task\\legacy_quiz_reports_cron	0	1663840833.4568000000	1663840833.4590000000	0	0	0	Execute scheduled task: Legacy cron quiz reports (mod_quiz\\task\\legacy_quiz_reports_cron)\n... started 12:00:33. Current memory use 6.4MB.\n... used 0 dbqueries\n... used 0.00154709815979 seconds\nScheduled task complete: Legacy cron quiz reports (mod_quiz\\task\\legacy_quiz_reports_cron)\n	default	1757
+188	0	mod_quiz	mod_quiz\\task\\legacy_quiz_accessrules_cron	0	1663840833.4648000000	1663840833.4656000000	0	0	0	Execute scheduled task: Legacy cron quiz access rules (mod_quiz\\task\\legacy_quiz_accessrules_cron)\n... started 12:00:33. Current memory use 6.4MB.\n... used 0 dbqueries\n... used 0.00011301040649414 seconds\nScheduled task complete: Legacy cron quiz access rules (mod_quiz\\task\\legacy_quiz_accessrules_cron)\n	default	1757
+189	0	mod_scorm	mod_scorm\\task\\cron_task	0	1663840833.4715000000	1663840833.4771000000	3	1	0	Execute scheduled task: Processament en segon pla del mòdul SCORM (mod_scorm\\task\\cron_task)\n... started 12:00:33. Current memory use 6.5MB.\nUpdating scorm packages which require daily update\n... used 4 dbqueries\n... used 0.0047380924224854 seconds\nScheduled task complete: Processament en segon pla del mòdul SCORM (mod_scorm\\task\\cron_task)\n	default	1757
+190	0	mod_workshop	mod_workshop\\task\\cron_task	0	1663840833.4842000000	1663840833.4888000000	1	0	0	Execute scheduled task: Processament en segon pla del mòdul de taller (mod_workshop\\task\\cron_task)\n... started 12:00:33. Current memory use 6.5MB.\n processing workshop subplugins ...\n... used 1 dbqueries\n... used 0.0032749176025391 seconds\nScheduled task complete: Processament en segon pla del mòdul de taller (mod_workshop\\task\\cron_task)\n	default	1757
+191	0	mod_workshop	mod_workshop\\task\\legacy_workshop_allocation_cron	0	1663840833.4945000000	1663840833.4953000000	0	0	0	Execute scheduled task: Legacy cron workshop allocation (mod_workshop\\task\\legacy_workshop_allocation_cron)\n... started 12:00:33. Current memory use 6.5MB.\n... used 0 dbqueries\n... used 0.00011205673217773 seconds\nScheduled task complete: Legacy cron workshop allocation (mod_workshop\\task\\legacy_workshop_allocation_cron)\n	default	1757
+192	0	enrol_cohort	enrol_cohort\\task\\enrol_cohort_sync	0	1663840833.5022000000	1663840833.5199000000	7	0	0	Execute scheduled task: Cohort enrolment sync task (enrol_cohort\\task\\enrol_cohort_sync)\n... started 12:00:33. Current memory use 6.5MB.\n... used 7 dbqueries\n... used 0.016809940338135 seconds\nScheduled task complete: Cohort enrolment sync task (enrol_cohort\\task\\enrol_cohort_sync)\n	default	1757
+193	0	enrol_manual	enrol_manual\\task\\sync_enrolments	0	1663840833.5264000000	1663840833.5277000000	0	0	0	Execute scheduled task: Synchronise manual enrolments task (enrol_manual\\task\\sync_enrolments)\n... started 12:00:33. Current memory use 6.5MB.\nVerifying manual enrolment expiration...\n...manual enrolment updates finished.\n... used 0 dbqueries\n... used 0.00034499168395996 seconds\nScheduled task complete: Synchronise manual enrolments task (enrol_manual\\task\\sync_enrolments)\n	default	1757
+194	0	enrol_manual	enrol_manual\\task\\send_expiry_notifications	0	1663840833.5344000000	1663840833.5375000000	2	1	0	Execute scheduled task: Manual enrolment send expiry notifications task (enrol_manual\\task\\send_expiry_notifications)\n... started 12:00:33. Current memory use 6.5MB.\nProcessing manual enrolment expiration notifications...\n...notification processing finished.\n... used 3 dbqueries\n... used 0.002140998840332 seconds\nScheduled task complete: Manual enrolment send expiry notifications task (enrol_manual\\task\\send_expiry_notifications)\n	default	1757
+195	0	enrol_self	enrol_self\\task\\sync_enrolments	0	1663840833.5427000000	1663840833.5449000000	2	0	0	Execute scheduled task: Synchronise self enrolments task (enrol_self\\task\\sync_enrolments)\n... started 12:00:33. Current memory use 6.5MB.\nVerifying self-enrolments...\n...user self-enrolment updates finished.\nNo expired enrol_self enrolments detected\n... used 2 dbqueries\n... used 0.001471996307373 seconds\nScheduled task complete: Synchronise self enrolments task (enrol_self\\task\\sync_enrolments)\n	default	1757
+196	0	enrol_self	enrol_self\\task\\send_expiry_notifications	0	1663840833.5506000000	1663840833.5536000000	2	1	0	Execute scheduled task: Self enrolment send expiry notifications task (enrol_self\\task\\send_expiry_notifications)\n... started 12:00:33. Current memory use 6.5MB.\nProcessing self enrolment expiration notifications...\n...notification processing finished.\n... used 3 dbqueries\n... used 0.0020020008087158 seconds\nScheduled task complete: Self enrolment send expiry notifications task (enrol_self\\task\\send_expiry_notifications)\n	default	1757
+197	0	message_email	message_email\\task\\send_email_task	0	1663840833.5602000000	1663840833.5730000000	4	0	0	Execute scheduled task: Messages digest mailings (message_email\\task\\send_email_task)\n... started 12:00:33. Current memory use 6.6MB.\n... used 4 dbqueries\n... used 0.012037038803101 seconds\nScheduled task complete: Messages digest mailings (message_email\\task\\send_email_task)\n	default	1757
+198	0	block_recent_activity	block_recent_activity\\task\\cleanup	0	1663840833.5844000000	1663840833.5871000000	0	1	0	Execute scheduled task: Cleanup task for recent activity block (block_recent_activity\\task\\cleanup)\n... started 12:00:33. Current memory use 6.3MB.\n... used 1 dbqueries\n... used 0.001690149307251 seconds\nScheduled task complete: Cleanup task for recent activity block (block_recent_activity\\task\\cleanup)\n	default	1757
+199	0	block_rss_client	block_rss_client\\task\\refreshfeeds	0	1663840833.5940000000	1663840833.6109000000	1	0	0	Execute scheduled task: Refresh RSS feeds task (block_rss_client\\task\\refreshfeeds)\n... started 12:00:33. Current memory use 6.3MB.\n\n0 feeds refreshed (took 0.00097800000000003 seconds)\n... used 1 dbqueries\n... used 0.016264200210571 seconds\nScheduled task complete: Refresh RSS feeds task (block_rss_client\\task\\refreshfeeds)\n	default	1757
+200	0	editor_atto	editor_atto\\task\\autosave_cleanup_task	0	1663840833.6202000000	1663840833.6226000000	0	1	0	Execute scheduled task: Suprimeix els esborranys de desament automàtic caducats de la base de dades. (editor_atto\\task\\autosave_cleanup_task)\n... started 12:00:33. Current memory use 6.6MB.\n... used 1 dbqueries\n... used 0.0013139247894287 seconds\nScheduled task complete: Suprimeix els esborranys de desament automàtic caducats de la base de dades. (editor_atto\\task\\autosave_cleanup_task)\n	default	1757
+201	0	tool_analytics	tool_analytics\\task\\train_models	0	1663840833.6363000000	1663840833.6402000000	1	0	0	Execute scheduled task: Train models (tool_analytics\\task\\train_models)\n... started 12:00:33. Current memory use 6.8MB.\n... used 1 dbqueries\n... used 0.0023319721221924 seconds\nScheduled task complete: Train models (tool_analytics\\task\\train_models)\n	default	1757
+202	0	tool_analytics	tool_analytics\\task\\predict_models	0	1663840833.6459000000	1663840833.6889000000	19	1	0	Execute scheduled task: Predict models (tool_analytics\\task\\predict_models)\n... started 12:00:33. Current memory use 6.9MB.\nAnalysing id "1" with "De principi a final" time splitting method...\n-->Courses at risk of not starting resultats\nPrediction results\n!! No new elements to get predictions for. !!\n-->Students who have not accessed the course recently resultats\nPrediction results\n!! No new elements to get predictions for. !!\n-->Students who have not accessed the course yet resultats\nPrediction results\n!! No new elements to get predictions for. !!\n-->Upcoming activities due resultats\nPrediction results\n!! No new elements to get predictions for. !!\n... used 20 dbqueries\n... used 0.041878938674927 seconds\nScheduled task complete: Predict models (tool_analytics\\task\\predict_models)\n	default	1757
+203	0	tool_cohortroles	tool_cohortroles\\task\\cohort_role_sync	0	1663840833.6956000000	1663840833.7027000000	2	1	0	Execute scheduled task: Sincronitza les assignacions de rol de cohort (tool_cohortroles\\task\\cohort_role_sync)\n... started 12:00:33. Current memory use 7.9MB.\nSync cohort roles...\nAdded 0\nRemoved 0\n... used 3 dbqueries\n... used 0.0054631233215332 seconds\nScheduled task complete: Sincronitza les assignacions de rol de cohort (tool_cohortroles\\task\\cohort_role_sync)\n	default	1757
+204	0	tool_dataprivacy	tool_dataprivacy\\task\\expired_retention_period	0	1663840833.7089000000	1663840833.7154000000	0	0	0	Execute scheduled task: Expired retention period (tool_dataprivacy\\task\\expired_retention_period)\n... started 12:00:33. Current memory use 8MB.\nChecking requirements\n  Requirements not met. Cannot process expired retentions.\nFlagged 0 course contexts, and 0 user contexts as expired\n... used 0 dbqueries\n... used 0.0053400993347168 seconds\nScheduled task complete: Expired retention period (tool_dataprivacy\\task\\expired_retention_period)\n	default	1757
+205	0	tool_dataprivacy	tool_dataprivacy\\task\\delete_expired_contexts	0	1663840833.7233000000	1663840833.7245000000	0	0	0	Execute scheduled task: Esborra els contextos expirats (tool_dataprivacy\\task\\delete_expired_contexts)\n... started 12:00:33. Current memory use 8MB.\nChecking requirements\n  Requirements not met. Cannot process expired retentions.\nProcessed deletions for 0 course contexts, and 0 user contexts as expired\n... used 0 dbqueries\n... used 0.00028896331787109 seconds\nScheduled task complete: Esborra els contextos expirats (tool_dataprivacy\\task\\delete_expired_contexts)\n	default	1757
+206	0	tool_dataprivacy	tool_dataprivacy\\task\\delete_expired_requests	0	1663840833.7320000000	1663840833.7380000000	1	0	0	Execute scheduled task: Delete expired data request export files (tool_dataprivacy\\task\\delete_expired_requests)\n... started 12:00:33. Current memory use 8MB.\n... used 1 dbqueries\n... used 0.0046420097351074 seconds\nScheduled task complete: Delete expired data request export files (tool_dataprivacy\\task\\delete_expired_requests)\n	default	1757
+207	0	tool_langimport	tool_langimport\\task\\update_langpacks_task	0	1663840833.7443000000	1663840833.7455000000	0	0	0	Execute scheduled task: Actualitza els paquets d'idioma (tool_langimport\\task\\update_langpacks_task)\n... started 12:00:33. Current memory use 8MB.\nLangpack update skipped. ($CFG->skiplangupgrade set)\n... used 0 dbqueries\n... used 0.00014400482177734 seconds\nScheduled task complete: Actualitza els paquets d'idioma (tool_langimport\\task\\update_langpacks_task)\n	default	1757
+208	0	tool_messageinbound	tool_messageinbound\\task\\pickup_task	0	1663840833.7534000000	1663840833.7576000000	0	0	0	Execute scheduled task: Recollida de correu electrònic entrant (tool_messageinbound\\task\\pickup_task)\n... started 12:00:33. Current memory use 8MB.\nInbound Message not fully configured - exiting early.\n... used 0 dbqueries\n... used 0.0029869079589844 seconds\nScheduled task complete: Recollida de correu electrònic entrant (tool_messageinbound\\task\\pickup_task)\n	default	1757
+209	0	tool_messageinbound	tool_messageinbound\\task\\cleanup_task	0	1663840833.7635000000	1663840833.7669000000	0	1	0	Execute scheduled task: Neteja del correu electrònic entrant no verificat (tool_messageinbound\\task\\cleanup_task)\n... started 12:00:33. Current memory use 8.1MB.\nInbound Message not fully configured - exiting early.\n... used 1 dbqueries\n... used 0.0016739368438721 seconds\nScheduled task complete: Neteja del correu electrònic entrant no verificat (tool_messageinbound\\task\\cleanup_task)\n	default	1757
+210	0	tool_monitor	tool_monitor\\task\\clean_events	0	1663840833.7742000000	1663840833.7758000000	1	0	0	Execute scheduled task: Fes neteja dels esdeveniments del monitor d'esdeveniments (tool_monitor\\task\\clean_events)\n... started 12:00:33. Current memory use 8.1MB.\n... used 1 dbqueries\n... used 0.00067281723022461 seconds\nScheduled task complete: Fes neteja dels esdeveniments del monitor d'esdeveniments (tool_monitor\\task\\clean_events)\n	default	1757
+211	0	tool_monitor	tool_monitor\\task\\check_subscriptions	0	1663840833.7833000000	1663840833.7849000000	0	0	0	Execute scheduled task: Activa/desactiva les subscripcions a les regles invàlides. (tool_monitor\\task\\check_subscriptions)\n... started 12:00:33. Current memory use 8.1MB.\n... used 0 dbqueries\n... used 0.00016617774963379 seconds\nScheduled task complete: Activa/desactiva les subscripcions a les regles invàlides. (tool_monitor\\task\\check_subscriptions)\n	default	1757
+212	0	tool_recyclebin	tool_recyclebin\\task\\cleanup_course_bin	0	1663840833.7918000000	1663840833.7964000000	1	0	0	Execute scheduled task: Neteja la paperera de reciclatge del curs (tool_recyclebin\\task\\cleanup_course_bin)\n... started 12:00:33. Current memory use 8.1MB.\n... used 1 dbqueries\n... used 0.0036401748657227 seconds\nScheduled task complete: Neteja la paperera de reciclatge del curs (tool_recyclebin\\task\\cleanup_course_bin)\n	default	1757
+213	0	tool_recyclebin	tool_recyclebin\\task\\cleanup_category_bin	0	1663840833.8044000000	1663840833.8088000000	1	0	0	Execute scheduled task: Neteja la paperera de reciclatge de la categoria (tool_recyclebin\\task\\cleanup_category_bin)\n... started 12:00:33. Current memory use 8.1MB.\n... used 1 dbqueries\n... used 0.0033590793609619 seconds\nScheduled task complete: Neteja la paperera de reciclatge de la categoria (tool_recyclebin\\task\\cleanup_category_bin)\n	default	1757
+214	0	assignfeedback_editpdf	assignfeedback_editpdf\\task\\convert_submissions	0	1663840833.8174000000	1663840833.8210000000	1	0	0	Execute scheduled task: Prepara les trameses per anotacions (assignfeedback_editpdf\\task\\convert_submissions)\n... started 12:00:33. Current memory use 8.1MB.\n... used 1 dbqueries\n... used 0.0020132064819336 seconds\nScheduled task complete: Prepara les trameses per anotacions (assignfeedback_editpdf\\task\\convert_submissions)\n	default	1757
+215	0	ltiservice_gradebookservices	ltiservice_gradebookservices\\task\\cleanup_task	0	1663840833.8281000000	1663840833.8374000000	0	1	0	Execute scheduled task: LTI Assignment and Grade Services table cleanup (ltiservice_gradebookservices\\task\\cleanup_task)\n... started 12:00:33. Current memory use 8.1MB.\n... used 1 dbqueries\n... used 0.0082709789276123 seconds\nScheduled task complete: LTI Assignment and Grade Services table cleanup (ltiservice_gradebookservices\\task\\cleanup_task)\n	default	1757
+216	0	quiz_statistics	quiz_statistics\\task\\quiz_statistics_cleanup	0	1663840833.8444000000	1663840833.8466000000	0	1	0	Execute scheduled task: Clean up old quiz statistics cache records (quiz_statistics\\task\\quiz_statistics_cleanup)\n... started 12:00:33. Current memory use 8.1MB.\n... used 1 dbqueries\n... used 0.0013070106506348 seconds\nScheduled task complete: Clean up old quiz statistics cache records (quiz_statistics\\task\\quiz_statistics_cleanup)\n	default	1757
+217	0	workshopallocation_scheduled	workshopallocation_scheduled\\task\\cron_task	0	1663840833.8554000000	1663840833.8582000000	1	0	0	Execute scheduled task: Processament en segon pla per l'assignació programada (workshopallocation_scheduled\\task\\cron_task)\n... started 12:00:33. Current memory use 8.1MB.\n... no workshops awaiting scheduled allocation. ... used 1 dbqueries\n... used 0.0018680095672607 seconds\nScheduled task complete: Processament en segon pla per l'assignació programada (workshopallocation_scheduled\\task\\cron_task)\n	default	1757
+218	0	logstore_standard	logstore_standard\\task\\cleanup_task	0	1663840833.8655000000	1663840833.8701000000	2	1	0	Execute scheduled task: Neteja de la taula de registre (logstore_standard\\task\\cleanup_task)\n... started 12:00:33. Current memory use 8.1MB.\n Deleted old log records from standard store.\n... used 3 dbqueries\n... used 0.0029349327087402 seconds\nScheduled task complete: Neteja de la taula de registre (logstore_standard\\task\\cleanup_task)\n	default	1757
+219	0	local_agora	local_agora\\task\\adware	0	1663840833.8773000000	1663840833.9690000000	142	1	0	Execute scheduled task: Detecta Adware (local_agora\\task\\adware)\n... started 12:00:33. Current memory use 7.7MB.\n... used 143 dbqueries\n... used 0.09067702293396 seconds\nScheduled task complete: Detecta Adware (local_agora\\task\\adware)\n	default	1757
+220	0	local_agora	local_agora\\task\\scripts	0	1663840833.9763000000	1663840833.9980000000	0	0	0	Execute scheduled task: Àgora Scripts (local_agora\\task\\scripts)\n... started 12:00:33. Current memory use 7.7MB.\n... used 0 dbqueries\n... used 0.020335912704468 seconds\nScheduled task complete: Àgora Scripts (local_agora\\task\\scripts)\n	default	1757
+221	0	local_oauth	local_oauth\\task\\clean	0	1663840834.0051000000	1663840834.0106000000	0	3	0	Execute scheduled task: Proveïdor OAuth (local_oauth\\task\\clean)\n... started 12:00:34. Current memory use 7.9MB.\nDeleting expired tokens...\n... used 3 dbqueries\n... used 0.0044238567352295 seconds\nScheduled task complete: Proveïdor OAuth (local_oauth\\task\\clean)\n	default	1757
+222	0	tool_brickfield	tool_brickfield\\task\\bulk_process_courses	0	1663840834.0205000000	1663840834.0244000000	1	1	0	Execute scheduled task: Process bulk batch accessibility checking (tool_brickfield\\task\\bulk_process_courses)\n... started 12:00:34. Current memory use 7.9MB.\n... used 2 dbqueries\n... used 0.0023560523986816 seconds\nScheduled task complete: Process bulk batch accessibility checking (tool_brickfield\\task\\bulk_process_courses)\n	default	1757
+223	0	tool_brickfield	tool_brickfield\\task\\bulk_process_caches	0	1663840834.0302000000	1663840834.0338000000	2	1	0	Execute scheduled task: Process bulk caching (tool_brickfield\\task\\bulk_process_caches)\n... started 12:00:34. Current memory use 7.9MB.\n... used 3 dbqueries\n... used 0.0020291805267334 seconds\nScheduled task complete: Process bulk caching (tool_brickfield\\task\\bulk_process_caches)\n	default	1757
+224	0	tool_brickfield	tool_brickfield\\task\\checkid_validation	0	1663840834.0404000000	1663840834.0432000000	1	0	0	Execute scheduled task: Task to check for any invalid checkids (tool_brickfield\\task\\checkid_validation)\n... started 12:00:34. Current memory use 7.9MB.\nRunning checkid_validation\n... used 1 dbqueries\n... used 0.0018711090087891 seconds\nScheduled task complete: Task to check for any invalid checkids (tool_brickfield\\task\\checkid_validation)\n	default	1757
+225	0	tool_brickfield	tool_brickfield\\task\\update_summarydata	0	1663840834.0528000000	1663840834.0567000000	2	1	0	Execute scheduled task: Update site summarydata (tool_brickfield\\task\\update_summarydata)\n... started 12:00:34. Current memory use 7.9MB.\n... used 3 dbqueries\n... used 0.002659797668457 seconds\nScheduled task complete: Update site summarydata (tool_brickfield\\task\\update_summarydata)\n	default	1757
+226	0	tool_brickfield	tool_brickfield\\task\\process_analysis_requests	0	1663840834.0627000000	1663840834.0690000000	2	1	0	Execute scheduled task: Process content analysis requests (tool_brickfield\\task\\process_analysis_requests)\n... started 12:00:34. Current memory use 7.9MB.\n... used 3 dbqueries\n... used 0.0049560070037842 seconds\nScheduled task complete: Process content analysis requests (tool_brickfield\\task\\process_analysis_requests)\n	default	1757
+227	0	tool_odisseagtafsync	tool_odisseagtafsync\\task\\cron_task	0	1663840834.0758000000	1663840834.0869000000	1	0	0	Execute scheduled task: Sincronitza (tool_odisseagtafsync\\task\\cron_task)\n... started 12:00:34. Current memory use 7.9MB.\nNo hi ha cap fitxer pendent de processar.\n... used 1 dbqueries\n... used 0.010097026824951 seconds\nScheduled task complete: Sincronitza (tool_odisseagtafsync\\task\\cron_task)\n	default	1757
+228	1		core\\task\\build_installed_themes_task	0	1663840834.0974000000	1663840844.3388000000	5	3	0	Execute adhoc task: core\\task\\build_installed_themes_task\n... started 12:00:34. Current memory use 8.1MB.\n... used 8 dbqueries\n... used 10.240243911743 seconds\nAdhoc task complete: core\\task\\build_installed_themes_task\n	default	1757
 \.
 
 
@@ -39371,55 +40178,52 @@ COPY public.m2task_scheduled (id, component, classname, lastruntime, nextruntime
 61	enrol_flatfile	\\enrol_flatfile\\task\\flatfile_sync_task	0	1637068500	0	15	*	*	*	*	0	0	0	\N	\N	\N
 62	enrol_imsenterprise	\\enrol_imsenterprise\\task\\cron_task	0	1637068200	0	10	*	*	*	*	0	0	0	\N	\N	\N
 63	enrol_ldap	\\enrol_ldap\\task\\sync_enrolments	0	1637100720	0	12	23	*	*	*	0	0	1	\N	\N	\N
-107	local_bigdata	\\local_bigdata\\task\\export	0	1603935240	0	34	2	*	*	*	0	0	1	\N	\N	\N
 60	enrol_database	\\enrol_database\\task\\sync_enrolments	0	1637089260	0	1	20	*	*	*	0	0	1	\N	\N	\N
-5	moodle	\\core\\task\\tag_cron_task	1637234389	1650506280	0	58	3	*	*	*	0	0	0	\N	\N	\N
-6	moodle	\\core\\task\\context_cleanup_task	1650457807	1650461100	0	25	*	*	*	*	0	0	0	\N	\N	\N
-7	moodle	\\core\\task\\cache_cleanup_task	1650457808	1650461400	0	30	*	*	*	*	0	0	0	\N	\N	\N
-8	moodle	\\core\\task\\messaging_cleanup_task	1637234390	1650458100	0	35	*	*	*	*	0	0	0	\N	\N	\N
-9	moodle	\\core\\task\\send_new_user_passwords_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-10	moodle	\\core\\task\\send_failed_login_notifications_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-11	moodle	\\core\\task\\create_contexts_task	1637234390	1650492000	1	0	0	*	*	*	0	0	0	\N	\N	\N
-12	moodle	\\core\\task\\legacy_plugin_cron_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-13	moodle	\\core\\task\\grade_cron_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-15	moodle	\\core\\task\\completion_regular_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-16	moodle	\\core\\task\\completion_daily_task	1637234390	1650463440	0	4	16	*	*	*	0	0	0	\N	\N	\N
-17	moodle	\\core\\task\\portfolio_cron_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-18	moodle	\\core\\task\\plagiarism_cron_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-19	moodle	\\core\\task\\calendar_cron_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-20	moodle	\\core\\task\\blog_cron_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-22	moodle	\\core\\task\\question_stats_cleanup_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-23	moodle	\\core\\task\\registration_cron_task	0	1650490200	0	30	23	*	*	0	0	0	0	\N	\N	\N
-26	moodle	\\core\\task\\automated_backup_task	1637234390	1650459000	0	50	*	*	*	*	0	0	0	\N	\N	\N
-27	moodle	\\core\\task\\badges_cron_task	1650457808	1650458100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-28	moodle	\\core\\task\\badges_message_task	1650457808	1650458100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-29	moodle	\\core\\task\\file_temp_cleanup_task	1637234390	1650473700	0	55	*/6	*	*	*	0	0	0	\N	\N	\N
-30	moodle	\\core\\task\\file_trash_cleanup_task	1637234390	1650473700	0	55	*/6	*	*	*	0	0	0	\N	\N	\N
-31	moodle	\\core\\task\\search_index_task	1650457808	1650459600	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-32	moodle	\\core\\task\\search_optimize_task	1637234390	1650492900	0	15	*/12	*	*	*	0	0	0	\N	\N	\N
-33	moodle	\\core\\task\\stats_cron_task	1637234390	1650492000	0	0	0	*	*	*	0	0	0	\N	\N	\N
-34	moodle	\\core\\task\\password_reset_cleanup_task	1637234390	1650470400	0	0	*/6	*	*	*	0	0	0	\N	\N	\N
-35	moodle	\\core\\task\\complete_plans_task	1637234390	1650458040	0	34	*	*	*	*	0	0	0	\N	\N	\N
-37	moodle	\\core_files\\task\\conversion_cleanup_task	1637234390	1650500040	0	14	2	*	*	*	0	0	0	\N	\N	\N
-38	moodle	\\core\\oauth2\\refresh_system_tokens_task	1650457808	1650461400	0	30	*	*	*	*	0	0	0	\N	\N	\N
-39	moodle	\\core\\task\\analytics_cleanup_task	1637234390	1650458520	0	42	*	*	*	*	0	0	0	\N	\N	\N
-40	moodle	\\core\\task\\task_log_cleanup_task	1637234390	1650536880	0	28	12	*	*	*	0	0	0	\N	\N	\N
-41	moodle	\\core\\task\\h5p_get_content_types_task	0	1651431060	0	51	20	1	*	*	0	0	0	\N	\N	\N
-46	mod_lti	\\mod_lti\\task\\clean_access_tokens	1637234391	1650466260	0	51	16	*	*	*	0	0	0	\N	\N	\N
-109	auth_saml2	\\auth_saml2\\task\\metadata_refresh	0	1650492000	0	0	0	*	*	*	0	0	0	\N	\N	\N
-42	qtype_random	\\qtype_random\\task\\remove_unused_questions	1650457808	1650459900	0	5	*	*	*	*	0	0	0	\N	\N	\N
-43	mod_assign	\\mod_assign\\task\\cron_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-45	mod_forum	\\mod_forum\\task\\cron_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-47	mod_quiz	\\mod_quiz\\task\\update_overdue_attempts	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-49	mod_quiz	\\mod_quiz\\task\\legacy_quiz_accessrules_cron	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-50	mod_scorm	\\mod_scorm\\task\\cron_task	1650457808	1650458100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-51	mod_workshop	\\mod_workshop\\task\\cron_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-52	mod_workshop	\\mod_workshop\\task\\legacy_workshop_allocation_cron	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-59	enrol_cohort	\\enrol_cohort\\task\\enrol_cohort_sync	1650457808	1650460080	0	8	*	*	*	*	0	0	0	\N	\N	\N
-105	local_agora	\\local_agora\\task\\adware	1650457809	1650763500	0	25	3	*	*	0	0	0	0	\N	\N	\N
-106	local_agora	\\local_agora\\task\\scripts	1650457810	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-64	enrol_lti	\\enrol_lti\\task\\sync_grades	0	1637065800	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-65	enrol_lti	\\enrol_lti\\task\\sync_members	0	1637065800	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+7	moodle	\\core\\task\\cache_cleanup_task	1650457808	1663842600	0	30	*	*	*	*	0	0	0	\N	\N	\N
+8	moodle	\\core\\task\\messaging_cleanup_task	1637234390	1663842900	0	35	*	*	*	*	0	0	0	\N	\N	\N
+9	moodle	\\core\\task\\send_new_user_passwords_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+10	moodle	\\core\\task\\send_failed_login_notifications_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+11	moodle	\\core\\task\\create_contexts_task	1637234390	1663884000	1	0	0	*	*	*	0	0	0	\N	\N	\N
+12	moodle	\\core\\task\\legacy_plugin_cron_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+13	moodle	\\core\\task\\grade_cron_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+15	moodle	\\core\\task\\completion_regular_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+16	moodle	\\core\\task\\completion_daily_task	1637234390	1663873200	0	0	21	*	*	*	0	0	0	\N	\N	\N
+17	moodle	\\core\\task\\portfolio_cron_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+18	moodle	\\core\\task\\plagiarism_cron_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+19	moodle	\\core\\task\\calendar_cron_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+20	moodle	\\core\\task\\blog_cron_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+22	moodle	\\core\\task\\question_stats_cleanup_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+23	moodle	\\core\\task\\registration_cron_task	0	1664362740	0	59	12	*	*	3	0	0	0	\N	\N	\N
+26	moodle	\\core\\task\\automated_backup_task	1637234390	1663843800	0	50	*	*	*	*	0	0	0	\N	\N	\N
+27	moodle	\\core\\task\\badges_cron_task	1663840833	1663841100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+28	moodle	\\core\\task\\badges_message_task	1663840833	1663841100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+30	moodle	\\core\\task\\file_trash_cleanup_task	1637234390	1663844100	0	55	*/6	*	*	*	0	0	0	\N	\N	\N
+31	moodle	\\core\\task\\search_index_task	1663840833	1663842600	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+32	moodle	\\core\\task\\search_optimize_task	1637234390	1663841700	0	15	*/12	*	*	*	0	0	0	\N	\N	\N
+33	moodle	\\core\\task\\stats_cron_task	1637234390	1663884000	0	0	0	*	*	*	0	0	0	\N	\N	\N
+34	moodle	\\core\\task\\password_reset_cleanup_task	1663840831	1663862400	0	0	*/6	*	*	*	0	0	0	\N	\N	\N
+35	moodle	\\core\\task\\complete_plans_task	1637234390	1663841580	0	13	*	*	*	*	0	0	0	\N	\N	\N
+37	moodle	\\core_files\\task\\conversion_cleanup_task	1637234390	1663893840	0	44	2	*	*	*	0	0	0	\N	\N	\N
+38	moodle	\\core\\oauth2\\refresh_system_tokens_task	1650457808	1663842600	0	30	*	*	*	*	0	0	0	\N	\N	\N
+39	moodle	\\core\\task\\analytics_cleanup_task	1637234390	1663843320	0	42	*	*	*	*	0	0	0	\N	\N	\N
+40	moodle	\\core\\task\\task_log_cleanup_task	1637234390	1663900260	0	31	4	*	*	*	0	0	0	\N	\N	\N
+41	moodle	\\core\\task\\h5p_get_content_types_task	0	1664634540	0	29	16	1	*	*	0	0	0	\N	\N	\N
+43	mod_assign	\\mod_assign\\task\\cron_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+6	moodle	\\core\\task\\context_cleanup_task	1650457807	1663842300	0	25	*	*	*	*	0	0	0	\N	\N	\N
+109	auth_saml2	\\auth_saml2\\task\\metadata_refresh	0	1663884000	0	0	0	*	*	*	0	0	0	\N	\N	\N
+64	enrol_lti	\\enrol_lti\\task\\sync_grades	0	1663840800	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+65	enrol_lti	\\enrol_lti\\task\\sync_members	0	1663840800	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+46	mod_lti	\\mod_lti\\task\\clean_access_tokens	1663840831	1663858260	0	51	16	*	*	*	0	0	0	\N	\N	\N
+42	qtype_random	\\qtype_random\\task\\remove_unused_questions	1663840833	1663841100	0	5	*	*	*	*	0	0	0	\N	\N	\N
+45	mod_forum	\\mod_forum\\task\\cron_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+47	mod_quiz	\\mod_quiz\\task\\update_overdue_attempts	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+49	mod_quiz	\\mod_quiz\\task\\legacy_quiz_accessrules_cron	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+50	mod_scorm	\\mod_scorm\\task\\cron_task	1663840833	1663841100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+51	mod_workshop	\\mod_workshop\\task\\cron_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+52	mod_workshop	\\mod_workshop\\task\\legacy_workshop_allocation_cron	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+59	enrol_cohort	\\enrol_cohort\\task\\enrol_cohort_sync	1663840833	1663841280	0	8	*	*	*	*	0	0	0	\N	\N	\N
+105	local_agora	\\local_agora\\task\\adware	1663840833	1664069100	0	25	3	*	*	0	0	0	0	\N	\N	\N
+106	local_agora	\\local_agora\\task\\scripts	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
 68	enrol_meta	\\enrol_meta\\task\\enrol_meta_sync	0	1637067960	0	6	*	*	*	*	0	0	0	\N	\N	\N
 69	enrol_paypal	\\enrol_paypal\\task\\process_expirations	0	1637065440	0	*	*	*	*	*	0	0	0	\N	\N	\N
 76	repository_dropbox	\\repository_dropbox\\task\\cron_task	0	1637065500	0	*	*	*	*	*	0	0	0	\N	\N	\N
@@ -39427,56 +40231,62 @@ COPY public.m2task_scheduled (id, component, classname, lastruntime, nextruntime
 78	repository_onedrive	\\repository_onedrive\\remove_temp_access_task	0	1637301600	0	0	7	*	*	5	0	0	0	\N	\N	\N
 85	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_existing_deleted_users	0	1637079000	0	10	17	*	*	*	0	0	1	\N	\N	\N
 97	logstore_legacy	\\logstore_legacy\\task\\cleanup_task	0	1637122080	0	8	5	*	*	*	0	0	0	\N	\N	\N
-1	moodle	\\core\\task\\session_cleanup_task	1650457807	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-2	moodle	\\core\\task\\delete_unconfirmed_users_task	1637234389	1650459600	0	0	*	*	*	*	0	0	0	\N	\N	\N
-14	moodle	\\core\\task\\grade_history_cleanup_task	1637234390	1650493260	0	*	0	*	*	*	0	0	0	\N	\N	\N
-21	moodle	\\core\\task\\question_preview_cleanup_task	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-25	moodle	\\core\\task\\cache_cron_task	1637234390	1650459000	0	50	*	*	*	*	0	0	0	\N	\N	\N
-36	moodle	\\core\\task\\sync_plans_from_template_cohorts_task	1650457808	1650461160	0	26	*	*	*	*	0	0	0	\N	\N	\N
-110	moodle	\\core\\task\\h5p_clean_orphaned_records_task	1637234392	1650494280	0	38	0	*	*	*	0	0	0	\N	\N	\N
-111	moodle	\\core\\task\\antivirus_cleanup_task	1637234392	1650494400	0	40	0	*	*	*	0	0	0	\N	\N	\N
-99	mod_hvp	\\mod_hvp\\task\\look_for_updates	1637234392	1650530640	0	44	10	*	*	*	0	0	0	\N	\N	\N
-100	mod_hvp	\\mod_hvp\\task\\remove_tmpfiles	1637234392	1650485520	0	12	22	*	*	*	0	0	0	\N	\N	\N
-101	mod_hvp	\\mod_hvp\\task\\remove_old_log_entries	1637234392	1650492180	0	3	0	*	*	*	0	0	0	\N	\N	\N
-102	mod_hvp	\\mod_hvp\\task\\remove_old_auth_tokens	1637234392	1650458040	0	34	*	*	*	*	0	0	0	\N	\N	\N
-48	mod_quiz	\\mod_quiz\\task\\legacy_quiz_reports_cron	1650457808	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-66	enrol_manual	\\enrol_manual\\task\\sync_enrolments	1650457808	1650458400	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
-67	enrol_manual	\\enrol_manual\\task\\send_expiry_notifications	1650457808	1650458400	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
-70	enrol_self	\\enrol_self\\task\\sync_enrolments	1650457808	1650458400	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
-71	enrol_self	\\enrol_self\\task\\send_expiry_notifications	1650457808	1650458400	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
-72	message_email	\\message_email\\task\\send_email_task	1650457809	1650484800	0	0	22	*	*	*	0	0	0	\N	\N	\N
-73	block_recent_activity	\\block_recent_activity\\task\\cleanup	1650457809	1650543180	0	13	14	*	*	*	0	0	0	\N	\N	\N
-74	block_rss_client	\\block_rss_client\\task\\refreshfeeds	1650457809	1650458100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-75	editor_atto	\\editor_atto\\task\\autosave_cleanup_task	1650457809	1650756060	0	21	1	*	*	0	0	0	0	\N	\N	\N
-79	tool_analytics	\\tool_analytics\\task\\train_models	1650457809	1650477600	0	0	20	*	*	*	0	0	0	\N	\N	\N
-80	tool_analytics	\\tool_analytics\\task\\predict_models	1650457809	1650538800	0	0	13	*	*	*	0	0	0	\N	\N	\N
-81	tool_cohortroles	\\tool_cohortroles\\task\\cohort_role_sync	1650457809	1650459900	0	5	*	*	*	*	0	0	0	\N	\N	\N
-82	tool_dataprivacy	\\tool_dataprivacy\\task\\expired_retention_period	1650457809	1650524400	0	0	9	*	*	*	0	0	0	\N	\N	\N
-83	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_contexts	1650457809	1650535200	0	0	12	*	*	*	0	0	0	\N	\N	\N
-84	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_requests	1650457809	1650535920	0	12	12	*	*	*	0	0	0	\N	\N	\N
-87	tool_messageinbound	\\tool_messageinbound\\task\\pickup_task	1650457809	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-88	tool_messageinbound	\\tool_messageinbound\\task\\cleanup_task	1650457809	1650498900	0	55	1	*	*	*	0	0	0	\N	\N	\N
-89	tool_monitor	\\tool_monitor\\task\\clean_events	1650457809	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-90	tool_monitor	\\tool_monitor\\task\\check_subscriptions	1650457809	1650532140	0	9	11	*	*	*	0	0	0	\N	\N	\N
-92	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_category_bin	1650457809	1650459600	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-93	assignfeedback_editpdf	\\assignfeedback_editpdf\\task\\convert_submissions	1650457809	1650458700	0	*/15	*	*	*	*	0	0	0	\N	\N	\N
-94	ltiservice_gradebookservices	\\ltiservice_gradebookservices\\task\\cleanup_task	1650457809	1650478560	0	16	20	*	*	*	0	0	0	\N	\N	\N
-95	quiz_statistics	\\quiz_statistics\\task\\quiz_statistics_cleanup	1650457809	1650460260	0	11	*/5	*	*	*	0	0	0	\N	\N	\N
-96	workshopallocation_scheduled	\\workshopallocation_scheduled\\task\\cron_task	1650457809	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-98	logstore_standard	\\logstore_standard\\task\\cleanup_task	1650457809	1650506940	0	9	4	*	*	*	0	0	0	\N	\N	\N
-103	mod_questionnaire	\\mod_questionnaire\\task\\cleanup	1650457809	1650492600	0	10	*/12	*	*	*	0	0	0	\N	\N	\N
-108	local_oauth	\\local_oauth\\task\\clean	1650457810	1650457860	0	*	*	*	*	*	0	0	0	\N	\N	\N
-112	tool_brickfield	\\tool_brickfield\\task\\bulk_process_courses	1650457810	1650458100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-113	tool_brickfield	\\tool_brickfield\\task\\bulk_process_caches	1650457810	1650458100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-114	tool_brickfield	\\tool_brickfield\\task\\checkid_validation	1650457810	1650524700	0	05	9	*	*	*	0	0	0	\N	\N	\N
-115	tool_brickfield	\\tool_brickfield\\task\\update_summarydata	1650457810	1650495000	0	50	0	*	*	*	0	0	0	\N	\N	\N
-3	moodle	\\core\\task\\delete_incomplete_users_task	1637234389	1650459900	0	5	*	*	*	*	0	0	0	\N	\N	\N
-4	moodle	\\core\\task\\backup_cleanup_task	1637234389	1650460200	0	10	*	*	*	*	0	0	0	\N	\N	\N
-24	moodle	\\core\\task\\check_for_updates_task	1637234390	1650537180	0	33	12	*	*	*	0	0	0	\N	\N	\N
-86	tool_langimport	\\tool_langimport\\task\\update_langpacks_task	1650457809	1650506580	0	3	4	*	*	*	0	0	0	\N	\N	\N
-91	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_course_bin	1650457809	1650459600	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-116	tool_brickfield	\\tool_brickfield\\task\\process_analysis_requests	1650457810	1650458100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-117	tool_odisseagtafsync	\\tool_odisseagtafsync\\task\\cron_task	1650457810	1650459600	0	0	*	*	*	*	0	0	0	\N	\N	\N
+3	moodle	\\core\\task\\delete_incomplete_users_task	1637234389	1663841100	0	5	*	*	*	*	0	0	0	\N	\N	\N
+4	moodle	\\core\\task\\backup_cleanup_task	1637234389	1663841400	0	10	*	*	*	*	0	0	0	\N	\N	\N
+14	moodle	\\core\\task\\grade_history_cleanup_task	1637234390	1663887540	0	*	0	*	*	*	0	0	0	\N	\N	\N
+21	moodle	\\core\\task\\question_preview_cleanup_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+24	moodle	\\core\\task\\check_for_updates_task	1637234390	1663846800	0	40	13	*	*	*	0	0	0	\N	\N	\N
+25	moodle	\\core\\task\\cache_cron_task	1637234390	1663843800	0	50	*	*	*	*	0	0	0	\N	\N	\N
+36	moodle	\\core\\task\\sync_plans_from_template_cohorts_task	1650457808	1663841580	0	13	*	*	*	*	0	0	0	\N	\N	\N
+110	moodle	\\core\\task\\h5p_clean_orphaned_records_task	1637234392	1663884840	0	14	0	*	*	*	0	0	0	\N	\N	\N
+111	moodle	\\core\\task\\antivirus_cleanup_task	1637234392	1663887360	0	56	0	*	*	*	0	0	0	\N	\N	\N
+103	mod_questionnaire	\\mod_questionnaire\\task\\cleanup	1650457809	1663842180	0	23	*/12	*	*	*	0	0	0	\N	\N	\N
+1	moodle	\\core\\task\\session_cleanup_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+99	mod_hvp	\\mod_hvp\\task\\look_for_updates	1663840833	1663922640	0	44	10	*	*	*	0	0	0	\N	\N	\N
+100	mod_hvp	\\mod_hvp\\task\\remove_tmpfiles	1663840833	1663877520	0	12	22	*	*	*	0	0	0	\N	\N	\N
+101	mod_hvp	\\mod_hvp\\task\\remove_old_log_entries	1663840833	1663884180	0	3	0	*	*	*	0	0	0	\N	\N	\N
+102	mod_hvp	\\mod_hvp\\task\\remove_old_auth_tokens	1663840833	1663842840	0	34	*	*	*	*	0	0	0	\N	\N	\N
+48	mod_quiz	\\mod_quiz\\task\\legacy_quiz_reports_cron	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+66	enrol_manual	\\enrol_manual\\task\\sync_enrolments	1663840833	1663841400	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
+67	enrol_manual	\\enrol_manual\\task\\send_expiry_notifications	1663840833	1663841400	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
+70	enrol_self	\\enrol_self\\task\\sync_enrolments	1663840833	1663841400	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
+71	enrol_self	\\enrol_self\\task\\send_expiry_notifications	1663840833	1663841400	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
+72	message_email	\\message_email\\task\\send_email_task	1663840833	1663876800	0	0	22	*	*	*	0	0	0	\N	\N	\N
+73	block_recent_activity	\\block_recent_activity\\task\\cleanup	1663840833	1663848780	0	13	14	*	*	*	0	0	0	\N	\N	\N
+74	block_rss_client	\\block_rss_client\\task\\refreshfeeds	1663840833	1663841100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+75	editor_atto	\\editor_atto\\task\\autosave_cleanup_task	1663840833	1664061660	0	21	1	*	*	0	0	0	0	\N	\N	\N
+79	tool_analytics	\\tool_analytics\\task\\train_models	1663840833	1663869600	0	0	20	*	*	*	0	0	0	\N	\N	\N
+80	tool_analytics	\\tool_analytics\\task\\predict_models	1663840833	1663844400	0	0	13	*	*	*	0	0	0	\N	\N	\N
+82	tool_dataprivacy	\\tool_dataprivacy\\task\\expired_retention_period	1663840833	1663916400	0	0	9	*	*	*	0	0	0	\N	\N	\N
+83	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_contexts	1663840833	1663927200	0	0	12	*	*	*	0	0	0	\N	\N	\N
+84	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_requests	1663840833	1663841520	0	12	12	*	*	*	0	0	0	\N	\N	\N
+86	tool_langimport	\\tool_langimport\\task\\update_langpacks_task	1663840833	1663898580	0	3	4	*	*	*	0	0	0	\N	\N	\N
+87	tool_messageinbound	\\tool_messageinbound\\task\\pickup_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+88	tool_messageinbound	\\tool_messageinbound\\task\\cleanup_task	1663840833	1663890900	0	55	1	*	*	*	0	0	0	\N	\N	\N
+89	tool_monitor	\\tool_monitor\\task\\clean_events	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+90	tool_monitor	\\tool_monitor\\task\\check_subscriptions	1663840833	1663924140	0	9	11	*	*	*	0	0	0	\N	\N	\N
+92	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_category_bin	1663840833	1663842600	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+93	assignfeedback_editpdf	\\assignfeedback_editpdf\\task\\convert_submissions	1663840833	1663841700	0	*/15	*	*	*	*	0	0	0	\N	\N	\N
+94	ltiservice_gradebookservices	\\ltiservice_gradebookservices\\task\\cleanup_task	1663840833	1663870560	0	16	20	*	*	*	0	0	0	\N	\N	\N
+95	quiz_statistics	\\quiz_statistics\\task\\quiz_statistics_cleanup	1663840833	1663852260	0	11	*/5	*	*	*	0	0	0	\N	\N	\N
+96	workshopallocation_scheduled	\\workshopallocation_scheduled\\task\\cron_task	1663840833	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+98	logstore_standard	\\logstore_standard\\task\\cleanup_task	1663840833	1663898940	0	9	4	*	*	*	0	0	0	\N	\N	\N
+108	local_oauth	\\local_oauth\\task\\clean	1663840834	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+112	tool_brickfield	\\tool_brickfield\\task\\bulk_process_courses	1663840834	1663841100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+113	tool_brickfield	\\tool_brickfield\\task\\bulk_process_caches	1663840834	1663841100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+114	tool_brickfield	\\tool_brickfield\\task\\checkid_validation	1663840834	1663916700	0	05	9	*	*	*	0	0	0	\N	\N	\N
+115	tool_brickfield	\\tool_brickfield\\task\\update_summarydata	1663840834	1663887000	0	50	0	*	*	*	0	0	0	\N	\N	\N
+5	moodle	\\core\\task\\tag_cron_task	1637234389	1663895160	0	6	3	*	*	*	0	0	0	\N	\N	\N
+29	moodle	\\core\\task\\file_temp_cleanup_task	1637234390	1663844100	0	55	*/6	*	*	*	0	0	0	\N	\N	\N
+118	mod_attendance	\\mod_attendance\\task\\auto_mark	0	1663841280	0	8	*	*	*	*	0	0	0	\N	\N	\N
+119	mod_attendance	\\mod_attendance\\task\\notify	0	1663889400	0	30	1	*	*	*	0	0	0	\N	\N	\N
+120	mod_attendance	\\mod_attendance\\task\\clear_temporary_passwords	0	1663887600	0	0	1	*	*	*	0	0	0	\N	\N	\N
+121	mod_journal	\\mod_journal\\task\\cron_task	1663840831	1663840860	0	*	*	*	*	*	0	0	0	\N	\N	\N
+2	moodle	\\core\\task\\delete_unconfirmed_users_task	1663840831	1663844400	0	0	*	*	*	*	0	0	0	\N	\N	\N
+81	tool_cohortroles	\\tool_cohortroles\\task\\cohort_role_sync	1663840833	1663841100	0	5	*	*	*	*	0	0	0	\N	\N	\N
+91	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_course_bin	1663840833	1663842600	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+116	tool_brickfield	\\tool_brickfield\\task\\process_analysis_requests	1663840834	1663841100	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+117	tool_odisseagtafsync	\\tool_odisseagtafsync\\task\\cron_task	1663840834	1663844400	0	0	*	*	*	*	0	0	0	\N	\N	\N
 \.
 
 
@@ -42645,6 +43455,94 @@ COPY public.m2upgrade_log (id, type, plugin, version, targetversion, info, detai
 2855	0	tool_moodlenet	2021051700	2021051701	Starting plugin upgrade	\N		0	1650457233
 2856	0	tool_moodlenet	2021051701	2021051701	Upgrade savepoint reached	\N		0	1650457233
 2857	0	tool_moodlenet	2021051701	2021051701	Plugin upgraded	\N		0	1650457233
+2858	0	core	2021051706.09	2021051707.08	Starting core upgrade	\N		0	1663670360
+2859	0	core	2021051706.12	2021051707.08	Upgrade savepoint reached	\N		0	1663670360
+2860	0	core	2021051707.05	2021051707.08	Upgrade savepoint reached	\N		0	1663670360
+2861	0	core	2021051707.08	2021051707.08	Upgrade savepoint reached	\N		0	1663670360
+2862	0	core	2021051707.08	2021051707.08	Core upgraded	\N		0	1663670360
+2863	0	qtype_essaywiris	2022031600	2022061500	Starting plugin upgrade	\N		0	1663670361
+2864	0	qtype_essaywiris	2022061500	2022061500	Upgrade savepoint reached	\N		0	1663670361
+2865	0	qtype_essaywiris	2022061500	2022061500	Plugin upgraded	\N		0	1663670361
+2866	0	qtype_matchwiris	2022031600	2022061500	Starting plugin upgrade	\N		0	1663670361
+2867	0	qtype_matchwiris	2022061500	2022061500	Upgrade savepoint reached	\N		0	1663670361
+2868	0	qtype_matchwiris	2022061500	2022061500	Plugin upgraded	\N		0	1663670361
+2869	0	qtype_multianswerwiris	2022031600	2022061500	Starting plugin upgrade	\N		0	1663670361
+2870	0	qtype_multianswerwiris	2022061500	2022061500	Upgrade savepoint reached	\N		0	1663670361
+2871	0	qtype_multianswerwiris	2022061500	2022061500	Plugin upgraded	\N		0	1663670361
+2872	0	qtype_multichoicewiris	2022031600	2022061500	Starting plugin upgrade	\N		0	1663670361
+2873	0	qtype_multichoicewiris	2022061500	2022061500	Upgrade savepoint reached	\N		0	1663670361
+2874	0	qtype_multichoicewiris	2022061500	2022061500	Plugin upgraded	\N		0	1663670361
+2875	0	qtype_shortanswerwiris	2022031600	2022061500	Starting plugin upgrade	\N		0	1663670361
+2876	0	qtype_shortanswerwiris	2022061500	2022061500	Upgrade savepoint reached	\N		0	1663670361
+2877	0	qtype_shortanswerwiris	2022061500	2022061500	Plugin upgraded	\N		0	1663670361
+2878	0	qtype_truefalsewiris	2022031600	2022061500	Starting plugin upgrade	\N		0	1663670361
+2879	0	qtype_truefalsewiris	2022061500	2022061500	Upgrade savepoint reached	\N		0	1663670361
+2880	0	qtype_truefalsewiris	2022061500	2022061500	Plugin upgraded	\N		0	1663670361
+2881	0	qtype_wq	2022031600	2022061500	Starting plugin upgrade	\N		0	1663670361
+2882	0	qtype_wq	2022061500	2022061500	Upgrade savepoint reached	\N		0	1663670361
+2883	0	qtype_wq	2022061500	2022061500	Plugin upgraded	\N		0	1663670361
+2884	0	mod_attendance	\N	2021082600	Starting plugin installation	\N		0	1663670361
+2885	0	mod_attendance	2021082600	2021082600	Upgrade savepoint reached	\N		0	1663670361
+2886	0	mod_attendance	2021082600	2021082600	Plugin installed	\N		0	1663670363
+2887	0	mod_geogebra	2022011600	2022060900	Starting plugin upgrade	\N		0	1663670363
+2888	0	mod_geogebra	2022060700	2022060900	Upgrade savepoint reached	\N		0	1663670364
+2889	0	mod_geogebra	2022060900	2022060900	Upgrade savepoint reached	\N		0	1663670364
+2890	0	mod_geogebra	2022060900	2022060900	Plugin upgraded	\N		0	1663670364
+2891	0	mod_journal	2020091100	2022041400	Starting plugin upgrade	\N		0	1663670364
+2892	0	mod_journal	2022041100	2022041400	Upgrade savepoint reached	\N		0	1663670364
+2893	0	mod_journal	2022041400	2022041400	Upgrade savepoint reached	\N		0	1663670364
+2894	0	mod_journal	2022041400	2022041400	Plugin upgraded	\N		0	1663670364
+2895	0	mod_questionnaire	2020111101	2021062300	Starting plugin upgrade	\N		0	1663670364
+2896	0	mod_questionnaire	2021062300	2021062300	Upgrade savepoint reached	\N		0	1663670364
+2897	0	mod_questionnaire	2021062300	2021062300	Plugin upgraded	\N		0	1663670364
+2898	0	block_completion_progress	2021070900	2022042000	Starting plugin upgrade	\N		0	1663670364
+2899	0	block_completion_progress	2022042000	2022042000	Upgrade savepoint reached	\N		0	1663670364
+2900	0	block_completion_progress	2022042000	2022042000	Plugin upgraded	\N		0	1663670364
+2901	0	filter_wiris	2021110900	2022062000	Starting plugin upgrade	\N		0	1663670364
+2902	0	filter_wiris	2022062000	2022062000	Upgrade savepoint reached	\N		0	1663670364
+2903	0	filter_wiris	2022062000	2022062000	Plugin upgraded	\N		0	1663670364
+2904	0	atto_wiris	2021110900	2022062000	Starting plugin upgrade	\N		0	1663670365
+2905	0	atto_wiris	2022062000	2022062000	Upgrade savepoint reached	\N		0	1663670365
+2906	0	atto_wiris	2022062000	2022062000	Plugin upgraded	\N		0	1663670365
+2907	0	core	2021051707.08	2021051710.01	Starting core upgrade	\N		2	1663840686
+2908	0	core	2021051710.01	2021051710.01	Upgrade savepoint reached	\N		2	1663840686
+2909	0	core	2021051710.01	2021051710.01	Core upgraded	\N		2	1663840687
+2910	0	qtype_wq	2022061500	2022090700	Starting plugin upgrade	\N		2	1663840687
+2911	0	qtype_wq	2022090700	2022090700	Upgrade savepoint reached	\N		2	1663840687
+2912	0	qtype_wq	2022090700	2022090700	Plugin upgraded	\N		2	1663840688
+2913	0	mod_assign	2021051700	2021051701	Starting plugin upgrade	\N		2	1663840688
+2914	0	mod_assign	2021051701	2021051701	Upgrade savepoint reached	\N		2	1663840688
+2915	0	mod_assign	2021051701	2021051701	Plugin upgraded	\N		2	1663840688
+2916	0	mod_attendance	2021082600	2021082609	Starting plugin upgrade	\N		2	1663840688
+2917	0	mod_attendance	2021082609	2021082609	Upgrade savepoint reached	\N		2	1663840688
+2918	0	mod_attendance	2021082609	2021082609	Plugin upgraded	\N		2	1663840688
+2919	0	mod_choicegroup	2021083100	2022090700	Starting plugin upgrade	\N		2	1663840688
+2920	0	mod_choicegroup	2022090700	2022090700	Upgrade savepoint reached	\N		2	1663840688
+2921	0	mod_choicegroup	2022090700	2022090700	Plugin upgraded	\N		2	1663840688
+2922	0	mod_hotpot	2020060544	2022091548	Starting plugin upgrade	\N		2	1663840688
+2923	0	mod_hotpot	2022091548	2022091548	Upgrade savepoint reached	\N		2	1663840688
+2924	0	mod_hotpot	2022091548	2022091548	Plugin upgraded	\N		2	1663840688
+2925	0	mod_journal	2022041400	2022091600	Starting plugin upgrade	\N		2	1663840688
+2926	0	mod_journal	2022091600	2022091600	Upgrade savepoint reached	\N		2	1663840688
+2927	0	mod_journal	2022091600	2022091600	Plugin upgraded	\N		2	1663840688
+2928	0	mod_questionnaire	2021062300	2021062301	Starting plugin upgrade	\N		2	1663840688
+2929	0	mod_questionnaire	2021062301	2021062301	Upgrade savepoint reached	\N		2	1663840688
+2930	0	mod_questionnaire	2021062301	2021062301	Plugin upgraded	\N		2	1663840688
+2931	0	auth_saml2	2022032200	2022083100	Starting plugin upgrade	\N		2	1663840688
+2932	0	auth_saml2	2022083100	2022083100	Upgrade savepoint reached	\N		2	1663840688
+2933	0	auth_saml2	2022083100	2022083100	Plugin upgraded	\N		2	1663840689
+2934	0	enrol_lti	2021051700	2021051701	Starting plugin upgrade	\N		2	1663840689
+2935	0	enrol_lti	2021051701	2021051701	Upgrade savepoint reached	\N		2	1663840689
+2936	0	enrol_lti	2021051701	2021051701	Plugin upgraded	\N		2	1663840689
+2937	0	filter_wiris	2022062000	2022070100	Starting plugin upgrade	\N		2	1663840689
+2938	0	filter_wiris	2022070100	2022070100	Upgrade savepoint reached	\N		2	1663840689
+2939	0	filter_wiris	2022070100	2022070100	Plugin upgraded	\N		2	1663840689
+2940	0	assignsubmission_snap	\N	2022080500	Starting plugin installation	\N		2	1663840689
+2941	0	assignsubmission_snap	2022080500	2022080500	Upgrade savepoint reached	\N		2	1663840689
+2942	0	assignsubmission_snap	2022080500	2022080500	Plugin installed	\N		2	1663840689
+2943	0	atto_wiris	2022062000	2022070100	Starting plugin upgrade	\N		2	1663840689
+2944	0	atto_wiris	2022070100	2022070100	Upgrade savepoint reached	\N		2	1663840689
+2945	0	atto_wiris	2022070100	2022070100	Plugin upgraded	\N		2	1663840689
 \.
 
 
@@ -42663,7 +43561,7 @@ COPY public.m2url (id, course, name, intro, introformat, externalurl, display, d
 COPY public.m2user (id, auth, confirmed, policyagreed, deleted, suspended, mnethostid, username, password, idnumber, firstname, lastname, email, emailstop, phone1, phone2, institution, department, address, city, country, lang, calendartype, theme, timezone, firstaccess, lastaccess, lastlogin, currentlogin, lastip, secret, picture, description, descriptionformat, mailformat, maildigest, maildisplay, autosubscribe, trackforums, timecreated, timemodified, trustbitmask, imagealt, lastnamephonetic, firstnamephonetic, middlename, alternatename, moodlenetprofile) FROM stdin;
 1	manual	1	0	0	0	1	guest	$2y$10$CFokzHIxm7HyxXvoUatsEOVB5bK/0xi5Vx/OZPrj7VgaUw5TjqvJy		Usuari convidat	 	root@localhost	0								ca	gregorian		99	0	0	0	0			0	Aquest usuari és un usuari especial que permet entrar a alguns cursos en mode només de lectura (read-only).	1	1	0	2	1	0	0	1603909020	0	\N	\N	\N	\N	\N	\N
 3	manual	1	0	0	0	1	xtecadmin	$2y$10$9fyNq/zdjWkdheNPsM/pHOu7LKAR6ERFLg9A.0YPd14m6vLRXS22C		Administrador	XTEC	xtecadmin@xtec.invalid	0							CT	ca	gregorian		99	1604422435	1604422766	0	1604422435	192.168.33.1		0		1	1	0	2	1	0	1603911452	1603911452	0						\N
-2	manual	1	0	0	0	1	admin	$2y$10$JbL6B67VOmmzjQyv/h9JpeJdsNoc2abrGW3TV/N3OoP68FBZU3G4.		Admin	Usuari	admin@xtec.invalid	0							CT	ca	gregorian		99	1603909129	1637234765	1637232083	1637234431	192.168.33.1		0		1	1	0	1	1	0	0	1603911485	0						\N
+2	manual	1	0	0	0	1	admin	$2y$10$JbL6B67VOmmzjQyv/h9JpeJdsNoc2abrGW3TV/N3OoP68FBZU3G4.		Admin	Usuari	admin@xtec.invalid	0							CT	ca	gregorian		99	1603909129	1663840789	1637234431	1663840595	192.168.33.1		0		1	1	0	1	1	0	0	1603911485	0						\N
 \.
 
 
@@ -42749,6 +43647,7 @@ COPY public.m2user_preferences (id, userid, name, value) FROM stdin;
 11	3	core_message_migrate_data	1
 12	3	tool_usertours_tour_completion_time_2	1604422442
 13	2	drawer-open-nav	true
+14	2	login_failed_count_since_success	0
 \.
 
 
@@ -43125,6 +44024,69 @@ SELECT pg_catalog.setval('public.m2assignsubmission_onlinetext_id_seq', 1, false
 
 
 --
+-- Name: m2assignsubmission_snap_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2assignsubmission_snap_id_seq', 1, false);
+
+
+--
+-- Name: m2attendance_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2attendance_id_seq', 1, false);
+
+
+--
+-- Name: m2attendance_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2attendance_log_id_seq', 1, false);
+
+
+--
+-- Name: m2attendance_rotate_passwords_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2attendance_rotate_passwords_id_seq', 1, false);
+
+
+--
+-- Name: m2attendance_sessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2attendance_sessions_id_seq', 1, false);
+
+
+--
+-- Name: m2attendance_statuses_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2attendance_statuses_id_seq', 4, true);
+
+
+--
+-- Name: m2attendance_tempusers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2attendance_tempusers_id_seq', 1, false);
+
+
+--
+-- Name: m2attendance_warning_done_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2attendance_warning_done_id_seq', 1, false);
+
+
+--
+-- Name: m2attendance_warning_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2attendance_warning_id_seq', 1, false);
+
+
+--
 -- Name: m2auth_oauth2_linked_login_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -43359,14 +44321,14 @@ SELECT pg_catalog.setval('public.m2cache_filters_id_seq', 1, false);
 -- Name: m2cache_flags_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2cache_flags_id_seq', 4, true);
+SELECT pg_catalog.setval('public.m2cache_flags_id_seq', 5, true);
 
 
 --
 -- Name: m2capabilities_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2capabilities_id_seq', 792, true);
+SELECT pg_catalog.setval('public.m2capabilities_id_seq', 805, true);
 
 
 --
@@ -43576,21 +44538,21 @@ SELECT pg_catalog.setval('public.m2competency_userevidencecomp_id_seq', 1, false
 -- Name: m2config_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_id_seq', 551, true);
+SELECT pg_catalog.setval('public.m2config_id_seq', 553, true);
 
 
 --
 -- Name: m2config_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_log_id_seq', 2034, true);
+SELECT pg_catalog.setval('public.m2config_log_id_seq', 2072, true);
 
 
 --
 -- Name: m2config_plugins_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_plugins_id_seq', 2398, true);
+SELECT pg_catalog.setval('public.m2config_plugins_id_seq', 2439, true);
 
 
 --
@@ -43898,21 +44860,21 @@ SELECT pg_catalog.setval('public.m2events_queue_id_seq', 1, false);
 -- Name: m2external_functions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2external_functions_id_seq', 642, true);
+SELECT pg_catalog.setval('public.m2external_functions_id_seq', 650, true);
 
 
 --
 -- Name: m2external_services_functions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2external_services_functions_id_seq', 1140, true);
+SELECT pg_catalog.setval('public.m2external_services_functions_id_seq', 1912, true);
 
 
 --
 -- Name: m2external_services_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2external_services_id_seq', 4, true);
+SELECT pg_catalog.setval('public.m2external_services_id_seq', 5, true);
 
 
 --
@@ -44514,7 +45476,7 @@ SELECT pg_catalog.setval('public.m2hvp_libraries_cachedassets_id_seq', 1, false)
 -- Name: m2hvp_libraries_hub_cache_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2hvp_libraries_hub_cache_id_seq', 92, true);
+SELECT pg_catalog.setval('public.m2hvp_libraries_hub_cache_id_seq', 143, true);
 
 
 --
@@ -44717,7 +45679,7 @@ SELECT pg_catalog.setval('public.m2log_queries_id_seq', 1, false);
 -- Name: m2logstore_standard_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2logstore_standard_log_id_seq', 1876, true);
+SELECT pg_catalog.setval('public.m2logstore_standard_log_id_seq', 1947, true);
 
 
 --
@@ -45004,7 +45966,7 @@ SELECT pg_catalog.setval('public.m2mnetservice_enrol_enrolments_id_seq', 1, fals
 -- Name: m2modules_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2modules_id_seq', 32, true);
+SELECT pg_catalog.setval('public.m2modules_id_seq', 33, true);
 
 
 --
@@ -45893,7 +46855,7 @@ SELECT pg_catalog.setval('public.m2role_assignments_id_seq', 1, false);
 -- Name: m2role_capabilities_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2role_capabilities_id_seq', 1697, true);
+SELECT pg_catalog.setval('public.m2role_capabilities_id_seq', 1728, true);
 
 
 --
@@ -46026,7 +46988,7 @@ SELECT pg_catalog.setval('public.m2search_simpledb_index_id_seq', 1, false);
 -- Name: m2sessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2sessions_id_seq', 20, true);
+SELECT pg_catalog.setval('public.m2sessions_id_seq', 22, true);
 
 
 --
@@ -46138,21 +47100,21 @@ SELECT pg_catalog.setval('public.m2tag_instance_id_seq', 1, false);
 -- Name: m2task_adhoc_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2task_adhoc_id_seq', 2, true);
+SELECT pg_catalog.setval('public.m2task_adhoc_id_seq', 3, true);
 
 
 --
 -- Name: m2task_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2task_log_id_seq', 159, true);
+SELECT pg_catalog.setval('public.m2task_log_id_seq', 228, true);
 
 
 --
 -- Name: m2task_scheduled_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2task_scheduled_id_seq', 117, true);
+SELECT pg_catalog.setval('public.m2task_scheduled_id_seq', 121, true);
 
 
 --
@@ -46376,7 +47338,7 @@ SELECT pg_catalog.setval('public.m2tool_usertours_tours_id_seq', 6, true);
 -- Name: m2upgrade_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2upgrade_log_id_seq', 2857, true);
+SELECT pg_catalog.setval('public.m2upgrade_log_id_seq', 2945, true);
 
 
 --
@@ -46453,7 +47415,7 @@ SELECT pg_catalog.setval('public.m2user_password_resets_id_seq', 1, false);
 -- Name: m2user_preferences_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2user_preferences_id_seq', 13, true);
+SELECT pg_catalog.setval('public.m2user_preferences_id_seq', 14, true);
 
 
 --
@@ -46795,6 +47757,14 @@ ALTER TABLE ONLY public.m2assign_plugin_config
 
 
 --
+-- Name: m2assignsubmission_snap m2assisnap_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2assignsubmission_snap
+    ADD CONSTRAINT m2assisnap_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2assignment_submissions m2assisubm_id3_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -46832,6 +47802,70 @@ ALTER TABLE ONLY public.m2assign_user_flags
 
 ALTER TABLE ONLY public.m2assign_user_mapping
     ADD CONSTRAINT m2assiusermapp_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2attendance m2atte_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance
+    ADD CONSTRAINT m2atte_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2attendance_log m2attelog_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_log
+    ADD CONSTRAINT m2attelog_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2attendance_rotate_passwords m2atterotapass_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_rotate_passwords
+    ADD CONSTRAINT m2atterotapass_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2attendance_sessions m2attesess_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_sessions
+    ADD CONSTRAINT m2attesess_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2attendance_statuses m2attestat_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_statuses
+    ADD CONSTRAINT m2attestat_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2attendance_tempusers m2attetemp_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_tempusers
+    ADD CONSTRAINT m2attetemp_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2attendance_warning m2attewarn_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_warning
+    ADD CONSTRAINT m2attewarn_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2attendance_warning_done m2attewarndone_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2attendance_warning_done
+    ADD CONSTRAINT m2attewarndone_id_pk PRIMARY KEY (id);
 
 
 --
@@ -51185,6 +52219,20 @@ CREATE INDEX m2assiplugconf_sub_ix ON public.m2assign_plugin_config USING btree 
 
 
 --
+-- Name: m2assisnap_ass_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2assisnap_ass_ix ON public.m2assignsubmission_snap USING btree (assignment);
+
+
+--
+-- Name: m2assisnap_sub_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2assisnap_sub_ix ON public.m2assignsubmission_snap USING btree (submission);
+
+
+--
 -- Name: m2assisubm_ass2_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -51294,6 +52342,111 @@ CREATE INDEX m2assiusermapp_ass_ix ON public.m2assign_user_mapping USING btree (
 --
 
 CREATE INDEX m2assiusermapp_use_ix ON public.m2assign_user_mapping USING btree (userid);
+
+
+--
+-- Name: m2atte_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2atte_cou_ix ON public.m2attendance USING btree (course);
+
+
+--
+-- Name: m2attelog_ses_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attelog_ses_ix ON public.m2attendance_log USING btree (sessionid);
+
+
+--
+-- Name: m2attelog_sta_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attelog_sta_ix ON public.m2attendance_log USING btree (statusid);
+
+
+--
+-- Name: m2attelog_stu_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attelog_stu_ix ON public.m2attendance_log USING btree (studentid);
+
+
+--
+-- Name: m2attesess_att_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attesess_att_ix ON public.m2attendance_sessions USING btree (attendanceid);
+
+
+--
+-- Name: m2attesess_cal_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attesess_cal_ix ON public.m2attendance_sessions USING btree (caleventid);
+
+
+--
+-- Name: m2attesess_gro_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attesess_gro_ix ON public.m2attendance_sessions USING btree (groupid);
+
+
+--
+-- Name: m2attesess_ses_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attesess_ses_ix ON public.m2attendance_sessions USING btree (sessdate);
+
+
+--
+-- Name: m2attestat_att_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attestat_att_ix ON public.m2attendance_statuses USING btree (attendanceid);
+
+
+--
+-- Name: m2attestat_del_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attestat_del_ix ON public.m2attendance_statuses USING btree (deleted);
+
+
+--
+-- Name: m2attestat_vis_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attestat_vis_ix ON public.m2attendance_statuses USING btree (visible);
+
+
+--
+-- Name: m2attetemp_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attetemp_cou_ix ON public.m2attendance_tempusers USING btree (courseid);
+
+
+--
+-- Name: m2attetemp_stu_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2attetemp_stu_uix ON public.m2attendance_tempusers USING btree (studentid);
+
+
+--
+-- Name: m2attewarn_idnwarwar_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2attewarn_idnwarwar_uix ON public.m2attendance_warning USING btree (idnumber, warningpercent, warnafter);
+
+
+--
+-- Name: m2attewarndone_notuse_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2attewarndone_notuse_ix ON public.m2attendance_warning_done USING btree (notifyid, userid);
 
 
 --
@@ -53453,10 +54606,24 @@ CREATE INDEX m2geog_cou_ix ON public.m2geogebra USING btree (course);
 
 
 --
+-- Name: m2geogatte_dat_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2geogatte_dat_ix ON public.m2geogebra_attempts USING btree (datestudent);
+
+
+--
 -- Name: m2geogatte_geo_ix; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX m2geogatte_geo_ix ON public.m2geogebra_attempts USING btree (geogebra);
+
+
+--
+-- Name: m2geogatte_geousefin_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2geogatte_geousefin_ix ON public.m2geogebra_attempts USING btree (geogebra, userid, finished);
 
 
 --
