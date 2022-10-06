@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = '画像フィールド';
+$string['fieldtypelabel'] = '画像';
 $string['pluginname'] = '画像';
-$string['privacy:metadata'] = '写真フィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['privacy:metadata'] = '画像フィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

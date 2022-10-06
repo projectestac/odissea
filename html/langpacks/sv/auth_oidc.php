@@ -26,7 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_oidcdescription'] = 'OpenID Connect-pluginmodulen tillhandahåller funktioner för enkel inloggning med konfigurerbara identitetsleverantörer.';
-$string['cfg_authendpoint_desc'] = 'URI:n för auktoriseringsslutpunkten från din identitetsleverantör att använda.';
+$string['cfg_authendpoint_desc'] = 'URI:n för auktoriseringsslutpunkten från din identitetsprovider som ska användas.<br/>
+Om webbplatsen ska konfigureras för att tillåta användare från andra klienter åtkomst kan en klientorganisationsspecifik auktoriseringsslutpunkt inte användas.';
 $string['cfg_authendpoint_key'] = 'Auktoriseringsslutpunkt';
 $string['cfg_autoappend_desc'] = 'Lägg automatiskt till den här strängen när du loggar in användare med autentiseringsmetoden "Resursägarlösenord". Detta är användbart när din identitetsleverantör kräver en gemensam domän, men inte vill kräva att användarna skriver in den när de loggar in. Om den fullständiga OpenID Connect-användaren till exempel är "james@example.com" och du anger "@example.com" här, behöver användaren bara ange "james" som användarnamn. OBS! Om det finns motstridiga användarnamn, dvs. en Moodle-användare med samma namn, används autentiseringspluginmodulens prioritet för att avgöra vilken användare som kommer att användas.';
 $string['cfg_autoappend_key'] = 'Addera automatiskt';
@@ -48,8 +49,9 @@ $string['cfg_err_invalidclientsecret'] = 'Ogiltig klienthemlighet';
 $string['cfg_err_invalidtokenendpoint'] = 'Ogiltig tokenslutpunkt';
 $string['cfg_field_mapping_desc'] = 'Användarprofildata kan mappas från Open ID Connect-identitetsleverantörer (IdP) till Moodle.<br/>
 <ul>
-<li>Grundläggande profilinformation är tillgänglig i ID-tokens från alla IdP:er.</li>
-<li>Om Azure AD används som IdP kan ytterligare profilinformation göras tillgänglig genom att installera och konfigurera pluginmodulen <a href="https://moodle.org/plugins/local_o365"> Microsoft 365-integration (local_o365)</a>.</li>
+<li>Grundläggande profildata är tillgängliga via ID-token från alla IdP.</li>
+<li>Om Azure AD används som IdP kan ytterligare profildata göras tillgängliga genom att installera och konfigurera pluginmodulen <a href="https://moodle.org/plugins/local_o365">Microsoft 365-integration (local_o365)</a>.</li>
+<li>Om SDS-profilsynkroniseringsfunktionen är aktiverad i pluginmodulen local_o365 kan vissa profilfält synkroniseras från SDS till Moodle.</li>
 </ul>';
 $string['cfg_forceredirect_desc'] = 'Om det här alternativet är aktiverat hoppas inloggningssidan över och omdirigerar till OpenID Connect-sidan. Kan kringgås med URL-parametern <code>?noredirect=1</code>';
 $string['cfg_forceredirect_key'] = 'Tvinga omdirigering';
@@ -89,7 +91,8 @@ $string['cfg_signoffintegration_desc'] = 'Om det här alternativet är aktiverat
 
 URL:en till Moodle-webbplatsen ({$a}) måste läggas till som en omdirigerings-URI i Azure-appen som skapats för Moodle Office 365-integrationen.';
 $string['cfg_signoffintegration_key'] = 'Enkel utloggning';
-$string['cfg_tokenendpoint_desc'] = 'URI:n för tokenslutpunkten från din identitetsprovider som ska användas.';
+$string['cfg_tokenendpoint_desc'] = 'URI:n för tokenslutpunkten från den identitetsleverantör som ska användas.<br/>
+Observera att om webbplatsen ska konfigureras för att tillåta användare från andra tenants, kan en klientspecifik tokenslutpunkt inte användas.';
 $string['cfg_tokenendpoint_key'] = 'Tokenslutpunkt';
 $string['cfg_tools'] = 'Verktyg';
 $string['cfg_userrestrictioncasesensitive_desc'] = 'Detta styr om alternativet "/i" i det reguljära uttrycket används i matchningen för användarbegränsningen.<br/>Om det här alternativet är aktiverat utförs alla kontroller av användarbegränsningar skiftlägeskänsligt. Observera att om detta är inaktiverat är mönstret inte skiftlägeskänsligt.';

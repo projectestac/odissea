@@ -97,7 +97,7 @@ $string['cannotsubscribe'] = 'Vous devez être un membre du groupe pour vous abo
 $string['cannottrack'] = 'Impossible de stopper le suivi des messages de ce forum';
 $string['cannotunsubscribe'] = 'Vous ne pouvez pas vous désabonner de ce forum';
 $string['cannotupdatepost'] = 'Vous ne pouvez pas modifier ce message';
-$string['cannotviewpostyet'] = 'Vous ne pouvez pas lire les questions des autres étudiants, car vous n\'avez pas encore écrit de message';
+$string['cannotviewpostyet'] = 'Vous ne pouvez pas lire les questions des autres étudiants, car vous n\'avez encore rien écrit';
 $string['cannotviewusersposts'] = 'Il n\'y a aucun message de cet utilisateur que vous puissiez consulter.';
 $string['cleanreadtime'] = 'Heure de nettoyage des messages lus';
 $string['clicktofavourite'] = 'Vous n\'avez pas marqué cette discussion comme favorite. Cliquer pour marquer.';
@@ -111,16 +111,16 @@ $string['closegrader'] = 'Fermer l\'interface d\'évaluation';
 $string['completiondetail:discussions'] = 'Commencer des discussions : {$a}';
 $string['completiondetail:posts'] = 'Écrire des messages de forum : {$a}';
 $string['completiondetail:replies'] = 'Écrire des réponses : {$a}';
-$string['completiondiscussions'] = 'Le participant doit créer des discussions :';
-$string['completiondiscussionsdesc'] = 'L\'étudiant doit créer au moins {$a} discussions';
+$string['completiondiscussions'] = 'L\'étudiant doit créer des discussions :';
+$string['completiondiscussionsdesc'] = 'L\'étudiant doit créer au moins {$a} discussion(s)';
 $string['completiondiscussionsgroup'] = 'Discussions requises';
 $string['completiondiscussionshelp'] = 'discussions requises pour terminer';
-$string['completionposts'] = 'Le participant doit écrire des messages ou des réponses :';
-$string['completionpostsdesc'] = 'L\'étudiant doit écrire au moins {$a} discussions ou réponses';
+$string['completionposts'] = 'L\'étudiant doit créer des discussions ou écrire des réponses :';
+$string['completionpostsdesc'] = 'L\'étudiant doit écrire au moins {$a} discussion(s) ou réponse(s)';
 $string['completionpostsgroup'] = 'Messages requis';
 $string['completionpostshelp'] = 'discussions ou réponses requises pour terminer';
-$string['completionreplies'] = 'Le participant doit écrire des réponses :';
-$string['completionrepliesdesc'] = 'L\'étudiant doit poster au moins {$a} réponses';
+$string['completionreplies'] = 'L\'étudiant doit poster des réponses :';
+$string['completionrepliesdesc'] = 'L\'étudiant doit poster au moins {$a} réponse(s)';
 $string['completionrepliesgroup'] = 'Réponses requises';
 $string['completionreplieshelp'] = 'réponses requises pour terminer';
 $string['configcleanreadtime'] = 'L\'heure à laquelle nettoyer les anciens messages de la table des messages lus.';
@@ -344,7 +344,7 @@ $string['forumtype_help'] = 'Il y a 5 types de forums :
 
 * Une seule discussion simple : un seul sujet de discussion sur lequel chacun peut s\'exprimer (ne peut pas être utilisé avec des groupes séparés).
 * Chaque personne commence une seule discussion : chaque étudiant ne peut entamer qu\'une seule discussion, à laquelle chacun peut répondre.
-* Forum questions/réponses : les étudiants doivent poster un message avant de pouvoir consulter et répondre aux questions et messages des autres participants.
+* Forum questions/réponses : les étudiants doivent poster un message avant de pouvoir consulter ceux des autres participants et y répondre.
 * Forum standard affiché comme un blog : un forum ouvert, où chacun peut entamer une nouvelle discussion à tout instant. Les sujets de discussion sont affichés sur une page, avec un lien « Discuter sur ce sujet » pour y répondre.
 * Forum standard pour utilisation générale : un forum ouvert, où chacun peut entamer une nouvelle discussion à tout instant.';
 $string['generalforum'] = 'Forum standard pour utilisation générale';
@@ -609,7 +609,7 @@ $string['privacy:metadata:forum_subscriptions:userid'] = 'L\'identifiant de l\'u
 $string['privacy:metadata:forum_track_prefs'] = 'Les informations sur les forums dans lesquels l\'utilisateur a choisi de suivre les messages consultés.';
 $string['privacy:metadata:forum_track_prefs:forumid'] = 'Le forum dans lequel le suivi des messages est activé.';
 $string['privacy:metadata:forum_track_prefs:userid'] = 'L\'identifiant de l\'utilisateur auquel la préférence de suivi des messages de ce forum est reliée.';
-$string['privacy:metadata:preference:autosubscribe'] = 'S\'il faut s\'abonner aux discussions lorsqu\'on répond à ses messages.';
+$string['privacy:metadata:preference:autosubscribe'] = 'S\'il faut s\'abonner aux discussions lorsqu\'on répond aux messages qui s\'y trouvent.';
 $string['privacy:metadata:preference:forum_discussionlistsortorder'] = 'L\'ordre de tri préféré pour la liste des discussions';
 $string['privacy:metadata:preference:maildigest'] = 'La préférence globale des récapitulatifs de messages';
 $string['privacy:metadata:preference:markasreadonnotification'] = 'S\'il faut marquer les messages comme lus quand on les reçoit par messagerie.';

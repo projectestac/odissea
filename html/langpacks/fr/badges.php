@@ -156,10 +156,10 @@ Il est important de ne pas modifier ce réglage une fois l\'émission de badges 
 $string['badgesdisabled'] = 'Les badges ne sont pas activés sur ce site.';
 $string['badgesearned'] = 'Nombre de badges obtenus : {$a}';
 $string['badgesettings'] = 'Réglages des badges';
-$string['badgestatus_0'] = 'Non disponible pour les utilisateurs';
-$string['badgestatus_1'] = 'Disponible pour les utilisateurs';
-$string['badgestatus_2'] = 'Non disponible pour les utilisateurs';
-$string['badgestatus_3'] = 'Disponible pour les utilisateurs';
+$string['badgestatus_0'] = 'Non disponible';
+$string['badgestatus_1'] = 'Disponible';
+$string['badgestatus_2'] = 'Non disponible (critère verrouillé)';
+$string['badgestatus_3'] = 'Disponible (critère verrouillé)';
 $string['badgestatus_4'] = 'Archivé';
 $string['badgestoearn'] = 'Nombre de badges disponibles : {$a}';
 $string['badgesview'] = 'Badges de cours';

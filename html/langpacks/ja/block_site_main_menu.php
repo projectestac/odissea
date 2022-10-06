@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'メインメニュー';
-$string['privacy:metadata'] = 'メインメニューブロックは他の場所で保存されたデータのみ表示します。';
-$string['site_main_menu:addinstance'] = '新しいメインメニューブロックを追加する';
+$string['pluginname'] = 'メインメニュ';
+$string['privacy:metadata'] = 'メインメニュブロックは他の場所で保存されたデータのみ表示します。';
+$string['site_main_menu:addinstance'] = '新しいメインメニュブロックを追加する';

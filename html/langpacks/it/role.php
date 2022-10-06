@@ -169,6 +169,7 @@ $string['contentbank:upload'] = 'Caricare contenuti nel deposito';
 $string['contentbank:useeditor'] = 'Creare o modificare contenuti con un editor di tipi di contenuti';
 $string['contentbank:viewunlistedcontent'] = 'Visualizzare contenuti non elencati nel deposito dei contenuti';
 $string['context'] = 'Contesto';
+$string['contextrolenotallowed'] = 'Assegnare il ruolo <b>{$a}</b> non è consentito in questo contesto.';
 $string['course:activityvisibility'] = 'Nascondere/visualizzare attività';
 $string['course:bulkmessaging'] = 'Inviare un messaggio a più persone';
 $string['course:changecategory'] = 'Modificare categoria del corso';

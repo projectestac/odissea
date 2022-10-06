@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badwords'] = 'shit,fucked,fucker,fuck,dickhead,dick,cockhead,cock,cunt,asshole,arsehole,prick,bitch,jism,whore,slut,wanker,wank,bastard,dildo,masturbate,orgasm,penis,nigger,pussy,vagina,اللعنة,الجنس,اللعين,زب,زبك,نيك,أهبل,الشرج,عاهرة,وقحة,وقح,العادة السرية,لقيط,العادة السرية,قضيب,كس,مهبل,زنجي';
 $string['filtername'] = 'الرقابة على الكلمات';
-$string['privacy:metadata'] = 'ملحق الرقابة على الكلمات لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إضافة الرقابة على الكلمات لا تخزن أي بيانات شخصية.';

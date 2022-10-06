@@ -161,10 +161,6 @@ $string['config_recording_refresh_period_description'] = 'ما هو تواتر �
 $string['config_recordingready_enabled'] = 'إرسال الإشعارات عند جهوزية التسجيل';
 $string['config_recordingready_enabled_description'] = 'تمكين الملحق من إرسال الإشعارات عندما يصير التسجيل جاهزاً. (هذا يصلح فقط عند تمكين النص البرمجي post_publish_recording_ready_callback في مخدم غرف  BBB)';
 $string['config_recordings'] = 'التهيئة لميزة "إظهار التسجيلات"';
-$string['config_recordings_deleted_default'] = 'تضمين التسجيلات من النشاطات المحذوفة مُمَكَّن إفتراضيًا';
-$string['config_recordings_deleted_default_description'] = 'عند تمكينه، سيضم جدول التسجيل تسجيلات عائدة إلى نشاطات محذوفة إن وجدت.';
-$string['config_recordings_deleted_editable'] = 'تضمين التسجيلات من النشاطات المحذوفة يمكن تحريره';
-$string['config_recordings_deleted_editable_description'] = 'تضمين التسجيلات من النشاطات المحذوفة إفتراضيًا يمكن تحريره عند إضافة المثيل أو تحريره.';
 $string['config_recordings_description'] = 'هذه الإعدادات متخصصة بالميزة';
 $string['config_recordings_general'] = 'إظهار إعدادات التسجيل';
 $string['config_recordings_general_description'] = 'تستعمل هذه الإعدادات فقط عند إظهار التسجيلات';
@@ -204,7 +200,7 @@ $string['config_voicebridge_editable'] = 'الجسر الصوتي للمؤتمر
 $string['config_voicebridge_editable_description'] = 'يمكن تعيين رقم الجسر الصوتي الثابت الخاص بالمؤتمر بشكل دائم إلى غرفة فيه. عند تعيينه، لا يمكن استعمال هذا الرقم مع أي غرفة أو مؤتمر آخر.';
 $string['config_waitformoderator'] = 'التهيئة لميزة "إنتظار المشرف"';
 $string['config_waitformoderator_cache_ttl'] = 'مدة استبقاء الخبء لميزة انتظار المشرف (بالثواني)';
-$string['config_waitformoderator_cache_ttl_description'] = 'لدعم عدد كبير من العملاء، يستعمل هذا الملحق الخبء. يحدد هذا العامل الوقت الذي سيتم فيه الاحتفاظ بالخبء قبل إرسال الطلب التالي إلى مخدم غرف اجتماعات BBB.';
+$string['config_waitformoderator_cache_ttl_description'] = 'لدعم عدد كبير من العملاء، يستعمل هذه الإضافة الخبء. يحدد هذا العامل الوقت الذي سيتم فيه الاحتفاظ بالخبء قبل إرسال الطلب التالي إلى مخدم غرف اجتماعات BBB.';
 $string['config_waitformoderator_default'] = 'إنتظار المشرف مُمَكَّن إفتراضيًا';
 $string['config_waitformoderator_default_description'] = 'ميزة انتظار المشرف مُمَكَّنة إفتراضيًا عند إضافة غرفة أو مؤتمر جديدين.';
 $string['config_waitformoderator_description'] = 'هذه الإعدادات متخصصة بالميزة';
@@ -218,6 +214,16 @@ $string['config_welcome_default'] = 'رسالة الترحيب الافتراض�
 $string['config_welcome_default_description'] = 'يستبدل الرسالة الافتراضية الموضوعة مسبقاً لمخدم BBB. يمكن للرسالة أن تتضمن الكلمات المفتاحية (%%CONFNAME%%، %%DIALNUM%%، %%CONFNUM%%) والتي سيتم استبدالها تلقائيًا، وكذلك وسوم html مثل <b>...</b> أو <i></i>';
 $string['config_welcome_editable'] = 'يمكن للمعلمين تعديل رسالة الترحيب الافتراضية';
 $string['config_welcome_editable_description'] = 'يمكن تحرير رسالة الترحيب عند إضافة المثيل أو تحديثه';
+$string['email_body_notification_meeting_by'] = 'من قِبَل';
+$string['email_body_notification_meeting_description'] = 'الوصف';
+$string['email_body_notification_meeting_details'] = 'التفاصيل';
+$string['email_body_notification_meeting_end_date'] = 'تاريخ الانتهاء';
+$string['email_body_notification_meeting_has_been'] = 'كان';
+$string['email_body_notification_meeting_start_date'] = 'تاريخ البدء';
+$string['email_body_notification_meeting_title'] = 'العنوان';
+$string['email_body_recording_ready_for'] = 'التسجيل لـ';
+$string['email_footer_sent_by'] = 'تم إرسال الإشعار التلقائي هذا بواسطة';
+$string['email_footer_sent_from'] = 'من المقرر الدراسي';
 $string['end_session_confirm'] = 'هل أنت متأكد من رغبتك في إنهاء الجلسة؟';
 $string['end_session_confirm_title'] = 'أحقًا تريد إنهاء الجلسة؟';
 $string['end_session_notification'] = 'لقد تم إنهاء الجلسة.';
@@ -305,6 +311,8 @@ $string['mod_form_field_notification_created_help'] = 'أرسل إشعاراً �
 $string['mod_form_field_notification_help'] = 'أرسل إشعاراً إلى كل المستخدمين المنضمين لإعلامهم بإضافة هذا النشاط أو تحديثه';
 $string['mod_form_field_notification_modified_help'] = 'أرسل إشعاراً إلى كل المستخدمين المنضمين لإعلامهم بأنه تم تحديث هذا النشاط';
 $string['mod_form_field_notification_msg_at'] = 'في';
+$string['mod_form_field_notification_msg_created'] = 'تمت إضافته';
+$string['mod_form_field_notification_msg_modified'] = 'تم تحديثه';
 $string['mod_form_field_openingtime'] = 'الانضمام مفتوح';
 $string['mod_form_field_participant_add'] = 'أضف دوراً خاصًاً';
 $string['mod_form_field_participant_bbb_role_moderator'] = 'مشرف';
@@ -320,7 +328,6 @@ $string['mod_form_field_participant_list_type_user'] = 'المستخدم';
 $string['mod_form_field_record'] = 'يمكن تسجيل الجلسة';
 $string['mod_form_field_recordallfromstart'] = 'سجِّل كل شيء من البداية';
 $string['mod_form_field_recordhidebutton'] = 'إخفاء زر التسجيل';
-$string['mod_form_field_recordings_deleted'] = 'تضمين التسجيلات من الأنشطة المحذوفة';
 $string['mod_form_field_recordings_html'] = 'اعرض الجدول بصيغة html';
 $string['mod_form_field_recordings_imported'] = 'إظهار الروابط المستوردة فقط';
 $string['mod_form_field_recordings_preview'] = 'إظهار استعراض التسجيل';
@@ -365,7 +372,7 @@ $string['privacy:metadata:bigbluebutton:fullname'] = 'الاسم الكامل ل
 $string['privacy:metadata:bigbluebutton:userid'] = 'مُعرَّف المستخدم الذي يقوم بالوصول إلى مخدم غرف  BBB';
 $string['privacy:metadata:bigbluebuttonbn'] = 'يخزن إعدادات الغرفة أو النشاط الذي يحدد الميزات والسلوك العام لجلسة غرف  BBB';
 $string['privacy:metadata:bigbluebuttonbn:participants'] = 'قائمة القواعد التي تحدد أدوار المستخدمين في الجلسة المباشرة. يمكن خزن مُعرَّف المستخدم بمثابة صلاحيات يمكن منحها للدور أو للمستخدم';
-$string['privacy:metadata:bigbluebuttonbn_logs'] = 'يخزن الأحداث الناتجة عن استعمال الملحق';
+$string['privacy:metadata:bigbluebuttonbn_logs'] = 'يخزن الأحداث الناتجة عن استعمال الإضافة';
 $string['privacy:metadata:bigbluebuttonbn_logs:log'] = 'نوع الحدث الذي أطلقه المستخدم';
 $string['privacy:metadata:bigbluebuttonbn_logs:meetingid'] = 'مُعرَّف الاجتماع الذي يصل إليه المستخدم';
 $string['privacy:metadata:bigbluebuttonbn_logs:meta'] = 'قد يتضمن معلومات إضافية عن الاجتماع أو التسجيل المتأثر بالحدث.';
@@ -379,6 +386,9 @@ $string['removedevents'] = 'الأحداث المحذوفة';
 $string['removedlogs'] = 'سجلات الوقوعات المخصصة المحذوفة';
 $string['removedrecordings'] = 'التسجيلات المحذوفة';
 $string['removedtags'] = 'الوسوم المحذوفة';
+$string['report_join_info'] = 'قد انضم إلى الغرفة {$a} من المرات';
+$string['report_play_recording_info'] = 'قد شغَّل التسجيل {$a} من المرات';
+$string['report_room_view'] = 'قد عاين صفحة الغرفة';
 $string['resetevents'] = 'حذف الأحداث';
 $string['resetlogs'] = 'حذف سجلات الوقوعات المخصصة';
 $string['resetlogs_help'] = 'سيؤدي حذف سجلات الوقوعات إلى فقدان المراجع إلى التسجيلات';

@@ -47,7 +47,7 @@ $string['comp_permissions_help'] = '<p>هنا يمكنك تحديد من يمك�
 
 <p>يمكنك إضافة تعبير منطقي لحساب الصلاحية النهائية إذا كنت تستعمل أكثر من شرط واحد.</p>
 
-<p>المزيد من المساعدة: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">توثيقات الملحق</a></p>';
+<p>المزيد من المساعدة: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">توثيقات الإضافة</a></p>';
 $string['conditionexpr'] = 'شرط';
 $string['conditionexpr_conditions'] = 'شرط';
 $string['conditionexpr_conditions_help'] = '<p>يمكنك الجمع ما بين الشروط والتعبيرات المنطقية</p>

@@ -94,7 +94,7 @@ Kies in het formulier waarmee je de nieuwe vraag maakt de vraag in de lijst "Han
 $string['dependitem'] = 'Hangt af van vraag';
 $string['dependvalue'] = 'Hangt af van waarde';
 $string['description'] = 'Beschrijving';
-$string['do_not_analyse_empty_submits'] = 'Analyseer geen lege inzendingen';
+$string['do_not_analyse_empty_submits'] = 'Lege inzendingen niet meenemen in analyse';
 $string['downloadresponseas'] = 'Download alle antwoorden als:';
 $string['drop_feedback'] = 'Verwijder uit deze cursus';
 $string['dropdown'] = 'Meerkeuzevraag - één antwoord toegelaten (rolmenu)';

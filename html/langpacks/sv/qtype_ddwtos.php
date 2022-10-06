@@ -29,6 +29,7 @@ $string['addmorechoiceblanks'] = 'Blankt för {no} fler svar';
 $string['answer'] = 'Svar';
 $string['blank'] = 'tom';
 $string['correctansweris'] = 'Det rätta svaret är: {$a}';
+$string['errorlimitedchoice'] = 'Alternativet [[{$a}]] har använts mer än en gång utan att vara inställt på "Obegränsat". Kontrollera den här frågan igen.';
 $string['infinite'] = 'Obegränsat';
 $string['pleaseputananswerineachbox'] = 'Vänligen ange ett svar i varje textruta.';
 $string['pluginname'] = 'Dra och släpp i texten';

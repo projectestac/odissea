@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['admin_settings_body'] = 'يرجة استعمال الملحق <a href="{$a}">صفحة التهيئة</a>';
+$string['admin_settings_body'] = 'يرجى استعمال الإضافة <a href="{$a}">صفحة التهيئة</a>';
 $string['admin_settings_header'] = 'صفحة التهيئة';
 $string['basiclti_in_new_window'] = 'لقد تم فتح نشاطك في نافذة جديدة';
 $string['description'] = 'الوصف';

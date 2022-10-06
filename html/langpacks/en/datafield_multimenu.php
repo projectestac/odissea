@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Multiple-selection menu field';
-$string['pluginname'] = 'Multimenu';
-$string['privacy:metadata'] = 'The Multiple-selection menu field component does not store any personal data, it uses tables defined in mod_data.';
+$string['fieldtypelabel'] = 'Multi-select list';
+$string['pluginname'] = 'Multi-select list';
+$string['privacy:metadata'] = 'The Multi-select list field component doesn\'t store any personal data, it uses tables defined in mod_data';

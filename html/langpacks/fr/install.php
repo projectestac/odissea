@@ -109,7 +109,7 @@ $string['invaliddbprefix'] = 'Préfixe non valide. Le préfixe ne doit comporter
 $string['langdownloaderror'] = 'La langue « {$a} » n\'a pas pu être téléchargée. La suite de l\'installation se déroulera en anglais. Vous pourrez télécharger et installer d\'autres langues à la fin de l\'installation';
 $string['langdownloadok'] = 'La langue « {$a} » a été installée correctement. La suite de l\'installation se déroulera dans cette langue';
 $string['memorylimit'] = 'Limite de mémoire';
-$string['memorylimiterror'] = 'La limite de mémoire de PHP est très basse. Vous risquez de rencontrer des problèmes ultérieurement.';
+$string['memorylimiterror'] = 'La limite de mémoire de PHP est très basse. Des problèmes pourraient survenir ultérieurement.';
 $string['memorylimithelp'] = '<p>La limite de mémoire de PHP sur votre serveur est actuellement de {$a}.</p>
 <p>Cette valeur trop basse risque de générer des problèmes de manque de mémoire pour Moodle, notamment si vous utilisez beaucoup de modules et/ou si vous avez un grand nombre d\'utilisateurs.</p>
 <p>Il est recommandé de configurer PHP avec une limite de mémoire aussi élevée que possible, par exemple 40 Mo. Vous pouvez obtenir cela de différentes façons :</p>

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'URL field';
+$string['fieldtypelabel'] = 'URL';
 $string['openlinkinnewwindow'] = 'Open link in new window';
 $string['pluginname'] = 'URL';
-$string['privacy:metadata'] = 'The URL field component does not store any personal data, it uses tables defined in mod_data.';
+$string['privacy:metadata'] = 'The URL field component doesn\'t store any personal data; it uses tables defined in mod_data.';

@@ -163,7 +163,7 @@ $string['computedfromlogs'] = 'Calculado a partir dos registos de atividade desd
 $string['condifmodeditdefaults'] = 'Os valores predefinidos são usados no formulário de configurações ao criar uma nova atividade ou recurso.';
 $string['confeditorhidebuttons'] = 'Selecione os botões do editor HTML que devem estar ocultos.';
 $string['configallcountrycodes'] = 'Lista dos países que podem ser selecionados em vários locais, como por exemplo, no perfil do utilizador. Se não for indicado qualquer valor, será usada a lista definida no pacote linguístico do inglês. É a lista da norma ISO 3166-1. Se pretender, pode indicar uma lista de códigos separados por vírgulas (Ex: \'GB,FR,ES\'). Se adicionar novos códigos que não existam na norma, estes terão que ser também adicionados no ficheiro \'countries.php\' do pacote linguístico usado no site.';
-$string['configallowassign'] = 'Permitir que os utilizadores com os papéis à esquerda (primeira coluna da tabela) atribuam a outros utilizadores os papéis em cima (primeira linha da tabela).';
+$string['configallowassign'] = 'Para cada papel na coluna da esquerda, selecione quais os papéis que podem atribuir a outras pessoas.';
 $string['configallowattachments'] = 'Se ativar esta opção, os e-mails enviados a partir do site podem ter anexos, tais como medalhas.';
 $string['configallowblockstodock'] = 'Se ativar esta opção e for permitido pelo tema selecionado, os utilizadores podem mover blocos para uma consola especial.';
 $string['configallowcategorythemes'] = 'Se ativar esta opção, será possível escolher um tema para uma categoria. Este tema será usado em todas as disciplinas da categoria e das respetivas subcategorias, a menos que tenham definido o seu próprio tema. <strong>Atenção</strong>: O uso de temas para as categorias pode prejudicar o desempenho.';
@@ -176,14 +176,14 @@ $string['configallowemojipickerincompatible'] = 'A configuração atual da sua b
 $string['configallowguestmymoodle'] = 'Se ativar esta opção, os visitantes podem aceder ao Painel do utilizador, caso contrário, os visitantes serão redirecionados para a Página inicial do site.';
 $string['configallowobjectembed'] = 'Como medida de segurança, o Moodle não permite na sua configuração base que os utilizadores normais possam inserir objetos multimédia (como conteúdos Flash) em textos utilizando tags EMBED e OBJECT no HTML (embora tal possa ser feito com segurança utilizando o filtro "mediaplugins"). Esta configuração deve ser ativada caso pretenda permitir que os utilizadores possam inserir este tipo de conteúdo.';
 $string['configallowoverride'] = 'Permitir que os utilizadores com os papéis à esquerda possam redefinir alguns dos papéis das colunas.';
-$string['configallowoverride2'] = 'Selecione os papéis que podem ser redefinidos por cada papel da coluna da esquerda.<br />Tenha em atenção que estas definições apenas se aplicam a utilizadores aos quais foi atribuída a permissão \'moodle/role:override\' ou a permissão \'moodle/role:safeoverride\'.';
-$string['configallowswitch'] = 'Selecione os papéis que um utilizador pode assumir, baseado nos papéis que já tenha. Além de uma entrada nesta tabela, o utilizador deve ter também a permissão \'moodle/role:switchroles\' para poder mudar.<br />Tenha em atenção que só é possível assumir os papéis que tenham a permissão \'moodle/course:view\' e que não tenham a permissão \'moodle/site:doanythin\'. Por esta razão, algumas das colunas desta tabela podem estar desativadas.';
+$string['configallowoverride2'] = 'Para cada papel na coluna da esquerda, selecione quais os papéis que podem ser redefinidos para eles.<br />Os utilizadores têm de ter a permissão \'moodle/role:override\' ou a permissão \'moodle/role:safeoverride\'.';
+$string['configallowswitch'] = 'Para cada papel na coluna da esquerda, selecione quais os papéis que podem assumir. Os utilizadores têm de ter a permissão \'moodle/role:switchroles\'.';
 $string['configallowthemechangeonurl'] = 'Se ativar esta opção, o tema pode ser mudado adicionando o elemento \'theme={themename}\' a qualquer URL.';
 $string['configallowuserblockhiding'] = 'Pretende permitir aos utilizadores ocultar/mostrar os blocos laterais em todo o site? Esta funcionalidade usa JavaScript e cookies para memorizar o estado de cada bloco, e apenas afeta o modo de visualização do utilizador.';
 $string['configallowusermailcharset'] = 'Se ativar esta opção, os utilizadores podem selecionar nas configurações do seu perfil um conjunto de caracteres para usar no e-mail.';
 $string['configallowuserswitchrolestheycantassign'] = 'Por predefinição, é necessário ter a permissão \'moodle/role:assign\' para os utilizadores poderem assumir outros papéis. Ativar esta opção, remove essa restrição, fazendo com que os papéis disponíveis na lista pendente "Assumir o papel de..." sejam determinados pelas configurações no separador "Permitir atribuição de papéis". Recomenda-se que as definições em "Permitir atribuição de papéis" não permitam aos utilizadores assumir um papel com mais permissões do que o seu papel atual.';
 $string['configallowuserthemes'] = 'Se ativar esta opção, os utilizadores poderão escolher os seus próprios temas. Os temas do utilizador prevalecem sobre os temas definidos para o site (mas não sobre os temas da disciplina).';
-$string['configallowview'] = 'Selecione os papéis que um utilizador poderá ver, poderá filtrar por, etc. com base nos papéis que já tem.';
+$string['configallowview'] = 'Para cada papel na coluna da esquerda, selecione quais os papéis que podem poderão ver, procurar e filtrar por.';
 $string['configallusersaresitestudents'] = 'Todos os utilizadores devem ser considerados alunos nas atividades da página principal? Se a resposta for "Sim", então qualquer utilizador autenticado poderá participar como aluno nessas atividades. Se a resposta for "Não", então apenas os utilizadores já inscritos em pelo menos uma disciplina poderão tomar parte nestas atividades. Apenas os administradores e professores designados explicitamente poderão participar nestas atividades como professores.';
 $string['configauthenticationplugins'] = 'Escolha os módulos de autenticação que pretende usar e ordene-os pela ordem que estes serão usados até encontrar um que autentique o utilizador com sucesso.';
 $string['configautolang'] = 'Deteção automática do idioma com base na configuração do navegador. Se esta opção estiver desativada será usado o idioma predefinido do site.';
@@ -206,14 +206,15 @@ $string['configcourseswithsummarieslimit'] = 'Número máximo de disciplinas num
 $string['configcronclionly'] = 'Executar o cron através do navegador web pode expor informação importante a utilizadores anónimos. Por isso, recomenda-se a execução do cron apenas a partir da linha de comandos ou a definição de uma senha do cron para acesso remoto.';
 $string['configcronremotepassword'] = 'Isto significa que o script cron.php só pode ser executado a partir de um navegador web se for indicada a senha usando a seguinte forma <pre>https://site.example.com/admin/cron.php?password=opensesame</pre>Nota: Se este campo ficar em branco não é necessário indicar a senha.';
 $string['configcurlcache'] = 'Time-to-live da cache do cURL (em segundos).';
-$string['configcustommenuitems'] = 'Aqui pode configurar um menu personalizado. Cada linha consiste num texto de menu, numa hiperligação de URL (opcional), num título de ajuda (opcional) e num código linguístico ou lista de códigos separados por vírgula (opcional, para exibir a linha apenas aos utilizadores do idioma especificado), separados pelo caráter \'|\'. As linhas que começam com um hífen vão aparecer como itens de menu no menu de nível superior anterior e ### resultará como um separador. Exemplo:
+$string['configcustommenuitems'] = 'Pode configurar um menu personalizado aqui. Cada linha consiste num texto de menu, numa hiperligação de URL (opcional), num título de ajuda (opcional) e num código linguístico ou lista de códigos separados por vírgula (opcional, para exibir a linha apenas aos utilizadores do idioma especificado), separados pelo caráter \'|\'. As linhas que começam com um hífen vão aparecer como itens de menu no menu de nível superior anterior e ### resultará como um separador. Exemplo:
 <pre>
 Disciplinas
 -Todas as disciplinas|/course/
 -Pesquisar disciplina|/course/search.php
 -###
--Desenvolvimento Moodle|https://moodle.org/development
-Moodle.com|http://moodle.com/
+-FAQ|https://example.org/faq
+-Perguntas mais frequentes|https://example.org/pmf||pt
+Mobile app|https://example.org/app|Descarregar a aplicação
 </pre>';
 $string['configcustomusermenuitems'] = 'Pode configurar os conteúdos do menu do utilizador (exceto a hiperligação de terminar sessão, que é automaticamente adicionada). Cada linha consiste em 1) um identificador de string no formato "langstringname, componentname" ou texto simples, 2) um URL, e 3) um ícone, seja um ícone pix (na pasta pix com a estrutura [subfoldername]/[iconname], por exemplo, i/publish) ou como um URL. Os elementos de cada linha são separados pelo caráter \'|\'. Podem ser usados separadores adicionando uma linha com um ou mais caracteres # onde desejado.';
 $string['configdbsessions'] = 'Se ativar esta opção, a base de dados será usada para guardar a informação sobre as sessões abertas. Tenha em atenção que alterando esta definição irá encerrar todas as sessões de todos os utilizadores (incluindo a sua). Se estiver a utilizar MySQL, certifique-se de que o parâmetro "max_allowed_packet" em my.cnf (ou my.ini) é 4M ou maior. Outros parâmetros podem ser configurados diretamente em config.php. Consulte \'config-dist.php\' para mais informações. Esta opção não estará disponível se especificar "session driver" no ficheiro config.php.';
@@ -438,7 +439,7 @@ $string['courselistshortnames_desc'] = 'Se ativar esta opção, o nome curto das
 $string['coursemgmt'] = 'Gerir disciplinas e categorias';
 $string['courseoverview'] = 'Visão geral da disciplina';
 $string['courserequestnotify'] = 'Notificação de pedido de disciplina';
-$string['courserequestnotifyemail'] = 'Utilizador {$a->user} pediu uma nova disciplina em {$a->link}';
+$string['courserequestnotifyemail'] = '{$a->user} pediu uma nova disciplina em <a href="{$a->link}">{$a->link}</a>';
 $string['courserequests'] = 'Disciplinas pedidas';
 $string['courserequestspending'] = 'Disciplinas pedidas pendentes';
 $string['courses'] = 'Disciplinas';
@@ -1513,6 +1514,9 @@ $string['warningcurrentsetting'] = 'Valor atual inválido: {$a}';
 $string['warningiconvbuggy'] = 'A sua versão da biblioteca iconv não suporta o modificador //IGNORE. Deverá instalar a extensão mbstring que pode ser usada como substituto para limpar texto com caracteres UTF-8 não válidos.';
 $string['webproxy'] = 'Proxy web';
 $string['webproxyinfo'] = 'Preencha as opções seguintes se o servidor Moodle não tiver acesso direto à Internet. O acesso à Internet é necessário para descarregar os dados do ambiente, pacotes linguísticos, fusos horários, etc.<br /><strong>É recomendada a instalação da extensão cURL do PHP</strong>.';
+$string['xmlrpcmaharaenabled'] = 'Foi detetado que o ePortefólio Mahara está ativado no seu site. Esta funcionalidade depende da extensão PHP XML-RPC que já não é mantida pelo PHP.';
+$string['xmlrpcmnetenabled'] = 'Foi detetado que a Rede Moodle está ativada no seu site. Esta funcionalidade depende da extensão PHP XML-RPC que já não é mantida pelo PHP.';
 $string['xmlrpcrecommended'] = 'A extensão XMLRPC é útil para web services e redes Moodle';
+$string['xmlrpcwebserviceenabled'] = 'Foi detetado que o protocolo XML-RPC dos Web Service está ativado no seu site. Esta funcionalidade depende da extensão PHP XML-RPC que já não é mantida pelo PHP.';
 $string['yuicomboloading'] = 'Optimizar carregamento de bibliotecas YUI';
 $string['ziprequired'] = 'É obrigatória a instalação da extensão Zip do PHP. Os ficheiros binários info-ZIP e as bibliotecas PclZip deixaram de ser utilizados pelo Moodle.';

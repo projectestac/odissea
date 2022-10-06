@@ -292,7 +292,7 @@ $string['commentscount'] = 'Iruzkinak: ({$a})';
 $string['commentsnotenabled'] = 'Iruzkinak funtzioa ez dago gaituta';
 $string['commentsrequirelogin'] = 'Saioa hasi behar duzu iruzkinak ikusi ahal izateko.';
 $string['comparelanguage'] = 'Oraingo hizkuntza alderatu eta editatu';
-$string['complete'] = 'Osoa';
+$string['complete'] = 'Osatuta';
 $string['completed'] = 'Osatuta';
 $string['completereport'] = 'Txosten osoa';
 $string['configuration'] = 'Ezarpenak';
@@ -2033,7 +2033,7 @@ $string['suspendedusers'] = 'Kontua etenda duten erabiltzaileak';
 $string['switchdevicedefault'] = 'Aldatu azal estandarrera';
 $string['switchdevicerecommended'] = 'Aldatu zure gailurako gomendatzen den azalera';
 $string['switchrolereturn'] = 'Itzuli nire ohiko rolera';
-$string['switchroleto'] = 'Aldatu rola honetara...';
+$string['switchroleto'] = 'Aldatu rola...';
 $string['switchroleto_help'] = 'Aukeratu rol bat pertsona batek rol hori duenean ikastaroa nola ikusten duen jakiteko.
 
 Kontuan izan ikuspegi hau ez dela perfektua (<a href="https://docs.moodle.org/en/Switch_roles">Ikusi xehetasunak eta alternatibak</a>)';

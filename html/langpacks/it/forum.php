@@ -740,11 +740,11 @@ $string['trackingoff'] = 'Disabilitato';
 $string['trackingon'] = 'Forzato';
 $string['trackingoptional'] = 'A scelta';
 $string['trackingtype'] = 'Tipo di evidenziazione messaggi';
-$string['trackingtype_help'] = 'L\'evidenziazione dei messaggi non letti facilita l\'individuazione degli interventi e delle discussioni non lette.
+$string['trackingtype_help'] = 'L’evidenziamento dei messaggi non letti facilita l\'individuazione degli interventi e delle discussioni non lette.
 
-Impostando l\'evidenziazione opzionale, i partecipanti potranno attivarlo tramite il link nel blocco amministrazione. (L\'evidenziazione deve essere attivo anche nelle preferenze forum dell\'utente).
+Impostando l’evidenziamento come opzionale, i partecipanti potranno attivarlo tramite il link nel blocco amministrazione. (L’evidenziamento deve essere attivo anche nelle preferenze forum dell\'utente).
 
-Nel caso in cui l\'amministratore del sito abbia impostato l\'evidenziazione obbligatorio, sarà disponibile una terza opzione, \'Forzato\'. In questo caso l\'evidenziazione sarà sempre attivo indipendentemente dalle preferenze dell\'utente.';
+Nel caso in cui l\'amministratore del sito abbia impostato l’evidenziamento obbligatorio, sarà disponibile una terza opzione, \'Forzato\'. In questo caso l’evidenziamento sarà sempre attivo indipendentemente dalle preferenze dell\'utente.';
 $string['trackreadposts_header'] = 'Evidenziazione messaggi forum';
 $string['unlockdiscussion'] = 'Sblocca la discussione';
 $string['unpindiscussion'] = 'Rimuovi la discussione dall\'evidenza';

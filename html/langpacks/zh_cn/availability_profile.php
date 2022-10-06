@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['conditiontitle'] = '用户个人资料字段';
-$string['description'] = '通过学生个人资料字段情况来控制是否可访问。';
+$string['description'] = '根据学生个人资料中的字段控制访问。';
 $string['error_selectfield'] = '您必须选择一个个人资料字段';
 $string['error_setvalue'] = '你必须输入数值';
 $string['label_operator'] = '比较方法';

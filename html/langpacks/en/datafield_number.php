@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Number field';
+$string['fieldtypelabel'] = 'Number';
 $string['pluginname'] = 'Number';
-$string['privacy:metadata'] = 'The Number field component does not store any personal data, it uses tables defined in mod_data.';
+$string['privacy:metadata'] = 'The Number field component doesn\'t store any personal data; it uses tables defined in mod_data.';

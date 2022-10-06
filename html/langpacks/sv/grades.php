@@ -51,53 +51,18 @@ $string['aggregateoutcomes'] = 'Ta med resultaten i aggregeringen.';
 $string['aggregateoutcomes_help'] = 'Om aktiverat inkluderas resultat i aggregeringen. Detta kan resultera i en oväntad kategorisumma.';
 $string['aggregatesonly'] = 'Byt till <em>Endast aggregeringar</em>';
 $string['aggregatesubcatsupgradedgrades'] = 'OBS! Aggregeringsinställningen "Aggregera inklusive underkategorier" har tagits bort som en del av en webbplatsuppgraderingen. Eftersom "Aggregera inklusive underkategorier" tidigare användes i den här kursen rekommenderas du att granska denna ändring i betygsboken.';
-$string['aggregatesum'] = 'Summan av alla betyg';
+$string['aggregatesum'] = 'Naturlig';
 $string['aggregateweightedmean'] = 'Viktat medelbetyg';
 $string['aggregateweightedmean2'] = 'Enkelt vägt medelbetyg';
 $string['aggregation'] = 'Aggregering';
-$string['aggregation_help'] = '<p>Den här menyn gör det möjligt för dig att välja vilken strategi för aggregering som ska användas för att beräkna
-    varje students övergripande betyg för den här kategorin. De olika alternativen förklarar vi här nedan:</p>
-<p>Betygen omvandlas först till värden i procent (i intervall från 0 till 1, detta kallas normalisation), sedan
-    aggregeras de med hjälp av en av funktionerna här nedan och slutligen omvandlas de i förhållande till intervallet
-    för objektet tillhörande den associerade kategorin (mellan <em>minimibetyget</em> och <em>maxbetyget</em>).</p>
-<p><strong>Viktigt!</strong><br /> Ett tomt fält för betyg innebär bara att det saknas en post i betygsboken.
-    Detta kan betyda lite olika saker. Det kan t.ex. vara så att en student ännu inte har skickat in en viss uppgift;
-    det kan röra sig om en inskickad uppgift som ännu inte har blivit betygssatt av läraren eller ett betyg som har
-    tagits bort manuellt av den som administrerar betygsboken. Du bör alltså iaktta viss försiktighet när du tolkar
-    vad dessa \'tomma betyg\' egentligen innebär. </p>
-<dl id="grade-aggregation-help">
-    <dt>Medelbetyg</dt>
-    <dd>Summan av alla betyg dividerat med det totala antalet betyg.</dd>
-    <dd class="example">A1 70/100, A2 20/80, A3 10/10, kategori max 100:<br />
-        <code>(0.7 + 0.25 + 1.0)/3 = 0.65 &#10132; 65/100</code></dd>
-    <dt>Medianvärde för betyg</dt>
-    <dd>Det mittersta betyget (eller medelvärdet av de två mittersta betygen) när betygen har arrangerats efter storlek.
-        Fördelen med detta i förhållande till medelvärdet är att det inte påverkas av undantagsvärden (betyg som ligger
-        extremt långt från medelvärdet).</dd>
-    <dd class="example">A1 70/100, A2 20/80, A3 10/10, kategori max 100:<br />
-        <code>0.7 + 0.25 + 1.0 --> 0.25 &#10132; 25/100</code></dd>
-    <dt>Lägsta betyg</dt>
-    <dd>Resultatet är det lägsta betyget efter normalisering. Det används vanligen i kombination med <em>Aggregera bara
-            icke-tomma betyg</em>.</dd>
-    <dd class="example">A1 70/100, A2 20/80, A3 10/10, kategori max 100:<br />
-        <code>min(0.7 + 0.25 + 1.0) = 0.25 &#10132; 25/100</code></dd>
-    <dt>Högsta betyg</dt>
-    <dd>Resultatet är det högsta betyget efter normalisering.</dd>
-    <dd class="example">A1 70/100, A2 20/80, A3 10/10, category max 100:<br />
-        <code>max(0.7 + 0.25 + 1.0) = 1.0 &#10132; 100/100</code></dd>
-    <dt>"Mode" för betyg</dt>
-    <dd>"Mode" är det betyg som är det vanligaste. Det används mer ofta för icke-numeriska betyg. Fördelen jämfört med
-        medelvärdet är att det inte påverkas av undantagsvärden. (betyg som ligger extremt långt från medelvärdet).
-        Detta förlorar dock sin mening så fort det finns mer än ett betyg som är det vanligaste (det är bara ett som
-        används), eller när alla betyg skiljer sig från varandra.</dd>
-    <dd class="example">A1 70/100, A2 35/50, A3 20/80, A4 10/10, A5 7/10 kategori max 100:<br />
-        <code>mode(0.7; 0.7; 0.25; 1.0; 0.7) = 0.7 &#10132; 70/100</code></dd>
-    <dt>Summan av betygen</dt>
-    <dd>Summan av alla betygsvärden. Ingen hänsyn tas till betyg i skalor. Detta är den enda typen som inte omvandlar
-        betygen till procentvärden internt (normalisering). <em>Maxbetyget</em> för ett associerat betygsobjekt i en kategori
-        beräknas automatiskt som en summa av max från alla aggregerade betygsobjekt.</dd>
-    <dd class="example">A1 70/100, A2 20/80, A3 10/10:<br /> <code>(70 + 20 + 10) / (100 + 80 + 10) = 100/190</code></dd>
-</dl>';
+$string['aggregation_help'] = 'Aggregeringen avgör hur resultat i en kategori kombineras, såsom:
+
+* Medelvärde av betyg - Summan av alla betyg dividerat med det totala antalet betyg
+* Medianvärdet för betyg - Det mittersta betyget när betygen ordnats i storleksordning
+* Lägsta betyg
+* Högsta betyg
+* Typ av betyg - Det betyg som förekommer oftast
+* Naturlig - Summan av alla betygsvärden skalade efter vikt';
 $string['aggregationcoef'] = 'Aggregeringskoefficient';
 $string['aggregationcoefextra'] = 'Extra tillägg';
 $string['aggregationcoefextra_help'] = 'Om aggregeringen är \'Summan av alla betyg\' eller \'Enkelt vägt medelvärde\' och checkboxen för extra tilläggär förkryssad läggs inte betygspostens högsta betyg till kategorins högsta betyg. Detta kommer att resultera i möjligheten att uppnå högsta betyg i kategorin utan att ha högsta betyg i alla betygsposter. Om webbplatsadministratören har aktiverat resultat över max kan det finnas resultat över det högsta.
@@ -535,7 +500,7 @@ $string['modgrade'] = 'Betyg';
 $string['modgrade_help'] = 'Välj vilken typ av bedömning som ska användas för den här aktiviteten. Om "skala" väljs kan du välja skalan i nedrullningsmenyn. Om du använder poängbedömning kan du ange det maximala betyget som är möjligt att erhålla i den här aktiviteten.';
 $string['modgradecantchangegradetype'] = 'Du kan inte ändra betygstypen eftersom det redan finns utdelade betyg av nuvarande typ.';
 $string['modgradecantchangegradetypemsg'] = 'Vissa betyg har redan tilldelats, så betygstypen kan inte ändras. Om du vill ändra högsta betyg måste du först välja om du vill räkna om befintliga betyg eller inte.';
-$string['modgradecantchangegradetyporscalemsg'] = 'Vissa betyg har redan delats ut och därför kan betygstypen och skalan kan inte ändras.';
+$string['modgradecantchangegradetyporscalemsg'] = 'Vissa betyg har redan delats ut och därför kan betygstypen och skalan inte ändras.';
 $string['modgradecantchangeratingmaxgrade'] = 'Du kan inte ändra det maxbetygen när det redan finns betyg för en aktivitet med betyg.';
 $string['modgradecantchangescale'] = 'Du kan inte ändra skalan eftersom det redan finns resultat för det här objektet.';
 $string['modgradecategorycantchangegradetypemsg'] = 'Den här kategorin har betygsobjekt som är åsidosatta. Därför har vissa betyg redan tilldelats vilket innebär att betygstypen kan inte ändras. Om du vill ändra högsta betyg måste du först välja om du vill räkna om befintliga betyg eller inte.';
@@ -626,6 +591,7 @@ $string['outcomescoursecustom'] = 'Använder anpassad (ta inte bort)';
 $string['outcomescoursenotused'] = 'Använder ej standard';
 $string['outcomescourseused'] = 'Använder standard (ta inte bort)';
 $string['outcomescustom'] = 'Anpassade resultat';
+$string['outcomesdisabled'] = 'Resultat är inaktiverat';
 $string['outcomeshortname'] = 'Kortnamn';
 $string['outcomesstandard'] = 'Standardresultat';
 $string['outcomesstandardavailable'] = 'Tillgängliga standarresultat';

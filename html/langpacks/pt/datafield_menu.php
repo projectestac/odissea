@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo menu';
-$string['pluginname'] = 'Menu';
-$string['privacy:metadata'] = 'O componente do campo Menu não armazena quaisquer dados pessoais, usa tabelas definidas em mod_data.';
+$string['fieldtypelabel'] = 'Lista pendente';
+$string['pluginname'] = 'Lista pendente';
+$string['privacy:metadata'] = 'O componente do campo Lista pendente não armazena quaisquer dados pessoais. Usa tabelas definidas em mod_data.';

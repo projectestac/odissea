@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Name von Trainer/n';
+$string['pluginname'] = 'Name von Trainer/in';
 $string['privacy:metadata'] = 'Das Name-von-Trainer/in-Plugin speichert keinerlei personenbezogene Daten.';
 $string['teacher'] = 'Trainer/in';
 $string['teacher_help'] = 'Dies ist der Trainername, der angezeigt wird.';

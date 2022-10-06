@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activitydate:submissionsdue'] = 'Data limite';
-$string['activitydate:submissionsopen'] = 'Apre';
-$string['activitydate:submissionsopened'] = 'Aperto';
+$string['activitydate:submissionsdue'] = 'Data limite:';
+$string['activitydate:submissionsopen'] = 'Apre:';
+$string['activitydate:submissionsopened'] = 'Aperto:';
 $string['activityoverview'] = 'Ci sono compiti che richiedono la tua attenzione';
 $string['addattempt'] = 'Consenti tentativo ulteriore';
 $string['addnewattempt'] = 'Aggiungi tentativo';
@@ -130,7 +130,7 @@ $string['collapsegradepanel'] = 'Click per ridurre il pannello di revisione';
 $string['collapsereviewpanel'] = 'Riduci il pannello di revisione';
 $string['comment'] = 'Commento';
 $string['completiondetail:submit'] = 'Consegnare';
-$string['completionsubmit'] = 'Lo studente deve consegnare per completare l\'attività';
+$string['completionsubmit'] = 'Lo studente deve consegnare';
 $string['configshowrecentsubmissions'] = 'Consente a tutti di visualizzare la notifica delle consegne nei report dell\'attività recente.';
 $string['confirmbatchgradingoperation'] = 'Sei sicuro di eseguire {$a->operation} per {$a->count} studenti?';
 $string['confirmsubmission'] = 'Sei sicuro di voler consegnare il tuo lavoro per farlo valutare? La consegna non potrà più essere modificata.';

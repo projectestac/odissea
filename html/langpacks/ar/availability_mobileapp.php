@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['privacy:metadata'] = 'إن ملحق التقييد حسب وصول تطبيق الجوال لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة التقييد حسب وصول تطبيق الجوال لا تخزن أيّ بيانات شخصية.';

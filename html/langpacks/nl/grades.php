@@ -611,6 +611,7 @@ $string['outcomescoursecustom'] = 'Eigen gebruikt (niet verwijderen)';
 $string['outcomescoursenotused'] = 'Standaard niet gebruikt';
 $string['outcomescourseused'] = 'Standaard gebruikt (niet verwijderen)';
 $string['outcomescustom'] = 'Eigen resultaten';
+$string['outcomesdisabled'] = 'Competenties zijn niet ingeschakeld';
 $string['outcomeshortname'] = 'Korte naam';
 $string['outcomesstandard'] = 'Standaardresultaten';
 $string['outcomesstandardavailable'] = 'Beschikbare standaardresultaten';

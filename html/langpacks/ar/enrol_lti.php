@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowframeembedding'] = 'ملاحظة: من الموصى به تمكين الإعداد \'السماح بتضمين الإطار\' في إعدادات الإشراف على الموقع، ليتم عرض الأدوات ضمن إطار بدلاً من نافذة جديدة.';
-$string['authltimustbeenabled'] = 'ملاحظة: هذا الملحق يتطلب تمكين ملحق مصادقة LTI أيضاً.';
+$string['authltimustbeenabled'] = 'ملاحظة: هذه الإضافة تتطلب تمكين إضافة مصادقة LTI أيضاً.';
 $string['cartridgeurl'] = 'رابط الخرطوش';
 $string['couldnotestablishproxy'] = 'تعذر تأسيس الوكيل مع المستهلك.';
 $string['enrolenddate'] = 'تاريخ الانتهاء';
 $string['enrolenddate_help'] = 'عند تمكينه، سيقتصر وصول المستخدمين إلى ذلك التاريخ.';
 $string['enrolenddateerror'] = 'تاريخ انتهاء الانضمام لا يمكن أن يكون سابقاً لتاريخ بدئه';
-$string['enrolisdisabled'] = 'ملحق \'أنشر بمثابة أداة LTI\' معطل.';
+$string['enrolisdisabled'] = 'إضافة \'أنشر بمثابة أداة LTI\' معطل.';
 $string['enrolmentfinished'] = 'انتهى الانضمام.';
 $string['enrolmentnotstarted'] = 'لم يبدأ الانضمام بعد.';
 $string['enrolperiod'] = 'فترة الانضمام';

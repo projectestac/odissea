@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'معرض الصور';
 $string['pluginname'] = 'معرض الصور';
-$string['privacy:metadata'] = 'إن ملحق معرض الصور لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة معرض الصور لا تخزن أي بيانات شخصية.';

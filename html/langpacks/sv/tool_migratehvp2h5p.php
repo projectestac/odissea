@@ -50,7 +50,7 @@ $string['migrate_gradesoverridden_notdelete'] = 'Den ursprungliga mod_hvp "{$a->
   Den ursprungliga aktiviteten har dolts istället för att ha tagits bort.';
 $string['migrate_success'] = 'Hvp-aktivitet med id {$a} migrerades';
 $string['nohvpactivities'] = 'Det finns inga <code>mod_hvp</code>-aktiviteter att migrera till <code>mod_h5pactivity</code>-aktiviteten';
-$string['pluginname'] = 'Migrera <code>mod_hvp</code> till <code>mod_h5pactivity</code>';
+$string['pluginname'] = 'Migrera mod_hvp till mod_h5pactivity';
 $string['privacy:metadata'] = 'Pluginmodulen Migrera <code>mod_hvp</code> till <code>mod_h5pactivity</code> lagrar ingen personlig information.';
 $string['savedstate'] = 'Sparat tillstånd';
 $string['selecthvpactivity'] = 'Välj {$a}-mod_hvp aktivitet';

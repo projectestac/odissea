@@ -70,7 +70,7 @@ $string['pluginnameediting'] = '数値問題の編集';
 $string['pluginnamesummary'] = '単位を使って数値で解答することができます。また、さまざまな解答モデルに対して許容範囲を設定して評定することができます。';
 $string['privacy:metadata'] = '数字問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
 $string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';
-$string['privacy:preference:multichoicedisplay'] = '単位をテキスト入力要素として表示するか、複数選択肢から選択するか、ドロップダウンメニューとして表示するか指定します。';
+$string['privacy:preference:multichoicedisplay'] = '単位をテキスト入力要素として表示するか、複数選択肢から選択するか、ドロップダウンメニュとして表示するか指定します。';
 $string['privacy:preference:penalty'] = '問題が「複数回受験インタラクティブ」または「アダプティブモード」で出題された場合のそれぞれの不正解のペナルティです。';
 $string['privacy:preference:unitgradingtypes'] = '単位ペナルティが解答評点または問題評点の端数 (0-1) として適用されるかどうか指定します。';
 $string['privacy:preference:unitpenalty'] = '解答評点または問題評点の何分の1 (0-1) を適用しますか?';
@@ -105,7 +105,7 @@ $string['unitpenalty_help'] = '次の場合にペナルティが適用されま�
 * 数字入力ボックスに単位が入力された場合';
 $string['unitposition'] = '単位の位置';
 $string['units'] = '単位';
-$string['unitselect'] = 'ドロップダウンメニュー';
+$string['unitselect'] = 'ドロップダウンメニュ';
 $string['unitx'] = '単位 {no}';
 $string['validnumberformats'] = '有効な数値フォーマット';
 $string['validnumberformats_help'] = '* 正則数 13500.67、13 500.67、13500,67または13 500,67

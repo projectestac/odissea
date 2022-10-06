@@ -168,6 +168,7 @@ $string['required'] = 'Requirido';
 $string['requiredcapability'] = 'Requírese a funcionalidade';
 $string['requiredcapability_help'] = 'Se activa a opción, só os usuarios coas funcionalidades requiridas poderán acceder ao servizo.';
 $string['requiredcaps'] = 'Requírense permisos';
+$string['resettokencomplete'] = 'Restabeleceuse o testemuño seleccionado';
 $string['resettokenconfirm'] = 'Confirma que quere restaurar esta chave do servizo web para <strong>{$a->user}</strong> no servizo <strong>{$a->service}</strong>?';
 $string['resettokenconfirmsimple'] = 'Confirma que quere restaurar esta chave? Calquera ligazón gardada que conteña a chave anterior non volverá a funcionar.';
 $string['response'] = 'Resposta';

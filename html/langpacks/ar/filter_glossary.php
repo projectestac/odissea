@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['filtername'] = 'الربط التلقائي للمسرد';
 $string['glossarycategory'] = '{$a->glossary}: التصنيف {$a->category}';
 $string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
-$string['privacy:metadata'] = 'ملحق الربط التلقائي للمسرد لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إضافة الربط التلقائي للمسرد لا تخزن أي بيانات شخصية.';

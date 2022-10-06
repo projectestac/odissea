@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Radio button field';
-$string['pluginname'] = 'Radio button';
-$string['privacy:metadata'] = 'The Radio button field component does not store any personal data, it uses tables defined in mod_data.';
+$string['fieldtypelabel'] = 'Radio buttons';
+$string['pluginname'] = 'Radio buttons';
+$string['privacy:metadata'] = 'The Radio buttons field component doesn\'t store any personal data; it uses tables defined in mod_data.';

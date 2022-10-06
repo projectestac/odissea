@@ -355,7 +355,7 @@ $string['potusersmatching'] = 'المستخدمون المحتملون الذي�
 $string['prevent'] = 'منع';
 $string['privacy:metadata:preference:showadvanced'] = 'معاملة زر تبديل النمط المتقدم';
 $string['privacy:metadata:role_assignments'] = 'تعيينات الدور';
-$string['privacy:metadata:role_assignments:component'] = 'الملحق المسؤول عن تعيين الدور، يكون فارغاً عند التعيين اليدوي';
+$string['privacy:metadata:role_assignments:component'] = 'الإضافة المسؤولة عن تعيين الدور، يكون فارغاً عند التعيين اليدوي';
 $string['privacy:metadata:role_assignments:itemid'] = 'مُعرَّف عينة الانضمام/المصادقة المسؤولة عن تعيين الدور هذا';
 $string['privacy:metadata:role_assignments:modifierid'] = 'مُعرَّف المستخدم الذي أنشأ أو عدل تعيين الدور';
 $string['privacy:metadata:role_assignments:roleid'] = 'مُعرَّف الدور';

@@ -3,7 +3,7 @@
     <library>
         <location>quizzes</location>
         <name>Wiris Quizzes engine</name>
-        <version>4.5.0</version>
+        <version>4.5.1</version>
         <license>GPL</license>
         <licenseversion>3.0+</licenseversion>
     </library>

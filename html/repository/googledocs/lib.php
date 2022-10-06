@@ -847,7 +847,16 @@ class repository_googledocs extends repository {
             'emailAddress' => $email,
             'role' => 'writer',
             'type' => 'user',
+
+            // XTEC ************ ELIMINAT - Fix for error "Exception - 403: Expiration dates cannot be set on this item"
+            //                              when accessing to files allocated in Google Drive.
+            //                              https://tracker.moodle.org/browse/MDL-75180
+            // 2022.09.09 @aginard
+            /*
             'expirationTime' => $expires->format(DateTime::RFC3339)
+            */
+            // ************ FI
+
         ];
         $params = ['fileid' => $fileid, 'sendNotificationEmail' => 'false'];
         $response = $client->call('create_permission', $params, json_encode($updateeditor));

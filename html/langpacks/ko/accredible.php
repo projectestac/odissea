@@ -29,7 +29,6 @@ $string['accredible:addinstance'] = '인증서 / 뱃지 인스턴스 추가';
 $string['accredible:manage'] = '인증서 / 뱃지 인스턴스 관리';
 $string['accredible:student'] = '인증서 또는 뱃지 검색';
 $string['accredible:view'] = '인증서 또는 뱃지보기';
-$string['activitydescription'] = '이 모듈은 어크레더블의 증명 그룹을 자동으로 생성하고 갱신합니다. 모든 인증서와 이 그룹에서 발행된 배지, 그리고 이들의 실물과 정보는 <a href="https://dashboard.accredible.com" target="_blank">대시보드</a>에서 갱신할 수 있습니다.';
 $string['activityname'] = '활동 이름';
 $string['additionalactivitiesone'] = '경고: 코스에 한 가지 이상의 활동이 추가 됩니다.<br/> 두 활동이 학생들에게 보여지니, 활동에 다른 이름을 부여하세요.';
 $string['additionalactivitiesthree'] = '이것은 인증서에 보여지게 될 이름입니다.';

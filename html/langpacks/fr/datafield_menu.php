@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Champ menu';
-$string['pluginname'] = 'Menu';
-$string['privacy:metadata'] = 'Le composant Champ menu n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';
+$string['fieldtypelabel'] = 'Liste déroulante';
+$string['pluginname'] = 'Liste déroulante';
+$string['privacy:metadata'] = 'Le composant Champ liste déroulante n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';

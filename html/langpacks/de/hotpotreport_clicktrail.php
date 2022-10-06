@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Übersicht über Klick-Pfade';
+$string['pluginname'] = 'Bericht mit Klick-Pfaden';
+$string['privacy:metadata'] = 'Das Modul "Bericht mit Klick-Pfaden" speichert keine personenbezogenen Daten.';

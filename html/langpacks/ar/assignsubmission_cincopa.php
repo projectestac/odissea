@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = '<div style="margin:10px;padding:15px;background-color:#f5f5f5;border:2px solid #e3e3e3;"><img src="https://www.cincopa.com/_cms/design15/icons/favicon-32.png?affdata=moodle-plugin-assign,setup-page"> مرحبًا بك في ملحق مودل Cincopa، راجع <a href="https://www.cincopa.com/moodle/welcome" target="_blank">صفحة ترحيبنا</a> لأغراض التسجيل وملفات المساعدة.</div>';
+$string['description'] = '<div style="margin:10px;padding:15px;background-color:#f5f5f5;border:2px solid #e3e3e3;"><img src="https://www.cincopa.com/_cms/design15/icons/favicon-32.png?affdata=moodle-plugin-assign,setup-page"> مرحبًا بك في إضافة مودل Cincopa، راجع <a href="https://www.cincopa.com/moodle/welcome" target="_blank">صفحة ترحيبنا</a> لأغراض التسجيل وملفات المساعدة.</div>';
 $string['enabled'] = 'المساعدة مع تسليمات Cincopa';
 $string['template_cincopa'] = 'القالب';
 $string['template_cincopa_help'] = 'قالب المعرض';

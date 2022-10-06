@@ -36,5 +36,5 @@ $string['pathdvisvgm'] = 'مسار ثنائي <i>dvisvgm</i>';
 $string['pathlatex'] = 'مسار  <i>latex</i> ثنائي';
 $string['pathmimetex'] = 'مسار ثنائي <i>mimetex</i>';
 $string['pathmimetexdesc'] = 'مودل سيستعمل ثنائيه لـ mimetex ما لم يتم تحديد مسار صحيح آخر.';
-$string['privacy:metadata'] = 'ملحق ترميز TeX لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إضافة ترميز TeX لا تخزن أي بيانات شخصية.';
 $string['source'] = 'مصدر TeX';

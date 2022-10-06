@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Picture field';
-$string['pluginname'] = 'Picture';
-$string['privacy:metadata'] = 'The Picture field component does not store any personal data, it uses tables defined in mod_data.';
+$string['fieldtypelabel'] = 'Image';
+$string['pluginname'] = 'Image';
+$string['privacy:metadata'] = 'The Image field component doesn\'t store any personal data; it uses tables defined in mod_data.';

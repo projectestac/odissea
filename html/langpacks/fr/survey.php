@@ -191,7 +191,7 @@ Vos réponses soigneusement réfléchies nous aideront à améliorer la façon d
 Nous vous remercions de votre collaboration.';
 $string['collespname'] = 'COLLES (idéal)';
 $string['completiondetail:submit'] = 'Envoyer des réponses';
-$string['completionsubmit'] = 'L\'étudiant doit remettre cette activité pour l\'achever';
+$string['completionsubmit'] = 'L\'étudiant doit remettre quelque chose';
 $string['customintro'] = 'Description';
 $string['deleteallanswers'] = 'Supprimer toutes les réponses des consultations';
 $string['deleteanalysis'] = 'Supprimer les analyses de réponses';

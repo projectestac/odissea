@@ -30,6 +30,6 @@ $string['blindmarkingviewfullname'] = '参加者 {$a->participantnumber} ({$a->p
 $string['default'] = 'デフォルトで有効にする';
 $string['default_help'] = 'この設定を有効にした場合、すべての新しい課題において、この提出方法がデフォルトで有効にされます。';
 $string['enabled'] = '提出コメント';
-$string['enabled_help'] = 'この設定を有効にした場合、学生は自分の提出にコメントを付けることができます。例えば内部リンクファイルを提出する場合、学生はどれがマスターファイルなのか記述できます。';
+$string['enabled_help'] = 'この設定を有効にした場合、学生は自分の提出にコメントを付けることができます。例えば内部リンクファイルを提出する場合、学生はどれがマスタファイルなのか記述できます。';
 $string['pluginname'] = '提出コメント';
 $string['privacy:metadata:commentpurpose'] = '提出に関する学生および教師間のコメントです。';

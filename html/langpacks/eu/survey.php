@@ -190,7 +190,7 @@ Zure erantzunek unitate hau etorkizunean hobetzen lagunduko digute.
 Eskerrik asko.';
 $string['collespname'] = 'COLLES (Nahia)';
 $string['completiondetail:submit'] = 'Erantzunak bidaltzea';
-$string['completionsubmit'] = 'Ikasleak jarduera honetara bidalketa egin behar du osatutzat emateko.';
+$string['completionsubmit'] = 'Ikasleak bidalketa bat egin behar du';
 $string['customintro'] = 'Deskribapena';
 $string['deleteallanswers'] = 'Ezabatu hausnarketen erantzun guztiak';
 $string['deleteanalysis'] = 'Ezabatu erantzunen analisiak';

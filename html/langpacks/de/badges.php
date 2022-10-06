@@ -158,10 +158,10 @@ Hinweis: Vermeiden Sie bei der Absicherung der Badge-Verifikation unbedingt, nac
 $string['badgesdisabled'] = 'Badges sind auf dieser Moodle-Site nicht aktiviert.';
 $string['badgesearned'] = 'Anzahl der erworbenen Badges: {$a}';
 $string['badgesettings'] = 'Einstellungen';
-$string['badgestatus_0'] = 'Nicht verfügbar für Nutzer/innen';
-$string['badgestatus_1'] = 'Verfügbar für Nutzer/innen';
-$string['badgestatus_2'] = 'Nicht verfügbar für Nutzer/innen';
-$string['badgestatus_3'] = 'Verfügbar für Nutzer/innen';
+$string['badgestatus_0'] = 'Nicht verfügbar';
+$string['badgestatus_1'] = 'Verfügbar';
+$string['badgestatus_2'] = 'Nicht verfügbar (Kriterien gesperrt)';
+$string['badgestatus_3'] = 'Verfügbar (Kriterien gesperrt)';
 $string['badgestatus_4'] = 'Archiviert';
 $string['badgestoearn'] = 'Anzahl der verfügbaren Badges: {$a}';
 $string['badgesview'] = 'Kursbezogene Badges';

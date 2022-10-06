@@ -399,7 +399,7 @@ $string['uploadrecords'] = 'Carica i record da un file';
 $string['uploadrecords_help'] = 'E\' possibile importare record attraverso un file di testo. Il formato del file è descritto di seguito:
 
 * ciascuna linea deve contenere un record
-* ciascun record è una serie di campi separati da virgole (o altri delimitatori)
+* ciascun record è una serie di campi separati da l separatore selezionato
 * il primo record deve contenere i nomi dei campi che specificano il contenuto di ciascun campo
 
 Il delimitatore di campo è un carattere che racchiude i campi del record. Spesso non è presente e si può evitare di impostarlo.';

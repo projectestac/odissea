@@ -49,6 +49,7 @@ $string['create_new_question'] = 'Criar nova pergunta';
 $string['default_question_time'] = 'Duração predefinida da pergunta';
 $string['default_question_time_help'] = 'A duração predefinida das perguntas.<br>Pode ser alterada em cada pergunta.';
 $string['delete_question'] = 'Apagar pergunta {$a}';
+$string['delete_report'] = 'Apagar relatório';
 $string['download_attendance_list'] = 'Descarregar lista de presenças';
 $string['download_report'] = 'Descarregar relatório';
 $string['download_responses'] = 'Descarregar respostas';
@@ -94,7 +95,10 @@ Permite ao professor colocar novamente a pergunta que acabou de ser feita.
      </td>
             <td>v</td>
      <td>
-Permite aos alunos votarem nas suas respostas. O professor pode clicar numa resposta para alternar se deve ser incluída na votação ou não. Clicar na barra da resposta iniciará uma mistura dessa resposta. Tenha em atenção que a barra ocupará a barra na qual clicará em seguida.
+Permite aos alunos votarem nas suas respostas.
+O professor pode clicar numa resposta para alternar se deve ser incluída na votação ou não.
+Clicar na barra da resposta iniciará uma mistura dessa resposta.
+Tenha em atenção que a barra ocupará a barra na qual clicará em seguida.
 </td>
 </tr>
 <tr>
@@ -110,7 +114,7 @@ Mostra uma lista de perguntas para improvisar. Escreva a pergunta no quadro e pe
 <td>
 <i class="fa fa-bars"></i> Saltar
 </td>
-            <td>j</td>
+<td>j</td>
 <td>
 Mostra a lista de todas as perguntas planeadas para o teste.
 </td>
@@ -119,13 +123,22 @@ Mostra a lista de todas as perguntas planeadas para o teste.
 <td>
 <i class="fa fa-forward"></i> Seguinte
 </td>
-            <td>n</td>
+<td>n</td>
 <td>
 Salta para a próxima pergunta da lista de perguntas planeadas.
 </td>
 </tr>
 <tr>
 <td>
+<i class="fa fa-random"></i> Aleatório
+ </td>
+            <td>m</td>
+            <td>
+                Inicia uma pergunta aleatória da lista de perguntas planeadas.
+            </td>
+        </tr>
+<tr>
+            <td>
 <i class="fa fa-close"></i> Finalizar
 </td>
             <td>e</td>
@@ -175,7 +188,7 @@ $string['instructor_sessions_going'] = 'Uma sessão já está em andamento. Por 
 $string['invalid_question_time'] = 'O tempo da pergunta deve ser um inteiro igual ou maior do que zero';
 $string['jazzquiz:addinstance'] = 'Adicionar uma instância de TesteJazz';
 $string['jazzquiz:attempt'] = 'Responder a um TesteJazz';
-$string['jazzquiz:control'] = 'Controlar um TesteJazz. (Geralmente apenas para professores)';
+$string['jazzquiz:control'] = 'Controlar um TesteJazz. (normalmente apenas professores)';
 $string['jazzquiz:editquestions'] = 'Editar perguntas para um TesteJazz.';
 $string['jazzquiz:seeresponses'] = 'Ver as respostas de outros alunos para avaliá-las';
 $string['jazzquizsettings'] = 'Configurações gerais do TesteJazz';
@@ -224,6 +237,7 @@ $string['question_will_start_now'] = 'A pergunta vai começar agora';
 $string['questions'] = 'Perguntas';
 $string['quit'] = 'Sair';
 $string['quiz_not_running'] = '<p>Espere que o professor inicie o teste.</p><p>Use o botão atualizar para verificar se já começou.</p>';
+$string['random'] = 'Aleatório';
 $string['repoll'] = 'Re-colocação';
 $string['reports'] = 'Relatórios';
 $string['responses'] = 'Respostas';

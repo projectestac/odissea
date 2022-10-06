@@ -38,4 +38,4 @@ $string['sortpublished'] = 'Veröffentlichung';
 $string['sortrating'] = 'Bewertung';
 $string['sortrelevance'] = 'Relevanz';
 $string['sortviewcount'] = 'Anzahl anzeigen';
-$string['youtube:view'] = 'YouTube in der Dateiauswahl benutzen';
+$string['youtube:view'] = 'YouTube in der Dateiauswahl anzeigen';

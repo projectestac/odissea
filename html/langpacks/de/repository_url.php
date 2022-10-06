@@ -31,6 +31,6 @@ $string['pluginname'] = 'URL-Downloader';
 $string['privacy:metadata'] = 'Das URL-Download-Repository Plugin speichert keine personenbezogenen Daten und gibt keine Daten weiter.';
 $string['rename'] = 'Name';
 $string['url'] = 'URL';
-$string['url:view'] = 'URL-Downloader in der Dateiauswahl nutzen';
+$string['url:view'] = 'URL-Downloader in der Dateiauswahl anzeigen';
 $string['validfiletype'] = 'Sie müssen eine URL zu einer Bilddatei oder einer Seite mit Bildern eintragen.';
 $string['validname'] = 'Sie müssen einen gültigen Dateinamen angeben';

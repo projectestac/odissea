@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'URLa';
 $string['openlinkinnewwindow'] = 'Ireki esteka leiho berrian';
 $string['pluginname'] = 'URLa';
-$string['privacy:metadata'] = 'URLa eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['privacy:metadata'] = 'URLa eremu-osagaiak ez du datu pertsonalik biltzen; datu-base moduluan zehaztutako taulak erabiltzen ditu.';

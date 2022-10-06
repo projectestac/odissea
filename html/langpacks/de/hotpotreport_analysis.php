@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Übersicht mit statistischer Analyse';
+$string['pluginname'] = 'Bericht mit statistischer Analyse';
+$string['privacy:metadata'] = 'Das Modul "Bericht mit statistischer Analyse" speichert keine personenbezogenen Daten.';

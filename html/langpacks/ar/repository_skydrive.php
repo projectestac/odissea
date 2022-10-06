@@ -29,7 +29,7 @@ $string['cachedef_foldername'] = 'خبء اسم المجلد';
 $string['clientid'] = 'مُعرَّف الزبون';
 $string['configplugin'] = 'تهيئة مايكروسوفت OneDrive (موروث)';
 $string['deprecatedwarning'] = 'تحذير: لقد تم التخلي عن واجهة برمجة التطبيق المستعملة من قبل ملحق المستودع هذا من طرف مايكروسوفت وسيتم إيقافه عن العمل فعلياً. لطفاً، إنتقل إلى المستودع الجديد "مايكروسوفت OneDrive".';
-$string['oauthinfo'] = '<p>لاستعمال هذا الملحق، عليك تسجيل موقعك عند <a href="https://account.live.com/developers/applications">مايكروسوفت</a>.</p><p>كجزء من عملية التسجيل، عليك إدخال الرابط الآتي بمثابة \'Redirect domain\':</p><p>{$a->callbackurl}</p><p>بمجرد التسجيل، سيتم تزويدك بمُعرَّف الزبون وكلمة السر واللذَين يمكن إدخالهما هنا.</p>';
+$string['oauthinfo'] = '<p>لاستعمال هذه الإضافة، عليك تسجيل موقعك عند <a href="https://account.live.com/developers/applications">مايكروسوفت</a>.</p><p>كجزء من عملية التسجيل، عليك إدخال الرابط الآتي بمثابة \'Redirect domain\':</p><p>{$a->callbackurl}</p><p>بمجرد التسجيل، سيتم تزويدك بمُعرَّف الزبون وكلمة السر واللذَين يمكن إدخالهما هنا.</p>';
 $string['pluginname'] = 'مايكروسوفت OneDrive (موروث)';
 $string['privacy:metadata'] = 'إن ملحق مستودع مايكروسوفت OneDrive (موروث) لا يخزن أي بيانات شخصية، ولكنه ينقل بيانات المستخدمين من مودل إلى نظام خارجي.';
 $string['secret'] = 'السر';

@@ -88,10 +88,10 @@ $string['miscellaneoussettings'] = 'Verschiedene Einstellungen';
 $string['modulename'] = 'Freie Gruppeneinteilung';
 $string['modulename_help'] = 'Teilnehmer/innen können Gruppen erstellen und wählen:
 
-* Teilnehmer/innen können Gruppen erstellen, diesen eine Beschreibung geben und, falls gewünscht, mit einem Passwort schützen
+* Teilnehmer/innen können Gruppen erstellen, diesen eine Beschreibung geben und, falls gewünscht, mit einem Kennwort schützen
 * Teilnehmer/innen können Gruppen auswählen und betreten
 * Betreuer/innen können Gruppen hinzugefügt werden
-* Trainer/in kann die Gruppenliste des Kurses als CSV-Datei exportieren
+* Die Trainer/innen können die Gruppenliste des Kurses als CSV-Datei exportieren
 * Volle Kompatibilität zu Basis Moodle-Gruppen: Gruppen können auch durch andere Plugins erzeugt werden.';
 $string['modulenameplural'] = 'Freie Gruppeneinteilungen';
 $string['nogroups'] = 'Keine Gruppen vorhanden, aus denen Sie wählen können.';

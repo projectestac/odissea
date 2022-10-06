@@ -38,7 +38,7 @@ $string['class'] = 'Mota';
 $string['classno'] = 'Klase-zenbakia';
 $string['copylink'] = '(Ctrl+C kopiatzeko)';
 $string['coursemisconf'] = 'Ikastaroa ez dago ondo konfiguratuta';
-$string['detail'] = 'Kontzpetu-mapa aurreratua';
+$string['detail'] = 'Kontzeptu-mapa aurreratua';
 $string['detail_help'] = '<div class="indent">
 <p>Kontzeptu-mapa ideia edo hitz batekin lotutako ideiak, atazak edo bestelako itemak errepresentatzen dituen diagrama da.</p>
 <table class="advmindmap_help_table">

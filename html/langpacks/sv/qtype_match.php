@@ -47,4 +47,4 @@ $string['privacy:preference:defaultmark'] = 'Standardpoängen för en viss fråg
 $string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök när frågor körs med beteendet "Interaktivt med flera försök" eller "Adaptivt läge".';
 $string['privacy:preference:shuffleanswers'] = 'Om svaren ska blandas automatiskt.';
 $string['shuffle'] = 'Blanda';
-$string['shuffle_help'] = 'Om det är aktiverat kommer ordningen på påståenden (svar) blandas slumpmässigt vid varje försök, förutsatt att "Blanda inom frågor" i aktivitetsinställningarna också är aktiverad.';
+$string['shuffle_help'] = 'Om aktiverat blandas frågornas ordning slumpmässigt för varje försök förutsatt att "Blanda inom frågor" i aktivitetsinställningarna också är aktiverat. I en matchande fråga påverkas endast frågorna av den här parametern. Svarsalternativen kommer alltid att blandas.';

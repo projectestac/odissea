@@ -29,5 +29,5 @@ $string['category:config'] = 'تهيئة عينات الانضمام إلى ال
 $string['category:synchronised'] = 'تعيينات الأدوار المزامَنة مع الانضمام إلى المقرر الدراسي';
 $string['enrolcategorysynctask'] = 'مهمة مزامنة الانضمام إلى التصنيفات';
 $string['pluginname'] = 'الانضمامات إلى التصنيف';
-$string['pluginname_desc'] = 'يقوم ملحق الانضمام إلى التصنيف بمزامنة أي أدوار معينة ضمن سياق التصنيف مع الأدوار التي تمتلك الإمكانية enrol/category:synchronised.';
-$string['privacy:metadata'] = 'إن ملحق الانضمام إلى التصنيف لا يخزن أي بيانات شخصية.';
+$string['pluginname_desc'] = 'تقوم إضافة الانضمام إلى التصنيف بمزامنة أي أدوار معينة ضمن سياق التصنيف مع الأدوار التي تمتلك الإمكانية enrol/category:synchronised.';
+$string['privacy:metadata'] = 'إن إضافة الانضمام إلى التصنيف لا تخزن أي بيانات شخصية.';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Data';
 $string['pluginname'] = 'Data';
-$string['privacy:metadata'] = 'Data eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['privacy:metadata'] = 'Data eremu-osagaiak ez du datu pertsonalik biltzen; datu-base moduluan zehaztutako taulak erabiltzen ditu.';

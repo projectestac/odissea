@@ -29,7 +29,7 @@ $string['pathtounoconv'] = 'المسار إلى محول الوثائق  unoconv
 $string['pathtounoconv_help'] = 'المسار إلى محول الوثائق unoconv. هذا ملف قابل للتنفيذ وقادر على التحويل بين تنسيقات المستندات التي يدعمها LibreOffice.
 هذا إختياري، ولكن إذا تم تحديده، فسيستعمله مودل للتحويل تلقائياً بين تنسيقات المستندات. يستعمل هذا لدعم مجموعة واسعة من ملفات الإدخال لميزة كتابة الشروحات على ملفات الواجبات التي بصيغة PDF.';
 $string['pluginname'] = 'Unoconv';
-$string['privacy:metadata'] = 'لا يقوم ملحق تحويل المستندات Unoconv  بتخزين أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'لا تقوم إضافة تحويل المستندات Unoconv  بتخزين أيّ بيانات شخصية.';
 $string['test_unoconv'] = 'اختبار مسار unoconv';
 $string['test_unoconvdoesnotexist'] = 'مسار unoconv لا يشير إلى برنامج unoconv.
 يرجى مراجعة إعدادات المسار الخاص بك.';

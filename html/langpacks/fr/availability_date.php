@@ -31,6 +31,7 @@ $string['direction_before'] = 'Date';
 $string['direction_from'] = 'à partir du';
 $string['direction_label'] = 'Direction';
 $string['direction_until'] = 'jusqu\'au';
+$string['error_dateconflict'] = 'En conflit avec d\'autres restrictions de date';
 $string['full_from'] = 'La date soit postérieure au <strong>{$a}</strong>';
 $string['full_from_date'] = 'La date soit postérieure ou égale au <strong>{$a}</strong>';
 $string['full_until'] = 'La date soit antérieure au <strong>{$a}</strong>';

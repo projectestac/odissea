@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['correcterror'] = 'Правильно';
+$string['import'] = 'Импорт';
+$string['importforms'] = 'Импорт форм ответа';
+$string['ziporimagefile'] = 'ZIP-файл или изображение';

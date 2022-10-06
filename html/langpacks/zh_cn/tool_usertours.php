@@ -45,6 +45,8 @@ $string['content_heading'] = '内容';
 $string['cssselector'] = 'CSS选择器';
 $string['defaultvalue'] = '默认 ({$a})';
 $string['delay'] = '显示步骤前的延迟时间';
+$string['delay_help'] = '您可以选择在显示步骤之前添加延迟。
+此延迟以毫秒为单位。';
 $string['description'] = '描述';
 $string['done'] = '完成';
 $string['duplicatetour'] = '复制导览';
@@ -93,8 +95,22 @@ $string['options_heading'] = '选项';
 $string['orphan'] = '如果未找到目标，则显示';
 $string['orphan_help'] = '如果在页面上找不到目标，则显示步骤。';
 $string['pathmatch'] = '应用于URL匹配';
+$string['pathmatch_help'] = '导览将显示在任何URL与此值匹配的页面上。
+
+你可以用%字符作为通配符，来表示任何东西。
+下面是一些示例：
+
+* /my/% - 与仪表板相匹配。
+* /course/view.php?id=2 - 匹配一个特定的课程
+* /mod/forum/view.php% - 匹配论坛讨论列表
+* /user/profile.php% - 匹配用户配置文件页面
+
+如果你希望在网站首页显示导览，你可以使用这个值："FRONTPAGE"。';
 $string['pausetour'] = '暂停';
 $string['placement'] = '放置';
+$string['placement_help'] = '步骤可以放在目标的上方、下方、左边或右边。建议放在上方或下方，因为这些位置在移动端的显示效果更好。
+
+如果该步骤不适合在特定页面的指定位置，它将被自动放在其他地方。';
 $string['pluginname'] = '用户导航';
 $string['previousstep'] = '上一个';
 $string['privacy:metadata:preference:completed'] = '用户最后一次完成用户导览的时间。';
@@ -120,7 +136,15 @@ $string['target_selector_targetvalue'] = 'CSS选择器';
 $string['target_selector_targetvalue_help'] = 'CSS选择器可以用于指向页面上的几乎任何元素。使用web浏览器的开发人员工具可以轻松找到合适的选择器。';
 $string['target_unattached'] = '显示在页面中间';
 $string['targettype'] = '目标类型';
+$string['targettype_help'] = '每个步骤都与页面的一个部分相关联--目标。目标类型包括：
+
+* 板块 - 用于显示指定板块旁边的步骤
+* CSS选择器 - 用于使用CSS精确定义目标区域
+* 显示在页面中间 - 用于不需要与页面的特定部分相关联的步骤';
 $string['title'] = '标题';
+$string['title_help'] = '可以用纯文本添加步骤的标题，如果需要的话，可以用多语言标签括起来（用于多语言内容过滤器）。
+
+另外，语言字符串ID可以以标识符、组件的格式输入（逗号后没有括号或空格）。';
 $string['tour1_content_addingblocks'] = '事实上，请仔细考虑是否在您的页面上加入任何块。块在Moodle应用程序中是不显示的，因此作为一般规则，最好确保您的网站在没有任何块的情况下也能运行良好。';
 $string['tour1_content_blockregion'] = '这里还有一个板块区域。我们建议完全删除导航和管理板块，因为所有功能都在Boost主题的其他地方。';
 $string['tour1_content_customisation'] = '要自定义站点和首页的外观，请使用此标题角落中的设置菜单。尝试现在就打开编辑功能。';
@@ -176,6 +200,11 @@ $string['tour3_title_timeline'] = '时间线板块';
 $string['tour4_content_groupconvo'] = '如果您是启用了群组消息的群组成员，您会在这里看到群组对话。
 
 课程组对话允许您们在一个私密和方便的地方与小组中的其他人互动。';
+$string['tour4_content_icon'] = '你可以使用这个图标从任何页面访问你的消息。
+
+如果你有未读消息，未读消息的数量也会显示在这里。
+
+点击图标，打开信息传递抽屉并继续浏览。';
 $string['tour4_content_messaging'] = '新的消息传递功能包括课程内的群组消息传递，以及更好地控制谁可以向您发送消息。';
 $string['tour4_content_settings'] = '您可以通过齿轮图标访问您的消息设置。新的隐私设置允许您限制谁可以给您发消息。';
 $string['tour4_content_starred'] = '您可以选择给特定的对话标星，使它们更容易被找到。';

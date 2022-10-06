@@ -49,6 +49,7 @@ $string['create_new_question'] = 'Create new question';
 $string['default_question_time'] = 'Default question time';
 $string['default_question_time_help'] = 'The default time to display each question.<br>This can be overridden by individual questions.';
 $string['delete_question'] = 'Delete question {$a}';
+$string['delete_report'] = 'Delete report';
 $string['download_attendance_list'] = 'Download attendance list';
 $string['download_report'] = 'Download report';
 $string['download_responses'] = 'Download responses';
@@ -125,6 +126,15 @@ $string['instructions_for_instructor'] = '<h3>Please make sure to read the instr
             <td>n</td>
             <td>
                 Continue on to the next question in the list of planned questions.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <i class="fa fa-random"></i> Random
+            </td>
+            <td>m</td>
+            <td>
+                Starts a random question from the list of planned questions.
             </td>
         </tr>
         <tr>
@@ -227,6 +237,7 @@ $string['question_will_start_now'] = 'The question will start now';
 $string['questions'] = 'Questions';
 $string['quit'] = 'Quit';
 $string['quiz_not_running'] = '<p>Wait for your teacher to start the quiz.</p><p>Use the reload button to check if it has started.</p>';
+$string['random'] = 'Random';
 $string['repoll'] = 'Re-poll';
 $string['reports'] = 'Reports';
 $string['responses'] = 'Responses';

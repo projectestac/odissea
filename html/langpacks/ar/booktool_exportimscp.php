@@ -30,4 +30,4 @@ $string['exportimscp:export'] = 'تصدير الكتاب كحزمة محتوى I
 $string['generateimscp'] = 'توليد IMS CP';
 $string['nochapters'] = 'لا يوجد فصول للكتاب، فغير قادر على التصدير إلى CP IMS.';
 $string['pluginname'] = 'تصدير كتاب IMS CP';
-$string['privacy:metadata'] = 'لا يقوم ملحق تصدير Book IMS CP بتخزين أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'لا تقوم إضافة تصدير Book IMS CP بتخزين أيّ بيانات شخصية.';

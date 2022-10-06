@@ -252,6 +252,7 @@ $string['changepassword'] = 'Canvia la contrasenya';
 $string['changesmadereallygoaway'] = 'Heu fet canvis. Confirmeu que voleu navegar fora i perdre els canvis?';
 $string['changessaved'] = 'S\'han desat els canvis';
 $string['check'] = 'Reviseu';
+$string['checkactual'] = 'Real';
 $string['checkall'] = 'Activa tot';
 $string['checkexpected'] = 'Esperat';
 $string['checkingbackup'] = 'S\'està comprovant la còpia de seguretat';
@@ -637,7 +638,7 @@ $string['edulevelparticipating'] = 'Participant';
 $string['edulevelteacher'] = 'Educant';
 $string['email'] = 'Adreça electrònica';
 $string['emailactive'] = 'Correu electrònic activat';
-$string['emailagain'] = 'Correu electrònic (una altra vegada)';
+$string['emailagain'] = 'Repeteix l\'adreça electrònica';
 $string['emailalreadysent'] = 'S\'ha enviat un correu electrònic de restabliment de contrasenya. Consulteu el vostre correu electrònic.';
 $string['emailcharset'] = 'Joc de caràcters del correu';
 $string['emailconfirm'] = 'Confirmació del compte';
@@ -727,7 +728,7 @@ Si necessiteu ajuda, contacteu amb l\'administrador del lloc:
 
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: Confirmació del canvi de contrasenya';
-$string['emailpasswordconfirmmaybesent'] = '<p>Si heu proporcionat un nom d\'usuari o una adreça de correu correctes aviat rebreu un missatge de correu electrònic.</p>
+$string['emailpasswordconfirmmaybesent'] = '<p>Si heu proporcionat un nom d\'usuari o una adreça de correu correctes aviat hauríeu de rebre un missatge de correu electrònic.</p>
 <p>Aquest missatge conté instruccions senzilles per a confirmar i completar el canvi de contrasenya. Si continueu tenint dificultats podeu contactar amb l\'administració del lloc.</p>';
 $string['emailpasswordconfirmnoemail'] = '<p>El compte d\'usuari que heu especificat no té cap adreça de correu electrònic registrada.</p>
 <p>Poseu-vos en contacte amb l\'administrador del lloc. </p>';
@@ -772,7 +773,7 @@ $string['emptydragdropregion'] = 'regió buida';
 $string['enable'] = 'Habilita';
 $string['encryptedcode'] = 'Codi xifrat';
 $string['enddate'] = 'Data de finalització del curs';
-$string['enddate_help'] = 'La data de finalització del curs s\'utilitza per determinar si un curs s\'ha d\'incloure a la llista de cursos d\'un usuari. Després de la data de finalització, el curs ja no apareixerà a la pàgina inicial sinó com a «passat» en la vista general de cursos. La data de finalització del curs també pot ser utilitzada pels informes personalitzats. Els usuaris encara poden entrar al curs després de la data de finalització; en altres paraules, la data no restringeix l\'accés.';
+$string['enddate_help'] = 'La data de finalització del curs s\'utilitza per determinar si un curs es marca com a «passat» a la llista de cursos. La data de finalització del curs també pot ser utilitzada pels informes personalitzats. Noteu que els usuaris encara poden entrar al curs després de la data de finalització; en altres paraules, la data no restringeix l\'accés.';
 $string['english'] = 'anglès';
 $string['enrolmentmethods'] = 'Mètodes d\'Inscripció';
 $string['entercourse'] = 'Feu clic per entrar en aquest curs';
@@ -1177,7 +1178,7 @@ $string['loginstepsnone'] = '<p>Per tal de tenir accés complet als cursos us he
 $string['loginto'] = 'Inicia la sessió a {$a}';
 $string['logoof'] = 'Logo de {$a}';
 $string['logout'] = 'Surt';
-$string['logoutconfirm'] = 'Segur que voleu sortir?';
+$string['logoutconfirm'] = 'Segur que voleu desconnectar-vos?';
 $string['logs'] = 'Registres';
 $string['logtoomanycourses'] = '[ <a href="{$a->url}">més</a> ]';
 $string['logtoomanyusers'] = '[ <a href="{$a->url}">més</a> ]';
@@ -1425,7 +1426,7 @@ $string['nochange'] = 'Sense canvis';
 $string['nocomments'] = 'Sense comentaris';
 $string['nocourses'] = 'No hi ha cap curs';
 $string['nocoursesfound'] = 'No s\'ha trobat cap curs que contingui les paraules \'{$a}\'';
-$string['nocoursestarttime'] = 'El curs no té data d\'inici';
+$string['nocoursestarttime'] = 'El curs no té data d\'inici.';
 $string['nocoursesyet'] = 'No hi ha cursos en aquesta categoria';
 $string['nodstpresets'] = 'L\'administrador no ha habilitat l\'horari d\'estiu.';
 $string['nofilesselected'] = 'No heu seleccionat cap fitxer per restaurar';
@@ -1452,7 +1453,7 @@ $string['noreplybouncemessage'] = 'Heu contestat a una adreça de correu inadequ
 
 Aquí teniu el contingut del vostre missatge:';
 $string['noreplybouncesubject'] = '{$a} - missatge retornat';
-$string['noreplyname'] = 'No contesteu a aquest missatge';
+$string['noreplyname'] = 'No respongueu a aquest missatge';
 $string['noresetrecord'] = 'No hi ha constància de la sol·licitud de restabliment. Faci una sol·licitud nova de restabliment de contrasenya.';
 $string['noresults'] = 'Sense resultats';
 $string['normal'] = 'Normal';
@@ -1824,7 +1825,7 @@ $string['secondstotime259200'] = 'tres dies';
 $string['secondstotime345600'] = 'quatre dies';
 $string['secondstotime432000'] = 'cinc dies';
 $string['secondstotime518400'] = 'sis dies';
-$string['secondstotime604800'] = 'una setmana';
+$string['secondstotime604800'] = '1 setmana';
 $string['secondstotime86400'] = 'un dia';
 $string['secretalreadyused'] = 'La contrasenya no s\'ha canviat. Aquest enllaç de confirmació del canvi de contrasenya ja havia estat usat abans.';
 $string['secs'] = 'segons';
@@ -2242,8 +2243,8 @@ $string['weekhide'] = 'Oculta aquesta setmana a {$a}';
 $string['weeklyoutline'] = 'Esquema per setmanes';
 $string['weeks'] = 'setmanes';
 $string['weekshow'] = 'Mostra aquesta setmana a {$a}';
-$string['welcometocourse'] = 'Benvingut/da a {$a}';
-$string['welcometocoursetext'] = 'Benvingut/da a {$a->coursename}.
+$string['welcometocourse'] = 'Us donem la benvinguda a {$a}';
+$string['welcometocoursetext'] = 'Us donem la benvinguda a {$a->coursename}.
 
 Una de les primeres coses que hauríeu de fer és editar el vostre perfil de manera que tothom us pugui conèixer una mica més:
 

@@ -88,12 +88,27 @@ $string['sitesize_5'] = 'L (~20GB; 4177 Kurse, angelegt in ~10 Stunden)';
 $string['size'] = 'Kursgröße';
 $string['smallfiles'] = 'Kleine Dateien';
 $string['targetcourse'] = 'Zielkurs testen';
-$string['testplanexplanation'] = '';
-$string['testplansize_0'] = 'XS ({$a->users} Nutzter, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
-$string['testplansize_1'] = 'S ({$a->users} Nutzter, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
-$string['testplansize_2'] = 'M ({$a->users} Nutzter, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
-$string['testplansize_3'] = 'L ({$a->users} Nutzter, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
-$string['testplansize_4'] = 'XL ({$a->users} Nutzter, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
-$string['testplansize_5'] = 'XXL ({$a->users} Nutzter, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
-$string['updateuserspassword'] = 'Aktualisierung Zugangskennwörter für Nutzer';
-$string['updateuserspassword_help'] = 'JMeter benötigt einen Login als Kursnutzer. Das Nutzerkennwort können Sie mit der Variable $CFG->tool_generator_users_password in der config.php erzeugen; Diese Einstellung aktualisiert das Kennwort, das zu  $CFG->tool_generator_users_password gehört. Dies kann hilfreich sein wenn ein Kurs verwandt wird, der nicht mit dem Tool-Generator oder über  $CFG->tool_generator_users_password nicht beim Erstellen der Testkurse erstellt wurde.';
+$string['testplanexplanation'] = 'Dieses Tool erstellt eine JMeter-Testplandatei zusammen mit der Datei mit den Nutzeranmeldeinfos.
+
+Dieser Testplan ist so konzipiert, dass er mit {$a} zusammenarbeitet, was die Ausführung des Testplans in einer bestimmten Moodle-Umgebung erleichtert, Informationen über die Läufe sammelt und die Ergebnisse vergleicht. Sie den Testplan herunterladen und sein Script test_runner. sh  verwende. Befolgen Sie die Installations- und Verwendungsanweisungen.
+
+Sie müssen in der config.php ein Passwort für die Kursnutzer/innen festlegen (z. B. $CFG->tool_generator_users_password = \'moodle\';). Es gibt keinen Standardwert für dieses Kennwort, um eine unbeabsichtigte Verwendung des Tools zu verhindern. Sie müssen die Option zum Aktualisieren von Passwörtern verwenden, falls Ihre Kursnutzer/innen andere Passwörter haben oder diese von tool_generator generiert wurden, ohne jedoch einen Wert für $CFG->tool_generator_users_password festzulegen.
+
+Es ist Teil von tool_generator und funktioniert daher gut mit den von den Kursen und den Website-Generatoren generierten Kursen
+auch mit jedem Kurs verwendet werden, der mindestens Folgendes enthält:
+
+* Genügend eingeschriebene Nutzer/innen (abhängig von der von Ihnen gewählten Testplangröße) mit dem auf „moodle“ zurückgesetzten Passwort
+* Eine Seitenmodulinstanz
+* Eine Forenmodulinstanz mit mindestens einer Diskussion und einer Antwort
+
+Sie sollten die Serverkapazität beim Ausführen großer Testpläne berücksichtigen. Die von JMeter generierte Last kann sehr groß sein. Die Ramp-up-Periode wurde entsprechend der Anzahl der Threads (Nutzer/innen) angepasst, um diese Art von Problemen zu reduzieren, aber die Last wird immer noch riesig sein.
+
+**Führen Sie den Testplan nicht auf einem Live-System aus**. Diese Funktion erstellt nur die Dateien, um JMeter zu füttern, ist also selbst nicht gefährlich, aber Sie sollten diesen Testplan **NIEMALS** in einer Produktionsumgebung ausführen.';
+$string['testplansize_0'] = 'XS ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
+$string['testplansize_1'] = 'S ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
+$string['testplansize_2'] = 'M ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
+$string['testplansize_3'] = 'L ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
+$string['testplansize_4'] = 'XL ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
+$string['testplansize_5'] = 'XXL ({$a->users} Nutzer, {$a->loops} Schleifen und {$a->rampup} Steigerungsrate)';
+$string['updateuserspassword'] = 'Aktualisierung Zugangskennwort für Nutzer/innen';
+$string['updateuserspassword_help'] = 'JMeter benötigt einen Login als Kursnutzer/in. Das Nutzerkennwort können Sie mit der Variable $CFG->tool_generator_users_password in der config.php erzeugen; Diese Einstellung aktualisiert das Kennwort, das zu  $CFG->tool_generator_users_password gehört. Dies kann hilfreich sein wenn ein Kurs verwandt wird, der nicht mit dem Tool-Generator oder über  $CFG->tool_generator_users_password nicht beim Erstellen der Testkurse erstellt wurde.';

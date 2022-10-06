@@ -40,7 +40,7 @@ $string['localinstall_help'] = 'إن التهيئة الافتراضية لـ Ma
 لاستعمال التنصيب المحلي من MathJax، قم أولاً يتنزيل المكتبة الكاملة لـ MathJax من https://www.mathjax.org/. ثم نصبه في مخدم ويب. وأخيراً قم بتحديث إعدادات مرشح MathJax httpurl و/أو httpsurl لتشير إلى رابط MathJax.js المحلي.';
 $string['mathjaxsettings'] = 'تهيئة MathJax';
 $string['mathjaxsettings_desc'] = 'إن التهيئة الافتراضية لـ MathJax ينبغي أن تكون مناسبة لأغلب المستخدمين، ولكن MathJax قابل للتخصيص إلى حد كبير ويمكن هنا إضافة أي من خيارات التهيئة القياسية لـ MathJax.';
-$string['privacy:metadata'] = 'إن ملحق MathJax لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة MathJax لا تخزن أي بيانات شخصية.';
 $string['texfiltercompatibility'] = 'توافق مرشح TeX';
 $string['texfiltercompatibility_help'] = 'مرشح MathJax يمكن استعماله كبديل عن مرشح ترميز TeX .
 

@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['privacy:metadata'] = 'لا يخزن هذا الملحق أو يصدر أي بيانات عن المستخدمين.';
+$string['privacy:metadata'] = 'لا تخزن هذه الإضافة أو تصدر أي بيانات عن المستخدمين.';

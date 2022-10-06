@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['embedimages'] = 'الصور المضمنة';
 $string['embedimages_desc'] = 'استبدل روابط الصور بصور في تنسيقات نصية محددة.';
 $string['filtername'] = 'تحويل عناوين الإنترنت إلى روابط وصور';
-$string['privacy:metadata'] = 'ملحق تحويل عناوين الإنترنت إلى روابط وصور لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إضافة تحويل عناوين الإنترنت إلى روابط وصور لا تخزن أي بيانات شخصية.';
 $string['settingformats'] = 'طبق إلى تنسيقات';
 $string['settingformats_desc'] = 'سيتم تطبيق المنقح اذا كان النص الأصليقد ادخل حسب احد التنسيقات المختارة';

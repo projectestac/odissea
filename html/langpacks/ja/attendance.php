@@ -96,7 +96,6 @@ $string['caleventcreated'] = 'セッションのカレンダーイベントが�
 $string['caleventdeleted'] = 'セッションのカレンダーイベントが正常に削除されました。';
 $string['calmonths'] = '1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月';
 $string['calshow'] = '日付を選択する';
-$string['caltoday'] = '本日';
 $string['calweekdays'] = '日,月,火,水,木,金,土';
 $string['cannottakeforgroup'] = 'あなたはグループ「 {$a} 」の出欠を取ることはできません。';
 $string['cantaddstatus'] = '新しいステータスを追加する場合、あなたは頭字語および説明を記述する必要があります。';

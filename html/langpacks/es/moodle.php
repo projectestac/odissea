@@ -515,8 +515,8 @@ $string['defaultcourseteacher'] = 'Profesor';
 $string['defaultcourseteacherdescription'] = 'Los profesores pueden realizar cualquier acción dentro de un curso, incluyendo cambiar actividades y calificar a los estudiantes.';
 $string['defaultcourseteachers'] = 'Profesores';
 $string['defaulteditor'] = 'Editor por defecto';
-$string['defaulthomepageuser'] = 'Página principal';
-$string['defaulthomepageuser_help'] = 'Tu página principal es el primer enlace en la navegación.';
+$string['defaulthomepageuser'] = 'Página de Inicio';
+$string['defaulthomepageuser_help'] = '¿A qué página debe ser redirigido después de iniciar sesión en el sitio?';
 $string['delete'] = 'Borrar';
 $string['deleteablock'] = 'Eliminar un bloque';
 $string['deleteall'] = 'Borrar todo';
@@ -2259,8 +2259,8 @@ $string['weekhide'] = 'Ocultar esta semana a {$a}';
 $string['weeklyoutline'] = 'Diagrama semanal';
 $string['weeks'] = 'semanas';
 $string['weekshow'] = 'Mostrar esta semana a {$a}';
-$string['welcometocourse'] = 'Bienvenido a {$a}';
-$string['welcometocoursetext'] = 'Bienvenido a {$a->coursename}
+$string['welcometocourse'] = 'Bienvenido/a a {$a}';
+$string['welcometocoursetext'] = 'Bienvenido/a a {$a->coursename}
 
 Lo primero que debe hacer es actualizar su información personal: así podremos saber algo más sobre usted.
 

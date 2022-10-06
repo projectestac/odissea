@@ -250,9 +250,11 @@ $string['emaildigesttype_help'] = 'Den typ av meddelande som du kommer att få f
 * Sammanfattning - endast ämnen - du får ett sammanställt e-postmeddelande per dag som bara innehåller ämnet för varje foruminlägg.';
 $string['emptymessage'] = 'Något var fel med ditt inlägg.  Kanske skrev du inte in någon text, eller så var bilagan för stor. Dina ändringar har INTE sparats.';
 $string['errorcannotlock'] = 'Du har inte behörighet att låsa diskussioner.';
+$string['errordiscussionnotfound'] = 'Diskussionerna kunde inte hittas';
 $string['erroremptymessage'] = 'Inläggstexten får inte vara tom';
 $string['erroremptysubject'] = 'Rubriken får ej vara tom.';
 $string['errorenrolmentrequired'] = 'Du måste vara registrerad på den här kursen för att ta del av innehållet';
+$string['errorforumnotfound'] = 'Forumet den här diskussionen tillhör kunde inte hittas';
 $string['errorwhiledelete'] = 'Det uppstod ett fel när inlägget skulle tas bort.';
 $string['eventassessableuploaded'] = 'Innehåll har postats';
 $string['eventcoursesearched'] = 'Kurs sökt';

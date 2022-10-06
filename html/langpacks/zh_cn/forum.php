@@ -242,9 +242,11 @@ $string['emaildigesttype_help'] = '您将收到的每个讨论区的通知类型
 * 摘要 - 仅主题 - 您每天都将收到一封摘要电子邮件，其中仅包含每个新帖子的主题。';
 $string['emptymessage'] = '您的帖子出了点问题。也许您将其留空了，或者附件太大。您的更改<strong>还没有</strong>保存。';
 $string['errorcannotlock'] = '您没有锁定话题的权限。';
+$string['errordiscussionnotfound'] = '没有找到讨论';
 $string['erroremptymessage'] = '帖子正文不能为空';
 $string['erroremptysubject'] = '帖子主题不能为空。';
 $string['errorenrolmentrequired'] = '您必须先加入该课程才能访问此内容';
+$string['errorforumnotfound'] = '该讨论所属论坛未找到';
 $string['errorwhiledelete'] = '删除记录时发生错误。';
 $string['eventassessableuploaded'] = '某些内容已经发布。';
 $string['eventcoursesearched'] = '已搜索课程';

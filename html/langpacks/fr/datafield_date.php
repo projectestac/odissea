@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Champ date';
+$string['fieldtypelabel'] = 'Date';
 $string['pluginname'] = 'Date';
 $string['privacy:metadata'] = 'Le composant Champ date n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';

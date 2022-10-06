@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Champ texte long';
+$string['fieldtypelabel'] = 'Zone de texte';
 $string['maxbytes'] = 'Taille maximale en octets des fichiers intégrés';
 $string['maxbytes_desc'] = 'Si cette valeur est 0, la taille sera illimitée par défaut.';
 $string['pluginname'] = 'Zone de texte';

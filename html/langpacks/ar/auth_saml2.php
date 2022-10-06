@@ -52,7 +52,7 @@ $string['multiidpbuttons'] = 'الأزرار مع الأيقونات';
 $string['nullprivatecert'] = 'فشل إنشاء الشهادة الخاصة.';
 $string['nullpubliccert'] = 'فشل إنشاء الشهادة العامة.';
 $string['pluginname'] = 'SAML2';
-$string['privacy:no_data_reason'] = 'إن ملحق مصادقة Saml2 لا يخزن أي بيانات شخصية.';
+$string['privacy:no_data_reason'] = 'إن إضافة مصادقة Saml2 لا تخزن أي بيانات شخصية.';
 $string['privatekeypass'] = 'كلمة مرور مفتاح الشهادة الخاصة';
 $string['privatekeypass_help'] = 'هذا يستعمل لتوقيع شهادة مودل المحلية. تغييره سيجعل الشهادة الحالية خاطئة.';
 $string['spmetadata_help'] = '<a href=\'{$a}\'>معاينة البيانات الوصفية لمزود الخدمة</a> | <a href=\'{$a}?download=1\'>تنزيل البيانات الوصفية لمزود الخدمة</a>

@@ -8,21 +8,19 @@ Feature: Test creating a Multianswer Wiris (Cloze) question
     Given the "wiris" filter is "on"
     Given the "mathjaxloader" filter is "disabled"
     Given the following "users" exist:
-      | username | firstname | lastname | email               |
-      | teacher1 | T1        | Teacher1 | teacher1@moodle.com |
+      | username |
+      | teacher  |
     And the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1        | 0        |
     And the following "course enrolments" exist:
-      | user     | course | role           |
-      | teacher1 | C1     | editingteacher |
-    And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    And I navigate to "Question bank" in current page administration
+      | user    | course | role           |
+      | teacher | C1     | editingteacher |
 
   @javascript
   Scenario: Create a Cloze question
-    When I click on "Create a new question ..." "button"
+    When I am on the "Course 1" "core_question > course question bank" page logged in as teacher
+    And I press "Create a new question ..."
     And I choose the question type "Cloze - science"
     Then I set the following fields to these values:
       | Question name        | multianswer-wiris-001                    |
@@ -30,16 +28,16 @@ Feature: Test creating a Multianswer Wiris (Cloze) question
       | General feedback     | The capital of Germany is #r1.           |
     And I open Wiris Quizzes Studio
     And I click on "Random variables" "text"
-    And I wait "10" seconds
     And I add the variable "r1" with value "1"
     And I go back in Wiris Quizzes Studio
     And I save Wiris Quizzes Studio
-    And I click on "//*[@id='id_submitbutton']" "xpath_element"
+    And I press "id_submitbutton"
     Then I should see "multianswer-wiris-001" in the "categoryquestions" "table"
 
   @javascript
   Scenario: Create a broken Cloze question and correct it
-    When I click on "Create a new question ..." "button"
+    When I am on the "Course 1" "core_question > course question bank" page logged in as teacher
+    And I press "Create a new question ..."
     And I choose the question type "Cloze - science"
     And I set the field "Question name" to "multianswer-wiris-002"
     And I open Wiris Quizzes Studio
@@ -58,7 +56,8 @@ Feature: Test creating a Multianswer Wiris (Cloze) question
     And I should see "multianswer-wiris-002" in the "categoryquestions" "table"
 
   Scenario: Try to create a Cloze question that has no answer
-    When I click on "Create a new question ..." "button"
+    When I am on the "Course 1" "core_question > course question bank" page logged in as teacher
+    And I press "Create a new question ..."
     And I choose the question type "Cloze - science"
     And I set the following fields to these values:
       | Question name | multianswer-wiris-003         |
@@ -68,14 +67,14 @@ Feature: Test creating a Multianswer Wiris (Cloze) question
 
   @javascript
   Scenario: A teacher creates true false random
-    When I click on "Create a new question ..." "button"
+    When I am on the "Course 1" "core_question > course question bank" page logged in as teacher
+    And I press "Create a new question ..."
     And I choose the question type "Cloze - science"
     And I set the following fields to these values:
       | Question name | multianswer-wiris-004                                                                                    |
       | Question text | <p>Type -10: {:SA:=\#a}</p> <p>Type 5: {:SA:=5}</p> <p>Choose 5/57: {:MC:=\#b~1~2}</p> <p>Formula #b</p> |
     And I open Wiris Quizzes Studio
     And I click on "Random variables" "text"
-    And I wait "10" seconds
     And I add the variable "a" with value "-10"
     And I add the variable "b" with value "15/171"
     And I go back in Wiris Quizzes Studio

@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['oauthinfo'] = '<p>لاستعمال هذ الملحق، عليك تسجيل موقعك عند <a href="https://account.live.com/developers/applications">مايكروسوف</a>.</p><p>كجزء من عملية التسجيل، عليك إدخال الرابط الآتي بمثابة \'Redirect domain\':</p><p>{$a->callbackurl}</p><p>بمجرد التسجيل، سيتم تزويدك بمُعرَّف الزبون وكلمة السر واللذَين يمكن إدخالهما هنا.</p>';
+$string['oauthinfo'] = '<p>لاستعمال هذه الإضافة، عليك تسجيل موقعك عند <a href="https://account.live.com/developers/applications">مايكروسوف</a>.</p><p>كجزء من عملية التسجيل، عليك إدخال الرابط الآتي بمثابة \'Redirect domain\':</p><p>{$a->callbackurl}</p><p>بمجرد التسجيل، سيتم تزويدك بمُعرَّف الزبون وكلمة السر واللذَين يمكن إدخالهما هنا.</p>';

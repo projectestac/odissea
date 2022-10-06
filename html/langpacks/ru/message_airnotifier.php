@@ -69,6 +69,7 @@ $string['privacy:metadata:userfromid'] = 'ID пользователя - авто
 $string['privacy:metadata:userid'] = 'ID пользователя, отправившего сообщение.';
 $string['privacy:metadata:username'] = 'Логин пользователя.';
 $string['privacy:metadata:usersubsystem'] = 'Этот плагин подключен к пользовательской подсистеме.';
+$string['privacy:subcontext'] = 'Сообщения Airnotifier';
 $string['requestaccesskey'] = 'Запрос ключа доступа';
 $string['sendtest'] = 'Отправить тестовое push-уведомление на мои устройства';
 $string['sendtestconfirmation'] = 'На устройства, которые вы используете для подключения к этому сайту, будет отправлено тестовое push-уведомление. Убедитесь, что ваши устройства подключены к Интернету и мобильное приложение не открыто (поскольку push-уведомления отображаются только при получении в фоновом режиме).';

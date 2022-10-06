@@ -881,6 +881,7 @@ $string['scores'] = '分数';
 $string['search:activity'] = '测验 - 活动信息';
 $string['sectionheadingedit'] = '编辑标题“{$a}”';
 $string['sectionheadingremove'] = '移除标题“{$a}”';
+$string['sectionnoname'] = '无标题部分';
 $string['seequestions'] = '(参见试题)';
 $string['select'] = '选择';
 $string['selectall'] = '全选';

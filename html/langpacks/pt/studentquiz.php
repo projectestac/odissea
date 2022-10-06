@@ -168,7 +168,6 @@ $string['filter_label_rates'] = 'Classificação';
 $string['filter_label_show_mine'] = 'Minhas perguntas';
 $string['filter_label_tags'] = 'Etiqueta';
 $string['finish_button'] = 'Terminar';
-$string['image_placeholder'] = '[Imagem]';
 $string['invalidcomment'] = 'comentarioinválido';
 $string['invalidemail'] = 'Este endereço de e-mail não é válido. Digite um endereço de e-mail único.';
 $string['lastattempt_right'] = '✓';

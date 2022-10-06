@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Latitude/Longitude eremua';
-$string['pluginname'] = 'Latitude/Longitudea';
-$string['privacy:metadata'] = 'Latitude/Longitudea eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['fieldtypelabel'] = 'Koordenatuak';
+$string['pluginname'] = 'Koordenatuak';
+$string['privacy:metadata'] = 'Koordenatuak eremu-osagaiak ez du datu pertsonalik biltzen; datu-base moduluan zehaztutako taulak erabiltzen ditu.';

@@ -599,7 +599,7 @@ $string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
 \\@itempenalty=10000
 \\makeatother
 %
-\\newcommand{\\answerIs}[1]{} %%%Inaktivera visning av korrekt svar
+\\newcommand{\\answerIs}[1]{} %%%Inaktivera visning av rätt svar
 % \\newcommand{\\answerIs}[1]{[#1]} %%%Aktivera visning av rätt svar
 %%%
 

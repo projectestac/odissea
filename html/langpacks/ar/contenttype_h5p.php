@@ -31,4 +31,4 @@ $string['h5p:upload'] = 'رفع محتوى H5P جديد';
 $string['h5p:useeditor'] = 'إنشاء أو تحرير المحتوى باستعمال محرر H5P';
 $string['pluginname'] = 'H5P';
 $string['pluginname_help'] = 'بنك المحتوى لرفع ومشاركة محتوى H5P';
-$string['privacy:metadata'] = 'إن ملحق بنك محتوى H5P لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة بنك محتوى H5P لا تخزن أي بيانات شخصية.';

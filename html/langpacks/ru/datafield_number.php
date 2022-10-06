@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Поле «Число»';
+$string['fieldtypelabel'] = 'Число';
 $string['pluginname'] = 'Число';
 $string['privacy:metadata'] = 'Компонент поля базы данных «Число» сам по себе не хранит никаких персональных данных, он использует таблицы, определенные в mod_data.';

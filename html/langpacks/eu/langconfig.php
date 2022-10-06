@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['alphabet'] = 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,Ñ,O,P,Q,R,S,T,U,V,W,X,Y,Z';
+$string['am'] = 'am';
+$string['amcaps'] = 'AM';
 $string['backupnameformat'] = '%Y%m%d-%H%M';
 $string['dateintervaldayshoursmins'] = '%ad %hh %im';
 $string['decsep'] = ',';
@@ -40,6 +42,8 @@ $string['localewin'] = 'Basque';
 $string['localewincharset'] = 'WINDOWS-1252';
 $string['oldcharset'] = 'ISO-8859-1';
 $string['parentlanguage'] = '';
+$string['pm'] = 'pm';
+$string['pmcaps'] = 'PM';
 $string['strftimedate'] = '%Y(e)ko %Bk %d';
 $string['strftimedatefullshort'] = '%y/%m/%d';
 $string['strftimedatemonthabbr'] = '%Y %b %d';

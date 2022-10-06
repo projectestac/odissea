@@ -128,6 +128,7 @@ $string['eventassessableuploaded'] = '一个提交已经上传。';
 $string['eventassessmentevaluated'] = '核定评价';
 $string['eventassessmentevaluationsreset'] = '重置评价核定';
 $string['eventassessmentreevaluated'] = '重新核定评价';
+$string['eventphaseautomaticallyswitched'] = '阶段自动切换';
 $string['eventphaseswitched'] = '切换阶段';
 $string['eventsubmissionassessed'] = '评价提交';
 $string['eventsubmissionassessmentsreset'] = '清除提交评价';

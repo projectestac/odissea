@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Textbereichsfeld';
+$string['fieldtypelabel'] = 'Textbereich';
 $string['maxbytes'] = 'Maximale Größe eingebetteter Dateien (Bytes)';
 $string['maxbytes_desc'] = 'Der Wert Null bedeutet unbegrenzt';
 $string['pluginname'] = 'Textbereich';
-$string['privacy:metadata'] = 'Die Komponente \'Textbereichsfeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';
+$string['privacy:metadata'] = 'Die Feldkomponente \'Textbereich\' speichert keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

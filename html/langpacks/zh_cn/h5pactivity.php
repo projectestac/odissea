@@ -126,6 +126,7 @@ $string['review_on_completion'] = '参与者可以回顾自己的尝试';
 $string['review_user_attempts'] = '查看用户尝试次数（{$a}）';
 $string['score'] = '得分';
 $string['score_out_of'] = '{$a->rawscore} / {$a->maxscore}';
+$string['search:activity'] = 'H5P - 活动信息';
 $string['startdate'] = '开始日期';
 $string['statement_received'] = '查看用户尝试次数（{$a}）';
 $string['totalscore'] = '总分';

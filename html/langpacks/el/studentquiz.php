@@ -118,7 +118,6 @@ $string['filter_label_rates'] = 'Αξιολόγηση';
 $string['filter_label_show_mine'] = 'Οι ερωτήσεις μου';
 $string['filter_label_tags'] = 'Ετικέτα';
 $string['finish_button'] = 'Ολοκλήρωση';
-$string['image_placeholder'] = '[Εικόνα]';
 $string['invalidcomment'] = 'μηέγκυροσχόλιο';
 $string['invalidemail'] = 'Αυτή η διεύθυνση δεν είναι έγκυρη. Παρακαλούμε, δώστε μία απλή διεύθυνση ηλε.ταχυδρομείου.';
 $string['lastattempt_right'] = '✓';

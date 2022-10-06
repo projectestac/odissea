@@ -62,9 +62,9 @@ $string['scoringkprimeonezero'] = 'Kprime1/0';
 $string['scoringkprimeonezero_help'] = 'O aluno obtém a nota máxima se todas as respostas estão corretas e zero em todos os outros casos.';
 $string['scoringmethod'] = 'Método de avaliação';
 $string['scoringmethod_help'] = '<strong>Kprime:</strong> O aluno obtém a nota máxima se todas as respostas estão corretas, metade da nota se apenas uma está incorreta e zero nos outros casos.<br /><strong> Kprime1/0:</strong> O aluno obtém a nota máxima se todas as respostas estão corretas e zero em todos os outros casos.
-<br/><strong>Sub-pontos:</strong> Ao aluno são atribuídos sub-pontos para cada resposta correta.';
-$string['scoringsubpoints'] = 'Sub-pontos';
-$string['scoringsubpoints_help'] = 'O aluno recebe sub-pontos por cada resposta correta.';
+<br/><strong>Subpontos:</strong> Ao aluno são atribuídos subpontos para cada resposta correta.';
+$string['scoringsubpoints'] = 'Subpontos';
+$string['scoringsubpoints_help'] = 'O aluno recebe subpontos por cada resposta correta.';
 $string['showscoringmethod'] = 'Mostrar método de pontuação';
 $string['showscoringmethod_help'] = 'Se ativar esta opção, os alunos verão o método de pontuação nos testes.';
 $string['shuffleanswers'] = 'Baralhar opções';

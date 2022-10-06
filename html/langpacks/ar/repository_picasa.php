@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'مُعرَّف الزبون';
 $string['configplugin'] = 'تهيئة مستودع Picasa';
-$string['oauthinfo'] = '<p>لاستعمال هذ الملحق، عليك تسجيل موقعك في Google، كما هو موصوف في التوثيقات <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>كجزء من عملية التسجيل، عليك إدخال الرابط الآتي بمثابة \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p><p>بمجرد التسجيل، سيتم تزويدك بمُعرَّف الزبون وكلمة السر وبهما يمكنك تهيئة كل ملاحق Google Drive و Picasa.';
+$string['oauthinfo'] = '<p>لاستعمال هذه الإضافة، عليك تسجيل موقعك في Google، كما هو موصوف في التوثيقات <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>كجزء من عملية التسجيل، عليك إدخال الرابط الآتي بمثابة \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p><p>بمجرد التسجيل، سيتم تزويدك بمُعرَّف الزبون وكلمة السر وبهما يمكنك تهيئة كل إضافات Google Drive و Picasa.';
 $string['picasa:view'] = 'معاينة مستودع picasa';
 $string['pluginname'] = 'ألبوم ويب Picasa';
 $string['privacy:metadata:repository_picasa'] = 'إن ملحق مستودع ألبوم ويب Picasa لا يخزن أي بيانات شخصية، ولكنه ينقل بيانات المستخدمين من مودل إلى نظام خارجي';

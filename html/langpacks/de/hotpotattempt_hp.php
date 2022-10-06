@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'HotPotatoes-Output-Formate';
+$string['privacy:metadata'] = 'Das Modul "HotPotatoes-Output-Formate" speichert keine personenbezogenen Daten.';

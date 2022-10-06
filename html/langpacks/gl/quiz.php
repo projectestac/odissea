@@ -892,6 +892,7 @@ $string['scores'] = 'Puntuacións';
 $string['search:activity'] = 'Proba, información de actividade';
 $string['sectionheadingedit'] = 'Editar a cabeceira «{$a}»';
 $string['sectionheadingremove'] = 'Retirar a cabeceira «{$a}»';
+$string['sectionnoname'] = 'Sección sen título';
 $string['seequestions'] = '(Ver as preguntas)';
 $string['select'] = 'Seleccionar';
 $string['selectall'] = 'Seleccionar todo';

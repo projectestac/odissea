@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'تراجع/إعادة';
-$string['privacy:metadata'] = 'إن ملحق atto_undo لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_undo لا تخزن أي بيانات شخصية.';
 $string['redo'] = 'إعادة';
 $string['undo'] = 'تراجع';

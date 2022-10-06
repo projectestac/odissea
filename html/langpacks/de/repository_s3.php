@@ -31,5 +31,5 @@ $string['endpoint'] = 'Amazon S3 Endpoint';
 $string['needaccesskey'] = 'Zugangsschlüssel muss vorliegen';
 $string['pluginname'] = 'Amazon S3';
 $string['privacy:metadata'] = 'Das Amazon S3 Repository Plugin speichert keine personenbezogenen Daten. Es überträgt aber Nutzerdaten von Moodle an das externe System.';
-$string['s3:view'] = 'Amazon S3 Repository sehen';
+$string['s3:view'] = 'Amazon S3 Repository anzeigen';
 $string['secret_key'] = 'Sicherheitsschlüssel';

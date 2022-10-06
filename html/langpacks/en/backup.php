@@ -38,7 +38,7 @@ $string['asyncemailenable'] = 'Enable message notifications';
 $string['asyncemailenabledetail'] = 'If enabled, users will receive a message when an asynchronous backup or restore completes.';
 $string['asyncgeneralsettings'] = 'Asynchronous backup/restore';
 $string['asyncmessagebody'] = 'Message';
-$string['asyncmessagebodydefault'] = 'Hi {user_firstname},<br/> Your {operation} (ID: {backupid}) has completed successfully. <br/><br/>You can access it here: {link}.';
+$string['asyncmessagebodydefault'] = 'Your {operation} (ID: {backupid}) has completed successfully. You can access it here: <a href="{link}">{link}</a>.';
 $string['asyncmessagebodydetail'] = 'Message to send when an asynchronous backup or restore completes.';
 $string['asyncmessagesubject'] = 'Subject';
 $string['asyncmessagesubjectdefault'] = 'Moodle {operation} completed successfully';
@@ -173,7 +173,7 @@ $string['copycoursedesc'] = 'This course will be duplicated and put into the sel
 $string['copycourseheading'] = 'Copy a course';
 $string['copycoursetitle'] = 'Copy course: {$a}';
 $string['copydest'] = 'Destination';
-$string['copyfieldnotfound'] = 'A required field was not found';
+$string['copyfieldnotfound'] = 'Required field data was not found for field(s): {$a}';
 $string['copyformfail'] = 'AJAX submission of course copy form has failed.';
 $string['copyingcourse'] = 'Course copying in progress';
 $string['copyingcourseshortname'] = 'copying';

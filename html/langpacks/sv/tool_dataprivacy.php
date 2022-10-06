@@ -140,6 +140,7 @@ $string['effectiveretentionperioduser'] = '{$a} (efter sista tillfället som anv
 $string['emailsalutation'] = 'Hej {$a},';
 $string['errorcannotrequestdeleteforother'] = 'Du har inte behörighet att skapa borttagningsbegäran för den här användaren.';
 $string['errorcannotrequestdeleteforself'] = 'Du har inte behörighet att skapa borttagningsbegäran åt dig själv.';
+$string['errorcannotrequestexportforself'] = 'Du saknar behörighet att skapa en exportbegäran åt dig själv.';
 $string['errorcontactdpodisabled'] = 'Alternativet för att kontakta dataskyddsansvarige är inaktiverat.';
 $string['errorcontexthasunexpiredchildren'] = 'Kontexten "{$a}" har fortfarande underkontexter som ännu inte har löpt ut. Inga kontexter har flaggats för borttagning.';
 $string['errorinvalidrequestcomments'] = 'Vänligen se till att din kommentar endast innehåller klartext.';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Textfeld';
-$string['pluginname'] = 'Textzeile';
-$string['privacy:metadata'] = 'Die Komponente \'Textzeile\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';
+$string['fieldtypelabel'] = 'Kurzer Text';
+$string['pluginname'] = 'Kurzer Text';
+$string['privacy:metadata'] = 'Die Feldkomponente \'Kurzer Text\' speichert keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

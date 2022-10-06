@@ -158,10 +158,10 @@ Oharra: jasotzaileak egiaztatzeko, ez aldatu ezarpen hau behin dominak ematen ha
 $string['badgesdisabled'] = 'Dominak ez daude gaituta gune honetan';
 $string['badgesearned'] = 'Lortutako domina-kopurua: {$a}';
 $string['badgesettings'] = 'Dominen ezarpenak';
-$string['badgestatus_0'] = 'Ez dago eskuragarri erabiltzaileentzat';
-$string['badgestatus_1'] = 'Eskura erabiltzaileentzat';
-$string['badgestatus_2'] = 'Ez dago eskuragarri erabiltzaileentzat';
-$string['badgestatus_3'] = 'Eskura erabiltzaileentzat';
+$string['badgestatus_0'] = 'Ez dago eskuragarri';
+$string['badgestatus_1'] = 'Eskuragarri';
+$string['badgestatus_2'] = 'Ez dago eskuragarri (irizpideak blokeatuta)';
+$string['badgestatus_3'] = 'Eskuragarri (irizpideak blokeatuta)';
 $string['badgestatus_4'] = 'Artxibatua';
 $string['badgestoearn'] = 'Eskura daitekeen domina-kopurua: {$a}';
 $string['badgesview'] = 'Ikastaroko dominak';

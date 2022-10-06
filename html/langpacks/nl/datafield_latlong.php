@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Breedtegraad/lengtegraad-veld';
-$string['pluginname'] = 'Coördinaat';
-$string['privacy:metadata'] = 'De lengtegraad/breedtegraad-component bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';
+$string['fieldtypelabel'] = 'Coördinaten';
+$string['pluginname'] = 'Coördinaten';
+$string['privacy:metadata'] = 'De coördinaten-component bewaart geen persoonlijke gegevens, maar gebruikt tabellen in mod_data.';

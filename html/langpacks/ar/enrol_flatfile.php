@@ -65,7 +65,7 @@ $string['pluginname_desc'] = 'هذه الطريقة ستقوم بالتحقق د
    del, student, 17, CF101
    add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
-$string['privacy:metadata:enrol_flatfile'] = 'إن ملحق الانضمام بالملف المنبسط (CSV) قد يخزن بيانات شخصية تتعلق بالانضمامات المستقبلية في جدول enrol_flatfile.';
+$string['privacy:metadata:enrol_flatfile'] = 'إن إضافة الانضمام بالملف المنبسط (CSV) قد تخزن بيانات شخصية تتعلق بالانضمامات المستقبلية في جدول enrol_flatfile.';
 $string['privacy:metadata:enrol_flatfile:action'] = 'إجراء الانضمام المتوقع عند التاريخ المعطى';
 $string['privacy:metadata:enrol_flatfile:courseid'] = 'مُعرَّف المقرر الذي يتعلق به الانضمام';
 $string['privacy:metadata:enrol_flatfile:roleid'] = 'مُعرَّف الدور الذي سيتم تعيينه أو إلغاء تعيينه';

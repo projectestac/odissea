@@ -63,12 +63,11 @@ class qtype_shortanswerwiris_test_helper extends question_test_helper {
         $form->wirisquestion = '<question><correctAnswers><correctAnswer>math</correctAnswer><correctAnswer id="1">mat
                                 </correctAnswer><correctAnswer id="2">*</correctAnswer></correctAnswers><assertions>
                                 <assertion name="syntax_math"/><assertion name="equivalent_symbolic"/>
-                                <assertion name="syntax_math" correctAnswer="1" answer="1"/>
-                                <assertion name="equivalent_symbolic" correctAnswer="1" answer="1"/>
-                                assertion name="syntax_math" correctAnswer="2" answer="2"/>
-                                <assertion name="equivalent_symbolic" correctAnswer="2" answer="2"/></assertions><slots><slot>
-                                <initialContent></initialContent></slot><slot id="1"><initialContent></initialContent></slot>
-                                <slot id="2"><initialContent></initialContent></slot></slots></question>';
+                                <assertion name="syntax_math" correctAnswer="1" answer="0"/>
+                                <assertion name="equivalent_symbolic" correctAnswer="1" answer="0"/>
+                                assertion name="syntax_math" correctAnswer="2" answer="0"/>
+                                <assertion name="equivalent_symbolic" correctAnswer="2" answer="0"/></assertions><slots><slot>
+                                <initialContent></initialContent></slot></slots></question>';
         $form->wirislang = 'en';
         $form->wiristruefalse = '';
         return $form;

@@ -44,4 +44,4 @@ $string['privacy:metadata:timeend'] = 'Endzeitpunkt  der Logeinsicht';
 $string['privacy:metadata:userid'] = 'Nutzer-ID, die mit dieser Tabelle verbunden ist';
 $string['privacy:monthlypath'] = 'Monatliche Statistik';
 $string['privacy:weeklypath'] = 'Wöchentliche Statistik';
-$string['stats:view'] = 'Übersicht der Kursstatistiken ansehen';
+$string['stats:view'] = 'Übersicht der Kursstatistiken anzeigen';

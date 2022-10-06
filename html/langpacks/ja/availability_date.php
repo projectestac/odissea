@@ -31,6 +31,7 @@ $string['direction_before'] = '日付';
 $string['direction_from'] = '開始';
 $string['direction_label'] = ':';
 $string['direction_until'] = '終了';
+$string['error_dateconflict'] = '他の日付制限と矛盾しています。';
 $string['full_from'] = '<strong>{$a}</strong> 以後';
 $string['full_from_date'] = '<strong>{$a}</strong> またはそれ以後';
 $string['full_until'] = '<strong>{$a}</strong> 以前';

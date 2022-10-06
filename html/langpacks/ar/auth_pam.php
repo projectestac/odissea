@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_passwordisexpired'] = 'انتهت صلاحية كلمة مرورك. هل ترغب في تغيرهاالآن؟';
 $string['auth_passwordwillexpire'] = 'ستنتهي صلاحية كلمة مرورك خلال {$a} أيام. هل ترغب في تغييرها الآن؟';
 $string['pluginname'] = 'PAM (وحدات التوثيق القابلة للتوصيل)';
-$string['privacy:metadata'] = 'إن ملحق PAM (Pluggable Authentication Modules وحدات المصادقة القابلة للتوصيل) لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة PAM (Pluggable Authentication Modules وحدات المصادقة القابلة للتوصيل) لا تخزن أي بيانات شخصية.';

@@ -29,6 +29,7 @@ $string['addmorechoiceblanks'] = 'Шаблоны для еще {no} вариан
 $string['answer'] = 'Ответ';
 $string['blank'] = 'пусто';
 $string['correctansweris'] = 'Верный ответ: {$a}';
+$string['errorlimitedchoice'] = 'Вариант [[{$a}]] использовался более одного раза без установленного значения «Неограниченно». Пожалуйста, перепроверьте этот вопрос.';
 $string['infinite'] = 'Несколько';
 $string['pleaseputananswerineachbox'] = 'Пожалуйста, введите ответ в каждое поле';
 $string['pluginname'] = 'Перетаскивание в текст';

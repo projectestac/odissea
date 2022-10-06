@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'テキストフィールド';
-$string['pluginname'] = 'テキスト入力';
-$string['privacy:metadata'] = 'テキストフィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['fieldtypelabel'] = '短文テキスト';
+$string['pluginname'] = '短文テキスト';
+$string['privacy:metadata'] = '短文テキストフィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

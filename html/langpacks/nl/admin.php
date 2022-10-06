@@ -165,7 +165,7 @@ $string['computedfromlogs'] = 'Berekend uit logs sinds {$a}';
 $string['condifmodeditdefaults'] = 'Er worden standaardwaarden gebruikt in het instellingenformulier wanneer je een nieuwe bron of activiteit maakt.';
 $string['confeditorhidebuttons'] = 'Kies de knoppen die in de HTML-editor verborgen moeten zijn.';
 $string['configallcountrycodes'] = 'Dit is de lijst van landen die op verschillende plaatsen geselecteerd zijn, bijvoorbeeld in een gebruikersprofiel. Als die leeg is (standaardinstelling) dan wordt de lijst in countries.php in het standaard Engelstalig taalpkakket gebruikt. Dat is de lijst van ISO-3166-1. Je kunt ook een kommagescheiden lijst met codes geven, bijvoorbeeld \'GB, FR, ES\'. Als je nieuwe , niet-standaardcodes hier toevoegt, dan moet je ze ook toevoegen in countries.php in \'en\' een in je taalpakket.';
-$string['configallowassign'] = 'Je kunt mensen met de rollen aan de linkerkant toestaan om sommige rollen uit de kolom aan anderen te geven.';
+$string['configallowassign'] = 'Kies voor elke rol in de linker kolom welke rollen die kunnen toewijzen aan anderen.';
 $string['configallowattachments'] = 'Door deze instelling in te schakelen sta je toe dat bestanden als bijlage verstuurd kunnen worden met e-mails die gegenereerd worden door allerlei functies op deze site, zoals badges.';
 $string['configallowblockstodock'] = 'Indien dit ingeschakeld is en ondersteund wordt door het gekozen thema, dan kunnen gebruikers blokken verplaatsen naar een speciaal paneel.';
 $string['configallowcategorythemes'] = 'Als je dit inschakelt, dan kunnen thema\'s op categorieniveau gekozen worden. Die keuze wordt dan doorgetrokken naar alle onderliggende categorieën en cursussen, tenzij daar een eigen thema ingesteld is. WAARSCHUWING: het inschakelen van categoriethema\'s kan de performantie negatief beïnvloeden.';
@@ -178,15 +178,15 @@ $string['configallowemojipickerincompatible'] = 'Je huidige databank-configurati
 $string['configallowguestmymoodle'] = 'Indien ingeschakeld kunnen gasten "Mijn startpagina" bezoeken, anders worden gasten naar de site startpagina gestuurd.';
 $string['configallowobjectembed'] = 'Als standaard beveiligingsmaatregel kunnen gewone gebruikers geen multimedia (zoals Flash) in teksten insluiten door gebruik te maken van EMBED en OBJECT tags in hun HTML (hoewel het veilig ingesloten kan worden met de mediaplugins filter). Als je deze tags toch wil laten gebruiken, dan kun je deze optie inschakelen';
 $string['configallowoverride'] = 'Je kunt toestaan om mensen met rollen aan de linkerkant sommige rollen te overschrijven';
-$string['configallowoverride2'] = 'Kies welke rol(len) overschreven kan worden door een andere rol in de linker kolom.<br /> Merk op dat deze instelling enkel geldt voor gebruikers waarvan de mogelijkheid  moodle/role:override of de mogelijkheid moodle/role:safeoverride toegelaten is.';
-$string['configallowswitch'] = 'Selecteer naar welke rollen een gebruiker mag schakelen, gebaseerd op de rollen die hij al heeft. Bovenop de instellingen in deze tabel heeft een gebruiker ook de mogelijkheid moodle/role:switchroles nodig om zijn rol te kunnen omschaklen. <br />Merk op dat het alleen mogelijlk is te schakelen naar rollen die de moodle/course:view mogelijkheid hebben en die niet de mogelijkheid moodle/site:doanything hebben. Daarom kunnen sommige kolommen in deze tabel uitgeschakeld zijn.';
+$string['configallowoverride2'] = 'Kies voor elke rol in de linker kolom welke rollen die overschrijvingen kunnen voor maken.<br /> Gebruikers moeten ook de mogelijkheid  moodle/role:override of de mogelijkheid moodle/role:safeoverride toegekend hebben.';
+$string['configallowswitch'] = 'Kies voor elke rol in de linker kolom welke rollen gebruikers kunnen naar overschakelen<br /> Gebruikers moeten ook de mogelijkheid moodle/role:switchroles hebben.';
 $string['configallowthemechangeonurl'] = 'Als je deze instelling inschakelt, dan kan het thema gewijzigd worden door het volgende toe te voegen: <br /> ofwel ?theme=themename aan gelijk welke Moodle URL (vb: mymoodlesite.com/?theme=afterburner ) of <br />&theme=themename aan elke interne  Moodle URL (vb: mymoodlesite.com/course/view.php?id=2&theme=afterburner ).';
 $string['configallowuserblockhiding'] = 'Wil je gebruikers toelaten om blokken te verbergen of te tonen? Deze functie gebruikt Javascript en cookies om de status van elk samenklapbaar blok te bewaren en heeft enkel gevolg voor het beeld van de individuele gebruiker.';
 $string['configallowusermailcharset'] = 'Door dit in te schakelen, kan elke gebruiker van de site zijn eigen tekenset kiezen voor berichten.';
 $string['configallowuserswitchrolestheycantassign'] = 'Standaard is moodle/role:assign vereist om gebruikers toe te laten de schakelaar om van rol te wisselen te gebruiken. Deze instelling inschakelen verwijdert deze vereiste, waardoor de mogelijke rollen in het rolmenu alleen nog bepaald worden door de instellingen in de "Toewijzen van rollen toestaan"-tabel.
 Het is aangewezen in dde "Toewijzen van rollen toestaan"-tabel gebruikers niet het recht te geven rollen toe te wijzen met meer mogelijkheden dan hun eigen rol.';
 $string['configallowuserthemes'] = 'Als je dit inschakelt, dan kunnen gebruikers hun eigen thema kiezen. Gebruikersthema\'s gaan boven sitethema\'s (maar niet boven cursusthema\'s)';
-$string['configallowview'] = 'Selecteer de rollen die een gebruiker te zien krijgt, op kan filteren enz., gebaseerd op de rollen die ze al hebben.';
+$string['configallowview'] = 'Kies voor elke rol in de linker kolom welke rollen die kunnen bekijken, zoeken en op filteren.';
 $string['configallusersaresitestudents'] = 'Moeten ALLE gebruikers als leerlingen beschouwd worden voor activiteiten op de startpagina van de site? Als je hier "Ja" kiest, dan zullen alle bevestigde accounts hier als leerling kunnen meedoen aan alle activiteiten. Als je hier "Nee" kiest, dan zullen alleen gebruikers die minstens van één cursus lid zijn kunnen meedoen aan die startpagina-activiteiten.';
 $string['configauthenticationplugins'] = 'Kies de authenticatieplugins die je wenst te gebruiken en rangschik ze in volgorde, zodat diegene met het meeste kans op succes heeft, bovenaan staat.';
 $string['configautolang'] = 'Detecteer de standaardtaal uit de browserinstelling. Indien uitgeschakeld, wordt de standaardtaal van de site gebruikt.';
@@ -211,7 +211,7 @@ $string['configcronremotepassword'] = 'Dit betekent dat het script cron.php niet
 https://site.voorbeeld.com/admin/cron.php?password=opensesame
 </pre> Als dit leeg gelaten wordt, is er geen wachtwoord nodig.';
 $string['configcurlcache'] = 'Levenduur van cURL-cache in seconden.';
-$string['configcustommenuitems'] = 'Je kunt hier een aangepast menu laten tonen door thema\'s. Zet elk menu-item op een nieuwe regel met volgende opmaak: menu tekst, een URL (optioneel - niet voor een topmenu met sub-items), een tooltip titel (optioneel) en een taalcode of komma-gescheiden lijst met codes (optioneel, om de lijn aan gebruikers van een bepaalde taal te tonen), gescheiden door pipe tekens ( | ).
+$string['configcustommenuitems'] = 'Je kunt hier een aangepast menu configuren. Zet elk menu-item op een nieuwe regel met volgende opmaak: menu tekst, een URL (optioneel - niet voor een topmenu met sub-items), een tooltip titel (optioneel) en een taalcode of komma-gescheiden lijst met codes (optioneel, om de lijn aan gebruikers van een bepaalde taal te tonen), gescheiden door pipe tekens ( | ).
 Regels die beginnen met een liggend streepje zullen als menu-items verschijnen in het vorige top-menu en ###-tekens maken een scheiding.
 Bijvoorbeeld:
 <pre>
@@ -221,7 +221,7 @@ Cursussen
 -###
 -FAQ|https://voorbeeld.com/faq
 -Preguntas más frecuentes|https://vooorbeeld.com/faq|es
--Moble app|https://voorbeeld.com/app|Download onze app
+-Mobile app|https://voorbeeld.com/app|Download onze app
 </pre>';
 $string['configcustomusermenuitems'] = 'Je kunt de inhoud van het gebruikersmenu configureren (uitgezonderd de link om af te melden, die wordt automatisch toegevoegd). Elke lijn wordt gescheiden door een verticale lijn of pipe (|)  en bestaat uit 1) een string in het formaat "taalstringnaam, componentnaam" of als platte tekst, 2) een URL en 3) een icoontje als een pix-icoon (in de pix-map met als structuur  [subfoldername]/[iconname], vb. i/publish) of als URL.
 Je kunt scheidingen maken waar je wil door een regel met één of meer #-tekens in te voegen.';
@@ -452,7 +452,7 @@ $string['courselistshortnames_desc'] = 'Toon zowel korte als volledige namen tij
 $string['coursemgmt'] = 'Beheer cursussen en categorieën';
 $string['courseoverview'] = 'Cursusoverzicht';
 $string['courserequestnotify'] = 'Melding cursusaanvragen';
-$string['courserequestnotifyemail'] = 'Gebruiker {$a->user} vroeg een nieuwe cursus aan op {$a->link}';
+$string['courserequestnotifyemail'] = 'Gebruiker {$a->user} vroeg een nieuwe cursus aan op  <a href="{$a->link}">{$a->link}</a>';
 $string['courserequests'] = 'Cursusaanvragen';
 $string['courserequestspending'] = 'Cursusaanvragen';
 $string['courses'] = 'Cursussen';
@@ -893,7 +893,7 @@ $string['moodlepartners_help'] = '<p>Moodle Partners zijn door Moodle HQ gecerti
 <a href="https://moodle.com/partners">Moodle Partner zoeken</a>';
 $string['moodleservices'] = 'Moodle services';
 $string['moodleservices_help'] = 'Haal het beste uit je Moodle leeromgeving door gebruik te maken van volgende Moodle services:';
-$string['multilangforceold'] = 'Oude multilang syntax opleggen: &lt;span&gt; zonder class="multilang" en &lt;lang&gt;';
+$string['multilangforceold'] = 'Oude multilang-syntaxis afdwingen: &lt;span&gt; zonder de class="multilang" en &lt;lang&gt;';
 $string['mustenablestats'] = 'Op deze server zijn Statistieken nog uitgeschakeld';
 $string['mycoursesperpage'] = 'Maximaal aantal cursussen';
 $string['mydashboard'] = 'Standaard startpagina van het systeem';
@@ -1530,6 +1530,9 @@ $string['warningcurrentsetting'] = 'Foute waarde: {$a}';
 $string['warningiconvbuggy'] = 'Je versie van de iconv bibliotheek ondersteunt de //IGNORE modifier niet. Je moet de mbstring extentie installeren die in de plaats gebruikt kan worden om strings te zuiveren van ongeldige UTF-8 tekens';
 $string['webproxy'] = 'Web proxy';
 $string['webproxyinfo'] = 'Vul onderstaande opties in als je Moodle server niet rechtstreeks op internet kan. Internettoegang is nodig voor de download van geografische informatie, taalpakketten, RSS-feeds, tijdzones enz.<br /><em>Je kunt best de PHP cURL extentie installeren.</em>';
+$string['xmlrpcmaharaenabled'] = 'Er is gedetecteerd dat het Mahara ePortfolio is ingeschakeld op jouw site. Deze functie is afhankelijk van de PHP XML-RPC-extensie die niet langer wordt onderhouden door PHP.';
+$string['xmlrpcmnetenabled'] = 'Er is gedetecteerd dat Moodle Networking is ingeschakeld op jouw site. Deze functie is afhankelijk van de PHP XML-RPC-extensie die niet langer wordt onderhouden door PHP.';
 $string['xmlrpcrecommended'] = 'De XMLRPC-extentie is nuttig voor de web services en Moodle Netwerk';
+$string['xmlrpcwebserviceenabled'] = 'Er is gedetecteerd dat het XML-RPC-webserviceprotocol is ingeschakeld op jouw site. Deze functie is afhankelijk van de PHP XML-RPC-extensie die niet langer wordt onderhouden door PHP.';
 $string['yuicomboloading'] = 'YUI combo aan het laden';
 $string['ziprequired'] = 'De ZIP-PHP-extentie is nu vereist voor Moodle. Info-ZIP en PclZip worden niet meer gebruikt.';

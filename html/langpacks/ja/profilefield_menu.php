@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'ドロップダウンメニュー';
-$string['privacy:metadata:profilefield_menu:data'] = 'ドロップダウンメニューユーザプロファイルフィールドのユーザデータです。';
-$string['privacy:metadata:profilefield_menu:dataformat'] = 'ドロップダウンメニューユーザプロファイルフィールドのユーザデータのフォーマットです。';
+$string['pluginname'] = 'ドロップダウンメニュ';
+$string['privacy:metadata:profilefield_menu:data'] = 'ドロップダウンメニュユーザプロファイルフィールドのユーザデータです。';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'ドロップダウンメニュユーザプロファイルフィールドのユーザデータのフォーマットです。';
 $string['privacy:metadata:profilefield_menu:fieldid'] = 'プロファイルフィールドのIDです。';
 $string['privacy:metadata:profilefield_menu:tableexplanation'] = '追加プロファイルデータです。';
-$string['privacy:metadata:profilefield_menu:userid'] = 'ドロップダウンメニューユーザプロファイルフィールドにデータが保存されるユーザのIDです。';
+$string['privacy:metadata:profilefield_menu:userid'] = 'ドロップダウンメニュユーザプロファイルフィールドにデータが保存されるユーザのIDです。';

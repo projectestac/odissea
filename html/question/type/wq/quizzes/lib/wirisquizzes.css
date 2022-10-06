@@ -608,10 +608,10 @@
   flex: 4;
   min-width: 0px;
 }
-.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioCorrectAnswerComponent .wrsUI_aux_mathTypeComponentWrapper {
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioCorrectAnswerComponent .wrsUI_mainComponentMathtype .wrsUI_aux_mathTypeComponentWrapper {
   display: inline;
 }
-.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioCorrectAnswerComponent .wrsUI_aux_mathTypeComponentWrapper .wrs_editor {
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioCorrectAnswerComponent .wrsUI_mainComponentMathtype .wrsUI_aux_mathTypeComponentWrapper .wrs_editor {
   min-height: 300px;
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList {

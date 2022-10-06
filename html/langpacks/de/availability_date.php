@@ -31,6 +31,7 @@ $string['direction_before'] = 'Datum';
 $string['direction_from'] = 'ab';
 $string['direction_label'] = 'Richtung';
 $string['direction_until'] = 'bis';
+$string['error_dateconflict'] = 'Konflikte mit anderer Datumsvoraussetzung';
 $string['full_from'] = 'Zeit nach <strong>{$a}</strong>';
 $string['full_from_date'] = 'Zeit ab <strong>{$a}</strong>';
 $string['full_until'] = 'Zeit bis <strong>{$a}</strong>';

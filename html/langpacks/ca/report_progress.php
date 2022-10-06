@@ -25,8 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityorder'] = 'Ordre de les activitats';
+$string['allactivitiesandresources'] = 'Totes les activitats i recursos';
+$string['alphabetical'] = 'Alfabètic';
+$string['include'] = 'Inclou';
+$string['orderincourse'] = 'Ordre en el curs';
 $string['page-report-progress-index'] = 'Informe de compleció d\'activitats';
 $string['page-report-progress-user'] = 'Informe de compleció d\'activitats de l\'usuari';
 $string['page-report-progress-x'] = 'Qualsevol informe de compleció d\'activitats';
 $string['pluginname'] = 'Compleció de l\'activitat';
+$string['privacy:metadata'] = 'L\'informe de compleció d\'activitat només mostra les dades emmagatzemades en altres ubicacions.';
 $string['progress:view'] = 'Veure informes de compleció d\'activitats';

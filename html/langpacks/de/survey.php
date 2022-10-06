@@ -191,7 +191,7 @@ Ihre Antworten können uns helfen, zukünftig die Präsentation und das Lernange
 Herzlichen Dank!';
 $string['collespname'] = 'COLLES (bevorzugt)';
 $string['completiondetail:submit'] = 'Antworten einreichen';
-$string['completionsubmit'] = 'Teilnehmer/innen müssen für die Aktivität etwas abgeben, um sie zu beenden.';
+$string['completionsubmit'] = 'Teilnehmer/in muss eine Abgabe machen';
 $string['customintro'] = 'Beschreibung';
 $string['deleteallanswers'] = 'Alle Umfrageeinträge löschen';
 $string['deleteanalysis'] = 'Alle Auswertungen der Umfrageeinträge löschen';

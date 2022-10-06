@@ -74,7 +74,7 @@ $string['addmorebookings'] = 'Aggiungi ulteriori prenotazioni';
 $string['addnewbookingoption'] = 'Aggiungi una nuova opzione di prenotazione';
 $string['addnewbookingoptionfromtemplate'] = 'Aggiungi una nuova opzione di prenotazione dal modello';
 $string['addnewcategory'] = 'Aggiungi una nuova categoria';
-$string['addnewinstitution'] = 'una nuova istituzioneAggiungi un\'organizzazione';
+$string['addnewinstitution'] = 'Aggiungi un\'organizzazione';
 $string['addnewlocation'] = 'Aggiungi un nuovo luogo';
 $string['addnewreporttemplate'] = 'Aggiungi un nuovo modello di report';
 $string['addnewtagtemplate'] = 'Aggiungi un modello di tag';
@@ -550,7 +550,7 @@ $string['deleterule'] = 'Cancellare';
 $string['deletesubcategory'] = 'Per favore, prima cancella tutte le sottocategorie di questa categoria!';
 $string['deleteuserfrombooking'] = 'Vuoi veramente cancellare gli utenti dalla prenotazione?';
 $string['delnotification'] = 'Hai eliminato {$a->del} di {$a->all} utenti. Gli utenti che hanno completato l\'attività non possono essere cancellati!';
-$string['delnotificationactivitycompletion'] = 'You deleted {$a->del} of {$a->all} users. Gli utenti che hanno completato l\'attività non possono essere cancellati!';
+$string['delnotificationactivitycompletion'] = 'Hai eliminato {$a->del} su {$a->all} utenti. Gli utenti che hanno completato l\'attività non possono essere eliminati.';
 $string['description'] = 'Descrizione';
 $string['disablebookingusers'] = 'Disattiva la prenotazione degli utenti: nascondi il pulsante Prenota ora.';
 $string['donotselectcourse'] = 'Nessun corso selezionato';
@@ -659,6 +659,7 @@ $string['importexceltitle'] = 'Completamento dell\'attività di importazione';
 $string['importfinished'] = 'Importazione terminata!';
 $string['importinfo'] = 'Informazioni sull\'importazione: puoi utilizzare le seguenti colonne nel caricamento csv (spiegazione tra parentesi)';
 $string['includeteachers'] = 'Includere gli insegnanti nel foglio presenza';
+$string['infoalreadybooked'] = '<div class="infoalreadybooked"><i>Hai già prenotato questa opzione.</i></div>';
 $string['infonobookingoption'] = 'Per aggiungere un\'opzione di prenotazione, utilizza il blocco delle impostazioni o l\'icona delle impostazioni nella parte superiore della pagina';
 $string['instance_not_saved_no_valid_license'] = 'Impossibile salvare l\'istanza di prenotazione come modello.
                                                    Esegui l\'upgrade alla versione PRO per salvare un numero illimitato di modelli.';
@@ -1129,18 +1130,24 @@ $string['showallbookings'] = 'Tutte le prenotazioni';
 $string['showcoursenameandbutton'] = 'Mostra il nome del corso, le informazioni brevi e un pulsante che reindirizza alle opzioni di prenotazione disponibili';
 $string['showcustomfields'] = 'Campi delle opzioni di prenotazione personalizzate';
 $string['showcustomfields_desc'] = 'Seleziona i campi delle opzioni di prenotazione personalizzate da mostrare nel foglio presenza';
-$string['statuschangemessage'] = 'Hello {$a->participant}!
+$string['signinlogofooter'] = 'Logo nel piè di pagina da visualizzare nel foglio di registrazione';
+$string['signinlogoheader'] = 'Logo nell\'intestazione da visualizzare nel foglio di accesso';
+$string['statuschangemessage'] = 'Gentile {$a->participant},
 
-Lo stato della tua prenotazione è cambiato.
+lo stato della tua prenotazione è cambiato.
 
 Stato della prenotazione: {$a->status}
 
 Partecipante:   {$a->participant}
-Opzione di prenotazione: {$a->title}
+Opzione della prenotazione: {$a->title}
 Data: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
 
-Vai all\'opzione di prenotazione: {$a->gotobookingoptionCiao';
+Vai all\'opzione della prenotazione: {$a->gotobookingoption}';
 $string['statuschangetext'] = 'Messaggio di modifica dello stato';
+$string['userleavebookedmessage'] = 'Gentile {$a->participant},
+
+sei stato cancellato da {$a->title}.';
+$string['usernameofbookingmanager'] = 'Scegli un responsabile delle prenotazioni';
 $string['userssuccessfullygetnewpresencestatus'] = 'Tutti gli utenti hanno un nuovo stato di presenza.';
 $string['userssucesfullygetnewpresencestatus'] = 'Stato di presenza per utenti selezionati aggiornato correttamente';
 $string['viewallresponses'] = 'Gestisci {$a} risposte';

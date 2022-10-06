@@ -129,6 +129,7 @@ $string['eventassessableuploaded'] = 'Caricata consegna';
 $string['eventassessmentevaluated'] = 'Assegnati voti alla valutazione';
 $string['eventassessmentevaluationsreset'] = 'Reimpostati voti della valutazione';
 $string['eventassessmentreevaluated'] = 'Assegnati di nuovo voti alla valutazione';
+$string['eventphaseautomaticallyswitched'] = 'Fase cambiata automaticamente';
 $string['eventphaseswitched'] = 'Cambiata fase';
 $string['eventsubmissionassessed'] = 'Valutata consegna';
 $string['eventsubmissionassessmentsreset'] = 'Eliminate valutazioni consegna';

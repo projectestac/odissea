@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldedit'] = 'Modifier « {$a} »';
 $string['filteredit'] = 'Modifier « {$a} »';
+$string['firstdayofweek'] = 'Lundi';
 $string['ruleedit'] = 'Modifier « {$a} »';
 $string['statisticsfor'] = 'Statistiques pour « {$a} »';
 $string['viewedit'] = 'Modifier « {$a} »';

@@ -29,6 +29,7 @@ $string['confirmquestionsaveasedited'] = '我确信我想要题目按所编辑�
 $string['confirmsave'] = '确认后保存{$a}';
 $string['correctanswer'] = '正确答案';
 $string['correctanswerandfeedback'] = '正确答案及反馈';
+$string['corruptedquestion'] = '此问题已损坏，包含系统中不存在的子问题。';
 $string['decodeverifyquestiontext'] = '解码和校验题目文本';
 $string['invalidmultianswerquestion'] = '无效的选词填空题（{$a}）。';
 $string['layout'] = '布局';
@@ -38,6 +39,7 @@ $string['layoutmultiple_vertical'] = '复选框垂直列';
 $string['layoutselectinline'] = '在正文中使用下拉菜单';
 $string['layoutundefined'] = '未定义的布局';
 $string['layoutvertical'] = '纵向排列的单选按钮';
+$string['missingsubquestion'] = '您的系统中缺少此子问题，因此无法显示。';
 $string['nooptionsforsubquestion'] = '不能获取题目 #{$a->sub} 的选项(question->id={$a->id})';
 $string['noquestions'] = '完形题“<strong>{$a}</strong>”中没有任何问题';
 $string['pleaseananswerallparts'] = '请回答题目的所有部分。';

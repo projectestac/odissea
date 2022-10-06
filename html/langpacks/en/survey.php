@@ -191,7 +191,7 @@ Your carefully considered responses will help us improve the way this unit is pr
 Thanks very much.';
 $string['collespname'] = 'COLLES (Preferred)';
 $string['completiondetail:submit'] = 'Submit answers';
-$string['completionsubmit'] = 'Student must submit to this activity to complete it';
+$string['completionsubmit'] = 'Student must make a submission';
 $string['customintro'] = 'Description';
 $string['deleteallanswers'] = 'Delete all survey responses';
 $string['deleteanalysis'] = 'Delete response analysis';

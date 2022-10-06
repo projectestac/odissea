@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Veld voor getallen';
+$string['fieldtypelabel'] = 'Getallen';
 $string['pluginname'] = 'Getal';
-$string['privacy:metadata'] = 'De getal-component bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';
+$string['privacy:metadata'] = 'De getallen-component bewaart geen persoonlijke gegevens, maar gebruikt tabellen in mod_data.';

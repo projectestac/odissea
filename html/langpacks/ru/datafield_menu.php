@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Поле «Выпадающий список»';
+$string['fieldtypelabel'] = 'Выпадающий список';
 $string['pluginname'] = 'Выпадающий список';
 $string['privacy:metadata'] = 'Компонент поля базы данных «Выпадающий список» сам по себе не хранит никаких персональных данных, он использует таблицы, определенные в mod_data.';

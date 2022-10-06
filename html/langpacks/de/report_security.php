@@ -135,5 +135,5 @@ $string['eventreportviewed'] = 'Sicherheitsbericht angezeigt';
 $string['issue'] = 'Ausgabe';
 $string['pluginname'] = 'Sicherheitsprüfung';
 $string['privacy:metadata'] = 'Das Sicherheits-Übersichts-Plugin speichert keine personenbezogenen Daten.';
-$string['security:view'] = 'Sicherheitsbericht ansehen';
+$string['security:view'] = 'Sicherheitsbericht anzeigen';
 $string['timewarning'] = 'Haben Sie bitte Geduld, denn die Bearbeitung kann etwas länger dauern ...';

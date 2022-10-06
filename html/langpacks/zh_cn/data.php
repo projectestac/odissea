@@ -51,7 +51,7 @@ $string['availabletags_help'] = '标记是模板中的占位符，在编辑或�
 字段的格式为[[fieldname]]。所有其他标记的格式均为##sometag##。
 
 只有“可用标记”列表中的标记可用于当前模板。';
-$string['availabletodate'] = '截止时间';
+$string['availabletodate'] = '适用于';
 $string['availabletodatevalidation'] = '可用开始日期不能早于可用开始日期。';
 $string['blank'] = '空白';
 $string['buttons'] = '动作';
@@ -198,7 +198,7 @@ $string['fromfile'] = '从压缩文件导入';
 $string['fromfile_help'] = '“从zip文件导入”功能允许您浏览和上载模板和字段的预设zip。';
 $string['generateerror'] = '有部分文件未被生成！';
 $string['header'] = '头';
-$string['headeraddtemplate'] = '定义修改条目的界面';
+$string['headeraddtemplate'] = '定义用于添加或编辑条目的界面';
 $string['headerasearchtemplate'] = '为高级搜索定义接口';
 $string['headercsstemplate'] = '为其它模板定义本地 CSS 样式';
 $string['headerjstemplate'] = '为其他模板自定义 Javascript';
@@ -289,7 +289,7 @@ $string['notapproved'] = '条目还未批准。';
 $string['notinjectivemap'] = '非单项映射';
 $string['notopenyet'] = '抱歉，此活动在{$a}之前不可用';
 $string['number'] = '数字';
-$string['numberrssarticles'] = 'RSS 文章';
+$string['numberrssarticles'] = 'RSS种子中的条目';
 $string['numnotapproved'] = '待核准';
 $string['numrecords'] = '{$a}个条目';
 $string['ods'] = '<abbr title="OpenDocument Spreadsheet">ODS</abbr>&nbsp;(OpenOffice)';
@@ -335,7 +335,7 @@ $string['recorddisapproved'] = '未批准条目';
 $string['recordsnotsaved'] = '没有记录被保存。请确认上传文件的安排。';
 $string['recordssaved'] = '记录已保存';
 $string['removealldatatags'] = '删除所有数据库标记';
-$string['requireapproval'] = '是否需要批准';
+$string['requireapproval'] = '需要批准';
 $string['requireapproval_help'] = '如果激活，条目必须在教师核准后才能被其他人看到。';
 $string['required'] = '要求的';
 $string['requiredentries'] = '必须完成的条目数';

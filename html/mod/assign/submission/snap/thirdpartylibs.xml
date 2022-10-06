@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<libraries>
+  <library>
+    <location>run</location>
+    <name>Snap!</name>
+    <license>GPL</license>
+    <version>6.2.4</version>
+    <licenseversion>3.0</licenseversion>
+  </library>
+</libraries>

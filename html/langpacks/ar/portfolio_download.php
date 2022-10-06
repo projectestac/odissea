@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadfile'] = 'تنزيل ملف تصدير محفظتك';
 $string['downloading'] = 'يجري التنزيل...';
 $string['pluginname'] = 'تنزيل الملف';
-$string['privacy:metadata'] = 'هذا الملحق لا يحفظ بيانات شخصية، ولا يقوم بتصدير البيانات الشخصية إلى موضع خارجي.';
+$string['privacy:metadata'] = 'هذه الإضافة لا تحفظ بيانات شخصية، ولا تقوم بتصدير البيانات الشخصية إلى موضع خارجي.';

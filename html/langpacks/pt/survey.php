@@ -191,7 +191,7 @@ As suas respostas cuidadosamente consideradas ajudar-nos-ão a melhorar, no futu
 Muito obrigado pela sua colaboração.';
 $string['collespname'] = 'COLLES (Ideal)';
 $string['completiondetail:submit'] = 'Submeter respostas';
-$string['completionsubmit'] = 'O aluno tem de submeter esta atividade para concluí-la';
+$string['completionsubmit'] = 'O aluno tem de realizar uma submissão';
 $string['customintro'] = 'Descrição';
 $string['deleteallanswers'] = 'Apagar todas as respostas ao inquérito';
 $string['deleteanalysis'] = 'Apagar análise de respostas';

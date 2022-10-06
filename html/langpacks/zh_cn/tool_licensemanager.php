@@ -35,6 +35,7 @@ $string['duplicatelicenseshortname'] = '许可证的简称必须是唯一的。'
 $string['editlicense'] = '编辑许可证';
 $string['editlicensename'] = '编辑许可证\'{$a}\'';
 $string['enablelicensename'] = '启用许可证\'{$a}\'';
+$string['fullname'] = '许可证全名';
 $string['fullnamerequirederror'] = '您必须输入许可证的全名。';
 $string['invalidurl'] = '无效的源URL';
 $string['license'] = '许可证';

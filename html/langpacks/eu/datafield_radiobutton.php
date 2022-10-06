@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Aukera bakarreko botoia';
-$string['pluginname'] = 'Aukera bakarreko botoia';
-$string['privacy:metadata'] = 'Aukera bakarreko botoia eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['fieldtypelabel'] = 'Aukera bakarreko botoiak';
+$string['pluginname'] = 'Aukera bakarreko botoiak';
+$string['privacy:metadata'] = 'Aukera bakarreko botoiak eremu-osagaiak ez du datu pertsonalik biltzen; datu-base moduluan zehaztutako taulak erabiltzen ditu.';

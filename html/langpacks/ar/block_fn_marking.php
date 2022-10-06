@@ -61,4 +61,4 @@ $string['student'] = 'الطالب';
 $string['studentlist'] = 'قائمة الطلاب';
 $string['studentssubmission'] = 'تسليم الطالب';
 $string['teachersfeedback'] = 'إفادة المعلم';
-$string['visitpluginhome'] = 'زيارة الصفحة الرئيسية للملحق';
+$string['visitpluginhome'] = 'زيارة الصفحة الرئيسية للإضافة';

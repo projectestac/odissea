@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'قائمة غير مرقمة';
-$string['privacy:metadata'] = 'إن ملحق atto_unorderedlist لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_unorderedlist لا تخزن أي بيانات شخصية.';

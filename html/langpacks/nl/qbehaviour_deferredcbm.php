@@ -30,9 +30,9 @@ $string['accuracyandbonus'] = 'Nauwkeurigheid + bonus';
 $string['assumingcertainty'] = 'Je hebt geen zekerheid gekozen. {$a} verondersteld.';
 $string['averagecbmmark'] = 'Gemiddelde CBM score';
 $string['basemark'] = 'Basisscore {$a}';
-$string['breakdownbycertainty'] = 'Splits op volgens zekerheid';
+$string['breakdownbycertainty'] = 'Splits op volgens zekerheidsniveau';
 $string['cbmbonus'] = 'CBM bonus';
-$string['cbmgradeexplanation'] = 'Het cijfer hierboven is relatief ten opzichte van het maximum voor all juiste antwoorden met  C=1';
+$string['cbmgradeexplanation'] = 'Voor CBM is het hierboven getoonde cijfer relatief ten opzichte van het maximum voor alle antwoorden juist met  C=1';
 $string['cbmgrades'] = 'CBM cijfers';
 $string['cbmgrades_help'] = 'Met Certainty-Based Marking (CBM) krijgt elke vraag met een juist antwoord met C=1 (kleine zekerheid) een cijfer van 100%. Cijfers kunnen tot 300% stijgen als elke vraag juist is met C=3 (grote zekerheid). Een fout begrip (fout antwoord met veel zelfvertrouwen gegeven) verlaagt het cijfer meer dan een fout antwoord waarvoor de leerling toegeeft dat die niet zeker is. Dit kan zelfs leiden tot een negatieve totaalscore.
 
@@ -40,9 +40,9 @@ $string['cbmgrades_help'] = 'Met Certainty-Based Marking (CBM) krijgt elke vraag
 $string['cbmmark'] = 'CBM score {$a}';
 $string['certainty'] = 'Zekerheid';
 $string['certainty-1'] = 'Geen idee';
-$string['certainty1'] = 'Z=1 (Niet zeker: <67%)';
-$string['certainty2'] = 'Z=2 (Gemiddeld: >67%)';
-$string['certainty3'] = 'Z=3  (Heel zeker: >80%)';
+$string['certainty1'] = 'C=1 (Onzeker: <67%)';
+$string['certainty2'] = 'C=2 (Gemiddeld: >67%)';
+$string['certainty3'] = 'C=3 (Zeker: >80%)';
 $string['certainty_help'] = 'Bij toetsen met zekerheidsaanduiding of ook wel Certainty Based Marking (CBM) genoemd, moet je aangeven hoe betrouwbaar je antwoord is. De mogelijke niveau\'s zijn:
 
 Zekerheidsniveau | C=1 (Niet zeker) | C=2 (Gemiddeld) | C=3 (Heel zeker)
@@ -53,15 +53,15 @@ Waarschijnlijk just  |    <67%   | 67-80% |    >80%
 
 De beste scores worden verkregen door je onzekerheid toe te geven. Bijvoorbeeld als je denkt dat er meer dan 1 kans op 3 is dat je fout bent, geef dan Z=1 en vermijdt het risico van een negatief cijfer.';
 $string['certaintyshort-1'] = 'Geen idee';
-$string['certaintyshort1'] = 'Z=1';
-$string['certaintyshort2'] = 'Z=2';
-$string['certaintyshort3'] = 'Z=3';
+$string['certaintyshort1'] = 'C=1';
+$string['certaintyshort2'] = 'C=2';
+$string['certaintyshort3'] = 'C=3';
 $string['dontknow'] = 'Geen idee';
 $string['foransweredquestions'] = 'Resultaten enkel voor de {$a} beantwoorde vragen';
 $string['forentirequiz'] = 'Resultaten voor de hele test ({$a} vragen)';
 $string['howcertainareyou'] = 'Zekerheid {$a->help}: {$a->choices}';
 $string['judgementok'] = 'OK';
-$string['judgementsummary'] = 'Antwoorden: {$a->responses}. Nauwkeurigheid: {$a->fraction}. (Optimaal bereik {$a->idealrangelow} tot {$a->idealrangehigh}). Je had {$a->judgement} met dit zekerheidsniveau.';
+$string['judgementsummary'] = 'Antwoorden: {$a->responses}. Accuraatheid: {$a->fraction}. (Optimaal bereik {$a->idealrangelow} tot {$a->idealrangehigh}). Het zekerheidsniveau dat je aangeduid hebt was {$a->judgement}.';
 $string['noquestions'] = 'Geen antwoorden';
 $string['overconfident'] = 'teveel zelfvertrouwen';
 $string['pluginname'] = 'Uitgestelde feedback met CBM';

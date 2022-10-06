@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fora de línia';
-$string['privacy:metadata'] = 'El connector de tasca fora de línia no emmagatzema cap dada personal.';
+$string['privacy:metadata'] = 'El connector de Tasca fora de línia no emmagatzema cap dada personal.';

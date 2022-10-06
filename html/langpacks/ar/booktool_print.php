@@ -33,4 +33,4 @@ $string['printbook'] = 'اطبع الكتاب';
 $string['printchapter'] = 'اطبع هذا الفصل';
 $string['printdate'] = 'التاريخ';
 $string['printedby'] = 'طبع بواسطة';
-$string['privacy:metadata'] = 'ملحق طباعة الكتب لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إضافة طباعة الكتب لا تخزن أي بيانات شخصية.';

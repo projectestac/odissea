@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['courseoverview:view'] = 'Übersicht zu allen Kursen ansehen';
+$string['courseoverview:view'] = 'Übersicht zu allen Kursen anzeigen';
 $string['pluginname'] = 'Kursübersicht';
 $string['privacy:metadata'] = 'Das Kursübersichtsplugin speichert keine personenbezogenen Daten.';

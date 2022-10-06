@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'HTML-Quelldateien';
+$string['privacy:metadata'] = 'Das Modul "HTML-Quelldateien" speichert keine personenbezogenen Daten.';

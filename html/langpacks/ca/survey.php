@@ -182,6 +182,7 @@ No existeixen respostes \'correctes\' o \'equivocades\', sòls ens interessa la 
 Les teves respostes, pensades cuidadosament, ens ajudaran a millorar la manera de presentar aquesta unitat en el futur.
 Moltes gràcies per la teva col·laboració.';
 $string['collespname'] = 'COLLES (preferit)';
+$string['completiondetail:submit'] = 'Tramet les respostes';
 $string['customintro'] = 'Descripció';
 $string['deleteallanswers'] = 'Suprimeix totes les respostes';
 $string['deleteanalysis'] = 'Suprimeix';

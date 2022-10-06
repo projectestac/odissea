@@ -1,0 +1,66 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template assignsubmission_snap/snapview
+
+    This template will render an iframe for Snap! content.
+
+    Variables required for this template:
+    * snapurl - The base Snap! URL.
+    * loaded - The mode to display this Snap! project
+    * userid - The creator of this Snap! content.
+    * attempt - The attempt number.
+    * width - Container width.
+    * height - Container height.
+    * snap_xmlproject - The XML project to load.
+    * editable - Edit mode.
+    * cloudenabled - If Snap! use cloud features
+    * langmoodle - If Snap! use Moodle lang
+
+    Example context (json):
+    {
+        "snapurl": "https://snap.berkeley.edu/snap.snap.html",
+        "loaded": false,
+        "userid": "3",
+        "attempt": "1",
+        "width": "100%",
+        "height": "400px",
+        "snap_xmlproject": "<project name='projectName' app='Snap! 1.0, http://snap.berkeley.edu' version='1'><notes>...</notes></project>",
+        "editable": false,
+        "cloudenabled": "0",
+        "langmoodle": "ca"
+    }
+
+}}
+<div class="snap-button_snap{{#loaded}} snap-hidden_snap"{{/loaded}}">
+    <span id="snapButton_snap-{{userid}}-{{attempt}}" onclick="require(['assignsubmission_snap/view'], function(View) {View.start('{{snap_xmlproject}}', '{{userid}}', '{{attempt}}');});">{{#pix}} snapMoodle, assignsubmission_snap, Snap! in Moodle {{/pix}}</span>
+    <a href="#" id="play_snap-{{userid}}-{{attempt}}" onclick="require(['assignsubmission_snap/view'], function(View) {View.start('{{snap_xmlproject}}', '{{userid}}', '{{attempt}}');}); return false;"><i id="playicon_snap-{{userid}}-{{attempt}}" class="fa fa-fw fa-play"></i></a>
+</div>
+
+<div id="snapContainer_snap-{{userid}}-{{attempt}}"{{^loaded}} class="snap-hidden_snap"{{/loaded}} style="width: {{width}}; height: {{height}}; overflow: auto;">
+    <div id="snapNavBar_snap-{{userid}}-{{attempt}}" class="snap-navbar_snap" style="width:910px">
+        <span onclick="require(['assignsubmission_snap/view'], function(View) {View.toogleFullScreen('{{userid}}', '{{attempt}}');});">{{#pix}} snapMoodle, assignsubmission_snap, Snap! in Moodle {{/pix}}</span>
+        <a href="#" id="togglingFS_snap-{{userid}}-{{attempt}}" onclick="require(['assignsubmission_snap/view'], function(View) {View.toogleFullScreen('{{userid}}', '{{attempt}}');}); return false;"><i id="togglingFSicon_snap-{{userid}}-{{attempt}}" class="fa fa-fw fa-expand"></i></a>
+        {{#editable}}<a href="#" onclick="document.getElementById('id_submitbutton').click()"><i class="fa fa-fw fa-save"></i></a>{{/editable}}
+        {{^editable}}<span class="snap-readonlyWarning_snap">{{#str}} snap_readonlywarning, assignsubmission_snap {{/str}}</span>{{/editable}}
+    </div>
+    <iframe src="{{snapurl}}#run:{{snap_xmlproject}}&noRun&editMode&noExitWarning{{#langmoodle}}&lang={{langmoodle}}{{/langmoodle}}{{^cloudenabled}}&noCloud{{/cloudenabled}}" id="snap_snap-{{userid}}-{{attempt}}" style="width:910px; height: 500px">
+    </iframe>
+</div>
+{{#editable}}{{#js}}
+    require(['assignsubmission_snap/init'], function(Init) {Init.init('{{snap_xmlproject}}', '{{userid}}', '{{attempt}}', true);});
+{{/js}}{{/editable}}

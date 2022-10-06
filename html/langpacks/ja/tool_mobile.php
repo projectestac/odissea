@@ -44,8 +44,8 @@ mm.user.student|Learner|en
 mm.user.student|Aprendiz|es
 </pre>
 完全なストリングID一覧およびさらなる情報に関してドキュメンテーションをご覧ください。';
-$string['custommenuitems'] = 'カスタムメニューアイテム';
-$string['custommenuitems_desc'] = 'ここで指定することによりアプリのメインメニューに追加アイテムを追加することができます。新しい行に次のフォーマットでそれぞれのカスタムメニューを入力してください: アイテムテキスト、リンクURL、リンクオープン方法および言語コード (任意: 指定された言語のみでユーザにアイテムを表示します)、パイプ文字 (|) で分離してください。
+$string['custommenuitems'] = 'カスタムメニュアイテム';
+$string['custommenuitems_desc'] = 'ここで指定することによりアプリのメインメニュに追加アイテムを追加することができます。新しい行に次のフォーマットでそれぞれのカスタムメニュを入力してください: アイテムテキスト、リンクURL、リンクオープン方法および言語コード (任意: 指定された言語のみでユーザにアイテムを表示します)、パイプ文字 (|) で分離してください。
 
 リンクオープン方法は次のとおりです: app (アプリでサポートされる活動にリンクします), inappbrowser (アプリから離れずにブラウザでリンクを開きます), browser (デバイスのアプリの外にあるデフォルトブラウザでリンクを開きます)、embedded (アプリの新しいページのiframe内にリンクを表示します)
 
@@ -89,7 +89,7 @@ $string['loginintheapp'] = 'アプリ経由';
 $string['logininthebrowser'] = 'ブラウザウィンドウ経由 (SSOプラグイン用)';
 $string['loginintheembeddedbrowser'] = '埋め込みブラウザ経由 (SSOプラグイン用)';
 $string['logoutconfirmation'] = '本当にあなたのモバイルデバイスのモバイルアプリからログアウトしてもよろしいですか? ログアウトした場合、あなたがアプリをインストールしているすべてのデバイスのモバイルアプリにユーザ名およびパスワードを再入力する必要があります。';
-$string['mainmenu'] = 'メインメニュー';
+$string['mainmenu'] = 'メインメニュ';
 $string['managefiletypes'] = 'ファイルタイプを管理する';
 $string['minimumversion'] = 'アプリバージョンが指定された場合 (3.8.0またはそれ以上)、古いバージョンのアプリのユーザすべてにサイトへアクセスできるようにするためアプリをアップグレードするよう指示されます。';
 $string['minimumversion_key'] = '要求される最小アプリバージョン';
@@ -131,7 +131,7 @@ $string['qrcodetypeurl'] = 'QRコードによるサイトURL';
 $string['qrsiteadminsnotallowed'] = 'セキュリティ上の理由からサイト管理者または別のユーザとしてのログイン時にはQRコードでのログインは許可されません。';
 $string['readingthisemailgettheapp'] = 'これをあなたのメールで読んでいますか? <a href="{$a}">モバイルアプリをダウンロードして、あなたのモバイルデバイスで通知を受信してください</a>。';
 $string['remoteaddons'] = 'リモートアドオン';
-$string['responsivemainmenuitems'] = 'レスポンシブメニューアイテム';
+$string['responsivemainmenuitems'] = 'レスポンシブメニュアイテム';
 $string['scanqrcode'] = 'QRコードをスキャンする';
 $string['selfsignedoruntrustedcertificatewarning'] = 'HTTPS証明書が自己署名されているか、信頼されていないようです。モバイルアプリは信頼できるサイトでのみ動作します。オンラインのSSLチェッカを使用してさらに問題を診断してください。これらのツールで証明書に問題がないと表示された場合、あなたはこの警告を無視できます。';
 $string['setuplink'] = 'アプリダウンロードページ';

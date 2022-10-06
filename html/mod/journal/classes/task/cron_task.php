@@ -55,7 +55,11 @@ class cron_task extends \core\task\scheduled_task {
         if ($entries = journal_get_unmailed_graded($cutofftime)) {
             $timenow = time();
 
-            $usernamefields = get_all_user_name_fields();
+            if (class_exists('\core_user\fields')) {
+                $usernamefields = \core_user\fields::get_name_fields();
+            } else {
+                $usernamefields = get_all_user_name_fields();
+            }
             $requireduserfields = 'id, auth, mnethostid, email, mailformat, maildisplay, lang, deleted, suspended, '
                     .implode(', ', $usernamefields);
 
@@ -108,15 +112,15 @@ class cron_task extends \core\task\scheduled_task {
                 $mod = $coursejournals[$entry->journal];
 
                 // This is already cached internally.
-                $context = context_module::instance($mod->id);
+                $context = \context_module::instance($mod->id);
                 $canadd = has_capability('mod/journal:addentries', $context, $user);
                 $entriesmanager = has_capability('mod/journal:manageentries', $context, $user);
 
-                if (!$canadd and $entriesmanager) {
+                if (!$canadd && $entriesmanager) {
                     continue;  // Not an active participant.
                 }
 
-                $journalinfo = new stdClass();
+                $journalinfo = new \stdClass();
                 $journalinfo->teacher = fullname($teacher);
                 $journalinfo->journal = format_string($entry->name, true);
                 $journalinfo->url = "$CFG->wwwroot/mod/journal/view.php?id=$mod->id";

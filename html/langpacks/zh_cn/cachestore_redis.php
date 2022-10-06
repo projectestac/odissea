@@ -32,6 +32,10 @@ $string['password'] = '密码';
 $string['password_help'] = '这设置了Redis服务器的密码。';
 $string['pluginname'] = 'Redis公司';
 $string['prefix'] = '密钥前缀';
+$string['prefix_help'] = '此前缀用于Redis服务器上的所有密钥名称。
+
+* 如果您只有一个使用此服务器的Moodle实例，则可以将此值保留为默认值。
+* 由于密钥长度限制，最多允许5个字符。';
 $string['prefixinvalid'] = '⽆效的前缀。您只能使⽤a-z，A-Z， 0-9或 _。';
 $string['privacy:metadata:redis'] = '作为缓存功能的一部分，Redis 缓存存储插件可以短暂地存储数据。这些数据存储在Redis服务器上，在该服务器的数据会被定期删除。';
 $string['privacy:metadata:redis:data'] = '缓存中存储的各种数据';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_emaildescription'] = '<p>基于电子邮件的自助注册使用户能通过登录页面上“创建新帐户”按钮创建自己的帐户。然后用户会收到一封包含秘密链接的Email，点击可以确认账户。以后登录只向 Moodle 数据库校验用户名和密码。</p><p>注：除了启用插件，还需要在“管理身份验证”页面上的自助注册下拉菜单里选中基于电子邮件的自助注册。</p>';
 $string['auth_emailnoemail'] = '尝试发送给您一封email，但是失败了！';
-$string['auth_emailrecaptcha'] = '针对基于电子邮件的自助注册的用户，在其登录页面中，增加一个图像/声音验证表单。它可以提供一个图形或语音验证服务，保护你的网站，防范恶意注册和攻击。详细说明请参考http://www.google.com/recaptcha。';
+$string['auth_emailrecaptcha'] = '为电子邮件自助注册的用户在注册页面上增加一个视觉/音频确认表单元素。这可以保护你的网站免受垃圾邮件的影响，并为实现有价值的事业做出贡献。更多细节见https://www.google.com/recaptcha。';
 $string['auth_emailrecaptcha_key'] = '激活 reCAPTCHA 元素';
 $string['auth_emailsettings'] = '设置';
 $string['pluginname'] = '基于电子邮件的自助注册';

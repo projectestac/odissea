@@ -86,7 +86,7 @@ $string['uploadcohorts'] = 'Caricamento gruppi globali';
 $string['uploadcohorts_help'] = 'E\' possibile caricare gruppi globali tramite file di testo. Il formato del file deve rispettare le seguenti regole:
 
 * Ciascuna linea rappresenta un record
-* Ciascun record contiene una serie di dati separati da virgole (o  delimitatori equivalenti)
+* Ciascun record contiene una serie di dati separati dal separatore selezionato
 * Il primo record deve contenere l\'elenco con i nomi dei campi che definiscono il formato dei dati seguenti
 * Il nome è un campo obbligatorio
 * I seguenti campi sono facoltativi: codice identificativo (idnumber), descrizione (description), formato descrizione (descriptionformat), contesto (context), categoria (category), id della categoria (category_id), codice identificativo della categoria (category_idnumber), percorso della categoria (category_path).';

@@ -102,6 +102,7 @@ $string['requirepassword'] = 'Require chave para matriculación';
 $string['requirepassword_desc'] = 'Require chave para matriculación nos novos cursos e evita a retirada da chave para matriculación dos cursos existentes.';
 $string['role'] = 'Rol asignado predeterminado';
 $string['self:config'] = 'Configurar instancias de automatrícula';
+$string['self:enrolself'] = 'Automatricularse no curso';
 $string['self:holdkey'] = 'Aparece coma o propietario da chave de automatriculación';
 $string['self:manage'] = 'Xestionar os usuarios matriculados';
 $string['self:unenrol'] = 'Desmatricular usuarios do curso';

@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowedcourses'] = '許可されたコース';
 $string['allowedcourses_help'] = '新しいフレームワークに移行するコースを選択してください。コースが指定されない場合、すべてのコースが移行されます。';
 $string['continuetoframeworks'] = 'フレームワークを続ける';
-$string['coursecompetencymigrations'] = 'コースコンピテンシー移行';
-$string['coursemodulecompetencymigrations'] = 'コース活動およびリソースのコンピテンシー移行';
+$string['coursecompetencymigrations'] = 'コースコンピテンシ移行';
+$string['coursemodulecompetencymigrations'] = 'コース活動およびリソースのコンピテンシ移行';
 $string['coursemodulesfound'] = 'コース活動またはリソースが見つかりました。';
 $string['coursesfound'] = 'コースは見つかりませんでした。';
 $string['coursestartdate'] = 'コース開始日';
@@ -37,18 +37,18 @@ $string['coursestartdate_help'] = 'この設定を有効にした場合、ここ
 $string['disallowedcourses'] = '未許可のコース';
 $string['disallowedcourses_help'] = '新しいフレームワークに移行しないコースを選択してください。';
 $string['errorcannotmigratetosameframework'] = '同一フレームワークに移行することはできません。';
-$string['errorcouldnotmapcompetenciesinframework'] = 'フレームワーク内でコンピテンシーにマップできませんでした。';
+$string['errorcouldnotmapcompetenciesinframework'] = 'フレームワーク内でコンピテンシにマップできませんでした。';
 $string['errors'] = 'エラー';
-$string['errorwhilemigratingcoursecompetencywithexception'] = 'コースコンピテンシー移行中にエラーが発生しました: {$a}';
-$string['errorwhilemigratingmodulecompetencywithexception'] = '活動またはリソースコンピテンシー移行中にエラーが発生しました: {$a}';
+$string['errorwhilemigratingcoursecompetencywithexception'] = 'コースコンピテンシ移行中にエラーが発生しました: {$a}';
+$string['errorwhilemigratingmodulecompetencywithexception'] = '活動またはリソースコンピテンシ移行中にエラーが発生しました: {$a}';
 $string['excludethese'] = 'これらを除く';
-$string['explanation'] = 'このツールはコンピテンシーフレームワークを新しいバージョンに更新するために使用することができます。これは古いフレームワークを使用してコースおよび活動内のコンピテンシーを検索した上で新しいフレームワークを指すようリンクを更新します。
+$string['explanation'] = 'このツールはコンピテンシフレームワークを新しいバージョンに更新するために使用することができます。これは古いフレームワークを使用してコースおよび活動内のコンピテンシを検索した上で新しいフレームワークを指すようリンクを更新します。
 
-すでにユーザの学習プラン内で付与されたコンピテンシーすべてを変更することになるため、一連の古いコンピテンシーを直接編集することはお勧めできません。
+すでにユーザの学習プラン内で付与されたコンピテンシすべてを変更することになるため、一連の古いコンピテンシを直接編集することはお勧めできません。
 
 一般的にあなたは新しいバージョンのフレームワークをインポートして古いフレームワークを隠した後、新しいコースを新しいフレームワークに移行するためにこのツールを使用するでしょう。';
-$string['findingcoursecompetencies'] = 'コースコンピテンシー検索';
-$string['findingmodulecompetencies'] = '活動およびリソースのコンピテンシー検索';
+$string['findingcoursecompetencies'] = 'コースコンピテンシ検索';
+$string['findingmodulecompetencies'] = '活動およびリソースのコンピテンシ検索';
 $string['frameworks'] = 'フレームワーク';
 $string['limittothese'] = 'これらに制限する';
 $string['lpmigrate:frameworksmigrate'] = 'フレームワークを移行する';
@@ -61,13 +61,13 @@ $string['migrateto_help'] = '新しいバージョンのフレームワークを
 $string['migratingcourses'] = 'コース移行';
 $string['missingmappings'] = '不明マッピング';
 $string['performmigration'] = '移行を実行する';
-$string['pluginname'] = 'コンピテンシー移行ツール';
-$string['privacy:metadata'] = 'コンピテンシー移行ツールプラグインはいかなる個人データも保存しません。';
+$string['pluginname'] = 'コンピテンシ移行ツール';
+$string['privacy:metadata'] = 'コンピテンシ移行ツールプラグインはいかなる個人データも保存しません。';
 $string['results'] = '結果';
 $string['startdatefrom'] = '開始日';
 $string['unmappedin'] = '{$a} 内でのマップ解除';
-$string['warningcouldnotremovecoursecompetency'] = 'コースコンピテンシーを削除することができませんでした。';
-$string['warningcouldnotremovemodulecompetency'] = '活動またはリソースのコンピテンシーを削除することができませんでした。';
-$string['warningdestinationcoursecompetencyalreadyexists'] = '宛先のコースコンピテンシーはすでに存在します。';
-$string['warningdestinationmodulecompetencyalreadyexists'] = '宛先の活動またはリソースのコンピテンシーはすでに存在します。';
+$string['warningcouldnotremovecoursecompetency'] = 'コースコンピテンシを削除することができませんでした。';
+$string['warningcouldnotremovemodulecompetency'] = '活動またはリソースのコンピテンシを削除することができませんでした。';
+$string['warningdestinationcoursecompetencyalreadyexists'] = '宛先のコースコンピテンシはすでに存在します。';
+$string['warningdestinationmodulecompetencyalreadyexists'] = '宛先の活動またはリソースのコンピテンシはすでに存在します。';
 $string['warnings'] = '警告';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'ラジオボタンフィールド';
+$string['fieldtypelabel'] = 'ラジオボタン';
 $string['pluginname'] = 'ラジオボタン';
 $string['privacy:metadata'] = 'ラジオボタンフィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';

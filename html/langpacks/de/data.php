@@ -64,7 +64,7 @@ $string['cannotadd'] = 'Einträge können nicht hinzugefügt werden!';
 $string['cannotdeletepreset'] = 'Fehler beim Löschen der Vorlage';
 $string['cannotoverwritepreset'] = 'Fehler beim Überschreiben der Vorlage';
 $string['cannotunziptopreset'] = 'Fehler beim Entpacken im Vorlagenverzeichnis';
-$string['checkbox'] = 'Mehrfachauswahl';
+$string['checkbox'] = 'Checkboxen';
 $string['chooseexportfields'] = 'Felder für Export auswählen';
 $string['chooseexportformat'] = 'Exportformat auswählen';
 $string['chooseorupload'] = 'Datei wählen';
@@ -101,7 +101,7 @@ $string['data:exportuserinfo'] = 'Nutzerinformationen exportieren';
 $string['data:managecomments'] = 'Kommentare verwalten';
 $string['data:manageentries'] = 'Einträge verwalten';
 $string['data:managetemplates'] = 'Vorlagen verwalten';
-$string['data:manageuserpresets'] = 'Vorlagensätze verwalten';
+$string['data:manageuserpresets'] = 'Vorlagen verwalten';
 $string['data:rate'] = 'Einträge bewerten';
 $string['data:readentry'] = 'Einträge lesen';
 $string['data:view'] = 'Datenbankaktivität anzeigen';
@@ -232,7 +232,7 @@ $string['invalidrecord'] = 'Falscher Eintrag';
 $string['invalidurl'] = 'Die eingegebene URL ist nicht gültig.';
 $string['jstemplate'] = 'JavaScript für Vorlagen';
 $string['latitude'] = 'Breitengrad';
-$string['latlong'] = 'Geografische Breite und Länge';
+$string['latlong'] = 'Koordinaten';
 $string['latlongboth'] = 'Längen- und Breitengrad müssen eingetragen werden.';
 $string['latlongdownloadallhint'] = 'Download aller Einträge als KML';
 $string['latlongkmllabelling'] = 'Wie sollen Ziele in KML-Dateien bezeichnet werden? (Google Earth)';
@@ -254,20 +254,17 @@ $string['menuchoose'] = 'Auswählen ...';
 $string['missingdata'] = 'Daten-ID bzw. Datenobjekt müssen zur Feldklasse passen';
 $string['missingfield'] = 'Programmierfehler: Sie müssen Feld und Daten angeben, wenn Sie eine Feldklasse definieren.';
 $string['modulename'] = 'Datenbank';
-$string['modulename_help'] = 'Sammeln Sie mit Ihren Teilnehmer/innen Informationen in einer Datenbank. Legen Sie eine Struktur für die Felder der Datenbank fest und definieren Sie, was später in der Übersicht (Listenansicht) oder einer Detailansicht angezeigt werden soll.
+$string['modulename_help'] = 'Die Datenbank ermöglicht es den Teilnehmer/innen, gemeinsam eine Sammlung von Einträgen zu erstellen, zu pflegen und zu durchsuchen.
 
-Wählen Sie flexibel zwischen verschiedenen Feldtypen wie Checkbox, Radiobutton, Dropdownmenü, Texteintrag, Link, Bild und hochgeladenen Dateien.
+Die Struktur der Einträge wird über unterschiedliche Feldtypen wie kurze Texte , Dropdown-Menü, Textbereich, URL, Bild oder Datei definiert. In Vorlagen wird festgelegt, wie die Listenansicht (Übersicht) und die Detailansicht angezeigt werden soll.
 
-Das visuelle Layout der Informationen beim Auflisten, Anzeigen oder Bearbeiten von Datenbankeinträgen kann durch Datenbankvorlagen gesteuert werden. Die Datenbank-Aktivitäten können als Voreinstellungen zwischen den Kursen gemeinsam genutzt werden, und ein/e Trainer/in kann auch Datenbankeinträge importieren und exportieren.
+Als Trainer/in können Sie Einträge kommentieren und bewerten. Sie können den Teilnehmer/innen auch erlauben, ihrerseits Einträge zu bewerten und zu kommentieren (Peer-Evaluation). Bewertungen können zu einer Gesamtnote zusammengefasst werden, die dann festgehalten wird.
 
-Wenn der Filter für die automatische Verknüpfung von Datenbanken aktiviert ist, werden alle Einträge in einer Datenbank automatisch an den Stellen verknüpft, an denen die Wörter oder Sätze innerhalb des Kurses erscheinen.
+Wenn der Filter für automatische Datenbankverknüpfung aktiviert ist, werden alle Einträge der Datenbank automatisch dort verknüpft, wo Wörter oder Sätze im Kurs erscheinen.
 
-Sie können die Datenbank so einstellen, dass Einträge zuerst geprüft werden müssen. Außerdem können Sie Kommentare zu den Einträgen zulassen. Einträge können auch von Trainer/innen oder Teilnehmer/innen bewertet werden (Peer-Bewertung). Die Bewertungen können zu einer Endnote aggregiert werden, die in den Bewertungen festgehalten wird.
-
-Die Datenbank-Aktivität hat viele Verwendungsmöglichkeiten, wie z.B.
-
-* Eine gemeinschaftliche, kollaborative Sammlung von Weblinks, Büchern, Buchbesprechungen, Zeitschriftenreferenzen usw.
-* Für die Anzeige von Fotos, Postern, Websites oder Gedichten, die von Teilnehmer/innen erstellt wurden, um sie zu kommentieren und zu überprüfen';
+Sie können die Datenbank verwenden,
+* um eine gemeinsame Sammlung von Links, Büchern, Buchbesprechungen, Zeitschriftenreferenzen usw. zu erstellen
+* um von Teilnehmer/innen erstellte Fotos, Poster, Websites oder Gedichte zu sammeln und mit Peer-Kommentare und -Rezensionen zu versehen.';
 $string['modulenameplural'] = 'Datenbanken';
 $string['more'] = 'Einzelansicht';
 $string['moreurl'] = 'Weitere URL';

@@ -55,6 +55,7 @@ $string['choicetext'] = 'Text de la consulta';
 $string['chooseaction'] = 'Tria una acció...';
 $string['chooseoption'] = 'Tria: {$a}';
 $string['closebeforeopen'] = 'Heu especificat una data de tancament anterior a la data d\'obertura.';
+$string['completiondetail:submit'] = 'Tria una opció';
 $string['completionsubmit'] = 'Mostra com a completada quan l\'usuari fa una tria';
 $string['description'] = 'Descripció';
 $string['displayhorizontal'] = 'En horitzontal';

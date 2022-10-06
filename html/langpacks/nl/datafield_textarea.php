@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Veld voor tekstgebied';
+$string['fieldtypelabel'] = 'Tekstzone';
 $string['maxbytes'] = 'Maximale grootte van het ingebedde bestand (bytes)';
 $string['maxbytes_desc'] = 'Indien ingesteld op nul wordt het standaard onbeperkt';
 $string['pluginname'] = 'Tekstzone';
-$string['privacy:metadata'] = 'De tekstzonecomponent bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';
+$string['privacy:metadata'] = 'De tekstzonecomponent bewaart geen persoonlijke gegevens, maar gebruikt tabellen in mod_data.';

@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['privacy:metadata'] = 'إن ملحق الإتاحة حسب اللغة لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة الإتاحة حسب اللغة لا تخزن أي بيانات شخصية.';

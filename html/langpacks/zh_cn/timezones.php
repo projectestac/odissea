@@ -462,6 +462,7 @@ $string['pacific/gambier'] = '太平洋/甘比尔';
 $string['pacific/guadalcanal'] = '太平洋/瓜达尔卡纳尔';
 $string['pacific/guam'] = '太平洋/关岛';
 $string['pacific/honolulu'] = '太平洋/火奴鲁鲁';
+$string['pacific/kanton'] = '太平洋/坎顿岛';
 $string['pacific/kiritimati'] = '太平洋/圣诞岛';
 $string['pacific/kosrae'] = '太平洋/科斯雷';
 $string['pacific/kwajalein'] = '太平洋/夸贾林';

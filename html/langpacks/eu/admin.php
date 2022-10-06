@@ -165,7 +165,7 @@ $string['computedfromlogs'] = 'Log-etarako konputatua {$a}-tik';
 $string['condifmodeditdefaults'] = 'Lehenetsitako balioak jarduera edo baliabide berria sortzeko formularioaren ezarpenetan erabiliko dira.';
 $string['confeditorhidebuttons'] = 'Aukeratu HTML editorean ezkutuan egongo diren botoiak';
 $string['configallcountrycodes'] = 'Hainbat tokitan, erabiltzailearen profilean esaterako, aukeratzeko erabiliko den herrialdeen zerrenda da hau. Hutsik utzita (lehenetsitakoa) Ingelesezko hizkuntza-pakete estandarreko countries.php fitxategiko zerrenda erabiliko da. ISo 3166-1-eko zerrenda da hau. Bestela, komaz banatuta zehaz dezakezu kodeen zerrenda, adibidez \'GB,FR,ES\'. Berririk gehitzen baduzu, kode ez estandarrak alegia, zure hizkuntza-paketeko countries.php fitxategira ere gehitu beharko dituzu.';
-$string['configallowassign'] = 'Ezkerreko rolak dituztenei beste batzuei rolen zutabekoren bat ezartzen utzi';
+$string['configallowassign'] = 'Aukeratu ezkerreko zutabeko rol bakoitzak beste batzuei esleitu ahal dizkieten rolak.';
 $string['configallowattachments'] = 'Gaituz gero, gune honetatik bidalitako e-mailek eranskinak izan ditzakete, dominak adibidez.';
 $string['configallowblockstodock'] = 'Gaituz gero eta aukeratutako azalak onartzen badu, erabiltzaileak blokeak bazterrera eraman ditzake.';
 $string['configallowcategorythemes'] = 'Aukera hau gaituz gero, azalak kategoria mailan zehaztu ahal izango dira. Honek beheragoko kategoria eta ikastaro guztiei eragingo die ez bazaie beste azal bat propio ezarri. KONTUZ: Kategoriako azalak gaitzeak errendimenduari eragin ahal dio.';
@@ -178,15 +178,15 @@ $string['configallowemojipickerincompatible'] = 'Zure oraingo datu-baseak ez dit
 $string['configallowguestmymoodle'] = 'Gaituz gero, bisitariek Aginte-panelerako sarbidea dute, bestela guneko hasiera-orrira birbideratuko dira.';
 $string['configallowobjectembed'] = 'Lehenetsitako segurtasun-neurri gisa, erabiltzaile arruntek ezingo dute HTML kodean multimedia-objekturik txertatu (adibidez, Flash) testuaren barruan EMBED eta OBJECT etiketen bidez (media-plugin iragazkiekin egiterik izango da, baina). Marka horiek onartzea nahi baduzu, aukera aktibatu.';
 $string['configallowoverride'] = 'Zutabeetan agertzen diren rolak beste batzuei baliogabetzen utzi ahal diezu ezkerreko rolak dituztenei';
-$string['configallowoverride2'] = 'Aukeratu zein rol baliogabetu ahal duen ezkerreko zutabeko rol bakoitzak.<br />Kontuan izan ezarpen hau moodle/role:override edo moodle/role:safeoverride gaitasunak baimenduta dituzten erabiltzaileei baino ezin zaiela aplikatu.';
-$string['configallowswitch'] = 'Aukeratu erabiltzaile bat zein roletara alda daitekeen, jadanik dituen roletan oinarrituz. Taula honetako sarreraz gain, erabiltzaileak moodle/role:switchroles gaitasuna gaituta izan beharko du. <br />Ohar zaitez soilik moodle/course:view gaitasuna duten baina moodle/site:doanything gaitasuna ez duten roletara alda daitekeenez, taula honetako zutabe batzuk desgaituta daudela.';
+$string['configallowoverride2'] = 'Aukeratu ezkerreko zutabeko rol bakoitzak zein beste rolei baliogabetzeak gehitu ahal dizkieten.<br />Honetaz gain erabiltzaileek moodle/role:override edo moodle/role:safeoverride gaitasuna izan behar dutela.';
+$string['configallowswitch'] = 'Aukeratu ezkerreko zutabeko rol bakoitzak zein beste rolera aldatu dezaketen<br />Honetaz gain erabiltzaileek moodle/role:switchroles gaitasuna izan behar dute.';
 $string['configallowthemechangeonurl'] = 'Gaituz gero, azala aldatu egin daiteke edozein Moodleren URLetan <br />?theme=azalarenizena gehituta (adibidez: niremoodlegunea.eus/?theme=afterburner) edo <br />&theme=azalarenizena gehituta (adibidez: niremoodlegunea.eus/course/view.php?id=2&theme=afterburner).';
 $string['configallowuserblockhiding'] = 'Erabiltzaileek guneko aldeetako blokeak erakutsi eta ezkutatu ahal izatea nahi al duzu? Aukera honek Javascript eta cookie-ak erabiltzen ditu blokeen egoera gogoratzeko, eta erabiltzaileek informazioa nola ikusiko duten zehazten du.';
 $string['configallowusermailcharset'] = 'Gaituz gero, guneko erabiltzaile guztiek mezularitzaren ezarpenetan e-mailak idazteko norbere karaktere-multzoa ezarri ahal izango dute.';
 $string['configallowuserswitchrolestheycantassign'] = 'Modu lehenetsian, moodle/role:assign gaitasuna beharrezkoa da erabiltzaileek beste rol bat hartu ahal izateko. Ezarpen hau gaituta baldintza hori kendu egiten duzu eta ondorioz "Aukeratu beste rol bat" zabaltzen den menuan agertuko diren rolak soilik "Baimendu rol esleipenak" taulan ezarritakoak baldintzatuko du.
 Gomendagarria da "Baimendu rol esleipenak" taulako ezarpenek ez ematea erabiltzaileei duten rolak baino gaitasun handiagoa duen beste bat hartzeko aukera.';
 $string['configallowuserthemes'] = 'Aukera hau gaituz gero, erabiltzaile bakoitzak nahi duten azala aukeratu ahal izango du. Erabiltzailearen azalak gunearenarekiko lehentasuna dauka, baina ez ikastaroarenarekiko.';
-$string['configallowview'] = 'Aukeratu erabiltzaileak ikusi, iragazi... ahalko dituen rolak, dagoeneko dituen roletan oinarrituta.';
+$string['configallowview'] = 'Aukeratu ezkerreko zutabeko rol bakoitzak zein beste rol ikusi, bilatu eta iragazi dezakeen.';
 $string['configallusersaresitestudents'] = 'Webgunearen lehen orriko jarduerei dagokienez, erabiltzaile guztiak ikasletzat hartu behar al dira? Erantzuna "Bai" balitz, onartutako partaide guztiek jardueratan parte ahal izango lukete. Erantzuna "Ez" balitz, gutxienez ikastaro batean parte hartzen dutenek izango dute eskubide hori. Lehen orriko jardueretan soilik horretarako esleitutako kudeatzaileek eta irakasleek  parte har dezakete.';
 $string['configauthenticationplugins'] = 'Mesedez, aukera itzazu erabili nahi dituzun autentifikazio-pluginak eta jar itzazu ordenan.';
 $string['configautolang'] = 'Atzeman nabigatzailean lehenetsitako hizkuntza, desgaituz gero gunean lehenetsitako balio erabiltzen bada.';
@@ -211,7 +211,7 @@ $string['configcronremotepassword'] = 'Honek esan nahi du cron.php script-a ezin
  https://gunea.adibidea.eus/admin/cron.php?password=opensesame
 </pre>. Hutsik utziz gero, ez da pasahitzik behar.';
 $string['configcurlcache'] = 'cURL cachearen biziraupena (segundoetan).';
-$string['configcustommenuitems'] = 'Hemen menu pertsonalizatu bat konfiguratu dezakezu. Menuaren elementu bakoitza lerro berri batean zehaztu behar duzu hurrengo formatua jarraituta: menuaren testua, URL bat (aukerazkoa, azpimenuak dituzten goi mailako menuetan ez da beharrezkoa), izenburuaren deskribapen bat (aukerazkoa) eta hizkuntza-kode bat edo marra bertikalez banatutako hizkuntza-kodeen zerrenda bat (aukerazkoa, errenkada soilik hizkuntza horietan nabigatzen ari diren erabiltzaileei erakusteko), marra bertikal batek banatuta. Azpimenuen egitura sor dezakezu gidoiak erabilita eta bereizleak sartu daitezke ### erabilita. Adibidez:
+$string['configcustommenuitems'] = 'Hemen menu pertsonalizatu bat konfiguratu dezakezu. Menuaren elementu bakoitza lerro berri batean zehaztu behar duzu hurrengo formatua jarraituta: menuaren testua, URL bat (aukerazkoa, azpimenuak dituzten goi mailako menuetan ez da beharrezkoa), izenburuaren deskribapen bat (aukerazkoa) eta hizkuntza-kode bat edo komaz banatutako hizkuntza-kodeen zerrenda bat (aukerazkoa, errenkada soilik hizkuntza horietan nabigatzen ari diren erabiltzaileei erakusteko), guztiak marra bertikalez banatuta. Azpimenuen egitura sor dezakezu gidoiak erabilita eta bereizleak sartu daitezke ### erabilita. Adibidez:
 <pre>
 Ikastaroak
 -Ikastaro guztiak|/course/
@@ -444,7 +444,7 @@ $string['courselistshortnames_desc'] = 'Gaituz gero, ikastaro-zerrendetan ikasta
 $string['coursemgmt'] = 'Kudeatu ikastaroak eta kategoriak';
 $string['courseoverview'] = 'Ikastaroen ikuspegi orokorra';
 $string['courserequestnotify'] = 'Ikastaro-eskariaren jakinarazpena';
-$string['courserequestnotifyemail'] = '{$a->user} erabiltzaileak ikastaro-eskaria egin du hemen {$a->link}';
+$string['courserequestnotifyemail'] = '{$a->user} erabiltzaileak ikastaro-eskaria egin du <a href="{$a->link}">{$a->link}</a>';
 $string['courserequests'] = 'Ikastaro-eskariak';
 $string['courserequestspending'] = 'Onarpenaren zain dauden ikastaro-eskariak';
 $string['courses'] = 'Ikastaroak';
@@ -1533,6 +1533,9 @@ $string['warningcurrentsetting'] = 'Oraingo balioa ez da baliozkoa: {$a}';
 $string['warningiconvbuggy'] = 'Iconv liburutegiaren zure bertsioak ez du //IGNORE aldatzailea onartzen. UTF-8 karaktere baliogabeak dituzten kateak garbitzeko erabil daitekeen mbstring hedapena instalatu beharko zenuke.';
 $string['webproxy'] = 'Web proxya';
 $string['webproxyinfo'] = 'Ondoko aukerak bete zure Moodle zerbitzariak zuzenean interneterako sarbiderik ez badu. Interneterako sarbidea beharrezkoa da inguruneko informazioa, hizkuntza-paketeak, RSS jaioak, ordu eremuak... jaitsi ahal izateko.<br /><em>Oso gomendagarria da PHP cURL hedapena.</em>';
+$string['xmlrpcmaharaenabled'] = 'Zure gunean Mahara ePortfolioa gaituta dagoela antzeman da. Funtzionalitate hau PHPko XML-RPC luzapenean oinarritzen da eta PHPk jada ez du luzapen honi sostengua ematen.';
+$string['xmlrpcmnetenabled'] = 'Zure gunean Moodle Sarea gaituta dagoela antzeman da. Funtzionalitate hau PHPko XML-RPC luzapenean oinarritzen da eta PHPk jada ez du luzapen honi sostengua ematen.';
 $string['xmlrpcrecommended'] = 'XMLRPC hedapena erabilgarria da web-zerbitzuetarako eta Moodle sarerako.';
+$string['xmlrpcwebserviceenabled'] = 'Zure gunean XML-RPC Web Zerbitzuen protokoloa gaituta dagoela antzeman da. Funtzionalitate hau PHPko XML-RPC luzapenean oinarritzen da eta PHPk jada ez du luzapen honi sostengua ematen.';
 $string['yuicomboloading'] = 'YUI combo kargatzen';
 $string['ziprequired'] = 'Moodlek orain Zip PHP hedapena behar du. Dagoeneko ez dira info-ZIP bitarrak erabiltzen ezta PclZip liburutegia ere.';

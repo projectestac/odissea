@@ -35,6 +35,7 @@ $string['setting'] = 'Параметр';
 $string['timemodified'] = 'Дата';
 $string['user'] = 'Пользователь';
 $string['user_help'] = 'Поиск по имени или фамилии пользователя';
+$string['usernone'] = 'Интерфейс командной строки или установка';
 $string['value'] = 'Значение';
 $string['value_help'] = 'Поиск по новому или исходному значению конфигурации';
 $string['valuenew'] = 'Новое значение';

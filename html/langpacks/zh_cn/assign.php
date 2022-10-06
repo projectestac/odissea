@@ -64,7 +64,7 @@ $string['assign:reviewgrades'] = '检查成绩';
 $string['assign:showhiddengrader'] = '看见隐藏的评分人的身份';
 $string['assign:submit'] = '提交作业';
 $string['assign:view'] = '查看作业';
-$string['assign:viewblinddetails'] = '启用盲批时查看学生身份';
+$string['assign:viewblinddetails'] = '启用匿名提交时查看学生身份';
 $string['assign:viewgrades'] = '查看成绩';
 $string['assign:viewownsubmissionsummary'] = '查看自己的提交摘要';
 $string['assignfeedback'] = '反馈插件';
@@ -86,11 +86,11 @@ $string['attemptheading'] = '尝试 {$a->attemptnumber}：{$a->submissionsummary
 $string['attempthistory'] = '先前的尝试';
 $string['attemptnumber'] = '尝试数';
 $string['attemptreopenmethod'] = '额外的尝试';
-$string['attemptreopenmethod_help'] = '确定如何重新开启学生作业尝试。可用的选项有:
+$string['attemptreopenmethod_help'] = '此设置决定了学生是否可以对作业进行额外的尝试。对于每次尝试，成绩和反馈都会被保存下来，教师和学生都可以查看。可用的选项包括：
 
-* 从不 - 不能重新开启。
-* 手动 - 作业可以由教师重新开启。
-* 自动直到及格 - 作业自动重新开启，直到学生作业成绩达到成绩册设置的及格成绩。';
+* 从不 - 只能尝试一次。
+* 手动 - 教师可以允许其他尝试。
+* 自动直到通过 - 允许自动进行其他尝试，直到学生达到本作业成绩册中设定的通过分数。';
 $string['attemptreopenmethod_manual'] = '手动';
 $string['attemptreopenmethod_none'] = '从不';
 $string['attemptreopenmethod_untilpass'] = '自动开启直到及格';
@@ -112,8 +112,8 @@ $string['batchoperationsdescription'] = '对选中的各项…';
 $string['batchoperationunlock'] = '解锁作业';
 $string['batchsetallocatedmarker'] = '为{$a}位选定的用户分配批改人。';
 $string['batchsetmarkingworkflowstateforusers'] = '为{$a}位选定的用户设置批改工作流程状态。';
-$string['blindmarking'] = '盲批';
-$string['blindmarking_help'] = '盲批，批改人看不到学生的身份信息。一旦完成了与该作业相关的提交或评分，盲批设置将被锁定。';
+$string['blindmarking'] = '匿名提交';
+$string['blindmarking_help'] = '匿名提交会向评分者隐藏学生的身份。一旦提交或评分与此作业相关，匿名提交的设置将被锁定。';
 $string['blindmarkingenabledwarning'] = '此活动已启用盲批。在通过评分操作菜单显示学生身份之前，成绩不会添加到成绩册中。';
 $string['cachedef_overrides'] = '用户和组覆盖信息';
 $string['calendardue'] = '{$a} 已到期';
@@ -248,7 +248,7 @@ $string['gradecanbechanged'] = '允许更改成绩';
 $string['gradechangessaveddetail'] = '成绩和反馈的更改已保存';
 $string['graded'] = '已评分';
 $string['gradedby'] = '评分人';
-$string['gradedfollowupsubmit'] = '已评分-继续已收到的作业';
+$string['gradedfollowupsubmit'] = '已评分--收到后续提交的材料';
 $string['gradedon'] = '评分于';
 $string['gradeitem:submissions'] = '作业';
 $string['gradelocked'] = '此成绩在成绩册中被锁定或覆盖。';
@@ -287,11 +287,11 @@ $string['hidegrader_help'] = '如果启用，则不会显示任何为作业评�
 $string['hideshow'] = '隐藏 / 显示';
 $string['inactiveoverridehelp'] = '* 由于用户对活动的访问受到限制，因此该覆盖无效。这可能是由于小组或角色分配，其他访问限制或活动被隐藏。';
 $string['indicator:cognitivedepth'] = '作业认知深度';
-$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在作业活动中所达到的认知深度。';
+$string['indicator:cognitivedepth_help'] = '该指标是基于学生在一项作业活动中达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '作业认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与人已经达到了作业活动所提供的认知参与度(级别=未查看、查看、提交、查看反馈、评论反馈、查看反馈后重新提交)';
 $string['indicator:socialbreadth'] = '作业社会广度';
-$string['indicator:socialbreadth_help'] = '这个指标是基于学生在作业活动中所达到的社会广度。';
+$string['indicator:socialbreadth_help'] = '该指标基于学生在作业活动中达到的社交广度。';
 $string['indicator:socialbreadthdef'] = '作业社会广度';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔内，参与人达到了作业活动所提供的社会参与度(级别=没有参与，单独参与，和他人一起参与)';
 $string['instructionfiles'] = '说明文件';
@@ -405,7 +405,7 @@ $string['preventsubmissionsshort'] = '阻止作业更改';
 $string['previous'] = '向前';
 $string['previoususer'] = '前一个用户';
 $string['privacy:attemptpath'] = '尝试 {$a}';
-$string['privacy:blindmarkingidentifier'] = '用于盲批的标识符';
+$string['privacy:blindmarkingidentifier'] = '用于匿名提交的标识符';
 $string['privacy:gradepath'] = '成绩';
 $string['privacy:metadata:assigndownloadasfolders'] = '用户偏好，用于确定是否应将多个文件作业下载到文件夹中';
 $string['privacy:metadata:assignfeedbackpluginsummary'] = '作业反馈数据。';
@@ -420,7 +420,7 @@ $string['privacy:metadata:assignquickgrading'] = '关于是否使用快速评分
 $string['privacy:metadata:assignsubmissiondetail'] = '存储用户作业信息';
 $string['privacy:metadata:assignsubmissionpluginsummary'] = '作业的提交数据。';
 $string['privacy:metadata:assignuserflags'] = '存储用户元数据, 如延期日期';
-$string['privacy:metadata:assignusermapping'] = '盲批的映射';
+$string['privacy:metadata:assignusermapping'] = '匿名提交的映射';
 $string['privacy:metadata:assignworkflowfilter'] = '按不同的工作流程阶段过滤';
 $string['privacy:metadata:grade'] = '作业的数值成绩，可以通过量表/高级评价表单等来确定, 但总是会转换为浮点数。';
 $string['privacy:metadata:grader'] = '评分人员的用户 ID。';
@@ -445,7 +445,7 @@ $string['removesubmission'] = '移除作业';
 $string['removesubmissionconfirm'] = '您确定要移除该作业数据吗?';
 $string['removesubmissionconfirmforstudent'] = '您确定要移除学生{$a}的作业数据吗？';
 $string['removesubmissionforstudent'] = '移除学生的作业： (ID={$a->id}, 姓名={$a->fullname})。';
-$string['reopenuntilpassincompatiblewithblindmarking'] = '重新开启，直到盲批与及格选项不兼容，因为在公开学生身份之前，成绩不会公布到成绩册中。';
+$string['reopenuntilpassincompatiblewithblindmarking'] = '重新开放直到通过选项与匿名提交不兼容，因为在学生身份显示之前，成绩不会发布到成绩册中。';
 $string['requireallteammemberssubmit'] = '要求所有组成员提交';
 $string['requireallteammemberssubmit_help'] = '如果启用，学生小组的所有成员必须点击此作业的提交按钮，该小组作业才视为已提交。如果禁用，则只要学生小组的任何成员点击提交按钮，小组作业就会视为已提交。';
 $string['requiresubmissionstatement'] = '要求学生接受作业声明';
@@ -453,7 +453,7 @@ $string['requiresubmissionstatement_help'] = '要求学生为该作业的所有�
 $string['revealidentities'] = '公开学生身份';
 $string['revealidentitiesconfirm'] = '您确定要在该作业中公开学生身份吗?此操作无法撤消。一旦学生身份被公开，分数将公布到成绩册上。';
 $string['reverttodefaults'] = '恢复到作业默认值';
-$string['reverttodraft'] = '退回该作业到草稿状态。';
+$string['reverttodraft'] = '将提交文件恢复为草稿状态';
 $string['reverttodraftforstudent'] = '退回该学生的作业到草稿状态：(ID={$a->id}，姓名={$a->fullname})。';
 $string['reverttodraftshort'] = '退回该作业到草稿';
 $string['reviewed'] = '已复查';
@@ -475,9 +475,9 @@ $string['sendlatenotifications_help'] = '如果启用，评分人（通常就是
 $string['sendnotifications'] = '提交作业时通知评分人';
 $string['sendnotifications_help'] = '如果启用，则评分人（通常是老师）会在学生提交作业时收到一条通知消息，不管是提前、按时，还是迟交均会收到。消息的发送方式可配置。';
 $string['sendstudentnotifications'] = '通知学生';
-$string['sendstudentnotifications_help'] = '如果启用，学生将收到关于成绩或反馈更新的消息。如果在该作业中启用了批改工作流程，在成绩“已公布”之前不会发送通知。';
+$string['sendstudentnotifications_help'] = '勾选此框以发送有关更新成绩或反馈的通知。如果作业使用评分工作流程，或者评分隐藏在评分者报告中，则在发布评分之前不会发送通知。';
 $string['sendstudentnotificationsdefault'] = '"通知学生"的默认设置';
-$string['sendstudentnotificationsdefault_help'] = '为评分表单上“通知学生”复选框设置默认值。';
+$string['sendstudentnotificationsdefault_help'] = '给每个学生评分时，是否应默认勾选“通知学生”？';
 $string['sendsubmissionreceipts'] = '发送作业收据给学生';
 $string['sendsubmissionreceipts_help'] = '此开关为学生启用作业收据。学生每次成功提交作业都会收到通知。';
 $string['setmarkerallocationforlog'] = '设置批改分配： (ID={$a->id}，姓名={$a->fullname}，批改人={$a->marker})。';
@@ -492,7 +492,7 @@ $string['submission'] = '作业';
 $string['submissioncopiedhtml'] = '<p>您已经为“<i>{$a->assignment}</i>”复制了一份先前的作业“。</p><p>您可以看到您的<a href="{$a->url}">作业</a>状态。</p>';
 $string['submissioncopiedsmall'] = '您已为{$a-> assignment}复制了先前的作业';
 $string['submissioncopiedtext'] = '您已经为“{$a-> assignment}”复制了先前的作业，您可以在 {$a->url} 看到您的作业状态。';
-$string['submissiondrafts'] = '学生必须点击提交按钮';
+$string['submissiondrafts'] = '要求学生单击提交按钮';
 $string['submissiondrafts_help'] = '如果启用，学生将必须单击提交按钮以声明其作业为最终作业。这使学生可以将作业的草稿版本保留在系统上。如果在学生提交后将此设置从“否”更改为“是”，则这些作业将被视为最终作业。';
 $string['submissioneditable'] = '学生可以编辑此作业';
 $string['submissionempty'] = '没有提交任何东西';

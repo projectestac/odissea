@@ -27,13 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsettings'] = 'Erweiterte Einstellungen';
 $string['backgroundimage'] = 'Hintergrundbild';
-$string['backgroundimage_desc'] = 'Bild zur Anzeige als Hintergrund der Website. Das hier hochgeladene Hintergrundbild überschreibt das Hintergrundbild aus den Preset-Dateien.';
+$string['backgroundimage_desc'] = 'Das Bild wird als Hintergrundbild für die Website angezeigt. Ein hier hochgeladenes Hintergrundbild überschreibt das Hintergrundbild aus den Preset-Dateien.';
 $string['bootswatch'] = 'Bootswatch';
 $string['bootswatch_desc'] = 'Bootswatch ist ein Set von Bootstrap-Variablen und CSS zur Gestaltung von Bootstrap.';
 $string['brandcolor'] = 'Markenfarbe';
 $string['brandcolor_desc'] = 'Die Markenfarbe legt die Grundfarbe der Website fest, die die Farbe von Links, Buttons und Menüs bestimmt.';
 $string['choosereadme'] = 'Boost ist ein sehr anpassungsfähiges Design. Dieses Design ist für den direkten Gebrauch vorgesehen, kann aber auch als Basis für die Erstellung neuer Designs mit Bootstrap 4 dienen.';
-$string['configtitle'] = 'Boost Einstellungen';
+$string['configtitle'] = 'Boost-Einstellungen';
 $string['currentinparentheses'] = '(aktuell)';
 $string['generalsettings'] = 'Allgemeine Einstellungen';
 $string['nobootswatch'] = 'Keine';
@@ -49,6 +49,6 @@ $string['privacy:metadata:preference:draweropennav'] = 'Nutzereinstellung für d
 $string['rawscss'] = 'Raw SCSS';
 $string['rawscss_desc'] = 'Verwenden Sie dieses Feld, um SCSS- oder CSS-Code bereitzustellen, der am Ende des Stylesheets hinzugefügt wird.';
 $string['rawscsspre'] = 'Raw initial SCSS';
-$string['rawscsspre_desc'] = 'In diesem Feld können Sie SCSS-Code bereitstellen, der vor allen anderen Stylesheets ausgeführt wird. Meistens verwenden Sie diese Einstellung, um Variablen zu definieren.';
+$string['rawscsspre_desc'] = 'Verwenden Sie dieses Feld, um SCSS- oder CSS-Code bereitzustellen, der vor allen anderen Stylesheets ausgeführt wird. Meistens wird diese Einstellung verwendet, um Variablen zu definieren.';
 $string['region-side-pre'] = 'Rechts';
 $string['totop'] = 'Nach oben';

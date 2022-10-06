@@ -33,3 +33,5 @@ $string['pluginname_help'] = 'Ficheiros usados recentemente polo usuario';
 $string['privacy:metadata'] = 'O engadido de repositorio de ficheiros recentes non almacena ou transmite datos persoais.';
 $string['recent:view'] = 'Ver o engadido do repositorio de ficheiros recentes';
 $string['recentfilesnumber'] = 'Número de ficheiros recentes';
+$string['timelimit'] = 'Límite de tempo';
+$string['timelimit_help'] = 'Recuperar ficheiros recentes só dentro do límite de tempo';

@@ -2051,16 +2051,7 @@ $string['submit'] = 'Insturen';
 $string['success'] = 'Succes';
 $string['successduration'] = 'Succes ({$a} seconds)';
 $string['summary'] = 'Beschrijving';
-$string['summary_help'] = '<p>Een onderwerpbeschrijving is een korte tekst die de leerlingen voorbereidt op de activiteiten
-binnen dit onderwerp (of week).</p>
-
-
-<p>De beschrijving zou erg kort moeten zijn, zodat de pagina met de cursuslijst niet te lang wordt.</p>
-
-
-<p>Als je vindt dat je meer wil schrijven dan een tweetal zinnen, overweeg dan om een bron
-aan dit onderwerp toe te voegen. (de eerste activiteit zou bijvoorbeeld een pagina kunnen
-zijn die heet <b>Over dit onderwerp</b>).</p>';
+$string['summary_help'] = 'Het idee achter de samenvatting is om je leerlingen een korte tekst te geven om hen voor te bereiden op de activiteiten die in het onderwerp van de week opgenomen zijn. De tekst wordt getoond op de cursuspagina onder de sectie-naam.';
 $string['summaryof'] = 'Beschrijving van {$a}';
 $string['supplyinfo'] = 'Meer details';
 $string['suspended'] = 'Geschorst';

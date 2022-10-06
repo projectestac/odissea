@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'تسطير';
-$string['privacy:metadata'] = 'إن ملحق atto_underline لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_underline لا تخزن أيّ بيانات شخصية.';

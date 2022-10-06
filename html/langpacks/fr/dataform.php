@@ -74,4 +74,5 @@ $string['completionspecificgradegroup'] = 'Exiger une note spécifique';
 $string['completionspecificgradehelp'] = 'exige une note spécifique pour terminer';
 $string['fieldedit'] = 'Modifier « {$a} »';
 $string['filteredit'] = 'Modifier « {$a} »';
+$string['firstdayofweek'] = 'Lundi';
 $string['viewedit'] = 'Modifier « {$a} »';

@@ -66,6 +66,7 @@ $string['pluginnameediting'] = 'S\'està editant una pregunta d\'opcions múltip
 $string['pluginnamesummary'] = 'Permet la selecció d\'una o diverses respostes d\'una llista predefinida.';
 $string['selectmulti'] = 'Trieu-ne una o més:';
 $string['selectone'] = 'Trieu-ne una:';
+$string['showstandardinstruction'] = 'Mostra les instruccions estàndard';
 $string['shuffleanswers'] = 'Voleu barrejar les opcions?';
 $string['shuffleanswers_help'] = 'Si s\'activa, l\'ordre de les respostes es barreja en cada intent, entenent que l\'opció de l\'activitat "Barreja dins de les preguntes" també està activada.';
 $string['singleanswer'] = 'Trieu una resposta.';

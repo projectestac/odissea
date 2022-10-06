@@ -95,7 +95,6 @@ $string['caleventcreated'] = 'S\'ha creat amb èxit l\'esdeveniment del calendar
 $string['caleventdeleted'] = 'S\'ha esborrat amb èxit l\'esdeveniment del calendari per a la sessió';
 $string['calmonths'] = 'Gener,Febrer,Març,Abril,Maig,Juny,Juliol,Agost,Setembre,Octubre,Novembre,Desembre';
 $string['calshow'] = 'Escolliu data';
-$string['caltoday'] = 'Avui';
 $string['calweekdays'] = 'Dg,Dl,Dm,Dc,Dj,Dv,Ds';
 $string['cannottakeforgroup'] = 'No podeu registrar l\'assistència del grup «{$a}»';
 $string['cantaddstatus'] = 'Heu d\'establir un acrònim i una descripció quan s\'afegeixi un estat nou.';

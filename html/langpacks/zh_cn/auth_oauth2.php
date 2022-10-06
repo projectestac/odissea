@@ -58,7 +58,10 @@ $string['confirmlinkedloginemail'] = '{$a->fullname} 您好，
 绝大多数电子邮件客户端中，以上地址应该是蓝色可点击的。
 如果无法点击，请将该地址复制到您的浏览器顶端的的地址栏中。
 
-如需帮助，请联系站点管理员 {$a->admin}';
+如需帮助，请联系站点管理员，
+{$a->admin}
+
+如果您没有这样做，其他人可能会试图破坏您的帐户。请立即联系网站管理员。"';
 $string['confirmlinkedloginemailsubject'] = '{$a}：第三方登陆确认';
 $string['createaccountswarning'] = '这个认证插件会允许访客在站点上创建新用户。请考虑是否需要开启“防止在身份认证时创建账号”这一设置。';
 $string['createnewlinkedlogin'] = '绑定 {$a} 账户';

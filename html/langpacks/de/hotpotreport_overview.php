@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Übersichtsbericht';
+$string['privacy:metadata'] = 'Das Modul "Übersichtsbericht" speichert keine personenbezogenen Daten.';

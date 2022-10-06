@@ -4,6 +4,21 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 22.10.04
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.10+
+- Updated langpacks
+- Attendance: Upgraded module
+- Choicegroup: Upgraded module
+- Google repository: Fix for error when accessing to files allocated in Google Drive
+- Hotpot: Upgraded module
+- Journal: Upgraded module
+- Ordering: Upgraded question type
+- Questionnaire: Upgraded module
+- Snap!: Added module
+- Wiris: Upgraded all components
+
+
 Changes 22.07.04
 ---------------------------------------------------------------------------------------
 - Ignore file size limits in content bank

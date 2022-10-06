@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['alphabet'] = 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z';
+$string['am'] = '上午';
+$string['amcaps'] = '上午';
 $string['backupnameformat'] = '%Y%m%d-%H%M';
 $string['dateintervaldayshoursmins'] = '%ad %hh %im';
 $string['decsep'] = '.';
@@ -40,6 +42,8 @@ $string['localewin'] = 'Chinese_China.54936';
 $string['localewincharset'] = 'GBK';
 $string['oldcharset'] = 'UTF-8';
 $string['parentlanguage'] = '';
+$string['pm'] = '下午';
+$string['pmcaps'] = '下午';
 $string['strftimedate'] = '%Y年%m月%d日';
 $string['strftimedatefullshort'] = '%y/%m/%d';
 $string['strftimedatemonthabbr'] = '%d %b %Y';

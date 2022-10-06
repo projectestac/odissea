@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Checkbox field';
-$string['pluginname'] = 'Checkbox';
-$string['privacy:metadata'] = 'The Checkbox field component does not store any personal data itself, it uses tables defined in mod_data.';
+$string['fieldtypelabel'] = 'Checkboxes';
+$string['pluginname'] = 'Checkboxes';
+$string['privacy:metadata'] = 'The Checkboxes field component doesn\'t store any personal data; it uses tables defined in mod_data.';

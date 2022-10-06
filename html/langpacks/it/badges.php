@@ -143,9 +143,7 @@ $string['backpacksettings'] = 'Impostazioni backpack';
 $string['backpackweburl'] = 'URL del backpack';
 $string['badgedetails'] = 'Dettagli badge';
 $string['badgeimage'] = 'Immagine';
-$string['badgeimage_help'] = 'L\'immagine da usare per il rilascio del badge.
-
-Per aggiungere un\'immagine, seleziona un\'immagine in formato JPG o PNG e poi fai click su "Salva modifiche". L\'immagine verrà adattata alla forma quadrata richiesta per le immagini dei badge.';
+$string['badgeimage_help'] = 'L\'immagine deve avere una dimensione di ameno 300 x 300 pixel. Sarà visualizzata con dimensione 300 x 300 pixel nella pagina del badge e con dimensione 100 x100 pixel nella pagina del profilo utente.';
 $string['badgeprivacysetting'] = 'Impostazioni di privacy del badge';
 $string['badgeprivacysetting_help'] = 'I badge conseguiti possono essere visualizzati automaticamente nella pagina del profilo. L\'impostazione definisce la visibilità dei nuovi badge conseguiti.
 
@@ -159,10 +157,10 @@ Nota: per consentire la verifica dei destinatari evitare di modificare questa im
 $string['badgesdisabled'] = 'In questo sito i badge non sono attivi.';
 $string['badgesearned'] = 'Numero di badge conseguiti: {$a}';
 $string['badgesettings'] = 'Impostazioni badge';
-$string['badgestatus_0'] = 'Non disponibile agli utenti';
-$string['badgestatus_1'] = 'Disponibile agli utenti';
-$string['badgestatus_2'] = 'Non disponibile agli utenti';
-$string['badgestatus_3'] = 'Disponibile agli utenti';
+$string['badgestatus_0'] = 'Non disponibile';
+$string['badgestatus_1'] = 'Disponibile';
+$string['badgestatus_2'] = 'Non disponibile (criteri bloccati)';
+$string['badgestatus_3'] = 'Disponibile (criteri bloccati)';
 $string['badgestatus_4'] = 'Archiviato';
 $string['badgestoearn'] = 'Numero di badge disponibili: {$a}';
 $string['badgesview'] = 'Badge del corso';
@@ -426,7 +424,7 @@ $string['nobackpack'] = 'Non ci sono servizi backpack collegati a questo account
 $string['nobackpackbadgessummary'] = 'Nella raccolta selezionata non sono presenti badge.';
 $string['nobackpackcollectionssummary'] = 'Non sono state sezionate raccolte di badge.';
 $string['nobackpacks'] = 'Non ci sono backpack disponibili.';
-$string['nobadges'] = 'Non sono presenti badge.';
+$string['nobadges'] = 'Non ci sono badge da rilasciare agli utenti.';
 $string['nocompetencies'] = 'Non sono state selezionate competenze.';
 $string['nocriteria'] = 'I criteri per questo badge non sono stati impostati';
 $string['noendorsement'] = 'Il badge non ha garanzie.';

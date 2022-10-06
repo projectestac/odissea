@@ -26,5 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['email'] = '이메일 통지 보냄';
+$string['emaildigestunreadmessages'] = '읽지 않은 메시지';
+$string['emaildigestviewallmessages'] = '모든 메시지 보기';
 $string['ifemailleftempty'] = '{$a} 에게 통지 보내기 위해서는 공백으로 남겨두세요.';
 $string['pluginname'] = '이메일';

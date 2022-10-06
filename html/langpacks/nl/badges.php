@@ -159,10 +159,10 @@ Opmerking: om de verificatie van de ontvanger mogelijk te maken, mag je deze ins
 $string['badgesdisabled'] = 'Badges zijn niet ingeschakeld op deze site.';
 $string['badgesearned'] = 'Aantal verdiende badges: {$a}';
 $string['badgesettings'] = 'Instellingen badges';
-$string['badgestatus_0'] = 'Niet beschikbaar voor gebruikers';
-$string['badgestatus_1'] = 'Beschikbaar voor gebruikers';
-$string['badgestatus_2'] = 'Niet beschikbaar voor gebruikers';
-$string['badgestatus_3'] = 'Beschikbaar voor gebruikers';
+$string['badgestatus_0'] = 'Niet beschikbaar';
+$string['badgestatus_1'] = 'Beschikbaar';
+$string['badgestatus_2'] = 'Niet beschikbaar (criteria geblokkeerd)';
+$string['badgestatus_3'] = 'Beschikbaar (criteria geblokkeerd)';
 $string['badgestatus_4'] = 'Gearchiveerd';
 $string['badgestoearn'] = 'Aantal beschikbare badges: {$a}';
 $string['badgesview'] = 'Cursusbadges';

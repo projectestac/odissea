@@ -168,6 +168,7 @@ $string['required'] = '必须';
 $string['requiredcapability'] = '需要权限';
 $string['requiredcapability_help'] = '如果设置，只有有相应权限的用户才能访问此服务。';
 $string['requiredcaps'] = '需要权限';
+$string['resettokencomplete'] = '所选令牌已重置';
 $string['resettokenconfirm'] = '您确信要重置<strong>{$a->user}</strong>的<strong>{$a->service}</strong>服务的网络服务密钥吗？';
 $string['resettokenconfirmsimple'] = '您想重置这个密钥吗？所有使用旧密钥的链接都将失效。';
 $string['response'] = '应答';

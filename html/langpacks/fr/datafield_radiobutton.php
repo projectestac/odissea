@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Champ bouton radio';
-$string['pluginname'] = 'Bouton radio';
-$string['privacy:metadata'] = 'Le composant Champ bouton radio n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';
+$string['fieldtypelabel'] = 'Boutons radio';
+$string['pluginname'] = 'Boutons radio';
+$string['privacy:metadata'] = 'Le composant Champ boutons radio n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';

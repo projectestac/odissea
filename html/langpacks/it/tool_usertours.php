@@ -109,7 +109,7 @@ E\' possibile utilizzare il caratteri jolly % per generalizzare le corrispondenz
 * /mod/forum/view.php% - corrisponde all\'URL dell\'elenco delle discussioni
 * /user/profile.php% - corrisponde all\'URL del profilo utente
 
-Per visualizzare un tour nella pagina home del sito, utilizzare "FRONTPAGE"';
+Per visualizzare un tour nella pagina home del sito, utilizzare "FRONTPAGE".';
 $string['pausetour'] = 'Pausa';
 $string['placement'] = 'Posizione';
 $string['placement_help'] = 'E\' possibile posizionare un passo sopra, sotto, a destra o a sinistra dell\'obiettivo. Si raccomanda di utilizzare sopra o sotto per una migliore visualizzazione mobile.

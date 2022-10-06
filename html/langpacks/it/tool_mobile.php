@@ -114,6 +114,7 @@ $string['qrcodeformobileappaccess'] = 'QR code per accesso mobile';
 $string['qrcodetype'] = 'Accesso QR code';
 $string['qrcodetypelogin'] = 'QR code con login automatico';
 $string['qrcodetypeurl'] = 'QR code con URL del sito';
+$string['qrsiteadminsnotallowed'] = 'Per motivi di sicurezza gli amministratori del sit non possono autenticarsi con il QR code né autenticarsi come altri utenti.';
 $string['remoteaddons'] = 'Componenti remoti aggiuntivi';
 $string['scanqrcode'] = 'Scansione QR code';
 $string['selfsignedoruntrustedcertificatewarning'] = 'Il certificato HTTPS risulta auto firmato oppure non attendibile. L\'app mobile funziona solo con siti attendibili.';

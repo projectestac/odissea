@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Qedoc-Output-Format';
+$string['pluginname'] = 'Qedoc-Output-Formate';
+$string['privacy:metadata'] = 'Das Modul "Qedoc-Output-Formate" speichert keine personenbezogenen Daten.';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['name'] = 'الميلادي';
 $string['pluginname'] = 'نوع التقويم الميلادي';
-$string['privacy:metadata'] = 'إن ملحق التقويم الميلادي لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة التقويم الميلادي لا تخزن أي بيانات شخصية.';

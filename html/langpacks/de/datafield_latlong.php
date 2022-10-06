@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Feld für Längen- und Breitengrad';
-$string['pluginname'] = 'Geografische Daten';
-$string['privacy:metadata'] = 'Die Komponente \'Längen/Breitengradfeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';
+$string['fieldtypelabel'] = 'Koordinaten';
+$string['pluginname'] = 'Koordinaten';
+$string['privacy:metadata'] = 'Die Feldkomponente \'Koordinaten\' speichert keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

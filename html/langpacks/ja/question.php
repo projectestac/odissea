@@ -375,9 +375,9 @@ $string['questionaffected'] = '<a href="{$a->qurl}">問題「 {$a->name}」({$a-
 $string['questionbank'] = '問題バンク';
 $string['questionbehaviouradminsetting'] = '問題動作設定';
 $string['questionbehavioursdisabled'] = '無効にする問題動作';
-$string['questionbehavioursdisabledexplained'] = 'あなたがドロップダウンメニューに表示したくない動作のリストをカンマ区切りで入力してください。';
+$string['questionbehavioursdisabledexplained'] = 'あなたがドロップダウンメニュに表示したくない動作のリストをカンマ区切りで入力してください。';
 $string['questionbehavioursorder'] = '問題動作順';
-$string['questionbehavioursorderexplained'] = 'あなたがドロップダウンメニューに表示したい動作のリストをカンマ区切りで順番に入力してください。';
+$string['questionbehavioursorderexplained'] = 'あなたがドロップダウンメニュに表示したい動作のリストをカンマ区切りで順番に入力してください。';
 $string['questioncategory'] = '問題カテゴリ';
 $string['questioncatsfor'] = '「 {$a} 」の問題カテゴリ';
 $string['questiondoesnotexist'] = 'この問題は存在しません。';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Veld voor afbeelding';
+$string['fieldtypelabel'] = 'Afbeelding';
 $string['pluginname'] = 'Afbeelding';
-$string['privacy:metadata'] = 'De afbeeldingscomponent bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';
+$string['privacy:metadata'] = 'De afbeeldingscomponent bewaart geen persoonlijke gegevens, maar gebruikt tabellen in mod_data.';

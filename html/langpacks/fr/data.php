@@ -64,7 +64,7 @@ $string['cannotadd'] = 'Impossible d\'ajouter des fiches !';
 $string['cannotdeletepreset'] = 'Erreur lors de la suppression d\'un préréglage !';
 $string['cannotoverwritepreset'] = 'Erreur lors du remplacement du préréglage';
 $string['cannotunziptopreset'] = 'Impossible de décompresser le dossier du préréglage';
-$string['checkbox'] = 'Case à cocher';
+$string['checkbox'] = 'Cases à cocher';
 $string['chooseexportfields'] = 'Sélectionner les champs à exporter';
 $string['chooseexportformat'] = 'Sélectionner le format d\'exportation désiré';
 $string['chooseorupload'] = 'Sélectionner un fichier';
@@ -101,7 +101,7 @@ $string['data:exportuserinfo'] = 'Exporter l\'information de l\'utilisateur';
 $string['data:managecomments'] = 'Gérer les commentaires';
 $string['data:manageentries'] = 'Gérer les fiches';
 $string['data:managetemplates'] = 'Gérer les modèles';
-$string['data:manageuserpresets'] = 'Gérer tous les préréglages';
+$string['data:manageuserpresets'] = 'Gérer les préréglages';
 $string['data:rate'] = 'Évaluer des fiches';
 $string['data:readentry'] = 'Lire des fiches';
 $string['data:view'] = 'Consulter une activité base de données';
@@ -230,7 +230,7 @@ $string['invalidrecord'] = 'Fiche incorrecte';
 $string['invalidurl'] = 'L\'URL que vous venez de saisir n\'est pas valide';
 $string['jstemplate'] = 'Modèle Javascript';
 $string['latitude'] = 'Latitude';
-$string['latlong'] = 'Latitude/longitude';
+$string['latlong'] = 'Coordonnées';
 $string['latlongboth'] = 'La latitude et la longitude sont requises.';
 $string['latlongdownloadallhint'] = 'Lien pour télécharger tous les éléments comme KML';
 $string['latlongkmllabelling'] = 'Comment étiqueter des éléments dans les fichiers KML (Google Earth)';
@@ -252,18 +252,18 @@ $string['menuchoose'] = 'Sélectionner…';
 $string['missingdata'] = 'Un identifiant de données ou un objet doit être fourni à la classe champ';
 $string['missingfield'] = 'Erreur de programmation : veuillez indiquer le champ et/ou les données lors de la définition d\'une classe.';
 $string['modulename'] = 'Base de données';
-$string['modulename_help'] = 'Le module d\'activité base de données permet aux participants de construire, afficher et rechercher une collection de fiches. La structure des fiches est définie par l\'enseignant sous la forme de plusieurs champs. Les types de champs comprennent des cases à cocher, des boutons radio, des menus déroulants, des images, des fichiers, des URLs, des nombres et du texte.
+$string['modulename_help'] = 'Une base de données permet aux participants de créer, afficher et rechercher une collection de fiches.
 
-La mise en page des informations lors de l\'affichage de listes, des fiches ou lors de la modification des fiches peut être contrôlée par des modèles. Ces modèles peuvent être partagés entre les cours comme des préréglages. Les enseignants peuvent également importer et exporter des articles de base de données.
+La structure des fiches est définie à l\'aide de différents types de champs, par exemple un texte court, une liste déroulante, une zone de texte, une URL, une image ou un fichier.
 
-Si le filtre de liaison automatique de base de données est activé, les fiches d\'une base de données seront automatiquement liés aux mots ou phrases apparaissant dans le reste du cours.
+Comme enseignant, vous pouvez commenter et évaluer les fiches. Vous pouvez également permettre aux étudiants d\'évaluer et de commenter les fiches (évaluation par les pairs). Les évaluations peuvent être combinées pour former une note finale, enregistrée dans le carnet de notes.
 
-L\'enseignant peut autoriser les commentaires sur les articles. Les articles peuvent également être évalués par les enseignants ou les participants (évaluation par les pairs). Les évaluations sont combinées pour former une note enregistrée dans le carnet de notes.
+Si le filtre de liaison automatique de base de données est activé, les fiches d\'une base de données seront automatiquement liées aux mots ou phrases apparaissant dans le reste du cours.
 
 Une activité de base de données peut être utilisée pour :
 
-* construire de façon collaborative une collection de références (liens web, livres, journaux)
-* afficher des travaux d\'étudiants (photos, posters, sites web, poèmes) pour une évaluation par les pairs';
+* construire de façon collaborative une collection de liens web, livres, recensions de livres ou d\'articles, références de revues, etc.
+* afficher des photos, posters, sites web, poèmes, etc. créés par les étudiants, en vue d\'une présentation ou d\'une évaluation par les pairs.';
 $string['modulenameplural'] = 'Bases de données';
 $string['more'] = 'Plus';
 $string['moreurl'] = 'Plus d\'infos';
@@ -384,7 +384,7 @@ $string['teachersandstudents'] = '{$a->teachers} et {$a->students}';
 $string['templates'] = 'Modèles';
 $string['templatesaved'] = 'Modèle enregistré';
 $string['text'] = 'Texte';
-$string['textarea'] = 'Texte long';
+$string['textarea'] = 'Zone de texte';
 $string['timeadded'] = 'Date ajout';
 $string['timemodified'] = 'Date modification';
 $string['todatabase'] = 'à cette base de données.';

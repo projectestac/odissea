@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Feld für einfaches Menü';
-$string['pluginname'] = 'Menü';
-$string['privacy:metadata'] = 'Die Komponente \'Menüfeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';
+$string['fieldtypelabel'] = 'Dropdown-Menü';
+$string['pluginname'] = 'Dropdown-Menü';
+$string['privacy:metadata'] = 'Die Feldkomponente \'Dropdown-Menü\' speichert keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

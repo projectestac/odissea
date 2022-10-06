@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Поле «Гиперссылка»';
+$string['fieldtypelabel'] = 'Гиперссылка';
 $string['openlinkinnewwindow'] = 'Открывать ссылку в новом окне';
 $string['pluginname'] = 'Гиперссылка';
 $string['privacy:metadata'] = 'Компонент поля базы данных «Гиперссылка» сам по себе не хранит никаких персональных данных, он использует таблицы, определенные в mod_data.';

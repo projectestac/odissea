@@ -25,12 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['empty'] = 'Vuoto';
+$string['endtime'] = 'Orario di fine';
+$string['entitiysession'] = 'Sessione';
 $string['none'] = 'nessuno';
 $string['sessiondescription'] = 'Descrizione';
 $string['sessionfinishtime'] = 'Orario di fine sessione';
 $string['sessioninprogress'] = 'sessione in corso';
 $string['sessions'] = 'Sessioni';
 $string['sessionstartdate'] = 'Data di inizio sessione';
+$string['settings'] = 'Impostazioni';
 $string['status'] = 'Stato';
 $string['status_approved'] = 'Approvata';
 $string['status_booked'] = 'Prenotata';

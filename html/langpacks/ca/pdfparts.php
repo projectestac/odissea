@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['appearance'] = 'Aparença';
 $string['printintro'] = 'Mostra la descripció del recurs';

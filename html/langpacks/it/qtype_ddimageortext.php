@@ -61,10 +61,13 @@ $string['pluginname'] = 'Trascina e rilascia su un\'immagine';
 $string['pluginname_help'] = 'Seleziona un\'immagine di sfondo, seleziona le immagini da trascinare oppure inserisci del testo e definisci  sull\'immagine di sfondo le rispettive zone di rilascio.';
 $string['pluginnameadding'] = 'Inserimento domanda Trascina e rilascia su un\'immagine';
 $string['pluginnameediting'] = 'Modifica domanda Trascina e rilascia su un\'immagine';
-$string['pluginnamesummary'] = 'Immagini e le etichette di testo vengono trascinate e rilasciate su aree definite su un\'immagine di sfondo.';
+$string['pluginnamesummary'] = 'Immagini e le etichette di testo vengono trascinate e rilasciate su aree definite su un\'immagine di sfondo.
+
+Nota: questo tipo di domanda non è accessibile a persone ipovedenti.';
 $string['previewareaheader'] = 'Anteprima';
 $string['previewareamessage'] = 'Seleziona un\'immagine di sfondo, seleziona gli elementi da trascinare e definisci nell\'immagine di sfondo le rispettive zone di rilascio.';
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Trascina e rilascia su un\'immagine\' non memorizza dati personali.';
+$string['privacy:preference:defaultmark'] = 'Punteggio di default impostato per una specifica domanda.';
 $string['refresh'] = 'Aggiorna anteprima';
 $string['shuffleimages'] = 'Rimescola gli elementi trascinabili ad ogni tentativo di risposta';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

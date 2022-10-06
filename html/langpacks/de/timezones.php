@@ -380,6 +380,7 @@ $string['europe/jersey'] = 'Europa/Jersey';
 $string['europe/kaliningrad'] = 'Europa/Kaliningrad';
 $string['europe/kiev'] = 'Europa/Kiew';
 $string['europe/kirov'] = 'Europa/Kirov';
+$string['europe/kyiv'] = 'Europa/Kiew';
 $string['europe/lisbon'] = 'Europa/Lissabon';
 $string['europe/ljubljana'] = 'Europa/Ljubljana';
 $string['europe/london'] = 'Europa/London';

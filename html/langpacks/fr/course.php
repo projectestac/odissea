@@ -104,7 +104,7 @@ $string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} après le d�
 $string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} avant le début du cours';
 $string['searchactivitiesbyname'] = 'Rechercher des activités par nom';
 $string['searchresults'] = 'Résultats de la recherche : {$a}';
-$string['studentsatriskincourse'] = 'Étudiants à risque dans le cours {$a}';
+$string['studentsatriskincourse'] = 'Étudiants  en risque de décrochage dans le cours {$a}';
 $string['studentsatriskinfomessage'] = 'Bonjour {$a->userfirstname},
 <p>Des étudiants dans le cours {$a->coursename} ont été identifiés comme en risque de décrochage.</p>';
 $string['submitsearch'] = 'Rechercher';
@@ -129,7 +129,7 @@ $string['targetlabelstudentcompetenciesno'] = 'Étudiant qui atteindra probablem
 $string['targetlabelstudentcompetenciesyes'] = 'Étudiant qui n\'atteindra probablement pas les compétences attribuées à un cours';
 $string['targetlabelstudentcompletionno'] = 'Étudiant qui remplira probablement les conditions d\'achèvement du cours';
 $string['targetlabelstudentcompletionyes'] = 'Étudiant qui risque de ne pas remplir les conditions d\'achèvement du cours';
-$string['targetlabelstudentdropoutno'] = 'Pas en risque';
+$string['targetlabelstudentdropoutno'] = 'Pas en risque de décrochage';
 $string['targetlabelstudentdropoutyes'] = 'Étudiant en risque de décrochage';
 $string['targetlabelstudentgradetopassno'] = 'Étudiant qui atteindra probablement la note minimale pour passer le cours.';
 $string['targetlabelstudentgradetopassyes'] = 'Étudiant risquant de ne pas atteindre la note minimale pour passer le cours.';

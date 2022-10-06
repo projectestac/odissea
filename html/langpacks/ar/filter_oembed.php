@@ -29,5 +29,5 @@ $string['atag'] = 'الترشيح حسب وسوم &lt; a &gt;';
 $string['cachelifespan_desc'] = 'الفترة الزمنية التي ينبغي عندها تنشيط قائمة المزودين.';
 $string['divtag'] = 'الترشيح حسب وسوم &lt; div  &gt;';
 $string['providername'] = 'اسم المزود';
-$string['providersallowed_desc'] = 'القائمة البيضاء للمزود المزمع استعمالها مع هذا الملحق';
+$string['providersallowed_desc'] = 'القائمة البيضاء للمزود المزمع استعمالها مع هذه الإضافة';
 $string['targettag_desc'] = 'ما هو نوع الوسم الذي ينبغي تنقيحه - المرتكزات أم وسوم div باستعمال الفئة oembed.';

@@ -47,4 +47,5 @@ $string['privacy:metadata:replyto'] = '要回复的电子邮件地址。';
 $string['privacy:metadata:replytoname'] = '回复收件人的姓名。';
 $string['privacy:metadata:subject'] = '消息的主题行。';
 $string['privacy:metadata:userfrom'] = '发送消息的用户。';
+$string['privacy:preference:email'] = '首选电子邮件通知地址';
 $string['tasksendemail'] = '消息摘要邮件';

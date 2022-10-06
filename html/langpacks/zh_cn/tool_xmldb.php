@@ -166,6 +166,13 @@ $string['persistentfieldsexist'] = '以下字段已存在：';
 $string['pluginname'] = 'XMLDB编辑器';
 $string['primarykeyonlyallownotnullfields'] = '主键不可为 null';
 $string['privacy:metadata'] = 'XMLDB编辑器插件不存储任何个人数据。';
+$string['reconcile_files'] = '查找需要调整的XMLDB文件';
+$string['reconcile_files_intro'] = '该功能查看所有XMLDB文件的内容，以验证它们是否与从XMLDB编辑器生成的结果一致。
+
+将显示需要调整（重新生成）的文件列表，可以使用XMLDB编辑器来修复它们。';
+$string['reconcile_files_no'] = '所有文件都正常。无需调整。';
+$string['reconcile_files_yes'] = '找到要调整的文件：';
+$string['reconcilefiles'] = '调整XMLDB文件';
 $string['reserved'] = '保留';
 $string['reservedwords'] = '保留字';
 $string['revert'] = '恢复';

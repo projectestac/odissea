@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Bildfeld';
+$string['fieldtypelabel'] = 'Bild';
 $string['pluginname'] = 'Bild';
-$string['privacy:metadata'] = 'Die Komponente \'Bilddateifeld\' speichert selber keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';
+$string['privacy:metadata'] = 'Die Feldkomponente \'Bild\' speichert keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';

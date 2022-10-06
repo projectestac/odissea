@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_ltidescription'] = 'إن ملحق مصادقة LTI، مع ملحق الانضمام \'النشر بمثابة أداة LTI\'، يسمحان للمستخدمين بالوصول إلى مقررات دراسية ونشاطات محددة. بعبارة أخرى، مودل يعمل بمثابة مزود أداة LTI.';
 $string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'إن ملحق مصادقة LTI لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة مصادقة LTI لا تخزن أي بيانات شخصية.';

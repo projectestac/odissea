@@ -38,7 +38,7 @@ $string['asyncemailenable'] = 'Включить уведомления';
 $string['asyncemailenabledetail'] = 'Если этот параметр включен, пользователи получат сообщение после завершения асинхронного резервного копирования или восстановления.';
 $string['asyncgeneralsettings'] = 'Асинхронное резервное копирование/восстановление';
 $string['asyncmessagebody'] = 'Сообщение';
-$string['asyncmessagebodydefault'] = 'Здравствуйте, {user_firstname}, <br/> процесс {operation} (ID: {backupid}) успешно завершен. <br/> <br/> Вы можете получить к нему доступ здесь: {link}.';
+$string['asyncmessagebodydefault'] = 'Процесс {operation} (ID: {backupid}) успешно завершен. <br/> <br/> Вы можете получить к нему доступ здесь: <a href="{link}">{link}</a>.';
 $string['asyncmessagebodydetail'] = 'Сообщение для отправки после завершения асинхронного резервного копирования или восстановления.';
 $string['asyncmessagesubject'] = 'Тема';
 $string['asyncmessagesubjectdefault'] = 'Процесс {operation} Moodle успешно завершен.';
@@ -172,7 +172,7 @@ $string['copycoursedesc'] = 'Этот курс будет продублиров
 $string['copycourseheading'] = 'Скопировать курс';
 $string['copycoursetitle'] = 'Копировать курс: {$a}';
 $string['copydest'] = 'Место назначения';
-$string['copyfieldnotfound'] = 'Обязательное поле не найдено';
+$string['copyfieldnotfound'] = 'Данные обязательного поля не были найдены для поля(-ей): {$a}';
 $string['copyformfail'] = 'Отправка AJAX формы копии курса не удалась.';
 $string['copyingcourse'] = 'Выполняется копирование курса';
 $string['copyingcourseshortname'] = 'копирование';

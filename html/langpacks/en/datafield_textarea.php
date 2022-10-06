@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Textarea field';
+$string['fieldtypelabel'] = 'Text area';
 $string['maxbytes'] = 'Maximum embedded file size (bytes)';
 $string['maxbytes_desc'] = 'If set to zero will be unlimited by default';
 $string['pluginname'] = 'Text area';
-$string['privacy:metadata'] = 'The Textarea field component does not store any personal data, it uses tables defined in mod_data.';
+$string['privacy:metadata'] = 'The Text area field component doesn\'t store any personal data; it uses tables defined in mod_data.';

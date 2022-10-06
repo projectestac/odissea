@@ -129,7 +129,7 @@ $string['collapsegradepanel'] = 'Tolestu kalifikazio-panela';
 $string['collapsereviewpanel'] = 'Tolestu berrikusketa-panela';
 $string['comment'] = 'Iruzkina';
 $string['completiondetail:submit'] = 'Bidalketa bat egitea';
-$string['completionsubmit'] = 'Ikasleak bidalketa egin behar du jarduera honetan osatutzat emateko';
+$string['completionsubmit'] = 'Ikasleak bidalketa bat egin behar du';
 $string['configshowrecentsubmissions'] = 'Duela gutxiko aktibitatearen txostenetan guztiek ikus ditzakete bidalketen jakinarazpenak';
 $string['confirmbatchgradingoperation'] = 'Ziur zaude {$a->operation} nahi duzula {$a->count} ikaslerentzat?';
 $string['confirmsubmission'] = 'Ziur zaude zure lana bidali nahi duzula kalifikatzeko? Ezin izango duzu aldaketarik egin.';
@@ -486,8 +486,8 @@ $string['sendstudentnotifications'] = 'Jakinarazi ikasleari';
 $string['sendstudentnotifications_help'] = 'Markatu ezazu kutxa hau ikasleari eguneratutako kalifikazio edo feedbackaren berri emateko jakinarazpena bidaltzeko. Zeregin honetan kalifikazio lan-fluxua gaituta badago jakinarazpena ez da bidaliko kalifikazioa argitaratu arte.';
 $string['sendstudentnotificationsdefault'] = '\'Jakinarazi ikasleari\' ezarpenaren balio lehenetsia';
 $string['sendstudentnotificationsdefault_help'] = 'Ikasle bakoitza kalifikatzean, \'Jakinarazi ikasleari\' laukitxo markatuta egon behar da modu lehenetsian?';
-$string['sendsubmissionreceipts'] = 'Bidali ikasleei bidalketa jaso izanaren agiria';
-$string['sendsubmissionreceipts_help'] = 'Aukera honek bidalketa jaso izanaren agiriak gaitzen ditu ikasleentzat. Ikasleek jasoko dute jakinarazpen bat zeregin bat bidaltzen duten bakoitzean.';
+$string['sendsubmissionreceipts'] = 'Bidali ikasleei bidalketa gorde izanaren agiria';
+$string['sendsubmissionreceipts_help'] = 'Aukera honek bidalketa gorde izanaren agiriak gaitzen ditu ikasleentzat. Ikasleek jasoko dute jakinarazpen bat zeregin bat bidaltzen duten bakoitzean.';
 $string['setmarkerallocationforlog'] = 'Ezarri kalifikatzaile esleipena: (id={$a->id}, izen osoa={$a->fullname}, kalifikatzailea={$a->marker}).';
 $string['setmarkingallocation'] = 'Ezarri esleitutako kalifikatzailea';
 $string['setmarkingworkflowstate'] = 'Ezarri kalifikazio lan-fluxuaren egoera';
@@ -516,22 +516,21 @@ $string['submissionnotcopiedinvalidstatus'] = 'Bidalketa ez da kopiatu, berrirek
 $string['submissionnoteditable'] = 'Ikasleak ezin du editatu bidalketa hau';
 $string['submissionnotready'] = 'Zeregin hau ez dago bidaltzeko prest:';
 $string['submissionplugins'] = 'Bidalketa-pluginak';
-$string['submissionreceipthtml'] = '<p>\'<i>{$a->assignment}</i>\' zereginari erantzun diozu.</p>
-<p>Zure <a href="{$a->url}">lanaren egoera</a> ikus dezakezu.</p>';
-$string['submissionreceiptotherhtml'] = '\'<i>{$a->assignment}</i>\' zereginari erantzun diozu.<br /><br />
-Zure <a href="{$a->url}">lanaren egoera</a> ikus dezakezu.';
-$string['submissionreceiptothersmall'] = '{$a->assignment} zereginari erantzun diozu.';
-$string['submissionreceiptothertext'] = '\'{$a->assignment}\' zereginari erantzun diozu.
+$string['submissionreceipthtml'] = '<p>\'<i>{$a->assignment}</i>\' zereginean bidalketa egin duzu.</p>
+<p>Zure <a href="{$a->url}">zeregineko bidalketaren egoera</a> ikus dezakezu.</p>';
+$string['submissionreceiptotherhtml'] = '\'<i>{$a->assignment}</i>\' zereginean egin duzun bidalketa ondo gorde da.<br /><br />
+Zure <a href="{$a->url}">zeregineko bidalketaren egoera</a> ikus dezakezu.';
+$string['submissionreceiptothersmall'] = '{$a->assignment} zereginean egin duzun bidalketa ondo gorde da.';
+$string['submissionreceiptothertext'] = '\'{$a->assignment}\' zereginean egin duzun bidalketa ondo gorde da.
 
+Zure zeregineko bidalketaren egoera hemen ikus dezakezu:
 
-Zure lanaren egoera ikus dezakezu:
+    {$a->url}';
+$string['submissionreceipts'] = 'Bidali bidalketa gorde izanaren agiria';
+$string['submissionreceiptsmall'] = 'Bidalketa egin duzu {$a->assignment} zereginean';
+$string['submissionreceipttext'] = '\'{$a->assignment}\' zereginean egin duzun bidalketa ondo gorde da.
 
-{$a->url}';
-$string['submissionreceipts'] = 'Bidali bidalketa jaso izanaren agiria';
-$string['submissionreceiptsmall'] = 'Bidalketa egin duzu zeregin honetan:  {$a->assignment}';
-$string['submissionreceipttext'] = '\'{$a->assignment}\' zereginari erantzun diozu.
-
-Zure lanaren egoera hemen ikus dezakezu:
+Zure zeregineko bidalketaren egoera hemen ikus dezakezu:
 
  {$a->url}';
 $string['submissionsclosed'] = 'Bidalketa itxita';

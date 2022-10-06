@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessnoticesheader'] = 'あなたはこの小テストをプレビューすることができます。しかし、これが本当の受験の場合、あなたは次の理由でブロックされます:';
+$string['accessnoticesheader'] = 'あなたはこの小テストをプレビューできます。しかし、これが本当の受験の場合、あなたは次の理由でブロックされます:';
 $string['action'] = '操作';
 $string['activityoverview'] = 'あなたには受験期日のある小テストがあります。';
 $string['adaptive'] = 'アダプティブモード';
@@ -709,7 +709,7 @@ $string['questions'] = '問題';
 $string['questionsetpreview'] = '問題セットプレビュー';
 $string['questionsinclhidden'] = '問題 (隠された問題を含む)';
 $string['questionsinthisquiz'] = 'この小テストの問題';
-$string['questionsmatchingfilter'] = 'このフィルタに合致する問題: {$a}';
+$string['questionsmatchingfilter'] = 'このフィルタに合致する問題数: {$a}';
 $string['questionsperpage'] = '1ページあたりの問題数';
 $string['questionsperpageselected'] = '1ページあたりの問題数が設定されたため現在ページングは固定されています。結果として「改ページ調整」ボタンは無効にされました。あなたは {$a} でこの設定を変更することができます。';
 $string['questionsperpagex'] = '1ページあたりの問題数: {$a}';
@@ -844,7 +844,7 @@ $string['reviewbefore'] = '小テストのクローズ前の期間に (受験可
 $string['reviewclosed'] = '小テストのクローズ後 (受験可能期限が設定されており、その期限を過ぎた後)';
 $string['reviewduring'] = '学生の受験最中';
 $string['reviewimmediately'] = '学生の受験直後 (2分間)';
-$string['reviewnever'] = 'レビューを許可しない';
+$string['reviewnever'] = 'レビュー許可しない';
 $string['reviewofattempt'] = '受験 {$a} のレビュー';
 $string['reviewofpreview'] = 'プレビューのレビュー';
 $string['reviewofquestion'] = '{$a->user} による {$a->quiz} の問題 {$a->question} のレビュー';
@@ -955,7 +955,7 @@ $string['status'] = 'ステータス';
 $string['stoponerror'] = 'エラーで中止する';
 $string['submitallandfinish'] = 'すべての解答を送信して終了する';
 $string['subneterror'] = '申し訳ございません、この小テストは特定の場所からのみアクセスすることができます。現在、あなたのコンピュータはこの小テストを利用できるコンピュータではありません。';
-$string['subnetnotice'] = '特定の場所からのみアクセスできるようこの小テストはロックされています。現在、あなたのコンピュータはこの小テストの使用を許可されていません。あなたが教師としてプレビューすることは許可されています。';
+$string['subnetnotice'] = '特定の場所からのみアクセスできるようこの小テストはロックされています。現在、あなたのコンピュータはこの小テストの使用を許可されていません。あなたは教師としてのプレビューは許可されています。';
 $string['subplugintype_quiz'] = 'レポート';
 $string['subplugintype_quiz_plural'] = 'レポート';
 $string['subplugintype_quizaccess'] = 'アクセスルール';

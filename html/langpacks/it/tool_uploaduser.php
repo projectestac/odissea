@@ -35,8 +35,9 @@ $string['clifile'] = 'Percorso del file CSV che contiene i dati utenti. Obbligat
 $string['clifilenotreadable'] = 'Il file {$a} non esiste o non è leggibile';
 $string['clihelp'] = 'Stampa questo aiuto.';
 $string['climissingargument'] = 'L\'argomento  --{$a} è obbligatorio';
+$string['clititle'] = 'Strumento per il caricamento utenti da linea di comando.';
 $string['clivalidationerror'] = 'Errore di validazione:';
-$string['csvdelimiter'] = 'Delimitatore CSV';
+$string['csvdelimiter'] = 'Separatore CSV';
 $string['defaultvalues'] = 'Valori di default';
 $string['deleteerrors'] = 'Elimina errori';
 $string['encoding'] = 'Codifica';
@@ -44,6 +45,9 @@ $string['errormnetadd'] = 'Non è possibile aggiungere utenti remoti';
 $string['errorprefix'] = 'Errore:';
 $string['errors'] = 'Errori';
 $string['examplecsv'] = 'File di testo di esempio';
+$string['examplecsv_help'] = 'Per utilizzare il file di esempio, scaricarlo ed aprilo con un editor di testo oppure un foglio elettronico. Lasciare la prima riga inalterata e modificare le successive righe inserendo i dati degli i utenti, Aggiungere righe secondo necessità, dopodiché salvare il file come CSV e caricarlo.
+
+Il file di esempio può anche essere utilizzato per prova al fine di visualizzare l\'anteprima, annullando poi l\'azione prima della creazione account vera e propria.';
 $string['infoprefix'] = 'Informazioni:';
 $string['invalidtheme'] = 'Il tema "{$a}" non è instalalto e sarà ignorato.';
 $string['invalidupdatetype'] = 'Non è possibile utilizzare questa opzione con il \'Tipo di caricamento\' selezionato.';
@@ -78,7 +82,7 @@ $string['uploaduser:uploaduserpictures'] = 'Importare immagini utenti';
 $string['uploadusers'] = 'Importazione utenti';
 $string['uploadusers_help'] = 'E\' possibile caricare utenti (ed iscriverli ai corsi) tramite file di testo. Il formato del file deve avere le seguenti caratteristiche:
 
-* Ogni riga del file dev contenere un record
+* Ogni riga del file deve contenere un record
 * Il record è una serie di dati separati da virgole o altri delimitatori
 * La prima riga del file è riservata e contiene le intestazioni con i nomi dei campi e definisce il formato del resto del file
 * I campi obbligatori sono username, password, firstname,  lastname, email';

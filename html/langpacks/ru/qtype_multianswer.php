@@ -29,6 +29,7 @@ $string['confirmquestionsaveasedited'] = 'Я подтверждаю, что хо
 $string['confirmsave'] = 'Подтверждение перед сохранением {$a}';
 $string['correctanswer'] = 'Правильный ответ';
 $string['correctanswerandfeedback'] = 'Правильный ответ и отзыв';
+$string['corruptedquestion'] = 'Этот вопрос не может использоваться, он содержит подвопросы, которых нет в вашей системе.';
 $string['decodeverifyquestiontext'] = 'Декодировать и проверить текст вопроса';
 $string['invalidmultianswerquestion'] = 'Неверные встроенные ответы в вопросе ({$a}).';
 $string['layout'] = 'Расположение';
@@ -38,6 +39,7 @@ $string['layoutmultiple_vertical'] = 'Вертикальный столбец ф
 $string['layoutselectinline'] = 'Выпадающий список в строке текста';
 $string['layoutundefined'] = 'Неопределенное положение';
 $string['layoutvertical'] = 'Вертикальная колонка переключателей';
+$string['missingsubquestion'] = 'Этот подвопрос отсутствует в вашей системе и не может быть отображен.';
 $string['nooptionsforsubquestion'] = 'Невозможно получить варианты для части вопроса # {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'Вопрос «Вложенные ответы» (Cloze) «<strong>{$a}</strong>» не содержит ни одного вопроса';
 $string['pleaseananswerallparts'] = 'Ответьте на все части вопроса';

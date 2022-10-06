@@ -38,7 +38,7 @@ $string['asyncemailenable'] = 'Ativar mensagem de notificações';
 $string['asyncemailenabledetail'] = 'Se ativar esta opção, os utilizadores receberão uma mensagem quando um restauro/cópia de segurança assíncrona for concluído.';
 $string['asyncgeneralsettings'] = 'Restauro/cópia de segurança assíncrona';
 $string['asyncmessagebody'] = 'Mensagem';
-$string['asyncmessagebodydefault'] = 'Olá {user_firstname}, <br/>A operação \'{operation}\' (ID: {backupid}) foi concluída com sucesso! <br/><br/>Pode consultar os detalhes aqui: {link}.';
+$string['asyncmessagebodydefault'] = 'A sua operação \'{operation}\' (ID: {backupid}) foi concluída com sucesso! Pode consultar os detalhes aqui: <a href="{link}">{link}</a>.';
 $string['asyncmessagebodydetail'] = 'Mensagem a enviar quando um restauro/cópia de segurança assíncrona for concluída.';
 $string['asyncmessagesubject'] = 'Assunto';
 $string['asyncmessagesubjectdefault'] = '\'{operation}\' Moodle concluída com sucesso';
@@ -173,7 +173,7 @@ $string['copycoursedesc'] = 'Esta disciplina será duplicada e colocada na categ
 $string['copycourseheading'] = 'Copiar uma disciplina';
 $string['copycoursetitle'] = 'Copiar a disciplina: {$a}';
 $string['copydest'] = 'Destino';
-$string['copyfieldnotfound'] = 'Um campo obrigatório não foi encontrado';
+$string['copyfieldnotfound'] = 'Os dados obrigatórios não foram encontrados para o(s) campo(s): {$a}';
 $string['copyformfail'] = 'Ocorreu um erro na submissão AJAX do formulário da cópia da disciplina.';
 $string['copyingcourse'] = 'Cópia da disciplina em execução';
 $string['copyingcourseshortname'] = 'a copiar';

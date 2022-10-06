@@ -31,6 +31,7 @@ $string['direction_before'] = 'Datum';
 $string['direction_from'] = 'van';
 $string['direction_label'] = 'Richting';
 $string['direction_until'] = 'tot';
+$string['error_dateconflict'] = 'Conflict met andere datumbeperkingen';
 $string['full_from'] = 'Na  <strong>{$a}</strong>';
 $string['full_from_date'] = 'Het is op of na  <strong>{$a}</strong>';
 $string['full_until'] = 'Voor  <strong>{$a}</strong>';

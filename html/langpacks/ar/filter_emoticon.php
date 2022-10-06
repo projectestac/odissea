@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'عرض الرموز التعبيرية كصور';
-$string['privacy:metadata'] = 'ملحق عرض الرموز التعبيرية كصور لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إضافة عرض الرموز التعبيرية كصور لا تخزن أي بيانات شخصية.';
 $string['settingformats'] = 'التطبيق على التنسيقات';
 $string['settingformats_desc'] = 'سيتم تطبيق المرشح فقط عندما يكون النص الأصلي مدرجاً بأحد التنسيقات المختارة.';

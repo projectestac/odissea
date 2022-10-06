@@ -167,7 +167,7 @@ $string['computedfromlogs'] = 'Beräknade från loggarna sedan {$a}.';
 $string['condifmodeditdefaults'] = 'De värden du anger här definierar standardvärden som används i aktivitetsinställningarna när du skapar en ny aktivitet.';
 $string['confeditorhidebuttons'] = 'Välj de knappar som ska vara dolda i HTML-redigeraren.';
 $string['configallcountrycodes'] = 'Detta är en lista över länder som kan väljas på olika ställen, till exempel i en användares profil. Om det lämnas tomt (standard) i förteckningen i  countries.php används engelska språkpaketetet som standard. Detta är en lista från ISO 3166-1. Annars kan du ange en kommaseparerad lista av koder, till exempel \'GB, FR, ES\';. Om du lägger till nya, icke-standardiserade koder här, måste du lägga till dem i <code>countries.php</code> i <b>en</b>-katalogen samt i ditt egna språkpaket.';
-$string['configallowassign'] = 'Du kan tillåta användare i rollerna på den vänstra sidan att tilldela några av rollerna i kolumnerna till andra användare.';
+$string['configallowassign'] = 'För varje roll i den vänstra kolumnen väljer du vilka roller som de kan tilldela andra.';
 $string['configallowattachments'] = 'Om aktiverat kan bilagor (som t.ex. märken) infogas i e-postmeddelanden från webbplatsen.';
 $string['configallowblockstodock'] = 'Om det är aktiverat och stöds av det valda temat kommer användarna att kunna välja att flytta block till en speciell docka.';
 $string['configallowcategorythemes'] = 'Om du aktiverar detta då går det att ställa in teman på nivån kategorier. Detta kommer att påverka alla \'barn\'-kategorier eller kurser om det inte är så att det finns ett tema som är inställt specifikt för dem. OBS! Om du aktiverar teman för kategorier så kan det påverka systemets prestanda.';
@@ -180,14 +180,14 @@ $string['configallowemojipickerincompatible'] = 'Din nuvarande databaskonfigurat
 $string['configallowguestmymoodle'] = 'Om alternativet aktiverats kommer gäster åt Översiktssidan, annars omdirigeras gäster till webbplatsen förstasida.';
 $string['configallowobjectembed'] = 'Som ett standardmässigt sätt att öka säkerheten så får användare inte bädda in multimedia inne i text (som Flash t.ex.) genom att använda taggarna EMBED eller OBJECT (det går dock att ta med multimedia på ett säkert sätt med hjälp av filtret för multimedia-plugins. Om du vill tillåta dessa taggar så ska du aktivera detta alternativ.';
 $string['configallowoverride'] = 'Du kan tillåta användare med rollerna på den vänstra sidan att åsidosätta några av rollerna i kolumnerna.';
-$string['configallowoverride2'] = 'Välj vilken roll/vilka roller som kan åsidosättas av respektive roll i vänstra kolumnen.<br />Notera att dessa inställningar endast är applicerbar på användare som antingen har funktionsbehörigheten <code>moodle/role:override</code> eller <code>moodle/role:safeoverride</code>.';
-$string['configallowswitch'] = 'Välj vilka roller en användare får byta till, baserat på vilka roller de redan har. Förutom en post i den här tabellen måste en användare också ha funktionsbehörigheten <code>moodle/role:switchroles</code> för att kunna byta.<br />Observera att det bara är möjligt att byta till roller som har funktionsbehörigheten <code>moodle/course:view</code> och som inte har funktionsbehörigheten <code>moodle/site:doanything</code>, så vissa kolumner i den här tabellen är inaktiverade.';
+$string['configallowoverride2'] = 'För varje roll i den vänstra kolumnen väljer du vilka roller som de kan ange åsidosättningar för.<br />Användare måste också ha antingen funktionsbehörigheten <code>moodle/role:override</code> eller <code>moodle/role:safeoverride</code>.';
+$string['configallowswitch'] = 'För varje roll i den vänstra kolumnen väljer du vilka roller de kan växla till.<br />Användare måste också ha funktionsbehörigheten <code>moodle/role:switchroles</code>.';
 $string['configallowthemechangeonurl'] = 'Om aktiverad, kan temat ändras genom att antingen lägga till:<br />?theme=temanamn till alla Moodle URL:er (tex: minmoodlesite.com/?theme=afterburner ) eller <br />&theme=temanamn till valfri intern Moodle URL (tex: minmoodlesite.com/kurs/vy.php?id=2&theme=afterburner ).';
 $string['configallowuserblockhiding'] = 'Vill du att användare själva ska kunna välja att dölja/visa ytterkolumnerna (sidoblocken) på hela webbplatsen? Den här egenskapen använder Javascript och cookies för att komma ihåg statusen på varje ihopfällt block och detta påverkar bara det användaren själv ser.';
 $string['configallowusermailcharset'] = 'Om du aktiverar detta så kommer varje deltagare på den här webbplatsen att kunna ange sin egen teckenuppsättning för e-post.';
 $string['configallowuserswitchrolestheycantassign'] = 'Som standard krävs <code>moodle/role:assign</code> för att användare ska kunna byta roller. Om du aktiverar den här inställningen tas det här kravet bort och resulterar i att de roller som finns i "Byt roll till"-listrutan bestäms av inställningar i tabellen "Tillåt rolltilldelningar". Det rekommenderas att inställningarna i tabellen "Tillåt rolltilldelningar" inte tillåter användare att byta till en roll med fler funktioner än deras befintliga roll.';
 $string['configallowuserthemes'] = 'Om du aktiverar detta så kommer det att bli möjligt för användare att ställa in sina egna teman. Teman för användare är giltiga över teman för webbplatsen (men inte över teman för kurser).';
-$string['configallowview'] = 'Välj vilka roller en användare kommer att se, kunna filtrera efter etc. baserat på vilka roller de redan har.';
+$string['configallowview'] = 'För varje roll i den vänstra kolumnen väljer du vilka roller som de kan visa, söka och filtrera efter.';
 $string['configallusersaresitestudents'] = 'För aktiviteter på webbplatsens förstasida; bör ALLA användare betraktas som studenter?  Om du svarar "Ja" får alla bekräftade användarkonton delta som deltagare i dessa aktiviteter.  Om du svarar "Nej" kommer endast användare som redan är deltagare i minst en kurs att kunna delta i dessa aktiviteter på förstasidan. Endast administratörer och särskilt tilldelade lärare kan fungera som lärare för dessa aktiviteter på förstasidan.';
 $string['configauthenticationplugins'] = 'Välj de autentiserings-pluginmoduler du vill använda och ordna dem i prioritetsordning.';
 $string['configautolang'] = 'Identifiera standardspråket från webbläsarinställningen. Om inaktiverat används webbplatsens standardspråk.';
@@ -212,17 +212,15 @@ $string['configcronremotepassword'] = 'Detta innebär att det inte kommer att g�
 http://webbplats.exempel.com/admin/cron.php?password=opensesame
 </code> Om fältet lämnas tomt kommer det inte att krävas något lösenord.';
 $string['configcurlcache'] = 'Livslängd för cURL-cache i sekunder.';
-$string['configcustommenuitems'] = 'Här kan du specificera en anpassad meny. Ange varje menyalternativ på en ny rad i formatet: menytext, en länk-URL (valfritt, inte för ett översta menyalternativ med undermenyer), en verktygstipsrubrik (valfritt) och en språkkod eller kommaavgränsad lista med koder (valfritt, för att visa raden endast för användare av det angivna språket), avgränsad med pipe-tecken. Rader som börjar med ett bindestreck visas som menyalternativ för det överliggande menyalternativet. ### representerar en avdelare.
-
-Ett exempel:
+$string['configcustommenuitems'] = 'Här kan du konfigurera en anpassad meny. Ange varje menyalternativ på en ny rad i formatet: menytext, en länk-URL (valfritt, inte för ett toppmenyalternativ med underobjekt), en tooltip (valfritt) och en språkkod eller kommaseparerad lista med koder (valfritt, endast för att visa raden för användare på det angivna språket), åtskilda av pipe-symboler. Rader som börjar med ett bindestreck visas som menyalternativ i den föregående toppnivåmenyn. ### utgör en avdelare. Till exempel:
 <pre>
 Kurser
 -Alla kurser|/course/
--Sök kurs|/course/search.php
+-Kurssökning|/course/search.php
 -###
--FAQ|https://someurl.xyz/faq
--Preguntas más frecuentes|https://someurl.xyz/pmf||es
-Mobile app|https://someurl.xyz/app|Download our app
+-Vanliga frågor|https://example.org/faq
+-Preguntas más frecuentes|https://example.org/pmf|| Es
+Mobilapp|https://example.org/app| Ladda ner vår app
 </pre>';
 $string['configcustomusermenuitems'] = 'Du kan konfigurera innehållet i användarmenyn (med undantag för länken logga ut, som läggs till automatiskt). Varje rad avgränsas med pipe-tecken och består av
 1) en sträng i "langstringname, componentname"-format eller som oformaterad text,
@@ -235,7 +233,7 @@ $string['configdebugdisplay'] = 'Om detta är inaktiverat kommer felrapportering
 fungerar i allmänhet inte med detta. Om detta är inaktiverat så kommer utdata att skickas till loggarna för Din server, vilket erbjuder bättre felsökning. Inställningen \'error_log\' i PHP styr vilken logg detta går till.';
 $string['configdebugpageinfo'] = 'Aktivera detta om du vill att sidinformation ska skrivas ut i sidfoten.';
 $string['configdebugvalidators'] = 'Aktivera om du vill ha länkar till externa valideringsservrar i sidfoten. Du kan behöva skapa nya användare med användarnamn <em>w3cvalidator</em> och aktivera gästaccess. Dessa förändringar kan ge obehöriga åtkomst till servern, använd inte detta på färdiga webbplatser!';
-$string['configdefaulthomepage'] = 'Detta bestämmer vilken som är den första länken i navigeringsfältet för inloggade användare.';
+$string['configdefaulthomepage'] = 'Vilken sida ska användarna omdirigeras till efter att ha loggat in på webbplatsen? Inställningen bestämmer också den första länken i navigeringen för användare som valt att använda klassiska teman.';
 $string['configdefaultrequestcategory'] = 'Kurser som efterfrågas av användare med möjlighet att begära nya kurser i systemkontexten kommer att placeras i denna kategori om inte användarna kan välja en annan kategori.';
 $string['configdefaultrequestedcategory'] = 'Standardkategori att sätta kurser som efterfrågades i, om de är godkända.';
 $string['configdefaultuserroleid'] = 'Alla inloggade användare kommer att tilldelas de funktionsbehörigheter som ingår i den roll du anger här, på webbplatsnivån, TILLSAMMANS med vilken annan roll som helst som de kan ha tilldelats. Det förinställda standardvalet  är autenticerad användare (eller \'gäst\' i äldre versioner). Lägg märke till att detta inte kommer att stå i konflikt med andra roller de kan ha. Det säkerställer bara att alla användare har funktionsbehörigheter som inte går att tilldela på kursnivå (inlägg i bloggar, administration av egen kalender osv).';
@@ -314,7 +312,7 @@ $string['configmailnewline'] = 'De tecken för ny rad som används i e-postmedde
 $string['configmaxbytes'] = 'Detta anger en maximal storlek för filer som laddas upp till webbplatsen. Denna inställning är begränsad av PHP-inställningen <code>post_max_size</code> och <code>upload_max_filesize</code>, samt Apache-inställningen <code>LimitRequestBody</code>. Därutöver begränsar maxbytes det storleksintervall som kan väljas på kurs- eller aktivitetsnivå. Om \'Uppladdningsgräns Webbplats\' väljs kommer den maximala storlek som tillåts av servern att användas.';
 $string['configmaxconsecutiveidentchars'] = 'Lösenorden får inte ha mer än detta antal på varandra följande identiska tecken. Använd 0 för att inaktivera den här kontrollen.';
 $string['configmaxeditingtime'] = 'Detta anger den tid som folk har på sig att redigera om sina foruminlägg, kommentarer i ord- och begreppslistor etc. Vanligtvis är 30 minuter tillräcklig tid.';
-$string['configmaxevents'] = 'Händelser innan SeFramåt (Lookahead)';
+$string['configmaxevents'] = 'Händelser framåt';
 $string['configmaxusersperpage'] = 'Maximalt antal användare som visas inom användarväljaren i kurs, grupp, korhort, webservice mm.';
 $string['configmessaging'] = 'Om aktiverad kan användare skicka meddelanden till andra användare på denna webbplats.';
 $string['configmessagingallowemailoverride'] = 'Tillåt att aviseringar om nya meddelanden skickas till annan e-postadress än den som angivits i användarens profil.';
@@ -346,7 +344,7 @@ $string['configpasswordresettime'] = 'Detta anger den tidsperiod användare har 
 $string['configpathtodu'] = 'Sökväg till du. Antagligen något i stil med /usr/bin/du. Om du matar in detta så kommer sidor som visar innehåll i kataloger att köras mycket fortare för kataloger med många filer.';
 $string['configpathtophp'] = 'Om sökvägen är angiven är det möjlig att köra PHP-skript via administratörens webbgränssnitt.';
 $string['configperfdebug'] = 'Om du aktiverar det här så kommer info om prestanda att skrivas ut i sidfoten på standardtemat.';
-$string['configprofileroles'] = 'Lista över roller som är synliga på sidorna för användarprofiler och deltagare.';
+$string['configprofileroles'] = 'Roller som listas i användarprofiler och på deltagarsidan.';
 $string['configprofilesforenrolledusersonly'] = 'För att förhindra missbruk av spammare, är profilbeskrivningar av användare som ännu inte registrerats i någon kurs gömda. Nya användare måste registrera sig i minst en kurs innan de kan lägga till några personliga uppgifter.';
 $string['configprotectusernames'] = 'Om det här alternativet är aktiverat visas inga ledtrådar för användarnamn eller e-postadresser i formuläret för lösenordsåterställning.';
 $string['configproxybypass'] = 'Kommaseparerad lista med (partiella) domännamn eller IP-adresser som ska kringgå proxy (t.ex. 192,168.,. Mydomain.com)';
@@ -656,7 +654,7 @@ $string['forceclean_desc'] = 'Innehåll som läggs till på webbplatsen rensas n
 $string['forcelogin'] = 'Tvinga användare att logga in';
 $string['forceloginforprofileimage'] = 'Tvinga användarna att logga in för att se användarnas bilder';
 $string['forceloginforprofileimage_help'] = 'Om aktiverad måste användarna logga in för att se  användares profilbilder. Standardanvändarbilden kommer att användas i alla e-postmeddelanden.';
-$string['forceloginforprofiles'] = 'Tvinga användare att logga in för profiler';
+$string['forceloginforprofiles'] = 'Tvinga användare att logga in för att se profiler';
 $string['forcetimezone'] = 'Tvinga tidszon';
 $string['formatuninstallwithcourses'] = 'Det finns {$a->count} kurser som använder {$a->format}. Deras format kommer att ändras till {$a->defaultformat} (förvalt format för denna webbplats). Vissa formatspecifika data kan komma att förloras. Är du säker på att du vill fortsätta?';
 $string['frontpage'] = 'Startsida';
@@ -1289,7 +1287,7 @@ $string['stickyblocksduplicatenotice'] = 'Om något av de block som Du lägger t
 $string['stickyblocksmymoodle'] = 'Översikt';
 $string['stickyblockspagetype'] = 'Sidtyp att konfigurera';
 $string['strictformsrequired'] = 'Strikt validering av obligatoriska fält';
-$string['stripalltitletags'] = 'Ta bort HTML-taggar från alla namn på aktiviteter';
+$string['stripalltitletags'] = 'Ta bort HTML-taggar från alla aktivitetsnamn';
 $string['supportcontact'] = 'Supportkontakt';
 $string['supportemail'] = 'E-post till supporten';
 $string['supportname'] = 'Namn på supporten';
@@ -1528,6 +1526,9 @@ $string['warningcurrentsetting'] = 'Ogiltigt aktuellt värde: {$a}';
 $string['warningiconvbuggy'] = 'Aktuell version av iconv-biblioteket stöder inte //IGNORE-växeln. Du bör installera mbstring-tillägget i stället, för att städa strängar som innehåller ogiltiga UTF-8-tecken.';
 $string['webproxy'] = 'Webb proxy';
 $string['webproxyinfo'] = 'Fyll i följande alternativ om din Moodle-server inte har direktåtkomst till internet. Åtkomst till internet är nödvändig för att du ska kunna ladda ner miljödata, språkpaket, RSS-flöden, tidszoner, etc.<br /><em>PHP cURL-tillägget rekommenderas.</em>';
+$string['xmlrpcmaharaenabled'] = 'Det har upptäckts att Mahara ePortfolio är aktiverat på din webbplats. Den här funktionen förlitar sig på PHP XML-RPC-tillägget som inte längre underhålls av PHP.';
+$string['xmlrpcmnetenabled'] = 'Det har upptäckts att alternativet Nätverkande är aktiverat på din webbplats. Den här funktionen förlitar sig på PHP XML-RPC-tillägget som inte längre underhålls av PHP.';
 $string['xmlrpcrecommended'] = 'XMLRPC-tillägget är användbart för webbtjänster och Moodle-nätverk.';
+$string['xmlrpcwebserviceenabled'] = 'Det har upptäckts att XML-RPC-protokollet är aktiverat på webbplatsen. Den här funktionen förlitar sig på PHP XML-RPC-tillägget som inte längre underhålls av PHP.';
 $string['yuicomboloading'] = 'Laddar YUI combo';
 $string['ziprequired'] = 'PHP-tillägget zip krävs nu av Moodle. Info-ZIP binärfiler eller PclZip-biblioteket används inte längre.';

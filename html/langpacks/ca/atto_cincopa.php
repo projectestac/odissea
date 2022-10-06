@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = '<div style="margin:10px;padding:15px;background-color:#f5f5f5;border:2px solid #e3e3e3;"><img src="https://www.cincopa.com/_cms/design15/icons/favicon-32.png?affdata=moodle-plugin-atto,setup-page"> Benvinguts al connector Cincopa de Moodle, visiteu la nostra <a href="https://www.cincopa.com/moodle/welcome" target="_blank">pàgina de benvinguda</a> per registrar-vos i per consultar els documents de suport.</div>';
+$string['pluginname'] = 'Plugin Cincopa per l\'Atto';

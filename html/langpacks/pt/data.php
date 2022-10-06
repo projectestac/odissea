@@ -101,7 +101,7 @@ $string['data:exportuserinfo'] = 'Exportar informação do utilizador';
 $string['data:managecomments'] = 'Gerir comentários';
 $string['data:manageentries'] = 'Gerir registos';
 $string['data:managetemplates'] = 'Gerir modelos';
-$string['data:manageuserpresets'] = 'Gerir todos os protótipos';
+$string['data:manageuserpresets'] = 'Gerir protótipos';
 $string['data:rate'] = 'Avaliar registos';
 $string['data:readentry'] = 'Ler registos';
 $string['data:view'] = 'Ver atividade Base de dados';
@@ -231,7 +231,7 @@ $string['invalidrecord'] = 'Registo incorreto';
 $string['invalidurl'] = 'O URL que inseriu não é válido';
 $string['jstemplate'] = 'JavaScript';
 $string['latitude'] = 'Latitude';
-$string['latlong'] = 'Latitude/Longitude';
+$string['latlong'] = 'Coordenadas';
 $string['latlongboth'] = 'É necessário a latitude e a longitude.';
 $string['latlongdownloadallhint'] = 'Hiperligação para descarregar todos os registos como KML';
 $string['latlongkmllabelling'] = 'Como classificar itens em ficheiros KML (Google Earth)';
@@ -253,18 +253,18 @@ $string['menuchoose'] = 'Selecione...';
 $string['missingdata'] = 'Deve ser indicado um identificador de informação ou um objeto para a classe do campo';
 $string['missingfield'] = 'Erro de programação: Deve especificar um campo e/ou dados na definição da classe do campo.';
 $string['modulename'] = 'Base de dados';
-$string['modulename_help'] = 'A atividade Base de dados permite aos participantes criar, gerir e pesquisar informação num conjunto de entradas (registos). O tipo, o número e o formato dos campos que compõem a base de dados são definido pelo professor. Os tipos de campos permitidos incluem caixas de seleção, listas pendentes, botões de rádio, caixas de texto, URL, imagem e ficheiro.
+$string['modulename_help'] = 'A atividade Base de dados permite aos participantes criar, gerir e pesquisar informação num conjunto de entradas.
 
-A estrutura de visualização da informação quando cria, edita ou lista os registos da base de dados pode ser definida através de modelos de base de dados. As base de dados podem ser partilhadas entre disciplinas e o professor também pode importar e exportar registos da base de dados.
+A estrutura das entradas é definida usando diferentes tipos de campos, como texto curto, lista pendente, área de texto, URL, imagem ou ficheiro.
 
-Se a opção de hiperligação dos registos estiver ativa, é possível criar automaticamente hiperligações entre os termos inseridos e essas palavras, sempre que apareçam noutros locais da disciplina.
+Como professor, pode comentar e avaliar entradas. Pode também permitir que os alunos avaliem e comentem as entradas (avaliação por pares). As avaliações podem ser agregadas para formar uma nota final, que é registada na pauta.
 
-Um professor pode permitir comentários aos registos. Estes também podem ser avaliados por professores ou alunos (avaliação pelos pares). As avaliações são agrupadas numa única nota final que é registada na pauta.
+Se o filtro autoligação à base de dados estiver ativado, todas as entradas na base de dados serão vinculadas automaticamente às palavras ou frases que aparecem na disciplina.
 
 A base de dados pode ser usada para:
 
-* Criar um repositório colaborativo de hiperligações/livros/referências a jornais;
-* Para exibir trabalhos realizados pelos alunos (como fotos, cartazes, sites, poemas, etc.) e disponibilizá-los para que os colegas possam comentar.';
+* Criar um repositório colaborativo de hiperligações, livros, referências a jornais, etc.
+* Mostrar trabalhos realizados pelos alunos (como fotos, cartazes, sites, poemas, etc.) para que os pares possam comentar e rever.';
 $string['modulename_link'] = 'mod/data/view';
 $string['modulenameplural'] = 'Bases de dados';
 $string['more'] = 'Mais';

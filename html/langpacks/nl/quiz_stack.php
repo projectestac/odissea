@@ -25,14 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['completenotes'] = 'Deze tabel is een samenvatting van de frequentie van elk volledig antwoord (rijen) voor elke vraag (kolommen), beide als numerieke frequentie en als percentage. Elke mogelijke antwoordboom wordt apart opgelijst.';
 $string['maximacode'] = 'Maxima-code';
 $string['nostackquestions'] = 'Deze test bevat geen STACK-vragen';
+$string['notesused'] = 'Dit zijn waarden van vragen, gebruikt door leerlingen. De getallen links worden gebruikt om te refereren naar onderstaande tabellen.';
 $string['offlineanalysis'] = 'Deze code kan in Maxima gekopieerd worden voor offline analyse.';
 $string['pluginname'] = 'STACK antwoord-analyse';
 $string['questionreporting'] = 'Rapport over pogingen per vraag.';
 $string['questionreportingscore'] = 'Score';
 $string['questionreportingsummary'] = 'Invoersamenvatting';
 $string['questionreportingtotal'] = 'Totaal';
+$string['splitnotes'] = 'Deze tabel is een samenvatting van de frequentie van elk gesplitst antwoord om de frequentie te tonen waarmee elke tak van elke boom is gebruikt.';
 $string['stack'] = 'STACK antwoordanalyse';
 $string['stack:componentname'] = 'STACK antwoordanalyse';
 $string['stack:view'] = 'Bekijk het STACK antwoordanalyse verslag';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['aim'] = 'Это инструмент управления помогает разработчикам и тестировщикам создавать файлы .feature, описывающие функционал Moodle, и автоматически их запускать. Шаги, определяющие доступность для использования в файлах .feature, приведены ниже.';
 $string['allavailablesteps'] = 'Все имеющиеся определения шагов';
 $string['errorapproot'] = '$CFG->behat_ionic_dirroott не указывает на действительную установку разработчика приложения Moodle.';
-$string['errorbehatcommand'] = 'Ошибка при выполнении команды behat CLI. Попробуйте вручную запустить из командной строки "{$a} --help", чтобы узнать больше об этой проблеме.';
+$string['errorbehatcommand'] = 'Ошибка при выполнении команды behat CLI. Попробуйте вручную запустить из командной строки «{$a} --help», чтобы узнать больше об этой проблеме.';
 $string['errorcomposer'] = 'Компоновщик зависимости не установлен.';
 $string['errordataroot'] = '$CFG->behat_dataroo не установлен или некорректен.';
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix и $CFG->behat_wwwroot должны быть установлены в config.php.';

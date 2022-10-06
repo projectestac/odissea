@@ -40,11 +40,7 @@ use qtype_wq\privacy\provider;
 require_once($CFG->dirroot . '/mod/quiz/locallib.php');
 
 /**
- * Wiris Quizzes Common question type privacy tests class.
- *
- * @package    qtype_wq
- * @copyright  2018 Jun Pataleta
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \qtype_wq\privacy\provider
  */
 class provider_test extends \core_privacy\tests\provider_testcase {
     /** @var \stdClass The teacher object. */

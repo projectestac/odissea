@@ -38,7 +38,7 @@ $string['asyncemailenable'] = 'Systemnachrichten aktivieren';
 $string['asyncemailenabledetail'] = 'Die Option legt fest, ob Mitteilungen versendet werden, wenn eine asynchrone Sicherung oder Wiederherstellung abgeschlossen wird.';
 $string['asyncgeneralsettings'] = 'Asynchrones Sichern/Wiederherstellen';
 $string['asyncmessagebody'] = 'Mitteilung';
-$string['asyncmessagebodydefault'] = 'Hallo {user_firstname},<br/>Ihre {operation} (ID: {backupid}) wurde erfolgreich abgeschlossen. <br/><br/>Sie können über nachfolgende URL darauf zugreifen: {link}.';
+$string['asyncmessagebodydefault'] = 'Ihre {operation} (ID: {backupid}) wurde erfolgreich abgeschlossen. Sie können über die URL darauf zugreifen: <a href="{link}">{link}</a>.';
 $string['asyncmessagebodydetail'] = 'Zu sendende Mitteilung, wenn eine asynchrone Sicherung oder Wiederherstellung abgeschlossen wird.';
 $string['asyncmessagesubject'] = 'Betreff';
 $string['asyncmessagesubjectdefault'] = 'Moodle {operation} erfolgreich abgeschlossen';
@@ -172,7 +172,7 @@ $string['copycoursedesc'] = 'Dieser Kurs wird dupliziert und in die angegebene K
 $string['copycourseheading'] = 'Einen Kurs duplizieren';
 $string['copycoursetitle'] = 'Kurs duplizieren: {$a}';
 $string['copydest'] = 'Ziel';
-$string['copyfieldnotfound'] = 'Ein notwendiges Feld wurde nicht gefunden.';
+$string['copyfieldnotfound'] = 'Notwendige Felddaten wurden nicht gefunden für: {$a}';
 $string['copyformfail'] = 'Die AJAX-Anfrage des Kursduplizierungsformulars ist fehlgeschlagen.';
 $string['copyingcourse'] = 'Duplizieren von Kursen in Bearbeitung';
 $string['copyingcourseshortname'] = 'am Duplizieren';

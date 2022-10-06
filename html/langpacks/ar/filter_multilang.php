@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'محتوى متعدد اللغات';
-$string['privacy:metadata'] = 'إن ملحق المحتوى متعدد اللغات لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة المحتوى متعدد اللغات لا تخزن أي بيانات شخصية.';

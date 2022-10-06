@@ -146,6 +146,7 @@ $string['subscriptionfeatures'] = '订阅功能';
 $string['subscriptionlimitsurpassed'] = '超出订阅限制';
 $string['subscriptionregister'] = '有关各种应用计划的详细信息，以及访问Moodle应用使用情况的统计信息，请访问<a href="{$a}" target="_blank"> Moodle应用门户网站</a>。';
 $string['subscriptionsseemore'] = '注意：显示的信息不会实时更新。您可能需要退出并再次登录才能查看更新信息。有关升级应用计划的信息，请登录<a href="{$a}" target="_blank"> Moodle应用门户网站</a>。';
+$string['switchaccount'] = '切换帐户';
 $string['typeoflogin'] = '登陆类型';
 $string['typeoflogin_desc'] = '如果站点使用SSO身份验证方法，则通过浏览器窗口或嵌入式浏览器进行选择。嵌入式浏览器虽然不能与所有SSO插件一起使用，但可以提供更好的用户体验。';
 $string['viewqrcode'] = '查看二维码';

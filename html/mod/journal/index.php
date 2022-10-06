@@ -23,21 +23,19 @@
  **/
 
 
-require_once(__DIR__ . "/../../config.php");
-require_once("lib.php");
-
+require_once(__DIR__ . '/../../config.php');
+require_once('lib.php');
 
 $id = required_param('id', PARAM_INT);   // Course.
 
-if (! $course = $DB->get_record("course", array("id" => $id))) {
-    throw new \moodle_exception(get_string("Course ID is incorrect"));
+if (! $course = $DB->get_record('course', array('id' => $id))) {
+    throw new \moodle_exception(get_string('Course ID is incorrect'));
 }
 
 require_course_login($course);
 
-
 // Header.
-$strjournals = get_string("modulenameplural", "journal");
+$strjournals = get_string('modulenameplural', 'journal');
 $PAGE->set_pagelayout('incourse');
 $PAGE->set_url('/mod/journal/index.php', array('id' => $id));
 $PAGE->navbar->add($strjournals);
@@ -47,8 +45,8 @@ $PAGE->set_heading($course->fullname);
 echo $OUTPUT->header();
 echo $OUTPUT->heading($strjournals);
 
-if (! $journals = get_all_instances_in_course("journal", $course)) {
-    notice(get_string('thereareno', 'moodle', get_string("modulenameplural", "journal")), "../../course/view.php?id=$course->id");
+if (! $journals = get_all_instances_in_course('journal', $course)) {
+    notice(get_string('thereareno', 'moodle', get_string('modulenameplural', 'journal')), "../../course/view.php?id=$course->id");
     die;
 }
 
@@ -60,7 +58,6 @@ if ($usesections) {
 }
 
 $timenow = time();
-
 
 // Table data.
 $table = new html_table();
@@ -131,17 +128,24 @@ foreach ($journals as $journal) {
             }
         }
 
-        $entrycount = journal_count_entries($journal, groups_get_all_groups($course->id, $USER->id));
+        $cm = get_coursemodule_from_id('journal', $journal->coursemodule);
+        if (groups_get_activity_groupmode($cm) == SEPARATEGROUPS) {
+            $groupids = array_keys(groups_get_activity_allowed_groups($cm, $USER->id));
+        } else {
+            $groupids = 0;
+        }
+
+        $entrycount = journal_count_entries($journal, $groupids);
         $table->data[$i][] = "<a href=\"report.php?id=$journal->coursemodule\">".
             get_string("viewallentries", "journal", $entrycount)."</a>";
     } else if (!empty($managersomewhere)) {
-        $table->data[$i][] = "";
+        $table->data[$i][] = '';
     }
 
     $i++;
 }
 
-echo "<br />";
+echo '<br />';
 
 echo html_writer::table($table);
 

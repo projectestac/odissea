@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'HTML-Output-Format';
+$string['pluginname'] = 'HTML-Output-Formate';
+$string['privacy:metadata'] = 'Das Modul "HTML-Output-Formate" speichert keine personenbezogenen Daten.';

@@ -31,4 +31,4 @@ $string['mentees:addinstance'] = '新しいメンティブロックを追加す�
 $string['mentees:myaddinstance'] = '新しいメンティブロックをダッシュボードに追加する';
 $string['newmenteesblock'] = '(新しいメンティブロック)';
 $string['pluginname'] = 'メンティ';
-$string['privacy:metadata'] = 'メンティーブロックは他の場所で保存されたデータのみ表示します。';
+$string['privacy:metadata'] = 'メンティブロックは他の場所で保存されたデータのみ表示します。';

@@ -236,6 +236,7 @@ $string['importingquestions'] = '从文件中导入 {$a} 道题';
 $string['importparseerror'] = '解析导入文件时发现错误。没能导入任何试题。要导入好的试题，请重试，并把“遇错中止”设为“否”';
 $string['importquestions'] = '从文件导入试题';
 $string['importquestions_help'] = '此功能可以从文本文件导入各种格式的试题。但请注意，文件必须是UTF-8编码。';
+$string['importwrongfileencoding'] = '你选择的文件没有使用UTF-8字符编码。{$a}文件必须使用UTF-8。';
 $string['importwrongfiletype'] = '您选定的文件类型（{$a->actualtype}）与此次导入使用的格式（{$a->expectedtype}）不匹配。';
 $string['impossiblechar'] = '检测括号字符时遇到不应该出现的字符 {$a}';
 $string['includesubcategories'] = '同时显示子类别的试题';

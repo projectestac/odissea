@@ -47,4 +47,5 @@ $string['privacy:metadata:replyto'] = 'E-postadressen att svara på.';
 $string['privacy:metadata:replytoname'] = 'Namn på svar till mottagaren.';
 $string['privacy:metadata:subject'] = 'Meddelandets ämnesrad.';
 $string['privacy:metadata:userfrom'] = 'Användaren som skickar meddelandet.';
+$string['privacy:preference:email'] = 'Önskad e-postadress för aviseringar';
 $string['tasksendemail'] = 'Skicka meddelandesammandrag';

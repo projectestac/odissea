@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Datumveld';
+$string['fieldtypelabel'] = 'Datum';
 $string['pluginname'] = 'Datum';
-$string['privacy:metadata'] = 'De datumveld-component bewaart zelf geen gegevens, maar gebruikt tabellen in mod_data.';
+$string['privacy:metadata'] = 'De datum-component bewaart geen persoonlijke gegevens, maar gebruikt tabellen in mod_data.';

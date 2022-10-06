@@ -389,7 +389,6 @@ $string['privacy:metadata:block_exacompprofilesettings'] = 'ποιό μάθημ�
 $string['privacy:metadata:block_exacompprofilesettings:itemid'] = 'Αναγνωριστικό μαθήματος';
 $string['privacy:metadata:block_exacompprofilesettings:userid'] = 'Μαθητής';
 $string['privacy:metadata:block_exacompschedule:courseid'] = 'Μάθημα';
-$string['privacy:metadata:block_exacompschedule:end'] = 'Χρόνος λήξης';
 $string['privacy:metadata:block_exacompschedule:exampleid'] = 'Χρονοπρογραμματισμένο παράδειγμα';
 $string['privacy:metadata:block_exacompschedule:sorting'] = 'Ταξινόμηση εγγραφών';
 $string['privacy:metadata:block_exacompschedule:start'] = 'Χρόνος έναρξης';

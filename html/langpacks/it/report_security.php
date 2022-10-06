@@ -89,7 +89,7 @@ $string['check_passwordpolicy_details'] = '<p>Si raccomanda di attivare le regol
 $string['check_passwordpolicy_error'] = 'Le regole password non sono attive.';
 $string['check_passwordpolicy_name'] = 'Regole password';
 $string['check_passwordpolicy_ok'] = 'Le regole password sono attive.';
-$string['check_preventexecpath_details'] = '<p>Consentire la configurazione degli eseguibili tramite GUI amministrativa facilita il <i>privilege escalation</i>. E\' possibile forzare la configurazione nel config.php: </p><p><code>$CFG->preventexecpath = true;<code></p>';
+$string['check_preventexecpath_details'] = '<p>Consentire la configurazione degli eseguibili tramite GUI amministrativa facilita il <i>privilege escalation</i>. E\' possibile forzare la configurazione nel file config.php: </p><p><code>$CFG->preventexecpath = true;<code></p>';
 $string['check_preventexecpath_name'] = 'Percorsi degli eseguibili';
 $string['check_preventexecpath_ok'] = 'I percorsi degli eseguibili sono configurabili solamente nel file config.php';
 $string['check_preventexecpath_warning'] = 'I percorsi degli eseguibili sono configurabili tramite GUI amministrata.';

@@ -1722,7 +1722,7 @@ function forum_get_discussions($cm, $forumsort="", $fullpost=true, $unused=-1, $
 
     $allnames = $userfieldsapi->get_sql('u', false, '', '', false)->selects;
     $sql = "SELECT $postdata, $discussionfields,
-                   $allnames, u.email, u.picture, u.imagealt $umfields
+                   $allnames, u.email, u.picture, u.imagealt, u.deleted AS userdeleted $umfields
               FROM {forum_discussions} d
                    JOIN {forum_posts} p ON p.discussion = d.id
                    JOIN {user} u ON p.userid = u.id
@@ -6988,4 +6988,21 @@ function forum_grading_areas_list() {
     return [
         'forum' => get_string('grade_forum_header', 'forum'),
     ];
+}
+
+/**
+ * This callback will check the provided instance of this module
+ * and make sure there are up-to-date events created for it.
+ *
+ * @param int $courseid Not used.
+ * @param stdClass $instance Forum module instance.
+ * @param stdClass $cm Course module object.
+ */
+function forum_refresh_events(int $courseid, stdClass $instance, stdClass $cm): void {
+    global $CFG;
+
+    // This function is called by cron and we need to include the locallib for calls further down.
+    require_once($CFG->dirroot . '/mod/forum/locallib.php');
+
+    forum_update_calendar($instance, $cm->id);
 }

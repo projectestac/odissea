@@ -85,4 +85,4 @@ $string['rolesinparams'] = 'Rollennamen als Parameter einbeziehen';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'Server-URL';
 $string['url:addinstance'] = 'Neue URL hinzufügen';
-$string['url:view'] = 'URL sehen';
+$string['url:view'] = 'URL anzeigen';

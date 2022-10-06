@@ -39,4 +39,4 @@ $string['auth_fcpasswd_key'] = 'كلمة مرور';
 $string['auth_fcuserid'] = 'تعريف مستخدم لحساب FisrtClass بصلاحيات حزمة نائب مدير.';
 $string['auth_fcuserid_key'] = 'اسم مستخدم';
 $string['pluginname'] = 'مخدم الدرجة الأولى';
-$string['privacy:metadata'] = 'إن ملحق المصادقة مخدم FirstClass لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة المصادقة مخدم FirstClass لا تخزن أي بيانات شخصية.';

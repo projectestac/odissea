@@ -69,7 +69,7 @@ $string['disableall'] = 'Desativar notificações';
 $string['disabled'] = 'O sistema de mensagens foi desativado neste site';
 $string['disallowed'] = 'Não permitido';
 $string['editmessages'] = 'Editar mensagens';
-$string['emailtagline'] = 'Este e-mail é uma cópia automática de uma mensagem enviada para si em "{$a->sitename}". Aceda a {$a->url} para responder.';
+$string['emailtagline'] = 'Este e-mail é uma cópia de uma mensagem enviada para si no site "{$a->sitename}". Aceda a <a href="{$a->url}">{$a->url}</a> para responder.';
 $string['enabled'] = 'Ativado';
 $string['errorcallingprocessor'] = 'Erro ao chamar método de envio definido';
 $string['errorconversationdoesnotexist'] = 'Conversação não existe';

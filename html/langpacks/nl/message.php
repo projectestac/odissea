@@ -69,7 +69,7 @@ $string['disableall'] = 'Meldingen uitschakelen';
 $string['disabled'] = 'De berichtenservice is uitgeschakeld op deze site';
 $string['disallowed'] = 'Niet toegestaan';
 $string['editmessages'] = 'Bewerk berichten';
-$string['emailtagline'] = 'Deze e-mail is een kopie van een bericht dat naar jou gestuurd is op "{$a->sitename}". Ga naar {$a->url} om te antwoorden.';
+$string['emailtagline'] = 'Deze e-mail is een kopie van een bericht dat naar jou gestuurd is op {$a->sitename}. Ga naar <a href="{$a->url}">{$a->url}</a> om te antwoorden.';
 $string['enabled'] = 'Ingeschakeld';
 $string['errorcallingprocessor'] = 'Fout bij het aanroepen van de opgegeven output';
 $string['errorconversationdoesnotexist'] = 'Gesprek bestaat niet';

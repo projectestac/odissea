@@ -169,6 +169,7 @@ $string['contentbank:upload'] = 'Enviar novos contidos ao banco de contidos';
 $string['contentbank:useeditor'] = 'Crear ou editar contidos usando un editor de tipos de contido';
 $string['contentbank:viewunlistedcontent'] = 'Ver os contido non listados do banco de contidos';
 $string['context'] = 'Contexto';
+$string['contextrolenotallowed'] = 'Non está permitido o rol <b>{$a}</b> neste contexto.';
 $string['course:activityvisibility'] = 'Agochar/amosar actividades';
 $string['course:bulkmessaging'] = 'Enviar unha mensaxe a moitas persoas';
 $string['course:changecategory'] = 'Cambiar a categoría do curso';

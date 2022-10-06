@@ -34,7 +34,7 @@ function journal_add_instance($journal) {
     global $DB;
 
     $journal->timemodified = time();
-    $journal->id = $DB->insert_record("journal", $journal);
+    $journal->id = $DB->insert_record('journal', $journal);
 
     journal_grade_item_update($journal);
 
@@ -57,7 +57,7 @@ function journal_update_instance($journal) {
     $journal->timemodified = time();
     $journal->id = $journal->instance;
 
-    $result = $DB->update_record("journal", $journal);
+    $result = $DB->update_record('journal', $journal);
 
     journal_grade_item_update($journal);
 
@@ -84,15 +84,15 @@ function journal_delete_instance($id) {
     $cm = get_coursemodule_from_instance('journal', $id);
     \core_completion\api::update_completion_date_event($cm->id, 'journal', $id, null);
 
-    if (! $journal = $DB->get_record("journal", array("id" => $id))) {
+    if (! $journal = $DB->get_record('journal', array('id' => $id))) {
         return false;
     }
 
-    if (! $DB->delete_records("journal_entries", array("journal" => $journal->id))) {
+    if (! $DB->delete_records('journal_entries', array('journal' => $journal->id))) {
         $result = false;
     }
 
-    if (! $DB->delete_records("journal", array("id" => $journal->id))) {
+    if (! $DB->delete_records('journal', array('id' => $journal->id))) {
         $result = false;
     }
 
@@ -106,6 +106,11 @@ function journal_delete_instance($id) {
  * @return bool|null True if feature is supported, falsy if it is not
  */
 function journal_supports($feature) {
+    if (defined('FEATURE_MOD_PURPOSE')
+        && defined('MOD_PURPOSE_COLLABORATION')
+        && $feature === FEATURE_MOD_PURPOSE) {
+        return MOD_PURPOSE_COLLABORATION;
+    }
     switch($feature) {
         case FEATURE_MOD_INTRO:
             return true;
@@ -164,12 +169,12 @@ function journal_user_outline($course, $user, $mod, $journal) {
 
     global $DB;
 
-    if ($entry = $DB->get_record("journal_entries", array("userid" => $user->id, "journal" => $journal->id))) {
+    if ($entry = $DB->get_record('journal_entries', array('userid' => $user->id, 'journal' => $journal->id))) {
 
-        $numwords = count(preg_split("/\w\b/", $entry->text)) - 1;
+        $numwords = count(preg_split('/\w\b/', $entry->text)) - 1;
 
         $result = new stdClass();
-        $result->info = get_string("numwords", "", $numwords);
+        $result->info = get_string('numwords', '', $numwords);
         $result->time = $entry->modified;
         return $result;
     }
@@ -189,12 +194,12 @@ function journal_user_complete($course, $user, $mod, $journal) {
 
     global $DB, $OUTPUT;
 
-    if ($entry = $DB->get_record("journal_entries", array("userid" => $user->id, "journal" => $journal->id))) {
+    if ($entry = $DB->get_record('journal_entries', array('userid' => $user->id, 'journal' => $journal->id))) {
 
         echo $OUTPUT->box_start();
 
         if ($entry->modified) {
-            echo "<p><font size=\"1\">".get_string("lastedited").": ".userdate($entry->modified)."</font></p>";
+            echo '<p><font size="1">'.get_string('lastedited').': '.userdate($entry->modified).'</font></p>';
         }
         if ($entry->text) {
             echo journal_format_entry_text($entry, $course, $mod);
@@ -207,7 +212,7 @@ function journal_user_complete($course, $user, $mod, $journal) {
         echo $OUTPUT->box_end();
 
     } else {
-        print_string("noentry", "journal");
+        print_string('noentry', 'journal');
     }
 }
 
@@ -327,17 +332,17 @@ function journal_get_participants($journalid) {
     global $DB;
 
     // Get students.
-    $students = $DB->get_records_sql("SELECT DISTINCT u.id
+    $students = $DB->get_records_sql('SELECT DISTINCT u.id
                                       FROM {user} u,
                                       {journal_entries} j
                                       WHERE j.journal=? and
-                                      u.id = j.userid", array($journalid));
+                                      u.id = j.userid', array($journalid));
     // Get teachers.
-    $teachers = $DB->get_records_sql("SELECT DISTINCT u.id
+    $teachers = $DB->get_records_sql('SELECT DISTINCT u.id
                                       FROM {user} u,
                                       {journal_entries} j
                                       WHERE j.journal=? and
-                                      u.id = j.teacher", array($journalid));
+                                      u.id = j.teacher', array($journalid));
 
     // Add teachers to students.
     if ($teachers) {
@@ -360,7 +365,7 @@ function journal_scale_used ($journalid, $scaleid) {
     global $DB;
     $return = false;
 
-    $rec = $DB->get_record("journal", array("id" => $journalid, "grade" => -$scaleid));
+    $rec = $DB->get_record('journal', array('id' => $journalid, 'grade' => -$scaleid));
 
     if (!empty($rec) && !empty($scaleid)) {
         $return = true;
@@ -378,7 +383,7 @@ function journal_scale_used ($journalid, $scaleid) {
 function journal_scale_used_anywhere($scaleid) {
     global $DB;
 
-    if ($scaleid and $DB->get_records('journal', array('grade' => -$scaleid))) {
+    if ($scaleid && $DB->get_records('journal', array('grade' => -$scaleid))) {
         return true;
     } else {
         return false;
@@ -418,9 +423,9 @@ function journal_reset_userdata($data) {
     $status = array();
     if (!empty($data->reset_journal)) {
 
-        $sql = "SELECT j.id
+        $sql = 'SELECT j.id
                 FROM {journal} j
-                WHERE j.course = ?";
+                WHERE j.course = ?';
         $params = array($data->courseid);
 
         $DB->delete_records_select('journal_entries', "journal IN ($sql)", $params);
@@ -464,7 +469,7 @@ function journal_print_overview($courses, &$htmlarray) {
             $courses[$journal->course]->format = $DB->get_field('course', 'format', array('id' => $journal->course));
         }
 
-        if ($courses[$journal->course]->format == 'weeks' AND $journal->days) {
+        if ($courses[$journal->course]->format == 'weeks' && $journal->days) {
 
             $coursestartdate = $courses[$journal->course]->startdate;
 
@@ -519,10 +524,10 @@ function journal_get_user_grades($journal, $userid=0) {
 
     } else {
 
-        $sql = "SELECT userid, modified as datesubmitted, format as feedbackformat,
+        $sql = 'SELECT userid, modified as datesubmitted, format as feedbackformat,
                 rating as rawgrade, entrycomment as feedback, teacher as usermodifier, timemarked as dategraded
                 FROM {journal_entries}
-                WHERE journal = :jid ".$userstr;
+                WHERE journal = :jid '.$userstr;
         $params['jid'] = $journal->id;
 
         $grades = $DB->get_records_sql($sql, $params);
@@ -571,11 +576,11 @@ function journal_update_grades($journal=null, $userid=0, $nullifnone=true) {
             journal_grade_item_update($journal);
         }
     } else {
-        $sql = "SELECT j.*, cm.idnumber as cmidnumber
+        $sql = 'SELECT j.*, cm.idnumber as cmidnumber
                 FROM {course_modules} cm
                 JOIN {modules} m ON m.id = cm.module
                 JOIN {journal} j ON cm.instance = j.id
-                WHERE m.name = 'journal'";
+                WHERE m.name = \'journal\'';
         if ($recordset = $DB->get_records_sql($sql)) {
             foreach ($recordset as $journal) {
                 if ($journal->grade != false) {
@@ -658,16 +663,16 @@ function journal_get_users_done($journal, $currentgroup) {
 
     $params = array();
 
-    $sql = "SELECT u.* FROM {journal_entries} j
-            JOIN {user} u ON j.userid = u.id ";
+    $sql = 'SELECT u.* FROM {journal_entries} j
+            JOIN {user} u ON j.userid = u.id ';
 
     // Group users.
     if ($currentgroup != 0) {
-        $sql .= "JOIN {groups_members} gm ON gm.userid = u.id AND gm.groupid = ?";
+        $sql .= 'JOIN {groups_members} gm ON gm.userid = u.id AND gm.groupid = ?';
         $params[] = $currentgroup;
     }
 
-    $sql .= " WHERE j.journal=? ORDER BY j.modified DESC";
+    $sql .= ' WHERE j.journal=? ORDER BY j.modified DESC';
     $params[] = $journal->id;
     $journals = $DB->get_records_sql($sql, $params);
 
@@ -684,7 +689,7 @@ function journal_get_users_done($journal, $currentgroup) {
         $canadd = has_capability('mod/journal:addentries', $context, $user);
         $entriesmanager = has_capability('mod/journal:manageentries', $context, $user);
 
-        if (!$entriesmanager and !$canadd) {
+        if (!$entriesmanager && !$canadd) {
             unset($journals[$key]);
         }
     }
@@ -695,28 +700,36 @@ function journal_get_users_done($journal, $currentgroup) {
 /**
  * Counts all the journal entries (optionally in a given group)
  * @param stdClass $journal Journal object
- * @param int $groupid Group id
+ * @param boolean|int|array $groupids Group id or array of ids. 0 or false = see all.
  * @return int Number of entries
  */
-function journal_count_entries($journal, $groupid = 0) {
+function journal_count_entries($journal, $groupids = 0) {
     global $DB;
 
     $cm = journal_get_coursemodule($journal->id);
     $context = context_module::instance($cm->id);
+    $journals = null;
 
-    if ($groupid) {     // How many in a particular group?
+    // Convert single group id to an array containing the group id to
+    // process it later in the function.
+    if (!is_array($groupids) && $groupids) {
+        $groupids = [$groupids];
+    }
+
+    if (is_array($groupids) && !empty($groupids)) {     // How many in a particular group?
+        $params = array($journal->id);
+        $sqlin = $DB->get_in_or_equal($groupids);
 
         $sql = "SELECT DISTINCT u.id FROM {journal_entries} j
                 JOIN {groups_members} g ON g.userid = j.userid
                 JOIN {user} u ON u.id = g.userid
-                WHERE j.journal = ? AND g.groupid = ?";
-        $journals = $DB->get_records_sql($sql, array($journal->id, $groupid));
+                WHERE j.journal = ? AND g.groupid $sqlin[0]";
+        $journals = $DB->get_records_sql($sql, array_merge($params, $sqlin[1]));
 
-    } else { // Count all the entries from the whole course.
-
-        $sql = "SELECT DISTINCT u.id FROM {journal_entries} j
+    } else if ($groupids === 0 || $groupids === false) { // Count all the entries from the whole course.
+        $sql = 'SELECT DISTINCT u.id FROM {journal_entries} j
                 JOIN {user} u ON u.id = j.userid
-                WHERE j.journal = ?";
+                WHERE j.journal = ?';
         $journals = $DB->get_records_sql($sql, array($journal->id));
     }
 
@@ -747,10 +760,10 @@ function journal_count_entries($journal, $groupid = 0) {
 function journal_get_unmailed_graded($cutofftime) {
     global $DB;
 
-    $sql = "SELECT je.*, j.course, j.name FROM {journal_entries} je
+    $sql = 'SELECT je.*, j.course, j.name FROM {journal_entries} je
             JOIN {journal} j ON je.journal = j.id
-            WHERE je.mailed = '0' AND je.timemarked < ? AND je.timemarked > 0
-            AND (je.rating <> -1 OR (je.entrycomment IS NOT NULL AND trim(je.entrycomment) <> ?))";
+            WHERE je.mailed = 0 AND je.timemarked < ? AND je.timemarked > 0
+            AND (je.rating <> -1 OR (je.entrycomment IS NOT NULL AND trim(je.entrycomment) <> ?))';
     return $DB->get_records_sql($sql, array($cutofftime, ''));
 }
 
@@ -763,11 +776,11 @@ function journal_get_unmailed_graded($cutofftime) {
 function journal_log_info($log) {
     global $DB;
 
-    $sql = "SELECT j.*, u.firstname, u.lastname
+    $sql = 'SELECT j.*, u.firstname, u.lastname
             FROM {journal} j
             JOIN {journal_entries} je ON je.journal = j.id
             JOIN {user} u ON u.id = je.userid
-            WHERE je.id = ?";
+            WHERE je.id = ?';
     return $DB->get_record_sql($sql, array($log->info));
 }
 
@@ -781,9 +794,9 @@ function journal_get_coursemodule($journalid) {
 
     global $DB;
 
-    return $DB->get_record_sql("SELECT cm.id FROM {course_modules} cm
+    return $DB->get_record_sql('SELECT cm.id FROM {course_modules} cm
                                 JOIN {modules} m ON m.id = cm.module
-                                WHERE cm.instance = ? AND m.name = 'journal'", array($journalid));
+                                WHERE cm.instance = ? AND m.name = \'journal\'', array($journalid));
 }
 
 
@@ -795,37 +808,39 @@ function journal_get_coursemodule($journalid) {
  * @param object $entry Entry object
  * @param array $teachers Teachers array
  * @param array $grades Grades array
+ * @param array $cmid Course module id for the specific journal
  * @return void
  */
-function journal_print_user_entry($course, $user, $entry, $teachers, $grades) {
+function journal_print_user_entry($course, $user, $entry, $teachers, $grades, $cmid) {
     global $USER, $OUTPUT, $DB, $CFG;
 
     require_once($CFG->dirroot.'/lib/gradelib.php');
 
-    echo "\n<table class=\"journaluserentry m-b-1\" id=\"entry-" . $user->id . "\">";
+    echo '<div class="journaluserentrywrapper">';
+    echo '<table class="journaluserentry m-b-1" id="entry-' . $user->id . '">';
 
-    echo "\n<tr>";
-    echo "\n<td class=\"userpix\" rowspan=\"2\">";
+    echo '<tr>';
+    echo '<td class="userpix" style="border-bottom: 1px solid #dedede;">';
     echo $OUTPUT->user_picture($user, array('courseid' => $course->id, 'alttext' => true));
-    echo "</td>";
-    echo "<td class=\"userfullname\">".fullname($user);
+    echo '</td>';
+    echo '<td class="userfullname"><strong>'.fullname($user).'</strong>';
     if ($entry) {
-        echo " <span class=\"lastedit\">".get_string("lastedited").": ".userdate($entry->modified)."</span>";
+        echo ' <span class="lastedit">'.get_string('lastedited').': '.userdate($entry->modified).'</span>';
     }
-    echo "</td>";
-    echo "</tr>";
+    echo '</td>';
+    echo '</tr>';
 
-    echo "\n<tr><td>";
+    echo '<tr><td colspan="2">';
     if ($entry) {
         echo journal_format_entry_text($entry, $course);
     } else {
-        print_string("noentry", "journal");
+        print_string('noentry', 'journal');
     }
-    echo "</td></tr>";
+    echo '</td></tr>';
 
     if ($entry) {
-        echo "\n<tr>";
-        echo "<td class=\"userpix\">";
+        echo '<tr>';
+        echo '<td class="userpix" style="border-top: 1px solid #dedede;">';
         if (!$entry->teacher) {
             $entry->teacher = $USER->id;
         }
@@ -833,8 +848,8 @@ function journal_print_user_entry($course, $user, $entry, $teachers, $grades) {
             $teachers[$entry->teacher] = $DB->get_record('user', array('id' => $entry->teacher));
         }
         echo $OUTPUT->user_picture($teachers[$entry->teacher], array('courseid' => $course->id, 'alttext' => true));
-        echo "</td>";
-        echo "<td>".get_string("feedback").":";
+        echo '</td>';
+        echo '<td style="border-top: 1px solid #dedede;">'.get_string('feedback').':';
 
         $attrs = array();
         $hiddengradestr = '';
@@ -861,29 +876,38 @@ function journal_print_user_entry($course, $user, $entry, $teachers, $grades) {
         // Grade selector.
         $attrs['id'] = 'r' . $entry->id;
         $gradestring = get_string_manager()->string_exists('gradenoun', 'moodle') ? get_string('gradenoun') : get_string('grade');
-        echo html_writer::label(fullname($user)." ".$gradestring, 'r'.$entry->id, true, array('class' => 'accesshide'));
-        echo html_writer::select($grades, 'r'.$entry->id, $entry->rating, get_string("nograde").'...', $attrs);
+        echo html_writer::label(fullname($user).' '.$gradestring, 'r'.$entry->id, true, array('class' => 'accesshide'));
+        echo html_writer::select($grades, 'r'.$entry->id, $entry->rating, get_string('nograde').'...', $attrs);
         echo $hiddengradestr;
         // Rewrote next three lines to show entry needs to be regraded due to resubmission.
         if (!empty($entry->timemarked) && $entry->modified > $entry->timemarked) {
-            echo " <span class=\"lastedit\">".get_string("needsregrade", "journal"). "</span>";
+            echo ' <span class="lastedit">'.get_string('needsregrade', 'journal'). '</span>';
         } else if ($entry->timemarked) {
-            echo " <span class=\"lastedit\">".userdate($entry->timemarked)."</span>";
+            echo ' <span class="lastedit">'.userdate($entry->timemarked).'</span>';
         }
         echo $gradebookgradestr;
 
         // Feedback text.
-        echo html_writer::label(fullname($user)." ".get_string('feedback'), 'c'.$entry->id, true, array('class' => 'accesshide'));
-        echo "<p><textarea id=\"c$entry->id\" name=\"c$entry->id\" rows=\"12\" cols=\"60\" $feedbackdisabledstr>";
+        echo html_writer::label(fullname($user).' '.get_string('feedback'), 'c'.$entry->id, true, array('class' => 'accesshide'));
+        echo "<p><textarea id=\"c$entry->id\" name=\"c$entry->id\" rows=\"7\" $feedbackdisabledstr>";
         p($feedbacktext);
-        echo "</textarea></p>";
+        echo '</textarea></p>';
 
         if ($feedbackdisabledstr != '') {
             echo '<input type="hidden" name="c'.$entry->id.'" value="'.$feedbacktext.'"/>';
         }
-        echo "</td></tr>";
+        echo '</td></tr>';
     }
-    echo "</table>\n";
+    echo '</table>';
+
+    if ($entry) {
+        echo '<p class="feedbacksave" style="margin-top: -16px;">';
+        echo '<input type="button" data-cmid="'.$cmid.'" data-entryid="'.$entry->id.'" data-userid="'.$user->id.'"';
+        echo 'value="'.get_string('savefeedback', 'journal').'" class="saveindividualfeedback btn btn-secondary m-t-1"/>';
+        echo '</p>';
+    }
+
+    echo '</div>';
 
 }
 
@@ -918,7 +942,7 @@ function journal_print_feedback($course, $entry, $grades) {
     echo '</tr>';
 
     echo '<tr>';
-    echo '<td class="left side">&nbsp;</td>';
+    echo '<td class="side">&nbsp;</td>';
     echo '<td class="entrycontent">';
 
     echo '<div class="grade">';
@@ -1072,4 +1096,37 @@ function mod_journal_core_calendar_provide_event_action(calendar_event $event,
         1,
         true
     );
+}
+
+
+function mod_journal_sort_users(array &$users, $sortby, array $entrybyuser) {
+    uasort($users, function($a, $b) use ($sortby, $entrybyuser) {
+        switch ($sortby){
+            case 'firstnamedesc':
+                return $a->firstname < $b->firstname ? 1 :
+                    ($a->firstname > $b->firstname ? -1 : 0);
+            case 'firstnameasc':
+                return $a->firstname < $b->firstname ? -1 :
+                    ($a->firstname > $b->firstname ? 1 : 0);
+            case 'lastnamedesc':
+                return $a->lastname < $b->lastname ? 1 :
+                    ($a->lastname > $b->lastname ? -1 : 0);
+            case 'lastnameasc':
+                return $a->lastname < $b->lastname ? -1 :
+                    ($a->lastname > $b->lastname ? 1 : 0);
+            case 'datedesc':
+                if (!isset($entrybyuser[$a->id]->timemarked) || !isset($entrybyuser[$b->id]->timemarked)) {
+                    return -1;
+                }
+                return $entrybyuser[$a->id]->timemarked < $entrybyuser[$b->id]->timemarked ? 1 :
+                    ($entrybyuser[$a->id]->timemarked > $entrybyuser[$b->id]->timemarked ? -1 : 0);
+            case 'dateasc':
+            default:
+                if (!isset($entrybyuser[$a->id]->timemarked) || !isset($entrybyuser[$b->id]->timemarked)) {
+                    return -1;
+                }
+                return $entrybyuser[$a->id]->timemarked < $entrybyuser[$b->id]->timemarked ? -1 :
+                    ($entrybyuser[$a->id]->timemarked > $entrybyuser[$b->id]->timemarked ? 1 : 0);
+        }
+    });
 }

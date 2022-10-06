@@ -344,7 +344,7 @@ $string['contextmenu:full'] = 'ضبط';
 $string['contextmenu:left'] = 'يسار';
 $string['contextmenu:right'] = 'يمين';
 $string['customconfig'] = 'تهيئة مخصصة';
-$string['customconfig_desc'] = 'تهيئة مخصصة متقدمة لـ TinyMCE بصيغة JSON، على سبيل المثال: {"option1" : "value2", "option2" : "value2"}. أي خيارات تحدد هنا تتجاوز إعدادات الملحق القياسية.';
+$string['customconfig_desc'] = 'تهيئة مخصصة متقدمة لـ TinyMCE بصيغة JSON، على سبيل المثال: {"option1" : "value2", "option2" : "value2"}. أي خيارات تحدد هنا تتجاوز إعدادات الإضافة القياسية.';
 $string['customtoolbar'] = 'شريط أدوات المحرر';
 $string['customtoolbar_desc'] = 'كل سطر يحتوي على قائمة مفصولة بفوارز من أسماء الأزرار. استعمل "wrap" بمثابة فاصل مجموعات، يتم تجاهل الأسطر الفارغة. أنظر <a href="{$a}" target="_blank">{$a}</a> للاطلاع على قائمة الأزرار الافتراضية في TinyMCE.<br />السطر الأول سيتم إظهاره دائماً، بينما إظهار شريطا الأدوات الثاني والثالث يمكن التحكم فيه.';
 $string['directionality:ltr_desc'] = 'من اليسار الى اليمين';
@@ -601,7 +601,7 @@ $string['paste_dlg:word_title'] = 'استعمل CTRL+V في لوحة المفا�
 $string['pluginname'] = 'محرر TinyMCE HTML';
 $string['preview:preview_desc'] = 'معاينة';
 $string['print:print_desc'] = 'الطباعة';
-$string['privacy:metadata'] = 'إن ملحق محرر TinyMCE HTML لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة محرر TinyMCE HTML لا تخزن أي بيانات شخصية.';
 $string['save:cancel_desc'] = 'الغاء جميع التعديلات';
 $string['save:save_desc'] = 'حفظ';
 $string['searchreplace:delta_height'] = '';
@@ -713,7 +713,7 @@ $string['style_dlg:top'] = 'أعلى';
 $string['style_dlg:visibility'] = 'حالة الإظهار';
 $string['style_dlg:width'] = 'العرض';
 $string['style_dlg:zindex'] = 'ترتيب النوافذ Z-index';
-$string['subplugintype_tinymce'] = 'ملحق';
+$string['subplugintype_tinymce'] = 'إضافة';
 $string['subplugintype_tinymce_plural'] = 'إضافات TinyMCE';
 $string['table:cell'] = 'خلية';
 $string['table:cell_desc'] = 'خصائص خلية الجدول';

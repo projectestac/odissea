@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'تأمين الملف';
-$string['privacy:metadata'] = 'إن ملحق تأمين الملفات لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة تأمين الملفات لا تخزن أيّ بيانات شخصية.';

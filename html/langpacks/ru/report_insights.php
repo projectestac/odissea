@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actionsaved'] = 'Ваш отзыв о "{$a}" сохранен.';
+$string['actionsaved'] = 'Ваш отзыв о «{$a}» сохранен.';
 $string['confirmbulkaction'] = 'Вы действительно хотите отметить выбранные прогнозы ({$a->nitems}) как «{$a->action}»?';
 $string['disabledmodel'] = 'Эта модель была отключена администратором';
 $string['indicators'] = 'Показатели';
 $string['insight'] = 'Инсайт';
-$string['insights'] = 'Инсайты';
+$string['insights'] = 'Сведения';
 $string['justpredictions'] = 'Обратите внимание, что следующие идеи являются только предположениями. Невозможно с уверенностью предсказать будущее. Информация предоставляется для того, чтобы можно было предпринять необходимые действия, чтобы любые негативные прогнозы не стали реальностью.';
 $string['nodetailsavailable'] = 'Данные прогноза сомнительны';
 $string['outcome'] = 'Результат';
@@ -40,7 +40,7 @@ $string['outcomeok'] = 'Прекрасный результат';
 $string['outcomepositive'] = 'Положительный результат';
 $string['outcomeverynegative'] = 'Очень отрицательный результат';
 $string['outcomeverypositive'] = 'Очень положительный результат';
-$string['pluginname'] = 'Инсайты';
+$string['pluginname'] = 'Сведения';
 $string['prediction'] = 'Прогноз';
 $string['predictiondetails'] = 'Данные прогноза';
 $string['privacy:metadata'] = 'Плагин Прогнозы не хранит никаких личных данных.';

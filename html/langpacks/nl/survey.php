@@ -189,7 +189,7 @@ Er zijn geen \'goede\' en geen \'foute\' antwoorden; we zijn alleen maar geïnte
 Hartelijk bedankt.';
 $string['collespname'] = 'COLLES (Voorkeur)';
 $string['completiondetail:submit'] = 'Stuur antwoorden in';
-$string['completionsubmit'] = 'De leerling moet deze activiteit insturen om ze te voltooien';
+$string['completionsubmit'] = 'De leerling moet iets insturen';
 $string['customintro'] = 'Beschrijving';
 $string['deleteallanswers'] = 'Verwijder alle onderzoek antwoorden';
 $string['deleteanalysis'] = 'Verwijder alle antwoordanalyses';

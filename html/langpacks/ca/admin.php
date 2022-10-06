@@ -167,7 +167,7 @@ $string['condifmodeditdefaults'] = 'Els valors per defecte s\'utilitzaran en el 
 $string['confeditorhidebuttons'] = 'Seleccioneu els botons que voleu ocultar en l\'editor HTML.';
 $string['configallcountrycodes'] = 'Aquesta és la llista de països que es pot seleccionar en alguns punts; per exemple, en un perfil d\'usuari. Si es deixa en blanc (per defecte) s\'utilitza la llista del fitxer <i>countries.php</i> que hi ha al paquet d\'idioma anglès estàndard. Aquesta llista és la que hi ha a l\'ISO 3166-1.<br />
 Podeu escriure una llista de codis separats amb comes, per exemple «CT, FR_ES». Si n\'hi afegiu de nous, que no són estàndards, els haureu d\'afegir a la llista <i>countries.php</i> del vostre paquet d\'idioma i al paquet «en» (és el cas de l\'exemple CT, que no està inclòs a les llistes de països).';
-$string['configallowassign'] = 'Permet a la gent que té els rols de l\'esquerra assignar a altra gent alguns dels rols de les columnes';
+$string['configallowassign'] = 'Per cada rol de la columna de l\'esquerra, escolliu quins rols pot assignar a altres.';
 $string['configallowattachments'] = 'Si s\'habilita, els correus electrònics enviats des del lloc podran dur adjunts com ara insígnies.';
 $string['configallowblockstodock'] = 'Permet que els usuaris puguin minimitzar els blocs a la barra especial si el tema seleccionat té habilitada aquesta opció i en permet l\'ús.';
 $string['configallowcategorythemes'] = 'Si habiliteu aquesta opció, es podran definir temes diferents per a cada categoria de cursos. El tema definit per a una categoria s\'aplicarà a tots els cursos i a totes les subcategories dins d\'aquesta categoria, tret que es defineixin temes específics per a un curs o una subcategoria. AVÍS: pot afectar el rendiment del servidor.';
@@ -180,15 +180,17 @@ $string['configallowemojipickerincompatible'] = 'La configuració actual de la v
 $string['configallowguestmymoodle'] = 'Si s\'habilita, els visitants podran accedir al Tauler. Si no, es redirigiran a la pàgina principal.';
 $string['configallowobjectembed'] = 'Com a mesura de seguretat per defecte, no es permet que els usuaris normals incrustin multimèdia (p. ex. Flash) dins dels textos usant explícitament etiquetes EMBED i OBJECT en l\'HTML (encara que poden fer-ho sense problemes de seguretat per mitjà del filtre multimèdia). Si voleu permetre aquestes etiquetes habiliteu aquesta opció.';
 $string['configallowoverride'] = 'Permet que la gent amb rols a l\'esquerra redefineixi alguns rols en la columna de rols';
-$string['configallowoverride2'] = 'Seleccioneu quins rols poden ser redefinits per cada rol de la columna de l\'esquerra. <br /> Fixeu-vos que aquesta configuració només s\'aplica als usuaris que tinguin permeses les capacitats «moodle/role:override» o «moodle/role:safeoverride».';
-$string['configallowswitch'] = 'Seleccioneu a quins rols pot canviar un usuari, basant-se en el rol que té definit. A més d\'això, un usuari ha de tenir la capacitat moodle/role:switchroles activa per poder canviar.<br/>Penseu que només es podrà canviar a rols que tenen concedida la capacitat moodle/course:view, i que no tenen la capacitat moodle/site:doanything. Per tant, algunes columnes d\'aquesta taula queden inhabilitades.';
+$string['configallowoverride2'] = 'Per cada rol de la columna de l\'esquerra, seleccioneu quins rols pot redefinir.<br/>
+A més, els usuaris han de tenir les capacitats «moodle/role:override» o «moodle/role:safeoverride».';
+$string['configallowswitch'] = 'Per cada rol de la columna de l\'esquerra, seleccioneu quins rols pot adoptar
+A més, els usuaris han de tenir la capacitat «moodle/role:switchroles».';
 $string['configallowthemechangeonurl'] = 'Si està habilitat, el tema es pot canviar així:<br />afegint ?theme=themename a qualsevol URL de Moodle (p. ex. elmeumoodle.cat/?theme=afterburner) o<br />afegint &theme=themename a qualsevol URL intern de Moodle (elmeumoodle.cat/course/view.php?id=2&theme=afterburner).';
 $string['configallowuserblockhiding'] = 'Voleu que els usuaris puguin ocultar/mostrar els blocs laterals arreu d\'aquest lloc? Aquesta característica fa servir Javascript i galetes per recordar l\'estat de cada bloc. Només afecta la visualització de cada usuari.';
 $string['configallowusermailcharset'] = 'Si habiliteu aquesta opció, cada usuari podrà especificar un joc de caràcters per al seu correu.';
 $string['configallowuserswitchrolestheycantassign'] = 'Per defecte, moodle/role:assign és necessari per als usuaris per canviar rols. Activar aquest paràmetre treu aquest requisit, i això fa que els rols disponibles al menú desplegable «Canvia els rols de» depenguin sols dels paràmetres de la taula «Permet assignació de rols».
 És recomanable que els paràmetres de la taula «Permet l\'assignació de rols» no permetin als usuaris canviar cap a rols amb més capacitats que el que tenen en aqueix moment.';
 $string['configallowuserthemes'] = 'Si habiliteu aquesta opció, els usuaris podran definir els seus temes. Els temes dels usuaris tenen més prioritat sobre el tema del lloc (però no sobre els temes dels cursos).';
-$string['configallowview'] = 'Selecciona quins rols poden veure els usuaris, per quins poden filtrar, etc. basat en els rols que actualment ja tenen.';
+$string['configallowview'] = 'Per cada rol de la columna de l\'esquerra, seleccioneu quins rols pot veure, cercar o filtrar per.';
 $string['configallusersaresitestudents'] = 'Cal considerar com a estudiants TOTS els usuaris en les activitats de la pàgina inicial d\'aquest lloc? Si la resposta és «Sí», llavors qualsevol usuari amb un compte confirmat podrà participar com a estudiant en aquestes activitats. Si la resposta és «No», llavors només els usuaris que ja siguin membres d\'almenys un curs podran participar en aquestes activitats de la pàgina inicial. Només els administradors i els professors que hi hagin estat assignats poden actuar com a professors d\'aquestes activitats.';
 $string['configauthenticationplugins'] = 'Trieu els connectors d\'autenticació que vulgueu utilitzar i disposeu-los per ordre de preferència.';
 $string['configautolang'] = 'Configura l\'idioma per defecte segons el del navegador. Si inhabiliteu aquest paràmetre s\'utilitzarà l\'idioma per defecte del lloc.';
@@ -211,14 +213,16 @@ $string['configcourseswithsummarieslimit'] = 'El nombre màxim de cursos que es 
 $string['configcronclionly'] = 'Si habiliteu aquest paràmetre, la seqüència de cron només podrà executar-se des de la línia d\'ordres i no via web. En aquest cas s\'ignorarà la contrasenya de cron definida al dessota.';
 $string['configcronremotepassword'] = 'Això vol dir que l\'script cron.php no es podrà executar des d\'una interfície web sense proporcionar aquesta contrasenya en un URL d\'aquesta forma:<pre>https://lloc.example.com/admin/cron.php?password=sesamobret</pre>. Si deixeu la contrasenya en blanc, no se\'n demanarà cap.';
 $string['configcurlcache'] = 'Temps de vida per al cau de cURL, en segons.';
-$string['configcustommenuitems'] = 'Aquí podeu preparar un menú personalitzat. Introduïu els elements del menú amb el format següent: Text del menú, un enllaç (opcional, no aplica si es tracta un element principal amb subelements), un consell (opcional) i un codi d\'idioma o llista de codis separats per comes (opcional, serveix per mostrar-lo només als usuaris d\'aquell idioma), tot això separat per barres verticals. Les línies que comencin amb un guió es mostraran com a subelements de l\'element previ de primer nivell. Podeu afegir una línia divisòria amb els caràcters ###. Per exemple:
+$string['configcustommenuitems'] = 'Aquí podeu preparar un menú personalitzat. Introduïu cada element del menú en una línia apart amb el format següent: Text del menú, un enllaç (opcional, no aplica si es tracta un element principal amb subelements), un consell (opcional) i un codi d\'idioma o llista de codis separats per comes (opcional, serveix per mostrar la línia només als usuaris d\'aquell idioma), tot això separat per barres verticals. Les línies que comencin amb un guió es mostraran com a subelements de l\'element previ de primer nivell. Podeu afegir una línia divisòria amb els caràcters ###. Per exemple:
 <pre>
 Cursos
 -Tots els cursos|/course/
 -Cerca cursos|/course/search.php
 -###
--PMF|https://algunurl.xyz/pmf
--Aplicació mòbil|https://algunurl.xyz/app|Descarrega la nostra aplicació
+-FAQ|https://algunurl.xyz/faq
+-PMF|https://algunurl.xyz/pmf-ca||ca
+-Preguntas más frecuentes|https://algunurl.xyz/pmf-es||es
+Aplicació mòbil|https://algunurl.xyz/app|Descarrega la nostra aplicació
 </pre>';
 $string['configcustomusermenuitems'] = 'Podeu configurar els continguts del menú d\'usuari (tret de l\'enllaç de fi de sessió, que s\'hi afegeix de manera automàtica). Cada línia se separa amb un caràcter de barra vertical | i consisteix en 1) una cadena amb la forma "nom de la cadena d\'idioma, nom del component" o com a text net, 2) un URL, i 3) una icona, ja sigui indicant el nom del fitxer (que estaria a la carpeta pix amb l\'estructura [nom del subdirectori/nom de la icona], per exemple, i/publish) o indicant el seu URL. Es poden emprar separadors afegint-hi una línia d\'un o més caràcters de coixinet # allà on es vulgui.';
 $string['configdbsessions'] = 'Si habiliteu aquest paràmetre, la base de dades emmagatzemarà la informació de les sessions dels usuaris. Teniu en compte que, si canvieu ara aquest paràmetre, tancareu les sessions de tots els usuaris (la vostra inclosa). Si utilitzeu MySQL, assegureu-vos que el paràmetre «max_allowed_packet» de my.cnf (o my.ini) és, com a mínim, 4M. Altres controladors de sessió es poden configurar directament a config.php; vegeu config-dist.php per a més informació. Aquesta opció desapareix si especifiqueu un controlador de sessió a config.php file.';
@@ -1093,6 +1097,7 @@ $string['searchareaenabled'] = 'Àrea de cerca habilitada';
 $string['searchareas'] = 'Àrees de cerca';
 $string['searchdeleteindex'] = 'Suprimeix tots els continguts indexats';
 $string['searchengine'] = 'Motor de cerca';
+$string['searchincludeallcourses'] = 'Inclou tots els cursos visibles';
 $string['searchindexactions'] = 'Indexa les accions';
 $string['searchindexdeleted'] = 'S\'ha suprimit l\'índex';
 $string['searchindextime'] = 'Límit de temps per a la indexació';

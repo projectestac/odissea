@@ -32,4 +32,4 @@ $string['auth_nntphost_key'] = 'مستضيف';
 $string['auth_nntpport'] = 'منفذ المزود (119 هو الأكثر شيوعا)';
 $string['auth_nntpport_key'] = 'منفذ';
 $string['pluginname'] = 'استخدم مزود NNTP';
-$string['privacy:metadata'] = 'إن ملحق مصادقة مخدم NNTP لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة مصادقة مخدم NNTP لا تخزن أي بيانات شخصية.';

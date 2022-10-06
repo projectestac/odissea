@@ -242,9 +242,11 @@ $string['emaildigesttype_help'] = 'O tipo de notificación que recibirá para ca
 * Resumo - Só os asuntos - Recibirá un correo resumo diario contendo só os asuntos de cada comentario do foro.';
 $string['emptymessage'] = 'Algo vai mal no seu comentario. Se cadra deixouno en branco, ou o anexo era demasiado grande. Os seus cambios NON se gardaron.';
 $string['errorcannotlock'] = 'Non ten permiso para bloquear os debates.';
+$string['errordiscussionnotfound'] = 'Non se atopou a discusión';
 $string['erroremptymessage'] = 'A mensaxe do comentario non debe quedar baleira.';
 $string['erroremptysubject'] = 'O asunto do comentario non debe quedar baleiro.';
 $string['errorenrolmentrequired'] = 'Debe estar matriculado neste curso para acceder a este contido';
+$string['errorforumnotfound'] = 'Non se atopou o foro ao que pertence esta discusión';
 $string['errorwhiledelete'] = 'Produciuse un erro ao eliminar o rexistro.';
 $string['eventassessableuploaded'] = 'Algúns contidos foron publicados';
 $string['eventcoursesearched'] = 'Curso buscado';
@@ -545,6 +547,7 @@ $string['postmailinfolink'] = 'Esta é unha copia dunha mensaxe publicada en {$a
 
 Para responder prema nesta ligazón: {$a->replylink}';
 $string['postmailnow'] = '<p>Este comentario enviarase por correo inmediatamente a todos os subscritores do foro.</p>';
+$string['postmailreply'] = 'Para responder prema nesta ligazón: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = 'Maioritariamente sabendo separado';
 $string['postrating2'] = 'Separado e conectado';

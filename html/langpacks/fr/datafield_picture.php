@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Champ image';
+$string['fieldtypelabel'] = 'Image';
 $string['pluginname'] = 'Image';
 $string['privacy:metadata'] = 'Le composant Champ image n\'enregistre aucune donnée personnelle ; il utilise des tables définies dans mod_data.';

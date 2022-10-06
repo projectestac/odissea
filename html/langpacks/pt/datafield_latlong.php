@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo latitude/longitude';
-$string['pluginname'] = 'Latitude/Longitude';
-$string['privacy:metadata'] = 'O componente do campo Latitude/Longitude não armazena quaisquer dados pessoais, usa tabelas definidas em mod_data.';
+$string['fieldtypelabel'] = 'Coordenadas';
+$string['pluginname'] = 'Coordenadas';
+$string['privacy:metadata'] = 'O componente do campo Coordenadas não armazena quaisquer dados pessoais. Usa tabelas definidas em mod_data.';

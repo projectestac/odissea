@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['alphabet'] = 'А,Б,В,Г,Д,Е,Ё,Ж,З,И,К,Л,М,Н,О,П,Р,С,Т,У,Ф,Х,Ц,Ч,Ш,Щ,Э,Ю,Я';
+$string['am'] = 'до полудня';
+$string['amcaps'] = 'До полудня';
 $string['backupnameformat'] = '%Y%m%d-%H%M';
 $string['dateintervaldayshoursmins'] = '%ad %hh %im';
 $string['decsep'] = ',';
@@ -39,6 +41,8 @@ $string['localecldr'] = 'ru-RU';
 $string['localewin'] = 'Russian_Russia.1251';
 $string['localewincharset'] = 'WINDOWS-1251';
 $string['oldcharset'] = 'WINDOWS-1251';
+$string['pm'] = 'после полудня';
+$string['pmcaps'] = 'После полудня';
 $string['strftimedate'] = '%d %B %Y';
 $string['strftimedatefullshort'] = '%d/%m/%y';
 $string['strftimedatemonthabbr'] = '%d %b %Y';

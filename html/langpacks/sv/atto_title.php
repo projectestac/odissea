@@ -30,6 +30,6 @@ $string['h4'] = 'Rubrik (medium)';
 $string['h5'] = 'Rubrik (liten)';
 $string['p'] = 'Stycke';
 $string['pluginname'] = 'Styckeformat';
-$string['pre'] = 'För-formaterat';
+$string['pre'] = 'Förformaterat';
 $string['privacy:metadata'] = 'Pluginmodulen atto_title lagrar ingen personinformation.';
 $string['title'] = 'Styckeformat';

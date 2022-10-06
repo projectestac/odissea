@@ -155,10 +155,10 @@ Nota: Para fins de verificação, evite mudar esta configuração assim que come
 $string['badgesdisabled'] = 'As medalhas não estão ativas neste site.';
 $string['badgesearned'] = 'Número de medalhas recebidas: {$a}';
 $string['badgesettings'] = 'Configurações das medalhas';
-$string['badgestatus_0'] = 'Não disponível para os utilizadores';
-$string['badgestatus_1'] = 'Disponível para os utilizadores';
-$string['badgestatus_2'] = 'Não disponível para os utilizadores';
-$string['badgestatus_3'] = 'Disponível para os utilizadores';
+$string['badgestatus_0'] = 'Não disponível';
+$string['badgestatus_1'] = 'Disponível';
+$string['badgestatus_2'] = 'Não disponível (critérios bloqueados)';
+$string['badgestatus_3'] = 'Disponível (critérios bloqueados)';
 $string['badgestatus_4'] = 'Arquivado';
 $string['badgestoearn'] = 'Número de medalhas disponíveis: {$a}';
 $string['badgesview'] = 'Medalhas da disciplina';

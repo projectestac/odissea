@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'الربط التلقائي لقاعدة البيانات';
-$string['privacy:metadata'] = 'ملحق الربط التلقائي لقاعدة البيانات لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إضافة الربط التلقائي لقاعدة البيانات لا تخزن أي بيانات شخصية.';

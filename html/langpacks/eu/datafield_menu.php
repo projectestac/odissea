@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Menua';
-$string['pluginname'] = 'Menua';
-$string['privacy:metadata'] = 'Menua eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['fieldtypelabel'] = 'Aukera-menua';
+$string['pluginname'] = 'Aukera-menua';
+$string['privacy:metadata'] = 'Aukera-menua eremu-osagaiak ez du datu pertsonalik biltzen; datu-base moduluan zehaztutako taulak erabiltzen ditu.';

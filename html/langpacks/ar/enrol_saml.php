@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['created_group_info'] = 'وصف للمجموعات الجديدة';
-$string['created_group_info_description'] = 'ضعف في هذا الحقل النص الذي سيتم استعماله لوصف المجموعات الجديدة المنشأة من قبل الملحق';
+$string['created_group_info_description'] = 'ضعف في هذا الحقل النص الذي سيتم استعماله لوصف المجموعات الجديدة المنشأة من قبل الإضافة';
 $string['wsusercannotassign'] = 'ليست لديك صلاحية تعيين هذا الدور ({$a->roleid}) إلى هذا المستخدم ({$a->userid}) في هذا المقرر الدراسي ({$a->courseid}).';

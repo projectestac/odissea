@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['authpluginnotfound'] = '認証プラグイン {$a} が見つかりませんでした。';
-$string['blocknotexist'] = '{$a} ブロックがありません。';
+$string['blocknotexist'] = '{$a} ブロックが存在しません。';
 $string['cannotbenull'] = '{$a} にはnullを使用できません!';
 $string['cannotdowngrade'] = '{$a->plugin} を {$a->oldversion} から {$a->newversion} にダウングレードできません。';
 $string['cannotfindadmin'] = '管理ユーザが見つかりませんでした!';
@@ -42,10 +42,10 @@ $string['invalidparameter'] = '無効なパラメータ値が検出されまし�
 $string['invalidresponse'] = '無効なレスポンス値が検知されました。';
 $string['line'] = '行';
 $string['missingconfigversion'] = 'configテーブルにバージョンが含まれていません。あなたは続けることはできません。';
-$string['modulenotexist'] = '{$a} モジュールがありません。';
-$string['morethanonerecordinfetch'] = 'fetch() で2レコード以上のレコードが見つかりました!';
+$string['modulenotexist'] = '{$a} モジュールが存在しません。';
+$string['morethanonerecordinfetch'] = 'fetch()で2レコード以上のレコードが見つかりました!';
 $string['mustbeoveride'] = '抽象メソッド {$a} はオーバーライドする必要があります。';
-$string['noadminrole'] = 'adminロールが見つかりませんでした。';
+$string['noadminrole'] = '管理者ロールが見つかりませんでした。';
 $string['noblocks'] = 'ブロックがインストールされていません!';
 $string['nocate'] = 'カテゴリがありません!';
 $string['nomodules'] = 'モジュールが見つかりませんでした!!';

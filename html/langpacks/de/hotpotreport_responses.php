@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Bericht über Antworten';
+$string['privacy:metadata'] = 'Das Modul "Bericht über Antworten" speichert keine personenbezogenen Daten.';

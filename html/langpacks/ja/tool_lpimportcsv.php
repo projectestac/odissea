@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['competencyscale'] = 'コンピテンシー尺度: {$a}';
-$string['competencyscaledescription'] = 'インポートによって作成されたコンピテンシー尺度';
+$string['competencyscale'] = 'コンピテンシ尺度: {$a}';
+$string['competencyscaledescription'] = 'インポートによって作成されたコンピテコンピテンシンシー尺度';
 $string['confirm'] = '確認';
 $string['confirmcolumnmappings'] = 'カラムマッピングを確認する';
 $string['csvdelimiter'] = 'CSVセパレータ';
@@ -35,20 +35,20 @@ $string['descriptionformat'] = '説明フォーマット';
 $string['encoding'] = 'エンコーディング';
 $string['export'] = 'エクスポート';
 $string['exportid'] = 'エクスポートID (任意)';
-$string['exportnavlink'] = 'コンピテンシーフレームワークをエクスポートする';
+$string['exportnavlink'] = 'コンピテンシフレームワークをエクスポートする';
 $string['idnumber'] = 'IDナンバー';
 $string['import'] = 'インポート';
 $string['importfile'] = 'CSVフレームワーク説明ファイル';
-$string['importfile_help'] = 'コンピテンシーフレームワークをテキストファイルでエクスポートすることができます。ファイルのフォーマットはサイトに新しいコンピテンシーを作成してインポートする時点で決定できます。';
+$string['importfile_help'] = 'コンピテンシフレームワークをテキストファイルでエクスポートすることができます。ファイルのフォーマットはサイトに新しいコンピテンシを作成してインポートする時点で決定できます。';
 $string['importingfile'] = 'ファイルデータをインポートする';
 $string['invalidimportfile'] = 'ファイルフォーマットが無効です。';
 $string['isframework'] = 'フレームワークである';
-$string['noframeworks'] = 'まだコンピテンシーフレームワークは作成されていません。';
+$string['noframeworks'] = 'まだコンピテンシフレームワークは作成されていません。';
 $string['parentidnumber'] = '親IDナンバー';
-$string['pluginname'] = 'コンピテンシーフレームワークをインポートする';
-$string['privacy:metadata'] = 'コンピテンシーフレームワークをインポートするプラグインはいかなる個人データも保存しません。';
+$string['pluginname'] = 'コンピテンシフレームワークをインポートする';
+$string['privacy:metadata'] = 'コンピテンシフレームワークをインポートするプラグインはいかなる個人データも保存しません。';
 $string['processingfile'] = 'ファイルを処理する';
-$string['relatedidnumbers'] = '相互参照付きコンピテンシーIDナンバー';
+$string['relatedidnumbers'] = '相互参照付きコンピテンシIDナンバー';
 $string['ruleconfig'] = 'ルール設定 (任意)';
 $string['ruleoutcome'] = 'ルールアウトカム (任意)';
 $string['ruletype'] = 'ルールタイプ (任意)';

@@ -249,6 +249,7 @@ $string['importparseerror'] = 'Atopáronse erro(s) ao procesar o ficheiro de imp
 $string['importquestions'] = 'Importar preguntas do ficheiro';
 $string['importquestions_help'] = 'Esta función activa preguntas nunha variedade de formatos que importar mediante un ficheiro de texto. Note que o ficheiro debe de usar a codificación UTF-8.';
 $string['importquestions_link'] = 'pregunta/importar';
+$string['importwrongfileencoding'] = 'O ficheiro que seleccionou non usa a codificación de caracteres UTF-8. Os ficheiros {$a} deben usar UTF-8.';
 $string['importwrongfiletype'] = 'O tipo de ficheiro que seleccionou ({$a->actualtype}) non coincide co tipo esperado por este formato de importación ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Detectouse o carácter imposíbel {$a} como carácter de paréntese';
 $string['includesubcategories'] = 'Amosar tamén preguntas de subcategorías';

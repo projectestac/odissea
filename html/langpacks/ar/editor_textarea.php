@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'منطقة نصية عادية';
-$string['privacy:metadata'] = 'إن ملحق محرر منطقة النص العادي لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة محرر منطقة النص العادي لا تخزن أي بيانات شخصية.';

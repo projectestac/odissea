@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configlog'] = 'تغييرات التهيئة';
 $string['datefrom'] = 'التاريخ من';
 $string['dateto'] = 'التاريخ إلى';
-$string['plugin'] = 'الملحق';
+$string['plugin'] = 'الإضافة';
 $string['pluginname'] = 'تغييرات التهيئة';
 $string['privacy:metadata'] = 'إن ملحق تغييرات التهيئة لا يخزن أي بيانات شخصية.';
 $string['setting'] = 'الإعداد';

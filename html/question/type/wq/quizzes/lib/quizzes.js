@@ -15724,7 +15724,7 @@ com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent = $hxClasses["com.wir
 	var mtParams = new Hash();
 	mtParams.set("flexEditor","true");
 	this.mathtype = new com.wiris.quizzes.impl.ui.component.MathTypeInputComponent(mtParams,false);
-	this.mathtype.setId("mainMathField").getStyle().setMaxWidthWithUnit(100,com.wiris.util.ui.Style.SIZE_UNIT_PERCENT).setWidthWithUnit(100,com.wiris.util.ui.Style.SIZE_UNIT_PERCENT);
+	this.mathtype.addClass(com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent.CLASS_MAIN_COMPONENT_MATHTYPE).setId("mainMathField").getStyle().setMaxWidthWithUnit(100,com.wiris.util.ui.Style.SIZE_UNIT_PERCENT).setWidthWithUnit(100,com.wiris.util.ui.Style.SIZE_UNIT_PERCENT);
 	this.mathtype.setChangeAction(new com.wiris.util.ui.Action(com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent.ACTION_MAIN_CONTENT_CHANGED,null));
 	this.mathtype.addActionListener(controller);
 	this.textField = com.wiris.util.ui.component.TextField.newWithLabel(controller.t(com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent.HOME_CORRECT_ANSWER_BUTTON_TEXT));
@@ -44447,6 +44447,7 @@ com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent.ACTION_MAIN_CONTENT_C
 com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent.ACTION_INITIAL_CONTENT_SELECTED = "initialContentSelected";
 com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent.ACTION_CORRECT_ANSWER_SELECTED = "correctAnswerSelected";
 com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent.CLASS_CORRECT_ANSWER_COMPONENT = "quizzesStudioCorrectAnswerComponent";
+com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent.CLASS_MAIN_COMPONENT_MATHTYPE = "mainComponentMathtype";
 com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent.CORRECT_ANSWER_SELECTABLE_ID = "correctAnswer";
 com.wiris.quizzes.impl.ui.component.CorrectAnswerComponent.INITIAL_CONTENT_SELECTABLE_ID = "initialContent";
 com.wiris.quizzes.impl.ui.component.CustomizeToolbarComponent.CUSTOMIZE_TOOLBAR_LABEL = "quizzes_studio_customize_graph_toolbar_label";

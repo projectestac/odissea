@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cleanuptask'] = 'Задача очистки для блока последних действий';
 $string['pluginname'] = 'Последние действия';
 $string['privacy:metadata'] = 'Блок «Последние действия» содержит кэш данных, хранящиеся в другом месте в Moodle.';
 $string['privacy:metadata:block_recent_activity'] = 'Временный журнал последних действий учителя. Удаляется через два дня';

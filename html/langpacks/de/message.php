@@ -69,7 +69,7 @@ $string['disableall'] = 'Systemnachrichten deaktivieren';
 $string['disabled'] = 'Mitteilungen sind für diese Website deaktiviert.';
 $string['disallowed'] = 'Deaktiviert';
 $string['editmessages'] = 'Mitteilungen bearbeiten';
-$string['emailtagline'] = 'Dies ist die Kopie einer Mitteilung von \'{$a->sitename}\'. Antworten Sie über {$a->url}';
+$string['emailtagline'] = 'Dies ist eine Kopie einer Mitteilung, die Ihnen auf der Website "{$a->sitename}" gesendet wurde. Gehen Sie zu <a href="{$a->url}">{$a->url}</a>, um zu antworten.';
 $string['enabled'] = 'Aktiviert';
 $string['errorcallingprocessor'] = 'Fehler bei der angegebenen Ausgabe';
 $string['errorconversationdoesnotexist'] = 'Diese Kommunikation gibt es nicht.';

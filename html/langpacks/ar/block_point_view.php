@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['contentinputlabel'] = 'محتوى الكتلة';
-$string['defaulttextcontent'] = 'يعطي هذا الملحق إمكانية التفاعل وتعيين مستويات الصعوبة للنشاطات.<br/><br/>تم تطوير هذا الملحق من قبل <a href=\'mailto:q.fombaron@outlook.fr?subject="Reaction"%20Moodle%20plugin%20-%20Feedback\'>Quentin Fombaron</a>.<br /><br />يمكنك تحرير هذا النص أو حذفه في قائمة تهيئة الكتلة.<br /><br />';
+$string['defaulttextcontent'] = 'تعطي هذه الإضافة إمكانية التفاعل وتعيين مستويات الصعوبة للنشاطات.<br/><br/>تم تطوير هذا الإضافة من قبل <a href=\'mailto:q.fombaron@outlook.fr?subject="Reaction"%20Moodle%20plugin%20-%20Feedback\'>Quentin Fombaron</a>.<br /><br />يمكنك تحرير هذا النص أو حذفه في قائمة تهيئة الكتلة.<br /><br />';
 $string['emojidesc'] = 'وصف الرمز التعبيري';
 $string['errorfilemanager'] = '<b>خطأ</b> : تسمية <b>{$a}.png</b> ليست كما تبدو أدناه';
 $string['greentrack'] = 'المسار الأخضر';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Quedoc-Quelldateien';
+$string['privacy:metadata'] = 'Das Modul "Quedoc-Quelldateien" speichert keine personenbezogenen Daten.';

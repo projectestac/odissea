@@ -38,5 +38,5 @@ $string['pluginnameadding'] = 'Een waar/niet waar-vraag toevoegen';
 $string['pluginnameediting'] = 'Een  waar/niet waar-vraag bewerken';
 $string['pluginnamesummary'] = 'Een eenvoudige vorm van meerkeuzevraag met slechts twee keuzes: waar of niet waar';
 $string['privacy:metadata'] = 'De waar/niet waar vraagtype-plugin bewaart geen persoonlijke gegevens.';
-$string['selectone'] = 'Kies het juiste antwoord uit de volgende mogelijkheden:';
+$string['selectone'] = 'Kies één:';
 $string['true'] = 'Waar';

@@ -31,7 +31,7 @@ $string['activitydate:due'] = 'Entregatze-data:';
 $string['activityoverview'] = 'Mezu berriak daude foroan';
 $string['addanewdiscussion'] = 'Gehitu eztabaidagai berria';
 $string['addanewquestion'] = 'Gehitu galdera berria';
-$string['addanewtopic'] = 'Gehitu gai berria';
+$string['addanewtopic'] = 'Gehitu eztabaidagai berria';
 $string['addtofavourites'] = 'Markatu eztabaida gogoko gisa';
 $string['advancedsearch'] = 'Bilaketa aurreratua';
 $string['alldiscussions'] = 'Eztabaida guztiak';
@@ -343,7 +343,7 @@ $string['forumtype'] = 'Foro mota';
 $string['forumtype_help'] = '5 foro-mota daude:
 
 * Eztabaida arrunt bakarra: eztabaidagai bakarra dago eta bertan edozeinek erantzun dezake (ez du funtzionatzen banatutako taldeekin).
-* Pertsona bakoitzak eztabaida bat bidaltzen du: pertsona bakoitzak eztabaida gai berri bakar bat bidali dezake eta guztiek erantzun dezakete.
+* Pertsona bakoitzak eztabaida bat bidaltzen du: pertsona bakoitzak eztabaidagai berri bakar bat bidali dezake eta guztiek erantzun dezakete.
 * Galdera eta Erantzuna motako foroa: ikasleek euren mezua bidali behar dute beste ikasleen mezuak ikusi ahal izateko.
 * Blog formatuan erakutsitako erabilera arrunteko foroa: edozeinek edonoiz eztabaidagai berriak sortu ditzakeen foro irekia. Eztabaidagaiak "Eztabaidatu gai hau" estekarekin agertuko dira orrian
 * Erabilera orokorreko foro arrunta: foro irekia da, eta bertan edozeinek edonoiz eztabaidagai berriak sortu ditzake';
@@ -513,7 +513,7 @@ $string['nowtracking'] = '{$a->name}(e)k irakurri gabekoak nabarmentzea erabaki 
 $string['numberofreplies'] = 'Erantzun kopurua: {$a}';
 $string['numposts'] = '{$a} mezu';
 $string['olderdiscussions'] = 'Eztabaida zaharragoak';
-$string['oldertopics'] = 'Gai zaharragoak';
+$string['oldertopics'] = 'Eztabaidagai zaharragoak';
 $string['oldpostdays'] = 'Mezu zaharrak irakurritzat markatu';
 $string['overviewnumpostssince'] = '{$a} mezu azken sarreratik';
 $string['overviewnumunread'] = '{$a} mezu irakurri gabe';
@@ -630,7 +630,7 @@ $string['pruneheading'] = 'Bereizi eztabaida eta mugitu mezu hau eztabaida berri
 $string['qandaforum'] = 'G eta E foroa';
 $string['qandanotify'] = 'Foro hau galdera-erantzun motakoa da. Beste erantzun batzuk ikusi ahal izateko, aurretik zeure erantzuna bidali behar duzu';
 $string['re'] = 'Er:';
-$string['readtherest'] = 'Irakurri gai osoa';
+$string['readtherest'] = 'Irakurri eztabaidagai osoa';
 $string['removeallforumtags'] = 'Ezabatu foroaren etiketa guztiak';
 $string['removefromfavourites'] = 'Kendu eztabaida honen gogoko marka';
 $string['replies'] = 'Erantzunak';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['apikey'] = 'مفتاح واجهة برمجة التطبيق';
 $string['contenttype'] = 'أنواع المحتوى';
 $string['err_noapikey'] = 'لا يوجد مفتاح واجهة برمجة التطبيق';
-$string['err_noapikey_help'] = 'لم يتم تعريف مفتاح واجهة برمجة التطبيق لهذا الملحق. يمكنك الحصول على واحد منها من صفحة خدمات Flickr.';
+$string['err_noapikey_help'] = 'لم يتم تعريف مفتاح واجهة برمجة التطبيق لهذه الإضافة. يمكنك الحصول على واحد منها من صفحة خدمات Flickr.';
 $string['hidefrompublicsearches'] = 'أتريد إخفاء هذه الصور عن عمليات البحث العامة؟';
 $string['isfamily'] = 'للعائلة';
 $string['isfriend'] = 'مرئي للأصدقاء';
@@ -38,7 +38,7 @@ $string['noauthtoken'] = 'تعذر استرجاع ترميز المصادقة ل
 $string['other'] = 'صور فنية، تخطيطات، رسوم مولدة حاسوبياً وغيرها من الصور غير الفوتوغرافية';
 $string['photo'] = 'الصور';
 $string['pluginname'] = 'Flickr.com';
-$string['privacy:metadata'] = 'هذا الملحق يرسل البيانات خارجياً إلى حساب Flickr مرتبط. هو لا يحفظ البيانات محلياً';
+$string['privacy:metadata'] = 'هذه الإضافة ترسل البيانات خارجياً إلى حساب Flickr مرتبط. هو لا يحفظ البيانات محلياً';
 $string['privacy:metadata:data'] = 'البيانات الشخصية المُمرَّرة عبر نظام المحفظة الفرعي';
 $string['restricted'] = 'مُقيَّد';
 $string['safe'] = 'آمن';

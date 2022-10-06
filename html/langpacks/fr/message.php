@@ -69,7 +69,7 @@ $string['disableall'] = 'Désactiver les notifications';
 $string['disabled'] = 'La messagerie personnelle est désactivée sur ce site';
 $string['disallowed'] = 'Non autorisé';
 $string['editmessages'] = 'Modifier les messages';
-$string['emailtagline'] = 'Ce courriel est la copie d\'un message personnel qui vous a été envoyé sur « {$a->sitename} ». Pour y répondre, visitez {$a->url}.';
+$string['emailtagline'] = 'Ceci est une copie d\'un message qui vous a été envoyé sur le site {$a->sitename}. Pour répondre, visitez <a href="{$a->url}">{$a->url}</a>.';
 $string['enabled'] = 'Activé';
 $string['errorcallingprocessor'] = 'Erreur lors de l\'appel de la notification définie';
 $string['errorconversationdoesnotexist'] = 'La conversation n\'existe pas';

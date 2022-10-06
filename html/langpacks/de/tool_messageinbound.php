@@ -71,12 +71,12 @@ $string['messageinboundhosttype'] = 'Servertyp';
 $string['messageinboundhostuser'] = 'Nutzername';
 $string['messageinboundhostuser_desc'] = 'Diesen Nutzernamen haben Sie für den Login zum E-Mail-Postfach hinterlegt.';
 $string['messageinboundmailboxconfiguration_desc'] = 'Wenn Mitteilungen versandt werden, nutzen Sie das Format address+data@example.com. Um zuverlässige E-Mail-Adressen zu erzeugen legen Sie die Adressen, die Sie vor und nach dem @-Zeichen verwenden, getrennt an.  Der Mailboxname in dem Beispiel oben wäre \'address\' und die E-Mail-Domain lautet \'example.com\'. Verwenden Sie für diesen Zweck eine gesonderte E-Mail-Adresse.';
-$string['messageprocessingerror'] = 'Sie haben vor kurzem Eine E-Mail mit dem Betreff  "{$a->subject}" versandt. Diese konnte nicht zugestellt werden.
+$string['messageprocessingerror'] = 'Sie haben vor kurzem eine E-Mail "{$a->subject}" versendet. Diese konnte leider nicht zugestellt werden.
 
 Die Gründe hierfür stehen hier unten.
 
 {$a->error}';
-$string['messageprocessingerrorhtml'] = '{$a->error}<p>Sie haben vor kurzem eine E-Mail mit dem Betreff "{$a->subject}" versandt.  Diese konnte nicht zugestellt werden.</p>
+$string['messageprocessingerrorhtml'] = '<p>Sie haben vor kurzem eine E-Mail "{$a->subject}" versendet. Diese konnte leider nicht zugestellt werden.</p>
 <p>Die Gründe dafür stehen hier unten.</p>
 <p>{$a->error}</p>';
 $string['messageprocessingfailed'] = 'Die E-Mail \'{$a->subject}\' konnte nicht verarbeitet werden. Folgender Fehler ist aufgetreten: \'{$a->message}\'.';

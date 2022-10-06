@@ -86,7 +86,7 @@ $string['hidestudentresponses'] = 'Antworten verbergen';
 $string['highestsessiongrade'] = 'Beste Bewertung der Sitzung';
 $string['indvquestiontime'] = 'Zeit für die Frage';
 $string['indvquestiontime_help'] = 'Zeit für die Frage in Sekunden';
-$string['instructorquizinst'] = '<p>Bitte bleiben Sie auf dieser Seite, bis alle Ihre Studenten verbunden sind.  Sobald <b>Test starten</b> gedrückt wurde, beginnt dieser mit der ersten Frage.</p>
+$string['instructorquizinst'] = '<p>Bitte bleiben Sie auf dieser Seite, bis alle Ihre Zeilnehmer/innen verbunden sind.  Sobald <b>Test starten</b> gedrückt wurde, beginnt dieser mit der ersten Frage.</p>
     <p>
 <p>Bedienelemente:</p>
     <ul>
@@ -94,7 +94,7 @@ $string['instructorquizinst'] = '<p>Bitte bleiben Sie auf dieser Seite, bis alle
             Frage erneut stellen
             <ul>
                 <li>
-                    Erlaubt es dem Trainer die aktuelle oder vorherige Frage erneut zu stellen (verfügbar während der Überprüfung einer Frage).
+                    Erlaubt es Trainerinnen, die aktuelle oder vorherige Frage erneut zu stellen (verfügbar während der Überprüfung einer Frage).
                 </li>
             </ul>
         </li>
@@ -110,7 +110,7 @@ $string['instructorquizinst'] = '<p>Bitte bleiben Sie auf dieser Seite, bis alle
             Frage beenden
             <ul>
                 <li>
-                    Beendet die aktuelle Frage. Erlaubt es dem Dozenten auch eine Frage mit einer Zeitvorgabe früher zu beenden (verfügbar während eine Frage läuft). <i>Wenn die Frage kein Zeitlimit hat, muss der Trainer auf <b>Frage beenden</b> klicken.</i>
+                    Beendet die aktuelle Frage. Erlaubt es Trainer/innen auch eine Frage mit einer Zeitvorgabe früher zu beenden (verfügbar während eine Frage läuft). <i>Wenn die Frage kein Zeitlimit hat, muss der Trainer auf <b>Frage beenden</b> klicken.</i>
                 </li>
             </ul>
         </li>
@@ -118,7 +118,7 @@ $string['instructorquizinst'] = '<p>Bitte bleiben Sie auf dieser Seite, bis alle
             Gehe zur Frage
             <ul>
                 <li>
-                    Öffnet eine Dialogbox mit der alle Nutzer direkt zu einer spezifischen Frage im Test geleitet werden können (verfügbar während der Überprüfung einer Frage).
+                    Öffnet eine Dialogbox mit der alle Nutzer/innen direkt zu einer spezifischen Frage im Test geleitet werden können (verfügbar während der Überprüfung einer Frage).
                 </li>
             </ul>
         </li>
@@ -126,7 +126,7 @@ $string['instructorquizinst'] = '<p>Bitte bleiben Sie auf dieser Seite, bis alle
             Sitzung schließen
             <ul>
                 <li>
-                    Schließt die aktuelle Sitzung als auch alle Versuche für die Studenten. Dies wird automatisch alle Versuche bewerten (jederzeit verfügbar).
+                    Schließt die aktuelle Sitzung als auch alle Versuche für die Teilnehmer/innen. Dies wird automatisch alle Versuche bewerten (jederzeit verfügbar).
                 </li>
             </ul>
         </li>
@@ -134,7 +134,7 @@ $string['instructorquizinst'] = '<p>Bitte bleiben Sie auf dieser Seite, bis alle
             Ergebnisse neu laden
             <ul>
                 <li>
-                    Lädt die Antworten der Studenten in der Informationsbox neu. Erlaubt es dem Trainer zu sehen, wie viele Studenten oder Gruppen bereits geantwortet haben (verfügbar während der Überprüfung einer Frage).
+                    Lädt die Antworten der Teilnehmer/innen in der Informationsbox neu. Erlaubt es Trainer/innen zu sehen, wie viele Teilnehmer/innen oder Gruppen bereits geantwortet haben (verfügbar während der Überprüfung einer Frage).
                 </li>
             </ul>
         </li>
@@ -142,7 +142,7 @@ $string['instructorquizinst'] = '<p>Bitte bleiben Sie auf dieser Seite, bis alle
             Verstecke / zeige nicht geantwortet
             <ul>
                 <li>
-                    Versteckt oder zeigt die Informationsbox an,  wie viele Studenten oder Gruppen genatwortet haben und wie viele noch antworten müssen (verfügbar währen die Frage gestellt wird).
+                    Versteckt oder zeigt die Informationsbox an,  wie viele Teilnehmer/innen oder Gruppen genatwortet haben und wie viele noch antworten müssen (verfügbar während die Frage gestellt wird).
                 </li>
             </ul>
         </li>

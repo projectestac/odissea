@@ -25,5 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allgroups'] = 'Статистика для всех групп офлайн-теста';
 $string['correct'] = 'Отвечено правильно';
+$string['maxgrade'] = 'Максимальная достижимая оценка';
+$string['offlinequizname'] = 'Название офлайн-теста';
+$string['questionandanswerstats'] = 'Вопросы + Ответы';
+$string['questionandanswerstatsheader'] = 'Статистика - анализ вопросов и ответов';
+$string['questionstats'] = 'Анализ вопросов';
+$string['questionstatsheader'] = 'Статистика - Анализ вопросов';
 $string['statistics:view'] = 'Просматривать статистический отчёт';
+$string['statisticsforgroup'] = 'Статистика для группы';
+$string['statsoverview'] = 'Обзор';
+$string['statsoverviewheader'] = 'Обзор';

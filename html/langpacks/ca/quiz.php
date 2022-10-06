@@ -36,7 +36,7 @@ $string['addarandomquestion'] = 'Afegeix una pregunta aleatòria...';
 $string['addarandomquestion_help'] = 'Quan s\'afegeix una pregunta aleatòria, això dóna com a resultat una pregunta escollida a l\'atzar de la categoria que s\'insereix al qüestionari. Això vol dir que és probable que diferents estudiants rebin una selecció diferent de preguntes. A més, quan un qüestionari permet intents múltiples, aleshores és probable que cada intent incorpori una nova selecció de preguntes.';
 $string['addarandomselectedquestion'] = 'Afegeix una pregunta seleccionada a l\'atzar...';
 $string['addasection'] = 'una nova capçalera de secció';
-$string['adddescriptionlabel'] = 'Afegeix una descripció/etiqueta';
+$string['adddescriptionlabel'] = 'Afegeix un element de descripció';
 $string['addingquestion'] = 'S\'està afegint una pregunta';
 $string['addingquestions'] = 'Des d\'aquesta part de la pàgina podeu gestionar la vostra base de dades de preguntes. Les preguntes s\'emmagatzemen en categories per tal de mantenir-les organitzades, i es poden utilitzar en qualsevol qüestionari del vostre curs o fins i tot en altres cursos si trieu de «publicar-les». <br /><br />Després de seleccionar o crear una categoria podreu crear o editar preguntes. Podeu seleccionar qualsevol d\'aquestes preguntes per afegir-la al qüestionari a l\'altra part de la pàgina.';
 $string['addmoreoverallfeedbacks'] = 'Afegeix més camps de retroacció';
@@ -91,12 +91,18 @@ $string['attemptclosed'] = 'Aquest intent encara s\'ha d\'acabar.';
 $string['attemptduration'] = 'Temps emprat';
 $string['attemptedon'] = 'Intentat el';
 $string['attempterror'] = 'No podeu contestar aquest qüestionari en aquest moment perquè: {$a}';
+$string['attempterrorcontentchange'] = 'Aquesta previsualització del qüestionari ja no existeix. (Quan s\'edita un qüestionari, qualsevol previsualització en progrés se suprimeix automàticament.)';
+$string['attempterrorcontentchangeforuser'] = 'Aquest intent del qüestionari ja no existeix.';
+$string['attempterrorinvalid'] = 'L\'ID de l\'intent del qüestionari no és vàlid';
 $string['attemptfirst'] = 'Primer intent';
 $string['attemptincomplete'] = 'Aquest intent ({$a}) encara no s\'ha completat.';
 $string['attemptlast'] = 'Darrer intent';
 $string['attemptnumber'] = 'Intent';
 $string['attemptquiznow'] = 'Contesta el qüestionari ara';
+$string['attemptreviewtitle'] = '{$a}: Revisió de l\'intent';
+$string['attemptreviewtitlepaged'] = '{$a->name}: Revisió de l\'intent (pàgina {$a->currentpage} de {$a->totalpages})';
 $string['attempts'] = 'Intents';
+$string['attempts_help'] = 'El nombre total d\'intents permesos (no el nombre d\'intents extra)';
 $string['attemptsallowed'] = 'Intents permesos';
 $string['attemptsdeleted'] = 'S\'han suprimit els intents del qüestionari';
 $string['attemptselection'] = 'Seleccioneu quins intents voleu analitzar per usuari';
@@ -107,9 +113,13 @@ $string['attemptsnumyourgroups'] = 'Intents: {$a->total} ({$a->group} dels vostr
 $string['attemptsonly'] = 'Mostra només els estudiants amb intents';
 $string['attemptstate'] = 'Estat';
 $string['attemptstillinprogress'] = 'Intent encara en curs';
+$string['attemptsummarytitle'] = '{$a}: Resum de l\'intent';
 $string['attemptsunlimited'] = 'Intents il·limitats';
+$string['attempttitle'] = '{$a}';
+$string['attempttitlepaged'] = '{$a->name} (pàgina {$a->currentpage} de {$a->totalpages})';
 $string['autosaveperiod'] = 'Període d\'autodesament';
-$string['autosaveperiod_desc'] = 'Les respostes dels estudiants es poden desar automàticament cada pocs minuts durant els intents dels qüestionaris. Això implica un compromís: Desar les respostes augmenta la càrrega del servidor, però redueix la possibilitat que els estudiants perdin la feina.';
+$string['autosaveperiod_desc'] = 'Les respostes es poden desar automàticament durant els intents dels qüestionaris.
+Les repsostes es desen quan una es canvia i també passat aquest retard. Hi ha un terme intermedi: un retard més curt incrementa la càrrega del servidor, però redueix la possibilitat que els estudiants perdin la feina. Si voleu reduir aquest retard, haureu de canviar el valor gradualment i fer el seguiment de la càrrega del servidor. Si la càrrega es torna massa alta, feu el retard més llarg de nou. Deixar el retard a 0 desactiva el desat automàtic.';
 $string['back'] = 'Torna a la previsualització de la pregunta';
 $string['backtocourse'] = 'Torna al curs';
 $string['backtoquestionlist'] = 'Torna a la llista de preguntes';
@@ -137,6 +147,8 @@ $string['cannotinsertrandomquestion'] = 'No s\'ha pogut inserir una nova pregunt
 $string['cannotloadquestion'] = 'No es poden carregar les opcions de la pregunta';
 $string['cannotloadtypeinfo'] = 'No es pot trobar informació específica sobre aquest tipus de pregunta';
 $string['cannotopen'] = 'No es pot obrir el fitxer d\'exportació ({$a})';
+$string['cannotremoveallsectionslots'] = 'Heu triat totes les preguntes sota l\'encapçalament de la secció \'{$a}\'. No es permet suprimir totes les preguntes sota un encapçalament de secció.';
+$string['cannotremoveslots'] = 'No es poden suprimir les preguntes';
 $string['cannotrestore'] = 'No es pot restaurar la sessió';
 $string['cannotreviewopen'] = 'No podeu revisar aquest intent, encara està obert.';
 $string['cannotsavelayout'] = 'No es pot desar el format';
@@ -155,7 +167,7 @@ Aquest paràmetre sols afecta a les preguntes (per exemple NO afecta a les pregu
 $string['canredoquestions_help'] = 'Si s\'habilita, aleshores, quan els alumnes han acabat de respondre a una pregunta concreta, veuen el botó Torna a respondre a la pregunta. Aquest els permet tornar a respondre a una altra versió de la mateixa pregunta, sense que hagin de trametre tot l\'intent del qüestionari i començar-ne un altre. Aquesta opció és útil sobretot per als qüestionaris de pràctiques.
 
 Aquest paràmetre només afecta les preguntes (per exemple, les que no siguin de resposta oberta) i els comportaments (per exemple: retroacció immediata, o mode interactiu amb diversos intents) en els quals sigui possible que l\'estudiant acabi de respondre a la pregunta abans de trametre l\'intent.';
-$string['canredoquestionsyes'] = 'Els estudiants poden tornar a respondre a qualsevol pregunta acabada';
+$string['canredoquestionsyes'] = 'Sí, proporciona l\'opció de respondre una altra pregunta.';
 $string['caseno'] = 'No distingeix majúscules i minúscules';
 $string['casesensitive'] = 'Distingeix majúscules';
 $string['caseyes'] = 'Distingeix majúscules i minúscules';
@@ -174,10 +186,18 @@ $string['comments'] = 'Comentaris';
 $string['completedon'] = 'Completat el';
 $string['completionattemptsexhausted'] = 'O que tots els intents disponibles s\'hagin completat';
 $string['completionattemptsexhausted_help'] = 'Marca el qüestionari com a completat quan l\'estudiant hagi exhaurit el nombre màxim d\'intents.';
+$string['completionattemptsexhausteddesc'] = 'Completa si s\'han exhaurit tots els intents disponibles';
+$string['completiondetail:minattempts'] = 'Contesta intents: {$a}';
 $string['completiondetail:passgrade'] = 'Rebre una nota d\'aprovat';
 $string['completiondetail:passorexhaust'] = 'Rebre una nota d\'aprovat o completar tots els intents disponibles';
+$string['completionminattempts'] = 'Nombre d\'intents mínims:';
+$string['completionminattemptsdesc'] = 'Nombre d\'intents mínims requerits: {$a}';
+$string['completionminattemptserror'] = 'El nombre d\'intents mínims ha de ser inferior o igual als intents permesos.';
+$string['completionminattemptsgroup'] = 'Intents requerits';
 $string['completionpass'] = 'Exigeix un aprovat';
-$string['completionpass_help'] = 'Si s\'habilita, aquesta activitat es considera completada quan l\'estudiant obté un aprovat; aquesta nota aprovada ha de figurar al llibre de qualificacions.';
+$string['completionpass_help'] = 'Si s\'habilita, aquesta activitat es considera completada quan l\'estudiant obté un aprovat o més (tal i com s\'especifica en la secció de Qualificació dels paràmetres del qüestionari.';
+$string['completionpassdesc'] = 'L\'estudiant ha d\'aconseguir un aprovat per a completar l\'activitat';
+$string['completionpassorattemptsexhausteddesc'] = 'L\'estudiant ha d\'aconseguir un aprovat o exhaurir tots els intents disponibles per a completar l\'activitat';
 $string['configadaptive'] = 'Si marqueu el Sí en aquesta opció l\'estudiant podrà intentar respondre diverses vegades una pregunta durant el mateix intent.';
 $string['configattemptsallowed'] = 'Restricció del nombre d\'intents de què disposen els estudiants per resoldre el qüestionari.';
 $string['configdecimaldigits'] = 'Nombre de dígits que es mostraran després del punt decimal en visualitzar les puntuacions.';
@@ -289,25 +309,25 @@ $string['editquestion'] = 'Edita la pregunta';
 $string['editquestions'] = 'Edita preguntes';
 $string['editquiz'] = 'Edita el qüestionari';
 $string['editquizquestions'] = 'Edita preguntes del qüestionari';
-$string['emailconfirmbody'] = '{$a->username},
+$string['emailconfirmbody'] = 'Hola, {$a->username}
 
 Gràcies per trametre les vostres respostes al qüestionari «{$a->quizname}» del curs «{$a->coursename}» a les {$a->submissiontime}.
 
-Aquest correu confirma que s\'han rebut de manera segura les respostes.
+Aquest correu confirma que s\'han desat les vostres respostes.
 
 Podeu accedir a aquest qüestionari a l\'URL {$a->quizurl}.';
 $string['emailconfirmsmall'] = 'Gràcies per trametre les respostes a «{$a->quizname}»';
 $string['emailconfirmsubject'] = 'Confirmació de la tramesa: {$a->quizname}';
-$string['emailnotifybody'] = '{$a->username},
+$string['emailnotifybody'] = 'Hola, {$a->username}
 
 {$a->studentname} ha completat «{$a->quizname}» ({$a->quizurl}) del curs «{$a->coursename}».
 
 Podeu revisar aquest intent a l\'URL {$a->quizreviewurl}.';
 $string['emailnotifysmall'] = '{$a->studentname} ha completat {$a->quizname}. Vegeu {$a->quizreviewurl}';
 $string['emailnotifysubject'] = '{$a->studentname} ha completat {$a->quizname}';
-$string['emailoverduebody'] = '{$a->studentname},
+$string['emailoverduebody'] = 'Hola, {$a->studentname}
 
-Vau començar un intent de «{$a->quizname}» al curs «{$a->coursename}», però mai no el vau trametre. L\'hauríeu d\'haver tramès dia {$a->attemptduedate}.
+Vau començar un intent de «{$a->quizname}» al curs «{$a->coursename}», però mai no el vau trametre. L\'hauríeu d\'haver tramès abans del dia {$a->attemptduedate}.
 
 Si encara voleu trametre aquest intent, aneu a {$a->attemptsummaryurl} i feu clic al botó de tramesa.
 
@@ -335,6 +355,7 @@ $string['eventoverridedeleted'] = 'S\'ha suprimit l\'excepció del qüestionari'
 $string['eventoverrideupdated'] = 'S\'ha actualitzat l\'excepció del qüestionari';
 $string['eventquestionmanuallygraded'] = 'S\'ha qualificat la pregunta de forma manual';
 $string['eventquizattemptabandoned'] = 'S\'ha abandonat l\'intent del qüestionari';
+$string['eventquizattemptregraded'] = 'S\'ha tornat a qualificar l\'intent del qüestionari';
 $string['eventquizattemptstarted'] = 'S\'ha començat l\'intent del qüestionari';
 $string['eventquizattemptsubmitted'] = 'S\'ha tramès l\'intent del qüestionari';
 $string['eventquizattempttimelimitexceeded'] = 'S\'ha excedit el temps límit de l\'intent del qüestionari';
@@ -598,7 +619,7 @@ $string['overrides'] = 'Excepcions';
 $string['overridesforquiz'] = 'Excepcions als paràmetres: {$a}';
 $string['overridesnoneforgroups'] = 'No s\'ha establert cap excepció de grup en aquest qüestionari.';
 $string['overridesnoneforusers'] = 'No s\'ha establert cap excepció d\'usuari en aquest qüestionari.';
-$string['overridessummary'] = 'S\'han establert excepcions ({$a})';
+$string['overridessummary'] = 'S\'han reescrit valors de la configuració ({$a})';
 $string['overridessummarygroup'] = 'Grups: {$a}';
 $string['overridessummarythisgroup'] = 'S\'han establert excepcions ({$a}) per aquest grup';
 $string['overridessummaryuser'] = 'Usuaris: {$a}';

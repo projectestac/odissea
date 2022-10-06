@@ -49,6 +49,7 @@ $string['copy_section_title'] = 'Copiar secção selecionada';
 $string['copyhere'] = 'Copiar para aqui';
 $string['define_required_capabilities'] = 'Defina as permissões necessárias';
 $string['delete_folder'] = '&nbsp;e todo o seu conteúdo';
+$string['drop_here'] = 'Largar aqui...';
 $string['folder_string'] = 'Pasta:';
 $string['forbidden'] = 'Não tem permissões para aceder a este item partilhado';
 $string['inprogess_pleasewait'] = 'Por favor, aguarde...';
@@ -82,7 +83,11 @@ $string['requireajax'] = 'O Carrinho de Partilha requer AJAX';
 $string['requirejs'] = 'O Carrinho de Partilha requer o JavaScript ativado no seu navegador';
 $string['restore'] = 'Copiar para a disciplina';
 $string['restore_heavy_load_warning_message'] = 'O tempo de carregamento é maior porque estão a ser processadas mais de 10 atividades/recursos.';
-$string['section_name_conflict'] = 'Conflito no título da secção';
+$string['section_name_conflict'] = 'Conflito de secções';
+$string['settings:add_to_sharing_cart'] = 'Adicionar ao carrinho';
+$string['settings:add_to_sharing_cart_desc'] = 'Escolha entre o método de arrastar e largar ou clicar para adicionar módulos e secções ao carrinho de partilha.';
+$string['settings:click_to_add'] = 'Clique para adicionar';
+$string['settings:drag_and_drop'] = 'Arrastar e largar';
 $string['settings:userdata_copyable_modtypes'] = 'Tipo de módulos com dados de utilizador copiáveis';
 $string['settings:userdata_copyable_modtypes_desc'] = 'Ao copiar uma atividade para o Carrinho de Partilha, uma caixa de diálogo aparece a perguntar se pretende incluir, ou não, os dados de utilizador na cópia.
 Se o tipo de módulo estiver marcado acima e o utilizador tiver as permissões: <strong>moodle/backup:userinfo</strong>, <strong>moodle/backup:anonymise</strong> e  <strong>moodle/restore:userinfo</strong> (por predefinição, apenas o papel de Gestor tem  estas permissões), os dados serão incluídos .';
@@ -105,5 +110,5 @@ Será exibida uma caixa de entrada de texto para o novo nome da pasta, se ainda 
 Também pode selecionar uma pasta existente na lista pendente, que será substituída por uma caixa de entrada de texto, se clicar no ícone "Editar".</p>
 </div>';
 $string['unexpectederror'] = 'Ocorreu um erro inesperado';
-$string['uninstalled_plugin_warning_title'] = 'Este módulo está desinstalado. Tentar recuperar estes dados sem reinstalar o módulo \'{$a}\' causará erros. O restauro está desativado';
+$string['uninstalled_plugin_warning_title'] = 'Este módulo está desinstalado. Tentar recuperar estes dados sem reinstalar o módulo \'{$a}\' causará erros. O restauro está desativado.';
 $string['variouscourse'] = 'de várias disciplinas';

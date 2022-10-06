@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Menu field';
-$string['pluginname'] = 'Menu';
-$string['privacy:metadata'] = 'The Menu field component does not store any personal data, it uses tables defined in mod_data.';
+$string['fieldtypelabel'] = 'Dropdown list';
+$string['pluginname'] = 'Dropdown list';
+$string['privacy:metadata'] = 'The Dropdown list field component doesn\'t store any personal data; it uses tables defined in mod_data.';

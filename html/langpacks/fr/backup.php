@@ -38,7 +38,7 @@ $string['asyncemailenable'] = 'Activer les messages de notification';
 $string['asyncemailenabledetail'] = 'Si ce réglage est activé, les utilisateurs recevront un message lorsqu\'une sauvegarde ou une restauration asynchrone se termine.';
 $string['asyncgeneralsettings'] = 'Sauvegarde/restauration asynchrone';
 $string['asyncmessagebody'] = 'Message';
-$string['asyncmessagebodydefault'] = 'Bonjour {user_firstname},<br />Votre {operation} (ID : {backupid}) s\'est terminée correctement.<br /><br />Vous pouvez la trouver ici : {link}.';
+$string['asyncmessagebodydefault'] = 'Votre {operation} (ID : {backupid}) s\'est terminée correctement. Vous pouvez la trouver ici : <a href="{link}">{link}</a>.';
 $string['asyncmessagebodydetail'] = 'Message à envoyer au terme d\'une sauvegarde ou d\'une restauration asynchrone.';
 $string['asyncmessagesubject'] = 'Objet';
 $string['asyncmessagesubjectdefault'] = '{operation} de Moodle terminée correctement';
@@ -174,7 +174,7 @@ $string['copycoursedesc'] = 'Ce cours sera dupliqué et placé dans la catégori
 $string['copycourseheading'] = 'Copier un cours';
 $string['copycoursetitle'] = 'Copier le cours : {$a}';
 $string['copydest'] = 'Destination';
-$string['copyfieldnotfound'] = 'Un champ requis n\'a pas été trouvé';
+$string['copyfieldnotfound'] = 'Un champ requis n\'a pas été trouvé pour {$a}';
 $string['copyformfail'] = 'L\'envoi du formulaire de copie de cours a échoué.';
 $string['copyingcourse'] = 'Copie de cours en cours';
 $string['copyingcourseshortname'] = 'copie en cours';

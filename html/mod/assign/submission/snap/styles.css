@@ -1,0 +1,65 @@
+/* Style the navigation bar */
+.snap-navbar_snap {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+/* Style plugin button */
+.snap-button_snap {
+    width: 112px;
+    height: 43px;
+    background-color: #555;
+}
+
+/* Navbar and Plugin button links and icons */
+.snap-navbar_snap a,
+.snap-button_snap a {
+    float: left;
+    text-align: center;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.snap-navbar_snap a i,
+.snap-button_snap a i {
+    color: white;
+}
+
+.snap-navbar_snap a:hover,
+.snap-button_snap a:hover {
+    background-color: #000;
+}
+
+.snap-navbar_snap a:not([class]):focus,
+.snap-button_snap a:not([class]):focus {
+    background-color: #555;
+    box-shadow: none;
+}
+
+.snap-navbar_snap img.icon,
+.snap-button_snap img.icon {
+    float: left;
+    padding: 5px 0 5px 15px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.snap-readonlyWarning_snap {
+    float: left;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding-top: 14px;
+}
+
+/* To hide button or snap container */
+.snap-hidden_snap {
+    position: absolute;
+    left: -5000px;
+}
+

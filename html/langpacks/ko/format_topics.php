@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['currentsection'] = '이 주제';
+$string['deletesection'] = '토픽 삭제';
+$string['editsection'] = '토픽 수정';
+$string['editsectionname'] = '토픽 이름 수정';
 $string['hidefromothers'] = '토픽 숨김';
 $string['page-course-view-topics'] = '토픽형식으로 모든 강좌의 주 페이지';
 $string['page-course-view-topics-x'] = '토픽 형식의 모든 강좌';

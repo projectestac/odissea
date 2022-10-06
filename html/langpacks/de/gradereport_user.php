@@ -31,5 +31,5 @@ $string['otheruser'] = 'Nutzer/in';
 $string['pluginname'] = 'Teilnehmendenübersicht';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Ob der Bericht als derzeitiger Nutzer  oder für anderen Nutzer angezeigt wird';
 $string['tablesummary'] = 'Die Tabelle enthält eine Übersicht über die bewerteten Aktivitäten mitsamt den Kategorien für Bewertungen. Werte, die Kategorien hinterlegt wurden, werden in diese auch angezeigt.';
-$string['user:view'] = 'Eigene Bewertungen sehen';
+$string['user:view'] = 'Eigene Bewertungen anzeigen';
 $string['viewas'] = 'Report anzeigen als';

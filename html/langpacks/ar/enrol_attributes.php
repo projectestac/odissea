@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['privacy:metadata'] = 'إن ملحق الانضمام حسب حقول المستخدم لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة الانضمام حسب حقول المستخدم لا تخزن أي بيانات شخصية.';

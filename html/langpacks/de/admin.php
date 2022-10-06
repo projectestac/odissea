@@ -171,7 +171,7 @@ Falls das Feld leer bleibt, wird die gesamte Liste aus der Datei countries.php i
 Dies ist die Liste gemäß ISO 3166-1.
 Über eine kommagetrennte Liste können Sie die Auswahlmöglichkeiten einschränken, z.B. \'GB,FR,ES\'.
 Falls Sie weitere Codes ergänzen möchten, so müssen Sie diese Codes in der Datei countries.php in Ihrem Sprachpaket hinzufügen.';
-$string['configallowassign'] = 'Die linksseitig genannten Rolleninhaber dürfen alle rechts in den Spalten markierten Rollen an andere Nutzer/innen zuweisen.';
+$string['configallowassign'] = 'Wählen Sie für jede Rolle in der linken Spalte aus, welche Rollen sie anderen zuweisen können.';
 $string['configallowattachments'] = 'Diese Option legt fest, ob E-Mail-Mitteilungen auch Anhänge haben können (z.B. Badges).';
 $string['configallowblockstodock'] = 'Diese Option legt fest, ob Nutzer/innen die Blöcke in ein spezielles Dock ablegen können, wobei nicht alle Designs diese Möglichkeit unterstützen.';
 $string['configallowcategorythemes'] = 'Wenn Sie diese Option aktivieren, können Designs auf Kategorieebene gesetzt werden. Dies wirkt sich gleichzeitig auf alle Unterkategorien und Kurse aus, falls diese nicht wiederum eigene Designs verwenden. Achtung: Kategorie-Designs können zu einer Reduzierung der Arbeitsgeschwindigkeit führen!!';
@@ -186,14 +186,14 @@ $string['configallowemojipickerincompatible'] = 'Ihre aktuelle Datenbankkonfigur
 $string['configallowguestmymoodle'] = 'Diese Option erlaubt Gästen den Zugriff auf das Dashboard. Andernfalls werden Gäste auf die Startseite geleitet.';
 $string['configallowobjectembed'] = 'Aus Sicherheitsgründen dürfen normale Nutzer/innen keine Multmedia-Objekte über die HTML-Tags &lt;embed&gt; und &lt;object&gt; in den HTML-Code einbinden. Multimedia-Objekte sind alternativ auch über den Mediafilter nutzbar, ohne dabei Sicherheitsprobleme zu verursachen. Wenn Sie die HTML-Tags für alle erlauben möchten, aktivieren Sie diese Option.';
 $string['configallowoverride'] = 'Die linksseitig genannten Rolleninhaber dürfen alle nach rechts markierten Rollen ändern';
-$string['configallowoverride2'] = 'Wählen Sie, welche Rollen durch eine Rolle aus der linken Spalte verändert werden dürfen. <br />Beachten Sie dabei, dass diese Einstellungen ausschließlich für Nutzer/innen gelten, für die die Rechte moodle/role:override oder moodle/role:safeoverride gesetzt sind.';
-$string['configallowswitch'] = 'Legen Sie fest, in welche anderen Rollen eine Person von ihrer aktuellen Rolle aus wechseln kann. Zusätzlich zu dieser Einstellung ist die Berechtigung moodle/role:switchroles für die aktuelle Rolle erforderlich. <br />Anmerkung: Der Wechsel in eine Rolle kann nur erfolgen, wenn diese die Berechtigung moodle/course:view besitzen und nicht die Berechtigung moodle/site:doanything. Einige Spalten sind daher u.U. deaktiviert.';
+$string['configallowoverride2'] = 'Wählen Sie für jede Rolle in der linken Spalte aus, für welche Rollen sie Überschreibungen vornehmen können.<br />Nutzer/innen müssen außerdem entweder die Fähigkeit moodle/role:override oder moodle/role:safeoverride haben.';
+$string['configallowswitch'] = 'Wählen Sie für jede Rolle in der linken Spalte aus, zu welcher Rolle sie wechseln können.<br />Nutzer/innen müssen außerdem über die Fähigkeit moodle/role:switchroles verfügen.';
 $string['configallowthemechangeonurl'] = 'Wenn diese Option aktiv ist, kann das Design jeder Seite über den URL-Zusatz \'theme={themename}\' geändert werden, z.B. als  moodledomain.de/?theme=afterburner oder als moodledomain.de/course/view.php?id=2&theme=afterburner';
 $string['configallowuserblockhiding'] = 'Möchten Sie das Minimieren von Blöcken erlauben? Die Blöcke werden dabei bis auf die Kopfzeile reduziert. Jede Person beeinflusst ausschließlich ihre eigene Nutzeransicht.';
 $string['configallowusermailcharset'] = 'Diese Option legt fest, ob Nutzer/innen den E-Mail-Zeichensatz in ihren persönlichen Einstellungen selber festlegen können.';
 $string['configallowuserswitchrolestheycantassign'] = 'Im Regelfall besteht für das Recht zum Rollenwechsel die Notwendigkeit, dass jemand das Recht moodle/role:assign besitzt. Falls diese Einstellung aktiviert ist, entfällt diese Notwendigkeit. <br />Die verfügbaren Rollen, die im Dropdown-Menü "Rolle wechseln..." angezeigt werden, sind nur durch die Einstellungen in der Tabelle "Rollenzuweisungen erlauben" beschränkt. Es wird unbedingt empfohlen, dass diese Tabelle niemandem erlaubt, zu höheren Rollen mit mehr Rechten zu wechseln als ihm ursprünglich zugewiesen wurden.';
 $string['configallowuserthemes'] = 'Die Einstellung erlaubt allen Nutzer/innen, ein eigenes Design auszuwählen. Damit wird das Design der Website überschrieben, aber keine kursspezifische Design-Vorgabe.';
-$string['configallowview'] = 'Wählen Sie aus, welche Rollen für Nutzer/innen sichtbar sein sollen, wenn sie bereits eine Rolle haben.';
+$string['configallowview'] = 'Wählen Sie für jede Rolle in der linken Spalte aus, welche Rollen sie anzeigen, suchen und filtern können.';
 $string['configallusersaresitestudents'] = 'Mit dieser Option legen Sie den Zugriff zu den Lernaktivitäten auf der Startseite fest. Wenn Sie \'Ja\' auswählen, können alle bestätigten Nutzer/innen der Website die Aktivitäten auf der Startseite ausführen. Wenn Sie \'Nein\' auswählen, können nur diejenigen, die in mindestens einem Kurs als Teilnehmer/innen eingetragen sind, die Aktivitäten auf der Startseite ausführen. Administrator/innen und speziell zugewiesene Trainer/innen dürfen die Aktivitäten auf der Startseite erstellen und bearbeiten.';
 $string['configauthenticationplugins'] = 'Wählen Sie die Authentifizierungsverfahren aus, die Sie benutzen möchten, und ordnen Sie diese in eine Reihenfolge der Nutzung.</br>
 <b>Hinweis:</b> Bei einer späteren Deaktivierung von Authentifizierungsverfahren kann es passieren, dass Nutzer/innen mit dem deaktivierten Verfahren keinen Zugang mehr erhalten. Prüfen Sie dies sorgfältig.</br>';
@@ -219,17 +219,17 @@ $string['configcronremotepassword'] = 'Diese Option legt fest, dass das Script c
 http://www.beispiel.de/admin/cron.php?password=geheim
 </pre>Falls das Feld leer ist, wird kein Kennwort benötigt.';
 $string['configcurlcache'] = 'Speicherzeit für cURL Cache (in Sekunden)';
-$string['configcustommenuitems'] = 'Das eigene Menü wird auf allen Seiten in der Kopfzeile angezeigt.
-
-Jeder Menüpunkt steht in einer eigenen Zeile. Jede Zeile besteht aus dem gezeigten Text, einer URL (optional), einem Tooltipp (optional) und einer Sprachzuordnung (optional, falls ein Menüpunkt nur in den angegebenen Sprachen sichtbar sein soll). Die Trennung erfolgt jeweils durch einen senkrechten Strich (|).
-
-Eine Struktur mit Untermenü wird einen Bindestrich (-) vor dem Eintrag geregelt, Trennlinien werden mit dem Rautenzeichen (#) angelegt.
+$string['configcustommenuitems'] = 'Das nutzerdefinierte Menü wird auf allen Seiten in der Kopfzeile angezeigt.
+Geben Sie jeden Menüpunkt in einer neuen Zeile ein. Verwenden Sie folgendes Format: Menütext, Link-URL (optional, nicht für einen Hauptpunkt mit Unterpunkten), Tooltipp (optional), Sprachcode oder kommagetrennte Liste von Sprachcodes (optional, um die Zeile nur in der Sprache anzuzeigen), jeweils getrennt durch senkrechte Striche |.
+Zeilen, die mit einem Bindestrich beginnen, erscheinen als Unterpunkte unter dem vorherigen Hauptpunkt. ### bildet eine Trennlinie. Zum Beispiel:
 <pre>
 Kurse
 -Alle Kurse|/course/
 -Kurssuche|/course/search.php
 -###
-Mobile App|https://download.moodle.org/mobile/|Laden Sie unser App herunter
+-FAQ|https://example.org/faq
+-Preguntas más frecuentes|https://example.org/pmf||es
+Mobile App|https://example.org/app|Laden Sie unsere App herunter
 </pre>';
 $string['configcustomusermenuitems'] = 'Sie können den Inhalt des Nutzermenüs konfigurieren (mit Ausnahme des Logout-Links, der automatisch hinzugefügt wird). Jede Menüzeile wird durch das Zeichen | getrennt und besteht aus 1.) einem Text oder der Angabe "langstringname, componentname" oder reinem Text, 2.) einer URL und 3.) einem Icon als pix-Symbol (im Verzeichnis /pix oder mit der Struktur [Unterverzeichnisname]/[Iconname) oder als URL. Trennungen können durch Eingabe einer Linie oder einem oder mehreren #-Zeichen eingegeben werden.';
 $string['configdbsessions'] = 'Bei der Aktivierung dieser Einstellung wird die Datenbank verwendet, um Informationen über aktuelle Sessions abzuspeichern. Das ist sinnvoll bei sehr großen Anwendungen oder Anwendungen, die über mehrere Cluster von Servern verteilt arbeiten. Meist kann die Einstellung deaktiviert bleiben. Bei einer Einstellungsänderung werden alle aktuellen Nutzer/innen ausgeloggt (auch die Administrator/innen). Falls Sie MySQL benutzen, stellen Sie sicher, dass \'max_allowed_packet\' in der Datei my.cnf (oder my.ini) mindestens 4M ist.
@@ -257,9 +257,9 @@ $string['configeditordictionary'] = 'Dieser Wert wird verwendet, wenn aspell kei
 $string['configeditorfontlist'] = 'Zeichensätze auswählen, die im Editormenü erscheinen sollen';
 $string['configemailchangeconfirmation'] = 'Wenn Nutzer/innen in ihrem Profil die E-Mail-Adresse ändern, dann ist eine E-Mail-Bestätigung notwendig';
 $string['configemaildkimselector'] = 'Der DKIM-Selektor ist willkürlich, und Ihre DNS-Einträge müssen damit übereinstimmen.';
-$string['configemailfromvia'] = 'Via-Information in den Absender für ausgehende E-Mails einfügen. Der Empfänger wird damit informiert, von welcher Website die E-Mail gesendet wurde. Dies soll helfen, eine versehentliche Antwort an die Nicht-Antworten-Adresse zu verhindern.';
+$string['configemailfromvia'] = 'Via-Info in den Absender ausgehender E-Mails einfügen. Der Empfänger wird damit informiert, von welcher Website die E-Mail gesendet wurde. Dies soll helfen, eine versehentliche Antwort an die Nicht-Antworten-Adresse zu verhindern.';
 $string['configemailheaders'] = 'Raw E-Mail-Header, die zu allen ausgehenden E-Mails hinzugefügt werden.';
-$string['configemailsubjectprefix'] = 'Prefix für alle versandten E-Mails im Betreff';
+$string['configemailsubjectprefix'] = 'Prefix für den Betreff aller versendeten E-Mails';
 $string['configenableactivitychooser'] = 'Die Aktivitätenauswahl ist eine Dialogbox mit einer kurzen Beschreibung für jede Aktivität. Wenn die Option deaktiviert ist, werden zwei Dropdown-Menüs zum Hinzufügen von Materialien und Aktivitäten angezeigt.';
 $string['configenableanalytics'] = 'Analytics-Modelle, z.B. "Teilnehmer/innen, bei denen das Risiko eines Schulabbruchs besteht" oder "Bevorstehende Aktivitäten", können Vorhersagen erstellen, Erkenntnisbenachrichtigungen senden und weitere Aktionen anbieten, z.B. Nutzermitteilungen versenden.';
 $string['configenableblogs'] = 'Diese Option aktiviert für alle Nutzer/innen einen eigenen Blog.';
@@ -333,7 +333,7 @@ $string['configminpasswordnonalphanum'] = 'Kennwörter müssen mindestens die an
 $string['configminpasswordupper'] = 'Kennwörter müssen mindestens die angegebene Zahl von Großbuchstaben enthalten.';
 $string['configmodchooserdefault'] = 'Soll die Aktivitätenauswahl den Nutzer/innen als Standardeinstellung gezeigt werden?';
 $string['configmycoursesperpage'] = 'Maximale Zahl der gezeigten Kurse in Übersicht \'Meine Kurse\'';
-$string['configmymoodleredirect'] = 'Die Einstellung führt Personen (außer Admins) beim Anmelden automatisch auf \'Meine Startseite\'. Auch die Navigation zur Startseite entsprechend verändert.';
+$string['configmymoodleredirect'] = 'Die Einstellung führt Personen (außer Admininistrator/innen) beim Anmelden automatisch auf \'Meine Startseite\'. Auch die Navigation zur Startseite entsprechend verändert.';
 $string['configmypagelocked'] = 'Diese Option schützt die eingerichtete Seite vor Änderungen durch Nicht-Admins';
 $string['confignavcourselimit'] = 'Die Zahl legt die Anzahl der Kurse fest, die Nutzer/innen maximal in der Navigation angezeigt werden.';
 $string['confignavshowallcourses'] = 'Diese Einstellung legt fest, dass Nutzer/innen zusätzlich zu "Meine Kurse" (Liste von Kursen, in denen sie eingeschrieben sind) auch Kurse (Liste aller Kurse) in der Navigation sehen.';
@@ -410,7 +410,7 @@ $string['configsmtpuser'] = 'Wenn Sie einen SMTP-Server angegeben haben und der 
 $string['configstartwday'] = 'Beginn der Woche';
 $string['configstatsfirstrun'] = 'Die Einstellung legt den Zeitraum fest, um den die auszuwertenden Logdaten zurückliegen dürfen. Wenn Sie sehr viele Aktivitäten in den Kursen haben oder sich einen Server mit anderen Anwendungen teilen, sollten Sie keinen zu langen Zeitraum wählen. Die Auswertung erfordert eine hohe Serverleistung. (Hinweis: für diese Einstellung gilt: 1 Monat = 28 Tage. In der grafischen Auswertung und den Berichten ist 1 Monat = 1 Kalendermonat.)';
 $string['configstatsmaxruntime'] = 'Die Berechnung der Statistiken kann sehr viel Rechenleistung erfordern. Verwenden Sie eine Kombination aus diesem Feld und dem nächsten, um festzulegen zu welchem Zeitpunkt und für welchen Zeitraum die Berechnung erfolgen soll.';
-$string['configstatsmaxruntime2'] = 'Die Berechnung der Statistiken kann sehr aufwendig sein. Besonders durch die maximal Dauer für Prozesse wird hier eine Begrenzung gesetzt. Mit einem Cron-Job können daher höchstens 31 Tage der Statistik berechnet werden.';
+$string['configstatsmaxruntime2'] = 'Die Berechnung der Statistiken kann sehr aufwendig sein. Besonders durch die maximale Dauer für Prozesse wird hier eine Begrenzung gesetzt. Mit einem CronJob können daher höchstens 31 Tage der Statistik berechnet werden.';
 $string['configstatsmaxruntime3'] = 'Die Berechnung der Statistiken kann auf dem Server sehr viel Last erzeugen. Daher können Sie hier festlegen wie viel Zeit täglich dafür höchstens eingesetzt werden soll. Weiter unten legen Sie fest für wie viel Tage innerhalb eines Cron-Job-Durchlaufs die Berechnung der Statistiken erfolgen soll.';
 $string['configstatsruntimedays'] = 'Wenn Sie die Statistik-Funktion aktivieren werden für einen zurückliegenden Zeitraum statistische Berechnungen durchgeführt. Damit dadurch die Serverbelastung nicht zu hoch wird, können Sie hier festlegen, dass pro Cron-Job-Durchlauf nur für eine bestimmte Zahl von Tagen die Berechnung erfolgt. Ist die Statistik-Ermittlung auf dem aktuellen Stand erfolgt wird jeweils für einen Tag die Statistik ergänzt';
 $string['configstatsruntimestart'] = 'Zu welchem Zeitpunkt soll die Berechnung der Statistiken begonnen werden? Bitte wählen Sie unterschiedliche Zeitpunkte, wenn auf einen physikalischen Server mehrere Moodle-Instanzen laufen.';
@@ -462,11 +462,7 @@ $string['courselistshortnames_desc'] = 'In der Kursliste werden sowohl die kurze
 $string['coursemgmt'] = 'Kurse und Kursbereiche verwalten';
 $string['courseoverview'] = 'Kursbeschreibung';
 $string['courserequestnotify'] = 'Systemnachricht zur Kursanfrage';
-$string['courserequestnotifyemail'] = 'Guten Tag,
-
-der Nutzer {$a->user} hat einen neuen Kurs unter {$a->link} angefordert.
-
-Ihr E-Learning-Team';
+$string['courserequestnotifyemail'] = 'Nutzer/in {$a->user} hat einen neuen Kurs <a href="{$a->link}">{$a->link}</a> angefordert.';
 $string['courserequests'] = 'Kursanträge';
 $string['courserequestspending'] = 'Offene Kursanträge';
 $string['courses'] = 'Kurse';
@@ -593,7 +589,7 @@ $string['emaildkiminfo'] = 'Wenn sowohl der DKIM-Selektor gesetzt ist als auch e
 $string['emaildkimselector'] = 'DKIM-Selektor';
 $string['emailfromvia'] = 'Via-Info für E-Mails';
 $string['emailheaders'] = 'E-Mail-Header';
-$string['emailsubjectprefix'] = 'Präfix für den E-Mail-Betreff';
+$string['emailsubjectprefix'] = 'Präfix für E-Mail-Betreff';
 $string['emoticonalt'] = 'Alternativtext';
 $string['emoticoncomponent'] = 'Komponente';
 $string['emoticonimagename'] = 'Bildname';
@@ -642,7 +638,7 @@ $string['environmenterrorupgrade'] = 'Hinweis: Sie sollten unbedingt die Problem
 $string['environmentmariadbwrongdbtype'] = 'Fehler: <code>$CFG->dbtype</code>. Sie müssen den Eintrag in der Datei <code>config.php</code> von \'<code>mysql</code>\' nach \'<code>mariadb</code>\'ändern.';
 $string['environmentmustfixsetting'] = 'Die PHP-Einstellung muss geändert werden';
 $string['environmentok'] = 'Die Serverumgebung erfüllt alle notwendigen Anforderungen.';
-$string['environmentrecommendcustomcheck'] = 'Wenn dieser Test fehlschlägt, dann ist ein  mögliches Problem vorhanden.';
+$string['environmentrecommendcustomcheck'] = 'Wenn dieser Test fehlschlägt, dann ist möglicherweise ein Problem vorhanden.';
 $string['environmentrecommendinstall'] = 'sollte installiert und aktiviert sein';
 $string['environmentrecommendversion'] = 'empfohlen: {$a->needed} - installiert: {$a->current}';
 $string['environmentrequirecustomcheck'] = 'Dieser Test muss erfolgreich verlaufen.';
@@ -915,8 +911,7 @@ $string['moodlepartners_help'] = '<p>Moodle Partner sind vom Moodle HQ zertifizi
 <a href="https://moodle.com/partners">Einen Partner finden</a>';
 $string['moodleservices'] = 'Moodle Services';
 $string['moodleservices_help'] = 'Mit unseren Moodle-Services sind Sie sicher, die beste Dienstleistung zu erhalten.';
-$string['multilangforceold'] = 'Alte Mehrsprach-Syntax festlegen:
-ohne &lt;span class="multilang"&gt; und ohne &lt;lang&gt;';
+$string['multilangforceold'] = 'Alte Syntax für multilang festlegen: ohne &lt;span class="multilang"&gt; und ohne &lt;lang&gt;';
 $string['mustenablestats'] = 'Die Statistiken wurden für die Website nicht aktiviert.';
 $string['mycoursesperpage'] = 'Zahl der Kurse';
 $string['mydashboard'] = 'Standard Systemdashboard';
@@ -965,7 +960,7 @@ $string['numberofmissingstrings'] = 'Anzahl der fehlenden Texte: {$a}';
 $string['numberofstrings'] = 'Gesamtzahl der Texte: {$a->strings}<br />Fehlende Texte: {$a->missing} ({$a->missingpercent}&nbsp;%)';
 $string['oauthrefreshtokenexpired'] = 'Die Aktualisierungstoken für einen der OAuth-Dienste {$a->issuer} auf der Website {$a->siteurl} ist abgelaufen. Dadurch wird die Funktionalität von Plugins eingeschränkt, die diesen Service verwenden. Um das Problem zu beheben, rufen Sie die OAuth2-Dienstekonfiguration auf und klicken Sie in der Tabellenzeile für diesen Service auf das Icon "Connect system account". Stellen Sie sicher, dass die immer den gleichen Service-Account für das OAuth-System verwenden.';
 $string['oauthrefreshtokenexpiredshort'] = 'Das OAuth-Aktualisierungstoken für {$a->issuer} auf der Website {$a->siteurl} ist abgelaufen.';
-$string['onlynoreply'] = 'Nur falls von einer No-Reply-Adresse';
+$string['onlynoreply'] = 'Nur bei einer Nicht-Antworten-Adresse';
 $string['opcacherecommended'] = 'PHP Opcode Caching verbessert die Leistung und senkt den Speicherbedarf. Die PHP-Extension OPcache wird voll unterstützt.';
 $string['opensslrecommended'] = 'Die Installation der optionalen OpenSSL Bibliothek wird dringend empfohlen. Dadurch wird die Moodle-Netzwerk-Funktionalität ermöglicht.';
 $string['opensslrequired'] = 'Die PHP Extension OpenSSL ist für Moodle notwendig, um stärkere Krypto-Dienste bereit zu stellen.';
@@ -1070,7 +1065,7 @@ $string['profilesforenrolledusersonly'] = 'Profilzugriff nur für eingetragene N
 $string['profileshortname'] = 'Kurzbezeichnung (muss eindeutig sein)';
 $string['profileshortnameinvalid'] = 'Diese Kurzbezeichnung darf nur alphanumerische Zeichen und den Unterstrich (_) enthalten.';
 $string['profileshortnamenotunique'] = 'Diese Kurzbezeichnung wird bereits benutzt';
-$string['profilesignup'] = 'Auf der Anmeldeseite zeigen?';
+$string['profilesignup'] = 'Auf der Registrierungsseite zeigen?';
 $string['profilespecificsettings'] = 'Weitere Einstellungen';
 $string['profilevisible'] = 'Für wen ist dieses Feld sichtbar?';
 $string['profilevisible_help'] = '* Nicht sichtbar - Für private Daten, nur sichtbar für Administrator/innen
@@ -1517,7 +1512,7 @@ Die Warnung kann auch bedeuten, dass bei einem unvollständigen Update über git
 
 Weitere Informationen: <a href="{$a}">{$a}</a>.';
 $string['upgradestart'] = 'Aktualisierung der Datenbank starten';
-$string['upgradesure'] = '<p>Die Moodle-Dateien wurden auf Ihrem Server verändert. Moodle wird automatisch auf die Version <strong>{$a}</strong> aktualisiert. Danach können Sie nicht mehr zur alten Version zurückkehren. Beachten Sie, dass der Prozess sehr lange dauern könnte!</p>
+$string['upgradesure'] = '<p>Die Moodle-Dateien wurden auf Ihrem Server verändert. Moodle wird automatisch auf die Version <strong>{$a}</strong> aktualisiert. Danach können Sie nicht mehr zur alten Version zurückkehren. Beachten Sie, dass der Vorgang sehr lange dauern könnte!</p>
 <p>Möchten Sie die Aktualisierung des Servers wirklich starten?</p>';
 $string['upgradetimedout'] = 'Die Aktualisierung wurde wegen Zeitüberschreitung abgebrochen. Starten Sie den Vorgang bitte noch einmal.';
 $string['upgradingdata'] = 'Daten werden aktualisiert.';
@@ -1559,6 +1554,9 @@ $string['warningcurrentsetting'] = 'Aktueller Wert ist ungültig: {$a}';
 $string['warningiconvbuggy'] = 'Die Library iconv unterstützt den //IGNORE modifier nicht. Sie sollten die PHP-Extension mbstring installieren, die stattdessen zur Bereinigung von Strings mit nicht UTF-8-konformen Zeichen.';
 $string['webproxy'] = 'Web-Proxy';
 $string['webproxyinfo'] = 'Füllen Sie die folgenden Optionen aus, falls Ihr Moodle-Server das Internet nicht direkt erreichen kann. Ein Internetzugang ist notwendig, um Updates, Sprachpakete, RSS-Feeds, Zeitzonen-Daten usw. laden zu können. <br /><em>Die Installation der PHP-Extension cURL wird dringend empfohlen!</em>';
+$string['xmlrpcmaharaenabled'] = 'Es wurde festgestellt, dass das Mahara ePortfolio auf dieser Website aktiviert ist. Diese Funktion basiert auf der PHP-Erweiterung XMLRPC, die nicht mehr von PHP bereitgestellt wird.';
+$string['xmlrpcmnetenabled'] = 'Es wurde festgestellt, dass das Moodle Networking auf dieser Website aktiviert ist. Diese Funktion basiert auf der PHP-Erweiterung XMLRPC, die nicht mehr von PHP bereitgestellt wird.';
 $string['xmlrpcrecommended'] = 'Die PHP Extension xmlrpc wird verwendet für Webservices und Moodle-Networking.';
+$string['xmlrpcwebserviceenabled'] = 'Es wurde festgestellt, dass der Webservice XMLRPC auf dieser Website aktiviert ist. Diese Funktion basiert auf der PHP-Erweiterung XMLRPC, die nicht mehr von PHP bereitgestellt wird.';
 $string['yuicomboloading'] = 'YUI Combo Cache';
 $string['ziprequired'] = 'Die PHP-Extension Zip ist notwendig. Die alten Pakete infoZip und PclZip werden nicht mehr benutzt.';

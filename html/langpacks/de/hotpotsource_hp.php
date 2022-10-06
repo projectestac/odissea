@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'HotPotatoes-Quelldateien';
+$string['privacy:metadata'] = 'Das Modul "HotPotatoes-Quelldateien" speichert keine personenbezogenen Daten.';

@@ -468,6 +468,7 @@ $string['nopermissiontorate'] = '项目不允许评分';
 $string['nopermissiontoshow'] = '没有浏览权限！';
 $string['nopermissiontounlock'] = '没有解锁的权限！';
 $string['nopermissiontoupdatecalendar'] = '抱歉，您目前没有更新日历事件的权限。';
+$string['nopermissiontoviewcalendar'] = '抱歉，您没有查看日历活动的权限。';
 $string['nopermissiontoviewgrades'] = '不能查看成绩。';
 $string['nopermissiontoviewletergrade'] = '没有查看分数段的权限';
 $string['nopermissiontoviewpage'] = '您不允许浏览这个页面';

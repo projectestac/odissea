@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Testua';
-$string['pluginname'] = 'Testua';
-$string['privacy:metadata'] = 'Testua eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['fieldtypelabel'] = 'Testu laburra';
+$string['pluginname'] = 'Testu laburra';
+$string['privacy:metadata'] = 'Testu laburra eremu-osagaiak ez du datu pertsonalik biltzen; datu-base moduluan zehaztutako taulak erabiltzen ditu.';

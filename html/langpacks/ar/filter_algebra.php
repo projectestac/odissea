@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = 'التعبير الجبري';
 $string['filtername'] = 'الترميز الجبري';
-$string['privacy:metadata'] = 'إن ملحق رموز الجبر لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة رموز الجبر لا تخزن أي بيانات شخصية.';

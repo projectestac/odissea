@@ -121,7 +121,7 @@ $string['data:exportuserinfo'] = 'Exporteer gebruikersinformatie';
 $string['data:managecomments'] = 'Beheer commentaren';
 $string['data:manageentries'] = 'Beheer items';
 $string['data:managetemplates'] = 'Beheer sjablonen';
-$string['data:manageuserpresets'] = 'Alle sjabloonsets beheren';
+$string['data:manageuserpresets'] = 'Sjabloonsets beheren';
 $string['data:rate'] = 'Items beoordelen';
 $string['data:readentry'] = 'Lees items';
 $string['data:view'] = 'Bekijk databankactiviteit';
@@ -255,7 +255,7 @@ $string['invalidrecord'] = 'Record fout';
 $string['invalidurl'] = 'De URL die je net gaf is niet geldig';
 $string['jstemplate'] = 'Javascript sjabloon';
 $string['latitude'] = 'Breedtegraad';
-$string['latlong'] = 'Breedtegraad/lengtegraad';
+$string['latlong'] = 'Coördinaten';
 $string['latlongboth'] = 'Zowel de breedtegraad als de lengtegraad zijn vereist.';
 $string['latlongdownloadallhint'] = 'Downloadlink voor alle items als KML';
 $string['latlongkmllabelling'] = 'Hoe items labelen als KML-bestanden (Google Earth)';
@@ -277,18 +277,18 @@ $string['menuchoose'] = 'Kies...';
 $string['missingdata'] = 'Data ID of object moet opgegeven worden aan field class';
 $string['missingfield'] = 'Programmatiefout: je moet een veld en of gegevens specifiëren wanneer je een field class definieert.';
 $string['modulename'] = 'Databank';
-$string['modulename_help'] = 'De databank activiteitsmodule maakt het voor deelnemers mogelijk om gegevensbank te maken, te onderhouden en te doorzoeken. De opmaak en structuur ervan wordt bepaald door de leraar door het maken van een aantal velden. Deze velden kunnen keuzevakjes, selectierondjes, rolmenu\'s, tekst zone\'s, URL\'s, afbeeldingen en een geüpload bestand zijn.
+$string['modulename_help'] = 'De databank activiteitsmodule maakt het voor deelnemers mogelijk om gegevensbank te maken, te onderhouden en te doorzoeken.
 
-De zichtbare layout van de informatie bij het maken van lijsten, bekijken of bewerken van de databank-items wordt geregeld door databanksjablonen. Databank-activiteiten kunnen gedeeld worden tussen cursussen  via sjablonen en een leraar kan de inhoud van een  databank importeren en exporteren.
+De opmaak en structuur ervan wordt bepaald door de het gebruiken van verschillende veldtypes, zoals korte tekst, keuzevakjes, selectierondjes, rolmenu\'s, tekst zone\'s, URL\'s, afbeeldingen of geüploade bestanden.
 
-Als de filter databank automatisch linken is ingeschakeld, dan zullen items in de databank  automatisch gelinkt worden aan woorden en zinnen die in de cursus voorkomen.
+Als leraar kun je opmerkingen en beoordelingen geven op ingevoerde items. Je kunt dit ookdoor leerlingen laten doen (peer evaluatie). Beoordelingen kunnen samengeteld worden om een eindbeoordeling te vormen die in de cijferlijst opgeslagen wordt.
 
-Een leraar kan opmerkingen bij databank-items toestaan. Databank-items kunnen ook beoordeeld worden door leraren of leerlingen (peer-evaluatie). Beoordelingen kunnen samengeteld worden om een eindbeoordeling te vormen die in de cijferlijst opgeslagen wordt.
+Als de databank auto-link-filter ingeschakeld is, dan kunnen items in de databank automatisch gelinkt worden aan woorden of zinnen in de cursus.
 
 Databank-activiteiten kunnen voor heel veel zaken gebruikt worden, zoals
 
 * Samenwerken aan een collectie links, boekbesprekingen, logboek, enz.
-* Voor het tonen van door leerlingen gemaakte foto\'s, posters, websites, gedichten, ... voor peer commentaar en beoordeling.';
+* Het tonen van door leerlingen gemaakte foto\'s, posters, websites, gedichten, ... voor peer commentaar en beoordeling.';
 $string['modulenameplural'] = 'Databanken';
 $string['more'] = 'Meer';
 $string['moreurl'] = 'Meer URL';

@@ -38,9 +38,7 @@ $string['asyncemailenable'] = 'Gaitu mezu-jakinarazpenak';
 $string['asyncemailenabledetail'] = 'Gaituz gero, erabiltzaileek mezua jasoko dute berreskuratze edo kopia asinkronoa amaitutakoan.';
 $string['asyncgeneralsettings'] = 'Segurtasun-kopia eta berreskuratze asinkronoa';
 $string['asyncmessagebody'] = 'Mezua';
-$string['asyncmessagebodydefault'] = 'Kaixo, {user_firstname}: <br/>
-{backupid} IDa duen zure {operation} eragiketa ondo amaitu da! <br/><br/>
-Hemen ikus dezakezu {link}.';
+$string['asyncmessagebodydefault'] = '{backupid} IDa duen zure {operation} eragiketa ondo amaitu da. Hemen ikus dezakezu: <a href="{link}">{link}</a>.';
 $string['asyncmessagebodydetail'] = 'Segurtasun-kopia eta berreskuratze asinkronoa amaitutakoan bidali beharreko mezua.';
 $string['asyncmessagesubject'] = 'Gaia';
 $string['asyncmessagesubjectdefault'] = 'Moodleko {operation} eragiketa ondo amaitu da';
@@ -174,7 +172,7 @@ $string['copycoursedesc'] = 'Ikastaro hau bikoiztuko da eta kopia aukeratutako i
 $string['copycourseheading'] = 'Kopiatu ikastaro bat';
 $string['copycoursetitle'] = 'Kopiatu ikastaroa: {$a}';
 $string['copydest'] = 'Helmuga';
-$string['copyfieldnotfound'] = 'Beharrezkoa den eremua ez da aurkitu';
+$string['copyfieldnotfound'] = 'Ez dira aurkitu beharrezkoa diren datuak hurrengo eremuetan: {$a}';
 $string['copyformfail'] = 'Ikastaro-kopiatzea formularioaren AJAX bidalketak huts egin du.';
 $string['copyingcourse'] = 'Ikastaro-kopiatzea abian dago';
 $string['copyingcourseshortname'] = 'kopiatzen';

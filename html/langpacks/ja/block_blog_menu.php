@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_menu:addinstance'] = '新しいブログメニューブロックを追加する';
-$string['pluginname'] = 'ブログメニュー';
-$string['privacy:metadata'] = 'ブログメニューブロックは他の場所で保存されたデータのみ表示します。';
+$string['blog_menu:addinstance'] = '新しいブログメニュブロックを追加する';
+$string['pluginname'] = 'ブログメニュ';
+$string['privacy:metadata'] = 'ブログメニュブロックは他の場所で保存されたデータのみ表示します。';

@@ -32,8 +32,8 @@ $string['cpucommandnotallowed'] = 'سطر الأمر <strong>/proc/cpuinfo</stro
 $string['crontask'] = 'مراقب الموقع Edwiser - إجمع إحصائيات الاستعمال 24 ساعة';
 $string['edwiser_site_monitor:addinstance'] = 'إضافة كتلة جديدة لمراقبة الموقع';
 $string['edwiser_site_monitor:myaddinstance'] = 'إضافة كتلة جديدة لمراقبة الموقع إلى لوحة التحكم';
-$string['errorfetching'] = 'خطأ عند إحظار الملف المضغوط للملحق. <b>{$a}</b>';
-$string['errorfetchingexist'] = 'خطأ عند إحظار الملف المضغوط للملحق: موضع المقصد موجود. <b>{$a}</b>';
+$string['errorfetching'] = 'خطأ عند إحظار الملف المضغوط للإضافة. <b>{$a}</b>';
+$string['errorfetchingexist'] = 'خطأ عند إحضار الملف المضغوط للإضافة: موضع المقصد موجود. <b>{$a}</b>';
 $string['memorycommandnotallowed'] = 'سطر الأمر <strong>free</strong> -- طلب الصلاحية مرفوض.';
 $string['pluginname'] = 'مراقب الموقع Edwiser';
 $string['policy'] = 'أنا أوافق على <a href="{$a}" target="_blank">سياسة الخصوصية</a>';

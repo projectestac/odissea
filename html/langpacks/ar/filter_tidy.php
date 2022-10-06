@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'مؤنِّق HTML';
-$string['privacy:metadata'] = 'إن ملحق مُؤنِّق HTML لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة مُؤنِّق HTML لا تخزن أي بيانات شخصية.';

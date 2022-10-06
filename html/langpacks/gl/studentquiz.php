@@ -157,7 +157,6 @@ $string['filter_label_rates'] = 'Valoración';
 $string['filter_label_show_mine'] = 'As miñas preguntas';
 $string['filter_label_tags'] = 'Etiqueta';
 $string['finish_button'] = 'Finalizar';
-$string['image_placeholder'] = '[Image]';
 $string['invalidcomment'] = 'Comentario non válido';
 $string['invalidemail'] = 'Esta dirección de e-mail non é válida. Por favor, intruduza unha dirección.';
 $string['lastattempt_right'] = '✓';

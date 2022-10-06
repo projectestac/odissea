@@ -38,7 +38,7 @@ $string['clihelp'] = 'Skriv ut denna hjälp.';
 $string['climissingargument'] = 'Argumentet --{$a} är obligatoriskt.';
 $string['clititle'] = 'Kommandoradsverktyg för användaruppladdning.';
 $string['clivalidationerror'] = 'Valideringsfel;';
-$string['csvdelimiter'] = 'Avskiljare för CSV';
+$string['csvdelimiter'] = 'CSV-avgränsare';
 $string['defaultvalues'] = 'Förinställda standardvärden';
 $string['deleteerrors'] = 'Ta bort fel';
 $string['encoding'] = 'Inkodning';
@@ -79,7 +79,7 @@ $string['uploadpictures_help'] = '<p>Det går att ladda upp användarbilder som 
 <p>Namn på bildfiler är inte skiftlägeskänsliga.</p>';
 $string['uploaduser:uploaduserpictures'] = 'Ladda upp användarbilder';
 $string['uploadusers'] = 'Ladda upp användare';
-$string['uploadusers_help'] = 'Användare kan laddas upp (och eventuellt registreras i kurser) via en textfil. Filens format ska vara följande:
+$string['uploadusers_help'] = 'Användare kan laddas upp (och eventuellt registreras i kurser) via en textfil. Filen ska formateras enligt följande:
 
 * Varje rad i filen innehåller en post
 * Varje post är en serie data åtskilda av kommatecken (eller andra avgränsare)

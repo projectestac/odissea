@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptrisk'] = '我明白，禁用电子邮件验证可能是一个安全问题。';
+$string['acceptrisk_help'] = '禁用电子邮件验证有可能会允许用户以其他用户的身份进行认证。';
 $string['authconfirm'] = '这将允许 Moodle 通过 API 操作即将绑定的账户。通常这是一个给 Moodle 系统使用的账户，以便管理其中的文件。';
 $string['authconnected'] = '已取得系统账户的无人值守授权';
 $string['authnotconnected'] = '未取得系统账户的无人值守授权';

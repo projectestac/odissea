@@ -80,7 +80,7 @@ $string['depending_help'] = 'Ein abhängiges Element wird in Abhängigkeit von e
 <ul>
 <li>Legen Sie zunächst das Element an, von dem ein anderes Element abhängt.</li>
 <li>Fügen Sie dann einen Seitenumbruch hinzu.</li>
-<li>Fügen Sie nun die Elemente hinzu, die vom Wert des zuvor erstellten Elements abhängen. Wählen Sie das Element in der Liste "Abhängigkeitselement" aus und legen Sie den erforderlichen Wert im Textfeld "Abhängigkeitswert" fest.</li>
+<li>Fügen Sie nun die Elemente hinzu, die vom Wert des zuvor erstellten Elements abhängen. Wählen Sie das Element in der Liste "Abhängigkeitselement" aus und legen Sie den erforderlichen Wert im Feld "Abhängigkeitswert" fest.</li>
 </ul>
 <strong>Die Struktur sollte folgendermaßen aussehen:</strong>
 <ol>
@@ -96,7 +96,7 @@ Das ist schon alles.';
 $string['dependitem'] = 'Abhängigkeitselement';
 $string['dependvalue'] = 'Abhängigkeitswert';
 $string['description'] = 'Beschreibung';
-$string['do_not_analyse_empty_submits'] = 'Leere Abgaben ignorieren';
+$string['do_not_analyse_empty_submits'] = 'Leere Abgaben bei Analytics weglassen';
 $string['downloadresponseas'] = 'Alle Antworten herunterladen als:';
 $string['drop_feedback'] = 'Aus diesem Kurs entfernen';
 $string['dropdown'] = 'Multiple Choice - einzelne Antwort (Dropdown)';
@@ -105,7 +105,7 @@ $string['dropdownlist'] = 'Multiple Choice - einzelne Antwort (Dropdown)';
 $string['dropdownrated'] = 'Dropdown-Menü (skaliert)';
 $string['edit_item'] = 'Element bearbeiten';
 $string['edit_items'] = 'Elemente bearbeiten';
-$string['email_notification'] = 'Systemnachricht bei Abgabe senden';
+$string['email_notification'] = 'Systemnachricht bei Abgaben senden';
 $string['email_notification_help'] = 'Wenn diese Option aktiviert ist, bekommen die Trainer/innen bei Feedback-Abgaben eine Systemnachricht.';
 $string['emailteachermail'] = '{$a->username} hat das Feedback \'{$a->feedback}\' abgeschlossen.
 
@@ -158,7 +158,7 @@ $string['infotype'] = 'Informationstyp';
 $string['insufficient_responses'] = 'Unzulängliche Antworten';
 $string['insufficient_responses_for_this_group'] = 'Es gibt unzulängliche Antworten für diese Gruppe';
 $string['insufficient_responses_help'] = 'Damit das Feedback anonym ist, müssen mindestens zwei Antworten abgegeben sein.';
-$string['item_label'] = 'Textfeld';
+$string['item_label'] = 'Bezeichner';
 $string['item_name'] = 'Frage';
 $string['label'] = 'Textfeld';
 $string['labelcontents'] = 'Inhalte';
@@ -172,8 +172,8 @@ $string['mapcourses'] = 'Feedback zu Kursen zuordnen';
 $string['mappedcourses'] = 'Zugeordnete Kurse';
 $string['mappingchanged'] = 'Kurszuordnung wurde geändert';
 $string['maximal'] = 'Maximal';
-$string['messageprovider:message'] = 'Erinnerung zum Feedback';
-$string['messageprovider:submission'] = 'Systemnachrichten bei Feedback';
+$string['messageprovider:message'] = 'Erinnerung zu Feedback';
+$string['messageprovider:submission'] = 'Systemnachricht für Feedback';
 $string['minimal'] = 'Minimal';
 $string['mode'] = 'Modus';
 $string['modulename'] = 'Feedback';
@@ -201,7 +201,7 @@ $string['name_required'] = 'Name benötigt';
 $string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['next_page'] = 'Nächste Seite';
 $string['no_handler'] = 'Keine Aktion gefunden!';
-$string['no_itemlabel'] = 'Kein Textfeld';
+$string['no_itemlabel'] = 'Kein Bezeichner';
 $string['no_itemname'] = 'Kein Name des Eintrags';
 $string['no_items_available_yet'] = 'Keine Elemente angelegt';
 $string['no_templates_available_yet'] = 'Keine Vorlagen verfügbar';

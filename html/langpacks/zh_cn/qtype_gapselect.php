@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = '添加 {no}个空白可选项';
 $string['answer'] = '答案';
+$string['blanknumber'] = '空白{$a}';
 $string['choices'] = '可选项';
 $string['choicex'] = '可选项{no}';
 $string['combinedcontrolnamegapselect'] = '下拉菜单';

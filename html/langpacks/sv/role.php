@@ -168,6 +168,7 @@ $string['contentbank:upload'] = 'Ladda upp nytt innehåll till innehållsbank';
 $string['contentbank:useeditor'] = 'Skapa eller redigera innehåll med en redigerare för innehållstyp';
 $string['contentbank:viewunlistedcontent'] = 'Visa opublicerst innehåll från innehållsbanken';
 $string['context'] = 'Sammanhang';
+$string['contextrolenotallowed'] = 'Rollen {$a} är inte tillåten i den här kontexten.';
 $string['course:activityvisibility'] = 'Dölj/visa aktiviteter';
 $string['course:bulkmessaging'] = 'Skicka ett meddelande till många människor';
 $string['course:changecategory'] = 'Ändra kurskategori';

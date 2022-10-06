@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['asyncbackupcomplete'] = 'Het backup proces is voltooid';
 $string['asyncbackupcompletebutton'] = 'Voortzetten';
-$string['asyncbackupcompletedetail'] = 'Het backup proces is met succes voltooid. <br/>  U kunt toegang krijgen tot de back-up op de <a href="{$a}"> herstelpagina. </a>';
+$string['asyncbackupcompletedetail'] = 'Het backup proces is met succes voltooid. <br/>  Je kunt toegang krijgen tot de back-up op de <a href="{$a}"> herstelpagina. </a>';
 $string['asyncbackuperror'] = 'Het backup proces is mislukt';
 $string['asyncbackuperrordetail'] = 'Het back-up proces is mislukt. Neem contact op met je systeembeheerder.';
 $string['asyncbackuppending'] = 'Het back-up proces is in behandeling';
@@ -38,7 +38,7 @@ $string['asyncemailenable'] = 'Schakel berichtmeldingen in';
 $string['asyncemailenabledetail'] = 'Indien ingeschakeld, ontvangen gebruikers een bericht wanneer een asynchrone back-up of herstel is voltooid.';
 $string['asyncgeneralsettings'] = 'Asynchrone backup / restore';
 $string['asyncmessagebody'] = 'Bericht';
-$string['asyncmessagebodydefault'] = 'Hallo {user_firstname}, <br/>Je {operation} (ID: {backupid}) is met succes voltooid. <br/> <br/> U kunt hier toegang tot krijgen: {link}.';
+$string['asyncmessagebodydefault'] = 'Je {operation} ID: {backupid} is met succes voltooid. <br/>Toegang via: <a href="{link}">{link}</a>.';
 $string['asyncmessagebodydetail'] = 'Bericht dat moet worden verzonden wanneer een asynchrone back-up of herstel is voltooid.';
 $string['asyncmessagesubject'] = 'Onderwerp';
 $string['asyncmessagesubjectdefault'] = 'Moodle {operation}  is succesvol voltooid';
@@ -47,7 +47,7 @@ $string['asyncnowait'] = 'Je hoeft hier niet te wachten, omdat het proces op de 
 $string['asyncprocesspending'] = 'Proces in behandeling';
 $string['asyncrestorecomplete'] = 'Het herstelproces is voltooid';
 $string['asyncrestorecompletebutton'] = 'Ga door';
-$string['asyncrestorecompletedetail'] = 'Het herstelproces is met succes voltooid. Als je op Doorgaan klikt, gaat u naar de  <a href="{$a}"> cursus met het teruggezette item. </a>';
+$string['asyncrestorecompletedetail'] = 'Het herstelproces is met succes voltooid. Als je op Doorgaan klikt, ga je naar de  <a href="{$a}"> cursus met het teruggezette item. </a>';
 $string['asyncrestoreerror'] = 'Het herstelproces is mislukt';
 $string['asyncrestoreerrordetail'] = 'Het herstelproces is mislukt. Neem contact op met uw systeembeheerder.';
 $string['asyncrestoreinprogress'] = 'Herstelproces bezig';
@@ -173,7 +173,7 @@ $string['copycoursedesc'] = 'Deze cursus zal gedupliceerd worden en in de opgege
 $string['copycourseheading'] = 'Kopieer een cursus';
 $string['copycoursetitle'] = 'Kopieer cursus:{$a}';
 $string['copydest'] = 'Bestemming';
-$string['copyfieldnotfound'] = 'Een vereist veld werd niet gevonden';
+$string['copyfieldnotfound'] = 'Een vereist veld werd niet gevonden voor velden: {$a}';
 $string['copyformfail'] = 'Ajax insturen van cursuskopie mislukt.';
 $string['copyingcourse'] = 'Cursus kopiëren bezig';
 $string['copyingcourseshortname'] = 'aan het kopiëren';

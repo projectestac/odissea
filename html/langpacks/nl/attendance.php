@@ -92,7 +92,6 @@ $string['caleventcreated'] = 'Kalendergebeurtenis voor sessie succesvol aangemaa
 $string['caleventdeleted'] = 'Kalendergebeurtenis voor sessie succesvol verwijderd';
 $string['calmonths'] = 'januari,februari,maart,april,mei,juni,juli,augustus,september,oktober,november,december';
 $string['calshow'] = 'Kies datum';
-$string['caltoday'] = 'Vandaag';
 $string['calweekdays'] = 'zo,ma,di,wo,do,vr,za,zo';
 $string['cannottakeforgroup'] = 'U kan geen aanwezigheid opnemen voor groep "{$a}"';
 $string['categoryreport'] = 'Cursus categorie rapportage';

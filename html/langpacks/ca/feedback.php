@@ -57,6 +57,7 @@ $string['complete_the_form'] = 'Responeu les preguntes';
 $string['completed'] = 'Completat';
 $string['completed_feedbacks'] = 'Respostes enviades';
 $string['completedon'] = 'S\'ha completat el {$a}';
+$string['completiondetail:submit'] = 'Tramet la retroalimentació';
 $string['completionsubmit'] = 'Mostra com a completada si s\'ha tramès la retroalimentació';
 $string['configallowfullanonymous'] = 'Si habiliteu aquesta opció, els usuaris podran completar una activitat de retroalimentació a la pàgina principal sense necessitat d\'iniciar sessió.';
 $string['confirmdeleteentry'] = 'Esteu segur de voler suprimir aquesta entrada?';

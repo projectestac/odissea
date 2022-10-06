@@ -64,7 +64,7 @@ $string['cannotadd'] = 'Ezin duzu sarrerarik gehitu!';
 $string['cannotdeletepreset'] = 'Errorea aurretiko ezarpena ezabatzean!';
 $string['cannotoverwritepreset'] = 'Errorea aurretiko ezarpenak gainidaztean';
 $string['cannotunziptopreset'] = 'Ezin izan da aurretiko ezarpenen direktoriora deskonprimatu';
-$string['checkbox'] = 'Aukera anizkoitzeko laukitxoa';
+$string['checkbox'] = 'Aukera anizkoitzeko laukitxoak';
 $string['chooseexportfields'] = 'Aukeratu esportatu nahi duzun eremua';
 $string['chooseexportformat'] = 'Aukeratu zein formatutan esportatu nahi duzun hona';
 $string['chooseorupload'] = 'Aukeratu fitxategia';
@@ -231,7 +231,7 @@ $string['invalidrecord'] = 'Erregistroa ezegokia da';
 $string['invalidurl'] = 'Sartu duzun URLa ez da onargarria';
 $string['jstemplate'] = 'Javascript txantiloia';
 $string['latitude'] = 'Latitudea';
-$string['latlong'] = 'Latitudea/Longitudea';
+$string['latlong'] = 'Koordenatuak';
 $string['latlongboth'] = 'Latitudea eta longitudea beharrekoak dira.';
 $string['latlongdownloadallhint'] = 'Sarrera guztietarako esteka KML gisa jaitsi';
 $string['latlongkmllabelling'] = 'Nola etiketatu itemak KML fitxategietan (Google Earth)';
@@ -253,24 +253,24 @@ $string['menuchoose'] = 'Aukeratu...';
 $string['missingdata'] = 'Datu-IDa edo objektua eman behar diozu eremua motari';
 $string['missingfield'] = 'Programatze-errorea: eremua edota datua zehaztu behar duzu eremu mota definitzerakoan.';
 $string['modulename'] = 'Datu-basea';
-$string['modulename_help'] = 'Datu-basea jarduera moduluak irakasleei edo ikasleei edozein gairen inguruko sarreren bilduma bat sortu, erakutsi eta bilatzeko aukera ematen die. Sarreren egitura irakasleek definitzen dituzten eremuen bidez eratzen da. Eremuak mota askotakoak izan daitezke, besteak beste kontrol-laukitxoak, aukera-botoiak, aukera-menuak, testu edo zenbaki eremuak, URLak, irudiak eta igotako fitxategiak.
+$string['modulename_help'] = 'Datu-baseak irakasleei edo ikasleei sarreren bilduma bat sortu, erakutsi eta bilatzeko aukera ematen die.
 
-Datu-baseko sarrerak zerrendatu, ikusi edo editatzean informazioa erakusteko diseinua datu-baseen txantiloien bidez kontrolatu daiteke. Datu-base jarduerak ikastaroen artean aurretiko ezarpen moduan partekatu daitezke eta irakasleek datu-base sarrerak inportatu eta esportatu ditzakete.
+Sarreren egitura eremu mota ezberdinen bidez eratzen da, hala nola testu laburrak, aukera-menuak, testu eremuak, URLak, irudiak edo igotako fitxategiak.
+
+Irakasle gisa sarreretan iruzkinak egin eta kalifikatu ditzakete. Irakasleek ikasleei ere sarrerak kalifikatzeko aukera eman ahal diete (parekoen arteko ebaluazioa). Ebaluazioak batu daitezke behin-betiko ebaluazioa lortzeko, eta azken hau izango da kalifikazio-liburuan gordeko dena.
 
 Datu-baserako esteka automatikoak egiteko iragazkia piztuta badago, datu-basean dagoen edozein sarrera automatikoki estekatuko da ikastaroan hitz edo esaldi horiek agertzen direnean.
 
-Irakasleek sarreretan iruzkinak egitea ahalbide dezake. Irakasleek sarrerak kalifika ditzakete, baita ikasleek ere (parekoen arteko ebaluazioa). Ebaluazioak batu daitezke behin-betiko ebaluazioa lortzeko, eta azken hau izango da kalifikazio-liburuan gordeko dena.
-
-Datu-base jarduerak erabilera anitz izan ditzake, hala nola
+Datu-baseak erabilera anitz izan ditzake, hala nola
 
 * Elkarlanean egindako bildumak sortzeko (web-estekak, liburuak, liburu-kritikak, aldizkari-erreferentziak,...)
-* Ikasleek sortutako edukiak erakusteko (argazkiak, posterrak, web-guneak, olerkiak,...) eta beren iruzkinak eta kritikak jasotzeko.';
+* Ikasleek sortutako edukiak erakusteko (argazkiak, posterrak, webguneak, olerkiak,...) eta beren iruzkinak eta kritikak jasotzeko.';
 $string['modulenameplural'] = 'Datu-baseak';
 $string['more'] = 'Gehiago';
 $string['moreurl'] = 'URL gehiago';
 $string['movezipfailed'] = 'Ezin da zip-a mugitu';
 $string['multientry'] = 'Sarrera bikoiztua';
-$string['multimenu'] = 'Menu (aukera anizkoitza)';
+$string['multimenu'] = 'Menua (aukera anizkoitzekoa)';
 $string['multipletags'] = 'Etiketa asko aurkitu dira! Txantiloia ez da gorde';
 $string['newentry'] = 'Sarrera berria';
 $string['newfield'] = 'Sortu beste eremu bat';

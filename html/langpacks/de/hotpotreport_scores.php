@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Bewertungsübersicht';
+$string['privacy:metadata'] = 'Das Modul "Bewertungsübersicht" speichert keine personenbezogenen Daten.';

@@ -31,7 +31,7 @@ $string['nooauthcredentials'] = 'شهادات مصادقة OAuth مطلوبة.';
 $string['nooauthcredentials_help'] = 'لاستعمال ملحق محفظة Picasa، عليك تعريف شهادة مصادقة OAuth في إعدادات المحفظة.';
 $string['oauthinfo'] = '<p>لاستعمال هذه الإضافة، عليك تسجيل موقعك في Google، كما هو موصوف في التوثيقات <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>كجزء من عملية التسجيل، عليك إدخال الرابط الآتي بمثابة \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p><p>بمجرد التسجيل، سيتم تزويدك بمُعرَّف الزبون وكلمة السر وبهما يمكنك تهيئة كل إضافات Google Drive و Picasa.</p>';
 $string['pluginname'] = 'Picasa';
-$string['privacy:metadata'] = 'هذا الملحق يرسل البيانات خارجياً إلى حساب Picasa مرتبط. هو لا يحفظ البيانات محلياً';
+$string['privacy:metadata'] = 'هذه الإضافة ترسل البيانات خارجياً إلى حساب Picasa مرتبط. هو لا يحفظ البيانات محلياً';
 $string['privacy:metadata:data'] = 'البيانات الشخصية المُمرَّرة عبر نظام المحفظة الفرعي';
 $string['secret'] = 'كلمة السر';
 $string['sendfailed'] = 'فشل نقل الملف {$a} إلى Picasa';

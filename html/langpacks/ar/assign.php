@@ -231,10 +231,10 @@ $string['feedbackavailabletext'] = '{$a->username} قد أعطى إفادة بش
  يمكن أن ترى تلك الملاحظات مُلحقة بتسليمك للواجب في الرابط التالي:
 
     {$a->url}';
-$string['feedbackplugin'] = 'ملحق الإفادة';
-$string['feedbackpluginforgradebook'] = 'ملحق الإفادة الذي سيضع التعليقات في سجل التقديرات';
-$string['feedbackpluginforgradebook_help'] = 'يمكن لملحق إفادة واحد فقط للواجبات أن يضع الإفادات في سجل التقديرات.';
-$string['feedbackplugins'] = 'ملاحق الإفادات';
+$string['feedbackplugin'] = 'إضافة الإفادة';
+$string['feedbackpluginforgradebook'] = 'إضافة الإفادة الذي سيضع التعليقات في سجل التقديرات';
+$string['feedbackpluginforgradebook_help'] = 'يمكن لإضافة إفادة واحدة فقط للواجبات أن يضع الإفادات في سجل التقديرات.';
+$string['feedbackplugins'] = 'إضافات الإفادات';
 $string['feedbacksettings'] = 'إعدادات الإفادة';
 $string['feedbacktypes'] = 'أنواع الإفادات';
 $string['filesubmissions'] = 'تسليمات الملفات';

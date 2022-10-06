@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['checkin'] = 'Сохранить строки в языковой пакет';
-$string['checkout'] = 'Открыть для редактирования языковой пакет';
+$string['checkout'] = 'Открыть языковой пакет для редактирования';
 $string['checkoutdone'] = 'Языковой пакет загружен';
 $string['checkoutinprogress'] = 'Загружается языковой пакет';
 $string['cliexportfileexists'] = 'Файл для {$a->lang} уже есть, пропущен. Если вы хотите перезаписать, добавьте опцию --override=true.';

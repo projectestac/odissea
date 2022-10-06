@@ -168,7 +168,6 @@ $string['filter_label_rates'] = 'Beoordeling';
 $string['filter_label_show_mine'] = 'Mijn vragen';
 $string['filter_label_tags'] = 'Tag';
 $string['finish_button'] = 'Beëindigen';
-$string['image_placeholder'] = '[image]';
 $string['invalidcomment'] = 'ongeldige opmerking';
 $string['invalidemail'] = 'Dit e-mailadres is ongeldig. Voer een enkel e-mailadres in.';
 $string['lastattempt_right'] = '✓';

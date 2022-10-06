@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['anycollection'] = '任何';
 $string['anytype'] = '全部';
-$string['configtitle'] = '版块标题';
-$string['defaultdisplay'] = '要显示的标签类型';
+$string['configtitle'] = '标记版块标题';
+$string['defaultdisplay'] = '显示标签';
 $string['disabledtags'] = '标签被禁用';
 $string['pluginname'] = '标签';
 $string['privacy:metadata'] = '“标记”板块仅显示存储在其他位置的数据。';

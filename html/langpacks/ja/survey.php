@@ -191,7 +191,7 @@ $string['collespintro'] = 'この調査の目的はあなたがオンライン�
 ありがとうございます。';
 $string['collespname'] = 'COLLES (要望)';
 $string['completiondetail:submit'] = '回答を送信する';
-$string['completionsubmit'] = '完了するには学生はこの活動に送信する必要があります。';
+$string['completionsubmit'] = '学生は送信する必要があります。';
 $string['customintro'] = '説明';
 $string['deleteallanswers'] = 'すべての調査回答を削除する';
 $string['deleteanalysis'] = '回答分析を削除する';

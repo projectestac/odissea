@@ -29,6 +29,7 @@ $string['addmorechoiceblanks'] = '添加 {no} 个空白选项';
 $string['answer'] = '答案';
 $string['blank'] = '空白';
 $string['correctansweris'] = '正确答案是： {$a}';
+$string['errorlimitedchoice'] = '选项 [[{$a}]] 已多次使用，但未设置为“无限制”。 请重新检查这个问题。';
 $string['infinite'] = '无限制';
 $string['pleaseputananswerineachbox'] = '请在每个盒子里放一个答案。';
 $string['pluginname'] = '拖放填空题';

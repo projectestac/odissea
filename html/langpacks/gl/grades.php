@@ -234,6 +234,7 @@ $string['externalurl'] = 'URL externo';
 $string['externalurl_desc'] = 'De usarse un libro de cualificacións externo, debe especificar aquí o URL.';
 $string['extracreditvalue'] = 'Valor de punto extra para {$a}';
 $string['extracreditwarning'] = 'Nota: Axustando todos os elementos dunha categoría a punto adicional, retiraranse de xeito efectivo do cálculo da cualificación. Xa que non haberá total de puntos';
+$string['fail'] = 'Suspendido';
 $string['feedback'] = 'Comentarios';
 $string['feedback_help'] = 'Esta caixa activa que poida engadirse calquera comentario sobre a cualificación.';
 $string['feedbackadd'] = 'Engadir comentario';
@@ -414,6 +415,15 @@ $string['importcsv_help'] = 'as cualificacións poden importarse mediante un fic
 Pode obterse un ficheiro no formato correcto ao exportar primeiramente algunhas cualificacións. Este ficheiro pode entón editarse e gardarse como un ficheiro CSV.';
 $string['importcsv_link'] = 'grade/import/csv/index';
 $string['importcustom'] = 'Importar como resultados personalizados (só este curso)';
+$string['importdata'] = 'Datos';
+$string['importdata_help'] = 'As cualificacións pódense pegar directamente desde unha folla de cálculo OpenDocument ou Excel co formato seguinte:
+
+* Polo menos unha columna debe conter datos de identidade do usuario: nome de usuario, enderezo de correo-e ou número de identificación.
+* Outras columnas deben ter títulos como para as actividades existentes ou os elementos de cualificación.
+
+Pódese obter unha folla de cálculo con formato correcto exportando primeiro algunhas cualificacións. A folla de cálculo pódese editar para engadir máis cualificacións e gardarse.
+
+Seleccione e copie as columnas que quere importar da folla de cálculo e após pégueas neste campo.';
 $string['importerror'] = 'produciuse un erro, este script non foi invocado cos parámetros correctos.';
 $string['importfailed'] = 'Non foi posíbel importar';
 $string['importfeedback'] = 'Importar comentarios';
@@ -609,6 +619,7 @@ $string['overridesitedefaultgradedisplaytype'] = 'Anular os valores predetermina
 $string['overridesitedefaultgradedisplaytype_help'] = 'Se está marcada, poden estabelecerse as letras de cualificación e os límites para o curso, no canto de empregar os valores predeterminados do sitio.';
 $string['overrideweightofa'] = 'Anular a ponderación de {$a}';
 $string['parentcategory'] = 'Categoría principal';
+$string['pass'] = 'Aprobado';
 $string['pctoftotalgrade'] = '% da cualificación total';
 $string['percent'] = 'Porcentaxe';
 $string['percentage'] = 'Porcentaxe';

@@ -613,10 +613,10 @@ $string['editmyprofile'] = 'Redigera profil';
 $string['editorbgcolor'] = 'Bakgrundsfärg';
 $string['editorcleanonpaste'] = 'Rensa HTML skapad av Word när du klistrar in';
 $string['editorcommonsettings'] = 'Generella inställningar';
-$string['editordefaultfont'] = 'Standardtypsnitt';
+$string['editordefaultfont'] = 'Standardteckensnitt';
 $string['editorenablespelling'] = 'Aktivera stavningskontroll';
 $string['editorfontlist'] = 'Lista över typsnitt';
-$string['editorfontsize'] = 'Standardstorlek på typsnitt';
+$string['editorfontsize'] = 'Standardteckenstorlek';
 $string['editorpreferences'] = 'Välj textredigerare';
 $string['editorresettodefaults'] = 'Återställ till standardvärden';
 $string['editorsettings'] = 'Inställningar för redigerare';
@@ -946,7 +946,7 @@ $string['forcepasswordresetfailurenotice'] = 'Ditt nuvarande lösenord uppfyller
 $string['forcepasswordresetnotice'] = 'Ditt nuvarande lösenord uppfyller inte längre kraven i den angivna lösenordsprincipen. Du behöver återställa ditt lösenord för att logga in.
   {$a}';
 $string['forcetheme'] = 'Tvinga tema';
-$string['forgotaccount'] = 'Förlorat lösenordet?';
+$string['forgotaccount'] = 'Glömt lösenordet?';
 $string['forgotten'] = 'Glömt användarnamn eller lösenord?';
 $string['forgottenduplicate'] = 'Den här e-postadressen används av ett flertal konton. Ange ett användarnamn istället.';
 $string['forgotteninvalidurl'] = 'URL till återställning av ogiltigt lösenord.';
@@ -1081,7 +1081,7 @@ $string['htmleditordisabled'] = 'Du har valt bort Richtext-redigeraren i din anv
 $string['htmleditordisabledadmin'] = 'Administratören har inaktiverat HTML-redigeraren på den här webbplatsen';
 $string['htmleditordisabledbrowser'] = 'HTML-redigeraren är inte tillgänglig eftersom du använder en inkompatibel webbläsare';
 $string['htmlfilesonly'] = 'Endast HTML-filer';
-$string['htmlformat'] = 'HTML-format (behövs för att visa formatterad text).';
+$string['htmlformat'] = 'HTML-format';
 $string['icon'] = 'Ikon';
 $string['icqnumber'] = 'ICQ nummer';
 $string['idnumber'] = 'ID nummer';
@@ -1450,16 +1450,16 @@ $string['newuser'] = 'Ny användare';
 $string['newusernewpasswordsubj'] = 'Nytt användarkonto';
 $string['newusernewpasswordtext'] = 'Hej {$a->firstname}!
 
-Ett nytt konto har skapats för dig i \'{$a->sitename}\'
-och du har fått ett tillfälligt lösenord.
+Ett nytt konto har skapats åt dig på \'{$a->sitename}\'.
+Du har fått ett tillfälligt lösenord.
 
-Dina inloggningsuppgifter är nu:
+Dina inloggningsuppgifter är:
 
-   användarnamn: {$a->username}
-   lösenord: {$a->newpassword}
+   Användarnamn: {$a->username}
+   Lösenord: {$a->newpassword}
       (du måste ändra ditt lösenord när du loggar in för första gången)
 
-För att börja använda \'{$a->sitename}\', logga in via följande länk:
+För att börja använda <strong>{$a->sitename}</strong>, logga in via följande länk:
    {$a->link}
 
 I de flesta e-postprogram visas adressen ovan som en länk
@@ -1467,7 +1467,9 @@ som du bara behöver klicka på. Om det inte fungerar kan du
 klippa ut adressen och klistra in den i adressraden på
 din webbläsare.
 
-Med vänlig hälsning från \'{$a->sitename}\'.
+Vänliga hälsningar,
+{$a->sitename}
+
 {$a->signoff}';
 $string['newusers'] = 'Nya användare';
 $string['newwindow'] = 'Nytt fönster';

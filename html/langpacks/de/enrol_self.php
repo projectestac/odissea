@@ -89,7 +89,7 @@ $string['maxenrolled'] = 'Maximale Einschreibungen';
 $string['maxenrolled_help'] = 'Diese Option legt die maximale Anzahl der erlaubten Nutzer/innen mit Selbsteinschreibung fest (0 = unbeschränkt).';
 $string['maxenrolledreached'] = 'Die maximale Anzahl der erlaubten Nutzer/innen mit Selbsteinschreibung ist bereits erreicht.
 ';
-$string['messageprovider:expiry_notification'] = 'Systemnachricht beim Ablauf von Selbsteinschreibungen';
+$string['messageprovider:expiry_notification'] = 'Systemnachricht zum Ablauf von Selbsteinschreibungen';
 $string['newenrols'] = 'Selbsteinschreibung erlauben';
 $string['newenrols_desc'] = 'Nutzer/innen dürfen sich selbst einschreiben';
 $string['newenrols_help'] = 'Diese Option legt fest, ob Nutzer/innen sich selber in diesen Kurs einschreiben dürfen.';
@@ -116,7 +116,7 @@ $string['self:unenrol'] = 'Nutzer/innen aus dem Kurs abmelden';
 $string['self:unenrolself'] = 'Selbst aus dem Kurs abmelden';
 $string['sendcoursewelcomemessage'] = 'Begrüßungstext versenden';
 $string['sendcoursewelcomemessage_help'] = 'Wenn ein Nutzer/innen sich in den Kurs einschreiben, kann ihnen eine Begrüßungsnachricht gesendet werden. Wenn diese vom Kurskontakt geschickt wird (voreingestellt ist Trainer/in) und mehrere Personen diese Rolle haben, wird die E-Mail von der Person versendet, der diese Rolle zuerst zugewiesen wurde.';
-$string['sendexpirynotificationstask'] = 'Systemnachricht bei Ablauf von Selbsteinschreibungen';
+$string['sendexpirynotificationstask'] = 'Systemnachricht zum Ablauf von Selbsteinschreibungen';
 $string['showhint'] = 'Hinweis zeigen';
 $string['showhint_desc'] = 'Erstes Zeichen des Einschreibeschlüssels zeigen';
 $string['status'] = 'Existierende Einschreibungen erlauben';

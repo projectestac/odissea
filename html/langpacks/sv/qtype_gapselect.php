@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Blankt för {no} fler svar';
 $string['answer'] = 'Svar';
+$string['blanknumber'] = 'Tom {$a}';
 $string['choices'] = 'Alternativ';
 $string['choicex'] = 'Alternativ [[{no}]]';
 $string['combinedcontrolnamegapselect'] = 'listruta';
