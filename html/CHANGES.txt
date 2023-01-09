@@ -4,6 +4,23 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
 
+Changes 22.12.13
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.11+
+- Updated langpacks
+- Attendance: Upgraded module
+- Choicegroup: Upgraded module
+- Clickedu: Upgraded module
+- completion_progress: Upgraded block
+- Hotpot: Downgraded module
+- GeoGebra: Upgraded module
+- migratehvp2h5p: Upgraded tool
+- oAuth2 client: Fixed save of oAuth2 issuers when acceptrisk is checked
+- oAuth2 client: Ensure method get_issuer exists before calling it.
+- Theme xtec2020: Fix for collapsible menu using custommenuitems
+- Wiris: Upgraded all components
+
+
 Changes 22.10.04
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 3.11.10+
