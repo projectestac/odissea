@@ -57,15 +57,16 @@
   require(['jquery'], function($) {
     $(function () {
       // Hide all submenus
-      $('#main_navigation .nav-item .dropdown-menu ul').css({ display: 'none'});
+      $('#main_navigation .navbar-nav .nav-item .dropdown-menu ul').css({ display: 'none'});
       // Store a reference to the currently deployed submenu
       document.$currentSubMenu = null;
       // Show the little triangle near items that are submenu headers
-      $('#main_navigation .nav-item .dropdown-item[id]').addClass('dropdown-toggle');
+      $('#main_navigation .navbar-nav .nav-item .dropdown-item[id]').addClass('dropdown-toggle');
       // Define the click handler
-      $('#main_navigation .nav-item .dropdown-item').click((ev) => {
+      $('#main_navigation .navbar-nav .nav-item .dropdown-item').click((ev) => {
         const id = ev.target.id;
-        if (id) {
+        // Only use id starting with 'drop-down' texts to avoid conflicts with default course forum.
+        if (id && id.startsWith("drop-down")) {
           // Dropdown items with 'id' are submenu headers
           ev.stopPropagation();
           ev.preventDefault();

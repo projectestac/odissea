@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['autosavefailed'] = 'Keine Serververbindung. Wenn Sie diese Seite jetzt übertragen, könnten Ihre Änderungen verloren gehen.';
-$string['autosavefrequency'] = 'Frequenz der Auto-Speicherung';
+$string['autosavefailed'] = 'Keine Serververbindung. Wenn Sie die Seite jetzt übertragen, könnten Ihre Änderungen verloren gehen.';
+$string['autosavefrequency'] = 'Intervall zur automatischen Speicherung';
 $string['autosavefrequency_desc'] = 'Diese Option legt die Zeit zwischen zwei automatischen Speichervorgängen fest. Atto speichert den Text im Editor automatisch, so dass der Text wiederhergestellt werden kann, wenn die selbe Person erneut das selbe Formular aufruft.';
 $string['autosaves'] = 'Info zur Auto-Speicherung';
-$string['autosavesucceeded'] = 'Entwurf gesichert.';
+$string['autosavesucceeded'] = 'Entwurf gesichert';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';
 $string['errorcannotparseline'] = 'Die Zeile \'{$a}\' ist nicht richtig formatiert.';
@@ -44,13 +44,13 @@ $string['pluginname'] = 'HTML-Editor Atto';
 $string['privacy:metadata:database:atto_autosave'] = 'Automatisch gespeicherte Texteditorentwürfe';
 $string['privacy:metadata:database:atto_autosave:drafttext'] = 'Der gespeicherte Text';
 $string['privacy:metadata:database:atto_autosave:timemodified'] = 'Zeitpunkt der Bearbeitung des Inhalts.';
-$string['privacy:metadata:database:atto_autosave:userid'] = 'ID des Nutzers, dessen Daten gespeichert wurden';
+$string['privacy:metadata:database:atto_autosave:userid'] = 'ID der Person, deren Daten gespeichert wurden';
 $string['recover'] = 'Wiederherstellen';
 $string['settings'] = 'Einstellungen';
 $string['subplugintype_atto'] = 'Atto Plugin';
 $string['subplugintype_atto_plural'] = 'Atto Plugins';
-$string['taskautosavecleanup'] = 'Abgelaufene Autosave-Entwürfe löschen';
-$string['textrecovered'] = 'Der Entwurf dieses Textes wurde automatisch wiederhergestellt.';
+$string['taskautosavecleanup'] = 'Abgelaufene automatische Entwurfssicherungen löschen';
+$string['textrecovered'] = 'Der Textentwurf wurde automatisch wiederhergestellt.';
 $string['toolbarconfig'] = 'Menüleiste';
 $string['toolbarconfig_desc'] = 'Mit dieser Option werden die Plugins und deren Reihenfolge in der Menüleiste festgelegt. Für die Konfiguration werden Gruppennamen angegeben (einer pro Zeile), jeweils gefolgt von einem Gleichheitszeichen und der kommagetrennten Liste von Plugins für diese Gruppe. Die Gruppennamen müssen eindeutig sein und sollten zeigen, was die Symbole in der jeweiligen Gruppe gemeinsam haben. Symbol- und Gruppennamen dürfen nur einmal vorkommen und nur alphanumerische Zeichen enthalten.';
 $string['warningstatus'] = 'Warnung';

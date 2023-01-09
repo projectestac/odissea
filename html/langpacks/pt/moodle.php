@@ -68,7 +68,7 @@ $string['additionalnames'] = 'Nomes adicionais';
 $string['addlinkhere'] = 'Adicionar uma hiperligação aqui';
 $string['addnew'] = 'Adicionar novo {$a}';
 $string['addnewcategory'] = 'Adicionar nova categoria';
-$string['addnewcourse'] = 'Adicionar nova disciplina';
+$string['addnewcourse'] = 'Adicionar disciplina';
 $string['addnewuser'] = 'Adicionar novo utilizador';
 $string['addnousersrecip'] = 'Adicionar utilizadores que não tenham acedido este(a) {$a} à lista de destinatários';
 $string['addpagehere'] = 'Adicionar texto aqui';
@@ -168,8 +168,8 @@ $string['authenticateduserdescription'] = 'Todos os utilizadores autenticados.';
 $string['authentication'] = 'Autenticação';
 $string['authenticationplugins'] = 'Módulos de Autenticação';
 $string['autosubscribe'] = 'Subscrição de fóruns';
-$string['autosubscribeno'] = 'Não: Não quero subscrever tópicos dos fóruns automaticamente';
-$string['autosubscribeyes'] = 'Sim: Quero subscrever o tópico do fórum quando submeto uma mensagem';
+$string['autosubscribeno'] = 'Não: não quero subscrever tópicos dos fóruns automaticamente';
+$string['autosubscribeyes'] = 'Sim: quero subscrever o tópico do fórum quando submeto uma mensagem';
 $string['availability'] = 'Disponibilidade';
 $string['availablecourses'] = 'Disciplinas disponíveis';
 $string['back'] = 'Voltar';
@@ -200,7 +200,7 @@ $string['backuplogdetailed'] = 'Estatísticas detalhadas de execução';
 $string['backuploglaststatus'] = 'Relatório sobre cópias de segurança automáticas das disciplinas';
 $string['backupmissinguserinfoperms'] = 'Nota: Esta cópia de segurança não contém dados dos utilizadores. As atividades Exercise e Workshop não serão incluídas porque não são compatíveis com este tipo de cópia de segurança.';
 $string['backupnext'] = 'Próxima cópia de segurança';
-$string['backupnonisowarning'] = 'Advertência: esta cópia de segurança é para uma versão do Moodle que não usa Unicode (anterior a 1.6). Se esta cópia contiver caracteres que não sejam ISO-8859-1, poderão ficar CORROMPIDOS se tentar restaurá-los para esta versão Unicode do Moodle. Consulte a página <a href="https://docs.moodle.org/en/Backup_FAQ">Backup FAQ</a> para mais informações sobre como recuperar corretamente esta cópia de segurança.';
+$string['backupnonisowarning'] = 'Aviso: esta cópia de segurança é de uma versão do Moodle que não usa Unicode (anterior a 1.6). Se esta cópia contiver caracteres que não sejam ISO-8859-1, poderão ficar CORROMPIDOS se tentar restaurá-los para esta versão Unicode do Moodle. Consulte a página <a href="https://docs.moodle.org/en/Backup_FAQ">Backup FAQ</a> para mais informações sobre como recuperar corretamente esta cópia de segurança.';
 $string['backupnotyetrun'] = 'Cópia de Segurança Automática pendente';
 $string['backuporiginalname'] = 'Nome da cópia de segurança';
 $string['backuproleassignments'] = 'Incluir atribuições para estes papéis na cópia de segurança';
@@ -418,7 +418,7 @@ $string['courserequestreason'] = 'Justificação do pedido de criação da disci
 $string['courserequestsuccess'] = 'O seu pedido de criação de disciplina foi registado com sucesso. Em breve irá receber um e-mail a informá-lo do resultado do seu pedido.';
 $string['courserequestsupport'] = 'Informação de suporte para auxiliar o administrador a avaliar este pedido';
 $string['courserequestwarning'] = 'O utilizador que efetuou o pedido da disciplina será inscrito automaticamente e ser-lhe-á atribuído o papel de {$a}.';
-$string['courserestore'] = 'Reposição da disciplina';
+$string['courserestore'] = 'Restauro da disciplina';
 $string['courses'] = 'Disciplinas';
 $string['coursesearch'] = 'Procurar disciplinas';
 $string['coursesearch_help'] = 'Pode pesquisar várias palavras de uma só vez e especificar a pesquisa de várias formas:
@@ -504,11 +504,11 @@ $string['defaultcompetencescaledesc'] = 'Uma escala de avaliação binária que 
 $string['defaultcompetencescalenotproficient'] = 'Ainda não adquiriu a competência';
 $string['defaultcompetencescaleproficient'] = 'Adquiriu a competência';
 $string['defaultcoursestudent'] = 'Aluno';
-$string['defaultcoursestudentdescription'] = 'Os alunos são geralmente os que têm menos privilégios dentro de uma disciplina.';
+$string['defaultcoursestudentdescription'] = 'Os alunos são geralmente os que têm menos privilégios dentro da disciplina.';
 $string['defaultcoursestudents'] = 'Alunos';
 $string['defaultcoursesummary'] = 'Escreva aqui um parágrafo que explique de forma concisa e interessante o que esta disciplina é.';
 $string['defaultcourseteacher'] = 'Professor';
-$string['defaultcourseteacherdescription'] = 'Os professores podem realizar qualquer ação dentro de uma disciplina, incluindo alteração das atividades e avaliação dos alunos.';
+$string['defaultcourseteacherdescription'] = 'Os professores podem realizar qualquer ação dentro da disciplina, incluindo alteração das atividades e avaliação dos alunos.';
 $string['defaultcourseteachers'] = 'Professores';
 $string['defaulteditor'] = 'Editor predefinido';
 $string['defaulthomepageuser'] = 'Página inicial';
@@ -627,7 +627,7 @@ $string['editsummary'] = 'Editar sumário';
 $string['editthisactivity'] = 'Editar esta atividade';
 $string['editthiscategory'] = 'Editar esta categoria';
 $string['edittitle'] = 'Editar nome';
-$string['edittitleinstructions'] = '\'Esc\' para cancelar, \'Enter\' quando terminar';
+$string['edittitleinstructions'] = '\'Esc\' para cancelar, \'Enter\' para terminar';
 $string['edituser'] = 'Editar contas de utilizadores';
 $string['edulevel'] = 'Todos os eventos';
 $string['edulevel_help'] = '* Ensino - ações realizadas por um professor, por exemplo, atualizar um recurso
@@ -660,15 +660,15 @@ $string['emailconfirmsent'] = '<p>Acaba de ser enviada uma mensagem para o seu e
 $string['emailconfirmsentfailure'] = 'Falhou o envio do e-mail de confirmação';
 $string['emailconfirmsentsuccess'] = 'E-mail de confirmação enviado com sucesso';
 $string['emaildigest'] = 'Tipo de sumário de fóruns';
-$string['emaildigest_help'] = 'Esta é a configuração de resumo diário que os fóruns irão usar por predefinição.
+$string['emaildigest_help'] = 'Esta é a configuração do resumo diário que os fóruns irão usar por predefinição.
 
 *Sem sumário: irá receber um e-mail por cada mensagem publicada no fórum;
 
 *Completo: irá receber um e-mail diário com o conteúdo completo de cada mensagem publicada no fórum;
 
-*Assuntos - irá receber um e-mail diário com os assuntos de cada mensagem publicada no fórum.
+*Assuntos: irá receber um e-mail diário com os assuntos de cada mensagem publicada no fórum.
 
-Poderá ainda escolher uma configuração para cada fórum, se assim pretender.';
+Poderá escolher uma configuração específica para cada fórum, se assim pretender.';
 $string['emaildigestcomplete'] = 'Completo (e-mail diário com mensagens completas)';
 $string['emaildigestoff'] = 'Sem sumário (um e-mail por cada mensagem submetida)';
 $string['emaildigestsubjects'] = 'Assuntos (e-mail diário com assuntos das mensagens)';
@@ -1042,7 +1042,7 @@ $string['icon'] = 'Ícone';
 $string['icqnumber'] = 'Número de ICQ';
 $string['idnumber'] = 'Número de identificação (ID)';
 $string['idnumbercourse'] = 'Código';
-$string['idnumbercourse_help'] = 'O código de uma disciplina só é usado quando comunica com sistemas externos e não é mostrado na plataforma. Se a disciplina tem um código oficial, pode ser inserido, caso contrário, o campo pode ser deixado em branco.';
+$string['idnumbercourse_help'] = 'O código de uma disciplina só é usado quando comunica com sistemas externos e não é mostrado na plataforma. Se a disciplina tem um código oficial pode ser inserido, caso contrário, o campo pode ser deixado em branco.';
 $string['idnumbercoursecategory'] = 'Número de identificação da categoria';
 $string['idnumbercoursecategory_help'] = 'O número de identificação (ID) de uma categoria é usado apenas para comunicação com sistemas externos e não é exibido em nenhuma parte do site. Se a categoria tem um código do nome oficial, este pode ser inserido, caso contrário, o campo pode ficar em branco.';
 $string['idnumbergroup'] = 'Número de identificação do grupo';
@@ -1356,7 +1356,7 @@ $string['mymoodledashboard'] = 'Meu Painel do utilizador Moodle';
 $string['myprofile'] = 'Meu perfil';
 $string['name'] = 'Designação';
 $string['namedfiletoolarge'] = 'O ficheiro \'{$a->filename}\' é muito grande e não pode ser carregado';
-$string['nameforlink'] = 'Que nome deseja dar a esta hiperligação?';
+$string['nameforlink'] = 'Qual o nome que pretende dar a esta hiperligação?';
 $string['nameforpage'] = 'Nome';
 $string['navigation'] = 'Navegação';
 $string['needed'] = 'Necessários';
@@ -1385,7 +1385,7 @@ Se não conseguir seguir esta hiperligação, copie o URL e cole na barra de end
 
 Cumprimentos do(a) administrador(a) da plataforma de e-learning  \'{$a->sitename}\',{$a->signoff}';
 $string['newpicture'] = 'Nova foto';
-$string['newpicture_help'] = 'Para adicionar uma nova foto, procure e selecione uma imagem (formato JPG ou PNG) e clique em "Atualizar Perfil". A imagem será recortada na forma de um quadrado e redimensionada para 100x100 píxeis.';
+$string['newpicture_help'] = 'Para adicionar uma nova foto, procure e selecione uma imagem (formato JPG ou PNG) e clique em "Atualizar perfil". A imagem será recortada na forma de um quadrado e redimensionada para 100x100 píxeis.';
 $string['newpictureusernotsetup'] = 'A imagem de perfil só pode ser adicionada depois de guardar todas as informações de perfil obrigatórias.';
 $string['newsectionname'] = 'Novo nome para a secção {$a}';
 $string['newsitem'] = 'notícia';
@@ -1746,7 +1746,7 @@ $string['resources_help'] = 'Os Recursos permitem inserir na disciplina quase to
 $string['restore'] = 'Restaurar';
 $string['restorecancelled'] = 'Restauro cancelado';
 $string['restorecannotassignroles'] = 'Para restaurar necessita de atribuir papéis e não possui permissão para fazê-lo.';
-$string['restorecannotcreateorassignroles'] = 'Ao restaurar necessita de criar ou atribuir papéis na disciplina e não tem permissões para tal';
+$string['restorecannotcreateorassignroles'] = 'Ao restaurar necessita de criar ou atribuir papéis na disciplina e não tem permissão para tal';
 $string['restorecannotcreateuser'] = 'Ao restaurar necessita de criar o utilizador \'{$a}\' a partir do ficheiro da cópia de segurança e não tem permissões para tal';
 $string['restorecannotoverrideperms'] = 'O restauro precisa de redefinir permissões e você não tem permissão para tal';
 $string['restorecoursenow'] = 'Restaurar a disciplina';
@@ -2117,7 +2117,7 @@ $string['toplevelcategory'] = 'Categoria de nível superior';
 $string['total'] = 'Total';
 $string['totopofsection'] = 'Para o topo da secção: "{$a}"';
 $string['trackforums'] = 'Assinalar mensagens não lidas nos fóruns';
-$string['trackforumsno'] = 'Não: não assinalar mensagens não lidas';
+$string['trackforumsno'] = 'Não: não assinalar mensagens já lidas';
 $string['trackforumsyes'] = 'Sim: assinalar mensagens não lidas';
 $string['trysearching'] = 'Tente antes fazer uma pesquisa.';
 $string['turneditingoff'] = 'Desativar modo de edição';
@@ -2140,7 +2140,7 @@ $string['update'] = 'Atualizar';
 $string['updated'] = '{$a} foi atualizado(a)';
 $string['updatemymoodleoff'] = 'Terminar personalização desta página';
 $string['updatemymoodleon'] = 'Personalizar esta página';
-$string['updatemyprofile'] = 'Atualizar Perfil';
+$string['updatemyprofile'] = 'Atualizar perfil';
 $string['updatesevery'] = 'Atualizações a cada {$a} segundos';
 $string['updatethis'] = 'Atualizar {$a}';
 $string['updatethiscourse'] = 'Atualizar esta disciplina';

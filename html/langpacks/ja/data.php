@@ -253,6 +253,10 @@ $string['menu'] = 'メニュ';
 $string['menuchoose'] = '選択 ...';
 $string['missingdata'] = 'フィールドクラスにはデータIDまたはオブジェクトを提供してください。';
 $string['missingfield'] = 'プログラマエラー: フィールドクラスを定義するにはあなたはフィールドおよびデータを指定する必要があります。';
+$string['missingfieldtype'] = '{$a->name} のファイルタイプが見つかりませんでした。';
+$string['missingfieldtypeimport'] = '対応するフィールドタイプがインストールされていないため、次のフィールドはインポートされませんでした。';
+$string['missingfieldtypes'] = '以下のフィールドは対応するフィールドタイプがインストールされていないため、エントリを追加または編集する際にフォームに含まれません。
+ それらのラベルはまだフォームに表示されるかもしれないため、必要に応じて「エントリテンプレートを追加する」を更新してください。';
 $string['modulename'] = 'データベース';
 $string['modulename_help'] = 'データベースは参加者がエントリのコレクションを作成、維持および検索できるようにします。
 
@@ -392,6 +396,7 @@ $string['timemodified'] = '修正日時';
 $string['todatabase'] = '>> データベース';
 $string['type'] = 'フィールドタイプ';
 $string['undefinedprocessactionmethod'] = 'アクション「 {$a} 」を処理するためのアクションメソッドがData_Presetに定義されていません。';
+$string['unknown'] = '不明なフィールド';
 $string['unsupportedexport'] = '({$a->fieldtype}) をエクスポートできません。';
 $string['unsupportedfields'] = '未サポートフィールド';
 $string['unsupportedfieldslist'] = '次のフィールドはエクスポートできません:';

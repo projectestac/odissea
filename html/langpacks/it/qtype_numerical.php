@@ -69,6 +69,7 @@ $string['pluginnameadding'] = 'Creazione domanda Numerica';
 $string['pluginnameediting'] = 'Modifica domanda Numerica';
 $string['pluginnamesummary'] = 'Consente l\'uso di risposte numeriche, possibilmente con unità, valutate rispetto a modelli di risposta, possibilmente con tolleranza.';
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Numerica\' non memorizza dati personali.';
+$string['privacy:preference:defaultmark'] = 'Punteggio di default di una specifica domanda.';
 $string['relative'] = 'Relativo';
 $string['rightexample'] = 'a destra, ad esempio  come 1.00cm or 1.00km';
 $string['selectunit'] = 'Scegli una unità';

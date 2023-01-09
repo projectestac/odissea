@@ -39,7 +39,7 @@ $string['backhistory'] = 'Torna alla storico';
 $string['backoldversion'] = 'Torna alla versione precedente';
 $string['backpage'] = 'Torna alla pagina';
 $string['backtomapmenu'] = 'Torna alla Mappa';
-$string['cannotcomparenewerversion'] = 'E\' possibile confrontare la versione della pagina solamente con versioni più vecchie.';
+$string['cannotcomparenewerversion'] = 'È possibile confrontare la versione della pagina solamente con versioni più vecchie.';
 $string['cannoteditpage'] = 'Non puoi modificare questa pagina';
 $string['cannotmanagefiles'] = 'Non hai il privilegio di gestire i file wiki.';
 $string['cannotviewfiles'] = 'Non hai il privilegio di visualizzare i file wiki.';
@@ -80,17 +80,17 @@ $string['editing'] = 'Modifica pagina wiki';
 $string['editingcomment'] = 'Modifica commento';
 $string['editingpage'] = 'Modifica pagina \'{$a}\'';
 $string['editsection'] = 'modifica';
-$string['eventdiffviewed'] = 'Visualizzate differenze wiki';
-$string['eventhistoryviewed'] = 'Visualizzato storico wiki';
-$string['eventmapviewed'] = 'Visualizzata mappa pagine wiki';
-$string['eventpagecreated'] = 'Creata pagina wiki';
-$string['eventpagedeleted'] = 'Eliminata pagina wiki';
-$string['eventpagelocksdeleted'] = 'Eliminato blocco pagina wiki';
-$string['eventpageupdated'] = 'Aggiornata pagina wiki';
-$string['eventpageversiondeleted'] = 'Eliminata versione pagina wiki';
-$string['eventpageviewed'] = 'Visualizzata pagina wiki';
-$string['eventversionrestored'] = 'Ripristinata versione wiki';
-$string['eventversionviewed'] = 'Visualizzata versione pagina wiki';
+$string['eventdiffviewed'] = 'Visualizzazione differenze wiki';
+$string['eventhistoryviewed'] = 'Visualizzazione storico wiki';
+$string['eventmapviewed'] = 'Visualizzazione mappa pagine wiki';
+$string['eventpagecreated'] = 'Creazione pagina wiki';
+$string['eventpagedeleted'] = 'Eliminazione pagina wiki';
+$string['eventpagelocksdeleted'] = 'Eliminazione blocco pagina wiki';
+$string['eventpageupdated'] = 'Aggiornamento pagina wiki';
+$string['eventpageversiondeleted'] = 'Eliminazione versione pagina wiki';
+$string['eventpageviewed'] = 'Visualizzazione pagina wiki';
+$string['eventversionrestored'] = 'Ripristino versione wiki';
+$string['eventversionviewed'] = 'Visualizzazione versione pagina wiki';
 $string['filenotuploadederror'] = 'Non è stato possibile caricare correttamente il file \'{$a}\'';
 $string['files'] = 'File';
 $string['filtername'] = 'Auto link pagine wiki';
@@ -134,7 +134,7 @@ $string['insertcomment'] = 'Inserisci commento';
 $string['insertimage'] = 'Inserisci un\'immagine...';
 $string['insertimage_help'] = 'Questo menu a discesa consente l\'inserimento di un\'immagine nell\'editor wiki. Se vuoi aggiungere altre immagini, usa il tab "File".';
 $string['invalidlock'] = 'Al momento la pagina è bloccata da un altro utente.';
-$string['invalidparameters'] = 'E\' stato dato un parametro non valido.';
+$string['invalidparameters'] = 'È stato dato un parametro non valido.';
 $string['invalidsection'] = 'Sezione non valida';
 $string['invalidsesskey'] = 'La tua sessione è probabilmente terminata. Per favore annota le modifiche e autenticati nuovamente.';
 $string['javascriptdisabledlocks'] = 'Nel tuo browser Javascript è disabilitato. Le modifiche effettuate potrebbero non essere salvate correttamente.';
@@ -154,7 +154,7 @@ $string['modulename_help'] = 'Il modulo di attività wiki consente ai partecipan
 
 Il wiki mantiene lo storico delle modifiche, elencando ciascuna modifica accanto al  rispettivo autore.
 
-E\' possibile usare il wiki per:
+È possibile usare il wiki per:
 
 * dispense di gruppo o guide allo studio
 * consentire ai membri di un facoltà di pianificare incontri preparando uno schema di lavoro
@@ -182,7 +182,7 @@ $string['nohistory'] = 'Questa pagina non ha storico';
 $string['nomanagecommentpermission'] = 'Occorre il privilegio di gestire commenti';
 $string['nomanagewikipermission'] = 'Occorre il privilegio di gestire wiki';
 $string['noorphanedpages'] = 'Non ci sono pagine orfane';
-$string['nooverridelockpermission'] = 'E\' necessario il privilegio \'Ignorare blocco pagine wiki\'';
+$string['nooverridelockpermission'] = 'È necessario il privilegio \'Ignorare blocco pagine wiki\'';
 $string['norated'] = 'Questa pagina non è stata ancora valutata, se vuoi puoi essere il primo!';
 $string['norating'] = 'Nessuna valutazione';
 $string['nosearchresults'] = 'Nessun risultato';

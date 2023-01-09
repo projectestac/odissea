@@ -246,6 +246,7 @@ $string['settings_lastincorrectanswerquantifier'] = 'Últim factor de resposta i
 $string['settings_lastincorrectanswerquantifier_help'] = 'Punts per cada resposta incorrecta o parcialment correcta en l\'últim intent';
 $string['settings_lastincorrectanswerquantifier_label'] = 'Punts de les últimes respostes incorrectes';
 $string['settings_notification'] = 'Paràmetres de notificació';
+$string['settings_privatecommenting'] = 'Habilita els comentaris privats';
 $string['settings_questionquantifier'] = 'Factor de pregunta creat';
 $string['settings_questionquantifier_help'] = 'Punts per cada pregunta creada';
 $string['settings_questionquantifier_label'] = 'Punts per cada pregunta creada';
@@ -263,6 +264,7 @@ Si aquest camp per a l\'adreça de correu electrònic es deixa en blanc, aleshor
 Podeu afegir més d\'una adreça de correu electrònic, sempre que les separeu amb un punt i coma.';
 $string['settings_section_header_comment_rating'] = 'Paràmetres dels comentaris i les valoracions';
 $string['settings_section_header_question'] = 'Paràmetres de la pregunta';
+$string['settings_section_header_ranking'] = 'Paràmetres de la classificació';
 $string['show_less'] = 'Mostra menys';
 $string['show_more'] = 'Mostra més';
 $string['slot_of_slot'] = 'Pregunta {$ a-> slot} de {$ a-> slots} en aquest conjunt';

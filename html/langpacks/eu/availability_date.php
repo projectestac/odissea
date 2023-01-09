@@ -31,6 +31,7 @@ $string['direction_before'] = 'Data';
 $string['direction_from'] = 'noiztik';
 $string['direction_label'] = 'Norabidea';
 $string['direction_until'] = 'noiz arte';
+$string['error_dateconflict'] = 'Gatazkak beste data murrizketekin';
 $string['full_from'] = '<strong>{$a}</strong> igaro ondoren.';
 $string['full_from_date'] = '<strong>{$a}</strong> edo ondoren';
 $string['full_until'] = '<strong>{$a}</strong> baino lehen.';

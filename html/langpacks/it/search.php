@@ -80,7 +80,7 @@ $string['globalsearch'] = 'Ricerca globale';
 $string['globalsearchdisabled'] = 'La ricerca globale non è abilitata';
 $string['gradualreindex'] = 'Re-Indicizza gradualmente {$a}';
 $string['gradualreindex_confirm'] = 'Sei sicuro di re-indicizzare {$a}? Potrà essere necessario del tempo, anche se i dati esistenti potranno essere usati per effettuare ricerche.';
-$string['gradualreindex_queued'] = 'E\' stata richiesta la re-indicizzazione di {$a->name} ({$a->count} contesti). L\'indicizzazione darà effettuata dall\'elaborazione pianificata "Indicizzazione ricerca globale".';
+$string['gradualreindex_queued'] = 'È stata richiesta la re-indicizzazione di {$a->name} ({$a->count} contesti). L\'indicizzazione darà effettuata dall\'elaborazione pianificata "Indicizzazione ricerca globale".';
 $string['incourse'] = 'nel corso {$a}';
 $string['index'] = 'Indice';
 $string['indexwhendisabledfullnotice'] = 'L\'indicizzazione non è consentita quando la ricerca è disabilitata. Per conentirla: <a href="{$a->url}">searchindexwhendisabled</a>';

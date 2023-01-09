@@ -91,6 +91,7 @@ Om matta eller golv är acceptabelt, använd [mattan|golvet]. <BR>Rullgardinsmen
 $string['pluginnameadding'] = 'Lägger till en Gapfill-fråga';
 $string['pluginnameediting'] = 'Redigerar en Gapfill-fråga';
 $string['pluginnamesummary'] = 'En frågetyp där man ska fylla i saknade ord, antingen genom drag-och-släpp eller med menyalternativ. Mycket enkel att konstruera.';
+$string['privacy:null_reason'] = 'Frågetypen Gapfill påverkar eller lagrar ingen data i sig själv';
 $string['questioncatnotfound'] = 'Frågekategorin kunde inte hittas, klicka <a href={$a}>här</a> för att initiera och sedan din webbläsares back-knapp';
 $string['questionsmissing'] = 'Du har inga saknade ord i din frågetext';
 $string['questiontext'] = 'Frågetext';

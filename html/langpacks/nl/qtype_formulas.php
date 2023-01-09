@@ -124,7 +124,6 @@ $string['functiontakesnoargs'] = 'De functie {$a} verwerkt geen argumenten';
 $string['functiontakesonearg'] = 'De functie {$a} moet exact één argument krijgen';
 $string['functiontakesoneortwoargs'] = 'De functie {$a} moet één of twee argumenten krijgen';
 $string['functiontakestwoargs'] = 'De functie {$a} moet exact twee argumenten krijgen';
-$string['globaloptions'] = '[Globaal] -';
 $string['globalvarshdr'] = 'Variablen';
 $string['illegalformulasyntax'] = 'Ongeldige formule-syntax beginnend met \'{$a}\'';
 $string['incorrectfeedback'] = 'Voor elk fout antwoord';

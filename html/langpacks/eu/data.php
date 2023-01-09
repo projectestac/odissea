@@ -252,6 +252,10 @@ $string['menu'] = 'Menua';
 $string['menuchoose'] = 'Aukeratu...';
 $string['missingdata'] = 'Datu-IDa edo objektua eman behar diozu eremua motari';
 $string['missingfield'] = 'Programatze-errorea: eremua edota datua zehaztu behar duzu eremu mota definitzerakoan.';
+$string['missingfieldtype'] = 'Ez da aurkitu {$a->name}(r)en eremu-mota';
+$string['missingfieldtypeimport'] = 'Hurrengo eremuak ez dira inportatu euren eremu-motak ez daudelako instalatuta:';
+$string['missingfieldtypes'] = 'Hurrengo eremuetako eremu-motak ez daude instalatuta eta ez dira formularioetan sartuko sarrerak gehitu edo editatzean.
+Baliteke euren etiketak oraindik formularioan agertzea, eta beraz "Gehitu sarrera-txantiloia" dagokion moduan eguneratu ezazu:';
 $string['modulename'] = 'Datu-basea';
 $string['modulename_help'] = 'Datu-baseak irakasleei edo ikasleei sarreren bilduma bat sortu, erakutsi eta bilatzeko aukera ematen die.
 
@@ -394,6 +398,7 @@ $string['timemodified'] = 'Aldatze-data';
 $string['todatabase'] = 'datu-base honetara.';
 $string['type'] = 'Eremu mota';
 $string['undefinedprocessactionmethod'] = 'Data_Preset-en ez da ekintza-metodorik definitu "{$a}" ekintza kudeatzeko.';
+$string['unknown'] = 'Eremu ezezaguna';
 $string['unsupportedexport'] = '({$a->fieldtype}) ezin da esportatu.';
 $string['unsupportedfields'] = 'Onartu gabeko eremuak';
 $string['unsupportedfieldslist'] = 'Hurrengo eremuak ezin izan dira esportatu:';

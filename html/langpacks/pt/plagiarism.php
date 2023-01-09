@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['availableplugins'] = 'Módulos disponíveis';
-$string['configenableplagiarism'] = 'Esta opção permite aos administradores configurar módulos antiplágio (se estiverem instalados)';
+$string['configenableplagiarism'] = 'Se ativar esta opção, será permitido aos administradores configurar módulos antiplágio (se estiverem instalados).';
 $string['configplagiarismplugins'] = 'Escolha o módulo antiplágio que pretende configurar';
 $string['enableplagiarism'] = 'Ativar módulos antiplágio';
 $string['manageplagiarism'] = 'Gerir módulos antiplágio';

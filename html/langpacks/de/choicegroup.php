@@ -58,16 +58,17 @@ $string['choicegroupopen'] = 'Verfügbar';
 $string['choicegroupoptions'] = 'Wahloptionen';
 $string['choicegroupoptions_help'] = 'Tragen Sie hier die einzelnen Optionen ein, zwischen denen sich die Teilnehmer/innen entscheiden können.
 
-Die Liste auf der linken Seite zeigt alle verfügbaren Gruppen und Gruppierungen an. Um eine oder mehrere Gruppen hinzuzufügen, wählen Sie diese aus der Liste aus und klicken Sie auf "Hinzufügen". Um alle Gruppen einer Gruppierung hinzuzufügen, wählen Sie die Gruppierung aus und klicken Sie auf "Hinzufügen".
+Die Liste auf der linken Seite zeigt alle verfügbaren Gruppen und Gruppierungen an. Um eine oder mehrere Gruppen hinzuzufügen, wählen Sie diese in der Liste aus und klicken Sie auf "Hinzufügen". Um alle Gruppen einer Gruppierung hinzuzufügen, wählen Sie die Gruppierung aus und klicken Sie auf "Hinzufügen".
 
 Die ausgewählten Gruppen erscheinen in der Liste auf der rechten Seite.
 
-Um Gruppen aus der Auswahl wieder zu entfernen, wählen Sie diese aus der Liste auf der rechten Seite aus und klicken Sie auf "Entfernen".';
-$string['choicegroupsaved'] = 'Ihre Wahl wurde gespeichert';
+Um Gruppen aus der Auswahl wieder zu entfernen, wählen Sie diese in der Liste auf der rechten Seite aus und klicken Sie auf "Entfernen".';
+$string['choicegroupsaved'] = 'Ihre Wahl wurde gespeichert.';
 $string['choicetext'] = 'Auswahltext';
-$string['chooseaction'] = 'Aktion auswählen...';
+$string['chooseaction'] = 'Aktion auswählen ...';
 $string['choosegroup'] = 'Gruppe wählen';
 $string['collapse_all_groupings'] = 'Alle Gruppierungen einklappen';
+$string['completiondetail:submit'] = 'Gruppe wählen';
 $string['completionsubmit'] = 'Als abgeschlossen anzeigen, wenn die Person eine Wahl getroffen hat.';
 $string['createdate'] = 'Erstellungsdatum der Gruppe';
 $string['defaultsettings'] = 'Standardeinstellungen';
@@ -76,40 +77,40 @@ $string['del_group'] = 'Gruppe entfernen';
 $string['del_groups'] = 'Gruppen entfernen';
 $string['displayhorizontal'] = 'Horizontal';
 $string['displaymode'] = 'Anzeigemodus';
-$string['displayvertical'] = 'Senkrecht';
+$string['displayvertical'] = 'Vertikal';
 $string['double_click_group_legend'] = 'Zum Hinzufügen eine Gruppe doppelklicken.';
 $string['double_click_grouping_legend'] = 'Zum Auf- und Einklappen auf eine Gruppierung doppelklicken.';
 $string['event:answered'] = 'Wahl durchgeführt';
-$string['event:answered_desc'] = 'Der Nutzer \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid}\' eine Gruppe auswählt.';
+$string['event:answered_desc'] = 'Nutzer/in \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid}\' eine Gruppe auswählt.';
 $string['event:removed'] = 'Wahl entfernt';
-$string['event:removed_desc'] = 'Der Nutzer \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid\' seine Wahl entfernt.';
+$string['event:removed_desc'] = 'Nutzer/in \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid\' die Wahl entfernt.';
 $string['event:reportviewed'] = 'Bericht angezeigt';
-$string['event:reportviewed_desc'] = 'Der Nutzer \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid\' den Bericht angezeigt.';
+$string['event:reportviewed_desc'] = 'Nutzer/in \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid\' den Bericht angezeigt.';
 $string['expand_all_groupings'] = 'Alle Gruppierungen aufklappen';
-$string['expired'] = 'Die Wahl ist seit {$a} beendet und nicht weiter verfügbar.';
+$string['expired'] = 'Die Wahl ist seit {$a} beendet und nicht länger verfügbar.';
 $string['fillinatleastoneoption'] = 'Mindestens eine Wahloption angeben';
-$string['fillinatleasttwooptions'] = 'Mindestens zwei Wahloption angeben';
+$string['fillinatleasttwooptions'] = 'Mindestens zwei Wahloptionen angeben';
 $string['full'] = '(Voll)';
 $string['generallimitation'] = 'Generelle Obergrenze';
-$string['groupdoesntexist'] = 'Einige der angegebenen Gruppen sind nicht im Kurs vorhanden. Der Trainer sollte diese Gruppen anlegen bzw. die Gruppenwahl anpassen.';
+$string['groupdoesntexist'] = 'Einige der angegebenen Gruppen sind nicht im Kurs vorhanden. Die Trainer/innen sollten diese Gruppen anlegen bzw. die Gruppenwahl anpassen.';
 $string['groupmembers'] = 'Gruppenmitglieder';
 $string['groupsheader'] = 'Gruppen';
-$string['havetologin'] = 'Sie müssen sich erst anmelden, bevor Sie die Wahl durchführen können.';
+$string['havetologin'] = 'Sie müssen sich anmelden, um die Wahl durchführen zu können.';
 $string['hidedescription'] = 'Beschreibungen verbergen';
 $string['hidegroupmembers'] = 'Gruppenmitglieder verbergen';
 $string['limit'] = 'Obergrenze';
 $string['limitanswers'] = 'Obergrenzen für Wahl erlauben';
-$string['limitanswers_help'] = 'Diese Option erlaubt das Setzen von Obergrenzen für die einzelnen Wahloptionen. Sobald eine Obergrenze erreicht ist, kann sich niemand mehr für die jeweilige Wahloption entscheiden.
+$string['limitanswers_help'] = 'Diese Option erlaubt das Setzen von Obergrenzen für einzelne Wahloptionen. Sobald eine Obergrenze erreicht ist, kann sich niemand mehr für die jeweilige Wahloption entscheiden.
 
 Wenn die Obergrenzen deaktiviert sind, gibt es keine Beschränkung bei der Gruppenwahl.';
 $string['maxenrollments'] = 'Obergrenze Eintragungen';
-$string['maxenrollments_help'] = 'Diese Einstellung ermöglicht es Ihnen, die Anzahl der Eintragungen pro Teilnehmer/in zu limitieren. Der Standardwert **0** bedeutet dass es kein Limit gibt.';
+$string['maxenrollments_help'] = 'Diese Option ermöglicht es, die Anzahl der Gruppeneinschreibungen pro Teilnehmer/in zu begrenzen. Der Standardwert **0** bedeutet, dass es keine Obergrenze gibt.';
 $string['members/'] = 'Gruppenmitglieder';
 $string['members/max'] = 'Gruppenmitglieder / Maximalzahl';
 $string['modulename'] = 'Gruppenwahl';
-$string['modulename_help'] = 'Mit der \'Gruppenwahl\' ist es möglich, dass sich Teilnehmer/innen selber in Gruppen innerhalb eines Kurses eintragen. Der Trainer wählt die Gruppen im Kurs aus, die als Wahloption verfügbar sind, außerdem die maximale Gruppengröße.';
+$string['modulename_help'] = 'Mit der \'Gruppenwahl\' ist es möglich, dass Teilnehmer/innen sich selber in Gruppen innerhalb eines Kurses eintragen. Die Trainer/innen geben die Gruppen im Kurs vor, die als Wahloption verfügbar sind, außerdem die maximale Gruppengröße.';
 $string['modulenameplural'] = 'Gruppenwahlen';
-$string['moveselectedusersto'] = 'Ausgewählte Nutzer/innen verschieben...';
+$string['moveselectedusersto'] = 'Ausgewählte Nutzer/innen verschieben ...';
 $string['multipleenrollmentspossible'] = 'Eintrag in mehrere Gruppen erlauben';
 $string['mustchoosemax'] = 'Sie dürfen nur maximal {$a} Gruppen auswählen. Es wurde nichts gespeichert.';
 $string['mustchooseone'] = 'Sie müssen eine Wahl treffen, bevor Sie speichern können.';
@@ -122,13 +123,13 @@ $string['notanswered'] = 'Noch nicht abgestimmt';
 $string['notenrolledchoose'] = 'Nur eingeschriebene Teilnehmer/innen dürfen an der Wahl teilnehmen.';
 $string['notopenyet'] = 'Diese Aktivität ist verfügbar ab {$a}';
 $string['notyetresultsviewable'] = 'Die Ergebnisse werden nach dem Ende der Wahl sichtbar.';
-$string['numberofuser'] = 'Nutzerzahl';
-$string['onlyactive'] = 'Wahlen von Teilnehmer/innen mit inaktiven oder abgelaufenen Einschreibungen ausfiltern';
+$string['numberofuser'] = 'Nutzeranzahl';
+$string['onlyactive'] = 'Antwortdaten von Teilnehmer/innen mit inaktiven oder abgelaufenen Einschreibungen ausfiltern';
 $string['option'] = 'Gruppe';
 $string['page-mod-choice-x'] = 'Jede Seite der Gruppenwahl';
-$string['pleaseselectonegroup'] = 'Mindestens eine Gruppe zur Auswahl selektieren';
+$string['pleaseselectonegroup'] = 'Mindestens eine Gruppe auswählen';
 $string['pleasesetgroups'] = 'Mindestens eine Gruppe in diesem Kurs anlegen';
-$string['pleasesetonegroupor'] = 'Legen Sie mindestens eine Gruppe in diesem Kurs an.<br /><br />
+$string['pleasesetonegroupor'] = 'Legen Sie bitte mindestens eine Gruppe in diesem Kurs an.<br /><br />
 <ul>
 <li><a href="{$a->linkgroups}">Gruppen verwalten</a></li>
 <li><a href="{$a->linkcourse}">Zurück zum Kurs</a></li>
@@ -159,8 +160,8 @@ $string['skipresultgraph'] = 'Ergebnisanzeige überspringen';
 $string['sortgroupsby'] = 'Gruppenliste sortieren nach';
 $string['spaceleft'] = 'Platz verfügbar';
 $string['spacesleft'] = 'Plätze verfügbar';
-$string['systemdefault_date'] = 'Systemstandard (Derzeit: Erstellungsdatum der Gruppe)';
-$string['systemdefault_name'] = 'Systemstandard (Derzeit: Gruppenname)';
+$string['systemdefault_date'] = 'Systemstandard (momentan Erstellungsdatum der Gruppe)';
+$string['systemdefault_name'] = 'Systemstandard (momentan Gruppenname)';
 $string['taken'] = 'Eingetragen';
 $string['the_value_you_entered_is_not_a_number'] = 'Der eingegebene Wert ist keine Zahl.';
 $string['timerestrict'] = 'Wahl auf Zeitraum beschränken';

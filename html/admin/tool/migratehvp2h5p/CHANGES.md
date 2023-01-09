@@ -1,5 +1,12 @@
 # VERSIONS HISTORY #
 
+Changes in version 0.1.5 (20221129) - I'm now stable!
+---------------------------------------------------
+- Include author, if possible, when migrating to content bank (#46)
+- Fix SQL limit with Oracle (#34)
+
+Thanks to Jonathan Harker from Catalyst and all the contributors who have created issues, fixes and improvements.
+
 Changes in version 0.1.4 (20210204) - Let's make it better!
 ---------------------------------------------------
 - Copy completion information related to grades too (#27)

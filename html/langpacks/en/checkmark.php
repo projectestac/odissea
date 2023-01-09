@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['absent'] = 'Absent';
 $string['activateindividuals'] = 'Activate individual function';
-$string['activitydate:submissionsdue'] = 'Due:';
-$string['activitydate:submissionsopen'] = 'Opens:';
-$string['activitydate:submissionsopened'] = 'Opened:';
+$string['activitydate:due'] = 'Due:';
+$string['activitydate:open'] = 'Opens:';
+$string['activitydate:opened'] = 'Opened:';
 $string['addnewgroupoverride'] = 'Add group override';
 $string['addnewuseroverride'] = 'Add user override';
 $string['addsubmission'] = 'Add submission';
@@ -91,6 +91,8 @@ $string['bulk_help'] = 'Here you can perform actions like "setting attendance", 
 Note: if attendency is linked to the grades only attendant users will be awarded points for checked examples.
 Absent users will be graded with 0 points and users with unknown attendancy will be skipped at all!';
 $string['bulk_no_users_selected'] = 'You haven\'t selected any user. Select the required users via the checkboxes in the left column of the table below.';
+$string['calendardue'] = '{$a} is due';
+$string['calendargradingdue'] = '{$a} is due to be graded';
 $string['cannotviewcheckmark'] = 'You can not view this checkmark';
 $string['cantfixevent'] = 'Couldn\'t fix event with ID {$a->id}, named {$a->name} ({$a->matches} matches).';
 $string['cfg_nowarning'] = 'No warning';
@@ -401,6 +403,7 @@ $string['quickgrade_help'] = 'If enabled, multiple checkmarks can be graded on o
 $string['remembertoupdategrades'] = 'You\'ve got automatically graded submissions in this checkmark. We highly recommend to update or regrade the submissions if you changed the examples\' grades!';
 $string['requiregrading'] = 'Require grading';
 $string['requiresubmit'] = 'Require submission';
+$string['reverttodefaults'] = 'Revert to checkmark defaults';
 $string['reviewed'] = 'Reviewed';
 $string['saveallfeedback'] = 'Save all grading changes';
 $string['search:activity'] = 'Checkmark - activity information';
@@ -409,6 +412,8 @@ $string['selection'] = 'Selection';
 $string['sendnotifications'] = 'Send notifications';
 $string['seperatenamecolumns'] = 'Split fullname into single columns';
 $string['seperatenamecolumns_help'] = 'If enabled, all fragments of the displayed fullname (i.e. first name and surname) will be split into single columns.';
+$string['sequentialnumbering'] = 'Sequential numbering of rows';
+$string['sequentialnumbering_help'] = 'Prefix every row (student) with a sequential number starting at 1. Can, for instance, be used for randomly selecting students to present.';
 $string['setabsent'] = 'Mark as absent';
 $string['setabsentandgrade'] = 'Mark as absent and grade';
 $string['setattendant'] = 'Mark as attendant';

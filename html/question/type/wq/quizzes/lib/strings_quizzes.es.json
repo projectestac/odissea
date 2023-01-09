@@ -80,10 +80,10 @@
 		"quizzes_studio_toolbar_back_button_tooltip": "Atrás",
 		"quizzes_studio_toolbar_test_question_button_tooltip": "Vista previa",
 		"quizzes_studio_toolbar_help_button_tooltip": "Ayuda",
-		"quizzes_studio_send_feedback_label": "Dé su opinión",
-		"quizzes_studio_training_label": "Apúntese a nuestra formación",
-		"quizzes_studio_website_label": "Visite nuestra web",
-		"quizzes_studio_report_issue_label": "Avise de un error",
+		"quizzes_studio_send_feedback_label": "Danos tu opinión",
+		"quizzes_studio_training_label": "Apúntate a nuestra formación",
+		"quizzes_studio_website_label": "Visita nuestra web",
+		"quizzes_studio_report_issue_label": "Avisa de un error",
 
 		"quizzes_studio_toolbar_more_options_dropdown_tooltip": "Más opciones",
 		"quizzes_studio_toolbar_more_options_dropdown_import_label": "Importar",
@@ -542,20 +542,49 @@
 		"quizzes_studio_home_answer_type_geometry_label": "Tablero gráfico",
 		"quizzes_studio_home_answer_type_statistical_charts_label": "Gráficos estadísticos",
 		
-		"quizzes_studio_home_correct_answer_description_math": "Inserte la respuesta correcta para esta pregunta. Puede modificar cómo se compara con la respuesta de los estudiantes usando las opciones de validación.",
-		"quizzes_studio_home_correct_answer_description_graphic": "Inserte la respuesta correcta para esta pregunta. Puede modificar cómo se compara con la respuesta de los estudiantes y qué elementos se evalúan usando las opciones de validación",
-		"quizzes_studio_home_correct_answer_description_text": "Inserte la respuesta correcta para esta pregunta. Puede modificar cómo se compara con la respuesta de los estudiantes usando las opciones de validación.",
+		"quizzes_studio_home_correct_answer_description_math": "Inserta la respuesta correcta para esta pregunta. Puedes modificar cómo se compara con la respuesta de los estudiantes usando las opciones de validación.",
+		"quizzes_studio_home_correct_answer_description_graphic": "Inserta la respuesta correcta para esta pregunta. Puedes modificar cómo se compara con la respuesta de los estudiantes y qué elementos se evalúan usando las opciones de validación",
+		"quizzes_studio_home_correct_answer_description_text": "Inserta la respuesta correcta para esta pregunta. Puedes modificar cómo se compara con la respuesta de los estudiantes usando las opciones de validación.",
 		"quizzes_studio_home_initial_content_description_math": "Este es el estado inicial del editor de fórmulas que verán los estudiantes cuando intenten la pregunta. Se puede usar para dejar blancos que los estudiantes tengan que rellenar en su respuesta.",
-		"quizzes_studio_home_initial_content_description_graphic": "Este es el estado inicial del editor gráfico que verán los estudiantes cuando intenten la pregunta. Puede personalizar la barra de herramientas que verá el estudiante en las opciones de entrada.",
+		"quizzes_studio_home_initial_content_description_graphic": "Este es el estado inicial del editor gráfico que verán los estudiantes cuando intenten la pregunta. Puedes personalizar la barra de herramientas que verá el estudiante en las opciones de entrada.",
 		"quizzes_studio_home_initial_content_description_text": "Este es el estado inicial de la caja de texto que verán los estudiantes cuando intenten la pregunta. Este tipo de respuesta no se evalúa matemáticamente.",
 				
-		"quizzes_studio_home_product_message_header_label": "¡Está usando WirisQuizzes 4.5!",
-		"quizzes_studio_home_product_message_text_label": "Esta versión incluye una renovación del WirisQuizzes Studio y mejoras de rendimiento. Además, hemos añadido una nueva opción de entrada - ahora puedes fijar el contenido inicial para que el estudiante sólo pueda rellenar los blancos de este.",
-		"quizzes_studio_home_product_message_release_notes_link": "Visite la lista completa de mejoras.",		
+		"quizzes_studio_home_product_message_header_label": "Estás usando WirisQuizzes 4.6",
+		"quizzes_studio_home_product_message_text_label": "Ahora puedes disfrutar de nuestra nueva función de variables aleatorias, que te permite crear preguntas dinámicas de una manera más rápida y sencilla.",
+		"quizzes_studio_home_product_message_release_notes_link": "Visita la lista completa de mejoras.",
+		"quizzes_studio_home_product_message_give_us_feedback_link": "Danos tu opinión.",		
 
 		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Contenido inicial",
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Bloquear contenido inicial",
-		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "No permitir al estudiante modificar la respuesta fuera de las cajas en blanco del contenido inicial. Si esta configuración está activa, el estudiante solamente podrá escribir en los blancos del contenido inicial."
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "No permitir al estudiante modificar la respuesta fuera de las cajas en blanco del contenido inicial. Si esta configuración está activa, el estudiante solamente podrá escribir en los blancos del contenido inicial.",
+
+		"quizzes_studio_home_random_variables_title": "Variables aleatorias",
+		"quizzes_studio_home_random_variables_title_basic_mode": "Modo básico",
+		"quizzes_studio_home_advanced_random_variables_button_text": "Modo avanzado",
+		"quizzes_studio_home_advanced_random_variables_button_text_string_syntax": "Variables aleatorias",
+		"quizzes_studio_home_random_variables_description_text": "Haz que tus preguntas sean dinámicas añadiendo variables aleatorias a los enunciados de las cuestiones. No te olvides de añadir estas variables también a la respuesta correcta y si quieres que aparezcan evaluadas añade el comando evalúa.",
+		"quizzes_studio_home_random_variables_simple_algorithm_text": "Haz que tus preguntas sean dinámicas añadiendo variables aleatorias a los enunciados de las cuestiones. No te olvides de añadir estas variables también a la respuesta correcta y si quieres que aparezcan evaluadas añade el comando evalúa.",
+		"quizzes_studio_home_random_variables_string_syntax_text": "Usa CalcMe para crear un algoritmo con variables aleatorias.",
+		"quizzes_studio_home_random_variables_add_new_button_text": "+ Añadir variable",
+		"quizzes_studio_home_random_variables_complex_algorithm_text": "¡Tienes un algoritmo complejo, usa el modo avanzado!",
+		"quizzes_studio_home_random_variables_help_button": "Documentación variables aleatorias",
+
+		"quizzes_studio_home_random_variable_row_variable_name_text": "Nombre de la variable",
+		"quizzes_studio_home_random_variable_row_prefix_text": "#",
+		"quizzes_studio_home_random_variable_type_text": "es un entero entre ",
+		"quizzes_studio_home_random_variable_min_value_text": "valor mín",
+		"quizzes_studio_home_random_variable_row_and_text": "y",
+		"quizzes_studio_home_random_variable_max_value_text": "valor máx",
+
+		"quizzes_studio_home_random_variable_name_already_used_error": "¡Nombre ya en uso!",
+		"quizzes_studio_home_random_variable_number_not_integer_error": "¡Esto no es un entero!",
+		"quizzes_studio_home_random_variable_invalid_name_error": "¡Este nombre no es válido!",
+		"quizzes_studio_home_random_variable_max_value_error": "¡El valor tiene que ser mayor!",
+		"quizzes_studio_home_random_variable_name_missing_error": "Falta el nombre de la variable",
+		"quizzes_studio_home_random_variable_max_value_missing_error": "Falta el valor máx",
+		"quizzes_studio_home_random_variable_min_value_missing_error": "Falta el valor mín",
+		
+		"evaluate_keyword": "evalúa"
 	}
 }
 

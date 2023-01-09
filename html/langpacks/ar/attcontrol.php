@@ -26,7 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['Lfull'] = 'متأخر';
+$string['all'] = 'الكل';
 $string['allcourses'] = 'كل المقررات الدراسية';
+$string['allpast'] = 'كل الماضي';
 $string['calmonths'] = 'يناير,فبراير,مارس,ابريل,مايو,يونيو,يوليو,اغسطس,سبتمبر,اكتوبر,نوفمبر,ديسمبر';
 $string['caltoday'] = 'هذا اليوم';
 $string['calweekdays'] = 'أح،إث،ثل،أر،خم،جم،سب';
@@ -34,6 +36,7 @@ $string['course'] = 'المقرر الدراسي';
 $string['days'] = 'اليوم';
 $string['description'] = 'الوصف';
 $string['endtime'] = 'وقت إنتهاء الجلسة';
+$string['includeall'] = 'إختيار كل الجلسات';
 $string['noofdaysabsent'] = 'عدد أيام الغياب';
 $string['noofdaysexcused'] = 'عدد أيام الاستئذان';
 $string['noofdayslate'] = 'عدد أيام التأخير';

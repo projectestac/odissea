@@ -140,10 +140,22 @@ class renderer extends plugin_renderer_base {
             $systemauthstatuscell = new html_table_cell($systemauth);
 
             $links = '';
+
+            // XTEC ************ AFEGIT - Only xtecadmin can configure oAuth2 client for IDI (Azure AD).
+            // 2022.11.28 @aginard
+            $isIDI = method_exists($issuer, 'get') && is_number(strpos($issuer->get('loginpagename'), 'IDI'));
+            if ((!$isIDI && function_exists('is_agora') && is_agora()) || is_xtecadmin()) {
+            // ************ FI
+
             // Action links.
             $editurl = new moodle_url('/admin/tool/oauth2/issuers.php', ['id' => $issuer->get('id'), 'action' => 'edit']);
             $editlink = html_writer::link($editurl, $this->pix_icon('t/edit', get_string('edit')));
             $links .= ' ' . $editlink;
+
+            // XTEC ************ AFEGIT - Only xtecadmin can configure oAuth2 client for IDI (Azure AD).
+            // 2022.11.28 @aginard
+            }
+            // ************ FI
 
             // Endpoints.
             $editendpointsurl = new moodle_url('/admin/tool/oauth2/endpoints.php', ['issuerid' => $issuer->get('id')]);

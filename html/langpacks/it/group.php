@@ -76,16 +76,16 @@ $string['errorremovenotpermitted'] = 'Non sei autorizzato ad eliminare il membro
 $string['errorselectone'] = 'Per favore seleziona un solo gruppo prima di usare questa opzione';
 $string['errorselectsome'] = 'Per favore seleziona uno o più gruppi prima di usare questa opzione';
 $string['evenallocation'] = 'Nota: Per mantenere pari le assegnazioni ai gruppi, il numero effettivo di membri assegnati al gruppo è diverso dal numero specificato.';
-$string['eventgroupcreated'] = 'Creato gruppo';
-$string['eventgroupdeleted'] = 'Eliminato gruppo';
-$string['eventgroupingcreated'] = 'Creato raggruppamento';
-$string['eventgroupingdeleted'] = 'Eliminato raggruppamento';
-$string['eventgroupinggroupassigned'] = 'Inserito gruppo nel raggruppamento';
-$string['eventgroupinggroupunassigned'] = 'Rimosso gruppo dal raggruppamento';
-$string['eventgroupingupdated'] = 'Aggiornato raggruppamento';
-$string['eventgroupmemberadded'] = 'Aggiunto membro del gruppo';
-$string['eventgroupmemberremoved'] = 'Rimosso membro del gruppo';
-$string['eventgroupupdated'] = 'Aggiornato gruppo';
+$string['eventgroupcreated'] = 'Creazione gruppo';
+$string['eventgroupdeleted'] = 'Eliminazione gruppo';
+$string['eventgroupingcreated'] = 'Creazione raggruppamento';
+$string['eventgroupingdeleted'] = 'Eliminazione raggruppamento';
+$string['eventgroupinggroupassigned'] = 'Inserimento gruppo nel raggruppamento';
+$string['eventgroupinggroupunassigned'] = 'Rimozione gruppo dal raggruppamento';
+$string['eventgroupingupdated'] = 'Aggiornamento raggruppamento';
+$string['eventgroupmemberadded'] = 'Inserimento membro nel gruppo';
+$string['eventgroupmemberremoved'] = 'Rimozione membro dal gruppo';
+$string['eventgroupupdated'] = 'Aggiornamento gruppo';
 $string['existingmembers'] = 'Membri esistenti: <b>{$a}</b>';
 $string['filtergroups'] = 'Filtra gruppi per:';
 $string['group'] = 'Gruppo';
@@ -138,11 +138,11 @@ $string['groupsvisible'] = 'Gruppi visibili';
 $string['grouptemplate'] = 'Group @';
 $string['hidepicture'] = 'Nascondi immagine';
 $string['importgroups'] = 'Importa gruppi';
-$string['importgroups_help'] = 'E\' possibile importare gruppi attraverso un file di testo. Il formato del file è descritto di seguito:
+$string['importgroups_help'] = 'È possibile importare gruppi attraverso un file di testo. Il formato del file è descritto di seguito:
 
 * ciascuna linea deve contenere un record
-* ciascun record è una serie di campi separati da virgole
-* il primo record deve contenere i nomi dei campi che specificano il contenuto di ciascun campo
+* ciascun record è una serie di campi divisi dal separatore selezionato
+* il primo record deve contenere l\'elenco dei nomi dei campi che definiscono il formato del dati presenti nel resto del file
 * il campo groupname è obbligatorio
 * i campi groupidnumber, description, enrolmentkey, groupingname ed enablemessaging sono facoltativi.';
 $string['includeonlyactiveenrol'] = 'Includi solo iscrizioni attive';

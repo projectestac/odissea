@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['all'] = 'Todos';
+$string['all'] = 'Tudo';
 $string['ariadayfilter'] = 'Filtrar itens do cronograma';
 $string['ariadayfilteroption'] = 'opções do filtro {$a}';
 $string['ariaeventlistitem'] = 'A atividade \'{$a->name}\' na disciplina {$a->course} atinge a data limite em  {$a->date}';

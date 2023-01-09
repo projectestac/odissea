@@ -29,6 +29,9 @@ $string['LA_backtoview'] = 'عودة إلى المعاينة الأصلية';
 $string['access_roles'] = 'الأدوار التي لها حق الوصول إلى خدمات الويب';
 $string['add_new_importtask'] = 'إضافة استيراد مهمة جديد';
 $string['add_new_taxonomie'] = 'إضافة مستوى صعوبة جديد';
+$string['all_activities'] = 'كل النشاطات';
+$string['allniveaus'] = 'كل مستويات الصعوبة';
+$string['allstudents'] = 'كل الطلاب';
 $string['block_exacomp_dakora_language_file_body'] = 'استعمل <a href="https://exabis.at/sprachgenerator" target="_blank">مولد اللغات</a> لإنشاء ملف لغة مخصص';
 $string['block_exacomp_external_trainer_allstudents'] = 'كل الطلاب';
 $string['block_exacomp_external_trainer_student'] = 'الطالب';
@@ -47,6 +50,7 @@ $string['description_example'] = 'الوصف';
 $string['descriptor_add_category'] = 'إضافة مستوى صعوبة جديد';
 $string['descriptor_categories_description'] = 'إختر مستوى الصعوبة لمادة التعلم، الكفاءة، أو الكفاءة الفرعية هذه. يمكنك أيضًا إضافة مستوى صعوبة جديد أو الإعراض عن تحديد مستوى الصعوبة.';
 $string['descriptor_label'] = 'وصف الكفاءة';
+$string['deselect_all'] = 'إلغاء إختيار الكل';
 $string['donotleave_page_message'] = 'لديك تغييرات غير محفوظة في هذه الصفحة. هل ترغب بتركها وإهمال تغييراتك أم البقاء فيها؟';
 $string['eventscompetenceassigned'] = 'كفاءة تم تعيينها';
 $string['eventsexampleadded'] = 'مثال تمت إضافته إلى الجدول الأسبوعي';
@@ -61,6 +65,7 @@ $string['help_content'] = '<h1>فيديو المقدمة</h1>
 <iframe width="640" height="360" src="//www.youtube.com/embed/EL4Vb3_17EM?feature=player_embedded" frameborder="0" allowfullscreen></iframe>';
 $string['import_activate_scheduled_tasks'] = 'تفعيل هذه المهام';
 $string['import_category_mapping_column_xml'] = 'عنوان XML';
+$string['importtask_all_subjects'] = 'كل المواضيع';
 $string['importtask_title'] = 'العنوان';
 $string['infolink'] = 'معلومات إضافية:';
 $string['innersection2'] = 'الإحصائيات';
@@ -85,7 +90,6 @@ $string['privacy:metadata:block_exacompexampvisibility'] = 'أمثلة على ا
 $string['privacy:metadata:block_exacompexampvisibility:studentid'] = 'الطالب';
 $string['privacy:metadata:block_exacompexternaltrainer:studentid'] = 'الطالب';
 $string['privacy:metadata:block_exacompprofilesettings:userid'] = 'الطالب';
-$string['privacy:metadata:block_exacompschedule:end'] = 'وقت الإنهاء';
 $string['privacy:metadata:block_exacompschedule:start'] = 'وقت البدء';
 $string['privacy:metadata:block_exacompschedule:studentid'] = 'الطالب';
 $string['privacy:metadata:block_exacompschedule:timecreated'] = 'وقت إنشاء السجل';
@@ -96,6 +100,7 @@ $string['privacy:metadata:block_exacompwsdata:data'] = 'محتوى البيان�
 $string['privacy:metadata:block_exacompwsdata:token'] = 'قيمة الترميز';
 $string['profoundness_description'] = 'الوصف';
 $string['ready_to_activate'] = 'هذه الشارة جاهزة للتفعيل:';
+$string['select_all'] = 'إختيار الكل';
 $string['selfEvalVerbose.4'] = 'صح';
 $string['selfEvalVerboseExample.2'] = 'تم حلها مع المساعدة';
 $string['selfEvalVerboseExample.defaultValue_long'] = 'غير محلولة؛ تم حلها مع المساعدة؛ تم حلها بشكل مستقل';
@@ -117,6 +122,7 @@ $string['student'] = 'الطالب';
 $string['teacher_first_configuration_step'] = 'أول خطوة لتهيئة المساق هي ضبط الإعدادات العامة فيه.';
 $string['teacher_tipp_1'] = 'هذه الكفاءة تم ربطها مع';
 $string['teacher_tipp_2'] = 'نشاطات مودل وتم الوصول إليها مع';
+$string['textalign'] = 'تبديل محاذاة النص';
 $string['timeframe_example'] = 'الإطار الزمني';
 $string['titlenotemtpy'] = 'الاسم مطلوب حتماً.';
 $string['usenostudents'] = 'الاستعمال بدون طلاب';

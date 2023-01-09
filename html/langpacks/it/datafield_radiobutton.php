@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo Pulsante Radio';
-$string['pluginname'] = 'Pulsante radio';
-$string['privacy:metadata'] = 'Il plugin campo "Pulsante radio" non memorizza dati personali, utilizza tabelle definite in mod_data.';
+$string['fieldtypelabel'] = 'Pulsante Radio';
+$string['pluginname'] = 'Pulsanti radio';
+$string['privacy:metadata'] = 'Il plugin campo Pulsante Radio non memorizza dati personali, utilizza tabelle definite in mod_data.';

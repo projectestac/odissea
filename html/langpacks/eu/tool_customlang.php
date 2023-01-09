@@ -49,6 +49,7 @@ $string['customlang:export'] = 'Esportatu itzulpen-lokala';
 $string['customlang:view'] = 'Ikusi itzulpen lokala';
 $string['export'] = 'Esportatu pertsonalizatutako kateak';
 $string['exportfilter'] = 'Aukeratu esportatu beharreko osagaia(k)';
+$string['exportzipfilename'] = 'pertsonalizatutakohizkuntza-esportazioa-{$a->lang}.zip';
 $string['filter'] = 'Iragazi kateak';
 $string['filtercomponent'] = 'Erakutsi osagai hauek dituzten kateak';
 $string['filtercustomized'] = 'Pertsonalizatuak soilik';

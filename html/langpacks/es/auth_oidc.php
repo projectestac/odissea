@@ -26,12 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_oidcdescription'] = 'El plugin de Conexión OpenID proporciona la funcionalidad SSO mediante proveedores de identidad configurables.';
-$string['cfg_authendpoint_desc'] = 'El URI de autorización del Endpoint de su proveedor de identidad.';
-$string['cfg_authendpoint_key'] = 'Autorización del Endpoint';
-$string['cfg_clientid_desc'] = 'Su ID de cliente registrado en el proveedor de identidad';
-$string['cfg_clientid_key'] = 'ID de cliente';
-$string['cfg_clientsecret_desc'] = 'Su Secreto de Cliente registrado en el proveedor de indentidad. En algunos proveedores también se le llama contraseña.';
-$string['cfg_clientsecret_key'] = 'Secreto de cliente';
 $string['cfg_customicon_desc'] = 'Si desea usar su propio icono, súbalo aquí. Esto sobrescribirá cualquier icono seleccionado arriba. <br /><br /><b>Notas sobre el uso de iconos personalizados:</b><ul><li>Esta imagen <b>no</b> será redimensionada en la página de inicio, por lo que se recomienda no subir una imagen superior a 35x35 pixels.</li><li>En caso de que haya subido un icono personalizado y desea volver a utilizar los iconos predefinidos, haga clic sobre el icono personalizado subido y luego clic en "Delete" (o eliminar). A continuación clic en "OK" y guarde los cambios con el botón que está al final de esta página. El icono predefinido seleccionado volverá a aparecer en la página de acceso. </li></ul>';
 $string['cfg_customicon_key'] = 'Icono personalizado';
 $string['cfg_err_invalidauthendpoint'] = 'Autorización del Endpoint inválida';
@@ -64,8 +58,6 @@ $string['cfg_opname_desc'] = 'Esta es una etiqueta para que el usuario final ide
 $string['cfg_opname_key'] = 'Nombre del proveedor';
 $string['cfg_redirecturi_desc'] = 'Esta es la URI para registrar como "Redirección URI"<br />Su proveedor de identidad para la Conexión OpenID debe pedirle esto al registrarse Moodle como cliente.';
 $string['cfg_redirecturi_key'] = 'Redirección URI';
-$string['cfg_tokenendpoint_desc'] = 'La URI del token endpoint de su proveedor de identidad.';
-$string['cfg_tokenendpoint_key'] = 'Token Endpoint';
 $string['errorauthdisconnectemptypassword'] = 'La contraseña (password) no puede estar vacía';
 $string['errorauthdisconnectemptyusername'] = 'El nombre de usuario (username) no puede estar vacío';
 $string['errorauthdisconnectifmanual'] = 'Si se utiliza el método de acceso manual, introducir las credenciales abajo.';
@@ -74,8 +66,6 @@ $string['errorauthdisconnectnewmethod'] = 'Utilice un método de acceso';
 $string['errorauthdisconnectusernameexists'] = 'Ese nombre de usuario (username) ya se encuentra en uso. Por favor, elija uno diferente.';
 $string['errorauthinvalididtoken'] = 'El id_token recibido es inválido.';
 $string['errorauthnoauthcode'] = 'No se ha recibido el código de autenticación (Auth code).';
-$string['errorauthnocreds'] = 'Por favor, configure las credenciales de cliente de la Conexión OpenID.';
-$string['errorauthnoendpoints'] = 'Por favor, configure los endpoints del servidor de Conexión OpenID.';
 $string['errorauthnohttpclient'] = 'Por favor, configure un cliente HTTP.';
 $string['errorauthnoidtoken'] = 'El id_token de la Conexión OpenID no se ha recibido.';
 $string['errorauthunknownstate'] = 'Estado desconocido (Unknown state).';

@@ -131,7 +131,7 @@ $string['configenabletimedposts'] = 'Se ativar esta opção, será possível ati
 $string['configlongpost'] = 'Qualquer mensagem acima deste tamanho (número de caracteres, sem incluir HTML) será considerada longa. Mensagens exibidas na página principal do site, páginas com formato social ou perfis de utilizadores são truncadas para um tamanho entre os valores definidos em \'forum_shortpost\' e \'forum_longpost\'.';
 $string['configmanydiscussions'] = 'Número máximo de tópicos exibidos por página no fórum';
 $string['configmaxattachments'] = 'Número máximo predefinido de anexos permitidos por mensagem.';
-$string['configmaxbytes'] = 'Tamanho máximo predefinido para todos os anexos de uma mensagem do fórum (sujeito a outros limites impostos na configuração da disciplina e do servidor)';
+$string['configmaxbytes'] = 'Tamanho máximo predefinido para todos os anexos de uma mensagem do fórum (sujeito a outros limites impostos na configuração da disciplina e do servidor).';
 $string['configoldpostdays'] = 'Número de dias para uma mensagem ser considerada como lida.';
 $string['configreplytouser'] = 'Quando um tópico de fórum é enviado por e-mail, deverá conter o endereço de e-mail do autor para que os destinatários possam responder diretamente em vez de usarem o fórum? Se selecionar \'Sim\', os utilizadores poderão, a partir do seu perfil, optar por manter o seu endereço de e-mail privado.';
 $string['configrssarticlesdefault'] = 'Se as listas RSS estiverem ativas, esta configuração define o número de artigos (tanto discussões como mensagens).';
@@ -139,7 +139,7 @@ $string['configrsstypedefault'] = 'Se as listas RSS estiverem ativas, esta confi
 $string['configshortpost'] = 'Qualquer mensagem abaixo deste tamanho (número de caracteres, sem incluir HTML) será considerada curta.';
 $string['configsubscriptiontype'] = 'Configuração predefinida para o modo de subscrição.';
 $string['configtrackingtype'] = 'Configuração predefinida para "Assinalar mensagens não lidas".';
-$string['configtrackreadposts'] = 'Se ativar esta opção, será permitir assinalar mensagens não lidas para cada utilizador.';
+$string['configtrackreadposts'] = 'Se ativar esta opção, será permitido aos utilizadores assinalar mensagens não lidas.';
 $string['configusermarksread'] = 'Se ativar esta opção, o utilizador tem de marcar manualmente as mensagens como lidas. Se desativada, as mensagens serão marcadas como lidas após a sua visualização.';
 $string['confirmsubscribe'] = 'Tem a certeza de que pretende subscrever o fórum \'{$a}\'?';
 $string['confirmsubscribediscussion'] = 'Tem a certeza de que pretende subscrever o tópico de discussão \'{$a->discussion}\' no fórum \'{$a->forum}\'?';
@@ -242,7 +242,7 @@ $string['emaildigesttype_help'] = 'Tipos de resumos que vai receber diariamente 
 
 *Completo: irá receber um e-mail diário com o conteúdo completo de cada mensagem publicada no fórum;
 
-*Assuntos - irá receber um e-mail diário com os assuntos de cada mensagem publicada no fórum.';
+*Assuntos: irá receber um e-mail diário com os assuntos de cada mensagem publicada no fórum.';
 $string['emptymessage'] = 'Foi encontrado um erro na sua mensagem. Ou estava em branco ou continha um anexo demasiado grande. As suas alterações não foram guardadas.';
 $string['errorcannotlock'] = 'Não tem permissão para bloquear tópicos.';
 $string['errordiscussionnotfound'] = 'O tópico não foi encontrado';
@@ -748,7 +748,7 @@ $string['trackingtype_help'] = 'A sinalização de mensagens permite que os part
 
 Se selecionar a opção "Opcional", os participantes podem optar por ligar ou desligar a sinalização de mensagens do fórum. Os utilizadores deverão ativar a opção "Assinalar mensagens não lidas nos fóruns" nas suas preferências do fórum.
 
-A opção "Obrigatória" só estará disponível se um administrador do site a ativar. Ao selecionar esta opção a configuração "Assinalar mensagens não lidas" estará sempre ativada, independentemente das preferências do fórum escolhidas pelos utilizadores.';
+A opção "Obrigatória" só estará disponível se um administrador do site a ativar. Se selecionar esta opção, a configuração "Assinalar mensagens não lidas nos fóruns" estará sempre ativada, independentemente das preferências do fórum escolhidas pelos utilizadores.';
 $string['trackreadposts_header'] = 'Assinalar mensagens não lidas nos fóruns';
 $string['unlockdiscussion'] = 'Desbloquear este tópico';
 $string['unpindiscussion'] = 'Remover destaque deste tópico';

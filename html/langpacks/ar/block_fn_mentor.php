@@ -25,7 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add_all'] = 'إضافة الكل';
+$string['all'] = 'الكل';
+$string['all_courses'] = 'كل المساقات';
+$string['all_mentees'] = 'كل التلاميذ';
+$string['all_mentors'] = 'كل المرشدين';
 $string['all_students'] = 'كل الطلاب';
+$string['allcategories'] = 'كل التصنيفات';
+$string['allcourses'] = 'كل المساقات';
+$string['allgroups'] = 'كل المجموعات';
+$string['allstudents'] = 'كل الطلاب';
 $string['blockinfo'] = 'معلومات الكتلة';
 $string['blockname'] = 'اسم الكتلة';
 $string['completionnotenabled'] = '<p>تعقب الإكمال غير مُمَكَّن في هذا المساق.</p>';
@@ -44,6 +53,7 @@ $string['name'] = 'الاسم';
 $string['nomessagessent'] = 'لم يتم إرسال أي رسائل.';
 $string['pagelayout'] = 'تخطيط الصفحة';
 $string['permission_error'] = 'خطأ في الصلاحية!';
+$string['remove_all'] = 'إزالة الكل';
 $string['showsitegroups'] = 'إظهار خيار تحديد مجموعات الموقع';
 $string['sortby'] = 'الفرز حسب';
 $string['student'] = 'الطالب';

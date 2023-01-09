@@ -40,7 +40,7 @@ class restore_qtype_matchwiris_plugin extends restore_qtype_match_plugin {
         $paths[] = new restore_path_element($elename, $elepath);
 
         $elename = 'qtype_wq_matchwiris';
-        $elepath = '/question_categories/question_category/questions/question/plugin_qtype_matchwiris_question/question_xml';
+        $elepath = $this->get_pathfor('/question_xml');
         $paths[] = new restore_path_element($elename, $elepath);
 
         return $paths; // And we return the interesting paths.

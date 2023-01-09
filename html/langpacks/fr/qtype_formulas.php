@@ -131,7 +131,6 @@ $string['functiontakesnoargs'] = 'La fonction {$a} ne prend aucun argument';
 $string['functiontakesonearg'] = 'La fonction {$a} doit avoir exactement un argument';
 $string['functiontakesoneortwoargs'] = 'La fonction {$a} doit avoir un ou deux arguments';
 $string['functiontakestwoargs'] = 'La fonction {$a} doit avoir exactement deux arguments';
-$string['globaloptions'] = '[Global] -';
 $string['globalvarshdr'] = 'Variables';
 $string['illegalformulasyntax'] = 'Syntaxe incorrecte pour la formule commençant par « {$a} »';
 $string['incorrectfeedback'] = 'Pour toute réponse incorrecte';

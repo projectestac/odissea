@@ -28,7 +28,7 @@ class restore_qtype_truefalsewiris_plugin extends restore_qtype_truefalse_plugin
         $xmlname = 'qtype_wq_truefalsewiris';
 
         $elepath = $this->get_pathfor('/truefalse'); // We used get_recommended_name() so this works.
-        $xmlpath = '/question_categories/question_category/questions/question/plugin_qtype_truefalsewiris_question/question_xml';
+        $xmlpath = $this->get_pathfor('/question_xml');
 
         $paths[] = new restore_path_element($elename, $elepath);
         $paths[] = new restore_path_element($xmlname, $xmlpath);

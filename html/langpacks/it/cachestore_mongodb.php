@@ -38,7 +38,7 @@ $string['privacy:metadata:mongodb:data'] = 'Dati memorizzati in cache';
 $string['replicaset'] = 'Replica set';
 $string['replicaset_help'] = 'Il nome di un replica set al quale connettersi. Inserendo un nome, il master sarà identificato usando il comando database ismaster sui semi, in questo modo il driver potrebbe finire con il collegarsi a server non elencati.';
 $string['server'] = 'Server';
-$string['server_help'] = 'La stringa per la connessione al server da utilizzare. E\' possibile indicare più server separandoli con le virgole.';
+$string['server_help'] = 'La stringa per la connessione al server da utilizzare. È possibile indicare più server separandoli con le virgole.';
 $string['testserver'] = 'Test server';
 $string['testserver_desc'] = 'La stringa di connessione ad un server da utilizzare per test. Il server di test consente di provare le prestazioni della cache MongoDB tramite la pagina amministrativa "Test prestazioni" .
 Esempio: mongodb://127.0.0.1:27017';
@@ -47,4 +47,4 @@ $string['username_help'] = 'Lo username da utilizzare per la connessione';
 $string['usesafe'] = 'Uso sicuro';
 $string['usesafe_help'] = 'Abilita l\'opzione usesafe per le operazioni insert, get e remove. Se è stato specificato un set di replica,  l\'opzione sarà abilitata comunque.';
 $string['usesafevalue'] = 'Valore uso sicuro';
-$string['usesafevalue_help'] = 'E\' possibile specificare un valore per l\'uso sicuro, impostando il numero di server sui quali le operazioni devono risultare obbligatoriamente completate.';
+$string['usesafevalue_help'] = 'È possibile specificare un valore per l\'uso sicuro, impostando il numero di server sui quali le operazioni devono risultare obbligatoriamente completate.';

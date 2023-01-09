@@ -92,7 +92,7 @@ $string['hideremote'] = 'Entfernte Nutzer/innen verbergen';
 $string['host'] = 'Rechner';
 $string['hostcoursenotfound'] = 'Rechner oder Kurs nicht gefunden';
 $string['hostdeleted'] = 'Rechner entfernt';
-$string['hostexists'] = 'Ein Datensatz mit dieser Server-URL ist bereits vorhanden und wurde eventuell gelöscht. <a href="{$a}">Datensatz bearbeiten</a>.';
+$string['hostexists'] = 'Ein Datensatz mit diesem Servernamen ist bereits vorhanden und kann eventuell gelöscht werden. <a href="{$a}">Datensatz bearbeiten</a>.';
 $string['hostlist'] = 'Liste von vernetzten Servern';
 $string['hostname'] = 'Server-URL';
 $string['hostnamehelp'] = 'Vollständiger Domainname des Remote-Rechners, z.B. www.beispiel.de';
@@ -164,7 +164,7 @@ $string['nosuchmodule'] = 'Die Funktion war falsch adressiert und konnte nicht l
 $string['nosuchpublickey'] = 'Es war nicht möglich, einen PublicKey zur Signaturüberprüfung zu erhalten.';
 $string['nosuchservice'] = 'Auf diesem Rechner läuft kein RPC-Service.';
 $string['nosuchtransport'] = 'Kein Übertragungsprotokoll mit dieser ID';
-$string['notBASE64'] = 'Diese Textpassage ist nicht im Base64-Encoded-Format. Sie kann kein gültiger Schlüssel sein.';
+$string['notBASE64'] = 'Dieser Text ist nicht im Format \'base64 encoded\'. Das kann kein gültiger Schlüssel sein.';
 $string['notPEM'] = 'Dieser Schlüssel ist nicht im PEM-Format. Er wird nicht funktionieren.';
 $string['not_in_range'] = 'Die IP-Adresse <code>{$a}</code> gehört nicht zu einem vertrauenswürdigen Server.';
 $string['notenoughidpinfo'] = 'Ihr Server (identity provider) liefert nicht genügend Informationen, um Ihr Nutzerkonto lokal zu erstellen oder zu aktualisieren.';

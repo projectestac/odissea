@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_submitted'] = 'Effettuata consegna caricando un file';
-$string['event_assessable_uploaded'] = 'Caricato file';
+$string['event_assessable_submitted'] = 'Consegna di un file';
+$string['event_assessable_uploaded'] = 'Caricamento file';
 $string['pluginname'] = 'Consegna';
 $string['privacy:metadata'] = 'Il plugin "Consegna" non memorizza dati personali.';

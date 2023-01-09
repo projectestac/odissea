@@ -47,6 +47,6 @@ $string['pluginname'] = 'Foglio di valutazione offline';
 $string['privacy:nullproviderreason'] = 'Il plugin non ha un database dove memorizzare le informazioni. Utilizza soalamente le API di mod_assign per visualizzare l\'interfaccia di valutazione.';
 $string['processgrades'] = 'Importa valutazioni';
 $string['skiprecord'] = 'Salta record';
-$string['updatedgrades'] = 'Sono stati aggiornati {$a} feedback e valutazioni';
+$string['updatedgrades'] = 'Sono stati aggiornati <strong>{$a->gradeupdatescount}</strong> valutazioni e strong>{$a->feedbackupdatescount}</strong> istanze di feedback.';
 $string['updaterecord'] = 'Aggiorna record';
 $string['uploadgrades'] = 'Carica foglio di valutazione offline';

@@ -48,4 +48,4 @@ $string['showconcept'] = 'Visualizza l\'intestazione per ciascuna voce';
 $string['title'] = 'Titolo';
 $string['type'] = 'Metodo di scelta di una nuova voce';
 $string['viewglossary'] = 'Visualizza tutte le voci';
-$string['whichfooter'] = 'E\' possibile visualizzare i collegamenti alle azioni di glossario collegate a questo blocco. Il blocco visualizzerà solo i collegamenti ad azioni attivate per quel glossario.';
+$string['whichfooter'] = 'È possibile visualizzare i collegamenti alle azioni di glossario collegate a questo blocco. Il blocco visualizzerà solo i collegamenti ad azioni attivate per quel glossario.';

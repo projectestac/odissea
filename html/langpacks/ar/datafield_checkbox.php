@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'حقل مربع اختيار';
-$string['pluginname'] = 'مربع الاختيار';
-$string['privacy:metadata'] = 'إن مكون حقل خانة التأشير لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل جداول معرفة في mod_data.';
+$string['fieldtypelabel'] = 'مربعات التأشير';
+$string['pluginname'] = 'مربعات التأشير';
+$string['privacy:metadata'] = 'إن مُكون حقل مربع التأشير لا يخزن أي بيانات شخصية، بل يستعمل الجداول المعرفة في mod_data.';

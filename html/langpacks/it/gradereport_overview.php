@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventgradereportviewed'] = 'Visualizzata scheda globale utente';
+$string['eventgradereportviewed'] = 'Visualizzazione scheda globale utente';
 $string['gradesoverview'] = 'Panoramica valutazioni';
 $string['overview:view'] = 'Visualizzare la propria scheda globale';
 $string['pluginname'] = 'Scheda globale utente';

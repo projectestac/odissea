@@ -81,9 +81,9 @@
 		"quizzes_studio_toolbar_test_question_button_tooltip": "Test dette spørgsmål",
 		"quizzes_studio_toolbar_help_button_tooltip": "Hjælp",
 		"quizzes_studio_send_feedback_label": "Send feedback",
-		"quizzes_studio_training_label": "Enroll in our training course",
-		"quizzes_studio_website_label": "Visit our website",
-		"quizzes_studio_report_issue_label": "Report an issue",
+		"quizzes_studio_training_label": "Tilmeld dig vores træningskursus",
+		"quizzes_studio_website_label": "Besøg vores hjemmeside",
+		"quizzes_studio_report_issue_label": "Rapporter et problem",
 
 		"quizzes_studio_toolbar_more_options_dropdown_tooltip": "Flere indstillinger",
 		"quizzes_studio_toolbar_more_options_dropdown_import_label": "Importer",
@@ -97,9 +97,9 @@
 		"quizzes_studio_home_answer_type_graphic_label": "Grafik",
 		"quizzes_studio_home_answer_type_text_label": "Tekst",
 		"quizzes_studio_home_answer_type_standard_graphic_label": "Standard",
-		"quizzes_studio_home_answer_type_bar_chart_label": "Bar chart",
-		"quizzes_studio_home_answer_type_line_chart_label": "Line chart",
-		"quizzes_studio_home_answer_type_pie_chart_label": "Pie chart",
+		"quizzes_studio_home_answer_type_bar_chart_label": "Søjlediagram",
+		"quizzes_studio_home_answer_type_line_chart_label": "Linjediagram",
+		"quizzes_studio_home_answer_type_pie_chart_label": "Lagkagediagram",
 
 
 		"quizzes_studio_home_question_math_content_label": "Indstil det oprindelige indhold og det korrekte svar på dit spørgsmål",
@@ -111,7 +111,7 @@
 		"quizzes_studio_home_initial_graph_content_label": "Oprindeligt indhold",
 		"quizzes_studio_home_correct_graph_answer_label": "Korrekt svar",
 
-		"quizzes_studio_home_activity_list_label": "Settings",
+		"quizzes_studio_home_activity_list_label": "Indstillinger",
 		"quizzes_studio_home_input_options_label": "Input-indstillinger",
 		"quizzes_studio_home_validation_options_label": "Valideringsindstillinger",
 		"quizzes_studio_home_variables_options_label": "Tilfældige variable",
@@ -154,13 +154,13 @@
 		"quizzes_studio_input_options_answer_input_method_no_auxiliar_input_helper_text": "Vis ikke hjælpe-CalcMe kalkulatoren til input-feltet til den studerendes svar.",
 		"quizzes_studio_input_options_answer_input_method_define_initial_content_button_label": "Definer oprindeligt indhold",
 		"quizzes_studio_input_options_answer_input_method_customize_toolbar_label": "Tilpas værktøjslinjen",
-		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_label": "Hide CalcMe file options",
-		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_helper_text": "Hide options such as opening, saving, or downloading CalcMe documents to students",
+		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_label": "Skjul CalcMe-filindstillinger",
+		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_helper_text": "Skjul muligheder såsom at åbne, gemme eller downloade CalcMe-dokumenter til elever",
 
 		"quizzes_studio_input_options_input_syntax_title": "Input-syntaks",
 
 		"quizzes_studio_input_options_input_syntax_select_all_label": "Alle",
-		"quizzes_studio_input_options_input_syntax_clear_all_label": "Clear",
+		"quizzes_studio_input_options_input_syntax_clear_all_label": "Klar",
 
 		"quizzes_studio_input_options_input_syntax_constants_label": "konstanter",
 		"quizzes_studio_input_options_input_syntax_constants_helper_text": "Vælg de bogstaver, der fortolkes som konstanter i stedet for frie variabler. Du kan definere flere konstanter med panelet Definer tilfældige variabler og funktioner.",
@@ -518,7 +518,7 @@
 
 		"quizzes_studio_variables_options_cas_algorithm_convert_to_calcme_button_label": "Konverter til CalcMe",
 		"quizzes_studio_variables_options_cas_algorithm_convert_to_calcme_description_label": "Spørgsmålsalgoritmen vil blive importeret fra Wiris CAS til vores nye algoritme-redaktør, CalcMe. Den resulterende algoritme skal gennemses og testes manuelt. Algoritmer, som importeres i CalcMe, kan ikke længere åbnes med Wiris CAS. Hvis du ønsker at fortryde importen, efter du har accepteret, skal du ikke gemme spørgsmålet: Klik på Annuller i WIRIS Quizzes Studio-vinduet, og åbn det igen.",
-		"quizzes_studio_variables_options_cas_algorithm_convert_to_algorithm_description_label": "Convert as algorithm",
+		"quizzes_studio_variables_options_cas_algorithm_convert_to_algorithm_description_label": "Konverter som algoritme",
 
 		"answer_field_mathtype_popup_accept_dialog": "Accepter",
 		"answer_field_mathtype_popup_cancel_dialog": "Annuller",
@@ -537,25 +537,54 @@
 		"parameter": "parameter",
 		"answer": "svar",
 
-		"quizzes_studio_home_copy_initial_content_button_text": "Copy from initial content",
-		"quizzes_studio_home_copy_correct_answer_button_text": "Copy from correct answer",
+		"quizzes_studio_home_copy_initial_content_button_text": "Kopiér fra det oprindelige indhold",
+		"quizzes_studio_home_copy_correct_answer_button_text": "Kopier fra korrekt svar",
 		"quizzes_studio_home_answer_type_geometry_label": "Plotter",
-		"quizzes_studio_home_answer_type_statistical_charts_label": "Statistics charts",
+		"quizzes_studio_home_answer_type_statistical_charts_label": "Statistik diagrammer",
 		
-		"quizzes_studio_home_correct_answer_description_math": "Enter the correct answer for this question. You can modify the criteria used to compare it to your students' answer using the validation options menu.",
-		"quizzes_studio_home_correct_answer_description_graphic": "Enter the correct answer for this question. You can modify how it is compared to your students' answer and which elements are graded using the settings menu.",
-		"quizzes_studio_home_correct_answer_description_text": "Enter the correct answer for this question. You can modify the criteria used to compare it to your students' answer using the validation options menu.",
-		"quizzes_studio_home_initial_content_description_math": "This is the initial state of the math editor your students will see when attempting the question. This way you can provide a structure for their answer or blanks to fill in.",
-		"quizzes_studio_home_initial_content_description_graphic": "This is the initial state of the graph editor your students will see when attempting the question. You can customize the toolbar elements they will see in the input options.",
-		"quizzes_studio_home_initial_content_description_text": "This is the initial state of the text editor your students will see when attempting the question. This answer type is not evaluated mathematically.",
+		"quizzes_studio_home_correct_answer_description_math": "Indtast det rigtige svar på dette spørgsmål. Du kan ændre de anvendte kriterier til at sammenligne det med dine elevers svar ved at bruge menuen med valideringsindstillinger.",
+		"quizzes_studio_home_correct_answer_description_graphic": "Indtast det rigtige svar på dette spørgsmål. Du kan ændre, hvordan det er sammenlignet med dine elevers svar, og hvilke elementer der bedømmes ved hjælp af indstillingsmenuen.",
+		"quizzes_studio_home_correct_answer_description_text": "Indtast det rigtige svar på dette spørgsmål. Du kan ændre de anvendte kriterier til at sammenligne det med dine elevers svar ved at bruge menuen med valideringsindstillinger.",
+		"quizzes_studio_home_initial_content_description_math": "Dette er den indledende tilstand af grafeditoren, som dine elever vil se, når de forsøger at stille spørgsmålet. Du kan tilpasse de værktøjslinjeelementer, de vil se i inputindstillingerne. Dette er den indledende tilstand af matematikeditoren, som dine elever vil se, når de forsøger at stille spørgsmålet. På denne måde kan du give en struktur for deres svar eller tomme felter at udfylde.",
+		"quizzes_studio_home_initial_content_description_graphic": "Dette er den indledende tilstand af grafeditoren, som dine elever vil se, når de forsøger at stille spørgsmålet. Du kan tilpasse de værktøjslinjeelementer, de vil se i inputindstillingerne.",
+		"quizzes_studio_home_initial_content_description_text": "Dette er den oprindelige tilstand af teksteditoren, som dine elever vil se, når de prøver spørgsmålet. Denne svartype vurderes ikke matematisk.",
 				
-		"quizzes_studio_home_product_message_header_label": "You are using WirisQuizzes 4.5!",
-		"quizzes_studio_home_product_message_text_label": "This version features a renovated WirisQuizzes Studio and also includes performance improvements. We've also added a new input settings feature - now you can lock the initial content.",
-		"quizzes_studio_home_product_message_release_notes_link": "Check out our release notes.",		
+		"quizzes_studio_home_product_message_header_label": "Du bruger WirisQuizzes 4.6",
+		"quizzes_studio_home_product_message_text_label": "Du kan nu nyde vores nye tilfældige variable funktion, der giver dig mulighed for at skabe dynamiske spørgsmål på en hurtigere og ligetil måde.",
+		"quizzes_studio_home_product_message_release_notes_link": "Tag et kig på vores release notes.",
+		"quizzes_studio_home_product_message_give_us_feedback_link": "Giv os din feedback.",		
 
-		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Initial content",
-		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Lock initial content",
-		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Do not allow the student to modify the answer outside of the empty placeholders left in the initial content. If this setting is enabled the student will only be able to fill in the boxes of the initial content."
+		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Indledende indhold",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Lås indledende indhold",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Tillad ikke eleven at ændre svaret uden for de tomme pladsholdere, der er tilbage i det indledende indhold. Hvis denne indstilling er aktiveret, vil eleven kun være i stand til at udfylde boksene med det oprindelige indhold.",
+
+		"quizzes_studio_home_random_variables_title": "Tilfældige variable",
+		"quizzes_studio_home_random_variables_title_basic_mode": "Grundlæggende tilstand",
+		"quizzes_studio_home_advanced_random_variables_button_text": "Avanceret tilstand",
+		"quizzes_studio_home_advanced_random_variables_button_text_string_syntax": "Tilfældige variable",
+		"quizzes_studio_home_random_variables_description_text": "Gør dine spørgsmål dynamiske ved at tilføje tilfældige variabler til din spørgsmålserklæring. Glem ikke at tilføje disse variabler i det korrekte svar, og hvis du vil have dem til at blive evalueret, så tilføj kommandoen evaluering.",
+		"quizzes_studio_home_random_variables_simple_algorithm_text": "Gør dine spørgsmål dynamiske ved at tilføje tilfældige variabler til din spørgsmålserklæring. Glem ikke at tilføje disse variabler i det korrekte svar, og hvis du vil have dem til at blive evalueret, så tilføj kommandoen evaluering.",
+		"quizzes_studio_home_random_variables_string_syntax_text": "Brug CalcMe til at skrive en algoritme til at generere tilfældige variabler!",
+		"quizzes_studio_home_random_variables_add_new_button_text": "+ Tilføj variabel",
+		"quizzes_studio_home_random_variables_complex_algorithm_text": "Du har en kompleks algoritme, brug den avancerede tilstand!",
+		"quizzes_studio_home_random_variables_help_button": "Tilfældige variable dokumentation",
+
+		"quizzes_studio_home_random_variable_row_variable_name_text": "Variabel navn",
+		"quizzes_studio_home_random_variable_row_prefix_text": "#",
+		"quizzes_studio_home_random_variable_type_text": "er et heltal mellem",
+		"quizzes_studio_home_random_variable_min_value_text": "min værdi",
+		"quizzes_studio_home_random_variable_row_and_text": "og",
+		"quizzes_studio_home_random_variable_max_value_text": "max værdi",
+
+		"quizzes_studio_home_random_variable_name_already_used_error": "Variabelnavnet er allerede brugt!",
+		"quizzes_studio_home_random_variable_number_not_integer_error": "Ikke et heltal!",
+		"quizzes_studio_home_random_variable_invalid_name_error": "Ikke et gyldigt variabelnavn!",
+		"quizzes_studio_home_random_variable_max_value_error": "Max værdi skal være større!",
+		"quizzes_studio_home_random_variable_name_missing_error": "Variabelnavn mangler",
+		"quizzes_studio_home_random_variable_max_value_missing_error": "Maksimal værdi mangler",
+		"quizzes_studio_home_random_variable_min_value_missing_error": "Min værdi mangler",
+		
+		"evaluate_keyword": "vurdere"
 	}
 }
 

@@ -33,9 +33,9 @@ $string['cohortonly'] = 'Gruppo globale';
 $string['cohortonly_help'] = 'L\'iscrizione spontanea può essere limitata agli  appartenenti ad un determinato gruppo globale. Da notare che modificare questa impostazione non altera le iscrizioni già esistenti.';
 $string['confirmbulkdeleteenrolment'] = 'Sei sicuro di eliminare le iscrizioni di questi utenti?';
 $string['customwelcomemessage'] = 'Messaggio di benvenuto personalizzato';
-$string['customwelcomemessage_help'] = 'E\' possibile inserire un messaggio personalizzato di benvenuto, sia in formato testo semplice sia in formato Moodle, dove includere tag HTML e tag multilingua.
+$string['customwelcomemessage_help'] = 'È possibile inserire un messaggio personalizzato di benvenuto, sia in formato testo semplice sia in formato Moodle, dove includere tag HTML e tag multilingua.
 
-E\' anche possibile utilizzare i seguenti segnaposto:
+È anche possibile utilizzare i seguenti segnaposto:
 
 * Titolo del corso {$a->coursename}
 * Link al profilo dell\'utente {$a->profileurl}
@@ -81,7 +81,7 @@ $string['longtimenosee'] = 'Disiscrivi utenti non attivi dopo';
 $string['longtimenosee_help'] = 'Consente di disiscrivere automaticamente quegli utenti che non abbiano svolto attività per il numero di giorni impostato.';
 $string['maxenrolled'] = 'Numero max. di iscrizioni';
 $string['maxenrolled_help'] = 'Il numero massimo di utenti che potranno iscriversi al corso. Usare 0 per non avere limiti.';
-$string['maxenrolledreached'] = 'E\' stato già raggiunto il numero massimo di iscrizioni.';
+$string['maxenrolledreached'] = 'È stato già raggiunto il numero massimo di iscrizioni.';
 $string['messageprovider:expiry_notification'] = 'Notifiche di scadenza iscrizioni spontanee';
 $string['newenrols'] = 'Consenti nuove iscrizioni';
 $string['newenrols_desc'] = 'Di default gli utenti possono iscriversi ai corsi spontaneamente.';
@@ -96,7 +96,7 @@ Se viene impostata una chiave, agli utenti verrà chiesto di inserirla per perfe
 $string['passwordinvalid'] = 'Chiave errata, per favore riprova';
 $string['passwordinvalidhint'] = 'La chiave d\'iscrizione è errata, per favore riprova.<br /> (Suggerimento: la chiave comincia con \'{$a}\')';
 $string['pluginname'] = 'Iscrizione spontanea';
-$string['pluginname_desc'] = 'L\'iscrizione spontanea consente agli utenti di decidere a quali corsi iscriversi. E\' possibile regolare le iscrizioni spontanee tramite chiavi di iscrizione. L\'iscrizione spontanea per funzionare ha bisogno del plugin Iscrizioni manuali, che deve essere abilitato nel medesimo corso.';
+$string['pluginname_desc'] = 'L\'iscrizione spontanea consente agli utenti di decidere a quali corsi iscriversi. È possibile regolare le iscrizioni spontanee tramite chiavi di iscrizione. L\'iscrizione spontanea per funzionare ha bisogno del plugin Iscrizioni manuali, che deve essere abilitato nel medesimo corso.';
 $string['privacy:metadata'] = 'Il plugin di iscrizione Iscrizione spontanea non memorizza dati personali.';
 $string['requirepassword'] = 'Chiave d\'iscrizione obbligatoria';
 $string['requirepassword_desc'] = 'Rende obbligatoria la chiave d\'iscrizione nei nuovi corsi ed evita l\'eliminazione di chiavi d\'iscrizione già esistenti.';

@@ -549,13 +549,42 @@
 		"quizzes_studio_home_initial_content_description_graphic": "This is the initial state of the graph editor your students will see when attempting the question. You can customize the toolbar elements they will see in the input options.",
 		"quizzes_studio_home_initial_content_description_text": "This is the initial state of the text editor your students will see when attempting the question. This answer type is not evaluated mathematically.",
 				
-		"quizzes_studio_home_product_message_header_label": "You are using WirisQuizzes 4.5!",
-		"quizzes_studio_home_product_message_text_label": "This version features a renovated WirisQuizzes Studio and also includes performance improvements. We've also added a new input settings feature - now you can lock the initial content.",
-		"quizzes_studio_home_product_message_release_notes_link": "Check out our release notes.",		
+		"quizzes_studio_home_product_message_header_label": "You are using WirisQuizzes 4.6",
+		"quizzes_studio_home_product_message_text_label": "You can now enjoy our new random variables feature, that allows you to create dynamic questions in a faster and straightforward way.",
+		"quizzes_studio_home_product_message_release_notes_link": "Take a look at our release notes.",
+		"quizzes_studio_home_product_message_give_us_feedback_link": "Give us your feedback.",		
 
 		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Initial content",
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Lock initial content",
-		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Do not allow the student to modify the answer outside of the empty placeholders left in the initial content. If this setting is enabled the student will only be able to fill in the boxes of the initial content."
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Do not allow the student to modify the answer outside of the empty placeholders left in the initial content. If this setting is enabled the student will only be able to fill in the boxes of the initial content.",
+
+		"quizzes_studio_home_random_variables_title": "Random Variables",
+		"quizzes_studio_home_random_variables_title_basic_mode": "Basic Mode",
+		"quizzes_studio_home_advanced_random_variables_button_text": "Advanced Mode",
+		"quizzes_studio_home_advanced_random_variables_button_text_string_syntax": "Random Variables",
+		"quizzes_studio_home_random_variables_description_text": "Make your questions dynamic by adding random variables to your question statement. Don’t forget to add these variables in the correct answer and if you want them to appear evaluated then add the command evaluate.",
+		"quizzes_studio_home_random_variables_simple_algorithm_text": "Make your questions dymanic by adding random variables to your question statement. Don’t forget to add these variables in the correct answer and if you want them to appear evaluated then add the command evaluate.",
+		"quizzes_studio_home_random_variables_string_syntax_text": "Use CalcMe to write an algorithm to generate random variables!",
+		"quizzes_studio_home_random_variables_add_new_button_text": "+ Add variable",
+		"quizzes_studio_home_random_variables_complex_algorithm_text": "You have a complex algorithm, use the advanced mode!",
+		"quizzes_studio_home_random_variables_help_button": "Random variables documentation",
+
+		"quizzes_studio_home_random_variable_row_variable_name_text": "Variable name",
+		"quizzes_studio_home_random_variable_row_prefix_text": "#",
+		"quizzes_studio_home_random_variable_type_text": "is an integer between",
+		"quizzes_studio_home_random_variable_min_value_text": "min value",
+		"quizzes_studio_home_random_variable_row_and_text": "and",
+		"quizzes_studio_home_random_variable_max_value_text": "max value",
+
+		"quizzes_studio_home_random_variable_name_already_used_error": "Variable name already used!",
+		"quizzes_studio_home_random_variable_number_not_integer_error": "Not an integer!",
+		"quizzes_studio_home_random_variable_invalid_name_error": "Not a valid variable name!",
+		"quizzes_studio_home_random_variable_max_value_error": "Max value must be bigger!",
+		"quizzes_studio_home_random_variable_name_missing_error": "Variable name is missing",
+		"quizzes_studio_home_random_variable_max_value_missing_error": "Max value is missing",
+		"quizzes_studio_home_random_variable_min_value_missing_error": "Min value is missing",
+		
+		"evaluate_keyword": "evaluate"
 	}
 }
 

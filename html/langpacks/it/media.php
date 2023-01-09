@@ -35,7 +35,7 @@ $string['managemediaplayers'] = 'Gestione riproduttori multimediali';
 $string['mediaformats'] = 'Riproduttori disponibili';
 $string['mediaformats_desc'] = 'Abilitando i riproduttori tramite le impostazioni seguenti, sarà possibile incorporare file multimediali tramite il filtro Plugin multimediali (se abilitato) oppure tramite risorse di tipo File o URL usando l\'opzione \'Incorpora\'. Se un riproduttore non è abilitato, non sarà possibile incorporare quel tipo di media e gli utenti dovranno scaricare il file o seguire il link.
 
-Se due riproduttori supportano lo stesso formato, abilitarli entrambi aumenta la compatibilità tra dispositivi diversi, come ad esempio i telefoni cellulari. E\' anche possibile aumentare ulteriormente la compatibilità fornendo più versioni in formati diversi dello stesso clip audio o video.';
+Se due riproduttori supportano lo stesso formato, abilitarli entrambi aumenta la compatibilità tra dispositivi diversi, come ad esempio i telefoni cellulari. È anche possibile aumentare ulteriormente la compatibilità fornendo più versioni in formati diversi dello stesso clip audio o video.';
 $string['privacy:metadata'] = 'L\'incorporazione di file non memorizza dati personali.';
 $string['supports'] = 'Supporta';
 $string['videoextensions'] = 'Video: {$a}';

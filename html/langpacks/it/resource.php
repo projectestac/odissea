@@ -78,7 +78,7 @@ $string['modulename_help'] = 'Il modulo file consente al docente di inserire fil
 
 Da notare che lo studente nel proprio computer deve avere il software necessario per visualizzare il tipo di file usato come risorsa.
 
-E\' possibile usare file per:
+È possibile usare file per:
 
 * Condividere una presentazione svolta in classe
 * Includere nel corso piccoli siti web

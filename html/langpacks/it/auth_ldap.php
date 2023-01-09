@@ -29,7 +29,7 @@ $string['auth_ldap_ad_create_req'] = 'L\'account in Active Directory non è stat
 $string['auth_ldap_attrcreators'] = 'Elenco di gruppi o contesti i cui membri sono autorizzati a creare attributi. Separa gruppi diversi con\';\'. Ad esempio \'cn=teachers,ou=staff,o=myorg\'';
 $string['auth_ldap_attrcreators_key'] = 'Creatori di attributi';
 $string['auth_ldap_auth_user_create_key'] = 'Creare utenti esternamente';
-$string['auth_ldap_bind_dn'] = 'E\' possibile utilizzre un utente Bind per cercare gli utenti. Ad esempio \'cn=ldapuser,ou=public,o=org\'';
+$string['auth_ldap_bind_dn'] = 'È possibile utilizzare un utente Bind per cercare gli utenti. Ad esempio \'cn=ldapuser,ou=public,o=org\'';
 $string['auth_ldap_bind_dn_key'] = 'Distinguished name';
 $string['auth_ldap_bind_pw'] = 'Password dell\'utente Bind.';
 $string['auth_ldap_bind_pw_key'] = 'Password';
@@ -97,7 +97,7 @@ $string['auth_ldap_usertypeundefined2'] = 'config.user_type non definito o la fu
 $string['auth_ldap_version'] = 'La versione del protocollo utilizzata dal server LDAP.';
 $string['auth_ldap_version_key'] = 'Versione';
 $string['auth_ldapdescription'] = 'Il plugin consente la confiugrazione dell\'autenticazione tramite un server LDAP esterno. Autenticandosi la prima volta in Moodle con credenziali LDAP valide, verrà anche creato un utente nel database. Il plugin può leggere gli attributi dell\'utente da LDAP e mappare i campi in Moodle. Durante le successive autenticazioni verranno solamente verificati username e password.';
-$string['auth_ldapextrafields'] = 'i campi seguenti sono opzionali. E\'  possibile scegliere di mapapre alcuni campi del profilo utente in Moodle utilizzando i dati provenienti dai <b>campi LDAP</b>. <p>Lasciando i campi vuoti, non verranno mapapti dati da LDAP e verranno utilizzati i dati di default di Moodle.</p><p>In entrambi i casi,gli utenti potranno modificare questi campi dopo essersi autenticati.</p>';
+$string['auth_ldapextrafields'] = 'i campi seguenti sono opzionali. È possibile scegliere di mappare alcuni campi del profilo utente in Moodle utilizzando i dati provenienti dai <b>campi LDAP</b>. <p>Lasciando i campi vuoti, non verranno mappati dati da LDAP e verranno utilizzati i dati di default di Moodle.</p><p>In entrambi i casi,gli utenti potranno modificare questi campi dopo essersi autenticati.</p>';
 $string['auth_ldapnotinstalled'] = 'Non è possibile usare l\'autenticazione LDAP. Il modulo PHP LDAP non è installato.';
 $string['auth_ntlmsso'] = 'NTLM SSO';
 $string['auth_ntlmsso_enabled'] = 'Impostare a SI per provare il Single Sign On con il dominio NTLM. Nota:  sono necessarie impostazioni aggiuntive sul webserver, per maggiori informazioni: <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
@@ -109,10 +109,10 @@ $string['auth_ntlmsso_ie_fastpath_yesattempt'] = 'Si, prova NTLM anche con gli a
 $string['auth_ntlmsso_ie_fastpath_yesform'] = 'Si, gli altri browser useranno il login standard';
 $string['auth_ntlmsso_maybeinvalidformat'] = 'Non è stato possibile estrarre lo username dall\'header REMOTE_USER. Verifica la correttezza del formato.';
 $string['auth_ntlmsso_missing_username'] = 'Nel formato dello username remote devi specificare almeno %username%';
-$string['auth_ntlmsso_remoteuserformat'] = 'Scegliendo \'NTLM\' come "Tipo di autenticazione\' , è possibile specificare il formato dello username remoto. Lasciando il formato vuoto, verrà usato il formato DOMAIN\\username. E\' possibile usare il segnaposto <b>%domain%</b> per specificare dove appare il  dominio e il segnaposto obbligatorio <b>%username%</b> per specificare dove compare lo username.<br /><br />Alcuni formati di uso frequente:
+$string['auth_ntlmsso_remoteuserformat'] = 'Scegliendo \'NTLM\' come "Tipo di autenticazione\', è possibile specificare il formato dello username remoto. Lasciando il formato vuoto, verrà usato il formato DOMAIN\\username. È possibile usare il segnaposto <b>%domain%</b> per specificare dove appare il  dominio e il segnaposto obbligatorio <b>%username%</b> per specificare dove compare lo username.<br /><br />Alcuni formati di uso frequente:
 <tt>%domain%%username%</tt> (MS Windows default), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> e <tt>%username%</tt> (in assenza di parte relativa al dominio).';
 $string['auth_ntlmsso_remoteuserformat_key'] = 'Formato username remoto';
-$string['auth_ntlmsso_subnet'] = 'L\'impostazione consente l\'SSO solo dai client appartenenti ad una subnet. Formato: xxx.xxx.xxx.xxx/bitmask. E\' possibile impostare più subnet separandole con \',\' (virgola).';
+$string['auth_ntlmsso_subnet'] = 'L\'impostazione consente l\'SSO solo dai client appartenenti ad una subnet. Formato: xxx.xxx.xxx.xxx/bitmask. È possibile impostare più subnet separandole con \',\' (virgola).';
 $string['auth_ntlmsso_subnet_key'] = 'Subnet';
 $string['auth_ntlmsso_type'] = 'Il metodo di autenticazione configurato nel web server per autenticare gli utenti (se sei in dubbio scegli NTLM)';
 $string['auth_ntlmsso_type_key'] = 'Tipo di autenticazione';
@@ -121,10 +121,10 @@ $string['connectingldap'] = 'Connessione al server LDAP...';
 $string['connectingldapsuccess'] = 'La connessione al server LDAP è avvenuta correttamente';
 $string['creatingtemptable'] = 'Creazione tabella temporanea {$a}';
 $string['diag_contextnotfound'] = 'Il contesto {$a} non esiste oppure il bind DN non può leggerlo';
-$string['diag_emptycontext'] = 'E\' stato trovato un contesto vuoto.';
+$string['diag_emptycontext'] = 'È stato trovato un contesto vuoto.';
 $string['diag_genericerror'] = 'Si è verificato l\'errore LDAP {$a->code} durante la lettura di {$a->subject}: {$a->message}.';
 $string['diag_rolegroupnotfound'] = 'Il bind DN non riesce a leggere Il gruppo {$a->group} relativo al ruolo {$a->localname}.';
-$string['diag_toooldversion'] = 'E\' improbabile che un server LDAP moderno possa usare il protocollo LDAPv2. Impostazioni non corrette possono corrompere i valori dei campi. Per favore verificare con l\'amministratore LDAP.';
+$string['diag_toooldversion'] = 'È improbabile che un server LDAP moderno possa usare il protocollo LDAPv2. Impostazioni non corrette possono corrompere i valori dei campi. Per favore verificare con l\'amministratore LDAP.';
 $string['didntfindexpiretime'] = 'password_expire() non ha trovato la data di scadenza.';
 $string['didntgetusersfromldap'] = 'LDAP non ha restituito nessun acccount -- un errore ? --';
 $string['gotcountrecordsfromldap'] = 'LDAP ha restituito {$a} record';

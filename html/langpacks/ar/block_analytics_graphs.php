@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['analytics_graphs'] = 'الرسوم البيانية للتحليلات';
+$string['btn_deselect_all'] = 'إلغاء إختيار الكل';
+$string['btn_select_all'] = 'إختيار الكل';
 $string['days_by_week'] = 'عدد الأيام المتاحة للوصول من الأسبوع';
 $string['days_with_access'] = 'عدد الأيام مع إتاحة الوصول';
 $string['forumchart_notposted'] = 'مناقشات المنتدى غير المشترك فيها';

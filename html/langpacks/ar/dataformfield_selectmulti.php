@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowaddoption'] = 'السماح بإضافة الخيارات';
 $string['commaandspace'] = 'الفارزة والفراغ';
 $string['optionsdefault'] = 'القيم الافتراضية';
 $string['selectmulti:addinstance'] = 'إضافة حقل نموذج بيانات للاختيار (المتعدد) جديد';

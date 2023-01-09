@@ -25,8 +25,6 @@
 
 namespace tool_migratehvp2h5p\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy API implementation for the Migrate content from mod_hvp to mod_h5pactivity plugin.
  *

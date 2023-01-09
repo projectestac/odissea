@@ -35,7 +35,7 @@ class restore_qtype_essaywiris_plugin extends restore_qtype_essay_plugin {
 
         // We used get_recommended_name() so this works.
         $elepath = $this->get_pathfor('/essay');
-        $xmlpath = '/question_categories/question_category/questions/question/plugin_qtype_essaywiris_question/question_xml';
+        $xmlpath = $this->get_pathfor('/question_xml');
 
         $paths[] = new restore_path_element($elename, $elepath);
         $paths[] = new restore_path_element($xmlname, $xmlpath);

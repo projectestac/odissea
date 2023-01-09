@@ -251,6 +251,10 @@ $string['menu'] = 'Menu déroulant';
 $string['menuchoose'] = 'Sélectionner…';
 $string['missingdata'] = 'Un identifiant de données ou un objet doit être fourni à la classe champ';
 $string['missingfield'] = 'Erreur de programmation : veuillez indiquer le champ et/ou les données lors de la définition d\'une classe.';
+$string['missingfieldtype'] = 'Type de champ in trouvable pour {$a->name}';
+$string['missingfieldtypeimport'] = 'Les champs suivants n\'ont pas été importés, car les types de champs correspondants ne sont pas installés :';
+$string['missingfieldtypes'] = 'Les champs suivants n\'ont pas leur type de champ correspondant installé. Ils ne seront pas inclus dans les formulaires lors de l\'ajout ou la modification des fiches
+Leur étiquette pourrait quand même s\'afficher sur le formulaire ; veuillez donc modifier le modèle d\'ajout de fiche en conséquence :';
 $string['modulename'] = 'Base de données';
 $string['modulename_help'] = 'Une base de données permet aux participants de créer, afficher et rechercher une collection de fiches.
 
@@ -390,6 +394,7 @@ $string['timemodified'] = 'Date modification';
 $string['todatabase'] = 'à cette base de données.';
 $string['type'] = 'Type de champ';
 $string['undefinedprocessactionmethod'] = 'Aucune méthode n\'est définie dans Data_Preset pour traiter l\'action « {$a} ».';
+$string['unknown'] = 'Champ inconnu';
 $string['unsupportedexport'] = '({$a->fieldtype}) ne peut pas être exporté.';
 $string['unsupportedfields'] = 'Champs non supportés';
 $string['unsupportedfieldslist'] = 'Les champs suivants ne peuvent pas être exportés :';

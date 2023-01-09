@@ -81,9 +81,9 @@
 		"quizzes_studio_toolbar_test_question_button_tooltip": "Test dette spørsmålet",
 		"quizzes_studio_toolbar_help_button_tooltip": "Hjelp",
 		"quizzes_studio_send_feedback_label": "Send tilbakemelding",
-		"quizzes_studio_training_label": "Enroll in our training course",
-		"quizzes_studio_website_label": "Visit our website",
-		"quizzes_studio_report_issue_label": "Report an issue",
+		"quizzes_studio_training_label": "Skriv inn i vår treningskurs",
+		"quizzes_studio_website_label": "Besøk vår nettside",
+		"quizzes_studio_report_issue_label": "Rapporter en problem",
 
 		"quizzes_studio_toolbar_more_options_dropdown_tooltip": "Flere alternativer",
 		"quizzes_studio_toolbar_more_options_dropdown_import_label": "Importer",
@@ -97,9 +97,9 @@
 		"quizzes_studio_home_answer_type_graphic_label": "Grafikk",
 		"quizzes_studio_home_answer_type_text_label": "Tekst",
 		"quizzes_studio_home_answer_type_standard_graphic_label": "Standard",
-		"quizzes_studio_home_answer_type_bar_chart_label": "Bar chart",
-		"quizzes_studio_home_answer_type_line_chart_label": "Line chart",
-		"quizzes_studio_home_answer_type_pie_chart_label": "Pie chart",
+		"quizzes_studio_home_answer_type_bar_chart_label": "Bardiagram",
+		"quizzes_studio_home_answer_type_line_chart_label": "Linjediagram",
+		"quizzes_studio_home_answer_type_pie_chart_label": "Stjernedagramm",
 
 
 		"quizzes_studio_home_question_math_content_label": "Angi det første innholdet og riktig svar for spørsmålet ditt",
@@ -111,7 +111,7 @@
 		"quizzes_studio_home_initial_graph_content_label": "Første innhold",
 		"quizzes_studio_home_correct_graph_answer_label": "Riktig svar",
 
-		"quizzes_studio_home_activity_list_label": "Settings",
+		"quizzes_studio_home_activity_list_label": "Innstillinger",
 		"quizzes_studio_home_input_options_label": "Alternativer for inndata",
 		"quizzes_studio_home_validation_options_label": "Valideringsalternativer",
 		"quizzes_studio_home_variables_options_label": "Tilfeldige variabler",
@@ -154,13 +154,13 @@
 		"quizzes_studio_input_options_answer_input_method_no_auxiliar_input_helper_text": "Ikke vis den hjelpende CalcMe-kalkulatoren i inndatafeltet for studentens svar.",
 		"quizzes_studio_input_options_answer_input_method_define_initial_content_button_label": "Definer første innhold",
 		"quizzes_studio_input_options_answer_input_method_customize_toolbar_label": "Tilpass verktøyt",
-		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_label": "Hide CalcMe file options",
-		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_helper_text": "Hide options such as opening, saving, or downloading CalcMe documents to students",
+		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_label": "Skjul innstillinger for CalcMe-fil",
+		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_helper_text": "Skjul innstillinger som åpning, lagring eller nedlasting av CalcMe- dokumenter til studenter",
 
 		"quizzes_studio_input_options_input_syntax_title": "Inndatasyntaks",
 
 		"quizzes_studio_input_options_input_syntax_select_all_label": "Alle",
-		"quizzes_studio_input_options_input_syntax_clear_all_label": "Clear",
+		"quizzes_studio_input_options_input_syntax_clear_all_label": "Tøm",
 
 		"quizzes_studio_input_options_input_syntax_constants_label": "Konstanter",
 		"quizzes_studio_input_options_input_syntax_constants_helper_text": "Velg bokstavene som blir tolket som konstanter i stedet for frie variabler. Du kan definere flere konstanter på panelet Definer tilfeldige variabler og funksjoner.",
@@ -518,7 +518,7 @@
 
 		"quizzes_studio_variables_options_cas_algorithm_convert_to_calcme_button_label": "Konverter til CalcMe",
 		"quizzes_studio_variables_options_cas_algorithm_convert_to_calcme_description_label": "Spørsmålalgoritmen vil bli importert fra Wiris CAS til vår nye algoritmeditor, CalcMe. Den resulterende algoritmen må revideres og testes manuelt. Algoritmer som importeres inn i CalcMe, kan ikke åpnes med Wiris CAS lenger. Ikke lagre spørsmålet hvis du vil angre importen etter å ha akseptert. Klikk på avbryt i vinduet Wiris Quizzes Studio, og åpne det igjen.",
-		"quizzes_studio_variables_options_cas_algorithm_convert_to_algorithm_description_label": "Convert as algorithm",
+		"quizzes_studio_variables_options_cas_algorithm_convert_to_algorithm_description_label": "Konverter som algoritme",
 
 		"answer_field_mathtype_popup_accept_dialog": "Akseptere",
 		"answer_field_mathtype_popup_cancel_dialog": "Avbryt",
@@ -537,25 +537,54 @@
 		"parameter": "parameter",
 		"answer": "svar",
 
-		"quizzes_studio_home_copy_initial_content_button_text": "Copy from initial content",
-		"quizzes_studio_home_copy_correct_answer_button_text": "Copy from correct answer",
+		"quizzes_studio_home_copy_initial_content_button_text": "Kopier fra opprinnelig innhold",
+		"quizzes_studio_home_copy_correct_answer_button_text": "Kopier fra rett svar",
 		"quizzes_studio_home_answer_type_geometry_label": "Plotter",
-		"quizzes_studio_home_answer_type_statistical_charts_label": "Statistics charts",
+		"quizzes_studio_home_answer_type_statistical_charts_label": "Statistiske diagrammer",
 		
-		"quizzes_studio_home_correct_answer_description_math": "Enter the correct answer for this question. You can modify the criteria used to compare it to your students' answer using the validation options menu.",
-		"quizzes_studio_home_correct_answer_description_graphic": "Enter the correct answer for this question. You can modify how it is compared to your students' answer and which elements are graded using the settings menu.",
-		"quizzes_studio_home_correct_answer_description_text": "Enter the correct answer for this question. You can modify the criteria used to compare it to your students' answer using the validation options menu.",
-		"quizzes_studio_home_initial_content_description_math": "This is the initial state of the math editor your students will see when attempting the question. This way you can provide a structure for their answer or blanks to fill in.",
-		"quizzes_studio_home_initial_content_description_graphic": "This is the initial state of the graph editor your students will see when attempting the question. You can customize the toolbar elements they will see in the input options.",
-		"quizzes_studio_home_initial_content_description_text": "This is the initial state of the text editor your students will see when attempting the question. This answer type is not evaluated mathematically.",
+		"quizzes_studio_home_correct_answer_description_math": "Skriv inn den riktige svaren for dette spørsmålet. Du kan endre kriteriene som brukes for å sammenligne det med studentens svar med valgmenyen for validering.",
+		"quizzes_studio_home_correct_answer_description_graphic": "Skriv inn den riktige svaren for dette spørsmålet. Du kan endre hvordan det er sammenlignet med studentens svar og hvilke elementer er gradert med innstillingsmenyen.",
+		"quizzes_studio_home_correct_answer_description_text": "Skriv inn den riktige svaren for dette spørsmålet. Du kan endre kriteriene som brukes for å sammenligne det med studentens svar med valgmenyen for validering.",
+		"quizzes_studio_home_initial_content_description_math": "Dette er den opprinnelige tilstanden til matematikkredigeringen din studenter vil se når du prøver spørsmålet. Denne måten kan du gi en struktur for svaret eller tomme for å fylle inn.",
+		"quizzes_studio_home_initial_content_description_graphic": "Dette er den opprinnelige tilstanden til grafenditoren din studenter vil se når du prøver spørsmålet. Du kan tilpasse verktøylinjeelementene de vil se i inndatavalgene.",
+		"quizzes_studio_home_initial_content_description_text": "Dette er den opprinnelige tilstanden til tekstredigeringen din studenter vil se når du prøver spørsmålet. Denne svartypen er ikke evaluert matematisk.",
 				
-		"quizzes_studio_home_product_message_header_label": "You are using WirisQuizzes 4.5!",
-		"quizzes_studio_home_product_message_text_label": "This version features a renovated WirisQuizzes Studio and also includes performance improvements. We've also added a new input settings feature - now you can lock the initial content.",
-		"quizzes_studio_home_product_message_release_notes_link": "Check out our release notes.",		
+		"quizzes_studio_home_product_message_header_label": "Du bruker WirisQuizzes 4.6.",
+		"quizzes_studio_home_product_message_text_label": "Du kan nå bruke våre nye tilfeldige variabler, som tillater deg å lage dynamiske spørsmål på en raskere og enklere måte.",
+		"quizzes_studio_home_product_message_release_notes_link": "Se på våre utslipp-notater.",
+		"quizzes_studio_home_product_message_give_us_feedback_link": "Gi oss tilbakemeldingen din.",		
 
-		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Initial content",
-		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Lock initial content",
-		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Do not allow the student to modify the answer outside of the empty placeholders left in the initial content. If this setting is enabled the student will only be able to fill in the boxes of the initial content."
+		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Startinnholdet",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Lås opprinnelig innhold",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Ikke tillat studenten å endre svaret utenfor de tomme plassholdere som er igjen i opprinnelige innholdet. Hvis denne innstillinga er slått på vil studenten bare bli i stand til å fylle boksene i den opprinnelige innholdet.",
+
+		"quizzes_studio_home_random_variables_title": "Tilfeldig variabeler",
+		"quizzes_studio_home_random_variables_title_basic_mode": "Grunnleggende modus",
+		"quizzes_studio_home_advanced_random_variables_button_text": "Avansert modus",
+		"quizzes_studio_home_advanced_random_variables_button_text_string_syntax": "Tilfeldig variabeler",
+		"quizzes_studio_home_random_variables_description_text": "Lag spørsmålene ditt dymanisk ved å legge tilfeldige variabler til spørsmålet ditt. Ikke glemme å legge disse variablene til i riktig svar og hvis du vil at de skal vise evaluert, legge til kommandoen evaluering.",
+		"quizzes_studio_home_random_variables_simple_algorithm_text": "Lag spørsmålene ditt dymanisk ved å legge tilfeldige variabler til spørsmålet ditt. Ikke glemme å legge disse variablene til den riktige svaret, og hvis du vil at de skal vises evaluert, legg til kommandoen evaluering.",
+		"quizzes_studio_home_random_variables_string_syntax_text": "Bruk CalcMe for å skrive en algoritme for å lage tilfeldige variabler!",
+		"quizzes_studio_home_random_variables_add_new_button_text": "+ Legg til variabel",
+		"quizzes_studio_home_random_variables_complex_algorithm_text": "Du har en kompleks algoritme, bruk pro-modus!",
+		"quizzes_studio_home_random_variables_help_button": "Tilfeldig dokumentasjon av variabler",
+
+		"quizzes_studio_home_random_variable_row_variable_name_text": "Variabelnavn",
+		"quizzes_studio_home_random_variable_row_prefix_text": "#",
+		"quizzes_studio_home_random_variable_type_text": "er et heltall mellom",
+		"quizzes_studio_home_random_variable_min_value_text": "minste verdi",
+		"quizzes_studio_home_random_variable_row_and_text": "og",
+		"quizzes_studio_home_random_variable_max_value_text": "maksimumverdi",
+
+		"quizzes_studio_home_random_variable_name_already_used_error": "Variabelnavn som allerede brukes!",
+		"quizzes_studio_home_random_variable_number_not_integer_error": "Ikke heltall!",
+		"quizzes_studio_home_random_variable_invalid_name_error": "Ikke en gyldig variabelnavn!",
+		"quizzes_studio_home_random_variable_max_value_error": "Maksimal verdi må være større!",
+		"quizzes_studio_home_random_variable_name_missing_error": "Variabelnavn mangler",
+		"quizzes_studio_home_random_variable_max_value_missing_error": "Maks verdi mangler",
+		"quizzes_studio_home_random_variable_min_value_missing_error": "Minste verdi mangler",
+		
+		"evaluate_keyword": "evaluere"
 	}
 }
 

@@ -31,15 +31,15 @@ $string['addalltoportfolio'] = 'Salva tutto in un portfolio';
 $string['addnewportfolio'] = 'Aggiungi un portfolio';
 $string['addtoportfolio'] = 'Esporta in un portfolio';
 $string['alreadyalt'] = 'Esportazione già attiva - per favore fate click qui per decidere cosa fare';
-$string['alreadyexporting'] = 'E\' già attiva una tua esportazione verso un portfolio. Prima di proseguire dovresti completare l\'esportazione attiva oppure annullarla. Vuoi proseguire con l\'esportazione attiva? (no equivale ad annullarla)';
+$string['alreadyexporting'] = 'È già attiva una tua esportazione verso un portfolio. Prima di proseguire dovresti completare l\'esportazione attiva oppure annullarla. Vuoi proseguire con l\'esportazione attiva? (no equivale ad annullarla)';
 $string['availableformats'] = 'Formati di esportazione disponibili';
 $string['callbackclassinvalid'] = 'La callback class specificata non è valida oppure non fa parte della gerarchia del portfolio_caller';
 $string['callercouldnotpackage'] = 'Non è stato possibile impacchettare i dati per l\'esportazione: l\'errore è {$a}';
 $string['cannotsetvisible'] = 'Non è possibile rendere il plugin attivo - il plugin è stato disabilitato poiché non configurato correttamente';
 $string['commonportfoliosettings'] = 'Impostazioni comuni portfolio';
-$string['commonsettingsdesc'] = '<p>E\' possibile stabilire se un trasferimento sia da considerarsi "Lungo" o "Breve" in base a quanto tempo l\'utente può aspettare prima che il trasferimento si concluda.</p>
-<p>I trasferimenti di dimensioni inferiori al valore impostato per i trasferimenti "Brevi" vengono effettuati subito, senza avvertire l\'utente. I trasferimenti di dimensione pari a "Brevi" o "Lunghi" chiederanno all\'utente cosa fare, ossia se avviare subito oppure accodare il trasferimento.</p>
-<p>E\' anche possibile che alcuni portfolio plugin non utilizzino tali impostazioni, accodando direttamente il trasferimento.</p>';
+$string['commonsettingsdesc'] = '<p>Èpossibile stabilire se un trasferimento sia da considerarsi "Lungo" o "Breve" in base a quanto tempo l\'utente può aspettare prima che il trasferimento si concluda.</p>
+<p>I trasferimenti di dimensioni inferiori al valore impostato per i trasferimenti \'Brevi\' vengono effettuati subito, senza avvertire l\'utente. I trasferimenti di dimensione pari a \'Brevi\' o \'Lunghi\' chiederanno all\'utente cosa fare, ossia se avviare subito oppure accodare il trasferimento.</p>
+<p>È anche possibile che alcuni portfolio plugin non utilizzino tali impostazioni, accodando direttamente il trasferimento.</p>';
 $string['configexport'] = 'Configura i dati esportati';
 $string['configplugin'] = 'Configura portfolio plugin';
 $string['configure'] = 'Configura';
@@ -62,7 +62,7 @@ $string['exportalreadyfinished'] = 'Esportazione portfolio completata.';
 $string['exportalreadyfinisheddesc'] = 'Esportazione portfolio completata.';
 $string['exportcomplete'] = 'Esportazione del portfolio completata!';
 $string['exportedpreviously'] = 'Esportazioni già effettuate';
-$string['exportexceptionnoexporter'] = 'E\' stato lanciato un portfolio_export_exception con una sessione attiva ma senza exporter object';
+$string['exportexceptionnoexporter'] = 'È stato lanciato un portfolio_export_exception con una sessione attiva ma senza exporter object';
 $string['exportexpired'] = 'L\'esportazione del portfolio è scaduta';
 $string['exportexpireddesc'] = 'Hai tentato di ripetere l\'esportazione di informazioni già esportate o di avviare una esportazione vuota. Per esportare in modo corretto devi tornare al contenuto e ricominciare l\'esportazione. Questo problema può avvenire se hai usato il pulsante back del browser dopo una esportazione, oppure se usi come bookmark una url non valida.';
 $string['exporting'] = 'Esportazione nel portfolio';
@@ -99,13 +99,13 @@ Elenco dei plugin portfolio disabilitati:
 
 {$a->textlist}
 
-E\' possibile risolvere il problema visitando la pagina {$a->fixurl}.';
+È possibile risolvere il problema visitando la pagina {$a->fixurl}.';
 $string['insanebodyhtml'] = '<p>Ricevi questo messaggio in qualità di amministratore del sito {$a->sitename}.</p>
 <p>Alcuni portfolio plugin sono stati disabilitati automaticamente poiché non sono stati configurati correttamente. Al momento gli utenti non possono esportare non possono esportare nei portfolio disabilitati.</p>
 <p>Elenco dei plugin portfolio disabilitati:</p>
 {$a->htmllist}
-<p>E\' possibile risolvere il problema visitando la pagina {$a->fixurl}.</p>';
-$string['insanebodysmall'] = 'Ricevi  questo messaggio in qualità di amministratore del sito {$a->sitename}. Alcuni portfolio plugin sono stati disabilitati automaticamente poiché non sono stati configurati correttamente. Al momento gli utenti non possono esportare nei portfolio disabilitati. E\' possibile risolvere il problema visitando la pagina {$a->fixurl}.';
+<p>È possibile risolvere il problema visitando la pagina {$a->fixurl}.</p>';
+$string['insanebodysmall'] = 'Ricevi  questo messaggio in qualità di amministratore del sito {$a->sitename}. Alcuni portfolio plugin sono stati disabilitati automaticamente poiché non sono stati configurati correttamente. Al momento gli utenti non possono esportare nei portfolio disabilitati. È possibile risolvere il problema visitando la pagina {$a->fixurl}.';
 $string['insanesubject'] = 'Alcuni portfolio plugin sono stati disabilitati automaticamente';
 $string['instancedeleted'] = 'Portfolio eliminato';
 $string['instanceismisconfigured'] = 'L\'istanza di portfolio non è configurata correttamente ed è stata ignorata. Errore: {$a}';
@@ -114,11 +114,11 @@ $string['instancenotsaved'] = 'Non è stato possibile salvare il portfolio';
 $string['instancesaved'] = 'Portfolio salvato correttamente';
 $string['intro'] = 'I contenuti che hai creato, come consegne di compiti, interventi nei forum e nel blog, possono essere esportati in un portfolio oppure scaricati.<br>
 I portfolio che non desideri utilizzare per l\'esportazione possono essere nascosti in modo da non comparire tra le opzioni di esportazione.';
-$string['invalidaddformat'] = 'E\' stato passato un Add Format non valido a portfolio_add_button. ({$a}) dovrebbe essere un PORTFOLIO_ADD_XXX';
+$string['invalidaddformat'] = 'È stato passato un Add Format non valido a portfolio_add_button. ({$a}) dovrebbe essere un PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'Non è stato possibile trovare la proprietà ({$a}) del portfolio_button';
 $string['invalidconfigproperty'] = 'Non è stato possibile trovare la proprietà della configurazione ({$a->property} di {$a->class})';
 $string['invalidexportproperty'] = 'Non è stato possibile trovare la proprietà della configurazione dell\'esportazione ({$a->property} di {$a->class})';
-$string['invalidfileareaargs'] = 'E\' stato passato un argomento File Area non valido a set_file_and_format_data - l\'argomento deve contenere contextid, filearea e itemid';
+$string['invalidfileareaargs'] = 'È stato passato un argomento File Area non valido a set_file_and_format_data - l\'argomento deve contenere contextid, filearea e itemid';
 $string['invalidformat'] = 'Qualcosa sta esportando in un formato non valido, {$a}';
 $string['invalidinstance'] = 'Non è stato possibile trovare l\'istanza di quel portfolio';
 $string['invalidpreparepackagefile'] = 'Chiamata non valida a prepare_package_file - impostate un file singolo oppure file multipli';
@@ -158,7 +158,7 @@ $string['nocommonformats'] = 'Non ci sono formati comuni tra i portfolio plugin 
 $string['noinstanceyet'] = 'Non ancora selezionato';
 $string['nologs'] = 'Non ci sono log da visualizzare';
 $string['nomultipleexports'] = 'Spiacente, il portfolio di destinazione ({$a->plugin}) non supporta esportazioni multiple contemporanee. Per favore <a href="{$a->link}">completa l\'esportazione attiva</a> e riprova.';
-$string['nonprimative'] = 'E\' stato passato un valore non primitive come argomento di callback a portfolio_add_button. Non è possibile proseguire. La chiave era {$a->key} ed il valore {$a->value}';
+$string['nonprimative'] = 'È stato passato un valore non primitive come argomento di callback a portfolio_add_button. Non è possibile proseguire. La chiave era {$a->key} ed il valore {$a->value}';
 $string['nopermissions'] = 'Spiacente, non sei autorizzato ad esportare file da quest\'area';
 $string['notexportable'] = 'Spiacente, non è possibile esportare il tipo di contenuto che state tentando di esportare';
 $string['notimplemented'] = 'Spiacente, state tentando di esportare contenuti in un formato non ancora implementato ({$a})';
@@ -196,10 +196,10 @@ $string['selectedformat'] = 'Formati di esportazione selezionati';
 $string['selectedwait'] = 'Impostato per l\'attesa?';
 $string['selectplugin'] = 'Scegli dove esportare';
 $string['showhide'] = 'Visualizza / Nascondi';
-$string['singleinstancenomultiallowed'] = 'E\' disponibile solo una singola istanza di portfolio plugin, non supporta esportazioni multiple nella stessa sessione ed è già attiva una esportazione che fa uso di questo plugin!';
+$string['singleinstancenomultiallowed'] = 'È disponibile solo una singola istanza di portfolio plugin, non supporta esportazioni multiple nella stessa sessione ed è già attiva una esportazione che fa uso di questo plugin!';
 $string['somepluginsdisabled'] = 'Alcuni portfolio plugin sono stati disabilitati in quanto non configurati correttamente oppure perché dipendono dal altri elementi, in particolare:';
 $string['sure'] = 'Sei sicuro di eliminare \'{$a}\'? Non puoi tornare indietro.';
-$string['thirdpartyexception'] = 'E\' stato lanciato un "third party exception" durante l\'esportazione del portfolio ({$a}). L\'eccezione è stata raccolto e rilanciata ma sarà necessario un intervento correttivo. con una sessione attiva ma senza exporter object';
+$string['thirdpartyexception'] = 'È stato lanciato un "third party exception" durante l\'esportazione del portfolio ({$a}). L\'eccezione è stata raccolto e rilanciata ma sarà necessario un intervento correttivo. con una sessione attiva ma senza exporter object';
 $string['transfertime'] = 'Ora di trasferimento';
 $string['unknownplugin'] = 'Sconosciuto (probabilmente disinstallata da un amministratore)';
 $string['wait'] = 'Attendi';

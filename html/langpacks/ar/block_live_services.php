@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alertsUnsubscribeAllButtonText'] = 'إلغاء اشتراك الكل';
 $string['alertsUntitled'] = 'تنبيه بدون عنوان';
 $string['calendarAllDayEvent'] = 'حدث على امتداد اليوم';
 $string['calendarAllDayEventMessage'] = 'هذا حدث على امتداد اليوم';

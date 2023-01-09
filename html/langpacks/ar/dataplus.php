@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['addadditionaltocomment'] = 'إضافة معلومات إضافية إلى قالب تعليقاتك';
 $string['addadditionaltorecord'] = 'إضافة معلومات إضافية إلى سجلك';
 $string['addinfo'] = 'إضافة معلومات إضافية إلى سجلك';
+$string['allowcomments'] = 'السماح بالتعليقات';
+$string['allowmultiple'] = 'السماح باختيارات متعددة';
 $string['capablilty_delete_database'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لحذف السجلات من قاعدة البيانات.';
 $string['capablilty_delete_record'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لحذف هذا السجل.';
 $string['capablilty_edit_record'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لتحرير هذا السجل.';
@@ -36,6 +38,7 @@ $string['capablilty_insert_database'] = 'عذرًا، حسابك لا يمتلك
 $string['capablilty_manage_database'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لإدارة قاعدة البيانات.';
 $string['capablilty_view_database'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لمعاينة السجلات.';
 $string['capablilty_view_export'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لمعاينة شاشة التصدير.';
+$string['cleardatadone'] = 'تم مسح كل البيانات من قاعدة البيانات.';
 $string['dataplus:addinstance'] = 'إضافة عيِّنة جديدة من DataPlus';
 $string['false'] = 'خطأ';
 $string['field_boolean'] = 'صح/خطأ';

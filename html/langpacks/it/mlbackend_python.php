@@ -42,7 +42,7 @@ $string['pythonpathnotdefined'] = 'Il percorso dell\'eseguibile binario Python n
 $string['secure'] = 'Utilizza HTTPS';
 $string['securedesc'] = 'Consente di scegliere la comunicazione in HTTP o HTTPS';
 $string['serversettingsinfo'] = 'Per visualizzare le impostazioni + necessario selezionare \'Utilizza server esterno\'.';
-$string['tensorboardinfo'] = 'E\' possibile lanciare TensorBoard dalla linea di comando digitando tensorboard --logdir=\'{$a}\'.';
+$string['tensorboardinfo'] = 'È possibile lanciare TensorBoard dalla linea di comando digitando tensorboard --logdir=\'{$a}\'.';
 $string['username'] = 'Username';
 $string['usernamedesc'] = 'Lo username per consentire la comunicazione tra il server Moodle e il server Python';
 $string['useserver'] = 'Utilizza server esterno';

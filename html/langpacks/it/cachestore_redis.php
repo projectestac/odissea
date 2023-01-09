@@ -35,7 +35,7 @@ $string['prefix'] = 'Prefisso chiave';
 $string['prefix_help'] = 'Il prefisso dei nomi delle chiavi del server Redis.
 * Se il server Redis è utilizzato solamente da una istanza Moodle, è possibile lasciare il valore al suo default.
 * a causa di limiti nella lunghezza delle chiavi, è possibile utilizzare al massimo 5 caratteri.';
-$string['prefixinvalid'] = 'Il prefisso non è valido. E\' possibile utilizzare a-z A-Z 0-9-_.';
+$string['prefixinvalid'] = 'Il prefisso non è valido. È possibile utilizzare a-z A-Z 0-9-_.';
 $string['privacy:metadata:redis'] = 'Il plugin cachestore "Redis" memorizza dati per breve tempo in quanto può fungere da cache. Tali dati sono memorizzati su un server Redis, dal quale vengono rimossi regolarmente.';
 $string['privacy:metadata:redis:data'] = 'Dati memorizzati in cache';
 $string['serializer_igbinary'] = 'Il serializzatore igbinary';

@@ -30,7 +30,7 @@ class restore_qtype_multianswerwiris_plugin extends restore_qtype_multianswer_pl
         $xmlname = 'qtype_wq_multianswerwiris';
 
         $elepath = $this->get_pathfor('/multianswer');
-        $xmlpath = '/question_categories/question_category/questions/question/plugin_qtype_multianswerwiris_question/question_xml';
+        $xmlpath = $this->get_pathfor('/question_xml');
 
         $paths[] = new restore_path_element($elename, $elepath);
         $paths[] = new restore_path_element($xmlname, $xmlpath);

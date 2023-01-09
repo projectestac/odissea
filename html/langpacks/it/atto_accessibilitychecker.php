@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['emptytext'] = 'Testo vuoto';
 $string['entiredocument'] = 'Tutto il documento';
-$string['imagesmissingalt'] = 'Le immagini richiedono un testo alternativo. Per risolvere il problema aggiungi un attributo alt all\'immagine. E\' possibile usare un attributo alt vuoto ma solo se l\'immagine ha scopi puramente decorativi e non veicola informazioni.';
+$string['imagesmissingalt'] = 'Le immagini richiedono un testo alternativo. Per risolvere il problema aggiungi un attributo alt all\'immagine. È possibile usare un attributo alt vuoto ma solo se l\'immagine ha scopi puramente decorativi e non veicola informazioni.';
 $string['needsmorecontrast'] = 'I colori di primo piano e sfondo non hanno sufficiente contrasto. Per risolvere il problema devi modificare uno dei due colori in modo da facilitare la lettura.';
-$string['needsmoreheadings'] = 'E\' presente moto testo privo di intestazioni. Le intestazioni facilitano la navigazione della pagine tramite screen reader e rendono comunque il testo più usabile per chiunque.';
+$string['needsmoreheadings'] = 'È presente moto testo privo di intestazioni. Le intestazioni facilitano la navigazione della pagine tramite screen reader e rendono comunque il testo più usabile per chiunque.';
 $string['nowarnings'] = 'Congratulazioni, non sono stati trovati problemi di accessibilità!';
 $string['pluginname'] = 'Verifica accessibilità';
 $string['privacy:metadata'] = 'Il plugin atto_accessibilitychecker non memorizza dati personali.';

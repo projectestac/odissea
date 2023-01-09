@@ -74,6 +74,7 @@ $string['pluginname'] = 'Feed RSS remoto';
 $string['privacy:metadata:block_rss_client:description'] = 'Descrizione del feed RSS.';
 $string['privacy:metadata:block_rss_client:preferredtitle'] = 'Titolo personalizzato del feed RSS.';
 $string['privacy:metadata:block_rss_client:shared'] = 'Disponibilità del feed RSS in tutti i corsi,';
+$string['privacy:metadata:block_rss_client:skiptime'] = 'Il tempo di attesa del cron, espresso in secondi, prima di riprovare a ottenere un feed RSS che all’elaborazione precedente non sia stato possibile ottenere.';
 $string['privacy:metadata:block_rss_client:skipuntil'] = 'Tempo massimo atteso dal cron per i feed RSS.';
 $string['privacy:metadata:block_rss_client:tableexplanation'] = 'Memorizzazione delle informazioni sul blocco RSS.';
 $string['privacy:metadata:block_rss_client:title'] = 'Titolo del feed RSS';

@@ -92,7 +92,7 @@ $string['attemptclosed'] = 'Esta tentativa ainda não foi concluída';
 $string['attemptduration'] = 'Tempo gasto';
 $string['attemptedon'] = 'Tentativa em';
 $string['attempterror'] = 'Não possui permissão para realizar o teste porque: {$a}';
-$string['attempterrorcontentchange'] = 'Esta pré-visualização do teste já não existe. (Quando um teste é editado, qualquer pré-visualização em progresso é automaticamente apagada)';
+$string['attempterrorcontentchange'] = 'Esta pré-visualização do teste já não existe. (Quando um teste é editado, qualquer pré-visualização em progresso é automaticamente apagada.)';
 $string['attempterrorcontentchangeforuser'] = 'A tentativa já não existe.';
 $string['attempterrorinvalid'] = 'ID de tentativa inválido';
 $string['attemptfirst'] = 'Primeira tentativa';
@@ -232,7 +232,7 @@ $string['connectionerror'] = 'Ligação à rede perdida (gravação automática 
 Anote quaisquer respostas inseridas nesta página nos últimos minutos e tente ligar novamente à rede.
 
 Quando a ligação for restabelecida, as suas respostas devem ser guardadas e esta mensagem irá desaparecer.';
-$string['connectionok'] = 'Conexão de rede restaurada. Pode continuar com segurança.';
+$string['connectionok'] = 'Ligação de rede restaurada. Pode continuar com segurança.';
 $string['containercategorycreated'] = 'Esta categoria foi criada para guardar todas as categorias movidas para o nível do site, devido às razões apresentadas abaixo.';
 $string['continueattemptquiz'] = 'Continuar a sua tentativa';
 $string['continuepreview'] = 'Continuar a última pré-visualização';

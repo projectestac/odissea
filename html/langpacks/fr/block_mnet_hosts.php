@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['error_authmnetneeded'] = 'Le plugin d\'authentification MNet doit être activé pour voir la liste des serveurs du réseau MNet';
-$string['error_localusersonly'] = 'Les utilisateurs distants ne peuvent pas rejoindre d\'autres serveur du réseau MNet à partir de ce serveur';
+$string['error_localusersonly'] = 'Les utilisateurs distants ne peuvent pas rejoindre d\'autres serveurs du réseau MNet à partir de ce serveur';
 $string['error_roamcapabilityneeded'] = 'Les utilisateurs doit avoir la capacité « Accéder à une application distante via MNet » pour voir la liste des serveurs du réseau MNet';
-$string['mnet_hosts:addinstance'] = 'Ajouter un bloc serveurs du réseau';
-$string['mnet_hosts:myaddinstance'] = 'Ajouter un bloc serveurs du réseau au tableau de bord';
-$string['pluginname'] = 'Serveurs du réseau';
-$string['privacy:metadata'] = 'Le bloc Serveurs du réseau permet l\'interaction avec des serveurs du réseau. Il n\'enregistre ni n\'exporte aucune donnée.';
+$string['mnet_hosts:addinstance'] = 'Ajouter un bloc Serveurs MNet';
+$string['mnet_hosts:myaddinstance'] = 'Ajouter un bloc Serveurs MNet au tableau de bord';
+$string['pluginname'] = 'Serveurs MNet';
+$string['privacy:metadata'] = 'Le bloc Serveurs MNet permet l\'interaction avec des serveurs MNet. Il n\'enregistre ni n\'exporte aucune donnée.';
 $string['server'] = 'Serveur';

@@ -25,18 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['application_updated'] = 'Inställningarna för OpenID Connect uppdaterades.';
+$string['auth_method_certificate'] = 'Certifikat';
+$string['auth_method_secret'] = 'Hemlighet';
 $string['auth_oidcdescription'] = 'OpenID Connect-pluginmodulen tillhandahåller funktioner för enkel inloggning med konfigurerbara identitetsleverantörer.';
-$string['cfg_authendpoint_desc'] = 'URI:n för auktoriseringsslutpunkten från din identitetsprovider som ska användas.<br/>
-Om webbplatsen ska konfigureras för att tillåta användare från andra klienter åtkomst kan en klientorganisationsspecifik auktoriseringsslutpunkt inte användas.';
-$string['cfg_authendpoint_key'] = 'Auktoriseringsslutpunkt';
+$string['authendpoint'] = 'Auktorisationsslutpunkt';
+$string['authentication_and_endpoints_saved'] = 'Autentisering- och slutpunktsinställningarna uppdaterades.';
+$string['cfg_authenticationlink_desc'] = '<a href="{$a}" target="_blank">Länk till IdP- och autentiseringsinställningar</a>';
 $string['cfg_autoappend_desc'] = 'Lägg automatiskt till den här strängen när du loggar in användare med autentiseringsmetoden "Resursägarlösenord". Detta är användbart när din identitetsleverantör kräver en gemensam domän, men inte vill kräva att användarna skriver in den när de loggar in. Om den fullständiga OpenID Connect-användaren till exempel är "james@example.com" och du anger "@example.com" här, behöver användaren bara ange "james" som användarnamn. OBS! Om det finns motstridiga användarnamn, dvs. en Moodle-användare med samma namn, används autentiseringspluginmodulens prioritet för att avgöra vilken användare som kommer att användas.';
 $string['cfg_autoappend_key'] = 'Addera automatiskt';
-$string['cfg_cleanupoidctokens_desc'] = 'Om användarna har problem med att logga in med sitt Microsoft 365-konto kan du försöka rensa OpenID Connect-tokens. Detta tar bort överblivna och ofullständiga tokens som kan orsaka fel. VARNING: Detta kan avbryta pågående inloggningar så det är bäst att göra detta under tider med låg aktivitet på webbplatsen.';
-$string['cfg_cleanupoidctokens_key'] = 'Rensa OpenID Connect-tokens';
-$string['cfg_clientid_desc'] = 'Ditt registrerade klient-ID hos identitetsleverantören';
-$string['cfg_clientid_key'] = 'Klient-ID';
-$string['cfg_clientsecret_desc'] = 'Din registrerade klienthemlighet hos identitetsleverantören. För vissa leverantörer kallas den också en nyckel.';
-$string['cfg_clientsecret_key'] = 'Klienthemlighet';
 $string['cfg_customicon_desc'] = 'Om du vill använda din egen ikon laddar du upp den här. Detta åsidosätter alla ikoner som valts ovan.<br /><br /><b> Information om hur du använder anpassade ikoner:</b><ul><li>Denhär bilden kommer inte att storleksanpassas på inloggningssidan, så vi rekommenderar att du laddar upp en bild som inte är större än 35x35 pixlar.</li><li>Om du har laddat upp en anpassad ikon och vill gå tillbaka till en av de färdiga ikonerna klickar du på den anpassade ikonen i rutan ovan och sedan på "Ta bort". Klicka sedan på "OK" och klickar sedan på "Spara ändringar" längst ner i det här formuläret. Den valda ikonen visas nu på Moodle-inloggningssidan.</li></ul>';
 $string['cfg_customicon_key'] = 'Anpassad ikon';
 $string['cfg_debugmode_desc'] = 'Om aktiverat loggas information till Moodle-loggen som kan hjälpa till att identifiera problem.';
@@ -79,10 +76,6 @@ $string['cfg_loginflow_rocreds'] = 'Resursägarlösenord';
 $string['cfg_loginflow_rocreds_desc'] = 'Med hjälp av det här flödet anger användaren sitt användarnamn och lösenord i Moodle-inloggningsformuläret så som hen skulle göra vid en manuell inloggning. Detta auktoriserar användaren för identitetsleverantören, men skapar ingen session på identitetsleverantörens webbplats. Om du till exempel använder Microsoft 365 med OpenID Connect loggas användaren in i Moodle men inte i Microsoft 365. Du bör använda auktoriseringsbegäran om du vill att användarna ska vara inloggade på både Moodle och hos identitetsleverantören. Observera att inte alla identitetsleverantörer stöder det här flödet. Det här alternativet bör endast användas när andra auktoriseringstyper inte är tillgängliga.';
 $string['cfg_logoutendpoint_desc'] = 'URI:n för utloggningsslutpunkten från din identitetsleverantör att använda.';
 $string['cfg_logoutendpoint_key'] = 'Utloggningsslutpunkt';
-$string['cfg_oidcresource_desc'] = 'OpenID Connect-resursen som begäran ska skickas till.';
-$string['cfg_oidcresource_key'] = 'Resurs';
-$string['cfg_oidcscope_desc'] = 'OIDC-omfånget att använda.';
-$string['cfg_oidcscope_key'] = 'Omfång';
 $string['cfg_opname_desc'] = 'Detta är en etikett som visas för användaren som identifierar vilken typ av autentiseringsuppgifter användaren måste använda för att logga in. Den här etiketten används i alla användarsynliga delar i denna plugin för att identifiera din leverantör.';
 $string['cfg_opname_key'] = 'Leverantörsnamn';
 $string['cfg_redirecturi_desc'] = 'Detta är URI:n som kommer att användas som "Omdirigerings-URI". Din OpenID Connect-identitetsleverantör bör be om denna när du registrerar Moodle som klient.<br/><b>OBS!</b> Du måste ange denna i OpenID Connect-leverantören *exakt* som den visas här. Eventuella skillnader förhindrar inloggningar med OpenID Connect.';
@@ -91,11 +84,6 @@ $string['cfg_signoffintegration_desc'] = 'Om det här alternativet är aktiverat
 
 URL:en till Moodle-webbplatsen ({$a}) måste läggas till som en omdirigerings-URI i Azure-appen som skapats för Moodle Office 365-integrationen.';
 $string['cfg_signoffintegration_key'] = 'Enkel utloggning';
-$string['cfg_tokenendpoint_desc'] = 'URI:n för tokenslutpunkten från den identitetsleverantör som ska användas.<br/>
-Observera att om webbplatsen ska konfigureras för att tillåta användare från andra tenants, kan en klientspecifik tokenslutpunkt inte användas.';
-$string['cfg_tokenendpoint_key'] = 'Tokenslutpunkt';
-$string['cfg_tools'] = 'Verktyg';
-$string['cfg_userrestrictioncasesensitive_desc'] = 'Detta styr om alternativet "/i" i det reguljära uttrycket används i matchningen för användarbegränsningen.<br/>Om det här alternativet är aktiverat utförs alla kontroller av användarbegränsningar skiftlägeskänsligt. Observera att om detta är inaktiverat är mönstret inte skiftlägeskänsligt.';
 $string['cfg_userrestrictions_desc'] = 'Tillåt bara användare som uppfyller vissa begränsningar att logga in.<br /><b>Så här gör du:</b><ul>
 <li>Ange ett <a href="https://sv.wikipedia.org/wiki/Regulj%C3%A4ra_uttryck">reguljärt uttryck</a> som matchar användarnamnen för användare som du vill tillåta. </li>
 <li>Ange <b>ett</b> mönster per rad</li>
@@ -106,6 +94,8 @@ $string['cfg_userrestrictions_desc'] = 'Tillåt bara användare som uppfyller vi
 $string['cfg_userrestrictions_key'] = 'Användarbegränsningar';
 $string['cfg_userrestrictionscasesensitive_key'] = 'Användarbegränsningar (skiftlägeskänsliga)';
 $string['cleanup_oidc_tokens'] = 'Rensa OpenID Connect-tokens';
+$string['clientid'] = 'Applikations-ID';
+$string['clientsecret'] = 'Klienthemlighet';
 $string['delete_token'] = 'Ta bort token';
 $string['delete_token_and_reference'] = 'Ta bort token och referens';
 $string['errorauthdisconnectemptypassword'] = 'Lösenordet får inte vara tomt';
@@ -118,8 +108,6 @@ $string['errorauthgeneral'] = 'Det uppstod ett problem när du skulle loggas in.
 $string['errorauthinvalididtoken'] = 'Ogiltigt <code>id_token</code> togs emot.';
 $string['errorauthloginfailednouser'] = 'Ogiltig inloggning: Användaren hittades inte i Moodle. Om den här webbplatsen har inställningen "Förhindra att konto skapas vid autentisering" aktiverad kan det innebära att du behöver hjälp från en administratör för att skapa ett konto åt dig först.';
 $string['errorauthnoauthcode'] = 'Ingen auktoriseringskod togs emot från identitetsservern. Felloggarna kan ge mer information.';
-$string['errorauthnocreds'] = 'Konfigurera klientautentiseringsuppgifter för OpenID Connect.';
-$string['errorauthnoendpoints'] = 'Konfigurera slutpunkter för OpenID Connect servern.';
 $string['errorauthnohttpclient'] = 'Ange en HTTP-klient.';
 $string['errorauthnoidtoken'] = 'OpenID Connect id_token togs inte emot.';
 $string['errorauthunknownstate'] = 'Okänt tillstånd.';
@@ -152,6 +140,12 @@ $string['eventuserconnected'] = 'Användare ansluten till OpenID Connect';
 $string['eventusercreated'] = 'Användare skapad med OpenID Connect';
 $string['eventuserdisconnected'] = 'Användare frånkopplad från OpenID Connect';
 $string['eventuserloggedin'] = 'Användaren loggade in med OpenID Connect';
+$string['heading_additional_options'] = 'Ytterligare alternativ';
+$string['heading_basic'] = 'Grundinställningar';
+$string['heading_debugging'] = 'Felsökning';
+$string['heading_user_restrictions'] = 'Användarbegränsningar';
+$string['idp_type_azuread'] = 'Azure AD (v1.0)';
+$string['idp_type_other'] = 'Övrig';
 $string['mismatched'] = 'Missmatchat';
 $string['mismatched_details'] = 'Tokenposten innehåller användarnamnet "{$a->tokenusername}". Matchad Moodle-användare har användarnamnet "{$a->moodleusername}".';
 $string['na'] = 'n/a';
@@ -159,6 +153,8 @@ $string['no_token_to_cleanup'] = 'Det finns inga OUDC-token att rensa bort.';
 $string['oidc:manageconnection'] = 'Tillåt OpenID-anslutning och frånkoppling';
 $string['oidc:manageconnectionconnect'] = 'Tillåt OpenID-anslutning';
 $string['oidc:manageconnectiondisconnect'] = 'Tillåt OpenID-frånkoppling';
+$string['oidcresource'] = 'Resurs';
+$string['oidcscope'] = 'Omfång';
 $string['pluginname'] = 'OpenID Connect';
 $string['privacy:metadata:auth_oidc'] = 'OpenID Connect-autentisering';
 $string['privacy:metadata:auth_oidc_prevlogin'] = 'Tidigare inloggningsmetoder för att ångra Microsoft 365-anslutningar';
@@ -216,6 +212,11 @@ $string['settings_fieldmap_field_surname'] = 'Efternamn';
 $string['settings_fieldmap_field_teams'] = 'Teams';
 $string['settings_fieldmap_field_telephoneNumber'] = 'Telefonnummer';
 $string['settings_fieldmap_field_userPrincipalName'] = 'Användarnamn (UPN)';
+$string['settings_page_other_settings'] = 'Övriga alternativ';
+$string['settings_section_authentication'] = 'Autentisering';
+$string['settings_section_basic'] = 'Grundinställningar';
+$string['settings_section_endpoints'] = 'Slutpunkter';
+$string['settings_section_other_params'] = 'Övriga parametrar';
 $string['table_action'] = 'Åtgärd';
 $string['table_matching_details'] = 'Detaljer';
 $string['table_matching_status'] = 'Matchningsstatus';
@@ -224,6 +225,7 @@ $string['table_token_id'] = 'Token-post ID';
 $string['table_token_unique_id'] = 'Unikt OIDC-id';
 $string['task_cleanup_oidc_state_and_token'] = 'Städa upp OIDC-tillstånd och ogiltiga token';
 $string['token_deleted'] = 'Token togs bort';
+$string['tokenendpoint'] = 'Tokenslutpunkt';
 $string['ucp_disconnect_details'] = 'Detta kommer koppla från Moodlekontot från {$a}. Du måste skapa ett användarnamn och lösenord för att logga in på Moodle.';
 $string['ucp_disconnect_title'] = '{$a}-frånkoppling';
 $string['ucp_general_intro'] = 'Här kan du hantera anslutningen till {$a}. Om den är aktiverad kan du använda ditt {$a}-konto för att logga in på Moodle i stället för ett separat användarnamn och lösenord. När du är ansluten behöver du inte längre komma ihåg ett användarnamn och lösenord för Moodle utan alla inloggningar hanteras av {$a}.';

@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alldistrict'] = 'الكل';
 $string['nopermission'] = 'ليست لديك صلاحية القيام بهذا التصدير';
 $string['wrongdistrict'] = 'ليست لديك صلاحية معاينة التقارير من تلك المقاطعة';

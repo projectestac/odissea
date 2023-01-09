@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo menu';
-$string['pluginname'] = 'Menu (Selezione singola)';
-$string['privacy:metadata'] = 'Il plugin campo "Menu" non memorizza dati personali, utilizza tabelle definite in mod_data.';
+$string['fieldtypelabel'] = 'Menu a discesa';
+$string['pluginname'] = 'Menu a discesa';
+$string['privacy:metadata'] = 'Il plugin Menu a discesa non memorizza dati personali, utilizza tabelle definite in mod_data.';

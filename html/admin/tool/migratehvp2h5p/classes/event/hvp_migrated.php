@@ -26,8 +26,6 @@ namespace tool_migratehvp2h5p\event;
 
 use core\event\base;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Event hvp_migrated.
  *

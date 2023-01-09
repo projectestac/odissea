@@ -25,5 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allgroupsinstatehidden'] = 'كل المجموعات مخفية مسبقًا.';
+$string['allgroupsinstatevisible'] = 'كل المجموعات مرئية مسبقًا.';
 $string['groups:addinstance'] = 'إضافة كتلة جديدة من المجموعة';
 $string['groups:myaddinstance'] = 'إضافة كتلة جديدة من المجموعة إلى لوحة التحكم';
+$string['groupschangedhidden'] = 'كل المجموعات مخفية.';
+$string['groupschangedvisible'] = 'كل المجموعات مرئية.';

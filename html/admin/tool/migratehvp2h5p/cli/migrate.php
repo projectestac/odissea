@@ -147,11 +147,7 @@ mtrace("Server Time: {$humantimenow}\n");
 mtrace("Search for $limit non migrated hvp activites\n");
 
 list($sql, $params) = api::get_sql_hvp_to_migrate(false, null, $contenttypes);
-if (!empty($limit)) {
-    $sql .= " LIMIT " . $limit;
-}
-
-$activities = $DB->get_records_sql($sql, $params);
+$activities = $DB->get_records_sql($sql, $params, 0, $limit);
 
 if (empty($activities)) {
     mtrace(" * No activites are found.\n");

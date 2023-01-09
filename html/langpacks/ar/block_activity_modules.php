@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activity_modules:addinstance'] = 'إضافة كتلة أنشطة جديدة';
-$string['pluginname'] = 'الأنشطة';
+$string['pluginname'] = 'النشاطات';
 $string['privacy:metadata'] = 'كتلة النشاطات تُظهر فقط بيانات مخزنة في مواضع أخرى.';

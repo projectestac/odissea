@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actenrolshhdr'] = 'Módulos de inscrição disponíveis';
-$string['addinstance'] = 'Adicionar método';
+$string['addinstance'] = 'Adicionar método:';
 $string['addinstanceanother'] = 'Adicionar método e criar outro';
 $string['ajaxnext25'] = 'Próximos 25...';
 $string['ajaxoneuserfound'] = 'Um utilizador encontrado';

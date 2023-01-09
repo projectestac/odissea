@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['displaycategories'] = 'Visualizza categorie';
+$string['displaycategories_help'] = 'Visualizza la categoria di corsi nel blocco corsi preferiti';
 $string['nocourses'] = 'Non ci sono corsi preferiti';
 $string['pluginname'] = 'Corsi preferiti';
 $string['privacy:metadata'] = 'Il blocco Corsi preferitii non memorizza dati personali.';

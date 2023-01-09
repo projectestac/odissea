@@ -34,7 +34,7 @@ $string['answerhdr'] = 'Risposta';
 $string['answerstoleranceparam'] = 'Parametri di tolleranza risposte';
 $string['answerwithtolerance'] = '{$a->answer} (±{$a->tolerance} {$a->tolerancetype})';
 $string['anyvalue'] = 'Qualsiasi valore';
-$string['atleastoneanswer'] = 'E\' necessario fornire almeno una risposta.';
+$string['atleastoneanswer'] = 'È necessario fornire almeno una risposta.';
 $string['atleastonerealdataset'] = 'Nel testo della domanda ci dovrebbe essere almeno un dataset reale.';
 $string['atleastonewildcard'] = 'Nel testo della domanda ci dovrebbe essere almeno una formula per caratteri jolly';
 $string['calcdistribution'] = 'Distribuzione';
@@ -43,7 +43,7 @@ $string['calcmax'] = 'Massimo';
 $string['calcmin'] = 'Minimo';
 $string['choosedatasetproperties'] = 'Scegli proprietà del dataset caratteri jolly';
 $string['choosedatasetproperties_help'] = 'Un dataset è un insieme di dati utilizzati al posto di un carattere jolly.
-E\' possibile creare un dataset "privato" per una data domanda, oppure una dataset condiviso che può essere impiegato in tutte le domande di una categoria.';
+È possibile creare un dataset "privato" per una data domanda, oppure una dataset condiviso che può essere impiegato in tutte le domande di una categoria.';
 $string['correctanswerformula'] = 'Formula della risposta corretta';
 $string['correctanswershows'] = 'Visualizza risposta corretta';
 $string['correctanswershowsformat'] = 'Formato';

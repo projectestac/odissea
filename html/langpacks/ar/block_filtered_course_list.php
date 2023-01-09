@@ -33,4 +33,5 @@ $string['coursenametpl'] = 'قالب اسم المساق';
 $string['courseswithxenrolment'] = 'المقررات الدراسية التي فيها {$a} من الانضمامات';
 $string['filtered_course_list:addinstance'] = 'إضافة كتلة جديدة من قائمة المقررات الدراسية المرشحة';
 $string['filtered_course_list:myaddinstance'] = 'إضافة كتلة جديدة من قائمة المقررات الدراسية المرشحة إلى صفحتي الرئيسية';
+$string['hideallcourseslink'] = 'إخفاء رابط "كل المساقات"';
 $string['pluginname'] = 'قائمة المقررات الدراسية المرشحة';

@@ -53,8 +53,10 @@ $string['clicktoselectcm'] = 'Click to select an activity or resource';
 $string['cmselector'] = 'Course module selector';
 $string['coefxp'] = 'Algorithm coefficient';
 $string['colon'] = '{$a->a}: {$a->b}';
+$string['configblockrankingsnapshot'] = 'Display leaderboard snapshot';
+$string['configblockrankingsnapshot_help'] = 'The leaderboard snapshot displays the rank of the user. It will also attempt to display the two people surrounding the user. This feature requires the leaderboard to be enabled, and its ranks to be displayed.';
 $string['configdescription'] = 'Introduction';
-$string['configdescription_help'] = 'A short introduction displayed in the block, below the student\'s level. Students have the ability to dismiss the message, in which case they won\'t see it again.';
+$string['configdescription_help'] = 'A short introduction message displayed in the block. Students have the ability to dismiss the message, in which case they won\'t see it again.';
 $string['configheader'] = 'Settings';
 $string['configrecentactivity'] = 'Display recent rewards';
 $string['configrecentactivity_help'] = 'When enabled, the block will display a short list of recent events which rewarded the student with points.';
@@ -92,11 +94,11 @@ $string['editinstructions'] = 'Edit information';
 $string['enablecheatguard'] = 'Enable cheat guard';
 $string['enablecheatguard_help'] = 'The cheat guard offers a simple inexpensive mechanism for preventing students to abuse the system using obvious techniques, such as refreshing the same page endlessly, or repeating the same action over and over again.
 
-[More info](https://levelup.plus/docs/article/level-up-cheat-guard?ref=blockxp_help)';
+[More info](https://docs.levelup.plus/xp/docs/getting-started/cheat-guard?ref=blockxp_help)';
 $string['enableinfos'] = 'Enable info page';
 $string['enableinfos_help'] = 'When set to \'No\', students will not be able to view the information page.';
-$string['enableladder'] = 'Enable the ladder';
-$string['enableladder_help'] = 'When set to \'No\', students will not be able to view the ladder.';
+$string['enableladder'] = 'Enable the leaderboard';
+$string['enableladder_help'] = 'When set to \'No\', students will not be able to view the leaderboard.';
 $string['enablelevelupnotif'] = 'Enable level up notification';
 $string['enablelevelupnotif_help'] = 'When set to \'Yes\', students will be displayed a popup congratulating them for the new level reached.';
 $string['enablelogging'] = 'Enable logging';
@@ -125,9 +127,10 @@ It is advised to check the plugin\'s _Log_ page to identify which events are tri
 
 Additional resources:
 
-- [How are experience points calculated?](https://levelup.plus/docs/article/how-are-experience-points-calculated?ref=blockxp_help)
-- [Troubleshooting rules](https://levelup.plus/docs/article/event-rule-not-working?ref=blockxp_help)';
+- [How are experience points calculated?](https://docs.levelup.plus/xp/docs/getting-started/points-calculation?ref=blockxp_help)
+- [Troubleshooting rules](https://docs.levelup.plus/xp/docs/troubleshooting/event-rule-not-working?ref=blockxp_help)';
 $string['eventtime'] = 'Event time';
+$string['filterbyuser'] = 'Filter by user';
 $string['filtermodules'] = 'Filter modules';
 $string['for1day'] = 'For 1 day';
 $string['for1month'] = 'For a month';
@@ -136,20 +139,22 @@ $string['for3days'] = 'For 3 days';
 $string['forever'] = 'Forever';
 $string['forthewholesite'] = 'For the whole site';
 $string['give'] = 'give';
-$string['gotofullladder'] = 'Go to full ladder';
+$string['gotofullladder'] = 'Go to full leaderboard';
 $string['grid'] = 'Grid';
 $string['hideparticipantsidentity'] = 'Hide participants identity';
 $string['hiderank'] = 'Hide rank';
 $string['incourses'] = 'In courses';
 $string['ineffective'] = 'Ineffective';
 $string['infos'] = 'Information';
+$string['installed'] = 'Installed';
 $string['instructions'] = 'More information';
 $string['invalidxp'] = 'Invalid points value';
 $string['keeplogs'] = 'Keep logs';
-$string['ladder'] = 'Ladder';
+$string['ladder'] = 'Leaderboard';
 $string['ladderadditionalcols'] = 'Additional columns';
-$string['ladderadditionalcols_help'] = 'This setting determines which additional columns are displayed on the ladder. Press the CTRL or CMD key while clicking to select more than one column, or to unselect a selected column.';
-$string['ladderempty'] = 'The ladder is currently empty, make sure to come back later!';
+$string['ladderadditionalcols_help'] = 'This setting determines which additional columns are displayed on the leaderboard. Press the CTRL or CMD key while clicking to select more than one column, or to unselect a selected column.';
+$string['ladderempty'] = 'The leaderboard is currently empty, make sure to come back later!';
+$string['learnmore'] = 'Learn more';
 $string['level'] = 'Level';
 $string['levelbadges'] = 'Level badges';
 $string['levelbadgesformhelp'] = 'Name the files [level].[file extension], for instance: 1.png, 2.jpg, etc... The recommended image size is 100x100.';
@@ -171,11 +176,14 @@ $string['logging'] = 'Logging';
 $string['manually'] = 'Manually';
 $string['maxactionspertime'] = 'Max. actions in time frame';
 $string['maxactionspertime_help'] = 'The maximum number of actions that will count for points during the time frame given. Any subsequent action will be ignored. When this value is empty, or equals to zero, it does not apply.';
+$string['maxlevelexcl'] = 'max level!';
+$string['menu'] = 'Menu';
+$string['missing'] = 'Missing';
 $string['movecondition'] = 'Move condition';
 $string['moverule'] = 'Move rule';
 $string['name'] = 'Name';
 $string['navinfos'] = 'Info';
-$string['navladder'] = 'Ladder';
+$string['navladder'] = 'Leaderboard';
 $string['navlevels'] = 'Levels';
 $string['navlevelssetup'] = 'Setup';
 $string['navlog'] = 'Log';
@@ -185,16 +193,21 @@ $string['navreport'] = 'Report';
 $string['navrules'] = 'Rules';
 $string['navsettings'] = 'Settings';
 $string['navvisuals'] = 'Visuals';
+$string['nextlevelin'] = 'next level in';
 $string['nodescription'] = 'No description';
 $string['nologsrecordedyet'] = 'Logs have not been recorded yet.';
 $string['noname'] = 'No name';
 $string['notesomesettingslocked'] = 'Note that some settings may not be editable when they have been locked by an administrator.';
 $string['occasionally'] = 'Occasionally';
 $string['participant'] = 'Participant';
+$string['participants'] = 'Participants';
 $string['participatetolevelup'] = 'Participate in the course to gain experience points and level up!';
 $string['perpagecolon'] = 'Per page:';
 $string['pickaconditiontype'] = 'Pick a condition type';
+$string['pluginavailabilityxpdesc'] = 'This plugin lets instructors restrict access to activities based on students\' levels.';
+$string['pluginenrolxpdesc'] = 'This plugin enables automatic enrolment into courses based on a student\'s level in another course.';
 $string['pluginname'] = 'Level Up XP';
+$string['pluginshortcodesdesc'] = 'This plugin lets instructors customise their material by including XP related elements (points, level, leaderboard, …) in the content, as well as hiding or showing content based on a student\'s level.';
 $string['pluginsoutofsync'] = '__The plugins are out of sync!__
 
 This means that you have upgraded _Level Up XP_ but not _Level Up XP+_. While we do our best to try and prevent any issues, some features may no longer function properly, including in _Level Up XP_ itself. We recommend that you upgrade _Level Up XP+_ to its latest release. [Read more]({$a->url})';
@@ -206,7 +219,7 @@ $string['privacy:metadata:log:time'] = 'The date at which it happened';
 $string['privacy:metadata:log:userid'] = 'The user who gained the points';
 $string['privacy:metadata:log:xp'] = 'The points awarded for the event';
 $string['privacy:metadata:prefintro'] = 'Records whether the user dismissed the block\'s intro';
-$string['privacy:metadata:prefladderpagesize'] = 'The user\'s preferred page size when viewing the ladder';
+$string['privacy:metadata:prefladderpagesize'] = 'The user\'s preferred page size when viewing the leaderboard';
 $string['privacy:metadata:preflevelup'] = 'Records whether the user should see the level up notification';
 $string['privacy:metadata:prefnotices'] = 'Records whether the user closed the support notice';
 $string['privacy:metadata:prefseenpromo'] = 'Records when the user viewed the promo page';
@@ -236,19 +249,29 @@ $string['property:eventname'] = 'Event name';
 $string['property:target'] = 'Event target';
 $string['rank'] = 'Rank';
 $string['ranking'] = 'Ranking';
-$string['ranking_help'] = 'The rank is the absolute position of the current user in the ladder. The relative rank is the difference in experience points between a user and their neighbours.';
-$string['reallydeleteuserstate'] = 'Deleting a user is only useful to remove them from the ladder. For any other reasons, we recommend setting their points to 0 instead. Note that deleting them does not affect their ability to earn points in the future.
+$string['ranking_help'] = 'The rank is the absolute position of the current user in the leaderboard. The relative rank is the difference in experience points between a user and their neighbours.';
+$string['reallydeleteuserstate'] = 'Deleting a user is only useful to remove them from the leaderboard. For any other reasons, we recommend setting their points to 0 instead. Note that deleting them does not affect their ability to earn points in the future.
 
 Importantly, when using _Level Up XP_ for the whole site, deleting them will make them disappear from the report, in which case you will not be able to re-assign them points. However, if you are using _Level Up XP_ per course, the student may still appear in the report if they are enrolled in the course.
 
 Do you really want to delete the points of this user?';
+$string['reallydeleteuserstateandlogs'] = 'Deleting a user removes them from the leaderboard and removes all of their associated logs.
+
+Removing logs may enable a user to re-earn points for previous actions. If your intention is only to reset their points, we recommend setting their points to 0 instead. Note that deleting a user does not affect their ability to earn points in the future.
+
+Importantly, when using _Level Up XP_ for the whole site, deleting them will make them disappear from the report, in which case you will not be able to re-assign them points. However, if you are using _Level Up XP_ per course, the student may still appear in the report if they are enrolled in the course.
+
+Do you really want to delete the points and logs of this user?';
 $string['reallyresetallcoursestodefaults'] = 'Really reset all courses rules to the default rules? This action is not reversible.';
 $string['reallyresetcourserulestodefaults'] = 'Really reset the course rules to the default rules? This action is not reversible.';
 $string['reallyresetdata'] = 'Really reset the levels and points of everyone in this course?';
 $string['reallyresetgroupdata'] = 'Really reset the levels and points of everyone in this group?';
 $string['reallyreverttopluginsdefaults'] = 'Really reset the default rules to the defaults suggested by the plugin? This action is not reversible.';
 $string['recentrewards'] = 'Recent rewards';
+$string['recommendedplugins'] = 'Recommended plugins';
 $string['releasenotes'] = 'Release notes';
+$string['remaining'] = 'remaining';
+$string['removefilter'] = 'Remove filter';
 $string['reportisempty'] = 'The report is empty, student have yet to earn points.';
 $string['reportisemptyenrolstudents'] = 'The report is empty, have students been enrolled in this course?';
 $string['requires'] = 'Requires';
@@ -257,6 +280,7 @@ $string['resetallcoursestodefaultsintro'] = 'Click the button below to reset all
 $string['resetcoursedata'] = 'Reset course data';
 $string['resetcourserulestodefaults'] = 'Reset course rules to defaults';
 $string['resetgroupdata'] = 'Reset group data';
+$string['resultsfilteredforn'] = 'Results filtered for {$a}.';
 $string['reverttopluginsdefaults'] = 'Revert to plugin\'s defaults';
 $string['reverttopluginsdefaultsintro'] = 'Use the button below if you would like to revert the above defaults to the plugin\'s defaults. This does not affect the rules in existing courses.';
 $string['reward'] = 'Reward';
@@ -330,8 +354,8 @@ Note that teachers, or otherwise users with editing capabilities, will always se
 ```
 
 Note that these shortcodes CANNOT be nested within one another.';
-$string['shortcode:xpladder'] = 'Display a portion of the ladder.';
-$string['shortcode:xpladder_help'] = 'By default, a portion of the ladder surrounding the current user will be displayed.
+$string['shortcode:xpladder'] = 'Display a portion of the leaderboard.';
+$string['shortcode:xpladder_help'] = 'By default, a portion of the leaderboard surrounding the current user will be displayed.
 
 ```
 [xpladder]
@@ -344,19 +368,19 @@ To display the top 10 students instead of the neighbours of the current user, se
 [xpladder top=15]
 ```
 
-A link to the full ladder will automatically be displayed below the table, if you do not want to display such link, add the argument `hidelink`.
+A link to the full leaderboard will automatically be displayed below the table, if you do not want to display such link, add the argument `hidelink`.
 
 ```
 [xpladder hidelink]
 ```
 
-By default, the table does not include the progress column which displays the progress bar. If such column has been selected in the additional colums in the ladder\'s settings, you can use the argument `withprogress` to display it.
+By default, the table does not include the progress column which displays the progress bar. If such column has been selected in the additional colums in the leaderboard\'s settings, you can use the argument `withprogress` to display it.
 
 ```
 [xpladder withprogress]
 ```
 
-Note that when a course is using groups, the ladder will best guess which group to display the ladder of.';
+Note that when a course is using groups, the leaderboard will best guess which group to display the leaderboard of.';
 $string['shortcode:xplevelname'] = 'Display the level name.';
 $string['shortcode:xplevelname_help'] = 'By default the tag displays the name of the current user\'s level.
 Alternatively, you can use the `level` argument to display the name of a specific level.
@@ -369,6 +393,7 @@ Alternatively, you can use the `level` argument to display the name of a specifi
 If the `level` argument is provided and the level does not exist, nothing will be displayed.';
 $string['shortcode:xppoints'] = 'Display a number of points formatted as experience points.';
 $string['shortcode:xpprogressbar'] = 'The current user\'s progress bar towards the next level.';
+$string['somefeaturesrequireotherplugins'] = 'Some features require additional plugins to be installed.';
 $string['someoneelse'] = 'Someone else';
 $string['somethinghappened'] = 'Something happened';
 $string['taskcollectionloggerpurge'] = 'Purge collection logs';
@@ -400,6 +425,7 @@ $string['usingalgo'] = 'Using algorithm';
 $string['value'] = 'Value';
 $string['valuessaved'] = 'The values have been successfully saved.';
 $string['viewas'] = 'View as';
+$string['viewlogs'] = 'View logs';
 $string['viewtheladder'] = 'View the ladder';
 $string['visualsintro'] = 'Upload images to customise the appearance of the levels.';
 $string['wewillreplyat'] = 'We will reply at: _{$a}_.';

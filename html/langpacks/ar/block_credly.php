@@ -31,6 +31,7 @@ $string['credly:addinstance'] = 'إضافة كتلة جديدة من المصد�
 $string['description'] = 'الوصف';
 $string['description_help'] = 'وصف طويل للشارة الجديدة (حتى 500 حرف)';
 $string['errorexpiresin'] = 'قيمة الانقضاء ينبغي أن تكون قيمة رقمية صحيحة تتراوح بين 0 و {$a}.';
+$string['granttocandidates'] = 'كل الطلاب';
 $string['granttocandidatesmatching'] = 'الطالب المطابق لـ "{$a}"';
 $string['missingtitle'] = 'العنوان مطلوب';
 $string['pluginname'] = 'Credly';

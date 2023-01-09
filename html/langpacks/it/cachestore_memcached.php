@@ -52,7 +52,7 @@ Se il server memcache è dedicato, è possibile eliminare senza rischi l\'intero
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Prefisso chiave';
 $string['prefix_help'] = 'Consente la creazione di un "dominio" per gli elementi di una chiave, consentendo di avere store memcached multipli in un\'unica  installazione memcached. Il prefisso non deve superare i 16 caratteri per evitare problemi di lunghezza della chiave.';
-$string['prefixinvalid'] = 'Prefisso non valido. E\' possibile usare solamente i caratteri a-z A-Z 0-9-_.';
+$string['prefixinvalid'] = 'Prefisso non valido. È possibile usare solamente i caratteri a-z A-Z 0-9-_.';
 $string['privacy:metadata:memcached'] = 'Il plugin cachestore "Memcached" memorizza dati per breve tempo in quanto può fungere da cache. Tali dati sono memorizzati su un server Memcache, dal quale vengono rimossi regolarmente.';
 $string['privacy:metadata:memcached:data'] = 'Dati memorizzati in cache';
 $string['serialiser_igbinary'] = 'Il serializzatore igbinary.';
@@ -74,7 +74,7 @@ $string['serversclusterinvalid'] = 'Con il clustering abilitato nell\'elenco dev
 $string['sessionhandlerconflict'] = 'Attenzione: l\'istanza memcached ({$a}) è stata configurata per usare lo stesso server memcached usato per le sessioni. Lo svuotamento delle cache provocherà anche l\'eliminazione delle sessioni.';
 $string['setservers'] = 'Set server';
 $string['setservers_help'] = 'L\'elenco dei server da aggiornare quando i dati della cache vengono modificati. In genere il nome qualificato di ciascun server appartenente al pool.
-E\' **obbligatorio** inserire anche il server indicato sopra nella impostazione **Server**, anche usando un nome host diverso.
+È **obbligatorio** inserire anche il server indicato sopra nella impostazione **Server**, anche usando un nome host diverso.
 Ogni riga deve contenere un solo server con, opzionalmente, la porta.
 Se la porta non viene indicata sarà usata la porta di default  (11211).
 

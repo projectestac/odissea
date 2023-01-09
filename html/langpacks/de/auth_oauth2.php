@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accountexists'] = 'Es existiert bereits ein Nutzer mit diesem Nutzer/innennamen. Falls es sich dabei um Ihren Nutzeraccount handelt, melden Sie sich bitte mit Ihrem Benutzernamen und Kennwort an und fügen Sie ihn über Ihre Favoritenseite als verbundenen Login hinzu.';
+$string['accountexists'] = 'Es existiert bereits eine Person mit diesem Anmeldenamen. Falls es sich dabei um Ihr Nutzerkonto handelt, melden Sie sich bitte mit Ihrem Anmeldenamen und Kennwort an und fügen Sie ihn über Ihre Favoritenseite als verbundenen Login hinzu.';
 $string['alreadylinked'] = 'Dieser externe Account ist bereits mit einem Nutzerkonto auf dieser Seite verknüpft.';
 $string['auth_oauth2description'] = 'OAuth 2 Standard-basierte Authentifizierung';
 $string['auth_oauth2settings'] = 'Einstellungen zur OAuth 2 Authentifizierung';

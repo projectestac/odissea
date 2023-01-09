@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alldone'] = 'تم كل شيء';
 $string['allowshowdescription'] = 'السماح للمستخدمين بضبط إظهار الوصف';
 $string['allowshowdescription_help'] = 'فيما إذا كان بإمكان المستخدمين ضبط إعداد إظهار الوصف';
+$string['allxselected'] = 'تم اختيار {0} كلها';
 $string['backtomarkinglist'] = 'عودة إلى قائمة التصحيحات';
 $string['defaultshowdescription'] = 'الإعداد الافتراضي لإظهار الوصف';
 $string['defaultshowdescription_help'] = 'فيما إذا كان إعداد إظهار الوصف مفعلاً أم معطلاً إفتراضيًا';
@@ -35,6 +37,7 @@ $string['description'] = 'الوصف';
 $string['description_help'] = 'وصف مفصل للواجب البيتي';
 $string['edithomework'] = 'تحرير الواجب البيتي';
 $string['edithomeworkitem'] = 'تحرير الواجب البيتي';
+$string['exportall'] = 'تصدير الكل';
 $string['feedback'] = 'الإفادة';
 $string['gradingscalelink'] = '<a href="{$a}" target="_blank">يمكن إنشاء مقاييس التقييم عبر النقر هنا</a>';
 $string['homework:addinstance'] = 'إضافة كتلة الواجب البيتي';

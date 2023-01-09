@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['additionaldelimiters'] = 'Delimitatori equazione aggiuntivi';
 $string['additionaldelimiters_help'] = 'Il filtro MathJax analizza il testo delle equazioni contenute all\'interno dei delimitatori.
 
-E\' possibile impostare l\'elenco dei delimitatori riconosciuti (ad esempio  AsciiMath utilizza `). I delimitatori possono essere composti da più caratteri ed è possibile separare delimitatori diversi con le virgole.';
+È possibile impostare l\'elenco dei delimitatori riconosciuti (ad esempio  AsciiMath utilizza `). I delimitatori possono essere composti da più caratteri ed è possibile separare delimitatori diversi con le virgole.';
 $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'URL MathJax';
 $string['httpsurl_help'] = 'L\'URL della libreria MathJax.';

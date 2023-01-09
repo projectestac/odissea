@@ -50,7 +50,7 @@ $string['availabletags_help'] = 'I Tag sono segna posto da utilizzare nei Modell
 
 I campi hanno il formato [[fieldname]], tutti gli atri tag hanno il formato ##sometag##.
 
-E\' possibile usare solo i tag presenti nell\'elenco "Tag disponibili".';
+È possibile usare solo i tag presenti nell\'elenco "Tag disponibili".';
 $string['availabletodate'] = 'Fino al';
 $string['availabletodatevalidation'] = 'La data di disponibilità \'Fino al\' non può essere antecedente dalla dati di disponibilità \'Dal\'.';
 $string['blank'] = 'Vuoto';
@@ -59,12 +59,12 @@ $string['bynameondate'] = 'di {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} chiude';
 $string['calendarstart'] = '{$a} apre';
 $string['cancel'] = 'Annulla';
-$string['cannotaccesspresentsother'] = 'Non sei autorizzato ad accedere alle preimpostazioni di altri utenti';
+$string['cannotaccesspresentsother'] = 'Non sei autorizzato ad accedere ali preset di altri utenti';
 $string['cannotadd'] = 'Impossibile aggiungere record!';
-$string['cannotdeletepreset'] = 'Errore nella eliminazione di una preimpostazione!';
+$string['cannotdeletepreset'] = 'Si è verificato u errore durante l\'eliminazione di un preset.';
 $string['cannotoverwritepreset'] = 'Si è verificato un errore durante la sovrascrittura dei preset';
 $string['cannotunziptopreset'] = 'Non è stato possibile decomprimere nella cartella dei preset';
-$string['checkbox'] = 'Casella di spunta';
+$string['checkbox'] = 'Caselle di spunta';
 $string['chooseexportfields'] = 'Seleziona i campi da esportare:';
 $string['chooseexportformat'] = 'Seleziona il formato di esportazione:';
 $string['chooseorupload'] = 'Scegli un file';
@@ -101,12 +101,12 @@ $string['data:exportuserinfo'] = 'Esportare dettagli utente';
 $string['data:managecomments'] = 'Gestire commenti';
 $string['data:manageentries'] = 'Gestire i record inseriti';
 $string['data:managetemplates'] = 'Gestire i Modelli';
-$string['data:manageuserpresets'] = 'Gestire tutte le preimpostazioni dei Modelli';
+$string['data:manageuserpresets'] = 'Gestire preset';
 $string['data:rate'] = 'Valutare i record inseriti';
 $string['data:readentry'] = 'Accedere ai record inseriti';
 $string['data:view'] = 'Visualizzare attività database';
 $string['data:viewallratings'] = 'Visualizzare i voti grezzi dati da ciascuno';
-$string['data:viewalluserpresets'] = 'Visualizzare le preimpostazioni salvate da tutti gli utenti';
+$string['data:viewalluserpresets'] = 'Visualizzare preset di altri utenti';
 $string['data:viewanyrating'] = 'Visualizzare totale delle valutazioni di chiunque';
 $string['data:viewentry'] = 'Visualizzare i record inseriti';
 $string['data:viewrating'] = 'Visualizzare totale delle proprie valutazioni';
@@ -125,7 +125,7 @@ $string['deletefield'] = 'Elimina un campo esistente';
 $string['deletenotenrolled'] = 'Elimina i record degli utenti non iscritti';
 $string['deletewarning'] = 'Stai per eliminare questa preimpostazione. Ne sei certo?';
 $string['descending'] = 'Decrescente';
-$string['directorynotapreset'] = '{$a->directory} Non è una preimpostazione: file mancanti: {$a->missing_files}';
+$string['directorynotapreset'] = '{$a->directory} Non è un preset: file mancanti: {$a->missing_files}';
 $string['disapprove'] = 'Disapprova';
 $string['download'] = 'Scarica';
 $string['edit'] = 'Modifica';
@@ -144,20 +144,20 @@ $string['entrysaved'] = 'Il record è stato salvato';
 $string['errormustbeteacher'] = 'Devi avere il ruolo di docente per utilizzare questa pagina!';
 $string['errormustsupplyvalue'] = 'Devi inserire un valore.';
 $string['errorpresetexists'] = 'Una preimpostazione con il nome scelto esiste già';
-$string['eventfieldcreated'] = 'Creato campo';
-$string['eventfielddeleted'] = 'Eliminato campo';
-$string['eventfieldupdated'] = 'Aggiornato campo';
-$string['eventrecordcreated'] = 'Creato record';
-$string['eventrecorddeleted'] = 'Eliminato record';
-$string['eventrecordupdated'] = 'Aggiornato record';
-$string['eventtemplateupdated'] = 'Aggiornato modello';
-$string['eventtemplateviewed'] = 'Visualizzato modello';
+$string['eventfieldcreated'] = 'Creazione campo';
+$string['eventfielddeleted'] = 'Eliminazione campo';
+$string['eventfieldupdated'] = 'Aggiornamento campo';
+$string['eventrecordcreated'] = 'Creazione record';
+$string['eventrecorddeleted'] = 'Eliminazione record';
+$string['eventrecordupdated'] = 'Aggiornamento record';
+$string['eventtemplateupdated'] = 'Aggiornamento modello';
+$string['eventtemplateviewed'] = 'Visualizzazione modello';
 $string['example'] = 'Esempio di modulo Database';
 $string['excel'] = 'Excel';
 $string['expired'] = 'Spiacente, l\'attività non è più disponibile poiché è stata chiusa il {$a} ';
 $string['export'] = 'Esporta';
 $string['exportaszip'] = 'Esporta come .zip';
-$string['exportaszip_help'] = 'L\'esportazione come .zip consente di scaricare le preimpostazioni. Le preimpostazioni possono essere caricate ed utilizzate in altri corsi.';
+$string['exportaszip_help'] = 'L\'esportazione come .zip consente di scaricare i preset. I preset possono essere caricati ed utilizzate in altri corsi.';
 $string['exportedtozip'] = 'Preimpostazione esportata su un file .zip temporaneo';
 $string['exportentries'] = 'Esporta contenuti';
 $string['exportformat'] = 'Formato di esportazione';
@@ -175,9 +175,8 @@ $string['fieldheightlistview'] = 'Altezza nella visualizzazione "Elenco"';
 $string['fieldheightsingleview'] = 'Altezza nella visualizzazione "Dettagli"';
 $string['fieldids'] = 'Id del campo';
 $string['fieldmappings'] = 'Mappatura dei campi';
-$string['fieldmappings_help'] = 'Questo menu ti consente di mantenere i dati del database mappandoli nei campi della preimpostazione scelta. Per mantenere i dati contenuti in un campo, devi mapparlo in un campo della preimpostazione. I campi della preimpostazione possono anche essere lasciati vuoti. I campi non mappati in un nuovo campo non saranno conservati ed i dati saranno perduti.
-
-E\' possibile mappare campi tra loro solo se appartengono allo stesso tipo, pertanto ogni menu a discesa potrà visualizzare campi con nomi diversi. Devi anche evitare di mappare un campo su più di un campo della preimpostazione.';
+$string['fieldmappings_help'] = 'Questo menu consente di mantenere i dati del database mappandoli nei campi del preset scelto. Per mantenere i dati contenuti in un campo, è necessario mapparlo in un campo del peset. I campi del preset possono anche essere lasciati vuoti. I campi non mappati in un nuovo campo non saranno conservati ed i dati saranno perduti.
+È possibile mappare campi tra loro solo se appartengono allo stesso tipo, pertanto ogni menu a discesa potrà visualizzare campi con nomi diversi. Si deve anche evitare di mappare un campo su più di un campo del preset.';
 $string['fieldname'] = 'Nome del campo';
 $string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'I seguenti campi presenti nel tuo file non sono noti in questo database: {$a}';
@@ -196,7 +195,7 @@ $string['forcelinkname'] = 'Nome forzato del link';
 $string['foundnorecords'] = 'Non è stato trovato nessun record (<a href="{$a->reseturl}">Reset filtri</a>)';
 $string['foundrecords'] = 'Record trovati: {$a->num}/{$a->max} (<a href="{$a->reseturl}">Reset filtri</a>)';
 $string['fromfile'] = 'Importa da file .zip';
-$string['fromfile_help'] = 'E\' possibile caricare un file in formato .zip contenente preimpostazioni del Database.';
+$string['fromfile_help'] = 'È possibile caricare un file in formato .zip contenente un preset del Database.';
 $string['generateerror'] = 'Non tutti i file sono stati generati!';
 $string['header'] = 'Intestazione';
 $string['headeraddtemplate'] = 'Impostazione dell\'interfaccia di inserimento o modifica dei record.';
@@ -207,7 +206,7 @@ $string['headerlisttemplate'] = 'Impostazione dell\'interfaccia per la visualizz
 $string['headerrsstemplate'] = 'Impostazione dei feed RSS originati da questo Database';
 $string['headersingletemplate'] = 'Impostazione dell\'interfaccia per la visualizzazione Dettagli';
 $string['importentries'] = 'Importa contenuti';
-$string['importsuccess'] = 'Le preimpostazioni sono state applicate correttamente.';
+$string['importsuccess'] = 'Il preset è stato applicato correttamente.';
 $string['includeapproval'] = 'Includi stato di approvazione';
 $string['includetags'] = 'Includi tag';
 $string['includetime'] = 'Includi data di inserimento/modifica';
@@ -227,12 +226,12 @@ $string['invalidfieldid'] = 'L\'ID di campo non è valido';
 $string['invalidfieldname'] = 'Si prega di scegliere un nome diverso per questo campo';
 $string['invalidfieldtype'] = 'Tipo campo non valido';
 $string['invalidid'] = 'ID non valido';
-$string['invalidpreset'] = '{$a} non è una preimpostazione.';
+$string['invalidpreset'] = '{$a} non è un preset';
 $string['invalidrecord'] = 'Record non valido';
 $string['invalidurl'] = 'L\'URL inserito non è valido';
 $string['jstemplate'] = 'Modello javascript';
 $string['latitude'] = 'Latitudine';
-$string['latlong'] = 'Latitudine/Longitudine';
+$string['latlong'] = 'Coordinate geografiche';
 $string['latlongboth'] = 'Devi compilare sia la latitudine sia la longitudine.';
 $string['latlongdownloadallhint'] = 'Link per scaricare tutti i record in formato KML';
 $string['latlongkmllabelling'] = 'Il modo con cui desideri etichettare gli elementi nei file in formato KML (Google Earth)';
@@ -253,18 +252,22 @@ $string['menu'] = 'Menu';
 $string['menuchoose'] = 'Scegli...';
 $string['missingdata'] = 'La id dei dati o l\'oggetto devono essere forniti alla classe dei campi';
 $string['missingfield'] = 'Errore di programamzione: è necessario specificare il campo e/o i dati quando si definisce un classe di campi.';
+$string['missingfieldtype'] = 'Il tipo di campo di {$a->name} non è stato trovato';
+$string['missingfieldtypeimport'] = 'I seguenti campi non sono stati importati poiché non sono stati installati i corrispondenti tipi di campo.';
+$string['missingfieldtypes'] = 'I seguenti campi sono di un tipo che non corrisponde ai tipi di campi installati, pertanto non saranno inclusi nella scheda di inserimento o modifica record.
+Le loro etichette tuttavia compariranno nella scheda, pertanto si raccomanda di aggiornare di conseguenza il modello "inserimento record".';
 $string['modulename'] = 'Database';
-$string['modulename_help'] = 'Il modulo attività Database consente ai partecipanti di creare, gestire e ricercare insiemi di record. Il formato e la struttura dei record è impostato liberamente dal docente e può includere caselle di spunta, pulsanti radio, menu a discesa, immagini, file, URL, numeri, testi, eccetera.
+$string['modulename_help'] = 'Il modulo attività Database consente ai partecipanti di creare, gestire e ricercare insiemi di record.
 
-L\'impaginazione delle informazioni per le viste singola, ad elenco e modifica, possono essere impostate attraverso modelli. Le attività Database possono essere condivise tra corsi diversi tramite le preimpostazioni ed è anche possibile esportare ed importare record.
+Il formato e la struttura dei record è impostato liberamente dal docente e può includere caselle di spunta, pulsanti radio, menu a discesa, immagini, file, URL, numeri, testi, eccetera.
 
-Nel caso in cui il filtro "Collegamento automatico ai campi del database" sia attivo, verrà creato un link tutte le volte che il contenuto di un campo comparirà nei testi del corso.
+Un docente può commentare e valutare i record inseriti. È anche possibile permettere agli studenti di valutare (valutazione tra pari). Le valutazioni possono essere aggregate in una valutazione finale che sarà memorizzata nel registro delle valutazioni.
 
-Un docente può consentire i commenti e la valutazione dei record, anche da parte degli stessi studenti (valutazione tra pari). Le valutazioni possono essere aggregate e la valutazione finale sarà memorizzata nel registro valutatore.
+Nel caso in cui il filtro \'Collegamento automatico ai campi del database\' sia attivo, verrà creato un link tutte le volte che il contenuto di un campo comparirà nei testi del corso.
 
-E\' possibile usare l\'attività Database per:
+È possibile usare l\'attività Database per:
 
-* una collezione collaborativa di link web, libri, recensioni, articoli, eccetera
+* creare una collezione collaborativa di link web, libri, recensioni, articoli, eccetera
 * visualizzare lavori degli studenti (fotografie, poster, siti web, eccetera) per la valutazione tra pari';
 $string['modulenameplural'] = 'Database';
 $string['more'] = 'Dettagli';
@@ -272,14 +275,14 @@ $string['moreurl'] = 'Altri URL';
 $string['movezipfailed'] = 'Impossibile spostare il .zip';
 $string['multientry'] = 'Elemento ripetuto';
 $string['multimenu'] = 'Menu (Selezione multipla)';
-$string['multipletags'] = 'Sono state trovate Tag duplicate. Il Modello di visualizzazione non è stato salvato';
+$string['multipletags'] = 'Sono state trovati Tag duplicati. Il Modello di visualizzazione non è stato salvato';
 $string['newentry'] = 'Nuovo record';
 $string['newfield'] = 'Aggiungi un campo';
-$string['newfield_help'] = 'Questa schermata consente l\'inserimento di campi che formeranno la struttura del Database.
+$string['newfield_help'] = 'Un campo consente l\'inserimento di dati. Un record può essere composto da più campi di diversi tipi come ad esempio una data, un\'immagine, caselle di spunta, eccetera.
 
-Ciascun campo può contenere diversi tipi di dati e include una interfaccia per la compilazione.';
+Ciascun campo deve avere un nome univoco. La descrizione del campo è facoltativa.';
 $string['noaccess'] = 'Non sei autorizzato ad accedere a questa pagina';
-$string['nodefinedfields'] = 'La nuova preimpostazione non ha campi definiti!';
+$string['nodefinedfields'] = 'Il nuovo preset non contiene definizioni di campi.';
 $string['nofieldcontent'] = 'Il contenuto del campo non è stato trovato';
 $string['nofieldindatabase'] = 'Il Database non ha campi.';
 $string['nolisttemplate'] = 'Il Modello di visualizzazione "Elenco" non è stata ancora impostato';
@@ -310,8 +313,8 @@ $string['pleaseaddsome'] = 'Puoi aggiungere campi al Database tramite il menu so
 $string['pluginadministration'] = 'Gestione Attività Database';
 $string['pluginname'] = 'Database';
 $string['portfolionotfile'] = 'Esporta in un portfolio invece che in un file (solo csv e leap2a)';
-$string['presetinfo'] = 'Salvando le preimpostazioni si pubblicherà anche questo Modello di visualizzazione. Qualsiasi utente potrà utilizzarlo per il proprio Database.';
-$string['presets'] = 'Preimpostazioni';
+$string['presetinfo'] = 'Salvando il preset si pubblicherà anche questo Modello di visualizzazione. Qualsiasi utente potrà utilizzarlo per il proprio Database.';
+$string['presets'] = 'Preset';
 $string['privacy:metadata:commentpurpose'] = 'Commenti ai record del database';
 $string['privacy:metadata:data_content'] = 'Dati inseriti in un campo del modulo attività del database.';
 $string['privacy:metadata:data_content:content'] = 'Contenuto';
@@ -341,7 +344,11 @@ $string['requireapproval'] = 'Approvazione dei record inseriti';
 $string['requireapproval_help'] = 'Sarà necessario approvare i record inseriti per renderli visualizzabili dagli altri utenti.';
 $string['required'] = 'Obbligatorio';
 $string['requiredentries'] = 'Numero minimo di record da inserire (obsoleto)';
-$string['requiredentries_help'] = 'Il numero minimo di record che un utente deve obbligatoriamente inserire nel Database per ritenere completata l\'attività.';
+$string['requiredentries_help'] = 'Il numero minimo di record che un utente deve obbligatoriamente inserire nel Database per ritenere conclusa l\'attività. Da notare che questa impostazione non è correlata al completamento dell’attività.
+
+Per impostare il numero minimo di record da inserire per completare l\'attività, deve essere utilizzata l\'impostazione \'Record richiesti\'. Per rimuovere del tutto questa impostazione, impostare a zero e salvare.
+
+Si raccomanda di utilizzare l\'impostazione \'Record richiesti\' disponibile nelle impostazioni di completamento attività.';
 $string['requiredentriestoview'] = 'Numero minimo di record da inserire per visualizzare';
 $string['requiredentriestoview_help'] = 'Il numero minimo di record che l\'utente deve inserire obbligatoriamente prima di poter visualizzare i record presenti nel Database.
 
@@ -355,12 +362,12 @@ $string['rows'] = 'righe';
 $string['rssglobaldisabled'] = 'Disabilitato. Controlla configurazione delle variabili del sito.';
 $string['rsstemplate'] = 'Modello RSS feed';
 $string['rsstitletemplate'] = 'Titolo del feed RSS';
-$string['rsstype'] = 'RSS per questa attività';
+$string['rsstype'] = 'RSS di questa attività';
 $string['save'] = 'Salva';
 $string['saveandadd'] = 'Salva ed inserisci un altro record';
 $string['saveandview'] = 'Salva e visualizza il record';
 $string['saveaspreset'] = 'Salva preimpostazione';
-$string['saveaspreset_help'] = 'Consente il salvataggio della struttura di questo database come preimpostazione rendendola disponibile agli utenti del sito, comparendo nella lista delle preimpostazioni. E\' possibile eliminare in qualsiasi momento la preimpostazione salvata.';
+$string['saveaspreset_help'] = 'Consente il salvataggio della struttura di questo database come preset rendendolo disponibile agli utenti del sito, comparendo nell\'elenco dei preset. È possibile eliminare in qualsiasi momento il preset salvato.';
 $string['savesettings'] = 'Esegui';
 $string['savesuccess'] = 'Le preimpostazioni sono state salvate. Queste preimpostazioni saranno disponibili in tutto il sito.';
 $string['savetemplate'] = 'Salva il modello';
@@ -375,8 +382,8 @@ $string['single'] = 'Dettagli';
 $string['singletemplate'] = 'Modello Dettagli';
 $string['subplugintype_datafield'] = 'Tipo di campo database';
 $string['subplugintype_datafield_plural'] = 'Tipi di campi database';
-$string['subplugintype_datapreset'] = 'Preimpostazione';
-$string['subplugintype_datapreset_plural'] = 'Preimpostazioni';
+$string['subplugintype_datapreset'] = 'Preset';
+$string['subplugintype_datapreset_plural'] = 'Preset';
 $string['tagarea_data_records'] = 'Record';
 $string['tags'] = 'Tag';
 $string['tagsdeleted'] = 'I tag database sono stati eliminati';
@@ -389,25 +396,26 @@ $string['timeadded'] = 'Data/ora inserimento';
 $string['timemodified'] = 'Data/ora modifica';
 $string['todatabase'] = 'in questo Database';
 $string['type'] = 'Tipo di campo';
-$string['undefinedprocessactionmethod'] = 'Nessuna metodo definito in Data_Preset per gestire l\'azione "{$a}".';
-$string['unsupportedexport'] = '({$a->fieldtype}) non è esportabile';
+$string['undefinedprocessactionmethod'] = 'In Data_Preset non vi sono metodi definiti per gestire l\'azione "{$a}".';
+$string['unknown'] = 'Campo sconosciuto';
+$string['unsupportedexport'] = '({$a->fieldtype}) non è esportabile.';
 $string['unsupportedfields'] = 'Campi non supportati';
 $string['unsupportedfieldslist'] = 'I seguenti campi non possono essere esportati:';
 $string['updatefield'] = 'Aggiorna un campo già esistente';
 $string['uploadfile'] = 'Carica file';
 $string['uploadrecords'] = 'Carica i record da un file';
-$string['uploadrecords_help'] = 'E\' possibile importare record attraverso un file di testo. Il formato del file è descritto di seguito:
+$string['uploadrecords_help'] = 'È possibile importare record attraverso un file di testo. Il formato del file è descritto di seguito:
 
 * ciascuna linea deve contenere un record
 * ciascun record è una serie di campi separati da l separatore selezionato
-* il primo record deve contenere i nomi dei campi che specificano il contenuto di ciascun campo
+* il primo record deve contenere l\'elenco dei nomi dei campi che definiscono il formato del dati presenti nel resto del file
 
 Il delimitatore di campo è un carattere che racchiude i campi del record. Spesso non è presente e si può evitare di impostarlo.';
 $string['url'] = 'URL';
 $string['usedate'] = 'Includi nella ricerca.';
-$string['usestandard'] = 'Utilizza preimpostazione';
+$string['usestandard'] = 'Utilizza un preset';
 $string['usestandard_help'] = 'Consente la scelta di un Modello di visualizzazione preimpostato tra quelli disponibili nel sito. (Se è stato già salvato un Modello di visualizzazione, è possibile anche eliminarlo.)';
 $string['viewfromdate'] = 'Solo lettura dal';
 $string['viewtodate'] = 'Fino al';
 $string['viewtodatevalidation'] = 'La data di solo lettura \'Fino al\' non può essere antecedente alla data \'Dal\'';
-$string['wrongdataid'] = 'E\' stato fornito un id errato';
+$string['wrongdataid'] = 'È stato fornito un id errato';

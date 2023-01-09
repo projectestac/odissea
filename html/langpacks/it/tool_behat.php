@@ -59,7 +59,7 @@ $string['unknownexceptioninfo'] = 'Si è verificato un errore in Selenium o nel 
 $string['viewsteps'] = 'Filtro';
 $string['warndirrootconfigfound'] = 'È stato trovato un file di configurazione in {$a}. Questo file non viene aggiornato automaticamente e potrebbe diventare obsoleto. Ti consigliamo di rimuovere questo file';
 $string['wheninfo'] = 'Quando. Azioni che generano un evento';
-$string['wrongbehatsetup'] = 'Il setup bheat presenta dei problemi e non è possibile elencare le definizioni dei passi:<b>{$a->errormsg}</b><br/><br/>E\' necessario accertarsi che:<ul>
+$string['wrongbehatsetup'] = 'Il setup bheat presenta dei problemi e non è possibile elencare le definizioni dei passi:<b>{$a->errormsg}</b><br/><br/>È necessario accertarsi che:<ul>
 <li>$CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot siano impostate nel file config.php con valori diversi da  $CFG->dataroot, $CFG->prefix e $CFG->wwwroot.</li>
 <li>il comando "{$a->behatinit}" sia stato lanciato dalla cartella radice di Moodle</li>
 <li>le dipendenze sono state installate in vendor/ e il file {$a->behatcommand} abbia i permessi per essere eseguito </li></ul>';

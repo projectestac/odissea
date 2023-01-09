@@ -68,6 +68,7 @@ $string['choicetext'] = 'Texte';
 $string['chooseaction'] = 'Choisir une action…';
 $string['choosegroup'] = 'Choisir un groupe';
 $string['collapse_all_groupings'] = 'Réduire tous les groupements';
+$string['completiondetail:submit'] = 'Sélectionner un groupe';
 $string['completionsubmit'] = 'Montrer comme complet quand l\'utilisateur fait son choix';
 $string['createdate'] = 'Date de création';
 $string['defaultsettings'] = 'Paramètres par défaut';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityorder'] = 'Ordre de les activitats';
-$string['allactivitiesandresources'] = 'Totes les activitats i recursos';
+$string['allactivitiesandresources'] = 'Totes les activitats i els recursos';
 $string['alphabetical'] = 'Alfabètic';
 $string['include'] = 'Inclou';
 $string['orderincourse'] = 'Ordre en el curs';

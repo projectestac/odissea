@@ -31,3 +31,4 @@ $string['custom'] = 'اللون المخصص للخط (سداس عشري)';
 $string['customcolor'] = 'اللون المخصص للخط';
 $string['pluginname'] = 'المزيد من ألوان الخطوط';
 $string['privacy:metadata'] = 'إن إضافة atto_morefontcolors لا تخزن أي بيانات شخصية.';
+$string['setting_custom'] = 'السماح باللون المخصص';

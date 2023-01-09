@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Tipi di file accettati';
-$string['acceptedfiletypes_help'] = 'E\' possibile limitare i tipi di file accettati inserendo un elenco di estensioni. Lasciando il campo vuoto saranno accettati tutti i tipi di file.';
+$string['acceptedfiletypes_help'] = 'È possibile limitare i tipi di file accettati inserendo un elenco di estensioni. Lasciando il campo vuoto saranno accettati tutti i tipi di file.';
 $string['allowattachments'] = 'Consenti allegati';
 $string['answerfiles'] = 'File della risposta';
 $string['answertext'] = 'Testo della risposta';
@@ -55,7 +55,7 @@ $string['mustrequirefewer'] = 'Non è possibile richiedere più allegati di quan
 $string['nlines'] = '{$a} linee';
 $string['nonexistentfiletypes'] = 'I seguenti tipi di file non sono stati accettati: {$a}';
 $string['pluginname'] = 'Componimento';
-$string['pluginname_help'] = 'In risposta a una domanda lo studente potrà caricare uno o più file e/o redigere un testo online. E\' possibile fornire un modello di risposta. Le risposte dovranno essere valutate manualmente.';
+$string['pluginname_help'] = 'In risposta a una domanda lo studente potrà caricare uno o più file e/o redigere un testo online. È possibile fornire un modello di risposta. Le risposte dovranno essere valutate manualmente.';
 $string['pluginnameadding'] = 'Creazione domanda Componimento';
 $string['pluginnameediting'] = 'Modifica domanda Componimento';
 $string['pluginnamesummary'] = 'Consente la creazione di domande la cui risposta  può essere il caricamento di o più file e/o la redazione di un testo online. La risposta dovrà essere valutata manualmente.';
@@ -64,6 +64,8 @@ $string['privacy:preference:attachments'] = 'Numero di allegati consentiti.';
 $string['privacy:preference:attachmentsrequired'] = 'Numero di allegati richiesti.';
 $string['privacy:preference:defaultmark'] = 'Punteggio di default impostato per una specifica domanda.';
 $string['privacy:preference:maxbytes'] = 'Dimensione massima del file.';
+$string['privacy:preference:responsefieldlines'] = 'Numero di linee del riquadro di input (Area di testo)';
+$string['privacy:preference:responseformat'] = 'Formato della risposta (HTML editor, plain text, ecc.).';
 $string['responsefieldlines'] = 'Dimensione del riquadro di input';
 $string['responseformat'] = 'Formato risposta';
 $string['responseisrequired'] = 'L\'inserimento di testo è obbligatorio';

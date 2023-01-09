@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventgradeexported'] = 'Esportate valutazioni OpenDcument';
+$string['eventgradeexported'] = 'Esportazione valutazioni OpenDcument';
 $string['ods:publish'] = 'Pubblicare le valutazioni in formato ODS';
 $string['ods:view'] = 'Esportare le valutazioni in formato OpenDocument';
 $string['pluginname'] = 'Formato OpenDocument';

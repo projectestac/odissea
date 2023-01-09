@@ -55,6 +55,7 @@ $string['export:header_title'] = 'العنوان';
 $string['exportuntitledpost'] = 'مشاركة بلا عنوان';
 $string['externaldashboardadd'] = 'إضافة مدونة إلى لوحة التحكم';
 $string['externaldashboardremove'] = 'إزالة المدونة من لوحة التحكم';
+$string['import_step1_all'] = 'إختيار الكل';
 $string['import_step1_from'] = 'الاستيراد من';
 $string['import_step1_table_tags'] = 'الوسوم';
 $string['import_step1_table_title'] = 'العنوان';

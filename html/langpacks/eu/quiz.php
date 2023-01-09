@@ -423,7 +423,7 @@ $string['gradingmethod'] = 'Kalifikazio-metodoa: {$a}';
 $string['groupoverrides'] = 'Talde-salbuespenak';
 $string['groupoverridesdeleted'] = 'Talde-salbuespenak ezabatu dira';
 $string['groupsnone'] = 'Ez dago sarbidea duzun talderik.';
-$string['guestsno'] = 'Sentitzen dugu, baina bisitariek ezin dute galdetegirik ikusi edo erantzun';
+$string['guestsno'] = 'Sentitzen dugu, baina gonbidatuek ezin dute galdetegirik ikusi edo erantzun';
 $string['hidebreaks'] = 'Ezkutatu orri-jauziak';
 $string['hidereordertool'] = 'Ezkutatu berrantolaketarako tresna';
 $string['history'] = 'Erantzunen historia:';
@@ -848,7 +848,7 @@ $string['reviewnever'] = 'Inoiz ez baimendu berrikusketa';
 $string['reviewofattempt'] = '{$a} saiakeraren berrikusketa';
 $string['reviewofpreview'] = 'Aurrebistaren berrikusketa';
 $string['reviewofquestion'] = 'Berrikusi {$a->quiz} galdetegiko {$a->user} erabiltzailearen {$a->question} galdera';
-$string['reviewopen'] = 'Beranduago, galdetegia irekita dagoen bitartean';
+$string['reviewopen'] = 'Beranduago, irekita dagoen bitartean';
 $string['reviewoptions'] = 'Ikasleek berrikusketa egin dezakete';
 $string['reviewoptionsheading'] = 'Berrikusketen aukerak';
 $string['reviewoptionsheading_help'] = 'Aukera hauek ikasleek galdetegi baten saiakera bat berrikustean edo galdetegi baten txostenetan ikus dezaketen informazioa kontrolatzen dute.
@@ -857,7 +857,7 @@ $string['reviewoptionsheading_help'] = 'Aukera hauek ikasleek galdetegi baten sa
 
 **Saiakera bakoitzaren ondoren** aukera soilik \'Bidali dena eta amaitu\' botoian klik egin ondorengo bi minutuetan aplikatzen da.
 
-**Beranduago, galdetegia irekita dagoen bitartean** aukera aurrekoaren ondoren aplikatzen da, galdetegiaren itxiera-data heldu arte.
+**Beranduago, irekita dagoen bitartean** aukera aurrekoaren ondoren aplikatzen da, galdetegiaren itxiera-data heldu arte.
 
 **Galdetegia itxi ondoren** aukera galdetegiaren itxiera-data igaro ondoren aplikatzen da. Galdetegiak ez badu itxiera-datarik galdetegia ez da inoiz egoera honetara heltzen.';
 $string['reviewoverallfeedback'] = 'Galdetegiko feedback orokorra';

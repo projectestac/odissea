@@ -120,7 +120,7 @@ $string['myprofileuserblogs'] = 'Ikusi blog-sarrera guztiak';
 $string['name'] = 'Izena';
 $string['name_help'] = 'Idatzi zure kanpoko blog-erako izen adierazgarria. (Ez badiozu izenik ematen, zure kanpoko blog-aren izenburua erabiliko da).';
 $string['noentriesyet'] = 'Sarrerak ez daude ikusgai hemen';
-$string['noguestpost'] = 'Bisitariek ezin dute sarrerarik egin';
+$string['noguestpost'] = 'Gonbidatuek ezin dute sarrerarik idatzi';
 $string['nopermissionstodeleteentry'] = 'Ez duzu blog-sarrera hau ezabatzeko behar den baimena';
 $string['norighttodeletetag'] = 'Zuk ez duzu etiketa hau ezabatzeko baimenik - {$a}';
 $string['nosuchentry'] = 'Ez dago blog-sarrerarik';
@@ -162,7 +162,7 @@ $string['publishto_help'] = 'Hiru aukera posible ditugu:
 
 * Zuretzat soilik (zirriborroa) - Kudeatzaileak baino ezin ditu zure mezuak irakurri.
 * Gune honetako guztientzat - Gunean alta emanda dauden erabiltzaileek baino ezin dituzte irakurri mezuak.
-* Guztientzat - Mundu guztiak irakur ditzake, baita bisitariek ere.';
+* Guztientzat - Mundu guztiak irakur ditzake, baita gonbidatuek ere.';
 $string['publishtocourse'] = 'Zurekin ikastaroa konpartitzen duten erabiltzaileak';
 $string['publishtocourseassoc'] = 'Lotutako ikastaroko kideak';
 $string['publishtocourseassocparam'] = '{$a}-ko kideak';

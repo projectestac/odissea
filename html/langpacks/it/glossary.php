@@ -96,7 +96,7 @@ $string['completionentriesdesc'] = 'Lo studente deve inserire il seguente numero
 $string['completionentriesgroup'] = 'Numero di voci';
 $string['concept'] = 'Concetto';
 $string['concepts'] = 'Concetti';
-$string['configenablerssfeeds'] = 'L\'impostazione abilita l\'utilizzo degli RSS per tutti i glossari. E\' comunque necessario abilitarli manualmente nelle impostazioni di ogni glossario.';
+$string['configenablerssfeeds'] = 'L\'impostazione abilita l\'utilizzo degli RSS per tutti i glossari. È comunque necessario abilitarli manualmente nelle impostazioni di ogni glossario.';
 $string['current'] = 'Ordinato per {$a}';
 $string['currentglossary'] = 'Glossario in uso';
 $string['date'] = 'data';
@@ -117,7 +117,7 @@ $string['deletingcomment'] = 'Eliminazione commento';
 $string['deletingnoneemptycategory'] = 'Eliminando questa categoria, non verranno comunque eliminate le voci in essa contenute, le voci saranno contrassegnate come non categorizzate.';
 $string['descending'] = 'decrescente';
 $string['destination'] = 'Destinazione delle voci importate';
-$string['destination_help'] = 'E\' possibile importare voci nel glossario in uso o in un nuovo glossario. Nel secondo caso verrà creato un nuovo glossario con le impostazioni contenute nel file XML.';
+$string['destination_help'] = 'È possibile importare voci nel glossario in uso o in un nuovo glossario. Nel secondo caso verrà creato un nuovo glossario con le impostazioni contenute nel file XML.';
 $string['disapprove'] = 'Disapprova';
 $string['displayformat'] = 'Formato di visualizzazione';
 $string['displayformat_help'] = 'Sono disponibili 7 formati di visualizzazione:
@@ -167,17 +167,17 @@ $string['entryusedynalink_help'] = 'Se l\'amministratore ha abilitato il collega
 $string['errcannoteditothers'] = 'Non puoi modificare le voci inserite da altre persone';
 $string['errconceptalreadyexists'] = 'La voce è già presente. In questo glossario non sono consentite voci duplicate.';
 $string['errdeltimeexpired'] = 'Eliminazione non consentita. Tempo scaduto!';
-$string['erredittimeexpired'] = 'E\' scaduto il tempo per la modifica di questa voce.';
+$string['erredittimeexpired'] = 'È scaduto il tempo per la modifica di questa voce.';
 $string['errorparsingxml'] = 'Si sono verificati errori durante il parsing del file. Assicurarsi che la sintassi XML sia corretta.';
-$string['eventcategorycreated'] = 'Creata categoria';
-$string['eventcategorydeleted'] = 'Eliminata categoria';
-$string['eventcategoryupdated'] = 'Aggiornata categoria';
-$string['evententryapproved'] = 'Approvata voce di glossario';
-$string['evententrycreated'] = 'Creata voce di glossario';
-$string['evententrydeleted'] = 'Eliminata voce di glossario';
-$string['evententrydisapproved'] = 'Disapprovata voce di glossario';
-$string['evententryupdated'] = 'Aggiornata voce di glossario';
-$string['evententryviewed'] = 'Visualizzata voce di glossario';
+$string['eventcategorycreated'] = 'Creazione categoria';
+$string['eventcategorydeleted'] = 'Eliminazione categoria';
+$string['eventcategoryupdated'] = 'Aggiornamento categoria';
+$string['evententryapproved'] = 'Approvazione voce di glossario';
+$string['evententrycreated'] = 'Creazione voce di glossario';
+$string['evententrydeleted'] = 'Eliminazione voce di glossario';
+$string['evententrydisapproved'] = 'Disapprovazione voce di glossario';
+$string['evententryupdated'] = 'Aggiornamento voce di glossario';
+$string['evententryviewed'] = 'Visualizzazione voce di glossario';
 $string['explainaddentry'] = 'Aggiungi un termine al glossario.<br />Concetto e definizione sono campi obbligatori.';
 $string['explainall'] = 'Visualizza TUTTE le voci nella stessa pagina';
 $string['explainalphabet'] = 'Sfoglia il glossario usando questo indice';
@@ -242,13 +242,13 @@ $string['modulename'] = 'Glossario';
 $string['modulename_help'] = 'Il modulo attività Glossario consente  ai partecipanti di creare e gestire elenchi di voci, come ad esempio un dizionario o una raccolta di risorse e informazioni.
 
 
-Un docente può consentire di allegare file alle definizioni delle voci. I file allegati di tipo immagine vengono visualizzati assieme alla definizione.  E\' possibile cercare voci oppure ordinarle alfabeticamente per categoria, data o autore. Di default le voci e le definizioni inserite sono considerati approvate, tuttavia,  prima di rendere la voce visibile a tutti i partecipanti. è anche possibile impostare l\'approvazione da parte di un docente
+Un docente può consentire di allegare file alle definizioni delle voci. I file allegati di tipo immagine vengono visualizzati assieme alla definizione. È possibile cercare voci oppure ordinarle alfabeticamente per categoria, data o autore. Di default le voci e le definizioni inserite sono considerati approvate, tuttavia,  prima di rendere la voce visibile a tutti i partecipanti. è anche possibile impostare l\'approvazione da parte di un docente
 
 Tramite l\'attivazione del filtro \'Collegamento automatico alle voci di glossario\' le voci potranno essere collegate automaticamente quando la voce compare nei testi del corso.
 
 Un docente può anche consentire l\'inserimento di commenti alle voci. Le voci possono essere valutate sia dal docente sia dagli studenti (valutazione tra pari). I punteggi ottenuti vengono aggregati e memorizzati nel registro valutatore.
 
-E\' possibile usare i glossari per:
+È possibile usare i glossari per:
 
 * Una raccolta collaborativa di parole chiave
 * Uno spazio per consentire agli studenti di inserire informazioni su loro stessi per conoscersi reciprocamente
@@ -303,7 +303,7 @@ $string['rssarticles'] = 'Numero di articoli RSS';
 $string['rssarticles_help'] = 'L\'impostazione stabilisce il numero di voci da includere nel feed RSS. In genere un valore tra 5 e 20 è adeguato.';
 $string['rsssubscriberss'] = 'Visualizza RSS per \'{$a}\' voci';
 $string['rsstype'] = 'Feed RSS per questa attività';
-$string['rsstype_help'] = 'Abilita i feed RSS per l\'attività. E\' possibile scegliere se far comparire o meno l\'autore nel feed.';
+$string['rsstype_help'] = 'Abilita i feed RSS per l\'attività. È possibile scegliere se far comparire o meno l\'autore nel feed.';
 $string['search:activity'] = 'Glossario - Informazioni sull\'attività';
 $string['search:entry'] = 'Glossario - Voci';
 $string['searchindefinition'] = 'Cerca anche nelle definizioni';

@@ -286,7 +286,7 @@ $string['groupoverridesdeleted'] = 'S\'han esborrat les excepcions de grup';
 $string['groupsnone'] = 'No hi ha grups als quals tingueu accés.';
 $string['groupsubmissionsettings'] = 'Paràmetres de la tramesa en grup';
 $string['hiddenuser'] = 'Participant';
-$string['hidegrader'] = 'Oculta la identitat de qui qualifica als estudiants';
+$string['hidegrader'] = 'Oculta la identitat de qui qualifica els estudiants';
 $string['hidegrader_help'] = 'Si s\'activa, oculta la identitat de qualsevol usuari que qualifiqui la tramesa d\'una tasca, de manera que els estudiants no puguin veure qui ha puntuat el seu treball.
 
 Fixeu-vos que aquest paràmetre no té efectes en la caixa de comentaris de la pàgina de qualificació.';
@@ -481,7 +481,7 @@ $string['sendnotifications_help'] = 'Si està activat, qui qualifica (normalment
 $string['sendstudentnotifications'] = 'Notifica als estudiants';
 $string['sendstudentnotifications_help'] = 'Marqueu aquesta casella per enviar una notificació sobre l\'actualització d\'una qualificació o retroacció. Si la tasca utilitza el flux d\'avaluació, o s\'han amagat les qualificacions des de l\'informe del qualificador, no s\'enviarà la notificació fins que es publiqui la qualificació.';
 $string['sendstudentnotificationsdefault'] = 'Paràmetre per defecte per a «Notifica als estudiants»';
-$string['sendstudentnotificationsdefault_help'] = 'Mentre es qualifica a cada estudiant, hauria d\'estar activada per defecte l\'opció "Notifica als estudiants"?';
+$string['sendstudentnotificationsdefault_help'] = 'Mentre es qualifica cada estudiant, hauria d\'estar activada per defecte l\'opció «Notifica als estudiants»?';
 $string['sendsubmissionreceipts'] = 'Envia la confirmació de la tramesa als estudiants';
 $string['sendsubmissionreceipts_help'] = 'Aquest canvi permetrà la confirmació de la tramesa per als estudiants. Els estudiants rebran una notificació cada vegada que trametin una tasca amb èxit.';
 $string['setmarkerallocationforlog'] = 'Assigna un avaluador: (id={$a->id}, fullname={$a->fullname}, marker={$a->marker}).';

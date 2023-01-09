@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo Menu a scelta multipla';
-$string['pluginname'] = 'Menu (Selezione multipla)';
-$string['privacy:metadata'] = 'Il plugin campo "Menu a scelta multipla" non memorizza dati personali, utilizza tabelle definite in mod_data.';
+$string['fieldtypelabel'] = 'Menu a scelta multipla';
+$string['pluginname'] = 'Menu a scelta multipla';
+$string['privacy:metadata'] = 'Il plugin campo \'Menu a scelta multipla\' non memorizza dati personali, utilizza tabelle definite in mod_data.';

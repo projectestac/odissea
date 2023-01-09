@@ -72,7 +72,7 @@ $string['privacy:metadata'] = 'Il plugin di iscrizione File IMS Enterprise non m
 $string['processphoto'] = 'Aggiungi una foto al profilo';
 $string['processphotowarning'] = 'ATTENZIONE: lavorare un\'immagine potrebbe aggravare il lavoro del server. Si raccomanda di NON attivare questa opzione se è previsto un elevato numero di utenti.';
 $string['restricttarget'] = 'Elabora i dati solo se destinati al sistema specificato';
-$string['restricttarget_desc'] = 'Un file di dati IMS Enterprise può essere usato per vari LMS e sistemi in uso presso leorganizzazioni. E\' possibile indicare per quale sistema è destinato il file fornendone il nome nel tag <target> presente all\'interno del tag <properties>.
+$string['restricttarget_desc'] = 'Un file di dati IMS Enterprise può essere usato per vari LMS e sistemi in uso presso le organizzazioni. È possibile indicare per quale sistema è destinato il file fornendone il nome nel tag <target> presente all\'interno del tag <properties>.
 
 In generale non è necessario fornire questo valore, lasciandolo vuoto Moodle elaborerà comunque il file, indipendentemente dalla presenza del target nel file. In alternativa, è possibile specificare il nome esatto all\'interno del tag <target>.';
 $string['roles'] = 'Ruoli';
@@ -88,7 +88,7 @@ Il campo <userid> è un campo separato che contiene il codice ID usato dagli ute
 
 Alcuni student information system non forniscono il campo <userid>, nel qual caso è opportuno abilitare questa impostazione per usare <sourcedid> come userid di Moodle. Altrimenti lasciare l\'impostazione disabilitata.';
 $string['truncatecoursecodes'] = 'Tronca i codici dei corsi a questa lunghezza';
-$string['truncatecoursecodes_desc'] = 'In alcuni casi si potrebbe desiderare di troncare ad una certa lunghezza i codici corso prima di elaborarli. E\' possibile specificare il numero di caratteri da utilizzare prima del troncamento. Lasciando il campo in bianco i codici corso non saranno troncati.';
+$string['truncatecoursecodes_desc'] = 'In alcuni casi si potrebbe desiderare di troncare ad una certa lunghezza i codici corso prima di elaborarli. È possibile specificare il numero di caratteri da utilizzare prima del troncamento. Lasciando il campo in bianco i codici corso non saranno troncati.';
 $string['updatecourses'] = 'Aggiorna corso';
 $string['updatecourses_desc'] = 'Il plugin di iscrizione IMS Enterprise può aggiornare il titolo ed il titolo abbreviato del corso ("recstatus" deve essere impostato a 2, cosa che indica un aggiornamento).';
 $string['updateusers'] = 'Aggiorna gli account degli utenti se indicato nei dati IMS';

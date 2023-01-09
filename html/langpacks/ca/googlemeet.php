@@ -49,6 +49,7 @@ $string['or'] = 'o';
 $string['recording'] = 'Gravant';
 $string['recordings'] = 'Enregistraments';
 $string['repeatevery'] = 'Repeteix-ho cada';
+$string['roomname'] = 'Nom de la sala';
 $string['show'] = 'Mostra';
 $string['today'] = 'Avui';
 $string['visible'] = 'Visible';

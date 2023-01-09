@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo area di testo';
+$string['fieldtypelabel'] = 'Area di testo';
 $string['maxbytes'] = 'Dimensione massima file incorporati (in byte)';
 $string['maxbytes_desc'] = 'Impostando il valore a zero la dimensione sarà di default illimitata';
 $string['pluginname'] = 'Area di testo';
-$string['privacy:metadata'] = 'Il plugin campo "Area di testo" non memorizza dati personali, utilizza tabelle definite in mod_data.';
+$string['privacy:metadata'] = 'Il plugin Area di testo non memorizza dati personali, utilizza tabelle definite in mod_data.';

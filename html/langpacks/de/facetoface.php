@@ -696,7 +696,7 @@ $string['validation:needatleastonedate'] = 'Sie müssen mindestens ein Datum ang
 $string['venue'] = 'Veranstaltungsgebäude';
 $string['venue_help'] = '**Veranstaltungsgebäude** ist das Gebäude, in dem die Veranstaltung stattfinden wird.
 Das **Veranstaltungsgebäude** wird auf der Anmeldungsseite, der Seite \'Alle Veranstaltungen anzeigen\' und in allen E-Mail-Benachrichtigungen angezeigt.';
-$string['viewallsessions'] = 'Alle Veranstaltung anzeigen';
+$string['viewallsessions'] = 'Alle Veranstaltungen anzeigen';
 $string['viewsubmissions'] = 'Anmeldungen ansehen';
 $string['wait-list'] = 'Warteliste';
 $string['wait-listed'] = 'Auf der Warteliste';

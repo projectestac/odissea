@@ -36,7 +36,7 @@ $string['existingcohortroles'] = 'Assegnazioni di ruolo esistenti';
 $string['managecohortroles'] = 'Assegnazione ruoli utente a gruppi globali';
 $string['noassignableroles'] = 'Non sono presenti ruoli assegnabili nel contesto dell\'utente. <a href="../../roles/manage.php">Gestione ruoli</a>';
 $string['nocohortroleassignmentssaved'] = 'Non sono state salvate assegnazioni di ruolo del gruppo globale.';
-$string['onecohortroleassignmentsaved'] = 'E\' stata salvata una assegnazione di ruolo del gruppo globale.';
+$string['onecohortroleassignmentsaved'] = 'È stata salvata una assegnazione di ruolo del gruppo globale.';
 $string['pluginname'] = 'Gestione ruoli dei gruppi globali';
 $string['privacy:metadata:tool_cohortroles'] = 'Il plugin \'Gestione ruoli dei gruppi globali\' non memorizza dati personali.';
 $string['privacy:metadata:tool_cohortroles:cohortid'] = 'ID del gruppo globale.';

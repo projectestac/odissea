@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_mnet_auto_add_remote_users'] = 'E\' possibile creare un record nella tabella utenti di questo sito quando un utente si autentica per la prima volta tramite Moodle Netowrk.';
+$string['auth_mnet_auto_add_remote_users'] = 'È possibile creare un record nella tabella utenti di questo sito quando un utente si autentica per la prima volta tramite Moodle Netowrk.';
 $string['auth_mnet_roamin'] = 'Gli utenti degli host elencati di seguito possono essere instradati su questo sito';
 $string['auth_mnet_roamout'] = 'I propri utenti possono essere instradati sugli host elencati di seguito';
 $string['auth_mnet_rpc_negotiation_timeout'] = 'Timeout in secondi per l\'autenticazione basata su XMLRPC';

@@ -127,7 +127,7 @@ $string['qrcodetype_desc'] = 'Er kan een QR-code voorzien worden die mobiele app
 $string['qrcodetypelogin'] = 'QR-code met automatische login';
 $string['qrcodetypeurl'] = 'QR-code met site-URL';
 $string['qrsiteadminsnotallowed'] = 'Om veiligheidsredenen is het aanmelden via QR-code niet toegestaan voor beheerders of wanneer je aangemeld bent als een andere gebruiker.';
-$string['readingthisemailgettheapp'] = 'Dit in een e-mail lezen? <a href="{$a}"> Download de mobiele app en ontvang meldingen op je mobiele apparaat </a>.';
+$string['readingthisemailgettheapp'] = 'Dit als smartphone-notificatie krijgen?? <a href="{$a}"> Download de mobiele app en ontvang meldingen op je mobiele apparaat </a>.';
 $string['remoteaddons'] = 'Externe add-ons';
 $string['responsivemainmenuitems'] = 'Responsieve menu-items';
 $string['scanqrcode'] = 'Scan QR code';

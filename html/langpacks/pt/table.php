@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadas'] = 'Descarregar tabela de dados como';
+$string['downloadas'] = 'Descarregar tabela de dados como:';
 $string['missingrequiredfields'] = 'Estavam em falta um ou mais filtros necessários ({$a})';
 $string['privacy:metadata'] = 'Atualmente, a API da tabela não armazena quaisquer dados pessoais do utilizador';

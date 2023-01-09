@@ -59,7 +59,7 @@ Se hai bisogno di aiuto contatta l\'amministratore del sito,
 
 Se non hai richiesto tu il collegamento, allora è possibile che qualcuno stia tentando di compromettere il tuo account. Per favore contatta subito l\'amministratore del sito.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: Conferma collegamento autenticazioni';
-$string['createaccountswarning'] = 'Plugin di autenticazione che consente di creare account sul sito. E\' possibile abilitare l\'impostazione "Evita la creazione di account all\'atto dell\'autenticazione" quando si utilizza il plugin';
+$string['createaccountswarning'] = 'Plugin di autenticazione che consente di creare account sul sito. È possibile abilitare l\'impostazione "Evita la creazione di account all\'atto dell\'autenticazione" quando si utilizza il plugin';
 $string['createnewlinkedlogin'] = 'Collega un nuovo account ({$a})';
 $string['emailconfirmlink'] = 'Collega i tuoi account';
 $string['emailconfirmlinksent'] = '<p>È stato trovato un account con questo indirizzo email che non è stato ancora collegato.</p>
@@ -78,7 +78,7 @@ Per favore autenticati come in precedenza utilizzando il collegamento presente n
 $string['emailpasswordchangeinfosubject'] = '{$a}: Informazioni sul cambio password';
 $string['info'] = 'Account esterno';
 $string['issuer'] = 'Servizio OAuth 2';
-$string['issuernologin'] = 'Questo fornitore non può essere utilizzato per autenticarsi.';
+$string['issuernologin'] = 'Questo issuer non può essere utilizzato per autenticarsi.';
 $string['linkedlogins'] = 'Autenticazioni collegate';
 $string['linkedloginshelp'] = 'Aiuto su Autenticazioni collegate';
 $string['loginerror_authenticationfailed'] = 'Il processo di autenticazione non è andato a buon fine.';

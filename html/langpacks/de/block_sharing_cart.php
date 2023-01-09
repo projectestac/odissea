@@ -43,9 +43,11 @@ $string['conflict_no_overwrite'] = 'Aktuellen Abschnittstitel <strong>"{$a}"</st
 $string['conflict_overwrite_title'] = 'Abschnittstitel mit <strong>"{$a}"</strong> sowie Abschnittseinstellungen überschreiben';
 $string['conflict_submit'] = 'Weiter';
 $string['copy_section'] = 'Abschnitt kopieren';
+$string['copy_section_title'] = 'Ausgewählte Abschnitte kopieren';
 $string['copyhere'] = 'Hierher kopieren';
 $string['define_required_capabilities'] = 'Definieren Sie bitte die notwendigen Rechte.';
-$string['delete_folder'] = 'einschließlich aller Inhalte';
+$string['delete_folder'] = 'und alle Inhalte';
+$string['drop_here'] = 'Hierhin ziehen';
 $string['folder_string'] = 'Ordner:';
 $string['forbidden'] = 'Sie haben keine Berechtigung, auf dieses Element zuzugreifen';
 $string['inprogess_pleasewait'] = 'Bitte warten...';
@@ -80,6 +82,12 @@ $string['requirejs'] = 'Um Sharing Cart zu nutzen, muss JavaScript in Ihrem Brow
 $string['restore'] = 'In den Kurs kopieren';
 $string['restore_heavy_load_warning_message'] = 'Ladezeiten können länger sein, da mehr als 10 Aktivitäten / Materialien verarbeitet werden.';
 $string['section_name_conflict'] = 'Konflikt im Abschnitt';
+$string['settings:add_to_sharing_cart'] = 'Zu Sharing Card  hinzufügen';
+$string['settings:add_to_sharing_cart_desc'] = 'Wählen Sie zwischen der Drag-and-Drop- oder der Anklicken-Methode zum Hinzufügen von Modulen und Abschnitten zum gemeinsamen Sharing Card.
+Die "Anklicken"-Methode ist die Standardmethode von Sharig Card bei der Sie auf das Warenkorbsymbol klicken müssen, bevor das Modul in den Warenkorb gelegt wird.
+Mit "Drag and Drop" können Sie Module/Aktivitäten und Abschnitte per Drag and Drop in den Warenkorb oder in das Warenkorbsymbol in der Fußzeile ziehen. Bitte beachten Sie, dass dies nur für Moodle 4.0+ unterstützt wird.';
+$string['settings:click_to_add'] = 'Klicken zum Hinzufügen';
+$string['settings:drag_and_drop'] = 'Drag-and-Drop';
 $string['settings:userdata_copyable_modtypes'] = 'Aktivitätstypen mit kopierbaren Nutzerdaten';
 $string['settings:userdata_copyable_modtypes_desc'] = 'Wenn eine Aktivität in den Sharing Cart kopiert wird, erscheint ein Optionsfeld, dass fragt, ob die Benutzerdaten mitkopiert werden sollen. Dies geschieht bei allen nebenstehend markierten Aktivitäten, wenn der Nutzer des Sharing Carts die Berechtigungen <strong>moodle/backup:userinfo</strong>, <strong>moodle/backup:anonymise</strong> und <strong>moodle/restore:userinfo</strong> hat. (Standardmäßig haben nur Manager diese Berechtigungen).';
 $string['settings:workaround_qtypes'] = 'Problembehandlung für Frage-Typen';
@@ -95,4 +103,5 @@ $string['sharing_cart_help'] = '<div>
         <p>Um einen Ordner im Sharing Cart anzulegen, klicken Sie auf das "In Ordner bewegen"-Symbol neben einem Sharing Cart Element. Es erscheint ein Eingabefeld, in welches Sie den Ordnernamen für einen neuen Ordner eingeben können, und ein Auswahlfeld aus welchem Sie einen existierenden Ordner auswählen können.</p>
 </div>';
 $string['unexpectederror'] = 'Ein unerwarteter Fehler ist aufgetreten';
+$string['uninstalled_plugin_warning_title'] = 'Dieses Plugin ist deinstalliert. Der Versuch, es wiederherzustellen, ohne das Plugin neu zu installieren: {$a} wird zu Fehlern führen. Wiederherstellung ist deaktiviert';
 $string['variouscourse'] = 'von unterschiedlichen Kursen';

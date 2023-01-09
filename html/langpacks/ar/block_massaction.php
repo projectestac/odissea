@@ -25,5 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['deselectall'] = 'إلغاء إختيار الكل';
 $string['massaction:addinstance'] = 'إضافة كتلة جديدة من إجراءات بالجملة';
 $string['massaction:use'] = 'استعمل كتلة إجراءات بالجملة';
+$string['selectall'] = 'إختيار الكل';
+$string['selectallinsection'] = 'إختيار الكل في المقطع';

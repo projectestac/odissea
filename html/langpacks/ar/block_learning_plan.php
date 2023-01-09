@@ -35,5 +35,6 @@ $string['learning_plan_name'] = 'الاسم';
 $string['learninig_plan:sendmessages'] = 'إرسال الإشعار';
 $string['learninig_plan:viewmessages'] = 'معينة الإشعار';
 $string['pluginname'] = 'خطة التعلم';
+$string['status_all'] = 'كل الحالة';
 $string['training'] = 'اسم المساق';
 $string['training_name'] = 'اسم المساق';

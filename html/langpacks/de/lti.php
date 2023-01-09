@@ -120,7 +120,7 @@ $string['delete'] = 'Löschen';
 $string['delete_confirmation'] = 'Möchten Sie dieses vorkonfigurierte Tool wirklich löschen?';
 $string['deletetype'] = 'Vorkonfiguriertes Tool löschen.';
 $string['display_description'] = 'Beschreibung bei Start anzeigen';
-$string['display_description_help'] = 'Die oben eingegebene Beschreibung wird bei Aktivierung über dem Inhalt des Tools angezeigt. Die Beschreibung kann genutzt werden, um Teilnehmenden zusätzliche Hinweise zugeben. Sie ist nicht unbedingt erforderlich. Wenn die Darstellung im neuen Fenster erfolgt, kann die Beschreibung nie angezeigt werden.';
+$string['display_description_help'] = 'Die oben eingegebene Beschreibung wird bei Aktivierung über dem Inhalt des Tools angezeigt. Die Beschreibung kann genutzt werden, um Teilnehmer/innen zusätzliche Hinweise zugeben. Sie ist nicht unbedingt erforderlich. Wenn die Darstellung im neuen Fenster erfolgt, kann die Beschreibung nie angezeigt werden.';
 $string['display_name'] = 'Aktivitätenname bei Start anzeigen';
 $string['display_name_help'] = 'Der Aktivitätenname kann über dem Inhalt des Toolanbieters angezeigt werden. Es ist auch möglich, dass der Toolanbieter den Namen direkt anzeigt. Die Option kann damit eine doppelte Anzeige verhindern. Die Titelanzeige ist nicht verfügbar wenn das Tool in einem neuen Fenster geöffnet wird.';
 $string['domain_mismatch'] = 'Die Domain der Tool-URL passt nicht zum Eintrag in Tool-Konfiguration';
@@ -417,8 +417,8 @@ $string['share_name_admin_help'] = 'Festlegen, ob der Name des Anwenders an den 
 $string['share_name_help'] = 'Diese Option legt fest, ob der vollständige Nutzername an den Tool-Provider übergeben wird, wenn die Tool-Instanz verwendet wird. Nutzer/innen können so bei einem wiederholten Zugriff wiedererkannt werden und personalisierte Informationen erhalten.
 
 Diese Einstellung kann in der Tool-Konfiguration überschrieben wreden.';
-$string['share_roster'] = 'Tool Zugriff auf Teilnehmendenliste geben';
-$string['share_roster_admin'] = 'Tool kann auf Teilnehmendenliste zugreifen.';
+$string['share_roster'] = 'Tool darf auf Liste der Teilnehmer/innen zugreifen';
+$string['share_roster_admin'] = 'Tool kann auf Liste der Teilnehmer/innen zugreifen';
 $string['share_roster_admin_help'] = 'Festlegen, ob das Tool auf die Liste der Teilnehmer/innen derjenigen Kurse zugreifen darf, in denen das Tool gestartet wurde.';
 $string['share_roster_help'] = 'Diese Option legt fest, ob das Tool auf die Teilnehmerliste des Kurses zugreifen darf.
 

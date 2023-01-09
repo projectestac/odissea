@@ -91,8 +91,9 @@ $string['editdatesstart'] = 'Edit dates';
 $string['editdatesstop'] = 'Stop editing dates';
 $string['edititem'] = 'Edit this item';
 $string['emailoncomplete'] = 'Email when checklist is complete:';
-$string['emailoncomplete_help'] = 'When a checklist is complete, a notification email can be sent: to the student who completed it, to all the teachers on the course or to both.<br />
-An administrator can control who receives this email using the capability \'mod:checklist/emailoncomplete\' - by default all teachers and non-editing teachers have this capability.';
+$string['emailoncomplete_help'] = 'When a checklist is complete , a notification email can be sent: to the student who completed it, to all the teachers on the course or to both.<br />
+An administrator can control who receives this email using the capability \'mod:checklist/emailoncomplete\' - by default all teachers and non-editing teachers have this capability.
+For this purpose, a checklist is regarded as \'complete\' once all the items have been checked-off - this does not take into account any percentage completion defined in the \'Activity completion\' settings.';
 $string['emailoncompletebody'] = 'User {$a->user} has completed checklist \'{$a->checklist}\' in the course \'{$a->coursename}\'
 View the checklist here:';
 $string['emailoncompletebodyown'] = 'You have completed checklist \'{$a->checklist}\' in the course \'{$a->coursename}\'
@@ -165,6 +166,10 @@ $string['privacy:metadata:checklist_comment_student'] = 'Comments that have been
 $string['privacy:metadata:checklist_comment_student:itemid'] = 'The ID of the checklist item that the comment relates to';
 $string['privacy:metadata:checklist_comment_student:text'] = 'The text of the comment';
 $string['privacy:metadata:checklist_comment_student:usermodified'] = 'The ID of the user (student) that made this comment';
+$string['privacy:metadata:checklist_comp_notification'] = 'Track which users have already completed all the items on their checklist, so that emails are not sent out again';
+$string['privacy:metadata:checklist_comp_notification:checklistid'] = 'The ID of the checklist';
+$string['privacy:metadata:checklist_comp_notification:iscomplete'] = '1 completed and 0 not completed';
+$string['privacy:metadata:checklist_comp_notification:userid'] = 'The ID of the user who completed the checklist';
 $string['privacy:metadata:checklist_item'] = 'Information about private items the user has added to the given checklist';
 $string['privacy:metadata:checklist_item:checklist'] = 'The ID of the checklist this private item was added to';
 $string['privacy:metadata:checklist_item:displaytext'] = 'The text of the private checklist item';

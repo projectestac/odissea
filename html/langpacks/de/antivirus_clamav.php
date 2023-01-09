@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['antivirusfailed'] = 'Derzeit liegt ein Problem beim Scannen von AntiVirus vor. Ihre Datei {$a->item} wurde nicht hochgeladen. Versuchen Sie es später noch einmal.';
+$string['antivirusfailed'] = 'Derzeit liegt ein Problem beim AntiVirus-Scannen vor. Ihre Datei {$a->item} wurde nicht hochgeladen. Versuchen Sie es später noch einmal.';
 $string['clamfailed'] = 'ClamAV wurde nicht vollständig ausgeführt. Die Fehlermeldung lautet: {$a}. Die Ausgabe von ClamAV ist:';
 $string['clamfailureonupload'] = 'Bei einem ClamAV-Fehler';
 $string['configclamactlikevirus'] = 'Dateien wie Viren behandeln';
@@ -33,7 +33,7 @@ $string['configclamdonothing'] = 'Dateien als in Ordnung behandeln';
 $string['configclamfailureonupload'] = 'Wenn "Dateien als OK behandeln" ausgewählt ist, werden die Dateien in das Zielverzeichnis verschoben. Wenn "Hochladen ablehnen, erneut versuchen" ausgewählt ist, werden Nutzer/innen aufgefordert, es später erneut zu versuchen.
 <br />Wenn "Dateien wie Viren behandeln" ausgewählt ist, werden Dateien in den Quarantänebereich verschoben oder gelöscht.
 <br />Warnung: Wenn mit dieser Option aus irgendeinem Grund die clam nicht ausgeführt werden kann (z.B. aufgrund eines ungültigen pathtoclam), werden ALLE hochgeladenen Dateien in den angegebenen Quarantänebereich verschoben oder gelöscht.';
-$string['configclamtryagain'] = 'Hochladen abgelehnt. Versuchen Sie es noch einmal-';
+$string['configclamtryagain'] = 'Hochladen abgelehnt. Versuchen Sie es noch einmal.';
 $string['errorcantopensocket'] = 'Die Verbindung zum Unix Domain Socket führte zu einem Fehler: {$a}';
 $string['errorclamavnoresponse'] = 'ClamAV reagiert nicht. Prüfen Sie den Ausführungsstatus des Deamons.';
 $string['errornounixsocketssupported'] = 'Die Verbindung über Unix Domain Sockets wird auf diesem System nicht unterstützt. Verwenden Sie stattdessen die Option \'Befehlszeile\'.';
@@ -41,7 +41,7 @@ $string['invalidpathtoclam'] = 'Der Pfad zu ClamAV \'{$a}\' ist ungültig.';
 $string['pathtoclam'] = 'Befehlszeile';
 $string['pathtoclamdesc'] = 'Wenn die Ausführungsmethode als \'Befehlszeile\' gesetzt ist, geben Sie hier den Pfad zu ClamAV ein. Unter Linux wird dies /usr/bin/clamscan oder /usr/bin/clamdscan sein.';
 $string['pathtounixsocket'] = 'Unix Domain Socket';
-$string['pathtounixsocketdesc'] = 'Wenn die Ausführungsmethode als \'Unix Domain Socket\' gesetzt ist, geben Sie hier den Pfad zum ClamAV Unix Socket ein. Auf Debian Linux ist dies /var/run/clamav/clamd.ctl. Stellen Sie sicher, dass der ClamAV-Daemon über Lesezugriff auf hochgeladene Dateien verfügt. Am einfachsten ist es, den Nutzer \'clamav\' zur Webservergruppe ( \'www-data\' im Debian Linux) hinzuzufügen.';
+$string['pathtounixsocketdesc'] = 'Wenn die Ausführungsmethode als \'Unix Domain Socket\' gesetzt ist, geben Sie hier den Pfad zum ClamAV Unix Socket ein. Auf Debian Linux ist dies /var/run/clamav/clamd.ctl. Stellen Sie sicher, dass der ClamAV-Daemon über Lesezugriff auf hochgeladene Dateien verfügt. Am einfachsten ist es, den Nutzer \'clamav\' zur Webservergruppe (\'www-data\' im Debian Linux) hinzuzufügen.';
 $string['pluginname'] = 'ClamAV Antivirus';
 $string['privacy:metadata'] = 'Das Plugin \'ClamAV Antivirus\' speichert keine personenbezogenen Daten.';
 $string['quarantinedir'] = 'Quarantäne-Verzeichnis';

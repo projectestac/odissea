@@ -110,7 +110,7 @@ $string['forcechangepasswordfirst_help'] = 'Behartu pasahitza aldatzera erabiltz
 $string['forgottenpassword'] = 'Hemen URL bat idatziz gero, gune honetan galdu diren pasahitzak berreskuratzeko orri gisa erabiliko da. Aukera hau pentsatuta dago pasahitzak Moodletik kanpo kudeatzen diren guneetarako. Hutsik utz ezazu pasahitza berreskuratzeko lehenetsitako orria erabiltzeko.';
 $string['forgottenpasswordurl'] = 'Ahaztutako pasahitzaren URLa';
 $string['getrecaptchaapi'] = 'reCAPTCHA erabiltzeko, API giltza lortu behar duzu hemendik: <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
-$string['guestloginbutton'] = 'Bisitariek saioa hasteko botoia';
+$string['guestloginbutton'] = 'Gonbidatuek saioa hasteko botoia';
 $string['incorrectpleasetryagain'] = 'Ez da zuzena. Mesedez, saiatu berriro.';
 $string['infilefield'] = 'Fitxategiko beharrezko eremua';
 $string['informminpassworddigits'] = 'gutxienez {$a} digitu';
@@ -154,7 +154,7 @@ $string['selfregistration'] = 'Auto-erregistroa';
 $string['selfregistration_help'] = 'Autentifikazio-plugin bat, posta elektronikoan oinarritutako auto-erregistroa adibidez, aukeratzen bada aukera ematen die ustezko erabiltzaileei beren buruak erregistratu eta kontuak sortzeko. Horrela, spam sortzaileek kontuak sor ditzakete eta foroetako mezuak, blog sarrerak, e.a. spamerako erabili. Arrisku horri aurre egiteko, auto-erregistroa desgaitu edo mugatu egin behar da <em>Baimendutako posta elektronikoko domeinuak </em> ezarpena erabilita.';
 $string['settingmigrationmismatch'] = 'Pluginaren ezarpenen izenak zuzentzerakoan desadostasuna aurkitu da. \'{$a->plugin}\' autentifikazio-pluginak \'{$a->setting}\' ezarpena dauka \'{$a->legacy}\'(e)rako terminologia zaharrarekin eta \'{$a->current}\'(e)rako terminologia berriarekin. Azken balioa mantendu da. Baieztatu horrela izan behar duela, mesedez.';
 $string['sha1'] = 'SHA-1 hash-a';
-$string['showguestlogin'] = 'Bisitariek saioa hasteko botoia erakuts edo ezkuta dezakezu sarbide-orrian.';
+$string['showguestlogin'] = 'Gonbidatuek saioa hasteko botoia erakuts edo ezkuta dezakezu sarbide-orrian.';
 $string['stdchangepassword'] = 'Erabili pasahitza aldatzeko orri estandarra';
 $string['stdchangepassword_expl'] = 'Kanpoko autentifikazio-sistemak Moodlen pasahitz aldaketa ahalbidetzen badu,  BAI aukeratu. Ezarpen honek \'Pasahitza aldatzeko URLa\' baliogabetzen du.';
 $string['stdchangepassword_explldap'] = 'OHARRA: LDAP SSL zifratze-tunel baten gainean erabiltzea aholkatzen da (ldaps://) LDAP zerbitzaria urrutikoa bada.';

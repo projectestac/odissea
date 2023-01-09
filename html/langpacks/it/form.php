@@ -84,7 +84,7 @@ $string['selecteditems'] = 'Elementi selezionati:';
 $string['showadvanced'] = 'Visualizza impostazioni avanzate';
 $string['showless'] = 'Visualizza meno elementi...';
 $string['showmore'] = 'Visualizza più elementi...';
-$string['somefieldsrequired'] = '{$a} = campi a compilazione obbligatoria';
+$string['somefieldsrequired'] = '{$a} campi a compilazione obbligatoria';
 $string['suggestions'] = 'Suggerimenti';
 $string['time'] = 'Ora';
 $string['timeunit'] = 'Unità di tempo';

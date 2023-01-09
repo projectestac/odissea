@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventgradeexported'] = 'Esportate valutazione in XML';
+$string['eventgradeexported'] = 'Esportazione valutazione in XML';
 $string['pluginname'] = 'Formato XML';
 $string['privacy:metadata'] = 'Il plugin per l\'esportazione delle valutazioni \'Formato XML\' non memorizza dati personali.';
 $string['xml:publish'] = 'Pubblicare le valutazioni in formato XML';

@@ -30,6 +30,7 @@ $string['admin.config.domainurl'] = 'رابط المجال';
 $string['admin.config.workspacepagetitle'] = 'عنوان أداة مساحة العمل';
 $string['admin.username.header'] = 'اسم المستخدم';
 $string['app.activate'] = 'تفعيل';
+$string['app.allowed'] = 'مسموح';
 $string['config_domain_url'] = 'رابط المجال';
 $string['config_enable_shortname_desc'] = 'تمكين استعمال الاسم المختصر للمساق كجزء من المساق المعروض في تطبيق iclicker';
 $string['config_max_courses_desc'] = 'يتحكم بالعدد الأقصى من المقررات الدراسية التي يتم إحضارها للمرشد من قبل تطبيق iclicker.
@@ -42,6 +43,7 @@ $string['config_webservices_url_desc'] = 'رابط خدمات الويب، أت�
 $string['config_webservices_username_desc'] = 'اسم مستخدم خدمات الويب، أتركه فارغاً لاستعمال اسم مستخدم خدمات الويب الافتراضي';
 $string['iclicker:addinstance'] = 'إضافة كتلة جديدة من i>clicker';
 $string['iclicker:myaddinstance'] = 'إضافة كتلة جديدة من i>clicker إلىى صفحة مودل الخاصة بي';
+$string['inst.all.courses'] = 'كل المساقات';
 $string['inst.course.view.students'] = 'معاينة الطلاب';
 $string['inst.courses.table.summary'] = 'يستعرض المقررات الدراسية المقدمة من قبل هذا المرشد؛ العنوان، رابط إلى قائمة الطلاب';
 $string['inst.no.courses'] = 'بدون مقررات';

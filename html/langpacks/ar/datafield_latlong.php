@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'حقل خط الطول/العرض';
-$string['pluginname'] = 'خط الطول والعرض';
-$string['privacy:metadata'] = 'إن مكون حقل خطي الطول والعرض لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل جداول معرفة في mod_data.';
+$string['fieldtypelabel'] = 'الإحداثيات';
+$string['pluginname'] = 'الإحداثيات';
+$string['privacy:metadata'] = 'إن مُكون حقل الإحداثيات لا يخزن أي بيانات شخصية، بل يستعمل الجداول المعرفة في mod_data.';

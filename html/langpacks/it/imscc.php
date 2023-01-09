@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cc2moodle_checking_schema'] = 'Formato CC! E\' in corso il controllo dello Schema...';
+$string['cc2moodle_checking_schema'] = 'Rilevato formato CC! È in corso il controllo dello schema...';
 $string['cc2moodle_invalid_schema'] = 'Lo schema non è valido.';
 $string['cc2moodle_manifest_dont_load'] = 'Non è possibile caricare il manifest XML.';
 $string['cc2moodle_req_auth'] = 'ERRORE: il pacchetto Common Cartridge richiede una autorizzazione.';

@@ -402,6 +402,22 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 			}
 		}
 	}
+	public function unitTestExtractActionCommands() {
+		$tests = new _hx_array(array(" <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>evaluate</mi><mfenced><mfrac><mrow><mo>#</mo><mi>a</mi></mrow><mrow><mo>#</mo><mi>b</mi></mrow></mfrac></mfenced></math> ", "  <p>evaluate(#a + #b)</p>\x0A", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>evaluate</mi><mo>(</mo><mo>#</mo><mi>a</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mo>#</mo><mi>b</mi><mo>)</mo></math>", " <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>evaluate</mi><mfenced><mrow><mo>#</mo><mi mathvariant=\"normal\">d</mi><mo>&#xB7;</mo><mo>#</mo><mi mathvariant=\"normal\">e</mi></mrow></mfenced></math> <p>evaluate(#d*#e)</p>\x0A", " evaluate(#a+#b) <p>Calculate #a + #b</p>\x0A", " <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>evaluate</mi><mfenced><mrow><mo>#</mo><msup><mi>a</mi><mrow><mo>#</mo><mi>b</mi></mrow></msup><mo>+</mo><mo>#</mo><msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mfrac><mrow><mo>#</mo><mi>a</mi></mrow><mrow><mo>#</mo><mi>b</mi></mrow></mfrac><mo>&#xB7;</mo><mo>#</mo><msup><mi>c</mi><mrow><mo>#</mo><mi mathvariant=\"normal\">d</mi></mrow></msup><mo>+</mo><msqrt><mi>a</mi></msqrt></mrow></mfenced></math> ", "  <p>write the following number evaluate(#a/#b+(#a + #b))</p>\x0A", " <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>evaluate</mi><mfenced><mrow><mo>#</mo><mi>a</mi><mo>+</mo><mo>#</mo><mi>b</mi></mrow></mfenced></mrow><mrow><mi>evaluate</mi><mfenced><mrow><mo>#</mo><mi>a</mi><mo>&#xB7;</mo><mo>#</mo><mi>b</mi></mrow></mfenced></mrow></mfrac></math> <p>evaluate(#a+#b) and evaluate(#a*#b)</p>\x0A", " <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>eval&#xFA;a</mi><mfenced><mrow/></mfenced></math> <p>evaluate((#d+#s)</p>\x0A", " <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>eval&#xFA;a</mi><mfenced><mrow/></mfenced></math> <p>evaluate(#q+(#w)))</p>\x0A"));
+		$responses = new _hx_array(array(" <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>#_computed_variable_eea520b33b9e56415fe1ca98dcbf6e58</mi></math> ", "  <p>#_computed_variable_150d3e8a7ebdadcd0d9afd52dab6ef12</p>\x0A", "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>#_computed_variable_28506e9df521e9b0f6b92546b6510f28</mi></math>", " <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>#_computed_variable_73184bd88a1121c7e49223daaa1bd404</mi></math> <p>#_computed_variable_68108b87db9775cc4796cf0132e4fb64</p>\x0A", " #_computed_variable_a85f9bfc390e5421fb27d6e0eae415ef <p>Calculate #a + #b</p>\x0A", " <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>#_computed_variable_332587bd084524a4442c4b8c4cf9e50e</mi></math> ", "  <p>write the following number #_computed_variable_047f7bd3591f61601d9ee74065609853</p>\x0A", " <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>#_computed_variable_36ee93ec55e4d3aaa7c976cc7e88fb1d</mi></mrow><mrow><mi>#_computed_variable_ac0564241e64e7d7367a4179e68185e8</mi></mrow></mfrac></math> <p>#_computed_variable_a85f9bfc390e5421fb27d6e0eae415ef and #_computed_variable_64864068544ba2b47b956f1145c38194</p>\x0A", " <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>eval&#xFA;a</mi><mfenced><mrow/></mfenced></math> <p>evaluate((#d+#s)</p>\x0A", " <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>#_computed_variable_de1594c8a0efb9b9eefbf0f1ca39a80e</mi></math> <p>#_computed_variable_a1098406413f95b008430046c784ba33)</p>\x0A"));
+		$i = null;
+		{
+			$_g1 = 0; $_g = $tests->length;
+			while($_g1 < $_g) {
+				$i1 = $_g1++;
+				$res = $this->h->extractActionExpressions($tests[$i1], null);
+				if(!($res === $responses[$i1])) {
+					throw new HException("Expected: '" . $responses[$i1] . "' but got: '" . $res . "'.");
+				}
+				unset($res,$i1);
+			}
+		}
+	}
 	public function run() {
 		$this->unitTestJoinCompoundAnswer();
 		$this->unitTestStripRootTag();
@@ -417,6 +433,7 @@ class com_wiris_quizzes_impl_HTMLToolsUnitTests {
 		$this->unitTestParseCompoundAnswers();
 		$this->unitTestUtf8();
 		$this->unitTestParameter();
+		$this->unitTestExtractActionCommands();
 	}
 	public $h;
 	public function __call($m, $a) {

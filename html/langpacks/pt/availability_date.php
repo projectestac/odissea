@@ -31,6 +31,7 @@ $string['direction_before'] = 'Data';
 $string['direction_from'] = 'a partir de';
 $string['direction_label'] = 'Direção';
 $string['direction_until'] = 'até';
+$string['error_dateconflict'] = 'Conflito com outras restrições de data';
 $string['full_from'] = 'Data e hora posterior a <strong>{$a}</strong>';
 $string['full_from_date'] = 'Data igual ou posterior a <strong>{$a}</strong>';
 $string['full_until'] = 'Data e hora anterior a <strong>{$a}</strong>';

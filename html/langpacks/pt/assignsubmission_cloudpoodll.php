@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowcloudpoodllsubmissions'] = 'Ativado';
-$string['audioplaceholder'] = '[áudio submetido]';
 $string['currentsubmission'] = 'Submissão atual:';
 $string['default'] = 'Ativado por predefinição';
 $string['deletesubmission'] = 'Apagar esta submissão.';
@@ -48,7 +47,6 @@ $string['recorderaudio'] = 'Gravador de áudio';
 $string['recordervideo'] = 'Gravador de vídeo';
 $string['refreshtoken'] = 'Atualizar informação da licença';
 $string['saopaulo'] = 'São Paulo, Brasil (lento)';
-$string['showcurrentsubmission'] = 'Mostrar submissão atual';
 $string['shownovideo'] = 'Não mostrar vídeo';
 $string['skin123'] = 'Um Dois Três';
 $string['skinonce'] = 'Uma vez';
@@ -56,5 +54,4 @@ $string['skinplain'] = 'Simples';
 $string['skinupload'] = 'Carregar';
 $string['tokyo'] = 'Tóquio, Japão';
 $string['useast1'] = 'Estados Unidos Este';
-$string['videoplaceholder'] = '[vídeo submetido]';
 $string['yes'] = 'sim';

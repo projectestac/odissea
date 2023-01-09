@@ -68,7 +68,7 @@ $string['privacy:metadata:fillingssummary'] = 'Informazioni sulla valutazione di
 $string['privacy:metadata:instanceid'] = 'Identificatore relativo a una valutazione in un\'attività.';
 $string['privacy:metadata:levelid'] = 'Livello ottenuto nel rubric.';
 $string['privacy:metadata:remark'] = 'Commenti relativi al criterio del rubric che viene valutato.';
-$string['regrademessage1'] = 'Stai per salvare modifiche ad un rubric che è già stato utilizzato per valutare. E\' necessario indicare quali valutazioni debbano essere riviste.Il rubrica non sarà visualizzabile dagli studenti finché non verranno nuovamente valutati.';
+$string['regrademessage1'] = 'Stai per salvare modifiche ad un rubric che è già stato utilizzato per valutare. È necessario indicare quali valutazioni debbano essere riviste.Il rubrica non sarà visualizzabile dagli studenti finché non verranno nuovamente valutati.';
 $string['regrademessage5'] = 'Stai per salvare modifiche significative ad un rubric che è già stato utilizzato per valutare. I valori presenti nel registro valutatore non saranno modificati, ma il rubric non sarà visualizzabile dagli studenti finché non verranno nuovamente valutati.';
 $string['regradeoption0'] = 'Da non valutare nuovamente';
 $string['regradeoption1'] = 'Da valutare nuovamente';
@@ -97,4 +97,4 @@ $string['sortlevelsasc'] = 'Ordinamento dei livelli:';
 $string['sortlevelsasc0'] = 'Decrescente per punteggio';
 $string['sortlevelsasc1'] = 'Crescente per punteggio';
 $string['zerolevelsabsent'] = 'Attenzione: il punteggio minimo possibile per il rubric non è pari 0; questo può provocare valutazioni inattese dell\'attività. Per evitare il problema, ciascun criterio deve avere un livello con un punteggio pari a 0.<br>
-E\' possibile ignorare l\'avviso quando la valutazione è basata su una scala e il livello con la valutazione più bassa è impostato con il valore più basso della scala.';
+È possibile ignorare l\'avviso quando la valutazione è basata su una scala e il livello con la valutazione più bassa è impostato con il valore più basso della scala.';

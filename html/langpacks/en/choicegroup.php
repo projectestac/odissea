@@ -68,6 +68,7 @@ $string['choicetext'] = 'Choice text';
 $string['chooseaction'] = 'Choose an action ...';
 $string['choosegroup'] = 'Choose a group';
 $string['collapse_all_groupings'] = 'Collapse All Groupings';
+$string['completiondetail:submit'] = 'Choose a group';
 $string['completionsubmit'] = 'Show as complete when user makes a choice';
 $string['createdate'] = 'Group creation date';
 $string['defaultsettings'] = 'Default settings';
@@ -127,7 +128,7 @@ $string['numberofuser'] = 'The number of users';
 $string['onlyactive'] = 'Filter out response data for users with expired or suspended enrolments';
 $string['option'] = 'Group';
 $string['page-mod-choice-x'] = 'Any Group choice module page';
-$string['pleaseselectonegroup'] = 'Please select at least one group to chose from.';
+$string['pleaseselectonegroup'] = 'Please select at least one group to choose from.';
 $string['pleasesetgroups'] = 'Please create at least one group in this course.';
 $string['pleasesetonegroupor'] = 'Please create at least one group in this course.<br /><br />
 <ul>

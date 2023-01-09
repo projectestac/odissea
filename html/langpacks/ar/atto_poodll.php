@@ -25,8 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowaudiomp3'] = 'السماح بالتسجيل الصوتي';
+$string['allowsnapshot'] = 'السماح بلقطة الشاشة';
+$string['allowvideo'] = 'السماح بالتسجيل الفيدوي';
 $string['allowwhiteboard'] = 'السماح بالسبورة';
 $string['openinnewwindow'] = 'إفتح في نافذة جديدة';
+$string['poodll:allowaudiomp3'] = 'السماح بالتسجيل الصوتي';
+$string['poodll:allowsnapshot'] = 'السماح بلقطة الشاشة';
+$string['poodll:allowvideo'] = 'السماح بالتسجيل الفيدوي';
 $string['poodll:allowwhiteboard'] = 'السماح بالسبورة';
 $string['privacy:metadata'] = 'إن إضافة atto_poodll لا تخزن أي بيانات شخصية.';
 $string['show_whiteboard'] = 'إظهار السبورة';

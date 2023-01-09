@@ -182,46 +182,46 @@ $string['enabled'] = 'Abilitato';
 $string['errornosubmissions'] = 'Non ci sono consegne da scaricare';
 $string['errorquickgradingvsadvancedgrading'] = 'La valutazione non è stata salvata poiché il compito sta usando la valutazione avanzata.';
 $string['errorrecordmodified'] = 'La valutazione non è stata salvata poiché uno o più record sono stati modificati da qualcuno più recentemente del tuo caricamento della pagina.';
-$string['eventallsubmissionsdownloaded'] = 'Scarica tutte le consegne';
-$string['eventassessablesubmitted'] = 'Effettuata una consegna';
-$string['eventbatchsetmarkerallocationviewed'] = 'Visualizzata assegnazione valutatori';
-$string['eventbatchsetworkflowstateviewed'] = 'Visualizzati stati del flusso di lavoro';
-$string['eventextensiongranted'] = 'Concessa proroga';
-$string['eventfeedbackupdated'] = 'Aggiornato commento';
-$string['eventfeedbackviewed'] = 'Visualizzato commento';
-$string['eventgradingformviewed'] = 'Visualizzato schema di valutazione';
-$string['eventgradingtableviewed'] = 'Visualizzata tabella delle valutazioni';
-$string['eventidentitiesrevealed'] = 'Rivelate le identità';
-$string['eventmarkerupdated'] = 'Aggiornato valutatore assegnato';
-$string['eventoverridecreated'] = 'Creata personalizzazione del compito';
-$string['eventoverridedeleted'] = 'Eliminata personalizzazione del compito';
-$string['eventoverrideupdated'] = 'Aggiornata personalizzazione del compito';
-$string['eventremovesubmissionformviewed'] = 'Visualizzata conferma rimozione consegna.';
-$string['eventrevealidentitiesconfirmationpageviewed'] = 'Visualizzata pagina conferma rivelazione identità';
-$string['eventstatementaccepted'] = 'Accettata dall\'utente la dichiarazione sulla consegna';
-$string['eventsubmissionconfirmationformviewed'] = 'Visualizzata scheda di conferma consegna';
-$string['eventsubmissioncreated'] = 'Creata consegna';
-$string['eventsubmissionduplicated'] = 'Duplicata consegna da parte di un utente';
-$string['eventsubmissionformviewed'] = 'Visualizzata scheda di consegna';
-$string['eventsubmissiongraded'] = 'Valutata una consegna';
-$string['eventsubmissionlocked'] = 'Bloccata consegna per un utente';
-$string['eventsubmissionstatusupdated'] = 'Aggiornato stato della consegna';
-$string['eventsubmissionstatusviewed'] = 'Visualizzato stato consegna';
-$string['eventsubmissionunlocked'] = 'Sbloccata consegna per un utente';
-$string['eventsubmissionupdated'] = 'Salvata consegna da parte di un utente';
-$string['eventsubmissionviewed'] = 'Visualizzata consegna';
-$string['eventworkflowstateupdated'] = 'Aggiornato stato del flusso di lavoro.';
+$string['eventallsubmissionsdownloaded'] = 'Scaricamento di tutte le consegne';
+$string['eventassessablesubmitted'] = 'Consegna compito';
+$string['eventbatchsetmarkerallocationviewed'] = 'Visualizzazione assegnazione valutatori';
+$string['eventbatchsetworkflowstateviewed'] = 'Visualizzazione stati del flusso di lavoro';
+$string['eventextensiongranted'] = 'Concessione proroga';
+$string['eventfeedbackupdated'] = 'Aggiornamento commento';
+$string['eventfeedbackviewed'] = 'Visualizzazione commento';
+$string['eventgradingformviewed'] = 'Visualizzazione schema di valutazione';
+$string['eventgradingtableviewed'] = 'Visualizzazione tabella delle valutazioni';
+$string['eventidentitiesrevealed'] = 'Rivelazione identità';
+$string['eventmarkerupdated'] = 'Aggiornamento valutatore assegnato';
+$string['eventoverridecreated'] = 'Creazione personalizzazione del compito';
+$string['eventoverridedeleted'] = 'Eliminazione personalizzazione del compito';
+$string['eventoverrideupdated'] = 'Aggiornamento personalizzazione del compito';
+$string['eventremovesubmissionformviewed'] = 'Visualizzazione conferma rimozione consegna.';
+$string['eventrevealidentitiesconfirmationpageviewed'] = 'Visualizzazione pagina conferma rivelazione identità';
+$string['eventstatementaccepted'] = 'Accettazione utente dellla dichiarazione sulla consegna';
+$string['eventsubmissionconfirmationformviewed'] = 'Visualizzazione scheda di conferma consegna';
+$string['eventsubmissioncreated'] = 'Creazione consegna';
+$string['eventsubmissionduplicated'] = 'Duplicazione consegna da parte di un utente';
+$string['eventsubmissionformviewed'] = 'Visualizzazione scheda di consegna';
+$string['eventsubmissiongraded'] = 'Valutazione consegna';
+$string['eventsubmissionlocked'] = 'Blocco consegna di un utente';
+$string['eventsubmissionstatusupdated'] = 'Aggiornamento stato della consegna';
+$string['eventsubmissionstatusviewed'] = 'Visualizzazione stato consegna';
+$string['eventsubmissionunlocked'] = 'Sblocco consegna di un utente';
+$string['eventsubmissionupdated'] = 'Salvataggio consegna di un utente';
+$string['eventsubmissionviewed'] = 'Visualizzazione consegna';
+$string['eventworkflowstateupdated'] = 'Aggiornamento stato del flusso di lavoro.';
 $string['expandreviewpanel'] = 'Ingrandisci il pannello di revisione';
 $string['extensionduedate'] = 'Data scadenza proroga';
 $string['extensionnotafterduedate'] = 'La data di fine proroga deve essere successiva alla data di fine consegne';
 $string['extensionnotafterfromdate'] = 'La data di fine proroga deve essere successiva alla data di inizio consegne';
 $string['feedback'] = 'Commento';
 $string['feedbackavailableanonhtml'] = 'Hai un nuovo feedback sulla consegna del compito \'{$a->assignment}\'</i>\'<br /><br />
-E\' possibile visualizzarlo <a href="{$a->url}>al seguente URL, di seguito alla consegna</a>.';
+È possibile visualizzarlo <a href="{$a->url}>al seguente URL, di seguito alla consegna</a>.';
 $string['feedbackavailableanonsmall'] = 'Nuovo feedback sulla consegna {$a->assignment}';
 $string['feedbackavailableanontext'] = 'Hai un nuovo feedback sulla consegna del compito \'{$a->assignment}\'
 
-E\' possibile visualizzarlo al seguente URL, di seguito alla consegna:
+È possibile visualizzarlo al seguente URL, di seguito alla consegna:
 
 {$a->url}';
 $string['feedbackavailablehtml'] = '{$a->username} ha inserito un commento sulla tua consegna del compito  \'<i>{$a->assignment}</i>\'<br /><br />
@@ -247,7 +247,7 @@ $string['filternone'] = 'Senza filtro';
 $string['filternotsubmitted'] = 'Non consegnato';
 $string['filterrequiregrading'] = 'In attesa di valutazione';
 $string['filtersubmitted'] = 'Consegnato';
-$string['fixrescalednullgrades'] = 'Il compito contiene alcune valutazioni errate. E\' possibile <a href="{$a->link}">sistemare automaticamente tali valutazioni</a>. Da notare che i totali del corso potranno cambiare.';
+$string['fixrescalednullgrades'] = 'Il compito contiene alcune valutazioni errate. È possibile <a href="{$a->link}">sistemare automaticamente tali valutazioni</a>. Da notare che i totali del corso potranno cambiare.';
 $string['fixrescalednullgradesconfirm'] = 'Sei sicuro di sistemare le valutazioni errate? Tutte le valutazioni interessate saranno rimosse. Da notare che i totali del corso potranno cambiare.';
 $string['fixrescalednullgradesdone'] = 'Valutazioni sistemate.';
 $string['gradeabovemaximum'] = 'La valutazione deve essere minore o uguale a {$a}.';
@@ -351,7 +351,7 @@ $string['messageprovider:assign_notification'] = 'Notifiche compito';
 $string['modulename'] = 'Compito';
 $string['modulename_help'] = 'Il modulo di attività compito consente al docente di valutare l\'apprendimento degli studenti assegnando loro un lavoro che potrà poi valutare e commentare.
 
-Gli studenti possono consegnare qualsiasi tipo di contenuto digitale, come ad esempio documenti di testo, immagini, clip audio e clip video. Il compito può anche prevedere la compilazione online di un testo sia in alternativa sia in aggiunta al caricamento di file. E\' anche possibile usare il compito per attività da svolgere al di fuori di Moodle, dove non sono richiesti contenuti digitali. Gli studenti possono consegnare i lavori individualmente oppure come membri di un gruppo.
+Gli studenti possono consegnare qualsiasi tipo di contenuto digitale, come ad esempio documenti di testo, immagini, clip audio e clip video. Il compito può anche prevedere la compilazione online di un testo sia in alternativa sia in aggiunta al caricamento di file. È anche possibile usare il compito per attività da svolgere al di fuori di Moodle, dove non sono richiesti contenuti digitali. Gli studenti possono consegnare i lavori individualmente oppure come membri di un gruppo.
 
 I docenti possono commentare le consegne degli studenti e caricare file a loro volta, ad esempio i compiti corretti e valutati o file audio di commento. I compiti possono essere valutati utilizzando sia voti numerici, sia metodi di valutazione avanzata tipo rubric. Le valutazioni vengono memorizzate nel registro valutatore';
 $string['modulenameplural'] = 'Compiti';
@@ -456,7 +456,7 @@ $string['removesubmission'] = 'Elimina consegna';
 $string['removesubmissionconfirm'] = 'Sei sicuro di eliminare i dati della consegna?';
 $string['removesubmissionconfirmforstudent'] = 'Sei sicuro di eliminare i dati della consegna dello studente {$a}?';
 $string['removesubmissionforstudent'] = 'Eliminazione consegna dello studente (id={$a->id}, nome e cognome={$a->fullname}).';
-$string['reopenuntilpassincompatiblewithblindmarking'] = 'L\'opzione "Automaticamente fino al superamento" non è compatibile con la valutazione cieca poiché le valutazioni non verranno trasferite nel registro valutatore finché non sarà stata rivelata l\'identità degli studenti.';
+$string['reopenuntilpassincompatiblewithblindmarking'] = 'L\'opzione \'Automaticamente fino al superamento\' non è compatibile con la valutazione cieca poiché le valutazioni non verranno trasferite nel registro valutatore finché non sarà stata rivelata l\'identità degli studenti.';
 $string['requireallteammemberssubmit'] = 'Tutti i gli appartenenti al gruppo devono premere il pulsante consegna';
 $string['requireallteammemberssubmit_help'] = 'Tutti gli studenti appartenenti al gruppo dovranno premere il pulsante consegna affinché la consegna venga presa in considerazione. Se l\'impostazione è disabilitata, sarà considerata la consegna di qualsiasi membro del gruppo.';
 $string['requiresubmissionstatement'] = 'Obbliga gli studenti ad accettare la dichiarazione sulla consegna';
@@ -486,7 +486,7 @@ $string['sendlatenotifications_help'] = 'I valutatori (di solito i docenti) rice
 $string['sendnotifications'] = 'Notifica le consegne ai valutatori';
 $string['sendnotifications_help'] = 'I valutatori (di solito i docenti) riceveranno una notifica tutte le volte che uno studente avrà consegnato un compito, sia che la consegna avvenga in anticipo, sia nelle date previste, sia in ritardo. I metodi di notifica sono configurabili.';
 $string['sendstudentnotifications'] = 'Notifica agli studenti';
-$string['sendstudentnotifications_help'] = 'Gli studenti riceveranno notifiche delle modifiche alle valutazioni o dei feedback. Se è abilitato il flusso di lavoro, le notifiche saranno inviate fino a quando la valutazione risulterà "Rilasciata".';
+$string['sendstudentnotifications_help'] = 'Gli studenti riceveranno notifiche delle modifiche alle valutazioni o dei feedback. Se il compito fa uso di un flusso di lavoro, le notifiche non saranno inviate fino a quando la valutazione risulterà \'Rilasciata\'.';
 $string['sendstudentnotificationsdefault'] = 'Impostazione di default per \'Notifica agli studenti\'';
 $string['sendstudentnotificationsdefault_help'] = 'Imposta il valore di default per la casella di spunta \'Notifica agli studenti\'';
 $string['sendsubmissionreceipts'] = 'Invia ricevuta di consegna agli studenti';

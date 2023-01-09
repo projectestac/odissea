@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'حقل مساحة النص';
+$string['fieldtypelabel'] = 'منطقة النص';
 $string['maxbytes'] = 'الحد الأقصى لحجم الملف المضمن (بالبايت)';
 $string['maxbytes_desc'] = 'إذا وضعت صفر فسوف يكون غير محدود بشكل افتراضي';
 $string['pluginname'] = 'مساحة النص';
-$string['privacy:metadata'] = 'إن مكون حقل منطقة النص لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل الجداول المعرفة في mod_data.';
+$string['privacy:metadata'] = 'إن مُكون حقل منطقة النص لا يخزن أي بيانات شخصية، بل يستعمل الجداول المعرفة في mod_data.';

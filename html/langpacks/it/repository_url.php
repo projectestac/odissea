@@ -32,5 +32,5 @@ $string['privacy:metadata'] = 'Il plugin Repository \'Scaricamento URL\' non mem
 $string['rename'] = 'Nome';
 $string['url'] = 'URL';
 $string['url:view'] = 'Usare Scaricamento URL nel file picker';
-$string['validfiletype'] = 'E\' necessario fornire un URL di una immagine o di una pagina che contiene immagini';
+$string['validfiletype'] = 'È necessario fornire un URL di una immagine o di una pagina che contiene immagini';
 $string['validname'] = 'Devi fornire un nome di file valido';

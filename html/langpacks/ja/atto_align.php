@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['center'] = '中央';
 $string['leftalign'] = '左寄せ';
-$string['pluginname'] = 'テキスト揃え';
+$string['pluginname'] = 'テキストアライン';
 $string['privacy:metadata'] = 'atto_alignプラグインはいかなる個人データも保存しません。';
 $string['rightalign'] = '右寄せ';

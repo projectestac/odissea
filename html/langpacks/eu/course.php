@@ -104,7 +104,7 @@ $string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} ikastaroa ha
 $string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} ikastaroa hasi aurretik';
 $string['searchactivitiesbyname'] = 'Bilatu jarduerak izenaren arabera';
 $string['searchresults'] = 'Bilaketaren emaitzak: {$a}';
-$string['studentsatriskincourse'] = '{$a} ikastaroan arriskan dauden ikasleak';
+$string['studentsatriskincourse'] = '{$a} ikastaroan arriskuan dauden ikasleak';
 $string['studentsatriskinfomessage'] = 'Kaixo, {$a->userfirstname}:
 <p>{$a->coursename} ikastaroan bertan behera uzteko arriskuan dauden ikasleak daudela antzeman da.</p>';
 $string['submitsearch'] = 'Bidali bilaketa';

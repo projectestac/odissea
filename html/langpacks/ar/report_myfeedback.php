@@ -101,6 +101,7 @@ $string['privacy:metadata:report_myfeedback:feedback'] = 'إفادة Turnitin ا
 $string['progadmin_dashboard'] = 'دفة قيادة المشرف على القسم';
 $string['quiz'] = 'الاختبار';
 $string['return-2-dash'] = 'عودة إلى لوحة التحكم';
+$string['selectall'] = 'إختيار الكل';
 $string['selfaddedfeedback'] = 'الإفادة المضافة ذاتيًا';
 $string['student'] = 'الطالب';
 $string['student_graded_info'] = 'عدد الطلاب المقيمين حتى الآن مع الإفادة المرئية لهذا التقييم.';

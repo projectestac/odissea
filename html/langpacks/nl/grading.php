@@ -80,7 +80,7 @@ $string['privacy:metadata:grading_instances:rawgrade'] = 'Het cijfer voor de beo
 $string['privacy:metadata:grading_instances:status'] = 'De status van deze beoordeling instantie';
 $string['privacy:metadata:grading_instances:timemodified'] = 'Het tijdstip waarop de  beoordeling instantie voor het laatst is gewijzigd.';
 $string['privacy:metadata:gradingformpluginsummary'] = 'Gegevens voor de beoordelingsmethode.';
-$string['searchownforms'] = 'voeg mijn eigen formulieren toe';
+$string['searchownforms'] = 'Zoek ook eigen beoordelingsformulieren';
 $string['searchtemplate'] = 'Beoordelingsformulieren zoeken';
 $string['searchtemplate_help'] = 'Je kunt zoeken naar een beoordelingsformulier en het hier als sjabloon gebruiken voor een nieuw beoordelingsformulier. Typ woorden die in de formuliernaam, de beschrijving of in het formulier zelf zouden moeten voorkomen. Om een zin te zoeken, plaats je de woorden tussen dubbele aanhalingstekens.
 
@@ -94,5 +94,5 @@ $string['templatepick'] = 'Gebruik dit sjabloon';
 $string['templatepickconfirm'] = 'Wil je beoordelingsformulier \'{$a->formname}\' gebruiken als sjabloon voor het nieuwe beoordelingsformulier in \'{$a->component} ({$a->area})\'?';
 $string['templatepickownform'] = 'Gebruik dit formulier als sjabloon';
 $string['templatesource'] = 'Plaats: {$a->component} ({$a->area})';
-$string['templatetypeown'] = 'Eigen formulier';
+$string['templatetypeown'] = 'Eigen beoordelingsformulier';
 $string['templatetypeshared'] = 'Gedeeld sjabloon';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clidriverlist'] = 'Driver database disponibili per la migrazione';
 $string['cliheading'] = 'Migrazione database - accertati che non vi siano accessi al server durante la migrazione!';
-$string['climigrationnotice'] = 'E\' in corso la migrazione del database. Per favore attendi il completamento delle operazioni, l\'aggiornamento delle configurazioni e l\'eliminazione del file $CFG->dataroot/climaintenance.html da parte dell\'amministratore del server.';
+$string['climigrationnotice'] = 'È in corso la migrazione del database. Per favore attendi il completamento delle operazioni, l\'aggiornamento delle configurazioni e l\'eliminazione del file $CFG->dataroot/climaintenance.html da parte dell\'amministratore del server.';
 $string['convertinglogdisplay'] = 'Conversione della visualizzazione delle azioni del log';
 $string['dbexport'] = 'Esportazione database';
 $string['dbtransfer'] = 'Migrazione database';
@@ -43,4 +43,4 @@ $string['targetdatabasenotempty'] = 'Il database di destinazione non deve conten
 $string['transferdata'] = 'Trasferisci dati';
 $string['transferdbintro'] = 'Lo script trasferisce tutti i contenuti di questo database in un altro database server. Può essere utilizzato per migrare dati tra database di tipo diverso.';
 $string['transferdbtoserver'] = 'Trasferimento del database di Moodle su un altro server';
-$string['transferringdbto'] = 'E\' in corso il trasferimento di questo database {$a->dbtypefrom} verso il database {$a->dbtype} {$a->dbname} su {$a->dbhost}.';
+$string['transferringdbto'] = 'È in corso il trasferimento di questo database {$a->dbtypefrom} verso il database {$a->dbtype} {$a->dbname} su {$a->dbhost}.';

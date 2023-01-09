@@ -233,6 +233,7 @@ $string['sticky_help'] = 'هذا الخيار يمكن أن يثبت موضع ا
 $string['sticky_no'] = 'المناقشة مفروزة بشكل اعتيادي';
 $string['sticky_yes'] = 'المناقشة تبقى عند أعلى القائمة';
 $string['studyadvice_noquestions'] = 'لم يبدأ أحد بأي مناقشات بعد في منتدى نصائح الدراسة هذا.';
+$string['subscribeddiscussionall'] = 'الكل';
 $string['subscribediscussion'] = 'الاشتراك في المناقشة';
 $string['subscribers_nopermission'] = 'ليست لديك صلاحية معاينة قائمة المشتركين';
 $string['subscribestate_discussionunsubscribed'] = 'أنت لا تتلقى حاليًا رسائل من هذه المناقشة عبر البريد الالكتروني.

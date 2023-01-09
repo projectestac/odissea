@@ -37,6 +37,6 @@ $string['levelgroup'] = 'Voto del livello e definizione';
 $string['levels'] = 'Livelli';
 $string['mustbeunique'] = 'I voti dei livelli devono essere univoci all\'interno di un criterio';
 $string['mustchooseone'] = 'Devi scegliere uno di questi elementi';
-$string['mustdefinelevel'] = 'E\' necessario almeno un livello';
+$string['mustdefinelevel'] = 'È necessario almeno un livello';
 $string['pluginname'] = 'Rubric';
 $string['privacy:metadata'] = 'Il plugin \'Rubric\' memorizza solo i dettagli dello schema di valutazione. I dati personali effettivi su come è stato compilato lo schema sono memorizzati nel modulo Workshop e vengono allegati alle valutazioni esportate.';

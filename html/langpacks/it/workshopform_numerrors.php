@@ -41,4 +41,5 @@ $string['grademapping'] = 'Tavola di mappatura voti';
 $string['maperror'] = 'Il numero pesato di errori e minore o uguale';
 $string['mapgrade'] = 'Voto per la consegna';
 $string['pluginname'] = 'Numero di errori';
+$string['privacy:export:metadata:map'] = 'Se il numero pesato di errori raggiunge {$a->nonegative}, allora il punteggio sarà {$a->grade} percento.';
 $string['privacy:metadata'] = 'Il plugin \'Numero di errori\' memorizza solo i dettagli dello schema di valutazione. I dati personali effettivi su come è stato compilato lo schema sono memorizzati nel modulo Workshop e vengono allegati alle valutazioni esportate.';

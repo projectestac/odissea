@@ -29,6 +29,7 @@ $string['accredible:addinstance'] = 'إضافة عيِّنة شهادة/شارة
 $string['accredible:manage'] = 'إدارة عيِّنة الشهادة/الشارة';
 $string['accredible:student'] = 'استرجاع الشهادة أو الشارة';
 $string['accredible:view'] = 'معاينة الشهادة أو الشارة';
+$string['accrediblegroup'] = 'مجموعة موثوقة';
 $string['achievementid'] = 'رقم الإنجازات \\ أسم الجماعة';
 $string['activityname'] = 'اسم النشاط';
 $string['additionalactivitiesone'] = 'تحذير: أنت تضيف أكثر من نشاط لمقرر دراسي واحد<br/> كلا النشاطين مُشاهدة من قبل الطلاب، لذلك تأكد من منحهما اسمين مختلفين.';

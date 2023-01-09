@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add_private_comment'] = 'إضافة تعليق إلى الملاحظة الشخصية';
+$string['all'] = 'الكل';
 $string['allanswers'] = 'الكل';
 $string['allquestions'] = 'الكل';
 $string['allquestionsimgtitle'] = 'إظهار كل الأسئلة في هذا المستند';

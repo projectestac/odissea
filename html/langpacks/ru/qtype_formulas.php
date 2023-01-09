@@ -90,7 +90,6 @@ $string['functiontakesnoargs'] = 'Функция {$a} не принимает а
 $string['functiontakesonearg'] = 'Функция {$a} должна иметь только один аргумент';
 $string['functiontakesoneortwoargs'] = 'Функция {$a} должна иметь один или два аргумента';
 $string['functiontakestwoargs'] = 'Функция {$a} должна иметь только два аргумента';
-$string['globaloptions'] = '[Глобальная] -';
 $string['globalvarshdr'] = 'Переменные';
 $string['illegalformulasyntax'] = 'Неверный синтаксис формулы, начинающийся с \'{$a}\\';
 $string['incorrectfeedback'] = 'За любой неправильный ответ';

@@ -92,7 +92,8 @@ $string['editdatesstop'] = 'Parar a edição de datas';
 $string['edititem'] = 'Editar este item';
 $string['emailoncomplete'] = 'Enviar e-mail quando a lista de verificação estiver concluída';
 $string['emailoncomplete_help'] = 'Quando uma lista de verificação for concluída, uma notificação de e-mail pode ser enviada para o aluno que a completou, a todos os professores da disciplina ou a ambos. <br />
-Um administrador pode definir quem recebe este e-mail usando a permissão \'mod:checklist/emailoncomplete\' - por defeito, todos os professores e os professores não editores têm esta permissão.';
+Um administrador pode definir quem recebe este e-mail usando a permissão \'mod:checklist/emailoncomplete\' - por predefinição, todos os professores e os professores não editores têm esta permissão.
+Para isso, uma lista de verificação é considerada \'concluída\' quando todos os itens tiverem sido marcados - não tem em qualquer percentagem de conclusão definida nas configurações de \'Conclusão da atividade\'.';
 $string['emailoncompletebody'] = 'O utilizador {$a->user} concluiu a checklist \'{$a->checklist}\' da disciplina \'{$a->coursename}\'.
 Veja a checklist aqui:';
 $string['emailoncompletebodyown'] = 'Concluiu a checklist \'{$a->checklist}\' da disciplina \'{$a->coursename}\'.
@@ -100,6 +101,7 @@ Veja a checklist aqui:';
 $string['emailoncompletesubject'] = 'O utilizador {$a->user} concluiu a checklist \'{$a->checklist}\'';
 $string['emailoncompletesubjectown'] = 'Concluiu a checklist \'{$a->checklist}\'';
 $string['enterurl'] = 'Digite o url...';
+$string['errorchecklistitemnotvalid'] = 'O ID do item da lista de verificação não pertence a este módulo da disciplina!';
 $string['eventchecklistcomplete'] = 'Checklist concluída';
 $string['eventeditpageviewed'] = 'Página de edição visualizada';
 $string['eventreportviewed'] = 'Relatório visualizado';
@@ -178,6 +180,12 @@ $string['showhidechecked'] = 'Mostrar/ocultar itens selecionados';
 $string['showmymoodle'] = 'Mostrar listas de verificação no Painel do utilizador';
 $string['showprogressbars'] = 'Mostrar barras de progresso';
 $string['showupdateablemymoodle'] = 'Mostrar apenas listas de verificação atualizáveis no Painel do utilizador';
+$string['student_comment_created'] = 'Comentário do aluno criado';
+$string['student_comment_updated'] = 'Comentário do aluno atualizado';
+$string['student_comment_updated_desc'] = 'The user with id {$a->userid} has updated a comment in the checklist with course module id {$a->cmid} to have text \'{$a->commenttext}\'
+
+O utilizador com o ID {$a->userid} atualizou um comentário na lista de verificação no módulo da disciplina com ID {$a->cmid} para o seguinte texto: \'{$a->commenttext}\'';
+$string['studentcomments'] = 'O utilizador pode adicionar os seus próprios comentários aos itens da lista de verificação';
 $string['teacheralongsidecheck'] = 'Alunos e professores';
 $string['teachercomments'] = 'Professores podem adicionar comentários';
 $string['teacherdate'] = 'Data da última atualização deste item por um professor';
@@ -193,6 +201,7 @@ $string['togglecolumn'] = 'Alternar coluna';
 $string['toggledates'] = 'Mostar/ocultar nomes & datas';
 $string['togglerow'] = 'Alternar linha';
 $string['unindentitem'] = 'Não avançar item';
+$string['update_student_comment_failed'] = 'Ocorreu um erro ao atualizar o comentário do aluno';
 $string['updatecompletescore'] = 'Guardar notas de conclusão';
 $string['updateitem'] = 'Atualizar';
 $string['userdate'] = 'Data da última atualização deste item pelo utilizador';

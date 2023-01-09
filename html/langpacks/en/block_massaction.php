@@ -63,6 +63,7 @@ $string['massaction:use'] = 'Use the Mass Actions block';
 $string['modulename'] = 'Activity name';
 $string['moduletype'] = 'Activity type';
 $string['multipleinstances'] = 'There must not be multiple instances of this block on the same page. <br />Please remove additional instances.';
+$string['newsection'] = 'New Section';
 $string['noaction'] = 'No action specified';
 $string['noactionsavailable'] = 'You do not have the permissions to execute any of the possible operations this block is providing';
 $string['nocaptobackup'] = 'You do not have sufficient permissions to perform a backup in the course';
@@ -79,6 +80,7 @@ $string['sectionselect_help'] = 'You can only select sections which include at l
 Additionally, when using the Tiles or One Topic course format you can only select sections which are currently visible.';
 $string['selectall'] = 'Select all';
 $string['selectallinsection'] = 'Select all in section';
+$string['sourcecourseidlost'] = 'Source course id could not be found';
 $string['unusable'] = 'The mass action functionality cannot be used in this course format or the current theme';
 $string['usage'] = 'Usage of the Mass Actions Block';
 $string['usage_help'] = '<p>This block allows instructors to perform actions upon multiple resources or activities in the class view, rather than having to perform repeated actions on individual items.</p>

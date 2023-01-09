@@ -31,6 +31,7 @@ $string['direction_before'] = 'Data';
 $string['direction_from'] = 'dal';
 $string['direction_label'] = 'Direzione';
 $string['direction_until'] = 'Fino al';
+$string['error_dateconflict'] = 'Altre restrizioni sulle date sono in conflitto.';
 $string['full_from'] = 'Accedere dopo il <strong>{$a}</strong>';
 $string['full_from_date'] = 'Accedere a partire dal <strong>{$a}</strong>';
 $string['full_until'] = 'Accedere prima del <strong>{$a}</strong>';

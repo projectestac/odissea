@@ -38,6 +38,6 @@ $string['standardonly'] = 'Solo standard';
 $string['tagcollection'] = 'Raccolta di tag';
 $string['tagcollection_help'] = 'Seleziona la raccolta dalla quale visualizzare i tag. Selezionando "Alcuni", saranno visualizzati i tag di tutte le raccolte ad eccezione dei tag contrassegnati con "*"';
 $string['taggeditemscontext'] = 'Contesto dell\'elemento associato al tag';
-$string['taggeditemscontext_help'] = 'E\' possibile limitare il tag cloud ai soli tag presenti nel contesto di riferimento, come una categoria di corso, un corso o un modulo.';
+$string['taggeditemscontext_help'] = 'È possibile limitare il tag cloud ai soli tag presenti nel contesto di riferimento, come una categoria di corso, un corso o un modulo.';
 $string['tags:addinstance'] = 'Aggiungere blocco Tag';
 $string['tags:myaddinstance'] = 'Aggiungere blocco Tag nella Dashboard';

@@ -31,7 +31,7 @@ $string['allowofflineattempts_help'] = 'Gli utenti potranno scaricare il quiz e 
 Nota: un quiz con limiti di tempo, con limitazioni sugli indirizzi di rete, oppure con comportamenti della domanda diversi dal feedback differito (con o senza CBM), non può essere svolto offline.';
 $string['confirmdatasaved'] = 'Confermo di non avere nel dispositivo mobile tentativi non salvati.';
 $string['mobileapp'] = 'App Mobile';
-$string['offlineattemptserror'] = 'I quiz offline non sono compatibili né con l\'utilizzo di timer, password d\'accesso o indirizzi di rete né con quiz che utilizzano comportamenti diversi dal feedback differito con o senza CBM.';
+$string['offlineattemptserror'] = 'I quiz offline non sono compatibili né con l\'utilizzo di timer o indirizzi di rete né con quiz che utilizzano comportamenti diversi dal feedback differito con o senza CBM.';
 $string['offlinedatamessage'] = 'Hai svolto il tentativo su un dispositivo mobile e i dati sono stati sincronizzati nel server {$a} fa.';
 $string['pleaseconfirm'] = 'Per favore conferma di non avere tentativi non salvati nel dispositivo mobile.';
 $string['pluginname'] = 'Regola di accesso quiz Offline';

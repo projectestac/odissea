@@ -25,29 +25,30 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_oidcdescription'] = 'The OpenID Connect authentication plugin provides single-sign-on functionality using configurable identity providers.';
-$string['cfg_authendpoint_desc'] = 'The URI of the Authorization endpoint from your identity provider to use.<br/>
+$string['application_updated'] = 'OpenID Connect application setting was updated.';
+$string['application_updated_azure'] = 'OpenID Connect application setting was updated.<br/>
+<span class="warning" style="color: red;">Azure administrator will need to <b>Provide admin consent</b> and <b>Verify setup</b> again on the <a href="{$a}" target="_blank">Microsoft 365 integration configuration page</a> if "Identity Provider (IdP) Type" or "Client authentication method" settings are updated.</span>';
+$string['auth_method_certificate'] = 'Certificate';
+$string['auth_method_secret'] = 'Secret';
+$string['auth_oidcdescription'] = 'The OpenID Connect authentication plugin provides single-sign-on functionality using configurable IdP.';
+$string['authendpoint'] = 'Authorization Endpoint';
+$string['authendpoint_help'] = 'The URI of the Authorization endpoint from your IdP to use.<br/>
 Note if the site is to be configured to allow users from other tenants to access, tenant specific authorization endpoint cannot be used.';
-$string['cfg_authendpoint_key'] = 'Authorization Endpoint';
-$string['cfg_autoappend_desc'] = 'Automatically append this string when logging in users using the "Resource Owner Password Credentials" authentication method. This is useful when your identity provider requires a common domain, but don\'t want to require users to type it in when logging in. For example, if the full OpenID Connect user is "james@example.com" and you enter "@example.com" here, the user will only have to enter "james" as their username. <br /><b>Note:</b> In the case where conflicting usernames exist - i.e. a Moodle user exists wth the same name, the priority of the authentication plugin is used to determine which user wins out.';
+$string['authentication_and_endpoints_saved'] = 'Authentication and endpoint settings updated.';
+$string['cfg_authenticationlink_desc'] = '<a href="{$a}" target="_blank">Link to IdP and authentication configuration</a>';
+$string['cfg_autoappend_desc'] = 'Automatically append this string when logging in users using the "Resource Owner Password Credentials" authentication method. This is useful when your IdP requires a common domain, but don\'t want to require users to type it in when logging in. For example, if the full OpenID Connect user is "james@example.com" and you enter "@example.com" here, the user will only have to enter "james" as their username. <br /><b>Note:</b> In the case where conflicting usernames exist - i.e. a Moodle user exists wth the same name, the priority of the authentication plugin is used to determine which user wins out.';
 $string['cfg_autoappend_key'] = 'Auto-Append';
-$string['cfg_cleanupoidctokens_desc'] = 'If your users are experiencing problems logging in using their Microsoft 365 account, trying cleaning up OpenID Connect tokens. This removes stray and incomplete tokens that can cause errors. WARNING: This may interrupt logins in-process, so it\'s best to do this during downtime.';
-$string['cfg_cleanupoidctokens_key'] = 'Cleanup OpenID Connect Tokens';
-$string['cfg_clientid_desc'] = 'Your registered Client ID on the identity provider';
-$string['cfg_clientid_key'] = 'Client ID';
-$string['cfg_clientsecret_desc'] = 'Your registered Client Secret on the identity provider. On some providers, it is also referred to as a key.';
-$string['cfg_clientsecret_key'] = 'Client Secret';
 $string['cfg_customicon_desc'] = 'If you\'d like to use your own icon, upload it here. This overrides any icon chosen above. <br /><br /><b>Notes on using custom icons:</b><ul><li>This image will <b>not</b> be resized on the login page, so we recommend uploading an image no bigger than 35x35 pixels.</li><li>If you have uploaded a custom icon and want to go back to one of the stock icons, click the custom icon in the box above, then click "Delete", then click "OK", then click "Save Changes" at the bottom of this form. The selected stock icon will now appear on the Moodle login page.</li></ul>';
 $string['cfg_customicon_key'] = 'Custom Icon';
 $string['cfg_debugmode_desc'] = 'If enabled, information will be logged to the Moodle log that can help in identifying problems.';
 $string['cfg_debugmode_key'] = 'Record debug messages';
-$string['cfg_domainhint_desc'] = 'When using the "Authorization Code" authentication method, pass this value as the "domain_hint" parameter. "domain_hint" is used by some OpenID Connect providers to make the login process easier for users. Check with your provider to see whether they support this parameter.';
+$string['cfg_domainhint_desc'] = 'When using the <b>Authorization Code</b> login flow, pass this value as the "domain_hint" parameter. "domain_hint" is used by some OpenID Connect IdP to make the login process easier for users. Check with your provider to see whether they support this parameter.';
 $string['cfg_domainhint_key'] = 'Domain Hint';
 $string['cfg_err_invalidauthendpoint'] = 'Invalid Authorization Endpoint';
 $string['cfg_err_invalidclientid'] = 'Invalid client ID';
 $string['cfg_err_invalidclientsecret'] = 'Invalid client secret';
 $string['cfg_err_invalidtokenendpoint'] = 'Invalid Token Endpoint';
-$string['cfg_field_mapping_desc'] = 'User profile data can be mapped from Open ID Connect identity providers (IdP) to Moodle.<br/>
+$string['cfg_field_mapping_desc'] = 'User profile data can be mapped from Open ID Connect IdP to Moodle.<br/>
 <ul>
 <li>Basic profile data is available from ID tokens from all IdP.</li>
 <li>If Azure AD is used as the IdP, additional profile data can be made available by installing and configuring the <a href="https://moodle.org/plugins/local_o365">Microsoft 365 integration plugin (local_o365)</a>.</li>
@@ -55,6 +56,9 @@ $string['cfg_field_mapping_desc'] = 'User profile data can be mapped from Open I
 </ul>';
 $string['cfg_forceredirect_desc'] = 'If enabled, will skip the login index page and redirect to the OpenID Connect page. Can be bypassed with ?noredirect=1 URL param';
 $string['cfg_forceredirect_key'] = 'Force redirect';
+$string['cfg_frontchannellogouturl_desc'] = 'This is the URL that your IdP needs to trigger when it tries to log users out of Moodle.<br/>
+For Microsoft Azure AD / Microsoft identity platform, the setting is called "Front-channel logout URL" and is configurable in the Azure app.';
+$string['cfg_frontchannellogouturl_key'] = 'Front-channel Logout URL';
 $string['cfg_icon_desc'] = 'An icon to display next to the provider name on the login page.';
 $string['cfg_icon_key'] = 'Icon';
 $string['cfg_iconalt_check'] = 'Checkmark icon';
@@ -72,36 +76,57 @@ $string['cfg_iconalt_stop'] = 'Red circle';
 $string['cfg_iconalt_user'] = 'User icon';
 $string['cfg_iconalt_user2'] = 'User icon alternate';
 $string['cfg_iconalt_userlock'] = 'User with lock icon';
-$string['cfg_loginflow_authcode'] = 'Authorization Code Flow (recommended)';
-$string['cfg_loginflow_authcode_desc'] = 'Using this flow, the user clicks the name of the identity provider (See "Provider Name" above) on the Moodle login page and is redirected to the provider to log in. Once successfully logged in, the user is redirected back to Moodle where the Moodle login takes place transparently. This is the most standardized, secure way for the user log in.';
-$string['cfg_loginflow_key'] = 'Authentication Method';
-$string['cfg_loginflow_rocreds'] = 'Resource Owner Password Credentials Grant';
-$string['cfg_loginflow_rocreds_desc'] = 'Using this flow, the user enters their username and password into the Moodle login form like they would with a manual login. This will authorize the user with the identity provider, but will not create a session on the identity provider\'s site. For example, if using Microsoft 365 with OpenID Connect, the user will be logged in to Moodle but not the Microsoft 365 web applications. Using the authorization request is recommended if you want users to be logged in to both Moodle and the identity provider.  Note that not all identity providers support this flow. This option should only be used when other authorization grant types are not available.';
-$string['cfg_logoutendpoint_desc'] = 'The URI of the logout endpoint from your identity provider to use.';
-$string['cfg_logoutendpoint_key'] = 'Logout Endpoint';
-$string['cfg_oidcresource_desc'] = 'The OpenID Connect resource for which to send the request.';
-$string['cfg_oidcresource_key'] = 'Resource';
-$string['cfg_oidcscope_desc'] = 'The OIDC Scope to use.';
-$string['cfg_oidcscope_key'] = 'Scope';
+$string['cfg_loginflow_authcode'] = 'Authorization Code Flow <b>(recommended)</b>';
+$string['cfg_loginflow_authcode_desc'] = 'Using this flow, the user clicks the name of the IdP (See "Provider Display Name" above) on the Moodle login page and is redirected to the provider to log in. Once successfully logged in, the user is redirected back to Moodle where the Moodle login takes place transparently. This is the most standardized, secure way for the user log in.';
+$string['cfg_loginflow_key'] = 'Login Flow';
+$string['cfg_loginflow_rocreds'] = 'Resource Owner Password Credentials Grant <b>(deprecated)</b>';
+$string['cfg_loginflow_rocreds_desc'] = '<b>This login flow is deprecated and will be removed from the plugin soon.</b><br/>Using this flow, the user enters their username and password into the Moodle login form like they would with a manual login. This will authorize the user with the IdP, but will not create a session on the IdP\'s site. For example, if using Microsoft 365 with OpenID Connect, the user will be logged in to Moodle but not the Microsoft 365 web applications. Using the authorization request is recommended if you want users to be logged in to both Moodle and the IdP. Note that not all IdP support this flow. This option should only be used when other authorization grant types are not available.';
+$string['cfg_logoutendpoint_desc'] = 'The URI of the logout endpoint from your IdP to use.';
+$string['cfg_logoutendpoint_key'] = 'IdP Logout Endpoint';
 $string['cfg_opname_desc'] = 'This is an end-user-facing label that identifies the type of credentials the user must use to login. This label is used throughout the user-facing portions of this plugin to identify your provider.';
-$string['cfg_opname_key'] = 'Provider Name';
-$string['cfg_redirecturi_desc'] = 'This is the URI to register as the "Redirect URI". Your OpenID Connect identity provider should ask for this when registering Moodle as a client. <br /><b>NOTE:</b> You must enter this in your OpenID Connect provider *exactly* as it appears here. Any difference will prevent logins using OpenID Connect.';
+$string['cfg_opname_key'] = 'Provider Display Name';
+$string['cfg_redirecturi_desc'] = 'This is the URI to register as the "Redirect URI". Your OpenID Connect IdP should ask for this when registering Moodle as a client. <br /><b>NOTE:</b> You must enter this in your OpenID Connect IdP *exactly* as it appears here. Any difference will prevent logins using OpenID Connect.';
 $string['cfg_redirecturi_key'] = 'Redirect URI';
-$string['cfg_signoffintegration_desc'] = 'When connecting to Azure AD, if this option is enabled, when a Moodle user using the OpenID Connect authentication method signs off from Moodle, Moodle will attempt to log the user off from Microsoft 365 as well.
-
-Note the URL of Moodle site ({$a}) needs to be added as a redirect URI in the Azure app created for Moodle Microsoft 365 integration.';
-$string['cfg_signoffintegration_key'] = 'Single sign off';
-$string['cfg_tokenendpoint_desc'] = 'The URI of the token endpoint from your identity provider to use.<br/>
-Note if the site is to be configured to allow users from other tenants to access, tenant specific token endpoint cannot be used.';
-$string['cfg_tokenendpoint_key'] = 'Token Endpoint';
-$string['cfg_tools'] = 'Tools';
-$string['cfg_userrestrictioncasesensitive_desc'] = 'This controls if the "/i" option in regular expression is used in the user restriction match.<br/>If enabled, all user restriction checks will be performed as with case sensitive. Note if this is disabled, any patterns on letter cases will be ignored.';
-$string['cfg_userrestrictions_desc'] = 'Only allow users to log in that meet certain restrictions. <br /><b>How to use user restrictions: </b> <ul><li>Enter a <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a> pattern that matches the usernames of users you want to allow.</li><li>Enter one pattern per line</li><li>If you enter multiple patterns a user will be allowed if they match ANY of the patterns.</li><li>The character "/" should be escaped with "\\".</li><li>If you don\'t enter any restrictions above, all users that can log in to the OpenID Connect provider will be accepted by Moodle.</li><li>Any user that does not match any entered pattern(s) will be prevented from logging in using OpenID Connect.</li></ul>';
+$string['cfg_signoffintegration_desc'] = 'If the option is enabled, when a Moodle user connected to the configured IdP logs out of Moodle, the integration will trigger a request at the logout endpiont below, attempting to log the user off from IdP as well.<br/>
+Note for integration with Microsoft Azure AD, the URL of Moodle site ({$a}) needs to be added as a redirect URI in the Azure app created for Moodle and Microsoft 365 integration.';
+$string['cfg_signoffintegration_key'] = 'Single Sign Out (from Moodle to IdP)';
+$string['cfg_userrestrictions_desc'] = 'Only allow users to log in that meet certain restrictions. <br /><b>How to use user restrictions: </b> <ul><li>Enter a <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a> pattern that matches the usernames of users you want to allow.</li><li>Enter one pattern per line</li><li>If you enter multiple patterns a user will be allowed if they match ANY of the patterns.</li><li>The character "/" should be escaped with "\\".</li><li>If you don\'t enter any restrictions above, all users that can log in to the OpenID Connect IdP will be accepted by Moodle.</li><li>Any user that does not match any entered pattern(s) will be prevented from logging in using OpenID Connect.</li></ul>';
 $string['cfg_userrestrictions_key'] = 'User Restrictions';
+$string['cfg_userrestrictionscasesensitive_desc'] = 'This controls if the "/i" option in regular expression is used in the user restriction match.<br/>If enabled, all user restriction checks will be performed as with case sensitive. Note if this is disabled, any patterns on letter cases will be ignored.';
 $string['cfg_userrestrictionscasesensitive_key'] = 'User Restrictions Case Sensitive';
 $string['cleanup_oidc_tokens'] = 'Cleanup OpenID Connect tokens';
+$string['clientauthmethod'] = 'Client authentication method';
+$string['clientauthmethod_help'] = '<ul>
+<li>IdP in all types can use "<b>Secret</b>" authentication method.</li>
+<li>IdP in <b>Microsoft identity platform (v2.0)</b> type can additionally use <b>Certificate</b> authentication method.</li>
+</ul>
+Note <b>Certificate</b> authentication method is not supported in <b>Resource Owner Password Credentials Grant</b> login flow.';
+$string['clientcert'] = 'Client certificate public key';
+$string['clientcert_help'] = 'When using <b>certificate</b> authentication method, this is the public key, or certificate, used in to authenticate with IdP.';
+$string['clientid'] = 'Application ID';
+$string['clientid_help'] = 'Your registered Application / Client ID on the IdP.';
+$string['clientprivatekey'] = 'Client certificate private key';
+$string['clientprivatekey_help'] = 'When using <b>certificate</b> authentication method, this is the private key of the certificate used to authenticate with IdP.';
+$string['clientsecret'] = 'Client Secret';
+$string['clientsecret_help'] = 'When using <b>secret</b> authentication method, this is the client secret on the IdP. On some providers, it is also referred to as a key.';
 $string['delete_token'] = 'Delete token';
 $string['delete_token_and_reference'] = 'Delete token and reference';
+$string['error_empty_client_cert'] = 'Client certificate public key cannot be empty when using "certificate" authentication method';
+$string['error_empty_client_private_key'] = 'Client certificate private key cannot be empty when using "certificate" authentication method';
+$string['error_empty_client_secret'] = 'Client secret cannot be empty when using "secret" authentication method';
+$string['error_empty_oidcresource'] = 'Resource cannot be empty when using Azure AD (v1.0) or other types of IdP.';
+$string['error_empty_tenantname_or_guid'] = 'Tenant name or GUID cannot be empty when using "certificate" authentication method';
+$string['error_endpoint_mismatch_auth_endpoint'] = 'The configured authorization endpoint does not match configured IdP type.<br/>
+<ul>
+<li>When using "Azure AD (v1.0)" IdP type, use v1.0 endpoint, e.g. https://login.microsoftonline.com/common/oauth2/authorize</li>
+<li>When using "Microsoft identity platform (v2.0)" IdP type, use v2.0 endpoint, e.g. https://login.microsoftonline.com/common/oauth2/v2.0/authorize</li>
+</ul>';
+$string['error_endpoint_mismatch_token_endpoint'] = 'The configured token endpoint does not match configured IdP type.<br/>
+<ul>
+<li>When using "Azure AD (v1.0)" IdP type, use v1.0 endpoint, e.g. https://login.microsoftonline.com/common/oauth2/token</li>
+<li>When using "Microsoft identity platform (v2.0)" IdP type, use v2.0 endpoint, e.g. https://login.microsoftonline.com/common/oauth2/v2.0/authorize</li>
+</ul>';
+$string['error_invalid_client_authentication_method'] = 'Invalid client authentication method';
 $string['errorauthdisconnectemptypassword'] = 'Password cannot be empty';
 $string['errorauthdisconnectemptyusername'] = 'Username cannot be empty';
 $string['errorauthdisconnectifmanual'] = 'If using the manual login method, enter credentials below.';
@@ -111,9 +136,9 @@ $string['errorauthdisconnectusernameexists'] = 'That username is already taken. 
 $string['errorauthgeneral'] = 'There was a problem logging you in. Please contact your administrator for assistance.';
 $string['errorauthinvalididtoken'] = 'Invalid id_token received.';
 $string['errorauthloginfailednouser'] = 'Invalid login: User not found in Moodle. If this site has the "authpreventaccountcreation" setting enabled, this may mean you need an administrator to create an account for you first.';
+$string['errorauthnoaccesstoken'] = 'Access token not received.';
 $string['errorauthnoauthcode'] = 'No authorization code was received from the identity server. The error logs may have more information.';
-$string['errorauthnocreds'] = 'Please configure OpenID Connect client credentials.';
-$string['errorauthnoendpoints'] = 'Please configure OpenID Connect server endpoints.';
+$string['errorauthnocredsandendpoints'] = 'Please configure OpenID Connect client credentials and endpoints.';
 $string['errorauthnohttpclient'] = 'Please set an HTTP client.';
 $string['errorauthnoidtoken'] = 'OpenID Connect id_token not received.';
 $string['errorauthunknownstate'] = 'Unknown state.';
@@ -146,6 +171,31 @@ $string['eventuserconnected'] = 'User connected to OpenID Connect';
 $string['eventusercreated'] = 'User created with OpenID Connect';
 $string['eventuserdisconnected'] = 'User disconnected from OpenID Connect';
 $string['eventuserloggedin'] = 'User Logged In with OpenID Connect';
+$string['heading_additional_options'] = 'Additional options';
+$string['heading_additional_options_desc'] = '';
+$string['heading_basic'] = 'Basic settings';
+$string['heading_basic_desc'] = '';
+$string['heading_debugging'] = 'Debugging';
+$string['heading_debugging_desc'] = '';
+$string['heading_display'] = 'Display';
+$string['heading_display_desc'] = '';
+$string['heading_sign_out'] = 'Sign out integration';
+$string['heading_sign_out_desc'] = '';
+$string['heading_user_restrictions'] = 'User restrictions';
+$string['heading_user_restrictions_desc'] = '';
+$string['idp_type_azuread'] = 'Azure AD (v1.0)';
+$string['idp_type_microsoft'] = 'Microsoft identity platform (v2.0)';
+$string['idp_type_other'] = 'Other';
+$string['idptype'] = 'Identity Provider (IdP) Type';
+$string['idptype_help'] = 'Three types of IdP are current supports:
+<ul>
+<li><b>Azure AD (v1.0)</b>: Azure AD with oauth2 v1.0 endpoints, e.g. https://login.microsoftonline.com/common/oauth2/authorize.</li>
+<li><b>Microsoft identity platform (v2.0)</b>: Azure AD with oath2 v2.0 endpoints, e.g. https://login.microsoftonline.com/common/oauth2/v2.0/authorize.</li>
+<li><b>Other</b>: any non Azure AD IdP.</li>
+</ul>
+The differences between <b>Azure AD (v1.0)</b> and <b>Microsoft identity platform (v2.0)</b> options can be found at <a href="https://docs.microsoft.com/en-us/azure/active-directory/azuread-dev/azure-ad-endpoint-comparison">https://docs.microsoft.com/en-us/azure/active-directory/azuread-dev/azure-ad-endpoint-comparison</a>.<br/>
+Notably, the configured application can use <b>certificate</b> besides <b>secret</b> for authentication when using <b>Microsoft identity platform (v2.0)</b> IdP.<br/>
+Authorization and token endpoints need to be configured according to the configured IdP type.';
 $string['mismatched'] = 'Mismatched';
 $string['mismatched_details'] = 'Token record contains username "{$a->tokenusername}"; matched Moodle user has username "{$a->moodleusername}".';
 $string['na'] = 'n/a';
@@ -153,6 +203,11 @@ $string['no_token_to_cleanup'] = 'There are no OIDC token to cleanup.';
 $string['oidc:manageconnection'] = 'Allow OpenID Connection and Disconnection';
 $string['oidc:manageconnectionconnect'] = 'Allow OpenID Connection';
 $string['oidc:manageconnectiondisconnect'] = 'Allow OpenID Disconnection';
+$string['oidcresource'] = 'Resource';
+$string['oidcresource_help'] = 'The OpenID Connect resource for which to send the request.<br/>
+<b>Note</b> this is paramater is not supported in <b>Microsoft identity platform (v2.0)</b> IdP type.';
+$string['oidcscope'] = 'Scope';
+$string['oidcscope_help'] = 'The OIDC Scope to use.';
 $string['pluginname'] = 'OpenID Connect';
 $string['privacy:metadata:auth_oidc'] = 'OpenID Connect Authentication';
 $string['privacy:metadata:auth_oidc_prevlogin'] = 'Previous login methods to undo Microsoft 365 connections';
@@ -210,6 +265,14 @@ $string['settings_fieldmap_field_surname'] = 'Surname';
 $string['settings_fieldmap_field_teams'] = 'Teams';
 $string['settings_fieldmap_field_telephoneNumber'] = 'Telephone Number';
 $string['settings_fieldmap_field_userPrincipalName'] = 'Username (UPN)';
+$string['settings_page_application'] = 'IdP and authentication';
+$string['settings_page_cleanup_oidc_tokens'] = 'Cleanup OpenID Connect tokens';
+$string['settings_page_field_mapping'] = 'Filed mappings';
+$string['settings_page_other_settings'] = 'Other options';
+$string['settings_section_authentication'] = 'Authentication';
+$string['settings_section_basic'] = 'Basic settings';
+$string['settings_section_endpoints'] = 'Endpoints';
+$string['settings_section_other_params'] = 'Other parameters';
 $string['table_action'] = 'Action';
 $string['table_matching_details'] = 'Details';
 $string['table_matching_status'] = 'Matching status';
@@ -217,7 +280,12 @@ $string['table_oidc_username'] = 'OIDC username';
 $string['table_token_id'] = 'Token record ID';
 $string['table_token_unique_id'] = 'OIDC unique ID';
 $string['task_cleanup_oidc_state_and_token'] = 'Clean up OIDC state and invalid token';
+$string['tenantnameorguid'] = 'Tenant name or GUID';
+$string['tenantnameorguid_help'] = 'Don\'t include https:// if use tenant name.';
 $string['token_deleted'] = 'Token was deleted successfully';
+$string['tokenendpoint'] = 'Token Endpoint';
+$string['tokenendpoint_help'] = 'The URI of the token endpoint from your IdP to use.<br/>
+Note if the site is to be configured to allow users from other tenants to access, tenant specific token endpoint cannot be used.';
 $string['ucp_disconnect_details'] = 'This will disconnect your Moodle account from {$a}. You\'ll need to create a username and password to log in to Moodle.';
 $string['ucp_disconnect_title'] = '{$a} Disconnection';
 $string['ucp_general_intro'] = 'Here you can manage your connection to {$a}. If enabled, you will be able to use your {$a} account to log in to Moodle instead of a separate username and password. Once connected, you\'ll no longer have to remember a username and password for Moodle, all log-ins will be handled by {$a}.';

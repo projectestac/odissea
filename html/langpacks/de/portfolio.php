@@ -37,7 +37,9 @@ $string['callbackclassinvalid'] = 'Die festgelegte Rückfrageklass war ungültig
 $string['callercouldnotpackage'] = 'Fehler beim Packen Ihrer Export-Daten: {$a}';
 $string['cannotsetvisible'] = 'Kann nicht auf sichtbar gesetzt werden. Plugin wurde vollständig deaktiviert, da eine Fehlkonfiguration entdeckt wurde.';
 $string['commonportfoliosettings'] = 'Grundeinstellungen';
-$string['commonsettingsdesc'] = '<p>Wenn ein Transfer bestätigt wird mit der Feststellung, dass es moderat oder evtl. hohen Zeitumfang benötigt, weiß man nicht, ob Teilnehmende die Zeit haben darauf zu warten, bis er vollständig ist oder nicht. </p><p> Größen bis moderat werden ausgeführt, ohne Nutzende zu fragen. Ist der Datentransfer größer kann dem Nutzer angeboten werden, ihn zu informieren, dass es länger dauern kann. </p><p>Einige Plugintypen werden diesen Mechanismus ignorieren und den Datentransfer in die Warteliste einreihen. </p>';
+$string['commonsettingsdesc'] = '<p>Ob eine Übertragung als "mittel" oder "hoch" betrachtet wird, hängt davon ab, ob die Person auf den Abschluss der Übertragung warten kann oder nicht.</p>
+<p>Größen unter dem Schwellenwert von "mittel" werden sofort gestartet, ohne dass die Nutzer/innen gefragt werden. Übertragungen mit "mittel" und "hoch" bedeuten, dass die Option zusammen mit einer Warnung angeboten wird, dass es einige Zeit dauern kann.</p>
+<p>Einige Portfolio-Plugins ignorieren diese Option vollständig und erzwingen, dass alle Übertragungen in die Warteschlange gestellt werden.</p>';
 $string['configexport'] = 'Exportierte Daten konfigurieren';
 $string['configplugin'] = 'Portfolio-Plugin konfigurieren';
 $string['configure'] = 'Konfigurieren';

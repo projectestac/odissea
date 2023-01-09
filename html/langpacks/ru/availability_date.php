@@ -31,6 +31,7 @@ $string['direction_before'] = 'Дата';
 $string['direction_from'] = 'от';
 $string['direction_label'] = 'Направление';
 $string['direction_until'] = 'до';
+$string['error_dateconflict'] = 'Конфликты с другими ограничениями даты';
 $string['full_from'] = 'После <strong>{$a}</strong>';
 $string['full_from_date'] = 'с или после <strong>{$a}</strong>';
 $string['full_until'] = 'До <strong>{$a}</strong>';

@@ -43,3 +43,4 @@ $string['pluginnameadding'] = 'Creazione domanda Risposta breve';
 $string['pluginnameediting'] = 'Modifica domanda Risposta breve';
 $string['pluginnamesummary'] = 'Consente la risposta con una o più parole. La valutazione avviene confrontando la risposta con modelli di risposta che possono anche contenere caratteri jolly.';
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Risposta breve\' non memorizza dati personali.';
+$string['privacy:preference:defaultmark'] = 'Punteggio di default di una specifica domanda.';

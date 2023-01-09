@@ -38,7 +38,7 @@ $string['asyncemailenable'] = 'تمكين إشعارات الرسائل';
 $string['asyncemailenabledetail'] = 'إذا تم تمكينه، سيتلقى المستخدمون رسالة عندما تكتمل لديهم مهمات الحفظ الاحتياطي اللامتزامن أو الاستعادة اللامتزامنة.';
 $string['asyncgeneralsettings'] = 'حفظ احتياطي/استعادة لا متزامنة';
 $string['asyncmessagebody'] = 'الرسالة';
-$string['asyncmessagebodydefault'] = 'مرحباً {user_firstname}،<br/> مهمتك {operation} (ID: {backupid}) قد اكتملت بنجاح. <br/><br/>يمكنك معاينتها هنا: {link}.';
+$string['asyncmessagebodydefault'] = 'مهمتك {operation} (ID: {backupid}) قد اكتملت بنجاح. يمكنك معاينتها هنا:<a href="{link}">{link}</a>.';
 $string['asyncmessagebodydetail'] = 'الرسالة التي ترُسل عندما تكتمل مهمة الحفظ الاحتياطي اللامتزامنة أو الاستعادة اللامتزامنة.';
 $string['asyncmessagesubject'] = 'الموضوع';
 $string['asyncmessagesubjectdefault'] = '{operation} أكملها مودل بنجاح';
@@ -172,7 +172,7 @@ $string['copycoursedesc'] = 'هذا المقرر الدراسي ستصير له 
 $string['copycourseheading'] = 'إنسخ مقرراً دراسياً';
 $string['copycoursetitle'] = 'إنسخ المقرر الدراسي: {$a}';
 $string['copydest'] = 'الموضع المقصود';
-$string['copyfieldnotfound'] = 'لم يتم العثور على حقلٍ مطلوب';
+$string['copyfieldnotfound'] = 'لم يتم العثور على بيانات مطلوبة بالنسبة للحقل/الحقول: {$a}';
 $string['copyformfail'] = 'فشِل تسليم نموذج نسخ المقرر بتقنية AJAX.';
 $string['copyingcourse'] = 'نَسْخُ المقرر الدراسي قيد التنفيذ';
 $string['copyingcourseshortname'] = 'النَّسْخُ جارٍ';

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['beginanswernotfound'] = 'Não foi possível encontrar o carácter obrigatório "{" no conteúdo importado do ficheiro.';
-$string['endanswernotfound'] = 'Não foi possível encontrar o carácter obrigatório "}" no conteúdo importado do ficheiro.';
+$string['beginanswernotfound'] = 'Não foi possível encontrar o caráter obrigatório "{" no conteúdo do ficheiro importado.';
+$string['endanswernotfound'] = 'Não foi possível encontrar o caráter obrigatório "}" no conteúdo do ficheiro importado.';
 $string['noanswerfound'] = 'Não foram encontradas respostas à pergunta';
 $string['pluginname'] = 'Formato palavra em falta';
 $string['pluginname_help'] = 'O formato Palavra em falta permite importar perguntas via ficheiro de texto.';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo Data';
+$string['fieldtypelabel'] = 'Data';
 $string['pluginname'] = 'Data';
-$string['privacy:metadata'] = 'Il plugin campo "Data" non memorizza dati personali, utilizza tabelle definite in mod_data.';
+$string['privacy:metadata'] = 'Il plugin campo \'Data\' non memorizza dati personali, utilizza tabelle definite in mod_data.';

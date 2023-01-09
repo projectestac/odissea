@@ -54,6 +54,7 @@ $string['add_one'] = 'أضف (واحدة)';
 $string['addmultiplesessions'] = 'إضافة محاضرات متعددة';
 $string['addsession'] = 'أضف محاضرة';
 $string['allclasses'] = 'كل الصفوف';
+$string['allgrouping'] = 'كل المجموعات';
 $string['allstudents'] = 'كل الطلاب';
 $string['alltaken'] = 'كل الرصد';
 $string['attendance'] = 'الحضور';

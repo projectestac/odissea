@@ -102,21 +102,21 @@ $string['nosuchrole'] = 'Questo ruolo non esiste: \'{$a}\'';
 $string['objectclass'] = 'L\'objectClass LDAP utilizzata per cercare i corsi, ad esempio \'group\' o \'posixGroup\'.';
 $string['objectclass_key'] = 'Object class';
 $string['ok'] = 'OK!';
-$string['opt_deref'] = 'Se l\'appartenenza al gruppo contiene <i>distinguished names</i>, specificare come gestire gli alias durante la ricerca. E\' possibile selezionare uno dei seguenti valori: \'No\' (LDAP_DEREF_NEVER) oppure \'Si\' (LDAP_DEREF_ALWAYS).';
+$string['opt_deref'] = 'Se l\'appartenenza al gruppo contiene <i>distinguished names</i>, specificare come gestire gli alias durante la ricerca. È possibile selezionare uno dei seguenti valori: \'No\' (LDAP_DEREF_NEVER) oppure \'Si\' (LDAP_DEREF_ALWAYS).';
 $string['opt_deref_key'] = 'Dereference alias';
 $string['phpldap_noextension'] = 'Il modulo PHP LDAP non risulta installato. Per usare questo plugin è necessario accertarsi che il modulo sia installato ed abilitato.';
 $string['pluginname'] = 'Iscrizioni LDAP';
-$string['pluginname_desc'] = '<p>E\' possibile usare un server LDAP per gestire le iscrizioni ai corsi. Per funzionare l\'albero LDAP deve contenere i gruppi corrispondenti ai corsi e all\'interno di ciascun gruppo devono essere elencati gli utenti da iscrivere.</p>
+$string['pluginname_desc'] = '<p>È possibile usare un server LDAP per gestire le iscrizioni ai corsi. Per funzionare l\'albero LDAP deve contenere i gruppi corrispondenti ai corsi e all\'interno di ciascun gruppo devono essere elencati gli utenti da iscrivere.</p>
 <p>All\'interno dei gruppi LDAP, ciascuno dei quali rappresenta un corso,  gli utenti da iscrivere saranno elencati tramite un campo contenente l\'identificativo univoco dell\'utente (es. <em>member</em> o <em>memberUid</em>).</p>
 <p>Per poter utilizzare le iscrizioni LDAP gli utenti <strong>devono</strong>
 avere un campo \'idnumber\' valido. I gruppi LDAP devono avere questo idnumber nei campi <em>member</em> per gli utenti da iscrivere.</p>
 <p>Questo metodo di iscrizione ai corsi darà i migliori risultati se utilizzato in abbinamento all\'autenticazione LDAP.</p>
-<p>Le iscrizioni ai corsi in Moodle verranno aggiornate durante l\'autenticazione degli utenti. E\' anche possibile eseguire  uno script per tenere le iscrizioni ai corsi sincronizzate tra Moodle e LDAP. Maggiori informazioni in
+<p>Le iscrizioni ai corsi in Moodle verranno aggiornate durante l\'autenticazione degli utenti. È anche possibile eseguire  uno script per tenere le iscrizioni ai corsi sincronizzate tra Moodle e LDAP. Maggiori informazioni in
 <em>enrol/ldap/cli/enrol_ldap_sync.php</em>.</p>
 <p>Questo plugin può anche creare  automaticamente nuovi corsi in presenza di nuovi gruppi in LDAP.</p>';
 $string['pluginnotenabled'] = 'Il plugin non è abilitato!';
 $string['privacy:metadata'] = 'Il plugin di iscrizione "iscrizioni LDAP" non memorizza dati personali.';
-$string['role_mapping'] = '<p>Per ciascun ruolo che si desidera assegnare tramite LDAP, si deve specificare l\'elenco dei contesti dove si trovano i gruppi di corsi. E\' possibile separare contesti diversi con \';\'.</p><p>Si deve anche specificare l\'attributo LDAP contenente i membri del gruppo, ad esempio \'member\' oppure \'memberUid\'</p>';
+$string['role_mapping'] = '<p>Per ciascun ruolo che si desidera assegnare tramite LDAP, si deve specificare l\'elenco dei contesti dove si trovano i gruppi di corsi. È possibile separare contesti diversi con \';\'.</p><p>Si deve anche specificare l\'attributo LDAP contenente i membri del gruppo, ad esempio \'member\' oppure \'memberUid\'</p>';
 $string['role_mapping_attribute'] = 'Attributo LDAP member per {$a}';
 $string['role_mapping_context'] = 'Contesti LDAP per {$a}';
 $string['role_mapping_key'] = 'Mappa ruoli da LDAP';

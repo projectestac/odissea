@@ -45,4 +45,4 @@ $string['pluginnameediting'] = 'Modifica domanda Corrispondenza';
 $string['pluginnamesummary'] = 'La risposta a ciascuna sotto domanda deve essere selezionata da un elenco di risposte possibili.';
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Corrispondenza\' non memorizza dati personali.';
 $string['shuffle'] = 'Mescola';
-$string['shuffle_help'] = 'Ogni volta che lo studente tenterà un quiz contenente questa domanda, l\'ordine delle possibili alternative verrà mescolato casualmente - sempre che l\'impostazione del Quiz "Alternative in ordine casuale" sia abilitata.';
+$string['shuffle_help'] = 'Ogni volta che lo studente tenterà il quiz, le domande saranno presentate in ordine casuale  contenente questa domanda, l\'ordine delle possibili risposte sarà casuale - sempre che l\'impostazione del Quiz "Domande in ordine casuale" sia abilitata. In una domanda di tipo Corrispondenza, solo le domande saranno influenzate da questa impostazione. La possibili risposte saranno sempre ordinate casualmente.';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo Indirizzo Web (URL)';
+$string['fieldtypelabel'] = 'URL';
 $string['openlinkinnewwindow'] = 'Apri il link in una nuova finestra';
 $string['pluginname'] = 'URL';
-$string['privacy:metadata'] = 'Il plugin campo "Indirizzo Web (URL)" non memorizza dati personali, utilizza tabelle definite in mod_data.';
+$string['privacy:metadata'] = 'Il plugin campo URL non memorizza dati personali, utilizza tabelle definite in mod_data.';

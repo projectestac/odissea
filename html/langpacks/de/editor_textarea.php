@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Einfacher Text';
-$string['privacy:metadata'] = 'Das Plugin "Texteditor für einfachen Text" speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Der "Texteditor für einfachen Text" speichert keine personenbezogenen Daten.';

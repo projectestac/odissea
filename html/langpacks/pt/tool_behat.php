@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aim'] = 'Esta ferramenta de administração ajuda os programadores e criadores de testes a criar ficheiros \'.feature\' que descrevem as funcionalidades do Moodle e executá-los automaticamente.
+$string['aim'] = 'Esta ferramenta de administração ajuda os programadores e criadores de testes a criarem ficheiros \'.feature\' que descrevem as funcionalidades do Moodle e executá-los automaticamente.
 Os procedimentos disponíveis para utilização em ficheiros \'.feature\' encontram-se listados abaixo.';
 $string['allavailablesteps'] = 'Todas as definições disponíveis da etapa';
 $string['errorapproot'] = '$CFG->behat_ionic_dirroot não está apontar para uma instalação válida do programador da Aplicação móvel Moodle.';
@@ -38,7 +38,7 @@ $string['fieldvalueargument'] = 'Argumentos do valor do campo';
 $string['fieldvalueargument_help'] = 'Este argumento deve ser completo por um valor de campo. Existem muitos tipos de campos, incluindo campos simples como as caixas de seleção ou áreas de texto, ou mais complexos como os selecionadores de datas. Para mais detalhes sobre os valores de campo esperados, consulte a documentação de desenvolvimento sobre \'<a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">teste de aceitação</a>\'.';
 $string['giveninfo'] = 'Dado: Processos para configurar o ambiente';
 $string['infoheading'] = 'Informação';
-$string['installinfo'] = 'Aceda a {$a} para obter informação sobre instalação e execução de testes';
+$string['installinfo'] = 'Aceda a {$a} para obter informações sobre como instalar e executar os testes';
 $string['newstepsinfo'] = 'Aceda a {$a} para obter informações sobre como adicionar novas definições de etapa';
 $string['newtestsinfo'] = 'Aceda a {$a} para obter informações sobre como executar novos testes';
 $string['nostepsdefinitions'] = 'Não existem definições da etapa que correspondam a este filtro';
@@ -53,7 +53,7 @@ $string['unknownexceptioninfo'] = 'Houve um problema com o Selenium ou com o nav
 $string['viewsteps'] = 'Filtro';
 $string['warndirrootconfigfound'] = 'Um ficheiro de configuração foi encontrado em {$a}. Este ficheiro não é atualizado automaticamente e pode tornar-se obsoleto. Recomenda-se que apague o ficheiro.';
 $string['wheninfo'] = 'Quando. Ação que provoca um evento';
-$string['wrongbehatsetup'] = 'Algo de errado se passa com a configuração Behat e, por isso, as definições não podem ser listadas: <b>{$a->errormsg}</b><br/><br/>Por favor, verifique:<ul>
+$string['wrongbehatsetup'] = 'Existe um erro na configuração Behat e, por isso, as definições não podem ser listadas: <b>{$a->errormsg}</b><br/><br/>Por favor, verifique:<ul>
 <li>$CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot estão definidos em config.php com diferentes valores de $CFG->dataroot, $CFG->prefix e $CFG->wwwroot.</li>
 <li>Executou "{$a->behatinit}" a partir da sua diretoria-raiz Moodle.</li>
 <li>As dependências estão instaladas em vendor/ e o ficheiro {$a->behatcommand} tem permissões de execução.</li></ul>';

@@ -36,7 +36,7 @@ $string['autologinnotallowedtoadmins'] = 'サイト管理への自動ログイ�
 $string['cachedef_plugininfo'] = 'モバイルアドオンのプラグイン一覧';
 $string['cachedef_subscriptiondata'] = 'ここではMoodleアプリサブスクリプション情報を保存します。';
 $string['clickheretolaunchtheapp'] = 'アプリが自動的に開かない場合、ここをクリックしてください。';
-$string['configmobilecssurl'] = 'あなたのモバイルアプリインターフェースをカスタマイズするためのCSSファイルです。';
+$string['configmobilecssurl'] = 'あなたのモバイルアプリインタフェースをカスタマイズするためのCSSファイルです。';
 $string['customlangstrings'] = 'カスタム言語設定';
 $string['customlangstrings_desc'] = 'アプリに表示される単語またはフレーズをここでカスタマイズできます。それぞれのカスタム言語ストリングを次のフォーマットで新しい行に入力してください: パイプ文字「|」で分けられたストリングID、カスタム言語ストリングおよび言語コード。例えば次のようになります:
 <pre>

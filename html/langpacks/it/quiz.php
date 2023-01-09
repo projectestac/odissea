@@ -159,10 +159,10 @@ $string['cannotstartmissingquestion'] = 'Non è possibile avviare tentativi del 
 $string['cannotstartnoquestions'] = 'Non è possibile avviare un tentativo. Il quiz non è stato impostato. Non è stata aggiunta nessuna domanda.';
 $string['cannotwrite'] = 'Non è possibile scrivere il file da esportare ({$a})';
 $string['canredoquestions'] = 'Consenti di riprovare durante il tentativo';
-$string['canredoquestions_desc'] = 'Consente di visualizzare il pulsante "Riprova" dopo che lo studente ha dato una risposta alla domanda. Gli studenti potranno così rispondere ad un\'altra versione della stessa domanda senza dover terminare il tentativo in svolgimento e cominciarne un altro. L\'impostazione è particolarmente utile per i quiz di prova.
+$string['canredoquestions_desc'] = 'Consente di visualizzare il pulsante \'Riprova\' dopo che lo studente ha dato una risposta alla domanda. Gli studenti potranno così rispondere ad una domanda simile (selezionata a caso) senza dover terminare il tentativo in svolgimento e cominciarne un altro. L\'impostazione è particolarmente utile per i quiz di prova.
 
 L\'impostazione ha effetto solo sulle domande e sui comportamenti delle domande dove lo studente può rispondere compiutamente senza dover inviare il tentativo. A titolo di esempio, non sono supportati i comportamenti di tipo Feedback immediato e Interattivo con tentativi multipli e le domande di tipo componimento.';
-$string['canredoquestions_help'] = 'Consente di visualizzare il pulsante "Riprova" dopo che lo studente ha dato una risposta alla domanda. Gli studenti potranno così rispondere ad un\'altra versione della stessa domanda senza dover terminare il tentativo in svolgimento e cominciarne un altro. L\'impostazione è particolarmente utile per i quiz di prova.
+$string['canredoquestions_help'] = 'Consente di visualizzare il pulsante \'Riprova\' dopo che lo studente ha dato una risposta alla domanda. Gli studenti potranno così rispondere ad una domanda simile (selezionata a caso) senza dover terminare il tentativo in svolgimento e cominciarne un altro. L\'impostazione è particolarmente utile per i quiz di prova.
 
 L\'impostazione ha effetto solo sulle domande e sui comportamenti delle domande dove lo studente può rispondere compiutamente senza dover inviare il tentativo. A titolo di esempio, non sono supportati i comportamenti di tipo Feedback immediato e Interattivo con tentativi multipli e le domande di tipo componimento.';
 $string['canredoquestionsyes'] = 'Gli studenti hanno la possibilità di provare un\'altra domanda';
@@ -207,7 +207,7 @@ $string['configdelay2'] = 'Lo studente dovrà aspettare per  tempo impostato pri
 $string['configdelaylater'] = 'Lo studente dovrà aspettare per  tempo impostato prima di ritentare il quiz per la terza volta o per le volte successive.';
 $string['configeachattemptbuildsonthelast'] = 'Consentendo tentativi multipli  ogni nuovo tentativo conterrà i risultati del tentativo precedente.';
 $string['configgrademethod'] = 'La strategia di valutazione da usare per calcolare il voto finale se il quiz consente più tentativi.';
-$string['configintro'] = 'I valori impostati sotto saranno i valori di default per o nuovi quiz. E\' anche possibile stabilire quali impostazioni siano da considerarsi "avanzate".';
+$string['configintro'] = 'I valori impostati sotto saranno i valori di default per o nuovi quiz. È anche possibile stabilire quali impostazioni siano da considerarsi "avanzate".';
 $string['configmaximumgrade'] = 'Il voto di default rispetto al quale sarà rapportato il voto del quiz.';
 $string['confignavmethod'] = 'Con la navigazione libera è possibile rispondere alle domande in qualsiasi ordine. Con la navigazione sequenziale le risposte dovranno essere date secondo l\'ordine impostato';
 $string['confignewpageevery'] = 'Quando si aggiungono domande a un quiz, in base a questa impostazione saranno inseriti automaticamente dei salti di pagina .';
@@ -223,7 +223,7 @@ $string['configshufflewithin'] = 'Abilita la modifica casuale  dell\'ordine dell
 $string['configtimelimit'] = 'Tempo massimo di default (espresso minuti) per rispondere ai quiz. 0 significa senza tempo massimo.';
 $string['configtimelimitsec'] = 'Tempo massimo di default, espresso in  secondi, per rispondere ai quiz. 0 significa nessun tempo massimo.';
 $string['configurerandomquestion'] = 'Configura domanda';
-$string['confirmclose'] = 'Stai per completare questo tentativo. Una volta chiuso il tentativo non potrai più modificare le risposte.';
+$string['confirmclose'] = 'Stai per inviare e terminare il tentativo. Una volta inviato, le risposte date non potranno più essere modificate.';
 $string['confirmremovequestion'] = 'Sei sicuro di rimuovere la domanda {$a}?';
 $string['confirmremovesectionheading'] = 'Sei sicuro di rimuovere l\'intestazione della sezione \'{$a}\'?';
 $string['confirmserverdelete'] = 'Sei sicuro di voler rimuovere il server <b>{$a}</b> dalla lista?';
@@ -256,7 +256,7 @@ $string['createmultiple'] = 'Aggiungi al quiz molte domande casuali';
 $string['createnewquestion'] = 'Crea una nuova domanda';
 $string['createquestionandadd'] = 'Crea una nuova domanda ed aggiungila al quiz.';
 $string['custom'] = 'Formato personalizzato';
-$string['dataitemneed'] = 'E\' necessario aggiungere almeno un insieme di elementi per ottenere una domanda valida';
+$string['dataitemneed'] = 'È necessario aggiungere almeno un insieme di elementi per ottenere una domanda valida';
 $string['datasetdefinitions'] = 'Definizioni dei dataset riusabili per la categoria {$a}';
 $string['datasetnumber'] = 'Numero';
 $string['daysavailable'] = 'Giorni disponibili';
@@ -342,22 +342,22 @@ $string['errornotnumbers'] = 'Errore - le risposte devono essere numeriche';
 $string['errorunexpectedevent'] = 'Rilevato l\'inatteso codice evento {$a->event} per la domanda {$a->questionid} nel tentativo {$a->attemptid}.';
 $string['essay'] = 'Risposta a Testo libero';
 $string['essayquestions'] = 'Domande';
-$string['eventattemptdeleted'] = 'Eliminato tentativo qiuz';
-$string['eventattemptpreviewstarted'] = 'Avviata anteprima tentativo quiz';
-$string['eventattemptreviewed'] = 'Effettuata revisione tentativo quiz';
-$string['eventattemptsummaryviewed'] = 'Visualizzato riepilogo del quiz';
-$string['eventattemptviewed'] = 'Visualizzato tentativo quiz';
-$string['eventeditpageviewed'] = 'Visualizzata pagina modifica quiz';
-$string['eventoverridecreated'] = 'Creata personalizzazione quiz';
-$string['eventoverridedeleted'] = 'Eliminata personalizzazione quiz';
-$string['eventoverrideupdated'] = 'Eliminata personalizzazione quiz';
-$string['eventquestionmanuallygraded'] = 'Valutata domanda manualmente';
-$string['eventquizattemptabandoned'] = 'Abbandonato tentativo quiz';
-$string['eventquizattemptregraded'] = 'Rivalutato tentativo quiz';
-$string['eventquizattemptstarted'] = 'Avviato tentativo quiz';
-$string['eventquizattemptsubmitted'] = 'Inviato tentativo quiz';
-$string['eventquizattempttimelimitexceeded'] = 'Superato tempo limite tentativo quiz';
-$string['eventreportviewed'] = 'Visualizzato report quiz';
+$string['eventattemptdeleted'] = 'Eliminazione tentativo qiuz';
+$string['eventattemptpreviewstarted'] = 'Avvio anteprima tentativo quiz';
+$string['eventattemptreviewed'] = 'Revisione tentativo quiz';
+$string['eventattemptsummaryviewed'] = 'Visualizzazione riepilogo del quiz';
+$string['eventattemptviewed'] = 'Visualizzazione tentativo quiz';
+$string['eventeditpageviewed'] = 'Visualizzazione pagina modifica quiz';
+$string['eventoverridecreated'] = 'Creazione personalizzazione quiz';
+$string['eventoverridedeleted'] = 'Eliminazione personalizzazione quiz';
+$string['eventoverrideupdated'] = 'Eliminazione personalizzazione quiz';
+$string['eventquestionmanuallygraded'] = 'Valutazione domanda manualmente';
+$string['eventquizattemptabandoned'] = 'Abbandono tentativo quiz';
+$string['eventquizattemptregraded'] = 'Rivalutazione tentativo quiz';
+$string['eventquizattemptstarted'] = 'Avvio tentativo quiz';
+$string['eventquizattemptsubmitted'] = 'Consegna tentativo quiz';
+$string['eventquizattempttimelimitexceeded'] = 'Supero tempo limite tentativo quiz';
+$string['eventreportviewed'] = 'Visualizzazione report quiz';
 $string['everynquestions'] = 'Ogni {$a} domande';
 $string['everyquestion'] = 'Ogni domanda';
 $string['everythingon'] = 'Tutto su';
@@ -378,7 +378,7 @@ $string['feedbackerrororder'] = 'Le valutazioni di riferimento devono essere in 
 $string['file'] = 'File';
 $string['fileformat'] = 'Formato file';
 $string['fillcorrect'] = 'Compilare con l\'esatta';
-$string['filloutnumericalanswer'] = 'E\' necessari impostare almeno una risposta e la relativa tolleranza. La prima risposta corrispondente a quella data sarà usata per determinare il punteggio e il feedback. Se l\'elenco termina con un feedback senza risposta, allora tale feedback sarà visualizzato agli studenti la cui risposta non ha trovato corrispondenza con nessuna di quelle previste.';
+$string['filloutnumericalanswer'] = 'È necessario impostare almeno una risposta e la relativa tolleranza. La prima risposta corrispondente a quella data sarà usata per determinare il punteggio e il feedback. Se l\'elenco termina con un feedback senza risposta, allora tale feedback sarà visualizzato agli studenti la cui risposta non ha trovato corrispondenza con nessuna di quelle previste.';
 $string['filloutoneanswer'] = 'Devi fornire almeno una risposta. Le risposte lasciate in bianco non saranno utilizzate. Puoi usare \'*\' per far corrispondere qualsiasi carattere. La prima risposta che corrisponde sarà utilizzata per determinare il punteggio ed il feedback.';
 $string['filloutthreequestions'] = 'Devi fornire almeno tre domande con le corrispondenti risposte. Puoi fornire risposte errate aggiuntive inserendo una risposta senza domanda. Gli inserimenti senza domanda e senza risposta non saranno utilizzati.';
 $string['fillouttwochoices'] = 'Devi fornire almeno due scelte. Le scelte lasciate in bianco non saranno utilizzate.';
@@ -415,7 +415,7 @@ $string['grademethod_help'] = 'Quando sono consentiti più tentativi di risposta
 $string['gradesdeleted'] = 'Valutazioni quiz cancellate';
 $string['gradesofar'] = '<b>{$a->method}: {$a->mygrade} / {$a->quizgrade}</b>.';
 $string['gradetopassmustbeset'] = 'La sufficienza non può essere zero poiché il completamento del quiz è impostato per richiedere la sufficienza. Per favore imposta un valore diverso da zero.';
-$string['gradetopassnotset'] = 'Il quiz non ha una sufficienza impostata. E\' possibile impostarla nella sezione "Valutazione" delle impostazioni del quiz.';
+$string['gradetopassnotset'] = 'Il quiz non ha una sufficienza impostata. È possibile impostarla nella sezione "Valutazione" delle impostazioni del quiz.';
 $string['gradetopassoutof'] = 'Sufficienza: {$a->grade} su {$a->maxgrade}';
 $string['gradingdetails'] = 'Punteggi di questo invio: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Tenendo conto delle penalità  precedenti, questo dà  <strong>{$a->cur}/{$a->max}</strong>.';
@@ -507,13 +507,13 @@ $string['missingquestion'] = 'Questa domanda sembra non esistere più';
 $string['modulename'] = 'Quiz';
 $string['modulename_help'] = 'Il modulo di attività quiz consente al docente di creare questionari con diversi tipi di domande: scelta multipla, vero/falso, corrispondenza, risposta breve, calcolata, eccetera.
 
-Il docente può impostare il quiz affinché sia possibile tentarlo più volte con l\'ordine delle domande cambiato casualmente o con domande pescate casualmente ad ogni nuovo tentativo.  E\' anche possibile impostare un tempo massimo di svolgimento.
+Il docente può impostare il quiz affinché sia possibile tentarlo più volte con l\'ordine delle domande cambiato casualmente o con domande pescate casualmente ad ogni nuovo tentativo. È anche possibile impostare un tempo massimo di svolgimento.
 
 Ogni tentativo viene valutato automaticamente (ad eccezione delle domande componimento) e la valutazione viene memorizzata nel registro valutatore.
 
 Il docente può decidere quando e come far vedere agli studenti le risposte esatte, i feedback ed eventuali suggerimenti.
 
-E\' possibile usare il quiz per:
+È possibile usare il quiz per:
 
 * esami dei corsi
 * brevi test su dispense di studio o alla termine di un argomento
@@ -656,7 +656,7 @@ $string['preprocesserror'] = 'Si è verificato un errore durante la pre-elaboraz
 $string['preview'] = 'Anteprima';
 $string['previewquestion'] = 'Anteprima domanda';
 $string['previewquiz'] = 'Anteprima {$a}';
-$string['previewquiznow'] = 'Anteprima quiz';
+$string['previewquiznow'] = 'Anteprima immediata quiz';
 $string['previous'] = 'Stato precedente';
 $string['privacy:metadata:core_question'] = 'L\'attività Quiz memorizza informazioni sull\'utilizzo delle domande nel sottosistema core_question.';
 $string['privacy:metadata:quiz'] = 'L\'attività Quiz utilizza i Report del quiz.';
@@ -695,7 +695,7 @@ $string['questionbankmanagement'] = 'Gestione Deposito domande';
 $string['questionbehaviour'] = 'Comportamento domanda';
 $string['questioncats'] = 'Categorie di domande';
 $string['questiondeleted'] = 'Questa domanda è stata eliminata. Contattare il docente.';
-$string['questiondependencyadd'] = 'E\' possibile rispondere alla domanda {$a->thisq} senza restrizioni • Click per modificare';
+$string['questiondependencyadd'] = 'È possibile rispondere alla domanda {$a->thisq} senza restrizioni • Click per modificare';
 $string['questiondependencyfree'] = 'Questa domanda non ha restrizioni';
 $string['questiondependencyremove'] = 'Per rispondere alla domanda {$a->thisq} è necessario rispondere alla domanda precedente {$a->previousq} • Click per modificare';
 $string['questiondependsonprevious'] = 'Per rispondere a questa domanda è necessario rispondere alla domanda precedente.';
@@ -713,14 +713,14 @@ $string['questionsinclhidden'] = 'Domande (incluse le nascoste)';
 $string['questionsinthisquiz'] = 'Domande in questo quiz';
 $string['questionsmatchingfilter'] = 'Domande che corrispondono al filtro: {$a}';
 $string['questionsperpage'] = 'Domande per pagina';
-$string['questionsperpageselected'] = 'E\' stato definito il numero di domande per pagina per cui l\'impaginazione è al momento bloccata. Come risultato, i controlli per l\'impaginazione sono stati disabilitati. Questo si può cambiare in {$a}.';
+$string['questionsperpageselected'] = 'È stato definito il numero di domande per pagina per cui l\'impaginazione è al momento bloccata. Come risultato, i controlli per l\'impaginazione sono stati disabilitati. Questo si può cambiare in {$a}.';
 $string['questionsperpagex'] = 'Domande per pagina: {$a}';
 $string['questiontext'] = 'Testo della domanda';
 $string['questiontextisempty'] = '[Testo della domanda mancante]';
 $string['questiontype'] = 'Tipo domanda {$a}';
 $string['questiontypesetupoptions'] = 'Opzioni di impostazione per i tipi domanda:';
 $string['quiz:addinstance'] = 'Aggiungere quiz';
-$string['quiz:attempt'] = 'Svolgere quiz';
+$string['quiz:attempt'] = 'Tentare quiz';
 $string['quiz:deleteattempts'] = 'Eliminare tentativi dei quiz';
 $string['quiz:emailconfirmsubmission'] = 'Ricevere messaggio di conferma all\'invio del proprio tentativo';
 $string['quiz:emailnotifysubmission'] = 'Ricevere notifica via email all\'invio di tentativi';
@@ -771,7 +771,7 @@ $string['randomnumber'] = 'Numero di domande casuali';
 $string['randomquestion'] = 'Domanda casuale';
 $string['randomquestion_help'] = 'Le domande casuali consentono di inserire domande scelte casualmente da una categoria o in base a tag presenti in una attività.';
 $string['randomquestiontags'] = 'Tag';
-$string['randomquestiontags_help'] = 'E\' possibile restringere ulteriormente i criteri di selezione specificando alcuni tag di domanda.
+$string['randomquestiontags_help'] = 'È possibile restringere ulteriormente i criteri di selezione specificando alcuni tag di domanda.
 
 Le domande "casuali" verranno selezionate tra le domande che hanno questi tag.';
 $string['randomquestionusinganewcategory'] = 'Domanda random da una nuova categoria';
@@ -831,7 +831,7 @@ $string['reportwhattoinclude'] = 'Cosa includere nel report';
 $string['requirepassword'] = 'Password d\'accesso';
 $string['requirepassword_help'] = 'Impostando una password di accesso, gli studenti dovranno inserirla prima di tentare il quiz.';
 $string['requiresubnet'] = 'Indirizzi di rete abilitati';
-$string['requiresubnet_help'] = 'E\' possibile limitare l\'accesso a un quiz ai soli computer presenti su una particolare sotto rete di una LAN o di Internet, specificando una lista di indirizzi IP, parziali o completi, separati da virgole. L\'impostazione è particolarmente utile per "proteggere" un quiz, ad esempio quando si vuole consentire l\'accesso al quiz solo alle persone presenti in un certa sala.';
+$string['requiresubnet_help'] = 'È possibile limitare l\'accesso a un quiz ai soli computer presenti su una particolare sotto rete di una LAN o di Internet, specificando una lista di indirizzi IP, parziali o completi, separati da virgole. L\'impostazione è particolarmente utile per "proteggere" un quiz, ad esempio quando si vuole consentire l\'accesso al quiz solo alle persone presenti in un certa sala.';
 $string['response'] = 'Risposta data';
 $string['responses'] = 'Risposte date';
 $string['results'] = 'Risultati';
@@ -924,7 +924,7 @@ $string['showreport'] = 'Visualizza report';
 $string['showsmallimage'] = 'Immagine piccola';
 $string['showteacherattempts'] = 'Visualizza i tentativi degli insegnanti';
 $string['showuserpicture'] = 'Visualizza immagini degli utenti';
-$string['showuserpicture_help'] = 'Abilitando l\'impostazione, il nome dello studente e la sua immagine saranno visualizzati durante l\'esecuzione del tentativo e sulla schermata di revisione, allo scopo di rendere più facile controllare  che un utente non sia entrato con il nome di un altro.';
+$string['showuserpicture_help'] = 'Abilitando l\'impostazione, il nome dello studente e la sua immagine saranno visualizzati durante lo svolgimento del tentativo e sulla schermata di revisione allo scopo di rendere più facile controllare  che un utente non sia entrato con il nome di un altro.';
 $string['shuffle'] = 'Ordine casuale';
 $string['shuffleanswers'] = 'Risposte in ordine casuale';
 $string['shuffledrandomly'] = 'In ordine casuale';
@@ -955,7 +955,7 @@ $string['stateoverdue'] = 'Fuori tempo massimo';
 $string['stateoverduedetails'] = 'Deve essere inviato da {$a}';
 $string['status'] = 'Stato';
 $string['stoponerror'] = 'Stop in caso di errore';
-$string['submitallandfinish'] = 'Invia tutto e termina';
+$string['submitallandfinish'] = 'Invia e termina';
 $string['subneterror'] = 'Spiacente, questo quiz è impostato in modo da essere accessibile solo da certi indirizzi di rete. Attualmente i tuo computer non è abilitato all\'utilizzo di questo quiz.';
 $string['subnetnotice'] = 'Questo quiz è impostato in modo da essere accessibile solo da certi indirizzi di rete. Il tuo computer non è su una sotto-rete abilitata. Comunque come insegnante puoi vedere l\'anteprima.';
 $string['subplugintype_quiz'] = 'Report';
@@ -1017,5 +1017,5 @@ $string['windowclosing'] = 'Questa finestra si chiuderà tra breve.';
 $string['withsummary'] = 'con statistiche riepilogative';
 $string['wronguse'] = 'Non puoi utilizzare la pagina in questo modo';
 $string['xhtml'] = 'XHTML';
-$string['youneedtoenrol'] = 'E\' necessario essere iscritti al corso prima di tentare il quiz';
+$string['youneedtoenrol'] = 'È necessario essere iscritti al corso prima di tentare il quiz';
 $string['yourfinalgradeis'] = 'Il tuo voto finale per questo quiz è {$a}';

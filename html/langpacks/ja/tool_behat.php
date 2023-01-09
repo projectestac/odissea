@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aim'] = 'この管理ツールは開発者およびテスト作成者のMoodle機能が記述された.featureファイル作成に役立ちします。.featureファイルは自動実行されます。.featureファイルで使用できるステップ定義を以下に一覧表示します。';
+$string['aim'] = 'この管理ツールは開発者およびテスト作成者のMoodle機能が記述された.featureファイル作成に役立ちます。.featureファイルは自動実行されます。.featureファイルで使用できるステップ定義を以下に一覧表示します。';
 $string['allavailablesteps'] = 'すべての利用可能なステップ定義';
 $string['errorapproot'] = '$CFG->behat_ionic_dirrootは有効なMoodleアプリ開発者インストールを指定していません。';
 $string['errorbehatcommand'] = 'behat CLIコマンドの実行中にエラーが発生しました。CLIで「{$a} --help」を手動実行して問題を調査してください。';

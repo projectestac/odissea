@@ -1613,7 +1613,7 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
      * @todo Finish documenting this function
      */
     function fix_filters()  {
-        global $CFG, $FILTERLIB_PRIVATE;
+        global $CFG;
 
         ////////////////////////////////////////////////
         // adjust filters
@@ -1678,13 +1678,8 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
         }
 
         if ($reset_caches) {
-            if (method_exists('filter_manager', 'reset_caches')) {
-                // Moodle >= 2.5
-                filter_manager::reset_caches();
-            } else if (isset($FILTERLIB_PRIVATE)) {
-                // Moodle <= 2.4
-                unset($FILTERLIB_PRIVATE->active[$context->id]);
-            }
+            filter_manager::reset_caches();
+            //unset($FILTERLIB_PRIVATE->active[$context->id]);
         }
 
         ////////////////////////////////////////////////
@@ -4259,12 +4254,11 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
      * @return xxx
      * @todo Finish documenting this function
      */
-    function jmix_encode_punctuation($str) {
+    function jmix_encode_punctuation($str)  {
         $entities = array();
         $i_max = strlen($str);
         for ($i=0; $i<$i_max; $i++) {
-            $char = $str[$i];
-            $entities[$char] = '&#x'.sprintf('%04X', ord($char)).';';
+            $entities[$str{$i}] = '&#x'.sprintf('%04X', ord($str{$i})).';';
         }
         return $entities;
     }
@@ -4477,11 +4471,7 @@ class mod_hotpot_attempt_hp_6_renderer extends mod_hotpot_attempt_hp_renderer {
                     $liststart = '<ol class="MSelAnswers">'."\n";
                     break;
                 default:
-                    $textbox = false;
-                    $liststart = '';
-            }
-            if ($textbox == false && $liststart == '') {
-                continue; // unknown question type
+                    continue; // unknown question type
             }
 
             $first_answer_tags = $question."['answers'][0]['#']['answer'][0]['#']['text'][0]['#']";

@@ -40,8 +40,8 @@ $string['cannotrenamecoursenotexist'] = 'Non è possibile cambiare titolo ad un 
 $string['cannotrenameidnumberconflict'] = 'Non è possibile cambiare titolo al corso, il codice identificativo è in conflitto con un corso esistente';
 $string['cannotrenameshortnamealreadyinuse'] = 'Non è possibile cambiare titolo al corso, il titolo abbreviato è già utilizzato';
 $string['cannotupdatefrontpage'] = 'Non è consentito modificare la pagina home';
-$string['canonlyrenameinupdatemode'] = 'E\' possibile cambiare il titolo del corso solo quando è consentito l\'aggiornamento';
-$string['canonlyresetcourseinupdatemode'] = 'E\' possibile solamente il reset del corso in modalità aggiornamento';
+$string['canonlyrenameinupdatemode'] = 'È possibile cambiare il titolo del corso solo quando è consentito l\'aggiornamento';
+$string['canonlyresetcourseinupdatemode'] = 'È possibile solamente il reset del corso in modalità aggiornamento';
 $string['couldnotresolvecatgorybyid'] = 'Non è stato possibile individuare la categoria tramite l\'ID';
 $string['couldnotresolvecatgorybyidnumber'] = 'Non è stato possibile individuare la categoria tramite il codice identificativo';
 $string['couldnotresolvecatgorybypath'] = 'Non è stato possibile individuare la categoria tramite il percorso';
@@ -119,7 +119,7 @@ $string['result'] = 'Risultato';
 $string['rowpreviewnum'] = 'Righe di anteprima';
 $string['rowpreviewnum_help'] = 'Il numero di righe del file CSV da visualizzare in anteprima nella prossima pagina. Utile per limitare la dimensione della pagina stessa.';
 $string['shortnametemplate'] = 'Modello per generazione titolo abbreviato';
-$string['shortnametemplate_help'] = 'Il titolo abbreviato del corso da visualizzare nella navigazione. E\' possibile usare una sintassi (%f = titolo, %i = codice identificativo) oppure inserire un valore iniziale da incremente';
+$string['shortnametemplate_help'] = 'Il titolo abbreviato del corso da visualizzare nella navigazione. È possibile usare una sintassi (%f = titolo, %i = codice identificativo) oppure inserire un valore iniziale da incrementare.';
 $string['templatefile'] = 'Ripristina da questo file dopo il caricamento';
 $string['templatefile_help'] = 'Selezionare un file da utilizzare come modello per la creazione di corsi.';
 $string['unknownimportmode'] = 'Modalità di importazione sconosciuta';
@@ -131,11 +131,11 @@ $string['updateonly'] = 'Aggiorna solo i corsi esistenti';
 $string['updatewithdataonly'] = 'Aggiorna solo con i dati CSV';
 $string['updatewithdataordefaults'] = 'Aggiorna con i dati CSV e con i default';
 $string['uploadcourses'] = 'Caricamento corsi';
-$string['uploadcourses_help'] = 'E\' possibile caricare corsi tramite file di testo. Il formato del file deve essere come descritto di seguito:
+$string['uploadcourses_help'] = 'È possibile caricare corsi tramite file di testo. Il formato del file deve essere come descritto di seguito:
 
 * ciascuna linea contiene un record
-* ciascun record è una sequenza di dati separati da virgola (o altro separatore)
-* il primo record contiene un elenco di campi che definiscono il il formato del restanti dati che seguono
+* ciascun record è una sequenza di dati divisi dal separatore selezionato
+* il primo record deve contenere l\'elenco dei nomi dei campi che definiscono il formato del dati presenti nel resto del file
 * i campi obbligatori sono titolo abbreviato, titolo, descrizione e categoria';
 $string['uploadcoursespreview'] = 'Anteprima caricamento corso';
 $string['uploadcoursesresult'] = 'Risultati caricamento corsi';

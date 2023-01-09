@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventgradereportviewed'] = 'Kalifikazioen erabiltzailearen txostena ikusi da';
+$string['eventgradereportviewed'] = 'Kalifikazioen erabiltzaile-txostena ikusi da';
 $string['myself'] = 'Ni neu';
 $string['otheruser'] = 'Erabiltzailea';
-$string['pluginname'] = 'Erabiltzailearen txostena';
+$string['pluginname'] = 'Erabiltzaile-txostena';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Kalifikazio-liburuko txostena uneko erabiltzaile gisa edo beste erabiltzaile bat gisa ikustea.';
 $string['tablesummary'] = 'Taula antolatuta dago kalifikatutako elementu-zerrenda bat jarraituz, horien kategoria barne hartuta. Elementuak kategoria baten barruan daudenean, hala adieraziko da.';
 $string['user:view'] = 'Ikusi nork bere kalifikazio-txostena';

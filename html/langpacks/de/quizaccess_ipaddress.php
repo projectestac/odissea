@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'IP Adresse';
 $string['privacy:metadata'] = 'Die IP-Adressen für den Zugang auf den Test speichern keine personenbezogenen Daten.';
-$string['subnetwrong'] = 'Dieser Test kann nur von bestimmten festgelegten Computern aus durchgeführt. Ihr Computer befindet sich nicht auf der Liste.';
+$string['subnetwrong'] = 'Dieser Test kann nur von bestimmten festgelegten Computern aus durchgeführt werden. Ihr Computer befindet sich nicht auf der Liste.';

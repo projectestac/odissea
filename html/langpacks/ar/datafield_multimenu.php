@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'حقل قائمة متعددة الخيارات';
-$string['pluginname'] = 'قوائم متعددة';
-$string['privacy:metadata'] = 'إن مكون حقل القائمة متعددة الخيارات لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل الجداول المعرفة في mod_data.';
+$string['fieldtypelabel'] = 'القائمة متعددة الخيارات';
+$string['pluginname'] = 'القائمة متعددة الخيارات';
+$string['privacy:metadata'] = 'إن مُكون حقل القائمة متعددة الخيارات لا يخزن أي بيانات شخصية، بل يستعمل الجداول المعرفة في mod_data.';

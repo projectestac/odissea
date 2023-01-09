@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['additemalt'] = 'إضافة عنصر جديد إلى القائمة';
+$string['allowmodulelinks'] = 'السماح بروابط الوحدات';
 $string['checklist:addinstance'] = 'إضافة قائمة تأشير جديدة';
 $string['configchecklistautoupdate'] = 'قبل السماح بهذا ينبغي عليك إجراء بعض التعديلات في برمجة نواة مودل، لطفاً، أنظر mod/checklist/README.txt لمعرفة التفاصيل';
 $string['eventchecklistcomplete'] = 'قائمة تدقيق تم إكمالها';
@@ -35,5 +36,6 @@ $string['eventstudentchecksupdated'] = 'تدقيقات طالب تم تحديث�
 $string['eventteacherchecksupdated'] = 'تدقيقات معلم تم تحديثها';
 $string['guestsno'] = 'ليست لديك صلاحية معاينة قائمة التدقيق هذه';
 $string['openlinkinnewwindow'] = 'أتريد الفتح في نافذة جديدة؟';
+$string['percentcompleteall'] = 'كل العناصر';
 $string['teachernoteditcheck'] = 'الطالب فقط';
 $string['toggledates'] = 'تبديل الأسماء والتواريخ';

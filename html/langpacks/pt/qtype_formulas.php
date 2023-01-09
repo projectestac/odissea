@@ -34,8 +34,8 @@ Deve ser uma lista de números ou uma lista de strings, dependendo do tipo de re
 <pre class="prettyprint">123<br>[1, 0, 0, 1]<br>a<br>[1, a, b]<br>"exp(-a t)"<br>["vx t","vy t - 0.5 a t^2"]</pre>';
 $string['answercombinedunitmulti'] = 'Resposta e unidade da parte {$a->part}';
 $string['answercombinedunitsingle'] = 'Resposta e unidade';
-$string['answercoordinatemulti'] = 'Resposta da parte {$a->part} e coordenada {$a->numanswer}';
-$string['answercoordinatesingle'] = 'Resposta da coordenada {$a->numanswer}';
+$string['answercoordinatemulti'] = 'Campo de resposta {$a->numanswer} da parte {$a->part}';
+$string['answercoordinatesingle'] = 'Campo de resposta {$a->numanswer}';
 $string['answermark'] = 'Nota da parte';
 $string['answermark_help'] = '**Obrigatório**.
 A nota para a resposta desta parte, que deve ser um número maior que 0.
@@ -67,7 +67,7 @@ $string['correctness'] = 'Critério de avaliação*';
 $string['correctness_help'] = '**Obrigatório**. Pode escolher qualquer erro relativo ou erro absoluto com um intervalo de erro. O erro relativo não pode ser usado para o tipo de resposta algébrica.
 Para uma definição precisa do erro relativo e do erro absoluto, quando há mais de um campo de resposta, consulte a documentação.';
 $string['correctnessexpert'] = 'Especialista';
-$string['correctnesssimple'] = 'Simples';
+$string['correctnesssimple'] = 'Modo simplificado';
 $string['defaultanswermark'] = 'Nota predefinida da parte';
 $string['defaultanswermark_desc'] = 'Nota predefinida da parte para novas partes de pergunta';
 $string['defaultanswertype'] = 'Tipo de resposta predefinido';
@@ -115,16 +115,16 @@ $string['error_vars_name'] = 'A sintaxe do nome da variável está incorreta.';
 $string['error_vars_reserved'] = 'A função {$a}() é reservada e não pode ser usada como variável.';
 $string['error_vars_string'] = 'Erro! Ou é uma string sem fechar as aspas ou o uso de caracteres não permitidos, tais como, \'.';
 $string['error_vars_undefined'] = 'A variável \'{$a}\' não foi definida.';
-$string['feedback'] = 'Feedback';
-$string['feedback_help'] = 'O feedback da parte será mostrado aos alunos que não obtiverem a nota máxima na parte. Pode incluir variáveis globais e locais que serão substituídas pelos seus valores';
+$string['feedback'] = 'Feedback geral da parte';
+$string['feedback_help'] = 'O feedback desta parte será mostrado a todos os alunos. Pode incluir variáveis globais e locais que serão substituídas pelos seus valores';
 $string['functiontakesatleasttwo'] = 'A função {$a} deve ter pelo menos dois argumentos';
 $string['functiontakesnoargs'] = 'A função {$a} não tem argumentos';
 $string['functiontakesonearg'] = 'A função {$a} deve ter exatamente um argumento';
 $string['functiontakesoneortwoargs'] = 'A função {$a} deve ter um ou dois argumentos';
+$string['functiontakesthreeargs'] = 'A função {$a} deve ter exatamente três argumentos';
 $string['functiontakestwoargs'] = 'A função {$a} deve ter exatamente dois argumentos';
-$string['globaloptions'] = '[Global] -&nbsp;';
 $string['globalvarshdr'] = 'Variáves';
-$string['illegalformulasyntax'] = 'Sintaxe de fórmula incorreta que começa com \'{$a}\\';
+$string['illegalformulasyntax'] = 'Sintaxe de fórmula incorreta que começa com \'{$a}\'';
 $string['incorrectfeedback'] = 'Para qualquer resposta incorreta';
 $string['incorrectfeedback_help'] = 'Este feedback será mostrado aos alunos que não obtiverem qualquer nota nesta parte. Pode incluir variáveis globais e locais que serão substituídas pelos seus valores';
 $string['instantiate'] = 'Criar instância';
@@ -147,13 +147,13 @@ $string['placeholder_help'] = 'Um marcador de espaço de resposta (espaço reser
 Se este campo for deixado vazio, a parte será anexada no final do texto da pergunta principal.';
 $string['pleaseputananswer'] = 'Digite uma resposta em cada campo de entrada.';
 $string['pluginname'] = 'Fórmulas';
-$string['pluginname_help'] = 'Para começar a usar este tipo de perguntas, leia o <a href="https://docs.moodle.org/33/en/Formulas_question_tutorial">Tutorial de perguntas de Fórmulas</a>.
+$string['pluginname_help'] = 'Para começar a usar este tipo de pergunta, visite a página <a href="https://moodleformulas.org/">moodleformulas.org</a>.
 
-Para aprender, consulte alguns <a href="https://docs.moodle.org/33/en/Formulas_question_type#Examples">Exemplos</a>.
+Para possíveis perguntas, visite a página <a href="https://moodleformulas.org/">moodleformulas.org</a>.
 
-Para as diferentes opções no formulário de edição abaixo, visite a <a href="https://docs.moodle.org/33/en/Formulas:_Question_page">Página de perguntas de Fórmulas</a>
+Para as diferentes opções no formulário de edição abaixo, visite a página <a href="https://moodleformulas.org/">moodleformulas.org</a>.
 
-Para obter toda a informação, leia a <a href="https://docs.moodle.org/33/en/Formulas_question_type">Documentação</a>';
+Para obter toda a informação, visite a página <a href="https://moodleformulas.org/">moodleformulas.org</a>.';
 $string['pluginnameadding'] = 'A adicionar uma pergunta de fórmulas';
 $string['pluginnameediting'] = 'A editar uma pergunta de fórmulas';
 $string['pluginnamesummary'] = 'Tipo de pergunta com valores aleatórios e respostas múltiplas
@@ -165,8 +165,9 @@ Além disso, <tt>/</tt> pode ser usado para o expoente inverso. Qualquer permuta
 Os alunos devem usar o mesmo formato de entrada. Por exemplo,
 
 <pre class="prettyprint">1 m<br>0.1 m^2<br>20 m s^(-1)<br>400 kg m/s<br>100 kW</pre>';
+$string['previewerror'] = 'Nenhuma visualização disponível. Verifique a sua definição de variáveis aleatórias, variáveis globais, variáveis locais das partes e respostas. Mensagem de erro original:';
 $string['privacy:metadata'] = 'O módulo de tipo de pergunta Fórmulas não armazena qualquer dado pessoal.';
-$string['qtextpreview'] = 'Pré-visualizar usando o conjunto de dados';
+$string['qtextpreview'] = 'Pré-visualizar';
 $string['questiontext'] = 'Texto da pergunta';
 $string['questiontext_help'] = 'Além do texto normal da pergunta, também pode usar variáveis globais e marcadores de espaços de resposta.
 
@@ -182,15 +183,15 @@ $string['ruleid_help'] = 'Este tipo de pergunta possui um sistema integrado de c
 O básico são as regras das "Unidades do SI" que irão converter unidades padrão como por exemplo, unidade para comprimento, km, m, cm e mm. Esta opção não tem efeito se nenhuma unidade tiver sido usada.';
 $string['settingusepopup'] = 'Usar dicas de ajuda';
 $string['settingusepopup_desc'] = 'Mostrar a resposta correta e comentários numa dica de ajuda';
-$string['subqoptions'] = 'Opções extra';
+$string['subqoptions'] = 'Configurações da unidade';
 $string['subqtext'] = 'Texto da parte';
 $string['subqtext_help'] = 'Os campos de texto e os campos de resposta podem ser especificados aqui. Os marcadores de espaços de resposta (espaços reservados) que podem ser usados para especificar locais de campos de resposta são:
 
 <pre class="prettyprint">{_0}<br>{_1}<br>{_2}<br>...<br>{_u}</pre>
 
-Os <tt>{_0}, {_1}, {_2}</tt> são os campos de entrada para coordenadas e <tt> {_u} </tt> é o campo de entrada para a unidade.
+Os <tt>{_0}, {_1}, {_2}</tt> são os campos de entrada para valores e o <tt> {_u} </tt> é o campo de entrada para a unidade.
 
-Todos os campos em falta são anexados automaticamente no final do texto da parte. Um caso especial é quando <tt>{_0}, {_u}</tt> são especificados consecutivamente e há apenas uma coordenada e unidade, ou seja, <tt>{_0}{_u}</tt>, serão combinados num único campo de resposta de entrada longa para resposta e unidade.';
+Todos os campos em falta são anexados automaticamente no final do texto da parte. Um caso especial é quando <tt>{_0}, {_u}</tt> são especificados consecutivamente e há apenas uma campo de resposta e unidade, ou seja, <tt>{_0}{_u}</tt>, serão combinados num único e longo campo de entrada da resposta para a resposta e unidade.';
 $string['unit'] = 'Unidade';
 $string['unitpenalty'] = 'Desconto por unidade errada (0-1) *';
 $string['unitpenalty_help'] = 'Esta opção especifica o valor de penalização ao aluno por uma unidade errada.
@@ -216,4 +217,4 @@ $string['varsrandom_help'] = 'Os novos valores aleatórios são gerados para est
 
 Os elementos podem ser números, strings ou listas destes. No início de uma nova tentativa, um elemento será "puxado" a partir do conjunto e atribuído à variável à esquerda. Além disso, para um conjunto de números, pode usar a notação de intervalo como 10: 100: 10 (veja o exemplo E acima). < p>';
 $string['varsstatistics'] = 'Estatisticas';
-$string['yougotnright'] = 'Respondeu corretamente a {$a->num} partes desta pergunta.';
+$string['yougotnright'] = 'Respondeu corretamente a {$a->num} parte(s) desta pergunta.';

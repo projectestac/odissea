@@ -450,7 +450,7 @@ $string['courselistshortnames_desc'] = 'Om aktiverat kommer kursernas kortnamn a
 $string['coursemgmt'] = 'Hantera kurser och kategorier';
 $string['courseoverview'] = 'Översikt över kurs';
 $string['courserequestnotify'] = 'Meddelande om begäran om kurs';
-$string['courserequestnotifyemail'] = 'Användaren {$a->user} har begärt en ny kurs på {$a->link}';
+$string['courserequestnotifyemail'] = '{$a->user} har begärt en ny kurs <a href="{$a->link}">{$a->link}</a>';
 $string['courserequests'] = 'Kursförfrågningar';
 $string['courserequestspending'] = 'Avvaktande begäranden om kurs ';
 $string['courses'] = 'Kurser';

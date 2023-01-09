@@ -67,7 +67,7 @@ $string['autocontinue_help'] = 'La continuazione automatica consente il lancio a
 $string['autocontinuedesc'] = 'Imposta il lancio automatico di learning object successivi. Se non abilitato, dovrà essere utilizzato il pulsante Continua.';
 $string['averageattempt'] = 'Media tentativi';
 $string['badarchive'] = 'Devi fornire un file zip valido';
-$string['badimsmanifestlocation'] = 'E\' stato trovato il file  imsmanifest.xml ma non si trova nella radice del file zip. Per favore impacchettare nuovamente l\'oggetto SCORM.';
+$string['badimsmanifestlocation'] = 'È stato trovato il file  imsmanifest.xml ma non si trova nella radice del file zip. Per favore impacchettare nuovamente l\'oggetto SCORM.';
 $string['badmanifest'] = 'Il manifest contiene alcuni errori: controlla l\'elenco';
 $string['browse'] = 'Anteprima';
 $string['browsed'] = 'Visitato';
@@ -134,14 +134,14 @@ $string['element'] = 'Elemento';
 $string['enter'] = 'Entra';
 $string['entercourse'] = 'Entra nel corso';
 $string['errorlogs'] = 'Log degli errori';
-$string['eventattemptdeleted'] = 'Eliminato tentativo';
-$string['eventinteractionsviewed'] = 'Visualizzata interazione';
-$string['eventreportviewed'] = 'Visualizzato report';
-$string['eventscolaunched'] = 'Lanciato SCO';
-$string['eventscorerawsubmitted'] = 'Inviato punteggio SCORM grezzo';
-$string['eventstatussubmitted'] = 'Inviato stato SCORM';
-$string['eventtracksviewed'] = 'Visualizzato tracciamento';
-$string['eventuserreportviewed'] = 'Visualizzato report utente';
+$string['eventattemptdeleted'] = 'Eliminazione tentativo';
+$string['eventinteractionsviewed'] = 'Visualizzazione interazione';
+$string['eventreportviewed'] = 'Visualizzazione report';
+$string['eventscolaunched'] = 'Lancio SCO';
+$string['eventscorerawsubmitted'] = 'Invio punteggio SCORM grezzo';
+$string['eventstatussubmitted'] = 'Invio stato SCORM';
+$string['eventtracksviewed'] = 'Visualizzazione tracciamento';
+$string['eventuserreportviewed'] = 'Visualizzazione report utente';
 $string['everyday'] = 'Ogni giorno';
 $string['everytime'] = 'Ogni volta che è usato';
 $string['exceededmaxattempts'] = 'Hai raggiunto il massimo numero di tentativi consentito.';
@@ -218,11 +218,11 @@ $string['info'] = 'Info';
 $string['interactions'] = 'Interazioni';
 $string['invalidactivity'] = 'L\'attività SCORM è errata';
 $string['invalidhacpsession'] = 'La sessione HACP non è valida';
-$string['invalidmanifestname'] = 'E\' possibile selezionare solamente file imsmanifest.xml oppure .zip';
+$string['invalidmanifestname'] = 'È possibile selezionare solamente file imsmanifest.xml oppure .zip';
 $string['invalidmanifestresource'] = 'ATTENZIONE: le seguenti risorse sono presenti nel manifest ma non è stato possibile trovarle:';
 $string['invalidstatus'] = 'Stato non valido';
 $string['invalidurl'] = 'La URL specificata non è valida';
-$string['invalidurlhttpcheck'] = 'E\' stato specificato un URL non valido: Messaggio di debug: <pre> {$a->cmsg} </pre>';
+$string['invalidurlhttpcheck'] = 'È stato specificato un URL non valido: Messaggio di debug: <pre> {$a->cmsg} </pre>';
 $string['last'] = 'Accesso più recente il';
 $string['lastaccess'] = 'Accesso più recente';
 $string['lastattempt'] = 'Ultimo tentativo completato';
@@ -247,9 +247,9 @@ $string['mode'] = 'Modalità';
 $string['modulename'] = 'Pacchetto SCORM';
 $string['modulename_help'] = 'Un oggetto SCORM è un insieme di file impacchettati secondo uno standard riconosciuto per la realizzazione di learning object. Il modulo di attività SCORM consente l\'utilizzo di pacchetti in formato .zip basati sugli standard SCORM e AICC.
 
-In genere il contenuto di un pacchetto viene visualizzato su diverse pagine, con la possibilità di navigarle. E\' possibile impostare il pacchetto per visualizzare il contenuto in finestre pop up, con l\'indice dei contenuti, con i pulsanti di navigazione, eccetera. Gli oggetti SCORM possono anche presentare delle domande i cui risultati saranno memorizzati nel registro valutatore.
+In genere il contenuto di un pacchetto viene visualizzato su diverse pagine, con la possibilità di navigarle. È possibile impostare il pacchetto per visualizzare il contenuto in finestre pop up, con l\'indice dei contenuti, con i pulsanti di navigazione, eccetera. Gli oggetti SCORM possono anche presentare delle domande i cui risultati saranno memorizzati nel registro valutatore.
 
-E\' possibile usare attività SCORM per:
+È possibile usare attività SCORM per:
 
 * Presentare contenuti multimediali ed animazioni
 * Valutare le attività degli studenti';
@@ -269,7 +269,7 @@ $string['navigation'] = 'Navigazione';
 $string['navpositionleft'] = 'Posizione da sinistra dei pulsanti di navigazione, in pixel';
 $string['navpositiontop'] = 'Posizione dall\'alto dei pulsanti di navigazione, in pixel';
 $string['networkdropped'] = 'Il player SCORM ha rilevato che la tua connessione internet è poco affidabile oppure si è interrotta. Se prosegui nell\'attività SCORM, è possibile che i dati di tracciamento non vengano salvati.<br />
-E\' preferibile uscire subito dall\'attività e accedervi nuovamente usando una connessione internet affidabile.';
+È preferibile uscire subito dall\'attività e accedervi nuovamente usando una connessione internet affidabile.';
 $string['newattempt'] = 'Avvia un nuovo tentativo';
 $string['next'] = 'Continua';
 $string['no_attributes'] = 'Il tag {$a->tag} deve avere degli attributi';
@@ -435,7 +435,7 @@ $string['typelocalsync'] = 'Pacchetto da scaricare';
 $string['undercontent'] = 'Sotto il contenuto';
 $string['unziperror'] = 'Errore durante la decompressione del pacchetto';
 $string['updatefreq'] = 'Frequenza auto-aggiornamento';
-$string['updatefreq_error'] = 'E\' possibile impostare la frequenza di auto aggiornamento solamente per pacchetti esterni';
+$string['updatefreq_error'] = 'È possibile impostare la frequenza di auto aggiornamento solamente per pacchetti esterni';
 $string['updatefreq_help'] = 'Consente di scaricare ed aggiornare automaticamente il pacchetto esterno.';
 $string['updatefreqdesc'] = 'Imposta il valore di default per la frequenza di auto-aggiornamento';
 $string['validateascorm'] = 'Valida un pacchetto';

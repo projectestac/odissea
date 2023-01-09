@@ -490,6 +490,19 @@
 .wrsUI_app .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_ripple {
   background: rgba(7, 118, 128, 0.32);
 }
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_randomVariablesComponentButton {
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  min-width: 0;
+  margin: 0 0 0 8px;
+}
+.wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_randomVariablesComponentButton.wrsUI_randomVariablesComponentHelpButton {
+  color: rgba(0, 0, 0, 0.54);
+}
+.wrsUI_app .wrsUI_button.wrsUI_calcmeButton {
+  color: #1e6193;
+}
 .wrsUI_app .wrsUI_quizzesStudio {
   outline: 0;
   grid-template: 72px 1fr 76px/repeat(3, 1fr);
@@ -602,7 +615,7 @@
   margin-right: 12px;
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_label.wrsUI_labelHeader {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioCorrectAnswerComponent {
   flex: 4;

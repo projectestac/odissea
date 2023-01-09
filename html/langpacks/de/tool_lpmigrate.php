@@ -42,9 +42,9 @@ $string['errors'] = 'Fehler';
 $string['errorwhilemigratingcoursecompetencywithexception'] = 'Fehler beim Migrieren der Kurskompetenzen: {$a}';
 $string['errorwhilemigratingmodulecompetencywithexception'] = 'Fehler beim Migrieren der Aktivitäts- und Materialkompetenzen: {$a}';
 $string['excludethese'] = 'Diese ausschließen';
-$string['explanation'] = 'Diese Anwendung kann benutzt werden, um einen Kompetenzrahmen zu einer neueren Version zu aktualisieren. Es sucht in Kursen und Aktivitäten nach Kompetenzen , die im alten Kompetenzrahmen aufgelistet waren, und stellt die Links auf den neuen Rahmen um.
-Es wird nicht empfohlen, die alte Liste von Kompetenzen direkt zu bearbeiten, weil das auch alle Kompetenzen verändern würde, die schon in den Lernplänen von Teilnehmenden vergeben wurden.
-Üblicherweise wird die neue Version des Kompetenzrahmens importiert, der alte Kompetenzrahmen unsichtbar geschaltet und dann wird diese Anwendung zur Migration der neuen Kurse zu neuen Kompetenzen verwendet.';
+$string['explanation'] = 'Dieses Tool kann verwendet werden, um einen Kompetenzrahmen zu einer neueren Version zu aktualisieren. Es sucht in Kursen und Aktivitäten nach Kompetenzen , die im alten Kompetenzrahmen aufgelistet waren, und stellt die Links auf den neuen Rahmen um.
+Es wird nicht empfohlen, die alte Liste von Kompetenzen direkt zu bearbeiten, weil das auch alle Kompetenzen verändern würde, die schon in den Lernplänen von Teilnehmer/innen vergeben wurden.
+Üblicherweise wird die neue Version des Kompetenzrahmens importiert, der alte Kompetenzrahmen unsichtbar geschaltet. Anschließend wird dieses Tool zur Migration der neuen Kurse zu neuen Kompetenzen verwendet.';
 $string['findingcoursecompetencies'] = 'Kurskompetenzen suchen';
 $string['findingmodulecompetencies'] = 'Aktivitäts- und Ressourcenaktivitäten suchen';
 $string['frameworks'] = 'Kompetenzrahmen';

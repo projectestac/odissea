@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'Einschreibung deaktiviert oder inaktiv';
-$string['canntenrolearly'] = 'Sie können sich noch nicht einschreiben, weil die Einschreibung am {$a} beginnt.';
+$string['canntenrolearly'] = 'Sie können sich noch nicht einschreiben, weil die Einschreibung erst am {$a} beginnt.';
 $string['canntenrollate'] = 'Sie können sich nicht mehr einschreiben, weil die Einschreibung am {$a} beendet wurde.';
 $string['cohortnonmemberinfo'] = 'Nur Mitglieder der globalen Gruppe \'{$a}\' können sich selbst in diesen Kurs einschreiben.';
 $string['cohortonly'] = 'Nur für Mitglieder der globalen Gruppe';

@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allocation_form_post_title'] = 'العنوان:';
 $string['bim_configuration_values'] = 'القيم الحالية';
+$string['bim_continue'] = '<p align="center">(<a href="{$a}">متابعة</a>)</p>';
 $string['bim_find_none_description'] = '<p>تعذر العثور على أي طلاب تتضمن أسماؤهم، أسماء المستخدم لهم، عناوين بريدهم الالكتروني  <blockquote><strong>{$a}</strong></blockquote>يرجى محاولة البحث بشكل آخر. </p>';
 $string['bim_find_student_details_heading'] = 'تفاصيل الطالب';
 $string['bim_find_too_many'] = '<p>بحثك عن <blockquote><strong>{$a->search}</strong></blockquote>يطابق {$a->count} من الطلاب. هذا عدد كبير جدًا (من وجهة نظر موارد النظام) ليتم عرضهم. يرجى تضييق نطاق البحث عند المحاولة مجددًا.</p>';
@@ -69,6 +70,7 @@ $string['eventstudentsearched'] = 'الطالب المبحوث عنه';
 $string['eventstudentsearchstarted'] = 'البحث عن الطالب تم بدؤه';
 $string['eventstudentupdated'] = 'تصحيحات/منشورات الطلاب تم تحديثها';
 $string['eventstudentviewed'] = 'تصحيحات/منشورات الطلاب تمت معاينتها';
+$string['marker_allocation_heading'] = 'كل منشورات الطلاب';
 $string['marking_form_student_post'] = '<strong>منشور الطالب <small>(<a href="{$a}">المنشور الأصلي</a>)</small></strong>';
 $string['numAnswers'] = 'الإجابات الفعلية والمطلوبة';
 $string['numReleased_help'] = 'إجاباتك يتم تأشيرها أولاً (عدد المؤشرات)، مراجعتها ومن ثم إطلاقها لك لمشاهدتها (عدد المطلقات)';

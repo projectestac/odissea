@@ -41,6 +41,7 @@ $string['generalfeedback_help'] = 'The same general feedback is displayed regard
 $string['maxpoints'] = 'Max. points';
 $string['mustsupplyresponses'] = 'You must supply values for all responses.';
 $string['mustsupplyvalue'] = 'You must supply a value here.';
+$string['numberchoicehaschanged'] = 'Number of options has changed. Can not regrade the question attempt.';
 $string['oneanswerperrow'] = 'Please answer all parts of the question.';
 $string['optionno'] = 'Option {$a}';
 $string['optionsandfeedback'] = 'Options and Feedback';

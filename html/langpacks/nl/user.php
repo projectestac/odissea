@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Voorwaarde toevoegen';
+$string['addcondition'] = 'Voeg voorwaarde toe';
 $string['adverbfor_and'] = 'en';
 $string['adverbfor_andnot'] = 'en';
 $string['adverbfor_or'] = 'of';

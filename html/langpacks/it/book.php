@@ -46,10 +46,10 @@ $string['deletechapter'] = 'Elimina il capitolo "{$a}"';
 $string['editchapter'] = 'Modifica il capitolo "{$a}"';
 $string['editingchapter'] = 'Modifica capitolo';
 $string['errorchapter'] = 'Si è verificato un errore durante la lettura di un capitolo del libro';
-$string['eventchaptercreated'] = 'Creato capitolo';
-$string['eventchapterdeleted'] = 'Eliminato capitolo';
-$string['eventchapterupdated'] = 'Aggiornato capitolo';
-$string['eventchapterviewed'] = 'Visualizzato capitolo';
+$string['eventchaptercreated'] = 'Creazione capitolo';
+$string['eventchapterdeleted'] = 'Eliminazione capitolo';
+$string['eventchapterupdated'] = 'Aggiornamento capitolo';
+$string['eventchapterviewed'] = 'Visualizzazione capitolo';
 $string['hidechapter'] = 'Nascondi il capitolo "{$a}"';
 $string['indicator:cognitivedepth'] = 'Libro cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse Libro.';
@@ -63,7 +63,7 @@ $string['modulename'] = 'Libro';
 $string['modulename_help'] = 'Il modulo libro consente ad un docente di creare risorse multi pagina componendole, similmente ad un libro, in capitoli e paragrafi.
 I libri possono contenere file multimediali e testi e sono indicati per contenuti corposi da suddividere in diverse sezioni.
 
-E\' possibile usare il libro per:
+È possibile usare il libro per:
 
 * visualizzare materiale da leggere per moduli di studi individuale
 * redigere un manuale per lo staff

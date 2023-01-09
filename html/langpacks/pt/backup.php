@@ -210,7 +210,9 @@ $string['executionsuccess'] = 'O ficheiro da cópia de segurança foi criado com
 $string['extractingbackupfileto'] = 'A extrair ficheiro de cópia de segurança para: {$a}';
 $string['failed'] = 'Ocorreu um erro na cópia de segurança';
 $string['filealiasesrestorefailures'] = 'Não foi possível restaurar os atalhos';
-$string['filealiasesrestorefailures_help'] = 'Atalhos são ligações a outros ficheiros, incluindo os que se encontram em repositórios externos. Em alguns casos, o Moodle não consegue restaurá-los, como acontece ao fazer o restauro a partir de outro site ou quando os ficheiros ligados não existem.';
+$string['filealiasesrestorefailures_help'] = 'Atalhos são ligações a outros ficheiros, incluindo os que se encontram em repositórios externos. Em alguns casos, o Moodle não consegue restaurá-los, como acontece ao fazer o restauro a partir de outro site ou quando os ficheiros ligados não existem.
+
+Mais informações e o atual motivo do problema poderão ser consultadas no ficheiro de registo do restauro.';
 $string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = 'Alguns atalhos incluídos no ficheiro da cópia de segurança não puderam ser restaurados. A lista seguinte contém a sua localização e o ficheiro de origem, tal como são referidos no site original.';
 $string['filename'] = 'Nome do ficheiro';

@@ -25,23 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowguests'] = 'Ikastaro honetan bisitariak sar daitezke';
-$string['guest:config'] = 'Konfiguratu bisitarien sarbiderako instantziak';
-$string['guestaccess_withoutpassword'] = 'Bisitarien sarbidea';
-$string['guestaccess_withpassword'] = 'Bisitarien sarbidea';
+$string['allowguests'] = 'Ikastaro honetan gonbidatuak sar daitezke';
+$string['guest:config'] = 'Konfiguratu gonbidatuen sarbiderako instantziak';
+$string['guestaccess_withoutpassword'] = 'Gonbidatuen sarbidea';
+$string['guestaccess_withpassword'] = 'Gonbidatuen sarbidea';
 $string['password'] = 'Pasahitza';
 $string['password_help'] = 'Pasahitz honen bidez, ikastaroan gonbidatu gisa sartzeko pasahitza ezagutu beharko da. Gonbidatuek pasahitza eman beharko dute ikastaroan sartzen diren bakoitzean.';
 $string['passwordinvalid'] = 'Sartzeko pasahitza ez da zuzena, mesedez saiatu berriro';
 $string['passwordinvalidhint'] = 'Sartzeko pasahitza ez da zuzena, mesedez saiatu berriro <br /> (Pista bat - honela hasten da \'{$a}\')';
-$string['pluginname'] = 'Bisitarien sarbidea';
-$string['pluginname_desc'] = 'Bisitarien sarbide pluginak ikastaroetara aldi baterako sarbidea ematen du, ez ditu erabiltzaileak matrikulatuko.';
-$string['privacy:metadata'] = 'Bisitarien sarbidea matrikulazio-pluginak ez du datu pertsonalik biltzen.';
+$string['pluginname'] = 'Gonbidatuen sarbidea';
+$string['pluginname_desc'] = 'Gonbidatuen sarbide pluginak ikastaroetara aldi baterako sarbidea ematen du, ez ditu erabiltzaileak matrikulatuko.';
+$string['privacy:metadata'] = 'Gonbidatuen sarbidea matrikulazio-pluginak ez du datu pertsonalik biltzen.';
 $string['requirepassword'] = 'Eskatu gonbidatuei sarbide-pasahitza';
 $string['requirepassword_desc'] = 'Eskatu ikastaro berrietan sarbide-pasahitza eta debekatu oraingo ikastaroetatik pasahitza kentzea.';
 $string['showhint'] = 'Erakutsi argibidea';
-$string['showhint_desc'] = 'Erakutsi bisitarien sarbide-pasahitzaren lehenbiziko letra';
-$string['status'] = 'Baimendu bisitarien sarbidea';
-$string['status_desc'] = 'Baimendu aldi baterako bisitarien sarbidea lehenetsitako balio gisa.';
+$string['showhint_desc'] = 'Erakutsi gonbidatuen sarbide-pasahitzaren lehenbiziko letra';
+$string['status'] = 'Baimendu gonbidatuen sarbidea';
+$string['status_desc'] = 'Baimendu aldi baterako gonbidatuen sarbidea lehenetsitako balio gisa.';
 $string['status_help'] = 'Ezarpen honek zehazten du erabiltzaileak ikastarora gonbidatu gisa sartu ahal izango diren, matrikulatuta egon gabe.';
 $string['usepasswordpolicy'] = 'Erabili pasahitzen politika';
 $string['usepasswordpolicy_desc'] = 'Gonbidatuen pasahitzei ohiko pasahitzen politika aplikatu.';

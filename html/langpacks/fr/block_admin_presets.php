@@ -66,6 +66,7 @@ $string['importexecute'] = 'Importation en cours';
 $string['importshow'] = 'Sélectionner un fichier';
 $string['load'] = 'Charger';
 $string['loadexecute'] = 'Changement appliqués';
+$string['loading'] = 'chargement';
 $string['loadpreview'] = 'Prévisualiser la présélection';
 $string['loadselected'] = 'Charger les paramètres sélectionnés';
 $string['loadshow'] = 'Sélectionner les paramètres';

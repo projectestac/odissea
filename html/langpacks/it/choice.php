@@ -62,12 +62,12 @@ $string['deselectalloption'] = 'Deseleziona tutti "{$a}"';
 $string['displayhorizontal'] = 'Visualizza orizzontalmente';
 $string['displaymode'] = 'Modalità  di visualizzazione';
 $string['displayvertical'] = 'Visualizza verticalmente';
-$string['eventanswercreated'] = 'Aggiunta scelta';
-$string['eventanswerdeleted'] = 'Eliminata scelta';
-$string['eventanswersubmitted'] = 'Eseguita scelta';
-$string['eventanswerupdated'] = 'Aggiornata scelta';
-$string['eventreportdownloaded'] = 'Scaricato report delle scelte';
-$string['eventreportviewed'] = 'Visualizzato report scelta';
+$string['eventanswercreated'] = 'Inserimento scelta';
+$string['eventanswerdeleted'] = 'Eliminazione scelta';
+$string['eventanswersubmitted'] = 'Effettuazione scelta';
+$string['eventanswerupdated'] = 'Aggiornamento scelta';
+$string['eventreportdownloaded'] = 'Scaricamento report delle scelte';
+$string['eventreportviewed'] = 'Visualizzazione report scelta';
 $string['expired'] = 'L\'attività è stata chiusa il {$a}.';
 $string['full'] = '(Completo)';
 $string['havetologin'] = 'Devi autenticarti prima di poter effettuare la tua scelta';
@@ -90,9 +90,9 @@ $string['limitno'] = 'Limite {no}';
 $string['modulename'] = 'Scelta';
 $string['modulename_help'] = 'Il modulo di attività scelta consente al docente di formulare una domanda offrendo una serie di alternative.
 
-I risultati delle scelte possono essere pubblicati dopo che gli studenti hanno risposto, dopo una data definita oppure possono rimanere privati. I risultati possono essere resi noti sia assieme al nome dello studente sia in forma anonima (anche se il docente potrà dempre visualizzare i nomi degli studenti e le risposte date).
+I risultati delle scelte possono essere pubblicati dopo che gli studenti hanno risposto, dopo una data definita oppure possono rimanere privati. I risultati possono essere resi noti sia assieme al nome dello studente sia in forma anonima (anche se il docente potrà sempre visualizzare i nomi degli studenti e le risposte date).
 
-E\' possibile usare la scelta per:
+È possibile usare la scelta per:
 
 * sondaggi veloci per stimolare la riflessione su un dato argomento;
 * valutare rapidamente cosa hanno capito  gli studenti;

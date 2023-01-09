@@ -26,6 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcertpage'] = 'إضافة صفحة';
+$string['alignleft'] = 'المحاذاة يسارًا';
+$string['alignment'] = 'المحاذاة';
+$string['alignment_help'] = 'هذه الخاصية تضبط المحاذاة الأفقية للعنصر. بعض العناصر قد لا تدعمه، بينما سلوك أخرى قد يختلف.';
+$string['alignright'] = 'المحاذاة يمينًا';
 $string['cannotverifyallcertificates'] = 'ليست لديك صلاحية التحقق من كل الشهادات في الموقع.';
 $string['certificate'] = 'الشهادة';
 $string['coursetimereq_help'] = 'أدخل أقل فترة من الوقت بالدقائق، على الطالب أن يقضيها داخل المساق قبل أن يتسنى له تلقي الشهادة.';

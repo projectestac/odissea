@@ -292,11 +292,11 @@ $string['gradecategoryonmodform_help'] = 'Deze instelling controleert de categor
 $string['gradecategorysettings'] = 'Beoordelingscategorieën';
 $string['gradedisplay'] = 'Beoordelingen tonen';
 $string['gradedisplaytype'] = 'Hoe beoordelingen tonen';
-$string['gradedisplaytype_help'] = 'Deze instelling bepaalt hoe cijfers getoond worden in beoordeler- en gebruikersrapporten.
+$string['gradedisplaytype_help'] = 'Deze instelling bepaalt hoe cijfers getoond worden in het rapportage-scherm (voor beoordelers) en  rapport-scherm (voor de gebruikers).
 
 * Percentage - relatief tot maximaal en minimaal cijfer
 * Letter - Er worden letters of woorden gebruikt om een bereik van cijfers voor te stellen, zoals gedefinieerd in "Letters" in de instellingen van het cijferlijst
- Echt - De echte cijfers of schaalwaarden';
+ * Reëel - De echte, oorspronkelijke cijfers of schaalwaarden';
 $string['gradedon'] = 'Beoordeeld op {$a}';
 $string['gradeexport'] = 'Export beoordeling';
 $string['gradeexportcolumntype'] = '{$a->name} ({$a->extra})';
@@ -349,7 +349,7 @@ $string['gradepass'] = 'Cijfer om te slagen';
 $string['gradepass_help'] = 'Deze instelling bepaalt het minimumcijfer dat vereist is om te slagen. De waarde wordt gebruikt in activiteits- en cursusvoltooiing en in de cijferlijst, waar geslaagde cijfers in groen en niet geslaagd in rood wordt weergegeven.';
 $string['gradepassgreaterthangrade'] = 'Het slaagcijfer kan niet hoger zijn dan het maximaal mogelijke cijfer {$a}';
 $string['gradepointdefault'] = 'Standaardcijfer';
-$string['gradepointdefault_help'] = 'Deze instelling bepaalt de standaardwaarde voor het cijfer in dit beoordelingsitem.';
+$string['gradepointdefault_help'] = 'Deze instelling bepaalt de standaardwaarde voor het maximumcijfer in beoordelingsitems (opdracht,  cijferlijst, ...).';
 $string['gradepointdefault_validateerror'] = 'Deze instelling moet een geheel getal zijn tussen 1 en het maximumcijfer.';
 $string['gradepointmax'] = 'Maximumcijfer';
 $string['gradepointmax_help'] = 'Deze instelling bepaalt het maximumcijfer dat kan gegeven worden in een activiteit.';
@@ -519,7 +519,7 @@ $string['mode'] = 'Modus';
 $string['modgrade'] = 'Cijfer';
 $string['modgrade_help'] = 'Selecteer het type beoordeling dat wordt gebruikt voor deze activiteit. Als "schaal" wordt gekozen, kun je vervolgens de schaal kiezen uit een rolmenu. Als je punt-beoordeling kiest, dan kun je het maximale cijfer invoeren dat bij deze activiteit behaald kan worden.';
 $string['modgradecantchangegradetype'] = 'Je kunt het type niet wijzigen omdat er al cijfers voor dit item bestaan.';
-$string['modgradecantchangegradetypemsg'] = 'Sommige cijfers zijn al toegekend, dus het beoordelingstype kan niet meer gewijzigd worden. Als je het maximumcijfer wilt wijzigen, moet je eerste kiezen of je al dan niet de bestaande cijfers wil herschalen.';
+$string['modgradecantchangegradetypemsg'] = 'Sommige cijfers zijn al toegekend, dus het beoordelingstype kan niet meer gewijzigd worden. Als je het maximumcijfer wilt wijzigen, moet je eerst kiezen of je al dan niet de bestaande cijfers wil herschalen.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Sommige cijfers zijn al toegekend, dus je kan het beoordelingstype en de schaal niet meer wijzigen.';
 $string['modgradecantchangeratingmaxgrade'] = 'Je kunt het maximumcijfer niet wijzigen wanneer er al cijfers voor de activiteit gegeven zijn.';
 $string['modgradecantchangescale'] = 'Je kunt de schaal niet wijzigen omdat er al cijfers bestaan voor dit item.';
@@ -632,7 +632,7 @@ $string['pctoftotalgrade'] = '% van totaalcijfer';
 $string['percent'] = 'Procent';
 $string['percentage'] = 'Percentage';
 $string['percentageletter'] = 'Percentage (letter)';
-$string['percentagereal'] = 'Percentage (Reëel)';
+$string['percentagereal'] = 'Percentage (reëel)';
 $string['percentascending'] = 'Sorteer procent oplopend';
 $string['percentdescending'] = 'Sorteer procent aflopend';
 $string['percentshort'] = '%';
@@ -702,10 +702,10 @@ $string['rangedecimals_help'] = 'Het aantal te tonen decimale cijfers voor het b
 $string['rangesdecimalpoints'] = 'Aantal decimalen in marges';
 $string['rangesdecimalpoints_help'] = 'Specificeert het aantal te tonen decimalen voor elk bereiken of de algemene instelling voor aantal decimalen voor de categorie of beoordelingsitem wordt gebruikt (overerven).';
 $string['rangesdisplaytype'] = 'Hoe marges tonen';
-$string['rangesdisplaytype_help'] = '<p>Specifieerd hoe marges getoond moeten worden. Als je voor overerven kiest, dan wordt dit type voor elke kolom gebruikt.</p>';
+$string['rangesdisplaytype_help'] = 'Deze instelling bepaalt of de marge getoond wordt als reële cijfers, percentages of letters en of de manier waarop categorie en hoe marges getoond moeten worden (overerven).';
 $string['rank'] = 'Ranglijst';
 $string['rawpct'] = 'Ruw %';
-$string['real'] = 'Echt';
+$string['real'] = 'Reëel';
 $string['realletter'] = 'Reëel (letter)';
 $string['realpercentage'] = 'Reëel (percentage)';
 $string['recalculatinggrades'] = 'Cijfers herberekenen';

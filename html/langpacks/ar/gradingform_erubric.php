@@ -40,6 +40,7 @@ $string['enrichshareconfirm'] = '<p style="text-align:center;color:red;font-weig
     ملحق <b>تحليلات التعلُّم لسلم التقييم المعزز</b> يمكن استعماله كقالب لنموذج تقييم متقدم ، فقط للمساق الحالي!
     إذا قام مستخدمون آخرون في موقعك باستعمال هذا النموذج في أي مساق آخر، <b>فلن يعمل معهم كما ينبغي</b>! سيبقى هيكل سلم التقييم سليمًا،
     ولكن سيكون عليك استبدال كل وحدات المساق المضمنة بوحدات مشابهة من المساق المقصود.';
+$string['err_attention'] = '<p style="text-align:center;color:red;font-weight:bold">إنتباه!</p>';
 $string['err_enrichedvalueformat'] = 'عدد قيم الفحص لكل مستوى معزز ينبغي أن يكون رقمًا صحيحًا موجبًا.';
 $string['err_enrichedvaluemissing'] = 'المعيار المعزز ينبغي أن تكون له قيم فحص في كل المستويات.';
 $string['err_missinglogstores'] = '<p><font color="red"><b>خطأ في نظام الوقوعات!</b></font></p>

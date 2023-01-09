@@ -521,11 +521,10 @@ $string['submissionnoteditable'] = 'O aluno não pode editar esta submissão';
 $string['submissionnotready'] = 'Este trabalho não está pronto para ser submetido:';
 $string['submissionplugins'] = 'Módulos de submissão';
 $string['submissionreceipthtml'] = '<p>Submeteu um trabalho na atividade \'<i>{$a->assignment}</i>\'.</p>
-<p>Pode consultar o estado da <a href="{$a->url}">submissão do seu trabalho</a>.</p>';
-$string['submissionreceiptotherhtml'] = 'A sua submissão do trabalho na atividade \'<i>{$a->assignment}</i>\' foi concluída.<br /><br /> Pode consultar o estado da <a href="{$a->url}">submissão do seu trabalho</a>.';
+<p>Pode consultar o <a href="{$a->url}">estado da submissão</a> do seu trabalho.</p>';
+$string['submissionreceiptotherhtml'] = 'A sua submissão do trabalho na atividade \'<i>{$a->assignment}</i>\' foi concluída.<br /><br />Pode consultar o <a href="{$a->url}">estado da submissão</a> do seu trabalho.';
 $string['submissionreceiptothersmall'] = 'A sua submissão de trabalho na atividade \'{$a->assignment}\' foi submetida.';
-$string['submissionreceiptothertext'] = 'A sua submissão de trabalho na atividade
-\'{$a->assignment}\' foi concluída.
+$string['submissionreceiptothertext'] = 'A sua submissão do trabalho na atividade \'{$a->assignment}\' foi concluída.
 
 Pode consultar o estado da submissão do seu trabalho:
 
@@ -536,7 +535,7 @@ $string['submissionreceipttext'] = 'Submeteu um trabalho na atividade \'{$a->ass
 
 Pode consultar o estado do seu trabalho em:
 
-    {$a->url}';
+{$a->url}';
 $string['submissionsclosed'] = 'Submissões encerradas';
 $string['submissionsettings'] = 'Configurações da submissão do trabalho';
 $string['submissionslocked'] = 'Este trabalho não está a aceitar submissões';

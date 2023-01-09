@@ -312,15 +312,15 @@ $string['contentexport_modulesummary'] = 'La pagina fa parte del contenuto di <a
 $string['contentexport_viewfilename'] = 'Visualizza il file {$a}';
 $string['continue'] = 'Continua';
 $string['continuetocourse'] = 'Clicca qui per entrare nel corso';
-$string['convertingwikitomarkdown'] = 'E\' in corso la conversione del wiki al formato Markdown';
+$string['convertingwikitomarkdown'] = 'È in corso la conversione del wiki al formato Markdown';
 $string['cookiesenabled'] = 'Il browser deve avere i cookie abilitati';
 $string['cookiesenabled_help'] = 'Il sito utilizza due tipi di cookie:
 
-Il primo è un cookie di sessione ed è normalmente chiamato MoodleSession. E\' un cookie essenziale ed è indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.
+Il primo è un cookie di sessione ed è normalmente chiamato MoodleSession. È un cookie essenziale ed è indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.
 
 Il secondo cookie, generalmente chiamato MOODLEID, serve solo per ricordare il proprio username all\'interno del browser. Grazie a questo cookie quando si ritorna a far vista allo stesso sito, il campo della pagina di login sarà già compilato con lo username. Non ci sono problemi a rifiutare questo cookie, l\'unico inconveniente sarà quello di dover inserire nuovamente lo username nella pagina di login.';
 $string['cookiesenabledonlysession'] = 'Il browser deve avere i cookie abilitati';
-$string['cookiesenabledonlysession_help'] = 'Il sito utilizza un cookie di sessione, normalmente chiamato MoodleSession. E\' indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.';
+$string['cookiesenabledonlysession_help'] = 'Il sito utilizza un cookie di sessione, normalmente chiamato MoodleSession. È indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.';
 $string['cookiesnotenabled'] = 'Purtroppo al momento i cookie non sono abilitati nel tuo browser.';
 $string['copy'] = 'copia';
 $string['copyasnoun'] = 'copia';
@@ -339,7 +339,7 @@ $string['course'] = 'Corso';
 $string['courseadministration'] = 'Amministrazione del corso';
 $string['courseapprovedemail'] = 'Il corso da te richiesto, {$a->name}, è stato approvato e ti è stato assegnato il ruolo {$a->teacher}. Per accedere al nuovo corso, vai a {$a->url}';
 $string['courseapprovedemail2'] = 'Il corso da te richiesto, {$a->name}, è stato approvato. Per accedere al nuovo corso, vai a {$a->url}';
-$string['courseapprovedfailed'] = 'E\' fallito il salvataggio dell\'approvazione del corso';
+$string['courseapprovedfailed'] = 'È fallito il salvataggio dell\'approvazione del corso';
 $string['courseapprovedsubject'] = 'Il corso è stato approvato';
 $string['courseavailable'] = 'Corso disponibile agli studenti';
 $string['courseavailablenot'] = 'Corso non disponibile agli studenti';
@@ -420,7 +420,7 @@ $string['courserequestwarning'] = 'L\'utente che ha richiesto il corso verrà au
 $string['courserestore'] = 'Ripristino corso';
 $string['courses'] = 'Corsi';
 $string['coursesearch'] = 'Cerca corsi';
-$string['coursesearch_help'] = 'E\' possibile cercare usando più parole e raffinare la ricerca:
+$string['coursesearch_help'] = 'È possibile cercare usando più parole e raffinare la ricerca:
 
 * parola - trova le corrispondenze della parola  nel testo
 * +parola - trova solo le corrispondenze esatte della parola
@@ -480,7 +480,7 @@ $string['currentlocaltime'] = 'La tua ora locale';
 $string['currentpicture'] = 'Immagine attuale';
 $string['currentrelease'] = 'Informazioni sulla versione attuale';
 $string['currentversion'] = 'Versione installata';
-$string['databasechecking'] = 'E\' in corso l\'aggiornamento del database di Moodle dalla versione {$a->oldversion} to {$a->newversion}';
+$string['databasechecking'] = 'È in corso l\'aggiornamento del database di Moodle dalla versione {$a->oldversion} to {$a->newversion}';
 $string['databaseperformance'] = 'Prestazioni database';
 $string['databasesetup'] = 'Impostazione database';
 $string['databasesuccess'] = 'Il database è stato aggiornato con successo';
@@ -563,7 +563,7 @@ $string['displayingfirst'] = 'Sono visualizzati solo il primi {$a->count} {$a->t
 $string['displayingrecords'] = 'Visualizzazione di {$a} record';
 $string['displayingusers'] = 'Visualizza gli iscritti a partire da {$a->start} fino a {$a->end}';
 $string['displayonpage'] = 'Visualizza nella pagina';
-$string['dndcourse'] = 'E\' possibile trascinare e rilasciare il corso da una categoria all\'altra';
+$string['dndcourse'] = 'È possibile trascinare e rilasciare il corso da una categoria all\'altra';
 $string['dndenabled_inbox'] = 'Per caricare file, trascinali e rilasciali qui.';
 $string['dndnotsupported'] = 'La funzione trascina e rilascia non è supportata.';
 $string['dndnotsupported_help'] = 'Il browser non supporta il caricamento tramite trascina e rilascia. Questa funzione è disponibile in tutte le versioni più recenti di Chrome, Firefox, Safari e in Internet Explorer versioni 10 o successive.';
@@ -655,7 +655,7 @@ Se hai bisogno di aiuto contatta l\'amministratore del sito,
 {$a->admin}';
 $string['emailconfirmationresend'] = 'Invia di nuovo email di conferma';
 $string['emailconfirmationsubject'] = '{$a}: conferma account';
-$string['emailconfirmsent'] = '<p>E\' stata inviata una mail all\'indirizzo <b>{$a}</b></p>
+$string['emailconfirmsent'] = '<p>È stata inviata una mail all\'indirizzo <b>{$a}</b></p>
 <p>La mail contiene alcune semplici istruzioni per completare la  registrazione.</p>
 <p>In caso di difficoltà contattare l\'amministratore del sito.</p>';
 $string['emailconfirmsentfailure'] = 'L\'email di conferma non è stata inviata';
@@ -667,7 +667,7 @@ $string['emaildigest_help'] = 'Le impostazioni di default del forum per le email
 * Raccolta - messaggi per intero - riceverai una email al giorno contenente la raccolta dei messaggi  di ciascun messaggio nei forum.
 * Raccolta - solo oggetto - Riceverai una email al giorno contenente la raccolta del solo oggetto di ciascun messaggio nei forum.
 
-E\' anche possibile scegliere impostazioni diverse per ciascun forum.';
+È anche possibile scegliere impostazioni diverse per ciascun forum.';
 $string['emaildigestcomplete'] = 'Completa (email giornaliera con messaggi per intero)';
 $string['emaildigestoff'] = 'Nessuna raccolta (una email per ciascun messaggio)';
 $string['emaildigestsubjects'] = 'Oggetti (email giornaliera con solo l\'oggetto dei messaggi)';
@@ -734,7 +734,7 @@ $string['emailpasswordconfirmnoemail'] = '<p>L\'account specificato non ha un in
 $string['emailpasswordconfirmnotsent'] = '<p>I dati inseriti non corrispondono a nessun account utente.</p>
 <p>Per favore verifica i dati inseriti e riprova.
 Se continui ad avere difficoltà, contatta l\'amministratore del sito.</p>';
-$string['emailpasswordconfirmsent'] = 'E\' stata spedita un\'email  al tuo indirizzo <b>{$a}</b>.
+$string['emailpasswordconfirmsent'] = 'È stata spedita un\'email  al tuo indirizzo <b>{$a}</b>.
 <br />Nel messaggio troverai le istruzioni per confermare e completare la modifica della password. Se continui ad avere difficoltà, contatta l\'amministratore del sito.';
 $string['emailpasswordsent'] = 'Grazie per aver confermato il cambiamento della password. Riceverai la nuova password su br /><b>{$a->email}</b>.<br />
 
@@ -752,11 +752,11 @@ Se la richiesta non è stata effettuata da te, non devi fare nulla.
 
 Se hai bisogno di aiuto, contatta l\'amministratore del sito, {$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: Richiesta recupero password';
-$string['emailresetconfirmsent'] = 'E\' stata inviata un\'email al tuo indirizzo di posta <b>{$a}</b>.
+$string['emailresetconfirmsent'] = 'È stata inviata un\'email al tuo indirizzo di posta <b>{$a}</b>.
 <br />L\'email contiene le istruzioni per confermare la richiesta di cambio password.
 Se continui ad avere difficoltà, contatta l\'amministratore del sito.';
 $string['emailstop'] = 'Disabilita notifiche';
-$string['emailtoprivatefiles'] = 'E\'\' anche possibile inviare nei propri File personali gli allegati delle email. E\' sufficiente allegare file ad un aemail da inviare a {$a}';
+$string['emailtoprivatefiles'] = 'È anche possibile inviare nei propri File personali gli allegati delle email. È sufficiente allegare file ad una email da inviare a {$a}';
 $string['emailtoprivatefilesdenied'] = 'L\'amministratore ha disabilitato la funzionalità per caricare file personali';
 $string['emailvia'] = '{$a->name} (da {$a->siteshortname})';
 $string['emojicategoryactivities'] = 'Attività';
@@ -786,61 +786,61 @@ $string['errorcreatingactivity'] = 'Non è stato possibile creare una istanza de
 $string['errorfiletoobig'] = 'Il file è più grande del limite consentito pari a {$a} byte';
 $string['errornouploadrepo'] = 'In questo sito non sono abilitati repository per il caricamento';
 $string['errorwhenconfirming'] = 'La tua iscrizione non è stata ancora confermata a causa di un errore. Se hai cliccato sul link di una email per arrivare qui, assicurati che la riga nella tua email non era spezzata o andava accapo. Potresti dover utilizzare Copia e Incolla per ricostruire il link corretto.';
-$string['eventcommentcreated'] = 'Creato commento';
-$string['eventcommentdeleted'] = 'Eliminato commento';
-$string['eventcommentsviewed'] = 'Visualizzato commento';
-$string['eventconfiglogcreated'] = 'Creato log della configurazione';
-$string['eventcontentviewed'] = 'Visualizzato contenuto';
-$string['eventcoursebackupcreated'] = 'Creato backup del corso';
-$string['eventcoursecategorycreated'] = 'Creata categoria';
-$string['eventcoursecategorydeleted'] = 'Eliminata categoria';
-$string['eventcoursecategoryupdated'] = 'Aggiornata categoria';
-$string['eventcoursecategoryviewed'] = 'Visualizzata categoria';
-$string['eventcoursecontentdeleted'] = 'Eliminato contenuto corso';
-$string['eventcoursecreated'] = 'Creato corso';
-$string['eventcoursedeleted'] = 'Eliminato corso';
-$string['eventcourseinformationviewed'] = 'Visualizzata introduzione al corso';
-$string['eventcoursemodulecreated'] = 'Creato modulo corso';
-$string['eventcoursemoduledeleted'] = 'Eliminato modulo corso';
-$string['eventcoursemoduleinstancelistviewed'] = 'Visualizzato elenco istanze moduli corso';
-$string['eventcoursemoduleupdated'] = 'Aggiornato modulo corso';
-$string['eventcoursemoduleviewed'] = 'Visualizzato modulo corso';
-$string['eventcourseresetended'] = 'Terminato reset corso';
-$string['eventcourseresetstarted'] = 'Iniziato reset corso';
-$string['eventcourserestored'] = 'Ripristinato corso';
-$string['eventcoursesectioncreated'] = 'Creata sezione di corso';
-$string['eventcoursesectiondeleted'] = 'Eliminata sezione corso';
-$string['eventcoursesectionupdated'] = 'Aggiornata sezione corso';
-$string['eventcoursessearched'] = 'Cercati corsi';
-$string['eventcourseupdated'] = 'Aggiornato corso';
-$string['eventcourseuserreportviewed'] = 'Visualizzato report utente del corso';
-$string['eventcourseviewed'] = 'Visualizzato corso';
-$string['eventdashboardreset'] = 'Reimpostata dashboard';
-$string['eventdashboardsreset'] = 'Reimpostate dashboard';
-$string['eventdashboardviewed'] = 'Visualizzata dashboard';
-$string['eventdatabasetextfieldcontentreplaced'] = 'Cerca e sostituisci in tutto il database';
-$string['eventemailfailed'] = 'Fallito invio email';
+$string['eventcommentcreated'] = 'Creazione commento';
+$string['eventcommentdeleted'] = 'Eliminazione commento';
+$string['eventcommentsviewed'] = 'Visualizzazione commento';
+$string['eventconfiglogcreated'] = 'Creazione log della configurazione';
+$string['eventcontentviewed'] = 'Visualizzazione contenuto';
+$string['eventcoursebackupcreated'] = 'Creazione backup del corso';
+$string['eventcoursecategorycreated'] = 'Creazione categoria';
+$string['eventcoursecategorydeleted'] = 'Eliminazione categoria';
+$string['eventcoursecategoryupdated'] = 'Aggiornamento categoria';
+$string['eventcoursecategoryviewed'] = 'Visualizzazione categoria';
+$string['eventcoursecontentdeleted'] = 'Eliminazione contenuto corso';
+$string['eventcoursecreated'] = 'Creazione corso';
+$string['eventcoursedeleted'] = 'Eliminazione corso';
+$string['eventcourseinformationviewed'] = 'Visualizzazione introduzione al corso';
+$string['eventcoursemodulecreated'] = 'Creazione modulo corso';
+$string['eventcoursemoduledeleted'] = 'Eliminazione modulo corso';
+$string['eventcoursemoduleinstancelistviewed'] = 'Visualizzazione elenco istanze moduli corso';
+$string['eventcoursemoduleupdated'] = 'Aggiornamento modulo corso';
+$string['eventcoursemoduleviewed'] = 'Visualizzazione modulo corso';
+$string['eventcourseresetended'] = 'Fine reset corso';
+$string['eventcourseresetstarted'] = 'Inizio reset corso';
+$string['eventcourserestored'] = 'Ripristino corso';
+$string['eventcoursesectioncreated'] = 'Creazione sezione di corso';
+$string['eventcoursesectiondeleted'] = 'Eliminazione sezione corso';
+$string['eventcoursesectionupdated'] = 'Aggiornamento sezione corso';
+$string['eventcoursessearched'] = 'Ricerca corsi';
+$string['eventcourseupdated'] = 'Aggiornamento corso';
+$string['eventcourseuserreportviewed'] = 'Visualizzazione report utente del corso';
+$string['eventcourseviewed'] = 'Visualizzazione corso';
+$string['eventdashboardreset'] = 'Reimpostazione dashboard';
+$string['eventdashboardsreset'] = 'Reimpostazione dashboard';
+$string['eventdashboardviewed'] = 'Visualizzazione dashboard';
+$string['eventdatabasetextfieldcontentreplaced'] = 'Ricerca e sostituzione nel database';
+$string['eventemailfailed'] = 'Invio email fallito';
 $string['eventname'] = 'Evento';
-$string['eventrecentactivityviewed'] = 'Visualizzata attività recente';
-$string['eventsearchindexed'] = 'Indicizzati dati per la ricerca';
-$string['eventsearchresultsviewed'] = 'Visualizzati risultati della ricerca';
+$string['eventrecentactivityviewed'] = 'Visualizzazione attività recente';
+$string['eventsearchindexed'] = 'Indicizzazione dati per la ricerca';
+$string['eventsearchresultsviewed'] = 'Visualizzazione risultati della ricerca';
 $string['eventunknownlogged'] = 'Evento sconosciuto';
-$string['eventusercreated'] = 'Creato utente';
-$string['eventuserdeleted'] = 'Eliminato utente';
-$string['eventuserfeedbackgiven'] = 'Cliccato link del feedback';
-$string['eventuserfeedbackremind'] = 'Cliccato link promemoria del feedback';
-$string['eventuserinfocategorycreated'] = 'Creata categoria di campi personalizzati del profilo';
-$string['eventuserinfocategorydeleted'] = 'Eliminata categoria di campi personalizzati del profilo';
-$string['eventuserinfocategoryupdated'] = 'Aggiornata categoria di campi personalizzati del profilo';
-$string['eventuserinfofieldcreated'] = 'Creato campo personalizzato del profilo';
-$string['eventuserinfofielddeleted'] = 'Eliminato campo personalizzato del profilo';
-$string['eventuserinfofieldupdated'] = 'Aggiornato campo personalizzato del profilo';
-$string['eventuserlistviewed'] = 'Visualizzato elenco utenti';
-$string['eventuserloggedout'] = 'Disconnesso utente';
+$string['eventusercreated'] = 'Creazione utente';
+$string['eventuserdeleted'] = 'Eliminazione utente';
+$string['eventuserfeedbackgiven'] = 'Click su link feedback';
+$string['eventuserfeedbackremind'] = 'Click link promemoria del feedback';
+$string['eventuserinfocategorycreated'] = 'Creazione categoria di campi personalizzati del profilo';
+$string['eventuserinfocategorydeleted'] = 'Eliminazione categoria di campi personalizzati del profilo';
+$string['eventuserinfocategoryupdated'] = 'Aggiornamento categoria di campi personalizzati del profilo';
+$string['eventuserinfofieldcreated'] = 'Creazione campo personalizzato del profilo';
+$string['eventuserinfofielddeleted'] = 'Eliminazione campo personalizzato del profilo';
+$string['eventuserinfofieldupdated'] = 'Aggiornamento campo personalizzato del profilo';
+$string['eventuserlistviewed'] = 'Visualizzazione elenco utenti';
+$string['eventuserloggedout'] = 'Disconnessione utente';
 $string['eventuserpasswordpolicyfailed'] = 'La password utente non soddisfa i requisiti';
-$string['eventuserpasswordupdated'] = 'Modificata password utente';
-$string['eventuserprofileviewed'] = 'Visualizzato profilo utente';
-$string['eventuserupdated'] = 'Aggiornato utente';
+$string['eventuserpasswordupdated'] = 'Modifica password utente';
+$string['eventuserprofileviewed'] = 'Visualizzazione profilo utente';
+$string['eventuserupdated'] = 'Aggiornamento utente';
 $string['everybody'] = 'Tutti';
 $string['executeat'] = 'Esegui alle';
 $string['existing'] = 'Esistente';
@@ -862,7 +862,7 @@ $string['failedloginattempts'] = '{$a->attempts} accessi falliti dall\'ultimo ac
 $string['favourites'] = 'Preferiti';
 $string['feedback'] = 'Feedback';
 $string['file'] = 'File';
-$string['fileexists'] = 'E\' già presente un file di nome {$a}';
+$string['fileexists'] = 'È già presente un file di nome {$a}';
 $string['filemissing'] = '{$a} è mancante';
 $string['filereaderror'] = 'Non è possibile leggere il file \'{$a}\'. Per favore verifica che sia realmente un file e non una cartella.';
 $string['files'] = 'File';
@@ -1213,7 +1213,7 @@ $string['maximumshort'] = 'Massimo';
 $string['maximumupload'] = 'Dimensione massima file caricabili';
 $string['maximumupload_help'] = '<p>Questa impostazione determina la dimensione massima dei file che gli studenti e i docenti possono caricare. L\'impostazione influenza solo i file caricabili nell\'ambito del corso ed è a sua volta limitata nel suo valore massimo dalla analoga impostazione effettuata a livello di sito dagli Amministratori del sistema.</p>
 
-<p>E\' inoltre possibile limitare ulteriormente la dimensione massima dei file caricabili per ciascuna attività del corso.</p>';
+<p>È inoltre possibile limitare ulteriormente la dimensione massima dei file caricabili per ciascuna attività del corso.</p>';
 $string['maxnumberweeks'] = 'Numero massimo di sezioni';
 $string['maxnumberweeks_desc'] = 'Il numero massimo di sezioni presenti nel meni a discesa delle sezioni (si applica solamente ad alcuni formati di corso).';
 $string['maxnumcoursesincombo'] = 'Visualizza <a href="{$a->link}">{$a->numberofcourses} corsi</a>.';
@@ -1355,7 +1355,7 @@ $string['nameforlink'] = 'Come vuoi chiamare questo link?';
 $string['nameforpage'] = 'Nome';
 $string['navigation'] = 'Navigazione';
 $string['needed'] = 'Necessario';
-$string['networkdropped'] = 'E\' stato rilevato che la tua connessione internet è poco affidabile oppure si è interrotta.<br />
+$string['networkdropped'] = 'È stato rilevato che la tua connessione internet è poco affidabile oppure si è interrotta.<br />
 Le modifiche apportate non potranno essere salvate correttamente finché la connessione non migliorerà.';
 $string['never'] = 'Mai';
 $string['neverdeletelogs'] = 'Non eliminare mai i log';
@@ -1548,7 +1548,7 @@ $string['passwordpolicynomatch'] = 'La tua password non soddisfa più le regole 
 $string['passwordrecovery'] = 'Si, per favore aiutatemi per il login';
 $string['passwordsdiffer'] = 'Le password non corrispondono';
 $string['passwordsent'] = 'La password è stata spedita';
-$string['passwordsenttext'] = 'La nuova password è stata generata automaticamente, <a href="{$a->link}">se vuoi puoi cambiarla con una di tua scelta</a>.<p>E\' stata stata spedita un\'email a {$a->email}.</p>
+$string['passwordsenttext'] = 'La nuova password è stata generata automaticamente, <a href="{$a->link}">se vuoi puoi cambiarla con una di tua scelta</a>.<p>È stata stata spedita un\'email a {$a->email}.</p>
 <p><b> Per favore controlla la tua casella.</b></p>
 <p>La nuova password è stata generata automaticamente, <a href="{$a->link}">se vuoi puoi cambiarla con una di tua scelta</a>.</p>';
 $string['passwordset'] = 'La password è stata impostata.';
@@ -1677,7 +1677,7 @@ $string['recreatedcategory'] = 'La categoria {$a} è stata creata nuovamente';
 $string['redirect'] = 'Reindirizza';
 $string['reducesections'] = 'Riduci il numero di sezioni';
 $string['refresh'] = 'Aggiorna';
-$string['refreshingevents'] = 'Aggiorna eventi';
+$string['refreshingevents'] = 'Aggiornamento eventi';
 $string['registration'] = 'Registrazione di Moodle';
 $string['registrationcontact'] = 'Possibilità di essere contattati';
 $string['registrationcontactno'] = 'No, non desidero essere contattato';
@@ -1793,7 +1793,7 @@ $string['saveto'] = 'Salva in';
 $string['scale'] = 'Scala';
 $string['scale_help'] = '<p>I docenti possono creare scale di valutazione personalizzate utilizzabili
   in qualsiasi attività valutabile.</p>
-<p>E\' preferibile assegnare alle scale di valutazione dei nomi che le identifichino
+<p>È preferibile assegnare alle scale di valutazione dei nomi che le identifichino
   in modo chiaro: il nome infatti apparirà nella lista drop-down delle scale
   di valutazione disponibili e negli help sensibili al contesto.</p>
 <p>Le scale di valutazione sono definite tramite una lista di parole
@@ -1805,7 +1805,7 @@ $string['scale_help'] = '<p>I docenti possono creare scale di valutazione person
 <p>Le scale di valutazione personalizzate possono includere una descrizione
   del loro significato e suggerimenti su come potrebbero essere impiegate.
   Questa descrizione apparirà nelle pagine di help dei docenti e degli studenti.</p>
-<p>E\' anche possibile definire una o più scale di valutazione "standard"
+<p>È anche possibile definire una o più scale di valutazione "standard"
   a livello di sito da parte dell\'amministratore del sistema e queste saranno disponibili in tutti i corsi.</p>';
 $string['scales'] = 'Scale';
 $string['scalescustom'] = 'Scale personalizzate';
@@ -1813,7 +1813,7 @@ $string['scalescustomcreate'] = 'Aggiungi una scala';
 $string['scalescustomno'] = 'Non sono ancora state create scale personalizzate';
 $string['scalesstandard'] = 'Scale standard';
 $string['scalestandard'] = 'Scala standard';
-$string['scalestandard_help'] = '<p>E\' una scala definita a livello di sito e disponibile in qualsiasi corso.</p>';
+$string['scalestandard_help'] = '<p>È una scala definita a livello di sito e disponibile in qualsiasi corso.</p>';
 $string['scalestip'] = 'Per creare scale personalizzate, utilizza il link \'Scale\' nel menu di amministrazione del tuo corso.';
 $string['scalestip2'] = 'Per creare scale personalizzate, fate click sul link Scale presente nel blocco Amministrazione del corso, poi selezionate Modifica -> Scale';
 $string['schedule'] = 'Schedula';
@@ -1878,7 +1878,7 @@ $string['separate'] = 'Separato';
 $string['separateandconnected'] = 'Stile di apprendimento Separato e Collegato';
 $string['separateandconnectedinfo'] = 'Scala basata sulla teoria della conoscenza isolata e della conoscenza collegata. La teoria descrive due modi differenti con i quali possiamo valutare e imparare le cose che vediamo e che sentiamo.<ul>
 <li>Il <strong>Conoscitore isolato</strong> preferisce rimanere il più obiettivo possibile senza tener conto dei propri sentimenti e delle proprie emozioni. Durante una discussione con persone che hanno idee diverse, gli piace difendere le proprie, usando la logica per trovare difetti nelle idee altrui.
-<li>Il <strong>Conoscitore collegato</strong> è più disponibile verso le altre persone. E\' in grado di comunicare meglio e tende ad ascoltare e porre domande finché entra in sintonia e  "capisce le cose dal punto di vista degli altri". Impara cercando di condividere le esperienze che hanno portato alla conoscenza che ha trovato negli altri.</li></ul>';
+<li>Il <strong>Conoscitore collegato</strong> è più disponibile verso le altre persone. È in grado di comunicare meglio e tende ad ascoltare e porre domande finché entra in sintonia e  "capisce le cose dal punto di vista degli altri". Impara cercando di condividere le esperienze che hanno portato alla conoscenza che ha trovato negli altri.</li></ul>';
 $string['servererror'] = 'Si è verificato un errore durante la comunicazione con il server';
 $string['serverlocaltime'] = 'Ora locale del server';
 $string['sessionforceclean'] = 'Per motivi di sicurezza, in questa sessione gli script generati dall\'utente sono stati disabilitati.';
@@ -1891,7 +1891,7 @@ $string['shortname'] = 'Nome abbreviato';
 $string['shortnamecollisionwarning'] = '[*] = Questo Titolo abbreviato è già utilizzato da un corso e sarà necessario modificarlo all\'approvazione';
 $string['shortnamecourse'] = 'Titolo abbreviato';
 $string['shortnamecourse_help'] = '<p>Molte istituzioni assegnano ai corsi delle sigle come
-BP102 o COMMS. E\' possibile usare queste sigle come Titolo abbreviato, oppure utilizzare un titolo a piacere. Il Titolo abbreviato sarà usato al posto del Titolo del corso in tutte quelle situazioni dove è pratico usare stringhe di caratteri più brevi, come ad esempio nelle briciole di pane o nelle intestazioni delle email.</p>';
+BP102 o COMMS. È possibile usare queste sigle come Titolo abbreviato, oppure utilizzare un titolo a piacere. Il Titolo abbreviato sarà usato al posto del Titolo del corso in tutte quelle situazioni dove è pratico usare stringhe di caratteri più brevi, come ad esempio nelle briciole di pane o nelle intestazioni delle email.</p>';
 $string['shortnametaken'] = 'Titolo abbreviato già in uso in un altro corso ({$a})';
 $string['shortnameuser'] = 'Nome utente abbreviato';
 $string['shortsitename'] = 'Nome abbreviato del sito (es. singola parola)';

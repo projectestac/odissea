@@ -511,6 +511,21 @@ abstract class oauth2_client extends curl {
     public function get_login_url() {
 
         $callbackurl = self::callback_url();
+
+        // XTEC ************ AFEGIT - Modified behavior for login to IDI (Azure AD) via oAuth2. Àgora is a multisite system and can
+        //                            only have an application in Azure for all Moodle sites, so they all share the same return URL
+        //                            (https://domain/portal/oidc.php). The script oidc.php redirects the request to the proper
+        //                            Moodle site.
+        // 2022.10.04 @aginard
+        // Some oAuth clients, like Dropbox, don't have an issuer, so a check is required. There is also a special case for a
+        // client for IDI. It is identified by the presence of the text 'IDI' in the display name.
+        $isIDI = method_exists($this, 'get_issuer') && is_number(strpos($this->get_issuer()->get('loginpagename'), 'IDI'));
+        if ($isIDI && function_exists('is_agora') && is_agora()) {
+            global $agora;
+            $callbackurl = new \moodle_url($agora['server']['server'] . '/portal/oidc.php');
+        }
+        // ************ FI
+
         $defaultparams = [
             'client_id' => $this->clientid,
             'response_type' => 'code',
@@ -555,6 +570,21 @@ abstract class oauth2_client extends curl {
      */
     public function upgrade_token($code) {
         $callbackurl = self::callback_url();
+
+        // XTEC ************ AFEGIT - Modified behavior for login to IDI (Azure AD) via oAuth2. Àgora is a multisite system and can
+        //                            only have an application in Azure for all Moodle sites, so they all share the same return URL
+        //                            (https://domain/portal/oidc.php). The script oidc.php redirects the request to the proper
+        //                            Moodle site.
+        // 2022.10.04 @aginard
+        // Some oAuth clients, like Dropbox, don't have an issuer, so a check is required. There is also a special case for a
+        // client for IDI. It is identified by the presence of the text 'IDI' in the display name.
+        $isIDI = method_exists($this, 'get_issuer') && is_number(strpos($this->get_issuer()->get('loginpagename'), 'IDI'));
+        if ($isIDI && function_exists('is_agora') && is_agora()) {
+            global $agora;
+            $callbackurl = new \moodle_url($agora['server']['server'] . '/portal/oidc.php');
+        }
+        // ************ FI
+
         $params = array('code' => $code,
             'grant_type' => 'authorization_code',
             'redirect_uri' => $callbackurl->out(false),

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'حقل زر اختيار';
-$string['pluginname'] = 'زر الاختيار';
-$string['privacy:metadata'] = 'إن مكون حقل أزرار الراديو لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل جداول معرفة في mod_data.';
+$string['fieldtypelabel'] = 'أزرار الاختيار';
+$string['pluginname'] = 'أزرار الاختيار';
+$string['privacy:metadata'] = 'إن مُكون حقل أزرار الراديو لا يخزن أي بيانات شخصية، بل يستعمل الجداول المعرفة في mod_data.';

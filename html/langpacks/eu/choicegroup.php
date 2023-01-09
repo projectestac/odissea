@@ -68,6 +68,7 @@ $string['choicetext'] = 'Aukeraren testua';
 $string['chooseaction'] = 'Aukeratu ekintza bat...';
 $string['choosegroup'] = 'Aukeratu talde bat';
 $string['collapse_all_groupings'] = 'Tolestu Talde-multzo Guztiak';
+$string['completiondetail:submit'] = 'Aukeratu talde bat';
 $string['completionsubmit'] = 'Erakutsi osatu gisa erabiltzaileak aukeratzen duenean';
 $string['createdate'] = 'Taldearen sortze-data';
 $string['defaultsettings'] = 'Ezarpen lehenetsiak';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'حقل صورة';
+$string['fieldtypelabel'] = 'الصورة';
 $string['pluginname'] = 'الصورة';
-$string['privacy:metadata'] = 'إن مكون حقل الصورة لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل الجداول المعرفة في mod_data.';
+$string['privacy:metadata'] = 'إن مُكون حقل الصورة لا يخزن أي بيانات شخصية، بل يستعمل الجداول المعرفة في mod_data.';

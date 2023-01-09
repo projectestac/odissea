@@ -3371,6 +3371,7 @@
       <VENDOR name="oracle" version="11.2" />
     </DATABASE>
     <PHP version="7.3.0" level="required">
+      <RESTRICT function="restrict_php_version_81" message="unsupportedphpversion81" />
     </PHP>
     <PCREUNICODE level="optional">
       <FEEDBACK>
@@ -3557,6 +3558,7 @@
       <VENDOR name="oracle" version="11.2" />
     </DATABASE>
     <PHP version="7.3.0" level="required">
+      <RESTRICT function="restrict_php_version_81" message="unsupportedphpversion81" />
     </PHP>
     <PCREUNICODE level="optional">
       <FEEDBACK>
@@ -3779,11 +3781,6 @@
       <PHP_EXTENSION name="tokenizer" level="optional">
         <FEEDBACK>
           <ON_CHECK message="tokenizerrecommended" />
-        </FEEDBACK>
-      </PHP_EXTENSION>
-      <PHP_EXTENSION name="xmlrpc" level="optional">
-        <FEEDBACK>
-          <ON_CHECK message="xmlrpcrecommended" />
         </FEEDBACK>
       </PHP_EXTENSION>
       <PHP_EXTENSION name="soap" level="optional">

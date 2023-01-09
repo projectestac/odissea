@@ -57,7 +57,7 @@ $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, 
 $string['invalidstoredurl'] = 'Non è possibile visualizzare la risorsa, l\'URL non è valida';
 $string['invalidurl'] = 'L\'URL inserito non è valido';
 $string['modulename'] = 'URL';
-$string['modulename_help'] = 'Il modulo URL consente ai docenti di inserire link web come risorse del corso. E\' possibile creare link verso qualsiasi URL liberamente disponibile online, copiando ed incollando l\'URL, oppure scegliendo un file da repository come Flickr, youtube o Wikimedia tramite il file picker (in funzione del repository attivi nel sito).
+$string['modulename_help'] = 'Il modulo URL consente ai docenti di inserire link web come risorse del corso. È possibile creare link verso qualsiasi URL liberamente disponibile online, copiando ed incollando l\'URL, oppure scegliendo un file da repository come Flickr, youtube o Wikimedia tramite il file picker (in funzione del repository attivi nel sito).
 
 Sono disponibili molte opzioni di visualizzazione per aprire l\'URL, ad esempio in una finestra popup oppure incorporandola, ed anche opzioni avanzate per inviare all\'URL parametri come il nome dello studente.
 
@@ -66,7 +66,7 @@ $string['modulenameplural'] = 'URL';
 $string['page-mod-url-x'] = 'Qualsiasi pagina con modulo URL';
 $string['parameterinfo'] = '&amp;parametro=variabile';
 $string['parametersheader'] = 'Parametri URL';
-$string['parametersheader_help'] = 'E\' possibile posporre automaticamente all\'URL alcune variabili interne di Moodle. Inserisci un nome per il parametro e scegli la variabile corrispondente.';
+$string['parametersheader_help'] = 'È possibile posporre automaticamente all\'URL alcune variabili interne di Moodle. LA funzione è particolarmente utile se l\'URL è una pagina interattiva in grado di accettare parametri come ad esempio il nome dell\'utente. Inserire il nome del parametro nel campo di testo e a fianco selezionare la variabile di Moodle desiderata.';
 $string['pluginadministration'] = 'Gestione URL';
 $string['pluginname'] = 'URL';
 $string['popupheight'] = 'Altezza popup (in pixel)';

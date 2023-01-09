@@ -159,7 +159,7 @@ $string['deletepagenamed'] = 'Elimina pagina: {$a}';
 $string['deleting'] = 'Eliminazione';
 $string['deletingpage'] = 'Eliminazione pagina: {$a}';
 $string['dependencyon'] = 'Dipendente da';
-$string['dependencyon_help'] = 'Rende la lezione dipendente dai risultati ottenuti dallo studente in un\'altra lezione presente nello stesso corso. E\' possibile usare qualsiasi combinazione di
+$string['dependencyon_help'] = 'Rende la lezione dipendente dai risultati ottenuti dallo studente in un\'altra lezione presente nello stesso corso. È possibile usare qualsiasi combinazione di
 Tempo impiegato, Completamento o voto.';
 $string['description'] = 'Descrizione';
 $string['deselectallattempts'] = 'Deseleziona tutti i tentativi';
@@ -221,24 +221,24 @@ $string['essaynotgradedyet'] = 'Il testo libero non è stati ancora valutato';
 $string['essayresponses'] = 'Risposte a testo libero';
 $string['essays'] = 'Testi liberi';
 $string['essayscore'] = 'Punteggio testo libero';
-$string['eventcontentpageviewed'] = 'Visualizzata pagina di contenuto';
-$string['eventessayassessed'] = 'Valutata domanda a testo libero';
-$string['eventessayattemptviewed'] = 'Visualizzata domanda a testo libero';
-$string['eventhighscoreadded'] = 'Aggiunto voto migliore nella lezione';
-$string['eventhighscoresviewed'] = 'Visualizzato voto migliore nella lezione';
-$string['eventlessonended'] = 'Terminata lezione';
-$string['eventlessonrestarted'] = 'Ri-iniziata lezione';
-$string['eventlessonresumed'] = 'Riavviata lezione';
-$string['eventlessonstarted'] = 'Iniziata lezione';
-$string['eventoverridecreated'] = 'Creata personalizzazione lezione';
-$string['eventoverridedeleted'] = 'Eliminata personalizzazione lezione';
-$string['eventoverrideupdated'] = 'Aggiornata personalizzazione lezione';
-$string['eventpagecreated'] = 'Creata pagina';
-$string['eventpagedeleted'] = 'Eliminata pagina';
-$string['eventpagemoved'] = 'Spostata pagina';
-$string['eventpageupdated'] = 'Aggiornata pagina';
+$string['eventcontentpageviewed'] = 'Visualizzazione pagina di contenuto';
+$string['eventessayassessed'] = 'Valutazione domanda a testo libero';
+$string['eventessayattemptviewed'] = 'Visualizzazione domanda a testo libero';
+$string['eventhighscoreadded'] = 'Aggiunta voto migliore nella lezione';
+$string['eventhighscoresviewed'] = 'Visualizzazione voto migliore della lezione';
+$string['eventlessonended'] = 'Termine lezione';
+$string['eventlessonrestarted'] = 'Riavviamento lezione';
+$string['eventlessonresumed'] = 'Riavviamento lezione';
+$string['eventlessonstarted'] = 'Avviamento lezione';
+$string['eventoverridecreated'] = 'Creazione personalizzazione lezione';
+$string['eventoverridedeleted'] = 'Eliminazione personalizzazione lezione';
+$string['eventoverrideupdated'] = 'Aggiornamento personalizzazione lezione';
+$string['eventpagecreated'] = 'Creazione pagina';
+$string['eventpagedeleted'] = 'Eliminazione pagina';
+$string['eventpagemoved'] = 'Spostamento pagina';
+$string['eventpageupdated'] = 'Aggiornamento pagina';
 $string['eventquestionanswered'] = 'Data risposta';
-$string['eventquestionviewed'] = 'Visualizzata domanda';
+$string['eventquestionviewed'] = 'Visualizzazione domanda';
 $string['false'] = 'Falso';
 $string['fileformat'] = 'Formato file';
 $string['finalwrong'] = 'Non è suffciente.';
@@ -324,13 +324,13 @@ $string['matchingpair'] = 'Coppia corrispondenza {$a}';
 $string['maxgrade'] = 'Voto massimo';
 $string['maxgrade_help'] = 'L\'impostazione determina il voto massima che può essere ottenuta nella lezione. Se il valore è impostato a 0, la lezione non apparirà nelle valutazioni.';
 $string['maximumnumberofanswersbranches'] = 'Numero massimo di risposte';
-$string['maximumnumberofanswersbranches_help'] = 'Specifica il numero max. di risposte utilizzabili nella lezione. Se la lezione usa solamente domande del tipo Vero/Falso questo valore può essere impostato a 2. E\' possibile cambiare l\'impostazione in qualsiasi momento in quanto influisce solo la vista docente, senza alterare i dati.';
+$string['maximumnumberofanswersbranches_help'] = 'Specifica il numero max. di risposte utilizzabili nella lezione. Se la lezione usa solamente domande del tipo Vero/Falso questo valore può essere impostato a 2. È possibile cambiare l\'impostazione in qualsiasi momento in quanto influisce solo la vista docente, senza alterare i dati.';
 $string['maximumnumberofattempts'] = 'Numero massimo di tentativi per domanda';
 $string['maximumnumberofattempts_help'] = 'Il massimo numero di tentativi concesso per rispondere a ciascuna domanda. Rispondendo correttamente in modo ripetuto, al termine dei tentativi consentiti verrà visualizzata la pagina successiva della lezione.';
-$string['maximumnumberofattemptsreached'] = 'E\' stato raggiunto il massimo numero di tentativi - Passaggio alla pagina successiva';
+$string['maximumnumberofattemptsreached'] = 'È stato raggiunto il massimo numero di tentativi - Passaggio alla pagina successiva';
 $string['mediaclose'] = 'Visualizza il pulsante chiudi';
 $string['mediafile'] = 'Media collegato';
-$string['mediafile_help'] = 'E\' possibile caricare un file multimediale da utilizzare nella lezione. Per visualizzare il media in tutte le pagine della lezione sarà disponibile il link \'Click per visualizzare\' all\'internod i un blocco chiamato \'Media collegato\'.';
+$string['mediafile_help'] = 'È possibile caricare un file multimediale da utilizzare nella lezione. Per visualizzare il media in tutte le pagine della lezione sarà disponibile il link \'Click per visualizzare\' all\'interno di un blocco chiamato \'Media collegato\'.';
 $string['mediafilepopup'] = 'Clicca qui per visualizzare';
 $string['mediaheight'] = 'Altezza finestra popup';
 $string['mediawidth'] = 'Larghezza finestra popup';
@@ -342,13 +342,13 @@ $string['modattempts'] = 'Possibilità  di revisione';
 $string['modattempts_help'] = 'Consentirà allo studente di navigare all\'interno della lezione ripartendo dall\'inizio.';
 $string['modattemptsnoteacher'] = 'La revisione funziona solo per gli studenti.';
 $string['modulename'] = 'Lezione';
-$string['modulename_help'] = 'Il modulo di attività lezione consente al docenti di distribuire contenuti o esercitazioni in modo interessante e flessibile. E\' possibile usare la lezione per creare pagine da fruire sequenzialmente o con diversi percorsi ed opzioni.
+$string['modulename_help'] = 'Il modulo di attività lezione consente al docenti di distribuire contenuti o esercitazioni in modo interessante e flessibile. È possibile usare la lezione per creare pagine da fruire sequenzialmente o con diversi percorsi ed opzioni.
 
-E\' possibile includere nelle pagine domande di vario tipo come domande a scelta multipla, a risposta breve ed a  corrispondenza. In base alla risposta data, lo studente può proseguire la lezione, essere riportato alla pagina precedente oppure diretto verso un percorso composto da altre pagine.
+È possibile includere nelle pagine domande di vario tipo come domande a scelta multipla, a risposta breve ed a  corrispondenza. In base alla risposta data, lo studente può proseguire la lezione, essere riportato alla pagina precedente oppure diretto verso un percorso composto da altre pagine.
 
 Se lo si desidera, è possibile valutare l\'attività ed il punteggio ottenuto sarà memorizzato nel registro valutatore.
 
-E\' possibile usare le lezioni per:
+È possibile usare le lezioni per:
 
 * auto apprendimento su un dato argomento
 * giochi di ruolo e esercizi di decision making

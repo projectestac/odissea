@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filesize'] = 'حجم الملف:';
+$string['selectall'] = 'إختيار الكل';

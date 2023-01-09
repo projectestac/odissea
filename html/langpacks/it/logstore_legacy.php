@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventlegacylogged'] = 'Registrato nel log evento legacy';
+$string['eventlegacylogged'] = 'Registrazione evento legacy nel log';
 $string['loglegacy'] = 'Registra nel log legacy';
 $string['loglegacy_help'] = 'Il plugin memorizza i dati di log nella tabella legacy (mdl_log). Questa funzionalità è stata rimpiazzata da nuovi plugin di logging più efficienti e più ricchi di funzioni. Il plugin Log legacy dovrebbe essere usato solamente in presenza di report che effettuano query sulla vecchia tabella di log. La scrittura sul Log legacy aumenta il carico, si raccomanda di disabilitare plugin legacy se non strettamente necessario.';
 $string['pluginname'] = 'Log legacy';

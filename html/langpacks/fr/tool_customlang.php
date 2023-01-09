@@ -49,6 +49,7 @@ $string['customlang:export'] = 'Exporter les traductions locales';
 $string['customlang:view'] = 'Voir les chaînes de caractères locales';
 $string['export'] = 'Exporter des chaînes personnalisées';
 $string['exportfilter'] = 'Sélectionner le(s) composant(s) à exporter';
+$string['exportzipfilename'] = 'export-lang-perso-{$a->lang}.zip';
 $string['filter'] = 'Filtrer les chaînes';
 $string['filtercomponent'] = 'Afficher les chaînes de ces composants';
 $string['filtercustomized'] = 'Chaînes personnalisées seulement';

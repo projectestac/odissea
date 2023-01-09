@@ -39,4 +39,4 @@ $string['privacy:metadata:assignmentid'] = 'Aufgaben-ID';
 $string['privacy:metadata:commentpurpose'] = 'Der Text des Kommentars';
 $string['privacy:metadata:filepurpose'] = 'Feedback-Dateien des/der Trainer/in für den/die Teilnehmer/in';
 $string['privacy:metadata:gradepurpose'] = 'Bewertungs-ID für Kommentar';
-$string['privacy:metadata:tablesummary'] = 'Speichert Kommentare, die der Bewertende als Feedback zu einer Lösung des Teilnehmenden erstellt hat';
+$string['privacy:metadata:tablesummary'] = 'Speichert Kommentare, die die Bewertet/innen als Feedback zu einer Lösung von Teilnehmer/innen erstellt haben.';

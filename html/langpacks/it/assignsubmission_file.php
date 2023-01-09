@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Tipi di file accettati';
-$string['acceptedfiletypes_help'] = 'E\' possibile limitare i tipi di file accettati inserendo un elenco di estensioni. Lasciando il campo vuoto saranno accettati  tutti i tipi di file.';
+$string['acceptedfiletypes_help'] = 'È possibile limitare i tipi di file accettati inserendo un elenco di estensioni. Lasciando il campo vuoto saranno accettati  tutti i tipi di file.';
 $string['configmaxbytes'] = 'Dimensione massima file';
 $string['countfiles'] = '{$a} file';
 $string['default'] = 'Abilitato di default';
@@ -34,7 +34,7 @@ $string['default_help'] = 'Questo metodo di consegna sarà abilitato di default 
 $string['defaultacceptedfiletypes'] = 'Tipi di file accettati di default';
 $string['enabled'] = 'Consegna file';
 $string['enabled_help'] = 'Consente agli studenti di consegnare file.';
-$string['eventassessableuploaded'] = 'Caricato file';
+$string['eventassessableuploaded'] = 'Caricamento file';
 $string['file'] = 'Consegna file';
 $string['maxbytes'] = 'Dimensione massima file';
 $string['maxfiles'] = 'Numero massimo di file per ogni consegna';

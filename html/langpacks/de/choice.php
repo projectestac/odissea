@@ -85,7 +85,7 @@ $string['limita'] = 'Obergrenze: {$a}';
 $string['limitanswers'] = 'Anzahl der Antworten bei den Abstimmungsoptionen beschränken';
 $string['limitanswers_help'] = 'Diese Option setzt die maximale Anzahl von möglichen Stimmabgaben für die betreffende Abstimmoption. Sobald diese Obergrenze erreicht ist, kann sich niemand mehr für diese Abstimmoption entscheiden.
 
-Wenn Sie diese Aktivität im Gruppenmodus nutzen, gilt dieses Limit pro Gruppe. Wenn die Obergrenze beispielsweise auf 5 gesetzt wird, dann können jeweils 5 Mitglieder einer Gruppe sich für diese Option entscheiden. Wenn es 3 Gruppen gibt, würde das bedeuten, dass bis zu 5 x 3 = 15 Teilnehmende diese Option wählen könnten.
+Wenn Sie diese Aktivität im Gruppenmodus nutzen, gilt dieses Limit pro Gruppe. Wenn die Obergrenze beispielsweise auf 5 gesetzt wird, dann können jeweils 5 Mitglieder einer Gruppe sich für diese Option entscheiden. Wenn es 3 Gruppen gibt, würde das bedeuten, dass bis zu 5 x 3 = 15 Teilnehmer/innen diese Option wählen könnten.
 
 Wenn die Obergrenzen deaktiviert sind, gibt es keine Beschränkungen bei der Abstimmung.';
 $string['limitno'] = 'Obergrenze {no}';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allfeatures'] = 'كل الميزات';
 $string['backgroundcolour'] = 'لون الخلفية';
 $string['cellfilled'] = 'تم إملاء 1×1×1';
 $string['cellfilled_desc'] = '1×1×1 وحدة الخلية ذات الوجوه المملوءة';

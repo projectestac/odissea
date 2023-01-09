@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allusers'] = 'كل المستخدمين ككل';
 $string['event_rating_created'] = 'تقييم تم إنشاؤه';
 $string['event_rating_deleted'] = 'تقييم تم حذفه';
 $string['preventzero'] = 'مَنع التقييم بصفر';

@@ -80,7 +80,7 @@ $string['completion-n-override'] = 'No completada (establert per {$a})';
 $string['completion-pass'] = 'Completada (s\'ha assolit la qualificació)';
 $string['completion-y'] = 'Completada';
 $string['completion-y-override'] = 'Completada (establert per {$a})';
-$string['completion_automatic'] = 'Mostra l\'activitat com completada si es compleixen les condicions';
+$string['completion_automatic'] = 'Mostra l\'activitat com a completada si es compleixen les condicions';
 $string['completion_help'] = 'Si s\'habilita, es fa un seguiment de compleció de l\'activitat, de forma manual o de forma automàtica, sobre la base de certes condicions. Es poden configurar múltiples condicions. Si es fa així, l\'activitat només es considerarà completada quan es complisquen TOTES les condicions.
 
 Una marca al costat del nom de l\'activitat en la pàgina del curs indica que l\'activitat s\'ha completat.';

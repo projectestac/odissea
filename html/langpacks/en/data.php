@@ -254,6 +254,10 @@ $string['menu'] = 'Menu';
 $string['menuchoose'] = 'Choose...';
 $string['missingdata'] = 'Data id or object must be provided to field class';
 $string['missingfield'] = 'Programmer error: You must specify field and/or data when defining field class.';
+$string['missingfieldtype'] = 'Field type for {$a->name} not found';
+$string['missingfieldtypeimport'] = 'The following fields were not imported because their corresponding field types are not installed:';
+$string['missingfieldtypes'] = 'The following fields do not have their corresponding field types installed and will not be included in the forms when adding or editing entries.
+ Their labels may still show on the form, so please update the "Add entry template" accordingly:';
 $string['modulename'] = 'Database';
 $string['modulename_help'] = 'Database enables participants to create, maintain, and search a collection of entries.
 
@@ -395,6 +399,7 @@ $string['timemodified'] = 'Time modified';
 $string['todatabase'] = 'to this database.';
 $string['type'] = 'Field type';
 $string['undefinedprocessactionmethod'] = 'No action method defined in Data_Preset to handle action "{$a}".';
+$string['unknown'] = 'Unknown field';
 $string['unsupportedexport'] = '({$a->fieldtype}) cannot be exported.';
 $string['unsupportedfields'] = 'Unsupported fields';
 $string['unsupportedfieldslist'] = 'The following fields cannot be exported:';

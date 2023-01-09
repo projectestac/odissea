@@ -84,7 +84,7 @@ $string['directorysettings'] = '<p>Verifica e conferma la correttezza degli indi
 
 <p><b>Cartella di Moodle:</b> Specifica il percorso assoluto della cartella dove verrà installato Moodle. Accertarsi che il nome della cartella tenga conto di eventuali lettere maiuscole o minuscole.</p>
 
-<p><b>Cartella dati:</b> E\' la cartella dove Moodle inserirà i file caricati dagli utenti. Il web server (in genere \'nobody\' o \'apache\') DEVE avere i permessi di lettura e di scrittura su questa cartella. In aggiunta, la cartella dei dati non deve essere direttamente accessibile via web. L\'installer cercherà di creare la cartella se non esistente.</p>';
+<p><b>Cartella dati:</b> È la cartella dove Moodle inserirà i file caricati dagli utenti. Il web server (in genere \'nobody\' o \'apache\') DEVE avere i permessi di lettura e di scrittura su questa cartella. In aggiunta, la cartella dei dati non deve essere direttamente accessibile via web. L\'installer cercherà di creare la cartella se non esistente.</p>';
 $string['directorysettingshead'] = 'Verifica e conferma la correttezza degli indirizzi web e dei percorsi assoluti di installazione';
 $string['directorysettingssub'] = '<b>Indirizzo web:</b>
 Specifica l\'indirizzo web per raggiungere la tua installazione Moodle. Se l\'installazione è raggiungibile da più di una URL, allora specifica la URL che sarà utilizzata dagli studenti senza aggiungere uno slash al termine della URL.
@@ -93,7 +93,7 @@ Specifica l\'indirizzo web per raggiungere la tua installazione Moodle. Se l\'in
 <b>Cartella di Moodle</b> Specifica il percorso assoluto della cartella dove stai installando Moodle. Accertati che il nome della cartella tenga conto di eventuali lettere maiuscole o minuscole.
 <br/>
 <br/>
-<b>Cartella dati:</b> E\' la cartella dove Moodle inserirà i file caricati dagli utenti. Il web server (in genere \'nobody\' o \'apache\') DEVE avere i permessi di lettura e di scrittura su questa cartella. In aggiunta, la cartella dei dati non deve essere direttamente accessibile via web. L\'installer cercherà di creare questo folder se non esiste,';
+<b>Cartella dati:</b>È la cartella dove Moodle inserirà i file caricati dagli utenti. Il web server (in genere \'nobody\' o \'apache\') DEVE avere i permessi di lettura e di scrittura su questa cartella. In aggiunta, la cartella dei dati non deve essere direttamente accessibile via web. L\'installer cercherà di creare questo folder se non esiste,';
 $string['dirroot'] = 'Cartella di Moodle';
 $string['dirrooterror'] = 'L\'impostazione \'Cartella di Moodle\' sembra essere errata - non è possibile trovare l\'installazione di Moodle nel percorso specificato. Il valore riportato sotto  è stato resettato.';
 $string['download'] = 'Scarica';
@@ -187,7 +187,7 @@ $string['phpextension'] = '{$a} estensioni PHP';
 $string['phpversion'] = 'Versione PHP';
 $string['phpversionhelp'] = '<p>Moodle necessita come minimo della versione 5.6.5 o 7.1del PHP. (La versione 7.0.x ha alcuni limiti nel motore)</p>
 <p>La versione installata nel sistema è la {$a}</p>
-<p>E\' necessario aggiornare la versione del PHP oppure spostarsi su un host che abbia una versione più aggiornata del PHP.<br>';
+<p>È necessario aggiornare la versione del PHP oppure spostarsi su un host che abbia una versione più aggiornata del PHP.<br>';
 $string['releasenoteslink'] = 'Per informazioni su questa versione di Moodle, fai riferimento alle Note di Rilascio su {$a}';
 $string['safemode'] = 'Safe mode';
 $string['safemodeerror'] = 'Moodle può avere problemi con il safe mode impostato a on';

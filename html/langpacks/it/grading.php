@@ -31,12 +31,12 @@ $string['changeactivemethod'] = 'Cambia il metodo di valutazione attivo in';
 $string['clicktoclose'] = 'click per chiudere';
 $string['error:notinrange'] = 'La valutazione \'{$a->grade}\' non è valida. le valutazioni devono essere tra 0 e {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Non è possibile istanziare lo schema di valutazione';
-$string['formnotavailable'] = 'E\' stato selezionato il metodo di valutazione avanzato ma lo schema di valutazione non è ancora pronto. Puoi prepararlo tramite il collegamento disponibile nel blocco Amministrazione';
+$string['formnotavailable'] = 'È stato selezionato il metodo di valutazione avanzato ma lo schema di valutazione non è ancora pronto. Puoi prepararlo tramite il collegamento disponibile nel blocco Amministrazione';
 $string['gradingformunavailable'] = 'Attenzione: il metodo di valutazione avanzato non è ancora pronto all\'uso. Verrà utilizzata la valutazione semplice diretta finché non sarà disponibile uno schema di valutazione valido.';
 $string['gradingmanagement'] = 'Valutazione avanzata';
 $string['gradingmanagementtitle'] = 'Valutazione avanzata: {$a->component} ({$a->area})';
 $string['gradingmethod'] = 'Metodo di valutazione';
-$string['gradingmethod_help'] = 'E\' possibile scegliere il metodo di valutazione avanzata da usare per il calcolo dei voti in un determinato contesto.
+$string['gradingmethod_help'] = 'È possibile scegliere il metodo di valutazione avanzata da usare per il calcolo dei voti in un determinato contesto.
 
 Per disabilitare la valutazione avanzata ed usare la valutazione default, scegli "Valutazione semplice diretta".';
 $string['gradingmethodnone'] = 'Valutazione semplice diretta';
@@ -80,7 +80,7 @@ $string['privacy:metadata:grading_instances:timemodified'] = 'Data e ora dell\'u
 $string['privacy:metadata:gradingformpluginsummary'] = 'Data del metodo di valutazione';
 $string['searchownforms'] = 'Includi i miei schemi';
 $string['searchtemplate'] = 'Ricerca schemi di valutazione';
-$string['searchtemplate_help'] = 'E\' possibile cercare uno schema di valutazione da usare come modello. Inserisci le parole da cercare nel nome degli schemi, nella descrizione o nel testo dello schema. Per cercare una frase, racchiudi le parole tra doppi apici.
+$string['searchtemplate_help'] = 'È possibile cercare uno schema di valutazione da usare come modello. Inserisci le parole da cercare nel nome degli schemi, nella descrizione o nel testo dello schema. Per cercare una frase, racchiudi le parole tra doppi apici.
 
 Di default i risultati della ricerca includeranno solo gli schemi salvati come modello. Se lo desideri, puoi includere nei risultati i tuoi schemi, in questo modo puoi riutilizzare facilmente i tuoi schemi senza doverli pubblicare. Possono essere riutilizzati solo gli schemi contrassegnati come "Pronto all\'uso" .';
 $string['statusdraft'] = 'Bozza';

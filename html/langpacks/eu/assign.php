@@ -350,7 +350,7 @@ $string['modulename_help'] = 'Zeregina jarduera moduluaren bidez irakasleak komu
 
 Ikasleek eduki digitalak bidal ditzakete (fitxategiak), testu-dokumentuak kalkulu orriak, irudiak, audio-klipak edo bideo-klipak. Halaber, ikasleek zeregina egiteko garaian, idatz dezakete testu bat zuzenean testu-editorean. Zereginaren beste erabilera posible bat da \'mundu errealeko\' ataza bat ikasleei gogoraraztea, adibidez, arte-lan bat edo eduki digitalik eskatzen ez duen edozein lan. Ikasleek lana bidal dezakete banaka edo talde baten izenean.
 
-Irakasleek, zereginak orrazterakoan, feedbackak eta iruzkinak jar ditzakete, fitxategiak igo ditzakete, adibidez: ikasleen dokumentuetan egindako oharrak, dokumentu berriak iruzkinekin edo hitzezko feedbacka duten audioak. Zereginak kalifikatzeko erabil daitezke zenbakiak, eskalak edo errubrikak bezalako mekanismo aurreratuak. Azken kalifikazioak kalifikazio-liburuan gordetzen dira.';
+Irakasleek, zereginak orrazterakoan, feedbackak eta iruzkinak jar ditzakete, fitxategiak igo ditzakete, adibidez: ikasleen dokumentuetan egindako oharrak, dokumentu berriak iruzkinekin edo hitzezko feedbacka duten audioak. Zereginak kalifikatzeko erabil daitezke zenbakiak, eskalak edo errubrikak bezalako kalifikazio-metodo aurreratuak. Azken kalifikazioak kalifikazio-liburuan gordetzen dira.';
 $string['modulenameplural'] = 'Zereginak';
 $string['moreusers'] = '{$a} gehiago...';
 $string['multipleteams'] = 'Talde bateko baino gehiagoko partaidea';

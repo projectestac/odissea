@@ -49,4 +49,4 @@ $string['processgrades'] = 'Importar calificaciones';
 $string['skiprecord'] = 'pasar por alto registro';
 $string['updatedgrades'] = 'Actualizadas <strong>{$a->gradeupdatescount}</strong> instancias de calificaciones y <strong>{$a->feedbackupdatescount}</strong> de retroalimentación.';
 $string['updaterecord'] = 'Actualizar el registro';
-$string['uploadgrades'] = 'Subir la hojas de calificaciones';
+$string['uploadgrades'] = 'Subir la hoja de calificaciones';

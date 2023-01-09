@@ -26,9 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activateindividuals'] = 'تفعيل الوظيفة الفردية';
+$string['all'] = 'الكل';
+$string['all_absent'] = 'كل المشاركين الغائبين';
+$string['all_attendant'] = 'كل المشاركين الحاضرين';
+$string['allowresubmit'] = 'السماح بإعادة التسليم';
 $string['alwaysshowdescription'] = 'إظهار الوصف دائمًا';
 $string['autograde_confirm'] = 'أنت على وشك تحديث التقديرات والإفادات العائدة لـ <strong>{$a}</strong>. التقديرات والإفادات السابقة ستتم الكتابة عليها.';
 $string['autograde_notsupported'] = 'هذا المقياس غير مدعوم من قبل التقييم التلقائي.';
+$string['autograde_strall'] = 'كل التسليمات';
+$string['availabledate'] = 'السماح بالتسليمات من';
 $string['cantfixevent'] = 'تعذر تثبيت الحدث ذي المُعرَّف {$a->id}، المسمى {$a->name} ({$a->matches}
 من التطابقات).';
 $string['checkmarkmail'] = '{$a->grader} نشر إفادة بشأن
@@ -80,6 +86,7 @@ $string['flexiblenaming_help'] = 'إذا تم تفعيله، سيتم استعم
 $string['forcesinglelinenames'] = 'فرض الأسماء بسطر واحد';
 $string['gradingdue_help'] = 'التاريخ المتوقع لإكمال تصحيح التسليمات. هذا التاريخ يستعمل لمنح الأولوية في إشعارات لوحة التحكم للمعلمين.';
 $string['informstudents_help'] = 'إذا تم تفعيله، سيتلقى المشارك إشعاراً عن حالة حضوره.';
+$string['latesubmissionsaccepted'] = 'مسموح حتى {$a}';
 $string['page-mod-checkmark-view'] = 'الصفحة الرئيسية لوحدة العلامة المرجعية';
 $string['page-mod-checkmark-x'] = 'كل صفحة لوحدة علامة التأشير';
 $string['pagesize'] = 'التسليمات الظاهرة لكل صفحة';

@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowupdateexisting'] = 'السماح بتحديث المُدخلات الموجودة';
 $string['csv:addinstance'] = 'إضافة معاينة نموذج بيانات بشكل CSV جديد';

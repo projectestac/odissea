@@ -80,12 +80,12 @@ $string['uploadpictures_help'] = '<p>Le foto degli tenti possono essere caricate
 <p>Nei nomi dei file immagine è indifferente l\'uso di maiuscole o minuscole.</p>';
 $string['uploaduser:uploaduserpictures'] = 'Importare immagini utenti';
 $string['uploadusers'] = 'Importazione utenti';
-$string['uploadusers_help'] = 'E\' possibile caricare utenti (ed iscriverli ai corsi) tramite file di testo. Il formato del file deve avere le seguenti caratteristiche:
+$string['uploadusers_help'] = 'È possibile caricare utenti (ed iscriverli ai corsi) tramite file di testo. Il formato del file deve avere le seguenti caratteristiche:
 
-* Ogni riga del file deve contenere un record
-* Il record è una serie di dati separati da virgole o altri delimitatori
-* La prima riga del file è riservata e contiene le intestazioni con i nomi dei campi e definisce il formato del resto del file
-* I campi obbligatori sono username, password, firstname,  lastname, email';
+* ogni riga del file deve contenere un record
+* il record è una serie di dati dati divisi dal separatore selezionato
+* il primo record deve contenere l\'elenco dei nomi dei campi che definiscono il formato del dati presenti nel resto del file
+* i campi obbligatori sono username, password, firstname,  lastname, email';
 $string['uploaduserspreview'] = 'Anteprima importazione utenti';
 $string['uploadusersresult'] = 'Risultati importazione utenti';
 $string['useraccountupdated'] = 'Utente aggiornato';

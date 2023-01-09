@@ -1,3 +1,15 @@
+/*
+ XTEC ************ AFEGIT - Fix for visual editor doesn't open under certain conditions. Must be removed
+                            after migration to Moodle 4.x. https://tracker.moodle.org/browse/MDL-74692
+ 2023.01.09 @aginard
+ */
+.cke_contents, .cke_reset {
+  min-height: 200px !important;
+}
+/*
+ ************ FI
+ */
+
 .h5p-confirmation-dialog-background {
   position: fixed;
   height: 100%;

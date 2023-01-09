@@ -64,8 +64,8 @@ $string['donotusechattime'] = 'Senza pubblicare l\'orario';
 $string['enterchat'] = 'Entra nella chat';
 $string['entermessage'] = 'Inserisci il tuo messaggio';
 $string['errornousers'] = 'Non riesco a trovare utenti!';
-$string['eventmessagesent'] = 'Inviato messaggio';
-$string['eventsessionsviewed'] = 'Visualizzata sessione';
+$string['eventmessagesent'] = 'Invio messaggio';
+$string['eventsessionsviewed'] = 'Visualizzazione sessione';
 $string['explaingeneralconfig'] = 'Impostazioni comuni valide con <strong>qualsiasi</strong> metodo di chat';
 $string['explainmethoddaemon'] = 'Impostazioni valide <strong>solo</strong> se si seleziona "Server chat" come metodo chat.';
 $string['explainmethodnormal'] = 'Impostazioni valide <strong>solo</strong> se si seleziona"Metodo normale" come metodo chat.';
@@ -171,7 +171,7 @@ $string['usingchat_help'] = 'Il modulo Chat contiene alcune caratteristiche che 
 
 * Faccine - Come in molte altre parti di Moodle, le faccine (emoticon) possono essere usate anche nella chat. Ad esempio, :-)
 * Link - Gli indirizzi Internet verranno trasformati automaticamente in hyperlink.
-* Emozioni - E\' possibile inserire testo preceduto da "/me" or ":" per manifestare emozioni. Per esempio, se il tuo nome è Mario e scrivi ":ride!" o "/me ride!" nella chat apparirà "Mario ride!"
-* Campanella - E\' possibile inviare un suono ad una persona cliccando su "campanella" accanto al nome del destinatario. Per inviare simultaneamente il suono a tutti i partecipanti alla Chat è possibile è scrivere "beep all".
-* HTML - E\' possibile usare l\'HTML per inserire immagini, riprodurre suoni e modificare la dimensione ed il colore del teso.';
+* Emozioni - È possibile inserire testo preceduto da "/me" or ":" per manifestare emozioni. Per esempio, se il tuo nome è Mario e scrivi ":ride!" o "/me ride!" nella chat apparirà "Mario ride!"
+* Campanella - È possibile inviare un suono ad una persona cliccando su "campanella" accanto al nome del destinatario. Per inviare simultaneamente il suono a tutti i partecipanti alla Chat è possibile è scrivere "beep all".
+* HTML - È possibile usare l\'HTML per inserire immagini, riprodurre suoni e modificare la dimensione ed il colore del teso.';
 $string['viewreport'] = 'Visualizza le sessioni già svolte';

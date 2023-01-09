@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addbulknote'] = 'Adicionar anotação para {$a} pessoas';
-$string['addbulknotedone'] = 'Observação adicionada a {$a} pessoas';
-$string['addbulknotedonesingle'] = 'Observação adicionada a 1 pessoa';
+$string['addbulknotedone'] = 'Anotação adicionada a {$a} pessoas';
+$string['addbulknotedonesingle'] = 'Anotação adicionada a 1 pessoa';
 $string['addbulknotesingle'] = 'Adicionar anotação para 1 pessoa';
 $string['addnewnote'] = 'Adicionar anotação';
 $string['addnewnoteselect'] = 'Selecionar utilizadores para adicionar anotações';

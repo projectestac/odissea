@@ -38,7 +38,7 @@ $string['asyncemailenable'] = 'Aktivera notiser';
 $string['asyncemailenabledetail'] = 'Om aktiverat kommer användare få ett meddelande då en asynkron säkerhetskopiering eller återställning slutförts.';
 $string['asyncgeneralsettings'] = 'Asynkron säkerhetskopiering/återställning';
 $string['asyncmessagebody'] = 'Meddelande';
-$string['asyncmessagebodydefault'] = 'Hej {user_firstname},<br/> Din {operation} (ID: {backupid}) lyckades. <br/><br/>Du kan nå den här: {link}.';
+$string['asyncmessagebodydefault'] = 'Din {operation} (ID: {backupid}) lyckades. <br/><br/>Du kan nå den här: <a href="{link}">{link}</a>.';
 $string['asyncmessagebodydetail'] = 'Meddelande som ska skickas när en asynkron säkerhetskopiering eller återställning slutförts.';
 $string['asyncmessagesubject'] = 'Ämne';
 $string['asyncmessagesubjectdefault'] = 'Moodle {operation} lyckades.';

@@ -54,11 +54,11 @@ $string['duplicateidnumber'] = 'Un gruppo globale con la stessa ID è già prese
 $string['editcohort'] = 'Modifica gruppo globale';
 $string['editcohortidnumber'] = 'Modifica codice identificativo del gruppo globale';
 $string['editcohortname'] = 'Modifica nome del gruppo globale';
-$string['eventcohortcreated'] = 'Creato gruppo globale';
-$string['eventcohortdeleted'] = 'Eliminato gruppo globale';
-$string['eventcohortmemberadded'] = 'Inserito utente in gruppo globale';
-$string['eventcohortmemberremoved'] = 'Rimosso utente dal gruppo globale';
-$string['eventcohortupdated'] = 'Aggiornato gruppo globale';
+$string['eventcohortcreated'] = 'Creazione gruppo globale';
+$string['eventcohortdeleted'] = 'Eliminazione gruppo globale';
+$string['eventcohortmemberadded'] = 'Inserimento utente in gruppo globale';
+$string['eventcohortmemberremoved'] = 'Rimozione utente dal gruppo globale';
+$string['eventcohortupdated'] = 'Aggiornamento gruppo globale';
 $string['external'] = 'Gruppo globale esterno';
 $string['idnumber'] = 'Codice identificativo gruppo globale';
 $string['invalidtheme'] = 'Il tema del gruppo globale non esiste';
@@ -83,11 +83,11 @@ $string['selectfromcohort'] = 'Seleziona membri dal gruppo globale';
 $string['systemcohorts'] = 'Gruppi globali a livello di sistema';
 $string['unknowncohort'] = 'Il gruppo globale ({$a}) è sconosciuto!';
 $string['uploadcohorts'] = 'Caricamento gruppi globali';
-$string['uploadcohorts_help'] = 'E\' possibile caricare gruppi globali tramite file di testo. Il formato del file deve rispettare le seguenti regole:
+$string['uploadcohorts_help'] = 'È possibile caricare gruppi globali tramite file di testo. Il formato del file deve rispettare le seguenti regole:
 
 * Ciascuna linea rappresenta un record
 * Ciascun record contiene una serie di dati separati dal separatore selezionato
-* Il primo record deve contenere l\'elenco con i nomi dei campi che definiscono il formato dei dati seguenti
+* il primo record deve contenere l\'elenco dei nomi dei campi che definiscono il formato del dati presenti nel resto del file
 * Il nome è un campo obbligatorio
 * I seguenti campi sono facoltativi: codice identificativo (idnumber), descrizione (description), formato descrizione (descriptionformat), contesto (context), categoria (category), id della categoria (category_id), codice identificativo della categoria (category_idnumber), percorso della categoria (category_path).';
 $string['uploadedcohorts'] = 'Gruppi globali caricati: {$a}';

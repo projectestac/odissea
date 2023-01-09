@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo immagine';
+$string['fieldtypelabel'] = 'Immagine';
 $string['pluginname'] = 'Immagine';
-$string['privacy:metadata'] = 'Il plugin campo "Immagine" non memorizza dati personali, utilizza tabelle definite in mod_data.';
+$string['privacy:metadata'] = 'Il plugin Immagine non memorizza dati personali, utilizza tabelle definite in mod_data.';

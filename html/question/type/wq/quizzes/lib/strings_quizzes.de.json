@@ -81,9 +81,9 @@
 		"quizzes_studio_toolbar_test_question_button_tooltip": "Teste diese Frage",
 		"quizzes_studio_toolbar_help_button_tooltip": "Hilfe",
 		"quizzes_studio_send_feedback_label": "Feedback senden",
-		"quizzes_studio_training_label": "Enroll in our training course",
-		"quizzes_studio_website_label": "Visit our website",
-		"quizzes_studio_report_issue_label": "Report an issue",
+		"quizzes_studio_training_label": "Für unseren Schulungskurs anmelden",
+		"quizzes_studio_website_label": "Unsere Website besuchen",
+		"quizzes_studio_report_issue_label": "Ein Problem melden",
 
 		"quizzes_studio_toolbar_more_options_dropdown_tooltip": "weitere Optionen",
 		"quizzes_studio_toolbar_more_options_dropdown_import_label": "Importieren",
@@ -97,9 +97,9 @@
 		"quizzes_studio_home_answer_type_graphic_label": "Grafik",
 		"quizzes_studio_home_answer_type_text_label": "Text",
 		"quizzes_studio_home_answer_type_standard_graphic_label": "Standard",
-		"quizzes_studio_home_answer_type_bar_chart_label": "Bar chart",
-		"quizzes_studio_home_answer_type_line_chart_label": "Line chart",
-		"quizzes_studio_home_answer_type_pie_chart_label": "Pie chart",
+		"quizzes_studio_home_answer_type_bar_chart_label": "Balkendiagramm",
+		"quizzes_studio_home_answer_type_line_chart_label": "Liniendiagramm",
+		"quizzes_studio_home_answer_type_pie_chart_label": "Tortendiagramm",
 
 
 		"quizzes_studio_home_question_math_content_label": "Lege den Anfangsinhalt und die richtige Antwort auf deine Frage fest",
@@ -111,7 +111,7 @@
 		"quizzes_studio_home_initial_graph_content_label": "Anfangsinhalt",
 		"quizzes_studio_home_correct_graph_answer_label": "Richtige Antwort",
 
-		"quizzes_studio_home_activity_list_label": "Settings",
+		"quizzes_studio_home_activity_list_label": "Einstellungen",
 		"quizzes_studio_home_input_options_label": "Eingabeoptionen",
 		"quizzes_studio_home_validation_options_label": "Bewertungsoptionen",
 		"quizzes_studio_home_variables_options_label": "Zufällige Variablen",
@@ -154,13 +154,13 @@
 		"quizzes_studio_input_options_answer_input_method_no_auxiliar_input_helper_text": "Zeige den Zusatz-CalcMe-Taschenrechner nicht zusätzlich zum Standard-Antwortfeld für Schüler an.",
 		"quizzes_studio_input_options_answer_input_method_define_initial_content_button_label": "Anfangsinhalt festlegen",
 		"quizzes_studio_input_options_answer_input_method_customize_toolbar_label": "Symbolleiste anpassen",
-		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_label": "Hide CalcMe file options",
-		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_helper_text": "Hide options such as opening, saving, or downloading CalcMe documents to students",
+		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_label": "CalcMe-Dateioptionen ausblenden",
+		"quizzes_studio_input_options_answer_input_method_auxiliar_input_hide_file_menu_helper_text": "Optionen wie Öffnen, Speichern oder Herunterladen von CalcMe-Dokumenten für Studierende ausblenden",
 
 		"quizzes_studio_input_options_input_syntax_title": "Eingabesyntax",
 
 		"quizzes_studio_input_options_input_syntax_select_all_label": "Alle",
-		"quizzes_studio_input_options_input_syntax_clear_all_label": "Clear",
+		"quizzes_studio_input_options_input_syntax_clear_all_label": "Löschen",
 
 		"quizzes_studio_input_options_input_syntax_constants_label": "Konstanten",
 		"quizzes_studio_input_options_input_syntax_constants_helper_text": "Wähle die Buchstaben aus, die anstelle von freien Variablen als Konstanten interpretiert werden. Du kannst weitere Konstanten im Bedienungsfeld „Zufallsvariablen und Funktionen“ festlegen.",
@@ -493,12 +493,12 @@
 		"popup_text_field_warning_save_and_close_button_label": "Speichern & schließen",
 		"popup_text_field_warning_close_without_saving_button_label": "Ohne zu Speichern schließen",
 		
-		"clicktoeditalgorithm": "Klicke auf die Schaltfläche, um die Anwendung Wiris Cas herunterzuladen und auszuführen und den Fragealgorithmus zu bearbeiten.",
+		"clicktoeditalgorithm": "Auf die Schaltfläche klicken, um die Wiris CAS-Anwendung zur Bearbeitung des Fragealgorithmus herunterzuladen und auszuführen.",
 		"runcalculator": "Rechner starten",
 		"clicktoruncalculator": "Klicken Sie auf die Schaltfläche zum Herunterladen und starten Sie die Wiris Cas-Anwendung, um Ihre Berechnungen vorzunehmen. <a href=\"http://www.wiris.com/en/quizzes/docs/moodle/manual/java\" target=\"_blank\">Mehr erfahren</a>.",
 		"sendinginitialsession": "Ursprüngliche Sitzung senden ...",
 		"waitingforupdates": "Auf Updates warten ...",
-		"sessionclosed": "Alle Änderungen wurden gespeichert",
+		"sessionclosed": "Alle Änderungen gespeichert",
 		"gotsession": "Änderungen gespeichert (Revision ${n}).",
 		"showcas": "Benutze Wiris CAS",
 		"showcalcme": "Benutze CalcMe",
@@ -518,7 +518,7 @@
 
 		"quizzes_studio_variables_options_cas_algorithm_convert_to_calcme_button_label": "In CalcMe konvertieren",
 		"quizzes_studio_variables_options_cas_algorithm_convert_to_calcme_description_label": "Der Fragealgorithmus wird aus Wiris CAS in unseren neuen Algorithmus-Editor CalcMe importiert. Der resultierende Algorithmus muss manuell überarbeitet und getestet werden. Algorithmen, die in CalcMe importiert wurden, können nicht mehr mit WIRIS CAS geöffnet werden. Wenn du den Import nach dem Akzeptieren rückgängig machen möchtest, dann speichere die Frage nicht: Klicke auf Abbrechen im WIRIS Quizzes Studio Fenster und öffne sie wieder.",
-		"quizzes_studio_variables_options_cas_algorithm_convert_to_algorithm_description_label": "Convert as algorithm",
+		"quizzes_studio_variables_options_cas_algorithm_convert_to_algorithm_description_label": "Als Algorithmus konvertieren",
 
 		"answer_field_mathtype_popup_accept_dialog": "Akzeptieren",
 		"answer_field_mathtype_popup_cancel_dialog": "Abbrechen",
@@ -537,25 +537,54 @@
 		"parameter": "parameter",
 		"answer": "antwort",
 
-		"quizzes_studio_home_copy_initial_content_button_text": "Copy from initial content",
-		"quizzes_studio_home_copy_correct_answer_button_text": "Copy from correct answer",
+		"quizzes_studio_home_copy_initial_content_button_text": "Aus ursprünglichem Inhalt kopieren",
+		"quizzes_studio_home_copy_correct_answer_button_text": "Aus richtiger Antwort kopieren",
 		"quizzes_studio_home_answer_type_geometry_label": "Plotter",
-		"quizzes_studio_home_answer_type_statistical_charts_label": "Statistics charts",
+		"quizzes_studio_home_answer_type_statistical_charts_label": "Statistikdiagramme",
 		
-		"quizzes_studio_home_correct_answer_description_math": "Enter the correct answer for this question. You can modify the criteria used to compare it to your students' answer using the validation options menu.",
-		"quizzes_studio_home_correct_answer_description_graphic": "Enter the correct answer for this question. You can modify how it is compared to your students' answer and which elements are graded using the settings menu.",
-		"quizzes_studio_home_correct_answer_description_text": "Enter the correct answer for this question. You can modify the criteria used to compare it to your students' answer using the validation options menu.",
-		"quizzes_studio_home_initial_content_description_math": "This is the initial state of the math editor your students will see when attempting the question. This way you can provide a structure for their answer or blanks to fill in.",
-		"quizzes_studio_home_initial_content_description_graphic": "This is the initial state of the graph editor your students will see when attempting the question. You can customize the toolbar elements they will see in the input options.",
-		"quizzes_studio_home_initial_content_description_text": "This is the initial state of the text editor your students will see when attempting the question. This answer type is not evaluated mathematically.",
+		"quizzes_studio_home_correct_answer_description_math": "Die richtige Antwort auf diese Frage eingeben. Sie können die Kriterien, die zum Abgleich mit den Antworten Ihrer Studierenden genutzt werden, über das Menü Validierungsoptionen ändern.",
+		"quizzes_studio_home_correct_answer_description_graphic": "Die richtige Antwort auf diese Frage eingeben. Über das Einstellungsmenü können Sie einstellen, wie der Abgleich mit den Antworten Ihrer Studierenden erfolgen und welche Elemente bewertet werden sollen.",
+		"quizzes_studio_home_correct_answer_description_text": "Die richtige Antwort auf diese Frage eingeben. Sie können die Kriterien, die zum Abgleich mit den Antworten Ihrer Studierenden genutzt werden, über das Menü Validierungsoptionen ändern.",
+		"quizzes_studio_home_initial_content_description_math": "Dies ist der Ausgangszustand des Mathe-Editors, den Ihre Studierenden sehen, wenn sie die Frage bearbeiten. So können Sie eine Antwortstruktur oder Lücken zum Ausfüllen vorgeben.",
+		"quizzes_studio_home_initial_content_description_graphic": "Dies ist der Ausgangszustand des Diagrammeditors, den Ihre Studierenden sehen, wenn sie die Frage bearbeiten. Sie können die Elemente der Symbolleiste anpassen, die in den Eingabeoptionen angezeigt werden.",
+		"quizzes_studio_home_initial_content_description_text": "Dies ist der Ausgangszustand des Texteditors, den Ihre Studierenden sehen, wenn sie die Frage bearbeiten. Dieser Antworttyp wird nicht mathematisch ausgewertet.",
 				
-		"quizzes_studio_home_product_message_header_label": "You are using WirisQuizzes 4.5!",
-		"quizzes_studio_home_product_message_text_label": "This version features a renovated WirisQuizzes Studio and also includes performance improvements. We've also added a new input settings feature - now you can lock the initial content.",
-		"quizzes_studio_home_product_message_release_notes_link": "Check out our release notes.",		
+		"quizzes_studio_home_product_message_header_label": "Sie verwenden WirisQuizzes 4.5!",
+		"quizzes_studio_home_product_message_text_label": "Diese Version enthält ein überarbeitetes WirisQuizzes Studio sowie weitere Leistungsverbesserungen. Wir haben außerdem eine neue Funktion für die Eingabeeinstellungen eingeführt. Jetzt können Sie den ursprünglichen Inhalt sperren.",
+		"quizzes_studio_home_product_message_release_notes_link": "Sehen Sie sich unsere Versionshinweise an.",
+		"quizzes_studio_home_product_message_give_us_feedback_link": "Gib uns dein Feedback.",		
 
-		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Initial content",
-		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Lock initial content",
-		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "Do not allow the student to modify the answer outside of the empty placeholders left in the initial content. If this setting is enabled the student will only be able to fill in the boxes of the initial content."
+		"quizzes_studio_input_options_answer_input_method_initial_content_label": "Ursprünglicher Inhalt",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "Ursprünglichen Inhalt sperren",
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "So können Studierende nicht die Antworten außerhalb der leeren Platzhalter ändern, die im ursprünglichen Inhalt eingefügt wurden. Wenn diese Einstellung aktiviert ist, können die Studierenden nur die Felder im ursprünglichen Inhalt ausfüllen.",
+
+		"quizzes_studio_home_random_variables_title": "Zufällige Variablen",
+		"quizzes_studio_home_random_variables_title_basic_mode": "Basismodus",
+		"quizzes_studio_home_advanced_random_variables_button_text": "Fortgeschrittener Modus",
+		"quizzes_studio_home_advanced_random_variables_button_text_string_syntax": "Zufällige Variablen",
+		"quizzes_studio_home_random_variables_description_text": "Machen Sie Ihre Fragen dynamisch, indem Sie Ihrer Fragestellung Zufallsvariablen hinzufügen. Vergessen Sie nicht, diese Variablen in der richtigen Antwort hinzuzufügen, und wenn Sie möchten, dass sie ausgewertet angezeigt werden, fügen Sie den Befehl „evaluieren“ hinzu.",
+		"quizzes_studio_home_random_variables_simple_algorithm_text": "Machen Sie Ihre Fragen dynamisch, indem Sie Ihrer Fragestellung Zufallsvariablen hinzufügen. Vergessen Sie nicht, diese Variablen in der richtigen Antwort hinzuzufügen, und wenn Sie möchten, dass sie ausgewertet angezeigt werden, fügen Sie den Befehl „evaluieren“ hinzu.",
+		"quizzes_studio_home_random_variables_string_syntax_text": "Use CalcMe to write an algorithm to generate random variables!",
+		"quizzes_studio_home_random_variables_add_new_button_text": "+ Variable hinzufügen",
+		"quizzes_studio_home_random_variables_complex_algorithm_text": "Sie haben einen komplexen Algorithmus, verwenden Sie den erweiterten Modus!",
+		"quizzes_studio_home_random_variables_help_button": "Dokumentation zu Zufallsvariablen",
+
+		"quizzes_studio_home_random_variable_row_variable_name_text": "Variablennamen",
+		"quizzes_studio_home_random_variable_row_prefix_text": "#",
+		"quizzes_studio_home_random_variable_type_text": "ist eine ganze Zahl zwischen",
+		"quizzes_studio_home_random_variable_min_value_text": "Mindestwert",
+		"quizzes_studio_home_random_variable_row_and_text": "und",
+		"quizzes_studio_home_random_variable_max_value_text": "Maximalwert",
+
+		"quizzes_studio_home_random_variable_name_already_used_error": "Variablenname bereits verwendet!",
+		"quizzes_studio_home_random_variable_number_not_integer_error": "Keine Ganzzahl!",
+		"quizzes_studio_home_random_variable_invalid_name_error": "Kein gültiger Variablenname!",
+		"quizzes_studio_home_random_variable_max_value_error": "Maximalwert muss größer sein!",
+		"quizzes_studio_home_random_variable_name_missing_error": "Variablenname fehlt",
+		"quizzes_studio_home_random_variable_max_value_missing_error": "Maximalwert fehlt",
+		"quizzes_studio_home_random_variable_min_value_missing_error": "Mindestwert fehlt",
+		
+		"evaluate_keyword": "bewerten"
 	}
 }
 

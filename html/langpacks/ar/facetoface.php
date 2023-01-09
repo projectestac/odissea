@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['addnewfield'] = 'إضافة حقل مخصص جديد';
 $string['addnewnotice'] = 'إضافة ملاحظة موقع جديدة';
 $string['addsession'] = 'إضافة جلسة جديدة';
+$string['alllocations'] = 'كل المواضع';
+$string['allsessionsin'] = 'كل الجلسات في {$a}';
 $string['calendareventdescriptionbooking'] = 'لقد حصلت على حجز في <a href="{$a}">جلسة وجه لوجه</a> هذه.';
 $string['calendareventdescriptionsession'] = 'لقد أنشأت <a href="{$a}">جلسة وجه لوجه</a> هذه.';
 $string['capacity_help'] = '**الاستيعاب** هو عدد المقاعد المتاحة في الجلسة.

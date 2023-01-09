@@ -269,8 +269,7 @@ $string['groupoverrides'] = 'Gruppenänderungen';
 $string['groupoverridesdeleted'] = 'Gruppenänderungen gelöscht';
 $string['groupsnone'] = 'Keine Gruppen, auf die Sie zugreifen können';
 $string['handlingofretakes'] = 'Bewertung bei Wiederholungen';
-$string['handlingofretakes_help'] = 'Wenn die Teilnehmer/innen eine Lektion wiederholen dürfen, kann die
-Bewertung entweder als Durchnittsnote oder als Bestnote aller Versuche eines Teilnehmenden erfolgen.
+$string['handlingofretakes_help'] = 'Wenn die Teilnehmer/innen eine Lektion wiederholen dürfen, kann die Bewertung entweder als Durchschnittsnote oder als Bestnote aller Versuche erfolgen.
 Diese Option kann jederzeit geändert werden.';
 $string['havenotgradedyet'] = 'Noch nicht bewertet';
 $string['here'] = 'hier';

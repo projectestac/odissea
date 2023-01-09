@@ -107,8 +107,8 @@ Puoi vedere le risposte al seguente indirizzo:
 $string['emailteachermailhtml'] = '<p>{$a->username} ha compilato il feedback: <i>\'{$a->feedback}\'</i>.</p>
 <p>Puoi vedere le risposte su <a href="{$a->url}">questa pagina</a>.</p>';
 $string['entries_saved'] = 'Le tue risposte sono state salvate. Grazie.';
-$string['eventresponsedeleted'] = 'Eliminate risposte';
-$string['eventresponsesubmitted'] = 'Inviate risposte';
+$string['eventresponsedeleted'] = 'Eliminazione risposta';
+$string['eventresponsesubmitted'] = 'Invio risposte';
 $string['export_questions'] = 'Esporta domande';
 $string['export_to_excel'] = 'Esporta in formato Excel';
 $string['feedback:addinstance'] = 'Aggiungere feedback';
@@ -156,7 +156,7 @@ $string['label'] = 'Etichetta';
 $string['labelcontents'] = 'Contenuto';
 $string['mapcourse'] = 'Associa feedback ai corsi';
 $string['mapcourse_help'] = 'Di default i feedback creati nella pagina home del sito sono disponibili in tutti i corsi tramite il blocco feedback. Se desideri evitarlo, è possibile rendere permanente il blocco feedback oppure puoi associare il feedback solo a determinati corsi.';
-$string['mapcourseinfo'] = 'Questo è un feedback globale,  usando il blocco feedback sarà disponibile in tutti i corsi . E\'  comunque possibile limitare i corsi in cui apparirà il feedback associandoli. Cerca i corsi e associali a questo feedback.';
+$string['mapcourseinfo'] = 'Questo è un feedback globale,  usando il blocco feedback sarà disponibile in tutti i corsi . È comunque possibile limitare i corsi in cui apparirà il feedback associandoli. Cerca i corsi e associali a questo feedback.';
 $string['mapcoursenone'] = 'Nessun corso associato. Il feedback è disponibile per tutti i corsi.';
 $string['mapcourses'] = 'Associa feedback ai corsi';
 $string['mappedcourses'] = 'Corsi associati';
@@ -167,11 +167,11 @@ $string['messageprovider:submission'] = 'Notifiche dei feedback';
 $string['minimal'] = 'Minimo';
 $string['mode'] = 'Modalità';
 $string['modulename'] = 'Feedback';
-$string['modulename_help'] = 'Il modulo di attività feedback consente al docente di creare sondaggi personalizzati utili per raccogliere i feedback dai partecipanti. E\' possibile usare vari tipi di domande, come ad esempio domande a scelta multipla, sì/no, a risposta libera, eccetera.
+$string['modulename_help'] = 'Il modulo di attività feedback consente al docente di creare sondaggi personalizzati utili per raccogliere i feedback dai partecipanti. È possibile usare vari tipi di domande, come ad esempio domande a scelta multipla, sì/no, a risposta libera, eccetera.
 
 Se lo si desidera è possibile rendere anonime le risposte, così come è possibile visualizzare o meno agli studenti i risultati del sondaggio. Le attività feedback presenti sulla pagina home del sito possono essere configurate per essere compilate anche da utenti non autenticati.
 
-E\' possibile usare il feedback per:
+È possibile usare il feedback per:
 
 * valutare i corsi, aiutando ad individuare aree di miglioramento per edizioni future
 * consentire ai partecipanti di prenotare moduli del corso ed eventi
@@ -208,7 +208,7 @@ $string['numeric_range_to'] = 'a';
 $string['of'] = 'di';
 $string['oldvaluespreserved'] = 'Tutte le vecchie domande e i valori assegnati saranno conservati';
 $string['oldvalueswillbedeleted'] = 'Le domande e tutte le risposte degli utenti saranno eliminate';
-$string['only_one_captcha_allowed'] = 'E\' possibile inserire un solo captcha per ciascun feedback.';
+$string['only_one_captcha_allowed'] = 'È possibile inserire un solo captcha per ciascun feedback.';
 $string['openafterclose'] = 'Hai specificato una data di apertura successiva alla data di chiusura';
 $string['overview'] = 'Panoramica';
 $string['page'] = 'Pagina';
@@ -249,7 +249,7 @@ $string['saving_failed'] = 'Il salvataggio non è riuscito';
 $string['search:activity'] = 'Feedback - Informazioni sull\'attività';
 $string['search_course'] = 'Cerca corso';
 $string['searchcourses'] = 'Cerca corsi';
-$string['searchcourses_help'] = 'E\' possibile cercare il codice  o il titolo del corso o dei corsi che intendi associare al feedback.';
+$string['searchcourses_help'] = 'È possibile cercare il codice  o il titolo del corso o dei corsi che intendi associare al feedback.';
 $string['selected_dump'] = 'Gli indici selezionati della variabile $SESSION sono visualizzati di seguito:';
 $string['send'] = 'Invia';
 $string['send_message'] = 'Invia notifica';
@@ -280,8 +280,8 @@ $string['this_feedback_is_already_submitted'] = 'Hai già completato questa atti
 $string['typemissing'] = 'Manca il "tipo"';
 $string['update_item'] = 'Salva modifiche';
 $string['url_for_continue'] = 'Link ad attività successiva';
-$string['url_for_continue_help'] = 'Di default al termine della compilazione del feedback il pulsante Continua rimanda alla pagina home del corso. E\' possibile impostare link ad una attività successiva.';
-$string['use_one_line_for_each_value'] = 'E\' necessario utilizzare una riga per ciascun valore';
+$string['url_for_continue_help'] = 'Di default al termine della compilazione del feedback il pulsante Continua rimanda alla pagina home del corso. È possibile impostare link ad una attività successiva.';
+$string['use_one_line_for_each_value'] = 'È necessario utilizzare una riga per ciascun valore';
 $string['use_this_template'] = 'Usa questo modello';
 $string['using_templates'] = 'Usa un modello';
 $string['vertical'] = 'Verticale';

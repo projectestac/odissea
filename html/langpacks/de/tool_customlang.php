@@ -49,6 +49,7 @@ $string['customlang:export'] = 'Lokale Übersetzung exportieren';
 $string['customlang:view'] = 'Lokales Sprachpaket anzeigen';
 $string['export'] = 'Sprachanpassungen exportieren';
 $string['exportfilter'] = 'Komponenten zum Exportieren auswählen';
+$string['exportzipfilename'] = 'customlang-export-{$a->lang}.zip';
 $string['filter'] = 'Filtertexte';
 $string['filtercomponent'] = 'Komponenten';
 $string['filtercustomized'] = 'nur Anpassungen';

@@ -31,3 +31,4 @@ $string['privacy:metadata:cmid'] = 'ID dell\'attività o risorsa';
 $string['privacy:metadata:courseid'] = 'Corso di appartenenza';
 $string['privacy:metadata:timeaccess'] = 'Ora nella quale l\'utente ha acceduto l\'elemento';
 $string['privacy:metadata:userid'] = 'ID dell\'utente ha acceduto l\'elemento';
+$string['privacy:recentlyaccesseditemspath'] = 'Elementi acceduti di recente';

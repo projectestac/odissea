@@ -85,7 +85,8 @@ class qtype_shortanswerwiris_test_helper extends question_test_helper {
         $form->name = 'Short answer question';
         $form->questiontext = array('text' => 'Just write x + #a:', 'format' => FORMAT_HTML);
         $form->defaultmark = 1.0;
-        $form->generalfeedback = array('text' => 'Generalfeedback: You should have said x + #a.', 'format' => FORMAT_HTML);
+        $form->generalfeedback = array('text' => '#formula - Generalfeedback: You should have said x + #a.',
+                                       'format' => FORMAT_HTML);
         $form->usecase = false;
         $form->answer = array('x+#a');
         $form->fraction = array('1.0');
@@ -109,6 +110,11 @@ class qtype_shortanswerwiris_test_helper extends question_test_helper {
                                 </math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML">
                                 <mi mathvariant="normal">b</mi><mo>=</mo><mo>-</mo><mn>15</mn></math></input><output>
                                 <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>15</mn></math></output></command>
+                                <command><input><math xmlns="http://www.w3.org/1998/Math/MathML"/></input></command><command>
+                                <input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>formula</mi><mo>=</mo><msqrt><msup>
+                                <mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac><mn>2</mn><mn>4</mn></mfrac></msqrt></math></input>
+                                <output><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mrow><msup><mi>x</mi><mn>2</mn>
+                                </msup><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msqrt></math></output></command>
                                 <command><input><math xmlns="http://www.w3.org/1998/Math/MathML"/></input></command></group>
                                 </task></session><constructions><construction group="1">{&quot;elements&quot;:[],&quot;constraints
                                 &quot;:[],&quot;displays&quot;:[],&quot;handwriting&quot;:[]}</construction></constructions>
@@ -116,7 +122,7 @@ class qtype_shortanswerwiris_test_helper extends question_test_helper {
                                 </correctAnswers><assertions><assertion name="syntax_math"/>
                                 <assertion name="equivalent_symbolic"><param name="tolerance">0.001</param>
                                 <param name="tolerance_digits">false</param><param name="relative_tolerance">true</param>
-                                </assertion></assertions><slots><slot><initialContent></initialContent></slot></slots>
+                                </assertion></assertions><slots><slot><initialContent>math</initialContent></slot></slots>
                                 </question>';
         $form->wirislang = 'en';
         $form->wiristruefalse = '';

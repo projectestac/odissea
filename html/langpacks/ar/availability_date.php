@@ -31,6 +31,7 @@ $string['direction_before'] = 'التاريخ';
 $string['direction_from'] = 'من عند';
 $string['direction_label'] = 'الاتجاه';
 $string['direction_until'] = 'حتى';
+$string['error_dateconflict'] = 'يتعرض مع المقيدات الأخرى للبيانات';
 $string['full_from'] = 'بعد {$a}';
 $string['full_from_date'] = 'إنه من أو بعد {$a}';
 $string['full_until'] = 'إنه قبل {$a}';

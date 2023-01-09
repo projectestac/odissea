@@ -47,7 +47,7 @@ $string['labeltext'] = 'Testo visualizzato dall\'etichetta';
 $string['modulename'] = 'Etichetta';
 $string['modulename_help'] = 'Il modulo etichetta consente di inserire immagini e testo nella pagina home del corso, assieme ai link ad attività e risorse. Le etichette sono molto versatili e possono aiutano a rendere gradevole l\'aspetto del corso.
 
-E\' possibile usare le etichette per:
+È possibile usare le etichette per:
 
 * Dividere elenchi di attività con sottotitoli o immagini
 * Visualizzare video e suoni direttamente nella pagina home del corso

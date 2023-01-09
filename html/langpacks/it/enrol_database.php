@@ -77,4 +77,4 @@ $string['settingsheadernewcourses'] = 'Creazione di nuovi corsi';
 $string['settingsheaderremote'] = 'Sincronizzazione remota iscrizioni';
 $string['syncenrolmentstask'] = 'Sincronizzazione iscrizioni database esterno';
 $string['templatecourse'] = 'Template per nuovo corso';
-$string['templatecourse_desc'] = 'Opzionale: i corsi creati automaticamente possono copiare le impostazioni da un corso template. E\' possibile specificare il nome abbreviato del corso da usare come template.';
+$string['templatecourse_desc'] = 'Opzionale: i corsi creati automaticamente possono copiare le impostazioni da un corso template. Èpossibile specificare il nome abbreviato del corso da usare come template.';

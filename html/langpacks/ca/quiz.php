@@ -190,9 +190,9 @@ $string['completionattemptsexhausteddesc'] = 'Completa si s\'han exhaurit tots e
 $string['completiondetail:minattempts'] = 'Contesta intents: {$a}';
 $string['completiondetail:passgrade'] = 'Rebre una nota d\'aprovat';
 $string['completiondetail:passorexhaust'] = 'Rebre una nota d\'aprovat o completar tots els intents disponibles';
-$string['completionminattempts'] = 'Nombre d\'intents mínims:';
-$string['completionminattemptsdesc'] = 'Nombre d\'intents mínims requerits: {$a}';
-$string['completionminattemptserror'] = 'El nombre d\'intents mínims ha de ser inferior o igual als intents permesos.';
+$string['completionminattempts'] = 'Nombre mínim d\'intents:';
+$string['completionminattemptsdesc'] = 'Nombre mínim d\'intents requerits: {$a}';
+$string['completionminattemptserror'] = 'El nombre mínim d\'intents ha de ser inferior o igual als intents permesos.';
 $string['completionminattemptsgroup'] = 'Intents requerits';
 $string['completionpass'] = 'Exigeix un aprovat';
 $string['completionpass_help'] = 'Si s\'habilita, aquesta activitat es considera completada quan l\'estudiant obté un aprovat o més (tal i com s\'especifica en la secció de Qualificació dels paràmetres del qüestionari.';
@@ -309,7 +309,7 @@ $string['editquestion'] = 'Edita la pregunta';
 $string['editquestions'] = 'Edita preguntes';
 $string['editquiz'] = 'Edita el qüestionari';
 $string['editquizquestions'] = 'Edita preguntes del qüestionari';
-$string['emailconfirmbody'] = 'Hola, {$a->username}
+$string['emailconfirmbody'] = 'Hola {$a->username},
 
 Gràcies per trametre les vostres respostes al qüestionari «{$a->quizname}» del curs «{$a->coursename}» a les {$a->submissiontime}.
 
@@ -318,14 +318,14 @@ Aquest correu confirma que s\'han desat les vostres respostes.
 Podeu accedir a aquest qüestionari a l\'URL {$a->quizurl}.';
 $string['emailconfirmsmall'] = 'Gràcies per trametre les respostes a «{$a->quizname}»';
 $string['emailconfirmsubject'] = 'Confirmació de la tramesa: {$a->quizname}';
-$string['emailnotifybody'] = 'Hola, {$a->username}
+$string['emailnotifybody'] = 'Hola {$a->username},
 
 {$a->studentname} ha completat «{$a->quizname}» ({$a->quizurl}) del curs «{$a->coursename}».
 
 Podeu revisar aquest intent a l\'URL {$a->quizreviewurl}.';
 $string['emailnotifysmall'] = '{$a->studentname} ha completat {$a->quizname}. Vegeu {$a->quizreviewurl}';
 $string['emailnotifysubject'] = '{$a->studentname} ha completat {$a->quizname}';
-$string['emailoverduebody'] = 'Hola, {$a->studentname}
+$string['emailoverduebody'] = 'Hola {$a->studentname},
 
 Vau començar un intent de «{$a->quizname}» al curs «{$a->coursename}», però mai no el vau trametre. L\'hauríeu d\'haver tramès abans del dia {$a->attemptduedate}.
 

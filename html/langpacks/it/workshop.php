@@ -90,7 +90,7 @@ $string['calculatesubmissiongrades'] = 'Calcola la votazione delle consegne';
 $string['calculatesubmissiongradesdetails'] = 'attesi: {$a->expected}<br />calcolati: {$a->calculated}';
 $string['chooseuser'] = 'Scegli un utente...';
 $string['clearaggregatedgrades'] = 'Elimina tutti i voti aggregati';
-$string['clearaggregatedgrades_help'] = 'I voti cumulati per le consegne e i voti per la valutazione saranno reimpostati. E\' possibile ricalcolare i voti nella Fase di valutazione.';
+$string['clearaggregatedgrades_help'] = 'I voti cumulati per le consegne e i voti per la valutazione saranno reimpostati. È possibile ricalcolare i voti nella Fase di valutazione.';
 $string['clearaggregatedgradesconfirm'] = 'Sei certo di voler eliminare i voti aggregati delle consegne e delle valutazioni?';
 $string['clearassessments'] = 'Elimina valutazioni';
 $string['clearassessments_help'] = 'I voti calcolati per gli invii e per le valutazioni saranno eliminati. Le impostazioni su come sono state compilate le schede di valutazione saranno conservate ma per calcolare di nuovo i voti tutti i revisori dovranno accedere alla scheda di valutazione e salvare nuovamente i voti.';
@@ -125,19 +125,19 @@ $string['evaluation'] = 'Calcolo dei voti';
 $string['evaluationmethod'] = 'Metodo di calcolo dei voti';
 $string['evaluationmethod_help'] = 'Il metodo di calcolo della valutazione determina come verranno calcolati i voti. Puoi consentire il calcolo ripetuto dei voti finché non ottieni un risultato che ti soddisfi';
 $string['evaluationsettings'] = 'Impostazioni di calcolo dei voti';
-$string['eventassessableuploaded'] = 'Caricata consegna';
-$string['eventassessmentevaluated'] = 'Assegnati voti alla valutazione';
-$string['eventassessmentevaluationsreset'] = 'Reimpostati voti della valutazione';
-$string['eventassessmentreevaluated'] = 'Assegnati di nuovo voti alla valutazione';
-$string['eventphaseautomaticallyswitched'] = 'Fase cambiata automaticamente';
-$string['eventphaseswitched'] = 'Cambiata fase';
-$string['eventsubmissionassessed'] = 'Valutata consegna';
-$string['eventsubmissionassessmentsreset'] = 'Eliminate valutazioni consegna';
-$string['eventsubmissioncreated'] = 'Creata consegna';
-$string['eventsubmissiondeleted'] = 'Eliminata consegna';
-$string['eventsubmissionreassessed'] = 'Valutata di nuovo consegna';
-$string['eventsubmissionupdated'] = 'Aggiornata consegna';
-$string['eventsubmissionviewed'] = 'Visualizzata consegna';
+$string['eventassessableuploaded'] = 'Caricamento consegna';
+$string['eventassessmentevaluated'] = 'Assegnazione voti alla valutazione';
+$string['eventassessmentevaluationsreset'] = 'Reimpostazione voti della valutazione';
+$string['eventassessmentreevaluated'] = 'Assegnazione di nuovo voti alla valutazione';
+$string['eventphaseautomaticallyswitched'] = 'Cambio di fase automatico';
+$string['eventphaseswitched'] = 'Cambio di fase';
+$string['eventsubmissionassessed'] = 'Valutazione consegna';
+$string['eventsubmissionassessmentsreset'] = 'Eliminazione valutazioni consegna';
+$string['eventsubmissioncreated'] = 'Creazione consegna';
+$string['eventsubmissiondeleted'] = 'Eliminazione consegna';
+$string['eventsubmissionreassessed'] = 'Rivalutazione consegna';
+$string['eventsubmissionupdated'] = 'Aggiornamento consegna';
+$string['eventsubmissionviewed'] = 'Visualizzazione consegna';
 $string['example'] = 'Consegna di esempio';
 $string['exampleadd'] = 'Aggiungi una consegna di esempio';
 $string['exampleassess'] = 'Valuta consegna di esempio';
@@ -205,7 +205,7 @@ $string['instructreviewers'] = 'Istruzioni per la valutazione';
 $string['introduction'] = 'Descrizione';
 $string['latesubmissions'] = 'Consegne in ritardo';
 $string['latesubmissions_desc'] = 'Accetta consegne dopo la data di fine';
-$string['latesubmissions_help'] = 'E\' possibile consentire ai partecipanti di consegnare il proprio lavoro dopo la scadenza prevista nella fase di valutazione. Le consegne in ritardo non potranno però essere modificate.';
+$string['latesubmissions_help'] = 'È possibile consentire ai partecipanti di consegnare il proprio lavoro dopo la scadenza prevista nella fase di valutazione. Le consegne in ritardo non potranno però essere modificate.';
 $string['latesubmissionsallowed'] = 'Le consegne in ritardo saranno accettate';
 $string['legacyallocationplugincron'] = 'Elaborazione distribuzioni obsolete dei workshop';
 $string['maxbytes'] = 'Dimensione massima file consegna';
@@ -214,7 +214,7 @@ $string['modulename_help'] = 'Il modulo di attività workshop consente la raccol
 
 Gli studenti possono consegnare qualsiasi tipo di file digitale, come documenti di testo o fogli elettronici, e possono anche redigere del testo direttamente online.
 
-Le consegne vengono valutate in accordo ai diversi criteri definiti dal docente. E\' possibile approfondire il processo di comprensione della valutazione tra pari e dei criteri di valutazione definiti dal docente tramite consegne di esempio preparate dal docente.
+Le consegne vengono valutate in accordo ai diversi criteri definiti dal docente. È possibile approfondire il processo di comprensione della valutazione tra pari e dei criteri di valutazione definiti dal docente tramite consegne di esempio preparate dal docente.
 Gli studenti possono valutare una o più consegne di altri studenti, volendo anche in forma anonima.
 
 La valutazione ricevuta degli studenti si compone di due parti, una valutazione per la propria consegna e una valutazione per aver valutato le consegne  degli altri studenti. Entrambe le valutazioni vengono memorizzate nel registro valutatore.';
@@ -321,7 +321,7 @@ $string['receivedgrades'] = 'Voti ricevuti';
 $string['recentassessments'] = 'Valutazioni workshop:';
 $string['recentsubmissions'] = 'Consegne workshop:';
 $string['resetassessments'] = 'Elimina tutte le consegne';
-$string['resetassessments_help'] = 'E\' possibile scegliere se eliminare solo le consegne distribuite senza influire sulle consegne. Se le consegne devono essere eliminate, saranno eliminate anche le valutazioni e questa opzione sarà ignorata. Da notare che verranno incluse anche le valutazioni delle consegne di esempio.';
+$string['resetassessments_help'] = 'È possibile scegliere se eliminare solo le consegne distribuite senza influire sulle consegne. Se le consegne devono essere eliminate, saranno eliminate anche le valutazioni e questa opzione sarà ignorata. Da notare che verranno incluse anche le valutazioni delle consegne di esempio.';
 $string['resetphase'] = 'Passa alla fase di allestimento';
 $string['resetphase_help'] = 'Abilitando l\'opzione, i workshop saranno posti nella fase di allestimento.';
 $string['resetsubmissions'] = 'Elimina tutte le consegne';

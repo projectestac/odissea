@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['all_files'] = 'كل الملفات الأخيرة';
 $string['descconfig'] = 'إعداد التهيئة العمومية لكتلة الملفات الأخيرة';
 $string['files:addinstance'] = 'إضافة كتلة جديدة من الملفات الأخيرة';
 $string['files:myaddinstance'] = 'إضافة كتلة جديدة من الملفات الأخيرة إلى صفحة مودل الخاصة بي';

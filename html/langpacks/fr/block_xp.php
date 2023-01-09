@@ -93,7 +93,7 @@ $string['enablecheatguard'] = 'Activer la mise en garde sur la triche';
 $string['enablecheatguard_help'] = 'Le dispositif de protection contre la tricherie offre un mécanisme simple et peu coûteux pour empêcher les élèves d\'abuser du système en utilisant des techniques évidentes, telles que le rafraîchissement sans fin de la même page ou la répétition de la même action à l\'infini.
 
 [Plus d\'infos](https://levelup.plus/docs/article/level-up-cheat-guard?ref=blockxp_help)';
-$string['enableinfos'] = 'Activer la page d\'infos';
+$string['enableinfos'] = 'Activer la page d\'info';
 $string['enableinfos_help'] = 'Lorsque ce réglage est sur « Non », les étudiants ne seront pas en mesure d\'afficher la page d\'information.';
 $string['enableladder'] = 'Activer l\'échelle';
 $string['enableladder_help'] = 'Lorsque ce réglage est sur «Non», les étudiants ne seront pas en mesure d\'afficher l\'échelle.';
@@ -105,6 +105,7 @@ $string['enablexpgain_help'] = 'Si ce réglage est à « Non », personne ne p
 
 S\'il vous plait notez que ceci peut être contrôlé de manière plus fine  par la permission \'block/xp:earnxp\'.';
 $string['entersearchterm'] = 'Entrez un terme de recherche';
+$string['errorcontextcoursemismatchforwholesite'] = 'L\'URL de cette page <em>Progressez !</em> ne correspond pas à la configuration actuelle du plugin. Votre configuration actuelle déclare que <em>Progressez !</em> doit être utilisé « Pour l\'ensemble du site », mais cette page s\'attend à ce qu\'il soit utilisé « Par cours ». S\'il vos plait, <a href="{$a->nexturl}">cliquer ici</a> pour aller à la bonne page. Cherchez le paramètre « block_xp_context » si vous voulez changer votre configuration.';
 $string['errorcontextcoursemismatchpercourse'] = 'L\'URL de cette page <em>Progressez !</em> ne correspond pas à la configuration actuelle du plugin. Votre configuration actuelle déclare que <em>Progressez !</em> doit être utilisé « Par cours », mais cette page s\'attend à ce qu\'il soit utilisé « Pour l\'ensemble du site ». Il provient très probablement d\'un <em>bloc</em> qui a été ajouté au tableau de bord ou à la page d\'accueil dans une configuration différente. Vous devez supprimer le bloc des dernières pages et n\'utiliser le bloc que dans les cours individuels.';
 $string['errorformvalues'] = 'll y a quelques problèmes dans les valeurs de formulaire, veuillez les corriger.';
 $string['errorlevelsincorrect'] = 'Le nombre minimum de niveaux est 2';
@@ -141,7 +142,7 @@ $string['hideparticipantsidentity'] = 'Masquer l\'identité des participants';
 $string['hiderank'] = 'Masquer le rang';
 $string['incourses'] = 'Dans les cours';
 $string['ineffective'] = 'Ineffectif';
-$string['infos'] = 'Informations';
+$string['infos'] = 'Information';
 $string['instructions'] = 'Plus d\'information';
 $string['invalidxp'] = 'Valeur des points invalide';
 $string['keeplogs'] = 'Conserver l\'historique';
@@ -173,7 +174,7 @@ $string['maxactionspertime_help'] = 'Le nombre maximal d\'actions qui seront pri
 $string['movecondition'] = 'Déplacer la condition';
 $string['moverule'] = 'Déplacer la règle';
 $string['name'] = 'Nom';
-$string['navinfos'] = 'Infos';
+$string['navinfos'] = 'Info';
 $string['navladder'] = 'Echelle';
 $string['navlevels'] = 'Niveaux';
 $string['navlevelssetup'] = 'Paramétrage';
@@ -220,12 +221,13 @@ $string['privacy:path:level'] = 'Niveau';
 $string['privacy:path:logs'] = 'Journaux';
 $string['progress'] = 'Progression';
 $string['progressbar'] = 'Barre de progression';
+$string['promocheatguard'] = 'Cette protection anti-triche n\'est pas viable à long terme. Veuillez envisager de le mettre à niveau en « Progressez ! Plus » pour débloquer des solutions plus viables et d\'autres fonctionnalités. <a href="{$a->url}">Plus d\'information ici</a>.';
 $string['promocontactintro'] = 'Contactez-nous pour plus d\'informations. On ne mord pas et on répond rapidement !';
 $string['promocontactus'] = 'Entrez en contact';
 $string['promoemailusat'] = 'Écrivez-nous à levelup@branchup.tech.';
 $string['promoerrorsendingemail'] = 'Oups ! Nous n\'avons pas pu envoyer le message… Veuillez nous écrire directement à l\'adresse {$a}. Merci !';
 $string['promoifpreferemailusat'] = 'Psst ! Si vous préférez, écrivez-nous directement à l\'adresse {$a}.';
-$string['promointro'] = 'L\'extension de _Level up!_ qui libère son vrai potentiel !';
+$string['promointro'] = 'Devenez le maître du jeu et découvrez le plein potentiel de « Progressez ! ». Débloquez des fonctionnalités supplémentaires avec « Progressez ! Plus »';
 $string['promointroinstalled'] = 'Le module complémentaire _Progressez !_ est installé sur votre système et toutes ses fonctions ont été activées.';
 $string['promorulesdidyouknow'] = 'Saviez-vous qu\'avec <em>Progressez !</em> les étudiants peuvent recevoir des points pour <em>avoir terminé des cours</em> et des <em>activités</em>, ou même recevoir des points en fonction de leurs <em>notes </em> ? <a href="{$a->url}">En savoir plus ici</a>.';
 $string['promoyourmessagewassent'] = 'Merci ! Votre message a été envoyé. Nous vous recontacterons bientôt.';
@@ -285,14 +287,15 @@ $string['ruleset:all'] = 'TOUTES les conditions sont vraies';
 $string['ruleset:any'] = 'UNE des conditions est vraie';
 $string['ruleset:none'] = 'AUCUNE des conditions n\'est vraie';
 $string['rulesetinfo'] = 'Combinez plusieurs conditions en une seule.';
-$string['rulesformhelp'] = '<p> Ce plugin utilise les événements pour attribuer des points d\'expérience aux étudiants selon les actions effectuées. Vous pouvez utiliser le formulaire ci-dessous pour ajouter vos propres règles et voir celles par défaut. </p>
-<p> Il est conseillé de vérifier le plugin <a href="{$a->log}">historique</a> pour identifier les événements qui sont déclenchés lorsque vous effectuez des actions dans le cours, et aussi pour en savoir plus sur les événements eux-mêmes: <a href="{$a->list}">liste de tous les événements</a> , <a href="{$a->doc}">documentation développeur</a> . </p>
-<p> Enfin, veuillez noter que le plugin ignore toujours:
+$string['rulesformhelp'] = '<p>Ce plugin utilise les événements pour attribuer des points d\'expérience aux étudiants selon les actions effectuées. Vous pouvez utiliser le formulaire ci-dessous pour ajouter vos propres règles et voir celles par défaut.</p>
+<p>Il est conseillé de vérifier <a href="{$a->log}">l\'historique</a> du plugin pour identifier les événements qui sont déclenchés lorsque vous effectuez des actions dans le cours, et aussi pour en savoir plus sur les événements eux-mêmes : <a href="{$a->list}">liste de tous les événements</a>, <a href="{$a->doc}">documentation développeur</a>.</p>
+<p>Enfin, veuillez noter que le plugin ignore toujours :
 <ul>
-    <li> Les actions effectuées par les administrateurs, invités ou non connectés. </li>
-    <li> Les actions réalisées par des utilisateurs n\'ayant pas la permission <em>block/xp:earnxp</em>.</li>
-    <li> Les actions répétées dans un court intervalle de temps, pour éviter la tricherie. </li>
-    <li> Et les événements de niveau d\'éducation différent de <em>participation.</em> </li>
+    <li>Les actions effectuées par les administrateurs, invités ou non connectés.</li>
+    <li>Les actions réalisées par des utilisateurs n\'ayant pas la permission <em>block/xp:earnxp</em>.</li>
+    <li>Les actions répétées dans un court intervalle de temps, pour éviter la tricherie.</li>
+    <li>Les événements considéré comme <em>Anonyme</em>, ex : dans un Feedback anonyme.</li>
+    <li>Et les événements de niveau d\'éducation différent de <em>Participation.</em></li>
 </ul>
 </p>';
 $string['searchandselectcourse'] = 'Cherchez et sélectionnez un cours';
@@ -301,8 +304,70 @@ $string['send'] = 'Envoyer';
 $string['setpoints'] = 'Définir les points';
 $string['shortcode:xpbadge'] = 'Le badge correspondant au niveau actuel de l\'utilisateur.';
 $string['shortcode:xpiflevel'] = 'Afficher le contenu correspondant au niveau actuel de l\'utilisateur.';
+$string['shortcode:xpiflevel_help'] = 'Voici quelques exemples pour formatter ce code. Quand un niveau est strictement spécifié, le contenu sera affiché sans prendre compte des autres règles.
+Les règles _greater_ et _less than_ doivent toutes être respectées pour que le contenu s\'affiche. Faites attention, le contenu pourrait donc ne jamais s\'afficher !
+Remarque : les enseignants et plus globalement les utilisateurs avec les droits d\'édition, verront toujours tout.
+```
+[xpiflevel 1 3 5]
+    Affiché si le niveau de l\'utilisateur est exactement égal à 1, 3 or 5.
+[/xpiflevel]
+
+[xpiflevel >3]
+    Affiché si le niveau de l\'utilisateur est supérieur à 3.
+[/xpiflevel]
+
+[xpiflevel >=3]
+    Affiché si le niveau de l\'utilisateur est supérieur ou égal à 3.
+[/xpiflevel]
+
+[xpiflevel >=10 <20 30]
+    Affiché si le niveau de l\'utilisateur est supérieur ou égal à 10 ET est strictement inférieur à 20
+    OU est exactement égal à 30.
+[/xpiflevel]
+
+[xpiflevel <=10 >=20]
+    Jamais affiché car le niveau de l\'utilisateur ne peut pas être inférieur ou égal à 10 ET supérieur à 20.
+[/xpiflevel]
+```
+
+Remarque : ces codes ne peuvent PAS être imbriqués les uns dans les autres.';
 $string['shortcode:xpladder'] = 'Affiche une partie du classement autour du rang de l\'utilisateur actuel.';
+$string['shortcode:xpladder_help'] = 'Par défaut, une partie du classement autour du rang de l\'utilisateur est affiché.
+
+```
+[xpladder]
+```
+
+Pour afficher le top 10 des étudiants à la place, mettez comme paramètre `top`. Vous pouvez aussi définir un nombre à afficher comme : `top=20`.
+
+```
+[xpladder top]
+[xpladder top=15]
+```
+
+Un lien vers le classement total est automatiquement disponible en dessous du tableau. Si vous ne voulez pas l\'afficher, ajouter le paramètre `hidelink`.
+
+```
+[xpladder hidelink]
+```
+
+Par défaut, le tableau n\'inclut pas la colonne des progression avec les barres de progression. Si cette colonne a été sélectionnée dans les paramètres du classement, vous pouvez utiliser le paramètre `withprogress` pour l\'afficher.
+
+```
+[xpladder withprogress]
+```
+
+Remarque : si votre cours utilise les groupes, le classement va s\'afficher en fonction des groupes.';
 $string['shortcode:xplevelname'] = 'Affiche le nom du niveau.';
+$string['shortcode:xplevelname_help'] = 'Par défaut, la balise affiche le nom du niveau de l\'utilisateur.
+Sinon, vous pouvez utiliser le paramètre `level` pour afficher le nom spécifique d\'un niveau.
+
+```
+[xplevelname]
+[xplevelname level=5]
+```
+
+Si le paramètre `level` est défini, mais que le niveau n\'existe pas, rien ne s\'affichera.';
 $string['shortcode:xppoints'] = 'Affiche un nombre de points formatés en points d\'expérience.';
 $string['shortcode:xpprogressbar'] = 'La barre de progression de l\'utilisateur actuel vers le prochain niveau.';
 $string['someoneelse'] = 'Quelqu\'un d\'autre';
@@ -318,8 +383,10 @@ $string['tinytimedays'] = '{$a} j';
 $string['tinytimehours'] = '{$a} h';
 $string['tinytimeminutes'] = '{$a} m';
 $string['tinytimenow'] = 'mnt';
+$string['tinytimeolderyearformat'] = '%b %Y';
 $string['tinytimeseconds'] = '{$a} s';
 $string['tinytimeweeks'] = '{$a} sem.';
+$string['tinytimewithinayearformat'] = '%e %b';
 $string['total'] = 'Total';
 $string['unknowneventa'] = 'Événement inconnu ({$a})';
 $string['updateandpreview'] = 'Mise à jour et aperçu';

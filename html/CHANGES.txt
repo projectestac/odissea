@@ -4,6 +4,35 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 22.12.13
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.11+
+- Updated langpacks
+- Attendance: Upgraded module
+- Choicegroup: Upgraded module
+- completion_progress: Upgraded block
+- local_agora: Added script to configure oAuth2 client for IDI
+- migratehvp2h5p: Upgraded tool
+- oAuth2 client: Fixed save of oAuth2 issuers when acceptrisk is checked
+- oAuth2 client: Ensure method get_issuer exists before calling it. Added exception for client for IDI
+- oAuth2 client: Only xtecadmin can configure oAuth2 client for IDI
+- Theme xtec2020: Fix for collapsible menu using custommenuitems
+- Wiris: Upgraded all components
+
+
+Changes 22.11.15
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.11
+- Updated langpacks
+- oAuth2 client: Modified behavior for login to Azure AD via oAuth2
+- Attendance: Upgraded module
+- Choicegroup: Upgraded module
+- Clickedu: Upgraded module
+- Hotpot: Downgraded module
+- GeoGebra: Upgraded module
+- Wiris: Upgraded all components
+
+
 Changes 22.10.04
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 3.11.10+

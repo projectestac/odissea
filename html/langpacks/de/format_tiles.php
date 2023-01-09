@@ -70,7 +70,7 @@ $string['complete-n-auto'] = 'Element nicht abgeschlossen. Es wird als abgeschlo
 $string['complete-y-auto'] = 'Element abgeschlossen. Es wurde als abgeschlossen markiert, da Sie die Abschlusskriterien erfüllt haben. Sie können dies nicht manuell ändern.';
 $string['completion_help'] = 'Ein Häkchen rechts neben einer Aktivität kann verwendet werden, um anzuzeigen, dass die Aktivität abgeschlossen ist (ein leerer Kreis wird angezeigt, wenn nicht).
 Je nach Einstellung kann automatisch ein Häkchen erscheinen, wenn die Voraussetzungen für den Abschlussbedingung erfüllt sind.
-In anderen Fällen können Sie auf den leeren Kreis klicken, wenn Sie denken, dass Sie die Aktivität abgeschlossen haben. Im Anschluss wird ein durchgehendes grünen Häkchen angezeigt. (Ein erneuter Klick entfernt das Häkchen wieder)';
+In anderen Fällen können Sie auf den leeren Kreis klicken, wenn Sie denken, dass Sie die Aktivität abgeschlossen haben. Im Anschluss wird ein durchgehendes grünen Häkchen angezeigt. (Ein erneuter Klick entfernt das Häkchen wieder.)';
 $string['completionswitchhelp'] = '<p>Sie haben ausgewählt, dass die Fertigstellung auf jeder Kachel angezeigt wird. Daher wurde weiter unten die <i>Abschlussverfolgung</i> aktiviert.</p>
 <p>Zusätzlich müssen Sie bei <b>jeder</b> zu verfolgenden Aktivität die Abschlussverfolgung konfigurieren, z.B. bei einer PDF-Datei, auf "Einstellungen bearbeiten" klicken, und unter Aktivitätsabschluss die gewünschte Einstellung vornehmen.</p>
 <p>Sie können dies auch in einer <b>Stapelverarbeitung</b> tun. Details hierzu unter <a href="https://docs.moodle.org/de/Einstellungen_zum_Aktivit%C3%A4tsabschluss" target="_blank">docs.moodle.org</a></p>';

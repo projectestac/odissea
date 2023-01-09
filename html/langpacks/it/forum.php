@@ -248,26 +248,26 @@ $string['erroremptysubject'] = 'L\'oggetto non può essere vuoto';
 $string['errorenrolmentrequired'] = 'Devi essere iscritto al corso per accedere a questo contenuto';
 $string['errorforumnotfound'] = 'Non è stato trovato Il forum al quale appartiene la discussione';
 $string['errorwhiledelete'] = 'Si è verificato un errore durante l\'eliminazione del record.';
-$string['eventassessableuploaded'] = 'Inserito intervento nel forum';
-$string['eventcoursesearched'] = 'Effettuata ricerca nel corso';
-$string['eventdiscussioncreated'] = 'Creata discussione';
-$string['eventdiscussiondeleted'] = 'Eliminata discussione';
-$string['eventdiscussionmoved'] = 'Spostata discussione';
-$string['eventdiscussionpinned'] = 'La discussione è stata messa evidenza';
-$string['eventdiscussionsubscriptioncreated'] = 'Creata  sottoscrizione della discussione';
-$string['eventdiscussionsubscriptiondeleted'] = 'Eliminata sottoscrizione della discussione';
-$string['eventdiscussionunpinned'] = 'La discussione è stata rimossa dall\'evidenza';
-$string['eventdiscussionupdated'] = 'Aggiornata discussione';
-$string['eventdiscussionviewed'] = 'Visualizzata discussione';
-$string['eventpostcreated'] = 'Creato intervento';
-$string['eventpostdeleted'] = 'Eliminato intervento';
-$string['eventpostupdated'] = 'Aggiornato intervento';
-$string['eventreadtrackingdisabled'] = 'Disabilitata evidenziazione messaggi';
-$string['eventreadtrackingenabled'] = 'Abilitata evidenziazione messaggi';
-$string['eventsubscribersviewed'] = 'Visualizzati sottoscrittori';
-$string['eventsubscriptioncreated'] = 'Creata sottoscrizione';
-$string['eventsubscriptiondeleted'] = 'Eliminata sottoscrizione';
-$string['eventuserreportviewed'] = 'Visualizzato report utente';
+$string['eventassessableuploaded'] = 'Inserimento intervento nel forum';
+$string['eventcoursesearched'] = 'Effettuazione ricerca nel corso';
+$string['eventdiscussioncreated'] = 'Creazione discussione';
+$string['eventdiscussiondeleted'] = 'Eliminazione discussione';
+$string['eventdiscussionmoved'] = 'Spostatmento discussione';
+$string['eventdiscussionpinned'] = 'evidenziazione della discussione';
+$string['eventdiscussionsubscriptioncreated'] = 'Creazione sottoscrizione della discussione';
+$string['eventdiscussionsubscriptiondeleted'] = 'Eliminazione sottoscrizione della discussione';
+$string['eventdiscussionunpinned'] = 'Rimozione evidenziazione della discussione';
+$string['eventdiscussionupdated'] = 'Aggiornamento discussione';
+$string['eventdiscussionviewed'] = 'Visualizzazione discussione';
+$string['eventpostcreated'] = 'Creazione intervento';
+$string['eventpostdeleted'] = 'Eliminazione intervento';
+$string['eventpostupdated'] = 'Aggiornamento intervento';
+$string['eventreadtrackingdisabled'] = 'Disabilitazione evidenziazione messaggi';
+$string['eventreadtrackingenabled'] = 'Abilitazione evidenziazione messaggi';
+$string['eventsubscribersviewed'] = 'Visualizzazione sottoscrittori';
+$string['eventsubscriptioncreated'] = 'Creazione sottoscrizione';
+$string['eventsubscriptiondeleted'] = 'Eliminazione sottoscrizione';
+$string['eventuserreportviewed'] = 'Visualizzazione report utente';
 $string['everyonecanchoose'] = 'Ciascun partecpante può decidere se sottoscrivere il forum';
 $string['everyonecannowchoose'] = 'La sottoscrizione del forum è ora facoltativa per tutti';
 $string['everyoneisnowsubscribed'] = 'La sottoscrizione del forum è ora obbligatoria per tutti';
@@ -277,7 +277,7 @@ $string['export'] = 'Esporta';
 $string['exportattachmentname'] = 'Esporta l\'allegato {$a} nel portfolio';
 $string['exportdiscussion'] = 'Esporta l\'intera discussione nel portfolio';
 $string['exporthumandates'] = 'Date leggibile in chiaro';
-$string['exporthumandates_help'] = 'E\' possibile esportare le date leggibili in chiaro oppure come marca temporale (sequenza di numeri).';
+$string['exporthumandates_help'] = 'È possibile esportare le date leggibili in chiaro oppure come marca temporale (sequenza di numeri).';
 $string['exportoptions'] = 'Opzioni di esportazione';
 $string['exportstriphtml'] = 'Rimuovi HTML';
 $string['exportstriphtml_help'] = 'Consente di rimuovere dal messaggio del forum i tag HTML come p e br.';
@@ -412,7 +412,7 @@ $string['markalldread'] = 'Segna come letti tutti gli interventi in questa discu
 $string['markallread'] = 'Segna come letti tutti gli interventi in questo forum.';
 $string['markasread'] = 'Segna come letto';
 $string['markasreadonnotification'] = 'All\'invio delle notifiche di interventi nel forum';
-$string['markasreadonnotification_help'] = 'E\' possibile scegliere se le notifiche degli interventi nel forum possono contrassegnare o non contrassegnare gli interventi come letti.';
+$string['markasreadonnotification_help'] = 'È possibile scegliere se le notifiche degli interventi nel forum possono contrassegnare o non contrassegnare gli interventi come letti.';
 $string['markasreadonnotificationno'] = 'Non contrassegnare l\'intervento come letto';
 $string['markasreadonnotificationyes'] = 'Contrassegna l\'intervento come letto';
 $string['markread'] = 'Segna come letto';
@@ -442,13 +442,13 @@ $string['modethreaded'] = 'Visualizza le repliche in formato per oggetto';
 $string['modulename'] = 'Forum';
 $string['modulename_help'] = 'Il modulo attività Forum consente di tenere discussioni asincrone tra i partecipanti, la cui durata è prolungata nel tempo.
 
-Sono disponibili diversi tipi di forum tra cui scegliere,  forum standard dove chiunque può avviare una discussione, forum dove ciascuno studente può avviare una sola discussioni, forum domande e risposte, dove lo studente deve intervenire prima di poter visualizzare gli interventi degli altri. E\' possibile consentire file allegati. Se gli allegati sono immagini saranno visualizzate direttamente nel corpo dell\'intervento.
+Sono disponibili diversi tipi di forum tra cui scegliere,  forum standard dove chiunque può avviare una discussione, forum dove ciascuno studente può avviare una sola discussioni, forum domande e risposte, dove lo studente deve intervenire prima di poter visualizzare gli interventi degli altri. È possibile consentire file allegati. Se gli allegati sono immagini saranno visualizzate direttamente nel corpo dell\'intervento.
 
 I partecipanti possono sottoscrivere il forum per ricevere notifiche di nuovi interventi. Il docente può impostare la sottoscrizione al forum come facoltativa, obbligatoria, automatica, oppure può non consentirne la sottoscrizione. In caso di necessità è anche possibile bloccare studenti che abbiano postato più di un certo numero di interventi in un dato intervallo di tempo, riducendo il rischio che qualcuno domini la discussione.
 
 Gli interventi nei forum possono essere valutati dal docente o dagli stessi studenti (valutazione tra pari). I punteggi ottenuti vengono aggregati e memorizzati nel registro valutatore.
 
-E\' possibile usare il forum per:
+È possibile usare il forum per:
 
 * uno spazio sociale per consentire ai partecipanti di conoscersi
 * annunci del corso (usando il forum news a sottoscrizione obbligatoria)
@@ -670,7 +670,7 @@ $string['searcholderposts'] = 'Cerca interventi più vecchi...';
 $string['searchphrase'] = 'Nell\'intervento deve apparire esattamente questa frase';
 $string['searchresults'] = 'Risultati della ricerca';
 $string['searchsubject'] = 'Queste parole devono apparire nell\'oggetto';
-$string['searchtags'] = 'E\' taggato con';
+$string['searchtags'] = 'È taggato con';
 $string['searchuser'] = 'Questo nome deve corrispondere all\'autore';
 $string['searchuserid'] = 'Il Moodle ID dell\'autore';
 $string['searchusers'] = 'Cerca utenti';

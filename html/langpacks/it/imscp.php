@@ -42,9 +42,9 @@ $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, 
 $string['keepold'] = 'Pacchetti da archiviare';
 $string['keepoldexplain'] = 'Quanti pacchetti devono essere archiviati?';
 $string['modulename'] = 'IMS content package';
-$string['modulename_help'] = 'Un IMS content package è un insieme di file impacchettati secondo uno standard di interoperabilità riconosciuto.. Il modulo IMS content package consente di caricare pacchetti .zip IMS tra le risorse del corso.
+$string['modulename_help'] = 'Un IMS content package è un insieme di file impacchettati secondo uno standard di interoperabilità riconosciuto. Il modulo IMS content package consente di caricare pacchetti .zip IMS tra le risorse del corso.
 
-In genere il contenuto di un pacchetto viene visualizzato su diverse pagine, con la possibilità di navigarle. E\' possibile impostare il pacchetto per visualizzare il contenuto in finestre pop up, con un menu di navigazione, eccetera.
+In genere il contenuto di un pacchetto viene visualizzato su diverse pagine, con la possibilità di navigarle. È possibile impostare il pacchetto per visualizzare il contenuto in finestre pop up, con un menu di navigazione, eccetera.
 
 Un pacchetto IMS può essere utilizzato per presentare contenuti ed animazioni multimediali.';
 $string['modulenameplural'] = 'IMS content package';

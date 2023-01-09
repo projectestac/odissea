@@ -90,7 +90,7 @@ $string['hideremote'] = 'Verberg externe gebruikers';
 $string['host'] = 'host';
 $string['hostcoursenotfound'] = 'Host of cursus kan niet gevonden worden';
 $string['hostdeleted'] = 'Host verwijderd';
-$string['hostexists'] = 'Er bestaat al een record voor een host met die naam. <a href="{$a}">Klik hier</a> om die record te bewerken.';
+$string['hostexists'] = 'Er bestaat al een record voor een host met die hostnaam. <a href="{$a}">Klik hier</a> om die record te bewerken.';
 $string['hostlist'] = 'Lijst met genetwerkte hosts';
 $string['hostname'] = 'Host-naam';
 $string['hostnamehelp'] = 'De fully-qualified domain name van die host, bv. www.voorbeeld.com';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activemethodinfo'] = '\'{$a->method}\' metodoa dago aukeratuta kalifikazio-metodo gisa \'{$a->area}\' eremuan';
-$string['activemethodinfonone'] = '\'{$a->method}\' metodoa dago aukeratuta kalifikazio-metodo gisa \'{$a->area}\' eremuan';
+$string['activemethodinfonone'] = 'Ez da kalifikazio-metodo aurreraturik aukeratu \'{$a->area}\' eremurako. Kalifikazio sinple zuzena erabiliko da.';
 $string['changeactivemethod'] = 'Aldatu kalifikazio-metodoa beste honetara';
 $string['clicktoclose'] = 'egin klik ixteko';
 $string['error:gradingunavailable'] = 'Kalifikazio-metodo aurreratua ez dago ondo konfiguratuta. Egiaztatu ezazu mesedez foro osoko kalifikazioaren aukerak foroaren ezarpenetan.';

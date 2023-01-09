@@ -49,6 +49,7 @@ $string['customlang:export'] = 'Экспортировать локальный 
 $string['customlang:view'] = 'Просматривать локальный перевод';
 $string['export'] = 'Экспортировать настроенные строки';
 $string['exportfilter'] = 'Выбрать компонент(ы) для экспорта';
+$string['exportzipfilename'] = 'customlang-export-{$a->lang}.zip';
 $string['filter'] = 'Отфильтровать строки';
 $string['filtercomponent'] = 'Выводить строки из следующих компонентов системы';
 $string['filtercustomized'] = 'Только имеющие локальный перевод';

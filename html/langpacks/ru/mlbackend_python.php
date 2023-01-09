@@ -46,4 +46,4 @@ $string['tensorboardinfo'] = 'Запустите TensorBoard из командн
 $string['username'] = 'Логин';
 $string['usernamedesc'] = 'Строка символов, используемая в качестве логина для связи между сервером Moodle и сервером Python.';
 $string['useserver'] = 'Использовать сервер';
-$string['useserverdesc'] = 'Пакет Python для машинного обучения установлен не на веб-сервере, а на другом сервере.';
+$string['useserverdesc'] = 'Пакет Python для машинного обучения установлен не на этом веб-сервере, а на другом сервере.';

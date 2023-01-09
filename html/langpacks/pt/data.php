@@ -252,6 +252,10 @@ $string['menu'] = 'Menu';
 $string['menuchoose'] = 'Selecione...';
 $string['missingdata'] = 'Deve ser indicado um identificador de informação ou um objeto para a classe do campo';
 $string['missingfield'] = 'Erro de programação: Deve especificar um campo e/ou dados na definição da classe do campo.';
+$string['missingfieldtype'] = 'Não foi encontrado o tipo de campo para \'{$a->name}\'';
+$string['missingfieldtypeimport'] = 'Os campos a seguir não foram importados porque os seus tipos de campo correspondentes não estão instalados:';
+$string['missingfieldtypes'] = 'Os campos a seguir não têm os seus tipos de campo correspondentes instalados e não serão incluídos nos formulários ao adicionar ou editar entradas.
+Os nomes dos campos podem ainda estar exibidos no formulário, por isso, atualize o "Adicionar modelo de entrada" adequadamente:';
 $string['modulename'] = 'Base de dados';
 $string['modulename_help'] = 'A atividade Base de dados permite aos participantes criar, gerir e pesquisar informação num conjunto de entradas.
 
@@ -281,7 +285,7 @@ Cada campo deve ter um nome único na estrutura do registo. A descrição do cam
 $string['noaccess'] = 'Não tem permissão para aceder a esta página';
 $string['nodefinedfields'] = 'Não existem campos definidos no novo protótipo!';
 $string['nofieldcontent'] = 'O conteúdo do campo não foi encontrado';
-$string['nofieldindatabase'] = 'Não existem campos definidos para esta base de dados';
+$string['nofieldindatabase'] = 'Não existem campos definidos para esta base de dados.';
 $string['nolisttemplate'] = 'O modelo de lista ainda não foi definido';
 $string['nomatch'] = 'Não foram encontrados registos correspondentes!';
 $string['nomaximum'] = 'Não existe máximo';
@@ -377,7 +381,7 @@ $string['showall'] = 'Mostrar todos os registos';
 $string['single'] = 'Ver registo';
 $string['singletemplate'] = 'Registo';
 $string['subplugintype_datafield'] = 'Tipo de campo da base de dados';
-$string['subplugintype_datafield_plural'] = 'Tipos de campos da base de dados';
+$string['subplugintype_datafield_plural'] = 'Tipos de campo da base de dados';
 $string['subplugintype_datapreset'] = 'Protótipo';
 $string['subplugintype_datapreset_plural'] = 'Protótipos';
 $string['tagarea_data_records'] = 'Registos de dados';
@@ -393,6 +397,7 @@ $string['timemodified'] = 'Data e hora da última modificação';
 $string['todatabase'] = 'para esta base de dados.';
 $string['type'] = 'Tipo de campo';
 $string['undefinedprocessactionmethod'] = 'Não foi definido o método de ação em Data_Preset para executar a ação "{$a}".';
+$string['unknown'] = 'Campo desconhecido';
 $string['unsupportedexport'] = 'O tipo de campo <b>{$a->fieldtype}</b> não pode ser exportado.';
 $string['unsupportedfields'] = 'Campos não suportados';
 $string['unsupportedfieldslist'] = 'Os seguintes campos não podem ser exportados:';
@@ -405,7 +410,7 @@ $string['uploadrecords_help'] = 'Os registos podem ser carregados via ficheiro d
 * Cada registo é uma linha com uma série de dados separados pelo separador selecionado
 *O primeiro registo contém uma lista com os nomes dos campos, definindo assim o formato do resto do ficheiro
 
-O delimitador dos valores dos campos é um carácter que marca o início e fim do valor de cada campo. Em geral pode deixar indefinido.';
+O delimitador dos valores dos campos é um caráter que marca o início e fim do valor de cada campo. Em geral pode deixar indefinido.';
 $string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = 'Incluir na pesquisa.';

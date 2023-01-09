@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'حقل تاريخ';
+$string['fieldtypelabel'] = 'التاريخ';
 $string['pluginname'] = 'التاريخ';
-$string['privacy:metadata'] = 'إن مكون حقل التاريخ لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل الجداول المعرفة في mod_data.';
+$string['privacy:metadata'] = 'إن مُكون حقل التاريخ لا يخزن أي بيانات شخصية، بل يستعمل الجداول المعرفة في mod_data.';

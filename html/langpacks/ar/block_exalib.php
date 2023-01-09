@@ -26,7 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmaincat'] = 'إضافة تصنيف رئيسي';
+$string['all'] = 'الكل';
+$string['all_entries'] = 'كل المُدخلات';
+$string['alt_all_entries'] = 'كل المُدخلات';
 $string['back'] = 'رجوع';
+$string['exalib:admin'] = 'إدارة كل المحتوى';
 $string['exalib:creator'] = 'إنشاء المحتوى وإدارة المحتوى الخاص به';
 $string['linktitle'] = 'عنوان الرابط';
 $string['maincat'] = 'التصنيف الرئيسي';

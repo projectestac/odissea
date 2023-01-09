@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowedtypes'] = 'Formati accettati';
-$string['allowedtypes_desc'] = 'I pulsanti di registrazione che saranno disponibili in Atto. E\' anche possibile impostare i privilegi che controllano chi può utilizzare le funzionalità di registrazione  in uno specifico contesto.';
+$string['allowedtypes_desc'] = 'I pulsanti di registrazione che saranno disponibili in Atto. È anche possibile impostare i privilegi che controllano chi può utilizzare le funzionalità di registrazione  in uno specifico contesto.';
 $string['attachrecording'] = 'Allega registrazione';
 $string['audioandvideo'] = 'Audio e video';
 $string['audiobitrate'] = 'Velocità audio in bit';
 $string['audiobitrate_desc'] = 'Qualità della registrazione audio (un numero più grande significa maggiore qualità)';
 $string['audiortc'] = 'Registra audio';
 $string['gumabort'] = 'È successo qualcosa di strano che ha impedito l\'utilizzo della webcam / microfono';
-$string['gumabort_title'] = 'E\' accaduto qualcosa';
+$string['gumabort_title'] = 'È accaduto qualcosa';
 $string['gumnotallowed'] = 'L\'utente deve consentire al browser di accedere alla Webcam e/o al microfono';
 $string['gumnotallowed_title'] = 'Autorizzazioni errate';
 $string['gumnotfound'] = 'Nessun dispositivo di input connesso o abilitato';
@@ -46,11 +46,11 @@ $string['gumoverconstrained'] = 'La webcam o il microfono non possono produrre u
 $string['gumoverconstrained_title'] = 'Problemi con i vincoli';
 $string['gumsecurity'] = 'Il browser non supporta la registrazione con una connessione non sicura e deve chiudere il plugin';
 $string['gumsecurity_title'] = 'Nessun supporto a causa di connessione non sicura';
-$string['gumtype'] = 'E\' stato effettuato un tentativo di ottenere il flusso dalla webcam/microfono, ma non sono stati specificati vincoli';
+$string['gumtype'] = 'È stato effettuato un tentativo di ottenere il flusso dalla webcam/microfono, ma non sono stati specificati vincoli';
 $string['gumtype_title'] = 'Nessuna limitazione specificata';
 $string['insecurealert'] = 'Il browser potrebbe non consentire a questo plug-in di funzionare a meno che non venga utilizzato su HTTPS o da localhost';
 $string['insecurealert_title'] = 'Connessione non sicura!';
-$string['nearingmaxsize'] = 'E\' stato raggiunto il limite massimo di dimensione per il caricamento di file';
+$string['nearingmaxsize'] = 'È stato raggiunto il limite massimo di dimensione per il caricamento di file';
 $string['nearingmaxsize_title'] = 'Registrazione interrotta';
 $string['norecordingfound'] = 'Qualcosa non ha funzionato, sembra che non sia stato registrato nulla';
 $string['norecordingfound_title'] = 'Nessuna registrazione trovata';

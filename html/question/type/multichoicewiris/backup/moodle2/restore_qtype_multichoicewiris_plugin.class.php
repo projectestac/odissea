@@ -29,7 +29,7 @@ class restore_qtype_multichoicewiris_plugin extends restore_qtype_multichoice_pl
 
         // We used get_recommended_name() so this works.
         $elepath = $this->get_pathfor('/multichoice');
-        $xmlpath = '/question_categories/question_category/questions/question/plugin_qtype_multichoicewiris_question/question_xml';
+        $xmlpath = $this->get_pathfor('/question_xml');
 
         $paths[] = new restore_path_element($elename, $elepath);
         $paths[] = new restore_path_element($xmlname, $xmlpath);

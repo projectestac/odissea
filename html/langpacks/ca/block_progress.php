@@ -77,7 +77,7 @@ $string['how_group_works_help'] = '<p>Si seleccioneu un grup només es mostrarà
 $string['how_ordering_works'] = 'Com ordenar els treballs';
 $string['how_ordering_works_help'] = '<p>Hi ha dues maneres d\'ordenar els ítems a la Barra de progrés.</p>
 <ul>
-<li><em>Dia i hora (per defecte) de l\'«Esperat pel»</em><br/>Les dates de venciment o les que manualment s\'han determinat a les activitats i recursos s\'utilitzen per ordenar els elements de la Barra de progrés</li>
+<li><em>Dia i hora (per defecte) de l\'«Esperat pel»</em><br/>Les dates de venciment o les que manualment s\'han determinat a les activitats i els recursos s\'utilitzen per ordenar els elements de la Barra de progrés</li>
 <li><em>Ordenar al curs</em><br/>
 Les activitats i els recursos es presenten amb el mateix ordre en què estan a la pàgina del curs. Quan s\'utilitza aquesta opció es desactiven els aspectes relacionats amb el temps.
     </li>
@@ -129,10 +129,10 @@ $string['url'] = 'URL';
 $string['video'] = 'Vídeo';
 $string['viewed'] = 'vist';
 $string['what_actions_can_be_monitored'] = 'Quines accions es poden monitoritzar?';
-$string['what_actions_can_be_monitored_help'] = '<p>Les diferents activitats i recursos poden ser monitorats.</p>
-<P>Com que les diferents activitats i recursos s\'utilitzen de manera diferent, el que es monitora per a cada mòdul varia. Per exemple, per a les tasques, les trameses es poden controlar; als qüestionaris es poden monitorar els intents; als fòrums es poden monitorar les entrades dels estudiants; a les consultes es poden monitorar les respostes i les visualitzacions. </p>
+$string['what_actions_can_be_monitored_help'] = '<p>Els diferents recursos i activitats poden ser monitorats.</p>
+<P>Com que els diferents recursos i activitats s\'utilitzen de manera diferent, el que es monitora per a cada mòdul varia. Per exemple, per a les tasques, les trameses es poden controlar; als qüestionaris es poden monitorar els intents; als fòrums es poden monitorar les entrades dels estudiants; a les consultes es poden monitorar les respostes i les visualitzacions. </p>
 <h3>Superat</h3>
-<p>En els mòduls de tasques, de lliçons i de qüestionaris, el fet d\'aprovar es basa en la «Qualificació per a aprovar» que està establerta per l\'element de qualificació en el llibre de qualificacions. <a href="http://docs.moodle.org/en/Grade_items#Activity-based_grade_items" target="_blank">Més ajuda...</a></p>';
+<p>Als mòduls de tasques, de lliçons i de qüestionaris, el fet d\'aprovar es basa en la «Qualificació per a aprovar» que està establerta per l\'element de qualificació al llibre de qualificacions. <a href="http://docs.moodle.org/en/Grade_items#Activity-based_grade_items" target="_blank">Més ajuda...</a></p>';
 $string['what_does_monitored_mean'] = 'Què vol dir monitorat?';
 $string['what_does_monitored_mean_help'] = '<p>L\'objectiu d\'aquest bloc és animar els estudiants a gestionar el seu temps amb eficàcia. Cada estudiant pot monitorar el seu progrés en la realització de les activitats i els recursos que heu creat.</p>
 <p>A la pàgina de configuració, veureu una llista de tots els mòduls que s\'han creat, que poden controlar-se a través del bloc de la Barra de progrés. Només es farà seguiment dels mòduls, i per tant apareixerà un quadrat petit a la barra de progrés, en els quals s\'hagi triat l\'opció Sí a l\'apartat de monitorar el mòdul.</p>';

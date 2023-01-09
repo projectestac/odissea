@@ -37,7 +37,7 @@ $string['googledocs:view'] = 'Ver repositório Google Drive';
 $string['importformat'] = 'Configurar os formatos predefinidos de importação do Google';
 $string['internal'] = 'Interno (ficheiros armazenados no Moodle)';
 $string['issuer'] = 'Serviço OAuth 2';
-$string['issuer_help'] = 'Selecione o serviço Oauth2 configurado para ligar-se à API do Google Drive. Se o serviço ainda não existir, precisará de criá-lo.';
+$string['issuer_help'] = 'Selecione o serviço OAuth 2 configurado para ligar-se à API do Google Drive. Se o serviço ainda não existir, tem de criá-lo.';
 $string['mydrive'] = 'O meu disco';
 $string['oauth2serviceslink'] = '<a href="{$a}" title="Hiperligação à configuração dos serviços OAuth 2">Configuração dos serviços OAuth 2</a>';
 $string['owner'] = 'Proprietário: {$a}';

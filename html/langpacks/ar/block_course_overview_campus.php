@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['all'] = 'الكل';
 $string['blocktitle'] = 'عنوان الكتلة';
 $string['blocktitle_desc'] = 'هذا الاسم يتم إظهاره بمثابة عنوان الكتلة';
 $string['course_overview_campus:addinstance'] = 'إضافة كتلة جديدة لنظرة عامة على الحرم الجامعي';

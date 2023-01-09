@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actionsforgraderinterface'] = '評定者インターフェース操作';
+$string['actionsforgraderinterface'] = '評定者インタフェース操作';
 $string['actionsforpost'] = '投稿へのアクション';
 $string['activitydate:due'] = '終了日時:';
 $string['activityoverview'] = '新しいフォーラム投稿があります。';

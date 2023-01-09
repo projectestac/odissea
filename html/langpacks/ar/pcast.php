@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addnewepisode'] = 'إضافة حلقة جديدة';
+$string['allentries'] = 'الكل';
 $string['cannotseeepisode'] = 'ليست لديك صلاحية معاينة هذه الحلقة';
 $string['displayauthor'] = 'عرض أسماء الكُتاب';
 $string['displayauthor_help'] = 'عرض اسم الكاتب لكل حلقة للمستخدمين';

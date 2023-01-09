@@ -31,5 +31,5 @@ $string['criteriagroup'] = 'معايير مجموعة';
 $string['firstofsecond'] = '{$a->first} من {$a->second}';
 $string['pluginname'] = 'حالة إكمال المقرر الدراسي';
 $string['privacy:metadata'] = 'إن كتلة حالة إكمال المقرر الدراسي تظهر فقط بيانات عن إكمال المقرر ولا تخزن أي بيانات بحد ذاتها.';
-$string['requirement'] = 'متطلبات';
+$string['requirement'] = 'المتطلب';
 $string['returntocourse'] = 'عودة إلى المقرر الدراسي';

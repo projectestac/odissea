@@ -85,7 +85,9 @@ $string['restore'] = 'Copy to course';
 $string['restore_heavy_load_warning_message'] = 'Load time are longer, because more than 10 activities/resources are being processed.';
 $string['section_name_conflict'] = 'Section conflict';
 $string['settings:add_to_sharing_cart'] = 'Add to sharing cart';
-$string['settings:add_to_sharing_cart_desc'] = 'Choose between drag and drop or click to add method for adding modules and sections to the sharing cart.';
+$string['settings:add_to_sharing_cart_desc'] = 'Choose between drag and drop or click to add method for adding modules and sections to the sharing cart. -
+The \'Click to add\' method is the standard in the sharing cart, where you need to click on the basket icon, before it will be added into the sharing cart. -
+The \'Drag and drop\' allows you to drag and drop modules/activities and sections into the sharing cart block or into the basket icon in the footer. Please note that this is only supported for Moodle 4.0+';
 $string['settings:click_to_add'] = 'Click to add';
 $string['settings:drag_and_drop'] = 'Drag and drop';
 $string['settings:userdata_copyable_modtypes'] = 'User data copyable module types';

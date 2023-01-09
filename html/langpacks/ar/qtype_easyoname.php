@@ -32,6 +32,7 @@ $string['answerno'] = 'الإجابة {$a}';
 $string['caseautofeedback'] = '<b>أتريد تمكين الإفادة التلقائية؟</b> تمكينه سيعطي إفادة تلقائية مبنية على الاستجابة المعطاة.';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}.';
 $string['correctanswers'] = 'التعليمات';
+$string['implicithall'] = 'الكل';
 $string['javaneeded'] = 'لاستعمال هذه الصفحة، تحتاج إلى مستعرض تم فيه تمكين Java. قم بتنزيل آخر إصدار من ملحق Java من {$a}.';
 $string['notenoughanswers'] = 'هذا النوع من الأسئلة يتطلب {$a} من الإجابات على الأقل';
 $string['pleaseenterananswer'] = 'يرجى إدخال الإجابة.';

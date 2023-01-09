@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alignment'] = 'المحاذاة';
 $string['commentinputtype'] = 'نوع إدخال التعليق';
 $string['configmaxentries'] = 'هذه القيمة تحدد أقصى عدد من الإدخالات التي يمكن إضافتها إلى نشاط نموذج البيانات.';
 $string['configmaxfields'] = 'هذه القيمة تحدد أقصى عدد من الحقول التي يمكن إضافتها إلى نشاط نموذج البيانات.';
@@ -52,6 +53,7 @@ $string['event_view_deleted'] = 'معاينة تم حذفها';
 $string['event_view_updated'] = 'معاينة تم تحديثها';
 $string['event_view_viewed'] = 'معاينة تم الوصول إليها';
 $string['events'] = 'الأحداث';
+$string['fieldallowautolink'] = 'السماح بالربط التلقائي';
 $string['fielddefaultvalue'] = 'القيمة الافتراضية';
 $string['fielddescription'] = 'وصف الحقل';
 $string['fieldname'] = 'اسم الحقل';

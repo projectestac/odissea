@@ -32,7 +32,7 @@ class restore_qtype_shortanswerwiris_plugin extends restore_qtype_shortanswer_pl
         // We used get_recommended_name() so this works.
         $elepath = $this->get_pathfor('/shortanswer');
         $shortanswerwirispath = $this->get_pathfor('/shortanswerwiris');
-        $xmlpath = '/question_categories/question_category/questions/question/plugin_qtype_shortanswerwiris_question/question_xml';
+        $xmlpath = $this->get_pathfor('/question_xml');
 
         $paths[] = new restore_path_element($elename, $elepath);
         $paths[] = new restore_path_element($shortanswerwiriselement, $shortanswerwirispath);

@@ -26,6 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['adminfrontpage'] = 'صفحة الواجهة بعين المشرف';
+$string['allactivitytypes'] = 'كل أنواع النشاطات';
+$string['allcategories'] = 'كل التصنيفات';
+$string['allcourses'] = 'كل المساقات';
+$string['allgroups'] = 'كل المجموعات';
 $string['allparticipants'] = 'كل المشاركين';
 $string['blockinfo'] = 'معلومات الكتلة';
 $string['blocksitesettings'] = 'إعدادات كتلة الموقع';

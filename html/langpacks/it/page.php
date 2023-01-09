@@ -50,7 +50,7 @@ Una risorsa pagina rispetto ad una risorsa file in genere risulterà più access
 
 Per contenuti corposi, si raccomanda di utilizzare il modulo di attività libro al posto del modulo pagina.
 
-E\' possibile usare il modulo pagina per
+È possibile usare il modulo pagina per
 
 * presentare le condizioni di partecipazione o il programma del corso
 * inserire video e suoni accompagnati da testo esplicativo';

@@ -81,7 +81,20 @@ if ($mform && $mform->is_cancelled()) {
         } else {
             echo $OUTPUT->heading(get_string('createnewservice', 'tool_oauth2') . ' ' . get_string('custom_service', 'tool_oauth2'));
         }
+
+        // XTEC ************ AFEGIT - Only xtecadmin can configure oAuth2 client for IDI (Azure AD).
+        // 2022.11.28 @aginard
+        $isIDI = method_exists($issuer, 'get') && is_number(strpos($issuer->get('loginpagename'), 'IDI'));
+        if ((!$isIDI && function_exists('is_agora') && is_agora()) || is_xtecadmin()) {
+        // ************ FI
+
         $mform->display();
+
+        // XTEC ************ AFEGIT - Only xtecadmin can configure oAuth2 client for IDI (Azure AD).
+        // 2022.11.28 @aginard
+        }
+        // ************ FI
+
         echo $OUTPUT->footer();
     }
 } else if ($action == 'savetemplate') {

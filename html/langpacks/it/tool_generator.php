@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['bigfile'] = 'File grandi {$a}';
 $string['courseexplanation'] = 'Il tool crea un corso di test con diverse sezioni, attività e file.
 
-E\' utile per fornire una misura standard per verificare l\'affidabilità e le prestazioni di diverse componenti del sistema (ad esempio backup e ripristino).
+È utile per fornire una misura standard per verificare l\'affidabilità e le prestazioni di diverse componenti del sistema (ad esempio backup e ripristino).
 
 Il test è importante poiché in molti casi reali (ad esempio corsi con più di 1000 attività) il sistema può presentare problemi.
 
@@ -91,9 +91,9 @@ $string['smallfiles'] = 'File piccoli';
 $string['targetcourse'] = 'Test corso obiettivo';
 $string['testplanexplanation'] = 'Il tool crea un file di test plan JMeter assieme ad un file con le credenziali utente.
 
-Il test plan è disegnato per lavorare con {$a}, rendendo più semplice eseguire il test plan in uno specifico ambiente Moodle, raccogliere informazioni sull\'elaborazione e confrontare i risultati. E\' necessario scaricare il test plan ed eseguirlo tramite lo script test_runner.sh oppure seguire le istruzioni di installazione ed utilizzo.
+Il test plan è disegnato per lavorare con {$a}, rendendo più semplice eseguire il test plan in uno specifico ambiente Moodle, raccogliere informazioni sull\'elaborazione e confrontare i risultati. È necessario scaricare il test plan ed eseguirlo tramite lo script test_runner.sh oppure seguire le istruzioni di installazione ed utilizzo.
 
-E\' necessario impostare una password per gli utenti del corso nel file config.php (ad esempio $CFG->tool_generator_users_password = \'moodle\';). Non sono previsti default per la password per evitare usi fraudolenti del tool. E\' anche necessario aggiornare l\'opzione password se gli utenti del corso hanno password diverse oppure le password sono state generate senza aver prima impostato il valore in $CFG->tool_generator_users_password.
+È necessario impostare una password per gli utenti del corso nel file config.php (ad esempio $CFG->tool_generator_users_password = \'moodle\';). Non sono previsti default per la password per evitare usi fraudolenti del tool. È anche necessario aggiornare l\'opzione password se gli utenti del corso hanno password diverse oppure le password sono state generate senza aver prima impostato il valore in $CFG->tool_generator_users_password.
 
 Il tool fa parte di tool_generator, quindi lavora bene con i corsi prodotti dai generatori di corsi e di siti. Può anche essere usato con altri corsi che abbiamo le seguenti caratteristiche:
 
@@ -101,7 +101,7 @@ Il tool fa parte di tool_generator, quindi lavora bene con i corsi prodotti dai 
 * un\'istanza di modulo pagina
 * un\'istanza di modulo forum con almeno una discussione ed un intervento
 
-E\' bene valutare le possibilità del server prima di eseguire un test plan JMeter di grandi dimensioni poiché il carico generato può essere molto elevato. Il periodo di ramp up può essere ottimizzato in base al numero di thread (utenti) per ridurre il problema ma il carico rimarrà comunque molto elevato.
+È bene valutare le possibilità del server prima di eseguire un test plan JMeter di grandi dimensioni poiché il carico generato può essere molto elevato. Il periodo di ramp up può essere ottimizzato in base al numero di thread (utenti) per ridurre il problema ma il carico rimarrà comunque molto elevato.
 
 **Non eseguire il test plan su un sistema in produzione**. Il tool è innocuo e genera solamente file da usare con JMeter ma non eseguire **MAI** un test plan su sistemi in produzione.';
 $string['testplansize_0'] = 'XS ({$a->users} utenti, {$a->loops} loop e {$a->rampup} rampup period)';
@@ -111,4 +111,4 @@ $string['testplansize_3'] = 'L ({$a->users} utenti, {$a->loops} loop e {$a->ramp
 $string['testplansize_4'] = 'XL ({$a->users} utenti, {$a->loops} loop e {$a->rampup} rampup period)';
 $string['testplansize_5'] = 'XXL ({$a->users} utenti, {$a->loops} loop e {$a->rampup} rampup period)';
 $string['updateuserspassword'] = 'Aggiorna password utenti del corso';
-$string['updateuserspassword_help'] = 'JMeter deve autenticarsi come utente del corso. E\' possibile impostare la password degli utenti impostando $CFG->tool_generator_users_password nel file config.php. L\'impostazione aggiorna la password degli utenti del corso al valore impostato in $CFG->tool_generator_users_password. Può essere utile nel caso si utilizzi un corso non generato da tool_generator o nel caso in cui il corso di test sia stato creato prima di impostare $CFG->tool_generator_users_password.';
+$string['updateuserspassword_help'] = 'JMeter deve autenticarsi come utente del corso. È possibile impostare la password degli utenti impostando $CFG->tool_generator_users_password nel file config.php. L\'impostazione aggiorna la password degli utenti del corso al valore impostato in $CFG->tool_generator_users_password. Può essere utile nel caso si utilizzi un corso non generato da tool_generator o nel caso in cui il corso di test sia stato creato prima di impostare $CFG->tool_generator_users_password.';

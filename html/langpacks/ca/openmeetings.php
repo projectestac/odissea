@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['Room_Name'] = 'Nom de la sala';
 $string['description'] = 'Descripció';

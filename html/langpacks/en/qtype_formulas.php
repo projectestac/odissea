@@ -38,8 +38,8 @@ defines the number of answer fields for this part.
 <pre class="prettyprint">123<br>[1, 0, 0, 1]<br>a<br>[1, a, b]<br>"exp(-a t)"<br>["vx t","vy t - 0.5 a t^2"]</pre>';
 $string['answercombinedunitmulti'] = 'Answer and unit for part {$a->part}';
 $string['answercombinedunitsingle'] = 'Answer and unit';
-$string['answercoordinatemulti'] = 'Answer for part {$a->part} and coordinate {$a->numanswer}';
-$string['answercoordinatesingle'] = 'Answer for coordinate {$a->numanswer}';
+$string['answercoordinatemulti'] = 'Answer field {$a->numanswer} for part {$a->part}';
+$string['answercoordinatesingle'] = 'Answer field {$a->numanswer}';
 $string['answermark'] = 'Part\'s mark*';
 $string['answermark_help'] = '**Required**.
 The mark for the answer of this part, which should be a number greater than 0.
@@ -76,7 +76,7 @@ range. Relative error cannot be used for algebraic answer type.
 For the precise definition of the relative error and absolute error when there is more than one answer field, see documentation.';
 $string['correctness_link'] = 'https://moodleformulas.org/';
 $string['correctnessexpert'] = 'Expert';
-$string['correctnesssimple'] = 'Simple';
+$string['correctnesssimple'] = 'Simplified mode';
 $string['defaultanswermark'] = 'Default part\'s mark';
 $string['defaultanswermark_desc'] = 'Default part\'s mark for new question\'s parts';
 $string['defaultanswertype'] = 'Default answer type';
@@ -130,8 +130,8 @@ $string['functiontakesatleasttwo'] = 'The function {$a} must have at least two a
 $string['functiontakesnoargs'] = 'The function {$a} does not take any arguments';
 $string['functiontakesonearg'] = 'The function {$a} must have exactly one argument';
 $string['functiontakesoneortwoargs'] = 'The function {$a} must have either one or two arguments';
+$string['functiontakesthreeargs'] = 'The function {$a} must have exactly three arguments';
 $string['functiontakestwoargs'] = 'The function {$a} must have exactly two arguments';
-$string['globaloptions'] = '[Global] -';
 $string['globalvarshdr'] = 'Variables';
 $string['illegalformulasyntax'] = 'Illegal formula syntax starting with \'{$a}\'';
 $string['incorrectfeedback'] = 'For any incorrect response';
@@ -142,7 +142,7 @@ $string['modelanswer'] = 'Model answer';
 $string['none'] = 'None';
 $string['number'] = 'Number';
 $string['number_unit'] = 'Number and unit';
-$string['numdataset'] = 'Number of dataset';
+$string['numdataset'] = 'Number of data sets';
 $string['numeric'] = 'Numeric';
 $string['numeric_unit'] = 'Numeric and unit';
 $string['numerical_formula'] = 'Numerical formula';
@@ -180,8 +180,9 @@ Also, <tt> / </tt> can be used for inverse exponent. Any permutation of the base
 Students are required to use the same input format. For example,
 
 <pre class="prettyprint">1 m<br>0.1 m^2<br>20 m s^(-1)<br>400 kg m/s<br>100 kW</pre>';
+$string['previewerror'] = 'No preview available. Check your definition of random variables, global variables, parts\' local variables and answers. Original error message:';
 $string['privacy:metadata'] = 'The Formulas question type plugin does not store any personal data.';
-$string['qtextpreview'] = 'Preview using dataset';
+$string['qtextpreview'] = 'Preview';
 $string['questiontext'] = 'Question text';
 $string['questiontext_help'] = 'In addition to the normal question text, you can also use global variables and placeholders here.
 
@@ -199,15 +200,15 @@ such as unit for length, say, km, m, cm and mm. This option has no
 effect if no unit has been used.';
 $string['settingusepopup'] = 'Use tooltips';
 $string['settingusepopup_desc'] = 'Display correct answer and feedback in a tooltip';
-$string['subqoptions'] = 'Extra options';
+$string['subqoptions'] = 'Unit settings';
 $string['subqtext'] = 'Part\'s text';
 $string['subqtext_help'] = 'Part text and answer fields places can be specified here. The placeholders that can be used to specifie answer fields places are:
 
 <pre class="prettyprint">{_0}<br>{_1}<br>{_2}<br>...<br>{_u}</pre>
 
-The <tt> {_0}, {_1}, {_2} </tt> are the input fields for coordinates and <tt> {_u} </tt> is the input field for unit.
+The <tt> {_0}, {_1}, {_2} </tt> are the different input fields for values and <tt> {_u} </tt> is the input field for unit.
 
-All missing fields are automatically appended at the end of the part\'s text. A special case is that if <tt> {_0}, {_u} </tt> are specified consecutively, and there is only one coordinate and unit, i.e. <tt> {_0}{_u} </tt>, they will be combined into a single long input answer field for both answer and unit.';
+All missing fields are automatically appended at the end of the part\'s text. A special case is that if <tt> {_0}, {_u} </tt> are specified consecutively, and there is only one answer field and unit, i.e. <tt> {_0}{_u} </tt>, they will be combined into a single long input answer field for both answer and unit.';
 $string['unit'] = 'Unit';
 $string['unitpenalty'] = 'Deduction for wrong unit (0-1)*';
 $string['unitpenalty_help'] = 'This option specify the mark you want to penalize the student for a wrong unit.
@@ -226,7 +227,7 @@ and their scope of visibility is limited to the part.';
 $string['vars2'] = 'Grading variables';
 $string['vars2_help'] = 'All local variables and the student\'s responses can be used here. See documentation for advanced usages.';
 $string['vars2_link'] = 'https://moodleformulas.org/';
-$string['varsdata'] = 'Instantiated dataset';
+$string['varsdata'] = 'Instantiated data sets';
 $string['varsglobal'] = 'Global variables';
 $string['varsglobal_help'] = 'Formulas can be specified here to manipulate the instantiated random variables
 (all random variables are available here). The full list of mathematical

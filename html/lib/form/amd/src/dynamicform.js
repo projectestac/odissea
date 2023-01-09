@@ -43,6 +43,7 @@ import {get_strings as getStrings} from 'core/str';
 import Y from 'core/yui';
 import Fragment from 'core/fragment';
 import Pending from 'core/pending';
+import {serialize} from './util';
 
 /**
  * @class core_form/dynamicform
@@ -136,9 +137,9 @@ export default class DynamicForm {
      * @public
      */
     load(args = null) {
-        const formData = new URLSearchParams(Object.entries(args || {}));
+        const formData = serialize(args || {});
         const pendingPromise = new Pending('core_form/dynamicform:load');
-        return this.getBody(formData.toString())
+        return this.getBody(formData)
         .then((resp) => this.updateForm(resp))
         .then(pendingPromise.resolve);
     }

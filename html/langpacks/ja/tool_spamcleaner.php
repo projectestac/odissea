@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'スパムクリーナー';
-$string['privacy:metadata'] = 'スパムクリーナープラグインはいかなる個人データも保存しません。';
+$string['pluginname'] = 'スパムクリーナ';
+$string['privacy:metadata'] = 'スパムクリーナプラグインはいかなる個人データも保存しません。';
 $string['spamauto'] = '一般的なスパムパターンを自動検出する';
 $string['spamcannotdelete'] = 'このユーザを削除できません。';
 $string['spamcannotfinduser'] = 'あなたの検索に合致するユーザはありません。';

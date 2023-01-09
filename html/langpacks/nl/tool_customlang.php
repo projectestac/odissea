@@ -49,6 +49,7 @@ $string['customlang:export'] = 'Exporteer lokale vertaling';
 $string['customlang:view'] = 'Bekijk lokale vertaling';
 $string['export'] = 'Exporteer aangepaste strings';
 $string['exportfilter'] = 'Selecteer te exporteren componenten';
+$string['exportzipfilename'] = 'Aangepaste taal-export-{$a->lang}.zip';
 $string['filter'] = 'Filter strings';
 $string['filtercomponent'] = 'Toon strings van deze component';
 $string['filtercustomized'] = 'Enkel aangepaste';

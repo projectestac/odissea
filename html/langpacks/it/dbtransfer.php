@@ -36,6 +36,6 @@ $string['done'] = 'Completato';
 $string['exportschemaexception'] = 'L\'attuale struttura del database non corrisponde ai file install.xml.<br /> {$a}';
 $string['importschemaexception'] = 'L\'attuale struttura del database non corrisponde ai file install.xml.<br /> {$a}';
 $string['importversionmismatchexception'] = 'La versione attuale {$a->currentver} non corrisponde alla versione esportata {$a->schemaver}.';
-$string['malformedxmlexception'] = 'E\' stato rilevato un XML malformed, non posso proseguire.';
+$string['malformedxmlexception'] = 'È stato rilevato un XML malformed, non posso proseguire.';
 $string['tablex'] = 'Tabella {$a}:';
 $string['unknowntableexception'] = 'Nel file di esportazione è stata trovata la tabella sconosciuta {$a}.';

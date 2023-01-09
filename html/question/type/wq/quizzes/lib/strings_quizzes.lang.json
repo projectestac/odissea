@@ -551,11 +551,40 @@
 				
 		"quizzes_studio_home_product_message_header_label": "${quizzes_studio_home_product_message_header_label}",
 		"quizzes_studio_home_product_message_text_label": "${quizzes_studio_home_product_message_text_label}",
-		"quizzes_studio_home_product_message_release_notes_link": "${quizzes_studio_home_product_message_release_notes_link}",		
+		"quizzes_studio_home_product_message_release_notes_link": "${quizzes_studio_home_product_message_release_notes_link}",
+		"quizzes_studio_home_product_message_give_us_feedback_link": "${quizzes_studio_home_product_message_give_us_feedback_link}",		
 
 		"quizzes_studio_input_options_answer_input_method_initial_content_label": "${quizzes_studio_input_options_answer_input_method_initial_content_label}",
 		"quizzes_studio_input_options_answer_input_method_lock_initial_content_label": "${quizzes_studio_input_options_answer_input_method_lock_initial_content_label}",
-		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "${quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text}"
+		"quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text": "${quizzes_studio_input_options_answer_input_method_lock_initial_content_helper_text}",
+
+		"quizzes_studio_home_random_variables_title": "${quizzes_studio_home_random_variables_title}",
+		"quizzes_studio_home_random_variables_title_basic_mode": "${quizzes_studio_home_random_variables_title_basic_mode}",
+		"quizzes_studio_home_advanced_random_variables_button_text": "${quizzes_studio_home_advanced_random_variables_button_text}",
+		"quizzes_studio_home_advanced_random_variables_button_text_string_syntax": "${quizzes_studio_home_advanced_random_variables_button_text_string_syntax}",
+		"quizzes_studio_home_random_variables_description_text": "${quizzes_studio_home_random_variables_description_text}",
+		"quizzes_studio_home_random_variables_simple_algorithm_text": "${quizzes_studio_home_random_variables_simple_algorithm_text}",
+		"quizzes_studio_home_random_variables_string_syntax_text": "${quizzes_studio_home_random_variables_string_syntax_text}",
+		"quizzes_studio_home_random_variables_add_new_button_text": "${quizzes_studio_home_random_variables_add_new_button_text}",
+		"quizzes_studio_home_random_variables_complex_algorithm_text": "${quizzes_studio_home_random_variables_complex_algorithm_text}",
+		"quizzes_studio_home_random_variables_help_button": "${quizzes_studio_home_random_variables_help_button}",
+
+		"quizzes_studio_home_random_variable_row_variable_name_text": "${quizzes_studio_home_random_variable_row_variable_name_text}",
+		"quizzes_studio_home_random_variable_row_prefix_text": "${quizzes_studio_home_random_variable_row_prefix_text}",
+		"quizzes_studio_home_random_variable_type_text": "${quizzes_studio_home_random_variable_type_text}",
+		"quizzes_studio_home_random_variable_min_value_text": "${quizzes_studio_home_random_variable_min_value_text}",
+		"quizzes_studio_home_random_variable_row_and_text": "${quizzes_studio_home_random_variable_row_and_text}",
+		"quizzes_studio_home_random_variable_max_value_text": "${quizzes_studio_home_random_variable_max_value_text}",
+
+		"quizzes_studio_home_random_variable_name_already_used_error": "${quizzes_studio_home_random_variable_name_already_used_error}",
+		"quizzes_studio_home_random_variable_number_not_integer_error": "${quizzes_studio_home_random_variable_number_not_integer_error}",
+		"quizzes_studio_home_random_variable_invalid_name_error": "${quizzes_studio_home_random_variable_invalid_name_error}",
+		"quizzes_studio_home_random_variable_max_value_error": "${quizzes_studio_home_random_variable_max_value_error}",
+		"quizzes_studio_home_random_variable_name_missing_error": "${quizzes_studio_home_random_variable_name_missing_error}",
+		"quizzes_studio_home_random_variable_max_value_missing_error": "${quizzes_studio_home_random_variable_max_value_missing_error}",
+		"quizzes_studio_home_random_variable_min_value_missing_error": "${quizzes_studio_home_random_variable_min_value_missing_error}",
+		
+		"evaluate_keyword": "${evaluate_keyword}"
 	}
 }
 

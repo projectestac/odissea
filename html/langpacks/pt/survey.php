@@ -225,7 +225,7 @@ $string['ipreferthat'] = 'Prefiro isso';
 $string['modulename'] = 'Inquérito predefinido';
 $string['modulename_help'] = 'A atividade Inquérito permite inserir diferentes tipos de inquérito que servem para avaliar e estimular a aprendizagem em ambientes online. O professor pode utilizá-los para recolher dados que poderão ajudá-lo a conhecer a turma e a refletir sobre o seu próprio método de ensino.
 
-Tenha em atenção que estes inquéritos são preenchidos previamente com questões. Os professores que desejam criar a sua própria pesquisa devem usar o módulo de atividade Feedback.';
+Tenha em atenção que estes inquéritos são preenchidos previamente com questões. Os professores que pretendam criar a sua própria pesquisa devem usar o módulo de atividade Feedback.';
 $string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = 'Inquéritos predefinidos';
 $string['name'] = 'Nome';

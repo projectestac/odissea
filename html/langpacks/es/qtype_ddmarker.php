@@ -57,7 +57,7 @@ Para obtener información, las tres formas usan coordenadas de esta manera:
 
 Seleccionar un texto de marcador agregará ese texto a la forma en la vista previa.';
 $string['followingarewrong'] = 'Los siguientes marcadores han sido situados en el área equivocada: {$a}.';
-$string['followingarewrongandhighlighted'] = 'Los siguientes marcadores fueron situados incorrectamente: {$a}. Los marcadores resaltados son mostrados ahora en los lugares correctos.<br />  Pulse en el marcador para resaltar el área permitida.';
+$string['followingarewrongandhighlighted'] = 'Los siguientes marcadores fueron situados incorrectamente: {$a}. Los marcadores resaltados se muestran en la posición correcta. <br/>Pulsar en el marcador para resaltar el área permitida.';
 $string['formerror_nobgimage'] = 'Debe seleccionar una imagen para ser utilizada como fondo para la zona de arrastrar y soltar.';
 $string['formerror_noitemselected'] = 'Usted ha especificado una zona para soltar pero no ha elegido un marcador que deba ser arrastrado a la zona.';
 $string['formerror_nosemicolons'] = 'No hay puntos y comas en su cadena de coordenadas. Sus coordenadas para un {$a->shape} deben ser expresadas como - {$a->coordsstring}.';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_uploaded'] = 'Effettuata consegna testo online';
+$string['event_assessable_uploaded'] = 'Consegna di testo online';
 $string['pluginname'] = 'Online';
 $string['privacy:metadata'] = 'Il plugin "Consegna testo online" non memorizza dati personali.';

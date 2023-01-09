@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['all'] = 'الكل';
 $string['colourdarkgreen'] = 'أخضر داكن';
 $string['colourgreen'] = 'أخضر';
 $string['displaytitle_mod_html'] = 'صفحة الويب';

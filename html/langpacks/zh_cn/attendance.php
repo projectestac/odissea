@@ -91,7 +91,6 @@ $string['caleventcreated'] = '成功创建课程的日程表事件';
 $string['caleventdeleted'] = '成功删除';
 $string['calmonths'] = '一月，二月，三月，四月，五月，六月，七月，八月，九月，十月，十一月，十二月';
 $string['calshow'] = '选择日期';
-$string['caltoday'] = '今天';
 $string['calweekdays'] = '日，一，二，三，四，五，六';
 $string['cannottakeforgroup'] = '你不能参加"{$a}"组课程';
 $string['categoryreport'] = '课程分类报表';

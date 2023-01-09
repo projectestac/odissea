@@ -38,25 +38,37 @@ require_once($CFG->dirroot.'/mod/hotpot/source/hp/6/jmix/class.php');
  */
 class hotpot_source_hp_6_jmix_html extends hotpot_source_hp_6_jmix {
 
-    const REQUIRED_FILETYPES = array(
-        'htm', 'html'
-    );
-
-    /*
-     * required_strings_html()
+    /**
+     * is_quizfile
      *
-     * @param string $content of HTML file (passed by reference)
-     * @return array of required strings for HTML content
+     * @param xxx $sourcefile
+     * @return xxx
      */
-    static public function required_strings_html(&$content)  {
-        $strings = parent::required_strings_html($content);
-        if (is_numeric(in_array('<div id="MainDiv" class="StdDiv">', $strings))) {
-            // plain version of JMix
-            $strings[] = '<div id="SegmentDiv">';
-        } else {
-            // drag-and-drop version of JMix
-            $strings[] = '<div id="Drop';
+    static public function is_quizfile($sourcefile)  {
+        if (! preg_match('/\.html?$/', $sourcefile->get_filename())) {
+            // wrong file type
+            return false;
         }
-        return $strings;
+
+        if (! $content = self::get_content($sourcefile)) {
+            // empty or non-existant file
+            return false;
+        }
+
+        if (! strpos($content, '<div id="MainDiv" class="StdDiv">')) {
+            if (! strpos($content, '<div class="StdDiv" id="CheckButtonDiv">')) {
+                // not a hp6 file
+                return false;
+            }
+        }
+
+        if (! strpos($content, '<div id="SegmentDiv">')) { // drop-down
+            if (! strpos($content, '<div id="Drop')) { // drag-and-drop
+                // not a jmix file
+                return false;
+            }
+        }
+
+        return true;
     }
 }

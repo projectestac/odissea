@@ -174,11 +174,11 @@ $string['messageprovider:submission'] = 'Notificações do inquérito';
 $string['minimal'] = 'Mínimo';
 $string['mode'] = 'Modo';
 $string['modulename'] = 'Inquérito';
-$string['modulename_help'] = 'O módulo <b>Inquérito</b> permite que um professor crie um inquérito personalizado para obter feedback dos participantes, usando uma variedade de tipos de questões, incluindo escolha múltipla, sim/não ou de resposta curta
+$string['modulename_help'] = 'O módulo <b>Inquérito</b> permite que um professor crie um inquérito personalizado para obter feedback dos participantes, usando uma variedade de tipos de questões, incluindo escolha múltipla, sim/não ou de resposta curta.
 
 As respostas do inquérito podem ser anónimas, se desejado, e os resultados podem ser mostrados a todos os participantes ou restritos apenas aos professores. Quaisquer atividades de inquérito na página principal do site também podem ser concluídas por utilizadores não autenticados.
 
-As Atividades de inquérito podem ser usadas:
+As atividades de inquérito podem ser usadas:
 
 * Para avaliações da disciplina, ajudando a melhorar os conteúdos para futuros participantes
 * Para permitir que os participantes se inscrevam nos módulos da disciplina, em eventos, etc.
