@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Zugriff über den Kursabschluss regeln';
+$string['description'] = 'Zugriff über den Abschluss dieses Kurses regeln';
 $string['getdescription'] = 'Sie haben diesen Kurs abgeschlossen.';
 $string['getdescriptionnot'] = 'Sie haben diesen Kurs nicht abgeschlossen.';
 $string['missing'] = '(Sie müssen entscheiden, ob dieser Kurs abgeschlossen ist oder nicht)';

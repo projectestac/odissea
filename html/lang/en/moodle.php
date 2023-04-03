@@ -22,6 +22,11 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+// XTEC ************ AFEGIT - Language string for user profile field schoolcode (IDI).
+// 2023.01.26 @aginard
+$string['schoolcode'] = 'School code';
+// ************ FI
+
 $string['abouttobeinstalled'] = 'about to be installed';
 $string['accept'] = 'Accept';
 $string['action'] = 'Action';

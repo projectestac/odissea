@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addnewfield'] = 'إضافة حقل مخصص جديد';
 $string['addtimeframe'] = 'إضافة إطار زمني';
+$string['advanced'] = 'متقدمة';
 $string['break'] = 'وقت الاستراحة';
 $string['calendareventdescriptionbooking'] = 'لقد تم الحجز لك في <a href="{$a}">جلسة الموعد</a> هذه.';
 $string['calendareventdescriptionsession'] = 'لقد أنشأتَ <a href="{$a}">جلسة الموعد</a> هذه.';

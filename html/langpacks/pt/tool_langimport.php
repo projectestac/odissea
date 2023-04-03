@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadnotavailable'] = 'Não é possível ligar ao servidor de descargas e, por isso, não é possível instalar ou atualizar automaticamente os pacotes linguísticos. Descarregue de <a href="{$a->src}">{$a->src}</a> o(s) ficheiro(s) Zip apropriado(s) e descompacte-o(s) manualmente para a pasta de dados <code>{$a->dest}</code>';
+$string['downloadnotavailable'] = 'Não é possível ligar ao servidor de descargas e, por isso, não é possível instalar ou atualizar automaticamente os pacotes linguísticos. Descarregue de <a href="{$a->src}">{$a->src}</a> o(s) ficheiro(s) Zip apropriado(s) e descompacte-o(s) manualmente para a pasta dos dados <code>{$a->dest}</code>';
 $string['install'] = 'Instalar os pacotes linguísticos selecionados';
 $string['installedlangs'] = 'Pacotes linguísticos instalados';
 $string['installfailed'] = 'Ocorreu um erro ao instalar os pacotes linguísticos!';
@@ -41,9 +41,9 @@ $string['langpackremoved'] = 'O pacote linguístico \'{$a}\' foi desinstalado';
 $string['langpackremovedevent'] = 'Pacote linguístico desinstalado';
 $string['langpackupdated'] = 'O pacote linguístico \'{$a}\' foi atualizado com sucesso';
 $string['langpackupdatedevent'] = 'Pacote linguístico atualizado';
-$string['langpackupdateskipped'] = 'Foi ignorada a atualização do pacote linguistico \'{$a}\'';
+$string['langpackupdateskipped'] = 'Foi ignorada a atualização do pacote linguístico \'{$a}\'';
 $string['langpackuptodate'] = 'O pacote linguístico \'{$a}\' está atualizado';
-$string['langunsupported'] = '<p>O seu servidor parece não suportar totalmente os seguintes idiomas:</p><ul>{$a->missinglocales}</ul><p>Em vez disso, a locale global ({$a->globallocale}) será usada para formatar determinadas cadeias, tais como datas ou números.</p>';
+$string['langunsupported'] = '<p>O seu servidor parece não suportar totalmente os seguintes idiomas:</p><ul>{$a->missinglocales}</ul><p>Em vez disso, será usada a locale global ({$a->globallocale}) para formatar determinadas cadeias, tais como datas ou números.</p>';
 $string['langupdatecomplete'] = 'Atualização dos pacotes linguísticos concluída';
 $string['missingcfglangotherroot'] = 'Falta o valor de configuração $CFG->langotherroot';
 $string['missinglangparent'] = 'Falta o idioma ascendente <em>{$a->parent}</em> em <em>{$a->lang}</em>.';

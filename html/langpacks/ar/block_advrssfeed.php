@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['adcrssfeed:myaddinstance'] = 'إضافة كتلة جديدة للتغذية الإخبارية المتقدمة إلى صفحة مودل الخاصة بي';
+$string['advrssfeed'] = 'تغذية إخبارية متقدمة';
 $string['advrssfeed:addinstance'] = 'إضافة كتلة جديدة للتغذية الإخبارية المتقدمة';
 $string['blockstring'] = 'العنوان';
 $string['displayDescription'] = 'عَرض الوصف';

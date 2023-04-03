@@ -68,6 +68,7 @@ $string['pluginname_help'] = 'Des del punt de vista de l\'estudiant, una pregunt
 $string['pluginnameadding'] = 'S\'està afegint una pregunta numèrica';
 $string['pluginnameediting'] = 'S\'està editant una pregunta numèrica';
 $string['pluginnamesummary'] = 'Permet una resposta numèrica, possiblement acompanyada d\'unitats, que es qualifica comparant-la amb diversos models de resposta, possiblement amb toleràncies.';
+$string['privacy:preference:unitrole'] = 'Si la unitat és essencial, opcional o no se n\'espera cap.';
 $string['relative'] = 'Relativa';
 $string['rightexample'] = 'DRETA com a 1,00cm o 1,00km';
 $string['selectunit'] = 'Escolliu una unitat';

@@ -30,3 +30,6 @@ $string['feedbackupdated'] = 'الإفادة تم تحديثها لـ {$a} من 
 $string['hideidnumber'] = 'إخفاء رقم المُعرَّف';
 $string['maximumsize'] = 'أقصى عدد من الطلاب';
 $string['place'] = 'الغرفة';
+$string['printversionid'] = 'نسخة الطباعة: المُعرَّف فقط';
+$string['printversionidname'] = 'نسخة الطباعة: مع المُعرَّف والاسم';
+$string['printversionname'] = 'نسخة الطباعة: الاسم فقط';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['attempted'] = '已尝试用户';
+$string['savedstate'] = '保存的状态';

@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessdenied'] = 'Sarrera ukatu egin zaizu';
 $string['accounts'] = 'Kontuak';
 $string['addcategory'] = 'Gehitu kategoria';
-$string['additionalhtml'] = 'HTML osagarria';
+$string['additionalhtml'] = 'HTML gehigarria';
 $string['additionalhtml_desc'] = 'Ezarpen hauek nahi dituzun orri guztietan HTML kodea zehazteko modua emango dizute. Orriaren HEAD etiketaren barruan gehituko den HTMLa ezarri ahal duzu, BODY etiketa zabaldutakoan edo BODY etiketa itxitakoan. <br />Hau egiteak orri bakoitzean goiburu edo orri-oin pertsonalizatuak gehitzeko modua eskaintzen dizu, edo, aukeratutako azala gorabehera, Google Analytics bezalako zerbitzuetarako euskarria gehitzeko oso modu errazean.';
-$string['additionalhtml_heading'] = 'Orri bakoitzean gehitzen den HTML osagarria';
+$string['additionalhtml_heading'] = 'Orri bakoitzean gehitzen den HTML gehigarria';
 $string['additionalhtmlfooter'] = 'BODY itxi baino lehen';
 $string['additionalhtmlfooter_desc'] = 'Edukia orri bakoitzean gehituko da BODY etiketa itxi baino lehen.';
 $string['additionalhtmlhead'] = 'Goiburuaren barruan';
@@ -43,7 +43,7 @@ $string['adminseesallevents'] = 'Kudeatzaileek agerraldi guztiak ikusten dituzte
 $string['adminseesownevents'] = 'Kudeatzaileak gainerako erabiltzaileak bezalakoak dira';
 $string['advancedfeatures'] = 'Funtzio aurreratuak';
 $string['agedigitalconsentverification'] = 'Onespen-adin digitalaren egiaztatzea';
-$string['agedigitalconsentverification_desc'] = 'Erabiltzaileek auto-erregistroaren bidez izena emateko orriaren aurretik onespen-adin digitalaren egiaztatzea erakustea gaitzen du. Ezarpen honek zure gunean adin txikikoek euren guraso/tutoreen onespenik gabe izena ematea saihesten du. Laguntza gehiago eskuratzeko adin txikikoei <a target="_blank" href="{$a}">Laguntzarako kontaktuaren zehaztasunak</a> eskaintzen zaizkie.';
+$string['agedigitalconsentverification_desc'] = 'Erabiltzaileek auto-erregistroaren bidez izena emateko orriaren aurretik onespen-adin digitalaren egiaztatzea erakustea gaitzen du. Ezarpen honek zure gunean adin txikikoek euren guraso/tutoreen onespenik gabe izena ematea saihesten du. Laguntza gehiago eskuratzeko adin txikikoei <a target="_blank" href="{$a}">laguntza-zerbitzuko kontaktuaren zehaztasunak</a> eskaintzen zaizkie.';
 $string['ageofdigitalconsentmap'] = 'Onespen-adin digitala';
 $string['ageofdigitalconsentmap_desc'] = 'Hemen lehenetsitako onespen-adin digitala eta lehenetsitako balio horrekin bat egiten ez duten herrialdeen adinak zehaztu daitezke. Idatzi adin bakoitza errenkada batean hurrengo formatuarekin: herrialde-kodea, adina (komaz banatuta). Lehenetsitako adina herrialde-kodean * karakterea jarrita adierazten da. Herrialde-kodeak ISO 3166-2-an zehaztuta daude.';
 $string['allcountrycodes'] = 'Herrialdeetako kode guztiak';
@@ -101,7 +101,7 @@ $string['blockprotect_help'] = 'Bloke mota zehatz bat blokeatzen baduzu, instant
 
 Horren helburua nabigazio-blokea bezalakoak babestea da, baita nahigabe ezabatuz gero berreskuratzeko zailak diren ezarpenak ere.';
 $string['blocksettings'] = 'Kudeatu blokeak';
-$string['blockunprotect'] = 'Babesa kendu';
+$string['blockunprotect'] = 'Kendu babesa';
 $string['bloglevel'] = 'Blogaren ikusgarritasuna';
 $string['bookmarkadded'] = 'Laster-marka gehituta.';
 $string['bookmarkalreadyexists'] = 'Orri hau markatua duzu dagoeneko';
@@ -211,7 +211,7 @@ $string['configcronremotepassword'] = 'Honek esan nahi du cron.php script-a ezin
  https://gunea.adibidea.eus/admin/cron.php?password=opensesame
 </pre>. Hutsik utziz gero, ez da pasahitzik behar.';
 $string['configcurlcache'] = 'cURL cachearen biziraupena (segundoetan).';
-$string['configcustommenuitems'] = 'Hemen menu pertsonalizatu bat konfiguratu dezakezu. Menuaren elementu bakoitza lerro berri batean zehaztu behar duzu hurrengo formatua jarraituta: menuaren testua, URL bat (aukerazkoa, azpimenuak dituzten goi mailako menuetan ez da beharrezkoa), izenburuaren deskribapen bat (aukerazkoa) eta hizkuntza-kode bat edo komaz banatutako hizkuntza-kodeen zerrenda bat (aukerazkoa, errenkada soilik hizkuntza horietan nabigatzen ari diren erabiltzaileei erakusteko), guztiak marra bertikalez banatuta. Azpimenuen egitura sor dezakezu gidoiak erabilita eta bereizleak sartu daitezke ### erabilita. Adibidez:
+$string['configcustommenuitems'] = 'Hemen menu pertsonalizatu bat konfiguratu dezakezu. Menuaren elementu bakoitza lerro berri batean zehaztu behar duzu hurrengo formatua jarraituta: menuaren testua, URL bat (hautazkoa, azpimenuak dituzten goi mailako menuetan ez da beharrezkoa), izenburuaren deskribapen bat (hautazkoa) eta hizkuntza-kode bat edo komaz banatutako hizkuntza-kodeen zerrenda bat (hautazkoa, errenkada soilik hizkuntza horietan nabigatzen ari diren erabiltzaileei erakusteko), guztiak marra bertikalez banatuta. Azpimenuen egitura sor dezakezu gidoiak erabilita eta bereizleak sartu daitezke ### erabilita. Adibidez:
 <pre>
 Ikastaroak
 -Ikastaro guztiak|/course/
@@ -342,7 +342,7 @@ $string['configperfdebug'] = 'Aukera hau aktibatuz gero, azal estandarreko orri-
 $string['configprofileroles'] = 'Erabiltzaile-profiletan eta partaidetza-orrian zerrendatzen diren rolak.';
 $string['configprofilesforenrolledusersonly'] = 'Spam sortzaileen gehiegikeriari aurre egiteko, inongo ikastarotan matrikulata ez dauden erabiltzaileen profilen deskribapenak ezkutatu egiten dira. Erabiltzaile berriek gutxienez ikastaro batean matrikulatu behar dute profilaren deskribapena gehitu ahal izateko.';
 $string['configprotectusernames'] = 'Gaituz gero, ahaztutako pasahitzaren formularioan ez da erakutsiko erabiltzaile-kontuak edo helbide elektronikoak asmatzeko aukera eman dezakeen inolako pistarik.';
-$string['configproxybypass'] = 'Proxy-a ekidin beharko luketen ostalari-izen edo IP-en (zati) zerrenda, komaz banatuta (adib., 192.168., .niredomeinua.com)';
+$string['configproxybypass'] = 'Proxy-a saihestu beharko luketen ostalari-izen edo IP-en (zati) zerrenda, komaz banatuta (adib., 192.168., .niredomeinua.com)';
 $string['configproxyhost'] = '<b>Zerbitzari</b> honek Internetera sartzeko proxy bat behar badu (ad., firewall bat), proxya eta portuaren zenbakia hemen idatzi. Bestela, hutsik utzi.';
 $string['configproxypassword'] = 'Internetera proxy bidez sartzeko behar den pasahitza; horrela ez bada, utz ezazu hutsik (beharrezkoa da PHP cURL hedapena).';
 $string['configproxyport'] = 'Zerbitzari honek proxy-ordenagailua behar badu, idatzi hemen proxyaren portua.';
@@ -367,7 +367,7 @@ $string['configsectionsecurity'] = 'Segurtasuna';
 $string['configsectionstats'] = 'Estatistikak';
 $string['configsectionuser'] = 'Erabiltzailea';
 $string['configsecureforms'] = 'Moodlek segurtasun-maila altuagoa erabil dezake web formularioetako datuak onartzen dituenean. Aukera aktibatuz gero, nabigatzailearen HTTP_REFERER formularioaren helbidearekin konparatuko da. Honek oso kasu gutxitan emango ditu erroreak erabiltzaileak firewalla badauka (ad., ZoneAlarm) bere HTTP_REFERER web trafikotik aparte izateko. Sintoma formularioan \'trabatuta\' geratzea izaten da. Erabiltzaileek, esaterako, sarbide-orrian arazorik izango balute, agian aukera hau desaktibatzea komeniko litzateke, gunea indar gordineko (brute force) erasoetara irekiago uzteko desabantailarekin. Zalantza kasuan, \'Bai\' aukeratu.';
-$string['configsessioncookie'] = 'Aukera honek Moodleko saioetako cookie-aren izena pertsonalizatzen du. Aukerazkoa da, eta praktikoa izaten da soilik zerbitzari berean Moodleko beste kopia bat exekutatzen ari denean cookie-ak nahas daitezkeelako.';
+$string['configsessioncookie'] = 'Aukera honek Moodleko saioetako cookie-aren izena pertsonalizatzen du. Hautazkoa da, eta praktikoa izaten da soilik zerbitzari berean Moodleko beste kopia bat exekutatzen ari denean cookie-ak nahas daitezkeelako.';
 $string['configsessioncookiedomain'] = 'Honek Moodleko cookie-ak hartuko diren domeinua aldatzeko aukera ematen dizu. Erabilgarria da Moodle saioaren informazioa beste azpidomeinu bateko web-aplikazio batekin sarean egotea eskatzen duten pertsonalizazioetarako (adib. autentifikazio edo matrikulatzeko pluginak). <strong>KONTUZ: erabat gomendatzen da ezarpen hau modu lehenetsian datorren bezala uztea (hutsik) - balio ezegoki batek guneko sarbide guztiak galaraziko ditu.</strong>';
 $string['configsessioncookiepath'] = 'Nabigatzaileek Moodleren cookie-ak bidaltzen dituzten lekua aldatu beharra baduzu, aukera hau alda dezakezu zure web-gunean azpidirektorio bat zehazteko. Bestela lehenetsitako balioak (\'/\') balioko dizu.';
 $string['configsessiontimeout'] = 'Gunean konektatutako erabiltzaileek epe luzean aktibitaterik ez badute (ad., ez badute orririk kargatzen), automatikoki deskonektatuko dira (ad., saioa amaituko da). Aldagai honek deskonektatu baino lehen pasa beharreko aktibitaterik gabeko epea zehazten du.';
@@ -573,7 +573,7 @@ $string['emoticons_desc'] = 'Formulario honek zure gunean erabilitako aurpegiera
 * Testua (beharrezkoa) - Testu hau aurpegiera irudiarekin ordezkatuko da. Gutxienez bi karaktereko luzera izan behar du.
 * Irudiaren izena (beharrezkoa) - Aurpegiera irudiaren fitxategiaren izena luzapenik gabe, osagaiaren pix karpetarekiko.
 * Irudiaren osagaia (beharrezkoa) - Ikonoa ematen duen osagaia.
-* Ordezko testua (beharrezkoa) - Kate-identifikatzailea eta aurpegieraren ordezko testua.';
+* Ordezko testua (hautazkoa) - Kate-identifikatzailea eta aurpegieraren ordezko testua.';
 $string['emoticonsreset'] = 'Berrabiarazi aurpegieren ezarpenak lehenetsitako balioetara';
 $string['emoticontext'] = 'Testua';
 $string['emptysettingvalue'] = 'Hutsik';
@@ -603,7 +603,7 @@ $string['enablewebservices'] = 'Gaitu web-zerbitzuak';
 $string['enablewsdocumentation'] = 'Web-zerbitzuen dokumentazioa';
 $string['encryptedpassword_edit'] = 'Idatzi balio berria';
 $string['encryptedpassword_set'] = '(Konfiguratuta eta zifratuta)';
-$string['enrolinstancedefaults'] = 'Lehenetsitako matrikulaziorako instantzia';
+$string['enrolinstancedefaults'] = 'Lehenetsitako matrikulazio-instantzia';
 $string['enrolinstancedefaults_desc'] = 'Lehenetsitako matrikulazio-ezarpenak ikastaro berrietan.';
 $string['enrolmultipleusers'] = 'Matrikulatu erabiltzaileak';
 $string['environment'] = 'Ingurunea';
@@ -676,7 +676,7 @@ $string['geoipfile'] = 'GeoLite2 City MaxMind DB';
 $string['getremoteaddrconf'] = 'Erregistratutako IP helbideen iturburua';
 $string['globalsearch'] = 'Bilaketa orokorra';
 $string['globalsearchmanage'] = 'Kudeatu bilaketa orokorra';
-$string['googlemapkey3'] = 'Google Maps API V3 rako giltza';
+$string['googlemapkey3'] = 'Google Maps API V3 rako gakoa';
 $string['googlemapkey3_help'] = 'Gako berezi bat sartu behar duzu Google Maps IP helbideen bilaketaren irudikatzea erabiltzeko. Gakoa doan lortu dezakezu <a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key" target="_blank">https://developers.google.com/maps/documentation/javascript/tutorial#api_key</a> helbidean';
 $string['gotofirst'] = 'Joan falta den lehenengo katera';
 $string['gradebook'] = 'Kalifikazio-liburua';
@@ -733,7 +733,7 @@ $string['iplookup'] = 'IP helbidea bilatu';
 $string['iplookupgeoplugin'] = 'Une honetan <a href="https://www.geoplugin.com">geoPlugin</a> zerbitzua informazio geografikoa eskuratzeko erabiltzen da. Emaitza zehatzagoak lortzeko MaxMind GeoLite datu-basearen kopia bat lokalean instalatzea gomendatzen dugu.';
 $string['iplookupinfo'] = 'Modu lehenetsian, Moodlek NetGeo (The Internet Geographic Database) doako on-line zerbitzari erabiltzen du IP helbideen kokapena bilatzeko. Tamalez, datu-base horren mantenua eten egin da eta emaitza <em>erabat ezegokiak</em> eman ditzake.
 Gomendagarria da doako GeoLite2 City datu-basearen kopia lokala instalatzea MaxMind-etik.<br />
-IP helbideen kokapena mapa erraz batean edo Google Maps erabilita erakusten da. Mesedez, ohartu mapa interaktiboak gaitzeko Google kontua behar duzula eta Google Maps API giltza doan eskatu.';
+IP helbideen kokapena mapa erraz batean edo Google Maps erabilita erakusten da. Mesedez, ohartu mapa interaktiboak gaitzeko Google kontua behar duzula eta Google Maps API gakoa doan eskatu.';
 $string['iplookupmaxmindnote'] = 'Produktu honek MaxMind-ek sortutako GeoLite2 datuak barne ditu eta hemendik eskura daitezke: <a href="https://www.maxmind.com/">https://www.maxmind.com/</a>.';
 $string['iscustomadminwarnings'] = 'Zure gunean admin direktorio pertsonalizatua erabiltzen duela antzeman da. Funtzionalitate hau dagoeneko ez da onartzen eta Moodle 4.2 bertsioan kenduko da.';
 $string['ishttpswarning'] = 'Zure gunea HTTPS erabiliz babesturik ez dagoela antzeman dugu. Zure gunea HTTPS erabiltzeko migratzea irmoki gomendatzen da segurtasuna eta beste sistemekiko integrazioak hobetzeko.';
@@ -832,7 +832,7 @@ $string['maxsizeperdownloadcoursefile_desc'] = 'Ikastaroaren edukia deskargatzea
 $string['maxtimelimit'] = 'Gehieneko denbora-epea';
 $string['maxtimelimit_desc'] = 'Moodlek onartuko duen gehieneko PHP exekuzio-denbora mugatzeko inolako irteerarik erakutsi gabe, sartu hemen balio bat (segundoetan), 0 jarriz gero Moodleko lehenetsitako mugak aplikatuko dira. Bere muga propioak dituen frontend zerbitzari bat baduzu hemen balio baxuago bat ezarri PHP error mezuak jasotzeko. Muga hau ez zaie CLI script-ei aplikatzen.';
 $string['maxusersperpage'] = 'Gehieneko erabiltzaileak orriko';
-$string['mbstringrecommended'] = 'MBSTRING aukerako liburutegia instalatzea gomendagarria da  oso gunearen errendimendua hobetzeko, batez ere zure guneak latindarrak ez diren hizkuntzak erabiltzen baditu.';
+$string['mbstringrecommended'] = 'MBSTRING hautazko liburutegia instalatzea gomendagarria da  oso gunearen errendimendua hobetzeko, batez ere zure guneak latindarrak ez diren hizkuntzak erabiltzen baditu.';
 $string['mbstringrequired'] = 'MBSTRING liburutegia instalatzea derrigorrezkoa da gunearen errendimendua hobetzeko, bereziki zure guneak hizkuntza erromantzeak ez direnak onartzen baditu.';
 $string['mediapluginavi'] = 'Gaitu .avi iragazkia';
 $string['mediapluginflv'] = 'Gaitu .flv iragazkia';
@@ -939,10 +939,10 @@ $string['oauthrefreshtokenexpired'] = 'Zure {$a->siteurl} guneko {$a->issuer} OA
 $string['oauthrefreshtokenexpiredshort'] = 'Zure {$a->siteurl} guneko {$a->issuer} OAuth freskatze-tokena iraungi da.';
 $string['onlynoreply'] = 'Soilik ez-erantzun helbide batetik denean';
 $string['opcacherecommended'] = 'PHP opcode cacheak errendimendua hobetzen du eta memoria eskakizunak murrizten ditu. OPcache hedapena gomendatzen da eta erabat sostengatzen da.';
-$string['opensslrecommended'] = 'Aukerako OpenSSL liburutegia oso da gomendagarria - Moode Sarearen funtzionamendua gaitzen du.';
+$string['opensslrecommended'] = 'OpenSSL hautazko liburutegia oso da gomendagarria - Moode Sarearen funtzionamendua gaitzen du.';
 $string['opensslrequired'] = 'PHPko OpenSSL hedapena orain beharrezkoa da Moodlen zerbitzu kriptografiko sendoagoak eskaintzeko.';
 $string['opentowebcrawlers'] = 'Ireki bilaketa-motorrei';
-$string['optionalmaintenancemessage'] = 'Mantenuari buruzko aukerazko mezua';
+$string['optionalmaintenancemessage'] = 'Mantenuari buruzko hautazko mezua';
 $string['order1'] = 'Lehena';
 $string['order2'] = 'Bigarrena';
 $string['order3'] = 'Hirugarrena';
@@ -965,7 +965,7 @@ $string['pathtodu'] = 'du-rako bidea';
 $string['pathtogs'] = 'ghostscript-erako bidea';
 $string['pathtogs_help'] = 'Linux instalazio gehienetan, aukera honetan ‘/usr/bin/gs’ utzi daiteke. Windows-en \'c:\\gs\\bin\\gswin32c.exe\' moduko zerbait izango da (ziurtatu bidean ez dagoela hutsunerik – behar izanez gero kopiatu \'gswin32c.exe\' eta \'gsdll32.dll\' fitxategiak bidean hutsunerik ez duen karpeta berri batera)';
 $string['pathtopdftoppm'] = 'pdftoppm-rako bidea';
-$string['pathtopdftoppm_help'] = '<a href="https://poppler.freedesktop.org/">Poppler</a> PDFak renderizatzeko liburutegi bat da, eta horren baitan PDFak PNGra bihurtzeko pdftoppm tresna dago. Tresna horrekin errendimendua normalean Gostscript erabilita baino hobea izaten da, bereziki fitxategi handien kasuan. Eskuragarri badago, bihurketa horiek egiteko pdftoppm erabiliko da Ghostscript-en ordez. Linux instalazio gehienetan bidea /usr/bin/pdftoppm izan ohi da. Bestela, poppler-utils edo poppler paketea instalatu beharko duzu, zure Linux banaketaren arabera. Windows-en Cygwin instalazioak eskaintzen du tresna hau.';
+$string['pathtopdftoppm_help'] = '<a href="https://poppler.freedesktop.org/">Poppler</a> PDFak renderizatzeko liburutegi bat da, eta horren baitan PDFak PNGra bihurtzeko pdftoppm tresna dago. Tresna horrekin errendimendua normalean Ghostscript erabilita baino hobea izaten da, bereziki fitxategi handien kasuan. Eskuragarri badago, bihurketa horiek egiteko pdftoppm erabiliko da Ghostscript-en ordez. Linux instalazio gehienetan bidea /usr/bin/pdftoppm izan ohi da. Bestela, poppler-utils edo poppler paketea instalatu beharko duzu, zure Linux banaketaren arabera. Windows-en Cygwin instalazioak eskaintzen du tresna hau.';
 $string['pathtopgdump'] = 'pg_dump-erako bidea';
 $string['pathtopgdumpdesc'] = 'Zure sisteman soilik pg_dump bat baino gehiago baduzu sartu behar duzu (adibidez, postgresql-ren bertsio bat baino gehiago badituzu instalatuta).';
 $string['pathtopgdumpinvalid'] = 'pg_dump-erako bide ez egokia: ez da zuzena edo ezin da exekutatu.';
@@ -1261,7 +1261,8 @@ $string['sitepolicyhandler_desc'] = 'Honek politikak eta erabiltzaile-onespenak 
 $string['sitepolicyhandlercore'] = 'Lehenetsitakoa (sistema)';
 $string['sitepolicyhandlerplugin'] = '{$a->name} ({$a->component})';
 $string['sitesectionhelp'] = 'Aukeratuz gero, gai batentzako atal bat erakutsiko da gunearen azalean.';
-$string['sixtyfourbitswarning'] = 'Zure guneak 64 bitekoa ez den PHP bertsioa erabiltzen ari dela antzeman da. Etorkizuneko bateragarritasuna bermatze aldera, zure gunea eguneratzea gomendatzen da.';
+$string['sixtyfourbitsrequired'] = 'Zure guneak 64 bitekoa ez den PHP bertsioa erabiltzen ari dela antzeman da. Moodleko bertsio hau instalatu aurretik zure sistema eguneratu beharko duzu (sistema eragilea, PHP...).';
+$string['sixtyfourbitswarning'] = 'Zure guneak 64 bitekoa ez den PHP bertsioa erabiltzen ari dela antzeman da. Etorkizuneko bateragarritasuna bermatze aldera, zure sistema eguneratzea gomendatzen da.';
 $string['slasharguments'] = 'Erabili "slash" argumentuak';
 $string['slashargumentswarning'] = 'Slash argumentuak gaituta egotea gomendatzen da. Etorkizunean derrigorrezkoa izango da. Xehetasun gehiago izateko ikusi <a href="https://docs.moodle.org/en/admin/environment/slasharguments">Slash argumentuak erabiltzen</a>.';
 $string['smartpix'] = 'Bilatu smart pix';
@@ -1273,7 +1274,7 @@ $string['smtpmaxbulk'] = 'SMTP saiorako muga';
 $string['smtppass'] = 'SMTP pasahitza';
 $string['smtpsecure'] = 'SMTP segurtasuna';
 $string['smtpuser'] = 'SMTP erabiltzaile-izena';
-$string['soaprecommended'] = 'SOAP hedapena instalatzea erabilgarria da web-zerbitzu eta plugin batzuentzat.';
+$string['soaprecommended'] = 'SOAP hautazko hedapena instalatzea erabilgarria da web-zerbitzu eta plugin batzuentzat.';
 $string['sort_fullname'] = 'Ikastaroaren izen osoa';
 $string['sort_idnumber'] = 'Ikastaroaren ID zenbakia';
 $string['sort_shortname'] = 'Ikastaroaren izen laburra';
@@ -1412,7 +1413,7 @@ $string['timezoneserver'] = 'Zerbitzariaren ordu eremua ({$a}) ({$a})';
 $string['tlswarning'] = 'Ez da TLSv1.2 onartzen duen PHP/cURL hedapenik aurkitu. Baliteke zerbitzu batzuk ez funtzionatzea. Zure TLS liburutegiak eguneratzea irmoki gomendatzen da.';
 $string['tokenduration'] = 'Erabiltzaileek sortutako tokenen iraupena';
 $string['tokenduration_desc'] = 'Erabiltzaile batek sortutako web-zerbitzu baten tokena (mobile aplikazioaren bidez adibidez) baliozkoa izango den denbora.';
-$string['tokenizerrecommended'] = 'PHP Tokenizer aukerako hedapena instalatzea gomendagarria da - Moodle Sarearen funtzionamendua hobetzen du.';
+$string['tokenizerrecommended'] = 'PHP Tokenizer hautazko hedapena instalatzea gomendagarria da - Moodle Sarearen funtzionamendua hobetzen du.';
 $string['tools'] = 'Kudeaketarako tresnak';
 $string['toolsmanage'] = 'Kudeatu kudeaketarako tresnak';
 $string['unattendedoperation'] = 'Alde batera utzitako eragiketa';
@@ -1428,12 +1429,13 @@ $string['unsupporteddbfilepertable'] = 'UTF-8 mantenu osorako MySQLk eta MariaDB
 $string['unsupporteddblargeprefix'] = 'UTF-8 mantenu osorako MySQLk eta MariaDBk MySQLren \'innodb_large_prefix\' ezarpenean \'ON\' jartzeko eskatzen dute. Ikusi dokumentazioa zehaztapen gehiagorako.';
 $string['unsupporteddbstorageengine'] = 'Aurrerantzean datu-basea erabiltzen ari den biltegi-tresnak ez du mantenurik izango.';
 $string['unsupporteddbtablerowformat'] = 'Zure datu-baseak Antelope fitxategi formatuko taulak dauzka. Taulak Barracuda fitxategi-formatura pasatzea aholkatzen dizuegu. Ikusi <a href="https://docs.moodle.org/en/cli">Komando-lerroaren bidezko kudeaketa</a> InnoDB taulak Barracuda formatura pasatzeko tresna bati buruzko zehaztasun gehiagorako.';
-$string['unsupportedphpversion7'] = 'Ez da PHP 7 bertsioa onartzen.';
-$string['unsupportedphpversion71'] = 'Ez da PHP 7 bertsioa onartzen.';
-$string['unsupportedphpversion72'] = 'Ez da PHP 7.2 bertsioa onartzen.';
-$string['unsupportedphpversion73'] = 'Ez dago PHP 7.3 bertsiorako sostengurik';
-$string['unsupportedphpversion74'] = 'Ez da PHP 7.4 bertsioa onartzen.';
-$string['unsupportedphpversion80'] = 'Ez da PHP 8.0 bertsioa onartzen.';
+$string['unsupportedphpversion7'] = 'Ez da PHP 7 edo goragoko bertsioa onartzen.';
+$string['unsupportedphpversion71'] = 'Ez da PHP 7 edo goragoko bertsioa onartzen.';
+$string['unsupportedphpversion72'] = 'Ez da PHP 7.2 edo goragoko bertsioa onartzen.';
+$string['unsupportedphpversion73'] = 'Ez da PHP 7.3 edo goragoko bertsioa onartzen.';
+$string['unsupportedphpversion74'] = 'Ez da PHP 7.4 edo goragoko bertsioa onartzen.';
+$string['unsupportedphpversion80'] = 'Ez da PHP 8.0 edo goragoko bertsioa onartzen.';
+$string['unsupportedphpversion81'] = 'Ez da PHP 8.1 edo goragoko bertsioa onartzen.';
 $string['unsuspenduser'] = 'Aktibatu erabiltzailearen kontua';
 $string['updateaccounts'] = 'Eguneratu dauden kontuak';
 $string['updateautocheck'] = 'Bilatu eskuragarri dauden eguneraketak automatikoki';

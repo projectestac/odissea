@@ -441,15 +441,7 @@ $string['statistic'] = 'Fragebogenstatistik';
 $string['stats_all'] = 'In der Kategorie "{$a->category}" haben Sie alle Fragen beantwortet.';
 $string['stats_none'] = 'In der Kategorie "{$a->category}" haben Sie noch keine Frage beantwortet.';
 $string['stats_partly'] = 'In der Kategorie "{$a->category}" haben Sie {$a->answered} von {$a->questions} Fragen beantwortet.';
-$string['students_answered_multiple'] = 'Studierende haben den Fragebogen bearbeitet.';
-$string['students_answered_single'] = 'Studierender hat den Fragebogen bearbeitet.';
-$string['students_available_multiple'] = 'eingeschriebene Studierende, die den Fragebogen ausfüllen können.';
-$string['students_available_single'] = 'eingeschriebenen Studierenden, der den Fragebogen ausfüllen kann.';
-$string['students_committed_multiple'] = 'Studierende davon hat seine Antworten schon endgültig abgegeben.';
-$string['students_committed_single'] = 'Studierende davon haben ihre Antworten schon endgültig abgegeben.';
 $string['students_enrolled_info'] = 'Studierenden sind im Kurs eingeschrieben';
-$string['students_grouping_multiple'] = 'Studierende zur Gruppenbildung.';
-$string['students_grouping_single'] = 'Studierende zur Gruppenbildung.';
 $string['students_selected'] = 'Studenten in Auswahl';
 $string['submit-modal-text'] = 'Für wissenschaftliche Studien und die Bildung von Gruppen ist es wichtig, dass sie die Fragen ehrlich und richtig beantworten. Wir würden uns freuen, wenn Sie uns dabei unterstützen.
 

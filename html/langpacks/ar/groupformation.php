@@ -76,9 +76,6 @@ $string['page_title_group'] = 'الواجب الجماعي';
 $string['participant_code_footer'] = 'رمز المساهمة الشخصية لك هو';
 $string['participant_code_header_study'] = 'يرجى إدخال رمز المساهمة الشخصية بناءً على القواعد الآتية:';
 $string['pre_study_header'] = 'إحصائيات لتصميم الدراسة';
-$string['privacy:metadata:groupformation_answer'] = 'معلومات عن إجابات المستخدم على استبيان النشاط';
-$string['privacy:metadata:groupformation_answer:answer'] = 'الإجابة المعطاة من قبل المستخدم';
-$string['privacy:metadata:groupformation_answer:timestamp'] = 'الطابع الزمني لوقت إرسال المستخدم للإجابة';
 $string['privacy:metadata:groupformation_groups:group_size'] = 'حجم المجموعة';
 $string['privacy:metadata:groupformation_groups:groupname'] = 'اسم المجموعة';
 $string['privacy:metadata:groupformation_user_values:label'] = 'اسم المعيار المستعمل في تشكيل المجموعة';
@@ -109,10 +106,6 @@ $string['stats_all_binquestion'] = 'لقد أجبت على السؤال في ا�
 $string['stats_none'] = 'لم تجب على أي كل الأسئلة في الصنف "{$a->category}".';
 $string['stats_none_binquestion'] = 'لم تجب على السؤال في الصنف "{$a->category}".';
 $string['stats_partly'] = 'لقد أجبت على {$a->answered} من أصل {$a->questions} من الأسئلة في الصنف "{$a->category}".';
-$string['students_answered_multiple'] = 'الطلبة الذين أجابوا على الاستبيان.';
-$string['students_answered_single'] = 'الطالب الذي أجاب على الاستبيان.';
-$string['students_available_multiple'] = 'الطلاب المنضمون الذين يمكنهم إملاء الاستبيان.';
-$string['students_available_single'] = 'الطالب المنضم الذي يمكنه إملاء الاستبيان.';
 $string['students_enrolled_info'] = 'الطلاب منضمون إلى هذا المساق. إذا كان النشاط معدًّا لتجميع معين فقط، فالرقم الحقيقي قد يكون أقل.';
 $string['submit-modal-title'] = 'تسليم إجاباتك';
 $string['successful_import'] = 'نجحت عملية الاستيراد. يمكنك مراجعة إجاباتك في الاستبيان.';

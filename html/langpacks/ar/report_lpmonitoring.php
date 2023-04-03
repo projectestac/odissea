@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advancedfilter'] = 'مرشح متقدم';
 $string['eventusercompetencyresetted'] = 'كفاءة مستخدم تم إعادة تعيينها';
 $string['nopermissionsplanview'] = 'عذراً، ولكنك لا تمتلك حاليًا الصلاحيات لمعاينة خطط التعلم لـ {$a}';
 $string['nopermissionsusercompetencyview'] = 'عذراً، ولكنك لا تمتلك حاليًا الصلاحيات لمعاينة كفاءة المستخدم لـ {$a}';

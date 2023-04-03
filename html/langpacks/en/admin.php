@@ -1259,6 +1259,7 @@ $string['sitepolicyhandler_desc'] = 'This determines how policies and user conse
 $string['sitepolicyhandlercore'] = 'Default (core)';
 $string['sitepolicyhandlerplugin'] = '{$a->name} ({$a->component})';
 $string['sitesectionhelp'] = 'If selected, a topic section will be displayed on the site\'s front page.';
+$string['sixtyfourbitsrequired'] = 'It has been detected that your site is not using a 64-bit PHP version. You are required to upgrade your system (operating system, PHP...) before installing this Moodle version.';
 $string['sixtyfourbitswarning'] = 'It has been detected that your site is not using a 64-bit PHP version. It is recommended that you upgrade your site to ensure future compatibility.';
 $string['slasharguments'] = 'Use slash arguments';
 $string['slashargumentswarning'] = 'It is recommended that the use of slash arguments is enabled. In future it will be required. For more details, see the documentation <a href="https://docs.moodle.org/en/admin/environment/slasharguments">Using slash arguments</a>.';

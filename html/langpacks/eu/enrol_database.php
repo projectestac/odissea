@@ -77,4 +77,4 @@ $string['settingsheadernewcourses'] = 'Ikastaro berriak sortzea';
 $string['settingsheaderremote'] = 'Urrutiko rolen sinkronizazioa';
 $string['syncenrolmentstask'] = 'Sinkronizatu kanpoko datu-baseko matrikulazioak ataza';
 $string['templatecourse'] = 'Ikastaro berrien txantiloia';
-$string['templatecourse_desc'] = 'Aukerakoa: automatikoki sortutako ikastaroek ezarpenak txantiloi-ikastaro batetik kopiatu ditzakete. Idatzi hemen txantiloi-ikastaroaren izen laburra.';
+$string['templatecourse_desc'] = 'Hautazkoa: automatikoki sortutako ikastaroek ezarpenak txantiloi-ikastaro batetik kopiatu ditzakete. Idatzi hemen txantiloi-ikastaroaren izen laburra.';

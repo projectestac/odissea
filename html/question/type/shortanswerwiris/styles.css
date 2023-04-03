@@ -12,3 +12,8 @@ div.wirisanswerfielddecoration.wirisembeddeddecoration.wirispartiallycorrect,
 div.wirisanswerfielddecoration.wiriseditordecoration.wirispartiallycorrect div.wiriseditorwrapper {
     background-image: url([[pix:core|i/grade_partiallycorrect]]) !important; /* stylelint-disable-line declaration-no-important */
 }
+
+div.rightanswer .wrsUI_app.wrsUI_graph {
+    max-width: 800px;
+    height: 453px;
+}

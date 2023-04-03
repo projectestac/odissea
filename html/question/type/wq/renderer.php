@@ -81,6 +81,10 @@ class qtype_wq_renderer extends qtype_renderer {
         $question = $qa->get_question();
         $xml = $qa->get_last_qt_var('_sqi');
         if (!empty($xml)) {
+            // For some reason interactive questions with multiple tries escape their variables.
+            if (substr($xml, 0, 4) == "&lt;") {
+                $xml = html_entity_decode($xml);
+            }
             $builder = com_wiris_quizzes_api_Quizzes::getInstance();
             $sqi = $builder->readQuestionInstance($xml, $question->wirisquestion);
             $question->wirisquestioninstance->updateFromStudentQuestionInstance($sqi);

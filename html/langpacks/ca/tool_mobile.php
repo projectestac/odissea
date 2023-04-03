@@ -89,5 +89,6 @@ $string['qrsiteadminsnotallowed'] = 'Per motius de seguretat, no es permet inici
 $string['remoteaddons'] = 'Complements remots';
 $string['scanqrcode'] = 'Escaneja el codi QR';
 $string['smartappbanners'] = 'Bàners de l\'app';
+$string['subscriptionerrorrequest'] = 'S\'ha produït un error en provar de recuperar la vostra informació de subscripció de l\'app de Moodle.';
 $string['typeoflogin'] = 'Tipus d\'inici de sessió';
 $string['typeoflogin_desc'] = 'Si el lloc utilitza un mètode d\'identificació SSO, trieu a través d\'una finestra del navegador o d\'un navegador incrustat. Un navegador incrustat proporciona una millor experiència d\'usuari, tot i que no funciona amb tots els connectors SSO. Si utilitzeu SSO, l\'inici de sessió de visitants hauria d\'estar inhabilitat.';

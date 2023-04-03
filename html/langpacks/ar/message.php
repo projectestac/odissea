@@ -69,8 +69,7 @@ $string['disableall'] = 'تعطيل الاشعارات';
 $string['disabled'] = 'المحادثات غير مفعّلة على هذا الموقع';
 $string['disallowed'] = 'غير مسموح';
 $string['editmessages'] = 'تعديل الرسائل';
-$string['emailtagline'] = 'هذه نسخة من رسالة أرسلت لك من "{$a->sitename}".
-يمكنك الرد من: {$a->url}.';
+$string['emailtagline'] = 'هذه نسخة من رسالة أرسلت لك من الموقع {$a->sitename}. لترد عليها، إذهب إلى <a href="{$a->url}">{$a->url}</a>.';
 $string['enabled'] = 'تم تفعيله';
 $string['errorcallingprocessor'] = 'خطأ عند استدعاء الناتج المُعرَّف';
 $string['errorconversationdoesnotexist'] = 'المحادثة غير موجودة';

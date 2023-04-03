@@ -402,4 +402,5 @@ $string['usesubtilesseczero'] = 'Use sub tiles in top section';
 $string['usesubtilesseczero_help'] = 'If selected, sub tiles will be used in top section of course as well as within all tiles.  Only available if using sub tiles in the course overall.  This is as the sub tiles take up a lot of room at the very top of the course.  It may be better to leave this unselected, so that any items in the top section are shown in standard list format instead.';
 $string['usetooltips'] = 'Use JavaScript tooltips';
 $string['usetooltips_desc'] = 'Use JavaScript tooltips when user hovers over certain items e.g. completion boxes, tiles for tile contents';
+$string['warningcompatibility'] = 'Please ask a site administrator to upgrade the Tiles course format plugin.  It is not compatible with this version of Moodle.';
 $string['width'] = 'width';

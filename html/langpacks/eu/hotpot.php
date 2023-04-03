@@ -60,7 +60,7 @@ $string['averagescore'] = 'Batez bestekoaren puntuazioa';
 $string['bodystyles'] = 'Gorputzaren estiloak';
 $string['bodystylesbackground'] = 'Atzeko planoaren kolorea eta irudia';
 $string['bodystylescolor'] = 'Testuaren kolorea';
-$string['bodystylesfont'] = 'Letra-tipoaren tamaina eta familia';
+$string['bodystylesfont'] = 'Letra-motaren tamaina eta familia';
 $string['bodystylesmargin'] = 'Ezker eta eskuin marjina';
 $string['cacherecords'] = 'HotPot cachearen erregistroak';
 $string['canrestarthotpot'] = 'Zure orain arteko emaitzak gordeko dira eta "{$a}" beranduago berregin ahal izango duzu';
@@ -205,7 +205,7 @@ $string['mediafilter_moodle'] = 'Moodleren multimedia-iragazki estandarrak';
 $string['modulename'] = 'HotPot';
 $string['modulename_help'] = 'HotPot moduluak irakasleari Moodle bidez ikasleei hezkuntza-material interaktiboak banatzeko aukera ematen dio, baita ikasleen erantzun eta emaitzak ikusteko aukera ere.
 
-HotPot jarduera soil bat ausazko hasiera-orri batez, elearning ariketa sinple batez eta ausazko irteera-orri batez osatzen da. Elearning ariketa web-gune estatiko bat izan daiteke, baita testu, audio eta bideoak erakutsi eta ikasleen erantzunak gordetzen duen web-gune interaktibo bat ere. Elearning ariketak egile softwarea erabiliz irakaslearen ordenagailuan sortzen dira eta ondoren Moodlera igotzen dira.
+HotPot jarduera soil bat hautazko hasiera-orri batez, elearning ariketa sinple batez eta hautazko irteera-orri batez osatzen da. Elearning ariketa web-gune estatiko bat izan daiteke, baita testu, audio eta bideoak erakutsi eta ikasleen erantzunak gordetzen duen web-gune interaktibo bat ere. Elearning ariketak egile softwarea erabiliz irakaslearen ordenagailuan sortzen dira eta ondoren Moodlera igotzen dira.
 
 HotPot jarduerak hurrengo egile softwareak erabiliz sortutako ariketak maneia ditzake:
 

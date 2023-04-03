@@ -32,4 +32,4 @@ $string['needaccesskey'] = 'Sarbide-gakoa lortu behar da';
 $string['pluginname'] = 'Amazon S3';
 $string['privacy:metadata'] = 'Amazon S3 biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['s3:view'] = 'Ikusi Amazon S3 biltegia';
-$string['secret_key'] = 'Giltza sekretua';
+$string['secret_key'] = 'Gako sekretua';

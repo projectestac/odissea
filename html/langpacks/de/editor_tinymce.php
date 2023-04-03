@@ -342,7 +342,7 @@ $string['contextmenu:full'] = 'Blocksatz';
 $string['contextmenu:left'] = 'Linksbündig';
 $string['contextmenu:right'] = 'Rechtsbündig';
 $string['customconfig'] = 'Erweiterte Einstellungen';
-$string['customconfig_desc'] = 'Die erweiterten Einstellungen des HTML-Editors TinyMCE werden im in JSON Format angegeben, d.h. in der folgenden Form: {"option1" : "value1", "option2" : "value2"}. Alle hier gesetzten Optionen überschreiben die Standard- und Plugineinstellungen.';
+$string['customconfig_desc'] = 'Die erweiterten Einstellungen von TinyMCE werden im in JSON Format angegeben, d.h. in der folgenden Form: {"option1" : "value1", "option2" : "value2"}. Alle hier gesetzten Optionen überschreiben die Standard- und Plugineinstellungen.';
 $string['customtoolbar'] = 'Werkzeugleiste';
 $string['customtoolbar_desc'] = 'Jede Zeile enthält eine kommagetrennte Liste von Werkzeugsymbolen. \'wrap\' dient als Gruppentrenner. Leerzeilen werden ignoriert. <a href="{$a}" target="_blank">{$a}</a>Standardmäßige Werkzeugsymbole des HTML-Editors TinyMCE.<br />Die erste Zeile wird immer angezeigt, die beiden weiteren Zeilen können ein- und ausgeblendet werden.';
 $string['directionality:ltr_desc'] = 'Schrift von links nach rechts';
@@ -598,7 +598,7 @@ $string['paste_dlg:word_title'] = 'Drücken Sie Strg+V bzw. Cmd+V, um den Text e
 $string['pluginname'] = 'HTML-Editor TinyMCE';
 $string['preview:preview_desc'] = 'Vorschau';
 $string['print:print_desc'] = 'Drucken';
-$string['privacy:metadata'] = 'Das Plugin "HTML-Editor TinyMCE" speichert keine personenbezogenen Daten';
+$string['privacy:metadata'] = 'Das Plugin "Editor TinyMCE" speichert keine personenbezogenen Daten';
 $string['save:cancel_desc'] = 'Alle Änderungen verwerfen';
 $string['save:save_desc'] = 'Speichern';
 $string['searchreplace:delta_height'] = '0';

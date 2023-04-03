@@ -35,6 +35,7 @@ $string['eventreportviewed'] = 'تقرير تمت معاينته';
 $string['eventstudentchecksupdated'] = 'تدقيقات طالب تم تحديثها';
 $string['eventteacherchecksupdated'] = 'تدقيقات معلم تم تحديثها';
 $string['guestsno'] = 'ليست لديك صلاحية معاينة قائمة التدقيق هذه';
+$string['linktomodule'] = 'النشاط المرتبط بهذا العنصر';
 $string['openlinkinnewwindow'] = 'أتريد الفتح في نافذة جديدة؟';
 $string['percentcompleteall'] = 'كل العناصر';
 $string['teachernoteditcheck'] = 'الطالب فقط';

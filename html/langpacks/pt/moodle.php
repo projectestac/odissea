@@ -526,7 +526,7 @@ $string['deletecategoryempty'] = 'Esta categoria está vazia.';
 $string['deletecheck'] = 'Apagar {$a}?';
 $string['deletecheckfiles'] = 'Tem a certeza de que pretende apagar estes ficheiros?';
 $string['deletecheckfull'] = 'Tem a certeza absoluta de que pretende apagar completamente o utilizador <b>{$a}</b>, incluindo as inscrições, atividade e outras informações do utilizador?';
-$string['deletechecktype'] = 'Tem a certeza de que pretende apagar <strong>\'{$a->type}\'</strong>?';
+$string['deletechecktype'] = 'Tem a certeza de que pretende apagar \'<strong>{$a->type}</strong>\'?';
 $string['deletechecktypename'] = 'Tem a certeza de que pretende apagar <strong>{$a->type}</strong> - "{$a->name}"?';
 $string['deletecheckwarning'] = 'Está prestes a apagar estes ficheiros';
 $string['deletecommentbyon'] = 'Apagar o comentário publicado {$a->time} por {$a->user}';
@@ -627,7 +627,7 @@ $string['editsummary'] = 'Editar sumário';
 $string['editthisactivity'] = 'Editar esta atividade';
 $string['editthiscategory'] = 'Editar esta categoria';
 $string['edittitle'] = 'Editar nome';
-$string['edittitleinstructions'] = '\'Esc\' para cancelar, \'Enter\' para terminar';
+$string['edittitleinstructions'] = '\'Enter\' para terminar, \'Esc\' para cancelar';
 $string['edituser'] = 'Editar contas de utilizadores';
 $string['edulevel'] = 'Todos os eventos';
 $string['edulevel_help'] = '* Ensino - ações realizadas por um professor, por exemplo, atualizar um recurso
@@ -990,7 +990,7 @@ $string['grouprandomassign'] = 'Distribuir aleatoriamente todos em grupos';
 $string['groupremove'] = 'Apagar grupos selecionados';
 $string['groupremovemembers'] = 'Apagar membros selecionados';
 $string['groups'] = 'Grupos';
-$string['groupsnone'] = 'Não há grupos';
+$string['groupsnone'] = 'Nenhum grupo';
 $string['groupsseparate'] = 'Grupos separados';
 $string['groupsvisible'] = 'Grupos visíveis';
 $string['guest'] = 'Visitante';
@@ -1025,7 +1025,7 @@ $string['hideshowblocks'] = 'Ocultar ou mostrar blocos';
 $string['highlight'] = 'Destacar';
 $string['highlightoff'] = 'Remover destaque';
 $string['hits'] = 'Número de acessos';
-$string['hitsoncourse'] = 'Número de acessos de {$a->username} a {$a->coursename}';
+$string['hitsoncourse'] = 'Número de acessos do utilizador {$a->username} a {$a->coursename}';
 $string['hitsoncoursetoday'] = 'N.º de acessos de hoje do utilizador {$a->username} a {$a->coursename}';
 $string['home'] = 'Página principal';
 $string['hour'] = 'hora';
@@ -1083,7 +1083,7 @@ $string['indicator:accessesbeforestart_help'] = 'Este indicador mostra se o alun
 $string['indicator:activitiesdue'] = 'Atividades com data limite próxima';
 $string['indicator:activitiesdue_help'] = 'O utilizador tem atividades com data limite próxima';
 $string['indicator:anycourseaccess'] = 'Qualquer acesso';
-$string['indicator:anycourseaccess_help'] = 'Este indicador reflete todos os acessos a qualquer disciplina em que o  utilizador está inscrito.';
+$string['indicator:anycourseaccess_help'] = 'Este indicador reflete todos os acessos a qualquer disciplina em que o utilizador está inscrito.';
 $string['indicator:anywrite'] = 'Qualquer ação de escrita';
 $string['indicator:anywrite_help'] = 'Este indicador mostra qualquer ação de escrita (submissão) efetuada pelo aluno.';
 $string['indicator:anywriteincourse'] = 'Qualquer ação de escrita na disciplina';
@@ -1304,7 +1304,7 @@ $string['modvisiblewithstealth_help'] = 'Se a disponibilidade estiver configurad
 
 Se a disponibilidade estiver configurada para "Oculto para os alunos", a atividade ou o recurso só estará disponível para os utilizadores com permissão para ver atividades ocultas (por predefinição, os utilizadores com o papel de professor).
 
-Se a disciplina contiver muitas atividades ou recursos, a página da disciplina pode ser simplificada, definindo a disponibilidade para "Disponível mas oculto na página da disciplina". Neste caso, uma hiperligação para a atividade ou recurso deve ser fornecida noutro local, como por exemplo, o recurso Página. A atividade aparece na pauta e em outros relatórios.';
+Se a disciplina contiver muitas atividades ou recursos, a página da disciplina pode ser simplificada, definindo a disponibilidade para "Disponível mas oculto na página da disciplina". Neste caso, uma hiperligação para a atividade ou recurso deve ser fornecida noutro local, como por exemplo, o recurso Página. A atividade continuará a aparecer na pauta e em outros relatórios.';
 $string['month'] = 'Mês';
 $string['months'] = 'Meses';
 $string['moodledocs'] = 'Documentação do Moodle';
@@ -1835,7 +1835,7 @@ $string['sectionname'] = 'Nome da secção';
 $string['sections'] = 'Secções';
 $string['seealsostats'] = 'Ver também: estatísticas';
 $string['selctauser'] = 'Selecione um utilizador';
-$string['select'] = 'Selecione';
+$string['select'] = 'Selecionar';
 $string['selectacategory'] = 'Por favor, selecione uma categoria';
 $string['selectacountry'] = 'Selecione um país';
 $string['selectacourse'] = 'Selecione uma disciplina';
@@ -1857,8 +1857,8 @@ $string['selectedfile'] = 'Selecione um ficheiro';
 $string['selectednowmove'] = '{$a} ficheiros selecionados para serem movidos. Vá para a pasta de destino e pressione \'Mover os ficheiros para este local\'';
 $string['selectfiles'] = 'Selecione os ficheiros';
 $string['selectitem'] = 'Selecionar \'{$a}\'';
-$string['selectmoduletoviewhelp'] = 'Selecione uma atividade ou recurso para exibir a respetiva ajuda. Faça duplo clique no nome de uma atividade ou recurso para os adicionar rapidamente.';
-$string['selectnos'] = 'Selecione todos os \'Não\'';
+$string['selectmoduletoviewhelp'] = 'Selecione uma atividade ou recurso para exibir a respetiva ajuda. Faça duplo clique no nome da atividade ou recurso para os adicionar rapidamente.';
+$string['selectnos'] = 'Selecionar todos os \'Não\'';
 $string['selectperiod'] = 'Selecione período';
 $string['senddetails'] = 'Envie os meus dados por e-mail';
 $string['separate'] = 'Separar';
@@ -2045,9 +2045,9 @@ $string['teacheronly'] = 'só para {$a}';
 $string['teacherroles'] = '{$a} papéis';
 $string['teachers'] = 'Professores';
 $string['textediting'] = 'Editor de texto';
-$string['textediting_help'] = 'Se selecionar um editor HTML, tal como Atto ou TinyMCE, os campos do tipo área de texto terão uma barra de ferramentas com botões para facilmente adicionar e formatar o conteúdo.
+$string['textediting_help'] = 'Se selecionar um editor HTML, tal como Atto ou TinyMCE, os campos do tipo Área de texto terão uma barra de ferramentas com botões para facilmente adicionar e formatar o conteúdo.
 
-Se Selecionar \'Área de texto simples\', pode escolher um formato para áreas de texto tal como HTML ou Markdown.
+Se selecionar \'Área de texto simples\', pode escolher um formato para áreas de texto tal como HTML ou Markdown.
 
 A lista de editores de texto disponíveis é determinada pelo administrador do site.';
 $string['texteditor'] = 'Usar formulários Web';
@@ -2241,7 +2241,7 @@ $string['whatforlink'] = 'O que pretende fazer com a hiperligação?';
 $string['whatforpage'] = 'O que pretende fazer com o texto?';
 $string['whatisyourage'] = 'Qual é a sua idade?';
 $string['whattocallzip'] = 'Qual o nome para o ficheiro Zip?';
-$string['whattodo'] = 'O que fazer';
+$string['whattodo'] = 'O que fazer?';
 $string['wheredoyoulive'] = 'Em que país vive?';
 $string['whyisthisrequired'] = 'Porque é que isto é obrigatório?';
 $string['windowclosing'] = 'Esta janela deve fechar automaticamente. Se não acontecer, por favor, feche-a manualmente.';

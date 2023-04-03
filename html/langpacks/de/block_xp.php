@@ -53,8 +53,10 @@ $string['clicktoselectcm'] = 'Klicken Sie, um eine Aktivität oder ein Material 
 $string['cmselector'] = 'Kursmodul-Auswahl';
 $string['coefxp'] = 'Koeffizient des Algorithmus';
 $string['colon'] = '{$a->a}: {$a->b}';
+$string['configblockrankingsnapshot'] = 'Bestenlisten-Schnappschuss anzeigen';
+$string['configblockrankingsnapshot_help'] = 'Der Bestenlisten-Snapshot zeigt den Rang der Person an. Dabei wird versucht, die beiden Personen anzuzeigen, die die Person umgeben. Für diese Funktion muss die Bestenliste aktiviert sein und die Ränge müssen angezeigt werden.';
 $string['configdescription'] = 'Beschreibung';
-$string['configdescription_help'] = 'Eine Kurzbeschreibung, die im Block unterhalb des Teilnehmerlevels angezeigt wird. Die Teilnehmer/innen haben die Möglichkeit, die Meldung wegzuklicken. In diesem Fall wird sie ihnen nicht mehr angezeigt.';
+$string['configdescription_help'] = 'Kurze Einführungsnachricht, die im Block angezeigt wird. Die Teilnehmer/innen können die Nachricht zu verwerfen, in diesem Fall sehen sie sie nicht mehr.';
 $string['configheader'] = 'Einstellungen';
 $string['configrecentactivity'] = 'Neue Belohnungen anzeigen';
 $string['configrecentactivity_help'] = 'Wenn diese Option aktiviert wurde, zeigt der Block eine kurze Liste der letzten Aktivitäten, bei denen die Teilnehmer/innen mit Punkten belohnt wurden.';
@@ -90,13 +92,13 @@ $string['displayrelativerank'] = 'Relativen Rang anzeigen';
 $string['documentation'] = 'Dokumentation';
 $string['editinstructions'] = 'Informationen bearbeiten';
 $string['enablecheatguard'] = 'Schummelwächter aktivieren';
-$string['enablecheatguard_help'] = 'Der Schummelwächster (Cheat Guard) ist ein einfacher, unaufwändiger Mechanismus, um zu verhindern, dass Teilnehmer/innen das System mit simplen Techniken missbrauchen, z.B. indem sie dieselbe Seite endlos auffrischen oder dieselbe Aktion immer und immer wieder wiederholen.
+$string['enablecheatguard_help'] = 'Der Schummelwächter (Cheat Guard) ist ein einfacher Mechanismus, der verhindert, dass Teilnehmer/innen das System mit simplen Techniken missbrauchen, z.B. indem sie Seiten endlos auffrischen oder Aktionen ständig wiederholen.
 
-[more info](https://levelup.plus/docs/article/level-up-cheat-guard?ref=blockxp_help)';
+[Weitere Infos](https://levelup.plus/docs/article/level-up-cheat-guard?ref=blockxp_help)';
 $string['enableinfos'] = 'Infoseite aktivieren';
 $string['enableinfos_help'] = 'Wenn die Einstellung \'Nein\' gewählt ist, können Teilnehmer/innen die Info-Seite nicht sehen.';
-$string['enableladder'] = 'Rangliste aktivieren';
-$string['enableladder_help'] = 'Wenn die Einstellung \'Nein\' gewählt wird, können Teilnehmer/innen die Rangliste  nicht sehen.';
+$string['enableladder'] = 'Bestenliste aktivieren';
+$string['enableladder_help'] = 'Wenn die Einstellung \'Nein\' gewählt wird, können Teilnehmer/innen die Bestenliste nicht sehen.';
 $string['enablelevelupnotif'] = 'Mitteilung für Levelsteigerung aktivieren';
 $string['enablelevelupnotif_help'] = 'Wenn die Einstellung \'Ja\' gewählt wird, wird den Teilnehmer/innen ein Pop-up-Fenster angezeigt wenn sie ein neues Level erreicht haben.';
 $string['enablelogging'] = 'Logging aktivieren';
@@ -117,15 +119,16 @@ $string['eventis'] = 'Das Ereignis ist {$a}';
 $string['eventname'] = 'Eventbezeichnung';
 $string['eventproperty'] = 'Eventeigenschaft';
 $string['eventsrules'] = 'Eventregeln';
-$string['eventsrules_help'] = 'Dieses Plugin nutzt Ereignisse, um den von den Teilnehmer/innen ausgeführten Aktionen Punkte zuzuweisen.
-Sie können über die Eingabemaske Ihre eigenen Regeln hinzufügen und die Standardregeln ändern.
+$string['eventsrules_help'] = 'Dieses Plugin nutzt Ereignisse, um den von Teilnehmer/innen ausgeführten Aktionen Punkte zuzuweisen.
+Sie können über die Eingabemaske eigene Regeln hinzufügen und die Standardregeln ändern.
 
-Wir empfehlen, auf der _Log_-Seite des Plugins zu überprüfen, welche Ereignisse ausgelöst werden, wenn Teilnehmer/innen Aktionen im Kurs ausführen.
+Wir empfehlen, im Protokoll des Plugins zu überprüfen, welche Ereignisse ausgelöst werden, wenn Teilnehmer/innen Aktionen im Kurs ausführen.
 
-Zusätzliche Informationen finden Sie hier:
-- [How are experience points calculated?](https://levelup.plus/docs/article/how-are-experience-points-calculated?ref=blockxp_help)
-- [Troubleshooting rules](https://levelup.plus/docs/article/event-rule-not-working?ref=blockxp_help)';
+Zusätzliche Infos finden Sie hier:
+- [Wie werden Erfahrungspunkte berechnet?](https://levelup.plus/docs/article/how-are-experience-points-calculated?ref=blockxp_help)
+- [Fehlerbehebung](https://levelup.plus/docs/article/event-rule-not-working?ref=blockxp_help)';
 $string['eventtime'] = 'Eventzeitpunkt';
+$string['filterbyuser'] = 'Filter nach Person';
 $string['filtermodules'] = 'Filter Module';
 $string['for1day'] = 'Für einen Tag';
 $string['for1month'] = 'Für einen Monat';
@@ -134,20 +137,22 @@ $string['for3days'] = 'Für 3 Tage';
 $string['forever'] = 'Immer';
 $string['forthewholesite'] = 'Für die gesamte Website';
 $string['give'] = 'geben';
-$string['gotofullladder'] = 'Zur kompletten Rangliste';
+$string['gotofullladder'] = 'Zur vollständigen Bestenliste';
 $string['grid'] = 'Raster';
 $string['hideparticipantsidentity'] = 'Identität der Teilnehmer/innen verbergen';
 $string['hiderank'] = 'Rang verbergen';
 $string['incourses'] = 'In Kursen';
 $string['ineffective'] = 'Ineffektiv';
 $string['infos'] = 'Information';
+$string['installed'] = 'Installiert';
 $string['instructions'] = 'Weitere Informationen';
 $string['invalidxp'] = 'Ungültiger Punkte-Wert';
 $string['keeplogs'] = 'Logdaten behalten';
-$string['ladder'] = 'Rangliste';
+$string['ladder'] = 'Bestenliste';
 $string['ladderadditionalcols'] = 'Zusätzliche Spalten';
-$string['ladderadditionalcols_help'] = 'Diese Einstellung legt fest, welche zusätzlichen Spalten in der Übersicht angezeigt werden. Drücken Sie während des Klickens die STRG- oder CMD-Taste, um mehr als eine Spalte auszuwählen, oder um eine ausgewählte Spalte abzuwählen.';
-$string['ladderempty'] = 'Die Rangliste ist zurzeit leer, versuchen Sie es später wieder!';
+$string['ladderadditionalcols_help'] = 'Diese Einstellung bestimmt, welche zusätzlichen Spalten auf der Bestenliste angezeigt werden. Drücken Sie beim Klicken die STRG- oder CMD-Taste, um mehr als eine Spalte auszuwählen oder eine ausgewählte Spalte abzuwählen.';
+$string['ladderempty'] = 'Die Bestenliste ist im Moment leer. Versuchen Sie es später noch einmal!';
+$string['learnmore'] = 'Mehr erfahren';
 $string['level'] = 'Level';
 $string['levelbadges'] = 'Levelabzeichen';
 $string['levelbadgesformhelp'] = 'Benennen Sie die Dateien [level].[file extension], z.B.: 1.png, 2.jpg, etc... Die empfohlene Bildgröße beträgt 100x100.';
@@ -169,11 +174,14 @@ $string['logging'] = 'Log-Einträge';
 $string['manually'] = 'Manuell';
 $string['maxactionspertime'] = 'Max. Aktionen im Zeitrahmen';
 $string['maxactionspertime_help'] = 'Die maximale Anzahl von Aktionen, die während des Zeitrahmens für Punkte gegeben werden. Jede nachfolgende Aktion wird ignoriert. Dies ist ausgeschaltet, wenn dieser Wert leer oder gleich Null ist.';
+$string['maxlevelexcl'] = 'max. Level!';
+$string['menu'] = 'Menü';
+$string['missing'] = 'Fehlend';
 $string['movecondition'] = 'Bedingung verschieben';
 $string['moverule'] = 'Regel verschieben';
 $string['name'] = 'Name';
 $string['navinfos'] = 'Info';
-$string['navladder'] = 'Rangliste';
+$string['navladder'] = 'Bestenliste';
 $string['navlevels'] = 'Level';
 $string['navlevelssetup'] = 'Einstellungen';
 $string['navlog'] = 'Log';
@@ -183,16 +191,21 @@ $string['navreport'] = 'Bericht';
 $string['navrules'] = 'Regeln';
 $string['navsettings'] = 'Einstellungen';
 $string['navvisuals'] = 'Abzeichen';
+$string['nextlevelin'] = 'nächster Level in';
 $string['nodescription'] = 'Keine Beschreibung';
 $string['nologsrecordedyet'] = 'Es wurden bisher noch keine Logdaten aufgezeichnet.';
 $string['noname'] = 'Kein Name';
 $string['notesomesettingslocked'] = 'Beachten Sie, dass manche Einstellungen nicht bearbeitet werden können, wenn sie von einem Administrator gesperrt wurden.';
 $string['occasionally'] = 'Manchmal';
 $string['participant'] = 'Teilnehmer/in';
+$string['participants'] = 'Teilnehmer/innen';
 $string['participatetolevelup'] = 'Beteiligen Sie sich am Kurs, um Erfahrungspunkte zu sammeln und Ihr Level zu verbessern!';
 $string['perpagecolon'] = 'Pro Seite:';
 $string['pickaconditiontype'] = 'Wählen Sie eine Bedingungsart';
+$string['pluginavailabilityxpdesc'] = 'Mit diesem Plugin können Trainer/innen den Zugriff auf Aktivitäten basierend auf dem jeweiligen Level einschränken.';
+$string['pluginenrolxpdesc'] = 'Dieses Plugin ermöglicht die automatische Einschreibung in Kurse basierend auf dem erreichen Level in einem anderen Kurs.';
 $string['pluginname'] = 'Level Up XP';
+$string['pluginshortcodesdesc'] = 'Mit diesem Plugin können Trainer/innen ihr Material anpassen, indem sie XP-bezogene Elemente (Punkte, Level, Bestenliste usw.) in den Kurs aufnehmen und Inhalte basierend auf dem Level verbergen oder anzeigen.';
 $string['pluginsoutofsync'] = '__Die Plugins sind nicht synchronisiert__
 
 Das bedeutet, dass Sie _Level Up XP_ upgegradet haben aber nicht _Level Up XP+_. Obwohl wir unser Bestes tun, um Probleme zu vermeiden, könnten einige Funktionen nicht mehr richtig funktionieren, auch in _Level Up XP_ selbst nicht. Wir empfehlen Ihnen, ein Upgrade _Level Up XP+_ auf die neueste Version zu aktualisieren. [Read more]({$a->url})';
@@ -203,11 +216,11 @@ $string['privacy:metadata:log:eventname'] = 'Name des Ereignisses';
 $string['privacy:metadata:log:time'] = 'Das Datum, an dem es stattfindet';
 $string['privacy:metadata:log:userid'] = 'Person, die die Punkte gewonnen hat';
 $string['privacy:metadata:log:xp'] = 'Punkte, die für das Ereignis vergeben wurden';
-$string['privacy:metadata:prefintro'] = 'Speichert, ob eine Person die Kurzbeschreibung ausgeblendet hat';
-$string['privacy:metadata:prefladderpagesize'] = 'Die vom Nutzer/innen bevorzugte Anzeigengröße der Rangliste';
-$string['privacy:metadata:preflevelup'] = 'Speichert, ob eine Person die Level Up-Benachrichtigung sehen soll';
+$string['privacy:metadata:prefintro'] = 'Speichert, ob die Person die Kurzbeschreibung ausgeblendet hat';
+$string['privacy:metadata:prefladderpagesize'] = 'Die von der Person bevorzugte Anzeigengröße der Bestenliste';
+$string['privacy:metadata:preflevelup'] = 'Speichert, ob die Person die Level Up-Benachrichtigung sehen soll';
 $string['privacy:metadata:prefnotices'] = 'Speichert, ob eine Person die Support-Meldung geschlossen hat';
-$string['privacy:metadata:prefseenpromo'] = 'Speichert, wann eine Person die Promo-Seite angesehen hat';
+$string['privacy:metadata:prefseenpromo'] = 'Speichert, wann die Person die Promo-Seite angesehen hat';
 $string['privacy:metadata:xp'] = 'Speichert Punkte und Level der Nutzer/innen';
 $string['privacy:metadata:xp:lvl'] = 'Level der Person';
 $string['privacy:metadata:xp:userid'] = 'Person';
@@ -234,19 +247,29 @@ $string['property:eventname'] = 'Ereignis-Name';
 $string['property:target'] = 'Ereignis-Aufgabe';
 $string['rank'] = 'Rang';
 $string['ranking'] = 'Einstufung';
-$string['ranking_help'] = 'Der Rang ist die absolute Position des aktuellen Nutzers auf der Rangliste. Der relative Rang ist der Unterschied in Punkten zwischen dem Nutzer und seinen Nachbarn.';
-$string['reallydeleteuserstate'] = 'Das Löschen von Nutzer/innen ist nur hilfreich, um sie aus der Rangliste zu entfernen. Haben Sie andere Gründe, empfehlen wir, die Punkte stattdessen auf 0 zu setzen. Beachten Sie, dass Nutzer/innen unabhängig von der Löschung zukünftig weiter in der Lage sind, Erfahrungspunkte zu sammeln.
+$string['ranking_help'] = 'Der Rang ist die absolute Position einer Person in der Bestenliste. Der relative Rang ist der Unterschied in Punkten zwischen der Person und ihren Nachbarn.';
+$string['reallydeleteuserstate'] = 'Das Löschen einer Person ist nur hilfreich, um sie aus der Bestenliste zu entfernen. Für alle anderen Gründe sollten Sie stattdessen die Punkte auf 0 zu setzen. Beachten Sie, dass Nutzer/innen unabhängig von der Löschung zukünftig weiter Erfahrungspunkte sammeln können.
 
-Wenn Sie _Level Up XP_ für die gesamte Website verwenden, werden die gelöschten Nutzer/innen aus dem Bericht entfernt. In diesem Fall können Sie ihnen keine Punkte neu zuweisen. Wenn Sie jedoch _Level Up XP_ pro Kurs verwenden, werden die Teilnehmer/innen möglicherweise weiterhin im Bericht angezeigt, wenn sie für den Kurs eingeschrieben sind.
+Wenn Sie _Level Up XP_ für die gesamte Website verwenden, werden gelöschte Nutzer/innen aus dem Bericht entfernt und Sie können ihnen keine Punkte neu zuweisen. Wenn Sie jedoch _Level Up XP_ pro Kurs verwenden, werden die Teilnehmer/innen möglicherweise weiterhin im Bericht angezeigt, wenn sie für den Kurs eingeschrieben sind.
 
 Möchten Sie die Punkte dieser Person wirklich löschen?';
+$string['reallydeleteuserstateandlogs'] = 'Das Löschen einer Person entfernt diese aus der Bestenliste und alle zugehörigen Protokolle.
+
+Durch das Entfernen von Protokollen kann eine Person erneut Punkte für frühere Aktionen sammeln. Wenn Sie nur die Punkte zurücksetzen möchten, sollten Sie stattdessen die Punkte auf 0 zu setzen. Beachten Sie, dass das Löschen einer Person nicht ihre Möglichkeit beeinträchtigt, in Zukunft Punkte zu sammeln.
+
+Wichtig: Wenn Sie _Level Up XP_ für die gesamte Website verwenden, wird eine Person durch das Löschen aus dem Bericht verschwinden und Sie können keine Punkte neu zuweisen. Wenn Sie jedoch _Level Up XP_ pro Kurs verwenden, kann die Person trotzdem im Bericht erscheinen, wenn sie für den Kurs eingeschrieben ist.
+
+Möchten Sie die Punkte und Protokolle dieser Person wirklich löschen?';
 $string['reallyresetallcoursestodefaults'] = 'Wirklich alle Kursregeln auf die Standardwerte zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
 $string['reallyresetcourserulestodefaults'] = 'Die Kursregeln wirklich auf die Standardwerte zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.';
 $string['reallyresetdata'] = 'Möchten Sie wirklich alle Level und die Punkte für alle Personen in diesem Kurs zurücksetzen?';
 $string['reallyresetgroupdata'] = 'Möchten Sie wirklich alle Level und die Punkte für alle Personen in dieser Gruppe zurücksetzen?';
 $string['reallyreverttopluginsdefaults'] = 'Wollen Sie die Standardregeln wirklich auf die vom Plugin vorgeschlagenen Standards zurücksetzen? Diese Aktion ist nicht umkehrbar.';
 $string['recentrewards'] = 'Neue Belohnungen';
+$string['recommendedplugins'] = 'Empfohlene Plugins';
 $string['releasenotes'] = 'Release Hinweise';
+$string['remaining'] = 'verbleibend';
+$string['removefilter'] = 'Filter entfernen';
 $string['reportisempty'] = 'Der Bericht enthält keine Daten. Die Teilnehmer/innen müssen erst Erfahrungspunkte sammeln.';
 $string['reportisemptyenrolstudents'] = 'Der Bericht enthält keine Daten. Wurden in diesen Kurs bereits Teilnehmer/innen eingeschrieben?';
 $string['requires'] = 'Benötigt';
@@ -255,6 +278,7 @@ $string['resetallcoursestodefaultsintro'] = 'Klicken Sie auf die Schaltfläche u
 $string['resetcoursedata'] = 'Kursdaten zurücksetzen';
 $string['resetcourserulestodefaults'] = 'Kursregeln auf Standardwerte zurücksetzen';
 $string['resetgroupdata'] = 'Gruppendaten zurücksetzen';
+$string['resultsfilteredforn'] = 'Ergebnisse gefiltert nach {$a}.';
 $string['reverttopluginsdefaults'] = 'Zurück zu den Standardeinstellungen des Plugins';
 $string['reverttopluginsdefaultsintro'] = 'Benutzen Sie die Taste, wenn Sie auf die Standardeinstellungen des Plugins zurücksetzen wollen. Die Regeln in bestehenden Kursen sind davon nicht betroffen.';
 $string['reward'] = 'Belohnung';
@@ -326,33 +350,33 @@ Beachten Sie, dass Trainer/innen oder andere Personen mit Bearbeitungsfunktionen
 `` `
 
 Beachten Sie, dass die Shortcodes KEINE Verschachtelung erlauben.';
-$string['shortcode:xpladder'] = 'Ausschnitt der Rangliste anzeigen';
-$string['shortcode:xpladder_help'] = 'Laut Standardeinstellung wird dem Nutzer ein Ranglisten-Ausschnitt bezogen auf benachbarte Teilnehmer/innen angezeigt.
+$string['shortcode:xpladder'] = 'Teil der Bestenliste anzeigen';
+$string['shortcode:xpladder_help'] = 'Standardmäßig wird ein Teil der Bestenliste rund um die aktuelle Person angezeigt
 
 `` `
 [xpladder]
 `` `
 
-Um die Top 10 anstelle der Ranglistennachbarn der aktuellen Person anzuzeigen, setzen Sie den Parameter `top`. Sie können optional die Anzahl der anzuzeigenden Person wie folgt festlegen: "top = 20".
+Um statt der Nachbarn der aktuellen Person die besten 10 anzuzeigen, setzen Sie den Parameter „top“. Sie können optional die Anzahl der anzuzeigenden Nutzer/innen festlegen, z.B. „top=20“.
 
 `` `
 [xpladder top]
 [xpladder top = 15]
 `` `
 
-Ein Link zur vollständigen Rangliste wird automatisch unter der Tabelle angezeigt. Wenn Sie einen solchen Link nicht anzeigen möchten, fügen Sie das Argument "hidelink" hinzu.
+Ein Link zur vollständigen Bestenliste wird automatisch unter der Tabelle angezeigt. Wenn Sie einen solchen Link nicht anzeigen möchten, fügen Sie das Argument "hidelink" hinzu.
 
 `` `
 [xpladder hidelink]
 `` `
 
-Standardmäßig ist der Bereich in dem der Fortschrittsbalken angezeigt wird, inaktiv. Wurde die Anzeige in den zusätzlichen Spalten in den Ranglisten-Einstellungen ausgewählt, können Sie den Balken mit dem Argument "withprogress" anzeigen.
+Standardmäßig ist der Bereich inaktiv, der den Fortschrittsbalken enthält. Wenn eine solche Spalte als zusätzliche Spalte für die Bestenliste ausgewählt wurde, können Sie den Balken mit dem Argument "withprogress" anzeigen.
 
 `` `
 [xpladder withprogress]
 `` `
 
-Beachten Sie, dass bei Verwendung von Gruppen in einem Kurs die Darstellung, für welche Gruppe die Rangliste angezeigt werden soll, nach dem Prinzip “best guess” programm basiert erfolgt.';
+Beachten Sie bei der Verwendung von Gruppen im Kurs, dass die Darstellung, für welche Gruppe die Rangliste angezeigt werden soll, nach dem Prinzip “best guess” erfolgt.';
 $string['shortcode:xplevelname'] = 'Levelnamen anzeigen';
 $string['shortcode:xplevelname_help'] = 'In der Standardeinstellung zeigt der Tag den Namen der aktuellen Stufe einer Person.
 Alternativ können Sie hier das Argument ’level’ verwenden um den Stufennamen anzuzeigen.
@@ -365,6 +389,7 @@ Alternativ können Sie hier das Argument ’level’ verwenden um den Stufenname
 Wenn das Argument `level` angegeben ist, ohne das die Stufe existiert, wird nichts angezeigt.';
 $string['shortcode:xppoints'] = 'Anzahl von Punkten anzeigen, formatiert als Erfahrungspunkte';
 $string['shortcode:xpprogressbar'] = 'Der Fortschrittsbalken der Person zeigt auf den nächsten Level.';
+$string['somefeaturesrequireotherplugins'] = 'Für einige Funktionen müssen zusätzliche Plugins installiert werden.';
 $string['someoneelse'] = 'Jemand anderes';
 $string['somethinghappened'] = 'Etwas ist passiert';
 $string['taskcollectionloggerpurge'] = 'Sammelprotokolle löschen';
@@ -396,7 +421,8 @@ $string['usingalgo'] = 'Algorithmus verwenden';
 $string['value'] = 'Wert';
 $string['valuessaved'] = 'Die Werte wurden erfolgreich gespeichert.';
 $string['viewas'] = 'Anzeigen als';
-$string['viewtheladder'] = 'Rangliste anzeigen';
+$string['viewlogs'] = 'Protokolle anzeigen';
+$string['viewtheladder'] = 'Bestenliste anzeigen';
 $string['visualsintro'] = 'Bilder hochladen, um die Darstellung der Level anzupassen.';
 $string['wewillreplyat'] = 'Wir wiederholen um: _{$a}_.';
 $string['when'] = 'Wann';

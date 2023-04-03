@@ -32,6 +32,10 @@ $string['allowhiddencourses'] = 'السماح بالمساقات المخفية'
 $string['apipassword_desc'] = 'هل نسيت كلمة مرورك؟ <a title="{$a->title}" href="{$a->url}" target="_blank">تعلم كيفية إعادة تعيينها.</a>';
 $string['apiusername_desc'] = 'مهم: حسابك في Arlo ينبغي تمكين واجهة برمجة التطبيق فيه، <a title="{$a->title}" href="{$a->url}" target="_blank">تعلم المزيد.</a>';
 $string['arlo:synchronizecore'] = 'سحب الموارد الجديدة للنواة يدوياً';
+$string['associatetemplatedanger'] = '<div class="alert alert-danger" role="alert">
+<strong>مهم!</strong>
+<p>هذا من شأنه التعلق بكل حدث أو نشاط متصل بالإنترنت مبني على القالب. هذا لا يشمل الأحداث أو النشاطات المتصلة بالإنترنت التي سبق وأن تمت إضافتها إلى مساق آخر.</p>
+</div>';
 $string['backtoenrolmentmethods'] = 'عودة إلى طرق الانضمام';
 $string['coretask'] = 'مزامنة معلومات نواة Arlo';
 $string['customwelcomemessage_help'] = 'يمكن إضافة رسالة ترحيبية مخصصة بتنسيق عادي أو بتنسيق مودل التلقائي، متضمنة وسوم HTML ووسوم متعدد اللغات.
@@ -66,6 +70,7 @@ $string['error_duplicateusers_fullhtml'] = '<p>تم العثور على مستخ
 <br>
 <p>تم إنشاء حساب جديد لهذا المستخدم.</p>';
 $string['errorselectevent'] = 'ينبغي أن تختار حدثًا';
+$string['errorselectonlineactvity'] = 'ينبغي عليك تحديد نشاط متصل بالإنترنت';
 $string['event'] = 'الحدث';
 $string['eventcreated'] = 'حدث تم إنشاؤه';
 $string['events'] = 'الأحداث';
@@ -74,6 +79,7 @@ $string['firstnamelastnamerandomnumber'] = 'الاسم الأول، الاسم �
 $string['httpstatus:415'] = 'نوع وسائط غير مدعوم';
 $string['messagesent'] = 'تم إرسال الرسالة';
 $string['noeventsoractivitiesfound'] = 'لم يتم العثور على أحداث "نشطة" أو أحداث متصلة بالإنترنت.';
+$string['onlineactivity'] = 'نشاط متصل بالإنترنت';
 $string['platform_desc'] = 'رابط منصة إدارة Arlo \'yourplatform.arlo.co\' (مع استبعاد https:// و /). ليس لديك منصة Arlo؟ <a title="{$a->title}" href="{$a->url}" target="_blank">إبدأ تجربتها مجانًا.</a>';
 $string['privacy:metadata:enrol_arlo_contact:firstname'] = 'الاسم الأول لجهة اتصال Arlo';
 $string['privacy:metadata:enrol_arlo_contact:lastname'] = 'الاسم الأخير لجهة اتصال Arlo';

@@ -49,6 +49,7 @@ $string['customlang:export'] = 'تصدير الترجمة المحلية';
 $string['customlang:view'] = 'معاينة الترجمة المحلية';
 $string['export'] = 'تصدير الجُمل المخصصة';
 $string['exportfilter'] = 'إختر المكونات المزمع تصديرها';
+$string['exportzipfilename'] = 'تصدير-لغة-مخصصة-{$a->lang}.zip';
 $string['filter'] = 'ترشيح النصوص';
 $string['filtercomponent'] = 'إعرض نصوص هذه المكونات';
 $string['filtercustomized'] = 'المخصصة فقط';

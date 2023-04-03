@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['downloadnotavailable'] = 'Impossibile connettersi al server di download. Non è possibile installare o aggiornare automaticamente i language pack. Si prega di scaricare i file ZIP appropriati da <a href="{$a->src}">{$a->src}</a> e decomprimerli manualmente nella cartella dei dati <code>{$a- >dest}</code>';
 $string['install'] = 'Installa i Language Pack selezionati';
 $string['installedlangs'] = 'Language pack installati';
 $string['installfailed'] = 'L\'installazione dei language pack non è andata a buon fine.';
@@ -42,6 +43,7 @@ $string['langpackupdated'] = 'Il language pack \'{$a}\' è stato aggiornato corr
 $string['langpackupdatedevent'] = 'Aggiornamento language pack';
 $string['langpackupdateskipped'] = 'L\'aggiornamento del language pack \'{$a}\' è stato saltato';
 $string['langpackuptodate'] = 'Il language pack \'{$a}\' è già aggiornato';
+$string['langunsupported'] = '<p>Il server non sembra supportare completamente le seguenti lingue:</p><ul>{$a->missinglocales}</ul><p>Verrà utilizzato la localizzazione globale ({$a->globallocale})  per formattare determinate stringhe come date o numeri.</p>';
 $string['langupdatecomplete'] = 'Aggiornamento Language pack completato';
 $string['missingcfglangotherroot'] = 'Manca il valore per la configurazione di $CFG->langotherroot';
 $string['missinglangparent'] = 'Manca il parent language <em>{$a->parent}</em> of <em>{$a->lang}</em>.';
@@ -55,3 +57,4 @@ $string['selectlangs'] = 'Selezionare i language pack da rimuovere';
 $string['uninstall'] = 'Rimuovi i language pack selezionati';
 $string['uninstallconfirm'] = 'Stai per rimuovere i seguenti language pack <strong>{$a}</strong>. Sei sicuro ?';
 $string['updatelangs'] = 'Aggiornamento Language Pack installati';
+$string['updatelangsnote'] = 'L\'aggiornamento di tutti i language pack installati facendo clic sul pulsante può richiedere molto tempo e causare timeout. Si consiglia invece di utilizzare l\'attività pianificata \'{$a->taskname}\' (che viene eseguita ogni giorno per impostazione di default).';

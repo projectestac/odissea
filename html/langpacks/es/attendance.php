@@ -38,7 +38,7 @@ $string['acronym'] = 'Acrónimo';
 $string['add'] = 'Añadir';
 $string['addedrecip'] = 'Añadido {$a} nuevo destinatario';
 $string['addedrecips'] = 'Añadidos {$a} nuevos destinatarios';
-$string['addmultiplesessions'] = 'Añadir varias sesiones';
+$string['addmultiplesessions'] = 'Varias sesiones';
 $string['addsession'] = 'Añadir sesión';
 $string['adduser'] = 'Añadir usuario';
 $string['addwarning'] = 'Añadir aviso';
@@ -52,6 +52,7 @@ $string['attendance:canbelisted'] = 'Aparecer en la lista';
 $string['attendance:changeattendances'] = 'Cambiar asistencias';
 $string['attendance:changepreferences'] = 'Cambiar preferencias';
 $string['attendance:export'] = 'Exportar Informes';
+$string['attendance:import'] = 'Importar sesiones desde archivo (csv)';
 $string['attendance:manageattendances'] = 'Gestionar asistencias';
 $string['attendance:managetemporaryusers'] = 'Gestionar usuarios temporales';
 $string['attendance:takeattendances'] = 'Tomar asistencias';
@@ -59,7 +60,7 @@ $string['attendance:view'] = 'Ver asistencias';
 $string['attendance:viewreports'] = 'Ver informes';
 $string['attendance:viewsummaryreports'] = 'Ver informes de resumen de cursos';
 $string['attendance:warningemails'] = 'Se puede suscribir a correos electrónicos con usuarios ausentes';
-$string['attendance_already_submitted'] = 'Usted no puede cambiar una asistencia que ya ha sido registrada.';
+$string['attendance_already_submitted'] = 'Su asistencia ya ha sido registrada.';
 $string['attendance_no_status'] = 'No se dispone de un estado válido; es posible que sea demasiado tarde para registrar la asistencia.';
 $string['attendancedata'] = 'Datos de asistencia';
 $string['attendancefile'] = 'Archivo de asistencia (formato csv)';
@@ -102,6 +103,7 @@ $string['calmonths'] = 'Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septie
 $string['calshow'] = 'Seleccione fecha';
 $string['calweekdays'] = 'Do,Lu,Ma,Mi,Ju,Vi,Sá';
 $string['cannottakeforgroup'] = 'No puede tomar asistencia para el grupo"{$a}"';
+$string['cannottakethisgroup'] = 'Usted no es miembro del grupo que está asociado a esta sesión, su asistencia no ha sido registrada.';
 $string['cantaddstatus'] = 'Debe establecer un acrónimo y una descripción cuando añade un nuevo estado.';
 $string['categoryreport'] = 'Informe de la categoría del curso';
 $string['changeattendance'] = 'Cambiar asistencia';
@@ -113,8 +115,8 @@ $string['column'] = 'columna';
 $string['columnmap'] = 'Asignación de columnas';
 $string['columnmap_help'] = 'Para cada uno de los campos presentados, seleccione la columna correspondiente en el archivo csv.';
 $string['columns'] = 'columnas';
-$string['commonsession'] = 'Común';
-$string['commonsessions'] = 'Comunes';
+$string['commonsession'] = 'Todos los estudiantes';
+$string['commonsessions'] = 'Todos los estudiantes';
 $string['confirm'] = 'Confirmar';
 $string['confirmcolumnmappings'] = 'Confirmar asignaciones de columnas';
 $string['confirmdeletehiddensessions'] = '¿Está seguro de que quiere eliminar {$a->count} sesiones programadas antes de la fecha de inicio del curso ({$a->date})?';
@@ -127,16 +129,18 @@ $string['courseshortname'] = 'Nombre corto del curso';
 $string['coursesummary'] = 'Informe del resumen del curso';
 $string['createmultiplesessions'] = 'Crear varias sesiones';
 $string['createmultiplesessions_help'] = 'Esta función permite crear sesiones múltiples en un sólo paso.
+Las sesiones empiezan en la fecha de la sesión base y continúan hasta la fecha "Repetir hasta".
 
-  * <strong>Fecha de inicio de sesión</strong>: Seleccione la fecha de inicio de su curso (el primer día de clases)
-  * <strong>Fecha de finalización de sesión</strong>: Seleccione el último día de clases (el último día en el que quiera tomar asistencia).
-  * <strong>Días de la sesión</strong>: Seleccione los días de la semana en los que se dictará clase (por ejemplo, lunes/miércoles/viernes).
-  * <strong>Frecuencia</strong>: Permite configurar la frecuencia. Si su clase se dicta una vez por semana, seleccione 1; si será cada dos semanas, seleccione 2; cada tres semanas, seleccione 3, etc.';
+  * <strong>Repetir los</strong>: Seleccione los días de la semana en los que tendrá clase (por ejemplo, Lunes/Miércoles/Viernes)
+  * <strong>Repetir cada</strong>: Permite ajustar la frecuencia. Si tendrá clase todas las semanas, seleccione 1; si tendrá clase cada dos semanas, seleccione 2; cada 3 semanas, seleccione 3, etc.
+  * <strong>Repetir hasta</strong>: Seleccione el último día de clase (el último día que quiere registrar la asistencia).';
 $string['createonesession'] = 'Crear una sesión para el curso';
 $string['csvdelimiter'] = 'Delimitador CSV';
 $string['currentlyselectedusers'] = 'Usuarios seleccionados';
+$string['customexportfields'] = 'Exportar campos personalizados del perfil de usuario';
+$string['customexportfields_help'] = 'Campos personalizados del perfil de usuario extras para exponer en la exportación del informe.';
 $string['date'] = 'Fecha';
-$string['days'] = 'Hoy';
+$string['days'] = 'Días';
 $string['defaultdisplaymode'] = 'Visualización por defecto';
 $string['defaults'] = 'Por Defecto';
 $string['defaultsessionsettings'] = 'Opciones por defecto de las sesiones';
@@ -148,7 +152,11 @@ $string['defaultsubnet'] = 'Dirección de red predeterminada';
 $string['defaultsubnet_help'] = 'El registro de asistencia se puede restringir a subredes particulares especificando una lista separada por comas de direcciones IP parciales o completas. Este será el valor predeterminado cuando se creen nuevas sesiones.';
 $string['defaultview'] = 'Vista predeterminada al iniciar sesión';
 $string['defaultview_desc'] = 'Vista predeterminada mostrada a los profesores en el primer acceso.';
+$string['defaultwarnings'] = 'Conjunto de advertencias predeterminadas';
+$string['defaultwarningsettings'] = 'Ajustes de advertencias predeterminadas';
+$string['defaultwarningsettings_help'] = 'Estos ajustes definen los predeterminados para todas las nuevas advertencias';
 $string['delete'] = 'Eliminar';
+$string['deletecheckfull'] = '¿Está absolutamente seguro de que desea eliminar por completo el {$a}, incluidos todos los datos de usuario?';
 $string['deletedgroup'] = 'El grupo asociado a esta sesión ha sido eliminado';
 $string['deletehiddensessions'] = 'Eliminar todas las sesiones ocultas';
 $string['deletelogs'] = 'Eliminar datos de asistencia';
@@ -248,12 +256,12 @@ $string['graded'] = 'Sesiones calificadas';
 $string['gridcolumns'] = 'Columnas de la grilla';
 $string['group'] = 'Grupo';
 $string['groups'] = 'Grupos';
-$string['groupsession'] = 'Grupal';
+$string['groupsession'] = 'Grupo de estudiantes';
 $string['groupsessionsby'] = 'Sesiones de grupo por';
 $string['hiddensessions'] = 'Sesiones ocultas';
-$string['hiddensessions_help'] = 'Las sesiones se ocultan si la fecha de inicio de los cursos es posterior a su fecha. Cambie la fecha de inicio del curso y las sesiones ocultas se mostrarán.
+$string['hiddensessions_help'] = 'Las sesiones se ocultan si se programan antes de la fecha de inicio del curso.
 
-Puede usar esta característica para ocultar sesiones antiguas en lugar de eliminarlas. Recuerde que sólo sesiones visibles se usan en el libro de calificaciones.';
+Puede utilizar esta función para ocultar sesiones anteriores en lugar de eliminarlas. Solo las sesiones visibles aparecerán en el libro de calificaciones.';
 $string['hiddensessionsdeleted'] = 'Todas las sesiones ocultas han sido eliminadas';
 $string['hideextrauserdetails'] = 'Ocultar detalles de usuario';
 $string['hidensessiondetails'] = 'Ocultar detalles de la sesión';
@@ -285,7 +293,7 @@ $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este 
 $string['invalidaction'] = 'Debe seleccionar una acción';
 $string['invalidemails'] = 'Debe especificar las direcciones de las cuentas de usuario existentes, no se pudo encontrar: {$a}';
 $string['invalidimportfile'] = 'El formato del fichero no es correcto.';
-$string['invalidsessionenddate'] = 'La fecha de finalización no puede ser anterior a la fecha de inicio';
+$string['invalidsessionenddate'] = 'Esta fecha no puede ser anterior a la fecha de la sesión';
 $string['invalidsessionendtime'] = 'La hora de finalización debe ser mayor que la hora de comienzo';
 $string['invalidstatus'] = 'Ha seleccionado un estado no válido, inténtelo de nuevo.';
 $string['iptimemissing'] = 'Minutos inválidos para liberar';
@@ -333,7 +341,7 @@ $string['noautomark'] = 'Desactivado';
 $string['nocapabilitytotakethisattendance'] = 'Intentaste cambiar la asistencia de una sesión con el cmid: {$a} que no tienes permiso para modificar.';
 $string['nodescription'] = 'Sesión de Clase Normal';
 $string['noeventstoreset'] = 'No hay eventos de calendario que requieran una actualización.';
-$string['nogroups'] = 'No puede incluir sesiones grupales. No existen grupos en este curso.';
+$string['nogroups'] = 'Esta actividad ha sido configurada para el uso de grupos, pero no existen grupos en el curso.';
 $string['noguest'] = 'Los invitados no pueden ver la asistencia';
 $string['noofdaysabsent'] = 'Nº de días de ausencia';
 $string['noofdaysexcused'] = 'Nº de días con faltas justificadas';
@@ -359,8 +367,17 @@ $string['overallsessions_help'] = 'Muestra estadísticas de todas las sesiones, 
      <li><strong>Porcentaje</strong>: porcentaje de puntos otorgados sobre el máximo de puntos posibles para todas las sesiones.</li>
      </ul>';
 $string['oversessionstaken'] = 'Sesiones tomadas en exceso';
+$string['oversessionstaken_help'] = 'Muestra las estadísticas de las sesiones en las que se ha tomado la asistencia:
+     <ul>
+     <li><strong>Sesiones</strong>: número de sesiones ya registradas.</li>
+     <li><strong>Puntos</strong>: puntos otorgados en base a las sesiones registradas.</li>
+     <li><strong>Porcentaje</strong>: porcentaje de puntos obtenidos sobre el máximo de puntos posibles de las sesiones registradas.</li>
+     </ul>';
+$string['pageof'] = 'Página {$a->page} de {$a->numpages}';
 $string['participant'] = 'Participante';
 $string['password'] = 'Contraseña';
+$string['passwordgrp'] = 'Contraseña del estudiante';
+$string['passwordgrp_help'] = 'Si se establece, los estudiantes deberán ingresar esta contraseña antes de que puedan establecer su propio estado de asistencia para la sesión. Si está vacío, no se requiere contraseña.';
 $string['passwordrequired'] = 'Debes indicar la contraseña antes de poder enviar tu asistencia';
 $string['percentage'] = 'Porcentaje';
 $string['percentageallsessions'] = 'Porcentaje sobre todas las sesiones';
@@ -376,6 +393,8 @@ $string['preventsharedip'] = 'Evitar que los estudiantes compartan la dirección
 $string['preventsharedip_help'] = 'Evitar que los estudiantes usen el mismo dispositivo (identificado con la dirección IP) para registrar la asistencia de otros estudiantes.';
 $string['preventsharediptime'] = 'Tiempo para permitir la reutilización de la dirección IP (minutos)';
 $string['preventsharediptime_help'] = 'Permitir que una dirección IP se reutilice para asistir a esta sesión una vez transcurrido este tiempo.';
+$string['preview'] = 'Vista previa del archivo';
+$string['previewhtml'] = 'Vista previa del formato HTML';
 $string['priorto'] = 'La fecha de la sesión es anterior a la fecha de inicio del curso ({$ a}) para que las nuevas sesiones programadas antes de esta fecha se oculten (no accesibles). Puede cambiar la fecha de inicio del curso en cualquier momento (consulte la configuración del curso) para tener acceso a las sesiones anteriores. <br> <br> Por favor cambie la fecha de la sesión o simplemente haga clic en el botón "Añadir sesión" de nuevo para confirmar.';
 $string['privacy:metadata:duration'] = 'Duración de la sesión (en segundos)';
 $string['processingfile'] = 'Procesando archivo';
@@ -426,8 +445,10 @@ $string['requiredentry_help'] = '<p align = "center"> <b> Asistencia </b> </p>
 
 </p>
 <p align = "left"> <strong> El usuario temporal se eliminará en todos los casos después de la acción de combinación </strong> </p>';
-$string['requiresubnet'] = 'Los estudiantes sólo pueden registrar la asistencia propia desde estos ordenadores.';
+$string['requiresubnet'] = 'Se requiere dirección de red';
 $string['requiresubnet_help'] = 'La grabación de asistencia puede restringirse a determinadas subredes especificando una lista separada por comas de direcciones IP parciales o completas.';
+$string['resetcaledarcreate'] = 'Los eventos del calendario han sido habilitados pero algunas sesiones existentes no tienen eventos. ¿Quiere crear eventos de calendario para todas las sesiones existentes?';
+$string['resetcaledardelete'] = 'Los eventos del calendario han sido deshabilitados pero algunas sesiones existentes tienen eventos que deberían ser borrados. ¿Quiere borrar todos los eventos existentes?';
 $string['resetcalendar'] = 'Resetear calendario';
 $string['resetdescription'] = 'Recuerde que eliminando los datos de la asistencia provocará el borrado de información en la base de datos. Usted puede ocultar sesiones anteriores cambiando la fecha de inicio del curso en la zona de administración.';
 $string['resetstatuses'] = 'Reinicar la configuración por defecto';
@@ -435,14 +456,24 @@ $string['restoredefaults'] = 'Restarurar valores por defecto';
 $string['resultsperpage'] = 'Resultados por página';
 $string['resultsperpage_desc'] = 'Número de estudiantes mostrados por página';
 $string['rotateqrcode'] = 'Rotar código QR';
+$string['rotateqrcode_cleartemppass_task'] = 'Tarea para borrar las contraseñas temporales generadas por la funcionalidad de rotación de código QR.';
+$string['rotateqrcodeexpirymargin'] = 'Margen de caducidad para la rotación código QR / contraseña (segundos)';
+$string['rotateqrcodeexpirymargin_desc'] = 'Intervalo de tiempo (segundos) para permitir códigos QR / contraseñas caducados';
+$string['rotateqrcodeinterval'] = 'Intervalo de rotación de código QR / contraseña (segundos)';
+$string['rotateqrcodeinterval_desc'] = 'Intervalo de tiempo (segundos) para rotar el código QR/contraseña';
 $string['save'] = 'Guardar asistencia';
+$string['scantime'] = 'Tiempo de escaneo';
+$string['scantime_help'] = 'Esto permite incluir una marca de tiempo en el archivo de importación: intentará convertir la marca de tiempo pasado usando la función PHP strtotime y luego usará la configuración del estado de asistencia para decidir qué estado establecer para el usuario';
+$string['search:activity'] = 'Asistencia - Información de la actividad';
+$string['selectactivity'] = 'Seleccionar actividad';
 $string['session'] = 'Sesión';
 $string['session_help'] = 'Sesión';
 $string['sessionadded'] = 'Sesión añadida con éxito';
 $string['sessionalreadyexists'] = 'Ya existe una sesión para la fecha indicada';
-$string['sessiondate'] = 'Fecha de la Sesión';
+$string['sessiondate'] = 'Fecha';
 $string['sessiondays'] = 'Días de Sesión';
 $string['sessiondeleted'] = 'Sesión eliminada con éxito';
+$string['sessionduplicate'] = 'Existe una sesión duplicada en el curso: {$a->course} en asistencia: {$a->activity}, {$a->date}';
 $string['sessionexist'] = 'Sesión no añadida (ya existe)';
 $string['sessiongenerated'] = 'Una sesión fue generada correctamente';
 $string['sessions'] = 'Sesiones';
@@ -450,26 +481,26 @@ $string['sessionsallcourses'] = 'Todos los cursos';
 $string['sessionsbyactivity'] = 'instancia de asistencia';
 $string['sessionsbycourse'] = 'Curso';
 $string['sessionsbydate'] = 'Semana';
-$string['sessionscompleted'] = 'Sesiones completadas';
+$string['sessionscompleted'] = 'Sesiones registradas';
 $string['sessionscurrentcourses'] = 'Cursos actuales';
-$string['sessionsgenerated'] = 'Sesiones generadas con éxito';
+$string['sessionsgenerated'] = '{$a} sesiones fueron generadas con éxito';
 $string['sessionsids'] = 'IDs de las sesiones:';
 $string['sessionsnotfound'] = 'No hay sesiones en el rango de tiempo seleccionado';
 $string['sessionstartdate'] = 'Fecha de Inicio de la Sesión';
 $string['sessionstotal'] = 'Número total de sesiones';
 $string['sessionsupdated'] = 'Sesiones actualizadas';
-$string['sessiontype'] = 'Tipo de sesión';
-$string['sessiontype_help'] = 'Hay dos tipos de sesiones: comunes y grupos. La posibilidad de añadir diferentes tipos depende del modo de la actividad de grupo.
+$string['sessiontype'] = 'Tipo';
+$string['sessiontype_help'] = 'Puede agregar sesiones para todos los estudiantes o para un grupo de estudiantes. La capacidad de agregar diferentes tipos depende del modo de grupo de la actividad.
 
-* En modo de grupo "No grupos" sólo puede añadir sesiones comunes.
-* En modo de grupo "Grupos visibles" puede añadir sesiones comunes o de grupo.
-* En modo de grupo "Grupos separados" sólo puede añadir sesiones de grupo.';
+* En el modo de grupo "Sin grupos" puede agregar solo sesiones para todos los estudiantes.
+* En el modo de grupo "Separar grupos" puede agregar solo sesiones para un grupo de estudiantes.
+* En el modo de grupo "Grupos visibles" puedes agregar ambos tipos de sesiones.';
 $string['sessiontypeshort'] = 'Tipo';
 $string['sessionunknowngroup'] = 'Una sesión especifica grupo(s) desconocido(s): {$a}';
 $string['sessionupdated'] = 'Sesión actualizada con éxito';
 $string['set_by_student'] = 'Autograbado';
-$string['setallstatuses'] = 'Actualizar estado para todos los usuarios';
-$string['setallstatusesto'] = 'Pasar el estado de todos los usuarios a «{$a}»';
+$string['setallstatuses'] = 'Actualizar estado para';
+$string['setallstatusesto'] = 'Actualizar estado a «{$a}»';
 $string['setperiod'] = 'Tiempo especificado en minutos para liberar IP';
 $string['settings'] = 'Configuración';
 $string['setunmarked'] = 'Se establece automáticamente cuando no está marcado';
@@ -493,13 +524,13 @@ $string['statuses'] = 'Estados';
 $string['statusset'] = 'Estado establecido {$a}';
 $string['statussetsettings'] = 'Conjunto de estados';
 $string['statusunselected'] = 'no seleccionado';
-$string['strftimedm'] = '%d.%m';
+$string['strftimedm'] = '%b %d';
 $string['strftimedmw'] = '<nobr>%a %b %d</nobr>';
-$string['strftimedmy'] = '%d.%m.%Y';
-$string['strftimedmyhm'] = '%d.%m.%Y %H.%M';
-$string['strftimedmyw'] = '%d.%m.%y (%a)';
+$string['strftimedmy'] = '%d %b %Y';
+$string['strftimedmyhm'] = '%d %b %Y %I.%M%p';
+$string['strftimedmyw'] = '<nobr>%a %d %b %Y</nobr>';
 $string['strftimeh'] = '%I%p';
-$string['strftimehm'] = '%H:%M';
+$string['strftimehm'] = '%I:%M%p';
 $string['strftimeshortdate'] = '%d.%m.%Y';
 $string['studentavailability'] = 'Disponible para estudiantes (minutos)';
 $string['studentavailability_help'] = 'Cuando los estudiantes marcan su propia asistencia, la cantidad de minutos después del inicio de la sesión en que este estado está disponible.

@@ -45,7 +45,7 @@ mm.user.student|Ikaslea|eu
 </pre>
 Kate-identifikatzaileen zerrenda osoa lortzeko, ikusi dokumentazioa.';
 $string['custommenuitems'] = 'Pertsonalizatu menuaren elementuak';
-$string['custommenuitems_desc'] = 'Hemen aplikazioaren menu nagusian elementu gehigarriak gehitu daitezke. Idatzi hemen menu-elementu pertsonalizatu bat errenkada bakoitzean hurrengo formatuarekin: elementuaren testua, URLa, esteka irekitzeko modua eta hizkuntza-kodea (aukerazkoa, elementua hizkuntza zehatz batean soilik erakusteko), marra bertikalez banatuak.
+$string['custommenuitems_desc'] = 'Hemen aplikazioaren menu nagusian elementu gehigarriak gehitu daitezke. Idatzi hemen menu-elementu pertsonalizatu bat errenkada bakoitzean hurrengo formatuarekin: elementuaren testua, URLa, esteka irekitzeko modua eta hizkuntza-kodea (hautazkoa, elementua hizkuntza zehatz batean soilik erakusteko), marra bertikalez banatuak.
 
 Estekak irekitzeko moduak hurrengoak dira: app (aplikazioak onartzen duen jarduera bat estekatzeko), inappbrowser (esteka nabigatzailean irekitzeko aplikaziotik irten gabe), browser (esteka gailuaren lehenetsitako nabigatzailean aplikaziotik kanpo irekitzeko) eta embedded (esteka aplikazioaren orri berri baten barruko iframe batean erakusteko).
 

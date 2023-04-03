@@ -31,6 +31,7 @@ $string['block_global_instance_name'] = 'اسم عَيِّنة مودل';
 $string['block_global_rename_all_folders'] = 'تحديث أسماء كل مجلدات Panopto';
 $string['block_panopto_auto_sync_imports'] = 'إمنح الصلاحيات تلقائيًا عند استيراد المساق';
 $string['block_panopto_auto_sync_imports_desc'] = 'قم بتمكين هذا الخيار لتسمح لـ Panopto بمنح صلاحيات المعاينة تلقائيًا عند استيراد المساق.';
+$string['block_panopto_print_verbose_logs'] = 'طباعة سجلات الوقوعات المسهبة';
 $string['block_panopto_publisher_system_role_mapping'] = 'أدوار النظام مع صلاحيات المنح';
 $string['bulk_rename_single_unnecessary'] = 'لا حاجة إلى إعادة التسمية، المجلد مطابق أصلاً لاسم المساق {$a}';
 $string['bulk_rename_start_renaming'] = 'البدء بتحديث كل أسماء المجلدات';

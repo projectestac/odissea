@@ -47,7 +47,7 @@ $string['deleteselectedusers'] = 'Ezabatu aukeratutako erabiltzaile-matrikulak';
 $string['editselectedusers'] = 'Editatu aukeratutako erabiltzaile-matrikulak';
 $string['enrolenddate'] = 'Amaiera-data';
 $string['enrolenddate_help'] = 'Gaituz gero, erabiltzaileek euren burua soilik data honetara arte matrikulatu dezakete.';
-$string['enrolenddaterror'] = 'Matrikulaziorako amaiera-data ezin da hasierakoa baina lehenagokoa izan';
+$string['enrolenddaterror'] = 'Matrikulazioaren amaiera-data ezin da hasierakoa baina lehenagokoa izan';
 $string['enrolme'] = 'Matrikula nazazu';
 $string['enrolperiod'] = 'Matrikulazioaren iraupena';
 $string['enrolperiod_desc'] = 'Matrikulazioaren iraupen lehenetsia. Zero ezarriz gero, matrikulazioa modu lehenetsian mugarik gabekoa izango da.';
@@ -70,12 +70,12 @@ Beren matrikulazioa luzatzeko, sartu hemen {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Matrikulazio automatikoaren amaieraren jakinarazpena';
 $string['expirynotifyall'] = 'Matrikulatzailea eta matrikulatutako erabiltzailea';
 $string['expirynotifyenroller'] = 'Matrikulatzailea baino ez';
-$string['groupkey'] = 'Erabili taldea matrikulatzeko giltzak';
-$string['groupkey_desc'] = 'Erabili taldea matrikulatzeko giltza modu lehenetsian.';
-$string['groupkey_help'] = 'Matrikulazio-giltza dakitenentzako sarbidea mugatzeaz gain, taldea matrikulatzeko giltzak erabilita erabiltzaileak automatikoki taldeetara gehitu daitezke ikastaroan matrikulatzen direnean.
+$string['groupkey'] = 'Erabili taldea matrikulatzeko gakoak';
+$string['groupkey_desc'] = 'Erabili taldea matrikulatzeko gakoa modu lehenetsian.';
+$string['groupkey_help'] = 'Matrikulazio-gakoa dakitenentzako sarbidea mugatzeaz gain, taldea matrikulatzeko gakoak erabilita erabiltzaileak automatikoki taldeetara gehitu daitezke ikastaroan matrikulatzen direnean.
 
-Oharra: taldeen ezarpenetan taldea matrikulatzeko giltza zehazteaz gain matrikulazio automatikoaren ezarpenetan ikastaroaren matrikulazio-giltza zehaztu behar da.';
-$string['keyholder'] = 'Matrikulazio-giltza hau erabiltzaile honen partetik jaso beharko zenuke:';
+Oharra: taldeen ezarpenetan taldea matrikulatzeko gakoa zehazteaz gain matrikulazio automatikoaren ezarpenetan ikastaroaren matrikulazio-gakoa zehaztu behar da.';
+$string['keyholder'] = 'Matrikulazio-gako hau erabiltzaile honen partetik jaso beharko zenuke:';
 $string['longtimenosee'] = 'Desmatrikulatu parte-hartu gabeko tarte honen ondoren';
 $string['longtimenosee_help'] = 'Erabiltzaileak denbora luzez ikastaroan sartu gabe egonez gero automatikoki desmatrikulatzen dira. Ezarpen honek hori gertatzeko denbora-muga zehazten du.';
 $string['maxenrolled'] = 'Matrikulatutako gehieneko erabiltzaileak';
@@ -85,25 +85,25 @@ $string['messageprovider:expiry_notification'] = 'Matrikulazio automatikoaren ir
 $string['newenrols'] = 'Baimendu matrikula berriak';
 $string['newenrols_desc'] = 'Baimendu ikastaro berrietan erabiltzaileak beren burua matrikulatzea modu lehenetsian.';
 $string['newenrols_help'] = 'Ezarpen honek erabiltzaile batek bere burua ikastaro honetan matrikulatu dezakeen zehazten du.';
-$string['nopassword'] = 'Ez da matrikulazio-giltza behar.';
-$string['password'] = 'Matrikulazio-giltza';
-$string['password_help'] = 'Matrikulazio-giltza batek ikastarorako sarbidea giltza ezagutzen dutenei mugatzea ahalbidetzen du.
+$string['nopassword'] = 'Ez da matrikulazio-gakoa behar.';
+$string['password'] = 'Matrikulazio-gakoa';
+$string['password_help'] = 'Matrikulazio-gako batek ikastarorako sarbidea gakoa ezagutzen dutenei mugatzea ahalbidetzen du.
 
 Eremu hau hutsik utziz gero edonork matrikulatu dezake bere burua.
 
-Matrikulazio-giltza bat zehaztuz gero, matrikulatzen saiatzen den edozein erabiltzaileri giltza eskatuko zaio. Kontuan izan erabiltzaile batek SOILIK BEHIN sartu behar duela giltza, ikastaroan matrikulatzean.';
-$string['passwordinvalid'] = 'Matrikulazio-giltza ez da zuzena, mesedez, saiatu berriro';
-$string['passwordinvalidhint'] = 'Matrikulazio-giltza hori ez da zuzena, mesedez saiatu berriro<br/>
+Matrikulazio-gako bat zehaztuz gero, matrikulatzen saiatzen den edozein erabiltzaileri gakoa eskatuko zaio. Kontuan izan erabiltzaile batek SOILIK BEHIN sartu behar duela gakoa, ikastaroan matrikulatzean.';
+$string['passwordinvalid'] = 'Matrikulazio-gakoa ez da zuzena, mesedez, saiatu berriro';
+$string['passwordinvalidhint'] = 'Matrikulazio-gako hori ez da zuzena, mesedez saiatu berriro<br/>
 (Laguntza txiki bat - honela hasten da: \'{$a}\')';
 $string['pluginname'] = 'Matrikulazio automatikoa';
-$string['pluginname_desc'] = 'Matrikulazio automatikoko pluginak erabiltzaileari parte-hartu nahi duen ikastaroak hautatzeko aukera ematen dio. Ikastaroek matrikulazio-giltza eskatu dezakete. Barrutik matrikulazioa eskuzko matrikulazio gehigarriaren bitartez egiten da, eta beraz gehigarri hori ere ikastaro horretan gaituta egon behar da.';
+$string['pluginname_desc'] = 'Matrikulazio automatikoko pluginak erabiltzaileari parte-hartu nahi duen ikastaroak hautatzeko aukera ematen dio. Ikastaroek matrikulazio-gakoa eskatu dezakete. Barrutik matrikulazioa eskuzko matrikulazio gehigarriaren bitartez egiten da, eta beraz gehigarri hori ere ikastaro horretan gaituta egon behar da.';
 $string['privacy:metadata'] = 'Matrikulazio automatikoa pluginak ez du datu pertsonalik biltzen.';
-$string['requirepassword'] = 'Matrikulazio-giltza behar du';
-$string['requirepassword_desc'] = 'Behartu ikastaro berrietan matrikulazio-giltza izatea eta galarazi matrikulazio-giltza ezabatzea existitzen diren ikastaroetan.';
+$string['requirepassword'] = 'Matrikulazio-gakoa behar du';
+$string['requirepassword_desc'] = 'Behartu ikastaro berrietan matrikulazio-gakoa izatea eta galarazi matrikulazio-gakoa ezabatzea existitzen diren ikastaroetan.';
 $string['role'] = 'Modu lehenetsian esleitutako rola';
 $string['self:config'] = 'Konfiguratu matrikulazio automatikorako instantziak';
 $string['self:enrolself'] = 'Norbera ikastaroan matrikulatzea';
-$string['self:holdkey'] = 'Agertu matrikulazio automatikoaren giltzain gisa';
+$string['self:holdkey'] = 'Agertu matrikulazio automatikoaren gako-zain gisa';
 $string['self:manage'] = 'Kudeatu matrikulatutako erabiltzaileak';
 $string['self:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
 $string['self:unenrolself'] = 'Desmatrikulatu norbera ikastararotik';

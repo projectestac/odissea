@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['additionalinfo'] = 'معلومات إضافية';
 $string['additionallicenseinfo'] = 'أي معلومات إضافية عن الرخصة';
+$string['address'] = 'العنوان';
 $string['back'] = 'رجوع';
 $string['ccpdd'] = 'توجه المجال العام (CC0)';
 $string['ccpdm'] = 'علامة المجال العام (PDM)';
@@ -48,6 +49,7 @@ $string['displayoptionpermissions'] = 'الإظهار فقط إذا كانت ل�
 $string['displayoptionpermissionsembed'] = 'الإظهار فقط إذا كانت للمستخدم صلاحيات تضمين H5P';
 $string['downloadtitle'] = 'تنزيل هذا المحتوى بشكل ملف H5P.';
 $string['editinfotitle'] = 'تحرير معلومات <strong>:title</strong>';
+$string['emailaddress'] = 'عنوان البريد الالكتروني';
 $string['emailconfirmbody'] = 'مرحبًا {$a->username}،
 
 شكرًا لتسليم إجابتك إلى \'{$a->hvpname}\' في المساق \'{$a->coursename}\'.

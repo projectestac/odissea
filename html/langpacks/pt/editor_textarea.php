@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Área de texto simples';
-$string['privacy:metadata'] = 'O módulo de formato de dados Texto simples não armazena quaisquer dados pessoais.';
+$string['privacy:metadata'] = 'O módulo de formato de dados Área de texto simples não armazena quaisquer dados pessoais.';

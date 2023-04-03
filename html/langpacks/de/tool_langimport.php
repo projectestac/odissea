@@ -57,4 +57,4 @@ $string['selectlangs'] = 'Wählen Sie ein Sprachpaket, das deinstalliert werden 
 $string['uninstall'] = 'Ausgewählte Sprachpakete deinstallieren';
 $string['uninstallconfirm'] = 'Möchten Sie die Sprachpakete <strong>\'{$a}\'</strong> wirklich deinstallieren?';
 $string['updatelangs'] = 'Installierte Sprachpakete aktualisieren';
-$string['updatelangsnote'] = 'Das sofortige Aktualisieren aller installierten Sprachpakete kann lange dauern und zu Zeitüberschreitungen führen. Es wird empfohlen, stattdessen die geplante Task \'{$a->taskname}\' zu verwenden, die standardmäßig jeden Tag ausgeführt wird.';
+$string['updatelangsnote'] = 'Das Aktualisieren aller installierten Sprachpakete kann sehr lange dauern und zu Zeitüberschreitungen führen. Es wird empfohlen, nicht das sofortige Aktualisieren durch Drücken der Taste anzustoßen, sondern stattdessen die geplante Task \'{$a->taskname}\' abzuwarten, die standardmäßig einmal am Tag ausgeführt wird.';

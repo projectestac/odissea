@@ -373,7 +373,7 @@ $string['scormtype_help'] = 'Esta configuração define como o Pacote SCORM ser�
 
 * Carregar pacote: Permite selecionar e carregar um pacote SCORM;
 
-* Manifesto externo SCORM: Permite especificar um URL imsmanifest.xml. (Nota: Se o URL tiver um nome de domínio diferente do seu site, então selecione a opção "Descarregar pacote", pois caso contrário as notas não são guardadas.);
+* Manifesto externo SCORM: Permite especificar um URL imsmanifest.xml. (Nota: Se o URL tiver um nome de domínio diferente do seu site, selecione a opção "Descarregar pacote", pois caso contrário as notas não são guardadas.);
 
 * Pacote descarregado: Permite especificar o URL de um pacote. O pacote será descompactado e guardado localmente, e atualizado quando o pacote SCORM externo é atualizado;
 

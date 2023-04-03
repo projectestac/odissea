@@ -13,38 +13,17 @@ $string['capitalize'] = 'Poner la primera letra en mayúsculas';
 $string['capitalizecheckfull'] = '¿Estás seguro/a que quieres poner la primera letra en mayúsculas a los usuarios {$a} ?';
 $string['capitalizenot'] = 'No ha sido posible poner la primera letra en mayúsculas a los usuarios {$a}';
 
-//Message notifications
-$string['now'] = 'ahora';
-$string['second_ago'] = 'hace {$a} segundo';
-$string['seconds_ago'] = 'hace {$a} segundos';
-$string['minute_ago'] = 'hace {$a} minuto';
-$string['minutes_ago'] = 'hace {$a} minutos';
-$string['hour_ago'] = 'hace {$a} hora';
-$string['hours_ago'] = 'hace {$a} horas';
-$string['day_ago'] = 'hace {$a} dia';
-$string['days_ago'] = 'hace {$a} dias';
-$string['month_ago'] = 'hace {$a} mes';
-$string['months_ago'] = 'hace {$a} meses';
-$string['year_ago'] = 'hace {$a} año';
-$string['years_ago'] = 'hace {$a} años';
-
 $string['agora_scripts'] = 'Àgora Scripts';
-
-$string['login_nodes'] = 'Entrar a Nodes';
-$string['mygrades'] = 'Mis calificacions';
-
-$string['mailer'] = 'Mailer';
-$string['apligestmail'] = 'Activa el Mailer';
-$string['mailheader'] = 'Añadir prefijo al asunto';
-$string['apligestlog'] = 'Activa Log';
-$string['apligestlogdebug'] = 'Activa Debug Log';
-$string['apligestlogpath'] = 'Ruta de Log';
-$string['environment_url'] = 'WSDL URL';
-$string['environment_url_desc'] = 'Si está activada, se usará el WSDL para enviar correo, sinó, se usará la url por defecto para en entorno {$a}';
-
+$string['login_nodes'] = 'Entra a Nodes';
 $string['clean_adware'] = 'Limpia Adware';
 $string['detect_adware'] = 'Detecta Adware';
-$string['messagehistoryfull'] = 'Todos los mensajes';
 
 // H5P
-$string['hvpdisabled'] = 'La actividad "HVP - Contenido interactivo" está inhabilitada. Utilitza la actividad H5P en su lugar.';
+$string['hvpdisabled'] = 'La actividad "HVP - Contenido interactivo" está inhabilitada. Utiliza la actividad H5P en su lugar.';
+
+// IDI
+$string['IDI'] = 'IDI';
+$string['codenotinidi'] = 'No puede entrar porque el usuario no tiene informado el código de centro en el IDI.';
+$string['codenotinididetail'] = 'El usuario {$a->username} ({$a->firstname} {$a->lastname}) no tiene informado el código de centro en el IDI. Por este motivo no puede entrar.';
+$string['codenotmatchidi'] = 'No puede entrar porque el código del centro no está incluído en los que el usuario tiene associados en el IDI.';
+$string['codenotmatchididetail'] = 'El código de centro del usuario {$a->username} ({$a->firstname} {$a->lastname}) en el IDI és {$a->code}. Sólo pueden entrar en el Moodle los usuarios con el código de centro {$a->center}.';

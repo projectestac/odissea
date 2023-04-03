@@ -251,6 +251,7 @@ $string['importsessions'] = 'Импортировать занятия';
 $string['includeabsentee'] = 'Включать занятие в отчёт по отсутствующим';
 $string['includeabsentee_help'] = 'Если включен, это занятие будет учтено при формировании отчёта по отсутствующим.';
 $string['includeall'] = 'Включить все занятия';
+$string['includedescription'] = 'Добавить описание занятия в заголовок';
 $string['includenottaken'] = 'Включить не прошедшие занятия';
 $string['includeqrcode'] = 'Включить QR-код';
 $string['includeremarks'] = 'Включить примечания';

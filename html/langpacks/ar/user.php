@@ -25,25 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'أضف شرطاً';
-$string['adverbfor_and'] = 'و';
-$string['adverbfor_andnot'] = 'و';
-$string['adverbfor_or'] = 'أو';
-$string['applyfilters'] = 'تطبيق المرشحات';
-$string['clearfilterrow'] = 'أزل سطر المرشح';
-$string['clearfilters'] = 'إخلاء المرشحات';
-$string['clearfilterselection'] = 'أزل "{$a}" من المرشح';
-$string['countparticipantsfound'] = 'تم العثور على {$a} مشترك';
+$string['addcondition'] = 'إضافة شرط@';
+$string['adverbfor_and'] = 'و@';
+$string['adverbfor_andnot'] = 'و@';
+$string['adverbfor_or'] = 'أو@';
+$string['applyfilters'] = 'تطبيق المرشحات@';
+$string['clearfilterrow'] = 'إزالة صف المرشح@';
+$string['clearfilters'] = 'إخلاء المرشحات@';
+$string['clearfilterselection'] = 'إزالة "{$a}" من المرشح';
+$string['countparticipantsfound'] = 'تم العثور على {$a} من المشتركين';
 $string['filterbykeyword'] = 'كلمة مفتاحية';
-$string['filterrowlegend'] = 'ترشيح {$a}';
-$string['filtersetmatchdescription'] = 'كيفية الربط ما بين عدة مرشحات';
-$string['filtertype'] = 'نوع المنقح';
-$string['match'] = 'مطابق';
-$string['matchofthefollowing'] = 'من الآتي:';
+$string['filterrowlegend'] = 'ترشيح {$a}@';
+$string['filtersetmatchdescription'] = 'كيفية الربط ما بين عدة مرشحات@';
+$string['filtertype'] = 'نوع المرشح@';
+$string['match'] = 'مطابق@';
+$string['matchofthefollowing'] = 'من الآتي:@';
 $string['moodlenetprofile'] = 'مُعرَّف الملف الشخصي لشبكة مودل';
 $string['moodlenetprofile_help'] = 'مُعرَّف حسابك في شبكة مودل يربط ملفك الشخصي في شبكة مودل بهذا الموقع.';
 $string['placeholdertype'] = 'إطبع...';
-$string['placeholdertypeorselect'] = 'إطبع أو إختر...';
+$string['placeholdertypeorselect'] = 'إطبع أو إختر...@';
 $string['privacy:courserequestpath'] = 'المقررات الدراسية المطلوبة';
 $string['privacy:descriptionpath'] = 'وصف الملف الشخصي';
 $string['privacy:devicespath'] = 'أجهزة المستخدم';
@@ -119,7 +119,7 @@ $string['privacy:metadata:sessiontablesummary'] = 'مخزون الجلسة ال�
 $string['privacy:metadata:shortname'] = 'اسم مختصر للمقرر الدراسي';
 $string['privacy:metadata:sid'] = 'مُعرَّف الجلسة';
 $string['privacy:metadata:skype'] = 'مُعرَّف Skype للمستخدم';
-$string['privacy:metadata:state'] = '0 معناها جلسة عادية';
+$string['privacy:metadata:state'] = '0 معناه جلسة عادية';
 $string['privacy:metadata:summary'] = 'وصف المقرر الدراسي';
 $string['privacy:metadata:suspended'] = 'علم لبيان ما إذا تم تعليق حساب المستخدم في هذا النظام';
 $string['privacy:metadata:theme'] = 'تفضيل المستخدم لمظهر العرض';
@@ -148,7 +148,7 @@ $string['privacy:passwordresetpath'] = 'إعادة تعيينات كلمة ال�
 $string['privacy:privatefilespath'] = 'الملفات الخاصة';
 $string['privacy:profileimagespath'] = 'صور الملف الشخصي';
 $string['privacy:sessionpath'] = 'بيانات الجلسة';
-$string['selectfiltertype'] = 'اختر';
+$string['selectfiltertype'] = 'إختر@';
 $string['target:upcomingactivitiesdue'] = 'استحقاقات النشاطات القادمة';
 $string['target:upcomingactivitiesdue_help'] = 'هذا المقصد يقوم بتوليد رسائل تذكير بمواعيد استحقاق النشاطات القادمة.';
 $string['target:upcomingactivitiesdueinfo'] = 'كل رؤى مواعيد استحقاق النشاطات القادمة مدرجة هنا. هؤلاء الطلبة قد تلقوا تلك الرؤى مباشرة.';

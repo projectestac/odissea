@@ -44,7 +44,7 @@ $string['clearpredictions'] = 'Garbitu aurreikuspenak';
 $string['clienablemodel'] = 'Eredu bat gaitu dezakezu analisi-tarte bat bere IDaren bitartez aukeratuta. Kontuan izan beranduago ere gaitu dezakezuela web interfazetik (aukeratu \'bat ere ez\' irteteko).';
 $string['clievaluationandpredictions'] = 'Programatutako ataza gaitutako ereduetan arakatu eta aurreikuspenak lortzen ditu. Web interfaze bidezko ereduen ebaluazioa desgaituta dago. Prozesu hauek web interfazetik eskuz exekutatzea gaitu dezakezu analitiken ezarpenetan <a href="{$a}">\'onlycli\'</a> aukera desgaituta.';
 $string['clievaluationandpredictionsnoadmin'] = 'Programatutako ataza gaitutako ereduetan arakatu eta aurreikuspenak lortzen ditu. Web interfaze bidezko ereduen ebaluazioa desgaituta dago. Guneko kudeatzaileak gaitu dezake aukera hau.';
-$string['component'] = 'Osagarria';
+$string['component'] = 'Osagaia';
 $string['componentcore'] = 'Sistema';
 $string['componentselect'] = 'Aukeratu \'{$a}\' osagaiak eskainitako eredu guztiak';
 $string['componentselectnone'] = 'Bat ere ez aukeratu';

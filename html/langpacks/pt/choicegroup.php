@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:exceeded'] = 'Data de fim ultrapassada.';
 $string['activitydate:hasopened'] = 'Abriu:';
+$string['activitydate:notavailableyet'] = 'Ainda não está disponível.';
 $string['activitydate:willclose'] = 'Fecha:';
 $string['activitydate:willopen'] = 'Abre:';
 $string['add'] = 'Adicionar';
@@ -158,7 +160,7 @@ $string['spacesleft'] = 'vagas disponíveis';
 $string['systemdefault_date'] = 'Padrão do Sistema (data de criação)';
 $string['systemdefault_name'] = 'Padrão do Sistema (nome)';
 $string['taken'] = 'Escolhido';
-$string['the_value_you_entered_is_not_a_number'] = 'O valor inserido não é um número';
+$string['the_value_you_entered_is_not_a_number'] = 'O valor inserido não é um número.';
 $string['timerestrict'] = 'Restringir respostas a este período de tempo';
 $string['viewallresponses'] = 'Ver respostas: [{$a}]';
 $string['withselected'] = 'Com os selecionados';

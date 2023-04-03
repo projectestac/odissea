@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calmonths'] = 'Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre';
+$string['enrolmentsuspended'] = 'Matriculación suspendida';
 $string['session'] = 'Sesión';

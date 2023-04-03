@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+use mod_questionnaire\feedback\section;
+
 defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->dirroot.'/mod/questionnaire/locallib.php');
@@ -1249,22 +1251,22 @@ class questionnaire {
             $this->survey_render($formdata, $formdata->sec, $msg);
             $controlbuttons = [];
             if ($formdata->sec > 1) {
-                $controlbuttons['prev'] = ['type' => 'submit', 'class' => 'btn btn-secondary',
+                $controlbuttons['prev'] = ['type' => 'submit', 'class' => 'btn btn-secondary control-button-prev',
                     'value' => '<< '.get_string('previouspage', 'questionnaire')];
             }
             if ($this->resume) {
-                $controlbuttons['resume'] = ['type' => 'submit', 'class' => 'btn btn-secondary',
-                    'value' => get_string('save', 'questionnaire')];
+                $controlbuttons['resume'] = ['type' => 'submit', 'class' => 'btn btn-secondary control-button-save',
+                    'value' => get_string('save_and_exit', 'questionnaire')];
             }
 
             // Add a 'hidden' variable for the mod's 'view.php', and use a language variable for the submit button.
 
             if ($formdata->sec == $numsections) {
                 $controlbuttons['submittype'] = ['type' => 'hidden', 'value' => 'Submit Survey'];
-                $controlbuttons['submit'] = ['type' => 'submit', 'class' => 'btn btn-primary',
+                $controlbuttons['submit'] = ['type' => 'submit', 'class' => 'btn btn-primary control-button-submit',
                     'value' => get_string('submitsurvey', 'questionnaire')];
             } else {
-                $controlbuttons['next'] = ['type' => 'submit', 'class' => 'btn btn-secondary',
+                $controlbuttons['next'] = ['type' => 'submit', 'class' => 'btn btn-secondary control-button-next',
                     'value' => get_string('nextpage', 'questionnaire').' >>'];
             }
             $this->page->add_to_page('controlbuttons', $this->renderer->complete_controlbuttons($controlbuttons));
@@ -1795,7 +1797,7 @@ class questionnaire {
         $fbsections = $DB->get_records('questionnaire_fb_sections', ['surveyid' => $this->survey->id], 'id');
         foreach ($fbsections as $fbsid => $fbsection) {
             $fbsection->surveyid = $newsid;
-            $scorecalculation = unserialize($fbsection->scorecalculation);
+            $scorecalculation = section::decode_scorecalculation($fbsection->scorecalculation);
             $newscorecalculation = [];
             foreach ($scorecalculation as $qid => $val) {
                 $newscorecalculation[$qidarray[$qid]] = $val;
@@ -1848,7 +1850,11 @@ class questionnaire {
             }
             if (!$this->questions[$questionid]->response_complete($formdata)) {
                 $missing++;
-                $strmissing .= get_string('num', 'questionnaire').$qnum.'. ';
+                $strnum = get_string('num', 'questionnaire').$qnum.'. ';
+                $strmissing .= $strnum;
+                // Pop-up   notification at the point of the error.
+                $strnoti = get_string('missingquestion', 'questionnaire').$strnum;
+                $this->questions[$questionid]->add_notification($strnoti);
             }
             if (!$this->questions[$questionid]->response_valid($formdata)) {
                 $wrongformat++;
@@ -2114,21 +2120,21 @@ class questionnaire {
      */
     private function send_message($info, $eventtype) {
         $eventdata = new \core\message\message();
-        $eventdata->courseid         = $this->course->id;
-        $eventdata->modulename       = 'questionnaire';
-        $eventdata->userfrom         = $info->userfrom;
-        $eventdata->userto           = $info->userto;
-        $eventdata->subject          = $info->postsubject;
-        $eventdata->fullmessage      = $info->posttext;
+        $eventdata->courseid = $this->course->id;
+        $eventdata->modulename = 'questionnaire';
+        $eventdata->userfrom = $info->userfrom;
+        $eventdata->userto = $info->userto;
+        $eventdata->subject = $info->postsubject;
+        $eventdata->fullmessage = $info->posttext;
         $eventdata->fullmessageformat = FORMAT_PLAIN;
-        $eventdata->fullmessagehtml  = $info->posthtml;
-        $eventdata->smallmessage     = $info->postsubject;
+        $eventdata->fullmessagehtml = $info->posthtml;
+        $eventdata->smallmessage = $info->postsubject;
 
-        $eventdata->name            = $eventtype;
-        $eventdata->component       = 'mod_questionnaire';
-        $eventdata->notification    = 1;
-        $eventdata->contexturl      = $info->submissionurl;
-        $eventdata->contexturlname  = $info->name;
+        $eventdata->name = $eventtype;
+        $eventdata->component = 'mod_questionnaire';
+        $eventdata->notification = 1;
+        $eventdata->contexturl = $info->submissionurl;
+        $eventdata->contexturlname = $info->name;
 
         message_send($eventdata);
     }
@@ -2351,10 +2357,10 @@ class questionnaire {
             '&amp;rid='.$rid.'&amp;instance='.$this->id;
 
         // Html and plaintext body.
-        $bodyhtml        = '<a href="'.$url.'">'.$url.'</a>'.$endhtml;
-        $bodyplaintext   = $url.$endplaintext;
-        $bodyhtml       .= get_string('surveyresponse', 'questionnaire') .' "'.$name.'"'.$endhtml;
-        $bodyplaintext  .= get_string('surveyresponse', 'questionnaire') .' "'.$name.'"'.$endplaintext;
+        $bodyhtml = '<a href="'.$url.'">'.$url.'</a>'.$endhtml;
+        $bodyplaintext = $url.$endplaintext;
+        $bodyhtml .= get_string('surveyresponse', 'questionnaire') .' "'.$name.'"'.$endhtml;
+        $bodyplaintext .= get_string('surveyresponse', 'questionnaire') .' "'.$name.'"'.$endplaintext;
 
         $bodyhtml .= $answers['html'];
         $bodyplaintext .= $answers['plaintext'];
@@ -2528,7 +2534,7 @@ class questionnaire {
      * @param string $url
      */
     private function response_goto_saved($url) {
-        global $CFG;
+        global $CFG, $USER;
         $resumesurvey = get_string('resumesurvey', 'questionnaire');
         $savedprogress = get_string('savedprogress', 'questionnaire', '<strong>'.$resumesurvey.'</strong>');
 
@@ -2537,6 +2543,21 @@ class questionnaire {
         $this->page->add_to_page('respondentinfo',
             $this->renderer->homelink($CFG->wwwroot.'/course/view.php?id='.$this->course->id,
                 get_string("backto", "moodle", $this->course->fullname)));
+
+        if ($this->resume) {
+            $message = $this->user_access_messages($USER->id, true);
+            if ($message === false) {
+                if ($this->user_can_take($USER->id)) {
+                    if ($this->questions) { // Sanity check.
+                        if ($this->user_has_saved_response($USER->id)) {
+                            $this->page->add_to_page('respondentinfo',
+                                $this->renderer->homelink($CFG->wwwroot . '/mod/questionnaire/complete.php?' .
+                                    'id=' . $this->cm->id . '&resume=1', $resumesurvey));
+                        }
+                    }
+                }
+            }
+        }
         return;
     }
 
@@ -3820,6 +3841,7 @@ class questionnaire {
                 $oppositeallscore = ' | '.$allscore[1].'%';
             }
             if ($this->survey->feedbackscores) {
+                $table = $table ?? new html_table();
                 if ($compare) {
                     $table->data[] = array($sectionlabel, $score[0].'%'.$oppositescore, $allscore[0].'%'.$oppositeallscore);
                 } else {
@@ -3861,7 +3883,7 @@ class questionnaire {
             foreach ($fbsections as $key => $fbsection) {
                 if ($fbsection->section == $section) {
                     $feedbacksectionid = $key;
-                    $scorecalculation = unserialize($fbsection->scorecalculation);
+                    $scorecalculation = section::decode_scorecalculation($fbsection->scorecalculation);
                     if (empty($scorecalculation) && !is_array($scorecalculation)) {
                         $scorecalculation = [];
                     }
@@ -3948,24 +3970,28 @@ class questionnaire {
             default:
         }
 
-        foreach ($allscore as $key => $sc) {
-            if (isset($chartlabels[$key])) {
-                $lb = explode("|", $chartlabels[$key]);
-                $oppositescore = '';
-                $oppositeallscore = '';
-                if (count($lb) > 1) {
-                    $sectionlabel = $lb[0] . ' | ' . $lb[1];
-                    $oppositescore = ' | ' . $oppositescorepercent[$key] . '%';
-                    $oppositeallscore = ' | ' . $alloppositescorepercent[$key] . '%';
-                } else {
-                    $sectionlabel = $chartlabels[$key];
-                }
-                // If all questions of $section are unseen then don't show feedbackscores for this section.
-                if ($compare && !is_nan($scorepercent[$key])) {
-                    $table->data[] = array($sectionlabel, $scorepercent[$key] . '%' . $oppositescore,
-                        $allscorepercent[$key] . '%' . $oppositeallscore);
-                } else if (isset($allscorepercent[$key]) && !is_nan($allscorepercent[$key])) {
-                    $table->data[] = array($sectionlabel, $allscorepercent[$key] . '%' . $oppositeallscore);
+        if ($this->survey->feedbackscores) {
+            foreach ($allscore as $key => $sc) {
+                if (isset($chartlabels[$key])) {
+                    $lb = explode("|", $chartlabels[$key]);
+                    $oppositescore = '';
+                    $oppositeallscore = '';
+                    if (count($lb) > 1) {
+                        $sectionlabel = $lb[0] . ' | ' . $lb[1];
+                        $oppositescore = ' | ' . $oppositescorepercent[$key] . '%';
+                        $oppositeallscore = ' | ' . $alloppositescorepercent[$key] . '%';
+                    } else {
+                        $sectionlabel = $chartlabels[$key];
+                    }
+                    // If all questions of $section are unseen then don't show feedbackscores for this section.
+                    if ($compare && !is_nan($scorepercent[$key])) {
+                        $table = $table ?? new html_table();
+                        $table->data[] = array($sectionlabel, $scorepercent[$key] . '%' . $oppositescore,
+                            $allscorepercent[$key] . '%' . $oppositeallscore);
+                    } else if (isset($allscorepercent[$key]) && !is_nan($allscorepercent[$key])) {
+                        $table = $table ?? new html_table();
+                        $table->data[] = array($sectionlabel, $allscorepercent[$key] . '%' . $oppositeallscore);
+                    }
                 }
             }
         }
@@ -3979,9 +4005,19 @@ class questionnaire {
         }
 
         if ($usergraph && $this->survey->chart_type) {
-            $this->page->add_to_page('feedbackcharts',
-                draw_chart($feedbacktype = 'sections', array_values($chartlabels), $groupname,
-                    $allresponses, $this->survey->chart_type, array_values($scorepercent), array_values($allscorepercent), $sectionlabel));
+            $this->page->add_to_page(
+                'feedbackcharts',
+                draw_chart(
+                    'sections',
+                    array_values($chartlabels),
+                    $groupname,
+                    $allresponses,
+                    $this->survey->chart_type,
+                    array_values($scorepercent),
+                    array_values($allscorepercent),
+                    $sectionlabel
+                )
+            );
         }
         if ($this->survey->feedbackscores) {
             $this->page->add_to_page('feedbackscores', html_writer::table($table));
@@ -4007,7 +4043,7 @@ class questionnaire {
         global $DB, $CFG; // Do not delete "$CFG".
 
         $ret = [];
-        $response = $this->build_response_from_appdata($responses, $sec);
+        $response = $this->build_response_from_appdata((object) $responses, $sec);
         $response->sec = $sec;
         $response->rid = $rid;
         $response->id = $rid;

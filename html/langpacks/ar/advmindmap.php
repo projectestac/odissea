@@ -64,3 +64,4 @@ $string['errornostudentincourse'] = 'لا يوجد طلاب في هذا المق
 $string['errornotingroup'] = 'هذه خريطة ذهنية جماعية ولكنك لستَ ضمن أي مجموعة ولا تمتلك صلاحية معاينة الخرائط الذهنية لمجموعات الآخرين.';
 $string['eventmindmapunlocked'] = 'خارطة ذهنية أُلغيَ تأمينها';
 $string['eventmindmapupdated'] = 'خارطة ذهنية تم تحديثها';
+$string['print'] = 'طباعة:';

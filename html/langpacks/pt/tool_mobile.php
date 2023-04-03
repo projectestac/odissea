@@ -67,7 +67,7 @@ $string['downloadcourses'] = 'Descarregar disciplinas';
 $string['enablesmartappbanners'] = 'Ativar App Banners';
 $string['enablesmartappbanners_desc'] = 'Se ativar esta opção, fará aparecer um banner a promover a Aplicação móvel Moodle ao visitar o site no browser do dispositivo móvel.';
 $string['filetypeexclusionlist'] = 'Lista de exclusão de tipos de ficheiro';
-$string['filetypeexclusionlist_desc'] = 'Selecione todos os tipos de ficheiro que não podem ser usados na Aplicação móvel. Estes ficheiros continuarão listados na disciplina mas se o utilizador tentar abri-los, será mostrado um aviso a indicar que não estão disponíveis para o uso em dispositivos móveis. O utilizador poderá cancelar a ação ou ignorar o aviso e abrir mesmo assim.';
+$string['filetypeexclusionlist_desc'] = 'Selecionar todos os tipos de ficheiro que não podem ser usados na Aplicação móvel. Estes ficheiros continuarão listados na disciplina mas se o utilizador tentar abri-los, será mostrado um aviso a indicar que não estão disponíveis para o uso em dispositivos móveis. O utilizador poderá cancelar a ação ou ignorar o aviso e abrir mesmo assim.';
 $string['filetypeexclusionlistplaceholder'] = 'Lista de exclusão de tipos de ficheiro da Aplicação móvel';
 $string['forcedurlscheme'] = 'Se pretende permitir que apenas a sua Aplicação móvel Moodle Personalizada seja aberta numa janela do navegador, especifique o esquema de URL aqui. Se pretende permitir apenas a Aplicação móvel oficial, defina o valor predefinido. Deixe o campo em branco se pretende permitir qualquer aplicação.';
 $string['forcedurlscheme_key'] = 'Esquema de URL';
@@ -148,5 +148,5 @@ $string['subscriptionregister'] = 'Para obter detalhes dos vários planos da apl
 $string['subscriptionsseemore'] = 'Nota: As informações exibidas não são atualizadas em tempo real. Pode ser necessário sair e autenticar-se novamente para ver as atualizações. Para obter informações sobre como atualizar o seu plano da aplicação, visite e autentique-se no <a href="{$a}" target="_blank">Portal das Aplicações móveis Moodle</a>.';
 $string['switchaccount'] = 'Mudar de conta';
 $string['typeoflogin'] = 'Tipo de autenticação';
-$string['typeoflogin_desc'] = 'Se o site usa um método de autenticação SSO, selecione através de uma janela do navegador ou através de um navegador incorporado. Um navegador incorporado fornece uma melhor experiência ao utilizador, embora não funcione com todos os plugins SSO.';
+$string['typeoflogin_desc'] = 'Se o site usa um método de autenticação SSO, selecione através de uma janela do navegador ou através de um navegador incorporado. Um navegador incorporado fornece uma melhor experiência ao utilizador, embora não funcione com todos os módulos SSO.';
 $string['viewqrcode'] = 'Ver código QR';

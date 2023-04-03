@@ -620,6 +620,7 @@ $string['use_individual_help'] = 'Override global group size with individual val
 $string['use_queue'] = 'Use queues';
 $string['use_queue_help'] = 'Students can queue up for already full groups. This setting can only be used if self registration is enabled and a group size limit is set.';
 $string['use_size'] = 'Activate';
+$string['user'] = 'User';
 $string['user_has_too_less_regs'] = 'Deregistration/dequeue not possible because <strong>{$a->username}</strong> is registered/queued in too less groups!';
 $string['user_is_deleted'] = 'The found user-account (ID <strong>{$a->id}</strong>, Name <strong>{$a->fullname}</strong>) is already deleted. Therefore enrolment in this course isn\'t possible.';
 $string['user_move_prev'] = '<strong>{$a->user}</strong> will be moved from the queue of group <strong>{$a->from_group}</strong> to group <strong>{$a->to_group}</strong>!';

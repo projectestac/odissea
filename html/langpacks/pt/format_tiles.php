@@ -400,4 +400,5 @@ $string['usesubtilesseczero'] = 'Usar sub-mosaicos na secção de topo';
 $string['usesubtilesseczero_help'] = 'Se ativar esta opção, na secção de topo da disciplina serão usados sub-mosaicos, bem como em todos os mosaicos. Apenas disponível se usar sub-mosaicos em toda a disciplina. Uma vez que os sub-mosaicos ocupam muito espaço no topo da disciplina, talvez seja melhor não ativar para que todos os itens da secção de topo possam ser mostrados no formato de lista normal.';
 $string['usetooltips'] = 'Usar dicas do JavaScript';
 $string['usetooltips_desc'] = 'Usar dicas do JavaScript quando o utilizador passa o rato sobre determinados itens, por exemplo, caixas de conclusão, mosaicos de conteúdos, etc.';
+$string['warningcompatibility'] = 'Peça a um administrador do site para atualizar o módulo do formato de disciplina Mosaicos. Não é compatível com esta versão do Moodle.';
 $string['width'] = 'largura';

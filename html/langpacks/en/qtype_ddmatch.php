@@ -33,3 +33,4 @@ $string['pluginname_link'] = 'question/type/ddmatch';
 $string['pluginnameadding'] = 'Adding Drag-and-Drop Matching Question';
 $string['pluginnameediting'] = 'Editing Drag-and-Drop Matching Question';
 $string['pluginnamesummary'] = 'An extension of the matching question that allows the user to drag and drop items to match answers to subquestions.';
+$string['privacy:metadata'] = 'The question type ddmatch plugin does not store any personal data';

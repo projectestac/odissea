@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['confirmcolumnmappings'] = 'Confirmar as asignacións de columna';
+$string['exportnavlink'] = 'Exportar marco de competencia';
+$string['pluginname'] = 'Importar marco de competencia';

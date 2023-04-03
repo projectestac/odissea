@@ -77,6 +77,7 @@ $string['question_select_without'] = 'بدون';
 $string['rotateleft'] = 'در 90 درجة إلى اليسار';
 $string['rotateright'] = 'در 90 درجة إلى اليمين';
 $string['student_answer_lib'] = 'الإجابة';
+$string['typetool_commentplus'] = 'إطار تعليق متقدم';
 $string['typetool_highlightplus'] = 'تسليط الضوء مع التعليق';
 $string['typetool_stampplus'] = 'الختم مع النص المخصص';
 $string['typetool_verticalline'] = 'الخط العمودي مع التعليق';

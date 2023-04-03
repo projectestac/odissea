@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['NoJavaScript'] = '<p style="text-align:center">عذرًا، هذه الميزة تعتمد على Javascript، والذي تم تعطيله عندك.</p>';
+$string['ad'] = 'العنوان';
 $string['back'] = 'عودة إلى إعدادات الكتلة';
 $string['descdefaults'] = 'الإعدادات الآتية تعرِّف القيم الافتراضية لحقول الملف الشخصي الباقية.';
 $string['descscou'] = 'هذه القيمة تصير إفتراضية لحقل البلد في مودل';

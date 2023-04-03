@@ -22,8 +22,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Choice conversion handler
  */
@@ -70,9 +68,9 @@ class moodle1_mod_questionnaire_handler extends moodle1_mod_handler {
     public function process_questionnaire($data) {
         // Get the course module id and context id.
         $instanceid = $data['id'];
-        $cminfo     = $this->get_cminfo($instanceid);
-        $moduleid   = $cminfo['id'];
-        $contextid  = $this->converter->get_contextid(CONTEXT_MODULE, $moduleid);
+        $cminfo = $this->get_cminfo($instanceid);
+        $moduleid = $cminfo['id'];
+        $contextid = $this->converter->get_contextid(CONTEXT_MODULE, $moduleid);
 
         // We now have all information needed to start writing into the file.
         $this->open_xml_writer("activities/questionnaire_{$moduleid}/questionnaire.xml");

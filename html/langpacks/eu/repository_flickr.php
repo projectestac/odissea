@@ -25,15 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'API giltza';
+$string['apikey'] = 'API gakoa';
 $string['callbackurl'] = 'Atzera deiaren URLa';
 $string['callbackurltext'] = '<ol>
-<li>Bisitatu<a href="http://www.flickr.com/services/api/keys/">Flickr API giltzak</a> berriz. </li>
-<li>Ziurtatu ezazu  atzera deiaren URLaren ezarpena Flickr-en giltza bezala<strong>{$a}</strong></li></ol>';
+<li>Bisitatu<a href="http://www.flickr.com/services/api/keys/">Flickr API gakoak</a> berriz. </li>
+<li>Ziurtatu ezazu  atzera deiaren URLaren ezarpena Flickr-en gakoa bezala<strong>{$a}</strong></li></ol>';
 $string['callbackwarning'] = '<ol>
 <li>Lortu <a href="http://www.flickr.com/services/api/keys/">Flickr API Key and Secret</a> zure Moodle gunerako.</li>
 <li>Idatzi datu horiek hemen, ondoren egin klik Gorde botoian hona bueltatzeko eta gero egin klik Ezarpenak botoian. Moodlek zuretzako atzera deiaren URL bat sortu duela ikusiko duzu.</li>
-<li>Editatu zure <a href="http://www.flickr.com/services/api/keys/">Flickr</a> giltzaren zehaztasunak bertan atzera deiaren URLa zehazteko</li>
+<li>Editatu zure <a href="http://www.flickr.com/services/api/keys/">Flickr</a> gakoaren zehaztasunak bertan atzera deiaren URLa zehazteko</li>
 <li>Editatu zure <a href="http://www.flickr.com/services/api/keys/">Flickr</a> gakoaren xehetasunak berriz ere eta ezarri bertan atzera deiaren URLa.</li>
 </ol>';
 $string['configplugin'] = 'Flickr ezarpenak';

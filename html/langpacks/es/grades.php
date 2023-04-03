@@ -410,7 +410,7 @@ $string['importcsv'] = 'Importar CSV';
 $string['importcsv_help'] = 'Es posible importar calificaciones desde un archivo CSV con el siguiente formato:
 
 * Cada línea del archivo contiene un registro
-* Cada registro es una serie de datos separados por comas o un separador alternativo
+* Cada registro es una serie de datos separados por el separador seleccionado
 * El primer registro contiene una lista de nombres de campo definiendo el formato del resto del archivo
 * Es necesario que uno de los campos identifique al usuario - nombre de usuario o número de ID o dirección de correo
 
@@ -610,6 +610,7 @@ $string['outcomescoursecustom'] = 'Uso personal (no quitar)';
 $string['outcomescoursenotused'] = 'Estándar no usado';
 $string['outcomescourseused'] = 'Usado estándar (no quitar)';
 $string['outcomescustom'] = 'Resultados personalizados';
+$string['outcomesdisabled'] = 'Los resultados no estan habilitados';
 $string['outcomeshortname'] = 'Nombre corto';
 $string['outcomesstandard'] = 'Resultados estándar';
 $string['outcomesstandardavailable'] = 'Resultados estándar disponibles';

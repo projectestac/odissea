@@ -573,6 +573,7 @@ $string['outcomescoursecustom'] = 'Personalizzati (non rimuovere)';
 $string['outcomescoursenotused'] = 'Standard non usati';
 $string['outcomescourseused'] = 'Standard (non rimuovere)';
 $string['outcomescustom'] = 'Obiettivi personalizzati';
+$string['outcomesdisabled'] = 'Gli obiettivi non sono abilitati';
 $string['outcomeshortname'] = 'Nome abbreviato';
 $string['outcomesstandard'] = 'Obiettivi standard';
 $string['outcomesstandardavailable'] = 'Obiettivi standard disponibili';

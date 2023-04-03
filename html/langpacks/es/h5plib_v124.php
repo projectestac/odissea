@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['editor:add'] = 'Agregar';
 $string['editor:addauthor'] = 'Guardar autor';
-$string['editor:addentity'] = 'Agregar :entidad';
+$string['editor:addentity'] = 'Agregar :entity';
 $string['editor:addfile'] = 'Agregar archivo';
 $string['editor:addnewchange'] = 'Agregar nuevo cambio';
 $string['editor:addtitle'] = 'Agregar titulo';

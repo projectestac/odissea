@@ -33,7 +33,7 @@ $string['errordataroot'] = 'CFG->behat_dataroot no està configurada o és invà
 $string['errorsetconfig'] = 'Cal establir les variables $CFG->behat_dataroot, $CFG->behat_prefix i $CFG->behat_wwwroot al fitxer config.php.';
 $string['erroruniqueconfig'] = 'Cal que els valors de les variables $CFG->behat_dataroot, $CFG->behat_prefix i $CFG->behat_wwwroot siguin diferents als valors de  $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot i $CFG->phpunit_prefix.';
 $string['fieldvalueargument'] = 'Arguments del valor del camp';
-$string['fieldvalueargument_help'] = 'Aquest argument ha de ser completat per un valor de camp; hi ha molts tipus de camp: els simples, com ara caselles de verificació, selecciona o àrees de text, o els complexos, com ara selectors de dades. Podeu anar a els <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Valors de camp</a> per veure el valor del camp esperat en funció del tipus de camp que  proporcioneu.';
+$string['fieldvalueargument_help'] = 'Aquest argument ha de ser completat per un valor de camp. Hi ha molts tipus de camp: els simples, com ara caselles de verificació, selecciona o àrees de text, o els complexos, com ara els selectors de dades. Per a tenir més detalls sobre els valors de camp esperats, vegeu la documentació de desenvolupament <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a>.';
 $string['giveninfo'] = 'Donat. Processos per configurar l\'entorn.';
 $string['infoheading'] = 'Informació';
 $string['installinfo'] = 'Llegeix {$a} per la instal·lació i la informació de les proves d\'execució.';

@@ -44,7 +44,7 @@ $string['invalidnumbernounit'] = 'Zenbaki baliagarria idatzi behar duzu. Ez sart
 $string['invalidnumericanswer'] = 'Sartu dituzun erantzunetako bat ez da zenbaki baliagarria.';
 $string['invalidnumerictolerance'] = 'Sartu dituzun tolerantzietako bat ez da zenbaki baliagarria.';
 $string['leftexample'] = 'ezkerrean, adibidez $1.00 edo £1.00';
-$string['manynumerical'] = 'Unitateak aukerakoak dira. Unitatea sartuz gero, erantzunak 1. Unitatera bihurtzeko erabiltzen da kalifikatu aurretik.';
+$string['manynumerical'] = 'Unitateak hautazkoak dira. Unitatea sartuz gero, erantzunak 1. Unitatera bihurtzeko erabiltzen da kalifikatu aurretik.';
 $string['multiplier'] = 'Biderkatzailea';
 $string['nominal'] = 'Nominala';
 $string['noneditableunittext'] = 'Editatu EZIN den testua 1. Unitaterako';
@@ -74,7 +74,7 @@ $string['privacy:preference:multichoicedisplay'] = 'Unitateak testu-eremu gisa, 
 $string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
 $string['privacy:preference:unitgradingtypes'] = 'Unitatearen penalizazioa erantzunaren kalifikazioaren zatiki gisa (0-1) edo galderaren kalifikazioaren zatiki gisa aplikatuko den.';
 $string['privacy:preference:unitpenalty'] = 'Erantzunaren edo galderen zein zatiki aplikatuko da?';
-$string['privacy:preference:unitrole'] = 'Unitatea beharrezkoa, aukerazkoa edo desgaituta egongo den.';
+$string['privacy:preference:unitrole'] = 'Unitatea beharrezkoa, hautazkoa edo desgaituta egongo den.';
 $string['privacy:preference:unitsleft'] = 'Unitatea ezkerrean (esaterako $ edo £) edo eskuinean (esaterako kg. edo km.) erakutsiko den.';
 $string['relative'] = 'Erlatiboa';
 $string['rightexample'] = 'eskuinean, adibidez 1.00cm edo 1.00km';
@@ -95,7 +95,7 @@ $string['unitmandatory_help'] = '* Erantzuna idatzitako unitatea erabilita kalif
 * Unitatearen penalizazioa aplikatuko da unitatearen eremua hutsik utziz gero.';
 $string['unitnotselected'] = 'Unitatea aukeratu behar duzu.';
 $string['unitonerequired'] = 'Gutxienez unitate bat zehaztu behar duzu';
-$string['unitoptional'] = 'Aukerako unitatea';
+$string['unitoptional'] = 'Hautazko unitatea';
 $string['unitoptional_help'] = '* Unitatearen eremua hutsik ez badago, erantzuna unitate hori erabilita kalifikatuko da.
 
 * Unitatea gaizki idatzita badago edo ezezaguna bada, erantzuna baliogabekotzat hartuko da.';

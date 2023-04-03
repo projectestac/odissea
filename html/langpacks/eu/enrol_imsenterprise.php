@@ -81,7 +81,7 @@ $string['settingfullnamedescription'] = 'Izen osoa ikastaroaren beharrezko eremu
 $string['settingshortname'] = 'IMS deskribapen-etiketa ikastaroaren izen laburrerako';
 $string['settingshortnamedescription'] = 'Izen laburra ikastaroaren beharrezko eremua da eta beraz zure IMS Enterprise fitxategiko description etiketan definitu behar duzu';
 $string['settingsummary'] = 'IMS deskribapen-etiketa ikastaroaren laburpenerako';
-$string['settingsummarydescription'] = 'Aukerazko eremua da , aukeratu \'Utzi hutsik\' ez baduzu ikastaroaren laburpena zehaztu nahi.';
+$string['settingsummarydescription'] = 'Hautazko eremua da , aukeratu \'Utzi hutsik\' ez baduzu ikastaroaren laburpena zehaztu nahi.';
 $string['sourcedidfallback'] = 'Erabili \'sourcedid\'-a erabiltzaile baten erabiltzaile-ID gisa bere "userid" eremua aurkitzen ez bada';
 $string['sourcedidfallback_desc'] = 'IMS datuetan, <sourcedid> eremuak jatorrizko sisteman pertsona batentzako ID kode iraunkorra irudikatzen du. <userid> eremua beste eremu bat da eta sartzera zoazen sistemarako ID kodea eduki beharko luke. Kasu askotan bi kode hauek berdinak izango dira - baina ez beti.
 

@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activate'] = 'أتريد تفعيل Poodll؟';
+$string['advancedsettings'] = 'إعدادات متقدمة';
 $string['cameraback'] = 'رجوع';
 $string['credentialsinvalid'] = 'تعذر استعمال اسم المستخدم وكلمة السر المدخلان لواجهة برمجة التطبيق من أجل الدخول. يرجى التحقق منهما.';
 $string['defaultwhiteboard'] = 'السبورة الافتراضية';
@@ -47,6 +48,7 @@ $string['recui_time'] = 'الوقت:';
 $string['recui_timeouterror'] = 'انتهت مهلة الطلب. عذراً.';
 $string['recui_waitwaitstilluploading'] = 'لا زال ملفك قيد الرفع. هل ترغب حقًا في ترك هذه الصفحة؟';
 $string['registrationkey_explanation'] = 'أدخل مفتاح تسجيلك في Poodll هنا فقط إذا لم يسبق لك إدخال مفتاح واجهة برمجة التطبيق وكلمة السر أعلاه. يمكنك الحصول عليهما من <a href=\'https://poodll.com/pricing\'>https://poodll.com/pricing</a>';
+$string['servername'] = 'عنوان مخدم Poodll Red5';
 $string['sitedefault'] = 'إفتراضي الموقع';
 $string['size'] = 'الحجم';
 $string['supportinfo'] = 'معلومات الدعم';

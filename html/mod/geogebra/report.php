@@ -28,9 +28,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
-require_once(dirname(__FILE__).'/locallib.php');
-
+require_once(dirname(__DIR__, 2) . '/config.php');
+require_once(__DIR__ . '/locallib.php');
 
 $id = optional_param('id', 0, PARAM_INT); // course_module ID, or
 
@@ -39,7 +38,7 @@ if ($id) {
     $course     = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST);
     $geogebra  = $DB->get_record('geogebra', array('id' => $cm->instance), '*', MUST_EXIST);
 } else {
-    print_error('You must specify a course_module ID or an instance ID');
+    throw new \moodle_exception('You must specify a course_module ID or an instance ID');
 }
 
 require_login($course, true, $cm);

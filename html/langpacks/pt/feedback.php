@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add_item'] = 'Adicionar uma pergunta';
+$string['add_item'] = 'Adicionar uma questão';
 $string['add_pagebreak'] = 'Adicionar quebra de página';
 $string['adjustment'] = 'Disposição';
 $string['after_submit'] = 'Após submissão';
@@ -35,9 +35,9 @@ $string['anonymous'] = 'Anónimo';
 $string['anonymous_edit'] = 'Guardar nomes dos utilizadores';
 $string['anonymous_entries'] = 'Respostas anónimas ({$a})';
 $string['anonymous_user'] = 'Utilizador anónimo';
-$string['answerquestions'] = 'Responder às perguntas';
+$string['answerquestions'] = 'Responder às questões';
 $string['append_new_items'] = 'Acrescentar novos itens';
-$string['autonumbering'] = 'Numerar as perguntas automaticamente';
+$string['autonumbering'] = 'Numerar as questões automaticamente';
 $string['autonumbering_help'] = 'Ativa ou desativa a numeração automática das questões';
 $string['average'] = 'Média';
 $string['bold'] = 'Negrito';
@@ -53,7 +53,7 @@ $string['checkbox'] = 'Escolha múltipla - são permitidas múltiplas respostas 
 $string['choosefile'] = 'Selecionar ficheiro';
 $string['chosen_feedback_response'] = 'Resposta escolhida do Inquérito';
 $string['closebeforeopen'] = 'Especificou uma data de fim anterior à data de início.';
-$string['complete_the_form'] = 'Responder às perguntas';
+$string['complete_the_form'] = 'Responder às questões';
 $string['completed'] = 'Concluído';
 $string['completed_feedbacks'] = 'Respostas submetidas';
 $string['completedon'] = 'Concluído em {$a}';
@@ -64,10 +64,10 @@ $string['confirmdeleteentry'] = 'Tem a certeza de que pretende apagar esta respo
 $string['confirmdeleteitem'] = 'Tem a certeza de que pretende apagar este item?';
 $string['confirmdeletetemplate'] = 'Tem a certeza de que pretende apagar este modelo?';
 $string['confirmusetemplate'] = 'Tem a certeza de que pretende aplicar este modelo?';
-$string['continue_the_form'] = 'Continuar a responder às perguntas';
+$string['continue_the_form'] = 'Continuar a responder às questões';
 $string['count_of_nums'] = 'Contagem de números';
 $string['courseid'] = 'ID da disciplina';
-$string['creating_templates'] = 'Guardar estas perguntas como um novo modelo';
+$string['creating_templates'] = 'Guardar estas questões como um novo modelo';
 $string['delete_entry'] = 'Apagar resposta';
 $string['delete_item'] = 'Apagar questão';
 $string['delete_old_items'] = 'Apagar itens antigos';
@@ -75,10 +75,10 @@ $string['delete_pagebreak'] = 'Eliminar a quebra de página';
 $string['delete_template'] = 'Apagar modelo';
 $string['delete_templates'] = 'Apagar modelo…';
 $string['depending'] = 'Dependências';
-$string['depending_help'] = 'Esta opção permite que uma questão só seja exibida se tiver sido dada uma determinada resposta a uma questão prévia.<br />
+$string['depending_help'] = 'Esta opção permite que uma questão só seja exibida se tiver sido dada uma determinada resposta a uma questão anterior.<br />
 <strong>Siga os passos seguintes para criar uma dependência:</strong><br />
 <ol>
-    <li>Crie uma pergunta que condicionará a exibição de outras perguntas.</li>
+    <li>Crie uma questão que condicionará a exibição de outras perguntas.</li>
     <li>Adicione uma quebra de página (as questões dependentes não podem ocupar a mesma página).</li>
     <li>Adicione as perguntas cuja exibição depende da resposta à pergunta anterior.<br />
     <li>Selecione a pergunta na lista "Dependência de" e indique o valor necessário na caixa de texto "Resposta requerida".</li>
@@ -124,7 +124,7 @@ $string['feedback:createprivatetemplate'] = 'Criar modelo privado';
 $string['feedback:createpublictemplate'] = 'Criar modelo público';
 $string['feedback:deletesubmissions'] = 'Apagar submissões concluídas';
 $string['feedback:deletetemplate'] = 'Apagar modelo';
-$string['feedback:edititems'] = 'Editar perguntas';
+$string['feedback:edititems'] = 'Editar questões';
 $string['feedback:mapcourse'] = 'Associar inquéritos globais a disciplinas';
 $string['feedback:receivemail'] = 'Receber notificações por e-mail';
 $string['feedback:view'] = 'Ver um inquérito';
@@ -174,9 +174,9 @@ $string['messageprovider:submission'] = 'Notificações do inquérito';
 $string['minimal'] = 'Mínimo';
 $string['mode'] = 'Modo';
 $string['modulename'] = 'Inquérito';
-$string['modulename_help'] = 'O módulo <b>Inquérito</b> permite que um professor crie um inquérito personalizado para obter feedback dos participantes, usando uma variedade de tipos de questões, incluindo escolha múltipla, sim/não ou de resposta curta.
+$string['modulename_help'] = 'O módulo <b>Inquérito</b> permite que um professor crie um inquérito personalizado para obter feedback dos participantes, usando vários tipos de questões, incluindo escolha múltipla, sim/não ou resposta curta.
 
-As respostas do inquérito podem ser anónimas, se desejado, e os resultados podem ser mostrados a todos os participantes ou restritos apenas aos professores. Quaisquer atividades de inquérito na página principal do site também podem ser concluídas por utilizadores não autenticados.
+As respostas do inquérito podem ser anónimas, se pretendido, e os resultados podem ser mostrados a todos os participantes ou restritos apenas aos professores. Quaisquer atividades de inquérito na página principal do site também podem ser concluídas por utilizadores não autenticados.
 
 As atividades de inquérito podem ser usadas:
 
@@ -214,7 +214,7 @@ $string['numeric'] = 'Resposta numérica';
 $string['numeric_range_from'] = 'Valor mínimo';
 $string['numeric_range_to'] = 'Valor máximo';
 $string['of'] = 'de';
-$string['oldvaluespreserved'] = 'Todas as questões antigas e os seus valores serão preservadas';
+$string['oldvaluespreserved'] = 'Todas as questões antigas e respetivos valores serão preservadas';
 $string['oldvalueswillbedeleted'] = 'As questões atuais e as respostas de todos os utilizadores serão apagadas.';
 $string['only_one_captcha_allowed'] = 'Apenas é permitido inserir um CAPTCHA em cada inquérito';
 $string['openafterclose'] = 'A data de início indicada é posterior à data de fim';

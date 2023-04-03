@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['abouttobeinstalled'] = 'تنصیب ہونے لگی ہے';
+$string['accept'] = 'قبول';
 $string['action'] = 'عمل';
 $string['actionchoice'] = 'آپ اس فائل کے ساتھ کیا کرنا چاہتے ہیں';
 $string['actions'] = 'اعمال';
@@ -43,7 +44,9 @@ $string['activityweighted'] = 'سرگرمی فی استعمال کنندہ';
 $string['add'] = 'اضافہ کرو';
 $string['addactivity'] = 'سرگرمی کا اظافہ کرو';
 $string['addadmin'] = 'منتظم کا اضافہ کرو';
+$string['addblock'] = 'بلاک شامل کریں';
 $string['addcomment'] = '...تبصرہ شامل کریں';
+$string['adddots'] = 'اظافہ';
 $string['added'] = '{$a} کا اظافہ ہو چکا';
 $string['addedtogroup'] = '{$a} گروپ میں اظافہ ہو گیاہے';
 $string['addedtogroupnot'] = '{$a} گروپ میں اظافہ نہیں ہوا';
@@ -57,6 +60,7 @@ $string['admin'] = 'منتظم';
 $string['adminhelpassignadmins'] = 'منتظمین سب کر سکتے ہیں اور سائٹ میں کہیں بھی جا سکتے ہیں';
 $string['administration'] = 'انتظامیہ';
 $string['administrationsite'] = 'سائٹ انتظامیہ';
+$string['administrator'] = 'منتظم';
 $string['administrators'] = 'منتظمین';
 $string['administratorsall'] = 'تمام منتظمین';
 $string['administratorsandteachers'] = 'منتظمین اور اساتذہ';

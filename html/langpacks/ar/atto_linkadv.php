@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = 'متقدمة';
 $string['openinnewwindow'] = 'إفتح في نافذة جديدة';
 $string['pluginname'] = 'LinkAdv';
 $string['privacy:metadata'] = 'إن إضافة atto_linkadv لا تخزن أي بيانات شخصية.';

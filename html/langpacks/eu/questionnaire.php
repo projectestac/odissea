@@ -261,7 +261,7 @@ $string['maxtextlength'] = 'Testuaren gehieneko luzera';
 $string['maxtextlength_help'] = 'Testu-kutxa galdera motarentzat, zehaztu sarrera-kutxaren luzera eta erantzunetako testuaren gehieneko luzera.
 
 Testu-kutxaren luzera lehenetsia 20 karaktere dira eta erantzunetako testuaren gehieneko luzera 25 karaktere.';
-$string['messageprovider:message'] = 'Galdeketaren gogorarazpena';
+$string['messageprovider:message'] = 'Galdeketaren ohartarazpena';
 $string['messageprovider:notification'] = 'Galdeketaren bidalketa';
 $string['minforcedresponses'] = 'Gutxieneko erantzun kopurua';
 $string['minforcedresponses_help'] = 'Parametro hauek erabili itzazu erantzunean aukeratu daitezkeen **gutxieneko** laukitxo kopurua eta **gehieneko** laukitxo kopurua behartzeko. Kopuru zehatz bat aukeratzea behartzeko **gutxieneko** eta **gehieneko** eremuetan balio berdina jarri ezazu. Gutxieneko edo gehieneko kopurua soilik zehazteko utzi ezazu beste parametroan lehenetsitako **0** balioa utzi ezazu. **Gutxieneko** eta **gehieneko** balioetan **0** ez den balio bat zehazten baduzu erantzutean baldintza betetzen ez duten erabiltzaileei ohar-mezu bat erakutsiko zaie. Baldintza hauek zure galdeketako argibide orokorretan edo galderaren testuan argi utzi beharko dituzu, noski.';
@@ -325,7 +325,7 @@ $string['of'] = 'hauetatik';
 $string['openafterclose'] = 'Amaiera-data baino beranduagoko hasiera-data bat zehaztu duzu';
 $string['opendate'] = 'Hasiera-data';
 $string['option'] = '{$a} aukera';
-$string['optional'] = 'Aukerazkoa - menpekotasun hauetako baten bat bete behar da.';
+$string['optional'] = 'Hautazkoa - menpekotasun hauetako baten bat bete behar da.';
 $string['optionalname'] = 'Galderaren izena';
 $string['optionalname_help'] = 'Galderaren izena erantzunak CSV/Excel formatura esportatzean baino ez da erabiltzen.
 Ez badituzu erantzunak esportatzeko asmorik, ez duzu galderen izenengatik kezkatu behar.
@@ -493,6 +493,7 @@ $string['resume_help'] = 'Ezarpen honek erabiltzaileei euren erantzunak galdeket
 $string['resumesurvey'] = 'Jarraitu galdeketarekin';
 $string['return'] = 'Itzuli';
 $string['save'] = 'Gorde';
+$string['save_and_exit'] = 'Gorde eta irten';
 $string['saveasnew'] = 'Gorde galdera berri gisa';
 $string['savedbutnotsubmitted'] = 'Galdeketa hau gordeta baina oraindik bidali gabe dago.';
 $string['savedprogress'] = 'Zure aurrerapena gorde da. Beranduago galdeketa amaitzera itzuli zaitezke.';
@@ -522,7 +523,7 @@ $string['show_nonrespondents'] = 'Erantzuna eman ez dutenak';
 $string['started'] = 'hasita';
 $string['strfdate'] = '%Y/%m/%d';
 $string['strfdateformatcsv'] = 'Y/m/d H:i:s';
-$string['strictdateformatting'] = 'Sartu data azpiko data-hautatzailea edo \'YYYY-MM-DD\' formatua erabilita.';
+$string['strictdateformatting'] = 'Sartu data azpiko data-hautatzailea erabilita.';
 $string['subject'] = 'Gaia';
 $string['submissionnotificationhtmlanon'] = '<a href="{$a->submissionurl}">Bidalketa</a> berri bat dago "{$a->name}" galdeketan.';
 $string['submissionnotificationhtmluser'] = '<a href="{$a->profileurl}">{$a->username}</a> erabiltzaileak <a href="{$a->submissionurl}">bidalketa</a> berria egin du "{$a->coursename}" ikastaroko  "{$a->name}" galdeketan.';
@@ -584,7 +585,7 @@ $string['viewbyresponse'] = 'Erantzunen zerrenda';
 $string['viewindividualresponse'] = 'Banakako erantzunak';
 $string['viewindividualresponse_help'] = 'Egin klik azpiko zerrendan erantzuna eman dutenen izenetan euren banakako erantzunak ikusteko.';
 $string['viewresponses'] = 'Erantzun guztiak ({$a})';
-$string['viewyourresponses'] = 'Zure erantzunak - ikusi {$a}';
+$string['viewyourresponses'] = 'Ikusi zure erantzuna(k)';
 $string['warning'] = 'Oharra, errorea gertatu da.';
 $string['wronganswers'] = 'Zure erantzunak arazoren bat dauka (ikusi azpian)';
 $string['wrongdateformat'] = 'Idatzitako <strong>{$a}</strong> data ez dator bat adibidearen formatuarekin.';
@@ -593,5 +594,5 @@ $string['wrongformat'] = 'Hurrengo galderari zuk emandako erantzunak arazoren ba
 $string['wrongformats'] = 'Hurrengo galderari zuk emandako erantzunak arazoren bat dauka:&nbsp;';
 $string['yesno'] = 'Bai/Ez';
 $string['yesno_help'] = 'Bai/Ez motako galdera sinplea';
-$string['yourresponse'] = 'Zure erantzuna';
-$string['yourresponses'] = 'Zure erantzunak';
+$string['yourresponse'] = 'Ikusi zure erantzuna(k)';
+$string['yourresponses'] = 'Ikusi zure erantzuna(k)';

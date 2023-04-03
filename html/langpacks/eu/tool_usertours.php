@@ -182,11 +182,11 @@ $string['tour3_content_dashboard'] = 'Aginte-panel berriak zuretzat garrantzitsu
 $string['tour3_content_displayoptions'] = 'Ikastaroak izenaren, izen laburraren edo azken sarbide-dataren arabera ordena daitezke.
 
 Ikastaroak zerrenda batean erakustea ere aukera dezakezu, informazio laburpenaz lagundua edo lehenetsitako \'txartel\' ikuspegiaz.';
-$string['tour3_content_overview'] = 'Ikastaroa gainbegiratzeko blokeak matrikulatuta zaudenteneko ikastaro guztiak erakusten ditu.
+$string['tour3_content_overview'] = 'Ikastaroa gainbegiratzeko blokeak matrikulatuta zauden ikastaro guztiak erakusten ditu.
 
-Oraingo ikastaro guztiak erakustea aukera dezakezu, edo amaitutakoak edo hastekoak, edo izardunak.';
+Oraingo ikastaro guztiak erakustea aukera dezakezu, edo amaitutakoak edo hastekoak, edo nabarmendutakoak.';
 $string['tour3_content_recentcourses'] = 'Duela gutxi sarbide izandako ikastaroen blokeak bisitatutako azken ikastaroak erakusten ditu, horietara azkar joateko ahalbidetuz.';
-$string['tour3_content_starring'] = 'Ikastaroari izarra eslei diezaiokezu nabarmentzearren, edo zuretzat jadanik garrantzitsua ez den ikastaro bat ezkutatu.
+$string['tour3_content_starring'] = 'Ikastaro bat nabarmendu dezakezu ikusgarriago egiteko, eta zuretzat jadanik garrantzitsua ez den ikastaro bat ezkutatu dezakezu.
 
 Ekintza horiek zure ikuspegiari eragiten diote, besterik ez.
 
@@ -200,7 +200,7 @@ $string['tour3_title_dashboard'] = 'Aginte-panela';
 $string['tour3_title_displayoptions'] = 'Erakusteko aukerak';
 $string['tour3_title_overview'] = 'Ikuspegi orokorra';
 $string['tour3_title_recentcourses'] = 'Duela gutxi sartutako ikastaroak';
-$string['tour3_title_starring'] = 'Ikastaroei izarrak egozten eta ezkutatzen';
+$string['tour3_title_starring'] = 'Ikastaroak nabarmentzen eta ezkutatzen';
 $string['tour3_title_timeline'] = 'Kronologia blokea';
 $string['tour4_content_groupconvo'] = 'Taldeko mezularitza gaituta duen taldeko kidea bazara, taldeko elkarrizketak hmen ikusiko dituzu.
 
@@ -212,7 +212,7 @@ Irakurri gabeko mezurik izanez gero, mezu-kopurua hemen erakutsiko da.
 Egin klik ikonoan mezuen kutxa irekitzeko eta jarraitu ibilbidea.';
 $string['tour4_content_messaging'] = 'Mezularitza-interfaze berriak ikastaro barruko taldeko mezularitzarako aukera ematen du, baita mezuak nork bidal diezazkizukeen hobeto kontrolatzeko ahalmena ere.';
 $string['tour4_content_settings'] = 'Mezularitzaren ezarpenetara engranaje-ikonoaren bidez sar zaitezke. Pribatutasun-ezarpen berri batek mezuak nork bidal diezazkizukeen murriztu dezake.';
-$string['tour4_content_starred'] = 'Elkarrizketei izarrak eslei diezazkiekezu aurkitzea erraztuz.';
+$string['tour4_content_starred'] = 'Elkarrizketak nabarmendu ditzakezu aurkitzen errazagoak izan daitezen.';
 $string['tour4_title_groupconvo'] = 'Talde-mezuak';
 $string['tour4_title_icon'] = 'Mezularitza';
 $string['tour4_title_messaging'] = 'Mezularitza-interfaze berria';
@@ -224,7 +224,7 @@ $string['tour_activityinfo_activity_teacher_content'] = 'Orain ikasleei jarduera
 
 Ikasleek osatu gisa eskuz markatu dezaketen jardueretan, jarduera-orrian \'Markatu egindako gisa\' botoia erakusten zaie.';
 $string['tour_activityinfo_activity_teacher_title'] = 'Berria: Jardueraren informazioa';
-$string['tour_activityinfo_course_student_content'] = 'Orain ikasleei jarduera datak eta jardueraren osaketa-baldintzak ikastaro-orrian erakusten zaizkie.';
+$string['tour_activityinfo_course_student_content'] = 'Orain jarduera datak eta jardueraren osaketa-baldintzak ikastaro-orrian erakusten dira.';
 $string['tour_activityinfo_course_student_title'] = 'Berria: Jardueraren informazioa';
 $string['tour_activityinfo_course_teacher_content'] = 'Ikastaroen \'Erakutsi jardueren osaketa-baldintzak\' eta \'Erakutsi jardueraren datak\' ezarpen berriek ikasleei jardueren osaketa-baldintzak - zehaztuta badaude - edota datak ikastaro-orrian erakusteko aukera ematen dute.';
 $string['tour_activityinfo_course_teacher_title'] = 'Berria: Jardueraren informazioa';

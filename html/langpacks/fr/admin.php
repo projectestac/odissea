@@ -1254,6 +1254,7 @@ $string['sitepolicyhandler_desc'] = 'Ce réglage détermine comment sont gérés
 $string['sitepolicyhandlercore'] = 'Par défaut';
 $string['sitepolicyhandlerplugin'] = '{$a->name} ({$a->component})';
 $string['sitesectionhelp'] = 'Si cette option est activée, une section sera affichée sur la page d\'accueil du site.';
+$string['sixtyfourbitsrequired'] = 'Votre site semble ne pas utiliser une version 64 bit de PHP. Une mise à jour de votre système (système d\'exploitation, PHP, etc.) avant d\'installer cette version de Moodle.';
 $string['sixtyfourbitswarning'] = 'Votre site n\'utilise pas une version 64 bits de PHP. Il est recommandé de mettre à jour votre serveur afin d\'assurer une pleine compatibilité des prochaines versions de Moodle.';
 $string['slasharguments'] = 'Utiliser les « slash arguments »';
 $string['slashargumentswarning'] = 'Il est recommandé que le réglage <em>slasharguments</em> soit activé. L\'activation sera prochainement rendue obligatoire. Pour plus d\'informations, veuillez consulter la documentation sur l\'utilisation des <a href="https://docs.moodle.org/en/admin/environment/slasharguments"><em>slash arguments</em></a> (en anglais).';
@@ -1421,12 +1422,13 @@ $string['unsupporteddbfilepertable'] = 'Pour un support complet de l\'encodage U
 $string['unsupporteddblargeprefix'] = 'Pour un support complet de l\'encodage UTF-8, tant MySQL que MariaDB nécessitent d\'activer le paramètre « innodb_large_prefix ». Veuillez consulter la documentation pour plus d\'informations.';
 $string['unsupporteddbstorageengine'] = 'Le moteur de base de données utilisé n\'est plus supporté.';
 $string['unsupporteddbtablerowformat'] = 'Votre base de données comporte des tables qui utilisent le format de fichier Antelope. Il vous est vivement recommandé de convertir les tables au format de fichier Barracuda. Veuillez consulter la <a href="https://docs.moodle.org/fr/Administration_en_ligne_de_commande">documentation sur l\'Administration en ligne de commande</a> pour des informations détaillées sur l\'<a href="https://docs.moodle.org/fr/Administration_en_ligne_de_commande#Conversion_des_tables_InnoDB_au_format_Barracuda">outil de conversion des tables InnoDB en format Barracuda</a>.';
-$string['unsupportedphpversion7'] = 'La version 7 de PHP n\'est pas supportée.';
-$string['unsupportedphpversion71'] = 'La version 7.1 de PHP n\'est pas supportée.';
-$string['unsupportedphpversion72'] = 'La version 7.2 de PHP n\'est pas supportée.';
-$string['unsupportedphpversion73'] = 'La version 7.3 de PHP n\'est pas supportée.';
-$string['unsupportedphpversion74'] = 'La version 7.4 de PHP n\'est pas supportée.';
-$string['unsupportedphpversion80'] = 'La version 8.0 de PHP n\'est pas supportée.';
+$string['unsupportedphpversion7'] = 'Les versions 7 et ultérieures de PHP ne sont pas prises en charge.';
+$string['unsupportedphpversion71'] = 'Les versions 7.1 et ultérieures de PHP ne sont pas prises en charge.';
+$string['unsupportedphpversion72'] = 'Les versions 7.2 et ultérieures de PHP ne sont pas prises en charge.';
+$string['unsupportedphpversion73'] = 'Les versions 7.3 et ultérieures de PHP ne sont pas prises en charge.';
+$string['unsupportedphpversion74'] = 'Les versions 7.4 et ultérieures de PHP ne sont pas prises en charge.';
+$string['unsupportedphpversion80'] = 'Les versions 8.0 et ultérieures de PHP ne sont pas prises en charge.';
+$string['unsupportedphpversion81'] = 'Les versions 8.1 et ultérieures de PHP ne sont pas prises en charge.';
 $string['unsuspenduser'] = 'Activez le compte utilisateur';
 $string['updateaccounts'] = 'Modifier des comptes existants';
 $string['updateautocheck'] = 'Chercher automatiquement les mises à jour disponibles';

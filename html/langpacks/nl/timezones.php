@@ -117,6 +117,7 @@ $string['america/cayenne'] = 'Amerika/Cayenne';
 $string['america/cayman'] = 'Amerika/Cayman';
 $string['america/chicago'] = 'Amerika/Chicago';
 $string['america/chihuahua'] = 'Amerika/Chihuahua';
+$string['america/ciudad_juarez'] = 'America/Ciudad_Juarez';
 $string['america/costa_rica'] = 'Amerika/Costa Rica';
 $string['america/creston'] = 'Amerika/Creston';
 $string['america/cuiaba'] = 'Amerika/Cuiaba';

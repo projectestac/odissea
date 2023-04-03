@@ -25,9 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['Error'] = 'Erreur';
-$string['Info'] = 'Information';
-$string['Warning'] = 'Avertissement';
 $string['absolutedeadline'] = 'Fin des inscriptions';
 $string['absolutedeadline_help'] = 'Cochez cette case pour définir le moment après lequel les étudiants ne peuvent plus rien changer';
 $string['actionlink_delete'] = 'Effacer';
@@ -312,7 +309,6 @@ $string['err_location'] = 'Vous devez encoder un lieu/local.';
 $string['err_noslots'] = 'Aucun créneau sélectionné.';
 $string['err_posint'] = 'Vous devez encoder un nombre entier positif.';
 $string['err_startdate'] = 'La date de début ne peut être antérieure à aujourd\'hui ({$a->now}).';
-$string['eval_allow_new_appointments'] = 'Autoriser à prendre un autre rendez-vous';
 $string['eval_attended'] = 'A/ont participé';
 $string['eval_feedback'] = 'Retour d’information';
 $string['eval_grade'] = 'Noter';
@@ -464,7 +460,6 @@ $string['groupmodeslotgroups'] = 'Création de groupe par créneau vide';
 $string['groupmodeslotgroupsappointment'] = 'Création de groupe par créneau réservée';
 $string['groupoptions'] = 'Réglages de groupe';
 $string['grouporganizer_desc_hasgroup'] = 'Ceci est un agenda de groupe. Lorsque vous cliquerez sur le bouton d\'inscription vous vous inscrirez avec tous les membres de votre groupe {$a->groupname} dans ce créneau. Tous les membres du groupe peuvent modifier et commenter l\'inscription.';
-$string['grouporganizer_desc_nogroup'] = 'Ceci est un agenda de groupe. Les étudiants peuvent inscrire leur groupe dans les créneaux disponibles. Tous les membres du groupe peuvent modifier et commenter leur inscription.';
 $string['grouppicker'] = 'Choix du groupe';
 $string['groupwarning'] = 'Vérifiez les options de groupe ci-dessous.';
 $string['headerfooter'] = 'Imprimer les entête et pied de page';
@@ -490,8 +485,6 @@ $string['infobox_deadlines_title'] = 'Échéances';
 $string['infobox_description_title'] = 'Description de l\'agenda';
 $string['infobox_feedback_title'] = 'Retour d\'informations';
 $string['infobox_group'] = 'Mon groupe: {$a->groupname}';
-$string['infobox_hidelegend'] = 'Masquer la légende';
-$string['infobox_legend_title'] = 'Légende';
 $string['infobox_messages_title'] = 'Messages système';
 $string['infobox_messaging_title'] = 'Options de messagerie';
 $string['infobox_mycomments_title'] = 'Mes commentaires';
@@ -502,7 +495,6 @@ $string['infobox_organizer_expires'] = 'Cet agenda expirera le {$a->date} à {$a
 $string['infobox_organizer_never_expires'] = 'Cet agenda n\'a pas de date d\'expiration.';
 $string['infobox_showfreeslots'] = 'Ne montrer que les créneaux disponibles';
 $string['infobox_showhiddenslots'] = 'Montrer aussi les créneaux cachés<br/>';
-$string['infobox_showlegend'] = 'Montrer la légende';
 $string['infobox_showmyslotsonly'] = 'Ne montrer que mes créneaux';
 $string['infobox_showregistrationsonly'] = 'Monter uniquement les créneaux réservés';
 $string['infobox_showslots'] = 'Monter les créneaux passés';
@@ -515,20 +507,6 @@ $string['invalidgrouping'] = 'Vous devez sélectionner un groupement valable.';
 $string['inwaitingqueue'] = 'Liste d\'attente';
 $string['isgrouporganizer'] = 'Rendez-vous de groupe';
 $string['isgrouporganizer_help'] = 'Sélectionnez ceci si vous voulez que cet agenda inscrive des groupes plutôt que des utilisateurs individuels. Notez que si vous ne cochez pas cette case, l\'agenda permet tout de même que plusieurs utilisateurs s\'inscrivent au même rendez-vous.';
-$string['legend_anonymous'] = 'Créneau anonyme';
-$string['legend_comments'] = 'Commentaires de l\'étudiant/enseignant';
-$string['legend_due'] = 'Créneau dû';
-$string['legend_evaluated'] = 'Créneau évalué';
-$string['legend_feedback'] = 'Réaction de l\'enseignant';
-$string['legend_group_applicant'] = 'Candidat du groupe';
-$string['legend_halfanonymous'] = 'Seuls les participants de son propre créneau sont visibles';
-$string['legend_no_participants'] = 'Le créneau n\'avait aucun participant';
-$string['legend_not_occured'] = 'Le rendez-vous n\'a pas encore eu lieu';
-$string['legend_organizer_expired'] = 'Calendrier expiré';
-$string['legend_past_deadline'] = 'Échéance du créneau dépassée';
-$string['legend_pending'] = 'Créneau à évaluer';
-$string['legend_section_details'] = 'Icônes de détails du créneau';
-$string['legend_section_status'] = 'Icônes de statut';
 $string['location'] = 'Lieu/local';
 $string['location_help'] = 'Encodez le nom du local où les rendez-vous auront lieu.';
 $string['locationlink'] = 'Lien URL du lieu/local';
@@ -548,20 +526,10 @@ $string['message_error_slot_full_group'] = 'Ce créneau horaire est déjà occup
 $string['message_error_slot_full_single'] = 'Il n\'y a plus de places disponibles dans ce créneau horaire.';
 $string['message_error_unknown_unqueue'] = 'Votre inscription à la liste d\'attente n\'a pas pu être supprimée. Erreur inconnue.';
 $string['message_error_unknown_unregister'] = 'Votre inscription n\'a pas pu être supprimée. Erreur inconnue.';
-$string['message_info_available'] = 'Il reste {$a->freeslots} créneaux disponibles pour {$a->notregistered} étudiants sans rendez-vous.';
-$string['message_info_available_group'] = 'Il reste {$a->freeslots} créneaux disponibles pour {$a->notregistered} groupes sans rendez-vous.';
 $string['message_info_reminders_sent_pl'] = '{$a->count} rappels ont été envoyés.';
 $string['message_info_reminders_sent_sg'] = '{$a->count} rappel a été envoyé.';
 $string['message_info_slots_added_pl'] = '{$a->count} nouveaux créneaux ont été ajoutés.';
 $string['message_info_slots_added_sg'] = '{$a->count} nouveau créneau a été ajouté.';
-$string['message_info_slots_deleted'] = 'Les créneaux suivants ont été effacés:<br/>
-{$a->deleted} créneaux effacés.<br/>
-{$a->notified} utilisateurs ont été notifiés.';
-$string['message_info_slots_deleted_group'] = 'Les créneaux suivants ont été effacés:<br/>
-{$a->deleted} créneaux effacés.<br/>
-{$a->notified} utilisateurs ont été notifiés.';
-$string['message_warning_available'] = '<span style="color:red;">Attention</span> Il y a {$a->freeslots} créneaux disponibles pour {$a->notregistered} utilisateurs sans rendez-vous.';
-$string['message_warning_available_group'] = '<span style="color:red;">Attention</span> Il y a {$a->freeslots} créneaux disponibles pour {$a->notregistered} groupes sans rendez-vous.';
 $string['message_warning_no_slots_added'] = 'Aucun nouveau créneau ajouté!';
 $string['message_warning_no_slots_selected'] = 'Vous devez d\'abord sélectionner au moins un créneau.';
 $string['message_warning_no_visible_slots_selected'] = 'Vous devez d\'abord sélectionner au moins un créneau VISIBLE !';
@@ -713,20 +681,16 @@ $string['privacy:metadata:useridappointment'] = 'Identifiant de l\'utilisateur q
 $string['privacy:metadata:useridqueue'] = 'Identifiant de l\'utilisateur ayant effectué cette inscription dans la file d\'attente d\'un créneau.';
 $string['queue'] = 'Listes d\'attente';
 $string['queue_help'] = 'Les listes d\'attente permettent aux utilisateurs de s\'inscrire à un créneau horaire même si le nombre maximum de participants est déjà atteint. Les utilisateurs sont ajoutés à une liste d\'attente et ils seront inscrits dans ce créneau (dans l\'ordre) dès qu\'une place se libère.';
-$string['queuebody'] = 'Votre inscription à un créneau horaire a été promu du statut de "en liste d\'attente" à celui de "réservé".';
-$string['queuesubject'] = 'Moodle Agenda: promu de la liste d\'attente';
 $string['recipientname'] = '&lt;recipient name&gt;';
 $string['reg_status'] = 'Statut d\'inscription';
 $string['reg_status_not_registered'] = 'Pas inscrit';
 $string['reg_status_organizer_expired'] = 'Agenda expiré';
 $string['reg_status_registered'] = 'Inscrit';
 $string['reg_status_slot_attended'] = 'S\'est présenté';
-$string['reg_status_slot_attended_reapp'] = 'S\'est présenté, réinscription autorisée';
 $string['reg_status_slot_available'] = 'Créneau disponible';
 $string['reg_status_slot_expired'] = 'Créneau expiré';
 $string['reg_status_slot_full'] = 'Créneau complet';
 $string['reg_status_slot_not_attended'] = 'Ne s\'est pas présenté';
-$string['reg_status_slot_not_attended_reapp'] = 'Ne s\'est pas présenté, réinscription autorisée';
 $string['reg_status_slot_past_deadline'] = 'Créneau échu';
 $string['reg_status_slot_pending'] = 'Créneau à évaluer';
 $string['register_notify_teacher:queue:fullmessage'] = 'Bonjour {$a->receivername} !

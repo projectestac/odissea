@@ -91,10 +91,10 @@ $string['numbering2'] = 'Buletak';
 $string['numbering3'] = 'Koskatzea';
 $string['numbering_help'] = '* Bat ere ez - atalen eta azpiatalen izenburuek ez dute formaturik.
 * Zenbakiak - atalak eta azpiatalak zenbatuta daude  1, 1.1, 1.2, 2, ...
-* Buletak - azpiatalak koxkatuta daude eta buletak dituzte eduki-taulan.
+* Buletak - azpiatalak koxkatuta daude eta buletak dituzte edukien taulan.
 * Koskatuta - azpiatalak koskatuta daude eduki-taulan';
 $string['numberingoptions'] = 'Eskura dauden atalen formatuak';
-$string['numberingoptions_desc'] = 'Aukeratu liburu berriak sortzean eskuragarri dauden zenbatze-aukerak.';
+$string['numberingoptions_desc'] = 'Atalak eta azpiatalak edukien taulan erakusteko aukerak';
 $string['page-mod-book-x'] = 'Liburua moduluaren edozein orri';
 $string['pluginadministration'] = 'Liburuaren kudeaketa';
 $string['pluginname'] = 'Liburua';
@@ -110,5 +110,5 @@ $string['subplugintype_booktool'] = 'Libururako tresna';
 $string['subplugintype_booktool_plural'] = 'Libururako tresnak';
 $string['tagarea_book_chapters'] = 'Liburu-atalak';
 $string['tagsdeleted'] = 'Liburu-etiketak ezabatu dira';
-$string['toc'] = 'Eduki-taula';
+$string['toc'] = 'Edukien taula';
 $string['top'] = 'gora';

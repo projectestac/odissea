@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addadditionaltocomment'] = 'إضافة معلومات إضافية إلى قالب تعليقاتك';
 $string['addadditionaltorecord'] = 'إضافة معلومات إضافية إلى سجلك';
 $string['addinfo'] = 'إضافة معلومات إضافية إلى سجلك';
+$string['advancedsearch'] = 'بحث متقدم';
 $string['allowcomments'] = 'السماح بالتعليقات';
 $string['allowmultiple'] = 'السماح باختيارات متعددة';
 $string['capablilty_delete_database'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لحذف السجلات من قاعدة البيانات.';

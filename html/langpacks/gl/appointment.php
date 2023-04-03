@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['appointment:takeattendance'] = 'Pasar lista';
+$string['appointment:viewattendees'] = 'Ver a lista de asistentes e quen está presente';
+$string['attendance'] = 'Asistencia';
 $string['error:noticeidincorrect'] = 'O identificador do aviso é incorrecto: {$a}';
+$string['managecustomfields'] = 'Xestionar campos personalizados';

@@ -32,5 +32,5 @@ $string['pluginname_help'] = 'A descrição não se trata propriamente de um tip
 O texto da descrição é mostrado durante a realização do teste e na revisão do mesmo, enquanto que os feedbacks gerais apenas são mostrados na revisão.';
 $string['pluginnameadding'] = 'A adicionar descrição';
 $string['pluginnameediting'] = 'A editar descrição';
-$string['pluginnamesummary'] = 'A descrição não é na realidade uma pergunta. Em vez disso, é uma forma de adicionar instruções, títulos ou outros conteúdos informativos no teste. Funciona de forma semelhante aos separadores inseridos na página da disciplina.';
+$string['pluginnamesummary'] = 'A descrição não é propriamente uma pergunta. É uma forma de adicionar instruções, títulos ou outros conteúdos informativos ao teste. Funciona de forma semelhante aos separadores inseridos na página da disciplina.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Descrição não armazena quaisquer dados pessoais.';

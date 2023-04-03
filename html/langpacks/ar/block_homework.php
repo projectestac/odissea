@@ -25,11 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['achievementactivity'] = 'النشاط';
+$string['activity'] = 'النشاط';
 $string['alldone'] = 'تم كل شيء';
 $string['allowshowdescription'] = 'السماح للمستخدمين بضبط إظهار الوصف';
 $string['allowshowdescription_help'] = 'فيما إذا كان بإمكان المستخدمين ضبط إعداد إظهار الوصف';
 $string['allxselected'] = 'تم اختيار {0} كلها';
 $string['backtomarkinglist'] = 'عودة إلى قائمة التصحيحات';
+$string['behaviouractivity'] = 'النشاط';
+$string['courselabel_help'] = 'هذا هو المساق الذي ستتم إضافة نشاط الواجب البيتي إليه. الطلاب المنضمون إلى الوساق حصرًا سيكون لهم إمكانية الوصول إليه.';
 $string['defaultshowdescription'] = 'الإعداد الافتراضي لإظهار الوصف';
 $string['defaultshowdescription_help'] = 'فيما إذا كان إعداد إظهار الوصف مفعلاً أم معطلاً إفتراضيًا';
 $string['deletehomeworkitem'] = 'حذف الواجب البيتي';
@@ -64,6 +68,8 @@ $string['onlinetextorfilesubs'] = 'نص عبر الإنترنت أو رفع مل
 $string['onlinetextsubs'] = 'نص عبر الإنترنت';
 $string['participants'] = 'المشاركون';
 $string['pluginname'] = 'الواجب البيتي';
+$string['section_help'] = 'المقطع أو الموضوع ضمن المساق الذي ستتم إضافة نشاط الواجب البيتي إليه.';
+$string['selectcourse_help'] = 'هذا هو المساق الذي ستتم إضافة نشاط الواجب البيتي إليه. الطلاب المنضمون إلى الوساق حصرًا سيكون لهم إمكانية الوصول إليه.';
 $string['sethomework'] = 'وضع الواجب البيتي';
 $string['showdescription'] = 'إظهار الوصف في المساق';
 $string['showdescription_help'] = 'فيما إذا كان ينبغي عرض الوصف في صفحة المقرر الدراسي';

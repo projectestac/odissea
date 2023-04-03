@@ -25,4 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['averageattendance'] = 'Asistencia media';
+$string['averageattendancegraded'] = 'Asistencia media';
 $string['calmonths'] = 'xaneiro,febreiro,marzo,abril,maio,xuño,xullo,agosto,setembro,outubro,novembro,decembro';
+$string['modulename'] = 'Asistencia';
+$string['modulename_help'] = 'O módulo de actividade de asistencia permite que o profesorado pase lista durante a clase e que o alumnado vexa o seu rexistro de asistencia.
+
+O profesorado pode crear varias sesións e marcar o estado de asistencia como «Presente», «Ausente», «Puntualidade» ou «Xustificada» o modificar os estados segundo as necesidades.
+
+Os informes están dispoñíbeis para a clase enteira ou para estudantes individuais.';
+$string['modulenameplural'] = 'Asistencias';
+$string['multisessionexpanded'] = 'Varias sesións expandidas';
+$string['multisessionexpanded_desc'] = 'Mostrar o axuste para «Vairas sesións» expandido por omisión ao crear sesións novas.';
+$string['pluginname'] = 'Asistencia';
+$string['studentrecordingexpanded'] = 'Gravación de alumnado expandida';
+$string['studentrecordingexpanded_desc'] = 'Mostrar o axuste para «Gravación de alumnado» expandido por omisión ao crear sesións novas.';

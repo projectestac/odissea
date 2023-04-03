@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['duedate'] = 'حد تاریخ';
+$string['edit'] = 'ترمیم';

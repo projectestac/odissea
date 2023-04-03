@@ -89,3 +89,5 @@ $string['privacy:metadata:favouritessummary'] = 'El curs conté informació rela
 $string['privacy:perpage'] = 'El nombre de cursos a mostrar per pàgina.';
 $string['recommend'] = 'Recomana';
 $string['recommendcheckbox'] = 'Activitat recomanada: {$a}';
+$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} després de començar el curs';
+$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} abans de començar el curs';

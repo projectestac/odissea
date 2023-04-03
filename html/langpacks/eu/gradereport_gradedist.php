@@ -43,7 +43,7 @@ $string['coursesum'] = 'Ikastarorako batura';
 $string['coverage'] = 'Kalifikazioen banaketa berriak ez ditu kalifikazio guztiak barne hartzen!';
 $string['coverage_export'] = 'Letretan barne hartu gabeko elementuak:';
 $string['decimals'] = 'Beheko muga 0 eta 100 arteko zenbakia izan behar da. Gehienez 2 hamartar baimentzen dira.';
-$string['description'] = 'Etiketatzen';
+$string['description'] = 'Erakutsi beharreko balioak';
 $string['download'] = 'Jaitsi';
 $string['downloadjpeg'] = 'JPEG irudia';
 $string['downloadpdf'] = 'PDF dokumentua';
@@ -76,7 +76,7 @@ $string['nogroupingentry'] = 'Talde-multzorik ez';
 $string['notification'] = 'Oharra: Kalifikazio-letren definizioak ikastaroko elementu guztietan aplikatuko dira.';
 $string['p'] = '(%)';
 $string['percent'] = 'Ehunekoa';
-$string['pluginname'] = 'Kalifikazio-banaketa';
+$string['pluginname'] = 'Kalifikazioen banaketa';
 $string['pluginname_help'] = 'Txosten honek kalifikazio-letren mugen arabera kalifikazio-elementu baten kalifikazioen banaketa erakusten du. Aurreikusi funtzionalitateak kalifikazio-letren beheko mugetan egindako aldaketak kalifikazioen banaketan nola eragiten duten segituan ikusteko aukera ematen du. Beheko muga berriak zure gustukoak badira kalifikazio-letrak behin-betiko aldatu daitezke.
 Oharra: Kalifikazio-letren definizioak ikastaroko elementu guztietan aplikatuko dira.';
 $string['points'] = 'Puntuak ({$a})';

@@ -413,15 +413,7 @@ $string['statistic'] = 'Statistiques du questionnaire';
 $string['stats_all'] = 'Vous avez répondu à toutes les questions de la catégorie "{$a->catégorie}".';
 $string['stats_none'] = 'Vous n\'avez répondu à aucune question dans la catégorie "{$a->catégorie}".';
 $string['stats_partly'] = 'Vous avez répondu {$a->réponse} à l\'une des questions {$a->questions} de la catégorie "{$a->catégorie}".';
-$string['students_answered_multiple'] = 'les étudiants ont répondu au questionnaire.';
-$string['students_answered_single'] = 'l\'étudiant a répondu au questionnaire.';
-$string['students_available_multiple'] = 'les étudiants inscrits qui peuvent remplir le questionnaire.';
-$string['students_available_single'] = 'étudiant inscrit qui peut remplir le questionnaire.';
-$string['students_committed_multiple'] = 'Les étudiants ont également déjà donné leurs réponses.';
-$string['students_committed_single'] = 'L étudiants a également déjà donné ses réponses.';
 $string['students_enrolled_info'] = 'Les étudiants sont inscrits à ce cours';
-$string['students_grouping_multiple'] = 'des étudiants pour la constitution de groupes';
-$string['students_grouping_single'] = 'étudiant pour la constitution de groupes.';
 $string['students_selected'] = 'étudiants sélectionnés';
 $string['submit-modal-text'] = 'À des fins scientifiques et pour le processus de formation de groupes, il est important que vous répondiez à toutes les questions de manière sincère et correcte. Nous serions reconnaissants de votre participation.
 

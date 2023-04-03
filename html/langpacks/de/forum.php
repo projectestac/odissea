@@ -448,7 +448,7 @@ $string['modulename_help'] = 'Richten Sie ein Forum ein, um den Personen in Ihre
 
 Es stehen verschiedene Forentypen zur Auswahl, z.B. ein Standardforum, in dem alle jederzeit eine neue Diskussion beginnen können; ein Forum, in dem jede/r Teilnehmer/in genau eine Diskussion posten kann; oder ein Frage-und-Antwort-Forum, in dem die Teilnehmer/innen zuerst Beiträge verfassen müssen, bevor sie die Beiträge anderer Teilnehmer/innen anzeigen können. Ein/e Trainer/in kann zulassen, dass Dateien an Forenbeiträge angehängt werden. Angehängte Bilder werden im Forumsbeitrag angezeigt.
 
-Teilnehmer/innen können ein Forum abonnieren, um Benachrichtigungen über neue Forenbeiträge zu erhalten. Ein/e Trainer/in kann den Abonnementmodus auf optional, verbindlich oder automatisch einstellen oder das Abonnement vollständig verhindern. Bei Bedarf können Teilnehmer/innen daran gehindert werden, in einem bestimmten Zeitraum mehr als eine bestimmte Anzahl von Beiträgen zu veröffentlichen. Dies kann verhindern, dass Einzelpersonen Diskussionen dominieren.
+Teilnehmer/innen können ein Forum abonnieren, um Benachrichtigungen über neue Forenbeiträge zu erhalten. Trainer/innen können den Abonnementmodus auf optional, verbindlich oder automatisch einstellen oder das Abonnement vollständig verhindern. Bei Bedarf können Teilnehmer/innen daran gehindert werden, in einem bestimmten Zeitraum mehr als eine bestimmte Anzahl von Beiträgen zu veröffentlichen. Dies soll verhindern, dass Einzelpersonen Diskussionen dominieren.
 
 Forenbeiträge können von Trainer/innen oder Teilnehmer/innen bewertet werden (Peer-Bewertung). Die Bewertungen können zu einer Endnote zusammengefasst werden, die in den Bewertungen festgehalten wird.
 
@@ -460,7 +460,7 @@ Die Aktivität Forum hat viele Verwendungsmöglichkeiten, wie z.B.
 * Für die Fortsetzung einer Diskussion, die in einer persönlichen Sitzung begonnen wurde
 * Für Diskussionen nur für Trainer/innen (über ein verborgenes Forum)
 * Ein Hilfezentrum, in dem Tutoren/innen und Teilnehmer/innen Ratschläge geben können
-* Als Bereich für eine 1:1-Unterstützung zwischen Teilnehmer/in und Trainer/in (über ein Forum mit separaten Gruppen und mit 1 Teilnehmer/in pro Gruppe)
+* Als Bereich für eine 1:1-Unterstützung zwischen Teilnehmer/in und Trainer/in (über ein Forum mit getrennten Gruppen und mit 1 Teilnehmer/in pro Gruppe)
 * Für Erweiterungsaktivitäten, z.B. „Denksportaufgaben“, über die die Teilnehmer/innen nachdenken und Lösungen vorschlagen können';
 $string['modulenameplural'] = 'Foren';
 $string['more'] = 'weiter';

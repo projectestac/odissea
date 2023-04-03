@@ -460,7 +460,7 @@ $string['privacy:metadata:offlinequiz:id_digits'] = 'Sauvegarde le nombre de chi
 $string['privacy:metadata:offlinequiz:introformat'] = 'Ce champ n\'est pas utilisé.';
 $string['privacy:metadata:offlinequiz:name'] = 'La colonne « name » enregistre le nom du offlinequiz.';
 $string['privacy:metadata:offlinequiz:numgroups'] = 'Le nombre de groupes distincts de ce Test hors-ligne.';
-$string['privacy:metadata:offlinequiz:papergray'] = 'L\'échelle de gris de ce test hors-ligne';
+$string['privacy:metadata:offlinequiz:papergray'] = 'Niveau de blanc du papier.';
 $string['privacy:metadata:offlinequiz:pdfintro'] = 'Les informations supplémentaires qui sont insérées dans les feuilles de questions au début.';
 $string['privacy:metadata:offlinequiz:printstudycodefield'] = 'Paramètre indiquant si le code de l\'étude doit être imprimé sur le formulaire de la question : 1 pour vrai, 0 sinon.';
 $string['privacy:metadata:offlinequiz:review'] = 'Cette colonne enregistre des informations sur la manière dont la révision est effectuée.';
@@ -594,7 +594,7 @@ $string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
 \\usepackage{lastpage}
 \\usepackage{fancyhdr}
 \\pagestyle{fancy}
-\\chead{\\sc \\Title, Group \\Group}
+\\chead{\\sc \\TestTitle, Group \\Group}
 \\cfoot{Seite \\thepage/\\pageref{LastPage}}
 \\makeatletter %%% disable pagebreaks between answers
 \\@beginparpenalty=10000
@@ -609,7 +609,8 @@ $string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
 % ===========================================================================================================
 %%% Course data:
 \\newcommand{\\Group}{{$a->groupname}}
-\\newcommand{\\Title}{{$a->coursename}}
+\\newcommand{\\Title}{{$a->activityname}}
+%%% Or use {{$a->coursename} as course name instead
 \\newcommand{\\Date}
 
 \\newcommand{\\TestTitle}{%
@@ -619,7 +620,7 @@ $string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
 \\begin{tabular}{rl}
 \\rule{0pt}{25pt} Nom : & $\\underline{\\hspace*{8cm}}$ \\rule{20pt}{0pt}\\\\[5mm]
 Identifiant : & $\\underline{\\hspace*{8cm}}$\\\\[5mm]
-\\ifthenelse{\\equal{true}{{$a->printstudycodefield}}}{\\rule{10pt}{0pt} Study code: & $\\underline{\\hspace*{8cm}}$\\\\[5mm]}{}
+\\ifthenelse{\\equal{true}{{$a->printstudycodefield}}}{\\rule{10pt}{0pt} Code d\'étude: & $\\underline{\\hspace*{8cm}}$\\\\[5mm]}{}
 \\rule[-20pt]{0pt}{20pt} Signature : & $\\underline{\\hspace*{8cm}}$
 \\end{tabular}}
 \\end{center}

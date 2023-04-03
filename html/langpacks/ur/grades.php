@@ -45,6 +45,7 @@ $string['categories'] = 'زمرے';
 $string['category'] = 'زمرہ';
 $string['categoryedit'] = 'زمرہ میں ردو بدل';
 $string['categoryname'] = 'اسم زمرہ';
+$string['edit'] = 'ترمیم';
 $string['grades'] = 'درجات';
 $string['gradesonly'] = 'صرف درجات';
 $string['gradessettings'] = 'درجہ بندی کی تشکیل';

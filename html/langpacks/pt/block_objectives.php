@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['complete'] = 'Objetivo concluído';
-$string['defaultintro'] = 'No final deverá ser capaz de ...';
+$string['defaultintro'] = 'No final deverá ser capaz de...';
 $string['editobjectives'] = 'Editar objetivos';
 $string['editobjectivesinst'] = 'Escreva os objetivos em cada caixa - um objetivo por linha. Comece a linha com um espaço para recuá-la (dois espaços para identação adicional).';
 $string['edittimetables'] = 'Editar horários';
 $string['edittimetablesinst'] = 'Para cada intervalo do horário, selecione um grupo para quem exibir os objetivos (ou \'Todos os grupos\' para mostrar para todos) e uma hora de início e de fim. Selecione \'Desativar\' para remover esta vaga do horário.<br/>Se precisar de mais vagas para um dia, preencha as vagas disponíveis e clique em \'Guardar alterações\' e serão adicionadas 3 vagas extras';
 $string['fullscreen'] = 'Mostrar objetivos em ecrã inteiro';
 $string['group'] = 'Grupo';
-$string['incomplete'] = 'Objetivo incompleto';
+$string['incomplete'] = 'Objetivo não concluído';
 $string['introduction'] = 'Introdução';
 $string['lesson'] = 'Objetivo para';
 $string['lessonend'] = 'Fim&nbsp;';

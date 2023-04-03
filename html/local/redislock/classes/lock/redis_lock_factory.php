@@ -25,8 +25,6 @@
 
 namespace local_redislock\lock;
 
-defined('MOODLE_INTERNAL') || die();
-
 use core\lock\lock_factory;
 use core\lock\lock;
 use local_redislock\api\shared_redis_connection;
@@ -149,9 +147,12 @@ class redis_lock_factory implements lock_factory {
     /**
      * Supports recursion.
      *
+     * @deprecated since Moodle 3.10.
      * @return boolean True if attempting to get 2 locks on the same resource will "stack"
      */
     public function supports_recursion() {
+        debugging('The function supports_recursion() is deprecated, please do not use it anymore.',
+            DEBUG_DEVELOPER);
         return false;
     }
 
@@ -188,6 +189,13 @@ class redis_lock_factory implements lock_factory {
             $now = time();
             try {
                 $locked = $this->redis->setnx($resource, $this->get_lock_value());
+
+                // XTEC ************ AFEGIT - Added expiration to locks to automatically remove them in case the script doesn't
+                //                            finish correctly.
+                // 2023.03.20 @aginard
+                $this->redis->expire($resource, 3600);
+                // ************ FI
+
                 $exception = false;
             } catch (\RedisException $e) {
                 // If there has been a redis exception, we will try to reconnect.
@@ -298,11 +306,14 @@ class redis_lock_factory implements lock_factory {
     /**
      * Extend the timeout on a held lock.
      *
+     * @deprecated since Moodle 3.10.
      * @param lock $lock lock obtained from this factory.
      * @param int  $maxlifetime new max time to hold the lock.
      * @return boolean True if the lock was extended.
      */
     public function extend_lock(lock $lock, $maxlifetime = 86400) {
+        debugging('The function extend_lock() is deprecated, please do not use it anymore.',
+            DEBUG_DEVELOPER);
         return false;
     }
 

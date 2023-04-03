@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:exceeded'] = 'Fecha de vencimiento excedida.';
+$string['activitydate:hasopened'] = 'Abierto:';
+$string['activitydate:notavailableyet'] = 'No disponible todavía.';
+$string['activitydate:willclose'] = 'Cierra:';
+$string['activitydate:willopen'] = 'Abre:';
 $string['add'] = 'Añadir';
 $string['add_group'] = 'Añadir grupo';
 $string['add_grouping'] = 'Añadir agrupamiento';
@@ -53,14 +58,19 @@ $string['choicegroupfull'] = 'Este grupo está completo y no es posible añadiir
 $string['choicegroupname'] = 'Título de la actividad';
 $string['choicegroupopen'] = 'Abierto';
 $string['choicegroupoptions'] = 'Opciones de elección.';
-$string['choicegroupoptions_help'] = 'Aquí es donde se especifica las opciones entra las que los participantes podrán escoger.
+$string['choicegroupoptions_help'] = 'Aquí es donde se especifican los grupos entre las que los participantes pueden escoger.
 
-Puede rellenar cualquier número de estas. Si deja en blanco algunas de las opciones disponibles, éstas no se mostrarán. Si necesita añadir más, haga clic en el botón "Añadir 3 campos al formulario".';
+La lista de la izquierda muestra todos los grupos y agrupamientos disponibles. Para añadir uno o varios grupos, selecciónelos de la lista y pulse "Añadir". Para añadir todos los grupos de un agrupamiento, seleccione el agrupamiento y pulse "Añadir".
+
+Los grupos seleccionados aparecen en la lista de la derecha.
+
+Para quitar algún grupo de la selección, selecciónelo de la lista de la derecha y pulse "Quitar".';
 $string['choicegroupsaved'] = 'Su selección se ha guardado.';
 $string['choicetext'] = 'Texto de la selección';
 $string['chooseaction'] = 'Elija una acción...';
 $string['choosegroup'] = 'Elija un grupo';
 $string['collapse_all_groupings'] = 'Colapsar todas las agrupaciones';
+$string['completiondetail:submit'] = 'Elegir un grupo';
 $string['completionsubmit'] = 'Mostrar como completo cuando un usuario realiza su elección.';
 $string['createdate'] = 'Fecha de creación del grupo';
 $string['defaultsettings'] = 'Configuraciones por defecto';
@@ -95,8 +105,10 @@ $string['limitanswers'] = 'Limitar el número de participantes permitidos.';
 $string['limitanswers_help'] = 'Mediante esta opción se puede limitar el número de miembros que pueden formar parte de cada grupo. Cuando se alcanza el límite establecido, nadie más puede optar por formar parte del grupo correspondiente.
 
 Si se elige la opción "deshabilitar" el número de miembros posibles para todos los grupos es ilimitado.';
-$string['members/'] = 'Llenar';
-$string['members/max'] = 'Reservado / Capacidad';
+$string['maxenrollments'] = 'Max. miembros';
+$string['maxenrollments_help'] = 'Esta opción permite limitar el número de grupos en los que puede apuntarse un participante. Use el valor **0** si no hay límite';
+$string['members/'] = 'Miembros';
+$string['members/max'] = 'Miembros / Capacidad';
 $string['modulename'] = 'Elección de grupo';
 $string['modulename_help'] = 'El módulo de Elección de grupo permite que el profesor proponga dos o más grupos del curso para que los estudiantes se automatriculen en alguno de ellos.
 
@@ -106,6 +118,7 @@ Los alumnos pueden o no cambiar libremente de grupo si el profesor así lo consi
 $string['modulenameplural'] = 'Selección de grupos.';
 $string['moveselectedusersto'] = 'Mover los usuarios seleccionados a ...';
 $string['multipleenrollmentspossible'] = 'Permitir la inclusión en múltiples grupos';
+$string['mustchoosemax'] = 'Usted debe seleccionar un máximo de {$a} grupos. No se ha guardado nada.';
 $string['mustchooseone'] = 'Debe elegir una respuesta antes de guardar. No se ha realizado esta acción.';
 $string['name'] = 'Nombre';
 $string['neverresultsviewable'] = 'La composición de los grupos no es visible.';
@@ -117,10 +130,11 @@ $string['notenrolledchoose'] = 'Sólo a usuarios inscritos se les permite elegir
 $string['notopenyet'] = 'Esta actividad no está disponible hasta {$a}';
 $string['notyetresultsviewable'] = 'La composición de los grupos será visible después de que esta actividad se haya cerrado';
 $string['numberofuser'] = 'El número de usuarios';
+$string['onlyactive'] = 'Filtrar datos de la respuesta para usuarios con matriculación expirada o suspendida.';
 $string['option'] = 'Grupo';
 $string['page-mod-choice-x'] = 'Cualquier página del módulo Elección de grupo';
 $string['pleaseselectonegroup'] = 'Por favor seleccione al menos un grupo del cual elegir.';
-$string['pleasesetgroups'] = 'Por favor, genere al menos dos grupos en este curso.';
+$string['pleasesetgroups'] = 'Por favor, genere al menos un grupo en este curso.';
 $string['pleasesetonegroupor'] = 'Por favor, cree al menos un grupo dentro de este curso.<br /><br />
 <ul>
 <li><a href="{$a->linkgroups}">gestionar grupos de curso</a></li>

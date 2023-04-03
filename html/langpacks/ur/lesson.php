@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['edit'] = 'ترمیم';
 $string['email'] = 'ای میل';
 $string['graded'] = 'درجہ بندی ہو چکی';

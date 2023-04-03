@@ -209,8 +209,8 @@ $string['csvweirdcolumns'] = 'Formato de ficheiro CSV inválido; o número de co
 $string['dbconnectionfailed'] = '<p>Erro: Falhou a ligação à Base de dados</p>
 <p>É possível que a base de dados esteja sobrecarregada ou não está a funcionar corretamente.</p>
 <p>O administrador do site também deve verificar se os dados da base de dados foram corretamente especificados no ficheiro config.php</p>';
-$string['dbdriverproblem'] = '<p>Erro: foi detetado um erro no driver da base de dados</p>
-<p>O administrador do site deve verificar a configuração do servidor</p>
+$string['dbdriverproblem'] = '<p>Erro: foi detetado um erro no driver da base de dados.</p>
+<p>O administrador do site deve verificar a configuração do servidor.</p>
 <p>{$a}</p>';
 $string['dbsessionbroken'] = 'Foram detetados problemas sérios na base de dados.<br /><br />Avise o administrador do servidor.';
 $string['dbsessionhandlerproblem'] = 'A criação da base de dados de sessão falhou. Por favor, notifique o administrador do servidor.';
@@ -293,7 +293,7 @@ $string['groupnotaddederror'] = 'O grupo "{$a}" não foi adicionado';
 $string['groupnotaddedtogroupingerror'] = 'O grupo "{$a->groupname}" não foi adicionado ao agrupamento "{$a->groupingname}"';
 $string['groupunknown'] = 'O grupo {$a} não está associado à disciplina especificada';
 $string['groupusernotmember'] = 'O utilizador não é membro deste grupo.';
-$string['guestcantaccessprofiles'] = 'Os visitantes não podem aceder aos perfis de utilizador. Autentique-se com uma conta de utilizador para continuar.';
+$string['guestcantaccessprofiles'] = 'Os visitantes não podem aceder aos perfis dos utilizador. Autentique-se com uma conta de utilizador para continuar.';
 $string['guestnocomment'] = 'Os visitantes não têm permissão para inserir comentários!';
 $string['guestnoeditprofile'] = 'Os visitantes não podem editar o seu perfil';
 $string['guestnoeditprofileother'] = 'O perfil do visitante não pode ser editado';
@@ -347,7 +347,7 @@ $string['invalidfiletype'] = '"{$a}" não é um tipo de ficheiro válido';
 $string['invalidformatpara'] = 'Formato incorreto para o parâmetro escolhido';
 $string['invalidformdata'] = 'Formulário de dados incorreto';
 $string['invalidfunction'] = 'Função incorreta';
-$string['invalidgradeitemid'] = 'ID do item da nota incorreto';
+$string['invalidgradeitemid'] = 'ID do item de avaliação incorreto';
 $string['invalidgroupid'] = 'Especificado ID de grupo incorreto';
 $string['invalidipformat'] = 'Formato inválido de endereço IP';
 $string['invaliditemid'] = 'ID do item incorreto';
@@ -544,7 +544,7 @@ $string['statscatchupmode'] = 'Os relatórios de atividade encontram-se em modo 
 $string['statsdisable'] = 'As estatísticas não foram ativadas.';
 $string['statsnodata'] = 'Não existem dados disponíveis para essa combinação de disciplina e período de tempo';
 $string['storedfilecannotcreatefile'] = 'Não é possível criar o ficheiro de pool de ficheiro local. Por favor, verifique as permissões em dataroot e o espaço disponível em disco.';
-$string['storedfilecannotcreatefiledirs'] = 'Não é possível criar a lista de pastas. Por favor, verifique as permissões de escrita na pasta de dados.';
+$string['storedfilecannotcreatefiledirs'] = 'Não é possível criar a lista de pastas. Por favor, verifique as permissões de escrita na pasta dos dados.';
 $string['storedfilecannotread'] = 'Não é possível ler o ficheiro. O ficheiro não existe ou existem problemas de permissão.';
 $string['storedfilecannotreadfile'] = 'Não é possível ler o ficheiro \'{$a}\'. Ou o ficheiro não existe ou há um problema de permissão.';
 $string['storedfilenotcreated'] = 'Não é possível criar o ficheiro \'{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}\'';

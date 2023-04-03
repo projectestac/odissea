@@ -72,6 +72,7 @@ $string['privacy:metadata:log:eventname'] = 'اسم الحدث';
 $string['privacy:metadata:prefladderpagesize'] = 'حجم الصفحة المفضل للمستخدم عند معاينة السُّلم';
 $string['privacy:path:logs'] = 'سجلات الوقوعات';
 $string['property:eventname'] = 'اسم الحدث';
+$string['rulecm'] = 'النشاط أو المورد';
 $string['ruleevent'] = 'حدث مُعيَّن';
 $string['ruleeventdesc'] = 'الحدث هو \'{$a->eventname}\'';
 $string['rulepropertydesc'] = 'الخاصية \'{$a->property}\' {$a->compare} \'{$a->value}\'.';

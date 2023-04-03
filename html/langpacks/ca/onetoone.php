@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['details'] = 'Detalls';
 $string['error:couldnotaddsession'] = 'No s\'ha pogut afegir una sessió';
+$string['reminder'] = 'Recordatori';
 $string['submitted'] = 'S\'ha tramès';

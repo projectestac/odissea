@@ -118,14 +118,14 @@ $string['maxbytes'] = 'Tamanho máximo do anexo';
 $string['maxfiles'] = 'Número máximo de anexos';
 $string['messageprovider:publication_updates'] = 'Notificações';
 $string['mode'] = 'Modo (origem dos ficheiros)';
-$string['mode_help'] = 'Escolha se os alunos podem carregar ficheiros para a pasta ou se são ficheiros submetidos num determinado Trabalho.';
+$string['mode_help'] = 'Escolha se os alunos podem, ou não, carregar ficheiros para a pasta ou se são ficheiros submetidos num determinado trabalho.';
 $string['modeimport'] = 'obter de um trabalho';
 $string['modeupload'] = 'carregar ficheiros';
 $string['modulename'] = 'Pasta do Aluno';
 $string['modulename_help'] = 'A **Pasta do Aluno** tem as seguintes funcionalidades:
 
 * Os participantes podem carregar documentos que ficarão imediatamente disponíveis para outros participantes ou depois de verificar os documentos e dar o seu consentimento.
-* Um trabalho pode ser escolhido como a fonte para uma Pasta do Aluno. O professor pode decidir que documentos do trabalho estarão visíveis para todos os participantes. Os professores também podem deixar os participantes decidir se os seus documentos devem ou não estar visíveis para os outros.';
+* Um trabalho pode ser escolhido como a fonte para a Pasta do Aluno. O professor pode decidir que documentos do trabalho estarão visíveis para todos os participantes. Os professores também podem deixar os participantes decidir se os seus documentos devem, ou não, estar visíveis para os outros.';
 $string['modulenameplural'] = 'Pastas dos alunos';
 $string['myfiles'] = 'Ficheiros próprios';
 $string['mygroupfiles'] = 'Ficheiros dos meus grupos';

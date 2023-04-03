@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventlegacylogged'] = 'Registo de evento de retrocompatibilidade';
+$string['eventlegacylogged'] = 'Registado evento de retrocompatibilidade';
 $string['loglegacy'] = 'Registo de dados de retrocompatibilidade';
 $string['loglegacy_help'] = 'Este módulo grava registos de atividade na tabela de registos de retrocompatibilidade (mdl_log). Esta funcionalidade foi substituída por módulos mais recentes, ricos e eficientes, por isso, só deve executar este módulo se tiver relatórios personalizados antigos que consultam diretamente a tabela de registos de atividade antiga. Escrever nos registos de retrocompatibilidade vai aumentar a carga no servidor, por isso, é recomendado que desative este módulo por motivos de desempenho, quando este não é necessário.';
 $string['pluginname'] = 'Registo de atividade de retrocompatibilidade';

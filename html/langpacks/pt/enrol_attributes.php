@@ -50,12 +50,14 @@ $string['group_help'] = 'Pode atribuir nenhum ou vários grupos';
 $string['mappings'] = 'Mapeamentos Shibboleth';
 $string['mappings_desc'] = 'Ao usar a autenticação Shibboleth, este módulo pode atualizar automaticamente o perfil de um utilizador a cada autenticação.<br><br> Por exemplo, se pretender atualizar o campo de perfil do utilizador <code>homeorganizationtype</code> com o atributo Shibboleth <code>Shib-HomeOrganizationType</code> (desde que seja a variável de ambiente disponível para o servidor durante a autenticação), pode inserir numa linha: <code>Shib-HomeOrganizationType:homeorganizationtype</code><br>Pode inserir quantas linhas forem necessárias.<br><br>Para não usar esta funcionalidade, ou se não usar a autenticação Shibboleth, basta deixar em branco.';
 $string['no_custom_field'] = 'Parece não haver qualquer campo personalizado. Vá para <a href="{$a}" target="_blank">configurações do utilizador</a> para adicionar um.';
+$string['no_profile_field_selected'] = 'Não foi selecionado nenhum campo de perfil nas configurações do módulo \'Inscrição por campos de perfil do utilizador\'.';
 $string['observelogins'] = 'Inscrever utilizadores ao autenticarem-se';
 $string['observelogins_desc'] = 'Tentar inscrever os utilizadores imediatamente quando se autenticarem no site. Isto pode afetar o desempenho do seu site. Desative esta funcionalidade se acontecer muitos utilizadores autenticarem-se ao mesmo tempo e o facto de serem inscritos ao mesmo tempo pode provocar um congestionamento.';
 $string['pluginname'] = 'Inscrição por campos de perfil do utilizador';
 $string['privacy:metadata'] = 'O módulo Inscrição por campos de perfil do utilizador não armazena quaisquer dados pessoais.';
 $string['profilefields'] = 'Campos de perfil a usar no seletor';
-$string['profilefields_desc'] = 'Quais os campos de perfil do utilizador que podem ser usados ao configurar uma instância de inscrição?<br><br><b>Se não selecionar um atributo, o uso do módulo é discutível e, por isso, desative o seu uso nas disciplinas.</b><br>Mesmo assim, a funcionalidade abaixo pode continuar a ser usada.';
+$string['profilefields_desc'] = 'Quais os campos de perfil do utilizador que podem ser usados ao configurar uma instância de inscrição?<br><br>
+<div class="alert alert-warning alert-block fade in" role="alert" data-aria-autofocus="true">Se não selecionar um atributo, o uso do módulo é discutível e, por isso, desative o seu uso nas disciplinas.</div><br>Mesmo assim, a funcionalidade abaixo pode continuar a ser usada.';
 $string['purge'] = 'Cancelar inscrições';
 $string['removewhenexpired'] = 'Cancelar inscrição após expiração de atributos';
 $string['removewhenexpired_help'] = 'Cancelar a inscrição de utilizadores ao autenticarem-se se já não corresponderem à regra do atributo.';

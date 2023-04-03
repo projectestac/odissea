@@ -437,7 +437,7 @@ O URL de arranque também pode ser definido para um endereço https que force a 
 $string['selectcontent'] = 'Selecionar conteúdo';
 $string['send'] = 'Enviar';
 $string['services'] = 'Serviços';
-$string['services_help'] = 'Selecione os serviços que pretende disponibilizar ao fornecedor de ferramenta. Podem ser selecionados mais do que um serviço.';
+$string['services_help'] = 'Selecione os serviços que pretende disponibilizar ao fornecedor da ferramenta. Podem ser selecionados mais do que um serviço.';
 $string['setupoptions'] = 'Opções de configuração';
 $string['share_email'] = 'Partilhar e-mail do utilizador com a ferramenta';
 $string['share_email_admin'] = 'Partilhar e-mail do utilizador com a ferramenta';

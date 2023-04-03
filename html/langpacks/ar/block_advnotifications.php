@@ -26,15 +26,23 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add_notif_local_notice'] = 'هذا الإشعار سيتم عرضه <em>فقط</em> في الصفحة التي تدير منها هذه الكتلة!';
+$string['advnotifications'] = 'إشعارات متقدمة';
 $string['advnotifications:addinstance'] = 'إضافة كتلة جديدة من الإشعارات المتقدمة';
 $string['advnotifications:manageownnotifications'] = 'إدارة إشعاراته وما يتصل بها من إعدادات';
 $string['advnotifications:myaddinstance'] = 'إضافة كتلة جديدة من الإشعارات المتقدمة إلى صفحة مودل الخاصة بي';
 $string['advnotifications_err_nocapability'] = 'ليست لديك صلاحية القيام بذلك';
 $string['advnotifications_field_times'] = 'أوقات المعاينة';
 $string['advnotifications_field_title'] = 'العنوان';
+$string['advnotifications_restore_table_heading'] = 'استعادة الإشعارات المتقدمة';
+$string['advnotifications_table_heading'] = 'إشعارات متقدمة';
+$string['advnotifications_task_name'] = 'إشعارات متقدمة';
 $string['advnotifications_times'] = 'عدد المرات';
 $string['advnotifications_times_label'] = 'عدد مرات عرض الإشعار للمستخدم (0 = إلى الأبد)';
 $string['advnotifications_title'] = 'العنوان';
+$string['event_notification_created'] = 'إشعار متقدم تم إنشاؤه';
+$string['event_notification_deleted'] = 'إشعار متقدم تم حذفه';
+$string['event_notification_updated'] = 'إشعار متقدم تم تحديثه';
+$string['pluginname'] = 'إشعارات متقدمة';
 $string['privacy:metadata:block_advnotifications:blockid'] = 'مُعرَّف الكتلة التي تم منها إنشاء الإشعار (إن وجدت).';
 $string['privacy:metadata:block_advnotifications:title'] = 'عنوان الإشعار';
 $string['setting/dateformat_desc'] = 'سيتم إظهار التواريخ بالتنسيق المحدد.<hr>';

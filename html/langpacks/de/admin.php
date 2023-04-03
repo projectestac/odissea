@@ -343,7 +343,7 @@ $string['confignotifyloginthreshold'] = 'Nach wie vielen erfolglosen Anmeldevers
 $string['confignotloggedinroleid'] = 'Nicht auf der Website eingeloggte Nutzer/innen werden behandelt, als ob sie diese Rolle hätten. Die Rolle \'Gast\' ist in der Regel brauchbar. Sie können aber auch neue Rollen erstellen, die mehr oder weniger Einschränkungen vornehmen. Viele Aktivitäten, z.B. Beiträge schreiben oder Tests durchführen, erfordern aber immer eine richtige Anmeldung.';
 $string['configopentowebcrawlers'] = 'Wenn diese Option aktiviert ist, können Suchmaschinen Ihre Website als Gast besuchen. Außerdem wird jeder automatisch als Gast eingeloggt, der über eine Suchmaschine auf Ihre Website kommt. Dies gilt natürlich ausschließlich für Kurse, die einen Gastzugang (ohne Gastschlüssel) zulassen.';
 $string['configoverride'] = 'In der config.php festgelegt';
-$string['configpasswordpolicy'] = 'Wenn diese Option aktiviert ist, werden Nutzerkennwörter anhand der in den folgenden Einstellungen angegebenen Kennwortrichtlinie überprüft. Das Aktivieren der Kennwortrichtlinie wirkt sich erst dann auf vorhandene Nutzende aus, wenn diese ihr Kennwort ändern möchten, ändern müssen oder die Einstellung "Kennwort bei Anmeldung prüfen" aktiviert ist.';
+$string['configpasswordpolicy'] = 'Wenn diese Option aktiviert ist, werden Nutzerkennwörter anhand der in den folgenden Einstellungen angegebenen Kennwortrichtlinie überprüft. Das Aktivieren der Kennwortrichtlinie wirkt sich erst dann auf vorhandene Nutzer/innen aus, wenn diese ihr Kennwort ändern möchten, ändern müssen oder die Einstellung "Kennwort bei Anmeldung prüfen" aktiviert ist.';
 $string['configpasswordpolicycheckonlogin'] = 'Wenn diese Option aktiviert ist, werden Nutzerkennwörter bei jeder Anmeldung anhand der Kennwortrichtlinie überprüft. Wenn die Überprüfung fehlschlägt, müssen Nutzer/innen ihr Kennwort ändern, bevor sie fortfahren können.
 Es ist hilfreich, diese Einstellung nach dem Aktualisieren der Kennwortrichtlinie zu aktivieren.';
 $string['configpasswordresettime'] = 'Diese Option legt die maximale Zeitdauer fest, um die Anforderung einer Kennwortrücksetzung zu bestätigen, bevor diese verfällt. Normalerweise sind 30 Minuten ausreichend.';
@@ -623,7 +623,7 @@ $string['enablesearchareas'] = 'Suchbereiche aktivieren';
 $string['enablestats'] = 'Statistiken aktivieren';
 $string['enabletrusttext'] = 'Trusted-Content-System aktivieren';
 $string['enableuserfeedback'] = 'Feedback zur Software aktivieren';
-$string['enableuserfeedback_desc'] = 'Wenn diese Option aktiviert ist, wird im Dashboard und in der Fußzeile der Link "Feedback geben" angezeigt, damit Nutzer/innen ein Feedback zur Software an das Moodle HQ geben können. Wenn die Option "Nächste Feedback-Erinnerung" aktiviert ist, wird Nutzenden im angegebenen Intervall auch eine Erinnerung im Dashboard angezeigt. Wenn Sie "Nächste Erinnerung zum Feedback" auf "Nie" setzen, wird die Dashboard-Erinnerung deaktiviert, während der Link "Feedback zur Software geben" in der Fußzeile verbleibt.';
+$string['enableuserfeedback_desc'] = 'Wenn diese Option aktiviert ist, wird im Dashboard und in der Fußzeile der Link "Feedback geben" angezeigt, damit Nutzer/innen ein Feedback zur Software an das Moodle HQ geben können. Wenn die Option "Nächste Feedback-Erinnerung" aktiviert ist, wird Nutzer/innen im angegebenen Intervall auch eine Erinnerung im Dashboard angezeigt. Wenn Sie "Nächste Erinnerung zum Feedback" auf "Nie" setzen, wird die Dashboard-Erinnerung deaktiviert, während der Link "Feedback zur Software geben" in der Fußzeile verbleibt.';
 $string['enablewebservices'] = 'Webservices aktivieren';
 $string['enablewsdocumentation'] = 'Dokumentation zu Webservices';
 $string['encryptedpassword_edit'] = 'Neuen Wert angeben';
@@ -1286,6 +1286,7 @@ $string['sitepolicyhandler_desc'] = 'Wählen Sie die Komponente aus, um die Best
 $string['sitepolicyhandlercore'] = 'Standard (Core)';
 $string['sitepolicyhandlerplugin'] = '{$a->name} ({$a->component})';
 $string['sitesectionhelp'] = 'Mit dieser Option wird ein Textabschnitt auf der Startseite angezeigt.';
+$string['sixtyfourbitsrequired'] = 'Es wurde festgestellt, dass Ihre Website keine 64-Bit-PHP-Version verwendet. Sie müssen Ihr System (Betriebssystem, PHP...) aktualisieren, bevor Sie diese Moodle-Version installieren.';
 $string['sixtyfourbitswarning'] = 'Ihre Website verwendet keine 64-Bit-Version für PHP. Es wird empfohlen, die Website zu aktualisieren, um die zukünftige Kompatibilität sicherzustellen.';
 $string['slasharguments'] = 'Slash-Parameter benutzen';
 $string['slashargumentswarning'] = 'Es wird empfohlen, die Verwendung von Schrägstrich-Argumenten zu aktivieren. Zukünftig wird dies erforderlich sein. Weitere Einzelheiten finden Sie in der Dokumentation <a href="https://docs.moodle.org/en/admin/environment/slasharguments">Schrägstrich-Argumente</a> .';

@@ -118,12 +118,12 @@ $string['check_riskxss_details'] = '<p>A indicação <strong>RISK_XSS</strong> e
 <p>Lista de utilizadores com estas permissões:</p><p>{$a}</p>';
 $string['check_riskxss_name'] = 'Utilizadores com permissões <strong>RISK_XSS</strong>';
 $string['check_riskxss_warning'] = 'Existe(m) {$a} utilizador(es) com permissões <strong>RISK_XSS</strong>. Por questões de segurança é importante verificar que estes utilizadores são de confiança.';
-$string['check_unsecuredataroot_details'] = '<p>Não deve ser possível aceder à pasta de dados através da web. É recomendado que esta pasta se situe fora da pasta de acesso web.</p>
-<p>Se a localização desta pasta for alterada, então o parâmetro <strong>$CFG->dataroot</strong> no ficheiro de configuração <strong>config.php</strong> deve ser atualizado para o novo valor.</p>';
-$string['check_unsecuredataroot_error'] = 'A pasta de dados está numa localização potencialmente insegura: <strong>{$a}</strong>!';
-$string['check_unsecuredataroot_name'] = 'Segurança da pasta de dados';
-$string['check_unsecuredataroot_ok'] = 'Não deve ser possível aceder à pasta de dados através da web.';
-$string['check_unsecuredataroot_warning'] = 'A pasta de dados (dataroot) <code>{$a}</code> está num local errado e pode ser acessível através da web.';
+$string['check_unsecuredataroot_details'] = '<p>Não deve ser possível aceder à pasta dos dados através da web. É recomendado que esta pasta se situe fora da pasta de acesso web.</p>
+<p>Se a localização da pasta for alterada, será necessário atualizar o parâmetro <strong>$CFG->dataroot</strong> no ficheiro de configuração <strong>config.php</strong> para o novo valor.</p>';
+$string['check_unsecuredataroot_error'] = 'A pasta dos dados está numa localização potencialmente insegura: <strong>{$a}</strong>!';
+$string['check_unsecuredataroot_name'] = 'Segurança da pasta dos dados';
+$string['check_unsecuredataroot_ok'] = 'Não deve ser possível aceder à pasta dos dados através da web.';
+$string['check_unsecuredataroot_warning'] = 'A pasta dos dados (dataroot) <code>{$a}</code> está num local errado e pode ser acessível através da web.';
 $string['check_vendordir_details'] = '<p>A diretoria <code>{$a->path}</code> contém várias bibliotecas de terceiros e suas dependências, normalmente instaladas pelo PHP Composer. Essas bibliotecas podem ser necessárias para o desenvolvimento local do Moodle, como por exemplo, para instalar a framework PHPUnit. Não são necessárias para executar um site Moodle em produção e podem conter código potencialmente perigoso, expondo o seu site a ataques remotos.</p><p>É altamente recomendado remover a diretoria se o site estiver disponível através de um URL público, ou, pelo menos, proibir o acesso via web na configuração do seu servidor web.</p>';
 $string['check_vendordir_info'] = 'O diretório de fornecedor não deve estar presente em sites públicos.';
 $string['check_vendordir_name'] = 'Diretório de fornecedores';

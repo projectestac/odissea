@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['error:noticeidincorrect'] = 'O identificador do aviso é incorrecto: {$a}';
+$string['nocustomfields'] = '<p>Non hai definido ningún campo personalizado.</p>';
 $string['noticetext'] = 'Texto do aviso';

@@ -42,6 +42,7 @@ $string['chooseexam'] = 'Kies eindtoets';
 $string['dashboardlink'] = 'Link naar Accredible dashboard';
 $string['datecreated'] = 'Datum gecreëerd';
 $string['description'] = 'Beschrijving';
+$string['eulabel'] = 'EU-Server (Frankfurt)';
 $string['groupselect'] = 'Groep';
 $string['id'] = 'ID';
 $string['indexheader'] = 'Alle certificaten/badges voor {$a}';

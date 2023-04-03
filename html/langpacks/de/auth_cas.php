@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['CASform'] = 'Wahl der Authentifizierung';
 $string['accesCAS'] = 'CAS-Nutzer/innen';
 $string['accesNOCAS'] = 'Weitere Nutzer/innen';
-$string['auth_cas_auth_logo'] = 'Logo für die Authentififationsmerhode';
+$string['auth_cas_auth_logo'] = 'Logo für die Authentifikation';
 $string['auth_cas_auth_logo_description'] = 'Stellen Sie ein Logo für die CAS-Authentifizierung bereit, das Ihren Nutzer/innen vertraut ist.';
 $string['auth_cas_auth_name'] = 'Name der Authentifikationsmerhode';
 $string['auth_cas_auth_name_description'] = 'Stellen Sie einen Namen für die CAS-Authentifizierung bereit, der Ihren Nutzer/innen vertraut ist.';

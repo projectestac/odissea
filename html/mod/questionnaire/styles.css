@@ -175,9 +175,44 @@ td.selected {
     display: inline;
 }
 
+#page-mod-questionnaire-complete .notice .buttons input {
+    margin-bottom: 10px;
+}
+
 .floatprinticon {
     margin-top: -30px;
     float: right;
+}
+
+#page-mod-questionnaire-complete .mod_questionnaire_controlbuttons {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+#page-mod-questionnaire-complete .mod_questionnaire_controlbuttons .control-button-prev {
+    float: left;
+}
+
+#page-mod-questionnaire-complete .mod_questionnaire_controlbuttons .control-button-save {
+    margin-left: 20%;
+}
+
+#page-mod-questionnaire-complete .mod_questionnaire_controlbuttons .control-button-prev + .control-button-save {
+    margin-left: 0;
+}
+
+#page-mod-questionnaire-complete .mod_questionnaire_controlbuttons .control-button-next,
+#page-mod-questionnaire-complete .mod_questionnaire_controlbuttons .control-button-submit {
+    float: right;
+}
+
+#page-mod-questionnaire-complete .mod_questionnaire_controlbuttons input {
+    margin-right: 0;
+}
+
+#page-mod-questionnaire-complete .mod_questionnaire_completepage .generalbox .notice {
+    padding: 0.5em 0 0.5em 0;
 }
 
 /* progress bar styling */
@@ -215,6 +250,10 @@ td.selected {
     margin-left: 10px;
     height: auto;
     overflow: hidden;
+}
+
+#page-mod-questionnaire-complete .mod_questionnaire_completepage.generalbox .homelink ~ .homelink {
+    padding-top: 10px;
 }
 
 .qn-legend {
@@ -296,6 +335,17 @@ td.selected {
 
 .qn-answer > label + input[type=radio] {
     margin-left: 0;
+}
+
+.qn-answer > textarea,
+.qn-content .editor_atto_wrap .editor_atto_content {
+    resize: vertical;
+}
+
+.qn-answer textarea,
+.qn-answer input[type="text"] {
+    box-sizing: border-box;
+    height: auto;
 }
 
 #notice .qn-question {
@@ -387,6 +437,17 @@ td.selected {
 
 .qn-indent {
     margin-left: 20px;
+}
+
+.mod_questionnaire_flex-container {
+    display: inline-flex;
+}
+
+#page-mod-questionnaire-view .mod_questionnaire_viewpage div.complete,
+#page-mod-questionnaire-view .mod_questionnaire_viewpage div.yourresponse,
+#page-mod-questionnaire-view .mod_questionnaire_viewpage div.allresponses {
+    flex-grow: 1;
+    margin-right: 10px;
 }
 
 #page-mod-questionnaire-questions #fitem_id_allchoices #id_allchoices,

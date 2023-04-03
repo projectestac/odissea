@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addroom'] = 'إضافة غرفة';
+$string['advanced_search'] = 'بحث متقدم';
 $string['all_day'] = 'كل اليوم';
 $string['backadmin'] = 'عودة إلى المشرف';
 $string['bgcolor'] = 'لون الخلفية';

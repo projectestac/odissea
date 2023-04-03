@@ -25,20 +25,28 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['active'] = 'Aktiv';
+$string['active_help'] = 'Falls nicht aktiviert, können Trainer/innen kein Poodll-Feedback erstellen oder bearbeiten';
 $string['allowedrecorders'] = 'Recorder aktivieren';
-$string['boardsize'] = 'Größe des PoodLL-Whiteboards';
+$string['boardsize'] = 'Größe des Poodll-Whiteboards';
 $string['default'] = 'Standardmäßig aktiviert';
 $string['default_help'] = 'Wenn diese Einstellung gewählt ist, wird diese Feedback-Methode als Standard für alle neuen Aufgaben aktiviert sein.';
 $string['deletefeedback'] = 'Dieses Feedback löschen';
 $string['downloadfile'] = '[Datei herunterladen]';
-$string['downloadsok'] = 'Link zum Herunterladen anzeigen';
+$string['downloadsok'] = 'Poodll-Link zum Herunterladen anzeigen';
 $string['enabled'] = 'PoodLL-Feedback';
 $string['enabled_help'] = 'Wenn diese Einstellung gewählt ist, kann ein Bewerter ein Audio- oder Video-Feedback zu jeder einzelnen Einreichung geben.';
 $string['no'] = 'Nein';
-$string['pluginname'] = 'PoodLL-Feedback';
+$string['pluginname'] = 'Poodll-Feedback';
+$string['poodll:reviewfeedbacks'] = 'Poodll-Feedbacks (Aufzeichnungen) können überprüft werden';
+$string['poodll:use'] = 'Poodll für Feedback zulassen';
+$string['poodllfeedbackinactive'] = 'Poodll-Feedback ist deaktiviert';
+$string['privacy:metadata'] = 'Das Poodle-Aufgaben-Feedback Plugin speichert keine personenbezogenen Daten';
+$string['privacy:metadata:filepurpose'] = 'Aufzeichnungen (Poodle-Dateiabgaben) für dieses Aufgaben-Feedback';
+$string['privacy:path'] = 'feedback_poodll';
 $string['reallydeletefeedback'] = 'Dieses Feedback wirklich löschen?';
-$string['recordertype'] = 'PoodLL-Aufnahmetyp';
-$string['replymp3voice'] = 'Audiorecorder MP3';
+$string['recordertype'] = 'Poodll-Aufnahmetyp';
+$string['replymp3voice'] = 'Audiorecorder';
 $string['replysnapshot'] = 'Bildschirmfoto';
 $string['replyvideo'] = 'Videorecorder';
 $string['replyvoice'] = 'Audiorecorder Red5';

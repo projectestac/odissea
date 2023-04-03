@@ -45,6 +45,6 @@ $string['sharedid'] = 'Sekretu partekatuaren IDa';
 $string['sharedidtitle'] = 'Sekretu partekatuaren IDa';
 $string['sharedsecrets'] = 'Sekretu partekatua';
 $string['sharedsecretsheading'] = 'Sekretu partekatuaren ezarpenak';
-$string['sharedsecretshelp'] = '<p>Azpian single sign-on erabiltzaileentzako erabiliko den partekatutako EQUELLA sekretua ezarri dezakezu. Sekretu partekatu ezberdinak zehaztu ditzakezu erabilera orokorrerako (irakurri) eta roletan oinarritutako sekretu partekatu bana <em>idatziko</em> duen rol bakoitzarentzat. Sekretu partekaturen IDa rol batentzat zehaztu gabe badago modu lehenetsian partekatutako giltza erabiliko da.</p>
+$string['sharedsecretshelp'] = '<p>Azpian single sign-on erabiltzaileentzako erabiliko den partekatutako EQUELLA sekretua ezarri dezakezu. Sekretu partekatu ezberdinak zehaztu ditzakezu erabilera orokorrerako (irakurri) eta roletan oinarritutako sekretu partekatu bana <em>idatziko</em> duen rol bakoitzarentzat. Sekretu partekaturen IDa rol batentzat zehaztu gabe badago modu lehenetsian partekatutako gakoa erabiliko da.</p>
 <p>Sekretu partekatuk eta giltzen ID guztiak EQUELLA barruan ere konfiguratu behar dira, eta sekretu partekatuen modulua gaitu behar da. Ezarpen hau EQUELLA Administration Console barruan dagoen User Management > Sekretu partekatuak atalean dago.</p>';
 $string['sharedsecrettitle'] = 'Sekretu partekatua';

@@ -108,8 +108,6 @@ class com_wiris_quizzes_impl_CalcDocumentTools {
 			throw new HException('Unable to call «'.$m.'»');
 	}
 	static $options;
-	static $outputMathOptions;
-	static $kernelOptions;
 	static $QUIZZES_QUESTION_OPTIONS = "quizzes_question_options";
 	static function calcSessionLang($value) {
 		$lang = com_wiris_quizzes_impl_CalcDocumentTools::casSessionLang($value);
@@ -213,5 +211,3 @@ class com_wiris_quizzes_impl_CalcDocumentTools {
 	function __toString() { return 'com.wiris.quizzes.impl.CalcDocumentTools'; }
 }
 com_wiris_quizzes_impl_CalcDocumentTools::$options = new _hx_array(array(com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION, com_wiris_quizzes_api_QuizzesConstants::$OPTION_TIMES_OPERATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMAGINARY_UNIT, com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMPLICIT_TIMES_OPERATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT, com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_DIGIT_GROUP_SEPARATOR));
-com_wiris_quizzes_impl_CalcDocumentTools::$outputMathOptions = new _hx_array(array(com_wiris_quizzes_api_QuizzesConstants::$OPTION_TIMES_OPERATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMAGINARY_UNIT, com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMPLICIT_TIMES_OPERATOR));
-com_wiris_quizzes_impl_CalcDocumentTools::$kernelOptions = new _hx_array(array(com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION, com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT, com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_DIGIT_GROUP_SEPARATOR));

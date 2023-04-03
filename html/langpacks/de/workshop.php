@@ -336,13 +336,13 @@ $string['showingperpagechange'] = 'Ändern...';
 $string['someuserswosubmission'] = 'Mindestens eine Person hat ihre Einreichung noch nicht vorgenommen';
 $string['sortasc'] = 'Aufsteigend sortieren';
 $string['sortdesc'] = 'Abwärts sortieren';
-$string['strategy'] = 'Punktestrategie';
-$string['strategy_help'] = 'Die Bewertungsstrategie legt den verwendeten Beurteilungsbogen und die Methode für das Bewerten der Einreichungen fest. Es gibt vier Optionen:
+$string['strategy'] = 'Bewertungsstrategie';
+$string['strategy_help'] = 'Die Bewertungsstrategie legt den verwendeten Beurteilungsbogen und die Methode für das Bewerten von Einreichungen fest. Es gibt vier Optionen:
 
-* Bewerten mit Kommentaren und Punkten: Kommentare und eine Bewertung für vordefinierte Aspekte
-* Kommentare: Es gibt nur Kommentare zu vordefinierten Aspekten, jedoch keine Bewertung
-* Aussagen zustimmen oder ablehnen: Kommentare und Ja/Nein Bewertungen zu vordefinierten Aussagen
-* Bewertungskriterien: Verschiedene Level zu vordefinierten Aspekten';
+* Aufsummierte Bewertung – anhand von festgelegten Kriterien werden die eingereichten Arbeiten mit Punkten und Kommentaren bewertet.
+* Kommentare – anhand von festgelegten Kriterien werden die eingereichten Arbeiten kommentiert, jedoch keine Punkte vergeben.
+* Aussagen zustimmen oder ablehnen – die eingereichten Arbeiten werden in der Form Ja / Nein (d.h. Akzeptiert / Nicht akzeptiert, Bestanden / Nicht bestanden) bewertet. Zusätzlich können Kommentare hinzugefügt werden.
+* Bewertungskriterien – anhand von festgelegten Kriterien wird eine Bewertung von Aspekten der eingereichten Arbeiten vorgenommen.';
 $string['strategyhaschanged'] = 'Die Punktestrategie der gegenseitigen Beurteilung wurde seit dem Beginn der Änderungen geändert.';
 $string['submission'] = 'Einreichung';
 $string['submissionattachment'] = 'Dateianhang';

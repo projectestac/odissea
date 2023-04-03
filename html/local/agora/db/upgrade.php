@@ -20,7 +20,20 @@
 // Please do not forget to use upgrade_set_timeout()
 // before any action that may take longer time to finish.
 
-function xmldb_local_agora_upgrade($oldversion) {
+/**
+ * Task to do on plugin upgrade.
+ *
+ * @throws stored_file_creation_exception
+ * @throws ddl_exception
+ * @throws upgrade_exception
+ * @throws ddl_change_structure_exception
+ * @throws downgrade_exception
+ * @throws dml_exception
+ * @throws file_exception
+ * @throws coding_exception
+ * @throws ddl_table_missing_exception
+ */
+function xmldb_local_agora_upgrade($oldversion): bool {
     global $CFG, $DB;
 
     $dbman = $DB->get_manager();
@@ -213,7 +226,6 @@ math = wiris', 'editor_atto');
         upgrade_plugin_savepoint(true, 2015060500, 'local', 'agora');
     }
 
-
     if ($oldversion < 2015060501) {
         uninstall_plugin('block', 'advices');
         uninstall_plugin('block', 'rcommon');
@@ -360,6 +372,12 @@ mybadges,badges|/badges/mybadges.php|award");
         purge_caches(['theme']);
 
         upgrade_plugin_savepoint(true, 2020072300, 'local', 'agora');
+    }
+
+    if ($oldversion < 2023011300) {
+        require_once $CFG->dirroot . '/local/agora/db/upgradelib.php';
+        // Create user profile field for IDI.
+        create_user_tag_field();
     }
 
     return true;

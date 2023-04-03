@@ -258,7 +258,7 @@ $string['missinglibraryjson'] = 'Ezin izan da aurkitu library.json fitxategia {$
 $string['missinglibraryproperty'] = 'Eskatutako {$a->%property} ezaugarria falta da {$a->%library} liburutegian';
 $string['missingmbstring'] = 'Mbstring PHP hedapena ez dago kargatuta. H5Pk funtzio hori behar du';
 $string['missingparameters'] = 'Parametroak falta dira';
-$string['missinguploadpermissions'] = 'Kontuan izan igo duzun fitxategian liburutegiak egon daitezkeela, baina ezin duzu liburutegi berririk igo. Jarri zaitez harremanetan guneko kudeatzailearekin.';
+$string['missinguploadpermissions'] = 'Kontuan izan igo duzun fitxategian liburutegiak egon daitezkeela, baina ezin duzu liburutegi berririk igo. Jarri harremanetan guneko kudeatzailearekin.';
 $string['modulename'] = 'Eduki interaktiboa';
 $string['modulename_help'] = 'H5P jarduera-moduluak eduki interaktiboa sortzen ahalbidetzen dizu, hala nola, Bideo Interaktiboak, Galdera Sortak, Arrastatu eta Jaregin moduko Galderak, Aukera Anizkoitzeko Galderak, Aurkezpenak eta askoz gehiago.
 

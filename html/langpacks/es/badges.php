@@ -78,6 +78,7 @@ $string['archivehelp'] = '<p>Esta opción significa que la insignia se marcará 
 $string['attachment'] = 'Adjuntar insignia al mensaje';
 $string['attachment_help'] = 'Si está habilitado, se adjuntará una archivo de insignia emitida al correo electrónico del destinatario para descarga. (Los adjuntos deben ser habilitados en \'Administración del sitio  > Servidor > Correo electrónico > Configuración de correo saliente\' para usar esta opción.)';
 $string['award'] = 'Otorgar insignia';
+$string['awardedto'] = 'Otorgado a {$a}';
 $string['awardedtoyou'] = 'Emitida para mi';
 $string['awardoncron'] = 'El acceso a las insignias se activó con éxito. Muchos usuarios pueden ganar simultáneamente esta insignia. Para garantizar el funcionamiento del sitio, esta acción llevará un cierto tiempo de proceso.';
 $string['awards'] = 'Destinatarios';
@@ -118,7 +119,7 @@ $string['backpackemail_help'] = 'La dirección de correo electrónico asociada a
 $string['backpackemailverificationpending'] = 'Verificación pendiente';
 $string['backpackemailverifyemailbody'] = 'Hola,
 
-Se solicitó una nueva conexión a tu mochila de insignias desde \'{$a-> sitename}\' usando tu dirección de correo electrónico.
+Se solicitó una nueva conexión a tu mochila de insignias desde \'{$a->sitename}\' usando tu dirección de correo electrónico.
 
 Para confirmar y activar la conexión a su mochila, vaya a
 
@@ -190,8 +191,10 @@ $string['connecting'] = 'Conectando....';
 $string['contact'] = 'Contacto';
 $string['contact_help'] = 'Una dirección de correo electrónico asociada al emisor de la insignia.';
 $string['copyof'] = 'Copia de {$a}';
+$string['course'] = 'Curso: {$a}';
 $string['coursebadges'] = 'Insignias';
 $string['coursebadgesdisabled'] = 'Las insignias de curso no están habilitadas en este sitio.';
+$string['coursebadgetitle'] = 'Insignia del curso {$a}';
 $string['coursecompletion'] = 'Los usuarios deben finalizar este curso.';
 $string['create'] = 'Nueva insignia';
 $string['createbutton'] = 'Crear insignia';
@@ -346,10 +349,12 @@ $string['existsinbackpack'] = 'La insignia ya existe en la mochila';
 $string['expired'] = 'Expirada';
 $string['expiredate'] = 'Esta insignia expira en {$a}.';
 $string['expireddate'] = 'Esta insignia expira en {$a}.';
+$string['expiredin'] = 'Caducado {$a}';
 $string['expireperiod'] = 'Esta insignia expira {$a} días después de haber sido expedida.';
 $string['expireperiodh'] = 'Esta insignia expira {$a} horas después de haber sido expedida.';
 $string['expireperiodm'] = 'Esta insignia expira {$a} minutos después de haber sido expedida.';
 $string['expireperiods'] = 'Esta insignia expira {$a} segundos después de haber sido expedida.';
+$string['expiresin'] = 'Caduca {$a}';
 $string['expirydate'] = 'Fecha de expiración';
 $string['expirydate_help'] = 'Opcionalmente, las insignias pueden caducar en una fecha determinada, o en una fecha calculada a partir de la fecha en que se entregó al usuario.';
 $string['externalbadges'] = 'Mis insignias de otros sitios web';
@@ -359,6 +364,8 @@ $string['externalconnectto'] = 'Para mostrar las insignias externas necesita <a 
 $string['fixed'] = 'Fecha fija';
 $string['hidden'] = 'Oculta';
 $string['hiddenbadge'] = 'Por desgracia, el propietario de la insignia no ha puesto disponible esta información.';
+$string['hostedurl'] = 'URL externa';
+$string['hostedurldescription'] = 'URL externa donde está alojada la insignia';
 $string['imageauthoremail'] = 'Email del autor de la imagen';
 $string['imageauthoremail_help'] = 'Si se especifica, la dirección de email del autor de la imagen de la insignia se muestra en la página de la insignia.';
 $string['imageauthorname'] = 'Nombre del autor de la imagen';
@@ -371,6 +378,8 @@ $string['includeauthdetails'] = 'Incluir detalles de autenticación con la mochi
 $string['invalidurl'] = 'URL inválida';
 $string['issuancedetails'] = 'Caducidad de la insignia';
 $string['issuedbadge'] = 'Información de la insignia emitida';
+$string['issuedby'] = 'Emitido por {$a}';
+$string['issuedon'] = 'Emitido {$a}';
 $string['issuerdetails'] = 'Detalles del emisor';
 $string['issueremail'] = 'Email';
 $string['issueremail_help'] = 'Una dirección email de contacto de la organización que emite la aprobación.';
@@ -404,6 +413,7 @@ $string['messagesubject'] = '¡Felicidades, acaba de ganar una insignia!';
 $string['method'] = 'Este criterio se cumple cuando...';
 $string['mingrade'] = 'Calificación mínima requerida';
 $string['month'] = 'Mes(es)';
+$string['moredetails'] = 'Más detalles';
 $string['mybackpack'] = 'Configuración de Mi mochila';
 $string['mybadges'] = 'Mis insignias';
 $string['never'] = 'Nunca';
@@ -527,6 +537,7 @@ $string['sitebadges'] = 'Insignias del sitio';
 $string['sitebadges_help'] = 'Las insignias del sitio sólo pueden ser otorgadas a los usuarios de las actividades relacionadas con el sitio. Estos incluyen completar una serie de cursos o partes de los perfiles de usuario. Las insignias del sitio también pueden ser emitidas manualmente por un usuario para otro.
 
 La insignias para las actividades relacionadas con los cursos deben ser creados a nivel de curso. Las insignias de curso se pueden encontrar en Administración >  Insignias';
+$string['sitebadgetitle'] = 'Insignia del sitio {$a}';
 $string['status'] = 'Estado de la insignia';
 $string['status_help'] = 'El estado de una insignia determina su comportamiento en el sistema:
 

@@ -69,14 +69,14 @@ Sie können entweder einen relativen Fehler oder einen absoluten Fehler mit Fehl
 
 Die genaue Definition eines relativen Fehlers und eines absoluten Fehlers bei mehr als einem Antwortfeld finden Sie in der Dokumentation.';
 $string['correctnessexpert'] = 'Experte';
-$string['correctnesssimple'] = 'Standard';
+$string['correctnesssimple'] = 'Vereinfachter Modus';
 $string['defaultanswermark'] = 'Standardbewertung';
 $string['defaultanswermark_desc'] = 'Standardbewertung für neue Teilfragen';
 $string['defaultanswertype'] = 'Standardantworttyp';
 $string['defaultanswertype_desc'] = 'Standard-Antworttyp für neue Teilfragen';
 $string['defaultcorrectness'] = 'Standard-Bewertungskriterien';
 $string['defaultcorrectness_desc'] = 'Standard-Bewertungskriterien für neue Teilfragen';
-$string['defaultunitpenalty'] = 'Standardabzug';
+$string['defaultunitpenalty'] = 'Standardabzug für Einheiten';
 $string['defaultunitpenalty_desc'] = 'Standardabzug für eine falsche Einheit (0-1)';
 $string['error_algebraic_var'] = 'Syntaxfehler bei der Definition einer algebraischen Variablen.';
 $string['error_answer_missing'] = 'Es wurde keine Antwort definiert.';
@@ -84,7 +84,7 @@ $string['error_answerbox_duplicate'] = 'Jeder Antwortfeldplatzhalter kann nur ei
 $string['error_answertype_mistmatch'] = 'Antworttyp stimmt nicht überein: Ein numerischer Antworttyp erfordert eine Zahl und ein algebraischer Antworttyp erfordert eine Zeichenkette';
 $string['error_criterion'] = 'Das Bewertungskriterium muss mit einer Zahl bewertet werden.';
 $string['error_eval_numerical'] = 'Einige Ausdrücke können nicht numerisch ausgewertet werden.';
-$string['error_fixed_range'] = 'Syntaxfehler in einem festgelegten Bereich.';
+$string['error_fixed_range'] = 'Syntaxfehler bei der Definition eines Intervalls';
 $string['error_forbid_char'] = 'Die Formel oder der Ausdruck enthält verbotene Zeichen oder Operatoren.';
 $string['error_forloop'] = 'Syntaxfehler in der for-Schleife.';
 $string['error_forloop_expression'] = 'Der Ausdruck der for-Schleife muss eine Liste sein.';
@@ -111,13 +111,13 @@ $string['error_vars_array_index_out_of_range'] = 'List index out of range !!!';
 $string['error_vars_array_size'] = 'Die Größe der Liste muss zwischen 1 und 1000 liegen.';
 $string['error_vars_array_type'] = 'Die Elemente in derselben Liste müssen vom gleichen Typ sein, entweder eine Zahl oder eine Zeichenkette.';
 $string['error_vars_array_unsubscriptable'] = 'Die Variable kann nicht indiziert werden.';
-$string['error_vars_bracket_mismatch'] = 'Die Klammer stimmt nicht.';
+$string['error_vars_bracket_mismatch'] = 'Klammersetzung stimmt nicht.';
 $string['error_vars_end_separator'] = 'Es fehlt das Trennzeichen am Ende.';
 $string['error_vars_name'] = 'Die Syntax des Variablennamens ist falsch.';
 $string['error_vars_reserved'] = 'Die Funktion {$a}() ist reserviert und kann nicht als Variable verwendet werden.';
 $string['error_vars_string'] = 'Fehler! Entweder eine Zeichenfolge ohne schließendes Anführungszeichen oder die Verwendung eines nicht akzeptierten Zeichens wie \'.';
 $string['error_vars_undefined'] = 'Die Variable \'{$a}\' wurde nicht definiert.';
-$string['feedback'] = 'Allgemeiner Teil des Feedbacks';
+$string['feedback'] = 'Allgemeines Feedback für diesen Teil';
 $string['feedback_help'] = 'Dieses Teilfeedback wird allen Teilnehmer/innen gezeigt. Es kann globale und lokale Variablen enthalten, die durch ihre Werte ersetzt werden.';
 $string['functiontakesatleasttwo'] = 'Die Funktion {$a} muss mindestens zwei Argumente haben.';
 $string['functiontakesnoargs'] = 'Die Funktion {$a} benötigt keine Argumente.';
@@ -126,16 +126,16 @@ $string['functiontakesoneortwoargs'] = 'The function {$a} must have either one o
 $string['functiontakesthreeargs'] = 'Die Funktion {$a} muss genau drei Argumente haben.';
 $string['functiontakestwoargs'] = 'Die Funktion {$a} muss genau zwei Argumente haben.';
 $string['globalvarshdr'] = 'Variablen';
-$string['illegalformulasyntax'] = 'Unzulässige Formula-Syntax beginnend mit \'{$a}\'';
+$string['illegalformulasyntax'] = 'Unzulässige Formel-Syntax beginnend mit \'{$a}\'';
 $string['incorrectfeedback'] = 'Bei jeder falschen Antwort';
 $string['incorrectfeedback_help'] = 'Diese Rückmeldung wird den Teilnehmer/innen gezeigt, die in diesem Teil keine Bewertung erhalten haben. Es kann globale und lokale Variablen enthalten, die durch deren Werte ersetzt werden.';
-$string['instantiate'] = 'Instanziieren Sie';
+$string['instantiate'] = 'Instanziieren';
 $string['mainq'] = 'Hauptfrage';
 $string['modelanswer'] = 'Musterantwort';
 $string['none'] = 'Keine';
 $string['number'] = 'Zahl';
 $string['number_unit'] = 'Zahl und Einheit';
-$string['numdataset'] = 'Anzahl der Datensätze';
+$string['numdataset'] = 'Anzahl Datensätze';
 $string['numeric'] = 'Numerischer Ausdruck';
 $string['numeric_unit'] = 'Numerischer Ausdruck und Einheit';
 $string['numerical_formula'] = 'Numerische Formel';
@@ -150,7 +150,7 @@ $string['placeholder_help'] = 'Ein Platzhalter wird verwendet, um die Stelle in 
 Bleibt dieses Feld leer, wird der Platzhalter am Ende des Hauptfragetextes angehängt.';
 $string['pleaseputananswer'] = 'Tragen Sie bitte in jedes Eingabefeld eine Antwort ein.';
 $string['pluginname'] = 'Formulas';
-$string['pluginname_help'] = 'Um mit dieser Frage zu beginnen, besuchen Sie bitte <a href="https://moodleformulas.org/">moodleformulas.org</a>.
+$string['pluginname_help'] = 'Für eine Einführung besuchen Sie bitte <a href="https://moodleformulas.org/">moodleformulas.org</a>.
 
 Für eventuelle Fragen besuchen Sie bitte <a href="https://moodleformulas.org/">moodleformulas.org</a>.
 
@@ -169,7 +169,7 @@ Auch <tt> / </tt> kann für inverse Exponenten verwendet werden. Jede Permutatio
 
 Die Teilnehmer/innen müssen das gleiche Eingabeformat verwenden. Zum Beispiel:
 <pre class="prettyprint">1 m<br>0.1 m^2<br>20 m s^(-1)<br>400 kg m/s<br>100 kW</pre>';
-$string['previewerror'] = 'Keine Vorschau verfügbar. Überprüfen Sie Ihre Definition von Zufallsvariablen, globalen Variablen, lokalen Variablen von Teilen und Antworten. Ursprüngliche Fehlermeldung:';
+$string['previewerror'] = 'Keine Vorschau verfügbar. Überprüfen Sie Ihre Definition von zufälligen Variablen, globalen Variablen, lokalen Variablen von Teilen und Antworten. Ursprüngliche Fehlermeldung:';
 $string['privacy:metadata'] = 'Das Plugin für den Fragetyp Formulas speichert keine personenbezogenen Daten.';
 $string['qtextpreview'] = 'Vorschau';
 $string['questiontext'] = 'Fragentext';
@@ -212,10 +212,10 @@ $string['vars2'] = 'Bewertungsvariablen';
 $string['vars2_help'] = 'Alle lokalen Variablen und die Teilnehmerantworten können hier verwendet werden. Siehe Dokumentation für erweiterte Verwendungsmöglichkeiten.';
 $string['varsdata'] = 'Instanziierte Datensätze';
 $string['varsglobal'] = 'Globale Variablen';
-$string['varsglobal_help'] = 'Hier können Formeln angegeben werden, um die instanziierten Zufallsvariablen zu manipulieren (alle Zufallsvariablen sind hier verfügbar). Die vollständige Liste der mathematischen Funktionen und Operatoren finden Sie in der Dokumentation.
+$string['varsglobal_help'] = 'Hier können Formeln angegeben werden, um die instanziierten zufälligen Variablen zu manipulieren (alle zufälligen Variablen sind hier verfügbar). Die vollständige Liste der mathematischen Funktionen und Operatoren finden Sie in der Dokumentation.
 
 <pre class="prettyprint">a = 1.11111;<br>b = exp(3);<br>c = A + a + b;<br>d = sin(1.5*pi()) + c;<br>e = round(a, 0);<br>f = [0,1,2,3][A];<br>g = ["zero","one","two","three"][A];<br>distance = sqrt(a*a + b*b);</pre>';
-$string['varsrandom'] = 'Zufallsvariablen';
+$string['varsrandom'] = 'Zufällige Variablen';
 $string['varsrandom_help'] = 'Zu Beginn eines jeden Versuchs werden für diese Variablen neue Zufallswerte generiert. Dies kann man initiieren, indem man eine Reihe von Elementen definiert, aus denen man auswählen kann:
 <pre class="prettyprint">A = {1,2,3};<br>C = {[1,-1], [2,-2], [3,-3]};<br>E = {10:100:10, 100, 1000};</pre>
 

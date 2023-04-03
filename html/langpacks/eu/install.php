@@ -161,19 +161,19 @@ Horrek Moodle-k berak memoria-muga ezartzea ahalbidetzen du.</li>
 $string['mysqliextensionisnotpresentinphp'] = 'PHP ez da ondo konfiguratu MySQLi hedapenaren bidez MySQL-rekin komunikatzeko. Mesedez konprobatu zure php.ini fitxategia edo PHP berriz konpilatu.';
 $string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
 $string['nativeauroramysqlhelp'] = '<p>Datu-basean gordetzen dira Moodleko ezarpen eta datu gehienak eta hemen konfiguratu behar da.</p>
-<p>Datu-basearen izena, erabiltzailea eta pasahitza derrigorrezko eremuak dira; taulen aurrizkia aukerakoa da.</p>
+<p>Datu-basearen izena, erabiltzailea eta pasahitza derrigorrezko eremuak dira; taulen aurrizkia hautazkoa da.</p>
 <p>Datu-basearen izenak soilik karaktere alfanumerikoak, dolar ($) eta beheko gidoia (_) izan ditzake.</p>
 <p>Datu-basea dagoeneko existitzen ez bada eta erabiltzaileak baimenak baditu, Moodle datu-base berri bat sortzen saiatuko da baimen eta ezarpen egokiekin.</p>
 <p>Kontrolatzailea ez da bateragarria heredatutako MyISAM motorearekin</p>';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>Datu-basean gordetzen dira Moodleko ezarpen eta datu gehienak eta hemen konfiguratu behar da.</p>
-<p>Datu-basearen izena, erabiltzailea eta pasahitza derrigorrezko eremuak dira; taulen aurrizkia aukerakoa da.</p>
+<p>Datu-basearen izena, erabiltzailea eta pasahitza derrigorrezko eremuak dira; taulen aurrizkia hautazkoa da.</p>
 <p>Datu-basearen izenak soilik karaktere alfanumerikoak, dolar ($) eta beheko gidoia (_) izan ditzake.</p>
 <p>Datu-basea dagoeneko existitzen ez bada eta erabiltzaileak baimenak baditu, Moodle datu-base berri bat sortzen saiatuko da baimen eta ezarpen egokiekin.</p>
 <p>Kontrolatzailea ez da bateragarria heredatutako MyISAM motorearekin</p>';
 $string['nativemysqli'] = 'Improved MySQL (native/mysqli)';
 $string['nativemysqlihelp'] = '<p>Datu-basean gordetzen dira Moodleko ezarpen eta datu gehienak eta hemen konfiguratu behar da.</p>
-<p>Datu-basearen izena, erabiltzailea eta pasahitza derrigorrezko eremuak dira; taulen aurrizkia aukerakoa da.</p>
+<p>Datu-basearen izena, erabiltzailea eta pasahitza derrigorrezko eremuak dira; taulen aurrizkia hautazkoa da.</p>
 <p>Datu-basearen izenak soilik karaktere alfanumerikoak, dolar ($) eta beheko gidoia (_) izan ditzake.</p>
 <p>Datu-basea dagoeneko existitzen ez bada eta erabiltzaileak baimenak baditu, Moodle datu-base berri bat sortzen saiatuko da baimen eta ezarpen egokiekin.</p>';
 $string['nativeoci'] = 'Oracle (native/oci)';

@@ -53,8 +53,10 @@ $string['clicktoselectcm'] = 'Egin klik jarduera edo baliabidea aukeratzeko';
 $string['cmselector'] = 'Ikastaro-moduluen hautatzailea';
 $string['coefxp'] = 'Algoritmoaren koefizientea';
 $string['colon'] = '{$a->a}: {$a->b}';
+$string['configblockrankingsnapshot'] = 'Erakutsi lider-panelaren pantaila-irudia';
+$string['configblockrankingsnapshot_help'] = 'Lider-panelaren pantaila-irudiak erabiltzailearen sailkapena erakusten du. Erabiltzailearen inguruan dauden bi pertsonak erakusten ere saiatuko da. Funtzio honek lider-panela gaituta egotea behar du, baita bere rankinga erakustea ere.';
 $string['configdescription'] = 'Sarrera';
-$string['configdescription_help'] = 'Ikaslearen mailaren azpian blokearen sarrera gisa erakutsiko den testu laburra. Ikasleek mezu hau baztertzeko aukera dute, eta hori eginez gero ez dute berriz ikusiko.';
+$string['configdescription_help'] = 'Ikaslearen mailaren azpian blokearen sarrera gisa erakutsiko den mezu laburra. Ikasleek mezu hau baztertzeko aukera dute, eta hori eginez gero ez dute berriz ikusiko.';
 $string['configheader'] = 'Ezarpenak';
 $string['configrecentactivity'] = 'Erakutsi orain dela gutxiko sariak';
 $string['configrecentactivity_help'] = 'Gaituz gero, blokean ikasleak orain dela gutxi puntuak eman dizkien sarien zerrenda laburra erakutsiko du.';
@@ -92,11 +94,11 @@ $string['editinstructions'] = 'Editatu informazioa';
 $string['enablecheatguard'] = 'Gaitu kopiatzearen kontrako babesa';
 $string['enablecheatguard_help'] = 'Kopiatzearen kontrako babesak ikasleek sistemaren erabilera okerra teknika obvioekin egitea mekanismo merke eta sinplearekin saihesten du, hala nola orri bera etengabe freskatzea edo ekintza bera behin eta berriz errepikatzea.
 
-[Informazio gehiago](https://levelup.plus/docs/article/level-up-cheat-guard?ref=blockxp_help)';
+[Informazio gehiago](https://docs.levelup.plus/xp/docs/getting-started/cheat-guard?ref=blockxp_help)';
 $string['enableinfos'] = 'Gaitu informazio-orria';
 $string['enableinfos_help'] = '\'Ez\' aukeratuz gero ikasleek ezingo dute informazio-orria ikusi.';
-$string['enableladder'] = 'Gaitu eskailera';
-$string['enableladder_help'] = '\'Ez\' aukeratuz gero ikasleek ezingo dute eskailera ikusi';
+$string['enableladder'] = 'Gaitu lider-panela';
+$string['enableladder_help'] = '\'Ez\' aukeratuz gero ikasleek ezingo dute lider-panela ikusi';
 $string['enablelevelupnotif'] = 'Gaitu Maila gora! jakinarazpena';
 $string['enablelevelupnotif_help'] = '\'Bai\' aukeratuz gero ikasleek zorion-mezua erakutsiko zaie maila berri batera igotzen direnean.';
 $string['enablelogging'] = 'Gaitu erregistroa';
@@ -124,9 +126,10 @@ Ikastaroko ikasleen ekintzek abiarazten dituzten ekitaldiak zeintzuk diren ident
 
 Baliabide gehigarriak:
 
-- [Nola kalkulatzen dira esperientzia-puntuak?](https://levelup.plus/docs/article/how-are-experience-points-calculated?ref=blockxp_help)
-- [Arazoen konponketa arauekin](https://levelup.plus/docs/article/event-rule-not-working?ref=blockxp_help)';
+- [Nola kalkulatzen dira esperientzia-puntuak?](https://docs.levelup.plus/xp/docs/getting-started/points-calculation?ref=blockxp_help)
+- [Arazoen konponketa arauekin](https://docs.levelup.plus/xp/docs/troubleshooting/event-rule-not-working?ref=blockxp_help)';
 $string['eventtime'] = 'Ekitaldiaren denbora';
+$string['filterbyuser'] = 'Iragazi erabiltzailearen arabera';
 $string['filtermodules'] = 'Iragazki-moduluak';
 $string['for1day'] = 'Egun baterako';
 $string['for1month'] = 'Hilabete baterako';
@@ -135,20 +138,22 @@ $string['for3days'] = '3 egunerako';
 $string['forever'] = 'Betirako';
 $string['forthewholesite'] = 'Gune osorako';
 $string['give'] = 'eman';
-$string['gotofullladder'] = 'Joan eskailera osora';
+$string['gotofullladder'] = 'Joan lider-panel osora';
 $string['grid'] = 'Lauki-sarea';
 $string['hideparticipantsidentity'] = 'Ezkutatu partaideen identitatea';
 $string['hiderank'] = 'Ezkutatu rankinga';
 $string['incourses'] = 'Ikastaroetan';
 $string['ineffective'] = 'Ez-eraginkorra';
 $string['infos'] = 'Informazioa';
+$string['installed'] = 'Instalatuta';
 $string['instructions'] = 'Informazio gehiago';
 $string['invalidxp'] = 'Balio-puntu baliobageak';
 $string['keeplogs'] = 'Gorde erregistroak';
-$string['ladder'] = 'Eskailera';
+$string['ladder'] = 'Lider-panela';
 $string['ladderadditionalcols'] = 'Zutabe gehigarriak';
-$string['ladderadditionalcols_help'] = 'Ezarpen honek eskaileran erakutsiko diren zutabe gehigarriak zehazten du. Zutabe bat baino gehiago aukeratzeko edo aukeratutako bat kentzeko sakatu ezazu CTRL edo CMD tekla klik egitean.';
-$string['ladderempty'] = 'Eskailera hutsik dago une honetan, utzi zaitez hona beranduago!';
+$string['ladderadditionalcols_help'] = 'Ezarpen honek lider-panelean erakutsiko diren zutabe gehigarriak zehazten du. Zutabe bat baino gehiago aukeratzeko edo aukeratutako bat kentzeko sakatu ezazu CTRL edo CMD tekla klik egitean.';
+$string['ladderempty'] = 'Lider-panela hutsik dago une honetan, utzi zaitez hona beranduago!';
+$string['learnmore'] = 'Ikasi gehiago';
 $string['level'] = 'Maila';
 $string['levelbadges'] = 'Mailen dominak';
 $string['levelbadgesformhelp'] = 'Izendatu fitxategiak [maila].[fitxategi luzapena] ereduarekin, esaterako 1.png, 2.jpg... Gomendatutako irudi-tamaina 100x100 da.';
@@ -164,17 +169,20 @@ $string['levelupplus'] = 'Maila gora XP+';
 $string['levelx'] = '{$a}. maila';
 $string['likenotice'] = '<strong>Plugin hau gustoko duzu?</strong> Hartu mesedez tarte bat Moodle.org-ko <a href="{$a->moodleorg}" target="_blank">zure gogokoetara gehitzeko</a> eta <a href="{$a->github}" target="_blank">izarra emateko GitHub-en</a>.';
 $string['limitparticipants'] = 'Mugatu partaideak';
-$string['limitparticipants_help'] = 'Ezarpen honek aginte-panelean nori erakusten zaion kontrolatzen du. Aldamenekoak rankingean uneko erabiltzailearen gainetik eta azpitik dauden partaideak dira. Esaterako, \'Erakutsi 2 aldameneko\' aukeratuta soilik uneko erabiltzailearen rankingeko aurreko eta hurrengo partaideak erakutsiko dira.';
+$string['limitparticipants_help'] = 'Ezarpen honek lider-panelean nori erakusten zaion kontrolatzen du. Aldamenekoak rankingean uneko erabiltzailearen gainetik eta azpitik dauden partaideak dira. Esaterako, \'Erakutsi 2 aldameneko\' aukeratuta soilik uneko erabiltzailearen rankingeko aurreko eta hurrengo partaideak erakutsiko dira.';
 $string['list'] = 'Zerrenda';
 $string['logging'] = 'Erregistratzea';
 $string['manually'] = 'Eskuz';
 $string['maxactionspertime'] = 'Gehieneko ekintza kopurua denbora-tartean';
 $string['maxactionspertime_help'] = 'Emandako denbora-tartean puntuak eskuratzeko zenbatuko diren gehieneko ekintza kopurua. Horien ondorengo ekintzak ez dira kontuan hartuko. Balio hau hutsik badago edo zero bada, ez da aplikatzen.';
+$string['maxlevelexcl'] = 'maila gorena!';
+$string['menu'] = 'Menua';
+$string['missing'] = 'Faltan';
 $string['movecondition'] = 'Mugitu baldintza';
 $string['moverule'] = 'Mugitu araua';
 $string['name'] = 'Izena';
 $string['navinfos'] = 'Informazioa';
-$string['navladder'] = 'Eskailera';
+$string['navladder'] = 'Lider-panela';
 $string['navlevels'] = 'Mailak';
 $string['navlevelssetup'] = 'Konfigurazioa';
 $string['navlog'] = 'Erregistroa';
@@ -184,16 +192,21 @@ $string['navreport'] = 'Txostena';
 $string['navrules'] = 'Arauak';
 $string['navsettings'] = 'Ezarpenak';
 $string['navvisuals'] = 'Itxura';
+$string['nextlevelin'] = 'hurrengo mailarako';
 $string['nodescription'] = 'Deskribapenik ez';
 $string['nologsrecordedyet'] = 'Oraindik ez da erregistrorik gorde.';
 $string['noname'] = 'Izenik ez';
 $string['notesomesettingslocked'] = 'Kontuan izan balitekeela ezarpen batzuk ezin editatzea kudeatzaile batek blokeatu izan baditu.';
 $string['occasionally'] = 'Noizean behin';
 $string['participant'] = 'Partaidea';
+$string['participants'] = 'Partaideak';
 $string['participatetolevelup'] = 'Ikastaroan parte hartu ezazu puntuak irabazi eta mailaz igotzeko!';
 $string['perpagecolon'] = 'Orri bakoitzeko:';
 $string['pickaconditiontype'] = 'Aukeratu baldintza-mota';
+$string['pluginavailabilityxpdesc'] = 'Plugin honek irakasleari jardueren eskuragarritasuna ikaslearen mailaren arabera murrizteko aukera ematen du.';
+$string['pluginenrolxpdesc'] = 'Plugin honek ikaslearen beste ikastaro bateko mailaren araberako ikastaroetako matrikulazio automatikoa gaitzen du.';
 $string['pluginname'] = 'Maila gora XP';
+$string['pluginshortcodesdesc'] = 'Plugin honek irakasleari edukietan XP-rekin lotutako elementuak erabilita (puntuak, maila, lider-panela) bere materialak pertsonalizatzeko aukera ematen dio, baita ikaslearen mailaren arabera edukiak erakutsi ala ezkutatu ere.';
 $string['pluginsoutofsync'] = '__Pluginak sinkronizatu gabe daude!__
 
 Honek esan nahi du _Maila gora XP_ plugina eguneratu duzula baina _Maila gora XP+_ ez. Horrelakorik ez gertatzeko lana egiten dugun arren, baliteke aurrerantzean funtzio batzuk ondo ez funtzionatzea, baita _Maila gora XP_ bera ere.  _Maila gora XP+_ bertsio berrienera eguneratzea gomendatzen dizugu. [Irakurri gehiago]({$a->url})';
@@ -205,7 +218,7 @@ $string['privacy:metadata:log:time'] = 'Gertatu zeneko unea';
 $string['privacy:metadata:log:userid'] = 'Puntuak lortu zituen erabiltzailea';
 $string['privacy:metadata:log:xp'] = 'Ekitaldiak emandako puntuak';
 $string['privacy:metadata:prefintro'] = 'Erabiltzaileak blokearen sarbidea baztertu duen gordetzen du';
-$string['privacy:metadata:prefladderpagesize'] = 'Eskailera ikustean erabiltzailearen orri-tamainaren hobespena';
+$string['privacy:metadata:prefladderpagesize'] = 'Lider-panela ikustean erabiltzailearen orri-tamainaren hobespena';
 $string['privacy:metadata:preflevelup'] = 'Erabiltzaileak maila igotzeagatiko jakinarazpena jaso behar duen gordetzen du';
 $string['privacy:metadata:prefnotices'] = 'Erabiltzaileak laguntza-oharra itxi duen gordetzen du';
 $string['privacy:metadata:prefseenpromo'] = 'Erabiltzaileak iragarpen-orria ikusi duen gordetzen du';
@@ -219,7 +232,7 @@ $string['privacy:path:logs'] = 'Erregistroak';
 $string['progress'] = 'Aurrerapena';
 $string['progressbar'] = 'Aurrerapen-barra';
 $string['promocheatguard'] = 'Kopiatzearen kontrako babes hau ez dago diseinatuta denbora-tarte luzeetan funtzionatzeko. Baloratu ezazu <em>Maila gora XP+</em>-era eguneratzea denbora-tarte hobeak eta beste funtzio batzuk desblokeatzeko. <a href="{$a->url}">Irakurri gehiago hemen</a>.';
-$string['promocontactintro'] = 'Gurekin harremanetan jarri zaitez. Ez dugu kosk egiten eta azkar erantzuten dugu!';
+$string['promocontactintro'] = 'Jarri harremanetan gurekin informazio gehiagorako. Ez dugu kosk egiten eta azkar erantzuten dugu!';
 $string['promocontactus'] = 'Jarri harremanetan';
 $string['promoemailusat'] = 'E-maila bidali iezaguzu _levelup@branchup.tech_ helbidera.';
 $string['promoerrorsendingemail'] = 'Ups! Ezin izan dugu mezua bidali... e-maila zuzenean bidali iezaguzu {$a} helbidera. Eskerrik asko!';
@@ -235,19 +248,29 @@ $string['property:eventname'] = 'Ekitaldiaren izena';
 $string['property:target'] = 'Ekitaldiaren helburua';
 $string['rank'] = 'Rankinga';
 $string['ranking'] = 'Rankinga';
-$string['ranking_help'] = 'Rankinga oraingo erabiltzaileak eskaileran duen kokapen absolutua da. Ranking erlatiboa erabiltzailearen esperientzia-puntuen eta bere aldamenekoen arteko diferentzia da.';
-$string['reallydeleteuserstate'] = 'Erabiltzaile bat ezabatzea eskaileratik kentzeko soilik da erabilgarria. Beste edozein arrazoietarako, horren ordez bere puntuak 0ra aldatzea gomendatzen dugu. Kontuan izan erabiltzaileak ezabatzeak ez duela etorkizunean puntuak lortzeko gaitasunean eragiten.
+$string['ranking_help'] = 'Rankinga oraingo erabiltzaileak lider-panelean duen kokapen absolutua da. Ranking erlatiboa erabiltzailearen esperientzia-puntuen eta bere aldamenekoen arteko diferentzia da.';
+$string['reallydeleteuserstate'] = 'Erabiltzaile bat ezabatzea lider-paneletik kentzeko soilik da erabilgarria. Beste edozein arrazoietarako, horren ordez bere puntuak 0ra aldatzea gomendatzen dugu. Kontuan izan erabiltzaileak ezabatzeak ez duela etorkizunean puntuak lortzeko gaitasunean eragiten.
 
 _Maila gora XP_ gune osorako erabiltzean, erabiltzaileak ezabatzeak txostenetik desagertzea suposatuko du, eta ondorioz ezingo diezu puntuak berriz esleitu. _Maila gora XP_ ikastaroetan erabiliz gero ordea, ikaslea txostenean agertzen jarraituko du ikastaroan matrikulatuta badago.
 
 Ziur zaude erabiltzaile honen puntuak ezabatu nahi dituzula?';
+$string['reallydeleteuserstateandlogs'] = 'Erabiltzaile bat ezabatzeak erabiltzailea lider-paneletik kendu eta berarekin lotutako erregistroak kentzen ditu.
+
+Erregistroak kentzeak erabiltzaileak aurretiko ekintzengatik puntuak berriz lortzea gaitu lezake. Zure asmoa soilik bere puntuazioa berrabiaraztea bada, honen ordez bere puntuazioan 0 jartzea gomendatzen dizugu. Kontuan izan erabiltzaileak ezabatzeak ez duela etorkizunean puntuak lortzeko gaitasunean eragiten.
+
+_Maila gora XP_ gune osorako erabiltzean, erabiltzaileak ezabatzeak txostenetik desagertzea suposatuko du, eta ondorioz ezingo diezu puntuak berriz esleitu. _Maila gora XP_ ikastaroetan erabiliz gero ordea, ikaslea txostenean agertzen jarraituko du ikastaroan matrikulatuta badago.
+
+Ziur zaude erabiltzaile honen puntuak eta erregistroak ezabatu nahi dituzula?';
 $string['reallyresetallcoursestodefaults'] = 'Ziur zaude ikastaro GUZTIETAKO arauak lehenetsitako arauetara berrabiarazi nahi dituzuela? Ekintza honek ez du atzera bueltarik.';
 $string['reallyresetcourserulestodefaults'] = 'Ziur zaude ikastaro honetako arauak lehenetsitako arauetara berrabiarazi nahi dituzuela? Ekintza honek ez du atzera bueltarik.';
 $string['reallyresetdata'] = 'Ziur zaude ikastaro honetako erabiltzaile guztien mailak eta puntuak berrabiarazi nahi dituzula?';
 $string['reallyresetgroupdata'] = 'Ziur zaude talde honetako erabiltzaile guztien mailak eta puntuak berrabiarazi nahi dituzula?';
 $string['reallyreverttopluginsdefaults'] = 'Ziur zaude pluginak proposatutako lehenetsitako balioak berrabiarazi nahi dituzula? Ekintza honek ez du atzera bueltarik.';
 $string['recentrewards'] = 'Orain dela gutxiko sariak';
+$string['recommendedplugins'] = 'Gomendatutako pluginak';
 $string['releasenotes'] = 'Kaleratze-oharrak';
+$string['remaining'] = 'faltan';
+$string['removefilter'] = 'Kendu iragazkia';
 $string['reportisempty'] = 'Txostena hutsik dago, ikasleek oraindik ez dute punturik irabazi.';
 $string['reportisemptyenrolstudents'] = 'Txostena hutsik dago, ikastaroan oraindik ez dago ikaslerik matrikulatuta?';
 $string['requires'] = 'Behar du';
@@ -256,6 +279,7 @@ $string['resetallcoursestodefaultsintro'] = 'Egin klik azpiko botoian ikastaro g
 $string['resetcoursedata'] = 'Berrabiarazi ikastaroko datuak';
 $string['resetcourserulestodefaults'] = 'Berrabiarazi ikastaroko arauak lehenetsitako balioetara';
 $string['resetgroupdata'] = 'Berrabiarazi taldeko datuak';
+$string['resultsfilteredforn'] = '{$a}(e)rako iragazitako emaitzak.';
 $string['reverttopluginsdefaults'] = 'Itzuli pluginaren lehenetsitako balioetara';
 $string['reverttopluginsdefaultsintro'] = 'Erabili azpiko botoia goiko lehenetsitako balioak pluginak lehenetsitakotara itzultzea nahi baduzu. Honek ez du existitzen diren ikastaroetan eragiten.';
 $string['reward'] = 'Saria';
@@ -327,33 +351,33 @@ _Handiago_ eta _txikiago_ arau guztiak bete behar dira edukia erakutsi dadin. Ko
 ```
 
 Kontuan izan kode labur hauek EZIN DIRELA beste baten barruan erabili.';
-$string['shortcode:xpladder'] = 'Erakutsi eskaileraren zati bat.';
-$string['shortcode:xpladder_help'] = 'Modu lehenetsian, eskaileran uneko erabiltzailearen inguruan dauden erabiltzaileak erakutsiko dira.
+$string['shortcode:xpladder'] = 'Erakutsi lider-panelaren zati bat.';
+$string['shortcode:xpladder_help'] = 'Modu lehenetsian, uneko erabiltzailearen inguruan dauden lider-paneleko erabiltzaileak erakutsiko dira.
 
 ```
 [xpladder]
 ```
 
-Erabiltzailearen aldamenekoak erakutsi beharrean eskailerako lehen 10 ikasleak erakutsi nahi badituzu `top` aldagaia erabili ezazu. Aukeran gehienez erakutsiko diren ikasleak zehaztu ditzakezu, esaterako `top=20`.
+Erabiltzailearen aldamenekoak erakutsi beharrean lider-paneleko lehen 10 ikasleak erakutsi nahi badituzu `top` aldagaia erabili ezazu. Aukeran gehienez erakutsiko diren ikasleak zehaztu ditzakezu, esaterako `top=20`.
 
 ```
 [xpladder top]
 [xpladder top=15]
 ```
 
-Taularen azpian eskailera osoa erakusteko esteka automatikoki erakutsiko da, esteka hori ezkutatzeko `hidelink` aldagaia erabili ezazu.
+Taularen azpian lider-panel osoa erakusteko esteka automatikoki erakutsiko da, esteka hori ezkutatzeko `hidelink` aldagaia erabili ezazu.
 
 ```
 [xpladder hidelink]
 ```
 
-Modu lehenetsian taulak ez du aurrerapen-barraren zutabea erakusten. Zutabe gehigarrien artean zutabe hori aukeratzen bada eskaileraren ezarpenetan, `withprogress` aldagaia erabili ezazu.
+Modu lehenetsian taulak ez du aurrerapen-barraren zutabea erakusten. Zutabe gehigarrien artean zutabe hori aukeratzen bada lider-panelaren ezarpenetan, `withprogress` aldagaia erabili ezazu.
 
 ```
 [xpladder withprogress]
 ```
 
-Kontuan izan ikastaro batean taldeak erabiltzen badituzu, eskailerak zein taldeko erabiltzaileak erakutsi behar diren asmatuko du.';
+Kontuan izan ikastaro batean taldeak erabiltzen badituzu, lider-panelak zein taldeko erabiltzaileen lider-panelea erakutsi behar diren asmatuko du.';
 $string['shortcode:xplevelname'] = 'Erakutsi mailaren izena.';
 $string['shortcode:xplevelname_help'] = 'Modu lehenetsian etiketak uneko erabiltzailearen mailaren izena erakusten du.
 Horren ordez, `level` aldagaia erabili dezakezu maila zehatz baten izena erakusteko.
@@ -366,6 +390,7 @@ Horren ordez, `level` aldagaia erabili dezakezu maila zehatz baten izena erakust
 `level` aldagaia zehazten bada eta maila ez bada existitzen, ez da ezer erakutsiko.';
 $string['shortcode:xppoints'] = 'Erakutsi puntu kopurua esperientzia-puntu gisa formateatuta.';
 $string['shortcode:xpprogressbar'] = 'Oraingo erabiltzailea hurrengo mailara heltzeko aurrerapen-barra.';
+$string['somefeaturesrequireotherplugins'] = 'Funtzionalitate batzuk plugin gehigarriak instalatzea behar dute.';
 $string['someoneelse'] = 'Beste norbait';
 $string['somethinghappened'] = 'Zerbait gertatu da';
 $string['taskcollectionloggerpurge'] = 'Garbitu bildutako erregistroak';
@@ -397,6 +422,7 @@ $string['usingalgo'] = 'Algoritmoa erabilita';
 $string['value'] = 'Balioa';
 $string['valuessaved'] = 'Balioak ondo gorde dira.';
 $string['viewas'] = 'Ikusi honela';
+$string['viewlogs'] = 'Ikusi erregistroak';
 $string['viewtheladder'] = 'Ikusi eskailera';
 $string['visualsintro'] = 'Igo irudiak mailen itxura pertsonalizatzeko.';
 $string['wewillreplyat'] = 'Hurrengo helbidean erantzungo zaitugu: _{$a}_.';

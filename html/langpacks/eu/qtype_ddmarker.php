@@ -41,9 +41,9 @@ $string['dropbackground'] = 'Atzeko planoko irudia, bertara markatzaileak eramat
 $string['dropzone'] = '{$a} askatze-eremua';
 $string['dropzoneheader'] = 'Askatze-eremuak';
 $string['dropzones'] = 'Askatze-eremuak';
-$string['dropzones_help'] = 'Eramateko tokiak koordenatuak idatzita edo goiko aurrebistan euren kokapenera eramanda zehaztu daitezke.
+$string['dropzones_help'] = 'Askatze-eremuak koordenatuak idatzita edo goiko aurrebistan euren kokapenera eramanda zehaztu daitezke.
 
-Lehen aldiz forma bat (zirkulua, laukizuzena edo poligonoa) aukeratzen denean aurrebistaren goiko ezkerraldean eramateko toki berri bat gehituko da. Markatzaileen atala tolestea lagungarria izan daiteke eramateko tokiak editatu bitartean aurrebista ikusi ahal izateko.
+Lehen aldiz forma bat (zirkulua, laukizuzena edo poligonoa) aukeratzen denean aurrebistaren goiko ezkerraldean askatze-eremu berri bat gehituko da. Markatzaileen atala tolestea lagungarria izan daiteke askatze-eremuak editatu bitartean aurrebista ikusi ahal izateko.
 
 Forma bat editatzeko aurrena aurrebistan forma horretan klik egin ezazu edizio-kontrolak erakusteko. Forma mugitu dezakezu erdiko kontrola erabilita, edo formaren neurriak egokitu ertzetako kontrolak erabilita.
 
@@ -59,7 +59,7 @@ Markatzailearen testu bat aukeratzeak testu hori aurrebistako formara gehituko d
 $string['followingarewrong'] = 'Ondoko markatzaileak okerreko tokian jarri dira: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Hurrengo markatzaileak modu ezegokian kokatu dira: {$a}. Nabarmendutako markatzaileak orain kokapen egokietan erakusten dira.<br /> Egin klik markatzailean baimendutako eremua nabarmentzeko.';
 $string['formerror_nobgimage'] = 'Atzeko planoko irudi bat aukeratu behar duzu hartu eta eramateko eremurako.';
-$string['formerror_noitemselected'] = 'Eramateko toki bat zehaztu duzu baina ez duzu zehaztu bertara eraman behar den markatzailea zein den.';
+$string['formerror_noitemselected'] = 'Askatze-eremu bat zehaztu duzu baina ez duzu zehaztu bertara eraman behar den markatzailea zein den.';
 $string['formerror_nosemicolons'] = 'Ez dago puntu eta komarik zure koordenatuen katean. {$a->shape} batentzat koordenatuak horrela adierazi beharko lirateke: {$a->coordsstring}.';
 $string['formerror_onlysometagsallowed'] = 'Soilik "{$a}" etiketak baimentzen dira markatzailearen etiketan.';
 $string['formerror_onlyusewholepositivenumbers'] = 'Mesedez erabili soilik zenbaki oso positiboak formen x,y koordenatuak edota zabalera eta altuera zehazteko. {$a->shape} batentzat koordenatuak horrela adierazi beharko lirateke: {$a->coordsstring}.';
@@ -77,14 +77,14 @@ $string['nolabel'] = 'Ez dago testurik etiketan';
 $string['noofdrags'] = 'Kopurua';
 $string['pleasedragatleastonemarker'] = 'Zure erantzuna osatu gabe dago; gutxienez markatzaile bat eraman behar duzu irudira.';
 $string['pluginname'] = 'Hartu eta eraman markatzaileak';
-$string['pluginname_help'] = 'Hartu eta eraman markatzaileak motako galderek ikasleei testu-etiketak hartu eta atzeko planoko irudi batean zehaztutako eramateko tokietara eramatea eskatzen diete.';
+$string['pluginname_help'] = 'Hartu eta eraman markatzaileak motako galderek ikasleei testu-etiketak hartu eta atzeko planoko irudi batean zehaztutako askatze-eremuetara eramatea eskatzen diete.';
 $string['pluginnameadding'] = 'Hartu eta eraman markatzaileak motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman markatzaileak motako galdera editatzen';
 $string['pluginnamesummary'] = 'Markatzaileak hartu eta eraman dira atzeko planoko irudira.
 
 Oharra: Galdera-mota hau ez dago ikuspen urritasuna duten erabiltzaileentzako eskuragarri.';
 $string['previewareaheader'] = 'Aurrebista';
-$string['previewareamessage'] = 'Aukeratu atzeko planoko irudia, zehaztu markatzaileen testu-etiketak eta zehaztu testu-etiketa hauek irudiaren gainean kokatzeko eramateko tokiak.';
+$string['previewareamessage'] = 'Aukeratu atzeko planoko irudia, zehaztu markatzaileen testu-etiketak eta zehaztu testu-etiketa hauek irudiaren gainean kokatzeko askatze-eremuak.';
 $string['privacy:metadata'] = 'Hartu eta eraman markatzaileak galdera mota pluginak egileari aukera lehenetsiak erabiltzaile hobespen gisa gordetzea baimentzen dio.';
 $string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
 $string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
@@ -100,7 +100,7 @@ $string['shape_polygon_lowercase'] = 'poligonoa';
 $string['shape_rectangle'] = 'Laukizuzena';
 $string['shape_rectangle_coords'] = 'x,y;w,h (non x,y goiko ezkerreko ertzaren koordenatuak diren eta w eta h laukizuzenaren zabalera eta altuera diren)';
 $string['shape_rectangle_lowercase'] = 'laukizuzena';
-$string['showmisplaced'] = 'Nabarmendu eramateko tokiak bertara markatzaile egokiak eraman ez badira';
+$string['showmisplaced'] = 'Nabarmendu askatze-eremuak bertara markatzaile egokiak eraman ez badira';
 $string['shuffleimages'] = 'Nahastu elementu eramangarriak galderari erantzuten zaion bakoitzean';
 $string['stateincorrectlyplaced'] = 'Adierazi zeintzuk diren modu ezegokian kokatutako markatzaileak';
 $string['summariseplace'] = '{$a->no}. {$a->text}';

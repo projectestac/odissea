@@ -96,6 +96,7 @@ $string['personaltutees'] = 'التلاميذ الخصوصيين';
 $string['personaltutors'] = 'المعلمون الخصوصيون';
 $string['personaltutorstudents'] = 'تلامذة المعلم الخصوصي';
 $string['pluginname'] = 'إفادتي';
+$string['print_report'] = 'طباعة';
 $string['privacy:metadata:report_myfeedback'] = 'ملاحظات الانطباعات الذاتية وإفادة Turnitin المدخلة يدويًا من قبل المستخدم';
 $string['privacy:metadata:report_myfeedback:feedback'] = 'إفادة Turnitin المدخلة يدويًا من قبل المستخدم';
 $string['progadmin_dashboard'] = 'دفة قيادة المشرف على القسم';

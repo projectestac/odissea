@@ -33,6 +33,7 @@ $string['criteriaset'] = 'Criteria set';
 $string['criteriaset_help'] = 'Click this button to select a previously saved criteria set to automatically configure the criteria details below.';
 $string['criteriasetconfirmdelete'] = 'Are you sure you want to permanently delete the criteria set "{$a}"?';
 $string['criteriasetconfirmuse'] = 'Are you sure? This will overwrite the criteria that are currently configured for this assignment.';
+$string['criteriasetdelete'] = 'Delete criteria set';
 $string['criteriasetempty'] = 'You must define at least one criterion before saving as a set.';
 $string['criteriasetemptytitle'] = 'Criteria set is empty';
 $string['criteriasetname'] = 'Criteria set name';

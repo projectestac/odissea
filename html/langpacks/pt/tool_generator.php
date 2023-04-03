@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['bigfile'] = 'Ficheiros grandes {$a}';
 $string['courseexplanation'] = 'Esta ferramenta cria disciplinas padrão de teste que incluem muitas secções, atividades e ficheiros.
 
-Com isto pretende-se fornecer um método padrão para testar o nível de fiabilidade e desempenho de vários componentes do sistema (tais como efetuar e restaurar cópias de segurança).
+Com isto pretende-se fornecer um método padrão para testar o nível de fiabilidade e desempenho de vários componentes do sistema (tais como, efetuar e restaurar cópias de segurança).
 
 Este teste é importante na medida em que já houve casos em que o sistema não funcionou (por exemplo, numa disciplina com 1000 atividades).
 
@@ -36,7 +36,7 @@ As disciplinas criadas com base nesta funcionalidade podem ocupar muito espaço 
 
 **Não use esta funcionalidade em sites em produção. Use apenas num servidor de desenvolvimento.
 
-(Para evitar um uso acidental, esta funcionalidade encontra-se desativada, a não ser que selecione o nível PROGRAMADOR nas Mensagens de erro.)';
+(Para evitar um uso acidental, esta funcionalidade encontra-se desativada, a não ser que selecione o nível PROGRAMADOR em Erros.)';
 $string['coursesize_0'] = 'XS (aprox. 10KB; criada em aprox. 1 segundo)';
 $string['coursesize_1'] = 'S (aprox. 10MB; criada em aprox. 30 segundos)';
 $string['coursesize_2'] = 'M (aprox. 100MB; criada em aprox. 2 minutos)';

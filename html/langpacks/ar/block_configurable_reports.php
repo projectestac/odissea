@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitypost'] = 'منشورات النشاط';
+$string['activityview'] = 'معاينات النشاط';
 $string['addreport'] = 'أضف تقرير';
 $string['average'] = 'معدل';
 $string['categories'] = 'الاقسام';
@@ -89,6 +91,7 @@ $string['pieareaname'] = 'الاسم';
 $string['pieareavalue'] = 'القيمة';
 $string['pluginname'] = 'التقارير القابلة للتهيئة';
 $string['previousdays'] = 'الأيام السابقة';
+$string['printreport'] = 'طباعة التقرير';
 $string['privacy:metadata:block_configurable_reports:name'] = 'اسم التقرير';
 $string['privacy:metadata:block_configurable_reports:summary'] = 'وصف التقرير';
 $string['puserfield'] = 'قيمة حقل المستخدم';

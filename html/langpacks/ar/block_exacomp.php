@@ -77,6 +77,7 @@ $string['no_permission_user'] = 'لم يتم وضع الصلاحيات لدور 
 $string['optional_step'] = 'ليس هناك مشاركون في مساقك بعد. إذا أردت ضم البعض منهم، يرجى استعمال هذا الرابط.';
 $string['period'] = 'الفاصل الزمني';
 $string['points_limit_forcourse'] = 'أعلى قيمة للنقاط';
+$string['print'] = 'طباعة';
 $string['privacy:metadata:block_exacompcmassign:timemodified'] = 'الطابع الزمني';
 $string['privacy:metadata:block_exacompcmassign:userid'] = 'مُعرَّفات الطلاب';
 $string['privacy:metadata:block_exacompcrossstud_mm:studentid'] = 'الطالب';

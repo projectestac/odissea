@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errbadxmlformat'] = 'Erro - formato XML inválido';
-$string['errduplicategradeidnumber'] = 'Erro - existem duas notas com o número de identificação \'{$a}\' nesta disciplina. Tal não devia ser possível.';
+$string['errduplicategradeidnumber'] = 'Erro - existem nesta disciplina dois itens de avaliação com o número de identificação \'{$a}\'. Tal não devia ser possível.';
 $string['errduplicateidnumber'] = 'Erro - número de identificação duplicado';
-$string['errincorrectgradeidnumber'] = 'Erro - o número de identificação \'{$a}\' do ficheiro de importação não corresponde a nenhuma nota.';
+$string['errincorrectgradeidnumber'] = 'Erro - o número de identificação \'{$a}\' do ficheiro de importação não corresponde a nenhuma item de avaliação.';
 $string['errincorrectidnumber'] = 'Erro - número de identificação incorreto';
 $string['errincorrectuseridnumber'] = 'Erro - o número de identificação \'{$a}\' do ficheiro de importação não corresponde a nenhum utilizador.';
 $string['error'] = 'Ocorreram erros';

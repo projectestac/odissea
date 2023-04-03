@@ -35,6 +35,7 @@ $string['attemptgamenow'] = 'Jetzt Spiel starten';
 $string['attemptlast'] = 'Letzter Versuch';
 $string['attempts'] = 'Versuche';
 $string['attemptsonly'] = 'Nur Teilnehmer mit Versuchen zeigen';
+$string['bookquiz_cant_update_lastchaperid'] = 'Die Tabelle game_bookquiz kann mit lastchapterid nicht zu %d aktualisiert werden';
 $string['bookquiz_categories'] = 'Kategorien';
 $string['bookquiz_chapters'] = 'Kapitel';
 $string['bookquiz_empty'] = 'Das Buch ist leer';

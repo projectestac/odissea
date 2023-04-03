@@ -40,7 +40,7 @@ $string['check_crawlers_info'] = 'サーチエンジンはゲストとして入�
 $string['check_crawlers_name'] = 'Googleに公開する';
 $string['check_crawlers_ok'] = 'サーチエンジンによるアクセスは有効にされていません。';
 $string['check_defaultuserrole_details'] = '<p>すべてのログインユーザにはデフォルトのユーザロールのケイパビリティが割り当てられます。このロールにリスクのあるケイパビリティが許可されていなことを確認してください。</p>
-<p>デフォルトのユーザロールでサポートされているレガシータイプのロールは「認証済みユーザ」のみです。コース閲覧ケイパビリティは有効にしないでください。</p>';
+<p>デフォルトのユーザロールでサポートされているレガシタイプのロールは「認証済みユーザ」のみです。コース閲覧ケイパビリティは有効にしないでください。</p>';
 $string['check_defaultuserrole_error'] = 'デフォルトユーザロール「 {$a} 」は正しくない定義です!';
 $string['check_defaultuserrole_name'] = 'すべてのユーザのデフォルトロール';
 $string['check_defaultuserrole_notset'] = 'デフォルトロールが設定されていません。';
@@ -68,7 +68,7 @@ $string['check_frontpagerole_name'] = 'フロントページロール';
 $string['check_frontpagerole_notset'] = 'フロントページロールが設定されていません。';
 $string['check_frontpagerole_ok'] = 'フロントページロール定義はOKです。';
 $string['check_guestrole_details'] = '<p>ゲストロールはゲストに使用され、ログインユーザおよび一時的なゲストコースアクセスには使用されません。このロールにリスクのあるケイパビリティが許可されているかどうか確認してください。</p>
-<p>ゲストロールでサポートされているレガシータイプのロールは「ゲスト」のみです</p>';
+<p>ゲストロールでサポートされているレガシタイプのロールは「ゲスト」のみです</p>';
 $string['check_guestrole_error'] = 'ゲストロール「 {$a} 」の定義は正しくありません!';
 $string['check_guestrole_name'] = 'ゲストロール';
 $string['check_guestrole_notset'] = 'ゲストロールが設定されていません。';

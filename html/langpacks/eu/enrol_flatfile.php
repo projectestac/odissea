@@ -53,8 +53,8 @@ eremuok balio hauek izan ditzakete:
 * role - student | teacher | teacheredit
 * user idnumber - erabiltzaile taulako ID zenbakia
 * course idnumber - erabiltzaile taulako ID zenbakia
-* starttime - hasiera data (Unix-eko epoch-etik igarotako segundoak) - aukerazkoa
-* endtime - amaiera data (Unix-eko epoch-etik igarotako segundoak) - aukerazkoa
+* starttime - hasiera data (Unix-eko epoch-etik igarotako segundoak) - hautazkoa
+* endtime - amaiera data (Unix-eko epoch-etik igarotako segundoak) - hautazkoa
 
 Honen moduko zerbait izan daiteke:
 <pre class="informationbox">

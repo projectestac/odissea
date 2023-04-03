@@ -34,7 +34,7 @@ $string['availablelangs'] = 'Pacotes linguísticos disponíveis';
 $string['caution'] = 'Atenção';
 $string['chooselanguage'] = 'Selecione um idioma';
 $string['chooselanguagehead'] = 'Selecione um idioma';
-$string['chooselanguagesub'] = 'Selecione o idioma a utilizar durante a instalação. Poderá depois selecionar outro(s) idioma(s) para o site e para os utilizadores.';
+$string['chooselanguagesub'] = 'Selecione o idioma a utilizar durante a instalação. O idioma escolhido será definido como o predefinido mas poderá depois selecionar outro(s) idioma(s) para o site e para os utilizadores.';
 $string['cliadminemail'] = 'Novo endereço de e-mail do utilizador administrador';
 $string['cliadminpassword'] = 'Nova senha do administrador';
 $string['cliadminusername'] = 'Nome de utilizador do administrador';
@@ -63,10 +63,10 @@ $string['databasesocket'] = 'Socket Unix';
 $string['databasetypehead'] = 'Escolha o <i>driver</i> da base de dados';
 $string['databasetypesub'] = 'O Moodle permite a utilização de vários tipos de base de dados. Contacte o administrador do servidor caso não haja informação disponível sobre este assunto.';
 $string['databaseuser'] = 'Utilizador da base de dados';
-$string['dataroot'] = 'Pasta de dados';
-$string['datarooterror'] = 'Não foi possível encontrar ou criar a pasta de dados que indicada. Corrija o caminho indicado ou crie a pasta manualmente.';
-$string['datarootpermission'] = 'Permissões da pasta de dados';
-$string['datarootpublicerror'] = 'A pasta de dados que especificou está acessível diretamente através da Internet. Por questões de segurança deve utilizar uma pasta diferente.';
+$string['dataroot'] = 'Pasta dos dados';
+$string['datarooterror'] = 'Não foi possível encontrar ou criar a pasta dos dados que indicada. Corrija o caminho indicado ou crie a pasta manualmente.';
+$string['datarootpermission'] = 'Permissões da pasta dos dados';
+$string['datarootpublicerror'] = 'A pasta dos dados que especificou está acessível diretamente através da Internet. Por questões de segurança deve utilizar uma pasta diferente.';
 $string['dbconnectionerror'] = 'Não foi possível estabelecer a ligação à base de dados indicada. Verifique a configuração da base de dados.';
 $string['dbcreationerror'] = 'Erro na criação da base de dados. Não foi possível criar a base de dados com as configurações indicadas.';
 $string['dbhost'] = 'Servidor do alojamento';
@@ -76,13 +76,13 @@ $string['dbprefix'] = 'Prefixo das tabelas';
 $string['dbtype'] = 'Tipo';
 $string['directorysettings'] = '<p>Confirme as localizações para esta instalação do Moodle.</p>
 <p><b>Endereço Web:</b>
-Indique o endereço web completo de acesso ao Moodle. Caso o site possa ser acedido através de vários URLs, selecione o mais frequentemente utilizado pelos alunos. Não inclua a barra "/" no fim do URL.</p>
+Indique o endereço web completo de acesso ao Moodle. Caso o site possa ser acedido através de vários URL, selecione o mais frequentemente utilizado pelos alunos. Não inclua a barra "/" no fim do URL.</p>
 <p><b>Pasta do Moodle:</b>
 Indique o caminho completo para a pasta desta instalação. Assegure-se de que as maiúsculas e minúsculas estão corretas.</p>
-<p><b>Pasta de dados:</b>
-Pasta onde são guardados os ficheiros enviados para o Moodle. O utilizador do Moodle no servidor web (normalmente <b>nobody</b> ou <b>apache</b>) deve ter permissão de <b>leitura</b> e <b>escrita</b> nessa pasta, mas esta não deve estar diretamente acessível através da Internet. Se não existir, será tentada a criação da pasta.</p>';
+<p><b>Pasta dos dados:</b>
+Indique a pasta onde serão guardados os ficheiros enviados para o Moodle. O utilizador do Moodle no servidor web (normalmente <b>nobody</b> ou <b>apache</b>) deve ter permissão de <b>leitura</b> e <b>escrita</b> nessa pasta, mas esta não deve estar diretamente acessível através da Internet. Se não existir, será tentada a criação da pasta.</p>';
 $string['directorysettingshead'] = 'Confirme as localizações para esta instalação do Moodle';
-$string['directorysettingssub'] = '<p>Confirme as localizações para esta instalação do Moodle.</p><p><b>Endereço Web:</b>Indique o endereço web completo de acesso ao Moodle. Caso o site possa ser acedido através de vários URLs, selecione o mais frequentemente utilizado pelos alunos. Não inclua a barra "/" no fim do URL.</p><p><b>pasta do Moodle:</b>Indique o caminho completo para a pasta desta instalação. Assegure-se de que as maiúsculas e minúsculas estão corretas.</p><p><b>pasta de dados:</b>Local onde são guardados os ficheiros enviados para o Moodle. O utilizador do Moodle no servidor web (normalmente <b>nobody</b> ou <b>apache</b>) deve ter permissão de <b>leitura</b> e <b>escrita</b> nessa pasta, mas esta não deve estar diretamente acessível através da Internet.</p>';
+$string['directorysettingssub'] = '<p>Confirme as localizações para esta instalação do Moodle.</p><p><b>Endereço Web:</b> Indique o endereço web completo de acesso ao Moodle. Caso o site possa ser acedido através de vários URL, selecione o mais frequentemente utilizado pelos alunos. Não inclua a barra "/" no fim do URL.</p><p><b>Pasta do Moodle:</b> Indique o caminho completo para a pasta desta instalação. Assegure-se de que as maiúsculas e minúsculas estão corretas.</p><p><b>Pasta dos dados:</b> Indique a pasta onde serão guardados os ficheiros enviados para o Moodle. O utilizador do Moodle no servidor web (normalmente <b>nobody</b> ou <b>apache</b>) deve ter permissão de <b>leitura</b> e <b>escrita</b> nessa pasta, mas esta não deve estar diretamente acessível através da Internet.</p>';
 $string['dirroot'] = 'Pasta do Moodle';
 $string['dirrooterror'] = 'O valor do campo <b>pasta do Moodle</b> não parece ser válido porque não foram encontrados os ficheiros de instalação do Moodle. Foi reposto o valor original indicado em baixo.';
 $string['download'] = 'Descarregar';
@@ -99,7 +99,7 @@ $string['fail'] = 'Falha';
 $string['fileuploads'] = 'Envio de ficheiros';
 $string['fileuploadserror'] = 'Esta opção deve estar ativa';
 $string['fileuploadshelp'] = '<p>Aparentemente a possibilidade de enviar ficheiros está desativada ao nível do servidor.</p><p>Neste caso, o Moodle poderá ser instalado, mas, sem essa funcionalidade, não será possível, por exemplo, os utilizadores submeterem ficheiros nas disciplinas ou definir uma foto para o seu perfil.</p><p>Para ativar o envio de ficheiros é necessário alterar a configuração do PHP (ficheiro php.ini), definindo o valor do parâmetro <b>file_upload</b> para "1".</p>';
-$string['inputdatadirectory'] = 'Pasta de dados:';
+$string['inputdatadirectory'] = 'Pasta dos dados:';
 $string['inputwebadress'] = 'Endereço web:';
 $string['inputwebdirectory'] = 'Pasta do Moodle:';
 $string['installation'] = 'Instalação';
@@ -140,18 +140,18 @@ $string['nativesqlsrvnodriver'] = 'Os Drivers Microsoft para servidores SQL para
 $string['ociextensionisnotpresentinphp'] = 'O PHP não foi corretamente configurado com a extensão OCI8 (de forma a permitir a comunicação com servidor Oracle). Verifique o ficheiro de configuração ou recompile o PHP.';
 $string['pass'] = 'Instalação realizada com sucesso!';
 $string['paths'] = 'Caminhos';
-$string['pathserrcreatedataroot'] = 'O programa de instalação não conseguiu criar a pasta de dados <b>{$a->dataroot}</b>.';
+$string['pathserrcreatedataroot'] = 'O programa de instalação não conseguiu criar a pasta dos dados <b>{$a->dataroot}</b>.';
 $string['pathshead'] = 'Confirmar caminhos';
-$string['pathsrodataroot'] = 'A pasta de dados não tem permissões de escrita.';
+$string['pathsrodataroot'] = 'A pasta dos dados é só de leitura (não permite escrita).';
 $string['pathsroparentdataroot'] = 'A pasta ascendente <b>{$a->parent}</b> não tem permissões de escrita. O programa de instalação não conseguiu criar a pasta <b>{$a->dataroot}</b>.';
 $string['pathssubadmindir'] = 'Alguns servidores Web utilizam a pasta <strong>admin</strong> em URLs especiais de acesso a funcionalidades especiais, como é o caso de painéis de controlo. Algumas situações podem criar conflitos com a localização normal das páginas de administração do Moodle. Estes problemas podem ser resolvidos renomeando a pasta <strong>admin</strong> na instalação do Moodle e indicando aqui o novo nome a utilizar. Exemplo:<br /><br /><b>moodleadmin</b><br /><br />Esta ação resolverá os problemas de acesso das hiperligações para as funcionalidades de administração do Moodle.';
 $string['pathssubdataroot'] = '<p>Pasta onde o Moodle irá armazenar todo o conteúdo de ficheiros enviados pelos utilizadores.</p>
-<p>Esta pasta deve ser legível e gravável pelo utilizador do servidor web (geralmente \'www-data\', \'nobody\', ou \'apache\').</p>
+<p>O utilizador do Moodle no servidor web (normalmente <b>nobody</b>, <b>apache</b> ou <b>www-data</b>) deve ter permissão de <b>leitura</b> e <b>escrita</b> nessa pasta.
 <p>Não deve ser acessível diretamente através da web.</p>
 <p>Se a pasta não existir, o processo de instalação tentará criá-la.</p>';
 $string['pathssubdirroot'] = 'Caminho completo para a pasta que contém o código Moodle.';
 $string['pathssubwwwroot'] = 'Endereço web completo de acesso ao Moodle. Não é possível aceder ao Moodle usando mais do que um endereço. Se o site tiver mais do que um endereço público, devem ser configurados redirecionamentos permanentes em todos eles, à exceção deste. Se o site pode ser acedido a partir da Internet e de Intranet, use o endereço público aqui. Se o endereço atual não está correto, altere o endereço indicado na barra de endereço do seu navegador e reinicie a instalação.';
-$string['pathsunsecuredataroot'] = 'A localização da pasta de dados não é segura';
+$string['pathsunsecuredataroot'] = 'A localização da pasta dos dados não é segura.';
 $string['pathswrongadmindir'] = 'A pasta <b>admin</b> não existe';
 $string['pgsqlextensionisnotpresentinphp'] = 'O PHP não foi corretamente configurado com a extensão PGSQL (de forma a permitir a comunicação com servidor PostgreSQL). Verifique o ficheiro de configuração ou recompile o PHP.';
 $string['phpextension'] = 'Extensão <b>{$a}</b> do PHP';

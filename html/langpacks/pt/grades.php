@@ -68,12 +68,12 @@ $string['aggregation_help'] = 'A forma de cálculo determina como é calculada a
 $string['aggregation_link'] = 'nota/cálculo';
 $string['aggregationcoef'] = 'Peso';
 $string['aggregationcoefextra'] = 'Crédito extra';
-$string['aggregationcoefextra_help'] = 'Se a forma de cálculo é a \'Natural\' ou a \'Média ponderada simples\' e a caixa de seleção do Crédito extra está assinalada, o item da nota máxima não é adicionado à nota máxima da categoria, resultando na possibilidade de atingir a nota máxima (ou notas acima do máximo se ativo pelo administrador) na categoria sem ter a nota máxima em todos os itens.
+$string['aggregationcoefextra_help'] = 'Se a forma de cálculo é a \'Natural\' ou a \'Média ponderada simples\' e a caixa de seleção do Crédito extra está assinalada, a nota máxima do item de avaliação não é adicionado à nota máxima da categoria, resultando na possibilidade de atingir a nota máxima (ou notas acima do máximo, se ativado pelo administrador) na categoria sem ter a nota máxima em todos os itens.
 
 Se a forma de cálculo for a \'Média (com créditos extra)\' e o crédito extra está configurado para um valor maior que 0, este é o fator pelo qual a nota é multiplicada antes de a adicionar ao total após o cálculo da média.';
 $string['aggregationcoefextra_link'] = 'nota/cálculo';
 $string['aggregationcoefextrasum'] = 'Crédito extra';
-$string['aggregationcoefextrasum_help'] = 'Se a caixa de seleção do Crédito extra estiver selecionada, o item da nota máxima não é adicionado à nota máxima da categoria, resultando na possibilidade de atingir a nota máxima (ou notas acima do máximo se ativo pelo administrador) na categoria sem ter a nota máxima em todos os os itens.';
+$string['aggregationcoefextrasum_help'] = 'Se a caixa de seleção do Crédito extra está assinalada, a nota máxima do item de avaliação não é adicionado à nota máxima da categoria, resultando na possibilidade de atingir a nota máxima (ou notas acima do máximo, se ativado pelo administrador) na categoria sem ter a nota máxima em todos os itens.';
 $string['aggregationcoefextrasum_link'] = 'nota/cálculo';
 $string['aggregationcoefextrasumabbr'] = '+';
 $string['aggregationcoefextraweight'] = 'Peso do Crédito extra';
@@ -109,7 +109,7 @@ $string['bonuspoints'] = 'Pontos de bónus';
 $string['bulkcheckboxes'] = 'Caixas de seleção em massa';
 $string['calculatedgrade'] = 'Nota calculada';
 $string['calculation'] = 'Cálculo da nota';
-$string['calculation_help'] = 'O cálculo da nota é a fórmula usada para determinar as notas. A fórmula deve começar com um sinal de igualdade (=) e usar operadores comuns matemáticos, tais como max, min e sum. Pode ainda, se pretender, incluir outros itens de avaliação inserindo os respetivos ID entre parêntesis retos.';
+$string['calculation_help'] = 'O cálculo da nota é a fórmula usada para determinar as notas. A fórmula deve começar com um sinal de igualdade (=) e usar operadores matemáticos comuns, tais como, max, min e sum. Pode ainda, se pretender, incluir outros itens de avaliação inserindo os respetivos ID entre parêntesis retos.';
 $string['calculation_link'] = 'nota/cálculo';
 $string['calculationadd'] = 'Adicionar cálculo';
 $string['calculationedit'] = 'Editar cálculo';
@@ -206,7 +206,7 @@ $string['errorupdatinggradecategoryaggregation'] = 'Ocorreu um erro ao atualizar
 $string['errorupdatinggradeitemaggregationcoef'] = 'Ocorreu um erro ao atualizar o peso do item de avaliação com o ID {$a->id}';
 $string['eventgradedeleted'] = 'Nota eliminada';
 $string['eventgradeitemcreated'] = 'Item de avaliação criado';
-$string['eventgradeitemdeleted'] = 'Item da nota apagado';
+$string['eventgradeitemdeleted'] = 'Item de avaliação apagado';
 $string['eventgradeitemupdated'] = 'Item de avaliação atualizado';
 $string['eventgradelettercreated'] = 'Nota alfabética criada';
 $string['eventgradeletterdeleted'] = 'Nota alfabética apagada';
@@ -312,15 +312,15 @@ $string['gradeitemadvanced_help'] = 'Selecione todos os elementos que devem ser 
 $string['gradeitemislocked'] = 'Esta atividade está bloqueada na pauta. As alterações realizadas nas notas desta atividade não serão copiadas para a pauta, até que ela seja desbloqueada.';
 $string['gradeitemlocked'] = 'Nota bloqueada';
 $string['gradeitemmembersselected'] = 'Excluído(s) da avaliação';
-$string['gradeitemminmax'] = 'Nota mínima e máxima conforme especificado nas configurações do item da pauta';
+$string['gradeitemminmax'] = 'Nota mínima e máxima conforme especificado nas configurações do item de avaliação';
 $string['gradeitemnonmembers'] = 'Incluído(s) na avaliação';
 $string['gradeitemremovemembers'] = 'Incluir na avaliação';
 $string['gradeitems'] = 'Itens de avaliação';
-$string['gradeitemsettings'] = 'Configurações de itens de avaliação';
+$string['gradeitemsettings'] = 'Configurações dos itens de avaliação';
 $string['gradeitemsinc'] = 'Itens de avaliação a incluir';
 $string['gradeletter'] = 'Nota alfabética';
 $string['gradeletter_help'] = 'Notas alfabéticas são letras, A, B, C, ..., ou palavras como por exemplo, Distinção, Mérito, ..., usadas para representar um intervalo de notas.';
-$string['gradeletternote'] = 'Para eliminar uma nota alfabética basta limpar qualquer uma <br /> das 3 caixas de texto da nota e clicar em Submeter.';
+$string['gradeletternote'] = 'Para eliminar uma nota alfabética basta limpar qualquer uma <br /> das 3 áreas de texto da nota alfabética e clicar em Submeter.';
 $string['gradeletteroverridden'] = 'As notas alfabéticas predefinidas foram ajustadas.';
 $string['gradeletters'] = 'Notas alfabéticas';
 $string['gradelocked'] = 'Nota bloqueada';
@@ -415,10 +415,10 @@ $string['importcsv_help'] = 'As notas podem ser importadas via ficheiro CSV com 
 Se previamente exportar algumas notas, poderá obter um exemplo de um ficheiro com o formato correto. O ficheiro poderá ser editado posteriormente e guardado como ficheiro CSV.';
 $string['importcustom'] = 'Importar como resultados da aprendizagem personalizados (apenas nesta disciplina)';
 $string['importdata'] = 'Dados';
-$string['importdata_help'] = 'As notas podem ser coladas diretamente de uma folha de cálculo OpenDocument ou Excel com o seguinte formato:
+$string['importdata_help'] = 'As notas podem ser coladas diretamente a partir de uma folha de cálculo OpenDocument ou Excel com o seguinte formato:
 
-* Pelo menos uma coluna deve conter dados de identificação do utilizador - nome de utilizador, endereço de e-mail ou número de identificação (ID).
-* Outras colunas devem ter títulos para as atividades existentes ou para os itens de notas.
+* Pelo menos uma coluna deve conter os dados de identificação do utilizador - nome de utilizador, endereço de e-mail ou número de identificação (ID).
+* Outras colunas devem ter títulos para as atividades existentes ou para os itens de avaliação.
 
 Uma folha de cálculo formatada corretamente pode ser obtida se exportar primeiro algumas notas. A folha de cálculo pode então ser editada para adicionar mais notas e posteriormente guardada.
 
@@ -481,8 +481,8 @@ $string['lowest'] = 'Mais baixa';
 $string['lowgradeletter'] = 'Mínima';
 $string['manualitem'] = 'Item manual';
 $string['mapfrom'] = 'Mapear a partir de';
-$string['mapfrom_help'] = 'Selecione a coluna da folha de cálculo que contém os dados de identificação do utilizador, tal como o nome de utilizador, o número de identificação (ID) ou o endereço de e-mail.';
-$string['mappings'] = 'Mapeamentos de itens de avaliação';
+$string['mapfrom_help'] = 'Selecione a coluna da folha de cálculo que contém os dados de identificação do utilizador, tal como, o nome de utilizador, o número de identificação (ID) ou o endereço de e-mail.';
+$string['mappings'] = 'Mapeamentos dos itens de avaliação';
 $string['mappings_help'] = 'Para cada coluna de notas da folha de cálculo, indique o item de avaliação a que corresponde para que a importação seja efetuada.';
 $string['mapto'] = 'Mapear para';
 $string['mapto_help'] = 'Selecione os mesmos dados de identificação selecionados em "Campo de origem".';
@@ -498,7 +498,7 @@ $string['minimum_show'] = 'Mostrar nota mínima';
 $string['minimum_show_help'] = 'A nota mínima é usada para calcular notas e pesos. Se não for exibida, a nota mínima será predefinida como zero e não poderá ser editada.';
 $string['minmaxtouse'] = 'Nota mínima e máxima utilizadas no cálculo';
 $string['minmaxtouse_desc'] = 'Esta configuração determina se deve, ou não, utilizar a nota mínima e máxima quando a nota foi atribuída, ou o mínimo e o máximo especificado nas configurações para o item de avaliação no momento em que a nota é mostrada na pauta. Recomenda-se que altere esta configuração numa altura de pouca atividade na plataforma, porque como todas as notas vão ser recalculadas pode sobrecarregar muito o servidor.';
-$string['minmaxtouse_help'] = 'Esta configuração determina se deve utilizar a nota mínima e máxima quando a nota foi atribuída, ou o mínimo e o máximo especificado nas configurações para o item de avaliação no momento em que a nota é mostrada na pauta.';
+$string['minmaxtouse_help'] = 'Esta configuração determina se deve,ou não, utilizar a nota mínima e máxima inicial quando a nota foi atribuída, ou o mínimo e o máximo especificado nas configurações para o item de avaliação no momento em que a nota é mostrada na pauta.';
 $string['minmaxupgradedgrades'] = 'Nota: Algumas notas foram alteradas de modo a resolver uma incoerência na pauta, causada por uma alteração das notas mínimas e máximas utilizadas para o cálculo da nota exibida. Recomenda-se que as alterações sejam revistas e aceites.';
 $string['minmaxupgradefixbutton'] = 'Resolver incoerências';
 $string['minmaxupgradewarning'] = 'Nota: Foi detetada uma incoerência em algumas avaliações devido a uma alteração das notas mínimas e máximas utilizadas no cálculo da nota exibida na pauta. Recomenda-se que clique no botão abaixo para resolver a incoerência, embora tal vá resultar na alteração de algumas notas.';
@@ -679,7 +679,7 @@ $string['privacy:path:relatedtome'] = 'Relacionado comigo';
 $string['privacy:request:historyactiondelete'] = 'Apagar';
 $string['privacy:request:historyactioninsert'] = 'Inserir';
 $string['privacy:request:historyactionupdate'] = 'Atualizar';
-$string['privacy:request:unknowndeletedgradeitem'] = 'Desconhecido (O item de avaliação foi apagado)';
+$string['privacy:request:unknowndeletedgradeitem'] = 'Desconhecido (item de avaliação foi apagado)';
 $string['profilereport'] = 'Relatório no perfil do utilizador';
 $string['profilereport_help'] = 'Relatório de avaliação exibido na página de perfil do utilizador.';
 $string['publishing'] = 'Publicar';
@@ -703,7 +703,7 @@ $string['realletter'] = 'Real (nota alfabética)';
 $string['realpercentage'] = 'Real (percentagem)';
 $string['recalculatinggrades'] = 'A recalcular as notas';
 $string['recovergradesdefault'] = 'Recuperação de notas';
-$string['recovergradesdefault_help'] = 'Recuperar as notas antigas quando se reinscreve um aluno numa disciplina.';
+$string['recovergradesdefault_help'] = 'Se ativar esta opção, por predefinição, serão recuperadas as notas antigas quando se reinscreve um aluno numa disciplina.';
 $string['refreshpreview'] = 'Atualizar pré-visualização';
 $string['regradeanyway'] = 'Voltar a avaliar';
 $string['removeallcoursegrades'] = 'Apagar todas as notas';
@@ -726,11 +726,11 @@ $string['scaleconfirmdelete'] = 'Tem a certeza de que pretende apagar a escala "
 $string['scaledpct'] = '% ajustada';
 $string['seeallcoursegrades'] = 'Ver todas as notas da disciplina';
 $string['select'] = 'Selecionar {$a}';
-$string['selectalloroneuser'] = 'Selecione todos ou um utilizador';
+$string['selectalloroneuser'] = 'Selecionar todos ou um utilizador';
 $string['selectauser'] = 'Selecione um utilizador';
 $string['selectdestination'] = 'Selecionar destino de {$a}';
 $string['separator'] = 'Separador';
-$string['separator_help'] = 'Selecione o tipo de separador utilizado no Ficheiro CSV. (Habitualmente utiliza-se a vírgula.)';
+$string['separator_help'] = 'Selecione o tipo de separador utilizado no Ficheiro CSV. (Normalmente utiliza-se a vírgula.)';
 $string['sepcolon'] = 'Dois pontos';
 $string['sepcomma'] = 'Vírgula';
 $string['sepsemicolon'] = 'Ponto e vírgula';
@@ -787,7 +787,7 @@ $string['showonlyactiveenrol_help'] = 'Esta opção determina se apenas os utili
 $string['showpercentage'] = 'Mostrar percentagem';
 $string['showpercentage_help'] = 'Mostrar o valor da percentagem de cada item de avaliação.';
 $string['showquickfeedback'] = 'Mostrar comentário rápido';
-$string['showquickfeedback_help'] = 'Se ativar esta opção, quando o modo de edição das notas está ativo, surge uma caixa pontilhada de feedback para cada nota, permitindo editar vários feedback ao mesmo tempo. As alterações serão guardadas e destacadas após clicar no botão \'Guardar\'.
+$string['showquickfeedback_help'] = 'Se ativar esta opção, quando o modo de edição das notas está ativo, surge uma caixa de texto pontilhada de feedback para cada nota, permitindo editar vários feedback ao mesmo tempo. As alterações serão guardadas e destacadas após clicar no botão \'Guardar\'.
 
 Tenha em atenção que quando o feedback é editado diretamente na pauta, o feedback deixará de ser alterado pela atividade a que o feedback está relacionado.';
 $string['showrange'] = 'Mostrar intervalos';

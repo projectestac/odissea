@@ -123,7 +123,6 @@ $string['functiontakesnoargs'] = 'La funció {$a} no accepta cap argument';
 $string['functiontakesonearg'] = 'La funció {$a} ha de tenir exactament un argument';
 $string['functiontakesoneortwoargs'] = 'La funció {$a} ha de tenir un o dos arguments';
 $string['functiontakestwoargs'] = 'La funció {$a} ha de tenir exactament dos arguments';
-$string['globaloptions'] = '[Global] -';
 $string['globalvarshdr'] = 'Variables';
 $string['illegalformulasyntax'] = 'Sintaxi il·legal a la fórmula que comença amb {$a}';
 $string['incorrectfeedback'] = 'Per a qualsevol resposta incorrecta';

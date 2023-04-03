@@ -43,6 +43,7 @@ $string['emailminecommentdeletedbody'] = 'عزيزي {$a->recepientname}،
 
 يمكنك مراجعة هذا السؤال من خلال: {$a->questionurl}.';
 $string['emailminecommentdeletedsmall'] = 'تعليقك على السؤال {$a->questionname} قد تم حذفه من قبل {$a->actorname}.';
+$string['filter_advanced_element'] = '{$a} (عنصر متقدم)';
 $string['filter_comment_label_sort_by'] = 'الفرز حسب:';
 $string['filter_comment_label_sort_toggle'] = 'الفرز حسب {$a->field} {$a->type}';
 $string['filter_label_question'] = 'عنوان السؤال';

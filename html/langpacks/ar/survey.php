@@ -191,7 +191,7 @@ $string['collespintro'] = 'يكمن الغرض من هذا الاستبيان ف
 مع جزيل الشكر.';
 $string['collespname'] = 'COLLES (الفعلي)';
 $string['completiondetail:submit'] = 'تسليم الإجابات';
-$string['completionsubmit'] = 'ينبغي على الطلبة تسليم عملهم في هذا النشاط لإكماله';
+$string['completionsubmit'] = 'ينبغي على الطلبة القيام بالتسليم';
 $string['customintro'] = 'الوصف';
 $string['deleteallanswers'] = 'حذف كل إجابات الاستبيان';
 $string['deleteanalysis'] = 'أحذف تحليل الإجابات';

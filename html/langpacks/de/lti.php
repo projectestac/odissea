@@ -154,7 +154,7 @@ $string['errortooltypenotfound'] = 'LTI Tool-Typ nicht gefunden';
 $string['existing_window'] = 'Vorhandenes Fenster';
 $string['extensions'] = 'LTI Extension Services';
 $string['external_tool_type'] = 'Vorkonfiguriertes Tool';
-$string['external_tool_type_help'] = '* **Automatisch mit Tool-URL** - Diese Einstellung ist meistens ausreichend. Moodle verwendet dann die passendste Konfiguration über die Tool-URL. Es können Tools verwendet werden, die von dem/der Administrator/in vorkonfiguriert oder im Kurs angelegt wurden.
+$string['external_tool_type_help'] = '* **Automatisch mit Tool-URL** - Diese Einstellung ist meistens ausreichend. Moodle verwendet dann die passendste Konfiguration über die Tool-URL. Es können Tools verwendet werden, die von den Administrator/innen vorkonfiguriert oder im Kurs angelegt wurden.
 Sofern eine Start-URL definiert ist, erzeugt Moodle ein Feedback, ob dieses erkannt wird oder nicht. Sollte dieser Zugang scheitern, können Konfigurationsinformationen manuell eingetragen werden.
 * **Ein spezifischer vorkonfigurierter Tool-Typ** - Die Auswahl erzwingt eine bestimmte Konfiguration zur Kommunikation mit dem Tool-Anbieter zu nutzen. Sollte die eingetragene Start-URL nicht zu dem Tool-Anbieter passen, erfolgt eine Warnung. Manchmal ist es nicht nötig eine Start-URL einzutragen falls ein spezifischer Tool-Typ verwandt wird.
 * **Individuelle Konfiguration** - Die spezifische Konfiguration wird nur für die spezielle Instanz verwandt. Unter erweiterten Einstellungen können Anwenderschlüsssel und Kennwörter (shared secret) eingetragen werden. Beide werden durch den Tool Provider zur Verfügung gestellt. Falls das Tool diese Einstellungen nicht benötigt, können die Felder leer bleiben.
@@ -163,7 +163,7 @@ Sofern eine Start-URL definiert ist, erzeugt Moodle ein Feedback, ob dieses erka
 
 Drei Icons erscheinen in der Liste
 * **Hinzufügen** - Eine Tool-Konfiguration auf Kursebene erstellen. Alle Instanzen in diesem Kurs werden diese verwenden.
-* **Bearbeiten** - Typ aus Dropdownmneu auswählen und die Details konfigurieren.
+* **Bearbeiten** - Typ aus Dropdown-Menü auswählen und die Details konfigurieren.
 * **Löschen** - Ausgewählten Typ im Kurs löschen.';
 $string['external_tool_types'] = 'Vorkonfigurierte Tools';
 $string['failedtoconnect'] = 'Moodle konnte keine Kommunikation mit dem System \'{$a}\' aufbauen.';
@@ -268,8 +268,8 @@ Hinweis zum Datenschutz: Häufig werden Namen und E-Mail-Adressen Ihrer Teilnehm
 
 Externe Tool-Aktivitäten unterscheiden sich in einigen Punkten von URL-Ressourcen:
 
-* Externe Tools sind kontextabhängig, d.h. sie haben Zugriff auf Informationen über den/die Nutzender, der das Tool gestartet hat, wie z.B. Institution, Kurs und Name.
-* Externe Tools unterstützen das Lesen, Aktualisieren und Löschen von Bewertungen, die mit der Aktivitätsinstanz verbunden sind
+* Externe Tools sind kontextabhängig, d.h. sie haben Zugriff auf Informationen über die Person, die das Tool gestartet hat, wie z.B. Institution, Kurs und Name.
+* Externe Tools unterstützen das Lesen, Aktualisieren und Löschen von Bewertungen, die mit der Aktivitätsinstanz verbunden sind.
 * Konfigurationen von externen Tools schaffen eine wechselseitige Beziehung zwischen Ihrer Website und dem Werkzeuganbieter und ermöglichen eine sichere Kommunikation zwischen ihnen.';
 $string['modulenameplural'] = 'Externe Tools';
 $string['modulenamepluralformatted'] = 'LTI Instanzen';

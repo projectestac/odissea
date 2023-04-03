@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['h3'] = 'Überschrift (groß)';
-$string['h4'] = 'Überschrift (mittel)';
-$string['h5'] = 'Überschrift (klein)';
+$string['h3'] = 'Überschrift (groß h3)';
+$string['h4'] = 'Überschrift (mittel h4)';
+$string['h5'] = 'Überschrift (klein h5)';
 $string['p'] = 'Absatz';
 $string['pluginname'] = 'Absatzformate';
 $string['pre'] = 'Vorformatiert';

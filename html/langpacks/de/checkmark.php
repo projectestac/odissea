@@ -27,8 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['absent'] = 'Nicht anwesend';
 $string['activateindividuals'] = 'Individualfunktionen aktivieren';
-$string['activitydate:due'] = 'Fällig';
+$string['activitydate:due'] = 'Fällig:';
+$string['activitydate:open'] = 'Öffnet:';
 $string['activitydate:opened'] = 'Geöffnet';
+$string['activitydate:opens'] = 'Öffnet:';
 $string['addnewgroupoverride'] = 'Verfügbarkeitsänderungen für Gruppen anlegen';
 $string['addnewuseroverride'] = 'Verfügbarkeitsänderung für Nutzer/in anlegen';
 $string['addsubmission'] = 'Abgabe hinzufügen';
@@ -91,6 +93,7 @@ Achtung: Wenn die Anwesenheit an die Noten gekoppelt ist werden nur als Anwesend
 Abwesende Teilnehmer/innen erhalten 0 Punkte und Teilnehmer/innen mit unbekanntem Anwesenheitsstatus werden übersprungen!';
 $string['bulk_no_users_selected'] = 'Sie haben keine Teilnehmer/in ausgewählt. Wählen Sie die gewünschten Teilnehmer/innen über die Checkboxen der linken Tabellenspalte aus.';
 $string['calendardue'] = '{$a} ist fällig.';
+$string['calendargradingdue'] = '{$a} ist zur Bewertung fällig';
 $string['cannotviewcheckmark'] = 'Sie können diese Kreuzerlübung nicht betrachten';
 $string['cantfixevent'] = 'Konnte Kalendereintrag mit der ID {$a->id}, Name {$a->name} nicht reparieren ({$a->matches} treffer).';
 $string['cfg_nowarning'] = 'keine Warnung';

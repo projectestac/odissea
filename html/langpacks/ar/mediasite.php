@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['admin_settings_body'] = 'يرجى استعمال الإضافة <a href="{$a}">صفحة التهيئة</a>';
 $string['admin_settings_header'] = 'صفحة التهيئة';
+$string['advanced_header'] = 'متقدمة';
 $string['basiclti_in_new_window'] = 'لقد تم فتح نشاطك في نافذة جديدة';
 $string['description'] = 'الوصف';
 $string['duplicatesitename'] = '{$a} مستعمل مسبقاً. لطفاً، استعمل اسماً مختلفاً للموقع.';

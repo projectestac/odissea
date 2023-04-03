@@ -300,7 +300,7 @@ $string['gradecategoryonmodform_help'] = 'Die Einstellung legt fest in welcher K
 $string['gradecategorysettings'] = 'Bewertungskategorie-Einstellungen';
 $string['gradedisplay'] = 'Bewertungsanzeige';
 $string['gradedisplaytype'] = 'Bewertungsanzeige-Typ';
-$string['gradedisplaytype_help'] = 'Diese Einstellung legt fest, wie Bewertungen in der Bewertungsübersicht und in Nutzendenberichten angezeigt werden.
+$string['gradedisplaytype_help'] = 'Diese Einstellung legt fest, wie Bewertungen in der Bewertungsübersicht und in Nutzerberichten angezeigt werden.
 
 * Buchstabe - Buchstaben (A, B, C,..) oder Wörter werden angezeigt, um eine Auswahl an Bewertungen zu repräsentieren
 * Prozent - relativ zum höchsten/niedrigsten Wert
@@ -367,7 +367,7 @@ $string['gradepreferenceshelp'] = 'Hilfe für Bewertungseinstellungen';
 $string['gradepublishing'] = 'Veröffentlichen erlauben';
 $string['gradepublishing_help'] = 'Aktiviert die Export und Importfunktion: Exportierte Bewertungen können für andere verlinkt werden, ohne dass sie sich im Moodle-System einloggen müssen.  Bewertungen können auf die gleiche Art und Weise importiert werden. Damit können Bewertungen, die aus anderen Systemen stammen integriert werden. Normalerweise können nur Administrator/innen diese Funktion nutzen. Falls dieses Recht weitergegeben wird, sind die betroffenen Personen darauf hinzuweisen, dass mit entsprechender Sorgfalt mit diesen persönlichen Daten umgegangen wird.
 
-Das Veröffentlichen von Bewertungen ist eine Möglichkeit, Bewertungen über eine URL zu importieren und zu exportieren, ohne bei Moodle angemeldet zu sein. Wenn diese Option aktiviert ist, werden für Administrator/innen und Nutzer/innen mit der Berechtigung zum Veröffentlichen von Bewertungen (meist nur Nutzende mit der Manager/innenrolle) die Einstellungen zum Veröffentlichen von Bewertungsexporten angeboten.';
+Das Veröffentlichen von Bewertungen ist eine Möglichkeit, Bewertungen über eine URL zu importieren und zu exportieren, ohne bei Moodle angemeldet zu sein. Wenn diese Option aktiviert ist, werden für Administrator/innen und Nutzer/innen mit der Berechtigung zum Veröffentlichen von Bewertungen (meist nur Personen mit der Rolle Manager/in) die Einstellungen zum Veröffentlichen von Bewertungsexporten angeboten.';
 $string['gradepublishinglink'] = 'Herunterladen: {$a}';
 $string['gradereport'] = 'Bewertungsbericht';
 $string['graderreport'] = 'Bewertungsübersicht';
@@ -887,7 +887,7 @@ $string['userid'] = 'Nutzer-ID';
 $string['useridnumberwarning'] = 'Nutzer/innen ohne ID-Nummer sind vom Export ausgeschlossen, da sie nicht importiert werden können.';
 $string['usermappingerror'] = 'Nutzerzuordnungsfehler: Nutzer mit {$a->field} von "{$a->value}" wurde nicht gefunden.';
 $string['usermappingerrorcurrentgroup'] = 'Nutzer/in ist nicht Mitglied dieser Gruppe.';
-$string['usermappingerrormultipleusersfound'] = 'Fehler bei der Nutzendenzuordnung: Mehrere Nutzende mit {$a->field} von "{$a->value}" gefunden. Bitte verwenden Sie ein eindeutigeres Mapping-Feld.';
+$string['usermappingerrormultipleusersfound'] = 'Fehler bei der Nutzerzuordnung: Mehrere Nutzer/innen mit {$a->field} von "{$a->value}" gefunden. Bitte verwenden Sie ein eindeutigeres Mapping-Feld.';
 $string['usermappingerrorusernotfound'] = 'Nutzer-Zuordnungsfehler. Nutzer kann nicht gefunden werden.';
 $string['userpreferences'] = 'Nutzereinstellungen';
 $string['useweighted'] = 'Gewichtung verwenden';

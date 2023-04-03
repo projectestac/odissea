@@ -43,6 +43,7 @@ $string['createnewmicrosoftissuer'] = 'Создание новой службы 
 $string['createnewnextcloudissuer'] = 'Создать новую службу Nextcloud';
 $string['createnewservice'] = 'Создать новую службу:';
 $string['createnewuserfieldmapping'] = 'Создать сопоставление новых пользовательских полей для эмитента «{$a}»';
+$string['custom_service'] = 'Пользовательская';
 $string['deleteconfirm'] = 'Вы уверены, что хотите удалить эмитента «{$a}»? Все плагины, зависящие от этого эмитента, перестанут работать.';
 $string['deleteendpointconfirm'] = 'Вы уверены, что хотите удалить конечную точку "{$a->endpoint}" для эмитента "{$a->Issuer}"? Все плагины, использующие эту конечную точку, перестанут работать.';
 $string['deleteuserfieldmappingconfirm'] = 'Вы уверены, что хотите удалить сопоставление пользовательских полей для эмитента «{$a}»?';

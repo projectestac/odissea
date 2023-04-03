@@ -78,6 +78,7 @@ $string['completionvalidatestatetriggered'] = 'La validazione del completamento 
 $string['completionview'] = 'Visualizzazione obbligatoria';
 $string['completionview_desc'] = 'Lo studente dovrà accedere alla stanza per completare l’attività.';
 $string['completionview_event_desc'] = 'Ha acceduto alla stanza.';
+$string['config_checksum_algorithm'] = 'Algoritmo di checksum di BigBlueButton';
 $string['config_default_messages'] = 'Messaggi di default';
 $string['config_default_messages_description'] = 'Consente di impostare i messaggi di default dell\'attività';
 $string['config_disablecam_default'] = 'Disabilitazione webcam abilitata di default';

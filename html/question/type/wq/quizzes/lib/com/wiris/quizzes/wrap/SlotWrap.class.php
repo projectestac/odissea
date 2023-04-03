@@ -6,6 +6,21 @@ class com_wiris_quizzes_wrap_SlotWrap implements com_wiris_quizzes_api_Slot{
 		$this->slot = $slot;
 		$this->wrapper = com_wiris_system_CallWrapper::getInstance();
 	}}
+	public function getGrammarUrl() {
+		try {
+			$this->wrapper->start();
+			$r = $this->slot->getGrammarUrl();
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function serialize() {
 		try {
 			$this->wrapper->start();

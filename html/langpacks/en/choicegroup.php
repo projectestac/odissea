@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:exceeded'] = 'Due date exceeded.';
 $string['activitydate:hasopened'] = 'Opened:';
+$string['activitydate:notavailableyet'] = 'Not available yet.';
 $string['activitydate:willclose'] = 'Closes:';
 $string['activitydate:willopen'] = 'Opens:';
 $string['add'] = 'Add';

@@ -404,7 +404,7 @@ $string['loginasonecourse'] = 'Sie können sich in diesen Kurs nicht eintragen.<
 $string['maxareabytes'] = 'Diese Datei ist größer als der in diesem Bereich verfügbare Platz.';
 $string['maxbytesfile'] = 'Die Datei {$a->file} ist zu groß. Die maximale Größe zum Hochladen ist {$a->size}.';
 $string['maxdraftitemids'] = 'Ihre Datei-Uploads sind vorübergehend eingeschränkt, nachdem Sie eine große Anzahl von Dateien hochgeladen haben. Versuchen Sie es bitte später noch einmal.';
-$string['messageundeliveredbynotificationsettings'] = 'Die Nachricht konnte nicht gesendet werden, da persönliche Nachrichten zwischen Nutzenden (in den Benachrichtigungseinstellungen) von einem Site-Administrator deaktiviert wurden.';
+$string['messageundeliveredbynotificationsettings'] = 'Die Nachricht konnte nicht gesendet werden, da persönliche Nachrichten zwischen Nutzer/innen (in den Benachrichtigungseinstellungen) von den Administrator/innen deaktiviert wurden.';
 $string['messagingdisable'] = 'Die Mitteilungen sind für diese Website deaktiviert.';
 $string['mimetexisnotexist'] = 'Ihr System ist nicht konfiguriert, um mimeTeX ausführen zu können. Sie müssen den C-Quellcode unter <a href="https://www.forkosh.com/mimetex.zip"> https://www.forkosh.com/mimetex.zip</a> herunterladen, kompilieren und das ausführbare Programm in das Verzeichnis moodle/filter/tex/ legen.';
 $string['mimetexnotexecutable'] = 'Das spezifische Programm mimetex ist nicht ausführbar!';
@@ -454,7 +454,7 @@ $string['nologinas'] = 'Sie dürfen sich nicht in der Rolle dieser Person einlog
 $string['nonmeaningfulcontent'] = 'Kein sinnvoller Inhalt';
 $string['noparticipants'] = 'Keine Teilnehmer/innen für diesen Kurs gefunden';
 $string['noparticipatorycms'] = 'Sie haben keine beteiligten Kursmodule für einen Bericht.';
-$string['nopermissions'] = 'Sie haben aktuell nicht die Rechte, dies zu tun ({$a}).';
+$string['nopermissions'] = 'Sie haben aktuell nicht das Recht, dies zu tun ({$a}).';
 $string['nopermissiontocomment'] = 'Sie können keine Kommentare hinzufügen';
 $string['nopermissiontodelentry'] = 'Sie dürfen Diesen Kommentar nicht löschen!';
 $string['nopermissiontoeditcomment'] = 'Sie dürfen keine fremden Kommentare bearbeiten!';

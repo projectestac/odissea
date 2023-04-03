@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addanewdiscussion'] = 'إضافة موضوع مناقشة جديد';
 $string['addanewquestion'] = 'إضافة سؤال جديد';
 $string['addanewtopic'] = 'إضافة موضوع جديد';
+$string['advancedsearch'] = 'بحث متقدم';
 $string['allowsdiscussions'] = 'هذا المنتدى يسمح لكل مستخدم أن يبدأ موضوعاً واحداً للنقاش.';
 $string['alreadyfirstpost'] = 'هذه هي المشاركة الأولى في المناقشة';
 $string['cannotadd'] = 'تعذرت إضافة المناقشة في هذا المنتدى';

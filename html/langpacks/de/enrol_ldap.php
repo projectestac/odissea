@@ -130,7 +130,7 @@ $string['unassignrole'] = 'Rollenzuordnung \'{$a->role_shortname}\' für Nutzer 
 $string['unassignrolefailed'] = 'Rollenaufhebung  \'{$a->role_shortname}\' für Nutzer \'{$a->user_username}\' im Kurs \'{$a->course_shortname}\' (id {$a->course_id}) gescheitert';
 $string['unassignroleid'] = 'Rolle \'{$a->role_id}\' für Nutzer id \'{$a->user_id}\' aufheben';
 $string['updatelocal'] = 'Lokale Daten aktualisieren';
-$string['user_attribute'] = 'Wenn die Gruppenmitgliedschaft eindeutige Namen enthält, geben Sie das Attribut an, das zum Benennen / Suchen nach Nutzenden verwendet wird. Wenn Sie die LDAP-Authentifizierung verwenden, sollte dieser Wert mit dem Attribut übereinstimmen, das in der Zuordnung "ID-Nummer" im LDAP-Authentifizierungs-Plugin angegeben ist.';
+$string['user_attribute'] = 'Wenn die Gruppenmitgliedschaft eindeutige Namen enthält, geben Sie das Attribut an, das zum Benennen / Suchen nach Nutzer/innen verwendet wird. Wenn Sie die LDAP-Authentifizierung verwenden, sollte dieser Wert mit dem Attribut übereinstimmen, das in der Zuordnung "ID-Nummer" im LDAP-Authentifizierungs-Plugin angegeben ist.';
 $string['user_attribute_key'] = 'ID-Nummer';
 $string['user_contexts'] = 'Wenn die Gruppenzugehörigkeit bevorzugte Namen enthält, legen Sie die Kontexte fest, wo Nutzer gefunden werden sollen. Trennen Sie unterschiedliche Kontexte mit einem Semikolon \';\' wie z.B.  \'ou=users,o=org; ou=others,o=org\'.';
 $string['user_contexts_key'] = 'Kontexte';

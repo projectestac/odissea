@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:exceeded'] = 'Entregatze-data igaro da.';
 $string['activitydate:hasopened'] = 'Ireki zen:';
+$string['activitydate:notavailableyet'] = 'Oraindik ez dago eskuragarri.';
 $string['activitydate:willclose'] = 'Itxiera-data:';
 $string['activitydate:willopen'] = 'Irekitze-data:';
 $string['add'] = 'Gehitu';

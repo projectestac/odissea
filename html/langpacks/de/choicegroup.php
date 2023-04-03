@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:exceeded'] = 'Fälligkeitsdatum verstrichen.';
 $string['activitydate:hasopened'] = 'Geöffnet:';
+$string['activitydate:notavailableyet'] = 'Noch nicht verfügbar.';
 $string['activitydate:willclose'] = 'Schließt:';
 $string['activitydate:willopen'] = 'Öffnet:';
 $string['add'] = 'Hinzufügen';

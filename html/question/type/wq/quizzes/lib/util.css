@@ -1421,10 +1421,10 @@ md-elevation-transition {
 }
 
 .wrsUI_app .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer {
-  background: url("decoration/drawing_panel_empty.svg?v=4.6.0") center center no-repeat;
+  background: url("decoration/drawing_panel_empty.svg?v=4.7.0") center center no-repeat;
 }
 .wrsUI_app .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer canvas {
-  background: url("decoration/drawing_panel_grid.png?v=4.6.0");
+  background: url("decoration/drawing_panel_grid.png?v=4.7.0");
 }
 .wrsUI_app .wrsUI_drawingPanel .wrsUI_aux_canvasContainer {
   position: absolute;
@@ -1786,7 +1786,6 @@ md-elevation-transition {
 }
 
 .wrsUI_app .wrsUI_toggleButtonsPanel > .wrsUI_toggleButton {
-  flex: 1;
   margin-right: 0px !important;
   min-width: 87px !important;
   min-height: 40px;
@@ -3237,6 +3236,7 @@ md-elevation-transition {
 .wrsUI_app .wrsUI_inputComponent.wrsUI_textComponent:not(.wrsUI_textComponentEmpty) > label {
   transform: translateY(-5px) scale(0.75);
   color: #778e9a;
+  width: max-content;
 }
 .wrsUI_app .wrsUI_inputComponent.wrsUI_textComponent.wrsUI_focused > label {
   color: #6793a9;

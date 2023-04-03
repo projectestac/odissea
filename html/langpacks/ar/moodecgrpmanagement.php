@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activategooglemap'] = 'تفعيل خرائط Google';
 $string['addmorechoices'] = 'إضافة المزيد من الخيارات';
+$string['advancedheader'] = 'متقدمة';
 $string['answered'] = 'مجاب عليه';
 $string['event:answered'] = 'إختيار تم اتخاذه';
 $string['event:answered_desc'] = 'المستخدم ذو المُعرَّف \'{$a->userid}\' إختار مجموعة من إدارة المجموعات في وحدة المساق ذات المُعرَّف \'{$a->contextinstanceid}\'.';

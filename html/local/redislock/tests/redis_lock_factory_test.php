@@ -22,8 +22,7 @@
  * @copyright Copyright (c) 2015 Open LMS (https://www.openlms.net)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-defined('MOODLE_INTERNAL') || die();
+namespace local_redislock;
 
 use core\lock\lock_config;
 use local_redislock\api\shared_redis_connection;
@@ -37,7 +36,7 @@ use local_redislock\api\shared_redis_connection;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-class local_redislock_redis_lock_factory_test extends \advanced_testcase {
+class redis_lock_factory_test extends \advanced_testcase {
 
     public function setUp(): void {
         global $CFG;
@@ -134,6 +133,9 @@ class local_redislock_redis_lock_factory_test extends \advanced_testcase {
         $this->assertNotEmpty($lock1);
         $this->assertFalse($lock1->extend(10000));
 
+        $this->assertDebuggingCalledCount(2,
+            ['The function extend() is deprecated, please do not use it anymore.',
+            'The function extend_lock() is deprecated, please do not use it anymore.']);
         $newttl = $redislockfactory->get_ttl($lock1);
         $this->assertEquals(-1, $newttl);
 
@@ -169,7 +171,7 @@ class local_redislock_redis_lock_factory_test extends \advanced_testcase {
      * @throws coding_exception
      */
     public function test_lock_timeout() {
-        $mockbuilder = $this->getMockBuilder('Redis')->setMethods(array('setnx'))->disableOriginalConstructor();
+        $mockbuilder = $this->getMockBuilder('Redis')->onlyMethods(array('setnx'))->disableOriginalConstructor();
         $redis = $mockbuilder->getMock();
 
         $redislockfactory = new \local_redislock\lock\redis_lock_factory('cron', $redis);
@@ -190,7 +192,7 @@ class local_redislock_redis_lock_factory_test extends \advanced_testcase {
      * @throws coding_exception
      */
     public function test_lock_zero_timeout() {
-        $redis   = $this->getMockBuilder('Redis')->setMethods(array('setnx'))->disableOriginalConstructor()->getMock();
+        $redis   = $this->getMockBuilder('Redis')->onlyMethods(array('setnx'))->disableOriginalConstructor()->getMock();
         $redis->expects($this->once())->method('setnx')->will($this->returnValue(false));
 
         $factory = new \local_redislock\lock\redis_lock_factory('cron', $redis);

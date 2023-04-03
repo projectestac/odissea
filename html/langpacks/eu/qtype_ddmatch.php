@@ -32,3 +32,4 @@ $string['pluginname_help'] = 'Hartu eta eraman lotzeko galderak izen- edo adiera
 $string['pluginnameadding'] = 'Hartu eta eraman lotzeko galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman lotzeko galdera editatzen';
 $string['pluginnamesummary'] = 'Lotu galderaren hedapena, erabiltzaileak galdera eta erantzunak lotzeko elementuak hartu eta eramatea ahalbidetzen duena.';
+$string['privacy:metadata'] = 'Hartu eta eraman lotzeko galdera-pluginak ez du datu pertsonalik biltzen.';

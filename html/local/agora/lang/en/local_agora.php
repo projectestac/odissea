@@ -13,38 +13,17 @@ $string['capitalize'] = 'Capitalize first letter';
 $string['capitalizecheckfull'] = 'Are you absolutely sure you want to capitalize the first letter of the name of {$a} ?';
 $string['capitalizenot'] = 'Could not capitalize the first letter of the name of {$a} !';
 
-//Message notifications
-$string['now'] = 'now';
-$string['second_ago'] = '{$a} second ago';
-$string['seconds_ago'] = '{$a} seconds ago';
-$string['minute_ago'] = '{$a} minute ago';
-$string['minutes_ago'] = '{$a} minutes ago';
-$string['hour_ago'] = '{$a} hour ago';
-$string['hours_ago'] = '{$a} hours ago';
-$string['day_ago'] = '{$a} day ago';
-$string['days_ago'] = '{$a} days ago';
-$string['month_ago'] = '{$a} month ago';
-$string['months_ago'] = '{$a} months ago';
-$string['year_ago'] = '{$a} year ago';
-$string['years_ago'] = '{$a} years ago';
-
 $string['agora_scripts'] = 'Àgora Scripts';
-
 $string['login_nodes'] = 'Login to Nodes';
-$string['mygrades'] = 'My grades';
-
-$string['mailer'] = 'Mailer';
-$string['apligestmail'] = 'Enable Mailer';
-$string['mailheader'] = 'Add prefix to subject';
-$string['apligestlog'] = 'Enable Log';
-$string['apligestlogdebug'] = 'Enable Debug Log';
-$string['apligestlogpath'] = 'Log path';
-$string['environment_url'] = 'WSDL URL';
-$string['environment_url_desc'] = 'If set, this WSDL Mailsender will be used, if not, the default url for {$a} environment will be used';
-
 $string['clean_adware'] = 'Clean Adware';
 $string['detect_adware'] = 'Detect Adware';
-$string['messagehistoryfull'] = 'All messages';
 
 // H5P
 $string['hvpdisabled'] = '"HVP - Interactive Content" activity is disabled. Please, use H5P instead.';
+
+// IDI
+$string['IDI'] = 'IDI';
+$string['codenotinidi'] = 'Cannot login because center code is not set in IDI';
+$string['codenotinididetail'] = 'Center code not set in IDI for user {$a->username} ({$a->firstname} {$a->lastname}), so they can not log in.';
+$string['codenotmatchidi'] = 'Cannot login because center code does not match the code set in IDI';
+$string['codenotmatchididetail'] = 'Center code in IDI for user {$a->username} is {$a->code} ({$a->firstname} {$a->lastname}). Only users with center code {$a->center} can log in.';

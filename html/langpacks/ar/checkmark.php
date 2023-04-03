@@ -50,6 +50,7 @@ $string['checkmarkmailsmall'] = '{$a->grader} نشر إفادة بشأن
 تسليمك لعلامة التأشير في \'{$a->checkmark}\'. يمكنك مشاهدتها ملحقة بتسليمك لعلامة التأشير';
 $string['couldfixevent'] = 'تم بنجاح تثبيت الحدث ذي المُعرَّف {$a->id}، المسمى {$a->name}';
 $string['count_individuals_mismatch'] = 'مقدار الأسماء الفردية ({$a->namecount}) لا يطابق مقدار التقديرات الفردية ({$a->gradecount})!';
+$string['data_settings'] = 'إعدادات الطباعة';
 $string['description'] = 'الوصف';
 $string['eventexamplecreated'] = 'مثال تم إنشاؤه';
 $string['eventexampledeleted'] = 'مثال تم حذفه';
@@ -125,6 +126,7 @@ $string['quickgrade_help'] = 'إذا مُكّن، علامات تأشير متع
 $string['saveallfeedback'] = 'حفظ كل إفاداتي';
 $string['seperatenamecolumns_help'] = 'عند تمكينه، كل أجزاء الاسم الكامل المعروض (أي الاسم الأول واسم العائلة) ستتم تجزئتها إلى أعمدة.';
 $string['str_userid'] = 'مُعرَّف الطالب';
+$string['strallononepage'] = 'طباعة الكل في صفحة واحدة';
 $string['strpapersizes'] = 'حجم الورقة';
 $string['strsmall'] = 'صغير';
 $string['strstdnames'] = 'الأسماء القياسية';

@@ -280,7 +280,7 @@ $string['newentry'] = 'Sarrera berria';
 $string['newfield'] = 'Sortu beste eremu bat';
 $string['newfield_help'] = 'Eremu batek datuak sartzea ahalbidetzen du. Datu-base jarduerako sarrera bakoitzak mota askotako eremu anitz izan dezake hala nola data-eremuak, erabiltzaileari eguna, hilabetea eta urtea zerrenda batetik aukeratzen uzten diona, irudi-eremua, erabiltzaileari irudi bat igotzeko aukera ematen diona, edo aukera-anizkoitzeko eremuak, erabiltzaileari aukera bat edo gehiago hautatzea ahalbidetzen duena.
 
-Eremu bakoitzaren eremu-izena bakarra izan behar du. Eremuaren deskribapena aukerazkoa da.';
+Eremu bakoitzaren eremu-izena bakarra izan behar du. Eremuaren deskribapena hautazkoa da.';
 $string['noaccess'] = 'Ez duzu orri honetara sarbiderik';
 $string['nodefinedfields'] = 'Aurretiko ezarpen berriak ez du definitutako eremurik!';
 $string['nofieldcontent'] = 'Ez da eremuaren edukia aurkitu';
@@ -299,8 +299,8 @@ $string['numnotapproved'] = 'Onarpenaren zain';
 $string['numrecords'] = '{$a} sarrera';
 $string['ods'] = '<abbr title="OpenDocument-eko Kalkulu-orria">ODS</abbr>&nbsp;(OpenOffice)';
 $string['openafterclose'] = 'Zehaztu duzun hasiera-data amaiera-data baino beranduagokoa da.';
-$string['optionaldescription'] = 'Deskribapen motza (aukerazkoa)';
-$string['optionalfilename'] = 'Fitxategi-izena (aukerazkoa)';
+$string['optionaldescription'] = 'Deskribapen motza (hautazkoa)';
+$string['optionalfilename'] = 'Fitxategi-izena (hautazkoa)';
 $string['other'] = 'Beste bat';
 $string['overrwritedesc'] = 'Gainidatzi aurretiko ezarpena lehendik existitzen bada';
 $string['overwrite'] = 'Gainidatzi';

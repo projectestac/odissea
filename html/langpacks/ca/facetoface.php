@@ -33,5 +33,6 @@ $string['error:couldnotaddsession'] = 'No s\'ha pogut afegir una sessió';
 $string['export'] = 'Exporta';
 $string['import'] = 'Importa';
 $string['location'] = 'Ubicació';
+$string['reminder'] = 'Recordatori';
 $string['submissions'] = 'Trameses';
 $string['submitted'] = 'S\'ha tramès';

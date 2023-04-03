@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activity_string'] = 'النشاط:';
 $string['backup_heavy_load_warning_message'] = 'إذا كان المقطع محتوياً على عدة نشاطات، سيكون وقت المعالجة أطول.';
 $string['conflict_description'] = 'هل ترغب بالكتابة على عنوان المقطع في المساق؟';
 $string['conflict_no_overwrite'] = 'الإبقاء على العنوان الحالي للمقطع <strong>"{$a}"</strong>';
@@ -35,6 +36,7 @@ $string['forbidden'] = 'ليست لديك أي صلاحيات للوصول إل�
 $string['missing_capabilities'] = 'الإمكانيات المطلوبة مفقودة: {$a}';
 $string['no_backup_support'] = 'لا يوجد دعم للحفظ الاحتياطي لهذه الوحدة';
 $string['privacy:metadata:block_sharing_cart:ctime'] = 'وقت الإنشاء';
+$string['privacy:metadata:block_sharing_cart:modicon'] = 'أيقونة وحدة النشاط';
 $string['privacy:metadata:block_sharing_cart:modname'] = 'اسم وحدة النشاط';
 $string['privacy:metadata:block_sharing_cart:modtext'] = 'عنوان وحدة النشاط';
 $string['privacy:metadata:block_sharing_cart:tree'] = 'عنوان مجلد عربة المشاركة المعروض في الكتلة';

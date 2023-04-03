@@ -416,15 +416,7 @@ $string['statistic'] = 'Statistieken van de vragenlijst';
 $string['stats_all'] = 'Je hebt alle vragen uit de categorie "{$a->category}" beantwoord.';
 $string['stats_none'] = 'JE hebt geen van de vragen uit de categorie "{$a->category}" beantwoord.';
 $string['stats_partly'] = 'Je hebt {$a->answered} van de {$a->questions} vragen uit de categorie "{$a->category}" beantwoord.';
-$string['students_answered_multiple'] = 'leerlingen hebben de vragenlijst beantwoord.';
-$string['students_answered_single'] = 'leerling heeft de vragenlijst beantwoord.';
-$string['students_available_multiple'] = 'ingeschreven leerlingen die de vragenlijst kunnen invullen.';
-$string['students_available_single'] = 'ingeschreven leerlingen die de vragenlijst kunnen invullen.';
-$string['students_committed_multiple'] = 'leerlingen hebben ook hun vragen al ingediend.';
-$string['students_committed_single'] = 'leerling daarvan heeft zijn/haar vragen al ingediend.';
 $string['students_enrolled_info'] = 'Leerlingen zijn ingeschreven in de cursus';
-$string['students_grouping_multiple'] = 'leerlingen voor groepssamenstelling.';
-$string['students_grouping_single'] = 'leerling voor groepssamenstelling.';
 $string['students_selected'] = 'geselecteerde leerlingen';
 $string['submit-modal-text'] = 'Het is belangrijk dat je alle antwoorden naar waarheid en correct invult, zowel vanuit wetenschappelijk punt als voor het groepsformatieproces. We stellen je medewerking op prijs.
 

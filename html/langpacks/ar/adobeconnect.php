@@ -39,6 +39,8 @@ $string['assignroles'] = 'تعيين الأدوار';
 $string['availablelist'] = 'متوفر';
 $string['backtomeeting'] = 'عودة إلى اجتماع $a';
 $string['cancelchanges'] = 'إلغاء';
+$string['connectiontesttitle'] = 'نافذة اختبار الاتصال';
+$string['email_login'] = 'تسجيل الدخول بالبريد الإلكتروني';
 $string['endtime'] = 'وقت الإنهاء';
 $string['error1'] = 'ينبغي لك أن تكون مشرف الموقع للوصول إلى هذه الصفحة';
 $string['error2'] = 'الخاصية \'{$a}\' فارغة، يرجى إدخال قيمة ثم حفظ الإعدادات';
@@ -54,7 +56,9 @@ $string['greaterstarttime'] = 'وقت البدء لا يمكن أن يكون ب�
 $string['groupswitch'] = 'تصفية حسب المجموعة';
 $string['host'] = 'المضيف';
 $string['invalidurl'] = 'على الرابط أن يبدأ بحرف لاتيني (a-z)';
+$string['joinmeeting'] = 'إنضم إلى الاجتماع';
 $string['meethost_desc'] = 'المجال الذي فيه مخدم Adobe منصب';
+$string['meetinfo'] = 'المزيد من التفاصيل عن الاجتماع';
 $string['meetingend'] = 'وقت انتهاء الاجتماع';
 $string['meetinggroup'] = 'مجموعة الاجتماع';
 $string['meetinghost'] = 'مجال الاجتماع';
@@ -94,5 +98,15 @@ $string['meeturl_help'] = '<p>يمكنك تخصيص الرابط المستعم�
 </p>';
 $string['missingexpectedgroups'] = 'لا توجد مجموعات متاحة.';
 $string['particpantslabel'] = 'المشاركون';
+$string['presenterbtngrp'] = 'إجراءات المقدم';
+$string['presenterlabel'] = 'مقدم';
+$string['private'] = 'خاص';
+$string['public'] = 'عام';
+$string['recordinghdr'] = 'التسجيلات';
+$string['removeparticipant'] = 'إزالة';
+$string['removepresenter'] = 'إزالة';
+$string['roletoassign'] = 'الدور المطلوب تعيينه';
 $string['samemeettime'] = 'وقت الاجتماع غير صالح';
+$string['savechanges'] = 'حفظ';
+$string['selectparticipants'] = 'تعيين الأدوار';
 $string['starttime'] = 'وقت البدء';

@@ -26,22 +26,22 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allchildrenarecomplete'] = 'Все дочерние компетенции выполнены';
-$string['competencies'] = 'Компетентности';
-$string['competenciesarenotenabled'] = 'Компетентности не включены.';
+$string['competencies'] = 'Компетенции';
+$string['competenciesarenotenabled'] = 'Компетенции не включены.';
 $string['competenciessettings'] = 'Настройки компетенций';
 $string['completeplanstask'] = 'Выполнить учебные планы, по которым подошел срок';
-$string['coursecompetencyoutcome_complete'] = 'Отметить компетентность, как достигнутую';
+$string['coursecompetencyoutcome_complete'] = 'Отметить компетенцию, как достигнутую';
 $string['coursecompetencyoutcome_evidence'] = 'Прикрепить доказательство';
 $string['coursecompetencyoutcome_none'] = 'Ничего не делать';
 $string['coursecompetencyoutcome_recommend'] = 'Отправить на проверку';
-$string['coursemodulecompetencyoutcome_complete'] = 'Отметить компетентность, как достигнутую';
+$string['coursemodulecompetencyoutcome_complete'] = 'Отметить компетенцию, как достигнутую';
 $string['coursemodulecompetencyoutcome_evidence'] = 'Прикрепить доказательство';
 $string['coursemodulecompetencyoutcome_none'] = 'Ничего не делать';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Отправить на пересмотр';
 $string['deletecompetencyratings'] = 'Удалить рейтинги компетенций';
 $string['duplicateditemname'] = '{$a} (копия)';
 $string['enablecompetencies'] = 'Включить компетенции';
-$string['enablecompetencies_desc'] = 'Компетентности позволяют оценивать пользователей на соответствие требованиям учебных планов.';
+$string['enablecompetencies_desc'] = 'Компетенции позволяют оценивать пользователей на соответствие требованиям учебных планов.';
 $string['errorcannotchangeapastduedate'] = 'Срок выполнения прошел; он не может быть изменен.';
 $string['errorcannotsetduedateinthepast'] = 'Срок выполнения не может быть задан в прошлом.';
 $string['errorcannotsetduedatetoosoon'] = 'Срок выполнения наступит слишком быстро.';

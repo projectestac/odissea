@@ -30,6 +30,7 @@ $string['activateindividuals'] = 'Activate individual function';
 $string['activitydate:due'] = 'Due:';
 $string['activitydate:open'] = 'Opens:';
 $string['activitydate:opened'] = 'Opened:';
+$string['activitydate:opens'] = 'Opens:';
 $string['addnewgroupoverride'] = 'Add group override';
 $string['addnewuseroverride'] = 'Add user override';
 $string['addsubmission'] = 'Add submission';

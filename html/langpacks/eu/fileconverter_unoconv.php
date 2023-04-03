@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pathtounoconv'] = 'unoconv dokumentu-bihurgailurako bidea';
-$string['pathtounoconv_help'] = 'unoconv dokumentu-bihurgailurako bidea. Hau LibreOffice-k onartutako dokumentu-formatuen artean dokumentuak bihurtzeko gai den fitxategi exekutagarri bat da. Aukerazkoa da, baina zehaztuz gero, Moodle dokumentu-formatuak automatikoki bihurtzeko erabiliko du. Aukera hau zereginetan PDF oharrak egiteko funtzioa beste fitxategi-formatu batzuk onartu ditzan erabiltzen da.';
+$string['pathtounoconv_help'] = 'unoconv dokumentu-bihurgailurako bidea. Hau LibreOffice-k onartutako dokumentu-formatuen artean dokumentuak bihurtzeko gai den fitxategi exekutagarri bat da. Hautazkoa da, baina zehaztuz gero, Moodle dokumentu-formatuak automatikoki bihurtzeko erabiliko du. Aukera hau zereginetan PDF oharrak egiteko funtzioa beste fitxategi-formatu batzuk onartu ditzan erabiltzen da.';
 $string['pluginname'] = 'Unoconv';
 $string['privacy:metadata'] = 'Unoconv dokumentu-bihurgailu pluginak ez du datu pertsonalik biltzen.';
 $string['test_unoconv'] = 'Probatu Unoconv-erako bidea';

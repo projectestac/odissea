@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'クライテリアを追加する';
 $string['additionalfeedback'] = '追加フィードバック';
-$string['alwaysshowdefinition'] = 'ユーザがルーブリックをプレビューできるようにする (そうでない場合、ルーブリックは評定後のみ閲覧できます)';
+$string['alwaysshowdefinition'] = 'ユーザがルーブリックをプレビュできるようにする (そうでない場合、ルーブリックは評定後のみ閲覧できます)';
 $string['backtoediting'] = '編集に戻る';
 $string['confirmdeletecriterion'] = '本当にこのクライテリアを削除してもよろしいですか?';
 $string['confirmdeletelevel'] = '本当にこのレベルを削除してもよろしいですか?';
@@ -62,7 +62,7 @@ $string['needregrademessage'] = 'この学生が評定された後、ルーブ�
 $string['notset'] = '未設定';
 $string['pluginname'] = 'ルーブリック';
 $string['pointsvalue'] = '{$a} 点';
-$string['previewrubric'] = 'ルーブリックをプレビューする';
+$string['previewrubric'] = 'ルーブリックをプレビュする';
 $string['privacy:metadata:criterionid'] = '評定される特定のクライテリアのIDです。';
 $string['privacy:metadata:fillingssummary'] = 'ルーブリックにより作成されたユーザの評定に関する情報を保持します。';
 $string['privacy:metadata:instanceid'] = '活動の評定に関するIDです。';

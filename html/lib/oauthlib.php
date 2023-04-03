@@ -519,10 +519,13 @@ abstract class oauth2_client extends curl {
         // 2022.10.04 @aginard
         // Some oAuth clients, like Dropbox, don't have an issuer, so a check is required. There is also a special case for a
         // client for IDI. It is identified by the presence of the text 'IDI' in the display name.
-        $isIDI = method_exists($this, 'get_issuer') && is_number(strpos($this->get_issuer()->get('loginpagename'), 'IDI'));
-        if ($isIDI && function_exists('is_agora') && is_agora()) {
-            global $agora;
-            $callbackurl = new \moodle_url($agora['server']['server'] . '/portal/oidc.php');
+        if (is_agora()) {
+            $iditext = get_string('IDI', 'local_agora');
+            $isIDI = method_exists($this, 'get_issuer') && is_number(strpos($this->get_issuer()->get('loginpagename'), $iditext));
+            if ($isIDI) {
+                global $agora;
+                $callbackurl = new \moodle_url($agora['server']['server'] . '/portal/oidc.php');
+            }
         }
         // ************ FI
 
@@ -578,10 +581,13 @@ abstract class oauth2_client extends curl {
         // 2022.10.04 @aginard
         // Some oAuth clients, like Dropbox, don't have an issuer, so a check is required. There is also a special case for a
         // client for IDI. It is identified by the presence of the text 'IDI' in the display name.
-        $isIDI = method_exists($this, 'get_issuer') && is_number(strpos($this->get_issuer()->get('loginpagename'), 'IDI'));
-        if ($isIDI && function_exists('is_agora') && is_agora()) {
-            global $agora;
-            $callbackurl = new \moodle_url($agora['server']['server'] . '/portal/oidc.php');
+        if (is_agora()) {
+            $iditext = get_string('IDI', 'local_agora');
+            $isIDI = method_exists($this, 'get_issuer') && is_number(strpos($this->get_issuer()->get('loginpagename'), $iditext));
+            if ($isIDI) {
+                global $agora;
+                $callbackurl = new \moodle_url($agora['server']['server'] . '/portal/oidc.php');
+            }
         }
         // ************ FI
 

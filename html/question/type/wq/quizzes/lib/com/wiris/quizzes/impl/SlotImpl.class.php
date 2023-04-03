@@ -10,6 +10,51 @@ class com_wiris_quizzes_impl_SlotImpl extends com_wiris_util_xml_SerializableImp
 		$this->authorAnswers = new _hx_array(array());
 		$this->localData = new _hx_array(array());
 	}}
+	public function syntacticAssertionToURL($a) {
+		$sb = new StringBuf();
+		if($a->getName() == com_wiris_quizzes_api_assertion_SyntaxName::$MATH) {
+			$sb->add("Math");
+		} else {
+			if($a->getName() == com_wiris_quizzes_api_assertion_SyntaxName::$GRAPHIC) {
+				$sb->add("Graphic");
+			} else {
+				if($a->getName() == com_wiris_quizzes_api_assertion_SyntaxName::$STRING) {
+					$sb->add("String");
+				}
+			}
+		}
+		if($a->parameters !== null && $a->parameters->length > 0) {
+			$sb->add("?");
+			$i = null;
+			{
+				$_g1 = 0; $_g = $a->parameters->length;
+				while($_g1 < $_g) {
+					$i1 = $_g1++;
+					$p = $a->parameters[$i1];
+					if($i1 > 0) {
+						$sb->add("&");
+					}
+					$sb->add(rawurlencode($p->name));
+					$sb->add("=");
+					$sb->add(rawurlencode($p->content));
+					unset($p,$i1);
+				}
+			}
+		}
+		return $sb->b;
+	}
+	public function getGrammarUrl() {
+		$prefix = com_wiris_quizzes_api_Quizzes::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL);
+		$prefix .= "/grammar/";
+		$url = null;
+		if($this->syntax !== null) {
+			$url = $prefix . $this->syntacticAssertionToURL($this->syntax);
+		}
+		if($url === null) {
+			$url = $prefix . "Math";
+		}
+		return $url;
+	}
 	public function isSlotCompoundAnswer() {
 		return $this->getProperty(com_wiris_quizzes_api_PropertyName::$COMPOUND_ANSWER) === com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_TRUE;
 	}

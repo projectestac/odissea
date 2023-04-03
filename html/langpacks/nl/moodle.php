@@ -309,7 +309,7 @@ $string['contentbank'] = 'Inhoudsbank';
 $string['contentexport_aboutthiscourse'] = 'Cursussamenvatting';
 $string['contentexport_coursesummary'] = 'Dit bestand maakt deel uit van de inhoud die is gedownload van <a href="{$a->courselink}">{$a->coursename}</a>.';
 $string['contentexport_footersummary'] = 'Dit bestand maakt deel uit van de inhoud die is gedownload van <a href="{$a->courselink}">{$a->coursename}</a> door {$a->userfullname} op {$a->date}.';
-$string['contentexport_modulesummary'] = 'Deze pagina maakt deel uit van de inhoud die is gedownload van <a href="{$a- >modulelink} "> {$a->modulename} </a> op {$ a-> date}. Merk op dat sommige inhoud en alle bestanden groter dan {$a->maxfilesize} niet worden gedownload.';
+$string['contentexport_modulesummary'] = 'Deze pagina maakt deel uit van de inhoud die is gedownload van <a href="{$a->modulelink} "> {$a->modulename} </a> op {$a->date}. Merk op dat sommige inhoud en alle bestanden groter dan {$a->maxfilesize} niet worden gedownload.';
 $string['contentexport_viewfilename'] = 'Bekijk het bestand  {$a}';
 $string['continue'] = 'Ga door';
 $string['continuetocourse'] = 'Klik hier om je cursus binnen te gaan';

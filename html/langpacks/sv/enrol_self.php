@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'Registrering är stängd eller inaktiverad';
-$string['canntenrolearly'] = 'Du kan inte registrera dig ännu. Kursen öppnar börjar {$a}.';
+$string['canntenrolearly'] = 'Du kan inte registrera dig ännu; registreringen öppnar {$a}.';
 $string['canntenrollate'] = 'Kursen är stängd för registrering sedan {$a}.';
 $string['cohortnonmemberinfo'] = 'Endast medlemmar av kohort {$a} kan självregistrera.';
 $string['cohortonly'] = 'Endast kohortmedlemmarna';

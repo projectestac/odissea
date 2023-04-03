@@ -24,8 +24,6 @@
 
 namespace local_redislock\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy Subsystem for local_redislock implementing null_provider.
  *

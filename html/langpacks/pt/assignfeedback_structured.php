@@ -33,6 +33,7 @@ $string['criteriaset'] = 'Conjunto de critérios';
 $string['criteriaset_help'] = 'Clique para selecionar um conjunto de critérios anteriormente guardado para configurar automaticamente os detalhes dos critérios abaixo.';
 $string['criteriasetconfirmdelete'] = 'Tem a certeza de que pretende apagar <b>definitivamente</b> o conjunto de critérios "{$a}"?';
 $string['criteriasetconfirmuse'] = 'Tem a certeza? Esta ação substituirá os critérios que estão atualmente configurados para este trabalho.';
+$string['criteriasetdelete'] = 'Apagar conjunto de critérios';
 $string['criteriasetempty'] = 'Tem de definir pelo menos um critério antes de guardar como um conjunto.';
 $string['criteriasetemptytitle'] = 'O conjunto de critérios está vazio';
 $string['criteriasetname'] = 'Nome do conjunto de critérios';

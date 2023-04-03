@@ -74,7 +74,7 @@ Bestelako kasuetan, jarduera osatutzat markatzeko zirkulu hutsean klik egin ahal
 $string['completionswitchhelp'] = '<p>Lauza bakoitzean osaketaren jarraipena erakustea aukeratu duzu. Ondorioz, beheragoko "Osaketaren jarraipena > Gaitu" aukeran "Bai" jarri dugu.</p>
 <p>Horretaz gain, osaketaren jarraipena egin nahi diozun <b>elementu bakoitzean</b> aukera hori gaitu beharko duzu. Esaterako, PDF fitxategi batean, egin klik "Editatu ezarpenak" aukeran, Jarduera-osaketa atalera joan, eta bertan behar duzun ezarpena aukeratu ezazu.</p>
 <p>Ezarpen hau <b>masiboki</b> aldatu dezakezu <a href="https://docs.moodle.org/en/Activity_completion_settings" target="_blank">moodle.org-ko osaketaren jarraipenaren azalpen zehatzak</a> erakusten duen moduan.</p>';
-$string['completionwarning'] = 'Osaketaren jarraipena ikastaro mailan gaituta dago baina jarduera mailan ez dago osaketaren jarraipena gaituta daukan elementurik, eta beraz ez dago ezer jarraitzeko.';
+$string['completionwarning'] = 'Osaketaren jarraipena ikastaro mailan gaituta dago baina jarduera mailan ez dago osaketaren jarraipena gaituta daukan elementurik, eta beraz ezin da ezerren jarraipena egin.';
 $string['completionwarning_changeinbulk'] = 'Aldatu masiboki';
 $string['completionwarning_help'] = 'Elementu bakoitzaren jarraipena gaitu behar duzu horietako bakoitza editatuz (Jarduera-osaketa > Osaketaren jarraipena) edo masiboki egin dezakezu Ikastaroaren Kudeaketa > Ikastaro-osaketa > Masiboki editatu jardueren osaketa';
 $string['contact'] = 'Jarri harremanetan';
@@ -369,8 +369,8 @@ $string['snapwarning'] = 'Zure ikastaroa Lauzen formatua erabilita editatzeko be
 $string['snapwarning_help'] = 'Azalaren_ezarpenak#Baimendu_erabiltzailearen_azalak';
 $string['subtileszeczerotoggled'] = '0 atalaren formatua zerrenda eta azpi-lauzen artean aldatu da';
 $string['sureresetcolours'] = 'Ziur zaude ikastaro guztietako lauzen kolorea lehenetsitakora berrabiarazi nahi duzula? Honek {$} ikastarori eragingo die.';
-$string['tilecolourgeneral'] = 'Kolore-paleta - aukerazko kolorea';
-$string['tilecolourgeneral_descr'] = 'Ez<arpen hauek kudeatzaileari aukera ematen diote irakasleek ikastaroetan erabili ahalko dituzten koloreak aukeratzeko. Kolore bat desgaitzeko beltza (#000) aukeratu ezazu. Hemen koloreak aldatzen badituzu ikastaroetan ez da aldaketarik egingo irakasleak lauzen koloreak aldatzen saiatu arte. Une horretan irakasleak soilik hemen zehaztutako koloreak aukeratu ahalko ditu.';
+$string['tilecolourgeneral'] = 'Kolore-paleta - hautazko kolorea';
+$string['tilecolourgeneral_descr'] = 'Ezarpen hauek kudeatzaileari aukera ematen diote irakasleek ikastaroetan erabili ahalko dituzten koloreak aukeratzeko. Kolore bat desgaitzeko beltza (#000) aukeratu ezazu. Hemen koloreak aldatzen badituzu ikastaroetan ez da aldaketarik egingo irakasleak lauzen koloreak aldatzen saiatu arte. Une horretan irakasleak soilik hemen zehaztutako koloreak aukeratu ahalko ditu.';
 $string['tilecolourschanged'] = 'Lauzen kolorea berrabiarazi da. Orain lauza guztiak azpian zehaztutako koloreekin bat datoz.';
 $string['tileicon'] = 'Lauza honetan soilik erakutsi beharreko ikonoa';
 $string['tileicon_help'] = 'Hemen aukeratutako elementuak lauza honentzako ikastaro mailan zehaztutako ikonoa gainidatziko du.';

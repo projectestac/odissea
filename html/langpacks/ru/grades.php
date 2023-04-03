@@ -593,6 +593,7 @@ $string['outcomescoursecustom'] = 'Локальные используемые (
 $string['outcomescoursenotused'] = 'Стандартные неиспользуемые';
 $string['outcomescourseused'] = 'Стандартные используемые (нельзя удалить)';
 $string['outcomescustom'] = 'Локальные показатели';
+$string['outcomesdisabled'] = 'Показатели отключены';
 $string['outcomeshortname'] = 'Краткое название';
 $string['outcomesstandard'] = 'Стандартные показатели';
 $string['outcomesstandardavailable'] = 'Доступные стандартные показатели';

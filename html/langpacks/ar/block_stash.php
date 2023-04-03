@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addnewdrop'] = 'إضافة موضع جديد';
+$string['advancedreset'] = 'إعادة تعيين متقدمة';
 $string['backtostart'] = 'عودة إلى الشاشة الرئيسية';
 $string['configurationtitle'] = 'عنوان المدخرات';
 $string['dropname_help'] = 'اسم الموقع مفيد لك فقط لتنظيمها، فهو لن يظهر للطلاب.';
@@ -44,6 +45,7 @@ $string['privacy:metadata:pickup:timecreated'] = 'وقت إنشاء السجل';
 $string['privacy:metadata:pickup:timemodified'] = 'وقت آخر تعديل في السجل';
 $string['privacy:metadata:useritem:timecreated'] = 'وقت إنشاء السجل';
 $string['privacy:metadata:useritem:timemodified'] = 'وقت آخر تعديل في السجل';
+$string['reportadditional'] = 'إدارة عنصر المستخدم المتقدم';
 $string['stash:view'] = 'معاينة المدخرات ومحتوياتها';
 $string['title'] = 'العنوان';
 $string['tradename_help'] = 'اسم القطعة التجارية، وهو قد يُعرض للطلاب.';

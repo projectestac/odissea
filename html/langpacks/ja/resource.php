@@ -84,7 +84,7 @@ $string['modulename_help'] = 'ファイルモジュールにおいて教師は�
 * コースリソースとしてミニウェブサイトを含むため
 * ソフトウェアプログラムの下書きファイルを提供して学生が編集および評価のために提出できるようにするため';
 $string['modulenameplural'] = 'ファイル';
-$string['notmigrated'] = '申し訳ございません、このレガシーリソースタイプ ({$a}) はまだ移行されていません。';
+$string['notmigrated'] = '申し訳ございません、このレガシリソースタイプ ({$a}) はまだ移行されていません。';
 $string['optionsheader'] = '表示オプション';
 $string['page-mod-resource-x'] = 'すべてのファイルモジュールページ';
 $string['pluginadministration'] = 'ファイルモジュール管理';

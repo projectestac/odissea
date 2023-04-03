@@ -108,9 +108,9 @@ $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['search:activity'] = 'Fitxategia';
 $string['selectmainfile'] = 'Aukeratu mesedez fitxategi nagusia fitxategiaren izenaren ondoan dagoen ikonoan klik eginda.';
-$string['showdate'] = 'Erakutsi igotako/aldatutako data';
-$string['showdate_desc'] = 'Erakutsi igotako/aldatutako data ikastaroaren orrian?';
-$string['showdate_help'] = 'Igoera/aldatze data fitxategiaren estekaren ondoan erakusten du.
+$string['showdate'] = 'Erakutsi igotze/aldatze data';
+$string['showdate_desc'] = 'Erakutsi igotze/aldatze data ikastaroaren orrian?';
+$string['showdate_help'] = 'Igotze/aldatze data fitxategiaren estekaren ondoan erakusten du.
 
 Baliabidean fitxategi anitz badago, hasierako fitxategiaren igoera/aldatze data erakutsiko da.';
 $string['showsize'] = 'Erakutsi tamaina';

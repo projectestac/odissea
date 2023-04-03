@@ -89,7 +89,7 @@ $string['uploadcohorts_help'] = 'Kohorteak testu-fitxategien bitartez igo daitez
 * Erregistro bakoitza aukeratutako banatzaileaz banatutako datu-multzo bat da
 * Fitxategiko lehen errenkadak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
 * <i>name</i> eremua derrigorrezkoa da
-* Aukerazko eremuak hurrengoak dira: <i>idnumber</i>, <i>description</i>, <i>descriptionformat</i>, <i>visible</i>, <i>context</i>, <i>category</i>, <i>category_id</i>, <i>category_idnumber</i> eta <i>category_path</i>';
+* Hautazko eremuak hurrengoak dira: <i>idnumber</i>, <i>description</i>, <i>descriptionformat</i>, <i>visible</i>, <i>context</i>, <i>category</i>, <i>category_id</i>, <i>category_idnumber</i> eta <i>category_path</i>';
 $string['uploadedcohorts'] = 'Igotako {$a} kohorte';
 $string['useradded'] = 'Erabiltzailea "{$a}" kohortera gehitu da';
 $string['visible'] = 'Ikusgai';

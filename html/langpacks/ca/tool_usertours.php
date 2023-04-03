@@ -54,15 +54,15 @@ $string['delay_help'] = 'Podeu afegir un retard abans que es mostri el pas.
 Aquest retard és en mil·lisegons.';
 $string['description'] = 'Descripció';
 $string['done'] = 'Fet';
-$string['duplicatetour'] = 'Visita guiada duplicada';
+$string['duplicatetour'] = 'Duplica la visita guiada';
 $string['duplicatetour_name'] = '{$a} (còpia)';
 $string['editstep'] = 'S\'està editant «{$a}»';
 $string['enabled'] = 'Habilitat';
 $string['endtour'] = 'Finalitza la visita guiada';
 $string['event_step_shown'] = 'Pas mostrat';
-$string['event_tour_ended'] = 'Visita guiada finalitzada';
-$string['event_tour_reset'] = 'Visita guiada restaurada';
-$string['event_tour_started'] = 'S\'ha iniciat la visita guiada';
+$string['event_tour_ended'] = 'La visita guiada ha finalitzat';
+$string['event_tour_reset'] = 'La visita guiada s\'ha reiniciat';
+$string['event_tour_started'] = 'La visita guiada s\'ha iniciat';
 $string['exporttour'] = 'Exporta la visita guiada';
 $string['filter_accessdate'] = 'Data d\'accés';
 $string['filter_accessdate_enabled'] = 'Habilita el filtre de data d\'accés';
@@ -93,7 +93,7 @@ $string['movetourdown'] = 'Mou la visita guiada a sota';
 $string['movetourup'] = 'Mou la visita guiada a sobre';
 $string['name'] = 'Nom';
 $string['newstep'] = 'Pas nou';
-$string['newtour'] = 'Crea una visita guiada nova';
+$string['newtour'] = 'Crea una nova visita guiada';
 $string['next'] = 'Següent';
 $string['nextstep'] = 'Següent';
 $string['options_heading'] = 'Opcions';
@@ -140,15 +140,15 @@ $string['target_selector_targetvalue'] = 'Selectors de CSS';
 $string['target_selector_targetvalue_help'] = 'Es pot utilitzar un selector de CSS per orientar gairebé qualsevol element de la pàgina. Podeu trobar fàcilment el selector adequat utilitzant les eines del desenvolupador per al vostre navegador web.';
 $string['target_unattached'] = 'Mostra al mig de la pàgina';
 $string['targettype'] = 'Tipus de destinació';
-$string['targettype_help'] = 'Cada pas s\'associa a una part de la pàgina —l\'àrea de destinació. Els d\'àrees de destinació són els següents:
+$string['targettype_help'] = 'Cada pas s\'associa a una part de la pàgina —la destinació. Els tipus de destinació són els següents:
 
-* Bloc; per mostrar un pas proper a un bloc específic
-* Selector de CSS; per definir amb precisió l\'àrea de destinació utilitzant CSS
-* Mostra al mig de la pàgina; per a un pas que no necessita estar associat a cap part específica de la pàgina';
+* Bloc; per mostrar un pas proper a un bloc específic.
+* Selector de CSS; per definir amb precisió l\'àrea de destinació utilitzant CSS.
+* Mostra al mig de la pàgina; per a un pas que no necessita estar associat a cap part específica de la pàgina.';
 $string['title'] = 'Títol';
 $string['title_help'] = 'El títol d\'un pas es pot afegir com a text sense format, inclòs en etiquetes multilingües (per utilitzar-lo amb el filtre de contingut de diversos idiomes), en cas de ser necessari.
 
-Alternativament, es pot introduir un identificador de cadena d\'idioma en l\'identificador de format, component (sense claudàtors o espai després de la coma).';
+Alternativament, es pot introduir un identificador de cadena d\'idioma en el format identificador,component (sense claudàtors o espai després de la coma).';
 $string['tour1_content_addingblocks'] = 'Penseu bé si voleu incloure blocs a les vostres pàgines. Els blocs no es mostren a l\'aplicació per al mòbil de Moodle, per tant, com a regla general, assegureu-vos que el vostre lloc funciona correctament sense blocs.';
 $string['tour1_content_blockregion'] = 'Encara hi ha una regió de blocs aquí. Recomanem eliminar completament els blocs de Navegació i Administració, ja que tota la funcionalitat es troba en un altre lloc del tema Boost.';
 $string['tour1_content_customisation'] = 'Per personalitzar l\'aspecte del vostre lloc i la portada, utilitzeu el menú de configuració a la cantonada de la capçalera. Proveu d\'activar l\'edició ara.';
@@ -177,7 +177,7 @@ $string['tour2_title_navigation'] = 'Navegació';
 $string['tour2_title_opendrawer'] = 'Obre el menú de navegació';
 $string['tour2_title_participants'] = 'Participants del curs';
 $string['tour2_title_welcome'] = 'Benvinguts';
-$string['tour3_content_dashboard'] = 'El vostre nou Tauler té moltes funcionalitats per a ajudar-vos a accedir fàcilment a la informació més important per a vós.';
+$string['tour3_content_dashboard'] = 'El vostre Tauler nou té moltes funcionalitats per ajudar-vos a accedir fàcilment a la informació més important per a vós.';
 $string['tour3_content_displayoptions'] = 'Els cursos es poden ordenar pel nom del curs, pel nom curt del curs o per la data del darrer accés.
 
 També podeu triar mostrar els cursos en una llista, amb un resum de la informació, o amb la vista per defecte de «targeta».';

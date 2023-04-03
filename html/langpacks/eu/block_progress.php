@@ -181,7 +181,7 @@ $string['what_expected_by_means_help'] = '<p><em>Noizko osatzea espero den</em> 
 </p>
 <p>Behin epemuga bat zehaztu ondoren hau jarduera/baliabidearen beste informazioarekiko independientea izango da.</p>';
 $string['what_locked_means'] = 'Zer esan nahi du epera mugatuta egoteak?';
-$string['what_locked_means_help'] = '<p>Aktibitate batek bere ezarpenetan bertan epemuga zehazteko aukera badu, eta epemuga hori zehazten bada, aukera dago epemuga hori erabiltzeko edo Aurrerapen-barran beste epemuga independiente bat erabitlzeko.</p>
+$string['what_locked_means_help'] = '<p>Aktibitate batek bere ezarpenetan bertan epemuga zehazteko aukera badu, eta epemuga hori zehazten bada, aukera dago epemuga hori erabiltzeko edo Aurrerapen-barran beste epemuga independente bat erabiltzeko.</p>
 <p>Aurrerapen-barrako epemuga aktibitatearen epera mugatzeko epemuga bat zehazturik egon behar du. Epera mugatuz gero, aktibitatearen ezarpenetan epemuga aldatzean Aurrerapen-barraren epemuga ere automatikoki aldatu egingo da.</p>
 <p>Aktibitate bat epera mugatzen ez bada, Aurrerapen-barran data eta ordua aldatzeak ez du aktibitatearen epemugan eraginik izango.</p>';
 $string['what_show_submitted_means'] = 'Zer esan nahi duen "ekintza baten zain bidalia" adierazpideak.';

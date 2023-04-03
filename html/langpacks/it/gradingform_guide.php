@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addcomment'] = 'Aggiungi commento di uso frequente';
 $string['addcriterion'] = 'Aggiungi criterio';
 $string['additionalcomments'] = 'Commenti aggiuntivi';
+$string['additionalcommentsforcriterion'] = 'Commenti aggiuntivi sul criterio {$a}';
 $string['alwaysshowdefinition'] = 'La definizione della valutazione guidata è visualizzata dagli studenti';
 $string['backtoediting'] = 'Torna alla modifica';
 $string['clicktocopy'] = 'Click per copiare questo testo nel commento dei criteri';

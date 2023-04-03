@@ -26,8 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activetime'] = 'وقت الفعالية';
+$string['activityclose'] = 'النشاط يُغلق';
 $string['activityname'] = 'اسم النشاط';
+$string['activityopen'] = 'النشاط يُفتح';
 $string['addvideohelp'] = 'لإضافة فيديو إلى هذه الصفحة، أنقر هذه الأيقونة وابحث عن الفيديو المطلوب.';
+$string['advanced'] = 'متقدمة';
+$string['advancedsection'] = 'إعدادات متقدمة';
 $string['allusersreport'] = 'تقرير كل المستخدمين';
 $string['compositescore'] = 'الدرجة النهائية';
 $string['copyright'] = 'المصدر';

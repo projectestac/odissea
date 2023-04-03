@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = 'A atribuir o papel "{$a->role_shortname}" ao utilizador "{$a->user_username}" na disciplina "{$a->course_shortname}" (identificador da disciplina {$a->course_id})';
 $string['assignrolefailed'] = 'A atribuição do papel "{$a->role_shortname}" ao utilizador "{$a->user_username}" na disciplina "{$a->course_shortname}" (identificados da disciplina {$a->course_id})';
-$string['autocreate'] = '<p>As disciplinas podem ser criadas automaticamente caso sejam detetadas inscrições em disciplinas que não existem no Moodle</p><p>Se estiver a usar a criação automática de disciplinas recomenda-se que sejam removidas as permissões: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname and moodle/course:changesummary, dos papéis mais importantes para evitar alterações dos campos das disciplinas referidos nestas permissões (ID number, shortname, fullname and summary).</p>';
+$string['autocreate'] = '<p>As disciplinas podem ser criadas automaticamente caso sejam detetadas inscrições em disciplinas que não existem no Moodle.</p><p>Se estiver a usar a criação automática de disciplinas recomenda-se que sejam removidas as permissões: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname and moodle/course:changesummary, dos papéis mais importantes para evitar alterações dos campos das disciplinas referidos nestas permissões (ID number, shortname, fullname and summary).</p>';
 $string['autocreate_key'] = 'Criação automática';
 $string['autocreation_settings'] = 'Configurações para criação automática de disciplinas';
 $string['autoupdate_settings'] = 'Atualização das configurações automáticas da disciplina';

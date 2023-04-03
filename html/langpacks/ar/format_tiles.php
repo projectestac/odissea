@@ -30,6 +30,7 @@ $string['colourdarkgreen'] = 'أخضر داكن';
 $string['colourgreen'] = 'أخضر';
 $string['displaytitle_mod_html'] = 'صفحة الويب';
 $string['home'] = 'الصفحة الرئيسية للمقرر الدراسي';
+$string['icontitle-address-book-o'] = 'دفتر العناوين';
 $string['icontitle-home'] = 'الصفحة الرئيسية';
 $string['icontitle-tags'] = 'الوسوم';
 $string['imagesize'] = 'حجم الصورة';

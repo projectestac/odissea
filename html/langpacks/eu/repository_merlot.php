@@ -33,4 +33,4 @@ $string['pluginname_help'] = 'Merlot.org';
 $string['privacy:metadata:repository_merlot'] = 'Merlot.org biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_merlot:author'] = 'Merlot.org biltegiko edukien egilea.';
 $string['privacy:metadata:repository_merlot:keywords'] = 'Merlot.org biltegiko erabiltzailearen bilaketaren testua.';
-$string['privacy:metadata:repository_merlot:licencekey'] = 'Merlot.org biltegiko lizentziaren giltza.';
+$string['privacy:metadata:repository_merlot:licencekey'] = 'Merlot.org biltegiko lizentziaren gakoa.';

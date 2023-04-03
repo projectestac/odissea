@@ -66,7 +66,7 @@ $string['colourpurple'] = 'Violet';
 $string['colourred'] = 'Rouge';
 $string['colours'] = 'Couleurs';
 $string['complete'] = 'achevé';
-$string['complete-n-auto'] = 'Élément non achevé. Il sera considéré comme achevé lorsque vous aurez rempli les critères d\'achèvement. Vous ne pouvez pas le modifier manuellement.';
+$string['complete-n-auto'] = 'Élément non terminé. Il sera considéré comme terminé lorsque vous aurez rempli tous les critères d\'achèvement. Vous ne pouvez pas le modifier manuellement.';
 $string['complete-y-auto'] = 'Élément achevé. Il a été marquée comme étant achevé lorsque vous avez rempli les critères d\'achèvement. Vous ne pouvez pas le modifier manuellement.';
 $string['completion_help'] = 'Une coche à droite d\'une activité peut être utilisée pour indiquer quand l\'activité est terminée (un cercle vide sera affiché si non). <br><br>
 Selon le réglage, une coche peut apparaître automatiquement lorsque vous avez terminé l\'activité selon les conditions définies par l\'enseignant.<br><br>

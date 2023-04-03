@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['settingsusemail'] = 'استعمل عنوان البريد الالكتروني للمصادقة';
 $string['uploadfailed'] = 'فشل الرفع<br /><br />يرجى تنشيط الصفحة والمحاولة مجددًا';

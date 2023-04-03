@@ -31,7 +31,7 @@ $string['auth_oauth2description'] = 'Authentification basée sur les standards O
 $string['auth_oauth2settings'] = 'Réglages d\'authentification OAuth 2.';
 $string['confirmaccountemail'] = 'Bonjour,
 
-Un nouveau compte a été demandé sur « {$a->sitename} » a été demandée en utilisant votre adresse de courriel.
+Un nouveau compte a été demandé sur « {$a->sitename} » en utilisant votre adresse de courriel.
 
 Pour confirmer votre nouveau compte, veuillez visiter la page web suivante :
 

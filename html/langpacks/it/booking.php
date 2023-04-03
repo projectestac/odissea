@@ -355,8 +355,7 @@ $string['bookotherusers'] = 'Prenota per altri utenti';
 $string['booktootherbooking'] = 'Prenota utenti ad altra prenotazione';
 $string['bookuserswithoutcompletedactivity'] = 'Prenota utenti senza attività completata';
 $string['bstcourse'] = 'Corso';
-$string['bstcourseendtime'] = 'Tempo scaduto';
-$string['bstcoursestarttime'] = 'Ora di inizio';
+$string['bstcoursestarttime'] = 'Data / Ora';
 $string['bstinstitution'] = 'Istituzione';
 $string['bstlink'] = 'Mostra';
 $string['bstlocation'] = 'Luogo';
@@ -413,7 +412,7 @@ Partecipante:   {$a->participant}
 Opzione di prenotazione:   {$a->title}
 Date: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
 Per vedere tutti i tuoi corsi prenotati clicca sul seguente link: {$a->bookinglink}
-Il corso associato può essere trovato qu: {$a->courselink}';
+Il corso associato può essere trovato qui: {$a->courselink}';
 $string['confirmationmessagesettings'] = 'Impostazione e-mail di conferma';
 $string['confirmationmessagewaitinglist'] = 'Buongiorno  {$a->participant},
 
@@ -508,7 +507,7 @@ Data:  {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
 Corso: {$a->courselink}
 Link di prenotazione:  {$a->bookinglink}';
 $string['deletedbookingsubject'] = 'Prenotazione cancellata: {$a->title} da {$a->participant}';
-$string['deletedbookingusermessage'] = 'Buongiorno {$a->participant},.
+$string['deletedbookingusermessage'] = 'Gentile {$a->participant}.
 
 La tua prenotazione per {$a->title} ({$a->startdate} {$a->starttime}) è stata cancellata.';
 $string['deletedbookingusersubject'] = 'Prenotazione per {$a->title} cancellata';
@@ -661,6 +660,7 @@ $string['importinfo'] = 'Informazioni sull\'importazione: puoi utilizzare le seg
 $string['includeteachers'] = 'Includere gli insegnanti nel foglio presenza';
 $string['infoalreadybooked'] = '<div class="infoalreadybooked"><i>Hai già prenotato questa opzione.</i></div>';
 $string['infonobookingoption'] = 'Per aggiungere un\'opzione di prenotazione, utilizza il blocco delle impostazioni o l\'icona delle impostazioni nella parte superiore della pagina';
+$string['infowaitinglist'] = '<div class="infowaitinglist"><i>Sei in lista d\'attesa per questa opzione</i></div>';
 $string['instance_not_saved_no_valid_license'] = 'Impossibile salvare l\'istanza di prenotazione come modello.
                                                    Esegui l\'upgrade alla versione PRO per salvare un numero illimitato di modelli.';
 $string['instancesuccessfullysaved'] = 'Questa istanza di prenotazione è stata salvata correttamente come modello.';
@@ -905,7 +905,7 @@ $string['paginationnum'] = 'N. di record - impaginazione';
 $string['pdfdate'] = 'Data(e) di prenotazione:';
 $string['pdflandscape'] = 'Orizzontale';
 $string['pdflocation'] = 'Luogo:';
-$string['pdfportrait'] = 'Vericale';
+$string['pdfportrait'] = 'Verticale';
 $string['pdfroom'] = 'Stanza:';
 $string['pdfsignature'] = 'Firma';
 $string['pdfstudentname'] = 'Nome dello studente';
@@ -1130,8 +1130,49 @@ $string['showallbookings'] = 'Tutte le prenotazioni';
 $string['showcoursenameandbutton'] = 'Mostra il nome del corso, le informazioni brevi e un pulsante che reindirizza alle opzioni di prenotazione disponibili';
 $string['showcustomfields'] = 'Campi delle opzioni di prenotazione personalizzate';
 $string['showcustomfields_desc'] = 'Seleziona i campi delle opzioni di prenotazione personalizzate da mostrare nel foglio presenza';
-$string['signinlogofooter'] = 'Logo nel piè di pagina da visualizzare nel foglio di registrazione';
-$string['signinlogoheader'] = 'Logo nell\'intestazione da visualizzare nel foglio di accesso';
+$string['showdates'] = 'Visualizza le date';
+$string['showdescription'] = 'Visualizza la descrizione';
+$string['showdescriptioninline'] = 'Visualizza le descrizioni complete in linea (proprio all\'interno della tabella)';
+$string['showdescriptionmodal'] = 'Visualizza i link informativi (predefinito)';
+$string['showdescriptionmode'] = 'Seleziona la modalità di descrizione';
+$string['showdescriptionmode_help'] = 'È possibile selezionare come visualizzare le descrizioni: puoi mostrarle solo dopo aver fatto clic sui link delle informazioni o in linea, direttamente all\'interno della tabella.';
+$string['showhelpfullnavigationlinks'] = 'Visualizza i link di navigazione.';
+$string['showhelpfullnavigationlinks_help'] = 'Visualizza i link \'Vai alla registrazione\' e \'Vai all\'inizio\'.';
+$string['showinapi'] = 'Visualizza nelle API?';
+$string['showlistoncoursepage'] = 'Visualizza l\'elenco nella pagina del corso (default)';
+$string['showlistoncoursepagelbl'] = 'Visualizza le opzioni di prenotazione disponibili sulla pagina del corso';
+$string['showlistoncoursepagelbl_help'] = 'Attivado questa impostazione, verrà visualizzato un elenco di opzioni di prenotazione disponibili
+                                             Visualizzato proprio nella pagina del corso sotto il link dell\'istanza di prenotazione.
+                                             Puoi anche scegliere di visualizzare solo il nome del corso, una breve informazione e un pulsante
+                                             reindirizzamento alle opzioni di prenotazione disponibili.';
+$string['showmybookingsonly'] = 'Le mie prenotazioni';
+$string['showonlymyinstitutions'] = 'La mia istituzione';
+$string['showviews'] = 'Visualizzazioni da elencare nella panoramica delle opzioni di prenotazione';
+$string['sign_in_sheet_download'] = 'Scarica il foglio firme';
+$string['sign_in_sheet_download_show'] = 'Visualizza il modulo di download del foglio firme';
+$string['signature'] = 'Firma';
+$string['signinaddemptyrows'] = 'Numero di righe vuote da aggiungere per le persone che non si sono registrate';
+$string['signincustfields'] = 'Campi personalizzati del profilo';
+$string['signincustfields_desc'] = 'Seleziona i campi personalizzati del profilo da visualizzare nel foglio firme';
+$string['signinextracols'] = 'Colonna aggiuntiva';
+$string['signinextracols_desc'] = 'Puoi stampare fino a 3 colonne aggiuntive sul foglio firme. Inserisci il titolo della colonna o lascialo vuoto per non aggiungere colonne aggiuntive';
+$string['signinextracols_heading'] = 'Colonne aggiuntive nel foglio firme';
+$string['signinlogo'] = 'Logo da visualizzare sul foglio firme';
+$string['signinlogofooter'] = 'Logo nel piè di pagina da visualizzare sul foglio firme';
+$string['signinlogoheader'] = 'Logo nell\'intestazione da visualizzare sul foglio firme';
+$string['signinonesession'] = 'Visualizza l\'ora della sessione selezionata sul foglio firme';
+$string['signinsheetfields'] = 'Campi del foglio firme (PDF)';
+$string['spaceleft'] = 'spazio disponibile';
+$string['spacesleft'] = 'spazi disponibili';
+$string['startendtimeknown'] = 'L\'ora di inizio e di fine del corso è nota';
+$string['starttimenotset'] = 'Data di inizio non impostata';
+$string['status'] = 'Stato';
+$string['status_attending'] = 'Partecipazione';
+$string['status_complete'] = 'Completato';
+$string['status_failed'] = 'Non andato a buon fine';
+$string['status_incomplete'] = 'Incompleto';
+$string['status_noshow'] = 'Assente';
+$string['status_unknown'] = 'Sconosciuto';
 $string['statuschangemessage'] = 'Gentile {$a->participant},
 
 lo stato della tua prenotazione è cambiato.
@@ -1143,11 +1184,62 @@ Opzione della prenotazione: {$a->title}
 Data: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
 
 Vai all\'opzione della prenotazione: {$a->gotobookingoption}';
+$string['statuschangesubject'] = 'Lo stato della prenotazione di {$a->title} è cambiato';
 $string['statuschangetext'] = 'Messaggio di modifica dello stato';
+$string['submitandaddnew'] = 'Salva e aggiungi nuovo';
+$string['submitandgoback'] = 'Salva e torna indietro';
+$string['subscribersto'] = 'Docenti di \'{$a}\'';
+$string['subscribetocourse'] = 'Iscrivi gli utenti al corso';
+$string['subscribeuser'] = 'Vuoi iscrivere gli utenti al seguente corso?';
+$string['successfulldeleted'] = 'La categoria è stata eliminata.';
+$string['successfulldeletedinstitution'] = 'L\'istituzione è stata eliminata';
+$string['sucesfullcompleted'] = 'L\'attività è stata completata correttamente dagli utenti.';
+$string['sucesfullytransfered'] = 'Gli utenti sono stati trasferiti correttamente.';
+$string['tagdeleted'] = 'Il modello di tag è stato eliminato.';
+$string['tagsuccessfullysaved'] = 'Il tag è stato salvato.';
+$string['tagtag'] = 'Tag';
+$string['tagtemplates'] = 'Modelli di tag';
+$string['tagtext'] = 'Testo';
+$string['taken'] = 'Occupato';
+$string['teacherroleid'] = 'Iscrivi il docente al corso con quel ruolo';
+$string['teachers'] = 'Docenti';
+$string['templatedeleted'] = 'Il modello è stato eliminato.';
+$string['templatefile'] = 'File modello';
+$string['templatesuccessfullysaved'] = 'Il modello è stato salvato.';
+$string['terminated'] = 'Terminato';
+$string['textfield'] = 'Inserimento di testo a riga singola';
+$string['thisinstance'] = 'Questa istanza di prenotazione';
+$string['timecloseoption'] = 'Limita la disponibilità di questa opzione di prenotazione fino a una certa data';
+$string['timecreated'] = 'Orario di creazione';
+$string['timerestrict'] = 'Limita la risposta a questo periodo di tempo: questa impostazione è obsoleta e verrà rimossa. Utilizza le impostazioni "Limita accesso" per rendere disponibile l\'attività di prenotazione per un determinato periodo';
+$string['to'] = 'a';
+$string['toomuchusersbooked'] = 'Il numero massimo di utenti che puoi prenotare è: {$a}';
+$string['topic'] = 'Argomento';
+$string['transefusers'] = 'Trasferisci utenti';
+$string['transfer'] = 'Trasferisci';
+$string['transferheading'] = 'Trasferisci gli utenti selezionati all\'opzione di prenotazione selezionata';
+$string['transferhelp'] = 'Trasferisci gli utenti che non hanno completato l\'attività dall\'opzione selezionata a {$a}.';
+$string['transferoptionsuccess'] = 'L\'opzione di prenotazione e gli utenti sono stati trasferiti correttamente.';
+$string['transferproblem'] = 'Quanto segue non può essere trasferito a causa della limitazione dell\'opzione di prenotazione o della limitazione dell\'utente: {$a}';
+$string['transfersuccess'] = 'Gli utenti sono stati trasferiti correttamente alla nuova opzione di prenotazione';
+$string['unlimited'] = 'Il numero di posti disponibili non è limitato';
+$string['updatebooking'] = 'Modifica questa opzione di prenotazione';
+$string['usedinbooking'] = 'Non puoi eliminare questa categoria, perché la stai utilizzando nella prenotazione.';
+$string['usedinbookinginstances'] = 'Il modello viene utilizzato nelle seguenti istanze di prenotazione';
+$string['usercalendarentry'] = 'Sei prenotato per <a href="{$a}">this session</a>.';
+$string['userdownload'] = 'Scarica utenti';
+$string['userid'] = 'ID utente';
+$string['userleave'] = 'L\'utente ha cancellato la propria prenotazione';
 $string['userleavebookedmessage'] = 'Gentile {$a->participant},
 
 sei stato cancellato da {$a->title}.';
+$string['userleavebookedsubject'] = 'Sei stato cancellato correttamente da {$a->title}.';
 $string['usernameofbookingmanager'] = 'Scegli un responsabile delle prenotazioni';
+$string['usernameofbookingmanager_help'] = 'Username dell\'utente che verrà visualizzato nel campo "Da" delle notifiche di conferma. Se l\'opzione "Invia e-mail di conferma al gestore della prenotazione" è abilitata, è l\'utente che riceve una copia delle notifiche di conferma.';
+$string['users'] = '<< Gestione risposte';
+$string['usersonlist'] = 'Utente in elenco';
+$string['userssuccessfullenrolled'] = 'Tutti gli utenti sono stati iscritti.';
+$string['userssuccessfullybooked'] = 'Tutti gli utenti sono stati prenotati nell\'altra opzione di prenotazione.';
 $string['userssuccessfullygetnewpresencestatus'] = 'Tutti gli utenti hanno un nuovo stato di presenza.';
 $string['userssucesfullygetnewpresencestatus'] = 'Stato di presenza per utenti selezionati aggiornato correttamente';
 $string['viewallresponses'] = 'Gestisci {$a} risposte';

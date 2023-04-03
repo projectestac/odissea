@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['edit'] = 'ترمیم';
 $string['navigation'] = 'نیویگیشن';
 $string['wikiname'] = 'صفحے کا نام';

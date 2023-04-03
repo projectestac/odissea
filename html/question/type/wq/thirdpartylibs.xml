@@ -2,8 +2,8 @@
 <libraries>
     <library>
         <location>quizzes</location>
-        <name>Wiris Quizzes engine</name>
-        <version>4.6.0</version>
+        <name>WirisQuizzes generic integration</name>
+        <version>4.7.0</version>
         <license>GPL</license>
         <licenseversion>3.0+</licenseversion>
     </library>

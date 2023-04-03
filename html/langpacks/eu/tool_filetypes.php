@@ -54,7 +54,7 @@ $string['error_notfound'] = '{$a} luzapena duen fitxategi mota ezin izan da aurk
 $string['extension'] = 'Luzapena';
 $string['extension_help'] = 'Fitxategiaren luzapenaren izena punturik gabe, \'mobi\' adibidez';
 $string['groups'] = 'Talde motak';
-$string['groups_help'] = 'Aukeran luzapen hau biltzen duten fitxategi-taldeak zerrendatu daitezke. Hauek kategoria orkorrak dira, hala nola \'document\' eta \'image\'.';
+$string['groups_help'] = 'Hautazko luzapen hau biltzen duten fitxategi-taldeak zerrendatu daitezke. Hauek kategoria orkorrak dira, hala nola \'document\' eta \'image\'.';
 $string['icon'] = 'Fitxategiaren ikonoa';
 $string['icon_help'] = 'Ikonoaren fitxategi-izena.
 

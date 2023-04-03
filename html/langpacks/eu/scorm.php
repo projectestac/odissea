@@ -124,8 +124,8 @@ $string['displayattemptstatus'] = 'Erakutsi saiakeren egoera';
 $string['displayattemptstatus_help'] = 'Gaituz gero, erabiltzailearen saiakeren laburpena Aginte-paneleko ikastaroaren ikuspegi orokorreko blokean edota SCORM-en laburpen-orrian erakutsiko dira.';
 $string['displayattemptstatusdesc'] = 'Erakutsi erabiltzailearen saiakeren laburpena ikastaroaren ikuspegi orokorreko blokean Aginte-panelean edota SCORM-en laburpen-orrian.';
 $string['displaycoursestructure'] = 'Erakutsi ikastaro-egitura sarrera-orrian';
-$string['displaycoursestructure_help'] = 'Gaituz gero, eduki-taula SCORM-en laburpen-orrian erakutsiko da';
-$string['displaycoursestructuredesc'] = 'Gaituz gero, eduki-taula SCORM-en laburpen-orrian erakutsiko da.';
+$string['displaycoursestructure_help'] = 'Gaituz gero, edukien taula SCORM-en laburpen-orrian erakutsiko da';
+$string['displaycoursestructuredesc'] = 'Gaituz gero, edukien taula SCORM-en laburpen-orrian erakutsiko da.';
 $string['displaydesc'] = 'SCORM paketea leiho berri batean erakutsi ala ez.';
 $string['displaysettings'] = 'Erakusteko ezarpenak';
 $string['dnduploadscorm'] = 'Gehitu SCORM pakete bat';
@@ -202,8 +202,8 @@ $string['hidebrowsedesc'] = 'Aurrebista-moduak baimentzen die ikasleei jarduera 
 $string['hideexit'] = 'Ezkutatu irteera esteka';
 $string['hidereview'] = 'Ezkutatu berrikusketa esteka';
 $string['hidetoc'] = 'Erakutsi ikastaroaren egitura erreproduzigailuan';
-$string['hidetoc_help'] = 'Nola erakutsiko den eduki-taula SCORM erreproduzigailuan.';
-$string['hidetocdesc'] = 'Ezarpen honek zehazten du nola erakutsiko den eduki-taula SCORM erreproduzigailuan.';
+$string['hidetoc_help'] = 'Nola erakutsiko den edukien taula SCORM erreproduzigailuan.';
+$string['hidetocdesc'] = 'Ezarpen honek zehazten du nola erakutsiko den edukien taula SCORM erreproduzigailuan.';
 $string['highestattempt'] = 'Puntuazio altuena duen saiakera';
 $string['identifier'] = 'Galderaren identifikatzailea';
 $string['incomplete'] = 'Osatu gabea';
@@ -248,7 +248,7 @@ $string['mode'] = 'Modua';
 $string['modulename'] = 'SCORM paketea';
 $string['modulename_help'] = 'SCORM paketeak irakaskuntza-objektuentzat adostutako estandarrei jarraituz bildutako fitxategi-multzoak dira. SCORM jarduera-moduluak SCORM edota AICC paketeak ikastaroan erabiliak izateko ZIP fitxategi batean igotzea ahalbidetzen du.
 
-Edukia hainbat orritan erakutsi ohi da, orrien arteko nabigazioarekin. Edukiak erakusteko modu ezberdinak daude: pop-up leiho batean, eduki-taularekin, nabigazio-botoiekin,... SCORM jardueren barnean galderak egon ohi dira, eta bertako kalifikazioak kalifikazio-liburuan gordetzen dira.
+Edukia hainbat orritan erakutsi ohi da, orrien arteko nabigazioarekin. Edukiak erakusteko modu ezberdinak daude: pop-up leiho batean, edukien taularekin, nabigazio-botoiekin,... SCORM jardueren barnean galderak egon ohi dira, eta bertako kalifikazioak kalifikazio-liburuan gordetzen dira.
 
 SCORM jardueraren erabilerak hauek izan daitezke:
 
@@ -287,7 +287,7 @@ $string['not_corr_type'] = '{$a->tag} etiketari ez dagokio mota hau';
 $string['notattempted'] = 'Saiatu gabea';
 $string['notopenyet'] = 'Sentitzen dugu, jarduera hau ez da eskuragarri egongo {$a} arte';
 $string['objectives'] = 'Helburuak';
-$string['openafterclose'] = 'Ezarri duzun hasiera-data itxiera-data baino beranduagokoa da.';
+$string['openafterclose'] = 'Zehaztu duzun hasiera-data itxiera-data baino beranduagokoa da.';
 $string['optallstudents'] = 'erabiltzaile guztiak';
 $string['optattemptsonly'] = 'saiakerak egin dituzten erabiltzaileak soilik';
 $string['options'] = 'Aukerak (nabigatzaile batzuek galarazita)';
@@ -453,7 +453,7 @@ Saiakera anizkoitzei buruzko oharrak:
 
 * Saiakera berria hasteko, eduki-egitura orriaren Sartu botoiaren gainean dagoen laukitxoan klik egin behar da, beraz, bermatu orri horretarako sarbidea aukera anizkoitzak onartu nahi badituzu.
 * SCORM pakete batzuk barne logika bat jarraitzen dute saiakera anizkoitzei dagokienez, gehienek ez dute ezer berezirik egiten arlo honetan. Beraz, ikaslea saiakera batean berriro sartzen bada, SCORM edukiak ez badu kasu hau modu berezi batean tratatzen, gerta liteke aurreko saiakeraren balioak berridaztea, nahiz eta saiakeraren egoera \'osatua\' edo \'gainditua\' izan.
-* Aukera anizkoitzak kudeatzeko aukera osagarriak lortuko dituzu zehaztapen hauen bidez: \'Behartu osatzera\', \'Behartu saiakera berria\' eta \'Blokeatu azken saiakeraren ondoren\'.';
+* Aukera anizkoitzak kudeatzeko aukera gehigarriak lortuko dituzu zehaztapen hauen bidez: \'Behartu osatzera\', \'Behartu saiakera berria\' eta \'Blokeatu azken saiakeraren ondoren\'.';
 $string['whatgradedesc'] = 'Kalifikazio-liburuan notarik altuena, batez bestekoa, lehen saiakerarena edo azken saiakerarena gordeko den, saiakera anizkoitzak gaituz gero.';
 $string['width'] = 'Zabalera';
 $string['window'] = 'Leihoa';

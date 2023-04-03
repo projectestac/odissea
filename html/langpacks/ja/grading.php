@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activemethodinfo'] = '「 {$a->area} 」エリアのアクティブ評定方法として、 「 {$a->method} 」が選択されました。';
 $string['activemethodinfonone'] = '「 {$a->area} 」エリアに高度な評定方法はありません。シンプル直接評定が使用されます。';
-$string['changeactivemethod'] = 'アクティブ評定方法を変更する';
+$string['changeactivemethod'] = 'アクティブ評定方法を次に変更する';
 $string['clicktoclose'] = '閉じるにはクリックしてください。';
 $string['error:gradingunavailable'] = '高度な評定方法が正しく設定されていません。フォーラム設定内のフォーラム評定オプション全体を確認してください。';
 $string['error:notinrange'] = '無効な評点「 {$a->grade} 」が提供されました。評点は 0 から {$a->maxgrade} の間にしてください。';

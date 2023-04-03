@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'Afbeeldingsgallerij';
-$string['pluginname'] = 'Afbeeldingsgallerij';
-$string['privacy:metadata'] = 'De afbeeldingsgallerij-plugin bewaart geen persoonlijke gegevens.';
+$string['modulename'] = 'Afbeeldingsgalerij';
+$string['pluginname'] = 'Afbeeldingsgalerij';
+$string['privacy:metadata'] = 'De afbeeldingsgalerij-plugin bewaart geen persoonlijke gegevens.';

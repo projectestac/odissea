@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['mp3skin_details'] = 'Als je een recorderskin, ala-thema, wilt gebruiken, voert u hier de naam in. Anders voer je in: geen.';
+$string['recui_medianotallowederror'] = 'De gebruiker moet de browser toegang geven tot de webcam en de microfoon';
 $string['templaterequire_jquery_desc'] = 'Het is het beste om dit niet te controleren. Veel niet-AMD-sjablonen vereisen JQuery. Als u hier incheckt, wordt JQuery geladen, maar niet zo goed. Je thema laadt JQuery mogelijk al. Als dit niet het geval is, voegt u deze tekenreeks toe aan Sitebeheer -> Uiterlijk -> Aanvullende HTML (binnen HEAD): <br/> &lt;script src="https://code.jquery.com/jquery-1.11.2.min.js"&gt;&lt;/script&gt;';

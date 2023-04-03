@@ -325,7 +325,7 @@ $string['emailnotifysmall'] = '{$a->studentname}(e)k {$a->quizname} osatu du. Ik
 $string['emailnotifysubject'] = '{$a->studentname}(e)k {$a->quizname} osatu du';
 $string['emailoverduebody'] = 'Kaixo, {$a->studentname}:
 
-Saiakera bat hasi zenuen \'{$a->coursename}\' ikastaroko \'{$a->quizname}\' galdetegian, baina ez duzu bidali. Bidalita egon beharko litzateke {$a->attemptduedate}-rako.
+Saiakera bat hasi zenuen \'{$a->coursename}\' ikastaroko \'{$a->quizname}\' galdetegian, baina ez zenuen bidali. Bidalita egon beharko litzateke {$a->attemptduedate}-rako.
 
 Oraindik saiakera hau bidali nahi baduzu, mesedez joan {$a->attemptsummaryurl}-ra eta egin klik bidali botoian. Hau {$a->attemptgraceend} baino lehen egin behar duzu, bestela zure saiakera ez da aintzat hartuko.';
 $string['emailoverduesmall'] = 'Ez duzu bidali zure saiakera {$a->quizname} galdetegian. Oraindik bidali nahi baduzu, mesedez, joan {$a->attemptsummaryurl}-ra {$a->attemptgraceend} baino lehen.';
@@ -586,9 +586,9 @@ $string['onlyteachersexport'] = 'Irakasleek baino ezin ditzakete galderak esport
 $string['onlyteachersimport'] = 'Edizio baimena duten irakasleek baino ezin dute galderak inportatu';
 $string['onthispage'] = 'Orri hau';
 $string['open'] = 'Erantzunik gabe';
-$string['openafterclose'] = 'Ezin izan da galdetegia eguneratu. Ezarri duzun hasiera-data itxiera-data baino beranduagokoa da.';
+$string['openafterclose'] = 'Ezin izan da galdetegia eguneratu. Zehaztu duzun hasiera-data itxiera-data baino beranduagokoa da.';
 $string['openclosedatesupdated'] = 'Galdetegia hasiera eta itxiera-datak eguneratu dira';
-$string['optional'] = 'aukerakoa';
+$string['optional'] = 'hautazkoa';
 $string['orderandpaging'] = 'Ordena eta orrikatzea';
 $string['orderandpaging_help'] = 'Galderen ondoan dauden 10, 20, 30... zenbakiek galderen ordena adierazten dute. Zenbakiak hamarnaka igotzen dira, galdera berriak tartekatu behar badira, lekua izateko. Galderak berrantolatu behar badira, egin klik "Galderak berrantolatu" botoian.
 
@@ -944,7 +944,7 @@ $string['startagain'] = 'Hasi berriro';
 $string['startattempt'] = 'Hasi saiakera';
 $string['startedon'] = 'Hasiera-unea';
 $string['startnewpreview'] = 'Hasi berrikusketa berri bat';
-$string['stateabandoned'] = 'Bidali gabeak';
+$string['stateabandoned'] = 'Bidali gabea';
 $string['statefinished'] = 'Amaituta';
 $string['statefinisheddetails'] = '{$a} bidali da';
 $string['stateinprogress'] = 'Abian';

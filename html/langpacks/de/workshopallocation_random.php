@@ -48,7 +48,7 @@ $string['privacy:metadata'] = 'Das Plugin für zufällige Zuordnungen speichert 
 $string['randomallocationdone'] = 'Zufällige Zuordnung abgeschlossen';
 $string['removecurrentallocations'] = 'Aktuelle Zuordnung zurücksetzen';
 $string['resultnomorepeers'] = 'Keine weiteren Beurteilungen verfügbar';
-$string['resultnomorepeersingroup'] = 'Keine weiteren Beurteilungen in dieser
+$string['resultnomorepeersingroup'] = 'Keine weiteren Peers in dieser getrennten
 Gruppe verfügbar';
 $string['resultnotenoughpeers'] = 'Nicht genügend Beurteilungen verfügbar';
 $string['resultnumperauthor'] = 'Versuche {$a} Beurteilungen(en) je Autor zuzuweisen';

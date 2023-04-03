@@ -35,5 +35,6 @@ $string['messagesent'] = 'تم إرسال الرسالة';
 $string['nomessagesfound'] = 'لم يتم العثور على أي رسائل';
 $string['nonewmessages'] = 'لا توجد رسائل جديدة';
 $string['pluginname'] = 'jmail';
+$string['print'] = 'طباعة';
 $string['send'] = 'إرسل';
 $string['unreadmessages'] = '{$a} من الرسائل غير مقروءة';

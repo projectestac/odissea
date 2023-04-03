@@ -942,7 +942,7 @@ $string['shufflequestions_help'] = 'Wenn diese Option aktiviert ist, werden die 
 
 Dies soll verhindern, dass Teilnehmer/innen ihre Antworten untereinander teilen, erschwert aber auch die Diskussion über eine bestimmte Frage mit Trainer/innen.';
 $string['shufflewithin'] = 'Antworten innerhalb der Fragen mischen';
-$string['shufflewithin_help'] = 'Wenn diese Option aktiviert ist, werden die Elemente, aus welchen sich eine einzelne Fragen zusammensetzt, bei jedem Versuch zufällig gemischt, vorausgesetzt, diese Option ist auch in den Einstellungen der Frage aktiviert. Die Funktion hat nur Auswirkungen auf Fragen, die aus mehreren Teilen bestehen, wie Multiple-Choice- oder Zuordnungsfragen.';
+$string['shufflewithin_help'] = 'Wenn diese Option aktiviert ist, werden die Elemente, aus welchen sich eine einzelne Frage zusammensetzt, bei jedem Versuch zufällig gemischt, vorausgesetzt, diese Option ist auch in den Einstellungen der Frage aktiviert. Die Funktion hat nur Auswirkungen auf Fragen, die aus mehreren Teilen bestehen, wie Multiple-Choice- oder Zuordnungsfragen.';
 $string['singleanswer'] = 'Wählen Sie eine der Antworten.';
 $string['sortage'] = 'Sortieren nach Alter';
 $string['sortalpha'] = 'Alphabetisch sortieren';

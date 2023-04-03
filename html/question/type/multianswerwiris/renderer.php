@@ -126,6 +126,12 @@ class qtype_multianswerwiris_wirisanswerfield_renderer extends qtype_multianswer
 
         // Work out a good input field size.
         // Moodle 2.6 and upwards.
+
+        // If the response is escaped MathML, unescape it.
+        if ($response != null && substr($response, 0, 8) == "&lt;math") {
+            $response = html_entity_decode($response);
+        }
+
         $size = 1;
         if (class_exists('core_text')) {
             if ($response != null) {

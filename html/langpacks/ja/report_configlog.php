@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configlog'] = '設定変更';
+$string['configlog'] = 'システム設定の変更ログ';
 $string['datefrom'] = '開始';
 $string['dateto'] = '終了';
 $string['plugin'] = 'プラグイン';

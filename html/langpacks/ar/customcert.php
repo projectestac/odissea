@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activity'] = 'النشاط';
 $string['addcertpage'] = 'إضافة صفحة';
 $string['alignleft'] = 'المحاذاة يسارًا';
 $string['alignment'] = 'المحاذاة';
@@ -91,6 +92,7 @@ $string['preventmodify'] = 'مَنع التعديل';
 $string['preventmodify_desc'] = 'تمكين الحماية من إجراء التعديل.';
 $string['preventprint'] = 'مَنع الطباعة';
 $string['preventprint_desc'] = 'تمكين الحماية من إجراء الطباعة.';
+$string['print'] = 'طباعة';
 $string['privacy:metadata:customcert_issues'] = 'قائمة الشهادات الممنوحة';
 $string['privacy:metadata:customcert_issues:code'] = 'الرمز العائد للشهادة';
 $string['privacy:metadata:customcert_issues:customcertid'] = 'مُعرَّف الشهادة';

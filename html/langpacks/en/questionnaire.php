@@ -540,6 +540,7 @@ $string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
 $string['resumesurvey'] = 'Resume questionnaire';
 $string['return'] = 'Return';
 $string['save'] = 'Save';
+$string['save_and_exit'] = 'Save and exit';
 $string['saveasnew'] = 'Save as New Question';
 $string['savedbutnotsubmitted'] = 'This questionnaire has been saved but not yet submitted.';
 $string['savedprogress'] = 'Your progress has been saved.  You may return at any time to complete this questionnaire.';
@@ -568,7 +569,7 @@ $string['show_nonrespondents'] = 'Non-respondents';
 $string['started'] = 'started';
 $string['strfdate'] = '%d/%m/%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
-$string['strictdateformatting'] = 'Enter the date using the date picker below, or by using the \'YYYY-MM-DD\' format.';
+$string['strictdateformatting'] = 'Enter the date using the date picker below.';
 $string['subject'] = 'Subject';
 $string['submissionnotificationhtmlanon'] = 'There is a new <a href="{$a->submissionurl}">submission</a> to the "{$a->name}" questionnaire.';
 $string['submissionnotificationhtmluser'] = '<a href="{$a->profileurl}">{$a->username}</a> has a new <a href="{$a->submissionurl}">submission</a> to the "{$a->name}" questionnaire in the course "{$a->coursename}".';
@@ -623,7 +624,7 @@ $string['usepublic'] = 'Use public';
 $string['usetemplate'] = 'Use template';
 $string['vertical'] = 'Vertical';
 $string['view'] = 'View';
-$string['viewallresponses'] = 'View All Responses';
+$string['viewallresponses'] = 'View all responses';
 $string['viewallresponses_help'] = 'If the questionnaire is set to **Group Mode**: *Visible groups*, or is set to *Separate groups* and the current user
  has the *moodle/site:accessallgroups* capability (in the current context), and groups have been defined in the current course,
  then the user has access to a dropdown list of groups. This dropdown list enables the user to "filter" the questionnaire responses by groups.
@@ -634,7 +635,7 @@ $string['viewbyresponse'] = 'List of responses';
 $string['viewindividualresponse'] = 'Individual responses';
 $string['viewindividualresponse_help'] = 'Click on the respondents\' names in the list below to view their individual responses.';
 $string['viewresponses'] = 'All responses ({$a})';
-$string['viewyourresponses'] = 'Your responses- view {$a}';
+$string['viewyourresponses'] = 'View your response(s)';
 $string['warning'] = 'Warning, error encountered.';
 $string['wronganswers'] = 'There is something wrong with your answers (see below)';
 $string['wrongdateformat'] = 'The date entered: <strong>{$a}</strong> does not correspond to the format shown in the example.';
@@ -643,5 +644,5 @@ $string['wrongformat'] = 'There is something wrong with your answer to question:
 $string['wrongformats'] = 'There is something wrong with your answer to questions:&nbsp;';
 $string['yesno'] = 'Yes/No';
 $string['yesno_help'] = 'Simple Yes/No question.';
-$string['yourresponse'] = 'Your response';
-$string['yourresponses'] = 'Your responses';
+$string['yourresponse'] = 'View your response(s)';
+$string['yourresponses'] = 'View your response(s)';

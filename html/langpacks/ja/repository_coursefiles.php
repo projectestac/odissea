@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'レガシーコースファイルリポジトリ設定';
+$string['configplugin'] = 'レガシコースファイルリポジトリ設定';
 $string['coursefiles:view'] = 'コースファイルリポジトリプラグインを使用する';
 $string['emptyfilelist'] = '表示するファイルはありません。';
 $string['notitle'] = 'タイトルなし';
-$string['pluginname'] = 'レガシーコースファイル';
-$string['pluginname_help'] = 'レガシーコースファイル';
-$string['privacy:metadata'] = 'レガシーコースファイルリポジトリプラグインはいかなる個人データも保存または転送しません。';
+$string['pluginname'] = 'レガシコースファイル';
+$string['pluginname_help'] = 'レガシコースファイル';
+$string['privacy:metadata'] = 'レガシコースファイルリポジトリプラグインはいかなる個人データも保存または転送しません。';
 $string['remember'] = '次回から入力を省略する';

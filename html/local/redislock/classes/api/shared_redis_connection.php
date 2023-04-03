@@ -25,8 +25,6 @@
 
 namespace local_redislock\api;
 
-defined('MOODLE_INTERNAL') || die();
-
 use Redis;
 
 /**

@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'API giltza';
+$string['apikey'] = 'API gakoa';
 $string['contenttype'] = 'Eduki motak';
-$string['err_noapikey'] = 'Ez dago API giltzarik';
-$string['err_noapikey_help'] = 'Ez dago plugin honetarako API giltzarik konfiguratuta. Flickr-en zerbitzu-orritik lor dezakezu honelako bat.';
+$string['err_noapikey'] = 'Ez dago API gakorik';
+$string['err_noapikey_help'] = 'Ez dago plugin honetarako API gakorik konfiguratuta. Flickr-en zerbitzu-orritik lor dezakezu honelako bat.';
 $string['hidefrompublicsearches'] = 'Ezkutatu irudi hauek bilaketa publikoetan?';
 $string['isfamily'] = 'Ikusgai familiarentzat';
 $string['isfriend'] = 'Ikusgai lagunentzat';

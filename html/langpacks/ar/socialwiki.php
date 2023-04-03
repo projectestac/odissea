@@ -83,6 +83,7 @@ $string['pageindex'] = 'فهرس الصفحة';
 $string['pagelist'] = 'قائمة الصفحات';
 $string['pagename'] = 'اسم الصفحة';
 $string['peerscores'] = 'درجات النظراء';
+$string['prettyprint'] = 'نسخة سهلة الطباعة';
 $string['ratingmode'] = 'وضع التصنيف';
 $string['recommended'] = 'صفحات موصي بها';
 $string['removeallwikitags'] = 'إزالة كل وسوم الويكي';

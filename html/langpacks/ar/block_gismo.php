@@ -59,6 +59,7 @@ $string['manualexportpassword'] = 'كلمة مرور التصدير اليدوي
 $string['option_general_settings'] = 'الإعدادات العامة';
 $string['option_green'] = 'أخضر';
 $string['option_window_resize_delay_seconds'] = 'تأخير إعادة تحجيم النافذة (بالثواني)';
+$string['print'] = 'طباعة';
 $string['quizzes'] = 'الاختبارات';
 $string['quizzes_chart_title'] = 'النشاطات: استعراض الاختبارات';
 $string['resources_students_overview'] = 'نظرة عامة على الطلاب';

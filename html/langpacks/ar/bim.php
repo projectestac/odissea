@@ -71,6 +71,7 @@ $string['eventstudentsearchstarted'] = 'البحث عن الطالب تم بدؤ
 $string['eventstudentupdated'] = 'تصحيحات/منشورات الطلاب تم تحديثها';
 $string['eventstudentviewed'] = 'تصحيحات/منشورات الطلاب تمت معاينتها';
 $string['marker_allocation_heading'] = 'كل منشورات الطلاب';
+$string['marker_student_config_heading'] = 'معلومات تهيئة النشاط';
 $string['marking_form_student_post'] = '<strong>منشور الطالب <small>(<a href="{$a}">المنشور الأصلي</a>)</small></strong>';
 $string['numAnswers'] = 'الإجابات الفعلية والمطلوبة';
 $string['numReleased_help'] = 'إجاباتك يتم تأشيرها أولاً (عدد المؤشرات)، مراجعتها ومن ثم إطلاقها لك لمشاهدتها (عدد المطلقات)';

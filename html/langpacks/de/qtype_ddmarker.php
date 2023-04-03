@@ -82,7 +82,7 @@ $string['pluginnameadding'] = 'Füge "Drag-and-drop- Markierungen" hinzu';
 $string['pluginnameediting'] = 'Bearbeite "Drag-and-drop- Markierungen"';
 $string['pluginnamesummary'] = 'Markierungen werden per Drag-and-drop auf ein Hintergrundbild gezogen.
 
-Hinweis: Dieser Fragetyp ist für sehbehinderte Nutzende nicht barrierefrei.';
+Hinweis: Dieser Fragetyp ist für sehbehinderte Nutzer/innen nicht barrierefrei.';
 $string['previewareaheader'] = 'Vorschau';
 $string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, geben Sie Texte für die Markierungen ein und legen Sie die Ablagebereiche auf dem Hintergrundbild fest, auf welche die Markierungen gezogen werden müssen.';
 $string['privacy:metadata'] = 'Das Plugin "Drag-and-Drop Markierungen Frageformat" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';

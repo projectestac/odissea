@@ -356,8 +356,7 @@ $string['bookotherusers'] = 'Book other users';
 $string['booktootherbooking'] = 'Book users to other booking';
 $string['bookuserswithoutcompletedactivity'] = 'Book users without completed activity';
 $string['bstcourse'] = 'Course';
-$string['bstcourseendtime'] = 'End time';
-$string['bstcoursestarttime'] = 'Start time';
+$string['bstcoursestarttime'] = 'Date / Time';
 $string['bstinstitution'] = 'Institution';
 $string['bstlink'] = 'Show';
 $string['bstlocation'] = 'Location';
@@ -1139,6 +1138,7 @@ $string['showallbookings'] = 'All bookings';
 $string['showcoursenameandbutton'] = 'Show course name, short info and a button redirecting to the available booking options';
 $string['showcustomfields'] = 'Custom booking option fields';
 $string['showcustomfields_desc'] = 'Select the custom booking option fields to be shown on the sign-in sheet';
+$string['showdates'] = 'Show dates';
 $string['showdescription'] = 'Show description';
 $string['showdescriptioninline'] = 'Show full descriptions inline (right inside the table)';
 $string['showdescriptionmodal'] = 'Show info links (default)';
@@ -1261,14 +1261,6 @@ $string['transferhelp'] = 'Transfer users, that have not completed activity from
 $string['transferoptionsuccess'] = 'The booking option and the users have successfully been transferred.';
 $string['transferproblem'] = 'The following could not be transferred due to booking option limitation or user limitation: {$a}';
 $string['transfersuccess'] = 'The users have successfully been transferred to the new booking option';
-$string['uniqueoptionnameheading'] = 'Unique option names';
-$string['uniqueoptionnameheadingdesc'] = 'When using CSV import for booking options, option names need to be unique.
-If there are multiple options with the same name, a unique key will be added internally to the option name.
-Here you can define the separator between the option name and the key.
-
-Example: Option name = "Option A", Separator = "#?#", idnumber = "00313" => Internal option name: "Option A#?#00313"';
-$string['uniqueoptionnameseparator'] = 'Separator for unique option names';
-$string['uniqueoptionnameseparatordesc'] = 'The separator must not contain blanks or be part of any existing booking option name.';
 $string['unlimited'] = 'Number of available places is not limited';
 $string['updatebooking'] = 'Edit this booking option';
 $string['usedinbooking'] = 'You can\'t delete this category, because you\'re using it in booking!';

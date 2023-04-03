@@ -83,9 +83,11 @@ $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, 
 $string['limit'] = 'Limite';
 $string['limita'] = 'Limite: {$a}';
 $string['limitanswers'] = 'Limita il numero di scelte';
-$string['limitanswers_help'] = 'Limita il numero di partecipanti che possono operare la medesima scelta.
+$string['limitanswers_help'] = 'l\'impostazione consente di limitare il numero di partecipanti che possono effettuare la stessa scelta. Una volta raggiunto il limite, nessun altro partecipante potrà selezionare quell\'opzione.
 
-Se l\'opzione è disabilitata, qualsiasi partecipante potrà operare la medesima scelta..';
+Da tenere presente che se l\'attività è impostata in una modalità gruppi, il limite si intende per gruppo. Ad esempio, se il limite è impostato su 5, 5 membri di ciascun gruppo potranno effettuare la stessa scelta. Se ci sono 3 gruppi, ciò significherebbe che fino a 5 x 3 = 15 partecipanti potrebbero selezionare l\'opzione.
+
+Se i limiti sono disabilitati, qualsiasi numero di partecipanti potrà effettuare la stessa scelta.';
 $string['limitno'] = 'Limite {no}';
 $string['modulename'] = 'Scelta';
 $string['modulename_help'] = 'Il modulo di attività scelta consente al docente di formulare una domanda offrendo una serie di alternative.

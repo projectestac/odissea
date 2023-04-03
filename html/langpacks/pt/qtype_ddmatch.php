@@ -32,3 +32,4 @@ $string['pluginname_help'] = 'A pergunta de correspondência com arrastar e larg
 $string['pluginnameadding'] = 'Adicionar pergunta de correspondência com arrastar e largar';
 $string['pluginnameediting'] = 'Editar pergunta de correspondência com arrastar e largar';
 $string['pluginnamesummary'] = 'Uma extensão da pergunta de correspondência que permite ao utilizador arrastar e largar itens para estabelecer a correspondência entre as respostas e as perguntas.';
+$string['privacy:metadata'] = 'O módulo Correspondência com arrastar e largar não armazena quaisquer dados pessoais.';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['backimageurl'] = 'Arbelaren atzeko planoko irudiaren URLa';
-$string['backimageurl_desc'] = 'Aukerazkoa. Behar ez baduzu utsik utzi ezazu.';
+$string['backimageurl_desc'] = 'Hautazkoa. Behar ez baduzu hutsik utzi ezazu.';
 $string['clicktoplay'] = 'Egin klik Erreproduzitzeko';
 $string['fieldtypelabel'] = 'PoodLL';
 $string['maxbytes'] = 'Enbotatutako fitxategien gehieneko tamaina (byte-tan)';

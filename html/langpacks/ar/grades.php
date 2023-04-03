@@ -593,6 +593,7 @@ $string['outcomescoursecustom'] = 'التخصيص مستخدم (لن يتم ال
 $string['outcomescoursenotused'] = 'المعايير غير مستخدمة';
 $string['outcomescourseused'] = 'المعايير مستخدمة (لن يتم الاستبعاد)';
 $string['outcomescustom'] = 'مخرجات تعلم مخصصة';
+$string['outcomesdisabled'] = 'المخرجات غير مُفعلة';
 $string['outcomeshortname'] = 'الاسم المختصر';
 $string['outcomesstandard'] = 'مخرجات تعلم قياسية';
 $string['outcomesstandardavailable'] = 'مخرجات التعلم القياسية المتاحة';

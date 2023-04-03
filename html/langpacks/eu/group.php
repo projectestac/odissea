@@ -63,11 +63,11 @@ $string['editusersgroupsa'] = 'Editatu taldeak "{$a}"(r)entzat';
 $string['enablemessaging'] = 'Taldeko mezularitza';
 $string['enablemessaging_help'] = 'Gaituz gero, taldekideek mezuen nabigazio-kutxatik mezuak elkarri bidal diezazkiekete.';
 $string['encoding'] = 'Kodifikazioa';
-$string['enrolmentkey'] = 'Matrikulazio-giltza';
-$string['enrolmentkey_help'] = 'Matrikulazio-giltzek talde baterako sarbidea pasahitza ezagutzen dutenei mugatzeko aukera ematen dute. Matrikulazio-giltza bat zehaztuz gero, giltza sartuz gero erabiltzailea ikastaroan sartzeaz gain, talde horretako kide ere bihurtuko du.
+$string['enrolmentkey'] = 'Matrikulazio-gakoa';
+$string['enrolmentkey_help'] = 'Matrikulazio-giltzek talde baterako sarbidea pasahitza ezagutzen dutenei mugatzeko aukera ematen dute. Matrikulazio-gako bat zehaztuz gero, gakoa sartuz gero erabiltzailea ikastaroan sartzeaz gain, talde horretako kide ere bihurtuko du.
 
-Oharra: Taldeen matrikulazio-giltzak matrikulazio automatikoko ezarpenetan gaitu behar dira eta ikastarorako matrikulazio-giltza ere zehaztu beharko da.';
-$string['enrolmentkeyalreadyinuse'] = 'Matrikulazio-giltza hau beste talde baterako erabiltzen ari da jada.';
+Oharra: Taldeen matrikulazio-gakoak matrikulazio automatikoko ezarpenetan gaitu behar dira eta ikastarorako matrikulazio-gakoa ere zehaztu beharko da.';
+$string['enrolmentkeyalreadyinuse'] = 'Matrikulazio-gako hau beste talde baterako erabiltzen ari da jada.';
 $string['erroraddremoveuser'] = 'Errorea {$a} erabiltzailea taldera gehitzean/taldetik kentzean';
 $string['erroreditgroup'] = 'Errorea {$a} taldea sortzean/eguneratzean';
 $string['erroreditgrouping'] = 'Errorea {$a} talde-multzoa sortzean/eguneratzean';
@@ -144,7 +144,7 @@ $string['importgroups_help'] = 'Taldeak testu-fitxategien bitartez inporta daite
 * Erregistro bakoitza aukeratutako banatzaileaz banatutako datu-multzo bat da
 * Fitxategiko lehen errenkadak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
 * <i>groupname</i> eremua (taldearen izena) derrigorrezkoa da
-* Aukerako eremuak <i>groupidnumber</i> (talde-multzoaren IDa), <i>description</i> (deskribapena), <i>enrolmentkey</i> (matrikulazio-gakoa), <i>groupingname</i> (talde-multzoaren izena) eta <i>enablemessaging</i> (gaitu mezularitza) dira';
+* Hautazko eremuak <i>groupidnumber</i> (talde-multzoaren IDa), <i>description</i> (deskribapena), <i>enrolmentkey</i> (matrikulazio-gakoa), <i>groupingname</i> (talde-multzoaren izena) eta <i>enablemessaging</i> (gaitu mezularitza) dira';
 $string['includeonlyactiveenrol'] = 'Sartu soilik aktibo dauden matrikulazioak';
 $string['includeonlyactiveenrol_help'] = 'Gaituz gero, kontua etenda duten erabiltzaileak ez dira taldeetan sartuko.';
 $string['javascriptrequired'] = 'Orri honek Javascript-a gaituta izan behar du.';

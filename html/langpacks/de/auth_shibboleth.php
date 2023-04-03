@@ -36,8 +36,8 @@ $string['auth_shib_convert_data_description'] = 'Sie können diese API nutzen, u
 $string['auth_shib_convert_data_filepath_warning'] = 'Sie können keine Datei verwenden, die sich im aktuellen Website-Datenverzeichnis befindet ($CFG->dataroot) wie die Datenänderungs-API.';
 $string['auth_shib_convert_data_warning'] = 'Die Datei existiert nicht oder ist vom Server nicht lesbar.';
 $string['auth_shib_idp_list'] = 'Identity-Provider';
-$string['auth_shib_idp_list_description'] = 'Stellen Sie eine Liste der Identity-Provider zur Verfügung aus der die Nutzer auf der Loginseite auswählen können. <br />In jeder Zeile muss ein kommagetrenntes Tupple für identityID der IdP (siehe Shibboleth Medatadtendatei) und Name des IdP wie es in der Drowndopwnliste gezeigt werden soll eingetragen werden.<br />
-Als optionaler dritter Parameter kann der Ort des Shibboleth Session Initators eingetragen werden falls die Moodle-Installation im Verbund genutzt wird.';
+$string['auth_shib_idp_list_description'] = 'Stellen Sie eine Liste der Identity-Provider zur Verfügung aus der die Nutzer auf der Loginseite auswählen können. <br />In jeder Zeile muss ein kommagetrenntes Tupple für identityID der IdP (siehe Shibboleth Medatadtendatei) und Name des IdP wie es in der Dropdown-Liste gezeigt werden soll eingetragen werden.<br />
+Als optionaler dritter Parameter kann der Ort des Shibboleth Session Initators eingetragen werden, falls die Moodle-Installation im Verbund genutzt wird.';
 $string['auth_shib_instructions'] = 'Nutzen Sie den <a href="{$a}">Shibboleth-Login</a>, um Zugang über Shibboleth zu erhalten, wenn Ihre Institution dies unterstützt. Andernfalls verwenden Sie das normale Login.';
 $string['auth_shib_instructions_help'] = 'Tragen Sie hier Informationen für Ihre Nutzer/innen ein, die ihnen den Zugang mit Hilfe von Shibboleth erklären. Diese werden auf der Loginseite angzeigt. Der Text sollte einen Link "<b>{$a}</b>" enthalten, damit ein einfachere Login möglich ist. Wenn Sie das Feld leer lassen, werden die Standard-Texte angezeigt und keine Hinweise auf den Shibboleth Login.';
 $string['auth_shib_instructions_key'] = 'Login-Anweisungen';

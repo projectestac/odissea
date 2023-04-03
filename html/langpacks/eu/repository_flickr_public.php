@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Guztia';
-$string['apikey'] = 'API giltza';
+$string['apikey'] = 'API gakoa';
 $string['backtosearch'] = 'Itzuli bilaketa-pantailara';
 $string['by'] = 'Eskubide lizentzia';
 $string['by-nc'] = 'Aitortu-EzKomertziala eskubidea';
@@ -41,7 +41,7 @@ $string['creativecommonscommercial'] = 'creative commons commercial baino ez';
 $string['emailaddress'] = 'Helbide elektronikoa';
 $string['flickr_public:view'] = 'Erabili Flickr publikoa fitxategi-hautatzailean';
 $string['fulltext'] = 'Testu osoa';
-$string['information'] = '<div>Lortu <a href="http://www.flickr.com/services/api/keys/">Flickr API Giltza</a> zure Moodle gunerako.</div>';
+$string['information'] = '<div>Lortu <a href="http://www.flickr.com/services/api/keys/">Flickr API Gakoa</a> zure Moodle gunerako.</div>';
 $string['invalidemail'] = 'Helbide elektronikoak ez du balio flickr-erako';
 $string['license'] = 'Lizentzia';
 $string['modification'] = 'Irudiak aldatzeko modua izan nahi dut';
