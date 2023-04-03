@@ -4,6 +4,20 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
 
+Changes 23.03.27
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.13+
+- Updated langpacks
+- Attendance: Upgraded module
+- Choicegroup: Upgraded module
+- GeoGebra: Upgraded module
+- Questionnaire: Upgraded module
+- Wiris: Upgraded all components
+- local_redislock: Added expiration to locks to automatically remove them in case the script doesn't finish correctly
+- H5P: Fix for visual editor doesn't open under certain conditions
+- IDI: Inherited changes from Àgora
+
+
 Changes 22.12.13
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 3.11.11+
