@@ -183,7 +183,7 @@ function lesson_unseen_branch_jump($lesson, $userid) {
     }
 
     if (!$seenbranches = $lesson->get_content_pages_viewed($retakes, $userid, 'timeseen DESC')) {
-        print_error('cannotfindrecords', 'lesson');
+        throw new \moodle_exception('cannotfindrecords', 'lesson');
     }
 
     // get the lesson pages
@@ -237,7 +237,7 @@ function lesson_random_question_jump($lesson, $pageid) {
     // get the lesson pages
     $params = array ("lessonid" => $lesson->id);
     if (!$lessonpages = $DB->get_records_select("lesson_pages", "lessonid = :lessonid", $params)) {
-        print_error('cannotfindpages', 'lesson');
+        throw new \moodle_exception('cannotfindpages', 'lesson');
     }
 
     // go up the pages till branch table
@@ -570,6 +570,8 @@ function lesson_menu_block_contents($cmid, $lesson) {
 /**
  * Adds header buttons to the page for the lesson
  *
+ * @deprecated since Moodle 4.0 in favour of tertiary navigation.
+ * @todo MDL-73545 This will be deleted in Moodle 4.4
  * @param object $cm
  * @param object $context
  * @param bool $extraeditbuttons
@@ -577,9 +579,12 @@ function lesson_menu_block_contents($cmid, $lesson) {
  */
 function lesson_add_header_buttons($cm, $context, $extraeditbuttons=false, $lessonpageid=null) {
     global $CFG, $PAGE, $OUTPUT;
+
+    debugging('lesson_add_header_buttons() is deprecated in favour of tertiary navigation.', DEBUG_DEVELOPER);
+
     if (has_capability('mod/lesson:edit', $context) && $extraeditbuttons) {
         if ($lessonpageid === null) {
-            print_error('invalidpageid', 'lesson');
+            throw new \moodle_exception('invalidpageid', 'lesson');
         }
         if (!empty($lessonpageid) && $lessonpageid != LESSON_EOL) {
             $url = new moodle_url('/mod/lesson/editpage.php', array(
@@ -1677,7 +1682,7 @@ class lesson extends lesson_base {
         global $DB;
 
         if (!$lesson = $DB->get_record('lesson', array('id' => $lessonid))) {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule');
         }
         return new lesson($lesson);
     }
@@ -2063,7 +2068,7 @@ class lesson extends lesson_base {
             if (!$this->loadedallpages) {
                 $firstpageid = $DB->get_field('lesson_pages', 'id', array('lessonid'=>$this->properties->id, 'prevpageid'=>0));
                 if (!$firstpageid) {
-                    print_error('cannotfindfirstpage', 'lesson');
+                    throw new \moodle_exception('cannotfindfirstpage', 'lesson');
                 }
                 $this->firstpageid = $firstpageid;
             } else {
@@ -2084,7 +2089,7 @@ class lesson extends lesson_base {
             if (!$this->loadedallpages) {
                 $lastpageid = $DB->get_field('lesson_pages', 'id', array('lessonid'=>$this->properties->id, 'nextpageid'=>0));
                 if (!$lastpageid) {
-                    print_error('cannotfindlastpage', 'lesson');
+                    throw new \moodle_exception('cannotfindlastpage', 'lesson');
                 }
                 $this->lastpageid = $lastpageid;
             } else {
@@ -2713,7 +2718,7 @@ class lesson extends lesson_base {
         $pages = $this->load_all_pages();
 
         if (!array_key_exists($pageid, $pages) || ($after!=0 && !array_key_exists($after, $pages))) {
-            print_error('cannotfindpages', 'lesson', "$CFG->wwwroot/mod/lesson/edit.php?id=$cm->id");
+            throw new \moodle_exception('cannotfindpages', 'lesson', "$CFG->wwwroot/mod/lesson/edit.php?id=$cm->id");
         }
 
         $pagetomove = clone($pages[$pageid]);
@@ -3915,7 +3920,7 @@ abstract class lesson_page extends lesson_base {
         if ($properties->pageid) {
             $prevpage = $DB->get_record("lesson_pages", array("id" => $properties->pageid), 'id, nextpageid');
             if (!$prevpage) {
-                print_error('cannotfindpages', 'lesson');
+                throw new \moodle_exception('cannotfindpages', 'lesson');
             }
             $newpage->prevpageid = $prevpage->id;
             $newpage->nextpageid = $prevpage->nextpageid;
@@ -3982,7 +3987,7 @@ abstract class lesson_page extends lesson_base {
         } else {
             $page = $DB->get_record("lesson_pages", array("id" => $id));
             if (!$page) {
-                print_error('cannotfindpages', 'lesson');
+                throw new \moodle_exception('cannotfindpages', 'lesson');
             }
         }
         $manager = lesson_page_type_manager::get($lesson);
@@ -5229,7 +5234,7 @@ class lesson_page_type_manager {
     public function load_page($pageid, lesson $lesson) {
         global $DB;
         if (!($page =$DB->get_record('lesson_pages', array('id'=>$pageid, 'lessonid'=>$lesson->id)))) {
-            print_error('cannotfindpages', 'lesson');
+            throw new \moodle_exception('cannotfindpages', 'lesson');
         }
         $pagetype = get_class($this->types[$page->qtype]);
         $page = new $pagetype($page, $lesson);

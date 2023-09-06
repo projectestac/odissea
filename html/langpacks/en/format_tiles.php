@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'en', version '3.11'.
+ * Strings for component 'format_tiles', language 'en', version '4.1'.
  *
  * @package     format_tiles
  * @category    string
@@ -25,13 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Add tiles';
+$string['addsections'] = 'Add tile';
 $string['admintools'] = 'Administrator tools';
 $string['all'] = 'All';
 $string['allcomplete'] = 'All complete';
 $string['allcoursescomplypalette'] = 'All courses already have permitted tile colours. Nothing to reset. Make sure you save any changes to permitted colours before pressing reset.';
-$string['allowlabelconversion'] = 'Allow label conversion to page';
-$string['allowlabelconversion_desc'] = 'If checked, editing teachers will be given an option in each label\'s edit settings drop down to convert the label to a page.';
 $string['allowphototiles'] = 'Allow photo tiles';
 $string['allowphototiles_desc'] = 'If selected, teachers will be able to upload a photo to serve as a tile background.  They will still be able to use standard tile icons as well, in the same course. (If not selected, only tile icons will be allowed and other photo tile settings below will be ignored.)';
 $string['allowsubtilesview'] = 'Allow sub tiles view';
@@ -46,8 +44,6 @@ $string['assumedatastoreconsent_desc'] = 'If selected, user will <b>not</b> be s
 $string['backupfailed'] = 'Backup failed';
 $string['basecolour'] = 'Colour for tiles';
 $string['basecolour_help'] = 'Colour set here will be applied to all tiles in the course.  (The available colours are determined by your site administrator through the Tiles plugin settings page).';
-$string['blockedpopup'] = 'Your browser has blocked a pop up window.  Please allow popups from this site, or click the link below to visit the site in this window';
-$string['blockedpopuptitle'] = 'Blocked pop up window';
 $string['brandcolour'] = 'Brand colour';
 $string['canceltask'] = 'Cancel task';
 $string['changedcolour'] = 'Tile colour reset to default for course {$a}';
@@ -65,7 +61,7 @@ $string['colournamegeneral'] = 'Display name for colour above';
 $string['colourpurple'] = 'Purple';
 $string['colourred'] = 'Red';
 $string['colours'] = 'Colours';
-$string['complete'] = 'complete';
+$string['complete'] = 'Complete';
 $string['complete-n-auto'] = 'Item not complete.  It will be marked as complete when you meet all of the completion criteria. You cannot change this manually.';
 $string['complete-y-auto'] = 'Item complete.  It was marked as complete when you met the completion criteria. You cannot change this manually.';
 $string['completion_help'] = 'A tick to the right of an activity may be used to indicate when the activity is complete (an empty circle will be shown if not).<br><br>
@@ -80,8 +76,6 @@ $string['completionwarning_help'] = 'You need to make individual items trackable
 $string['contact'] = 'Get in touch';
 $string['contactdeveloper'] = 'Contact developer';
 $string['contents'] = 'Contents';
-$string['converttopage'] = 'Convert to page';
-$string['converttopage_confirm'] = 'Are you sure?.  This cannot be un-done (you would have to create the label again manually if needed).';
 $string['courseshowtileprogress'] = 'Progress on each tile';
 $string['courseshowtileprogress_error'] = 'You have \'Completion tracking > Enable completion tracking\' set to \'No\' (see further down this page) which conflicts with this setting.  If you wish to display progress on the tiles, please set \'Completion tracking > Enable completion tracking\' to \'Yes\'.  Otherwise, please set this setting to \'No\'.';
 $string['courseshowtileprogress_help'] = '<p>When selected, the user\'s progress with activities will be shown in each tile, either as a <em>fraction</em> (e.g. \'Progress 2/10\' meaning 2 out of 10 activities complete), or as a <em>percentage</em> in a circle.</p><p>This can only be used if \'Completion > Enable completion tracking\' has been switched on.</p><p>If there are no trackable activities within a given tile, indicator will not be shown for that tile.</p>';
@@ -126,6 +120,8 @@ $string['documentation'] = 'Documentation';
 $string['documentationurl'] = 'Documentation URL';
 $string['documentationurl_descr'] = 'URL where Tiles documentation can be found.';
 $string['download'] = 'Download';
+$string['editoradvicesubtiles'] = 'In this version of the Tiles plugin, activities will only appear as sub-tiles if editing mode is switched off';
+$string['editsection'] = 'Edit tile';
 $string['editsectionname'] = 'Edit tile name';
 $string['embeddedurlerror'] = 'If the external website refuses to connect in the window above, use this:';
 $string['enablelinebreakfilter'] = 'Enable line break filter';
@@ -155,7 +151,6 @@ $string['hidden'] = 'Hidden';
 $string['hide'] = 'Hide';
 $string['hidefromothers'] = 'Hide tile';
 $string['highestsectionnum'] = 'Highest section number found';
-$string['highlightoff'] = 'De-highlight';
 $string['home'] = 'Course home';
 $string['hovercolour'] = 'Tile hover colour';
 $string['hovercolour_descr'] = 'Colour which tiles will display on mouseover';
@@ -271,12 +266,11 @@ $string['imagedeletedfrom'] = 'Image deleted from "{$a}"';
 $string['imagesavedfor'] = 'Image saved for tile {$a}';
 $string['imagesize'] = 'Image size';
 $string['items'] = 'items';
-$string['jsactivate'] = 'Animated navigation on';
-$string['jsdeactivate'] = 'Animated navigation off';
+$string['jsactivate'] = 'Animated navigation - turn off';
+$string['jsdeactivate'] = 'Animated navigation - turn on';
 $string['jsdeactivated'] = 'You have deactivated animated navigation on your account';
 $string['jsnavsettings'] = 'JavaScript navigation';
 $string['jsreactivated'] = 'You have activated animated navigation on your account.  This may be quicker to use.  It requires JavaScript enabled.';
-$string['labelconverted'] = 'Converted label';
 $string['links'] = 'Links';
 $string['loading'] = 'Loading';
 $string['maxcoursesectionsallowed'] = 'The maximum number of course sections allowed in this environment is {$a}.';
@@ -379,12 +373,12 @@ $string['tileicon_help'] = 'Item selected here will override, for this tile only
 $string['tileicons'] = 'Tile icons';
 $string['tileoutcome'] = 'Outcome for this tile';
 $string['tileoutcome_help'] = 'If you select an outcome for this tile, you will then under course settings be able to display a set of <em>filter buttons</em>, one for each outcome,  which when pressed filter the displayed tiles according to which outcome they have been assigned';
-$string['tileoutofsequence'] = 'This tile has an out of sequence section number.  Please click the button to fix, or delete the tile altogether (move any contents to another tile first)';
 $string['tileselecttip'] = 'Here\'s an easier way to change a tile icon or photo: in the course, with editing mode on, simply click the icon or photo you want to change.  The icon picker window will pop up.';
 $string['tilesformatregistration'] = 'Tiles format registration';
-$string['tilesoutofsequencewarning'] = 'Warning for editors: The following tile(s) have errors.  Please click the button, or delete one or more of these tiles to fix the issues:';
 $string['tip'] = 'Tip';
 $string['togglecompletion'] = 'Click to toggle completion status';
+$string['togglecompletioncomplete'] = 'Click to toggle completion status (complete)';
+$string['togglecompletionincomplete'] = 'Click to toggle completion status (not complete)';
 $string['tootall'] = 'too tall for the tile';
 $string['toowide'] = 'too wide for the tile';
 $string['transparenttitleadjustments'] = 'Transparent title adjustments';
@@ -402,5 +396,5 @@ $string['usesubtilesseczero'] = 'Use sub tiles in top section';
 $string['usesubtilesseczero_help'] = 'If selected, sub tiles will be used in top section of course as well as within all tiles.  Only available if using sub tiles in the course overall.  This is as the sub tiles take up a lot of room at the very top of the course.  It may be better to leave this unselected, so that any items in the top section are shown in standard list format instead.';
 $string['usetooltips'] = 'Use JavaScript tooltips';
 $string['usetooltips_desc'] = 'Use JavaScript tooltips when user hovers over certain items e.g. completion boxes, tiles for tile contents';
-$string['warningcompatibility'] = 'Please ask a site administrator to upgrade the Tiles course format plugin.  It is not compatible with this version of Moodle.';
+$string['version'] = 'Version {$a}';
 $string['width'] = 'width';

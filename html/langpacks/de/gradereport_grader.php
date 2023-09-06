@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'de', version '3.11'.
+ * Strings for component 'gradereport_grader', language 'de', version '4.1'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -37,13 +37,13 @@ $string['overriddengrade'] = 'Überschriebene Bewertung';
 $string['pluginname'] = 'Bewertungsübersicht';
 $string['preferences'] = 'Einstellungen für die Bewertungsübersicht';
 $string['privacy:metadata:preference:grade_report_aggregationposition'] = 'Werden Kategorien und das Kursgesamtergebnis in den Bewertungstabellen am Anfang oder am Ende angezeigt.';
-$string['privacy:metadata:preference:grade_report_averagesdecimalpoints'] = 'Anzahl der Dezimalstellen, die für jeden Durchschnitt angezeigt werden sollen, falls die Gesamtdezimalstellen für die Kategorie oder das Notenelement verwendet werden (erben).';
+$string['privacy:metadata:preference:grade_report_averagesdecimalpoints'] = 'Anzahl der Nachkommastellen, die für jeden Durchschnitt angezeigt werden sollen, falls die Gesamtdezimalstellen für die Kategorie oder das Notenelement verwendet werden (erben).';
 $string['privacy:metadata:preference:grade_report_averagesdisplaytype'] = 'Ob der Durchschnitt (Mittel) als realer Wert, Prozentwert oder Note angezeigt wird, oder ob der Wert von der Bewertungskategorie oder dem Bewertungsitem abgeleitet wird.';
 $string['privacy:metadata:preference:grade_report_enableajax'] = 'Ob ein Layer mit AJAX-Funktionen über den Bewertungsbericht gelegt wird um Bearbeitungen zu vereinfachen und beschleunigen';
 $string['privacy:metadata:preference:grade_report_grader_collapsed_categories'] = 'Liste der Bewertungskategorien zum Einklappen';
 $string['privacy:metadata:preference:grade_report_meanselection'] = 'Ob Zellen ohne Bewertungen in die Berechnung des Durchschnitts (Mittel) für jede Kategorie oder jedes Bewertungsitem einbezogen wird.';
 $string['privacy:metadata:preference:grade_report_quickgrading'] = 'Ob eine Texteingabe-Box für jede Bewertung angezeigt wird, um eine große Anzahl von Nutzern einfach zu bewerten.';
-$string['privacy:metadata:preference:grade_report_rangesdecimalpoints'] = 'Anzahl der Dezimalstellen für jeden Bereich oder ob die übergeordnete Einstellung der Kategorie oder des Bewertungsobjekts werden soll (Vererbung).';
+$string['privacy:metadata:preference:grade_report_rangesdecimalpoints'] = 'Anzahl der Nachkommastellen, die für jeden Bereich angezeigt werden, oder ob die übergeordnete Einstellung der Kategorie oder des Bewertungselements verwendet werden soll (Vererbung).';
 $string['privacy:metadata:preference:grade_report_rangesdisplaytype'] = 'Ob der Bereich als reale Bewertung, Prozenzahl oder Note genutzt wird oder ob der Wert, der für die Kategorie oder das Bewertungsitem gesetzt wurde, angezeigt wird (Vererbung)';
 $string['privacy:metadata:preference:grade_report_showactivityicons'] = 'Hier wird festelegt, ob die Aktivitäts-Icons neben den Aktivitätsnamen angezeigt werden sollen.';
 $string['privacy:metadata:preference:grade_report_showanalysisicon'] = 'Ob das Icon zur Bewertungsanalyse automatisch angezeigt werden soll. Wenn das Aktivitätsplugin die Funktion unterstützt führt der Link zu einer Unterseite, die das Zustandekommen der Bewertung genauer darstellt.';

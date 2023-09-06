@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'it', version '3.11'.
+ * Strings for component 'message', language 'it', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Evita messaggi da parte di utenti che non fanno p
 $string['blockuser'] = 'Blocca utente';
 $string['blockuserconfirm'] = 'Sei sicuro di bloccare {$a}?';
 $string['blockuserconfirmbutton'] = 'Blocco';
-$string['canceledit'] = 'Annulla modifica messaggio';
 $string['cancelselection'] = 'Annulla selezione messaggi';
 $string['cantblockuser'] = 'Non è possibile bloccare {$a} poiché possiede un ruolo con il privilegio di inviare messaggi a tutti gli utenti.';
 $string['contactableprivacy'] = 'Accetta messaggi da:';
@@ -105,8 +104,6 @@ $string['loggedoffdescription'] = 'Quando non sono collegato';
 $string['managemessageoutputs'] = 'Preferenze di default delle notifiche';
 $string['message'] = 'Messaggio';
 $string['messagecontactrequest'] = '{$a->user} ha richiesto di essere aggiunto ai tuoi contatti. Per rispondere, visita la pagina <a href="{$a->url}">richieste di contatto</a>';
-$string['messagecontactrequestsnotification'] = '{$a} desidera entrare in contatto.';
-$string['messagecontactrequestsnotificationsubject'] = 'Richiesta di contatto da parte di {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: Richiesta di contatto da {$a->user}';
 $string['messagecontentaudio'] = 'Audio';
 $string['messagecontentimage'] = 'Immagine';
@@ -137,7 +134,6 @@ $string['nofavourites'] = 'Nessuna conversazione contrassegnata';
 $string['noframesjs'] = 'Versione accessibile';
 $string['nogroupconversations'] = 'Nessuna conversazione di gruppo';
 $string['noindividualconversations'] = 'Nessuna conversazione privata';
-$string['nomessages'] = 'Nessun messaggio';
 $string['nomessagesfound'] = 'Non è stato trovato nessun messaggio';
 $string['noncontacts'] = 'Non tra i contatti';
 $string['nonotifications'] = 'Non hai notifiche';
@@ -156,11 +152,7 @@ $string['offline'] = 'Offline';
 $string['on'] = 'On';
 $string['online'] = 'Online';
 $string['otherparticipants'] = 'Altri partecipanti';
-$string['outputdisabled'] = 'Output disabilitato';
-$string['outputdoesnotexist'] = 'L\'instradamento messaggi non esiste';
-$string['outputenabled'] = 'Output abilitato';
 $string['outputnotavailable'] = 'Non disponibile';
-$string['outputnotconfigured'] = 'Non configurato';
 $string['page-message-x'] = 'Qualsiasi pagina con messaggi';
 $string['participants'] = 'Partecipanti';
 $string['pendingcontactrequests'] = 'Hai {$a} richieste di contatto in attesa';

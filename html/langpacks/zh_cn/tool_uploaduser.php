@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'zh_cn', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'zh_cn', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -80,6 +80,7 @@ $string['uploadusers_help'] = '可以通过文本文件上传（并能直接选�
 * 每条记录是一系列被逗号（或其它分隔符）分隔的数据
 * 第一行记录是字段名列表，定义文件的格式
 * username、password、firstname、lastname和email字段名是必须的';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = '预览';
 $string['uploadusersresult'] = '上传用户结果';
 $string['useraccountupdated'] = '已更新用户数据';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'de', version '3.11'.
+ * Strings for component 'mnet', language 'de', version '4.1'.
  *
  * @package     mnet
  * @category    string
@@ -92,7 +92,7 @@ $string['hideremote'] = 'Entfernte Nutzer/innen verbergen';
 $string['host'] = 'Rechner';
 $string['hostcoursenotfound'] = 'Rechner oder Kurs nicht gefunden';
 $string['hostdeleted'] = 'Rechner entfernt';
-$string['hostexists'] = 'Ein Datensatz mit diesem Servernamen ist bereits vorhanden und kann eventuell gelöscht werden. <a href="{$a}">Datensatz bearbeiten</a>.';
+$string['hostexists'] = 'Für einen Host mit diesem Hostnamen ist bereits ein Eintrag vorhanden. Möglicherweise wurde er gelöscht. <a href="{$a}">Eintrag bearbeiten</a>';
 $string['hostlist'] = 'Liste von vernetzten Servern';
 $string['hostname'] = 'Server-URL';
 $string['hostnamehelp'] = 'Vollständiger Domainname des Remote-Rechners, z.B. www.beispiel.de';
@@ -120,6 +120,7 @@ $string['is_in_range'] = 'Die IP-Adresse <code>{$a}</code> gehört zu einem vert
 $string['ispublished'] = '{$a} stellt diesen Service für Sie bereit.';
 $string['issubscribed'] = '{$a} abonniert diesen Service von Ihrem Server';
 $string['keydeleted'] = 'Ihr Schlüssel wurde erfolgreich gelöscht und neu gesetzt.';
+$string['keydeletedcancelled'] = 'Der Schlüssel wurde nicht verändert.';
 $string['keymismatch'] = 'Der von Ihnen für diesen Rechner vorgehaltene PublicKey unterscheidet sich vom aktuell veröffentlichten PublicKey. Der veröffentlichte Key lautet:';
 $string['last_connect_time'] = 'Letzte Verbindung';
 $string['last_connect_time_help'] = 'Zeitpunkt, zu dem Sie das letzte Mal mit diesem Rechner verbunden waren.';

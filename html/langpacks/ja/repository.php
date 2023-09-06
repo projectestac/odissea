@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ja', version '3.11'.
+ * Strings for component 'repository', language 'ja', version '4.1'.
  *
  * @package     repository
  * @category    string
@@ -206,7 +206,7 @@ $string['pluginname'] = 'リポジトリプラグイン名';
 $string['pluginnamehelp'] = 'あなたがここを空白にした場合、デフォルトの名称が使用されます。';
 $string['popup'] = 'ログインするには「ログイン」ボタンをクリックしてください。';
 $string['popupblockeddownload'] = 'ダウンロードウィンドウがブロックされました。ポップアップウィンドウを許可して再度お試しください。';
-$string['preview'] = 'プレビュ';
+$string['preview'] = 'プレビュー';
 $string['privacy:metadata:repository'] = 'コアサブシステムでリポジトリタイプを保存するリポジトリコンポーネントです。';
 $string['privacy:metadata:repository_instances'] = 'コアサブシステムでユーザリポジトリインスタンスデータを保存するリポジトリプラグインコンポーネントです。';
 $string['privacy:metadata:repository_instances:name'] = 'リポジトリインスタンスのカスタム名です。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'ru', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'ru', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -31,7 +31,7 @@ $string['editor:addentity'] = 'Добавить :entity';
 $string['editor:addfile'] = 'Добавить файл';
 $string['editor:addnewchange'] = 'Добавить новое изменение';
 $string['editor:addtitle'] = 'Добавить заголовок';
-$string['editor:addvideodescription'] = 'H5P поддерживает все внешние источники видео в формате mp4, webm или ogv, например Vimeo Pro. Поддерживаеются и  ссылки на YouTube.';
+$string['editor:addvideodescription'] = 'H5P поддерживает все внешние источники видео в формате mp4, webm или ogv, например Vimeo Pro. Поддерживаются и ссылки на YouTube и Panopto.';
 $string['editor:atoz'] = 'От А до Я';
 $string['editor:avtablistlabel'] = 'Вставить с помощью';
 $string['editor:belowmin'] = 'Значение :property ниже минимального :min.';
@@ -91,7 +91,7 @@ $string['editor:enteraudiotitle'] = 'Вставить ссылку или URL-а
 $string['editor:enteraudiourl'] = 'Введите URL-адрес источника звука';
 $string['editor:enterfullscreenbuttonlabel'] = 'Войти в полноэкранный режим';
 $string['editor:entervideotitle'] = 'Вставьте ссылку YouTube или URL-адрес другого источника видео';
-$string['editor:entervideourl'] = 'Введите URL-адрес источника видео или ссылку на YouTube';
+$string['editor:entervideourl'] = 'Введите URL-адрес источника видео';
 $string['editor:errorcalculatingmaxscore'] = 'Не удалось рассчитать максимальную оценку для этого контента. Предполагается, что максимальное количество баллов равно 0. Если это неверно, обратитесь к администратору.';
 $string['editor:errorcommunicatinghubcontent'] = 'Произошла ошибка. Пожалуйста, попробуйте еще раз.';
 $string['editor:errorcommunicatinghubtitle'] = 'Невозможно связаться с хабом.';
@@ -168,6 +168,8 @@ $string['editor:numresults'] = 'результатов - :num';
 $string['editor:ok'] = 'OK';
 $string['editor:onlynumbers'] = 'Значение :property может содержать только числа.';
 $string['editor:or'] = 'или';
+$string['editor:orderitemdown'] = 'Упорядочить элементы по убыванию';
+$string['editor:orderitemup'] = 'Упорядочить элементы по возрастанию';
 $string['editor:outofstep'] = 'Значение :property можно изменять только пошагово от :step.';
 $string['editor:pasteandreplacebutton'] = 'Вставить и заменить';
 $string['editor:pasteandreplacefromclipboard'] = 'Заменить существующий контент контентом H5P из буфера обмена';

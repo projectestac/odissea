@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_classicpay', language 'ar', version '3.11'.
+ * Strings for component 'enrol_classicpay', language 'ar', version '4.1'.
  *
  * @package     enrol_classicpay
  * @category    string
@@ -51,7 +51,7 @@ $string['coupon:new'] = 'إضافة قسيمة جديدة';
 $string['coupons:backtooverview'] = 'عودة إلى قائمة القسائم';
 $string['coupontype:value'] = 'القيمة';
 $string['defaultrole'] = 'إسناد الدور الافتراضي';
-$string['entiresite'] = 'عموم الموقع / أي مقرر دراسي';
+$string['entiresite'] = 'عموم الموقع / أي مساق';
 $string['name'] = 'الاسم';
 $string['th:value'] = 'القيمة';
 $string['value'] = 'القيمة';

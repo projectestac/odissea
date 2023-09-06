@@ -1,4 +1,4 @@
-@filter @filter_wiris @wiris_mathtype @onlythisone
+@filter @filter_wiris @wiris_mathtype @onlythisone @3.x
 Feature: Compatibility with the Convert URLs into links and images filter by Moodle
 In order to check that the Convert URLs into links and images filter is compatible with the Wiris filter
 As an admin
@@ -21,6 +21,11 @@ I need to enable the Convert URLs into links and images filter and insert a Math
 
   @javascript
   Scenario: Insert a formula with the Convert URLs into links and images filter on
+    And I follow "Preferences" in the user menu
+    And I follow "Editor preferences"
+    And I set the following fields to these values:
+      | Text editor | Atto HTML editor |
+    And I press "Save changes"
     And I am on "Course 1" course homepage with editing mode on
     And I add a "Page" to section "0"
     And I set the following fields to these values:

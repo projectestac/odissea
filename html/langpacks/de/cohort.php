@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'de', version '3.11'.
+ * Strings for component 'cohort', language 'de', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -36,6 +36,7 @@ $string['bulkadd'] = 'Zu globaler Gruppe hinzufügen';
 $string['bulknocohort'] = 'Keine globalen Gruppen gefunden';
 $string['categorynotfound'] = 'Die Kategorie <b>{$a}</b> wurde nicht gefunden. Eventuell haben Sie keine Recht, um an dieser Stelle eine globale Gruppe anzulegen. Der Standardkontext wird verwendet.';
 $string['cohort'] = 'Globale Gruppe';
+$string['cohortmember'] = 'Mitglied der globalen Gruppe';
 $string['cohorts'] = 'Globale Gruppen';
 $string['cohortsin'] = '{$a}: verfügbare globale Gruppen';
 $string['component'] = 'Quelle';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = 'Globale Gruppe aktualisiert';
 $string['external'] = 'Externe globale Gruppe';
 $string['idnumber'] = 'Globale Gruppen-ID';
 $string['invalidtheme'] = 'Das Design für die globale Gruppe gibt es nicht.';
+$string['memberofcohort'] = 'Mitglied der globalen Gruppe';
 $string['memberscount'] = 'Größe';
 $string['name'] = 'Name';
 $string['namecolumnmissing'] = 'Das Format der CSV-Datei ist nicht richtig. Prüfen Sie, ob die Feldnamen in der ersten Zeile enthalten sind.

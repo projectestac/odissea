@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_quizanalytics', language 'de', version '3.11'.
+ * Strings for component 'gradereport_quizanalytics', language 'de', version '4.1'.
  *
  * @package     gradereport_quizanalytics
  * @category    string
@@ -28,20 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['accuaracyrate'] = 'Genauigkeit:';
 $string['action'] = 'Aktion';
 $string['allusersdes'] = 'In diesem Abschnitt werden auf der Grundlage falscher und nicht begonnener Versuche die Kategorien beschrieben, die sich für alle Teilnehmer/innen, die an dem Tests teilgenommen haben, als am schwierigsten herausstellten.';
-$string['apiversion'] = 'API Version eingeben';
-$string['apiversiondes'] = 'Geben Sie bitte die API Version ein.';
 $string['attemptssnapshotdes'] = 'Dieser Abschnitt ist wie eine Zusammenfassung und zeigt die Kennzahlen aller Ihrer vorherigen Versuche an.';
 $string['attemptsummarydes'] = 'Diese Grafik zeigt, wie es Ihnen bei Ihrem Versuch ergangen ist.';
 $string['avgscore'] = 'Ergebnis (Durchschnitt)';
 $string['bestscore'] = 'Bestes Ergebnis';
 $string['correct'] = 'Korrekt';
 $string['cutoffdes'] = 'Legen Sie für alle Tests den Cut-Off-Prozentsatz (%) fest. Dieser wird für ein Diagramm zur prädiktiven Analyse verwendet.';
-$string['cutoffscore'] = 'Cut Off Score';
-$string['enterfbappid'] = 'FaceBook App ID eingeben';
-$string['fbappiddes'] = 'Geben Sie bitte eine gültige Facebook-App-ID ein, die zum Teilen von Grafiken verwendet werden soll.';
-$string['fbsharetitle'] = 'Titel eingeben';
-$string['fbsharetitledefault'] = 'Ich habe einen Test bei Dualcube gemacht und so sieht die Grafik meiner Quizergebnisse aus.';
-$string['fbsharetitledes'] = 'Bitte fügen Sie den Text hinzu, den Sie als Titel für auf Facebook freigegebene Beiträge anzeigen möchten.';
 $string['gradeanalysisdes'] = 'Anzahl der Teilnehmer/innen in jeder Prozentgruppe (Score-Prozentsatz).';
 $string['gradeboundary'] = 'Notengrenze';
 $string['gradeboundarydes'] = 'Die Notengrenzen sind vom Administrator festgelegte Bereiche, die im Statistikdiagramm der Punktzahl angezeigt werden.';
@@ -54,7 +46,6 @@ $string['hardestquestion'] = 'Schwierigste Fragen';
 $string['hardness'] = 'Härtegrad (%)';
 $string['impandpredicanalysis'] = 'Verbesserungskurve & prädiktive Analyse';
 $string['incorrect'] = 'Inkorrekt';
-$string['lastattemptsummary'] = 'Versuch Zusammenfassung';
 $string['lastattemptsummarydes'] = 'Diese Grafik zeigt, wie es Ihnen beim letzten Versuch ergangen ist.';
 $string['loggedinuserdes'] = 'Schauen wir uns die Kategorien an, die Ihnen nicht so gut gelungen sind.';
 $string['lowestscore'] = 'Schlechtestes Ergebnis';
@@ -74,24 +65,11 @@ $string['quesanalysis'] = 'Fragenanalyse';
 $string['quesananalysisdes'] = 'Die Kurven hier zeigen, wie es den Teilnehmer/innen in jeder Frage ergangen ist. Wenn Sie auf die Kreise klicken, die jeder Frage zugeordnet sind, wird die Frage selbst zusammen mit der Erklärung und der richtigen Antwort angezeigt.';
 $string['questionpercatdes'] = 'Diese Grafik zeigt Ihnen die Anzahl der im Quiz vorhandenen Fragen aus jeder Kategorie.';
 $string['questionspercategory'] = 'Fragen pro Kategorie';
-$string['quizanalytics:view'] = 'Quiz Analytics-Bericht anzeigen';
 $string['quizname'] = 'Name des Tests';
 $string['score'] = 'Ergebnis';
 $string['setcutoff'] = 'Cut Off einstellen';
 $string['setglobal'] = 'Global einstellen';
 $string['setglobaldes'] = 'Festlegen der Notengrenze für alle Tests. Wenn diese Option aktiviert ist, werden die einzelnen Einstellungen für die Notengrenzen für jeden Test neu definiert.';
-$string['tab1'] = 'Versuch Zusammenfassung';
-$string['tab2'] = 'Meine Fortschritte und Vorhersagen';
-$string['tab2subtab11'] = 'Verbesserungskurve';
-$string['tab2subtab12'] = 'Peer-Leistung';
-$string['tab2subtab2'] = 'Schwierigste Frage';
-$string['tab2subtab3'] = 'Versuch Schnappschuss';
-$string['tab3'] = 'Fragenkategorien & # 39 Analyse';
-$string['tab3subtab1'] = 'Frage pro Kategorie';
-$string['tab3subtab2'] = 'Herausfordernde Kategorien (für alle Teilnehmer/innen)';
-$string['tab3subtab3'] = 'Herausfordernde Kategorien für mich';
-$string['tab4'] = 'Ergebnisse& # 39 & Fragen & # 39 Statistiken';
-$string['tab4subtab1'] = 'Punktzahl nach Prozentsatz (Alle Teilnehmer/innen)';
 $string['timechartdes'] = 'Diese Grafik zeigt, wie andere Teilnehmer/innen im Vergleich zu Ihnen abgeschnitten haben.';
 $string['timetaken'] = 'Versuche Schnappschuss (Zeitaufwand):';
 $string['totalquizattempt'] = 'Gesantzahl der Versuche';

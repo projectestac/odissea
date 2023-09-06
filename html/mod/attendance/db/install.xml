@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<XMLDB PATH="mod/attendance/db" VERSION="20190622" COMMENT="XMLDB file for Moodle mod/attendance"
+<XMLDB PATH="mod/attendance/db" VERSION="20220831" COMMENT="XMLDB file for Moodle mod/attendance"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
 >
@@ -38,6 +38,8 @@
         <FIELD NAME="description" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="descriptionformat" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="studentscanmark" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="allowupdatestatus" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Allow student to update the status they have stored earlier."/>
+        <FIELD NAME="studentsearlyopentime" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Time to allow for early opening of session for student marking."/>
         <FIELD NAME="autoassignstatus" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
         <FIELD NAME="studentpassword" TYPE="char" LENGTH="50" NOTNULL="false" DEFAULT="" SEQUENCE="false"/>
         <FIELD NAME="subnet" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" COMMENT="Restrict ability for students to mark by subnet."/>
@@ -73,7 +75,7 @@
         <FIELD NAME="statusset" TYPE="char" LENGTH="1333" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="timetaken" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="When attendance of this student was taken"/>
         <FIELD NAME="takenby" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
-        <FIELD NAME="remarks" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="remarks" TYPE="char" LENGTH="1333" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="ipaddress" TYPE="char" LENGTH="45" NOTNULL="false" DEFAULT="" SEQUENCE="false"/>
       </FIELDS>
       <KEYS>
@@ -93,6 +95,7 @@
         <FIELD NAME="description" TYPE="char" LENGTH="30" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="grade" TYPE="number" LENGTH="5" NOTNULL="true" DEFAULT="0" SEQUENCE="false" DECIMALS="2"/>
         <FIELD NAME="studentavailability" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="How many minutes this status is available when self marking is enabled."/>
+        <FIELD NAME="availablebeforesession" TYPE="int" LENGTH="2" NOTNULL="false" SEQUENCE="false" COMMENT="Show this status before the start of a session."/>
         <FIELD NAME="setunmarked" TYPE="int" LENGTH="2" NOTNULL="false" SEQUENCE="false" COMMENT="Set this status if unmarked at end of session."/>
         <FIELD NAME="visible" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
         <FIELD NAME="deleted" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>

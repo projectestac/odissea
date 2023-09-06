@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'nl', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'nl', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'Audio en video';
 $string['audiobitrate'] = 'Audio bitrate';
 $string['audiobitrate_desc'] = 'Kwaliteit van de audio-opname (groter getal geeft een hogere kwaliteit)';
 $string['audiortc'] = 'Audio opnemen';
+$string['audiotimelimit'] = 'Audiotijd in seconden';
+$string['audiotimelimit_desc'] = 'Maximale toegestane opnamelengte voor audioclips';
 $string['gumabort'] = 'Er gebeurde iets vreemd dat verhinderde dat de webcam/microfoon gebruikt werd';
 $string['gumabort_title'] = 'Er liep wat mis';
 $string['gumnotallowed'] = 'De gebruiker moet aan de browser toestemming geven om toegang te krijgen tot de webcam/microfoon';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'Start opname';
 $string['stoprecording'] = 'Stop opname';
 $string['timelimit'] = 'Tijdslimiet in seconden';
 $string['timelimit_desc'] = 'Maximum toegestane opnamelengte voor de audio-/videoclips';
+$string['timelimitwarning'] = 'Je moet een getal groter dan 0 invoeren';
 $string['uploadaborted'] = 'Upload onderbroken';
 $string['uploadfailed'] = 'Upload mislukt:';
 $string['uploadfailed404'] = 'Upload mislukt: bestand te groot';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'voltooid';
 $string['videobitrate'] = 'Video bitrate';
 $string['videobitrate_desc'] = 'Kwaliteit van de video-opname (groter getal is betere kwaliteit)';
 $string['videortc'] = 'Video opnemen';
+$string['videotimelimit'] = 'Video tijdslimiet in seconden';
+$string['videotimelimit_desc'] = 'Maximaal toegestane opnametijd voor videoclips';

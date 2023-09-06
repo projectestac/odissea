@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'ar', version '3.11'.
+ * Strings for component 'block_community', language 'ar', version '4.1'.
  *
  * @package     block_community
  * @category    string
@@ -27,17 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activities'] = 'أنشطة';
 $string['add'] = 'إضافة';
-$string['addcommunitycourse'] = 'أضف مقرر دراسي لمجتمع';
+$string['addcommunitycourse'] = 'أضف مساق لمجتمع';
 $string['addcourse'] = 'بحث';
-$string['addedtoblock'] = 'تم أضافة رابط لهذا المقرر الدراسي في كتلة مجتمعك';
-$string['addtocommunityblock'] = 'احفط الربط لهذا المقرر الدراسي';
+$string['addedtoblock'] = 'تم أضافة رابط لهذا المساق في كتلة مجتمعك';
+$string['addtocommunityblock'] = 'احفط الربط لهذا المساق';
 $string['audience'] = 'صمم لـ';
-$string['audience_help'] = 'ما هو نوع المقرر الدراسي الذي تبحث عنه؟ مع العم أن جميع المقررات الدراسية التقليدية معدة للطلاب، من الممكن البحث في مجتمعات المعلمين أو مدراء مودل';
+$string['audience_help'] = 'ما هو نوع المقرر الذي تبحث عنه؟ مع العم أن جميع المقررات الدراسية التقليدية معدة للطلاب، من الممكن البحث في مجتمعات المعلمين أو مدراء مودل';
 $string['blocks'] = 'الكتل';
 $string['cannotselecttopsubject'] = 'لا يمكن اختيار مستوى أعلى للموضوع';
 $string['comments'] = 'تعليقات ({$a})';
 $string['community:addinstance'] = 'إضافة كتلة جديدة من مكتشف المجتمعات';
-$string['community:myaddinstance'] = 'إضافة كتلة جديدة من مكتشف المجتمعات إلى لوحة التحكم';
+$string['community:myaddinstance'] = 'إضافة كتلة جديدة من مكتشف المجتمعات إلى دفة القيادة';
 $string['contentinfo'] = 'الموضوع: {$a->subject} - المستفدون: {$a->audience} - المستوى التعليمي: {$a->educationallevel}';
 $string['continue'] = 'استمر';
 $string['contributors'] = '- المساهمون: {$a}';
@@ -53,12 +53,12 @@ $string['downloadable'] = 'المقررات الدراسية  التي استط�
 $string['downloadconfirmed'] = 'النسخ الإحتياطي تم حفطة هى ملفاتك الخاصة  {$a}';
 $string['downloaded'] = '...... انتهى';
 $string['downloadingcourse'] = 'يتم تنزيل المقررات الدراسية';
-$string['downloadingsize'] = 'الرجاء الانتظار ملفات المقرر الدراسي حتى يتم تنزيلها ({$a->total}Mb)...';
-$string['downloadtemplate'] = 'إنشاء مساق من قالب';
+$string['downloadingsize'] = 'الرجاء الانتظار ملفات المساق حتى يتم تنزيلها ({$a->total}Mb)...';
+$string['downloadtemplate'] = 'أنشئ مساق من مظهر';
 $string['educationallevel'] = 'المستوى التعليمي';
 $string['educationallevel_help'] = 'ما هو المستوى التعليمي الذي تبحث عنه؟ في حالة مجتمعات المعلمين، هذا المستوى يوصف المستوى التعليمي الذي يقوم بتدريسه';
 $string['enroldownload'] = 'أبحث';
-$string['enrollable'] = 'مقررات لا استطيع التسجيل فيها';
+$string['enrollable'] = 'مقررات دراسية لا استطيع التسجيل فيها';
 $string['hubnottrusted'] = 'غير موثوق فيه';
 $string['install'] = 'تنزيل';
 $string['keywords'] = 'كلمات مفتاحية';
@@ -79,15 +79,15 @@ $string['orderbynewest'] = 'الأحدث';
 $string['orderbypublisher'] = 'ناشر';
 $string['outcomes'] = 'مخرجات: {$a}';
 $string['pluginname'] = 'مستكشف المجتمعات';
-$string['privacy:metadata:block_community:coursedescription'] = 'وصف المقرر المجتمعي المرتبط.';
-$string['privacy:metadata:block_community:coursename'] = 'اسم المقرر الدراسي المجتمعي المرتبط';
-$string['removecommunitycourse'] = 'استبعد مقرر دراسي لمجتمع';
-$string['restorecourse'] = 'استرجع مقرر دراسي';
-$string['restorecourseinfo'] = 'استرج المقرر الدراسي';
+$string['privacy:metadata:block_community:coursedescription'] = 'وصف المساق المجتمعي المرتبط.';
+$string['privacy:metadata:block_community:coursename'] = 'اسم المساق المجتمعي المرتبط';
+$string['removecommunitycourse'] = 'استبعد مساق لمجتمع';
+$string['restorecourse'] = 'استرجع مساق';
+$string['restorecourseinfo'] = 'استرج المساق';
 $string['screenshots'] = 'لقطة شاشة';
 $string['search'] = 'بحث';
-$string['searchcommunitycourse'] = 'ابحث عن مقرر دراسي لمجتمع';
-$string['searchcourse'] = 'ابحث عن مقرر دراسي لمجتمع';
+$string['searchcommunitycourse'] = 'ابحث عن مساق لمجتمع';
+$string['searchcourse'] = 'ابحث عن مساق لمجتمع';
 $string['sites'] = 'مواقع';
 $string['subject'] = 'موضوع';
 $string['visitdemo'] = 'قم بزيارة عرض';

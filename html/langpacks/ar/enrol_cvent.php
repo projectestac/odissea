@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cvent', language 'ar', version '3.11'.
+ * Strings for component 'enrol_cvent', language 'ar', version '4.1'.
  *
  * @package     enrol_cvent
  * @category    string
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['account_number_desc'] = 'مُعرَّف حسابك في Cvent. (ينبغي أن تتلقى هذه القيمة من Cvent).';
 $string['autocreate_courses_desc'] = 'يمكن إنشاء المقررات الدراسية تلقائياً (بأرقام المُعرَّفات الصحيحة) إن كانت هناك انضمامات إلى مقرر غير موجود بعد في مودل.';
 $string['clicktoseelogafter'] = 'أنقر هنا لمشاهدة طلبات واجهة برمجة التطبيق بعد انتهاء تحميل هذه الصفحة.';
-$string['enrol_daysafter'] = 'الوصول الموسع للمقرر';
-$string['enrol_daysbefore'] = 'الوصول المبكر للمقرر';
+$string['enrol_daysafter'] = 'الوصول الموسع للمساق';
+$string['enrol_daysbefore'] = 'الوصول المبكر للمساق';
 $string['headingcallsremaining'] = 'الاستدعاءات الباقية لواجهة برمجة التطبيق (عند الفحص الأخير)';
 $string['search_location_desc'] = 'بداية اسم المواضع التي تريد تضمينها.<br />على سبيل المثال: إذا كانت لديك ثلاثة مواضع في Cvent (البلدة، البلدة القديمة، دار القضاء) وتريد من موقع مودل هذا الحصول على انضمامات للأحداث في البلدة والبلدة القديمة، أدخل \'البلدة\' هنا.';
 $string['username_desc'] = 'اسم المستخدم لحسابك في Cvent. (ينبغي أن تتلقى هذه القيمة من Cvent).';

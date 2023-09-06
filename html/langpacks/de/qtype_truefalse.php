@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'de', version '3.11'.
+ * Strings for component 'qtype_truefalse', language 'de', version '4.1'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -34,9 +34,13 @@ $string['feedbacktrue'] = 'Feedback (Wahr)';
 $string['pleaseselectananswer'] = 'Wählen Sie eine Antwort:';
 $string['pluginname'] = 'Wahr/Falsch';
 $string['pluginname_help'] = 'Als Antwort auf eine Frage (die auch ein Bild enthalten kann) wählen Teilnehmer/innen zwischen \'Wahr\' und \'Falsch\'.';
+$string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'Wahr/Falsch-Frage hinzufügen';
 $string['pluginnameediting'] = 'Wahr/Falsch-Frage bearbeiten';
 $string['pluginnamesummary'] = 'Eine einfache Form der Multiple-Choice-Frage mit den zwei Auswahlmöglichkeiten "Wahr" und "Falsch".';
 $string['privacy:metadata'] = 'Der Wahr/Falsch Fragentyp speichert keine personenbezogenen Daten.';
+$string['privacy:preference:showstandardinstruction'] = 'Gibt an, ob Standardanweisungen gezeigt werden.';
 $string['selectone'] = 'Bitte wählen Sie eine Antwort:';
+$string['showstandardinstruction'] = 'Standard-Anweisungen anzeigen';
+$string['showstandardinstruction_help'] = 'Die Option legt fest, ob die Anweisung "Wählen Sie eine aus:" vor Wahr-/Falsch-Antworten angezeigt werden soll.';
 $string['true'] = 'Wahr';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ko', version '3.11'.
+ * Strings for component 'completion', language 'ko', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -64,6 +64,7 @@ $string['completion_automatic'] = '조건을 충족시키면 자동으로 활동
 $string['completion_help'] = '만일 활성화되면 활동 완료를 특정 조건에 기반하여 수동적으로 혹은 자동적으로 추적할 수 있습니다. 원한다면 여러개의 조건을 설정할 수 있으며 모든 조건이 만족될때만 완료된 것으로 간주됩니다.
 
 강좌의 활동이름 옆에 있는 표시는 활동이 완료되었음을 나타냅니다.';
+$string['completion_link'] = 'activity/completion';
 $string['completion_manual'] = '사용자 스스로 활동 이수상황을 기입할 수 있게 함';
 $string['completion_none'] = '활동 이수 상황을 표시하지 않음';
 $string['completionactivitydefault'] = '활동 디폴트 사용';

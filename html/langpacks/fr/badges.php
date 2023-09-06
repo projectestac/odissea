@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'fr', version '3.11'.
+ * Strings for component 'badges', language 'fr', version '4.1'.
  *
  * @package     badges
  * @category    string
@@ -78,7 +78,7 @@ $string['archivehelp'] = '<p>Cette option signifie que le badge sera marqué com
 $string['attachment'] = 'Joindre le badge à un courriel';
 $string['attachment_help'] = 'Si ce réglage est activé, un badge délivré sera joint au courriel du destinataire pour téléchargement (pour pouvoir utiliser cette option, les annexes de courriel doivent être activées sous Administration du site / Serveur / Courriel / Configuration du courriel sortant).';
 $string['award'] = 'Délivrer le badge';
-$string['awardedto'] = 'Décerné à {$a}';
+$string['awardedto'] = 'Délivré à {$a}';
 $string['awardedtoyou'] = 'Délivré à moi';
 $string['awardoncron'] = 'L\'accès aux badges a été activé. Trop d\'utilisateurs peuvent obtenir ce badge instantanément. Pour préserver la performance du site, cette action prendra un certain temps.';
 $string['awards'] = 'Détenteurs';
@@ -109,11 +109,12 @@ $string['backpackconnectionnottested'] = 'La connexion à ce sac à badges ne pe
 $string['backpackconnectionok'] = 'Connexion au sac à badges établie avec succès';
 $string['backpackconnectionresendemail'] = 'Envoyer à nouveau le courriel de vérification';
 $string['backpackconnectionunexpectedmessage'] = 'Le sac à badges a renvoyé l\'erreur : « {$a} ».';
-$string['backpackconnectionunexpectedresult'] = 'Un problème est survenu lors de la connexion à votre sac à badges. Veuillez vérifiez vos identifiants et essayer à nouveau.';
+$string['backpackconnectionunexpectedresult'] = 'Un problème est survenu lors de la connexion à votre sac à badges. Votre fournisseur de sac à badges a retourné ce message : « {$a} ».';
 $string['backpackdetails'] = 'Réglages du sac à badges';
 $string['backpackdisconnected'] = 'Le sac a badges est déconnecté';
 $string['backpackemail'] = 'Adresse de courriel';
 $string['backpackemail_help'] = 'Adresse de courriel associée à votre sac à badges. Lorsque vous êtes connecté, tous les badges reçus sur ce site seront associés à cette adresse de courriel.';
+$string['backpackemail_required'] = 'L\'adresse de courriel ne peut pas être vide';
 $string['backpackemailverificationpending'] = 'Vérification en attente';
 $string['backpackemailverifyemailbody'] = 'Bonjour,
 
@@ -132,6 +133,7 @@ $string['backpackemailverifypending'] = 'Un message de vérification a été env
 $string['backpackemailverifysuccess'] = 'Votre adresse de courriel a été vérifiée. Vous êtes désormais connecté à votre sac à badges.';
 $string['backpackemailverifytokenmismatch'] = 'Le jeton dans le lien que vous avez cliqué ne correspond pas au jeton enregistré. Assurez-vous de cliquer sur le lien indiqué dans le courriel le plus récent que vous avez reçu.';
 $string['backpackexporterror'] = 'Impossible d\'exporter le badge dans le sac à badges';
+$string['backpackexporterrorwithinfo'] = 'Impossible d\'exporter le badge « {$a->badgename} » vers le sac à badges. Erreur : {$a->error}';
 $string['backpackimport'] = 'Réglages d\'importation de badges';
 $string['backpackimport_help'] = 'Une fois établie la connexion à votre sac à badges, les badges de votre sac à badges peuvent être affichés sur votre page de badges et sur votre page de profil.
 
@@ -143,6 +145,7 @@ $string['backpackweburl'] = 'URL sac à badges';
 $string['badgedetails'] = 'Description du badge';
 $string['badgeimage'] = 'Image';
 $string['badgeimage_help'] = 'L\'image doit avoir une taille d\'au moins 300 x 300 pixels. Elle sera affichée en 300 x 300 px sur la page du badge et en 100 x 100 px sur la page de profil de l\'utilisateur.';
+$string['badgeissued'] = 'Badge délivré';
 $string['badgeprivacysetting'] = 'Réglages de confidentialité des badges';
 $string['badgeprivacysetting_help'] = 'Les badges que vous recevez peuvent être affichés sur votre page de profil. Ce réglage détermine si les nouveaux badges obtenus sont automatiquement visibles.
 
@@ -216,7 +219,7 @@ $string['criteria_8_help'] = 'Permet de délivrer un badge à des utilisateurs s
 $string['criteria_9'] = 'Compétences';
 $string['criteria_9_help'] = 'Permet de délivrer un badge à des utilisateurs sur la base de compétences qu\'ils ont acquises.';
 $string['criteria_descr'] = 'Les participants se voient délivrer ce badge lorsqu\'ils satisfont les critères suivants :';
-$string['criteria_descr_0'] = 'Les participants se voient décerner ce badge lorsqu\'ils satisfont <strong>{$a}</strong> des critères listés.';
+$string['criteria_descr_0'] = 'Terminer <strong>{$a}</strong> parmi les critères listés.';
 $string['criteria_descr_1'] = '<strong>{$a}</strong> des activités suivantes sont terminées :';
 $string['criteria_descr_2'] = 'Ce badge doit être délivré par les utilisateurs ayant <strong>{$a}</strong> des rôles suivants :';
 $string['criteria_descr_4'] = 'Les participants doivent achever le cours';
@@ -282,7 +285,6 @@ $string['delparamconfirm'] = 'Voulez-vous vraiment supprimer ce paramètre ?';
 $string['description'] = 'Description';
 $string['disconnect'] = 'Déconnecter';
 $string['donotaward'] = 'Ce badge n\'est actuellement pas actif et ne peut donc pas être délivré à des utilisateurs. Si vous voulez le délivrer, veuillez changer son statut à actif.';
-$string['editsettings'] = 'Modifier les réglages';
 $string['enablebadges'] = 'Activer les badges';
 $string['endorsement'] = 'Approbation';
 $string['error:backpackdatainvalid'] = 'Les données retournées par le sac à badges ne sont pas valides.';
@@ -456,7 +458,9 @@ $string['oauth2issuer'] = 'Services OAuth 2';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
+$string['othernavigation'] = 'Autre navigation…';
 $string['overallcrit'] = 'des critères sélectionnés sont remplis.';
+$string['password_required'] = 'Le mot de passe ne peut pas être vide';
 $string['potentialrecipients'] = 'Détenteurs potentiels du badge';
 $string['preferences'] = 'Préférences des badges';
 $string['privacy:metadata:backpack'] = 'Une liste des sacs à badges de l\'utilisateur';
@@ -493,10 +497,11 @@ $string['privacy:metadata:manualaward:datemet'] = 'La date et l\'heure à laquel
 $string['privacy:metadata:manualaward:issuerid'] = 'L\'identifiant de l\'utilisateur qui délivré le badge';
 $string['privacy:metadata:manualaward:issuerrole'] = 'Le rôle de l\'utilisateur qui délivre le badge';
 $string['privacy:metadata:manualaward:recipientid'] = 'L\'identifiant de l\'utilisateur à qui a été délivré manuellement un badge';
+$string['recipient'] = 'Détenteur du badge';
 $string['recipientdetails'] = 'Infos détenteur';
 $string['recipientidentificationproblem'] = 'Impossible de trouver parmi les utilisateurs un détenteur de ce badge.';
 $string['recipients'] = 'Détenteurs du badge';
-$string['recipientvalidationproblem'] = 'Impossible de vérifier si l\'utilisateur actuel est un détenteur de ce badge.';
+$string['recipientvalidationproblem'] = 'Cet utilisateur ne peut pas être vérifié comme détenteur de ce badge.';
 $string['relatedbages'] = 'Badges associés';
 $string['relative'] = 'Date relative';
 $string['requiredbadge'] = 'Au moins un badge doit être ajouté comme critère.';
@@ -523,7 +528,6 @@ $string['sitebackpack'] = 'Sac à badges externe actif';
 $string['sitebackpack_help'] = 'Le sac à badges externe auquel les utilisateurs peuvent se connecter à partir de ce site. La modification de ce réglage après que des utilisateurs ont connecté leur sac à badges nécessitera que chacun des utilisateurs visite ses réglages de sac à badges et se déconnecte, puis se reconnecte.';
 $string['sitebackpackdeleted'] = 'Le sac à badge de site a été supprimé.';
 $string['sitebackpacknotdeleted'] = 'Ce sac à badge n\'a pas pu être supprimé, car c\'est le sac à badges par défaut du site.';
-$string['sitebackpackverify'] = 'Connexion sac à badges';
 $string['sitebackpackwarning'] = 'Impossible de se connecter au sac à badges.<br /><br />Vérifiez que le réglage « Adresse de courriel de l\'émetteur de badge » est bien une adresse de courriel valide d\'un compte sur le site web de sac à badges.<br /><br />Vérifiez encore que le réglage « Mot de passe de l\'émetteur de badge » sur la <a href="{$a->url}">page des réglages du site de sac à badges</a> est le mot de passe correct pour le compte sur le site de sac à badges.<br /><br />Le sac à badges à répondu : « {$a->warning} ».';
 $string['sitebadges'] = 'Badges de site';
 $string['sitebadges_help'] = 'Les badges de site ne peuvent être délivrés que pour des activités en lien avec le site. Ceci inclut l\'achèvement d\'un ensemble de cours ou de renseignement de parties du profil utilisateur. Les badges de site peuvent aussi être délivrés manuellement à un utilisateur par un autre.

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'ar', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'ar', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -30,11 +30,12 @@ $string['acceptrisk_help'] = 'تعطيل التحقق من البريد الال
 $string['authconfirm'] = 'يمنح هذا الإجراء وصولاً دائمياً لواجهة برمجة التطبيق من مودل للحساب المصادق عليه. هذا مخصص ليتم استعماله كحساب نظام لإدارة الملفات التي يملكها مودل.';
 $string['authconnected'] = 'حساب النظام متصل الآن للوصول دون اتصال';
 $string['authnotconnected'] = 'حساب النظام غير متصل للوصول دون اتصال';
+$string['clever_service'] = 'ذكي';
 $string['configured'] = 'تكوين';
 $string['configuredstatus'] = 'مكوّن';
 $string['connectsystemaccount'] = 'الاتصال بحساب النظام';
-$string['createfromtemplate'] = 'إنشاء خدمة OAuth 2 من قالب';
-$string['createfromtemplatedesc'] = 'اختر أحد قوالب خدمة OAuth 2 أدناه لإنشاء خدمة OAuth بتكوين صالح لأحد أنواع الخدمات المعروفة. سيؤدي ذلك إلى إنشاء خدمة OAuth 2، مع جميع نقاط النهاية والمعاملات الصحيحة المطلوبة للمصادقة، على الرغم من أنك ستظل بحاجة إلى إدخال مُعرَّف العميل والسر للخدمة الجديدة قبل استعمالها.';
+$string['createfromtemplate'] = 'إنشاء خدمة OAuth 2 من مظهر';
+$string['createfromtemplatedesc'] = 'اختر أحد مظاهر خدمة OAuth 2 أدناه لإنشاء خدمة OAuth بتكوين صالح لأحد أنواع الخدمات المعروفة. سيؤدي ذلك إلى إنشاء خدمة OAuth 2، مع جميع نقاط النهاية والمعاملات الصحيحة المطلوبة للمصادقة، على الرغم من أنك ستظل بحاجة إلى إدخال مُعرَّف العميل والسر للخدمة الجديدة قبل استعمالها.';
 $string['createnewendpoint'] = 'إنشاء نقطة نهاية جديدة للمصدر "{$a}"';
 $string['createnewfacebookissuer'] = 'إنشاء خدمة فيسبوك جديدة';
 $string['createnewgoogleissuer'] = 'إنشاء خدمة Google جديدة';
@@ -67,6 +68,7 @@ $string['google_service'] = 'Google';
 $string['imsobv2p1_service'] = 'الشارات المفتوحة';
 $string['issueralloweddomains'] = 'مجالات تسجيل الدخول';
 $string['issueralloweddomains_help'] = 'إذا تم تعيينه، فإن هذا الإعداد هو قائمة مفصولة بفوارز من المجالات التي سيتم حصر تسجيل الدخول بها عند استعمال هذا المزود.';
+$string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
 $string['issuerbaseurl'] = 'رابط لقاعدة الخدمة';
 $string['issuerbaseurl_help'] = 'الرابط الأساسي المستخدم للوصول إلى الخدمة.';
 $string['issuerclientid'] = 'معرف العميل';

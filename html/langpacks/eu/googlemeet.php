@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'googlemeet', language 'eu', version '3.11'.
+ * Strings for component 'googlemeet', language 'eu', version '4.1'.
  *
  * @package     googlemeet
  * @category    string
@@ -25,10 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'API gakoa';
 $string['checkweekdays'] = 'Aukeratu data-tartearen barruko asteko egunak.';
-$string['clientid'] = 'OAuth bezeroaren IDa';
-$string['clientid_desc'] = '<a href="https://github.com/ronefel/moodle-mod_googlemeet/wiki/How-to-create-the-API-key-and-OAuth-client-ID" target="_blank">Nola sortu Api gakoa eta OAuth bezeroaren IDa</a>';
 $string['date'] = 'Data';
 $string['duration'] = 'Iraupena';
 $string['earlierto'] = 'Ekitaldiaren data ezin da ikastaroaren hasiera-data baino lehenagokoa izan ({$a}).';
@@ -53,7 +50,6 @@ $string['emailcontent_help'] = 'Ikasleei jakinarazpen bat bidaltzen zaienean, ed
 $string['entertheroom'] = 'Sartu bilera-gelan';
 $string['eventdate'] = 'Ekitaldiaren data';
 $string['from'] = 'noiztik';
-$string['generateurlroom'] = 'Sortu bilera-gelaren URLa';
 $string['googlemeet:addinstance'] = 'Gehitu Moodlerako Google Meet™ berri bat';
 $string['googlemeet:editrecording'] = 'Editatu grabazioak';
 $string['googlemeet:removerecording'] = 'Ezabatu grabazioak';
@@ -83,15 +79,12 @@ $string['multieventdateexpanded'] = 'Ekitaldi-data errepikakorra zabalduta';
 $string['multieventdateexpanded_desc'] = 'Erakutsi "Ekitaldi-data errepikakorra" ezarpena zabalduta modu lehenetsian bilera-gela berria sortzerakoan.';
 $string['name'] = 'Izena';
 $string['never'] = 'Inoiz ez';
-$string['notfoundrecordingname'] = 'Ez da grabaziorik aurkitu izen horrekin';
-$string['notfoundrecordingsfolder'] = 'Ez da "Meet Recordings" karpeta aurkitu Google Drive-n.';
 $string['notification'] = 'Jakinarazpena';
 $string['notificationexpanded'] = 'Jakinarazpena zabalduta';
 $string['notify'] = 'Bidali jakinarazpena ikasleei';
 $string['notify_help'] = 'Markatuz gero, ikasleei ekitaldiaren hasiera-dataren hasierari buruzko jakinarazpena bidaliko zaie.';
 $string['notifycationexpanded_desc'] = 'Erakutsi zabalduta "Jakinarazpena" ezarpena modu lehenetsian bilera-gela berri bat sortzerakoan.';
 $string['notifytask'] = 'Moodlerako Google Meet™-erako jakinarazpen-ataza';
-$string['notpossiblesync'] = 'Ezin izan da sinkronizatu bilera-gela beste kontu batetik sortu zelako.';
 $string['or'] = 'edo';
 $string['play'] = 'Erreproduzitu';
 $string['pluginadministration'] = 'Moodlerako Google Meet™-en kudeaketa';
@@ -112,7 +105,6 @@ $string['repeatasfollows'] = 'Errepikatu ekitaldiaren datak hurrengo balioen ara
 $string['repeatevery'] = 'Errepikatze-maiztasuna';
 $string['repeaton'] = 'Errepikatze-egunak';
 $string['repeatuntil'] = 'Errepikatze-amaiera';
-$string['requirednamefield'] = 'Idatzi bilera-gelaren izena automatikoki sortu dadin.';
 $string['roomcreator'] = 'Bilera-gelaren sortzailea:';
 $string['roomname'] = 'Bilera-gelaren izena';
 $string['roomurl'] = 'Bilera-gelaren URLa';

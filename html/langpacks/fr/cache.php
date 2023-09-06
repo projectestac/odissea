@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'fr', version '3.11'.
+ * Strings for component 'cache', language 'fr', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -40,6 +40,8 @@ $string['cachedef_calendar_subscriptions'] = 'Abonnements de calendrier';
 $string['cachedef_capabilities'] = 'Liste des capacités système';
 $string['cachedef_completion'] = 'État de complétude d\'activité';
 $string['cachedef_config'] = 'Réglages';
+$string['cachedef_contentbank_allowed_categories'] = 'Catégories de cours de la banque de contenus autorisées pour l\'utilisateur actuel';
+$string['cachedef_contentbank_allowed_courses'] = 'Cours de la banque de contenus autorisés pour l\'utilisateur actuel';
 $string['cachedef_contentbank_context_extensions'] = 'Extensions autorisées et plugins les supportants dans le contexte de la banque de contenus';
 $string['cachedef_contentbank_enabled_extensions'] = 'Extensions autorisées et plugins les supportants dans la banque de contenus';
 $string['cachedef_contextwithinsights'] = 'Contexte avec indications';
@@ -50,10 +52,14 @@ $string['cachedef_coursecatrecords'] = 'Enregistrements des catégories de cours
 $string['cachedef_coursecattree'] = 'Arbre des catégories de cours';
 $string['cachedef_coursecompletion'] = 'État d\'achèvement de cours';
 $string['cachedef_coursecontacts'] = 'Liste des contacts de cours';
+$string['cachedef_courseeditorstate'] = 'Clefs de cache du statut des sessions de cours pour détection des modifications dans l\'interface';
 $string['cachedef_coursemodinfo'] = 'Information accumulée sur les modules et sections de chaque cours';
+$string['cachedef_coursesectionspreferences'] = 'Préférences des sections de cours';
 $string['cachedef_databasemeta'] = 'Méta-information de base de données';
+$string['cachedef_deprecatedcapabilities'] = 'Liste des capacités système dépréciées';
 $string['cachedef_eventinvalidation'] = 'Invalidation de l\'événement';
 $string['cachedef_externalbadges'] = 'Badges externes pour un utilisateur déterminé';
+$string['cachedef_file_imageinfo'] = 'Informations sur le fichier image, p. ex. ses dimensions';
 $string['cachedef_fontawesomeiconmapping'] = 'Correspondance des icônes pour font awesome';
 $string['cachedef_grade_categories'] = 'Requêtes des catégories de notes';
 $string['cachedef_grade_letters'] = 'Requêtes de notes lettre';
@@ -77,6 +83,7 @@ $string['cachedef_postprocessedcss'] = 'CSS post-traité';
 $string['cachedef_presignup'] = 'Données avant inscription pour un utilisateur particulier sans compte.';
 $string['cachedef_questiondata'] = 'Définitions des questions';
 $string['cachedef_recommendation_favourite_course_content_items'] = 'Recommandation d\'éléments de contenu de cours';
+$string['cachedef_reportbuilder_allowed_reports'] = 'Rapports autorisés de l\'utilisateur selon l\'audience';
 $string['cachedef_repositories'] = 'Données d\'instances des dépôts';
 $string['cachedef_roledefs'] = 'Définition des rôles';
 $string['cachedef_string'] = 'Cache des chaînes de caractères traduites';
@@ -91,6 +98,7 @@ $string['cachedef_userselections'] = 'Données utilisées pour conserver les sé
 $string['cachedef_yuimodules'] = 'Modules YUI';
 $string['cachelock_file_default'] = 'Verrouillage de fichier par défaut';
 $string['cachestores'] = 'Entrepôts de cache';
+$string['cacheusage'] = 'Utilisation du cache';
 $string['caching'] = 'Cache';
 $string['canuselocalstore'] = 'Peut utiliser un entrepôt local';
 $string['component'] = 'Composant';
@@ -113,6 +121,7 @@ $string['deletestore'] = 'Supprimer entrepôt';
 $string['deletestoreconfirmation'] = 'Voulez-vous vraiment supprimer l\'entrepôt « {$a} » ?';
 $string['deletestorehasmappings'] = 'Cet entrepôt ne peut pas être supprimé, car il comprend des correspondances. Veuillez supprimer toutes les correspondances avant de supprimer l\'entrepôt';
 $string['deletestoresuccess'] = 'L\'entrepôt de cache a été supprimé';
+$string['editdefinitionmapping'] = 'Modifier une définition de correspondance';
 $string['editdefinitionmappings'] = 'Définition des correspondances de l\'entrepôt {$a}';
 $string['editdefinitionsharing'] = 'Modifier la définition des partages pour {$a}';
 $string['editmappings'] = 'Modifier les correspondances';
@@ -155,8 +164,6 @@ $string['pluginsummaries'] = 'Entrepôts de cache installés';
 $string['privacy:metadata:cachestore'] = 'Le sous-système Cache enregistre temporairement des données pour d\'autres parties de Moodle. Il sert comme cache de données déjà enregistrées ailleurs dans Moodle, et sont donc en principe déjà traitées par ces composants de Moodle. Ces données sont difficilement identifiables et leur durée de vie est très courte.';
 $string['purge'] = 'Purger';
 $string['purgeagain'] = 'Purger à nouveau';
-$string['purgedefinitionsuccess'] = 'La définition requise a été purgée';
-$string['purgestoresuccess'] = 'L\'entrepôt indiqué a été purgé.';
 $string['purgexdefinitionsuccess'] = 'Le cache « {$a->name} » ({$a->component}/{$a->area}) a été purgé correctement.';
 $string['purgexstoresuccess'] = 'Entrepôt « {$a->store} » purgé.';
 $string['requestcount'] = 'Tester avec {$a} requêtes';
@@ -180,7 +187,7 @@ $string['store_default_request'] = 'Entrepôt statique par défaut pour les cach
 $string['store_default_session'] = 'Entrepôt de sessions par défaut pour les caches de sessions';
 $string['storeconfiguration'] = 'Configuration entrepôt';
 $string['storename'] = 'Nom de l\'entrepôt';
-$string['storename_help'] = 'Définit le nom de l\'entrepôt. Ce nom est utilisé pour identifier le dépôt dans le système. Seuls les caractères a-z A-Z 0-9 - _ et des espaces sont autorisés. Le nom doit en outre être unique. Si vous essayez un nom déjà employé, une annonce d\'erreur sera affichée.';
+$string['storename_help'] = 'Définit le nom de l\'entrepôt. Ce nom est utilisé pour identifier le dépôt dans le système. Seuls les caractères a-z A-Z 0-9 - _ et des espaces sont autorisés. Le nom doit en outre être unique. Si vous essayez un nom déjà employé, une erreur sera affichée.';
 $string['storenamealreadyused'] = 'Vous devez spécifier un nom unique pour cet entrepôt.';
 $string['storenameinvalid'] = 'Nom d\'entrepôt non valide. Vous ne pouvez utiliser que les caractères a-z A-Z 0-9 - _ et des espaces.';
 $string['storenotready'] = 'Dépôt pas prêt';
@@ -204,5 +211,14 @@ $string['tested'] = 'Testé';
 $string['testperformance'] = 'Test de performance';
 $string['unsupportedmode'] = 'Mode non supporté';
 $string['untestable'] = 'Non testable';
+$string['updatedefinitionmapping'] = 'Modifier une définition de correspondance';
+$string['updatedefinitionsharing'] = 'Modifier une définition de partage';
+$string['usage_items'] = 'Éléments';
+$string['usage_mean'] = 'Taille moyenne d\'un élément';
+$string['usage_realtotal'] = 'Utilisation réelle (si connue)';
+$string['usage_samples'] = 'Éléments échantillonnés par cache';
+$string['usage_sd'] = 'Écart type';
+$string['usage_total'] = 'Total estimé';
+$string['usage_totalmargin'] = 'Marge d\'erreur (95%)';
 $string['userinputsharingkey'] = 'Clef personnalisée pour le partage';
 $string['userinputsharingkey_help'] = 'Saisissez votre propre clef privée ici. Lorsque vous configurez d\'autres entrepôts sur d\'autres sites avec lesquels vous souhaitez partager les données, assurez-vous que vous y définissez la même clef.';

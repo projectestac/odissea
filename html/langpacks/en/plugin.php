@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'en', version '3.11'.
+ * Strings for component 'plugin', language 'en', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -126,6 +126,8 @@ $string['type_calendartype'] = 'Calendar type';
 $string['type_calendartype_plural'] = 'Calendar types';
 $string['type_contentbank'] = 'Content bank';
 $string['type_contentbank_plural'] = 'Content bank plugins';
+$string['type_contenttype'] = 'Content bank';
+$string['type_contenttype_plural'] = 'Content bank plugins';
 $string['type_coursereport'] = 'Course report';
 $string['type_coursereport_plural'] = 'Course reports';
 $string['type_customfield'] = 'Custom field';
@@ -174,6 +176,8 @@ $string['type_portfolio'] = 'Portfolio';
 $string['type_portfolio_plural'] = 'Portfolios';
 $string['type_profilefield'] = 'Profile field type';
 $string['type_profilefield_plural'] = 'Profile field types';
+$string['type_qbank'] = 'Question bank plugin';
+$string['type_qbank_plural'] = 'Question bank plugins';
 $string['type_qbehaviour'] = 'Question behaviour';
 $string['type_qbehaviour_plural'] = 'Question behaviours';
 $string['type_qformat'] = 'Question import/export format';

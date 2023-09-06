@@ -232,7 +232,8 @@ abstract class info {
      * @return bool True if activity is available for all
      */
     public function is_available_for_all() {
-        if (is_null($this->availability)) {
+        global $CFG;
+        if (is_null($this->availability) || empty($CFG->enableavailability)) {
             return true;
         } else {
             try {
@@ -718,14 +719,14 @@ abstract class info {
      * @return string Correctly formatted info string
      */
     public static function format_info($inforenderable, $courseorid) {
-        global $PAGE;
+        global $PAGE, $OUTPUT;
 
         // Use renderer if required.
         if (is_string($inforenderable)) {
             $info = $inforenderable;
         } else {
-            $renderer = $PAGE->get_renderer('core', 'availability');
-            $info = $renderer->render($inforenderable);
+            $renderable = new \core_availability\output\availability_info($inforenderable);
+            $info = $OUTPUT->render($renderable);
         }
 
         // Don't waste time if there are no special tags.

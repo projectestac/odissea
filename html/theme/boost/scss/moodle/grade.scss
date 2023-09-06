@@ -33,10 +33,9 @@
 
 .path-grade-report-grader {
     #region-main {
-        overflow-x: visible;
         min-width: 100%;
         width: auto;
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
         & > .card {
             width: auto;
@@ -52,12 +51,24 @@
     }
 }
 
-.path-grade-report-grader {
-    span.gradepass {
+.path-grade-report-grader,
+.path-grade-report-user {
+    .gradepass {
         color: $success;
     }
-    span.gradefail {
+    .gradefail {
         color: $danger;
+    }
+}
+
+.path-grade {
+    #region-main {
+        overflow-x: visible;
+    }
+
+    .user-heading .userinitials {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -422,10 +433,6 @@
  */
 .path-grade-report-grader {
     .gradeparent {
-        table {
-            @include border-radius($border-radius);
-        }
-
         tr .cell,
         .floater .cell {
             background-color: $pagination-bg;
@@ -447,6 +454,36 @@
         table .clickable {
             cursor: pointer;
         }
+
+        tr.heading {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        tr.lastrow {
+            position: sticky;
+            bottom: 0;
+            z-index: 1;
+
+            td,
+            th {
+                border-top: 1px solid $table-border-color;
+            }
+        }
+
+        th.header {
+            position: sticky;
+            left: -3rem;
+        }
+
+        td.noborder {
+            border-right: transparent;
+        }
+    }
+
+    .show-drawer-left .gradeparent th.header {
+        left: -1rem;
     }
 }
 
@@ -478,6 +515,63 @@
 /**
  * Single view.
  */
-.path-grade-report-singleview input[name^="finalgrade"] {
-    width: 80px;
+.path-grade-report-singleview .reporttable {
+    input[name^="finalgrade"] {
+        width: 80px;
+        display: inline-block;
+    }
+    .action-menu {
+        display: inline-block;
+        margin-left: 0.5rem;
+        float: right;
+    }
+    .dropdown-toggle::after {
+        display: none;
+    }
+}
+
+.search-widget {
+    .dropdown-menu {
+        padding: 0.8rem 1.2rem;
+
+        &.wide {
+            width: 350px;
+        }
+
+        &.narrow {
+            width: 250px;
+        }
+
+        .dropdown-item {
+            span {
+                &.email {
+                    color: $text-muted;
+                }
+            }
+        }
+
+        .dropdown-item:hover,
+        .dropdown-item:active {
+            span {
+                color: #fff;
+            }
+        }
+
+        .searchresultscontainer {
+            height: 178px;
+            font-size: 90%;
+
+            .searchresultitemscontainer {
+                height: 178px;
+                max-height: 178px;
+                overflow: auto;
+            }
+        }
+
+        .unsearchablecontentcontainer {
+            border-top: 1px solid #dee2e6;
+            padding-top: 10px;
+            font-size: 90%;
+        }
+    }
 }

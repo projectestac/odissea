@@ -377,6 +377,7 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 	static $GRAPH_MODE_BAR_CHART = "barChart";
 	static $GRAPH_MODE_LINE_CHART = "lineChart";
 	static $GRAPH_MODE_PIE_CHART = "pieChart";
+	static $GRAPH_MODE_SKETCH = "sketch";
 	static $PARAM_TEXT_LOGIC_OPERATORS = "textlogicoperators";
 	static $EQUIVALENT_SYMBOLIC = "equivalent_symbolic";
 	static $EQUIVALENT_LITERAL = "equivalent_literal";
@@ -384,6 +385,7 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 	static $EQUIVALENT_FUNCTION = "equivalent_function";
 	static $EQUIVALENT_ALL = "equivalent_all";
 	static $EQUIVALENT_GRAPHIC = "equivalent_graphic";
+	static $EQUIVALENT_SKETCH = "equivalent_sketch";
 	static $EQUIVALENT_SET = "equivalent_set";
 	static $PARAM_TOLERANCE;
 	static $PARAM_RELATIVE_TOLERANCE;
@@ -588,7 +590,7 @@ com_wiris_quizzes_impl_Assertion::$PARAM_TOLERANCE = com_wiris_quizzes_api_Quizz
 com_wiris_quizzes_impl_Assertion::$PARAM_RELATIVE_TOLERANCE = com_wiris_quizzes_api_QuizzesConstants::$OPTION_RELATIVE_TOLERANCE;
 com_wiris_quizzes_impl_Assertion::$PARAM_TOLERANCE_DIGITS = com_wiris_quizzes_api_QuizzesConstants::$OPTION_TOLERANCE_DIGITS;
 com_wiris_quizzes_impl_Assertion::$syntactic = new _hx_array(array(com_wiris_quizzes_impl_Assertion::$SYNTAX_MATH, com_wiris_quizzes_impl_Assertion::$SYNTAX_GRAPHIC, com_wiris_quizzes_impl_Assertion::$SYNTAX_STRING));
-com_wiris_quizzes_impl_Assertion::$equivalent = new _hx_array(array(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SYMBOLIC, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_EQUATIONS, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_ALL, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_GRAPHIC));
+com_wiris_quizzes_impl_Assertion::$equivalent = new _hx_array(array(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SYMBOLIC, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_EQUATIONS, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_ALL, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_GRAPHIC, com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SKETCH));
 com_wiris_quizzes_impl_Assertion::$structure = new _hx_array(array(com_wiris_quizzes_impl_Assertion::$CHECK_SYMBOLIC, com_wiris_quizzes_impl_Assertion::$CHECK_SCIENTIFIC_NOTATION, com_wiris_quizzes_impl_Assertion::$CHECK_DECIMAL_NOTATION));
 com_wiris_quizzes_impl_Assertion::$checks = new _hx_array(array(com_wiris_quizzes_impl_Assertion::$CHECK_SIMPLIFIED, com_wiris_quizzes_impl_Assertion::$CHECK_EXPANDED, com_wiris_quizzes_impl_Assertion::$CHECK_FACTORIZED, com_wiris_quizzes_impl_Assertion::$CHECK_RATIONALIZED, com_wiris_quizzes_impl_Assertion::$CHECK_NO_COMMON_FACTOR, com_wiris_quizzes_impl_Assertion::$CHECK_MINIMAL_RADICANDS, com_wiris_quizzes_impl_Assertion::$CHECK_DIVISIBLE, com_wiris_quizzes_impl_Assertion::$CHECK_COMMON_DENOMINATOR, com_wiris_quizzes_impl_Assertion::$CHECK_UNIT, com_wiris_quizzes_impl_Assertion::$CHECK_UNIT_LITERAL, com_wiris_quizzes_impl_Assertion::$CHECK_PRECISION, com_wiris_quizzes_impl_Assertion::$CHECK_NO_SUPERFLUOUS, com_wiris_quizzes_impl_Assertion::$CHECK_COLOR, com_wiris_quizzes_impl_Assertion::$CHECK_LINESTYLE, com_wiris_quizzes_impl_Assertion::$CHECK_EQUIVALENT_UNITS));
 com_wiris_quizzes_impl_Assertion::$BASIC_UNITS_LIST = "m, s, g, A, K, mol, cd, rad, sr, h, min, l, N, Pa, Hz, W, J, C, V, " . com_wiris_quizzes_impl_Assertion_3() . ", F, S, Wb, b, H, T, lx, lm, Gy, Bq, Sv, kat";

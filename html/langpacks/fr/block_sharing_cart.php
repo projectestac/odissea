@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_sharing_cart', language 'fr', version '3.11'.
+ * Strings for component 'block_sharing_cart', language 'fr', version '4.1'.
  *
  * @package     block_sharing_cart
  * @category    string
@@ -49,6 +49,7 @@ $string['copy_section_title'] = 'Copier la section sélectionnée';
 $string['copyhere'] = 'Coller ici';
 $string['define_required_capabilities'] = 'Veuillez définir les capacités requises';
 $string['delete_folder'] = 'et tout son contenu';
+$string['drop_here'] = 'Déposer ici..';
 $string['folder_string'] = 'Dossier :';
 $string['forbidden'] = 'Vous n\'avez pas l\'autorisation d\'accéder à cet élément';
 $string['inprogess_pleasewait'] = 'Veuillez patienter…';
@@ -83,6 +84,14 @@ $string['requirejs'] = 'Le panier d\'activités nécessite l\'activation de Java
 $string['restore'] = 'Coller dans le cours';
 $string['restore_heavy_load_warning_message'] = 'Les durées de chargement sont plus longues, car plus de 10 activités / ressources sont en cours de traitement.';
 $string['section_name_conflict'] = 'Conflit de titre de section';
+$string['settings:add_to_sharing_cart'] = 'Ajouter au panier partagé';
+$string['settings:add_to_sharing_cart_desc'] = 'Choisissez entre le glisser-déposer ou cliquez pour ajouter une méthode pour ajouter des modules et des sections au panier de partage. -
+La méthode « Cliquer pour ajouter » est la méthode standard dans le panier partagé, où vous devez cliquer sur l\'icône du panier, avant qu\'il ne soit ajouté au panier de partage. -
+Le « Glisser-déposer » vous permet de glisser-déposer des modules/activités et sections dans le bloc du panier de partage ou dans l\'icône du panier dans le pied de page. Veuillez noter que ceci n\'est pris en charge que pour Moodle 4.0+';
+$string['settings:click_to_add'] = 'Cliquez pour ajouter';
+$string['settings:drag_and_drop'] = 'Glisser déposer';
+$string['settings:show_copy_section_in_block'] = 'Afficher la « Section Copier » dans le bloc';
+$string['settings:show_copy_section_in_block_desc'] = 'Afficher la « Section Copier » dans le bloc du panier partagé, sous tous les modules/activités';
 $string['settings:userdata_copyable_modtypes'] = 'Type de module avec données utilisateur copiables';
 $string['settings:userdata_copyable_modtypes_desc'] = 'Lors de la copie d\'une activité dans le panier d\'activités, une boîte de dialogue affiche une option si une copie d\'une activité comprend les données utilisateur ou non, si ce type de module est coché ci-dessus et qu\'un opérateur a les capacités <strong>moodle/backup:userinfo</strong>, <strong>moodle/backup:anonymise</strong> et <strong>moodle/restore:userinfo</strong> (par défaut, seul le rôle de gestionnaire a ces capacités.)';
 $string['settings:workaround_qtypes'] = 'Solution pour les types de questions';
@@ -95,7 +104,7 @@ $string['sharing_cart_help'] = '<div>
  <strong>Copier un élément du cours vers le panier d\'activités</strong>
 <p>Dans le menu contextuel de l\'activité ou de la ressource, vous verrez apparaitre la fonction "Copier dans le panier d\'activités".  Cliquez sur cette fonction pour envoyer une copie de la ressource/activité vers le panier d\'activités. L\'élément sera copié dans le panier. Suivant le type d\'élément copié, il vous sera parfois demandé si vous souhaitez y inclure les données utilisateurs. L\'élément sera copié avec ou sans données utilisateurs.</p>
  <strong>Coller un élément du panier d\'activités vers le cours  </strong>
-<p>Depuis le bloc panier d\'activités, cliquez sur l\'icône "Coller dans le cours" de l\'activité/ressource souhaitée et indiquez sur quelle section vous souhaitez coller l\'élément. Pour annuler la copie, cliquez sur l\'icône "Annuler" dans l\'entête du cours.</p>
+<p>Depuis le bloc panier d\'activités, cliquez sur l\'icône "Coller dans le cours" de l\'activité/ressource souhaitée et indiquez sur quelle section vous souhaitez coller l\'élément. Pour annuler la copie, cliquez sur l\'icône "Annuler" dans l\'en-tête du cours.</p>
 <strong>Créer des répertoires au sein du panier d\'activités</strong>
 <p>Cliquez sur l\'icône "Déplacer dans un dossier" de l\'élément que vous souhaitez déplacer.  Si vous n\'avez pas de dossier sur le panier, vous serez invité à saisir le nom du nouveau dossier à créer.  Si vous avez déjà des dossiers sur votre panier, vous pouvez sélectionner un dossier existant dans la liste déroulante.   Pour basculer sur le champ de saisie d\'un nouveau nom de dossier, cliquez sur l\'icône "Modifier".</p>
 </div>';

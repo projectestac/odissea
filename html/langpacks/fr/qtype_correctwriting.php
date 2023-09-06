@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_correctwriting', language 'fr', version '3.11'.
+ * Strings for component 'qtype_correctwriting', language 'fr', version '4.1'.
  *
  * @package     qtype_correctwriting
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['parseerror'] = 'Erreur lors de l\'analyse ! Veuillez re-vérifier votre réponse et la corriger';
+$string['pluginname_link'] = 'question/type/correctwriting';

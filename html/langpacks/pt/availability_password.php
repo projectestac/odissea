@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_password', language 'pt', version '3.11'.
+ * Strings for component 'availability_password', language 'pt', version '4.1'.
  *
  * @package     availability_password
  * @category    string

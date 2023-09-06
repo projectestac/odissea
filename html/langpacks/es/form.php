@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'es', version '3.11'.
+ * Strings for component 'form', language 'es', version '4.1'.
  *
  * @package     form
  * @category    string
@@ -84,7 +84,7 @@ $string['selecteditems'] = 'Ítems seleccioandos:';
 $string['showadvanced'] = 'Mostrar avanzadas';
 $string['showless'] = 'Ver menos...';
 $string['showmore'] = 'Mostrar más...';
-$string['somefieldsrequired'] = 'En este formulario hay campos obligatorios {$a}.';
+$string['somefieldsrequired'] = '{$a} Requerido';
 $string['suggestions'] = 'Sugerencias';
 $string['time'] = 'Tiempo';
 $string['timeunit'] = 'Unidad de tiempo';

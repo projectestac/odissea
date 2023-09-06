@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ca', version '3.11'.
+ * Strings for component 'webservice', language 'ca', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -65,7 +65,6 @@ $string['deletetokenconfirm'] = 'Voleu realment suprimir el token de sevei web p
 $string['disabledwarning'] = 'Tots els protocols de serveis web estan inhabilitats. Podeu trobar el paràmetre «Habilita els serveis web» a Característiques avançades.';
 $string['doc'] = 'Documentació';
 $string['docaccessrefused'] = 'No esteu habilitat per a veure la documentació per aquest token.';
-$string['documentation'] = 'documentació del serveis web';
 $string['downloadfiles'] = 'Es poden baixar fitxers';
 $string['downloadfiles_help'] = 'Si està activat, qualsevol usuari pot descarregar fitxers amb les seves claus de seguretat. Per descomptat que es limita als fitxers que cada usuari pugui descarregar-se del lloc.';
 $string['editaservice'] = 'Edita servei';

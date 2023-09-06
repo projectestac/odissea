@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_fn_mentor', language 'el', version '3.11'.
+ * Strings for component 'block_fn_mentor', language 'el', version '4.1'.
  *
  * @package     block_fn_mentor
  * @category    string
@@ -120,7 +120,7 @@ $string['followingstudentsmatch'] = 'Οι ακόλουθοι μαθητές αυ
 $string['followinguserssend'] = 'Εάν αυτός ο κανόνας εκτελεστεί τώρα, ο Διαχειριστής Καθοδηγητών θα προσπαθήσει να στείλει ειδοποιήσεις στους ακόλουθους χρήστες. Σημειώστε ότι το χρώμα του ονόματος υποδεικνύει το ρόλο αυτού του χρήστη: Πράσινο = μαθητής,
 Μπλε = καθοδηγητής, Κόκκινο = διδάσκων.';
 $string['g2'] = 'Βαθμός μαθήματος';
-$string['g2_message'] = 'Ο/Η {$a->firstname} έχει ένα γενικό μέσο όρο βαθμολογίας μαθήματος {$a->g2}.';
+$string['g2_message'] = 'Ο/Η {$a->firstname} έχει ένα γενικό μέσο όρο βαθμών μαθημάτων {$a->g2}.';
 $string['g4'] = 'Βαθμός μαθήματος κάτω από {$a}%';
 $string['g4_message'] = 'Ο/Η {$a->firstname} έχει γενικό μέσο όρο βαθμών μαθημάτων {$a->g4}%.';
 $string['g6'] = 'Βαθμός μαθήματος πάνω από {$a}%';
@@ -254,7 +254,7 @@ $string['showallmentors'] = 'Εμφάνιση όλων των Καθοδηγητ
 $string['showallstudents'] = 'Εμφάνιση επιλογής «Όλοι οι μαθητές» στο μενού';
 $string['showallteachers'] = 'Εμφάνιση όλων των διδασκόντων';
 $string['showgradestatus'] = 'Εμφάνιση κατάστασης βαθμολογίας';
-$string['showsitegroups'] = 'Εμφάνιση ρύθμισης επιλογής ομάδων ιστότοπων';
+$string['showsitegroups'] = 'Εμφάνιση ρύθμισης επιλογής ομάδων ιστοτόπων';
 $string['sirmadam'] = 'Κύριε/Κυρία';
 $string['sms'] = 'Sms';
 $string['smserror'] = '..........SMS[ΣΦΑΛΜΑ]';

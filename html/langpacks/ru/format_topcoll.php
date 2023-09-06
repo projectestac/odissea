@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'ru', version '3.11'.
+ * Strings for component 'format_topcoll', language 'ru', version '4.1'.
  *
  * @package     format_topcoll
  * @category    string

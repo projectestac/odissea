@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'it', version '3.11'.
+ * Strings for component 'auth_ldap', language 'it', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -78,7 +78,7 @@ $string['auth_ldap_passwdexpire_settings'] = 'Impostazione scadenza password LDA
 $string['auth_ldap_preventpassindb'] = 'Selezionare Si per evitare il salvataggio delle password nel database di Moodle.';
 $string['auth_ldap_preventpassindb_key'] = 'Evita il caching delle password';
 $string['auth_ldap_rolecontext'] = 'Contesto {$a->localname}';
-$string['auth_ldap_rolecontext_help'] = 'Il contesto LDAP utilizzato per la mappatura dei <i>{$a->localname}</i>. In presenza di più gruppi separarli con \';\'. Di solito "cn={$a->shortname},ou=staff,o=myorg".';
+$string['auth_ldap_rolecontext_help'] = 'Contesto LDAP utilizzato per selezionare la mappatura di <i>{$a->localname}</i>. Separare più gruppi con \';\', ad esempio: "cn={$a->shortname},ou=first-ou-with-role-groups,o=myorg; cn={$a->shortname},ou=second-ou-with -ruolo-gruppi,o=myorg".';
 $string['auth_ldap_search_sub'] = 'Cerca gli utenti anche nei sotto-contesti.';
 $string['auth_ldap_search_sub_key'] = 'Cerca nei sotto-contesti';
 $string['auth_ldap_server_settings'] = 'Impostazioni server LDAP';
@@ -128,6 +128,10 @@ $string['diag_toooldversion'] = 'È improbabile che un server LDAP moderno possa
 $string['didntfindexpiretime'] = 'password_expire() non ha trovato la data di scadenza.';
 $string['didntgetusersfromldap'] = 'LDAP non ha restituito nessun acccount -- un errore ? --';
 $string['gotcountrecordsfromldap'] = 'LDAP ha restituito {$a} record';
+$string['invalidusererrors'] = 'Attenzione: la creazione di {$a} account utente è stata saltata';
+$string['invaliduserexception'] = 'Errore: non è possibile creare l\'account utente. Dettagli e motivazioni:
+{$a}
+L\'utente è stato saltato.';
 $string['ldapnotconfigured'] = 'L\'URL dell\'host LDAP non è configurata';
 $string['morethanoneuser'] = 'LDAP ha restituito più account dello stesso utente. Verrà usato il primo.';
 $string['needbcmath'] = 'Per verificare le password scadute su Active Directory occorre l\'estensione BCMath';
@@ -161,7 +165,6 @@ $string['updatepasserrorexpire'] = 'Si è verificato un errore in user_update_pa
 $string['updatepasserrorexpiregrace'] = 'Errore in user_update_password() durante la modifica della data di scadenza e/o gracelogin. Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updateremfail'] = 'Errore durante l\'aggiornamento del record LDAP. Error code: {$a->errno}; Error string: {$a->errstring}<br/>Key ({$a->key}) - valore moodle precedente: \'{$a->ouvalue}\' nuovo valore: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Errore durante l\'aggiornamento LDAP con il campo ambiguo {$a->key}; valore moodle precedente: \'{$a->ouvalue}\' nuovo valore: \'{$a->nuvalue}\'';
-$string['updateremfailfield'] = 'Si è verificato un errore durante l\'aggiornamento di LDAP con il campo inesistente (\'{$a->ldapkey}\'). Chiave ({$a->key}) - valore precedente di Moodle: \'{$a->ouvalue}\' nuovo valore: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'L\'utente non è stato trovato durante l\'aggiornamento dei dati esterni. Dettagli: search base: \'{$a->userdn}\'; search filter: \'(objectClass=*)\'; search attributes: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() non supporta il tipo di utente scelto: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() non supporta il tipo di utente scelto: {$a}';

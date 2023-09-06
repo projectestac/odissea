@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'es', version '3.11'.
+ * Strings for component 'block', language 'es', version '4.1'.
  *
  * @package     block
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = 'Minimizar en la barra lateral';
 $string['anypagematchingtheabove'] = 'Cualquier página coincidente con la de arriba';
 $string['appearsinsubcontexts'] = 'Aparece en subcontextos';
 $string['assignrolesinblock'] = 'Asignar roles en el bloque {$a}';
@@ -43,12 +42,12 @@ $string['defaultregion_help'] = 'Los temas pueden definir una o más regiones de
 $string['defaultweight'] = 'Peso por defecto';
 $string['defaultweight_help'] = 'El peso por defecto permite escoger aproximadamente dónde quiere que aparezca el bloque en la región escogida, bien arriba del todo o abajo del todo. La ubicación final se calcula a partir de todos los bloques en esa región (por ejemplo, sólo un bloque puede estar arriba del todo). Este valor puede ser anulado en páginas específicas si es necesario.';
 $string['deleteblock'] = 'Eliminar bloque {$a}';
-$string['deleteblockcheck'] = '¿Seguro que desea eliminar el bloque {$a}?';
+$string['deleteblockcheck'] = 'Esto eliminará el bloque {$a}.';
+$string['deleteblockinprogress'] = 'Eliminación del bloque {$a} en curso...';
 $string['deleteblockwarning'] = '<p> Está a punto de borrar un bloque que aparece en otra parte. </p><p> La ubicación original del bloque es: {$a->location} <br /> Mostrar el tipo de página: {$a->pagetype} </p><p> ¿Está seguro que desea continuar? </p>';
 $string['deletecheck'] = '¿Eliminar el bloque {$a}?';
-$string['dockblock'] = 'Acoplar bloque {$a}';
+$string['deletecheck_modal'] = '¿Eliminar bloque?';
 $string['hideblock'] = 'Ocultar bloque {$a}';
-$string['hidedockpanel'] = 'Esconder el panel desacoplado';
 $string['hidepanel'] = 'Esconder panel';
 $string['moveblock'] = 'Mover bloque {$a}';
 $string['moveblockafter'] = 'Mover bloque detrás del bloque {$a}';
@@ -69,13 +68,10 @@ $string['showblock'] = 'Mostrar el bloque {$a}';
 $string['showoncontextandsubs'] = 'Mostrar en \'{$a}\' y en cualquier página dentro de ella';
 $string['showoncontextonly'] = 'Mostrar sólo en \'{$a}\'';
 $string['showonentiresite'] = 'Mostrar en todo el sitio';
-$string['showonfrontpageandsubs'] = 'Mostrar en la página principal y en cualquier página agregada a ésta';
+$string['showonfrontpageandsubs'] = 'Mostrar en la página principal y en cualquier página añadida a ésta.';
 $string['showonfrontpageonly'] = 'Mostrar sólo en la página principal';
 $string['subpages'] = 'Seleccionar páginas';
 $string['thisspecificpage'] = 'Esta página específica';
-$string['undockall'] = 'Desacoplar todo';
-$string['undockblock'] = 'Desacoplar bloque {$a}';
-$string['undockitem'] = 'Desacoplar este ítem';
 $string['visible'] = 'Visible';
 $string['weight'] = 'Peso';
 $string['wherethisblockappears'] = 'Dónde aparece este bloque';

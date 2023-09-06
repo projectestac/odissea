@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'eu', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'eu', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -40,11 +40,13 @@ $string['layoutselectinline'] = 'Zabaltzen den menua testuaren barruan';
 $string['layoutundefined'] = 'Definitu gabeko diseinua';
 $string['layoutvertical'] = 'Aukera bakarreko botoietako zutabe bertikala';
 $string['missingsubquestion'] = 'Zure sisteman azpi-galdera hau falta da eta ondorioz ezin da erakutsi.';
+$string['multichoicex'] = '{$a}. aukera anitza';
 $string['nooptionsforsubquestion'] = 'Ezin da {$a->sub}. galderaren zatirako aukerarik lortu (galdera->id={$a->id})';
 $string['noquestions'] = 'Txertatutako erantzunak (Cloze) motako "<strong>{$a}</strong>" galderak ez dauka galderarik definituta';
 $string['pleaseananswerallparts'] = 'Mesedez, erantzun galderaren atal guztiei';
 $string['pluginname'] = 'Txertatutako erantzunak (Cloze)';
 $string['pluginname_help'] = 'Txertatutako erantzunak (Cloze) motako galderetan testu bat aurkezten da eta horren baitan aukera anizkoitzeko erantzunak edo txertatutako erantzunak daude.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnameadding'] = 'Txertatutako erantzuna (Cloze) motako galdera gehitzen';
 $string['pluginnameediting'] = 'Editatu Txertatutako erantzuna (Cloze) motako galdera';
 $string['pluginnamesummary'] = 'Mota honetako galderak oso malguak dira, eta aukera anizkoitzeko, erantzun laburreko eta zenbakizko galdera txertatuak sortzen dituzten kode bereziak dituen testua gehituta soilik sor daitezke.';
@@ -66,6 +68,7 @@ $string['questionsmore'] = 'Erantzun anizkoitzeko galderan baino {$a} galdera ge
 $string['questiontypechanged'] = 'Galdera mota aldatu da';
 $string['questiontypechangedcomment'] = 'Gutxienez galdera baten mota aldatua izan da. <br/>Galderaren bat gehitu, ezabatu edo mugitu duzu?<br/> Aurrera begiratu.';
 $string['questionusedinquiz'] = 'Galdera hau {$a->nb_of_quiz} galdetegitan erabiltzen da, saiakerak guztira: {$a->nb_of_attempts}';
+$string['regradeissuenumsubquestionschanged'] = 'Galderan txertatutako azpigaldera kopurua aldatu da.';
 $string['storedqtype'] = 'Gordetako galdera mota: {$a}';
 $string['subqresponse'] = '{$a->i}. zatia: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Galdera mota ezezaguna: {$a->sub}. galdera-zatiaren {$a->type}';

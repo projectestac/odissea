@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ar', version '3.11'.
+ * Strings for component 'tool_monitor', language 'ar', version '4.1'.
  *
  * @package     tool_monitor
  * @category    string
@@ -30,7 +30,7 @@ $string['allevents'] = 'كل الأحداث';
 $string['allmodules'] = 'كل العينات';
 $string['area'] = 'المنطقة';
 $string['areatomonitor'] = 'منطقة المراقبة';
-$string['cachedef_eventsubscriptions'] = 'هذا يخزن قائمة اشتراكات الحدث للمقررات الفردية';
+$string['cachedef_eventsubscriptions'] = 'هذا يخزن قائمة اشتراكات الحدث للمساقات الفردية';
 $string['contactadmin'] = 'اتصل بالمسؤول الخاص بك لتمكينها.';
 $string['core'] = 'النواة';
 $string['currentsubscriptions'] = 'اشتراكاتك الحالية';
@@ -73,6 +73,7 @@ $string['messagetemplate_help'] = 'يتم إرسال رسالة إشعار إل�
 * اسم القاعدة {rulename}
 * الوصف {description}
 * الحدث {eventname}';
+$string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'العينة';
 $string['monitor:managerules'] = 'إدارة قواعد مراقبة الحدث';
 $string['monitor:managetool'] = 'تمكين / تعطيل مراقبة الأحداث';
@@ -93,7 +94,7 @@ $string['privacy:metadata:name'] = 'اسم القاعدة';
 $string['privacy:metadata:plugin'] = 'الاسم الفرانكستلي للملحق';
 $string['privacy:metadata:rulessummary'] = 'هذا يخزن قواعد المراقبة';
 $string['privacy:metadata:subscriptionssummary'] = 'يخزن اشتراكات المستخدم للقواعد المختلفة';
-$string['privacy:metadata:template'] = 'قالب الرسالة';
+$string['privacy:metadata:template'] = 'مظهر الرسالة';
 $string['privacy:metadata:timecreatedrule'] = 'متى تم إنشاء هذه القاعدة';
 $string['privacy:metadata:timecreatedsub'] = 'متى تم إنشاء هذا الاشتراك';
 $string['privacy:metadata:timemodifiedrule'] = 'متى تم تعديل هذه القاعدة آخر مرة';
@@ -114,7 +115,7 @@ $string['rulename'] = 'اسم القاعدة';
 $string['rulenopermission'] = 'ليس لديك إذن للاشتراك في أي أحداث.';
 $string['rulenopermissions'] = 'ليس لديك أذونات لـ "{$a} قاعدة"';
 $string['rulescansubscribe'] = 'القواعد التي يمكنك الاشتراك فيها';
-$string['selectacourse'] = 'إختر المقرر الدراسي';
+$string['selectacourse'] = 'إختر المساق';
 $string['selectcourse'] = 'تفضل بزيارة هذا التقرير على مستوى المادة للحصول على قائمة بالوحدات النمطية الممكنة';
 $string['subareyousure'] = 'هل أنت متأكد من أنك تريد حذف الاشتراك في القاعدة "{$a}"؟';
 $string['subcreatesuccess'] = 'تم إنشاء الاشتراك بنجاح';

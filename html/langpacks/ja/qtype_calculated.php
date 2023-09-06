@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'ja', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'ja', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -55,6 +55,7 @@ $string['deletelastitem'] = '最終アイテムを削除する';
 $string['distributionoption'] = '分布オプションを選択する';
 $string['editdatasets'] = 'ワイルドカードデータセットを編集する';
 $string['editdatasets_help'] = 'ワイルドカード値はそれぞれのワイルドカードフィールドに数値を入力した後、追加ボタンをクリックして作成することができます。10以上の値を生成するには追加ボタンをクリックする前に必要な値の生成数を選択してください。一様分布は値域の数値が同程度に生成されることを意味します。対数一様分布は下限の数値が生成されやすいことを意味します。';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = '既存の共有データセットを使用する';
 $string['existingcategory2'] = 'このカテゴリ内の他の問題ですでに使用されている既存のファイルセットのファイル';
 $string['existingcategory3'] = 'このカテゴリ内の他の問題ですでに使用されている既存のリンクセットのリンク';
@@ -111,6 +112,7 @@ $string['param'] = '変数 {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = '部分的に正しい解答すべて';
 $string['pluginname'] = '計算問題';
 $string['pluginname_help'] = '計算問題では小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。例えば「高さ {l} 、幅 {w} の長方形の面積は?」という問題があったとして正解は {={l}*{w}} ( * は乗算を意味します) のようになります。';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = '計算問題の追加';
 $string['pluginnameediting'] = '計算問題の編集';
 $string['pluginnamesummary'] = '計算問題は数値問題に似ていますが、小テスト受験時、設定された数値がランダムに使用されます。';

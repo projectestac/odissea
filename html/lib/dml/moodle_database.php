@@ -52,6 +52,10 @@ define('SQL_QUERY_STRUCTURE', 4);
 /** SQL_QUERY_AUX - Auxiliary query done by driver, setting connection config, getting table info, etc. */
 define('SQL_QUERY_AUX', 5);
 
+/** SQL_QUERY_AUX_READONLY - Auxiliary query that can be done using the readonly connection:
+ * database parameters, table/index/column lists, if not within transaction/ddl. */
+define('SQL_QUERY_AUX_READONLY', 6);
+
 /**
  * Abstract class representing moodle database interface.
  * @link http://docs.moodle.org/dev/DML_functions
@@ -414,9 +418,11 @@ abstract class moodle_database {
 
     /**
      * This should be called before each db query.
+     *
      * @param string $sql The query string.
      * @param array|null $params An array of parameters.
-     * @param int $type The type of query. ( SQL_QUERY_SELECT | SQL_QUERY_AUX | SQL_QUERY_INSERT | SQL_QUERY_UPDATE | SQL_QUERY_STRUCTURE )
+     * @param int $type The type of query ( SQL_QUERY_SELECT | SQL_QUERY_AUX_READONLY | SQL_QUERY_AUX |
+     *                  SQL_QUERY_INSERT | SQL_QUERY_UPDATE | SQL_QUERY_STRUCTURE ).
      * @param mixed $extrainfo This is here for any driver specific extra information.
      * @return void
      */
@@ -433,6 +439,7 @@ abstract class moodle_database {
         switch ($type) {
             case SQL_QUERY_SELECT:
             case SQL_QUERY_AUX:
+            case SQL_QUERY_AUX_READONLY:
                 $this->reads++;
                 break;
             case SQL_QUERY_INSERT:
@@ -483,6 +490,7 @@ abstract class moodle_database {
         switch ($type) {
             case SQL_QUERY_SELECT:
             case SQL_QUERY_AUX:
+            case SQL_QUERY_AUX_READONLY:
                 throw new dml_read_exception($error, $sql, $params);
             case SQL_QUERY_INSERT:
             case SQL_QUERY_UPDATE:
@@ -2163,6 +2171,17 @@ abstract class moodle_database {
     }
 
     /**
+     * Return SQL for casting to char of given field/expression. Default implementation performs implicit cast using
+     * concatenation with an empty string
+     *
+     * @param string $field Table field or SQL expression to be cast
+     * @return string
+     */
+    public function sql_cast_to_char(string $field): string {
+        return $this->sql_concat("''", $field);
+    }
+
+    /**
      * Returns the SQL to be used in order to CAST one CHAR column to INTEGER.
      *
      * Be aware that the CHAR column you're trying to cast contains really
@@ -2333,6 +2352,19 @@ abstract class moodle_database {
      */
     public function sql_order_by_text($fieldname, $numchars=32) {
         return $fieldname;
+    }
+
+    /**
+     * Returns the SQL text to be used to order by columns, standardising the return
+     * pattern of null values across database types to sort nulls first when ascending
+     * and last when descending.
+     *
+     * @param string $fieldname The name of the field we need to sort by.
+     * @param int $sort An order to sort the results in.
+     * @return string The piece of SQL code to be used in your statement.
+     */
+    public function sql_order_by_null(string $fieldname, int $sort = SORT_ASC): string {
+        return $fieldname . ' ' . ($sort == SORT_ASC ? 'ASC' : 'DESC');
     }
 
     /**

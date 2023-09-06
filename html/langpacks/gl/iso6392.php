@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'iso6392', language 'gl', version '3.11'.
+ * Strings for component 'iso6392', language 'gl', version '4.1'.
  *
  * @package     iso6392
  * @category    string
@@ -31,7 +31,7 @@ $string['ace'] = 'Achinés';
 $string['ach'] = 'Acoli';
 $string['ada'] = 'Adangme';
 $string['ady'] = 'Adyghe; Adygei';
-$string['afa'] = 'Linguas afro-asiaticas';
+$string['afa'] = 'Linguas afro-asiáticas';
 $string['afh'] = 'Afrihili';
 $string['afr'] = 'Africáner';
 $string['ain'] = 'Ainu';
@@ -69,10 +69,10 @@ $string['ban'] = 'Balinés';
 $string['bas'] = 'Basa';
 $string['bat'] = 'Linguas Balticas';
 $string['bej'] = 'Beja; Bedawiyet';
-$string['bel'] = 'Bieloruso';
+$string['bel'] = 'Belaruso';
 $string['bem'] = 'Bemba';
 $string['ben'] = 'Bengalí';
-$string['ber'] = 'Linguas bereberes';
+$string['ber'] = 'Lingua bérber';
 $string['bho'] = 'Bhojpuri';
 $string['bih'] = 'Linguas Bihari';
 $string['bik'] = 'Bikol';
@@ -191,7 +191,7 @@ $string['gsw'] = 'Suízo alemán; Alemánico; Alsaciano';
 $string['guj'] = 'Guxaratí';
 $string['gwi'] = 'Gwich\'in';
 $string['hai'] = 'Haida';
-$string['hat'] = 'Haitiano; Crioulo haitiano';
+$string['hat'] = 'haitiano; Crioulo haitiano';
 $string['hau'] = 'Hausa';
 $string['haw'] = 'Hawaiiano';
 $string['heb'] = 'Hebreo';
@@ -217,7 +217,7 @@ $string['ile'] = 'Interlingua; Occidental';
 $string['ilo'] = 'Iloko';
 $string['ina'] = 'Interlingua (IALA)';
 $string['inc'] = 'Linguas Índicas';
-$string['ind'] = 'Indonesio';
+$string['ind'] = 'indonesio';
 $string['ine'] = 'Linguas Indo-europeas';
 $string['inh'] = 'Ingush';
 $string['ipk'] = 'Inupiaq';
@@ -237,7 +237,7 @@ $string['kal'] = 'Kalaallisut; Greenlandés';
 $string['kam'] = 'Kamba';
 $string['kan'] = 'Canada';
 $string['kar'] = 'Linguas Karen';
-$string['kas'] = 'Caxemir';
+$string['kas'] = 'Casimir';
 $string['kat'] = 'Xeorxiano';
 $string['kau'] = 'Kanuri';
 $string['kaw'] = 'Kawi';

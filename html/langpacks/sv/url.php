@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'sv', version '3.11'.
+ * Strings for component 'url', language 'sv', version '4.1'.
  *
  * @package     url
  * @category    string
@@ -52,10 +52,12 @@ $string['indicator:cognitivedepth'] = 'URL kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en URL-resurs.';
 $string['indicator:cognitivedepthdef'] = 'URL kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av URL-resurserna under detta analysintervall (Nivåer = Ingen visning, Visa)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'URL social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en URL-resurs.';
 $string['indicator:socialbreadthdef'] = 'URL social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av URL-resurserna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidstoredurl'] = 'Kan inte visa, angiven URL är ogiltig.';
 $string['invalidurl'] = 'Angiven URL är ogiltig';
 $string['modulename'] = 'URL';
@@ -64,6 +66,7 @@ $string['modulename_help'] = 'Modulen <em>URL</em> gör det möjligt för en lä
 Det finns ett antal visningsalternativ för webbadressen, till exempel inbäddad eller att den öppnas i ett nytt fönster och avancerade alternativ för att skicka information, till exempel en deltagares namn, till webbadressen om det behövs.
 
 Observera att webbadresser även kan läggas till i någon annan resurs eller aktivitetstyp via textredigeraren.';
+$string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = 'URL:er';
 $string['page-mod-url-x'] = 'Valfri URL modulsida';
 $string['parameterinfo'] = '&amp;parameter=variabel';

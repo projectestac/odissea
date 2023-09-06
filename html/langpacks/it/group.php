@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'it', version '3.11'.
+ * Strings for component 'group', language 'it', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -87,6 +87,7 @@ $string['eventgroupmemberadded'] = 'Inserimento membro nel gruppo';
 $string['eventgroupmemberremoved'] = 'Rimozione membro dal gruppo';
 $string['eventgroupupdated'] = 'Aggiornamento gruppo';
 $string['existingmembers'] = 'Membri esistenti: <b>{$a}</b>';
+$string['exportgroupsgroupings'] = 'Scarica gruppi e raggruppamenti come';
 $string['filtergroups'] = 'Filtra gruppi per:';
 $string['group'] = 'Gruppo';
 $string['groupaddedsuccesfully'] = 'Gruppo {$a} aggiunto correttamente';
@@ -145,6 +146,7 @@ $string['importgroups_help'] = 'È possibile importare gruppi attraverso un file
 * il primo record deve contenere l\'elenco dei nomi dei campi che definiscono il formato del dati presenti nel resto del file
 * il campo groupname è obbligatorio
 * i campi groupidnumber, description, enrolmentkey, groupingname ed enablemessaging sono facoltativi.';
+$string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Includi solo iscrizioni attive';
 $string['includeonlyactiveenrol_help'] = 'Consente di escludere dai gruppi gli utenti sospesi.';
 $string['javascriptrequired'] = 'Questa pagina richiede Javascript abilitato';

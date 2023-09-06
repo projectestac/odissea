@@ -271,38 +271,43 @@ function rcontent_update_grades($rcontent=null, $userid=0, $nullifnone=true) {
     }
 }
 
-
-//MARSUPIAL ********** AFEGIT -> Reference to supports
-//2011.12.10 @abertranb
+// MARSUPIAL ********** AFEGIT - Reference to supports
+// 2011.12.10 @abertranb
 /**
+ * @param string $feature FEATURE_xx constant for requested feature
+ * @return mixed True if module supports feature, false if not, null if doesn't know
  * @uses FEATURE_GROUPS
  * @uses FEATURE_GROUPINGS
- * @uses FEATURE_GROUPMEMBERSONLY
  * @uses FEATURE_MOD_INTRO
  * @uses FEATURE_COMPLETION_TRACKS_VIEWS
  * @uses FEATURE_COMPLETION_HAS_RULES
  * @uses FEATURE_GRADE_HAS_GRADE
  * @uses FEATURE_GRADE_OUTCOMES
- * @param string $feature FEATURE_xx constant for requested feature
- * @return mixed True if module supports feature, false if not, null if doesn't know
+ * @uses FEATURE_BACKUP_MOODLE2
+ * @uses FEATURE_SHOW_DESCRIPTION
+ * @uses FEATURE_MOD_PURPOSE
+ * @uses MOD_PURPOSE_ASSESSMENT
  */
-function rcontent_supports($feature) {
-	switch($feature) {
-		case FEATURE_GROUPS:                  return false;
-		case FEATURE_GROUPINGS:               return false;
-		case FEATURE_GROUPMEMBERSONLY:        return true;
-		case FEATURE_MOD_INTRO:               return true;
-		case FEATURE_COMPLETION_TRACKS_VIEWS: return true;
-		case FEATURE_COMPLETION_HAS_RULES:    return true;
-		case FEATURE_GRADE_HAS_GRADE:         return true;
-		case FEATURE_GRADE_OUTCOMES:          return true;
-		case FEATURE_BACKUP_MOODLE2:          return true;
-		case FEATURE_SHOW_DESCRIPTION:        return true;
-
-		default: return null;
-	}
+function rcontent_supports (string $feature) {
+    switch ($feature) {
+        case FEATURE_GROUPINGS:
+        case FEATURE_GROUPS:
+            return false;
+        case FEATURE_COMPLETION_TRACKS_VIEWS:
+        case FEATURE_COMPLETION_HAS_RULES:
+        case FEATURE_GRADE_HAS_GRADE:
+        case FEATURE_GRADE_OUTCOMES:
+        case FEATURE_BACKUP_MOODLE2:
+        case FEATURE_SHOW_DESCRIPTION:
+        case FEATURE_MOD_INTRO:
+            return true;
+        case FEATURE_MOD_PURPOSE:
+            return MOD_PURPOSE_ASSESSMENT;
+        default:
+            return null;
+    }
 }
-//********** FI
+// ********** FI
 
 
 ////////////////////////////////////////////////////////////////////////////////

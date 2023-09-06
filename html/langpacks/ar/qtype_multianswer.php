@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ar', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'ar', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -40,11 +40,13 @@ $string['layoutselectinline'] = 'القائمة المنسدلة مضمنة في
 $string['layoutundefined'] = 'تصميم غير معروف';
 $string['layoutvertical'] = 'عمود رأسي من أزرار الراديو';
 $string['missingsubquestion'] = 'هذا السؤال الفرعي مفقود من نظامك ولا يمكن عرضه.';
+$string['multichoicex'] = 'متعدد الخيارات {$a}';
 $string['nooptionsforsubquestion'] = 'غير قادر على الحصول على خيارات السؤال للجزء # {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'السؤال أكمل الفراغ (الإجابات المتعددة) "<strong>{$a}</strong>" لا يحتوي على أي سؤال';
 $string['pleaseananswerallparts'] = 'يرجى الإجابة على جميع أجزاء السؤال.';
 $string['pluginname'] = 'الإجابات المضمنة (إكمال الفراغ)';
 $string['pluginname_help'] = 'أسئلة الإجابات المضمنة (Cloze) تتكون من قطعة نصية ذات أسئلة مثل متعدد الخيارات والإجابات القصيرة مضمنة داخلها.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnameadding'] = 'بإضافة إجابات مضمنة للسؤال (إكمال الفراغ)';
 $string['pluginnameediting'] = 'بتحرير الإجابات المضمنة للسؤال (إكمال الفراغ)';
 $string['pluginnamesummary'] = 'الأسئلة من هذا النوع مرنة للغاية، ولكن يمكن فقط إنشاؤها عبر إدخال نص يحتوي رموزًا خاصة لتضمين متعدد الخيارات، الإجابات القصيرة والأسئلة العددية.';
@@ -65,6 +67,7 @@ $string['questionsmore'] = '{$a} الأسئلة أكثر مما كانت علي�
 $string['questiontypechanged'] = 'نوع السؤال تغيّر';
 $string['questiontypechangedcomment'] = 'تم تغيير واحد على الأقل نوع السؤال. <br\\> هل تمت إضافة أو حذف أو نقل السؤال؟ <br\\> نتطلع إلى الأمام.';
 $string['questionusedinquiz'] = 'يستخدم هذا السؤال في {$a->nb_of_quiz} اختبار , جميع المحاولات : {$a->nb_of_attempts}';
+$string['regradeissuenumsubquestionschanged'] = 'عدد الأسئلة الفرعية المضمنة في السؤال قد تغير.';
 $string['storedqtype'] = 'تخزين نوع السؤال {$a}';
 $string['subqresponse'] = 'الجزء {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'نوع السؤال غير معروف : {$a->type} من جزء السؤال # {$a->sub}';

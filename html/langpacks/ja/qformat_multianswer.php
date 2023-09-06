@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_multianswer', language 'ja', version '3.11'.
+ * Strings for component 'qformat_multianswer', language 'ja', version '4.1'.
  *
  * @package     qformat_multianswer
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '穴埋め問題 (Cloze)';
 $string['pluginname_help'] = '穴埋め問題 (Cloze) フォーマットでは多肢選択問題および記述問題のような問題を記述したテキストをインポートすることができます。';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['privacy:metadata'] = '埋め込み問題プラグインはいかなる個人データも保存しません。';

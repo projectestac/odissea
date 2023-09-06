@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_authorize', language 'fr', version '3.11'.
+ * Strings for component 'enrol_authorize', language 'fr', version '4.1'.
  *
  * @package     enrol_authorize
  * @category    string
@@ -78,7 +78,7 @@ $string['anemailexpiredteacherdesc'] = 'Si vous avez activé la saisie manuelle 
 $string['anlogin'] = 'Authorize.Net : nom d\'utilisateur';
 $string['anpassword'] = 'Authorize.Net : mot de passe';
 $string['anreferer'] = 'Référenceur';
-$string['anrefererdesc'] = 'Saisissez ici une URL (référenceur) si vous avez mis en place cette fonctionnalité dans votre compte marchand Authorize.Net. Ceci enverra une entête « Referer: URL » incluse dans la requête web.';
+$string['anrefererdesc'] = 'Saisissez ici une URL (référenceur) si vous avez mis en place cette fonctionnalité dans votre compte marchand Authorize.Net. Ceci enverra un en-tête « Referer: URL » incluse dans la requête web.';
 $string['anreview'] = 'Contrôle';
 $string['anreviewdesc'] = 'Contrôle de la commande avant envoi des données de la carte de crédit.';
 $string['antestmode'] = 'Mode test';

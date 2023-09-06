@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlesson', language 'ca', version '3.11'.
+ * Strings for component 'customlesson', language 'ca', version '4.1'.
  *
  * @package     customlesson
  * @category    string
@@ -32,12 +32,18 @@ $string['completederror'] = 'Completa la lliçó';
 $string['completethefollowingconditions'] = 'Heu de completar la següent condició en la lliçó <b>{$a}</b> abans de poder continuar.';
 $string['deleteallattempts'] = 'Elimina tots els intents de la lliçó';
 $string['description'] = 'Descripció';
+$string['edit'] = 'Edita';
+$string['jump'] = 'Salta';
 $string['maximumnumberofattempts'] = 'Nombre màxim d\'intents';
+$string['modulename_link'] = 'mod/customlesson/view';
 $string['nolessonattempts'] = 'Ningú no ha intentat aquesta lliçó.';
 $string['notcompleted'] = 'Incomplet';
 $string['ongoingnormal'] = 'Heu contestat correctament {$a->correct} de {$a->viewed} intents.';
 $string['password'] = 'Contrasenya';
 $string['progresscompleted'] = 'Heu completat el {$a}% de la lliçó';
+$string['question'] = 'Pregunta';
+$string['questionoption'] = 'Pregunta';
+$string['reports'] = 'Informes';
 $string['viewreports'] = 'Mostra {$a->attempts} intents completats per {$a->student}';
 $string['viewreports2'] = 'Mostra {$a} intents completats';
 $string['xattempts'] = '{$a} intents';

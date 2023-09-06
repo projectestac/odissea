@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'zh_cn', version '3.11'.
+ * Strings for component 'group', language 'zh_cn', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -87,6 +87,7 @@ $string['eventgroupmemberadded'] = '小组成员已添加';
 $string['eventgroupmemberremoved'] = '小组成员已移除';
 $string['eventgroupupdated'] = '小组已更新';
 $string['existingmembers'] = '现有成员：{$a}';
+$string['exportgroupsgroupings'] = '将小组和大组导出为';
 $string['filtergroups'] = '过滤小组按：';
 $string['group'] = '小组';
 $string['groupaddedsuccesfully'] = '小组{$a}添加成功';
@@ -145,6 +146,7 @@ $string['importgroups_help'] = '可以从文本文件导入小组。文件格式
 * 第一条记录包含字段名列表，定义文件其余部分的格式
 * groupname 字段是必需的
 * 可选字段有 groupidnumber, description, enrolmentkey, groupingname, enablemessaging';
+$string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = '只包括活跃的选课';
 $string['includeonlyactiveenrol_help'] = '如果启用，暂停的用户将不包括在小组中。';
 $string['javascriptrequired'] = '该页需要浏览器启用 JavaScript 。';

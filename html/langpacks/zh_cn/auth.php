@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'zh_cn', version '3.11'.
+ * Strings for component 'auth', language 'zh_cn', version '4.1'.
  *
  * @package     auth
  * @category    string
@@ -150,6 +150,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = '验证码用于防止自动程序的滥用。按照说明验证您是个人。这可能是要选中的框、必须输入的图像中显示的字符或要从中选择的一组图像。
 
 如果您不确定图像是什么，可以尝试获取另一个验证码或音频验证码。';
+$string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = '安全问题';
 $string['selfregistration'] = '自助注册';
 $string['selfregistration_help'] = '如果选中一个身份认证插件，比如基于email的自助注册，那么用户就可以自己注册并创建帐户。这可能导致一些人为了在讨论区、博客等发送垃圾信息而自己建立帐号。为了避免这种风险，自助注册应禁用或仅限<em>允许的email域名</em>。

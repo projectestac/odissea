@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'nl', version '3.11'.
+ * Strings for component 'notes', language 'nl', version '4.1'.
  *
  * @package     notes
  * @category    string
@@ -31,6 +31,7 @@ $string['addbulknotedonesingle'] = 'Notitie toegevoegd aan 1 persoon';
 $string['addbulknotesingle'] = 'Voeg een nieuwe notitie toe aan 1 persoon';
 $string['addnewnote'] = 'Nieuwe notitie toevoegen';
 $string['addnewnoteselect'] = 'Selecteer leerlingen om een notitie over te schrijven';
+$string['author'] = 'Auteur';
 $string['bynameondate'] = 'door {$a->name} - {$a->date}';
 $string['configenablenotes'] = 'Bewaren van notities over individuele gebruikers inschakelen';
 $string['content'] = 'Inhoud notitie';
@@ -73,6 +74,7 @@ $string['publishstate_help'] = 'De context van een notitie bepaalt wie de notiti
 * Persoonlijk - De notitie is enkel zichtbaar voor jou
 * Cursus - De notitie is zichtbaar voor leraren in de cursus
 * Site - De notitie is zichtbaar voor alle leraren in alle cursussen';
+$string['recipient'] = 'Ontvanger';
 $string['site'] = 'site';
 $string['sitenotes'] = 'Sitenotities';
 $string['unknown'] = 'onbekend';

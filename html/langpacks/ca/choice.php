@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ca', version '3.11'.
+ * Strings for component 'choice', language 'ca', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'Modifica i suprimeix les respostes';
 $string['choice:downloadresponses'] = 'Baixa les respostes';
 $string['choice:readresponses'] = 'Mostra les respostes';
 $string['choice:view'] = 'Visualitza l\'activitat consulta';
-$string['choiceactivityname'] = 'Consulta: {$a}';
 $string['choiceclose'] = 'Permet respostes fins a';
-$string['choicecloseson'] = 'Tanca la consulta en {$a}';
 $string['choicefull'] = 'Una o més opcions de les que heu triat estan completes. La vostra resposta no s\'ha desat. Feu una altra selecció.';
 $string['choicename'] = 'Títol de la consulta';
 $string['choiceopen'] = 'Permet respostes des de';
@@ -72,6 +70,8 @@ $string['full'] = '(Complet)';
 $string['havetologin'] = 'Abans de trametre una resposta heu d\'entrar amb el vostre nom d\'usuari i contrasenya.';
 $string['includeinactive'] = 'Inclou respostes dels usuaris inactius/suspesos';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Consulta en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'Límit';
 $string['limita'] = 'Límit: {$a}';
 $string['limitanswers'] = 'Limita el nombre de respostes permeses';
@@ -91,6 +91,7 @@ L\'activitat de consulta es pot utilitzar:
 * Per tal de verificar ràpidament la comprensió dels estudiants
 
 * Per facilitar la presa de decisions dels estudiants; per exemple, permetent que els estudiants votin sobre algun aspecte del curs.';
+$string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Consultes';
 $string['moveselectedusersto'] = 'Mou els usuaris seleccionats a...';
 $string['multiplenotallowederror'] = 'No estan permeses respostes múltiples en aquesta consulta';

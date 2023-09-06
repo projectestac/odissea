@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'sv', version '3.11'.
+ * Strings for component 'group', language 'sv', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -87,6 +87,7 @@ $string['eventgroupmemberadded'] = 'Gruppmedlem tillagd';
 $string['eventgroupmemberremoved'] = 'Gruppmedlem borttagen';
 $string['eventgroupupdated'] = 'Grupp uppdaterad';
 $string['existingmembers'] = 'Befintliga medlemmar: {$a}';
+$string['exportgroupsgroupings'] = 'Ladda ned grupper och grupperingar som';
 $string['filtergroups'] = 'Filtrera grupper efter:';
 $string['group'] = 'Grupp';
 $string['groupaddedsuccesfully'] = 'Gruppen {$a} har lagts till';
@@ -145,6 +146,7 @@ $string['importgroups_help'] = 'Grupper kan importeras via textfiler. Formatet f
 * Den första posten innehåller en lista över fältnamn och definierar formatet på resten av filen.
 * Obligatoriska fältnamn är <code>groupname</code> (gruppnamn)
 * Valfria fältnamn är <code>description</code>, <code>enrolmentkey</code>, <code>picture</code> samt <code>hidepicture</code> (beskrivning, registreringsnyckel, bild, dölj bild)';
+$string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Inkludera endast aktiva registreringar';
 $string['includeonlyactiveenrol_help'] = 'Om aktiverat inkluderas inte avstängda användare i grupper.';
 $string['javascriptrequired'] = 'Den här sidan kräver Javascript för att fungera.';

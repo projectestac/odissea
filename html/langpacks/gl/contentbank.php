@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'gl', version '3.11'.
+ * Strings for component 'contentbank', language 'gl', version '4.1'.
  *
  * @package     contentbank
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor';
+$string['choosecontext'] = 'Escolla curso ou categoría...';
 $string['close'] = 'Pechar';
 $string['contentbank'] = 'Banco de contidos';
 $string['contentbankpreferences'] = 'Preferencias do banco de contidos';
@@ -54,10 +55,12 @@ $string['eventcontentreplaced'] = 'Contido substituído por ficheiro';
 $string['eventcontentupdated'] = 'Contido actualizado';
 $string['eventcontentuploaded'] = 'Contido enviado';
 $string['eventcontentviewed'] = 'Contido consultado';
+$string['exit'] = 'Saír';
 $string['file'] = 'Enviar o contido';
 $string['file_help'] = 'Os ficheiros poden almacenarse no banco de contidos para usalos en cursos. Só se poden enviar os ficheiros utilizados polos tipos de contido activados no sitio.';
 $string['itemsfound'] = 'Atopáronse {$a} elementos';
 $string['lastmodified'] = 'Última modificación';
+$string['more'] = 'Máis';
 $string['name'] = 'Contido';
 $string['nocontentavailable'] = 'Non hai contido dispoñíbel';
 $string['nocontenttypes'] = 'Non hai tipos de contido dispoñíbeis';
@@ -92,4 +95,4 @@ $string['visibilitypref'] = 'Visibilidade de contido predeterminada';
 $string['visibilitypref_help'] = 'O contido que crea no banco de contido empregará este axuste de visibilidade de xeito predeterminado.';
 $string['visibilitysetpublic'] = 'Facer pública';
 $string['visibilitysetunlisted'] = 'Facer sen listar';
-$string['visibilitytitleunlisted'] = '{$ a} (sen listar)';
+$string['visibilitytitleunlisted'] = '{$a} (sen listar)';

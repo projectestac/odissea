@@ -34,19 +34,10 @@ function xmldb_qtype_essay_upgrade($oldversion) {
 
     $dbman = $DB->get_manager();
 
-    // Automatically generated Moodle v3.6.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.7.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.8.0 release upgrade line.
-    // Put any upgrade step following this.
-
     // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    if ($oldversion < 2020091600) {
+    if ($oldversion < 2021052501) {
 
         // Define field maxbytes to be added to qtype_essay_options.
         $table = new xmldb_table('qtype_essay_options');
@@ -59,13 +50,10 @@ function xmldb_qtype_essay_upgrade($oldversion) {
         }
 
         // Essay savepoint reached.
-        upgrade_plugin_savepoint(true, 2020091600, 'qtype', 'essay');
+        upgrade_plugin_savepoint(true, 2021052501, 'qtype', 'essay');
     }
 
-    // Automatically generated Moodle v3.10.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2021011100) {
+    if ($oldversion < 2021052502) {
 
         // Define field minwordlimit to be added to qtype_essay_options.
         $table = new xmldb_table('qtype_essay_options');
@@ -86,10 +74,13 @@ function xmldb_qtype_essay_upgrade($oldversion) {
         }
 
         // Essay savepoint reached.
-        upgrade_plugin_savepoint(true, 2021011100, 'qtype', 'essay');
+        upgrade_plugin_savepoint(true, 2021052502, 'qtype', 'essay');
     }
 
-    // Automatically generated Moodle v3.11.0 release upgrade line.
+    // Automatically generated Moodle v4.0.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v4.1.0 release upgrade line.
     // Put any upgrade step following this.
 
     return true;

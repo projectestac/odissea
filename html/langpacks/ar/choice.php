@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ar', version '3.11'.
+ * Strings for component 'choice', language 'ar', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'تعديل وحذف الإجابات';
 $string['choice:downloadresponses'] = 'تنزيل الاجابات';
 $string['choice:readresponses'] = 'معاينة الإجابات';
 $string['choice:view'] = 'معاينة نشاط الاختيار';
-$string['choiceactivityname'] = 'إختيار: {$a}';
 $string['choiceclose'] = 'إسمح بالإجابات حتى';
-$string['choicecloseson'] = 'الاختيار يُغلق في {$a}';
 $string['choicefull'] = 'واحد أو أكثر من الخيارات التي حددتها قد تمت تعبئتها سلفاً. لم يتم حفظ إجابتك. لطفاً، قم باختيار آخر.';
 $string['choicename'] = 'اسم الاختيار';
 $string['choiceopen'] = 'إسمح بالإجابات بدءاً من';
@@ -76,10 +74,12 @@ $string['indicator:cognitivedepth'] = 'الإختيار معرفياً';
 $string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في نشاط الاختيار.';
 $string['indicator:cognitivedepthdef'] = 'الإختيار معرفياً';
 $string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها نشاطات الاختيار خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة، تقديم، معاينة الرد)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'الإختيار إجتماعياً';
 $string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في نشاط الإختيار .';
 $string['indicator:socialbreadthdef'] = 'الإختيار إجتماعياً';
 $string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها نشاطات الإختيار خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً، المشاركة مع الآخرين)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'العدد الأقصى';
 $string['limita'] = 'الحد: {$a}';
 $string['limitanswers'] = 'حدد عدد الاستجابات المسموح بها';
@@ -99,6 +99,7 @@ $string['modulename_help'] = 'تمكن وحدة النشاط إختيار الم
 * كاستطلاع سريع لتحفيز التفكير في الموضوع ما
 * كاختبار سريع لفهم الطلاب
 * لتسهيل اتخاذ القرار على الطالب، على سبيل المثال، السماح للطلاب بالتصويت على اتجاه المسار';
+$string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'إختيارات';
 $string['moveselectedusersto'] = 'أنقل المستخدمين الذين تم اختيارهم إلى';
 $string['multiplenotallowederror'] = 'الإجابات المتعددة غير مسموح بها في هذا الاختيار';

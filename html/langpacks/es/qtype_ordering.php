@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'es', version '3.11'.
+ * Strings for component 'qtype_ordering', language 'es', version '4.1'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -33,6 +33,7 @@ $string['gradingtype'] = 'Tipo de calificación';
 $string['noresponsedetails'] = 'Lo sentimos, ningún detalle está disponible para la respuesta a esta pregunta.';
 $string['pluginname'] = 'Poner en orden';
 $string['pluginname_help'] = 'Varios elementos aparecen desordenados. Se pueden arrastrar en un orden significativo.';
+$string['pluginname_link'] = 'question/type/ordering';
 $string['pluginnameadding'] = 'Añadir una pregunta de tipo Poner en orden';
 $string['pluginnameediting'] = 'Modificar una pregunta de Poner en orden';
 $string['pluginnamesummary'] = 'Colocar los elementos desordenados en un orden significativo.';

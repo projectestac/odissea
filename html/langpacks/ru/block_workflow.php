@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_workflow', language 'ru', version '3.11'.
+ * Strings for component 'block_workflow', language 'ru', version '4.1'.
  *
  * @package     block_workflow
  * @category    string
@@ -57,3 +57,6 @@ $string['confirm'] = 'Согласиться';
 $string['confirmfinishstep'] = 'Вы уверены, что хотите отметить этот шаг ({$a}) как выполненный?';
 $string['confirmjumptostep'] = 'Вы уверены, что хотите перейти к следующему шагу {$a->stepno} ({$a->stepname})?';
 $string['emailmessage'] = 'Сообщение';
+$string['stepactivation_link'] = 'block/workflow';
+$string['stepcompletion_link'] = 'block/workflow';
+$string['stepextranotify_link'] = 'block/workflow';

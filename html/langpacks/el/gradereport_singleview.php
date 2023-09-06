@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'el', version '3.11'.
+ * Strings for component 'gradereport_singleview', language 'el', version '4.1'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -58,8 +58,6 @@ $string['privacy:metadata'] = 'Η αναφορά ατομικής προβολή
 $string['save'] = 'Αποθήκευση';
 $string['savegrades'] = 'Αποθήκευση βαθμών';
 $string['savegradessuccess'] = 'Οι βαθμοί ορίστηκαν για {$a} στοιχεία';
-$string['selectgrade'] = 'Επιλέξτε στοιχείο βαθμού...';
-$string['selectuser'] = 'Επιλογή χρήστη...';
 $string['singleview:view'] = 'Εμφάνιση αναφοράς';
 $string['summarygrade'] = 'Ένας πίνακας χρηστών, με στήλες για εύρος, βαθμό, ανατροφοδότηση, και εάν θα παρακαμφθεί ή θα εξαιρεθεί ένας συγκεκριμένος βαθμός.';
 $string['summaryuser'] = 'Ένας πίνακας στοιχείων βαθμού, με στήλες για κατηγορία βαθμού, εύρος, βαθμό, ανατροφοδότηση, και εάν θα παρακαμφθεί ή θα εξαιρεθεί ένας συγκεκριμένος βαθμός.';

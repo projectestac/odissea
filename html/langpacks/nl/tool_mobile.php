@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'nl', version '3.11'.
+ * Strings for component 'tool_mobile', language 'nl', version '4.1'.
  *
  * @package     tool_mobile
  * @category    string
@@ -31,7 +31,9 @@ $string['androidappid_desc'] = 'Deze instelling mag standaard gelaten worden ten
 $string['apppolicy'] = 'App beleids-URL';
 $string['apppolicy_help'] = 'De URL van een beleid voor app-gebruikers die getoond wordt op de Over-pagina in de app. Als het veld leeg gelaten wordt, dan zal de site-beleids-URL gebruikt worden.';
 $string['apprequired'] = 'Deze functionaliteit is alleen beschikbaar wanneer je deze gebruikt via de mobiele Moodle- of desktop-app.';
-$string['autologinkeygenerationlockout'] = 'Auto-login sleutel genereren is geblokkeerd. Je moet 6 minuten wachten tussen de aanvragen.';
+$string['autologinkeygenerationlockout'] = 'Auto-login sleutel genereren is geblokkeerd. Je moet {$a} minuten wachten tussen de aanvragen.';
+$string['autologinmintimebetweenreq'] = 'Minimale tijd tussen twee auto-login-aanvragen';
+$string['autologinmintimebetweenreq_desc'] = 'Deze instelling bepaalt de minimale tijd tussen verzoeken om automatisch in te loggen vanuit de app. Als app-gebruikers regelmatig gevraagd worden om hun wachtwoord opnieuw in te geven wanneer ze ingebedde inhoud van de site bekijken, zet dit dan op een lagere waarde.';
 $string['autologinnotallowedtoadmins'] = 'Auto-login is niet toegestaan voor site-beheerders.';
 $string['cachedef_plugininfo'] = 'Dit bewaart de lijst met plugins met mobiele toevoegingen';
 $string['cachedef_subscriptiondata'] = 'Dit bewaart de Moodle app abonnementsinformatie.';
@@ -120,14 +122,18 @@ $string['privacy:metadata:core_userkey'] = 'Gebruikerssleutels die gebruikt zijn
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'De datum waarop de laatste autologin-sleutel opgevraagd is. Tussen elke vraag moet 6 minuten zitten.';
 $string['qrcodedisabled'] = 'Toegang via QR-code uitgeschakeld';
 $string['qrcodeformobileappaccess'] = 'QR-code voor mobiele app-toegang';
-$string['qrcodeformobileapploginabout'] = 'Scan de QR-code met je mobiele app en je wordt automatisch aangemeld. De QR-code zal vervallen binnen {$a} minuten.';
+$string['qrcodeformobileapploginabout'] = 'Scan de QR-code met je mobiele app en je wordt automatisch aangemeld. De QR-code zal vervallen binnen {$a}.';
 $string['qrcodeformobileappurlabout'] = 'Scan de QR-code met je mobiele app om de site-URL juist in te vullen in de app.';
 $string['qrcodetype'] = 'QR-code toegang';
 $string['qrcodetype_desc'] = 'Er kan een QR-code voorzien worden die mobiele app-gebruikers kunnen scannen. Dit kan gebruikt worden om de site-URL ingevuld krijgen of automatisch aangemeld te worden zonder dat de gebruiker gebruikersnaam en wachtwoord moet ingeven.';
 $string['qrcodetypelogin'] = 'QR-code met automatische login';
 $string['qrcodetypeurl'] = 'QR-code met site-URL';
+$string['qrkeyttl'] = 'Geldigheidsduur sleutel QR-authenticatie';
+$string['qrkeyttl_desc'] = 'De geldigheidsduur van een QR-sleutel voor automatische authenticatie.';
+$string['qrsameipcheck'] = 'QR-authenticatie zelfde IP-controle';
+$string['qrsameipcheck_desc'] = 'Of gebruikers hetzelfde netwerk moeten gebruiken voor het genereren en scannen van een QR-code om in te loggen. Schakel het alleen uit als je gebruikers problemen melden met QR-login.';
 $string['qrsiteadminsnotallowed'] = 'Om veiligheidsredenen is het aanmelden via QR-code niet toegestaan voor beheerders of wanneer je aangemeld bent als een andere gebruiker.';
-$string['readingthisemailgettheapp'] = 'Dit als smartphone-notificatie krijgen?? <a href="{$a}"> Download de mobiele app en ontvang meldingen op je mobiele apparaat </a>.';
+$string['readingthisemailgettheapp'] = 'Lees je dit in een e-mail? <a href="{$a}"> Download de mobiele app en ontvang meldingen op je mobiele apparaat </a>.';
 $string['remoteaddons'] = 'Externe add-ons';
 $string['responsivemainmenuitems'] = 'Responsieve menu-items';
 $string['scanqrcode'] = 'Scan QR code';

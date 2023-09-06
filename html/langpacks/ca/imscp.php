@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'ca', version '3.11'.
+ * Strings for component 'imscp', language 'ca', version '4.1'.
  *
  * @package     imscp
  * @category    string
@@ -32,6 +32,8 @@ $string['deploymenterror'] = 'Error en el contingut del paquet!';
 $string['imscp:addinstance'] = 'Afegeix un paquet de contingut IMS nou';
 $string['imscp:view'] = 'Mostra contingut IMS';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta pels recursos en paquets IMS en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = 'Paquets arxivats';
 $string['keepoldexplain'] = 'Quants paquets haurien de ser arxivats?';
 $string['modulename'] = 'Paquet de contingut IMS';
@@ -40,6 +42,7 @@ $string['modulename_help'] = 'Un paquet de contingut IMS és un conjunt de fitxe
 El contingut es presenta habitualment en diverses pàgines, amb navegació entre les pàgines. Hi ha diverses opcions per mostrar el contingut en una finestra emergent, amb un menú de navegació o botons, etc.
 
 Un paquet de contingut IMS es pot utilitzar per a la presentació de contingut multimèdia i animacions.';
+$string['modulename_link'] = 'mod/imscp/view';
 $string['modulenameplural'] = 'Paquets de contingut IMS';
 $string['navigation'] = 'Navegació';
 $string['packagefile'] = 'Fitxer del paquet';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'gl', version '3.11'.
+ * Strings for component 'user', language 'gl', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -40,8 +40,8 @@ $string['filtersetmatchdescription'] = 'Como se deben combinar varios filtros';
 $string['filtertype'] = 'Tipo de filtro';
 $string['match'] = 'Coincidencia';
 $string['matchofthefollowing'] = 'dos seguintes:';
-$string['moodlenetprofile'] = 'Perfil de MoodleNet';
-$string['moodlenetprofile_help'] = 'Este campo é para ligar o seu perfil de MoodleNet a Moodle. Agarda un URI compatíbel con WebFinger.';
+$string['moodlenetprofile'] = 'ID de perfil de MoodleNet';
+$string['moodlenetprofile_help'] = 'O seu ID de perfil de MoodleNet vincula o seu perfil de MoodleNet con este sitio.';
 $string['placeholdertype'] = 'Escriba...';
 $string['placeholdertypeorselect'] = 'Escriba ou seleccione...';
 $string['privacy:courserequestpath'] = 'Cursos solicitados';
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'segredo estabelecido e enviado por correo a
 $string['privacy:metadata:trackforums'] = 'Unha preferencia para foros e os seus seguimentos.';
 $string['privacy:metadata:trustbitmask'] = 'A máscara do bit de confianza';
 $string['privacy:metadata:url'] = 'Un URL relacionado con este usuario.';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Selo de tempo rexistrado para cando se mostrou ao usuario a mensaxe de benvida por primeira vez.';
 $string['privacy:metadata:user_preferences'] = 'Preferencias asociadas co usuario dado';
 $string['privacy:metadata:user_preferences:name'] = 'Nome de preferencia';
 $string['privacy:metadata:user_preferences:userid'] = 'O ID do usuario';
@@ -149,6 +150,10 @@ $string['privacy:privatefilespath'] = 'Ficheiros privados';
 $string['privacy:profileimagespath'] = 'Imaxes do perfil';
 $string['privacy:sessionpath'] = 'Datos da sesión';
 $string['selectfiltertype'] = 'Seleccionar';
+$string['supportmessagealternative'] = 'Pola contra, pode enviar un correo-e a {$a}.';
+$string['supportmessagenotsent'] = 'Desafortunadamente non foi posíbel enviar a súa mensaxe.';
+$string['supportmessagesent'] = 'A súa mensaxe foi enviada.';
+$string['supportmessagesentforloggedoutuser'] = 'Teña coidado con esta mensaxe. O remitente non iniciou sesión, polo que non se confirmou a súa identidade.';
 $string['target:upcomingactivitiesdue'] = 'Actividades pendentes de entrega';
 $string['target:upcomingactivitiesdue_help'] = 'Este destino xera recordatorios para as actividades pendentes de entrega.';
 $string['target:upcomingactivitiesdueinfo'] = 'Aquí están listadas todas as actividades vindeiras estimadas. Estes alumnos recibiron estas estimacións directamente.';

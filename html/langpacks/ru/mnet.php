@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ru', version '3.11'.
+ * Strings for component 'mnet', language 'ru', version '4.1'.
  *
  * @package     mnet
  * @category    string
@@ -118,6 +118,7 @@ $string['is_in_range'] = 'IP-адрес <code>{$a}</code> входит в спи
 $string['ispublished'] = 'Сайт «{$a}» открыл доступ к этой службе для Вас.';
 $string['issubscribed'] = 'Сайт «{$a}» подписался на эту службу на Вашем сайте.';
 $string['keydeleted'] = 'Ваш ключ был успешно удален и заменен.';
+$string['keydeletedcancelled'] = 'Ключ не изменен.';
 $string['keymismatch'] = 'Открытый ключ, сохраненный у Вас для этого сайта, отличается от открытого ключа, который сейчас опубликован. Текущий открытый ключ:';
 $string['last_connect_time'] = 'Время последнего подключения';
 $string['last_connect_time_help'] = 'Время, когда Вы в последний раз подключались к данному сайту.';

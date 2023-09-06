@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'fr', version '3.11'.
+ * Strings for component 'message_airnotifier', language 'fr', version '4.1'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -42,13 +42,19 @@ $string['configured'] = 'Configuré';
 $string['deletecheckdevicename'] = 'Supprimer votre appareil : {$a->name}';
 $string['deletedevice'] = 'Supprimer l\'appareil. Une app peut ré-enregistrer l\'appareil. Si l\'appareil persiste à apparaître, veuillez le désactiver.';
 $string['devicetoken'] = 'Jeton d\'appareil';
+$string['donotsendnotification'] = 'N\'envoyer aucune notification';
 $string['enableprocessor'] = 'Activer les notifications mobiles';
+$string['encryptnotifications'] = 'Chiffrer les notifications';
+$string['encryptprocessing'] = 'Pour les appareils ne prenant pas en charge le chiffrement';
+$string['encryptprocessing_desc'] = 'Le chiffrement des notifications nécessite au moins Android 6 et de iOS 13, ainsi que l\'App Moodle 4.2 ou ultérieure.';
 $string['errorretrievingkey'] = 'Une erreur est survenue lors de l\'obtention de la clef d\'accès. Votre site Moodle doit être enregistré pour utiliser ce service. S\'il est déjà enregistré, veuillez essayer de mettre à jour votre enregistrement. Vous pouvez aussi obtenir une clef d\'accès en créant un compte sur le <a href="https://apps.moodle.com">portail des apps Moodle</a>.';
 $string['keyretrievedsuccessfully'] = 'Clef obtenue correctement. Pour accéder aux statistiques d\'usage de l\'app Moodle, veuillez créer un compte sur le <a href="https://apps.moodle.com">portail des apps Moodle</a>.';
 $string['messageprovidersempty'] = 'Les notifications mobiles ne sont pas activées dans les préférences de notification par défaut.';
 $string['messageproviderslow'] = 'Seules quelques notifications mobiles sont activées dans les préférences de notification par défaut.';
 $string['moodleappsportallimitswarning'] = 'Veuillez prendre note que le nombre d\'appareils pouvant recevoir des notifications dépend de votre abonnement pour l\'app Moodle. Pour plus d\'informations, visitez le <a href="{$a}" target="_blank">portail des apps Moodle</a>.';
 $string['nodevices'] = 'Aucun appareil enregistré. Les appareils apparaîtront automatiquement une fois l\'app Moodle installée et ce site ajouté.';
+$string['noemailevernotset'] = '$CFG->noemailever désactivé';
+$string['noemaileverset'] = '$CFG->noemailever est activé dans le fichier config.php. Vous devez déactiver ce réglage ou le supprimer.';
 $string['nopermissiontomanagedevices'] = 'Vous n\'avez pas les permissions requises pour gérer les appareils.';
 $string['notconfigured'] = 'Le serveur Airnotifier n\'a pas été configuré. Les notifications « push » ne peuvent donc pas être envoyées.';
 $string['notificationsserverconfiguration'] = 'Configuration du serveur de notifications (Airnotifier)';
@@ -71,6 +77,7 @@ $string['privacy:metadata:username'] = 'Le nom d\'utilisateur de l\'utilisateur.
 $string['privacy:metadata:usersubsystem'] = 'Ce plugin est connecté au sous-système utilisateur.';
 $string['privacy:subcontext'] = 'Message Airnotifier';
 $string['requestaccesskey'] = 'Demander une clef d\'accès';
+$string['sendnotificationnotenc'] = 'Envoyer les notifications sans chiffrement';
 $string['sendtest'] = 'Envoyer une notification push de test à mes appareils';
 $string['sendtestconfirmation'] = 'Une notification push de test sera envoyée aux appareils que vous utilisez pour vous connecter à ce site. Veuillez vous assurer que vos appareils ont accès à Internet et que l\'app mobile n\'est pas ouverte, car les notifications push ne sont affichées que lorsqu\'elles sont reçues en tâche de fond.';
 $string['serverconnectivityerror'] = 'Ce site ne peut pas se connecter au serveur de notifications {$a}';
@@ -78,3 +85,4 @@ $string['showhide'] = 'Activer/désactiver l\'appareil';
 $string['sitemustberegistered'] = 'Pour utiliser l\'instance publique de Airnotifier, votre site doit être enregistré. Il est aussi possible d\'obtenir une clef d\'accès en créant un compte sur le <a href="{$a}" target="_blank">portail des apps Moodle</a>.';
 $string['unknowndevice'] = 'Appareil inconnu';
 $string['userdevices'] = 'Appareils utilisateur';
+$string['view_notification'] = 'Tapoter pour voir';

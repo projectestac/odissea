@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_multilangupgrade', language 'el', version '3.11'.
+ * Strings for component 'tool_multilangupgrade', language 'el', version '4.1'.
  *
  * @package     tool_multilangupgrade
  * @category    string
@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['multilangupgradeinfo'] = '<p>Η σύνταξη πολυγλωσσικού φίλτρου άλλαξε στην έκδοση 1.8 και έτσι η ετικέτα &lt;lang&gt; δεν υποστηρίζεται πλέον.</p>
 <p>Παράδειγμα: &lt;span lang="en" class="multilang"&gt;Hello!&lt;/span&gt;&lt;span lang="es" class="multilang"&gt;Hola!&lt;/span&gt;</p>
 <p>Θέλετε τώρα να αναβαθμίσετε τη σύνταξη σε όλα τα υπάρχοντα κείμενα;</p>';
-$string['pluginname'] = 'Ενημέρωση πακέτων γλωσσών';
+$string['pluginname'] = 'Ενημέρωση πακέτων γλώσσας';
 $string['privacy:metadata'] = 'Το πρόσθετο Πολυγλωσσικής ενημέρωσης δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

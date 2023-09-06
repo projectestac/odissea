@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'el', version '3.11'.
+ * Strings for component 'customcert', language 'el', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -35,7 +35,7 @@ $string['code'] = 'Κωδικός';
 $string['copy'] = 'Αντίγραφο';
 $string['coursetimereq'] = 'Απαιτούμενα λεπτά στο μάθημα';
 $string['createtemplate'] = 'Δημιουργία υποδείγματος';
-$string['customcert:addinstance'] = 'Προσθήκη ενός νέου προσαρμοσμένου στιγμιότυπου πιστοποιητικού';
+$string['customcert:addinstance'] = 'Προσθήκη ενός νέου προσαρμοσμένου στιγμιοτύπου πιστοποιητικού';
 $string['customcert:manage'] = 'Διαχείριση ενός προσαρμοσμένου πιστοποιητικού';
 $string['customcert:receiveissue'] = 'Λήψη ενός πιστοποιητικού';
 $string['customcert:verifyallcertificates'] = 'Επιβεβαίωση όλων των πιστοποιητικών στον ιστότοπο';
@@ -75,6 +75,7 @@ $string['managetemplates'] = 'Διαχείριση υποδειγμάτων';
 $string['modify'] = 'Τροποποίηση';
 $string['modulename'] = 'Προσαρμοσμένο πιστοποιητικό';
 $string['modulename_help'] = 'Αυτό το άρθρωμα επιτρέπει την δυναμική δημιουργία πιστοποιητικών σε PDF.';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['modulenameplural'] = 'Προσαρμοσμένα πιστοποιητικά';
 $string['mycertificates'] = 'Τα πιστοποιητικά μου';
 $string['mycertificatesdescription'] = 'Αυτά είναι τα πιστοποιητικά που σας έχουν σταλεί με ηλε.ταχυδρομείο ή που έχετε κάνει λήψη εσείς.';
@@ -107,7 +108,7 @@ $string['search:activity'] = 'Προσαρμοσμένο πιστοποιητι�
 $string['setprotection'] = 'Ορισμός προστασίας';
 $string['setprotection_help'] = 'Επιλογή των ενεργειών που θέλετε να μην μπορούν οι χρήστες να εκτελέσουν σε αυτό το πιστοποιητικό.';
 $string['showposxy'] = 'Εμφάνιση των Χ και Ψ της θέσης';
-$string['showposxy_desc'] = 'Αυτό θα εμφανίζει τα Χ και Ψ της θέσης κατά την επεξεργασία ενός στοιχείου, επιτρέποντας στον χρήστη να καθορίσει με ακρίβεια τη θέση.
+$string['showposxy_desc'] = 'Αυτό θα εμφανίζει τα Χ και Ψ της θέσης κατά την επεξεργασία ενός στοιχείου, επιτρέποντας στον χρήστη να καθορίσει με ακρίβεια την τοποθεσία.
 
 Αυτό δεν είναι απαραίτητο αν σκοπεύετε να χρησιμοποιήσετε μόνο τη διεπαφή μεταφοράς & απόθεσης για αυτό το σκοπό.';
 $string['taskemailcertificate'] = 'Χειρισμός πιστοποιητικών ηλε.ταχυδρομείου.';

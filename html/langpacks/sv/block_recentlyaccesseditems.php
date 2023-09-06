@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recentlyaccesseditems', language 'sv', version '3.11'.
+ * Strings for component 'block_recentlyaccesseditems', language 'sv', version '4.1'.
  *
  * @package     block_recentlyaccesseditems
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['moreitems'] = 'Visa fler poster';
 $string['noitems'] = 'Inget att visa';
 $string['pluginname'] = 'Senast visade objekt';
 $string['privacy:metadata:block_recentlyaccesseditemstablesummary'] = 'Blocket Senast använda objekt lagrar information om objekt som användaren använt nyligen';

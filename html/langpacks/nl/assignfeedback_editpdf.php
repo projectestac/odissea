@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'nl', version '3.11'.
+ * Strings for component 'assignfeedback_editpdf', language 'nl', version '4.1'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -47,7 +47,7 @@ $string['deletecomment'] = 'Verwijder opmerking';
 $string['deletefeedback'] = 'Verwijder feedback PDF';
 $string['downloadablefilename'] = 'feedback.pdf';
 $string['downloadfeedback'] = 'Download feedback PDF';
-$string['draftchangessaved'] = 'Klad-annotaties bewaard';
+$string['draftchangessaved'] = 'Conceptannotaties bewaard';
 $string['drag'] = 'Sleep';
 $string['editpdf'] = 'Annoteer PDF';
 $string['editpdf_help'] = 'Annoteer de inzendingen van de leerlingen rechtstreeks in je browser en maak een bewerkte downloadbare PDF.';

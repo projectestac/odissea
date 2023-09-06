@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'it', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'it', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -37,6 +37,7 @@ $string['fileurl'] = 'URL del file remoto';
 $string['fileurl_help'] = 'Il campo serve per indicare l\'URL remoto di un server dal quale prendere i dati, ad esempio uno student information system.';
 $string['importxml'] = 'Importazione XML';
 $string['importxml_help'] = 'Le valutazioni possono essere importate tramite un file XML contenente i codici identificativi degli utenti e delle attività. Per conoscere il formato da utilizzare, puoi esportare delle valutazioni in formato XML e visualizzare il formato del file.';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'File XML';
 $string['privacy:metadata'] = 'Il plugin per l\'importazione delle valutazioni \'File XML\' non memorizza dati personali.';
 $string['xml:publish'] = 'Pubblicare le valutazioni importate da XML';

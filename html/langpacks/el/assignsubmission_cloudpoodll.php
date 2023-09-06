@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_cloudpoodll', language 'el', version '3.11'.
+ * Strings for component 'assignsubmission_cloudpoodll', language 'el', version '4.1'.
  *
  * @package     assignsubmission_cloudpoodll
  * @category    string
@@ -78,7 +78,7 @@ $string['es-us'] = 'Ισπανικά (Η.Π.Α.)';
 $string['expiredays'] = 'Ημέρες διατήρησης αρχείου Cloud Poodll';
 $string['fa-ir'] = 'Φαρσί';
 $string['fallback'] = 'μη-HTML5 εφεδρεία';
-$string['fallbackdetails'] = 'Αν ο περιηγητής δεν υποστηρίζει εγγραφές HTML5 για τον επιλεγμένο τύπο πολυμέσων, να γίνει χρήση εναλλακτικά μιας οθόνης ανεβάσματος ή μιας προειδοποίησης.';
+$string['fallbackdetails'] = 'Αν ο περιηγητής δεν υποστηρίζει εγγραφές HTML5 για τον επιλεγμένο τύπο πολυμέσων, να γίνει χρήση εφεδρικά μιας οθόνης ανεβάσματος ή μιας προειδοποίησης.';
 $string['fallbackiosupload'] = 'iOS: ανέβασμα, αλλιώς προειδοποίηση';
 $string['fallbackupload'] = 'Ανέβασμα';
 $string['fallbackwarning'] = 'Προειδοποίηση';
@@ -127,7 +127,7 @@ $string['recorderdisplayname'] = 'Εγγραφέας';
 $string['recorderskin'] = 'Εξωτερική εμφάνιση εγγραφέα Cloud Poodll';
 $string['recordertype'] = 'Τύπος εγγραφέα Cloud Poodll';
 $string['recordervideo'] = 'Εγγραφέας βίντεο';
-$string['refreshtoken'] = 'Ανανέωση πληροφοριών άδειας';
+$string['refreshtoken'] = 'Ανανέωση πληροφοριών άδειας χρήσης';
 $string['ru-ru'] = 'Ρωσικά';
 $string['saopaulo'] = 'Σάο Πάολο, Βραζιλία';
 $string['setting_audio_heading'] = 'Ρυθμίσεις προγράμματος αναπαραγωγής ήχου';
@@ -148,7 +148,7 @@ $string['skinupload'] = 'Ανέβασμα';
 $string['sydney'] = 'Σίδνεϊ, Αυστραλία';
 $string['ta-in'] = 'Ταμίλ';
 $string['te-in'] = 'Τελούγκου';
-$string['timelimit'] = 'Χρονικό όριο εγγραφ. Cloud Poodll';
+$string['timelimit'] = 'Όριο χρόνου εγγραφ. Cloud Poodll';
 $string['tokyo'] = 'Τόκιο, Ιαπωνία';
 $string['tr-tr'] = 'Τουρκικά';
 $string['transcriberamazon'] = 'Κανονική μεταγραφή';

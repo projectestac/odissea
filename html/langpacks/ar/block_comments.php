@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_comments', language 'ar', version '3.11'.
+ * Strings for component 'block_comments', language 'ar', version '4.1'.
  *
  * @package     block_comments
  * @category    string
@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comments:addinstance'] = 'إضافة كتلة تعليقات جديدة';
-$string['comments:myaddinstance'] = 'إضافة كتلة تعليقات جديدة إلى لوحة التحكم';
+$string['comments:myaddinstance'] = 'إضافة كتلة تعليقات جديدة إلى دفة القيادة';
 $string['pluginname'] = 'التعليقات';
 $string['privacy:metadata:core_comment'] = 'تمت إضافة سجل من التعليقات.';

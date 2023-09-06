@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'de', version '3.11'.
+ * Strings for component 'accredible', language 'de', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -60,6 +60,7 @@ $string['modulename'] = 'Accredible-Zertifikate & -Badges';
 $string['modulename_help'] = 'Das Aktivitätenmodul für Accredible-Zertifikate & -Badges ermöglicht es Ihnen, auf accredible.com Kurs-Zertifikate oder -Badges für Ihre Teilnehmer/innen zu vergeben.
 
 Fügen Sie die Aktivität an allen Stellen hinzu, wo Ihre Teilnehmer/innen ihr Zertifikat oder Badge angezeigt bekommen sollen.';
+$string['modulename_link'] = 'mod/accredible/view';
 $string['modulenameplural'] = 'Accredible-Zertifikate/-Badges';
 $string['nocertificates'] = 'Es gibt keine Zertifikate oder Auszeichnungen';
 $string['overview'] = 'Übersicht';

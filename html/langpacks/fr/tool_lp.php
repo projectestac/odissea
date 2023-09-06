@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'fr', version '3.11'.
+ * Strings for component 'tool_lp', language 'fr', version '4.1'.
  *
  * @package     tool_lp
  * @category    string
@@ -149,7 +149,7 @@ $string['nocompetencies'] = 'Aucune compétence n\'a été créée dans ce réf�
 $string['nocompetenciesinactivity'] = 'Aucune compétence n\'a été liée à cette activité ou ressource.';
 $string['nocompetenciesincourse'] = 'Aucune compétence n\'a été liée à ce cours.';
 $string['nocompetenciesinevidence'] = 'Aucune compétence n\'a été liée à cette preuve d\'acquis.';
-$string['nocompetenciesinlearningplan'] = 'Aucune compétence n\'a été loué à ce plan de formation';
+$string['nocompetenciesinlearningplan'] = 'Aucune compétence n\'a été liée à ce plan de formation';
 $string['nocompetenciesinlist'] = 'Aucune compétence n\'a été sélectionnée';
 $string['nocompetenciesintemplate'] = 'Aucune compétence n\'a été liée à ce modèle de plan de formation.';
 $string['nocompetencyframeworks'] = 'Aucun référentiel de compétences n\'a encore été créé.';
@@ -166,6 +166,7 @@ $string['nouserevidence'] = 'Aucune preuve d\'acquis n\'a encore été ajoutée.
 $string['nouserplans'] = 'Aucun plan de formation n\'a encore été créé.';
 $string['oneplanwascreated'] = 'Un plan de formation a été créé.';
 $string['outcome'] = 'Objectif';
+$string['overridegrade'] = 'Écraser la note existante de la compétence lors de l\'achèvement.';
 $string['parentcompetency'] = 'Parent';
 $string['parentcompetency_edit'] = 'Modifier le parent';
 $string['parentcompetency_help'] = 'Définir la compétence parente sous laquelle cette compétence sera ajoutée. Cela peut être une autre compétence dans le même référentiel, soit le niveau supérieur du référentiel de compétences.';

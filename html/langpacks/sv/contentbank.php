@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'sv', version '3.11'.
+ * Strings for component 'contentbank', language 'sv', version '4.1'.
  *
  * @package     contentbank
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Författare';
+$string['choosecontext'] = 'Välj kurs eller kategori…';
 $string['close'] = 'Stäng';
 $string['contentbank'] = 'Innehållsbank';
 $string['contentbankpreferences'] = 'Inställningar för innehållsbank';
@@ -54,10 +55,12 @@ $string['eventcontentreplaced'] = 'Innehåll ersatt av fil';
 $string['eventcontentupdated'] = 'Innehåll uppdaterat';
 $string['eventcontentuploaded'] = 'Innehåll uppladdat';
 $string['eventcontentviewed'] = 'Innehåll visat';
+$string['exit'] = 'Lämna';
 $string['file'] = 'Ladda upp innehåll';
 $string['file_help'] = 'Filer kan lagras i innehållsbanken för användning i kurser. Endast filer som används av innehållstyper som är aktiverade på webbplatsen kan laddas upp.';
 $string['itemsfound'] = '{$a} poster funna';
 $string['lastmodified'] = 'Ändrades senast';
+$string['more'] = 'Mer';
 $string['name'] = 'Innehåll';
 $string['nocontentavailable'] = 'Inget innehåll';
 $string['nocontenttypes'] = 'Inga innehållstyper tillgängliga';

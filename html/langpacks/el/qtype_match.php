@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'el', version '3.11'.
+ * Strings for component 'qtype_match', language 'el', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -30,16 +30,16 @@ $string['availablechoices'] = 'Διαθέσιμες επιλογές';
 $string['blanksforxmorequestions'] = 'Κενά πεδία για {no} ακόμα ερωτήσεις';
 $string['correctansweris'] = 'Η σωστή απάντηση είναι: {$a}';
 $string['deletedchoice'] = '[Διαγραμμένη επιλογή]';
-$string['deletedsubquestion'] = 'Αυτό το τμήμα της ερώτησης διαγράφηκε μετά την έναρξη της προσπάθειας.';
+$string['deletedsubquestion'] = 'Αυτό το σκέλος της ερώτησης διαγράφηκε μετά την έναρξη της προσπάθειας.';
 $string['filloutthreeqsandtwoas'] = 'Πρέπει να δώσετε τουλάχιστον δύο ερωτήσεις και τρεις απαντήσεις. Μπορείτε να δώσετε επιπλέον λάθος απαντήσεις δίνοντας μια απάντηση με κενή ερώτηση. Οι καταχωρήσεις στις οποίες και η ερώτηση και η απάντηση είναι κενές θα παραλείπονται.';
 $string['nomatchinganswer'] = 'Πρέπει να ορίσετε μια απάντηση που να ταιριάζει με την ερώτηση «{$a}».';
 $string['nomatchinganswerforq'] = 'Πρέπει να ορίσετε μια απάντηση για αυτή την ερώτηση.';
 $string['notenoughqsandas'] = 'Πρέπει να δώσετε τουλάχιστον {$a->q} ερωτήσεις και {$a->a} απαντήσεις.';
 $string['notenoughquestions'] = 'Πρέπει να δώσετε τουλάχιστον {$a} ζευγάρια ερωτήσεων και απαντήσεων.';
-$string['pleaseananswerallparts'] = 'Απαντήστε σε όλα τα τμήματα της ερώτησης.';
+$string['pleaseananswerallparts'] = 'Απαντήστε σε όλα τα σκέλη της ερώτησης.';
 $string['pluginname'] = 'Αντιστοίχιση';
 $string['pluginname_help'] = 'Οι ερωτήσεις αντιστοίχισης απαιτούν από τον αποκρινόμενο να αντιστοιχίσει σωστά μια λίστα ονομάτων ή δηλώσεων (ερωτήσεων) με μια άλλη λίστα ονομάτων ή δηλώσεων (απαντήσεων).';
-$string['pluginname_link'] = 'ερώτηση/τύπος/αντιστοίχιση';
+$string['pluginname_link'] = '';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης τύπου Αντιστοίχισης';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης τύπου Αντιστοίχισης';
 $string['pluginnamesummary'] = 'Η απάντηση σε κάθε μια ερώτηση από ένα σύνολο υπο-ερωτημάτων πρέπει να επιλεχθεί από μια λίστα πιθανών απαντήσεων.';

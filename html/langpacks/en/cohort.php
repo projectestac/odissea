@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'en', version '3.11'.
+ * Strings for component 'cohort', language 'en', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -36,6 +36,7 @@ $string['bulkadd'] = 'Add to cohort';
 $string['bulknocohort'] = 'No available cohorts found';
 $string['categorynotfound'] = 'Category <b>{$a}</b> not found or you don\'t have permission to create a cohort there. The default context will be used.';
 $string['cohort'] = 'Cohort';
+$string['cohortmember'] = 'Cohort member';
 $string['cohorts'] = 'Cohorts';
 $string['cohortsin'] = '{$a}: available cohorts';
 $string['component'] = 'Source';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = 'Cohort updated';
 $string['external'] = 'External cohort';
 $string['idnumber'] = 'Cohort ID';
 $string['invalidtheme'] = 'Cohort theme does not exist';
+$string['memberofcohort'] = 'Member of cohort';
 $string['memberscount'] = 'Cohort size';
 $string['name'] = 'Name';
 $string['namecolumnmissing'] = 'There is something wrong with the format of the CSV file. Please check that it includes the correct column names. To add users to a cohort, go to \'Upload users\' in the Site administration.';

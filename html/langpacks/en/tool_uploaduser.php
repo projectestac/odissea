@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'en', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'en', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -40,6 +40,7 @@ $string['clivalidationerror'] = 'Validation error:';
 $string['csvdelimiter'] = 'CSV separator';
 $string['defaultvalues'] = 'Default values';
 $string['deleteerrors'] = 'Delete errors';
+$string['duplicateemail'] = 'Multiple users with email {$a} detected';
 $string['encoding'] = 'Encoding';
 $string['errormnetadd'] = 'Can not add remote users';
 $string['errorprefix'] = 'Error:';
@@ -53,6 +54,7 @@ $string['invalidtheme'] = 'Theme "{$a}" is not installed and will be ignored.';
 $string['invalidupdatetype'] = 'This option cannot be selected with the chosen upload type.';
 $string['invaliduserdata'] = 'Invalid data detected for user {$a} and it has been automatically cleaned.';
 $string['linex'] = 'Line {$a}';
+$string['matchemail'] = 'Match on email address';
 $string['nochanges'] = 'No changes';
 $string['notheme'] = 'No theme is defined for this user.';
 $string['pluginname'] = 'User upload';

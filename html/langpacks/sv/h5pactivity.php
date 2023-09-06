@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'sv', version '3.11'.
+ * Strings for component 'h5pactivity', language 'sv', version '4.1'.
  *
  * @package     h5pactivity
  * @category    string
@@ -74,6 +74,7 @@ $string['grade_grademethod_help'] = 'Vid användning av poängbedömning finns f
 * Första försöket (alla andra försök ignoreras)
 * Sista försöket (alla andra försök ignoreras)
 * Beräkna inte betyg';
+$string['grade_h5p'] = 'Betyg: {$a}';
 $string['grade_highest_attempt'] = 'Högsta betyg';
 $string['grade_last_attempt'] = 'Sista försöket';
 $string['grade_manual'] = 'Beräkna inte betyg';
@@ -91,8 +92,10 @@ $string['modulename'] = 'H5P';
 $string['modulename_help'] = 'H5P är en förkortning för <em>HTML5-paket</em>, dvs. ett interaktivt innehåll såsom presentationer, videor och annan multimedia, frågor, tester, spel med mera. H5P-aktiviteten gör det möjligt att ladda upp H5P och lägga till detta i en kurs.
 
 Eventuella frågeförsök markeras automatiskt och betyget registreras i betygsboken.';
+$string['modulename_link'] = 'mod/h5pactivity/view';
 $string['modulenameplural'] = 'H5P';
 $string['myattempts'] = 'Mina försök';
+$string['newsubmissions'] = 'H5P inlämnad';
 $string['no_compatible_track'] = 'Denna interaktion ({$a}) tillhandahåller inte spårningsinformation eller så är inte spårningstypen kompatibel med nuvarande aktivitetsversion.';
 $string['noparticipants'] = 'Inga deltagare att visa';
 $string['opencontentbank'] = '<a href="{$a}" target="_blank">Visa innehållet i H5P-filen i innehållsbanken</a> (öppnas i nytt fönster).';

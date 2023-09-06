@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'fr', version '3.11'.
+ * Strings for component 'auth', language 'fr', version '4.1'.
  *
  * @package     auth
  * @category    string
@@ -38,7 +38,7 @@ $string['auth_changingemailaddress'] = 'Vous avez demandé la modification de vo
 $string['auth_common_settings'] = 'Réglages partagés';
 $string['auth_data_mapping'] = 'Appariement des données';
 $string['auth_fieldlock'] = 'Verrouillage';
-$string['auth_fieldlock_expl'] = '<p><strong>Verrouiller cette valeur :</strong> si cette option est activée, elle empêchera les utilisateurs et les administrateurs de modifier le champ directement. Utilisez cette option si vous maintenez ces données dans le système d\'authentification externe.</p>';
+$string['auth_fieldlock_expl'] = '<p>Verrouiller cette valeur : si cette option est activée, les utilisateurs ne pourront pas modifier le champ. Utilisez cette option si vous maintenez ces données dans le système d\'authentification externe.</p>';
 $string['auth_fieldlockfield'] = 'Verrouiller la valeur ({$a})';
 $string['auth_fieldlocks'] = 'Verrouiller les champs utilisateur';
 $string['auth_fieldlocks_help'] = '<p>Vous pouvez verrouiller des champs utilisateurs. Ceci est utile sur les sites où les données des utilisateurs sont gérées manuellement par les administrateurs (en modifiant manuellement les enregistrements des utilisateurs) ou en utilisant l\'option « Importer des utilisateurs ». Si vous verrouillez des champs requis par Moodle, assurez-vous que vous fournissez les données en question lors de la création des comptes, sans quoi ceux-ci seront inutilisables.</p><p>Pour éviter ce problème, vous pouvez choisir comme mode de verrouillage « Déverrouillé si vide ».</p>';
@@ -149,6 +149,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'Un CAPTCHA permet d\'éviter les abus de programmes automatiques pour faire du spam. Suivez les instructions pour vérifier que vous êtes un humain : une case à cocher, des caractères à lire sur une image et à saisir ou une série d\'images à sélectionner.
 
 Si vous n\'arrivez pas à déchiffrer l\'image, essayez d\'obtenir un nouveau CAPTCHA un CAPTCHA audio.';
+$string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Question de sécurité';
 $string['selfregistration'] = 'Auto-enregistrement';
 $string['selfregistration_help'] = 'Si un plugin d\'authentification gérant l\'auto-enregistrement est choisi, par exemple par courriel, les utilisateurs potentiels peuvent créer des comptes pour eux-mêmes. Il est par conséquent possible que des spammeurs créent des comptes dans le but d\'écrire du spam dans des messages dans les forums, des articles de blog, etc. Pour éviter ce risque, désactiver l\'auto-enregistrement ou au moins le limiter en utilisant le réglage <em>Domaines courriel autorisés</em>.';

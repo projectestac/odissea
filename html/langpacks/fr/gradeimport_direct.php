@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'fr', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'fr', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -29,4 +29,5 @@ $string['direct:view'] = 'Importer des notes d\'un fichier tableur';
 $string['pluginname'] = 'Copier depuis une feuille de calcul';
 $string['privacy:metadata'] = 'Le plugin d\'importation de notes Copier depuis une feuille de calcul n\'enregistre aucune donnée personnelle.';
 $string['userdata'] = 'Aide pour la copie de données dans ce formulaire.';
-$string['userdata_help'] = 'Des notes peuvent être copiées dans une feuille de calcul et copiées dans le carnet de notes. La feuille de calcul doit comporter une colonne avec les données permettant d\'identifier les utilisateurs, soit <em>username</em>, soit <em>ID number</em>, soit l\'adresse de courriel. Chaque colonne doit avoir un entête.';
+$string['userdata_help'] = 'Des notes peuvent être copiées dans une feuille de calcul et copiées dans le carnet de notes. La feuille de calcul doit comporter une colonne avec les données permettant d\'identifier les utilisateurs, soit <em>username</em>, soit <em>ID number</em>, soit l\'adresse de courriel. Chaque colonne doit avoir un en-tête.';
+$string['userdata_link'] = 'grade/import/direct/index';

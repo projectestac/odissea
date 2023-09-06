@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'it', version '3.11'.
+ * Strings for component 'label', language 'it', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -25,35 +25,38 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdndmedia'] = 'Quando viene caricato un file multimediale nel corso tramite trascina e rilascia, verrà proposto di creare un\'etichetta';
-$string['configdndresizeheight'] = 'Creando un\'etichetta con un\'immagine caricata tramite  trascina e rilascia, l\'altezza dell\'immagine verrà ridimensionata al valore in pixel impostato (0 per non ridimensionare l\'altezza).';
-$string['configdndresizewidth'] = 'Creando un\'etichetta con un\'immagine caricata tramite  trascina e rilascia, la larghezza dell\'immagine verrà ridimensionata al valore in pixel impostato (0 per non ridimensionare la larghezza).';
+$string['configdndmedia'] = 'Quando viene caricato un file multimediale nel corso tramite trascina e rilascia, verrà proposto di creare un\'Area di testo e media';
+$string['configdndresizeheight'] = 'Creando un\'Area di testo e media con un\'immagine caricata tramite  trascina e rilascia, l\'altezza dell\'immagine verrà ridimensionata al valore in pixel impostato (0 per non ridimensionare l\'altezza).';
+$string['configdndresizewidth'] = 'Creando un\'Area di testo e media con un\'immagine caricata tramite  trascina e rilascia, la larghezza dell\'immagine verrà ridimensionata al valore in pixel impostato (0 per non ridimensionare la larghezza).';
 $string['dndmedia'] = 'Trascina e rilascia di file multimediali';
 $string['dndresizeheight'] = 'Ridimensionamento altezza per trascina e rilascia';
 $string['dndresizewidth'] = 'Ridimensionamento larghezza per trascina e rilascia';
 $string['dnduploadlabel'] = 'Inserisci media nella pagina home del corso';
-$string['dnduploadlabeltext'] = 'Aggiungi un\'etichetta alla pagina home del corso';
-$string['indicator:cognitivedepth'] = 'Etichetta cognitivo';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse Etichetta.';
-$string['indicator:cognitivedepthdef'] = 'Etichetta cognitivo';
-$string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalla risorsa Etichetta  (Livelli: Nessuna visualizzazione, Visualizzazione)';
-$string['indicator:socialbreadth'] = 'Etichetta sociale';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse Etichetta.';
-$string['indicator:socialbreadthdef'] = 'Etichetta sociale';
-$string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dalle risorse Etichetta (Livelli: Nessuna partecipazione, Partecipazione da solo)';
-$string['label:addinstance'] = 'Aggiungere etichette';
-$string['label:view'] = 'Visualizzare etichetta';
-$string['labeltext'] = 'Testo visualizzato dall\'etichetta';
-$string['modulename'] = 'Etichetta';
-$string['modulename_help'] = 'Il modulo etichetta consente di inserire immagini e testo nella pagina home del corso, assieme ai link ad attività e risorse. Le etichette sono molto versatili e possono aiutano a rendere gradevole l\'aspetto del corso.
+$string['dnduploadlabeltext'] = 'Aggiungi Area di testo e media alla pagina home del corso';
+$string['indicator:cognitivedepth'] = 'Area di testo e media cognitiva';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente in un Area di testo e media.';
+$string['indicator:cognitivedepthdef'] = 'Area di testo e media cognitiva';
+$string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dall\'Area di testo e media (Livelli: Nessuna visualizzazione, Visualizzazione)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'Area di testo e media sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente in un\'Area di Testo e media.';
+$string['indicator:socialbreadthdef'] = 'Area di testo e media sociale';
+$string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dalle aree di testo e media (Livelli: Nessuna partecipazione, Partecipazione da solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['label:addinstance'] = 'Aggiungere Area di testo e media';
+$string['label:view'] = 'Visualizzare Area di testo e media';
+$string['labeltext'] = 'Testo';
+$string['modulename'] = 'Area di testo e media';
+$string['modulename_help'] = 'L\'area di testo e media consente di inserire immagini e testo nella pagina home del corso.
 
-È possibile usare le etichette per:
+È possibile usare l\'area di testo e media per:
 
 * Dividere elenchi di attività con sottotitoli o immagini
 * Visualizzare video e suoni direttamente nella pagina home del corso
 * Aggiungere brevi descrizioni delle sezioni del corso';
-$string['modulenameplural'] = 'Etichette';
-$string['pluginadministration'] = 'Gestione etichetta';
-$string['pluginname'] = 'Etichetta';
-$string['privacy:metadata'] = 'Il plugin risorsa "Cartella" non memorizza dati personali.';
-$string['search:activity'] = 'Etichetta';
+$string['modulename_link'] = 'mod/label/view';
+$string['modulenameplural'] = 'Aree di testo e media';
+$string['pluginadministration'] = 'Gestione Area di testo e media';
+$string['pluginname'] = 'Area di testo e media';
+$string['privacy:metadata'] = 'Il plugin Area di testo e media non memorizza dati personali.';
+$string['search:activity'] = 'Area di testo e media';

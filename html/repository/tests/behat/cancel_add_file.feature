@@ -9,6 +9,9 @@ Feature: A selected file can be cancelled
     Given the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1 | 0 |
+    And the following "blocks" exist:
+      | blockname     | contextlevel | reference | pagetypepattern | defaultregion |
+      | private_files | System       | 1         | my-index        | side-post     |
     And the following "activities" exist:
       | activity | course | name        | intro              |
       | folder   | C1     | Folder name | Folder description |

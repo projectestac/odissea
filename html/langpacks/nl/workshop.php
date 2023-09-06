@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'nl', version '3.11'.
+ * Strings for component 'workshop', language 'nl', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -43,8 +43,10 @@ $string['allocationdone'] = 'Toewijzing klaar';
 $string['allocationerror'] = 'Toewijzingsfout';
 $string['allowedfiletypesforoverallfeedback'] = 'Toegestane bestandstypes voor feedback-bijlages';
 $string['allowedfiletypesforoverallfeedback_help'] = 'De toegestane bestandstypes voor feedback-bijlages kan beperkt worden door een  lijst in te geven met toegestane bestandsextensies. Als het veld leeg gelaten wordt, dan worden alle bestandstypes toegestaan.';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
 $string['allowedfiletypesforsubmission'] = 'Toegestane bestandtypes voor ingestuurde bestanden';
 $string['allowedfiletypesforsubmission_help'] = 'De toegestane bestandstypes voor feedback-bijlages kan beperkt worden door een  lijst in te geven met toegestane bestandsextensies. Als het veld leeg gelaten wordt, dan worden alle bestandstypes toegestaan.';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = 'Alle inzendingen ({$a})';
 $string['alreadygraded'] = 'Al beoordeeld';
 $string['areaconclusion'] = 'Conclusietekst';
@@ -193,10 +195,12 @@ $string['indicator:cognitivedepth'] = 'Workshop cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de cognitieve diepte bereikt door de leerling in een Workshop activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Workshop cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de workshopactiviteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken, Reageren op feedback, Opnieuw verzenden na het bekijken van feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Workshop sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de sociale breedte bereikt door de leerling in een Workshop activiteit.';
 $string['indicator:socialbreadthdef'] = 'Workshop sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de workshopactiviteiten tijdens dit analyse-interval bereikt (Niveaus = geen deelname, alleen deelnemer, deelnemer met anderen)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Instructies voor taak';
 $string['instructreviewers'] = 'Instructies voor beoordeling';
@@ -215,6 +219,7 @@ Leerlingen kunnen gelijk welke digitale inhoud (bestanden) insturen, zoals docum
 Inzendingen worden beoordeeld via een beoordelingsformulier met meerdere criteria dat opgesteld is door de leraar. Het peerevaluatieproces kan op voorhand geoefend worden door een voorbeeldtaak die de leraar ingestuurd heeft, samen met een referentiebeoordeling. Leerlingen kunnen één of meer taken van hun medeleerlingen beoordelen. De ingestuurde documenten en de beoordelaars kunnen anoniem zijn indien gewenst.
 
 Leerlingen krijgen twee cijfers voor een workshopactiviteit - een cijfer voor hun ingestuurde taak en een cijfer voor de evaluatie van de taak van de medeleerling. Beide cijfers worden opgenomen in de cijferlijst.';
+$string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = 'Workshops';
 $string['myassessments'] = 'Mijn beoordelingen';
 $string['mysubmission'] = 'Mijn inzending';
@@ -363,6 +368,7 @@ $string['submissiongradeof'] = 'Cijfer voor taak (op {$a}';
 $string['submissionlastmodified'] = 'Laatst gewijzigd';
 $string['submissionrequiredcontent'] = 'Je moet wat tekst of een bestand toevoegen.';
 $string['submissionrequiredfile'] = 'Je moet een bestand of wat tekst toevoegen.';
+$string['submissionsallocation'] = 'Toewijzing van inzendingen';
 $string['submissionsettings'] = 'Taak instellingen';
 $string['submissionsreport'] = 'Workshop insturingsrapport';
 $string['submissionstart'] = 'Inzenden kan vanaf';

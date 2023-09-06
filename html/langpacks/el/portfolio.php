@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'el', version '3.11'.
+ * Strings for component 'portfolio', language 'el', version '4.1'.
  *
  * @package     portfolio
  * @category    string
@@ -45,7 +45,7 @@ $string['confirmcancel'] = 'Είστε βέβαιοι ότι θέλετε να �
 $string['confirmexport'] = 'Παρακαλούμε επιβεβαιώστε αυτή την εξαγωγή';
 $string['confirmsummary'] = 'Περίληψη της εξαγωγής σας';
 $string['continuetoportfolio'] = 'Συνεχίστε στο χαρτοφυλάκιό σας';
-$string['deleteportfolio'] = 'Διαγραφή του στιγμιότυπου του χαρτοφυλακίου';
+$string['deleteportfolio'] = 'Διαγραφή του στιγμιοτύπου του χαρτοφυλακίου';
 $string['destination'] = 'Προορισμός';
 $string['disabled'] = 'Λυπόμαστε αλλά οι εξαγωγές χαρτοφυλακίων δεν είναι ενεργές σε αυτό τον ιστότοπο';
 $string['disabledinstance'] = 'Απενεργοποιημένο';
@@ -110,7 +110,7 @@ $string['invalidconfigproperty'] = 'Δεν ήταν δυνατή η εύρεση
 $string['invalidexportproperty'] = 'Δεν ήταν δυνατή η εύρεση της ιδιότητας ρύθμισης εξαγωγής ({$a->property} του {$a->class})';
 $string['invalidfileareaargs'] = 'Μη έγκυρες παράμετροι περιοχής αρχείου δόθηκαν στο set_file_and_format_data - πρέπει να περιέχουν τα contextid, component, filearea και itemid';
 $string['invalidformat'] = 'Κάτι εξάγει σε μη έγκυρη μορφή, {$a}';
-$string['invalidinstance'] = 'Δεν ήταν δυνατή η εύρεση αυτού του στιγμιότυπου χαρτοφυλακίου';
+$string['invalidinstance'] = 'Δεν ήταν δυνατή η εύρεση αυτού του στιγμιοτύπου χαρτοφυλακίου';
 $string['invalidpreparepackagefile'] = 'Μη έγκυρη κλήση στο prepare_package_file - πρέπει να ρυθμιστεί σαν single ή multifiles';
 $string['invalidproperty'] = 'Δεν ήταν δυνατή η εύρεση αυτής της ιδιότητας ({$a->property} του {$a->class})';
 $string['invalidsha1file'] = 'Μη έγκυρη κλήση στο get_sha1_file - πρέπει να ρυθμιστεί σαν single ή multifiles';
@@ -136,7 +136,7 @@ $string['moderatedbsizethreshold'] = '«Μέτριο» μέγεθος βάσης
 $string['moderatedbsizethresholddesc'] = 'Αριθμός των εγγραφών στη βάση δεδομένων πάνω των οποίων θεωρείται ότι θα χρειαστούν «μέτριο» χρόνο για μεταφορά';
 $string['moderatefilesizethreshold'] = '«Μέτριο» μέγεθος αρχείου για μεταφορά';
 $string['moderatefilesizethresholddesc'] = 'Αρχεία με μέγεθος μεγαλύτερο από αυτό το όριο θα θεωρούνται ότι θα χρειαστούν «μέτριο» χρόνο για μεταφορά';
-$string['multipleinstancesdisallowed'] = 'Προσπάθεια δημιουργίας ενός άλλου στιγμιότυπου ενός πρόσθετου που έχει απαγορεύσει πολλαπλά στιγμιότυπα ({$a})';
+$string['multipleinstancesdisallowed'] = 'Προσπάθεια δημιουργίας ενός άλλου στιγμιοτύπου ενός πρόσθετου που έχει απαγορεύσει πολλαπλά στιγμιότυπα ({$a})';
 $string['mustsetcallbackoptions'] = 'Πρέπει να ρυθμίσετε τις επιλογές της κλάσης επανάκλησης είτε στον κατασκευαστή κλάσης portfolio_add_button ή χρησιμοποιώντας την μέθοδο set_callback_options';
 $string['noavailableplugins'] = 'Λυπούμαστε αλλά δεν υπάρχουν διαθέσιμα χαρτοφυλάκια για να εξάγετε';
 $string['nocallbackclass'] = 'Δεν ήταν δυνατή η εύρεση της κλάσης επανάκλησης προς χρήση ({$a})';

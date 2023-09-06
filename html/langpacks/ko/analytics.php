@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'ko', version '3.11'.
+ * Strings for component 'analytics', language 'ko', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -29,4 +29,5 @@ $string['fixedack'] = '수락';
 $string['incorrectlyflagged'] = '잘못 표시됨';
 $string['notapplicable'] = '해당되지 않음';
 $string['notuseful'] = '유용하지 않음';
+$string['timesplittingmethod_link'] = 'Time_splitting_methods';
 $string['useful'] = '유용함';

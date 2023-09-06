@@ -38,7 +38,7 @@ function report_coursequotas_format_size(int $size) {
 
     $suffix = 0;
     while ($size > 1024 && $suffix < count($suffixes)) {
-        $size = $size / 1024;
+        $size /= 1024;
         $suffix++;
     }
 
@@ -83,7 +83,7 @@ function report_coursequotas_get_directory_size($directory) {
     if (file_exists($directory)) {
         $size = exec('du -sk ' . $directory);
         $size = explode('/', $size);
-        $size = floatval($size[0]) * 1024; // Size in kB to bytes.
+        $size = (float)$size[0] * 1024; // Size in kB to bytes.
     }
 
     return $size;

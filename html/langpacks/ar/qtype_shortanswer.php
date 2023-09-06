@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'ar', version '3.11'.
+ * Strings for component 'qtype_shortanswer', language 'ar', version '4.1'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughanswers'] = 'هذا النوع من الأسئلة يتطلب 
 $string['pleaseenterananswer'] = 'لطفاً، أدخل إجابة.';
 $string['pluginname'] = 'الإجابة القصيرة';
 $string['pluginname_help'] = 'جواباً على سؤال (قد يتضمن صورة)، يقوم المجيب بطباعة كلمة أو عبارة قصيرة. قد تكون هناك عدة إجابات صحيحة محتملة، لكل منها علامة مختلفة. إذا تم تأشير خيار "تحسس حالة الأحرف"، فسيكون بإمكانك منح علامات مختلفة لكل من "Word" و "word".';
+$string['pluginname_link'] = 'question/type/shortanswer';
 $string['pluginnameadding'] = 'تجري إضافة سؤال إجابة قصيرة';
 $string['pluginnameediting'] = 'يجري تحرير سؤال إجابة قصيرة';
 $string['pluginnamesummary'] = 'يسمح بوضع إجابة من كلمة واحدة أو أكثر يتم منح علامتها عبر المقارنة مع نماذج إجابات مختلفة، وتلك الأخيرة قد تتضمن رموز بديلة عن الحروف.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_rimport', language 'fr', version '3.11'.
+ * Strings for component 'offlinequiz_rimport', language 'fr', version '4.1'.
  *
  * @package     offlinequiz_rimport
  * @category    string
@@ -53,13 +53,13 @@ $string['erroruseridviolation'] = 'Plusieurs utilisateurs trouvés';
 $string['errorusernotincourse'] = 'L\'utilisateur n\'est pas inscrit dans le cours';
 $string['errorusernotinlist'] = 'L\'utilisateur n\'est pas dans la liste';
 $string['idnumber'] = 'Numéro d\'identification';
-$string['import'] = 'Importer';
-$string['importedon'] = 'Importé le';
+$string['import'] = 'Évaluer';
+$string['importedon'] = 'Évalué le';
 $string['importforms'] = 'Importer des grilles de réponses';
 $string['importlisterror'] = 'Liste non détectée';
 $string['importpforms'] = 'Importer des listes de participants';
 $string['newformsinqueue'] = '{$a} grille(s) de réponses est/sont en attente d\'évaluation.';
-$string['pluginname'] = 'Import de résultats de test hors-ligne';
+$string['pluginname'] = 'Import des évaluations de test hors-ligne';
 $string['privacy:metadata'] = 'Ce plugin n\'enregistre aucune donnée personnelle.';
 $string['processingformsinqueue'] = '{$a} grille(s) de réponses est/sont en traitement';
 $string['showpage'] = 'Afficher';

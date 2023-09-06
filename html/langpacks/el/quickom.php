@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quickom', language 'el', version '3.11'.
+ * Strings for component 'quickom', language 'el', version '4.1'.
  *
  * @package     quickom
  * @category    string
@@ -45,7 +45,7 @@ $string['connectionok'] = 'Η σύνδεση λειτουργεί.';
 $string['connectionstatus'] = 'Κατάσταση σύνδεσης';
 $string['defaultsettings'] = 'Προεπιλεγμένες ρυθμίσεις Quickom';
 $string['downloadical'] = 'Λήψη iCal';
-$string['duration'] = 'Διάρκεια';
+$string['duration'] = 'Διάρκεια (λεπτά)';
 $string['endtime'] = 'Ώρα λήξης';
 $string['err_duration_nonpositive'] = 'Η διάρκεια πρέπει να είναι θετική.';
 $string['err_duration_too_long'] = 'Η διάρκεια δεν μπορεί να υπερβαίνει τις 8767 ώρες (1 έτος).';

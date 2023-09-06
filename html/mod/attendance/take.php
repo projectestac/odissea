@@ -88,21 +88,19 @@ if (($formdata = data_submitted()) && confirm_sesskey()) {
     redirect($att->url_manage(), get_string('attendancesuccess', 'attendance'));
 }
 
-$PAGE->set_url($att->url_take());
+$PAGE->set_url($att->url_take((array)$pageparams));
 $PAGE->set_title($course->shortname. ": ".$att->name);
 $PAGE->set_heading($course->fullname);
 $PAGE->set_cacheable(true);
 $PAGE->navbar->add($att->name);
 
 $output = $PAGE->get_renderer('mod_attendance');
-$tabs = new attendance_tabs($att);
-$sesstable = new attendance_take_data($att);
+$sesstable = new mod_attendance\output\take_data($att);
 
 // Output starts here.
 
 echo $output->header();
-echo $output->heading(get_string('attendanceforthecourse', 'attendance').' :: ' .format_string($course->fullname));
-echo $output->render($tabs);
+
 echo $output->render($sesstable);
 
 echo $output->footer();

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'eu', version '3.11'.
+ * Strings for component 'cachestore_file', language 'eu', version '4.1'.
  *
  * @package     cachestore_file
  * @category    string
@@ -25,8 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['asyncpurge'] = 'Hustu direktorioa modu asinkronoan';
+$string['asyncpurge_help'] = 'Gaituz gero, cache berrikusketarekin direktorio berria sortzen da eta direktorio zaharra modu asinkronoan programatutako ataza bitartez ezabatuko da.';
 $string['autocreate'] = 'Sortu direktorioa automatikoki';
 $string['autocreate_help'] = 'Gaituz gero bidean zehaztutako direktorioa automatikoki sortuko da dagoeneko existitzen ez bada.';
+$string['lockwait'] = 'Blokeoaren gehienezko itxarote-epea';
+$string['lockwait_help'] = 'Cache-gako bat irakurri edo idatzi aurretik blokeatze esklusiboarentzako gehienez itxaron beharreko denbora (segundotan). Ezarpen hau soilik erabiliko da irakurtze ala idazte blokeoak eskatzen dituzten cache definizioetan.';
 $string['path'] = 'Cachearen bidea';
 $string['path_help'] = 'Cache-biltegi honetarako fitxategiak gordetzeko erabili beharreko direktorioa. Hutsik utziz gero (modu lehenetsian), moodledata direktorioaren barruan direktorio bat sortuko da automatikoki. Hau errendimendu hobea duen unitate bateko fitxategi-biltegi bat zehazteko erabil daiteke (memorian dagoen bat adibidez).';
 $string['pluginname'] = 'Fitxategi-cachea';
@@ -42,3 +46,4 @@ Aukera hau gaitzea soilik hurrengo hauetako bat gertatzen bada gomendatzen da:
 
 * Cachean egongo den elementu kopurua nahikoa txikia izango dela eta exekutatzen ari den fitxategi-sistemarekin arazoak egongo ez direla badakizu.
 * Cacheatutako datuak sortzeak kostu handia ez badu. Bestela lehenetsitako ezarpenak uztea komeni da arazoak izateko arriskuak txikitzen direlako.';
+$string['task_asyncpurge'] = 'Hustu modu asinkronoan fitxategi-biltegiko cache berrikusketa zaharrak';

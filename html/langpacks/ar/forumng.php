@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumng', language 'ar', version '3.11'.
+ * Strings for component 'forumng', language 'ar', version '4.1'.
  *
  * @package     forumng
  * @category    string
@@ -62,7 +62,7 @@ $string['configshowusername'] = 'تضمين أسماء المستخدمين في
 $string['configtrackreadposts'] = 'إختر \'نعم\' إذا كنت تريد متابعة ما تمت قراءته أو عدم قراءته لكل مستخدم.';
 $string['confirmdelete_notdiscussion'] = 'حذف هذا المنشور لن يؤدي إلى حذف المناقشة. إذا أردت حذفها، استعمل أدوات التحكم في أسفل صفحة المناقشة.';
 $string['confirmdeletediscuss'] = 'حذف المناقشة';
-$string['convert_process_dashboard'] = 'تحويل تفضيلات لوحة التحكم...';
+$string['convert_process_dashboard'] = 'تحويل تفضيلات دفة القيادة...';
 $string['convert_process_dashboard_done'] = 'أُنجز (تم {$a->yay}، فشل {$a->nay}).';
 $string['convert_process_discussions'] = 'تحويل المناقشات...';
 $string['discussion'] = 'المناقشة';
@@ -148,8 +148,8 @@ $string['event:subscriptioncreated'] = 'اشتراك تم إنشاؤه';
 $string['event:subscriptiondeleted'] = 'اشتراك تمت إزالته';
 $string['expandall'] = 'توسيع كل المنشورات';
 $string['exportedtitle'] = 'مناقشة المنتدى &lsquo;{$a->subject}&rsquo; المصدرة في {$a->date}';
-$string['externaldashboardadd'] = 'إضافة منتدى إلى لوحة التحكم';
-$string['externaldashboardremove'] = 'إضافة المنتدى من لوحة التحكم';
+$string['externaldashboardadd'] = 'إضافة منتدى إلى دفة القيادة';
+$string['externaldashboardremove'] = 'إضافة المنتدى من دفة القيادة';
 $string['extra_emails_help'] = 'أدخل عنوان بريد الكتروني واحد أو أكثر مفصولة بفراغات أو فوارز منقوطة.';
 $string['feed_nopermission'] = 'ليست لديك صلاحية الوصول إلى هذه التغذية.';
 $string['feedtype_all_posts'] = 'يحتوي كل المنشورات';
@@ -171,6 +171,7 @@ $string['forumng:startdiscussion'] = 'بدء مناقشات جديدة';
 $string['forumng:viewdiscussion'] = 'معاينة المناقشات';
 $string['forumngdiscusstagfilter'] = 'معاينة مناقشات المنتدى حسب الوسوم';
 $string['forumngdiscusstagfilter_help'] = 'حدد أحد خيارات الوسوم لمعاينة/ترشيح مناقشات المنتدى تبعًا له';
+$string['forumtype_link'] = 'mod/forumng/forumtypes';
 $string['grading_help'] = 'إذا إخترت هذا الخيار، ستضاف درجة تقييم لهذا المنتدى إلى سجل تقديرات المساق وسيتم احتسابها تلقائيًا. أتركه معطلاً ليكون المنتدى بلا تقييم، أو إذا أردت تقييمه يدويًا.
 
 الطرق المتعددة لحساب التقديرات، تشرح نفسها بنفسها؛ في كل حالة، يتم حساب درجة كل طالب بناءً على كل التقييمات التي حصل عليها في كل منشوراته. التقديرات محددة بالمقياس؛ على سبيل المثال، إذا كان المقياس 0-3، وطريقة التقييم معدة بشكل &lsquo;عدد&rsquo;

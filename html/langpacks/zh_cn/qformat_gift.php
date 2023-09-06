@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'zh_cn', version '3.11'.
+ * Strings for component 'qformat_gift', language 'zh_cn', version '4.1'.
  *
  * @package     qformat_gift
  * @category    string
@@ -36,4 +36,5 @@ $string['importminerror'] = '题目中有错误。此题目类型需要更多答
 $string['nohandler'] = '找不到题目类型“{$a}”的处理程序';
 $string['pluginname'] = 'Gift 格式';
 $string['pluginname_help'] = 'Gift格式支持通过文本文件导入和导出选择题、判断题、填空题、匹配题、missing word、数字题和问答题。';
+$string['pluginname_link'] = 'qformat/gift';
 $string['privacy:metadata'] = 'GIFT问题格式插件不存储任何个人数据。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_menu', language 'ar', version '3.11'.
+ * Strings for component 'datafield_menu', language 'ar', version '4.1'.
  *
  * @package     datafield_menu
  * @category    string

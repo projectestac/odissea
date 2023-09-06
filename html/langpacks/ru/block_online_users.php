@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'ru', version '3.11'.
+ * Strings for component 'block_online_users', language 'ru', version '4.1'.
  *
  * @package     block_online_users
  * @category    string
@@ -35,7 +35,7 @@ $string['online_users:addinstance'] = 'Добавлять новый блок «
 $string['online_users:myaddinstance'] = 'Добавлять новый блок «Пользователи на сайте» на страницу «Личный кабинет»';
 $string['online_users:viewlist'] = 'Видеть список пользователей на сайте';
 $string['onlinestatushiding'] = 'Скрытие присутствия на сайте';
-$string['onlinestatushiding_desc'] = 'При включенном параметре у пользователей есть возможность скрыть свой онлайн-статус от других пользователей.';
+$string['onlinestatushiding_desc'] = 'При включенном параметре у пользователей есть возможность скрыть от других пользователей свой онлайн-статус.';
 $string['otherusers'] = 'Другие пользователи ({$a})';
 $string['periodnminutes'] = 'последние {$a} минут';
 $string['pluginname'] = 'Пользователи на сайте';

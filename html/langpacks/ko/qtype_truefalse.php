@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'ko', version '3.11'.
+ * Strings for component 'qtype_truefalse', language 'ko', version '4.1'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -34,6 +34,7 @@ $string['feedbacktrue'] = '응답 \'참\'에 대한 피드백';
 $string['pleaseselectananswer'] = '답을 선택하세요.';
 $string['pluginname'] = '참/거짓';
 $string['pluginname_help'] = '질문(그림을 포함할 수 있음)에 대한 응답으로 응답자는 참 혹은 거짓을 선택합니다.';
+$string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = '참/거짓형 질문 추가';
 $string['pluginnameediting'] = '참/거짓형 질문 편집';
 $string['pluginnamesummary'] = '오직 \'참\'과 \'거짓\' 중 하나만 선택할 수 있는 선다형 질문의 단순한 형태';

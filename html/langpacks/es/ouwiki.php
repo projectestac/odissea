@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ouwiki', language 'es', version '3.11'.
+ * Strings for component 'ouwiki', language 'es', version '4.1'.
  *
  * @package     ouwiki
  * @category    string
@@ -153,6 +153,7 @@ $string['gradesupdated'] = 'Calificaciones actualizadas';
 $string['hideannotationicons'] = 'Ocultar anotaciones';
 $string['historycompareaccessibility'] = 'Seleccione {$a->lastdate} {$a->createdtime}';
 $string['historyfor'] = 'Historia por';
+$string['import_process_summary'] = 'Resumen';
 $string['index'] = 'Índice del wiki';
 $string['jsajaxrequired'] = 'Esta página de Anotaciones requiere que esté habilitado Javascript en su navegador y estén configurados AJAX y Javascript en su perfil de usuario en la parte de Características web avanzadas.';
 $string['jsnotenabled'] = 'Javascript no está habilitado en su navegador.';

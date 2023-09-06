@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'en', version '3.11'.
+ * Strings for component 'studentquiz', language 'en', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -272,8 +272,8 @@ $string['privacy:metadata:studentquiz_comment:deleteuserid'] = 'ID of the user d
 $string['privacy:metadata:studentquiz_comment:edited'] = 'Time edited time comment.';
 $string['privacy:metadata:studentquiz_comment:edituserid'] = 'ID of the user edited comment.';
 $string['privacy:metadata:studentquiz_comment:parentid'] = 'ID of parent comment. 0: top level comment.';
-$string['privacy:metadata:studentquiz_comment:questionid'] = 'ID of the question.';
 $string['privacy:metadata:studentquiz_comment:status'] = 'Status of comment';
+$string['privacy:metadata:studentquiz_comment:studentquizquestionid'] = 'ID of the studentquizquestion.';
 $string['privacy:metadata:studentquiz_comment:timemodified'] = 'Comment modified time';
 $string['privacy:metadata:studentquiz_comment:type'] = 'Type of comment';
 $string['privacy:metadata:studentquiz_comment:userid'] = 'ID of the user.';
@@ -296,21 +296,21 @@ $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'Number of co
 $string['privacy:metadata:studentquiz_progress:lastanswercorrect'] = '0: last answer was wrong or undefined, 1: last answer was correct.';
 $string['privacy:metadata:studentquiz_progress:lastreadprivatecomment'] = 'Last time user read the private comments';
 $string['privacy:metadata:studentquiz_progress:lastreadpubliccomment'] = 'Last time user read the public comments';
-$string['privacy:metadata:studentquiz_progress:questionid'] = 'ID of the question.';
 $string['privacy:metadata:studentquiz_progress:studentquizid'] = 'ID of the StudentQuiz.';
+$string['privacy:metadata:studentquiz_progress:studentquizquestionid'] = 'ID of the studentquizquestion.';
 $string['privacy:metadata:studentquiz_progress:userid'] = 'ID of the user.';
 $string['privacy:metadata:studentquiz_question'] = 'Store question related properties';
 $string['privacy:metadata:studentquiz_question:groupid'] = 'ID of group that question belong to';
 $string['privacy:metadata:studentquiz_question:hidden'] = 'Property whether the question hidden or not';
 $string['privacy:metadata:studentquiz_question:pinned'] = 'Property whether the question pinned or not';
-$string['privacy:metadata:studentquiz_question:questionid'] = 'ID of the question';
 $string['privacy:metadata:studentquiz_question:state'] = 'Property whether the question is approved, disapprove, new or changed';
+$string['privacy:metadata:studentquiz_question:studentquizid'] = 'ID of the StudentQuiz.';
 $string['privacy:metadata:studentquiz_rate'] = 'Store rates for questions.';
-$string['privacy:metadata:studentquiz_rate:questionid'] = 'ID of the question.';
 $string['privacy:metadata:studentquiz_rate:rate'] = 'Rate for the question.';
+$string['privacy:metadata:studentquiz_rate:studentquizquestionid'] = 'ID of the studentquizquestion.';
 $string['privacy:metadata:studentquiz_rate:userid'] = 'ID of the user.';
-$string['privacy:metadata:studentquiz_state_history:questionid'] = 'ID of the question.';
 $string['privacy:metadata:studentquiz_state_history:state'] = 'Property whether the question is approved, disapprove, new or changed';
+$string['privacy:metadata:studentquiz_state_history:studentquizquestionid'] = 'ID of the studentquizquestion.';
 $string['privacy:metadata:studentquiz_state_history:timecreated'] = 'Time to create action.';
 $string['privacy:metadata:studentquiz_state_history:userid'] = 'ID of the user.';
 $string['private'] = 'Private';

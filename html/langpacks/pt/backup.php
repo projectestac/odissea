@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'pt', version '3.11'.
+ * Strings for component 'backup', language 'pt', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -73,6 +73,7 @@ $string['automatedsetup'] = 'Configuração das cópias de segurança automátic
 $string['automatedstorage'] = 'Armazenamento das cópias de segurança automáticas';
 $string['automatedstoragehelp'] = 'Escolha a localização dos ficheiros das cópias de segurança automáticas';
 $string['backupactivity'] = 'Cópia de segurança da atividade: {$a}';
+$string['backupautoactivitiesdescription'] = 'Define o valor predefinido da inclusão de atividades nas cópias de segurança. Para que a Reciclagem funcione, esta configuração tem de estar ativada.';
 $string['backupcourse'] = 'Cópia de segurança da disciplina: {$a}';
 $string['backupcoursedetails'] = 'Detalhes da disciplina';
 $string['backupcoursesection'] = 'Secção: {$a}';
@@ -120,7 +121,7 @@ $string['choosefilefromuserbackup_help'] = 'Os ficheiros de cópia de segurança
 $string['config_keep_groups_and_groupings'] = 'Por predefinição, manter os grupos e agrupamentos.';
 $string['config_keep_roles_and_enrolments'] = 'Por predefinição, manter os papéis e inscrições atuais.';
 $string['config_overwrite_conf'] = 'Permite que o utilizador substitua a configuração atual da disciplina.';
-$string['config_overwrite_course_fullname'] = '.Por predefinição, substituir o nome completo da disciplina pelo que está no ficheiro da cópia de segurança. Isto requer que "Substituir configurações da disciplina" esteja ativado e o utilizador atual tenha a permissão de alterar o nome completo da disciplina (moodle/course:changefullname).';
+$string['config_overwrite_course_fullname'] = 'Por predefinição, substituir o nome completo da disciplina pelo que está no ficheiro da cópia de segurança. Isto requer que "Substituir configurações da disciplina" esteja ativado e o utilizador atual tenha a permissão de alterar o nome completo da disciplina (moodle/course:changefullname).';
 $string['config_overwrite_course_shortname'] = 'Por predefinição, substituir o nome curto da disciplina pelo que está no ficheiro da cópia de segurança. Isto requer que "Substituir configurações da disciplina" esteja ativado e o utilizador atual tenha a permissão de alterar o nome curto da disciplina (moodle/course:changeshortname).';
 $string['config_overwrite_course_startdate'] = 'Por predefinição, substituir a data de início da disciplina pela data do ficheiro da cópia de segurança. Isto requer que "Substituir configurações da disciplina" esteja ativado e o utilizador atual tenha a permissão de alterar as datas da disciplina no restauro (moodle/restore:rolldates).';
 $string['configgeneralactivities'] = 'Se ativar esta opção, as atividades serão incluídas nas cópias de segurança.';
@@ -205,7 +206,7 @@ $string['errorfilenametoolong'] = 'O comprimento do nome do ficheiro tem de ser 
 $string['errorinvalidformat'] = 'O formato da cópia de segurança é desconhecido.';
 $string['errorinvalidformatinfo'] = 'O ficheiro selecionado não é um ficheiro de cópia de segurança Moodle válido e não pode ser restaurado.';
 $string['errorminbackup20version'] = 'Esta cópia de segurança foi criada com uma versão de desenvolvimento do Moodle ({$a->backup}). A versão mínima necessária é {$a->min}. O restauro não pode continuar.';
-$string['errorrestorefrontpagebackup'] = 'Apenas pode restaurar cópias de segurança a partir da página principal';
+$string['errorrestorefrontpagebackup'] = 'Apenas pode restaurar cópias de segurança da página principal a partir da página principal';
 $string['executionsuccess'] = 'O ficheiro da cópia de segurança foi criado com sucesso.';
 $string['extractingbackupfileto'] = 'A extrair ficheiro de cópia de segurança para: {$a}';
 $string['failed'] = 'Ocorreu um erro na cópia de segurança';
@@ -310,13 +311,13 @@ $string['qcategory2coursefallback'] = 'A categoria de perguntas "{$a->name}", or
 $string['qcategorycannotberestored'] = 'A categoria de perguntas "{$a->name}" não pode ser criada através do restauro';
 $string['question2coursefallback'] = 'A categoria de perguntas "{$a->name}", originalmente no contexto da categoria sistema/disciplina no ficheiro da cópia de segurança, vai ser criado no contexto da disciplina aquando do restauro';
 $string['questionegorycannotberestored'] = 'As perguntas "{$a->name}" não podem ser criadas por restauro';
-$string['recyclebin_desc'] = 'Estas configurações também serão aplicadas à reciclagem.';
+$string['recyclebin_desc'] = 'Tenha em atenção que estas configurações também serão aplicadas à reciclagem.';
 $string['replacerestoredefaults'] = 'Repor predefinições quando restaurar noutra disciplina apagando o conteúdo';
 $string['restoreactivity'] = 'Restaurar atividade';
 $string['restorecourse'] = 'Restaurar disciplina';
 $string['restorecoursesettings'] = 'Configurações da disciplina';
 $string['restoredcourseid'] = 'ID da disciplina restaurada: {$a}';
-$string['restoreexecutionsuccess'] = 'A disciplina foi restaurada com sucesso. Após clicar no botão \'Continuar\' será encaminhado para a página da disciplina restaurada.';
+$string['restoreexecutionsuccess'] = 'A disciplina foi restaurada com sucesso.';
 $string['restorefileweremissing'] = 'Não foi possível restaurar alguns ficheiros pois estavam em falta no ficheiro da cópia de segurança.';
 $string['restorenewcoursefullname'] = 'Nome da nova disciplina';
 $string['restorenewcourseshortname'] = 'Nome curto da nova disciplina';

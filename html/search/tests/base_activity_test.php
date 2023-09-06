@@ -385,7 +385,7 @@ class base_activity_test extends \advanced_testcase {
 
         $result = $baseactivity->get_doc_icon($document);
 
-        $this->assertEquals('icon', $result->get_name());
+        $this->assertEquals('monologo', $result->get_name());
         $this->assertEquals('test_activity', $result->get_component());
     }
 }

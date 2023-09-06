@@ -13,6 +13,9 @@
 .wrsUI_app.wrsUI_graph:focus {
   outline: none;
 }
+.wrsUI_app.wrsUI_graph .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer canvas {
+  background: none;
+}
 
 .wrsUI_app.wrsUI_graph .wrsUI_drawerPanelRightDrawer .wrsUI_aux_drawerContent {
   background: #fafafa;

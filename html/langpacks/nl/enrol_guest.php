@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'nl', version '3.11'.
+ * Strings for component 'enrol_guest', language 'nl', version '4.1'.
  *
  * @package     enrol_guest
  * @category    string
@@ -43,5 +43,6 @@ $string['showhint_desc'] = 'Toon de eerste letter van het wachtwoord voor gastto
 $string['status'] = 'Gasttoegang toestaan';
 $string['status_desc'] = 'Laat standaard tijdelijke gasttoegang toe.';
 $string['status_help'] = 'Deze instelling bepaalt of een gebruiker de cursus als gast kan bezoeken, zonder zich te moeten aanmelden bij de cursus';
+$string['status_link'] = 'enrol/guest';
 $string['usepasswordpolicy'] = 'Gebruik wachtwoordbeleid';
 $string['usepasswordpolicy_desc'] = 'Gebruik het standaard wachtwoordbeleid voor wachtwoorden voor gasttoegang';

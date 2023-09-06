@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_jmol', language 'ar', version '3.11'.
+ * Strings for component 'filter_jmol', language 'ar', version '4.1'.
  *
  * @package     filter_jmol
  * @category    string
@@ -33,6 +33,7 @@ $string['dblock'] = 'd-block';
 $string['fblock'] = 'f-block';
 $string['geosurfaceasdots'] = 'سطح الأرض بشكل نقاط';
 $string['jmolfiletypes_desc'] = 'وصف لأنواع ملفات Jmol';
+$string['jsmol_link'] = 'http://google.co.uk';
 $string['pblock'] = 'p-block';
 $string['sblock'] = 's-block';
 $string['spacefill'] = 'إملاء الفراغ';

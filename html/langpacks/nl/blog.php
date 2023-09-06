@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'nl', version '3.11'.
+ * Strings for component 'blog', language 'nl', version '4.1'.
  *
  * @package     blog
  * @category    string
@@ -160,8 +160,8 @@ $string['privacy:unknown'] = 'Onbekend';
 $string['publishto'] = 'Publiceer naar';
 $string['publishto_help'] = 'Er zijn 3 opties
 
-* Jezelf (klad) - Enkel jij en de beheerders kunnen dit item zien
-* Iedereen op deze site - Iedreen die geregistreerd si op deze site kan dit blogbericht lezen
+* Jezelf (concept) - Enkel jij en de beheerders kunnen dit item zien
+* Iedereen op deze site - Iedereen die geregistreerd si op deze site kan dit blogbericht lezen
 * Iedereen ter wereld - Iedereen, gasten ook, kunnen dit blogbericht lezen';
 $string['publishtocourse'] = 'Gebruikers die een cursus met je delen';
 $string['publishtocourseassoc'] = 'Leden van de geassocieerde cursus';
@@ -169,7 +169,7 @@ $string['publishtocourseassocparam'] = 'Leden van {$a}';
 $string['publishtogroup'] = 'Gebruikers die een groep met jou delen';
 $string['publishtogroupassoc'] = 'Jouw groepsleden in de geassocieerde cursus';
 $string['publishtogroupassocparam'] = 'Jouw groepsleden in {$a}';
-$string['publishtonoone'] = 'jezelf (klad)';
+$string['publishtonoone'] = 'jezelf (concept)';
 $string['publishtosite'] = 'iedereen op deze site';
 $string['publishtoworld'] = 'de hele wereld';
 $string['readfirst'] = 'Lees dit eerst';

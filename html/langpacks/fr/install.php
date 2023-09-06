@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'fr', version '3.11'.
+ * Strings for component 'install', language 'fr', version '4.1'.
  *
  * @package     install
  * @category    string
@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['admindirerror'] = 'Le dossier d\'administration spécifié est incorrect';
 $string['admindirname'] = 'Dossier administration';
-$string['admindirsetting'] = 'De rares hébergeurs web utilisent le dossier « /admin » comme URL spéciale vous permettant d\'accéder par exemple à un tableau de bord. Ceci entre en conflit avec l\'emplacement standard des pages d\'administration de Moodle. Vous pouvez corriger cela en renommant le dossier d\'administration de votre installation de Moodle, en inscrivant ici le nouveau nom, par exemple <br /><br /><b>moodleadmin</b>.<br /><br />Les liens vers l\'administration de Moodle seront ainsi corrigés.';
+$string['admindirsetting'] = 'De rares hébergeurs web utilisent le dossier « /admin » comme URL spéciale permettant d\'accéder par exemple à un tableau de bord. Ceci entre en conflit avec l\'emplacement standard des pages d\'administration de Moodle. On peut corriger cela en renommant le dossier d\'administration de l\'installation de Moodle, en inscrivant ici le nouveau nom, par exemple <br /><br /><b>moodleadmin</b>.<br /><br />Les liens vers l\'administration de Moodle seront ainsi corrigés.';
 $string['admindirsettinghead'] = 'Réglage du dossier « admin »…';
-$string['admindirsettingsub'] = 'De rares hébergeurs web utilisent le dossier « /admin » comme URL spéciale vous permettant d\'accéder par exemple à un tableau de bord. Ceci entre en conflit avec l\'emplacement standard des pages d\'administration de Moodle. Vous pouvez corriger cela en renommant le dossier d\'administration de votre installation de Moodle, en inscrivant ici le nouveau nom, par exemple <br /><br /><b>moodleadmin</b>.<br /><br />Les liens vers l\'administration de Moodle seront ainsi corrigés.';
+$string['admindirsettingsub'] = 'De rares hébergeurs web utilisent le dossier « /admin » comme URL spéciale permettant d\'accéder par exemple à un tableau de bord. Ceci entre en conflit avec l\'emplacement standard des pages d\'administration de Moodle. On peut corriger cela en renommant le dossier d\'administration de l\'installation de Moodle, en inscrivant ici le nouveau nom, par exemple <br /><br /><b>moodleadmin</b>.<br /><br />Les liens vers l\'administration de Moodle seront ainsi corrigés.';
 $string['availablelangs'] = 'Paquetages de langue disponibles';
 $string['caution'] = 'Attention';
 $string['chooselanguage'] = 'Choisissez une langue';
@@ -44,6 +44,7 @@ $string['cliinstallfinished'] = 'Installation terminée avec succès.';
 $string['cliinstallheader'] = 'Programme d\'installation de Moodle {$a} en ligne de commande';
 $string['climustagreelicense'] = 'En mode non interactif, vous devez vous déclarer d\'accord avec la licence en spécifiant l\'option --agree-license';
 $string['cliskipdatabase'] = 'Passer l\'étape d\'installation de la base de données.';
+$string['clisupportemail'] = 'Adresse de courriel d\'assistance';
 $string['clitablesexist'] = 'Les tables de la base de données sont déjà présentes ; l\'installation en ligne de commande ne peut pas continuer.';
 $string['compatibilitysettings'] = 'Vérification de votre configuration PHP…';
 $string['compatibilitysettingshead'] = 'Vérification de votre configuration PHP…';
@@ -154,7 +155,7 @@ $string['pathserrcreatedataroot'] = 'Le dossier de données ({$a->dataroot}) ne 
 $string['pathshead'] = 'Confirmer les chemins d\'accès';
 $string['pathsrodataroot'] = 'Le dossier de données n\'est pas atteignable en écriture.';
 $string['pathsroparentdataroot'] = 'Le dossier parent ({$a->parent}) n\'est pas atteignable en écriture. Le dossier de données ({$a->dataroot}) ne peut pas être créé par le programme d\'installation.';
-$string['pathssubadmindir'] = 'Quelques rares hébergeurs utilisent « /admin » comme URL spéciale pour l\'accès à un tableau de bord ou d\'autres fonctionnalités. Malheureusement ceci entre en conflit avec l\'emplacement standard des pages d\'administration de Moodle. Vous pouvez corriger ceci en renommant le dossier admin de votre installation Moodle et en plaçant le nouveau nom choisi dans ce champ. Par exemple, <em>moodleadmin</em>. Ceci modifiera tous les liens de l\'administration de Moodle.';
+$string['pathssubadmindir'] = 'Quelques rares hébergeurs utilisent « /admin » comme URL spéciale pour l\'accès à un tableau de bord ou d\'autres fonctionnalités. Malheureusement ceci entre en conflit avec l\'emplacement standard des pages d\'administration de Moodle. On peut corriger ceci en renommant le dossier admin de l\'installation Moodle et en plaçant le nouveau nom choisi dans ce champ. Par exemple, <em>moodleadmin</em>. Ceci modifiera tous les liens de l\'administration de Moodle.';
 $string['pathssubdataroot'] = '<p>Un dossier dans lequel Moodle stockera tous les fichiers qui seront déposés par les utilisateurs.</p>
 <p>Ce dossier doit être atteignable en lecture et en écriture par l\'utilisateur système du serveur web (habituellement nommé « www-data », « nobody » ou encore « apache »).</p>
 <p>Il ne doit pas pouvoir être atteint directement via le web.</p>

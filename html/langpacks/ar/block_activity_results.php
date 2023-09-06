@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'ar', version '3.11'.
+ * Strings for component 'block_activity_results', language 'ar', version '4.1'.
  *
  * @package     block_activity_results
  * @category    string
@@ -39,7 +39,7 @@ $string['config_name_format'] = 'خصوصية النتائج';
 $string['config_names_anon'] = 'نتائج مجهولة';
 $string['config_names_full'] = 'عرض الاسم كاملاً';
 $string['config_names_id'] = 'عرض أرقام المعرَّفات فقط';
-$string['config_no_activities_in_course'] = 'لا توجد حتى الآن أية أنشطة في هذا المقرر الدراسي.';
+$string['config_no_activities_in_course'] = 'لا توجد حتى الآن أية أنشطة في هذا المساق.';
 $string['config_select_activity'] = 'ما النشاط الذي ينبغي أن تعرض هذه الكتلة نتائجه؟';
 $string['config_show_best'] = 'كم عدد الدرجات العليا التي يجب أن تعرض (0 للتعطيل)؟';
 $string['config_show_worst'] = 'كم عدد  الدرجات الدنيا التي  يجب أن تعرض (0 للتعطيل)؟';

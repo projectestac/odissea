@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'zh_cn', version '3.11'.
+ * Strings for component 'choicegroup', language 'zh_cn', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -76,6 +76,7 @@ $string['limit'] = '限制';
 $string['members/'] = '成员';
 $string['members/max'] = '成员 / 容量';
 $string['modulename'] = '小组选择';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['removemychoicegroup'] = '删除我的选择';
 $string['removeresponses'] = '删除所有回复';
 $string['responses'] = '回复';

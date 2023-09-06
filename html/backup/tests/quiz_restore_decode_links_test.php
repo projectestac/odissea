@@ -59,6 +59,8 @@ class quiz_restore_decode_links_test extends \advanced_testcase {
 
         // Add to the quiz.
         quiz_add_quiz_question($question->id, $quiz);
+        \mod_quiz\external\submit_question_version::execute(
+                $DB->get_field('quiz_slots', 'id', ['quizid' => $quiz->id, 'slot' => 1]), 1);
 
         $questiondata = \question_bank::load_question_data($question->id);
 
@@ -80,17 +82,26 @@ class quiz_restore_decode_links_test extends \advanced_testcase {
 
         $newcm = duplicate_module($course, get_fast_modinfo($course)->get_cm($quiz->cmid));
 
-        $sql = "SELECT qa.id, qa.answer
-                  FROM {quiz} q
-             LEFT JOIN {quiz_slots} qs ON qs.quizid = q.id
-             LEFT JOIN {question_answers} qa ON qa.question = qs.questionid
-                 WHERE q.id = :quizid";
-        $params = array('quizid' => $newcm->instance);
-        $answers = $DB->get_records_sql_menu($sql, $params);
+        $quizquestions = \mod_quiz\question\bank\qbank_helper::get_question_structure(
+                $newcm->instance, \context_module::instance($newcm->id));
+        $questionids = [];
+        foreach ($quizquestions as $quizquestion) {
+            if ($quizquestion->questionid) {
+                $questionids[] = $quizquestion->questionid;
+            }
+        }
+        list($condition, $param) = $DB->get_in_or_equal($questionids, SQL_PARAMS_NAMED, 'questionid');
+        $condition = 'WHERE qa.question ' . $condition;
 
-        $this->assertEquals($CFG->wwwroot . '/course/view.php?id=' . $course->id, $answers[$firstanswer->id]);
-        $this->assertEquals($CFG->wwwroot . '/mod/quiz/view.php?id=' . $quiz->cmid, $answers[$secondanswer->id]);
-        $this->assertEquals($CFG->wwwroot . '/grade/report/index.php?id=' . $quiz->cmid, $answers[$thirdanswer->id]);
-        $this->assertEquals($CFG->wwwroot . '/mod/quiz/index.php?id=' . $quiz->cmid, $answers[$fourthanswer->id]);
+        $sql = "SELECT qa.id,
+                       qa.answer
+                  FROM {question_answers} qa
+                  $condition";
+        $answers = $DB->get_records_sql($sql, $param);
+
+        $this->assertEquals($CFG->wwwroot . '/course/view.php?id=' . $course->id, $answers[$firstanswer->id]->answer);
+        $this->assertEquals($CFG->wwwroot . '/mod/quiz/view.php?id=' . $quiz->cmid, $answers[$secondanswer->id]->answer);
+        $this->assertEquals($CFG->wwwroot . '/grade/report/index.php?id=' . $quiz->cmid, $answers[$thirdanswer->id]->answer);
+        $this->assertEquals($CFG->wwwroot . '/mod/quiz/index.php?id=' . $quiz->cmid, $answers[$fourthanswer->id]->answer);
     }
 }

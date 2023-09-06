@@ -1,4 +1,4 @@
-@filter @filter_wiris @filter_wiris_render @filter_wiris_render_server @wiris_mathtype
+@filter @filter_wiris @filter_wiris_render @filter_wiris_render_server @wiris_mathtype @3.x
 Feature: Server-side rendering to PNG
 In order to enable server-side rendering
 As an admin
@@ -21,6 +21,11 @@ I need to change the render type
 
   @javascript
   Scenario: Add a MathML formula and check MathType renders it correctly with PHP library
+    And I follow "Preferences" in the user menu
+    And I follow "Editor preferences"
+    And I set the following fields to these values:
+      | Text editor | Atto HTML editor |
+    And I press "Save changes"
     And I am on "Course 1" course homepage with editing mode on
     And I add a "Page" to section "0"
     And I set the following fields to these values:

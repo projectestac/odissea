@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'nl', version '3.11'.
+ * Strings for component 'my', language 'nl', version '4.1'.
  *
  * @package     my
  * @category    string
@@ -28,9 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['addpage'] = 'Voeg pagina toe';
 $string['alldashboardswerereset'] = 'Alle startpagina\'s zijn ingesteld op standaardinstellingen.';
 $string['allprofileswerereset'] = 'Alle profielpagina\'s zijn terug op standaardinstellingen gezet.';
+$string['coursemanagementoptions'] = 'Opties voor cursusbeheer';
 $string['defaultpage'] = 'Standaard Mijn Moodle-pagina';
 $string['defaultprofilepage'] = 'Standaard profielpagina';
 $string['delpage'] = 'Verwijder pagina';
+$string['error:dashboardisdisabled'] = 'De startpagina is uitgeschakeld door de beheerder.';
 $string['managepages'] = 'Beheer pagina\'s';
 $string['mymoodle'] = 'Mijn startpagina';
 $string['nocourses'] = 'Geen cursusinformatie';

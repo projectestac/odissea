@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'pt', version '3.11'.
+ * Strings for component 'block_timeline', language 'pt', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Tudo';
-$string['ariadayfilter'] = 'Filtrar itens do cronograma';
+$string['ariadayfilter'] = 'Filtrar cronograma por data';
 $string['ariadayfilteroption'] = 'opções do filtro {$a}';
 $string['ariaeventlistitem'] = 'A atividade \'{$a->name}\' na disciplina {$a->course} atinge a data limite em  {$a->date}';
 $string['ariaeventlistpagelimit'] = 'Mostrar {$a} atividade(s) por página';
@@ -35,18 +35,20 @@ $string['ariaeventlistpaginationnavdates'] = 'Paginação de atividades no Crono
 $string['ariaviewselector'] = 'Ordenar itens do cronograma';
 $string['ariaviewselectoroption'] = 'opções de ordenação {$a}';
 $string['duedate'] = 'Data limite';
-$string['morecourses'] = 'Mais disciplinas';
+$string['moreactivities'] = 'Mostrar mais atividades';
+$string['morecourses'] = 'Mostrar mais disciplinas';
 $string['next30days'] = 'Próximos 30 dias';
 $string['next3months'] = 'Próximos 3 meses';
 $string['next6months'] = 'Próximos 6 meses';
 $string['next7days'] = 'Próximos 7 dias';
 $string['nocoursesinprogress'] = 'Não existem disciplinas a decorrer';
-$string['noevents'] = 'Não existem atividades com data limite próxima';
+$string['noevents'] = 'Nenhuma atividade requer qualquer ação';
 $string['overdue'] = 'Data limite ultrapassada';
 $string['pluginname'] = 'Cronograma';
 $string['privacy:metadata:timelinefilterpreference'] = 'A preferência do utilizador do filtro do dia no bloco cronograma.';
 $string['privacy:metadata:timelinelimitpreference'] = 'A preferência do utilizador para o limite de página do bloco Cronograma.';
 $string['privacy:metadata:timelinesortpreference'] = 'A preferência do utilizador para a ordenação do bloco Cronograma.';
+$string['searchevents'] = 'Pesquisar por nome ou tipo de atividade';
 $string['sortbycourses'] = 'Ordenar por disciplinas';
 $string['sortbydates'] = 'Ordenar por datas';
 $string['timeline'] = 'Cronograma';

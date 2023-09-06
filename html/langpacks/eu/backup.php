@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'eu', version '3.11'.
+ * Strings for component 'backup', language 'eu', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -73,6 +73,7 @@ $string['automatedsetup'] = 'Segurtasun-kopia automatizatuak';
 $string['automatedstorage'] = 'Segurtasun-kopia automatizatuen biltegia';
 $string['automatedstoragehelp'] = 'Aukeratu non gordeko diren segurtasun-kopiak automatikoki sortzen direnean.';
 $string['backupactivity'] = 'Jardueraren segurtasun-kopia:{$a}';
+$string['backupautoactivitiesdescription'] = 'Modu lehenetsian jarduerak segurtasun-kopietan sartu ala ez zehazten du. Zakarrontziak ondo funtzionatu dezan ezarpen hau gaituta egon behar da';
 $string['backupcourse'] = 'Ikastaroaren segurtasun-kopia:{$a}';
 $string['backupcoursedetails'] = 'Ikastaroaren xehetasunak';
 $string['backupcoursesection'] = 'Atala: {$a}';
@@ -212,6 +213,7 @@ $string['filealiasesrestorefailures'] = 'Erroreak ezizenak berreskuratzean';
 $string['filealiasesrestorefailures_help'] = 'Ezizen/estekak beste fitxategietarako esteka sinbolikoak dira, kanpo-biltegietan dauden fitxategietarakoak barne. Batzuetan, Moodlek ezin ditu berreskuratu - esaterako segurtasun-kopia beste gune batean berreskuratzean edo estekatutako fitxategia existitzen ez denean.
 
 Errorearen arrazoi zehatzaren inguruko xehetasun gehiago berreskuratzearen log fitxategian topatuko dituzu.';
+$string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = 'Segurtasun-kopian sartutako ezizen/esteka batzuk ezin izan dira berreskuratu. Hurrengo zerrendan hauen esperotako kokapenak eta jatorrizko guneko fitxategiaren kokapena daude.';
 $string['filename'] = 'Fitxategiaren izena';
 $string['filereferencesincluded'] = 'Segurtasun kopian kanpo-edukietako fitxategi-erreferentziak daude. Hauek ez dute funtzionatuko segurtasun-kopia beste gune batean berreskuratuz gero.';
@@ -315,7 +317,7 @@ $string['restoreactivity'] = 'Berreskuratu jarduera';
 $string['restorecourse'] = 'Berreskuratu ikastaroa';
 $string['restorecoursesettings'] = 'Ikastaroaren ezarpenak';
 $string['restoredcourseid'] = 'Berreskuratutako ikastaroaren IDa: {$a}';
-$string['restoreexecutionsuccess'] = 'Ikastaroa modu egokian berreskuratu da; jarraitu botoian klik eginda berreskuratu duzun ikastaroa ikusiko duzu.';
+$string['restoreexecutionsuccess'] = 'Ikastaroa ondo berreskuratu da.';
 $string['restorefileweremissing'] = 'Zenbait fitxategi ezin izan dira berreskuratu segurtasun-kopian ez zeudelako.';
 $string['restorenewcoursefullname'] = 'Ikastaro berriaren izena';
 $string['restorenewcourseshortname'] = 'Ikastaro berriaren izen laburra';
@@ -392,7 +394,7 @@ $string['setting_overwrite_course_fullname'] = 'Gainidatzi ikastaroaren izen oso
 $string['setting_overwrite_course_shortname'] = 'Gainidatzi ikastaroaren izen laburra';
 $string['setting_overwrite_course_startdate'] = 'Gainidatzi ikastaroaren hasiera-data';
 $string['showtypes'] = 'Erakutsi aukera motak';
-$string['sitecourseformatwarning'] = 'Hau hasiera-orriko segurtasun-kopia bat da, kontuan izan soilik hasiera-orrian berreskura daitekeela.';
+$string['sitecourseformatwarning'] = 'Hau hasiera-orriko segurtasun-kopia bat da, soilik hasiera-orrian berreskuratu daiteke.';
 $string['skiphidden'] = 'Utzi alde batera ezkutuan dauden ikastaroak';
 $string['skiphiddenhelp'] = 'Aukeratu ezkutuan dauden ikastaroak alde batera uztea edo ez';
 $string['skipmodifdays'] = 'Utzi alde batera orain dela gutxi aldatu ez diren ikastaroak';

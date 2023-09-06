@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'it', version '3.11'.
+ * Strings for component 'scorm', language 'it', version '4.1'.
  *
  * @package     scorm
  * @category    string
@@ -87,7 +87,7 @@ $string['completed'] = 'Completato';
 $string['completiondetail:allscos'] = 'Svolgere tutte le parti dell’attività';
 $string['completiondetail:completionscore'] = 'Ottenere un punteggio pari a {$a} o superiore';
 $string['completiondetail:completionstatuscompleted'] = 'Completare l\'attività';
-$string['completiondetail:completionstatuscompletedandpassed'] = 'Completare e superare l\'attività';
+$string['completiondetail:completionstatuscompletedorpassed'] = 'Completare e superare l\'attività';
 $string['completiondetail:completionstatuspassed'] = 'Superare l\'attività';
 $string['completionscorerequired'] = 'Punteggio minimo richiesto';
 $string['completionscorerequired_help'] = 'Un utente, oltre a soddisfare eventuali altri criteri di completamento, dovrà raggiungere il punteggio impostato per completare l\'attività SCORM.';
@@ -129,7 +129,6 @@ $string['displaydesc'] = 'Imposta la visualizzazione di un pacchetto SCORM in un
 $string['displaysettings'] = 'Impostazioni di visualizzazione';
 $string['dnduploadscorm'] = 'Aggiungi un pacchetto SCORM';
 $string['domxml'] = 'Libreria esterna DOMXML';
-$string['duedate'] = 'Data di termine';
 $string['element'] = 'Elemento';
 $string['enter'] = 'Entra';
 $string['entercourse'] = 'Entra nel corso';
@@ -210,10 +209,12 @@ $string['indicator:cognitivedepth'] = 'SCORM cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività SCORM.';
 $string['indicator:cognitivedepthdef'] = 'SCORM cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività SCORM (Livelli: Nessuna visualizzazione, Visualizzazione, Invio, Visualizzazione feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'SCORM sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività SCORM.';
 $string['indicator:socialbreadthdef'] = 'SCORM sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività SCORM (Livelli: Nessuna partecipazione, Partecipazione da solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interazioni';
 $string['invalidactivity'] = 'L\'attività SCORM è errata';
@@ -253,6 +254,7 @@ In genere il contenuto di un pacchetto viene visualizzato su diverse pagine, con
 
 * Presentare contenuti multimediali ed animazioni
 * Valutare le attività degli studenti';
+$string['modulename_link'] = 'mod/scorm/view';
 $string['modulenameplural'] = 'Pacchetti SCORM';
 $string['myaiccsessions'] = 'Le mie sessioni AICC';
 $string['myattempts'] = 'I miei tentativi';

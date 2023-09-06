@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'el', version '3.11'.
+ * Strings for component 'enrol_imsenterprise', language 'el', version '4.1'.
  *
  * @package     enrol_imsenterprise
  * @category    string
@@ -53,11 +53,11 @@ $string['fixcasepersonalnames'] = 'Αλλαγή προσωπικών ονομά�
 $string['fixcaseusernames'] = 'Αλλαγή ονομάτων χρηστών σε μικρά γράμματα';
 $string['ignore'] = 'Αγνόηση';
 $string['importimsfile'] = 'Εισαγωγή αρχείου IMS Enterprise';
-$string['imsenterprise:config'] = 'Ρύθμιση στιγμιότυπου εγγραφών του IMS Enterprise';
+$string['imsenterprise:config'] = 'Ρύθμιση στιγμιοτύπου εγγραφών του IMS Enterprise';
 $string['imsenterprisecrontask'] = 'Επεξεργασία αρχείου εγγραφής...';
 $string['imsrolesdescription'] = 'Οι προδιαγραφές του IMS Enterprise περιλαμβάνουν 8 διακριτούς τύπους ρόλων. Παρακαλούμε επιλέξτε πως θέλετε να αποδίδονται στο Moodle, περιλαμβάνοντας το εάν κάποιοι από αυτούς θα πρέπει να αγνοηθούν.';
 $string['location'] = 'Τοποθεσία αρχείου';
-$string['logtolocation'] = 'Θέση εξόδου του αρχείου καταγραφής (κενό για να μη γίνονται καταγραφές)';
+$string['logtolocation'] = 'Τοποθεσία εξόδου του αρχείου καταγραφής (κενό για να μη γίνονται καταγραφές)';
 $string['mailadmins'] = 'Ενημέρωση διαχειριστή με ηλε.ταχυδρομείο';
 $string['mailusers'] = 'Ενημέρωση χρηστών με ηλε.ταχυδρομείο';
 $string['messageprovider:imsenterprise_enrolment'] = 'Μηνύματα εγγραφής IMS Enterprise';

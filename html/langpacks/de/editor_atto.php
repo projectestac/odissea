@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'de', version '3.11'.
+ * Strings for component 'editor_atto', language 'de', version '4.1'.
  *
  * @package     editor_atto
  * @category    string
@@ -41,15 +41,16 @@ $string['errortextrecovery'] = 'Leider konnte die Entwurfsversion nicht wiederhe
 $string['infostatus'] = 'Information';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
 $string['pluginname'] = 'Editor Atto';
-$string['privacy:metadata:database:atto_autosave'] = 'Automatisch gespeicherte Texteditorentwürfe';
+$string['privacy:metadata:database:atto_autosave'] = 'Automatisch gespeicherte Entwürfe aus dem Texteditor';
 $string['privacy:metadata:database:atto_autosave:drafttext'] = 'Der gespeicherte Text';
 $string['privacy:metadata:database:atto_autosave:timemodified'] = 'Zeitpunkt der Bearbeitung des Inhalts.';
 $string['privacy:metadata:database:atto_autosave:userid'] = 'ID der Person, deren Daten gespeichert wurden';
 $string['recover'] = 'Wiederherstellen';
+$string['richtexteditor'] = 'Editor für formatierte Texte';
 $string['settings'] = 'Einstellungen';
 $string['subplugintype_atto'] = 'Atto Plugin';
 $string['subplugintype_atto_plural'] = 'Atto Plugins';
-$string['taskautosavecleanup'] = 'Abgelaufene automatische Entwurfssicherungen löschen';
+$string['taskautosavecleanup'] = 'Abgelaufene automatische gespeicherte Entwürfe löschen';
 $string['textrecovered'] = 'Der Textentwurf wurde automatisch wiederhergestellt.';
 $string['toolbarconfig'] = 'Menüleiste';
 $string['toolbarconfig_desc'] = 'Mit dieser Option werden die Plugins und deren Reihenfolge in der Menüleiste festgelegt. Für die Konfiguration werden Gruppennamen angegeben (einer pro Zeile), jeweils gefolgt von einem Gleichheitszeichen und der kommagetrennten Liste von Plugins für diese Gruppe. Die Gruppennamen müssen eindeutig sein und sollten zeigen, was die Symbole in der jeweiligen Gruppe gemeinsam haben. Symbol- und Gruppennamen dürfen nur einmal vorkommen und nur alphanumerische Zeichen enthalten.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'de', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'de', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,4 +30,5 @@ $string['endanswernotfound'] = 'Keine notwendige Klammer \'}\' im Dateiimport ge
 $string['noanswerfound'] = 'Keine Antworten zur Frage gefunden';
 $string['pluginname'] = 'Format \'Missing Word\'';
 $string['pluginname_help'] = 'Das Format \'Missing Word\' erlaubt den Import von Fragen als Textdatei.';
+$string['pluginname_link'] = 'qformat/missingword';
 $string['privacy:metadata'] = 'Das Lückentext Frageformat Plugin speichert keine personenbezogenen Daten.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_displayh5p', language 'ca', version '3.11'.
+ * Strings for component 'filter_displayh5p', language 'ca', version '4.1'.
  *
  * @package     filter_displayh5p
  * @category    string
@@ -25,12 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowedsourceslist'] = 'Fonts permeses';
-$string['allowedsourceslistdesc'] = 'Una llista d\'URL des de la qual els usuaris poden incrustar contingut H5P. Si no se n\'especifica cap, tots els URL romandran com a enllaços i no es mostraran com a contingut H5P incrustat.
+$string['allowedsourceslist'] = 'Orígens permesos';
+$string['allowedsourceslistdesc'] = 'Llista d\'URL des de la qual els usuaris poden inserir contingut H5P. Si no se n\'especifica cap, es conservaran tots els URL com a enllaços i no es mostraran com a contingut H5P inserit.
 
-«[id]» és un marcador per a l\'identificador (ID) de contingut H5P a la font externa.
+\'[id]\' és un espai reservat per a l\'identificador de contingut H5P a l\'origen extern.
 Per exemple:
-— H5P.com: https://[xxxxxx].h5p.com/content/[id]
-— WordPress: http://myserver/wp-admin/admin-ajax.php?action=h5p_embed&id=[id]';
+
+- H5P.com: https://[xxxxxx].h5p.com/content/[id]
+- WordPress: http://myserver/wp-admin/admin-ajax.php?action=h5p_embed&id=[id]';
 $string['filtername'] = 'Mostra l\'H5P';
-$string['privacy:metadata'] = 'El filtre de reproducció de l\'H5P no emmagatzema cap dada personal.';
+$string['privacy:metadata'] = 'El filtre de visualització H5P no emmagatzema cap dada personal.';

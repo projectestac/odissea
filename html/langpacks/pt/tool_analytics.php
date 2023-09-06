@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'pt', version '3.11'.
+ * Strings for component 'tool_analytics', language 'pt', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -38,7 +38,7 @@ $string['analyticmodels'] = 'Modelos de análise';
 $string['bettercli'] = 'Avaliar modelos e gerar previsões pode envolver um processamento intenso. Recomenda-se que execute estas ações a partir da linha de comando.';
 $string['cantguessenddate'] = 'Não é possível prever a data de fim';
 $string['cantguessstartdate'] = 'Não é possível determinar a data de inicio';
-$string['classdoesnotexist'] = 'A classe {$a} não existe';
+$string['classdoesnotexist'] = 'A classe \'{$a}\' não existe';
 $string['clearmodelpredictions'] = 'Tem a certeza de que pretende limpar todas as previsões para "{$a}"?';
 $string['clearpredictions'] = 'Limpar previsões';
 $string['clienablemodel'] = 'Pode ativar o modelo selecionando um intervalo de análise através do ID. Tenha em atenção que também pode ativá-lo mais tarde usando a interface da web (\'Nenhum\' para sair).';
@@ -88,7 +88,6 @@ $string['exportmodel'] = 'Exportar configuração';
 $string['exporttrainingdata'] = 'Exportar dados do treino';
 $string['extrainfo'] = 'Informação';
 $string['generalerror'] = 'Erro na avaliação. Código de estado {$a}';
-$string['getpredictions'] = 'Obter previsões';
 $string['goodmodel'] = 'Este é um bom modelo para obter previsões. Ative-o para começar a obter previsões.';
 $string['ignoreversionmismatches'] = 'Ignorar versões incompatíveis';
 $string['ignoreversionmismatchescheckbox'] = 'Ignorar as diferenças entre esta versão e a versão original do site.';
@@ -96,6 +95,7 @@ $string['importedsuccessfully'] = 'O modelo foi importado com sucesso.';
 $string['importmodel'] = 'Importar modelo';
 $string['indicators'] = 'Indicadores';
 $string['indicators_help'] = 'Os indicadores são o que acha que levará a uma previsão precisa do alvo.';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = 'Número de indicadores: {$a}';
 $string['info'] = 'Informação';
 $string['insights'] = 'Perceções';
@@ -144,6 +144,7 @@ $string['scheduledanalysisresultscli'] = 'Resultados ao usar \'{$a->name}\' (ID:
 $string['selecttimesplittingforevaluation'] = 'Selecione o intervalo de análise que pretende usar para avaliar a configuração do modelo.';
 $string['target'] = 'Alvo';
 $string['target_help'] = 'A meta é o que o modelo irá prever.';
+$string['target_link'] = 'Targets';
 $string['timesplittingnotdefined'] = 'O intervalo de análise não está definido';
 $string['timesplittingnotdefined_help'] = 'Selecione um intervalo de análise antes de ativar o modelo.';
 $string['trainandpredictmodel'] = 'A experimentar o modelo e a calcular previsões';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'zh_cn', version '3.11'.
+ * Strings for component 'hotpot', language 'zh_cn', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -308,6 +308,7 @@ $string['mediafilter_moodle'] = 'Moodle 的标准媒体过滤器';
 $string['migratingfiles'] = '迁移 Hot Potatoes 测验文件';
 $string['missingsourcetype'] = 'HotPot 记录丢失了源类型';
 $string['modulename'] = 'HotPot';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'HotPots';
 $string['nameadd'] = '名称';
 $string['nameadd_help'] = '名称可以是由教师输入的特定的文本或是自动生成的。

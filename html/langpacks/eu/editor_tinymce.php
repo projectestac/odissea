@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'eu', version '3.11'.
+ * Strings for component 'editor_tinymce', language 'eu', version '4.1'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -598,7 +598,7 @@ $string['paste:selectall_desc'] = 'Aukeratu guztia';
 $string['paste_dlg:text_linebreaks'] = 'Mantendu lerro-jauziak';
 $string['paste_dlg:text_title'] = 'Erabili teklatuko CTRL+V testua leihoan itsasteko.';
 $string['paste_dlg:word_title'] = 'Erabili teklatuko CTRL+V teklatuan testua leihoan itsasteko';
-$string['pluginname'] = 'TinyMCE HTML editorea';
+$string['pluginname'] = 'TinyMCE HTML editorea (zaharkitua)';
 $string['preview:preview_desc'] = 'Aurrebista';
 $string['print:print_desc'] = 'Inprimatu';
 $string['privacy:metadata'] = 'TinyMCE HTML editorea pluginak ez du datu pertsonalik biltzen.';

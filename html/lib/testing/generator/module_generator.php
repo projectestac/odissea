@@ -176,7 +176,7 @@ abstract class testing_module_generator extends component_generator_base {
         $easymergefields = array('section', 'added', 'score', 'indent',
             'visible', 'visibleold', 'groupmode', 'groupingid',
             'completion', 'completiongradeitemnumber', 'completionview', 'completionexpected',
-            'availability', 'showdescription');
+            'completionpassgrade', 'availability', 'showdescription');
         foreach ($easymergefields as $key) {
             if (isset($options[$key])) {
                 $moduleinfo->$key = $options[$key];
@@ -195,10 +195,12 @@ abstract class testing_module_generator extends component_generator_base {
             'completion' => 0,
             'completionview' => 0,
             'completionexpected' => 0,
+            'completionpassgrade' => 0,
             'conditiongradegroup' => array(),
             'conditionfieldgroup' => array(),
             'conditioncompletiongroup' => array()
         );
+
         foreach ($defaults as $key => $value) {
             if (!isset($moduleinfo->$key)) {
                 $moduleinfo->$key = $value;
@@ -267,12 +269,29 @@ abstract class testing_module_generator extends component_generator_base {
             debugging('Did you forget to enable completion tracking for the course before generating module with completion tracking?', DEBUG_DEVELOPER);
         }
 
+        if (!empty($record->lang) && !has_capability('moodle/course:setforcedlanguage', context_course::instance($course->id))) {
+            throw new coding_exception('Attempt to generate an activity when the current user does not have ' .
+                    'permission moodle/course:setforcedlanguage. This does not work.');
+        }
+
         // Add the module to the course.
-        $moduleinfo = add_moduleinfo($record, $course, $mform = null);
+        $moduleinfo = add_moduleinfo($record, $course);
 
         // Prepare object to return with additional field cmid.
-        $instance = $DB->get_record($this->get_modulename(), array('id' => $moduleinfo->instance), '*', MUST_EXIST);
+        $modulename = $this->get_modulename();
+        $instance = $DB->get_record($modulename, ['id' => $moduleinfo->instance], '*', MUST_EXIST);
         $instance->cmid = $moduleinfo->coursemodule;
+
+        // Insert files for the 'intro' file area.
+        $instance = $this->insert_files(
+            $instance,
+            $record,
+            $modulename,
+            \context_module::instance($instance->cmid),
+            "mod_{$modulename}",
+            'intro',
+            0
+        );
 
         // If the theme was initialised while creating the module instance, something somewhere called an output
         // function. Rather than leaving this as a hard-to-debug situation, let's make it fail with a clear error.

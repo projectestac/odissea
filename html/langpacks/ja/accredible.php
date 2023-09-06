@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'ja', version '3.11'.
+ * Strings for component 'accredible', language 'ja', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -37,4 +37,5 @@ $string['apikeylabel'] = 'APIキー';
 $string['description'] = '説明';
 $string['eulabel'] = 'ヨーロッパ（フランクフルト）サーバー';
 $string['groupselect'] = 'グループ';
+$string['modulename_link'] = 'mod/accredible/view';
 $string['nocertificates'] = '証明書・バッジはありません。';

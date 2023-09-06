@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ja', version '3.11'.
+ * Strings for component 'availability', language 'ja', version '4.1'.
  *
  * @package     availability
  * @category    string
@@ -31,10 +31,10 @@ $string['and'] = 'および';
 $string['condition_group'] = '制限セット';
 $string['condition_group_info'] = '複雑な条件に適用するため、一連のネスト制限を追加します。';
 $string['enableavailability'] = '制限アクセスを有効にする';
-$string['enableavailability_desc'] = 'この設定を有効にした場合、あなたは活動またはリソースが利用可能かどうかコントロールする条件 (日付、評点、完了に基づく) を付けることができます。';
+$string['enableavailability_desc'] = 'この設定を有効にした場合、活動またはリソースにアクセスできるかどうかコントロールする条件 (日付、評点、完了に基づく) を付けることができます。';
 $string['error_list_nochildren'] = '制限セットには少なくとも1つの条件を含む必要があります。';
-$string['hidden_all'] = 'ユーザが条件に合致しない場合、完全に非表示にします。';
-$string['hidden_individual'] = 'ユーザがこの条件に合致しない場合、完全に非表示にします';
+$string['hidden_all'] = '学生が条件に合致しない場合、完全に非表示にします。';
+$string['hidden_individual'] = '学生がこの条件に合致しない場合、完全に非表示にします';
 $string['hidden_marker'] = '(そうでない場合は非表示)';
 $string['hide_verb'] = '非表示にするにはクリックしてください。';
 $string['invalid'] = '設定してください';
@@ -65,7 +65,8 @@ $string['privacy:metadata'] = 'アクセス制限サブシステムはいかな�
 $string['restrictaccess'] = '利用制限';
 $string['restrictbygroup'] = 'グループ/グルーピングアクセス制限を追加する';
 $string['setheading'] = '{$a->number} セット - {$a->count} 制限';
-$string['show_verb'] = 'グレイアウトを表示するにはクリックしてください。';
-$string['shown_all'] = 'ユーザが条件に合致しない場合、グレイアウトされた状態で表示します。';
-$string['shown_individual'] = 'ユーザがこの条件に合致しない場合、グレイアウトされた状態で表示します';
+$string['show_verb'] = 'クリックして表示する';
+$string['showmore'] = 'さらに表示する';
+$string['shown_all'] = 'ユーザが条件に合致しない場合、表示します。';
+$string['shown_individual'] = 'ユーザがこの条件に合致しない場合、表示します';
 $string['unknowncondition'] = '不明なコンディション (削除されたコンディションプラグイン)';

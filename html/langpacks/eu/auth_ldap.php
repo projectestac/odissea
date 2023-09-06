@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'eu', version '3.11'.
+ * Strings for component 'auth_ldap', language 'eu', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -124,6 +124,10 @@ $string['diag_toooldversion'] = 'Oso arraroa da LDAP moderno batek LDAPv2 protok
 $string['didntfindexpiretime'] = 'password_expire()-k ez du iraungitze-data aurkitu.';
 $string['didntgetusersfromldap'] = 'Ez da erabiltzailerik lortu LDAPetik. -- errorea? -- irteten';
 $string['gotcountrecordsfromldap'] = 'Lortu {$a} erregistroa(k) LDAP-etik';
+$string['invalidusererrors'] = 'Oharra: {$a} erabiltzaileen sorrera alde batera utzi da';
+$string['invaliduserexception'] = 'Errorea: Ezin izan da erabiltzaile berriaren kontua sortu. Xehetasunak eta arrazoia:
+{$a}
+Erabiltzaile hau alde batera utzi da.';
 $string['ldapnotconfigured'] = 'LDAP hostalaria une honetan ez dago konfiguratuta';
 $string['morethanoneuser'] = 'LDAPen erabiltzaile bat baino gehiago aurkitu dira. Soilik lehenengoa erabiliko da.';
 $string['needbcmath'] = 'BCMath hedapena behar duzu Active Directory-ren pasahitzen iraungitzea erabiltzeko.';
@@ -157,7 +161,6 @@ $string['updatepasserrorexpire'] = 'Errorea gertatu da user_update_password() fu
 $string['updatepasserrorexpiregrace'] = 'Errorea user_update_password()-en pasahitzaren iraungitze-data edota graziazko sarrerak aldatzean. Errore-kodea: {$a->errno}; Errorearen mezua: {$a->errstring}';
 $string['updateremfail'] = 'Errorea LDAP erregistroa eguneratzean. Errore-kodea: {$a->errno}; Errorearen mezua: {$a->errstring}<br/>({$a->key}) gakoa - Moodleko balio zaharra: \'{$a->ouvalue}\' balio berria: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Errorea gertatu da LDAP eguneratzean {$a->key} eremu anbiguoarekin; Moodleko balio zaharra: \'{$a->ouvalue}\' balio berria: \'{$a->nuvalue}\'';
-$string['updateremfailfield'] = 'LDAP existitzen ez den eremuarekin eguneratzeak huts egin du (\'{$a->ldapkey}\'). Gakoa ({$a->key}) - Moodleko balio zaharra: \'{$a->ouvalue}\' balio berria: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Ezin da erabiltzailea aurkitu kanpotik eguneratzean. Xehetasunak jarraian: bilaketaren oinarria: \'{$a->userdn}\'; bilaketa-iragazkia \'(objectClass=*)\'; bilaketa-atributuak: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: LDAPeko user_activate()-ek ez du erabiltzaile mota hau onartzen: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: LDAPeko user_activate()-ek ez du erabiltzaile mota hau onartzen: {$a}';

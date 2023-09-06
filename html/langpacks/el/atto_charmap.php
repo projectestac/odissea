@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'el', version '3.11'.
+ * Strings for component 'atto_charmap', language 'el', version '4.1'.
  *
  * @package     atto_charmap
  * @category    string
@@ -240,7 +240,7 @@ $string['similarto'] = 'όμοιο με (similar to)';
 $string['singleleftpointinganglequotationmark'] = 'αριστερό μονό γωνιώδες εισαγωγικό (single left-pointing angle quotation mark)';
 $string['singlelow9quotationmark'] = 'μονή κάτω αριστερή παρένθεση σαν μικρό 9 (single low-9 quotation mark)';
 $string['singlerightpointinganglequotationmark'] = 'αριστερό δεξί γωνιώδες εισαγωγικό (single right-pointing angle quotation mark)';
-$string['smalltilde'] = 'small tilde (μικρή περισπωμένη κυματιστή)';
+$string['smalltilde'] = 'μικρή tilde (περισπωμένη, κυματιστή παύλα)';
 $string['softhyphen'] = 'soft hyphen (προαιρετικό ενωτικό, επιλεκτική παύλα)';
 $string['squareroot'] = 'τετραγωνική ρίζα (square root)';
 $string['subsetof'] = 'υποσύνολο του (subset of)';

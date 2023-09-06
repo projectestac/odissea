@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'pt', version '3.11'.
+ * Strings for component 'completion', language 'pt', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Atingir nota';
+$string['achievingpassinggrade'] = 'Obter nota de aprovação';
 $string['activities'] = 'Atividades';
 $string['activitiescompleted'] = 'Conclusão da atividade';
 $string['activitiescompletednote'] = 'Nota: A conclusão da atividade deve estar definida para que esta seja exibida na lista acima.';
@@ -36,6 +37,7 @@ $string['activityaggregation_any'] = 'QUALQUER UMA das atividades selecionadas e
 $string['activitycompletion'] = 'Conclusão da atividade';
 $string['activitycompletionupdated'] = 'Alterações guardadas com sucesso';
 $string['activitygradenotrequired'] = 'Nota não obrigatória';
+$string['activitygradetopassnotset'] = 'Esta atividade não tem definida uma nota de aprovação válida. Pode ser definida na secção Avaliação das configurações da atividade.';
 $string['affectedactivities'] = 'As alterações irão afetar as seguintes atividades ou recursos (<b>{$a}</b>):';
 $string['aggregationmethod'] = 'Requer verificação de';
 $string['all'] = 'Todos';
@@ -106,6 +108,9 @@ $string['completionnotenabledforcourse'] = 'A conclusão não está ativa para e
 $string['completionnotenabledforsite'] = 'A conclusão não está ativa para este site';
 $string['completionondate'] = 'Data de conclusão';
 $string['completionondatevalue'] = 'Data em que a disciplina será marcada como concluída';
+$string['completionpassgrade'] = 'Requer nota de aprovação';
+$string['completionpassgrade_desc'] = 'O aluno tem de obter nota de aprovação para concluir esta atividade';
+$string['completionpassgrade_help'] = 'Se ativar esta opção, a atividade é considerada concluída quando o aluno obtém nota de aprovação.';
 $string['completionsettingslocked'] = 'Configurações da conclusão bloqueadas';
 $string['completionupdated'] = 'Atualização da conclusão da atividade <b>{$a}</b>';
 $string['completionusegrade'] = 'Requer nota';
@@ -125,6 +130,7 @@ $string['coursecompleted'] = 'Disciplina concluída';
 $string['coursecompletedmessage'] = '<p>Parabéns!</p><p>Concluiu a disciplina: <a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Conclusão da disciplina';
 $string['coursecompletioncondition'] = 'Condição: {$a}';
+$string['coursecompletionnavigation'] = 'Navegação terciária da conclusão da disciplina';
 $string['coursegrade'] = 'Nota da disciplina';
 $string['coursesavailable'] = 'Disciplinas disponíveis';
 $string['coursesavailableexplaination'] = 'Nota: As condições de conclusão da disciplina devem estar definidas na disciplina para que esta seja exibida na lista acima.';
@@ -136,13 +142,16 @@ $string['csvdownload'] = 'Descarregar em formato de folha de cálculo (UTF-8 .cs
 $string['datepassed'] = 'Data de aprovação';
 $string['days'] = 'Dias';
 $string['daysoftotal'] = '{$a->days} de {$a->total}';
+$string['daysuntilcompletion'] = 'Dias até conclusão';
 $string['defaultcompletion'] = 'Predefinições da conclusão de atividades';
 $string['defaultcompletionupdated'] = 'Alterações guardadas com sucesso';
 $string['deletecompletiondata'] = 'Apagar informação da conclusão';
 $string['dependencies'] = 'Dependências';
 $string['dependenciescompleted'] = 'Conclusão de outras disciplinas';
 $string['detail_desc:receivegrade'] = 'Obter uma nota';
+$string['detail_desc:receivepassgrade'] = 'Obter nota de aprovação';
 $string['detail_desc:view'] = 'Visualizar';
+$string['done'] = 'Concluída';
 $string['editcoursecompletionsettings'] = 'Editar configurações de conclusão da disciplina';
 $string['enablecompletion'] = 'Ativar verificação da conclusão';
 $string['enablecompletion_help'] = 'Se ativar esta opção, as condições de conclusão da atividade podem ser definidas nas configurações da atividade e/ou podem ser definidas as condições de conclusão da disciplina. Recomenda-se que esta opção esteja ativa para que os dados significativos sejam mostrados no bloco \'Minhas disciplinas\' no Painel do utilizador.';
@@ -160,6 +169,7 @@ $string['eventcoursecompletionupdated'] = 'Atualização da conclusão da discip
 $string['eventcoursemodulecompletionupdated'] = 'Atualização da conclusão de atividades da disciplina';
 $string['eventdefaultcompletionupdated'] = 'A predefinição da conclusão de atividades da disciplina foi atualizada';
 $string['excelcsvdownload'] = 'Descarregar em formato compatível com Excel (.csv)';
+$string['failed'] = 'Não concluída';
 $string['fraction'] = 'Fração';
 $string['graderequired'] = 'Nota mínima exigida';
 $string['gradexrequired'] = 'Nota mínima exigida {$a}';
@@ -196,6 +206,7 @@ $string['privacy:metadata:gradefinal'] = 'Avaliação final recebida pela conclu
 $string['privacy:metadata:overrideby'] = 'O ID do utilizador que remarcou a conclusão de atividade';
 $string['privacy:metadata:reaggregate'] = 'Se a conclusão da disciplina foi reagrupada.';
 $string['privacy:metadata:timecompleted'] = 'A data e hora da conclusão da disciplina.';
+$string['privacy:metadata:timecreated'] = 'A data/hora em que a conclusão da atividade foi criada';
 $string['privacy:metadata:timeenrolled'] = 'A data e hora em que o utilizador foi inscrito na disciplina.';
 $string['privacy:metadata:timemodified'] = 'A data e hora em que a conclusão da atividade foi modificada';
 $string['privacy:metadata:timestarted'] = 'Data e hora de início da disciplina.';
@@ -224,6 +235,8 @@ $string['selfcompletion'] = 'Autoconclusão';
 $string['showcompletionconditions'] = 'Mostrar condições de conclusão da atividade';
 $string['showcompletionconditions_help'] = 'As condições de conclusão da atividade são sempre mostradas na página da atividade. Esta configuração determina se as condições de conclusão da atividade também são mostradas abaixo de cada atividade na página da disciplina.';
 $string['showinguser'] = 'A mostrar utilizador';
+$string['timecompleted'] = 'Data e hora da conclusão';
+$string['todo'] = 'Por concluir';
 $string['unenrolingfromcourse'] = 'Cancelar inscrição na disciplina';
 $string['unenrolment'] = 'Cancelamento da inscrição';
 $string['unit'] = 'Unidade';

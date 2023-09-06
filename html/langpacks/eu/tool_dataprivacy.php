@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'eu', version '3.11'.
+ * Strings for component 'tool_dataprivacy', language 'eu', version '4.1'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -165,13 +165,13 @@ $string['exceptionnotificationsubject'] = 'Salbuespena gertatu da pribatutasun-d
 $string['expandplugin'] = 'Zabaldu eta tolestu plugina.';
 $string['expandplugintype'] = 'Zabaldu eta tolestu plugin mota.';
 $string['expiredretentionperiodtask'] = 'Atxikipen-epea iraungi da';
-$string['expiredrolewithretention'] = '{$a->retention} (Iraungitua)';
+$string['expiredrolewithretention'] = '{$a->retention} (Iraungita)';
 $string['expiry'] = 'Iraungitzea';
 $string['explanationtitle'] = 'Orri honetan erabiltzen diren ikonoak eta euren esanahia.';
 $string['external'] = 'Gehigarria';
 $string['externalexplanation'] = 'Gune honetan instalatutako plugin gehigarri bat.';
 $string['filteroption'] = '{$a->category}: {$a->name}';
-$string['frontpagecourse'] = 'Hasiera-orri ikastaroa';
+$string['frontpagecourse'] = 'Hasiera-orriko ikastaroa';
 $string['gdpr_art_6_1_a_description'] = 'Interesdunak baimena eman du bere datu-pertsonalak helburu zehatzen baterako prozesatzeko';
 $string['gdpr_art_6_1_a_name'] = 'Baimena (DBAO 6.1(a) artikulua)';
 $string['gdpr_art_6_1_b_description'] = 'Prozesaketa beharrezkoa da kontratua sortzeko datu pertsonalen jabea alderdia denean edo, kontratua sortu aurretik, interesatuaren datu pertsonalak eskatzeko urratsak ematearren.';
@@ -244,6 +244,8 @@ $string['pluginregistrytitle'] = 'Pluginen pribatutasun-betetze erregistroa';
 $string['privacy'] = 'Pribatutasuna';
 $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = 'Datu-eskaeraren orrian une honetan aplikatzen diren iragazkiak.';
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = 'Erabiltzaileak orri batean ikusi nahiago duen datu-eskaeren kopurua';
+$string['privacy:metadata:purpose'] = 'Gune honetarako datu-helburuetako informazioa.';
+$string['privacy:metadata:purpose:usermodified'] = 'Helburua aldatu zueneko erabiltzailearen IDa';
 $string['privacy:metadata:request'] = 'Gune honetarako egindako datu-pertsonalen eskaeren informazioa (sarbide eta ezabatze eskaerak).';
 $string['privacy:metadata:request:comments'] = 'Eskaerarik lotuta erabiltzaileak egindako edozein iruzkin.';
 $string['privacy:metadata:request:dpocomment'] = 'Eskaeraren inguruan guneko pribatutasunerako ordezkariak egindako edozein iruzkin.';
@@ -314,7 +316,7 @@ $string['reviewdata'] = 'Berrikusi datuak';
 $string['role'] = 'Baimena';
 $string['role_help'] = 'Baliogabetzea aplikatuko deneko baimena.';
 $string['roleoverride'] = 'Rol-baliogabetzea';
-$string['roleoverrideoverview'] = 'Mantenu-politika lehenetsia erabiltzaile-baimen zehatzetarako baliogabe daiteke, politika zabalago edo murritzagoa zehaztea ahalbidetuz. Erabiltzailea iraungituko da bere baimen guztiak iraungitakoan.';
+$string['roleoverrideoverview'] = 'Mantenu-politika lehenetsia erabiltzaile-baimen zehatzetarako baliogabe daiteke, politika zabalago edo murritzagoa zehaztea ahalbidetuz. Erabiltzailea iraungiko da bere baimen guztiak iraungitakoan.';
 $string['roleoverrides'] = 'Rol-baliogabetzeak';
 $string['selectbulkaction'] = 'Aukeratu multzoko ekintza bat, mesedez.';
 $string['selectdatarequests'] = 'Aukeratu datu-eskaerak, mesedez.';
@@ -332,7 +334,7 @@ $string['statuscomplete'] = 'Osatuta';
 $string['statusdeleted'] = 'Ezabatuta';
 $string['statusdetail'] = 'Egoera:';
 $string['statusexpired'] = 'Iraungita';
-$string['statuspending'] = 'Onartu gabe';
+$string['statuspending'] = 'Zain';
 $string['statusprocessing'] = 'Prozesatzen';
 $string['statusready'] = 'Jaisteko prest';
 $string['statusrejected'] = 'Ukatuta';

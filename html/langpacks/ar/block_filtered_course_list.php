@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_filtered_course_list', language 'ar', version '3.11'.
+ * Strings for component 'block_filtered_course_list', language 'ar', version '4.1'.
  *
  * @package     block_filtered_course_list
  * @category    string
@@ -29,7 +29,7 @@ $string['configcatrubrictpl'] = 'استعمل هذا الإعداد لتحديد
 $string['configcoursenametpl'] = 'استعمل هذا الإعداد لتحديد نمط عرض اسم المساق. تتوافر هنا الرموز الاستبدالية: FULLNAME، SHORTNAME، IDNUMBER و CATEGORY. بإمكانك قطم مخرجات أي رمز عبر إلحاقه بطول الحروف بين قوسين مموجين. (أي FULLNAME{20}). سيتم عندها إضافة القطم. <br /><br />التفاصيل الكاملة تجدها في <a href="https://github.com/CLAMP-IT/moodle-blocks_filtered_course_list/wiki">https://github.com/CLAMP-IT/moodle-blocks_filtered_course_list/wiki</a>.';
 $string['confighideallcourseslink'] = 'إخفاء رابط "كل المقررات الدراسية" عند أسفل الكتلة. <br>إخفاء الرابط لا يؤثر على ما يشاهده المدير';
 $string['configtitle'] = 'عنوان الكتلة';
-$string['coursenametpl'] = 'قالب اسم المساق';
+$string['coursenametpl'] = 'مظهر اسم المساق';
 $string['courseswithxenrolment'] = 'المقررات الدراسية التي فيها {$a} من الانضمامات';
 $string['filtered_course_list:addinstance'] = 'إضافة كتلة جديدة من قائمة المقررات الدراسية المرشحة';
 $string['filtered_course_list:myaddinstance'] = 'إضافة كتلة جديدة من قائمة المقررات الدراسية المرشحة إلى صفحتي الرئيسية';

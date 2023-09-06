@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'sv', version '3.11'.
+ * Strings for component 'wiki', language 'sv', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -102,6 +102,7 @@ $string['formatcreole'] = 'Format av typ Creole';
 $string['formatcreole_help'] = 'Creole är ett vanligen använt märkspråk för wiki med ett redigeringsverktygsfält för infogning av innehåll med rätt märkspråk.
 
 För att skapa en ny sida, skriv den nya sidans namn omgivet av dubbla hakparenteser, tex [[Sida 2]].';
+$string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'HTML-format';
 $string['formathtml_help'] = 'HTML redigeraren kan användas för att formatera innehåll.
 
@@ -110,6 +111,7 @@ $string['formatnwiki'] = 'Format av typ NWiki';
 $string['formatnwiki_help'] = 'Nwiki är Mediawikiliknande språket som används i Nwiki modulen.
 
 För att skapa en ny sida, skriv sidans namn omgivet av dubbla hakparenteser, tex [[Sida 2]].';
+$string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Historik';
 $string['history_help'] = 'Historikenlistar länkar till äldre versioner av sidan.';
 $string['html'] = 'HTML';
@@ -121,10 +123,12 @@ $string['indicator:cognitivedepth'] = 'Wiki kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Wikiaktivitet.';
 $string['indicator:cognitivedepthdef'] = 'Wiki kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av Wiki-aktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa, Skicka in)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Wiki social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Wikiaktivitet.';
 $string['indicator:socialbreadthdef'] = 'Wiki social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Wikiaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt, Deltagaren tillsammans med andra)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = 'Den enskilda wikisidan finns inte';
 $string['insertcomment'] = 'Infoga kommentar';
 $string['insertimage'] = 'Infoga bild...';
@@ -157,6 +161,7 @@ Wikis har många användningsområden, till exempel
 * För studenter att gemensamt skapa en onlinebok, skapa innehåll för ett ämne som ställs in av deras handledare
 * För kollaborativt berättande eller poesiskapande, där varje deltagare skriver en rad eller vers
 * Som en personlig tidskrift för examensanteckningar eller revision (med hjälp av en enskild wiki)';
+$string['modulename_link'] = 'mod/wiki/view';
 $string['modulenameplural'] = 'Wikis';
 $string['navigation'] = 'Navigering';
 $string['navigationfrom'] = 'Den här sidan kommer från';

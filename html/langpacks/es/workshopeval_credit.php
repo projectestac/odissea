@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopeval_credit', language 'es', version '3.11'.
+ * Strings for component 'workshopeval_credit', language 'es', version '4.1'.
  *
  * @package     workshopeval_credit
  * @category    string
@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['mode'] = 'Modo evaluación';
+$string['mode_desc'] = 'Modo de evaluación de calificación por defecto usado por  \'Crédito de participación\'';
 $string['modeall'] = 'Todo o nada';
 $string['modeone'] = 'Al menos uno';
 $string['modeproportional'] = 'Proporcional';
+$string['pluginname'] = 'Crédito de participación';
+$string['privacy:metadata'] = 'Crédito de participación no almacena ningún dato personal';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'es', version '3.11'.
+ * Strings for component 'tool_behat', language 'es', version '4.1'.
  *
  * @package     tool_behat
  * @category    string
@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'Esta herramienta de administración permite a los desarrolladores y creadores de pruebas generar archivos .feature que describen las funcionalidades de Moodle y se ejecutan automáticamente. Las etapas definidas disponibles para su uso en los archivos .feature se enumeran a continuación.';
 $string['allavailablesteps'] = 'Todas las definiciones de etapas disponibles';
-$string['errorapproot'] = '$CFG->behat_ionic_dirroot no hace referencia a una instalación válida de desarrollador de la aplicación Moodle.';
 $string['errorbehatcommand'] = 'Error durante la ejecución del comando behat en CLI. Ejecute manualmente "{$a} --help" desde la línea de comando para saber más acerca de este error.';
 $string['errorcomposer'] = 'Las dependencias necesarias no están instaladas.';
 $string['errordataroot'] = 'La configuración $CFG->behat_dataroot no existe o es inválida.';

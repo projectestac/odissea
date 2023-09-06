@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'el', version '3.11'.
+ * Strings for component 'cachestore_redis', language 'el', version '4.1'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -42,12 +42,15 @@ $string['serializer_igbinary'] = 'Ο σειριοποιητής igbinary (PHP se
 $string['serializer_php'] = 'Ο προεπιλεγμένος PHP σειριοποιητής (serializer).';
 $string['server'] = 'Εξυπηρετητής';
 $string['server_help'] = 'Εδώ ορίζεται το όνομα κεντρικού Η/Υ (hostname) ή η διεύθυνση IP του εξυπηρετητή Redis που χρησιμοποιείται.';
+$string['task_ttl'] = 'Απελευθερώστε τη μνήμη που χρησιμοποιείται από καταχωρήσεις που έχουν λήξει στις κρυφές μνήμες Redis';
 $string['test_password'] = 'Κωδικός πρόσβασης εξυπηρετητή δοκιμών';
 $string['test_password_desc'] = 'Κωδικός πρόσβασης εξυπηρετητή δοκιμών Redis.';
 $string['test_serializer'] = 'Σειριοποιητής';
 $string['test_serializer_desc'] = 'Σειριοποιητής προς χρήση για δοκιμές.';
 $string['test_server'] = 'Εξυπηρετητής δοκιμών';
 $string['test_server_desc'] = 'Εξυπηρετητής Redis που θα χρησιμοποιείται για δοκιμές.';
+$string['test_ttl'] = 'Δοκιμή TTL';
+$string['test_ttl_desc'] = 'Εκτελέστε τη δοκιμή απόδοσης χρησιμοποιώντας μια κρυφή μνήμη που απαιτεί TTL (πιο αργά σύνολα).';
 $string['usecompressor'] = 'Χρήση συμπιεστή';
 $string['usecompressor_help'] = 'Καθορίζει τον συμπιεστή προς χρήση μετά την σειριοποίηση. Γίνεται σε επίπεδο API κρυφής μνήμης Moodle και όχι σε επίπεδο php-redis.';
 $string['useserializer'] = 'Χρήση σειριοποιητή';

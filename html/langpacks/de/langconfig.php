@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'de', version '3.11'.
+ * Strings for component 'langconfig', language 'de', version '4.1'.
  *
  * @package     langconfig
  * @category    string
@@ -47,14 +47,18 @@ $string['pmcaps'] = 'nachmittags';
 $string['strftimedate'] = '%d. %B %Y';
 $string['strftimedatefullshort'] = '%d.%m.%y';
 $string['strftimedatemonthabbr'] = '%d. %b %Y';
+$string['strftimedatemonthtimeshort'] = '%d. %b %Y, %H:%M';
 $string['strftimedateshort'] = '%d. %B';
 $string['strftimedateshortmonthabbr'] = '%d. %b';
 $string['strftimedatetime'] = '%d. %B %Y, %H:%M';
+$string['strftimedatetimeaccurate'] = '%d. %B %Y, %H:%M:%S';
 $string['strftimedatetimeshort'] = '%d.%m.%Y %H:%M';
+$string['strftimedatetimeshortaccurate'] = '%d. %B %Y, %H:%M:%S';
 $string['strftimedaydate'] = '%A, %d. %B %Y';
 $string['strftimedaydatetime'] = '%A, %d. %B %Y, %H:%M';
 $string['strftimedayshort'] = '%A, %d. %B';
 $string['strftimedaytime'] = '%a, %H:%M';
+$string['strftimemonth'] = '%B';
 $string['strftimemonthyear'] = '%B %Y';
 $string['strftimerecent'] = '%d. %b, %H:%M';
 $string['strftimerecentfull'] = '%a, %d. %b %Y, %H:%M';

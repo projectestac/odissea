@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'nl', version '3.11'.
+ * Strings for component 'backup', language 'nl', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -73,6 +73,7 @@ $string['automatedsetup'] = 'Instellingen automatische back-up';
 $string['automatedstorage'] = 'Opslag automatische back-up';
 $string['automatedstoragehelp'] = 'Kies de plaats waar automatische back-ups terecht moeten komen.';
 $string['backupactivity'] = 'Back-up activiteit: {$a}';
+$string['backupautoactivitiesdescription'] = 'Stelt de standaard in voor het opnemen van activiteiten in een back-up. Om de prullenbak te laten werken, moet deze instelling zijn ingeschakeld.';
 $string['backupcourse'] = 'Back-up cursus: {$a}';
 $string['backupcoursedetails'] = 'Cursusdetails';
 $string['backupcoursesection'] = 'Sectie: {$a}';
@@ -205,7 +206,7 @@ $string['errorfilenametoolong'] = 'De bestandsnaam moet korter zijn dan 255 teke
 $string['errorinvalidformat'] = 'Onbekend back-upformaat';
 $string['errorinvalidformatinfo'] = 'Het gekozen bestand is geen geldig Moodle back-upbestand en kan niet teruggezet worden.';
 $string['errorminbackup20version'] = 'Dit back-upbestand is gemaakt met een ontwikkelversie van Moodle-back-up ({$a->backup}). De minimale vereiste is {$a->min}. Kan niet teruggezet worden.';
-$string['errorrestorefrontpagebackup'] = 'Je kunt back-ups van de startpagina enkel op de startpagina terugzetten';
+$string['errorrestorefrontpagebackup'] = 'Je kunt back-ups van de site startpagina enkel op de site startpagina terugzetten';
 $string['executionsuccess'] = 'Je back-upbestand is klaar.';
 $string['extractingbackupfileto'] = 'Backup-bestand uitpakken naar: {$a}';
 $string['failed'] = 'Back-up mislukt';
@@ -213,6 +214,7 @@ $string['filealiasesrestorefailures'] = 'Aliases terugzetten mislukt';
 $string['filealiasesrestorefailures_help'] = 'Aliases zijn symbolische links naar andere bestanden,  ook deze naar externe opslagruimten. In sommige gevallen kan Moodle ze niet terugzetten - bijvoorbeeld als een back-up van een andere site wordt teruggezet en het bestand waarnaar gerefereerd wordt niet bestaat.
 
 Meer details en de werkelijke reden van het falen kan gevonden kunnen gevonden in het restore log bestand.';
+$string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = 'Sommige aliases in het back-upbestand konden niet teruggezet worden. Volgende lijst bevat hun verwachte locatie en het bronbestand waarnaar ze verwijzen op de oorspronkelijke site.';
 $string['filename'] = 'Bestandsnaam';
 $string['filereferencesincluded'] = 'Er zijn bestandsreferenties naar externe inhoud opgenomen in het back-upbestand. Die zullen niet werken als de back-up wordt teruggezet op een andere site.';
@@ -309,13 +311,13 @@ $string['qcategory2coursefallback'] = 'De vragencategorie "{$a->name}" die oorsp
 $string['qcategorycannotberestored'] = 'De vragencategorie "{$a->name}" kan tijdens het terugzetten niet gemaakt worden';
 $string['question2coursefallback'] = 'De vragencategorie "{$a->name}" die oorspronkelijk op systeem/cursus categorie context in het back-up bestand zat, zal in de cursus context gemaakt worden bij het terugzetten;';
 $string['questionegorycannotberestored'] = 'De vragen "{$a->name}" kunnen niet gemaakt worden tijdens het terugzetten.';
-$string['recyclebin_desc'] = 'Deze instellingen worden ook toegepast op de prullenbak.';
+$string['recyclebin_desc'] = 'Merk op dat deze instellingen ook worden toegepast op de prullenbak.';
 $string['replacerestoredefaults'] = 'Herstel standaardinstellingen wanneer er teruggezet wordt in een andere cursus waarbij inhoud verwijderd wordt';
 $string['restoreactivity'] = 'Activiteit terugzetten';
 $string['restorecourse'] = 'Cursus terugzetten';
 $string['restorecoursesettings'] = 'Cursusinstellingen';
 $string['restoredcourseid'] = 'ID van teruggeplaatste cursus: {$a}';
-$string['restoreexecutionsuccess'] = 'De cursus is met succes teruggezet, klikken op de onderstaande knop brengt je naar de cursus die je teruggezet hebt.';
+$string['restoreexecutionsuccess'] = 'De cursus is met succes teruggezet.';
 $string['restorefileweremissing'] = 'Sommige bestanden konden niet teruggezet worden omdat ze ontbraken in de back-up.';
 $string['restorenewcoursefullname'] = 'Nieuwe cursusnaam';
 $string['restorenewcourseshortname'] = 'Nieuwe korte naam voor cursus';
@@ -392,7 +394,7 @@ $string['setting_overwrite_course_fullname'] = 'Overschrijf volledige naam van d
 $string['setting_overwrite_course_shortname'] = 'Overschrijf cursus korte naam';
 $string['setting_overwrite_course_startdate'] = 'Overschrijf cursus startdatum';
 $string['showtypes'] = 'Toon type-opties';
-$string['sitecourseformatwarning'] = 'Dit is een back-up voor de startpagina. Merk op dat die enkel op de startpagina kan teruggezet worden.';
+$string['sitecourseformatwarning'] = 'Dit is een back-up voor de site startpagina. Je kunt die enkel op de site startpagina terugzetten.';
 $string['skiphidden'] = 'Sla verborgen cursussen over';
 $string['skiphiddenhelp'] = 'Kies om verborgen cursussen al dan niet over te slaan bij een back-up';
 $string['skipmodifdays'] = 'Sla cursussen over die niet gewijzigd zijn sinds';

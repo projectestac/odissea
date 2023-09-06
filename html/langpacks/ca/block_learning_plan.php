@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_learning_plan', language 'ca', version '3.11'.
+ * Strings for component 'block_learning_plan', language 'ca', version '4.1'.
  *
  * @package     block_learning_plan
  * @category    string
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['desc'] = 'Descripció';
+$string['edit'] = 'Edita';
 $string['end_date'] = 'Data de finalització';
 $string['search'] = 'Cerca';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_hotpot', language 'de', version '3.11'.
+ * Strings for component 'qformat_hotpot', language 'de', version '4.1'.
  *
  * @package     qformat_hotpot
  * @category    string
@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['hotpot'] = 'HotPotatoes-XML-Format';
 $string['hotpot_help'] = 'Dateiformat zum Import von Fragen aus HotPotatoes xml-Dateien, JCloze (jcl), JCross (jcw), JMatch (jmt), JMix(jmx), JQuiz (jqz) in die Moodle-Fragebank.';
+$string['hotpot_link'] = 'qformat/hotpot';
 $string['pluginname'] = 'HotPotatoes-XML-Format';
 $string['pluginname_help'] = 'Dateiformat zum Import von Fragen aus HotPotatoes xml-Dateien, JCloze (jcl), JCross (jcw), JMatch (jmt), JMix(jmx), JQuiz (jqz) in die Moodle-Fragebank.';
+$string['pluginname_link'] = 'qformat/hotpot';
 $string['requiremodhotpot'] = 'Das Plugin "HotPotatoes-Frage-Import" kann nicht installiert werden, da das HotPot-Aktivitätsmodul fehlt. Laden Sie bitte das HotPot-Aktivitätsmodul herunter, kopieren Sie es in {$a}/mod/hotpot und laden Sie diese Seite neu.';

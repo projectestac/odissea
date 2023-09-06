@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_mobileapp', language 'eu', version '3.11'.
+ * Strings for component 'availability_mobileapp', language 'eu', version '4.1'.
  *
  * @package     availability_mobileapp
  * @category    string
@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Behartu ikasleak Mobile aplikazioaren bidez sartzera (edo ez sartzera).';
 $string['label_access'] = 'Sarbide-mota:';
-$string['pluginname'] = 'Mobile app bidezko sarbidearen araberako baldintza';
-$string['privacy:metadata'] = 'Mobile app bidezko sarbidearen araberako baldintza pluginak ez du datu pertsonalik biltzen';
+$string['pluginname'] = 'Mobile app bidezko sarbidearen araberako eskuragarritasun baldintza';
+$string['privacy:metadata'] = 'Mobile app bidezko sarbidearen araberako eskuragarritasun baldintza pluginak ez du datu pertsonalik biltzen';
 $string['requires_app'] = 'Mobile aplikazioa erabilita sartzea';
 $string['requires_notapp'] = 'Mobile aplikazioa erabili GABE sartzea';
 $string['title'] = 'Mobile aplikazioa';

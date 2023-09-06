@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'eu', version '3.11'.
+ * Strings for component 'report_performance', language 'eu', version '4.1'.
  *
  * @package     report_performance
  * @category    string
@@ -32,6 +32,9 @@ $string['check_backup_details'] = 'Segurtasun-kopia automatizatuak gaituz gero, 
 $string['check_cachejs_comment_disable'] = 'Gaituz gero, orriak kargatzeko errendimendua hobetzen da';
 $string['check_cachejs_comment_enable'] = 'Desgaituz gero, orria astiro karga daiteke.';
 $string['check_cachejs_details'] = 'Javascript fitxategien cacheak eta konpresioak orri-kargaren errendimendua asko hobetzen du. Lanean ari diren guneetan irmoki gomendatzen da.';
+$string['check_dbschema_errors'] = 'Datu-basearen eskema ez dago lerrokatuta.';
+$string['check_dbschema_name'] = 'Datu-basearen eskemaren egiaztapena';
+$string['check_dbschema_ok'] = 'Datu-basearen eskema ondo dago.';
 $string['check_debugmsg_comment_developer'] = 'GARATZAILEA ez den beste aukera bat ezarriz gero, errendimendua pixka bat hobe daiteke.';
 $string['check_debugmsg_comment_nodeveloper'] = 'GARATZAILEA moduan ezarriz gero, errendimendua pixka bat kaltetua izan daiteke.';
 $string['check_debugmsg_details'] = 'Nekez izango da abantailarik Garatzaile modua ezartzean, garatzaile batek eskatua izan ezean.<p>Behin errore-mezua eskuratu, kopiatu eta beste nonbaiten itsatsi ondoren, IRMOKI GOMENDATZEN DA berriz ere \'BAT ERE EZ\' arazketa-modua zehaztea. Garatzaile moduak hackerrei pistak ematen dizkie eta gainera zure gunearen errendimenduan eragina izan dezake.</p>';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'eu', version '3.11'.
+ * Strings for component 'tool_lp', language 'eu', version '4.1'.
  *
  * @package     tool_lp
  * @category    string
@@ -166,6 +166,7 @@ $string['nouserevidence'] = 'Oraindik ez da aurretik ikasitakoaren ebidentziarik
 $string['nouserplans'] = 'Ez da oraindik ikasketa-planik sortu.';
 $string['oneplanwascreated'] = 'Ikasketa-plana sortu da';
 $string['outcome'] = 'Ikaste-emaitza';
+$string['overridegrade'] = 'Baliogabetu lehendik dagoen konpetentziaren kalifikazioa osatzerakoan.';
 $string['parentcompetency'] = 'Goragokoa';
 $string['parentcompetency_edit'] = 'Editatu goragokoa';
 $string['parentcompetency_help'] = 'Zehaztu konpetentzia goragoko zein konpetentziaren barruan gehituko den. Konpetentzia-marko bereko beste konpetentzia bat izan daiteke, edo konpetentzia-markoaren jatorria goi mailako konpetentzia bada.';

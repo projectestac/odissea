@@ -35,13 +35,13 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-import ModalFactory from 'core/modal_factory';
-import ModalEvents from 'core/modal_events';
 import Ajax from 'core/ajax';
-import Notification from 'core/notification';
-import Y from 'core/yui';
-import Event from 'core/event';
+import * as FormChangeChecker from 'core_form/changechecker';
+import * as FormEvents from 'core_form/events';
 import Fragment from 'core/fragment';
+import ModalEvents from 'core/modal_events';
+import ModalFactory from 'core/modal_factory';
+import Notification from 'core/notification';
 import Pending from 'core/pending';
 import {serialize} from './util';
 
@@ -131,16 +131,12 @@ export default class ModalForm {
 
             // After successfull submit, when we press "Cancel" or close the dialogue by clicking on X in the top right corner.
             this.modal.getRoot().on(ModalEvents.hidden, () => {
-                this.notifyResetFormChanges()
-                .then(() => {
-                    this.modal.destroy();
-                    // Focus on the element that actually launched the modal.
-                    if (this.config.returnFocus) {
-                        this.config.returnFocus.focus();
-                    }
-                    return null;
-                })
-                .catch(() => null);
+                this.notifyResetFormChanges();
+                this.modal.destroy();
+                // Focus on the element that actually launched the modal.
+                if (this.config.returnFocus) {
+                    this.config.returnFocus.focus();
+                }
             });
 
             // Add the class to the modal dialogue.
@@ -269,81 +265,71 @@ export default class ModalForm {
     /**
      * Notifies listeners that form dirty state should be reset.
      *
-     * @return {Promise<unknown>}
+     * @fires event:formSubmittedByJavascript
      */
     notifyResetFormChanges() {
-        return new Promise(resolve => {
-            Y.use('event', 'moodle-core-event', 'moodle-core-formchangechecker', () => {
-                // Ensure that modal contains a form element (it may not if the form class threw an early exception).
-                const form = this.modal.getRoot().find('form')[0];
-                if (form) {
-                    Event.notifyFormSubmitAjax(form, true);
-                    M.core_formchangechecker.reset_form_dirty_state();
-                }
-                resolve();
-            });
-        });
+        const form = this.getFormNode();
+        if (!form) {
+            return;
+        }
+
+        FormEvents.notifyFormSubmittedByJavascript(form, true);
+
+        FormChangeChecker.resetFormDirtyState(form);
     }
 
     /**
-     * Wrapper for Event.notifyFormSubmitAjax that waits for the module to load
+     * Get the form node from the Dialogue.
      *
-     * We often destroy the form right after calling this function and we need to make sure that it actually
-     * completes before it, or otherwise it will try to work with a form that does not exist.
-     *
-     * @param {Boolean} skipValidation
-     * @return {Promise}
+     * @returns {HTMLFormElement}
      */
-    notifyFormSubmitAjax(skipValidation = false) {
-        return new Promise(resolve => {
-            Y.use('event', 'moodle-core-event', 'moodle-core-formchangechecker', () => {
-                Event.notifyFormSubmitAjax(this.modal.getRoot().find('form')[0], skipValidation);
-                resolve();
-            });
-        });
+    getFormNode() {
+        return this.modal.getRoot().find('form')[0];
     }
 
     /**
      * Click on a "submit" button that is marked in the form as registerNoSubmitButton()
      *
      * @param {Element} button button that was pressed
+     * @fires event:formSubmittedByJavascript
      */
     processNoSubmitButton(button) {
-        this.notifyFormSubmitAjax(true)
-        .then(() => {
-            // Add the button name to the form data and submit it.
-            let formData = this.modal.getRoot().find('form').serialize();
-            formData = formData + '&' + encodeURIComponent(button.getAttribute('name')) + '=' +
-                encodeURIComponent(button.getAttribute('value'));
+        const form = this.getFormNode();
+        if (!form) {
+            return;
+        }
 
-            const bodyContent = this.getBody(formData);
-            this.modal.setBodyContent(bodyContent);
-            bodyContent.catch(Notification.exception);
+        FormEvents.notifyFormSubmittedByJavascript(form, true);
 
-            return null;
-        })
-        .catch(null);
+        // Add the button name to the form data and submit it.
+        let formData = this.modal.getRoot().find('form').serialize();
+        formData = formData + '&' + encodeURIComponent(button.getAttribute('name')) + '=' +
+            encodeURIComponent(button.getAttribute('value'));
+
+        const bodyContent = this.getBody(formData);
+        this.modal.setBodyContent(bodyContent);
+        bodyContent.catch(Notification.exception);
     }
 
     /**
      * Validate form elements
-     * @return {Promise} promise that returns true if client-side validation has passed, false if there are errors
+     * @return {Boolean} Whether client-side validation has passed, false if there are errors
+     * @fires event:formSubmittedByJavascript
      */
     validateElements() {
-        return this.notifyFormSubmitAjax()
-        .then(() => {
-            // Now the change events have run, see if there are any "invalid" form fields.
-            /** @var {jQuery} list of elements with errors */
-            const invalid = this.modal.getRoot().find('[aria-invalid="true"], .error');
+        FormEvents.notifyFormSubmittedByJavascript(this.getFormNode());
 
-            // If we found invalid fields, focus on the first one and do not submit via ajax.
-            if (invalid.length) {
-                invalid.first().focus();
-                return false;
-            }
+        // Now the change events have run, see if there are any "invalid" form fields.
+        /** @var {jQuery} list of elements with errors */
+        const invalid = this.modal.getRoot().find('[aria-invalid="true"], .error');
 
-            return true;
-        });
+        // If we found invalid fields, focus on the first one and do not submit via ajax.
+        if (invalid.length) {
+            invalid.first().focus();
+            return false;
+        }
+
+        return true;
     }
 
     /**
@@ -365,14 +351,15 @@ export default class ModalForm {
      */
     async submitFormAjax() {
         // If we found invalid fields, focus on the first one and do not submit via ajax.
-        if (!await this.validateElements()) {
+        if (!this.validateElements()) {
             this.trigger(this.events.CLIENT_VALIDATION_ERROR, null, false);
             return;
         }
         this.disableButtons();
 
         // Convert all the form elements values to a serialised string.
-        const formData = this.modal.getRoot().find('form').serialize();
+        const form = this.modal.getRoot().find('form');
+        const formData = form.serialize();
 
         // Now we can continue...
         Ajax.call([{
@@ -393,14 +380,11 @@ export default class ModalForm {
             } else {
                 // Form was submitted properly. Hide the modal and execute callback.
                 const data = JSON.parse(response.data);
-                return this.notifyResetFormChanges()
-                .then(() => {
-                    const event = this.trigger(this.events.FORM_SUBMITTED, data);
-                    if (!event.defaultPrevented) {
-                        this.modal.hide();
-                    }
-                    return null;
-                });
+                FormChangeChecker.markFormSubmitted(form[0]);
+                const event = this.trigger(this.events.FORM_SUBMITTED, data);
+                if (!event.defaultPrevented) {
+                    this.modal.hide();
+                }
             }
             return null;
         })

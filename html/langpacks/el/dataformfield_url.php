@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataformfield_url', language 'el', version '3.11'.
+ * Strings for component 'dataformfield_url', language 'el', version '4.1'.
  *
  * @package     dataformfield_url
  * @category    string
@@ -30,5 +30,5 @@ $string['applymediafilter'] = 'Εφαρμογή φίλτρου πολυμέσω�
 $string['forcename'] = 'Επιβολή ονόματος για τον σύνδεσμο';
 $string['makeimage'] = 'Κάντε την διεύθυνση URL, εικόνα';
 $string['makelink'] = 'Κάντε την διεύθυνση URL, σύνδεσμο';
-$string['pluginname'] = 'Url';
+$string['pluginname'] = 'Διεύθυνση URL';
 $string['usepicker'] = 'Χρήση επιλογέα διεύθυνσης URL κατά την επεξεργασία';

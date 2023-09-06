@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'nl', version '3.11'.
+ * Strings for component 'role', language 'nl', version '4.1'.
  *
  * @package     role
  * @category    string
@@ -46,7 +46,7 @@ $string['archetype'] = 'Rol archetype';
 $string['archetype_help'] = 'De archetype rol bepaalt welke rechten een rol krijgt wanneer die terug op standaardinstellingen gezet wordt. Dit bepaalt ook de nieuwe rechten die een rol krijgt wanneer de site geüpgraded wordt';
 $string['archetypecoursecreator'] = 'ARCHETYPE: cursusaanmaker';
 $string['archetypeeditingteacher'] = 'ARCHETYPE: Leraar (bewerken)';
-$string['archetypefrontpage'] = 'ARCHETYPE: Geauthenticeerde gebruikers op de startpagina';
+$string['archetypefrontpage'] = 'ARCHETYPE: Geauthenticeerde gebruikers op de site startpagina';
 $string['archetypeguest'] = 'ARCHETYPE: Gast';
 $string['archetypemanager'] = 'ARCHETYPE: Beheerder';
 $string['archetypestudent'] = 'ARCHETYPE: Leerling';
@@ -63,6 +63,7 @@ $string['assignrolenameincontext'] = 'Wijs rol \'{$a->role}\' toe in {$a->contex
 $string['assignroles'] = 'Rollen toewijzen';
 $string['assignroles_help'] = 'Door een gebruiker een rol toe te wijzen binnen een bepaalde context, geef je hem de rechten die bij die rol horen voor deze context en in alle "lagere" contexten.
 Bijvoorbeeld: als je een gebruiker de rol "Leerling" geeft binnen een cursus, dan zal die gebruiker die rol hebben voor die cursus, maar ook voor alle blokken en activiteiten binnen die cursus. ';
+$string['assignroles_link'] = 'admin/roles/assign';
 $string['assignrolesin'] = 'Rollen toewijzen in {$a}';
 $string['assignrolesrelativetothisuser'] = 'Rollen, relatief tot deze gebruiker toewijzen';
 $string['backtoallroles'] = 'Terug naar de lijst met alle rollen';
@@ -94,7 +95,7 @@ $string['blog:manageentries'] = 'Items bewerken en beheren';
 $string['blog:manageexternal'] = 'Bewerk en beheer externe blogs';
 $string['blog:search'] = 'Zoek blogitems';
 $string['blog:view'] = 'Blogitems bekijken';
-$string['blog:viewdrafts'] = 'Bekijk kladwerk van blogs';
+$string['blog:viewdrafts'] = 'Bekijk concepten van blogs';
 $string['calendar:manageentries'] = 'Gelijk welke kalenderitems beheren';
 $string['calendar:managegroupentries'] = 'Groepskalenderitems beheren';
 $string['calendar:manageownentries'] = 'Eigen kalenderitems beheren';
@@ -130,16 +131,16 @@ $string['competency:evidencedelete'] = 'Verwijder bewijsstukken';
 $string['competency:plancomment'] = 'Reageer op een studieplan';
 $string['competency:plancommentown'] = 'Reageer op je eigen studieplan';
 $string['competency:planmanage'] = 'Beheer studieplannen';
-$string['competency:planmanagedraft'] = 'Beheer ontwerp studieplannen';
+$string['competency:planmanagedraft'] = 'Beheer concepten studieplannen';
 $string['competency:planmanageown'] = 'Beheer eigen studieplannen';
-$string['competency:planmanageowndraft'] = 'Beheer van eigen studieplannen in ontwerp';
+$string['competency:planmanageowndraft'] = 'Beheer van eigen concepten van studieplannen';
 $string['competency:planrequestreview'] = 'Vraag een mening over een studieplan';
 $string['competency:planrequestreviewown'] = 'Vraag een mening over je eigen studieplan';
 $string['competency:planreview'] = 'Geef je mening over een studieplan';
 $string['competency:planview'] = 'Bekijk alle studieplannen';
-$string['competency:planviewdraft'] = 'Bekijk studieplannen in ontwerp';
+$string['competency:planviewdraft'] = 'Bekijk concepten van studieplannen';
 $string['competency:planviewown'] = 'Bekijk eigen studieplannen';
-$string['competency:planviewowndraft'] = 'Bekijk eigen studieplannen in ontwerp';
+$string['competency:planviewowndraft'] = 'Bekijk eigen concepten van studieplannen';
 $string['competency:templatemanage'] = 'Beheer studieplansjablonen';
 $string['competency:templateview'] = 'Bekijk studieplansjablonen';
 $string['competency:usercompetencycomment'] = 'Opmerking maken bij een gebruikerscompetentie';
@@ -204,7 +205,7 @@ $string['course:reset'] = 'Cursus opruimen';
 $string['course:reviewotherusers'] = 'Beoordeel andere gebruikers';
 $string['course:sectionvisibility'] = 'Zichtbaarheid van secties beheren';
 $string['course:setcurrentsection'] = 'Huidige sectie instellen';
-$string['course:setforcedlanguage'] = 'Cursustaal verplichten';
+$string['course:setforcedlanguage'] = 'Cursustaal of taal van de activiteit opleggen';
 $string['course:tag'] = 'Wijzig cursus-tags';
 $string['course:togglecompletion'] = 'Sta gebruikers toe om activiteiten handmatig als voltooid aan te duiden';
 $string['course:update'] = 'Cursusinstellingen wijzigen';
@@ -262,10 +263,10 @@ $string['export'] = 'Exporteer';
 $string['extusers'] = 'Bestaande gebruikers';
 $string['extusersmatching'] = 'Bestaande gebruikers die overeen komen met \'{$a}\'';
 $string['filter:manage'] = 'Beheer lokale filterinstellingen';
-$string['frontpageuser'] = 'Authenticeer gebruikers op de startpagina';
-$string['frontpageuserdescription'] = 'Alle ingelogde gebruikers in de startpaginacursus';
+$string['frontpageuser'] = 'Authenticeer gebruikers op de site startpagina';
+$string['frontpageuserdescription'] = 'Alle ingelogde gebruikers in de site startpaginacursus.';
 $string['globalrole'] = 'Systeem rol';
-$string['globalroleswarning'] = 'WAARSCHUWING: Alle rollen die je vanaf deze pagina aan gebruikers toewijst, zullen voor de hele site gelden, de startpagina en alle cursussen inbegrepen.';
+$string['globalroleswarning'] = 'Waarschuwing: alle rollen die je vanaf deze pagina aan gebruikers toewijst, zullen voor de hele site gelden, de site startpagina en alle cursussen inbegrepen.';
 $string['gotoassignroles'] = 'Ga naar Rollen toewijzen voor deze {$a->contextlevel}';
 $string['gotoassignsystemroles'] = 'Ga naar Systeemrollen toewijzen';
 $string['grade:edit'] = 'Cijfers bewerken';
@@ -353,6 +354,7 @@ See also
 <a href="help.php?file=assignroles.html">Rollen toewijzen</a> en
 <a href="help.php?file=permissions.html">Rechten</a>.
 </p>';
+$string['overridepermissions_link'] = 'admin/roles/override';
 $string['overridepermissionsforrole'] = 'Rechten overschrijven voor de rol \'{$a->role}\' in {$a->context}';
 $string['overridepermissionsin'] = 'Rechten overschrijven in {$a}';
 $string['overrideroles'] = 'Rollen overschrijven';
@@ -396,6 +398,8 @@ $string['privacy:metadata:role_cohortroles'] = 'Rollen voor site-groep';
 $string['prohibit'] = 'Verbieden';
 $string['prohibitedroles'] = 'Verboden';
 $string['question:add'] = 'Nieuwe vragen toevoegen';
+$string['question:commentall'] = 'Geef een opmerking op alle vragen';
+$string['question:commentmine'] = 'Geef een opmerking op je eigen vragen';
 $string['question:config'] = 'Vraagtypes configureren';
 $string['question:editall'] = 'Alle vragen bewerken';
 $string['question:editmine'] = 'Eigen vragen bewerken';
@@ -413,6 +417,10 @@ $string['rating:rate'] = 'Items beoordelen';
 $string['rating:view'] = 'Het beoordelingstotaal zien dat je gekregen hebt';
 $string['rating:viewall'] = 'Bekijk alle ruwe beoordelingen';
 $string['rating:viewany'] = 'Bekijk alle totaalbeoordelingen';
+$string['reportbuilder:edit'] = 'Bewerk je eigen aangepaste rapporten';
+$string['reportbuilder:editall'] = 'Alle aangepaste rapporten bewerken';
+$string['reportbuilder:scheduleviewas'] = 'Planningsrapporten om als andere gebruikers te worden bekeken';
+$string['reportbuilder:view'] = 'Aangepaste rapporten bekijken';
 $string['resetrole'] = 'Standaardinstellingen';
 $string['resettingrole'] = 'Rol \'{$a}\' naar standaardinstellingen';
 $string['restore:configure'] = 'Configureer terugzetopties';
@@ -446,6 +454,7 @@ $string['roleresetrole'] = 'Gebruik rol voor archetype';
 $string['rolerisks'] = 'Risico\'s rol';
 $string['roles'] = 'Rollen';
 $string['roles_help'] = 'Een rol is een verzameling rechten vastgelegd voor het ganse systeem, die je in een specifieke context aan specifieke gebruikers kunt toekennen.';
+$string['roles_link'] = 'roles';
 $string['roleselect'] = 'Selecteer rol';
 $string['rolesforuser'] = 'Rollen voor gebruiker {$a}';
 $string['roleshortname'] = 'Korte naam';

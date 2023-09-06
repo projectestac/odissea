@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'eu', version '3.11'.
+ * Strings for component 'user', language 'eu', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'Ezarritako eta erabiltzaileari posta elektr
 $string['privacy:metadata:trackforums'] = 'Foroetako eta irakurri gabeko mezuen jarraipenerako hobespena.';
 $string['privacy:metadata:trustbitmask'] = 'Konfiantzazko bit-maskara';
 $string['privacy:metadata:url'] = 'Erabiltzaile honekin lotutako URLa.';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Erabiltzaileari ongi-etorri mezua lehen aldiz erakutsi zitzaioneko unea.';
 $string['privacy:metadata:user_preferences'] = 'Erabiltzailearekin lotutako hobespenak';
 $string['privacy:metadata:user_preferences:name'] = 'Hobespenaren izena';
 $string['privacy:metadata:user_preferences:userid'] = 'Erabiltzailearen IDa';
@@ -149,6 +150,11 @@ $string['privacy:privatefilespath'] = 'Fitxategi pribatuak';
 $string['privacy:profileimagespath'] = 'Profileko irudiak';
 $string['privacy:sessionpath'] = 'Saioaren datuak';
 $string['selectfiltertype'] = 'Aukeratu';
+$string['supportmessagealternative'] = 'Horren ordez, {$a} helbidera idatzi dezakezu.';
+$string['supportmessagenotsent'] = 'Zoritxarrez zure mezua ezin izan da bidali.';
+$string['supportmessagesent'] = 'Zure mezua bidalia izan da.';
+$string['supportmessagesentforloggedoutuser'] = 'Kontuz ibili mezu honekin. Igorleak saioa hasi gabe bidali du, eta beraz ezin izan da bere identitatea egiaztatu.';
 $string['target:upcomingactivitiesdue'] = 'Datozen jarduera-amaierak';
 $string['target:upcomingactivitiesdue_help'] = 'Helburu honek datozen jarduera-amaierentzako ohartarazpenak sortzen ditu.';
 $string['target:upcomingactivitiesdueinfo'] = 'Aurreikuspen guztietako programatutako jarduerak hemen erakusten dira. Ikasle hauek aurreikuspen hauek zuzenean jaso dituzte.';
+$string['userprofile'] = 'Erabiltzaile-profila';

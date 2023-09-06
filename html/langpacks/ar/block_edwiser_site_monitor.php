@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_edwiser_site_monitor', language 'ar', version '3.11'.
+ * Strings for component 'block_edwiser_site_monitor', language 'ar', version '4.1'.
  *
  * @package     block_edwiser_site_monitor
  * @category    string
@@ -31,7 +31,7 @@ $string['configtitle'] = 'عنوان كتلة مراقب الموقع Edwiser';
 $string['cpucommandnotallowed'] = 'سطر الأمر <strong>/proc/cpuinfo</strong> -- طلب الصلاحية مرفوض.';
 $string['crontask'] = 'مراقب الموقع Edwiser - إجمع إحصائيات الاستعمال 24 ساعة';
 $string['edwiser_site_monitor:addinstance'] = 'إضافة كتلة جديدة لمراقبة الموقع';
-$string['edwiser_site_monitor:myaddinstance'] = 'إضافة كتلة جديدة لمراقبة الموقع إلى لوحة التحكم';
+$string['edwiser_site_monitor:myaddinstance'] = 'إضافة كتلة جديدة لمراقبة الموقع إلى دفة القيادة';
 $string['errorfetching'] = 'خطأ عند إحظار الملف المضغوط للإضافة. <b>{$a}</b>';
 $string['errorfetchingexist'] = 'خطأ عند إحضار الملف المضغوط للإضافة: موضع المقصد موجود. <b>{$a}</b>';
 $string['memorycommandnotallowed'] = 'سطر الأمر <strong>free</strong> -- طلب الصلاحية مرفوض.';

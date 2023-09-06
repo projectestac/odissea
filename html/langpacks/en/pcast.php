@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pcast', language 'en', version '3.11'.
+ * Strings for component 'pcast', language 'en', version '4.1'.
  *
  * @package     pcast
  * @category    string
@@ -41,6 +41,7 @@ $string['attachment'] = 'Attachment';
 $string['author'] = 'Author';
 $string['author_help'] = 'Author of this podcast';
 $string['authorview'] = 'Browse by author';
+$string['backtoepisodes'] = 'Back to episodes';
 $string['cannotseeepisode'] = 'Error: You do not have permission to view this episode';
 $string['categories'] = 'Categories';
 $string['category'] = 'Category';
@@ -82,17 +83,17 @@ $string['enablerssfeed'] = 'Enable RSS';
 $string['enablerssfeed_help'] = 'Enable RSS for this podcast';
 $string['enablerssitunes'] = 'Enable RSS for iTunes';
 $string['enablerssitunes_help'] = 'This enables iTunes specific tags in the RSS file';
-$string['episodecommentandrateview'] = 'Comment / Rate';
-$string['episodecommentview'] = 'Comment';
+$string['episodecommentandrateview'] = 'Commenting / Ratings';
+$string['episodecommentview'] = 'Commenting';
 $string['episodedeleted'] = 'episode {$a} was sucessfully deleted';
-$string['episoderateview'] = 'Rate';
+$string['episoderateview'] = 'Ratings';
 $string['episodes'] = '{$a} episodes';
 $string['episodesperpage'] = 'Episodes shown per page';
 $string['episodesperpage_help'] = 'This setting controls the number of episodes that will be displayed on a single page.  If you use large media files, you may wish to set this to a small number.';
 $string['episodeswithoutcategory'] = 'Episodes without a category';
 $string['episodetitle'] = 'Episode';
-$string['episodeview'] = 'Episode';
-$string['episodeviews'] = 'Views';
+$string['episodeview'] = 'View Episode';
+$string['episodeviews'] = 'Episode Views';
 $string['errcannotedit'] = 'Error: you cannot edit this episode';
 $string['errcannoteditothers'] = 'Error: you cannot edit other users episodes';
 $string['erredittimeexpired'] = 'Error: Editing time has expired';
@@ -198,6 +199,7 @@ $string['sortbycreation'] = 'Date created';
 $string['sortbylastupdate'] = 'Date updated';
 $string['special'] = 'Special';
 $string['standardview'] = 'Browse by alphabet';
+$string['subscribepisodes'] = 'Subscribe to episodes';
 $string['subtitle'] = 'Subtitle';
 $string['subtitle_help'] = 'Subtitle for podcast';
 $string['summary'] = 'Summary';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'ar', version '3.11'.
+ * Strings for component 'h5p', language 'ar', version '4.1'.
  *
  * @package     h5p
  * @category    string
@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['a11yTitle:label'] = 'ملصق التقنيات المساعدة';
+$string['acceptTerms'] = 'إنني أقبل <a href=":url" target="_blank">شروط الاستخدام</a>';
+$string['accountDetailsLinkText'] = 'هنا';
 $string['actions'] = 'أفعال';
+$string['add'] = 'إضافة';
 $string['addedandupdatedpp'] = 'أُضيفت {$a->%new} مكتبات H5P جديدة مع تحديث {$a->%old} قديمة أخرى.';
 $string['addedandupdatedps'] = 'أُضيفت {$a->%new} مكتبات H5P جديدة مع تحديث {$a->%old} قديمة أخرى.';
 $string['addedandupdatedsp'] = 'أُضيفت {$a->%new} مكتبة H5P جديدة مع تحديث {$a->%old} قديمة أخرى.';
@@ -33,6 +37,10 @@ $string['addedandupdatedss'] = 'أُضيفت {$a->%new} مكتبة H5P جديد�
 $string['addednewlibraries'] = 'أُضيفت {$a->%new} مكتبات H5P جديدة.';
 $string['addednewlibrary'] = 'أُضيفت {$a->%new} مكتبة H5P جديدة.';
 $string['additionallicenseinfo'] = 'أي معلومات إضافية عن الرخصة';
+$string['address'] = 'العنوان';
+$string['age'] = 'النموذج العمري';
+$string['ageDescription'] = 'الجمهور المستهدف لهذا المحتوى. صيغ الإدخال المحتملة مفصولة بفوارز: "1,34-45,-50,59-".';
+$string['altText'] = 'النص البديل';
 $string['atto_h5p'] = 'زر إدراج H5P';
 $string['atto_h5p_description'] = 'إن زر إدراج H5P في محرر Atto يتيح للمستخدمين إدراج محتوى من H5P إما عبر إدخال رابط أو تضمين الترميز، أو عبر رفع ملف H5P.';
 $string['author'] = 'المؤلف';
@@ -40,7 +48,12 @@ $string['authorcomments'] = 'تعليقات المؤلف';
 $string['authorcommentsdescription'] = 'تعليقات لمحرر المحتوى. (هذا النص لن يتم نشره كجزء من معلومات الحقوق الفكرية).';
 $string['authorname'] = 'اسم المؤلف';
 $string['authorrole'] = 'دور المؤلف';
+$string['back'] = 'عودة';
 $string['by'] = 'بواسطة';
+$string['cancelPublishConfirmationDialogCancelButtonText'] = 'لا';
+$string['cancelPublishConfirmationDialogConfirmButtonText'] = 'نعم';
+$string['cancelPublishConfirmationDialogDescription'] = 'هل أنت متأكد من رغبتك في إلغاء عملية المشاركة؟';
+$string['cancelPublishConfirmationDialogTitle'] = 'إلغاء المشاركة';
 $string['cancellabel'] = 'إلغاء';
 $string['ccattribution'] = 'Attribution (CC BY)';
 $string['ccattributionnc'] = 'Attribution-NonCommercial (CC BY-NC)';
@@ -49,37 +62,61 @@ $string['ccattributionncsa'] = 'Attribution-NonCommercial-ShareAlike (CC BY-NC-S
 $string['ccattributionnd'] = 'Attribution-NoDerivs (CC BY-ND)';
 $string['ccattributionsa'] = 'Attribution-ShareAlike (CC BY-SA)';
 $string['ccpdd'] = 'تكريس المجال العام (CC0)';
+$string['changeHasBeenSubmitted'] = 'لقد تم إجراء تغييرات في';
 $string['changedby'] = 'عدله';
 $string['changedescription'] = 'وصف التعديل';
 $string['changelog'] = 'سجل التعديل';
 $string['changeplaceholder'] = 'الصورة اقتصَّت، النص تغير... إلخ.';
+$string['city'] = 'المدينة';
 $string['close'] = 'إغلاق';
 $string['confirmdialogbody'] = 'لطفاً، أكّد رغبتك في المتابعة. هذا الإجراء لا يمكن التراجع عنه.';
 $string['confirmdialogheader'] = 'تأكيد الإجراء';
 $string['confirmlabel'] = 'التأكيد';
 $string['connectionLost'] = 'انقطع الاتصال. سيتم حفظ النتائج وإرسالها عند استعادة الاتصال.';
 $string['connectionReestablished'] = 'تمت استعادة الاتصال';
+$string['contactPerson'] = 'جهة الاتصال';
+$string['contactPersonDescription'] = 'سيقوم H5P بالاتصال مع جهة الاتصال المعنية في حالة وجود أي مشاكل في المحتوى الذي يشاركه الناشر. لن تتم مشاركة اسم جهة الاتصال أو أي معلومات أخرى عنه مع طرف ثالث';
+$string['contentAvailable'] = 'سيكون المحتوى الخاص بك متاحًا في المركز في غضون يوم عمل واحد.';
 $string['contentCopied'] = 'تم نسخ المحتوى إلى الحافظة';
+$string['contentLicenseTitle'] = 'معلومات رخصة المحتوى';
+$string['contentUpdateSoon'] = 'المحتوى الخاص بك سيتم تحديثه قريبًا';
 $string['contentchanged'] = 'هذا المحتوى قد تغير منذ استعمالك الأخير له.';
+$string['contentinuse'] = 'هذا المحتوى قد يكون قيد الاستعمال في مواضع أخرى.';
 $string['contenttype'] = 'نوع المحتوى';
 $string['copyright'] = 'حقوق الاستعمال';
+$string['copyrightWarning'] = 'لا يمكن مشاركة المحتوى المحمي بحقوق فكرية في مركز H5P. إذا كان المحتوى مرخصًا برخصة مفتوحة المنحى مثل رخصة الأعمال الإبداعية المشاعة، فيرجى تحديد الرخصة المناسبة. بخلاف ذلك، لا يمكن مشاركة هذا المحتوى.';
 $string['copyrightinfo'] = 'معلومات الحقوق الفكرية';
 $string['copyrightstring'] = 'الحقوق الفكرية';
 $string['copyrighttitle'] = 'معاينة معلومات الحقوق الفكرية لهذا المحتوى.';
 $string['couldNotParseJSONFromZip'] = 'تعذر استعراب نصوص JSON من الحزمة: {$a->%fileName}';
 $string['couldNotReadFileFromZip'] = 'تعذرت قراءة الملف من الحزمة: {$a->%fileName}';
+$string['country'] = 'البلد';
 $string['creativecommons'] = 'المشاع الإبداعي';
+$string['currentStep'] = 'الخطوة :step of :total';
 $string['date'] = 'التاريخ';
 $string['deletelibraryconfirm'] = '<p>هل أنت متأكد من رغبتك في حذف الإصدار <em>\'{$a->version}\'</em> من المكتبة <em>\'{$a->name}\'</em>؟ هذا سيزيل المكتبة.</p><p>هذا الإجراء لا يمكن التراجع عنه.</p>';
 $string['deletelibraryversion'] = 'إحذف الإصدار';
 $string['deleting'] = 'يجري حذف مكتبة';
 $string['description'] = 'الوصف';
 $string['disablefullscreen'] = 'تعطيل ملء الشاشة';
+$string['discipline:dropdownButton'] = 'زر منسدل';
+$string['discipline:in'] = 'في';
+$string['discipline:searchPlaceholder'] = 'النوع لغرض البحث في التخصصات';
+$string['disciplineDescription'] = 'يمكنك اختيار تخصصات متعددة';
+$string['disciplineLabel'] = 'التخصصات';
+$string['disciplineLimitReachedMessage'] = 'يمكنك اختيار ما أقصاه :numDisciplines من التخصصات';
+$string['disciplines'] = 'التخصصات';
 $string['download'] = 'تنزيل';
 $string['downloadtitle'] = 'تنزيل هذا المحتوى بمثابة ملف H5P.';
+$string['editInfoTitle'] = 'تحرير المعلومة <strong>:title</strong>';
+$string['editcontent'] = 'تحرير محتوى H5P';
+$string['editingFailed'] = 'فشل التحرير';
 $string['editor'] = 'المحرر';
+$string['emailAddress'] = 'عنوان البريد الالكتروني';
+$string['emailAddressDescription'] = 'سيتم استعمال البريد الالكتروني من قبل H5P للتواصل مع الناشر في حلة وجود أي مشاكل في المحتوى أو عند حاجة الناشر لاستعادة حسابه. لن يتم نشره أو مشاركته مع طرف ثالث';
 $string['embed'] = 'تضمين';
 $string['embedtitle'] = 'معاينة النص البرمجي المُضمَّن لهذا المحتوى.';
+$string['error:emptycontentid'] = 'عنوان الرابط المعطى غير صحيح أو ليس بإمكانك تحرير هذا الملف.';
 $string['eventh5pdeleted'] = 'H5P تم حذفه';
 $string['eventh5pviewed'] = 'محتوى H5P تمت معاينته';
 $string['feature'] = 'ميزة';
@@ -90,6 +127,7 @@ $string['filter_displayh5p_description'] = 'إن منقح عرض H5P يقوم ب
 $string['fullscreen'] = 'ملء الشاشة';
 $string['gpl'] = 'الترخيص العام، الإصدار 3';
 $string['h5p'] = 'H5P';
+$string['h5peditor'] = 'محرر H5P';
 $string['h5pfilenotfound'] = 'ملف H5P غير موجود';
 $string['h5pinvalidurl'] = 'رابط محتوى H5P غير صحيح.';
 $string['h5plibraryhandler'] = 'معالج إطار عمل H5P';
@@ -101,10 +139,14 @@ $string['h5ppackage_help'] = 'نوع محتوى H5P هو ملف بامتداد H
 $string['h5pprivatefile'] = 'لا يمكن عرض محتوى H5P لأنك لا تمتلك حق الوصول إلى ملف .h5p.';
 $string['h5psettings'] = 'إعدادات H5P';
 $string['h5ptitle'] = 'قم بزيارة h5p.org للتحري عن المزيد من المحتوى.';
+$string['helpChoosingLicense'] = 'ساعدني في اختيار الرخصة';
 $string['hideadvanced'] = 'إخفاء المتقدمة';
+$string['icon'] = 'الأيقونة';
+$string['iconDescription'] = '460 × 480 بكسل. إذا لم يتم تحديده، المحتوى سيستعمل أيقونة التصنيف';
 $string['installedcontentlibraries'] = 'مكتبات H5P المنصبة';
 $string['installedcontenttypes'] = 'أنواع محتوى H5P المنصبة';
 $string['installedh5p'] = 'H5P المنصب';
+$string['invalidAge'] = 'صيغة إدخال خاطئة لنماذج الأعمار. صيغ الإدخال المحتملة مفصولة بفوارز: "1,34-45,-50,59-".';
 $string['invalidcontextid'] = 'تعذر العثور على ملف H5P (مُعرَّف السياق غير صحيح)';
 $string['invalidfile'] = 'الملف "{$a->%filename}" غير مقبول. فقط الملفات ذات الامتدادات الآتية مسموح بها: {$a->%files-allowed}.';
 $string['invalidlanguagefile'] = 'ملف لغة {$a->%file} غير صالح في المكتبة {$a->%library}';
@@ -122,6 +164,14 @@ $string['invalidselectoption'] = 'الخيار المنتخب في التحدي�
 $string['invalidsemanticsjson'] = 'ملف semantics.json غير صالح؛ قد تم تضمينه في المكتبة {$a->%name}';
 $string['invalidsemanticstype'] = 'خلل داخلي في H5P: نوع المحتوى مجهول "{$a->@type}" في الدلالات. تجري إزالة المحتوى!';
 $string['invalidstring'] = 'النص المعطى غير صحيح وفقاً لـ regexp في الدلالات. (القيمة: "{$a->%value}"، regexp: "{$a->%regexp}")';
+$string['isNowSubmitted'] = 'هو مُسلَّم الآن إلى مركز H5P';
+$string['keywordExists'] = 'الكلمة المفتاحية موجودة مسبقًا!';
+$string['keywords'] = 'الكلمات المفتاحية';
+$string['keywordsDescription'] = 'لا يمكنك إضافة كلمات مفتاحية متعددة مفصولة بفوارز. إضغط "Enter" أو الزر "إضافة" لتأكيد الكلمات المفتاحية';
+$string['keywordsExits'] = 'الكلمات المفتاحية موجودة مسبقًا!';
+$string['keywordsPlaceholder'] = 'إضافة الكلمات المفتاحية';
+$string['language'] = 'اللغة';
+$string['level'] = 'المستوى';
 $string['librariesmanagerdescription'] = '<p>H5P يتيح للمستخدمين إنشاء محتوى تفاعلي عبر طيف من الأنواع.</p><p>لتضمن استعمال الأنواع الموثوق بها من محتوى H5P في موقعك، عليك <i>إما</i></p><ul><li>تنزيل أنواع محتوى H5P من h5p.org <i>أو</i></li><li>تمكين المهمة المجدولة \'تنزيل أنواع محتوى H5P من h5p.org\'</li></ul><p>لاحظ أن المستخدمين سيكون بإمكانهم فقط استعمال أنواع محتوى H5P المنصبة في موقعك.</p>';
 $string['librarydirectoryerror'] = 'اسم مجلد المكتبة ينبغي أن يطابق machineName أو  machineName-majorVersion.minorVersion (المذكوران في مكتبة library.json). (المجلد: {$a->%directoryName} ، machineName: {$a->%machineName}، majorVersion: {$a->%majorVersion}، minorVersion: {$a->%minorVersion})';
 $string['license'] = 'الرخصة';
@@ -132,15 +182,24 @@ $string['licenseCC20'] = '2.0 Generic';
 $string['licenseCC25'] = '2.5 Generic';
 $string['licenseCC30'] = '3.0 Unported';
 $string['licenseCC40'] = '4.0 International';
+$string['licenseDescription'] = 'إختر رخصة للمحتوى الخاص بك';
+$string['licenseDetails'] = 'تفاصيل الرخصة';
+$string['licenseDialogDescription'] = 'إنقر على رخصة معينة لتحصل على معلومات عما يناسبها من استعمالات';
 $string['licenseGPL'] = 'الرخصة العامة';
 $string['licenseV1'] = 'الإصدار 1';
 $string['licenseV2'] = 'الإصدار 2';
 $string['licenseV3'] = 'الإصدار 3';
+$string['licenseVersionDescription'] = 'إختر إصدار الرخصة';
 $string['licensee'] = 'المرخص له';
 $string['licenseextras'] = 'إضافات الرخصة';
 $string['licenseversion'] = 'إصدار الرخصة';
 $string['lockh5pdeploy'] = 'لا يمكن الوصول إلى محتوى H5P هذا لأنه قيد النشر. لطفاً، حاول لاحقاً.';
+$string['logoUploadText'] = 'شعار المنظمة أو صورتها الرمزية';
+$string['longDescription'] = 'الوصف الكامل';
+$string['longDescriptionPlaceholder'] = 'وصف كامل للمحتوى الخاص بك';
+$string['mainTitle'] = 'مشاركة <strong>:title</strong>';
 $string['mainlibrarydisabled'] = 'لا يمكن عرض الملف بسبب تعطيل نوع محتوياته. يرجى التواصل مع مشرفك لمطالبته بتمكين نوع المحتوى هذا.';
+$string['maxLength'] = ':length يمثل أقصى عدد من الأحرف';
 $string['missingcontentfolder'] = 'لا يوجد مجلد محتوى صالح';
 $string['missingcoreversion'] = 'تعذر على النظام تنصيب المكون {$a->%component} من الحزمة، نظراً لكونه يتطلب إصداراً أحدث من ملحق H5P. هذا الموقع يعمل حالياً بالإصدار {$a->%current}، بينما الإصدار المطلوب هو {$a->%required} أو أحدث. لطفاً، قم بالترقية ثم حاول مجدداً.';
 $string['missingdependency'] = 'الافتقار إلى المكون التمهيدي {$a->@dep} المطلوب من قبل {$a->@lib}.';
@@ -150,6 +209,7 @@ $string['missinglibraryjson'] = 'تعذر العثور على ملف المكت�
 $string['missinglibraryproperty'] = 'الخاصية المطلوبة {$a->%property} مفقودة من {$a->%library}';
 $string['missingmbstring'] = 'إن الامتداد mbstring لـ PHP غير شغال. إنه مطلوب ليعمل H5P بشكل صحيح.';
 $string['missinguploadpermissions'] = 'لاحظ أن المكتبات قد تكون موجودة في الملف الذي رفعته، ولكن ليس مسموحاً لك رفع مكتبات جديدة. لطفاً، تواصل مع المشرف.';
+$string['next'] = 'التالي';
 $string['nocopyright'] = 'لا توجد معلومات الحقوق الفكرية لهذا المحتوى.';
 $string['noextension'] = 'الملف الذي رفعته ليس حزمة HTML5 صحيحة. (لا يمتلك الملف الامتداد .h5p).';
 $string['noh5plibhandlerdefined'] = 'لم يتم تنصيب أي معالج إطار عمل لـ H5P، ما يعني تعذر عرض محتوى H5P.';
@@ -163,31 +223,67 @@ $string['offlineDialogHeader'] = 'فقدنا الاتصال بالمخدم';
 $string['offlineDialogRetryButtonLabel'] = 'أعد المحاولة الآن';
 $string['offlineDialogRetryMessage'] = 'إعادة المحاولة خلال :num....';
 $string['offlineSuccessfulSubmit'] = 'تم تسليم النتائج بنجاح.';
+$string['optionalInfo'] = 'المعلومات الاختيارية';
 $string['originator'] = 'المنشِئ';
 $string['pd'] = 'المجال العام';
 $string['pddl'] = 'تكريس المجال العام وترخيصه';
 $string['pdm'] = 'علامة المجال العام (PDM)';
+$string['phone'] = 'الهاتف';
+$string['pleaseWait'] = 'إنتظر رجاءً...';
 $string['pluginname'] = 'حزمة H5P';
 $string['privacy:metadata'] = 'إن نظام H5P الفرعي لا يخزن أي بيانات شخصية.';
+$string['publisherDescription'] = 'وصف الناشر';
+$string['publisherDescriptionText'] = 'سيتم عرضه في "معلومات الناشر" في المحتوى المُشارك';
+$string['publisherFieldDescription'] = 'سيتم عرضه بمثابة "اسم الناشر" في المحتوى المُشارك';
+$string['publisherFieldTitle'] = 'الناشر';
+$string['registerOnHub'] = 'التسجيل في مركز H5P';
+$string['registrationFailed'] = 'وقع خطأ';
+$string['registrationFailedDescription'] = 'لم نتمكن من إنشاء حساب في الوقت الراهن. وقع خطأ ما. حاول لاحقًا.';
+$string['registrationTitle'] = 'التسجيل في مركز H5P';
+$string['remove'] = 'إزالة';
+$string['removeChip'] = 'إزالة :chip من القائمة';
+$string['removeImage'] = 'إزالة الصورة';
+$string['requiredInfo'] = 'معلومة مطلوبة';
 $string['resizescript'] = 'قم بتضمين هذا نص البرمجي في موقعك إذا إردت التحجيم التلقائي للمحتوى المضمن:';
 $string['resubmitScores'] = 'تجري محاولة تسليم النتائج المحفوظة.';
 $string['reuse'] = 'أعد الاستعمال';
 $string['reuseContent'] = 'أعد استعمال المحتوى';
 $string['reuseDescription'] = 'أعد استعمال هذا المحتوى';
+$string['reviewAndSave'] = 'مراجعة وحفظ';
+$string['reviewAndShare'] = 'مراجعة ومشاركة';
+$string['reviewInfo'] = 'مراجعة المعلومة';
+$string['reviewMessage'] = 'يرجى مراجعة المعلومة أدناه قبل المشاركة';
+$string['saveChanges'] = 'حفظ التغييرات';
+$string['screenshots'] = 'لقطات الشاشة';
+$string['screenshotsDescription'] = 'أضف ما أقصاه خمس لقطات شاشة من المحتوى الخاص بك';
+$string['share'] = 'مشاركة';
+$string['shareFailed'] = 'فشلت المشاركة';
+$string['shareTryAgain'] = 'وقع خطأ ما، يرجى محاولة المشاركة مرة أخرى.';
+$string['shared'] = 'تمت مشاركته';
+$string['sharingNote'] = 'يمكن تحرير كل تفاصيل المحتوى بعد مشاركته';
+$string['shortDescription'] = 'الوصف المختصر';
+$string['shortDescriptionPlaceholder'] = 'الوصف المختصر للمحتوى الخاص بك';
 $string['showadvanced'] = 'أظهر المتقدمة';
 $string['showless'] = 'أظهر أقل من هذا';
 $string['showmore'] = 'أظهر المزيد';
 $string['size'] = 'الحجم';
+$string['someKeywordsExits'] = 'بعض من هذه الكلمات المفتاحية موجود مسبقًا';
 $string['source'] = 'المصدر';
 $string['startingover'] = 'ستعاود من البداية.';
 $string['status'] = 'الحالة';
+$string['subContentWarning'] = 'المحتوى الفرعي (الصور، الأسئلة... إلخ.) ستتم مشاركته بالرخصة :license طالما لم يتم التطرق إلى خلاف ذلك في أدوات التأليف';
 $string['sublevel'] = 'المستوى الفرعي';
+$string['submitted'] = 'مُسلَّم!';
+$string['successfullyRegistred'] = 'لقد نجحت في تسجيل حساب لك في مركز H5P';
+$string['successfullyRegistredDescription'] = 'تفاصيل حسابك يمكن تغييرها';
+$string['successfullyUpdated'] = 'إعدادات حسابك في مركز H5P تم تغييرها بنجاح';
 $string['task_h5p'] = 'مهمة H5P المجدولة';
 $string['task_h5p_description'] = 'مهمة H5P تقوم بتنزيل أنواع محتوى H5P من h5p.org.';
 $string['thumbnail'] = 'صورة مصغرة';
 $string['title'] = 'العنوان';
 $string['undisclosed'] = 'غير مصرح به';
 $string['unpackedFilesExceedsMaxSize'] = 'الحجم الكلي للملفات المستخرجة يتجاوز الحجم الأقصى المسموح به. ({$a->%used} > {$a->%max})';
+$string['updateRegistrationOnHub'] = 'حفظ إعدادات الحساب';
 $string['updatedlibraries'] = 'مكتبات H5P {$a->%old} المحدثة.';
 $string['updatedlibrary'] = 'مكتبة H5P {$a->%old} المحدثة.';
 $string['uploadlibraries'] = 'إرفع أنواع محتوى H5P';
@@ -197,3 +293,4 @@ $string['year'] = 'سنة';
 $string['years'] = 'سنوات';
 $string['yearsfrom'] = 'سنوات (من)';
 $string['yearsto'] = 'سنوات (حتى)';
+$string['zip'] = 'ضغط';

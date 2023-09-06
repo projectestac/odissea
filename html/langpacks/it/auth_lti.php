@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'it', version '3.11'.
+ * Strings for component 'auth_lti', language 'it', version '4.1'.
  *
  * @package     auth_lti
  * @category    string
@@ -25,6 +25,30 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accountcreatedsuccess'] = 'L\'account è stato creato e può essere utilizzato da subito.';
+$string['accountlinkedsuccess'] = 'L\'account esistente è stato collegato correttamente.';
 $string['auth_ltidescription'] = 'Il plugin di autenticazione LTI, assieme al plugin di iscrizione \'Pubblicazione come tool LTI\', consente l\'ascesso a specifici corsi ed attività da parte di utenti remoti, rendendo Moodle un LTI provider.';
+$string['cannotcreateaccounts'] = 'Al momento non è possibile creare account su questo sito.';
+$string['createaccount'] = 'Crea account';
+$string['createaccountforme'] = 'Crea account per me';
+$string['createnewaccount'] = 'Vorrei creare un account';
+$string['currentlyloggedinas'] = 'Sei collegato come';
+$string['firstlaunchnoauthnotice'] = 'Per collegare il tuo account esistente devi essere autenticato. Accedi al sito in una nuova scheda/finestra, quindi riavvia il tool qui. Per ulteriori informazioni, consulta la documentazione <a href="{$a}" target="_blank">Pubblica come tool LTI</a>.';
+$string['firstlaunchnotice'] = 'Se è la prima volta che visiti questo sito, per favore seziona una delle seguenti opzioni.';
+$string['getstartedwithnewaccount'] = 'Apri un account';
+$string['haveexistingaccount'] = 'Ho già un account';
+$string['linkthisaccount'] = 'Collega questo account';
+$string['mustbeloggedin'] = 'Devi essere autenticato con il tuo account già esistente';
 $string['pluginname'] = 'LTI';
 $string['privacy:metadata'] = 'Il plugin di autenticazione "LTI" non memorizza dati personali.';
+$string['privacy:metadata:auth_lti'] = 'Autenticazione LTI';
+$string['privacy:metadata:auth_lti:authsubsystem'] = 'Pluign collegato al sottosistema di autenticazione';
+$string['privacy:metadata:auth_lti:issuer256'] = 'SHA256 dell\'URL del fornitore';
+$string['privacy:metadata:auth_lti:tableexplanation'] = 'Account LTI collegati all\'account Moodle dell\'utente';
+$string['privacy:metadata:auth_lti:timemodified'] = 'Orario delle modifica più recente del record.';
+$string['privacy:metadata:auth_lti:userid'] = 'ID dell\'account utente collegato al login LTI';
+$string['provisioningmodeauto'] = 'Solo nuovi account (automatico)';
+$string['provisioningmodeexistingonly'] = 'Solo account esistenti (con richiesta)';
+$string['provisioningmodenewexisting'] = 'Account esistenti e nuovi (con richiesta)';
+$string['useexistingaccount'] = 'Utilizza account esistente';
+$string['welcome'] = 'Benvenuto!';

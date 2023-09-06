@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'it', version '3.11'.
+ * Strings for component 'datafield_textarea', language 'it', version '4.1'.
  *
  * @package     datafield_textarea
  * @category    string
@@ -30,3 +30,4 @@ $string['maxbytes'] = 'Dimensione massima file incorporati (in byte)';
 $string['maxbytes_desc'] = 'Impostando il valore a zero la dimensione sarà di default illimitata';
 $string['pluginname'] = 'Area di testo';
 $string['privacy:metadata'] = 'Il plugin Area di testo non memorizza dati personali, utilizza tabelle definite in mod_data.';
+$string['sample'] = '<p>Questa è un\'area di testo. Consente agli utenti di inserire un testo lungo che si estende su più righe.</p><p>È possibile scegliere la dimensione delle aree di testo in righe e colonne.</p><p>Il testo in un\'area di testo può essere formattato , ad esempio in <strong>grassetto</strong>, e incluerei anche <a href="#">link</a> o immagini.</p>';

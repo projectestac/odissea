@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'sv', version '3.11'.
+ * Strings for component 'quiz_grading', language 'sv', version '4.1'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,11 +49,12 @@ $string['graded'] = '(betygsatt)';
 $string['gradenextungraded'] = 'Bedöm nästa {$a} ej bedömda försök';
 $string['gradeungraded'] = 'Bedöm alla {$a} ej bedömda försök';
 $string['grading'] = 'Manuell bedömning';
-$string['grading:viewidnumber'] = 'Visa elev-id nummer vid betygsättning';
+$string['grading:viewidnumber'] = 'Visa elev-id fält vid betygsättning';
 $string['grading:viewstudentnames'] = 'Visa elevnamn vid betygsättning';
 $string['gradingall'] = 'Alla {$a} försök på den här frågan.';
 $string['gradingattempt'] = 'Försök nummer {$a->attempt} för {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Bedömnings försök {$a->from} till {$a->to} av {$a->of}';
+$string['gradingattemptwithcustomfields'] = 'Försök nummer {$a->attempt} av {$a->fullname} ({$a->customfields})';
 $string['gradingattemptwithidnumber'] = 'Försök nummer {$a->attempt} för {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Nästa {$a} ej bedömda försök';
 $string['gradingnotallowed'] = 'Du har inte behörighet att manuellt sätta betyg på svaren på det här testet.';
@@ -69,6 +70,7 @@ $string['noquestionsfound'] = 'Inga manuellt bedömda frågor hittades';
 $string['nothingfound'] = 'Ingenting att visa';
 $string['options'] = 'Inställningar';
 $string['orderattempts'] = 'Sortera försök';
+$string['orderattemptsby'] = 'Sortera försök efter';
 $string['pluginname'] = 'Manuell betygsättning';
 $string['privacy:preference:order'] = 'I vilken ordning försök som behöver betygsättas visas.';
 $string['privacy:preference:pagesize'] = 'Hur många försök som ska visas per sida vid betygssättning.';
@@ -77,6 +79,7 @@ $string['questionname'] = 'Frågenamn';
 $string['questionsperpage'] = 'Frågor per sida';
 $string['questionsthatneedgrading'] = 'Manuell bedömning';
 $string['questiontitle'] = 'Fråga {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} försök {$a->openspan}graded{$a->closespan}).';
+$string['random'] = 'Slumpmässigt';
 $string['randomly'] = 'Slumpvis';
 $string['saveandnext'] = 'Spara och gå till nästa sida';
 $string['showstudentnames'] = 'Visa studenters namn';

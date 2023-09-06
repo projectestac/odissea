@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_moodletxt', language 'el', version '3.11'.
+ * Strings for component 'block_moodletxt', language 'el', version '4.1'.
  *
  * @package     block_moodletxt
  * @category    string
@@ -36,7 +36,7 @@ $string['adminaccountfragneverupdated'] = 'Δεν ενημερώθηκε ποτ�
 $string['adminaccountprocessedfrag'] = 'Επεξεργασμένα';
 $string['adminaccountupdatefailed'] = 'Σφάλμα ενημέρωσης';
 $string['adminaccountupdatesuccess'] = 'Ενημέρωση ΟΚ';
-$string['adminaccounturl'] = 'Διεύθυνση URL στιγμιότυπου ConnectTxt';
+$string['adminaccounturl'] = 'Διεύθυνση URL στιγμιοτύπου ConnectTxt';
 $string['adminbutaddaccount'] = 'Προσθήκη λογαριασμού';
 $string['adminbutaddfolder'] = 'Προσθήκη φακέλου';
 $string['adminbutadduserfilter'] = 'Προσθήκη φίλτρου';
@@ -243,7 +243,7 @@ $string['headergroupedit'] = 'Ενημέρωση μελών ομάδας';
 $string['headergroupmembership'] = 'Συμμετοχή σε ομάδα';
 $string['headergroupsmanage'] = 'Διαχείριση ομάδων';
 $string['headerinboundprefs'] = 'Οι προτιμήσεις μου για τα εισερχόμενα';
-$string['headerinstanceconfig'] = 'Ρυθμίσεις στιγμιότυπου Moodletxt';
+$string['headerinstanceconfig'] = 'Ρυθμίσεις στιγμιοτύπου Moodletxt';
 $string['headermessagedetails'] = 'Λεπτομέρειες μηνύματος';
 $string['headermessageoptions'] = 'Επιλογές μηνύματος';
 $string['headernewinstall'] = 'moodletxt - Ανιχνεύτηκε νέα εγκατάσταση';

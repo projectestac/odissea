@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'sv', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'sv', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,4 +30,5 @@ $string['endanswernotfound'] = 'Det gick inte att hitta ett obligatoriskt "}"-te
 $string['noanswerfound'] = 'Inga svar hittades i frågan';
 $string['pluginname'] = 'Saknat ord-format';
 $string['pluginname_help'] = 'Saknat ord-format möjliggör import av frågor via en textfil.';
+$string['pluginname_link'] = 'qformat/missingword';
 $string['privacy:metadata'] = 'Pluginmodulen för frågeformat Saknat ord lagrar ingen personinformation.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalsewiris', language 'en', version '3.11'.
+ * Strings for component 'qtype_truefalsewiris', language 'en', version '4.1'.
  *
  * @package     qtype_truefalsewiris
  * @category    string

@@ -117,8 +117,14 @@ class qtype_wq_renderer extends qtype_renderer {
         // Answer field.
         $step = $qa->get_last_step_with_qt_var('auxiliar_text');
         $question = $qa->get_question();
+        
+        /** @var qtype_essay_format_renderer_base $responseoutput */
         $responseoutput = $this->page->get_renderer('qtype_wq', 'auxiliar_text');
-
+        if (method_exists($responseoutput, 'set_displayoptions')) {
+            // Moodle 4.1.2 and up require this.
+            $responseoutput->set_displayoptions($options);
+        }
+        
         if (!$step->has_qt_var('auxiliar_text') && empty($options->readonly)) {
             // Auxiliar text has never been filled.
             $step = new question_attempt_step();

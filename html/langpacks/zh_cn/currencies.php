@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'currencies', language 'zh_cn', version '3.11'.
+ * Strings for component 'currencies', language 'zh_cn', version '4.1'.
  *
  * @package     currencies
  * @category    string
@@ -183,5 +183,5 @@ $string['XOF'] = '多哥非洲共同体法郎';
 $string['XPF'] = '太平洋法郎';
 $string['YER'] = '也门 里亚尔';
 $string['ZAR'] = '南非兰特';
-$string['ZMK'] = '赞比亚克瓦查';
+$string['ZMW'] = '赞比亚克瓦查';
 $string['ZWL'] = '津巴布韦元';

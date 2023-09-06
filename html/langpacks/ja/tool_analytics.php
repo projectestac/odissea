@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'ja', version '3.11'.
+ * Strings for component 'tool_analytics', language 'ja', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -88,7 +88,6 @@ $string['exportmodel'] = '設定をエクスポートする';
 $string['exporttrainingdata'] = 'トレーニングデータをエクスポートする';
 $string['extrainfo'] = '情報';
 $string['generalerror'] = '評価エラーです。ステータスコード {$a}';
-$string['getpredictions'] = '予測を取得する';
 $string['goodmodel'] = 'これは適切なモデルであり予測に使用することができます。予測の取得を開始するには有効にしてください。';
 $string['ignoreversionmismatches'] = 'バージョンミスマッチを無視する';
 $string['ignoreversionmismatchescheckbox'] = 'このサイトバージョンとオリジナルのサイトバージョンとの差異を無視します。';
@@ -96,6 +95,7 @@ $string['importedsuccessfully'] = 'モデルが正常にインポートされま
 $string['importmodel'] = 'モデルをインポートする';
 $string['indicators'] = '指標';
 $string['indicators_help'] = 'あなたの考える指標はターゲットの正確な予測に繋がります。';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = '指標数: {$a}';
 $string['info'] = '情報';
 $string['insights'] = '洞察';
@@ -144,6 +144,7 @@ $string['scheduledanalysisresultscli'] = '{$a->name} (id: {$a->id}) 時間分割
 $string['selecttimesplittingforevaluation'] = 'あなたがモデル設定の評価に使用したい分析間隔を選択してください。';
 $string['target'] = 'ターゲット';
 $string['target_help'] = 'ターゲットはモデルが予測するものです。';
+$string['target_link'] = 'Targets';
 $string['timesplittingnotdefined'] = '分析間隔が定義されていません。';
 $string['timesplittingnotdefined_help'] = 'あなたはモデルを有効にする前に分析間隔を選択する必要があります。';
 $string['trainandpredictmodel'] = 'トレーニングモデルおよび予測計算';

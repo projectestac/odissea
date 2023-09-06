@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'nl', version '3.11'.
+ * Strings for component 'qtype_ddimageortext', language 'nl', version '4.1'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -42,6 +42,8 @@ $string['dropbackground'] = 'Achtergrondafbeelding om markeringen op te slepen';
 $string['dropzone'] = 'Neerzetzone {$a}';
 $string['dropzoneheader'] = 'Neerzetzones';
 $string['formerror_disallowedtags'] = 'Alleen "{$a}" -tags zijn toegestaan in deze versleepbare tekst.';
+$string['formerror_dragrequired'] = 'JE moet ten minste één versleepbaar item aan deze vraag toevoegen.';
+$string['formerror_droprequired'] = 'Je moet ten minste één neerzetzone definiëren voor deze vraag.';
 $string['formerror_multipledraginstance'] = 'Je hebt deze afbeelding {$a} meer dan één keer gekozen als juist antwoord maar het is niet gemarkeerd als een item dat onbeperkt mag versleept worden.';
 $string['formerror_multipledraginstance2'] = 'Je hebt deze afbeelding meer dan één keer gekozen als juist antwoord, maar het is niet gemarkeerd als een item dat onbeperkt mag versleept worden.';
 $string['formerror_noallowedtags'] = 'HTML-tags mogen niet gebruikt worden in deze tekst omdat het een alt-tekst is voor een versleepbare afbeelding.';
@@ -59,6 +61,7 @@ $string['nolabel'] = 'Geen labeltekst';
 $string['pleasedraganimagetoeachdropregion'] = 'Je antwoord is niet volledig; sleep een item naar elke doelzone.';
 $string['pluginname'] = 'Slepen en neerzetten op afbeelding';
 $string['pluginname_help'] = 'Vragen met slepen en neerzetten op afbeelding vragen van de respondent dat die afbeeldingen of tekst labels sleept en neerzet op een bepaalde zone van een achtergrondafbeelding. Sleepbare items kunnen gegroepeerd worden zodat alle items in een bepaalde groep gekleurd worden zoals de doelzones. Versleepbare items die als onbeperkt gemarkeerd zijn, kunnen op meer dan één zone neergezet worden.';
+$string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnameadding'] = 'Voeg slepen en neerzetten op afbeelding toe';
 $string['pluginnameediting'] = 'Bewerk slepen en neerzetten op afbeelding';
 $string['pluginnamesummary'] = 'Afbeeldingen of tekstlabels worden gesleept en neergezet in een doelzone op een achtergrondafbeelding.

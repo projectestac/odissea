@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'nl', version '3.11'.
+ * Strings for component 'message', language 'nl', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Blokkeer gebruikers  die niet op mijn contactenli
 $string['blockuser'] = 'Blokkeer gebruiker';
 $string['blockuserconfirm'] = 'Weet je zeker dat je {$a} wilt blokkeren?';
 $string['blockuserconfirmbutton'] = 'Blok';
-$string['canceledit'] = 'Bewerken berichten annuleren';
 $string['cancelselection'] = 'Annuleer de selectie van de berichten';
 $string['cantblockuser'] = 'Je kunt {$a} niet blokkeren omdat ze een rol hebben met toestemming om alle gebruikers berichten te sturen.';
 $string['contactableprivacy'] = 'Accepteer berichten van:';
@@ -67,7 +66,7 @@ $string['deleteselectedmessagesconfirm'] = 'Weet je zeker dat je de geselecteerd
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Weet je zeker dat je de geselecteerde persoonlijke berichten wilt verwijderen?';
 $string['disableall'] = 'Meldingen uitschakelen';
 $string['disabled'] = 'De berichtenservice is uitgeschakeld op deze site';
-$string['disallowed'] = 'Niet toegestaan';
+$string['disallowed'] = 'Vergrendeld uit';
 $string['editmessages'] = 'Bewerk berichten';
 $string['emailtagline'] = 'Deze e-mail is een kopie van een bericht dat naar jou gestuurd is op {$a->sitename}. Ga naar <a href="{$a->url}">{$a->url}</a> om te antwoorden.';
 $string['enabled'] = 'Ingeschakeld';
@@ -86,6 +85,7 @@ $string['eventmessageviewed'] = 'Bericht bekeken';
 $string['eventnotificationsent'] = 'Melding verstuurd';
 $string['eventnotificationviewed'] = 'Melding bekeken';
 $string['forced'] = 'Geblokkeerd';
+$string['forcedmessage'] = 'Vergrendeld aan';
 $string['groupconversations'] = 'Groep';
 $string['groupinfo'] = 'Groepsinfo';
 $string['guestnoeditmessage'] = 'Gastgebruiker kan berichtopties niet wijzigen';
@@ -105,8 +105,6 @@ $string['loggedoffdescription'] = 'Wanneer ik niet aangemeld ben in Moodle';
 $string['managemessageoutputs'] = 'Standaard berichtenvoorkeuren';
 $string['message'] = 'Bericht';
 $string['messagecontactrequest'] = '{$a->user} vraagt om toegevoegd te worden als contactpersoon. Bezoek je pagina met <a href="{$a->url}">contactaanvragen</a> om hierop te reageren';
-$string['messagecontactrequestsnotification'] = '{$a} wil als contact worden toegevoegd.';
-$string['messagecontactrequestsnotificationsubject'] = '{$a} wil als contact worden toegevoegd';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: Contactaanvraag van {$a->user}';
 $string['messagecontentaudio'] = 'Audio';
 $string['messagecontentimage'] = 'Afbeelding';
@@ -137,7 +135,6 @@ $string['nofavourites'] = 'Geen berichten gemarkeerd met een ster';
 $string['noframesjs'] = 'Gebruik meer toegankelijke interface';
 $string['nogroupconversations'] = 'Geen groepsberichten';
 $string['noindividualconversations'] = 'Geen privé-berichten';
-$string['nomessages'] = 'Geen berichten';
 $string['nomessagesfound'] = 'Geen berichten gevonden';
 $string['noncontacts'] = 'Geen contactpersoon';
 $string['nonotifications'] = 'Je hebt geen meldingen';
@@ -156,11 +153,7 @@ $string['offline'] = 'Offline';
 $string['on'] = 'Aan';
 $string['online'] = 'Online';
 $string['otherparticipants'] = 'Andere deelnemers';
-$string['outputdisabled'] = 'Output uitgeschakeld';
-$string['outputdoesnotexist'] = 'Berichtoutput bestaat niet';
-$string['outputenabled'] = 'Output ingeschakeld';
 $string['outputnotavailable'] = 'Niet beschikbaar';
-$string['outputnotconfigured'] = 'Niet geconfigureerd';
 $string['page-message-x'] = 'Alle berichtenpagina\'s';
 $string['participants'] = 'Deelnemers';
 $string['pendingcontactrequests'] = 'Er zijn {$a} wachtende contactverzoeken';
@@ -223,6 +216,9 @@ $string['privacy:metadata:preference:core_message_settings'] = 'Instellingen die
 $string['privacy:request:preference:set'] = 'De waarde van de instelling \'{$a->name}\' was \'{$a->value}\'';
 $string['privacy_desc'] = 'Je kunt beperken wie je een bericht kan sturen';
 $string['processorsettings'] = 'Processor instellingen';
+$string['providerenabled'] = '"$a" ingeschakeld status versturen';
+$string['providerprocesorisdisallowed'] = '"{$a->provider}" op "{$a->processor}" is vergrendeld uit';
+$string['providerprocesorislocked'] = '"{$a->provider}" op "{$a->processor}" is vergrendeld aan';
 $string['removecontact'] = 'Verwijder contactpersoon';
 $string['removecontactconfirm'] = 'Weet je zeker dat je {$a} uit je contacten wilt verwijderen?';
 $string['removecoursefilter'] = 'Verwijder filter voor cursus {$a}';
@@ -247,6 +243,8 @@ $string['sendbulkmessagesingle'] = 'Verstuur bericht naar 1 persoon';
 $string['sendcontactrequest'] = 'Verzend contact-verzoek';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = '\'{$a->provider }\' via \'{$a->processor}\' aan het versturen';
+$string['sendingviaenabled'] = '"{$a->provider}" via "{$a->processor}" inschakelstatus versturen';
+$string['sendingvialocked'] = '"{$a->provider}" via "{$a->processor}" vergrendelstatus versturen';
 $string['sendingviawhen'] = '\'{$a->provider }\' via \'{$a->processor}\' aan het versturen wanneer {$a->state}';
 $string['sendmessage'] = 'Stuur bericht';
 $string['sendmessageto'] = 'Stuur bericht aan {$a}';

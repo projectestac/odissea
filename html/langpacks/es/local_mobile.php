@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'es', version '3.11'.
+ * Strings for component 'local_mobile', language 'es', version '4.1'.
  *
  * @package     local_mobile
  * @category    string
@@ -36,3 +36,4 @@ $string['local_mobiledescription'] = 'Extensión que amplía las característica
 $string['local_mobilesettings'] = 'Ajustes';
 $string['pluginname'] = 'Características adicionales de Moodle Mobile';
 $string['pluginnotenabledorconfigured'] = 'La extensión local de Moodle Mobile debe estar habilitada y configurda a fin de poder ejecutar la aplicación';
+$string['privacy:metadata'] = 'El plugin de características adicionales Moodle Mobile no almacena ningún dato personal';

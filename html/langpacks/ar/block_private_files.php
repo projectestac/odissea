@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_private_files', language 'ar', version '3.11'.
+ * Strings for component 'block_private_files', language 'ar', version '4.1'.
  *
  * @package     block_private_files
  * @category    string
@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'الملفات الخاصة';
 $string['privacy:metadata'] = 'كتلة الملفات الخاصة تعطي فقط نظرة على ملفات المستخدم الخاصة ورابطاً لها.';
 $string['private_files:addinstance'] = 'إضافة كتلة جديدة من الملفات الخاصة';
-$string['private_files:myaddinstance'] = 'إضافة كتلة جديدة من الملفات الخاصة إلى لوحة التحكم';
+$string['private_files:myaddinstance'] = 'إضافة كتلة جديدة من الملفات الخاصة إلى دفة القيادة';
 $string['privatefiles'] = 'الملفات الخاصة';

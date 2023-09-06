@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ja', version '3.11'.
+ * Strings for component 'mnet', language 'ja', version '4.1'.
  *
  * @package     mnet
  * @category    string
@@ -90,7 +90,7 @@ $string['hideremote'] = 'リモートユーザを隠す';
 $string['host'] = 'ホスト';
 $string['hostcoursenotfound'] = 'ホストまたはコースが見つかりませんでした。';
 $string['hostdeleted'] = 'ホストが削除されました。';
-$string['hostexists'] = 'このホスト名のレコードはすでに登録されています (恐らく削除済み)。レコードを編集するには<a href="{$a}">ここをクリック</a>してください。';
+$string['hostexists'] = 'このホスト名のレコードはすでに登録されています (恐らく削除済み)。<a href="{$a}">レコードを編集する</a>';
 $string['hostlist'] = 'ネットワークホスト一覧';
 $string['hostname'] = 'ホスト名';
 $string['hostnamehelp'] = 'リモートホストの省略されていないドメイン名です。例) www.example.com';
@@ -118,6 +118,7 @@ $string['is_in_range'] = 'IPアドレス <code>{$a}</code> は信頼できる有
 $string['ispublished'] = 'あなたのために {$a} がサービスを有効にしました。';
 $string['issubscribed'] = 'あなたのホストのサービスに {$a} が登録しました。';
 $string['keydeleted'] = 'あなたの公開鍵が正常に削除および置換されました。';
+$string['keydeletedcancelled'] = 'キーに変更はありません。';
 $string['keymismatch'] = 'このホストのために保有されている公開鍵は現在公開されている公開鍵と異なります。';
 $string['last_connect_time'] = '最終接続日時';
 $string['last_connect_time_help'] = 'あなたが最後にこのホストに接続した日時です。';

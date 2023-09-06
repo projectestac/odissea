@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'eu', version '3.11'.
+ * Strings for component 'quiz_grading', language 'eu', version '4.1'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,11 +49,12 @@ $string['graded'] = '(kalifikatuta)';
 $string['gradenextungraded'] = 'Kalifikatu gabeko hurrengo {$a} saiakerak kalifikatu';
 $string['gradeungraded'] = 'Kalifikatu gabeko {$a} saiakera guztiak kalifikatu';
 $string['grading'] = 'Eskuzko kalifikazioa';
-$string['grading:viewidnumber'] = 'Ikusi ikasleen ID zenbakiak kalifikatu bitartean';
+$string['grading:viewidnumber'] = 'Ikusi ikasleak identifikatzeko eremuak kalifikatu bitartean';
 $string['grading:viewstudentnames'] = 'Ikusi ikasleen izenak kalifikatu bitartean';
 $string['gradingall'] = '{$a} saiakera guztiak galdera honetarako.';
 $string['gradingattempt'] = '{$a->fullname}(r)en {$a->attempt} saiakera-zenbakia';
 $string['gradingattemptsxtoyofz'] = 'Saiakerak kalifikatzen {$a->from}-tik {$a->to}-ra, guztira {$a->of}';
+$string['gradingattemptwithcustomfields'] = '{$a->fullname} ({$a->customfields}) erabiltzailearen {$a->attempt}. saiakera';
 $string['gradingattemptwithidnumber'] = '{$a->attempt} saiakera-zenbakia {$a->fullname}-rentzat ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Kalifikatu gabeko hurrengo {$a} saiakerak';
 $string['gradingnotallowed'] = 'Ez duzu baimenik galdetegi honetan erantzunak eskuz kalifikatzeko';
@@ -69,6 +70,7 @@ $string['noquestionsfound'] = 'Ez da eskuz kalifikatutako galderarik aurkitu';
 $string['nothingfound'] = 'Ez dago erakusteko ezer';
 $string['options'] = 'Aukerak';
 $string['orderattempts'] = 'Ordenatu saiakerak';
+$string['orderattemptsby'] = 'Ordenatu saiakerak honela:';
 $string['pluginname'] = 'Eskuzko kalifikazioa';
 $string['privacy:preference:order'] = 'Kalifikazioa behar duten saiakerak erakusteko erabilitako ordena.';
 $string['privacy:preference:pagesize'] = 'Ebaluazio-interfazeko orri bakoitzean erakutsi beharreko saiakera kopurua.';
@@ -77,8 +79,9 @@ $string['questionname'] = 'Galderaren izena';
 $string['questionsperpage'] = 'Galderak orriko';
 $string['questionsthatneedgrading'] = 'Kalifikatu beharreko galderak';
 $string['questiontitle'] = '{$a->number} galdera: "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} saiakera {$a->openspan}kalifikatuta{$a->closespan}).';
+$string['random'] = 'Ausaz';
 $string['randomly'] = 'Ausaz';
-$string['saveandnext'] = 'Gorde eta joan hurrengo orrira';
+$string['saveandnext'] = 'Gorde eta erakutsi hurrengoa';
 $string['showstudentnames'] = 'Erakutsi ikasleen izenak';
 $string['tograde'] = 'Kalifikatzeko';
 $string['total'] = 'Denera';

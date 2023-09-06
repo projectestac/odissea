@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'ru', version '3.11'.
+ * Strings for component 'tool_lp', language 'ru', version '4.1'.
  *
  * @package     tool_lp
  * @category    string
@@ -166,6 +166,7 @@ $string['nouserevidence'] = 'Доказательства предыдущего
 $string['nouserplans'] = 'Учебные планы пока не были созданы.';
 $string['oneplanwascreated'] = 'Учебный план был создан';
 $string['outcome'] = 'Результат';
+$string['overridegrade'] = 'Переопределить имеющуюся оценку компетентности после завершения.';
 $string['parentcompetency'] = 'Родитель';
 $string['parentcompetency_edit'] = 'Редактировать родителя';
 $string['parentcompetency_help'] = 'Задайте родителя, под которым будет добавлена компетенция. Это может быть либо другая компетенция из этого же фреймворка, либо корень фреймворка компетенций для компетенции верхнего уровня.';

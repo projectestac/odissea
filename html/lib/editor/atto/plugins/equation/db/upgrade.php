@@ -32,33 +32,24 @@ defined('MOODLE_INTERNAL') || die();
 function xmldb_atto_equation_upgrade($oldversion) {
     global $CFG;
 
-    // Automatically generated Moodle v3.6.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.7.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.8.0 release upgrade line.
-    // Put any upgrade step following this.
-
     // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.10.0 release upgrade line.
+    // Automatically generated Moodle v4.0.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.11.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2021051701) {
+    if ($oldversion < 2022110700) {
         $oldmatrix = '\left| \begin{matrix} a_1 & a_2 \\ a_3 & a_4 \end{matrix} \right|';
         $fixedmatrix = '\left| \begin{matrix} a_1 & a_2 \\\\ a_3 & a_4 \end{matrix} \right|';
         $config = get_config('atto_equation', 'librarygroup4');
         $newdefault = str_replace($oldmatrix, $fixedmatrix, $config);
         set_config('librarygroup4', $newdefault, 'atto_equation');
         // Atto equation savepoint reached.
-        upgrade_plugin_savepoint(true, 2021051701, 'atto', 'equation');
+        upgrade_plugin_savepoint(true, 2022110700, 'atto', 'equation');
     }
+
+    // Automatically generated Moodle v4.1.0 release upgrade line.
+    // Put any upgrade step following this.
 
     return true;
 }

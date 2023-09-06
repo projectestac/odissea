@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_coursefiles', language 'de', version '3.11'.
+ * Strings for component 'repository_coursefiles', language 'de', version '4.1'.
  *
  * @package     repository_coursefiles
  * @category    string

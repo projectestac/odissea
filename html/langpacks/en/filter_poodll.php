@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_poodll', language 'en', version '3.11'.
+ * Strings for component 'filter_poodll', language 'en', version '4.1'.
  *
  * @package     filter_poodll
  * @category    string
@@ -119,6 +119,7 @@ $string['filter_poodll_videogallery_heading'] = 'Video Gallery Settings';
 $string['filter_poodll_videoplayer_heading'] = 'Video Player Settings';
 $string['filter_poodll_whiteboard_heading'] = 'Whiteboard Settings';
 $string['filtername'] = 'Poodll Filter';
+$string['finished'] = 'finished';
 $string['flashcardstype'] = 'Flashcards Type';
 $string['flashonandroid'] = 'Use Flash on Android';
 $string['flashonandroid_desc'] = 'It is possible to use Flash on Android, though in many cases its not available and difficult to communicate to students what to do. So by default this is off.';
@@ -177,10 +178,12 @@ $string['no_subscriptions'] = 'No subscriptions.';
 $string['noapisecret'] = 'No API secret entered.';
 $string['noapiuser'] = 'No API username entered.';
 $string['normal'] = 'Normal';
+$string['nosubtitlesyet'] = 'Subtitles are not available (yet)';
 $string['notokenincache'] = 'Refresh to see license information. Contact Poodll support if there is a problem.';
 $string['once_recorder'] = 'Once';
 $string['oneeighty_days'] = '180 Days';
 $string['onetwothree_recorder'] = 'One Two Three';
+$string['paused'] = 'paused';
 $string['per_plugin'] = 'Per Plugin (Last Yr)';
 $string['per_recording_type'] = 'Per recording type';
 $string['picqual'] = 'Target webcam qual. 1 - 10';
@@ -197,6 +200,7 @@ $string['placeholdervideosecs_details'] = 'Duration in seconds to at least one d
 $string['plain_recorder'] = 'Plain';
 $string['player'] = 'Player {$a}';
 $string['playertype'] = 'player';
+$string['playing'] = 'playing';
 $string['pluginname'] = 'Poodll Filter';
 $string['poodll:candownloadmedia'] = 'Can download media';
 $string['poodll:comparetext'] = 'Allow text comparison via API.';
@@ -234,6 +238,7 @@ $string['presets'] = 'Autofill template with a Preset';
 $string['presets_desc'] = 'Poodll comes with some default presets you can use out of the box, or to help you get started with your own template. Choose one of those here, or just create your own template from scratch. You can export a template as a bundle by clicking on the green box above. You can import a bundle by dragging it onto the green box.';
 $string['privacy:metadata'] = 'The Poodll filter plugin does not store any personal data.';
 $string['readaloud_recorder'] = 'Read Aloud';
+$string['ready'] = 'ready';
 $string['recorderorder'] = 'Preferred Recorder Order';
 $string['recorderorder_audio'] = 'Audio Recorder Order';
 $string['recorderorder_audio_desc'] = '';
@@ -303,7 +308,9 @@ $string['recui_waitwaitstilluploading'] = 'Your file is still uploading. Do you 
 $string['refreshtoken'] = 'Refresh license information';
 $string['registrationkey'] = 'Registration Key';
 $string['registrationkey_explanation'] = 'Enter your Poodll registration key here only if you have not entered an API key and secret above. You can obtain a key from <a href=\'https://poodll.com/pricing\'>https://poodll.com/pricing</a>';
+$string['remainingplays'] = 'Remaining plays';
 $string['screen_recorder'] = 'Screen Recorder';
+$string['select-text-and-click-me'] = 'Select Text and Click Me';
 $string['serverhttpport'] = 'Poodll Red5 Server Port (HTTP)';
 $string['serverid'] = 'Poodll Red5 Server Id';
 $string['servername'] = 'Poodll Red5 Server Address';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'fr', version '3.11'.
+ * Strings for component 'competency', language 'fr', version '4.1'.
  *
  * @package     competency
  * @category    string
@@ -42,7 +42,7 @@ $string['deletecompetencyratings'] = 'Supprimer les évaluations de compétence'
 $string['duplicateditemname'] = '{$a} (copie)';
 $string['enablecompetencies'] = 'Activer les compétences';
 $string['enablecompetencies_desc'] = 'Les compétences permettent l\'évaluation des utilisateurs relativement à des plans de formation.';
-$string['errorcannotchangeapastduedate'] = 'La date limite est passée ; elle ne peut pas être modifié.';
+$string['errorcannotchangeapastduedate'] = 'La date limite est passée ; elle ne peut pas être modifiée.';
 $string['errorcannotsetduedateinthepast'] = 'La date limite ne peut pas être fixée dans le passé.';
 $string['errorcannotsetduedatetoosoon'] = 'La date limite est trop proche.';
 $string['errorcompetencyrule'] = 'Règle de compétence « {$a} » inconnue';

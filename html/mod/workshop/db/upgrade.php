@@ -39,22 +39,10 @@ function xmldb_workshop_upgrade($oldversion) {
 
     $dbman = $DB->get_manager();
 
-    // Automatically generated Moodle v3.6.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.7.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.8.0 release upgrade line.
-    // Put any upgrade step following this.
-
     // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.10.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2020110901) {
+    if ($oldversion < 2021052501) {
 
         // Changing nullability of field grade on table workshop_grades to null.
         $table = new xmldb_table('workshop_grades');
@@ -64,10 +52,13 @@ function xmldb_workshop_upgrade($oldversion) {
         $dbman->change_field_notnull($table, $field);
 
         // Workshop savepoint reached.
-        upgrade_mod_savepoint(true, 2020110901, 'workshop');
+        upgrade_mod_savepoint(true, 2021052501, 'workshop');
     }
 
-    // Automatically generated Moodle v3.11.0 release upgrade line.
+    // Automatically generated Moodle v4.0.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v4.1.0 release upgrade line.
     // Put any upgrade step following this.
 
     return true;

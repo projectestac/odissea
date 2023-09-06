@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'nl', version '3.11'.
+ * Strings for component 'forum', language 'nl', version '4.1'.
  *
  * @package     forum
  * @category    string
@@ -32,6 +32,7 @@ $string['activityoverview'] = 'Er zijn nieuwe forumberichten';
 $string['addanewdiscussion'] = 'Voeg een nieuw discussieonderwerp toe';
 $string['addanewquestion'] = 'Voeg een nieuwe vraag toe';
 $string['addanewtopic'] = 'Voeg een nieuw onderwerp toe';
+$string['addreply'] = 'Antwoord toevoegen';
 $string['addtofavourites'] = 'Markeer deze discussie als favoriet';
 $string['advancedsearch'] = 'Uitgebreid zoeken';
 $string['alldiscussions'] = 'Alle discussies';
@@ -71,10 +72,9 @@ $string['cannotadddiscussion'] = 'Om discussies aan dit forum te kunnen toevoege
 $string['cannotadddiscussionall'] = 'Je hebt het recht niet om een nieuw discussieonderwerp te starten voor alle deelnemers.';
 $string['cannotadddiscussiongroup'] = 'Je kunt geen discussie maken omdat je geen lid bent van een groep.';
 $string['cannotaddsubscriber'] = 'Kon gebruiker met ID {$a} niet inschrijven voor het ontvangen van e-mail van dit forum!';
-$string['cannotaddteacherforumto'] = 'Kon het geconverteerde leraarsforum niet toevoegen aan sectie 0 van de cursus';
+$string['cannotaddteacherforumto'] = 'Kon het geconverteerde lerarenforum niet toevoegen aan sectie 0 van de cursus';
 $string['cannotcreatediscussion'] = 'Kon geen nieuwe discussie starten';
-$string['cannotcreateinstanceforteacher'] = 'Kon geen nieuwe cursusmodule maken voor het leraarsforum';
-$string['cannotdeletediscussioninsinglediscussion'] = 'Je kunt het eerste bericht van een enkele discussie niet verwijderen';
+$string['cannotcreateinstanceforteacher'] = 'Kon geen nieuwe cursusmodule maken voor het lerarenforum';
 $string['cannotdeletepost'] = 'Je kunt dit bericht niet verwijderen!';
 $string['cannoteditposts'] = 'Je kunt een bericht van andere gebruikers niet wijzigen!';
 $string['cannotexportforum'] = 'Je kunt dit forum niet exporteren';
@@ -97,7 +97,9 @@ $string['cannotsubscribe'] = 'Je moet lid van een groep zijn om e-mail van dit f
 $string['cannottrack'] = 'Kon het volgen van dit forum niet stoppen';
 $string['cannotunsubscribe'] = 'Kon er niet voor zorgen dat je van dit forum geen mail meer ontvangt.';
 $string['cannotupdatepost'] = 'Je kunt dit bericht niet updaten';
-$string['cannotviewpostyet'] = 'Je kunt de vragen van andere leerlingen in deze discussie nog niet lezen, omdat je zelf nog niets gepost hebt';
+$string['cannotuseseperategroupsandsingletopic'] = 'Gescheiden groepen kunnen niet worden gebruikt met een enkel discussieonderwerp.';
+$string['cannotusesingletopicandseperategroups'] = 'Een enkel discussieonderwerp kan niet met gescheiden groepen worden gebruikt.';
+$string['cannotviewpostyet'] = 'Je kunt de vragen van andere leerlingen in deze discussie nog niet lezen, omdat je zelf nog niets gepost hebt.';
 $string['cannotviewusersposts'] = 'Deze gebruiker heeft geen berichten gepost die jij kunt zien';
 $string['cleanreadtime'] = 'Markeer oude berichten als gelezen';
 $string['clicktofavourite'] = 'Je hebt deze discussie niet als favoriet gemarkeerd. Klik om als favoriet te markeren.';
@@ -128,7 +130,7 @@ $string['configdigestmailtime'] = 'Gebruikers die ervoor kiezen dat de e-mails h
 $string['configdisplaymode'] = 'De standaardmanier voor het weergeven van discussies als er geen methode is ingesteld.';
 $string['configenablerssfeeds'] = 'Met deze instelling kun je de mogelijkheid voor het maken van RSS-feeds inschakelen voor alle forums. Je zult wel nog voor elk forum afzonderlijk het maken van de RSS-feeds moeten  inschakelen.';
 $string['configenabletimedposts'] = 'Zet op \'Ja\' als je een tijdvak wil tonen wanneer je een nieuwe discussie start.';
-$string['configlongpost'] = 'Elk bericht dat langer is dan deze waarde (HTML-code niet inbegrepen) wordt als lang beschouwd.';
+$string['configlongpost'] = 'Elk bericht dat langer is dan deze waarde (HTML-code niet inbegrepen) wordt als lang beschouwd. Berichten die op de site startpagina, sociale opmaak cursuspagina of gebruikersprofieln getoond worden, worden ingekort op een natuurlijk breekpunt ergens tussen de forum_shortpost en de forum_longpost waarde.';
 $string['configmanydiscussions'] = 'Maximale aantal discussies van een forum die per pagina getoond worden';
 $string['configmaxattachments'] = 'Standaard maximale aantal bijlagen per bericht';
 $string['configmaxbytes'] = 'Standaard maximale grootte voor alle forumbijlagen op deze site (afhankelijk van vaklimieten en andere lokale instellingen)';
@@ -192,7 +194,7 @@ $string['discussionmoved'] = 'Deze discussie is verplaatst naar \'{$a}\'.';
 $string['discussionmovedpost'] = 'Deze discussie is verplaatst naar <a href="{$a->discusshref}">deze plaats</a> in het forum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Discussienaam';
 $string['discussionnownotsubscribed'] = '{$a->name} zal GEEN melding ontvangen over nieuwe berichten in \'{$a->discussion}\' van \'{$a->forum}\'';
-$string['discussionnowsubscribed'] = '{$a->name} zal meldingen krijgen van nieuwe berichten in \'{$a->discussion}\' van \'{$a->forum}\'';
+$string['discussionnowsubscribed'] = 'Je zult meldingen krijgen van nieuwe berichten in \'{$a->discussion}\' van \'{$a->forum}\'';
 $string['discussionpin'] = 'Vastpinnen';
 $string['discussionpinned'] = 'Vastgepind';
 $string['discussionpinned_help'] = 'Vastgepinde discussies zullen bovenaan het forum verschijnen';
@@ -201,6 +203,7 @@ $string['discussionsplit'] = 'Discussie is gesplitst';
 $string['discussionsstartedby'] = 'Discussies die door {$a} zijn gestart';
 $string['discussionsstartedbyrecent'] = 'Discussies die recentelijk door {$a} zijn gestart';
 $string['discussionsstartedbyuserincourse'] = 'Discussies, gestart door {$a->fullname} in {$a->coursename}';
+$string['discussionsstartedincourse'] = 'Discussies begonnen in {$a}';
 $string['discussionstartedby'] = 'Discussie gestart door {$a}';
 $string['discussionsubscribed'] = 'Je bent nu geabonneerd op deze discussie.';
 $string['discussionsubscribestart'] = 'Stuur me meldingen van nieuwe berichten in deze discussie';
@@ -234,6 +237,8 @@ $string['duedate_help'] = 'Dit is het moment waarvoor berichten op het forum ver
 $string['duedatetodisplayincalendar'] = 'Vervaldatum om in devkalender te tonen';
 $string['eachuserforum'] = 'Iedereen voegt één discussie toe';
 $string['edit'] = 'Wijzig';
+$string['editdiscussion'] = 'Discussie bewerken';
+$string['editdiscussiontopic'] = 'Discussieonderwerp bewerken';
 $string['editedby'] = 'Bewerkt door {$a->name} - oorspronkelijk bericht van {$a->date}';
 $string['editedpostupdated'] = '{$a}\'s bericht is aangepast';
 $string['editing'] = 'Wijzigen';
@@ -384,12 +389,13 @@ $string['indicator:cognitivedepth'] = 'Forum cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Forum activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Forum cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de forumactiviteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken, Reageren op feedback, Opnieuw verzenden na het bekijken van feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Forum sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Forum activiteit.';
 $string['indicator:socialbreadthdef'] = 'Forum sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de forumactiviteiten tijdens dit analyse-interval bereikt (Niveaus = geen deelname, alleen deelnemer, deelnemer met anderen)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inforum'] = 'in {$a}';
-$string['inpagereplysubject'] = 'Re: {$a}';
 $string['inreplyto'] = 'Als antwoord op {$a}';
 $string['introblog'] = 'De berichten in dit forum zijn automatisch naar hier gekopieerd van blogs van gebruikers in deze cursus omdat deze blogs niet langer beschikbaar zijn';
 $string['intronews'] = 'Algemeen nieuws en aankondigingen';
@@ -465,6 +471,7 @@ Fora kunnen voor veel zaken gebruikt worden, zoals
 * als helpcentrum waar leraren en leerlingen advies kunnen geven
 * als één-op-één ondersteuningszone voor een privé leraar-leerling communicatie (door een forum met groepen te gebruiken met 1 leerling per groep)
 * voor uitbreidingsoefeningen, met uitdagende denkoefeningen waar leerlingen kunnen over nadenken, discussiëren en oplossingen voorstellen.';
+$string['modulename_link'] = 'mod/forum/view';
 $string['modulenameplural'] = 'Forums';
 $string['more'] = 'meer';
 $string['movedmarker'] = '(Verplaatst)';
@@ -515,15 +522,13 @@ $string['nowallunsubscribed'] = 'Je krijgt van geen enkel forum in {$a} e-mail.'
 $string['nowgradinguser'] = 'Nu {$a} beoordelen';
 $string['nownotsubscribed'] = '{$a->name} zal GEEN meldingen over nieuwe forumberichten in  \'{$a->forum}\' ontvangen';
 $string['nownottracking'] = '{$a->name} volgt niet langer het forum \'{$a->forum}\'.';
-$string['nowsubscribed'] = '{$a->name} zal meldingen ontvangen over nieuwe forumberichtingen in \'{$a->forum}\'';
+$string['nowsubscribed'] = 'Je zult meldingen krijgen over nieuwe forumberichten in \'{$a->forum}\'.';
 $string['nowtracking'] = '{$a->name} volgt nu het forum \'{$a->forum}\'.';
 $string['numberofreplies'] = 'Aantal antwoorden: {$a}';
 $string['numposts'] = '{$a} berichten';
 $string['olderdiscussions'] = 'Oudere discussies';
 $string['oldertopics'] = 'Oudere onderwerpen';
 $string['oldpostdays'] = 'Gelezen na aantal dagen';
-$string['overviewnumpostssince'] = '{$a} berichten sinds je laatste login';
-$string['overviewnumunread'] = '{$a} in totaal niet gelezen';
 $string['page-mod-forum-discuss'] = 'Forum module discussiedraad pagina';
 $string['page-mod-forum-view'] = 'Forummodule hoofdpagina';
 $string['page-mod-forum-x'] = 'Elke forummodule pagina';
@@ -543,7 +548,7 @@ $string['postbymailsuccess'] = 'Je antwoord  "{$a->subject}" is gepost op {$a->d
 $string['postbymailsuccess_html'] = 'Je antwoord <a href="{$a->discussionurl}">{$a->subject}</a> is gepost.';
 $string['postbyuser'] = '{$a->post} door {$a->user}';
 $string['postincontext'] = 'Bekijk dit bericht in zijn context';
-$string['postisprivatereply'] = 'Dit is een privé-antwoord. Het is enkel zichtbaar voor jou en voor gebruikers die private antwoorden mogen zien, zoals leraren en managers.';
+$string['postisprivatereply'] = 'Dit is een privé-antwoord. (Leraren en anderen met het recht om privé-antwoorden te zien, kunnen het ook zien).';
 $string['postmailinfo'] = 'Dit is een kopie van een bericht op {$a}';
 $string['postmailinfolink'] = 'Dit is een kopie van een bericht, gepost in {$a->coursename}.
 
@@ -558,6 +563,7 @@ $string['posts'] = 'Berichten';
 $string['postsfrom'] = 'Berichten van';
 $string['postsmadebyuser'] = 'Berichten gepost door {$a}';
 $string['postsmadebyuserincourse'] = 'Berichten gepost door {$a->fullname} in {$a->coursename}';
+$string['postsmadeincourse'] = 'Berichten gemaakt in {$a}';
 $string['poststo'] = 'Berichten naar';
 $string['posttoforum'] = 'Plaats op het forum';
 $string['posttomygroups'] = 'Stuur een kopie naar alle groepen';
@@ -628,10 +634,11 @@ $string['privacy:request:delete:post:message'] = 'De inhoud van dit bericht is v
 $string['privacy:request:delete:post:subject'] = 'Verwijderen op verzoek van de auteur';
 $string['privacy:subscribedtoforum'] = 'U bent geabonneerd op dit forum.';
 $string['privatereply'] = 'Beantwoord privé';
-$string['privatereply_help'] = 'Een privé-antwoord kan alleen worden bekeken door de auteur van het bericht waarop wordt geantwoord en alle gebruikers met de mogelijkheid om privé-antwoorden te bekijken.';
+$string['privatereply_help'] = 'Een privé-antwoord kan ook bekeken worden door gebruikers die het recht hebben om privé-antwoorden te zien, zoals leraren.';
 $string['processingdigest'] = 'E-mail met berichtenoverzicht aan het verwerken voor gebruiker {$a}';
 $string['processingpost'] = 'Bericht {$a} aan het verwerken';
 $string['prune'] = 'Splits discussie';
+$string['prunediscussion'] = 'Splits discussie';
 $string['prunedpost'] = 'Er is een nieuwe discussie gestart met dat bericht';
 $string['pruneheading'] = 'Splits deze discussie en begin met dit bericht een nieuwe discussie';
 $string['qandaforum'] = 'Vraag- en antwoordforum';
@@ -650,6 +657,7 @@ $string['replyauthorself'] = '{$a} (Jij)';
 $string['replyforum'] = 'Antwoord op het forum';
 $string['replyingtoauthor'] = 'Antwoord op {$a} ...';
 $string['replyplaceholder'] = 'Schrijf je antwoord ...';
+$string['replypostdiscussion'] = 'Antwoord op discussie';
 $string['replytopostbyemail'] = 'Je kan dit via e-mail beantwoorden.';
 $string['replytouser'] = 'Gebruik e-mailadres in antwoord';
 $string['resetdigests'] = 'Verwijder alle individuele voorkeuren voor berichtenoverzicht voor forum';
@@ -736,6 +744,7 @@ Er zijn vier mogelijke manieren om te abonneren op een forum:
 * Uitgeschakeld - Inschrijven is niet toegestaan
 
 Merk op: wijzigingen van deze instellingen zijn enkel van toepassing op gebruikers die zich na de wijziging in de cursus inschrijven, niet voor bestaande gebruikers.';
+$string['subscriptionmodeconfirm'] = 'Weet je zeker dat je de abonnementsmodus wilt wijzigen in {$a}';
 $string['subscriptionoptional'] = 'Optioneel inschrijven';
 $string['subscriptions'] = 'Deze deelnemers krijgen e-mail';
 $string['tagarea_forum_posts'] = 'Forumberichten';

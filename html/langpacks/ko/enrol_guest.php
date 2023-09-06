@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'ko', version '3.11'.
+ * Strings for component 'enrol_guest', language 'ko', version '4.1'.
  *
  * @package     enrol_guest
  * @category    string
@@ -42,5 +42,6 @@ $string['showhint_desc'] = '손님 접속 암호의 첫 문자 보기';
 $string['status'] = '손님 접속 허용';
 $string['status_desc'] = '기본으로 임시 손님 접속 허용';
 $string['status_help'] = '이 설정은 등록하지 않고, 사용자가 손님으로 강좌를 접속할 수 있는지를 결정합니다.';
+$string['status_link'] = 'enrol/guest';
 $string['usepasswordpolicy'] = '암호 정책 사용';
 $string['usepasswordpolicy_desc'] = '손님 접속 암호에 대해 표준 암호 정책 사용';

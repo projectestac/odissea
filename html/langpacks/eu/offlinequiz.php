@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'eu', version '3.11'.
+ * Strings for component 'offlinequiz', language 'eu', version '4.1'.
  *
  * @package     offlinequiz
  * @category    string
@@ -184,7 +184,6 @@ $string['gradingofflinequiz'] = 'Kalifikazioak';
 $string['gradingofflinequizx'] = 'Kalifikazioak: {$a}';
 $string['gradingoptionsheading'] = 'Kalifikazio-aukerak';
 $string['group'] = 'Taldea';
-$string['groupquestions'] = 'Taldekako galderak';
 $string['hasresult'] = 'Emaitza bada';
 $string['idnumber'] = 'ID zenbakia';
 $string['imagefile'] = 'Irudiaren fitxategia';

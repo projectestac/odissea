@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'ar', version '3.11'.
+ * Strings for component 'format_singleactivity', language 'ar', version '4.1'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activitytype'] = 'نوع النشاط';
-$string['activitytype_help'] = 'إختر نوع النشاط أو المورد لاستعماله في هذا المقرر الدراسي';
+$string['activitytype_help'] = 'إختر نوع النشاط أو المورد لاستعماله في هذا المساق';
 $string['defactivitytype'] = 'نوع النشاط الافتراضي';
-$string['defactivitytypedesc'] = 'إختر نوع النشاط الذي سيتم اختياره افتراضياً عند إنشاء مقرر دراسي جديد';
-$string['erroractivitytype'] = 'نوع النشاط لم يتم ضبطه في إعدادات المقرر الدراسي';
+$string['defactivitytypedesc'] = 'إختر نوع النشاط الذي سيتم اختياره افتراضياً عند إنشاء مساق جديد';
+$string['erroractivitytype'] = 'نوع النشاط لم يتم ضبطه في إعدادات المساق';
 $string['orphaned'] = 'مُيتم';
 $string['orphanedwarning'] = 'هذه النشاطات لا يمكن للمستخدمين الوصول إليها!';
 $string['pluginname'] = 'تنسيق النشاط الواحد';
 $string['privacy:metadata'] = 'إن ملحق تنسيق النشاط الواحد لا يخزن أي بيانات شخصية.';
 $string['sectionname'] = '';
-$string['warningchangeformat'] = 'عند تغيير تنسيق المقرر الموجود إلى "النشاط الواحد"، تأكد من إزالتك لكل النشاطات الزائدة منه بضمنها "الإعلانات". لاحظ أن هيكل المقاطع قد يتغير.';
+$string['warningchangeformat'] = 'عند تغيير تنسيق المساق الموجود إلى "النشاط الواحد"، تأكد من إزالتك لكل النشاطات الزائدة منه بضمنها "الإعلانات". لاحظ أن هيكل المقاطع قد يتغير.';

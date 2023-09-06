@@ -25,3 +25,6 @@
     margin-bottom: 0;
     width: 100%;
 }
+.que.multianswerwiris .subquestion.wirisnofeedbackimage .wrsUI_app .wrsUI_inputComponent::after {
+    display: none !important;
+}

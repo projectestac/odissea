@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exacomp', language 'ca', version '3.11'.
+ * Strings for component 'block_exacomp', language 'ca', version '4.1'.
  *
  * @package     block_exacomp
  * @category    string
@@ -29,6 +29,10 @@ $string['LA_enddate'] = 'data de finalització';
 $string['delete_confirmation'] = 'De veres voleu esborrar «{$a}»?';
 $string['description'] = 'Descripció';
 $string['messagetocourse'] = 'Envia el missatge a tots els alumnes';
+$string['save'] = 'Desa';
+$string['settings_addblock_to_newcourse_option_yes'] = 'Sí';
 $string['show_solution'] = 'Mostra la solució';
+$string['student'] = 'Estudiant';
 $string['tab_admin_import'] = 'Importa/Exporta';
 $string['teacher'] = 'Professor';
+$string['yes_no_Yes'] = 'Sí';

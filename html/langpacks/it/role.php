@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'it', version '3.11'.
+ * Strings for component 'role', language 'it', version '4.1'.
  *
  * @package     role
  * @category    string
@@ -46,7 +46,7 @@ $string['archetype'] = 'Ruolo archetipo';
 $string['archetype_help'] = 'Il ruolo archetipo determina i privilegi quando si effettua il reset di un ruolo e quando vengono aggiunti privilegi ad un ruolo durante gli aggiornamenti del sito.';
 $string['archetypecoursecreator'] = 'ARCHETIPO: Creatore di corsi';
 $string['archetypeeditingteacher'] = 'ARCHETIPO: Docente (editor)';
-$string['archetypefrontpage'] = 'ARCHETIPO: Utente autenticato nella pagina home';
+$string['archetypefrontpage'] = 'ARCHETIPO: Utente autenticato nella pagina home del sito';
 $string['archetypeguest'] = 'ARCHETIPO: Ospite';
 $string['archetypemanager'] = 'ARCHETIPO: Manager';
 $string['archetypestudent'] = 'ARCHETIPO: Studente';
@@ -63,6 +63,7 @@ $string['assignrolenameincontext'] = 'Assegna ruolo \'{$a->role}\' in {$a->conte
 $string['assignroles'] = 'Ruoli';
 $string['assignroles_help'] = 'Assegnando un ruolo ad un utente in un dato contesto, l\'utente riceverà tutti i privilegi previsti dal ruolo nel contesto di assegnazione ed in tutti i contesti sottostanti.
 Ad esempio, assegnando ad un utente il ruolo studente in un corso, l\'utente avrà tale ruolo nel corso, in tutti  blocchi ed in tutte le attività appartenenti al medesimo corso.';
+$string['assignroles_link'] = 'admin/roles/assign';
 $string['assignrolesin'] = 'Assegna ruoli nel contesto \'{$a}\'';
 $string['assignrolesrelativetothisuser'] = 'Assegna ruoli relativi a questo utente';
 $string['backtoallroles'] = 'Torna all\'elenco di tutti i ruoli';
@@ -204,7 +205,7 @@ $string['course:reset'] = 'Eseguire reset del corso';
 $string['course:reviewotherusers'] = 'Rivedere altri utenti';
 $string['course:sectionvisibility'] = 'Gestire visibilità delle sezioni';
 $string['course:setcurrentsection'] = 'Impostare sezione attiva';
-$string['course:setforcedlanguage'] = 'Forzare lingua del corso';
+$string['course:setforcedlanguage'] = 'Forzare lingua del corso o dell\'attiivtà';
 $string['course:tag'] = 'Modificare tag del corso';
 $string['course:togglecompletion'] = 'Contrassegnare un\'attività come completata';
 $string['course:update'] = 'Modificare impostazioni del corso';
@@ -262,10 +263,10 @@ $string['export'] = 'Esporta';
 $string['extusers'] = 'Utenti esistenti';
 $string['extusersmatching'] = 'Utenti esistenti che corrispondono a \'{$a}\'';
 $string['filter:manage'] = 'Gestire impostazioni locali dei filtri';
-$string['frontpageuser'] = 'Utente autenticato nella pagina home';
-$string['frontpageuserdescription'] = 'Tutti gli utenti autenticati nel corso pagina home.';
+$string['frontpageuser'] = 'Utente autenticato nella pagina home del sito';
+$string['frontpageuserdescription'] = 'Tutti gli utenti autenticati nel corso pagina home del sito.';
 $string['globalrole'] = 'Ruolo globale';
-$string['globalroleswarning'] = 'ATTENZIONE! Qualsiasi ruolo assegnato agli utenti in questa pagina, sarà un ruolo globale, ossia valido in tutto il sito, inclusa la pagina home, le categorie di corsi ed i corsi.';
+$string['globalroleswarning'] = 'Attenzione: qualsiasi ruolo assegnato agli utenti tramite questa pagina, sarà un ruolo globale, ossia valido in tutto il sito, inclusa la pagina home del sito e tutti  i corsi.';
 $string['gotoassignroles'] = 'Vai alla assegnazione di ruoli per questo {$a->contextlevel}';
 $string['gotoassignsystemroles'] = 'Vai alla assegnazione di ruoli di sistema';
 $string['grade:edit'] = 'Modificare valutazioni';
@@ -331,6 +332,7 @@ $string['overrideanotherrole'] = 'Modifica un altro ruolo';
 $string['overridecontext'] = 'Modifica un contesto';
 $string['overridepermissions'] = 'Modifica autorizzazioni';
 $string['overridepermissions_help'] = 'Le modifiche dei ruoli consentono di alterare i privilegi in un determinato contesto.';
+$string['overridepermissions_link'] = 'admin/roles/override';
 $string['overridepermissionsforrole'] = 'Modifica autorizzazioni per il ruolo \'{$a->role}\' nel contesto {$a->context}';
 $string['overridepermissionsin'] = 'Modifica autorizzazioni nel contesto \'{$a}\'';
 $string['overrideroles'] = 'Modifica ruoli';
@@ -374,6 +376,8 @@ $string['privacy:metadata:role_cohortroles'] = 'Ruoli da gruppo globale';
 $string['prohibit'] = 'Nega';
 $string['prohibitedroles'] = 'Non autorizzati';
 $string['question:add'] = 'Aggiungere domande';
+$string['question:commentall'] = 'Commentare tutte le domande';
+$string['question:commentmine'] = 'Commentare le proprie domande';
 $string['question:config'] = 'Configurare tipi di domande';
 $string['question:editall'] = 'Modificare qualsiasi domanda';
 $string['question:editmine'] = 'Modificare solo le proprie domande';
@@ -391,6 +395,10 @@ $string['rating:rate'] = 'Valutare elementi';
 $string['rating:view'] = 'Visualizzare voti totali ricevuti';
 $string['rating:viewall'] = 'Visualizzare voti grezzi dati da ciascuno';
 $string['rating:viewany'] = 'Visualizzare voti totali ricevuti da ciascuno';
+$string['reportbuilder:edit'] = 'Modificare i propri report personalizzati';
+$string['reportbuilder:editall'] = 'Modificare tutti i report personalizzati';
+$string['reportbuilder:scheduleviewas'] = 'Pianificare report da visualizzare come altri utenti';
+$string['reportbuilder:view'] = 'Visualizzare report personalizzati';
 $string['resetrole'] = 'Ripristina';
 $string['resettingrole'] = 'Ripristino del ruolo \'{$a}\'';
 $string['restore:configure'] = 'Configurare opzioni di ripristino';
@@ -424,6 +432,7 @@ $string['roleresetrole'] = 'Usa ruolo o archetipo';
 $string['rolerisks'] = 'Rischi intrinseci al ruolo';
 $string['roles'] = 'Ruoli';
 $string['roles_help'] = 'Un Ruolo è un insieme di privilegi definito a livello di sito. Il ruolo può essere assegnato agli utenti in specifici contesti.';
+$string['roles_link'] = 'roles';
 $string['roleselect'] = 'Seleziona ruolo';
 $string['rolesforuser'] = 'Ruoli dell\'utente {$a}';
 $string['roleshortname'] = 'Nome abbreviato';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'es', version '3.11'.
+ * Strings for component 'atto_image', language 'es', version '4.1'.
  *
  * @package     atto_image
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'sv', version '3.11'.
+ * Strings for component 'survey', language 'sv', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -200,10 +200,12 @@ $string['indicator:cognitivedepth'] = 'Undersökning kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Undersökningsaktivitet.';
 $string['indicator:cognitivedepthdef'] = 'Undersökning kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har uppnått denna procentandel av det kognitiva engagemanget som erbjuds av Undersökningssktiviteterna under detta analysintervall (Nivåer = Ej visad, Visad, Lämna in)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Enkät social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Enkätaktivitet.';
 $string['indicator:socialbreadthdef'] = 'Undersökning social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Enkätaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = 'Introduktionstext';
 $string['invalidsurveyid'] = 'ID för enkäten var inte korrekt';
 $string['invalidtmptid'] = 'Ogiltigt ID för mall';
@@ -212,6 +214,7 @@ $string['modulename'] = 'Enkät';
 $string['modulename_help'] = 'Aktiviteten <em>Enkät</em> innehåller ett antal vedertagna enkätinstrument som visat sig användbara vid bedömning och stimulerande av inlärning i onlinemiljöer. En lärare kan använda dessa för att samla in data från sina elever som hjälper dem att lära sig om sin klass och reflektera över sin egen undervisning.
 
 Observera att dessa undersökningsverktyg är förifyllda med frågor. Lärare som önskar skapa en egen enkät bör använda aktiviteten <em>Återkoppling</em>.';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = 'Undersökningar';
 $string['name'] = 'Namn';
 $string['newsurveyresponses'] = 'Nya enkätsvar';
@@ -265,6 +268,7 @@ $string['surveytype_help'] = 'Det finns 3 tillgängliga undersökningstyper:
 * Attityder till tänkande och lärande undersökning (eng. <em>Attitudes to Thinking and Learning Survey</em> - ATTLS) - För att mäta i vilken utsträckning en person är en "ansluten lärande" (tenderar att tycka att lärande roligare, och är ofta mer samarbetsvillig, kongenial och mer villig att bygga på andras idéer) eller en "separat lärande" (tenderar att ha en mer kritisk och argumenterande inställning till lärande)
 * Undersökning av kritiska incidenter
 * Konstruktivistisk online-lärmiljö undersökning (eng.  <em>Constructivist On-line Learning Environment Survey</em> - COLLES) - För att övervaka i vilken utsträckning den interaktiva kapaciteten på webben kan utnyttjas för att engagera studenter i dynamiska inlärningsmetoder';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Stort tack för att du besvarade denna enkät, {$a}';
 $string['time'] = 'Tid';
 $string['viewsurveyresponses'] = 'Se {$a} enkätsvar';

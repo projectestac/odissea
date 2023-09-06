@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'sv', version '3.11'.
+ * Strings for component 'quiz_overview', language 'sv', version '4.1'.
  *
  * @package     quiz_overview
  * @category    string
@@ -70,7 +70,9 @@ $string['regradecomplete'] = 'Omgraderingen lyckades';
 $string['regradedsuccessfullyxofy'] = 'Omgraderade ({$a->done}/{$a->count})';
 $string['regradeheader'] = 'Ombedöm';
 $string['regradeselected'] = 'Ombedöm markerade försök';
+$string['regradingattemptissue'] = 'Plats {$a->slot}: {$a->reason}';
 $string['regradingattemptxofy'] = 'Omgraderingsförsök ({$a->done}/{$a->count})';
+$string['regradingattemptxofyproblem'] = 'Följande frågors betyg kunde inte ändras i försök {$a->attemptnum} av {$a->name} (id {$a->attemptid})';
 $string['regradingattemptxofywithdetails'] = 'Omgraderingsförsök ({$a->done}/{$a->count}) - Försök {$a->attemptnum} av {$a->name} (id {$a->attemptid})';
 $string['show'] = 'Visa';
 $string['showattempts'] = 'Visa bara försök';

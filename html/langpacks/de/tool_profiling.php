@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'de', version '3.11'.
+ * Strings for component 'tool_profiling', language 'de', version '4.1'.
  *
  * @package     tool_profiling
  * @category    string
@@ -39,6 +39,7 @@ $string['import'] = 'Import';
 $string['importok'] = 'Datei ‘{$a}\' erfolgreich importiert';
 $string['importprefix'] = 'Import-Präfix';
 $string['importproblem'] = 'Probleme beim Import der Datei \'{$a}\'';
+$string['lastrun'] = 'Zusammenfassung für letzten Durchlauf';
 $string['lastrunof'] = 'Bericht zum letzten Durchlauf von {$a} ';
 $string['markreferencerun'] = 'Als Referenz markieren';
 $string['memory'] = 'Speicherbelegung';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_jmol', language 'el', version '3.11'.
+ * Strings for component 'filter_jmol', language 'el', version '4.1'.
  *
  * @package     filter_jmol
  * @category    string
@@ -51,7 +51,7 @@ $string['ballandstick'] = 'Σφαίρα και ράβδος';
 $string['barium'] = 'Βάριο';
 $string['berkelium'] = 'Μπερκέλιο';
 $string['beryllium'] = 'Βηρύλλιο';
-$string['bigcell'] = 'κελιά 3x3x3';
+$string['bigcell'] = 'Κελιά 3x3x3';
 $string['bigcell_desc'] = 'Κελιά μονάδας 3x3x3';
 $string['bigcellpolyhedra'] = 'Πολύεδρα 3x3x3';
 $string['bigcellpolyhedra_desc'] = 'Κελία μονάδας 3x3x3 με πολυέδρα';
@@ -68,7 +68,7 @@ $string['carbon'] = 'Άνθρακας';
 $string['cartoon'] = 'Κινούμενα σχέδια';
 $string['cartoon_desc'] = 'Δευτερεύουσα δομή κινουμένων σχεδίων';
 $string['cartoonsastrace'] = 'Κινούμενα σχέδια ως ίχνος';
-$string['cell'] = '1x1x1 κύτταρο';
+$string['cell'] = 'Κελί 1x1x1';
 $string['cell_desc'] = 'Κελί μονάδας 1x1x1';
 $string['cellfilled'] = 'Συμπληρωμένα 1x1x1';
 $string['cellfilled_desc'] = 'Κελί μονάδας 1x1x1 με συμπληρωμένες προσόψεις';
@@ -208,7 +208,7 @@ $string['primary_desc'] = 'Πρωτεύουσα δομή χρώματος (ακ�
 $string['proline'] = 'Προλίνη';
 $string['promethium'] = 'Προμήθειο';
 $string['protoactinium'] = 'Πρωτακτίνιο';
-$string['quaternary'] = 'Τεταρτογενής';
+$string['quaternary'] = 'Τεταρτοταγής';
 $string['quaternary_desc'] = 'Τεταρτοταγής δομή χρώματος';
 $string['radium'] = 'Ράδιο';
 $string['radon'] = 'Ραδόνιο';

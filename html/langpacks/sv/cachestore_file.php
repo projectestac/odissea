@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'sv', version '3.11'.
+ * Strings for component 'cachestore_file', language 'sv', version '4.1'.
  *
  * @package     cachestore_file
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['asyncpurge'] = 'Rensa filkatalog asynkront';
+$string['asyncpurge_help'] = 'Om aktiverat skapas en ny katalog med cacheändring och den gamla katalogen tas bort asynkront via en schemalagd aktivitet';
 $string['autocreate'] = 'Autoskapa katalog';
 $string['autocreate_help'] = 'Om den är aktiverat skapas katalogen som anges i sökvägen automatiskt om den inte redan finns.';
 $string['path'] = 'Cache-sökväg';
@@ -42,3 +44,4 @@ Det är lämpligt att endast slå på detta om följande är sant:
 
 * Om du vet att antalet objekt i cachen kommer att vara tillräckligt litet för att det inte ska orsaka problem i filsystemet du använder.
 * De data som cachelagras är inte dyra att generera. Om det sedan håller fast vid standardvärdet kan det fortfarande vara det bättre alternativet eftersom det minskar risken för problem.';
+$string['task_asyncpurge'] = 'Rensa tidigare filcachekataloger asynkront';

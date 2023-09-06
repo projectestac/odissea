@@ -156,7 +156,14 @@ M.atto_recordrtc.commonmodule = {
         cm.player.set('muted', true);
 
         // Set recording timer to the time specified in the settings.
-        cm.countdownSeconds = cm.editorScope.get('timelimit');
+        if (type === 'audio') {
+            cm.countdownSeconds = cm.editorScope.get('audiotimelimit');
+        } else if (type === 'video') {
+            cm.countdownSeconds = cm.editorScope.get('videotimelimit');
+        } else {
+            // Default timer.
+            cm.countdownSeconds = cm.editorScope.get('defaulttimelimit');
+        }
         cm.countdownSeconds++;
         var timerText = M.util.get_string('stoprecording', 'atto_recordrtc');
         timerText += ' (<span id="minutes"></span>:<span id="seconds"></span>)';
@@ -180,9 +187,29 @@ M.atto_recordrtc.commonmodule = {
         }
     },
 
+    getFileExtension: function(type) {
+        if (type === 'audio') {
+            if (window.MediaRecorder.isTypeSupported('audio/ogg')) {
+                return 'ogg';
+            } else if (window.MediaRecorder.isTypeSupported('audio/mp4')) {
+                return 'mp4';
+            }
+        } else {
+            if (window.MediaRecorder.isTypeSupported('audio/webm')) {
+                return 'webm';
+            } else if (window.MediaRecorder.isTypeSupported('audio/mp4')) {
+                return 'mp4';
+            }
+        }
+
+        window.console.warning('Unknown file type for MediaRecorder API');
+        return '';
+    },
+
     // Upload recorded audio/video to server.
     upload_to_server: function(type, callback) {
         var xhr = new window.XMLHttpRequest();
+        var fileExtension = this.getFileExtension(type);
 
         // Get src media of audio/video tag.
         xhr.open('GET', cm.player.get('src'), true);
@@ -195,8 +222,8 @@ M.atto_recordrtc.commonmodule = {
 
                 // Generate filename with random ID and file extension.
                 var fileName = (Math.random() * 1000).toString().replace('.', '');
-                fileName += (type === 'audio') ? '-audio.ogg'
-                                               : '-video.webm';
+                fileName += (type === 'audio') ? '-audio.' + fileExtension
+                                               : '-video.' + fileExtension;
 
                 // Create FormData to send to PHP filepicker-upload script.
                 var formData = new window.FormData(),

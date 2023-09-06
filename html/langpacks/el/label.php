@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'el', version '3.11'.
+ * Strings for component 'label', language 'el', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -51,8 +51,8 @@ $string['modulename_help'] = 'Το άρθρωμα ταμπέλα επιτρέπ�
 
 * Για να διαχωρίσουν ένα μακρύ κατάλογο δραστηριοτήτων με μια υπο-επικεφαλίδα ή μια εικόνα.
 * Για να εμφανίσουν ένα ενσωματωμένο αρχείο ήχου ή βίντεο απευθείας στην σελίδα του μαθήματος.
-* Για να προσθέσουν μια σύντομη περιγραφή σε ένα τμήμα μαθήματος.';
-$string['modulename_link'] = 'άρθρωμα/ταμπέλα/εμφάνιση';
+* Για να προσθέσουν μια σύντομη περιγραφή σε μια ενότητα μαθήματος.';
+$string['modulename_link'] = '';
 $string['modulenameplural'] = 'Ταμπέλες';
 $string['pluginadministration'] = 'Διαχείριση ταμπελών';
 $string['pluginname'] = 'Ταμπέλα';

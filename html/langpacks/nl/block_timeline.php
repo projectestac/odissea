@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'nl', version '3.11'.
+ * Strings for component 'block_timeline', language 'nl', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Alle';
-$string['ariadayfilter'] = 'Filter tijdlijn artikelen';
+$string['ariadayfilter'] = 'Filter tijdlijn op datum';
 $string['ariadayfilteroption'] = '{$a} filter optie';
 $string['ariaeventlistitem'] = '{$a->name} activiteit in {$a->course} is moet klaar zijn op {$a->date}';
 $string['ariaeventlistpagelimit'] = 'Toon {$a} activiteiten per pagina';
@@ -35,7 +35,8 @@ $string['ariaeventlistpaginationnavdates'] = 'Tijdlijn activiteiten paginering';
 $string['ariaviewselector'] = 'Sorteer tijdlijn items';
 $string['ariaviewselectoroption'] = '{$a} sorteeroptie';
 $string['duedate'] = 'Uiterste inleverdatum';
-$string['morecourses'] = 'Meer cursussen';
+$string['moreactivities'] = 'Toon meer activiteiten';
+$string['morecourses'] = 'Toon meer cursussen';
 $string['next30days'] = 'Volgende 30 dagen';
 $string['next3months'] = 'Volgende 3 maanden';
 $string['next6months'] = 'Volgende 6 maanden';
@@ -47,6 +48,7 @@ $string['pluginname'] = 'Tijdlijn';
 $string['privacy:metadata:timelinefilterpreference'] = 'De gebruiker dagfilter-voorkeur voor het tijdlijnblok.';
 $string['privacy:metadata:timelinelimitpreference'] = 'De voorkeur voor de gebruikerspagina voor het tijdlijn blok.';
 $string['privacy:metadata:timelinesortpreference'] = 'De gebruikervoorkeur voor het tijdlijnblok.';
+$string['searchevents'] = 'Zoek activiteit op type of naam';
 $string['sortbycourses'] = 'Sorteren op cursussen';
 $string['sortbydates'] = 'Sorteer op datums';
 $string['timeline'] = 'Tijdlijn';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'it', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'it', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -68,6 +68,7 @@ $string['noofdrags'] = 'Numero';
 $string['pleasedragatleastonemarker'] = 'La risposta non è completa, devi posizionare almeno un indicatore sull\'immagine.';
 $string['pluginname'] = 'Trascina e rilascia indicatori';
 $string['pluginname_help'] = 'Seleziona un\'immagine di sfondo, inserisci le etichette di testo per gli indicatori e definisci  sull\'immagine di sfondo le zone di rilascio degli indicatori.';
+$string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = 'Inserimento domanda Trascina e rilascia indicatori';
 $string['pluginnameediting'] = 'Inserimento domanda Trascina e rilascia indicatori';
 $string['pluginnamesummary'] = 'Gli indicatori verranno trascinati e rilasciati su un\'immagine di sfondo.

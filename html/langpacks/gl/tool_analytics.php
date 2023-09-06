@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'gl', version '3.11'.
+ * Strings for component 'tool_analytics', language 'gl', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['analyticmodels'] = 'Modelos analíticos';
+$string['indicators_link'] = 'Indicators';
+$string['target_link'] = 'Targets';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'ru', version '3.11'.
+ * Strings for component 'atto_image', language 'ru', version '4.1'.
  *
  * @package     atto_image
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['alignment'] = 'Выравнивание';
 $string['alignment_bottom'] = 'По нижнему краю';
 $string['alignment_left'] = 'Слева';
-$string['alignment_middle'] = 'Посередине';
+$string['alignment_middle'] = 'По середине';
 $string['alignment_right'] = 'Справа';
 $string['alignment_top'] = 'По верхнему краю';
 $string['browserepositories'] = 'Выбрать из хранилища...';

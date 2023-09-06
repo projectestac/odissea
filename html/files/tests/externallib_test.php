@@ -250,7 +250,7 @@ class externallib_test extends \advanced_testcase {
                                           'filearea' => null,
                                           'itemid' => null,
                                           'filepath' => null,
-                                          'filename' => 'Miscellaneous');
+                                          'filename' => get_string('defaultcategoryname'));
         $testdata['parents']['2'] = array('contextid' => $coursecontext->id,
                                           'component' => null,
                                           'filearea' => null,

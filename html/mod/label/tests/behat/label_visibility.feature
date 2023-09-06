@@ -25,9 +25,9 @@ Feature: Check label visibility works
   Scenario: Hidden label activity should be show as hidden.
     Given I log in as "teacher"
     When I am on "Test" course homepage with editing mode on
-    Then "Swanky label 2" activity should be hidden
+    Then "Swanky label 2" label should be hidden
     And I turn editing mode off
-    And "Swanky label 2" activity should be hidden
+    And "Swanky label 2" label should be hidden
     And I log out
     And I log in as "student"
     And I am on "Test" course homepage
@@ -49,7 +49,7 @@ Feature: Check label visibility works
     Given I log in as "teacher"
     And I am on "Test" course homepage with editing mode on
     When I hide section "1"
-    Then "Swanky label" activity should be dimmed
+    Then "Swanky label" label should be hidden
     And I open "Swanky label" actions menu
     And "Swanky label" actions menu should not have "Show" item
     And "Swanky label" actions menu should not have "Hide" item
@@ -57,8 +57,8 @@ Feature: Check label visibility works
     And "Swanky label" actions menu should not have "Make unavailable" item
     And I click on "Edit settings" "link" in the "Swanky label" activity
     And I expand all fieldsets
-    And the "Availability" select box should contain "Hide from students"
-    And the "Availability" select box should not contain "Make available but not shown on course page"
+    And the "Availability" select box should contain "Hide on course page"
+    And the "Availability" select box should not contain "Make available but don't show on course page"
     And the "Availability" select box should not contain "Show on course page"
     And I log out
     And I log in as "student"

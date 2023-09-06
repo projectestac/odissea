@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ko', version '3.11'.
+ * Strings for component 'role', language 'ko', version '4.1'.
  *
  * @package     role
  * @category    string
@@ -60,6 +60,7 @@ $string['assignroles_help'] = '문맥영역(contexts)에서 사용자에게 역�
 
 예로서 만일 사용자가 강좌에서 학생 역할을 부여받는다면, 그들은 강좌안의 모든 활동과 블록안에서 학생의 역할을 갖게 됩니다. 
 ';
+$string['assignroles_link'] = 'admin/roles/assign';
 $string['assignrolesin'] = '{$a} 에서 역할 부여';
 $string['assignrolesrelativetothisuser'] = '이 사용자와 관련된 역할 부여';
 $string['backtoallroles'] = '역할 목록으로 되돌아 가기';
@@ -255,6 +256,7 @@ $string['overrideanotherrole'] = '다른 역할 덮어쓰기';
 $string['overridecontext'] = '문맥 덮어쓰기';
 $string['overridepermissions'] = '권한 덮어쓰기';
 $string['overridepermissions_help'] = '권한 덮어쓰기는 특정 문맥 영역에서  선택된 능력들이 허용되거나 방지될 수 있게 합니다.';
+$string['overridepermissions_link'] = 'admin/roles/override';
 $string['overridepermissionsforrole'] = '{$a->context} 의 \'{$a->role}\' 역할에 대한 권한 덮어쓰기';
 $string['overridepermissionsin'] = '{$a} 에서 권한 덮어쓰기';
 $string['overrideroles'] = '역할 덮어쓰기';
@@ -325,6 +327,7 @@ $string['rolerisks'] = '역할 위험';
 $string['roles'] = '역할들';
 $string['roles_help'] = '역할은 특정 문맥에서 특정 사용자에게 부여할 수 있는 사이트 전체에 대하여 정의된 권한의 모음입니다.
 ';
+$string['roles_link'] = 'roles';
 $string['roleselect'] = '역할 선택';
 $string['rolesforuser'] = '사용자 {$a}에 대한 역할';
 $string['roleshortname'] = '짧은 이름';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_jabber', language 'el', version '3.11'.
+ * Strings for component 'message_jabber', language 'el', version '4.1'.
  *
  * @package     message_jabber
  * @category    string
@@ -40,6 +40,6 @@ $string['notconfigured'] = 'Ο εξυπηρετητής Jabber δεν έχει �
 $string['pluginname'] = 'Jabber (μήνυμα)';
 $string['privacy:metadata:contexturl'] = 'Η διεύθυνση URL για την προβολή του γεγονότος.';
 $string['privacy:metadata:externalpurpose'] = 'Αυτές οι πληροφορίες αποστέλλονται σε έναν εξωτερικό εξυπηρετητή Jabber για να παραδοθούν τελικά ως μήνυμα ειδοποίησης στον παραλήπτη.';
-$string['privacy:metadata:smallmessage'] = 'Ένα τμήμα του μηνύματος.';
+$string['privacy:metadata:smallmessage'] = 'Μια ενότητα του μηνύματος.';
 $string['privacy:metadata:userfrom'] = 'Ο χρήστης που στέλνει το μήνυμα ειδοποίησης.';
 $string['privacy:metadata:userto'] = 'Ο παραλήπτης του μηνύματος ειδοποίησης.';

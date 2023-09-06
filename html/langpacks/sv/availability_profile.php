@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'sv', version '3.11'.
+ * Strings for component 'availability_profile', language 'sv', version '4.1'.
  *
  * @package     availability_profile
  * @category    string
@@ -31,7 +31,7 @@ $string['error_selectfield'] = 'Du måste välja ett profilfält';
 $string['error_setvalue'] = 'Du måste skriva in ett värde';
 $string['label_operator'] = 'Jämförelsemetod';
 $string['label_value'] = 'Jämförelsevärde';
-$string['missing'] = '(Saknar anpassade fält: {$a})';
+$string['missing'] = '(Saknar fält: {$a})';
 $string['op_contains'] = 'innehåller';
 $string['op_doesnotcontain'] = 'inte innehåller';
 $string['op_endswith'] = 'slutar med';

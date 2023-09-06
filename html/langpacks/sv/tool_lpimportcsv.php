@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'sv', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'sv', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -40,6 +40,7 @@ $string['idnumber'] = 'ID-nummer';
 $string['import'] = 'Importera';
 $string['importfile'] = 'CSV-fil med ramverksbeskrivning';
 $string['importfile_help'] = 'Ett kompetensramverk kan importeras via textfil. Formatet kan fastställas genom att skapa ett kompetensramverk och sedan exportera det.';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = 'Importerar fil';
 $string['invalidimportfile'] = 'Filformat är ogiltigt';
 $string['isframework'] = 'Är ramverk';

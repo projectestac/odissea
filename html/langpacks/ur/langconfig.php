@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'ur', version '3.11'.
+ * Strings for component 'langconfig', language 'ur', version '4.1'.
  *
  * @package     langconfig
  * @category    string
@@ -27,13 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['alphabet'] = 'ا،ٓ،ب،پ،ت،ٹ،ث،ج،چ،ح،خ،د،ڈ،ذ،ر،ڑ،ز،ژ،س،ش،ص،ض،ط،ظ،ع،غ،ف،ق،ک،گ،ل،م،ن،ں،و،ہ،ت،ھ،ء،ی،ے';
 $string['backupnameformat'] = '';
-$string['decsep'] = '.';
-$string['firstdayofweek'] = '0';
-$string['listsep'] = ';';
+$string['decsep'] = '۔';
+$string['firstdayofweek'] = '1';
+$string['iso6391'] = 'en';
+$string['iso6392'] = 'eng';
+$string['labelsep'] = ':';
+$string['listsep'] = ',';
 $string['locale'] = 'ur_PK.UTF-8';
-$string['localewin'] = 'Urdu_Islami Jamhuria Pakistan.1256';
-$string['localewincharset'] = 'WINDOWS-1256';
-$string['oldcharset'] = 'WINDOWS-1256';
+$string['localecldr'] = 'en-PK';
+$string['localewin'] = 'اردو_اسلامی جمہوریہ پاکستان۔1256';
+$string['localewincharset'] = 'ونڈوز- 1256';
+$string['oldcharset'] = 'ISO-8859-1';
 $string['strftimedate'] = '%d %B %Y';
 $string['strftimedateshort'] = '%d %B';
 $string['strftimedatetime'] = '%d %B %Y, %I:%M %p';
@@ -46,6 +50,7 @@ $string['strftimerecent'] = '%d %b, %H:%M';
 $string['strftimerecentfull'] = '%a, %d %b %Y, %I:%M %p';
 $string['strftimetime'] = '%I:%M %p';
 $string['thisdirection'] = 'rtl';
+$string['thisdirectionvertical'] = 'btt';
 $string['thislanguage'] = 'اردو';
 $string['thislanguageint'] = 'Urdu';
 $string['thousandssep'] = ',';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'ja', version '3.11'.
+ * Strings for component 'tool_customlang', language 'ja', version '4.1'.
  *
  * @package     tool_customlang
  * @category    string
@@ -47,6 +47,7 @@ $string['confirmcheckin'] = 'あなたは修正をローカル言語パックに
 $string['customlang:edit'] = 'ローカル翻訳を編集する';
 $string['customlang:export'] = 'ローカル翻訳をエクスポートする';
 $string['customlang:view'] = 'ローカル翻訳を表示する';
+$string['editlangpack'] = '言語パックを編集する';
 $string['export'] = 'カスタムストリングをエクスポートする';
 $string['exportfilter'] = 'エクスポートするコンポーネントを選択する';
 $string['exportzipfilename'] = 'customlang-export-{$a->lang}.zip';

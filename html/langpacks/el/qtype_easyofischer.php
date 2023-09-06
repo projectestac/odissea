@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyofischer', language 'el', version '3.11'.
+ * Strings for component 'qtype_easyofischer', language 'el', version '4.1'.
  *
  * @package     qtype_easyofischer
  * @category    string
@@ -32,13 +32,14 @@ $string['answerno'] = 'Απάντηση {$a}';
 $string['author'] = 'Από τον Carl LeBlond';
 $string['configeasyofischeroptions'] = '';
 $string['correctansweris'] = 'Η σωστή απάντηση είναι: {$a}.';
-$string['correctanswers'] = '<b>Ιδρύματα</b>';
+$string['correctanswers'] = '<b>Οδηγίες</b>';
 $string['insert'] = 'Εισαγωγή από τον επεξεργαστή κειμένου';
 $string['insertfromeditor'] = 'Εισαγωγή από τον επεξεργαστή κειμένου';
 $string['instructions'] = '';
 $string['javaneeded'] = 'Για να χρησιμοποιήσετε αυτή τη σελίδα χρειάζεστε έναν περιηγητή με δυνατότητα Java. Κάντε λήψη του πιο πρόσφατου πρόσθετου Java από {$a}.';
 $string['notenoughanswers'] = 'Αυτός ο τύπος ερώτησης απαιτεί τουλάχιστον {$a} απαντήσεις';
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
+$string['pluginname_link'] = 'question/type/easyofischer';
 $string['rotationallowed'] = 'Επιτρέπεται η περιστροφή.';
 $string['staggered'] = 'Τμηματικά';
 $string['youranswer'] = 'Η απάντησή σας: {$a}';

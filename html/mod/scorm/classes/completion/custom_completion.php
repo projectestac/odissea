@@ -189,7 +189,7 @@ class custom_completion extends activity_custom_completion {
             $statusrequired = $statusstrings[$completionstatusid];
         } else {
             // All statuses required.
-            $statusrequired = 'completedandpassed';
+            $statusrequired = 'completedorpassed';
         }
 
         return [
@@ -210,6 +210,7 @@ class custom_completion extends activity_custom_completion {
             'completionstatusallscos',
             'completionstatusrequired',
             'completionusegrade',
+            'completionpassgrade',
             'completionscorerequired',
         ];
     }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_text', language 'it', version '3.11'.
+ * Strings for component 'datafield_text', language 'it', version '4.1'.
  *
  * @package     datafield_text
  * @category    string
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'Testo breve';
 $string['pluginname'] = 'Testo breve';
 $string['privacy:metadata'] = 'Il plugin Testo breve non memorizza dati personali, utilizza tabelle definite in mod_data.';
+$string['sample'] = 'Questo è un campo breve di testo';

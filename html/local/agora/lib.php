@@ -20,41 +20,48 @@ function is_alexandria() {
     return isset($CFG->isalexandria) && $CFG->isalexandria;
 }
 
-function is_xtecadmin($user=null) {
+function is_xtecadmin($user = null) {
     global $USER;
     if (empty($user)) {
         $user = $USER;
     }
 
-    return isset($user->username) && $user->username == 'xtecadmin';
+    return isset($user->username) && $user->username === 'xtecadmin';
 }
 
+/**
+ * @throws coding_exception
+ * @throws require_login_exception
+ * @throws moodle_exception
+ */
 function require_xtecadmin($canbesiteadmin = false) {
     require_login(0, false);
     if (!$canbesiteadmin) {
         if (!is_xtecadmin()) {
-            print_error('noxtecadmin');
+            throw new \moodle_exception('noxtecadmin', 'local_agora');
         }
     } else {
         if (is_agora() && !is_xtecadmin()) {
-            print_error('noxtecadmin');
+            throw new \moodle_exception('noxtecadmin', 'local_agora');
         }
         if (!is_siteadmin()) {
-            print_error('no_siteadmin');
+            throw new \moodle_exception('noxtecadmin', 'local_agora');
         }
     }
 
 }
 
-function get_protected_agora() {
-    global $CFG, $USER;
+function get_protected_agora(): bool {
     return !is_agora() || is_xtecadmin();
 }
 
+/**
+ * @throws moodle_exception
+ */
 function require_not_rush_hour() {
     global $CFG;
     if (!get_protected_agora() && is_rush_hour()) {
-         print_error('rush_hour', 'local_agora', $CFG->wwwroot);
+        throw new \moodle_exception('rush_hour', 'local_agora', $CFG->wwwroot);
     }
 }
 
@@ -62,13 +69,13 @@ function get_debug() {
     global $CFG;
 
     // Get the cookie (only changes if the cookie is enabled), if not, takes default settings
-    if (isset($_COOKIE['agora_debug']) && $_COOKIE['agora_debug'] == 1) {
-            $CFG->debug = E_ALL | E_STRICT;
-            $CFG->debugdisplay = 1;
-            $CFG->showcrondebugging = true;
-            error_reporting($CFG->debug);
-            @ini_set('display_errors', '1');
-            @ini_set('log_errors', '0');
+    if (isset($_COOKIE['agora_debug']) && $_COOKIE['agora_debug'] === '1') {
+        $CFG->debug = E_ALL | E_STRICT;
+        $CFG->debugdisplay = 1;
+        $CFG->showcrondebugging = true;
+        error_reporting($CFG->debug);
+        @ini_set('display_errors', '1');
+        @ini_set('log_errors', '0');
     }
 }
 
@@ -88,7 +95,7 @@ function run_cli($command, $outputfile = false, $append = true, $background = tr
         }
     }
 
-    $cmd = (isset($CFG->clicommand)) ? $CFG->clicommand : 'php';
+    $cmd = $CFG->clicommand ?? 'php';
     $command = 'nohup ' . $cmd . ' ' . $command;
     $command .= ($append) ? ' >> ' : ' > ';
 
@@ -122,6 +129,9 @@ function run_cli($command, $outputfile = false, $append = true, $background = tr
     return $returnvar;
 }
 
+/**
+ * @throws coding_exception
+ */
 function check_cron_run() {
     global $CFG;
 
@@ -142,15 +152,19 @@ function check_cron_run() {
 }
 
 // Executes a cron via CLI
+/**
+ * @throws moodle_exception
+ * @throws coding_exception
+ * @throws dml_exception
+ */
 function run_cli_cron($background = true) {
     global $CFG, $DB;
 
     if (!empty($CFG->cronremotepassword)) {
         $pass = optional_param('password', '', PARAM_RAW);
-        if ($pass != $CFG->cronremotepassword) {
+        if ($pass !== $CFG->cronremotepassword) {
             // wrong password.
-            print_error('cronerrorpassword', 'admin');
-            exit(1);
+            throw new \moodle_exception('cronerrorpassword', 'admin', $CFG->wwwroot);
         }
     }
 
@@ -164,7 +178,7 @@ function run_cli_cron($background = true) {
         exit(1);
     }
 
-    $command = $CFG->admin.'/cli/cron.php';
+    $command = $CFG->admin . '/cli/cron.php';
 
     $force = optional_param('forcecron', false, PARAM_BOOL);
     if ($force) {
@@ -172,41 +186,41 @@ function run_cli_cron($background = true) {
         echo "Moodle cron forced.\n";
     }
 
-    $outputfile = false;
+    $outputfile = '';
 
-    $savecronlog = (isset($CFG->savecronlog)) ? $CFG->savecronlog : $DB->get_field('config', 'value', ['name' => 'savecronlog']);
+    $savecronlog = $CFG->savecronlog ?? $DB->get_field('config', 'value', ['name' => 'savecronlog']);
 
     if (!empty($savecronlog)) {
         $outputdir = get_admin_datadir_folder('crons', false);
-        $outputfile = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ymd").'.log';
+        $outputfile = $outputdir . '/cron_' . $CFG->siteidentifier . '_' . date("Ymd") . '.log';
 
         // Zip old files
-        $search = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Y", strtotime("-1 day"));
-        foreach (glob($search.'*.log') as $filename) {
-            if ($outputfile != $filename) {
-                // If not is current cron file, zip it
-                $gzfilename = $filename.'.gz';
-                $fp = gzopen ($gzfilename, 'w9');
-                gzwrite ($fp, file_get_contents($filename));
+        $search = $outputdir . '/cron_' . $CFG->siteidentifier . '_' . date("Y", strtotime("-1 day"));
+        foreach (glob($search . '*.log') as $filename) {
+            if ($outputfile !== $filename) {
+                // If not is current cron file, zip it.
+                $gzfilename = $filename . '.gz';
+                $fp = gzopen($gzfilename, 'w9');
+                gzwrite($fp, file_get_contents($filename));
                 gzclose($fp);
                 if (filesize($gzfilename) > 0) {
-                    // If gz file is created, remove unzipped origin file
+                    // If gz file is created, remove unzipped origin file.
                     unlink($filename);
                 }
             }
         }
 
         // Erase old files
-        $search = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ym", strtotime("-2 month"));
-        foreach (glob($search.'*.log.gz') as $filename) {
+        $search = $outputdir . '/cron_' . $CFG->siteidentifier . '_' . date("Ym", strtotime("-2 month"));
+        foreach (glob($search . '*.log.gz') as $filename) {
             unlink($filename);
         }
     }
-    $append = true;
 
     mtrace('Cron is being executed in background by CLI...');
 
-    run_cli($command, $outputfile, $append, $background);
+    run_cli($command, $outputfile, true, $background);
+
 }
 
 /**
@@ -215,7 +229,7 @@ function run_cli_cron($background = true) {
  * @global Object $CFG
  * @return Boolean true if restrictions apply, false otherwise.
  */
-function is_rush_hour() {
+function is_rush_hour(): bool {
     global $CFG;
 
     // If param is not defined or is false, there's no rush hour.
@@ -224,10 +238,12 @@ function is_rush_hour() {
     }
 
     // Get the hour frames
-    if (!isset($CFG->hour_restrictions) || empty($CFG->hour_restrictions)) {
+    if (empty($CFG->hour_restrictions)) {
         // Default values
-        $timeframes = array(array('start' => '9:00', 'end' => '13:59', 'days' => '1|2|3|4|5'),
-                            array('start' => '15:00', 'end' => '16:59', 'days' => '1|2|3|4|5'));
+        $timeframes = [
+            ['start' => '9:00', 'end' => '13:59', 'days' => '1|2|3|4|5'],
+            ['start' => '15:00', 'end' => '16:59', 'days' => '1|2|3|4|5'],
+        ];
     } else {
         // Check for serialized data in $CFG->hour_restrictions
         $data = @unserialize($CFG->hour_restrictions);
@@ -250,12 +266,12 @@ function is_rush_hour() {
         $days = explode('|', $frame['days']);
 
         // Check if "today" is in the list of allowed days
-        if (!in_array($weekday, $days)) {
+        if (!in_array($weekday, $days, true)) {
             continue;
         }
 
-        $startminutes = ((int) $start[0] * 60) + (int) $start[1];
-        $endminutes = ((int) $end[0] * 60) + (int) $end[1];
+        $startminutes = ((int)$start[0] * 60) + (int)$start[1];
+        $endminutes = ((int)$end[0] * 60) + (int)$end[1];
 
         // Check if current time is in the frame
         if (($nowminutes >= $startminutes) && ($nowminutes < $endminutes)) {
@@ -268,16 +284,16 @@ function is_rush_hour() {
 
 /**
  * Check if specified module/block name is enabled
+ *
  * @param String $mod module name
  * @return Boolean True if specified module name is enabled and false otherwise.
  *
  * @author sarjona
  **/
-function is_enabled_in_agora ($mod) {
+function is_enabled_in_agora(string $mod): bool {
     if (is_agora()) {
         // Disabled in all Agora Moodles
-        if ($mod == 'classic' || $mod == 'clean' || $mod == 'more' || $mod == 'canvas' || $mod == 'base' ||
-            $mod == 'chat' || $mod == 'alfresco' || $mod == 'tinymce') {
+        if ($mod === 'classic' || $mod === 'chat' || $mod === 'bigbluebuttonbn' || $mod === 'tinymce') {
             return false;
         }
     }
@@ -286,31 +302,31 @@ function is_enabled_in_agora ($mod) {
 
 function local_agora_extend_navigation(global_navigation $navigation) {
     global $DB, $CFG;
-    if (isloggedin() && is_service_enabled('nodes') && $DB->record_exists('oauth_clients', array('client_id' => 'nodes'))) {
-        $nodesurl = $CFG->wwwroot.'/local/agora/login_service.php?service=nodes';
-        $icon = new pix_icon('i/permissions', "");
+    if (isloggedin() && is_service_enabled('nodes') && $DB->record_exists('oauth_clients', ['client_id' => 'nodes'])) {
+        $nodesurl = $CFG->wwwroot . '/local/agora/login_service.php?service=nodes';
+        $icon = new pix_icon('i/permissions', '');
         $navigation->add(get_string('login_nodes', 'local_agora'), $nodesurl, navigation_node::TYPE_SETTING, null, get_string('login_nodes', 'local_agora'), $icon);
     }
 }
 
-function is_service_enabled($service) {
+function is_service_enabled($service): bool {
     if (!is_agora()) {
         return false;
     }
 
     global $school_info;
-    return isset($school_info['id_'.$service]) && !empty($school_info['id_'.$service]);
+    return isset($school_info['id_' . $service]) && !empty($school_info['id_' . $service]);
 }
 
 function get_service_url($service) {
     global $agora, $CFG;
 
     if (isset($agora['server']) && is_service_enabled($service)) {
-        if ($service == 'nodes') {
+        if ($service === 'nodes') {
             return $agora['server']['nodes'] . $agora['server']['base'] . $CFG->dnscentre . '/';
-        } else {
-            return $agora['server']['server'] . $agora['server']['base'] . $CFG->dnscentre . '/' . $service . '/';
         }
+
+        return $agora['server']['server'] . $agora['server']['base'] . $CFG->dnscentre . '/' . $service . '/';
     }
 
     return false;
@@ -331,7 +347,7 @@ function get_admin_datadir($exceptiononerror = true) {
     if (isset($agora['admin']['datadir'])) {
         $dir = $agora['server']['root'] . $agora['admin']['datadir'] . '/data/moodle2/' . $CFG->siteidentifier;
     } else {
-        $dir = $CFG->dataroot.'/repository/files';
+        $dir = $CFG->dataroot . '/repository/files';
     }
     $CFG->admindatadir = make_writable_directory($dir, $exceptiononerror);
 
@@ -350,9 +366,9 @@ function get_moodle2_admin_datadir($exceptiononerror = true) {
         return $CFG->moodle2admindatadir;
     }
     if (isset($agora['admin']['datadir'])) {
-        $dir = $agora['server']['root'].'/'.$agora['admin']['datadir'].'/data/moodle2';
+        $dir = $agora['server']['root'] . '/' . $agora['admin']['datadir'] . '/data/moodle2';
     } else {
-        $dir = $CFG->dataroot.'/repository/files';
+        $dir = $CFG->dataroot . '/repository/files';
     }
     $CFG->moodle2admindatadir = make_writable_directory($dir, $exceptiononerror);
     return $CFG->moodle2admindatadir;
@@ -368,7 +384,7 @@ function get_moodle2_admin_datadir($exceptiononerror = true) {
 function get_admin_datadir_folder($folder = '', $exceptiononerror = true) {
     $directory = get_admin_datadir($exceptiononerror);
     if ($directory && !empty($folder)) {
-        $directory .= '/'.$folder;
+        $directory .= '/' . $folder;
         $directory = make_writable_directory($directory, $exceptiononerror);
     }
 
@@ -385,7 +401,7 @@ function get_admin_datadir_folder($folder = '', $exceptiononerror = true) {
 function get_moodle2_admin_datadir_folder($folder = '', $exceptiononerror = true) {
     $directory = get_moodle2_admin_datadir($exceptiononerror);
     if ($directory && !empty($folder)) {
-        $directory .= '/'.$folder;
+        $directory .= '/' . $folder;
         $directory = make_writable_directory($directory, $exceptiononerror);
     }
 
@@ -408,13 +424,13 @@ function get_colors_from_nodes($solveerrors = false) {
             $paleta = $colors_nodes[$paleta];
             $colors = array(
                 'color' => $paleta['secondary'],
-                'logo_color' => $paleta['primary']
+                'logo_color' => $paleta['primary'],
             );
             if ($solveerrors) {
-                set_config('color2', $colors['color'], 'theme_xtec2020');
-                set_config('color4', $colors['color'], 'theme_xtec2020');
-                set_config('color5', $colors['color'], 'theme_xtec2020');
-                set_config('logo_color', $colors['logo_color'], 'theme_xtec2020');
+                set_config('color2', $colors['color'], 'theme_xtecboost');
+                set_config('color4', $colors['color'], 'theme_xtecboost');
+                set_config('color5', $colors['color'], 'theme_xtecboost');
+                set_config('logo_color', $colors['logo_color'], 'theme_xtecboost');
             }
             //$db->dispose();
             return $colors;
@@ -424,10 +440,10 @@ function get_colors_from_nodes($solveerrors = false) {
     }
 
     if ($solveerrors) {
-        set_config('colorset', 'PEDC', 'theme_xtec2020');
-        set_config('color2', '#FF494E', 'theme_xtec2020');
-        set_config('color4', '#007377', 'theme_xtec2020');
-        set_config('color5', '#910048', 'theme_xtec2020');
+        set_config('colorset', 'PEDC', 'theme_xtecboost');
+        set_config('color2', '#FF494E', 'theme_xtecboost');
+        set_config('color4', '#007377', 'theme_xtecboost');
+        set_config('color5', '#910048', 'theme_xtecboost');
     }
     return false;
 }
@@ -472,14 +488,14 @@ function external_db($service) {
         throw new dml_exception('dbdriverproblem', "Unknown driver $library/$dbtype");
     }
 
-    $host = $school_info['dbhost_'.$service];
+    $host = $school_info['dbhost_' . mb_strtolower($service)];
     $username = $agora[$service]['username'];
     $password = $agora[$service]['userpwd'];
     $prefix = $agora[$service]['prefix'];
     if (!empty($prefix)) {
         $prefix .= '_';
     }
-    $dbname = $agora[$service]['userprefix'].$school_info['id_'.$service];
+    $dbname = $agora[$service]['userprefix'] . $school_info['id_' . mb_strtolower($service)];
 
     try {
         if ($handler->connect($host, $username, $password, $dbname, $prefix, $options)) {
@@ -490,7 +506,7 @@ function external_db($service) {
 
         }
     } catch (Exception $e) {
-        debugging('Error connecting external DB '.$service);
+        debugging('Error connecting external DB ' . $service);
         debugging($e->getMessage());
         $DBHANDLERS[$service] = false;
         return false;

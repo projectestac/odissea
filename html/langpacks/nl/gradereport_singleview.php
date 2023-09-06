@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'nl', version '3.11'.
+ * Strings for component 'gradereport_singleview', language 'nl', version '4.1'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -26,21 +26,27 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all_grades'] = 'Alle cijfers';
+$string['ariareporttype'] = 'Selecteer een rapporttype om te bekijken';
 $string['assessmentname'] = 'Beoordelingsitem';
 $string['blanks'] = 'Lege cijfers';
 $string['bulkappliesto'] = 'Voor';
+$string['bulkchoice'] = 'Met bulkinvoer kunt je meerdere cijfers tegelijk vervangen. Kies de cijfers die je wil vervangen:';
 $string['bulkfor'] = 'Cijfers voor {$a}';
-$string['bulkinsertvalue'] = 'Waarde invoegen';
-$string['bulklegend'] = 'Bulk invoegen';
+$string['bulkinsertvalue'] = 'Nieuw cijfer invoegen';
+$string['bulklegend'] = 'Bulk cijfers invoegen';
 $string['bulkperform'] = 'Bulk invoegen uitvoeren';
 $string['entrypage'] = 'Beoordeel gebruiker of beoordelingsitem';
 $string['eventgradereportviewed'] = 'Alleen bekijken rapport bekeken.';
 $string['exclude'] = 'Uitsluiten';
 $string['excludeall'] = 'Alle cijfers uitsluiten';
+$string['excludeallgrades'] = 'Sluit alles uit';
 $string['excludefor'] = 'Uitsluiten voor {$a}';
 $string['excludenone'] = 'Geen cijfers uitsluiten';
+$string['excludenonegrades'] = 'Sluit geen uit';
 $string['feedbackfor'] = 'Feedback voor {$a}';
 $string['filtergrades'] = 'Toon cijfers voor {$a}';
+$string['gotonextreport'] = 'Ga naar het volgende gebruikersrapport';
+$string['gotopreviousreport'] = 'Ga naar vorig gebruikersrapport';
 $string['gradefor'] = 'Cijfer voor {$a}';
 $string['gradeitem'] = 'Beoordeel item: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Dit cijfer kan niet overschreven worden.';
@@ -50,17 +56,30 @@ $string['noscreens'] = 'Kon geen geschikt enkelvoudig scherm vinden.';
 $string['notvalid'] = 'Ongeldig enkelvoudig scherm: {$a}';
 $string['override'] = 'Overschrijf';
 $string['overrideall'] = 'Overschrijf alle cijfers';
+$string['overrideallgrades'] = 'Overschrijf alles';
 $string['overridefor'] = 'Overschrijf voor {$a}';
 $string['overridenone'] = 'Overschrijf geen cijfers';
-$string['overridenoneconfirm'] = 'Je probeert alle cijferoverschrijvingen uit te schakelen. Na het bewaren zullen alle voorheen overschreven cijfers verloren gaan. Wil je verder gaan?';
+$string['overridenoneconfirm'] = 'Alle cijferoverschrijvingen op deze pagina zullen verwijderd worden als de wijzigingen bewaart.';
+$string['overridenonegrades'] = 'Overschrijf niets';
 $string['pluginname'] = 'Enkelvoudig scherm';
 $string['privacy:metadata'] = 'Het rapport cijfer (enkele weergave)  toont alleen gegevens die op andere locaties zijn opgeslagen.';
+$string['removeoverride'] = 'Verwijder cijferoverschrijvingen';
+$string['removeoverridesave'] = 'Overschrijvingen verwijderen';
 $string['save'] = 'Bewaar';
 $string['savegrades'] = 'Cijfers bewaren';
 $string['savegradessuccess'] = 'Cijfers zijn voor {$a} items ingesteld';
-$string['selectgrade'] = 'Selecteer beoordelingsitem...';
-$string['selectuser'] = 'Selecteer gebruiker...';
-$string['singleview:view'] = 'Bekijk rapport';
+$string['searchgrades'] = 'Cijferitems zoeken';
+$string['selectagrade'] = 'Selecteer een cijferitem';
+$string['selectgradeitemlink'] = 'Selecteer een cijfer-item';
+$string['singleview:view'] = 'Bekijk enkel';
+$string['singleviewdescription'] = 'In enkele weergave kun je geselecteerde cijfers overschrijven of uitsluiten en cijfers in bulk invoegen.';
 $string['summarygrade'] = 'Een tabel met gebruikers, met kolommen voor bereik, cijfer, feedback en of bepaalde cijfers moeten overschreven of uitgesloten worden.';
 $string['summaryuser'] = 'Een tabel met beoordelingsitems, met kolommen voor cijfercategorie, bereik, cijfer feedback en of bepaalde cijfers moeten overschreven of uitgesloten worden.';
+$string['unsavedataalert'] = 'Als je niet-opgeslagen wijzigingen op de pagina hebt, verlies je die als je doorgaat met bulk invoegen van cijfers.';
+$string['unsavedataconfirm'] = 'Ik begrijp dat mijn niet-opgeslagen wijzigingen verloren gaan.';
+$string['unsaveddatawarning'] = 'Waarschuwing niet-opgeslagen gegevens';
 $string['userselect'] = 'Selecteer activiteit';
+$string['viewby'] = 'Bekijken per';
+$string['viewsinglegradeitem'] = 'Selecteer hierboven een cijferitem';
+$string['viewsingleuser'] = 'Selecteer hierboven een gebruiker van wie je alle cijfers wil bekijken';
+$string['viewsingleuserorgradeitem'] = 'Bekijk alle cijfers van een enkele gebruiker of cijferitem.';

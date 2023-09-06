@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'sv', version '3.11'.
+ * Strings for component 'imscp', language 'sv', version '4.1'.
  *
  * @package     imscp
  * @category    string
@@ -35,10 +35,12 @@ $string['indicator:cognitivedepth'] = 'IMS kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en IMS innehållspaket-resurs.';
 $string['indicator:cognitivedepthdef'] = 'IMS kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av IMS-aktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'IMS social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en IMS innehållspaket-resurs.';
 $string['indicator:socialbreadthdef'] = 'IMS social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av IMS paket-resurserna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = 'Arkivera paket';
 $string['keepoldexplain'] = 'Hur många paket ska arkiveras?';
 $string['modulename'] = 'IMS-innehållspaket';
@@ -47,6 +49,7 @@ $string['modulename_help'] = 'Ett IMS-innehållspaket är en samling filer som �
 Innehåll visas vanligtvis över flera sidor, med navigering mellan sidorna. Det finns olika alternativ för att visa innehåll i ett popup-fönster, med en navigeringsmeny eller knappar etc.
 
 Ett IMS-innehållspaket kan användas för att presentera multimediainnehåll och -animeringar.';
+$string['modulename_link'] = 'mod/imscp/view';
 $string['modulenameplural'] = 'IMS-innehållspaket';
 $string['navigation'] = 'Navigering';
 $string['packagefile'] = 'Paketfil';

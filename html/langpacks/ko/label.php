@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ko', version '3.11'.
+ * Strings for component 'label', language 'ko', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -30,10 +30,13 @@ $string['dndresizeheight'] = '드래그 드롭 높이 조정';
 $string['dndresizewidth'] = '드래그 드롭 폭 조정';
 $string['dnduploadlabel'] = '강좌 페이지에 이미지 추가';
 $string['dnduploadlabeltext'] = '강좌 페이지에 라벨 추가';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = '새 라벨 추가';
 $string['labeltext'] = '표지 내용';
 $string['modulename'] = '표지';
 $string['modulename_help'] = '표지는 강좌 페이지에 활동 연결고리를 통해 사진 및 문서가 삽입될 수 있게 한다.';
+$string['modulename_link'] = 'mod/label/view';
 $string['modulenameplural'] = '표지모음';
 $string['pluginadministration'] = '표지 관리';
 $string['pluginname'] = '표지';

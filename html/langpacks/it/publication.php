@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'it', version '3.11'.
+ * Strings for component 'publication', language 'it', version '4.1'.
  *
  * @package     publication
  * @category    string
@@ -33,7 +33,7 @@ $string['allowedfiletypes_help'] = 'È possibile limitare i tipi di file accetta
 $string['allowsubmissionsanddescriptionfromdatesummary'] = 'I dettagli della consegna e l’area di consegna saranno disponibili dal <strong>{$a}</strong>.';
 $string['allowsubmissionsfromdate'] = 'Dal';
 $string['allowsubmissionsfromdate_import'] = 'Possibilità di approvazione da';
-$string['allowsubmissionsfromdate_upload'] = 'Possibilità di caricamento file dal';
+$string['allowsubmissionsfromdate_upload'] = 'Apertura caricamento file';
 $string['allowsubmissionsfromdateh'] = 'Periodo di caricamento/approvazione';
 $string['allowsubmissionsfromdateh_help'] = 'Puoi definire il periodo di tempo durante il quale gli studenti possono caricare file o dare il loro consenso per la pubblicazione dei file. Durante questo periodo gli studenti possono modificare i loro file e anche ritirare il proprio consenso per la pubblicazione.';
 $string['allowsubmissionsfromdatesummary'] = 'Sarà possibile consegnare dal <strong>{$a}</strong>';
@@ -42,7 +42,7 @@ $string['alwaysshowdescription_help'] = 'Se disattivato, la descrizione della co
 $string['approval_timeover'] = 'Non è più possibile modificare l’approvazione.';
 $string['approvalchange'] = 'Stato di approvazione modificato';
 $string['approved'] = 'Approvato';
-$string['approveusers'] = 'visibile a tutti';
+$string['approveusers'] = 'Visibile a tutti';
 $string['assignment'] = 'Compito';
 $string['assignment_help'] = 'Scegli il compito da cui importare i file. Al momento le consegne di gruppo non sono supportate.';
 $string['assignment_notfound'] = 'Il compito da cui sono stati importati i file non è più disponibile.';
@@ -61,6 +61,7 @@ $string['courseuploadlimit'] = 'Limite di caricamento del corso';
 $string['currentlynotapproved'] = '* Approvazione non ancora concessa né rifiutata';
 $string['cutoffdate'] = 'Data limite';
 $string['cutoffdate_import'] = 'Termine per l’approvazione';
+$string['cutoffdate_upload'] = 'Termine per il caricamento';
 $string['cutoffdatefromdatevalidation'] = 'La data limite dev’essere successiva alla data di apertura.';
 $string['cutoffdatevalidation'] = 'La data limite non può precedere la data di chiusura.';
 $string['details'] = 'Dettagli';
@@ -68,6 +69,7 @@ $string['downloadall'] = 'Scarica tutti i file come ZIP';
 $string['duedate'] = 'Al';
 $string['duedate_help'] = 'Dopo la data di chiusura, il caricamento sarà ancora possibile, ma la consegna sarà contrassegnata come in ritardo. Per impedire il caricamento dopo una certa data imposta la data limite.';
 $string['duedate_import'] = 'Termine per l’approvazione';
+$string['duedate_upload'] = 'Termine per il caricamento';
 $string['duedatevalidation'] = 'La data di chiusura dev’essere successiva alla data di apertura.';
 $string['edit_timeover'] = 'Non è più possibile modificare i file.';
 $string['edit_uploads'] = 'Carica/modifica file';
@@ -108,7 +110,7 @@ $string['maxbytes'] = 'Dimensione massima file';
 $string['maxfiles'] = 'Numero massimo di file caricabili';
 $string['mode'] = 'Modalità';
 $string['mode_help'] = 'Scegli se vuoi che gli studenti carichino i file o se vuoi usare un compito esistente come sorgente dei file.';
-$string['modeimport'] = 'Copia i file da una consegna';
+$string['modeimport'] = 'Copia i file da un compito';
 $string['modeupload'] = 'Gli studenti possono caricare file';
 $string['modulename'] = 'Cartella studenti';
 $string['modulename_help'] = 'L’attività cartella studenti può essere configurata in due modi:
@@ -139,15 +141,17 @@ $string['notifystudents_help'] = 'Se abilitato, gli studenti ricevono una notifi
 $string['notifyteacher'] = 'Invia ai valutatori notifiche al caricamento dei file';
 $string['notifyteacher_help'] = 'Se abilitato, i valutatori (di solito i docenti) ricevono una notifica ogni volta che uno studente carica un file. I metodi di notifica sono configurabili.';
 $string['obtainstudentapproval'] = 'Chiedi approvazione agli studenti';
-$string['obtainstudentapproval_help'] = 'Decidi se richiedere l’approvazione degli studenti: <br><ul><li> sì - i file saranno visibili solo dopo l’approvazione dello studente. Il docente può selezionare singoli studenti/file per cui richiedere l’approvazione.</li><li> no - il consenso dello studente non sarà richiesto via Moodle. La visibilità del file dipende solo dalla decisione del docente.</li></ul>';
+$string['obtainstudentapproval_help'] = 'Decidi se richiedere l’approvazione degli studenti. <br><ul><li> Sì: i file saranno visibili solo dopo l’approvazione dello studente. Il docente può selezionare singoli studenti/file per cui richiedere l’approvazione.</li><li> No: il consenso dello studente non sarà richiesto via Moodle. La visibilità del file dipende solo dalla decisione del docente.</li></ul>';
 $string['obtainteacherapproval'] = 'Approvazione di default';
-$string['obtainteacherapproval_help'] = 'Decidi se i file saranno immediatamente visibili dopo il caricamento: <br><ul><li> sì - i file saranno subito visibili a tutti;</li><li> no - i file saranno pubblicati solo dopo l’approvazione del docente.</li></ul>';
+$string['obtainteacherapproval_help'] = 'Decidi se i file saranno immediatamente visibili dopo il caricamento: <br><ul><li> sì: i file saranno subito visibili a tutti;</li><li> no: i file saranno pubblicati solo dopo l’approvazione del docente.</li></ul>';
 $string['optionalsettings'] = 'Opzioni';
 $string['pending'] = 'In attesa';
 $string['pluginadministration'] = 'Amministrazione cartella studenti';
 $string['pluginname'] = 'Cartella studenti';
 $string['privacy:path:files'] = 'file';
 $string['privacy:path:resources'] = 'risorse';
+$string['privacy:type:import'] = 'File importato';
+$string['privacy:type:onlinetext'] = 'Testo online importato';
 $string['privacy:type:upload'] = 'file caricato';
 $string['publication:addinstance'] = 'Aggiungi una nuova cartella studenti';
 $string['publication:approve'] = 'Scegli se i file saranno visibili a tutti gli studenti';
@@ -156,26 +160,45 @@ $string['publication:receiveteachernotification'] = 'Ricevi notifiche per docent
 $string['publication:upload'] = 'Carica file in una cartella studenti';
 $string['publication:view'] = 'Vedi cartella studenti';
 $string['publicfiles'] = 'File pubblicati';
+$string['published_aftercheck'] = 'No, solo dopo l’approvazione di un docente';
+$string['published_immediately'] = 'Sì, immediatamente, senza l’approvazione di un docente';
 $string['rejected'] = 'Rifiutato';
+$string['rejectusers'] = 'Nascosto a tutti';
 $string['requiremodintro'] = 'Richiedi descrizione dell’attività';
 $string['reset'] = 'Ripristina';
 $string['reset_userdata'] = 'Tutti i dati';
 $string['resetstudentapproval'] = 'Ripristina stato';
 $string['save_changes'] = 'Salva modifiche';
+$string['saveapproval'] = 'Salva approvazioni';
+$string['savestudentapprovalwarning'] = 'Vuoi salvare queste modifiche? Non potrai più cambiare lo stato di approvazione dopo averlo impostato.';
+$string['saveteacherapproval'] = 'Salva approvazioni';
 $string['search:activity'] = 'Cartella studenti - informazioni attività';
 $string['show_details'] = 'Mostra dettagli';
 $string['status'] = 'Stato';
+$string['status:approved'] = 'Approvato';
+$string['status:approvednot'] = 'Rifiutato';
+$string['student_approve'] = 'Approva';
+$string['student_approved'] = 'Approvato';
+$string['student_pending'] = 'Non visibile (non approvato)';
+$string['student_reject'] = 'Rifiuta';
+$string['student_rejected'] = 'Rifiutato';
 $string['studentapproval'] = 'Stato';
 $string['studentapproval_help'] = 'La colonna stato rappresenta la risposta degli studenti all’approvazione:
 
 * ? - approvazione in sospeso;
 * ✓ - approvazione data;
 * ✖ - approvazione rifiutata.';
+$string['teacher_approved'] = 'Visibile (approvato)';
+$string['teacher_pending'] = 'Conferma in sospeso';
 $string['teacher_rejected'] = 'rifiutato';
 $string['teacherapproval'] = 'Approvazione';
 $string['teacherapproval_help'] = 'Stato di approvazione della pubblicazione del file:<br /><ul><li>Scegli…: approvazione non ancora data né rifiutata, file non visibile.</li><li>Sì: approvazione data, file visibile.</li><li>No: approvazione rifiutata, file non visibile.</li></ul>';
+$string['total'] = 'Totale';
 $string['updatefiles'] = 'Aggiorna file';
 $string['uploaded'] = 'Caricato';
+$string['visibility'] = 'Visibile a tutti';
+$string['visible'] = 'Visibile';
+$string['visibleforstudents'] = 'Visibile a tutti';
 $string['visibleforstudents_no'] = 'Questo file non è visibile agli studenti';
 $string['visibleforstudents_yes'] = 'Gli studenti possono vedere questo file';
 $string['withselected'] = 'Con i selezionati…';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_checkbox', language 'es', version '3.11'.
+ * Strings for component 'datafield_checkbox', language 'es', version '4.1'.
  *
  * @package     datafield_checkbox
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo de selección';
+$string['fieldtypelabel'] = 'Casilla de selección';
 $string['pluginname'] = 'Casilla de selección';
 $string['privacy:metadata'] = 'El componente de campo de casilla de verificación no almacena ningún dato personal en sí mismo, utiliza tabla definidas en mod_data.';

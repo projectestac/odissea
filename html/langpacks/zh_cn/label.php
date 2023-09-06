@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'zh_cn', version '3.11'.
+ * Strings for component 'label', language 'zh_cn', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -37,15 +37,18 @@ $string['indicator:cognitivedepth'] = '标签资源认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在标签资源中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '标签认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到标签资源提供的认知参与百分比（级别=无视图，视图）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '标签资源社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在标签资源中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = '社会标签';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到标签资源提供的社会参与度的百分比（级别=无参与，仅参与者一人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = '添加新标签';
 $string['label:view'] = '视图标签';
 $string['labeltext'] = '标签文本';
 $string['modulename'] = '标签';
 $string['modulename_help'] = '使用标签可以在课程页面里的活动链接之间插入文字和图片。';
+$string['modulename_link'] = 'mod/label/view';
 $string['modulenameplural'] = '标签';
 $string['pluginadministration'] = '标签管理';
 $string['pluginname'] = '标签';

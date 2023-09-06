@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'eu', version '3.11'.
+ * Strings for component 'qtype_shortanswer', language 'eu', version '4.1'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughanswers'] = 'Galdera mota honek gutxienez {$a} erantzun behar 
 $string['pleaseenterananswer'] = 'Mesedez, idatzi erantzun bat.';
 $string['pluginname'] = 'Erantzun laburreko galdera';
 $string['pluginname_help'] = 'Irudi bat izan dezakeen galderaren erantzuna emateko ikasleak hitz bat edo esaldi motz bat idatzi behar du. Erantzun zuzen bat baino gehiago egon daiteke, bakoitzak kalifikazio ezberdin batekin. "Maiuskulak/minuskulak" bereiztea aukeratuz gero, kalifikazio ezberdinak izan ditzakete "Hitza" eta "hitza" erantzunek.';
+$string['pluginname_link'] = 'question/type/shortanswer';
 $string['pluginnameadding'] = 'Erantzun laburreko galdera bat gehitzen';
 $string['pluginnameediting'] = 'Editatu Erantzun laburreko galdera';
 $string['pluginnamesummary'] = 'Hitz bat edo hitz gutxiko erantzunak onartzen ditu eta komodinak izan ditzaketen hainbat erantzun-eredurekin alderatuta kalifikatzen da.';

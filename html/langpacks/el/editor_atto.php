@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'el', version '3.11'.
+ * Strings for component 'editor_atto', language 'el', version '4.1'.
  *
  * @package     editor_atto
  * @category    string
@@ -46,6 +46,7 @@ $string['privacy:metadata:database:atto_autosave:drafttext'] = 'Το κείμε�
 $string['privacy:metadata:database:atto_autosave:timemodified'] = 'Πότε τροποποιήθηκε το περιεχόμενο.';
 $string['privacy:metadata:database:atto_autosave:userid'] = 'Το αναγνωριστικό του χρήστη του οποίου τα δεδομένα αποθηκεύτηκαν.';
 $string['recover'] = 'Ανάκτηση';
+$string['richtexteditor'] = 'Επεξεργαστής εμπλουτισμένου κειμένου';
 $string['settings'] = 'Ρυθμίσεις της γραμμής εργαλείων Atto';
 $string['subplugintype_atto'] = 'Πρόσθετο Atto';
 $string['subplugintype_atto_plural'] = 'Πρόσθετα Atto';

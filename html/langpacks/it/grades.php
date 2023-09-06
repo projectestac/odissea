@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'it', version '3.11'.
+ * Strings for component 'grades', language 'it', version '4.1'.
  *
  * @package     grades
  * @category    string
@@ -63,16 +63,21 @@ $string['aggregation_help'] = 'L\'aggregazione determina la modalità di calcolo
 * Voto più alto
 * Moda dei voti - il voto ottenuto più frequentemente
 * Naturale . La somma di tutti i voti scalati da un peso.';
+$string['aggregation_link'] = 'grade/aggregation';
 $string['aggregationcoef'] = 'Coefficiente di aggregazione';
 $string['aggregationcoefextra'] = 'Credito extra';
 $string['aggregationcoefextra_help'] = 'Se l\'aggregazione è \'Naturale\' oppure \'Media pesata semplice\' e la casella credito extra è spuntata, allora il punteggio massimo dell\'elemento non sarà aggiunto al massimo punteggio della categoria. Questo comporterà la possibilità di ottenere il punteggio massimo per la categoria senza aver ottenuto il punteggio massimo in tutti gli elementi di valutazione. Se l\'amministratore del sito ha abilitato la funzionalità \'Voti privi di limiti\', potranno essere presenti punteggi superiori al punteggio massimo. Se l\'aggregazione è \'Media dei voti (con crediti extra)\' ed il credito extra ha un valore maggiore di zero, il credito extra sarà il valore per il quale sarà moltiplicato il punteggio prima di essere aggiunto al totale e dopo il calcolo della media.';
+$string['aggregationcoefextra_link'] = 'grade/aggregation';
 $string['aggregationcoefextrasum'] = 'Credito extra';
 $string['aggregationcoefextrasum_help'] = 'Selezionando "Credito extra", il punteggio massimo dell\'elemento di valutazione non sarà sommato al punteggio massimo della categoria, rendendo possibile il raggiungimento del punteggio massimo della categoria (o il voto privo di limiti se la funzione è stata abilitata dall\'amministratore) senza aver ottenuto il punteggio massimo in tutti gli elementi di valutazione.';
+$string['aggregationcoefextrasum_link'] = 'grade/aggregation';
 $string['aggregationcoefextrasumabbr'] = '+';
 $string['aggregationcoefextraweight'] = 'Peso credito extra';
 $string['aggregationcoefextraweight_help'] = 'Se il credito extra è un valore maggiore di zero, la valutazione fungerà da credito extra durante l\'aggregazione. Il numero rappresenta il fattore per il quale sarà moltiplicata la valutazione prima di essere aggiunta al totale utilizzato per il calcolo della media.';
+$string['aggregationcoefextraweight_link'] = 'grade/aggregation';
 $string['aggregationcoefweight'] = 'Peso dell\'elemento';
 $string['aggregationcoefweight_help'] = '<p>Peso applicato ai voti durante l\'aggregazione.</p>';
+$string['aggregationcoefweight_link'] = 'grade/aggregation';
 $string['aggregationhintdropped'] = '( Tralasciato )';
 $string['aggregationhintexcluded'] = '( Escluso )';
 $string['aggregationhintextra'] = '( Credito extra )';
@@ -101,6 +106,7 @@ $string['bulkcheckboxes'] = 'Selezioni in blocco';
 $string['calculatedgrade'] = 'Voto calcolato';
 $string['calculation'] = 'Calcolo';
 $string['calculation_help'] = 'Il calcolo delle valutazioni consente l\'aggregazione dei voti in base ad una formula. La formula deve iniziare con un segno uguale (=) e può usare i normali operatori matematici come max, min e sum. È anche possibile inserire ulteriori elementi di valutazione referenziandoli nella formula racchiudendo il loro codice identificativo tra doppie parentesi quadre.';
+$string['calculation_link'] = 'grade/calculation';
 $string['calculationadd'] = 'Aggiungi calcolo';
 $string['calculationedit'] = 'Modifica calcolo';
 $string['calculationsaved'] = 'Calcolo salvato';
@@ -147,6 +153,7 @@ $string['decimalpoints_help'] = 'Il numero di cifre decimali visualizzate nei vo
 $string['default'] = 'Default';
 $string['defaultprev'] = 'Default ({$a})';
 $string['deletecategory'] = 'Elimina categoria';
+$string['deletescale'] = 'Elimina scala';
 $string['disablegradehistory'] = 'Disabilita storico delle valutazioni';
 $string['disablegradehistory_help'] = 'Disabilita la registrazione storica delle modifiche nelle tabelle relative alle valutazioni. Questo può velocizzare un po\' il server e risparmiare spazio nel database.';
 $string['displaylettergrade'] = 'Visualizza graduatoria letterale';
@@ -212,6 +219,7 @@ $string['expand'] = 'Espandi categoria';
 $string['expandcriterion'] = 'Criterio di espansione';
 $string['export'] = 'Esporta';
 $string['exportalloutcomes'] = 'Esporta tutti gli obiettivi';
+$string['exportas'] = 'Esporta come';
 $string['exportfeedback'] = 'Includi feedback';
 $string['exportfeedback_desc'] = 'È possibile eseguire variazioni durante l\'esportazione.';
 $string['exportformatoptions'] = 'Opzioni formati di esportazione';
@@ -260,6 +268,7 @@ $string['gradebookcalculationswarning'] = 'Nota: sono stati rilevati degli error
 Per ulteriori informazioni sulle modifiche tra la versione {$a->gradebookversion} e {$a->currentversion}. <a href="{$a->url}">Gradebook calculation changes</a>.';
 $string['gradebookhiddenerror'] = 'Al momento il registro è impostato in modo da non visualizzare nessun elemento agli studenti.';
 $string['gradebookhistories'] = 'Storico delle valutazioni';
+$string['gradebooknavigationmenu'] = 'Menu di navigazione registro delle valutazioni';
 $string['gradebooksetup'] = 'Impostazione registro valutatore';
 $string['gradeboundary'] = 'Soglia per il livello';
 $string['gradeboundary_help'] = 'Limite percentuale della valutazione al di sopra del quale verrà assegnato il corrispondente livello di graduatoria letterale.';
@@ -386,6 +395,7 @@ $string['identifier'] = 'Identifica utente con';
 $string['idnumbers'] = 'codici identificativi';
 $string['ignore'] = 'Ignora';
 $string['import'] = 'Importa';
+$string['importas'] = 'Importa come';
 $string['importcsv'] = 'Importazione CSV';
 $string['importcsv_help'] = 'Le valutazioni possono essere importate tramite un file CSV con il seguente formato:
 
@@ -395,8 +405,17 @@ $string['importcsv_help'] = 'Le valutazioni possono essere importate tramite un 
 * è obbligatorio un nome di campo che contenga l\'identificativo dell\'utente, ad esempio l\'indirizzo email oppure il codice identificativo
 
 Per avere un esempio di formato, è possibile esportare delle valutazioni esistenti. Il file così ottenuto può essere modificato e salvato come CSV.';
+$string['importcsv_link'] = 'grade/import/csv/index';
 $string['importcustom'] = 'Importa come obiettivi di questo corso';
 $string['importdata'] = 'Dati';
+$string['importdata_help'] = 'Le valutazioni possono essere incollate direttamente da un foglio di calcolo OpenDocument o Excel con il seguente formato:
+
+* Almeno una colonna deve contenere dati sull\'identità dell\'utente: username, indirizzo e-mail o codice identificativo
+* Altre colonne dovrebbero avere intestazioni di attività esistenti o elementi di valutazione.
+
+È possibile ottenere un foglio di calcolo correttamente formattato esportando prima alcuni voti. Il foglio di calcolo può quindi essere modificato per aggiungere più voti per poi salvarlo.
+
+Selezionare e copiare le colonne che si desidera importare dal foglio di lavoro, quindi incollarle in questo campo.';
 $string['importerror'] = 'Si è verificato un errore, questo script non è stato attivato con i giusti parametri.';
 $string['importfailed'] = 'L\'Importazione non è andata a buon fine. Nessun dato è stato importato.';
 $string['importfeedback'] = 'Importa feedback';
@@ -406,6 +425,7 @@ $string['importfrom'] = 'Importa da';
 $string['importoutcomenofile'] = 'Il file caricato è vuoto o difettoso. Verifica che sia un file valido. Il problema è stato rilevato alla riga {$a}, che non sembra avere lo stesso numero di colonne della prima riga (riga di testata) oppure il file importato manca della testata. Guarda un file esportato come esempio di file con una testata valida.';
 $string['importoutcomes'] = 'Importa obiettivi';
 $string['importoutcomes_help'] = 'Gli obiettivi possono essere importati via file csv con lo stesso formato dell\'esportazione.';
+$string['importoutcomes_link'] = 'grade/outcome';
 $string['importoutcomesuccess'] = 'Obiettivo importato "{$a->name}" con ID #{$a->id}';
 $string['importplugins'] = 'Plugin Importazione';
 $string['importpreview'] = 'Anteprima importazione';
@@ -452,6 +472,7 @@ $string['locktimedate'] = 'Bloccata a partire da: {$a}';
 $string['lockverbose'] = 'Blocca {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['lowest'] = 'Minimo';
 $string['lowgradeletter'] = 'Min';
+$string['manageoutcomes'] = 'Gestione obiettivi';
 $string['manualitem'] = 'Elemento manuale';
 $string['mapfrom'] = 'Mappa da';
 $string['mapfrom_help'] = 'Seleziona la colonna del foglio elettronico che contiene i dati utili per identificare l\'utente, ad esempio lo username, l\'id dell\'utente oppure l\'indirizzo email.';
@@ -472,6 +493,7 @@ $string['minimum_show_help'] = 'Il voto minimo viene usato nel calcolo delle val
 $string['minmaxtouse'] = 'Valutazione minima e massima utilizzata per i calcoli';
 $string['minmaxtouse_desc'] = 'Per il calcolo della valutazione visualizzata nel registro valutatore, è possibile scegliere di utilizzare la valutazione minima e massima iniziale oppure la valutazione minima e massima specificata nelle impostazioni dell\'elemento di valutazione. Si raccomanda di modificare questa impostazioni durante momenti di basso carico poiché il ricalcolo delle valutazioni può comportare un carico elevato sul server.';
 $string['minmaxtouse_help'] = 'Per il calcolo della valutazione visualizzata nel registro valutatore, è possibile scegliere di utilizzare la valutazione minima e massima iniziale oppure la valutazione minima e massima specificata nelle impostazioni dell\'elemento di valutazione';
+$string['minmaxtouse_link'] = 'Grades_min_max';
 $string['minmaxupgradedgrades'] = 'Nota: alcune valutazioni sono state modificate per ovviare a delle inconsistenze causate dal cambiamento delle valutazioni minime e massimo utilizzate per calcolare le valutazioni visualizzate.  Si raccomanda di rivedere i cambiamenti e di accettarli.';
 $string['minmaxupgradefixbutton'] = 'Risolvi le inconsistenze';
 $string['minmaxupgradewarning'] = 'Nota: in alcune valutazioni sono state rilevate delle inconsistenze causate dal cambiamento delle valutazioni minime e massimo utilizzate per calcolare le valutazioni visualizzate.  Si raccomanda di risolvere le inconsistenze cliccando sul pulsante sottostante, cosa che tuttavia comporterà variazioni nelle valutazioni.';
@@ -518,6 +540,7 @@ $string['mygrades'] = 'Link valutazioni nel menu utente';
 $string['mygrades_desc'] = 'Consente di collegare un registro valutatore esterno nel menu utente.';
 $string['mypreferences'] = 'Preferenze';
 $string['myreportpreferences'] = 'Preferenze';
+$string['myself'] = 'Me stesso';
 $string['navmethod'] = 'Modalità di navigazione';
 $string['neverdeletehistory'] = 'Non eliminare mai lo storico';
 $string['newcategory'] = 'Nuova categoria';
@@ -528,6 +551,8 @@ $string['nocategories'] = 'Categorie di valutazione non possono essere aggiunte 
 $string['nocategoryname'] = 'Manca il nome categoria.';
 $string['nocategoryview'] = 'Nessuna categoria utilizzabile per la visualizzazione';
 $string['nocourses'] = 'Non ci sono ancora corsi';
+$string['noexistingoutcomes'] = 'Non ci sonoobiettivi';
+$string['noexistingscales'] = 'Non ci sono scale.';
 $string['noforce'] = 'Non forzare';
 $string['nogradeletters'] = 'Graduatoria letterale non impostata';
 $string['nogradesreturned'] = 'Non è stata ottenuta alcuna valutazione';
@@ -535,7 +560,7 @@ $string['noidnumber'] = 'Nessun codice identificativo';
 $string['nolettergrade'] = 'Nessuna valutazione letterale per';
 $string['nomode'] = 'NA';
 $string['nonnumericweight'] = 'Ricevuto un valore non numerico per';
-$string['nonunlockableverbose'] = 'Questo voto non può essere sbloccata finché non sarà sbloccato l\'elemento {$a->itemname}.';
+$string['nonunlockableverbose'] = 'Per sbloccare questa valutazione si deve prima sbloccare {$a->itemname}.';
 $string['nonweightedpct'] = '% non pesata';
 $string['nooutcome'] = 'Nessun obiettivo';
 $string['nooutcomes'] = 'Gli elementi obiettivo devono essere collegati ad obiettivi di corso, ma non ci sono obiettivi in questo corso. Volete aggiungerne uno?';
@@ -555,6 +580,7 @@ $string['onascaleof'] = 'su una scala da {$a->grademin} a {$a->grademax}';
 $string['operations'] = 'Operazioni';
 $string['options'] = 'Opzioni';
 $string['others'] = 'Altri';
+$string['otheruser'] = 'Utente';
 $string['outcome'] = 'Obiettivo';
 $string['outcome_help'] = 'L\'obiettivo che questo elemento di valutazione rappresenta.';
 $string['outcomeassigntocourse'] = 'Assegna un altro obiettivo a questo corso';
@@ -694,11 +720,15 @@ $string['savechanges'] = 'Salva modifiche';
 $string['savepreferences'] = 'Salva preferenze';
 $string['scaleconfirmdelete'] = 'Sei sicuro di eliminare la scala "{$a}"?';
 $string['scaledpct'] = 'Scalatura %';
+$string['searchgroups'] = 'Cerca gruppi';
+$string['searchusers'] = 'Cerca utenti';
 $string['seeallcoursegrades'] = 'Vai alle valutazioni del corso';
 $string['select'] = 'Seleziona {$a}';
 $string['selectalloroneuser'] = 'Visualizza';
 $string['selectauser'] = 'Seleziona un utente';
 $string['selectdestination'] = 'Scegli la destinazione di {$a}';
+$string['selectgrouplink'] = 'Seleziona gruppo';
+$string['selectuserlink'] = 'Seleziona utente';
 $string['separator'] = 'Separatore';
 $string['separator_help'] = 'Selezionare il separatore utilizzato nel file CSV (in genere la virgola).';
 $string['sepcolon'] = 'due punti';
@@ -711,9 +741,11 @@ $string['setgradeletters'] = 'Imposta graduatoria letterale';
 $string['setpreferences'] = 'Imposta preferenze';
 $string['setting'] = 'Impostazione';
 $string['settings'] = 'Impostazioni';
+$string['setup'] = 'Impostazione';
 $string['setweights'] = 'Imposta pesi';
 $string['showactivityicons'] = 'Visualizza icone attività';
 $string['showactivityicons_help'] = 'Visualizza, oltre al nome, anche l\'icona rappresentativa del modulo di attività.';
+$string['showallgrades'] = 'Visualizza tutte le valutazioni';
 $string['showallhidden'] = 'Visualizza voti nascosti';
 $string['showallstudents'] = 'Visualizza tutti gli studenti';
 $string['showanalysisicon'] = 'Visualizza icona Analisi delle valutazioni';
@@ -836,6 +868,7 @@ $string['userpreferences'] = 'Preferenze utente';
 $string['useweighted'] = 'Usa pesi';
 $string['verbosescales'] = 'Scale letterali';
 $string['verbosescales_help'] = 'Una scala letterale utilizza parole al posto dei numeri. Impostare a \'Si" per importare sia le scale numeriche sia le scale letterali. Impostare a \'No\' per importare solamente le scale numeriche.';
+$string['viewas'] = 'Visualizza report come';
 $string['viewbygroup'] = 'Gruppo';
 $string['viewgrades'] = 'Visualizza valutazioni';
 $string['weight'] = 'Peso';

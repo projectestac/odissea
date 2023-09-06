@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'pt', version '3.11'.
+ * Strings for component 'cohort', language 'pt', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -36,6 +36,7 @@ $string['bulkadd'] = 'Adicionar a Grupo global';
 $string['bulknocohort'] = 'Não foram encontrados Grupos globais';
 $string['categorynotfound'] = 'A categoria <b>{$a}</b> não foi encontrada ou não tem permissão para criar um Grupo global nessa localização. Será usado o contexto predefinido.';
 $string['cohort'] = 'Grupo global';
+$string['cohortmember'] = 'Membro de Grupo global';
 $string['cohorts'] = 'Grupos globais';
 $string['cohortsin'] = '{$a}: Grupos globais disponíveis';
 $string['component'] = 'Origem';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = 'Grupo global atualizado';
 $string['external'] = 'Grupo global externo';
 $string['idnumber'] = 'ID';
 $string['invalidtheme'] = 'Tema do Grupo global não existe';
+$string['memberofcohort'] = 'Membro do Grupo global';
 $string['memberscount'] = 'Tamanho';
 $string['name'] = 'Nome';
 $string['namecolumnmissing'] = 'Existe algo errado com o formato do ficheiro CSV. Por favor, verifique se estão incluídos os nomes corretos das colunas. Para adicionar utilizadores a um Grupo Global, aceda a  "Carregar utilizadores" na Administração do Site.';
@@ -83,13 +85,13 @@ $string['selectfromcohort'] = 'Selecionar utilizadores do Grupo global';
 $string['systemcohorts'] = 'Grupos globais do sistema';
 $string['unknowncohort'] = 'Grupo global desconhecido ({$a})!';
 $string['uploadcohorts'] = 'Carregar Grupos globais';
-$string['uploadcohorts_help'] = 'Os  grupos globais podem ser carregados via ficheiro de texto. O ficheiro deve ter o seguinte formato:
+$string['uploadcohorts_help'] = 'Os  Grupos globais podem ser carregados via ficheiro de texto. O ficheiro deve ter o seguinte formato:
 
 * Cada linha do ficheiro contém um registo
 * Cada registo é uma linha com uma série de dados separados pelo separador selecionado
 * O primeiro registo contém uma lista de campos que definem o formato do resto do ficheiro
 * O campo \'name\' é obrigatório
-*Os campos opcionais são idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';
+* Os campos opcionais são: idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';
 $string['uploadedcohorts'] = 'Carregar {$a} Grupos globais';
 $string['useradded'] = 'Adicionar utilizador ao Grupo global \'{$a}\'';
 $string['visible'] = 'Visível';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'sv', version '3.11'.
+ * Strings for component 'theme_boost', language 'sv', version '4.1'.
  *
  * @package     theme_boost
  * @category    string
@@ -36,19 +36,30 @@ $string['choosereadme'] = 'Boost är ett modernt mycket anpassningsbart tema. De
 $string['configtitle'] = 'Boost';
 $string['currentinparentheses'] = '(aktuellt)';
 $string['generalsettings'] = 'Generella inställningar';
+$string['loginbackgroundimage'] = 'Bakgrundsbild på inloggningssidan';
+$string['loginbackgroundimage_desc'] = 'Bild som visas som bakgrundsbild på inloggningssidan.';
 $string['nobootswatch'] = 'Inget';
 $string['pluginname'] = 'Boost';
 $string['preset'] = 'Förinställningar för tema';
 $string['preset_desc'] = 'Välj en förinställning för att ändra utseendet i stort';
 $string['presetfiles'] = 'Ytterligare temaförinställnings-filer';
 $string['presetfiles_desc'] = 'Förinställda filer kan användas för att dramatiskt ändra utseendet på temat. Se  <a href="https://docs.moodle.org/dev/Boost_Presets">Boost förinställningar</a> för information om hur du skapar och delar dina egna förinställningsfiler. Se även <a href="https://archive.moodle.net/boost">Publicerade förinställningar</a> för att se förinställningar gjorda av andra.';
+$string['privacy:drawerblockclosed'] = 'Den aktuella inställningen för blockverktygslådan är stängd.';
+$string['privacy:drawerblockopen'] = 'Den aktuella inställningen för blockverktygslådan är öppen.';
+$string['privacy:drawerindexclosed'] = 'Den aktuella inställningen för indexverktygslådan är stängd.';
+$string['privacy:drawerindexopen'] = 'Den aktuella inställningen för indexverktygslådan är öppen.';
 $string['privacy:drawernavclosed'] = 'Den aktuella inställningen för navigeringsmenyn är: stängd.';
 $string['privacy:drawernavopen'] = 'Den aktuella inställningen för navigeringsmenyn är: öppen.';
 $string['privacy:metadata'] = 'Boost-temat lagrar inga personuppgifter för någon användare.';
+$string['privacy:metadata:preference:draweropenblock'] = 'Användarens inställningar för att dölja eller visa blockverktygslådan.';
+$string['privacy:metadata:preference:draweropenindex'] = 'Användarens inställningar för att dölja eller visa kursindexverktygslådan.';
 $string['privacy:metadata:preference:draweropennav'] = 'Användarens preferens för att dölja eller visa panelen för menynavigeringen.';
 $string['rawscss'] = 'Oformaterad SCSS';
 $string['rawscss_desc'] = 'Använd det här fältet om du vill tillhandahålla SCSS- eller CSS-kod som ska att injiceras i slutet av formatmallen.';
 $string['rawscsspre'] = 'Oformaterad ursprunglig SCSS';
 $string['rawscsspre_desc'] = 'I det här fältet kan du ange initiering av SCSS-kod. Den kommer att injiceras före allt annat. För det mesta använder du den här inställningen för att definiera variabler.';
 $string['region-side-pre'] = 'Höger';
+$string['showfooter'] = 'Visa sidfot';
 $string['totop'] = 'Gå upp';
+$string['unaddableblocks'] = 'Ej tilläggbara block';
+$string['unaddableblocks_desc'] = 'De block som definieras i det här fältet visas inte i listan "Lägg till ett block".';

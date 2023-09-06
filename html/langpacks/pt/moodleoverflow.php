@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodleoverflow', language 'pt', version '3.11'.
+ * Strings for component 'moodleoverflow', language 'pt', version '4.1'.
  *
  * @package     moodleoverflow
  * @category    string
@@ -43,7 +43,6 @@ $string['areapost'] = 'Mensagens';
 $string['attachment'] = 'Anexo';
 $string['attachment_help'] = 'Pode opcionalmente anexar um ou mais ficheiros a uma publicação no fórum. Se anexar uma imagem, ela será mostrada após a mensagem.';
 $string['attachments'] = 'Anexos';
-$string['bestanswer'] = 'O autor da pergunta e um responsável da disciplina aceitaram isto como a melhor resposta.';
 $string['bynameondate'] = 'por {$a->name} ({$a->rating}) - {$a->date}';
 $string['bynameondatenorating'] = 'por {$a->name} - {$a->date}';
 $string['cannotcreatediscussion'] = 'Não foi possível criar uma nova discussão';
@@ -96,7 +95,6 @@ $string['discussionnowsubscribed'] = '{$a->name} SERÁ notificado de novas publi
 $string['discussions'] = 'Discussões';
 $string['discussionsubscription'] = 'Subscrição da discussão';
 $string['discussionsubscription_help'] = 'Subscrever uma discussão significa que receberá notificações de novas publicações para a discussão.';
-$string['downvote'] = 'Voto negativo';
 $string['downvotenotchangeable'] = 'Voto negativo (não alterável)';
 $string['edit'] = 'Editar';
 $string['editedby'] = 'Editada por {$a->name} - original submetido {$a->date}';
@@ -128,14 +126,6 @@ $string['gotoindex'] = 'Gerir preferências';
 $string['grademaxgradeerror'] = 'A nota máxima deve ser um número inteiro positivo diferente de 0';
 $string['gradesreport'] = 'Relatório das notas';
 $string['gradesupdated'] = 'Notas atualizadas';
-$string['headerdiscussion'] = 'Discussão';
-$string['headerlastpost'] = 'Última mensagem';
-$string['headerreplies'] = 'Respostas';
-$string['headerstartedby'] = 'Iniciada por';
-$string['headerstatus'] = 'Estado';
-$string['headerunread'] = 'Não lidas';
-$string['headervotes'] = 'Votos';
-$string['helpfulanswer'] = 'O autor da pergunta aceitou isto como a melhor resposta.';
 $string['hiddenmoodleoverflowpost'] = 'Publicação oculta do fórum';
 $string['invaliddiscussionid'] = 'O ID da discussão estava incorreto';
 $string['invalidforcesubscribe'] = 'Modo inválido de subscrição forçada';
@@ -179,8 +169,6 @@ $string['moodleoverflow:ratehelpful'] = 'Marcar uma publicação como útil';
 $string['moodleoverflow:ratepost'] = 'Avaliar uma publicação';
 $string['moodleoverflow:replypost'] = 'Responder numa discussão';
 $string['moodleoverflow:startdiscussion'] = 'Iniciar uma discussão';
-$string['moodleoverflow:view'] = 'Visualizar lista de discussões';
-$string['moodleoverflow:viewanyrating'] = 'Ver classificações';
 $string['moodleoverflow:viewdiscussion'] = 'Visualizar discussão';
 $string['moodleoverflowauthorhidden'] = 'Autor (oculto)';
 $string['moodleoverflowbodyhidden'] = 'Não pode visualizar esta publicação, provavelmente porque não publicou na discussão, o tempo de edição máximo ainda não terminou, a discussão não iniciou ou a discussão já terminou.';
@@ -189,7 +177,6 @@ $string['moodleoverflowname'] = 'Nome';
 $string['moodleoverflows'] = 'MoodleOverflows';
 $string['moodleoverflowsubjecthidden'] = 'Assunto (oculto)';
 $string['nodiscussions'] = 'Ainda não existem tópicos de discussão neste fórum.';
-$string['nodownvote'] = 'Sem voto negativo';
 $string['noguestpost'] = 'Desculpa, os visitantes não podem publicar.';
 $string['noguesttracking'] = 'Desculpa, os visitantes não podem configurar opções de seguimento.';
 $string['noonecansubscribenow'] = 'As subscrições estão desativadas';
@@ -202,7 +189,6 @@ $string['notpartofdiscussion'] = 'Esta publicação não faz parte de uma discus
 $string['notrackmoodleoverflow'] = 'Não seguir publicações não lidas';
 $string['notstartuser'] = 'Apenas o utilizador que iniciou a discussão pode marcar uma resposta como útil.';
 $string['notteacher'] = 'Apenas os responsáveis da disciplina podem fazer isto.';
-$string['noupvote'] = 'Sem voto positivo';
 $string['noviewdiscussionspermission'] = 'Não tem permissão para visualizar discussões neste fórum';
 $string['nowallsubscribed'] = 'Todos os fóruns da disciplina \'{$a}\' estão subscritos.';
 $string['nowallunsubscribed'] = 'Nenhum fórum da disciplina \'{$a}\' está subscrito.';
@@ -291,7 +277,6 @@ $string['scalefactor'] = 'Fator de escala';
 $string['scalefactor_help'] = 'A classificação do utilizador é dividida pelo fator de escala para obter a nota de cada utilizador. Se a nota resultante for maior que a nota máxima, o valor será limitado à nota máxima especificada';
 $string['scalefactorerror'] = 'O fator de escala deve ser um número inteiro positivo diferente de 0';
 $string['smallmessage'] = '{$a->user} publicou em \'{$a->moodleoverflowname}\'';
-$string['solvedanswer'] = 'Esta publicação está marcada como solução.';
 $string['starterrating'] = 'Útil';
 $string['subject'] = 'Assunto';
 $string['subscribe'] = 'Subscrever este fórum';
@@ -337,7 +322,6 @@ $string['unsubscribediscussion'] = 'Cancelar subscrição desta discussão';
 $string['unsubscribediscussionlink'] = 'Cancelar subscrição da discussão: {$a}';
 $string['unsubscribelink'] = 'Cancelar subscrição do fórum: {$a}';
 $string['updategrades'] = 'Atualizar notas';
-$string['upvote'] = 'Voto positivo';
 $string['upvotenotchangeable'] = 'Voto positivo (não alterável)';
 $string['votescaledownvote'] = 'Reputação: Voto negativo';
 $string['votescalehelpful'] = 'Reputação: Útil';

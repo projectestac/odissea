@@ -25,17 +25,19 @@ Feature: Adding random questions to a quiz based on category and tags
       | contextlevel | reference | name        | questioncategory     |
       | Course       | C1        | Subcategory | Questions Category 1 |
     And the following "questions" exist:
-      | questioncategory     | qtype | name            | user     | questiontext    |
-      | Questions Category 1 | essay | question 1 name | admin    | Question 1 text |
-      | Questions Category 1 | essay | question 2 name | teacher1 | Question 2 text |
-      | Subcategory          | essay | question 3 name | teacher1 | Question 3 text |
-      | Subcategory          | essay | question 4 name | teacher1 | Question 4 text |
+      | questioncategory     | qtype | name                | user     | questiontext    |
+      | Questions Category 1 | essay | question 1 name     | admin    | Question 1 text |
+      | Questions Category 1 | essay | question 2 name     | teacher1 | Question 2 text |
+      | Subcategory          | essay | question 3 name     | teacher1 | Question 3 text |
+      | Subcategory          | essay | question 4 name     | teacher1 | Question 4 text |
+      | Questions Category 1 | essay | "listen" & "answer" | teacher1 | Question 5 text |
     And the following "core_question > Tags" exist:
-      | question        | tag |
-      | question 1 name | foo |
-      | question 2 name | bar |
-      | question 3 name | foo |
-      | question 4 name | bar |
+      | question            | tag |
+      | question 1 name     | foo |
+      | question 2 name     | bar |
+      | question 3 name     | foo |
+      | question 4 name     | bar |
+      | "listen" & "answer" | foo |
 
   Scenario: Available tags are shown in the autocomplete tag field
     Given I am on the "Quiz 1" "mod_quiz > Edit" page logged in as "teacher1"
@@ -76,7 +78,12 @@ Feature: Adding random questions to a quiz based on category and tags
     And I follow "a random question"
     And I set the field "Tags" to "foo"
     And I press "Add random question"
-    Then I should see "Random (Questions Category 1, tags: foo)" on quiz page "1"
+    And I should see "Random (Questions Category 1, tags: foo)" on quiz page "1"
+    And I click on "(See questions)" "link"
+    Then I should see "Questions Category 1"
+    And I should see "foo"
+    And I should see "question 1 name"
+    And I should see "\"listen\" & \"answer\""
 
   Scenario: Teacher without moodle/question:useall should not see the add a random question menu item
     Given the following "permission overrides" exist:
@@ -96,4 +103,6 @@ Feature: Adding random questions to a quiz based on category and tags
       | Name            | New Random category |
       | Parent category |  Top for Quiz 1     |
     And I press "Create category and add random question"
-    Then I should see "Random (New Random category)" on quiz page "1"
+    And I should see "Random (New Random category)" on quiz page "1"
+    And I click on "(See questions)" "link"
+    Then I should see "Top for Quiz 1"

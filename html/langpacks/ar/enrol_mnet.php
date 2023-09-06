@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'ar', version '3.11'.
+ * Strings for component 'enrol_mnet', language 'ar', version '4.1'.
  *
  * @package     enrol_mnet
  * @category    string
@@ -35,7 +35,7 @@ $string['pluginname'] = 'انضمامات شبكة مودل البعيدة';
 $string['pluginname_desc'] = 'إسمح لمضيف شبكة مودل البعيد بضم مستخدميه إلى المقررات الدراسية عندنا.';
 $string['privacy:metadata'] = 'إن إضافة الانضمام البعيد لشبكة مودل لا تخزن أي بيانات شخصية.';
 $string['remotesubscriber'] = 'المضيف البعيد';
-$string['remotesubscriber_help'] = 'إختر \'كل المضيفين\' لفتح هذا المقرر الدراسي إلى كل نظراء شبكة مودل الذين نقدم لهم خدمة الانضمام البعيد. أو اختر مضيفاً واحداً لجعل هذا المقرر الدراسي متاحاً إلى مستخدميه فقط.';
+$string['remotesubscriber_help'] = 'إختر \'كل المضيفين\' لفتح هذا المساق إلى كل نظراء شبكة مودل الذين نقدم لهم خدمة الانضمام البعيد. أو اختر مضيفاً واحداً لجعل هذا المساق متاحاً إلى مستخدميه فقط.';
 $string['remotesubscribersall'] = 'كل المضيفين';
 $string['roleforremoteusers'] = 'دور مستخدميه';
 $string['roleforremoteusers_help'] = 'ما هو الدور الذي سيحصل عليه المستخدمون البعيدون من المضيف المحدد.';

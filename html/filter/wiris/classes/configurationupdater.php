@@ -193,6 +193,7 @@ class filter_wiris_configurationupdater implements com_wiris_plugin_configuratio
         $configuration['wirisversionplatform'] = $CFG->version;
         // Referer.
         global $COURSE;
+
         $query = '';
         if (isset($COURSE->id)) {
             $query .= '?course=' . $COURSE->id;

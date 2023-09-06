@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ja', version '3.11'.
+ * Strings for component 'report_security', language 'ja', version '4.1'.
  *
  * @package     report_security
  * @category    string
@@ -25,22 +25,28 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['check_antivirus_details'] = 'このステータスではメインのアンチウイルス設定の閾値に基づいて最近検出されたエラーかあるかどうかをチェックします。';
+$string['check_antivirus_error'] = '過去 {$a->lookback} に {$a->errors} 件のエラーが検出されました。';
+$string['check_antivirus_info'] = '現在、アンンチウイルススキャナは有効にされていません。';
+$string['check_antivirus_logstore_not_supported'] = '選択されたログストアのタイプではアンチウイルススキャナの状態を確認できません。';
+$string['check_antivirus_name'] = 'アンチウイルス';
+$string['check_antivirus_ok'] = '{$a->scanners} アンチウイルススキャナは有効にされています。過去 {$a->lookback} に問題は検出されていません。';
 $string['check_configrw_details'] = '<p>ウェブサーバからファイルが修正されないようインストール後に<code>config.php</code>のファイルパーミッションを変更することをお勧めします。この方法はサーバのセキュリティを著しく向上させるものではありませんが一般的なセキュリティ上の弱点を抑制したり制限することはできます。</p>';
 $string['check_configrw_name'] = '書き込み可能なconfig.php';
 $string['check_configrw_ok'] = 'PHPスクリプトはconfig.phpを修正することができません。';
 $string['check_configrw_warning'] = 'PHPスクリプトはconfig.phpを修正することができます。';
-$string['check_cookiesecure_details'] = '<p>https通信が有効にされた場合、セキュアクッキの送信を有効にすることをお勧めします。また、httpからhttpsへのパーマネントリダイレクトを設定してください。理想的には同時にHSTSヘッダも送信してください。</p>';
-$string['check_cookiesecure_error'] = 'セキュアクッキを有効にしてください。';
-$string['check_cookiesecure_http'] = 'あなたがセキュアクッキを使用するにはhttpsを有効にする必要があります。';
-$string['check_cookiesecure_name'] = 'セキュアクッキ';
-$string['check_cookiesecure_ok'] = 'セキュアクッキは有効にされています。';
+$string['check_cookiesecure_details'] = '<p>https通信が有効にされた場合、セキュアクッキーの送信を有効にすることをお勧めします。また、httpからhttpsへのパーマネントリダイレクトを設定してください。理想的には同時にHSTSヘッダも送信してください。</p>';
+$string['check_cookiesecure_error'] = 'セキュアクッキーを有効にしてください。';
+$string['check_cookiesecure_http'] = 'あなたがセキュアクッキーを使用するにはhttpsを有効にする必要があります。';
+$string['check_cookiesecure_name'] = 'セキュアクッキー';
+$string['check_cookiesecure_ok'] = 'セキュアクッキーは有効にされています。';
 $string['check_crawlers_details'] = '<p>Googleに公開する設定ではサーチエンジンがコースにゲストとしてログインできるようにします。ゲストログインが許可されていない場合、この設定の有効化は意味を持ちません。</p>';
 $string['check_crawlers_error'] = 'サーチエンジンによるゲストアクセスは許可されていますが、ゲストアクセスは無効にされています。';
 $string['check_crawlers_info'] = 'サーチエンジンはゲストとして入ることができます。';
 $string['check_crawlers_name'] = 'Googleに公開する';
 $string['check_crawlers_ok'] = 'サーチエンジンによるアクセスは有効にされていません。';
-$string['check_defaultuserrole_details'] = '<p>すべてのログインユーザにはデフォルトのユーザロールのケイパビリティが割り当てられます。このロールにリスクのあるケイパビリティが許可されていなことを確認してください。</p>
-<p>デフォルトのユーザロールでサポートされているレガシタイプのロールは「認証済みユーザ」のみです。コース閲覧ケイパビリティは有効にしないでください。</p>';
+$string['check_defaultuserrole_details'] = '<p>すべてのログインユーザにはデフォルトユーザロールのケイパビリティが付与されます。このロールに危険なケイパビリティが許可されていないことを確認してください。デフォルトユーザロールでサポートされるレガシータイプは「認証済みユーザ」のみです。コース表示ケイパビリティは有効にすべきではありません。</p>
+<p>自動データ削除リクエスト承認 (tool_dataprivacy | automaticdatadeletionapproval) オプションが有効されていることを確認してください。ユーザは大量データ削除の可能性のある削除を要求できます。</p>';
 $string['check_defaultuserrole_error'] = 'デフォルトユーザロール「 {$a} 」は正しくない定義です!';
 $string['check_defaultuserrole_name'] = 'すべてのユーザのデフォルトロール';
 $string['check_defaultuserrole_notset'] = 'デフォルトロールが設定されていません。';
@@ -62,11 +68,11 @@ $string['check_embed_error'] = '無制限のオブジェクト埋め込みが許
 $string['check_embed_name'] = 'EMBEDおよびOBJECTを許可する';
 $string['check_embed_ok'] = '無制限のオブジェクト埋め込みは許可されていません。';
 $string['check_frontpagerole_details'] = '<p>すべての登録ユーザのサイトホーム活動にはデフォルトのサイトホームロールのケイパビリティが割り当てられます。このロールにリスクのあるケイパビリティが許可されているかどうか確認してください。</p>
-<p>この目的のため、特別なロールを作成してレガシータイプのロールは使用しないことをお勧めします。</p>';
-$string['check_frontpagerole_error'] = '正しくないフロントページロール「 {$a} 」の割り当てが検出されました!';
-$string['check_frontpagerole_name'] = 'フロントページロール';
-$string['check_frontpagerole_notset'] = 'フロントページロールが設定されていません。';
-$string['check_frontpagerole_ok'] = 'フロントページロール定義はOKです。';
+<p>この目的のため、特別なロールを作成してレガシタイプのロールは使用しないことをお勧めします。</p>';
+$string['check_frontpagerole_error'] = '正しくないサイトホームロール「 {$a} 」の割り当てが検出されました!';
+$string['check_frontpagerole_name'] = 'サイトホームロール';
+$string['check_frontpagerole_notset'] = 'サイトホームロールが設定されていません。';
+$string['check_frontpagerole_ok'] = 'サイトホームロール定義はOKです。';
 $string['check_guestrole_details'] = '<p>ゲストロールはゲストに使用され、ログインユーザおよび一時的なゲストコースアクセスには使用されません。このロールにリスクのあるケイパビリティが許可されているかどうか確認してください。</p>
 <p>ゲストロールでサポートされているレガシタイプのロールは「ゲスト」のみです</p>';
 $string['check_guestrole_error'] = 'ゲストロール「 {$a} 」の定義は正しくありません!';
@@ -95,6 +101,8 @@ $string['check_preventexecpath_warning'] = '実行可能パスは管理画面で
 $string['check_publicpaths_403'] = '(戻り値403は理想的には404であるべきです)';
 $string['check_publicpaths_generic'] = '{$a} ファイルは公開しないでください。';
 $string['check_publicpaths_name'] = 'すべての公開およびプライベートパスをチェックする';
+$string['check_publicpaths_ok'] = 'すべての内部パスは外部からアクセスできません。';
+$string['check_publicpaths_warning'] = '内部パスの一部に外部からアクセスできます。';
 $string['check_riskadmin_detailsok'] = '<p>次のシステム管理者一覧を確認してください:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>次のシステム管理者一覧を確認してください。:</p>{$a->admins}
 <p>システムコンテクストのみへの管理者ロール割り当てをお勧めします。次のユーザはサポートされない管理者ロールが他のコンテクストで割り当てられています:</p>{$a->unsupported}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ar', version '3.11'.
+ * Strings for component 'cohort', language 'ar', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -36,6 +36,7 @@ $string['bulkadd'] = 'إضافة إلى الدفعة';
 $string['bulknocohort'] = 'لم يتم العثور على أي دفعات متاحة';
 $string['categorynotfound'] = 'لم يتم العثور على التصنيف <b>{$a}</b> أو ليست لديك صلاحية إنشاء دفعة هناك. سيتم استعمال السياق الافتراضي.';
 $string['cohort'] = 'الدفعة';
+$string['cohortmember'] = 'عضو الدفعة';
 $string['cohorts'] = 'الدفعات';
 $string['cohortsin'] = '{$a}: الدفعات المتاحة';
 $string['component'] = 'المصدر';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = 'دفعة تم تحديثها';
 $string['external'] = 'دفعة خارجية';
 $string['idnumber'] = 'مُعرّف الدفعة';
 $string['invalidtheme'] = 'قالب الدفعة غير موجود';
+$string['memberofcohort'] = 'عضو في الدفع';
 $string['memberscount'] = 'حجم الدفعة';
 $string['name'] = 'الاسم';
 $string['namecolumnmissing'] = 'يوجد خطأ ما في تنسيق ملف CSV. يرجى التحقق من أنه يتضمن أسماء الأعمدة الصحيحة. لإضافة أعضاء إلى الدفعة، انتقل إلى \'رفع المستخدمين\' في إدارة الموقع.';

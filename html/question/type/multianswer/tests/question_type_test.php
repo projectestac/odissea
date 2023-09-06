@@ -34,9 +34,10 @@ require_once($CFG->dirroot . '/question/type/multianswer/edit_multianswer_form.p
 /**
  * Unit tests for the multianswer question definition class.
  *
- * @package    qtype_multianswer
- * @copyright  2011 The Open University
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   qtype_multianswer
+ * @copyright 2011 The Open University
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers    \qtype_multianswer
  */
 class question_type_test extends \advanced_testcase {
     /** @var qtype_multianswer instance of the question type class to test. */
@@ -66,10 +67,12 @@ class question_type_test extends \advanced_testcase {
         $q->generalfeedbackformat = FORMAT_HTML;
         $q->defaultmark = 2;
         $q->penalty = 0.3333333;
+        $q->status = \core_question\local\bank\question_version_status::QUESTION_STATUS_READY;
+        $q->versionid = 0;
+        $q->version = 1;
+        $q->questionbankentryid = 0;
         $q->length = 1;
         $q->stamp = make_unique_id_code();
-        $q->version = make_unique_id_code();
-        $q->hidden = 0;
         $q->timecreated = time();
         $q->timemodified = time();
         $q->createdby = $USER->id;
@@ -110,15 +113,46 @@ class question_type_test extends \advanced_testcase {
     }
 
     public function test_get_random_guess_score() {
-        $q = \test_question_maker::get_question_data('multianswer', 'twosubq');
+        $q = test_question_maker::get_question_data('multianswer', 'twosubq');
         $this->assertEqualsWithDelta(0.1666667, $this->qtype->get_random_guess_score($q), 0.0000001);
+    }
+
+    public function test_get_random_guess_score_with_missing_subquestion() {
+        global $DB;
+        $this->resetAfterTest();
+
+        // Create a question referring to a subquesion that has got lost (which happens some time).
+        /** @var \core_question_generator $generator */
+        $generator = $this->getDataGenerator()->get_plugin_generator('core_question');
+        $category = $generator->create_question_category();
+        $question = $generator->create_question('multianswer', 'twosubq', ['category' => $category->id]);
+        // Add a non-existent subquestion id to the list.
+        $sequence = $DB->get_field('question_multianswer', 'sequence', ['question' => $question->id], MUST_EXIST);
+        $DB->set_field('question_multianswer', 'sequence', $sequence . ',-1', ['question' => $question->id]);
+
+        // Verify that computing the random guess score does not give an error.
+        $questiondata = question_bank::load_question_data($question->id);
+        $this->assertEqualsWithDelta(0.1666667, $this->qtype->get_random_guess_score($questiondata), 0.0000001);
+    }
+
+    public function test_get_random_guess_score_with_all_missing_subquestions() {
+        $this->resetAfterTest();
+
+        // Create a question where all subquestions are missing.
+        $questiondata = test_question_maker::get_question_data('multianswer', 'twosubq');
+        foreach ($questiondata->options->questions as $subq) {
+            $subq->qtype = 'subquestion_replacement';
+        }
+
+        // Verify that computing the random guess score does not give an error.
+        $this->assertNull($this->qtype->get_random_guess_score($questiondata));
     }
 
     public function test_load_question() {
         $this->resetAfterTest();
 
         $syscontext = \context_system::instance();
-        /** @var core_question_generator $generator */
+        /** @var \core_question_generator $generator */
         $generator = $this->getDataGenerator()->get_plugin_generator('core_question');
         $category = $generator->create_question_category(['contextid' => $syscontext->id]);
 
@@ -138,8 +172,8 @@ class question_type_test extends \advanced_testcase {
 
         $this->assertEquals(['id', 'category', 'parent', 'name', 'questiontext', 'questiontextformat',
                 'generalfeedback', 'generalfeedbackformat', 'defaultmark', 'penalty', 'qtype',
-                'length', 'stamp', 'version', 'hidden', 'timecreated', 'timemodified',
-                'createdby', 'modifiedby', 'idnumber', 'contextid', 'options', 'hints', 'categoryobject'],
+                'length', 'stamp', 'timecreated', 'timemodified', 'createdby', 'modifiedby', 'idnumber', 'contextid',
+                'status', 'versionid', 'version', 'questionbankentryid', 'categoryobject', 'options', 'hints'],
                 array_keys(get_object_vars($questiondata)));
         $this->assertEquals($category->id, $questiondata->category);
         $this->assertEquals(0, $questiondata->parent);
@@ -152,7 +186,7 @@ class question_type_test extends \advanced_testcase {
         $this->assertEquals(0, $questiondata->penalty);
         $this->assertEquals('multianswer', $questiondata->qtype);
         $this->assertEquals(1, $questiondata->length);
-        $this->assertEquals(0, $questiondata->hidden);
+        $this->assertEquals(\core_question\local\bank\question_version_status::QUESTION_STATUS_READY, $questiondata->status);
         $this->assertEquals($question->createdby, $questiondata->createdby);
         $this->assertEquals($question->createdby, $questiondata->modifiedby);
         $this->assertEquals('', $questiondata->idnumber);
@@ -204,7 +238,6 @@ class question_type_test extends \advanced_testcase {
                 'qtype' => $value->qtype,
                 'length' => $value->length,
                 'stamp' => $value->stamp,
-                'hidden' => 0,
                 'timecreated' => $value->timecreated,
                 'timemodified' => $value->timemodified,
                 'createdby' => $value->createdby,
@@ -214,7 +247,15 @@ class question_type_test extends \advanced_testcase {
         }
         // Need to get rid of (version, idnumber, options, hints, maxmark). They are missing @ fromform.
         $gotquestions = array_map(function($question) {
-                unset($question->version);
+                $question->id = (int) $question->id;
+                $question->category = (int) $question->category;
+                $question->defaultmark = (float) $question->defaultmark;
+                $question->penalty = (float) $question->penalty;
+                $question->length = (int) $question->length;
+                $question->timecreated = (int) $question->timecreated;
+                $question->timemodified = (int) $question->timemodified;
+                $question->createdby = (int) $question->createdby;
+                $question->modifiedby = (int) $question->modifiedby;
                 unset($question->idnumber);
                 unset($question->options);
                 unset($question->hints);
@@ -230,6 +271,7 @@ class question_type_test extends \advanced_testcase {
         $this->setAdminUser();
 
         $questiondata = \test_question_maker::get_question_data('multianswer');
+
         $formdata = \test_question_maker::get_question_form_data('multianswer');
 
         $generator = $this->getDataGenerator()->get_plugin_generator('core_question');
@@ -243,13 +285,15 @@ class question_type_test extends \advanced_testcase {
         $this->assertTrue($form->is_validated());
 
         $fromform = $form->get_data();
-
+        // Create a new question version with the form submission.
+        unset($questiondata->id);
         $returnedfromsave = $this->qtype->save_question($questiondata, $fromform);
         $actualquestionsdata = question_load_questions(array($returnedfromsave->id));
         $actualquestiondata = end($actualquestionsdata);
 
         foreach ($questiondata as $property => $value) {
-            if (!in_array($property, array('id', 'version', 'timemodified', 'timecreated', 'options', 'hints', 'stamp'))) {
+            if (!in_array($property, ['id', 'timemodified', 'timecreated', 'options', 'hints', 'stamp',
+                'idnumber', 'version', 'versionid', 'questionbankentryid', 'contextid', 'category', 'status'])) {
                 $this->assertEquals($value, $actualquestiondata->$property);
             }
         }
@@ -272,8 +316,8 @@ class question_type_test extends \advanced_testcase {
         $this->assertObjectHasAttribute('questions', $actualquestiondata->options);
 
         $subqpropstoignore =
-            array('id', 'category', 'parent', 'contextid', 'question', 'options', 'stamp', 'version', 'timemodified',
-                'timecreated');
+            ['id', 'category', 'parent', 'contextid', 'question', 'options', 'stamp', 'timemodified',
+                'timecreated', 'status', 'idnumber', 'version', 'versionid', 'questionbankentryid'];
         foreach ($questiondata->options->questions as $subqno => $subq) {
             $actualsubq = $actualquestiondata->options->questions[$subqno];
             foreach ($subq as $subqproperty => $subqvalue) {

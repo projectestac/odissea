@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'ar', version '3.11'.
+ * Strings for component 'tool_messageinbound', language 'ar', version '4.1'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -59,6 +59,7 @@ $string['messageinboundenabled_desc'] = 'يجب تمكين معالجة البر
 $string['messageinboundgeneralconfiguration'] = 'التكوين العام';
 $string['messageinboundgeneralconfiguration_desc'] = 'تتيح لك معالجة الرسائل الواردة تلقي البريد الالكتروني ومعالجته داخل مودل. يتضمن هذا تطبيقات مثل إرسال ردود البريد الالكتروني إلى مشاركات المنتدى أو إضافة الملفات إلى ملفات المستخدم الخاصة.';
 $string['messageinboundhost'] = 'خادم البريد الوارد';
+$string['messageinboundhostoauth_help'] = 'خدمة OAuth 2 المستعملة للوصول إلى مخدم IMAP، باستعمال مصادقة XOAUTH2. إذا لم تكن الخدمة موجودة حتى الآن، فستحتاج إلى إنشائها.';
 $string['messageinboundhostpass'] = 'كلمه السر';
 $string['messageinboundhostpass_desc'] = 'هذه هي كلمة المرور التي سيوفرها مزود الخدمة لتسجيل الدخول إلى حساب البريد الإلكتروني الخاص بك.';
 $string['messageinboundhostssl'] = 'استخدم SSL';

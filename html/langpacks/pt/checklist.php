@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'pt', version '3.11'.
+ * Strings for component 'checklist', language 'pt', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -79,9 +79,9 @@ $string['completionpercent'] = 'Número de itens que devem ser desmarcados:';
 $string['completionpercentgroup'] = 'É necessário desmarcar';
 $string['completionpercentgroup_help'] = 'Se for selecionado \'Percentagem de itens\', os utilizadores devem marcar pelo menos a percentagem especificada dos itens da lista de verificação para serem considerados \'concluídos\'. Se for selecionado \'Itens\', o utilizador deve marcar pelo menos esse número de itens individuais na lista. Tenha atenção que, se especificar aqui um número de itens maior do que o número de itens na lista de verificação, ele nunca será marcado como concluído.';
 $string['configchecklistautoupdate'] = 'Antes de permitir isso, deve fazer algumas alterações ao código do core Moodle, consulte mod/checklist/README.txt para mais detalhes';
-$string['configshowcompletemymoodle'] = 'Se desativar esta opção, as listas de verificação de conclusão estarão ocultas na "Minha página" do Moodle';
-$string['configshowmymoodle'] = 'Se estiver desmarcada, as atividades \'listas de verificação\' (com barra de progressão) não aparecem na "Minha página" do Moodle';
-$string['configshowupdateablemymoodle'] = 'Se estiver assinalada, apenas as listas de verificação atualizáveis estarão visíveis na "Minha página" do Moodle';
+$string['configshowcompletemymoodle'] = 'Se desativar esta opção, as listas de verificação de conclusão estarão ocultas no Painel do utilizador.';
+$string['configshowmymoodle'] = 'Se desativar esta opção, as atividades \'listas de verificação\' (com barra de progressão) não aparecem na "Minha página" do Moodle.';
+$string['configshowupdateablemymoodle'] = 'Se ativar esta opção, apenas as listas de verificação atualizáveis estarão visíveis no Painel do utilizador.';
 $string['confirmdeleteitem'] = 'Tem certeza de que deseja apagar permanentemente este item da checklist?';
 $string['deleteitem'] = 'Apagar este item';
 $string['duedatesoncalendar'] = 'Adicionar datas de prazo ao calendário';
@@ -132,6 +132,7 @@ $string['lockteachermarks_help'] = 'Quando esta configuração está ativa, assi
 $string['lockteachermarkswarning'] = 'Nota: Depois de guardar estas marcações, não será possível alterar qualquer das marcações \'Sim\'';
 $string['modulename'] = 'Checklist';
 $string['modulename_help'] = 'O módulo **Checklist** permite ao professor criar uma lista de verificação / lista de tarefas para os seus alunos trabalharem / concluírem.';
+$string['modulename_link'] = 'mod/checklist/view';
 $string['modulenameplural'] = 'Checklists';
 $string['moveitemdown'] = 'Mover para baixo';
 $string['moveitemup'] = 'Mover para cima';

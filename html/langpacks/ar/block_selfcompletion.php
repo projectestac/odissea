@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_selfcompletion', language 'ar', version '3.11'.
+ * Strings for component 'block_selfcompletion', language 'ar', version '4.1'.
  *
  * @package     block_selfcompletion
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alreadyselfcompleted'] = 'لقد سبق وأن أشرت بأنك قد أكملت هذا المقرر الدراسي';
-$string['completecourse'] = 'قم بإتمام المقرر الدراسي';
+$string['alreadyselfcompleted'] = 'لقد سبق وأن أشرت بأنك قد أكملت هذا المساق';
+$string['completecourse'] = 'قم بإتمام المساق';
 $string['pluginname'] = 'الإتمام الذاتي';
 $string['privacy:metadata'] = 'كتلة الإكمال الذاتي تظهر فقط البيانات المخزونة في مواضع أخرى.';
 $string['selfcompletion:addinstance'] = 'إضافة كتلة جديدة من الإكمال الذاتي';
-$string['selfcompletionnotenabled'] = 'معايير الإكمال الذاتي لم يتم تمكينها في هذا المقرر الدراسي';
+$string['selfcompletionnotenabled'] = 'معايير الإكمال الذاتي لم يتم تمكينها في هذا المساق';

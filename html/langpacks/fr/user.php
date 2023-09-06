@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'fr', version '3.11'.
+ * Strings for component 'user', language 'fr', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -89,8 +89,8 @@ $string['privacy:metadata:lastaccess'] = 'La date et l\'heure à laquelle l\'uti
 $string['privacy:metadata:lastaccesstablesummary'] = 'Informations sur la date et l\'heure à laquelle l\'utilisateur a accédé à un cours pour la dernière fois.';
 $string['privacy:metadata:lastip'] = 'La dernière adresse IP de l\'utilisateur.';
 $string['privacy:metadata:lastlogin'] = 'La dernière connexion de l\'utilisateur.';
-$string['privacy:metadata:lastname'] = 'Le surnom de l\'utilisateur.';
-$string['privacy:metadata:lastnamephonetic'] = 'Les informations phonétiques sur le surnom de l\'utilisateur.';
+$string['privacy:metadata:lastname'] = 'Le nom de famille de l\'utilisateur.';
+$string['privacy:metadata:lastnamephonetic'] = 'Les informations phonétiques du nom de famille de l\'utilisateur.';
 $string['privacy:metadata:maildigest'] = 'Un réglage pour les récapitulatifs de messages de cet utilisateur.';
 $string['privacy:metadata:maildisplay'] = 'Un réglage indiquant si l\'adresse de courriel est affichée aux autres utilisateurs.';
 $string['privacy:metadata:middlename'] = 'Le deuxième prénom de l\'utilisateur';
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'Secret défini et envoyé par courriel à l
 $string['privacy:metadata:trackforums'] = 'Un réglage pour les forums et leur suivi.';
 $string['privacy:metadata:trustbitmask'] = 'Le masque de confiance (bitmask)';
 $string['privacy:metadata:url'] = 'Une URL en lien avec cet utilisateur.';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Horodatage de l\'affichage du message de bienvenue à l\'utilisateur pour la première fois.';
 $string['privacy:metadata:user_preferences'] = 'Réglages associés à cet utilisateur';
 $string['privacy:metadata:user_preferences:name'] = 'Nom du réglage';
 $string['privacy:metadata:user_preferences:userid'] = 'L\'identifiant utilisateur';
@@ -149,6 +150,11 @@ $string['privacy:privatefilespath'] = 'Fichiers personnels';
 $string['privacy:profileimagespath'] = 'Avatars (images des profils)';
 $string['privacy:sessionpath'] = 'Données de session';
 $string['selectfiltertype'] = 'Sélectionner';
+$string['supportmessagealternative'] = 'En lieu et place, vous pouvez envoyer un courriel à {$a}.';
+$string['supportmessagenotsent'] = 'Votre message n\'a pas pu être envoyé.';
+$string['supportmessagesent'] = 'Votre message a été envoyé.';
+$string['supportmessagesentforloggedoutuser'] = 'Soyez prudent avec ce message : son expéditeur n\'était pas connecté au site ; son identité n\'a pas été confirmée.';
 $string['target:upcomingactivitiesdue'] = 'Activités à venir à effectuer';
 $string['target:upcomingactivitiesdue_help'] = 'Cette cible génère des rappels pour les activités à venir à effectuer.';
 $string['target:upcomingactivitiesdueinfo'] = 'Toutes les indications concernant les « activités à venir » sont affichées ici. Ces étudiants ont reçu directement ces indications.';
+$string['userprofile'] = 'Profil utilisateur';

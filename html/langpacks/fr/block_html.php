@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'fr', version '3.11'.
+ * Strings for component 'block_html', language 'fr', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = 'Permettre des classes CSS supplémentaires';
-$string['configallowadditionalcssclasses'] = 'Ajoute aux blocs HTML une option de configuration permettant de définir des classes CSS supplémentaires.';
+$string['configallowadditionalcssclasses'] = 'Ajoute aux blocs Texte une option de configuration permettant de définir des classes CSS supplémentaires.';
 $string['configclasses'] = 'Classes CSS supplémentaires';
-$string['configclasses_help'] = 'L\'objectif de cette option est de permettre de différentier les blocs HTML les uns des autres pour faciliter la personnalisation de son aspect. Les classes CSS spécifiées ici (séparées par des espaces) seront ajoutées aux classes existantes du bloc.';
+$string['configclasses_help'] = 'L\'objectif de cette option est de permettre de différentier les blocs Texte les uns des autres pour faciliter la personnalisation de son aspect. Les classes CSS spécifiées ici (séparées par des espaces) seront ajoutées aux classes existantes du bloc.';
 $string['configcontent'] = 'Contenu';
-$string['configtitle'] = 'Titre du bloc HTML';
-$string['html:addinstance'] = 'Ajouter un bloc HTML';
-$string['html:myaddinstance'] = 'Ajouter un bloc HTML au tableau de bord';
-$string['newhtmlblock'] = '(nouveau bloc HTML)';
-$string['pluginname'] = 'HTML';
-$string['privacy:metadata:block'] = 'Le bloc HTML enregistre la totalité de ses données dans le sous-système des blocs.';
-$string['search:content'] = 'Contenu de bloc HTML';
+$string['configtitle'] = 'Titre du bloc Texte';
+$string['html:addinstance'] = 'Ajouter un bloc Texte';
+$string['html:myaddinstance'] = 'Ajouter un bloc Texte au tableau de bord';
+$string['newhtmlblock'] = '(nouveau bloc Texte)';
+$string['pluginname'] = 'Texte';
+$string['privacy:metadata:block'] = 'Le bloc Texte enregistre la totalité de ses données dans le sous-système des blocs.';
+$string['search:content'] = 'Contenu du bloc Texte';

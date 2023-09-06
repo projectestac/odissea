@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'el', version '3.11'.
+ * Strings for component 'lesson', language 'el', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -52,7 +52,6 @@ $string['addedendofcluster'] = 'Προστέθηκε τέλος συστάδας
 $string['addendofbranch'] = 'Προσθήκη τέλους διακλάδωσης';
 $string['addendofcluster'] = 'Προσθήκη τέλους συστάδας';
 $string['addessay'] = 'Δημιουργία μιας σελίδας ερώτησης έκθεσης';
-$string['additionalattemptsremaining'] = 'Η διδασκαλία ολοκληρώθηκε! Μπορείτε να την επαναλάβετε.';
 $string['addmatching'] = 'Δημιουργία μιας σελίδας ερώτησης αντιστοίχισης';
 $string['addmultichoice'] = 'Δημιουργία μιας σελίδας ερώτησης πολλαπλής επιλογής';
 $string['addnewgroupoverride'] = 'Προσθήκη παράκαμψης ομάδας';
@@ -103,7 +102,7 @@ $string['cannotfindtimer'] = 'Σφάλμα: αποτυχία εύρεσης τω
 $string['cannotfinduser'] = 'Σφάλμα: δεν ήταν δυνατή η εύρεση χρηστών';
 $string['canretake'] = '{$a} μπορεί να το ξανακάνει';
 $string['casesensitive'] = 'Χρήση κανονικών εκφράσεων';
-$string['casesensitive_help'] = 'Επιλέξτε το πλαίσιο ελέγχου για να χρησιμοποιήσετε «κανονικές εκφράσεις» στην ανάλυση αποκρίσεων.';
+$string['casesensitive_help'] = 'Επιλέξτε το πλαίσιο επιλογής για να χρησιμοποιήσετε «κανονικές εκφράσεις» στην ανάλυση αποκρίσεων.';
 $string['checkbranchtable'] = 'Έλεγχος σελίδας περιεχομένου';
 $string['checkedthisone'] = 'Ελέγχθηκε αυτό.';
 $string['checknavigation'] = 'Έλεγχος πλοήγησης';
@@ -187,6 +186,7 @@ $string['editendofbranch'] = 'Επεξεργασία σελίδας τέλους
 $string['editendofcluster'] = 'Επεξεργασία μιας σελίδας τέλους συστάδας (μαθημάτων)';
 $string['editessay'] = 'Επεξεργασία σελίδας ερωτήματος έκθεσης';
 $string['editingquestionpage'] = 'Επεξεργασία σελίδας ερώτησης {$a}';
+$string['editlesson'] = 'Edit {$a}';
 $string['editlessonsettings'] = 'Επεξεργασία ρυθμίσεων διδασκαλίας';
 $string['editmatching'] = 'Επεξεργασία σελίδας ερώτησης αντιστοίχισης';
 $string['editmultichoice'] = 'Επεξεργασία σελίδας ερωτήματος πολλαπλής επιλογής';
@@ -267,8 +267,8 @@ $string['handlingofretakes'] = 'Χειρισμός επανασυμπληρώσ�
 $string['handlingofretakes_help'] = 'Αν επιτρέπονται περισσότερες από μια προσπάθειες, αυτή η ρύθμιση καθορίζει εάν ο βαθμός για το μάθημα θα είναι ο μέσος όρος ή ο μέγιστος όλων των προσπαθειών.';
 $string['havenotgradedyet'] = 'Δεν έχει βαθμολογηθεί ακόμα';
 $string['here'] = 'εδώ';
-$string['highscore'] = 'Υψηλό σκορ';
-$string['hightime'] = 'Υψηλός χρόνος';
+$string['highscore'] = 'Κορυφαίο σκορ';
+$string['hightime'] = 'Κορυφαίος χρόνος';
 $string['importcount'] = 'Εισαγωγή {$a} ερωτήσεων';
 $string['importquestions'] = 'Εισαγωγή ερωτήσεων';
 $string['importquestions_help'] = 'Αυτό το χαρακτηριστικό επιτρέπει την εισαγωγή ερωτήσεων σε διάφορες μορφές μέσω αρχείου κειμένου.';
@@ -305,17 +305,15 @@ $string['lesson:view'] = 'Εμφάνιση δραστηριότητας της �
 $string['lesson:viewreports'] = 'Εμφάνιση αναφορών της διδασκαλίας';
 $string['lessonclosed'] = 'Αυτή η διδασκαλία έκλεισε {$a}.';
 $string['lessoncloses'] = 'Κλείσιμο διδασκαλίας';
-$string['lessoncloseson'] = 'Η διδασκαλία κλείνει στις {$a}';
 $string['lessoneventcloses'] = 'Λήγει {$a}';
 $string['lessoneventopens'] = 'Ξεκινά {$a}';
 $string['lessonformating'] = 'Μορφοποίηση διδασκαλίας';
 $string['lessonmenu'] = 'Μενού διδασκαλίας';
-$string['lessonname'] = 'Διδασκαλία: {$a}';
 $string['lessonnotready'] = 'Η διδασκαλία δεν είναι έτοιμη για παρακολούθηση. Παρακαλούμε επικοινωνήστε με τον/την {$a} σας.';
 $string['lessonnotready2'] = 'Αυτή η διδασκαλία δεν είναι έτοιμη για παρακολούθηση.';
 $string['lessonopen'] = 'Αυτή η διδασκαλία θα είναι ανοιχτή στις {$a}.';
 $string['lessonopens'] = 'Άνοιγμα διδασκαλίας';
-$string['lessonpagelinkingbroken'] = 'Δεν βρέθηκε η πρώτη σελίδα. Η σύνδεση με τη σελίδα της διδασκαλίας μάλλον έχει διακοπεί. Παρακαλούμε επικοινωνήστε με έναν διαχειριστή.';
+$string['lessonpagelinkingbroken'] = 'Δεν βρέθηκε η πρώτη σελίδα. Η σύνδεση με τη σελίδα της διδασκαλίας μάλλον έχει καταστραφεί. Παρακαλούμε επικοινωνήστε με έναν διαχειριστή.';
 $string['lessonstats'] = 'Στατιστικά διδασκαλίας';
 $string['linkedmedia'] = 'Συνδεδεμένα πολυμέσα';
 $string['loginfail'] = 'Αποτυχημένη σύνδεση. Παρακαλούμε προσπαθήστε ξανά...';
@@ -351,15 +349,15 @@ $string['modulename_help'] = 'Το άρθρωμα δραστηριότητας �
 * Για αυτοκατευθυνόμενη εκμάθηση ενός νέου θέματος
 * Για σενάρια ή προσομοιώσεις/ασκήσεις λήψης αποφάσεων
 * Για διαφοροποιημένη επανάληψη, με διαφορετικά σετ ερωτήσεων επανάληψης ανάλογα με τις απαντήσεις που δίνονται σε ερωτήσεις αρχικά.';
-$string['modulename_link'] = 'άρθρωμα/διδασκαλία/εμφάνιση';
-$string['modulenameplural'] = 'Ενότητες';
+$string['modulename_link'] = '';
+$string['modulenameplural'] = 'Διδασκαλίες';
 $string['move'] = 'Μετακίνηση σελίδας';
 $string['movedpage'] = 'Μεταφερθείσα σελίδα';
 $string['movepagehere'] = 'Μεταφορά σελίδας εδώ';
 $string['movepagenamed'] = 'Μετακίνηση σελίδας: {$a}';
 $string['moving'] = 'Μεταφορά σελίδας: {$a}';
 $string['multianswer'] = 'Πολλαπλής απάντησης';
-$string['multianswer_help'] = 'Επιλέξτε το πλαίσιο ελέγχου αν περισσότερες από μία απόκρισεις είναι σωστές.';
+$string['multianswer_help'] = 'Επιλέξτε το πλαίσιο επιλογής αν περισσότερες από μία απόκρισεις είναι σωστές.';
 $string['multichoice'] = 'Πολλαπλής επιλογής';
 $string['multipleanswer'] = 'Πολλαπλή απάντηση';
 $string['nameapproved'] = 'Το όνομα εγκρίθηκε';
@@ -608,7 +606,6 @@ $string['withselectedattempts'] = 'Με τις επιλεγμένες προσπ
 $string['wronganswerjump'] = 'Μεταπήδηση λανθασμένης απάντησης';
 $string['wronganswerscore'] = 'Σκορ λανθασμένης απάντησης';
 $string['wrongresponse'] = 'Λανθασμένη απόκριση';
-$string['xattempts'] = '{$a} προσπάθειες';
 $string['youhaveseen'] = 'Έχετε δει περισσότερες από μία σελίδες αυτής της διδασκαλίας.<br />Θέλετε να ξεκινήσετε από την τελευταία σελίδα που είδατε;';
 $string['youranswer'] = 'Η απάντησή σας';
 $string['yourcurrentgradeis'] = 'Ο τρέχων βαθμός σας είναι {$a}';

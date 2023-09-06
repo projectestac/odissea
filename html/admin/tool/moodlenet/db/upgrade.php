@@ -105,31 +105,29 @@ function xmldb_tool_moodlenet_upgrade(int $oldversion) {
     // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    if ($oldversion < 2020090700) {
-
-        // Find out if there are users with MoodleNet profiles set.
-        $sql = "SELECT u.*
-                  FROM {user} u
-                 WHERE u.moodlenetprofile IS NOT NULL";
-
-        $records = $DB->get_records_sql($sql);
-
-        foreach ($records as $record) {
-            // Force clean user value just incase there is something malicious.
-            $record->moodlenetprofile = clean_text($record->moodlenetprofile, PARAM_NOTAGS);
-            $DB->update_record('user', $record);
+    if ($oldversion < 2022021600) {
+        // This is a special case for if MoodleNet integration has never been enabled,
+        // or if defaultmoodlenet is not set for whatever reason.
+        if (!get_config('tool_moodlenet', 'defaultmoodlenet')) {
+            set_config('defaultmoodlenet', 'https://moodle.net', 'tool_moodlenet');
+            set_config('defaultmoodlenetname', get_string('defaultmoodlenetnamevalue', 'tool_moodlenet'), 'tool_moodlenet');
         }
 
-        upgrade_plugin_savepoint(true, 2020090700, 'tool', 'moodlenet');
+        // Enable MoodleNet and set it to display on activity chooser footer.
+        // But only do this if we know for sure that the default MoodleNet is a working one.
+        if (get_config('tool_moodlenet', 'defaultmoodlenet') == 'https://moodle.net') {
+            set_config('enablemoodlenet', '1', 'tool_moodlenet');
+            set_config('activitychooseractivefooter', 'tool_moodlenet');
+
+            // Use an adhoc task to send a notification to admin stating MoodleNet is automatically enabled after upgrade.
+            $notificationtask = new tool_moodlenet\task\send_enable_notification();
+            core\task\manager::queue_adhoc_task($notificationtask);
+        }
+
+        upgrade_plugin_savepoint(true, 2022021600, 'tool', 'moodlenet');
     }
 
-    // Automatically generated Moodle v3.10.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.11.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2021051701) {
+    if ($oldversion < 2022021601) {
 
         $selectsql = "moodlenetprofile IS NOT NULL AND moodlenetprofile != ''";
 
@@ -145,8 +143,14 @@ function xmldb_tool_moodlenet_upgrade(int $oldversion) {
             core\task\manager::queue_adhoc_task($notificationtask);
         }
 
-        upgrade_plugin_savepoint(true, 2021051701, 'tool', 'moodlenet');
+        upgrade_plugin_savepoint(true, 2022021601, 'tool', 'moodlenet');
     }
+
+    // Automatically generated Moodle v4.0.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v4.1.0 release upgrade line.
+    // Put any upgrade step following this.
 
     return true;
 }

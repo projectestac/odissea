@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'ru', version '3.11'.
+ * Strings for component 'report_performance', language 'ru', version '4.1'.
  *
  * @package     report_performance
  * @category    string
@@ -32,6 +32,9 @@ $string['check_backup_details'] = 'Включение автоматизиров
 $string['check_cachejs_comment_disable'] = 'При включенном параметре повышается производительность загрузки страниц.';
 $string['check_cachejs_comment_enable'] = 'При выключенном параметре страницы могут загружаться медленнее.';
 $string['check_cachejs_details'] = 'Cжатие и кэширование javascript  значительно повышает производительность загрузки страницы. Настоятельно рекомендуется для сайтов в промышленной эксплуатации.';
+$string['check_dbschema_errors'] = 'Схема базы данных не выстроена.';
+$string['check_dbschema_name'] = 'Проверка схемы базы данных';
+$string['check_dbschema_ok'] = 'Схема базы данных корректна.';
 $string['check_debugmsg_comment_developer'] = 'Если установлен параметр, отличный от «РАЗРАБОТЧИК», то производительность может немного повыситься.';
 $string['check_debugmsg_comment_nodeveloper'] = 'При установленном параметре «Разработчик» производительность может быть несколько снижена.';
 $string['check_debugmsg_details'] = 'Если Вы не являетесь разработчиком, то практически нет смысла устанавливать уровень «Разработчик». <p> После получения сообщения об ошибке, скопируйте и сохраните его где-нибудь. Затем НАСТОЯТЕЛЬНО РЕКОМЕНДУЕТСЯ переключить отладчик обратно в НЕТ. Сообщения отладчика могут снижать производительность и дать хакеру ключ к настройкам Вашего сайта. </p>';

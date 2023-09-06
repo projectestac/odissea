@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'fr', version '3.11'.
+ * Strings for component 'completion', language 'fr', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Obtenir la note';
+$string['achievingpassinggrade'] = 'Atteindre la note minimale de réussite';
 $string['activities'] = 'Activités';
 $string['activitiescompleted'] = 'Achèvement d\'activité';
 $string['activitiescompletednote'] = 'Remarque : l\'achèvement d\'activité doit être activé pour une activité au moins, afin qu\'il apparaisse dans la liste ci-dessus.';
@@ -36,6 +37,7 @@ $string['activityaggregation_any'] = 'UNE des activités sélectionnées doit ê
 $string['activitycompletion'] = 'Achèvement d\'activité';
 $string['activitycompletionupdated'] = 'Modifiations enregistrées';
 $string['activitygradenotrequired'] = 'Note non requise';
+$string['activitygradetopassnotset'] = 'Cette activité n\'a pas de note pour passer valide. Elle peut être spécifiée dans les réglages de l\'activité, section Note.';
 $string['affectedactivities'] = 'Les modifications vont toucher les <b>{$a}</b> activités ou ressources :';
 $string['aggregationmethod'] = 'Méthode de combinaison';
 $string['all'] = 'Tous';
@@ -82,6 +84,7 @@ $string['completion-y'] = 'Terminé';
 $string['completion-y-override'] = 'Terminé (défini par {$a})';
 $string['completion_automatic'] = 'Afficher l\'activité comme terminée dès que les conditions sont remplies';
 $string['completion_help'] = 'Cette option permet d\'activer le suivi de l\'achèvement des activités, manuellement ou automatiquement, sur la base de conditions choisies. Plusieurs conditions peuvent être exigées simultanément. Dans ce cas, l\'activité sera considérée comme terminée si toutes les conditions sont remplies.';
+$string['completion_link'] = 'activity/completion';
 $string['completion_manual'] = 'Les participants peuvent marquer manuellement cette activité comme terminée';
 $string['completion_none'] = 'Ne pas afficher l\'état d\'achèvement';
 $string['completionactivitydefault'] = 'Utiliser le réglage par défaut de l\'activité';
@@ -105,6 +108,9 @@ $string['completionnotenabledforcourse'] = 'L\'achèvement n\'est pas activé po
 $string['completionnotenabledforsite'] = 'L\'achèvement n\'est pas activé pour ce site';
 $string['completionondate'] = 'Date';
 $string['completionondatevalue'] = 'Date à laquelle le cours sera marqué comme terminé';
+$string['completionpassgrade'] = 'Requiert une note minimale de réussite';
+$string['completionpassgrade_desc'] = 'L\'étudiant doit obtenir une note minimale de réussite pour achever cette activité';
+$string['completionpassgrade_help'] = 'Si ce réglage est activé, l\'activité est considérée comme achevée lorsque l\'étudiant obtient une note minimale de réussite.';
 $string['completionsettingslocked'] = 'Réglages d\'achèvement verrouillés';
 $string['completionupdated'] = 'Achèvement modifié pour l\'activité <b>{$a}</b>';
 $string['completionusegrade'] = 'Note requise';
@@ -124,6 +130,7 @@ $string['coursecompleted'] = 'Cours terminé';
 $string['coursecompletedmessage'] = '<p>Félicitations !</p><p>Vous avez terminé le cours <a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Achèvement de cours';
 $string['coursecompletioncondition'] = 'Condition : {$a}';
+$string['coursecompletionnavigation'] = 'Navigation tertiaire d\'achèvement de cours';
 $string['coursegrade'] = 'Note du cours';
 $string['coursesavailable'] = 'Cours disponibles';
 $string['coursesavailableexplaination'] = 'Remarque : des critères d\'achèvement de cours doivent être définis pour qu\'un cours apparaisse dans la liste ci-dessus.';
@@ -135,13 +142,16 @@ $string['csvdownload'] = 'Télécharger en format CSV (UTF-8)';
 $string['datepassed'] = 'Date échue';
 $string['days'] = 'Jours';
 $string['daysoftotal'] = '{$a->days} de {$a->total}';
+$string['daysuntilcompletion'] = 'Jours jusqu\'à l\'achèvement';
 $string['defaultcompletion'] = 'Achèvement d\'activité par défaut';
 $string['defaultcompletionupdated'] = 'Modifications enregistrées';
 $string['deletecompletiondata'] = 'Supprimer les données d\'achèvement';
 $string['dependencies'] = 'Dépendances';
 $string['dependenciescompleted'] = 'Achèvement d\'autres cours';
 $string['detail_desc:receivegrade'] = 'Recevoir une note';
+$string['detail_desc:receivepassgrade'] = 'Obtenir une note minimale de réussite';
 $string['detail_desc:view'] = 'Consulter';
+$string['done'] = 'Terminé';
 $string['editcoursecompletionsettings'] = 'Modifier les réglages d\'achèvement du cours';
 $string['enablecompletion'] = 'Activer le suivi de l\'achèvement des activités';
 $string['enablecompletion_help'] = 'Si ce réglage est activé, des conditions d\'achèvement peuvent être définies dans les réglages des activités et/ou dans les conditions d\'achèvement de cours. Il est recommandé d\'activer ce réglage afin que le tableau de bord de progression du cours puisse afficher des données significatives.';
@@ -159,6 +169,7 @@ $string['eventcoursecompletionupdated'] = 'Achèvement de cours modifié';
 $string['eventcoursemodulecompletionupdated'] = 'Achèvement d\'activité modifié';
 $string['eventdefaultcompletionupdated'] = 'Réglage par défaut pour l\'achèvement de l\'activité modifié';
 $string['excelcsvdownload'] = 'Télécharger en format CSV compatible Excel';
+$string['failed'] = 'Échec';
 $string['fraction'] = 'Fraction';
 $string['graderequired'] = 'Note de cours requise';
 $string['gradexrequired'] = '{$a} requis';
@@ -195,6 +206,7 @@ $string['privacy:metadata:gradefinal'] = 'Note finale reçue pour l\'achèvement
 $string['privacy:metadata:overrideby'] = 'L\'identifiant utilisateur de la personne qui a court-circuité l\'achèvement de l\'activité';
 $string['privacy:metadata:reaggregate'] = 'Si l\'achèvement de cours a été recalculé.';
 $string['privacy:metadata:timecompleted'] = 'La date et l\'heure de l\'achèvement du cours.';
+$string['privacy:metadata:timecreated'] = 'L\'horodatage de la création de l\'achèvement de l\'activité';
 $string['privacy:metadata:timeenrolled'] = 'La date et l\'heure de l\'inscription de l\'utilisateur dans le cours';
 $string['privacy:metadata:timemodified'] = 'La date et l\'heure de la modification de l\'achèvement de l\'activité';
 $string['privacy:metadata:timestarted'] = 'La date et l\'heure du début du cours.';
@@ -223,6 +235,8 @@ $string['selfcompletion'] = 'Auto achèvement';
 $string['showcompletionconditions'] = 'Afficher les conditions d\'achèvement des activités';
 $string['showcompletionconditions_help'] = 'Les conditions d\'achèvement d\'une activité sont toujours affichées dans la page de l\'activité. Ce réglage détermine si les conditions sont également affichées au-dessous de chaque activité sur la page de cours.';
 $string['showinguser'] = 'Affichage de l\'utilisateur';
+$string['timecompleted'] = 'Horodatage de l\'achèvement';
+$string['todo'] = 'À faire';
 $string['unenrolingfromcourse'] = 'Désinscription du cours';
 $string['unenrolment'] = 'Désinscription';
 $string['unit'] = 'Unité';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'el', version '3.11'.
+ * Strings for component 'debug', language 'el', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,17 @@ $string['notables'] = 'Δεν υπάρχουν καθόλου πίνακες!';
 $string['outputbuffer'] = 'Ενδιάμεση μνήμη εξόδου';
 $string['phpvaroff'] = 'Η μεταβλητή του εξυπηρετητή PHP «{$a->name}» θα έπρεπε να είναι Off - {$a->link}';
 $string['phpvaron'] = 'Η μεταβλητή του εξυπηρετητή PHP «{$a->name}» δεν είναι On - {$a->link}';
+$string['reactive_highlightoff'] = 'Φωτοεπισήμανση ΟΧΙ';
+$string['reactive_highlighton'] = 'Φωτοεπισήμανση ΝΑΙ';
+$string['reactive_instances'] = 'Επανενεργά στιγμιότυπα:';
+$string['reactive_noinstances'] = 'αυτή η σελίδα δεν έχει επανενεργά στιγμιότυπα';
+$string['reactive_pin'] = 'Καρφίτσωμα';
+$string['reactive_readmodeoff'] = 'Λειτουργία ανάγνωσης ΟΧΙ';
+$string['reactive_readmodeon'] = 'Λειτουργία ανάγνωσης ΝΑΙ';
+$string['reactive_resetpanel'] = 'Επαναρχικοποίηση πάνελ';
+$string['reactive_saveingwarning'] = 'Η επεξεργασία της κατάστασης μπορεί να προκαλέσει απροσδόκητα αποτελέσματα';
+$string['reactive_statedata'] = 'Δεδομένα κατάστασης';
+$string['reactive_unpin'] = 'Ξεκαρφίτσωμα';
 $string['sessionmissing'] = 'Το αντικείμενο {$a} λείπει από τη σύνοδο';
 $string['sqlrelyonobsoletetable'] = 'Η SQL αυτή στηρίζεται σε απαρχαιωμένους πίνακες/-α: {$a}! Ο κώδικάς σας πρέπει να διορθωθεί από κάποιον προγραμματιστή.';
 $string['stacktrace'] = 'Ίχνη στοίβας';

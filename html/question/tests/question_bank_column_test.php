@@ -16,8 +16,8 @@
 
 namespace core_question;
 
-use core_question\bank\view;
-use question_edit_contexts;
+use core_question\local\bank\question_edit_contexts;
+use core_question\local\bank\view;
 use testable_core_question_column;
 
 defined('MOODLE_INTERNAL') || die();
@@ -65,8 +65,8 @@ class question_bank_column_test extends \advanced_testcase {
         $columnbase->display_header();
         $output = ob_get_clean();
 
-        $this->assertStringContainsString(' title="Sort by Apple ascending">Apple</a>', $output);
-        $this->assertStringContainsString(' title="Sort by Banana ascending">Banana</a>', $output);
+        $this->assertStringContainsString(' title="Sort by Apple ascending">', $output);
+        $this->assertStringContainsString(' title="Sort by Banana ascending">', $output);
     }
 
     /**
@@ -101,7 +101,7 @@ class question_bank_column_test extends \advanced_testcase {
         $columnbase->display_header();
         $output = ob_get_clean();
 
-        $this->assertStringContainsString(' title="Sort by Apple Tooltips ascending">Apple</a>', $output);
-        $this->assertStringContainsString(' title="Sort by Banana Tooltips ascending">Banana</a>', $output);
+        $this->assertStringContainsString(' title="Sort by Apple Tooltips ascending">', $output);
+        $this->assertStringContainsString(' title="Sort by Banana Tooltips ascending">', $output);
     }
 }

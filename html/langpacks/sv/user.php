@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'sv', version '3.11'.
+ * Strings for component 'user', language 'sv', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'hemlighet skapad och e-postad till använda
 $string['privacy:metadata:trackforums'] = 'Preferens gällande forum och att spåra dem.';
 $string['privacy:metadata:trustbitmask'] = 'Trust bit mask';
 $string['privacy:metadata:url'] = 'En URL relaterad till användaren.';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Tidstämpel för när välkomstmeddelandet första gången visades för användaren.';
 $string['privacy:metadata:user_preferences'] = 'Preferenser relaterade till den angivna användaren';
 $string['privacy:metadata:user_preferences:name'] = 'Preferensnamn';
 $string['privacy:metadata:user_preferences:userid'] = 'Användar-ID:t';
@@ -149,6 +150,10 @@ $string['privacy:privatefilespath'] = 'Privata filer';
 $string['privacy:profileimagespath'] = 'Profilbilder';
 $string['privacy:sessionpath'] = 'Sessionsdata';
 $string['selectfiltertype'] = 'Välj';
+$string['supportmessagealternative'] = 'Du kan istället skicka e-post till {$a}';
+$string['supportmessagenotsent'] = 'Tyvärr kunde ditt meddelande inte skickas.';
+$string['supportmessagesent'] = 'Meddelandet skickades';
+$string['supportmessagesentforloggedoutuser'] = '<strong>OBS!</strong> Se upp med det här meddelandet! Avsändaren var inte inloggad och hens identitet har inte kunnat bekräftas.';
 $string['target:upcomingactivitiesdue'] = 'Aktiviteter som förfaller';
 $string['target:upcomingactivitiesdue_help'] = 'Detta mål skapar påminnelser om aktiviteter som förfaller.';
 $string['target:upcomingactivitiesdueinfo'] = 'Alla insikter om aktiviteter som förfaller listas här. Dessa studenter har tagit del av insikterna direkt.';

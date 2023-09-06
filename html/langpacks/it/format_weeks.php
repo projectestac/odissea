@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'it', version '3.11'.
+ * Strings for component 'format_weeks', language 'it', version '4.1'.
  *
  * @package     format_weeks
  * @category    string
@@ -33,6 +33,8 @@ $string['deletesection'] = 'Elimina settimana';
 $string['editsection'] = 'Modifica settimana';
 $string['editsectionname'] = 'Modifica nome della settimana';
 $string['hidefromothers'] = 'Nascondi settimana';
+$string['indentation'] = 'Consenti rientro nella pagina home del corso';
+$string['indentation_help'] = 'Consente ai docenti e ad altri utenti con il privilegio  di gestione delle attività di far rientrare gli elementi nella pagina home del corso.';
 $string['newsectionname'] = 'Nuovo nome della settimana {$a}';
 $string['page-course-view-weeks'] = 'Qualsiasi tipo di pagina principale dei corso in formato settimanale';
 $string['page-course-view-weeks-x'] = 'Qualsiasi pagina di corso in formato settimanale';

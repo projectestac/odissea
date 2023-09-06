@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'sv', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'sv', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -65,6 +65,7 @@ $string['pleaseenterananswer'] = 'Ange ett svar.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Ange ditt svar utan att använda tusentalsavgränsare ({$a}).';
 $string['pluginname'] = 'Numerisk';
 $string['pluginname_help'] = 'Från elevens perspektiv ser en numerisk fråga ut precis som en kort svar fråga. Skillnaden är att numeriska svar får ha ett godkänt fel. Detta möjliggör en fast antal svar att utvärderas som ett svar. Till exempel, om svaret är 10 med ett accepterat fel av 2, då kommer ett tal mellan 8 och 12 att accepteras som korrekt svar.';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = 'Lägga till en numerisk fråga';
 $string['pluginnameediting'] = 'Redigera en numerisk fråga';
 $string['pluginnamesummary'] = 'Tillåter ett numeriskt svar, eventuellt med enheter, som poängsätts genom att jämföras mot olika modellsvar, eventuellt med toleranser.';
@@ -107,13 +108,6 @@ $string['unitposition'] = 'Enhetsplacering';
 $string['units'] = 'Enheter';
 $string['unitselect'] = 'en nedrullningsmeny';
 $string['unitx'] = 'Enhet {no}';
-$string['validnumberformats'] = 'Giltiga talformat';
-$string['validnumberformats_help'] = '* vanliga nummer 13500.67, 13 500.67, 13500,67 eller 13 500,67
-
-* om inställningarna för språkpaketet (filen langconfig.php) använder ett kommatecken (,) som tusenavgränsare, ange *alltid* decimaltecknet (.) så som i exemplet: 13,500.67 : 13,500.
-
-* för exponentform, t.ex. 1,350067 * 10 <sup>4</sup>, använd 1,350067 E4: 1,350067 E04';
-$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 eller 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} måste vara ett nummer.';
 $string['xmustnotbenumeric'] = '{$a} får inte vara ett nummer.';
 $string['youmustenteramultiplierhere'] = 'Du måste ange en multiplikator här.';

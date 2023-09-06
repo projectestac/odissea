@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_lmb', language 'ca', version '3.11'.
+ * Strings for component 'enrol_lmb', language 'ca', version '4.1'.
  *
  * @package     enrol_lmb
  * @category    string
@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['coursehiddennever'] = 'Mai';
 $string['createnewusers'] = 'Crea comptes d\'usuari per a usuaris no registrats a Moodle';
 $string['never'] = 'Mai';

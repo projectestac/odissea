@@ -326,7 +326,7 @@ External tool activities differ from URL resources in a few ways:
 $string['modulename_link'] = 'mod/lti/view';
 $string['modulename_shortcut_link'] = 'mod/lti/view/custom';
 $string['modulenameplural'] = 'External tools';
-$string['modulenamepluralformatted'] = 'LTI Instances';
+$string['modulenamepluralformatted'] = 'External tools';
 $string['name'] = 'Name';
 $string['never'] = 'Never';
 $string['new_window'] = 'New window';
@@ -601,12 +601,6 @@ $string['using_tool_cartridge'] = 'Using tool cartridge';
 $string['using_tool_configuration'] = 'Using tool configuration: ';
 $string['validurl'] = 'A valid URL must start with http(s)://';
 $string['viewsubmissions'] = 'View submissions and grading screen';
-
-// Deprecated since Moodle 3.9.
-$string['organizationid'] = 'Organisation ID';
-$string['organizationid_help'] = 'A unique identifier for this Moodle instance. Typically, the DNS name of the organisation is used.
-
-If this field is left blank, the host name of this Moodle site will be used as the default value.';
 
 // Deprecated since Moodle 3.10.
 $string['contentitem'] = 'Content-Item Message';

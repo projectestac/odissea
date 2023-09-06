@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'eu', version '3.11'.
+ * Strings for component 'qtype_match', language 'eu', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughquestions'] = 'Gutxienez {$a} galdera eman behar d(it)uzu eta 
 $string['pleaseananswerallparts'] = 'Mesedez, erantzun galderaren atal guztiei';
 $string['pluginname'] = 'Lotu';
 $string['pluginname_help'] = 'Entzuntziatu lotu izeneko galderetan izen-zerrenda bat (galderak) eta izen edo enuntziatuen beste zerrenda baten (erantzunak) arteko erlazioa zuzen ezarri behar da.';
+$string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = 'Lotu galdera gehitzen';
 $string['pluginnameediting'] = 'Lotu galdera editatzen';
 $string['pluginnamesummary'] = 'Azpigaldera multzo bateko bakoitzeko erantzuna aukera-zerrenda batetik aukeratu behar da.';
@@ -46,5 +47,7 @@ $string['privacy:metadata'] = 'Lotu galdera mota pluginak egileari aukera lehene
 $string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
 $string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
 $string['privacy:preference:shuffleanswers'] = 'Erantzunak automatikoki nahastu behar diren edo ez.';
+$string['regradeissuenumchoiceschanged'] = 'Aukera kopurua aldatu da.';
+$string['regradeissuenumstemschanged'] = 'Azpigaldera kopurua aldatu da.';
 $string['shuffle'] = 'Nahastu';
 $string['shuffle_help'] = 'Gaituz gero, saiakera bakoitzeko galderak ausaz ordenatzen dira, betiere galdetegiaren ezarpenetako "Galderen barruan nahastu" ezarpena ere markatuta badago. Lotu motako galderetan aldagai honek galderari baino ez dio eragiten, erantzunerako aukerak beti nahastuko dira.';

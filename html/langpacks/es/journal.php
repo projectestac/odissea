@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'es', version '3.11'.
+ * Strings for component 'journal', language 'es', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -40,6 +40,7 @@ $string['journalquestion'] = 'Pregunta del Diario';
 $string['mailsubject'] = 'Retroalimentación del Diario';
 $string['modulename'] = 'Diario';
 $string['modulename_help'] = 'La actividad de revista (journal) les permite a los profesores obtener retroalimentación de estudiantes sobre un tema específico';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = 'Diarios';
 $string['newjournalentries'] = 'Nuevas entradas en el Diario';
 $string['noentriesmanagers'] = 'No hay profesores';

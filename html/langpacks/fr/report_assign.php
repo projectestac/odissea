@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_assign', language 'fr', version '3.11'.
+ * Strings for component 'report_assign', language 'fr', version '4.1'.
  *
  * @package     report_assign
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addextension'] = 'Ajouter l\'extension';
-$string['allocatedmarker'] = 'Marqueur';
-$string['allocationon'] = 'Allocation de ressources activée';
+$string['addextension'] = 'Octroyer une prolongation';
+$string['allocatedmarker'] = 'Évaluateur attribué';
+$string['allocationon'] = 'Attribution des évaluateurs activée';
 $string['annotatedpdfs'] = 'PDF annotés';
 $string['anonymous'] = 'Anonyme';
 $string['anonymousassignments'] = 'Devoirs';
@@ -37,17 +37,20 @@ $string['assign:view'] = 'Afficher le rapport de remise des devoirs';
 $string['assignmentname'] = 'Nom du devoir';
 $string['byuser'] = 'Par (utilisateur)';
 $string['created'] = 'Créé';
-$string['duedate'] = 'Date finale';
+$string['duedate'] = 'Date limite';
+$string['dumpfiles'] = 'Télécharger les fichiers';
 $string['dumpformhelp'] = 'Sélectionner les éléments à exporter (tout par défaut)';
 $string['email'] = 'Courriel';
 $string['eventassignmentviewed'] = 'Rapport de devoir consulté';
 $string['eventdump'] = 'Fichiers de devoirs envoyés vers le Zip';
 $string['eventexport'] = 'Devoir exporté';
+$string['eventoffline'] = 'Évaluation de devoir hors ligne';
 $string['eventreportviewed'] = 'Rapport de devoir consulté';
 $string['export'] = 'Exporter';
 $string['exportall'] = 'Tout exporter';
-$string['extension'] = 'Extension';
-$string['extensionpopuptitle'] = 'Définir l\'extension';
+$string['extension'] = 'Prolongation';
+$string['extensionhelp'] = 'Étendre/octroyer une prolongation en jour(s) pour « {$a} »';
+$string['extensionpopuptitle'] = 'Définir la prolongation';
 $string['feedback'] = 'Feedback';
 $string['feedbackcomments'] = 'Commentaires de feedback';
 $string['feedbackfiles'] = 'Fichiers de feedback';
@@ -61,6 +64,8 @@ $string['noassignments'] = 'Il n\'y a aucun devoir dans ce cours';
 $string['nocapability'] = 'Vous n\'avez pas les droits pour consulter ce rapport';
 $string['nologdata'] = 'Aucune donnée de journal pour ce devoir remis';
 $string['notallowed'] = 'Vous n\'avez pas l\'autorisation de voir l\'activité sélectionnée';
+$string['offline'] = 'Hors ligne';
+$string['offlineworkbook'] = 'Exportation des notes hors ligne';
 $string['participantno'] = 'Participant No';
 $string['plagiarism'] = 'Plagiat';
 $string['pluginname'] = 'Rapport de remise de devoir';
@@ -83,5 +88,6 @@ $string['turnitin'] = 'Turnitin';
 $string['turnitinenabled'] = 'Turnitin activé';
 $string['urkund'] = 'Urkund';
 $string['urkundenabled'] = 'Urkund activé';
+$string['workbook'] = 'Exportation du rapport des travaux remis de devoirs';
 $string['workflow'] = 'Flux';
 $string['workflowon'] = 'Flux activé';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'it', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'it', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'Audio e video';
 $string['audiobitrate'] = 'Velocità audio in bit';
 $string['audiobitrate_desc'] = 'Qualità della registrazione audio (un numero più grande significa maggiore qualità)';
 $string['audiortc'] = 'Registra audio';
+$string['audiotimelimit'] = 'Durata massima del\'audio, in secondi';
+$string['audiotimelimit_desc'] = 'Lunghezza massima consentita delle registrazioni audio.';
 $string['gumabort'] = 'È successo qualcosa di strano che ha impedito l\'utilizzo della webcam / microfono';
 $string['gumabort_title'] = 'È accaduto qualcosa';
 $string['gumnotallowed'] = 'L\'utente deve consentire al browser di accedere alla Webcam e/o al microfono';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'Avvia registrazione';
 $string['stoprecording'] = 'Interrompi registrazione';
 $string['timelimit'] = 'Limite di tempo in secondi';
 $string['timelimit_desc'] = 'Durata massima delle registrazioni audio/video';
+$string['timelimitwarning'] = 'È necessari inserire un numero maggiore di 0.';
 $string['uploadaborted'] = 'Caricamento interrotto:';
 $string['uploadfailed'] = 'Caricamento non andato a buon fine:';
 $string['uploadfailed404'] = 'Caricamento non andato a buon fine: il file è troppo grande';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'completato';
 $string['videobitrate'] = 'Velocità video in bit';
 $string['videobitrate_desc'] = 'Qualità della registrazione video (un numero maggiore significa una qualità superiore)';
 $string['videortc'] = 'Registra video';
+$string['videotimelimit'] = 'Durata massima del video, in secondi';
+$string['videotimelimit_desc'] = 'Lunghezza massima consentita delle registrazioni video.';

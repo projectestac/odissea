@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'ru', version '3.11'.
+ * Strings for component 'theme_classic', language 'ru', version '4.1'.
  *
  * @package     theme_classic
  * @category    string
@@ -38,3 +38,4 @@ $string['privacy:metadata'] = 'Тема Classic не хранит никаких
 $string['region-side-post'] = 'Справа';
 $string['region-side-pre'] = 'Слева';
 $string['sitetitle'] = 'Название сайта';
+$string['totop'] = 'Наверх';

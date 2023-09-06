@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ar', version '3.11'.
+ * Strings for component 'cache', language 'ar', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -35,25 +35,31 @@ $string['area'] = 'المنطقة';
 $string['cacheadmin'] = 'إدارة المخبوءات';
 $string['cacheconfig'] = 'التهيئة';
 $string['cachedef_calculablesinfo'] = 'معلومات التحليل القابلة للحساب';
-$string['cachedef_calendar_categories'] = 'تصنيفات مقررات التقويم التي يمكن للمستخدم الوصول إليها';
+$string['cachedef_calendar_categories'] = 'تصنيفات مساقات التقويم التي يمكن للمستخدم الوصول إليها';
 $string['cachedef_calendar_subscriptions'] = 'إشتراكات التقويم';
 $string['cachedef_capabilities'] = 'قائمة إمكانيات النظام';
 $string['cachedef_completion'] = 'حالة اكمال النشاط';
 $string['cachedef_config'] = 'إعدادات التهيئة';
+$string['cachedef_contentbank_allowed_categories'] = 'تصنيفات المقررات الدراسية لبنك المحتوى المسموح بها للمستخدم الحالي';
+$string['cachedef_contentbank_allowed_courses'] = 'المقررات الدراسية لبنك المحتوى المسموح بها للمستخدم الحالي';
 $string['cachedef_contentbank_context_extensions'] = 'الإمتدادات المسموح بها والإضافات الداعمة لها ضمن سياق بنك المحتوى';
 $string['cachedef_contentbank_enabled_extensions'] = 'الإمتدادات المسموح بها والإضافات الداعمة لها في بنك المحتوى';
 $string['cachedef_contextwithinsights'] = 'السياق مع الرؤى';
 $string['cachedef_course_image'] = 'صور المساق';
-$string['cachedef_course_user_dates'] = 'تواريخ المستخدم للمقررات المضبوطة على نمط التواريخ النسبية';
+$string['cachedef_course_user_dates'] = 'تواريخ المستخدم للمساقات المضبوطة على نمط التواريخ النسبية';
 $string['cachedef_coursecat'] = 'قوائم تصنيفات المقررات الدراسية لمستخدم معين';
 $string['cachedef_coursecatrecords'] = 'سجلات فئات المقررات الدراسية';
 $string['cachedef_coursecattree'] = 'شجرة تصنيفات المقررات الدراسية';
 $string['cachedef_coursecompletion'] = 'حالة الانتهاء من الدورة';
-$string['cachedef_coursecontacts'] = 'قائمة الاتصالات بالمقرر';
+$string['cachedef_coursecontacts'] = 'قائمة الاتصالات بالمساق';
+$string['cachedef_courseeditorstate'] = 'مفاتيح تخبئة حالة جلسة المساق للتحري عن التغييرات في المساق عند طرف الواجهة';
 $string['cachedef_coursemodinfo'] = 'المعلومات المتراكمة حول الوحدات والمقاطع لكل مساق';
+$string['cachedef_coursesectionspreferences'] = 'تفضيلات مقاطع المساق';
 $string['cachedef_databasemeta'] = 'قاعدة البيانات الوصفية للمعلومات';
+$string['cachedef_deprecatedcapabilities'] = 'قائمة إمكانيات النظام المهملة';
 $string['cachedef_eventinvalidation'] = 'إبطال الحدث';
 $string['cachedef_externalbadges'] = 'شارات خارجية لمستخدم معين';
+$string['cachedef_file_imageinfo'] = 'معلومات ملف الصورة، كأبعادها مثلاً';
 $string['cachedef_fontawesomeiconmapping'] = 'رسم خرائط رموز الخط الرائع';
 $string['cachedef_grade_categories'] = 'استعلامات تصنيف التقديرات';
 $string['cachedef_grade_letters'] = 'استعلامات حرف التقدير';
@@ -68,7 +74,7 @@ $string['cachedef_locking'] = 'التأمين';
 $string['cachedef_message_processors_enabled'] = 'تمكين حالة معالجات الرسائل';
 $string['cachedef_message_time_last_message_between_users'] = 'تم إنشاء الوقت لأحدث للرسالة في المحادثة';
 $string['cachedef_modelfirstanalyses'] = 'أول تحليل حسب النموذج وقابل للتحليل';
-$string['cachedef_navigation_expandcourse'] = 'مقررات التنقل القابلة للتوسيع';
+$string['cachedef_navigation_expandcourse'] = 'مساقات التنقل القابلة للتوسيع';
 $string['cachedef_observers'] = 'مراقبوا الحدث';
 $string['cachedef_plugin_functions'] = 'خطوط رجوع الإضافات المتاحة';
 $string['cachedef_plugin_manager'] = 'مدير معلومات الإضافة';
@@ -76,7 +82,8 @@ $string['cachedef_portfolio_add_button_portfolio_instances'] = 'مثيلات ا�
 $string['cachedef_postprocessedcss'] = 'تأجيل معالجة CSS';
 $string['cachedef_presignup'] = 'بيانات التسجيل المسبق لمستخدم معين غير مسجل';
 $string['cachedef_questiondata'] = 'تعاريف الأسئلة';
-$string['cachedef_recommendation_favourite_course_content_items'] = 'توصية فقرات محتوى المقرر الدراسي';
+$string['cachedef_recommendation_favourite_course_content_items'] = 'توصية فقرات محتوى المساق';
+$string['cachedef_reportbuilder_allowed_reports'] = 'التقارير المتاحة للمستخدمين وفقًا للجمهور';
 $string['cachedef_repositories'] = 'مستودعات مثيلات البيانات';
 $string['cachedef_roledefs'] = 'تعريفات الدور';
 $string['cachedef_string'] = 'خبء جُمل اللغة';
@@ -84,13 +91,14 @@ $string['cachedef_suspended_userids'] = 'قائمة المستخدمين الم�
 $string['cachedef_tagindexbuilder'] = 'نتائج البحث عن العناصر الموسومة';
 $string['cachedef_tags'] = 'مجموعات الوسوم ومناطقها';
 $string['cachedef_temp_tables'] = 'خبء الجداول المؤقتة';
-$string['cachedef_user_course_content_items'] = 'فقرات محتوى المستخدم (النشاطات، الموارد وأنواعها الفرعية) لكل مقرر دراسي';
+$string['cachedef_user_course_content_items'] = 'فقرات محتوى المستخدم (النشاطات، الموارد وأنواعها الفرعية) لكل مساق';
 $string['cachedef_user_favourite_course_content_items'] = 'فقرات المستخدم المعلمة بنجمة';
 $string['cachedef_user_group_groupings'] = 'مجموعات المستخدم ومجموعات لكل مادة';
 $string['cachedef_userselections'] = 'البيانات المستخدمة لاستمرار تحديدات المستخدم في جميع أنحاء Moodle';
 $string['cachedef_yuimodules'] = 'تعريفات وحدة YUI';
 $string['cachelock_file_default'] = 'التأمين الافتراضي للملف';
 $string['cachestores'] = 'مخازن المخبوءات';
+$string['cacheusage'] = 'استعمال الخبء';
 $string['caching'] = 'التخبئة';
 $string['canuselocalstore'] = 'يمكن استعمال المخزن المحلي';
 $string['component'] = 'العنصر';
@@ -113,6 +121,7 @@ $string['deletestore'] = 'احذف المخزن';
 $string['deletestoreconfirmation'] = 'هل أنت متأكد أنك تريد حذف المخزن "{$a}"';
 $string['deletestorehasmappings'] = 'لا يمكنك حذف هذا المخزن لأنه يحتوي تخطيطا . يرجى حذف كافة التخطيطات قبل حذف المخزن';
 $string['deletestoresuccess'] = 'تم حذف مخزن الخبء بنجاح.';
+$string['editdefinitionmapping'] = 'تحرير تعيين التعريف';
 $string['editdefinitionmappings'] = 'تعريف تخطيطات المخزن {$a}';
 $string['editdefinitionsharing'] = 'تحرير مشاركة التعريف لـ {$a}';
 $string['editmappings'] = 'تحرير التخطيطات';
@@ -155,8 +164,6 @@ $string['pluginsummaries'] = 'مخازن الخبء المنصبة';
 $string['privacy:metadata:cachestore'] = 'يقوم نظام التخبئة الفرعي بتخزين البيانات مؤقتاً نيابة عن أجزاء أخرى من مودل. هذه البيانات لا يمكن التعرف عليها بسهولة، وهي قصيرة الأجل للغاية. إنها بمثابة خبء للبيانات المخزنة في مكان آخر من مودل، وبالتالي تنبغي معالجتها بالفعل من قبل تلك المكونات في مودل.';
 $string['purge'] = 'تطهير';
 $string['purgeagain'] = 'التطهير مرة أخرى';
-$string['purgedefinitionsuccess'] = 'تم بنجاح إزالة التعريف المطلوب.';
-$string['purgestoresuccess'] = 'بنجاح تم تطهير المخزن المطلوب .';
 $string['purgexdefinitionsuccess'] = 'تم بنجاح تطهير المخبوء "{$a->name}"، ({$a->component}/{$a->area}).';
 $string['purgexstoresuccess'] = 'تم بنجاح تطهير المخزون "{$a->store}".';
 $string['requestcount'] = 'اختبار مع {$a} طلبات';
@@ -204,5 +211,14 @@ $string['tested'] = 'تم الاختبار';
 $string['testperformance'] = 'إختبار الأداء';
 $string['unsupportedmode'] = 'وضع غير مدعوم';
 $string['untestable'] = 'غير مستقر';
+$string['updatedefinitionmapping'] = 'تحرير تعيين التعريف';
+$string['updatedefinitionsharing'] = 'تحرير مشاركة التعريف';
+$string['usage_items'] = 'العناصر';
+$string['usage_mean'] = 'متوسط حجم العنصر';
+$string['usage_realtotal'] = 'الاستعمال الفعلي (إذا عُلِم)';
+$string['usage_samples'] = 'العناصر التي أُخذت عينات منها حسب الخبء';
+$string['usage_sd'] = 'الانحراف المعياري';
+$string['usage_total'] = 'الإجمالي التقديري';
+$string['usage_totalmargin'] = 'هامش الخطأ (95%)';
 $string['userinputsharingkey'] = 'مفتاح مخصص للمشاركة';
 $string['userinputsharingkey_help'] = 'أدخل المفتاح الخاص بك هنا. عندما تقوم بإعداد متاجر أخرى على مواقع أخرى ، فأنت ترغب في مشاركة البيانات مع التأكد من ضبط نفس المفتاح بالضبط هناك.';

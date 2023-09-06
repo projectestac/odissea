@@ -586,8 +586,8 @@
 		
 		"evaluate_keyword": "оценивать",
 		
-		"home_getting_started_welcome_header_text": "Добро пожаловать в WirisQuizzes 4.7.0",
-        "home_getting_started_welcome_description_text": "Здравствуйте! Мы добавили в наше меню раздел «Начало работы», чтобы помочь подробнее ознакомиться с WirisQuizzes, предоставив доступ к нашей документации, учебным материалам и новостям.",
+		"home_getting_started_welcome_header_text": "Представление WirisQuizzes 4.8.0: теперь с ответами с поддержкой рукописного ввода графиков",
+        "home_getting_started_welcome_description_text": "С радостью представляем новый тип ответов, который позволяет студентам отвечать на вопросы, используя рукописный ввод графиков. Чтобы получить дополнительную информацию об этой возможности, ознакомьтесь с нашими примечаниями к версии и документацией. Надеемся, вы и ваши студенты по достоинству оцените это нововведение в WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Примечания к версии",
         "home_getting_give_us_feedback_button_text": "Оставить отзыв",
         "home_getting_started_create_question_header_text": "Как создать первый вопрос",
@@ -603,7 +603,15 @@
         "home_getting_started_contact_us_button_text": "Обратная связь",
         "home_getting_started_visit_our_webpage_button_text": "Посетить наш веб-сайт",
         "home_getting_started_report_an_issue_button_text": "Сообщить о проблеме",
-		"home_getting_started_list_button_text": "Начало работы"
+		"home_getting_started_list_button_text": "Начало работы",
+
+		"quizzes_studio_home_answer_type_sketch_label": "Эскиз",
+		"quizzes_studio_home_initial_content_description_sketch": "Это начальный вид графического редактора, который представляется студентам при попытке ответить на вопрос. Имейте в виду, что на панели инструментов студента отображаются только кнопки рукописного ввода и удаления. Используйте функцию «Проверить данный вопрос», чтобы узнать, как он будет выглядеть.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_1": "Введите правильный ответ на данный вопрос. Инструмент рукописного ввода дает студентам возможность представить свое решение в виде эскиза, поэтому мы предусмотрели минимальный допуск на незначительные неточности в ответах. Его можно настроить, открыв параметры проверки соответствия.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Нажмите кнопку «Проверить данный вопрос», чтобы узнать, что увидит студент.",
+		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Эскиз равен",
+		"quizzes_demo_sketch_title_menu" : "Эскиз",
+		"home_getting_started_documentation_button_text" : "Документация"
 	}
 }
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'ru', version '3.11'.
+ * Strings for component 'qtype_ordering', language 'ru', version '4.1'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -36,6 +36,7 @@ $string['noresponsedetails'] = 'К сожалению,  не имеется ни
 $string['notenoughanswers'] = 'Вопросов для упорядочения должно быть больше, чем  ответов ({$a}).';
 $string['pluginname'] = 'Упорядочение';
 $string['pluginname_help'] = 'Некоторые элементы отображаются в случайном порядке. Элементы могут быть перетянуты и расположены в правильном порядке.';
+$string['pluginname_link'] = 'question/type/ordering';
 $string['pluginnameadding'] = 'Добавление вопроса на Упорядочение';
 $string['pluginnameediting'] = 'Редактирование вопроса на Упорядочение';
 $string['pluginnamesummary'] = 'Расположите перемешанные элементы в правильном порядке.';

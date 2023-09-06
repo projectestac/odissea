@@ -135,7 +135,7 @@ trait behat_session_trait {
         }
 
         // How much we will be waiting for the element to appear.
-        if (!$timeout) {
+        if ($timeout === false) {
             $timeout = self::get_timeout();
             $microsleep = false;
         } else {
@@ -356,7 +356,7 @@ trait behat_session_trait {
     protected function spin($lambda, $args = false, $timeout = false, $exception = false, $microsleep = false) {
 
         // Using default timeout which is pretty high.
-        if (!$timeout) {
+        if ($timeout === false) {
             $timeout = self::get_timeout();
         }
 
@@ -755,8 +755,10 @@ trait behat_session_trait {
 
     /**
      * Change browser window size.
-     *   - small: 640x480
-     *   - medium: 1024x768
+     *   - mobile: 425x750
+     *   - tablet: 768x1024
+     *   - small: 1024x768
+     *   - medium: 1366x768
      *   - large: 2560x1600
      *
      * @param string $windowsize size of window.
@@ -772,6 +774,14 @@ trait behat_session_trait {
         }
 
         switch ($windowsize) {
+            case "mobile":
+                $width = 425;
+                $height = 750;
+                break;
+            case "tablet":
+                $width = 768;
+                $height = 1024;
+                break;
             case "small":
                 $width = 1024;
                 $height = 768;
@@ -930,7 +940,7 @@ EOF;
                         $msgs[] = $errnostring . ": " .$error['message'] . " at " . $error['file'] . ": " . $error['line'];
                     }
                     $msg = "PHP errors found:\n" . implode("\n", $msgs);
-                    throw new \Exception(htmlentities($msg));
+                    throw new \Exception(htmlentities($msg, ENT_COMPAT));
                 }
 
                 return;
@@ -968,7 +978,7 @@ EOF;
                 }
 
                 $msg = "Moodle exception: " . $errormsg->getText() . "\n" . $errorinfo;
-                throw new \Exception(html_entity_decode($msg));
+                throw new \Exception(html_entity_decode($msg, ENT_COMPAT));
             }
 
             // Debugging messages.
@@ -978,7 +988,7 @@ EOF;
                     $msgs[] = $this->get_debug_text($debuggingmessage->getHtml());
                 }
                 $msg = "debugging() message/s found:\n" . implode("\n", $msgs);
-                throw new \Exception(html_entity_decode($msg));
+                throw new \Exception(html_entity_decode($msg, ENT_COMPAT));
             }
 
             // PHP debug messages.
@@ -989,7 +999,7 @@ EOF;
                     $msgs[] = $this->get_debug_text($phpmessage->getHtml());
                 }
                 $msg = "PHP debug message/s found:\n" . implode("\n", $msgs);
-                throw new \Exception(html_entity_decode($msg));
+                throw new \Exception(html_entity_decode($msg, ENT_COMPAT));
             }
 
             // Any other backtrace.
@@ -1003,7 +1013,7 @@ EOF;
                         $msgs[] = $backtrace . '()';
                     }
                     $msg = "Other backtraces found:\n" . implode("\n", $msgs);
-                    throw new \Exception(htmlentities($msg));
+                    throw new \Exception(htmlentities($msg, ENT_COMPAT));
                 }
             }
 
@@ -1684,5 +1694,31 @@ EOF;
         $matches = array_filter($tags, $callback);
 
         return !empty($matches);
+    }
+
+    /**
+     * Get the user id from an identifier.
+     *
+     * The user username and email fields are checked.
+     *
+     * @param string $identifier The user's username or email.
+     * @return int|null The user id or null if not found.
+     */
+    protected function get_user_id_by_identifier(string $identifier): ?int {
+        global $DB;
+
+        $sql = <<<EOF
+    SELECT id
+      FROM {user}
+     WHERE username = :username
+        OR email = :email
+EOF;
+
+        $result = $DB->get_field_sql($sql, [
+            'username' => $identifier,
+            'email' => $identifier,
+        ]);
+
+        return $result ?: null;
     }
 }

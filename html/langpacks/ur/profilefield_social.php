@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_social', language 'ur', version '3.11'.
+ * Strings for component 'profilefield_social', language 'ur', version '4.1'.
  *
  * @package     profilefield_social
  * @category    string
@@ -25,4 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['aimid'] = 'اے آئی ایم آئی ڈی';
+$string['icqnumber'] = 'آئی سی کیو نمبر';
+$string['invalidnetwork'] = 'غلط سماجی نیٹ ورک';
+$string['msnid'] = 'ایم ایس این آئی ڈی';
+$string['networkinuse'] = 'سماجی نیٹ ورک پہلے ہی شامل کیا جا چکا ہے';
+$string['networktype'] = 'نیٹ ورک کی قسم';
+$string['pluginname'] = 'سماجی';
+$string['privacy:metadata:profile_field_social:data'] = 'ٹیکسٹ ایریا صارف پروفائل فیلڈ صارف ڈیٹا';
+$string['privacy:metadata:profile_field_social:dataformat'] = 'ٹیکسٹ ایریا صارف پروفائل فیلڈ صارف ڈیٹا کا فارمیٹ';
+$string['privacy:metadata:profile_field_social:fieldid'] = 'پروفائل فیلڈ کی آئی ڈی';
+$string['privacy:metadata:profile_field_social:tableexplanation'] = 'اضافی پروفائل ڈیٹا';
+$string['privacy:metadata:profile_field_social:userid'] = 'اس صارف کی آئی ڈی جس کا ڈیٹا سوشل صارف پروفائل فیلڈ کے ذریعے محفوظ کیا جاتا ہے';
+$string['skypeid'] = 'اسکائپ آئی ڈی';
 $string['webpage'] = 'صفحہ ویب';
+$string['yahooid'] = 'یاہو آئی ڈی';

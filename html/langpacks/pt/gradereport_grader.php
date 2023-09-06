@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'pt', version '3.11'.
+ * Strings for component 'gradereport_grader', language 'pt', version '4.1'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -32,7 +32,7 @@ $string['ajaxfailedupdate'] = 'Não é possível atualizar [1] [2]';
 $string['ajaxfieldchanged'] = 'O campo que está a editar alterou-se, gostaria de usar o valor atualizado?';
 $string['eventgradereportviewed'] = 'Relatório de avaliador visualizado';
 $string['grader:manage'] = 'Gerir relatório de avaliação';
-$string['grader:view'] = 'Ver o relatório de avaliação';
+$string['grader:view'] = 'Ver relatório de avaliação';
 $string['overriddengrade'] = 'Nota ajustada';
 $string['pluginname'] = 'Relatório do avaliador';
 $string['preferences'] = 'Preferências do relatório do avaliador';
@@ -57,7 +57,7 @@ $string['privacy:metadata:preference:grade_report_showquickfeedback'] = 'Se deve
 $string['privacy:metadata:preference:grade_report_showranges'] = 'Se deve exibir uma linha adicional com a média de cada categoria e item de avaliação';
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Se deve, ou não, exibir a imagem de perfil do utilizador ao lado do nome';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'O número de alunos exibidos por página no relatório da pauta';
-$string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Tem algumas categorias de pauta contraídas na disciplina "{$a->name}"';
+$string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Existem algumas categorias de pauta contraídas na disciplina "{$a->name}"';
 $string['summarygrader'] = 'Uma tabela com os nomes dos alunos na primeira coluna, com atividades para avaliação agrupadas por categoria e disciplina na parte superior.';
 $string['useractivityfeedback'] = '{$a} feedback';
 $string['useractivitygrade'] = '{$a} nota';

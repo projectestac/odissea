@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_ejsapp_file_browser', language 'el', version '3.11'.
+ * Strings for component 'block_ejsapp_file_browser', language 'el', version '4.1'.
  *
  * @package     block_ejsapp_file_browser
  * @category    string
@@ -39,7 +39,7 @@ $string['load_code'] = 'Φόρτωση κώδικα';
 $string['managemyfiles'] = 'Διαχείριση των αρχείων μου';
 $string['play_capture'] = 'Φόρτωση';
 $string['pluginname'] = 'Περιηγητής «προσωπικών αρχείων» EJSApp';
-$string['privatefiles'] = 'Προσωπικά πεδία';
+$string['privatefiles'] = 'Προσωπικά αρχεία';
 $string['reset_capture'] = 'Επαναρχικοποίηση';
 $string['run_code'] = 'Εκτέλεση κώδικα';
 $string['save_code'] = 'Αποθήκευση κώδικα';

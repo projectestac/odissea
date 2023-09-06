@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_pdf', language 'ca', version '3.11'.
+ * Strings for component 'assignfeedback_pdf', language 'ca', version '4.1'.
  *
  * @package     assignfeedback_pdf
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badaction'] = 'L\'acció no és vàlida \'{$a}';
 $string['badtype'] = '{$a} no és un tipus vàlid';
+$string['next'] = 'Següent';
 $string['test_empty'] = 'El camí de ghostscript és buit. Introduïu el camí correcte';

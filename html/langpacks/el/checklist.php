@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'el', version '3.11'.
+ * Strings for component 'checklist', language 'el', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -76,7 +76,7 @@ $string['headingitem'] = 'Αυτό το στοιχείο είναι μια επ�
 $string['import'] = 'Εισαγωγή στοιχείων';
 $string['importfile'] = 'Επιλέξτε αρχείο για εισαγωγή';
 $string['importfromcourse'] = 'Ολόκληρο το μάθημα';
-$string['importfromsection'] = 'Τρέχων τμήμα';
+$string['importfromsection'] = 'Τρέχουσα ενότητα';
 $string['indentitem'] = 'Εσοχή στοιχείου';
 $string['itemcomplete'] = 'Ολοκληρωμένο';
 $string['items'] = 'Στοιχεία λίστας ελέγχου';
@@ -90,7 +90,7 @@ $string['lockteachermarks'] = 'Κλείδωμα βαθμών διδάσκοντ�
 $string['lockteachermarkswarning'] = 'Σημείωση: Μόλις αποθηκεύσετε αυτούς τους βαθμούς, δεν θα μπορείτε πλέον να αλλάξετε κανένα βαθμό «Ναι»';
 $string['modulename'] = 'Λίστα ελέγχου';
 $string['modulename_help'] = 'Το άρθρωμα της λίστας ελέγχου επιτρέπει σε έναν διδάσκοντα να δημιουργήσει μια λίστα ελέγχου / λίστα υποχρεώσεων / λίστα εργασιών για να εργαστούν οι μαθητές τους.';
-$string['modulename_link'] = 'άρθρωμα/λίσταελέγχου/εμφάνιση';
+$string['modulename_link'] = '';
 $string['modulenameplural'] = 'Λίστες ελέγχου';
 $string['moveitemdown'] = 'Μετακίνηση στοιχείου προς τα κάτω';
 $string['moveitemup'] = 'Μετακίνηση στοιχείου προς τα πάνω';

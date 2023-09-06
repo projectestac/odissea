@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'ar', version '3.11'.
+ * Strings for component 'accredible', language 'ar', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -32,7 +32,7 @@ $string['accredible:view'] = 'معاينة الشهادة أو الشارة';
 $string['accrediblegroup'] = 'مجموعة موثوقة';
 $string['achievementid'] = 'رقم الإنجازات \\ أسم الجماعة';
 $string['activityname'] = 'اسم النشاط';
-$string['additionalactivitiesone'] = 'تحذير: أنت تضيف أكثر من نشاط لمقرر دراسي واحد<br/> كلا النشاطين مُشاهدة من قبل الطلاب، لذلك تأكد من منحهما اسمين مختلفين.';
+$string['additionalactivitiesone'] = 'تحذير: أنت تضيف أكثر من نشاط لمساق واحد<br/> كلا النشاطين مُشاهدة من قبل الطلاب، لذلك تأكد من منحهما اسمين مختلفين.';
 $string['additionalactivitiesthree'] = 'هذا هو الاسم الذي سيظهر في الشهادة.';
 $string['additionalactivitiestwo'] = 'الشهادات\\الشارات ستكون مدرجة على صفحة النشاط فقط إذا تم إصدارها باستخدام معرف الإنجاز هذا';
 $string['apikeyhelp'] = 'أدخل مفتاح API من accredible.com';
@@ -41,10 +41,10 @@ $string['autoissueheader'] = 'معايير الإصدار التلقاءي';
 $string['certificatename'] = 'اسم الشهادة/الشارة';
 $string['certificateurl'] = 'رابط الشهادة/الشارة';
 $string['chooseexam'] = 'اختر اختبار نهائي';
-$string['completionissuecheckbox'] = 'نعم. أصدر بمجرد إتمام المقرر';
-$string['completionissueheader'] = 'معيار الإصدار التلقاءي: إتمام المقرر';
+$string['completionissuecheckbox'] = 'نعم. أصدر بمجرد إتمام المساق';
+$string['completionissueheader'] = 'معيار الإصدار التلقاءي: إتمام المساق';
 $string['dashboardlink'] = 'رابط دفة قيادة Accredible';
-$string['dashboardlinktext'] = 'لمحو أو تنميط الاعتمادات، قم بالدخول إلى هذا الرابط: <a href="https://dashboard.accredible.com" target="_blank">لوحة التحكم</a>';
+$string['dashboardlinktext'] = 'لمحو أو تنميط الاعتمادات، قم بالدخول إلى هذا الرابط: <a href="https://dashboard.accredible.com" target="_blank">دفة القيادة</a>';
 $string['datecreated'] = 'تاريخ الإنشاء';
 $string['description'] = 'الوصف';
 $string['eventcertificatecreated'] = 'معطيات نُشرت إلى Accredible';
@@ -56,13 +56,14 @@ $string['indexheader'] = 'كل الشهادات/الشارات الخاصة بـ
 $string['issued'] = 'تم اصدارها';
 $string['manualheader'] = 'إصدار الشهادات/الشارات يدويًا';
 $string['modulename'] = 'شهادات وشارات معتمدة';
-$string['modulename_help'] = 'تسمح لك وحدة نشاط الشهادة والشارة المعتمدين بإصدار شهادات أو شارات المقرر الدراسي للطلاب من موقع accredible.com.
+$string['modulename_help'] = 'تسمح لك وحدة نشاط الشهادة والشارة المعتمدين بإصدار شهادات أو شارات المساق للطلاب من موقع accredible.com.
 
 أضف النشاط أينما تريد أن يرى طلابك شهادتهم أو شاراتهم.';
+$string['modulename_link'] = 'mod/accredible/view';
 $string['modulenameplural'] = 'شهادات/شارات معتمدة';
 $string['nocertificates'] = 'لا توجد شهادات/شارات';
 $string['overview'] = 'نظرة عامة ( لمحة موجزة)';
-$string['passinggrade'] = 'نسبة درجة النجاح المطلوبة لإجتياز المقرر (%)';
+$string['passinggrade'] = 'نسبة درجة النجاح المطلوبة لإجتياز المساق (%)';
 $string['pluginadministration'] = 'إدارة الشهادات/الشارات المعتمدة';
 $string['pluginname'] = 'شهادات وشارات معتمدة';
 $string['recipient'] = 'المستلم';
@@ -72,6 +73,6 @@ $string['unissuedheader'] = 'شهادات/شارات غير ممنوحة';
 $string['usestemplatesdescription'] = 'تأكد من أن لديك دفعة في لوحة التحكم بنفس اسم مُعرَّف الإنجاز الخاص بك.';
 $string['viewheader'] = 'الشهادات والشارات لـ {$a}';
 $string['viewimgcomplete'] = 'انقر لعرض شهادتك أو شارتك';
-$string['viewimgincomplete'] = 'المقرر الدراسي لا زال جارياً';
+$string['viewimgincomplete'] = 'المساق لا زال جارياً';
 $string['viewsubheader'] = 'مُعرِّف المجموعة : {$a}';
 $string['viewsubheaderold'] = 'مُعرِّف الإنجاز : {$a}';

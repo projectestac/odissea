@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'el', version '3.11'.
+ * Strings for component 'block_online_users', language 'el', version '4.1'.
  *
  * @package     block_online_users
  * @category    string
@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configtimetosee'] = 'Πόσα λεπτά απαιτούνται ώστε η αδράνεια ενός χρήστη να θεωρείται αποσύνδεση;';
-$string['nouser'] = 'Κανένας χρήστης εντός σύνδεσης';
-$string['numuser'] = '{$a} χρήστης σε εντός σύνδεση';
-$string['numusers'] = '{$a} χρήστες εντός σύνδεσης';
+$string['nouser'] = 'Κανένας χρήστης συνδεδεμένος';
+$string['numuser'] = '{$a} χρήστης συνδεδεμένος';
+$string['numusers'] = '{$a} χρήστες συνδεδεμένοι';
 $string['online_status:hide'] = 'Απόκρυψη της κατάστασης σύνδεσής μου από άλλους χρήστες';
 $string['online_status:show'] = 'Εμφάνιση της κατάστασης σύνδεσής μου στους άλλους χρήστες';
 $string['online_users:addinstance'] = 'Προσθήκη νέου μπλοκ συνδεδεμένοι χρήστες';

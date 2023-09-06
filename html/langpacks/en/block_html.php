@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'en', version '3.11'.
+ * Strings for component 'block_html', language 'en', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = 'Allow additional CSS classes';
-$string['configallowadditionalcssclasses'] = 'Adds a configuration option to HTML block instances allowing additional CSS classes to be set.';
+$string['configallowadditionalcssclasses'] = 'Adds a configuration option to Text block instances allowing additional CSS classes to be set.';
 $string['configclasses'] = 'Additional CSS classes';
-$string['configclasses_help'] = 'The purpose of this configuration is to aid with theming by helping distinguish HTML blocks from each other. Any CSS classes entered here (space delimited) will be appended to the block\'s default classes.';
+$string['configclasses_help'] = 'The purpose of this configuration is to aid with theming by helping distinguish text blocks from each other. Any CSS classes entered here (space delimited) will be appended to the block\'s default classes.';
 $string['configcontent'] = 'Content';
-$string['configtitle'] = 'HTML block title';
-$string['html:addinstance'] = 'Add a new HTML block';
-$string['html:myaddinstance'] = 'Add a new HTML block to Dashboard';
-$string['newhtmlblock'] = '(new HTML block)';
-$string['pluginname'] = 'HTML';
-$string['privacy:metadata:block'] = 'The HTML block stores all of its data within the block subsystem.';
-$string['search:content'] = 'HTML block content';
+$string['configtitle'] = 'Text block title';
+$string['html:addinstance'] = 'Add a new text block';
+$string['html:myaddinstance'] = 'Add a new text block to Dashboard';
+$string['newhtmlblock'] = '(new text block)';
+$string['pluginname'] = 'Text';
+$string['privacy:metadata:block'] = 'The Text block stores all of its data within the block subsystem.';
+$string['search:content'] = 'Text block content';

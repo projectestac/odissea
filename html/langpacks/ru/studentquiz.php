@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'ru', version '3.11'.
+ * Strings for component 'studentquiz', language 'ru', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -215,6 +215,7 @@ $string['missingparam'] = 'Запрашиваемый параметр неве�
 $string['moderator'] = 'Модератор';
 $string['modulename'] = 'СтудТест';
 $string['modulename_help'] = 'Элемент СтудТест позволяет студентам добавлять вопросы для остальных участников. На главной странице СтудТеста студенты могут отфильтровать вопросы. Также они могут использовать отфильтрованные вопросы, чтобы попрактиковаться отвечать. Учитель может  сделать созданные вопросы анонимными. <br><br> В СтудТесте студенты могут получать баллы, что будет мотивировать их создавать вопросы и практиковаться. Баллы указаны в рейтинговой таблице.';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = 'СтудТесты';
 $string['more'] = 'Больше';
 $string['myattempts_column_name'] = 'Мои попытки';
@@ -268,7 +269,6 @@ $string['privacy:metadata:studentquiz_comment:deleteuserid'] = 'ID пользо�
 $string['privacy:metadata:studentquiz_comment:edited'] = 'Время редактирования комментария.';
 $string['privacy:metadata:studentquiz_comment:edituserid'] = 'ID пользователя, отредактировавшего комментарий.';
 $string['privacy:metadata:studentquiz_comment:parentid'] = 'Идентификатор родительского комментария. 0: комментарий верхнего уровня.';
-$string['privacy:metadata:studentquiz_comment:questionid'] = 'Идентификатор вопроса';
 $string['privacy:metadata:studentquiz_comment:status'] = 'Статус комментария';
 $string['privacy:metadata:studentquiz_comment:timemodified'] = 'Время изменения комментария';
 $string['privacy:metadata:studentquiz_comment:type'] = 'Тип комментария';
@@ -292,20 +292,16 @@ $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'Количе
 $string['privacy:metadata:studentquiz_progress:lastanswercorrect'] = '0: последний ответ был неправильным или неопределенным, 1: последний ответ был правильным';
 $string['privacy:metadata:studentquiz_progress:lastreadprivatecomment'] = 'Время последнего чтения частных комментариев пользователем';
 $string['privacy:metadata:studentquiz_progress:lastreadpubliccomment'] = 'Время последнего чтения публичных комментариев пользователем';
-$string['privacy:metadata:studentquiz_progress:questionid'] = 'Идентификатор вопроса';
 $string['privacy:metadata:studentquiz_progress:studentquizid'] = 'Идентификатор СтудТеста';
 $string['privacy:metadata:studentquiz_progress:userid'] = 'Идентификатор пользователя';
 $string['privacy:metadata:studentquiz_question'] = 'Хранить свойства вопроса';
 $string['privacy:metadata:studentquiz_question:groupid'] = 'ID группы, в которую входит вопрос';
 $string['privacy:metadata:studentquiz_question:hidden'] = 'Свойство «Является ли вопрос скрытым?»';
 $string['privacy:metadata:studentquiz_question:pinned'] = 'Свойство «Является ли вопрос закреплённым?»';
-$string['privacy:metadata:studentquiz_question:questionid'] = 'ID вопроса';
 $string['privacy:metadata:studentquiz_question:state'] = 'Свойство «Является ли вопрос одобренным, отклонённым, новым или изменённым?»';
 $string['privacy:metadata:studentquiz_rate'] = 'Сохранить рейтинги вопросов';
-$string['privacy:metadata:studentquiz_rate:questionid'] = 'Идентификатор вопроса.';
 $string['privacy:metadata:studentquiz_rate:rate'] = 'Рейтинги этого вопроса';
 $string['privacy:metadata:studentquiz_rate:userid'] = 'Идентификатор пользователя';
-$string['privacy:metadata:studentquiz_state_history:questionid'] = 'ID вопроса.';
 $string['privacy:metadata:studentquiz_state_history:state'] = 'Свойство "Является ли вопрос одобренным, отклонённым, новым или изменённым?"';
 $string['privacy:metadata:studentquiz_state_history:timecreated'] = 'Время создания.';
 $string['privacy:metadata:studentquiz_state_history:userid'] = 'ID пользователя.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'fr', version '3.11'.
+ * Strings for component 'tool_behat', language 'fr', version '4.1'.
  *
  * @package     tool_behat
  * @category    string
@@ -27,14 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'Cet outil d\'administration aide les développeurs et les personnes qui créent les tests à composer des fichiers .feature décrivant les fonctionnalités de Moodle et à lancer les tests automatiquement. La définition des étapes pouvant être utilisées dans les fichiers .feature est affichées ci-dessous.';
 $string['allavailablesteps'] = 'Toutes les définitions d\'étape disponibles';
-$string['errorapproot'] = '$CFG->behat_ionic_dirroot ne pointe pas vers une installation de développement de l\'app Moodle.';
 $string['errorbehatcommand'] = 'Erreur d\'exécution de la commande CLI behat. Essayez de lancer « {$a} --help » manuellement afin d\'en savoir plus sur le problème.';
 $string['errorcomposer'] = 'Les dépendances de composition ne sont pas installées.';
 $string['errordataroot'] = '$CFG->behat_dataroot n\'est pas définie ou n\'est pas valide.';
 $string['errorsetconfig'] = 'Les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot doivent être définies dans config.php.';
-$string['erroruniqueconfig'] = 'Les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot doivent être définies avec des valeurs différentes de $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot et $CFG->phpunit_prefix.';
+$string['erroruniqueconfig'] = 'Les variables $CFG->behat_dataroot, $CFG->behat_prefix et $CFG->behat_wwwroot doivent être définies avec des valeurs différentes de $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot et $CFG->phpunit_prefix.<br/>Ou bien, si $CFG->behat_prefix est le même, $CFG->behat_dbname ou $CFG->behat_dbhost doivent être différents de $CFG->phpunit_dbname et $CFG->phpunit_dbhost et de $CFG->dbname et $CFG->dbhost.';
 $string['fieldvalueargument'] = 'Paramètres de la valeur du champ';
-$string['fieldvalueargument_help'] = 'Acceptance_testingCe paramètre doit être renseigné avec une valeur de champ. Il en existe de nombreux types, simples, par exemple cases à cocher, boîtes de sélection et zones de texte, ou plus complexes comme des sélecteurs de date. Veuillez consulter <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Field values</a> (en anglais) pour des informations sur les valeurs attendues en fonction du type de champ fourni.';
+$string['fieldvalueargument_help'] = 'Ce paramètre doit être renseigné avec une valeur de champ. Il y a beaucoup de types de champ, certains simples, par exemple cases à cocher, boîtes de sélection et zones de texte, ou plus complexes comme des sélecteurs de date. Veuillez consulter <a href="https://moodledev.io/general/development/tools/behat" target="_blank">Acceptance testing</a> (en anglais) pour des informations sur les valeurs attendues en fonction du type de champ fourni.';
 $string['giveninfo'] = 'Donné. Processus pour mettre en place l\'environnement';
 $string['infoheading'] = 'Info';
 $string['installinfo'] = 'Lire {$a} pour des informations sur l\'installation et l\'exécution des tests.';

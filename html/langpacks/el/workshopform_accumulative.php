@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'el', version '3.11'.
+ * Strings for component 'workshopform_accumulative', language 'el', version '4.1'.
  *
  * @package     workshopform_accumulative
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['absent'] = 'Απών';
-$string['addmoredimensions'] = 'Κενά πεδία για {$a} περισσότερες πτυχές';
+$string['addmoredimensions'] = 'Κενά πεδία για {$a} περισσότερες πτυχές/διαστάσεις';
 $string['correct'] = 'Σωστό';
 $string['dimensioncommentfor'] = 'Σχόλιο για {$a}';
 $string['dimensiondescription'] = 'Περιγραφή';
@@ -49,4 +49,4 @@ $string['scalename3'] = 'Καλώς/Κακώς (3 βαθμοί)';
 $string['scalename4'] = 'Εξαιρετικά/Πολύ άσχημα (4 βαθμοί)';
 $string['scalename5'] = 'Εξαιρετικά/Πολύ άσχημα (5 βαθμοί)';
 $string['scalename6'] = 'Εξαιρετικά/Πολύ άσχημα (7 βαθμοί)';
-$string['verypoor'] = 'Πολύ φτωχό';
+$string['verypoor'] = 'Πολύ άσχημα';

@@ -63,11 +63,7 @@ if (empty($id)) {
     $PAGE->navbar->add($att->name);
 
     $output = $PAGE->get_renderer('mod_attendance');
-    $tabs = new attendance_tabs($att, attendance_tabs::TAB_WARNINGS);
     echo $output->header();
-    echo $output->heading(get_string('attendanceforthecourse', 'attendance').' :: ' .format_string($course->fullname));
-    echo $output->render($tabs);
-
 }
 
 $mform = new mod_attendance\form\addwarning($url, array('notid' => $notid, 'id' => $id));

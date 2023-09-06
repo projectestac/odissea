@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'it', version '3.11'.
+ * Strings for component 'studentquiz', language 'it', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -214,6 +214,7 @@ $string['missingparam'] = 'Un parametro richiesto è mancante o sbagliato';
 $string['moderator'] = 'Moderatore';
 $string['modulename'] = 'StudentQuiz';
 $string['modulename_help'] = 'L\'attività StudentQuiz permette agli studenti di aggiungere domande pubblicamente. Nel riepilogo di StudentQuiz gli studenti possono filtrare le domande e possono inoltre fare pratica con le domande pubblicate. Il docente ha l\'opportunità di anonimizzare il nome del creatore della domanda.<br><br>L\'attività StudentQuiz assegna punti agli studenti per motivarli ad aggiungere domande e fare prativa. I punti sono visualizzati nella tabella Classifica.';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = 'StudentQuiz';
 $string['more'] = 'Di più';
 $string['myattempts_column_name'] = 'Miei tentativi';
@@ -266,7 +267,6 @@ $string['privacy:metadata:studentquiz_comment:deleteuserid'] = 'ID dell\'utente 
 $string['privacy:metadata:studentquiz_comment:edited'] = 'Orario di modifica del commento.';
 $string['privacy:metadata:studentquiz_comment:edituserid'] = 'ID dell\'utente che ha modificato il commento.';
 $string['privacy:metadata:studentquiz_comment:parentid'] = 'ID del commento superiore. 0: commento di primo livello.';
-$string['privacy:metadata:studentquiz_comment:questionid'] = 'ID della domanda.';
 $string['privacy:metadata:studentquiz_comment:status'] = 'Stato del commento';
 $string['privacy:metadata:studentquiz_comment:timemodified'] = 'Orario di modifica del commento';
 $string['privacy:metadata:studentquiz_comment:type'] = 'Tipo di commento';
@@ -290,20 +290,16 @@ $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'Numero di ri
 $string['privacy:metadata:studentquiz_progress:lastanswercorrect'] = '0: l\'ultima risposta era sbagliata o non definita, 1: l\'ultima risposta era corretta.';
 $string['privacy:metadata:studentquiz_progress:lastreadprivatecomment'] = 'Ultima volta che un utente ha letto i commenti privati';
 $string['privacy:metadata:studentquiz_progress:lastreadpubliccomment'] = 'Ultima volta che un utente ha letto i commenti pubblici';
-$string['privacy:metadata:studentquiz_progress:questionid'] = 'ID della domanda';
 $string['privacy:metadata:studentquiz_progress:studentquizid'] = 'ID dello StudentQuiz';
 $string['privacy:metadata:studentquiz_progress:userid'] = 'ID dell\'utente';
 $string['privacy:metadata:studentquiz_question'] = 'Memorizza le informazioni legate alla domanda';
 $string['privacy:metadata:studentquiz_question:groupid'] = 'ID del gruppo a cui appartiene la domanda';
 $string['privacy:metadata:studentquiz_question:hidden'] = 'Informazione sulla visibilità della domanda';
 $string['privacy:metadata:studentquiz_question:pinned'] = 'Informazione sul fissaggio della domanda';
-$string['privacy:metadata:studentquiz_question:questionid'] = 'ID della domanda';
 $string['privacy:metadata:studentquiz_question:state'] = 'Informazione se la domanda è approvata, non approvata, nuovo o modificata';
 $string['privacy:metadata:studentquiz_rate'] = 'Memorizza le valutazioni delle domande.';
-$string['privacy:metadata:studentquiz_rate:questionid'] = 'ID della domanda.';
 $string['privacy:metadata:studentquiz_rate:rate'] = 'Valutazione della domanda';
 $string['privacy:metadata:studentquiz_rate:userid'] = 'ID dell\'utente';
-$string['privacy:metadata:studentquiz_state_history:questionid'] = 'ID della domanda';
 $string['privacy:metadata:studentquiz_state_history:state'] = 'Informazione sullo stato della domanda (approvata, non approvata, nuova o modificata)';
 $string['privacy:metadata:studentquiz_state_history:timecreated'] = 'Data di creazione';
 $string['privacy:metadata:studentquiz_state_history:userid'] = 'ID dell\'utente';

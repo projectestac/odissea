@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'pt', version '3.11'.
+ * Strings for component 'user', language 'pt', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'Secretamente configurado e enviado ao utili
 $string['privacy:metadata:trackforums'] = 'Preferência para fóruns e sinalização de mensagens não lidas.';
 $string['privacy:metadata:trustbitmask'] = 'The trust bit mask';
 $string['privacy:metadata:url'] = 'O URL relacionado com este utilizador';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Data e hora registada de quando a mensagem de boas-vindas foi exibida ao utilizador pela primeira vez.';
 $string['privacy:metadata:user_preferences'] = 'Preferências associadas a determinado utilizador';
 $string['privacy:metadata:user_preferences:name'] = 'Nome da preferência';
 $string['privacy:metadata:user_preferences:userid'] = 'ID do utilizador';
@@ -148,7 +149,12 @@ $string['privacy:passwordresetpath'] = 'Reposição de senhas';
 $string['privacy:privatefilespath'] = 'Ficheiros privados';
 $string['privacy:profileimagespath'] = 'Imagens de perfil';
 $string['privacy:sessionpath'] = 'Dados de sessão';
-$string['selectfiltertype'] = 'Selecione';
+$string['selectfiltertype'] = 'Selecionar';
+$string['supportmessagealternative'] = 'No entanto, pode enviar um e-mail para {$a}';
+$string['supportmessagenotsent'] = 'Infelizmente, a sua mensagem não pode ser enviado de momento!';
+$string['supportmessagesent'] = 'A sua mensagem foi enviado';
+$string['supportmessagesentforloggedoutuser'] = 'Tenha cuidado com esta mensagem. O remetente não estava autenticado e, por isso, a sua identidade não foi confirmada.';
 $string['target:upcomingactivitiesdue'] = 'Atividades com data limite próxima';
 $string['target:upcomingactivitiesdue_help'] = 'Esta meta gera lembretes para as atividades com data limite próxima.';
 $string['target:upcomingactivitiesdueinfo'] = 'Todas as perceções sobre "atividades a terminar brevemente". Estes alunos receberam estas perceções diretamente.';
+$string['userprofile'] = 'Perfil do utilizador';

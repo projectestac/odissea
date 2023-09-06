@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'sv', version '3.11'.
+ * Strings for component 'webservice', language 'sv', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'Aktiva webbtjänstprotokoll';
 $string['addaservice'] = 'Spara';
 $string['addcapabilitytousers'] = 'Kontrollera funktionsbehörigheter';
 $string['addcapabilitytousersdescription'] = 'Användare bör ha två funktionsbehörigheter - <code>webservice:createtoken</code> och en behörighet som matchar protokollet som används, till exempel <code>webservice/rest:use</code> eller <code>webservice/soap:use</code>. För att åstadkomma detta, skapa en roll för webbtjänster med den lämpliga funktionsbehörigheten tillåten och tilldela den till webbtjänst-användaren som en systemroll.';
+$string['addexternalservice'] = 'Lägg till extern tjänst';
 $string['addfunction'] = 'Lägg till funktion';
 $string['addfunctionhelp'] = 'Välj funktion som skall läggas till tjänsten.';
 $string['addfunctions'] = 'Lägg till funktioner';
@@ -61,14 +62,16 @@ $string['default'] = 'Standard "{$a}"';
 $string['deleteaservice'] = 'Ta bort tjänst';
 $string['deleteservice'] = 'Ta bort tjänsten: {$a->name} (ID: {$a->id})';
 $string['deleteserviceconfirm'] = 'Vid borttagning av en tjänst kommer även de token som är relaterade till tjänsten att tas bort. Vill du verkligen ta bort tjänsten <b>"{$a}"</b>?';
+$string['deletetoken'] = 'Ta bort token';
 $string['deletetokenconfirm'] = 'Vill du verkligen ta bort detta webbtjänsttoken för <strong>{$a->user}</strong> för tjänsten <strong>{$a->service}?</strong>';
+$string['deprecated'] = 'Används ej längre';
 $string['disabledwarning'] = 'Alla webbtjänstprotokoll är inaktiverade. "Aktivera webbtjänster"-inställningen finns under <em>Hantera webbplats->Avancerade egenskaper</em>.';
 $string['doc'] = 'Dokumentation';
 $string['docaccessrefused'] = 'Du får inte se dokumentationen för denna token';
-$string['documentation'] = 'webbtjänstdokumentation';
 $string['downloadfiles'] = 'Kan ladda ner filer';
 $string['downloadfiles_help'] = 'Om aktiverat kan alla användare ladda ned filer med deras säkerhetsnycklar. De är begränsade till att ladda ned de filer på webbplatsen som de har behörighet till.';
 $string['editaservice'] = 'Redigera tjänst';
+$string['editexternalservice'] = 'Redigera extern tjänst';
 $string['editservice'] = 'Redigera tjänsten: {$a->name} (ID: {$a->id})';
 $string['enabled'] = 'Aktiverad';
 $string['enabledocumentation'] = 'Aktivera utvecklardokumentation';

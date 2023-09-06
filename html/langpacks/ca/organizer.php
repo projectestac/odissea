@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'ca', version '3.11'.
+ * Strings for component 'organizer', language 'ca', version '4.1'.
  *
  * @package     organizer
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['confignever'] = 'Mai';
 $string['configrequiremodintro'] = 'Inhabiliteu aquesta opció si no voleu forçar els usuaris a introduir una descripció de cada activitat.';
 $string['duedate'] = 'Data de venciment';
 $string['location'] = 'Ubicació';

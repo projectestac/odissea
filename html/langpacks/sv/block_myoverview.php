@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'sv', version '3.11'.
+ * Strings for component 'block_myoverview', language 'sv', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Markera kursen som favorit';
-$string['all'] = 'Alla (förutom dolda)';
-$string['allincludinghidden'] = 'Alla';
+$string['all'] = 'Alla';
+$string['allincludinghidden'] = 'Alla (inkl. arkiverade)';
 $string['aria:addtofavourites'] = 'Favoritmärk för';
-$string['aria:allcourses'] = 'Visa alla kurser förutom dolda';
+$string['aria:allcourses'] = 'Visa alla kurser förutom arkiverade';
 $string['aria:allcoursesincludinghidden'] = 'Visa alla kurser';
 $string['aria:card'] = 'Visa som kort';
 $string['aria:controls'] = 'Kontroller i kursöversikt';
@@ -41,7 +41,7 @@ $string['aria:displaydropdown'] = 'Visa nedrullningsmeny';
 $string['aria:favourites'] = 'Visa favoritmärkta kurser';
 $string['aria:future'] = 'Visa kommande kurser';
 $string['aria:groupingdropdown'] = 'Gruppindelningsmeny';
-$string['aria:hiddencourses'] = 'Visa kurser som dolts';
+$string['aria:hiddencourses'] = 'Visa arkiverade kurser';
 $string['aria:hidecourse'] = 'Dölj {$a}';
 $string['aria:inprogress'] = 'Visa pågående kurser';
 $string['aria:lastaccessed'] = 'Sortera kurserna efter senaste besök';
@@ -57,7 +57,7 @@ $string['availablegroupings'] = 'Tillgängliga filter';
 $string['availablegroupings_desc'] = 'Kursfilter som är tillgängliga för användare. Om inget är markerat kommer alla kurser att visas.';
 $string['card'] = 'Kort';
 $string['cards'] = 'Kort';
-$string['complete'] = 'slutförda';
+$string['clearsearch'] = 'Rensa sökning';
 $string['completepercent'] = '{$a}% slutförd';
 $string['courseprogress'] = 'Kursförlopp:';
 $string['customfield'] = 'Anpassat fält';
@@ -67,16 +67,15 @@ $string['displaycategories'] = 'Visa kategorier';
 $string['displaycategories_help'] = 'Visa kurskategorin på instrumentpanelen inklusive kort, listobjekt och sammanfattningar.';
 $string['favourites'] = 'Favoriter';
 $string['future'] = 'Kommande';
-$string['hidden'] = 'Dolda kurser';
-$string['hiddencourses'] = 'Dolda';
-$string['hidecourse'] = 'Dölj';
+$string['hidden'] = 'Arkiverade kurser';
+$string['hiddencourses'] = 'Arkiverade';
+$string['hidecourse'] = 'Arkivera';
 $string['inprogress'] = 'Pågående';
 $string['lastaccessed'] = 'Senast åtkommen';
 $string['layouts'] = 'Tillgängliga layouter';
 $string['layouts_help'] = 'Kursöversiktslayouter som är tillgängliga för användare att välja bland. Om ingen är markerad kommer kortlayouten att användas.';
 $string['list'] = 'Lista';
 $string['myoverview:myaddinstance'] = 'Lägg till nytt block Kursöversikt till översiktssidan';
-$string['nocourses'] = 'Inga kurser';
 $string['nocustomvalue'] = 'Inga {$a}';
 $string['past'] = 'Tidigare';
 $string['pluginname'] = 'Kursöversikt';
@@ -86,7 +85,11 @@ $string['privacy:metadata:overviewsortpreference'] = 'Inställning för hur bloc
 $string['privacy:metadata:overviewviewpreference'] = 'Inställning för hur blocket Kursöversikt ska visas';
 $string['privacy:request:preference:set'] = 'Värdet för denna inställning \'{$a->name}\' var \'{$a->value}\'';
 $string['removefromfavourites'] = 'Ta bort kursen från favoriter';
+$string['searchcourses'] = 'Sök kurser';
 $string['shortname'] = 'Kortnamn';
-$string['show'] = 'Visa';
+$string['show'] = 'Aktivera';
+$string['sortbylastaccessed'] = 'Sortera efter senaste åtkomst';
+$string['sortbyshortname'] = 'Sortera efter kortnamn';
+$string['sortbytitle'] = 'Sortera efter kursnamn';
 $string['summary'] = 'Sammanfattning';
 $string['title'] = 'Kursnamn';

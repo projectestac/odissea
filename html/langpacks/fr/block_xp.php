@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_xp', language 'fr', version '3.11'.
+ * Strings for component 'block_xp', language 'fr', version '4.1'.
  *
  * @package     block_xp
  * @category    string
@@ -53,8 +53,10 @@ $string['clicktoselectcm'] = 'Cliquer pour choisir une activité ou une ressourc
 $string['cmselector'] = 'Sélecteur de module';
 $string['coefxp'] = 'Coefficient de l\'algorithme';
 $string['colon'] = '{$a->a} : {$a->b}';
+$string['configblockrankingsnapshot'] = 'Afficher l\'instantané du classement';
+$string['configblockrankingsnapshot_help'] = 'L\'instantané du classement affiche le rang de l\'utilisateur. Il tente également d\'afficher les deux personnes qui entourent l\'utilisateur. Cette fonctionnalité nécessite que le classement soit activé et que les rangs soient affichés.';
 $string['configdescription'] = 'Introduction';
-$string['configdescription_help'] = 'Une courte introduction est affichée dans le bloc, sous le niveau de l\'étudiant. Les étudiants ont la possibilité de masquer ce message pour ne plus le voir.';
+$string['configdescription_help'] = 'Un court message d\'introduction s\'affiche dans le bloc. Les étudiants ont la possibilité de rejeter le message, auquel cas ils ne le verront plus.';
 $string['configheader'] = 'Réglages';
 $string['configrecentactivity'] = 'Afficher les récompenses récentes';
 $string['configrecentactivity_help'] = 'Si c\'est activé, le bloc affichera une courte liste d\'événements récents qui ont récompensé l\'étudiant avec des points.';
@@ -90,13 +92,13 @@ $string['displayrelativerank'] = 'Afficher un rang relatif';
 $string['documentation'] = 'Documentation';
 $string['editinstructions'] = 'Modifier l\'information';
 $string['enablecheatguard'] = 'Activer la mise en garde sur la triche';
-$string['enablecheatguard_help'] = 'Le dispositif de protection contre la tricherie offre un mécanisme simple et peu coûteux pour empêcher les élèves d\'abuser du système en utilisant des techniques évidentes, telles que le rafraîchissement sans fin de la même page ou la répétition de la même action à l\'infini.
+$string['enablecheatguard_help'] = 'Le dispositif de protection contre la tricherie offre un mécanisme simple et peu coûteux pour empêcher les étudiants d\'abuser du système en utilisant des techniques évidentes, telles que l\'actualisation permanente de la même page ou la répétition de la même action à plusieurs reprises.
 
-[Plus d\'infos](https://levelup.plus/docs/article/level-up-cheat-guard?ref=blockxp_help)';
+[Plus d\'infos](https://docs.levelup.plus/xp/docs/getting-started/cheat-guard?ref=blockxp_help)';
 $string['enableinfos'] = 'Activer la page d\'info';
 $string['enableinfos_help'] = 'Lorsque ce réglage est sur « Non », les étudiants ne seront pas en mesure d\'afficher la page d\'information.';
-$string['enableladder'] = 'Activer l\'échelle';
-$string['enableladder_help'] = 'Lorsque ce réglage est sur «Non», les étudiants ne seront pas en mesure d\'afficher l\'échelle.';
+$string['enableladder'] = 'Activer le classement';
+$string['enableladder_help'] = 'Si cette option est réglée sur « Non », les étudiants ne pourront pas consulter le classement.';
 $string['enablelevelupnotif'] = 'Activer la notification de progression';
 $string['enablelevelupnotif_help'] = 'Lorsque ce réglage est à « Oui », une fenêtre surgissante sera affichée pour féliciter les étudiants du nouveau niveau atteint.';
 $string['enablelogging'] = 'Activer l\'historique';
@@ -118,16 +120,17 @@ $string['eventis'] = 'L\'événement est {$a}';
 $string['eventname'] = 'Nom de l\'événement';
 $string['eventproperty'] = 'Propriété de l\'événement';
 $string['eventsrules'] = 'Règles pour les événements';
-$string['eventsrules_help'] = 'Ce plugin utilise les événements pour attribuer des points aux actions effectuées par les étudiants.
-Vous pouvez utiliser le formulaire ci-dessous pour ajouter vos propres règles et modifier celles par défaut.
+$string['eventsrules_help'] = 'Ce plugin utilise les événements pour attribuer des points aux actions effectuées par les élèves.
+Vous pouvez utiliser le formulaire ci-dessous pour ajouter vos propres règles et modifier les règles par défaut.
 
 Il est conseillé de consulter la page _Log_ du plugin pour identifier les événements déclenchés lorsque les étudiants effectuent des actions dans le cours.
 
 Ressources additionnelles:
 
-- [Comment sont calculés les points d\'expérience?] (Https://levelup.plus/docs/article/how-are-experience-points-calculated?ref=blockxp_help)
-- [Règles de dépannage] (https://levelup.plus/docs/article/event-rule-not-working?ref=blockxp_help)';
+- [Comment sont calculés les points d\'expérience?] (https://docs.levelup.plus/xp/docs/getting-started/points-calculation?ref=blockxp_help))
+- [Règles de dépannage] (https://docs.levelup.plus/xp/docs/troubleshooting/event-rule-not-working?ref=blockxp_help)';
 $string['eventtime'] = 'Heure de l\'événement';
+$string['filterbyuser'] = 'Filtrer par utilisateur';
 $string['filtermodules'] = 'Filtrer les modules';
 $string['for1day'] = 'Pour 1 jour';
 $string['for1month'] = 'Pour 1 mois';
@@ -136,20 +139,22 @@ $string['for3days'] = 'Pour 3 jours';
 $string['forever'] = 'Pour toujours';
 $string['forthewholesite'] = 'Pour tout le site';
 $string['give'] = 'donne';
-$string['gotofullladder'] = 'Aller au classement complet';
+$string['gotofullladder'] = 'Voir le classement complet';
 $string['grid'] = 'Grille';
 $string['hideparticipantsidentity'] = 'Masquer l\'identité des participants';
 $string['hiderank'] = 'Masquer le rang';
 $string['incourses'] = 'Dans les cours';
 $string['ineffective'] = 'Ineffectif';
 $string['infos'] = 'Information';
+$string['installed'] = 'Installé';
 $string['instructions'] = 'Plus d\'information';
 $string['invalidxp'] = 'Valeur des points invalide';
 $string['keeplogs'] = 'Conserver l\'historique';
-$string['ladder'] = 'Echelle';
+$string['ladder'] = 'Classement';
 $string['ladderadditionalcols'] = 'Colonnes additionnelles';
-$string['ladderadditionalcols_help'] = 'Ce réglage détermine quelles colonnes additionnelles sont affichées sur l\'échelle. Maintenez la touche Ctrl ou Cmd appuyée tout en cliquant pour sélectionner plus d\'une colonne, ou pour enlever une colonne déjà sélectionnée.';
-$string['ladderempty'] = 'Le classement est pour l\'instant vide, revenez voir plus tard !';
+$string['ladderadditionalcols_help'] = 'Ce réglage détermine quelles colonnes additionnelles sont affichées sur le tableau de classement. Maintenez la touche Ctrl ou Cmd appuyée tout en cliquant pour sélectionner plus d\'une colonne, ou pour enlever une colonne déjà sélectionnée.';
+$string['ladderempty'] = 'Le classement est actuellement vide, n\'hésitez pas à revenir plus tard !';
+$string['learnmore'] = 'En savoir plus';
 $string['level'] = 'Niveau';
 $string['levelbadges'] = 'Badges de niveau';
 $string['levelbadgesformhelp'] = 'Nommez les fichiers [niveau].[extension de fichier] par exemple 1.png, 2.jpg, etc. La taille d\'image recommandée est 100 x 100.';
@@ -171,30 +176,38 @@ $string['logging'] = 'Historiques';
 $string['manually'] = 'Manuellement';
 $string['maxactionspertime'] = 'Nombre max d\'actions par intervalle de temps';
 $string['maxactionspertime_help'] = 'Le nombre maximal d\'actions qui seront prises en compte pour le calcul de l\'expérience au cours de la période de temps donnée. Toute action ultérieure sera ignorée.';
+$string['maxlevelexcl'] = 'niveau maximum !';
+$string['menu'] = 'Menu';
+$string['missing'] = 'Manquant';
 $string['movecondition'] = 'Déplacer la condition';
 $string['moverule'] = 'Déplacer la règle';
 $string['name'] = 'Nom';
 $string['navinfos'] = 'Info';
-$string['navladder'] = 'Echelle';
+$string['navladder'] = 'Classement';
 $string['navlevels'] = 'Niveaux';
 $string['navlevelssetup'] = 'Paramétrage';
 $string['navlog'] = 'Historique';
 $string['navpoints'] = 'Points';
-$string['navpromo'] = 'Plus';
+$string['navpromo'] = 'XP+';
 $string['navreport'] = 'Rapport';
 $string['navrules'] = 'Règles';
 $string['navsettings'] = 'Réglages';
 $string['navvisuals'] = 'Visuels';
+$string['nextlevelin'] = 'le niveau suivant dans';
 $string['nodescription'] = 'Pas de description';
 $string['nologsrecordedyet'] = 'Aucun journal n\'a été capturé jusqu\'à présent.';
 $string['noname'] = 'Pas de nom';
 $string['notesomesettingslocked'] = 'Notez que certains paramètres ne pourront pas être modifiés si ils ont été verrouillés par un administrateur.';
 $string['occasionally'] = 'Occasionnellement';
 $string['participant'] = 'Participant';
+$string['participants'] = 'Participants';
 $string['participatetolevelup'] = 'Participez au cours pour gagner des points d\'expérience et progresser !';
 $string['perpagecolon'] = 'Par page :';
 $string['pickaconditiontype'] = 'Choisissez un type de condition';
+$string['pluginavailabilityxpdesc'] = 'Ce plugin permet aux enseignants de restreindre l\'accès aux activités en fonction du niveau des élèves.';
+$string['pluginenrolxpdesc'] = 'Ce plugin permet l\'inscription automatique à des cours en fonction du niveau d\'un étudiant dans un autre cours.';
 $string['pluginname'] = 'Progressez !';
+$string['pluginshortcodesdesc'] = 'Ce plugin permet aux formateurs de personnaliser leur matériel en incluant des éléments liés à XP (points, niveau, tableau de classement, ...) dans le contenu, ainsi que de masquer ou d\'afficher le contenu en fonction du niveau de l\'étudiant.';
 $string['pluginsoutofsync'] = 'Les plugins ne sont pas synchronisés !
 
 Cela signifie que vous avez mis à niveau _Level Up XP_ mais pas _Level Up XP+_. Bien que nous fassions de notre mieux pour essayer d\'éviter tout problème, certaines fonctions peuvent ne plus fonctionner correctement, y compris dans _Level Up XP_ lui-même. Nous vous recommandons de mettre à niveau _Level Up XP+_ vers sa dernière version. [Lire la suite]({$a->url})
@@ -208,7 +221,7 @@ $string['privacy:metadata:log:time'] = 'La date à laquelle cela a eu lieu';
 $string['privacy:metadata:log:userid'] = 'L\'utilisateur recevant les points';
 $string['privacy:metadata:log:xp'] = 'Les points accordés à l\'événement';
 $string['privacy:metadata:prefintro'] = 'Enregistre si l\'utilisateur a fermé l\'information introductive';
-$string['privacy:metadata:prefladderpagesize'] = 'La taille de page préférée de l\'utilisateur lors de la consultation de l\'échelle.';
+$string['privacy:metadata:prefladderpagesize'] = 'La taille de page préférée de l\'utilisateur lors de la consultation du classement.';
 $string['privacy:metadata:preflevelup'] = 'Enregistre si l\'utilisateur doit voir la notification de niveau';
 $string['privacy:metadata:prefnotices'] = 'Enregistre si l\'utilisateur a fermé l\'information d\'assistance';
 $string['privacy:metadata:prefseenpromo'] = 'Enregistre si l\'utilisateur a vu la page de promo';
@@ -238,19 +251,29 @@ $string['property:eventname'] = 'Nom de l\'événement';
 $string['property:target'] = 'Cible de l\'événement';
 $string['rank'] = 'Rang';
 $string['ranking'] = 'Classement';
-$string['ranking_help'] = 'Le rang est la position réelle de l\'utilisateur actuel sur l\'échelle. Le rang relatif est la différence en points d\'expérience entre un utilisateur et ses voisins.';
-$string['reallydeleteuserstate'] = 'La suppression d\'un utilisateur n\'est utile que pour le retirer de l\'échelle. Pour toute autre raison, nous vous recommandons de mettre ses points à 0. Notez que la suppression d\'un utilisateur n\'affecte pas sa capacité à gagner des points à l\'avenir.
+$string['ranking_help'] = 'Le rang est la position réelle de l\'utilisateur actuel dans le classement. Le rang relatif est la différence en points d\'expérience entre un utilisateur et ses voisins.';
+$string['reallydeleteuserstate'] = 'La suppression d\'un utilisateur n\'est utile que pour le retirer du classement. Pour toute autre raison, nous vous recommandons de mettre ses points à 0. Notez que la suppression d\'un utilisateur n\'affecte pas sa capacité à gagner des points à l\'avenir.
 
-Il est important de noter que si vous utilisez _Progressez !_ pour l\'ensemble du site, le fait de les supprimer les fera disparaître du rapport, auquel cas vous ne pourrez pas leur réattribuer de points. Cependant, si vous utilisez __Progressez  _ par cours, l\'étudiant peut toujours apparaître dans le rapport s\'il est inscrit au cours.
+Il est important de noter que si vous utilisez _Progressez !_ pour l\'ensemble du site, le fait de les supprimer les fera disparaître du rapport, auquel cas vous ne pourrez pas leur réattribuer de points. Cependant, si vous utilisez _Progressez !_ par cours, l\'étudiant peut toujours apparaître dans le rapport s\'il est inscrit au cours.
 
 Voulez-vous vraiment supprimer les points de cet utilisateur ?';
+$string['reallydeleteuserstateandlogs'] = 'La suppression d\'un utilisateur le retire du classement et supprime tous les journaux qui lui sont associés.
+
+La suppression des journaux peut permettre à un utilisateur de regagner des points pour des actions antérieures. Si votre intention est uniquement de réinitialiser ses points, nous vous recommandons de mettre ses points à 0. Notez que la suppression d\'un utilisateur n\'affecte pas sa capacité à gagner des points à l\'avenir.
+
+Il est important de noter que si vous utilisez _Progressez !_ pour l\'ensemble du site, la suppression d\'un utilisateur le fera disparaître du rapport, auquel cas vous ne pourrez pas lui réattribuer de points. Cependant, si vous utilisez _Progressez !_ par cours, l\'étudiant peut toujours apparaître dans le rapport s\'il est inscrit au cours.
+
+Voulez-vous vraiment supprimer les points et les journaux de cet utilisateur ?';
 $string['reallyresetallcoursestodefaults'] = 'Réinitialiser vraiment toutes les règles de cours aux règles par défaut ? Cette action n\'est pas réversible.';
 $string['reallyresetcourserulestodefaults'] = 'Réinitialiser les règles du cours aux règles par défaut ? Cette action n\'est pas réversible.';
 $string['reallyresetdata'] = 'Remettre vraiment à zéro les niveaux et les points de chacun dans ce cours ?';
 $string['reallyresetgroupdata'] = 'Voulez-vous vraiment remettre à zéro les niveaux et points d\'expérience de tout le monde dans ce groupe ?';
 $string['reallyreverttopluginsdefaults'] = 'Voulez-vous vraiment rétablir les règles par défaut suggérées par le plugin ? Cette action est irréversible.';
 $string['recentrewards'] = 'Récompenses récentes';
+$string['recommendedplugins'] = 'Plugins recommandés';
 $string['releasenotes'] = 'Notes de mise à jour';
+$string['remaining'] = 'restant';
+$string['removefilter'] = 'Enlever le filtre';
 $string['reportisempty'] = 'Le rapport est vide, les étudiants n\'ont pas encore gagné de points.';
 $string['reportisemptyenrolstudents'] = 'Le rapport est vide, est-ce que les étudiants ont été inscrits au cours ?';
 $string['requires'] = 'Requiert';
@@ -259,6 +282,7 @@ $string['resetallcoursestodefaultsintro'] = 'Cliquez le bouton ci-dessous pour r
 $string['resetcoursedata'] = 'Réinitialiser les données du cours';
 $string['resetcourserulestodefaults'] = 'Rétablir le cours aux règles par défaut.';
 $string['resetgroupdata'] = 'Remettre à zéro les données du groupe';
+$string['resultsfilteredforn'] = 'Résultats filtrés pour {$a}.';
 $string['reverttopluginsdefaults'] = 'Revenir aux réglages par défaut du plugin';
 $string['reverttopluginsdefaultsintro'] = 'Utilisez le bouton ci-dessous si vous souhaitez rétablir les valeurs par défaut ci-dessus par rapport aux valeurs par défaut du plugin. Cela n\'affecte pas les règles des cours existants.';
 $string['reward'] = 'Récompense';
@@ -331,7 +355,7 @@ Remarque : les enseignants et plus globalement les utilisateurs avec les droits
 ```
 
 Remarque : ces codes ne peuvent PAS être imbriqués les uns dans les autres.';
-$string['shortcode:xpladder'] = 'Affiche une partie du classement autour du rang de l\'utilisateur actuel.';
+$string['shortcode:xpladder'] = 'Affiche une partie du classement.';
 $string['shortcode:xpladder_help'] = 'Par défaut, une partie du classement autour du rang de l\'utilisateur est affiché.
 
 ```
@@ -370,6 +394,7 @@ Sinon, vous pouvez utiliser le paramètre `level` pour afficher le nom spécifiq
 Si le paramètre `level` est défini, mais que le niveau n\'existe pas, rien ne s\'affichera.';
 $string['shortcode:xppoints'] = 'Affiche un nombre de points formatés en points d\'expérience.';
 $string['shortcode:xpprogressbar'] = 'La barre de progression de l\'utilisateur actuel vers le prochain niveau.';
+$string['somefeaturesrequireotherplugins'] = 'Certaines fonctionnalités nécessitent l\'installation de plugins supplémentaires.';
 $string['someoneelse'] = 'Quelqu\'un d\'autre';
 $string['somethinghappened'] = 'Quelque chose est arrivé';
 $string['taskcollectionloggerpurge'] = 'Supprimer les journaux de collection';
@@ -401,6 +426,7 @@ $string['usingalgo'] = 'Avec l\'algorithme';
 $string['value'] = 'Valeur';
 $string['valuessaved'] = 'Les valeurs ont été enregistrées avec succès';
 $string['viewas'] = 'Voir en';
+$string['viewlogs'] = 'Voir les logs';
 $string['viewtheladder'] = 'Voir l\'échelle';
 $string['visualsintro'] = 'Déposez des images pour personnaliser l\'apparence des niveaux.';
 $string['wewillreplyat'] = 'Nous vous répondrons à : _{$a}_.';
@@ -416,7 +442,7 @@ $string['xp:myaddinstance'] = 'Ajouter le bloc à mon tableau de bord';
 $string['xp:view'] = 'Voir le bloc et ses pages relatives';
 $string['xp:viewlogs'] = 'Voir le journal';
 $string['xp:viewreport'] = 'Visualiser le rapport';
-$string['xpgaindisabled'] = 'Gain d\'expérience désactivé';
+$string['xpgaindisabled'] = 'Gain de points désactivé';
 $string['xprequired'] = 'Expérience requise';
 $string['xptogo'] = '[[{$a}]] restant';
 $string['youreachedlevel'] = 'Vous avez atteint le niveau :';

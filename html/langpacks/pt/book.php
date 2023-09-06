@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'pt', version '3.11'.
+ * Strings for component 'book', language 'pt', version '4.1'.
  *
  * @package     book
  * @category    string
@@ -55,10 +55,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão do Livro';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recurso Livro.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Livro';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Livro durante esse intervalo de análise (Níveis = Não visualizado, Visualizado)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização do Livro';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Livro.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Livro';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Livro durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = 'Livro';
 $string['modulename_help'] = 'O recurso Livro permite que o professor crie um conteúdo com várias páginas com formato idêntico a um livro, com capítulos e subcapítulos. O Livro pode conter texto e elementos multimédia e é útil para exibir informação extensa que pode ser dividida em capítulos.
 

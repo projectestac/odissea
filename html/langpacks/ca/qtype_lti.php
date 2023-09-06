@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_lti', language 'ca', version '3.11'.
+ * Strings for component 'qtype_lti', language 'ca', version '4.1'.
  *
  * @package     qtype_lti
  * @category    string
@@ -26,4 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['miscellaneous'] = 'Miscel·lània';
+$string['modulename_link'] = 'mod/lti/view';
+$string['never'] = 'Mai';
 $string['password'] = 'Contrasenya secreta compartida';
+$string['pluginname_link'] = 'question/type/lti';

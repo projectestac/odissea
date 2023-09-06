@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'en', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'en', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'Audio and video';
 $string['audiobitrate'] = 'Audio bitrate';
 $string['audiobitrate_desc'] = 'Quality of audio recording (larger number means higher quality)';
 $string['audiortc'] = 'Record audio';
+$string['audiotimelimit'] = 'Audio time limit in seconds';
+$string['audiotimelimit_desc'] = 'Maximum recording length allowed for the audio clips';
 $string['gumabort'] = 'Something strange happened which prevented the webcam/microphone from being used';
 $string['gumabort_title'] = 'Something happened';
 $string['gumnotallowed'] = 'The user must allow the browser access to the webcam/microphone';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'Start recording';
 $string['stoprecording'] = 'Stop recording';
 $string['timelimit'] = 'Time limit in seconds';
 $string['timelimit_desc'] = 'Maximum recording length allowed for the audio/video clips';
+$string['timelimitwarning'] = 'You must enter a number that is greater than 0.';
 $string['uploadaborted'] = 'Upload aborted:';
 $string['uploadfailed'] = 'Upload failed:';
 $string['uploadfailed404'] = 'Upload failed: file too large';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'completed';
 $string['videobitrate'] = 'Video bitrate';
 $string['videobitrate_desc'] = 'Quality of video recording (larger number means higher quality)';
 $string['videortc'] = 'Record video';
+$string['videotimelimit'] = 'Video time limit in seconds';
+$string['videotimelimit_desc'] = 'Maximum recording length allowed for the video clips';

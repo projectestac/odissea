@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'zh_cn', version '3.11'.
+ * Strings for component 'quiz_grading', language 'zh_cn', version '4.1'.
  *
  * @package     quiz_grading
  * @category    string
@@ -54,6 +54,7 @@ $string['grading:viewstudentnames'] = '评分时显示学生姓名';
 $string['gradingall'] = '此试题共被解答 {$a} 次。';
 $string['gradingattempt'] = '{$a->fullname}的第{$a->attempt}次答题';
 $string['gradingattemptsxtoyofz'] = '为{$a->of}次答题中的第{$a->from}次到第{$a->to}次评分';
+$string['gradingattemptwithcustomfields'] = '对{$a->fullname}（{$a->customfields}）的尝试次数{$a->attempt}。';
 $string['gradingattemptwithidnumber'] = '{$a->fullname}（{$a->idnumber}）的第{$a->attempt}次答题';
 $string['gradingnextungraded'] = '下 {$a} 份未评分试卷';
 $string['gradingnotallowed'] = '无权在该测验中手动评分回复';
@@ -69,6 +70,7 @@ $string['noquestionsfound'] = '没有发现由人工评分的题目';
 $string['nothingfound'] = '没有东西可显示';
 $string['options'] = '选项';
 $string['orderattempts'] = '试卷顺序';
+$string['orderattemptsby'] = '按顺序尝试';
 $string['pluginname'] = '人工评分';
 $string['privacy:preference:order'] = '根据什么顺序显示需要评分的多次尝试';
 $string['privacy:preference:pagesize'] = '在评分界面的每一页上要显示的尝试次数。';
@@ -77,6 +79,7 @@ $string['questionname'] = '题目名';
 $string['questionsperpage'] = '每页题目数';
 $string['questionsthatneedgrading'] = '需要评分的题目';
 $string['questiontitle'] = '题目 {$a->number}："{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} 次 {$a->openspan}已评分{$a->closespan})。';
+$string['random'] = '随机的';
 $string['randomly'] = '随机';
 $string['saveandnext'] = '保存并转到下一页';
 $string['showstudentnames'] = '显示学生姓名';

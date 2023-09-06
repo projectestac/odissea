@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'eu', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'eu', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -55,6 +55,7 @@ $string['deletelastitem'] = 'Ezabatu azken elementua';
 $string['distributionoption'] = 'Aukeratu banaketa-mota';
 $string['editdatasets'] = 'Editatu aldagaien datu-multzoak';
 $string['editdatasets_help'] = 'Aldagaietako balioak aldagaiaren eremuan zenbaki bat sartu eta Gehitu botoian klik eginda sor daitezke. 10 balio edo gehiago automatikoki sortzeko aukeratu ezazu nahi duzun balio kopurua eta ondoren egin klik Gehitu botoian. Banaketa uniformea aukeratuz gero limiteen barruko edozein balio probabilitate berarekin sortuko dira; banaketa loguniformearekin ordea beheko limitetik hurbil dauden balioak sortzeko probabilitatea altuagoa izango da.';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = 'lehendik existitzen den datu-multzo partekatua erabiliko du';
 $string['existingcategory2'] = 'lehendik existitzen den eta kategoria honetako beste galderek erabiltzen duten fitxategi-multzo bateko fitxategi bat';
 $string['existingcategory3'] = 'lehendik existitzen den eta kategoria honetako beste galderek erabiltzen duten esteka-multzo bateko esteka bat';
@@ -111,6 +112,7 @@ $string['param'] = 'Parametroa {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Edozein erantzun partzialki zuzenetarako';
 $string['pluginname'] = 'Galdera kalkulatua';
 $string['pluginname_help'] = 'Galdera kalkulatuek zenbakizko galderak giltzen arteko aldagaiak erabilita sortzea ahalbidetzen dute, gero galdetegia egitean balioekin ordezkatuak izaten direnak. Adibidez, "Zein da {I} luzera eta {z} zabalera duen laukiaren azalera?" galderaren erantzun zuzena "{I}*{z}" formula izango da (non * karaktereak biderketa esan nahi duen).';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = 'Galdera kalkulatua gehitzen';
 $string['pluginnameediting'] = 'Galdera kalkulatua editatzen';
 $string['pluginnamesummary'] = 'Galdera kalkulatuak zenbakizkoak bezalakoak dira baina erabilitako zenbakiak ausaz aukeratzen dira galdetegia egitean sortutako datu-multzo batetik.';

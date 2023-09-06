@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ja', version '3.11'.
+ * Strings for component 'chat', language 'ja', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -61,7 +61,7 @@ $string['currentusers'] = '現在のユーザ';
 $string['deletesession'] = 'このセッションを削除する';
 $string['deletesessionsure'] = '本当にこのセッションを削除してもよろしいですか?';
 $string['donotusechattime'] = 'チャット時間を公開しない';
-$string['enterchat'] = 'ここをクリックしてチャットルームに入室する';
+$string['enterchat'] = 'チャットに入室する';
 $string['entermessage'] = 'あなたのメッセージを入力してください。';
 $string['errornousers'] = 'ユーザが見つかりませんでした!';
 $string['eventmessagesent'] = 'メッセージが送信されました。';
@@ -75,10 +75,12 @@ $string['indicator:cognitivedepth'] = 'チャット認知的';
 $string['indicator:cognitivedepth_help'] = 'この指標はチャット活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'チャット認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がチャット活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信, フィードバックの閲覧, フィードバックへのコメント)。';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'チャット社会的';
 $string['indicator:socialbreadth_help'] = 'この指標はチャット活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'チャット社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がチャット活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = '入力エリア';
 $string['invalidid'] = 'チャットルームが見つかりませんでした!';
 $string['list_all_sessions'] = 'すべてのセッションを一覧表示する';
@@ -107,6 +109,7 @@ $string['modulename_help'] = 'チャット活動において参加者はテキ�
 * 低学年の子どもたちがコントロール (監視) されたソーシャルネットワークの世界への始めての経験として夕方自宅でチャットするため
 * 異なる場所にいる招待スピーカーとのQ＆Aセッションとして
 * 教師または他の学生がサンプル問題を提示して学生をサポートするためのテスト準備用セッションとして';
+$string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'チャット';
 $string['neverdeletemessages'] = 'メッセージを削除しない';
 $string['nextchattime'] = '次のチャット時間:';
@@ -124,6 +127,7 @@ $string['notlogged'] = 'あなたはログインしていません!';
 $string['oldping'] = '切断タイムアウト';
 $string['page-mod-chat-x'] = 'すべてのチャットモジュールページ';
 $string['pastchats'] = '過去のチャットセッション';
+$string['pastsessions'] = '過去のセッション';
 $string['pluginadministration'] = 'チャット管理';
 $string['pluginname'] = 'チャット';
 $string['privacy:metadata:chat_messages_current'] = '現在のセッションです。このデータは一時的でありチャットセッション後に削除されます。';
@@ -175,4 +179,4 @@ $string['usingchat_help'] = 'チャットモジュールにはチャットを若
 * 感情 - 行を「/me」または「:」で始めることで感情を表現できます。例えばあなたの名前がKimの場合、「:laughs!」または「/me laughs!」と入力することで、「Kimが笑っている!」状態を全員が見ることができます。
 * ビープ - 名前の隣にある「ビープ」をクリックすることで、他の人にサウンドを送ることができます。「beep all」と入力することで、チャット中の全員に一斉にビープできる便利な機能もあります。
 * HTML - あなたがHTMLコードを知っているのでしたらイメージを挿入したり音を鳴らしたり色やサイズの異なるテキストを作成することができます。';
-$string['viewreport'] = '過去のチャットセッションを表示する';
+$string['viewreport'] = '過去のセッション';

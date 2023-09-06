@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'es', version '3.11'.
+ * Strings for component 'cachestore_memcache', language 'es', version '4.1'.
  *
  * @package     cachestore_memcache
  * @category    string
@@ -33,6 +33,8 @@ $string['prefix_help'] = 'Este prefijo se utiliza para todas las claves en el se
 * Si sólo tiene una instancia Moodle usando este servidor, puede dejar el valor por defecto.
 * Debido a las restricciones de longitud de clave, sólo se permite un máximo de 5 caracteres.';
 $string['prefixinvalid'] = 'Prefijo inválido. Sólo puede usar a-z A-Z 0-9-_.';
+$string['privacy:metadata:memcache'] = 'El plugin de caché del almacén de caché Memcache almacena datos por corto tiempo como parte de su funcionalidad de cachear. Estos datos son almacenados en un servidor Memcache en donde los datos son eliminados regularmente.';
+$string['privacy:metadata:memcache:data'] = 'Los diversos datos almacenados en la caché';
 $string['servers'] = 'Servidores';
 $string['servers_help'] = 'Este ajuste configura los servidores utilizados por el adaptador memcache.
 Los servidores deben definirse uno por línea, indicando la dirección de servidor y, opcionalmente, un puerto y peso.

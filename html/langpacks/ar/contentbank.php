@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ar', version '3.11'.
+ * Strings for component 'contentbank', language 'ar', version '4.1'.
  *
  * @package     contentbank
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'المؤلف';
+$string['choosecontext'] = 'حدد المساق أو التصنيف...';
 $string['close'] = 'إغلاق';
 $string['contentbank'] = 'بنك المحتوى';
 $string['contentbankpreferences'] = 'تفضيلات بنك المحتوى الحالية';
@@ -54,10 +55,12 @@ $string['eventcontentreplaced'] = 'محتوى تم استبداله بملف';
 $string['eventcontentupdated'] = 'تم تحديث المحتوى';
 $string['eventcontentuploaded'] = 'تم رفع المحتوى';
 $string['eventcontentviewed'] = 'محتوى تمت معاينته';
+$string['exit'] = 'خروج';
 $string['file'] = 'إرفع المحتوى';
 $string['file_help'] = 'يمكن خزن الملفات في بنك المحتوى لاستعمالها في المقررات الدراسية. يمكن فقط قبول رفع الملفات ذات الأنواع الممكَّنة في الموقع.';
 $string['itemsfound'] = 'يوجد {$a} عنصر/عناصر';
 $string['lastmodified'] = 'آخر تحديث';
+$string['more'] = 'المزيد';
 $string['name'] = 'المحتوى';
 $string['nocontentavailable'] = 'لا محتوى متاح';
 $string['nocontenttypes'] = 'ليس هناك أي نوع محتوى متاح';

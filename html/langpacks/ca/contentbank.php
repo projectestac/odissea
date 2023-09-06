@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ca', version '3.11'.
+ * Strings for component 'contentbank', language 'ca', version '4.1'.
  *
  * @package     contentbank
  * @category    string
@@ -54,6 +54,7 @@ $string['eventcontentreplaced'] = 'S\'ha substituït el contingut amb el fitxer'
 $string['eventcontentupdated'] = 'S\'ha actualitzat el contingut';
 $string['eventcontentuploaded'] = 'S\'ha carregat el contingut';
 $string['eventcontentviewed'] = 'S\'ha visualitzat el contingut';
+$string['exit'] = 'Surt';
 $string['file'] = 'Carrega el contingut';
 $string['file_help'] = 'Els fitxers es poden emmagatzemar en el banc de contingut per a utilitzar-los en els cursos. Només es poden carregar fitxers utilitzats pels tipus de contingut habilitats al servidor.';
 $string['itemsfound'] = 'S\'han trobat {$a} elements';

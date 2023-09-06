@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'nl', version '3.11'.
+ * Strings for component 'book', language 'nl', version '4.1'.
  *
  * @package     book
  * @category    string
@@ -55,10 +55,12 @@ $string['indicator:cognitivedepth'] = 'Boek cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de sociale breedte die door de leerling is bereikt in een bron Boek.';
 $string['indicator:cognitivedepthdef'] = 'Boek cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de boekactiviteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Weergave)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Boek sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Boek bron.';
 $string['indicator:socialbreadthdef'] = 'Boek sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de boekactiviteiten tijdens dit analyse-interval bereikt (niveaus = geen deelname, alleen deelnemer)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = 'Boek';
 $string['modulename_help'] = 'Met de boekmodule kan een leraar bronnen maken met meerdere pagina\'s in een boek-stijl opmaak met hoofdstukken en subtitels. In de boekmodule kunnen mediabestanden en tekst gezet worden en is nuttig voor het tonen van lange passages tekst of informatie die opgedeeld kan worden in delen.
 
@@ -67,6 +69,7 @@ Een boek kan gebruikt worden voor:
 * het tonen van leesmateriaal voor individuele studiemodules
 * als handboek voor medewerkers
 * als demonstratieportfolio van werk van leerlingen';
+$string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Boeken';
 $string['movechapterdown'] = 'Verplaats hoofdstuk  "{$a}" omlaag';
 $string['movechapterup'] = 'Verplaats hoofdstuk  "{$a}" omhoog';

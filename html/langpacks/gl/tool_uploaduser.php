@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'gl', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'gl', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -63,6 +63,7 @@ $string['uploadusers_help'] = 'Para enviar os usuarios (e, opcionalmente, matric
 * Cada rexistro é unha serie de datos separados por comas (ou por calquera outro delimitador)
 * El primeiro rexistro conten unha lista de nomes de campo que definen o formato do resto do ficheiro
 * Os nomes de campo necesarios son nome de usuario (username), contrasinal (password), nome propio (firstname), apelido (lastname) e correo (email)';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Vista previa do envío de usuarios';
 $string['uploadusersresult'] = 'Resultados do envío de usuarios';
 $string['useraccountupdated'] = 'Usuario actualizado';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlabel', language 'pt', version '3.11'.
+ * Strings for component 'customlabel', language 'pt', version '4.1'.
  *
  * @package     customlabel
  * @category    string
@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['adminmetadata'] = 'Classificação de classificadores';
+$string['addatype'] = 'Adicionar tipo';
+$string['addvalue'] = 'Adicionar valor';
+$string['adminmetadata'] = 'Configuração dos classificadores';
 $string['apparence'] = 'Aparência';
 $string['category'] = 'Categoria';
 $string['changetypeadvice'] = 'Está prestes a alterar a estrutura de dados interna deste elemento. O conteúdo antigo não pode ser mantido. Pretende continuar?';
@@ -37,7 +39,7 @@ $string['classificationmodel'] = 'Modelo de classificação';
 $string['classificationtypetable'] = 'Dimensões da classificação e tabela de filtros';
 $string['classificationtypetable_help'] = 'Esta tabela fornece domínios de classificação. Um domínio possui um conjunto de valores.';
 $string['classificationvalues'] = 'Valores';
-$string['classificationvaluetable'] = 'tabela de valores da classificação';
+$string['classificationvaluetable'] = 'Tabela de valores da classificação';
 $string['classificationvaluetable_help'] = 'Esta tabela fornece todos os valores para todos os classificadores definidos na tabela de tipos.';
 $string['classificationvaluetypekey'] = 'classificador tipo campo';
 $string['classificationvaluetypekey_help'] = 'Serve para definir o nome da coluna da tabela que é usado para ajustar o tipo de propriedade dos valores.';
@@ -74,7 +76,7 @@ $string['content'] = 'Conteúdo';
 $string['coursefilter'] = 'Filtrar disciplina';
 $string['coursemetadatacoursekey'] = 'Chave de marcação da disciplina (ligação disciplina para metadados)';
 $string['coursemetadatacoursekey_help'] = 'Deve definir um nome de coluna na base de dados que mapeia um registo para um ID da disciplina.';
-$string['coursemetadatatable'] = 'tabela de marcação dos metadados da disciplina';
+$string['coursemetadatatable'] = 'Tabela de marcação dos metadados da disciplina';
 $string['coursemetadatatable_help'] = 'Esta tabela guarda as ligações da disciplina aos metadados.';
 $string['coursemetadatavaluekey'] = 'Campo de marcação para valores (ligação de metadados a valores)';
 $string['coursemetadatavaluekey_help'] = 'Deve definir um nome de coluna na base de dados que mapeia um registo para um valor de metadados.';
@@ -91,6 +93,7 @@ $string['doupdate'] = 'Atualizar!!';
 $string['down'] = 'Baixo';
 $string['editclass'] = 'Atualizar a classe do classificador ';
 $string['editvalues'] = 'Editar valores';
+$string['elementtitle'] = 'Identificador do elemento';
 $string['errorclassloading'] = 'Erro ao carregar: classe nula';
 $string['errorfailedloading'] = 'Ocorreu um erro ao carregar a classe para a etiqueta personalizada \'{$a}\'. A reverter para etiqueta personalizada "texto".';
 $string['errorinsertvalue'] = 'Não foi possível atdicionar um novo valor';

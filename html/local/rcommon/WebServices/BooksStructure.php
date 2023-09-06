@@ -141,12 +141,13 @@ function get_books($publisher) {
 
 /**
  * Web Service to access digital content SM
+ *
  * @param none
- * @return obj -> web service response
+ * @throws Exception
+ * @return void -> web service response
  */
 function get_book_structure($publisher, $isbn) {
     global $DB;
-    // echo "<br>Indice Libro: ".$wsurl_contenido."<br>";
 
     $book = $DB->get_record('rcommon_books', array('isbn' => $isbn));
     if (!$book) {
@@ -168,16 +169,18 @@ function get_book_structure($publisher, $isbn) {
     }
 
     $response = rcommon_object_to_array_lower($response, true);
-    $response = isset($response['obtenerestructuraresult']) ? $response['obtenerestructuraresult'] : false;
+    $response = $response['obtenerestructuraresult'] ?? false;
+
     if (!$response) {
-        $message  = get_string('empty_response_error', 'local_rcommon');
+        $message = get_string('empty_response_error', 'local_rcommon');
         print_object($client->__getLastRequest());
         print_object($client->__getLastResponse());
         debugging('<pre>'.htmlentities($client->__getLastResponse()).'</pre>');
         $message = rcommon_ws_error('get_book_structure', $message);
-        die();
         throw new Exception(get_string('empty_response_error', 'local_rcommon'));
-    } else if (isset($response['codigo']) && $response['codigo'] <= 0) {
+    }
+
+    if (isset($response['codigo']) && $response['codigo'] <= 0) {
         $text = array('code' => $response['codigo'], 'description' => $response['descripcion']);
         $message  = get_string('wserror', 'local_rcommon', $text);
         if (isset($response['url'])) {
@@ -185,16 +188,21 @@ function get_book_structure($publisher, $isbn) {
         }
         $message = rcommon_ws_error('get_book_structure', $message);
         throw new Exception($message);
-    } else {
-        save_book_structure($response, $book);
     }
+
+    save_book_structure($response, $book);
 }
 
 function save_book_structure($response, $book) {
 
-    $units = isset($response['libros']['libro']['unidades']['unidad']) ? $response['libros']['libro']['unidades']['unidad'] : false;
+    $units = $response['libros']['libro']['unidades']['unidad'] ?? false;
+
     // Guarda los datos del libro
-    $book->structureforaccess = (count($units) > 0) ? 1 : 0;
+    if (is_array($units)) {
+        $book->structureforaccess = (count($units) > 0) ? 1 : 0;
+    } else {
+        $book->structureforaccess = 0;
+    }
 
     $bookid = rcommon_book::add_update($book);
     if (!$bookid) {
@@ -205,7 +213,7 @@ function save_book_structure($response, $book) {
         $docleaning = true; // If we have no errors, we will clean old units and activities
         $timemodified = time(); // Time to do the cleaning
 
-        // If is not associtive, it will have only one unit
+        // If is not associative, it will have only one unit
         if (is_associative_array($units)) {
             $units = array($units);
         }
@@ -235,7 +243,7 @@ function save_book_structure($response, $book) {
             }
 
             if ($actividades) {
-                // If is not associtive, it will have only one activity
+                // If is not associative, it will have only one activity
                 if (is_associative_array($actividades)) {
                     $actividades = array($actividades);
                 }

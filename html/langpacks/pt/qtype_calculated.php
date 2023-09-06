@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'pt', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'pt', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -138,7 +138,7 @@ $string['synchronizeyesdisplay'] = 'Sincronizar e mostrar o nome dos conjuntos d
 $string['tolerance'] = 'Tolerância ±';
 $string['tolerancetype'] = 'Tipo';
 $string['trueanswerinsidelimits'] = 'Resposta correta : {$a->correct} dentro dos limites do valor aceite de {$a->true}';
-$string['trueansweroutsidelimits'] = '<span class="error">ERRO resposta correta : {$a->correct} fora dos limites do valor aceite {$a->true}</span>';
+$string['trueansweroutsidelimits'] = '<span class="error">ERRO resposta correta: {$a->correct} fora dos limites do valor aceite {$a->true}</span>';
 $string['uniform'] = 'Uniforme';
 $string['uniformbit'] = 'decimais, a partir de uma distribuição uniforme';
 $string['unsupportedformulafunction'] = 'A função {$a} não é suportada';

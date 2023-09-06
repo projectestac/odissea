@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'fr', version '3.11'.
+ * Strings for component 'enrol', language 'fr', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -57,6 +57,7 @@ $string['enrollednewusers'] = '{$a} utilisateurs inscrits';
 $string['enrolledusers'] = 'Utilisateurs inscrits';
 $string['enrolledusersmatching'] = 'Utilisateurs inscrits correspondants';
 $string['enrolme'] = 'M\'inscrire dans ce cours';
+$string['enrolment'] = 'Inscription';
 $string['enrolmentinstances'] = 'Méthodes d\'inscription';
 $string['enrolmentmethod'] = 'Méthode d\'inscription';
 $string['enrolmentnew'] = 'Nouvelle inscription dans {$a}';
@@ -110,6 +111,7 @@ $string['invalidrequest'] = 'Requête non valide';
 $string['invalidrole'] = 'Rôle non valide';
 $string['manageenrols'] = 'Gérer les plugins d\'inscription';
 $string['manageinstance'] = 'Gestion';
+$string['method'] = 'Méthode';
 $string['migratetomanual'] = 'Migrer vers les inscriptions manuelles';
 $string['nochange'] = 'Aucun changement';
 $string['noexistingparticipants'] = 'Aucun participant';
@@ -150,6 +152,10 @@ $string['startdatetoday'] = 'Aujourd\'hui';
 $string['synced'] = 'Synchronisé';
 $string['testsettings'] = 'Réglages de test';
 $string['testsettingsheading'] = 'Réglages de test d\'inscription – {$a}';
+$string['timeended'] = 'Horodatage de fin';
+$string['timeenrolled'] = 'Horodatage d\'inscription';
+$string['timereaggregated'] = 'Horodatage de recombinaison';
+$string['timestarted'] = 'Horodatage de début';
 $string['totalenrolledusers'] = '{$a} utilisateurs inscrits';
 $string['totalotherusers'] = '{$a} autres utilisateurs';
 $string['totalunenrolledusers'] = '{$a} utilisateurs désinscrits';

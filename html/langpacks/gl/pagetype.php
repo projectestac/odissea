@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'gl', version '3.11'.
+ * Strings for component 'pagetype', language 'gl', version '4.1'.
  *
  * @package     pagetype
  * @category    string
@@ -38,7 +38,7 @@ $string['page-mod-x'] = 'Calquera páxina de módulo de actividade';
 $string['page-mod-x-view'] = 'Calquera páxina do módulo de actividade principal';
 $string['page-my-index'] = 'Páxina do Taboleiro';
 $string['page-report-x'] = 'Calquera páxina de informe';
-$string['page-site-index'] = 'Só a páxina de portada';
+$string['page-site-index'] = 'Só na páxina de inicio do sitio';
 $string['page-site-x'] = 'Calquera páxina de alto nivel do sitio';
 $string['page-user-profile'] = 'Só as páxinas do perfil de usuario';
 $string['page-user-view'] = 'Só as páxinas do perfil de usuario';

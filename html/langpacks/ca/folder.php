@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ca', version '3.11'.
+ * Strings for component 'folder', language 'ca', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -44,8 +44,10 @@ $string['forcedownload'] = 'Imposa la descàrrega de fitxers';
 $string['indicator:cognitivedepth'] = 'Carpeta cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva assolida per l\'estudiant en un recurs de carpeta.';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Carpeta en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Carpeta social';
 $string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en la amplitud social assolida per l\'estudiant en un recurs de carpeta.';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['maxsizetodownload'] = 'Mida màxima de la carpeta a descarregar (MB)';
 $string['maxsizetodownload_help'] = 'La mida màxima de la carpeta que es pot descarregar com a fitxer ZIP. Si es configura a zero, la mida de la carpeta descarregable és iŀlimitada.';
 $string['modulename'] = 'Carpeta';
@@ -54,6 +56,7 @@ $string['modulename_help'] = 'El mòdul de carpeta permet que el professor mostr
 Una carpeta pot utilitzar-se
 * Per a una sèrie de fitxers d\'un tema; per exemple, un conjunt d\'exàmens d\'anys anteriors en format .pdf o una col·lecció de fitxers d\'imatge, perquè els alumnes els emprin en els seus projectes
 * Per oferir un espai compartit de càrrega de fitxers per als professors en la pàgina del curs (en aquest cas, s\'ha de mantenir la carpeta oculta a fi que només els professors la puguin veure)';
+$string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Carpetes';
 $string['newfoldercontent'] = 'Nou contingut de carpeta';
 $string['noautocompletioninline'] = 'La compleció automàtica de la visualització de l\'activitat no és pot seleccionar al mateix temps que l\'opció «Mostra en línia»';

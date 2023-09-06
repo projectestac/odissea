@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'it', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'it', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -79,14 +79,17 @@ $string['emailpasswordchangeinfosubject'] = '{$a}: Informazioni sul cambio passw
 $string['info'] = 'Account esterno';
 $string['issuer'] = 'Servizio OAuth 2';
 $string['issuernologin'] = 'Questo issuer non può essere utilizzato per autenticarsi.';
+$string['key'] = 'Chiave';
 $string['linkedlogins'] = 'Autenticazioni collegate';
 $string['linkedloginshelp'] = 'Aiuto su Autenticazioni collegate';
+$string['loggedin'] = 'Utente autenticato correttamente col provider.';
 $string['loginerror_authenticationfailed'] = 'Il processo di autenticazione non è andato a buon fine.';
 $string['loginerror_cannotcreateaccounts'] = 'Non è stato possibile individuare un account con il tuo indirizzo email';
 $string['loginerror_invaliddomain'] = 'L\'indirizzo email non è autorizzato.';
 $string['loginerror_nouserinfo'] = 'Non sono state ricevute informazioni sull\'utente. Probabilmente il servizio OAuth2 non è configurato correttamente.';
 $string['loginerror_userincomplete'] = 'Non sono stati ricevuti lo username e l\'email dell\'utente. Probabilmente il servizio OAuth2 non è configurato correttamente.';
-$string['noissuersavailable'] = 'Nessun servizio OAuth 2 tra quelli configurati consente di collegare account per l\'autenticazione';
+$string['noconfiguredidps'] = 'Non ci sono provider Oauth2 configurati.';
+$string['noissuersavailable'] = 'Nessun servizio OAuth 2 tra quelli configurati consente di collegare account per l\'autenticazione.';
 $string['notenabled'] = 'Siamo spiacenti, il plugin di autenticazione OAuth 2 non è abilitato';
 $string['notloggedindebug'] = 'L\'autenticazione non è andata a buon fine. Motivo: {$a}';
 $string['notwhileloggedinas'] = 'Non è possibile gestire autenticazioni collegate quando si è collegati come altro utente.';
@@ -98,10 +101,13 @@ $string['privacy:metadata:auth_oauth2:authsubsystem'] = 'Il plugin è collegato 
 $string['privacy:metadata:auth_oauth2:confirmtoken'] = 'Token di conferma';
 $string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'Marca temporale che indica la scadenza del token di conferma.';
 $string['privacy:metadata:auth_oauth2:email'] = 'Email esterna che rimanda all\'account.';
-$string['privacy:metadata:auth_oauth2:issuerid'] = 'ID OAuth 2 emesso per l\'autenticazione.';
+$string['privacy:metadata:auth_oauth2:issuerid'] = 'ID OAuth 2 fornito per l\'autenticazione.';
 $string['privacy:metadata:auth_oauth2:tableexplanation'] = 'Account OAuth 2 collegati all\'account Moodle dell\'utente.';
 $string['privacy:metadata:auth_oauth2:timecreated'] = 'Marca temporale che indica quando l\'account dell\'utente è stato collegato al login OAuth 2.';
 $string['privacy:metadata:auth_oauth2:timemodified'] = 'Marca temporale che indica quando è stato modificato il record.';
 $string['privacy:metadata:auth_oauth2:userid'] = 'ID dell\'account utente a cui è collegato il login OAuth 2.';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'ID dell\'utente che ha modificato l\'account';
 $string['privacy:metadata:auth_oauth2:username'] = 'Username esterno che rimanda all\'account.';
+$string['testidplogin'] = 'Test autenticazione con:';
+$string['userinfo'] = 'Dati utenti provenienti dal provider';
+$string['value'] = 'Valore';

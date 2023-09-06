@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'es', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'es', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -25,9 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptrisk'] = 'Entiendo que deshabilitar la verificación de correo electrónico puede ser un problema de seguridad.';
+$string['acceptrisk_help'] = 'Deshabilitar la verificación de correo electrónico puede potencialmente permitir que un usuario se autentique como otro usuario.';
 $string['authconfirm'] = 'Esta acción otorgará acceso API permanente a Moodle para la cuenta autenticada. Esto está pensado para utilizarse como una cuenta del sistema para administrar archivos propiedad de Moodle.';
 $string['authconnected'] = 'La cuenta del sistema está ahora conectada para acceso fuera de línea';
 $string['authnotconnected'] = 'La cuenta del sistema no se conectó para el acceso fuera de línea';
+$string['clever_service'] = 'Inteligente';
 $string['configured'] = 'Configurado';
 $string['configuredstatus'] = 'Configurado';
 $string['connectsystemaccount'] = 'Conectar a una cuenta del sistema';
@@ -64,6 +67,7 @@ $string['google_service'] = 'Google';
 $string['imsobv2p1_service'] = 'Insignias abiertas';
 $string['issueralloweddomains'] = 'Dominios de inicio de sesión';
 $string['issueralloweddomains_help'] = 'Si se rellena, este ajuste es una lista de dominios separados por comas a los que se limitarán los inicios de sesión cuando se utilice este proveedor.';
+$string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
 $string['issuerbaseurl'] = 'URL base de servicio';
 $string['issuerbaseurl_help'] = 'URL base utilizada para acceder al servicio.';
 $string['issuerclientid'] = 'ID de cliente';
@@ -109,7 +113,7 @@ $string['loginissuer'] = 'Permitir inicio de sesión';
 $string['microsoft_service'] = 'Microsoft';
 $string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Sin configurar';
-$string['notdiscovered'] = 'Service discovery not successful';
+$string['notdiscovered'] = 'El descubrimiento del servicio no tuvo éxito';
 $string['notloginissuer'] = 'No permitir inicio de sesión';
 $string['pluginname'] = 'Servicios OAuth 2';
 $string['privacy:metadata'] = 'El complemento de servicios de OAuth 2 no almacena ningún dato personal.';

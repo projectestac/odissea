@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'sv', version '3.11'.
+ * Strings for component 'error', language 'sv', version '4.1'.
  *
  * @package     error
  * @category    string
@@ -158,6 +158,7 @@ $string['cannotsetupcapformod'] = 'Kunde inte konfigurera funktionsbehörigheter
 $string['cannotsetupcapforplugin'] = 'Kunde inte konfigurera funktionsbehörigheterna för {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Det går inte att visa/dölja kurser i kategori {$a}.';
 $string['cannotsignup'] = 'Du kan inte skapa ett nytt konto eftersom du redan är inloggad som {$a}.';
+$string['cannotswitcheditmodeon'] = 'Kunde inte aktivera redigeringsläget';
 $string['cannotunassigncap'] = 'Det gick inte att ta bort tilldelningen av en utgången kapacitet {$a->cap} från rollen {$a->role}';
 $string['cannotunassignrolefrom'] = 'Kan inte ta bort rolltilldelningen för denna användare för roll-id: {$a}';
 $string['cannotunzipfile'] = 'Det går inte att packa upp filen';
@@ -334,6 +335,7 @@ $string['invalidcourseformat'] = 'Ogiltigt kursformat';
 $string['invalidcourseid'] = 'Du försöker använda en ogiltig kurs-ID';
 $string['invalidcourselevel'] = 'Felaktig nivå på sammanhang';
 $string['invalidcoursemodule'] = 'Ogiltig ID för kursmodul';
+$string['invalidcoursemoduleid'] = 'Ogiltigt ID för kursmodul {$a}';
 $string['invalidcoursenameshort'] = 'Ogiltigt kortnamn för kurs';
 $string['invaliddata'] = 'De data som har skickats in är ogiltiga';
 $string['invaliddatarootpermissions'] = 'Ogiltiga behörigheter upptäcktes när en katalog skulle skapas. Aktivera felsökning för mer information.';
@@ -408,6 +410,7 @@ $string['messagingdisable'] = 'Meddelanden har inaktiverats på den här webbpla
 $string['mimetexisnotexist'] = 'Systemet är inte konfigurerat för att köra mimeTeX. Du måste hämta källkoden från <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip</a> och sedan kompilera den. Placera sedan programfilen i katalogen <em>moodle/filter/tex/</em> på servern.';
 $string['mimetexnotexecutable'] = 'Anpassad mimetex är inte körbar!';
 $string['missing_moodle_backup_xml_file'] = 'Säkerhetskopian saknar XML-fil: {$a}';
+$string['missingcategoryrole'] = 'Kunde inte tilldela roll till användare. Roll för kategorin saknas.';
 $string['missingfield'] = 'Fältet "{$a}" saknas';
 $string['missingkeyinsql'] = 'FEL: parameter "{$a}" saknas i frågan';
 $string['missingparam'] = 'En obligatorisk parameter ({$a}) saknades';
@@ -454,6 +457,7 @@ $string['nonmeaningfulcontent'] = 'Inget meningsfullt innehåll';
 $string['noparticipants'] = 'Inga deltagare hittades för denna kurs';
 $string['noparticipatorycms'] = 'Du har tyvärr inga deltagande kursmoduler att rapportera för';
 $string['nopermissions'] = 'Du har tyvärr inte behörighet att göra detta ({$a})';
+$string['nopermissiontoaccesspage'] = 'Du har inte behörighet att visa den här sidan.';
 $string['nopermissiontocomment'] = 'Du kan inte lägga till kommentarer';
 $string['nopermissiontodelentry'] = 'Du kan inte ta bort den här kommentaren!';
 $string['nopermissiontoeditcomment'] = 'Du kan inte redigera andras kommentarer!';
@@ -525,6 +529,9 @@ $string['sendmessage'] = 'Skicka meddelande';
 $string['sendmessagesent'] = 'Tack för din återkoppling angående:<br>{$a}';
 $string['serverconnection'] = 'Fel vid anslutning till servern';
 $string['servicedonotexist'] = 'Tjänsten finns inte';
+$string['sessioncannotobtainlock'] = '<p>Det gick inte att hämta lås för sessions-id {$a->id} inom {$a->acquiretimeout}.</p>
+<p>Det är troligt att en annan sida ({$a->whohaslock}) fortfarande körs på en annan webbläsarflik, eller att det inte släpptes på grund av ett fel.</p>
+<p>Du kan vänta till tidsgränsen för sessionslåset ({$a->lockexpire}) infaller, eller så kan du starta om webbläsaren. Om det här felet kvarstår, meddela serveradministratören.</p>';
 $string['sessioncookiesdisable'] = 'Felaktig användning av require_key_login() - sessions-cookies måste inaktiveras!';
 $string['sessiondiskfull'] = 'Sessionspartitionen är full. Just nu är det inte möjligt att logga in. Kontakta administratören.';
 $string['sessionerroruser'] = 'Tidsgränsen för din session har löpt ut. Vänligen logga in igen.';
@@ -564,6 +571,7 @@ $string['unknowcontext'] = 'Det här är en okänd kontext ({$a}) i get_child_co
 $string['unknowformat'] = 'Format inte känt ({$a})';
 $string['unknownbackupexporterror'] = 'Okänt fel vid förberedelse av information för import';
 $string['unknownblockregion'] = 'Blockregionen \'{$a}\' kändes inte igen på den här sidan.';
+$string['unknowncategory'] = 'Okänd kategori för kategori-ID "{$a}"';
 $string['unknowncontext'] = 'Detta är en okänd kontext.';
 $string['unknowncourse'] = 'Okänd kurs som kallas "{$a}"';
 $string['unknowncourseidnumber'] = 'Okänt kurs-ID "{$a}"';
@@ -595,6 +603,7 @@ $string['useradminodelete'] = 'Administratörskonton kan inte tas bort.';
 $string['userautherror'] = 'Okänd plugin för autentisering';
 $string['userauthunsupported'] = 'Denna plugin för autentisering stöds inte här.';
 $string['useremailduplicate'] = 'Dublett av adress';
+$string['userisfilteredout'] = 'Den här användaren matchar inte filter och tabellinställningar!';
 $string['usermustbemnet'] = 'Användare i MNET åtkomstlistan måste vara fjärr MNET-användare';
 $string['usernamelowercase'] = 'Användarnamnet måste skrivas med små bokstäver';
 $string['usernotaddederror'] = 'Användare inte tillagd - fel';

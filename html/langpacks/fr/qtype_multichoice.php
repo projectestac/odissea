@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'fr', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'fr', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -63,6 +63,7 @@ $string['pleaseselectananswer'] = 'Veuillez sélectionner une réponse.';
 $string['pleaseselectatleastoneanswer'] = 'Veuillez sélectionner au moins une réponse.';
 $string['pluginname'] = 'Choix multiple';
 $string['pluginname_help'] = 'Pour répondre à la question (qui peut inclure une image) les participants peuvent choisir parmi plusieurs propositions. Une question à choix multiple peut avoir une réponse (QCU) ou plusieurs réponses (QCM) correctes.';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = 'Ajouter une question à choix multiple';
 $string['pluginnameediting'] = 'Modification d\'une question à choix multiple';
 $string['pluginnamesummary'] = 'Permet la sélection d\'une ou plusieurs réponses dans une liste prédéfinie.';
@@ -70,13 +71,15 @@ $string['privacy:metadata'] = 'Le plugin de type de question Choix multiple perm
 $string['privacy:preference:answernumbering'] = 'Le style d\'énumération à utiliser (« 1., 2., 3., ...» ; « a., b., c., ...» ; etc.)';
 $string['privacy:preference:defaultmark'] = 'Le nombre de points par défaut pour une question.';
 $string['privacy:preference:penalty'] = 'La pénalité pour chaque tentative incorrecte lorsque les questions sont utilisées dans le comportement « Interactif avec essais multiples » ou « Adaptatif ».';
-$string['privacy:preference:showstandardinstruction'] = 'Si les instructions standard doivent être affichées';
+$string['privacy:preference:showstandardinstruction'] = 'Si les instructions standard sont affichées.';
 $string['privacy:preference:shuffleanswers'] = 'Si les réponses doivent être mélangées automatiquement.';
 $string['privacy:preference:single'] = 'Si la réponse est unique avec des boutons radio ou multiple avec des cases à cocher.';
+$string['regradeissuenumchoiceschanged'] = 'Le nombre de choix dans la question a été modifié.';
 $string['selectmulti'] = 'Veuillez choisir au moins une réponse.';
 $string['selectone'] = 'Veuillez choisir une réponse.';
 $string['showstandardinstruction'] = 'Afficher les instructions standards';
-$string['showstandardinstruction_help'] = 'Lorsque ce réglage est activé, les instructions « Sélectionner une option : » ou « Sélectionner une ou plusieurs options : ») sera affichée avant les réponses aux questions à choix multiple.';
+$string['showstandardinstruction_desc'] = 'Afficher les instructions « Sélectionner une option : » ou « Sélectionner une ou plusieurs options : ») seront affichées avant les réponses aux questions à choix multiple.';
+$string['showstandardinstruction_help'] = 'Lorsque ce réglage est activé, les instructions « Sélectionner une option : » ou « Sélectionner une ou plusieurs options : ») seront affichées avant les réponses aux questions à choix multiple. Dans le cas contraire, on peut inclure des instructions dans le texte de la question.';
 $string['shuffleanswers'] = 'Mélanger les réponses possibles ?';
 $string['shuffleanswers_desc'] = 'Ce réglage détermine si par défaut les réponses proposées doivent être mélangées à chaque tentative.';
 $string['shuffleanswers_help'] = 'Si vous cochez cette option, l\'ordre des réponses proposées sera mélangé aléatoirement au début de chaque tentative d\'un test contenant cette question, à condition que l\'option « Mélanger les réponses possibles » soit également activée dans les réglages du test.';

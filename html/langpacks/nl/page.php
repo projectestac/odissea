@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'nl', version '3.11'.
+ * Strings for component 'page', language 'nl', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -36,10 +36,12 @@ $string['indicator:cognitivedepth'] = 'Pagina cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Pagina bron.';
 $string['indicator:cognitivedepthdef'] = 'Pagina cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de paginabronnen bereikt tijdens dit analyse-interval (Niveaus = Geen weergave, Weergave)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Pagina sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Pagina bron.';
 $string['indicator:socialbreadthdef'] = 'Pagina sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de paginabronnen bereikt tijdens dit analyse-interval (niveaus = geen deelname, alleen deelnemer)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migratie van oude cursusbestanden';
 $string['legacyfilesactive'] = 'Actief';
 $string['legacyfilesdone'] = 'Beëindigd';
@@ -54,6 +56,7 @@ Een pagina kan gebruikt worden
 
 * om de deelnemingsvoorwaarden of een samenvatting van een cursus te tonen
 * om verschillende video\'s of geluidsbestanden samen te presenteren met wat tekst als uitleg';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Pagina\'s';
 $string['optionsheader'] = 'Toon opties';
 $string['page-mod-page-x'] = 'Elke paginamodule pagina';

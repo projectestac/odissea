@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_starredcourses', language 'ar', version '3.11'.
+ * Strings for component 'block_starredcourses', language 'ar', version '4.1'.
  *
  * @package     block_starredcourses
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['displaycategories'] = 'عرض التصنيفات';
-$string['displaycategories_help'] = 'إعرض تصنيفات المقررات الدراسية ضمن عناصر كتلة المقررات الدراسية المعلمة بنجمة';
-$string['nocourses'] = 'لا توجد مقررات دراسية معلمة بنجمة';
+$string['displaycategories_help'] = 'إعرض تصنيفات المقررات الدراسية ضمن عناصر كتلة المقررات المعلمة بنجمة';
+$string['nocourses'] = 'لا توجد مساقات معلمة بنجمة';
 $string['pluginname'] = 'المقررات الدراسية المعلمة بنجمة';
 $string['privacy:metadata'] = 'كتلة المقررات الدراسية المعلمة بنجمة لا تخزن أي بيانات شخصية.';
 $string['starredcourses:myaddinstance'] = 'إضافة كتلة جديدة من المقررات الدراسية المعلمة بنجمة إلى لوحة التحكم';

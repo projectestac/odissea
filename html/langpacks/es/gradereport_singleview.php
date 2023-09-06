@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'es', version '3.11'.
+ * Strings for component 'gradereport_singleview', language 'es', version '4.1'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -26,9 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all_grades'] = 'Todas las calificaciones';
+$string['ariareporttype'] = 'Seleccione un tipo de informe para ver';
 $string['assessmentname'] = 'Elemento de calificación';
 $string['blanks'] = 'Calificaciones vacías';
 $string['bulkappliesto'] = 'Para';
+$string['bulkchoice'] = 'La inserción en bloque permite reemplazar múltiples calificaciones a la vez. Seleccione las calificaciones que quiere reemplazar:';
 $string['bulkfor'] = 'Calificaciones para {$a}';
 $string['bulkinsertvalue'] = 'Insertar valor';
 $string['bulklegend'] = 'Inserción masiva';
@@ -37,10 +39,14 @@ $string['entrypage'] = 'Calificar usuario o elemento';
 $string['eventgradereportviewed'] = 'Informe de calificación de vista simple visto.';
 $string['exclude'] = 'Excluir';
 $string['excludeall'] = 'Excluir todas las calificaciones';
+$string['excludeallgrades'] = 'Excluir todo';
 $string['excludefor'] = 'Excluir para {$a}';
 $string['excludenone'] = 'No excluir calificaciones';
+$string['excludenonegrades'] = 'No excluir nada';
 $string['feedbackfor'] = 'Retroalimentación para {$a}';
 $string['filtergrades'] = 'Mostrar calificaciones para {$a}.';
+$string['gotonextreport'] = 'Ir al siguiente informe de usuario';
+$string['gotopreviousreport'] = 'Ir al anterior informe de usuario';
 $string['gradefor'] = 'Calificación para {$a}';
 $string['gradeitem'] = 'Elemento de calificación: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Esta calificación no puede ser anulada.';
@@ -50,17 +56,30 @@ $string['noscreens'] = 'No se pudo encontrar una pantalla de vista simple adecua
 $string['notvalid'] = 'Es una una pantalla de Vista Simple válida: {$a}';
 $string['override'] = 'Anular';
 $string['overrideall'] = 'Anular todas las calificaciones';
+$string['overrideallgrades'] = 'Anular todo';
 $string['overridefor'] = 'Anular {$a}';
 $string['overridenone'] = 'No sobrescribir ninguna calificación';
 $string['overridenoneconfirm'] = 'Está a punto de deshabilitar las anulaciones de calificaciones. Esto eliminará todas las calificaciones anuladas anteriormente. ¿Está seguro de que quiere continuar?';
+$string['overridenonegrades'] = 'No anular nada';
 $string['pluginname'] = 'Vista Simple';
 $string['privacy:metadata'] = 'El Informe de Vista individual de calificación solamente muestra datos almacenados en otros sitios.';
+$string['removeoverride'] = 'Eliminar anulaciones de calificación';
+$string['removeoverridesave'] = 'Eliminar anulaciones';
 $string['save'] = 'Guardar';
 $string['savegrades'] = 'Guardando calificaciones';
 $string['savegradessuccess'] = 'Calificaciones aplicadas a {$a} elemento/s';
-$string['selectgrade'] = 'Seleccionar Calificación...';
-$string['selectuser'] = 'Seleccionar usuario...';
-$string['singleview:view'] = 'Ver informe';
+$string['searchgrades'] = 'Buscar ítems de calificación';
+$string['selectagrade'] = 'Seleccione un ítem de calificación';
+$string['selectgradeitemlink'] = 'Seleccione un ítem de calificación';
+$string['singleview:view'] = 'Ver vista simple';
+$string['singleviewdescription'] = 'En la vista simple puede anular o excluir las calificaciones seleccionadas e insertar calificaciones en bloque.';
 $string['summarygrade'] = 'Una tabla de usuarios, con columnas de rango, calificación, retroalimentación, y si se anula o excluye una calificación en particular.';
 $string['summaryuser'] = 'Una tabla de elementos calificables, con columnas de categoría, rango, calificación, retroalimentación, y si se anula o excluye una calificación en particular.';
+$string['unsavedataalert'] = 'Si no ha guardado los cambios en este página, los perderá si procede con la inserción en bloque de calificaciones.';
+$string['unsavedataconfirm'] = 'Entiendo que los cambios no guardados se perderán.';
+$string['unsaveddatawarning'] = 'Aviso de datos no guardados';
 $string['userselect'] = 'Seleccionar actividad';
+$string['viewby'] = 'Ver por';
+$string['viewsinglegradeitem'] = 'Seleccione un ítem de calificación arriba';
+$string['viewsingleuser'] = 'Seleccione un usuario arriba para ver todas sus calificaciones';
+$string['viewsingleuserorgradeitem'] = 'Ver todas las calificaciones de un único usuario o de un ítem de calificación.';

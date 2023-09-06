@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'el', version '3.11'.
+ * Strings for component 'choicegroup', language 'el', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -102,6 +102,7 @@ $string['members/'] = 'Μέλη';
 $string['members/max'] = 'Μέλη / Χωρητικότητα';
 $string['modulename'] = 'Επιλογή ομάδας';
 $string['modulename_help'] = 'Το άρθρωμα επιλογής επιτρέπει στους μαθητές να εγγράφονται σε μια ομάδα ενός μαθήματος. Ο διδάσκων μπορεί να επιλέξει μέσα από ποιες ομάδες θα διαλέγουν οι μαθητές και τον μέγιστο επιτρεπόμενο αριθμό μαθητών σε κάθε ομάδα.';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Επιλογές ομάδας';
 $string['moveselectedusersto'] = 'Μετακίνηση των επιλεγμένων χρηστών σε...';
 $string['multipleenrollmentspossible'] = 'Να επιτρέπεται η εγγραφή σε πολλαπλές ομάδες';
@@ -118,8 +119,8 @@ $string['numberofuser'] = 'Ο αριθμός των χρηστών';
 $string['onlyactive'] = 'Αγνόηση αποκρίσεων για χρήστες με εγγραφή που έχει λήξει ή ανασταλεί';
 $string['option'] = 'Ομάδα';
 $string['page-mod-choice-x'] = 'Οποιαδήποτε σελίδα του module επιλογής ομάδας';
-$string['pleaseselectonegroup'] = 'Παρακαλώ δημιουργήστε τουλάχιστον μία ομάδα για να επιλέξει κανείς από αυτή.';
-$string['pleasesetgroups'] = 'Παρακαλώ δημιουργήστε τουλάχιστον μία ομάδα σε αυτό το μάθημα.';
+$string['pleaseselectonegroup'] = 'Παρακαλούμε δημιουργήστε τουλάχιστον μία ομάδα για να επιλέξει κανείς από αυτή.';
+$string['pleasesetgroups'] = 'Παρακαλούμε δημιουργήστε τουλάχιστον μία ομάδα σε αυτό το μάθημα.';
 $string['pluginadministration'] = 'Διαχείριση επιλογών';
 $string['pluginname'] = 'Επιλογή ομάδας';
 $string['privacy'] = 'Ιδιωτικότητα αποτελεσμάτων';

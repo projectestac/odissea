@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'it', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'it', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -29,6 +29,7 @@ $string['confirmquestionsaveasedited'] = 'Confermo di voler salvare la domanda c
 $string['confirmsave'] = 'Conferma e salva {$a}';
 $string['correctanswer'] = 'Risposta corretta';
 $string['correctanswerandfeedback'] = 'Risposta corretta e feedback';
+$string['corruptedquestion'] = 'Questa domanda è danneggiata e contiene sotto domande che non sono presenti nel sistema.';
 $string['decodeverifyquestiontext'] = 'Decodifica e verifica il testo della domanda';
 $string['layout'] = 'Impaginazione';
 $string['layouthorizontal'] = 'Riga orizzontale di pulsanti radio';
@@ -37,11 +38,14 @@ $string['layoutmultiple_vertical'] = 'Caselle di spunta in colonna verticale';
 $string['layoutselectinline'] = 'Menu a discesa nel testo';
 $string['layoutundefined'] = 'Impaginazione non definita';
 $string['layoutvertical'] = 'Colonna verticale di pulsanti radio';
+$string['missingsubquestion'] = 'Questa sotto domanda non è presente nel tuo sistema e non può essere visualizzata.';
+$string['multichoicex'] = 'Scelta multipla {$a}';
 $string['nooptionsforsubquestion'] = 'Non è possibile ricavare le opzioni per la porzione di domanda # {$a->sub}';
 $string['noquestions'] = 'La domanda Cloze <strong>{$a}</strong>" non contiene nessuna domanda';
 $string['pleaseananswerallparts'] = 'Per favore rispondi a tutte le parti della domanda';
 $string['pluginname'] = 'Risposte inglobate (Cloze)';
 $string['pluginname_help'] = 'Le domande inglobate (Cloze) consistono in un passaggio di testo con uno o più box contenenti domande di tipo a risposta multipla, a risposta breve o altro.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnameadding'] = 'Creazione domanda a Risposte inglobate (Cloze)';
 $string['pluginnameediting'] = 'Modifica domanda a Risposte inglobate (Cloze)';
 $string['pluginnamesummary'] = 'Le domande di questo tipo sono molto flessibili ma possono essere create solamente inserendo testo con caratteri di controllo speciali per usare domande inglobate di tipo risposta multipla, risposta breve e numerica.';
@@ -60,6 +64,7 @@ $string['questionsmore'] = '{$a} domanda(e) in più rispetto alla domanda a risp
 $string['questiontypechanged'] = 'Tipo di domanda cambiato';
 $string['questiontypechangedcomment'] = 'Almeno un tipo di domanda è stato modificato.<br >Hai aggiunto, eliminato, o spostato una domanda?<br >Guarda di seguito.';
 $string['questionusedinquiz'] = 'Questa domanda è usata in {$a->nb_of_quiz} quiz, tentativi totali : {$a->nb_of_attempts}';
+$string['regradeissuenumsubquestionschanged'] = 'Il numero di sotto domande incorporate nella domanda è cambiato.';
 $string['storedqtype'] = 'Tipo di domanda memorizzata {$a}';
 $string['subqresponse'] = 'parte {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Tipo di domanda sconosciuto: {$a->type} della porzione di domanda # {$a->sub}';

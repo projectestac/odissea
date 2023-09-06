@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_equation', language 'ja', version '3.11'.
+ * Strings for component 'atto_equation', language 'ja', version '4.1'.
  *
  * @package     atto_equation
  * @category    string
@@ -36,7 +36,7 @@ $string['librarygroup3_desc'] = 'ギリシャ文字タブに一覧表示され�
 $string['librarygroup4'] = '高度';
 $string['librarygroup4_desc'] = '拡張タブに一覧表示されるTeXコマンドです。';
 $string['pluginname'] = '数式エディタ';
-$string['preview'] = '数式プレビュ';
+$string['preview'] = '数式プレビュー';
 $string['privacy:metadata'] = 'atto_equationプラグインはいかなる個人データも保存しません。';
 $string['saveequation'] = '数式を保存する';
 $string['settings'] = '数式エディタ設定';

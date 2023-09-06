@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_essay', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -60,6 +60,7 @@ $string['nlines'] = '{$a} 行';
 $string['nonexistentfiletypes'] = '以下文件类型未被识别：{$a}';
 $string['pluginname'] = '简答题';
 $string['pluginname_help'] = '通过一段或两段文字来回答一道题，题目里可以包含图片。简答题只有在被教师审阅并人工评分后才有成绩。';
+$string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = '添加一道简答题';
 $string['pluginnameediting'] = '编辑一道简答题';
 $string['pluginnamesummary'] = '可以回答几句或几段话，然后人工评分';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'es', version '3.11'.
+ * Strings for component 'error', language 'es', version '4.1'.
  *
  * @package     error
  * @category    string
@@ -156,6 +156,7 @@ $string['cannotsetupcapformod'] = 'No se pueden establecer los permisos para {$a
 $string['cannotsetupcapforplugin'] = 'No se pueden establecer los permisos para {$a}';
 $string['cannotshowhidecoursesincategory'] = 'No se puede mostrar/ocultar los cursos en la categoría {$a}';
 $string['cannotsignup'] = 'No puede crear una nueva cuenta porque actualmente ha iniciado sesión como {$a}.';
+$string['cannotswitcheditmodeon'] = 'No se pudo activar el modo de edición';
 $string['cannotunassigncap'] = 'No se puede revocar la asignación de capacidad obsoleta {$a->cap} del rol {$a->role}';
 $string['cannotunassignrolefrom'] = 'No se puede revocar la asignación de este usuario del Id de rol: {$a}';
 $string['cannotunzipfile'] = 'No se puede descomprimir el archivo';
@@ -335,6 +336,7 @@ $string['invalidcourseformat'] = 'Formato de curso inválido';
 $string['invalidcourseid'] = 'Está intentando usar una ID de curso no válida';
 $string['invalidcourselevel'] = 'Nivel de contexto incorrecto';
 $string['invalidcoursemodule'] = 'ID de módulo de curso no válida';
+$string['invalidcoursemoduleid'] = 'ID de módulo de curso no válido: {$a}';
 $string['invalidcoursenameshort'] = 'El nombre corto del curso no es valido';
 $string['invaliddata'] = 'La información suministrada es invalida';
 $string['invaliddatarootpermissions'] = 'Se han detectado permisos no válidos al tratar de crear un  directorio. Active la depuración (debugging) para más detalles.';
@@ -409,6 +411,7 @@ $string['messagingdisable'] = 'El envío de mensajes esta deshabilitado en este 
 $string['mimetexisnotexist'] = 'Su sistema no está configurado para ejecutar mimeTeX. Necesita obtener el código fuente en C desde <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip</a>, compilarlo y colocar el ejecutable dentro de su directorio moodle/filter/tex/.';
 $string['mimetexnotexecutable'] = 'MimeTeX personalizado no es ejecutable!';
 $string['missing_moodle_backup_xml_file'] = 'La copia de seguridad no tiene el archivo XML: {$a}';
+$string['missingcategoryrole'] = 'No se pudo asignar el rol al usuario: falta rol para la categoría.';
 $string['missingfield'] = 'Falta el campo "{$a}"';
 $string['missingkeyinsql'] = 'ERROR: falta el parámetro "{$a}" en su consulta';
 $string['missingparam'] = 'Un parámetro necesario ({$a}) faltaba';
@@ -455,6 +458,7 @@ $string['nonmeaningfulcontent'] = 'No contenido significativo';
 $string['noparticipants'] = 'No se encontraron participantes en este curso';
 $string['noparticipatorycms'] = 'Lo sentimos, no dispone de módulos de participación en cursos sobre los que informar';
 $string['nopermissions'] = 'Lo sentimos, pero no tiene los permisos para hacer esto ({$a}).';
+$string['nopermissiontoaccesspage'] = 'No tiene permiso para acceder a esta página.';
 $string['nopermissiontocomment'] = 'No puede añadir comentarios';
 $string['nopermissiontodelentry'] = '¡No puede borrar este comentario!';
 $string['nopermissiontoeditcomment'] = 'No puede editar comentarios de otras personas!';
@@ -466,6 +470,7 @@ $string['nopermissiontorate'] = 'La evaluación de ítems no es permitida!';
 $string['nopermissiontoshow'] = '¡No tiene permiso para ver esto!';
 $string['nopermissiontounlock'] = '¡No tiene permiso para desbloquear!';
 $string['nopermissiontoupdatecalendar'] = 'Lo sentimos, no tiene permisos para actualizar los eventos del calendario.';
+$string['nopermissiontoviewcalendar'] = 'Lo sentimos, pero no tiene permisos para ver el evento de calendario.';
 $string['nopermissiontoviewgrades'] = 'No se pueden ver las calificaciones.';
 $string['nopermissiontoviewletergrade'] = 'Le falta permisos para revisar las calificaciones con letra';
 $string['nopermissiontoviewpage'] = 'No está autorizado a ver esta página';
@@ -487,6 +492,8 @@ $string['oauth2upgradetokenerror'] = 'No se pudo actualizar el token OAuth 2. Es
 $string['onlyadmins'] = 'Sólo los administradores pueden hacer eso';
 $string['onlyeditingteachers'] = 'Sólo los profesores editores pueden hacer eso';
 $string['onlyeditown'] = 'Sólo puede editar su propia información';
+$string['opensslsealerror'] = 'OPENSSL no puede sellar los datos';
+$string['opensslsignerror'] = 'OpenSSL no puede firmar datos';
 $string['orderidnotfound'] = 'ID de la orden {$a} no se encuentra';
 $string['pagenotexist'] = '<p>Ha ocurrido un error inusual al intentar ver una página que no existe:</p>{$a}';
 $string['pagenotexisttitle'] = 'Error 404: Archivo no encontrado';
@@ -517,7 +524,7 @@ $string['restore_path_element_noobject'] = 'El objeto de restauración {$a} no e
 $string['restorechecksumfailed'] = 'Ha ocurrido algún problema con la información de restauración almacenada en su sesión. Por favor, compruebe los límites del tamaño de la memoria PHP/paquete DB. Restauración detenida.';
 $string['restrictedcontextexception'] = 'Lo sentimos, la ejecución de una función externa viola la restricción del contexto.';
 $string['restricteduser'] = 'Lo sentimos, su cuenta "{$a}" no puede hacer esto';
-$string['reverseproxyabused'] = 'El proxy inverso esta habilitado, el servidor no se puede acceder directamente, lo siento. <br /> Por favor, póngase en contacto con el administrador del servidor.';
+$string['reverseproxyabused'] = 'Proxy inverso habilitado para que no se pueda acceder directamente al servidor.<br/>Comuníquese con el administrador del servidor.';
 $string['rpcerror'] = 'Su configuración MNET ha fallado. Éste es el mensaje de error para pasar a su administrador: {$a}';
 $string['scheduledbackupsdisabled'] = 'Las copias de seguridad programadas han sido deshabilitadas por el administrador del sitio';
 $string['secretalreadyused'] = 'El enlace de confirmación de cambio de clave ha sido utilizando anteriormente. La clave no ha sido modificada';
@@ -526,9 +533,12 @@ $string['sendmessage'] = 'Enviar mensaje';
 $string['sendmessagesent'] = 'Gracias por su retroalimentación acerca de:<br>{$a}';
 $string['serverconnection'] = 'Error conectando al servidor';
 $string['servicedonotexist'] = 'El servicio no existe';
+$string['sessioncannotobtainlock'] = '<p>No se pudo obtener el bloqueo para el ID de sesión {$a->id} dentro de {$a->acquiretimeout}.</p>
+<p>Es probable que otra página ({$a->whohaslock}) aún se esté ejecutando en otra pestaña del navegador, o que no liberó el bloqueo debido a un error.</p>
+<p>Puede esperar hasta que se agote el tiempo de espera del bloqueo de la sesión ({$a->lockexpire}) o puede reiniciar la sesión de su navegador. Si este error persiste, notifique al administrador del servidor.</p>';
 $string['sessioncookiesdisable'] = 'Uso incorrecto de <b>require_key_login()</b> - las \'cookies\' de sesión deben estar deshabilitadas.';
 $string['sessiondiskfull'] = 'La partición de sesiones está llena. No es posible iniciar sesión en este momento. Por favor notifique al administrador del servidor.';
-$string['sessionerroruser'] = 'Su sesión ha excedido el tiempo límite. Por favor, entre de nuevo.';
+$string['sessionerroruser'] = 'Su sesión ha excedido el tiempo límite. Por favor, acceda de nuevo.';
 $string['sessionerroruser2'] = 'Se ha detectado un error del servidor que afecta a su inicio de sesión. Por favor, acceda de nuevo o reinicie su navegador.';
 $string['sessionexpired'] = 'La sesión expiró';
 $string['sessionhandlerproblem'] = 'El gestor de sesión está mal configurado';
@@ -565,6 +575,7 @@ $string['unknowcontext'] = 'Este es un contexto desconocido ({$a}) en get_child_
 $string['unknowformat'] = 'Formato desconocido ({$a})';
 $string['unknownbackupexporterror'] = 'Error desconocido al preparar la información para importar';
 $string['unknownblockregion'] = 'La región bloqueada \'{$a}\' no es reconocida en esta paǵina.';
+$string['unknowncategory'] = 'Categoría desconocida con número de ID de categoría "{$a}"';
 $string['unknowncontext'] = 'Este es un contexto desconocido.';
 $string['unknowncourse'] = 'No existe un curso llamado "{$a}"';
 $string['unknowncourseidnumber'] = 'ID del Curso "{$a}" desconocido';
@@ -596,6 +607,7 @@ $string['useradminodelete'] = 'Las cuentas de los administradores no pueden ser 
 $string['userautherror'] = 'Conector de identificación desconocido';
 $string['userauthunsupported'] = 'Conector de identificación no admitido aquí';
 $string['useremailduplicate'] = 'Dirección duplicada';
+$string['userisfilteredout'] = '¡Este usuario no coincide con los filtros y las preferencias de la tabla!';
 $string['usermustbemnet'] = 'Los usuarios en la lista de control de acceso MNET deben ser usuarios MNET remotos';
 $string['usernamelowercase'] = 'El nombre de usuario debe estar en minúsculas';
 $string['usernotaddederror'] = 'Usuario no añadido - error';

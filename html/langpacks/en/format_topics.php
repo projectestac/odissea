@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'en', version '3.11'.
+ * Strings for component 'format_topics', language 'en', version '4.1'.
  *
  * @package     format_topics
  * @category    string
@@ -25,12 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Add topics';
+$string['addsections'] = 'Add topic';
 $string['currentsection'] = 'This topic';
 $string['deletesection'] = 'Delete topic';
 $string['editsection'] = 'Edit topic';
 $string['editsectionname'] = 'Edit topic name';
 $string['hidefromothers'] = 'Hide topic';
+$string['indentation'] = 'Allow indentation on course page';
+$string['indentation_help'] = 'Allow teachers, and other users with the manage activities capability, to indent items on the course page.';
 $string['newsectionname'] = 'New name for topic {$a}';
 $string['page-course-view-topics'] = 'Any course main page in topics format';
 $string['page-course-view-topics-x'] = 'Any course page in topics format';

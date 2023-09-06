@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'collaborate', language 'el', version '3.11'.
+ * Strings for component 'collaborate', language 'el', version '4.1'.
  *
  * @package     collaborate
  * @category    string
@@ -38,7 +38,7 @@ $string['cansharevideo'] = 'Κοινή χρήση τροφοδοσίας βίν�
 $string['chair'] = 'Καρέκλα';
 $string['cleanupsessionstask'] = 'Εργασία καθαρισμού συνόδων';
 $string['collaborate'] = 'Συνεργασία';
-$string['collaborate:addinstance'] = 'Προσθήκη στιγμιότυπου Συνεργασίας';
+$string['collaborate:addinstance'] = 'Προσθήκη στιγμιοτύπου Συνεργασίας';
 $string['collaborate:deleterecordings'] = 'Διαγραφή εγγραφών ήχου/βίντεο';
 $string['collaborate:downloadrecordings'] = 'Λήψη εγγραφών ήχου/βίντεο';
 $string['collaborate:viewattendance'] = 'Εμφάνιση παρουσιών';

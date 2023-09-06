@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'eu', version '3.11'.
+ * Strings for component 'tag', language 'eu', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -78,7 +78,9 @@ $string['helprelatedtags'] = 'Harremana duten etiketak komaz banatuta';
 $string['id'] = 'ID-a';
 $string['inalltagcoll'] = 'Edonon';
 $string['inputstandardtags'] = 'Idatzi etiketa berrien zerrenda komaz banatuta';
+$string['itemid'] = 'Elementuaren IDa';
 $string['itemstaggedwith'] = '{$a->tagarea} ondokoarekin etiketatu da: "{$a->tag}"';
+$string['itemtype'] = 'Elementu mota';
 $string['lesstags'] = 'gutxiago...';
 $string['managestandardtags'] = 'Kudeatu etiketa estandarrak';
 $string['managetagcolls'] = 'Kudeatu etiketa-bildumak';
@@ -87,6 +89,7 @@ $string['moretags'] = 'gehiago...';
 $string['name'] = 'Etiketaren izena';
 $string['namesalreadybeeingused'] = 'Etiketa-izenak dagoeneko erabilia izaten ari dira';
 $string['nameuseddocombine'] = 'Etiketa-izena dagoeneko erabilia izaten ari da. Etiketa horiek konbinatu nahi dituzu?';
+$string['namewithlink'] = 'Etiketa izena estekarekin';
 $string['newcollnamefor'] = 'izen berria {$a} etiketa-bildumarako';
 $string['newnamefor'] = '{$a} etiketarako izen berria';
 $string['nextpage'] = 'Gehiago';
@@ -144,6 +147,7 @@ $string['standardsuggest'] = 'Iradoki';
 $string['standardtag'] = 'Estandarra';
 $string['suredeletecoll'] = 'Ziur zaude "{$a}" etiketa-bilduma ezabatu nahi duzula?';
 $string['tag'] = 'Etiketa';
+$string['tagarea'] = 'Etiketaren eremua';
 $string['tagarea_blog_external'] = 'Kanpoko blog-sarrerak';
 $string['tagarea_course'] = 'Ikastaroak';
 $string['tagarea_course_modules'] = 'Jarduerak eta baliabideak';
@@ -152,10 +156,12 @@ $string['tagarea_user'] = 'Erabiltzailearen interesak';
 $string['tagareaenabled'] = 'Gaituta';
 $string['tagareaname'] = 'Izena';
 $string['tagareas'] = 'Etiketa-eremuak';
+$string['tagauthor'] = 'Etiketaren egilea';
 $string['tagcollection'] = 'Etiketa-bilduma';
 $string['tagcollection_help'] = 'Etiketa-bildumak arlo ezberdinetako etiketa multzoak dira. Esaterako, etiketa estandarren bilduma bat erabili daiteke ikastaroak etiketatzeko, eta beste bilduma bana erabiltzaileen interesak eta blogetako mezuak etiketatzeko. Erabiltzaile batek etiketa batean klik egiten duenean, etiketa-orriak etiketa hori duten bilduma bereko elementuak erakusten ditu. Etiketak bilduma batera automatikoki gehitu daitezke zehaztutako eremuaren arabera edo eskuz etiketa estandar gisa gordeta.';
 $string['tagcollections'] = 'Etiketa-bildumak';
 $string['tagdescription'] = 'Etiketaren deskribapena';
+$string['taginstance'] = 'Etiketaren instantzea';
 $string['tags'] = 'Etiketak';
 $string['tagsaredisabled'] = 'Etiketak desgaituta daude';
 $string['thingstaggedwith'] = '"{$a->name}" {$a->count} aldiz erabili da';

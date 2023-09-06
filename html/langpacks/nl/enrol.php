@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'nl', version '3.11'.
+ * Strings for component 'enrol', language 'nl', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -57,6 +57,7 @@ $string['enrollednewusers'] = 'Met succes {$a} nieuwe gebruikers aangemeld';
 $string['enrolledusers'] = 'Aangemelde gebruikers';
 $string['enrolledusersmatching'] = 'Aangemelde gebruikers';
 $string['enrolme'] = 'Meld me aan bij deze cursus';
+$string['enrolment'] = 'Aanmelding';
 $string['enrolmentinstances'] = 'Aanmeldingsbeheer';
 $string['enrolmentmethod'] = 'Aanmeldingsmethode';
 $string['enrolmentnew'] = 'Nieuwe aanmelding in {$a}';
@@ -85,7 +86,7 @@ $string['eventenrolinstancedeleted'] = 'Aanmeldingsinstantie verwijderd';
 $string['eventenrolinstanceupdated'] = 'Aanmelding geüpdatet';
 $string['eventuserenrolmentcreated'] = 'Gebruiker aangemeld in cursus';
 $string['eventuserenrolmentdeleted'] = 'Gebruiker afgemeld uit cursus';
-$string['eventuserenrolmentupdated'] = 'Gebruiker afmelden aangepast';
+$string['eventuserenrolmentupdated'] = 'Gebruikersaanmelding aangepast';
 $string['expirynotify'] = 'Melden voor het vervallen van de aanmelding';
 $string['expirynotify_help'] = 'Deze instelling bepaalt of meldingen voor het vervallen van aanmeldingen al dan niet verzonden worden.';
 $string['expirynotifyall'] = 'Aanmelder en aangemelde gebruiker';
@@ -110,6 +111,7 @@ $string['invalidrequest'] = 'Ongeldige aanvraag';
 $string['invalidrole'] = 'Ingeldige rol';
 $string['manageenrols'] = 'Beheer aanmeldingsplugins';
 $string['manageinstance'] = 'Beheer';
+$string['method'] = 'Methode';
 $string['migratetomanual'] = 'Verplaats naar manuele aanmeldingen';
 $string['nochange'] = 'Geen wijziging';
 $string['noexistingparticipants'] = 'Er bestaan geen deelnemers';
@@ -150,6 +152,10 @@ $string['startdatetoday'] = 'Vandaag';
 $string['synced'] = 'Gesynchroniseerd';
 $string['testsettings'] = 'Testinstellingen';
 $string['testsettingsheading'] = 'Test aanmeldingsinstellingen - {$a}';
+$string['timeended'] = 'Tijd afgelopen';
+$string['timeenrolled'] = 'Tijd aangemeld';
+$string['timereaggregated'] = 'Tijd opnieuw samengevoegd';
+$string['timestarted'] = 'Tijd begonnen';
 $string['totalenrolledusers'] = '{$a} aangemelde gebruikers';
 $string['totalotherusers'] = '{$a} andere gebruikers';
 $string['totalunenrolledusers'] = '{$a} afgemelde gebruikers';

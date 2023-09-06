@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'pt', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'pt', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'Áudio e vídeo';
 $string['audiobitrate'] = 'Bitrate do áudio';
 $string['audiobitrate_desc'] = 'Qualidade da gravação do áudio (quanto maior o valor maior a qualidade)';
 $string['audiortc'] = 'Gravar áudio';
+$string['audiotimelimit'] = 'Duração máxima do áudio';
+$string['audiotimelimit_desc'] = 'Duração máxima de gravação permitida para os ficheiros de áudio';
 $string['gumabort'] = 'Ocorreu algo que impediu o acesso à webcam/microfone';
 $string['gumabort_title'] = 'Ocorreu algo';
 $string['gumnotallowed'] = 'O utilizador deve permitir que o navegador aceda à webcam/microfone';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'Iniciar gravação';
 $string['stoprecording'] = 'Parar gravação';
 $string['timelimit'] = 'Tempo limite em segundos';
 $string['timelimit_desc'] = 'Tempo máximo de gravação para o áudio/vídeo';
+$string['timelimitwarning'] = 'Tem de inserir um número maior que 0.';
 $string['uploadaborted'] = 'Carregamento cancelado:';
 $string['uploadfailed'] = 'Carregamento falhou:';
 $string['uploadfailed404'] = 'Carregamento falhou: Ficheiro demasiado grante';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'concluído';
 $string['videobitrate'] = 'Bitrate do vídeo';
 $string['videobitrate_desc'] = 'Qualidade da gravação de vídeo (quanto maior o valor maior a qualdade)';
 $string['videortc'] = 'Gravar vídeo';
+$string['videotimelimit'] = 'Duração máxima do vídeo';
+$string['videotimelimit_desc'] = 'Duração máxima de gravação permitida para os ficheiros de vídeo';

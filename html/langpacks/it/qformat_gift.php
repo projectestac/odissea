@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'it', version '3.11'.
+ * Strings for component 'qformat_gift', language 'it', version '4.1'.
  *
  * @package     qformat_gift
  * @category    string
@@ -36,4 +36,5 @@ $string['importminerror'] = 'La domanda contiene un errore: non ci sono risposte
 $string['nohandler'] = 'Non ci sono handler per il tipo di domanda {$a}';
 $string['pluginname'] = 'Formato GIFT';
 $string['pluginname_help'] = 'Il formato GIFT consente l\'importazione di domande a risposta multipla, vero-falso, risposta breve, corrispondenza, parola mancante, numerica e componimento, tramite un file di testo.';
+$string['pluginname_link'] = 'qformat/gift';
 $string['privacy:metadata'] = 'Il plugin Formato di domanda GIFT non memorizza dati personali.';

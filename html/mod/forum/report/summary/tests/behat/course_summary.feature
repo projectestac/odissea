@@ -24,11 +24,11 @@ Feature: Course level forum summary report
       | student2 | C2     | student        |
       | student3 | C2     | student        |
     And the following "activities" exist:
-      | activity | name   | description | course | idnumber |
-      | forum    | forum1 | C1 forum 1  | C1     | forum1   |
-      | forum    | forum2 | C1 forum 2  | C1     | forum2   |
-      | forum    | forum3 | C1 forum 3  | C1     | forum3   |
-      | forum    | forum4 | C2 forum 1  | C2     | forum4   |
+      | activity | name   | course | idnumber |
+      | forum    | forum1 | C1     | forum1   |
+      | forum    | forum2 | C1     | forum2   |
+      | forum    | forum3 | C1     | forum3   |
+      | forum    | forum4 | C2     | forum4   |
     And the following forum discussions exist in course "Course 1":
       | user     | forum  | name        | message      | created                 |
       | teacher1 | forum1 | discussion1 | Discussion 1 | ##2018-01-14 09:00:00## |
@@ -55,19 +55,17 @@ Feature: Course level forum summary report
       | student2 | forum4 | discussion7 | Re d7   | Reply 8 | ##2020-02-04 13:50:00## |
 
   Scenario: Course forum summary report can be viewed by teacher and contains accurate data
-    When I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    And I follow "forum2"
-    And I navigate to "Forum summary report" in current page administration
+    When I am on the forum2 "forum activity" page logged in as teacher1
+    And I navigate to "Reports" in current page administration
     And I should see "Export posts"
     And the following should exist in the "forumreport_summary_table" table:
     # |                      | Discussions | Replies |                                 |                                |
-      | First name / Surname | -3-         | -4-     | Earliest post                   | Most recent post               |
+      | First name / Last name | -3-         | -4-     | Earliest post                   | Most recent post               |
       | Student 1            | 1           | 1       | Thursday, 28 March 2019, 11:50  | Thursday, 6 June 2019, 6:40    |
       | Student 2            | 0           | 0       | -                               | -                              |
       | Teacher 1            | 1           | 2       | Wednesday, 27 March 2019, 12:10 | Wednesday, 10 July 2019, 9:30  |
     And the following should not exist in the "forumreport_summary_table" table:
-      | First name / Surname |
+      | First name / Last name |
       | Student 3            |
     And the "Forum selected" select box should contain "All forums in course"
     And the "Forum selected" select box should contain "forum1"
@@ -78,12 +76,12 @@ Feature: Course level forum summary report
     And I should not see "Export posts"
     And the following should exist in the "forumreport_summary_table" table:
     # |                      | Discussions | Replies |                                 |                                  |
-      | First name / Surname | -3-         | -4-     | Earliest post                   | Most recent post                 |
+      | First name / Last name | -3-         | -4-     | Earliest post                   | Most recent post                 |
       | Student 1            | 2           | 3       | Thursday, 25 January 2018, 4:40 | Saturday, 25 January 2020, 11:50 |
       | Student 2            | 0           | 0       | -                               | -                                |
       | Teacher 1            | 4           | 3       | Sunday, 14 January 2018, 9:00   | Thursday, 26 December 2019, 9:30 |
     And the following should not exist in the "forumreport_summary_table" table:
-      | First name / Surname |
+      | First name / Last name |
       | Student 3            |
 
   Scenario: Course forum summary report correctly formats forum activity names
@@ -95,24 +93,21 @@ Feature: Course level forum summary report
       | name     | <span class="multilang" lang="en">F-Eng</span><span class="multilang" lang="de">F-Ger</span> |
     When I am on the "C1" "Course" page logged in as "teacher1"
     And I follow "F-Eng"
-    And I navigate to "Forum summary report" in current page administration
-    Then I should see "Forum summary report - F-Eng"
-    And the "Forum selected" select box should contain "F-Eng"
+    And I navigate to "Reports" in current page administration
+    Then the "Forum selected" select box should contain "F-Eng"
 
   Scenario: Students given the view capability can view their own course report data
     Given the following "permission overrides" exist:
       | capability               | permission | role    | contextlevel | reference |
       | forumreport/summary:view | Allow      | student | Course       | C1        |
-    When I log in as "student1"
-    And I am on "Course 1" course homepage
-    And I follow "forum1"
-    And I navigate to "Forum summary report" in current page administration
+    When I am on the "forum1" "forum activity" page logged in as student1
+    And I navigate to "Reports" in current page administration
     And the following should exist in the "forumreport_summary_table" table:
     # |                      | Discussions | Replies |                                 |                                 |
-      | First name / Surname | -2-         | -3-     | Earliest post                   | Most recent post                |
+      | First name / Last name | -2-         | -3-     | Earliest post                   | Most recent post                |
       | Student 1            | 0           | 1       | Thursday, 25 January 2018, 4:40 | Thursday, 25 January 2018, 4:40 |
     And the following should not exist in the "forumreport_summary_table" table:
-      | First name / Surname |
+      | First name / Last name |
       | Student 2            |
       | Student 3            |
       | Teacher 1            |
@@ -124,10 +119,10 @@ Feature: Course level forum summary report
     Then I select "All forums in course" from the "Forum selected" singleselect
     And the following should exist in the "forumreport_summary_table" table:
     # |                      | Discussions | Replies |                                 |                                  |
-      | First name / Surname | -2-         | -3-     | Earliest post                   | Most recent post                 |
+      | First name / Last name | -2-         | -3-     | Earliest post                   | Most recent post                 |
       | Student 1            | 2           | 3       | Thursday, 25 January 2018, 4:40 | Saturday, 25 January 2020, 11:50 |
     And the following should not exist in the "forumreport_summary_table" table:
-      | First name / Surname |
+      | First name / Last name |
       | Student 2            |
       | Student 3            |
       | Teacher 1            |

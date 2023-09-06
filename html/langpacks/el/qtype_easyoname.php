@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyoname', language 'el', version '3.11'.
+ * Strings for component 'qtype_easyoname', language 'el', version '4.1'.
  *
  * @package     qtype_easyoname
  * @category    string
@@ -44,4 +44,5 @@ $string['instructions'] = 'Η αναπαράσταση ChemAxon «mrv» του �
 $string['javaneeded'] = 'Για να χρησιμοποιήσετε αυτή τη σελίδα χρειάζεστε έναν περιηγητή με δυνατότητα Java. Κάντε λήψη του πιο πρόσφατου πρόσθετου Java από {$a}.';
 $string['notenoughanswers'] = 'Αυτός ο τύπος ερώτησης απαιτεί τουλάχιστον {$a} απαντήσεις';
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
+$string['pluginname_link'] = 'question/type/easyoname';
 $string['youranswer'] = 'Η απάντησή σας: {$a}';

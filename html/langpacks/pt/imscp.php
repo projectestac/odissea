@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'pt', version '3.11'.
+ * Strings for component 'imscp', language 'pt', version '4.1'.
  *
  * @package     imscp
  * @category    string
@@ -35,10 +35,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão do Pacote IMS';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recurso Pacote IMS.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Pacote IMS';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelos recursos Pacote IMS durante esse intervalo de análise (Níveis = Não visualizado, Visualizado)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização do Pacote IMS';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Pacote IMS.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Pacote IMS';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelos recursos Pacote IMS durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = 'Arquivar pacotes';
 $string['keepoldexplain'] = 'Quantos pacotes devem ser arquivados?';
 $string['modulename'] = 'Pacote IMS';

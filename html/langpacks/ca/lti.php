@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ca', version '3.11'.
+ * Strings for component 'lti', language 'ca', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -187,6 +187,8 @@ $string['icon_url'] = 'URL de l\'icona';
 $string['icon_url_help'] = 'L\'URL de la icona permet a la icona mostrar la llista del curs per a aquesta activitat per a ser modificat. En lloc d\'utilitzar la icona per defecte, es mostrarà una icona que transporta el tipus d\'activitat.';
 $string['id'] = 'id';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats LTI en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidid'] = 'La identificació de LTI és incorrecta';
 $string['launch_in_moodle'] = 'Llança l\'eina a Moodle';
 $string['launch_in_popup'] = 'Llança una eina emergent';
@@ -261,6 +263,7 @@ Les eines externes diferiran en els recursos URL en alguns aspectes:
 * **Integració avançada** — Les eines externes permeten llegir, actualitzar i suprimir qualificacions associades amb l\'activitat de què es tracti. Es planegen més punts d\'integració en versions futures.
 
 * **Seguretat** — Les configuracions de les eines externes creen relacions de confiança entre Moodle i  l\'eina; permeten una comunicació segura entre aquests.';
+$string['modulename_link'] = 'mod/lti/view';
 $string['modulenameplural'] = 'Eines externes';
 $string['modulenamepluralformatted'] = 'Instàncies';
 $string['name'] = 'Nom';
@@ -284,10 +287,6 @@ $string['noviewusers'] = 'No s\'han trobat usuaris amb permís per utilitzar aqu
 $string['optionalsettings'] = 'Paràmetres opcionals';
 $string['organization'] = 'Detalls de l\'organització';
 $string['organizationdescr'] = 'Descripció de l\'organització';
-$string['organizationid'] = 'ID de l\'organització';
-$string['organizationid_help'] = 'Un únic identificador per a aquesta instància de Moodle. De forma típica s\'utilitza el nom de DNS de l\'organització.
-
-Si deixeu aquest camp en blanc s\'utilitzarà el nom del servidor del vostre lloc Moodle per defecte.';
 $string['organizationurl'] = 'URL de l\'organització';
 $string['organizationurl_help'] = 'L\'URL base per a aquesta instància de Moodle.
 

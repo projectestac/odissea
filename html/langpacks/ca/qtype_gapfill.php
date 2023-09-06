@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapfill', language 'ca', version '3.11'.
+ * Strings for component 'qtype_gapfill', language 'ca', version '4.1'.
  *
  * @package     qtype_gapfill
  * @category    string
@@ -46,6 +46,7 @@ $string['pleaseenterananswer'] = 'Introduïu una resposta.';
 $string['pluginname'] = 'Pregunta de buits per emplenar';
 $string['pluginname_help'] = 'Indiqueu les paraules que s\'han de completar entre claudàtors, per exemple, Vet aquí un [gat], vet aquí un [gos], aquest conte ja s\'ha fos. Si s\'acceptés gos o ca, llavors escriviu [gos | ca].
 Els modes de llista de selecció i d\'arrossegar i deixar anar permeten tenir llistes de respostes barrejades, en les quals, a més del les que s\'han de donar com a resposta, hi pot haver opcions incorrectes/trampa.';
+$string['pluginname_link'] = 'question/type/gapfill';
 $string['pluginnameadding'] = 'Addició d\'una pregunta amb buit per emplenar';
 $string['pluginnameediting'] = 'Edició d\'una pregunta de buit';
 $string['pluginnamesummary'] = 'Una pregunta de buits. Té menys possibilitats que una pregunta de buits estàndard (Cloze), però també és més senzilla de preparar perquè es prepara amb una sintaxi més simple.';

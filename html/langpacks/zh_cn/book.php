@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'zh_cn', version '3.11'.
+ * Strings for component 'book', language 'zh_cn', version '4.1'.
  *
  * @package     book
  * @category    string
@@ -55,10 +55,12 @@ $string['indicator:cognitivedepth'] = '图书资源认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在图书资源中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '书本认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到书本活动提供的认知参与百分比（级别=无视图，视图）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '图书资源社会广度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在图书资源中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '书刊社';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到书本活动提供的社会参与度的百分比（级别=无参与，仅参与者一人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = '图书';
 $string['modulename_help'] = '通过图书模块，教师可以用类似书本的格式创建一份多页的资源，并且可以分章节和子章节。图书可以包含媒体文件和文本，可以有很长的篇幅，并且可以分节。
 
@@ -67,6 +69,7 @@ $string['modulename_help'] = '通过图书模块，教师可以用类似书本�
 * 呈现某学习模块的阅读材料
 * 做员工手册
 * 做学生学习成果的展示台';
+$string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = '图书';
 $string['movechapterdown'] = '向下移动章节“{$a}”';
 $string['movechapterup'] = '向上移动章节“{$a}”';

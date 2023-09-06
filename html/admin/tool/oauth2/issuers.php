@@ -45,7 +45,7 @@ $mform = null;
 if ($issuerid) {
     $issuer = \core\oauth2\api::get_issuer($issuerid);
     if (!$issuer) {
-        print_error('invaliddata');
+        throw new \moodle_exception('invaliddata');
     }
 }
 
@@ -235,6 +235,12 @@ if ($mform && $mform->is_cancelled()) {
     $params = ['action' => 'edittemplate', 'type' => 'linkedin', 'sesskey' => sesskey(), 'docslink' => $docs];
     $addurl = new moodle_url('/admin/tool/oauth2/issuers.php', $params);
     echo $renderer->single_button($addurl, get_string('linkedin_service', 'tool_oauth2'));
+
+    // Clever template.
+    $docs = 'admin/tool/oauth2/issuers/clever';
+    $params = ['action' => 'edittemplate', 'type' => 'clever', 'sesskey' => sesskey(), 'docslink' => $docs];
+    $addurl = new moodle_url('/admin/tool/oauth2/issuers.php', $params);
+    echo $renderer->single_button($addurl, get_string('clever_service', 'tool_oauth2'));
 
     // Generic issuer.
     $addurl = new moodle_url('/admin/tool/oauth2/issuers.php', ['action' => 'edit']);

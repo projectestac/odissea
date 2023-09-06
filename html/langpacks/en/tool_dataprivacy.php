@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'en', version '3.11'.
+ * Strings for component 'tool_dataprivacy', language 'en', version '4.1'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -171,7 +171,7 @@ $string['explanationtitle'] = 'Icons used on this page and what they mean.';
 $string['external'] = 'Additional';
 $string['externalexplanation'] = 'An additional plugin installed on this site.';
 $string['filteroption'] = '{$a->category}: {$a->name}';
-$string['frontpagecourse'] = 'Front page course';
+$string['frontpagecourse'] = 'Site home course';
 $string['gdpr_art_6_1_a_description'] = 'The data subject has given consent to the processing of his or her personal data for one or more specific purposes';
 $string['gdpr_art_6_1_a_name'] = 'Consent (GDPR Art. 6.1(a))';
 $string['gdpr_art_6_1_b_description'] = 'Processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract';
@@ -244,6 +244,8 @@ $string['pluginregistrytitle'] = 'Plugin privacy compliance registry';
 $string['privacy'] = 'Privacy';
 $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = 'The filters currently applied to the data requests page.';
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = 'The number of data requests the user prefers to see on one page';
+$string['privacy:metadata:purpose'] = 'Information from data purposes made for this site.';
+$string['privacy:metadata:purpose:usermodified'] = 'The ID of the user who modified the purpose';
 $string['privacy:metadata:request'] = 'Information from personal data requests (subject access and deletion requests) made for this site.';
 $string['privacy:metadata:request:comments'] = 'Any user comments accompanying the request.';
 $string['privacy:metadata:request:dpocomment'] = 'Any comments made by the site\'s privacy officer regarding the request.';
@@ -287,7 +289,7 @@ $string['requesttypedelete'] = 'Delete all of my personal data';
 $string['requesttypedeleteshort'] = 'Delete';
 $string['requesttypeexport'] = 'Export all of my personal data';
 $string['requesttypeexportshort'] = 'Export';
-$string['requesttypeothers'] = 'General inquiry';
+$string['requesttypeothers'] = 'General enquiry';
 $string['requesttypeothersshort'] = 'Message';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';
 $string['requireallenddatesforuserdeletion'] = 'Consider courses without end date as active';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_adaptive_adapted_for_coderunner', language 'ru', version '3.11'.
+ * Strings for component 'qbehaviour_adaptive_adapted_for_coderunner', language 'ru', version '4.1'.
  *
  * @package     qbehaviour_adaptive_adapted_for_coderunner
  * @category    string

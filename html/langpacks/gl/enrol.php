@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'gl', version '3.11'.
+ * Strings for component 'enrol', language 'gl', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actenrolshhdr'] = 'Dispoñíbeis os engadidos de matriculación';
+$string['actenrolshhdr'] = 'Dispoñíbeis os complementos de matriculación';
 $string['addinstance'] = 'Engadir método';
 $string['addinstanceanother'] = 'Engadir método e crear outro';
 $string['ajaxnext25'] = 'Seguintes 25...';
@@ -34,10 +34,10 @@ $string['ajaxxmoreusersfound'] = 'Atopáronse máis de {$a} usuarios';
 $string['ajaxxusersfound'] = 'Atopáronse {$a} usuarios';
 $string['assignnotpermitted'] = 'Non ten permiso ou non pode asignar roles neste curso.';
 $string['bulkuseroperation'] = 'Operación masiva de usuario';
-$string['configenrolplugins'] = 'Seleccione todos os engadidos requiridos e arránxeos na orde apropiada.';
+$string['configenrolplugins'] = 'Seleccione todos os complementos requiridos e arránxeos na orde apropiada.';
 $string['custominstancename'] = 'Nome personalizado da instancia';
 $string['defaultenrol'] = 'Engadir instancia aos novos cursos';
-$string['defaultenrol_desc'] = 'É posíbel engadir este engadido a todos os novos cursos de modo predeterminado.';
+$string['defaultenrol_desc'] = 'É posíbel engadir este complemento a todos os novos cursos de modo predeterminado.';
 $string['deleteinstanceconfirm'] = 'Está a piques de eliminar o método de matriculación «{$a->name}». Todos os {$a->users} usuarios matriculados actualmente usando este método serán desmatriculados (dados de baixa) e eliminaranse todos os datos relacionados co curso, como as cualificacións, pertenza de grupos ou subscricións ao foro dos usuarios.
 
 Confirma que quere continuar?';
@@ -60,14 +60,14 @@ $string['enrolme'] = 'Matricularme neste curso';
 $string['enrolmentinstances'] = 'Métodos de matriculación';
 $string['enrolmentmethod'] = 'Método de matriculación';
 $string['enrolmentnew'] = 'Nova matriculación en {$a}';
-$string['enrolmentnewuser'] = '{$a->user} matriculouse neste curso «{$a->course}»';
+$string['enrolmentnewuser'] = '{$a->user} matriculouse neste curso "{$a->course}"';
 $string['enrolmentoptions'] = 'Opcións de matriculación';
 $string['enrolments'] = 'Matriculacións';
 $string['enrolmentupdatedforuser'] = 'Actualizouse a matriculación para o usuario «{$a->fullname}»';
 $string['enrolnotpermitted'] = 'Non ten permiso ou non se lle permite matricular a ninguén neste curso';
 $string['enrolperiod'] = 'Duración da matriculación';
 $string['enroltimecreated'] = 'Creada a matriculación';
-$string['enroltimeend'] = 'Finalizada a matriculación';
+$string['enroltimeend'] = 'A matriculación finaliza';
 $string['enroltimeendinvalid'] = 'A data de remate da matriculación debe ser posterior á data de inicio da matriculación';
 $string['enroltimestart'] = 'Comeza a matriculación';
 $string['enrolusage'] = 'Instancias / matriculacións';
@@ -108,17 +108,17 @@ $string['invalidenrolduration'] = 'Duración de matriculación incorrecta';
 $string['invalidenrolinstance'] = 'Instancia de matriculación incorrecta';
 $string['invalidrequest'] = 'Solicitude incorrecta';
 $string['invalidrole'] = 'Rol incorrecto';
-$string['manageenrols'] = 'Xestionar os engadidos de matriculación';
+$string['manageenrols'] = 'Xestionar os complementos de matriculación';
 $string['manageinstance'] = 'Xestionar';
-$string['migratetomanual'] = 'Migrar cara á matriculación manual';
+$string['migratetomanual'] = 'Migrar cara a matriculación manual';
 $string['nochange'] = 'Sen cambios';
 $string['noexistingparticipants'] = 'Participantes inexistentes';
 $string['nogroup'] = 'Sen grupo';
 $string['noguestaccess'] = 'Os convidados non poden acceder a este curso, tente acceder.';
 $string['none'] = 'Ningún';
-$string['notenrollable'] = 'Non pode matricularse a si mesmo neste curso.';
+$string['notenrollable'] = 'Non pode matricularse neste curso.';
 $string['notenrolledusers'] = 'Outros usuarios';
-$string['otheruserdesc'] = 'Os seguintes usuarios non están matriculados neste curso pero teñen roles, herdados ou asignados polo curso.';
+$string['otheruserdesc'] = 'Os seguintes usuario non están matriculados neste curso pero teñen roles, herdados ou asignados polo curso.';
 $string['participationactive'] = 'Activo';
 $string['participationnotcurrent'] = 'Non actual';
 $string['participationstatus'] = 'Estado';
@@ -145,20 +145,20 @@ $string['rolefromsystem'] = '{$a->role} (Asignado a un nivel de sitio)';
 $string['rolefromthiscourse'] = '{$a->role} (Asignado neste curso)';
 $string['sendfromcoursecontact'] = 'Do contacto do curso';
 $string['sendfromkeyholder'] = 'Do chaveiro';
-$string['sendfromnoreply'] = 'Do enderezo «sen resposta»';
+$string['sendfromnoreply'] = 'Do enderezo sen resposta';
 $string['startdatetoday'] = 'Hoxe';
 $string['synced'] = 'Sincronizado';
-$string['testsettings'] = 'Proba dos axustes';
-$string['testsettingsheading'] = 'Probar os axustes de matriculación - {$a}';
+$string['testsettings'] = 'Axustes de proba';
+$string['testsettingsheading'] = 'Probar as configuración de matriculación - {$a}';
 $string['totalenrolledusers'] = '{$a} usuarios matriculados';
 $string['totalotherusers'] = '{$a} outros usuarios';
 $string['totalunenrolledusers'] = '{$a} usuarios desmatriculados';
 $string['unassignnotpermitted'] = 'Non ten permiso para desasignar roles neste curso';
 $string['unenrol'] = 'Desmatricular';
-$string['unenrolconfirm'] = 'Confirma que quere desmatricular o usuario «{$a->user}» do curso «{$a->course}»?';
+$string['unenrolconfirm'] = 'Confirma que quere desmatricular o usuario "{$a->user}" do curso "{$a->course}"?';
 $string['unenrolleduser'] = 'O usuario «$a->fullname» desmatriculouse do curso';
 $string['unenrolme'] = 'Desmatricularme de {$a}';
-$string['unenrolnotpermitted'] = 'Non ten permiso ou non pode desmatricular este usuario do curso.';
+$string['unenrolnotpermitted'] = 'Non ten permiso para dar desmatricular a este usuario do curso.';
 $string['unenrolroleusers'] = 'Desmatricular usuarios';
 $string['uninstallmigrating'] = 'Migrando «{$a}» matriculacións';
 $string['unknowajaxaction'] = 'A acción solicitada é descoñecida';

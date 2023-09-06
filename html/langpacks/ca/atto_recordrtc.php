@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'ca', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'ca', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'Àudio i vídeo';
 $string['audiobitrate'] = 'Taxa de bits d\'àudio';
 $string['audiobitrate_desc'] = 'Qualitat de l\'enregistrament d\'àudio (com més alt és el número, millor qualitat)';
 $string['audiortc'] = 'Enregistra àudio';
+$string['audiotimelimit'] = 'Límit de temps de l\'àudio en segons';
+$string['audiotimelimit_desc'] = 'Durada màxima permesa per a l\'enregistrament de clips d\'àudio';
 $string['gumabort'] = 'Ha passat alguna cosa estranya que ha impedit l\'accés a la càmera o al micròfon.';
 $string['gumabort_title'] = 'Ha passat alguna cosa';
 $string['gumnotallowed'] = 'Cal que permeteu l\'accés a la càmera i/o al micròfon';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'Inicia l\'enregistrament';
 $string['stoprecording'] = 'Atura l\'enregistrament';
 $string['timelimit'] = 'Durada màxima en segons';
 $string['timelimit_desc'] = 'Durada màxima permesa per als enregistraments d\'àudio o vídeo';
+$string['timelimitwarning'] = 'Heu d\'introduir un nombre major que 0.';
 $string['uploadaborted'] = 'S\'ha cancel·lat la pujada:';
 $string['uploadfailed'] = 'Ha fallat la pujada:';
 $string['uploadfailed404'] = 'Ha fallat la pujada: el fitxer és massa gran';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'completat';
 $string['videobitrate'] = 'Taxa de bits del vídeo';
 $string['videobitrate_desc'] = 'Qualitat de l\'enregistrament de vídeo (com més alt és el número, millor qualitat)';
 $string['videortc'] = 'Enregistra vídeo';
+$string['videotimelimit'] = 'Límit de temps del vídeo en segons';
+$string['videotimelimit_desc'] = 'Durada màxima permesa per a l\'enregistrament de clips de vídeo';

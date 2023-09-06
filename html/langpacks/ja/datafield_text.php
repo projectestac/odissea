@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_text', language 'ja', version '3.11'.
+ * Strings for component 'datafield_text', language 'ja', version '4.1'.
  *
  * @package     datafield_text
  * @category    string
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = '短文テキスト';
 $string['pluginname'] = '短文テキスト';
 $string['privacy:metadata'] = '短文テキストフィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['sample'] = 'これはショートテキストです。';

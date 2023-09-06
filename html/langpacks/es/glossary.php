@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'es', version '3.11'.
+ * Strings for component 'glossary', language 'es', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Añadir categoría';
 $string['addcomment'] = 'Añadir comentario';
 $string['addentry'] = 'Añadir entrada';
 $string['addingcomment'] = 'Añadir un comentario';
+$string['addsingleentry'] = 'Añadir entrada';
 $string['alias'] = 'Palabra clave';
 $string['aliases'] = 'Palabra(s) clave';
 $string['aliases_help'] = '<p>Cada entrada del glosario puede tener asociada una lista de palabras clave o alias.</p>
@@ -213,6 +214,7 @@ $string['errconceptalreadyexists'] = 'Este concepto ya existe. En este glosario 
 $string['errdeltimeexpired'] = 'No puede eliminar esto: el tiempo ha expirado.';
 $string['erredittimeexpired'] = 'El tiempo de edición de esta entrada ha expirado.';
 $string['errorparsingxml'] = 'Error al analizar el fichero. Asegúrese de que la sintaxis XML es válida.';
+$string['errreservedkeywords'] = 'Una o más palabras clave contiene un carácter especial que no puede usarse.';
 $string['eventcategorycreated'] = 'La categoría ha sido creada';
 $string['eventcategorydeleted'] = 'La categoría ha sido borrada';
 $string['eventcategoryupdated'] = 'La categoría ha sido actualizada';
@@ -228,6 +230,7 @@ $string['explainalphabet'] = 'Navegue por el glosario usando este índice.';
 $string['explainexport'] = 'Se ha generado un archivo.<br />Descárguelo y guárdelo. Podrá importarlo en cualquier momento en éste u otro curso.';
 $string['explainimport'] = 'Debe especificar el archivo a importar y definir el criterio del proceso.<p>Someta su solicitud y revise los resultados.</p>';
 $string['explainspecial'] = 'Muestra las entradas que no comienzan con una letra';
+$string['export'] = 'Exportar';
 $string['exportedentry'] = 'Entrada exportada';
 $string['exportentries'] = 'Exportar entradas';
 $string['exportentriestoxml'] = 'Exportar entradas a archivo XML';
@@ -276,10 +279,12 @@ $string['indicator:cognitivedepth'] = 'Glosario cognitivo';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Glosario.';
 $string['indicator:cognitivedepthdef'] = 'Glosario cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades de Glosario durante este intervalo de análisis (Niveles = Sin visualización, Visualización, Enviar)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Glosario social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Glosario.';
 $string['indicator:socialbreadthdef'] = 'Glosario social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje de compromiso social ofrecido por las actividades de Glosario durante este intervalo de análisis (Niveles = Sin participación, Participante solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = '¿Este es el glosario global?';
 $string['isglobal_help'] = 'Un glosario global tiene entradas que están enlazadas desde cualquier lugar del sitio, no solo desde el curso en que reside el glosario. Únicamente los administradores pueden determinar que un glosario sea global.';
 $string['letter'] = 'letra';
@@ -304,6 +309,7 @@ Los glosarios tienen muchos usos, como
 * Un recurso con "consejos prácticos" con las mejores prácticas en un tema concreto
 * Un área para compartir vídeos, imágenes o archivos de sonido
 * Un recurso con "asuntos que recordar"';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = 'Glosarios';
 $string['newentries'] = 'Nuevas entradas al glosario';
 $string['newglossary'] = 'Glosario nuevo';
@@ -324,6 +330,7 @@ $string['onebyline'] = '(uno por línea)';
 $string['page-mod-glossary-edit'] = 'Página añadir/editar entrada de glosario';
 $string['page-mod-glossary-view'] = 'Ver la página de edición del glosario';
 $string['page-mod-glossary-x'] = 'Cualquier página del módulo Glosario';
+$string['pendingapproval'] = 'Pendiente de aprobación.';
 $string['pluginadministration'] = 'Administración del glosario';
 $string['pluginname'] = 'Glosario';
 $string['popupformat'] = 'Formato \'popup\'';
@@ -352,6 +359,7 @@ $string['rssarticles'] = 'Número de artículos recientes RSS';
 $string['rssarticles_help'] = '<P>Esta opción le permite seleccionar el número de artículos a incluir en el Canal RSS.
 
 <P>Un número entre 5 y 20 debería ser apropiado para la mayoría de los glosarios. Auméntelo si se trata de un glosario muy utilizado.';
+$string['rssfeed'] = 'Alimentación RSS';
 $string['rsssubscriberss'] = 'Mostrar canal RSS para los conceptos \'{$a}\'';
 $string['rsstype'] = 'Canal RSS de esta actividad';
 $string['rsstype_help'] = '<P>Esta opción le permite habilitar los canales RSS en este glosario.

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'es', version '3.11'.
+ * Strings for component 'tool_analytics', language 'es', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -88,7 +88,6 @@ $string['exportmodel'] = 'Exportar configuración';
 $string['exporttrainingdata'] = 'Exportar datos de entrenamiento';
 $string['extrainfo'] = 'Información';
 $string['generalerror'] = 'Error de evaluación. Código de estado {$a}';
-$string['getpredictions'] = 'Obtener predicciones';
 $string['goodmodel'] = 'Este es un buen modelo a usar para obtener predicciones. Habilítelo para comenzar a obtener predicciones.';
 $string['ignoreversionmismatches'] = 'Ignorar diferencias entre versiones';
 $string['ignoreversionmismatchescheckbox'] = 'Ignore las diferencias entre esta versión del sitio y la versión original del sitio.';
@@ -96,6 +95,7 @@ $string['importedsuccessfully'] = 'El modelo ha sido importado con éxito.';
 $string['importmodel'] = 'Importar modelo';
 $string['indicators'] = 'Indicadores';
 $string['indicators_help'] = 'Los indicadores son lo que cree que conducirán a una predicción precisa del objetivo.';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = 'Número de indicadores: {$a}';
 $string['info'] = 'Información';
 $string['insights'] = 'Intuiciones (predicciones)';
@@ -144,6 +144,7 @@ $string['scheduledanalysisresultscli'] = 'Resultados usando la división de tiem
 $string['selecttimesplittingforevaluation'] = 'Seleccione el intervalo de análisis que desea usar para evaluar la configuración del modelo.';
 $string['target'] = 'Objetivo';
 $string['target_help'] = 'El objetivo es lo que predecirá el modelo.';
+$string['target_link'] = 'Targets';
 $string['timesplittingnotdefined'] = 'No se ha definido el intervalo de análisis.';
 $string['timesplittingnotdefined_help'] = 'Necesita seleccionar un intervalo de análisis antes de antes de habilitar el modelo.';
 $string['trainandpredictmodel'] = 'Entrenando modelo y calculando predicciones';

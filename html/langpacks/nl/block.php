@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'nl', version '3.11'.
+ * Strings for component 'block', language 'nl', version '4.1'.
  *
  * @package     block
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = 'Verplaats dit naar het paneel';
 $string['anypagematchingtheabove'] = 'Elke pagina die met bovenstaande overeenkomt';
 $string['appearsinsubcontexts'] = 'Verschijnt in subcontexten';
 $string['assignrolesinblock'] = 'Wijs rollen toe in blok {$a}';
@@ -37,18 +36,18 @@ $string['configureblock'] = 'Configureer blok {$a}';
 $string['contexts'] = 'Paginacontext';
 $string['contexts_help'] = 'Contexts zijn meer specifieke paginatypes waar dit blok getoond kan worden binnen de oorspronkelijke bloklocatie. Je zult hier verschillende opties vinden, afhankelijk van de oorspronkelijke bloklocatie en je huidige locatie. Bijvoorbeeld, je kunt een blok tijdelijk beperken tot alleen verschijnen op forumpagina\'s in een cursus door het blok toe te voegen in een cursus (waardoor het op alle subpagina\'s verschijnt), dan in een forum te gaan en de blokinstellingen te wijzigen zodat het blok beperkt is tot alleen forumpagina\'s.';
 $string['createdat'] = 'Oorspronkelijke plaats blok';
-$string['createdat_help'] = 'De oorspronkelijke locatie waar dit blok gemaakt was; Door blokinstellingen kan het blok op andere locaties (contexts) verschijnen binnen de oorspronkelijke locatie. Bijvoorbeeld, een blok aangemaakt op een cursuspagina kan getoond worden in activiteiten binnen die cursus. Een blok gemaakt op de startpagina kan getoond worden op de hele site.';
+$string['createdat_help'] = 'De oorspronkelijke locatie waar dit blok gemaakt was. Door blokinstellingen kan het blok op andere locaties (contexts) verschijnen binnen de oorspronkelijke locatie. Bijvoorbeeld, een blok aangemaakt op een cursuspagina kan getoond worden in activiteiten binnen die cursus. Een blok gemaakt op de site startpagina kan getoond worden op de hele site.';
 $string['defaultregion'] = 'Standaardplaats';
 $string['defaultregion_help'] = 'Thema\'s kunnen één of meer benoemde blokregio\'s definiëren waar blokken getoond worden. Deze instelling bepaalt in welke daarvan je wil dat de blokken standaard verschijnen; De regio kan overschreven worden op specifieke pagina\'s indien nodig.';
 $string['defaultweight'] = 'Standaardweging';
 $string['defaultweight_help'] = 'De standaardweging maakt het je mogelijk ruwweg te kiezen waar je het blok wil laten verschijnen, eerder onderaan of bovenaan. De uiteindelijke plaats wordt berekend uit alle blokken in die regio (zo kan er bijvoorbeeld slechts één blok bovenaan staan). Deze waarde kan overschreven worden op bepaalde pagina\'s indien nodig.';
 $string['deleteblock'] = 'Verwijder blok {$a}';
-$string['deleteblockcheck'] = 'Weet je zeker dat je het blok met de titel {$a} wil verwijderen?';
+$string['deleteblockcheck'] = 'Dit zal het blok {$a} verwijderen.';
+$string['deleteblockinprogress'] = 'Blok {$a} wordt verwijderd ...';
 $string['deleteblockwarning'] = '<p>Je gaat een blok verwijderen dat ergens anders verschijnt.</p><p>Oorspronkelijke bloklocatie: {$a->location}<br />Toon op paginatypes: {$a->pagetype}</p><p>Weet je zeker dat je verder wil gaan?</p>';
 $string['deletecheck'] = 'Verwijder blok {$a}?';
-$string['dockblock'] = 'Zet blok {$a} in het zijpaneel';
+$string['deletecheck_modal'] = 'Verwijder blok?';
 $string['hideblock'] = 'Verberg blok {$a}';
-$string['hidedockpanel'] = 'Verberg het paneel';
 $string['hidepanel'] = 'Verberg paneel';
 $string['moveblock'] = 'Verplaats blok {$a}';
 $string['moveblockafter'] = 'Zet het blok na blok {$a}';
@@ -69,13 +68,10 @@ $string['showblock'] = 'Toon blok {$a}';
 $string['showoncontextandsubs'] = 'Toon op \'{$a}\' en alle paginas daarbinnen';
 $string['showoncontextonly'] = 'Toon enkel op \'{$a}\'';
 $string['showonentiresite'] = 'Toon op heel de site';
-$string['showonfrontpageandsubs'] = 'Toon op de startpagina en op alle pagina\'s die aan de startpagina toegevoegd zijn';
-$string['showonfrontpageonly'] = 'Toon enkel op de startpagina';
+$string['showonfrontpageandsubs'] = 'Toon op de site startpagina en op alle pagina\'s die aan de site startpagina toegevoegd zijn.';
+$string['showonfrontpageonly'] = 'Toon enkel op de site startpagina';
 $string['subpages'] = 'Selecteer pagina\'s';
 $string['thisspecificpage'] = 'Deze pagina';
-$string['undockall'] = 'Niets op paneel';
-$string['undockblock'] = 'Blok {$a} van paneel losmaken';
-$string['undockitem'] = 'Dit item niet op paneel';
 $string['visible'] = 'Zichtbaar';
 $string['weight'] = 'Weging';
 $string['wherethisblockappears'] = 'Waar dit blok verschijnt';

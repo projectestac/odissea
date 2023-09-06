@@ -302,11 +302,14 @@ class core_string_manager_standard implements core_string_manager {
             'strftimedatefullshort' => 1,
             'strftimedateshort' => 1,
             'strftimedatetime' => 1,
+            'strftimedatetimeaccurate' => 1,
             'strftimedatetimeshort' => 1,
+            'strftimedatetimeshortaccurate' => 1,
             'strftimedaydate' => 1,
             'strftimedaydatetime' => 1,
             'strftimedayshort' => 1,
             'strftimedaytime' => 1,
+            'strftimemonth' => 1,
             'strftimemonthyear' => 1,
             'strftimerecent' => 1,
             'strftimerecentfull' => 1,
@@ -523,7 +526,7 @@ class core_string_manager_standard implements core_string_manager {
         $cachekey = 'list_'.$this->get_key_suffix();
         $cachedlist = $this->menucache->get($cachekey);
         if ($cachedlist !== false) {
-            // The cache content is invalid.
+            // The cache content is valid.
             if ($returnall or empty($this->translist)) {
                 return $cachedlist;
             }

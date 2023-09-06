@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'sv', version '3.11'.
+ * Strings for component 'badges', language 'sv', version '4.1'.
  *
  * @package     badges
  * @category    string
@@ -143,6 +143,7 @@ $string['backpackweburl'] = 'URL till ryggsäck';
 $string['badgedetails'] = 'Märkesdetaljer';
 $string['badgeimage'] = 'Bild';
 $string['badgeimage_help'] = 'Bilden ska vara minst 300 x 300 pixlar. Den visas som 300 x 300 pixlar på märkessidan och 100 x 100 pixlar på användarens profilsida.';
+$string['badgeissued'] = 'Märke utfärdat';
 $string['badgeprivacysetting'] = 'Sekretessinställningar för märke';
 $string['badgeprivacysetting_help'] = 'Märken som du tar kan visas på din profilsida. Den här inställningen tillåter dig att automatiskt ställa in synligheten på nyligen tagna märken.
 
@@ -216,7 +217,7 @@ $string['criteria_8_help'] = 'Tillåter utdelning av ett märke till användare 
 $string['criteria_9'] = 'Kompetenser';
 $string['criteria_9_help'] = 'Tillåter utdelning av ett märke till användare baserat på de kompetenser de uppnått.';
 $string['criteria_descr'] = 'Användare tilldelas det här märket när de uppnått följande krav:';
-$string['criteria_descr_0'] = 'Användare tilldelas det här märket när de uppnått <strong>{$a}</strong> av de listade kraven.';
+$string['criteria_descr_0'] = 'Användare tilldelas det här märket när de uppnått <strong>{$a}</strong> av de uppsatta kraven.';
 $string['criteria_descr_1'] = '<strong>{$a}</strong> av de följande aktiviteterna är slutförda:';
 $string['criteria_descr_2'] = 'Det här märket behöver tilldelas av användare med <strong>{$a}</strong> av de följande rollerna:';
 $string['criteria_descr_4'] = 'Användare måste slutföra kursen';
@@ -282,7 +283,6 @@ $string['delparamconfirm'] = 'Är du säker på att du vill ta bort den här par
 $string['description'] = 'Beskrivning';
 $string['disconnect'] = 'Koppla från';
 $string['donotaward'] = 'För närvarande är det här märket inte aktivt så det kan inte tilldelas användare. Om du skulle vilja tilldela det här märket, var god att aktivera dess status.';
-$string['editsettings'] = 'Redigera inställningar';
 $string['enablebadges'] = 'Aktivera märken';
 $string['endorsement'] = 'Rekommendation';
 $string['error:backpackdatainvalid'] = 'Den data som returnerades från ryggsäcken var ogiltig.';
@@ -461,6 +461,7 @@ $string['oauth2issuer'] = 'OAuth 2-tjänster';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
+$string['othernavigation'] = 'Övrig navigering...';
 $string['overallcrit'] = 'av de valda kriterierna är slutförda.';
 $string['potentialrecipients'] = 'Potentiella mottagare av märket';
 $string['preferences'] = 'Märkesinställningar';
@@ -498,10 +499,11 @@ $string['privacy:metadata:manualaward:datemet'] = 'Datum då användaren tilldel
 $string['privacy:metadata:manualaward:issuerid'] = 'Användar-ID för utfärdaren av märket';
 $string['privacy:metadata:manualaward:issuerrole'] = 'Roll för utfärdaren av märket';
 $string['privacy:metadata:manualaward:recipientid'] = 'Användar-ID för den som manuellt utfärdade märket';
+$string['recipient'] = 'Mottagare';
 $string['recipientdetails'] = 'Mottagaredetaljer';
 $string['recipientidentificationproblem'] = 'Kan inte hitta någon mottagare av detta märke bland befintliga användare.';
 $string['recipients'] = 'Mottagare av märket';
-$string['recipientvalidationproblem'] = 'Denna användare kan inte verifieras som mottagare av märket.';
+$string['recipientvalidationproblem'] = 'Denna användare kan inte verifieras som mottagare av det här märket.';
 $string['relatedbages'] = 'Relaterade märken';
 $string['relative'] = 'Relativt datum';
 $string['requiredbadge'] = 'Minst ett märke bör läggas till i märkeskriteriet.';
@@ -525,7 +527,6 @@ $string['sitebackpack'] = 'Aktiv extern ryggsäck';
 $string['sitebackpack_help'] = 'Den externa ryggsäck som användare kan ansluta till från denna webbplats. Observera att om denna inställning ändras efter det att användare har anslutit sina ryggsäckar kommer det att krävas att varje användare går till sina ryggsäcksinställningar och förnyar kopplingen.';
 $string['sitebackpackdeleted'] = 'Webbplatsens ryggsäck har tagits bort.';
 $string['sitebackpacknotdeleted'] = 'Den här ryggsäcken kunde inte tas bort eftersom den för närvarande är webbplatsens standardryggsäck';
-$string['sitebackpackverify'] = 'Ryggsäcksanslutning';
 $string['sitebackpackwarning'] = 'Kunde inte ansluta till ryggsäck. <br/><br/> Kontrollera att inställningen "Märkesutfärdarens e-postadress" är ett giltigt konto på webbplatsen för ryggsäcken. <br/><br/> Kontrollera att "Märkesutfärdarens lösenord" på <a href="{$a->url}">sidan för märkesinställningar</a> är rätt lösenord för kontot på ryggsäckens webbplats. <br/><br/> Ryggsäcken returnerade: "{$a->warning}"';
 $string['sitebadges'] = 'Märken för webbplatsen';
 $string['sitebadges_help'] = 'Märken för webbplatsen kan enbart tilldelas användare för aktiviteter som rör webbplatsen. Det kan inkludera slutförandet av en uppsättning kurser eller delar av användarprofiler. Märken för webbplatser kan också tilldelas manuellt av en användare till en annan.

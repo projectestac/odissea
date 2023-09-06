@@ -30,8 +30,8 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->libdir . '/questionlib.php');
 
-define('DEFAULT_QUESTIONS_PER_PAGE', 20);
-define('MAXIMUM_QUESTIONS_PER_PAGE', 1000);
+define('DEFAULT_QUESTIONS_PER_PAGE', 100);
+define('MAXIMUM_QUESTIONS_PER_PAGE', 4000);
 
 function get_module_from_cmid($cmid) {
     global $CFG, $DB;
@@ -40,9 +40,9 @@ function get_module_from_cmid($cmid) {
                                     {modules} md
                                WHERE cm.id = ? AND
                                      md.id = cm.module", array($cmid))){
-        print_error('invalidcoursemodule');
+        throw new \moodle_exception('invalidcoursemodule');
     } elseif (!$modrec =$DB->get_record($cmrec->modname, array('id' => $cmrec->instance))) {
-        print_error('invalidcoursemodule');
+        throw new \moodle_exception('invalidcoursemodule');
     }
     $modrec->instance = $modrec->id;
     $modrec->cmid = $cmrec->id;
@@ -50,40 +50,60 @@ function get_module_from_cmid($cmid) {
 
     return array($modrec, $cmrec);
 }
+
 /**
-* Function to read all questions for category into big array
-*
-* @param int $category category number
-* @param bool $noparent if true only questions with NO parent will be selected
-* @param bool $recurse include subdirectories
-* @param bool $export set true if this is called by questionbank export
-*/
-function get_questions_category( $category, $noparent=false, $recurse=true, $export=true ) {
+ * Function to read all questions for category into big array
+ *
+ * @param object $category category number
+ * @param bool $noparent if true only questions with NO parent will be selected
+ * @param bool $recurse include subdirectories
+ * @param bool $export set true if this is called by questionbank export
+ * @param bool $latestversion if only the latest versions needed
+ * @return array
+ */
+function get_questions_category(object $category, bool $noparent, bool $recurse = true, bool $export = true,
+        bool $latestversion = false): array {
     global $DB;
 
-    // Build sql bit for $noparent
+    // Build sql bit for $noparent.
     $npsql = '';
     if ($noparent) {
-      $npsql = " and parent='0' ";
+        $npsql = " and q.parent='0' ";
     }
 
-    // Get list of categories
+    // Get list of categories.
     if ($recurse) {
         $categorylist = question_categorylist($category->id);
     } else {
-        $categorylist = array($category->id);
+        $categorylist = [$category->id];
     }
 
-    // Get the list of questions for the category
+    // Get the list of questions for the category.
     list($usql, $params) = $DB->get_in_or_equal($categorylist);
-    $questions = $DB->get_records_select('question', "category {$usql} {$npsql}", $params, 'category, qtype, name');
 
-    // Iterate through questions, getting stuff we need
-    $qresults = array();
+    // Get the latest version of a question.
+    $version = '';
+    if ($latestversion) {
+        $version = 'AND (qv.version = (SELECT MAX(v.version)
+                                         FROM {question_versions} v
+                                         JOIN {question_bank_entries} be
+                                           ON be.id = v.questionbankentryid
+                                        WHERE be.id = qbe.id) OR qv.version is null)';
+    }
+    $questions = $DB->get_records_sql("SELECT q.*, qv.status, qc.id AS category
+                                         FROM {question} q
+                                         JOIN {question_versions} qv ON qv.questionid = q.id
+                                         JOIN {question_bank_entries} qbe ON qbe.id = qv.questionbankentryid
+                                         JOIN {question_categories} qc ON qc.id = qbe.questioncategoryid
+                                        WHERE qc.id {$usql} {$npsql} {$version}
+                                     ORDER BY qc.id, q.qtype, q.name", $params);
+
+    // Iterate through questions, getting stuff we need.
+    $qresults = [];
     foreach($questions as $key => $question) {
         $question->export_process = $export;
         $qtype = question_bank::get_qtype($question->qtype, false);
-        if ($export && $qtype->name() == 'missingtype') {
+        if ($export && $qtype->name() === 'missingtype') {
             // Unrecognised question type. Skip this question when exporting.
             continue;
         }
@@ -99,15 +119,16 @@ function get_questions_category( $category, $noparent=false, $recurse=true, $exp
  *
  * @param int $categoryid a category id.
  * @return bool
+ * @deprecated since Moodle 4.0 MDL-71585
+ * @see qbank_managecategories\helper
+ * @todo Final deprecation on Moodle 4.4 MDL-72438
  */
 function question_is_only_child_of_top_category_in_context($categoryid) {
-    global $DB;
-    return 1 == $DB->count_records_sql("
-            SELECT count(*)
-              FROM {question_categories} c
-              JOIN {question_categories} p ON c.parent = p.id
-              JOIN {question_categories} s ON s.parent = c.parent
-             WHERE c.id = ? AND p.parent = 0", array($categoryid));
+    debugging('Function question_is_only_child_of_top_category_in_context()
+    has been deprecated and moved to qbank_managecategories plugin,
+    Please use qbank_managecategories\helper::question_is_only_child_of_top_category_in_context() instead.',
+        DEBUG_DEVELOPER);
+    return \qbank_managecategories\helper::question_is_only_child_of_top_category_in_context($categoryid);
 }
 
 /**
@@ -115,159 +136,29 @@ function question_is_only_child_of_top_category_in_context($categoryid) {
  *
  * @param int $categoryid a category id.
  * @return bool
+ * @deprecated since Moodle 4.0 MDL-71585
+ * @see qbank_managecategories\helper
+ * @todo Final deprecation on Moodle 4.4 MDL-72438
  */
 function question_is_top_category($categoryid) {
-    global $DB;
-    return 0 == $DB->get_field('question_categories', 'parent', array('id' => $categoryid));
+    debugging('Function question_is_top_category() has been deprecated and moved to qbank_managecategories plugin,
+    Please use qbank_managecategories\helper::question_is_top_category() instead.', DEBUG_DEVELOPER);
+    return \qbank_managecategories\helper::question_is_top_category($categoryid);
 }
 
 /**
  * Ensures that this user is allowed to delete this category.
  *
  * @param int $todelete a category id.
+ * @deprecated since Moodle 4.0 MDL-71585
+ * @see qbank_managecategories\helper
+ * @todo Final deprecation on Moodle 4.4 MDL-72438
  */
 function question_can_delete_cat($todelete) {
-    global $DB;
-    if (question_is_top_category($todelete)) {
-        print_error('cannotdeletetopcat', 'question');
-    } else if (question_is_only_child_of_top_category_in_context($todelete)) {
-        print_error('cannotdeletecate', 'question');
-    } else {
-        $contextid = $DB->get_field('question_categories', 'contextid', array('id' => $todelete));
-        require_capability('moodle/question:managecategory', context::instance_by_id($contextid));
-    }
+    debugging('Function question_can_delete_cat() has been deprecated and moved to qbank_managecategories plugin,
+    Please use qbank_managecategories\helper::question_can_delete_cat() instead.', DEBUG_DEVELOPER);
+    \qbank_managecategories\helper::question_can_delete_cat($todelete);
 }
-
-
-/**
- * Base class for representing a column in a {@link question_bank_view}.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\column_base', 'question_bank_column_base', true);
-
-/**
- * A column with a checkbox for each question with name q{questionid}.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\checkbox_column', 'question_bank_checkbox_column', true);
-
-/**
- * A column type for the name of the question type.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\question_type_column', 'question_bank_question_type_column', true);
-
-
-/**
- * A column type for the name of the question name.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\question_name_column', 'question_bank_question_name_column', true);
-
-
-/**
- * A column type for the name of the question creator.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\creator_name_column', 'question_bank_creator_name_column', true);
-
-
-/**
- * A column type for the name of the question last modifier.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\modifier_name_column', 'question_bank_modifier_name_column', true);
-
-
-/**
- * A base class for actions that are an icon that lets you manipulate the question in some way.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\action_column_base', 'question_bank_action_column_base', true);
-
-
-/**
- * Base class for question bank columns that just contain an action icon.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\edit_action_column', 'question_bank_edit_action_column', true);
-
-/**
- * Question bank column for the duplicate action icon.
- *
- * @copyright  2013 The Open University
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\copy_action_column', 'question_bank_copy_action_column', true);
-
-/**
- * Question bank columns for the preview action icon.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\preview_action_column', 'question_bank_preview_action_column', true);
-
-
-/**
- * action to delete (or hide) a question, or restore a previously hidden question.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\delete_action_column', 'question_bank_delete_action_column', true);
-
-/**
- * Base class for 'columns' that are actually displayed as a row following the main question row.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\row_base', 'question_bank_row_base', true);
-
-/**
- * A column type for the name of the question name.
- *
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\question_text_row', 'question_bank_question_text_row', true);
-
-/**
- * @copyright  2009 Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 2.7 MDL-40457
- */
-class_alias('core_question\bank\view', 'question_bank_view', true);
 
 /**
  * Common setup for all pages for editing questions.
@@ -306,7 +197,7 @@ function question_edit_setup($edittab, $baseurl, $requirecmid = false, $unused =
     $params['qperpage'] = optional_param('qperpage', null, PARAM_INT);
 
     // Question table sorting options.
-    for ($i = 1; $i <= question_bank_view::MAX_SORTS; $i++) {
+    for ($i = 1; $i <= core_question\local\bank\view::MAX_SORTS; $i++) {
         $param = 'qbs' . $i;
         if ($sort = optional_param($param, '', PARAM_TEXT)) {
             $params[$param] = $sort;
@@ -318,7 +209,7 @@ function question_edit_setup($edittab, $baseurl, $requirecmid = false, $unused =
     // Display options.
     $params['recurse'] = optional_param('recurse',    null, PARAM_BOOL);
     $params['showhidden'] = optional_param('showhidden', null, PARAM_BOOL);
-    $params['qbshowtext'] = optional_param('qbshowtext', null, PARAM_BOOL);
+    $params['qbshowtext'] = optional_param('qbshowtext', null, PARAM_INT);
     // Category list page.
     $params['cpage'] = optional_param('cpage', null, PARAM_INT);
     $params['qtagids'] = optional_param_array('qtagids', null, PARAM_INT);
@@ -350,21 +241,23 @@ function question_edit_setup($edittab, $baseurl, $requirecmid = false, $unused =
  *      'cpage' => PARAM_INT,
  *      'recurse' => PARAM_BOOL,
  *      'showhidden' => PARAM_BOOL,
- *      'qbshowtext' => PARAM_BOOL,
+ *      'qbshowtext' => PARAM_INT,
  *      'qtagids' => [PARAM_INT], (array of integers)
  *      'qbs1' => PARAM_TEXT,
  *      'qbs2' => PARAM_TEXT,
  *      'qbs3' => PARAM_TEXT,
- *      ... and more qbs keys up to question_bank_view::MAX_SORTS ...
+ *      ... and more qbs keys up to core_question\local\bank\view::MAX_SORTS ...
  *  ];
  *
  * @param string $edittab Code for this edit tab
  * @param string $baseurl The name of the script calling this funciton. For examle 'qusetion/edit.php'.
  * @param array $params The provided parameters to construct the resources with.
+ * @param int $defaultquestionsperpage number of questions per page, if not given in the URL.
  * @return array $thispageurl, $contexts, $cmid, $cm, $module, $pagevars
  */
-function question_build_edit_resources($edittab, $baseurl, $params) {
-    global $DB, $PAGE, $CFG;
+function question_build_edit_resources($edittab, $baseurl, $params,
+        $defaultquestionsperpage = DEFAULT_QUESTIONS_PER_PAGE) {
+    global $DB;
 
     $thispageurl = new moodle_url($baseurl);
     $thispageurl->remove_all_params(); // We are going to explicity add back everything important - this avoids unwanted params from being retained.
@@ -386,7 +279,7 @@ function question_build_edit_resources($edittab, $baseurl, $params) {
         'cpage' => PARAM_INT,
         'recurse' => PARAM_BOOL,
         'showhidden' => PARAM_BOOL,
-        'qbshowtext' => PARAM_BOOL
+        'qbshowtext' => PARAM_INT,
     ];
 
     foreach ($paramtypes as $name => $type) {
@@ -436,7 +329,7 @@ function question_build_edit_resources($edittab, $baseurl, $params) {
     }
 
     if ($thiscontext){
-        $contexts = new question_edit_contexts($thiscontext);
+        $contexts = new core_question\local\bank\question_edit_contexts($thiscontext);
         $contexts->require_one_edit_tab_cap($edittab);
     } else {
         $contexts = null;
@@ -465,7 +358,7 @@ function question_build_edit_resources($edittab, $baseurl, $params) {
     // This need to occur after the override_active_url call above because
     // these values change on the page request causing the URLs to mismatch
     // when trying to work out the active node.
-    for ($i = 1; $i <= question_bank_view::MAX_SORTS; $i++) {
+    for ($i = 1; $i <= core_question\local\bank\view::MAX_SORTS; $i++) {
         $param = 'qbs' . $i;
         if (isset($params[$param])) {
             $value = clean_param($params[$param], PARAM_TEXT);
@@ -481,8 +374,12 @@ function question_build_edit_resources($edittab, $baseurl, $params) {
         $pagevars['qpage'] = 0;
     }
 
-    $pagevars['qperpage'] = question_set_or_get_user_preference(
-            'qperpage', $qperpage, DEFAULT_QUESTIONS_PER_PAGE, $thispageurl);
+    if ($defaultquestionsperpage == DEFAULT_QUESTIONS_PER_PAGE) {
+        $pagevars['qperpage'] = question_set_or_get_user_preference(
+                'qperpage', $qperpage, DEFAULT_QUESTIONS_PER_PAGE, $thispageurl);
+    } else {
+        $pagevars['qperpage'] = $qperpage ?? $defaultquestionsperpage;
+    }
 
     $defaultcategory = question_make_default_categories($contexts->all());
 
@@ -495,7 +392,7 @@ function question_build_edit_resources($edittab, $baseurl, $params) {
         $catparts = explode(',', $pagevars['cat']);
         if (!$catparts[0] || (false !== array_search($catparts[1], $contextlistarr)) ||
                 !$DB->count_records_select("question_categories", "id = ? AND contextid = ?", array($catparts[0], $catparts[1]))) {
-            print_error('invalidcategory', 'question');
+            throw new \moodle_exception('invalidcategory', 'question');
         }
     } else {
         $category = $defaultcategory;
@@ -595,12 +492,12 @@ function require_login_in_context($contextorid = null){
     } else if ($context && ($context->contextlevel == CONTEXT_MODULE)) {
         if ($cm = $DB->get_record('course_modules',array('id' =>$context->instanceid))) {
             if (!$course = $DB->get_record('course', array('id' => $cm->course))) {
-                print_error('invalidcourseid');
+                throw new \moodle_exception('invalidcourseid');
             }
             require_course_login($course, true, $cm);
 
         } else {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule');
         }
     } else if ($context && ($context->contextlevel == CONTEXT_SYSTEM)) {
         if (!empty($CFG->forcelogin)) {
@@ -619,11 +516,16 @@ function require_login_in_context($contextorid = null){
  *      the qtype radio buttons.
  * @param $allowedqtypes optional list of qtypes that are allowed. If given, only
  *      those qtypes will be shown. Example value array('description', 'multichoice').
+ * @deprecated since Moodle 4.0
+ * @see \qbank_editquestion\editquestion_helper::print_choose_qtype_to_add_form()
+ * @todo Final deprecation of this class in moodle 4.4 MDL-72438
  */
 function print_choose_qtype_to_add_form($hiddenparams, array $allowedqtypes = null, $enablejs = true) {
+    debugging('Function print_choose_qtype_to_add_form() is deprecated,
+     please use \qbank_editquestion\editquestion_helper::print_choose_qtype_to_add_form() instead.', DEBUG_DEVELOPER);
     global $CFG, $PAGE, $OUTPUT;
 
-    $chooser = core_question\output\qbank_chooser::get($PAGE->course, $hiddenparams, $allowedqtypes);
+    $chooser = \qbank_editquestion\qbank_chooser::get($PAGE->course, $hiddenparams, $allowedqtypes);
     $renderer = $PAGE->get_renderer('question', 'bank');
 
     return $renderer->render($chooser);
@@ -640,12 +542,17 @@ function print_choose_qtype_to_add_form($hiddenparams, array $allowedqtypes = nu
  * @param string $caption the text to display on the button.
  * @param string $tooltip a tooltip to add to the button (optional).
  * @param bool $disabled if true, the button will be disabled.
+ * @deprecated since Moodle 4.0
+ * @see \qbank_editquestion\editquestion_helper::create_new_question_button()
+ * @todo Final deprecation of this class in moodle 4.4 MDL-72438
  */
 function create_new_question_button($categoryid, $params, $caption, $tooltip = '', $disabled = false) {
+    debugging('Function create_new_question_button() has been deprecated and moved to bank/editquestion,
+     please use qbank_editquestion\editquestion_helper::create_new_question_button() instead.', DEBUG_DEVELOPER);
     global $CFG, $PAGE, $OUTPUT;
     static $choiceformprinted = false;
     $params['category'] = $categoryid;
-    $url = new moodle_url('/question/addquestion.php', $params);
+    $url = new moodle_url('/question/bank/editquestion/addquestion.php', $params);
     echo $OUTPUT->single_button($url, $caption, 'get', array('disabled'=>$disabled, 'title'=>$tooltip));
 
     if (!$choiceformprinted) {
@@ -655,5 +562,3 @@ function create_new_question_button($categoryid, $params, $caption, $tooltip = '
         $choiceformprinted = true;
     }
 }
-
-

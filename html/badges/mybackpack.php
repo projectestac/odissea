@@ -30,7 +30,7 @@ require_once($CFG->libdir . '/badgeslib.php');
 require_login();
 
 if (empty($CFG->enablebadges)) {
-    print_error('badgesdisabled', 'badges');
+    throw new \moodle_exception('badgesdisabled', 'badges');
 }
 
 $context = context_user::instance($USER->id);
@@ -139,13 +139,14 @@ if ($backpack) {
                 badges_disconnect_user_backpack($USER->id);
                 redirect(new moodle_url('/badges/mybackpack.php'));
             } else if (isset($data->backpackemail)) {
+                // There are no errors, so the verification email can be sent.
                 if (badges_send_verification_email($data->backpackemail, $data->externalbackpackid, $data->password)) {
                     $a = get_user_preferences('badges_email_verify_backpackid');
                     redirect(new moodle_url('/badges/mybackpack.php'),
                         get_string('backpackemailverifypending', 'badges', $data->backpackemail),
                         null, \core\output\notification::NOTIFY_INFO);
                 } else {
-                    print_error ('backpackcannotsendverification', 'badges');
+                    throw new \moodle_exception('backpackcannotsendverification', 'badges');
                 }
             }
         }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_kprime', language 'pt', version '3.11'.
+ * Strings for component 'qtype_kprime', language 'pt', version '4.1'.
  *
  * @package     qtype_kprime
  * @category    string
@@ -40,11 +40,13 @@ $string['generalfeedback_help'] = 'Independentemente das respostas, o feedback g
 $string['maxpoints'] = 'Pontuação máxima';
 $string['mustsupplyresponses'] = 'Tem de indicar valores para todas as respostas.';
 $string['mustsupplyvalue'] = 'Tem de indicar um valor aqui.';
+$string['numberchoicehaschanged'] = 'O número de opções foi alterado. Não é possível reavaliar a tentativa de respopsta.';
 $string['oneanswerperrow'] = 'Responda a todas as partes da pergunta.';
 $string['optionno'] = 'Opção {$a}';
 $string['optionsandfeedback'] = 'Opções e Feedback';
 $string['pluginname'] = 'Kprime (ETH)';
 $string['pluginname_help'] = 'As perguntas Kprime consistem numa pergunta com quatro opções, e para cada opção os alunos têm de escolher se é "verdadeiro" ou "falso".';
+$string['pluginname_link'] = 'question/type/kprime';
 $string['pluginnameadding'] = 'A adicionar uma pergunta Kprime';
 $string['pluginnameediting'] = 'A editar uma pergunta Kprime';
 $string['pluginnamesummary'] = 'Em perguntas Kprime as quatro opções têm de ser corretamente classificadas como "verdadeiro" ou "falso". O valor predefinido é “kprime”.';

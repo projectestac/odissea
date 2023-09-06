@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'ja', version '3.11'.
+ * Strings for component 'editor_tinymce', language 'ja', version '4.1'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -181,7 +181,7 @@ $string['advimage_dlg:classes'] = 'クラス';
 $string['advimage_dlg:constrain_proportions'] = '縦横比を固定する';
 $string['advimage_dlg:dialog_title'] = 'イメージを挿入/編集する';
 $string['advimage_dlg:dimensions'] = 'サイズ';
-$string['advimage_dlg:example_img'] = 'アピアランスプレビュイメージ';
+$string['advimage_dlg:example_img'] = 'アピアランスプレビューイメージ';
 $string['advimage_dlg:general'] = '一般';
 $string['advimage_dlg:height'] = '高さ';
 $string['advimage_dlg:hspace'] = '水平方向の余白';
@@ -197,7 +197,7 @@ $string['advimage_dlg:misc'] = 'その他';
 $string['advimage_dlg:missing_alt'] = '本当にイメージ説明なしで続けてもよろしいですか? イメージ説明がない場合、障害のあるユーザ、テキストブラウザを使用しているユーザ、イメージ表示を無効にしているユーザがアクセスできないことがあります。';
 $string['advimage_dlg:mouseout'] = 'マウスアウト時';
 $string['advimage_dlg:mouseover'] = 'マウスオーバー時';
-$string['advimage_dlg:preview'] = 'プレビュ';
+$string['advimage_dlg:preview'] = 'プレビュー';
 $string['advimage_dlg:rtl'] = '右から左';
 $string['advimage_dlg:src'] = 'イメージURL';
 $string['advimage_dlg:style'] = 'スタイル';
@@ -234,7 +234,7 @@ $string['advlink_dlg:mime'] = 'ターゲットのMIMEタイプ';
 $string['advlink_dlg:popup'] = 'JavaScriptポップアップ';
 $string['advlink_dlg:popup_dependent'] = 'Dependent (Mozilla/Firefoxのみ)';
 $string['advlink_dlg:popup_location'] = 'ロケーションバーを表示する';
-$string['advlink_dlg:popup_menubar'] = 'メニュバーを表示する';
+$string['advlink_dlg:popup_menubar'] = 'メニューバーを表示する';
 $string['advlink_dlg:popup_name'] = 'ウィンドウ名';
 $string['advlink_dlg:popup_opts'] = 'オプション';
 $string['advlink_dlg:popup_position'] = '位置 (X/Y)';
@@ -536,7 +536,7 @@ $string['media_dlg:list'] = 'リスト';
 $string['media_dlg:liveconnect'] = 'SWLiveConnect';
 $string['media_dlg:loop'] = '繰り返し';
 $string['media_dlg:maintainaspect'] = '縦横比を保持する';
-$string['media_dlg:menu'] = 'メニュを表示する';
+$string['media_dlg:menu'] = 'メニューを表示する';
 $string['media_dlg:mute'] = 'ミュート';
 $string['media_dlg:name'] = '名称';
 $string['media_dlg:nojava'] = 'Javaなし';
@@ -550,7 +550,7 @@ $string['media_dlg:preload'] = 'プリロード';
 $string['media_dlg:preload_auto'] = 'ユーザのブラウザに決定させる';
 $string['media_dlg:preload_metadata'] = 'ビデオメタデータをプリロードする';
 $string['media_dlg:preload_none'] = 'プリロードしない';
-$string['media_dlg:preview'] = 'プレビュ';
+$string['media_dlg:preview'] = 'プレビュー';
 $string['media_dlg:progress'] = '進捗';
 $string['media_dlg:qt_options'] = 'QuickTimeオプション';
 $string['media_dlg:qt_stream_warn'] = 'RTSPストリームリソースを高度な設定タブのQTソースフィールドに入力してください。あなたはソースフィールドに非ストリームバージョーンを追加する必要があります。';
@@ -597,8 +597,8 @@ $string['paste:selectall_desc'] = 'すべてを選択する';
 $string['paste_dlg:text_linebreaks'] = '改行を保持する';
 $string['paste_dlg:text_title'] = 'ウィンドウにテキストを貼り付けるにはあなたのキーボードの「CTRL+V」を使用してください。';
 $string['paste_dlg:word_title'] = 'ウィンドウにテキストを貼り付けるにはあなたのキーボードの「CTRL+V」を使用してください。';
-$string['pluginname'] = 'TinyMCE HTMLエディタ';
-$string['preview:preview_desc'] = 'プレビュ';
+$string['pluginname'] = 'TinyMCE HTMLエディタ (レガシ)';
+$string['preview:preview_desc'] = 'プレビュー';
 $string['print:print_desc'] = '印刷';
 $string['privacy:metadata'] = 'TinyMCE HTMLエディタプラグインはいかなる個人データも保存しません。';
 $string['save:cancel_desc'] = 'すべての変更を破棄する';
@@ -825,7 +825,7 @@ $string['template_dlg:label'] = 'テンプレート';
 $string['template_dlg:mdate_format'] = '%Y/%m/%d %H:%M:%S';
 $string['template_dlg:months_long'] = '1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月';
 $string['template_dlg:months_short'] = '1,2,3,4,5,6,7,8,9,10,11,12';
-$string['template_dlg:preview'] = 'プレビュ';
+$string['template_dlg:preview'] = 'プレビュー';
 $string['template_dlg:select'] = 'テンプレートを選択する';
 $string['template_dlg:title'] = 'テンプレート';
 $string['template_dlg:warning'] = '警告：テンプレートを上書きした場合、以前のデータを失う可能性があります。';

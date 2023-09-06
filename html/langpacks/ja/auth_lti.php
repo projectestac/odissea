@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'ja', version '3.11'.
+ * Strings for component 'auth_lti', language 'ja', version '4.1'.
  *
  * @package     auth_lti
  * @category    string
@@ -25,6 +25,34 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accountcreatedsuccess'] = 'あなたのアカウント作成および利用準備が完了しました。';
+$string['accountlinkedsuccess'] = 'あなたの既存のアカウントが正常にリンクされました。';
 $string['auth_ltidescription'] = 'LTI認証プラグインおよび「lTIツールとして公開する」登録プラグインにより、リモートユーザは選択されたコースおよび活動にアクセスできるようになります。言い換えれば、MoodleがLTIツールプロバイダとして機能すると言えます。';
+$string['cannotcreateaccounts'] = '現在、このサイトではアカウント作成が禁止されています。';
+$string['createaccount'] = 'アカウントを作成する';
+$string['createaccountforme'] = '私のアカウントを作成する';
+$string['createnewaccount'] = '新しいアカウントの作成を希望します';
+$string['currentlyloggedinas'] = '現在、あなたが次のユーザとしてログインしています:';
+$string['firstlaunchnoauthnotice'] = 'あなたの既存のアカウントにリンクしたい場合、サイトにログインする必要があります。新しいタブまたはウィンドウでサイトにログインしてツールを起動してください。詳細情報はドキュメンテーション<a href="{$a}" target="_blank">LTIツールとして公開する</a>をご覧ください。';
+$string['firstlaunchnotice'] = 'これはあなたの最初の利用のようです。次のアカウントオプションから選択してください。';
+$string['getstartedwithnewaccount'] = '新しいアカウントでスタートする';
+$string['haveexistingaccount'] = '私には既存のアカウントがあります';
+$string['linkthisaccount'] = 'このアカウントにリンクする';
+$string['mustbeloggedin'] = 'あなたの既存のアカウントにログインする必要があります。';
 $string['pluginname'] = 'LTI';
 $string['privacy:metadata'] = 'LTI認証プラグインはいかなる個人データも保存しません。';
+$string['privacy:metadata:auth_lti'] = 'LTI認証';
+$string['privacy:metadata:auth_lti:authsubsystem'] = 'このプラグインは認証サブシステムに接続されています。';
+$string['privacy:metadata:auth_lti:issuer'] = 'リンク先ユーザが所属するプラットフォームを識別するためのイシュアURLです。';
+$string['privacy:metadata:auth_lti:issuer256'] = 'イシュアURLのSHA256ハッシュです。';
+$string['privacy:metadata:auth_lti:sub'] = 'イシュアでユーザを識別するための件名文字列です。';
+$string['privacy:metadata:auth_lti:sub256'] = 'イシュアでユーザを識別するための件名文字列のSHA256ハッシュです。';
+$string['privacy:metadata:auth_lti:tableexplanation'] = 'ユーザのMoodleアカウントにリンクされたLTIアカウントです。';
+$string['privacy:metadata:auth_lti:timecreated'] = 'ユーザアカウントがLTIログインにリンクされた時点のタイムスタンプです。';
+$string['privacy:metadata:auth_lti:timemodified'] = 'このレコードが更新された時点のタイムスタンプです。';
+$string['privacy:metadata:auth_lti:userid'] = 'LTIログインのリンク先ユーザアカウントのIDです。';
+$string['provisioningmodeauto'] = '新しいアカウントのみ (自動)';
+$string['provisioningmodeexistingonly'] = '既存のアカウントのみ (プロンプト)';
+$string['provisioningmodenewexisting'] = '既存および新しいアカウント (プロンプト)';
+$string['useexistingaccount'] = '既存のアカウントを使用する';
+$string['welcome'] = 'ようこそ!';

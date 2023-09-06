@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_onenote', language 'es', version '3.11'.
+ * Strings for component 'assignfeedback_onenote', language 'es', version '4.1'.
  *
  * @package     assignfeedback_onenote
  * @category    string
@@ -46,7 +46,10 @@ $string['notsignedin'] = 'Por favor, inicie sesión en OneNote antes de intentar
 $string['onenote'] = 'Retroalimentación de OneNotes';
 $string['onenoteactions'] = 'Acciones de OneNote:';
 $string['pluginname'] = 'Retroalimentación OneNote';
+$string['privacy:metadata:assignmentid'] = 'Identificador de Tarea';
+$string['privacy:metadata:gradepurpose'] = 'El ID de calificación asociada con el registro';
 $string['privacy:metadata:numfiles'] = 'Número de ficheros';
+$string['privacy:metadata:tablepurpose'] = 'Almacena el número de archivos usados para la retroalimentación';
 $string['privacy:path'] = 'Número de ficheros';
 $string['signinhelp1'] = 'Haga clic en el botón de arriba para abrir la página de Retroalimentación de OneNote así puede añadir su retroalimentación a la entrega del alumno.';
 $string['signinhelp2'] = 'Haga clic en el botón de arriba para acceder a OneNote si quiere ver el cometnario de retroalimentación.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'ru', version '3.11'.
+ * Strings for component 'enrol_guest', language 'ru', version '4.1'.
  *
  * @package     enrol_guest
  * @category    string
@@ -43,5 +43,6 @@ $string['showhint_desc'] = 'Показывать первую букву пар�
 $string['status'] = 'Разрешить гостевой доступ';
 $string['status_desc'] = 'Разрешить временный гостевой доступ по умолчанию.';
 $string['status_help'] = 'Этот параметр определяет, может ли пользователь иметь гостевой доступ к курсу, без обязательной записи на него.';
+$string['status_link'] = 'enrol/guest';
 $string['usepasswordpolicy'] = 'Использовать политику паролей';
 $string['usepasswordpolicy_desc'] = 'Использовать политику паролей для паролей гостевого доступа';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'el', version '3.11'.
+ * Strings for component 'tool_assignmentupgrade', language 'el', version '4.1'.
  *
  * @package     tool_assignmentupgrade
  * @category    string
@@ -42,10 +42,10 @@ $string['listnotupgraded_desc'] = 'Μπορείτε να αναβαθμίσετ�
 $string['noassignmentsselected'] = 'Δεν έχουν επιλεγεί εργασίες';
 $string['noassignmentstoupgrade'] = 'Δεν υπάρχουν εργασίες που χρήζουν αναβάθμισης';
 $string['notsupported'] = '';
-$string['notupgradedintro'] = 'Η σελίδα αυτή περιέχει εργασίες που έχουν δημιουργηθεί με παλαιότερες εκδόσεις του Moodle και δεν έχουν αναβαθμιστεί στη νέα  μονάδα εργασιών που χρησιμοποιείται από το Moodle 2.3 και μετέπειτα. Δεν μπορούν να αναβαθμιστούν όλες οι εργασίες - εάν έχουν δημιουργηθεί με κάποιον ειδικό τύπο εργασίας, ο τύπος αυτός θα πρέπει να αναβαθμιστεί στη νέα μορφή plugin για να ολοκληρωθεί η αναβάθμιση.';
-$string['notupgradedtitle'] = 'Εργασίες που δεν αναβαθμίστηταν';
-$string['pluginname'] = 'Εργαλείο αναβάθμισης εργασιών';
-$string['privacy:metadata:preference:perpage'] = 'Ο προτιμώμενος αριθμός εγγραφών αναβαθμίσεων ανάθεσης ανά σελίδα που ορίζεται για το χρήστη.';
+$string['notupgradedintro'] = 'Η σελίδα αυτή περιέχει αναθέσεις που έχουν δημιουργηθεί με παλαιότερες εκδόσεις του Moodle και δεν έχουν αναβαθμιστεί στη νέα  μονάδα εργασιών που χρησιμοποιείται από το Moodle 2.3 και μετέπειτα. Δεν μπορούν να αναβαθμιστούν όλες οι αναθέσεις - εάν έχουν δημιουργηθεί με κάποιον προσαρμοσμένο υπο-τύπο ανάθεσης, τότε ο υπο-τύπος αυτός θα πρέπει να αναβαθμιστεί στον μορφότυπο του νέου πρόσθετου ανάθεσης για να ολοκληρωθεί η αναβάθμιση.';
+$string['notupgradedtitle'] = 'Αναθέσεις που δεν αναβαθμίστηκαν';
+$string['pluginname'] = 'Εργαλείο αναβάθμισης αναθέσεων';
+$string['privacy:metadata:preference:perpage'] = 'Η ορισμένη για τον χρήστη προτίμηση εγγραφών ανά σελίδα της αναβάθμισης ανάθεσης.';
 $string['select'] = 'Επιλογή';
 $string['submissions'] = 'Υποβολές';
 $string['supported'] = 'Αναβάθμιση';

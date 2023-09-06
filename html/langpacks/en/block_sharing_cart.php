@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_sharing_cart', language 'en', version '3.11'.
+ * Strings for component 'block_sharing_cart', language 'en', version '4.1'.
  *
  * @package     block_sharing_cart
  * @category    string
@@ -90,6 +90,8 @@ The \'Click to add\' method is the standard in the sharing cart, where you need 
 The \'Drag and drop\' allows you to drag and drop modules/activities and sections into the sharing cart block or into the basket icon in the footer. Please note that this is only supported for Moodle 4.0+';
 $string['settings:click_to_add'] = 'Click to add';
 $string['settings:drag_and_drop'] = 'Drag and drop';
+$string['settings:show_copy_section_in_block'] = 'Show the "Copy section" in block';
+$string['settings:show_copy_section_in_block_desc'] = 'Show the "Copy section" in the sharing cart block, underneath all modules/activities';
 $string['settings:userdata_copyable_modtypes'] = 'User data copyable module types';
 $string['settings:userdata_copyable_modtypes_desc'] = 'While copying an activity into the Sharing Cart,
 a dialog shows an option whether a copy of an activity includes its user data or not,

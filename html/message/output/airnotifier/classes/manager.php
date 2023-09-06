@@ -37,6 +37,12 @@ class message_airnotifier_manager {
     /** @var string The Airnotifier public instance URL */
     const AIRNOTIFIER_PUBLICURL = 'https://messages.moodle.net';
 
+    /** @var int Avoid sending notifications to devices not supporting encryption */
+    const ENCRYPT_UNSUPPORTED_NOT_SEND = 0;
+
+    /** @var int Send notifications to devices not supporting encryption */
+    const ENCRYPT_UNSUPPORTED_SEND = 1;
+
     /**
      * Include the relevant javascript and language strings for the device
      * toolbox YUI module
@@ -233,6 +239,15 @@ class message_airnotifier_manager {
             $results[] = new core\check\result(core\check\result::CRITICAL, $summary, get_string('enablewsdescription', 'webservice'));
         } else {
             $results[] = new core\check\result(core\check\result::OK, $summary, get_string('enabled', 'admin'));
+        }
+
+        // Check message outputs are not disabled in config.php.
+        $summary = get_string('noemailevernotset', 'message_airnotifier');
+        if (!empty($CFG->noemailever)) {
+            $results[] = new core\check\result(core\check\result::CRITICAL, $summary,
+                get_string('noemaileverset', 'message_airnotifier'));
+        } else {
+            $results[] = new core\check\result(core\check\result::OK, $summary, get_string('disabled', 'admin'));
         }
 
         // Check Mobile notifications enabled.

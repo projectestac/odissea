@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'nl', version '3.11'.
+ * Strings for component 'chat', language 'nl', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -61,7 +61,7 @@ $string['currentusers'] = 'Huidige gebruikers';
 $string['deletesession'] = 'Verwijder de sessie';
 $string['deletesessionsure'] = 'Ben je er zeker van dat je deze sessie wil verwijderen?';
 $string['donotusechattime'] = 'Publiceer geen chattijden';
-$string['enterchat'] = 'Klik hier om de chat nu binnen te gaan';
+$string['enterchat'] = 'Ga naar de chat';
 $string['entermessage'] = 'Geef je bericht';
 $string['errornousers'] = 'Kon geen gebruikers vinden!';
 $string['eventmessagesent'] = 'Bericht verzonden';
@@ -75,10 +75,12 @@ $string['indicator:cognitivedepth'] = 'Chat cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Chat activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Chat cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de Chat-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken, Reageren op feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Chat sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Chat activiteit.';
 $string['indicator:socialbreadthdef'] = 'Chat sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de Chat-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, Alleen deelnemer, Deelnemer met anderen)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = 'Inputvenster';
 $string['invalidid'] = 'Kon chatroom niet vinden!';
 $string['list_all_sessions'] = 'Toon alle sessies.';
@@ -107,6 +109,7 @@ Chats zijn heel geschikt wanneer de chatters elkaar niet geregeld ontmoeten, bij
 * jonger kinderen kunnen thuis gecontroleerd chatten als introductie in de wereld van sociaal netwerken
 * een vraag/antwoordsessie met een uitgenodigde spreker op een andere locatie
 * sessies om leerlingen voor te bereiden op testen waar de leraar of medeleerlingen elkaar voorbeeldvragen stellen';
+$string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Berichten nooit verwijderen';
 $string['nextchattime'] = 'Volgend chat-moment:';
@@ -124,6 +127,7 @@ $string['notlogged'] = 'Niet ingelogd';
 $string['oldping'] = 'Timeout verbinding verbroken';
 $string['page-mod-chat-x'] = 'Chatmodulepagina';
 $string['pastchats'] = 'Voorbije chatsessies';
+$string['pastsessions'] = 'Afgelopen sessies';
 $string['pluginadministration'] = 'Chat beheer';
 $string['pluginname'] = 'Chat';
 $string['privacy:metadata:chat_messages_current'] = 'Huidige chat-sessie. Deze gegevens zijn tijdelijk en worden verwijderd nadat de chat-sessie verwijderd is';
@@ -191,4 +195,4 @@ dan zal iedereen "Kim lacht!" zien</dd>
  te laten, geluiden af te spelen en de tekstkleur en -grootte te veranderen .</dd>
 
 </dl>';
-$string['viewreport'] = 'Bekijk voorbije chatsessies';
+$string['viewreport'] = 'Voorbije chatsessies';

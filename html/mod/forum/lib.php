@@ -20,6 +20,8 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use mod_forum\local\entities\forum as forum_entity;
+
 defined('MOODLE_INTERNAL') || die();
 
 /** Include required files */
@@ -233,11 +235,11 @@ function forum_update_instance($forum, $mform) {
             forum_add_discussion($discussion, null, $message);
 
             if (! $discussion = $DB->get_record('forum_discussions', array('forum'=>$forum->id))) {
-                print_error('cannotadd', 'forum');
+                throw new \moodle_exception('cannotadd', 'forum');
             }
         }
         if (! $post = $DB->get_record('forum_posts', array('id'=>$discussion->firstpost))) {
-            print_error('cannotfindfirstpost', 'forum');
+            throw new \moodle_exception('cannotfindfirstpost', 'forum');
         }
 
         $cm         = get_coursemodule_from_instance('forum', $forum->id);
@@ -352,7 +354,7 @@ function forum_delete_instance($id) {
  * @uses FEATURE_GRADE_HAS_GRADE
  * @uses FEATURE_GRADE_OUTCOMES
  * @param string $feature
- * @return mixed True if yes (some features may use other values)
+ * @return mixed True if module supports feature, false if not, null if doesn't know or string for the module purpose.
  */
 function forum_supports($feature) {
     switch($feature) {
@@ -368,6 +370,7 @@ function forum_supports($feature) {
         case FEATURE_SHOW_DESCRIPTION:        return true;
         case FEATURE_PLAGIARISM:              return true;
         case FEATURE_ADVANCED_GRADING:        return true;
+        case FEATURE_MOD_PURPOSE:             return MOD_PURPOSE_COLLABORATION;
 
         default: return null;
     }
@@ -496,7 +499,7 @@ function forum_user_complete($course, $user, $mod, $forum) {
 
     if ($posts = forum_get_user_posts($forum->id, $user->id)) {
         if (!$cm = get_coursemodule_from_instance('forum', $forum->id, $course->id)) {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule');
         }
         $context = context_module::instance($cm->id);
         $discussions = forum_get_user_involved_discussions($forum->id, $user->id);
@@ -1005,7 +1008,7 @@ function forum_get_readable_forums($userid, $courseid=0) {
     require_once($CFG->dirroot.'/course/lib.php');
 
     if (!$forummod = $DB->get_record('modules', array('name' => 'forum'))) {
-        print_error('notinstalled', 'forum');
+        throw new \moodle_exception('notinstalled', 'forum');
     }
 
     if ($courseid) {
@@ -2334,7 +2337,7 @@ function forum_print_discussion_header(&$post, $forum, $group = -1, $datestring 
 
     if (empty($modcontext)) {
         if (!$cm = get_coursemodule_from_instance('forum', $forum->id, $forum->course)) {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule');
         }
         $modcontext = context_module::instance($cm->id);
     }
@@ -2599,6 +2602,22 @@ function forum_search_form($course, $search='') {
     return $output->render($forumsearch);
 }
 
+/**
+ * Retrieve HTML for the page action
+ *
+ * @param forum_entity|null $forum The forum entity.
+ * @param mixed $groupid false if groups not used, int if groups used, 0 means all groups
+ * @param stdClass $course The course object.
+ * @param string $search The search string.
+ * @return string rendered HTML string.
+ */
+function forum_activity_actionbar(?forum_entity $forum, $groupid, stdClass $course, string $search=''): string {
+    global $PAGE;
+
+    $actionbar = new mod_forum\output\forum_actionbar($forum, $course, $groupid, $search);
+    $output = $PAGE->get_renderer('mod_forum');
+    return $output->render($actionbar);
+}
 
 /**
  * @global object
@@ -3660,7 +3679,7 @@ function forum_user_can_post_discussion($forum, $currentgroup=null, $unused=-1, 
     if (!$cm) {
         debugging('missing cm', DEBUG_DEVELOPER);
         if (!$cm = get_coursemodule_from_instance('forum', $forum->id, $forum->course)) {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule');
         }
     }
 
@@ -3752,14 +3771,14 @@ function forum_user_can_post($forum, $discussion, $user=NULL, $cm=NULL, $course=
     if (!$cm) {
         debugging('missing cm', DEBUG_DEVELOPER);
         if (!$cm = get_coursemodule_from_instance('forum', $forum->id, $forum->course)) {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule');
         }
     }
 
     if (!$course) {
         debugging('missing course', DEBUG_DEVELOPER);
         if (!$course = $DB->get_record('course', array('id' => $forum->course))) {
-            print_error('invalidcourseid');
+            throw new \moodle_exception('invalidcourseid');
         }
     }
 
@@ -3896,7 +3915,7 @@ function forum_user_can_see_discussion($forum, $discussion, $context, $user=NULL
         }
     }
     if (!$cm = get_coursemodule_from_instance('forum', $forum->id, $forum->course)) {
-        print_error('invalidcoursemodule');
+        throw new \moodle_exception('invalidcoursemodule');
     }
 
     if (!has_capability('mod/forum:viewdiscussion', $context)) {
@@ -3960,7 +3979,7 @@ function forum_user_can_see_post($forum, $discussion, $post, $user = null, $cm =
     if (!$cm) {
         debugging('missing cm', DEBUG_DEVELOPER);
         if (!$cm = get_coursemodule_from_instance('forum', $forum->id, $forum->course)) {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule');
         }
     }
 
@@ -4189,7 +4208,7 @@ function forum_print_recent_mod_activity($activity, $courseid, $detail, $modname
     $output .= html_writer::start_div($class);
     if ($detail) {
         $aname = s($activity->name);
-        $output .= $OUTPUT->image_icon('icon', $aname, $activity->type);
+        $output .= $OUTPUT->image_icon('monologo', $aname, $activity->type);
     }
     $discussionurl = new moodle_url('/mod/forum/discuss.php', ['d' => $content->discussion]);
     $discussionurl->set_anchor('p' . $activity->content->id);
@@ -4234,37 +4253,6 @@ function forum_change_discussionid($postid, $discussionid) {
         }
     }
     return true;
-}
-
-/**
- * Prints the editing button on subscribers page
- *
- * @global object
- * @global object
- * @param int $courseid
- * @param int $forumid
- * @return string
- */
-function forum_update_subscriptions_button($courseid, $forumid) {
-    global $CFG, $USER;
-
-    if (!empty($USER->subscriptionsediting)) {
-        $string = get_string('managesubscriptionsoff', 'forum');
-        $edit = "off";
-    } else {
-        $string = get_string('managesubscriptionson', 'forum');
-        $edit = "on";
-    }
-
-    $subscribers = html_writer::start_tag('form', array('action' => $CFG->wwwroot . '/mod/forum/subscribers.php',
-        'method' => 'get', 'class' => 'form-inline'));
-    $subscribers .= html_writer::empty_tag('input', array('type' => 'submit', 'value' => $string,
-        'class' => 'btn btn-secondary'));
-    $subscribers .= html_writer::empty_tag('input', array('type' => 'hidden', 'name' => 'id', 'value' => $forumid));
-    $subscribers .= html_writer::empty_tag('input', array('type' => 'hidden', 'name' => 'edit', 'value' => $edit));
-    $subscribers .= html_writer::end_tag('form');
-
-    return $subscribers;
 }
 
 // Functions to do with read tracking.
@@ -5141,7 +5129,7 @@ function forum_check_throttling($forum, $cm = null) {
  */
 function forum_check_blocking_threshold($thresholdwarning) {
     if (!empty($thresholdwarning) && !$thresholdwarning->canpost) {
-        print_error($thresholdwarning->errorcode,
+        throw new \moodle_exception($thresholdwarning->errorcode,
                     $thresholdwarning->module,
                     $thresholdwarning->link,
                     $thresholdwarning->additional);
@@ -5474,45 +5462,29 @@ function forum_get_extra_capabilities() {
  * @param navigation_node $forumnode The node to add module settings to
  */
 function forum_extend_settings_navigation(settings_navigation $settingsnav, navigation_node $forumnode) {
-    global $USER, $PAGE, $CFG, $DB, $OUTPUT;
+    global $USER, $CFG;
 
-    if (empty($PAGE->cm->context)) {
-        $PAGE->cm->context = context_module::instance($PAGE->cm->instance);
+    if (empty($settingsnav->get_page()->cm->context)) {
+        $settingsnav->get_page()->cm->context = context_module::instance($settingsnav->get_page()->cm->instance);
     }
 
     $vaultfactory = mod_forum\local\container::get_vault_factory();
     $managerfactory = mod_forum\local\container::get_manager_factory();
     $legacydatamapperfactory = mod_forum\local\container::get_legacy_data_mapper_factory();
     $forumvault = $vaultfactory->get_forum_vault();
-    $forumentity = $forumvault->get_from_id($PAGE->cm->instance);
+    $forumentity = $forumvault->get_from_id($settingsnav->get_page()->cm->instance);
     $forumobject = $legacydatamapperfactory->get_forum_data_mapper()->to_legacy_object($forumentity);
 
-    $params = $PAGE->url->params();
+    $params = $settingsnav->get_page()->url->params();
     if (!empty($params['d'])) {
         $discussionid = $params['d'];
     }
 
-    // Display all forum reports user has access to.
-    if (isloggedin() && !isguestuser()) {
-        $reportnames = array_keys(core_component::get_plugin_list('forumreport'));
-
-        foreach ($reportnames as $reportname) {
-            if (has_capability("forumreport/{$reportname}:view", $PAGE->cm->context)) {
-                $reportlinkparams = [
-                    'courseid' => $forumobject->course,
-                    'forumid' => $forumobject->id,
-                ];
-                $reportlink = new moodle_url("/mod/forum/report/{$reportname}/index.php", $reportlinkparams);
-                $forumnode->add(get_string('nodetitle', "forumreport_{$reportname}"), $reportlink, navigation_node::TYPE_CONTAINER);
-            }
-        }
-    }
-
     // For some actions you need to be enrolled, being admin is not enough sometimes here.
-    $enrolled = is_enrolled($PAGE->cm->context, $USER, '', false);
-    $activeenrolled = is_enrolled($PAGE->cm->context, $USER, '', true);
+    $enrolled = is_enrolled($settingsnav->get_page()->context, $USER, '', false);
+    $activeenrolled = is_enrolled($settingsnav->get_page()->context, $USER, '', true);
 
-    $canmanage  = has_capability('mod/forum:managesubscriptions', $PAGE->cm->context);
+    $canmanage  = has_capability('mod/forum:managesubscriptions', $settingsnav->get_page()->context);
     $subscriptionmode = \mod_forum\subscriptions::get_subscription_mode($forumobject);
     $cansubscribe = $activeenrolled && !\mod_forum\subscriptions::is_forcesubscribed($forumobject) &&
             (!\mod_forum\subscriptions::subscription_disabled($forumobject) || $canmanage);
@@ -5520,11 +5492,59 @@ function forum_extend_settings_navigation(settings_navigation $settingsnav, navi
     if ($canmanage) {
         $mode = $forumnode->add(get_string('subscriptionmode', 'forum'), null, navigation_node::TYPE_CONTAINER);
         $mode->add_class('subscriptionmode');
+        $mode->set_show_in_secondary_navigation(false);
 
-        $allowchoice = $mode->add(get_string('subscriptionoptional', 'forum'), new moodle_url('/mod/forum/subscribe.php', array('id'=>$forumobject->id, 'mode'=>FORUM_CHOOSESUBSCRIBE, 'sesskey'=>sesskey())), navigation_node::TYPE_SETTING);
-        $forceforever = $mode->add(get_string("subscriptionforced", "forum"), new moodle_url('/mod/forum/subscribe.php', array('id'=>$forumobject->id, 'mode'=>FORUM_FORCESUBSCRIBE, 'sesskey'=>sesskey())), navigation_node::TYPE_SETTING);
-        $forceinitially = $mode->add(get_string("subscriptionauto", "forum"), new moodle_url('/mod/forum/subscribe.php', array('id'=>$forumobject->id, 'mode'=>FORUM_INITIALSUBSCRIBE, 'sesskey'=>sesskey())), navigation_node::TYPE_SETTING);
-        $disallowchoice = $mode->add(get_string('subscriptiondisabled', 'forum'), new moodle_url('/mod/forum/subscribe.php', array('id'=>$forumobject->id, 'mode'=>FORUM_DISALLOWSUBSCRIBE, 'sesskey'=>sesskey())), navigation_node::TYPE_SETTING);
+        // Optional subscription mode.
+        $allowchoicestring = get_string('subscriptionoptional', 'forum');
+        $allowchoiceaction = new action_link(
+            new moodle_url('/mod/forum/subscribe.php', [
+                'id' => $forumobject->id,
+                'mode' => FORUM_CHOOSESUBSCRIBE,
+                'sesskey' => sesskey(),
+            ]),
+            $allowchoicestring,
+            new confirm_action(get_string('subscriptionmodeconfirm', 'mod_forum', $allowchoicestring))
+        );
+        $allowchoice = $mode->add($allowchoicestring, $allowchoiceaction, navigation_node::TYPE_SETTING);
+
+        // Forced subscription mode.
+        $forceforeverstring = get_string('subscriptionforced', 'forum');
+        $forceforeveraction = new action_link(
+            new moodle_url('/mod/forum/subscribe.php', [
+                'id' => $forumobject->id,
+                'mode' => FORUM_FORCESUBSCRIBE,
+                'sesskey' => sesskey(),
+            ]),
+            $forceforeverstring,
+            new confirm_action(get_string('subscriptionmodeconfirm', 'mod_forum', $forceforeverstring))
+        );
+        $forceforever = $mode->add($forceforeverstring, $forceforeveraction, navigation_node::TYPE_SETTING);
+
+        // Initial subscription mode.
+        $forceinitiallystring = get_string('subscriptionauto', 'forum');
+        $forceinitiallyaction = new action_link(
+            new moodle_url('/mod/forum/subscribe.php', [
+                'id' => $forumobject->id,
+                'mode' => FORUM_INITIALSUBSCRIBE,
+                'sesskey' => sesskey(),
+            ]),
+            $forceinitiallystring,
+            new confirm_action(get_string('subscriptionmodeconfirm', 'mod_forum', $forceinitiallystring))
+        );
+        $forceinitially = $mode->add($forceinitiallystring, $forceinitiallyaction, navigation_node::TYPE_SETTING);
+
+        // Disabled subscription mode.
+        $disallowchoicestring = get_string('subscriptiondisabled', 'forum');
+        $disallowchoiceaction = new action_link(
+            new moodle_url('/mod/forum/subscribe.php', [
+                'id' => $forumobject->id,
+                'mode' => FORUM_DISALLOWSUBSCRIBE,
+                'sesskey' => sesskey(),
+            ]),
+            $disallowchoicestring,
+            new confirm_action(get_string('subscriptionmodeconfirm', 'mod_forum', $disallowchoicestring))
+        );
+        $disallowchoice = $mode->add($disallowchoicestring, $disallowchoiceaction, navigation_node::TYPE_SETTING);
 
         switch ($subscriptionmode) {
             case FORUM_CHOOSESUBSCRIBE : // 0
@@ -5567,34 +5587,25 @@ function forum_extend_settings_navigation(settings_navigation $settingsnav, navi
         }
     }
 
-    if ($cansubscribe) {
-        if (\mod_forum\subscriptions::is_subscribed($USER->id, $forumobject, null, $PAGE->cm)) {
-            $linktext = get_string('unsubscribe', 'forum');
-        } else {
-            $linktext = get_string('subscribe', 'forum');
-        }
-        $url = new moodle_url('/mod/forum/subscribe.php', array('id'=>$forumobject->id, 'sesskey'=>sesskey()));
-        $forumnode->add($linktext, $url, navigation_node::TYPE_SETTING);
-
-        if (isset($discussionid)) {
-            if (\mod_forum\subscriptions::is_subscribed($USER->id, $forumobject, $discussionid, $PAGE->cm)) {
-                $linktext = get_string('unsubscribediscussion', 'forum');
-            } else {
-                $linktext = get_string('subscribediscussion', 'forum');
-            }
-            $url = new moodle_url('/mod/forum/subscribe.php', array(
-                    'id' => $forumobject->id,
-                    'sesskey' => sesskey(),
-                    'd' => $discussionid,
-                    'returnurl' => $PAGE->url->out(),
-                ));
-            $forumnode->add($linktext, $url, navigation_node::TYPE_SETTING);
-        }
+    if (has_capability('mod/forum:viewsubscribers', $settingsnav->get_page()->context)) {
+        $url = new moodle_url('/mod/forum/subscribers.php', ['id' => $forumobject->id, 'edit' => 'off']);
+        $forumnode->add(get_string('subscriptions', 'forum'), $url, navigation_node::TYPE_SETTING, null, 'forumsubscriptions');
     }
 
-    if (has_capability('mod/forum:viewsubscribers', $PAGE->cm->context)){
-        $url = new moodle_url('/mod/forum/subscribers.php', array('id'=>$forumobject->id));
-        $forumnode->add(get_string('showsubscribers', 'forum'), $url, navigation_node::TYPE_SETTING);
+    // Display all forum reports user has access to.
+    if (isloggedin() && !isguestuser()) {
+        $reportnames = array_keys(core_component::get_plugin_list('forumreport'));
+
+        foreach ($reportnames as $reportname) {
+            if (has_capability("forumreport/{$reportname}:view", $settingsnav->get_page()->context)) {
+                $reportlinkparams = [
+                    'courseid' => $forumobject->course,
+                    'forumid' => $forumobject->id,
+                ];
+                $reportlink = new moodle_url("/mod/forum/report/{$reportname}/index.php", $reportlinkparams);
+                $forumnode->add(get_string('reports'), $reportlink, navigation_node::TYPE_CONTAINER);
+            }
+        }
     }
 
     if ($enrolled && forum_tp_can_track_forums($forumobject)) { // keep tracking info for users with suspended enrolments
@@ -5613,13 +5624,14 @@ function forum_extend_settings_navigation(settings_navigation $settingsnav, navi
         }
     }
 
-    if (!isloggedin() && $PAGE->course->id == SITEID) {
+    if (!isloggedin() && $settingsnav->get_page()->course->id == SITEID) {
         $userid = guest_user()->id;
     } else {
         $userid = $USER->id;
     }
 
-    $hascourseaccess = ($PAGE->course->id == SITEID) || can_access_course($PAGE->course, $userid);
+    $hascourseaccess = ($settingsnav->get_page()->course->id == SITEID) ||
+        can_access_course($settingsnav->get_page()->course, $userid);
     $enablerssfeeds = !empty($CFG->enablerssfeeds) && !empty($CFG->forum_enablerssfeeds);
 
     if ($enablerssfeeds && $forumobject->rsstype && $forumobject->rssarticles && $hascourseaccess) {
@@ -5634,7 +5646,8 @@ function forum_extend_settings_navigation(settings_navigation $settingsnav, navi
             $string = get_string('rsssubscriberssposts','forum');
         }
 
-        $url = new moodle_url(rss_get_url($PAGE->cm->context->id, $userid, "mod_forum", $forumobject->id));
+        $url = new moodle_url(rss_get_url($settingsnav->get_page()->cm->context->id, $userid, "mod_forum",
+            $forumobject->id));
         $forumnode->add($string, $url, settings_navigation::TYPE_SETTING, null, null, new pix_icon('i/rss', ''));
     }
 
@@ -5655,13 +5668,13 @@ function forum_cm_info_view(cm_info $cm) {
 
     if (forum_tp_can_track_forums()) {
         if ($unread = forum_tp_count_forum_unread_posts($cm, $cm->get_course())) {
-            $out = '<span class="unread"> <a href="' . $cm->url . '#unread">';
+            $out = '<span class="badge badge-secondary">';
             if ($unread == 1) {
                 $out .= get_string('unreadpostsone', 'forum');
             } else {
                 $out .= get_string('unreadpostsnumber', 'forum', $unread);
             }
-            $out .= '</a></span>';
+            $out .= '</span>';
             $cm->set_after_link($out);
         }
     }
@@ -5858,7 +5871,7 @@ function forum_get_posts_by_user($user, array $courses, $musthaveaccess = false,
             if (!is_viewing($coursecontext, $user) && !is_enrolled($coursecontext, $user)) {
                 // Need to have full access to a course to see the rest of own info
                 if ($musthaveaccess) {
-                    print_error('errorenrolmentrequired', 'forum');
+                    throw new \moodle_exception('errorenrolmentrequired', 'forum');
                 }
                 continue;
             }
@@ -5867,7 +5880,7 @@ function forum_get_posts_by_user($user, array $courses, $musthaveaccess = false,
             // if they don't we immediately have a problem.
             if (!can_access_course($course)) {
                 if ($musthaveaccess) {
-                    print_error('errorenrolmentrequired', 'forum');
+                    throw new \moodle_exception('errorenrolmentrequired', 'forum');
                 }
                 continue;
             }
@@ -5897,7 +5910,7 @@ function forum_get_posts_by_user($user, array $courses, $musthaveaccess = false,
                     // But they're not... if it was a specific course throw an error otherwise
                     // just skip this course so that it is not searched.
                     if ($musthaveaccess) {
-                        print_error("groupnotamember", '', $CFG->wwwroot."/course/view.php?id=$course->id");
+                        throw new \moodle_exception("groupnotamember", '', $CFG->wwwroot."/course/view.php?id=$course->id");
                     }
                     continue;
                 }
@@ -5917,7 +5930,7 @@ function forum_get_posts_by_user($user, array $courses, $musthaveaccess = false,
         // user doesn't have access to any courses is which the requested user has posted.
         // Although we do know at this point that the requested user has posts.
         if ($musthaveaccess) {
-            print_error('permissiondenied');
+            throw new \moodle_exception('permissiondenied');
         } else {
             return $return;
         }
@@ -6988,6 +7001,25 @@ function forum_grading_areas_list() {
     return [
         'forum' => get_string('grade_forum_header', 'forum'),
     ];
+}
+
+/**
+ * Callback to fetch the activity event type lang string.
+ *
+ * @param string $eventtype The event type.
+ * @return lang_string The event type lang string.
+ */
+function mod_forum_core_calendar_get_event_action_string(string $eventtype): string {
+    global $CFG;
+    require_once($CFG->dirroot . '/mod/forum/locallib.php');
+
+    $modulename = get_string('modulename', 'forum');
+
+    if ($eventtype == FORUM_EVENT_TYPE_DUE) {
+        return get_string('calendardue', 'forum', $modulename);
+    } else {
+        return get_string('requiresaction', 'calendar', $modulename);
+    }
 }
 
 /**

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'es', version '3.11'.
+ * Strings for component 'accredible', language 'es', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -31,7 +31,7 @@ $string['accredible:student'] = 'Recuperar un certificado o una insignia';
 $string['accredible:view'] = 'Ver un certificado o insignia';
 $string['accrediblegroup'] = 'Grupo Accredible';
 $string['achievementid'] = 'Denominación del id / cohorte del logro (debe ser único)';
-$string['activitygroupdescription'] = 'Los grupos de credenciales deben haberse creado en el <a href="{$a}" target="_blank">Panel de Accredible</a> antes de que se puedan emitir las credenciales. Si no aparece ninguno, verifique su llave API para asegurarse de que la integración esté configurada correctamente.';
+$string['activitygroupdescription'] = 'Las credenciales del grupo necesitan ser creadas en el <a href="{$a}" target="_blank">Área Personal de Accredible</a> antes de que se puedan emitir. Si no aparecieran, comprueba la "API Key" para asegurarte que la configuración de la integración es correcta.';
 $string['activityname'] = 'Nombre de actividad';
 $string['additionalactivitiesone'] = 'Atención: Estás añadiendo más de una actividad a un curso.<br/>Todas las  actividades son visibles para los alumnos, así que asegúrate de darles diferentes nombres.';
 $string['additionalactivitiesthree'] = 'Este nombre aparecerá en el certificado.';
@@ -53,7 +53,7 @@ $string['euhelp'] = 'Seleccione si desea almacenar los datos en la UE (Frankfurt
 $string['eulabel'] = 'Servidor UE (Frankfurt)';
 $string['eventcertificatecreated'] = 'Se ha enviado una credencial a Accredible.';
 $string['gotodashboard'] = 'Para actualizar la apariencia de sus credenciales y certificados, visite  <a href="https://dashboard.accredible.com" target="_blank">https://dashboard.accredible.com</a>';
-$string['gradeattributegradeitemselect'] = 'Elija la calificación Moodle para incluir:';
+$string['gradeattributegradeitemselect'] = 'Elige una calificación para incluir:';
 $string['gradeattributekeynameselect'] = 'Elija un atributo de diseño Accredible:';
 $string['gradeissueheader'] = 'Emisión de criterios automática: por nota de examen final';
 $string['groupselect'] = 'Grupo';
@@ -67,6 +67,7 @@ $string['modulename'] = 'Certificado e insignias Accredible';
 $string['modulename_help'] = 'El módulo de actividad certificado e insignia Accredible le permite emitir los certificados o insignias del curso a los estudiantes en accredible.com.
 
 Añadir la actividad donde desea que sus estudiantes vean su certificado o insignia.';
+$string['modulename_link'] = 'mod/accredible/view';
 $string['modulenameplural'] = 'Certificados/insignias Accredible';
 $string['nocertificates'] = 'No hay certificados/insignias';
 $string['nouserswarning'] = 'Debe elegir un grupo Accredible para ver la lista de usuarios.';
@@ -74,6 +75,10 @@ $string['overview'] = 'Resumen';
 $string['passinggrade'] = 'Porcentaje necesario para pasar el curso (%)';
 $string['pluginadministration'] = 'Administación de certificados/insignias acreditables';
 $string['pluginname'] = 'Certificados e insignias acreditables';
+$string['privacy:metadata:accredible'] = 'Para integrarse con Accredible, los datos del usuario deben intercambiarse con ese servicio.';
+$string['privacy:metadata:accredible:email'] = 'Su dirección de correo electrónico se envía a Accredible para emitir una credencial.';
+$string['privacy:metadata:accredible:fullname'] = 'Su nombre completo se envía a Accredible para emitir una credencial';
+$string['privacy:metadata:accredible:quizgrade'] = 'La calificación de su cuestionario puede enviarse a Accredible para emitir una credencial.';
 $string['recipient'] = 'Beneficiario';
 $string['templatename'] = 'Nombre de la cohorte (desde el Tablero)';
 $string['unissueddescription'] = 'Estos estudiantes cumplen los requisitos para este certificado pero los certificados no han sido emitidos. Seleccione aquellos para quienes desea emitir certificado.';

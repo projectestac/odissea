@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_live_services', language 'ca', version '3.11'.
+ * Strings for component 'block_live_services', language 'ca', version '4.1'.
  *
  * @package     block_live_services
  * @category    string
@@ -26,5 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendarEndDate'] = 'Data de finalització';
+$string['calendarIconAltText'] = 'Visualitza';
+$string['calendarViewLink'] = 'Visualitza';
 $string['identityPrivacyLink'] = 'Privacitat';
 $string['privacy'] = 'Privacitat';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'sv', version '3.11'.
+ * Strings for component 'folder', language 'sv', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -45,10 +45,12 @@ $string['indicator:cognitivedepth'] = 'Mapp kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Mappresurs.';
 $string['indicator:cognitivedepthdef'] = 'Mapp kognitivt';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av Mapp-aktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Mapp social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Mappaktivitet.';
 $string['indicator:socialbreadthdef'] = 'Mapp socialt';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Mappresurserna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['maxsizetodownload'] = 'Maximal nedladdningsstorlek (MB)';
 $string['maxsizetodownload_help'] = 'Den maximala mappstorleken som kan laddas ner som en zip-fil. Om den är inställd på noll är mappstorleken obegränsad.';
 $string['modulename'] = 'Mapp';
@@ -58,6 +60,7 @@ En mapp kan användas
 
 * För en serie filer inom ett ämne, till exempel en uppsättning tidigare examenshandlingar i pdf-format eller en samling bildfiler för användning i studentprojekt
 * För att tillhandahålla ett delat uppladdningsutrymme för lärare på kurssidan (mappen hålls dold så att enbart lärare kan se den)';
+$string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Mappar';
 $string['newfoldercontent'] = 'Nytt innehåll i mappen';
 $string['noautocompletioninline'] = 'Automatiskt slutförande vid visning av aktivitet kan inte väljas tillsammans med alternativet "Visa på kurssidan"';

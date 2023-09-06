@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ca', version '3.11'.
+ * Strings for component 'plugin', language 'ca', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -65,6 +65,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'No hi ha connectors d\'aquest tipus instal·lats';
 $string['notdownloadable'] = 'No es pot baixar el paquet';
 $string['notdownloadable_help'] = 'El paquet ZIP amb l\'actualització no es pot baixar de forma automàtica. Per a més ajuda consulteu la documentació.';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = 'Anotacions';
 $string['notwritable'] = 'Els fitxers del connector són només de lectura.';
 $string['notwritable_help'] = 'Heu habilitat el desplegament automàtic d\'actualitzacions i hi ha una actualització disponible per a aquest connector. No obstant això, els fitxers del connector del servidor web són només de lectura, de manera que l\'actualització no es pot instal·lar en aquest moment.
@@ -124,6 +125,8 @@ $string['type_calendartype'] = 'Tipus de calendari';
 $string['type_calendartype_plural'] = 'Tipus de calendaris';
 $string['type_contentbank'] = 'Banc de continguts';
 $string['type_contentbank_plural'] = 'Connectors del banc de continguts';
+$string['type_contenttype'] = 'Banc de continguts';
+$string['type_contenttype_plural'] = 'Connectors del banc de continguts';
 $string['type_coursereport'] = 'Informe del curs';
 $string['type_coursereport_plural'] = 'Informes del curs';
 $string['type_dataformat'] = 'Format de les dades';
@@ -212,6 +215,7 @@ $string['validationmsg_maturity'] = 'Nivell de maduresa declarat';
 $string['validationmsg_maturity_help'] = 'El complement pot declarar el seu nivell de maduresa. Si el mantenidor considera el complement estable, la nivell de maduresa serà MATURITY_STABLE. Tots els altres nivells de maduresa (alfa o beta) s\'haurien de considerar inestables i generen un avís.';
 $string['validationmsg_missingcomponent'] = 'El connector no declara el nom dels components';
 $string['validationmsg_missingcomponent_help'] = 'Tots els connectors han de proporcionar el nom complet dels components mitjançant la declaració `$plugin->component` al fitxer version.php';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = 'El nom anglès del fitxer no concorda';
 $string['validationmsg_missingexpectedlangenfile_info'] = 'El tipus de complement no conté el fitxer de llengua anglesa esperat {$a}.';
 $string['validationmsg_missinglangenfile'] = 'No s\'ha trobat el fitxer de llengua anglesa';

@@ -1037,7 +1037,7 @@ class com_wiris_quizzes_impl_QuestionImpl extends com_wiris_quizzes_impl_Questio
 		if(com_wiris_quizzes_impl_MathContent::getMathType($m) === com_wiris_quizzes_impl_MathContent::$TYPE_GEOMETRY_FILE) {
 			$geometryFile = com_wiris_util_geometry_GeometryFile::readJSON($m);
 			$geometryFile->data->remove(com_wiris_util_geometry_GeometryFile::$CONSTRAINTS);
-			$geometryFile->data->remove(com_wiris_util_geometry_GeometryFile::$HANDWRITING);
+			$geometryFile->data->remove(com_wiris_util_geometry_GeometryFile::$HANDWRITING_TRACES);
 			$elements = com_wiris_util_json_JSon::getArray($geometryFile->data->get(com_wiris_util_geometry_GeometryFile::$ELEMENTS));
 			$elements2 = new _hx_array(array());
 			{

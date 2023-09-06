@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'ca', version '3.11'.
+ * Strings for component 'block_html', language 'ca', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -34,4 +34,4 @@ $string['configtitle'] = 'Títol del bloc';
 $string['html:addinstance'] = 'Afegir un bloc HTML nou';
 $string['html:myaddinstance'] = 'Afegeix un bloc HTML nou a la pàgina del Tauler';
 $string['newhtmlblock'] = '(nou bloc HTML)';
-$string['pluginname'] = 'HTML';
+$string['pluginname'] = 'Text';

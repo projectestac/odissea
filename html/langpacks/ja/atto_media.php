@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'ja', version '3.11'.
+ * Strings for component 'atto_media', language 'ja', version '4.1'.
  *
  * @package     atto_media
  * @category    string
@@ -78,7 +78,7 @@ $string['subtitles_help'] = 'サブタイトルはダイアログの筆写また
 $string['subtitlessourcelabel'] = 'サブタイトルトラックURL';
 $string['track'] = 'トラックURL';
 $string['tracks'] = 'サブタイトルおよびキャプション';
-$string['tracks_help'] = 'サブタイトル、キャプション、チャプタおよび説明はWebVTT (Web Video Text Tracks) フォーマットファイルによって追加することができます。トラックラベルは選択ドロップダウンメニュ内に表示されます。それぞれのトラックタイプにおいてデフォルトに設定されたトラックすべてはビデオの開始に事前選択されます。';
+$string['tracks_help'] = 'サブタイトル、キャプション、チャプタおよび説明はWebVTT (Web Video Text Tracks) フォーマットファイルによって追加することができます。トラックラベルは選択ドロップダウンメニュー内に表示されます。それぞれのトラックタイプにおいてデフォルトに設定されたトラックすべてはビデオの開始に事前選択されます。';
 $string['video'] = 'ビデオ';
 $string['videoheight'] = 'ビデオ高';
 $string['videosourcelabel'] = 'ビデオソースURL';

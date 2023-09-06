@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'pt', version '3.11'.
+ * Strings for component 'block_tags', language 'pt', version '4.1'.
  *
  * @package     block_tags
  * @category    string
@@ -27,13 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['anycollection'] = 'Qualquer';
 $string['anytype'] = 'Todas';
-$string['configtitle'] = 'Título do bloco de Palavras-chave';
+$string['configtitle'] = 'Título do bloco Palavras-chave';
 $string['defaultdisplay'] = 'Mostrar palavras-chave';
 $string['disabledtags'] = 'As palavras-chave estão desativadas';
 $string['pluginname'] = 'Palavras-chave';
 $string['privacy:metadata'] = 'O bloco Palavras-chave apenas mostra dados armazenados noutros locais.';
 $string['recursivecontext'] = 'Incluir contextos filho';
-$string['recursivecontext_help'] = 'Se desativar esta opção, serão mostradas as palavras-chave de itens no contexto especificado acima, mas não as de itens nos contextos filho. Por exemplo, as palavras-chave da disciplina serão exibidas, mas não as das suas atividades.';
+$string['recursivecontext_help'] = 'Se desativar esta opção, serão mostradas as palavras-chave dos itens no contexto especificado acima, mas não as de itens nos contextos inferiores. Por exemplo, as palavras-chave da disciplina serão exibidas, mas não as das suas atividades.';
 $string['standardonly'] = 'Apenas palavras-chave oficiais';
 $string['tagcollection'] = 'Coleção de palavras-chave';
 $string['tagcollection_help'] = 'Selecione a coleção de palavras-chave que pretende utilizar. Se escolher "Todas", serão exibidas as palavras-chave de todas as coleções, exceto as marcadas com *';

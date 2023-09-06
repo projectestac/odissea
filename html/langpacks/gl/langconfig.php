@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'gl', version '3.11'.
+ * Strings for component 'langconfig', language 'gl', version '4.1'.
  *
  * @package     langconfig
  * @category    string
@@ -33,10 +33,10 @@ $string['firstdayofweek'] = '1';
 $string['iso6391'] = 'gl';
 $string['iso6392'] = 'glg';
 $string['labelsep'] = ':';
-$string['listsep'] = ';';
+$string['listsep'] = '.';
 $string['locale'] = 'gl_ES.UTF-8';
 $string['localecldr'] = 'gl-ES';
-$string['localewin'] = 'Galician_Spain.1252';
+$string['localewin'] = 'Galician.1252';
 $string['localewincharset'] = '';
 $string['oldcharset'] = 'ISO-8859-1';
 $string['parentlanguage'] = '';
@@ -45,16 +45,19 @@ $string['strftimedatefullshort'] = '%d/%m/%y';
 $string['strftimedatemonthabbr'] = '%d de %b de %Y';
 $string['strftimedateshort'] = '%d de %B';
 $string['strftimedateshortmonthabbr'] = '%d de %b';
-$string['strftimedatetime'] = '%d de %B de %Y, %H:%M';
-$string['strftimedatetimeshort'] = '%d/%m/%Y, %H:%M';
+$string['strftimedatetime'] = '%d de %B de %Y, %I:%M %p';
+$string['strftimedatetimeaccurate'] = '%d de %B de %Y, %I:%M:%S %p';
+$string['strftimedatetimeshort'] = '%d/ %m/%Y, %H:%M';
+$string['strftimedatetimeshortaccurate'] = '%d/%m/%y, %H:%M:%S';
 $string['strftimedaydate'] = '%A, %d de %B de %Y';
-$string['strftimedaydatetime'] = '%A, %d de %B de %Y, %H:%M';
+$string['strftimedaydatetime'] = '%A, %d de %B de %Y, %I:%M %p';
 $string['strftimedayshort'] = '%A, %d de %B';
 $string['strftimedaytime'] = '%a, %H:%M';
+$string['strftimemonth'] = '%B';
 $string['strftimemonthyear'] = '%B %Y';
 $string['strftimerecent'] = '%d de %b, %H:%M';
-$string['strftimerecentfull'] = '%a, %d de %b de %Y, %H:%M';
-$string['strftimetime'] = '%H:%M';
+$string['strftimerecentfull'] = '%a, %d de %b de %Y, %I:%M %p';
+$string['strftimetime'] = '%I:%M %p';
 $string['strftimetime12'] = '%I:%M %p';
 $string['strftimetime24'] = '%H:%M';
 $string['thisdirection'] = 'ltr';

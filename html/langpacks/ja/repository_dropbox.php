@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ja', version '3.11'.
+ * Strings for component 'repository_dropbox', language 'ja', version '4.1'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -33,6 +33,8 @@ $string['crontask'] = 'Dropboxリポジトリのバックグラウンド処理';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Dropboxフォルダを表示する';
 $string['instruction'] = 'あなたはAPIキーおよび秘密鍵を<a href="https://www.dropbox.com/developers/apps">Dropbox developers</a>より取得することができます。あなたのキーをセットアップする場合、「Type of access」を「Full Dropbox」にしてください。';
+$string['issuer'] = 'OAuth 2サービス';
+$string['issuer_help'] = 'Dropbox APIと通信するよう設定されているOAuth 2サービスを選択してください。サービスがまだ存在しない場合、あなたはサービスを作成する必要があります。';
 $string['logoutdesc'] = '(Dropboxの利用終了後、ログアウトする)';
 $string['notitle'] = 'タイトルなし';
 $string['oauth2redirecturi'] = 'OAuth 2リダイレクトURI';

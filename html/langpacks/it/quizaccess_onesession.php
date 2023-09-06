@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_onesession', language 'it', version '3.11'.
+ * Strings for component 'quizaccess_onesession', language 'it', version '4.1'.
  *
  * @package     quizaccess_onesession
  * @category    string
@@ -32,6 +32,9 @@ $string['onesession'] = 'Blocca connessioni simultanee';
 $string['onesession:unlockattempt'] = 'Sblocca tentativo';
 $string['onesession_help'] = 'Se abilitato, gli utenti possono continuare il proprio tentativo solo nella stessa sessione del browser. Qualsiasi tentativo di aprire lo stesso tentativo usando un differente computer, dispositivo o browser sarà bloccato. Questo potrebbe essere utile per essere sicuri che nessuno possa aiutare lo studente aprendo lo stesso quiz da un altro computer.';
 $string['pluginname'] = 'Regola di accesso quiz Blocco sessioni simultanee';
+$string['privacy:metadata'] = 'Questo plugin memorizza l\'hash della stringa utilizzata per identificare la sessione del dispositivo client. Anche se la stringa originale contiene l\'indirizzo IP del dispositivo e l\'header User-Agent inviata dal client, l\'hash (per sua natura) non permette di estrarre questa informazione. Gli hash vengono eliminati automaticamente alla fine della sessione di ogni quiz.';
 $string['studentinfo'] = 'Attenzione! È proibito cambiare il dispositivo durante l\'esecuzione del quiz. Dopo l\'inizio del tentativo qualsiasi connessione al quiz effettuata da un differente computer, dispositivo o browser sarà bloccata. Non chiudere la finestra del browser fino al termine del tentativo, altrimenti non sarai in grado di completarlo.';
 $string['unlockthisattempt'] = 'Permetti allo studente di continuare questo tentativo usando un differente dispositivo.';
 $string['unlockthisattempt_header'] = 'Blocca connessioni simultanee';
+$string['whitelist'] = 'Reti senza controllo IP';
+$string['whitelist_desc'] = 'L\'opzione è pensata per ridurre i falsi positivi quando gli utenti tentano il quiz da connessioni mobili, dove l\'IP potrebbe variare durante il quiz. Per la maggioranza delle situazioni non non è necessario impostarla. È possibile specificare una lista di subnet separate da virgole (ad esempio 88.0.0.0/8, 77.77.0.0/16). Se un IP appartiene alle reti specificate, non sarà oggetto di verifica. Per disabilitare completamente il controllo IP si può impostare questo valore a 0.0.0.0/0.';

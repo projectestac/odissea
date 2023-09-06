@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'en', version '3.11'.
+ * Strings for component 'gradereport_history', language 'en', version '4.1'.
  *
  * @package     gradereport_history
  * @category    string
@@ -42,7 +42,7 @@ $string['foundoneuser'] = '1 user found';
 $string['gradenew'] = 'Revised grade';
 $string['gradeold'] = 'Original grade';
 $string['grader'] = 'Grader';
-$string['history:view'] = 'View the grade history';
+$string['history:view'] = 'View grade history';
 $string['historyperpage'] = 'History entries per page';
 $string['historyperpage_help'] = 'This setting determines the number of history entries displayed per page in the history report.';
 $string['loadmoreusers'] = 'Load more users...';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'pt', version '3.11'.
+ * Strings for component 'block', language 'pt', version '4.1'.
  *
  * @package     block
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = 'Mover para a consola';
 $string['anypagematchingtheabove'] = 'Qualquer página que corresponda à de cima';
 $string['appearsinsubcontexts'] = 'Aparecer nos subcontextos';
 $string['assignrolesinblock'] = 'Atribuir papéis no bloco {$a}';
@@ -43,12 +42,12 @@ $string['defaultregion_help'] = 'Os temas podem definir um ou mais locais onde o
 $string['defaultweight'] = 'Ordem predefinida';
 $string['defaultweight_help'] = 'A ordem predefinida permite que escolha a ordem pela qual será exibido o bloco. A localização final é calculada a partir de todos os blocos naquele local (por exemplo, apenas um bloco pode estar no topo da página). Se pretender, poderá alterar a ordem dos blocos na disciplina.';
 $string['deleteblock'] = 'Apagar o bloco {$a}';
-$string['deleteblockcheck'] = 'Tem a certeza de que pretende apagar o bloco \'<strong>{$a}</strong>\'?';
+$string['deleteblockcheck'] = 'O bloco \'{$a}\' será apagado.';
+$string['deleteblockinprogress'] = 'Remoção do bloco \'{$a}\' em progresso...';
 $string['deleteblockwarning'] = '<p>Está prestes a apagar um bloco que está a ser utilizado noutra localização.</p><p>Localização original do bloco: {$a->location}<br />Mostrar em páginas do tipo: {$a->pagetype}</p><p>Tem a certeza de que pretende continuar?</p>';
 $string['deletecheck'] = 'Apagar o bloco {$a}?';
-$string['dockblock'] = 'Mover o bloco {$a} para a consola';
+$string['deletecheck_modal'] = 'Apagar bloco';
 $string['hideblock'] = 'Ocultar o bloco {$a}';
-$string['hidedockpanel'] = 'Ocultar a consola';
 $string['hidepanel'] = 'Ocultar o painel';
 $string['moveblock'] = 'Mover o bloco {$a}';
 $string['moveblockafter'] = 'Mover este bloco para depois do bloco {$a}';
@@ -60,22 +59,19 @@ $string['onthispage'] = 'Nesta página';
 $string['pagetypes'] = 'Tipos de página';
 $string['pagetypewarning'] = 'O tipo de página especificado anteriormente já não pode ser selecionado. Escolha o tipo de página mais apropriado da lista abaixo.';
 $string['privacy:metadata:userpref:dockedinstance'] = 'Registo de quando o utilizador moveu o bloco';
-$string['privacy:metadata:userpref:hiddenblock'] = 'Regista quando um utilizador colapsa/oculta um bloco';
+$string['privacy:metadata:userpref:hiddenblock'] = 'Regista quando um utilizador contrai/oculta um bloco';
 $string['privacy:request:blockisdocked'] = 'Indica se o bloco foi movido';
-$string['privacy:request:blockishidden'] = 'Indica se um bloco foi ocultado/colapsado';
+$string['privacy:request:blockishidden'] = 'Indica se um bloco foi ocultado/contraído';
 $string['region'] = 'Posição';
 $string['restrictpagetypes'] = 'Mostrar nas páginas';
 $string['showblock'] = 'Mostrar o bloco {$a}';
 $string['showoncontextandsubs'] = 'Mostrar em \'{$a}\' e em todas as suas páginas';
 $string['showoncontextonly'] = 'Mostrar apenas em \'{$a}\'';
 $string['showonentiresite'] = 'Mostrar em todo o site';
-$string['showonfrontpageandsubs'] = 'Mostrar na página principal e em todas as páginas adicionadas à página principal';
+$string['showonfrontpageandsubs'] = 'Mostrar na página principal e em todas as páginas adicionadas à página principal.';
 $string['showonfrontpageonly'] = 'Mostrar apenas na página principal';
 $string['subpages'] = 'Selecionar páginas';
 $string['thisspecificpage'] = 'Esta página específica';
-$string['undockall'] = 'Retirar todos da consola';
-$string['undockblock'] = 'Retirar o bloco {$a} da consola';
-$string['undockitem'] = 'Retirar este elemento da consola';
 $string['visible'] = 'Visível';
 $string['weight'] = 'Ordem';
 $string['wherethisblockappears'] = 'Onde aparece este bloco';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'zh_cn', version '3.11'.
+ * Strings for component 'hvp', language 'zh_cn', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -244,6 +244,7 @@ $string['missingparameters'] = '缺少参数';
 $string['missinguploadpermissions'] = '请注意，新的库可能存在于您上载的文件中，但系统不允许您上载新的库。 请与系统管理员联系。';
 $string['modulename'] = 'H5P互动内容';
 $string['modulename_help'] = 'H5P活动模块使您可以创建交互式内容，例如交互式视频，问题集，拖放问题，多项选择问题，演示等等。 除了作为丰富内容的创作工具之外，H5P还使您能够导入和导出H5P文件，从而有效地重用和共享内容。 使用xAPI可以跟踪用户交互和得分，并且可以通过系统内的得分集获得。 请注意，具有编程技能的人可能会在不了解正确答案的情况下在H5P交互中作弊并获得满分。 我们建议您不将H5P用于考试或类似考试的活动中。您可以通过使用内置的创作工具创建内容或上传您在其他启用H5P的站点上找到的H5P文件来添加交互式H5P内容。';
+$string['modulename_link'] = 'https://h5p.org/moodle-more-help';
 $string['modulenameplural'] = '互动内容';
 $string['nextpage'] = '下一页';
 $string['noanswersubmitted'] = '该用户尚未提交对H5P的答案';

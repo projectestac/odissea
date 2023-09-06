@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'eu', version '3.11'.
+ * Strings for component 'glossary', language 'eu', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Gehitu kategoria';
 $string['addcomment'] = 'Gehitu iruzkina';
 $string['addentry'] = 'Gehitu sarrera berria';
 $string['addingcomment'] = 'Gehitu iruzkin bat';
+$string['addsingleentry'] = 'Gehitu sarrera';
 $string['alias'] = 'Hitz gakoa';
 $string['aliases'] = 'Hitz gakoak';
 $string['aliases_help'] = 'Glosarioko kontzeptu bakoitza hitz gakoen zerrenda batekin lotuta egon daiteke. Sarrera automatikoki estekatzen bada, edozein hitz gako ere automatikoki estekatuko da.
@@ -169,6 +170,7 @@ $string['errconceptalreadyexists'] = 'Kontzeptu hau dagoeneko existitzen da. Glo
 $string['errdeltimeexpired'] = 'Ezin duzu hau ezabatu. Denbora amaitu egin da!';
 $string['erredittimeexpired'] = 'Sarrera hau editatzeko denbora amaitu egin da.';
 $string['errorparsingxml'] = 'Erroreak gertatu dira fitxategia aztertzean. Ziurtatu ezazu XML sintaxia ondo dagoela.';
+$string['errreservedkeywords'] = 'Idatzitako hitz gakoren bat ezin da erabili karaktere bereziak dituelako.';
 $string['eventcategorycreated'] = 'Kategoria sortu da';
 $string['eventcategorydeleted'] = 'Kategoria ezabatu da';
 $string['eventcategoryupdated'] = 'Kategoria eguneratu da';
@@ -184,6 +186,7 @@ $string['explainalphabet'] = 'Arakatu glosarioan aurkibide hau erabiliz';
 $string['explainexport'] = 'Egin klik beheko botoian glosarioko sarrerak esportatzeko.<br/>Beti izango duzu aukera hori inportatzeko, ikastaro honetan edo beste batean.<p>Kontuan izan eranskinak (irudiak adibidez) eta egileak ez direla esportatzen.</p>';
 $string['explainimport'] = 'Inportatu beharreko fitxategia zehaztu eta prozesuaren irizpideak definitu behar dituzu.<p>Bidali zure eskaera eta berrikusi emaitzak.</p>';
 $string['explainspecial'] = 'Erakutsi letraz hasten ez diren sarrerak';
+$string['export'] = 'Esportatu';
 $string['exportedentry'] = 'Esportatutako sarrera';
 $string['exportentries'] = 'Esportatu sarrerak';
 $string['exportentriestoxml'] = 'Esportatu sarrerak XML fitxategira';
@@ -226,10 +229,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa glosarioetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Glosarioa motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa glosarioetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Glosarioa jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala glosarioetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Glosarioa motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala glosarioetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Glosarioa jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = 'Glosario orokorra al da hau?';
 $string['isglobal_help'] = 'Glosario orokorrak dituen sarrerak guneko edozein tokitatik estekatuak izan daitezke, eta ez soilik glosarioa duen ikastarotik. Soilik Kudeatzaileek ezar dezakete glosario bat orokor gisa.';
 $string['letter'] = 'letra';
@@ -254,6 +259,7 @@ Glosarioek erabilera anitz izan ditzake, hala nola
 * \'Aholku erabilgarriak\' baliabide moduan, arazo praktikoak konpontzeko praktika onak azaltzeko
 * Bideo, irudi edo audio-fitxategi erabilgarrien partekatze gune moduan
 * Gogoratu beharreko gertaeren berrikuspen baliabide moduan';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = 'Glosarioak';
 $string['newentries'] = 'Glosarioko sarrera berriak';
 $string['newglossary'] = 'Glosario berria';
@@ -274,6 +280,7 @@ $string['onebyline'] = '(lerro bakoitzeko bat)';
 $string['page-mod-glossary-edit'] = 'Glosarioan sarrerak gehitzeko/editatzeko orria';
 $string['page-mod-glossary-view'] = 'Ikusi glosarioa editatzeko orria';
 $string['page-mod-glossary-x'] = 'Glosarioaren edozein orri';
+$string['pendingapproval'] = 'Onarpenaren zain';
 $string['pluginadministration'] = 'Glosario kudeaketa';
 $string['pluginname'] = 'Glosarioa';
 $string['popupformat'] = 'Popup formatua';
@@ -300,6 +307,7 @@ $string['resetglossaries'] = 'Ezabatu sarrerak ondokotik';
 $string['resetglossariesall'] = 'Ezabatu glosario guztietako sarrerak';
 $string['rssarticles'] = 'RSS jario berrien kopurua';
 $string['rssarticles_help'] = 'Hemen RSS jarioan sartu beharreko glosario-sarrera kopurua aukera dezakezu. Oro har, 5 eta 20ren artean ezartzea egokia izan daiteke.';
+$string['rssfeed'] = 'RSS jarioa';
 $string['rsssubscriberss'] = 'Erakutsi RSS jarioa \'{$a}\' kontzeptuetarako';
 $string['rsstype'] = 'Jarduera honetarako RSS jarioa';
 $string['rsstype_help'] = 'Jarduera honetan RSS jarioak gaitzeko, aukeratu kontzeptuak egilea eta guzti edo egilerik gabe, jarioan gaineratzeko.';

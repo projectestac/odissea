@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'zh_cn', version '3.11'.
+ * Strings for component 'quiz_statistics', language 'zh_cn', version '4.1'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -101,7 +101,6 @@ $string['questiontype'] = '题目类型';
 $string['quizinformation'] = '测验信息';
 $string['quizname'] = '测验名';
 $string['quizoverallstatistics'] = '测验整体统计';
-$string['quizstatisticscleanuptask'] = '清除过去的的测验统计缓存记录';
 $string['quizstructureanalysis'] = '测验结构分析';
 $string['random_guess_score'] = '随机猜测得分';
 $string['rangebetween'] = '{$a->min} - {$a->max}';

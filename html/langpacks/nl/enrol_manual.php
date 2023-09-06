@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'nl', version '3.11'.
+ * Strings for component 'enrol_manual', language 'nl', version '4.1'.
  *
  * @package     enrol_manual
  * @category    string
@@ -57,6 +57,7 @@ $string['expirymessageenrollerbody'] = 'De aanmelding in cursus  \'{$a->course}\
 
 Ga naar  {$a->extendurl} om hun aanmelding te verlengen.';
 $string['expirymessageenrollersubject'] = 'Melding voor het vervallen van de aanmelding';
+$string['managemanualenrolements'] = 'Handmatige inschrijvingen beheren';
 $string['manual:config'] = 'Manueel aanmelden van gebruikers configureren';
 $string['manual:enrol'] = 'Gebruikers manueel aanmelden';
 $string['manual:manage'] = 'Beheer gebruikersaanmeldingen';

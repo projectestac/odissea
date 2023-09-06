@@ -2,7 +2,7 @@
 Feature: Course activity controls works as expected
   In order to manage my course's activities
   As a teacher
-  I need to edit, hide, show and indent activities inside course sections
+  I need to edit, hide and show activities inside course sections
 
   # The difference between these two scenario outlines is that one is with
   # JS enabled and the other one with JS disabled; we can not use Background
@@ -26,25 +26,18 @@ Feature: Course activity controls works as expected
     And the following "course enrolments" exist:
       | user | course | role |
       | teacher1 | C1 | editingteacher |
+    And the following "activities" exist:
+      | activity | course | section | name              |
+      | forum    | C1     | 1       | Test forum name 1 |
+      | forum    | C1     | 1       | Test forum name 2 |
     And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    When I follow <targetpage>
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
+    When I click on <targetpage> "link" in the "region-main" "region"
     And I add the "Recent activity" block
     And I open the action menu in "Recent activity" "block"
     And I click on "Delete Recent activity block" "link"
-    And I press "Yes"
+    And I click on "Delete" "button" in the "Delete block?" "dialogue"
     And <belowpage> "section" <should_see_other_sections> exist
-    And I add a "Forum" to section "1" and I fill the form with:
-      | Forum name | Test forum name 1 |
-      | Description | Test forum description 1 |
-    And I add a "Forum" to section "1" and I fill the form with:
-      | Forum name | Test forum name 2 |
-      | Description | Test forum description 2 |
-    And <belowpage> "section" <should_see_other_sections> exist
-    And I indent right "Test forum name 1" activity
-    And <belowpage> "section" <should_see_other_sections> exist
-    And I indent left "Test forum name 1" activity
     And <belowpage> "section" <should_see_other_sections> exist
     And I open "Test forum name 1" actions menu
     And I click on "Edit settings" "link" in the "Test forum name 1" activity
@@ -73,6 +66,8 @@ Feature: Course activity controls works as expected
     And I show section "1"
     And <belowpage> "section" <should_see_other_sections> exist
     And section "1" should be visible
+    And the following config values are set as admin:
+      | unaddableblocks | | theme_boost|
     And I add the "Section links" block
     And <belowpage> "section" <should_see_other_sections> exist
     And I should see "1 2 3 4 5" in the "Section links" "block"
@@ -81,14 +76,14 @@ Feature: Course activity controls works as expected
 
     Examples:
       | courseformat | coursedisplay | targetpage              | should_see_other_sections | should_see_other_sections_following_block_sections_links | belowpage                |
-      | topics       | 0             | "Course 1"              | should                    | should                                                   | "Topic 2"                |
+      | topics       | 0             | "General"               | should                    | should                                                   | "Topic 2"                |
       | topics       | 1             | "Topic 1"               | should not                | should not                                               | "Topic 2"                |
-      | topics       | 1             | "Course 1"              | should                    | should not                                               | "Topic 2"                |
-      | weeks        | 0             | "Course 1"              | should                    | should                                                   | "8 January - 14 January" |
+      | topics       | 1             | "General"               | should                    | should not                                               | "Topic 2"                |
+      | weeks        | 0             | "General"               | should                    | should                                                   | "8 January - 14 January" |
       | weeks        | 1             | "1 January - 7 January" | should not                | should not                                               | "8 January - 14 January" |
-      | weeks        | 1             | "Course 1"              | should                    | should not                                               | "8 January - 14 January" |
+      | weeks        | 1             | "General"               | should                    | should not                                               | "8 January - 14 January" |
 
-  Scenario Outline: General activities course controls using topics and weeks formats, and paged mode and not paged mode works as expected
+  Scenario Outline: General activities course controls using topics and weeks formats, and paged mode and not paged mode works as expected without javascript
     Given the following "users" exist:
       | username | firstname | lastname | email |
       | teacher1 | Teacher | 1 | teacher1@example.com |
@@ -99,22 +94,16 @@ Feature: Course activity controls works as expected
       | user | course | role |
       | teacher1 | C1 | editingteacher |
     And the following "activities" exist:
-      | activity  | name                   | intro                         | course | idnumber     | section |
-      | forum     | Test forum name 1      | Test forum description 1      | C1     | 0001         | 1       |
-      | forum     | Test forum name 2      | Test forum description 2      | C1     | 0002         | 1       |
+      | activity  | name                   | course | idnumber     | section |
+      | forum     | Test forum name 1      | C1     | 0001         | 1       |
+      | forum     | Test forum name 2      | C1     | 0002         | 1       |
     And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    When I follow <targetpage>
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
+    When I click on <targetpage> "link" in the "region-main" "region"
     And I add the "Recent activity" block
     And I open the action menu in "Recent activity" "block"
     And I click on "Delete Recent activity block" "link"
     And I press "Yes"
-    And <belowpage> "section" <should_see_other_sections> exist
-    And <belowpage> "section" <should_see_other_sections> exist
-    And I indent right "Test forum name 1" activity
-    And <belowpage> "section" <should_see_other_sections> exist
-    And I indent left "Test forum name 1" activity
     And <belowpage> "section" <should_see_other_sections> exist
     And I click on "Edit settings" "link" in the "Test forum name 1" activity
     And I should see "Updating Forum"
@@ -138,6 +127,8 @@ Feature: Course activity controls works as expected
     And I show section "1"
     And <belowpage> "section" <should_see_other_sections> exist
     And section "1" should be visible
+    And the following config values are set as admin:
+      | unaddableblocks | | theme_boost|
     And I add the "Section links" block
     And <belowpage> "section" <should_see_other_sections> exist
     And I should see "1 2 3 4 5" in the "Section links" "block"
@@ -146,9 +137,68 @@ Feature: Course activity controls works as expected
 
     Examples:
       | courseformat | coursedisplay | targetpage              | should_see_other_sections | should_see_other_sections_following_block_sections_links | belowpage                |
-      | topics       | 0             | "Course 1"              | should                    | should                                                   | "Topic 2"                |
+      | topics       | 0             | "General"               | should                    | should                                                   | "Topic 2"                |
       | topics       | 1             | "Topic 1"               | should not                | should not                                               | "Topic 2"                |
-      | topics       | 1             | "Course 1"              | should                    | should not                                               | "Topic 2"                |
-      | weeks        | 0             | "Course 1"              | should                    | should                                                   | "8 January - 14 January" |
+      | topics       | 1             | "General"               | should                    | should not                                               | "Topic 2"                |
+      | weeks        | 0             | "General"               | should                    | should                                                   | "8 January - 14 January" |
       | weeks        | 1             | "1 January - 7 January" | should not                | should not                                               | "8 January - 14 January" |
-      | weeks        | 1             | "Course 1"              | should                    | should not                                               | "8 January - 14 January" |
+      | weeks        | 1             | "General"               | should                    | should not                                               | "8 January - 14 January" |
+
+  @javascript
+  Scenario Outline: Indentation should allow one level only
+    Given the following "users" exist:
+      | username | firstname | lastname | email                |
+      | teacher1 | Teacher   | 1        | teacher1@example.com |
+    And the following "courses" exist:
+      | fullname | shortname | format         | coursedisplay   | numsections | startdate |
+      | Course 1 | C1        | <courseformat> | <coursedisplay> | 5           | 0         |
+    And the following "course enrolments" exist:
+      | user     | course | role           |
+      | teacher1 | C1     | editingteacher |
+    And the following "activities" exist:
+      | activity | name               | intro                     | course | idnumber |
+      | forum    | Test forum name    | Test forum description    | C1     | forum1   |
+    When I log in as "teacher1"
+    And I am on "Course 1" course homepage with editing mode on
+    And I open "Test forum name" actions menu
+    Then "Move right" "link" should be visible
+    And "Move left" "link" should not be visible
+    And I click on "Move right" "link" in the "Test forum name" activity
+    And I open "Test forum name" actions menu
+    And "Move right" "link" should not be visible
+    And "Move left" "link" should be visible
+    And I click on "Move left" "link" in the "Test forum name" activity
+    And I open "Test forum name" actions menu
+    And "Move right" "link" should be visible
+    And "Move left" "link" should not be visible
+
+    Examples:
+      | courseformat |
+      | topics       |
+      | weeks        |
+
+  @javascript
+  Scenario Outline: Admins could disable indentation
+    Given the following "courses" exist:
+      | fullname | shortname | format | coursedisplay | numsections | startdate |
+      | Course 1 | C1 | <courseformat> | <coursedisplay> | 5 | 0 |
+    And the following "activities" exist:
+      | activity | name               | intro                     | course | idnumber |
+      | forum    | Test forum name    | Test forum description    | C1     | forum1   |
+    And I log in as "admin"
+    And I am on "Course 1" course homepage with editing mode on
+    And I open "Test forum name" actions menu
+    And "Move right" "link" should be visible
+    And "Move left" "link" should not be visible
+    And I click on "Move right" "link" in the "Test forum name" activity
+    When the following config values are set as admin:
+      | indentation | 0 | format_<courseformat> |
+    And I am on "Course 1" course homepage with editing mode on
+    And I open "Test forum name" actions menu
+    Then "Move right" "link" should not exist
+    And "Move left" "link" should not exist
+
+    Examples:
+      | courseformat |
+      | topics       |
+      | weeks        |

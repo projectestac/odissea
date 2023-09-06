@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'pt', version '3.11'.
+ * Strings for component 'competency', language 'pt', version '4.1'.
  *
  * @package     competency
  * @category    string
@@ -166,7 +166,7 @@ $string['privacy:path:relatedtome'] = 'Relacionada comigo';
 $string['privacy:path:userevidence'] = 'Comprovativo de aprendizagem anterior';
 $string['pushcourseratingstouserplans'] = 'Utilizar avaliações da disciplina nos planos individuais de aprendizagem';
 $string['pushcourseratingstouserplans_desc'] = 'Valor predefinido para a configuração da disciplina, para atualizar planos de aprendizagem individuais, sempre que as competências da disciplina são avaliadas.';
-$string['syncplanscohorts'] = 'Sincronizar planos a partir dos modelos de planos de aprendizagem dos grupos globais';
+$string['syncplanscohorts'] = 'Sincronizar planos a partir dos modelos de planos de aprendizagem dos Grupos globais';
 $string['taxonomy_behaviour'] = 'Comportamento';
 $string['taxonomy_competency'] = 'Competência';
 $string['taxonomy_concept'] = 'Conceito';

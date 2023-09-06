@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapfill', language 'el', version '3.11'.
+ * Strings for component 'qtype_gapfill', language 'el', version '4.1'.
  *
  * @package     qtype_gapfill
  * @category    string
@@ -34,4 +34,5 @@ $string['letterhints'] = 'Υποδείξεις γραμμάτων';
 $string['moreoptions'] = 'Περισσότερες επιλογές.';
 $string['or'] = 'ή';
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
+$string['pluginname_link'] = 'question/type/gapfill';
 $string['questiontext'] = 'Κείμενο ερώτησης';

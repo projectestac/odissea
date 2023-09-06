@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'el', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'el', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = 'Μία ή πολλές απαντήσεις;';
-$string['answerhowmany_desc'] = 'Εάν η προεπιλογή πρέπει να είναι μία απόκριση (δηλ. κουμπί μοναδικής επιλογής) ή πολλές αποκρίσεις (δηλ. πλαίσια ελέγχου).';
+$string['answerhowmany_desc'] = 'Εάν η προεπιλογή πρέπει να είναι μία απόκριση (δηλ. κουμπί μοναδικής επιλογής) ή πολλές αποκρίσεις (δηλ. πλαίσια επιλογής).';
 $string['answernumbering'] = 'Να αριθμούνται οι επιλογές;';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingABCD'] = 'Α., B., C., ...';
@@ -63,7 +63,7 @@ $string['pleaseselectananswer'] = 'Παρακαλούμε επιλέξτε μί�
 $string['pleaseselectatleastoneanswer'] = 'Επιλέξτε τουλάχιστον μία απάντηση.';
 $string['pluginname'] = 'Πολλαπλής Επιλογής';
 $string['pluginname_help'] = 'Σε απάντηση μιας ερώτησης (η οποία μπορεί να περιλαμβάνει μια εικόνα) ο ερωτώμενος επιλέγει ανάμεσα σε κάποιες απαντήσεις (που δίνονται). Μια ερώτηση πολλαπλών επιλογών μπορεί να έχει μία ή περισσότερες σωστές απαντήσεις.';
-$string['pluginname_link'] = 'ερώτηση/τύπος/πολλαπλήεπιλογή';
+$string['pluginname_link'] = '';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης Πολλαπλής Επιλογής';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης Πολλαπλής Επιλογής';
 $string['pluginnamesummary'] = 'Επιτρέπει την επιλογή μιας ή περισσοτέρων αποκρίσεων από μια προ-καθορισμένη λίστα.';

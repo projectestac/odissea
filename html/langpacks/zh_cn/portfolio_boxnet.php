@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'zh_cn', version '3.11'.
+ * Strings for component 'portfolio_boxnet', language 'zh_cn', version '4.1'.
  *
  * @package     portfolio_boxnet
  * @category    string

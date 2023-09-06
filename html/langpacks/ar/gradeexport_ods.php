@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_ods', language 'ar', version '3.11'.
+ * Strings for component 'gradeexport_ods', language 'ar', version '4.1'.
  *
  * @package     gradeexport_ods
  * @category    string
@@ -30,4 +30,4 @@ $string['ods:publish'] = 'نشر تقديرات OpenDocument المصدرة';
 $string['ods:view'] = 'استعمال تصدير التقديرات لـ OpenDocument';
 $string['pluginname'] = 'جدول OpenDocument';
 $string['privacy:metadata'] = 'إن ملحق تصدير التقديرات بشكل جداول OpenDocument لا يخزن أي بيانات شخصية.';
-$string['timeexported'] = 'آخر ما تم تنزيله من هذا المقرر الدراسي';
+$string['timeexported'] = 'آخر ما تم تنزيله من هذا المساق';

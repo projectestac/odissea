@@ -27,7 +27,7 @@ Feature: An admin or teacher sets the post threshold for blocking and warning
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject two |
       | Message | Test post message two |
-    And I should see "Add a new discussion topic"
+    And I should see "Add discussion topic"
     # Verify that when navigated to one of the topics and then click reply the warning notification is shown.
     And I click on "Test post subject two" "link"
     And I click on "Reply" "link"
@@ -36,17 +36,16 @@ Feature: An admin or teacher sets the post threshold for blocking and warning
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject three |
       | Message | Test post message three |
-    Then I should not see "Add a new discussion topic"
+    Then I should not see "Add discussion topic"
     # Verify that no reply link available in the posts.
     And I click on "Test post subject three" "link"
     And I should not see "Reply"
     And I am on the "Test forum name" "forum activity" page
     And I click on "Test post subject two" "link"
     And I should not see "Reply"
-    And I log out
     # Verify that student2 is not affected by the posts made by student1
     And I am on the "Test forum name" "forum activity" page logged in as student2
-    And I should see "Add a new discussion topic"
+    And I should see "Add discussion topic"
 
   @javascript
   Scenario: A student should see warning when the post is about to reach threshold when experimental nested discussion view is set
@@ -57,7 +56,7 @@ Feature: An admin or teacher sets the post threshold for blocking and warning
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject two |
       | Message | Test post message two |
-    And I should see "Add a new discussion topic"
+    And I should see "Add discussion topic"
     #Now verify that when "Use experimental nested discussion view" is set, the user should see same warning in the Reply.
     And I follow "Preferences" in the user menu
     And I click on "Forum preferences" "link"
@@ -81,7 +80,7 @@ Feature: An admin or teacher sets the post threshold for blocking and warning
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject two |
       | Message | Test post message two |
-    And I should see "Add a new discussion topic"
+    And I should see "Add discussion topic"
     # Verify that when navigated to one of the topics and then click reply the warning notification is shown.
     And I click on "Test post subject two" "link"
     And I click on "Reply" "link"
@@ -91,7 +90,7 @@ Feature: An admin or teacher sets the post threshold for blocking and warning
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject three |
       | Message | Test post message three |
-    Then I should see "Add a new discussion topic"
+    Then I should see "Add discussion topic"
     # Verify that reply link is available in the posts.
     And I click on "Test post subject three" "link"
     And I should see "Reply"

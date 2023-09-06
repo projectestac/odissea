@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'it', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'it', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = 'Genera';
 $string['newsetwildcardvalues'] = 'nuovo set di valori Jolly';
 $string['pluginname'] = 'Calcolata semplice';
 $string['pluginname_help'] = 'Una domanda Calcolata semplice consente la creazione di domande numeriche sostituendo caratteri jolly con valori determinati al momento dell\'esecuzione del quiz. Le domande calcolate semplici offrono le principali funzionalità delle domande Calcolate ma con una interfaccia di creazione più semplice.';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = 'Aggiungi domanda Calcolata semplice';
 $string['pluginnameediting'] = 'Modifica domanda Calcolata semplice';
 $string['pluginnamesummary'] = 'È una versione semplificata della Domanda Calcolata. Sono simili alle domande numeriche ma i numeri sono scelti casualmente da un insieme durante lo svolgimento del quiz.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ko', version '3.11'.
+ * Strings for component 'auth', language 'ko', version '4.1'.
  *
  * @package     auth
  * @category    string
@@ -143,6 +143,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'CAPTCHA는 자동화된 프로그램의 남용을 방지하기 위한 것입니다. 지시에 따라 자신이 사람인지 확인합니다. 이것은 확인할 상자, 입력해야 하는 이미지에 표시된 문자 또는 선택할 이미지 세트일 수 있습니다.
 
 이미지가 무엇인지 잘 모르겠으면 다른 CAPTCHA나 오디오 CAPTCHA를 사용해 보십시오.';
+$string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = '보안 질문';
 $string['selfregistration'] = '자체 등록';
 $string['selfregistration_help'] = '이메일 기잔 자체 인증과 같은 인증 플러그인이 선택되면 잠재적인 사용자들이 자신을 등록하고 계정을 만들 수 있게 합니다. 이 경우 스팸을 보내는 사람들이 계정을 만들어 포럼 게시글이나 블로그 게시글을 스팸 목적으로 사용할 수 있습니다. 이러한 위험을 피하기 위해서는 자체 등록을 비활성화하거나 <em>허용된 이메일 도메인</em> 설정으로 자체등록을 제한해야 합니다.';

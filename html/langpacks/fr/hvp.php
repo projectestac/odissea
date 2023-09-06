@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'fr', version '3.11'.
+ * Strings for component 'hvp', language 'fr', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -275,6 +275,7 @@ En plus d\'être un outil de création pour du contenu riche, H5P vous permet d\
 Les interactions et les scores des utilisateurs sont suivis en utilisant xAPI et sont accessibles dans le carnet de note de Moodle. Veuillez noter qu\'il est actuellement possible à des gens ayant des talents de programmation de tricher avec les interactions H5P et d\'obtenir les scores maximum sans connaître les réponses correctes. H5P ne doit pas être utilisé pour des examens.
 
 Vous ajoutez un contenu interactif H5P en créant votre propre contenu grâce aux outils de création intégrés ou en important des fichiers H5P que vous aurez trouvés sur d\'autres sites H5P.';
+$string['modulename_link'] = 'https://h5p.org/moodle-more-help';
 $string['modulenameplural'] = 'Contenu interactif';
 $string['next'] = 'Suivant';
 $string['nextpage'] = 'Page suivante';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'it', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'it', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptrisk'] = 'Sono consapevole che disabilitare la verifica email rappresenta un problema di sicurezza.';
+$string['acceptrisk_help'] = 'Disattivare la verifica dell\'e-mail può consentire a un utente di autenticarsi come un altro utente.';
 $string['authconfirm'] = 'L\'azione garantirà all\'account autenticato un accesso permanente a Moodle via API. L\'uso deve essere inteso come account di sistema per la gestione di file il cui proprietario è Moodle.';
 $string['authconnected'] = 'L\'account di sistema è ora collegato per l\'accesso offline.';
 $string['authnotconnected'] = 'L\'account di sistema non è stato collegato per l\'accesso offline.';
@@ -65,6 +66,7 @@ $string['google_service'] = 'Google';
 $string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Domini di autenticazione';
 $string['issueralloweddomains_help'] = 'Un elenco separato da virgola contenete i domini dai quali consentire l\'autenticazione.';
+$string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
 $string['issuerbaseurl'] = 'URL base del del servizio';
 $string['issuerbaseurl_help'] = 'URL base da utilizzare per accedere del servizio.';
 $string['issuerclientid'] = 'Client ID';

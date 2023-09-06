@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'ja', version '3.11'.
+ * Strings for component 'datafield_textarea', language 'ja', version '4.1'.
  *
  * @package     datafield_textarea
  * @category    string
@@ -30,3 +30,6 @@ $string['maxbytes'] = '最大埋め込みファイルサイズ (バイト)';
 $string['maxbytes_desc'] = 'ゼロを設定した場合、デフォルトで無制限となります。';
 $string['pluginname'] = 'テキストエリア';
 $string['privacy:metadata'] = 'テキストエリアフィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['sample'] = '<p>これはテキストエリアです。ユーザは複数行の長文テキストを入力できます。</p>
+<p>あなたはテキストエリアの大きさを行および列で指定できます。</p>
+<p>テキストエリア内のテキストはフォーマットできます。例えば<strong>太字</strong>、<a href="#">リンク</a>またはイメージです。</p>';

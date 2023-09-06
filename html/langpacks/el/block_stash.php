@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_stash', language 'el', version '3.11'.
+ * Strings for component 'block_stash', language 'el', version '4.1'.
  *
  * @package     block_stash
  * @category    string
@@ -44,7 +44,7 @@ $string['dropname_help'] = 'Το όνομα της τοποθεσίας είνα
 $string['drops'] = 'Τοποθεσίες';
 $string['dropslist'] = 'Λίστα με τοποθεσίες';
 $string['dropsnippet'] = 'Απόσπασμα για το «{$a}»';
-$string['dropsummary'] = 'Σύνοψη τοποθεσίας';
+$string['dropsummary'] = 'Περίληψη τοποθεσίας';
 $string['edit'] = 'Επεξεργασία';
 $string['editdrop'] = 'Επεξεργασία τοποθεσίας «{$a}»';
 $string['edititem'] = 'Επεξεργασία στοιχείου «{$a}»';

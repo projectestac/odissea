@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_password', language 'ar', version '3.11'.
+ * Strings for component 'availability_password', language 'ar', version '4.1'.
  *
  * @package     availability_password
  * @category    string
@@ -33,8 +33,8 @@ $string['password:addinstance'] = 'إضافة شروط كلمة المرور إ�
 $string['passwordintro'] = 'الوصول إلى <em>{$a}</em> محمي بكلمة مرور.<br />إذا كنت لا تعرف كلمة المرور، يرجى سؤال معلمك عنها.';
 $string['passwordprotection'] = 'الحماية بكلمة مرور';
 $string['pluginname'] = 'التقييد بكلمة مرور';
-$string['privacy:metadata:availability_password_grant:cmid'] = 'مُعرَّف وحدة المقرر الدراسي الذي تم فيه إدخال كلمة المرور';
-$string['privacy:metadata:availability_password_grant:courseid'] = 'مُعرَّف المقرر الدراسي الذي تم فيه إدخال كلمة المرور';
+$string['privacy:metadata:availability_password_grant:cmid'] = 'مُعرَّف وحدة المساق الذي تم فيه إدخال كلمة المرور';
+$string['privacy:metadata:availability_password_grant:courseid'] = 'مُعرَّف المساق الذي تم فيه إدخال كلمة المرور';
 $string['privacy:metadata:availability_password_grant:password'] = 'كلمة المرور التي تم إدخالها';
 $string['privacy:metadata:availability_password_grant:userid'] = 'مُعرَّف المستخدم الذي أدخل كلمة المرور';
 $string['rememberpassword'] = 'تذكَّر كلمة المرور المُدخلة';

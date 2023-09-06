@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'ca', version '3.11'.
+ * Strings for component 'license', language 'ca', version '4.1'.
  *
  * @package     license
  * @category    string
@@ -33,4 +33,4 @@ $string['cc-nc-sa'] = 'Creative Commons - NoComercial - CompartirIgual';
 $string['cc-nd'] = 'Creative Commons - SenseObraDerivada';
 $string['cc-sa'] = 'Creative Commons - CompartirIgual';
 $string['public'] = 'Domini Públic';
-$string['unknown'] = 'Altre';
+$string['unknown'] = 'No s\'ha especificat cap llicència';

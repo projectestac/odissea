@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ja', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'ja', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -40,6 +40,7 @@ $string['clivalidationerror'] = '確認エラー:';
 $string['csvdelimiter'] = 'CSVセパレータ';
 $string['defaultvalues'] = 'デフォルト値';
 $string['deleteerrors'] = '削除エラー';
+$string['duplicateemail'] = 'メール {$a} を持つ複数のユーザを検出しました。';
 $string['encoding'] = 'エンコーディング';
 $string['errormnetadd'] = 'リモートユーザを追加できません。';
 $string['errorprefix'] = 'エラー:';
@@ -47,19 +48,20 @@ $string['errors'] = 'エラー';
 $string['examplecsv'] = 'テキストファイル例';
 $string['examplecsv_help'] = 'テキストファイル例を使用するにはダウンロードしてテキストまたはスプレッドシートエディタで開いてください。先頭行は変更しないままにしてください。そして、次の行 (レコード) から編集してあなたのユーザデータ、また、必要に応じてさらに行を追加してください。ファイルをCSVとして保存してアップロードしてください。
 
-ユーザデータをプレビュしてユーザアカウント作成前に処理をキャンセルできるため、あなたはテキストファイル例をテスト用にも使用できます。';
+ユーザデータをプレビューしてユーザアカウント作成前に処理をキャンセルできるため、あなたはテキストファイル例をテスト用にも使用できます。';
 $string['infoprefix'] = '情報:';
 $string['invalidtheme'] = 'テーマ「 {$a} 」はインストールされていないため無視されます。';
 $string['invalidupdatetype'] = '選択されたアップロードタイプでこのオプションは選択できません。';
 $string['invaliduserdata'] = 'ユーザ {$a} に無効なデータが検出されたため自動的に削除されました。';
 $string['linex'] = '行 {$a}';
+$string['matchemail'] = 'メールアドレスでの一致';
 $string['nochanges'] = '変更なし';
 $string['notheme'] = 'このユーザに定義されたテーマはありません。';
 $string['pluginname'] = 'ユーザアップロード';
 $string['privacy:metadata'] = 'ユーザアップロードプラグインはいかなる個人データも保存しません。';
 $string['renameerrors'] = 'リネームエラー';
 $string['requiredtemplate'] = '必須項目です。あなたはここでテンプレート構文 (%l = 姓、%f = 名、%u = ユーザ名) を使用できます。詳細および例に関してヘルプをご覧ください。';
-$string['rowpreviewnum'] = 'プレビュ行';
+$string['rowpreviewnum'] = 'プレビュー行';
 $string['unassignedsysrole'] = '割り当て解除済みシステムロール {$a}';
 $string['uploadpicture_baduserfield'] = '指定されたユーザ属性は有効ではありません。再度お試しください。';
 $string['uploadpicture_cannotmovezip'] = '一時ディレクトリにZIPファイルを移動できません。';
@@ -82,7 +84,8 @@ $string['uploadusers_help'] = 'テキストファイルでユーザをアップ�
 * それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
 * 先頭レコードにはファイルの残りのフォーマットを定義したフィールド名一覧を含みます。
 * 必須フィールド名は次のとおりです: username, password, firstname, lastname, email';
-$string['uploaduserspreview'] = 'アップロードユーザプレビュ';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
+$string['uploaduserspreview'] = 'アップロードユーザプレビュー';
 $string['uploadusersresult'] = 'アップロードユーザ結果';
 $string['useraccountupdated'] = 'ユーザが更新されました。';
 $string['useraccountuptodate'] = '最新ユーザ';

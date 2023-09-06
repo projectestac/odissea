@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ca', version '3.11'.
+ * Strings for component 'qtype_ddwtos', language 'ca', version '4.1'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -33,6 +33,7 @@ $string['infinite'] = 'Sense límits';
 $string['pleaseputananswerineachbox'] = 'Poseu una resposta a cada caixa.';
 $string['pluginname'] = 'Arrossegar i deixar anar dins d\'un text';
 $string['pluginname_help'] = 'Les preguntes d\'arrossegar i deixar anar dins de text demanen que qui respon arrossegui paraules o frases fins a la seva ubicació correcta en els espais buits del text de la pregunta.  [[1]], [[2]], [[3]], ...  s\'usen com marcadors de posició en el text de la pregunta, amb les respostes correctes especificades com a opcions de resposta 1, 2, 3, ..., respectivament. Les respostes triades es poden agrupar de manera que totes les respostes d\'un grup particular tinguin el mateix color que els espais buits del text de la pregunta. Les opcions de resposta marcades com a il·limitades es poden usar en més d\'un espai buit.';
+$string['pluginname_link'] = 'question/type/ddwtos';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'arrossegar i deixar anar';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'arrossegar i deixar anar';
 $string['pluginnamesummary'] = 'Les paraules que falten en el text de la pregunta s\'emplenen emprant arrossegar i deixar anar.';

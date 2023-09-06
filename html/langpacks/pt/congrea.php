@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'congrea', language 'pt', version '3.11'.
+ * Strings for component 'congrea', language 'pt', version '4.1'.
  *
  * @package     congrea
  * @category    string
@@ -60,7 +60,7 @@ $string['closebeforeopen'] = 'Não foi possível guardar o Congrea. A data de fe
 $string['closenotset'] = 'Não foi indicada uma hora de fecho.';
 $string['closesameopen'] = 'A hora de inicio e de fecho da sessão não podem ser iguais';
 $string['closetime'] = 'Sessões fechadas';
-$string['colorpicker'] = 'Seletor de cores personalizadas';
+$string['colorpicker'] = 'Seletor de cor personalizada';
 $string['colorpickerd'] = 'Escolha a cor personalizada';
 $string['configuredheading'] = '<h4>Congrea está configurado. Pode começar a usá-lo agora.</h4>';
 $string['conflicts'] = 'Existem algumas sessões em conflito na lista das próximas sessões.';

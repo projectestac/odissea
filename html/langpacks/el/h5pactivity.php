@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'el', version '3.11'.
+ * Strings for component 'h5pactivity', language 'el', version '4.1'.
  *
  * @package     h5pactivity
  * @category    string
@@ -74,6 +74,7 @@ $string['grade_grademethod_help'] = 'Κατά τη χρήση ταξινόμησ
 * Η πρώτη προσπάθεια (όλες οι άλλες προσπάθειες αγνοούνται)
 * Η τελευταία προσπάθεια (όλες οι άλλες προσπάθειες αγνοούνται)
 * Καμία προσπάθεια βαθμολόγησης (απενεργοποίηση υπολογισμού βαθμολογίας)';
+$string['grade_h5p'] = 'Βαθμός: {$a}';
 $string['grade_highest_attempt'] = 'Ο μεγαλύτερος βαθμός';
 $string['grade_last_attempt'] = 'Η τελευταία προσπάθεια';
 $string['grade_manual'] = 'Να μην υπολογιστεί βαθμός';
@@ -91,9 +92,10 @@ $string['modulename'] = 'H5P';
 $string['modulename_help'] = 'H5P είναι μια συντομογραφία για τα πακέτα HTML5 (HTML5 Package) - διαδραστικό περιεχόμενο, όπως παρουσιάσεις, βίντεο και άλλα πολυμέσα, ερωτήσεις, κουίζ, παιχνίδια κ.α.. Η δραστηριότητα H5P επιτρέπει σε πακέτα H5P να ανεβαίνουν/μεταφορτώνονται και να προστίθενται σε ένα μάθημα.
 
 Οποιαδήποτε προσπάθεια ερώτησης βαθμολογείται αυτόματα και ο βαθμός καταγράφεται στο βαθμολόγιο.';
-$string['modulename_link'] = 'άρθρωμα/δραστηριότηταh5p/εμφάνιση';
+$string['modulename_link'] = '';
 $string['modulenameplural'] = 'H5P';
 $string['myattempts'] = 'Οι προσπάθειές μου';
+$string['newsubmissions'] = 'Το H5P υποβλήθηκε';
 $string['no_compatible_track'] = 'Αυτή η αλληλεπίδραση ({$a}) δεν παρέχει πληροφορίες παρακολούθησης ή η παρακολούθηση που παρέχεται δεν είναι συμβατή με την τρέχουσα έκδοση δραστηριότητας.';
 $string['noparticipants'] = 'Δεν υπάρχουν συμμετέχοντες για εμφάνιση';
 $string['opencontentbank'] = '<a href="{$a}" target="_blank">Πρόσβαση στο αρχείο H5P στην τράπεζα περιεχομένου</a> (ανοίγει σε νέο παράθυρο).';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'pt', version '3.11'.
+ * Strings for component 'availability', language 'pt', version '4.1'.
  *
  * @package     availability
  * @category    string
@@ -33,8 +33,8 @@ $string['condition_group_info'] = 'Adicionar conjunto de condições de acesso c
 $string['enableavailability'] = 'Ativar condições de acesso';
 $string['enableavailability_desc'] = 'Se ativar esta opção, poderá definir em cada secção/atividade/recurso as condições necessárias (baseadas na data, notas, conclusão de outras atividades, etc.) para um aluno poder aceder à atividade/recurso.';
 $string['error_list_nochildren'] = 'Os conjuntos de condições de acesso devem conter pelo menos uma condição.';
-$string['hidden_all'] = 'Completamente oculta se o utilizador não cumprir as condições';
-$string['hidden_individual'] = 'Completamente oculta se o utilizador não cumprir esta condição';
+$string['hidden_all'] = 'Completamente oculta se o aluno não cumprir as condições';
+$string['hidden_individual'] = 'Completamente oculta se o aluno não cumprir esta condição';
 $string['hidden_marker'] = '(oculto)';
 $string['hide_verb'] = 'Clique para ocultar';
 $string['invalid'] = 'Por favor, configure';
@@ -65,7 +65,8 @@ $string['privacy:metadata'] = 'O subsistema Condições de acesso não armazena 
 $string['restrictaccess'] = 'Condições de acesso';
 $string['restrictbygroup'] = 'Adicionar condição de acesso de grupos/agrupamentos';
 $string['setheading'] = '{$a->number} conjunto(s) de {$a->count} condição(ões)';
-$string['show_verb'] = 'Clique para mostrar em cor cinza';
-$string['shown_all'] = 'Mostrar em cor cinza se o utilizador não cumprir as condições';
-$string['shown_individual'] = 'Mostrar em cor cinza se o utilizador não cumprir esta condição';
+$string['show_verb'] = 'Clique para mostrar';
+$string['showmore'] = 'Mostrar mais';
+$string['shown_all'] = 'Mostrar se o aluno não cumprir as condições';
+$string['shown_individual'] = 'Mostrar se o aluno não cumprir esta condição';
 $string['unknowncondition'] = 'Condição desconhecida (módulo de condição eliminado)';

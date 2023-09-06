@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'fr', version '3.11'.
+ * Strings for component 'editor_tinymce', language 'fr', version '4.1'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -601,7 +601,7 @@ $string['paste:selectall_desc'] = 'Tout sélectionner';
 $string['paste_dlg:text_linebreaks'] = 'Conserver les retours à la ligne';
 $string['paste_dlg:text_title'] = 'Utilisez CTRL+V pour coller le texte dans la fenêtre.';
 $string['paste_dlg:word_title'] = 'Utilisez CTRL+V pour coller le texte dans la fenêtre.';
-$string['pluginname'] = 'Éditeur TinyMCE';
+$string['pluginname'] = 'Éditeur TinyMCE (obsolète)';
 $string['preview:preview_desc'] = 'Prévisualiser';
 $string['print:print_desc'] = 'Imprimer';
 $string['privacy:metadata'] = 'Le plugin Éditeur TinyMCE n\'enregistre aucune donnée personnelle.';

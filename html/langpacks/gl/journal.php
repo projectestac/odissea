@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'gl', version '3.11'.
+ * Strings for component 'journal', language 'gl', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -43,6 +43,7 @@ $string['journalname'] = 'Nome do diario';
 $string['journalquestion'] = 'Pregunta do diario';
 $string['mailsubject'] = 'Comentario do diario';
 $string['modulename'] = 'Diario';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = 'Diarios';
 $string['newjournalentries'] = 'Novas entradas do diario';
 $string['noentry'] = 'Ningunha entrada';

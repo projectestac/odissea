@@ -1194,7 +1194,7 @@ function assign_legacy_capabilities($capability, $legacyperms) {
         }
 
         if (!array_key_exists($type, $archetypes)) {
-            print_error('invalidlegacy', '', '', $type);
+            throw new \moodle_exception('invalidlegacy', '', '', $type);
         }
 
         if ($roles = get_archetype_roles($type)) {
@@ -2244,7 +2244,7 @@ function reset_role_capabilities($roleid) {
  * the database.
  *
  * @access private
- * @param string $component examples: 'moodle', 'mod_forum', 'block_quiz_results'
+ * @param string $component examples: 'moodle', 'mod_forum', 'block_activity_results'
  * @return boolean true if success, exception in case of any problems
  */
 function update_capabilities($component = 'moodle') {
@@ -2366,7 +2366,7 @@ function update_capabilities($component = 'moodle') {
  * NOTE: this function is called from lib/db/upgrade.php
  *
  * @access private
- * @param string $component examples: 'moodle', 'mod_forum', 'block_quiz_results'
+ * @param string $component examples: 'moodle', 'mod_forum', 'block_activity_results'
  * @param array $newcapdef array of the new capability definitions that will be
  *                     compared with the cached capabilities
  * @return int number of deprecated capabilities that have been removed
@@ -2385,7 +2385,8 @@ function capabilities_cleanup($component, $newcapdef = null) {
                 if ($roles = get_roles_with_capability($cachedcap->name)) {
                     foreach ($roles as $role) {
                         if (!unassign_capability($cachedcap->name, $role->id)) {
-                            print_error('cannotunassigncap', 'error', '', (object)array('cap'=>$cachedcap->name, 'role'=>$role->name));
+                            throw new \moodle_exception('cannotunassigncap', 'error', '',
+                                (object)array('cap' => $cachedcap->name, 'role' => $role->name));
                         }
                     }
                 }
@@ -2524,11 +2525,74 @@ function is_inside_frontpage(context $context) {
 function get_capability_info($capabilityname) {
     $caps = get_all_capabilities();
 
+    // Check for deprecated capability.
+    if ($deprecatedinfo = get_deprecated_capability_info($capabilityname)) {
+        if (!empty($deprecatedinfo['replacement'])) {
+            // Let's try again with this capability if it exists.
+            if (isset($caps[$deprecatedinfo['replacement']])) {
+                $capabilityname = $deprecatedinfo['replacement'];
+            } else {
+                debugging("Capability '{$capabilityname}' was supposed to be replaced with ".
+                    "'{$deprecatedinfo['replacement']}', which does not exist !");
+            }
+        }
+        $fullmessage = $deprecatedinfo['fullmessage'];
+        debugging($fullmessage, DEBUG_DEVELOPER);
+    }
     if (!isset($caps[$capabilityname])) {
         return null;
     }
 
     return (object) $caps[$capabilityname];
+}
+
+/**
+ * Returns deprecation info for this particular capabilty (cached)
+ *
+ * Do not use this function except in the get_capability_info
+ *
+ * @param string $capabilityname
+ * @return stdClass|null with deprecation message and potential replacement if not null
+ */
+function get_deprecated_capability_info($capabilityname) {
+    $cache = cache::make('core', 'capabilities');
+    $alldeprecatedcaps = $cache->get('deprecated_capabilities');
+    if ($alldeprecatedcaps === false) {
+        // Look for deprecated capabilities in each component.
+        $allcaps = get_all_capabilities();
+        $components = [];
+        $alldeprecatedcaps = [];
+        foreach ($allcaps as $cap) {
+            if (!in_array($cap['component'], $components)) {
+                $components[] = $cap['component'];
+                $defpath = core_component::get_component_directory($cap['component']).'/db/access.php';
+                if (file_exists($defpath)) {
+                    $deprecatedcapabilities = [];
+                    require($defpath);
+                    if (!empty($deprecatedcapabilities)) {
+                        foreach ($deprecatedcapabilities as $cname => $cdef) {
+                            $alldeprecatedcaps[$cname] = $cdef;
+                        }
+                    }
+                }
+            }
+        }
+        $cache->set('deprecated_capabilities', $alldeprecatedcaps);
+    }
+
+    if (!isset($alldeprecatedcaps[$capabilityname])) {
+        return null;
+    }
+    $deprecatedinfo = $alldeprecatedcaps[$capabilityname];
+    $deprecatedinfo['fullmessage'] = "The capability '{$capabilityname}' is deprecated.";
+    if (!empty($deprecatedinfo['message'])) {
+        $deprecatedinfo['fullmessage'] .= $deprecatedinfo['message'];
+    }
+    if (!empty($deprecatedinfo['replacement'])) {
+        $deprecatedinfo['fullmessage'] .=
+            "It will be replaced by '{$deprecatedinfo['replacement']}'.";
+    }
+    return $deprecatedinfo;
 }
 
 /**
@@ -2580,7 +2644,7 @@ function get_capability_string($capabilityname) {
     }
 
     $dir = core_component::get_component_directory($component);
-    if (!file_exists($dir)) {
+    if (!isset($dir) || !file_exists($dir)) {
         // plugin broken or does not exist, do not bother with printing of debug message
         return $capabilityname.' ???';
     }
@@ -2604,7 +2668,7 @@ function get_component_string($component, $contextlevel) {
 
     list($type, $name) = core_component::normalize_component($component);
     $dir = core_component::get_plugin_directory($type, $name);
-    if (!file_exists($dir)) {
+    if (!isset($dir) || !file_exists($dir)) {
         // plugin not installed, bad luck, there is no way to find the name
         return $component . ' ???';
     }
@@ -4102,6 +4166,122 @@ function count_role_users($roleid, context $context, $parent = false) {
 }
 
 /**
+ * This function gets the list of course and course category contexts that this user has a particular capability in.
+ *
+ * It is now reasonably efficient, but bear in mind that if there are users who have the capability
+ * everywhere, it may return an array of all contexts.
+ *
+ * @param string $capability Capability in question
+ * @param int $userid User ID or null for current user
+ * @param bool $getcategories Wether to return also course_categories
+ * @param bool $doanything True if 'doanything' is permitted (default)
+ * @param string $coursefieldsexceptid Leave blank if you only need 'id' in the course records;
+ *   otherwise use a comma-separated list of the fields you require, not including id.
+ *   Add ctxid, ctxpath, ctxdepth etc to return course context information for preloading.
+ * @param string $categoryfieldsexceptid Leave blank if you only need 'id' in the course records;
+ *   otherwise use a comma-separated list of the fields you require, not including id.
+ *   Add ctxid, ctxpath, ctxdepth etc to return course context information for preloading.
+ * @param string $courseorderby If set, use a comma-separated list of fields from course
+ *   table with sql modifiers (DESC) if needed
+ * @param string $categoryorderby If set, use a comma-separated list of fields from course_category
+ *   table with sql modifiers (DESC) if needed
+ * @param int $limit Limit the number of courses to return on success. Zero equals all entries.
+ * @return array Array of categories and courses.
+ */
+function get_user_capability_contexts(string $capability, bool $getcategories, $userid = null, $doanything = true,
+                                      $coursefieldsexceptid = '', $categoryfieldsexceptid = '', $courseorderby = '',
+                                      $categoryorderby = '', $limit = 0): array {
+    global $DB, $USER;
+
+    // Default to current user.
+    if (!$userid) {
+        $userid = $USER->id;
+    }
+
+    if (!$capinfo = get_capability_info($capability)) {
+        debugging('Capability "'.$capability.'" was not found! This has to be fixed in code.');
+        return [false, false];
+    }
+
+    if ($doanything && is_siteadmin($userid)) {
+        // If the user is a site admin and $doanything is enabled then there is no need to restrict
+        // the list of courses.
+        $contextlimitsql = '';
+        $contextlimitparams = [];
+    } else {
+        // Gets SQL to limit contexts ('x' table) to those where the user has this capability.
+        list ($contextlimitsql, $contextlimitparams) = \core\access\get_user_capability_course_helper::get_sql(
+            $userid, $capinfo->name);
+        if (!$contextlimitsql) {
+            // If the does not have this capability in any context, return false without querying.
+            return [false, false];
+        }
+
+        $contextlimitsql = 'WHERE' . $contextlimitsql;
+    }
+
+    $categories = [];
+    if ($getcategories) {
+        $fieldlist = \core\access\get_user_capability_course_helper::map_fieldnames($categoryfieldsexceptid);
+        if ($categoryorderby) {
+            $fields = explode(',', $categoryorderby);
+            $categoryorderby = '';
+            foreach ($fields as $field) {
+                if ($categoryorderby) {
+                    $categoryorderby .= ',';
+                }
+                $categoryorderby .= 'c.'.$field;
+            }
+            $categoryorderby = 'ORDER BY '.$categoryorderby;
+        }
+        $rs = $DB->get_recordset_sql("
+            SELECT c.id $fieldlist
+              FROM {course_categories} c
+               JOIN {context} x ON c.id = x.instanceid AND x.contextlevel = ?
+            $contextlimitsql
+            $categoryorderby", array_merge([CONTEXT_COURSECAT], $contextlimitparams));
+        $basedlimit = $limit;
+        foreach ($rs as $category) {
+            $categories[] = $category;
+            $basedlimit--;
+            if ($basedlimit == 0) {
+                break;
+            }
+        }
+        $rs->close();
+    }
+
+    $courses = [];
+    $fieldlist = \core\access\get_user_capability_course_helper::map_fieldnames($coursefieldsexceptid);
+    if ($courseorderby) {
+        $fields = explode(',', $courseorderby);
+        $courseorderby = '';
+        foreach ($fields as $field) {
+            if ($courseorderby) {
+                $courseorderby .= ',';
+            }
+            $courseorderby .= 'c.'.$field;
+        }
+        $courseorderby = 'ORDER BY '.$courseorderby;
+    }
+    $rs = $DB->get_recordset_sql("
+            SELECT c.id $fieldlist
+              FROM {course} c
+               JOIN {context} x ON c.id = x.instanceid AND x.contextlevel = ?
+            $contextlimitsql
+            $courseorderby", array_merge([CONTEXT_COURSE], $contextlimitparams));
+    foreach ($rs as $course) {
+        $courses[] = $course;
+        $limit--;
+        if ($limit == 0) {
+            break;
+        }
+    }
+    $rs->close();
+    return [$categories, $courses];
+}
+
+/**
  * This function gets the list of courses that this user has a particular capability in.
  *
  * It is now reasonably efficient, but bear in mind that if there are users who have the capability
@@ -4118,84 +4298,20 @@ function count_role_users($roleid, context $context, $parent = false) {
  * @param int $limit Limit the number of courses to return on success. Zero equals all entries.
  * @return array|bool Array of courses, if none found false is returned.
  */
-function get_user_capability_course($capability, $userid = null, $doanything = true, $fieldsexceptid = '', $orderby = '',
-        $limit = 0) {
-    global $DB, $USER;
-
-    // Default to current user.
-    if (!$userid) {
-        $userid = $USER->id;
-    }
-
-    if ($doanything && is_siteadmin($userid)) {
-        // If the user is a site admin and $doanything is enabled then there is no need to restrict
-        // the list of courses.
-        $contextlimitsql = '';
-        $contextlimitparams = [];
-    } else {
-        // Gets SQL to limit contexts ('x' table) to those where the user has this capability.
-        list ($contextlimitsql, $contextlimitparams) = \core\access\get_user_capability_course_helper::get_sql(
-                $userid, $capability);
-        if (!$contextlimitsql) {
-            // If the does not have this capability in any context, return false without querying.
-            return false;
-        }
-
-        $contextlimitsql = 'WHERE' . $contextlimitsql;
-    }
-
-    // Convert fields list and ordering
-    $fieldlist = '';
-    if ($fieldsexceptid) {
-        $fields = array_map('trim', explode(',', $fieldsexceptid));
-        foreach ($fields as $field) {
-            // Context fields have a different alias.
-            if (strpos($field, 'ctx') === 0) {
-                switch($field) {
-                    case 'ctxlevel' :
-                        $realfield = 'contextlevel';
-                        break;
-                    case 'ctxinstance' :
-                        $realfield = 'instanceid';
-                        break;
-                    default:
-                        $realfield = substr($field, 3);
-                        break;
-                }
-                $fieldlist .= ',x.' . $realfield . ' AS ' . $field;
-            } else {
-                $fieldlist .= ',c.'.$field;
-            }
-        }
-    }
-    if ($orderby) {
-        $fields = explode(',', $orderby);
-        $orderby = '';
-        foreach ($fields as $field) {
-            if ($orderby) {
-                $orderby .= ',';
-            }
-            $orderby .= 'c.'.$field;
-        }
-        $orderby = 'ORDER BY '.$orderby;
-    }
-
-    $courses = array();
-    $rs = $DB->get_recordset_sql("
-            SELECT c.id $fieldlist
-              FROM {course} c
-              JOIN {context} x ON c.id = x.instanceid AND x.contextlevel = ?
-            $contextlimitsql
-            $orderby", array_merge([CONTEXT_COURSE], $contextlimitparams));
-    foreach ($rs as $course) {
-        $courses[] = $course;
-        $limit--;
-        if ($limit == 0) {
-            break;
-        }
-    }
-    $rs->close();
-    return empty($courses) ? false : $courses;
+function get_user_capability_course($capability, $userid = null, $doanything = true, $fieldsexceptid = '',
+                                    $orderby = '', $limit = 0) {
+    list($categories, $courses) = get_user_capability_contexts(
+        $capability,
+        false,
+        $userid,
+        $doanything,
+        $fieldsexceptid,
+        '',
+        $orderby,
+        '',
+        $limit
+    );
+    return $courses;
 }
 
 /**
@@ -4225,6 +4341,11 @@ function role_switch($roleid, context $context) {
 
     if (!isset($USER->access)) {
         load_all_capabilities();
+    }
+
+    // Make sure that course index is refreshed.
+    if ($coursecontext = $context->get_course_context()) {
+        core_courseformat\base::session_cache_reset(get_course($coursecontext->instanceid));
     }
 
     // Add the switch RA
@@ -4402,7 +4523,7 @@ function role_get_name(stdClass $role, $context = null, $rolenamedisplay = ROLEN
     }
 
     if ($rolenamedisplay == ROLENAME_ALIAS) {
-        if ($coursecontext and trim($role->coursealias) !== '') {
+        if ($coursecontext && $role->coursealias && trim($role->coursealias) !== '') {
             return format_string($role->coursealias, true, array('context'=>$coursecontext));
         } else {
             return $original;
@@ -4410,7 +4531,7 @@ function role_get_name(stdClass $role, $context = null, $rolenamedisplay = ROLEN
     }
 
     if ($rolenamedisplay == ROLENAME_BOTH) {
-        if ($coursecontext and trim($role->coursealias) !== '') {
+        if ($coursecontext && $role->coursealias && trim($role->coursealias) !== '') {
             return format_string($role->coursealias, true, array('context'=>$coursecontext)) . " ($original)";
         } else {
             return $original;
@@ -5170,7 +5291,7 @@ abstract class context extends stdClass implements IteratorAggregate {
      * Now we can convert context object to array using convert_to_array(),
      * and feed it properly to json_encode().
      */
-    public function getIterator() {
+    public function getIterator(): Traversable {
         $ret = array(
             'id'           => $this->id,
             'contextlevel' => $this->contextlevel,
@@ -6094,13 +6215,14 @@ class context_helper extends context {
     }
 
     /**
-     * Preloads context information from db record and strips the cached info.
+     * Preloads context cache with information from db record and strips the cached info.
      *
      * The db request has to contain all columns from context_helper::get_preload_record_columns().
      *
      * @static
      * @param stdClass $rec
-     * @return void (modifies $rec)
+     * @return void This is intentional. See MDL-37115. You will need to get the context
+     *      in the normal way, but it is now cached, so that will be fast.
      */
      public static function preload_from_record(stdClass $rec) {
          context::preload_from_record($rec);
@@ -6306,7 +6428,8 @@ class context_system extends context {
             debugging('context_system::instance(): invalid $id parameter detected, should be 0');
         }
 
-        if (defined('SYSCONTEXTID') and $cache) { // dangerous: define this in config.php to eliminate 1 query/page
+        // SYSCONTEXTID is cached in local cache to eliminate 1 query per page.
+        if (defined('SYSCONTEXTID') and $cache) {
             if (!isset(context::$systemcontext)) {
                 $record = new stdClass();
                 $record->id           = SYSCONTEXTID;
@@ -6955,7 +7078,7 @@ class context_course extends context {
                     } else {
                         $name .= format_string(get_course_display_name_for_list($course), true, array('context' => $this));
                     }
-               }
+                }
             }
         }
         return $name;
@@ -7556,16 +7679,23 @@ class context_block extends context {
     protected static function create_level_instances() {
         global $DB;
 
-        $sql = "SELECT ".CONTEXT_BLOCK.", bi.id
-                  FROM {block_instances} bi
-                 WHERE NOT EXISTS (SELECT 'x'
-                                     FROM {context} cx
-                                    WHERE bi.id = cx.instanceid AND cx.contextlevel=".CONTEXT_BLOCK.")";
-        $contextdata = $DB->get_recordset_sql($sql);
-        foreach ($contextdata as $context) {
-            context::insert_context_record(CONTEXT_BLOCK, $context->id, null);
-        }
-        $contextdata->close();
+        $sql = <<<EOF
+            INSERT INTO {context} (
+                contextlevel,
+                instanceid
+            ) SELECT
+                :contextlevel,
+                bi.id as instanceid
+               FROM {block_instances} bi
+               WHERE NOT EXISTS (
+                   SELECT 'x' FROM {context} cx WHERE bi.id = cx.instanceid AND cx.contextlevel = :existingcontextlevel
+               )
+        EOF;
+
+        $DB->execute($sql, [
+            'contextlevel' => CONTEXT_BLOCK,
+            'existingcontextlevel' => CONTEXT_BLOCK,
+        ]);
     }
 
     /**

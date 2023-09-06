@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ca', version '3.11'.
+ * Strings for component 'tool_installaddon', language 'ca', version '4.1'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -42,6 +42,7 @@ $string['installfromziprootdir_help'] = 'Alguns paquets ZIP, com els generats pe
 $string['installfromzipsubmit'] = 'Instal·la un complement des d\'un fitxer ZIP';
 $string['installfromziptype'] = 'Tipus de connector';
 $string['installfromziptype_help'] = 'Escolliu el tipus correcte de connector que aneu a instal·lar. Avís: El procediment d\'instal·lació pot anar molt malament si especifiqueu un tipus incorrecte de connector.';
+$string['installfromziptype_link'] = 'Development:Plugins';
 $string['permcheck'] = 'Comproveu que el directori arrel del tipus de connector té permisos d\'escriptura per al procés del servidor web.';
 $string['permcheckerror'] = 'Error mentre s\'estaven comprovant els permisos d\'escriptura';
 $string['permcheckprogress'] = 'S\'està comprovant el permís d\'escriptura...';

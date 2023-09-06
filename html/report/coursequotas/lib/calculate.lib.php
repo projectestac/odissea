@@ -132,7 +132,7 @@ function get_block_size(): int {
     $tempfile = get_temp_dir() . '/test.txt';
     file_put_contents($tempfile, REPORT_COMPONENTNAME);
 
-    return intval(exec('du ' . $tempfile . " | awk '{print $1}'")) * 1024;
+    return (int)exec('du ' . $tempfile . " | awk '{print $1}'") * 1024;
 }
 
 /**

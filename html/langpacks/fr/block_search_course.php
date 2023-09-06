@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_search_course', language 'fr', version '3.11'.
+ * Strings for component 'block_search_course', language 'fr', version '4.1'.
  *
  * @package     block_search_course
  * @category    string

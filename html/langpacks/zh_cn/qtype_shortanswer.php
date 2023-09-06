@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_shortanswer', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughanswers'] = '此类型的题目至少要有 {$a} 个答案';
 $string['pleaseenterananswer'] = '请输入答案。';
 $string['pluginname'] = '填空题';
 $string['pluginname_help'] = '此类题目（题干可以包含图片）的答题者输入一个词或一句话做为答案。可以设定多个正确答案，每个答案可以有不同的得分。如果勾选了“大小写敏感”选项，那么您就可以给“Word”和“word”不同的分数。';
+$string['pluginname_link'] = 'question/type/shortanswer';
 $string['pluginnameadding'] = '添加一道填空题';
 $string['pluginnameediting'] = '编辑填空题';
 $string['pluginnamesummary'] = '允许用一个或多个词回答，系统通过和不同的标准答案（可以包含通配符）对比来自动评分。';

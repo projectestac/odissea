@@ -68,8 +68,8 @@ class user_filtering {
             $fieldnames = array('realname' => 1, 'lastname' => 1, 'firstname' => 1, 'username' => 1, 'email' => 1, 'city' => 1,
                                 'country' => 1, 'confirmed' => 1, 'suspended' => 1, 'profile' => 1, 'courserole' => 1,
                                 'anycourses' => 1, 'systemrole' => 1, 'cohort' => 1, 'firstaccess' => 1, 'lastaccess' => 1,
-                                'neveraccessed' => 1, 'timemodified' => 1, 'nevermodified' => 1, 'auth' => 1, 'mnethostid' => 1,
-                                'idnumber' => 1, 'institution' => 1, 'department' => 1, 'lastip' => 1);
+                                'neveraccessed' => 1, 'timecreated' => 1, 'timemodified' => 1, 'nevermodified' => 1, 'auth' => 1,
+                                'mnethostid' => 1, 'idnumber' => 1, 'institution' => 1, 'department' => 1, 'lastip' => 1);
 
             // Get the config which filters the admin wanted to show by default.
             $userfiltersdefault = get_config('core', 'userfiltersdefault');
@@ -175,6 +175,7 @@ class user_filtering {
             case 'firstaccess': return new user_filter_date('firstaccess', get_string('firstaccess', 'filters'), $advanced, 'firstaccess');
             case 'lastaccess':  return new user_filter_date('lastaccess', get_string('lastaccess'), $advanced, 'lastaccess');
             case 'neveraccessed': return new user_filter_checkbox('neveraccessed', get_string('neveraccessed', 'filters'), $advanced, 'firstaccess', array('lastaccess_sck', 'lastaccess_eck', 'firstaccess_eck', 'firstaccess_sck'));
+            case 'timecreated': return new user_filter_date('timecreated', get_string('timecreated'), $advanced, 'timecreated');
             case 'timemodified': return new user_filter_date('timemodified', get_string('lastmodified'), $advanced, 'timemodified');
             case 'nevermodified': return new user_filter_checkbox('nevermodified', get_string('nevermodified', 'filters'), $advanced, array('timemodified', 'timecreated'), array('timemodified_sck', 'timemodified_eck'));
             case 'cohort':      return new user_filter_cohort($advanced);
@@ -329,7 +330,7 @@ class user_filter_type {
      * @return string the filtering condition or null if the filter is disabled
      */
     public function get_sql_filter($data) {
-        print_error('mustbeoveride', 'debug', '', 'get_sql_filter');
+        throw new \moodle_exception('mustbeoveride', 'debug', '', 'get_sql_filter');
     }
 
     /**
@@ -338,7 +339,7 @@ class user_filter_type {
      * @return mixed array filter data or false when filter not set
      */
     public function check_data($formdata) {
-        print_error('mustbeoveride', 'debug', '', 'check_data');
+        throw new \moodle_exception('mustbeoveride', 'debug', '', 'check_data');
     }
 
     /**
@@ -346,7 +347,7 @@ class user_filter_type {
      * @param moodleform $mform a MoodleForm object to setup
      */
     public function setupForm(&$mform) {
-        print_error('mustbeoveride', 'debug', '', 'setupForm');
+        throw new \moodle_exception('mustbeoveride', 'debug', '', 'setupForm');
     }
 
     /**
@@ -355,6 +356,6 @@ class user_filter_type {
      * @return string active filter label
      */
     public function get_label($data) {
-        print_error('mustbeoveride', 'debug', '', 'get_label');
+        throw new \moodle_exception('mustbeoveride', 'debug', '', 'get_label');
     }
 }

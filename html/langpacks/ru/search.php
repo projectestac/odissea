@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ru', version '3.11'.
+ * Strings for component 'search', language 'ru', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -43,6 +43,7 @@ $string['confirm_delete'] = 'Вы уверены, что хотите удали
 $string['confirm_deleteall'] = 'Вы уверены, что хотите сейчас удалить всё проиндексированное содержимое? Пока сайт не будет снова проиндексирован, пользователи не смогут получить результаты поиска.';
 $string['confirm_indexall'] = 'Вы уверены, что хотите сейчас обновить всё проиндексированное содержимое? Если нужно индексировать большой объем контента, это может занять длительное время. Для рабочих серверов обычно Вы должны оставлять индексирование запланированной задаче «Построение глобального поискового индекса».';
 $string['confirm_reindexall'] = 'Вы уверены, что хотите сейчас переиндексировать всё содержимое сайта? Если Ваш сайт содержит большой объем контента, это может занять длительное время и пользователи не будут получать полные результаты поиска до завершения переиндексации.';
+$string['content:courserole'] = '{$a->role} в {$a->course}';
 $string['core-all'] = 'Все';
 $string['core-course-content'] = 'Содержимое курса';
 $string['core-courses'] = 'Курсы';
@@ -115,6 +116,7 @@ $string['schemaversionunknown'] = 'Поисковая машина не знае
 $string['score'] = 'Очки';
 $string['search'] = 'Поиск';
 $string['search:course'] = 'Курсы';
+$string['search:course_teacher'] = 'Учитель курса';
 $string['search:customfield'] = 'Пользовательские поля курса';
 $string['search:message_received'] = 'Полученные сообщения';
 $string['search:message_sent'] = 'Отправленные сообщения';
@@ -136,6 +138,7 @@ $string['thesewordsmustappear'] = 'Эти слова должны встреча
 $string['thesewordsmustnotappear'] = 'Эти слова не должны встречаться';
 $string['title'] = 'Заголовок';
 $string['tofetchtheseresults'] = 'для получения этих результатов';
+$string['topresults'] = 'Лучшие результаты';
 $string['totalsize'] = 'Суммарный размер';
 $string['totime'] = 'Изменено до';
 $string['type'] = 'Тип';

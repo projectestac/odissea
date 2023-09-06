@@ -63,7 +63,7 @@ Feature: In Dashboard, teacher can see the number of student attempts to lessons
       | id_response_editor_1 | Wrong |
       | id_jumpto_1 | This page |
     And I press "Save page"
-    And I follow "Expanded"
+    And I select edit type "Expanded"
     And I click on "Add a question page here" "link" in the "//div[contains(concat(' ', normalize-space(@class), ' '), ' addlinks ')][3]" "xpath_element"
     And I set the field "Select a question type" to "True/false"
     And I press "Add a question page"
@@ -114,6 +114,7 @@ Feature: In Dashboard, teacher can see the number of student attempts to lessons
     And I press "Continue"
     And I should see "Congratulations - end of lesson reached"
     And I should see "Your score is 3 (out of 3)."
+    And I log out
     And I am on the "Test lesson name" "lesson activity" page logged in as student2
     And I should see "Cat is an amphibian"
     And I set the following fields to these values:

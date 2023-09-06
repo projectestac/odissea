@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'eu', version '3.11'.
+ * Strings for component 'repository', language 'eu', version '4.1'.
  *
  * @package     repository
  * @category    string
@@ -68,10 +68,10 @@ $string['close'] = 'Itxi';
 $string['commonrepositorysettings'] = 'Biltegien ezarpen komunak';
 $string['configallowexternallinks'] = 'Aukera honek erabiltzaile guztiei kanpoko multimedia Moodlera kopiatu nahi duen edo ez erabakitzeko aukera ematen die. Aukera desgaituta badago multimedia fitxategiak beti Moodlera kopiatzen dira (datu-osotasuna eta segurtasun aldetik hau da normalean aukerarik onena). Aukera gaituz gero erabiltzaileak multimedia fitxategiak gehitzen dituen bakoitzean aukeratu ahal izango du.';
 $string['configcacheexpire'] = 'Fitxategi-zerrendak lokalki cacheatuta mantenduko diren denbora (segundoetan) kanpo-biltegietan nabigatzean.';
-$string['configgetfiletimeout'] = 'Kanpoko fitxategi bat Moodlera jaistean erabili beharreko gehieneko denbora (segundoetan).';
+$string['configgetfiletimeout'] = 'Kanpoko fitxategi bat Moodlera jaistean erabili beharreko denbora-muga (segundoetan).';
 $string['configsaved'] = 'Ezarpenak gordeta!';
-$string['configsyncfiletimeout'] = 'Kanpoko fitxategi baten tamaina sinkronizatzeko gehieneko denbora (segundoetan).';
-$string['configsyncimagetimeout'] = 'Kanpoko fitxategi baten irudia kanpo-biltegitik jaisteko gehieneko denbora (segundoetan)sinkronizazioa egiten denean.';
+$string['configsyncfiletimeout'] = 'Kanpoko fitxategi baten tamaina sinkronizatzeko denbora-muga (segundoetan).';
+$string['configsyncimagetimeout'] = 'Kanpoko fitxategi baten irudia kanpo-biltegitik jaisteko denbora-muga (segundoetan)sinkronizazioa egiten denean.';
 $string['confirmdelete'] = 'Ziur zaude {$a} biltegia ezabatu nahi duzula? "Jarraitu eta jaitsi" aukeratzen baduzu kanpoko fitxategien estekak Moodlera jaitsiko dira, baina hori egiteko denbora luzea eraman dezake.';
 $string['confirmdeletefile'] = 'Ziur zaude fitxategi hau ezabatu nahi duzula?';
 $string['confirmdeletefilewithhref'] = 'Ziur zaude fitxategi hau ezabatu nahi duzula? Fitxategi honetara zuzendutako {$a} esteka daude. Jarraituz gero fitxategiaren esteka horien ordez fitxategiaren kopiak erabiltzeko automatikoki eguneratuko dira.';
@@ -139,7 +139,7 @@ $string['folderexists'] = 'Karpetaren izena dagoeneko erabilita dago. Mesedez, e
 $string['foldernotfound'] = 'Ez da karpeta aurkitu';
 $string['folderrecurse'] = 'Karpeta bat ezin da bere azpikarpeta batera mugitu.';
 $string['getfile'] = 'Aukeratu fitxategi hau';
-$string['getfiletimeout'] = 'Fitxategiak eskuratzeko gehieneko denbora';
+$string['getfiletimeout'] = 'Fitxategiak eskuratzeko denbora-muga';
 $string['help'] = 'Laguntza';
 $string['iconview'] = 'Ikusi ikono gisa';
 $string['imagesize'] = '{$a->width} x {$a->height} px';
@@ -248,8 +248,8 @@ $string['size'] = 'Tamaina';
 $string['sourcekeymismatch'] = 'Jatorrizko URLa ez dator bat jatorrizko gakoarekin.';
 $string['submit'] = 'Bidali';
 $string['sync'] = 'Sync';
-$string['syncfiletimeout'] = 'Fitxategi-sinkronizazioaren gehieneko denbora';
-$string['syncimagetimeout'] = 'Irudi-sinkronizazioaren gehieneko denbora';
+$string['syncfiletimeout'] = 'Fitxategi-sinkronizazioaren denbora-muga';
+$string['syncimagetimeout'] = 'Irudi-sinkronizazioaren denbora-muga';
 $string['thumbview'] = 'Ikusi ikono bezala';
 $string['title'] = 'Aukeratu fitxategi bat...';
 $string['type'] = 'Mota';

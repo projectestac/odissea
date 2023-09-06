@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'ko', version '3.11'.
+ * Strings for component 'qtype_match', language 'ko', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -37,6 +37,7 @@ $string['notenoughquestions'] = '적어도 {$a} 개의 질문-답 쌍을 제공�
 $string['pleaseananswerallparts'] = '질문의 모든 부분에 대해 답하세요.';
 $string['pluginname'] = '짝찾기형';
 $string['pluginname_help'] = '짝찾기형 질문은 응답자에게 이름이나 문장의 목록(질문)을 다른 이름이나 문장으로 짝을 연결하도록 합니다.';
+$string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = '짝찾기형 질문 추가';
 $string['pluginnameediting'] = '짝찾기형 질문 편집';
 $string['pluginnamesummary'] = '각 내용에 적합한 답을 주어진 목록에서 맞추어야 합니다.';

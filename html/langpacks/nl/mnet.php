@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'nl', version '3.11'.
+ * Strings for component 'mnet', language 'nl', version '4.1'.
  *
  * @package     mnet
  * @category    string
@@ -90,7 +90,7 @@ $string['hideremote'] = 'Verberg externe gebruikers';
 $string['host'] = 'host';
 $string['hostcoursenotfound'] = 'Host of cursus kan niet gevonden worden';
 $string['hostdeleted'] = 'Host verwijderd';
-$string['hostexists'] = 'Er bestaat al een record voor een host met die hostnaam. <a href="{$a}">Klik hier</a> om die record te bewerken.';
+$string['hostexists'] = 'Er bestaat al een record voor een host met die hostnaam (kan verwijderd zijn). <a href="{$a}">Bewerk record</a>.';
 $string['hostlist'] = 'Lijst met genetwerkte hosts';
 $string['hostname'] = 'Host-naam';
 $string['hostnamehelp'] = 'De fully-qualified domain name van die host, bv. www.voorbeeld.com';
@@ -118,6 +118,7 @@ $string['is_in_range'] = 'Het IP-adres  <code>{$a}</code>  is een geldige vertro
 $string['ispublished'] = '{$a} heeft deze  voor jou ingeschakeld.';
 $string['issubscribed'] = '{$a} is voor deze service ingeschreven op jouw host.';
 $string['keydeleted'] = 'Je sleutel is verwijderd en vervangen.';
+$string['keydeletedcancelled'] = 'Geen wijzigingen aan de sleutel aangebracht.';
 $string['keymismatch'] = 'De publieke sleutel die je voor deze host hebt is verschillend van de publieke sleutel die ervoor gepubliceerd wordt. De gepubliceerde sleutel is:';
 $string['last_connect_time'] = 'Laatste connectiemoment';
 $string['last_connect_time_help'] = 'De laatste keer dat je verbonden was met deze host.';

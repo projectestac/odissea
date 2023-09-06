@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'nl', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'nl', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -40,6 +40,7 @@ $string['clivalidationerror'] = 'Validatiefout:';
 $string['csvdelimiter'] = 'CSV scheidingsteken';
 $string['defaultvalues'] = 'Standaardwaarden';
 $string['deleteerrors'] = 'Verwijder fouten';
+$string['duplicateemail'] = 'Meerdere gebruikers met e-mailadres {$a} gevonden';
 $string['encoding'] = 'Codering';
 $string['errormnetadd'] = 'Kan externe gebruikers niet toevoegen';
 $string['errorprefix'] = 'Fout:';
@@ -53,6 +54,7 @@ $string['invalidtheme'] = 'Thema "{$a}" is niet geïnstalleerd en zal worden gen
 $string['invalidupdatetype'] = 'Je kunt deze optie niet selecteren met het gekozen upload-type.';
 $string['invaliduserdata'] = 'Ongeldige gegevens ontdekt voor gebruiker {$a} en automatisch opgeschoond.';
 $string['linex'] = 'Lijn {$a}';
+$string['matchemail'] = 'Koppel op e-mailadres';
 $string['nochanges'] = 'Geen wijzigingen';
 $string['notheme'] = 'Er is geen thema gedefinieerd voor deze gebruiker.';
 $string['pluginname'] = 'Gebruiker upload';
@@ -84,6 +86,7 @@ $string['uploadusers_help'] = 'Gebruikers kunnen geïmporteerd worden en optione
 * Elke record is een datareeks, gescheiden door het geselecteerde scheidingsteken
 * Het eerste record van het bestand is speciaal: het bevat de lijst met veldnamen. Dit bepaalt de opmaak van de rest van het bestand.
 * Vereiste veldnamen zijn: username, firstname,  lastname, email';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Voorbeeld uploaden gebruikers';
 $string['uploadusersresult'] = 'Resultaat uploaden gebruikers';
 $string['useraccountupdated'] = 'Gebruiker geüpdatet';

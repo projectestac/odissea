@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'es', version '3.11'.
+ * Strings for component 'tool_dataprivacy', language 'es', version '4.1'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -144,6 +144,7 @@ $string['effectiveretentionperioduser'] = '{$a} (desde la última vez que el usu
 $string['emailsalutation'] = 'Estimado/a {$a},';
 $string['errorcannotrequestdeleteforother'] = 'No tiene permiso para crear una petición de eliminación de datos para este usuario.';
 $string['errorcannotrequestdeleteforself'] = 'No tiene permiso para crear una petición de eliminación de datos para usted mismo.';
+$string['errorcannotrequestexportforself'] = 'Usted no tiene permisos para crear solicitudes de exportación para sí mismo/a.';
 $string['errorcontactdpodisabled'] = 'La opción para contactar con el oficial de privacidad está deshabilitada.';
 $string['errorcontexthasunexpiredchildren'] = 'El contexto "{$a}" todavía tiene subcontextos que aun no han caducado. No se ha marcado ningún contexto para eliminación.';
 $string['errorinvalidrequestcomments'] = 'El campo de comentarios sólo puede contener texto plano.';
@@ -169,7 +170,7 @@ $string['explanationtitle'] = 'Iconos usados en esta página y lo que significan
 $string['external'] = 'Adicional';
 $string['externalexplanation'] = 'Un plugin adicional instalado en este sitio.';
 $string['filteroption'] = '{$a->category}: {$a->name}';
-$string['frontpagecourse'] = 'Curso en la Portada';
+$string['frontpagecourse'] = 'Curso de inicio del sitio';
 $string['gdpr_art_6_1_a_description'] = 'El interesado ha dado consentimiento para el tratamiento de sus datos personales para uno o más propósitos específicos';
 $string['gdpr_art_6_1_a_name'] = 'Consentimiento (GDPR Art. 6.1(a))';
 $string['gdpr_art_6_1_b_description'] = 'El tratamiento es necesario para el desempeño de un contrato para el cual el interesado es una parte, o como parte de la solicitud anterior del interesado para participar en un contrato';
@@ -242,6 +243,8 @@ $string['pluginregistrytitle'] = 'Registro de cumplimiento de privacidad del plu
 $string['privacy'] = 'Privacidad';
 $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = 'Los filtros aplicados actualmente a la página de solicitudes de datos.';
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = 'El número de solicitudes de datos que el usuario prefiere ver en una página';
+$string['privacy:metadata:purpose'] = 'Información de los propósitos de datos de este sitio.';
+$string['privacy:metadata:purpose:usermodified'] = 'El ID del usuario que modificó el propósito';
 $string['privacy:metadata:request'] = 'Información de las solicitudes de datos personales (solicitudes de acceso y eliminación del interesado) hechas para este sitio.';
 $string['privacy:metadata:request:comments'] = 'Cualquier comentario del usuario que acompañe la solicitud.';
 $string['privacy:metadata:request:dpocomment'] = 'Cualquier comentario hecho por el Oficial de Privacidad del sitio con respecto a la solicitud.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'gl', version '3.11'.
+ * Strings for component 'block_online_users', language 'gl', version '4.1'.
  *
  * @package     block_online_users
  * @category    string
@@ -32,7 +32,7 @@ $string['numusers'] = '{$a} usuarios conectados';
 $string['online_status:hide'] = 'Agochar o meu estado en liña a outros usuarios';
 $string['online_status:show'] = 'Amosar o meu estado en liña a outros usuarios';
 $string['online_users:addinstance'] = 'Engadir un novo bloque de usuarios conectados';
-$string['online_users:myaddinstance'] = 'Engadir un novo bloque de usuarios conectados ao Taboleiro';
+$string['online_users:myaddinstance'] = 'Engadir un novo bloque de usuarios conectados ao meu cartafol persoal';
 $string['online_users:viewlist'] = 'Ver a lista de usuarios conectados';
 $string['onlinestatushiding'] = 'Agochamento do estado en liña';
 $string['onlinestatushiding_desc'] = 'Se está activado, os usuarios teñen a opción de agochar o seu estado en liña a outros usuarios.';

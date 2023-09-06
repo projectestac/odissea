@@ -45,7 +45,7 @@ $url->param('id', $id);
 if (empty($mode)) {
     $mode = reset($reportlist);
 } else if (!in_array($mode, $reportlist)) {
-    print_error('erroraccessingreport', 'scorm');
+    throw new \moodle_exception('erroraccessingreport', 'scorm');
 }
 $url->param('mode', $mode);
 
@@ -56,8 +56,11 @@ $PAGE->set_pagelayout('report');
 
 require_capability('mod/scorm:viewreport', $contextmodule);
 
+// Activate the secondary nav tab.
+navigation_node::override_active_url(new moodle_url('/mod/scorm/report.php', ['id' => $id]));
+
 if (count($reportlist) < 1) {
-    print_error('erroraccessingreport', 'scorm');
+    throw new \moodle_exception('erroraccessingreport', 'scorm');
 }
 
 // Trigger a report viewed event.
@@ -83,12 +86,13 @@ if (empty($noheader)) {
 
     $PAGE->set_title("$course->shortname: ".format_string($scorm->name));
     $PAGE->set_heading($course->fullname);
+    $PAGE->activityheader->set_attrs([
+        'hidecompletion' => true,
+        'description' => ''
+    ]);
     $PAGE->navbar->add($strreport, new moodle_url('/mod/scorm/report.php', array('id' => $cm->id)));
 
     echo $OUTPUT->header();
-    echo $OUTPUT->heading(format_string($scorm->name));
-    $currenttab = 'reports';
-    require($CFG->dirroot . '/mod/scorm/tabs.php');
 }
 
 // Open the selected Scorm report and display it.

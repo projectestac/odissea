@@ -9,6 +9,10 @@ below.
 If you want to store information in the database for your format, or control
 access to features of your format, you need some of the optional files too.
 
+If you want to override some standard course output component (located in
+coure/classes/output/{course|section|cm}_format/*) you need to create an
+extend class inside your course/format/yourformat/classes/output.
+
 All names below assume that your format is called 'yourformat'.
 
 
@@ -139,3 +143,32 @@ Optional file (styles)
 
   If this file exists it will be included in the CSS Moodle generates.
 
+
+Optional files (outputs)
+----------------------
+
+By default, the format renderer will use those output classes:
+
+* core_courseformat\output\local\content: for the general course structure
+* core_courseformat\output\local\content\*: to render specific course structure parts
+
+* core_courseformat\output\local\content\section: for the complete section output
+* core_courseformat\output\local\content\section\*: to render specific section parts
+
+* core_courseformat\output\local\content\cm: for output an activity inside a section
+* core_courseformat\output\local\content\cm\*: for speficis parts of the cm output
+
+  Your format can override any of this output classes just by creating class
+  inside your format_yourformat\output\courseformat\* namespace. We recommend to extend the
+  original class to ensure all element will work as expected.
+
+  For example: if you want to change the section header, you should create
+  format_yourformat\output\section\header, which will extend the original
+  core_courseformat\output\courseformat\content\section\header class.
+
+  By default, only a few format renderer methods are needed to render a course:
+  - render_content to render a full course content
+  - course_section_updated used by the course editor to refresh a specific section
+  - course_section_updated_cm_item used by the course editor to refresh a specific cm item
+
+  Formats can override those two methods to use different templates to render a course.

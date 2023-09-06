@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ar', version '3.11'.
+ * Strings for component 'workshop', language 'ar', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -43,8 +43,10 @@ $string['allocationdone'] = 'تم التوزيع';
 $string['allocationerror'] = 'خطأ في التوزيع';
 $string['allowedfiletypesforoverallfeedback'] = 'أنواع ملفات مرفقات الإفادة المسموح بها';
 $string['allowedfiletypesforoverallfeedback_help'] = 'يمكن تقييد أنواع ملفات مرفقات الإفادة عبر تقديم قائمة بالأنواع المسموح بها. إذا تم ترك الحقل فارغاً، فعندها كل أنواع الملفات مسموح بها.';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
 $string['allowedfiletypesforsubmission'] = 'أنواع ملفات مرفقات التسليم المسموح بها';
 $string['allowedfiletypesforsubmission_help'] = 'يمكن تقييد أنواع ملفات مرفقات التسليم عبر تقديم قائمة بالأنواع المسموح بها. إذا تم ترك الحقل فارغاً، فعندها كل أنواع الملفات مسموح بها.';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = 'جميع التسليمات ({$a})';
 $string['alreadygraded'] = 'مقيَّم سلفاً';
 $string['areaconclusion'] = 'نص الاستنتاج';
@@ -101,7 +103,7 @@ $string['configexamplesmode'] = 'النمط الافتراضي لتقييم ال
 $string['configgrade'] = 'العلامة العظمى الافتراضية للتسليم في ورش العمل';
 $string['configgradedecimals'] = 'أقصى عدد من المراتب التي ينبغي إظهارها بعد الفارزة العشرية عند عرض الدرجات.';
 $string['configgradinggrade'] = 'العلامة العظمى الافتراضية للتقييم في ورش العمل';
-$string['configmaxbytes'] = 'أقصى حجم ملف إفتراضياً للتسليم في كل ورش العمل في الموقع (عرضة لحدوده في المقرر الدراسي وغيره من الإعدادات المحلية)';
+$string['configmaxbytes'] = 'أقصى حجم ملف إفتراضياً للتسليم في كل ورش العمل في الموقع (عرضة لحدوده في المساق وغيره من الإعدادات المحلية)';
 $string['configstrategy'] = 'استراتيجية الدرجات الافتراضية لورش العمل';
 $string['createsubmission'] = 'أضف تسليماً';
 $string['crontask'] = 'المعالجة الخلفية لوحدة ورشة العمل';
@@ -193,10 +195,12 @@ $string['indicator:cognitivedepth'] = 'ورشة العمل معرفياً';
 $string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في نشاط ورشة العمل.';
 $string['indicator:cognitivedepthdef'] = 'ورشة العمل معرفياً';
 $string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها نشاطات ورشة العمل خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة، تقديم، معاينة الرد، التعليق على الرد، إعادة التقديم بعد معاينة الرد)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'ورشة العمل إجتماعياً';
 $string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في نشاط ورشة العمل.';
 $string['indicator:socialbreadthdef'] = 'ورشة العمل إجتماعياً';
 $string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها نشاطات ورشة العمل خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً، المشاركة مع الآخرين)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'المعلومة';
 $string['instructauthors'] = 'تعليمات التسليم';
 $string['instructreviewers'] = 'تعليمات التقييم';
@@ -215,6 +219,7 @@ $string['modulename_help'] = 'وحدة نشاط ورشة العمل تُمكِّ
 يتم تقييم التسليمات باستعمال نموذج تقييم متعدد المعايير يُعرَّف من قبل المعلم. عملية التقييم المناظر وفهم نموذج التقييم يمكن التمرن عليها مقدماً بواسطة تسليمات نموذجية مقدمة من قبل المعلم يصاحبها تقييم مرجعي. الطلبة تعطى لهم فرصة تقييم واحد أو أكثر من تسليمات نظرائهم. يمكن إخفاء هويات أصحاب التسليمات وكذلك التقييمات إن تطلب الأمر.
 
 يحصل الطلبة على علامتين في نشاط ورشة العمل - علامة على تسليمهم وعلامة أخرى على تقييمهم لتسليمات نظرائهم. العلامتان كلاهما تسجلان في سجل التقديرات.';
+$string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = 'ورش عمل';
 $string['myassessments'] = 'تقييماتي';
 $string['mysubmission'] = 'تسليمي';
@@ -229,7 +234,7 @@ $string['notassessed'] = 'غير مقيَّم بعد';
 $string['nothingfound'] = 'لا شيء لعرضه';
 $string['nothingtoreview'] = 'لا شيء لمراجعته';
 $string['notoverridden'] = 'غير متجاوز';
-$string['noworkshops'] = 'لا توجد ورش عمل في هذا المقرر الدراسي';
+$string['noworkshops'] = 'لا توجد ورش عمل في هذا المساق';
 $string['noyoursubmission'] = 'لم تقم بتسليم عملك بعد';
 $string['nullgrade'] = '-';
 $string['overallfeedback'] = 'الإفادة الشاملة';
@@ -362,6 +367,7 @@ $string['submissiongradeof'] = 'علامة التسليم (من {$a})';
 $string['submissionlastmodified'] = 'آخر تعديل';
 $string['submissionrequiredcontent'] = 'عليك إدخال نص ما أو إضافة ملف.';
 $string['submissionrequiredfile'] = 'عليك إضافة ملف أو إدخال نص ما.';
+$string['submissionsallocation'] = 'تعيين التسليمات';
 $string['submissionsettings'] = 'إعدادات التسليم';
 $string['submissionsreport'] = 'تقرير تسليمات ورشة العمل';
 $string['submissionstart'] = 'قبول التسليمات بدءاً من';

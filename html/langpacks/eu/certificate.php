@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'eu', version '3.11'.
+ * Strings for component 'certificate', language 'eu', version '4.1'.
  *
  * @package     certificate
  * @category    string
@@ -94,6 +94,7 @@ $string['intro'] = 'Sarrera';
 $string['issued'] = 'Emana';
 $string['letter'] = 'Letra';
 $string['modulename'] = 'Ziurtagiria';
+$string['modulename_link'] = 'Certificate_module';
 $string['modulenameplural'] = 'Ziurtagiriak';
 $string['mycertificates'] = 'Nire ziurtagiriak';
 $string['nocertificates'] = 'Ez dago ziurtagiririk';

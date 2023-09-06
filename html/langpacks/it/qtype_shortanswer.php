@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'it', version '3.11'.
+ * Strings for component 'qtype_shortanswer', language 'it', version '4.1'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughanswers'] = 'Questo tipo di domanda richiede almeno {$a} rispo
 $string['pleaseenterananswer'] = 'Per favore inserisci una risposta.';
 $string['pluginname'] = 'Risposta breve';
 $string['pluginname_help'] = 'In risposta a una domanda (che può comprendere anche un\'immagine) lo studente scriverà una parola o una breve frase. Ci possono essere anche più risposte esatte, ciascuna con un voto diverso. Se è selezionata l\'opzione "case sensitive,"si può avere un punteggio differente per "Parola" e "parola".';
+$string['pluginname_link'] = 'question/type/shortanswer';
 $string['pluginnameadding'] = 'Creazione domanda Risposta breve';
 $string['pluginnameediting'] = 'Modifica domanda Risposta breve';
 $string['pluginnamesummary'] = 'Consente la risposta con una o più parole. La valutazione avviene confrontando la risposta con modelli di risposta che possono anche contenere caratteri jolly.';

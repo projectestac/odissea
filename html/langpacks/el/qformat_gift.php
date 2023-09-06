@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'el', version '3.11'.
+ * Strings for component 'qformat_gift', language 'el', version '4.1'.
  *
  * @package     qformat_gift
  * @category    string
@@ -36,5 +36,5 @@ $string['importminerror'] = 'Υπάρχει ένα σφάλμα στην ερώ�
 $string['nohandler'] = 'Δεν υπάρχει χειριστής για ερωτήσεις τύπου {$a}';
 $string['pluginname'] = 'Μορφότυπος GIFT';
 $string['pluginname_help'] = 'Ο μορφότυπος GIFT (General Import Format Template) επιτρέπει την εισαγωγή ή εξαγωγή μέσω αρχείου κειμένου, ερωτήσεων πολλαπλών επιλογών, σωστού/λάθους, σύντομης απάντησης, αντιστοίχισης, λέξης που λείπει, έκθεσης και αριθμητικών ερωτήσεων.';
-$string['pluginname_link'] = 'qformat/GIFT';
+$string['pluginname_link'] = '';
 $string['privacy:metadata'] = 'Το πρόσθετο «Μορφότυπος GIFT» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

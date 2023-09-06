@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'gl', version '3.11'.
+ * Strings for component 'grading', language 'gl', version '4.1'.
  *
  * @package     grading
  * @category    string
@@ -32,7 +32,7 @@ $string['clicktoclose'] = 'premer para pechar';
 $string['error:gradingunavailable'] = 'O método de cualificación avanzado non está configurado correctamente. Comprobe todas as opcións de cualificación de todo o foro nos axustes do mesmo.';
 $string['error:notinrange'] = 'A cualificación «{$a->grade}»  non é válida. As cualificacións deben estar comprendida entre 0 e {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Non é posíbel crear instancias do elemento formulario de cualificación';
-$string['formnotavailable'] = 'Seleccionou un método de cualificación avanzada para o seu uso, mais o formato de cualificación aínda non está dispoñíbel. Terá que definilo previamente utilizando a ligazón existente no bloque de Administración.';
+$string['formnotavailable'] = 'Seleccionouse un método de cualificación avanzado pero aínda hai que definir o formulario de cualificación.';
 $string['gradingformunavailable'] = 'Teña en conta que o formulario de cualificación avanzada non está preparado neste momento. Empregarase o método de cualificación simple ata que formulario teña un estado correcto.';
 $string['gradingmanagement'] = 'Cualificación avanzada';
 $string['gradingmanagementtitle'] = 'Cualificación avanzada: {$a->component} ({$a->area})';
@@ -55,7 +55,7 @@ $string['manageactiondeletedone'] = 'O formulario foi eliminado correctamente';
 $string['manageactionedit'] = 'Editar a definición do formulario actual';
 $string['manageactionnew'] = 'Definir un novo formulario de cualificación dende cero';
 $string['manageactionshare'] = 'Publicar o formulario como un modelo novo';
-$string['manageactionshareconfirm'] = 'Vai gardar unha copia do formulario de cualificación «{$a}» como modelo público novo. Outros usuarios do seu sitio seran quen de crear novas formas de cualificación nas súas actividades a partir dese modelo.';
+$string['manageactionshareconfirm'] = 'Vai gardar unha copia do formulario de cualificación «{$a}» como modelo público novo. Outros usuarios do seu sitio serán quen de crear novas formas de cualificación nas súas actividades a partir dese modelo.';
 $string['manageactionsharedone'] = 'O formulario foi correctamente gardado como un modelo';
 $string['noitemid'] = 'Non é posíbel cualificar. Non existe o elemento cualificado.';
 $string['nosharedformfound'] = 'Non se atoparon modelos';
@@ -82,7 +82,7 @@ $string['privacy:metadata:grading_instances:timemodified'] = 'O momento no que s
 $string['privacy:metadata:gradingformpluginsummary'] = 'Datos para o método de cualificación.';
 $string['searchownforms'] = 'incluír os meus propios formularios';
 $string['searchtemplate'] = 'Busca de formularios de cualificación';
-$string['searchtemplate_help'] = 'Pode buscar un formulario de cualificación e utilizalo como modelo para dispor aquí dun novo formulario de cualificación. Simplemente escriba as palabras que deben aparecer nalgún lugar do nome do formulario, a súa descrición ou o corpo do formulario en si. Para buscar una frase, envolva toda a consulta entre comiñas dobres.
+$string['searchtemplate_help'] = 'Pode buscar un formulario de cualificación e utilizalo como modelo para dispor aquí dun novo formulario de cualificación. Simplemente escriba as palabras que deben aparecer nalgún lugar do nome do formulario, a súa descrición ou o corpo do formulario en si. Para buscar una frase, envolva toda a consulta entre comiñas inglesas.
 
 De xeito predeterminado, só se incluirán nos resultados da busca os formularios de cualificación que se teñan gardado como modelos compartidos. Tamén pode incluír todos os seus formularios de cualificación nos resultados da busca. Deste xeito, vostede pode simplemente volver a empregar os formularios de cualificación sen compartilos. Soamente os formularios marcados como «Listo para empregar» poden empregarse deste xeito.';
 $string['statusdraft'] = 'Versión preliminar';

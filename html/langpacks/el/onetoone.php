@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'onetoone', language 'el', version '3.11'.
+ * Strings for component 'onetoone', language 'el', version '4.1'.
  *
  * @package     onetoone
  * @category    string
@@ -74,7 +74,7 @@ $string['delete'] = 'Διαγραφή';
 $string['deleteall'] = 'Διαγραφή όλων';
 $string['deletesession'] = 'Διαγραφή συνόδου';
 $string['deletesessionconfirm'] = 'Σίγουρα θέλετε να διαγράψετε αυτήν την σύνοδο και όλες τις εγγραφές για αυτή τη σύνοδο;';
-$string['deletingsession'] = 'Διαγραφή της συνόδου του {$a}';
+$string['deletingsession'] = 'Διαγραφή συνόδου σε {$a}...';
 $string['description'] = 'Κείμενο εισαγωγής';
 $string['details'] = 'Λεπτομέρειες';
 $string['discountcode'] = 'Κωδικός έκπτωσης';
@@ -92,9 +92,9 @@ $string['email:subject'] = 'Θέμα';
 $string['emailmanager'] = 'Αποστολή ειδοποίησης διευθυντή';
 $string['emailmanagercancellation'] = '# Αποστολή ειδοποίησης στον διευθυντή';
 $string['emailmanagerconfirmation'] = '# Αποστολή ειδοποίησης στον διευθυντή';
-$string['emailmanagerconfirmation_help'] = 'Όταν επιλεγεί «Αποστολή ειδοποίησης στον διευθυντή», ένα μήνυμα επιβεβαίωσης θα σταλεί στον διευθυντή του μαθητευόμενου, λίγες μέρες πριν την ημερομηνία έναρξης της συνόδου ένας-προς-έναν.';
+$string['emailmanagerconfirmation_help'] = 'Όταν επιλεγεί «Αποστολή ειδοποίησης στον διευθυντή», ένα μήνυμα επιβεβαίωσης θα σταλεί στον διευθυντή του εκπαιδευόμενου, λίγες μέρες πριν την ημερομηνία έναρξης της συνόδου ένας-προς-έναν.';
 $string['emailmanagerreminder'] = '# Αποστολή ειδοποίησης στον διευθυντή';
-$string['emailmanagerreminder_help'] = 'Όταν επιλεγεί «Αποστολή ειδοποίησης στον διευθυντή», ένα μήνυμα υπενθύμισης θα σταλεί στον διευθυντή του μαθητευόμενου, λίγες μέρες πριν την ημερομηνία έναρξης της συνόδου ένας-προς-έναν.';
+$string['emailmanagerreminder_help'] = 'Όταν επιλεγεί «Αποστολή ειδοποίησης στον διευθυντή», ένα μήνυμα υπενθύμισης θα σταλεί στον διευθυντή του εκπαιδευόμενου, λίγες μέρες πριν την ημερομηνία έναρξης της συνόδου ένας-προς-έναν.';
 $string['emptylocation'] = 'Η τοποθεσία ήταν άδεια';
 $string['enrolled'] = 'εγγράφηκε';
 $string['error:addalreadysignedupattendee'] = 'Ο/Η {$a} έχει ήδη εγγραφεί για αυτήν την ένας-προς-έναν δραστηριότητα.';
@@ -114,7 +114,7 @@ $string['error:couldnotfindsession'] = 'Αδυναμία εύρεσης της �
 $string['error:couldnotsavecustomfield'] = 'Αδυναμία αποθήκευσης προσαρμοσμένου πεδίου';
 $string['error:couldnotupdatecalendar'] = 'Αδυναμία ενημέρωσης γεγονότος συνόδου στο ημερολόγιο.';
 $string['error:couldnotupdatefield'] = 'Αδυναμία ενημέρωσης προσαρμοσμένου πεδίου συνόδου.';
-$string['error:couldnotupdatemanageremail'] = 'Αδυναμία ενημέρωσης διεύθυνσης ηλε.ταχυδρομείου του διαχειριστή.';
+$string['error:couldnotupdatemanageremail'] = 'Αδυναμία ενημέρωσης διεύθυνσης ηλε.ταχυδρομείου του διευθυντή.';
 $string['error:couldnotupdatenotice'] = 'Αδυναμία ενημέρωσης ειδοποίησης ιστοτόπου.';
 $string['error:couldnotupdatesession'] = 'Αδυναμία ενημέρωσης συνόδου';
 $string['error:coursemisconfigured'] = 'Το μάθημα έχει μη έγκυρες ρυθμίσεις';
@@ -172,7 +172,7 @@ $string['onetoonesession'] = 'Σύνοδος ένας-προς-έναν';
 $string['options'] = 'Επιλογές';
 $string['or'] = 'ή';
 $string['order'] = 'Παραγγελία';
-$string['place'] = 'Δωμάτιο';
+$string['place'] = 'Αίθουσα';
 $string['placeholder:alldates'] = '[ΌλεςΟιΗμερομηνίες]';
 $string['placeholder:attendeeslink'] = '[σύνδεσμοςπαρουσιών]';
 $string['placeholder:cost'] = '[κόστος]';
@@ -194,14 +194,14 @@ $string['registeredon'] = 'Καταχωρήθηκε στις';
 $string['registrations'] = 'Καταχωρήσεις';
 $string['reminder'] = 'Υπενθύμιση';
 $string['reminderinstrmngr'] = '# Ειδοποίηση για διευθυντή';
-$string['reminderinstrmngr_help'] = 'Όταν επιλεγεί **Αποστολή ειδοποίησης στον διευθυντή**, το κείμενο στο πεδίο **Ειδοποίηση για διευθυντή** αποστέλλεται στον διευθυντή ενός μαθητευόμενου, πληροφορώντας τον ότι ο μαθητευόμενος έχει εγγραφεί για μια σύνοδο ένας-προς-έναν.';
+$string['reminderinstrmngr_help'] = 'Όταν επιλεγεί **Αποστολή ειδοποίησης στον διευθυντή**, το κείμενο στο πεδίο **Ειδοποίηση για διευθυντή** αποστέλλεται στον διευθυντή ενός εκπαιδευόμενου, πληροφορώντας τον ότι ο εκπαιδευόμενος έχει εγγραφεί για μια σύνοδο ένας-προς-έναν.';
 $string['remindermessage'] = 'Μήνυμα υπενθύμισης';
 $string['remindermessage_help'] = 'Αυτό το μήνυμα αποστέλλεται μερικές ημέρες πριν μια σύνοδο ένας-προς-έναν.';
 $string['reminderperiod'] = 'Ημέρες πριν για αποστολή μηνύματος';
 $string['reminderperiod_help'] = 'Το μήνυμα υπενθύμισης θα αποστέλλεται τόσες ημέρες πριν την έναρξη της συνόδου.';
 $string['requestmessage'] = 'Μήνυμα αιτήματος';
 $string['requeststablesummary'] = 'Άτομα που αιτούνται να παρακολουθήσουν αυτήν την σύνοδο.';
-$string['room'] = 'Δωμάτιο';
+$string['room'] = 'Αίθουσα';
 $string['saveallfeedback'] = 'Αποθήκευση όλων των αποκρίσεων';
 $string['saveattendance'] = 'Αποθήκευση παρουσιών';
 $string['scheduledsession'] = 'Χρονοπρογραμματισμένη σύνοδος';

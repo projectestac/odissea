@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlabeltype_coursedata', language 'el', version '3.11'.
+ * Strings for component 'customlabeltype_coursedata', language 'el', version '4.1'.
  *
  * @package     customlabeltype_coursedata
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['concepts'] = 'Βασικές έννοιες';
-$string['coursedata:addinstance'] = 'Προσθήκη στιγμιότυπου';
+$string['coursedata:addinstance'] = 'Προσθήκη στιγμιοτύπου';
 $string['coursedata:view'] = 'Μπορεί να δει το περιεχόμενο';
 $string['duration'] = 'Διάρκεια';
 $string['followers'] = 'Επόμενα μαθήματα';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'de', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'de', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -65,6 +65,7 @@ $string['pleaseenterananswer'] = 'Geben Sie bitte eine Antwort ein';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Geben Sie bitte Ihre Antwort ohne ein Trennungzeichen ({$a}) zwischen den Tausendern ein.';
 $string['pluginname'] = 'Numerisch';
 $string['pluginname_help'] = 'Aus Nutzersicht sehen numerische Fragen wie gewöhnliche Kurztextfragen aus. Der Unterschied liegt darin, dass numerische Fragen mit einer Fehlertoleranz versehen werden können. Beispiel: Ist die Antwort 10 und die Fehlertoleranz liegt bei 2, so sind alle Antworten von 8 bis 12 richtig.';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = 'Numerische Frage hinzufügen';
 $string['pluginnameediting'] = 'Numerische Frage ändern';
 $string['pluginnamesummary'] = 'Das Plugin "Numerische Frage" erlaubt eine numerische Antwort (auch mit Einheiten), die gegen einige Modellantworten, ggf. mit Toleranzen, bewertet wird.';
@@ -108,11 +109,6 @@ $string['unitposition'] = 'Position der Einheit';
 $string['units'] = 'Einheiten';
 $string['unitselect'] = 'ein Dropdown-Menü';
 $string['unitx'] = 'Einheit {no}';
-$string['validnumberformats'] = 'Gültige Zahlenformate';
-$string['validnumberformats_help'] = '* Normale Zahlenschreibweise 13500.67; 13 500.67: 13500,67; 13 500,67
-* Bei Verwendung des Tausendertrennzeichens muss IMMER das Dezimalkomma gesetzt sein wie in 13.500,67, also 13.500,
-* Die Exponentenschreibweise 1,350067 * 10<sup>4</sup> wird so notiert 1,350067 E4; 1,350067 E04';
-$string['validnumbers'] = '13500.67 : 13 500.67 : 13500,67: 13 500,67 : 1.350067 E4 : 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} muss eine Zahl sein';
 $string['xmustnotbenumeric'] = '{$a} kann keine Zahl sein';
 $string['youmustenteramultiplierhere'] = 'Sie müssen hier einen Multiplikationsfaktor eingeben.';

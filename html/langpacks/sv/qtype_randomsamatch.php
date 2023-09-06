@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'sv', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'sv', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -30,6 +30,7 @@ $string['nosaincategory'] = 'Det finns inga kortsvars-frågor i den kategori \'{
 $string['notenoughsaincategory'] = 'Det finns bara {$a->nosaquestions} kortsvars-frågor i den kategori \'{$a->catname}\' fu valde. Välj en annan kategori, och producera några fler frågor i den kategorin eller reducera det antal frågor du har valt.';
 $string['pluginname'] = 'Slumpmässiga korta svar matchning';
 $string['pluginname_help'] = 'Från elevens perspektiv ser detta bara ut som en matchningsfråga. Skillnaden är att listan med namn eller påståenden (frågor) för matchning hämtas slumpmässigt från kortsvarsfrågora i den aktuella kategorin. Det bör finnas tillräckligt med oanvända kortsvarsfrågor i kategorin, annars kommer ett felmeddelande att visas.';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = 'Lägga till en slumpmässig kort svar matchningsfråga';
 $string['pluginnameediting'] = 'Redigera en slumpmässig kort svar matchningsfråga';
 $string['pluginnamesummary'] = 'Som en matchningsfråga, dock skapad slumpmässigt från de kortsvarsfrågorna i en viss kategori.';

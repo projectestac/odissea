@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinepoodll', language 'ca', version '3.11'.
+ * Strings for component 'assignsubmission_onlinepoodll', language 'ca', version '4.1'.
  *
  * @package     assignsubmission_onlinepoodll
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['default_help'] = 'Si s\'habilita, aquest mètode de tramesa s\'habilitarà per defecte per a totes les tasques noves.';
 $string['deletesubmission'] = 'Elimina aquesta tramesa.';
-$string['yes'] = 'sí';
+$string['yes'] = 'Sí';

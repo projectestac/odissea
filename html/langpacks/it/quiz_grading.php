@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'it', version '3.11'.
+ * Strings for component 'quiz_grading', language 'it', version '4.1'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,11 +49,12 @@ $string['graded'] = '(valutati)';
 $string['gradenextungraded'] = 'Valuta i successivi {$a} tentativi non valutati';
 $string['gradeungraded'] = 'Valuta tutti i {$a} tentativi non valutati';
 $string['grading'] = 'Valutazione manuale';
-$string['grading:viewidnumber'] = 'Visualizzare il codice identificativo dello studente durante la valutazione';
+$string['grading:viewidnumber'] = 'Visualizzare i campi identificativi dello studente durante la valutazione';
 $string['grading:viewstudentnames'] = 'Visualizzare i nomi degli studenti durante la valutazione';
 $string['gradingall'] = 'Tutti i {$a} tentativi su questa domanda';
 $string['gradingattempt'] = 'Tentativo numero {$a->attempt} di {$a->fullname}.';
 $string['gradingattemptsxtoyofz'] = 'Valutazione tentativi da {$a->from} a {$a->to} di {$a->of}';
+$string['gradingattemptwithcustomfields'] = 'Tentativo numero {$a->attempt} di {$a->fullname} ({$a->customfields})';
 $string['gradingattemptwithidnumber'] = 'Tentativo numero {$a->attempt} di {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Successivi {$a} tentativi non valutati';
 $string['gradingnotallowed'] = 'Non hai l\'autorizzazione necessaria per valutare manualmente le risposte di questo quiz';
@@ -69,6 +70,7 @@ $string['noquestionsfound'] = 'Non sono state trovate domande valutate a mano';
 $string['nothingfound'] = 'Non ci sono elementi da visualizzare';
 $string['options'] = 'Opzioni';
 $string['orderattempts'] = 'Ordine tentativi';
+$string['orderattemptsby'] = 'Ordina tentativi per';
 $string['pluginname'] = 'Valutazione manuale';
 $string['privacy:preference:order'] = 'Ordine di visualizzazione dei tentativi che devono essere valutati.';
 $string['privacy:preference:pagesize'] = 'Numero di tentativi da visualizzare sulle pagine dell\'interfaccia di valutazione.';
@@ -77,8 +79,9 @@ $string['questionname'] = 'Nome domanda';
 $string['questionsperpage'] = 'Domande per pagina';
 $string['questionsthatneedgrading'] = 'Domande in attesa di valutazione';
 $string['questiontitle'] = 'Domanda {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} tentativi {$a->openspan} valutati {$a->closespan}).';
+$string['random'] = 'Casuale';
 $string['randomly'] = 'Casualmente';
-$string['saveandnext'] = 'Salva e vai alla pagina successiva';
+$string['saveandnext'] = 'Salva e visualizza successivo';
 $string['showstudentnames'] = 'Visualizza nome degli studenti';
 $string['tograde'] = 'Da valutare';
 $string['total'] = 'Totale';

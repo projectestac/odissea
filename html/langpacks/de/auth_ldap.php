@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'de', version '3.11'.
+ * Strings for component 'auth_ldap', language 'de', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -125,6 +125,10 @@ $string['diag_toooldversion'] = 'Es ist sehr unwahrscheinlich, dass ein moderner
 $string['didntfindexpiretime'] = 'Für die Funktion password_expire() wurde kein Gültigkeitsende gefunden';
 $string['didntgetusersfromldap'] = 'Kein Nutzerkonto über LDAP einlesbar! Fehler?';
 $string['gotcountrecordsfromldap'] = '{$a} Datensätze von LDAP eingelesen';
+$string['invalidusererrors'] = 'Warnung: Anlegen von {$a} Nutzerkonten übersprungen';
+$string['invaliduserexception'] = 'Fehler: Neues Nutzerkonto kann nicht angelegt werden.
+Details: {$a}
+Nutzer/in übersprungen.';
 $string['ldapnotconfigured'] = 'Die URL zum LDAP-Server ist aktuell nicht konfiguriert.';
 $string['morethanoneuser'] = 'Mehr als ein Nutzerkonto in LDAP gefunden! Es wird nur das erste dieser Nutzerkontos verwendet.';
 $string['needbcmath'] = 'Sie benötigen die PHP-Extension BCMath, um das Prüfen abgelaufener Kennwörter mit Active Directory nutzen zu können.';
@@ -162,7 +166,6 @@ $string['updateremfail'] = 'Fehler beim Aktualisieren des LDAP-Datensatzes {$a->
 <br/>Alter Moodle-Wert: \'{$a->ouvalue}\' - neuer Wert: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Fehler beim Aktualisieren von LDAP mit mehrdeutigem Bereich {$a->key}.
 <br />Alter Moodle-Wert: \'{$a->ouvalue}\' - neuer Wert: \'{$a->nuvalue}\'';
-$string['updateremfailfield'] = 'Fehler beim Update von LDAP mit einem nicht existierenden Feld (\'{$a->ldapkey}\'). Schlüssel ({$a->key}) - alter Moodle Wert: \'{$a->ouvalue}\' - neuer Wert: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Nutzereintrag konnte bei der externen Aktualisierung nicht gefunden werden.
 <br />Details: search base: \'{$a->userdn}\'; search filter: \'(objectClass=*)\'; search attributes: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() unterstützt nicht den ausgewählten Nutzertyp: {$a}';

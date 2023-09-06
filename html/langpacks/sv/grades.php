@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'sv', version '3.11'.
+ * Strings for component 'grades', language 'sv', version '4.1'.
  *
  * @package     grades
  * @category    string
@@ -63,18 +63,23 @@ $string['aggregation_help'] = 'Aggregeringen avgör hur resultat i en kategori k
 * Högsta betyg
 * Typ av betyg - Det betyg som förekommer oftast
 * Naturlig - Summan av alla betygsvärden skalade efter vikt';
+$string['aggregation_link'] = 'grade/aggregation';
 $string['aggregationcoef'] = 'Aggregeringskoefficient';
 $string['aggregationcoefextra'] = 'Extra tillägg';
 $string['aggregationcoefextra_help'] = 'Om aggregeringen är \'Summan av alla betyg\' eller \'Enkelt vägt medelvärde\' och checkboxen för extra tilläggär förkryssad läggs inte betygspostens högsta betyg till kategorins högsta betyg. Detta kommer att resultera i möjligheten att uppnå högsta betyg i kategorin utan att ha högsta betyg i alla betygsposter. Om webbplatsadministratören har aktiverat resultat över max kan det finnas resultat över det högsta.
 
 Om aggregeringen är \'Medelvärde av betyg (med extra tillägg)\' och det extra tillägget är inställt på ett värde som är större än noll är det extra tillägget den faktor med vilken betyget multipliceras innan den läggs till summan efter uträkningen av medelvärdet.';
+$string['aggregationcoefextra_link'] = 'grade/aggregation';
 $string['aggregationcoefextrasum'] = 'Extra tillägg';
 $string['aggregationcoefextrasum_help'] = 'Om checkboxen för extra tillägg är förkryssad läggs inte betygsobjektets högsta betyg till i kategorins högsta betyg, vilket resulterar i möjligheten att högsta betyg kan uppnås (eller betyg över det högsta om det är aktiverat av webbplatsens administratör) i kategorin utan att ha högsta betyg i alla betygsobjekten.';
+$string['aggregationcoefextrasum_link'] = 'grade/aggregation';
 $string['aggregationcoefextrasumabbr'] = '+';
 $string['aggregationcoefextraweight'] = 'Vikt för extra tillägg';
 $string['aggregationcoefextraweight_help'] = 'Om den extra tilläggsvikten är inställd på ett värde som är större än noll fungerar betyget som ett extra tillägg under aggregering. Talet är den faktor med vilken betyget multipliceras innan det läggs till summan för uträkningen av medelvärdet.';
+$string['aggregationcoefextraweight_link'] = 'grade/aggregation';
 $string['aggregationcoefweight'] = 'Vikt för komponent';
 $string['aggregationcoefweight_help'] = 'Viktningen används i kategoriaggregeringen för att påverka objektets betydelse jämfört med andra betygsobjekt i samma kategori.';
+$string['aggregationcoefweight_link'] = 'grade/aggregation';
 $string['aggregationhintdropped'] = '( Överhoppad )';
 $string['aggregationhintexcluded'] = '( Exkluderad )';
 $string['aggregationhintextra'] = '( Extra tillägg )';
@@ -103,6 +108,7 @@ $string['bulkcheckboxes'] = 'Kryssrutor för bulk';
 $string['calculatedgrade'] = 'Beräknat betyg';
 $string['calculation'] = 'Beräkning';
 $string['calculation_help'] = 'En betygsberäkning är en formel som används för att bestämma betyg. Formeln ska börja med ett likhetstecken (=) och kan använda vanliga matematiska operatorer som till exempel max, min och summa. Om så önskas kan andra betygsobjekt tas med i beräkningen genom att skriva ID-numren i dubbla hakparenteser.';
+$string['calculation_link'] = 'grade/calculation';
 $string['calculationadd'] = 'Lägg till beräkning';
 $string['calculationedit'] = 'Redigera beräkning';
 $string['calculationsaved'] = 'Beräkningen har sparats';
@@ -149,6 +155,7 @@ $string['decimalpoints_help'] = 'Detta specificerar det antal decimaler som ska 
 $string['default'] = 'Standardvärde';
 $string['defaultprev'] = 'Standardvärde ({$a})';
 $string['deletecategory'] = 'Ta bort kategori';
+$string['deletescale'] = 'Ta bort skala';
 $string['disablegradehistory'] = 'Inaktivera betygshistorik';
 $string['disablegradehistory_help'] = 'Inaktivera spårning av ändringshistorik i betygsrelaterade tabeller. Detta kan snabba upp servern lite och bevara utrymme i databasen.';
 $string['displaylettergrade'] = 'Visa bokstavsbetyg';
@@ -214,6 +221,7 @@ $string['expand'] = 'Expandera kategori';
 $string['expandcriterion'] = 'Expandera kriterier';
 $string['export'] = 'Exportera';
 $string['exportalloutcomes'] = 'Exportera alla resultat';
+$string['exportas'] = 'Exportera som';
 $string['exportfeedback'] = 'Ta med återkoppling i export';
 $string['exportfeedback_desc'] = 'Denna kan åsidosättas under export.';
 $string['exportformatoptions'] = 'Alternativ för exportformat';
@@ -263,6 +271,7 @@ $string['gradebookcalculationswarning'] = 'OBS! Vissa fel har upptäckts vid ber
 Den nyare versionen är {$a->currentversion}; du använder betygsboksversion {$a->gradebookversion}. Du kan se en lista över ändringar i <a href="{$a->url}">Förändringar i betygsboksberäkningar</a>.';
 $string['gradebookhiddenerror'] = 'Betygsboken är inställd att dölja allt för studenterna.';
 $string['gradebookhistories'] = 'Historik för betyg';
+$string['gradebooknavigationmenu'] = 'Meny för betygsbok';
 $string['gradebooksetup'] = 'Betygsboksinställningar';
 $string['gradeboundary'] = 'Gräns för bokstavsbetyg';
 $string['gradeboundary_help'] = 'Den här inställningen bestämmer den lägsta procentsats över vilken betyg tilldelas betygsbokstäver.';
@@ -396,6 +405,7 @@ $string['identifier'] = 'Identifiera användare genom';
 $string['idnumbers'] = 'ID-nummer';
 $string['ignore'] = 'Ignorera';
 $string['import'] = 'Importera';
+$string['importas'] = 'Importera som';
 $string['importcsv'] = 'Importera CSV';
 $string['importcsv_help'] = 'Betyg kan importeras via en CSV-fil formaterad enligt följande:
 
@@ -405,6 +415,7 @@ $string['importcsv_help'] = 'Betyg kan importeras via en CSV-fil formaterad enli
 * Ett fältnamn som innehåller användaridentitetsdata krävs - antingen användarnamn, ID-nummer eller e-postadress
 
 En fil med rätt format kan erhållas genom att du först exporterar några betyg. Filen kan sedan redigeras och sparas som en CSV-fil.';
+$string['importcsv_link'] = 'grade/import/csv/index';
 $string['importcustom'] = 'Importera som standardresultat (endast den här kursen).';
 $string['importdata'] = 'Data';
 $string['importdata_help'] = 'Betyg kan klistras in direkt från ett OpenDocument- eller Excel-kalkylblad formaterat enligt följande:
@@ -424,6 +435,7 @@ $string['importfrom'] = 'Importera från';
 $string['importoutcomenofile'] = 'Den upppladdade filen är tom eller skadad. V.g. verifiera att det här är en giltig fil. Problemet upptäcktes vid rad {$a}; detta utlöses av att dataraderna inte har lika många kolumner som den första raden (raden med rubriker) eller av att den importerade filen saknar de förväntade rubrikerna. Titta på den exporterade filen för att se ett exempel på en giltig rubrik.';
 $string['importoutcomes'] = 'Importera resultat';
 $string['importoutcomes_help'] = 'Resultat kan importeras via csv fil med samma format som för csv fil för exporterade resultat.';
+$string['importoutcomes_link'] = 'grade/outcome';
 $string['importoutcomesuccess'] = 'Importerade resultat "{$a->name}" med ID #{$a->id}';
 $string['importplugins'] = 'Importpluginmoduler';
 $string['importpreview'] = 'Förhandsgranskning av import';
@@ -470,6 +482,7 @@ $string['locktimedate'] = 'Låst efter: {$a}';
 $string['lockverbose'] = 'Lås {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['lowest'] = 'Lägsta';
 $string['lowgradeletter'] = 'Lågt';
+$string['manageoutcomes'] = 'Hantera resultat';
 $string['manualitem'] = 'Manuell komponent';
 $string['mapfrom'] = 'Mappa från';
 $string['mapfrom_help'] = 'Välj kolumnen i kalkylbladet som innehåller data för att identifiera användaren, till exempel användarnamn, användar-ID eller e-postadress.';
@@ -490,6 +503,7 @@ $string['minimum_show_help'] = 'Lägsta betyg som används vid beräkning av bet
 $string['minmaxtouse'] = 'Lägsta och högsta betyg i beräkningar';
 $string['minmaxtouse_desc'] = 'Den här inställningen avgör om de initiala lägsta- och högstabetygen från när betyget gavs ska användas, eller de lägsta och högsta betygen enligt vad som anges i inställningarna för betygsobjektet när den beräknar det betyg som visas i betygsboken. Det rekommenderas att den här inställningen ändras vid en lågtrafiktid, eftersom alla betyg kommer att räknas  om, vilket kan resultera i en hög serverbelastning.';
 $string['minmaxtouse_help'] = 'Den här inställningen avgör om du ska använda de första minimi- och maximibetygen från när resultatet gavs, eller de lägsta och högsta resultat som anges i inställningarna för betygsobjektet när du beräknar betyget som visas i betygsboken.';
+$string['minmaxtouse_link'] = 'Grades_min_max';
 $string['minmaxupgradedgrades'] = 'Vissa resultat har ändrats för att lösa en inkonsekvens i betygsboken som orsakas av en ändring av de lägsta och högsta betyg som används vid beräkning av det betyg som visas. Vi rekommenderar att ändringarna granskas och accepteras.';
 $string['minmaxupgradefixbutton'] = 'Lös inkonsekvent betygsinställning';
 $string['minmaxupgradewarning'] = 'En inkonsekvens har upptäckts för vissa betyg. Detta på grund av en ändring av de lägsta- och högstabetyg som använts vid beräkningen av det betyg som visas i betygsboken. Vi rekommenderar att inkonsekvensen löses genom att klicka på knappen nedan, även om detta resulterar i att vissa betyg ändras.';
@@ -536,6 +550,7 @@ $string['mygrades'] = 'Betygsbokslänk för användare';
 $string['mygrades_desc'] = 'Denna inställning gör det möjligt att länka till en extern betygsbok i användarmenyn.';
 $string['mypreferences'] = 'Mina inställningar';
 $string['myreportpreferences'] = 'Mina rapportinställningar';
+$string['myself'] = 'Mig själv';
 $string['navmethod'] = 'Navigeringsmetod';
 $string['neverdeletehistory'] = 'Radera aldrig historiken';
 $string['newcategory'] = 'Ny kategori';
@@ -546,6 +561,8 @@ $string['nocategories'] = 'Det gick inte att hitta eller lägga till betygskateg
 $string['nocategoryname'] = 'Inget kategorinamn angavs';
 $string['nocategoryview'] = 'Ingen kategori att visa per';
 $string['nocourses'] = 'Det finns inga kurser ännu';
+$string['noexistingoutcomes'] = 'Det finns inga befintliga resultat.';
+$string['noexistingscales'] = 'Det finns inga befintliga skalor.';
 $string['noforce'] = 'Tvinga inte';
 $string['nogradeletters'] = 'Inga betygsbokstäver har angivits';
 $string['nogradesreturned'] = 'Inga betyg returnerades';
@@ -573,6 +590,7 @@ $string['onascaleof'] = 'på en skala av  {$a->grademin} till {$a->grademax}';
 $string['operations'] = 'Operationer';
 $string['options'] = 'Alternativ';
 $string['others'] = 'Andra';
+$string['otheruser'] = 'Användare';
 $string['outcome'] = 'Resultat';
 $string['outcome_help'] = 'Den här inställningen bestämmer utfallet som det här betygsobjektet kommer att representera i betygsboken.';
 $string['outcomeassigntocourse'] = 'Tilldela ett annat resultat till den här kursen';
@@ -713,11 +731,15 @@ $string['savechanges'] = 'Spara';
 $string['savepreferences'] = 'Spara inställningar';
 $string['scaleconfirmdelete'] = 'Är du säker på att du vill ta bort "{$a}"-skalan?';
 $string['scaledpct'] = 'Skalad %';
+$string['searchgroups'] = 'Sök i grupper';
+$string['searchusers'] = 'Sök bland användare';
 $string['seeallcoursegrades'] = 'Visa alla kursbetyg';
 $string['select'] = 'Välj {$a}';
 $string['selectalloroneuser'] = 'Välj alla eller en användare';
 $string['selectauser'] = 'Välj en användare';
 $string['selectdestination'] = 'Välj destination för {$a}';
+$string['selectgrouplink'] = 'Välj grupp';
+$string['selectuserlink'] = 'Välj användare';
 $string['separator'] = 'Avgränsare';
 $string['separator_help'] = 'Välj avgränsare som används i CSF-filen. Vanligtvis är detta ett komma eller semikolon.';
 $string['sepcolon'] = 'Kolon';
@@ -730,9 +752,11 @@ $string['setgradeletters'] = 'Ange betygsbokstäver';
 $string['setpreferences'] = 'Ställ in inställningar';
 $string['setting'] = 'Inställning';
 $string['settings'] = 'Inställningar';
+$string['setup'] = 'Inställningar';
 $string['setweights'] = 'Ange viktningar';
 $string['showactivityicons'] = 'Visa aktivitetsikoner';
 $string['showactivityicons_help'] = 'Om aktiverad visas aktivitetsikoner bredvid aktivitetsnamnen.';
+$string['showallgrades'] = 'Visa alla betyg';
 $string['showallhidden'] = 'Visa dolda';
 $string['showallstudents'] = 'Visa alla studenter';
 $string['showanalysisicon'] = 'Visa betygsanalysikonen';
@@ -856,6 +880,7 @@ $string['userpreferences'] = 'Användarinställningar';
 $string['useweighted'] = 'Använd viktat';
 $string['verbosescales'] = 'Detaljerade skalor';
 $string['verbosescales_help'] = 'En utförlig skala använder ord i stället för siffror. Ställ in på \'Ja\' om både numeriska och utförliga skalor ska importeras. Ställ in på \'Nej\' om endast numeriska skalor ska importeras.';
+$string['viewas'] = 'Visa rapport som';
 $string['viewbygroup'] = 'Grupp';
 $string['viewgrades'] = 'Visa betyg';
 $string['weight'] = 'Vikt';

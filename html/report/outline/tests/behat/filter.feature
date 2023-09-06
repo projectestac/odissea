@@ -19,26 +19,25 @@ Feature: Filter an outline report
       | student1 | C1 | student |
       | student2 | C1 | student |
     And the following "activities" exist:
-      | activity | name       | description       | course | idnumber | section |
-      | forum    | Forum name | Forum description | C1     | FORUM01  | 1       |
-      | book     | Book name  |                   | C1     | BOOK01   | 1       |
+      | activity | name       | course | idnumber | section |
+      | forum    | Forum name | C1     | FORUM01  | 1       |
+      | book     | Book name  | C1     | BOOK01   | 1       |
     When I am on the "Course 1" course page logged in as admin
 
   Scenario: Filter the outline report by start date
     Given I navigate to "Plugins > Logging > Manage log stores" in site administration
     And "Enable" "link" should exist in the "Legacy log" "table_row"
     And "Disable" "link" should exist in the "Standard log" "table_row"
-    And I am on the "Course 1" course page logged in as student1
-    And I follow "Forum name"
+    And I am on the "Forum name" "forum activity" page logged in as student1
     And the log timestamp for "student1" and "FORUM01" is set to "12 June 2017 12:49:00"
     And I am on "Course 1" course homepage
     And I follow "Book name"
     And the log timestamp for "student1" and "BOOK01" is set to "10 June 2017 14:01:00"
-    And I am on the "Course 1" course page logged in as student2
-    And I follow "Book name"
+    And I am on the "Book name" "book activity" page logged in as student2
     And the log timestamp for "student2" and "BOOK01" is set to "14 June 2017 11:02:00"
     And I am on the "Course 1" course page logged in as admin
-    And I navigate to "Reports > Activity report" in current page administration
+    And I navigate to "Reports" in current page administration
+    And I click on "Activity report" "link"
     And I should see "2 views by 2 users" in the "Book name" "table_row"
     And I should see "1 views by 1 users" in the "Forum name" "table_row"
     When I set the following fields to these values:
@@ -46,7 +45,7 @@ Feature: Filter an outline report
       | filterstartdate[day]     | 12   |
       | filterstartdate[month]   | June |
       | filterstartdate[year]    | 2017 |
-    And I press "Filter"
+    And I click on "Filter" "button" in the "#fgroup_id_buttonar" "css_element"
     Then I should see "1 views by 1 users" in the "Book name" "table_row"
     And I should see "1 views by 1 users" in the "Forum name" "table_row"
 
@@ -54,17 +53,16 @@ Feature: Filter an outline report
     Given I navigate to "Plugins > Logging > Manage log stores" in site administration
     And "Enable" "link" should exist in the "Legacy log" "table_row"
     And "Disable" "link" should exist in the "Standard log" "table_row"
-    And I am on the "Course 1" course page logged in as student1
-    And I follow "Forum name"
+    And I am on the "Forum name" "forum activity" page logged in as student1
     And the log timestamp for "student1" and "FORUM01" is set to "12 June 2017 12:49:00"
     And I am on "Course 1" course homepage
     And I follow "Book name"
     And the log timestamp for "student1" and "BOOK01" is set to "10 June 2017 14:01:00"
-    And I am on the "Course 1" course page logged in as student2
-    And I follow "Book name"
+    And I am on the "Book name" "book activity" page logged in as student2
     And the log timestamp for "student2" and "BOOK01" is set to "14 June 2017 11:02:00"
     And I am on the "Course 1" course page logged in as admin
-    And I navigate to "Reports > Activity report" in current page administration
+    And I navigate to "Reports" in current page administration
+    And I click on "Activity report" "link"
     And I should see "2 views by 2 users" in the "Book name" "table_row"
     And I should see "1 views by 1 users" in the "Forum name" "table_row"
     When I set the following fields to these values:
@@ -72,6 +70,6 @@ Feature: Filter an outline report
       | filterenddate[day]     | 11   |
       | filterenddate[month]   | June |
       | filterenddate[year]    | 2017 |
-    And I press "Filter"
+    And I click on "Filter" "button" in the "#fgroup_id_buttonar" "css_element"
     Then I should see "1 views by 1 users" in the "Book name" "table_row"
     And I should not see "views by" in the "Forum name" "table_row"

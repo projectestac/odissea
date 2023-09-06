@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'it', version '3.11'.
+ * Strings for component 'antivirus', language 'it', version '4.1'.
  *
  * @package     antivirus
  * @category    string
@@ -30,6 +30,8 @@ $string['antiviruscommonsettings'] = 'Impostazioni comuni antivirus';
 $string['antiviruses'] = 'Plugin antivirus';
 $string['antivirussettings'] = 'Gestione plugin antivirus';
 $string['configantivirusplugins'] = 'Selezionare i plugin antivirus che si desidera utilizzare e la sequenza di utilizzo.';
+$string['dataerrordesc'] = 'Si è verificato un errore nell\'analizzatore dei dati.';
+$string['dataerrorname'] = 'Errore nell\'analizzatore dei dati.';
 $string['datainfecteddesc'] = 'Sono stati rilevati dati infetti.';
 $string['datainfectedname'] = 'Dati infetti';
 $string['datastream'] = 'Dati';
@@ -50,15 +52,23 @@ $string['emailscannererrordetected'] = 'Si è verificato un errore nell\'analizz
 $string['emailsubject'] = '{$a} :: Notifica Antivirus';
 $string['enablequarantine'] = 'Abilita quarantena';
 $string['enablequarantine_help'] = 'Nella cartella di quarantena verranno inseriti i file infetti per poterli ispezionare in seguito ([dataroot]/{$a}). Il caricamento dei file sarà comunque segnalato come non andato a buon fine. Qualora fosse presente un processo di analisi virus a livello di sistema, sarà necessario escludere la cartella di quarantena dall\'analisi.';
+$string['fileerrordesc'] = 'Si è verificato un errore nell\'analizzatore dei file.';
+$string['fileerrorname'] = 'Errore nell\'analizzatore dei file.';
 $string['fileinfecteddesc'] = 'È stato individuato un file infetto';
 $string['fileinfectedname'] = 'File infetto';
 $string['notifyemail'] = 'Email delle notifiche antivirus';
 $string['notifyemail_help'] = 'Le notifiche antivirus saranno indirizzate all\'email configurata in caso di individuazione di un virus. Non configurando l\'impostazione, le notifiche saranno inviate a tutti gli amministratori del sito.';
+$string['notifylevel'] = 'Livello di notifica';
+$string['notifylevel_help'] = 'I differenti livelli di notifica che si desidera ricevere';
+$string['notifylevelerror'] = 'Individua minacce ed errori durante la scansione';
+$string['notifylevelfound'] = 'Individua solamente minacce';
 $string['privacy:metadata'] = 'Il sistema Antivirus non memorizza dati personali.';
 $string['quarantinedfiles'] = 'File inseriti in quarantena dall\'antivirus';
 $string['quarantinedisabled'] = 'La quarantena è disabilitata, i file non sono stati memorizzati.';
 $string['quarantinetime'] = 'Durata massima quarantena:';
 $string['quarantinetime_desc'] = 'I file in quarantena saranno rimossi trascorsa la durata massima della quarantena.';
 $string['taskcleanup'] = 'Eliminazione file in quarantena.';
+$string['threshold'] = 'Soglia per il controllo di stato';
+$string['threshold_desc'] = 'Quanto indietro controllare rispetto a precedenti risultati relativi ad errore ed altro, come riportato su {$a}.';
 $string['unknown'] = 'Sconosciuto';
 $string['virusfound'] = '{$a->item} è stato analizzato dall\'antivirus ed è risultato infetto.';

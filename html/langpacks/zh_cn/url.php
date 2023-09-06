@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'zh_cn', version '3.11'.
+ * Strings for component 'url', language 'zh_cn', version '4.1'.
  *
  * @package     url
  * @category    string
@@ -52,16 +52,19 @@ $string['indicator:cognitivedepth'] = '网页地址资源认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 网页地址资源中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '网页地址资源认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与者已达到网页地址资源所提供的认知参与百分比(级别=未查看，查看)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '网页地址资源社会广度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在网页地址资源中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '网页地址资源社会广度';
 $string['indicator:socialbreadthdef_help'] = '在这个分析间隔内，参与者已经达到了网页地址资源所提供的社会参与百分比(级别=没有参与，单独参与)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidstoredurl'] = '不能显示此资源，URL 无效。';
 $string['invalidurl'] = '输入的 URL 无效';
 $string['modulename'] = '网页地址';
 $string['modulename_help'] = '该 URL 模块可以让老师提供一个 web 链接作为课程资源。任何线上的可自由使用的东西，如文件或图片，可以作为链接；该 URL 不必是某个网站的主页。某个网页的 URL 可以被复制和粘贴，或者老师可以使用文件选择器，从容器中选择一个链接，如 Flickr，YouTube 或者 Wikimedia（视该站点可使用的容器的情况而定）。
 
 该 URL 有一些显示选项，如嵌入显示或者在新的窗口打开该 URL 的选项，以及向该 URL 传递诸如学生姓名信息的高级选项，如果需要的话。';
+$string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = '网页地址';
 $string['page-mod-url-x'] = '任意URL模块页面';
 $string['parameterinfo'] = '&amp;参数=变量';

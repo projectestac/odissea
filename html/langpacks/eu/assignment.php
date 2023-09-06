@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'eu', version '3.11'.
+ * Strings for component 'assignment', language 'eu', version '4.1'.
  *
  * @package     assignment
  * @category    string
@@ -31,7 +31,7 @@ $string['assignment:exportsubmission'] = 'Esportatu bidalketa';
 $string['assignment:grade'] = 'Kalifikatu zeregina';
 $string['assignment:submit'] = 'Bidali zeregina';
 $string['assignment:view'] = 'Ikusi zeregina';
-$string['assignmentdisabled'] = 'Heredatutako "Zeregina 2.2" jarduera desgaituta dago.';
+$string['assignmentdisabled'] = 'Zaharkitutako "Zeregina 2.2" jarduera desgaituta dago.';
 $string['assignmentneedsupgrade'] = 'Zaharkitutako "Zeregina 2.2" jarduera ezabatua izan da.';
 $string['messageprovider:assignment_updates'] = 'Zereginen jakinarazpenak (2.2)';
 $string['modulename'] = 'Zeregina 2.2 (Desgaituta)';

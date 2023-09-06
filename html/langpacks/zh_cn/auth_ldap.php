@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'zh_cn', version '3.11'.
+ * Strings for component 'auth_ldap', language 'zh_cn', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -124,6 +124,10 @@ $string['diag_toooldversion'] = '现代LDAP服务器不太可能使用LDAPv2协�
 $string['didntfindexpiretime'] = 'password_expire()未找到过期时间。';
 $string['didntgetusersfromldap'] = '没有从LDAP获得任何用户——出错？——退出中';
 $string['gotcountrecordsfromldap'] = '从LDAP获得{$a}条记录';
+$string['invalidusererrors'] = '警告：跳过{$a}用户帐户的创建。';
+$string['invaliduserexception'] = '错误：无法创建新用户帐户。详情及原因：
+{$a}
+正在跳过此用户。';
 $string['ldapnotconfigured'] = '当前未配置LDAP 主机的 url';
 $string['morethanoneuser'] = '在LDAP中找到多于一条的用户记录。只使用第一条。';
 $string['needbcmath'] = '您需要BCMath扩展才能使用Active Directory的过期密码检查。';
@@ -157,7 +161,6 @@ $string['updatepasserrorexpire'] = 'user_update_password() 读取密码到期时
 $string['updatepasserrorexpiregrace'] = 'user_update_password() 修改密码到期时间出错。错误代码：{$a->errno}; 错误字符串：{$a->errstring}';
 $string['updateremfail'] = '更新LDAP记录出错。错误代码：{$a->errno}；错误信息：{$a->errstring}<br />键值（{$a->key}）- 旧moodle值：“{$a->ouvalue}”，新值：“{$a->nuvalue}”';
 $string['updateremfailamb'] = '无法使用不明确的字段{$a->key}更新LDAP - 旧moodle值：“{$a->ouvalue}”，新值：“{$a->nuvalue}”';
-$string['updateremfailfield'] = '无法更新 LDAP 不存在的字段  (\'{$a->ldapkey}\')。Key ({$a->key}) -Moodle旧值: \'{$a->ouvalue}\' 新值: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = '在外部更新时找不到用户。细节信息：搜索基：“{$a->userdn}”；搜索过滤器：“(objectClass=*)”；搜索属性：{$a->attribs}';
 $string['user_activatenotsupportusertype'] = '认证：ldap user_activate()不支持所选的用户类型：{$a}';
 $string['user_disablenotsupportusertype'] = '认证：ldap user_disable()不支持所选的用户类型：{$a}';

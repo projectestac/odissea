@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ja', version '3.11'.
+ * Strings for component 'hotpot', language 'ja', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -53,6 +53,7 @@ $string['ignored'] = '無視';
 $string['inprogress'] = '進行中';
 $string['modulename'] = 'HotPot';
 $string['modulename_help'] = 'HotPotモジュールでは教師がMoodleコース内にHot Potatoesクイズを追加することができます。それぞれの受験は自動評定されます。また、個々の問題がどのように答えられたのか等、評点における統計的なトレンドを表示するいくつかのレポートを利用することができます。 ';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'HotPot';
 $string['navigation'] = 'ナビゲーション';
 $string['navigation_frame'] = 'Moodleナビケーションフレーム';

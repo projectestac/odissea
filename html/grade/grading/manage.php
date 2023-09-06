@@ -82,6 +82,8 @@ $PAGE->set_url($manager->get_management_url($returnurl));
 navigation_node::override_active_url($manager->get_management_url());
 $PAGE->set_title(get_string('gradingmanagement', 'core_grading'));
 $PAGE->set_heading(get_string('gradingmanagement', 'core_grading'));
+// We don't need to show the default header on a management page.
+$PAGE->activityheader->disable();
 $output = $PAGE->get_renderer('core_grading');
 
 // process the eventual change of the active grading method
@@ -146,8 +148,12 @@ if (!empty($message)) {
     echo $output->management_message($message);
 }
 
-echo $output->heading(get_string('gradingmanagementtitle', 'core_grading', array(
-    'component' => $manager->get_component_title(), 'area' => $manager->get_area_title())));
+if ($PAGE->has_secondary_navigation()) {
+    echo $output->heading(get_string('gradingmanagement', 'core_grading'));
+} else {
+    echo $output->heading(get_string('gradingmanagementtitle', 'core_grading', array(
+        'component' => $manager->get_component_title(), 'area' => $manager->get_area_title())));
+}
 
 // display the active grading method information and selector
 echo $output->management_method_selector($manager, $PAGE->url);

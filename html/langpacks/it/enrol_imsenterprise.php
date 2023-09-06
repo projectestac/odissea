@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'it', version '3.11'.
+ * Strings for component 'enrol_imsenterprise', language 'it', version '4.1'.
  *
  * @package     enrol_imsenterprise
  * @category    string
@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'Dopo aver salvato le impostazioni, è possibile';
-$string['allowunenrol'] = 'I dati IMS possono <strong>disiscrivere</strong> gli studenti/docenti';
+$string['allowunenrol'] = 'I dati IMS possono disiscrivere gli studenti/docenti';
 $string['allowunenrol_desc'] = 'Consente di rimuovere le iscrizione dai corsi se specificato nel file IMS Enterprise';
 $string['basicsettings'] = 'Impostazioni di base';
-$string['categoryidnumber'] = 'Consenti codice identificativo della categoria';
-$string['categoryidnumber_desc'] = 'IMS Enterprise creerà categorie con il codice identificativo';
+$string['categoryidnumber'] = 'Consenti codice identificativo della categoria.';
+$string['categoryidnumber_desc'] = 'IMS Enterprise creerà categorie con il codice identificativo.';
 $string['categoryseparator'] = 'Carattere di separazione delle categorie';
-$string['categoryseparator_desc'] = 'Il carattere di separazione delle categorie è obbligatorio se è abilitato anche il Codice identificativo della categoria.';
+$string['categoryseparator_desc'] = 'Il carattere di separazione delle categorie è obbligatorio se è abilitato anche il Codice identificativo e il nome della categoria.';
 $string['coursesettings'] = 'Opzioni del corso';
 $string['createnewcategories'] = 'Crea nuove categorie (nascoste) di corsi se non presenti in Moodle';
 $string['createnewcategories_desc'] = 'Se l\'elemento &lt;org&gt;&lt;orgunit&gt è presente nel file, il contenuto dell\'elemento sarà utilizzato per categorizzare i corsi da creare. La categorizzazione vale solo per i corsi nuovi, quelli già esistenti non saranno categorizzati nuovamente.
@@ -47,6 +47,8 @@ Gli utenti vengono cercati prima tramite il codice identificativo poi in base al
 $string['cronfrequency'] = 'Frequenza di attivazione';
 $string['deleteusers'] = 'Elimina gli account se è specificato nei dati IMS';
 $string['deleteusers_desc'] = 'L\'impostazione consente l\'eliminazione di account utente se specificato nel file IMS ("recstatus" deve essere impostato a 3, che significa eliminazione di un account). Di default l\'account non viene fisicamente eliminato dalla tabella degli utenti di Moodle ma solo contrassegnato come eliminato.';
+$string['disableenrolmentandremoveallroles'] = 'Sospendi iscrizione e rimuovi ruoli';
+$string['disableenrolonly'] = 'Sospendi iscrizione';
 $string['doitnow'] = 'elaborare adesso il file IMS Enterprise';
 $string['emptyattribute'] = 'Lascia vuoto';
 $string['filelockedmail'] = 'Il processo cron non riesce ad eliminare il file ({$a}) usato per le iscrizioni IMS Enterprise. L\'errore in genre indica che i permessi non sono corretti. Controllare e impostare correttamente i permessi per consentire a Moodle di eliminare il file, che altrimenti verrà elaborato ripetutamente.';
@@ -66,11 +68,13 @@ $string['messageprovider:imsenterprise_enrolment'] = 'Messaggi di iscrizione IMS
 $string['miscsettings'] = 'Miscellanea';
 $string['nestedcategories'] = 'Consenti categorie nidificate';
 $string['nestedcategories_desc'] = 'IMS Enterprise creerà categorie nidificate';
+$string['noaction'] = 'Nessuna azione';
 $string['pluginname'] = 'File IMS Enterprise';
 $string['pluginname_desc'] = 'Il plugin di iscrizione IMS Enterprise controlla ripetutamente la presenza di un file di testo in un dato percorso. Il file deve seguire le specifiche IMS Enterprise e contenere gli elementi XML relativi a persone, gruppi e appartenenza. ';
 $string['privacy:metadata'] = 'Il plugin di iscrizione File IMS Enterprise non memorizza dati personali.';
 $string['processphoto'] = 'Aggiungi una foto al profilo';
 $string['processphotowarning'] = 'ATTENZIONE: lavorare un\'immagine potrebbe aggravare il lavoro del server. Si raccomanda di NON attivare questa opzione se è previsto un elevato numero di utenti.';
+$string['removeenrolmentandallroles'] = 'Elimina iscrizione e ruoli';
 $string['restricttarget'] = 'Elabora i dati solo se destinati al sistema specificato';
 $string['restricttarget_desc'] = 'Un file di dati IMS Enterprise può essere usato per vari LMS e sistemi in uso presso le organizzazioni. È possibile indicare per quale sistema è destinato il file fornendone il nome nel tag <target> presente all\'interno del tag <properties>.
 
@@ -89,6 +93,8 @@ Il campo <userid> è un campo separato che contiene il codice ID usato dagli ute
 Alcuni student information system non forniscono il campo <userid>, nel qual caso è opportuno abilitare questa impostazione per usare <sourcedid> come userid di Moodle. Altrimenti lasciare l\'impostazione disabilitata.';
 $string['truncatecoursecodes'] = 'Tronca i codici dei corsi a questa lunghezza';
 $string['truncatecoursecodes_desc'] = 'In alcuni casi si potrebbe desiderare di troncare ad una certa lunghezza i codici corso prima di elaborarli. È possibile specificare il numero di caratteri da utilizzare prima del troncamento. Lasciando il campo in bianco i codici corso non saranno troncati.';
+$string['unenrolaction'] = 'Azione alla disicrizione';
+$string['unenrolaction_desc'] = 'L\'azione da intraprendere quando un utente viene disiscirtto da un corso (si applica solo se è abilitata l\'impostazione soprastante)';
 $string['updatecourses'] = 'Aggiorna corso';
 $string['updatecourses_desc'] = 'Il plugin di iscrizione IMS Enterprise può aggiornare il titolo ed il titolo abbreviato del corso ("recstatus" deve essere impostato a 2, cosa che indica un aggiornamento).';
 $string['updateusers'] = 'Aggiorna gli account degli utenti se indicato nei dati IMS';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'it', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'it', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,4 +30,5 @@ $string['endanswernotfound'] = 'Non è stato possibile trovare il carattere obbl
 $string['noanswerfound'] = 'La domanda è priva di risposte';
 $string['pluginname'] = 'Formato parola mancante';
 $string['pluginname_help'] = 'Il formato parola mancante consente l\'importazione di domande tramite un file di testo.';
+$string['pluginname_link'] = 'qformat/missingword';
 $string['privacy:metadata'] = 'Il plugin \'Formato parola mancante\' non memorizza dati personali.';

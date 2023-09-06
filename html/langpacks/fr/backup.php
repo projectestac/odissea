@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'fr', version '3.11'.
+ * Strings for component 'backup', language 'fr', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -71,8 +71,9 @@ $string['automatedminkepthelp'] = 'Si des sauvegardes plus anciennes qu\'un nomb
 $string['automatedsettings'] = 'Réglages de la sauvegarde programmée';
 $string['automatedsetup'] = 'Sauvegarde automatique';
 $string['automatedstorage'] = 'Stockage des sauvegardes automatiques';
-$string['automatedstoragehelp'] = 'Spécifiez l\'endroit où vous voulez que les sauvegardes soient enregistrées quand elles sont créées automatiquement.';
+$string['automatedstoragehelp'] = 'Spécifier l\'endroit où les sauvegardes doivent être enregistrées quand elles sont créées automatiquement.';
 $string['backupactivity'] = 'Sauvegarde activité : {$a}';
+$string['backupautoactivitiesdescription'] = 'Détermine si par défaut les activités sont incluses dans les sauvegardes. Pour que la corbeille fonctionne, ce réglage doit être activé.';
 $string['backupcourse'] = 'Sauvegarde cours : {$a}';
 $string['backupcoursedetails'] = 'Informations sur le cours';
 $string['backupcoursesection'] = 'Section : {$a}';
@@ -214,6 +215,7 @@ $string['filealiasesrestorefailures'] = 'Échec de la restauration des alias';
 $string['filealiasesrestorefailures_help'] = 'Les alias sont des liens vers d\'autres fichiers, y compris ceux qui sont stockés dans des dépôts externes. Dans certains cas, Moodle ne peut pas les restaurer, par exemple lors de la restauration de sauvegardes d\'un autre site ou si le fichier lié n\'existe pas.
 
 Plus d\'informations sur la raison de l\'échec peuvent être trouvés dans le journal de restauration.';
+$string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = 'Certains alias inclus dans le fichier de sauvegarde n\'ont pas pu être restaurés. La liste ci-dessous contient leur emplacement attendu et le fichier source vers lequel ils pointaient dans le site original.';
 $string['filename'] = 'Nom de fichier';
 $string['filereferencesincluded'] = 'Des liens vers des contenus externes sont inclus dans le fichier de sauvegarde. Ces liens ne fonctionneront pas si la sauvegarde est restaurée sur un site différent.';
@@ -316,7 +318,7 @@ $string['restoreactivity'] = 'Restaurer l\'activité';
 $string['restorecourse'] = 'Restaurer le cours';
 $string['restorecoursesettings'] = 'Réglages du cours';
 $string['restoredcourseid'] = 'ID du cours restauré : {$a}';
-$string['restoreexecutionsuccess'] = 'Le cours a été restauré avec succès. En cliquant sur le bouton Continuer, vous serez dirigé vers la page d\'accueil du cours.';
+$string['restoreexecutionsuccess'] = 'Le cours a été correctement restauré.';
 $string['restorefileweremissing'] = 'Certains fichiers n\'ont pas pu être restaurés, car ils n\'étaient pas présents dans la sauvegarde.';
 $string['restorenewcoursefullname'] = 'Nouveau nom du cours';
 $string['restorenewcourseshortname'] = 'Nouveau nom abrégé du cours';
@@ -393,7 +395,7 @@ $string['setting_overwrite_course_fullname'] = 'Écraser le nom complet du cours
 $string['setting_overwrite_course_shortname'] = 'Écraser le nom abrégé du cours';
 $string['setting_overwrite_course_startdate'] = 'Écraser la date de début du cours';
 $string['showtypes'] = 'Afficher les types d\'options';
-$string['sitecourseformatwarning'] = 'Cette sauvegarde ne peut être restaurée que sur la page d\'accueil, car il s\'agit d\'une sauvegarde de la page d\'accueil';
+$string['sitecourseformatwarning'] = 'Cette sauvegarde est une sauvegarde de la page d\'accueil. Elle ne peut être restaurée que sur la page d\'accueil.';
 $string['skiphidden'] = 'Omettre les cours cachés';
 $string['skiphiddenhelp'] = 'Choisir s\'il faut ou non omettre les cours cachés';
 $string['skipmodifdays'] = 'Omettre les cours non modifiés depuis';

@@ -22,24 +22,39 @@
  * @since      2.9
  */
 define([
-        'core/mustache',
-        'jquery',
-        'core/ajax',
-        'core/str',
-        'core/notification',
-        'core/url',
-        'core/config',
-        'core/localstorage',
-        'core/icon_system',
-        'core/event',
-        'core/yui',
-        'core/log',
-        'core/truncate',
-        'core/user_date',
-        'core/pending',
-    ],
-    function(mustache, $, ajax, str, notification, coreurl, config, storage, IconSystem, event, Y, Log, Truncate, UserDate,
-        Pending) {
+    'core/mustache',
+    'jquery',
+    'core/ajax',
+    'core/str',
+    'core/notification',
+    'core/url',
+    'core/config',
+    'core/localstorage',
+    'core/icon_system',
+    'core_filters/events',
+    'core/yui',
+    'core/log',
+    'core/truncate',
+    'core/user_date',
+    'core/pending',
+],
+function(
+    mustache,
+    $,
+    ajax,
+    str,
+    notification,
+    coreurl,
+    config,
+    storage,
+    IconSystem,
+    filterEvents,
+    Y,
+    Log,
+    Truncate,
+    UserDate,
+    Pending
+) {
 
     // Module variables.
     /** @var {Number} uniqInstances Count of times this constructor has been called. */
@@ -541,9 +556,21 @@ define([
             // Allow variable expansion in the param part only.
             param = helper(param, context);
         }
+
         // Allow json formatted $a arguments.
-        if ((param.indexOf('{') === 0) && (param.indexOf('{{') !== 0)) {
-            param = JSON.parse(param);
+        if (param.match(/^{\s*"/gm)) {
+            // If it can't be parsed then the string is not a JSON format.
+            try {
+                const parsedParam = JSON.parse(param);
+                // Handle non-exception-throwing cases, e.g. null, integer, boolean.
+                if (parsedParam && typeof parsedParam === "object") {
+                    param = parsedParam;
+                }
+            } catch (err) {
+                // This was probably not JSON.
+                // Keep the error message visible.
+                window.console.warn(err.message);
+            }
         }
 
         var index = this.requiredStrings.length;
@@ -577,7 +604,7 @@ define([
     };
 
     /**
-     * Quote helper used to wrap content in quotes, and escape all quotes present in the content.
+     * Quote helper used to wrap content in quotes, and escape all special JSON characters present in the content.
      *
      * @method quoteHelper
      * @private
@@ -589,15 +616,11 @@ define([
     Renderer.prototype.quoteHelper = function(context, sectionText, helper) {
         var content = helper(sectionText.trim(), context);
 
-        // Escape the {{ and the ".
+        // Escape the {{ and JSON encode.
         // This involves wrapping {{, and }} in change delimeter tags.
-        content = content
-            .replace(/"/g, '\\"')
-            .replace(/\t/g, '&#9;')
-            .replace(/([{}]{2,3})/g, '{{=<% %>=}}$1<%={{ }}=%>')
-            .replace(/(\r\n|\r|\n)/g, '&#x0a;')
-            ;
-        return '"' + content + '"';
+        content = JSON.stringify(content);
+        content = content.replace(/([{}]{2,3})/g, '{{=<% %>=}}$1<%={{ }}=%>');
+        return content;
     };
 
     /**
@@ -933,6 +956,7 @@ define([
      * @param {String} newJS - Javascript to run after the insertion.
      * @param {Boolean} replaceChildNodes - Replace only the childnodes, alternative is to replace the entire node.
      * @return {Array} The list of new DOM Nodes
+     * @fires event:filterContentUpdated
      */
     var domReplace = function(element, newHTML, newJS, replaceChildNodes) {
         var replaceNode = $(element);
@@ -960,7 +984,7 @@ define([
             // Run any javascript associated with the new HTML.
             runTemplateJS(newJS);
             // Notify all filters about the new content.
-            event.notifyFilterContentUpdated(newNodes);
+            filterEvents.notifyFilterContentUpdated(newNodes);
 
             return newNodes.get();
         }
@@ -1105,6 +1129,7 @@ define([
      * @param {String} html - HTML to prepend
      * @param {String} js - Javascript to run after we prepend the html
      * @return {Array} The list of new DOM Nodes
+     * @fires event:filterContentUpdated
      */
     var domPrepend = function(element, html, js) {
         var node = $(element);
@@ -1115,7 +1140,7 @@ define([
             // Run any javascript associated with the new HTML.
             runTemplateJS(js);
             // Notify all filters about the new content.
-            event.notifyFilterContentUpdated(node);
+            filterEvents.notifyFilterContentUpdated(node);
 
             return newContent.get();
         }
@@ -1132,6 +1157,7 @@ define([
      * @param {String} html - HTML to append
      * @param {String} js - Javascript to run after we append the html
      * @return {Array} The list of new DOM Nodes
+     * @fires event:filterContentUpdated
      */
     var domAppend = function(element, html, js) {
         var node = $(element);
@@ -1142,7 +1168,7 @@ define([
             // Run any javascript associated with the new HTML.
             runTemplateJS(js);
             // Notify all filters about the new content.
-            event.notifyFilterContentUpdated(node);
+            filterEvents.notifyFilterContentUpdated(node);
 
             return newContent.get();
         }

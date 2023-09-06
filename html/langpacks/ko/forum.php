@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ko', version '3.11'.
+ * Strings for component 'forum', language 'ko', version '4.1'.
  *
  * @package     forum
  * @category    string
@@ -249,6 +249,8 @@ $string['forumtype_help'] = '5가지 포럼 유형이 있습니다
 $string['generalforum'] = '일반 용도의 표준 포럼';
 $string['generalforums'] = '일반 포럼들';
 $string['hiddenforumpost'] = '감춰진 포럼 게시글';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inforum'] = '{$a} 에 있는';
 $string['introblog'] = '이 포럼에 있는 게시물들은, 개인 블로그를 더이상 이용할 수 없기 때문에 기존의 개인 블로그에서 자동으로 복사하여 가져온 것입니다. ';
 $string['intronews'] = '강좌관련 공지사항';
@@ -298,6 +300,7 @@ $string['modulename_help'] = '<p><img alt="" src="<?php echo $CFG->wwwroot?>/mod
 포럼을 구독함으로서 참가자들은 새로 게시된 문서를 이메일로 받아 볼 수도 있다. 선생님은 구성원이
 원치 않더라도 강제로 구독하게 할 수도 있다.
 </div>';
+$string['modulename_link'] = 'mod/forum/view';
 $string['modulenameplural'] = '포럼모음';
 $string['more'] = '자세히';
 $string['movedmarker'] = '(옮겨짐)';
@@ -344,8 +347,6 @@ $string['numposts'] = '{$a} 게시물';
 $string['olderdiscussions'] = '오래된 토론들';
 $string['oldertopics'] = '오래된 주제들';
 $string['oldpostdays'] = '지난 기사 읽음 처리';
-$string['overviewnumpostssince'] = '마지막 로그인 후 게시물 수 : {$a}';
-$string['overviewnumunread'] = '{$a}개 읽지 않음';
 $string['page-mod-forum-discuss'] = '포럼 모듈 토론 쓰레드 페이지';
 $string['page-mod-forum-view'] = '포럼 모듈 메인 페이지';
 $string['page-mod-forum-x'] = '모든 포럼 모듈 페이지';

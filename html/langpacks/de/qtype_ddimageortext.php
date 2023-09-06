@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'de', version '3.11'.
+ * Strings for component 'qtype_ddimageortext', language 'de', version '4.1'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -32,16 +32,18 @@ $string['bgimage'] = 'Hintergrundbild';
 $string['blank'] = 'leer';
 $string['correctansweris'] = 'Die richtige Antwort ist: {$a}';
 $string['deletedchoice'] = '[Auswahl löschen]';
-$string['draggableimage'] = 'Unbekannter';
+$string['draggableimage'] = 'Verschiebbares Bild';
 $string['draggableitem'] = 'Verschiebbares Element';
 $string['draggableitemheader'] = 'Verschiebbares Element {$a}';
-$string['draggableitems'] = 'Verschiebbares Elemente';
+$string['draggableitems'] = 'Verschiebbare Elemente';
 $string['draggableitemtype'] = 'Typ';
 $string['draggableword'] = 'Verschiebbarer Text';
 $string['dropbackground'] = 'Hintergrundbild, auf das die Markierungen gezogen werden';
 $string['dropzone'] = 'Dropzone {$a}';
 $string['dropzoneheader'] = 'Dropzonen';
 $string['formerror_disallowedtags'] = 'Nur "{$a}" Tags sind in ziehbaren Texten erlaubt.';
+$string['formerror_dragrequired'] = 'Sie müssen mindestens einen verschiebbares Element für diese Frage definieren.';
+$string['formerror_droprequired'] = 'Sie müssen mindestens einen Ablagebereich für diese Frage definieren.';
 $string['formerror_multipledraginstance'] = 'Sie haben das Bild {$a} mehr als einmal als richtige Antwort für einen Ablegebereich ausgewählt, ohne es als mehrfach benutzbares Objekt zu kennzeichnen.';
 $string['formerror_multipledraginstance2'] = 'Sie haben das Bild mehr als einmal als richtige Antwort für einen Ablegebereich ausgewählt, ohne es als mehrfach benutzbares Objekt zu kennzeichnen.';
 $string['formerror_noallowedtags'] = 'HTML-Tags sind im alternativen Text zu einem ziehbaren Bild nicht erlaubt.';
@@ -59,6 +61,7 @@ $string['nolabel'] = 'Keine Beschriftung';
 $string['pleasedraganimagetoeachdropregion'] = 'Ihre Antwort ist nicht vollständig, bitte ziehen Sie in jeden Bereich ein Objekt.';
 $string['pluginname'] = 'Drag-and-drop auf Bild';
 $string['pluginname_help'] = 'Wählen Sie ein Hintergrundbild, ziehbare Bilder oder geben Sie Texte ein. Definieren Sie anschließend auf dem Hintergrundbild die Ablegebereiche, auf die die Objekte gezogen werden sollen.';
+$string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnameadding'] = '"Drag-and-drop auf Bild" hinzufügen';
 $string['pluginnameediting'] = '"Drag-and-drop auf Bild" bearbeiten';
 $string['pluginnamesummary'] = 'Bilder oder Texte werden auf Ablagebereiche eines Hintergrundbildes gezogen.

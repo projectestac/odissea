@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'gl', version '3.11'.
+ * Strings for component 'tool_usertours', language 'gl', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -43,9 +43,12 @@ $string['confirmtourremovalquestion'] = 'Confirma que quere retirar esta visita 
 $string['confirmtourremovaltitle'] = 'Confirmar a retirada da visita guiada';
 $string['content'] = 'Contido';
 $string['content_heading'] = 'Contido';
-$string['content_help'] = 'O contido que describe o paso pode engadirse como texto simple, incluído en etiquetas multilingües (para o seu uso co filtro de contido multilingüe) se é necesario.
-
-Como alternativa, pode introducirse un ID de cadea de idioma no identificador de formato, compoñente (sen parénteses nin espazo após a coma).';
+$string['content_help'] = 'O contido que describe o paso pode engadirse como texto simple, incluído en etiquetas multilingües (para o seu uso co filtro de contido multilingüe) se é necesario.';
+$string['content_type'] = 'Tipo de contido';
+$string['content_type_help'] = '* Manual: o contido introdúcese mediante un editor de texto
+* ID de cadea de idioma: no formato de cadea identificador, compoñente (sen espazo após a coma)';
+$string['content_type_langstring'] = 'ID de cadea de idioma';
+$string['content_type_manual'] = 'Manual';
 $string['cssselector'] = 'Selector CSS';
 $string['defaultvalue'] = 'Predeterminado ({$a})';
 $string['delay'] = 'Atraso antes de amosar o paso';
@@ -53,12 +56,22 @@ $string['delay_help'] = 'Opcionalmente pode optar por engadir un atraso antes de
 
 Este atraso é de milisegundos.';
 $string['description'] = 'Descrición';
+$string['description_help'] = 'A descrición dun percorrido pódese engadir como texto simple, encerrado en etiquetas multilingües (para usar co filtro de contido multilingüe) se é necesario.
+
+Como alternativa, pódese introducir un ID de cadea de idioma co formato identificador, compoñente (sen corchetes nin espazos após a coma).';
+$string['displaystepnumbers'] = 'Amosar os números de pasos';
+$string['displaystepnumbers_help'] = 'Indica se se debe amosar un reconto de número de pasos, por exemplo, 1/4, 2/4, etc. para indicar a duración da visita guiada do usuario.';
 $string['done'] = 'Feito';
 $string['duplicatetour'] = 'Visita guiada duplicada';
 $string['duplicatetour_name'] = '{$a} (copia)';
 $string['editstep'] = 'Editando «{$a}»';
 $string['enabled'] = 'Activado';
+$string['endonesteptour'] = 'Entendido';
 $string['endtour'] = 'Fin da visita guiada';
+$string['endtourlabel'] = 'Etiqueta do botón de Finalizar a visita guiada';
+$string['endtourlabel_help'] = 'Opcionalmente, pode especificar unha etiqueta personalizada para o botón de finalización da visita guiada. A etiqueta predeterminada é «Entendido» para as visitas guiadas dun só paso e «Finalizar a visita guiada» para as visitas guidas de varios pasos.
+
+ Como alternativa, pódese introducir un ID de cadea de idioma no identificador de formato,compoñente (sen corchetes nin espazos despois da coma).';
 $string['event_step_shown'] = 'Paso amosado';
 $string['event_tour_ended'] = 'Rematou a visita guiada';
 $string['event_tour_reset'] = 'Reiniciada a visita guiada';
@@ -85,17 +98,23 @@ $string['filter_role_help'] = 'Unha visita guiada pode estar restrinxida a usuar
 $string['filter_theme'] = 'Tema';
 $string['filter_theme_help'] = 'Amosar a visita guiada cando o usuario estea a usar un dos temas seleccionados.';
 $string['importtour'] = 'Importar a visita guiada';
+$string['invalid_lang_id'] = 'ID de cadea de idioma non válido';
 $string['left'] = 'Esquerda';
 $string['modifyshippedtourwarning'] = 'Esta é unha visita guiada do usuario que foi incluída co Moodle. Calquera modificación que faga pode ser anulada durante a próxima actualización do sitio.';
+$string['moodle_language_identifier'] = 'ID de cadea de idioma';
 $string['movestepdown'] = 'Mover paso cara abaixo';
 $string['movestepup'] = 'Mover paso cara arriba';
 $string['movetourdown'] = 'Mover a visita guiada cara abaixo';
 $string['movetourup'] = 'Mover a visita guiada cara arriba';
 $string['name'] = 'Nome';
+$string['name_help'] = 'O nome dunha visita guiada pódese engadir como texto simple, encerrado en etiquetas multilingües (para usar co filtro de contido multilingüe) se é necesario.
+
+Como alternativa, pódese introducir un ID de cadea de idioma co formato identificador, compoñente (sen corchetes nin espazos após a coma).';
 $string['newstep'] = 'Novo paso';
 $string['newtour'] = 'Crea unha nova visita guiada';
 $string['next'] = 'Seguinte';
 $string['nextstep'] = 'Seguinte';
+$string['nextstep_sequence'] = 'Seguinte ({$a->position}/{$a->total})';
 $string['options_heading'] = 'Opcións';
 $string['orphan'] = 'Amosar se non se atopou o destino';
 $string['orphan_help'] = 'Amosar o paso se non se atopou o destino na páxina.';
@@ -133,6 +152,7 @@ $string['selectordisplayname'] = 'Un selector CSS que coincida con «{$a}»';
 $string['selecttype'] = 'Seleccionar o tipo de paso';
 $string['sharedtourslink'] = 'Repositorio de visitas guiadas';
 $string['skip'] = 'Omitir';
+$string['skip_tour'] = 'Omitir a visita guiada';
 $string['target'] = 'Destino';
 $string['target_block'] = 'Bloque';
 $string['target_heading'] = 'Destino do paso';
@@ -152,7 +172,7 @@ $string['title_help'] = 'O título dun paso pode engadirse como texto simple, in
 Como alternativa, pode introducirse un ID de cadea de idioma no identificador de formato, compoñente (sen parénteses nin espazo após a coma).';
 $string['tour1_content_addingblocks'] = 'De feito, pense detidamente en incluír calquera bloque nas súas páxinas. Os bloques non se amosan na apli Moodle, polo que por regra xeral é moito mellor asegurarse de que o seu sitio funcione ben sen bloques.';
 $string['tour1_content_blockregion'] = 'Aquí aínda hai unha área de bloques. Recomendamos eliminar completamente os bloques de Navegación e Administración, xa que toda a funcionalidade está noutros lugares do tema Boost.';
-$string['tour1_content_customisation'] = 'Para personalizar o aspecto do seu sitio e da páxina principal, use o menú de axustes no canto desta cabeceira. Probe a activar a edición agora mesmo.';
+$string['tour1_content_customisation'] = 'Para personalizar o aspecto do seu sitio e da páxina de inicio do sitio, utilice o menú de configuración no canto desta cabeceira. Probe a activar a edición agora mesmo.';
 $string['tour1_content_end'] = 'Este é o final da súa visita guiada de usuario. Non se amosará de novo a non ser que o restabeleza usando a ligazón no rodapé da páxina. Como administrador tamén pode crear as súas propias visitas guiadas coma esta.';
 $string['tour1_content_navigation'] = 'A navegación principal pasa agora por este caixón de navegación. Os contidos actualízanse dependendo de onde se atope no sitio. Use o botón na parte superior para agochalo ou amosalo.';
 $string['tour1_content_welcome'] = 'Benvido ao tema Boost. Se actualizou dende unha versión anterior, pode que algunhas cousas parezan un pouco diferentes con este tema.';
@@ -179,9 +199,9 @@ $string['tour2_title_opendrawer'] = 'Abre o caixón de navegación';
 $string['tour2_title_participants'] = 'Participantes no curso';
 $string['tour2_title_welcome'] = 'Benvido/a';
 $string['tour3_content_dashboard'] = 'O seu novo panel de traballo ten moitas funcións para axudarlle a acceder facilmente á información máis importante para vostede.';
-$string['tour3_content_displayoptions'] = 'Os cursos pódense ordenar polo nome do curso ou pola última data de acceso.
+$string['tour3_content_displayoptions'] = 'Os cursos pódense ordenar por nome do curso, nome abreviado do curso ou data do último acceso.
 
-Tamén pode optar por amosar os cursos nunha lista, ou con información resumida, ou a vista predeterminada da «tarxeta».';
+Tamén pode optar por amosar os cursos nunha lista, con información de resumo, ou a vista predeterminada da «tarxeta».';
 $string['tour3_content_overview'] = 'O bloque de vista xeral do curso amosa todos os cursos nos que esta inscrito.
 
 Pode escoller amosar os cursos que están actualmente en proceso, estiveron no pasado ou estarán no futuro, ou os cursos que destacou.';
@@ -230,6 +250,27 @@ $string['tour_activityinfo_course_teacher_content'] = 'As novas configuracións 
 $string['tour_activityinfo_course_teacher_title'] = 'Novo: información da actividade';
 $string['tour_final_step_content'] = 'Este é o final da súa visita guiada de usuario. Non se amosará de novo a non ser que o restabeleza usando a ligazón no rodapé da páxina.';
 $string['tour_final_step_title'] = 'Fin da visita guiada';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Publique aquí as noticias importantes.';
+$string['tour_navigation_course_announcements_teacher_title'] = 'Algo que contarlle a todos?';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Engada contido novo ou edite o contido existente.';
+$string['tour_navigation_course_edit_teacher_title'] = 'Activar o modo de edición';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Navegue polas actividades e faga un seguimento do seu progreso.';
+$string['tour_navigation_course_index_student_title'] = 'Atope o seu camiño';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Arrastre e solte as actividades para reordenar o contido do curso.';
+$string['tour_navigation_course_index_teacher_title'] = 'Índice do curso';
+$string['tour_navigation_course_student_tour_des'] = 'Onde navegar a través das actividades dun curso';
+$string['tour_navigation_course_student_tour_name'] = 'Índice do curso';
+$string['tour_navigation_course_teacher_tour_des'] = 'Modo de edición, arrastrar e soltar actividades e publicar anuncios nun curso';
+$string['tour_navigation_course_teacher_tour_name'] = 'Edición do curso';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Este panel lateral pode conter máis funcións.';
+$string['tour_navigation_dashboard_title'] = 'Expandir para explorar';
+$string['tour_navigation_dashboard_tour_des'] = 'Onde se poden atopar os bloques';
+$string['tour_navigation_dashboard_tour_name'] = 'Caixón de bloques';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>Engadir, copiar, eliminar e agochar cursos deste menú.';
+$string['tour_navigation_mycourses_endtourlabel'] = 'Entendo';
+$string['tour_navigation_mycourses_title'] = 'Cursos e categorías';
+$string['tour_navigation_mycourses_tour_des'] = 'Opcións de xestión de cursos na páxina Os meus cursos';
+$string['tour_navigation_mycourses_tour_name'] = 'Xestión do curso';
 $string['tour_resetforall'] = 'Restabeleceuse o estado da visita guiada. Amosarase de novo a todos os usuarios.';
 $string['tourconfig'] = 'Ficheiro de configuración da visita guiada para importar';
 $string['tourisenabled'] = 'A visita guiada está activada';

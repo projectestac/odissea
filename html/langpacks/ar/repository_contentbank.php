@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_contentbank', language 'ar', version '3.11'.
+ * Strings for component 'repository_contentbank', language 'ar', version '4.1'.
  *
  * @package     repository_contentbank
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'تهيئة مستودع بنك المحتوى';
-$string['contentbank:accesscoursecategorycontent'] = 'الوصول إلى ملفات بنك المحتوى العائدة لتصنيف المقرر الدراسي';
-$string['contentbank:accesscoursecontent'] = 'الوصول إلى ملفات بنك المحتوى للمقرر';
+$string['contentbank:accesscoursecategorycontent'] = 'الوصول إلى ملفات بنك المحتوى العائدة لتصنيف المساق';
+$string['contentbank:accesscoursecontent'] = 'الوصول إلى ملفات بنك المحتوى للمساق';
 $string['contentbank:accessgeneralcontent'] = 'الوصول إلى ملفات بنك المحتوى العائد للنظام';
 $string['contentbank:view'] = 'معاينة مستودع بنك المحتوى';
 $string['emptyfilelist'] = 'لا ملفات لمعاينتها';

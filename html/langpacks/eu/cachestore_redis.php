@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'eu', version '3.11'.
+ * Strings for component 'cachestore_redis', language 'eu', version '4.1'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -42,12 +42,15 @@ $string['serializer_igbinary'] = 'igbinary serializatzailea.';
 $string['serializer_php'] = 'PHP serializatzaile lehenetsia.';
 $string['server'] = 'Zerbitzaria';
 $string['server_help'] = 'Hemen erabiliko den Redis zerbitzariaren ostalari-izena edo IP helbidea zehazten da.';
+$string['task_ttl'] = 'Askatu iraungitako Redis cachearen sarrerek erabilitako memoria';
 $string['test_password'] = 'Probetarako zerbitzariaren pasahitza';
 $string['test_password_desc'] = 'Probetarako Redis zerbitzariaren pasahitza';
 $string['test_serializer'] = 'Serializatzailea';
 $string['test_serializer_desc'] = 'Probetarako erabilitako serializatzailea.';
 $string['test_server'] = 'Probetarako zerbitzaria';
 $string['test_server_desc'] = 'Probetarako erabiliko den Redis zerbitzaria';
+$string['test_ttl'] = 'TTL probatzen';
+$string['test_ttl_desc'] = 'Exekutatu errendimendu-proba TTL (multzo motelagoak) behar duen cache bat erabilita.';
 $string['usecompressor'] = 'Erabili konprimitzailea';
 $string['usecompressor_help'] = 'Serializatu ondoren erabili beharreko konprimitzailea zehazten du. Moodleren Cache API mailan egiten da, ez php-redis mailan.';
 $string['useserializer'] = 'Erabili serializatzailea';

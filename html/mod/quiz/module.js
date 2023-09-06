@@ -12,6 +12,7 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+/* eslint camelcase: off */
 
 /**
  * JavaScript library for the quiz module.
@@ -27,7 +28,9 @@ M.mod_quiz = M.mod_quiz || {};
 M.mod_quiz.init_attempt_form = function(Y) {
     M.core_question_engine.init_form(Y, '#responseform');
     Y.on('submit', M.mod_quiz.timer.stop, '#responseform');
-    M.core_formchangechecker.init({formid: 'responseform'});
+    require(['core_form/changechecker'], function(FormChangeChecker) {
+        FormChangeChecker.watchFormById('responseform');
+    });
 };
 
 M.mod_quiz.init_review_form = function(Y) {
@@ -72,6 +75,9 @@ M.mod_quiz.timer = {
         M.mod_quiz.timer.preview = preview;
         M.mod_quiz.timer.update();
         Y.one('#quiz-timer-wrapper').setStyle('display', 'flex');
+        require(['core_form/changechecker'], function(FormChangeChecker) {
+            M.mod_quiz.timer.FormChangeChecker = FormChangeChecker;
+        });
     },
 
     /**
@@ -109,7 +115,7 @@ M.mod_quiz.timer = {
             if (form.one('input[name=finishattempt]')) {
                 form.one('input[name=finishattempt]').set('value', 0);
             }
-            M.core_formchangechecker.set_form_submitted();
+            M.mod_quiz.timer.FormChangeChecker.markFormSubmitted(input.getDOMNode());
             form.submit();
             return;
         }
@@ -238,12 +244,12 @@ M.mod_quiz.nav.init = function(Y) {
 
     // Navigation buttons should be disabled when the files are uploading.
     require(['core_form/events'], function(formEvent) {
-        document.addEventListener(formEvent.types.uploadStarted, function() {
+        document.addEventListener(formEvent.eventTypes.uploadStarted, function() {
             M.mod_quiz.filesUpload.numberFilesUploading++;
             M.mod_quiz.filesUpload.disableNavPanel();
         });
 
-        document.addEventListener(formEvent.types.uploadCompleted, function() {
+        document.addEventListener(formEvent.eventTypes.uploadCompleted, function() {
             M.mod_quiz.filesUpload.numberFilesUploading--;
             M.mod_quiz.filesUpload.disableNavPanel();
         });

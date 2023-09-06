@@ -9,7 +9,7 @@ class com_wiris_util_geometry_GeometryHandwriting {
 		$this->data->set(com_wiris_util_geometry_GeometryHandwriting::$DISPLAY_ID, $displayId);
 	}
 	public function getDisplayId() {
-		return com_wiris_util_json_JSon::getString($this->data->get(com_wiris_util_geometry_GeometryHandwriting::$DISPLAY_ID));
+		return (($this->data->exists(com_wiris_util_geometry_GeometryHandwriting::$DISPLAY_ID)) ? com_wiris_util_json_JSon::getString($this->data->get(com_wiris_util_geometry_GeometryHandwriting::$DISPLAY_ID)) : "");
 	}
 	public function setStrokes($strokes) {
 		$this->data->set(com_wiris_util_geometry_GeometryHandwriting::$STROKES, $strokes);
@@ -18,39 +18,41 @@ class com_wiris_util_geometry_GeometryHandwriting {
 	public function getStrokes() {
 		$s = new _hx_array(array());
 		$o = $this->data->get(com_wiris_util_geometry_GeometryHandwriting::$STROKES);
+		if($o === null) {
+			return $s;
+		}
 		$a1 = com_wiris_util_json_JSon::getArray($o);
-		$i = null;
-		$s1 = new _hx_array(array());
 		{
-			$_g1 = 0; $_g = $a1->length;
-			while($_g1 < $_g) {
-				$i1 = $_g1++;
-				$o1 = $a1[$i1];
+			$_g = 0;
+			while($_g < $a1->length) {
+				$o1 = $a1[$_g];
+				++$_g;
+				$s1 = new _hx_array(array());
 				$a2 = com_wiris_util_json_JSon::getArray($o1);
-				$j = null;
 				{
-					$_g3 = 0; $_g2 = $a2->length;
-					while($_g3 < $_g2) {
-						$j1 = $_g3++;
-						$a3 = $a2[$j1];
+					$_g1 = 0;
+					while($_g1 < $a2->length) {
+						$o2 = $a2[$_g1];
+						++$_g1;
+						$a3 = com_wiris_util_json_JSon::getArray($o2);
 						$s2 = new _hx_array(array());
 						$k = null;
 						{
-							$_g5 = 0; $_g4 = $a3->length;
-							while($_g5 < $_g4) {
-								$k1 = $_g5++;
-								$s2[$k1] = $a3[$k1];
+							$_g3 = 0; $_g2 = $a3->length;
+							while($_g3 < $_g2) {
+								$k1 = $_g3++;
+								$s2[$k1] = com_wiris_util_json_JSon::getFloat($a3[$k1]);
 								unset($k1);
 							}
-							unset($_g5,$_g4);
+							unset($_g3,$_g2);
 						}
 						$s1->push($s2);
-						unset($s2,$k,$j1,$a3);
+						unset($s2,$o2,$k,$a3);
 					}
-					unset($_g3,$_g2);
+					unset($_g1);
 				}
 				$s->push($s1);
-				unset($o1,$j,$i1,$a2);
+				unset($s1,$o1,$a2);
 			}
 		}
 		return $s;

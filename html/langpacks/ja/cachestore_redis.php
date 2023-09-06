@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'ja', version '3.11'.
+ * Strings for component 'cachestore_redis', language 'ja', version '4.1'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -42,12 +42,15 @@ $string['serializer_igbinary'] = 'igbinaryシリアライザ';
 $string['serializer_php'] = 'デフォルトPHPシリアライザ';
 $string['server'] = 'サーバ';
 $string['server_help'] = 'ここではRedisサーバが使用するホスト名またはIPアドレスを設定します。';
+$string['task_ttl'] = 'Redisキャッシュ期限切れエントリが使用するメモリを解放する';
 $string['test_password'] = 'テストサーバパスワード';
 $string['test_password_desc'] = 'Redisテストサーバのパスワードです。';
 $string['test_serializer'] = 'シリアライザ';
 $string['test_serializer_desc'] = 'テストに使用するシリアライザです。';
 $string['test_server'] = 'テストサーバ';
 $string['test_server_desc'] = 'テストに使用するRedisサーバです。';
+$string['test_ttl'] = 'TTLテスト';
+$string['test_ttl_desc'] = 'TTL (遅いセット) を必要とするキャッシュを使用してパフォーマンステストを実行します。';
 $string['usecompressor'] = '圧縮を使用する';
 $string['usecompressor_help'] = 'シリアライズの後に使用するコンプレッサを指定してください。これはphp-redisレベルではなくMoodleキャッシュAPIレベルで実行されます。';
 $string['useserializer'] = 'シリアライザを使用する';

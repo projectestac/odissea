@@ -26,8 +26,9 @@
 // comment out when debugging or better look into error log!
 define('NO_DEBUG_DISPLAY', true);
 
-require('../config.php');
-require_once("$CFG->dirroot/lib/configonlylib.php");
+// We need just the values from config.php and minlib.php.
+define('ABORT_AFTER_CONFIG', true);
+require('../config.php'); // This stops immediately at the beginning of lib/setup.php.
 require_once("$CFG->dirroot/lib/classes/requirejs.php");
 
 $slashargument = min_get_slash_argument();
@@ -45,7 +46,7 @@ $file = '/' . min_clean_param($file, 'SAFEPATH');
 [$unused, $component, $module] = explode('/', $file, 3);
 
 // When running a lazy load, we only deal with one file so we can just return the working sourcemap.
-$jsfiles = core_requirejs::find_one_amd_module($component, $module, false);
+$jsfiles = core_requirejs::find_one_amd_module($component, $module);
 $jsfile = reset($jsfiles);
 
 $mapfile = $jsfile . '.map';

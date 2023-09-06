@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -64,6 +64,7 @@ $string['noofdrags'] = '可以被使用几次';
 $string['pleasedragatleastonemarker'] = '您的回答不完整；您必须在图片上放置至少一个标记。';
 $string['pluginname'] = '拖放标签题';
 $string['pluginname_help'] = '拖放标记题要求答题者拖动文本标签并将其放入背景图片上定义的放置区域。';
+$string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = '添加拖放标记题';
 $string['pluginnameediting'] = '编辑拖放标签题';
 $string['pluginnamesummary'] = '标记被拖动并放置到背景图片上。

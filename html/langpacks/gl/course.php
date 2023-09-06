@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'gl', version '3.11'.
+ * Strings for component 'course', language 'gl', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -49,6 +49,8 @@ $string['aria:favourite'] = 'O curso está destacado';
 $string['aria:favouritestab'] = 'Actividades destacadas';
 $string['aria:modulefavourite'] = 'Destacar a actividade de {$a}';
 $string['aria:recommendedtab'] = 'Actividades recomendadas';
+$string['browsecourseadminindex'] = 'Explorar a administración do curso con este índice.';
+$string['browsesettingindex'] = 'Explorar os axustes con este índice.';
 $string['completion_automatic:done'] = 'Feito';
 $string['completion_automatic:failed'] = 'Fallado:';
 $string['completion_automatic:todo'] = 'Para facer:';
@@ -62,6 +64,12 @@ $string['completion_setby:manual:done'] = '{$a->activityname} está marcado por 
 $string['completion_setby:manual:markdone'] = '{$a->activityname} está marcado por {$a->setby} como non feito. Prema para marcar como feito.';
 $string['completionrequirements'] = 'Requisitos de completado para {$a}';
 $string['coursealreadyfinished'] = 'Curso xa rematado';
+$string['coursecontentnotification'] = 'Enviar unha notificación de cambio de contido';
+$string['coursecontentnotification_help'] = 'Marque a caixa para notificarlle aos participantes do curso esta actividade ou recurso novo ou modificado. Só recibirán a notificación os usuarios que poidan acceder á actividade ou recurso.';
+$string['coursecontentnotifnew'] = '{$a->coursename} ten contido novo';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> é novo no curso <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambie as súas preferencias de notificación</a></p>';
+$string['coursecontentnotifupdate'] = '{$a->coursename} ten cambios no seu contido';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> foi modificado no curso <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambie as súas preferencias de notificación</a></p>';
 $string['coursenotyetfinished'] = 'O curso aínda non rematou';
 $string['coursenotyetstarted'] = 'O curso aínda non comezou';
 $string['coursetoolong'] = 'O curso é longo de máis';
@@ -69,32 +77,36 @@ $string['customfield_islocked'] = 'Bloqueado';
 $string['customfield_islocked_help'] = 'Se o campo está bloqueado, só os usuarios con capacidade para cambiar os campos personalizados bloqueados (por omisión usuarios só co rol de xestor predeterminado) poderán cambialo nos axustes do curso.';
 $string['customfield_notvisible'] = 'Ninguén';
 $string['customfield_visibility'] = 'Visíbel para';
-$string['customfield_visibility_help'] = 'Este axuste determina quen pode ver o nome e o valor dos campo personalizados na lista de cursos ou no filtro de campo personalizado dispoñíbel no Taboleiro.';
+$string['customfield_visibility_help'] = 'Este axuste determina quen pode ver o nome e o valor dos campo personalizados na lista de cursos ou no filtro de campo personalizado dispoñíbel no Taboleiro panel.';
 $string['customfield_visibletoall'] = 'Todos';
 $string['customfield_visibletoteachers'] = 'Profesores';
 $string['customfieldsettings'] = 'Axustes comúns dos campos personalizados do curso';
+$string['downloadcontent'] = 'Incluír na descarga de contidos do curso';
+$string['downloadcontent_help'] = 'Esta actividade ou recurso debería incluírse no ficheiro zip do contido do curso dispoñíbel para descargar? O ficheiro, o cartafol, a páxina e a etiqueta pódense descargar completamente. Para todas as demais actividades e recursos, só se descargan o nome e a descrición. Esta opción require que a descarga de contido do curso estea activada na configuración do curso.
+
+A configuración non ten efecto na descarga de contido da aplicación móbil para o seu uso sen conexión.';
 $string['downloadcourseconfirmation'] = 'Está a piques de descargar un ficheiro zip de contido do curso (excluíndo os elementos que non se poden descargar e os ficheiros de máis de {$a}).';
 $string['downloadcoursecontent'] = 'Descargar o contido do curso';
 $string['downloadcoursecontent_help'] = 'Este axuste determina se o contido do curso pode ser descargado por usuarios coa capacidade de descargar o contido do curso (de xeito predeterminado os usuarios co rol de alumno ou de profesor).';
 $string['enabledownloadcoursecontent'] = 'Activar a descarga do contido do curso';
-$string['errorendbeforestart'] = 'A data de remate ({$a}) é anterior á data de inicio do curso.';
+$string['errorendbeforestart'] = 'A data de finalización ({$a}) é anterior á data de inicio do curso.';
 $string['favourite'] = 'Curso destacado';
 $string['gradetopassnotset'] = 'Este curso non ten estabelecida unha cualificación de aprobado. Pódese definir no elemento de cualificación do curso (configuración do caderno de notas).';
 $string['informationformodule'] = 'Información sobre a actividade de {$a}';
 $string['module'] = 'Actividade';
-$string['noaccesssincestartinfomessage'] = 'Ola {$a->userfirstname}:
-
-</br><br/>Un certo número de alumnos de {$a->coursename} nunca accederon ao curso.';
+$string['noaccesssincestartinfomessage'] = 'Ola {$a->userfirstname},
+<p>Un certo número de alumnos de {$a->coursename} nunca accederon ao curso.</p>';
 $string['nocourseactivity'] = 'Non hai actividade de curso suficiente entre o inicio e o final do curso';
 $string['nocourseendtime'] = 'O curso non ten unha data de remate';
 $string['nocoursesections'] = 'Sen seccións de curso';
 $string['nocoursestudents'] = 'Sen alumnos';
-$string['norecentaccessesinfomessage'] = 'Ola {$a->userfirstname}:
-
-</br><br/>Un certo número de alumnos de {$a->coursename} non accederon ao curso recentemente.';
-$string['noteachinginfomessage'] = 'Ola {$a->userfirstname}:
-
-</br><br/>Os cursos con datas de inicio na semana vindeira identificáronse como sen matrícula de profesores ou alumnos.';
+$string['norecentaccessesinfomessage'] = 'Olai {$a->userfirstname},
+<p>Un certo número de alumnos de {$a->coursename} non accederon ao curso recentemente</p>';
+$string['noteachinginfomessage'] = 'Ola {$a->userfirstname},
+<p>Os cursos con datas de inicio na semana vindeira identificáronse como sen matrícula de profesores ou alumnos.</p>';
+$string['participants:perpage'] = 'Número de participantes por páxina';
+$string['participants:perpage_help'] = 'Especifique o número de participantes que se amosan por páxina';
+$string['participantsnavigation'] = 'Navegación terciaria de participantes.';
 $string['privacy:completionpath'] = 'Completado do curso';
 $string['privacy:favouritespath'] = 'Información destacada do curso';
 $string['privacy:metadata:activityfavouritessummary'] = 'O sistema de cursos contén información sobre que elementos do selector de actividade foron destacados polo usuario.';
@@ -108,9 +120,8 @@ $string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} antes do in
 $string['searchactivitiesbyname'] = 'Busca actividades polo seu nome';
 $string['searchresults'] = 'Resultados da busca: {$a}';
 $string['studentsatriskincourse'] = 'Alumnos en risco no curso {$a}';
-$string['studentsatriskinfomessage'] = 'Ola {$a->userfirstname}:
-
-</br><br/>Alumnos do curso {$a->coursename} foron identificados como de risco.';
+$string['studentsatriskinfomessage'] = 'Ola {$a->userfirstname},
+<p>Alumnos do curso {$a->coursename} foron identificados como de risco.</p>';
 $string['submitsearch'] = 'Enviar busca';
 $string['target:coursecompetencies'] = 'Alumnos en risco de non acadar as competencias asignadas a un curso';
 $string['target:coursecompetencies_help'] = 'Este destino se un alumno corre o risco de non acadar as competencias asignadas a un curso. Este destino considera que todas as competencias asignadas ao curso deben ser acadadas ata o final do curso.';

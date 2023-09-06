@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ca', version '3.11'.
+ * Strings for component 'backup', language 'ca', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -206,6 +206,7 @@ $string['filealiasesrestorefailures'] = 'La restauració dels àlies ha fallat';
 $string['filealiasesrestorefailures_help'] = 'Els àlies són enllaços simbòlics a altres fitxers, inclosos els emmagatzemats en repositoris externs. En alguns casos, Moodle no els pot restaurar —per exemple, en restaurar la còpia de seguretat en un altre lloc web o quan el fitxer a què es fa referència no existeix.
 
 Podeu trobar més detalls sobre això i el motiu real de l\'errada al fitxer de registre de restauració.';
+$string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = 'Alguns àlies inclosos en el fitxer de còpia de seguretat no poden ser restaurats. La següent llista conté la seva ubicació prevista i el fitxer d\'origen on es referien en el lloc web original.';
 $string['filename'] = 'Nom del fitxer';
 $string['filereferencesincluded'] = 'Les referències de fitxer a continguts externs estan incloses al fitxer de còpia de seguretat. No funcionaran si la còpia es restaura en un lloc web diferent.';

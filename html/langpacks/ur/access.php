@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'ur', version '3.11'.
+ * Strings for component 'access', language 'ur', version '4.1'.
  *
  * @package     access
  * @category    string
@@ -27,17 +27,20 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['access'] = 'رسائی';
 $string['accesshelp'] = 'رسائی کےلیے مدد';
-$string['accesskey'] = '{$a} ،رسائی کی چابی';
+$string['accesskey'] = 'رسائی کلید، {$a}';
 $string['accessstatement'] = 'بیان رسائی';
-$string['activitynext'] = 'اگلا کام';
-$string['activityprev'] = 'پچھلا کام';
-$string['breadcrumb'] = 'ھائپر لنکس کے نشانات';
-$string['hideblocka'] = 'بلاک کو چھپا دو {$a}';
-$string['showblocka'] = 'دکھاو';
+$string['activitynext'] = 'اگلی سرگرمی';
+$string['activityprev'] = 'پچھلی سرگرمی';
+$string['breadcrumb'] = 'نیویگیشن بار';
+$string['eventcontextlocked'] = 'سیاق و سباق منجمد';
+$string['eventcontextunlocked'] = 'سیاق و سباق غیر منجمد';
+$string['hideblocka'] = '{$a} بلاک چھپائیں';
+$string['showblocka'] = '{$a} بلاک دکھائیں';
 $string['sitemap'] = 'سائٹ کا نقشہ';
-$string['skipa'] = 'چھوڑ دو';
-$string['skipblock'] = 'بلاک چھوڑ دو';
-$string['skipnavigation'] = 'سمت بتانا چھوڑ دو';
-$string['skipto'] = 'چھوڑ دو';
+$string['skipa'] = 'چھوڑ دیں';
+$string['skipblock'] = 'بلاک کو چھوڑیں';
+$string['skipnavigation'] = 'نیویگیشن کو چھوڑیں';
+$string['skipto'] = '{$a} پر جائیں';
 $string['tocontent'] = 'اصل مواد کی طرف جائیں';
+$string['tonavigation'] = 'نیویگیشن پر جائیں';
 $string['youarehere'] = 'آپ یہاں ہیں';

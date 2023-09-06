@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'nl', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'nl', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['editor:a11ytitlehidelabel'] = 'Verberg label voor AT';
+$string['editor:a11ytitleshowlabel'] = 'Toon label voor AT';
 $string['editor:add'] = 'Voeg toe';
 $string['editor:addauthor'] = 'Bewaar auteur';
 $string['editor:addentity'] = 'Voeg toe: entiteit';
 $string['editor:addfile'] = 'Voeg bestand toe';
 $string['editor:addnewchange'] = 'Voeg een nieuwe wijziging toe';
 $string['editor:addtitle'] = 'Voeg titel toe';
-$string['editor:addvideodescription'] = 'H5P ondersteunt alle externe videobronnen opgemaakt als mp4, webm of ogv, zoals Vimeo Pro en heeft ondersteuning voor Youtube links.';
+$string['editor:addvideodescription'] = 'H5P ondersteunt alle externe videobronnen opgemaakt als mp4, webm of ogv, zoals Vimeo Pro en heeft ondersteuning voor Youtube- en Panopto-links.';
 $string['editor:atoz'] = 'A tot Z';
 $string['editor:avtablistlabel'] = 'Voeg in met';
 $string['editor:belowmin'] = 'De :waarde is onder het minimum van :min';
@@ -91,7 +93,7 @@ $string['editor:enteraudiotitle'] = 'Plak de link of andere audiobron-URL';
 $string['editor:enteraudiourl'] = 'Voer de audiobron-URL in';
 $string['editor:enterfullscreenbuttonlabel'] = 'Ga naar volledig scherm';
 $string['editor:entervideotitle'] = 'Plak YouTube-link of andere videobron-URL';
-$string['editor:entervideourl'] = 'Voer de videobron-URL of YouTube-link in';
+$string['editor:entervideourl'] = 'Voer de video-URL in';
 $string['editor:errorcalculatingmaxscore'] = 'Kan de maximale score voor deze inhoud niet berekenen. De maximale score wordt verondersteld 0 te zijn. Neem contact op met je beheerder als dit niet correct is.';
 $string['editor:errorcommunicatinghubcontent'] = 'Er is een fout opgetreden. Probeer het alstublieft opnieuw.';
 $string['editor:errorcommunicatinghubtitle'] = 'Kan niet communiceren met hub.';

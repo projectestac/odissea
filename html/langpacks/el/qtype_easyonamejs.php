@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyonamejs', language 'el', version '3.11'.
+ * Strings for component 'qtype_easyonamejs', language 'el', version '4.1'.
  *
  * @package     qtype_easyonamejs
  * @category    string
@@ -46,6 +46,7 @@ $string['javaneeded'] = 'Για να χρησιμοποιήσετε αυτή τ�
 $string['my_response'] = 'Η απόκρισή μου';
 $string['notenoughanswers'] = 'Αυτός ο τύπος ερώτησης απαιτεί τουλάχιστον {$a} απαντήσεις';
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
+$string['pluginname_link'] = 'question/type/easyonamejs';
 $string['view'] = 'Προβολή στο πρόγραμμα επεξεργασίας';
 $string['viewing_answer'] = 'Αυτήν τη στιγμή βλέπετε την απάντηση';
 $string['viewing_answer1'] = 'Αυτήν τη στιγμή βλέπετε την απάντηση 1';

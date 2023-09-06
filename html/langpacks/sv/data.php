@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'sv', version '3.11'.
+ * Strings for component 'data', language 'sv', version '4.1'.
  *
  * @package     data
  * @category    string
@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = 'Åtgärd';
+$string['actionsmenu'] = 'Åtgärdsmeny';
 $string['add'] = 'Ny post';
 $string['addcomment'] = 'Lägg till kommentarer';
 $string['addentries'] = 'Lägg till poster';
-$string['addtemplate'] = 'Lägg till en mall';
+$string['addtemplate'] = 'Lägg till en mall för poster';
 $string['advancedsearch'] = 'Avancerad sökning';
 $string['allowcomments'] = 'Tillåt kommentarer för poster';
 $string['alttext'] = 'Alternativ text';
@@ -85,6 +86,7 @@ $string['configenablerssfeeds'] = 'Denna inställningen aktiverar möjligheten f
 $string['confirmdeletefield'] = 'Du håller på att ta bort det här fältet, är du säker?';
 $string['confirmdeleterecord'] = 'Är du säker på att du vill ta bort den här posten?';
 $string['confirmdeleterecords'] = 'Är du säker på att du vill ta bort dessa poster?';
+$string['createfields'] = 'Skapa egna fält för att samla in data, eller använd en förinställning som redan innehåller fält.';
 $string['csstemplate'] = 'CSS-mall';
 $string['csvfailed'] = 'Det går inte att läsa rådata från CSV-filen';
 $string['csvfile'] = 'CVS-fil';
@@ -120,8 +122,10 @@ $string['delcheck'] = 'Kryssruta för massborttagning';
 $string['delete'] = 'Ta bort';
 $string['deleteallentries'] = 'Ta bort alla poster';
 $string['deletecomment'] = 'Är du säker på att du vill ta bort den här kommentaren?';
+$string['deleteconfirm'] = 'Ta bort förinställning <strong>{$a}</strong>?';
 $string['deleted'] = 'borttagen';
-$string['deletefield'] = 'Ta bort ett befintligt fält';
+$string['deleteentry'] = 'Ta bort post';
+$string['deletefield'] = 'Ta bort fält';
 $string['deletenotenrolled'] = 'Ta bort poster som kommer från användare som inte är registrerade';
 $string['deletewarning'] = 'Är du säker på att du vill ta bort den här förinställningen?';
 $string['descending'] = 'Fallande';
@@ -131,8 +135,10 @@ $string['download'] = 'Ladda ner';
 $string['edit'] = 'Redigera';
 $string['editcomment'] = 'Redigera kommentar';
 $string['editentry'] = 'Redigera poster';
+$string['editfield'] = 'Redigera fält';
 $string['editordisable'] = 'Inaktivera redigerare';
 $string['editorenable'] = 'Aktivera redigerare';
+$string['editpreset'] = 'Redigera förinställning';
 $string['emptyadd'] = 'Mallen <em>Lägg till</em> är tom - skapar ett standardformulär...';
 $string['emptyaddform'] = 'Du fyllde inte i några fält!';
 $string['enabletemplateeditorcheck'] = 'Är du säker på att du vill aktivera redigeraren? Detta kan resultera i att innehållet ändras då mallen sparas.';
@@ -144,6 +150,7 @@ $string['entrysaved'] = 'Posten har sparats';
 $string['errormustbeteacher'] = 'Du måste vara lärare för att få använda den här sidan!';
 $string['errormustsupplyvalue'] = 'Du måste fylla i ett värde här.';
 $string['errorpresetexists'] = 'Det finns redan en förinställning med det namnet';
+$string['errorpresetexistsbutnotoverwrite'] = 'Det finns redan en förinställning med detta namn. Välj ett annat namn.';
 $string['eventfieldcreated'] = 'Fält skapat';
 $string['eventfielddeleted'] = 'Fält borttaget';
 $string['eventfieldupdated'] = 'Fält uppdaterat';
@@ -164,6 +171,7 @@ $string['exportformat'] = 'Exportformat';
 $string['exportoptions'] = 'Exportalternativ';
 $string['exportownentries'] = 'Exportera endast egna poster?
 ({$a->mine}/{$a->all})';
+$string['exportpreset'] = 'Förinställningar för export';
 $string['failedpresetdelete'] = 'Fel i samband med att en förinställning skulle tas bort';
 $string['fieldadded'] = 'Fält tillagt';
 $string['fieldallowautolink'] = 'Tillåt autolänk';
@@ -183,6 +191,7 @@ $string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'Följande fält i din fil saknas i den här databasen:{$a}';
 $string['fieldoptions'] = 'Alternativ (ett per rad)';
 $string['fields'] = 'Fält';
+$string['fieldsnavigation'] = 'Övergripande fältnavigering';
 $string['fieldupdated'] = 'Fält uppdaterat';
 $string['fieldwidth'] = 'Bredd';
 $string['fieldwidthlistview'] = 'Bredd vid visning av lista';
@@ -206,7 +215,9 @@ $string['headerjstemplate'] = 'Definierar anpassat JavaScript för att hantera h
 $string['headerlisttemplate'] = 'Definierar gränssnittet för att bläddra genom flera poster';
 $string['headerrsstemplate'] = 'Definierar hur poster presenteras i RSS-flöden';
 $string['headersingletemplate'] = 'Definierar gränssnittet för att bläddra genom enskilda poster';
+$string['id'] = 'Post-ID';
 $string['importentries'] = 'Importera poster';
+$string['importpreset'] = 'Importera förinställningar';
 $string['importsuccess'] = 'Förinställningen har tillämpats.';
 $string['includeapproval'] = 'Inkludera godkännandestatus';
 $string['includetags'] = 'Inkludera etiketter';
@@ -216,10 +227,12 @@ $string['indicator:cognitivedepth'] = 'Databas kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Databasaktivitet.';
 $string['indicator:cognitivedepthdef'] = 'Databas kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av Databas-aktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa, Skicka in)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Databas social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Databasaktivitet.';
 $string['indicator:socialbreadthdef'] = 'Databas social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Databasaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insufficiententries'] = 'det behövs fler poster för att visa den här databasen';
 $string['intro'] = 'Beskrivning';
 $string['invalidaccess'] = 'Den här sidan visades inte på ett giltigt sätt';
@@ -240,9 +253,11 @@ $string['latlonglinkservicesdisplayed'] = 'Visning av tjänster som är länkade
 $string['latlongotherfields'] = 'Övriga fält';
 $string['list'] = 'Visa lista';
 $string['listtemplate'] = 'Mall för lista';
+$string['listview'] = 'Listvy';
 $string['longitude'] = 'Longitud';
 $string['manageapproved'] = 'Tillåt redigering av godkända poster';
 $string['manageapproved_help'] = 'Om inaktiverat kan godkända poster inte längre redigeras eller tas bort av användaren som lade till dem. Den här inställningen har ingen effekt om inte "Godkännande krävs" är aktiverat.';
+$string['managefields'] = 'Hantera fält';
 $string['mapexistingfield'] = 'Koppla till {$a}';
 $string['mapnewfield'] = 'Skapa ett nytt fält';
 $string['mappingwarning'] = 'Alla gamla fält som inte är kartlagda till ett nytt fält kommer försvinna och alla data i det fältet kommer att tas bort.';
@@ -266,6 +281,7 @@ Databasaktiviteter har många användningsområden, till exempel
 
 * En kollaborativ samling av webblänkar, böcker, bokrecensioner, tidskriftsreferenser etc.
 * För visning av studentskapade foton, affischer, webbplatser eller dikter för peer-kommentarer och recensioner.';
+$string['modulename_link'] = 'mod/data/view';
 $string['modulenameplural'] = 'Databaser';
 $string['more'] = 'Fler';
 $string['moreurl'] = 'Fler URLer';
@@ -285,6 +301,7 @@ $string['nofieldindatabase'] = 'Det finns inga fält definierade för den här d
 $string['nolisttemplate'] = 'Mallen för lista är ännu inte definierad';
 $string['nomatch'] = 'Det gick inte att hitta några matchande poster!';
 $string['nomaximum'] = 'Ingen maxgräns';
+$string['nopreviewavailable'] = 'Det finns ingen förhandsgranskning tillgänglig för {$a}';
 $string['norecords'] = 'Det finns inga poster i databasen';
 $string['nosingletemplate'] = 'Det har inte definierats någon mall för enskilda poster ännu';
 $string['notapproved'] = 'Posten är inte godkänd ännu.';
@@ -310,8 +327,12 @@ $string['pleaseaddsome'] = 'Vänligen skapa några här nedan eller <a href="{$a
 $string['pluginadministration'] = 'Administration av aktivitet av typ databas';
 $string['pluginname'] = 'Databas';
 $string['portfolionotfile'] = 'Exportera hellre till en portfolio än till en fil (endast csv och leap2)';
+$string['presetdeleted'] = 'Förinställning borttagen.';
 $string['presetinfo'] = 'Om du sparar detta som en förinställning så kommer mallen att göras öppet tillgänglig. Andra användare kommer att kunna använda den i sina databaser.';
+$string['presetnotselected'] = 'Ingen förinställning vald.';
 $string['presets'] = 'Förinställda mallar';
+$string['presetshelp'] = 'Välj en förinställning att starta med.';
+$string['preview'] = 'Förhandsgranska';
 $string['privacy:metadata:commentpurpose'] = 'Kommentarer för databasposter';
 $string['privacy:metadata:data_content'] = 'Representerar ett svar på ett fält i databas-aktivitetsmodulen';
 $string['privacy:metadata:data_content:content'] = 'Innehåll';
@@ -365,6 +386,8 @@ $string['saveandview'] = 'Spara och visa';
 $string['saveaspreset'] = 'Spara som en förinställning';
 $string['saveaspreset_help'] = '<p align="center"><strong>Spara som en förinställd mall</strong></p>
 <p>Detta publicerar den aktuella mallen som en förinställd sådan som vem som helst på webbplatsen kan visa och använda. Den kommer att dyka upp i listan över förinställda mallar. Du kommer att kunna ta bort den när du vill. </p>';
+$string['saveaspresetmissingcapability'] = 'Användaren har inte behörighet att spara databasen som en förinställning.';
+$string['savedataaspreset'] = 'Spara alla fält och mallar som förinställning';
 $string['savesettings'] = 'Spara inställningar';
 $string['savesuccess'] = 'Förinställningar sparades. Den kommer nu att vara tillgänglig på hela webbplatsen.';
 $string['savetemplate'] = 'Spara mall';
@@ -375,8 +398,11 @@ $string['selectedrequired'] = 'Alla valda är obligatoriska';
 $string['selectexportoptions'] = 'Välj exportalternativ';
 $string['selectfields'] = 'Välj fält';
 $string['showall'] = 'Visa alla poster';
+$string['showmore'] = 'Visa mer';
 $string['single'] = 'Visa enskild post';
 $string['singletemplate'] = 'Mall för enskild post';
+$string['singleview'] = 'Enskild vy';
+$string['startbuilding'] = 'Börja bygga din aktivitet';
 $string['subplugintype_datafield'] = 'Fälttyp i databas';
 $string['subplugintype_datafield_plural'] = 'Fälttyper i databas';
 $string['subplugintype_datapreset'] = 'Förinställning';
@@ -387,6 +413,7 @@ $string['tagsdeleted'] = 'Databasetiketter har tagits bort';
 $string['teachersandstudents'] = '{$a->teachers} och  {$a->students}';
 $string['templates'] = 'Mallar';
 $string['templatesaved'] = 'Mallen har sparats';
+$string['templatesnavigation'] = 'Övergripande mallnavigering';
 $string['text'] = 'Text';
 $string['textarea'] = 'Textfält';
 $string['timeadded'] = 'Tillagd';
@@ -407,13 +434,17 @@ $string['uploadrecords_help'] = 'Det går att ladda upp inlägg via en textfil. 
 * Den första posten innehåller en lista med fältnamn som definierar formatet på resten av filen.
 
 Det som omsluter fältet är ett tecken som omsluter varje fält i varje post. Det går normalt sett att avstå från att ange detta tecken.';
+$string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = 'Inkludera i sökning.';
+$string['usepredefinedset'] = 'Använd fördefinierad uppsättning';
+$string['usepreset'] = 'Använd förinställning';
 $string['usestandard'] = 'Använd en förinställd mall';
 $string['usestandard_help'] = '<p align="center"><strong>Använd en förinställd mall</strong></p>
 <p> Detta använder en mall som är tillgänglig på hela webbplatsen.</p>
 <p> Om du dessutom har sparat mallen till en databas med hjälp av \'Spara som förinställd mall\' så kan du ta bort den när du vill.</p>';
 $string['viewfromdate'] = 'Möjlig att endast läsa fr.o.m.';
+$string['viewnavigation'] = 'Övergripande visningslägesnavigering';
 $string['viewtodate'] = 'Möjlig att endast läsa t.o.m.';
 $string['viewtodatevalidation'] = 'Till-datum kan inte komma före från-datum.';
 $string['wrongdataid'] = 'Det data-id som har angivits är felaktigt';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_saml2', language 'fr', version '3.11'.
+ * Strings for component 'auth_saml2', language 'fr', version '4.1'.
  *
  * @package     auth_saml2
  * @category    string
@@ -89,7 +89,7 @@ $string['idpmetadata_help'] = 'Pour utiliser plusieurs fournisseurs d\'identité
 $string['idpmetadata_invalid'] = 'Le XML du fournisseur d\'identité (IdP) n\'est pas valide';
 $string['idpmetadata_noentityid'] = 'Le XML du fournisseur d\'identité (IdP) n\'a pas d\'attribut entityID';
 $string['idpmetadatarefresh'] = 'Actualisation des métadonnées du fournisseur d\'identité (IdP)';
-$string['idpmetadatarefresh_help'] = 'Exécuter une tâche planifiée pour mettre à jour les métadonnées du fournisseur d\'identité (IdP) à partir de l\'URL des métadonnées IdP';
+$string['idpmetadatarefresh_help'] = 'Exécuter une tâche programmée pour mettre à jour les métadonnées du fournisseur d\'identité (IdP) à partir de l\'URL des métadonnées IdP';
 $string['idpname'] = 'Remplacement de l\'étiquette du fournisseur d\'identité (IdP)';
 $string['idpname_help'] = 'Exemple myUNI - ceci est détecté à partir des métadonnées et s\'affichera sur la page de double connexion (si activée)';
 $string['idpnamedefault'] = 'S\'authentifier avec SAML2';

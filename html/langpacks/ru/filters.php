@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'ru', version '3.11'.
+ * Strings for component 'filters', language 'ru', version '4.1'.
  *
  * @package     filters
  * @category    string
@@ -47,7 +47,7 @@ $string['datelabelisafter'] = '{$a->label}: с {$a->after}';
 $string['datelabelisbefore'] = '{$a->label}: до {$a->before}';
 $string['datelabelisbetween'] = '{$a->label}: с {$a->after} до {$a->before}';
 $string['defaultx'] = 'По умолчанию ({$a})';
-$string['disabled'] = 'Отключено';
+$string['disabled'] = 'Выключен';
 $string['doesnotcontain'] = 'не содержит';
 $string['endswith'] = 'заканчивается на';
 $string['filterallwarning'] = 'Применение фильтров для содержимого и заголовков может значительно увеличить нагрузку на сервер. Пожалуйста, обдуманно меняйте значение параметра «Применять к». Вариант «к содержимому и заголовкам» в основном используется с мультиязычным фильтром.';

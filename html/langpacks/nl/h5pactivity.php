@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'nl', version '3.11'.
+ * Strings for component 'h5pactivity', language 'nl', version '4.1'.
  *
  * @package     h5pactivity
  * @category    string
@@ -74,6 +74,7 @@ $string['grade_grademethod_help'] = 'Wanneer je beoordeling met punten gebruikt,
 * eerste poging (alle andere pogingen worden genegeerd)
 * laatste poging (alle andere pogingen worden genegeerd)
 * Gebruik geen enkele poging om te beoordelen (schakel beoordelingsberekening uit)';
+$string['grade_h5p'] = 'Cijfer: {$a}';
 $string['grade_highest_attempt'] = 'Hoogste cijfer';
 $string['grade_last_attempt'] = 'Laatste poging';
 $string['grade_manual'] = 'Bereken geen cijfer';
@@ -91,8 +92,10 @@ $string['modulename'] = 'H5P';
 $string['modulename_help'] = 'H5P is de afkorting voor HTML5 Pakket - interactieve inhoud zoals presentaties, video\'s en ander multimediamateriaal, vragen, testen spelletjes en meer. De H5P-activiteit maakt het mogelijk om H5P te uploaden en toe te voegen aan een cursus.
 
 Alle antwoorden op vragen worden automatisch beoordeeld en het cijfer wordt opgenomen in het cijferlijst.';
+$string['modulename_link'] = 'mod/h5pactivity/view';
 $string['modulenameplural'] = 'H5P';
 $string['myattempts'] = 'Mijn pogingen';
+$string['newsubmissions'] = 'H5P ingestuurd';
 $string['no_compatible_track'] = 'Deze interactie  ({$a})  geeft geen opvolgingsinformatie of de gegeven informatie is niet compatibel met de huidige versie van de activiteit.';
 $string['noparticipants'] = 'Geen deelnemers om te tonen';
 $string['opencontentbank'] = '<a href="{$a}" target="_blank"> Open het H5P-bestand in de inhoudsbank </a> (opent in een nieuw venster).';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_match', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughquestions'] = '您必须提供至少 {$a} 对题目和答案�
 $string['pleaseananswerallparts'] = '请回答题目的所有部分。';
 $string['pluginname'] = '匹配题';
 $string['pluginname_help'] = '匹配题也叫连线题，要求答题人将两个名词或短句的列表（问题列表和答案列表）正确匹配。';
+$string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = '添加一道匹配题';
 $string['pluginnameediting'] = '编辑匹配题';
 $string['pluginnamesummary'] = '必须在提供的列表中选择每个子问题的答案';
@@ -46,5 +47,7 @@ $string['privacy:metadata'] = '匹配题类型插件允许问题作者将默认�
 $string['privacy:preference:defaultmark'] = '为给定问题设置的默认分数。';
 $string['privacy:preference:penalty'] = '当使用“多次尝试交互”或“自适应模式”行为运行问题时，每次错误尝试的罚分。';
 $string['privacy:preference:shuffleanswers'] = '答案是否自动重新排序';
+$string['regradeissuenumchoiceschanged'] = '选项的数量发生了变化。';
+$string['regradeissuenumstemschanged'] = '子问题的数量发生了变化。';
 $string['shuffle'] = '乱序';
 $string['shuffle_help'] = '如果启用，且活动设置中的”随机排列题目选项“也被启用，那么每次答题时选项的顺序都会是随机的。';

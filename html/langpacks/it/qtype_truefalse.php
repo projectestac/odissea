@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'it', version '3.11'.
+ * Strings for component 'qtype_truefalse', language 'it', version '4.1'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -34,9 +34,11 @@ $string['feedbacktrue'] = 'Feedback per la risposta \'Vero\'.';
 $string['pleaseselectananswer'] = 'Per favore scegli una risposta.';
 $string['pluginname'] = 'Vero/Falso';
 $string['pluginname_help'] = 'In risposta a una domanda (che può comprendere anche un\'immagine) lo studente potrà scegliere vero o falso.';
+$string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'Creazione domanda Vero/Falso';
 $string['pluginnameediting'] = 'Modifica domanda Vero/Falso';
 $string['pluginnamesummary'] = 'Una declinazione delle domande a risposta multipla con solo due alternative, \'Vero\' e \'Falso\'.';
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Vero/Falso\' non memorizza dati personali.';
 $string['selectone'] = 'Scegli una risposta:';
+$string['showstandardinstruction'] = 'Visualizza istruzioni standard';
 $string['true'] = 'Vero';

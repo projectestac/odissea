@@ -53,7 +53,7 @@ class stats_from_steps_walkthrough_test extends \mod_quiz\attempt_walkthrough_fr
      */
     protected $report;
 
-    protected function get_full_path_of_csv_file($setname, $test) {
+    protected function get_full_path_of_csv_file(string $setname, string $test): string {
         // Overridden here so that __DIR__ points to the path of this file.
         return  __DIR__."/fixtures/{$setname}{$test}.csv";
     }

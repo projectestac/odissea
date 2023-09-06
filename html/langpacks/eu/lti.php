@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'eu', version '3.11'.
+ * Strings for component 'lti', language 'eu', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -206,10 +206,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa LTI jardueretan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak LTI motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa LTI jardueretan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek LTI jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da, Feedbacka ikusi da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala LTI jardueretan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak LTI motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala LTI jardueretan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek LTI jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea, parte-hartzea besteekin)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = 'Saio-hasiera abiarazteko URLa';
 $string['initiatelogin_help'] = 'Saio-hasiera abiarazteko bidaliko diren eskaerak bidaliko diren erremintaren URLa. URL hau behar da erremintara mezu bat ondo bidali ahal izateko.';
 $string['invalidid'] = 'LTIren IDa ez zen egokia';
@@ -289,8 +291,10 @@ Kanpoko tresna jarduera URL baliabidearekin hainbat gauzatan desberdintzen da:
 * Kanpoko tresnak ingurunearen jakitun dira; besteak beste erreminta abiatu duen erabiltzailearen, bere instituzioaren, ikastaroaren eta izenaren berri du.
 * Kanpoko tresnek jarduerarekin erlazionaturiko kalifikazioak irakurri, eguneratu eta ezabatzeko aukera ematen du.
 * Kanpoko tresnek erreminta hornitzailearen webgunearen eta Moodleren arteko konfiantzazko erlazioa ezartzen du, euren arteko konfiantzazko komunikazioa ahalbidetuz.';
+$string['modulename_link'] = 'mod/lti/view';
+$string['modulename_shortcut_link'] = 'mod/lti/ikusi/pertsonalizatua';
 $string['modulenameplural'] = 'Kanpoko tresnak';
-$string['modulenamepluralformatted'] = 'LTI instantziak';
+$string['modulenamepluralformatted'] = 'Kanpoko tresnak';
 $string['name'] = 'Izena';
 $string['never'] = 'Inoiz ez';
 $string['new_window'] = 'Leiho berria';
@@ -314,12 +318,8 @@ $string['opensslconfiginvalid'] = 'LTI 1.3 bertsioak zerbitzarian openssl.cnf ba
 $string['optionalsettings'] = 'Hautazko ezarpenak';
 $string['organization'] = 'Erakundearen xehetasunak';
 $string['organizationdescr'] = 'Erakundearen deskribapena';
-$string['organizationid'] = 'Erakundearen IDa';
 $string['organizationid_default'] = 'Lehenetsitako erakundearen IDa';
 $string['organizationid_default_help'] = 'Erakundearen IDrako lehenetsitako balioa. Gunearen IDak Moodleko instalazio hau identifikatzen du.';
-$string['organizationid_help'] = 'Moodle instantzia honetarako identifikadore bakarra. Normalean, erakundearen DNS-izena erabiltzen da.
-
-Eremu hau hutsik utziz gero, lehenetsitako balioa Moodle gune honen zerbitzariaren izena izango da.';
 $string['organizationidguid'] = 'Erakundearen IDa';
 $string['organizationidguid_help'] = 'Moodle instantzia honen identifikatzaile bakarra tresnara bidali da Plataformako Instantziaren GUID gisa.
 

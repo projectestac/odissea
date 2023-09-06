@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpotreport_scores', language 'es', version '3.11'.
+ * Strings for component 'hotpotreport_scores', language 'es', version '4.1'.
  *
  * @package     hotpotreport_scores
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Informe de puntuaciones';
+$string['privacy:metadata'] = 'El módulo de informe de puntuaciones no guarda ningún dato personal.';

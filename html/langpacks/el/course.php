@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'el', version '3.11'.
+ * Strings for component 'course', language 'el', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -86,7 +86,7 @@ $string['noaccesssincestartinfomessage'] = 'Γεια σας κ. {$a->userfirstna
 <p>Ένας αριθμός μαθητών στο {$a->coursename} δεν πραγματοποίησε ποτέ πρόσβαση στο μάθημα.</p>';
 $string['nocourseactivity'] = 'Δεν υπάρχει αρκετή δραστηριότητα μαθήματος μεταξύ της έναρξης και του τέλους του μαθήματος';
 $string['nocourseendtime'] = 'Το μάθημα δεν έχει χρόνο λήξης';
-$string['nocoursesections'] = 'Δεν υπάρχουν τμήματα μαθημάτων';
+$string['nocoursesections'] = 'Δεν υπάρχουν ενότητες μαθημάτων';
 $string['nocoursestudents'] = 'Καθόλου μαθητές';
 $string['norecentaccessesinfomessage'] = 'Γεια σας κ. {$a->userfirstname},
 <p>Ένας αριθμός μαθητών στο {$a->coursename} δεν πραγματοποίησε πρόσβαση στο μάθημα πρόσφατα.</p>';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'googlemeet', language 'el', version '3.11'.
+ * Strings for component 'googlemeet', language 'el', version '4.1'.
  *
  * @package     googlemeet
  * @category    string
@@ -48,9 +48,9 @@ $string['recordings'] = 'Εγγραφές';
 $string['repeatevery'] = 'Επανάληψη κάθε';
 $string['repeaton'] = 'Επανάληψη στις';
 $string['repeatuntil'] = 'Επανάληψη μέχρι';
-$string['roomcreator'] = 'Δημιουργός δωματίου:';
-$string['roomname'] = 'Όνομα δωματίου';
-$string['roomurl'] = 'Διεύθυνση URL δωματίου';
+$string['roomcreator'] = 'Δημιουργός αίθουσας:';
+$string['roomname'] = 'Όνομα αίθουσας';
+$string['roomurl'] = 'Διεύθυνση URL αίθουσας';
 $string['show'] = 'Εμφάνιση';
 $string['strftimedm'] = '%a. %d %b.';
 $string['strftimedmy'] = '%a. %d %b. %Y';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'zh_cn', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'zh_cn', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = '音频和视频';
 $string['audiobitrate'] = '音频比特率';
 $string['audiobitrate_desc'] = '录音质量 (数值越大质量越高)';
 $string['audiortc'] = '录制音频';
+$string['audiotimelimit'] = '音频时间限制（秒）';
+$string['audiotimelimit_desc'] = '音频剪辑允许的最大录制长度';
 $string['gumabort'] = '发生了一些奇怪的事情, 使网络摄像头/麦克风无法使用';
 $string['gumabort_title'] = '发生了一些事';
 $string['gumnotallowed'] = '用户必须允许浏览器访问 摄像头/麦克风';
@@ -69,6 +71,7 @@ $string['startrecording'] = '开始录制';
 $string['stoprecording'] = '停止录制';
 $string['timelimit'] = '时间限制 (秒)';
 $string['timelimit_desc'] = '音频视频片段允许的最大录制长度';
+$string['timelimitwarning'] = '您必须输入一个大于0的数字。';
 $string['uploadaborted'] = '上传已中止:';
 $string['uploadfailed'] = '上传失败:';
 $string['uploadfailed404'] = '上载失败: 文件太大';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = '已完成';
 $string['videobitrate'] = '视频比特率';
 $string['videobitrate_desc'] = '视频录制质量 (数值越大质量越高)';
 $string['videortc'] = '录制视频';
+$string['videotimelimit'] = '视频时间限制（以秒为单位）';
+$string['videotimelimit_desc'] = '视频剪辑允许的最大录制长度';

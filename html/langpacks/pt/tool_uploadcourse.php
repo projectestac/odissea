@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'pt', version '3.11'.
+ * Strings for component 'tool_uploadcourse', language 'pt', version '4.1'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -37,13 +37,13 @@ $string['cannotforcelang'] = 'Não tem permissão para forçar o idioma para est
 $string['cannotgenerateshortnameupdatemode'] = 'Não é possível gerar um nome curto quando as atualizações são permitidas';
 $string['cannotreadbackupfile'] = 'Não é possível ler o ficheiro da cópia de segurança';
 $string['cannotrenamecoursenotexist'] = 'Não é possível renomear uma disciplina que não existe';
-$string['cannotrenameidnumberconflict'] = 'Não é possível renomear a disciplina, o número ID está em conflito com uma disciplina existente';
+$string['cannotrenameidnumberconflict'] = 'Não é possível renomear a disciplina, o número de identificação (ID) está em conflito com uma disciplina existente';
 $string['cannotrenameshortnamealreadyinuse'] = 'Não é possível renomear a disciplina, o nome curto já está em uso';
-$string['cannotupdatefrontpage'] = 'Não é permitido modificar a página principal';
+$string['cannotupdatefrontpage'] = 'Não tem permissão para modificar a página principal.';
 $string['canonlyrenameinupdatemode'] = 'Só é possível renomear uma disciplina quando a atualização é permitida';
 $string['canonlyresetcourseinupdatemode'] = 'Só é possível reiniciar uma disciplina no modo de atualização';
 $string['couldnotresolvecatgorybyid'] = 'Não foi possível resolver a categoria por ID';
-$string['couldnotresolvecatgorybyidnumber'] = 'Não foi possível resolver a categoria pelo número ID';
+$string['couldnotresolvecatgorybyidnumber'] = 'Não foi possível resolver a categoria pelo número de identificação (ID)';
 $string['couldnotresolvecatgorybypath'] = 'Não foi possível resolver a categoria pelo caminho';
 $string['coursecreated'] = 'Disciplina criada';
 $string['coursedeleted'] = 'Disciplina apagada';
@@ -52,7 +52,7 @@ $string['coursedoesnotexistandcreatenotallowed'] = 'A disciplina não existe e n
 $string['courseexistsanduploadnotallowed'] = 'A  disciplina existe e não é permitido atualizar';
 $string['coursefile'] = 'Ficheiro';
 $string['coursefile_help'] = 'O ficheiro tem de ser um ficheiro CSV.';
-$string['courseidnumberincremented'] = 'Número ID da disciplina incrementado {$a->from} -> {$a->to}';
+$string['courseidnumberincremented'] = 'Número de identificação (ID) da disciplina incrementado de {$a->from} -> {$a->to}';
 $string['courseprocess'] = 'Processamento da disciplina';
 $string['courserenamed'] = 'Disciplina renomeada';
 $string['courserenamingnotallowed'] = 'Não é permitido renomear disciplina';
@@ -91,7 +91,7 @@ $string['errorwhilerestoringcourse'] = 'Erro ao restaurar a disciplina';
 $string['generatedshortnamealreadyinuse'] = 'O nome curto gerado já está a ser usado';
 $string['generatedshortnameinvalid'] = 'O nome curto gerado é inválido';
 $string['id'] = 'ID';
-$string['idnumberalreadyinuse'] = 'Número ID já em uso noutra disciplina';
+$string['idnumberalreadyinuse'] = 'Número de identificação (ID) já em uso por outra disciplina';
 $string['importoptions'] = 'Opções de importar disciplina';
 $string['invalidbackupfile'] = 'Ficheiro de cópia de segurança inválido';
 $string['invalidcourseformat'] = 'Formato de disciplina inválido';

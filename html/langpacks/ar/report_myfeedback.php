@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_myfeedback', language 'ar', version '3.11'.
+ * Strings for component 'report_myfeedback', language 'ar', version '4.1'.
  *
  * @package     report_myfeedback
  * @category    string
@@ -101,7 +101,7 @@ $string['privacy:metadata:report_myfeedback'] = 'ملاحظات الانطباع
 $string['privacy:metadata:report_myfeedback:feedback'] = 'إفادة Turnitin المدخلة يدويًا من قبل المستخدم';
 $string['progadmin_dashboard'] = 'دفة قيادة المشرف على القسم';
 $string['quiz'] = 'الاختبار';
-$string['return-2-dash'] = 'عودة إلى لوحة التحكم';
+$string['return-2-dash'] = 'عودة إلى دفة القيادة';
 $string['selectall'] = 'إختيار الكل';
 $string['selfaddedfeedback'] = 'الإفادة المضافة ذاتيًا';
 $string['student'] = 'الطالب';

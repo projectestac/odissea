@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_btec', language 'ar', version '3.11'.
+ * Strings for component 'gradingform_btec', language 'ar', version '4.1'.
  *
  * @package     gradingform_btec
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['backtoediting'] = 'عودة إلى التحرير';
+$string['btecgrading_link'] = 'BTEC_marking';
 $string['clicktocopy'] = 'أنقر لنسخ هذا النص إلى إفادة المعيار';
 $string['description'] = 'الوصف';
 $string['descriptionmarkers'] = 'الوصف للمصححين';

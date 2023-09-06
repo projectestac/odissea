@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_aiken', language 'ko', version '3.11'.
+ * Strings for component 'qformat_aiken', language 'ko', version '4.1'.
  *
  * @package     qformat_aiken
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Aiken 형식';
 $string['pluginname_help'] = '문서 파일로 선다형 질문을 가져올 수 있는 단순한 형식입니다.';
+$string['pluginname_link'] = 'qformat/aiken';

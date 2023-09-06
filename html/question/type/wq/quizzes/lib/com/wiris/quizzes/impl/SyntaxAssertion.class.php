@@ -22,7 +22,6 @@ class com_wiris_quizzes_impl_SyntaxAssertion extends com_wiris_quizzes_impl_Asse
 		return com_wiris_quizzes_impl_QuizzesEnumUtils::string2SyntaxName($this->name);
 	}
 	static $TAGNAME = "syntaxAssertion";
-	static $DEFAULT_SYNTAX;
 	static function fromAssertion($a) {
 		$s = new com_wiris_quizzes_impl_SyntaxAssertion();
 		$s->correctAnswer = $a->correctAnswer;
@@ -39,9 +38,9 @@ class com_wiris_quizzes_impl_SyntaxAssertion extends com_wiris_quizzes_impl_Asse
 	}
 	static function getDefaultSyntax() {
 		$s = new com_wiris_quizzes_impl_SyntaxAssertion();
-		$s->setName(com_wiris_quizzes_impl_SyntaxAssertion::$DEFAULT_SYNTAX);
+		$s->setName(com_wiris_quizzes_api_assertion_SyntaxName::$MATH);
+		$s->setParameter(com_wiris_quizzes_api_assertion_SyntaxParameterName::$DECIMAL_SEPARATORS, ".,'");
 		return $s;
 	}
 	function __toString() { return 'com.wiris.quizzes.impl.SyntaxAssertion'; }
 }
-com_wiris_quizzes_impl_SyntaxAssertion::$DEFAULT_SYNTAX = com_wiris_quizzes_api_assertion_SyntaxName::$MATH;

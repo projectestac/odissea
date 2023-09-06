@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'en', version '3.11'.
+ * Strings for component 'lti', language 'en', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -305,7 +305,7 @@ External tool activities differ from URL resources in a few ways:
 $string['modulename_link'] = 'mod/lti/view';
 $string['modulename_shortcut_link'] = 'mod/lti/view/custom';
 $string['modulenameplural'] = 'External tools';
-$string['modulenamepluralformatted'] = 'LTI Instances';
+$string['modulenamepluralformatted'] = 'External tools';
 $string['name'] = 'Name';
 $string['never'] = 'Never';
 $string['new_window'] = 'New window';
@@ -329,12 +329,8 @@ $string['opensslconfiginvalid'] = 'LTI 1.3 requires a valid openssl.cnf to be co
 $string['optionalsettings'] = 'Optional settings';
 $string['organization'] = 'Organisation details';
 $string['organizationdescr'] = 'Organisation description';
-$string['organizationid'] = 'Organisation ID';
 $string['organizationid_default'] = 'Default organisation ID';
 $string['organizationid_default_help'] = 'The default value to use for Organisation ID. Site ID identifies this installation of Moodle.';
-$string['organizationid_help'] = 'A unique identifier for this Moodle instance. Typically, the DNS name of the organisation is used.
-
-If this field is left blank, the host name of this Moodle site will be used as the default value.';
 $string['organizationidguid'] = 'Organisation ID';
 $string['organizationidguid_help'] = 'A unique identifier for this Moodle instance passed to the tool as the Platform Instance GUID.
 

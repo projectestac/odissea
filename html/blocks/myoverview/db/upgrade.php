@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+require_once("{$CFG->dirroot}/my/lib.php");
+require_once("{$CFG->libdir}/db/upgradelib.php");
+
 /**
  * Upgrade code for the MyOverview block.
  *
@@ -33,58 +36,49 @@ defined('MOODLE_INTERNAL') || die();
 function xmldb_block_myoverview_upgrade($oldversion) {
     global $DB, $CFG, $OUTPUT;
 
-    if ($oldversion < 2019091800) {
-        // Remove orphaned course favourites, which weren't being deleted when the course was deleted.
-        $sql = 'SELECT f.id
-                  FROM {favourite} f
-             LEFT JOIN {course} c
-                    ON (c.id = f.itemid)
-                 WHERE f.component = :component
-                   AND f.itemtype = :itemtype
-                   AND c.id IS NULL';
-        $params = ['component' => 'core_course', 'itemtype' => 'courses'];
-
-        if ($records = $DB->get_fieldset_sql($sql, $params)) {
-            $chunks = array_chunk($records, 1000);
-            foreach ($chunks as $chunk) {
-                list($insql, $inparams) = $DB->get_in_or_equal($chunk);
-                $DB->delete_records_select('favourite', "id $insql", $inparams);
-            }
-        }
-
-        upgrade_block_savepoint(true, 2019091800, 'myoverview', false);
-    }
-
-    // Automatically generated Moodle v3.8.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2019111801) {
-        // Renaming the setting from displaygroupingstarred to displaygroupingfavourites to match Moodle convention.
-
-        // Check to see if record exists. get_config doesn't allow differentiation between not exists and false.
-        $dbval = $DB->get_field('config_plugins', 'value', ['plugin' => 'block_myoverview', 'name' => 'displaygroupingstarred']);
-        if ($dbval !== false) {
-            set_config('displaygroupingfavourites', $dbval, 'block_myoverview');
-            unset_config('displaygroupingstarred', 'block_myoverview');
-        }
-
-        if (isset($CFG->forced_plugin_settings['block_myoverview']['displaygroupingstarred'])) {
-            // Check to see if the starred setting is defined in the config file. Display a warning if so.
-            $warn = 'Setting block_myoverview->displaygroupingstarred has been renamed '.
-                    'to block_myoverview->displaygroupingfavourites. Old setting present in config.php.';
-            echo $OUTPUT->notification($warn, 'notifyproblem');
-        }
-
-        upgrade_block_savepoint(true, 2019111801, 'myoverview', false);
-    }
-
     // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.10.0 release upgrade line.
+    if ($oldversion < 2021052504) {
+        upgrade_block_delete_instances('myoverview', '__default', 'my-index');
+
+        // Add new instance to the /my/courses.php page.
+        $subpagepattern = $DB->get_record('my_pages', [
+            'userid' => null,
+            'name' => MY_PAGE_COURSES,
+            'private' => MY_PAGE_PUBLIC,
+        ], 'id', IGNORE_MULTIPLE)->id;
+
+        $blockname = 'myoverview';
+        $pagetypepattern = 'my-index';
+
+        $blockparams = [
+            'blockname' => $blockname,
+            'pagetypepattern' => $pagetypepattern,
+            'subpagepattern' => $subpagepattern,
+        ];
+
+        // See if this block already somehow exists, it should not but who knows.
+        if (!$DB->record_exists('block_instances', $blockparams)) {
+            $page = new moodle_page();
+            $page->set_context(context_system::instance());
+            // Add the block to the default /my/courses.
+            $page->blocks->add_region('content');
+            $page->blocks->add_block($blockname, 'content', 0, false, $pagetypepattern, $subpagepattern);
+        }
+
+        upgrade_block_savepoint(true, 2021052504, 'myoverview', false);
+    }
+
+    if ($oldversion < 2022041901) {
+        upgrade_block_set_my_user_parent_context('myoverview', '__default', 'my-index');
+        upgrade_block_savepoint(true, 2022041901, 'myoverview', false);
+    }
+
+    // Automatically generated Moodle v4.0.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.11.0 release upgrade line.
+    // Automatically generated Moodle v4.1.0 release upgrade line.
     // Put any upgrade step following this.
 
     return true;

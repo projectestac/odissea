@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'de', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'de', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -30,3 +30,4 @@ $string['pluginname'] = 'Aus Tabellenkalkulation einfügen';
 $string['privacy:metadata'] = 'Das Tabellenimport-Plugin für Bewertungen speichert keine personenbezogenen Daten.';
 $string['userdata'] = 'Hilfe zum Kopieren von Daten in dieses Formular.';
 $string['userdata_help'] = 'Bewertungen können aus einem Tabellenblatt kopiert und eingefügt werden. Das Tabellenblatt benötigt eine Spalte zur Identifikation des Nutzers (user-ID oder user name). Jede Spalte für den Import von Bewertungen benötigt einen Titel.';
+$string['userdata_link'] = 'grade/import/direct/index';

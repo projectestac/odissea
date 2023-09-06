@@ -32,6 +32,7 @@ require_once($CFG->dirroot . '/question/engine/tests/helpers.php');
  * @package   qtype_multichoice
  * @copyright 2009 The Open University
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \qtype_multichoice_multi_question
  */
 class question_multi_test extends \advanced_testcase {
 
@@ -126,8 +127,7 @@ class question_multi_test extends \advanced_testcase {
         $mc->shuffleanswers = false;
         $mc->start_attempt(new question_attempt_step(), 1);
 
-        $summary = $mc->summarise_response($mc->prepare_simulated_post_data(array('B' => 1, 'C' => 1)),
-                \test_question_maker::get_a_qa($mc));
+        $summary = $mc->summarise_response($mc->prepare_simulated_post_data(['B' => 1, 'C' => 1]));
 
         $this->assertEquals('B; C', $summary);
     }
@@ -137,10 +137,19 @@ class question_multi_test extends \advanced_testcase {
         $mc->shuffleanswers = false;
         $mc->start_attempt(new question_attempt_step(), 1);
 
-        $summary = $mc->summarise_response($mc->prepare_simulated_post_data(array('clearchoice' => -1)),
-            \test_question_maker::get_a_qa($mc));
+        $summary = $mc->summarise_response($mc->prepare_simulated_post_data(['clearchoice' => -1]));
 
         $this->assertNull($summary);
+    }
+
+    public function test_un_summarise_response() {
+        $mc = \test_question_maker::make_a_multichoice_multi_question();
+        $mc->shuffleanswers = false;
+        $mc->start_attempt(new question_attempt_step(), 1);
+
+        $this->assertEquals(['choice1' => '1', 'choice2' => '1'], $mc->un_summarise_response('B; C'));
+
+        $this->assertEquals([], $mc->un_summarise_response(''));
     }
 
     public function test_classify_response() {

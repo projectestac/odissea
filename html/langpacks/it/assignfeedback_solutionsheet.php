@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_solutionsheet', language 'it', version '3.11'.
+ * Strings for component 'assignfeedback_solutionsheet', language 'it', version '4.1'.
  *
  * @package     assignfeedback_solutionsheet
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['default'] = 'Abilitato di default';
+$string['enabled_link'] = 'assignfeedback/solutionsheet';

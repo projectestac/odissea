@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_link', language 'el', version '3.11'.
+ * Strings for component 'atto_link', language 'el', version '4.1'.
  *
  * @package     atto_link
  * @category    string
@@ -31,4 +31,5 @@ $string['enterurl'] = 'Εισαγωγή μιας διεύθυνσης URL';
 $string['openinnewwindow'] = 'Άνοιγμα σε νέο παράθυρο';
 $string['pluginname'] = 'Σύνδεσμος';
 $string['privacy:metadata'] = 'Το πρόσθετο «atto_link» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['texttodisplay'] = 'Κείμενο προς εμφάνιση';
 $string['unlink'] = 'Κατάργηση συνδέσμου';

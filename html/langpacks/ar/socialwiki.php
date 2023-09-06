@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'socialwiki', language 'ar', version '3.11'.
+ * Strings for component 'socialwiki', language 'ar', version '4.1'.
  *
  * @package     socialwiki
  * @category    string
@@ -39,6 +39,8 @@ $string['contributors_help'] = 'المستخدمون الذين ساهموا ف�
 $string['deniedfollow'] = 'ليست لديك صلاحية متابعة الأشخاص';
 $string['editblocks'] = 'تمكين تحرير الكتل';
 $string['editingpage'] = 'تحرير هذه الصفحة \'{$a}\'';
+$string['formatcreole_link'] = 'mod/socialwiki/creole';
+$string['formatnwiki_link'] = 'mod/socialwiki/nwiki';
 $string['help_admin'] = 'بصفتك معلم أو مشرف فلديك إمكانية الوصول إلى صفحة الإدارة لإصلاح أي محتوى غير مرغوب به.</br>
 أيقونة الترس المجاورة لاسم الصفحة لتؤدي إلى تحرير تلك الصفحة.
 أيقونة الضرب × ستحذف الصفحة وتعود بك إلى الصفحة الرئيسية إذا كانت الصفحة الحالية هي التي يجري حذفها.</br>
@@ -57,6 +59,7 @@ $string['incorrectdeleteversions'] = 'إصدارات الصفحة المقدمة
 $string['like_tip'] = 'الإعجاب/إلغاء الإعجاب بهذه الصفحة';
 $string['makepage'] = 'إنشاء صفحة جديدة';
 $string['missingpages'] = 'الصفحات التي بلا محتوى';
+$string['modulename_link'] = 'mod/socialwiki/view';
 $string['mypages'] = 'صفحاتي';
 $string['mypages_empty'] = 'لم تقم بإنشاء أي صفحات.';
 $string['name'] = 'الاسم';

@@ -109,6 +109,7 @@
     margin: 1em 0 2em;
 }
 
+#page-admin-roles-override .capcurrent,
 #page-admin-roles-define .capdefault {
     background-color: $table-hover-bg;
 }
@@ -245,6 +246,21 @@
     text-align: center;
     padding: 0.5em;
     margin: 0;
+}
+
+.path-admin,
+.format-site {
+    .header-maxwidth,
+    .secondary-navigation .navigation .nav-tabs {
+        max-width: none;
+    }
+}
+.path-admin.path-admin-roles:not(.format-site),
+.path-admin.path-admin-tool-lp {
+    .header-maxwidth,
+    .secondary-navigation .navigation .nav-tabs {
+        max-width: $course-content-maxwidth;
+    }
 }
 
 .plugincheckwrapper {

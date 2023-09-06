@@ -285,7 +285,7 @@ class participants_search {
             ] = $this->get_keywords_search_sql($mappings);
 
             if (!empty($keywordswhere)) {
-                $wheres[] = $keywordswhere;
+                $wheres[] = "({$keywordswhere})";
             }
 
             if (!empty($keywordsparams)) {
@@ -964,6 +964,8 @@ class participants_search {
             $keywords = $keywordsfilter->get_filter_values();
         }
 
+        $canviewfullnames = has_capability('moodle/site:viewfullnames', $this->context);
+
         foreach ($keywords as $index => $keyword) {
             $searchkey1 = 'search' . $index . '1';
             $searchkey2 = 'search' . $index . '2';
@@ -974,9 +976,11 @@ class participants_search {
             $searchkey7 = 'search' . $index . '7';
 
             $conditions = [];
+
             // Search by fullname.
-            $fullname = $DB->sql_fullname('u.firstname', 'u.lastname');
+            [$fullname, $fullnameparams] = fields::get_sql_fullname('u', $canviewfullnames);
             $conditions[] = $DB->sql_like($fullname, ':' . $searchkey1, false, false);
+            $params = array_merge($params, $fullnameparams);
 
             // Search by email.
             $email = $DB->sql_like('email', ':' . $searchkey2, false, false);

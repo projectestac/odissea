@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'ja', version '3.11'.
+ * Strings for component 'gradereport_history', language 'ja', version '4.1'.
  *
  * @package     gradereport_history
  * @category    string
@@ -47,7 +47,7 @@ $string['historyperpage'] = '1ページあたりの履歴エントリ';
 $string['historyperpage_help'] = 'この設定では履歴レポートの1ページあたりに表示する履歴エントリ数を決定します。';
 $string['loadmoreusers'] = 'さらにユーザを読み込む ...';
 $string['pluginname'] = '評定履歴';
-$string['preferences'] = '評定履歴プリファレンス';
+$string['preferences'] = '評定履歴プレファレンス';
 $string['privacy:metadata'] = '評定履歴レポートは他の場所に保存されたデータのみ表示します。';
 $string['revisedonly'] = '修正済み評定のみ';
 $string['revisedonly_help'] = '修正された評定のみ表示されます。

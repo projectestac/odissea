@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'eu', version '3.11'.
+ * Strings for component 'enrol_manual', language 'eu', version '4.1'.
  *
  * @package     enrol_manual
  * @category    string
@@ -57,6 +57,7 @@ $string['expirymessageenrollerbody'] = '\'{$a->course}\' ikastaroko matrikulazio
 
 Euren matrikulazioa luzatzeko, sartu hemen {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Matrikulazio-amaieraren jakinarazpena';
+$string['managemanualenrolements'] = 'Kudeatu eskuzko matrikulazioak';
 $string['manual:config'] = 'Konfiguratu eskuzko matrikulaziorako instantziak';
 $string['manual:enrol'] = 'Matrikulatu erabiltzaileak';
 $string['manual:manage'] = 'Kudeatu erabiltzaileen matrikulak';

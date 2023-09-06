@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ur', version '3.11'.
+ * Strings for component 'block_section_links', language 'ur', version '4.1'.
  *
  * @package     block_section_links
  * @category    string
@@ -25,8 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['jumptocurrenttopic'] = 'حالیہ موضوع کی طرف جاؤ';
-$string['jumptocurrentweek'] = 'حالیہ ہفتے کو جاؤ';
-$string['pluginname'] = 'لنکس کے سیکشنز';
+$string['incby1'] = 'کی طرف سے اضافہ';
+$string['incby1_help'] = 'یہ وہ قدر ہے جو ہر بار سیکشن کا لنک 1 سے شروع ہونے پر ظاہر ہونے پر سیکشن میں اضافہ ہوتا ہے۔';
+$string['incby2'] = 'کی طرف سے متبادل اضافہ';
+$string['incby2_help'] = 'یہ وہ قدر ہے جو ہر بار سیکشن کا لنک 1 سے شروع ہونے پر ظاہر ہونے پر سیکشن میں اضافہ ہوتا ہے۔';
+$string['jumptocurrenttopic'] = 'موجودہ موضوع پر جائیں';
+$string['jumptocurrentweek'] = 'موجودہ ہفتے پر جائیں';
+$string['numsections1'] = 'حصوں کی تعداد';
+$string['numsections1_help'] = 'ایک بار جب کورس میں سیکشنز کی تعداد اس نمبر تک پہنچ جاتی ہے تو پھر قدر کے لحاظ سے اضافہ استعمال کیا جاتا ہے۔';
+$string['numsections2'] = 'حصوں کی متبادل تعداد';
+$string['numsections2_help'] = 'ایک بار جب کورس میں سیکشنز کی تعداد اس نمبر تک پہنچ جاتی ہے تو پھر قدر کے لحاظ سے متبادل اضافہ استعمال کیا جاتا ہے۔';
+$string['pluginname'] = 'سیکشنز کے لنکس';
+$string['privacy:metadata'] = 'سیکشن لنکس بلاک صرف دوسرے مقامات پر ذخیرہ شدہ ڈیٹا کو دکھاتا ہے۔';
+$string['section_links:addinstance'] = 'ایک نیا سیکشن لنکس بلاک شامل کریں';
+$string['showsectionname'] = 'سیکشن کا نام ڈسپلے کریں';
+$string['showsectionname_help'] = 'سیکشن نمبر کے علاوہ سیکشن کا نام دکھائیں';
 $string['topics'] = 'موضوعات';
 $string['weeks'] = 'ہفتے';

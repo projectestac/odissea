@@ -65,7 +65,7 @@ Feature: Optional policies
       | OwnPageOptional1       | full text5 | short text5 | 1              | 1         |
     And I am on site homepage
     And I follow "Log in"
-    And I press "Create new account"
+    And I click on "Create new account" "link"
     # Compulsory policies displayed on own page are shown first and must be agreed.
     And I should see "OwnPageCompulsory1" in the "region-main" "region"
     And I should see "short text4" in the "region-main" "region"
@@ -86,7 +86,7 @@ Feature: Optional policies
       | Email address | user3@address.invalid |
       | Email (again) | user3@address.invalid |
       | First name    | User3                 |
-      | Surname       | L3                    |
+      | Last name       | L3                    |
     And I press "Create my new account"
     And I should see "Confirm your account"
     And I should see "An email should have been sent to your address at user3@address.invalid"

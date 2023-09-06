@@ -92,7 +92,7 @@ Feature: In a lesson activity, teachers can review student attempts
     And I press "Continue"
     And I should see "Congratulations - end of lesson reached"
     Then I am on the "Test lesson name" "lesson activity" page logged in as teacher1
-    And I follow "Reports"
+    And I navigate to "Reports" in current page administration
     And I should see "Student 1"
     And I should see "100%"
     And I should see "High score"
@@ -144,7 +144,7 @@ Feature: In a lesson activity, teachers can review student attempts
     And I should see "Fourth page contents"
     And I press "End of lesson"
     Then I am on the "Test lesson name" "lesson activity" page logged in as teacher1
-    And I follow "Reports"
+    And I navigate to "Reports" in current page administration
     And I should see "Student 1"
     And I should not see "High score"
     And I should not see "Average score"

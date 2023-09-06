@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ja', version '3.11'.
+ * Strings for component 'blog', language 'ja', version '4.1'.
  *
  * @package     blog
  * @category    string
@@ -52,7 +52,7 @@ $string['blogentriesbygroupaboutmodule'] = '{$a->mod} に関するブログエ�
 $string['blogentriesbyuseraboutcourse'] = '{$a->course} に関するブログエントリ by {$a->user}';
 $string['blogentriesbyuseraboutmodule'] = '{$a->mod} に関するブログエントリ by {$a->user}';
 $string['blogentrybyuser'] = 'ブログエントリ by {$a}';
-$string['blogpreferences'] = 'ブログプリファレンス';
+$string['blogpreferences'] = 'ブログプレファレンス';
 $string['blogs'] = 'ブログ';
 $string['blogscourse'] = 'コースブログ';
 $string['blogssite'] = 'サイトブログ';
@@ -133,7 +133,7 @@ $string['page-blog-x'] = 'すべてのブログページ';
 $string['pagesize'] = '1ページあたりのブログエントリ数';
 $string['permalink'] = 'パーマリンク';
 $string['personalblogs'] = 'ユーザは自分のブログのみ閲覧できる';
-$string['preferences'] = 'ブログプリファレンス';
+$string['preferences'] = 'ブログプレファレンス';
 $string['privacy:metadata:core_comments'] = 'ブログエントリに関連するコメントです。';
 $string['privacy:metadata:core_files'] = 'ブログエントリに添付されたファイルです。';
 $string['privacy:metadata:core_tag'] = 'ブログエントリに関連するタグです。';
@@ -176,7 +176,7 @@ $string['relatedblogentries'] = '関連するブログエントリ';
 $string['retrievedfrom'] = '取得先: ';
 $string['rssfeed'] = 'ブログRSSフィード';
 $string['searchterm'] = '検索: {$a}';
-$string['settingsupdatederror'] = 'エラーが発生したため、ブログプリファレンス設定は更新できませんでした。';
+$string['settingsupdatederror'] = 'エラーが発生したため、ブログプレファレンス設定は更新できませんでした。';
 $string['siteblogdisable'] = 'サイトブログは有効にされていません。';
 $string['siteblogheading'] = 'サイトブログ';
 $string['siteblogs'] = 'すべてのサイトユーザはすべてのブログエントリを閲覧できる';

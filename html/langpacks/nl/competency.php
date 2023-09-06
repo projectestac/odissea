@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'nl', version '3.11'.
+ * Strings for component 'competency', language 'nl', version '4.1'.
  *
  * @package     competency
  * @category    string
@@ -111,7 +111,7 @@ $string['invalidurl'] = 'De URL is niet geldig. Die moet beginnen met \'http://\
 $string['nouserplanswithcompetency'] = 'Er zijn geen studieplannen die deze competentie bevatten.';
 $string['planstatusactive'] = 'Actief';
 $string['planstatuscomplete'] = 'Volledig';
-$string['planstatusdraft'] = 'Klad';
+$string['planstatusdraft'] = 'Concept';
 $string['planstatusinreview'] = 'Wordt beoordeeld';
 $string['planstatuswaitingforreview'] = 'Wacht op beoordeling';
 $string['pointsrequiredaremet'] = 'Vereiste punten behaald';

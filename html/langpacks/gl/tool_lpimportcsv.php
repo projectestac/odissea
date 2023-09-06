@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'gl', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'gl', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['confirmcolumnmappings'] = 'Confirmar as asignacións de columna';
 $string['exportnavlink'] = 'Exportar marco de competencia';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['pluginname'] = 'Importar marco de competencia';

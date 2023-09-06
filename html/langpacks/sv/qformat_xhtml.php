@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xhtml', language 'sv', version '3.11'.
+ * Strings for component 'qformat_xhtml', language 'sv', version '4.1'.
  *
  * @package     qformat_xhtml
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XHTML format';
 $string['pluginname_help'] = 'XHTML-format möjliggör att alla frågor i kategorin kan exporteras till en enda sida av strikt XHTML för eventuell användning i ett annat program.';
+$string['pluginname_link'] = 'qformat/xhtml';
 $string['privacy:metadata'] = 'Pluginmodulen XHTML frågeformat lagrar ingen personinformation.';

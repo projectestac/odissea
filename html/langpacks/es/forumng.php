@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumng', language 'es', version '3.11'.
+ * Strings for component 'forumng', language 'es', version '4.1'.
  *
  * @package     forumng
  * @category    string
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['digestmailheader'] = 'Este es su resumen de correo diario de nuevos mensajes en los foros de {$a->sitename}. Para cambiar sus preferencias de correos de foro, vaya a {$a->userprefs}.';
 $string['digestmailsubject'] = '{$a}: resumen de foro';
 $string['forumngcrontaskdigest'] = 'Trabajo de resumen de correo de foros';
+$string['forumtype_link'] = 'mod/forumng/forumtypes';

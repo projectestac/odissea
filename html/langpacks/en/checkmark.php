@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'en', version '3.11'.
+ * Strings for component 'checkmark', language 'en', version '4.1'.
  *
  * @package     checkmark
  * @category    string
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['absent'] = 'Absent';
 $string['activateindividuals'] = 'Activate individual function';
 $string['activitydate:due'] = 'Due:';
-$string['activitydate:open'] = 'Opens:';
 $string['activitydate:opened'] = 'Opened:';
 $string['activitydate:opens'] = 'Opens:';
 $string['addnewgroupoverride'] = 'Add group override';
@@ -58,7 +57,7 @@ $string['attendancegradelink_hint'] = 'Note: Automatically calculated grades are
 $string['attendancestatus'] = 'Current status of your attendance';
 $string['attendant'] = 'Attendant';
 $string['autograde_all'] = 'Grade all submissions';
-$string['autograde_confirm'] = 'You are about to update grades and feedback for <strong>{$a->total}</strong>. <strong>{$a->graded}</strong> former grades and feedback will be overwritten.';
+$string['autograde_confirm'] = 'You are about to update grades and comments for <strong>{$a->total}</strong>. <strong>{$a->graded}</strong> former grades and comments will be overwritten.';
 $string['autograde_confirm_continue'] = 'Are you shure you wan\'t to continue?';
 $string['autograde_custom'] = 'Grade selected users';
 $string['autograde_error'] = 'An error occurred during auto-grading.';
@@ -94,6 +93,8 @@ Absent users will be graded with 0 points and users with unknown attendancy will
 $string['bulk_no_users_selected'] = 'You haven\'t selected any user. Select the required users via the checkboxes in the left column of the table below.';
 $string['calendardue'] = '{$a} is due';
 $string['calendargradingdue'] = '{$a} is due to be graded';
+$string['calendarteachers'] = 'Show due date in calendar of teachers';
+$string['calendarteachers_help'] = 'The due date of the checkmark can optionally be displayed in the calendar for teachers. For students, the due date is displayed in the calendar by default. Attention: If there are many checkmark exercises in the course, the calendar view can become cluttered for teachers.';
 $string['cannotviewcheckmark'] = 'You can not view this checkmark';
 $string['cantfixevent'] = 'Couldn\'t fix event with ID {$a->id}, named {$a->name} ({$a->matches} matches).';
 $string['cfg_nowarning'] = 'No warning';
@@ -117,16 +118,16 @@ $string['checkmark_overviewsummary_nograde'] = 'You\'ve checked {$a->checked_exa
 $string['checkmark_summary'] = 'You\'ve checked <span id="examples">{$a->checked_examples}</span> out of {$a->total_examples} examples.<br />(<span id="grade">{$a->checked_grade}</span> out of a maximum of {$a->total_grade} points)';
 $string['checkmarkdetails'] = 'Checkmark details';
 $string['checkmarkisdue'] = 'Checkmark assignment is due';
-$string['checkmarkmail'] = '{$a->grader} posted feedback on your
+$string['checkmarkmail'] = '{$a->grader} posted a comment on your
 checkmark submission for \'{$a->checkmark}\'
 
 You can see it appended to your checkmark submission:
 
     {$a->url}';
-$string['checkmarkmailhtml'] = '{$a->grader} posted feedback on your
+$string['checkmarkmailhtml'] = '{$a->grader} posted a comment on your
 checkmark submission for \'<i>{$a->checkmark}</i>\'<br /><br />
 You can see it appended to your <a href="{$a->url}">checkmark submission</a>.';
-$string['checkmarkmailsmall'] = '{$a->grader} posted feedback on your
+$string['checkmarkmailsmall'] = '{$a->grader} posted a comment on your
 checkmark submission for \'{$a->checkmark}\' You can see it appended to your submission';
 $string['checkmarkname'] = 'Checkmark name';
 $string['checkmarks'] = 'Checkmarks';
@@ -231,10 +232,10 @@ $string['exporttemplates_help'] = 'Quick export with predefined templates<br />
         containing following columns: [fullname, idnumber, examples, checked, grade, signature]</li>
 </ul>';
 $string['extended_until'] = 'Extended until {$a}';
-$string['failedupdatefeedback'] = 'Failed to update submission feedback for user {$a}';
-$string['feedback'] = 'Feedback';
-$string['feedbackfromteacher'] = 'Feedback from the {$a}';
-$string['feedbackupdated'] = 'Submissions feedback updated for {$a} people';
+$string['failedupdatefeedback'] = 'Failed to update submission comment for user {$a}';
+$string['feedback'] = 'Comment';
+$string['feedbackfromteacher'] = 'Comment from the {$a}';
+$string['feedbackupdated'] = 'Submissions comment updated for {$a} people';
 $string['filter'] = 'Filter';
 $string['filtergrantedextension'] = 'Granted extension';
 $string['filternotsubmitted'] = 'Not submitted';
@@ -247,6 +248,7 @@ $string['forcesinglelinenames'] = 'Force single-line names';
 $string['forcesinglelinenames_help'] = '<p>Enforces the name to be written to the PDF in a single line.</p>
 <p><i>Beware:</i> if there are too many columns or the name is too long it will be distorted and can become unreadable. Hide some unimportant columns to have more room for the name if this happens.</p>';
 $string['format'] = 'Format';
+$string['gotoactivity'] = 'Go to activity';
 $string['grade'] = 'Grade';
 $string['grade_attendence_name'] = 'Attendence grade';
 $string['grade_automatically'] = 'Grade automatically';
@@ -299,7 +301,7 @@ $string['noclose'] = 'No close date';
 $string['nolatesubmissions'] = 'No late submissions accepted.';
 $string['nomoresubmissions'] = 'No further submissions are allowed.';
 $string['nomoresubmissionsaccepted'] = 'Only allowed for participants who have been granted an extension';
-$string['nonnegativeintrequired'] = 'Needs to be greater or equal zero (>= 0) and integral!';
+$string['nonnegativeintrequired'] = 'Has to be greater than or equal 0 and integral!';
 $string['noopen'] = 'No open date';
 $string['norequiregrading'] = 'There are no checkmarks that require grading';
 $string['nostudents'] = 'There are no users to be displayed!';
@@ -344,18 +346,18 @@ $string['pdftextsize'] = 'Text size';
 $string['pluginadministration'] = 'Checkmark administration';
 $string['pluginname'] = 'Checkmark';
 $string['popupinnewwindow'] = 'Open in a pop-up window';
-$string['posintrequired'] = 'Needs to be greater than zero (> 0) and integral!';
-$string['posintst100required'] = 'Has to be an integral in the interval [0,100] (0 <= X <= 100)!';
-$string['presentationfeedback'] = 'Presentation feedback';
-$string['presentationfeedback_table'] = 'Feedback (presentation)';
-$string['presentationgrade'] = 'Presentation grade';
+$string['posintrequired'] = 'Has to be greater than or equal 0 and integral!';
+$string['posintst100required'] = 'Has to be an integral between 0 and 100!';
+$string['presentationfeedback'] = 'Comment (Presentation)';
+$string['presentationfeedback_table'] = 'Comment (presentation)';
+$string['presentationgrade'] = 'Grade (Presentation)';
 $string['presentationgrade_short'] = 'PT';
 $string['presentationgrade_table'] = 'Grade (presentation)';
 $string['presentationgradebook'] = 'Show presentation grade in gradebook';
 $string['presentationgradebook_help'] = 'This option controls if the presentation grade will be displayed as extra grade item in gradebook.';
 $string['presentationgrading'] = 'Track presentation grades';
 $string['presentationgrading_grade'] = 'Grade presentation';
-$string['presentationgrading_grade_help'] = 'This elements control how the presentation can be graded. For the grade you can select either <ul><li><strong>none</strong> no grade will be recorded, but you are able to use a text as feedback.</li><li><strong>scale</strong> Use a scale to grade student\'s presentation</li><li><strong>point</strong> use a numerical value to grade student\'s presentation</li></ul>';
+$string['presentationgrading_grade_help'] = 'This elements control how the presentation can be graded. For the grade you can select either <ul><li><strong>none</strong> no grade will be recorded, but you are able to use a comment (text as feedback).</li><li><strong>scale</strong> Use a scale to grade student\'s presentation</li><li><strong>point</strong> use a numerical value to grade student\'s presentation</li></ul>';
 $string['presentationgrading_help'] = 'If activated presentation grades can be recorded as extra element of grading information.';
 $string['presentationgradingcount'] = 'Graded presentations';
 $string['presentationheader'] = 'Presentation grading';
@@ -363,21 +365,21 @@ $string['printsettingstitle'] = 'Export settings';
 $string['privacy:metadata:attendance'] = 'User\'s attendance status.';
 $string['privacy:metadata:checks'] = 'Table containing user\'s checked examples (bound to an entry in submissions table).';
 $string['privacy:metadata:cutoffdate'] = 'Time and date until submissions are possible.';
-$string['privacy:metadata:feedback'] = 'Textual feedback given to the user.';
-$string['privacy:metadata:feedback:timecreated'] = 'The time and date the feedback was created.';
-$string['privacy:metadata:feedback:timemodified'] = 'The most recent time and date the feedback got updated/modified.';
+$string['privacy:metadata:feedback'] = 'Comment/ textual feedback given to the user.';
+$string['privacy:metadata:feedback:timecreated'] = 'The time and date the comment was created.';
+$string['privacy:metadata:feedback:timemodified'] = 'The most recent time and date the comment got updated/modified.';
 $string['privacy:metadata:feedbacks'] = 'Table containing user\'s feedback data.';
-$string['privacy:metadata:format'] = 'Format for the textual feedback given to the user.';
+$string['privacy:metadata:format'] = 'Format for the comment (textual feedback) given to the user.';
 $string['privacy:metadata:grade'] = 'User\'s grade.';
-$string['privacy:metadata:graderid'] = 'The user who gave feedback.';
-$string['privacy:metadata:mailed'] = 'Indicates if the user\'s been informed about the feedback.';
+$string['privacy:metadata:graderid'] = 'The user who wrote a comment.';
+$string['privacy:metadata:mailed'] = 'Indicates if the user\'s been informed about the comment.';
 $string['privacy:metadata:override:timecreated'] = 'The time and date the dates have been overridden for this user.';
 $string['privacy:metadata:override:timemodified'] = 'The most recent time and date the dates have been overridden for this user.';
 $string['privacy:metadata:overrides'] = 'Table containing all overridden dates (available-from-, due-, cutoff-dates).';
 $string['privacy:metadata:pref:filter'] = 'The default filter to use when displaying submission tables.';
 $string['privacy:metadata:pref:forcesinglelinenames'] = 'The default setting whether or not to force single line names exporting submissions.';
 $string['privacy:metadata:pref:format'] = 'The default format to use in the form when displaying submission tables.';
-$string['privacy:metadata:pref:mailinfo'] = 'The default setting whether or not to send messages to users if they get feedback.';
+$string['privacy:metadata:pref:mailinfo'] = 'The default setting whether or not to send messages to users if they get feedback via comment.';
 $string['privacy:metadata:pref:pageorientation'] = 'The default page orientation to use when displaying the submissions export form.';
 $string['privacy:metadata:pref:pdfprintperpage'] = 'How many submissions should be exported by default.';
 $string['privacy:metadata:pref:perpage'] = 'How many submission should be visible on one page per default.';
@@ -387,20 +389,20 @@ $string['privacy:metadata:pref:sumabs'] = 'Should absolute sums be shown by defa
 $string['privacy:metadata:pref:sumrel'] = 'Should relative sums be shown by default for this user?';
 $string['privacy:metadata:pref:textsize'] = 'Default text-size to use for this user\'s exports.';
 $string['privacy:metadata:pref:zipped'] = 'Default setting if separate PDFs per group as ZIP-archive are prefered.';
-$string['privacy:metadata:presentationfeedback'] = 'Textual feedback given to the user\'s presentation.';
-$string['privacy:metadata:presentationformat'] = 'Format for the textual feedback given to the user\'s presentation.';
+$string['privacy:metadata:presentationfeedback'] = 'Comment/ Textual feedback given to the user\'s presentation.';
+$string['privacy:metadata:presentationformat'] = 'Format for the comment (textual feedback) given to the user\'s presentation.';
 $string['privacy:metadata:presentationgrade'] = 'Grade given for the user\'s presentation.';
 $string['privacy:metadata:state'] = 'Flag if the example is checked/unchecked.';
 $string['privacy:metadata:submission:timecreated'] = 'The time and date the submission was created.';
 $string['privacy:metadata:submission:timemodified'] = 'The most recent time and date the submission got updated/modified.';
 $string['privacy:metadata:submissions'] = 'Table containing data about user\'s submissions.';
-$string['privacy:metadata:subsys:message'] = 'Checkmark sends messages to the users if they\'ve gotten feedback and to teachers if someone submitted (and it\'s enabled).';
+$string['privacy:metadata:subsys:message'] = 'Checkmark sends messages to the users if they\'ve gotten feedback via comment and to teachers if someone submitted (and it\'s enabled).';
 $string['privacy:metadata:timeavailable'] = 'Time since the begining of the submission period.';
 $string['privacy:metadata:timedue'] = 'Due date for the submission.';
-$string['privacy:path:feedback'] = 'Feedback';
+$string['privacy:path:feedback'] = 'Comment';
 $string['privacy:path:submission'] = 'Submission';
 $string['quickgrade'] = 'Allow quick grading';
-$string['quickgrade_help'] = 'If enabled, multiple checkmarks can be graded on one page. Add grades and comments then click the "Save all my feedback" button to save all changes for that page.';
+$string['quickgrade_help'] = 'If enabled, multiple checkmarks can be graded on one page. Add grades and comments then click the "Save all grading changes" button to save all changes for that page.';
 $string['remembertoupdategrades'] = 'You\'ve got automatically graded submissions in this checkmark. We highly recommend to update or regrade the submissions if you changed the examples\' grades!';
 $string['requiregrading'] = 'Require grading';
 $string['requiresubmit'] = 'Require submission';
@@ -456,7 +458,7 @@ $string['strvalidmsgtime'] = 'Duration of message validity';
 $string['strvalidmsgtimedesc'] = 'Amount of days after which grading notifications to users won\'t be sent any more.';
 $string['studentpreview'] = 'Student preview';
 $string['submission'] = 'Submission';
-$string['submissionfeedback'] = 'Submission feedback';
+$string['submissionfeedback'] = 'Submission comment';
 $string['submissions'] = 'Submissions';
 $string['submissionsamount'] = '{$a->submitted} of {$a->total} students submitted already.';
 $string['submissionsaved'] = 'Your changes have been saved';
@@ -472,6 +474,7 @@ $string['trackattendance'] = 'Track attendance';
 $string['trackattendance_help'] = 'Activate this setting in order to enable tracking of participant\'s attendance.';
 $string['ungraded'] = 'Ungraded';
 $string['unknown'] = 'Unknown';
+$string['upgradekeyerror'] = 'Upgrade failed due to multiple checkmark checks existing for a given example/submission pair. Check out the following github issue for further details: {$a}';
 $string['user_dates_overridden'] = 'Dates of user have been overridden!';
 $string['usermisconf'] = 'User is miss-configured';
 $string['usernosubmit'] = 'Sorry, you are not allowed to submit a checkmark.';
@@ -479,8 +482,9 @@ $string['useroverride'] = 'User override';
 $string['useroverride_edit'] = 'Edit user override';
 $string['useroverrides'] = 'User overrides';
 $string['usersnone'] = 'No students have access to this assignment.';
-$string['viewfeedback'] = 'View checkmark grades and feedback';
+$string['viewallsubmissions'] = 'View all submissions';
+$string['viewfeedback'] = 'View checkmark grades and comments';
 $string['viewmysubmission'] = 'View my submission';
-$string['viewsubmissions'] = 'View all submissions';
+$string['viewsubmissions'] = 'Submissions';
 $string['yoursubmission'] = 'Your submission';
 $string['zippedgrouppdfs'] = 'Groups as separate PDFs';

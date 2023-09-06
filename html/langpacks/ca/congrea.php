@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'congrea', language 'ca', version '3.11'.
+ * Strings for component 'congrea', language 'ca', version '4.1'.
  *
  * @package     congrea
  * @category    string
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addsessions'] = 'Afegeix una sessió';
+$string['attendance'] = 'Assistència';
 $string['audio'] = 'Àudio';
 $string['overallprogress'] = 'Progrés general';

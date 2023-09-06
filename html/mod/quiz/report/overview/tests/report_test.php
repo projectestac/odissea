@@ -16,6 +16,8 @@
 
 namespace quiz_overview;
 
+use core_question\local\bank\question_version_status;
+use mod_quiz\external\submit_question_version;
 use question_engine;
 use quiz;
 use quiz_attempt;
@@ -23,7 +25,6 @@ use quiz_attempts_report;
 use quiz_overview_options;
 use quiz_overview_report;
 use quiz_overview_table;
-use testable_quiz_attempts_report;
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -32,7 +33,10 @@ require_once($CFG->dirroot . '/mod/quiz/locallib.php');
 require_once($CFG->dirroot . '/mod/quiz/report/reportlib.php');
 require_once($CFG->dirroot . '/mod/quiz/report/default.php');
 require_once($CFG->dirroot . '/mod/quiz/report/overview/report.php');
+require_once($CFG->dirroot . '/mod/quiz/report/overview/overview_form.php');
 require_once($CFG->dirroot . '/mod/quiz/report/overview/tests/helpers.php');
+require_once($CFG->dirroot . '/mod/quiz/tests/quiz_question_helper_test_trait.php');
+
 
 /**
  * Tests for the quiz overview report.
@@ -42,25 +46,26 @@ require_once($CFG->dirroot . '/mod/quiz/report/overview/tests/helpers.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class report_test extends \advanced_testcase {
+    use \quiz_question_helper_test_trait;
 
     /**
      * Data provider for test_report_sql.
      *
      * @return array the data for the test sub-cases.
      */
-    public function report_sql_cases() {
+    public function report_sql_cases(): array {
         return [[null], ['csv']]; // Only need to test on or off, not all download types.
     }
 
     /**
      * Test how the report queries the database.
      *
-     * @param bool $isdownloading a download type, or null.
+     * @param string|null $isdownloading a download type, or null.
      * @dataProvider report_sql_cases
      */
-    public function test_report_sql($isdownloading) {
+    public function test_report_sql(?string $isdownloading): void {
         global $DB;
-        $this->resetAfterTest(true);
+        $this->resetAfterTest();
 
         // Create a course and a quiz.
         $generator = $this->getDataGenerator();
@@ -71,6 +76,7 @@ class report_test extends \advanced_testcase {
                 'attempts' => 10));
 
         // Add one question.
+        /** @var core_question_generator $questiongenerator */
         $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
         $cat = $questiongenerator->create_question_category();
         $q = $questiongenerator->create_question('essay', 'plain', ['category' => $cat->id]);
@@ -241,7 +247,7 @@ class report_test extends \advanced_testcase {
      * Bands provider.
      * @return array
      */
-    public function get_bands_count_and_width_provider() {
+    public function get_bands_count_and_width_provider(): array {
         return [
             [10, [20, .5]],
             [20, [20, 1]],
@@ -260,8 +266,8 @@ class report_test extends \advanced_testcase {
      * @param int $grade grade
      * @param array $expected
      */
-    public function test_get_bands_count_and_width($grade, $expected) {
-        $this->resetAfterTest(true);
+    public function test_get_bands_count_and_width(int $grade, array $expected): void {
+        $this->resetAfterTest();
         $quizgenerator = $this->getDataGenerator()->get_plugin_generator('mod_quiz');
         $quiz = $quizgenerator->create_instance(['course' => SITEID, 'grade' => $grade]);
         $this->assertEquals($expected, quiz_overview_report::get_bands_count_and_width($quiz));
@@ -270,8 +276,8 @@ class report_test extends \advanced_testcase {
     /**
      * Test delete_selected_attempts function.
      */
-    public function test_delete_selected_attempts() {
-        $this->resetAfterTest(true);
+    public function test_delete_selected_attempts(): void {
+        $this->resetAfterTest();
 
         $timestamp = 1234567890;
         $timestart = $timestamp + 3600;
@@ -289,6 +295,7 @@ class report_test extends \advanced_testcase {
         ]);
 
         // Add one question.
+        /** @var core_question_generator $questiongenerator */
         $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
         $cat = $questiongenerator->create_question_category();
         $q = $questiongenerator->create_question('essay', 'plain', ['category' => $cat->id]);
@@ -303,7 +310,7 @@ class report_test extends \advanced_testcase {
         $context = \context_module::instance($quiz->cmid);
         $cm = get_coursemodule_from_id('quiz', $quiz->cmid);
         $allowedjoins = get_enrolled_with_capabilities_join($context, '', ['mod/quiz:attempt', 'mod/quiz:reviewmyattempts']);
-        $quizattemptsreport = new testable_quiz_attempts_report();
+        $quizattemptsreport = new \testable_quiz_attempts_report();
 
         // Create the new attempt and initialize the question sessions.
         $quizobj = quiz::create($quiz->id, $student->id);
@@ -317,4 +324,86 @@ class report_test extends \advanced_testcase {
         $quizattemptsreport->delete_selected_attempts($quiz, $cm, [$attempt->id], $allowedjoins);
     }
 
+    /**
+     * Test question regrade for selected versions.
+     *
+     * @covers ::regrade_question
+     */
+    public function test_regrade_question() {
+        global $DB;
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        $course = $this->getDataGenerator()->create_course();
+        $quiz = $this->create_test_quiz($course);
+        $cm = get_fast_modinfo($course->id)->get_cm($quiz->cmid);
+        $context = \context_module::instance($quiz->cmid);
+
+        /** @var core_question_generator $questiongenerator */
+        $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
+        // Create a couple of questions.
+        $cat = $questiongenerator->create_question_category(['contextid' => $context->id]);
+        $q = $questiongenerator->create_question('shortanswer', null,
+                ['category' => $cat->id, 'name' => 'Toad scores 0.8']);
+
+        // Create a version, the last one draft.
+        // Sadly, update_question is a bit dodgy, so it can't handle updating the answer score.
+        $q2 = $questiongenerator->update_question($q, null,
+                ['name' => 'Toad now scores 1.0']);
+        $toadanswer = $DB->get_record_select('question_answers',
+                'question = ? AND ' . $DB->sql_compare_text('answer') . ' = ?',
+                [$q2->id, 'toad'], '*', MUST_EXIST);
+        $DB->set_field('question_answers', 'fraction', 1, ['id' => $toadanswer->id]);
+
+        // Add the question to the quiz.
+        quiz_add_quiz_question($q2->id, $quiz, 0, 10);
+
+        // Attempt the quiz, submitting response 'toad'.
+        $quizobj = quiz::create($quiz->id);
+        $attempt = quiz_prepare_and_start_new_attempt($quizobj, 1, null);
+        $attemptobj = quiz_attempt::create($attempt->id);
+        $attemptobj->process_submitted_actions(time(), false, [1 => ['answer' => 'toad']]);
+        $attemptobj->process_finish(time(), false);
+
+        // We should be using 'always latest' version, which is currently v2, so should be right.
+        $this->assertEquals(10, $attemptobj->get_question_usage()->get_total_mark());
+
+        // Now change the quiz to use fixed version 1.
+        $slot = $quizobj->get_question($q2->id);
+        submit_question_version::execute($slot->slotid, 1);
+
+        // Regrade.
+        $report = new quiz_overview_report();
+        $report->init('overview', 'quiz_overview_settings_form', $quiz, $cm, $course);
+        $report->regrade_attempt($attempt);
+
+        // The mark should now be 8.
+        $attemptobj = quiz_attempt::create($attempt->id);
+        $this->assertEquals(8, $attemptobj->get_question_usage()->get_total_mark());
+
+        // Now add two more versions, the second of which is draft.
+        $q3 = $questiongenerator->update_question($q, null,
+                ['name' => 'Toad now scores 0.5']);
+        $toadanswer = $DB->get_record_select('question_answers',
+                'question = ? AND ' . $DB->sql_compare_text('answer') . ' = ?',
+                [$q3->id, 'toad'], '*', MUST_EXIST);
+        $DB->set_field('question_answers', 'fraction', 0.5, ['id' => $toadanswer->id]);
+
+        $q4 = $questiongenerator->update_question($q, null,
+                ['name' => 'Toad now scores 0.3',
+                    'status' => question_version_status::QUESTION_STATUS_DRAFT]);
+        $toadanswer = $DB->get_record_select('question_answers',
+                'question = ? AND ' . $DB->sql_compare_text('answer') . ' = ?',
+                [$q4->id, 'toad'], '*', MUST_EXIST);
+        $DB->set_field('question_answers', 'fraction', 0.3, ['id' => $toadanswer->id]);
+
+        // Now change the quiz back to always latest and regrade again.
+        submit_question_version::execute($slot->slotid, 0);
+        $report->clear_regrade_date_cache();
+        $report->regrade_attempt($attempt);
+
+        // Score should now be 5, because v3 is the latest non-draft version.
+        $attemptobj = quiz_attempt::create($attempt->id);
+        $this->assertEquals(5, $attemptobj->get_question_usage()->get_total_mark());
+    }
 }

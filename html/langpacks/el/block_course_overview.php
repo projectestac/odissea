@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'el', version '3.11'.
+ * Strings for component 'block_course_overview', language 'el', version '4.1'.
  *
  * @package     block_course_overview
  * @category    string
@@ -30,7 +30,7 @@ $string['addfavourite'] = 'Προσθήκη αγαπημένου';
 $string['alwaysshowall'] = 'Εμφάνιση όλων πάντα';
 $string['collapseall'] = 'Σύμπτυξη όλων των λιστών μαθημάτων';
 $string['configotherexpanded'] = 'Αν ενεργοποιηθεί, τα μαθήματα θα είναι ανεπτυγμένα από προεπιλογή, εκτός αν παρακαμφθεί από τις προτιμήσεις του χρήστη.';
-$string['configpreservestates'] = 'Αν είναι ενεργοποιημένη, οι καταστάσεις σύμπτυξη / ανάπτυξη που ορίζονται από το χρήστη αποθηκεύονται και χρησιμοποιούνται σε κάθε φόρτωση.';
+$string['configpreservestates'] = 'Αν ενεργοποιηθεί, οι καταστάσεις σύμπτυξη / ανάπτυξη που ορίζονται από το χρήστη αποθηκεύονται και χρησιμοποιούνται σε κάθε φόρτωση.';
 $string['course_overview:addinstance'] = 'Προσθήκη νέου μπλοκ επισκόπηση μαθημάτων';
 $string['course_overview:myaddinstance'] = 'Προσθήκη νέου μπλοκ επισκόπηση μαθημάτων στη σελίδα Η αρχική μου';
 $string['courses'] = 'Μαθήματα';
@@ -73,9 +73,9 @@ $string['reorderiddesc'] = 'Περιγραφή αναγνωριστικού μα
 $string['reordernone'] = 'Ρύθμιση μεταφοράς & απόθεσης';
 $string['reordershortname'] = 'Σύντομο όνομα μαθήματος';
 $string['setmaxcourses'] = 'Μέγιστος αριθμός μαθημάτων';
-$string['setmaxcoursesdesc'] = 'Προεπιλεγμένος μέγιστος αριθμός μαθημάτων που θα εμφανίζονται ταυτόχρονα στο μπλοκ σύνοψης μαθημάτων.';
+$string['setmaxcoursesdesc'] = 'Προεπιλεγμένος μέγιστος αριθμός μαθημάτων που θα εμφανίζονται ταυτόχρονα στο μπλοκ περίληψης μαθημάτων.';
 $string['setmaxcoursesmax'] = 'Μέγιστος αριθμός πιθανών μαθημάτων';
-$string['setmaxcoursesmaxdesc'] = 'Μέγιστος πιθανός αριθμός μαθημάτων που μπορούν να επιλέξουν οι χρήστες προς εμφάνιση στο μπλοκ σύνοψης μαθημάτων.';
+$string['setmaxcoursesmaxdesc'] = 'Μέγιστος πιθανός αριθμός μαθημάτων που μπορούν να επιλέξουν οι χρήστες προς εμφάνιση στο μπλοκ περίληψης μαθημάτων.';
 $string['shortnameprefix'] = 'Περιλαμβάνει {$a}';
 $string['shortnamesufixprural'] = '(και {$a} άλλα)';
 $string['shortnamesufixsingular'] = '(και {$a} άλλο)';

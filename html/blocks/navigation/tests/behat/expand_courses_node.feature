@@ -39,14 +39,15 @@ Feature: Expand the courses nodes within the navigation block
     And I log in as "admin"
     And I am on site homepage
     And I turn editing mode on
+    And the following config values are set as admin:
+      | unaddableblocks | | theme_boost|
     And I add the "Navigation" block if not present
     And I configure the "Navigation" block
     And I set the following fields to these values:
       | Page contexts | Display throughout the entire site |
     And I press "Save changes"
     And I turn editing mode off
-    And I am on "Course 2" course homepage
-    And I navigate to "Users > Enrolment methods" in current page administration
+    And I am on the "Course 2" "enrolment methods" page
     And I click on "Edit" "link" in the "Guest access" "table_row"
     And I set the following fields to these values:
       | Allow guest access | Yes |

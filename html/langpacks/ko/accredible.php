@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'ko', version '3.11'.
+ * Strings for component 'accredible', language 'ko', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -55,6 +55,7 @@ $string['indexheader'] = '{$a}님의 모든 인증서/배지';
 $string['issued'] = '발행';
 $string['modulename'] = '어크레더블 인증서 & 배지';
 $string['modulename_help'] = '어크레더블 인증서 & 배지 활동 모듈은 당신이 accredible.com의 학생들에게 코스 인증서 또는 배지를 발급할 수 있게 합니다.';
+$string['modulename_link'] = 'mod/accredible/view';
 $string['modulenameplural'] = '어크레더블 인증서/배지';
 $string['nocertificates'] = '인증서/배지가 없습니다';
 $string['overview'] = '개요';

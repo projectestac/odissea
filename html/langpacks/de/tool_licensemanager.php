@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_licensemanager', language 'de', version '3.11'.
+ * Strings for component 'tool_licensemanager', language 'de', version '4.1'.
  *
  * @package     tool_licensemanager
  * @category    string
@@ -31,7 +31,7 @@ $string['deletelicense'] = 'Lizenz löschen';
 $string['deletelicenseconfirmmessage'] = 'Möchten Sie diese Lizenz wirklich löschen?';
 $string['deletelicensename'] = 'Lizenz \'{$a}\' löschen';
 $string['disablelicensename'] = 'Lizenz \'{$a}\' deaktivieren';
-$string['duplicatelicenseshortname'] = 'Die Kurzbezeichnung der Lizenz muss eindeutig sein.';
+$string['duplicatelicenseshortname'] = 'Der Kurzname der Lizenz muss eindeutig sein.';
 $string['editlicense'] = 'Lizenz bearbeiten';
 $string['editlicensename'] = 'Lizenz \'{$a}\' bearbeiten';
 $string['enablelicensename'] = 'Lizenz \'{$a}\' aktivieren';
@@ -49,7 +49,7 @@ $string['shortnamerequirederror'] = 'Sie müssen eine Kurzbezeichnung für die L
 $string['sitedefaultlicenselock'] = 'Dies ist die Standardlizenz der Website. Sie kann nicht deaktiviert werden.';
 $string['source'] = 'Lizenzquelle';
 $string['source_help'] = 'Die URL (mit http:// oder https://), unter der die Lizenzbedingungen zu finden sind.';
-$string['sourcerequirederror'] = 'Sie müssen eine gültige URL für die Lizenzquelle eingeben.';
+$string['sourcerequirederror'] = 'Sie müssen eine gültige URL für die Lizenzquelle angeben.';
 $string['version'] = 'Lizenzversion';
 $string['version_help'] = 'Veröffentlichungsdatum der verwendeten Lizenzversion';
 $string['versioncannotbefuture'] = 'Die Lizenzversion kann nicht auf ein zukünftiges Datum gesetzt werden.';

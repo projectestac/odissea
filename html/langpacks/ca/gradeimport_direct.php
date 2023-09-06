@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'ca', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'ca', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -29,3 +29,4 @@ $string['direct:view'] = 'Importa qualificacions des d\'un fitxer CSV';
 $string['pluginname'] = 'Enganxa des d\'un full de càlcul';
 $string['userdata'] = 'Ajuda en la còpia de dades dins d\'aquest formulari.';
 $string['userdata_help'] = 'Les qualificacions poden copiar-se i enganxar-se des d\'un full de càlcul al quadern de qualificacions. El full de càlcul ha de tenir una columna que contingui dades d\'identificació de l\'usuari, ja sigui el nom d\'usuari o l\'ID o el correu electrònic. Cada columna per importar ha de tenir una capçalera de columna.';
+$string['userdata_link'] = 'grade/import/direct/index';

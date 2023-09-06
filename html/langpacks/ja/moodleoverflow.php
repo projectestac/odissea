@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodleoverflow', language 'ja', version '3.11'.
+ * Strings for component 'moodleoverflow', language 'ja', version '4.1'.
  *
  * @package     moodleoverflow
  * @category    string
@@ -38,7 +38,6 @@ $string['areapost'] = 'メッセージ';
 $string['attachment'] = '添付';
 $string['attachment_help'] = 'あなたは任意で1つ以上のファイルをフォーラムに添付できます。あなたがイメージを添付した場合、メッセージの後に表示されます。';
 $string['attachments'] = '添付';
-$string['bestanswer'] = '質問オーナーおよびコースオーナーがこれを最良の回答であると受け入れました。';
 $string['bynameondate'] = 'by {$a->name} ({$a->rating}) - {$a->date}';
 $string['bynameondatenorating'] = 'by {$a->name} - {$a->date}';
 $string['cannotcreatediscussion'] = '新しいディスカッションを作成できませんでした。';
@@ -91,7 +90,6 @@ $string['discussionnowsubscribed'] = '{$a->name} に「 {$a->moodleoverflow} 」
 $string['discussions'] = 'ディスカッション';
 $string['discussionsubscription'] = 'ディスカッション購読';
 $string['discussionsubscription_help'] = 'ディスカッションの購読はあなたがディスカッションの新しい投稿に関する通知を受信することを意味します。';
-$string['downvote'] = '反対票';
 $string['downvotenotchangeable'] = '反対票 (変更不可)';
 $string['edit'] = '編集';
 $string['editedby'] = '編集 by {$a->name} - オリジナルの送信日時 {$a->date}';
@@ -123,14 +121,6 @@ $string['gotoindex'] = 'プリファレンスを管理する';
 $string['grademaxgradeerror'] = '最大評点はゼロ以外の正の整数にしてください。';
 $string['gradesreport'] = '評定レポート';
 $string['gradesupdated'] = '評定が更新されました。';
-$string['headerdiscussion'] = 'ディスカッション';
-$string['headerlastpost'] = '最新の投稿';
-$string['headerreplies'] = '返信';
-$string['headerstartedby'] = '開始';
-$string['headerstatus'] = 'ステータス';
-$string['headerunread'] = '未読';
-$string['headervotes'] = '投票';
-$string['helpfulanswer'] = 'これが最良の回答であると質問のオーナーが受け入れました。';
 $string['hiddenmoodleoverflowpost'] = '秘匿フォーラム投稿';
 $string['invaliddiscussionid'] = 'ディスカッションIDが正しくありません。';
 $string['invalidforcesubscribe'] = '無効な強制購読モードです。';
@@ -174,8 +164,6 @@ $string['moodleoverflow:ratehelpful'] = '投稿を有益であるとマークす
 $string['moodleoverflow:ratepost'] = '投稿を評価する';
 $string['moodleoverflow:replypost'] = 'ディスカッションで返信する';
 $string['moodleoverflow:startdiscussion'] = 'ディスカッションを開始する';
-$string['moodleoverflow:view'] = 'ディスカッションリストを閲覧する';
-$string['moodleoverflow:viewanyrating'] = '評価を表示する';
 $string['moodleoverflow:viewdiscussion'] = 'ディスカッションを閲覧する';
 $string['moodleoverflowauthorhidden'] = '作成者 (秘匿)';
 $string['moodleoverflowbodyhidden'] = 'あなたはこの投稿を閲覧できません。恐らく、あなたがディスカッションに投稿していない、まだ最大編集時間が経過していない、ディスカッションが開始されていない、またはディスカッションの有効期限が切れたと考えられます。';
@@ -184,7 +172,6 @@ $string['moodleoverflowname'] = 'Moodleoverflow名';
 $string['moodleoverflows'] = 'Moodleoverflow';
 $string['moodleoverflowsubjecthidden'] = '件名 (非表示)';
 $string['nodiscussions'] = 'このフォーラムにはまだディスカッショントピックがありません。';
-$string['nodownvote'] = '反対票なし';
 $string['noguestpost'] = '申し訳ございません、ゲストは投稿を許可されていません。';
 $string['noguesttracking'] = '申し訳ございません、ゲストは追跡オプションを設定できません。';
 $string['noonecansubscribenow'] = '現在、購読は許可されません。';
@@ -197,7 +184,6 @@ $string['notpartofdiscussion'] = 'この投稿はディスカッションの一�
 $string['notrackmoodleoverflow'] = '未読投稿を追跡しない';
 $string['notstartuser'] = 'ディスカッションを開始したユーザのみ回答を有益であるとマークできます。';
 $string['notteacher'] = 'コースオーナーのみこれを実行できます。';
-$string['noupvote'] = '賛成票なし';
 $string['noviewdiscussionspermission'] = 'あなたにはこのフォーラムのディスカッションを閲覧するパーミッションがありません。';
 $string['nowallsubscribed'] = '{$a} のすべてのフォーラムが購読されます。';
 $string['nowallunsubscribed'] = '{$a} のすべてのフォーラムが購読解除されます。';
@@ -285,7 +271,6 @@ $string['scalefactor'] = 'スケール因子';
 $string['scalefactor_help'] = 'それぞれのユーザの評点を取得するため、ユーザ評価はスケール因子で除算されます。結果の評点が最大評点より大きい場合、値は指定された最大評点に制限されます。';
 $string['scalefactorerror'] = 'スケール因子はゼロ以外の正の整数にしてください。';
 $string['smallmessage'] = '{$a->user} が {$a->moodleoverflowname} に投稿しました。';
-$string['solvedanswer'] = 'この投稿は解決マークされています。';
 $string['starterrating'] = '有益';
 $string['subject'] = '件名';
 $string['subscribe'] = 'このフォーラムを購読する';
@@ -331,7 +316,6 @@ $string['unsubscribediscussion'] = 'このディスカッションを購読解�
 $string['unsubscribediscussionlink'] = 'このディスカッションを購読解除する: {$a}';
 $string['unsubscribelink'] = 'このフォーラムを購読解除する: {$a}';
 $string['updategrades'] = '評定を更新する';
-$string['upvote'] = '賛成票';
 $string['upvotenotchangeable'] = '賛成票 (変更不可)';
 $string['votescaledownvote'] = 'レピュテーション: 反対票';
 $string['votescalehelpful'] = 'レピュテーション: 有益';

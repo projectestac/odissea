@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'nl', version '3.11'.
+ * Strings for component 'block_html', language 'nl', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = 'Sta extra CSS classes toe';
-$string['configallowadditionalcssclasses'] = 'Voegt een configuratie-optie toe aan HTML-blokken waarmee je extra CSS classes kunt toevoegen';
+$string['configallowadditionalcssclasses'] = 'Voegt een configuratie-optie toe aan tekstblokken waarmee je extra CSS classes kunt toevoegen.';
 $string['configclasses'] = 'Bijkomende CSS classes';
-$string['configclasses_help'] = 'Het doel van deze configuratie is om te helpen bij aanpassen van een thema om HTML-blokken van elkaar te onderscheiden. Als je hier een CSS-klasse invoert (spatie gescheiden) dan zal die toegevoegd worden aan de standaard classes van het blok.';
+$string['configclasses_help'] = 'Het doel van deze configuratie is om te helpen bij aanpassen van een thema om tekstblokken van elkaar te onderscheiden. Als je hier een CSS-klasse invoert (spatie gescheiden) dan zal die toegevoegd worden aan de standaard classes van het blok.';
 $string['configcontent'] = 'Inhoud';
-$string['configtitle'] = 'HTML bloktitel';
-$string['html:addinstance'] = 'Voeg een nieuw HTML-blok toe';
-$string['html:myaddinstance'] = 'Voeg een nieuw HTML-blok toe aan Mijn startpagina';
-$string['newhtmlblock'] = '(nieuw HTML-blok)';
-$string['pluginname'] = 'HTML';
-$string['privacy:metadata:block'] = 'Het HTML-blok slaat alle gegevens op in het blok-subsysteem.';
-$string['search:content'] = 'Inhoud HTML-blok';
+$string['configtitle'] = 'Titel tekstblok';
+$string['html:addinstance'] = 'Voeg een nieuw tekstblok toe';
+$string['html:myaddinstance'] = 'Voeg een nieuw tekstblok toe aan Mijn startpagina';
+$string['newhtmlblock'] = '(nieuw tekstblok)';
+$string['pluginname'] = 'Tekst';
+$string['privacy:metadata:block'] = 'Het tekstblok slaat alle gegevens op in het blok-subsysteem.';
+$string['search:content'] = 'Inhoud tekstblok';

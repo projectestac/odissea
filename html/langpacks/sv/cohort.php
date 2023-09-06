@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'sv', version '3.11'.
+ * Strings for component 'cohort', language 'sv', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -36,6 +36,7 @@ $string['bulkadd'] = 'Lägg till i kohort';
 $string['bulknocohort'] = 'Inga tillgängliga kohorter hittades';
 $string['categorynotfound'] = 'Kategori <b>{$a}</b> kunde inte hittas, eller så har du inte behörighet att skapa en kohort där. Standardkontexten kommer att användas.';
 $string['cohort'] = 'Kohort';
+$string['cohortmember'] = 'Kohortmedlem';
 $string['cohorts'] = 'Kohorter';
 $string['cohortsin'] = '{$a}: tillgängliga kohorter';
 $string['component'] = 'Källa';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = 'Kohort uppdaterad';
 $string['external'] = 'Extern kohort';
 $string['idnumber'] = 'Kohort-ID';
 $string['invalidtheme'] = 'Kohorttemat finns inte';
+$string['memberofcohort'] = 'Medlem av kohort';
 $string['memberscount'] = 'Kohortstorlek';
 $string['name'] = 'Namn';
 $string['namecolumnmissing'] = 'Det är något fel med formatet på CSV-filen. Vänligen kontrollera att den innehåller rätt kolumnnamn. Om du vill lägga till användare i en kohort går du till \'Ladda upp användare\' under <em>Administrera Webbplats &#10132; Användare</em>.';

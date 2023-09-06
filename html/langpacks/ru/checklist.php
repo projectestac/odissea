@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'ru', version '3.11'.
+ * Strings for component 'checklist', language 'ru', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -132,6 +132,7 @@ $string['lockteachermarks_help'] = 'Если при включенном пар�
 $string['lockteachermarkswarning'] = 'Примечание: после сохранения отметок Вы больше не сможете изменить ни одной метки «Да»';
 $string['modulename'] = 'Контрольный список';
 $string['modulename_help'] = 'Модуль «Контрольный список» позволяет учителям создавать контрольный список / список задач для того, чтобы студенты могли с ними работать.';
+$string['modulename_link'] = 'mod/checklist/view';
 $string['modulenameplural'] = 'Контрольные списки';
 $string['moveitemdown'] = 'Переместить пункт вниз';
 $string['moveitemup'] = 'Переместить пункт вверх';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_formulas', language 'ja', version '3.11'.
+ * Strings for component 'qtype_formulas', language 'ja', version '4.1'.
  *
  * @package     qtype_formulas
  * @category    string
@@ -29,10 +29,12 @@ $string['abserror'] = '絶対誤差';
 $string['algebraic_formula'] = '代数式';
 $string['answer'] = '解答*';
 $string['answercombinedunitsingle'] = '解答と単位';
+$string['answertype_link'] = 'https://moodleformulas.org/';
 $string['answerunitsingle'] = '単位';
 $string['choiceno'] = 'ノー';
 $string['choiceyes'] = 'はい';
 $string['commonsiunit'] = '共通SI単位';
+$string['correctness_link'] = 'https://moodleformulas.org/';
 $string['mainq'] = '主な質問';
 $string['modelanswer'] = 'モデルの解答';
 $string['none'] = 'なし';
@@ -41,3 +43,7 @@ $string['number_unit'] = '数と単位';
 $string['numeric'] = '数値';
 $string['numerical_formula'] = '数値式';
 $string['otherrule'] = 'その他のルール';
+$string['pluginname_link'] = 'question/type/formulas';
+$string['vars2_link'] = 'https://moodleformulas.org/';
+$string['varsglobal_link'] = 'https://moodleformulas.org/';
+$string['varsrandom_link'] = 'https://moodleformulas.org/';

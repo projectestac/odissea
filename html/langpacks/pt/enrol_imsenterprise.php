@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'pt', version '3.11'.
+ * Strings for component 'enrol_imsenterprise', language 'pt', version '4.1'.
  *
  * @package     enrol_imsenterprise
  * @category    string
@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'Depois de guardar as suas configurações poderá querer';
-$string['allowunenrol'] = 'Permitir que os dados IMS <strong>removam inscrições</strong> de alunos e professores';
-$string['allowunenrol_desc'] = 'Se ativar esta configuração as inscrições nas disciplinas serão removidas quando isso for especificado nos dados Enterprise.';
+$string['allowunenrol'] = 'Permitir que os dados IMS removam inscrições de alunos e professores';
+$string['allowunenrol_desc'] = 'Se ativar esta opção, as inscrições nas disciplinas serão removidas quando isso for especificado nos dados Enterprise.';
 $string['basicsettings'] = 'Configurações básicas';
-$string['categoryidnumber'] = 'Permitir idnumber da categoria';
-$string['categoryidnumber_desc'] = 'Se ativar esta opção, o IMS Enterprise vai criar uma categoria com o idnumber';
+$string['categoryidnumber'] = 'Permitir número de identificação (ID) da categoria';
+$string['categoryidnumber_desc'] = 'Se ativar esta opção, o IMS Enterprise vai criar uma categoria com número ID.';
 $string['categoryseparator'] = 'Caractere separador da categoria';
-$string['categoryseparator_desc'] = 'Obrigatório quando a opção "idnumber da categoria" estiver ativa. Caracter para separar o idnumber e o nome da categoria.';
+$string['categoryseparator_desc'] = 'Obrigatório quando a opção "Permitir número ID da categoria" estiver ativa. Caráter para separar o número ID e o nome da categoria.';
 $string['coursesettings'] = 'Opções dos dados da disciplina';
 $string['createnewcategories'] = 'Criar novas categorias (ocultas) de disciplinas caso ainda não existam no Moodle';
 $string['createnewcategories_desc'] = 'Se o elemento &lt;org&gt;&lt;orgunit&gt; estiver na informação de uma disciplina, o seu conteúdo será usada para definir uma categoria nos casos em que a disciplina tiver que ser criada. O módulo não mudará a categoria de disciplinas que já existam no Moodle.
@@ -41,12 +41,14 @@ Nos casos em que não existir nenhuma categoria com o nome indicado será criada
 $string['createnewcourses'] = 'Criar novas disciplinas (ocultas) caso não existam no Moodle';
 $string['createnewcourses_desc'] = 'Se ativar esta opção, o módulo de inscrição IMS Enterprise pode criar as disciplinas que forem especificadas nos dados IMS e que ainda não existam no Moodle. As disciplinas criadas neste processo estarão ocultas inicialmente.';
 $string['createnewusers'] = 'Criar contas de utilizador para utilizadores ainda não registados no Moodle';
-$string['createnewusers_desc'] = 'A informação de inscrição IMS Enterprise normalmente descreve um conjunto de utilizadores. Se este módulo estiver ativo, as contas podem ser criadas para os utilizadores que ainda não existam no Moodle.
+$string['createnewusers_desc'] = 'Os dados de inscrição IMS Enterprise normalmente descreve um conjunto de utilizadores. Se este módulo estiver ativo, as contas podem ser criadas para os utilizadores que ainda não existam na base de dados do Moodle.
 
-Os utilizadores são procurados inicialmente pelo campo <strong>idnumber</strong> e depois pelo seu nome de utilizador. As senhas não são importadas pelo módulo. Por isso, deve ser especificado um módulo de autenticação para validar as contas de utilizador.';
+Os utilizadores são procurados inicialmente pelo número ID e depois pelo seu nome de utilizador. As senhas não são importadas pelo módulo. Deve ser especificado um módulo de autenticação para validar as contas de utilizador.';
 $string['cronfrequency'] = 'Frequência de processamento';
 $string['deleteusers'] = 'Eliminar as contas de utilizador se isso for especificado nos dados IMS';
 $string['deleteusers_desc'] = 'Se ativar esta opção, o módulo de inscrição IMS Enterprise pode remover contas de utilizador, caso esteja especificado nos dados IMS (campo "recstatus" = 3). Como procedimento predefinido no Moodle, as contas não serão apagadas da base de dados, mas marcadas como "apagadas".';
+$string['disableenrolmentandremoveallroles'] = 'Suspender inscrição e remover papéis';
+$string['disableenrolonly'] = 'Apenas suspender a inscrição';
 $string['doitnow'] = 'executar uma importação IMS Enterprise';
 $string['emptyattribute'] = 'Deixar vazio';
 $string['filelockedmail'] = 'O ficheiro de texto que está a utilizar para inscrições IMS ({$a}) não pôde ser eliminado pelo processo cron. Normalmente, tal significa que as permissões não estão bem definidas. Por favor, ajuste as permissões de forma a que o Moodle possa eliminar o ficheiro; caso contrário, este será repetidamente processado.';
@@ -67,11 +69,13 @@ $string['messageprovider:imsenterprise_enrolment'] = 'Mensagens de inscrição d
 $string['miscsettings'] = 'Diversos';
 $string['nestedcategories'] = 'Permitir grupos de categorias';
 $string['nestedcategories_desc'] = 'Se ativar esta opção, o IMS Enterprise irá criar grupos de categorias';
+$string['noaction'] = 'Nenhuma ação';
 $string['pluginname'] = 'Ficheiro IMS Enterprise';
 $string['pluginname_desc'] = 'Este módulo de inscrição irá verificar de forma contínua a existência de um ficheiro para processamento na localização que for especificada. O ficheiro deve estar no formato IMS Enterprise e conter os seguintes elementos XML: person, group, and membership.';
 $string['privacy:metadata'] = 'O módulo Ficheiro IMS Enterprise não armazena quaisquer dados pessoais.';
 $string['processphoto'] = 'Adicionar dados da foto do utilizador ao perfil';
 $string['processphotowarning'] = 'Aviso: o processamento de imagens tende a aumentar significativamente a carga no servidor. Não é recomendado ativar esta opção se o número de alunos a processar for muito elevado.';
+$string['removeenrolmentandallroles'] = 'Apagar inscrição e papéis';
 $string['restricttarget'] = 'Os dados apenas devem ser processados se for especificado';
 $string['restricttarget_desc'] = 'Um ficheiro IMS Enterprise pode ser criado para diferentes destinos (LMS distintos ou diferentes departamento de uma instituição). É possível especificar nestes ficheiros um ou mais sistemas de destino. Isto é feito através da inclusão da tag <strong>target</strong> dentro da tag strong>properties</strong>.
 
@@ -89,6 +93,8 @@ $string['sourcedidfallback_desc'] = 'Na informação IMS o campo <strong>sourced
 Alguns sistemas de gestão de alunos não conseguem exportar o campo <strong>userid</strong>. Se for o caso, esta configuração deve ser ativada para permitir a utilização do campo <strong>sourcedid</strong> como identificador de utilizador no Moodle. Caso contrário, desative esta configuração.';
 $string['truncatecoursecodes'] = 'Truncar os códigos das disciplinas se exceder o número de caracteres';
 $string['truncatecoursecodes_desc'] = 'Nalguns casos pode querer truncar os códigos das disciplinas para um comprimento máximo predefinido antes de fazer o seu processamento. Nestas situações, indique neste campo o número de caracteres máximo a considerar. Se o campo ficar em branco, os códigos das disciplinas não serão truncados.';
+$string['unenrolaction'] = 'Ação ao cancelar a inscrição';
+$string['unenrolaction_desc'] = 'Ação a ser tomada quando a inscrição de um utilizador é cancelada numa disciplina (aplicada apenas quando a configuração de cancelar inscrição está ativa).';
 $string['updatecourses'] = 'Atualizar disciplina';
 $string['updatecourses_desc'] = 'Se ativar esta opção, o módulo de inscrição do IMS Enterprise pode atualizar o nome completo e o nome curto da disciplina, caso esteja especificado nos dados IMS (campo "recstatus" = 2).';
 $string['updateusers'] = 'Atualizar as contas de utilizador quando especificado nos dados do IMS';

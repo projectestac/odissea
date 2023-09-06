@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_missingtype', language 'eu', version '3.11'.
+ * Strings for component 'qtype_missingtype', language 'eu', version '4.1'.
  *
  * @package     qtype_missingtype
  * @category    string
@@ -31,7 +31,7 @@ $string['deletedquestion'] = 'Galdera falta da';
 $string['deletedquestiontext'] = 'Galdera falta da. Ezin da ezer erakutsi.';
 $string['missing'] = 'Sisteman instalaturik ez dagoen mota bateko galdera';
 $string['missingqtypewarning'] = 'Galdera hau une honetan sisteman instalaturik ez dagoen mota batekoa da. Ezingo duzu ezer egin galdera honekin.';
-$string['pluginname'] = 'Mota falta da';
+$string['pluginname'] = 'Galdera-motaren gakoa falta da';
 $string['pluginnameadding'] = 'Sisteman instalaturik ez dagoen mota bateko galdera bat gehitzen';
 $string['pluginnameediting'] = 'Mota ezezaguneko galdera editatzen';
 $string['privacy:metadata'] = 'Mota falta da galdera mota pluginak ez du datu pertsonalik biltzen.';

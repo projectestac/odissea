@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'pt', version '3.11'.
+ * Strings for component 'certificate', language 'pt', version '4.1'.
  *
  * @package     certificate
  * @category    string
@@ -52,12 +52,12 @@ $string['certificatereport'] = 'Relatório de certificados';
 $string['certificatesfor'] = 'Certificado para';
 $string['certificatetype'] = 'Tipo de certificado';
 $string['certificatetype_help'] = 'Selecione aqui o formato do certificado. A pasta dos tipos de certificado inclui quatro certificados predefinidos:
-A4 com fontes incorporadas
-A4 sem fontes incorporadas
-Letter com fontes incorporadas
-Letter sem fontes incorporadas
+A4 com tipos de letra incorporadas
+A4 sem tipos de letra incorporadas
+Letter com tipos de letra incorporadas
+Letter sem tipos de letra incorporadas
 
-Os formatos sem fontes incorporadas usam as fontes Helvetica e Times. Se tem conhecimento que os seus utilizadores não têm estas fontes nos seus computadores, ou se o seu idioma usa caracteres ou símbolos que não constam nas fontes Helvetica e Times, então escolha um formato com fontes incorporadas. Os tipos com fontes incorporadas usam as fontes Dejavusans e Dejavuserif. O ficheiro pdf resultante será significativamente maior, por isso, não é recomendado usar um formato com fontes incorporadas exceto nos casos referidos anteriormente.
+Os formatos sem fontes incorporadas usam os tipos de letra Helvetica e Times. Se tem conhecimento que os seus utilizadores não têm estes tipos de letra nos seus computadores, ou se o seu idioma usa caracteres ou símbolos que não constam nos tipos de letra Helvetica e Times, escolha um formato com tipos de letra incorporadas. Os tipos com tipos de letra incorporadas usam os tipos de letra Dejavusans e Dejavuserif. O ficheiro pdf resultante será significativamente maior, por isso, não é recomendado usar um formato com tipos de letra incorporadas exceto nos casos referidos anteriormente.
 
 Podem ser adicionados novos formatos de certificado na pasta certificate/type. O nome da pasta e as strings do idioma para o novo tipo deverão ser adicionadas ao ficheiro de idioma do certificado.';
 $string['certify'] = 'Serve para certificar que';
@@ -100,10 +100,10 @@ Pode revê-lo aqui:
 $string['emailteachers'] = 'Enviar e-mail aos professores';
 $string['emailteachers_help'] = 'Se ativar esta opção, os professores serão alertados através de e-mail sempre que forem atribuídos certificados aos alunos';
 $string['entercode'] = 'Introduza o código do certificado a verificar:';
-$string['fontsans'] = 'Família de fontes sans-serif';
-$string['fontsans_desc'] = 'Família de fontes sans-serif para certificados com fontes incorporadas';
-$string['fontserif'] = 'Família de fontes serif';
-$string['fontserif_desc'] = 'Família de fontes serif para certificados com fontes incorporadas';
+$string['fontsans'] = 'Família de tipos de letra sans-serif';
+$string['fontsans_desc'] = 'Família de tipos de letra \'sans-serif\' para certificados com fontes incorporadas';
+$string['fontserif'] = 'Família de tipos de letra serif';
+$string['fontserif_desc'] = 'Família de tipos de letra \'serif\' para certificados com fontes incorporadas';
 $string['getcertificate'] = 'Obter certificado';
 $string['grade'] = 'Avaliação';
 $string['gradedate'] = 'Data da avaliação';
@@ -128,6 +128,7 @@ $string['letter'] = 'Letra';
 $string['lockingoptions'] = 'Opções de bloqueio';
 $string['modulename'] = 'Certificado';
 $string['modulename_help'] = 'Este módulo permite gerar dinamicamente certificados com base em condições pré-definidas pelo professor.';
+$string['modulename_link'] = 'Certificate_module';
 $string['modulenameplural'] = 'Certificados';
 $string['mycertificates'] = 'Meus certificados';
 $string['nocertificates'] = 'Não existem certificados';

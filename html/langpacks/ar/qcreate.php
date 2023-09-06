@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qcreate', language 'ar', version '3.11'.
+ * Strings for component 'qcreate', language 'ar', version '4.1'.
  *
  * @package     qcreate
  * @category    string
@@ -34,6 +34,7 @@ $string['eventoverviewviewed'] = 'نظرة عامة على إنشاء السؤا
 $string['eventquestiongraded'] = 'سؤال تم منح علامته';
 $string['eventquestionregraded'] = 'سؤال تمت إعادة منح علامته';
 $string['exportnaming'] = 'إسبق أسماء الأسئلة المصدرة بـ';
+$string['modulename_link'] = 'mod/qcreate/view';
 $string['pagesize'] = 'عدد الأسئلة المعروضة لكل صفحة';
 $string['qcreateeventcloses'] = '{$a} يُغلق';
 $string['qcreateeventopens'] = '{$a} يُفتح';

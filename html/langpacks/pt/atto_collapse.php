@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'pt', version '3.11'.
+ * Strings for component 'atto_collapse', language 'pt', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'Mostrar menos botões';
 $string['showgroups'] = 'Grupos a mostrar quando contraída';
 $string['showgroups_desc'] = 'Quando a barra de ferramentas está contraída (configuração predefinida), apenas serão exibidos, ao mesmo tempo, o número de grupos aqui definidos (os primeiros).';
 $string['showmore'] = 'Mostrar mais botões';
+$string['youareonsecondrow'] = 'Neste momento está noutra linha da barra de ferramentas do editor, onde existem mais botões.';

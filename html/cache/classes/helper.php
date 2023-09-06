@@ -381,6 +381,8 @@ class cache_helper {
                         'hits' => 0,
                         'misses' => 0,
                         'sets' => 0,
+                        'iobytes' => cache_store::IO_BYTES_NOT_SUPPORTED,
+                        'locks' => 0,
                     )
                 )
             );
@@ -390,6 +392,8 @@ class cache_helper {
                 'hits' => 0,
                 'misses' => 0,
                 'sets' => 0,
+                'iobytes' => cache_store::IO_BYTES_NOT_SUPPORTED,
+                'locks' => 0,
             );
         }
     }
@@ -429,8 +433,9 @@ class cache_helper {
      * @param cache_definition $definition You used to be able to pass a string here, however that is deprecated please pass the
      *      actual cache_definition object now.
      * @param int $hits The number of hits to record (by default 1)
+     * @param int $readbytes Number of bytes read from the cache or cache_store::IO_BYTES_NOT_SUPPORTED
      */
-    public static function record_cache_hit($store, $definition, $hits = 1) {
+    public static function record_cache_hit($store, $definition, int $hits = 1, int $readbytes = cache_store::IO_BYTES_NOT_SUPPORTED): void {
         $storeclass = '';
         if ($store instanceof cache_store) {
             $storeclass = get_class($store);
@@ -439,6 +444,13 @@ class cache_helper {
         list($definitionstr, $mode) = self::get_definition_stat_id_and_mode($definition);
         self::ensure_ready_for_stats($store, $storeclass, $definitionstr, $mode);
         self::$stats[$definitionstr]['stores'][$store]['hits'] += $hits;
+        if ($readbytes !== cache_store::IO_BYTES_NOT_SUPPORTED) {
+            if (self::$stats[$definitionstr]['stores'][$store]['iobytes'] === cache_store::IO_BYTES_NOT_SUPPORTED) {
+                self::$stats[$definitionstr]['stores'][$store]['iobytes'] = $readbytes;
+            } else {
+                self::$stats[$definitionstr]['stores'][$store]['iobytes'] += $readbytes;
+            }
+        }
     }
 
     /**
@@ -479,8 +491,10 @@ class cache_helper {
      * @param cache_definition $definition You used to be able to pass a string here, however that is deprecated please pass the
      *      actual cache_definition object now.
      * @param int $sets The number of sets to record (by default 1)
+     * @param int $writebytes Number of bytes written to the cache or cache_store::IO_BYTES_NOT_SUPPORTED
      */
-    public static function record_cache_set($store, $definition, $sets = 1) {
+    public static function record_cache_set($store, $definition, int $sets = 1,
+            int $writebytes = cache_store::IO_BYTES_NOT_SUPPORTED) {
         $storeclass = '';
         if ($store instanceof cache_store) {
             $storeclass = get_class($store);
@@ -489,6 +503,13 @@ class cache_helper {
         list($definitionstr, $mode) = self::get_definition_stat_id_and_mode($definition);
         self::ensure_ready_for_stats($store, $storeclass, $definitionstr, $mode);
         self::$stats[$definitionstr]['stores'][$store]['sets'] += $sets;
+        if ($writebytes !== cache_store::IO_BYTES_NOT_SUPPORTED) {
+            if (self::$stats[$definitionstr]['stores'][$store]['iobytes'] === cache_store::IO_BYTES_NOT_SUPPORTED) {
+                self::$stats[$definitionstr]['stores'][$store]['iobytes'] = $writebytes;
+            } else {
+                self::$stats[$definitionstr]['stores'][$store]['iobytes'] += $writebytes;
+            }
+        }
     }
 
     /**
@@ -613,7 +634,7 @@ class cache_helper {
      */
     public static function hash_key($key, cache_definition $definition) {
         if ($definition->uses_simple_keys()) {
-            if (debugging() && preg_match('#[^a-zA-Z0-9_]#', $key)) {
+            if (debugging() && preg_match('#[^a-zA-Z0-9_]#', $key ?? '')) {
                 throw new coding_exception('Cache definition '.$definition->get_id().' requires simple keys. Invalid key provided.', $key);
             }
             // We put the key first so that we can be sure the start of the key changes.
@@ -855,5 +876,17 @@ class cache_helper {
             }
         }
         return $warnings;
+    }
+
+    /**
+     * A helper to determine whether a result was found.
+     *
+     * This has been deemed required after people have been confused by the fact that [] == false.
+     *
+     * @param mixed $value
+     * @return bool
+     */
+    public static function result_found($value): bool {
+        return $value !== false;
     }
 }

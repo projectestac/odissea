@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'ru', version '3.11'.
+ * Strings for component 'debug', language 'ru', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -46,7 +46,7 @@ $string['missingconfigversion'] = 'Таблица «config» не содержи
 $string['modulenotexist'] = 'Модуль {$a} не существует';
 $string['morethanonerecordinfetch'] = 'Найдено более одной записи в fetch()!';
 $string['mustbeoveride'] = 'Абстрактный метод «{$a}» должен быть переопределен.';
-$string['noadminrole'] = 'Невозможно найти роль администратора';
+$string['noadminrole'] = 'Не удалось найти роль администратора';
 $string['noblocks'] = 'Ни один блок не установлен!';
 $string['nocate'] = 'Нет категории!';
 $string['nomodules'] = 'Не найдено ни одного модуля!!';
@@ -56,6 +56,17 @@ $string['notables'] = 'Нет таблиц!';
 $string['outputbuffer'] = 'Выходной буфер';
 $string['phpvaroff'] = 'Переменная PHP-сервера «{$a->name}» должна быть установлена в Off - {$a->link}';
 $string['phpvaron'] = 'Переменная PHP-сервера «{$a->name}» не установлена в On - {$a->link}';
+$string['reactive_highlightoff'] = 'Выделение ВЫКЛ';
+$string['reactive_highlighton'] = 'Выделение ВКЛ';
+$string['reactive_instances'] = 'Противодействующие экземпляры:';
+$string['reactive_noinstances'] = 'На этой странице нет противодействующих экземпляров.';
+$string['reactive_pin'] = 'Закрепить';
+$string['reactive_readmodeoff'] = 'Режим чтения ВЫКЛ';
+$string['reactive_readmodeon'] = 'Режим чтения ВКЛ';
+$string['reactive_resetpanel'] = 'Сбросить панель';
+$string['reactive_saveingwarning'] = 'Предупреждение: изменение состояния может привести к неожиданным результатам.';
+$string['reactive_statedata'] = 'Данные состояния';
+$string['reactive_unpin'] = 'Открепить';
 $string['sessionmissing'] = 'Отсутствует объект сессии «{$a}»';
 $string['sqlrelyonobsoletetable'] = 'В этом SQL используются устаревшие таблицы: {$a}! Ваш программный код должен быть исправлен разработчиком.';
 $string['stacktrace'] = 'Трассировки стека';

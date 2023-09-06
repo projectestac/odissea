@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'en', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'en', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -71,13 +71,15 @@ $string['privacy:metadata'] = 'Multiple choice question type plugin allows quest
 $string['privacy:preference:answernumbering'] = 'Which numbering style should be used (\'1, 2, 3, ...\', \'a, b, c, ...\' etc.).';
 $string['privacy:preference:defaultmark'] = 'The default mark set for a given question.';
 $string['privacy:preference:penalty'] = 'The penalty for each incorrect try when questions are run using the \'Interactive with multiple tries\' or \'Adaptive mode\' behaviour.';
-$string['privacy:preference:showstandardinstruction'] = 'Whether showing standard instruction.';
+$string['privacy:preference:showstandardinstruction'] = 'Whether standard instructions are shown.';
 $string['privacy:preference:shuffleanswers'] = 'Whether the answers should be automatically shuffled.';
 $string['privacy:preference:single'] = 'Whether the answer is single with radio buttons or multiple with checkboxes.';
+$string['regradeissuenumchoiceschanged'] = 'The number of choices in the question has changed.';
 $string['selectmulti'] = 'Select one or more:';
 $string['selectone'] = 'Select one:';
 $string['showstandardinstruction'] = 'Show standard instructions';
-$string['showstandardinstruction_help'] = 'Whether to show the instructions "Select one:" or "Select one or more:" before multiple choice answers.';
+$string['showstandardinstruction_desc'] = 'Whether to show the instructions "Select one:" or "Select one or more:" before multiple choice answers.';
+$string['showstandardinstruction_help'] = 'Whether to show the instructions \'Select one:\' or \'Select one or more:\' before multiple choice answers. Alternatively, you can include instructions in the question text.';
 $string['shuffleanswers'] = 'Shuffle the choices?';
 $string['shuffleanswers_desc'] = 'Whether options should be randomly shuffled for each attempt by default.';
 $string['shuffleanswers_help'] = 'If enabled, the order of the answers is randomly shuffled for each attempt, provided that "Shuffle within questions" in the activity settings is also enabled.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_ordering', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -46,6 +46,7 @@ $string['noscore'] = '没有分数';
 $string['notenoughanswers'] = '排序题目必须有多于{$a}个答案。';
 $string['pluginname'] = '排序题';
 $string['pluginname_help'] = '有几个项目以混乱的顺序显示。这些项目可以被拖到一个有意义的顺序中。';
+$string['pluginname_link'] = 'question/type/ordering';
 $string['pluginnameadding'] = '添加一个排序题';
 $string['pluginnameediting'] = '编辑一个排序题';
 $string['pluginnamesummary'] = '把顺序混乱的项目进行有意义的排序';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ca', version '3.11'.
+ * Strings for component 'error', language 'ca', version '4.1'.
  *
  * @package     error
  * @category    string
@@ -441,6 +441,7 @@ $string['nonmeaningfulcontent'] = 'Contingut no significatiu';
 $string['noparticipants'] = 'No s\'ha trobat cap participant en aquest curs';
 $string['noparticipatorycms'] = 'No teniu mòduls participatius dels quals es pugui informar';
 $string['nopermissions'] = 'Actualment no teniu permisos per a fer això ({$a}).';
+$string['nopermissiontoaccesspage'] = 'No teniu permisos per accedir a la pàgina.';
 $string['nopermissiontocomment'] = 'No podeu afegir comentaris';
 $string['nopermissiontodelentry'] = 'No podeu esborrar entrades d\'altres persones';
 $string['nopermissiontoeditcomment'] = 'No podeu editar els comentaris d\'altres persones';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'gl', version '3.11'.
+ * Strings for component 'choice', language 'gl', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -36,16 +36,14 @@ $string['cannotsubmit'] = 'Xurdiu un problema ao enviar a súa escolla. Tenteo d
 $string['choice'] = 'Escolla';
 $string['choice:addinstance'] = 'Engadir unha nova escolla';
 $string['choice:choose'] = 'Rexistrar unha escolla';
-$string['choice:deleteresponses'] = 'Modificar e eliminar respostas';
-$string['choice:downloadresponses'] = 'Descargar respostas';
+$string['choice:deleteresponses'] = 'Eliminar respostas';
+$string['choice:downloadresponses'] = 'Cargar respostas';
 $string['choice:readresponses'] = 'Ler respostas';
 $string['choice:view'] = 'Ver a actividade de elección';
-$string['choiceactivityname'] = 'Escolla: {$a}';
-$string['choiceclose'] = 'Permiir respostas até';
-$string['choicecloseson'] = 'A escolla pecha en {$a}';
+$string['choiceclose'] = 'Permitir respostas ata';
 $string['choicefull'] = 'Unha ou máis das opcións que seleccionou xa foron cubertas. Non se gardou a súa resposta. Faga outra selección.';
 $string['choicename'] = 'Nome escollido';
-$string['choiceopen'] = 'Permitir respostas dende';
+$string['choiceopen'] = 'Abrir';
 $string['choiceoptions'] = 'Opcións de escolla';
 $string['choiceoptions_help'] = 'Aquí é onde pode especificar as opcións entre as que teñen os participantes para escoller.
 
@@ -54,16 +52,16 @@ $string['choicesaved'] = 'Gardouse a súa escolla';
 $string['choicetext'] = 'Texto escollido';
 $string['chooseaction'] = 'Escoller unha acción ...';
 $string['chooseoption'] = 'Escolla: {$a}';
-$string['closebeforeopen'] = 'Especificou unha data de peche anterior á da apertura.';
+$string['closebeforeopen'] = 'Especificou unha data de peche anterior á data de apertura.';
 $string['completiondetail:submit'] = 'Faga unha escolla';
 $string['completionsubmit'] = 'Amosar como completo cando o usuario fai unha escolla';
 $string['description'] = 'Descrición';
 $string['deselectalloption'] = 'Demarcar todos os «{$a}»';
 $string['displayhorizontal'] = 'Amosar horizontalmente';
-$string['displaymode'] = 'Amosar o modo para as opcións';
+$string['displaymode'] = 'Mostrar Modo';
 $string['displayvertical'] = 'Amosar verticalmente';
-$string['eventanswercreated'] = 'Escolla de resposta engadida';
-$string['eventanswerdeleted'] = 'Escolla de resposta eliminada';
+$string['eventanswercreated'] = 'Escolla feita';
+$string['eventanswerdeleted'] = 'Opción de resposta eliminada';
 $string['eventanswersubmitted'] = 'Escolla feita';
 $string['eventanswerupdated'] = 'Escolla actualizada';
 $string['eventreportdownloaded'] = 'Informe de escolla descargado';
@@ -94,7 +92,7 @@ $string['limitno'] = 'Límite {no}';
 $string['modulename'] = 'Escolla';
 $string['modulename_help'] = 'O módulo da actividade de escolla permítelle ao profesor facer unha pregunta simple e ofrecer unha selección de respostas posíbeis.
 
-Os resultados da escolla poden publicarse após que os alumnos respondan, após unha certa data ou de ningunha forma. Os resultados pódense publicar con nomes de alumnos ou anonimamente.
+Os resultados da escolla poden publicarse após que os alumnos respondan, após unha certa data ou de ningunha forma. Os resultados pódense publicar con nomes de alumnos ou anonimamente.  (aínda que os profesores sempre ven os nomes dos alumnos e as súas respostas)
 
 Pódese utilizar a actividade de escolla
 
@@ -111,8 +109,8 @@ $string['noresultsviewable'] = 'Os resultados non están actualmente visíbeis.'
 $string['notanswered'] = 'Aínda non respondida';
 $string['notenrolledchoose'] = 'Vaites, soamente os usuarios matriculados poden facer escollas.';
 $string['notopenyet'] = 'Esta actividade non estará dispoñíbel ata {$a}.';
-$string['numberofuser'] = 'Número de respostas';
-$string['numberofuserinpercentage'] = 'Porcentaxe de respostas';
+$string['numberofuser'] = 'Número de participantes';
+$string['numberofuserinpercentage'] = 'Porcentaxe de participantes';
 $string['openafterclose'] = 'Especificou unha data aberta posterior á data de remate';
 $string['option'] = 'Opción';
 $string['optionno'] = 'Opción {no}';
@@ -122,13 +120,13 @@ $string['pluginadministration'] = 'Administración da escolla';
 $string['pluginname'] = 'Escolla';
 $string['previewing'] = 'Esta é só unha vista previa das opcións dispoñíbeis para esta actividade. Vostede poderá escoller cando se abra.';
 $string['previewonly'] = 'Isto é soamente unha vista previa das opcións dispoñíbeis para esta actividade. Vostede non poderá enviar a súa escolla ata o {$a}.';
-$string['privacy'] = 'Privacidade de resultados';
+$string['privacy'] = 'Privacidade dos resultados';
 $string['privacy:metadata:choice_answers'] = 'Información sobre a(s) resposta(s) escollida(s) do usuario para unha determinada actividade de escolla';
 $string['privacy:metadata:choice_answers:choiceid'] = 'O ID da actividade de escolla';
 $string['privacy:metadata:choice_answers:optionid'] = 'O ID da opción que o usuario seleccionou.';
 $string['privacy:metadata:choice_answers:timemodified'] = 'A marca de tempo indicando cando foi modificada a escolla polo usuario';
 $string['privacy:metadata:choice_answers:userid'] = 'ID do usuario que responde esta actividade de escolla';
-$string['publish'] = 'Publicar os resultados';
+$string['publish'] = 'Publicar resultados';
 $string['publishafteranswer'] = 'Amosar resultados aos alumnos após que respondan';
 $string['publishafterclose'] = 'Amosar resultados aos alumnos só após que a escolla estea pechada';
 $string['publishalways'] = 'Amosar os resultados aos alumnos sempre';
@@ -138,7 +136,7 @@ $string['publishinfoanonclose'] = 'Os resultados anónimos publicaranse após pe
 $string['publishinfofullafter'] = 'Os resultados completos, que amosan as opcións de todos, serán publicados após responder.';
 $string['publishinfofullclose'] = 'Os resultados completos, que amosan as opcións de todos, serán publicados após que a actividade estea pechada.';
 $string['publishinfonever'] = 'Os resultados desta actividade non se publicarán após responder.';
-$string['publishnames'] = 'Publicar os resultados completos, amosando os nomes e as súas escollas';
+$string['publishnames'] = 'Publicar os resultados completos, mostrando os nomes e as súas escollas';
 $string['publishnot'] = 'Non publicar resultados aos alumnos';
 $string['removemychoice'] = 'Retirar a miña escolla';
 $string['removeresponses'] = 'Retirar todas as respostas';
@@ -157,9 +155,9 @@ $string['showpreview_help'] = 'Permitirlle aos alumnos facer unha vista previa d
 $string['showunanswered'] = 'Amosar columna para non respondidas';
 $string['spaceleft'] = 'espazo dispoñíbel';
 $string['spacesleft'] = 'espazos dispoñíbeis';
-$string['taken'] = 'Reservados';
-$string['userchoosethisoption'] = 'Usuarios que escollen esta opción';
-$string['viewallresponses'] = 'Ver {$a} respostas';
+$string['taken'] = 'Reservado';
+$string['userchoosethisoption'] = 'O usuario escolleu esta opción';
+$string['viewallresponses'] = 'Ver respostas {$a}';
 $string['viewchoices'] = 'Ver escollas';
 $string['withselected'] = 'Coa seleccionada';
 $string['yourselection'] = 'A súa selección';

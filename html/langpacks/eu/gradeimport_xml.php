@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'eu', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'eu', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -37,6 +37,7 @@ $string['fileurl'] = 'Urrutiko fitxategiaren URLa';
 $string['fileurl_help'] = 'Urrutiko fitxategiaren URL eremua kanpoko zerbitzari batetik datuak eskuratzeko erabiltzen da, ikasleen informazio sistematik adibidez.';
 $string['importxml'] = 'Inportatu XML fitxategia';
 $string['importxml_help'] = 'Kalifikazioak erabiltzaile ID zenbakiak eta jardueren ID zenbakiak dituen XML fitxategi batetik inporta daitezke. Formatu egokia eskuratzeko, lehenik esporta itzazu kalifikazio batzuk XML fitxategira eta ikusi fitxategiaren edukia.';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'XML fitxategia';
 $string['privacy:metadata'] = 'Kalifikazioak XML fitxategitik inportatzeko pluginak ez du datu pertsonalik biltzen.';
 $string['xml:publish'] = 'XML kalifikazioen inportazioa argitaratu';

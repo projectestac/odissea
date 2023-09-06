@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recentlyaccesseditems', language 'nl', version '3.11'.
+ * Strings for component 'block_recentlyaccesseditems', language 'nl', version '4.1'.
  *
  * @package     block_recentlyaccesseditems
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['moreitems'] = 'Toon meer items';
 $string['noitems'] = 'Geen onlangs geopende items';
 $string['pluginname'] = 'Onlangs geopende items';
 $string['privacy:metadata:block_recentlyaccesseditemstablesummary'] = 'Het Onlangs geopende cursussen-blok bewaart informatie over de laatste keer dat een gebruiker items heeft geopend.';

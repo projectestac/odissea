@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_multilang', language 'eu', version '3.11'.
+ * Strings for component 'filter_multilang', language 'eu', version '4.1'.
  *
  * @package     filter_multilang
  * @category    string
@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Eduki eleaniztuna';
+$string['forceoldsyntax'] = 'Behartu sintaxi zaharra';
+$string['forceoldsyntax_desc'] = 'Behartu sintaxi eleaniztun zaharra: &lt;span&gt; etiketa class="multilang" eta &lt;lang&gt; gabe';
 $string['privacy:metadata'] = 'Eduki eleaniztuna pluginak ez du datu pertsonalik biltzen.';

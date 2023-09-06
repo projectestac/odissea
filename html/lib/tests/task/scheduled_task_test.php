@@ -40,7 +40,8 @@ class scheduled_task_test extends \advanced_testcase {
         $this->assertEquals(15, count($testclass->eval_cron_field('1-10,5-15', 0, 59)));
         $this->assertEquals(13, count($testclass->eval_cron_field('1-10,5-15/2', 0, 59)));
         $this->assertEquals(3, count($testclass->eval_cron_field('1,2,3,1,2,3', 0, 59)));
-        $this->assertEquals(1, count($testclass->eval_cron_field('-1,10,80', 0, 59)));
+        $this->assertEquals(0, count($testclass->eval_cron_field('-1,10,80', 0, 59)));
+        $this->assertEquals(0, count($testclass->eval_cron_field('-1', 0, 59)));
     }
 
     public function test_get_next_scheduled_time() {
@@ -101,7 +102,7 @@ class scheduled_task_test extends \advanced_testcase {
         // Next valid time should be next 10 minute boundary.
         $nexttime = $testclass->get_next_scheduled_time();
 
-        $minutes = ((intval(date('i') / 10))+1) * 10;
+        $minutes = ((intval(date('i') / 10)) + 1) * 10;
         $nexttenminutes = mktime(date('H'), $minutes, 0);
 
         $this->assertEquals($nexttenminutes, $nexttime, 'Next scheduled time is in 10 minutes.');
@@ -531,7 +532,7 @@ class scheduled_task_test extends \advanced_testcase {
     }
 
     /**
-     * Data provider for test_tool_health_category_find_missing_parents.
+     * Data provider for test_scheduled_task_override_values.
      */
     public static function provider_schedule_overrides(): array {
         return array(
@@ -764,5 +765,46 @@ class scheduled_task_test extends \advanced_testcase {
 
         // Confirm, that lastruntime is still in place.
         $this->assertEquals(123456789, $taskafterreset->get_last_run_time());
+    }
+
+    /**
+     * Data provider for {@see test_is_component_enabled}
+     *
+     * @return array[]
+     */
+    public function is_component_enabled_provider(): array {
+        return [
+            'Enabled component' => ['auth_cas', true],
+            'Disabled component' => ['auth_ldap', false],
+            'Invalid component' => ['auth_invalid', false],
+        ];
+    }
+
+    /**
+     * Tests whether tasks belonging to components consider the component to be enabled
+     *
+     * @param string $component
+     * @param bool $expected
+     *
+     * @dataProvider is_component_enabled_provider
+     */
+    public function test_is_component_enabled(string $component, bool $expected): void {
+        $this->resetAfterTest();
+
+        // Set cas as the only enabled auth component.
+        set_config('auth', 'cas');
+
+        $task = new scheduled_test_task();
+        $task->set_component($component);
+
+        $this->assertEquals($expected, $task->is_component_enabled());
+    }
+
+    /**
+     * Test whether tasks belonging to core components considers the component to be enabled
+     */
+    public function test_is_component_enabled_core(): void {
+        $task = new scheduled_test_task();
+        $this->assertTrue($task->is_component_enabled());
     }
 }

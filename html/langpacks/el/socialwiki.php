@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'socialwiki', language 'el', version '3.11'.
+ * Strings for component 'socialwiki', language 'el', version '4.1'.
  *
  * @package     socialwiki
  * @category    string
@@ -91,8 +91,10 @@ $string['followers'] = 'Ακόλουθοι';
 $string['followers_empty'] = 'Δεν έχετε κανέναν ακόλουθο.';
 $string['forceformat'] = 'Επιβολή μορφότυπου';
 $string['format'] = 'Μορφότυπος';
+$string['formatcreole_link'] = 'mod/socialwiki/creole';
 $string['formathtml'] = 'Μορφότυπος HTML';
 $string['formatnwiki'] = 'Μορφότυπος NWiki';
+$string['formatnwiki_link'] = 'mod/socialwiki/nwiki';
 $string['help'] = 'Βοήθεια';
 $string['home'] = 'Αρχική';
 $string['homemenu'] = 'Μενού αρχικής';
@@ -102,7 +104,7 @@ $string['insertcomment'] = 'Εισαγωγή σχολίου';
 $string['insertimage'] = 'Εισαγωγή μιας εικόνας...';
 $string['invalidcoursemoduleid'] = 'Δόθηκαν μη έγκυρες παράμετροι.';
 $string['invalidparameters'] = 'Δόθηκε μη έγκυρο αναγνωριστικό αρθρώματος μαθήματος.';
-$string['invalidsection'] = 'Μη έγκυρο τμήμα για πρόσβαση.';
+$string['invalidsection'] = 'Προσπάθεια για πρόσβαση σε μη έγκυρη ενότητα.';
 $string['invalidsesskey'] = 'Το δοσμένο κλειδί συνόδου δεν είναι έγκυρο. Παρακαλούμε, ξαναστείλτε πάλι τα δεδομένα.';
 $string['invalidsubwikiid'] = 'Δόθηκε μη έγκυρο αναγνωριστικό Subwiki.';
 $string['invalidwikiid'] = 'Δόθηκε μη έγκυρο αναγνωριστικό Wiki.';
@@ -119,12 +121,13 @@ $string['makepage'] = 'Δημιουργία μιας νέας σελίδας';
 $string['missingpages'] = 'Σελίδες χωρίς περιεχόμενο';
 $string['modified'] = 'Τροποποιήθηκε';
 $string['modulename'] = 'Κοινωνικό wiki';
+$string['modulename_link'] = 'mod/socialwiki/view';
 $string['modulenameplural'] = 'Κοινωνικά wiki';
 $string['myfaves'] = 'Οι αγαπημένες σας';
 $string['myfaves_empty'] = 'Δεν έχετε καμία αγαπημένη σελίδα.';
 $string['mylikes'] = 'Τα «Μου αρέσει»';
 $string['mylikes_empty'] = 'Δεν έχετε καθόλου «Μου αρέσει»';
-$string['mypages'] = 'Οι σελίδες';
+$string['mypages'] = 'Οι σελίδες μου';
 $string['mypages_empty'] = 'Δεν έχετε δημιουργήσει καμία σελίδα.';
 $string['name'] = 'Όνομα';
 $string['name_help'] = 'Το όνομα του χρήστη.';

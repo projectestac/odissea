@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ja', version '3.11'.
+ * Strings for component 'tool_installaddon', language 'ja', version '4.1'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -42,6 +42,7 @@ $string['installfromziprootdir_help'] = 'GitHubから生成されたようなZIP
 $string['installfromzipsubmit'] = 'ZIPファイルからプラグインをインストールする';
 $string['installfromziptype'] = 'プラグインタイプ';
 $string['installfromziptype_help'] = 'コンポーネント名が正しく宣言されているプラグインではインストーラが自動的にプラグインタイプを検出することができます。自動検出に失敗した場合、正しいプラグインタイプを手動で選択してください。注意: 正しくないプラグインタイプが指定された場合、インストール処理が失敗する可能性があります。';
+$string['installfromziptype_link'] = 'Development:Plugins';
 $string['permcheck'] = 'プラグインタイプのルートロケーションがウェブサーバプロセスにより書き込み可能かどうか確認してください。';
 $string['permcheckerror'] = '書き込み権のチェック中にエラーが発生しました。';
 $string['permcheckprogress'] = '書き込み権のチェック ...';

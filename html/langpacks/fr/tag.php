@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'fr', version '3.11'.
+ * Strings for component 'tag', language 'fr', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -78,7 +78,9 @@ $string['helprelatedtags'] = 'Tags reliés, séparés par des virgules';
 $string['id'] = 'id';
 $string['inalltagcoll'] = 'Partout';
 $string['inputstandardtags'] = 'Saisir une liste de nouveaux tags, séparés par des virgules';
+$string['itemid'] = 'ID élément';
 $string['itemstaggedwith'] = '{$a->tagarea} signalées avec « {$a->tag} »';
+$string['itemtype'] = 'Type d\'élément';
 $string['lesstags'] = 'moins…';
 $string['managestandardtags'] = 'Gérer les tags standards';
 $string['managetagcolls'] = 'Gérer les collections de tags';
@@ -87,6 +89,7 @@ $string['moretags'] = 'plus…';
 $string['name'] = 'Nom du tag';
 $string['namesalreadybeeingused'] = 'Noms des tags déjà utilisés';
 $string['nameuseddocombine'] = 'Ce tag est déjà utilisé. Voulez-vous combiner ces tags ?';
+$string['namewithlink'] = 'Nom du tag avec lien';
 $string['newcollnamefor'] = 'Nouveau nom de la collection de tag {$a}';
 $string['newnamefor'] = 'Nouveau nom du tag {$a}';
 $string['nextpage'] = 'Plus';
@@ -144,6 +147,7 @@ $string['standardsuggest'] = 'Suggérer';
 $string['standardtag'] = 'Standard';
 $string['suredeletecoll'] = 'Voulez-vous vraiment supprimer la collection de tags « {$a} » ?';
 $string['tag'] = 'Tag';
+$string['tagarea'] = 'Zone du tag';
 $string['tagarea_blog_external'] = 'Articles de blog externes';
 $string['tagarea_course'] = 'Cours';
 $string['tagarea_course_modules'] = 'Activités et ressources';
@@ -152,10 +156,12 @@ $string['tagarea_user'] = 'Centres d\'intérêt';
 $string['tagareaenabled'] = 'Activé';
 $string['tagareaname'] = 'Nom';
 $string['tagareas'] = 'Zones de tag';
+$string['tagauthor'] = 'Auteur du tag';
 $string['tagcollection'] = 'Collection de tag';
 $string['tagcollection_help'] = 'Les collections de tags sont des ensembles de tags de diverses zones. Par exemple, une collection de tags standards peut être utilisée pour taguer des cours, tout en utilisant une autre collection de tags pour les articles de blogs ou les centres d\'intérêts des participants. Lorsqu\'un utilisateur clique sur un tag, la page des tags n\'affiche que les tags de la même collection. Les tags peuvent s\'ajouter automatiquement à une collection en fonction de la zone taguée ou ils peuvent être ajouter manuellement comme tags standards.';
 $string['tagcollections'] = 'Collections de tag';
 $string['tagdescription'] = 'Description tag';
+$string['taginstance'] = 'Instance du tag';
 $string['tags'] = 'Tags';
 $string['tagsaredisabled'] = 'Les tags sont désactivés';
 $string['thingstaggedwith'] = '{$a->count} éléments sont marqués avec « {$a->name} »';

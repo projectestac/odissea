@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exacomp', language 'en', version '3.11'.
+ * Strings for component 'block_exacomp', language 'en', version '4.1'.
  *
  * @package     block_exacomp
  * @category    string
@@ -204,7 +204,7 @@ $string['descriptor_categories'] = 'Edit difficulty level:';
 $string['descriptor_categories_description'] = 'Choose the difficulty level for this (sub)competency/learning material. You can also add a new difficulty level or choose to not select a difficulty level.';
 $string['descriptor_child'] = 'child competence';
 $string['descriptor_description'] = 'Create your first descriptor:';
-$string['descriptor_label'] = 'Competency description';
+$string['descriptor_label'] = 'Competency title';
 $string['descriptor_submission_info'] = 'You are about to add a submission to the descriptor "{$a}". Your submission will be saved in Exabis ePortfolio and Teachers can view it there.';
 $string['descriptors'] = 'Competencies';
 $string['deselect_all'] = 'deselect all';
@@ -221,6 +221,7 @@ $string['doimport_own'] = 'Import individual outcomes/standards';
 $string['donotleave_page_message'] = 'You have unsaved changes on this page. Do you want to leave this page and discard your changes or stay on this page?';
 $string['download_activites'] = 'Download activities';
 $string['editor'] = 'Edited by';
+$string['edulevel_without_assignment_title'] = 'without a specific assignment';
 $string['empty_pre_planning_confirm'] = 'Examples added from all teachers are deleted, are you sure you want to do this?';
 $string['empty_pre_planning_storage'] = 'Empty planning storage';
 $string['empty_trash'] = 'Empty trash bin';
@@ -325,7 +326,7 @@ $string['import_source'] = 'Imported from: {$a}';
 $string['import_used_preselected_from_previous'] = 'If an XML has been imported previously, these values are preselected';
 $string['importdone'] = 'data has already been imported from xml';
 $string['importfail'] = 'an error has occured during import';
-$string['importinfo'] = 'Please create your competence grids at <a target="_blank" href="http://www.edustandards.org">www.edustandards.org</a> or visit <a href="https://eeducation.at/index.php?id=155&L=0" target="_blank">https://eeducation.at/index.php?id=155&L=0</a> to download an available xml file.';
+$string['importinfo'] = 'Please create your competence grids at <a target="_blank" href="https://comet.edustandards.org">www.edustandards.org</a>.';
 $string['importpending'] = 'no data has been imported yet!';
 $string['importsuccess'] = 'data was successfully imported!';
 $string['importsuccess_own'] = 'individual data was imported successfully!';
@@ -393,13 +394,14 @@ $string['next_step'] = 'This configuration step has been completed. Click here t
 $string['next_step_first_teacher_step'] = 'Click here to continue configuration.';
 $string['next_step_teacher'] = 'The configuration that has to be done by the administrator is now completed. To continue with the course specific configuration click here.';
 $string['niveau'] = 'Difficulty Level';
-$string['niveau_description'] = 'Create your first Niveau:';
+$string['niveau_description'] = 'Create your first Difficulty Level:';
 $string['niveau_filter'] = 'Filter difficulty levels';
 $string['niveau_short'] = 'Level';
 $string['no_activities_selected'] = 'please associate Moodle activities with competences';
 $string['no_activities_selected_student'] = 'There is no data available yet';
 $string['no_badges_yet'] = 'no badges available';
 $string['no_course_activities'] = 'No Moodle activities found in this course - click here to create some.';
+$string['no_course_templates'] = 'Can not find any course to use as a template';
 $string['no_crosssubjs'] = 'No interdisciplinary subjects available.';
 $string['no_entries_found'] = 'no entries found';
 $string['no_external_trainer'] = 'No external trainers assigned';
@@ -458,6 +460,7 @@ $string['period'] = 'time interval';
 $string['periodselect'] = 'Select Period';
 $string['please_choose'] = 'Please select';
 $string['please_choose_preselection'] = 'Please select the subjects you want to delete from.';
+$string['please_select_topic_first'] = 'Please first select a topic of competence in the left bar';
 $string['pluginname'] = 'Exabis Competence Grid';
 $string['points_limit_forcourse'] = 'Highest value for Points';
 $string['pre_planning_materials_assigned'] = 'Selected materials were assigned to the selected students / groups.';
@@ -593,6 +596,7 @@ $string['save_selection'] = 'Confirm';
 $string['save_success'] = 'changes were successful';
 $string['scheduler_import_settings'] = 'Settings for scheduler importing';
 $string['schedulerimport'] = 'Scheduler import tasks';
+$string['schooltype_without_assignment_title'] = 'without a specific assignment';
 $string['second_configuration_step'] = 'In this configuration step you have to pre-select competence grids.';
 $string['select_all'] = 'select all';
 $string['select_student'] = 'Please select a student first';
@@ -630,7 +634,7 @@ $string['settings_admin_scheme'] = 'Predefined configuration';
 $string['settings_admin_scheme_description'] = 'Grading can be done on different difficulty levels.';
 $string['settings_admin_scheme_none'] = 'no global difficulty levels';
 $string['settings_applogin_enabled'] = 'Enable App Login';
-$string['settings_applogin_enabled_description'] = 'Allows the login from Exabis Apps (Diggr+, etc.)';
+$string['settings_applogin_enabled_description'] = 'Allows the login from Exabis Apps (Diggr+, Dakora, Dakora+, elove)';
 $string['settings_applogin_redirect_urls'] = 'Applogin Urls';
 $string['settings_applogin_redirect_urls_description'] = '';
 $string['settings_assessment_SelfEval'] = 'Student assessment';
@@ -687,6 +691,10 @@ $string['settings_dakora_timeout_description'] = '';
 $string['settings_dakora_url'] = 'Url to Dakora-App';
 $string['settings_dakora_url_description'] = '';
 $string['settings_default_de_value'] = 'DE value:';
+$string['settings_description_nurdakora'] = '<b>Only Dakora App</b>';
+$string['settings_description_nurdakoraplus'] = '<b>Only DakoraPlus App</b>';
+$string['settings_description_nurdiggr'] = '<b>Only Diggr+ and elove App</b>';
+$string['settings_description_nurmoodleunddakora'] = '<b>Only Moodle and Dakora App</b>';
 $string['settings_disable_js_assign_competencies'] = 'Disable JS in students selection in "Competence grid" page';
 $string['settings_disable_js_assign_competencies_description'] = 'If "Competence grid" has a long page generation time. This checkbox can solve this problem';
 $string['settings_disable_js_editactivities'] = 'Disable JS in students selection in "Assign Moodle activities" page';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'it', version '3.11'.
+ * Strings for component 'folder', language 'it', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -45,10 +45,12 @@ $string['indicator:cognitivedepth'] = 'Cartella cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse Cartella.';
 $string['indicator:cognitivedepthdef'] = 'Cartella cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalla risorsa Cartella (Livelli: Nessuna visualizzazione, Visualizzazione)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Cartella sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse \'file\'.';
 $string['indicator:socialbreadthdef'] = 'Cartella sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dalle risorse Cartella (Livelli: Nessuna partecipazione, Partecipazione da solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['maxsizetodownload'] = 'Dimensione massima della cartella da scaricare (MB)';
 $string['maxsizetodownload_help'] = 'L\'impostazione limita la dimensione massima oltre la quale gli utenti non potranno scaricare la cartella in formato zip. Impostando a zero, non ci saranno limiti dimensionali.';
 $string['modulename'] = 'Cartella';
@@ -58,6 +60,7 @@ Una cartella può essere usata per:
 
 * un insieme di file su un dato argomento, ad esempio un insieme di temi d\'esame svolti in passato in formato pdf
 * fornire uno spazio comune dove i docenti possono caricare e condividere file del corso (tenendo la cartella nascosta agli studenti)';
+$string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Cartelle';
 $string['newfoldercontent'] = 'Contenuto della cartella';
 $string['noautocompletioninline'] = 'Il completamento automatico basato sulla visualizzazione dell\'attività non può essere selezionato se la visualizzazione del contenuto è impostata a "Nella pagina home del corso".';

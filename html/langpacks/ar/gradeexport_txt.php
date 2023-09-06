@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_txt', language 'ar', version '3.11'.
+ * Strings for component 'gradeexport_txt', language 'ar', version '4.1'.
  *
  * @package     gradeexport_txt
  * @category    string
@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventgradeexported'] = 'تقديرات نصية تم تصديرها';
 $string['pluginname'] = 'ملف نص عادي';
 $string['privacy:metadata'] = 'إن ملحق تصدير التقديرات بشكل نصي لا يخزن أي بيانات شخصية.';
-$string['timeexported'] = 'آخر ما تم تنزيله من هذا المقرر الدراسي';
+$string['timeexported'] = 'آخر ما تم تنزيله من هذا المساق';
 $string['txt:publish'] = 'نشر تصدير التقديرات بصيغة TXT';
 $string['txt:view'] = 'استعمال تصدير الدرجة بشكل نص';

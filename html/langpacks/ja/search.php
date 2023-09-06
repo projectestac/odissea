@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ja', version '3.11'.
+ * Strings for component 'search', language 'ja', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -43,6 +43,7 @@ $string['confirm_delete'] = '本当に {$a} のインデックスを削除して
 $string['confirm_deleteall'] = '本当にすべてのインデックス化済みコンテンツを削除してもよろしいですか？サイトが再度インデックス化されるまでユーザは検索結果を取得することはできません。';
 $string['confirm_indexall'] = '本当にインデックス化済みコンテンツを更新してもよろしいですか? 大量のコンテンツをインデックス化する必要がある場合、この作業には時間を要します。実運用サーバでは通常あなたは「グローバル検索インデックス化」スケジュールタスクにインデックス化させるべきです。';
 $string['confirm_reindexall'] = '本当にすべてのサイトコンテンツを再インデックス化してもよろしいですか? あなたのサイトに大量のコンテンツが含まれる場合、この作業には時間を要します。再インデックス化が完了するまでユーザは完全な検索結果を取得することはできません。';
+$string['content:courserole'] = '{$a->course} の {$a->role}';
 $string['core-all'] = 'すべて';
 $string['core-course-content'] = 'コースコンテンツ';
 $string['core-courses'] = 'コース';
@@ -115,6 +116,7 @@ $string['schemaversionunknown'] = '検索エンジンが現在のスキーマバ
 $string['score'] = 'スコア';
 $string['search'] = '検索';
 $string['search:course'] = 'コース';
+$string['search:course_teacher'] = 'コース教師';
 $string['search:customfield'] = 'コースカスタムフィールド';
 $string['search:message_received'] = 'メッセージ - 受信';
 $string['search:message_sent'] = 'メッセージ - 送信';
@@ -136,6 +138,7 @@ $string['thesewordsmustappear'] = '次の文字を含む';
 $string['thesewordsmustnotappear'] = '次の文字を含まない';
 $string['title'] = 'タイトル';
 $string['tofetchtheseresults'] = '&nbsp;';
+$string['topresults'] = '上位結果';
 $string['totalsize'] = '合計サイズ';
 $string['totime'] = '修正前';
 $string['type'] = 'タイプ';

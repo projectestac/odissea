@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'ar', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'ar', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['editor:a11ytitlehidelabel'] = 'إخفاء ملصق التقنيات المساعدة';
+$string['editor:a11ytitleshowlabel'] = 'إظهار ملصق التقنيات المساعدة';
 $string['editor:add'] = 'أضف';
 $string['editor:addauthor'] = 'حفظ المؤلف';
 $string['editor:addentity'] = 'إضافة :entity';
 $string['editor:addfile'] = 'إضافة ملف';
 $string['editor:addnewchange'] = 'إضافة تغيير جديد';
 $string['editor:addtitle'] = 'إضافة عنوان';
-$string['editor:addvideodescription'] = 'يدعم H5P كل مصادر الفيديو الخارجية بصيغ mp4، webm أو ogv، مثل Vimeo Pro، وفيه دعم لروابط يوتيوب.';
+$string['editor:addvideodescription'] = 'يدعم H5P كل مصادر الفيديو الخارجية بصيغ mp4، webm أو ogv، مثل Vimeo Pro، وفيه دعم لروابط يوتيوب وPanopto.';
 $string['editor:atoz'] = 'أ إلى ي';
 $string['editor:avtablistlabel'] = 'أدرج مستعملاً';
 $string['editor:belowmin'] = 'إن القيمة :property هي أقل من القيمة الصغرى لـ :min.';
@@ -91,7 +93,7 @@ $string['editor:enteraudiotitle'] = 'إلصق الرابط أو ما سواه ك
 $string['editor:enteraudiourl'] = 'أدخل رابط مصدر الصوت';
 $string['editor:enterfullscreenbuttonlabel'] = 'أدخل ملء الشاشة';
 $string['editor:entervideotitle'] = 'إلصق رابط يوتيوب أو ما سواه كرابط لمصدر الفيديو';
-$string['editor:entervideourl'] = 'أدخل رابط مصدر الفيديو أو رابط يوتيوب';
+$string['editor:entervideourl'] = 'أدخل رابط الفيديو';
 $string['editor:errorcalculatingmaxscore'] = 'تعذر حساب الدرجة القصوى لهذا المحتوى. الدرجة القصوى مفترض أن تكون 0. تواصل مع مشرفك إن كان ذلك غير صحيح.';
 $string['editor:errorcommunicatinghubcontent'] = 'وقع خطأ. لطفاً، حاول مجدداً.';
 $string['editor:errorcommunicatinghubtitle'] = 'تعذر الاتصال بالمركز.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ja', version '3.11'.
+ * Strings for component 'cache', language 'ja', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -40,6 +40,8 @@ $string['cachedef_calendar_subscriptions'] = 'カレンダー購読';
 $string['cachedef_capabilities'] = 'システムケイパビリティリスト';
 $string['cachedef_completion'] = '活動完了ステータス';
 $string['cachedef_config'] = 'Config設定';
+$string['cachedef_contentbank_allowed_categories'] = '現在のユーザに許可されているコンテンツバンクのコースカテゴリ';
+$string['cachedef_contentbank_allowed_courses'] = '現在のユーザに許可されているコンテンツバンクのコース';
 $string['cachedef_contentbank_context_extensions'] = 'コンテンツバンクコンテクスト内で許可される拡張子およびサポータプラグイン';
 $string['cachedef_contentbank_enabled_extensions'] = 'コンテンツバンク内で許可される拡張子およびサポータプラグイン';
 $string['cachedef_contextwithinsights'] = '洞察のコンテクスト';
@@ -50,10 +52,14 @@ $string['cachedef_coursecatrecords'] = 'コースカテゴリレコード';
 $string['cachedef_coursecattree'] = 'コースカテゴリツリー';
 $string['cachedef_coursecompletion'] = 'コース完了ステータス';
 $string['cachedef_coursecontacts'] = 'コース連絡先一覧';
+$string['cachedef_courseeditorstate'] = 'フロントエンドでコースの変更を検出するためのセッションコース状態キャッシュキー';
 $string['cachedef_coursemodinfo'] = 'それぞれのコースのモジュールおよびセクションに関する累積情報';
+$string['cachedef_coursesectionspreferences'] = 'コースセクションプレファレンス';
 $string['cachedef_databasemeta'] = 'データベースメタ情報';
+$string['cachedef_deprecatedcapabilities'] = 'システム非推奨ケイパビリティリスト';
 $string['cachedef_eventinvalidation'] = 'イベント無効化';
 $string['cachedef_externalbadges'] = '特定ユーザの外部バッジ';
+$string['cachedef_file_imageinfo'] = 'ファイルイメージ情報 例) サイズ';
 $string['cachedef_fontawesomeiconmapping'] = 'Font Awesomのアイコンマッピング';
 $string['cachedef_grade_categories'] = '評定カテゴリクエリ';
 $string['cachedef_grade_letters'] = '評定文字クエリ';
@@ -77,6 +83,7 @@ $string['cachedef_postprocessedcss'] = '後処理CSS';
 $string['cachedef_presignup'] = '特定の未登録ユーザの事前サインアップデータ';
 $string['cachedef_questiondata'] = '問題定義';
 $string['cachedef_recommendation_favourite_course_content_items'] = 'コースコンテンツアイテムの推奨';
+$string['cachedef_reportbuilder_allowed_reports'] = 'オーディエンスに応じてレポートを許可するユーザ';
 $string['cachedef_repositories'] = 'リポジトリインスタンスデータ';
 $string['cachedef_roledefs'] = 'ロール定義';
 $string['cachedef_string'] = '言語ストリングキャッシュ';
@@ -91,6 +98,7 @@ $string['cachedef_userselections'] = 'Moodle内でのユーザ選択の保持に
 $string['cachedef_yuimodules'] = 'YUIモジュール定義';
 $string['cachelock_file_default'] = 'デフォルトファイルロッキング';
 $string['cachestores'] = 'キャッシュストア';
+$string['cacheusage'] = 'キャッシュ使用状況';
 $string['caching'] = 'キャッシング';
 $string['canuselocalstore'] = 'ローカルストア利用可';
 $string['component'] = 'コンポーネント';
@@ -113,6 +121,7 @@ $string['deletestore'] = 'ストアを削除する';
 $string['deletestoreconfirmation'] = '本当に「 {$a} 」ストアを削除してもよろしいですか?';
 $string['deletestorehasmappings'] = 'マッピングされているため、あなたはこのストアを削除できません。ストアを削除する前に、すべてのマッピングを削除してください。';
 $string['deletestoresuccess'] = 'キャッシュストアを正常に削除しました。';
+$string['editdefinitionmapping'] = '定義マッピングを編集する';
 $string['editdefinitionmappings'] = '{$a} 定義ストアマッピング';
 $string['editdefinitionsharing'] = '{$a} の共有定義を編集する';
 $string['editmappings'] = 'マッピングを編集する';
@@ -155,8 +164,6 @@ $string['pluginsummaries'] = 'インストール済みキャッシュストア';
 $string['privacy:metadata:cachestore'] = 'キャッシュサブシステムはMoodleの他の部分の代理として一時的にデータを保存します。このデータは簡単に特定できません。また、データは非常に短い時間生存します。データはMoodle内のどこかで保存されたデータキャッシュとして提供されるため、すでにそれらのMoodleコンポーネントにより処理されています。';
 $string['purge'] = 'パージ';
 $string['purgeagain'] = '再度パージする';
-$string['purgedefinitionsuccess'] = '指定された定義を正常に削除しました。';
-$string['purgestoresuccess'] = 'リクエストされたストアを正常に削除しました。';
 $string['purgexdefinitionsuccess'] = '「 {$a->name} 」キャッシュ ({$a->component}/{$a->area}) を正常に削除しました。';
 $string['purgexstoresuccess'] = '「 {$a->store} 」ストアを正常に削除しました。';
 $string['requestcount'] = '{$a} リクエストによりテストする';
@@ -204,5 +211,14 @@ $string['tested'] = 'テスト済み';
 $string['testperformance'] = 'パフォーマンステスト';
 $string['unsupportedmode'] = '未サポートモード';
 $string['untestable'] = 'テスト不可';
+$string['updatedefinitionmapping'] = '定義マッピングを更新する';
+$string['updatedefinitionsharing'] = '定義共有を編集する';
+$string['usage_items'] = 'アイテム';
+$string['usage_mean'] = '平均アイテムサイズ';
+$string['usage_realtotal'] = '実使用量 (分かる場合)';
+$string['usage_samples'] = 'キャッシュごとにサンプリングされるアイテム';
+$string['usage_sd'] = 'Std. dev.';
+$string['usage_total'] = '推定合計';
+$string['usage_totalmargin'] = 'エラーマージン (95%)';
 $string['userinputsharingkey'] = '共有のためのカスタムキー';
 $string['userinputsharingkey_help'] = 'あなたのプライベートキーをここに入力してください。あなたがデータを共有するために他のサイトでストアをセットアップしている場合、必ずそのサイトと同一のキーを設定してください。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'zh_cn', version '3.11'.
+ * Strings for component 'cache', language 'zh_cn', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -40,6 +40,8 @@ $string['cachedef_calendar_subscriptions'] = '日历订阅';
 $string['cachedef_capabilities'] = '系统功能列表';
 $string['cachedef_completion'] = '活动完成情况';
 $string['cachedef_config'] = '修改配置信息';
+$string['cachedef_contentbank_allowed_categories'] = '允许当前用户访问的内容库课程类别';
+$string['cachedef_contentbank_allowed_courses'] = '允许当前用户访问的内容库课程';
 $string['cachedef_contentbank_context_extensions'] = '在内容库场景中允许扩展及其支持插件';
 $string['cachedef_contentbank_enabled_extensions'] = '在内容库中允许扩展及其支持插件';
 $string['cachedef_contextwithinsights'] = '洞察力上下文';
@@ -50,7 +52,9 @@ $string['cachedef_coursecatrecords'] = '课程目录记录';
 $string['cachedef_coursecattree'] = '课程目录树';
 $string['cachedef_coursecompletion'] = '课程完成状态';
 $string['cachedef_coursecontacts'] = '课程联系人列表';
+$string['cachedef_courseeditorstate'] = '会话课程状态缓存键来检测前端的课程变化';
 $string['cachedef_coursemodinfo'] = '有关每一个课程章节和单元的汇总信息';
+$string['cachedef_coursesectionspreferences'] = '课程部分首选项';
 $string['cachedef_databasemeta'] = '数据库元信息';
 $string['cachedef_eventinvalidation'] = '事件无效';
 $string['cachedef_externalbadges'] = '给特定用户的外部徽章';
@@ -77,6 +81,7 @@ $string['cachedef_postprocessedcss'] = '后处理CSS';
 $string['cachedef_presignup'] = '特定未注册用户的预注册数据';
 $string['cachedef_questiondata'] = '试题定义';
 $string['cachedef_recommendation_favourite_course_content_items'] = '课程内容推荐';
+$string['cachedef_reportbuilder_allowed_reports'] = '用户允许根据受众进行报告';
 $string['cachedef_repositories'] = '库实例资料';
 $string['cachedef_roledefs'] = '角色定义';
 $string['cachedef_string'] = '语言字符串缓存';
@@ -91,6 +96,7 @@ $string['cachedef_userselections'] = '持续用户选择所用的资料';
 $string['cachedef_yuimodules'] = 'YUI模块定义';
 $string['cachelock_file_default'] = '默认文件锁定';
 $string['cachestores'] = '缓存储存';
+$string['cacheusage'] = '缓存使用情况';
 $string['caching'] = '缓存';
 $string['canuselocalstore'] = '可以使用本地商店';
 $string['component'] = '组件';
@@ -113,6 +119,7 @@ $string['deletestore'] = '删除储存';
 $string['deletestoreconfirmation'] = '你真的要删除"{$a}"储存？';
 $string['deletestorehasmappings'] = '因为这个储存存在映射，所以你不能删除。在你删除它之前，请先删除所有映射。';
 $string['deletestoresuccess'] = '成功删除缓存存储。';
+$string['editdefinitionmapping'] = '编辑定义映射';
 $string['editdefinitionmappings'] = '{$a}定义储存映射。';
 $string['editdefinitionsharing'] = '为{$a}编辑定义共享';
 $string['editmappings'] = '编辑映射';
@@ -155,8 +162,6 @@ $string['pluginsummaries'] = '安装缓存存储';
 $string['privacy:metadata:cachestore'] = '缓存系统为Moodle的其它模块提供临时数据存储。要识别数据较困难，同时存在期限非常短。它作为在Moodle系统其它位置存储的数据的缓存，应该已由Moodle的其它模板管理。';
 $string['purge'] = '清除';
 $string['purgeagain'] = '再次清洗';
-$string['purgedefinitionsuccess'] = '请求定义已成功清除';
-$string['purgestoresuccess'] = '请求存储已成功清除';
 $string['purgexdefinitionsuccess'] = '成功清除了“{$a->name}”缓存（{$a->component}/{$a->area}）。';
 $string['purgexstoresuccess'] = '成功清除了“{$a->store}”存储。';
 $string['requestcount'] = '以{$a}请求来进行测试';
@@ -204,5 +209,14 @@ $string['tested'] = '已测试';
 $string['testperformance'] = '测试性能';
 $string['unsupportedmode'] = '不支持的模式';
 $string['untestable'] = '未经测试的';
+$string['updatedefinitionmapping'] = '编辑定义映射';
+$string['updatedefinitionsharing'] = '编辑定义共享';
+$string['usage_items'] = '项目';
+$string['usage_mean'] = '平均项目大小';
+$string['usage_realtotal'] = '实际使用情况（如果知道）';
+$string['usage_samples'] = '每个缓存采样的项目';
+$string['usage_sd'] = '标准开发';
+$string['usage_total'] = '估计总数';
+$string['usage_totalmargin'] = '误差幅度 (95%)';
 $string['userinputsharingkey'] = '用于分享的自定义密钥';
 $string['userinputsharingkey_help'] = '在这里输入你的私人密钥。当你在其他你想分享数据的网站上设置了其他存储时，请确保你在那里设置了相同的密钥。';

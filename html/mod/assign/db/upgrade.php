@@ -34,38 +34,66 @@ function xmldb_assign_upgrade($oldversion) {
 
     $dbman = $DB->get_manager();
 
-    // Automatically generated Moodle v3.6.0 release upgrade line.
+    // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    if ($oldversion < 2018120500) {
-        // Define field hidegrader to be added to assign.
+    if ($oldversion < 2021110901) {
+        // Define field activity to be added to assign.
         $table = new xmldb_table('assign');
-        $field = new xmldb_field('hidegrader', XMLDB_TYPE_INTEGER, '2', null, XMLDB_NOTNULL, null, '0', 'blindmarking');
+        $field = new xmldb_field('activity', XMLDB_TYPE_TEXT, null, null, null, null, null, 'alwaysshowdescription');
 
+        // Conditionally launch add field activity.
         if (!$dbman->field_exists($table, $field)) {
             $dbman->add_field($table, $field);
         }
 
-        // Assignment savepoint reached.
-        upgrade_mod_savepoint(true, 2018120500, 'assign');
+        $field = new xmldb_field('activityformat', XMLDB_TYPE_INTEGER, '4', null, XMLDB_NOTNULL, null, '0', 'activity');
+
+        // Conditionally launch add field activityformat.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        $field = new xmldb_field('timelimit', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0', 'cutoffdate');
+
+        // Conditionally launch add field timelimit.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        $field = new xmldb_field('submissionattachments', XMLDB_TYPE_INTEGER, '2',
+            null, XMLDB_NOTNULL, null, '0', 'activityformat');
+
+        // Conditionally launch add field submissionattachments.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        $table = new xmldb_table('assign_submission');
+        $field = new xmldb_field('timestarted', XMLDB_TYPE_INTEGER, '10', null, null, null, null, 'timemodified');
+
+        // Conditionally launch add field timestarted.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        // Define field timelimit to be added to assign_overrides.
+        $table = new xmldb_table('assign_overrides');
+        $field = new xmldb_field('timelimit', XMLDB_TYPE_INTEGER, '10', null, null, null, null, 'cutoffdate');
+
+        // Conditionally launch add field timelimit.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        // Assign savepoint reached.
+        upgrade_mod_savepoint(true, 2021110901, 'assign');
     }
 
-    // Automatically generated Moodle v3.7.0 release upgrade line.
+    // Automatically generated Moodle v4.0.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.8.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.9.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.10.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.11.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2021051701) {
+    if ($oldversion < 2022071300) {
         // The most recent assign submission should always have latest = 1, we want to find all records where this is not the case.
         // Find the records with the maximum timecreated for each assign and user combination where latest is also 0.
         $sqluser = "SELECT s.id
@@ -100,7 +128,10 @@ function xmldb_assign_upgrade($oldversion) {
         }
 
         // Assignment savepoint reached.
-        upgrade_mod_savepoint(true, 2021051701, 'assign');
+        upgrade_mod_savepoint(true, 2022071300, 'assign');
     }
+    // Automatically generated Moodle v4.1.0 release upgrade line.
+    // Put any upgrade step following this.
+
     return true;
 }

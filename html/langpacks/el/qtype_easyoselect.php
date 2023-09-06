@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyoselect', language 'el', version '3.11'.
+ * Strings for component 'qtype_easyoselect', language 'el', version '4.1'.
  *
  * @package     qtype_easyoselect
  * @category    string
@@ -40,4 +40,5 @@ $string['notenoughanswers'] = 'Αυτός ο τύπος ερώτησης απα�
 $string['orderimportant'] = 'Ναι';
 $string['ordernotimportant'] = 'Όχι';
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
+$string['pluginname_link'] = 'question/type/easyoselect';
 $string['youranswer'] = 'Η απάντησή σας: {$a}';

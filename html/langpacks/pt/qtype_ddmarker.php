@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'pt', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'pt', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoreitems'] = 'Espaços para mais {no} marcadores';
+$string['addmoreitems'] = 'Adicionar mais {no} marcadores';
 $string['alttext'] = 'Texto alternativo';
 $string['answer'] = 'Resposta';
 $string['bgimage'] = 'Imagem de fundo';
@@ -57,6 +57,8 @@ Para informação, as três formas usam as coordenadas da seguinte maneira:<br /
 Selecionar um texto de marcador adicionará esse texto à forma na pré-visualização.';
 $string['followingarewrong'] = 'Os seguintes marcadores foram arrastados para uma área errada: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Os seguintes marcadores foram arrastados incorretamente: {$a}.<br />Os marcadores destacados foram colocados nas áreas de destino corretas.<br /> Clique no marcador para visualizar a área correta em destaque.';
+$string['formerror_dragrequired'] = 'Tem de adicionar pelo menos um marcador a esta pergunta.';
+$string['formerror_droprequired'] = 'Tem de definir pelo menos uma área para largar para esta pergunta.';
 $string['formerror_nobgimage'] = 'É necessário selecionar uma imagem para utilizar como fundo, para a área de arrastar e largar.';
 $string['formerror_noitemselected'] = 'Especificou uma área para largar, mas não escolheu o marcador que deverá ser arrastado para essa área.';
 $string['formerror_nosemicolons'] = 'Não existem pontos e vírgulas a separar a sua sequência de coordenadas. As suas coordenadas para o {$a->shape} devem ser expressas como - {$a->coordsstring}.';
@@ -77,6 +79,7 @@ $string['noofdrags'] = 'Número';
 $string['pleasedragatleastonemarker'] = 'A sua resposta não está completa; deverá arrastar pelo menos um marcador para a imagem.';
 $string['pluginname'] = 'Arrastar e largar numa área';
 $string['pluginname_help'] = 'As perguntas do tipo arrastar e largar numa área necessitam que os alunos arrastem quadros de texto, e os larguem numa área para largar predefinida numa imagem de fundo.';
+$string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = 'Adicionar pergunta do tipo arrastar e largar numa área';
 $string['pluginnameediting'] = 'Editar pergunta do tipo arrastar e largar numa área';
 $string['pluginnamesummary'] = 'Os marcadores podem ser arrastados e largados em zonas predefinidas para largar, numa imagem de fundo.

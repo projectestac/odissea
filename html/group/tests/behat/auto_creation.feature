@@ -37,8 +37,7 @@ Feature: Automatic creation of groups
       | student10 | C1 | student | 0 |
       | suspendedstudent11 | C1 | student | 1 |
     And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    And I navigate to "Users > Groups" in current page administration
+    And I am on the "Course 1" "groups" page
     When I press "Auto-create groups"
     And I expand all fieldsets
 
@@ -67,7 +66,7 @@ Feature: Automatic creation of groups
     And I should see "No" in the "Group messaging" "select"
     And I press "Cancel"
     # Check groupings.
-    And I follow "Groupings"
+    And I select "Groupings" from the "jump" singleselect
     And I should see "Grouping name"
     And I click on "Show groups in grouping" "link" in the "Grouping name" "table_row"
     And the "removeselect" select box should contain "Group A"
@@ -165,14 +164,11 @@ Feature: Automatic creation of groups
 
   Scenario: Do not display 'Include only active enrolments' if user does not have the 'moodle/course:viewsuspendedusers' capability
     Given I log out
-    And I log in as "admin"
-    And I set the following system permissions of "Teacher" role:
-      | capability | permission |
-      | moodle/course:viewsuspendedusers | Prevent |
-    And I log out
+    And the following "role capability" exists:
+      | role                             | editingteacher |
+      | moodle/course:viewsuspendedusers | prevent        |
     And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    And I navigate to "Users > Groups" in current page administration
+    And I am on the "Course 1" "groups" page
     When I press "Auto-create groups"
     Then I should not see "Include only active enrolments"
     And I set the field "Group/member count" to "11"

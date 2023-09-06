@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'sv', version '3.11'.
+ * Strings for component 'cachestore_redis', language 'sv', version '4.1'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -42,12 +42,15 @@ $string['serializer_igbinary'] = 'Igbinary-serialiseraren';
 $string['serializer_php'] = 'Standard PHP-serialiseraren.';
 $string['server'] = 'Server';
 $string['server_help'] = 'Detta anger värdnamn och IP-adress för den Redis-server som ska användas.';
+$string['task_ttl'] = 'Frigör minne som används av utgångna poster i Redis-cachear';
 $string['test_password'] = 'Lösenord för testserver';
 $string['test_password_desc'] = 'Lösenord för kontroll av Redis-servern.';
 $string['test_serializer'] = 'Serialiserare';
 $string['test_serializer_desc'] = 'Serialiserare att använda för testning.';
 $string['test_server'] = 'Testserver';
 $string['test_server_desc'] = 'Redis-server att använda för testning.';
+$string['test_ttl'] = 'Testa TTL';
+$string['test_ttl_desc'] = 'Kör prestandatestet med en cache som kräver TTL (långsammare uppsättningar)';
 $string['usecompressor'] = 'Använd komprimerare';
 $string['usecompressor_help'] = 'Anger vilken komprimering som ska användas efter serialisering. Det görs på Moodle Cache API-nivå, inte på php-redis nivå.';
 $string['useserializer'] = 'Använd serialiserare';

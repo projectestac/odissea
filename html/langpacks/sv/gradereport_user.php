@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'sv', version '3.11'.
+ * Strings for component 'gradereport_user', language 'sv', version '4.1'.
  *
  * @package     gradereport_user
  * @category    string
@@ -26,10 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Betygsrapport för användare visad';
-$string['myself'] = 'Jag själv';
-$string['otheruser'] = 'Användare';
 $string['pluginname'] = 'Användarrapport';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Om rapporten ska visas som nuvarande eller en annan användare i betygsboks-rapporter';
 $string['tablesummary'] = 'Tabellen är uppbyggd som lista över graderade poster inklusive kategorier av graderade objekt. När objekten är i en kategori som de kommer att anges som sådana.';
 $string['user:view'] = 'Visa egen betygsrapport';
-$string['viewas'] = 'Visa rapport som';

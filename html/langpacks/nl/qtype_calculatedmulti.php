@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'nl', version '3.11'.
+ * Strings for component 'qtype_calculatedmulti', language 'nl', version '4.1'.
  *
  * @package     qtype_calculatedmulti
  * @category    string
@@ -29,6 +29,7 @@ $string['answeroptions'] = 'Keuze-opties';
 $string['answeroptions_help'] = 'De voorgestelde keuzeformule is ...<strong>{={x}+..}</strong>...';
 $string['pluginname'] = 'Berekend meerkeuze';
 $string['pluginname_help'] = 'Berekende meerkeuzevragen zijn zoals meerkeuzevragen waar in de keuzemogelijkheden numerieke formuleresultaten kunnen gebruikt worden door gebruik te maken van jokers tussen accolades, die vervangen worden door individuele waarden wanneer de test wordt afgenomen. Bijvoorbeeld, als de vraag "Wat is de oppervlakte van een rechthoek met lengte {l} en breedte {b}?" is, dan kan één van de keuzes {={l}*{b}} zijn (waarbij * voor vermenigvuldiging staat)';
+$string['pluginname_link'] = 'question/type/calculatedmulti';
 $string['pluginnameadding'] = 'Een berekende meerkeuzevraag toevoegen';
 $string['pluginnameediting'] = 'Berekende meerkeuzevraag bewerken';
 $string['pluginnamesummary'] = 'Berekende meerkeuzevragen zijn zoals meerkeuzevragen waar in de keuzemogelijkheden numerieke formuleresultaten kunnen gebruikt worden door gebruik te maken van jokers tussen accolades, die vervangen worden door individuele waarden wanneer de test wordt afgenomen.';

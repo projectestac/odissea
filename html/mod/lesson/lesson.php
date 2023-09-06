@@ -67,7 +67,7 @@ switch ($action) {
             echo "<p align=\"center\">\n";
             foreach ($answers as $answer) {
                 if (!$title = $DB->get_field("lesson_pages", "title", array("id" => $answer->pageid))) {
-                    print_error('cannotfindpagetitle', 'lesson');
+                    throw new \moodle_exception('cannotfindpagetitle', 'lesson');
                 }
                 echo $title."<br />\n";
             }
@@ -81,11 +81,12 @@ switch ($action) {
         $title = $DB->get_field("lesson_pages", "title", array("id" => $pageid));
 
         echo $lessonoutput->header($lesson, $cm, '', false, null, get_string('moving', 'lesson', format_String($title)));
-        echo $OUTPUT->heading(get_string("moving", "lesson", format_string($title)), 3);
+        $headinglevel = $PAGE->activityheader->get_heading_level();
+        echo $OUTPUT->heading(get_string("moving", "lesson", format_string($title)), $headinglevel);
 
         $params = array ("lessonid" => $lesson->id, "prevpageid" => 0);
         if (!$page = $DB->get_record_select("lesson_pages", "lessonid = :lessonid AND prevpageid = :prevpageid", $params)) {
-            print_error('cannotfindfirstpage', 'lesson');
+            throw new \moodle_exception('cannotfindfirstpage', 'lesson');
         }
 
         echo html_writer::start_tag('div', array('class' => 'move-page'));
@@ -109,7 +110,7 @@ switch ($action) {
             }
             if ($page->nextpageid) {
                 if (!$page = $DB->get_record("lesson_pages", array("id" => $page->nextpageid))) {
-                    print_error('cannotfindnextpage', 'lesson');
+                    throw new \moodle_exception('cannotfindnextpage', 'lesson');
                 }
             } else {
                 // last page reached
@@ -135,7 +136,7 @@ switch ($action) {
             redirect(new moodle_url('/mod/lesson/edit.php', array('id' => $cm->id)));
         break;
     default:
-        print_error('unknowaction');
+        throw new \moodle_exception('unknowaction');
         break;
 }
 

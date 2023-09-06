@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recentlyaccesseditems', language 'es', version '3.11'.
+ * Strings for component 'block_recentlyaccesseditems', language 'es', version '4.1'.
  *
  * @package     block_recentlyaccesseditems
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['moreitems'] = 'Mostrar más elementos';
 $string['noitems'] = 'Sin elementos recientes';
 $string['pluginname'] = 'Elementos accedidos recientemente';
 $string['privacy:metadata:block_recentlyaccesseditemstablesummary'] = 'El bloque de elementos accedidos recientemente almacena información sobre los elementos a los que el usuario ha accedido recientemente';

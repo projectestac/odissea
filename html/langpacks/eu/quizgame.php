@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizgame', language 'eu', version '3.11'.
+ * Strings for component 'quizgame', language 'eu', version '4.1'.
  *
  * @package     quizgame
  * @category    string

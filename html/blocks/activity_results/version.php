@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information for the block_quiz_results plugin.
+ * Version information for the block_activity_results plugin.
  *
  * @package    block_activity_results
  * @copyright  2015 Stephen Bourget
@@ -24,6 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2021051700;               // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires  = 2021051100;               // Requires this Moodle version.
+$plugin->version   = 2022112800;               // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires  = 2022111800;               // Requires this Moodle version.
 $plugin->component = 'block_activity_results'; // Full name of the plugin (used for diagnostics).

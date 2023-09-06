@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ko', version '3.11'.
+ * Strings for component 'grades', language 'ko', version '4.1'.
  *
  * @package     grades
  * @category    string
@@ -61,17 +61,22 @@ $string['aggregation_help'] = '집계는 범주안에 있는 성적들이 조합
 * 최고 성적
 * 최빈 성적 - 가장 자주 발생한 성적
 * 성적 합계 - 척도 성적을 무시하고 모든 성적 값의 합';
+$string['aggregation_link'] = 'grade/aggregation';
 $string['aggregationcoef'] = '집계 상수';
 $string['aggregationcoefextra'] = '가산 점수';
 $string['aggregationcoefextra_help'] = '집계가 성적의 합 혹은 단순 가중 평균이고, 추가 점수 체크박스가 체크되어 있으면 성적항목의 최대 점수는 범주의 최대 성적에 추가되지 않습니다. 결과적으로 모든 성적 항목에 최대 성적이 없는 범주에서 최대 성적(혹은 사이트 관리자가 활성화 하였다면 최대 아상의 성적)을 받을 가능성이 있습니다.
 
 만일 집계가 성적 평균(추가 크레딧)이고 추가점수가 0보다 큰 점수로 설정되었다면 추가크레딧은 평균을 계산한 후에 총점에 더해지기전에 성적이 곱해지는 요소가 됩니다.';
+$string['aggregationcoefextra_link'] = 'grade/aggregation';
 $string['aggregationcoefextrasum'] = '가산 점수';
 $string['aggregationcoefextrasum_help'] = '추가 점수 체크박스가 체크되어 있으면 성적항목의 최대 점수는 범주의 최대 성적에 추가되지 않습니다. 결과적으로 모든 성적 항목에 최대 성적이 없는 범주에서 최대 성적(혹은 사이트 관리자가 활성화 하였다면 최대 이상의 성적)을 받을 가능성이 있습니다.';
+$string['aggregationcoefextrasum_link'] = 'grade/aggregation';
 $string['aggregationcoefextraweight'] = '가산점 가중치';
 $string['aggregationcoefextraweight_help'] = '추가 점수 가중치가 0보다 크게 설정되면  집계시 성적이 추가 점수로 반영됩니다. 이 수는 평균을 계산하기 위해 합계에 추가되기 전에 성적이 곱해지는 값입니다.';
+$string['aggregationcoefextraweight_link'] = 'grade/aggregation';
 $string['aggregationcoefweight'] = '항목 가중치';
 $string['aggregationcoefweight_help'] = '항목 가중치는 같은 범주내의 다른 성적항목과 비교하여 항목의 중요도를 반영하기 위해 범주 집계 안에서 사용됩니다.';
+$string['aggregationcoefweight_link'] = 'grade/aggregation';
 $string['aggregationposition'] = '총계의 위치';
 $string['aggregationposition_help'] = '이 설정은 범주와 강좌 전체 열이 성적부 보고서에서 처음 혹은 나중에 표시될지를 결정합니다.';
 $string['aggregationsvisible'] = '이용가능한 집계 유형';
@@ -95,6 +100,7 @@ $string['bulkcheckboxes'] = '일괄처리 체크박스';
 $string['calculatedgrade'] = '산출된 성적';
 $string['calculation'] = '계산';
 $string['calculation_help'] = '성적 계산은 성적을 계산하기 위해 사용되는 공식입니다. 공식은 등호(=)로 시작하여야 하며 max, min, sum  과 같은 보통의 수학적 연산자를 사용해야 합니다. 필요하면 대괄호 사이에 다른 성적의  ID 번호를 입력해서 다른 성적 항목을 계산에 포함할 수 있습니다.';
+$string['calculation_link'] = 'grade/calculation';
 $string['calculationadd'] = '계산 추가';
 $string['calculationedit'] = '계산 수정';
 $string['calculationsaved'] = '계산결과 저장됨';
@@ -333,6 +339,7 @@ $string['idnumbers'] = 'ID번호';
 $string['ignore'] = '무시';
 $string['import'] = '가져오기';
 $string['importcsv'] = 'CSV 가져오기';
+$string['importcsv_link'] = 'grade/import/csv/index';
 $string['importcustom'] = '(이강좌로) 맞춤 학습성과 가져오기';
 $string['importerror'] = '오류 발생, 바른 파라메터로 스크립트가 호출되지 않았습니다.';
 $string['importfailed'] = '가져오기 실패. 아무런 데이터도 가져오지 못하였습니다.';
@@ -343,6 +350,7 @@ $string['importfrom'] = '가져올 곳';
 $string['importoutcomenofile'] = '올려진 파일이 깨졌거나 내용이 없습니다. 유효한 파일인지를 확인하기 바랍니다. 문제는 {$a} 째 줄에서 발생했으며, 이는 가져온 파일에 기대한 헤더가 존재하지 않았거나, 자료 라인에 (해더 라인인) 첫번째 줄에 나타난 칼럼수 만큼의 필드가 존재하지 않아서 벌어진 것일 수 있습니다. 연습삼아 내보낸 파일에 유효한 헤더가 존재하는지 살펴보라.';
 $string['importoutcomes'] = '학습성과 가져오기';
 $string['importoutcomes_help'] = '내보낸 방식인 csv 파일 형식으로 학습성과를 가져올 수 있음';
+$string['importoutcomes_link'] = 'grade/outcome';
 $string['importoutcomesuccess'] = '식별번호 {$a->id} "{$a->name}" 학습성과 가져옴';
 $string['importplugins'] = '플러그인 가져오기';
 $string['importpreview'] = '미리보기 가져오기';
@@ -400,6 +408,7 @@ $string['meanselection'] = '열 평균을 위해 선택된 성적들';
 $string['meanselection_help'] = '이 설정은 각 범주 혹은 성적 항목에 대하여 평균을 계산할때 점수가 없는 셀이 포함될지를 결정합니다.';
 $string['median'] = '중간값';
 $string['min'] = '최저';
+$string['minmaxtouse_link'] = 'Grades_min_max';
 $string['missingscale'] = '척도가 선택되어야 합니다.';
 $string['mode'] = '모드';
 $string['modgrade'] = '성적';

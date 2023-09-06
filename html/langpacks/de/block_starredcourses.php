@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_starredcourses', language 'de', version '3.11'.
+ * Strings for component 'block_starredcourses', language 'de', version '4.1'.
  *
  * @package     block_starredcourses
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['displaycategories'] = 'Kursbereiche anzeigen';
-$string['displaycategories_help'] = 'Zeigt die Kurskategorie bei den markierten Kursen im Block Kursübersicht an.';
+$string['displaycategories_help'] = 'Bei markierten Kursen wird der Kursbereich im Block \'Kursübersicht\' angezeigt.';
 $string['nocourses'] = 'Keine favorisierten Kurse';
 $string['pluginname'] = 'Favorisierte Kurse';
 $string['privacy:metadata'] = 'Der Block \'Favorisierte Kurse\' speichert keine personenbezogenen Daten.';

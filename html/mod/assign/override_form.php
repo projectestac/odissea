@@ -98,17 +98,17 @@ class assign_override_form extends moodleform {
         $assigninstance = $this->assign->get_instance($userid);
         $inrelativedatesmode = !empty($this->assign->get_course()->relativedatesmode);
 
-        $mform->addElement('header', 'override', get_string('override', 'assign'));
-
         $assigngroupmode = groups_get_activity_groupmode($cm);
         $accessallgroups = ($assigngroupmode == NOGROUPS) || has_capability('moodle/site:accessallgroups', $this->context);
 
         if ($this->groupmode) {
+            $mform->addElement('header', 'override', get_string('groupoverrides', 'assign'));
             // Group override.
             if ($this->groupid) {
                 // There is already a groupid, so freeze the selector.
-                $groupchoices = array();
-                $groupchoices[$this->groupid] = groups_get_group_name($this->groupid);
+                $groupchoices = [
+                    $this->groupid => format_string(groups_get_group_name($this->groupid), true, $this->context),
+                ];
                 $mform->addElement('select', 'groupid',
                         get_string('overridegroup', 'assign'), $groupchoices);
                 $mform->freeze('groupid');
@@ -123,12 +123,12 @@ class assign_override_form extends moodleform {
                 if (empty($groups)) {
                     // Generate an error.
                     $link = new moodle_url('/mod/assign/overrides.php', array('cmid' => $cm->id));
-                    print_error('groupsnone', 'assign', $link);
+                    throw new \moodle_exception('groupsnone', 'assign', $link);
                 }
 
                 $groupchoices = array();
                 foreach ($groups as $group) {
-                    $groupchoices[$group->id] = $group->name;
+                    $groupchoices[$group->id] = format_string($group->name, true, $this->context);
                 }
                 unset($groups);
 
@@ -141,6 +141,7 @@ class assign_override_form extends moodleform {
                 $mform->addRule('groupid', get_string('required'), 'required', null, 'client');
             }
         } else {
+            $mform->addElement('header', 'override', get_string('useroverrides', 'assign'));
             // User override.
             if ($this->userid) {
                 // There is already a userid, so freeze the selector.
@@ -182,7 +183,7 @@ class assign_override_form extends moodleform {
                 if (empty($users)) {
                     // Generate an error.
                     $link = new moodle_url('/mod/assign/overrides.php', array('cmid' => $cm->id));
-                    print_error('usersnone', 'assign', $link);
+                    throw new \moodle_exception('usersnone', 'assign', $link);
                 }
 
                 $userchoices = array();
@@ -268,6 +269,11 @@ class assign_override_form extends moodleform {
                 userdate($assigninstance->extensionduedate));
         }
 
+        // Time limit.
+        $mform->addElement('duration', 'timelimit',
+            get_string('timelimit', 'assign'), array('optional' => true));
+        $mform->setDefault('timelimit', $assigninstance->timelimit);
+
         // Submit buttons.
         $mform->addElement('submit', 'resetbutton',
                 get_string('reverttodefaults', 'assign'));
@@ -318,8 +324,8 @@ class assign_override_form extends moodleform {
         }
 
         if (!empty($data['allowsubmissionsfromdate']) && !empty($data['duedate'])) {
-            if ($data['duedate'] < $data['allowsubmissionsfromdate']) {
-                $errors['duedate'] = get_string('duedatevalidation', 'assign');
+            if ($data['duedate'] <= $data['allowsubmissionsfromdate']) {
+                $errors['duedate'] = get_string('duedateaftersubmissionvalidation', 'assign');
             }
         }
 
@@ -343,7 +349,7 @@ class assign_override_form extends moodleform {
 
         // Ensure that at least one assign setting was changed.
         $changed = false;
-        $keys = array('duedate', 'cutoffdate', 'allowsubmissionsfromdate');
+        $keys = array('duedate', 'cutoffdate', 'allowsubmissionsfromdate', 'timelimit');
         foreach ($keys as $key) {
             if ($data[$key] != $assigninstance->{$key}) {
                 $changed = true;

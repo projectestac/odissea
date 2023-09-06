@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'it', version '3.11'.
+ * Strings for component 'quiz_statistics', language 'it', version '4.1'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -49,7 +49,7 @@ $string['coursename'] = 'Nome corso';
 $string['detailedanalysis'] = 'Analisi più dettagliata delle risposte a questa domanda';
 $string['detailedanalysisforvariant'] = 'Analisi più dettagliata delle risposte alla variante {$a} di questa domanda';
 $string['discrimination_index'] = 'Indice di discriminazione';
-$string['discriminative_efficiency'] = 'Efficienza discriminativa';
+$string['discriminative_efficiency'] = 'Efficienza discriminante';
 $string['downloadeverything'] = 'Scarica report completo come';
 $string['duration'] = 'Aperto per';
 $string['effective_weight'] = 'Peso effettivo';
@@ -105,6 +105,7 @@ $string['quizstructureanalysis'] = 'Analisi struttura quiz';
 $string['random_guess_score'] = 'Indice delle risposte date a caso';
 $string['rangebetween'] = '{$a->min} − {$a->max}';
 $string['recalculatenow'] = 'Ricalcola ora';
+$string['recalculatetask'] = 'Ricalcola statistiche delle domande';
 $string['reportsettings'] = 'Impostazioni di calcolo delle statistiche';
 $string['response'] = 'Risposta data';
 $string['skewness'] = 'Asimmetria della distribuzione dei voti (per {$a})';

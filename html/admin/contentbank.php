@@ -42,18 +42,20 @@ $plugins = core_plugin_manager::instance()->get_plugins_of_type('contenttype');
 $sortorder = array_flip(array_keys($plugins));
 
 if (!isset($plugins[$name])) {
-    print_error('contenttypenotfound', 'error', $return, $name);
+    throw new \moodle_exception('contenttypenotfound', 'error', $return, $name);
 }
 
 switch ($action) {
     case 'disable':
         if ($plugins[$name]->is_enabled()) {
-            set_config('disabled', 1, 'contentbank_'. $name);
+            $class = \core_plugin_manager::resolve_plugininfo_class('contenttype');
+            $class::enable_plugin($name, false);
         }
         break;
     case 'enable':
         if (!$plugins[$name]->is_enabled()) {
-            unset_config('disabled', 'contentbank_'. $name);
+            $class = \core_plugin_manager::resolve_plugininfo_class('contenttype');
+            $class::enable_plugin($name, true);
         }
         break;
     case 'up':
@@ -63,6 +65,7 @@ switch ($action) {
             $seq[$currentindex] = $seq[$currentindex - 1];
             $seq[$currentindex - 1] = $name;
             set_config('contentbank_plugins_sortorder', implode(',', $seq));
+            core_plugin_manager::reset_caches();
         }
         break;
     case 'down':
@@ -72,10 +75,10 @@ switch ($action) {
             $seq[$currentindex] = $seq[$currentindex + 1];
             $seq[$currentindex + 1] = $name;
             set_config('contentbank_plugins_sortorder', implode(',', $seq));
+            core_plugin_manager::reset_caches();
         }
         break;
 }
-core_plugin_manager::reset_caches();
 $cache = cache::make('core', 'contentbank_enabled_extensions');
 $cache->purge();
 $cache = cache::make('core', 'contentbank_context_extensions');

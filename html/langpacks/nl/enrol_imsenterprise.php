@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'nl', version '3.11'.
+ * Strings for component 'enrol_imsenterprise', language 'nl', version '4.1'.
  *
  * @package     enrol_imsenterprise
  * @category    string
@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'Als je instellingen bewaard zijn, wil je misschien';
-$string['allowunenrol'] = 'Laat IMS data toe om leraars en leerlingen <strong>af te melden</strong>';
+$string['allowunenrol'] = 'Laat IMS data toe om leraren en leerlingen af te melden';
 $string['allowunenrol_desc'] = 'Indien ingeschakeld, zullen aanmeldingen in cursussen verwijderd worden wanneer dit opgegeven is in de Enterprise Data';
 $string['basicsettings'] = 'Basisinstellingen';
 $string['categoryidnumber'] = 'Categorie ID-nummer toestaan';
-$string['categoryidnumber_desc'] = 'Indien ingeschakeld zal IMS Enterprice een categorie maken met een ID-nummer';
+$string['categoryidnumber_desc'] = 'Indien ingeschakeld zal IMS Enterprise een categorie maken met een ID-nummer.';
 $string['categoryseparator'] = 'Teken voor categoriescheiding';
-$string['categoryseparator_desc'] = 'Vereist wanneer "categorienummer" ingeschakeld is. een teken om de categorienaam en het ID-nummer van elkaar te scheiden';
+$string['categoryseparator_desc'] = 'Vereist wanneer "categorienummer toestaan" ingeschakeld is. Een teken om de categorienaam en het ID-nummer van elkaar te scheiden.';
 $string['coursesettings'] = 'Data opties van de cursus';
 $string['createnewcategories'] = 'Maak nieuwe (verborgen) cursuscategorieën indien niet gevonden in Moodle';
 $string['createnewcategories_desc'] = 'Als het  &lt;org&gt;&lt;orgunit&gt;  element in de binnenkomende gegevens van een cursus zit, dan zal de inhoud daarvan gebruikt worden om een categorie te kiezen als een cursus volledig van scratch opgebouwd wordt. De plugin zal geen bestaande cursussen in andere categorieën zetten.
@@ -44,17 +44,16 @@ $string['createnewcourses_desc'] = '<p>De IMS Enterprise aanmeldingsplugin kan n
 <p>Cursussen worden eerst gezocht op hun "IDnummer" - een alfanummeriek veld in de course tabel van Moodle, dat gebruikt kan worden om de cursus te identificeren in een Leerling Informatie Systeem bijvoorbeeld. Als dat niet gevonden wordt, dan wordt de course tabel doorzocht naar de "Korte beschrijving", die in Moodle gebruikt wordt voor het broodkruimelpad enz. (Bijde velden kunnen identiek zijn) Enkel wanneer dat zoeken mislukt, kan de plugin optioneel een nieuwe cursus creëren.</p>
 <p>Alle nieuw gegenereerde cursussen worden VERBORGEN gecreëerd. Dit om te verhinderen dat leerlingen ronddwalen in een lege cursus waarvan de leraar misschien zelfs niet weet dat die bestaat.</p>';
 $string['createnewusers'] = 'Maak gebruikersaccounts voor gebruikers die nog niet geregistreerd zijn in Moodle';
-$string['createnewusers_desc'] = '<p>IMS Enterprise aanmeldingsgegevens beschrijven een set gebruikers. Als deze instelling ingeschakeld wordt, dan kunnen accounts die niet in de databank van Moodle gevonden worden, automatisch aangemaakt worden.</p>
+$string['createnewusers_desc'] = 'IMS Enterprise aanmeldingsgegevens beschrijven een set gebruikers. Als deze instelling ingeschakeld wordt, dan kunnen accounts die niet in de databank van Moodle gevonden worden, automatisch aangemaakt worden.
 
-<p>Gebruikers worden eerst gezocht op "idnummer", en dan op Moodle gebruikersnaam.</p>
-
-
-<p>wachtwoorden woden niet geïmporteerd door de IMS Enterprise plugin. We raden aan om Moodle\'s authenticatieplugins te gebruiken om gebruikers te authenticeren</p>';
+Gebruikers worden eerst gezocht op "idnummer", en dan op Moodle gebruikersnaam. Wachtwoorden worden niet geïmporteerd door de IMS Enterprise plugin. We raden aan om authenticatieplugin te gebruiken om gebruikers te authenticeren.';
 $string['cronfrequency'] = 'Frequentie van verwerken';
 $string['deleteusers'] = 'Verwijder gebruikersaccounts indien gespecifieerd in IMS data';
 $string['deleteusers_desc'] = '<p>Met IMS Enterprise aanmeldingsgegevens kun je het verwijderen van gebruikersaccounts aangeven (als de "recstatus"-vlag op 3 gezet wordt, wat staat voor het verwijderen van een account), als deze instelling aangezet wordt.</p>
 
 <p>Zoals het in Moodle standaard is, wordt de gebruikersrecord niet verwijderd, maar wordt er een vlag gezet om aan te geven dat de account verwijderd is.</p>';
+$string['disableenrolmentandremoveallroles'] = 'Aanmeldingen schorsen en rollen verwijderen';
+$string['disableenrolonly'] = 'Aanmelding enkel schorsen';
 $string['doitnow'] = 'Doe nu een IMS Enterprise import';
 $string['emptyattribute'] = 'Laat het leeg';
 $string['filelockedmail'] = 'Het tekstbestand dat je gebruikt voor je IMS-bestand gebaseerde aanmeldingen ({$a}) kan door het cronproces niet verwijderd worden. Dit betekent gewoonlijk dat de rechten van dat bestand slecht ingesteld staan. Zet de rechten zo dat Moodle het bestand kan verwijderen, anders zal het herhaaldelijk verwerkt proberen te worden.';
@@ -74,11 +73,13 @@ $string['messageprovider:imsenterprise_enrolment'] = 'Aanmeldingsberichten IMS-E
 $string['miscsettings'] = 'Diverse';
 $string['nestedcategories'] = 'Geneste categorieën toestaan';
 $string['nestedcategories_desc'] = 'Indien ingeschakeld zal IMS Enterprice geneste categorieën maken';
+$string['noaction'] = 'Geen actie';
 $string['pluginname'] = 'IMS Enterprise bestand';
 $string['pluginname_desc'] = 'Via deze aanmeldingswijze zal er herhaaldelijk gezocht worden naar een speciaal opgemaakt tekstbestand op de plaats die je hier opgeeft. Het bestand moet voldoen aan de IMS Enterprise specificaties en moet personen, groep en lidmaatschap XML-elementen bevatten.';
 $string['privacy:metadata'] = 'De IMS Enterprise bestand aanmeldingsplugin bewaart geen persoonlijke gegevens.';
 $string['processphoto'] = 'Voeg een gebruikersfoto toe aan het profiel';
 $string['processphotowarning'] = 'Waarschuwing: bewerken van afbeeldingen kan je server behoorlijk belasten. Aangeraden wordt om deze optie niet te gebruiken wanneer je grote aantallen leerlingen wil verwerken.';
+$string['removeenrolmentandallroles'] = 'Verwijder aanmelding en rollen';
 $string['restricttarget'] = 'Verwerk alleen datea als volgend doel ie opgegeven';
 $string['restricttarget_desc'] = '<p>Een IMS Enterprise data bestand kan voor meerdere doelen gemaakt worden, bijvoorbeeld verschillende  ELO\'s of verschillende andere systemen binnen een school of universiteit. Het is mogelijk om in het bestand te specifiëren dat de data voor één of meer doelsystemen opgesteld zijn door ze te noemen in &lt;target&gt; tags binnen de &lt;properties&gt; tag.</p>
 
@@ -98,6 +99,8 @@ $string['sourcedidfallback_desc'] = 'IN IMS-gegevens stelt het veld  <sourcedid>
 Sommige leerlinginformatiesystemen kunnen geen veld <userid> leveren. Als dit het geval is, dan moet je deze instelling inschakelen om het veld <sourcedid> te gebruiken als Moodle gebruikersnaam. Als dit niet nodig is, schakel deze instelling dan niet in.';
 $string['truncatecoursecodes'] = 'Verkort cursuscodes tot deze lengte';
 $string['truncatecoursecodes_desc'] = '<p>In sommige situaties wil je misschien de cursuscodes afkorten tot een bepaalde lengte voor je ze verwerkt. Indien je dat wil, geeft je hier het aantal karakters op. Anders laat je dit tekstvak leeg en zal er niet afgekort worden.</p>';
+$string['unenrolaction'] = 'Actie bij afmelden';
+$string['unenrolaction_desc'] = 'Actie die moet ondernomen worden wanneer een gebruiker afgemeld wordt van een cursus (enkel toegepast wanneer de afmelding instelling hierboven actief is).';
 $string['updatecourses'] = 'Cursussen aanpassen';
 $string['updatecourses_desc'] = 'Indien ingeschakeld kan de IMS Enterprise aanmeldingsplugin de korte naam en de volledige naam van een cursus aanpassen (als de "recstatus"-vlag op 2 gezet is, wat staat voor een update).';
 $string['updateusers'] = 'Gebruikersaccounts met specifieke IMS-gegevens aanpassen';

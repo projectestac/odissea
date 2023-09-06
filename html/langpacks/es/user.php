@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'es', version '3.11'.
+ * Strings for component 'user', language 'es', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'secreto configurado y enviado por correo el
 $string['privacy:metadata:trackforums'] = 'Una preferencia para los foros y su seguimiento.';
 $string['privacy:metadata:trustbitmask'] = 'La máscara del bit de confianza';
 $string['privacy:metadata:url'] = 'Una URL relacionada con este usuario.';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Marca de tiempo registrada para cuando se mostró el mensaje de bienvenida al usuario por primera vez.';
 $string['privacy:metadata:user_preferences'] = 'Preferencias asociadas con el usuario dado';
 $string['privacy:metadata:user_preferences:name'] = 'Nombre de preferencia';
 $string['privacy:metadata:user_preferences:userid'] = 'El ID de usuario';
@@ -149,6 +150,11 @@ $string['privacy:privatefilespath'] = 'Archivos privados';
 $string['privacy:profileimagespath'] = 'Imágenes de perfil';
 $string['privacy:sessionpath'] = 'Datos de la sesión';
 $string['selectfiltertype'] = 'Seleccionar';
+$string['supportmessagealternative'] = 'Puede enviar un correo a {$a}.';
+$string['supportmessagenotsent'] = 'Lamentablemente su mensaje no ha podido enviarse.';
+$string['supportmessagesent'] = 'Su mensaje se envió.';
+$string['supportmessagesentforloggedoutuser'] = 'Cuidado con este mensaje. El emisor no estaba autenticado, así que no se ha confirmado su identidad.';
 $string['target:upcomingactivitiesdue'] = 'Actividades próximas pendientes';
 $string['target:upcomingactivitiesdue_help'] = 'Este destino genera recordatorios para actividades próximas pendientes.';
 $string['target:upcomingactivitiesdueinfo'] = 'Aquí se lista todo lo relacionado con las actividades próximas pendientes. Estos estudiantes han sido avisados directamente.';
+$string['userprofile'] = 'Perfil de usuario';

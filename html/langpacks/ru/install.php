@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ru', version '3.11'.
+ * Strings for component 'install', language 'ru', version '4.1'.
  *
  * @package     install
  * @category    string
@@ -46,6 +46,7 @@ $string['cliinstallfinished'] = 'Установка успешно заверш�
 $string['cliinstallheader'] = 'Программа установки Moodle {$a} в режиме командной строки';
 $string['climustagreelicense'] = 'Чтобы принять условия лицензии в неинтерактивном режиме, укажите  параметр --agree-license';
 $string['cliskipdatabase'] = 'Пропускаем установку базы данных.';
+$string['clisupportemail'] = 'Адрес электронной почты службы поддержки';
 $string['clitablesexist'] = 'Таблицы базы данных уже существуют, невозможно продолжить установку в режиме командной строки.';
 $string['compatibilitysettings'] = 'Проверка настроек PHP...';
 $string['compatibilitysettingshead'] = 'Проверка настроек PHP...';

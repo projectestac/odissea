@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'zh_cn', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'zh_cn', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -37,6 +37,7 @@ $string['fileurl'] = '远程文件网址';
 $string['fileurl_help'] = '远程文件网址字段用于从远程服务器(例如学生信息系统)获取数据。';
 $string['importxml'] = 'XML导入';
 $string['importxml_help'] = '成绩可以通过一个包含用户 ID号 和活动 ID 号的XML文件导入。为了获得正确的格式，首先导出一些成绩到 XML 文件，然后查看该文件。';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'XML 文件';
 $string['privacy:metadata'] = '从 XML 导入成绩插件不存储任何个人数据。';
 $string['xml:publish'] = '发布从 XML 导入的成绩';

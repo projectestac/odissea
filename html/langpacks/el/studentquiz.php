@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'el', version '3.11'.
+ * Strings for component 'studentquiz', language 'el', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -84,7 +84,7 @@ $string['filter'] = 'Φίλτρο';
 $string['filter_advanced_element'] = '{$a} (Προηγμένο στοιχείο)';
 $string['filter_comment_label_date'] = 'Ημερομηνία';
 $string['filter_comment_label_forename'] = 'Όνομα';
-$string['filter_comment_label_sort_by'] = 'Ταξινόμηση από:';
+$string['filter_comment_label_sort_by'] = 'Ταξινόμηση κατά:';
 $string['filter_comment_label_sort_toggle'] = 'Ταξινόμηση κατά {$a->field} {$a->type}';
 $string['filter_comment_label_surname'] = 'Επώνυμο';
 $string['filter_ishigher'] = 'Είναι υψηλότερη';
@@ -136,7 +136,7 @@ $string['mine_column_name'] = 'Δική μου';
 $string['missingparam'] = 'Μια απαιτούμενη παράμετρος λείπει ή είναι λανθασμένη';
 $string['moderator'] = 'Συντονιστής';
 $string['modulename'] = 'Κουίζ μαθητή';
-$string['modulename_link'] = 'άρθρωμα/κουίζμαθητή/εμφάνιση';
+$string['modulename_link'] = '';
 $string['modulenameplural'] = 'Κουίζ μαθητή';
 $string['more'] = 'Περισσότερα';
 $string['myattempts_column_name'] = 'Οι προσπάθειές μου';
@@ -178,18 +178,15 @@ $string['privacy:metadata:studentquiz_comment'] = 'Αποθήκευση σχολ
 $string['privacy:metadata:studentquiz_comment:comment'] = 'Σχόλιο της ερώτησης.';
 $string['privacy:metadata:studentquiz_comment:deleteuserid'] = 'Αναγνωριστικό του διαγραμμένου από χρήστη σχολίου.';
 $string['privacy:metadata:studentquiz_comment:parentid'] = 'Αναγνωριστικό γονικού σχολίου. 0: σχόλιο ανώτατου επιπέδου.';
-$string['privacy:metadata:studentquiz_comment:questionid'] = 'Αναγνωριστικό της ερώτησης.';
 $string['privacy:metadata:studentquiz_comment:userid'] = 'Αναγνωριστικό του χρήστη.';
 $string['privacy:metadata:studentquiz_comment_history:commentid'] = 'Αναγνωριστικό για το σχόλιο';
 $string['privacy:metadata:studentquiz_progress'] = 'Αποθήκευση πληροφοριών προόδου του μαθητή με αυτή την ερώτηση.';
 $string['privacy:metadata:studentquiz_progress:attempts'] = 'Αριθμός προσπαθειών να απαντηθεί αυτή η ερώτηση.';
 $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'Αριθμός σωστών απαντήσεων.';
 $string['privacy:metadata:studentquiz_progress:lastanswercorrect'] = '0: η τελευταία απάντηση ήταν λάθος ή μη ορισμένη, 1: η τελευταία απάντηση ήταν σωστή.';
-$string['privacy:metadata:studentquiz_progress:questionid'] = 'Αναγνωριστικό της ερώτησης.';
 $string['privacy:metadata:studentquiz_progress:studentquizid'] = 'Αναγνωριστικό του Κουίζ μαθητή.';
 $string['privacy:metadata:studentquiz_progress:userid'] = 'Αναγνωριστικό του χρήστη.';
 $string['privacy:metadata:studentquiz_rate'] = 'Αποθήκευση αξιολογήσεων για ερωτήσεις.';
-$string['privacy:metadata:studentquiz_rate:questionid'] = 'Αναγνωριστικό της ερώτησης.';
 $string['privacy:metadata:studentquiz_rate:rate'] = 'Αξιολόγηση για την ερώτηση.';
 $string['privacy:metadata:studentquiz_rate:userid'] = 'Αναγνωριστικό του χρήστη.';
 $string['progress_bar_caption'] = 'Η πρόοδός σας σε αυτή τη δραστηριότητα Κουίζ μαθητή';
@@ -343,7 +340,7 @@ $string['statistic_block_progress_last_attempt_incorrect'] = 'Πιο πρόσφ�
 $string['statistic_block_progress_never'] = 'Ερωτήσεις που δεν απαντήθηκαν ποτέ';
 $string['statistic_block_title'] = 'Η πρόοδός μου';
 $string['studentquiz'] = 'κουίζμαθητή';
-$string['studentquiz:addinstance'] = 'Προσθήκη νέου στιγμιότυπου για ΚουίζΜαθητή';
+$string['studentquiz:addinstance'] = 'Προσθήκη νέου στιγμιοτύπου για ΚουίζΜαθητή';
 $string['studentquiz:emailnotifyapproved'] = 'Ειδοποίηση έγκρισης ερώτησης';
 $string['studentquiz:emailnotifychanged'] = 'Ειδοποίηση τροποποίησης ερώτησης';
 $string['studentquiz:emailnotifycommentadded'] = 'Ειδοποίηση προσθήκης σχολίου';

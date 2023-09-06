@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'fr', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'fr', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,4 +30,5 @@ $string['endanswernotfound'] = 'Un caractère « } » requis est introuvable d
 $string['noanswerfound'] = 'Aucune réponse trouvée pour la question';
 $string['pluginname'] = 'Format Mot manquant';
 $string['pluginname_help'] = 'Le format mot manquat permet d\'importer des questions à partir d\'un fichier texte.';
+$string['pluginname_link'] = 'qformat/missingword';
 $string['privacy:metadata'] = 'Le plugin de format de question Mot manquant n\'enregistre aucune donnée personnelle.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'fr', version '3.11'.
+ * Strings for component 'accredible', language 'fr', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -58,6 +58,7 @@ $string['modulename'] = 'Attribuer des certificats et des badges';
 $string['modulename_help'] = 'Le module Certificat et badge d\'Accredible vous permet d\'émettre pour vos étudiants des certificats ou des badges depuis le service d\'accredible.com.
 
 Ajoutez cette activité à chaque endroit où vous souhaitez que vos étudiants puissent voir leurs certificats et leurs badges.';
+$string['modulename_link'] = 'mod/accredible/view';
 $string['modulenameplural'] = 'Attribuer des certificats/badges';
 $string['nocertificates'] = 'Il n\'y a aucun certificat/badge';
 $string['overview'] = 'Vue d\'ensemble';

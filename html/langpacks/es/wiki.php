@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'es', version '3.11'.
+ * Strings for component 'wiki', language 'es', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -106,12 +106,14 @@ $string['formatcreole'] = 'Formato Creole';
 $string['formatcreole_help'] = 'Creole es un lenguaje de marcas de wiki habitual con una barra de herramientas de edición para la inserción de las marcas apropiadas.
 
 Para crear una nueva página, escribe el nombre de la nueva página entre corchetes dobles, por ejemplo [[Página 2]].';
+$string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'Formato HTML';
 $string['formathtml_help'] = 'El editor de HTML se pueden utilizar para dar formato a contenidos. Para crear una nueva página, escriba el nombre de la página encerrada entre corchetes dobles, por ejemplo [[Página 2]].';
 $string['formatnwiki'] = 'Formato NWiki';
 $string['formatnwiki_help'] = 'Nwiki es el lenguaje de marcas del tipo de Mediawiki usado en el módulo Nwiki.
 
 Para crear una página nueva, escriba el nombre de la página dentro de corchetes dobles, p.ej., [[Página 2]].';
+$string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Historia';
 $string['history_help'] = 'Historia de las listas de enlaces a las versiones anteriores de la página.';
 $string['html'] = 'HTML';
@@ -123,10 +125,12 @@ $string['indicator:cognitivedepth'] = 'Wiki cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad de Wiki.';
 $string['indicator:cognitivedepthdef'] = 'Wiki cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades de Wiki durante este intervalo de análisis (Niveles = Sin vista, Vista, Enviar)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Wiki social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad de Wiki.';
 $string['indicator:socialbreadthdef'] = 'Wiki social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje de compromiso social ofrecido por las actividades de Wiki durante este intervalo de análisis (Niveles = Sin participación, Participante solo, Participante con otros)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = 'La página individual wiki no existe';
 $string['insertcomment'] = 'Insertar comentario';
 $string['insertimage'] = 'Inserta una imagen...';
@@ -159,6 +163,7 @@ Los wikis tienen muchos usos, como por ejemplo:
 * Para estudiantes que trabajarán en equipo en un libro en línea, creando contenidos de un tema elegido por sus tutores
 * Para la narración colaborativa o creación de poesía grupal, donde cada participante escribe una línea o un verso
 * Como un diario personal para apuntes para examen o resúmenes (wiki personal)';
+$string['modulename_link'] = 'mod/wiki/view';
 $string['modulenameplural'] = 'Wikis';
 $string['navigation'] = 'Navegación';
 $string['navigationfrom'] = 'Esta página proviene de';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_saml2', language 'ja', version '3.11'.
+ * Strings for component 'auth_saml2', language 'ja', version '4.1'.
  *
  * @package     auth_saml2
  * @category    string
@@ -31,38 +31,38 @@ $string['alterlogout'] = '代替ログアウトURL';
 $string['alterlogout_help'] = 'すべての内部ログアウト処理が実行された後にユーザをリダイレクトするためのURLです。';
 $string['anyauth'] = '許可される認証タイプ';
 $string['anyauth_help'] = 'Yes: すべてのユーザのSAMLログインを許可します。No: タイプがSAML 2.0のユーザのみログインを許可します。';
-$string['anyauthotherdisabled'] = 'あなたは「 {$a->username} 」として正常にログインしましたが、認証タイプ「 {$a->auth} 」は無効にされています。';
+$string['anyauthotherdisabled'] = 'あなたは「 {$a->username} 」として正常にログインしましたが、あなたの認証タイプ「 {$a->auth} 」は無効にされています。';
 $string['assertionsconsumerservices'] = 'アサーションコンシューマサービス';
 $string['assertionsconsumerservices_help'] = 'SPがサポートするバインディングのリストです。';
 $string['attemptsignout'] = 'IdPサインアウトを試みる';
-$string['attemptsignout_help'] = 'これはサインアウト要求を送信するためにIdPとの通信を試みます。';
+$string['attemptsignout_help'] = 'ここではサインアウト要求を送信するためにIdPとの通信を試みます。';
 $string['attrsimple'] = '属性を簡略化 する';
-$string['attrsimple_help'] = 'ADFS等の様々なIdPではurnsまたは名前空間付きxmlスキーマ名等の長い属性キーが使用されます。Yesに設定した場合、例えばhttps://schemas.xmlsoap.org/ws/2005/05/identity/claims/givennameを「givenname」にマッピングする等、これらを簡略化できます。';
+$string['attrsimple_help'] = 'ADFS等の様々なIdPではurnsまたは名前空間付きxmlスキーマ名等の長い属性キーが使用されます。この設定を有効にした場合、例えばhttps://schemas.xmlsoap.org/ws/2005/05/identity/claims/givennameを「givenname」にマッピングする等、簡略化できます。';
 $string['auth_data_mapping'] = 'データマッピング';
 $string['auth_fieldlock_expl'] = '<p><b>ロック値:</b> この設定を有効にした場合、Moodleユーザおよび管理者がフィールドを直接編集できなくなります。あなたがこのデータを外部認証システムで管理している場合、このオプションを使用してください。</p>';
 $string['auth_fieldlockfield'] = 'ロック値 ({$a})';
 $string['auth_fieldlocks'] = 'ユーザフィールドをロックする';
 $string['auth_fieldmapping'] = 'データマッピング ({$a})';
-$string['auth_saml2blockredirectdescription'] = '設定されたグループ制限に基づいてSAML2ログインにリダイレクトまたはメッセージを表示します。';
+$string['auth_saml2blockredirectdescription'] = '設定されたグループ制限に基づきSAML2ログインにリダイレクトまたはメッセージを表示します。';
 $string['auth_saml2description'] = 'SAML2アイデンティティプロバイダ (IdP) で認証する';
 $string['auth_updatelocalfield'] = 'ローカルを更新する ({$a})';
 $string['auth_updateremotefield'] = '外部を更新する ({$a})';
 $string['authncontext'] = 'AuthnContext';
-$string['authncontext_help'] = 'アサーションの拡張を許可します。必要でない場合、空白のままにしてください。';
+$string['authncontext_help'] = 'アサーション拡張を許可します。必要でない場合、空白のままにしてください。';
 $string['autocreate'] = 'ユーザ自動作成';
-$string['autocreate_help'] = 'オンデマンドでのユーザ作成を許可します。';
+$string['autocreate_help'] = 'オンデマンドでのMoodleユーザ作成を許可します。';
 $string['autologin'] = '自動ログイン';
 $string['autologin_help'] = 'ログインせずにゲストアクセスを許可するページにおいてユーザが (パッシブ認証を使用して) IdPにログインしている場合、自動的に実際のユーザアカウントでMoodleにログインします。';
 $string['autologinbycookie'] = '指定されたクッキーが存在するか、または変更されるか確認する';
 $string['autologinbysession'] = '1セッションにつき1回チェックする';
 $string['autologincookie'] = '自動ログインクッキー';
-$string['autologincookie_help'] = '自動ログインを試みるタイミングを決定するために使用されるクッキー名です (上記でクッキーのオプションが選択されている場合のみ関係します)。';
+$string['autologincookie_help'] = '自動ログインを試みるタイミングを決定するために使用されるクッキーの名称です (上でクッキーのオプションが選択されている場合のみ関係します)。';
 $string['availableidps'] = '利用可能なIdPを選択する';
 $string['availableidps_help'] = 'IdPメタデータxmlに複数のIdPエンティティが含まれる場合、あなたはユーザがログインするために利用可能なエンティティを選択する必要があります。';
 $string['blockredirectheading'] = 'アカウントブロック動作';
 $string['cannotmapfield'] = 'マッピングの衝突が検出されました - 2つのフィールドが同じ評定項目 {$a} にマッピングされます。';
 $string['certificate'] = '証明書を再生成する';
-$string['certificate_help'] = 'このSPが使用する秘密鍵および証明書を再生成します。| <a href=\'{$a}\'>SP証明書を表示する</a>';
+$string['certificate_help'] = 'このSPが使用する秘密鍵および証明書を再生成します。 | <a href=\'{$a}\'>SP証明書を表示する</a>';
 $string['certificatedetails'] = '証明書詳細';
 $string['certificatedetailshelp'] = '<h1>SAML2自動生成公開証明書コンテンツ</h1><p>証明書のパスは次のとおりです:</p>';
 $string['certificatelock'] = '証明書をロックする';
@@ -70,24 +70,24 @@ $string['certificatelock_help'] = '証明書ロックにより一度生成され
 $string['certificatelock_locked'] = '証明書ロック済み';
 $string['certificatelock_lockedmessage'] = '現在、証明書はロックされています。';
 $string['certificatelock_regenerate'] = 'ロックされているため、証明書を再生成できません!';
-$string['certificatelock_unlock'] = '証明書をロック解除する';
+$string['certificatelock_unlock'] = '証明書のロックを解除する';
 $string['certificatelock_warning'] = '警告: あなたは証明書をロックしようとしています。本当にロックしてもよろしいですか?
 <br />
 現在、証明書はロックされていません。';
 $string['checkcertificateexpired'] = 'SAML証明書は {$a} 前に有効期限切れとなりました。';
 $string['checkcertificateexpiry'] = 'SAML証明書有効期限';
-$string['checkcertificateok'] = 'SAML証明書は {$a} に有効期限が切れます。';
-$string['checkcertificatewarn'] = 'SAML証明書は {$a} に有効期限が切れます。';
+$string['checkcertificateok'] = 'SAML証明書は {$a} で有効期限が切れます。';
+$string['checkcertificatewarn'] = 'SAML証明書は {$a} で有効期限が切れます。';
 $string['commonname'] = '一般名';
 $string['countryname'] = '国';
 $string['debug'] = 'デバッギング';
 $string['debug_help'] = '<p>ここでは追加デバッグ情報を通常のMoodleログに追加します。 | <a href=\'{$a}\'>SSP設定を表示する</a></p>';
-$string['duallogin'] = '2重ログイン';
+$string['duallogin'] = '同時ログイン';
 $string['duallogin_help'] = '<p>この設定を「Yes」にした場合、ユーザには手動およびSAMLログインボタンの両方が表示されます。この設定を「No」にした場合、常にIdPログインページに直接移動します。</p>
 <p>「パッシブモード」の場合、IdP認証済みユーザは自動的にログインします。そうでない場合、Moodleログインページに移動します。</p>
 <p>この設定を「No」にした場合、管理者は/login/index.php?saml=offで手動ログインページにアクセスできます。</p>
 <p>この設定を「Yes」にした場合、外部ページはSAMLを使用してMoodleにディープリンクできます。例) /course/view.php?id=45&saml=on</p>';
-$string['emailtaken'] = '{$a} メールアドレスがすでに登録されているため、新しいアカウントを作成できません。';
+$string['emailtaken'] = 'メールアドレス {$a} がすでに登録されているため、新しいアカウントを作成できません。';
 $string['emailtakenupdate'] = 'メールアドレス {$a} がすでに登録されているため、あなたのメールアドレスは更新されませんでした。';
 $string['error'] = 'ログインエラー';
 $string['errorinvalidautologin'] = '無効な自動ログインリクエスト';
@@ -133,7 +133,7 @@ $string['idpname_help'] = '例) myUNI - これはメタデータから検出さ�
 $string['idpnamedefault'] = 'SAML2でログインする';
 $string['idpnamedefault_varaible'] = 'SAML2 ({$a}) でログインする';
 $string['localityname'] = '所在地';
-$string['locked'] = 'ロックする';
+$string['locked'] = 'ロック済み';
 $string['logdir'] = 'ログディレクトリ';
 $string['logdir_help'] = 'SSPHPが書き込むログディレクトリです。ファイル名はsimplesamlphp.logになります。';
 $string['logdirdefault'] = '/tmp/';
@@ -147,7 +147,7 @@ $string['metadatafetchfailedstatus'] = 'メタデータ取得失敗: ステー�
 $string['metadatafetchfailedunknown'] = 'メタデータ取得失敗: 不明なcURLエラー';
 $string['multiidp:label:active'] = 'アクティブ';
 $string['multiidp:label:admin'] = '管理ユーザのみ';
-$string['multiidp:label:admin_help'] = 'このIdPを使用してログインしたユーザはを自動的にサイト管理者になります。';
+$string['multiidp:label:admin_help'] = 'このIdPを使用してログインしたユーザは自動的にサイト管理者になります。';
 $string['multiidp:label:alias'] = 'エイリアス';
 $string['multiidp:label:defaultidp'] = 'デフォルトIdP';
 $string['multiidp:label:displayname'] = '表示名';
@@ -165,14 +165,14 @@ $string['multiidpinfo'] = '<ul>
 <li>IdPにエイリアスを渡せます。/login/index.php?idpalias={alias}にアクセスした場合、エイリアスを渡して直接そのIdPを使用できます。</li>
 </ul>';
 $string['nameidasattrib'] = 'NameIDを属性として公開する';
-$string['nameidasattrib_help'] = 'NameID要求はnameid属性としてSSPHPに公開されます。';
+$string['nameidasattrib_help'] = 'NameID要求はnameidという属性としてSSPHPに公開されます。';
 $string['nameidpolicy'] = 'NameIDポリシー';
 $string['nameidpolicy_help'] = 'NameIDのポリシーです。';
 $string['noattribute'] = 'あなたは正常にログインしましたが、Moodleのアカウントに関連付けるためのあなたの「 {$a} 」属性が見つかりませんでした。';
 $string['noidpfound'] = '設定済みIdPとしてIdP「 {$a} 」が見つかりませんでした。';
 $string['nouser'] = 'あなたは「 {$a} 」として正常にログインしましたが、Moodleにアカウントがありません。';
-$string['nullprivatecert'] = 'プライベート証明書の作成に失敗しました。';
-$string['nullpubliccert'] = 'パブリック証明書の作成に失敗しました。';
+$string['nullprivatecert'] = '秘密証明書の作成に失敗しました。';
+$string['nullpubliccert'] = '公開証明書の作成に失敗しました。';
 $string['organizationalunitname'] = '組織単位';
 $string['organizationname'] = '組織';
 $string['passivemode'] = 'パッシブモード';
@@ -180,8 +180,8 @@ $string['phone1'] = '電話';
 $string['phone2'] = '携帯電話';
 $string['plugindisabled'] = 'SAML2認証プラグインは無効にされています。';
 $string['pluginname'] = 'SAML2';
-$string['privacy:no_data_reason'] = 'Saml2認証プラグインはいかなる個人データも保存しません。';
-$string['privatekeypass'] = 'プライベート証明書鍵パスワード';
+$string['privacy:no_data_reason'] = 'SAML2認証プラグインはいかなる個人データも保存しません。';
+$string['privatekeypass'] = '秘密証明書鍵パスワード';
 $string['privatekeypass_help'] = 'これはローカルMoodle証明書に署名するために使用されます。これを変更した場合、現在の証明書が無効になります。';
 $string['regenerate_submit'] = '再生成';
 $string['regenerateheader'] = '秘密鍵および証明書を再生成する';
@@ -200,7 +200,7 @@ $string['sha512'] = 'SHA512';
 $string['showidplink'] = 'IdPリンクを表示する';
 $string['showidplink_help'] = 'これによりサイト設定時にIdPリンクが表示されます。';
 $string['signaturealgorithm'] = '署名アルゴリズム';
-$string['signaturealgorithm_help'] = 'これはSAML リクエストに署名するために使用されるアルゴリズムです。警告:SHA1アルゴリズムは下位互換性のためにのみ提供されています。絶対に使用しなければならない場合を除き、これを避けて代わりに少なくともSHA256の使用をお勧めします。';
+$string['signaturealgorithm_help'] = 'これはSAMLリクエストに署名するために使用されるアルゴリズムです。警告: SHA1アルゴリズムは下位互換のためにのみ提供されています。絶対に使用しなければならない場合を除き、これを避けて代わりに少なくともSHA256の使用をお勧めします。';
 $string['source'] = 'ソース: {$a}';
 $string['spentityid'] = 'エンティティID';
 $string['spentityid_help'] = 'サービスプロバイダのエンティティIDをオーバーライドします。ほとんどの場合、空白のままにすることにより代わりに適切なデフォルトが使用されます。';
@@ -227,8 +227,8 @@ $string['tolower:lowercase'] = '小文字';
 $string['tolower_help'] = '<p>厳密: 照合時に大文字小文字を区別します (デフォルト)。</p>
 <p>小文字: 照合前にIdP属性に小文字を適用します。</p>
 <p>大文字小文字を区別しない: 照合時に大文字小文字を区別しません。</p>';
-$string['unlocked'] = 'ロック解除する';
-$string['unlockedifempty'] = '空白時にロック解除する';
+$string['unlocked'] = 'ロック解除済み';
+$string['unlockedifempty'] = '空白の場合、ロック解除済みにする';
 $string['update_never'] = 'なし';
 $string['update_oncreate'] = '作成時';
 $string['update_onlogin'] = '毎回ログイン時';

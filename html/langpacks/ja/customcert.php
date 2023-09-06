@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'ja', version '3.11'.
+ * Strings for component 'customcert', language 'ja', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -112,7 +112,6 @@ $string['height'] = '高さ';
 $string['height_help'] = 'これは証明書PDFの高さ (mm) です。ご参考までにA4サイズは高さ297mm、レターサイズは高さ279mmです。';
 $string['invalidcode'] = '無効なコードが提供されました。';
 $string['invalidcolour'] = '無効な色が選択されました。有効なHTMLカラー名、6桁または3桁の16進数カラーコードを入力してください。';
-$string['invalidelementwidth'] = '正数を入力してください。';
 $string['invalidheight'] = '高さはゼロを除く有効数字にしてください。';
 $string['invalidmargin'] = '余白はゼロを除く有効数字にしてください。';
 $string['invalidposition'] = 'ポジション {$a} には正数を選択してください。';
@@ -129,6 +128,7 @@ $string['managetemplatesdesc'] = 'このリンクによりあなたがコース�
 $string['modify'] = '修正';
 $string['modulename'] = 'カスタム証明書';
 $string['modulename_help'] = 'このモジュールではPDF証明書を動的に生成できます。';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['modulenameplural'] = 'カスタム証明書';
 $string['mycertificates'] = '私の証明書';
 $string['mycertificatesdescription'] = 'これらはメールまたは手動ダウンロードにより、あなたに発行された証明書です。';

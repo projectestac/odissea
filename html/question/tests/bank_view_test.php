@@ -16,8 +16,8 @@
 
 namespace core_question;
 
-use core_question\bank\view;
-use question_edit_contexts;
+use core_question\local\bank\question_edit_contexts;
+use core_question\local\bank\view;
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -58,7 +58,16 @@ class bank_view_test extends \advanced_testcase {
         // Generate the view.
         $view = new view($contexts, new \moodle_url('/'), $course);
         ob_start();
-        $view->display('editq', 0, 20, $cat->id . ',' . $context->id, false, false, false);
+        $pagevars = [
+            'qpage' => 0,
+            'qperpage' => DEFAULT_QUESTIONS_PER_PAGE,
+            'cat' => $cat->id . ',' . $context->id,
+            'recurse' => false,
+            'showhidden' => false,
+            'qbshowtext' => false
+
+        ];
+        $view->display($pagevars, 'editq');
         $html = ob_get_clean();
 
         // Verify the output includes the expected question.
@@ -87,9 +96,19 @@ class bank_view_test extends \advanced_testcase {
                 ['name' => 'Example question', 'category' => $cat->id]);
         $DB->set_field('question', 'qtype', 'unknownqtype', ['id' => $questiondata->id]);
 
+        // Generate the view.
         $view = new view($contexts, new \moodle_url('/'), $course);
         ob_start();
-        $view->display('editq', 0, 20, $cat->id . ',' . $context->id, false, false, false);
+        $pagevars = [
+            'qpage' => 0,
+            'qperpage' => DEFAULT_QUESTIONS_PER_PAGE,
+            'cat' => $cat->id . ',' . $context->id,
+            'recurse' => false,
+            'showhidden' => false,
+            'qbshowtext' => false
+
+        ];
+        $view->display($pagevars, 'editq');
         $html = ob_get_clean();
 
         // Mainly we are verifying that there was no fatal error.

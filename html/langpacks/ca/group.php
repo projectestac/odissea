@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ca', version '3.11'.
+ * Strings for component 'group', language 'ca', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -141,6 +141,7 @@ $string['importgroups_help'] = 'Els grups poden ser importats amb el fitxer de t
 * El primer registre conté una llista de noms de camps que defineixen el format de la resta del fitxer
 * El nom de camp requerit és groupname
 * Els camps description, enrolmentkey, picture i hidepicture són opcionals';
+$string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Inclou sols les inscripcions actives';
 $string['includeonlyactiveenrol_help'] = 'Si s\'habilita, els usuaris amb inscripció desactivada no seran inclosos als grups.';
 $string['javascriptrequired'] = 'Aquesta pàgina requereix Javascript';

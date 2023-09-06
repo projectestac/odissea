@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'ar', version '3.11'.
+ * Strings for component 'block_settings', language 'ar', version '4.1'.
  *
  * @package     block_settings
  * @category    string
@@ -29,4 +29,4 @@ $string['enabledock'] = 'إسمح للمستخدم بإرساء هذه الكت�
 $string['pluginname'] = 'الإدارة';
 $string['privacy:metadata'] = 'كتلة الإدارة تظهر فقط البيانات المخزونة في مواضع أخرى.';
 $string['settings:addinstance'] = 'إضافة كتلة جديدة للإدارة';
-$string['settings:myaddinstance'] = 'إضافة كتلة جديدة للإدارة إلى لوحة التحكم';
+$string['settings:myaddinstance'] = 'إضافة كتلة جديدة للإدارة إلى دفة القيادة';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'de', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'de', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -58,6 +58,8 @@ Die drei Formen verwenden die Koordinaten auf folgende Weise:
 Wenn Sie einen Markierungstext wählen, wird dieser Text der Form in der Vorschau hinzugefügt.';
 $string['followingarewrong'] = 'Die folgenden Markierungen wurden in den falschen Bereich gesetzt: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Die folgenden Markierungen wurden falsch gesetzt: {$a}. Hervorgehobene Markierungen werden nun an den richtigen Platzierungen gezeigt. <br />Klicken Sie auf die Markierung, um den erlaubten Bereich zu sehen.';
+$string['formerror_dragrequired'] = 'Sie müssen mindestens eine Markierung für diese Frage definieren.';
+$string['formerror_droprequired'] = 'Sie müssen mindestens einen Ablagebereich für diese Frage definieren.';
 $string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für die "Drag-and-drop"-Fläche wählen.';
 $string['formerror_noitemselected'] = 'Sie haben einen Ablegebereich festgelegt, aber keine Markierung ausgewählt, welche in den Bereich gezogen werden soll.';
 $string['formerror_nosemicolons'] = 'Ihre Koordinaten-Zeichenkette enthält keine \';\'. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordsstring} ausgedrückt werden.';
@@ -78,6 +80,7 @@ $string['noofdrags'] = 'Anzahl';
 $string['pleasedragatleastonemarker'] = 'Die Antwort ist nicht vollständig. Sie müssen mindestens eine Markierung auf das Bild setzen.';
 $string['pluginname'] = 'Drag-and-drop-Markierungen';
 $string['pluginname_help'] = '"Drag-and-drop- Markierungen" benötigen Platzhalter, um Textbausteine in die vorgesehenen Anlegebereiche auf dem Hintergrundbild verschieben zu können.';
+$string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = 'Füge "Drag-and-drop- Markierungen" hinzu';
 $string['pluginnameediting'] = 'Bearbeite "Drag-and-drop- Markierungen"';
 $string['pluginnamesummary'] = 'Markierungen werden per Drag-and-drop auf ein Hintergrundbild gezogen.

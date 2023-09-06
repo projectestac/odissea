@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'de', version '3.11'.
+ * Strings for component 'tool_dataprivacy', language 'de', version '4.1'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -240,6 +240,8 @@ $string['pluginregistrytitle'] = 'Datenschutzkonformität für Plugins';
 $string['privacy'] = 'Datenschutz';
 $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = 'Filter, die aktuell für die Seite Datenanfragen angewendet werden';
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = 'Anzahl der Datenanfragen, die eine Person auf einer Seite sehen möchte';
+$string['privacy:metadata:purpose'] = 'Informationen aus Datenzwecken, die für diese Website gemacht wurden.';
+$string['privacy:metadata:purpose:usermodified'] = 'Die ID der Person, die den Zweck geändert hat';
 $string['privacy:metadata:request'] = 'Informationen über Anfragen zur Verarbeitung  persönlicher Daten (Zugriff und Löschanfragen), die für diese Site gestellt wurden';
 $string['privacy:metadata:request:comments'] = 'Alle Nutzerkommentare, die diese Anfrage betreffen.';
 $string['privacy:metadata:request:dpocomment'] = 'Kommentare, die von den Ansprechpersonen für Datenschutzfragen zu der Anfrage gemacht wurden.';

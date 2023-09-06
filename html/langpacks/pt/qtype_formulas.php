@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_formulas', language 'pt', version '3.11'.
+ * Strings for component 'qtype_formulas', language 'pt', version '4.1'.
  *
  * @package     qtype_formulas
  * @category    string
@@ -54,6 +54,7 @@ As respostas de fórmula algébrica requerem uma string ou lista de strings como
 
 Diferentes tipos de respostas irão impor diferentes restrições ao inserir respostas, por isso, os alunos precisarão saber como inseri-los.
 O formato verifica o código da pergunta e também os informará quando o que digitarem estiver errado. Leia a documentação para mais detalhes.';
+$string['answertype_link'] = 'https://moodleformulas.org/';
 $string['answerunitmulti'] = 'Unidade da parte {$a->part}';
 $string['answerunitsingle'] = 'Unidade';
 $string['checkvarshdr'] = 'Verificar a instanciação das variáveis';
@@ -66,6 +67,7 @@ $string['correctfeedback_help'] = 'Este feedback será mostrado aos alunos que o
 $string['correctness'] = 'Critério de avaliação*';
 $string['correctness_help'] = '**Obrigatório**. Pode escolher qualquer erro relativo ou erro absoluto com um intervalo de erro. O erro relativo não pode ser usado para o tipo de resposta algébrica.
 Para uma definição precisa do erro relativo e do erro absoluto, quando há mais de um campo de resposta, consulte a documentação.';
+$string['correctness_link'] = 'https://moodleformulas.org/';
 $string['correctnessexpert'] = 'Especialista';
 $string['correctnesssimple'] = 'Modo simplificado';
 $string['defaultanswermark'] = 'Nota predefinida da parte';
@@ -156,6 +158,7 @@ Para possíveis perguntas, visite a página <a href="https://moodleformulas.org/
 Para as diferentes opções no formulário de edição abaixo, visite a página <a href="https://moodleformulas.org/">moodleformulas.org</a>.
 
 Para obter toda a informação, visite a página <a href="https://moodleformulas.org/">moodleformulas.org</a>.';
+$string['pluginname_link'] = 'question/type/formulas';
 $string['pluginnameadding'] = 'A adicionar uma pergunta de fórmulas';
 $string['pluginnameediting'] = 'A editar uma pergunta de fórmulas';
 $string['pluginnamesummary'] = 'Tipo de pergunta com valores aleatórios e respostas múltiplas
@@ -206,17 +209,20 @@ $string['vars1'] = 'Variáveis locais';
 $string['vars1_help'] = 'Pode definir aqui variáveis da mesma forma que as variáveis globais são definidas ao nível da pergunta. As variáveis definidas aqui podem ser usadas na resposta ou no feedback da parte e o seu âmbito de visibilidade é limitado à parte.';
 $string['vars2'] = 'Variáveis de avaliação';
 $string['vars2_help'] = 'Todas as variáveis locais e as respostas do aluno podem ser usadas aqui. Consulte a documentação para usos avançados.';
+$string['vars2_link'] = 'https://moodleformulas.org/';
 $string['varsdata'] = 'Conjuntos de dados instanciados';
 $string['varsglobal'] = 'Variáveis globais';
 $string['varsglobal_help'] = 'As fórmulas podem ser especificadas aqui para manipular as variáveis aleatórias instanciadas (todas as variáveis aleatórias estão disponíveis aqui).
 A lista completa de funções e operadores matemáticos são fornecidos na documentação.
 
 <pre class="prettyprint">a = 1.11111;<br>b = exp(3);<br>c = A + a + b;<br>d = sin(1.5*pi()) + c;<br>e = round(a, 0);<br>f = [0,1,2,3][A];<br>g = ["zero","um","dois","três"][A];<br>distância = sqrt(a*a + b*b);</pre>';
+$string['varsglobal_link'] = 'https://moodleformulas.org/';
 $string['varsrandom'] = 'Variáveis aleatórias';
 $string['varsrandom_help'] = 'Os novos valores aleatórios são gerados para estas variáveis no início de cada tentativa. Pode definir um conjunto de elementos para escolher:
 
 <pre class="prettyprint">A = {1,2,3};<br>C = {[1,-1], [2,-2], [3,-3]};<br>E = {10:100:10, 100, 1000};</pre>
 
 Os elementos podem ser números, strings ou listas destes. No início de uma nova tentativa, um elemento será "puxado" a partir do conjunto e atribuído à variável à esquerda. Além disso, para um conjunto de números, pode usar a notação de intervalo como 10: 100: 10 (veja o exemplo E acima). < p>';
+$string['varsrandom_link'] = 'https://moodleformulas.org/';
 $string['varsstatistics'] = 'Estatisticas';
 $string['yougotnright'] = 'Respondeu corretamente a {$a->num} parte(s) desta pergunta.';

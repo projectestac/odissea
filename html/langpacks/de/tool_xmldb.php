@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'de', version '3.11'.
+ * Strings for component 'tool_xmldb', language 'de', version '4.1'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -162,7 +162,7 @@ $string['noviolatedforeignkeysfound'] = 'Keine beschädigten Fremdschlüssel gef
 $string['nowrongdefaultsfound'] = 'Es wurden keine inkonsistenten Vorgabewerte gefunden. Die Datenbank braucht keine weiteren Aktionen.';
 $string['nowrongintsfound'] = 'Es wurden keine ungültigen Zahlenwerte (integer) gefunden. Die Datenbank braucht keine weiteren Aktionen.';
 $string['nowrongoraclesemanticsfound'] = 'Es wurden keine Orcale Tabellen mit BYTE semantics gefunden. die Datenbank benötigt keine weitere Bearbeitung.';
-$string['numberincorrectdecimals'] = 'Falsche Anzahl von Stellen (number)';
+$string['numberincorrectdecimals'] = 'Falsche Anzahl von Nachkommastellen (number)';
 $string['numberincorrectlength'] = 'Falsche Feldlänge (number)';
 $string['numberincorrectwholepart'] = 'Zu großer ganzzahliger Teil für Zahlenfeld';
 $string['pendingchanges'] = 'Hinweis: Sie haben Veränderungen in dieser Datei vorgenommen, die jederzeit gespeichert werden können.';

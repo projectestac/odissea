@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'zh_cn', version '3.11'.
+ * Strings for component 'forum', language 'zh_cn', version '4.1'.
  *
  * @package     forum
  * @category    string
@@ -32,6 +32,7 @@ $string['activityoverview'] = '有新帖';
 $string['addanewdiscussion'] = '添加一个新话题';
 $string['addanewquestion'] = '添加一个新问题';
 $string['addanewtopic'] = '添加一个新话题';
+$string['addreply'] = '添加回复';
 $string['addtofavourites'] = '标星此话题';
 $string['advancedsearch'] = '高级搜索';
 $string['alldiscussions'] = '所有话题';
@@ -74,7 +75,6 @@ $string['cannotaddsubscriber'] = '无法将 ID 为{$a}的订阅人添加到此�
 $string['cannotaddteacherforumto'] = '不能将转换后的教师讨论区实例添加到此课程的0小节';
 $string['cannotcreatediscussion'] = '不能开启新话题';
 $string['cannotcreateinstanceforteacher'] = '不能为教师讨论区建立新的课程模块实例';
-$string['cannotdeletediscussioninsinglediscussion'] = '您不能在单个简单话题讨论区中删除第一帖';
 $string['cannotdeletepost'] = '您不能删除此帖！';
 $string['cannoteditposts'] = '您不能编辑别人的帖子！';
 $string['cannotexportforum'] = '您不能导出此讨论区';
@@ -201,6 +201,7 @@ $string['discussionsplit'] = '话题已分割';
 $string['discussionsstartedby'] = '由 {$a} 发起的话题';
 $string['discussionsstartedbyrecent'] = '最近由 {$a} 发起的话题';
 $string['discussionsstartedbyuserincourse'] = '{$a->fullname}在{$a->coursename}发起的话题';
+$string['discussionsstartedincourse'] = '讨论开始于 {$a}';
 $string['discussionstartedby'] = '{$a} 发起的话题';
 $string['discussionsubscribed'] = '‎您现在已订阅了此话题。 ‎';
 $string['discussionsubscribestart'] = '此话题有新贴文时，请通知我。';
@@ -226,6 +227,8 @@ $string['duedate_help'] = '这是讨论区发帖什么时候到期。虽然这�
 $string['duedatetodisplayincalendar'] = '在日历中显示的到期日期';
 $string['eachuserforum'] = '每个人发表 1 个话题';
 $string['edit'] = '编辑';
+$string['editdiscussion'] = '编辑讨论';
+$string['editdiscussiontopic'] = '编辑讨论主题';
 $string['editedby'] = '由 {$a->name} 编辑 - 原提交时间 {$a->date}';
 $string['editedpostupdated'] = '{$a}的帖子已更新';
 $string['editing'] = '正在编辑';
@@ -376,12 +379,13 @@ $string['indicator:cognitivedepth'] = '讨论区认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在讨论区活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '讨论区认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与人已达到讨论区活动所提供的认知参与度(级别=未查看、查看、提交、查看反馈、评论反馈、查看反馈后重新提交)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '讨论区社会广度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在讨论区活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '讨论区社会广度';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔内，参与人已达到讨论区活动所提供的社会参与度(级别=没有参与，单独参与，和他人一起参与)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inforum'] = '在 {$a} 里';
-$string['inpagereplysubject'] = '回复: {$a}';
 $string['inreplyto'] = '回复{$a}';
 $string['introblog'] = '本讨论区的帖子自动拷贝自课程的博客用户。因为那些博客条目不再可用。';
 $string['intronews'] = '普通新闻与新闻通告';
@@ -458,6 +462,7 @@ $string['modulename_help'] = '在讨论区模块用户可以进行异步的讨�
 * 当作意见簿，收集助教及学生对于教材或教学方式的建议。
 * 作为一对一的个别辅导区，让师生间私密地沟通 (在讨论区中使用分隔小组，且让每人一组)。
 * 作为"脑筋急转弯"的场所，让学生提出难题和各种解决方案。';
+$string['modulename_link'] = 'mod/forum/view';
 $string['modulenameplural'] = '讨论区';
 $string['more'] = '更多';
 $string['movedmarker'] = '（移动）';
@@ -515,8 +520,6 @@ $string['numposts'] = '{$a} 条帖子';
 $string['olderdiscussions'] = '旧话题';
 $string['oldertopics'] = '旧话题';
 $string['oldpostdays'] = '几天后视为已读';
-$string['overviewnumpostssince'] = '上次登录后有 {$a} 条新帖';
-$string['overviewnumunread'] = '共{$a}个未读';
 $string['page-mod-forum-discuss'] = '讨论区模块话题树状页';
 $string['page-mod-forum-view'] = '讨论区模块主页';
 $string['page-mod-forum-x'] = '任意讨论区模块页面';
@@ -554,6 +557,7 @@ $string['posts'] = '帖子';
 $string['postsfrom'] = '帖子从';
 $string['postsmadebyuser'] = '{$a}的帖子';
 $string['postsmadebyuserincourse'] = '{$a->fullname}在{$a->coursename}中的帖子';
+$string['postsmadeincourse'] = '在 {$a} 发表的帖子';
 $string['poststo'] = '帖子到';
 $string['posttoforum'] = '发到讨论区';
 $string['posttomygroups'] = '发布副本到所有组';
@@ -628,6 +632,7 @@ $string['privatereply_help'] = '私人回复只能由被回复帖子的作者以
 $string['processingdigest'] = '正在处理用户 {$a} 的邮件摘要';
 $string['processingpost'] = '正在处理帖子 {$a}';
 $string['prune'] = '分割';
+$string['prunediscussion'] = '拆分讨论';
 $string['prunedpost'] = '此贴开启了一个新话题';
 $string['pruneheading'] = '分割此话题并将此帖移至一个新话题';
 $string['qandaforum'] = '提问与解答讨论区';
@@ -646,6 +651,7 @@ $string['replyauthorself'] = '{$a} (您)';
 $string['replyforum'] = '回复讨论区';
 $string['replyingtoauthor'] = '回复{$a}...';
 $string['replyplaceholder'] = '写您的回复...';
+$string['replypostdiscussion'] = '回帖';
 $string['replytopostbyemail'] = '您可以通过电子邮件回复。';
 $string['replytouser'] = '在回复中使用电子邮件地址';
 $string['resetdigests'] = '删除所有用户讨论区摘要偏好';
@@ -721,6 +727,7 @@ $string['subscriptionmode_help'] = '当用户订阅了讨论区时，他们将�
 * 强制订阅 - 每个人都被订阅，而且不能退订
 * 自动订阅 - 每个人最初都被订阅，但是随时可以选择是否退订
 * 禁止订阅 - 不允许订阅';
+$string['subscriptionmodeconfirm'] = '您确定要将订阅模式更改为 {$a} 吗？';
 $string['subscriptionoptional'] = '可选订阅';
 $string['subscriptions'] = '订阅';
 $string['tagarea_forum_posts'] = '讨论区帖子';

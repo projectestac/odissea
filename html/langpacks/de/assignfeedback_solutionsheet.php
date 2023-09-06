@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_solutionsheet', language 'de', version '3.11'.
+ * Strings for component 'assignfeedback_solutionsheet', language 'de', version '4.1'.
  *
  * @package     assignfeedback_solutionsheet
  * @category    string
@@ -35,6 +35,7 @@ $string['dohidesolutions'] = 'Klicken Sie hier, um die Musterlösungen vor Teiln
 $string['doshowsolutions'] = 'Klicken Sie hier, um die Musterlösungen jetzt für Teilnehmer/innen einsehbar zu machen.';
 $string['enabled'] = 'Musterlösungen';
 $string['enabled_help'] = 'Wenn diese Option aktiviert wird, können Trainer/innen ein oder mehrere Lösungsblätter für die Aufgabe hochladen.';
+$string['enabled_link'] = 'assignfeedback/solutionsheet';
 $string['fromnowon'] = 'Von jetzt an aktivieren';
 $string['fromnowon_help'] = 'Wenn diese Einstellung aktiviert wird, dann kann ein/e Trainer/in die Musterlösung direkt bei der Anlage der Aufgabe anzeigen lassen.';
 $string['hidesolutionsafter'] = 'Musterlösungen verbergen nach dem';

@@ -31,14 +31,29 @@ if (empty($settingspage) or !($settingspage instanceof admin_settingpage)) {
     if (moodle_needs_upgrading()) {
         redirect(new moodle_url('/admin/index.php'));
     } else {
-        print_error('sectionerror', 'admin', "$CFG->wwwroot/$CFG->admin/");
+        throw new \moodle_exception('sectionerror', 'admin', "$CFG->wwwroot/$CFG->admin/");
     }
     die;
 }
 
 if (!($settingspage->check_access())) {
-    print_error('accessdenied', 'admin');
+    throw new \moodle_exception('accessdenied', 'admin');
     die;
+}
+
+// If the context in the admin_settingpage object is explicitly defined and it is not system, reset the current
+// page context and use that one instead. This ensures that the proper navigation is displayed and highlighted.
+if ($settingspage->context && !$settingspage->context instanceof \context_system) {
+    $PAGE->set_context($settingspage->context);
+}
+
+$hassiteconfig = has_capability('moodle/site:config', context_system::instance());
+// Display the admin search input element in the page header if the user has the capability to change the site
+// configuration and the current page context is system.
+if ($hassiteconfig && $PAGE->context instanceof \context_system) {
+    $PAGE->add_header_action($OUTPUT->render_from_template('core_admin/header_search_input', [
+        'action' => new moodle_url('/admin/search.php'),
+    ]));
 }
 
 /// WRITING SUBMITTED DATA (IF ANY) -------------------------------------------------------------------------------
@@ -109,7 +124,7 @@ if (empty($SITE->fullname)) {
     echo $OUTPUT->render_from_template('core_admin/settings', $context);
 
 } else {
-    if ($PAGE->user_allowed_editing()) {
+    if ($PAGE->user_allowed_editing() && !$PAGE->theme->haseditswitch) {
         $url = clone($PAGE->url);
         if ($PAGE->user_is_editing()) {
             $caption = get_string('blockseditoff');
@@ -156,13 +171,8 @@ if (empty($SITE->fullname)) {
     echo $OUTPUT->render_from_template('core_admin/settings', $context);
 }
 
-$PAGE->requires->yui_module('moodle-core-formchangechecker',
-        'M.core_formchangechecker.init',
-        array(array(
-            'formid' => 'adminsettings'
-        ))
-);
-$PAGE->requires->string_for_js('changesmadereallygoaway', 'moodle');
+// Add the form change checker.
+$PAGE->requires->js_call_amd('core_form/changechecker', 'watchFormById', ['adminsettings']);
 
 if ($settingspage->has_dependencies()) {
     $opts = [

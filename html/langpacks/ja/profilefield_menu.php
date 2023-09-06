@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_menu', language 'ja', version '3.11'.
+ * Strings for component 'profilefield_menu', language 'ja', version '4.1'.
  *
  * @package     profilefield_menu
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'ドロップダウンメニュ';
-$string['privacy:metadata:profilefield_menu:data'] = 'ドロップダウンメニュユーザプロファイルフィールドのユーザデータです。';
-$string['privacy:metadata:profilefield_menu:dataformat'] = 'ドロップダウンメニュユーザプロファイルフィールドのユーザデータのフォーマットです。';
+$string['pluginname'] = 'ドロップダウンメニュー';
+$string['privacy:metadata:profilefield_menu:data'] = 'ドロップダウンメニューユーザプロファイルフィールドのユーザデータです。';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'ドロップダウンメニューユーザプロファイルフィールドのユーザデータのフォーマットです。';
 $string['privacy:metadata:profilefield_menu:fieldid'] = 'プロファイルフィールドのIDです。';
 $string['privacy:metadata:profilefield_menu:tableexplanation'] = '追加プロファイルデータです。';
-$string['privacy:metadata:profilefield_menu:userid'] = 'ドロップダウンメニュユーザプロファイルフィールドにデータが保存されるユーザのIDです。';
+$string['privacy:metadata:profilefield_menu:userid'] = 'ドロップダウンメニューユーザプロファイルフィールドにデータが保存されるユーザのIDです。';

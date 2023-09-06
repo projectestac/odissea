@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'zh_cn', version '3.11'.
+ * Strings for component 'studentquiz', language 'zh_cn', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -106,6 +106,7 @@ $string['messageprovider:minecommentdeleted'] = '我的留言被删除通知';
 $string['mine_column_name'] = '我的';
 $string['modulename'] = '学生小测验';
 $string['modulename_help'] = '学生小测验（StudentQuiz）活动允许学生为社群添加问题。 在学生小测验活动的首页，学生可以过滤问题。 他们还可以使用社群中的过滤问题练习。 教师可以选择按照分栏匿名这些问题。<br> <br> 学生小测验活动以积分奖励学生，以激励他们贡献问题和使用问题进行练习。 积分以排名表的方式列示在活动中。<br> <br>详细信息请参阅<a href="https://studentquiz.hsr.ch/docs/"> 学生小测验（StudentQuiz）文档</a>。';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = '学生小测验（StudentQuiz）';
 $string['myattempts_column_name'] = '我的尝试';
 $string['mydifficulty_column_name'] = '我的难度';

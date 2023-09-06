@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ja', version '3.11'.
+ * Strings for component 'course', language 'ja', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -49,10 +49,12 @@ $string['aria:favourite'] = 'コース星付き';
 $string['aria:favouritestab'] = '星付き活動';
 $string['aria:modulefavourite'] = '{$a} 活動に星を付ける';
 $string['aria:recommendedtab'] = '推奨活動';
+$string['browsecourseadminindex'] = 'このインデックスでコース管理を閲覧する';
+$string['browsesettingindex'] = 'このインデックスで設定を閲覧する';
 $string['completion_automatic:done'] = '完了:';
 $string['completion_automatic:failed'] = '失敗:';
-$string['completion_automatic:todo'] = 'やること:';
-$string['completion_manual:aria:done'] = '{$a} は完了マークされます。元に戻すには押してください。';
+$string['completion_automatic:todo'] = 'やるべきこと:';
+$string['completion_manual:aria:done'] = '{$a} は完了としてマークされます。元に戻すには押してください。';
 $string['completion_manual:aria:markdone'] = '{$a} を完了マークする';
 $string['completion_manual:done'] = '完了';
 $string['completion_manual:markdone'] = '完了マークする';
@@ -61,9 +63,17 @@ $string['completion_setby:auto:todo'] = 'やるべきこと: {$a->condition} ($a
 $string['completion_setby:manual:done'] = '{$a->activityname} は {$a->setby} により完了マークされます。元に戻すには押してください。';
 $string['completion_setby:manual:markdone'] = '{$a->activityname} は {$a->setby} により未完了マークされます。完了マークするには押してください。';
 $string['completionrequirements'] = '{$a} の完了条件';
+$string['courseaccess'] = 'コースアクセス';
 $string['coursealreadyfinished'] = 'コースはすでに終了しています。';
+$string['coursecontentnotification'] = 'コンテンツ変更通知を送信する';
+$string['coursecontentnotification_help'] = 'この新しいまたは変更された活動またはリソースをコース参加者に通知する場合、チェックボックスをチェックしてください。活動またはリソースにアクセスできるユーザのみ通知を受信します。';
+$string['coursecontentnotifnew'] = '{$a->coursename} 新しいコンテンツ';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename}<a href="{$a->link}">{$a->modulename}</a>がコース<a href="{$a->courselink}">{$a->coursename}</a>で新しく作成されました。</p><p><a href="{$a->notificationpreferenceslink}">あなたの通知プレファレンスを変更する</a></p>';
+$string['coursecontentnotifupdate'] = '{$a->coursename} コンテンツ変更';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename}<a href="{$a->link}">{$a->modulename}</a>がコース<a href="{$a->courselink}">{$a->coursename}</a>で変更されました。</p><p><a href="{$a->notificationpreferenceslink}">あなたの通知プレファレンスを変更する</a></p>';
 $string['coursenotyetfinished'] = 'コースはまだ終了していません。';
 $string['coursenotyetstarted'] = 'コースはまだ開始していません。';
+$string['courseparticipants'] = 'コース参加者';
 $string['coursetoolong'] = 'コースが長すぎます。';
 $string['customfield_islocked'] = 'ロック';
 $string['customfield_islocked_help'] = 'フィールドがロックされた場合、ケイパビリティ「ロック済みカスタムフィールドを修正する」のあるユーザ (デフォルトではマネージャのデフォルトロールのユーザのみ) のみコース設定でフィールドを変更できます。';
@@ -73,6 +83,11 @@ $string['customfield_visibility_help'] = 'この設定はコース一覧また�
 $string['customfield_visibletoall'] = '全員';
 $string['customfield_visibletoteachers'] = '教師';
 $string['customfieldsettings'] = '一般コースカスタムフィールド設定';
+$string['daystakingcourse'] = '受講日数';
+$string['downloadcontent'] = 'コースコンテンツダウンロードに含める';
+$string['downloadcontent_help'] = 'この活動またはリソースはダウンロード可能なコースコンテンツのZIPファイルに含めるべきですか? ファイル、フォルダ、ページ、ラベルは完全にダウンロードできます。その他の活動およびリソースは名称および説明のみダウンロードされます。このオプションを使用するにはコース設定でコースコンテンツのダウンロードを有効にする必要があります。
+
+この設定はオフライン使用のためのモバイルアプリコンテンツのダウンロードには影響しません。';
 $string['downloadcourseconfirmation'] = 'あなたは (ダウンロードできないアイテムおよび {$a} より大きなファイルを除く) コースコンテンツのZIPファイルをダウンロードしようとしています。';
 $string['downloadcoursecontent'] = 'コースコンテンツをダウンロード';
 $string['downloadcoursecontent_help'] = 'この設定ではコースコンテンツのダウンロードのケイパビリティ (デフォルトでは学生または教師ロール) のあるユーザがコースコンテンツをダウンロードできるかどうか決定します。';
@@ -82,6 +97,7 @@ $string['favourite'] = '星付きコース';
 $string['gradetopassnotset'] = 'このコースには合格点が設定されていません。合格点はコースの評定アイテム (評定表セットアップ) で設定できます。';
 $string['informationformodule'] = '{$a} 活動に関する情報';
 $string['module'] = '活動';
+$string['namewithlink'] = 'リンク付きカテゴリ名';
 $string['noaccesssincestartinfomessage'] = '{$a->userfirstname} さん
 
 <p>{$a->coursename} 内の多くの学生がコースにアクセスしていません。</p>';
@@ -95,6 +111,9 @@ $string['norecentaccessesinfomessage'] = '{$a->userfirstname} さん
 $string['noteachinginfomessage'] = '{$a->userfirstname} さん
 
 <p>次週開始予定のコースに教師または登録済み学生がいないことが確認されました。</p>';
+$string['participants:perpage'] = '1ページあたりの参加者数';
+$string['participants:perpage_help'] = 'それぞれのコースの参加者ページで1ページあたりに表示されるユーザ数です。';
+$string['participantsnavigation'] = '参加者3次ナビゲーション';
 $string['privacy:completionpath'] = 'コース完了';
 $string['privacy:favouritespath'] = 'コース星付き情報';
 $string['privacy:metadata:activityfavouritessummary'] = 'コースシステムにはユーザが活動チューザで星を付けたアイテムの情報を含みます。';

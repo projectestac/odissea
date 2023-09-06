@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exalib', language 'el', version '3.11'.
+ * Strings for component 'block_exalib', language 'el', version '4.1'.
  *
  * @package     block_exalib
  * @category    string
@@ -59,7 +59,7 @@ $string['documents'] = 'Έγγραφα';
 $string['download'] = 'Λήψη';
 $string['edit'] = 'Επεξεργασία';
 $string['edit_content'] = 'Διαχειριστείτε το περιεχόμενο της βιβλιοθήκης';
-$string['exalib:addinstance'] = 'Προσθήκη στιγμιότυπου σε μάθημα';
+$string['exalib:addinstance'] = 'Προσθήκη στιγμιοτύπου σε μάθημα';
 $string['exalib:admin'] = 'Διαχείριση όλου του περιεχομένου';
 $string['exalib:creator'] = 'Δημιουργία περιεχομένου και διαχείριση του δικού σας περιεχομένου';
 $string['exalib:open'] = 'Άνοιγμα αρχείων στο Exalib';
@@ -110,5 +110,5 @@ $string['tab_review'] = 'Εξέταση στοιχείων';
 $string['terms_of_use'] = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. αβγδεζηθικλμνξοπρστυφχωψ ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΩΨ';
 $string['title'] = 'Τίτλος';
 $string['webcasts'] = 'Ιστοεκπομπές';
-$string['welcome'] = 'Καλωσορίσατε στην Βιβλιοθήκη Exabis';
+$string['welcome'] = 'Καλώς ορίσατε στην Βιβλιοθήκη Exabis';
 $string['wholelib'] = 'Ολόκληρη βιβλιοθήκη';

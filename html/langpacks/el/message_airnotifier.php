@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'el', version '3.11'.
+ * Strings for component 'message_airnotifier', language 'el', version '4.1'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -49,6 +49,8 @@ $string['messageprovidersempty'] = 'Δεν υπάρχουν ενεργοποιη
 $string['messageproviderslow'] = 'Μόνο μερικές ειδοποιήσεις για κινητά είναι ενεργοποιημένες στις προεπιλεγμένες προτιμήσεις ειδοποιήσεων.';
 $string['moodleappsportallimitswarning'] = 'Παρακαλούμε, λάβετε υπόψη ότι ο αριθμός των συσκευών χρήστη που επιτρέπεται να λαμβάνουν ειδοποιήσεις εξαρτάται από την εγγραφή σας στην εφαρμογή κινητού Moodle. Για λεπτομέρειες, επισκεφτείτε την <a href="{$a}" target="_blank">Πύλη εφαρμογών κινητού Moodle</a>.';
 $string['nodevices'] = 'Καμία καταχωρημένη συσκευή. Οι συσκευές θα εμφανιστούν αυτόματα μετά την εγκατάσταση της εφαρμογής κινητού Moodle και την προσθήκη αυτού του ιστοτόπου.';
+$string['noemailevernotset'] = 'Το $CFG->noemailever απενεργοποιήθηκε';
+$string['noemaileverset'] = 'Το $CFG->noemailever είναι ενεργοποιημένο στο config.php. Πρέπει να ορίσετε αυτήν τη ρύθμιση σε false (ψευδής) ή να την αφαιρέσετε.';
 $string['nopermissiontomanagedevices'] = 'Δεν έχετε δικαιώματα διαχείρισης συσκευών.';
 $string['notconfigured'] = 'Ο εξυπηρετητής Airnotifier δεν έχει ρυθμιστεί, οπότε δεν μπορούν να σταλούν ειδοποιήσεις προώθησης.';
 $string['notificationsserverconfiguration'] = 'Ρυθμίσεις εξυπηρετητή ειδοποιήσεων (Airnotifier)';
@@ -60,7 +62,7 @@ $string['privacy:metadata:enabled'] = 'Εάν η συσκευή Airnotifier εί
 $string['privacy:metadata:externalpurpose'] = 'Αυτές οι πληροφορίες αποστέλλονται σε έναν απομακρυσμένο ιστότοπο για να παραδοθούν τελικά στην κινητή συσκευή του χρήστη.';
 $string['privacy:metadata:fullmessage'] = 'Το πλήρες μήνυμα.';
 $string['privacy:metadata:notification'] = 'Εάν αυτό το μήνυμα είναι ειδοποίηση.';
-$string['privacy:metadata:smallmessage'] = 'Ένα τμήμα του μηνύματος.';
+$string['privacy:metadata:smallmessage'] = 'Μια ενότητα του μηνύματος.';
 $string['privacy:metadata:subject'] = 'Η γραμμή θέματος του μηνύματος.';
 $string['privacy:metadata:tableexplanation'] = 'Εδώ αποθηκεύονται πληροφορίες για την συσκευή Airnotifier.';
 $string['privacy:metadata:userdeviceid'] = 'Η σύνδεση αναγνωριστικού προς την κινητή συσκευή του χρήστη';

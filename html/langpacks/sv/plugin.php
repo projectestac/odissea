@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'sv', version '3.11'.
+ * Strings for component 'plugin', language 'sv', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -67,6 +67,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Inga pluginmoduler av denna typ är installerade';
 $string['notdownloadable'] = 'Det går inte att hämta paketet';
 $string['notdownloadable_help'] = 'ZIP-paketet med uppdateringen kan inte laddas ned automatiskt.';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = 'Anteckningar';
 $string['notsupported'] = 'Pluginmodulen kanske inte är kompatibel med Moodle, version {$a}';
 $string['notwritable'] = 'Saknar skrivbehörighet till pluginkatalogen';
@@ -125,6 +126,8 @@ $string['type_calendartype'] = 'Kalendertyp';
 $string['type_calendartype_plural'] = 'Kalendertyper';
 $string['type_contentbank'] = 'Innehållsbank';
 $string['type_contentbank_plural'] = 'Pluginmoduler för innehållsbank';
+$string['type_contenttype'] = 'Innehållsbank';
+$string['type_contenttype_plural'] = 'Pluginmoduler för innehållsbank';
 $string['type_coursereport'] = 'Kursrapport';
 $string['type_coursereport_plural'] = 'Kursrapporter';
 $string['type_customfield'] = 'Anpassat fält';
@@ -173,6 +176,8 @@ $string['type_portfolio'] = 'Portfölj';
 $string['type_portfolio_plural'] = 'Portföljer';
 $string['type_profilefield'] = 'Profilfälttyp';
 $string['type_profilefield_plural'] = 'Profilfälttyper';
+$string['type_qbank'] = 'Pluginmodul för frågebank';
+$string['type_qbank_plural'] = 'Pluginmoduler för frågebanker';
 $string['type_qbehaviour'] = 'Frågebeteende';
 $string['type_qbehaviour_plural'] = 'Frågebeteenden';
 $string['type_qformat'] = 'Frågeimport/-export format';
@@ -222,6 +227,7 @@ $string['validationmsg_maturity'] = 'Deklarerad mognadsnivå';
 $string['validationmsg_maturity_help'] = 'Pluginmodulen kan deklarera sin mognadsnivå. Om utvecklaren anser att pluginmodulen är stabil kommer den deklarerade mognadsnivån att vara <kbd>MATURITY_STABLE</kbd>. Alla andra mognadsnivåer (t.ex. <kbd>MATURITY_ALFA</kbd> eller <kbd>MATURITY_BETA</kbd>) betraktas som instabila och en varning visas.';
 $string['validationmsg_missingcomponent'] = 'Pluginmodulen deklarerar inte sitt komponentnamn';
 $string['validationmsg_missingcomponent_help'] = 'Alla pluginmoduler måste ange sitt fullständiga komponentnamn via parametern <code>$plugin->component</code> i filen version.php.';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = 'Filnamnet på engelska språkfilen matchar inte';
 $string['validationmsg_missingexpectedlangenfile_info'] = 'Den angivna plugin-typen saknar den förväntade engelska språkfilen {$a}.';
 $string['validationmsg_missinglangenfile'] = 'Hittade ingen engelsk språkfil';

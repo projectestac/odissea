@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'nl', version '3.11'.
+ * Strings for component 'format_weeks', language 'nl', version '4.1'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Voeg weken toe';
+$string['addsections'] = 'Voeg week toe';
 $string['automaticenddate'] = 'Bereken de einddatum uit het aantal secties';
 $string['automaticenddate_help'] = 'Indien ingeschakeld zal de einddatum van de cursus automatisch berekend worden uit het aantal secties en de cursus startdatum.';
 $string['currentsection'] = 'Deze week';
@@ -33,6 +33,8 @@ $string['deletesection'] = 'Verwijder week';
 $string['editsection'] = 'Bewerk week';
 $string['editsectionname'] = 'Bewerk weeknaam';
 $string['hidefromothers'] = 'Verberg week';
+$string['indentation'] = 'Sta inspringen toe op de cursuspagina';
+$string['indentation_help'] = 'Leraren en andere gebruikers met de mogelijkheid om activiteiten te beheren toestaan om items op de cursuspagina in te laten springen.';
 $string['newsectionname'] = 'Nieuwe naam voor week {$a}';
 $string['page-course-view-weeks'] = 'Alle hoofdpagina\'s van cursussen in weekformat';
 $string['page-course-view-weeks-x'] = 'Alle cursuspagina\'s in weekopmaak';

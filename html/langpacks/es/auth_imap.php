@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_imap', language 'es', version '3.11'.
+ * Strings for component 'auth_imap', language 'es', version '4.1'.
  *
  * @package     auth_imap
  * @category    string
@@ -35,3 +35,4 @@ $string['auth_imapport_key'] = 'Puerto';
 $string['auth_imaptype'] = 'Tipo de servidor IMAP. Los servidores IMAP pueden tener diferentes tipos de identificación y negociación.';
 $string['auth_imaptype_key'] = 'Tipo';
 $string['pluginname'] = 'Usar un servidor IMAP';
+$string['privacy:metadata'] = 'El plugin de Autenticación por servidor IMAP no almacena ningun dato personal.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'de', version '3.11'.
+ * Strings for component 'cache', language 'de', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -40,6 +40,8 @@ $string['cachedef_calendar_subscriptions'] = 'Kalender Abonnements';
 $string['cachedef_capabilities'] = 'Liste von Systemrechten';
 $string['cachedef_completion'] = 'Abschlussstatus von Aktivitäten';
 $string['cachedef_config'] = 'Konfigurationseinstellungen';
+$string['cachedef_contentbank_allowed_categories'] = 'Für Nutzer/in erlaubte Kursbereiche im Inhaltsspeicher';
+$string['cachedef_contentbank_allowed_courses'] = 'Für Nutzer/in erlaubte Kurse im Inhaltsspeicher';
 $string['cachedef_contentbank_context_extensions'] = 'Erlaubte Extensions und deren Unterstützungsplugins in einem Inhaltsspeicher-Kontext';
 $string['cachedef_contentbank_enabled_extensions'] = 'Erlaubte Extensions und deren Unterstützungsplugins im Inhaltsspeicher';
 $string['cachedef_contextwithinsights'] = 'Kontext mit Einschätzungen';
@@ -50,10 +52,14 @@ $string['cachedef_coursecatrecords'] = 'Datensätze der Kursbereiche';
 $string['cachedef_coursecattree'] = 'Struktur der Kursbereiche';
 $string['cachedef_coursecompletion'] = 'Kursabschlussstatus';
 $string['cachedef_coursecontacts'] = 'Liste von Kurskontakten';
+$string['cachedef_courseeditorstate'] = 'Session Course State Cache Keys zur Erkennung von Kursänderungen im Frontend';
 $string['cachedef_coursemodinfo'] = 'Angesammelte Informationen über Module und Kursabschnitte';
+$string['cachedef_coursesectionspreferences'] = 'Einstellungen des Kursabschnitts';
 $string['cachedef_databasemeta'] = 'Metainformationen zur Datenbank';
+$string['cachedef_deprecatedcapabilities'] = 'Liste der veralteten Systemfähigkeiten';
 $string['cachedef_eventinvalidation'] = 'Termin löschen';
 $string['cachedef_externalbadges'] = 'Externe Badges einer bestimmten Person';
+$string['cachedef_file_imageinfo'] = 'Infos zu Dateiimages, z.B. Größe';
 $string['cachedef_fontawesomeiconmapping'] = 'Zuordnen von Icons für Schriftart Awesome';
 $string['cachedef_grade_categories'] = 'Abfragen der Bewertungskategorie';
 $string['cachedef_grade_letters'] = 'Notenabfragen';
@@ -77,6 +83,7 @@ $string['cachedef_postprocessedcss'] = 'Letztverarbeitetes CSS';
 $string['cachedef_presignup'] = 'Voranmeldedaten für bestimmte unregistrierte Nutzer/innen';
 $string['cachedef_questiondata'] = 'Fragedefinition';
 $string['cachedef_recommendation_favourite_course_content_items'] = 'Empfehlung von Kursinhalten';
+$string['cachedef_reportbuilder_allowed_reports'] = 'Nutzer/innen, die Berichte nach Zielgruppe zugelassen haben';
 $string['cachedef_repositories'] = 'Daten der Repositories';
 $string['cachedef_roledefs'] = 'Rollendefinitionen';
 $string['cachedef_string'] = 'Sprachstring-Cache';
@@ -85,12 +92,13 @@ $string['cachedef_tagindexbuilder'] = 'Gesuchte Objekte mit Tags';
 $string['cachedef_tags'] = 'Tag-Collections und Bereiche';
 $string['cachedef_temp_tables'] = 'Cache für temporäre Tabellen';
 $string['cachedef_user_course_content_items'] = 'Inhaltselemente pro Kurs (Aktivitäten, Ressourcen und deren Untertypen)';
-$string['cachedef_user_favourite_course_content_items'] = 'Markierte Elemente';
+$string['cachedef_user_favourite_course_content_items'] = 'Favorisierte Elemente';
 $string['cachedef_user_group_groupings'] = 'Gruppierungen und Gruppen von Nutzer/in';
 $string['cachedef_userselections'] = 'Daten, die verwendet werden, um eine Nutzerauswahl an mehreren Stellen zu verwenden';
 $string['cachedef_yuimodules'] = 'YUI Modul-Definitionen';
 $string['cachelock_file_default'] = 'Standard-Dateisperre';
 $string['cachestores'] = 'Cache-Speicher';
+$string['cacheusage'] = 'Cache-Nutzung';
 $string['caching'] = 'Caching';
 $string['canuselocalstore'] = 'Kann den lokalen Speicher verwenden';
 $string['component'] = 'Komponente';
@@ -113,6 +121,7 @@ $string['deletestore'] = 'Speicher löschen';
 $string['deletestoreconfirmation'] = 'Möchten Sie den Speicher \'{$a}\' wirklich löschen?';
 $string['deletestorehasmappings'] = 'Sie können diesen Speicherplatz nicht löschen, da es Zuordnungen für ihn gibt. Löschen Sie zuerst die Zuordnungen.';
 $string['deletestoresuccess'] = 'Der Cache-Speicher wurde erfolgreich gelöscht.';
+$string['editdefinitionmapping'] = 'Definitionszuordnung bearbeiten';
 $string['editdefinitionmappings'] = '{$a} Speicherzuordnungs-Definitionen';
 $string['editdefinitionsharing'] = 'Sharing bearbeiten für {$a}';
 $string['editmappings'] = 'Bearbeiten';
@@ -155,8 +164,6 @@ $string['pluginsummaries'] = 'Installierte Cache-Speicher';
 $string['privacy:metadata:cachestore'] = 'Das Cache-Subsystem speichert Daten vorübergehend für andere Teile von Moodle. Diese Daten sind im Cache nicht leicht zu identifizieren und sehr kurzlebig. Die Daten werden von anderen Moodle-Komponenten verarbeitet und gespeichert.';
 $string['purge'] = 'Verwerfen';
 $string['purgeagain'] = 'Noch einmal löschen';
-$string['purgedefinitionsuccess'] = 'Die abgefragte Definition wurde erfolgreich ersetzte.';
-$string['purgestoresuccess'] = 'Gewählten Speicher erfolgreich gelöscht';
 $string['purgexdefinitionsuccess'] = '"{$a->name}" Cache erfolgreich gelöscht ({$a->component}/{$a->area}).';
 $string['purgexstoresuccess'] = '"{$a->store}" Store erfolgreich gelöscht.';
 $string['requestcount'] = 'Test mit {$a} Zugriffen';
@@ -204,5 +211,14 @@ $string['tested'] = 'Geprüft';
 $string['testperformance'] = 'Performance testen';
 $string['unsupportedmode'] = 'Nichtunterstützter Modus';
 $string['untestable'] = 'Nicht prüfbar';
+$string['updatedefinitionmapping'] = 'Definitionszuordnung bearbeiten';
+$string['updatedefinitionsharing'] = 'Definitionsfreigabe bearbeiten';
+$string['usage_items'] = 'Objekte';
+$string['usage_mean'] = 'Mittlere Objektgröße';
+$string['usage_realtotal'] = 'Aktuelle Nutzung (falls bekannt)';
+$string['usage_samples'] = 'Objekte, die im Cache gesammelt sind';
+$string['usage_sd'] = 'Standardabweichung';
+$string['usage_total'] = 'Geschätzter Gesamtwert';
+$string['usage_totalmargin'] = 'Fehlerquote (95%)';
 $string['userinputsharingkey'] = 'Eigener Schlüssel für Sharing';
 $string['userinputsharingkey_help'] = 'Geben Sie hier Ihren privaten Schlüssel an. Wenn Sie weitere Speicher bei anderen Websites anlegen und Daten gemeinsam nutzen möchten, verwenden Sie immer den gleichen Schlüssel.';

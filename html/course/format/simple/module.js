@@ -14,3 +14,4 @@ M.format_simple.setIcon = function(e){
 	var img = document.getElementById("id_default_image").value;
 	document.getElementById("def_img").src = M.format_simple.icons[img];
 }
+

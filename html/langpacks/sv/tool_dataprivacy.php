@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'sv', version '3.11'.
+ * Strings for component 'tool_dataprivacy', language 'sv', version '4.1'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -164,7 +164,7 @@ $string['explanationtitle'] = 'Ikoner som används på denna sida och vad de bet
 $string['external'] = 'Extern';
 $string['externalexplanation'] = 'En extern plugin installerad på denna webbplats.';
 $string['filteroption'] = '{$a->category}: {$a->name}';
-$string['frontpagecourse'] = 'Förstasideskurs';
+$string['frontpagecourse'] = 'Startsideskurs';
 $string['gdpr_art_6_1_a_description'] = 'Den registrerade har lämnat sitt samtycke till att dennes personuppgifter behandlas för ett eller flera specifika ändamål.';
 $string['gdpr_art_6_1_a_name'] = 'Samtycke (GDPR Art. 6.1(a))';
 $string['gdpr_art_6_1_b_description'] = 'Behandlingen är nödvändig för att fullgöra ett avtal i vilket den registrerade är part eller för att vidta åtgärder på begäran av den registrerade innan ett sådant avtal ingås.';
@@ -237,6 +237,8 @@ $string['pluginregistrytitle'] = 'Sekretessefterlevnad hos installerade pluginmo
 $string['privacy'] = 'Sekretess';
 $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = 'Filter som för närvarande valts för sidan för databegäran.';
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = 'Antal dataförfrågningar användaren vill se på sidan';
+$string['privacy:metadata:purpose'] = 'Information från syften som skapats för den här webbplatsen.';
+$string['privacy:metadata:purpose:usermodified'] = 'ID för den användare som ändrade syftet';
 $string['privacy:metadata:request'] = 'Information från personuppgiftsförfrågningar (användaråtkomst och raderingsbegäranden) som gjorts för den här webbplatsen.';
 $string['privacy:metadata:request:comments'] = 'Alla användarkommentarer som följer med denna förfrågan.';
 $string['privacy:metadata:request:dpocomment'] = 'Kommentarer från personuppgiftsansvarig rörande förfrågan.';

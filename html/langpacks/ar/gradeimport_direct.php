@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'ar', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'ar', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -30,3 +30,4 @@ $string['pluginname'] = 'اللصق من الجدول';
 $string['privacy:metadata'] = 'إن ملحق استيراد التقديرات من الجداول المنسوخة لا يخزن أي بيانات شخصية.';
 $string['userdata'] = 'مساعدة في نسخ البيانات إلى هذا النموذج';
 $string['userdata_help'] = 'يمكن نسخ التقديرات من جداول ولصقها في سجل التقديرات. ينبغي أن يحتوي الجدول على عمود يمثل بيانات هوية المستخدمين - إما اسم المستخدم أو المُعرَّف أو البريد الالكتروني. ينبغي أن يحتوي كل عمود عند الاستيراد على رأس.';
+$string['userdata_link'] = 'grade/import/direct/index';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'ko', version '3.11'.
+ * Strings for component 'qtype_essay', language 'ko', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -34,6 +34,7 @@ $string['graderinfo'] = '채점자를 위한 정보';
 $string['nlines'] = '{$a} 줄';
 $string['pluginname'] = '에세이';
 $string['pluginname_help'] = '질문 (이미지 포함할 수 있음)에 답을 할 때에는 응답자는 한 두 문장으로 답을 쓸 수 있습니다. 에세이 질문이 선생님에 의해 검토되고 수동으로 채점되기 전까지는 성적이 부여되지 않을 것입니다.';
+$string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = '에세이 질문 추가';
 $string['pluginnameediting'] = '에세이 질문 편집';
 $string['pluginnamesummary'] = '몇 개의 문장 혹은 단락으로 응답하는 것을 허용합니다. 수동으로 채점되어야만 합니다.';

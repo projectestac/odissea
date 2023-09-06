@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'it', version '3.11'.
+ * Strings for component 'h5pactivity', language 'it', version '4.1'.
  *
  * @package     h5pactivity
  * @category    string
@@ -74,6 +74,7 @@ $string['grade_grademethod_help'] = 'Nel caso di valutazioni basate sul punteggi
 * Primo tentativo (eventuali altri tentativi non saranno presi in considerazione)
 * Ultimo tentativo (eventuali altri tentativi non saranno presi in considerazione)
 * Senza valutazione (il calcolo della valutazione sarà disabilitato)';
+$string['grade_h5p'] = 'Valutazione: {$a}';
 $string['grade_highest_attempt'] = 'Valutazione più alta';
 $string['grade_last_attempt'] = 'Ultimo tentativo';
 $string['grade_manual'] = 'Senza valutazione';
@@ -91,8 +92,10 @@ $string['modulename'] = 'H5P';
 $string['modulename_help'] = 'H5P è una abbreviazione di \'HTML5 Package\', ossia contenuti interattivi quali presentazioni, video, domande, quiz, eccetera. L\'attività H5P consente di inserire nel corso i contenuti H5P
 
 I tentativi di risposta a domande saranno valutati automaticamente e la valutazione sarà memorizzata nel registro delle valutazioni.';
+$string['modulename_link'] = 'mod/h5pactivity/view';
 $string['modulenameplural'] = 'H5P';
 $string['myattempts'] = 'I miei tentativi';
+$string['newsubmissions'] = 'H5P consegnato';
 $string['no_compatible_track'] = 'Questa interazione ({$a}) non fornisce informazioni di tracciamento o il tracciamento
         che fornisce non è compatibile con la versione attuale dell\'attività.';
 $string['noparticipants'] = 'Non sono presente partecipanti da visualizzare';

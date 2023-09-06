@@ -186,6 +186,12 @@ function core_myprofile_navigation(core_user\output\myprofile\tree $tree, $user,
         $tree->add_node($node);
     }
 
+    if (!isset($hiddenfields['timezone'])) {
+        $node = new core_user\output\myprofile\node('contact', 'timezone', get_string('timezone'), null, null,
+            core_date::get_user_timezone($user));
+        $tree->add_node($node);
+    }
+
     if (isset($identityfields['address']) && $user->address) {
         $node = new core_user\output\myprofile\node('contact', 'address', get_string('address'), null, null, $user->address);
         $tree->add_node($node);
@@ -293,7 +299,8 @@ function core_myprofile_navigation(core_user\output\myprofile\tree $tree, $user,
                 $groupstr = '';
                 foreach ($usergroups as $group) {
                     if ($course->groupmode == SEPARATEGROUPS and !$accessallgroups and $user->id != $USER->id) {
-                        if (!groups_is_member($group->id, $user->id)) {
+                        // In separate groups mode, I only have to see the groups shared between both users.
+                        if (!groups_is_member($group->id, $USER->id)) {
                             continue;
                         }
                     }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupselect', language 'el', version '3.11'.
+ * Strings for component 'groupselect', language 'el', version '4.1'.
  *
  * @package     groupselect
  * @category    string
@@ -76,6 +76,7 @@ $string['minmembers_icon'] = 'Η ομάδα έχει λιγότερα μέλη �
 $string['minmembers_notification'] = 'Η ομάδα σας έχει λιγότερα μέλη από όσα απαιτείται! Το ελάχιστο είναι {$a}.';
 $string['miscellaneoussettings'] = 'Διάφορες ρυθμίσεις';
 $string['modulename'] = 'Αυτο-επιλογή ομάδας';
+$string['modulename_link'] = 'mod/groupselect/view';
 $string['modulenameplural'] = 'Αυτο-επιλογές ομάδας';
 $string['nogroups'] = 'Δεν υπάρχουν διαθέσιμες ομάδες για επιλογή, λυπούμαστε.';
 $string['notavailableyet'] = 'Η επιλογή ομάδας θα είναι διαθέσιμη στις {$a}.';

@@ -1,8 +1,7 @@
 .path-mod-attendance .attbtn {
     border: 1px solid #aaa;
     border-radius: 5px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 2px;
     padding: 5px;
     display: inline-block;
 }
@@ -15,8 +14,6 @@
 
 .path-mod-attendance .attfiltercontrols {
     margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .path-mod-attendance .attfiltercontrols #currentdate {
@@ -120,9 +117,6 @@
 }
 .path-mod-attendance table.allsessions td.groupheading {
     font-weight: bold;
-}
-.path-mod-attendance .allsessionssummary > * {
-    display: inline-block;
 }
 .path-mod-attendance .allsessionssummary .float-right {
     float: right;
@@ -278,8 +272,6 @@
 }
 
 #page-mod-attendance-report .attendancereporttable {
-    overflow-x: scroll;
-    overflow-y: visible;
     padding: 0;
 }
 
@@ -297,6 +289,57 @@
 
 }
 
+#page-mod-attendance-report .attendancereporttable tr:first-of-type th,
+#page-mod-attendance-manage .attsessions_manage_table tr:first-of-type th,
+#page-mod-attendance-preferences #preferencesform tr:first-of-type th,
+#page-mod-attendance-index tr:first-of-type th {
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+#page-mod-attendance-report .attendancereporttable tr:nth-of-type(2) th {
+    position: sticky;
+    top: 3rem;
+    background: white;
+}
+
+#page-mod-attendance-report .attendancereporttable tr:first-of-type .headcol,
+#page-mod-attendance-report .attendancereporttable tr:nth-of-type(2) .headcol {
+    z-index: 1;
+}
+
 .attendancereporttable img.icon {
     padding-left: 5px;
+}
+#page-mod-attendance-password .qrcodevalid,
+#page-mod-attendance-password .qrcodeheader {
+    font-size: larger;
+}
+
+#page-mod-attendance-report .attendancereporttable .table-responsive,
+#page-mod-attendance-manage .attsessions_manage_table .table-responsive,
+#page-mod-attendance-preferences #preferencesform .table-responsive,
+#page-mod-attendance-index .table-responsive {
+    overflow-x: initial;
+}
+#page-mod-attendance-report .attendancereporttable tbody tr,
+#page-mod-attendance-manage .attsessions_manage_table tbody tr,
+#page-mod-attendance-preferences #preferencesform tbody tr,
+#page-mod-attendance-index tbody tr {
+    background-color: white;
+}
+#page-mod-attendance-report .attendancereporttable tbody tr:nth-of-type(odd),
+#page-mod-attendance-manage .attsessions_manage_table tbody tr:nth-of-type(odd),
+#page-mod-attendance-preferences #preferencesform tbody tr:nth-of-type(odd),
+#page-mod-attendance-index tbody tr:nth-of-type(odd) {
+    background-color: #f7f7f7;
+}
+
+#page-mod-attendance-preferences .form-control.studentavailability,
+.form-control.studentavailability {
+    display: none;
+    margin: 3% auto;
+    width: 50%;
+    text-align: center;
 }

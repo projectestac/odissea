@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_gradedist', language 'pt', version '3.11'.
+ * Strings for component 'gradereport_gradedist', language 'pt', version '4.1'.
  *
  * @package     gradereport_gradedist
  * @category    string
@@ -32,10 +32,10 @@ $string['actualcolumns'] = 'notas alfabéticas atuais';
 $string['actualgrade'] = 'Nota (atual)';
 $string['boundaryerror'] = 'Algumas entradas para as novas notas alfabéticas podem ser inválidas. Todas as entradas têm de estar preenchidas';
 $string['category'] = 'Categoria de nota';
-$string['changeletters'] = 'Alterar as notas alfabéticas';
+$string['changeletters'] = 'Guardar as notas alfabéticas alteradas';
 $string['chart'] = 'Gráfico';
 $string['columns'] = 'Barras';
-$string['confirm'] = 'Alteração das notas alfabéticas';
+$string['confirm'] = 'Guardar as notas alfabéticas alteradas';
 $string['confirmationtableviewed'] = 'Visualizada a tabela de confirmação';
 $string['confirmationtableviewed_description'] = 'O utilizador com o número de identificação (ID) {$a->userid} visualizou a tabela de confirmação da distribuição das notas.';
 $string['contextbuttontitle'] = 'Menu de contexto do gráfico';
@@ -86,4 +86,5 @@ $string['privacy:null_reason'] = 'Este módulo não armazena qualquer informaç�
 $string['saved'] = 'As notas alfabéticas foram alteradas com sucesso.';
 $string['showgradeitem'] = 'Mostrar item de avaliação';
 $string['showgradeitem_description'] = 'Mostra o tipo da apresentação da nota como uma escolha para o item de avaliação.';
+$string['submitanddownload'] = 'Guardar alterações';
 $string['sum'] = 'Soma';

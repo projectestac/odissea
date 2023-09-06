@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'nl', version '3.11'.
+ * Strings for component 'datafield_picture', language 'nl', version '4.1'.
  *
  * @package     datafield_picture
  * @category    string
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_invalidparam1'] = 'Breedte in enkele weergave moet een numerieke waarde zijn.';
+$string['error_invalidparam2'] = 'Hoogte in enkele weergave moet een numerieke waarde zijn.';
+$string['error_invalidparam4'] = 'Breedte in lijstweergave moet een numerieke waarde zijn.';
+$string['error_invalidparam5'] = 'Hoogte in lijstweergave moet een numerieke waarde zijn.';
 $string['fieldtypelabel'] = 'Afbeelding';
 $string['pluginname'] = 'Afbeelding';
 $string['privacy:metadata'] = 'De afbeeldingscomponent bewaart geen persoonlijke gegevens, maar gebruikt tabellen in mod_data.';
+$string['sample'] = 'Plaats voor afbeeldingsbeschrijving';

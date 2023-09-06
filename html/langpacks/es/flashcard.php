@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'flashcard', language 'es', version '3.11'.
+ * Strings for component 'flashcard', language 'es', version '4.1'.
  *
  * @package     flashcard
  * @category    string
@@ -36,3 +36,4 @@ $string['import'] = 'Importar';
 $string['imported'] = 'Importar:';
 $string['num'] = 'N°';
 $string['question'] = 'Preguntas';
+$string['teachersummary'] = 'Resumen';

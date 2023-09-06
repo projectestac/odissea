@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'sv', version '3.11'.
+ * Strings for component 'booking', language 'sv', version '4.1'.
  *
  * @package     booking
  * @category    string

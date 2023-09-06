@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'nl', version '3.11'.
+ * Strings for component 'course', language 'nl', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -49,6 +49,8 @@ $string['aria:favourite'] = 'Cursus heeft ster';
 $string['aria:favouritestab'] = 'Activiteiten met ster';
 $string['aria:modulefavourite'] = 'Ster activiteit {$a}';
 $string['aria:recommendedtab'] = 'Aanbevolen activiteiten';
+$string['browsecourseadminindex'] = 'Blader door de cursusadministratie met deze index.';
+$string['browsesettingindex'] = 'Blader door instellingen met deze index.';
 $string['completion_automatic:done'] = 'Voltooid:';
 $string['completion_automatic:failed'] = 'Mislukt:';
 $string['completion_automatic:todo'] = 'Nog te doen:';
@@ -61,9 +63,17 @@ $string['completion_setby:auto:todo'] = 'To-do: {$a->condition} (ingesteld door 
 $string['completion_setby:manual:done'] = '{$a->activityname} is door {$a->setby} als voltooid aangeduid. Klik om ongedaan te maken.';
 $string['completion_setby:manual:markdone'] = '{$a->activityname} is door {$a->setby} als niet voltooid aangeduid. Klik om als voltooid aan te duiden.';
 $string['completionrequirements'] = 'Voltooiingsvoorwaarden voor {$a}';
+$string['courseaccess'] = 'Toegang tot cursus';
 $string['coursealreadyfinished'] = 'Cursus reeds geëindigd';
+$string['coursecontentnotification'] = 'Melding van inhoudswijziging verzenden';
+$string['coursecontentnotification_help'] = 'Je kunt een melding naar de cursusgebruikers sturen over elke nieuwe of bijgewerkte bron of activiteit. Enkel gebruikers met toegang tot de activiteit of bron zullen een melding krijgen.';
+$string['coursecontentnotifnew'] = '{$a->coursename} nieuwe inhoud';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> is nieuw in de cursus <a href="{$a-> courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Wijzig je meldingsvoorkeuren</a></p>';
+$string['coursecontentnotifupdate'] = '{$a->coursename} inhoudswijziging';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> is gewijzigd in de cursus <a href="{$a- >courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Wijzig hier je meldingsvoorkeuren</a></p>';
 $string['coursenotyetfinished'] = 'De cursus is nog niet geëindigd';
 $string['coursenotyetstarted'] = 'De cursus is nog niet begonnen';
+$string['courseparticipants'] = 'Cursusdeelnemers';
 $string['coursetoolong'] = 'De cursus is te lang';
 $string['customfield_islocked'] = 'Vergrendeld';
 $string['customfield_islocked_help'] = 'Als het veld is vergrendeld, kunnen alleen gebruikers met de mogelijkheid om vergrendelde aangepaste velden te wijzigen (standaard gebruikers met alleen de standaardrol van manager) dit in de cursusinstellingen wijzigen.';
@@ -73,6 +83,11 @@ $string['customfield_visibility_help'] = 'Deze instelling bepaalt wie de aangepa
 $string['customfield_visibletoall'] = 'Iedereen';
 $string['customfield_visibletoteachers'] = 'Leraren';
 $string['customfieldsettings'] = 'Gemeenschappelijke cursusinstellingen voor aangepaste velden';
+$string['daystakingcourse'] = 'Dagen cursus';
+$string['downloadcontent'] = 'Opnemen in cursusdownloads';
+$string['downloadcontent_help'] = 'Moet deze activiteit of bron mee opgenomen worden in het zip-bestand met cursusinhoud om te downloaden? Bestand, map, pagina en label kunnen volledig gedownload worden. Voor alle ander activiteiten en bronnen kan enkel de naam en beschrijving gedownload worden. Deze optie vereist dat downloaden van cursusinhoud ingeschakeld is in de cursusinstellingen.
+
+De instelling heeft geen effect op het downloaden van inhoud op de mobiele app voor offline gebruik.';
 $string['downloadcourseconfirmation'] = 'Je gaat een zip-bestand met de cursusinhoud downloaden (zonder items die niet kunnen gedownload worden en bestanden groter dan {$a}).';
 $string['downloadcoursecontent'] = 'Download cursusinhoud';
 $string['downloadcoursecontent_help'] = 'Deze instelling bepaalt of cursusinhoud gedownload mag worden door gebruikers met de download cursus-mogelijkheid (standaard gebruikers met de leerling of leraar rol).';
@@ -82,6 +97,7 @@ $string['favourite'] = 'Favoriete cursus';
 $string['gradetopassnotset'] = 'Deze cursus heeft geen cijfer om te slagen ingesteld. Het kan worden ingesteld in het cijfer van de cursus (cijferlijst-instelling).';
 $string['informationformodule'] = 'Informatie over de activiteit {$a}';
 $string['module'] = 'Activiteit';
+$string['namewithlink'] = 'Categorienaam met link';
 $string['noaccesssincestartinfomessage'] = 'Hallo {$a->userfirstname},
 <p>Een aantal leerlingen van {$a->coursename} hebben de cursus nog nooit bezocht.</p>';
 $string['nocourseactivity'] = 'Niet genoeg cursusactiviteit tussen het begin en het einde van de cursus';
@@ -92,6 +108,9 @@ $string['norecentaccessesinfomessage'] = 'Hallo {$a->userfirstname},
 <p>Een aantal leerlingen van {$a->coursename} hebben de cursus al een hele tijd niet meer bezocht.</p>';
 $string['noteachinginfomessage'] = 'Hallo {$a->userfirstname},
 <p>Van cursussen met startdata in de volgende week is vastgesteld dat ze geen leraren- of leerlingen hebben.</p>';
+$string['participants:perpage'] = 'Aantal deelnemers per pagina';
+$string['participants:perpage_help'] = 'Het aantal gebruikers dat per pagina getoond wordt op de deelnemerspagina in elke cursus.';
+$string['participantsnavigation'] = 'Deelnemers tertiaire navigatie.';
 $string['privacy:completionpath'] = 'Cursusvoltooiing';
 $string['privacy:favouritespath'] = 'Informatie over cursus met ster';
 $string['privacy:metadata:activityfavouritessummary'] = 'Het cursussysteem bevat informatie over welke items van de activiteitenkiezer door de gebruiker zijn gemarkeerd met een ster.';

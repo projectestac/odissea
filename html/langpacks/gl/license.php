@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'gl', version '3.11'.
+ * Strings for component 'license', language 'gl', version '4.1'.
  *
  * @package     license
  * @category    string
@@ -37,4 +37,4 @@ $string['cc-sa'] = 'Creative Commons - Compartir igual';
 $string['licensenotfoundshortname'] = 'Non foi posíbel atopar unha licenza co nome curto «{$a}»';
 $string['missinglicensesortorder'] = 'Non é posíbel estabelecer a orde das licenzas, falta unha ou máis licenzas instaladas na nova orde';
 $string['public'] = 'Dominio público';
-$string['unknown'] = 'Outro';
+$string['unknown'] = 'Non se especificou a licenza';

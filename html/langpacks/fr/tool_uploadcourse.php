@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'fr', version '3.11'.
+ * Strings for component 'tool_uploadcourse', language 'fr', version '4.1'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -75,7 +75,7 @@ $string['createnew'] = 'Créer uniquement les nouveaux cours et passer les cours
 $string['createorupdate'] = 'Créer de nouveaux cours ou modifier les cours existants';
 $string['csvdelimiter'] = 'Séparateur CSV';
 $string['csvdelimiter_help'] = 'Le caractère de séparation des données de chaque enregistrement.';
-$string['csvfileerror'] = 'Le format de ce fichier CSV comporte des erreurs. Veuillez vérifier que le nombre des champs d\'entête et celui des champs des lignes suivantes correspondent et que le séparateur et l\'encodage du fichier soient correctement définis : {$a}';
+$string['csvfileerror'] = 'Le format de ce fichier CSV comporte des erreurs. Veuillez vérifier que le nombre des champs d\'en-tête et celui des champs des lignes suivantes correspondent et que le séparateur et l\'encodage du fichier soient correctement définis : {$a}';
 $string['csvline'] = 'Ligne';
 $string['customfieldinvalid'] = 'Le champ personnalisé « {$a} » est vide ou contient des données non valides';
 $string['defaultvalues'] = 'Réglages par défaut pour les cours';

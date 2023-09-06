@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'eu', version '3.11'.
+ * Strings for component 'install', language 'eu', version '4.1'.
  *
  * @package     install
  * @category    string
@@ -44,6 +44,7 @@ $string['cliinstallfinished'] = 'Instalazioa ondo burutu da.';
 $string['cliinstallheader'] = 'Moodle {$a} komando-lerro bidezko instalaziorako programa';
 $string['climustagreelicense'] = 'Modu ez-interaktiboan lizentzia onartu behar duzu --agree-license aukera zehaztuz';
 $string['cliskipdatabase'] = 'Alde batera uzten datu-basearen instalazioa.';
+$string['clisupportemail'] = 'Laguntzarako helbide elektronikoa';
 $string['clitablesexist'] = 'Datu-base taulak dagoeneko existitzen dira. CLI instalazioak ezin du jarraitu.';
 $string['compatibilitysettings'] = 'Zure PHP ezarpenak egiaztatzen...';
 $string['compatibilitysettingshead'] = 'Zure PHP ezarpenak egiaztatzen...';

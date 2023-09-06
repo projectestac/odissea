@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'sv', version '3.11'.
+ * Strings for component 'hvp', language 'sv', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -340,6 +340,7 @@ H5P gör det även möjligt att importera och exportera H5P-filer, vilket inneb�
 Användares genomföranden och poäng spåras via xAPI och finns tillgängliga i betygsboken.
 
 Du kan lägga till H5P-innehåll genom att använda det inbyggda författarverktyget, eller genom att ladda upp H5P-filer från andra webbplatser som stödjer H5P.';
+$string['modulename_link'] = 'https://h5p.org/moodle-more-help';
 $string['modulenameplural'] = 'Interaktivt innehåll';
 $string['next'] = 'Nästa';
 $string['nextpage'] = 'Nästa sida';

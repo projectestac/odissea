@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'nl', version '3.11'.
+ * Strings for component 'availability', language 'nl', version '4.1'.
  *
  * @package     availability
  * @category    string
@@ -33,8 +33,8 @@ $string['condition_group_info'] = 'Voeg een reeks geneste beperkingen toe om een
 $string['enableavailability'] = 'Beperkte toegang inschakelen';
 $string['enableavailability_desc'] = 'Wanneer dit ingeschakeld is, dan kun je voorwaarden instellen (gebaseerd op datum, cijfer, voltooid, enz) die controleren wanneer toegang tot een activiteit of bron mogelijk is.';
 $string['error_list_nochildren'] = 'Beperkingssets moeten minstens één voorwaarde bevatten.';
-$string['hidden_all'] = 'Onzichtbaar voor de gebruiker als die niet aan alle voorwaarden voldoet';
-$string['hidden_individual'] = 'Onzichtbaar voor de gebruiker als die niet aan deze voorwaarde voldoet';
+$string['hidden_all'] = 'Volledig onzichtbaar als de gebruiker niet aan alle voorwaarden voldoet';
+$string['hidden_individual'] = 'Volledig onzichtbaar als de gebruiker niet aan deze voorwaarde voldoet';
 $string['hidden_marker'] = '(verborgen)';
 $string['hide_verb'] = 'Klik om te verbergen';
 $string['invalid'] = 'Stel in';
@@ -65,7 +65,8 @@ $string['privacy:metadata'] = 'Het toegangsbeperking subsysteem bewaart geen per
 $string['restrictaccess'] = 'Beperk toegang';
 $string['restrictbygroup'] = 'Voeg toegangsrestrictie voor groep/groepering toe';
 $string['setheading'] = '{$a->number} Set van {$a->count} beperking(en)';
-$string['show_verb'] = 'Klik om te tonen is grijs';
-$string['shown_all'] = 'Wordt in het grijs getoond als de gebruiker niet aan de voorwaarden voldoet.';
-$string['shown_individual'] = 'Wordt in het grijs getoond als de gebruiker niet aan deze voorwaarde voldoet.';
+$string['show_verb'] = 'Klik om te tonen';
+$string['showmore'] = 'Toon meer';
+$string['shown_all'] = 'Wordt getoond als de gebruiker niet aan de voorwaarden voldoet';
+$string['shown_individual'] = 'Wordt getoond als de gebruiker niet aan deze voorwaarde voldoet';
 $string['unknowncondition'] = 'Onbekende voorwaarde (voorwaarde-plugin verwijderd)';

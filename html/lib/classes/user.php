@@ -534,6 +534,18 @@ class core_user {
     }
 
     /**
+     * Determine whether the given user ID is that of the current user. Useful for components implementing permission callbacks
+     * for preferences consumed by {@see fill_preferences_cache}
+     *
+     * @param stdClass $user
+     * @return bool
+     */
+    public static function is_current_user(stdClass $user): bool {
+        global $USER;
+        return $user->id == $USER->id;
+    }
+
+    /**
      * Check if the given user is an active user in the site.
      *
      * @param  stdClass  $user         user object
@@ -937,6 +949,8 @@ class core_user {
      * @return void
      */
     protected static function fill_preferences_cache() {
+        global $CFG;
+
         if (self::$preferencescache !== null) {
             return;
         }
@@ -962,22 +976,30 @@ class core_user {
             });
         $preferences['badgeprivacysetting'] = array('type' => PARAM_INT, 'null' => NULL_NOT_ALLOWED, 'default' => 1,
             'choices' => array(0, 1), 'permissioncallback' => function($user, $preferencename) {
-                global $CFG, $USER;
-                return !empty($CFG->enablebadges) && $user->id == $USER->id;
+                global $CFG;
+                return !empty($CFG->enablebadges) && self::is_current_user($user);
             });
         $preferences['blogpagesize'] = array('type' => PARAM_INT, 'null' => NULL_NOT_ALLOWED, 'default' => 10,
             'permissioncallback' => function($user, $preferencename) {
-                global $USER;
-                return $USER->id == $user->id && has_capability('moodle/blog:view', context_system::instance());
+                return self::is_current_user($user) && has_capability('moodle/blog:view', context_system::instance());
             });
-        $preferences['user_home_page_preference'] = array('type' => PARAM_INT, 'null' => NULL_ALLOWED, 'default' => HOMEPAGE_MY,
-            'choices' => array(HOMEPAGE_SITE, HOMEPAGE_MY),
+
+        $choices = [HOMEPAGE_SITE];
+        if (!empty($CFG->enabledashboard)) {
+            $choices[] = HOMEPAGE_MY;
+        }
+        $choices[] = HOMEPAGE_MYCOURSES;
+        $preferences['user_home_page_preference'] = [
+            'type' => PARAM_INT,
+            'null' => NULL_ALLOWED,
+            'default' => get_default_home_page(),
+            'choices' => $choices,
             'permissioncallback' => function ($user, $preferencename) {
-                global $CFG, $USER;
-                return $user->id == $USER->id &&
+                global $CFG;
+                return self::is_current_user($user) &&
                     (!empty($CFG->defaulthomepage) && ($CFG->defaulthomepage == HOMEPAGE_USER));
             }
-        );
+        ];
 
         // Core components that may want to define their preferences.
         // List of core components implementing callback is hardcoded here for performance reasons.
@@ -1041,7 +1063,7 @@ class core_user {
             return false;
         }
 
-        if ($user->id == $USER->id) {
+        if (self::is_current_user($user)) {
             // Editing own profile.
             $systemcontext = context_system::instance();
             return has_capability('moodle/user:editownprofile', $systemcontext);
@@ -1139,4 +1161,73 @@ class core_user {
         }
     }
 
+    /**
+     * Is the user expected to perform an action to start using Moodle properly?
+     *
+     * This covers cases such as filling the profile, changing password or agreeing to the site policy.
+     *
+     * @param stdClass $user User object, defaults to the current user.
+     * @return bool
+     */
+    public static function awaiting_action(stdClass $user = null): bool {
+        global $USER;
+
+        if ($user === null) {
+            $user = $USER;
+        }
+
+        if (user_not_fully_set_up($user)) {
+            // Awaiting the user to fill all fields in the profile.
+            return true;
+        }
+
+        if (get_user_preferences('auth_forcepasswordchange', false, $user)) {
+            // Awaiting the user to change their password.
+            return true;
+        }
+
+        if (empty($user->policyagreed) && !is_siteadmin($user)) {
+            $manager = new \core_privacy\local\sitepolicy\manager();
+
+            if ($manager->is_defined(isguestuser($user))) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Get welcome message.
+     *
+     * @return lang_string welcome message
+     */
+    public static function welcome_message(): ?lang_string {
+        global $USER;
+
+        $isloggedinas = \core\session\manager::is_loggedinas();
+        if (!isloggedin() || isguestuser() || $isloggedinas) {
+            return null;
+        }
+        if (empty($USER->core_welcome_message)) {
+            $USER->core_welcome_message = true;
+            $messagekey = 'welcomeback';
+            if (empty(get_user_preferences('core_user_welcome', null))) {
+                $messagekey = 'welcometosite';
+                set_user_preference('core_user_welcome', time());
+            }
+
+            $namefields = [
+                'fullname' => fullname($USER),
+                'alternativefullname' => fullname($USER, true),
+            ];
+
+            foreach (\core_user\fields::get_name_fields() as $namefield) {
+                $namefields[$namefield] = $USER->{$namefield};
+            }
+
+            return new lang_string($messagekey, 'core', $namefields);
+        };
+        return null;
+    }
 }

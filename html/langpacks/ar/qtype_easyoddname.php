@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyoddname', language 'ar', version '3.11'.
+ * Strings for component 'qtype_easyoddname', language 'ar', version '4.1'.
  *
  * @package     qtype_easyoddname
  * @category    string
@@ -51,6 +51,7 @@ $string['notenoughanswers'] = 'هذا النوع من الأسئلة يتطلب 
 $string['parentfunctgroup'] = 'المجموعة الوظيفية الأعلى رتبة';
 $string['pleaseenterananswer'] = 'لطفاً، أدخل الإجابة.';
 $string['pluginname'] = 'تسمية السحب والإفلات';
+$string['pluginname_link'] = 'question/type/easyoddname';
 $string['pluginnameadding'] = 'إضافة سؤال تسمية السحب والإفلات';
 $string['pluginnameediting'] = 'تحرير سؤال تسمية السحب والإفلات';
 $string['prefixes'] = 'البادئات';

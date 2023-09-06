@@ -7,15 +7,15 @@ Feature: Enable the course_list block on a course page and view it's contents
   Background:
     Given the following "categories" exist:
       | name        | category | idnumber |
-      | Category 1  | 0        | CAT1     |
-      | Category 2  | 0        | CAT2     |
-      | Category 3  | CAT2     | CAT3     |
+      | Category A  | 0        | CATA     |
+      | Category B  | 0        | CATB     |
+      | Category C  | CATB     | CATC     |
     And the following "courses" exist:
       | fullname | shortname | category |
       | Course 1 | C1        | 0        |
-      | Course 2 | C2        | CAT1     |
-      | Course 3 | C3        | CAT2     |
-      | Course 4 | C4        | CAT3     |
+      | Course 2 | C2        | CATA     |
+      | Course 3 | C3        | CATB     |
+      | Course 4 | C4        | CATC     |
     And the following "users" exist:
       | username | firstname | lastname | email                |
       | teacher1 | Teacher   | First    | teacher1@example.com |
@@ -28,17 +28,21 @@ Feature: Enable the course_list block on a course page and view it's contents
   Scenario: Add the course list block on course page and navigate to the course listing
     Given I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode on
+    And the following config values are set as admin:
+      | unaddableblocks | | theme_boost|
     When I add the "Courses" block
     Then I should see "Course 1" in the "My courses" "block"
     And I should see "Course 2" in the "My courses" "block"
     And I should see "Course 3" in the "My courses" "block"
     And I should not see "Course 4" in the "My courses" "block"
     And I follow "All courses"
-    And I should see "Miscellaneous"
+    And I should see "Category 1"
 
   Scenario: Add the course list block on course page and navigate to another course
     Given I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode on
+    And the following config values are set as admin:
+      | unaddableblocks | | theme_boost|
     When I add the "Courses" block
     Then I should see "Course 1" in the "My courses" "block"
     And I should see "Course 2" in the "My courses" "block"
@@ -50,19 +54,22 @@ Feature: Enable the course_list block on a course page and view it's contents
   Scenario: Add the course list block on course page and view as an admin
     Given I log in as "admin"
     And I am on "Course 1" course homepage with editing mode on
+    And the following config values are set as admin:
+      | unaddableblocks | | theme_boost|
     When I add the "Courses" block
-    Then I should see "Miscellaneous" in the "Course categories" "block"
-    And I should see "Category 1" in the "Course categories" "block"
-    And I should see "Category 2" in the "Course categories" "block"
-    And I should not see "Category 3" in the "Course categories" "block"
+    Then I should see "Category 1" in the "Course categories" "block"
+    And I should see "Category A" in the "Course categories" "block"
+    And I should see "Category B" in the "Course categories" "block"
+    And I should not see "Category C" in the "Course categories" "block"
     And I should not see "Course 1" in the "Course categories" "block"
     And I should not see "Course 2" in the "Course categories" "block"
     And I follow "All courses"
-    And I should see "Miscellaneous"
+    And I should see "Category 1"
 
   Scenario: View the course list block on course page with hide all courses link enabled
     Given the following config values are set as admin:
-      | block_course_list_hideallcourseslink | 1 |
+      | block_course_list_hideallcourseslink | 1 |            |
+      | unaddableblocks                      |   | theme_boost|
     And I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode on
     When I add the "Courses" block
@@ -70,18 +77,19 @@ Feature: Enable the course_list block on a course page and view it's contents
 
   Scenario: View the course list block on course page with admin sees own course enabled
     Given the following config values are set as admin:
-      | block_course_list_adminview | own |
+      | block_course_list_adminview | own |            |
+      | unaddableblocks             |     | theme_boost|
     And the following "course enrolments" exist:
       | user | course | role           |
       | admin | C1 | editingteacher |
     And I log in as "admin"
     And I am on "Course 1" course homepage with editing mode on
     When I add the "Courses" block
-    Then I should not see "Miscellaneous" in the "My courses" "block"
-    And I should not see "Category 1" in the "My courses" "block"
-    And I should not see "Category 2" in the "My courses" "block"
-    And I should not see "Category 3" in the "My courses" "block"
+    Then I should not see "Category 1" in the "My courses" "block"
+    And I should not see "Category A" in the "My courses" "block"
+    And I should not see "Category B" in the "My courses" "block"
+    And I should not see "Category C" in the "My courses" "block"
     And I should see "Course 1" in the "My courses" "block"
     And I should not see "Course 2" in the "My courses" "block"
     And I follow "All courses"
-    And I should see "Miscellaneous"
+    And I should see "Category 1"

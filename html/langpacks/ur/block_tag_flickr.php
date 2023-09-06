@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_flickr', language 'ur', version '3.11'.
+ * Strings for component 'block_tag_flickr', language 'ur', version '4.1'.
  *
  * @package     block_tag_flickr
  * @category    string
@@ -25,17 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'عنوان';
+$string['configtitle'] = 'فلکر بلاک کا عنوان';
 $string['date-posted-asc'] = 'بھیجنے کی تاریخ ترتیب نزولی';
 $string['date-posted-desc'] = 'بھیجنے کی تاریخ ترتیب صعودی';
 $string['date-taken-asc'] = 'ملنے کی تاریخ ترتیب نزولی';
 $string['date-taken-desc'] = 'ملنے کی تاریخ ترتیب صعودی';
 $string['defaulttile'] = 'فلیکر';
 $string['getfromphotoset'] = 'آئی ڈی کے ساتھ فوٹو سیٹ سے تصاویر وصول کریں';
-$string['includerelatedtags'] = 'سوال میں بالواسطہ ٹیگز شامل کرو';
+$string['includerelatedtags'] = 'استفسار میں متعلقہ ٹیگز شامل کریں';
 $string['interestingness-asc'] = 'دلچسپی ترتیب نزولی';
 $string['interestingness-desc'] = 'دلچسپی ترتیب صعودی';
 $string['numberofphotos'] = 'تصاویر کی تعداد';
 $string['pluginname'] = 'فلیکر';
+$string['privacy:metadata:block_tag_flickr'] = 'فلکر بلاک پلگ ان کوئی ذاتی ڈیٹا ذخیرہ نہیں کرتا ہے، لیکن صارف کا ڈیٹا موڈل سے ریموٹ سسٹم میں منتقل کرتا ہے۔';
+$string['privacy:metadata:block_tag_flickr:tags'] = 'فلکر امیجز کو تلاش کرنے کے لیے ٹیگ ویلیوز کو سی ایس وی فارمیٹ کے طور پر بھیجا گیا ہے۔';
 $string['relevance'] = 'ربط';
 $string['sortby'] = 'ترتیب';
+$string['tag_flickr:addinstance'] = 'ایک نیا فلکر بلاک شامل کریں';

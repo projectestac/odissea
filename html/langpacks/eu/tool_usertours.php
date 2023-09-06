@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'eu', version '3.11'.
+ * Strings for component 'tool_usertours', language 'eu', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -43,9 +43,12 @@ $string['confirmtourremovalquestion'] = 'Ziur zaude ibilaldi hau ezabatu nahi du
 $string['confirmtourremovaltitle'] = 'Baieztatu ibilaldia ezabatzea';
 $string['content'] = 'Edukia';
 $string['content_heading'] = 'Edukia';
-$string['content_help'] = 'Urratsa deskribatzen duen edukia gehi daiteke testu-soil gisa, behar izanez gero etiketa eleaniztunen barruan (eduki eleaniztunaren iragazkiarekin erabiltzeko).
-
-Bestela, hizkuntza-kate baten IDa sar daiteke identifikatzaile, osagaia formatuan (komaren ostean parentesi edo tarterik gabe).';
+$string['content_help'] = 'Urratsa deskribatzen duen edukia testu-soil gisa gehitu daiteke, etiketa eleaniztunen barruan (eduki eleaniztunaren iragazkiarekin erabiltzeko) behar izanez gero.';
+$string['content_type'] = 'Eduki mota';
+$string['content_type_help'] = '* Eskuz - edukia testu-editorea erabilita idazten da
+* Hizkuntza-katearen IDa - kate-identifikatzailea,osagaia formatua (hutsunerik gabe komaren ondoren)';
+$string['content_type_langstring'] = 'Hizkuntza-katearen IDa';
+$string['content_type_manual'] = 'Eskuz';
 $string['cssselector'] = 'CSS hautatzailea';
 $string['defaultvalue'] = 'Lehenetsitakoa ({$a})';
 $string['delay'] = 'Atzerapen-tartea urratsa erakutsi aurretik';
@@ -53,12 +56,22 @@ $string['delay_help'] = 'Nahi baduzu, urratsa erakutsi aurretiko atzerapen-tarte
 
 Atzerapen-tarte hau milisegundoetan zehazten da.';
 $string['description'] = 'Deskribapena';
+$string['description_help'] = 'Ibilaldiaren deskribapena testu soila izan daiteke, behar izanez gero etiketa eleaniztun artean (eduki eleaniztunaren iragazkietan erabilia izan dadin).
+
+Bestela, hizkuntza-kate baten IDa ere idatzi daiteke identifikatzailea,osagaia formatuarekin (gakorik eta komaren ondorengo hutsunerik gabe).';
+$string['displaystepnumbers'] = 'Erakutsi pauso-zenbakiak';
+$string['displaystepnumbers_help'] = 'Erabiltzaile-ibilaldiaren luzera adierazteko pausoen zenbakiak (1/4, 2/4...) erakutsiko diren edo ez';
 $string['done'] = 'Egin da';
 $string['duplicatetour'] = 'Bikoiztu ibilbidea';
 $string['duplicatetour_name'] = '{$a} (kopia)';
 $string['editstep'] = '"{$a}" editatzen';
 $string['enabled'] = 'Gaituta';
+$string['endonesteptour'] = 'Ulertuta';
 $string['endtour'] = 'Amaitu ibilaldia';
+$string['endtourlabel'] = 'Amaitu ibilaldia botoiaren etiketa';
+$string['endtourlabel_help'] = 'Ibilaldia amaitzeko botoiaren etiketa pertsonalizatua zehaztu dezakezu. Etiketa lehenetsia \'Ulertuta\' da pauso bakarreko ibilaldietan, eta \'Amaitu ibilaldia\' pauso anizkoitzeko ibilaldietan.
+
+Bestela, hizkuntza-kate baten IDa ere idatzi daiteke identifikatzailea,osagaia formatuarekin (gakorik eta komaren ondorengo hutsunerik gabe).';
 $string['event_step_shown'] = 'Urratsa erakutsi da';
 $string['event_tour_ended'] = 'Ibilaldia amaitu da';
 $string['event_tour_reset'] = 'Berrabiarazi ibilaldia';
@@ -85,17 +98,23 @@ $string['filter_role_help'] = 'Ibilaldi bat erakusten deneko testuinguruan erabi
 $string['filter_theme'] = 'Azala';
 $string['filter_theme_help'] = 'Erakutsi ibilaldia erabiltzailea aukeratutako azaletako bat erabiltzen ari denean.';
 $string['importtour'] = 'Inportatu ibilaldia';
+$string['invalid_lang_id'] = 'Hizkuntza-katearen ID baliogabea';
 $string['left'] = 'Ezkerrean';
 $string['modifyshippedtourwarning'] = 'Hau Moodlerekin batera datorren ibilaldia da. Hemen egiten duzun edozein aldaketa gunearen hurrengo eguneratzeetan baliogabetua izan daiteke.';
+$string['moodle_language_identifier'] = 'Hizkuntza-katearen IDa';
 $string['movestepdown'] = 'Mugitu urratsa behera';
 $string['movestepup'] = 'Mugitu urratsa gora';
 $string['movetourdown'] = 'Mugitu ibilaldia behera';
 $string['movetourup'] = 'Mugitu ibilaldia gora';
 $string['name'] = 'Izena';
+$string['name_help'] = 'Ibilaldiaren izena testu soila izan daiteke, behar izanez gero etiketa eleaniztun artean (eduki eleaniztunaren iragazkietan erabilia izan dadin).
+
+Bestela, hizkuntza-kate baten IDa ere idatzi daiteke identifikatzailea,osagaia formatuarekin (gakorik eta komaren ondorengo hutsunerik gabe).';
 $string['newstep'] = 'Urrats berria';
 $string['newtour'] = 'Sortu beste ibilaldi bat';
 $string['next'] = 'Hurrengoa';
 $string['nextstep'] = 'Hurrengoa';
+$string['nextstep_sequence'] = 'Hurrengoa ({$a->position}/{$a->total})';
 $string['options_heading'] = 'Aukerak';
 $string['orphan'] = 'Erakutsi, jomuga aurkitu ez bada';
 $string['orphan_help'] = 'Erakutsi urratsa, jomuga orrian aurkitzen ez bada.';
@@ -133,6 +152,7 @@ $string['selectordisplayname'] = '\'{$a}\' patroiarekin bat datorren CSS hautatz
 $string['selecttype'] = 'Aukeratu urrats mota';
 $string['sharedtourslink'] = 'Ibilbide-biltegia';
 $string['skip'] = 'Saltatu';
+$string['skip_tour'] = 'Saltatu ibilbidea';
 $string['target'] = 'Jomuga';
 $string['target_block'] = 'Blokea';
 $string['target_heading'] = 'Urratsaren jomuga';
@@ -230,6 +250,27 @@ $string['tour_activityinfo_course_teacher_content'] = 'Ikastaroen \'Erakutsi jar
 $string['tour_activityinfo_course_teacher_title'] = 'Berria: Jardueraren informazioa';
 $string['tour_final_step_content'] = 'Zure erabiltzaile-ibilbidearen amaiera duzu hau. Ez da berriro abiatuko behealdeko estekan klik egin ezean.';
 $string['tour_final_step_title'] = 'Ibilbidearen amaiera';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Idatzi albiste garrantzitsuak hemen.';
+$string['tour_navigation_course_announcements_teacher_title'] = 'Guztiei esateko zerbait duzu?';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Gehitu eduki berria edo editatu lehendik dagoen edukia.';
+$string['tour_navigation_course_edit_teacher_title'] = 'Aktibatu edizio-modua';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Arakatu jarduerak eta zure egin jarraipena zure aurrerapenari.';
+$string['tour_navigation_course_index_student_title'] = 'Aurkitu ezazu zure bidea';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Hartu eta eraman jarduerak ikastaroko edukiaren ordena aldatzeko.';
+$string['tour_navigation_course_index_teacher_title'] = 'Ikastaroaren aurkibidea';
+$string['tour_navigation_course_student_tour_des'] = 'Ikastaroko jarduerak arakatzeko lekua';
+$string['tour_navigation_course_student_tour_name'] = 'Ikastaroaren aurkibidea';
+$string['tour_navigation_course_teacher_tour_des'] = 'Ikastaro bateko edizio-modua, jarduerak hartu eta eraman eta albisteak idatzi';
+$string['tour_navigation_course_teacher_tour_name'] = 'Ikastaroa editatzen';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Alboko panel honetan funtzio gehiago aurkitu ditzakezu.';
+$string['tour_navigation_dashboard_title'] = 'Zabaldu arakatzeko';
+$string['tour_navigation_dashboard_tour_des'] = 'Blokeak aurkitzen diren lekua';
+$string['tour_navigation_dashboard_tour_name'] = 'Blokeen nabigazio-kutxa';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>Menu honetatik ikastaroak gehitu, kopiatu, ezabatu eta ezkutatu ditzakezu.';
+$string['tour_navigation_mycourses_endtourlabel'] = 'Ulertzen dut';
+$string['tour_navigation_mycourses_title'] = 'Ikastaro eta kategoriak';
+$string['tour_navigation_mycourses_tour_des'] = 'Ikastaro-kudeaketarako aukerak Nire ikastaroak orrian';
+$string['tour_navigation_mycourses_tour_name'] = 'Ikastaro-kudeaketa';
 $string['tour_resetforall'] = 'Erabiltzaile-ibilaldiaren egoera berrabiarazi da. Erabiltzaile guztiei berriz erakutsiko zaie.';
 $string['tourconfig'] = 'Inportatu beharreko ibilaldiaren konfigurazio-fitxategia';
 $string['tourisenabled'] = 'Ibilbidea gaituta dago';

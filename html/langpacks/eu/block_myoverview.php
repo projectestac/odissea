@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'eu', version '3.11'.
+ * Strings for component 'block_myoverview', language 'eu', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Nabarmendu ikastaro hau';
-$string['all'] = 'Guztiak (ikuspegitik kendutakoak izan ezik)';
-$string['allincludinghidden'] = 'Guztiak';
+$string['all'] = 'Guztiak';
+$string['allincludinghidden'] = 'Guztiak (ikuspegitik kendutakoak barne)';
 $string['aria:addtofavourites'] = 'Nabarmendu ondokoa';
-$string['aria:allcourses'] = 'Erakutsi ikastaro guztiak, ikuspegitik kendutakoak izan ezik';
+$string['aria:allcourses'] = 'Erakutsi ikastaro guztiak, ikuspegitik kendutako ikastaroak izan ezik';
 $string['aria:allcoursesincludinghidden'] = 'Erakutsi ikastaro guztiak';
 $string['aria:card'] = 'Aldatu txartel-ikuspegira';
 $string['aria:controls'] = 'Ikastaroaren ikuspegi orokorraren kontrolak';
@@ -57,7 +57,7 @@ $string['availablegroupings'] = 'Eskura dauden iragazkiak';
 $string['availablegroupings_desc'] = 'Erabiltzaileek aukeratu ditzaketen ikastaro-iragazkiak. Batere ez bada aukeratzen, ikastaro guztiak erakutsiko dira.';
 $string['card'] = 'Txartela';
 $string['cards'] = 'Txartelak';
-$string['complete'] = 'osatuta';
+$string['clearsearch'] = 'Garbitu bilaketa';
 $string['completepercent'] = '%{$a}(e)an osatuta';
 $string['courseprogress'] = 'Ikastaro-aurrerapena:';
 $string['customfield'] = 'Eremu pertsonalizatua';
@@ -76,7 +76,6 @@ $string['layouts'] = 'Eskuragarri dauden diseinuak';
 $string['layouts_help'] = 'Erabiltzaileek aukeratzeko eskuragarri dituzten ikastaroen aurrebistarako diseinuak. Bat ere ez badago aukeratuta, Txartelak diseinua erabiliko da.';
 $string['list'] = 'Zerrenda';
 $string['myoverview:myaddinstance'] = 'Gehitu ikastaroaren ikuspegi orokorra blokea Aginte-panelera';
-$string['nocourses'] = 'Ez dago ikastarorik';
 $string['nocustomvalue'] = '{$a}.a';
 $string['past'] = 'Iraganean';
 $string['pluginname'] = 'Ikuspegi orokorra';
@@ -86,7 +85,11 @@ $string['privacy:metadata:overviewsortpreference'] = 'Ikastaroaren ikuspegi orok
 $string['privacy:metadata:overviewviewpreference'] = 'Ikastaroaren ikuspegi orokorra blokearen ikuspegirako hobespena.';
 $string['privacy:request:preference:set'] = '\'{$a->name}\' ezarpenaren balorea \'{$a->value}\' zen';
 $string['removefromfavourites'] = 'Ez nabarmendu ikastaro hau';
+$string['searchcourses'] = 'Bilatu ikastaroak';
 $string['shortname'] = 'Izen laburra';
-$string['show'] = 'Berriz erakutsi ikastaro hau ikuspegian';
+$string['show'] = 'Berriz erakutsi ikuspegian';
+$string['sortbylastaccessed'] = 'Ordenatu azken sarreraren arabera';
+$string['sortbyshortname'] = 'Ordenatu izen laburraren arabera';
+$string['sortbytitle'] = 'Ordenatu ikastaroaren izenaren arabera';
 $string['summary'] = 'Laburpena';
 $string['title'] = 'Ikastaroaren izena';

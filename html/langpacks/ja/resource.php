@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ja', version '3.11'.
+ * Strings for component 'resource', language 'ja', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -29,12 +29,12 @@ $string['clicktodownload'] = 'ファイルをダウンロードするには {$a}
 $string['clicktoopen2'] = 'ファイルを表示するには {$a} リンクをクリックしてください。';
 $string['configdisplayoptions'] = '利用可にしたいオプションすべてを選択してください。既存の設定は変更されません。複数のフィールドを選択するにはCTRLキーを押したままにしてください。';
 $string['configframesize'] = 'フレーム内にウェブページやアップロードしたファイルが表示される場合の (ナビゲーションを含む) トップフレームサイズ (ピクセル) です。';
-$string['configparametersettings'] = '新しいリソースを登録する場合のパラメータ設定に関するデフォルト値を設定できるウィンドウ枠を表示します。最初にリソースを登録した後、この値は各ユーザのプリファレンスとなります。';
+$string['configparametersettings'] = '新しいリソースを登録する場合のパラメータ設定に関するデフォルト値を設定できるウィンドウ枠を表示します。最初にリソースを登録した後、この値は各ユーザのプレファレンスとなります。';
 $string['configpopup'] = 'ポップアップウィンドウに表示できる新しいリソースを追加する場合、このオプションをデフォルトで有効にしますか?';
 $string['configpopupdirectories'] = 'デフォルトでディレクトリリンクをポップアップウィンドウに表示しますか?';
 $string['configpopupheight'] = '新しいポップアップウィンドウのデフォルトの高さは?';
 $string['configpopuplocation'] = 'デフォルトでポップアップウィンドウにアドレスバーを表示しますか?';
-$string['configpopupmenubar'] = 'デフォルトでポップアップウィンドウにメニュバーを表示しますか?';
+$string['configpopupmenubar'] = 'デフォルトでポップアップウィンドウにメニューバーを表示しますか?';
 $string['configpopupresizable'] = 'デフォルトでポップアップウィンドウをリサイズできるようにしますか?';
 $string['configpopupscrollbars'] = 'デフォルトでポップアップウィンドウをスクロールできるようにしますか?';
 $string['configpopupstatus'] = 'デフォルトでポップアップウィンドウにステータスバーを表示しますか?';
@@ -49,9 +49,10 @@ $string['displayselect_help'] = 'ファイルタイプおよびブラウザが�
 * 埋め込み - ファイルはナビゲーションバーの下にファイル説明およびブロックと共に表示されます。
 * 強制的にダウンロードする - ユーザはファイルのダウンロードを促されます。
 * オープン - ファイルはブラウザウィンドウ内でのみ表示されます。
-* ポップアップ - ファイルはメニュまたはアドレスバーなしの新しいブラウザウィンドウに表示されます。
+* ポップアップ - ファイルはメニューまたはアドレスバーなしの新しいブラウザウィンドウに表示されます。
 * フレーム - ファイルはフレーム内のナビゲーションバーの下にファイル説明およびブロックと共に表示されます。
-* 新しいウィンドウ - ファイルは新しいウィンドウ内にメニュおよびアドレスバーと共に表示されます。';
+* 新しいウィンドウ - ファイルは新しいウィンドウ内にメニューおよびアドレスバーと共に表示されます。';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = '表示タイプを選択してください。残念ですがすべてのタイプがすべてのファイルに適しているということではありません。';
 $string['dnduploadresource'] = 'ファイルリソースを作成する';
 $string['encryptedcode'] = '暗号化コード';
@@ -65,10 +66,12 @@ $string['indicator:cognitivedepth'] = 'ファイル認知的';
 $string['indicator:cognitivedepth_help'] = 'この指標はファイルリソースで学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'ファイル認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がファイルリソースから提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧)。';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'ファイル社会的';
 $string['indicator:socialbreadth_help'] = 'この指標はファイルリソースで学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'ファイル社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がファイルリソースから提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = '古いコースファイルの移行';
 $string['legacyfilesactive'] = 'アクティブ';
 $string['legacyfilesdone'] = '終了';
@@ -83,6 +86,7 @@ $string['modulename_help'] = 'ファイルモジュールにおいて教師は�
 * クラスで実施するプレゼンテーションの共有のため
 * コースリソースとしてミニウェブサイトを含むため
 * ソフトウェアプログラムの下書きファイルを提供して学生が編集および評価のために提出できるようにするため';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'ファイル';
 $string['notmigrated'] = '申し訳ございません、このレガシリソースタイプ ({$a}) はまだ移行されていません。';
 $string['optionsheader'] = '表示オプション';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'eu', version '3.11'.
+ * Strings for component 'quiz_overview', language 'eu', version '4.1'.
  *
  * @package     quiz_overview
  * @category    string
@@ -66,11 +66,13 @@ $string['regradealldrydo'] = 'Berriro kalifikatu berriz kalifikatzea behar dutel
 $string['regradealldrydogroup'] = 'Berriro kalifikatu \'{$a->groupname}\' taldean berriro kalifikatzea behar dutela markatuta dauden saiakerak  ({$a->countregradeneeded})';
 $string['regradealldrygroup'] = 'Berriro kalifikatu {$a->groupname}\' taldeko guztiak proba moduan';
 $string['regradeallgroup'] = 'Berriro kalifikatu \'{$a->groupname}\' taldeko guztiak';
-$string['regradecomplete'] = 'Berriz kalifikatzea ondo egin da';
-$string['regradedsuccessfullyxofy'] = 'Berriz kalifikatzea ondo egin da ({$a->count}/{$a->done})';
+$string['regradecomplete'] = 'Berriro kalifikatzea osatu da';
+$string['regradedsuccessfullyxofy'] = 'Berriro kalifikatzea amaitu da da ({$a->count}/{$a->done})';
 $string['regradeheader'] = 'Berriro kalifikatzen';
 $string['regradeselected'] = 'Berriro kalifikatu aukeratutako saiakerak';
+$string['regradingattemptissue'] = '{$a->slot} tartea: {$a->reason}';
 $string['regradingattemptxofy'] = 'Saiakera berriro kalifikatzen  ({$a->done}/{$a->count})';
+$string['regradingattemptxofyproblem'] = 'Ezin izan dira berriro kalifikatu hurrengo galderaren {$a->name} erabiltzailearen {$a->attemptnum} saiakera ({$a->attemptid} IDa)';
 $string['regradingattemptxofywithdetails'] = 'Saiakera berriro kalifikatzen  ({$a->count}/{$a->done}) - {$a->name} erabiltzailearen {$a->attemptnum}. saiakera (id {$a->attemptid})';
 $string['show'] = 'Erakutsi / jaitsi';
 $string['showattempts'] = 'Soilik erakutsi / jaitsi saiakerak';

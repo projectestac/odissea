@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'oublog', language 'es', version '3.11'.
+ * Strings for component 'oublog', language 'es', version '4.1'.
  *
  * @package     oublog
  * @category    string
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['confirmdeletecomment'] = '¿Está seguro que quiere eliminar este comentario?';
 $string['confirmdeletelink'] = '¿Está seguro que quiere eliminar este enlace?';
 $string['confirmdeletepost'] = '¿Está seguro que quiere eliminar esta aportación al blog?';
+$string['summary'] = 'Resumen';

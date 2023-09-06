@@ -49,8 +49,17 @@ function theme_boost_get_extra_scss($theme) {
 
     // Sets the background image, and its settings.
     if (!empty($imageurl)) {
+        $content .= '@media (min-width: 768px) {';
         $content .= 'body { ';
         $content .= "background-image: url('$imageurl'); background-size: cover;";
+        $content .= ' } }';
+    }
+
+    // Sets the login background image.
+    $loginbackgroundimageurl = $theme->setting_file_url('loginbackgroundimage', 'loginbackgroundimage');
+    if (!empty($loginbackgroundimageurl)) {
+        $content .= 'body.pagelayout-login #page { ';
+        $content .= "background-image: url('$loginbackgroundimageurl'); background-size: cover;";
         $content .= ' }';
     }
 
@@ -71,7 +80,8 @@ function theme_boost_get_extra_scss($theme) {
  * @return bool
  */
 function theme_boost_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
-    if ($context->contextlevel == CONTEXT_SYSTEM && ($filearea === 'logo' || $filearea === 'backgroundimage')) {
+    if ($context->contextlevel == CONTEXT_SYSTEM && ($filearea === 'logo' || $filearea === 'backgroundimage' ||
+        $filearea === 'loginbackgroundimage')) {
         $theme = theme_config::load('boost');
         // By default, theme files must be cache-able by both browsers and proxies.
         if (!array_key_exists('cacheability', $options)) {

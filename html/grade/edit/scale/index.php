@@ -34,7 +34,7 @@ $PAGE->set_url('/grade/edit/scale/index.php', array('id' => $courseid));
 /// Make sure they can even access this course
 if ($courseid) {
     if (!$course = $DB->get_record('course', array('id' => $courseid))) {
-        print_error('invalidcourseid');
+        throw new \moodle_exception('invalidcourseid');
     }
     require_login($course);
     $context = context_course::instance($course->id);
@@ -43,6 +43,8 @@ if ($courseid) {
 } else {
     require_once $CFG->libdir.'/adminlib.php';
     admin_externalpage_setup('scales');
+    $context = context_system::instance();
+    $PAGE->set_primary_active_tab('siteadminnode');
 }
 
 /// return tracking object
@@ -54,7 +56,6 @@ $strcustomscales   = get_string('scalescustom');
 $strname           = get_string('name');
 $strdelete         = get_string('delete');
 $stredit           = get_string('edit');
-$srtcreatenewscale = get_string('scalescustomcreate');
 $strused           = get_string('used');
 $stredit           = get_string('edit');
 
@@ -71,7 +72,7 @@ switch ($action) {
         if (empty($scale->courseid)) {
             require_capability('moodle/course:managescales', context_system::instance());
         } else if ($scale->courseid != $courseid) {
-            print_error('invalidcourseid');
+            throw new \moodle_exception('invalidcourseid');
         }
 
         if (!$scale->can_delete()) {
@@ -81,7 +82,11 @@ switch ($action) {
         $deleteconfirmed = optional_param('deleteconfirmed', 0, PARAM_BOOL);
 
         if (!$deleteconfirmed) {
-            $strdeletescale = get_string('delete'). ' '. get_string('scale');
+            if ($courseid) {
+                $PAGE->navbar->add(get_string('scales'), new moodle_url('/grade/edit/scale/index.php',
+                    ['id' => $courseid]));
+            }
+            $strdeletescale = get_string('deletescale', 'grades');
             $PAGE->navbar->add($strdeletescale);
             $PAGE->set_title($strdeletescale);
             $PAGE->set_heading($COURSE->fullname);
@@ -164,16 +169,32 @@ if ($scales = grade_scale::fetch_all_global()) {
     $table2->data  = $data;
 }
 
+$actionbar = new \core_grades\output\scales_action_bar($context);
 
 if ($courseid) {
-    print_grade_page_head($courseid, 'scale', 'scale', get_string('coursescales', 'grades'));
+    print_grade_page_head($courseid, 'scale', 'scale', get_string('coursescales', 'grades'),
+        false, false, true, null, null, null, $actionbar);
+} else {
+    $renderer = $PAGE->get_renderer('core_grades');
+    echo $renderer->render_action_bar($actionbar);
+    echo $OUTPUT->heading(get_string('scales', 'core'));
 }
 
-echo $OUTPUT->heading($strcustomscales, 3, 'main');
-echo html_writer::table($table);
-echo $OUTPUT->heading($strstandardscale, 3, 'main');
-echo html_writer::table($table2);
-echo $OUTPUT->container_start('buttons');
-echo $OUTPUT->single_button(new moodle_url('edit.php', array('courseid'=>$courseid)), $srtcreatenewscale);
-echo $OUTPUT->container_end();
+$hascustomscales = !empty($table->data);
+$hasstandardscales = !empty($table2->data);
+
+// If there are custom scales available in this context, output the custom scales table and a heading.
+if ($hascustomscales) {
+    echo $OUTPUT->heading($strcustomscales, 3, 'main mt-3');
+    echo html_writer::table($table);
+}
+// If there are standard scales available in this context, output the standard scales table and a heading.
+if ($hasstandardscales) {
+    echo $OUTPUT->heading($strstandardscale, 3, 'main  mt-3');
+    echo html_writer::table($table2);
+}
+// If the are no available scales, display a notification.
+if (!$hascustomscales && !$hasstandardscales) {
+    echo $OUTPUT->notification(get_string('noexistingscales', 'grades'), 'info', false);
+}
 echo $OUTPUT->footer();

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ca', version '3.11'.
+ * Strings for component 'scorm', language 'ca', version '4.1'.
  *
  * @package     scorm
  * @category    string
@@ -122,7 +122,6 @@ $string['displaydesc'] = 'Aquesta preferència estableix el valor per defecte pe
 $string['displaysettings'] = 'Configuració de pantalla';
 $string['dnduploadscorm'] = 'Afegeix un paquet SCORM nou';
 $string['domxml'] = 'Biblioteca externa DOMXML';
-$string['duedate'] = 'Data de venciment';
 $string['element'] = 'Element';
 $string['enter'] = 'Entra';
 $string['entercourse'] = 'Entra al curs SCORM';
@@ -194,6 +193,8 @@ $string['highestattempt'] = 'Intent més alt';
 $string['identifier'] = 'Identificador de pregunta';
 $string['incomplete'] = 'Incomplet';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats SCORM en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interaccions';
 $string['invalidactivity'] = 'L\'activitat SCORM és incorrecta';
@@ -229,6 +230,7 @@ Les activitat SCORM es poden emprar per:
 
 * Fer presentacions amb contingut multimèdia i animacions
 * Com una eina per avaluar';
+$string['modulename_link'] = 'mod/scorm/view';
 $string['modulenameplural'] = 'Paquets SCORM';
 $string['nav'] = 'Mostra la navegació';
 $string['nav_help'] = 'Aquest paràmetre especifica si s\'han de mostrar o ocultar els botons de navegació i la seva posició.

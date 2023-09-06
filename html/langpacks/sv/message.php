@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'sv', version '3.11'.
+ * Strings for component 'message', language 'sv', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Förhindra personer som inte finns i min kontaktl
 $string['blockuser'] = 'Blockera användare';
 $string['blockuserconfirm'] = 'Är du säker att du vill blockera {$a}?';
 $string['blockuserconfirmbutton'] = 'Blockera';
-$string['canceledit'] = 'Avbryt redigering av meddelanden';
 $string['cancelselection'] = 'Avbryt urval';
 $string['cantblockuser'] = 'Du kan inte blockera {$a} eftersom användaren har en roll med behörighet att skicka meddelande till alla användare.';
 $string['contactableprivacy'] = 'Acceptera meddelanden från';
@@ -86,6 +85,7 @@ $string['eventmessageviewed'] = 'Meddelandet har öppnats.';
 $string['eventnotificationsent'] = 'Notifiering har skickats';
 $string['eventnotificationviewed'] = 'Notifiering har visats';
 $string['forced'] = 'Låst';
+$string['forcedmessage'] = 'Låst';
 $string['groupconversations'] = 'Gruppkonversationer';
 $string['groupinfo'] = 'Gruppinformation';
 $string['guestnoeditmessage'] = 'Gästanvändare kan inte ändra inställningar för meddelanden';
@@ -105,8 +105,6 @@ $string['loggedoffdescription'] = 'När jag inte är inloggad på Moodle';
 $string['managemessageoutputs'] = 'Standardinställningar för notiser';
 $string['message'] = 'Meddelande';
 $string['messagecontactrequest'] = '{$a->user} har skickat en kontaktförfrågan. Gå till sidan för <a href="{$a->url}">kontaktförfrågningar</a> för att svara på denna förfrågan.';
-$string['messagecontactrequestsnotification'] = '{$a} vill bli tillagd som kontakt.';
-$string['messagecontactrequestsnotificationsubject'] = 'Kontaktförfrågan från {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: Kontaktförfrågan från {$a->user}';
 $string['messagecontentaudio'] = 'Ljud';
 $string['messagecontentimage'] = 'Bild';
@@ -137,7 +135,6 @@ $string['nofavourites'] = 'Inga favoritmärkta konversationer';
 $string['noframesjs'] = 'Använd ett mer tillgängligt gränssnitt';
 $string['nogroupconversations'] = 'Inga gruppkonversationer';
 $string['noindividualconversations'] = 'Inga privata konversationer';
-$string['nomessages'] = 'Inga meddelanden';
 $string['nomessagesfound'] = 'Inga meddelanden hittades';
 $string['noncontacts'] = 'Icke-kontakter';
 $string['nonotifications'] = 'Du har inga notiser';
@@ -156,11 +153,7 @@ $string['offline'] = 'Offline';
 $string['on'] = 'På';
 $string['online'] = 'Online';
 $string['otherparticipants'] = 'Andra deltagare';
-$string['outputdisabled'] = 'Utmatning inaktiverat';
-$string['outputdoesnotexist'] = 'Meddelandeutmatning existerar inte';
-$string['outputenabled'] = 'Utmatning aktiverad';
 $string['outputnotavailable'] = 'Inte tillgänglig';
-$string['outputnotconfigured'] = 'Inte konfigurerad';
 $string['page-message-x'] = 'Alla meddelandesidor';
 $string['participants'] = 'Deltagare';
 $string['pendingcontactrequests'] = 'Du har {$a} väntande kontaktförfrågningar';
@@ -223,6 +216,9 @@ $string['privacy:metadata:preference:core_message_settings'] = 'Inställningar f
 $string['privacy:request:preference:set'] = 'Värdet för \'{$a->name}\'-inställningen var \'{$a->value}\'';
 $string['privacy_desc'] = 'Du kan välja vilka som kan skicka meddelanden till dig.';
 $string['processorsettings'] = 'Processorinställningar';
+$string['providerenabled'] = 'Skicka "{$a}"-aktiverad status';
+$string['providerprocesorisdisallowed'] = '"{$a->provider}" för "{$a->processor}" otillåten';
+$string['providerprocesorislocked'] = '"{$a->provider}" för "{$a->processor}" låst';
 $string['removecontact'] = 'Ta bort kontakt';
 $string['removecontactconfirm'] = 'Är du säker på att du vill ta bort {$a} från dina kontaker?';
 $string['removecoursefilter'] = 'Ta bort filter för kursen {$a}';
@@ -247,6 +243,8 @@ $string['sendbulkmessagesingle'] = 'Skicka meddelande till 1 person';
 $string['sendcontactrequest'] = 'Skicka kontaktförfrågan';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = 'Skickar "{$a->provider}" via "{$a->processor}"';
+$string['sendingviaenabled'] = 'Skickar "{$a->provider}" via "{$a->processor}"-aktiverad status';
+$string['sendingvialocked'] = 'Skickar "{$a->provider}" via "{$a->processor}"-låst status';
 $string['sendingviawhen'] = 'Skickar "{$a->provider}" via "{$a->processor}" när {$a->state}';
 $string['sendmessage'] = 'Skicka meddelande';
 $string['sendmessageto'] = 'Skicka meddelande till {$a}';

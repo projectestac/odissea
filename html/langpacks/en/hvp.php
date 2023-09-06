@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'en', version '3.11'.
+ * Strings for component 'hvp', language 'en', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -250,6 +250,7 @@ $string['invalidcontenttype'] = 'The chosen content type is invalid.';
 $string['invalidfieldtype'] = 'Invalid field type.';
 $string['invalidfile'] = 'File "{$a->%filename}" not allowed. Only files with the following extensions are allowed: {$a->%files-allowed}.';
 $string['invalidh5ppost'] = 'Could not get posted H5P.';
+$string['invalidhvp'] = 'Invalid H5P activity';
 $string['invalidimageformat'] = 'Invalid image file format. Use jpg, png or gif.';
 $string['invalidlanguagefile'] = 'Invalid language file {$a->%file} in library {$a->%library}';
 $string['invalidlanguagefile2'] = 'Invalid language file {$a->%languageFile} has been included in the library {$a->%name}';
@@ -267,7 +268,7 @@ $string['invalidselectoption'] = 'Invalid selected option in select.';
 $string['invalidsemanticsjson'] = 'Invalid semantics.json file has been included in the library {$a->%name}';
 $string['invalidsemanticstype'] = 'H5P internal error: unknown content type "{$a->@type}" in semantics. Removing content!';
 $string['invalidstring'] = 'Provided string is not valid according to regexp in semantics. (value: \\"{$a->%value}\\", regexp: \\"{$a->%regexp}\\")';
-$string['invalidtoken'] = 'Invalid security token.';
+$string['invalidtoken'] = 'H5P has received an invalid token. Refresh the page and try again';
 $string['invalidvideoformat'] = 'Invalid video file format. Use mp4 or webm.';
 $string['invalidxapiresult'] = 'No xAPI results were found for the given content and user id combination';
 $string['isnowsubmitted'] = 'Is now submitted to H5P Hub';
@@ -352,6 +353,7 @@ $string['nodata'] = 'There\'s no data available that matches your criteria.';
 $string['noexport'] = 'Missing export file.';
 $string['noextension'] = 'The file you uploaded is not a valid HTML5 Package (It does not have the .h5p file extension)';
 $string['noh5ps'] = 'There\'s no interactive content available for this course.';
+$string['nohubregistration'] = 'Not registered with H5P Hub';
 $string['nojson'] = 'The main h5p.json file is not valid';
 $string['nombstringexteension'] = 'The mbstring PHP extension is not loaded. H5P needs this to function properly';
 $string['noparameters'] = 'No parameters';

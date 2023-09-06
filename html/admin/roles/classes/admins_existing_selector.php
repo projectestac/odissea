@@ -38,26 +38,33 @@ class core_role_admins_existing_selector extends user_selector_base {
             $name = 'removeselect';
         }
         $options['multiselect'] = false;
+        $options['includecustomfields'] = true;
         parent::__construct($name, $options);
     }
 
     public function find_users($search) {
         global $DB, $CFG;
-        list($wherecondition, $params) = $this->search_sql($search, '');
 
-        $fields      = 'SELECT ' . $this->required_fields_sql('');
+        [$wherecondition, $params] = $this->search_sql($search, 'u');
+        $params = array_merge($params, $this->userfieldsparams);
+
+        $fields = 'SELECT u.id, ' . $this->userfieldsselects;
 
         if ($wherecondition) {
-            $wherecondition = "$wherecondition AND id IN ($CFG->siteadmins)";
+            $wherecondition = "$wherecondition AND u.id IN ($CFG->siteadmins)";
         } else {
-            $wherecondition = "id IN ($CFG->siteadmins)";
+            $wherecondition = "u.id IN ($CFG->siteadmins)";
         }
-        $sql = " FROM {user}
+        $sql = " FROM {user} u
+                      $this->userfieldsjoin
                 WHERE $wherecondition";
 
-        list($sort, $sortparams) = users_order_by_sql('', $search, $this->accesscontext);
+        [$sort, $sortparams] = users_order_by_sql('u', $search, $this->accesscontext, $this->userfieldsmappings);
         $params = array_merge($params, $sortparams);
-        $order = ' ORDER BY ' . $sort;
+
+        // Sort first by email domain and then by normal name order.
+        $order = " ORDER BY " . $DB->sql_substr('email', $DB->sql_position("'@'", 'email'),
+            $DB->sql_length('email') ) .  ", $sort";
 
         $availableusers = $DB->get_records_sql($fields . $sql . $order, $params);
 
@@ -80,10 +87,19 @@ class core_role_admins_existing_selector extends user_selector_base {
         if ($availableusers) {
             if ($search) {
                 $groupname = get_string('extusersmatching', 'core_role', $search);
+                $result[$groupname] = $availableusers;
             } else {
-                $groupname = get_string('extusers', 'core_role');
+                $groupnameprefix = get_string('extusers', 'core_role');
+                foreach ($availableusers as $user) {
+                    if (isset($user->email)) {
+                        $domain = substr($user->email, strpos($user->email, '@'));
+                        $groupname = "$groupnameprefix $domain";
+                    } else {
+                        $groupname = $groupnameprefix;
+                    }
+                    $result[$groupname][] = $user;
+                }
             }
-            $result[$groupname] = $availableusers;
         }
 
         return $result;

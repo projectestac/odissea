@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'it', version '3.11'.
+ * Strings for component 'rating', language 'it', version '4.1'.
  *
  * @package     rating
  * @category    string
@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'Il punteggio non è valido';
 $string['ratings'] = 'Valutazioni';
 $string['ratingtime'] = 'Limita valutazioni agli elementi con la data in questo intervallo:';
 $string['rolewarning'] = 'Ruoli con il privilegio di valutare';
-$string['rolewarning_help'] = 'Per valutare, gli utenti necessitano del privilegio moodle/rating:rate e degli eventuali privilegi specifici di ciascun modulo di attività. Gli utenti che hanno uno dei ruoli elencati dovrebbero essere in grado di valutare. L\'elenco dei ruoli può essere modificato tramite il link Autorizzazioni nel blocco Amministrazione.';
+$string['rolewarning_help'] = 'Per valutare, gli utenti necessitano del privilegio moodle/rating:rate e degli eventuali privilegi specifici di ciascun modulo di attività. L\'elenco dei ruoli può essere modificato tramite la pagina Autorizzazioni.';
 $string['scaleselectionrequired'] = 'Quando si seleziona un tipo di aggregazione di valutazioni è anche necessario scegliere una scala oppure impostare il punteggio massimo.';

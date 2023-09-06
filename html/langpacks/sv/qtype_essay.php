@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'sv', version '3.11'.
+ * Strings for component 'qtype_essay', language 'sv', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -60,6 +60,7 @@ $string['nlines'] = '{$a} rader';
 $string['nonexistentfiletypes'] = 'Följande filtyper kändes inte igen: {$a}';
 $string['pluginname'] = 'Uppsats';
 $string['pluginname_help'] = 'Som svar på en fråga kan den som svarar ladda upp en eller flera filer och/eller skriva in text online. En svarsmall kan tillhandahållas. Svaren måste bedömas manuellt.';
+$string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = 'Lägg till en uppsatsfråga';
 $string['pluginnameediting'] = 'Redigera en uppsatsfråga';
 $string['pluginnamesummary'] = 'Tillåter ett svar i form av en filuppladdning och/eller onlinetext. Detta måste sedan betygsättas manuellt.';

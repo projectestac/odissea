@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'zh_cn', version '3.11'.
+ * Strings for component 'availability', language 'zh_cn', version '4.1'.
  *
  * @package     availability
  * @category    string
@@ -66,6 +66,7 @@ $string['restrictaccess'] = '限制访问';
 $string['restrictbygroup'] = '添加小组/大组访问限制';
 $string['setheading'] = '{$a->number} 设置中的 {$a->count} 条件';
 $string['show_verb'] = '点击显示灰色显示';
+$string['showmore'] = '显示更多';
 $string['shown_all'] = '如果用户没有满足这一条件，则显示灰色';
 $string['shown_individual'] = '如果用户没有满足这一条件，以变灰色来显示';
 $string['unknowncondition'] = '未知条件（删除条件的插件）';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'zh_cn', version '3.11'.
+ * Strings for component 'grades', language 'zh_cn', version '4.1'.
  *
  * @package     grades
  * @category    string
@@ -65,18 +65,23 @@ $string['aggregation_help'] = '汇总算法确定一个类别中的成绩如何�
 * 最高分
 * 众数 - 出现频率最高的分数
 * 加权总分 - 所有按权重调整的分数的总和';
+$string['aggregation_link'] = 'grade/aggregation';
 $string['aggregationcoef'] = '汇总系数';
 $string['aggregationcoefextra'] = '加分';
 $string['aggregationcoefextra_help'] = '当使用“加权总分”或“简单加权平均分”为汇总算法且“加分”复选框被勾选时，成绩项的最高分不会添加到类别的最高分。这将导致有可能在类别中获得最高分而在所有成绩项中均未达到最高分。如果站点管理员允许成绩超过最高分，则可能存在成绩超过最高分。
 
 当使用“平均分（含加分）”汇总算法且加分值设为大于0时，此加分值会被当作一个因数与成绩相乘，然后再被加入总分，以计算平均分。';
+$string['aggregationcoefextra_link'] = 'grade/aggregation';
 $string['aggregationcoefextrasum'] = '加分';
 $string['aggregationcoefextrasum_help'] = '如果“加分”复选框被勾选，此成绩项的最高分不会添加到类别的最高分，这将导致有可能在类别中获得最高分（或者超过最高分，如果站点管理员允许）而在所有成绩项中均未达到最高分。';
+$string['aggregationcoefextrasum_link'] = 'grade/aggregation';
 $string['aggregationcoefextrasumabbr'] = '+';
 $string['aggregationcoefextraweight'] = '加分权重';
 $string['aggregationcoefextraweight_help'] = '如果加分权重被设为一个大于0的数值，那么该成绩在汇总时会被当作加分。此数值会被当作一个因数与成绩相乘，然后再被加入总分，以计算平均分。';
+$string['aggregationcoefextraweight_link'] = 'grade/aggregation';
 $string['aggregationcoefweight'] = '成绩项权重';
 $string['aggregationcoefweight_help'] = '在类别汇总中使用成绩项权重，以影响该成绩项相对于同一类别中其他成绩项的重要性。';
+$string['aggregationcoefweight_link'] = 'grade/aggregation';
 $string['aggregationhintdropped'] = '（去掉）';
 $string['aggregationhintexcluded'] = '（排除）';
 $string['aggregationhintextra'] = '（加分）';
@@ -105,6 +110,7 @@ $string['bulkcheckboxes'] = '批量复选框';
 $string['calculatedgrade'] = '计算成绩';
 $string['calculation'] = '计算方法';
 $string['calculation_help'] = '成绩计算器是一个用来确定成绩的公式。该公式应该以等号（=）开始，可以使用常见的数学运算，比如max、min和sum。如果需要，也可以包含其它成绩项。只需在公式中输入它们的ID号，并用两个方括号括起来。';
+$string['calculation_link'] = 'grade/calculation';
 $string['calculationadd'] = '添加计算方法';
 $string['calculationedit'] = '编辑计算方法';
 $string['calculationsaved'] = '计算方法已保存';
@@ -151,6 +157,7 @@ $string['decimalpoints_help'] = '此设置确定每个成绩要显示的小数�
 $string['default'] = '默认值';
 $string['defaultprev'] = '默认({$a})';
 $string['deletecategory'] = '删除类别';
+$string['deletescale'] = '删除分数等级';
 $string['disablegradehistory'] = '禁用成绩历史记录';
 $string['disablegradehistory_help'] = '禁用与成绩相关的表的更改的历史记录跟踪。 这可能会加快服务器速度，并节省数据库空间。';
 $string['displaylettergrade'] = '显示分数段';
@@ -407,6 +414,7 @@ $string['importcsv_help'] = '成绩可以通过 CSV 文件导入，格式如下�
 * 其中一个字段名称必须要包含用户的识别数据，可以是用户名、ID号或EMAIL地址
 
 您可以先导出一些成绩来获得这个文件的正确格式。然后将这一文件加以编辑并保存为 CSV 文件。';
+$string['importcsv_link'] = 'grade/import/csv/index';
 $string['importcustom'] = '作为自定义成果导入（仅在此课程中）';
 $string['importdata'] = '数据';
 $string['importdata_help'] = '成绩可以直接从 OpenDocument 或 Excel 电子表格粘贴，格式如下：
@@ -426,6 +434,7 @@ $string['importfrom'] = '导入从';
 $string['importoutcomenofile'] = '上传的文件为空或损坏。请确认这是有效文件。在{$a}行检测到问题。这是由于数据行的列数不及第一行（标题行）或导入的文件缺少预期的标题而触发的。请查看导出的文件，以获取具有有效标题的文件示例。';
 $string['importoutcomes'] = '导入成果';
 $string['importoutcomes_help'] = '可以从 CSV 文件导入成果。文件格式和导出成果的 CSV 文件一致。';
+$string['importoutcomes_link'] = 'grade/outcome';
 $string['importoutcomesuccess'] = '已导入成果"{$a->name}"，ID：#{$a->id}。';
 $string['importplugins'] = '导入插件';
 $string['importpreview'] = '导入预览';
@@ -472,6 +481,7 @@ $string['locktimedate'] = '在{$a}之后锁定';
 $string['lockverbose'] = '锁定{$a->category}{$a->itemmodule}{$a->itemname}';
 $string['lowest'] = '最低';
 $string['lowgradeletter'] = '低';
+$string['manageoutcomes'] = '管理成绩';
 $string['manualitem'] = '手动成绩项';
 $string['mapfrom'] = '映射自';
 $string['mapfrom_help'] = '选择电子表格中包含用于标识用户的数据列，如用户名、用户ID或电子邮件地址。';
@@ -492,6 +502,7 @@ $string['minimum_show_help'] = '最低分用于计算成绩和权重。 如果�
 $string['minmaxtouse'] = '计算中使用的最低和最高分';
 $string['minmaxtouse_desc'] = '‎此设置确定在计算成绩册中显示的成绩时，是使用给出成绩时的初始最低和最高分，还是使用成绩项设置中指定的最低和最高分。建议在非高峰时间修改此设置，因为将重新计算所有成绩，这可能导致服务器负载高。‎';
 $string['minmaxtouse_help'] = '‎此设置确定在计算成绩册中显示的成绩时，是使用给出成绩时的初始最低和最高分，还是使用成绩项设置中指定的最低和最高分。建议在非高峰时间修改此设置，因为将重新计算所有成绩，这可能导致服务器负载高。‎';
+$string['minmaxtouse_link'] = 'Grades_min_max';
 $string['minmaxupgradedgrades'] = '注意：为了解决成绩册中由于计算显示的成绩时使用的最低和最高分更改而引起的不一致，对某些成绩进行了更改。 建议检查并接受更改。';
 $string['minmaxupgradefixbutton'] = '解决不一致';
 $string['minmaxupgradewarning'] = '注意：为了解决成绩册中由于计算显示的成绩时使用的最低和最高分更改而引起的不一致，对某些成绩进行了更改。 建议检查并接受更改。';
@@ -548,6 +559,8 @@ $string['nocategories'] = '此课程的成绩类别无法添加或找不到';
 $string['nocategoryname'] = '未给出类别名称。';
 $string['nocategoryview'] = '没有要查看的类别';
 $string['nocourses'] = '目前还没有课程';
+$string['noexistingoutcomes'] = '没有已出成绩。';
+$string['noexistingscales'] = '没有已有的成绩等级。';
 $string['noforce'] = '不强制';
 $string['nogradeletters'] = '未设定分数段';
 $string['nogradesreturned'] = '没有返回成绩';
@@ -733,6 +746,7 @@ $string['setgradeletters'] = '设置分数段';
 $string['setpreferences'] = '设置偏好';
 $string['setting'] = '设置';
 $string['settings'] = '设置';
+$string['setup'] = '设置';
 $string['setweights'] = '设置权重';
 $string['showactivityicons'] = '显示活动图标';
 $string['showactivityicons_help'] = '如果启用，活动图标将显示在活动名称旁边。';

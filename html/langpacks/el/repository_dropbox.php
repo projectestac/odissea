@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'el', version '3.11'.
+ * Strings for component 'repository_dropbox', language 'el', version '4.1'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -33,6 +33,8 @@ $string['crontask'] = 'Επεξεργασία παρασκηνίου για το
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Εμφάνιση ενός φακέλου Dropbox';
 $string['instruction'] = 'Μπορείτε να πάρετε το κλειδί σας API και τον μυστικό κωδικό σας από τους <a href="https://www.dropbox.com/developers/apps">κατασκευαστές του Dropbox</a>. Κατά τη ρύθμιση του κλειδιού σας, επιλέξτε «Πλήρες Dropbox» ως «Επίπεδο πρόσβασης».';
+$string['issuer'] = 'Υπηρεσία OAuth2';
+$string['issuer_help'] = 'Επιλέξτε την υπηρεσία OAuth2 που έχει διαμορφωθεί για να μιλάει στο API του Dropbox. Εάν η υπηρεσία δεν υπάρχει ακόμα, θα πρέπει να τη δημιουργήσετε.';
 $string['logoutdesc'] = '(Αποσύνδεση όταν ολοκληρωθεί η χρήση του Dropbox)';
 $string['notitle'] = 'χωρίς τίτλο';
 $string['oauth2redirecturi'] = 'URI ανακατεύθυνσης OAuth 2';

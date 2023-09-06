@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'eu', version '3.11'.
+ * Strings for component 'accredible', language 'eu', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -40,4 +40,5 @@ $string['certificateurl'] = 'Ziurtagiriaren/Dominaren URL-a';
 $string['chooseexam'] = 'Aukeratu azken galdetegia';
 $string['description'] = 'Deskribapena';
 $string['id'] = 'ID';
+$string['modulename_link'] = 'mod/accredible/view';
 $string['nocertificates'] = 'Ez dago ziurtagiririk/dominarik';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'en', version '3.11'.
+ * Strings for component 'enrol_imsenterprise', language 'en', version '4.1'.
  *
  * @package     enrol_imsenterprise
  * @category    string
@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'Once you have saved your settings, you may wish to';
-$string['allowunenrol'] = 'Allow the IMS data to <strong>unenrol</strong> students/teachers';
+$string['allowunenrol'] = 'Allow IMS data to unenrol students and teachers';
 $string['allowunenrol_desc'] = 'If enabled, course enrolments will be removed when specified in the Enterprise data.';
 $string['basicsettings'] = 'Basic settings';
-$string['categoryidnumber'] = 'Allow category idnumber';
-$string['categoryidnumber_desc'] = 'If enabled IMS Enterprise will create category with idnumber';
+$string['categoryidnumber'] = 'Allow category ID number';
+$string['categoryidnumber_desc'] = 'If enabled IMS Enterprise will create a category with ID number.';
 $string['categoryseparator'] = 'Category separator character';
-$string['categoryseparator_desc'] = 'Required when "Category idnumber" is enabled. Character to separate the category name and idnumber.';
+$string['categoryseparator_desc'] = 'Required when \'Allow category ID number\' is enabled. Character to separate the category name and ID number.';
 $string['coursesettings'] = 'Course data options';
 $string['createnewcategories'] = 'Create new (hidden) course categories if not found in Moodle';
 $string['createnewcategories_desc'] = 'If the &lt;org&gt;&lt;orgunit&gt; element is present in a course\'s incoming data, its content will be used to specify a category if the course is to be created from scratch. The plugin will NOT re-categorise existing courses.
@@ -41,12 +41,14 @@ If no category exists with the desired name, then a hidden category will be crea
 $string['createnewcourses'] = 'Create new (hidden) courses if not found in Moodle';
 $string['createnewcourses_desc'] = 'If enabled, the IMS Enterprise enrolment plugin can create new courses for any it finds in the IMS data but not in Moodle\'s database. Any newly-created courses are initially hidden.';
 $string['createnewusers'] = 'Create user accounts for users not yet registered in Moodle';
-$string['createnewusers_desc'] = 'IMS Enterprise enrolment data typically describes a set of users. If enabled, accounts can be created for any users not found in Moodle\'s database.
+$string['createnewusers_desc'] = 'IMS Enterprise enrolment data typically describes a set of users. If enabled, accounts can be created for any users not found in the Moodle database.
 
-Users are searched for first by their "idnumber", and second by their Moodle username. Passwords are not imported by the IMS Enterprise plugin. The use of an authentication plugin is recommended for authenticating users.';
+Users are searched for first by their ID number, and then by their Moodle username. Passwords are not imported by the IMS Enterprise plugin. The use of an authentication plugin is recommended for authenticating users.';
 $string['cronfrequency'] = 'Frequency of processing';
 $string['deleteusers'] = 'Delete user accounts when specified in IMS data';
 $string['deleteusers_desc'] = 'If enabled, IMS Enterprise enrolment data can specify the deletion of user accounts (if the "recstatus" flag is set to 3, which represents deletion of an account). As is standard in Moodle, the user record isn\'t actually deleted from Moodle\'s database, but a flag is set to mark the account as deleted.';
+$string['disableenrolmentandremoveallroles'] = 'Suspend enrolment and remove roles';
+$string['disableenrolonly'] = 'Suspend enrolment only';
 $string['doitnow'] = 'perform an IMS Enterprise import right now';
 $string['emptyattribute'] = 'Leave it empty';
 $string['filelockedmail'] = 'The text file you are using for IMS-file-based enrolments ({$a}) can not be deleted by the cron process.  This usually means the permissions are wrong on it.  Please fix the permissions so that Moodle can delete the file, otherwise it might be processed repeatedly.';
@@ -66,11 +68,13 @@ $string['messageprovider:imsenterprise_enrolment'] = 'IMS Enterprise enrolment m
 $string['miscsettings'] = 'Miscellaneous';
 $string['nestedcategories'] = 'Allow nested categories';
 $string['nestedcategories_desc'] = 'If enabled IMS Enterprise will create nested categories';
+$string['noaction'] = 'No action';
 $string['pluginname'] = 'IMS Enterprise file';
 $string['pluginname_desc'] = 'This method will repeatedly check for and process a specially-formatted text file in the location that you specify.  The file must follow the IMS Enterprise specifications containing person, group, and membership XML elements.';
 $string['privacy:metadata'] = 'The IMS Enterprise file enrolment plugin does not store any personal data.';
 $string['processphoto'] = 'Add user photo data to profile';
 $string['processphotowarning'] = 'Warning: Image processing is likely to add a significant burden to the server. You are recommended not to activate this option if large numbers of students are expected to be processed.';
+$string['removeenrolmentandallroles'] = 'Delete enrolment and roles';
 $string['restricttarget'] = 'Only process data if the following target is specified';
 $string['restricttarget_desc'] = 'An IMS Enterprise data file could be intended for multiple "targets" - different LMSes, or different systems within a school/university. It\'s possible to specify in the Enterprise file that the data is intended for one or more named target systems, by naming them in <target> tags contained within the <properties> tag.
 
@@ -88,6 +92,8 @@ $string['sourcedidfallback_desc'] = 'In IMS data, the <sourcedid> field represen
 Some student information systems fail to output the <userid> field. If this is the case, you should enable this setting to allow for using the <sourcedid> as the Moodle user ID. Otherwise, leave this setting disabled.';
 $string['truncatecoursecodes'] = 'Truncate course codes to this length';
 $string['truncatecoursecodes_desc'] = 'In some situations you may have course codes which you wish to truncate to a specified length before processing. If so, enter the number of characters in this box. Otherwise, leave the box blank and no truncation will occur.';
+$string['unenrolaction'] = 'Unenrol action';
+$string['unenrolaction_desc'] = 'Action to be taken when a user is unenrolled from a course (only applies when the unenrol setting above is enabled).';
 $string['updatecourses'] = 'Update course';
 $string['updatecourses_desc'] = 'If enabled, the IMS Enterprise enrolment plugin can update course full and short names (if the "recstatus" flag is set to 2, which represents an update).';
 $string['updateusers'] = 'Update user accounts when specified in IMS data';

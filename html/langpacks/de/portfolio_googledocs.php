@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'de', version '3.11'.
+ * Strings for component 'portfolio_googledocs', language 'de', version '4.1'.
  *
  * @package     portfolio_googledocs
  * @category    string
@@ -30,7 +30,7 @@ $string['noauthtoken'] = 'Von Google wurde kein Authentifikationstoken empfangen
 $string['nooauthcredentials'] = 'OAuth Credentials erforderlich';
 $string['nooauthcredentials_help'] = 'Um das Google Drive Portfolio zu verwenden, sind die OAuth Einstellungen für dieses Portfolio vorzunehmen.';
 $string['nosessiontoken'] = 'Ein Export zu Google wird wegen eines fehlenden Sessiontokens verhindert';
-$string['oauthinfo'] = '<p>Um dieses Plugin nutzen zu können, ist eine Registrierung bei Google erforderlich. Entsprechende Informationen finden Sie auf <a href="{$a->docsurl}">Google OAuth 2.0 Setup</a>.</p><p>Während der Registrierung müssen Sie folgende URL als \'Authorized Redirect URIs\' eingeben: <br />{$a->callbackurl}</p>Sie erhalten eine Client ID und ein Secret, mit denen Sie alle Plugins für Google Drive und Picasa konfigurieren können.</p>';
+$string['oauthinfo'] = '<p>Um dieses Plugin nutzen zu können, ist eine Registrierung bei Google erforderlich. Entsprechende Infos finden Sie in der Dokumentation <a href="{$a->docsurl}">Google OAuth 2.0 Setup</a>.</p><p>Für die Registrierung müssen Sie folgende URL als \'Authorized Redirect URIs\' eingeben: <br />{$a->callbackurl}</p>Nach der Registrierung erhalten Sie eine Client-ID und ein Secret, mit denen Sie alle Plugins für Google Drive konfigurieren können.</p>';
 $string['pluginname'] = 'Google Drive';
 $string['privacy:metadata'] = 'Dieses Plugin sendet Daten an einen extern verbundenen Google-Account. Es speichert lokal keine Daten.';
 $string['privacy:metadata:data'] = 'Personenbezogene Daten, die vom Portfolio-Subsystem übergeben wurden';

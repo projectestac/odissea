@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'ca', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'ca', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -65,6 +65,7 @@ $string['pleaseenterananswer'] = 'Introduïu una resposta.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Introduïu una resposta sense utilitzar el separador de milers ({$a}).';
 $string['pluginname'] = 'Numèrica';
 $string['pluginname_help'] = 'Des del punt de vista de l\'estudiant, una pregunta numèrica és com una pregunta de resposta breu. La diferència és que les respostes numèriques poden permetre un cert marge d\'error. Això permet considerar  un interval de respostes com a una resposta única. Per exemple, si la resposta és 10 amb un error acceptat de 2, aleshores s\'acceptarà com a correcte qualsevol nombre entre 8 i 12.';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta numèrica';
 $string['pluginnameediting'] = 'S\'està editant una pregunta numèrica';
 $string['pluginnamesummary'] = 'Permet una resposta numèrica, possiblement acompanyada d\'unitats, que es qualifica comparant-la amb diversos models de resposta, possiblement amb toleràncies.';
@@ -101,13 +102,6 @@ $string['unitposition'] = 'Posició de les unitats';
 $string['units'] = 'Unitats';
 $string['unitselect'] = 'un menú desplegable';
 $string['unitx'] = 'Unitat {no}';
-$string['validnumberformats'] = 'Formats numèrics vàlids';
-$string['validnumberformats_help'] = '* números normals 13500.67; 13 500.67; 13500,67 o 13 500,67
-
-* Si els paràmetres del vostre paquet d\'idioma (fitxer langconfig.php) estableixen la coma (,) com a separador dels milers, aleshores poseu *SEMPRE* el punt decimal com en 13,500.67 : 13,500.
-
-* per a formes exponencials com el nombre 1,350067 * 10<sup>4</sup>, utilitzeu 1,350067 E4 : 1,350067 E04';
-$string['validnumbers'] = '13500.67; 13 500.67; 13,500.67; 13500,67; 13 500,67; 1.350067 E4 o bé 1.350067 E04';
 $string['xmustbenumeric'] = 'Cal que {$a} sigui un número.';
 $string['xmustnotbenumeric'] = '{$a} no pot ser un número.';
 $string['youmustenteramultiplierhere'] = 'Aquí heu d\'introduir un multiplicador';

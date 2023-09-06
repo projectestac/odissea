@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_poodll', language 'es', version '3.11'.
+ * Strings for component 'atto_poodll', language 'es', version '4.1'.
  *
  * @package     atto_poodll
  * @category    string
@@ -51,6 +51,7 @@ $string['poodll:allowvideo'] = 'Permitir la grabación vídeo';
 $string['poodll:allowwhiteboard'] = 'Permitir Pizarra';
 $string['poodll:allowwidgets'] = 'Permitir Widgets';
 $string['poodll:visible'] = 'Visible';
+$string['privacy:metadata'] = 'El plugin Atto_poodll no almacena ningún dato personal.';
 $string['recorderstoshow'] = 'Grabaciones para mostrar';
 $string['recordtheninsert'] = 'Tras la grabación, pulse insertar.';
 $string['settings'] = 'PoodLL Anywhere(Atto)';

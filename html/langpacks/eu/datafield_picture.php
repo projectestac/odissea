@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'eu', version '3.11'.
+ * Strings for component 'datafield_picture', language 'eu', version '4.1'.
  *
  * @package     datafield_picture
  * @category    string
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_invalidparam1'] = 'Banakako ikuspegiaren zabalera zenbakizko balioa izan behar da.';
+$string['error_invalidparam2'] = 'Banakako ikuspegiaren altuera zenbakizko balioa izan behar da.';
+$string['error_invalidparam4'] = 'Zerrenda-ikuspegiaren zabalera zenbakizko balioa izan behar da.';
+$string['error_invalidparam5'] = 'Zerrenda-ikuspegiaren altuera zenbakizko balioa izan behar da.';
 $string['fieldtypelabel'] = 'Irudia';
 $string['pluginname'] = 'Irudia';
 $string['privacy:metadata'] = 'Irudia eremu-osagaiak ez du datu pertsonalik biltzen; datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['sample'] = 'Irudi deskribapenaren gakoa';

@@ -75,17 +75,18 @@ class question_dataset_dependent_items_form extends question_wizard_form {
      * @param MoodleQuickForm $mform the form being built.
      */
     public function __construct($submiturl, $question, $regenerate) {
-        global $SESSION, $CFG, $DB;
+        global $SESSION;
+
+        // Validate the question category.
+        if (!isset($question->categoryobject)) {
+            throw new moodle_exception('categorydoesnotexist', 'question');
+        }
+        $question->category = $question->categoryobject->id;
+        $this->category = $question->categoryobject;
+        $this->categorycontext = context::instance_by_id($this->category->contextid);
         $this->regenerate = $regenerate;
         $this->question = $question;
         $this->qtypeobj = question_bank::get_qtype($this->question->qtype);
-        // Validate the question category.
-        if (!$category = $DB->get_record('question_categories',
-                array('id' => $question->category))) {
-            print_error('categorydoesnotexist', 'question', $returnurl);
-        }
-        $this->category = $category;
-        $this->categorycontext = context::instance_by_id($category->contextid);
         // Get the dataset defintions for this question.
         if (empty($question->id)) {
             $this->datasetdefs = $this->qtypeobj->get_dataset_definitions(
@@ -334,12 +335,13 @@ class question_dataset_dependent_items_form extends question_wizard_form {
 
         // Submit buttons.
         if ($this->noofitems > 0) {
-            $buttonarray = array();
+            $buttonarray = [];
             $buttonarray[] = $mform->createElement(
                     'submit', 'savechanges', get_string('savechanges'));
-
-            $previewlink = $PAGE->get_renderer('core_question')->question_preview_link(
-                        $this->question->id, $this->categorycontext, true);
+            if (\core\plugininfo\qbank::is_plugin_enabled('qbank_previewquestion')) {
+                $previewlink = $PAGE->get_renderer('qbank_previewquestion')->question_preview_link($this->question->id,
+                        $this->categorycontext, true);
+            }
             $buttonarray[] = $mform->createElement('static', 'previewlink', '', $previewlink);
 
             $mform->addGroup($buttonarray, 'buttonar', '', array(' '), false);

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'nl', version '3.11'.
+ * Strings for component 'qtype_truefalse', language 'nl', version '4.1'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -34,9 +34,13 @@ $string['feedbacktrue'] = 'Feedback voor het antwoord "Waar"';
 $string['pleaseselectananswer'] = 'Kies een antwoord.';
 $string['pluginname'] = 'Waar/Niet waar';
 $string['pluginname_help'] = 'Als antwoord op de vraag (die ook een afbeelding kan bevatten), moet de respondent antwoorden met waar of niet waar.';
+$string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'Een waar/niet waar-vraag toevoegen';
 $string['pluginnameediting'] = 'Een  waar/niet waar-vraag bewerken';
 $string['pluginnamesummary'] = 'Een eenvoudige vorm van meerkeuzevraag met slechts twee keuzes: waar of niet waar';
 $string['privacy:metadata'] = 'De waar/niet waar vraagtype-plugin bewaart geen persoonlijke gegevens.';
+$string['privacy:preference:showstandardinstruction'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
 $string['selectone'] = 'Kies één:';
+$string['showstandardinstruction'] = 'Toon standaardinstructies';
+$string['showstandardinstruction_help'] = 'Of de instructie "Kies één:" moet getoond worden voor waar/niet waar antwoorden.';
 $string['true'] = 'Waar';

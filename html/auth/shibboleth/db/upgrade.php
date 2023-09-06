@@ -32,22 +32,10 @@ defined('MOODLE_INTERNAL') || die();
 function xmldb_auth_shibboleth_upgrade($oldversion) {
     global $CFG, $DB, $OUTPUT;
 
-    // Automatically generated Moodle v3.6.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.7.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.8.0 release upgrade line.
-    // Put any upgrade step following this.
-
     // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.10.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2020110901) {
+    if ($oldversion < 2021052501) {
         // The 'Data modification API' setting in the Shibboleth authentication plugin can no longer be configured
         // to use files located within the site data directory, as it exposes the site to security risks. Therefore,
         // we need to find every existing case and reset the 'Data modification API' setting to its default value.
@@ -66,10 +54,13 @@ function xmldb_auth_shibboleth_upgrade($oldversion) {
             echo $OUTPUT->notification($warn, 'notifyproblem');
         }
 
-        upgrade_plugin_savepoint(true, 2020110901, 'auth', 'shibboleth');
+        upgrade_plugin_savepoint(true, 2021052501, 'auth', 'shibboleth');
     }
 
-    // Automatically generated Moodle v3.11.0 release upgrade line.
+    // Automatically generated Moodle v4.0.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v4.1.0 release upgrade line.
     // Put any upgrade step following this.
 
     return true;

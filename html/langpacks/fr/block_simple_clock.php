@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_simple_clock', language 'fr', version '3.11'.
+ * Strings for component 'block_simple_clock', language 'fr', version '4.1'.
  *
  * @package     block_simple_clock
  * @category    string
@@ -41,9 +41,9 @@ $string['config_day_help'] = '<p>Afficher le nom du jour ajoute des informations
 $string['config_header'] = 'Afficher l\'en-tête';
 $string['config_header_help'] = '<p>Avec ces réglages, vous contrôlez l\'en-tête du bloc, incluant le titre.</p>
 <p style="background:yellow;border:3px dashed black;padding:10px;"><strong>Note</strong><br />
-Quand le "Mode Edition" est activé, l\'en-tête du bloc sera montrée aux enseignants et aux administrateurs.
-Quand le "Mode Edition" est désactivé, l\'en-tête sera cachée.
-Quand ce paramètre est sur "Non", les étudiants ne verront pas l\'en-tête, "Mode Edition" activé ou non.';
+Quand le "Mode Édition" est activé, l\'en-tête du bloc sera montrée aux enseignants et aux administrateurs.
+Quand le "Mode Édition" est désactivé, l\'en-tête sera cachée.
+Quand ce paramètre est sur "Non", les étudiants ne verront pas l\'en-tête, "Mode Édition" activé ou non.';
 $string['config_icons'] = 'Afficher les icônes';
 $string['config_icons_help'] = '<p>Avec ce réglage, vous pouvez contrôler si les icônes sont affichées à côté de chaque étiquette de l\'horloge.</p>
 <p>L\'icône du site est affichée à côté du mot "serveur". L\'image de l\'utilisateur s\'affiche à côté de son horloge.</p>';

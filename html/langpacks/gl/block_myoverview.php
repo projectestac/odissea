@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'gl', version '3.11'.
+ * Strings for component 'block_myoverview', language 'gl', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Destacar este curso';
-$string['all'] = 'Todos (agás o retirado da vista)';
-$string['allincludinghidden'] = 'Todo';
+$string['all'] = 'Todo';
+$string['allincludinghidden'] = 'Todo (incluído o arquivado)';
 $string['aria:addtofavourites'] = 'Destacar para';
-$string['aria:allcourses'] = 'Amosar todos os cursos, agás os cursos eliminados da vista';
+$string['aria:allcourses'] = 'Amosar todos os cursos agás os arquivados';
 $string['aria:allcoursesincludinghidden'] = 'Amosar todos os cursos';
 $string['aria:card'] = 'Cambiar a vista de tarxeta';
 $string['aria:controls'] = 'Controis da vista xeral de curso';
@@ -38,10 +38,10 @@ $string['aria:courseprogress'] = 'Progreso do curso:';
 $string['aria:coursesummary'] = 'Texto do resumo do curso:';
 $string['aria:customfield'] = 'Amosar {$a} cursos';
 $string['aria:displaydropdown'] = 'Amosar o menú despregábel';
-$string['aria:favourites'] = 'Amosar os cursos destacados';
+$string['aria:favourites'] = 'Amosar só os cursos destacados';
 $string['aria:future'] = 'Amosar os cursos futuros';
 $string['aria:groupingdropdown'] = 'Agrupando o menú despregábel';
-$string['aria:hiddencourses'] = 'Amosar os cursos retirados da vista';
+$string['aria:hiddencourses'] = 'Amosar os cursos arquivados';
 $string['aria:hidecourse'] = 'Retirar {$a} da vista';
 $string['aria:inprogress'] = 'Amosar os cursos en desenvolvemento';
 $string['aria:lastaccessed'] = 'Ordenar os cursos pola última data de acceso';
@@ -57,36 +57,39 @@ $string['availablegroupings'] = 'Filtros dispoñíbeis';
 $string['availablegroupings_desc'] = 'Filtros de cursos que poden seleccionar os usuarios. Se non se selecciona ningún, amosaranse todos os cursos.';
 $string['card'] = 'Tarxeta';
 $string['cards'] = 'Tarxetas';
-$string['complete'] = 'concluído';
+$string['clearsearch'] = 'Limpar a busca';
 $string['completepercent'] = '{$a}% completado';
 $string['courseprogress'] = 'Progreso do curso:';
 $string['customfield'] = 'Campo personalizado';
 $string['customfiltergrouping'] = 'Campo a usar';
 $string['customfiltergrouping_nofields'] = 'Esta opción require que se configure un campo personalizado do curso e que sexa visíbel para todos.';
-$string['displaycategories'] = 'Amosar categorías';
+$string['displaycategories'] = 'Amosar as categorías';
 $string['displaycategories_help'] = 'Amosar a categoría do curso en elementos do Taboleiro incluíndo tarxetas, elementos, elementos da lista e elementos de resumo.';
 $string['favourites'] = 'Destacado';
 $string['future'] = 'Futuros';
-$string['hidden'] = 'Cursos retirados da vista';
-$string['hiddencourses'] = 'Retirado da vista';
-$string['hidecourse'] = 'Retirar da vista';
+$string['hidden'] = 'Cursos arquivados';
+$string['hiddencourses'] = 'Arquivado';
+$string['hidecourse'] = 'Arquivo';
 $string['inprogress'] = 'Avanzando';
 $string['lastaccessed'] = 'Último acceso';
 $string['layouts'] = 'Deseños dispoñíbeis';
 $string['layouts_help'] = 'Deseños xerais do curso que están dispoñíbeis para a selección polos usuarios. Se non se selecciona ningún, empregarase o deseño da tarxeta.';
 $string['list'] = 'Lista';
 $string['myoverview:myaddinstance'] = 'Engade un novo bloque de vista xeral de curso no Taboleiro';
-$string['nocourses'] = 'Non hai cursos';
 $string['nocustomvalue'] = 'Non {$a}';
 $string['past'] = 'Pasados';
-$string['pluginname'] = 'Vista xeral de cursos';
+$string['pluginname'] = 'Vista xeral do curso';
 $string['privacy:metadata:overviewgroupingpreference'] = 'A preferencia de agrupamento do bloque de vista xeral de cursos.';
 $string['privacy:metadata:overviewpagingpreference'] = 'A preferencia de paxinado do bloque de vista xeral de cursos.';
 $string['privacy:metadata:overviewsortpreference'] = 'A preferencia de ordenamento do bloque de vista xeral de cursos.';
 $string['privacy:metadata:overviewviewpreference'] = 'A preferencia de vista do bloque de vista xeral de cursos.';
 $string['privacy:request:preference:set'] = 'O valor do axuste «{$a->name}» era «{$a->value}»';
 $string['removefromfavourites'] = 'Retirar o destaque a este curso';
-$string['shortname'] = 'Nome curto';
-$string['show'] = 'Restaurar para ver';
+$string['searchcourses'] = 'Buscar cursos';
+$string['shortname'] = 'Nome abreviado';
+$string['show'] = 'Desarquivar';
+$string['sortbylastaccessed'] = 'Ordenar por último acceso';
+$string['sortbyshortname'] = 'Ordenar por nome curto';
+$string['sortbytitle'] = 'Ordenar polo nome do curso';
 $string['summary'] = 'Resumo';
 $string['title'] = 'Nome do curso';

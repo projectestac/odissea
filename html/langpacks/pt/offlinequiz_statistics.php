@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_statistics', language 'pt', version '3.11'.
+ * Strings for component 'offlinequiz_statistics', language 'pt', version '4.1'.
  *
  * @package     offlinequiz_statistics
  * @category    string
@@ -29,7 +29,7 @@ $string['actualresponse'] = 'Resposta atual';
 $string['allattempts'] = 'todas as tentativas';
 $string['allattemptsavg'] = 'Média';
 $string['allattemptscount'] = 'Total de resultados totalmente avaliados';
-$string['allgroups'] = 'Estatísticas de todos grupos';
+$string['allgroups'] = 'Todos grupos';
 $string['analysisofresponses'] = 'Análise das respostas';
 $string['analysisofresponsesfor'] = 'Análise das respostas para {$a}.';
 $string['attempts'] = 'Tentativas';
@@ -89,16 +89,16 @@ $string['position'] = 'Posição';
 $string['positions'] = 'Posições';
 $string['preferencespage'] = 'Preferências para esta página apenas';
 $string['preferencessave'] = 'Guardar preferências';
-$string['privacy:metadata'] = 'Este módulo não armazena qualquer dado pessoal.';
+$string['privacy:metadata'] = 'Este módulo não armazena quaisquer dados pessoais.';
 $string['questionandanswerstats'] = 'Perguntas + Respostas';
-$string['questionandanswerstatsheader'] = 'Estatísticas - Análise das perguntas e respostas';
+$string['questionandanswerstatsheader'] = 'Análise das perguntas e respostas';
 $string['questioninformation'] = 'Informação da pergunta';
 $string['questionname'] = 'Nome da pergunta';
 $string['questionnumber'] = '#P';
 $string['questionstatistics'] = 'Estatísticas da pergunta';
 $string['questionstats'] = 'Análise das pergunta';
 $string['questionstatsfilename'] = 'estatisticaspergunta';
-$string['questionstatsheader'] = 'Estatísticas - Análise das perguntas';
+$string['questionstatsheader'] = 'Análise das perguntas';
 $string['questiontype'] = 'Tipo de pergunta';
 $string['random_guess_score'] = 'Palpite aleatório';
 $string['recalculatenow'] = 'Recalcular agora';
@@ -111,12 +111,12 @@ $string['standarderror'] = 'Erro padrão';
 $string['statistics'] = 'Estatísticas';
 $string['statistics:componentname'] = 'Relatório das estatísticas do Teste Offline';
 $string['statistics:view'] = 'Ver relatório das estatísticas';
-$string['statisticsforgroup'] = 'Estatísticas do grupo';
+$string['statisticsforgroup'] = 'Grupo';
 $string['statisticshelp'] = 'Ajuda sobre estatísticas do Teste Offline';
 $string['statisticsreport'] = 'Relatório das estatísticas';
 $string['statisticsreportgraph'] = 'Estatísticas das posições da pergunta';
 $string['statsfor'] = 'Estatísticas do Teste Offline ({$a})';
 $string['statsoverview'] = 'Visão global';
-$string['statsoverviewheader'] = 'Visão global';
+$string['statsoverviewheader'] = 'Informação do teste';
 $string['worstgrade'] = 'Nota mais baixa';
 $string['wrong'] = 'Resposta incorreta';

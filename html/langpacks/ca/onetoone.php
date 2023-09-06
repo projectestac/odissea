@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'onetoone', language 'ca', version '3.11'.
+ * Strings for component 'onetoone', language 'ca', version '4.1'.
  *
  * @package     onetoone
  * @category    string
@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attendance'] = 'Assistència';
 $string['details'] = 'Detalls';
+$string['edit'] = 'Edita';
 $string['error:couldnotaddsession'] = 'No s\'ha pogut afegir una sessió';
 $string['reminder'] = 'Recordatori';
 $string['submitted'] = 'S\'ha tramès';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'ar', version '3.11'.
+ * Strings for component 'qtype_truefalse', language 'ar', version '4.1'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -34,9 +34,13 @@ $string['feedbacktrue'] = 'الإفادة إزاء الإجابة بـ \'صح\'.
 $string['pleaseselectananswer'] = 'لطفاً، إختر جواباً.';
 $string['pluginname'] = 'صح/خطأ';
 $string['pluginname_help'] = 'جواباً على سؤال (قد يتضمن صورة)، يقوم المجيب بالاختيار ما بين صح أو خطأ.';
+$string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'إضافة سؤال صح/خطأ';
 $string['pluginnameediting'] = 'تحرير سؤال صح/خطأ';
 $string['pluginnamesummary'] = 'نوع بسيط من الأسئلة متعددة الخيارات مع خيارين فقط \'صح\' و \'خطأ\'';
 $string['privacy:metadata'] = 'إن ملحق نوع السؤال، صح/خطأ لا يخزن أي بيانات شخصية.';
+$string['privacy:preference:showstandardinstruction'] = 'فيما إذا كان ينبغي إظهار التعليمات القياسية';
 $string['selectone'] = 'إختر واحداً:';
+$string['showstandardinstruction'] = 'أظهر التعليمات القياسية';
+$string['showstandardinstruction_help'] = 'فيما إذا كان ينبغي إظهار التعليمات "إختر واحدًا:" قبل إجابات صح/خطأ.';
 $string['true'] = 'صح';

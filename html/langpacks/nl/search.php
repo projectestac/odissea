@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'nl', version '3.11'.
+ * Strings for component 'search', language 'nl', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -43,6 +43,7 @@ $string['confirm_delete'] = 'Weet je zeker dat je de index voor {$a} wil verwijd
 $string['confirm_deleteall'] = 'Weet je zeker dat je alle geïndexeerde inhoud nu wil verwijderen? Zolang de site niet opnieuw geïndexeerd is, zullen gebruikers geen zoekresultaten krijgen.';
 $string['confirm_indexall'] = 'Weet je zeker dat je de geïndexeerde inhoud nu wil verwijderen? Als een grote hoeveelheid inhoud geïndexeerd moet worden, dan kan dit een lange tijd in beslag nemen. Voor live servers moet je het indexeren overlaten aan de "Globaal zoeken indexeren" geplande taak.';
 $string['confirm_reindexall'] = 'Weet je zeker dat je alle site-inhoud nu opnieuw wil indexeren? Als de site een grote hoeveelheid inhoud heeft, dan zal dit een lange tijd in beslag nemen en gebruikers zullen geen volledige zoekresultaten krijgen tot het indexeren voltooid is.';
+$string['content:courserole'] = '{$a->role} in {$a->course}';
 $string['core-all'] = 'Allemaal';
 $string['core-course-content'] = 'Cursusinhoud';
 $string['core-courses'] = 'Cursussen';
@@ -115,6 +116,7 @@ $string['schemaversionunknown'] = 'De zoekrobot heeft geen weet van het de huidi
 $string['score'] = 'Score';
 $string['search'] = 'Zoek';
 $string['search:course'] = 'Cursussen';
+$string['search:course_teacher'] = 'Cursusleraar';
 $string['search:customfield'] = 'Aangepaste velden voor cursussen';
 $string['search:message_received'] = 'Berichten - ontvangen';
 $string['search:message_sent'] = 'Berichten - verzonden';
@@ -136,6 +138,7 @@ $string['thesewordsmustappear'] = 'Deze woorden moeten voorkomen';
 $string['thesewordsmustnotappear'] = 'Deze woorden mogen niet voorkomen';
 $string['title'] = 'Titel';
 $string['tofetchtheseresults'] = 'met deze resultaten overeenkomen';
+$string['topresults'] = 'Top resultaten';
 $string['totalsize'] = 'Totale grootte';
 $string['totime'] = 'Gewijzigd voor';
 $string['type'] = 'Type';

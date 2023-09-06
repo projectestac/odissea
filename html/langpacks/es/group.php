@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'es', version '3.11'.
+ * Strings for component 'group', language 'es', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -43,7 +43,7 @@ $string['createautomaticgrouping'] = 'Crear agrupamiento automático';
 $string['creategroup'] = 'Crear grupo';
 $string['creategrouping'] = 'Crear agrupamiento';
 $string['creategroupinselectedgrouping'] = 'Crear grupo en agrupamiento';
-$string['createingrouping'] = 'Agrupación de grupos creados automáticamente';
+$string['createingrouping'] = 'Agrupamiento de grupos creados automáticamente';
 $string['createorphangroup'] = 'Crear un grupo huérfano';
 $string['csvdelimiter'] = 'Delimitador CSV';
 $string['databaseupgradegroups'] = 'La versión de grupos es ahora {$a}';
@@ -87,6 +87,7 @@ $string['eventgroupmemberadded'] = 'Miembro del grupo añadido';
 $string['eventgroupmemberremoved'] = 'Miembro del grupo eliminado';
 $string['eventgroupupdated'] = 'Grupo actualizado';
 $string['existingmembers'] = 'Miembros existentes: {$a}';
+$string['exportgroupsgroupings'] = 'Descargar grupos y agrupamientos como';
 $string['filtergroups'] = 'Filtrar grupos por:';
 $string['group'] = 'Grupo';
 $string['groupaddedsuccesfully'] = 'Grupo {$a} añadido con éxito';
@@ -145,6 +146,7 @@ $string['importgroups_help'] = 'Los grupos pueden ser importados mediante un arc
 * El primer registro contiene una lista de nombres de campos que definen el formato del resto del archivo
 * Es obligatorio el campo groupname
 * Son opcionales los campos groupidnumber, description, enrolmentkey, groupingname, enablemessaging';
+$string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Incluir únicamente matriculas activas';
 $string['includeonlyactiveenrol_help'] = 'Si está activado, los usuarios suspendidos no serán incluidos en los grupos.';
 $string['javascriptrequired'] = 'Esta página requiere que Javascript esté activado.';

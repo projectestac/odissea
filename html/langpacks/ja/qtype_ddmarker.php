@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ja', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'ja', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -41,11 +41,11 @@ $string['dropbackground'] = 'マーカをドラッグするための背景イメ
 $string['dropzone'] = 'ドロップゾーン {$a}';
 $string['dropzoneheader'] = 'ドロップゾーン';
 $string['dropzones'] = 'ドロップゾーン';
-$string['dropzones_help'] = 'ドロップゾーンは座標または上のプレビュでポジションをドラッグすることにより定義することができます。
+$string['dropzones_help'] = 'ドロップゾーンは座標または上のプレビューでポジションをドラッグすることにより定義することができます。
 
-最初に形 (円、長方形または多角形) を選択することによりプレビュの上部左側に新しいドロップゾーンの形を追加します。これはあなたがドロップゾーンの編集中にプレビュを表示するためのマーカセクションの最小化に有用です。
+最初に形 (円、長方形または多角形) を選択することによりプレビューの上部左側に新しいドロップゾーンの形を追加します。これはあなたがドロップゾーンの編集中にプレビューを表示するためのマーカセクションの最小化に有用です。
 
-形の編集はプレビュ内の形をクリックして編集ハンドルを表示して始めることができます。あなたは中央ハンドルを使用するか、形の範囲の交点ハンドルで調整することにより形を移動することができます。
+形の編集はプレビュー内の形をクリックして編集ハンドルを表示して始めることができます。あなたは中央ハンドルを使用するか、形の範囲の交点ハンドルで調整することにより形を移動することができます。
 
 多角形のみ交点ハンドルをクリックしている間にCTRLボタン (Macのcommandボタン) を押したままにすることで新しい多角形の交点を追加することができます。線を交差させずに多角形を可能な限りシンプルにしてください。
 
@@ -56,9 +56,11 @@ $string['dropzones_help'] = 'ドロップゾーンは座標または上のプレ
 * 長方形: 左, トップ, 幅, 高さ<br />例えば次のようになります: <code>20, 60; 80, 40</code>
 * 多角形: x1, y1; x2, y2; ...; xn, yn<br />例えば次のようになります: <code>20,60;100,60;20,100</code>
 
-マーカーテキストを選択することによりプレビュの形にそのテキストを追加します。';
+マーカーテキストを選択することによりプレビューの形にそのテキストを追加します。';
 $string['followingarewrong'] = '以下のマーカは正しくないエリアに置かれました: {$a}';
 $string['followingarewrongandhighlighted'] = '次のマーカは正しくない場所に置かれています : {$a}。ハイライトされたマーカは正しい場所で表示されています。<br />許可された場所をハイライトするにはマーカをクリックしてください。';
+$string['formerror_dragrequired'] = 'あなたはこの問題に少なくとも1つのマーカを追加する必要があります。';
+$string['formerror_droprequired'] = 'あなたはこの問題に少なくとも1つのドロップゾーンを定義する必要があります。';
 $string['formerror_nobgimage'] = 'あなたはドラッグ＆ドロップエリアの背景として使用するイメージを選択する必要があります。';
 $string['formerror_noitemselected'] = 'あなたはドロップゾーンを指定しましたがゾーンにドラッグする必要のあるマーカを選択していません。';
 $string['formerror_nosemicolons'] = 'あなたの座標ストリングにはセミコロンがありません。あなたの {$a->shape} の座標は次のように記述される必要があります - {$a->coordsstring}。';
@@ -79,18 +81,19 @@ $string['noofdrags'] = 'マーカ数';
 $string['pleasedragatleastonemarker'] = 'あなたの解答は完了していません。あなたはイメージに少なくとも1つのマーカを置く必要があります。';
 $string['pluginname'] = 'ドラッグ＆ドロップマーカ';
 $string['pluginname_help'] = 'ドラッグ＆ドロップマーカは背景イメージに定義されたドロップゾーンにテキストラベルをドラッグ＆ドロップするためのレスポンデントを必要とします。';
+$string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = 'ドラッグ＆ドロップマーカの追加';
 $string['pluginnameediting'] = 'ドラッグ＆ドロップマーカの編集';
 $string['pluginnamesummary'] = 'マーカは背景イメージにドラッグ＆ドロップされます。
 
 注意: この問題タイプは視覚に障害のあるユーザは利用できません。';
-$string['previewareaheader'] = 'プレビュ';
+$string['previewareaheader'] = 'プレビュー';
 $string['previewareamessage'] = '背景イメージファイルを選択してマーカのテキストラベルを入力した後、ドラッグされるための背景イメージのドロップゾーンを定義してください。';
-$string['privacy:metadata'] = 'ドラッグ＆ドロップマーカ問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
+$string['privacy:metadata'] = 'ドラッグ＆ドロップマーカ問題タイププラグインは問題作成者がユーザプレファレンスとしてデフォルトオプションを設定できます。';
 $string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';
 $string['privacy:preference:penalty'] = '問題が「複数回受験インタラクティブ」または「アダプティブモード」で出題された場合のそれぞれの不正解のペナルティです。';
 $string['privacy:preference:shuffleanswers'] = '解答を自動的にシャッフルするかどうか指定します。';
-$string['refresh'] = 'プレビュをリフレッシュする';
+$string['refresh'] = 'プレビューをリフレッシュする';
 $string['shape'] = '形状';
 $string['shape_circle'] = '円';
 $string['shape_circle_coords'] = 'x,y;r (xおよびyは円の中心の座標、rは半径です)';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ja', version '3.11'.
+ * Strings for component 'notes', language 'ja', version '4.1'.
  *
  * @package     notes
  * @category    string
@@ -31,6 +31,7 @@ $string['addbulknotedonesingle'] = '1 名に新しいノートが追加されま
 $string['addbulknotesingle'] = '1 名に新しいノートを追加する';
 $string['addnewnote'] = '新しいノートを追加する';
 $string['addnewnoteselect'] = 'ノートを書くユーザを選択する';
+$string['author'] = '作成者';
 $string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['configenablenotes'] = '個別のユーザに関するノートの保存を有効にします。';
 $string['content'] = 'コンテンツ';
@@ -73,6 +74,7 @@ $string['publishstate_help'] = 'ノートコンテクストでは誰がノート
 * パーソナル - ノートはあなただけに表示されます。
 * コース - ノートはこのコースの教師に表示されます。
 * サイト - ノートはすべてのコースの教師に表示されます。';
+$string['recipient'] = '受領者';
 $string['site'] = 'サイト';
 $string['sitenotes'] = 'サイトノート';
 $string['unknown'] = '不明';

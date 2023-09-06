@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ru', version '3.11'.
+ * Strings for component 'enrol', language 'ru', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -58,6 +58,7 @@ $string['enrollednewusers'] = 'Успешно записано {$a} новых �
 $string['enrolledusers'] = 'Зачисленные на курс пользователи';
 $string['enrolledusersmatching'] = 'Подходящие записанные пользователи';
 $string['enrolme'] = 'Записаться на курс';
+$string['enrolment'] = 'Зачисление';
 $string['enrolmentinstances'] = 'Способы зачисления на курс';
 $string['enrolmentmethod'] = 'Способ зачисления';
 $string['enrolmentnew'] = 'Новое зачисление в {$a}';
@@ -86,7 +87,7 @@ $string['eventenrolinstancedeleted'] = 'Удален способ зачисле
 $string['eventenrolinstanceupdated'] = 'Обновлен способ зачисления на курс';
 $string['eventuserenrolmentcreated'] = 'Пользователь зачислен на курс';
 $string['eventuserenrolmentdeleted'] = 'Пользователь отчислен из курса';
-$string['eventuserenrolmentupdated'] = 'Зачисление пользователя на курс обновлена';
+$string['eventuserenrolmentupdated'] = 'Зачисление пользователя на курс обновлено';
 $string['expirynotify'] = 'Уведомлять об истечении срока обучения';
 $string['expirynotify_help'] = 'Этот параметр определяет, будет ли посылаться уведомление об истечении срока обучения.';
 $string['expirynotifyall'] = 'Преподавателя и учащегося';
@@ -111,6 +112,7 @@ $string['invalidrequest'] = 'Неверный запрос';
 $string['invalidrole'] = 'Неправильная роль';
 $string['manageenrols'] = 'Управление способами зачисления';
 $string['manageinstance'] = 'Управление';
+$string['method'] = 'Способ';
 $string['migratetomanual'] = 'Переход к ручному зачислению';
 $string['nochange'] = 'Без изменений';
 $string['noexistingparticipants'] = 'Нет участников';

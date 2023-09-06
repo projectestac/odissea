@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'de', version '3.11'.
+ * Strings for component 'report_security', language 'de', version '4.1'.
  *
  * @package     report_security
  * @category    string
@@ -25,6 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['check_antivirus_details'] = 'Dieser Status überprüft, ob ein kürzlich aufgetretener Fehler erkannt wurde, basierend auf dem in den Antivirus-Einstellungen festgelegten Schwellenwert.';
+$string['check_antivirus_error'] = 'Im letzten {$a->lookback} wurden {$a->errors} Fehler erkannt.';
+$string['check_antivirus_info'] = 'Aktuell sind keine Antivirus-Scanner aktiviert.';
+$string['check_antivirus_logstore_not_supported'] = 'Der Status der Antiviren-Scanner kann aufgrund des ausgewählten Logdaten-Typs nicht überprüft werden';
+$string['check_antivirus_name'] = 'Antivirus';
+$string['check_antivirus_ok'] = '{$a->scanners} Antivirus-Scanner aktiviert, im letzten {$a->lookback} wurden keine Probleme festgestellt.';
 $string['check_configrw_details'] = '<p>Nach der Installation sollten die Zugriffsrechte für die Datei config.php so gesetzt werden, dass der Webserver diese Datei nicht mehr verändern kann. Bitte beachten Sie, dass dieser Schritt die Server-Sicherheit nicht entscheidend verbessert, aber dass generelle Angriffe behindert und in ihrer Wirkung begrenzt werden könnten.</p>';
 $string['check_configrw_name'] = ' config.php';
 $string['check_configrw_ok'] = 'PHP-Skripte können die config.php nicht verändern';
@@ -39,8 +45,8 @@ $string['check_crawlers_error'] = 'Der Zugriff für Suchmaschinen ist aktiviert,
 $string['check_crawlers_info'] = 'Suchmaschinen können auf Kursinhalte als Gäste zugreifen.';
 $string['check_crawlers_name'] = 'Offen für Google';
 $string['check_crawlers_ok'] = 'Gastzugang für Suchmaschinen nicht aktiv.';
-$string['check_defaultuserrole_details'] = '<p>Jeder eingeloggte Nutzer hat zunächst Rechte aus der Standardrolle für Nutzer. Für diese Rolle sollten keine bedenklichen Berechtigungen vergeben worden sein.</p>
-<p>Die einzige Rolle, für die das zunächst zutrifft, ist die Rolle <em>authentifizierte/r Nutzer/in</em>. Die Berechtigung \'Kurse sehen\' (course view) muss dazu nicht aktiviert sein.</p>';
+$string['check_defaultuserrole_details'] = '<p>Alle angemeldeten Nutzer/innen haben zunächst Rechte aus der Standardrolle für Nutzer/innen. Für diese Rolle sollten keine riskanten Berechtigungen vergeben worden sein.</p>
+<p>Die einzige Rolle, für die das zunächst zutrifft, ist die Rolle <em>authentifizierte/r Nutzer/in</em>. Das Recht \'Kurse anzeigen\' muss nicht aktiviert sein.</p><p>Prüfen Sie bitte, ob die Option für die automatische Löschanfrage von Daten (tool_dataprivacy | automaticdatadeletionapproval) aktiviert ist. Nutzer/innen können Löschungen anfordern, die große Mengen von Daten entfernen.  </p>';
 $string['check_defaultuserrole_error'] = 'Eine falsche Definition der Standardrolle wurde festgestellt! "{$a}"';
 $string['check_defaultuserrole_name'] = 'Standardrolle für alle Nutzer/innen';
 $string['check_defaultuserrole_notset'] = 'Die Standardrolle ist nicht gesetzt.';
@@ -61,10 +67,11 @@ $string['check_embed_details'] = '<p>Die uneingeschränkte Nutzung von Objektein
 $string['check_embed_error'] = 'Die uneingeschränkte Nutzung von EMBED/OBJECT ist aktiviert. Diese Einstellung ist für die meisten Webserver sehr gefährlich.';
 $string['check_embed_name'] = 'EMBED/OBJECT';
 $string['check_embed_ok'] = 'Die uneingeschränkte Nutzung von EMBED/OBJECT ist nicht erlaubt.';
-$string['check_frontpagerole_details'] = '<p>Die standardmäßige Rolle für die Startseite erhalten alle angemeldeten Nutzer/innen für Aktivitäten auf der Startseite. Beachten Sie, dass für die Startseite keine bedenklichen Rechte vergeben werden dürfen.</p> <p>Es wird empfohlen, immer eine Rolle neu anzulegen und keine vorgegebene Rolle zu verändern.</p>';
-$string['check_frontpagerole_error'] = 'Rolle für die Startseite \'{$a}\' ist falsch definiert!';
+$string['check_frontpagerole_details'] = '<p>Die standardmäßige Rolle für die Startseite erhalten alle angemeldeten Nutzer/innen für Aktivitäten auf der Startseite. Beachten Sie, dass für die Startseite keine bedenklichen Rechte vergeben werden dürfen.</p>
+<p>Es wird empfohlen, immer eine Rolle neu anzulegen und keine vorgegebene Rolle zu verändern.</p>';
+$string['check_frontpagerole_error'] = 'Die Rolle für die Startseite \'{$a}\' ist falsch definiert!';
 $string['check_frontpagerole_name'] = 'Rolle für die Startseite';
-$string['check_frontpagerole_notset'] = 'Keine Rolle für die Startseite angelegt.';
+$string['check_frontpagerole_notset'] = 'Keine Rolle für die Startseite angelegt';
 $string['check_frontpagerole_ok'] = 'Die Rolle für die Startseite ist in Ordnung.';
 $string['check_guestrole_details'] = '<p>Die Gastrolle wird für Gäste, nichteingeloggte Nutzer/innen und den temporären Gastzugang zu Kursen verwendet. Achten Sie unbedingt darauf, keine unsicheren Berechtigungen für diese Rolle zuzulassen.<p>
 </p>Der unterstützte Legacytyp für die Gastrolle ist <em>Gast</em>.</p>';
@@ -94,6 +101,8 @@ $string['check_preventexecpath_warning'] = 'Pfade zu ausführbaren Programmen ei
 $string['check_publicpaths_403'] = '(Rückgabe 403 - dies sollte besser 404 sein)';
 $string['check_publicpaths_generic'] = '{$a} Dateien sollten nicht öffentlich sein';
 $string['check_publicpaths_name'] = 'Alle öffentlichen / privaten Pfade prüfen';
+$string['check_publicpaths_ok'] = 'Alle internen Pfade sind nicht öffentlich zugänglich.';
+$string['check_publicpaths_warning'] = 'Manche internen Pfade sind öffentlich zugänglich.';
 $string['check_riskadmin_detailsok'] = '<p>Bitte prüfen Sie die folgende Liste von Serveradministrator/innen:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Prüfen Sie bitte die folgende Liste von Serveradministrator/innen:</p>{$a->admins}
 <p>Es wird empfohlen, die Rolle "Administrator/innen" nur auf Systemebene zu vergeben. Die folgenden Nutzer verfügen über nicht unterstützte Zuweisungen zur Rolle "Administrator/innen":</p>{$a->unsupported}';

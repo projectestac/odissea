@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_stash', language 'ar', version '3.11'.
+ * Strings for component 'block_stash', language 'ar', version '4.1'.
  *
  * @package     block_stash
  * @category    string
@@ -31,10 +31,10 @@ $string['backtostart'] = 'عودة إلى الشاشة الرئيسية';
 $string['configurationtitle'] = 'عنوان المدخرات';
 $string['dropname_help'] = 'اسم الموقع مفيد لك فقط لتنظيمها، فهو لن يظهر للطلاب.';
 $string['eventitemacquired'] = 'عنصر تم اكتسابه';
-$string['filtershortcodesnotactive'] = 'لقد تم تنصيب رموز مختصرات ملحق التنقيح هذا ولكنها غير مُمَكَّنة بعد في هذا المقرر. قم بزيارة <a href="{$a->activeurl}" target="_blank">هذه الصفحة</a> لتمكينها في هذا المقرر الدراسي.';
+$string['filtershortcodesnotactive'] = 'لقد تم تنصيب رموز مختصرات إضافة التنقيح هذا ولكنها غير مُمَكَّنة بعد في هذا المقرر. قم بزيارة <a href="{$a->activeurl}" target="_blank">هذه الصفحة</a> لتمكينها في هذا المقرر.';
 $string['filtershortcodesnotenabled'] = 'لقد تم تنصيب رموز مختصرات إضافة التنقيح هذا ولكن ليس <a href="{$a->enableurl}" target="_blank">مُمَكَّنة</a> بعد.';
 $string['filtershortcodesnotinstalled'] = 'نوصي بتنصيب وتمكين <a href="{$a->installurl}" target="_blank">رموز مختصرات إضافة التنقيح</a>. إنها تسهل استعمال النُتف وتجعلها أكثر فاعلية. إنها تسمح أيضاً بالمبادلة.';
-$string['filterstashnotactive'] = 'لقد تم تنصيب ملحق التنقيح هذا ولكنه غير مُمَكَّن بعد في هذا المقرر الدراسي. قم بزيارة <a href="{$a->activeurl}" target="_blank">هذه الصفحة</a> لتمكينه في هذا المقرر.';
+$string['filterstashnotactive'] = 'لقد تم تنصيب إضافة التنقيح هذا ولكنها غير مُمَكَّنة بعد في هذا المقرر. قم بزيارة <a href="{$a->activeurl}" target="_blank">هذه الصفحة</a> لتمكينها في هذا المقرر.';
 $string['filterstashnotenabled'] = 'لقد تم تنصيب إضافة التنقيح هذه ولكن ليس <a href="{$a->enableurl}" target="_blank">مُمَكَّن</a> بعد.';
 $string['filterstashnotinstalled'] = 'نوصي بتنصيب وتمكين <a href="{$a->installurl}" target="_blank">إضافة التنقيح للمكدس</a>. إنه يسهل استعمال النُتف ويجعلها أكثر فاعلية. إنه يسمح أيضاً بالمبادلة.';
 $string['filterstashwrongversion'] = 'إضافة المنقح الذي قمت بتنصيبه هو بإصدار سابق ولا يعمل مع المتاجرة. يرجى زيارة <a href="{$a}" target="_blank">هذه الصفحة</a> للحصول على الإصدار الأخير.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'ca', version '3.11'.
+ * Strings for component 'appointment', language 'ca', version '4.1'.
  *
  * @package     appointment
  * @category    string
@@ -26,12 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addsession'] = 'Afegeix una sessió';
+$string['attendance'] = 'Assistència';
 $string['crontask'] = 'Tasques de manteniment de les cites';
 $string['details'] = 'Detalls';
-$string['duration'] = 'Durada';
-$string['error:couldnotaddsession'] = 'No s\'ha pogut afegir una sessió';
-$string['export'] = 'Exporta';
-$string['notificationemail'] = 'Només la notificació';
+$string['modulename_link'] = 'Appointments';
 $string['placeholder:details'] = '[detalls]';
-$string['placeholder:duration'] = '[durada]';
-$string['submitted'] = 'S\'ha tramès';

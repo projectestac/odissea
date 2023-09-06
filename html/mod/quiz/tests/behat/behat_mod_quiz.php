@@ -68,8 +68,10 @@ class behat_mod_quiz extends behat_question_base {
      * | User overrides    | Quiz name                                   | The manage user overrides page               |
      * | Grades report     | Quiz name                                   | The overview report for a quiz               |
      * | Responses report  | Quiz name                                   | The responses report for a quiz              |
+     * | Manual grading report | Quiz name                               | The manual grading report for a quiz         |
      * | Statistics report | Quiz name                                   | The statistics report for a quiz             |
      * | Attempt review    | Quiz name > username > [Attempt] attempt no | Review page for a given attempt (review.php) |
+     * | Question bank     | Quiz name                                   | The question bank page for a quiz            |
      *
      * @param string $type identifies which type of page this is, e.g. 'Attempt review'.
      * @param string $identifier identifies the particular page, e.g. 'Test quiz > student > Attempt 1'.
@@ -139,6 +141,12 @@ class behat_mod_quiz extends behat_question_base {
                 $attempt = $DB->get_record('quiz_attempts',
                         ['quiz' => $quiz->id, 'userid' => $user->id, 'attempt' => $attemptno], '*', MUST_EXIST);
                 return new moodle_url('/mod/quiz/review.php', ['attempt' => $attempt->id]);
+
+            case 'question bank':
+                return new moodle_url('/question/edit.php', [
+                    'cmid' => $this->get_cm_by_quiz_name($identifier)->id,
+                ]);
+
 
             default:
                 throw new Exception('Unrecognised quiz page type "' . $type . '."');
@@ -226,7 +234,12 @@ class behat_mod_quiz extends behat_question_base {
             }
 
             // Question id, category and type.
-            $question = $DB->get_record('question', array('name' => $questiondata['question']), 'id, category, qtype', MUST_EXIST);
+            $sql = 'SELECT q.id AS id, qbe.questioncategoryid AS category, q.qtype AS qtype
+                      FROM {question} q
+                      JOIN {question_versions} qv ON qv.questionid = q.id
+                      JOIN {question_bank_entries} qbe ON qbe.id = qv.questionbankentryid
+                     WHERE q.name = :name';
+            $question = $DB->get_record_sql($sql, ['name' => $questiondata['question']], MUST_EXIST);
 
             // Page number.
             $page = clean_param($questiondata['page'], PARAM_INT);
@@ -443,8 +456,8 @@ class behat_mod_quiz extends behat_question_base {
      */
     public function i_should_see_on_quiz_page($questionname, $pagenumber) {
         $xpath = "//li[contains(., '" . $this->escape($questionname) .
-                "')][./preceding-sibling::li[contains(@class, 'pagenumber')][1][contains(., 'Page " .
-                $pagenumber . "')]]";
+            "')][./preceding-sibling::li[contains(@class, 'pagenumber')][1][contains(., 'Page " .
+            $pagenumber . "')]]";
 
         $this->execute('behat_general::should_exist', array($xpath, 'xpath_element'));
     }
@@ -471,8 +484,8 @@ class behat_mod_quiz extends behat_question_base {
      * @param string $secondquestionname the name of the question that should come immediately after it in order.
      */
     public function i_should_see_before_on_the_edit_quiz_page($firstquestionname, $secondquestionname) {
-        $xpath = "//li[contains(@class, ' slot ') and contains(., '" . $this->escape($firstquestionname) .
-                "')]/following-sibling::li[contains(@class, ' slot ')][1]" .
+        $xpath = "//li[contains(., '" . $this->escape($firstquestionname) .
+                "')]/following-sibling::li" .
                 "[contains(., '" . $this->escape($secondquestionname) . "')]";
 
         $this->execute('behat_general::should_exist', array($xpath, 'xpath_element'));
@@ -542,6 +555,8 @@ class behat_mod_quiz extends behat_question_base {
 
     /**
      * Check the add or remove page-break link after a particular question contains the given parameters in its url.
+     *
+     * @When /^the "(Add|Remove)" page break link after question "(?P<question_name>(?:[^"]|\\")*) should contain:$/
      * @When /^the "(Add|Remove)" page break link after question "(?P<question_name>(?:[^"]|\\")*) should contain:"$/
      * @param string $addorremoves 'Add' or 'Remove'.
      * @param string $questionname the name of the question before the icon to click.
@@ -663,6 +678,10 @@ class behat_mod_quiz extends behat_question_base {
      * @param string $sectionheading the new heading to set.
      */
     public function i_set_the_section_heading_for($sectionname, $sectionheading) {
+        // Empty section headings will have a default names of "Untitled heading".
+        if (empty($sectionname)) {
+            $sectionname = get_string('sectionnoname', 'quiz');
+        }
         $this->execute('behat_general::click_link', $this->escape("Edit heading '{$sectionname}'"));
 
         $this->execute('behat_general::assert_page_contains_text', $this->escape(get_string('edittitleinstructions')));
@@ -951,5 +970,17 @@ class behat_mod_quiz extends behat_question_base {
         $attemptobj->process_finish(time(), true);
 
         $this->set_user();
+    }
+
+    /**
+     * Return a list of the exact named selectors for the component.
+     *
+     * @return behat_component_named_selector[]
+     */
+    public static function get_exact_named_selectors(): array {
+        return [
+            new behat_component_named_selector('Edit slot',
+            ["//li[contains(@class,'qtype')]//span[@class='slotnumber' and contains(., %locator%)]/.."])
+        ];
     }
 }

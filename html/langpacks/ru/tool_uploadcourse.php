@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ru', version '3.11'.
+ * Strings for component 'tool_uploadcourse', language 'ru', version '4.1'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -39,9 +39,9 @@ $string['cannotreadbackupfile'] = 'Не удается прочитать фай
 $string['cannotrenamecoursenotexist'] = 'Не удается переименовать несуществующий курс';
 $string['cannotrenameidnumberconflict'] = 'Не удается переименовать курс - конфликт ID с имеющимся курсом';
 $string['cannotrenameshortnamealreadyinuse'] = 'Не удается переименовать курс, короткое имя уже используется';
-$string['cannotupdatefrontpage'] = 'Запрещено изменять главную страницу';
+$string['cannotupdatefrontpage'] = 'Вы не можете изменять главную страницу сайта.';
 $string['canonlyrenameinupdatemode'] = 'Можно только переименовать курс при разрешенном обновлении';
-$string['canonlyresetcourseinupdatemode'] = 'Можно только сбросить курс в режиме обновления';
+$string['canonlyresetcourseinupdatemode'] = 'Сбросить курс можно только в режиме обновления';
 $string['couldnotresolvecatgorybyid'] = 'Не удалось определить категорию по ID';
 $string['couldnotresolvecatgorybyidnumber'] = 'Не удалось определить категорию по ID-номеру';
 $string['couldnotresolvecatgorybypath'] = 'Не удалось определить категорию по пути';

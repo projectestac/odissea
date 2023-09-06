@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'eu', version '3.11'.
+ * Strings for component 'qtype_ddwtos', language 'eu', version '4.1'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -28,12 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoiceblanks'] = 'Gehitu {no} zuriune aukera gehiagorako';
 $string['answer'] = 'Erantzuna';
 $string['blank'] = 'hutsik';
+$string['blanknumber'] = '{$a}. hutsunea';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
 $string['errorlimitedchoice'] = '[[{$a}]] aukera behin baino gehiagotan erabili da "Mugarik gabe" aukera markatu gabe. Egiaztatu berriro mesedez galdera hau.';
 $string['infinite'] = 'Mugarik gabe';
 $string['pleaseputananswerineachbox'] = 'Mesedez, eman erantzuna lauki bakoitzean';
 $string['pluginname'] = 'Hartu eta eraman testura';
 $string['pluginname_help'] = 'Hartu eta eraman testura motako galderek ikasleei hitz edo esaldiak hartu eta galderaren testuan zehaztutako hutsuneetara eramatea eskatzen diete. [[1]], [[2]], [[3]], ... dira galderaren testuan hutsunean kokatzeko erabiltzen diren gakoak, hurrenez hurren 1, 2, 3... erantzunekin bat datozenak. Erantzun posibleak taldekatu daitezke talde bakoitzeko erantzunak horien galderaren testuko hutsuneen kolore bera izan dezaten. \'Mugarik gabe\' gisa markatutako erantzunak hutsune baten baino gehiagotan erabili daitezke.';
+$string['pluginname_link'] = 'question/type/ddwtos';
 $string['pluginnameadding'] = 'Hartu eta eraman testura motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman testura motako galdera editatzen';
 $string['pluginnamesummary'] = 'Galderaren testuko hutsuneak hartu eta eramanda betetzen dira.';

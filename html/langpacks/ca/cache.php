@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ca', version '3.11'.
+ * Strings for component 'cache', language 'ca', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -139,8 +139,6 @@ $string['plugin'] = 'Connector';
 $string['pluginsummaries'] = 'Magatzems de la memòria cau instal·lats';
 $string['privacy:metadata:cachestore'] = 'El subsistema de memòria cau emmagatzema dades de manera temporal. Aquestes dades no són fàcilment identificables, i s\'esborren al cap de poc temps. Aquesta memòria cau es fa servir per a altres parts de Moodle, les quals farien servir aquestes dades igualment.';
 $string['purge'] = 'Purga';
-$string['purgedefinitionsuccess'] = 'S\'ha purgat amb èxit la definició sol·licitada';
-$string['purgestoresuccess'] = 'S\'ha purgat amb èxit el magatzem sol·licitat.';
 $string['requestcount'] = 'Prova amb {$a} sol·licituds';
 $string['rescandefinitions'] = 'Tornar a escanejar les definicions';
 $string['result'] = 'Resultat';

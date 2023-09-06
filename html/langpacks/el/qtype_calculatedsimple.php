@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'el', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'el', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,7 +32,7 @@ $string['generatenewitemsset'] = 'Δημιουργία';
 $string['newsetwildcardvalues'] = 'νέο σύνολο(α) τιμών μπαλαντέρ';
 $string['pluginname'] = 'Απλή ερώτηση υπολογιστικού τύπου';
 $string['pluginname_help'] = 'Οι απλές ερωτήσεις υπολογιστικού τύπου επιτρέπουν τη δημιουργία μεμονωμένων αριθμητικών ερωτήσεων με τη χρήση μπαλαντέρ που αντικαθίστανται με ξεχωριστές τιμές κατά τη λήψη του κουίζ. Οι απλές ερωτήσεις υπολογιστικού τύπου προσφέρουν τα πιο χρησιμοποιούμενα χαρακτηριστικά της ερώτησης υπολογιστικού τύπου με μια απλούστερη διεπαφή δημιουργίας.';
-$string['pluginname_link'] = 'ερώτηση/τύπος/υπολογισμούαπλή';
+$string['pluginname_link'] = '';
 $string['pluginnameadding'] = 'Προσθήκη μιας απλής ερώτησης υπολογιστικού τύπου';
 $string['pluginnameediting'] = 'Επεξεργασία μιας απλής ερώτησης υπολογιστικού τύπου';
 $string['pluginnamesummary'] = 'Μια απλούστερη εκδοχή των ερωτήσεων υπολογιστικού τύπου που είναι σαν αριθμητικές ερωτήσεις, αλλά με τους αριθμούς που χρησιμοποιούνται να επιλέγονται τυχαία από ένα σύνολο όταν λαμβάνεται το κουίζ.';

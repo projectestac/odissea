@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'en', version '3.11'.
+ * Strings for component 'availability_grade', language 'en', version '4.1'.
  *
  * @package     availability_grade
  * @category    string
@@ -39,9 +39,9 @@ $string['option_min'] = 'must be &#x2265;';
 $string['pluginname'] = 'Restriction by grades';
 $string['privacy:metadata'] = 'The Restriction by grades plugin does not store any personal data.';
 $string['requires_any'] = 'You have a grade in <strong>{$a}</strong>';
-$string['requires_max'] = 'You get an appropriate score in <strong>{$a}</strong>';
-$string['requires_min'] = 'You achieve a required score in <strong>{$a}</strong>';
+$string['requires_max'] = 'You achieve lower than a certain score in <strong>{$a}</strong>';
+$string['requires_min'] = 'You achieve higher than a certain score in <strong>{$a}</strong>';
 $string['requires_notany'] = 'You do not have a grade in <strong>{$a}</strong>';
 $string['requires_notgeneral'] = 'You do not get certain scores in <strong>{$a}</strong>';
-$string['requires_range'] = 'You get a particular score in <strong>{$a}</strong>';
+$string['requires_range'] = 'You achieve a score within a certain range in <strong>{$a}</strong>';
 $string['title'] = 'Grade';

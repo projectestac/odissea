@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ru', version '3.11'.
+ * Strings for component 'webservice', language 'ru', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'Активные протоколы веб-сл
 $string['addaservice'] = 'Добавить службу';
 $string['addcapabilitytousers'] = 'Проверить права пользователей';
 $string['addcapabilitytousersdescription'] = 'Пользователи должны иметь два права — «webservice:createtoken» и право, связанное с используемым протоколом, например, «webservice/rest:use», «webservice/soap:use». Для этого создайте для веб-службы отдельную роль, дайте ей соответствующие права и назначьте ее пользователям веб-службы на странице назначения глобальных ролей.';
+$string['addexternalservice'] = 'Добавить внешнюю службу';
 $string['addfunction'] = 'Добавить функцию';
 $string['addfunctionhelp'] = 'Выберите функцию, добавляемую к службе.';
 $string['addfunctions'] = 'Добавить функции';
@@ -61,14 +62,16 @@ $string['default'] = 'По умолчанию - «{$a}»';
 $string['deleteaservice'] = 'Удалить службу';
 $string['deleteservice'] = 'Удалить службу: {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'Удаление службы приведет к удалению всех ключей, связанных с этой службой. Вы действительно хотите удалить внешнюю службу «{$a}»?';
+$string['deletetoken'] = 'Удалить токен';
 $string['deletetokenconfirm'] = 'Вы действительно хотите удалить ключ пользователя <strong>{$a->user}</strong> для веб-службы <strong>«{$a->service}»</strong>?';
+$string['deprecated'] = 'Устарело';
 $string['disabledwarning'] = 'Все протоколы веб-служб отключены. Параметр «Включить веб-службы» можно на странице «Администрирование - Расширенные возможности».';
 $string['doc'] = 'Документация';
 $string['docaccessrefused'] = 'Вам не разрешено просматривать документацию, свзанную с этим ключом.';
-$string['documentation'] = 'документация веб-службы';
 $string['downloadfiles'] = 'Можно скачивать файлы';
 $string['downloadfiles_help'] = 'При включенном параметре любой пользователь может скачать файлы с их ключами безопасности. Конечно, они ограничены файлами, которые загружены на сайт.';
 $string['editaservice'] = 'Редактировать службу';
+$string['editexternalservice'] = 'Редактировать внешнюю службу';
 $string['editservice'] = 'Редактировать службу: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Включена';
 $string['enabledocumentation'] = 'Включить информацию для разработчиков';

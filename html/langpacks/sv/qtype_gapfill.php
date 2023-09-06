@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapfill', language 'sv', version '3.11'.
+ * Strings for component 'qtype_gapfill', language 'sv', version '4.1'.
  *
  * @package     qtype_gapfill
  * @category    string
@@ -88,6 +88,7 @@ $string['pleaseenterananswer'] = 'Ange ett svar';
 $string['pluginname'] = 'Gapfill';
 $string['pluginname_help'] = 'Sätt hakparenteser runt orden som ska fyllas i, t.ex. [Katten] satt på [mattan]. <br>
 Om matta eller golv är acceptabelt, använd [mattan|golvet]. <BR>Rullgardinsmeny och Dra/släpp medger en blandad lista med svar som även kan innehålla valfria distraherande (felaktiga) svarsalternativ.';
+$string['pluginname_link'] = 'question/type/gapfill';
 $string['pluginnameadding'] = 'Lägger till en Gapfill-fråga';
 $string['pluginnameediting'] = 'Redigerar en Gapfill-fråga';
 $string['pluginnamesummary'] = 'En frågetyp där man ska fylla i saknade ord, antingen genom drag-och-släpp eller med menyalternativ. Mycket enkel att konstruera.';

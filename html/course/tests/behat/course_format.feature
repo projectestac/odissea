@@ -24,10 +24,10 @@ Feature: Teacher can change the course format
     # Fields that appear for Topics format exist
     # Also confirm contents of Hidden sections and Course layout select box
     And I should see "Hidden sections"
-    And the "Hidden sections" select box should contain "Hidden sections are shown in collapsed form"
+    And the "Hidden sections" select box should contain "Hidden sections are shown as not available"
     And the "Hidden sections" select box should contain "Hidden sections are completely invisible"
-    # Hidden sections default value is 0 (Hidden sections are shown in collapsed form)
-    And the field "Hidden sections" matches value "0"
+    # Hidden sections default value is 1 (Hidden sections are completely invisible)
+    And the field "Hidden sections" matches value "1"
     And I should see "Course layout"
     And the "Course layout" select box should contain "Show all sections on one page"
     And the "Course layout" select box should contain "Show one section per page"
@@ -53,10 +53,10 @@ Feature: Teacher can change the course format
     # Confirm that fields that appear for Weekly format appears
     # Also confirm contents of Hidden sections and Course layout select box
     And I should see "Hidden sections"
-    And the "Hidden sections" select box should contain "Hidden sections are shown in collapsed form"
+    And the "Hidden sections" select box should contain "Hidden sections are shown as not available"
     And the "Hidden sections" select box should contain "Hidden sections are completely invisible"
-    # Hidden sections default value is 0 (Hidden sections are shown in collapsed form)
-    And the field "Hidden sections" matches value "0"
+    # Hidden sections default value is 1 (Hidden sections are completely invisible)
+    And the field "Hidden sections" matches value "1"
     And I should see "Course layout"
     And the "Course layout" select box should contain "Show all sections on one page"
     And the "Course layout" select box should contain "Show one section per page"

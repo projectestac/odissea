@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_checklist', language 'es', version '3.11'.
+ * Strings for component 'gradeexport_checklist', language 'es', version '4.1'.
  *
  * @package     gradeexport_checklist
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['alldistrict'] = 'Todos';
+$string['checklist:publish'] = 'Publicar reporte de Lista de cotejo';
 $string['checklist:view'] = 'Ver informe de lista de verificación (Excel)';
 $string['checklist:viewall'] = 'Ver informe de lista de verificación para todos los estudiantes del curso';
 $string['checklist:viewdistrict'] = 'Ver informe de lista de verificación para  los estudiantes del mismo distrito';
@@ -49,5 +50,6 @@ $string['percentheadings2'] = 'Mostrar porcentaje de ítems requeridos revisados
 $string['percentrow'] = 'Fila de porcentajes';
 $string['percentrow2'] = 'Mostrar porcentaje de estudiantes que hayan palomeado cada ítem';
 $string['pluginname'] = 'Lista de verificación';
+$string['privacy:null_reason'] = 'La exportación de calificación de lista de cotejo exporta usando información recolectada desde una actividad de lista de cotejo, pero no almacena ningún dato por si misma.';
 $string['startdate'] = 'Fecha de inicio';
 $string['wrongdistrict'] = 'Usted no tiene permiso para ver informes de ese distrito';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'de', version '3.11'.
+ * Strings for component 'feedback', language 'de', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -59,7 +59,7 @@ $string['completed_feedbacks'] = 'Ausgefüllte Feedbacks';
 $string['completedon'] = 'Abgeschlossen am {$a}';
 $string['completiondetail:submit'] = 'Feedback einreichen';
 $string['completionsubmit'] = 'Als abgeschlossen ansehen, wenn das Feedback abgegeben wurde';
-$string['configallowfullanonymous'] = 'Wenn diese Option aktiviert ist, kann ein Feedback ohne vorhergehende Anmeldung abgegeben werden. Dies betrifft aber ausschließlich Feedbacks auf der Startseite.';
+$string['configallowfullanonymous'] = 'Wenn diese Option aktiviert ist, kann ein Feedback ohne Anmeldung abgegeben werden. Dies betrifft aber ausschließlich Feedbacks auf der Startseite.';
 $string['confirmdeleteentry'] = 'Möchten Sie diesen Eintrag wirklich löschen?';
 $string['confirmdeleteitem'] = 'Möchten Sie dieses Element wirklich löschen?';
 $string['confirmdeletetemplate'] = 'Möchten Sie diese Vorlage wirklich löschen?';
@@ -136,6 +136,7 @@ $string['feedback_is_not_open'] = 'Ein Feedback ist zu diesem Zeitpunkt nicht m�
 $string['feedbackclose'] = 'Antworten erlaubt bis';
 $string['feedbackcompleted'] = '{$a->username} hat {$a->feedbackname} abgeschlossen.';
 $string['feedbackopen'] = 'Antworten erlaubt ab';
+$string['feedbackupdated'] = 'Feedback aktualisiert';
 $string['file'] = 'Datei';
 $string['filter_by_course'] = 'Kursfilter';
 $string['handling_error'] = 'Fehler bei der Verarbeitung';
@@ -149,10 +150,12 @@ $string['indicator:cognitivedepth'] = 'Feedback kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Feedback-Aktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Feedback kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Feedback-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Feedback sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Feedback-Aktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Feedback sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Feedback-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Information';
 $string['infotype'] = 'Informationstyp';
 $string['insufficient_responses'] = 'Unzulängliche Antworten';
@@ -187,6 +190,7 @@ Eine Feedback-Aktivität kann verwendet werden
 * Um den Teilnehmer/innen die Möglichkeit zu geben, sich für Kursmodule, Veranstaltungen usw. anzumelden
 * Für Gästebefragungen zu Kurswahl, Schulpolitik, usw.
 * Für Anti-Mobbing-Meldungen, bei denen Personen Vorfälle anonym melden können';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = 'Feedback';
 $string['move_item'] = 'Element verschieben';
 $string['multichoice'] = 'Multiple-Choice';
@@ -228,6 +232,7 @@ $string['pagebreak'] = 'Seitenumbruch';
 $string['pluginadministration'] = 'Feedback-Administration';
 $string['pluginname'] = 'Feedback';
 $string['position'] = 'Position';
+$string['previewquestions'] = 'Vorschau der Fragen';
 $string['previous_page'] = 'Vorherige Seite';
 $string['privacy:metadata:completed'] = 'Datensatz mit beantworteten Feedback-Fragebögen';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Hier wird festgelegt, ob die Abgabe anonymisiert stattfinden soll.';
@@ -295,3 +300,4 @@ $string['use_one_line_for_each_value'] = 'Schreiben Sie jede Antwort in eine neu
 $string['use_this_template'] = 'Diese Vorlage verwenden';
 $string['using_templates'] = 'Vorlage verwenden';
 $string['vertical'] = 'Untereinander';
+$string['whatfor'] = 'Was möchten Sie tun?';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ca', version '3.11'.
+ * Strings for component 'auth', language 'ca', version '4.1'.
  *
  * @package     auth
  * @category    string
@@ -141,6 +141,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'El CAPTCHA s\'usa per evitar l\'abús dels programes automàtics. Simplement introduïu les paraules al quadre, en ordre i separades per un espai.
 
 Si no sabeu segur quines paraules són, podeu provar un altre CAPTCHA o bé un CAPTCHA sonor.';
+$string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Pregunta de seguretat';
 $string['selfregistration'] = 'Autoregistre';
 $string['selfregistration_help'] = 'Si seleccioneu un connector d\'autenticació, com ara l\'autoregistre basat en correu electrònic, llavors es permet que usuaris potencials s\'inscriguin i creïn comptes. Això fa possible que s\'enviï brossa a fòrums, blogs, etc. Per evitar aquest perill, inhabiliteu l\'autoregistre o limiteu-lo mitjançant el paràmetre <em>Dominis de correu permesos</em>.';

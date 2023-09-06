@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'pt', version '3.11'.
+ * Strings for component 'feedback', language 'pt', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -135,6 +135,7 @@ $string['feedback_is_not_open'] = 'O inquérito não está aberto';
 $string['feedbackclose'] = 'Permitir respostas até';
 $string['feedbackcompleted'] = '{$a->username} concluíu {$a->feedbackname}';
 $string['feedbackopen'] = 'Permitir respostas a partir de';
+$string['feedbackupdated'] = 'Feedback atualizado.';
 $string['file'] = 'Ficheiro';
 $string['filter_by_course'] = 'Filtrar por disciplina';
 $string['handling_error'] = 'Ocorreu um erro no processamento do módulo de ação do inquérito';
@@ -148,10 +149,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão do Inquérito';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Inquérito.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Inquérito';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Inquérito durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização do Inquérito';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Inquérito.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Inquérito';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Inquérito durante esse intervalo de análise (Níveis = Sem participação, Participante individual, Participante com outros)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Informação de sistema';
 $string['infotype'] = 'Tipo de informação';
 $string['insufficient_responses'] = 'respostas insuficientes';
@@ -185,6 +188,7 @@ As atividades de inquérito podem ser usadas:
 * Para inquérito aos visitantes sobre escolhas de disciplinas, políticas escolares, etc.
 * Para inquéritos anti-bullying nos quais os alunos podem relatar incidentes anonimamente
 * Para a criação de inquéritos configuráveis';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = 'Inquéritos';
 $string['move_item'] = 'Mover esta questão';
 $string['multichoice'] = 'Escolha múltipla';
@@ -226,6 +230,7 @@ $string['pagebreak'] = 'Quebra de página';
 $string['pluginadministration'] = 'Administração do Inquérito';
 $string['pluginname'] = 'Inquérito';
 $string['position'] = 'Posição';
+$string['previewquestions'] = 'Pré-visualizar questões';
 $string['previous_page'] = 'Página anterior';
 $string['privacy:metadata:completed'] = 'Registo das submissões ao Inquérito';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Se a submissão deve ser anónima.';
@@ -293,3 +298,4 @@ $string['use_one_line_for_each_value'] = 'Utilize uma linha para cada resposta!'
 $string['use_this_template'] = 'Usar este modelo';
 $string['using_templates'] = 'Usar um modelo';
 $string['vertical'] = 'Vertical';
+$string['whatfor'] = 'O que pretende fazer?';

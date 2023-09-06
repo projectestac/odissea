@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ko', version '3.11'.
+ * Strings for component 'book', language 'ko', version '4.1'.
  *
  * @package     book
  * @category    string
@@ -43,8 +43,11 @@ $string['eventchaptercreated'] = '장이 만들어짐';
 $string['eventchapterdeleted'] = '장이 삭제됨';
 $string['eventchapterupdated'] = '장이 업데이트됨';
 $string['eventchapterviewed'] = '장이 보여짐';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = '전자 책';
 $string['modulename_help'] = '';
+$string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = '전자 책';
 $string['navexit'] = '책에서 나가기';
 $string['navnext'] = '다음';

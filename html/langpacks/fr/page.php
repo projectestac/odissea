@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'fr', version '3.11'.
+ * Strings for component 'page', language 'fr', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -36,10 +36,12 @@ $string['indicator:cognitivedepth'] = 'Page : aspect cognitif';
 $string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Page.';
 $string['indicator:cognitivedepthdef'] = 'Page : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « Page » (niveaux : pas de vue, vue).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Page : aspect social';
 $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Page.';
 $string['indicator:socialbreadthdef'] = 'Page : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « Page » (niveaux : pas de participation, participant seul).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migration d\'un ancien fichier de cours';
 $string['legacyfilesactive'] = 'Actif';
 $string['legacyfilesdone'] = 'Terminé';
@@ -54,6 +56,7 @@ Une page peut être utilisée pour :
 
 * présenter les conditions et objectifs d\'un cours ou d\'un module de formation
 * intégrer plusieurs vidéos ou sons avec des textes explicatifs';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Pages';
 $string['optionsheader'] = 'Afficher les options';
 $string['page-mod-page-x'] = 'Toute page de module';

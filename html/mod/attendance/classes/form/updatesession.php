@@ -24,8 +24,6 @@
 
 namespace mod_attendance\form;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * class for displaying update session form.
  *
@@ -70,6 +68,7 @@ class updatesession extends \moodleform {
             'sdescription' => $sess->description_editor,
             'calendarevent' => $sess->calendarevent,
             'studentscanmark' => $sess->studentscanmark,
+            'allowupdatestatus' => $sess->allowupdatestatus,
             'studentpassword' => $sess->studentpassword,
             'autoassignstatus' => $sess->autoassignstatus,
             'subnet' => $sess->subnet,
@@ -80,7 +79,8 @@ class updatesession extends \moodleform {
             'preventsharediptime' => $sess->preventsharediptime,
             'includeqrcode' => $sess->includeqrcode,
             'rotateqrcode' => $sess->rotateqrcode,
-            'automarkcmid' => $sess->automarkcmid
+            'automarkcmid' => $sess->automarkcmid,
+            'studentsearlyopentime' => $sess->studentsearlyopentime
         );
         if ($sess->subnet == $attendancesubnet) {
             $data['usedefaultsubnet'] = 1;
@@ -138,9 +138,19 @@ class updatesession extends \moodleform {
         if (!empty($studentscanmark)) {
             $mform->addElement('checkbox', 'studentscanmark', '', get_string('studentscanmark', 'attendance'));
             $mform->addHelpButton('studentscanmark', 'studentscanmark', 'attendance');
+            $mform->addElement('checkbox', 'allowupdatestatus', '', get_string('allowupdatestatus', 'attendance'));
+            $mform->addHelpButton('allowupdatestatus', 'allowupdatestatus', 'attendance');
+            $mform->hideif('allowupdatestatus', 'studentscanmark', 'notchecked');
+            $mform->addElement('duration', 'studentsearlyopentime', get_string('studentsearlyopentime', 'attendance'));
+            $mform->addHelpButton('studentsearlyopentime', 'studentsearlyopentime', 'attendance');
+            $mform->hideif('studentsearlyopentime', 'studentscanmark', 'notchecked');
         } else {
             $mform->addElement('hidden', 'studentscanmark', '0');
             $mform->settype('studentscanmark', PARAM_INT);
+            $mform->addElement('hidden', 'allowupdatestatus', '0');
+            $mform->settype('allowupdatestatus', PARAM_INT);
+            $mform->addElement('hidden', 'studentsearlyopentime', '0');
+            $mform->settype('studentsearlyopentime', PARAM_INT);
         }
 
         if ($DB->record_exists('attendance_statuses', ['attendanceid' => $this->_customdata['att']->id, 'setunmarked' => 1])) {
@@ -156,7 +166,7 @@ class updatesession extends \moodleform {
             $mform->setType('automarkcmid', PARAM_INT);
             $mform->hideif('automarkcmid', 'automark', 'neq', '3');
             if (!empty($sess->automarkcompleted)) {
-                $mform->hardFreeze('automarkcmid,automark,studentscanmark');
+                $mform->hardFreeze('automarkcmid,automark,studentscanmark,allowupdatestatus');
             }
         }
         if (!empty($studentscanmark)) {
@@ -203,6 +213,12 @@ class updatesession extends \moodleform {
         $mform->addHelpButton('preventsharedgroup', 'preventsharedip', 'attendance');
         $mform->setAdvanced('preventsharedgroup');
         $mform->setType('preventsharediptime', PARAM_INT);
+
+        // Add custom field data to form.
+        $handler = \mod_attendance\customfield\session_handler::create();
+        $handler->instance_form_definition($mform, $sess->id);
+        $data['id'] = $sess->id;
+        $data = $handler->instance_form_before_set_data_array($data);
 
         $mform->setDefaults($data);
         $this->add_action_buttons(true);

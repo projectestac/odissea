@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'de', version '3.11'.
+ * Strings for component 'tool_messageinbound', language 'de', version '4.1'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -63,6 +63,7 @@ $string['messageinboundenabled_desc'] = 'Die Mailverwaltung für eintreffende Mi
 $string['messageinboundgeneralconfiguration'] = 'Allgemeines';
 $string['messageinboundgeneralconfiguration_desc'] = 'Moodle kann eingehende E-Mail-Mitteilungen verarbeiten. So können Antworten auf Forumsbeiträge per E-Mail vorgenommen werden oder Dateien in die persönliche Dateiablage eines Nutzers geschickt werden.';
 $string['messageinboundhost'] = 'Eingehender E-Mail-Server';
+$string['messageinboundhostoauth_help'] = 'OAuth2-Dienst, mit dessen Hilfe die XOAuth2-Authentifizierung auf den IMAP-Server zuzugreifen. Wenn der Dienst noch nicht vorhanden ist, müssen Sie ihn erstellen.';
 $string['messageinboundhostpass'] = 'Kennwort';
 $string['messageinboundhostpass_desc'] = 'Dieses Kennwort haben Sie für den Login zum E-Mail-Postfach hinterlegt.';
 $string['messageinboundhostssl'] = 'SSL verwenden';

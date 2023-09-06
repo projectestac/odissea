@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'zh_cn', version '3.11'.
+ * Strings for component 'glossary', language 'zh_cn', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = '添加类别';
 $string['addcomment'] = '添加评论';
 $string['addentry'] = '添加新词条';
 $string['addingcomment'] = '添加一条评论';
+$string['addsingleentry'] = '在通知公告中使用课程全称';
 $string['alias'] = '关键词';
 $string['aliases'] = '关键词';
 $string['aliases_help'] = '词汇表中的每个词条都可以与一些关键词（或别名）相关联。如果词条被自动链接，那么关键词也会被自动链接。
@@ -184,6 +185,7 @@ $string['explainalphabet'] = '按索引浏览词汇表';
 $string['explainexport'] = '点击下面按钮导出词条。<br />您可以随时在此课程或其它课程导入它。<p>请注意，附件（比如图片）和作者没有导出。</p>';
 $string['explainimport'] = '您必须指定要导入的文件及导入标准。<p>提交您的请求并查看结果。</p>';
 $string['explainspecial'] = '显示以非字母字符开头的词条';
+$string['export'] = '导出';
 $string['exportedentry'] = '已导出词条';
 $string['exportentries'] = '导出词条';
 $string['exportentriestoxml'] = '导出词条到 XML 文件';
@@ -226,10 +228,12 @@ $string['indicator:cognitivedepth'] = '词汇表活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在词汇表活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '词汇认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到词汇表活动提供的认知参与百分比（级别=无查看、查看、提交）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '词汇表活动社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在词汇表活动中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = '社会词汇表';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到词汇表活动提供的社交参与的百分比（级别=无参与，仅参与者一人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = '是全局词汇表吗？';
 $string['isglobal_help'] = '全局词汇表的词条不仅可以在所属课程中自动链接，而且可以在全站自动链接。只有管理员可以将词汇表设为全局。';
 $string['letter'] = '字母';
@@ -240,6 +244,7 @@ $string['mainglossary'] = '主词汇表';
 $string['maxtimehaspassed'] = '很抱歉，已超过了修改该评论（{$a}）的最大时限！';
 $string['modulename'] = '词汇表';
 $string['modulename_help'] = '词汇模块能让使用者创建和维护像字典一样的定义列表。无论词名出现在课程的哪里，都可以被自动链接到对应的词条。';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = '词汇表';
 $string['newentries'] = '新词条';
 $string['newglossary'] = '新词汇表';
@@ -260,6 +265,7 @@ $string['onebyline'] = '（每行一个）';
 $string['page-mod-glossary-edit'] = '词汇表添加/编辑词条页面';
 $string['page-mod-glossary-view'] = '查看词汇表编辑页面';
 $string['page-mod-glossary-x'] = '任意词汇表模块页面';
+$string['pendingapproval'] = '正在等待批准';
 $string['pluginadministration'] = '词汇表管理';
 $string['pluginname'] = '词汇表';
 $string['popupformat'] = '弹出窗口格式';
@@ -287,6 +293,7 @@ $string['resetglossaries'] = '从哪里删除词条';
 $string['resetglossariesall'] = '从所有词汇表删除词条';
 $string['rssarticles'] = 'RSS 中最近文章个数';
 $string['rssarticles_help'] = '此设置决定在 RSS 种子中包含的词条个数。通常设为 5 到 20 之间。';
+$string['rssfeed'] = 'RSS源';
 $string['rsssubscriberss'] = '在 RSS 种子中显示“{$a}”条词名';
 $string['rsstype'] = '此活动的 RSS 种子';
 $string['rsstype_help'] = '要启用此活动的 RSS 种子，请选择种子内容是词名（含作者）还是词名（不含作者）。';

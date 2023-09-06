@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'ru', version '3.11'.
+ * Strings for component 'datafield_picture', language 'ru', version '4.1'.
  *
  * @package     datafield_picture
  * @category    string
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_invalidparam1'] = 'Ширина должна быть числовым значением при просмотре одиночной записи.';
+$string['error_invalidparam2'] = 'Высота должна быть числовым значением при просмотре одиночной записи.';
+$string['error_invalidparam4'] = 'Ширина должна быть числовым значением при просмотре списком.';
+$string['error_invalidparam5'] = 'Высота должна быть числовым значением при просмотре списком.';
 $string['fieldtypelabel'] = 'Изображение';
 $string['pluginname'] = 'Изображение';
 $string['privacy:metadata'] = 'Компонент поля базы данных «Изображение» сам по себе не хранит никаких персональных данных, он использует таблицы, определенные в mod_data.';
+$string['sample'] = 'Заполнитель описания изображения';

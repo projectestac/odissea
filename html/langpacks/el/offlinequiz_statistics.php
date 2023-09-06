@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_statistics', language 'el', version '3.11'.
+ * Strings for component 'offlinequiz_statistics', language 'el', version '4.1'.
  *
  * @package     offlinequiz_statistics
  * @category    string
@@ -42,9 +42,9 @@ $string['count'] = 'Πλήθος';
 $string['coursename'] = 'Όνομα μαθήματος';
 $string['detailedanalysis'] = 'Πιο λεπτομερής ανάλυση των αποκρίσεων σε αυτήν την ερώτηση';
 $string['differentquestions'] = 'Οι ομάδες κουίζ εκτός σύνδεσης περιέχουν διαφορετικά σετ ερωτήσεων.';
-$string['errormedian'] = 'Σφάλμα κλήσης/λήψης διάμεσου';
-$string['errorpowerquestions'] = 'Σφάλμα κλήσης/λήψης δεδομένων προς υπολογισμό της διακύμανσης για βαθμούς ερώτησης';
-$string['errorpowers'] = 'Σφάλμα κλήσης/λήψης δεδομένων προς υπολογισμό της διακύμανσης για βαθμούς σε εκτός σύνδεσης κουίζ';
+$string['errormedian'] = 'Σφάλμα εύρεσης/λήψης διάμεσου';
+$string['errorpowerquestions'] = 'Σφάλμα εύρεσης/λήψης δεδομένων προς υπολογισμό της διακύμανσης για βαθμούς ερώτησης';
+$string['errorpowers'] = 'Σφάλμα εύρεσης/λήψης δεδομένων προς υπολογισμό της διακύμανσης για βαθμούς σε εκτός σύνδεσης κουίζ';
 $string['errorratio'] = 'Λόγος σφάλματος';
 $string['facility'] = 'Δείκτης διευκόλυνσης';
 $string['firstattempts'] = 'πρώτες προσπάθειες';

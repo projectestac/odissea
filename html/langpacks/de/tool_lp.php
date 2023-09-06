@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'de', version '3.11'.
+ * Strings for component 'tool_lp', language 'de', version '4.1'.
  *
  * @package     tool_lp
  * @category    string
@@ -166,6 +166,7 @@ $string['nouserevidence'] = 'Bisher sind keine Belege über Vorkenntnisse angele
 $string['nouserplans'] = 'Bisher sind keine Lernpläne angelegt.';
 $string['oneplanwascreated'] = 'Ein Lernplan wurde angelegt.';
 $string['outcome'] = 'Ergebnis';
+$string['overridegrade'] = 'Vorhandene Kompetenzstufe überschreiben, wenn abgeschlossen.';
 $string['parentcompetency'] = 'Übergeordnet';
 $string['parentcompetency_edit'] = 'Übergeordnete Einträge bearbeiten';
 $string['parentcompetency_help'] = 'Legen Sie fest welcher Kompetenz derEintrag untergeordnet werden soll. Dies kann eine andere Kompetenz innerhalb des Rahmenwerks sein. Wenn es auf oberster Ebene angelegt wird, handelt es sich um eine Top-Level-Kompetenz, der andere untergeordnet werden können.';

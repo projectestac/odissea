@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'sv', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'sv', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -30,6 +30,7 @@ $string['acceptrisk_help'] = 'Om du inaktiverar e-postverifiering kan en använd
 $string['authconfirm'] = 'Den här åtgärden kommer att bevilja permanent API-åtkomst till Moodle för det autentiserade kontot. Detta är avsett att användas som ett systemkonto för hantering av filer som ägs av Moodle.';
 $string['authconnected'] = 'Systemkontot är nu anslutet för offline-åtkomst';
 $string['authnotconnected'] = 'Systemkontot anslöts inte för offline-åtkomst';
+$string['clever_service'] = 'Clever';
 $string['configured'] = 'Konfigurerad';
 $string['configuredstatus'] = 'Konfigurerad';
 $string['connectsystemaccount'] = 'Koppla till ett systemkonto';
@@ -66,6 +67,7 @@ $string['google_service'] = 'Google';
 $string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Inloggningsdomäner';
 $string['issueralloweddomains_help'] = 'Om inställningen är gjord är den här inställningen en kommaavgränsad lista över domäner som inloggningar kommer att begränsas till när du använder den här leverantören.';
+$string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
 $string['issuerbaseurl'] = 'Bas-URL för tjänsten';
 $string['issuerbaseurl_help'] = 'Bas-URL för identitetstjänsten.';
 $string['issuerclientid'] = 'Klient-ID';

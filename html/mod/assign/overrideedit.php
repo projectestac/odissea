@@ -42,7 +42,7 @@ $override = null;
 if ($overrideid) {
 
     if (! $override = $DB->get_record('assign_overrides', array('id' => $overrideid))) {
-        print_error('invalidoverrideid', 'assign');
+        throw new \moodle_exception('invalidoverrideid', 'assign');
     }
 
     list($course, $cm) = get_course_and_cm_from_instance($override->assignid, 'assign');
@@ -51,7 +51,7 @@ if ($overrideid) {
     list($course, $cm) = get_course_and_cm_from_cmid($cmid, 'assign');
 
 } else {
-    print_error('invalidcoursemodule');
+    throw new \moodle_exception('invalidcoursemodule');
 }
 
 $url = new moodle_url('/mod/assign/overrideedit.php');
@@ -83,11 +83,11 @@ if ($overrideid) {
 
     if ($override->groupid) {
         if (!groups_group_visible($override->groupid, $course, $cm)) {
-            print_error('invalidoverrideid', 'assign');
+            throw new \moodle_exception('invalidoverrideid', 'assign');
         }
     } else {
         if (!groups_user_groups_visible($course, $override->userid, $cm)) {
-            print_error('invalidoverrideid', 'assign');
+            throw new \moodle_exception('invalidoverrideid', 'assign');
         }
     }
 } else {
@@ -96,7 +96,7 @@ if ($overrideid) {
 }
 
 // Merge assign defaults with data.
-$keys = array('duedate', 'cutoffdate', 'allowsubmissionsfromdate');
+$keys = array('duedate', 'cutoffdate', 'allowsubmissionsfromdate', 'timelimit');
 foreach ($keys as $key) {
     if (!isset($data->{$key}) || $reset) {
         $data->{$key} = $assigninstance->{$key};
@@ -255,10 +255,17 @@ if ($mform->is_cancelled()) {
 // Print the form.
 $PAGE->navbar->add($pagetitle);
 $PAGE->set_pagelayout('admin');
+$PAGE->add_body_class('limitedwidth');
 $PAGE->set_title($pagetitle);
 $PAGE->set_heading($course->fullname);
+$PAGE->set_secondary_active_tab('mod_assign_useroverrides');
+$activityheader = $PAGE->activityheader;
+$activityheader->set_attrs([
+    'description' => '',
+    'hidecompletion' => true,
+    'title' => $activityheader->is_title_allowed() ? format_string($assigninstance->name, true, ['context' => $context]) : ""
+]);
 echo $OUTPUT->header();
-echo $OUTPUT->heading(format_string($assigninstance->name, true, array('context' => $context)));
 
 $mform->display();
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'ja', version '3.11'.
+ * Strings for component 'cachestore_file', language 'ja', version '4.1'.
  *
  * @package     cachestore_file
  * @category    string
@@ -25,8 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['asyncpurge'] = '非同期にディレクトリをパージする';
+$string['asyncpurge_help'] = 'この設定を有効にした場合、キャッシュリビジョンで新しいディレクトリが作成されます。古いディレクトリはスケジュールタスクで非同期に削除されます。';
 $string['autocreate'] = '自動ディレクトリ作成';
 $string['autocreate_help'] = 'この設定を有効にした場合、指定されたパスにディレクトリがすでに存在しない場合に自動作成されます。';
+$string['lockwait'] = '最大ロック待ち時間';
+$string['lockwait_help'] = 'キャッシュキーの読み込みまたは書き込みの前に排他的ロックを待機する最大時間 (秒) です。これは読み取りまたは書き込みロックが必要なキャッシュ定義にのみ使用されます。';
 $string['path'] = 'キャッシュパス';
 $string['path_help'] = 'このキャッシュストアのファイルを保存するために使用されるディレクトリです。空白 (デフォルト) にした場合、moodledataディレクトリ内にディレクトリが自動作成されます。これはパフォーマンスの良いドライブ (メモリ等) に対してファイルストアをポイントするために使用することができます。';
 $string['pluginname'] = 'ファイルキャッシュ';
@@ -42,3 +46,4 @@ $string['singledirectory_help'] = 'この設定を有効にした場合、ファ
 
 *あなたが動作させているファイルシステムに問題を発生しない十分に少ない量のアイテムがキャッシュ内に保存されることを把握している場合。
 * キャッシュされるデータの生成がコスト高にならないこと。その場合、デフォルトのままにすることで問題発生の可能性を減らす好ましい選択肢となります。';
+$string['task_asyncpurge'] = '非同期にファイルストアの古いキャッシュリビジョンディレクトリをパージする';

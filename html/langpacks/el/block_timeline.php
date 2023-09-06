@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'el', version '3.11'.
+ * Strings for component 'block_timeline', language 'el', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -34,7 +34,7 @@ $string['ariaeventlistpaginationnavcourses'] = 'Δραστηριότητες χ�
 $string['ariaeventlistpaginationnavdates'] = 'Σελιδοποίηση δραστηριοτήτων χρονολογίου';
 $string['ariaviewselector'] = 'Ταξινόμηση στοιχείων χρονολογίου';
 $string['ariaviewselectoroption'] = 'Επιλογή ταξινόμησης {$a}';
-$string['duedate'] = 'Οφειλόμενη ημερομηνία';
+$string['duedate'] = 'Ημερομηνία υποχρέωσης';
 $string['morecourses'] = 'Περισσότερα μαθήματα';
 $string['next30days'] = 'Επόμενες 30 ημέρες';
 $string['next3months'] = 'Επόμενοι 3 μήνες';
@@ -47,6 +47,7 @@ $string['pluginname'] = 'Χρονολόγιο';
 $string['privacy:metadata:timelinefilterpreference'] = 'Η προτίμηση φίλτρου ημέρας του χρήστη για το μπλοκ χρονολογίου.';
 $string['privacy:metadata:timelinelimitpreference'] = 'Η προτίμηση περιορισμού σελίδας του χρήστη για το μπλοκ χρονολογίου.';
 $string['privacy:metadata:timelinesortpreference'] = 'Η προτίμηση ταξινόμησης του χρήστη για το μπλοκ χρονολογίου.';
+$string['searchevents'] = 'Αναζήτηση κατά τύπο δραστηριότητας ή όνομα';
 $string['sortbycourses'] = 'Ταξινόμηση κατά μαθήματα';
 $string['sortbydates'] = 'Ταξινόμηση κατά ημερομηνίες';
 $string['timeline'] = 'Χρονολόγιο';

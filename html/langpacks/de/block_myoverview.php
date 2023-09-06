@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'de', version '3.11'.
+ * Strings for component 'block_myoverview', language 'de', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Kurs als Favorit markieren';
-$string['all'] = 'Alle (außer aus Ansicht entfernte)';
-$string['allincludinghidden'] = 'Alle';
+$string['all'] = 'Alle';
+$string['allincludinghidden'] = 'Alle (inklusive aus Ansicht entfernte)';
 $string['aria:addtofavourites'] = 'Markierung für';
-$string['aria:allcourses'] = 'Alle Kurse außer den aus der Darstellung entfernten Kursen';
+$string['aria:allcourses'] = 'Alle Kurse (außer aus Ansicht entfernte)';
 $string['aria:allcoursesincludinghidden'] = 'Alle Kurse anzeigen';
 $string['aria:card'] = 'Kacheln anzeigen';
 $string['aria:controls'] = 'Steuerungen der Kursübersicht';
@@ -41,7 +41,7 @@ $string['aria:displaydropdown'] = 'Dropdown-Menü für die Anzeige';
 $string['aria:favourites'] = 'Favorisierte Kurse anzeigen';
 $string['aria:future'] = 'Künftige Kurse anzeigen';
 $string['aria:groupingdropdown'] = 'Dropdown-Menü für die Gruppierung';
-$string['aria:hiddencourses'] = 'Aus der Darstellung entfernte Kurse';
+$string['aria:hiddencourses'] = 'Aus der Ansicht entfernte Kurse';
 $string['aria:hidecourse'] = '{$a} verbergen';
 $string['aria:inprogress'] = 'Laufende Kurse anzeigen';
 $string['aria:lastaccessed'] = 'Kurse nach letztem Zugriffsdatum anzeigen';
@@ -57,7 +57,7 @@ $string['availablegroupings'] = 'Verfügbare Filter';
 $string['availablegroupings_desc'] = 'Kursfilter, die den Nutzer/innen zur Auswahl stehen. Wenn keine ausgewählt sind, werden alle Kurse angezeigt.';
 $string['card'] = 'Kachel';
 $string['cards'] = 'Kacheln';
-$string['complete'] = 'abgeschlossen';
+$string['clearsearch'] = 'Suche löschen';
 $string['completepercent'] = '{$a}% abgeschlossen';
 $string['courseprogress'] = 'Kursfortschritt:';
 $string['customfield'] = 'Kursfeld';
@@ -76,7 +76,6 @@ $string['layouts'] = 'Verfügbare Layouts';
 $string['layouts_help'] = 'Layouts für die Kursübersicht, die den Nutzer/innen zur Auswahl stehen. Wenn keine ausgewählt sind, wird das Kartenlayout verwendet.';
 $string['list'] = 'Liste';
 $string['myoverview:myaddinstance'] = 'Neuen Block \'Kursübersicht\' im Dashboard hinzufügen';
-$string['nocourses'] = 'Keine Kurse';
 $string['nocustomvalue'] = 'Kein {$a}';
 $string['past'] = 'Vergangene';
 $string['pluginname'] = 'Kursübersicht';
@@ -86,7 +85,11 @@ $string['privacy:metadata:overviewsortpreference'] = 'Präferenz zur Sortierung 
 $string['privacy:metadata:overviewviewpreference'] = 'Präferenz zur Anzeige in Kursübersicht';
 $string['privacy:request:preference:set'] = 'Der Wert der Einstellung \'{$a->name}\' war \'{$a->value}\'';
 $string['removefromfavourites'] = 'Kurs aus den Favoriten entfernen';
+$string['searchcourses'] = 'Kurse suchen';
 $string['shortname'] = 'Kurzer Kursname';
 $string['show'] = 'Kurs in Ansicht anzeigen';
+$string['sortbylastaccessed'] = 'Sortiert nach letztem Zugriff';
+$string['sortbyshortname'] = 'Sortiert nach kurzem Kursnamen';
+$string['sortbytitle'] = 'Sortiert nach Kursname';
 $string['summary'] = 'Beschreibung';
 $string['title'] = 'Kursname';

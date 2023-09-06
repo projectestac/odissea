@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_checklist', language 'el', version '3.11'.
+ * Strings for component 'gradeexport_checklist', language 'el', version '4.1'.
  *
  * @package     gradeexport_checklist
  * @category    string
@@ -33,7 +33,7 @@ $string['checklist:viewdistrict'] = 'Προβολή αναφοράς λίστα�
 $string['checklistnotfound'] = 'Αδυναμία εύρεσης λίστα ελέγχου';
 $string['checklistreport'] = 'αναφορά';
 $string['choosechecklist'] = 'Λίστα ελέγχου προς εξαγωγή';
-$string['choosedistrict'] = 'Περιφέρεια προς συμπερίληψη';
+$string['choosedistrict'] = 'Περιοχή προς συμπερίληψη';
 $string['enroldate'] = 'Ημερομηνία εγγραφής';
 $string['export'] = 'Εξαγωγή αρχείου Excel';
 $string['exportoptional'] = 'Συμπερίληψη προαιρετικών αντικειμένων';

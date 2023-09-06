@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'ur', version '3.11'.
+ * Strings for component 'countries', language 'ur', version '4.1'.
  *
  * @package     countries
  * @category    string
@@ -54,6 +54,7 @@ $string['BL'] = 'سینٹ بردیلیمی';
 $string['BM'] = 'برمودھ';
 $string['BN'] = 'برونائی دارالاسلام';
 $string['BO'] = 'بولیویا';
+$string['BQ'] = 'بونیئر، سنٹ یوسٹیٹیس اور صبا';
 $string['BR'] = 'برازیل';
 $string['BS'] = 'بہمس';
 $string['BT'] = 'بھوٹان';
@@ -76,6 +77,7 @@ $string['CO'] = 'کولمبیا';
 $string['CR'] = 'کوسٹا ریکا';
 $string['CU'] = 'کیوبا';
 $string['CV'] = 'کیپ وردے';
+$string['CW'] = 'کراؤکاو';
 $string['CX'] = 'کرسمس آئیلینڈ';
 $string['CY'] = 'سائیپرس';
 $string['CZ'] = 'عوامی ذیک';
@@ -230,8 +232,10 @@ $string['SM'] = 'سان مارینو';
 $string['SN'] = 'سینیگل';
 $string['SO'] = 'سومالیا';
 $string['SR'] = 'سرینیم';
+$string['SS'] = 'جنوبی سوڈان';
 $string['ST'] = 'ساؤ ٹومے و پرینسپے';
 $string['SV'] = 'ایل سلوادر';
+$string['SX'] = 'سنٹ مارٹن (ڈچ حصہ)';
 $string['SY'] = 'سیرئن عرب ریپبلک';
 $string['SZ'] = 'سویزیلینڈ';
 $string['TC'] = 'ترکس و کائے کس آئیلینڈز';

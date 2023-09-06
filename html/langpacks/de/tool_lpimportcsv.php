@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'de', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'de', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -40,6 +40,7 @@ $string['idnumber'] = 'ID-Nummer';
 $string['import'] = 'Importieren';
 $string['importfile'] = 'CSV-Beschreibungsdatei für Kompetenzrahmen';
 $string['importfile_help'] = 'Ein Kompetenzrahmen kann über eine Textdatei importiert werden. Das Format der Datei kann bestimmt werden, indem ein neuer Kompetenzrahmen auf der Website erstellt und anschließend exportiert wird.';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = 'Daten importieren ...';
 $string['invalidimportfile'] = 'Dateiformat ist ungültig.';
 $string['isframework'] = 'Ist Kompetenzrahmen';

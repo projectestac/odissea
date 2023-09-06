@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_catalogue', language 'pt', version '3.11'.
+ * Strings for component 'block_catalogue', language 'pt', version '4.1'.
  *
  * @package     block_catalogue
  * @category    string
@@ -29,7 +29,7 @@ $string['addnew'] = 'Adicionar novo';
 $string['catalogue'] = 'Catálogo';
 $string['catalogue:addinstance'] = 'Adicionar um novo bloco Catálogo';
 $string['catalogue:edit'] = 'Editar descrições e hiperligações no bloco Catálogo';
-$string['catalogue:myaddinstance'] = 'Adicionar um novo bloco Catálogo à Minha página principal';
+$string['catalogue:myaddinstance'] = 'Adicionar um novo bloco Catálogo ao Painel do utilizador';
 $string['catalogue:togglefav'] = 'Adicionar ou remover favoritos no bloco Catálogo';
 $string['catalogue:togglehide'] = 'Mostrar ou ocultar elementos no bloco Catálogo';
 $string['config_blocktitle_default'] = 'Catálogo';

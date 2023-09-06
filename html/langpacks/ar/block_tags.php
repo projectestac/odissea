@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'ar', version '3.11'.
+ * Strings for component 'block_tags', language 'ar', version '4.1'.
  *
  * @package     block_tags
  * @category    string
@@ -33,11 +33,11 @@ $string['disabledtags'] = 'الوسوم غير مفعّلة';
 $string['pluginname'] = 'الوسوم';
 $string['privacy:metadata'] = 'كتلة الوسوم تظهر فقط البيانات المخزونة في مواضع أخرى.';
 $string['recursivecontext'] = 'تضمين السياقات الفرعية';
-$string['recursivecontext_help'] = 'عند عدم تأشيرها، وسوم العناصر في السياق المحدد أعلاه سيتم عرضها، ولكن ليس الوسوم في السياقات الأدنى. على سبيل المثال، قد تظهر وسوم المقرر الدراسي، ولكن ليس وسوم النشاطات فيه.';
+$string['recursivecontext_help'] = 'عند عدم تأشيرها، وسوم العناصر في السياق المحدد أعلاه سيتم عرضها، ولكن ليس الوسوم في السياقات الأدنى. على سبيل المثال، قد تظهر وسوم المساق، ولكن ليس وسوم النشاطات فيه.';
 $string['standardonly'] = 'القياسية فقط';
 $string['tagcollection'] = 'مجموعة الوسوم';
 $string['tagcollection_help'] = 'إختر مجموعة الوسوم التي تريد عرض الوسوم منها. إذا اخترت "أي"، فإن وسوم كل المجموعات باستثناء تلك المعلمة بـ * سيتم عرضها';
 $string['taggeditemscontext'] = 'سياق العناصر الموسومة';
-$string['taggeditemscontext_help'] = 'بإمكانك جعل غيمة الوسوم مقتصرة على تلك الموجودة في تصنيف المقرر الحالي، أو المقرر، أو الوحدة';
+$string['taggeditemscontext_help'] = 'بإمكانك جعل غيمة الوسوم مقتصرة على تلك الموجودة في تصنيف المساق الحالي، أو المساق، أو الوحدة';
 $string['tags:addinstance'] = 'إضافة كتلة جديدة من الوسوم';
-$string['tags:myaddinstance'] = 'إضافة كتلة جديدة من الوسوم إلى لوحة التحكم';
+$string['tags:myaddinstance'] = 'إضافة كتلة جديدة من الوسوم إلى دفة القيادة';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_workflow', language 'ca', version '3.11'.
+ * Strings for component 'block_workflow', language 'ca', version '4.1'.
  *
  * @package     block_workflow
  * @category    string
@@ -28,5 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['defaultworkflowdescription'] = 'Una descripció per a aquest flux de treball';
 $string['description'] = 'Descripció';
 $string['disabled'] = 'Inhabilitat';
+$string['edit'] = 'Edita';
 $string['export'] = 'Exporta';
+$string['state_history'] = 'Historial';
+$string['stepactivation_link'] = 'block/workflow';
+$string['stepcompletion_link'] = 'block/workflow';
+$string['stepextranotify_link'] = 'block/workflow';
 $string['todoundone'] = 'Marcades {$a} com a incompletes';

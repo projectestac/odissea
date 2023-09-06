@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_poodll', language 'el', version '3.11'.
+ * Strings for component 'atto_poodll', language 'el', version '4.1'.
  *
  * @package     atto_poodll
  * @category    string
@@ -37,7 +37,7 @@ $string['cancel'] = 'Άκυρο';
 $string['chooseinsert'] = 'Τι θέλετε να εισάγετε;';
 $string['createpoodll'] = 'Δημιουργία poodll';
 $string['dialogtitle'] = 'Δημιουργία αρχείου πολυμέσων';
-$string['drawtheninsert'] = 'Μετά τη σχεδίαση, πατήστε «Αποθήκευση εικόνας», κατόπιν «Εισαγωγή»';
+$string['drawtheninsert'] = 'Μετά τη σχεδίαση, πατήστε «Αποθήκευση εικόνας», κατόπιν «Εισαγωγή».';
 $string['enterurl'] = 'Εισαγωγή μιας διεύθυνσης URL';
 $string['fieldsheader'] = 'Δώστε λεπτομέρειες για :';
 $string['insert'] = 'Εισαγωγή';
@@ -57,7 +57,7 @@ $string['recorderstoshowdetails'] = '';
 $string['recordtheninsert'] = 'Μετά την εγγραφή, πιέστε «Ανέβασμα», κατόπιν «Εισαγωγή».';
 $string['settings'] = 'PoodLL Οπουδήποτε(Atto)';
 $string['show_audiomp3'] = 'Εμφάνιση εγγραφέα ήχου';
-$string['show_snapshot'] = 'Εμφάνιση στιγμιότυπου οθόνης';
+$string['show_snapshot'] = 'Εμφάνιση στιγμιοτύπου οθόνης';
 $string['show_video'] = 'Εμφάνιση εγγραφέα βίντεο';
 $string['show_whiteboard'] = 'Εμφάνιση λευκού πίνακα';
 $string['show_widgets'] = 'Εμφάνιση γραφικών στοιχείων';

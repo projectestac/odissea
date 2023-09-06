@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'es', version '3.11'.
+ * Strings for component 'pdfannotator', language 'es', version '4.1'.
  *
  * @package     pdfannotator
  * @category    string
@@ -67,6 +67,7 @@ $string['comment'] = 'Comentario';
 $string['commentDeleted'] = 'El comentario ha sido eliminado.';
 $string['comments'] = 'Comentarios';
 $string['correct'] = 'correcto';
+$string['count'] = 'número';
 $string['createAnnotation'] = 'Crear Anotación';
 $string['currentPage'] = 'Número de página actual';
 $string['day'] = 'día';
@@ -92,6 +93,7 @@ $string['edit'] = 'Editar';
 $string['editAnnotation'] = 'La anotación se moverá. <br>Esto podría cambiar el contexto de la pregunta.';
 $string['editAnnotationTitle'] = '¿Está seguro/ a?';
 $string['editButton'] = 'Guardar';
+$string['editNotAllowed'] = '¡No se permite el paneo!';
 $string['editedComment'] = 'Última edición';
 $string['emptypdf'] = 'Actualmente no hay comentarios en este anotador.';
 $string['enterText'] = 'Introduzca el texto';
@@ -137,6 +139,8 @@ $string['global_setting_anonymous'] = '¿Permitir la publicación anónima?';
 $string['global_setting_anonymous_desc'] = 'Con esta opción permites a tu usuario publicar comentarios de forma anónima. Esta opción activa globalmente la publicación anónima';
 $string['global_setting_latexapisetting'] = 'LaTeX a PNG API';
 $string['global_setting_latexapisetting_desc'] = 'API para la conversión de Latex a PNG para descargas de PDF.<br> Nota: Si selecciona Google Chart API, Google obtendrá todas las fórmulas del documento si alguien elige utilizar LaTeX<br> Si selecciona Internal Moodle API, necesita un binario de latex, dvips y convert instalado en su servidor.  (Ver <a href="https://docs.moodle.org/38/en/TeX_notation_filter"> Documentación de Moodle</a>)';
+$string['global_setting_latexusegoogle'] = 'API Google Chart';
+$string['global_setting_latexusemoodle'] = 'API Moodle Interna';
 $string['global_setting_use_private_comments'] = '¿Permitir notas personales?';
 $string['global_setting_use_private_comments_desc'] = 'Permitir que los participantes escriban anotaciones y notas personales';
 $string['global_setting_use_protected_comments'] = '¿Permitir comentarios privados?';
@@ -171,6 +175,7 @@ $string['lastedited'] = 'Última edición';
 $string['legacyfiles'] = 'Migración del archivo del curso antiguo';
 $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Terminado';
+$string['like'] = 'me gusta';
 $string['likeAnswer'] = 'útil';
 $string['likeAnswerForbidden'] = 'Ya marcado como útil';
 $string['likeCountAnswer'] = 'las personas creen que esta respuesta es útil';
@@ -192,13 +197,13 @@ $string['messageprovider:forwardedquestion'] = 'Cuando se le remitió una pregun
 $string['messageprovider:newanswer'] = 'Cuando una pregunta a la que se suscribió fue respondida';
 $string['messageprovider:newquestion'] = 'Cuando se plantea una nueva pregunta';
 $string['messageprovider:newreport'] = 'Cuando un comentario fue publicado';
-$string['min2Chars'] = 'No se permite una pregunta o comentario con menos de dos caracteres.';
 $string['minute'] = 'minuto';
 $string['minutes'] = 'minutos';
 $string['missingAnnotation'] = 'La anotación correspondiente no se ha podido encontrar.';
 $string['modifiedby'] = 'por';
 $string['modulename'] = 'Anotación PDF';
 $string['modulename_help'] = 'Esta herramienta permite la anotación colaborativa de documentos PDF. Los usuarios pueden anotar partes específicas de un PDF y discutirlas con otros usuarios.';
+$string['modulename_link'] = 'mod/pdfannotator/view';
 $string['modulenameplural'] = 'Anotaciones PDF';
 $string['month'] = 'mes';
 $string['months'] = 'meses';
@@ -382,6 +387,7 @@ $string['showmore'] = 'más';
 $string['slotdatetimelabel'] = 'Fecha y hora';
 $string['startDiscussion'] = 'Comenzar una discusión';
 $string['statistic'] = 'Estadísticas';
+$string['strftimedatetime'] = '%d %b %Y, %I:%M %p';
 $string['strikeout'] = 'Tachar el texto y añadir un comentario.';
 $string['studentdrawingforbidden'] = 'Este anotador no admite dibujos para su función de usuario.';
 $string['studenttextboxforbidden'] = 'Este anotador no admite cuadros de texto para su función de usuario.';
@@ -423,7 +429,10 @@ $string['useprint_comments'] = '¿Proporcionar a los participantes acceso al PDF
 $string['useprint_document'] = '¿Proporcionar a los participantes acceso al PDF?';
 $string['usevotes'] = 'Permitir a los usuarios dar "me gusta" en los comentarios.';
 $string['view'] = 'Documento';
+$string['votes'] = 'Me gusta(n)';
+$string['voteshelpicon'] = 'Me gusta(n)';
 $string['voteshelpicon_help'] = 'Esta columna le indica cuántas personas están interesadas en la pregunta.';
+$string['voteshelpicontwo'] = 'Me gusta(n)';
 $string['voteshelpicontwo_help'] = 'Esta columna indica la frecuencia con la que sus publicaciones recibieron <em>"Me gusta"</em>.';
 $string['week'] = 'semana';
 $string['weeks'] = 'semanas';

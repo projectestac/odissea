@@ -143,18 +143,22 @@ class behat_forms extends behat_base {
         // We already know that we waited for the DOM and the JS to be loaded, even the editor
         // so, we will use the reduced timeout as it is a common task and we should save time.
         try {
-
+            $this->wait_for_pending_js();
             // Expand all fieldsets link - which will only be there if there is more than one collapsible section.
             $expandallxpath = "//div[@class='collapsible-actions']" .
-                "//a[contains(concat(' ', @class, ' '), ' collapseexpand ')]" .
-                "[not(contains(concat(' ', @class, ' '), ' collapse-all '))]";
-            // Else, look for the first expand fieldset link.
-            $expandonlysection = "//legend[@class='ftoggler']" .
-                    "//a[contains(concat(' ', @class, ' '), ' fheader ') and @aria-expanded = 'false']";
+                "//a[contains(concat(' ', @class, ' '), ' collapsed ')]" .
+                "//span[contains(concat(' ', @class, ' '), ' expandall ')]";
+            // Else, look for the first expand fieldset link (old theme structure).
+            $expandsectionold = "//legend[@class='ftoggler']" .
+                    "//a[contains(concat(' ', @class, ' '), ' icons-collapse-expand ') and @aria-expanded = 'false']";
+            // Else, look for the first expand fieldset link (current theme structure).
+            $expandsectioncurrent = "//fieldset//div[contains(concat(' ', @class, ' '), ' ftoggler ')]" .
+                    "//a[contains(concat(' ', @class, ' '), ' icons-collapse-expand ') and @aria-expanded = 'false']";
 
-            $collapseexpandlink = $this->find('xpath', $expandallxpath . '|' . $expandonlysection,
+            $collapseexpandlink = $this->find('xpath', $expandallxpath . '|' . $expandsectionold . '|' . $expandsectioncurrent,
                     false, false, behat_base::get_reduced_timeout());
             $collapseexpandlink->click();
+            $this->wait_for_pending_js();
 
         } catch (ElementNotFoundException $e) {
             // The behat_base::find() method throws an exception if there are no elements,
@@ -750,5 +754,46 @@ class behat_forms extends behat_base {
         $xpathtarget = "//div[contains(@class, 'form-autocomplete-selection') and contains(.//div, '" . $option . "')]";
         $node = $this->get_node_in_container('xpath_element', $xpathtarget, 'form_row', $field);
         $this->ensure_node_is_visible($node);
+    }
+
+    /**
+     * Checks whether the select menu contains an option with specified text or not.
+     *
+     * @Then the :name select menu should contain :option
+     * @Then the :name select menu should :not contain :option
+     *
+     * @throws ExpectationException When the expectation is not satisfied
+     * @param string $label The label of the select menu element
+     * @param string $option The string that is used to identify an option within the select menu. If the string
+     *                       has two items separated by '>' (ex. "Group > Option"), the first item ("Group") will be
+     *                       used to identify a particular group within the select menu, while the second ("Option")
+     *                       will be used to identify an option within that group. Otherwise, a string with a single
+     *                       item (ex. "Option") will be used to identify an option within the select menu regardless
+     *                       of any existing groups.
+     * @param string|null $not If set, the select menu should not contain the specified option. If null, the option
+     *                         should be present.
+     */
+    public function the_select_menu_should_contain(string $label, string $option, ?string $not = null) {
+
+        $field = behat_field_manager::get_form_field_from_label($label, $this);
+
+        if (!method_exists($field, 'has_option')) {
+            throw new coding_exception('Field does not support the has_option function.');
+        }
+
+        // If the select menu contains the specified option but it should not.
+        if ($field->has_option($option) && $not) {
+            throw new ExpectationException(
+                "The select menu should not contain \"{$option}\" but it does.",
+                $this->getSession()
+            );
+        }
+        // If the select menu does not contain the specified option but it should.
+        if (!$field->has_option($option) && !$not) {
+            throw new ExpectationException(
+                "The select menu should contain \"{$option}\" but it does not.",
+                $this->getSession()
+            );
+        }
     }
 }

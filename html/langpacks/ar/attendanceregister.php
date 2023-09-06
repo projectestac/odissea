@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendanceregister', language 'ar', version '3.11'.
+ * Strings for component 'attendanceregister', language 'ar', version '4.1'.
  *
  * @package     attendanceregister
  * @category    string
@@ -40,7 +40,7 @@ $string['last_calc_online_session_logout'] = 'نهاية آخر جلسة تسج�
 $string['last_site_access'] = 'آخر نشاط في الموقع';
 $string['last_site_login'] = 'آخر دخول إلى الموقع';
 $string['myattendanceregisteraggregates'] = 'قيم إجماليات تسجيلات حضوري';
-$string['offline_refcourse_duration'] = 'الوقت بدون الاتصال، المقرر الدراسي:';
+$string['offline_refcourse_duration'] = 'الوقت بدون الاتصال، المساق:';
 $string['offline_sessions_total_duration'] = 'الوقت الإجمالي بدون الاتصال';
 $string['online'] = 'عبر الإنترنت';
 $string['online_offline'] = 'متصل/غير متصل';

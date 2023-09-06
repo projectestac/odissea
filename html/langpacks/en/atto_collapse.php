@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'en', version '3.11'.
+ * Strings for component 'atto_collapse', language 'en', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'Show fewer buttons';
 $string['showgroups'] = 'Show first (n) groups when collapsed.';
 $string['showgroups_desc'] = 'When the toolbar is collapsed (it is by default) only this many groups will be displayed at once.';
 $string['showmore'] = 'Show more buttons';
+$string['youareonsecondrow'] = 'You are now on another row of the editor\'s toolbar, where there are more buttons.';

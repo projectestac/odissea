@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'de', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'de', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -37,6 +37,7 @@ $string['cbmgrades'] = 'CBM Bewertungen';
 $string['cbmgrades_help'] = 'Jede richtige Antwort mit dem Wert C=1 (geringe Gewissheit) führt zu einer 100% Bewertung bei der Gewissheits-basierten Bewertung (Certainty Based Marking = CBM). Die Bewertung der Frage kann auch dreimal so hoch sein, wenn die richtige Antwort mit hoher Gewissheit (C=3) verbunden ist. Fehleinschätzungen bei der Gewissheit über die Antwort beeinflussen die Bewertung sehr viel stärker als die Angabe von Unsicherheit.
 
 **Genauigkeit** ist der Prozentsatz richtiger Antworten, wobei die Gewissheit ignoriert, aber die Höchstnote jeder Frage gewichtet wird. Die erfolgreiche Unterscheidung zwischen mehr und weniger zuverlässigen Antworten ergibt eine bessere Note als die Auswahl der gleichen Gewissheit für jede Frage. Dies spiegelt sich im **CBM-Bonus** wider. **Genauigkeit** + **CBM-Bonus** ist ein besseres Maß für Wissen als **Genauigkeit**. Missverständnisse können zu einem negativen Bonus führen, einer Warnung, sich genau anzusehen, was bekannt ist und was nicht.';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'CBM-Wert {$a}';
 $string['certainty'] = 'Gewissheit';
 $string['certainty-1'] = 'Keine Idee';
@@ -52,6 +53,7 @@ Bewertung bei falsch | 0 | -2 | -6
 Wahrscheinlichkeit für richtig | <67 % | 67-80 % | >80 %
 
 Beste Bewertungen werden erzielt, wenn man die eigene Gewissheit richtig einschätzt. Wenn Sie z.B. glauben, mit einer Wahrscheinlichkeit von 1 zu 3 sei die Antwort falsch, so sollten Sie C=1 eingeben, um eine negative Bewertung zu vermeiden.';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = 'Keine Idee';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';

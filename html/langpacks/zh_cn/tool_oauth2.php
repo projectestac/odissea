@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'zh_cn', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'zh_cn', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -30,6 +30,7 @@ $string['acceptrisk_help'] = '禁用电子邮件验证有可能会允许用户�
 $string['authconfirm'] = '这将允许 Moodle 通过 API 操作即将绑定的账户。通常这是一个给 Moodle 系统使用的账户，以便管理其中的文件。';
 $string['authconnected'] = '已取得系统账户的无人值守授权';
 $string['authnotconnected'] = '未取得系统账户的无人值守授权';
+$string['clever_service'] = '熟练的';
 $string['configured'] = '已配置';
 $string['configuredstatus'] = '已配置';
 $string['connectsystemaccount'] = '绑定系统账户';
@@ -66,6 +67,7 @@ $string['google_service'] = '谷歌';
 $string['imsobv2p1_service'] = '公开徽章';
 $string['issueralloweddomains'] = '域名限制';
 $string['issueralloweddomains_help'] = '指定允许使用该服务登陆的账户域名，以英文半角逗号分隔。留空不限制。';
+$string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
 $string['issuerbaseurl'] = '基地址';
 $string['issuerbaseurl_help'] = '用于访问服务的基地址';
 $string['issuerclientid'] = '应用ID';

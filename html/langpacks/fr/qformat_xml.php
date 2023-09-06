@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xml', language 'fr', version '3.11'.
+ * Strings for component 'qformat_xml', language 'fr', version '4.1'.
  *
  * @package     qformat_xml
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['invalidxml'] = 'Fichier xml non valide - une chaîne de caractères est attendue (utiliser CDATA ?)';
 $string['pluginname'] = 'Format XML Moodle';
 $string['pluginname_help'] = 'Ce format spécifique à Moodle permet l\'importation et l\'exportation de questions.';
+$string['pluginname_link'] = 'qformat/xml';
 $string['privacy:metadata'] = 'Le plugin de format de question XML n\'enregistre aucune donnée personnelle.';
 $string['truefalseimporterror'] = '<b>Attention</b> ! La question vrai/faux « {$a->questiontext} » n\'a pas pu être importée. Il n\'est pas clair si la réponse correcte est Vrai ou Faux. La question a été importée en supposant que la réponse est « {$a->answer} ». Si ce n\'est pas le cas, veuillez modifier la question.';
 $string['unsupportedexport'] = 'Le type de question {$a} n\'est pas supporté par l\'exportation XML';

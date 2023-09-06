@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_structured', language 'pt', version '3.11'.
+ * Strings for component 'assignfeedback_structured', language 'pt', version '4.1'.
  *
  * @package     assignfeedback_structured
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['close'] = 'Fechar';
 $string['criteria'] = 'Critérios do feedback';
-$string['criteria_help'] = 'Digite o nome (e, opcionalmente, uma descrição) para cada critério que pretende adicionar feedback. Qualquer critério sem nome será ignorado. Todos os campos serão bloqueados assim que for atribuído feedback a qualquer critério.';
+$string['criteria_help'] = 'Digite o nome (e, opcionalmente, uma descrição) para cada critério que pretende adicionar feedback. Os critérios sem nome serão ignorados. Todos os campos serão bloqueados assim que for atribuído feedback a qualquer critério.';
 $string['criteriafieldsadd'] = 'Adicionar mais campos de critério';
 $string['criteriaset'] = 'Conjunto de critérios';
 $string['criteriaset_help'] = 'Clique para selecionar um conjunto de critérios anteriormente guardado para configurar automaticamente os detalhes dos critérios abaixo.';
@@ -72,6 +72,10 @@ $string['criterionname'] = 'Nome do critério <b>{$a}</b>';
 $string['criteriontitle'] = '<span class="criterion-name">{$a->name}:</span> <span class="criterion-desc">{$a->desc}</span>';
 $string['default'] = 'Ativado por predefinição';
 $string['default_help'] = 'Se ativar esta opção, este método de feedback estará disponível, por predefinição, para todos os trabalho.';
+$string['defaultcritdesc'] = 'Descrição predefinida para o primeiro critério';
+$string['defaultcritdesc_help'] = 'Descrição predefinida do feedback do primeiro critério (opcional) para todos os novos trabalhos.';
+$string['defaultcritname'] = 'Nome predefinido para o primeiro critério';
+$string['defaultcritname_help'] = 'Nome predefinido do feedback do primeiro critério (opcional) para todos os novos trabalhos. <br>Tenha em atenção que inserir um valor aqui ativará automaticamente o método de feedback estruturado para todos os novos trabalhos.';
 $string['enabled'] = 'Feedback estruturado';
 $string['enabled_help'] = 'Se ativado, o professor poderá definir qualquer número de critérios para fornecer feedback específico.';
 $string['escapetocancel'] = 'ESC para cancelar';

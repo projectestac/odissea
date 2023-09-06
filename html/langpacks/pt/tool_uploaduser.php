@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'pt', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'pt', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -40,6 +40,7 @@ $string['clivalidationerror'] = 'Erro de validação:';
 $string['csvdelimiter'] = 'Separador CSV';
 $string['defaultvalues'] = 'Valores predefinidos';
 $string['deleteerrors'] = 'Apagar erros';
+$string['duplicateemail'] = 'Foram detetados vários utilizadores com e-mail {$a}';
 $string['encoding'] = 'Codificação';
 $string['errormnetadd'] = 'Não é possível adicionar utilizadores remotos';
 $string['errorprefix'] = 'Erro:';
@@ -53,6 +54,7 @@ $string['invalidtheme'] = 'O tema "{$a}" não está instalado e será ignorado.'
 $string['invalidupdatetype'] = 'Não pode selecionar esta opção com o \'Tipo de carregamento\' escolhido.';
 $string['invaliduserdata'] = 'Foram detetados dados inválidos para o utilizador {$a} que foram apagados automaticamente.';
 $string['linex'] = 'Linha {$a}';
+$string['matchemail'] = 'Corresponder ao endereço de e-mail';
 $string['nochanges'] = 'Sem alterações';
 $string['notheme'] = 'Nenhum tema está definido para este utilizador.';
 $string['pluginname'] = 'Carregar utilizador';
@@ -82,6 +84,7 @@ $string['uploadusers_help'] = 'Os utilizadores podem ser carregados (e opcionalm
 * Cada registo é uma linha com uma série de dados separados pelo separador selecionado
 * A primeira linha contém a lista dos nomes dos campos que define o formato do ficheiro
 * Os nomes dos campos obrigatórios são: username, password, firstname, lastname, email';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Pré-visualizar os utilizadores carregados';
 $string['uploadusersresult'] = 'Resultados dos utilizadores carregados';
 $string['useraccountupdated'] = 'Utilizador atualizado';

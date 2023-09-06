@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'es', version '3.11'.
+ * Strings for component 'analytics', language 'es', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -123,6 +123,10 @@ $string['percentonline'] = 'Porcentaje en línea';
 $string['percentonline_help'] = 'Si su institución ofrece cursos mezclados o híbridos, ¿qué porcentaje del trabajo del estudiante es realizado en línea en Moodle? Introduzca un número entre 0 y 100.';
 $string['predictionsprocessor'] = 'Procesador de predicciones';
 $string['predictionsprocessor_help'] = 'Un procesador de predicciones es el \'backend\' de aprendizaje de máquina que procesa los conjuntos_de_datos generados al calcular los indicadores y objetivos de los modelos. El que está especificado aquí será el valor por defecto.';
+$string['privacy:metadata:analytics:analyticsmodels'] = 'Modelos de análisis';
+$string['privacy:metadata:analytics:analyticsmodels:usermodified'] = 'El usuario que ha modificado el modelo';
+$string['privacy:metadata:analytics:analyticsmodelslog'] = 'El registro utilizado para los modelos de análisis';
+$string['privacy:metadata:analytics:analyticsmodelslog:usermodified'] = 'El usuario que ha modificado el registro';
 $string['privacy:metadata:analytics:indicatorcalc'] = 'Cálculos del indicador';
 $string['privacy:metadata:analytics:indicatorcalc:contextid'] = 'El contexto';
 $string['privacy:metadata:analytics:indicatorcalc:endtime'] = 'Tiempo de fin del cálculo';
@@ -152,6 +156,7 @@ $string['processingsitecontents'] = 'Procesando contenidos del sitio';
 $string['successfullyanalysed'] = 'Analizado exitosamente';
 $string['timesplittingmethod'] = 'Intervalo de análisis';
 $string['timesplittingmethod_help'] = 'El intervalo de análisis define cuándo el sistema calculará las predicciones y la parte de los registros de actividad que se considerará para esas predicciones. Por ejemplo, la duración del curso puede dividirse en partes, con una predicción generada al final de cada parte.';
+$string['timesplittingmethod_link'] = 'Time_splitting_methods';
 $string['typeinstitution'] = 'Tipo de institución';
 $string['typeinstitutionacademic'] = 'Académica';
 $string['typeinstitutionngo'] = 'Organización No Gubernamental (ONG)';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'it', version '3.11'.
+ * Strings for component 'lti', language 'it', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -205,10 +205,12 @@ $string['indicator:cognitivedepth'] = 'LTI cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività LTI.';
 $string['indicator:cognitivedepthdef'] = 'LTI cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività LTI (Livelli: Nessuna visualizzazione, Visualizzazione, Invio, Visualizzazione feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'LTI sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività LTI.';
 $string['indicator:socialbreadthdef'] = 'LTI sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività LTI (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = 'URL di login iniziale';
 $string['initiatelogin_help'] = 'L\'URL del tool a cui devono essere inviate le richieste per l\'inizio di un login. È necessario disporre dell\'URL prima che messaggio possa essere inviato correttamente al tool un messaggio.';
 $string['invalidid'] = 'L\'ID LTI era errata';
@@ -262,7 +264,7 @@ $string['ltiunknownserviceapicall'] = 'Chiamata servizio API LTI sconosciuta';
 $string['ltiversion'] = 'Versione LTI';
 $string['ltiversion_help'] = 'La versione LTI utilizzata per firmare messaggi e richieste di servizio: LTI 1.0/1.1 e LTI 2.0 utilizzano il profilo di sicurezza OAuth 1.0A; LTI 1.3.0 utilizza JWT.';
 $string['main_admin'] = 'Help generale';
-$string['main_admin_help'] = 'I tool esterni consentono di interagire con risorse formative ospitate in altri siti. Tramite uno speciale protocollo di lancio, il tool remoto può accedere ad alcune informazioni relative all\'utente, come ad esempio il nome dell\'istituzione, l\'id del corso, l\'id dell\'utente, il nome dell\'utente e l\'email.
+$string['main_admin_help'] = 'I tool esterni consentono di interagire con risorse formative ospitate in altri siti. Tramite uno speciale protocollo di lancio, il tool remoto può accedere ad alcune informazioni relative all\'utente, come ad esempio il nome dell\'istituzione, l\'id del corso, l\'id dell\'utente ed altre informazioni come il nome dell\'utente e l\'email.
 
 I tool elencati nella pagina sono divisi in tre categorie:
 
@@ -288,6 +290,7 @@ I tool esterni si differenziano da una risorsa di tipo URL per diversi aspetti:
 * I tool esterni possono conoscere il contesto, ossia possono avere accesso alle informazioni dell\'utente che li ha lanciati, come l\'istituzione di appartenenza, il corso, il nome, eccetera.
 * I tool esterni possono leggere, aggiornare ed eliminare le valutazioni associate alla istanza dell\'attività.
 * Le configurazioni di I tool esterni creano una relazione di trust tra Moodle e il tool provider, assicurando un canale di comunicazione sicuro.';
+$string['modulename_link'] = 'mod/lti/view';
 $string['modulenameplural'] = 'Tool Esterni';
 $string['modulenamepluralformatted'] = 'Istanze LTI';
 $string['name'] = 'Nome';
@@ -313,12 +316,8 @@ $string['opensslconfiginvalid'] = 'LTI 1.3 richiede un file openssl.cnf valido, 
 $string['optionalsettings'] = 'Impostazioni opzionali';
 $string['organization'] = 'Dettagli dell\'organizzazione';
 $string['organizationdescr'] = 'Descrizione dell\'organizzazione';
-$string['organizationid'] = 'ID dell\'organizzazione';
 $string['organizationid_default'] = 'ID di default dell\'organizzazione';
 $string['organizationid_default_help'] = 'Il valore predefinito da utilizzare per l\'ID organizzazione. L\'ID sito identifica questa installazione di Moodle.';
-$string['organizationid_help'] = 'Un identificativo univoco di questa istanza Moodle. Di solito si utilizza il nome DNS della organizzazione.
-
-Lasciando vuoto il campo, di default verrà utilizzato il nome del sito Moodle.';
 $string['organizationidguid'] = 'ID dell\'organizzazione';
 $string['organizationidguid_help'] = 'Un identificatore univoco di questa istanza Moodle, passato al tool come GUID dell\'istanza della piattaforma.
 

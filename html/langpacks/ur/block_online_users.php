@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'ur', version '3.11'.
+ * Strings for component 'block_online_users', language 'ur', version '4.1'.
  *
  * @package     block_online_users
  * @category    string
@@ -25,8 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtimetosee'] = 'کتنا وقت استعمال کنندہ بغیر سرگرمی کے رہے تاکہ وہ آف لائن سمجھا جاۓ';
-$string['online_users:viewlist'] = 'آن لائن استعمال کنندگان کی فہرست دیکھو';
+$string['configtimetosee'] = 'غیر فعالیت کی مدت کا تعین کرنے والے منٹوں کی تعداد جس کے بعد صارف کو آن لائن نہیں سمجھا جاتا ہے۔';
+$string['nouser'] = 'کوئی آن لائن صارفین نہیں';
+$string['numuser'] = '{$a} آن لائن صارف';
+$string['numusers'] = '{$a} آن لائن صارفین';
+$string['online_status:hide'] = 'دوسرے صارفین سے میری آن لائن حیثیت چھپائیں';
+$string['online_status:show'] = 'دوسرے صارفین کو میری آن لائن حیثیت دکھائیں';
+$string['online_users:addinstance'] = 'ایک نیا آن لائن صارفین بلاک شامل کریں';
+$string['online_users:myaddinstance'] = 'ڈیش بورڈ میں ایک نیا آن لائن صارفین بلاک شامل کریں';
+$string['online_users:viewlist'] = 'آن لائن صارفین کی فہرست دیکھیں';
+$string['onlinestatushiding'] = 'آن لائن اسٹیٹس چھپا رہا ہے';
+$string['onlinestatushiding_desc'] = 'اگر فعال ہو تو، صارفین کو دوسرے صارفین سے اپنی آن لائن حیثیت چھپانے کا اختیار ہے۔';
+$string['otherusers'] = 'دوسرے صارفین ({$a})';
 $string['periodnminutes'] = 'آخری {$a} منٹ';
-$string['pluginname'] = 'آن لائن استعمال کنند گان';
-$string['timetosee'] = 'اتنی دی تک بغیر سرگرمی رہے تو خارج کر دو';
+$string['pluginname'] = 'آن لائن صارفین';
+$string['privacy:metadata:preference:uservisibility'] = 'آن لائن اسٹیٹس آن لائن صارفین کے بلاک میں دوسرے صارفین کو نظر آتا ہے۔';
+$string['timetosee'] = 'غیرفعالیت کے بعد ہٹائیں (منٹ)';

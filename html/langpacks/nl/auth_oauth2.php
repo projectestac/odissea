@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'nl', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'nl', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -81,14 +81,17 @@ $string['emailpasswordchangeinfosubject'] = '{$a}: Informatie over wachtwoordwij
 $string['info'] = 'Externe account';
 $string['issuer'] = 'OAuth 2 service';
 $string['issuernologin'] = 'Deze uitgever kan niet gebruikt worden om in te loggen';
+$string['key'] = 'Sleutel';
 $string['linkedlogins'] = 'Gekoppelde logins';
 $string['linkedloginshelp'] = 'Hulp bij gekoppelde logins';
+$string['loggedin'] = 'Authenticatie van de gebruiker met de provider is gelukt.';
 $string['loginerror_authenticationfailed'] = 'Het authenticatieproces is mislukt';
 $string['loginerror_cannotcreateaccounts'] = 'Er is geen account met jouw e-mailadres gevonden.';
 $string['loginerror_invaliddomain'] = 'Het e-mailadres is niet toegestaan op deze site.';
 $string['loginerror_nouserinfo'] = 'Er is geen gebruikersinformatie teruggegeven. De OAuth 2 service is misschien niet juist geconfigureerd.';
 $string['loginerror_userincomplete'] = 'De teruggekregen gebruikersinformatie bevat geen gebruikersnaam en e-mailadres. De OAuth 2 service is misschien niet juist geconfigureerd.';
-$string['noissuersavailable'] = 'Geen van de geconfigureerde OAuth2 services staat je toe om accounts te koppelen';
+$string['noconfiguredidps'] = 'Er zijn geen OAuth2-providers.';
+$string['noissuersavailable'] = 'Geen van de geconfigureerde OAuth2 services staat je toe om accounts te koppelen.';
 $string['notenabled'] = 'Sorry, de OAuth2 authenticatieplugin is niet ingeschakeld';
 $string['notloggedindebug'] = 'De loginpoging is mislukt. Reden {$a}';
 $string['notwhileloggedinas'] = 'Gekoppelde logins kunnen niet beheerd worden terwijl je aangemeld bent als een andere gebruiker.';
@@ -107,3 +110,6 @@ $string['privacy:metadata:auth_oauth2:timemodified'] = 'Het tijdstip waarop deze
 $string['privacy:metadata:auth_oauth2:userid'] = 'De gebruikersID van de gebruikersaccount waar deze OAuth2-login aan gelinkt is.';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'De ID van de gebruiker die deze account gewijzigd heeft.';
 $string['privacy:metadata:auth_oauth2:username'] = 'De externe gebruikersnaam die aan deze account gekoppeld is.';
+$string['testidplogin'] = 'Test login met:';
+$string['userinfo'] = 'Gebruikersgegevens van provider:';
+$string['value'] = 'Waarde';

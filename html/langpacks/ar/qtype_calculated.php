@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'ar', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'ar', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -57,6 +57,7 @@ $string['editdatasets'] = 'تحرير مجموعات بيانات البطاقا
 $string['editdatasets_help'] = 'قد يتم إنشاء من القيم البديلة عن طريق إدخال رقم في كل حقل كبطاقة بديلة ثم النقر على زر الإضافة. لتوليد 10 أو أكثر من القيم تلقائيا، حدد عددا من القيم المطلوبة قبل النقر على زر الإضافة.
 توزيع منتظم يعني أن أي قيمة بين الحدود هي بنفس القدر من المرجح أن يتم إنشاؤها؛
 سجل توزيع موحد يعني أن من القيم نحو الحد الأدنى هي أكثر احتمالا.';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = 'سوف تستخدم مجموعة البيانات المشتركة الموجودة بالفعل';
 $string['existingcategory2'] = 'ملف من مجموعة موجودة بالفعل من الملفات التي يتم استخدامها أيضا من قبل أسئلة أخرى في هذه الفئة';
 $string['existingcategory3'] = 'رابط من مجموعة موجودة بالفعل من الروابط التي تستخدم أيضا من قبل أسئلة أخرى في هذه الفئة';
@@ -113,6 +114,7 @@ $string['param'] = 'العامل {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'لأي إجابة صحيحة جزئياً';
 $string['pluginname'] = 'حسابي';
 $string['pluginname_help'] = 'الأسئلة الحسابية .. تمكن الأسئلة العددية الفردية المراد إنشاؤها باستخدام البطاقات البديلة في الأقواس التي يتم استبدالها مع القيم الفردية عندما يتم أخذ هذا الاختبار. على سبيل المثال، فإن السؤال "ما هي مساحة مستطيل طوله {L} وعرضه {W}؟" سيكون صيغة الجواب الصحيح "{L} * {W}" (حيث * تدل على الضرب).';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = 'إضافة سؤال حسابي';
 $string['pluginnameediting'] = 'تحرير سؤال حسابي';
 $string['pluginnamesummary'] = 'الأسئلة الحسابية مثل الأسئلة العددية ولكن مع أرقام مستعملة يتم اختيارها عشوائياً من مجموعة محددة، عندما يتم أخذ هذا الاختبار.';

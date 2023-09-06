@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'es', version '3.11'.
+ * Strings for component 'my', language 'es', version '4.1'.
  *
  * @package     my
  * @category    string
@@ -28,9 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['addpage'] = 'Agregar página';
 $string['alldashboardswerereset'] = 'Todas las páginas del Área personal han sido restablecidas al valor por defecto.';
 $string['allprofileswerereset'] = 'Todas las páginas de perfiles han sido restablecidas al valor por defecto.';
+$string['coursemanagementoptions'] = 'Opciones de administración del curso';
 $string['defaultpage'] = 'Página My Moodle por defecto';
 $string['defaultprofilepage'] = 'Página de perfil por defecto';
 $string['delpage'] = 'Eliminar página';
+$string['error:dashboardisdisabled'] = 'El tablero ha sido deshabilitado por un administrador';
 $string['managepages'] = 'Gestionar páginas';
 $string['mymoodle'] = 'Área personal';
 $string['nocourses'] = 'No hay información del curso para mostrar.';

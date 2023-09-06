@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'ar', version '3.11'.
+ * Strings for component 'format_tiles', language 'ar', version '4.1'.
  *
  * @package     format_tiles
  * @category    string
@@ -28,8 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['all'] = 'الكل';
 $string['colourdarkgreen'] = 'أخضر داكن';
 $string['colourgreen'] = 'أخضر';
+$string['courseshowtileprogress_link'] = 'Activity_completion_settings#Activity_settings';
+$string['displayfilterbar_link'] = 'Outcomes';
 $string['displaytitle_mod_html'] = 'صفحة الويب';
-$string['home'] = 'الصفحة الرئيسية للمقرر الدراسي';
+$string['home'] = 'الصفحة الرئيسية للمساق الدراسي';
 $string['icontitle-address-book-o'] = 'دفتر العناوين';
 $string['icontitle-home'] = 'الصفحة الرئيسية';
 $string['icontitle-tags'] = 'الوسوم';

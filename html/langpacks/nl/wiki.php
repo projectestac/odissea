@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'nl', version '3.11'.
+ * Strings for component 'wiki', language 'nl', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -106,6 +106,7 @@ $string['formatcreole'] = 'Creole-opmaak';
 $string['formatcreole_help'] = 'Creole is een veel gebruikte  wiki opmaaktaal met een werkbalk voor het invoeren van de juiste opmaak.
 
 Typ een nieuwe paginanaam tussen dubbele vierkante haken om een nieuwe pagina te maken, bijvoorbeeld [[Pagina 2]].';
+$string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'HTML-opmaak';
 $string['formathtml_help'] = 'De HTML-editor kan gebruikt worden om de tekst op te maken.
 
@@ -114,6 +115,7 @@ $string['formatnwiki'] = 'NWiki-opmaak';
 $string['formatnwiki_help'] = '*Nwiki - Mediawiki-achtige opmaaktaal die in de Nwiki module gebruikt wordt.
 
 Typ een nieuwe paginanaam tussen dubbele vierkante haken om een nieuwe pagina te maken, bijvoorbeeld [[Pagina 2]].';
+$string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Geschiedenis';
 $string['history_help'] = 'De geschiedenis toont links naar vorige versies van deze pagina.';
 $string['html'] = 'HTML';
@@ -125,10 +127,12 @@ $string['indicator:cognitivedepth'] = 'Wiki cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Wiki activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Wiki cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de Wiki-activiteiten bereikt tijdens dit analyse-interval (Niveaus = Geen weergave, Bekijken, Verzenden)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Wiki sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Wiki activiteit.';
 $string['indicator:socialbreadthdef'] = 'Wiki sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de Wiki-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, Alleen deelnemer, Deelnemer met anderen)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = 'Individuele wiki-pagina bestaat niet';
 $string['insertcomment'] = 'Opmerking invoegen';
 $string['insertimage'] = 'Voeg een afbeelding toe...';
@@ -161,6 +165,7 @@ Wiki\'s kunnen voor veel zaken gebruikt worden, zoals
 * om een online boek te maken door leerlingen, bebaseerd op een onderwerp dat de leraar bepaald heeft.
 * om samen verhalen of gedichten te schrijven, waarbij elke deelnemer een regel of een vers moet schrijven
 * als persoonlijk logboek voor toetsnotities of herhaling (met een individuele wiki)';
+$string['modulename_link'] = 'mod/wiki/view';
 $string['modulenameplural'] = 'Wiki\'s';
 $string['navigation'] = 'Navigatie';
 $string['navigationfrom'] = 'De pagina komt van';

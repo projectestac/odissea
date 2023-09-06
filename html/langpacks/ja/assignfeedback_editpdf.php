@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ja', version '3.11'.
+ * Strings for component 'assignfeedback_editpdf', language 'ja', version '4.1'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -35,7 +35,7 @@ $string['colourpicker'] = 'カラーピッカ';
 $string['command'] = 'コマンド:';
 $string['comment'] = 'コメント';
 $string['commentcolour'] = 'コメント色';
-$string['commentcontextmenu'] = 'コメントコンテクストメニュ';
+$string['commentcontextmenu'] = 'コメントコンテクストメニュー';
 $string['commentindex'] = 'コメントインデックス';
 $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'ページ {$a} を保存できませんでした。';

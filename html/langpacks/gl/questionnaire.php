@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'gl', version '3.11'.
+ * Strings for component 'questionnaire', language 'gl', version '4.1'.
  *
  * @package     questionnaire
  * @category    string
@@ -37,6 +37,7 @@ $string['addquestiontosection'] = 'Engadir unha pregunta á sección';
 $string['addselqtype'] = 'Engadir unha pregunta do tipo seleccionado';
 $string['alignment'] = 'Aliñamento dos botóns radiais';
 $string['alignment_help'] = 'Aliñamento dos botóns de selección: vertical (por defecto) ou horizontal.';
+$string['alignment_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['all'] = 'TODO';
 $string['alreadyfilled'] = 'Xa completou este cuestionario {$a}. Grazas';
 $string['andaveragevalues'] = 'e promedio de valores';
@@ -75,15 +76,42 @@ $string['chart:vprogress'] = 'Barra de progreso vertical';
 $string['checkallradiobuttons'] = '¡Por favor, marque <strong>{$a}</strong> botóns radiais!';
 $string['checkboxes'] = 'Casiñas de verificación';
 $string['checkboxes_help'] = 'Insira unha opción por liña para que o usuario seleccione unha ou varias.';
+$string['checkboxes_link'] = 'mod/questionnaire/questions#Check_Boxes';
 $string['checkbreaksadded'] = 'Salto(s) de nova páxina inserido na posición(s):';
 $string['checkbreaksok'] = '¡Todos os saltos de páxina están presentes!';
 $string['checknotstarted'] = 'A selección non empezou';
 $string['checkstarted'] = 'A selección empezou';
 $string['clicktoswitch'] = '(seleccione para cambiar)';
 $string['closed'] = 'O cuestionario pechouse en {$a}. Grazas.';
+$string['createcontent_link'] = 'mod/questionnaire/mod#Content_Options';
+$string['date_link'] = 'mod/questionnaire/questions#Date';
 $string['dateformatting'] = 'Use o formato día/mes/ano, por exemplo: 14 marzo de 1945: &nbsp; <strong>14/3/1945</strong>';
+$string['dependquestion_link'] = 'mod/questionnaire/questions#Parent_Question';
+$string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
+$string['dropdown_link'] = 'mod/questionnaire/questions#Dropdown_Box';
+$string['feedback_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Messages';
+$string['feedbackoptions_link'] = 'mod/questionnaire/personality_test';
+$string['feedbacksectionsselect_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Sections_2';
+$string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
+$string['managequestions_link'] = 'mod/questionnaire/questions#Manage_questions';
+$string['maxdigitsallowed_link'] = 'mod/questionnaire/questions#Numeric';
 $string['modulename'] = 'Cuestionario';
+$string['modulename_link'] = 'mod/questionnaire/view';
 $string['modulenameplural'] = 'Cuestionarios';
+$string['navigate_link'] = 'mod/questionnaire/conditional_branching';
 $string['notavail'] = 'Ese cuestionario aínda non está dispoñible. Tente de novo máis tarde.';
+$string['notifications_link'] = 'mod/questionnaire/mod#Submission_Notifications';
+$string['numberofdecimaldigits_link'] = 'mod/questionnaire/questions#Numeric';
+$string['optionalname_link'] = 'mod/questionnaire/questions#Question_Name';
+$string['orderresponses_link'] = 'mod/questionnaire/report#Order_Responses';
 $string['qtype'] = 'Tipo';
+$string['questiontypes_link'] = 'mod/questionnaire/questions#Question_Types';
+$string['radiobuttons_link'] = 'mod/questionnaire/questions#Radio_Buttons';
+$string['ratescale_link'] = 'mod/questionnaire/questions#Rate_.28scale_1..5.29';
+$string['realm_link'] = 'mod/questionnaire/qsettings#Questionnaire_Type';
+$string['required_link'] = 'mod/questionnaire/questions#Response_Required';
 $string['respondenttype'] = 'Tipo de persoa consultada';
+$string['respondenttype_link'] = 'mod/questionnaire/mod#Respondent_Type';
+$string['responseview_link'] = 'mod/questionnaire/mod#Response_viewing';
+$string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
+$string['viewallresponses_link'] = 'Viewing_Questionnaire_responses#Group_filtering';

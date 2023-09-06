@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_aiken', language 'nl', version '3.11'.
+ * Strings for component 'qformat_aiken', language 'nl', version '4.1'.
  *
  * @package     qformat_aiken
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Aiken opmaak';
 $string['pluginname_help'] = 'Dit is eenvoudige opmaak voor het importeren van meerkeuzevragen vanuit een tekstbestand.';
+$string['pluginname_link'] = 'qformat/aiken';
 $string['privacy:metadata'] = 'De Aiken vraag format-plugin bewaart geen persoonlijke gegevens.';
 $string['questionmissinganswers'] = 'Vraag moet minimaal 2 antwoorden hebben op regel {$a}';
 $string['questionnotcomplete'] = 'Vraag niet voltooid voordat volgende vraag start op regel {$a}';

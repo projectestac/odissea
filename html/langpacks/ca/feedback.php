@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ca', version '3.11'.
+ * Strings for component 'feedback', language 'ca', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -141,6 +141,8 @@ $string['import_questions'] = 'importa preguntes';
 $string['import_successfully'] = 'Importació realitzada amb èxit';
 $string['importfromthisfile'] = 'importa des d\'aquest fitxer';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Retroalimentació en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Informació';
 $string['infotype'] = 'Tipus d\'informació';
 $string['insufficient_responses'] = 'respostes insuficients';
@@ -173,6 +175,7 @@ Les activitats de retroalimentació es poden utilitzar:
 * Per permetre als participants inscriure\'s a mòduls del curs, esdeveniments, etc.
 * Per a enquestes a visitants sobre opcions de cursos, polítiques de la institució educativa, etc.
 * Per a enquestes contra l\'assetjament escolar on els estudiants puguin informar sobre incidències de manera anònima.';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = 'Retroalimentació';
 $string['move_item'] = 'Mou aquesta pregunta';
 $string['multichoice'] = 'Opcions múltiples';

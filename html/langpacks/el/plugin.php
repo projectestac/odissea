@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'el', version '3.11'.
+ * Strings for component 'plugin', language 'el', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -46,7 +46,7 @@ $string['dependencymissing'] = 'Λείπει';
 $string['dependencyunavailable'] = 'Μη διαθέσιμο';
 $string['dependencyupload'] = 'Ανέβασμα';
 $string['dependencyuploadmissing'] = 'Ανέβασμα αρχείων ZIP';
-$string['detectedmisplacedplugin'] = 'Το πρόσθετο «{$a->component}» είναι εγκατεστημένο σε λανθασμένη τοποθεσία «{$a->current}». Η αναμενόμενη θέση είναι «{$a->expected}».';
+$string['detectedmisplacedplugin'] = 'Το πρόσθετο «{$a->component}» είναι εγκατεστημένο σε λανθασμένη τοποθεσία «{$a->current}». Η αναμενόμενη τοποθεσία είναι «{$a->expected}».';
 $string['displayname'] = 'Όνομα πρόσθετου';
 $string['err_response_curl'] = 'Δεν είναι δυνατή η λήψη των διαθέσιμων δεδομένων ενημερώσεων - μη αναμενόμενο σφάλμα cURL.';
 $string['err_response_format_version'] = 'Μη αναμενόμενη έκδοση του μορφότυπου απόκρισης. Παρακαλούμε, δοκιμάστε να ελέγξετε ξανά για διαθέσιμες ενημερώσεις.';
@@ -67,7 +67,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Δεν έχουν εγκατασταθεί πρόσθετα αυτού του τύπου';
 $string['notdownloadable'] = 'Δεν είναι δυνατή η λήψη του πακέτου';
 $string['notdownloadable_help'] = 'Το πακέτο ZIP με την ενημέρωση δεν μπορεί να ληφθεί αυτόματα.';
-$string['notdownloadable_link'] = 'διαχείριση/mdeploy/δενκατεβαίνει';
+$string['notdownloadable_link'] = '';
 $string['notes'] = 'Σημειώσεις';
 $string['notsupported'] = 'Το πρόσθετο μπορεί να μην είναι συμβατό με την έκδοση Moodle {$a}';
 $string['notwritable'] = 'Τα αρχεία πρόσθετου δεν είναι εγγράψιμα';
@@ -126,6 +126,8 @@ $string['type_calendartype'] = 'Τύπος ημερολογίου';
 $string['type_calendartype_plural'] = 'Τύποι ημερολογίου';
 $string['type_contentbank'] = 'Τράπεζα περιεχομένου';
 $string['type_contentbank_plural'] = 'Πρόσθετα τράπεζας περιεχομένου';
+$string['type_contenttype'] = 'Τράπεζα περιεχομένου';
+$string['type_contenttype_plural'] = 'Πρόσθετα τράπεζας περιεχομένου';
 $string['type_coursereport'] = 'Αναφορά μαθήματος';
 $string['type_coursereport_plural'] = 'Αναφορές μαθήματος';
 $string['type_customfield'] = 'Προσαρμοσμένο πεδίο';
@@ -174,6 +176,8 @@ $string['type_portfolio'] = 'Χαρτοφυλάκιο';
 $string['type_portfolio_plural'] = 'Χαρτοφυλάκια';
 $string['type_profilefield'] = 'Τύπος πεδίου προφίλ';
 $string['type_profilefield_plural'] = 'Τύποι πεδίων προφίλ';
+$string['type_qbank'] = 'Πρόσθετο τράπεζας ερωτήσεων';
+$string['type_qbank_plural'] = 'Πρόσθετα τράπεζας ερωτήσεων';
 $string['type_qbehaviour'] = 'Συμπεριφορά ερωτήσεων';
 $string['type_qbehaviour_plural'] = 'Συμπεριφορές ερωτήσεων';
 $string['type_qformat'] = 'Μορφότυπος εισαγωγής/εξαγωγής ερωτήσεων';

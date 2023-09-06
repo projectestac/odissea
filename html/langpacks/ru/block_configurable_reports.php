@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'ru', version '3.11'.
+ * Strings for component 'block_configurable_reports', language 'ru', version '4.1'.
  *
  * @package     block_configurable_reports
  * @category    string
@@ -112,6 +112,7 @@ $string['comp_template_help'] = '<p>Вы можете изменить пред�
 <p>Для создания шаблона, используйте подстановочные выражения, которые можно использовать в заголовке, «подвале» и в каждой из строк отчета. Для этого можно использовать кнопки справки и информацию на этой странице.</p>
 
 <p> Дополнительную информацию можно найти в  <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">документации (на английском языке).</a> </p>';
+$string['competencyframeworks'] = 'Структуры компетенций';
 $string['competencytemplates'] = 'Шаблоны компетенций';
 $string['componenthelp'] = 'Справка по использованию компонента';
 $string['conditionexpr'] = 'Условие';
@@ -228,6 +229,7 @@ $string['filtercategories'] = 'Категория курсов';
 $string['filtercategories_summary'] = 'Фильтр для выбора категории курсов';
 $string['filtercohorts'] = 'Глобальные группы';
 $string['filtercohorts_summary'] = 'Используйте: %%FILTER_COHORTS:prefix_cohort.id%%';
+$string['filtercompetencyframeworks'] = 'Структуры компетенций';
 $string['filtercompetencyframeworks_summary'] = 'Используйте: %%FILTER_COMPETENCYFRAMEWORKS:prefix_competency_framework.id%%';
 $string['filtercompetencytemplates'] = 'Шаблоны компетенции';
 $string['filtercompetencytemplates_summary'] = 'Используйте: %%FILTER_COMPETENCYTEMPLATES:prefix_competency_template.id%%';

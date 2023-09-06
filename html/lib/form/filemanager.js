@@ -38,12 +38,21 @@
  * this.options.itemid
  */
 
+/* eslint camelcase: off */
 
-M.form_filemanager = {templates:{}};
+M.form_filemanager = {
+    templates: {},
+    formChangeChecker: null,
+};
+
+require(['core_form/changechecker'], function(FormChangeChecker) {
+    // This is a nasty, hacky, way of doing it but it's the smallest evil.
+    M.form_filemanager.formChangeChecker = FormChangeChecker;
+});
 
 M.form_filemanager.set_templates = function(Y, templates) {
     M.form_filemanager.templates = templates;
-}
+};
 
 /**
  * This fucntion is called for each file picker on page.
@@ -199,9 +208,7 @@ M.form_filemanager.init = function(Y, options) {
             this.filecount++;
             this.check_buttons();
             this.refresh(this.currentpath);
-            if (typeof M.core_formchangechecker != 'undefined') {
-                M.core_formchangechecker.set_form_changed();
-            }
+            M.form_filemanager.formChangeChecker.markFormChangedFromNode(this.filemanager.getDOMNode());
 
             require(['core_form/events'], function(FormEvent) {
                 FormEvent.notifyUploadChanged(this.filemanager.get('id'));
@@ -332,9 +339,7 @@ M.form_filemanager.init = function(Y, options) {
                                 scope.mkdir_dialog.hide();
                                 scope.refresh(filepath);
                                 Y.one('#fm-newname-'+scope.client_id).set('value', '');
-                                if (typeof M.core_formchangechecker != 'undefined') {
-                                    M.core_formchangechecker.set_form_changed();
-                                }
+                                M.form_filemanager.formChangeChecker.markFormChangedFromNode(scope.filemanager.getDOMNode());
                             }
                         });
                     };
@@ -464,9 +469,7 @@ M.form_filemanager.init = function(Y, options) {
                             if (obj && obj.length) {
                                 args.scope.refresh(obj[0], {action: 'delete'});
                             }
-                            if (typeof M.core_formchangechecker != 'undefined') {
-                                M.core_formchangechecker.set_form_changed();
-                            }
+                            M.form_filemanager.formChangeChecker.markFormChangedFromNode(this.scope.filemanager.getDOMNode());
 
                             require(['core_form/events'], function(FormEvent) {
                                 FormEvent.notifyUploadChanged(this.scope.filemanager.get('id'));
@@ -733,9 +736,7 @@ M.form_filemanager.init = function(Y, options) {
                 this.lazyloading={};
             }
             this.filemanager.one('.fp-content').fp_display_filelist(options, list, this.lazyloading);
-            if (this.viewmode != 2) {
-                this.content_scrolled();
-            }
+            this.content_scrolled();
             // This is used to focus after refreshing the list files by update file and set main file action.
             if (actionfiles !== undefined) {
                 if (actionfiles.action == 'updatefile' || actionfiles.action == 'setmainfile') {
@@ -893,9 +894,7 @@ M.form_filemanager.init = function(Y, options) {
                         args.scope.selectui.hide();
                         var actionfile = {action: action, newfilename: newfilename};
                         args.scope.refresh((obj && obj.filepath) ? obj.filepath : '/', actionfile);
-                        if (typeof M.core_formchangechecker != 'undefined') {
-                            M.core_formchangechecker.set_form_changed();
-                        }
+                        M.form_filemanager.formChangeChecker.markFormChangedFromNode(this.scope.filemanager.getDOMNode());
                     }
                 }
             });
@@ -1007,9 +1006,7 @@ M.form_filemanager.init = function(Y, options) {
                             //args.scope.selectui.hide();
                             args.scope.filecount--;
                             args.scope.refresh(obj.filepath, {action: 'delete'});
-                            if (typeof M.core_formchangechecker != 'undefined') {
-                                M.core_formchangechecker.set_form_changed();
-                            }
+                            M.form_filemanager.formChangeChecker.markFormChangedFromNode(this.scope.filemanager.getDOMNode());
 
                             require(['core_form/events'], function(FormEvent) {
                                 FormEvent.notifyUploadChanged(this.scope.filemanager.get('id'));

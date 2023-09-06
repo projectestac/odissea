@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'fr', version '3.11'.
+ * Strings for component 'tool_usertours', language 'fr', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -43,9 +43,12 @@ $string['confirmtourremovalquestion'] = 'Voulez-vous vraiment supprimer cette vi
 $string['confirmtourremovaltitle'] = 'Confirmer la suppression de la visite guidée';
 $string['content'] = 'Contenu';
 $string['content_heading'] = 'Contenu';
-$string['content_help'] = 'La description d\'une étape peut être ajoutée en texte pur ou en utilisant la syntaxe multilingue de Moodle (pour utilisation avec le filtre multilingue).
-
-Il est aussi possible d\'indiquer un identifiant de chaîne de caractères, sous la forme « identifiant,composant » (sans espace après la virgule).';
+$string['content_help'] = 'La description d\'une étape peut être ajoutée en texte pur ou en utilisant la syntaxe multilingue de Moodle (pour utilisation avec le filtre multilingue).';
+$string['content_type'] = 'Type de contenu';
+$string['content_type_help'] = '* Manuel - le contenu est saisi avec un éditeur de texte
+* ID de chaîne de langue - sous la forme d\'un identifiant de chaîne « identifiant,composant » (sans délimiteur, ni espace après la virgule)';
+$string['content_type_langstring'] = 'ID de chaîne de langue';
+$string['content_type_manual'] = 'Manuel';
 $string['cssselector'] = 'Sélecteur CSS';
 $string['defaultvalue'] = 'Défaut ({$a})';
 $string['delay'] = 'Délai avant d\'afficher l\'étape';
@@ -53,12 +56,22 @@ $string['delay_help'] = 'Un délai optionnel peut être ajouté avant l\'afficha
 
 Ce délai est défini en millisecondes.';
 $string['description'] = 'Description';
+$string['description_help'] = 'La description d\'une visite guidée doit être écrite en texte pur, avec au besoin des balises multilingues lorsque le filtre multilingue est utilisé.
+
+Il est aussi possible d\'indiquer un identifiant de chaîne de caractères, sous la forme « identifiant,composant » (sans espace ni crochet après la virgule).';
+$string['displaystepnumbers'] = 'Afficher les numéros des étapes';
+$string['displaystepnumbers_help'] = 'Ce réglage indique s\'il faut afficher un compteur d\'étapes, p.ex. 1/4, 2/4, etc. pour indiquer la longueur de la viste guidée.';
 $string['done'] = 'Terminé';
 $string['duplicatetour'] = 'Dupliquer la visite guidée';
 $string['duplicatetour_name'] = '{$a} (copie)';
 $string['editstep'] = 'Modification de « {$a} »';
 $string['enabled'] = 'Activé';
+$string['endonesteptour'] = 'Compris';
 $string['endtour'] = 'Terminer la visite guidée';
+$string['endtourlabel'] = 'Libellé du bouton pour terminer la visite guidée';
+$string['endtourlabel_help'] = 'Il est possible de spécifier un libellé personnalisé pour le bouton permettant de terminer la visite guidée. Le libellé par défaut est « Compris » pour les visites à une seule étape, et « Terminer la visite guidée » pour les visites à plusieurs étapes.
+
+Il est aussi possible d\'indiquer un identifiant de chaîne de caractères, sous la forme « identifiant,composant » (sans espace ni crochet après la virgule).';
 $string['event_step_shown'] = 'Étape affichée';
 $string['event_tour_ended'] = 'Visite guidée terminée';
 $string['event_tour_reset'] = 'Visite guidée relancée';
@@ -85,17 +98,23 @@ $string['filter_role_help'] = 'L\'affichage d\'une visite guidée peut être res
 $string['filter_theme'] = 'Thème';
 $string['filter_theme_help'] = 'N\'afficher la visite guidée que lorsque l\'utilisateur utilise l\'un des thèmes indiqués.';
 $string['importtour'] = 'Importer une visite guidée';
+$string['invalid_lang_id'] = 'ID de chaîne de langue non valide';
 $string['left'] = 'À gauche';
 $string['modifyshippedtourwarning'] = 'Cette visite guidée est fournie avec Moodle. Toutes les modifications que vous y apportez sont susceptibles d\'être écrasées lors de la prochaine mise à jour de votre plateforme.';
+$string['moodle_language_identifier'] = 'ID de chaîne de langue';
 $string['movestepdown'] = 'Déplacer l\'étape vers le bas';
 $string['movestepup'] = 'Déplacer l\'étape vers le haut';
 $string['movetourdown'] = 'Déplacer la visite guidée vers le bas';
 $string['movetourup'] = 'Déplacer la visite guidée vers le haut';
 $string['name'] = 'Nom';
+$string['name_help'] = 'Le nom d\'une visite guidée doit être écrit en texte pur, avec au besoin des balises multilingues lorsque le filtre multilingue est utilisé.
+
+Il est aussi possible d\'indiquer un identifiant de chaîne de caractères, sous la forme « identifiant,composant » (sans espace ni crochet après la virgule).';
 $string['newstep'] = 'Nouvelle étape';
 $string['newtour'] = 'Créer une visite guidée';
 $string['next'] = 'Suivant';
 $string['nextstep'] = 'Suivant';
+$string['nextstep_sequence'] = 'Suivant ({$a->position}/{$a->total})';
 $string['options_heading'] = 'Options';
 $string['orphan'] = 'Afficher si la cible n\'est pas trouvée';
 $string['orphan_help'] = 'Afficher l\'étape si la cible ne peut pas être trouvée sur la page.';
@@ -132,6 +151,7 @@ $string['selectordisplayname'] = 'Un sélecteur CSS correspondant à « {$a} �
 $string['selecttype'] = 'Choisir un type d\'étape';
 $string['sharedtourslink'] = 'Dépôt des visites guidées';
 $string['skip'] = 'Passer';
+$string['skip_tour'] = 'Sauter la visite guidée';
 $string['target'] = 'Cible';
 $string['target_block'] = 'Bloc';
 $string['target_heading'] = 'Cible de l\'étape';
@@ -151,7 +171,7 @@ $string['title_help'] = 'Le titre d\'une étape peut être ajouté en texte pur 
 Il est aussi possible d\'indiquer un identifiant de chaîne de caractères, sous la forme « identifiant,composant » (sans espace ni crochet après la virgule).';
 $string['tour1_content_addingblocks'] = 'En fait, réfléchissez à deux fois avant d\'ajouter des blocs sur vos pages. Les blocs ne sont pas affichés dans l\'app Moodle, donc de façon générale, il est beaucoup mieux de s\'assurer que votre plateforme fonctionne bien sans aucun bloc.';
 $string['tour1_content_blockregion'] = 'Il reste encore une région pour les blocs à cet endroit. Nous vous recommandons de retirer complètement les blocs Navigation et Administration, puisque toutes leurs fonctionnalités sont disponibles ailleurs dans le thème Boost.';
-$string['tour1_content_customisation'] = 'Pour personnaliser l\'apparence de votre plateforme et de sa page d\'accueil, utilisez le menu des réglages au coin de cette entête. Activez le mode édition maintenant.';
+$string['tour1_content_customisation'] = 'Pour personnaliser l\'apparence de votre site et de sa page d\'accueil, utilisez le menu des réglages au coin de cet en-tête. Activez le mode édition maintenant.';
 $string['tour1_content_end'] = 'Vous venez de terminer une visite guidée. Cette visite ne s\'affichera plus, à moins que vous ne la relanciez au moyen du lien dans le pied de page. En tant qu\'administrateur, vous pouvez aussi créer vos propres visites guidées comme celle-ci !';
 $string['tour1_content_navigation'] = 'La navigation principale s\'effectue maintenant au moyen de ce tiroir de navigation. Son contenu s\'adapte au contexte dans lequel vous êtes sur la plateforme. Le bouton en haut permet de l\'afficher ou de le cacher.';
 $string['tour1_content_welcome'] = 'Bienvenue au thème Boost. Si vous avez mis à jour Moodle à partir d\'une version antérieure, vous trouverez certaines choses changées.';
@@ -163,7 +183,7 @@ $string['tour1_title_navigation'] = 'Navigation';
 $string['tour1_title_welcome'] = 'Bienvenue';
 $string['tour2_content_addblock'] = 'En activant le mode édition, vous pouvez ajouter des blocs à partir du tiroir de navigation. Cependant, réfléchissez à deux fois avant d\'ajouter des blocs sur vos pages. Les blocs ne sont pas affichés dans l\'app Moodle, et pour une meilleure expérience utilisateur de vos étudiants, il est beaucoup mieux de vous assurer que votre cours se passe bien sans aucun bloc.';
 $string['tour2_content_addingblocks'] = 'Vous pouvez ajouter des blocs à cette page au moyen de ce bouton. Cependant, réfléchissez à deux fois avant d\'ajouter des blocs sur vos pages. Les blocs ne sont pas affichés dans l\'app Moodle, et pour une meilleure expérience utilisateur de vos étudiants, il est beaucoup mieux de vous assurer que votre cours se passe bien sans aucun bloc.';
-$string['tour2_content_customisation'] = 'Pour modifier les réglages du cours, utilisez le menu des réglages dans le coin de cette entête. Vous trouverez d\'autres menus de réglages similaires sur la page de chaque activité. Activez maintenant le mode édition.';
+$string['tour2_content_customisation'] = 'Pour modifier les réglages du cours, utilisez le menu des réglages dans le coin de cet en-tête. Vous trouverez d\'autres menus de réglages similaires sur la page de chaque activité. Activez maintenant le mode édition.';
 $string['tour2_content_end'] = 'Vous venez de faire une visite guidée. Cette visite ne s\'affichera plus, à moins que vous ne la relanciez au moyen du lien dans le pied de page. L\'administrateur du site peut créer d\'autres visites guidées pour cette plateforme.';
 $string['tour2_content_navigation'] = 'La navigation s\'effectue maintenant au moyen de ce tiroir de navigation. Le bouton en haut permet de l\'afficher ou de le cacher. Vous constaterez qu\'il s\'y trouve des liens vers les sections de votre cours.';
 $string['tour2_content_opendrawer'] = 'Ouvrez maintenant le tiroir de navigation.';
@@ -229,6 +249,27 @@ $string['tour_activityinfo_course_teacher_content'] = 'Les nouveaux réglages «
 $string['tour_activityinfo_course_teacher_title'] = 'Nouveau : informations sur l\'activité';
 $string['tour_final_step_content'] = 'Cette visite guidée est terminée. Elle ne sera pas ré-affichée à moins que vous ne la réinitialisiez au moyen du lien dans le pied de page.';
 $string['tour_final_step_title'] = 'Fin de la visite guidée';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Publier ici des infos importantes.';
+$string['tour_navigation_course_announcements_teacher_title'] = 'Quelque chose à annoncer à tout le monde ?';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Ajouter un nouveau contenu ou modifier un contenu existant.';
+$string['tour_navigation_course_edit_teacher_title'] = 'Activer le mode édition';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Parcourir les activités et suivre votre progression.';
+$string['tour_navigation_course_index_student_title'] = 'Retrouver votre chemin';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Glisser-déposer les activités pour ré-arranger les contenus du cours.';
+$string['tour_navigation_course_index_teacher_title'] = 'Index du cours';
+$string['tour_navigation_course_student_tour_des'] = 'L\'endroit pour parcourir les activités d\'un cours';
+$string['tour_navigation_course_student_tour_name'] = 'Index du cours';
+$string['tour_navigation_course_teacher_tour_des'] = 'Mode d\'édition, glisser-déposer des activités et publier des annonces dans un cours';
+$string['tour_navigation_course_teacher_tour_name'] = 'Édition de cours';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Ce panneau latéral peut contenir d\'autres fonctionnalités.';
+$string['tour_navigation_dashboard_title'] = 'Déplier pour explorer';
+$string['tour_navigation_dashboard_tour_des'] = 'Où se trouvent les blocs';
+$string['tour_navigation_dashboard_tour_name'] = 'Tiroir des blocs';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>Ajouter, copier, supprimer et cacher des cours dans ce menu.';
+$string['tour_navigation_mycourses_endtourlabel'] = 'J\'ai compris';
+$string['tour_navigation_mycourses_title'] = 'Cours et catégories';
+$string['tour_navigation_mycourses_tour_des'] = 'Options de gestion des cours sur la page Mes cours';
+$string['tour_navigation_mycourses_tour_name'] = 'Gestion des cours';
 $string['tour_resetforall'] = 'Le statut de la visite guidée a été relancé. La visite sera affichée de nouveau à tous les utilisateurs.';
 $string['tourconfig'] = 'Fichier de configuration de visite guidée à importer';
 $string['tourisenabled'] = 'La visite est activée';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'gl', version '3.11'.
+ * Strings for component 'tool_xmldb', language 'gl', version '4.1'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -73,12 +73,12 @@ Once generated you can copy such statements and execute them safely with your fa
 It\'s highly recommended to be running the latest (+ version) available of your Moodle release before executing the search of BYTE semantics.
 
 This functionality doesn\'t perform any action against the DB (just reads from it), so can be safely executed at any moment.';
-$string['confirmdeletefield'] = 'Confirma que quere eliminar o campo:';
-$string['confirmdeleteindex'] = 'Confirma que quere eliminar o índice:';
-$string['confirmdeletekey'] = 'Confirma que quere eliminar a chave:';
-$string['confirmdeletetable'] = 'Confirma que quere eliminar a táboa:';
-$string['confirmdeletexmlfile'] = 'Confirma que quere eliminar o ficheiro:';
-$string['confirmrevertchanges'] = 'Confirma que quere desfacer as modificacións:';
+$string['confirmdeletefield'] = 'Está realmente certo de que desexa eliminar o campo:';
+$string['confirmdeleteindex'] = 'Está realmente certo de que desexa eliminar o índice:';
+$string['confirmdeletekey'] = 'Está realmente certo de que desexa eliminar a chave:';
+$string['confirmdeletetable'] = 'Está realmente certo de que desexa eliminar a táboa:';
+$string['confirmdeletexmlfile'] = 'Está realmente certo de que desexa eliminar o ficheiro:';
+$string['confirmrevertchanges'] = 'Está realmente certo de que desexa desfacer as modificacións:';
 $string['create'] = 'Crear';
 $string['createtable'] = 'Crear táboa:';
 $string['defaultincorrect'] = 'Omisión incorrecta';
@@ -119,7 +119,7 @@ $string['fieldsnotintable'] = 'O campo non existe na táboa';
 $string['fieldsusedinindex'] = 'Este campo usase como índice';
 $string['fieldsusedinkey'] = 'Este campo usase como chave.';
 $string['filemodifiedoutfromeditor'] = 'Advertencia: O ficheiro foi modificado localmente mentres se empregaba o editor XMLDB. Se o garda sobrescribiranse os cambios locais.';
-$string['filenotwriteable'] = 'Ficheiro non escribíbel';
+$string['filenotwriteable'] = 'Ficheiro non escribible';
 $string['fkunknownfield'] = 'Chave externa {$a->keyname} na táboa {$a->tablename}, que apunta cara a un campo inexistente {$a->reffield} na táboa referenciada {$a->reftable}.';
 $string['fkunknowntable'] = 'Chave externa {$a->keyname} na táboa {$a->tablename}, que apunta cara a unha táboa inexistente {$a->reftable}.';
 $string['fkviolationdetails'] = 'A chave externa {$a->keyname} na táboa {$a->tablename} é vulnerada por {$a->numviolations} dun total de {$a->numrows} filas.';
@@ -217,7 +217,8 @@ $string['wrongnumberofreffields'] = 'Número errado de campos de referencia';
 $string['wrongoraclesemantics'] = 'Atopouse semántica de Oracle BYTE errada';
 $string['wrongreservedwords'] = 'Palabras reservadas actualmente utilizadas<br />(Os nomes das táboas non son importantes cando se emprega un $CFG->prefix)';
 $string['yesextraindexesfound'] = 'The following additional indexes were found.';
-$string['yesmissingindexesfound'] = 'Na súa BD atopáronse algúns índices ausentes. Aquí pode ver os seus detalles, así como as ordes SQL para executar coa súa interface SQL favorita para crealos.<br /><br />Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis índices ausentes.';
+$string['yesmissingindexesfound'] = '<p>Na súa BD atopáronse algúns índices ausentes. Aquí pode ver os seus detalles, así como as ordes SQL para executar coa súa interface SQL favorita para crealos.</p>
+<p>Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis índices ausentes.</p>';
 $string['yeswrongdefaultsfound'] = '<p>Na súa BD atopáronse algúns valores predeterminados inconsistentes. Aquí pode ver os seus detalles, así como as ordes SQL para executar coa súa interface SQL favorita para arranxalos. Lémbrese de facer antes unha copia de seguridade</p>
 <p>Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis valores predeterminados inconsistentes.</p>';
 $string['yeswrongintsfound'] = '<p>Some wrong integers have been found in your DB. Here are their details and the needed SQL statements to be executed with your favourite SQL interface to fix them. Remember to backup your data first!</p>

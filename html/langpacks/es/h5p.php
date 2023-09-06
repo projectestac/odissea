@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'es', version '3.11'.
+ * Strings for component 'h5p', language 'es', version '4.1'.
  *
  * @package     h5p
  * @category    string
@@ -61,6 +61,7 @@ $string['connectionLost'] = 'Conexión perdida. Los resultados serán almacenado
 $string['connectionReestablished'] = 'Conexión restablecida';
 $string['contentCopied'] = 'El contenido es copiado al portapapeles';
 $string['contentchanged'] = 'Este contenido ha cambiado desde la última vez que lo utilizó.';
+$string['contentinuse'] = 'Este contenido puede estar en uso en otros lugares.';
 $string['contenttype'] = 'Tipo de Contenido';
 $string['copyright'] = 'Derechos de uso';
 $string['copyrightinfo'] = 'Información del Copyright';
@@ -77,9 +78,11 @@ $string['description'] = 'Descripción';
 $string['disablefullscreen'] = 'Deshabilitar pantalla completa';
 $string['download'] = 'Descargar';
 $string['downloadtitle'] = 'Descargar este contenido como un archivo H5P.';
+$string['editcontent'] = 'Editar contenido H5P';
 $string['editor'] = 'Editor';
 $string['embed'] = 'Incrustar';
 $string['embedtitle'] = 'Ver el contenido incrustado para este comentario';
+$string['error:emptycontentid'] = 'La URL dada es incorrecta o usted no puede editar este archivo.';
 $string['eventh5pdeleted'] = 'H5P eliminado';
 $string['eventh5pviewed'] = 'Contenido H5P visto';
 $string['feature'] = 'Característica';
@@ -90,6 +93,7 @@ $string['filter_displayh5p_description'] = 'El filtro para mostrar H5P convierte
 $string['fullscreen'] = 'Pantalla completa';
 $string['gpl'] = 'Licencia Pública General v3';
 $string['h5p'] = 'H5P';
+$string['h5peditor'] = 'Editor H5P';
 $string['h5pfilenotfound'] = 'Archivo H5P no encontrado';
 $string['h5pinvalidurl'] = 'URL de contenido H5P inválida';
 $string['h5plibraryhandler'] = 'Manejador del marco H5P';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'elang', language 'fr', version '3.11'.
+ * Strings for component 'elang', language 'fr', version '4.1'.
  *
  * @package     elang
  * @category    string

@@ -22,42 +22,44 @@
 defined('MOODLE_INTERNAL') || die();
 
 function xmldb_data_upgrade($oldversion) {
-    global $CFG, $DB;
+    global $DB;
 
-    // Automatically generated Moodle v3.6.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.7.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2019052001) {
-
-        $columns = $DB->get_columns('data');
-
-        $oldclass = "mod-data-default-template ##approvalstatus##";
-        $newclass = "mod-data-default-template ##approvalstatusclass##";
-
-        // Update existing classes.
-        $DB->replace_all_text('data', $columns['singletemplate'], $oldclass, $newclass);
-        $DB->replace_all_text('data', $columns['listtemplate'], $oldclass, $newclass);
-        $DB->replace_all_text('data', $columns['addtemplate'], $oldclass, $newclass);
-        $DB->replace_all_text('data', $columns['rsstemplate'], $oldclass, $newclass);
-        $DB->replace_all_text('data', $columns['asearchtemplate'], $oldclass, $newclass);
-
-        // Data savepoint reached.
-        upgrade_mod_savepoint(true, 2019052001, 'data');
-    }
-    // Automatically generated Moodle v3.8.0 release upgrade line.
-    // Put any upgrade step following this.
+    $dbman = $DB->get_manager(); // Loads ddl manager and xmldb classes.
 
     // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.10.0 release upgrade line.
+    // Automatically generated Moodle v4.0.0 release upgrade line.
+    // Put any upgrade step following this.
+    if ($oldversion < 2022081600) {
+        // Define key userid (foreign) to be added to data_records.
+        $table = new xmldb_table('data_records');
+        $key = new xmldb_key('userid', XMLDB_KEY_FOREIGN, ['userid'], 'user', ['id']);
+        // Launch add key userid.
+        $dbman->add_key($table, $key);
+
+        // Data savepoint reached.
+        upgrade_mod_savepoint(true, 2022081600, 'data');
+    }
+
+    // Automatically generated Moodle v4.1.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.11.0 release upgrade line.
-    // Put any upgrade step following this.
+    if ($oldversion < 2022112801) {
+        // Clean orphan data_records.
+        $sql = "SELECT d.id FROM {data} d
+            LEFT JOIN {data_fields} f ON d.id = f.dataid
+            WHERE f.id IS NULL";
+        $emptydatas = $DB->get_records_sql($sql);
+        if (!empty($emptydatas)) {
+            $dataids = array_keys($emptydatas);
+            list($datainsql, $dataparams) = $DB->get_in_or_equal($dataids, SQL_PARAMS_NAMED, 'data');
+            $DB->delete_records_select('data_records', "dataid $datainsql", $dataparams);
+        }
+
+        // Data savepoint reached.
+        upgrade_mod_savepoint(true, 2022112801, 'data');
+    }
 
     return true;
 }

@@ -35,14 +35,14 @@
  *
  */
 
+import * as FormChangeChecker from 'core_form/changechecker';
+import * as FormEvents from 'core_form/events';
 import Ajax from 'core/ajax';
-import Notification from 'core/notification';
-import Templates from 'core/templates';
-import Event from 'core/event';
-import {get_strings as getStrings} from 'core/str';
-import Y from 'core/yui';
 import Fragment from 'core/fragment';
+import Notification from 'core/notification';
 import Pending from 'core/pending';
+import Templates from 'core/templates';
+import {get_strings as getStrings} from 'core/str';
 import {serialize} from './util';
 
 /**
@@ -233,57 +233,42 @@ export default class DynamicForm {
      *
      * @method submitButtonPressed
      * @param {Element} button that was pressed
+     * @fires event:formSubmittedByJavascript
      */
     processNoSubmitButton(button) {
         const pendingPromise = new Pending('core_form/dynamicform:nosubmit');
-        const form = this.container.querySelector('form');
+        const form = this.getFormNode();
         const formData = new URLSearchParams([...(new FormData(form)).entries()]);
         formData.append(button.getAttribute('name'), button.getAttribute('value'));
 
-        this.notifyFormSubmitAjax(true)
-        .then(() => {
-            // Add the button name to the form data and submit it.
-            this.disableButtons();
-            return this.getBody(formData.toString());
-        })
-        .then((resp) => this.updateForm(resp))
-        .finally(pendingPromise.resolve)
+        FormEvents.notifyFormSubmittedByJavascript(form, true);
+
+        // Add the button name to the form data and submit it.
+        this.disableButtons();
+
+        this.getBody(formData.toString())
+        .then(resp => this.updateForm(resp))
+        .then(pendingPromise.resolve)
         .catch(exception => this.onSubmitError(exception));
     }
 
     /**
-     * Wrapper for Event.notifyFormSubmitAjax that waits for the module to load
+     * Get the form node from the Dialogue.
      *
-     * We often destroy the form right after calling this function and we need to make sure that it actually
-     * completes before it, or otherwise it will try to work with a form that does not exist.
-     *
-     * @param {Boolean} skipValidation
-     * @return {Promise}
+     * @returns {HTMLFormElement}
      */
-    notifyFormSubmitAjax(skipValidation = false) {
-        const form = this.container.querySelector('form');
-        return new Promise(resolve => {
-            Y.use('event', 'moodle-core-event', 'moodle-core-formchangechecker', function() {
-                Event.notifyFormSubmitAjax(form, skipValidation);
-                resolve();
-            });
-        });
+    getFormNode() {
+        return this.container.querySelector('form');
     }
 
     /**
      * Notifies listeners that form dirty state should be reset.
      *
-     * @return {Promise<unknown>}
+     * @fires event:formSubmittedByJavascript
      */
     notifyResetFormChanges() {
-        const form = this.container.querySelector('form');
-        return new Promise(resolve => {
-            Y.use('event', 'moodle-core-event', 'moodle-core-formchangechecker', () => {
-                Event.notifyFormSubmitAjax(form, true);
-                M.core_formchangechecker.reset_form_dirty_state();
-                resolve();
-            });
-        });
+        FormEvents.notifyFormSubmittedByJavascript(this.getFormNode(), true);
+        FormChangeChecker.resetFormDirtyState(this.getFormNode());
     }
 
     /**
@@ -291,16 +276,13 @@ export default class DynamicForm {
      */
     processCancelButton() {
         // Notify listeners that the form is about to be submitted (this will reset atto autosave).
-        this.notifyResetFormChanges()
-        .then(() => {
-            const event = this.trigger(this.events.FORM_CANCELLED);
-            if (!event.defaultPrevented) {
-                // By default removes the form from the DOM.
-                this.container.innerHTML = '';
-            }
-            return null;
-        })
-        .catch(null);
+        this.notifyResetFormChanges();
+
+        const event = this.trigger(this.events.FORM_CANCELLED);
+        if (!event.defaultPrevented) {
+            // By default removes the form from the DOM.
+            this.container.innerHTML = '';
+        }
     }
 
     /**
@@ -309,30 +291,31 @@ export default class DynamicForm {
      * @param {object} param
      * @param {string} param.html
      * @param {string} param.js
+     * @returns {Promise}
      */
     updateForm({html, js}) {
-        Templates.replaceNodeContents(this.container, html, js);
+        return Templates.replaceNodeContents(this.container, html, js);
     }
 
     /**
      * Validate form elements
-     * @return {Promise} promise that returns true if client-side validation has passed, false if there are errors
+     * @return {Boolean} Whether client-side validation has passed, false if there are errors
+     * @fires event:formSubmittedByJavascript
      */
     validateElements() {
         // Notify listeners that the form is about to be submitted (this will reset atto autosave).
-        return this.notifyFormSubmitAjax()
-        .then(() => {
-            // Now the change events have run, see if there are any "invalid" form fields.
-            const invalid = [...this.container.querySelectorAll('[aria-invalid="true"], .error')];
+        FormEvents.notifyFormSubmittedByJavascript(this.getFormNode());
 
-            // If we found invalid fields, focus on the first one and do not submit via ajax.
-            if (invalid.length) {
-                invalid[0].focus();
-                return false;
-            }
+        // Now the change events have run, see if there are any "invalid" form fields.
+        const invalid = [...this.container.querySelectorAll('[aria-invalid="true"], .error')];
 
-            return true;
-        });
+        // If we found invalid fields, focus on the first one and do not submit via ajax.
+        if (invalid.length) {
+            invalid[0].focus();
+            return false;
+        }
+
+        return true;
     }
 
     /**
@@ -384,9 +367,8 @@ export default class DynamicForm {
                 // Form was submitted properly.
                 const data = JSON.parse(response.data);
                 this.enableButtons();
-                this.notifyResetFormChanges()
-                .then(() => this.onSubmitSuccess(data))
-                .catch();
+                this.notifyResetFormChanges();
+                this.onSubmitSuccess(data);
             }
             return null;
         })

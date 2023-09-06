@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'pt', version '3.11'.
+ * Strings for component 'mnet', language 'pt', version '4.1'.
  *
  * @package     mnet
  * @category    string
@@ -90,7 +90,7 @@ $string['hideremote'] = 'Ocultar utilizadores externos';
 $string['host'] = 'servidor';
 $string['hostcoursenotfound'] = 'O servidor ou disciplina não foi encontrado';
 $string['hostdeleted'] = 'Ok - foi eliminado o servidor';
-$string['hostexists'] = 'Já existe um registo de um servidor com o nome indicado (o registo pode ser apagado). <a href="{$a}">Clique aqui</a> para alterar o registo.';
+$string['hostexists'] = 'Já existe um registo de um servidor com o nome indicado (o registo pode ser apagado). <a href="{$a}">Alterar o registo</a>';
 $string['hostlist'] = 'Lista de servidores ligados em rede';
 $string['hostname'] = 'Nome do servidor';
 $string['hostnamehelp'] = 'O nome completo e qualificado do domínio do servidor remoto. Exemplo: www.exemplo.org';
@@ -118,6 +118,7 @@ $string['is_in_range'] = 'O endereço IP <code>{$a}</code> representa um servido
 $string['ispublished'] = 'O Moodle {$a} disponibiliza este serviço.';
 $string['issubscribed'] = 'O Moodle {$a} está a subscrever este serviço neste servidor.';
 $string['keydeleted'] = 'A sua chave foi eliminada e substituída com sucesso.';
+$string['keydeletedcancelled'] = 'Nenhuma alteração feita na chave.';
 $string['keymismatch'] = 'A chave pública utilizada neste servidor para o servidor indicado é diferente daquela que esse servidor publica atualmente. A chave disponibilizada pelo servidor atualmente é:';
 $string['last_connect_time'] = 'Hora da última ligação';
 $string['last_connect_time_help'] = 'Hora da última ligação a este servidor.';

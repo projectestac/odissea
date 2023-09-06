@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'nl', version '3.11'.
+ * Strings for component 'survey', language 'nl', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -212,10 +212,12 @@ $string['indicator:cognitivedepth'] = 'Onderzoek cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Onderzoek activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Onderzoek cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de enquêteactiviteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Onderzoek sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Onderzoek activiteit.';
 $string['indicator:socialbreadthdef'] = 'Onderzoek sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de maatschappelijke betrokkenheid van de enquêteactiviteiten tijdens dit analyse-interval bereikt (niveaus = geen deelname, alleen deelnemer)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = 'Inleidende tekst';
 $string['invalidsurveyid'] = 'Onderzoeks ID was fout';
 $string['invalidtmptid'] = 'Fout sjabloon ID';
@@ -224,6 +226,7 @@ $string['modulename'] = 'Onderzoek';
 $string['modulename_help'] = 'De onderzoeksmodule voorziet een aantal gestandaardiseerde onderzoeksinstrumenten die nuttig zijn voor het beoordelen en stimuleren van leren in online omgevingen. Een leraar kan deze gebruiken om informatie te verzamelen van leerlingen en dat zal hem helpen te leren over zijn klas en te reflecteren over het lesgeven.
 
 Merk op dat deze onderzoek-tools al standaardvragen bevatten. Leraren die hun eigen vragen willen stellen, moeten de feedback module gebruiken.';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = 'Onderzoeken';
 $string['name'] = 'Naam';
 $string['newsurveyresponses'] = 'Nieuwe ingevulde onderzoeken';
@@ -277,6 +280,7 @@ $string['surveytype_help'] = 'Er zijn drie types van onderzoek beschikbaar:
 * \'Attitudes to Thinking and Learning Survey (ATTLS, Houdingen ten opzichte van denken en leren) - Dit onderzoek meet de mate waarin een persoon een \'verbonden kenner\' is (die eerder het leren aangenaam vindt, en vaak meer coöperatief, aangenaam, en bereid is om voort te bouwen op de ideeën van anderen) of een \'aparte kenner\' (neemt bij het leren eerder een kritische en argumentatieve houding aan)
 * \'Critical incidents survey\'
 * \'Constructivist On-line Learning Environment Survey (COLLES) - Gaat na in welke mate de interactive mogelijkheden van het World Wide Web gebruikt kunnen worden om studenten te engageren in dynamische lespraktijken.';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Bedankt voor het invullen van dit onderzoek, {$a}';
 $string['time'] = 'Tijd';
 $string['viewsurveyresponses'] = 'Bekijk {$a} ingevulde onderzoeken';

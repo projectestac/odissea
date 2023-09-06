@@ -47,25 +47,13 @@ defined('MOODLE_INTERNAL') || die;
 function xmldb_label_upgrade($oldversion) {
     global $CFG, $DB;
 
-    // Automatically generated Moodle v3.6.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.7.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.8.0 release upgrade line.
-    // Put any upgrade step following this.
-
     // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.10.0 release upgrade line.
+    // Automatically generated Moodle v4.0.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.11.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2021051701) {
+    if ($oldversion < 2022101300) {
         $module = $DB->get_field('modules', 'id', ['name' => 'label']);
         $DB->execute('
             UPDATE {course_modules}
@@ -75,7 +63,53 @@ function xmldb_label_upgrade($oldversion) {
                    AND visibleoncoursepage = 0',
             ['module' => $module]
         );
-        upgrade_mod_savepoint(true, 2021051701, 'label');
+        upgrade_mod_savepoint(true, 2022101300, 'label');
+    }
+
+    // Automatically generated Moodle v4.1.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2022112801) {
+        $prevlang = force_current_language($CFG->lang);
+
+        $select = $DB->sql_like('name', ':tofind');
+        $params = ['tofind' => '%@@PLUGINFILE@@%'];
+        $total = $DB->count_records_select('label', $select, $params);
+        if ($total > 0) {
+            $labels = $DB->get_recordset_select('label', $select, $params, 'id, name, intro');
+
+            // Show a progress bar.
+            $pbar = new progress_bar('upgrademodlabelpluginfile', 500, true);
+            $current = 0;
+
+            $defaultname = get_string('modulename', 'label');
+            foreach ($labels as $label) {
+                $originalname = $label->name;
+                // Make sure that all labels have now the same name according to the new convention.
+                // Note this is the same (and duplicated) code as in get_label_name as we cannot call any API function
+                // during upgrade.
+                $name = html_to_text(format_string($label->intro, true));
+                $name = preg_replace('/@@PLUGINFILE@@\/[[:^space:]]+/i', '', $name);
+                // Remove double space and also nbsp; characters.
+                $name = preg_replace('/\s+/u', ' ', $name);
+                $name = trim($name);
+                if (core_text::strlen($name) > LABEL_MAX_NAME_LENGTH) {
+                    $name = core_text::substr($name, 0, LABEL_MAX_NAME_LENGTH) . "...";
+                }
+                if (empty($name)) {
+                    $name = $defaultname;
+                }
+                $label->name = $name;
+                if ($originalname !== $name) {
+                    $DB->update_record('label', $label);
+                }
+                $current++;
+                $pbar->update($current, $total, "Upgrading label activity names - $current/$total.");
+            }
+            $labels->close();
+        }
+        force_current_language($prevlang);
+        upgrade_mod_savepoint(true, 2022112801, 'label');
     }
 
     return true;

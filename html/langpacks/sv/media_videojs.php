@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_videojs', language 'sv', version '3.11'.
+ * Strings for component 'media_videojs', language 'sv', version '4.1'.
  *
  * @package     media_videojs
  * @category    string
@@ -28,16 +28,16 @@ defined('MOODLE_INTERNAL') || die();
 $string['audiocssclass'] = 'CSS-klass för ljud';
 $string['audioextensions'] = 'Ljudfilstillägg';
 $string['configaudiocssclass'] = 'CSS-klass som kommer läggas till &lt;audio&gt;-elementet.';
-$string['configaudioextensions'] = 'En kommaseparerad lista över ljudfilstillägg som stöds. VideoJS kommer att försöka använda webbläsarens inbyggda videospelare när den finns tillgängligt eller inbyggda VideoJS funktionalitet och falla tillbaka till en Flash-spelare för andra format om Flash stöds av webbläsaren och Flash-fallback är aktiverat nedan.';
+$string['configaudioextensions'] = 'En kommaseparerad lista över ljudfilstillägg som stöds. VideoJS kommer att försöka använda webbläsarens inbyggda videospelare när den finns tillgängligt eller den inbyggda VideoJS-funktionaliteten.';
 $string['configlimitsize'] = 'Om aktiverat och bredd och höjd inte anges, kommer videon att visas med standardbredd och -höjd. Annars kommer den att vidgas till största möjliga bredd.';
 $string['configrtmp'] = 'Om aktiverat kommer länkar som börjar med <code>rtmp://</code> att hanteras av pluginmodulen, oberoende av om tillägget är aktiverat i Video-filtillägget (videoextensions). Flash-fallback måste vara aktiverat för att RTMP ska fungera.';
 $string['configuseflash'] = 'Använd Flash-spelare om videoformat inte har inbyggt i webbläsaren och / eller inbyggt stöd i VideoJS-spelaren. Om aktiverat kommer VideoJS att vara involverad för alla filtillägg från ovanstående lista utan webbläsarkontroll. Observera att Flash inte är tillgängligt i mobila webbläsare och avrådes från användning på många stationära datorer.';
 $string['configvideocssclass'] = 'En CSS-klass som kommer att läggas till i elementet &lt;video&gt;. Till exempel kommer CSS-klassen "vjs-big-play-centered" att placera play-knappen i mitten. För detaljer, inklusive hur du ställer in ett anpassat utseende, se <em>docs.videojs.com</em>.';
-$string['configvideoextensions'] = 'En kommaseparerad lista med videofiltillägg som stöds. VideoJS kommer att försöka använda webbläsarens inbyggda videospelare när den är tillgängligt och falla tillbaka till en Flash-spelare för andra format om Flash stöds av webbläsaren och Flash-fallback är aktiverat nedan.';
+$string['configvideoextensions'] = 'En kommaseparerad lista med videofiltillägg som stöds. VideoJS kommer att försöka använda webbläsarens inbyggda videospelare när den är tillgängligt.';
 $string['configyoutube'] = 'Använd VideoJS för att spela upp YouTube-videor. Observera att YouTube-spellistor ännu inte stöds av VideoJS.';
 $string['limitsize'] = 'Begränsa storlek';
 $string['pluginname'] = 'VideoJS-spelare';
-$string['pluginname_help'] = 'Ett JavaScript-hjälpbibliotek för videofiler som spelas av webbläsarens inbyggda videospelare med en Flash-spelare som reserv. (Format som stöds beror på webbläsaren.)';
+$string['pluginname_help'] = 'Ett JavaScript-hjälpbibliotek för videofiler som spelas upp med webbläsarens inbyggda videospelare. (Format som stöds beror på webbläsaren.)';
 $string['privacy:metadata'] = 'Mediapluginmodulen VideoJS-spelare lagrar ingen personinformation.';
 $string['rtmp'] = 'RTMP-strömmar';
 $string['useflash'] = 'Använd Flash-fallback';

@@ -38,6 +38,7 @@
 .wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField {
   display: inline-block;
   width: auto;
+  height: auto;
 }
 .wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField > input, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField > input {
   line-height: 25px;
@@ -506,12 +507,13 @@
 }
 .wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_calcmeButton {
   color: #1e6193;
+  border-color: rgba(30, 97, 147, 0.4);
 }
 .wrsUI_app .wrsUI_button.wrsUI_quizzesButton.wrsUI_gettingStartedAboutUsButton {
   color: #000000;
   font-size: 16px;
   text-transform: initial;
-  font-weight: 400px;
+  font-weight: 400;
 }
 .wrsUI_app .wrsUI_quizzesStudio {
   direction: ltr;
@@ -718,6 +720,9 @@
   font-weight: 500;
   color: rgba(7, 118, 128, 0.87) !important;
 }
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList.wrsUI_mainContainerDisplayChooser .wrsUI_buttonPanel.wrsUI_selected .wrsUI_aux_materialIcon {
+  color: rgba(7, 118, 128, 0.87) !important;
+}
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList.wrsUI_mainContainerDisplayChooser .wrsUI_buttonPanel.wrsUI_gettingStartedList {
   border-radius: 0px 25px 25px 0px;
   border-top: 0;
@@ -892,6 +897,7 @@
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_studentAnswer {
   transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), border 0.3s cubic-bezier(0.4, 0, 0.2, 1), max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: fit-content;
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_textComponent.wrsUI_focused label {
   color: #077680;

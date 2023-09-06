@@ -30,7 +30,6 @@ Feature: A teacher can duplicate questions in the question bank
     And I press "id_submitbutton"
     Then I should see "Duplicated question name"
     And I should see "Test question to be copied"
-    And "Duplicated question name" row "Last modified by" column of "categoryquestions" table should contain "Teacher One"
     And I should see "ID number" in the "Test question to be copied" "table_row"
     And I should see "qid" in the "Test question to be copied" "table_row"
 

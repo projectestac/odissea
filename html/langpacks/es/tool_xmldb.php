@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'es', version '3.11'.
+ * Strings for component 'tool_xmldb', language 'es', version '4.1'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -162,6 +162,11 @@ $string['persistentfieldsexist'] = 'Los siguientes campos ya existen:';
 $string['pluginname'] = 'Editor XMLDB';
 $string['primarykeyonlyallownotnullfields'] = 'Las claves primarias no pueden ser nulas';
 $string['privacy:metadata'] = 'El complemento de editor XMLDB no almacena ningún dato personal.';
+$string['reconcile_files'] = 'Buscar archivos XMLDB que necesiten conciliación';
+$string['reconcile_files_intro'] = 'Esta funcionalidad analiza el contenido de todos los archivos XMLDB para verificar que coincidan con los resultados de generarlos desde el editor XMLDB. Se mostrará una lista de archivos que necesitan reconciliarse (regenerarse) y se puede usar el editor XMLDB para corregirlos.';
+$string['reconcile_files_no'] = 'Todos los archivos están bien. No se necesita reconciliación.';
+$string['reconcile_files_yes'] = 'Archivos encontrados para reconciliar:';
+$string['reconcilefiles'] = 'Reconciliar archivos XMLDB';
 $string['reserved'] = 'Reservado';
 $string['reservedwords'] = 'Palabras reservadas';
 $string['revert'] = 'Revertir';

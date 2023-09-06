@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'sv', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'sv', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'Audio och video';
 $string['audiobitrate'] = 'Strömningshastighet - Ljud';
 $string['audiobitrate_desc'] = 'Ljudinspelningskvalitet (högre siffra innebär bättre kvalitet)';
 $string['audiortc'] = 'Spela in ljud';
+$string['audiotimelimit'] = 'Maximal längd för ljudinspelningar (i sekunder)';
+$string['audiotimelimit_desc'] = 'Maximal längd för ljudklipp';
 $string['gumabort'] = 'Något konstigt hände och webbkameran/mikrofonen kunde inte användas';
 $string['gumabort_title'] = 'Något hände';
 $string['gumnotallowed'] = 'Användaren måste tillåta att webbläsaren använder kameran/mikrofonen';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'Starta inspelningen';
 $string['stoprecording'] = 'Stoppa inspelningen';
 $string['timelimit'] = 'Tidsgräns i sekunder';
 $string['timelimit_desc'] = 'Tillåten maxlängd för ljud/videoklipp';
+$string['timelimitwarning'] = 'Du måste ange ett värde större än 0.';
 $string['uploadaborted'] = 'Uppladdningen avbröts:';
 $string['uploadfailed'] = 'Fel vid uppladdning:';
 $string['uploadfailed404'] = 'Fel vid uppladdning: filen är för stor';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'slutförd';
 $string['videobitrate'] = 'Strömningshastighet - Video';
 $string['videobitrate_desc'] = 'Videoinspelningskvalitet (högre siffra innebär bättre kvalitet)';
 $string['videortc'] = 'Spela in video';
+$string['videotimelimit'] = 'Maximal längd för videoinspelningar (i sekunder)';
+$string['videotimelimit_desc'] = 'Maximal längd för videoklipp';

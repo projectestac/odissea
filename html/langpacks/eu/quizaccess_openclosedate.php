@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_openclosedate', language 'eu', version '3.11'.
+ * Strings for component 'quizaccess_openclosedate', language 'eu', version '4.1'.
  *
  * @package     quizaccess_openclosedate
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notavailable'] = 'Galdetegi hau ez dago eskuragarri une honetan';
+$string['notavailable'] = 'Galdetegi hau ez dago une honetan eskuragarri.';
 $string['pluginname'] = 'Irekiera eta itxiera-data sarbide-araua';
 $string['privacy:metadata'] = 'Irekiera eta itxiera-data galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';
 $string['quiznotavailable'] = 'Galdetegia noiztik aurrera eskuragarri: {$a}';

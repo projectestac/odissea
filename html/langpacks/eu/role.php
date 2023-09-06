@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'eu', version '3.11'.
+ * Strings for component 'role', language 'eu', version '4.1'.
  *
  * @package     role
  * @category    string
@@ -204,7 +204,7 @@ $string['course:reset'] = 'Berrabiarazi ikastaroa';
 $string['course:reviewotherusers'] = 'Berrikusi beste erabiltzaile batzuk';
 $string['course:sectionvisibility'] = 'Atalaren ikusgarritasuna kontrolatu';
 $string['course:setcurrentsection'] = 'Zehaztu oraingo atala';
-$string['course:setforcedlanguage'] = 'Behartu ikastaroko hizkuntza';
+$string['course:setforcedlanguage'] = 'Behartu ikastaroko edo jarduerako hizkuntza';
 $string['course:tag'] = 'Aldatu ikastaroaren etiketak';
 $string['course:togglecompletion'] = 'Eskuz markatu jarduerak osatutzat';
 $string['course:update'] = 'Eguneratu ikastaroaren ezaugarriak';
@@ -259,13 +259,13 @@ $string['existingadmins'] = 'Oraingo guneko kudeatzaileak';
 $string['existingusers'] = '{$a} erabiltzaile daude';
 $string['explanation'] = 'Azalpena';
 $string['export'] = 'Esportatu';
-$string['extusers'] = 'Dauden erabiltzaileak';
+$string['extusers'] = 'Dagoeneko dauden erabiltzaileak';
 $string['extusersmatching'] = '\'{$a}\'(r)ekin bat datozen erabiltzaileak';
 $string['filter:manage'] = 'Kudeatu iragazki lokalen ezarpenak';
 $string['frontpageuser'] = 'Autentifikatutako erabiltzailea hasiera-orrian';
 $string['frontpageuserdescription'] = 'Hasiera-orriko ikastaroan saioa hasitako erabiltzaile guztiak';
 $string['globalrole'] = 'Sistemako rola';
-$string['globalroleswarning'] = 'KONTUZ! Orri honetatik esleitzen dituzun rol guztiak aukeratutako erabiltzaile guztiei emango zaizkie sisteman, ikastaro guztietan eta hasiera-orrian barne.';
+$string['globalroleswarning'] = 'Oharra: Orri honetatik esleitzen dituzun rol guztiak aukeratutako erabiltzaile guztiei sistema mailan emango zaizkie, ikastaro guztietan eta hasiera-orrian barne.';
 $string['gotoassignroles'] = 'Joan rolak ezartzera testuinguru honetan: {$a->contextlevel}';
 $string['gotoassignsystemroles'] = 'Joan sistemako rolak ezartzera';
 $string['grade:edit'] = 'Editatu kalifikazioak';
@@ -375,6 +375,8 @@ $string['privacy:metadata:role_cohortroles'] = 'Kohortearen rolak';
 $string['prohibit'] = 'Debekatu';
 $string['prohibitedroles'] = 'Debekatuta';
 $string['question:add'] = 'Gehitu beste galdera bat';
+$string['question:commentall'] = 'Egin iruzkina galdera guztiei';
+$string['question:commentmine'] = 'Egin iruzkina zure galderei';
 $string['question:config'] = 'Konfiguratu galdera-motak';
 $string['question:editall'] = 'Editatu galdera guztiak';
 $string['question:editmine'] = 'Editatu norberaren galderak';
@@ -392,6 +394,10 @@ $string['rating:rate'] = 'Gehitu puntuazioak elementuei';
 $string['rating:view'] = 'Ikusi denera jasotako kalifikazioak';
 $string['rating:viewall'] = 'Ikusi erabiltzaileek emandako kalifikazio guztiak';
 $string['rating:viewany'] = 'Ikusi besteren batek denera jasotako kalifikazioak';
+$string['reportbuilder:edit'] = 'Editatu zure txosten pertsonalizatuak';
+$string['reportbuilder:editall'] = 'Editatu txosten pertsonalizatu guztiak';
+$string['reportbuilder:scheduleviewas'] = 'Programatu txostenak beste erabiltzaile gisa ikusteko';
+$string['reportbuilder:view'] = 'Ikusi txosten pertsonalizatuak';
 $string['resetrole'] = 'Berrabiarazi';
 $string['resettingrole'] = '\'{$a}\' rola berrabiarazten';
 $string['restore:configure'] = 'Konfiguratu berreskuratzeko aukerak';

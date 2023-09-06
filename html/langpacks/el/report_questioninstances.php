@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_questioninstances', language 'el', version '3.11'.
+ * Strings for component 'report_questioninstances', language 'el', version '4.1'.
  *
  * @package     report_questioninstances
  * @category    string
@@ -32,7 +32,7 @@ $string['hiddenquestions'] = 'Απόκρυψη';
 $string['intro'] = 'Αυτή η αναφορά εμφανίζει όλα τα πλαίσια στο σύστημα όπου υπάρχουν ερωτήσεις ενός συγκεκριμένου τύπου.';
 $string['pluginname'] = 'Στιγμιότυπο ερώτησης';
 $string['privacy:metadata'] = 'Το πρόσθετο «Στιγμιότυπα ερωτήσεων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
-$string['questioninstances:view'] = 'Εμφάνιση αναφοράς στιγμιότυπων ερώτησης';
+$string['questioninstances:view'] = 'Εμφάνιση αναφοράς στιγμιοτύπων ερώτησης';
 $string['reportforallqtypes'] = 'Αναφορά για όλους του τύπους ερώτησης';
 $string['reportformissingqtypes'] = 'Αναφορά για ερωτήσεις άγνωστων τύπων';
 $string['reportforqtype'] = 'Αναφορά για ερώτηση τύπου «{$a}».';

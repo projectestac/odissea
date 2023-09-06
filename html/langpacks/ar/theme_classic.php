@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'ar', version '3.11'.
+ * Strings for component 'theme_classic', language 'ar', version '4.1'.
  *
  * @package     theme_classic
  * @category    string
@@ -25,16 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['choosereadme'] = 'Classic هو قالب قابل للتخصيص بدرجة كبيرة، مبني على Boost، مع تصميم تنقل بديل. هو مُعد للاستعمال المباشر، أو كقالب أساسي عند إنشاء أو تحديث القوالب المخصصة باستعمال Bootstrap 4.';
+$string['choosereadme'] = 'Classic هو مظهر قابل للتخصيص بدرجة كبيرة، مبني على Boost، مع تصميم تنقل بديل. هو مُعد للاستعمال المباشر، أو كمظهر أساسي عند إنشاء أو تحديث المظاهر المخصصة باستعمال Bootstrap 4.';
 $string['configtitle'] = 'Classic';
 $string['navbardark'] = 'استخدم شريط التنقل المظلم';
 $string['navbardarkdesc'] = 'تبديل ألوان النص والخلفية لشريط التنقل في أعلى الصفحة ما بين مظلم ومضيء.';
 $string['pluginname'] = 'Classic';
 $string['preset'] = 'تحضير مسبق للنمط';
-$string['preset_desc'] = 'إنتقِ إعداداً مسبقاً لتغيير شكل القالب على نطاق واسع.';
-$string['presetfiles'] = 'ملفات محددة مسبقاً للقالب';
-$string['presetfiles_desc'] = 'يمكن استعمال ملفات الإعداد المسبق لتغيير سمة القالب بشكل كبير. أنظر <a href="https://docs.moodle.org/dev/Boost_Presets">تحضيرات Boost المسبقة</a> للحصول على معلومات حول إنشاء ومشاركة ملفات الإعداد المسبق الخاصة بك، وانظر <a href="https://archive.moodle.net/boost">مستودع التحضيرات المسبقة</a> للتحضيرات المسبقة التي شاركها الآخرون.';
-$string['privacy:metadata'] = 'القالب Classic لا يخزن أيّ بيانات شخصية.';
+$string['preset_desc'] = 'إنتقِ إعداداً مسبقاً لتغيير شكل المظهر على نطاق واسع.';
+$string['presetfiles'] = 'ملفات محددة مسبقاً للمظهر';
+$string['presetfiles_desc'] = 'يمكن استعمال ملفات الإعداد المسبق لتغيير سمة المظهر بشكل كبير. أنظر <a href="https://docs.moodle.org/dev/Boost_Presets">تحضيرات Boost المسبقة</a> للحصول على معلومات حول إنشاء ومشاركة ملفات الإعداد المسبق الخاصة بك، وانظر <a href="https://archive.moodle.net/boost">مستودع التحضيرات المسبقة</a> للتحضيرات المسبقة التي شاركها الآخرون.';
+$string['privacy:metadata'] = 'المظهر Classic لا يخزن أيّ بيانات شخصية.';
 $string['region-side-post'] = 'يمين';
 $string['region-side-pre'] = 'يسار';
 $string['sitetitle'] = 'عنوان الموقع';
+$string['totop'] = 'الذهاب إلى أعلى';

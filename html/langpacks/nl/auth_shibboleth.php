@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'nl', version '3.11'.
+ * Strings for component 'auth_shibboleth', language 'nl', version '4.1'.
  *
  * @package     auth_shibboleth
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quest', language 'en', version '3.11'.
+ * Strings for component 'quest', language 'en', version '4.1'.
  *
  * @package     quest
  * @category    string
@@ -124,6 +124,9 @@ $string['commentsforstudent'] = 'Coments for students';
 $string['commentsforstudent_help'] = '<strong>Comments for Students</strong>: this field contains the comments that the teacher wants to show to the students about this challenge, these comments will be available for all the participants in the QUESTOURnament.';
 $string['commentsforteacher'] = 'Comments for the teacher';
 $string['commentsteacher'] = 'General comments by teacher';
+$string['completionpass'] = 'Require passing grade';
+$string['completionpass_help'] = 'If enabled, this activity is considered complete when the student receives a pass grade (as specified in the Grade section of the Quest settings) or higher.';
+$string['completionpassdesc'] = 'Student must achieve a passing grade to complete this activity';
 $string['confirmchangeform'] = 'This will change the evaluation form. Are you sure?';
 $string['confirmdelete'] = 'Confirm deletion';
 $string['confirmdeletionofthisitem'] = 'Confirm deletion of this item {$a}';
@@ -423,6 +426,9 @@ $string['maxcalification'] = 'Highest score';
 $string['maxcalification_help'] = '<P align="justify">This parameter sets the maximum score that each challenge of this QUESTOURnament will be able to reach, which means that it is also the maximum score that a submitted answer will be able to obtain.</P>
 <P align="justify">This value may be different for each challenge, but it can not be higher than the maximum score set for the QUESTOURnament to which they belong.</P>';
 $string['maximumsize'] = 'Largest size';
+$string['messageprovider:challenge_start'] = 'A challenge just started';
+$string['messageprovider:challenge_update'] = 'A challenge has been edited';
+$string['messageprovider:evaluation_update'] = 'Changes in a grade';
 $string['mincalification'] = 'Lowest score';
 $string['mincalification_help'] = '<P align="justify">This parameter sets the minimum score that each challenge of this QUESTOURnament will be able to reach, which means that it is also the maximum score that a submitted answer will be able to obtain.</P>
 <P align="justify">This value may be different for each challenge, but it can not be lower than the minimum score set for the QUESTOURnament to which they belong.</P>';

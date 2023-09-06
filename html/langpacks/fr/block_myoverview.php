@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'fr', version '3.11'.
+ * Strings for component 'block_myoverview', language 'fr', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Marquer comme favori';
-$string['all'] = 'Tout (sauf cours retirés de l\'affichage)';
-$string['allincludinghidden'] = 'Tout';
+$string['all'] = 'Tout';
+$string['allincludinghidden'] = 'Tout (y compris retirés de l\'affichage)';
 $string['aria:addtofavourites'] = 'Marquer comme favori';
-$string['aria:allcourses'] = 'Montrer tous les cours, sauf ceux qui sont retirés de l\'affichage';
+$string['aria:allcourses'] = 'Montrer tous les cours, sauf les cours retirés de l\'affichage';
 $string['aria:allcoursesincludinghidden'] = 'Montrer tous les cours';
 $string['aria:card'] = 'Passer à la vue en cartes';
 $string['aria:controls'] = 'Paramètres de la vue d\'ensemble des cours';
@@ -57,7 +57,7 @@ $string['availablegroupings'] = 'Filtres disponibles';
 $string['availablegroupings_desc'] = 'Filtres de cours disponibles pour les utilisateurs. Si aucun n\'est sélectionné, tous les cours seront affichés.';
 $string['card'] = 'Carte';
 $string['cards'] = 'Cartes';
-$string['complete'] = 'terminé';
+$string['clearsearch'] = 'Effacer la recherche';
 $string['completepercent'] = '{$a} % terminé';
 $string['courseprogress'] = 'Progression du cours :';
 $string['customfield'] = 'Champ personnalisé';
@@ -76,7 +76,6 @@ $string['layouts'] = 'Dispositions disponibles';
 $string['layouts_help'] = 'Les dispositions de cours que les utilisateurs peuvent sélectionner. Si aucune n\'est choisie, la disposition en cartes sera utilisée.';
 $string['list'] = 'Liste';
 $string['myoverview:myaddinstance'] = 'Ajouter un bloc Vue d\'ensemble des cours au tableau de bord';
-$string['nocourses'] = 'Pas de cours';
 $string['nocustomvalue'] = 'Pas de {$a}';
 $string['past'] = 'Passés';
 $string['pluginname'] = 'Vue d\'ensemble des cours';
@@ -86,7 +85,11 @@ $string['privacy:metadata:overviewsortpreference'] = 'Le réglage de tri du bloc
 $string['privacy:metadata:overviewviewpreference'] = 'Le réglage d\'affichage du bloc Vue d\'ensemble des cours.';
 $string['privacy:request:preference:set'] = 'La valeur du réglage « {$a->name} » était « {$a->value} »';
 $string['removefromfavourites'] = 'Retirer ce cours des favoris';
+$string['searchcourses'] = 'Rechercher des cours';
 $string['shortname'] = 'Nom abrégé';
-$string['show'] = 'Montrer dans l\'affichage';
+$string['show'] = 'Ré-afficher';
+$string['sortbylastaccessed'] = 'Trier par dernier accès';
+$string['sortbyshortname'] = 'Trier par nom abrégé de cours';
+$string['sortbytitle'] = 'Trier par nom de cours';
 $string['summary'] = 'Résumé';
 $string['title'] = 'Nom';

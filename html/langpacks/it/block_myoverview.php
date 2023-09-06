@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'it', version '3.11'.
+ * Strings for component 'block_myoverview', language 'it', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Aggiungi corso ai preferiti';
-$string['all'] = 'Tutti (eccetto eliminati dalla visualizzazione)';
-$string['allincludinghidden'] = 'Tutti';
+$string['all'] = 'Tutti';
+$string['allincludinghidden'] = 'Tutti (inclusi rimossi dalla visualizzazione)';
 $string['aria:addtofavourites'] = 'Inserisci tra i preferiti';
-$string['aria:allcourses'] = 'Visualizza tutti i corsi eccetto quelli eliminati dalla visualizzazione';
+$string['aria:allcourses'] = 'Visualizza tutti i corsi eccetto i corsi rimossi dalla visualizzazione';
 $string['aria:allcoursesincludinghidden'] = 'Visualizza tutti i corsi';
 $string['aria:card'] = 'Passa alla vista matrice';
 $string['aria:controls'] = 'Controlli panoramica corsi';
@@ -41,7 +41,7 @@ $string['aria:displaydropdown'] = 'Visualizza menu a discesa';
 $string['aria:favourites'] = 'Visualizza solo i corsi preferiti';
 $string['aria:future'] = 'Visualizza corsi futuri';
 $string['aria:groupingdropdown'] = 'Raggruppamento menu a discesa';
-$string['aria:hiddencourses'] = 'Visualizza corsi eliminati dalla visualizzazione';
+$string['aria:hiddencourses'] = 'Visualizza corsi rimossi dalla visualizzazione';
 $string['aria:hidecourse'] = 'Elimina {$a} dalla visualizzazione';
 $string['aria:inprogress'] = 'Visualizza corsi in svolgimento';
 $string['aria:lastaccessed'] = 'Ordina corsi per ultima data di accesso';
@@ -57,7 +57,7 @@ $string['availablegroupings'] = 'Filtri disponibili';
 $string['availablegroupings_desc'] = 'I filtri dei corsi possono essere utilizzati dagli utenti. Selezionando nessun filtro, saranno visualizzati tutti i corsi.';
 $string['card'] = 'Matrice';
 $string['cards'] = 'Matrici';
-$string['complete'] = 'completato';
+$string['clearsearch'] = 'Pulisci ricerca';
 $string['completepercent'] = '{$a}% completato';
 $string['courseprogress'] = 'Stato avanzamento corso:';
 $string['customfield'] = 'Campo personalizzato';
@@ -67,15 +67,14 @@ $string['displaycategories'] = 'Visualizza categorie';
 $string['displaycategories_help'] = 'Visualizza la categoria dei corsi nella varie viste della dashboard, matrice, elenco e sommario,';
 $string['favourites'] = 'Preferiti';
 $string['future'] = 'Futuri';
-$string['hidden'] = 'Corsi eliminati dalla visualizzazione';
-$string['hiddencourses'] = 'Eliminati dalla visualizzazione';
-$string['hidecourse'] = 'Elimina dalla visualizzazione';
+$string['hidden'] = 'Corsi rimossi dalla visualizzazione';
+$string['hiddencourses'] = 'Rimossi dalla visualizzazione';
+$string['hidecourse'] = 'Rimuovi dalla visualizzazione';
 $string['inprogress'] = 'In svolgimento';
 $string['lastaccessed'] = 'Ultima visita';
 $string['layouts'] = 'Impaginazioni disponibili';
 $string['list'] = 'Elenco';
 $string['myoverview:myaddinstance'] = 'Aggiungere blocco Panoramica corsi alla dashboard';
-$string['nocourses'] = 'Non ci sono corsi';
 $string['nocustomvalue'] = 'Nessun {$a}';
 $string['past'] = 'Conclusi';
 $string['pluginname'] = 'Panoramica corsi';
@@ -85,7 +84,11 @@ $string['privacy:metadata:overviewsortpreference'] = 'Preferenza sull\'ordinamen
 $string['privacy:metadata:overviewviewpreference'] = 'Preferenza sulla vista del blocco Panoramica corsi.';
 $string['privacy:request:preference:set'] = 'Il valore dell\'impostazione \'{$a->name}\' era \'{$a->value}\'';
 $string['removefromfavourites'] = 'Rimuovi dai preferiti';
+$string['searchcourses'] = 'cerca corsi';
 $string['shortname'] = 'Titolo abbreviato';
-$string['show'] = 'Ripristina visualizzazione';
+$string['show'] = 'Ripristina la visualizzazione';
+$string['sortbylastaccessed'] = 'Ordina per ultimo accesso';
+$string['sortbyshortname'] = 'Ordina per titolo abbreviato del corso';
+$string['sortbytitle'] = 'Ordina per titolo del corso';
 $string['summary'] = 'Sommario';
 $string['title'] = 'Titolo del corso';

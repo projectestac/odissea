@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_horario', language 'el', version '3.11'.
+ * Strings for component 'block_horario', language 'el', version '4.1'.
  *
  * @package     block_horario
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['access_allowed'] = 'Πρόσβαση επιτρέπεται μόνο τις καθορισμένες ώρες';
 $string['access_denied'] = 'Η πρόσβαση απαγορεύεται τις καθορισμένες ώρες';
-$string['admin_title'] = 'Προγράμματα μαθημάτων διαχειριστή';
+$string['admin_title'] = 'Χρονοπρογράμματα μαθημάτων διαχειριστή';
 $string['blocksettings_warning'] = 'Θα πρέπει να δημιουργήσετε ένα σύνολο χρηστών τουλάχιστον για να ενεργοποιήσετε αυτές τις επιλογές περιορισμού';
 $string['cohorts'] = 'Σύνολα χρηστών';
 $string['config_cohorts'] = 'Σύνολα χρηστών που χρησιμοποιούνται';
@@ -50,7 +50,7 @@ $string['missingdays'] = 'Θα πρέπει να επιλέξετε τουλάχ
 $string['monday'] = 'Δευτέρα';
 $string['page_heading'] = 'Το μάθημα δεν είναι διαθέσιμο αυτή τη στιγμή';
 $string['page_title'] = 'Το μάθημα δεν είναι διαθέσιμο αυτή τη στιγμή';
-$string['pluginname'] = 'Προγράμματα μαθήματος';
+$string['pluginname'] = 'Χρονοπρογράμματα μαθήματος';
 $string['restricted_access'] = 'Περιορισμένη πρόσβαση:';
 $string['saturday'] = 'Σάββατο';
 $string['show_block'] = 'Εμφάνιση μπλοκ στους μαθητές';

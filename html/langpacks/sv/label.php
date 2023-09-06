@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'sv', version '3.11'.
+ * Strings for component 'label', language 'sv', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -37,10 +37,12 @@ $string['indicator:cognitivedepth'] = 'Etikett kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Etikettresurs.';
 $string['indicator:cognitivedepthdef'] = 'Etikett kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av Etikett-resurserna under detta analysintervall (Nivåer = Ingen visning, Visa)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Etikett social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Etikettresurs.';
 $string['indicator:socialbreadthdef'] = 'Etikett social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Etikettresurserna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Ny etikett';
 $string['label:view'] = 'Visa etikett';
 $string['labeltext'] = 'Text på etikett';
@@ -52,6 +54,7 @@ Etiketter kan användas för att
 * Dela upp en lång lista med aktiviteter i en underrubrik eller en bild
 * Visa en inbäddad ljudfil eller video direkt på kurssidan
 * Lägga till en kort beskrivning till ett kursavsnitt';
+$string['modulename_link'] = 'mod/label/view';
 $string['modulenameplural'] = 'Etiketter';
 $string['pluginadministration'] = 'Etikettadministration';
 $string['pluginname'] = 'Etikett';

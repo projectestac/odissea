@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_poodll', language 'eu', version '3.11'.
+ * Strings for component 'filter_poodll', language 'eu', version '4.1'.
  *
  * @package     filter_poodll
  * @category    string
@@ -97,7 +97,7 @@ $string['event_adhoc_move_completed'] = 'Poodll Ad hoc mugitze-ataza osatu da';
 $string['event_adhoc_move_registered'] = 'Poodll Ad hoc mugitze-ataza osatu da';
 $string['event_adhoc_registered'] = 'Poodll Ad hoc ataza erregistratu da';
 $string['event_debug_log'] = 'Poodll arazketa-oharra';
-$string['expired'] = 'Ez da Poodlla erakusten erregistroa iraungitu delako. Jarri harremanetan zure irakasle edo guneko kudeatzailearekin Poodll.com webgunean erregistroa berritu dezan.';
+$string['expired'] = 'Ez da Poodlla erakusten erregistroa iraungi delako. Jarri harremanetan zure irakasle edo guneko kudeatzailearekin Poodll.com webgunean erregistroa berritu dezan.';
 $string['exportdiagnostics'] = 'Esportatu';
 $string['extensions'] = 'Fitxategi-luzapenak';
 $string['extensions_desc'] = 'Iragazki honek parseatu ditzakeen fitxategi-luzapenen CSV (komaz banatutako balioak) zerrenda bat.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'en', version '3.11'.
+ * Strings for component 'qtype_ddwtos', language 'en', version '4.1'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoiceblanks'] = 'Blanks for {no} more choices';
 $string['answer'] = 'Answer';
 $string['blank'] = 'blank';
+$string['blanknumber'] = 'Blank {$a}';
 $string['correctansweris'] = 'The correct answer is: {$a}';
 $string['errorlimitedchoice'] = 'Choice [[{$a}]] has been used more than once without being set to "Unlimited". Please recheck this question.';
 $string['infinite'] = 'Unlimited';

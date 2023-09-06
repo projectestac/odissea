@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'nl', version '3.11'.
+ * Strings for component 'lti', language 'nl', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -207,10 +207,12 @@ $string['indicator:cognitivedepth'] = 'LTI cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een LTI activiteit.';
 $string['indicator:cognitivedepthdef'] = 'LTI cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de LTI-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'LTI sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een LTI activiteit.';
 $string['indicator:socialbreadthdef'] = 'LTI sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de maatschappelijke betrokkenheid van de LTI-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, alleen deelnemer, deelnemer met anderen)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = 'Inlog-URL initiëren';
 $string['initiatelogin_help'] = 'De tool-URL waarnaar aanvragen voor het starten van een login moeten worden verzonden. Deze URL is vereist voordat een bericht met succes naar de tool kan worden verzonden.';
 $string['invalidid'] = 'LTI ID was foutief';
@@ -270,8 +272,8 @@ De tool types op deze pagina worden in drie categorieën onderverdeeld:
 * **Actief** - Deze tool providers werden goedgekeurd en ingesteld door de beheerder. Ze kunnen gebruikt worden vanuit elke cursus in deze Moodle instantie.
 Indien een consumentensleutel en gedeeld geheim worden ingevoerd, ontstaat er een vertrouwensrelatie tussen deze Moodle instantie en de externe tool, en wordt er een veilig communicatiekanaal voorzien.
 * **In behandeling** - Deze tool providers werden aangebracht via een package invoer, maar werden nog niet geconfigureerd door de beheerder.
-Leraars kunnen toch gebruik maken van de tools van deze providers indien ze in het bezit zijn van een consumentensleuten en gedeeld geheim, of indien deze niet worden vereist.
-* **Geweigerd** - Deze zijn gevlagd als tool providers die de beheerder niet wenst beschikbaar te maken voor de volledige Moodle instantie. Leraars kunnen toch gebruik maken van de tools van deze providers indien ze in het bezit zijn van een consumentensleuten en gedeeld geheim, of indien deze niet worden vereist.';
+Leraren kunnen toch gebruik maken van de tools van deze providers indien ze in het bezit zijn van een consumentensleuten en gedeeld geheim, of indien deze niet worden vereist.
+* **Geweigerd** - Deze zijn gevlagd als tool providers die de beheerder niet wenst beschikbaar te maken voor de volledige Moodle instantie. Leraren kunnen toch gebruik maken van de tools van deze providers indien ze in het bezit zijn van een consumentensleuten en gedeeld geheim, of indien deze niet worden vereist.';
 $string['manage_external_tools'] = 'Beheer tools';
 $string['manage_tool_proxies'] = 'Beheer externe tool registraties';
 $string['manage_tools'] = 'Beheer voorgeconfigureerde tools';
@@ -290,8 +292,10 @@ Externe tool-activiteiten verschillen van URL-bronnen op verschillende manieren:
 *Externe tools zijn contextbewust - ze hebben toegang tot informatie over wie de tool gestart heeft, zoals instituut, cursus en naam
 * Externe tools ondersteunen lezen, aanpassen en verwijderen van cijfers die aan de activiteit gelinkt zijn
 * Externe tool configuraties maken een vertrouwensrelatie tussen jouw site en de tool provider, waardoor een beveiligde communicatie tussen de twee mogelijk is';
+$string['modulename_link'] = 'mod/lti/view';
+$string['modulename_shortcut_link'] = 'mod/lti/view/custom';
 $string['modulenameplural'] = 'Externe tools';
-$string['modulenamepluralformatted'] = 'LTI-exemplaren';
+$string['modulenamepluralformatted'] = 'Externe tools';
 $string['name'] = 'Naam';
 $string['never'] = 'Nooit';
 $string['new_window'] = 'Nieuw venster';
@@ -315,12 +319,8 @@ $string['opensslconfiginvalid'] = 'LTI 1.3 vereist een geldige openssl.cnf die m
 $string['optionalsettings'] = 'Optionele instellingen';
 $string['organization'] = 'Details van de organisatie';
 $string['organizationdescr'] = 'Beschrijving van de organisatie';
-$string['organizationid'] = 'ID van de organisatie';
 $string['organizationid_default'] = 'Standaard organisatie-ID';
 $string['organizationid_default_help'] = 'Te gebruiken standaardwaarde voor de organisatie-ID. Website-ID identificeert deze installatie van Moodle.';
-$string['organizationid_help'] = 'Een unieke identificatie voor deze Moodle instantie. Gewoonlijk wordt de DNS naam van de organisatie gebruikt.
-
-Indien je dit veld leeg laat, zal  de hostnaam van de Moodle site worden gebruikt als standaardwaarde.';
 $string['organizationidguid'] = 'Organisatie-ID';
 $string['organizationidguid_help'] = 'Een unieke ID voor deze Moodle-instantie die aan de tool is doorgegeven als de GUID van de platforminstantie.
 

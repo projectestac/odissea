@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ca', version '3.11'.
+ * Strings for component 'glossary', language 'ca', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Afegeix una categoria';
 $string['addcomment'] = 'Afegeix un comentari';
 $string['addentry'] = 'Afegeix una entrada';
 $string['addingcomment'] = 'S\'està afegint un comentari';
+$string['addsingleentry'] = 'Afegeix una entrada';
 $string['alias'] = 'paraula clau';
 $string['aliases'] = 'Paraula o paraules clau';
 $string['aliases_help'] = '<p>Cada entrada del glossari pot tenir associada una llista de paraules clau (o àlies).</p>
@@ -226,6 +227,7 @@ $string['explainalphabet'] = 'Navegueu pel glossari utilitzant aquest índex';
 $string['explainexport'] = 'S\'ha creat un fitxer.<br/ >Baixeu-lo i deseu-lo en lloc segur. Podeu importar-lo en qualsevol moment en aquest curs o en un altre.';
 $string['explainimport'] = 'Heu d\'especificar el fitxer que voleu importar i definir els criteris del procés.<p>Trameteu la vostra sol·licitud i reviseu els resultats.';
 $string['explainspecial'] = 'Visualitzeu totes les entrades que no comencen per una lletra';
+$string['export'] = 'Exporta';
 $string['exportedentry'] = 'Entrada exportada';
 $string['exportentries'] = 'Exporta les entrades';
 $string['exportentriestoxml'] = 'Exporta les entrades a un fitxer XML';
@@ -268,10 +270,12 @@ $string['indicator:cognitivedepth'] = 'Glossari cognitiu';
 $string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva assolida per l\'estudiant en una activitat del tipus Glossari.';
 $string['indicator:cognitivedepthdef'] = 'Glossari cognitiu';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Glossari en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Glossari social';
 $string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en l\'extensió social assolida per l\'estudiant en una activitat del tipus Glossari.';
 $string['indicator:socialbreadthdef'] = 'Glossari social';
 $string['indicator:socialbreadthdef_help'] = 'El participant ha assolit aquest percentatge de compromís social oferit per les activitats Glossari durant l\'interval de l\'anàlisi (Nivells = Cap participació, Participant solitari)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = 'Aquest glossari és global?';
 $string['isglobal_help'] = 'Les entrades d\'un glossari global s\'enllacen des de tot el lloc, no sols des del curs al qual pertany el glossari. Només els administradors poden fer que un glossari sigui global.';
 $string['letter'] = 'lletra';
@@ -296,6 +300,7 @@ Els glossaris tenen molts usos, com ara:
 * Un recurs de «consells pràctics» de les millors pràctiques en un tema pràctic.
 * Una àrea d\'intercanvi de vídeos útils, imatges o arxius de so.
 * Un recurs de revisió de fets per recordar.';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = 'Glossaris';
 $string['newentries'] = 'Entrades noves del glossari';
 $string['newglossary'] = 'Nou glossari';
@@ -316,6 +321,7 @@ $string['onebyline'] = '(una per línia)';
 $string['page-mod-glossary-edit'] = 'Afegeix  glossari / edita pàgina d\'entrada';
 $string['page-mod-glossary-view'] = 'Mostra la pàgina d\'edició del glossari';
 $string['page-mod-glossary-x'] = 'Qualsevol pàgina del modul glossari';
+$string['pendingapproval'] = 'Pendent d\'aprovació';
 $string['pluginadministration'] = 'Gestió del glossari';
 $string['pluginname'] = 'Glossari';
 $string['popupformat'] = 'Format emergent';

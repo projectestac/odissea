@@ -19,8 +19,8 @@ Feature: Lesson with no calendar capabilites
       | course        | C1                      |
       | idnumber      | 0001                    |
       | name          | Test lesson name        |
-    And I am on the "Course 1" course page logged in as admin
-    And I navigate to "Users > Permissions" in current page administration
+    And I log in as "admin"
+    And I am on the "Course 1" "permissions" page
     And I override the system permissions of "Teacher" role with:
       | capability | permission |
       | moodle/calendar:manageentries | Prohibit |

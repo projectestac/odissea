@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpotattempt_html', language 'el', version '3.11'.
+ * Strings for component 'hotpotattempt_html', language 'el', version '4.1'.
  *
  * @package     hotpotattempt_html
  * @category    string

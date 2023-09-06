@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'de', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'de', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = 'Erzeugen';
 $string['newsetwildcardvalues'] = 'Neuer Datensatz für Ersatzzeichen';
 $string['pluginname'] = 'Einfach berechnet';
 $string['pluginname_help'] = 'Einfach berechnete Fragen ermöglichen numerische Fragen mit Ersatzzeichen (Wildcards), die bei der Testdurchführung ersetzt werden. Es sind die meisten Funktionen von berechneten Fragen vorhanden, wobei die Erstellung wesentlich einfacher ist.';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = 'Einfach berechnete Frage hinzufügen';
 $string['pluginnameediting'] = 'Einfach berechnete Frage bearbeiten';
 $string['pluginnamesummary'] = 'Einfach berechnete Fragen sind eine einfachere Form von berechneten Fragen, welche numerische Fragen mit austauschbaren Werten enthalten. Diese Werte werden bei jedem Testaufruf zufällig aus einer Liste ausgewählt.';

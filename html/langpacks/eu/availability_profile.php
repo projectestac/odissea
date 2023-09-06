@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'eu', version '3.11'.
+ * Strings for component 'availability_profile', language 'eu', version '4.1'.
  *
  * @package     availability_profile
  * @category    string
@@ -39,8 +39,8 @@ $string['op_isempty'] = 'hutsik dago';
 $string['op_isequalto'] = 'honen berdina';
 $string['op_isnotempty'] = 'ez dago hutsik';
 $string['op_startswith'] = 'honela hasten da';
-$string['pluginname'] = 'Profilaren araberako baldintza';
-$string['privacy:metadata'] = 'Profilaren araberako baldintza pluginak ez du datu pertsonalik biltzen.';
+$string['pluginname'] = 'Profilaren araberako eskuragarritasun baldintza';
+$string['privacy:metadata'] = 'Profilaren araberako eskuragarritasun baldintza pluginak ez du datu pertsonalik biltzen.';
 $string['requires_contains'] = 'Profileko <strong>{$a->field}</strong> eremuak <strong>{$a->value}</strong> izatea';
 $string['requires_doesnotcontain'] = 'Profileko <strong>{$a->field}</strong> eremuak <strong>{$a->value}</strong> ez izatea';
 $string['requires_endswith'] = 'Profileko <strong>{$a->field}</strong> eremuak <strong>{$a->value}</strong>(r)ekin bukatzea';

@@ -32,7 +32,6 @@ Feature: Users can search wikis
     And I set the following fields to these values:
       | HTML format | Collaborative teacher1 page [[new page]] |
     And I press "Save"
-    And I am on "Course 1" course homepage
     And I am on the "Collaborative wiki name" "wiki activity" page logged in as student1
     And I follow "new page"
     And I press "Create page"

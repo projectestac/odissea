@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'zh_cn', version '3.11'.
+ * Strings for component 'tool_installaddon', language 'zh_cn', version '4.1'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -42,6 +42,7 @@ $string['installfromziprootdir_help'] = '某些ZIP包（如Github生成的ZIP包
 $string['installfromzipsubmit'] = '从这个ZIP文件安装插件';
 $string['installfromziptype'] = '插件类型';
 $string['installfromziptype_help'] = '对于正确阐明组件名称的插件，安装程序能够自动检测插件类型。如果自动检测失败，请手动选择正确的插件类型。警告：如果指定的插件类型不正确，安装过程可能会失败。';
+$string['installfromziptype_link'] = 'Development:Plugins';
 $string['permcheck'] = '确保插件类型根位置可由web服务器进程写入。';
 $string['permcheckerror'] = '检查写入权限时出错';
 $string['permcheckprogress'] = '检查写入权限...';

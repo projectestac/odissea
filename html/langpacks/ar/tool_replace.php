@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'ar', version '3.11'.
+ * Strings for component 'tool_replace', language 'ar', version '4.1'.
  *
  * @package     tool_replace
  * @category    string
@@ -33,7 +33,7 @@ $string['doit'] = 'نعم افعلها!';
 $string['excludedtables'] = 'لا يتم تحديث عدة جداول كجزء من استبدال النص. يشمل هذا التهيئة، سجل الوقوعات، الأحداث وجداول الجلسات.';
 $string['invalidcharacter'] = 'تم العثور على أحرف غير صالحة في البحث أو استبدال النص.';
 $string['notifyfinished'] = 'منتهية ...';
-$string['notifyrebuilding'] = 'إعادة بناء النسخة المخبأة للمقرر الدراسي...';
+$string['notifyrebuilding'] = 'إعادة بناء النسخة المخبأة للمساق الدراسي...';
 $string['notimplemented'] = 'عذراً،هذه الميزة غير مطبقة في مشغل قاعدة بياناتك.';
 $string['notsupported'] = 'يجب اعتبار هذا النص البرمجي تجريبيًا. لا يمكن التراجع عن التغييرات التي يتم إجراؤها، وبالتالي ينبغي أخذ نسخة احتياطية كاملة قبل تشغيل النص البرمجي!';
 $string['pageheader'] = 'البحث عن نص واستبداله خلال قاعدة البيانات بأكملها';

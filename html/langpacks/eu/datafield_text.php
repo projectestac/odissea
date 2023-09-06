@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_text', language 'eu', version '3.11'.
+ * Strings for component 'datafield_text', language 'eu', version '4.1'.
  *
  * @package     datafield_text
  * @category    string
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'Testu laburra';
 $string['pluginname'] = 'Testu laburra';
 $string['privacy:metadata'] = 'Testu laburra eremu-osagaiak ez du datu pertsonalik biltzen; datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['sample'] = 'Hau testu labur bat da';

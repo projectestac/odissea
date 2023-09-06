@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'sv', version '3.11'.
+ * Strings for component 'tool_usertours', language 'sv', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -43,9 +43,12 @@ $string['confirmtourremovalquestion'] = 'Är du säker på att du vill ta bort d
 $string['confirmtourremovaltitle'] = 'Bekräfta borttagning av guidetur';
 $string['content'] = 'Innehåll';
 $string['content_heading'] = 'Innehåll';
-$string['content_help'] = 'Innehåll som beskriver steget kan läggas till som oformaterad text, omslutet av flerspråks-taggar (för användning med innehållsfiltret för flera språk) om det behövs.
-
-Alternativt kan ett språksträngs-ID anges i formatidentifieraren, komponenten (utan hakparenteser eller mellanslag efter kommatecknet).';
+$string['content_help'] = 'Innehåll som beskriver steget kan läggas till som oformaterad text, innesluten i flerspråkstaggar (för användning med flerspråksinnehållsfiltret) om det behövs.';
+$string['content_type'] = 'Innehållstyp';
+$string['content_type_help'] = '* Manuellt - innehållet matas in med en textredigerare
+* Språksträng-ID - i formatet <code>strängidentifierare, komponent</code> (utan mellanslag efter kommatecken)';
+$string['content_type_langstring'] = 'Språksträng-ID';
+$string['content_type_manual'] = 'Manuellt';
 $string['cssselector'] = 'CSS-selektor';
 $string['defaultvalue'] = 'Standard ({$a})';
 $string['delay'] = 'Fördröjning innan steget visas';
@@ -53,12 +56,22 @@ $string['delay_help'] = 'Du kan valfritt välja att lägga till en fördröjning
 
 Den här fördröjningen anges i millisekunder.';
 $string['description'] = 'Beskrivning';
+$string['description_help'] = 'Beskrivningen av en rundtur kan läggas till som oformaterad text, innesluten i flerspråkstaggar (för användning med flerspråksinnehållsfiltret) om det behövs.
+
+Alternativt kan ett språksträngs-ID anges i formatidentifieraren eller komponenten (utan hakparenteser eller blanksteg efter kommat).';
+$string['displaystepnumbers'] = 'Visa stegnummer';
+$string['displaystepnumbers_help'] = 'Om stegnummer, t.ex. 1/4, 2/4 etc., ska visas för att indikera längden på användarturen.';
 $string['done'] = 'Klar';
 $string['duplicatetour'] = 'Kopiera guide';
 $string['duplicatetour_name'] = '{$a} (kopia)';
 $string['editstep'] = 'Redigerar "{$a}"';
 $string['enabled'] = 'Aktiv';
+$string['endonesteptour'] = 'Jag förstår';
 $string['endtour'] = 'Avsluta den guidade turen';
+$string['endtourlabel'] = 'Etikett på knappen "Avsluta guidad tur"';
+$string['endtourlabel_help'] = 'Du kan också ange en anpassad etikett för "Avsluta rundturen"-knappen. Standardetiketten är "Jag förstår" för enstegs- och "Avsluta rundturen" för flerstegsguider.
+
+Alternativt kan ett språksträngs-ID anges i formatidentifieraren eller komponenten (utan hakparenteser eller blanksteg efter kommatecknet).';
 $string['event_step_shown'] = 'Steg visat';
 $string['event_tour_ended'] = 'Den guidade turen avslutades';
 $string['event_tour_reset'] = 'Återställ den guidade turen';
@@ -85,17 +98,23 @@ $string['filter_role_help'] = 'En guide kan vara begränsad till användare med 
 $string['filter_theme'] = 'Tema';
 $string['filter_theme_help'] = 'Visa guiden när användaren använder ett av de valda teman.';
 $string['importtour'] = 'Importera guide';
+$string['invalid_lang_id'] = 'Ogiltigt språksträng-ID';
 $string['left'] = 'Vänster';
 $string['modifyshippedtourwarning'] = 'Detta är en guide som har levererats tillsammans med Moodle. Alla ändringar du gör kan skrivas över vid nästa webbplatsuppgradering.';
+$string['moodle_language_identifier'] = 'Språksträng-ID';
 $string['movestepdown'] = 'Flytta nedåt';
 $string['movestepup'] = 'Flytta uppåt';
 $string['movetourdown'] = 'Flytta ned';
 $string['movetourup'] = 'Flytta upp';
 $string['name'] = 'Namn';
+$string['name_help'] = 'Namnet på en rundtur kan läggas till som oformaterad text, omgiven av flerspråkstaggar (för användning med flerspråksinnehållsfiltret) om det behövs.
+
+Alternativt kan ett språksträngs-ID anges i formatidentifieraren eller komponenten (utan hakparenteser eller blanksteg efter kommat).';
 $string['newstep'] = 'Nytt steg';
 $string['newtour'] = 'Ny guide';
 $string['next'] = 'Nästa';
 $string['nextstep'] = 'Nästa';
+$string['nextstep_sequence'] = 'Nästa ({$a->position}/{$a->total})';
 $string['options_heading'] = 'Alternativ';
 $string['orphan'] = 'Visa om målet inte hittas';
 $string['orphan_help'] = 'Visa steget om målet inte hittas på sidan.';
@@ -133,6 +152,7 @@ $string['selectordisplayname'] = 'En CSS-selektor som matchar \'{$a}\'';
 $string['selecttype'] = 'Välj stegtyp';
 $string['sharedtourslink'] = 'Guidekatalog';
 $string['skip'] = 'Hoppa över';
+$string['skip_tour'] = 'Hoppa över rundtur';
 $string['target'] = 'Mål';
 $string['target_block'] = 'Block';
 $string['target_heading'] = 'Stegmål';
@@ -234,6 +254,27 @@ $string['tour_activityinfo_course_teacher_content'] = 'Med de nya kursinställni
 $string['tour_activityinfo_course_teacher_title'] = 'Nytt: Aktivitetsinformation';
 $string['tour_final_step_content'] = 'Din guidade tur är avslutad. Om du vill se den igen kan du klicka länken längst nere på sidan för att återställa den.';
 $string['tour_final_step_title'] = 'Slut på den guidade turen';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Publicera viktiga nyheter här.';
+$string['tour_navigation_course_announcements_teacher_title'] = 'Något att berätta för alla?';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Lägg till nytt innehåll eller redigera befintligt innehåll.';
+$string['tour_navigation_course_edit_teacher_title'] = 'Aktivera redigeringsläge';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Bläddra igenom aktiviteter och spåra dina framsteg.';
+$string['tour_navigation_course_index_student_title'] = 'Hitta rätt';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Dra och släpp aktiviteter för att ordna om kursinnehållet.';
+$string['tour_navigation_course_index_teacher_title'] = 'Kursindex';
+$string['tour_navigation_course_student_tour_des'] = 'Var du kan bläddra igenom aktiviteter i en kurs';
+$string['tour_navigation_course_student_tour_name'] = 'Kursindex';
+$string['tour_navigation_course_teacher_tour_des'] = 'Redigeringsläge - dra och släpp aktiviteter och publicera meddelanden i en kurs';
+$string['tour_navigation_course_teacher_tour_name'] = 'Kursredigering';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Den här sidopanelen kan innehålla fler funktioner.';
+$string['tour_navigation_dashboard_title'] = 'Expandera för att utforska';
+$string['tour_navigation_dashboard_tour_des'] = 'Var block finns på instrumentpanelen';
+$string['tour_navigation_dashboard_tour_name'] = 'Blockverktygslåda';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>Lägg till, kopiera, ta bort och dölj kurser på den här menyn.';
+$string['tour_navigation_mycourses_endtourlabel'] = 'Jag förstår';
+$string['tour_navigation_mycourses_title'] = 'Kurser och kategorier';
+$string['tour_navigation_mycourses_tour_des'] = 'Kurshanteringsalternativ på sidan Mina kurser';
+$string['tour_navigation_mycourses_tour_name'] = 'Kurshantering';
 $string['tour_resetforall'] = 'Tillståndet hos den guidade turen har återställts. Det kommer åter att visas för alla användare.';
 $string['tourconfig'] = 'Guidekonfigurationsfil att importera';
 $string['tourisenabled'] = 'Guide aktiv';

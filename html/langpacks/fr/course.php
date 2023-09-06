@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'fr', version '3.11'.
+ * Strings for component 'course', language 'fr', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -49,6 +49,8 @@ $string['aria:favourite'] = 'Le cours est marqué comme favori';
 $string['aria:favouritestab'] = 'Activités favorites';
 $string['aria:modulefavourite'] = 'Marquer l\'activité {$a} comme favorite';
 $string['aria:recommendedtab'] = 'Les activités recommandées';
+$string['browsecourseadminindex'] = 'Explorer la navigation du cours avec ce menu.';
+$string['browsesettingindex'] = 'Explorer les réglages avec ce menu.';
 $string['completion_automatic:done'] = 'Terminé :';
 $string['completion_automatic:failed'] = 'Échec :';
 $string['completion_automatic:todo'] = 'À faire :';
@@ -61,9 +63,17 @@ $string['completion_setby:auto:todo'] = 'À faire : {$a->condition} (fixée par
 $string['completion_setby:manual:done'] = '{$a->activityname} est marqué comme terminé par {$a->setby}. Cliquer pour annuler.';
 $string['completion_setby:manual:markdone'] = '{$a->activityname} est marqué comme non terminé par {$a->setby}. Cliquer pour marquer comme terminé.';
 $string['completionrequirements'] = 'Conditions d\'achèvement pour {$a}';
+$string['courseaccess'] = 'Accès au cours';
 $string['coursealreadyfinished'] = 'Cours déjà terminé';
+$string['coursecontentnotification'] = 'Envoyer une notification de modification de contenu';
+$string['coursecontentnotification_help'] = 'Cocher la case pour envoyer aux participants au cours une notification lors de chaque création ou modification de ressource ou d\'activité. La notification ne sera envoyée qu\'aux utilisateurs ayant accès à l\'activité ou à la ressource.';
+$string['coursecontentnotifnew'] = 'Nouveau contenu de {$a->coursename}';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> a été créé dans le cours <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Modifier vos préférences de notification</a></p>';
+$string['coursecontentnotifupdate'] = 'Changement de contenu de {$a->coursename}';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> a été modifié dans le cours <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Modifier vos préférences de notification</a></p>';
 $string['coursenotyetfinished'] = 'Le cours n\'est pas encore terminé';
 $string['coursenotyetstarted'] = 'Le cours n\'a pas encore commencé';
+$string['courseparticipants'] = 'Participants au cours';
 $string['coursetoolong'] = 'Le cours est trop long';
 $string['customfield_islocked'] = 'Verrouillé';
 $string['customfield_islocked_help'] = 'Si le champ est verrouillé, seuls les gestionnaires avec la capacité « Modifier les champs verrouillés » (par défaut ceux ayant le rôle de gestionnaire) pourront le modifier dans le formulaire d\'édition du cours';
@@ -73,6 +83,11 @@ $string['customfield_visibility_help'] = 'Ce réglage détermine qui peut voir l
 $string['customfield_visibletoall'] = 'Tout le monde';
 $string['customfield_visibletoteachers'] = 'Enseignants';
 $string['customfieldsettings'] = 'Réglages des champs personnalisés de cours communs';
+$string['daystakingcourse'] = 'Jours de participation au cours';
+$string['downloadcontent'] = 'Inclure dans les téléchargement de cours';
+$string['downloadcontent_help'] = 'Ce réglage détermine si l\'activité doit être incluse dans le fichier ZIP des contenus du cours disponible pour téléchargement. Les fichiers, dossiers, pages et étiquettes peuvent être téléchargées intégralement. Seuls le nom et la description des autres activités sont téléchargés. Cette option requiert l\'activation du téléchargement des contenus de cours dans les réglages du cours,
+
+Le réglage n\'a aucun effet sur le téléchargement des contenus pour usage hors ligne via l\'app mobile.';
 $string['downloadcourseconfirmation'] = 'Vous allez télécharger un fichier ZIP des contenus du cours (à l\'exclusion des éléments ne pouvant pas être téléchargés et des fichiers dont la taille dépasse {$a}).';
 $string['downloadcoursecontent'] = 'Téléchargement des contenus du cours';
 $string['downloadcoursecontent_help'] = 'Ce réglage détermine si les contenus de cours peuvent être téléchargés par les utilisateurs disposant de la capacité adéquate (par défaut ceux qui ont le rôle d\'étudiant ou d\'enseignant).';
@@ -82,6 +97,7 @@ $string['favourite'] = 'Cours marqué comme favori';
 $string['gradetopassnotset'] = 'Ce cours n\'a pas de note pour passer. Une telle note peut être indiquée dans l\'élément d\'évaluation du cours (configuration du carnet de notes).';
 $string['informationformodule'] = 'Information sur l\'activité {$a}';
 $string['module'] = 'Activité';
+$string['namewithlink'] = 'Nom de catégorie avec lien';
 $string['noaccesssincestartinfomessage'] = 'Bonjour {$a->userfirstname},
 <p>Certains étudiants du cours {$a->coursename} n\'ont jamais accédé au cours.</p>';
 $string['nocourseactivity'] = 'Pas assez d\'activités de cours entre le début et la fin du cours';
@@ -92,6 +108,9 @@ $string['norecentaccessesinfomessage'] = 'Bonjour {$a->userfirstname},
 <p>Certains étudiants du cours {$a->coursename} n\'ont pas accédé récemment au cours.</p>';
 $string['noteachinginfomessage'] = 'Bonjour {$a->userfirstname},
 <p>Des cours dont la date de début est fixé la semaine prochaine ont été identifiés comme sans enseignant ou sans inscription d\'étudiant.</p>';
+$string['participants:perpage'] = 'Nombre de participants par page';
+$string['participants:perpage_help'] = 'Le nombre d\'utilisateurs affichés par page sur la page des participants de chaque cours.';
+$string['participantsnavigation'] = 'Navigation participants';
 $string['privacy:completionpath'] = 'Achèvement de cours';
 $string['privacy:favouritespath'] = 'Information sur le marquage comme favori du cours';
 $string['privacy:metadata:activityfavouritessummary'] = 'Le système des cours contient des informations sur les éléments du sélecteur d\'activités qui ont été marqués comme favoris par l\'utilisateur.';

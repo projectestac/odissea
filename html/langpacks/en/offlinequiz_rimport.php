@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_rimport', language 'en', version '3.11'.
+ * Strings for component 'offlinequiz_rimport', language 'en', version '4.1'.
  *
  * @package     offlinequiz_rimport
  * @category    string
@@ -53,11 +53,11 @@ $string['erroruseridviolation'] = 'Multiple users found';
 $string['errorusernotincourse'] = 'User not in course';
 $string['errorusernotinlist'] = 'User not in list';
 $string['idnumber'] = 'ID-Number';
-$string['import'] = 'Import';
-$string['importedon'] = 'Imported on';
-$string['importforms'] = 'Import answer forms';
+$string['import'] = 'Evaluate';
+$string['importedon'] = 'Evaluated on';
+$string['importforms'] = 'Upload answer forms';
 $string['importlisterror'] = 'List not detected';
-$string['importpforms'] = 'Import lists of participants';
+$string['importpforms'] = 'Upload attendance lists';
 $string['newformsinqueue'] = '{$a} answer form(s) is/are pending evaluation.';
 $string['pluginname'] = 'Offlinequiz Results Import';
 $string['privacy:metadata'] = 'This plugin does not store any user related data.';

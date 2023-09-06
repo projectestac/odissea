@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'eu', version '3.11'.
+ * Strings for component 'notes', language 'eu', version '4.1'.
  *
  * @package     notes
  * @category    string
@@ -31,6 +31,7 @@ $string['addbulknotedonesingle'] = 'Oharra pertsona bati gehitu zaio';
 $string['addbulknotesingle'] = 'Gehitu ohar berria pertsona bati';
 $string['addnewnote'] = 'Gehitu ohar berria';
 $string['addnewnoteselect'] = 'Aukeratu ikasleak beraiei buruzko oharrak idazteko';
+$string['author'] = 'Egilea';
 $string['bynameondate'] = '{$a->name} -k - {$a->date}';
 $string['configenablenotes'] = 'Gaitu erabiltzaile bakoitzari buruzko oharrak biltzea';
 $string['content'] = 'Edukia';
@@ -73,6 +74,7 @@ $string['publishstate_help'] = 'Oharren testuinguruak egunerokotasunean oharra z
 * Pertsonala - Oharra zuk baino ezin duzu ikusi
 * Ikastaroa - Oharra ikastaroko irakasleek ikus dezakete
 * Gunea - Oharra guneko ikastaro guztietako irakasleek ikus dezakete';
+$string['recipient'] = 'Jasotzailea';
 $string['site'] = 'gunea';
 $string['sitenotes'] = 'Guneko oharrak';
 $string['unknown'] = 'ezezaguna';

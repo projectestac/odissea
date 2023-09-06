@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'ca', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'ca', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -37,6 +37,7 @@ $string['fileurl'] = 'URL d\'un fitxer remot';
 $string['fileurl_help'] = 'El camp URL del fitxer remot és per portar les dades des d\'un servidor remot, com ara un sistema d\'informació d\'estudiants.';
 $string['importxml'] = 'Importació XML';
 $string['importxml_help'] = 'Les qualificacions es poden importar mitjançant un fitxer XML que contingui nombres ID d\'usuaris i nombres ID d\'activitats. Per obtenir el format correcte, primer exporteu algunes qualificacions al format XML i després visualitzeu el fitxer resultant.';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'Fitxer XML';
 $string['xml:publish'] = 'Publica qualificacions importades en format XML';
 $string['xml:view'] = 'Importa qualificacions d\'un fitxer XML';

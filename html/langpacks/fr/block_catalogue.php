@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_catalogue', language 'fr', version '3.11'.
+ * Strings for component 'block_catalogue', language 'fr', version '4.1'.
  *
  * @package     block_catalogue
  * @category    string
@@ -148,7 +148,7 @@ $string['editing_edit'] = 'Modifier';
 $string['editing_hideshow'] = 'Cacher/Montrer';
 $string['editing_highlight'] = 'Promouvoir une section';
 $string['editing_indent'] = 'Déplacer vers la droite';
-$string['editing_listname'] = 'Edition';
+$string['editing_listname'] = 'Édition';
 $string['editing_modsonly'] = 'Editer des activités ou ressources';
 $string['editing_move'] = 'Déplacer';
 $string['editing_picture'] = 'Changer l\'image illustrant une section';
@@ -203,7 +203,7 @@ $string['grades_outcome'] = 'Objectifs, compétences, badges';
 $string['grades_use'] = 'Consulter';
 $string['headerconfig'] = 'Réglages des blocs Catalogue';
 $string['here'] = 'Ici';
-$string['hideediting'] = 'Montrer la liste « Edition » uniquement aux gestionnaires';
+$string['hideediting'] = 'Montrer la liste « Édition » uniquement aux gestionnaires';
 $string['hover'] = 'Survolez une description avec votre souris pour la lire en entier';
 $string['hvp_Accordion'] = 'Accordéon';
 $string['hvp_AppearIn'] = 'Petite visioconférence web';

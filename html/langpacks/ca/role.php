@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ca', version '3.11'.
+ * Strings for component 'role', language 'ca', version '4.1'.
  *
  * @package     role
  * @category    string
@@ -62,6 +62,7 @@ $string['assignrole'] = 'Assigna un rol';
 $string['assignrolenameincontext'] = 'Assigna el rol \'{$a->role}\' en el context \'{$a->context}';
 $string['assignroles'] = 'Assigna rols';
 $string['assignroles_help'] = 'Quan assigneu un rol a un usuari en un context, li atorgueu els permisos que conté aquest rol, en aquest context i en tots els contextos «inferiors». Per exemple, si atorgueu el rol d\'estudiant a un usuari en un curs, aquesta persona tindrà aquest rol en aquest curs i en tots els blocs i totes les activitats dins del curs.';
+$string['assignroles_link'] = 'admin/roles/assign';
 $string['assignrolesin'] = 'Assigna rols en aquest context: {$a}';
 $string['assignrolesrelativetothisuser'] = 'Assigna rols relatius a aquest usuari';
 $string['backtoallroles'] = 'Torna a la llista de tots els rols';
@@ -329,6 +330,7 @@ $string['overrideanotherrole'] = 'Redefineix un altre rol';
 $string['overridecontext'] = 'Redefineix el context';
 $string['overridepermissions'] = 'Redefineix els permisos';
 $string['overridepermissions_help'] = 'La redefinició de permisos possibilita habilitar o inhabilitar capacitats concretes en contextos específics.';
+$string['overridepermissions_link'] = 'admin/roles/override';
 $string['overridepermissionsforrole'] = 'Redefineix els permisos del rol «{$a->role}» a {$a->context}';
 $string['overridepermissionsin'] = 'Defineix excepcions als permisos en {$a}';
 $string['overrideroles'] = 'Redefineix els rols';
@@ -422,6 +424,7 @@ $string['roleresetrole'] = 'Utilitza el rol o l\'arquetipus';
 $string['rolerisks'] = 'Riscs del rol';
 $string['roles'] = 'Rols';
 $string['roles_help'] = 'Un rol és una col·leció de permisos, definits per a tot el lloc, que podeu assignar a usuaris específics en contextos específics.';
+$string['roles_link'] = 'roles';
 $string['roleselect'] = 'Escull un rol';
 $string['rolesforuser'] = 'Rols per a l\'usuari {$a}';
 $string['roleshortname'] = 'Nom curt';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmatch', language 'ca', version '3.11'.
+ * Strings for component 'qtype_ddmatch', language 'ca', version '4.1'.
  *
  * @package     qtype_ddmatch
  * @category    string
@@ -29,6 +29,7 @@ $string['draganswerhere'] = 'Arrossegueu la resposta aquí';
 $string['editingddmatch'] = 'S\'està editant la pregunta d\'aparellament d\'arrossegar i deixar anar';
 $string['pluginname'] = 'Aparellament d\'arrossegar i deixar anar';
 $string['pluginname_help'] = 'En les preguntes d\'aparellament d\'arrossegar i deixar anar, s\'han de fer correspondre una llista de noms o enunciats (preguntes) amb una altra llista de noms o enunciats (respostes).';
+$string['pluginname_link'] = 'question/type/ddmatch';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'aparellament d\'arrossegar i deixar anar';
 $string['pluginnameediting'] = 'S\'està editant la pregunta d\'aparellament d\'arrossegar i deixar anar';
 $string['pluginnamesummary'] = 'És una extensió de les preguntes de tipus aparellament que permet a l\'usuari arrossegar i deixar anar els elements d\'una llista per fer-los coincidir amb els elements d\'una altra llista.';

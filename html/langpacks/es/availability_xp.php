@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_xp', language 'es', version '3.11'.
+ * Strings for component 'availability_xp', language 'es', version '4.1'.
  *
  * @package     availability_xp
  * @category    string
@@ -27,8 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Evitar el acceso dependiendo del nivel del usuario.';
 $string['invalidlevel'] = 'Nivel no válido';
-$string['levelgreaterorequalto'] = 'Nivel es mayor o igual a';
-$string['levelnnotrequiredtoaccess'] = 'Usted no es {$a} nivel o superior.';
-$string['levelnrequiredtoaccess'] = 'Estás {$a} nivel o superior.';
+$string['levelconditionoperator'] = 'Operador de condición de nivel';
+$string['levelgreaterorequalto'] = 'El nivel es mayor o igual a';
+$string['levelis'] = 'El nivel es';
+$string['levelnexactlynotrequiredtoaccess'] = 'No tienes el nivel {$a}.';
+$string['levelnexactlyrequiredtoaccess'] = 'Tienes exactamente el nivel {$a}.';
+$string['levelnnotrequiredtoaccess'] = 'No tienes el nivel {$a} o superior.';
+$string['levelnrequiredtoaccess'] = 'Estás en nivel {$a} o superior.';
+$string['levelnumber'] = 'Número de nivel';
+$string['opequalto'] = 'Exactamente igual a';
+$string['opgreaterorequalto'] = 'Mayor o igual a';
 $string['pluginname'] = 'Disponibilidad Nivel';
+$string['privacy:metadata'] = 'Este plugin no almacena ningún dato personal.';
 $string['title'] = 'Nivel';

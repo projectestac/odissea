@@ -11,7 +11,7 @@
 .path-mod-assign div.usersummary,
 .path-mod-assign div.feedback,
 .path-mod-assign div.gradingsummary {
-    margin-bottom: 5em;
+    margin-bottom: 1.5em;
 }
 
 .path-mod-assign div.submissionstatus .generaltable,
@@ -102,7 +102,6 @@
 .path-mod-assign td.submissionnotgraded,
 .path-mod-assign div.submissionnotgraded {
     color: black;
-    background-color: #efefef;
 }
 
 .path-mod-assign td.latesubmission,
@@ -277,8 +276,9 @@
 }
 
 .path-mod-assign .submissionsummarytable .c0,
+.path-mod-assign .gradingsummarytable .c0,
 .path-mod-assign .mod-assign-history-panel .c0 {
-    width: 150px;
+    width: 15em;
 }
 
 .path-mod-assign .gradingtable .moodle-actionmenu {
@@ -1209,3 +1209,10 @@
     padding: 0;
 }
 /** End of YUI tree fix **/
+
+/* Countdown timer. */
+div[id*='mod_assign-timer-'] {
+    display: block;
+    font-weight: 600;
+    font-size: 1.4em;
+}

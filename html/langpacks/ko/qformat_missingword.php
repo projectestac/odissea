@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'ko', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'ko', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,3 +30,4 @@ $string['endanswernotfound'] = '가져오기한 파일 내용에서 필요한 "}
 $string['noanswerfound'] = '질문에 답이 없습니다.';
 $string['pluginname'] = '빈칸 채우기 형식';
 $string['pluginname_help'] = '빈 칸 채우기 형식은 텍스트 파일로 질문들을 가져올 수 있게 합니다.';
+$string['pluginname_link'] = 'qformat/missingword';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'gl', version '3.11'.
+ * Strings for component 'choicegroup', language 'gl', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -72,6 +72,7 @@ $string['members/'] = 'Encher';
 $string['members/max'] = 'Encher / Capacidade';
 $string['modulename'] = 'Grupo de escolla';
 $string['modulename_help'] = 'O módulo de escolla permítelle ao profesor facer unha pregunta e especificar unha escolla de entre múltiples opcións.';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Grupo de escollas';
 $string['moveselectedusersto'] = 'Mover os usuarios seleccionados a...';
 $string['multipleenrollmentspossible'] = 'Permitir a matriculación a múltiples grupos';

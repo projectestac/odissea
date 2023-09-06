@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ca', version '3.11'.
+ * Strings for component 'page', language 'ca', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -36,10 +36,12 @@ $string['indicator:cognitivedepth'] = 'Pàgina cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva assolida per l\'estudiant en un recurs del tipus Pàgina.';
 $string['indicator:cognitivedepthdef'] = 'Pàgina cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Pàgina en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Pàgina social';
 $string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en l\'amplada social assolida per l\'estudiant en un recurs del tipus Pàgina.';
 $string['indicator:socialbreadthdef'] = 'Pàgina social';
 $string['indicator:socialbreadthdef_help'] = 'El participant ha assolit aquest percentatge del compromís social oferit pels recursos Pàgina durant l\'interval d\'anàlisi (Nivells =  No participació, Participant solitari)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migració d\'un fitxer antic';
 $string['legacyfilesactive'] = 'Actiu';
 $string['legacyfilesdone'] = 'Acabat';
@@ -54,6 +56,7 @@ Una pàgina pot utilitzar-se
 
 *Per presentar els termes i condicions dd\'un curs o un resum del pla d\'estudis del curs
 * Per incrustar diversos vídeos o fitxers de so juntament amb un text explicatiu';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Pàgines';
 $string['optionsheader'] = 'Mostra les opcions';
 $string['page-mod-page-x'] = 'Qualsevol pàgina del mòdul de pàgina';

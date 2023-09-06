@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'gl', version '3.11'.
+ * Strings for component 'cohort', language 'gl', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -34,12 +34,13 @@ $string['assignto'] = 'Membros do círculo «{$a}»';
 $string['backtocohorts'] = 'Volver aos círculos';
 $string['bulkadd'] = 'Engadir ao círculo';
 $string['bulknocohort'] = 'Non se atoparon círculos dispoñíbeis';
-$string['categorynotfound'] = 'Non se atopa a categoría <b>{$a}</b>, ou vostede non ten permisos para crear alí un circulo. Usarase o contexto predeterminado.';
+$string['categorynotfound'] = 'Non se atopa a categoría <b>{$a}</b>, ou vostede non ten permisos para crear alí un círculo. Usarase o contexto predeterminado.';
 $string['cohort'] = 'Círculo';
+$string['cohortmember'] = 'Membro do círculo';
 $string['cohorts'] = 'Círculos';
 $string['cohortsin'] = '{$a}: círculos dispoñíbeis';
 $string['component'] = 'Orixe';
-$string['contextnotfound'] = 'Non se atopa o contexto <b>{$a}</b>, ou vostede non ten permisos para crear alí un circulo. Usarase o contexto predeterminado.';
+$string['contextnotfound'] = 'Non se atopa o contexto <b>{$a}</b>, ou vostede non ten permisos para crear alí un círculo. Usarase o contexto predeterminado.';
 $string['csvcontainserrors'] = 'Atopáronse erros nos datos do CSV. Vexa embaixo os detalles.';
 $string['csvcontainswarnings'] = 'Atopáronse avisos nos datos do CSV. Vexa embaixo os detalles.';
 $string['csvextracolumns'] = 'A(s) columna(s) <b>{$a}</b> será(n) ignorada(s).';
@@ -49,7 +50,7 @@ $string['defaultcontext'] = 'Contexto predeterminado';
 $string['delcohort'] = 'Eliminar o círculo';
 $string['delconfirm'] = 'Confirma que quere eliminar o círculo «{$a}»?';
 $string['description'] = 'Descrición';
-$string['displayedrows'] = '{$a->displayed} filas amosadas dun total de {$a->total}.';
+$string['displayedrows'] = '{$a->displayed} filas amosadas dun total de  {$a->total}.';
 $string['duplicateidnumber'] = 'Xa existe un círculo co mesmo número ID';
 $string['editcohort'] = 'Editar o círculo';
 $string['editcohortidnumber'] = 'Editar o ID do círculo';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = 'Círculo actualizado';
 $string['external'] = 'Círculo externo';
 $string['idnumber'] = 'ID do círculo';
 $string['invalidtheme'] = 'Non existe o tema do círculo';
+$string['memberofcohort'] = 'Membro do círculo';
 $string['memberscount'] = 'Tamaño do círculo';
 $string['name'] = 'Nome';
 $string['namecolumnmissing'] = 'Algo está mal co formato do ficheiro CSV. Revise que inclúa os nomes das columnas. Teña en conta que o envío de círculos soamente lle permite engadirlle novos usuarios a un círculo existente e non permite retiralos dun círculo existente.';
@@ -86,7 +88,7 @@ $string['uploadcohorts'] = 'Enviar círculos';
 $string['uploadcohorts_help'] = 'Pode enviarse círculos mediante ficheiros de texto. O formato do ficheiro é o seguinte:
 
 * Cada liña do ficheiro contén un rexistro
-* Cada rexistro é unha serie de datos separados por comas (ou por outros delimitadores)
+* Cada rexistro é unha serie de datos separados polo separador seleccionado
 * O primeiro rexistro contén unha lista de nomes de campos que definen o formato do resto do ficheiro
 * O nome de campo obrigatorio é «name» (nome)
 * Os nomes de campo opcionais son «idnumber», «description», «descriptionformat», «visible», «context», «category», «category_id», «category_idnumber», «category_path»';

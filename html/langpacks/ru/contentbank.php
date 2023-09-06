@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ru', version '3.11'.
+ * Strings for component 'contentbank', language 'ru', version '4.1'.
  *
  * @package     contentbank
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Автор';
+$string['choosecontext'] = 'Выберите курс или категорию...';
 $string['close'] = 'Закрыть';
 $string['contentbank'] = 'Банк контента';
 $string['contentbankpreferences'] = 'Настройки банка контента';
@@ -54,10 +55,12 @@ $string['eventcontentreplaced'] = 'Контент заменен файлом';
 $string['eventcontentupdated'] = 'Контент обновлен';
 $string['eventcontentuploaded'] = 'Контент загружен';
 $string['eventcontentviewed'] = 'Контент просмотрен';
+$string['exit'] = 'Выход';
 $string['file'] = 'Загрузить контент';
 $string['file_help'] = 'В банке контента могут храниться файлы для использования в курсах. Могут быть загружены только файлы, которые используют типы контента, разрешенные на сайте.';
 $string['itemsfound'] = 'Найдено объектов: {$a}';
 $string['lastmodified'] = 'Последнее изменение';
+$string['more'] = 'Больше';
 $string['name'] = 'Контент';
 $string['nocontentavailable'] = 'Контент недоступен';
 $string['nocontenttypes'] = 'Нет доступных типов контента';

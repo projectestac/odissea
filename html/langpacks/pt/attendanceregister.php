@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendanceregister', language 'pt', version '3.11'.
+ * Strings for component 'attendanceregister', language 'pt', version '4.1'.
  *
  * @package     attendanceregister
  * @category    string
@@ -26,15 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['are_you_sure_to_delete_offline_session'] = 'Tem a certeza de que pretende apagar esta sessão offline?';
-$string['attendanceregister:addinstance'] = 'Adicionar uma nova instância de Registo de Presenças';
+$string['attendanceregister:addinstance'] = 'Adicionar uma nova instância de Registo de presenças';
 $string['attendanceregister:addotherofflinesess'] = 'Pode adicionar sessões offline no registo de outras pessoas';
 $string['attendanceregister:addownofflinesess'] = 'Pode adicionar sessões offline no seu próprio registo';
 $string['attendanceregister:deleteotherofflinesess'] = 'Pode apagar sessões offline no registo de outras pessoas';
 $string['attendanceregister:deleteownofflinesess'] = 'Pode apagar sessões offline no seu próprio registo';
-$string['attendanceregister:recalcsessions'] = 'Pode forçar o recalculo das sessões do Registo de Presenças';
-$string['attendanceregister:tracked'] = 'É monitorizado pelo Registo de Presenças';
-$string['attendanceregister:viewotherregisters'] = 'Pode visualizar o Registo de Presenças de outros';
-$string['attendanceregister:viewownregister'] = 'Pode visualizar o seu próprio Registo de Presenças';
+$string['attendanceregister:recalcsessions'] = 'Pode forçar o recalculo das sessões do Registo de presenças';
+$string['attendanceregister:tracked'] = 'É monitorizado pelo Registo de presenças';
+$string['attendanceregister:viewotherregisters'] = 'Pode visualizar o Registo de presenças de outros';
+$string['attendanceregister:viewownregister'] = 'Pode visualizar o seu próprio Registo de presenças';
 $string['back_to_normal'] = 'Versão normal';
 $string['back_to_tracked_user_list'] = 'Voltar à lista de utilizadores';
 $string['click_for_detail'] = 'clique para detalhes';
@@ -60,7 +60,7 @@ Novas sessões são calculadas automaticamente em segundo plano (com algum atras
 Esta operação pode ser útil <b>apenas</b>:
 <ul>
 <li>Depois de mudar o papel do utilizador, anteriormente tinha um papel diferente numa das disciplinas supervisionadas (por exemplo, mudar de professor para aluno, quando o aluno é monitorizado e o professor não é).</li>
-<li>Depois de modificar as configurações do Registo de Presenças que afetam o cálculo das sessões (por exemplo, <i>Modo de registo de presenças</i>,
+<li>Depois de modificar as configurações do Registo de presenças que afetam o cálculo das sessões (por exemplo, <i>Modo de registo de presenças</i>,
 <i>Tempo limite da sessão online</i>)</li>
 </ul>
 <b>Não é necessário recalcular quando se inscreve novos utilizadores</b>!<br /><br />
@@ -91,10 +91,10 @@ $string['mandatoryofflinespecifycourse'] = 'Obrigatória a seleção da discipli
 $string['mandatoryofflinespecifycourse_help'] = 'Será obrigatório especificar uma disciplina em sessões offline';
 $string['maynotaddselfcertforother'] = 'Não pode adicionar sessões offline para outros utilizadores.';
 $string['mod_attendance_recalculation'] = 'O módulo recalcula o registo para atualizar as sessões';
-$string['modulename'] = 'Registo de Presenças';
-$string['modulename_help'] = 'O Registo de Presenças calcula o tempo que os utilizadores estiveram a trabalhar online nas disciplinas.<br />
+$string['modulename'] = 'Registo de presenças';
+$string['modulename_help'] = 'O Registo de presenças calcula o tempo que os utilizadores estiveram a trabalhar online nas disciplinas.<br />
 Opcionalmente, permite o registo de atividades offline dos utilizadores.<br />
-Dependendo do modo de registo, o Registo de Presenças pode monitorizar atividades numa só disciplina, em todas as disciplinas de uma categoria ou em todas as disciplinas "Meta-ligadas" à disciplina na qual o Registo de Presenças foi adicionado.<br />
+Dependendo do modo de registo, o Registo de presenças pode monitorizar atividades numa só disciplina, em todas as disciplinas de uma categoria ou em todas as disciplinas "Meta-ligadas" à disciplina na qual o Registo de presenças foi adicionado.<br />
 As sessões de trabalho online são calculadas através das entradas do registo guardadas pelo Moodle.<br />
 <b>As novas sessões online são adicionadas pelo Cron, com algum atraso, após o utilizador terminar sessão.</b>';
 $string['modulenameplural'] = 'Registos de Presenças';
@@ -104,7 +104,7 @@ $string['never'] = '(nunca)';
 $string['no_refcourse'] = '(nenhum disciplina especificada)';
 $string['no_session'] = 'Sem sessão';
 $string['no_session_for_this_user'] = '- Sem sessão para este utilizador -';
-$string['no_tracked_user'] = '- Nenhum utilizador monitorizado neste Registo de Presenças -';
+$string['no_tracked_user'] = '- Nenhum utilizador monitorizado neste Registo de presenças -';
 $string['not_specified'] = '(não especificado)';
 $string['offline'] = 'Offline';
 $string['offline_refcourse_duration'] = 'Duração offline, Disciplina:';
@@ -128,7 +128,7 @@ $string['offlinecomments'] = 'Comentários do utilizador';
 $string['offlinecomments_help'] = 'Permite adicionar comentários às sessões offline';
 $string['offlinespecifycourse'] = 'Especificar a disciplina das sessões offline';
 $string['offlinespecifycourse_help'] = 'Permite que o utilizador selecione a disciplina que está relacionada com a sessão offline.<br />
-Apenas é significativo se o Registo de Presenças monitorizar mais do que uma disciplina (ou seja, se o Modo de registo é "Todas as disciplinas da mesma categoria" ou "Todas as disciplinas ligadas por meta-disciplina")';
+Apenas é significativo se o Registo de presenças monitorizar mais do que uma disciplina (ou seja, se o Modo de registo é "Todas as disciplinas da mesma categoria" ou "Todas as disciplinas ligadas por meta-disciplina")';
 $string['online'] = 'Online';
 $string['online_offline'] = 'Online/Offline';
 $string['online_session_updated'] = 'Sessões online atualizadas';
@@ -139,8 +139,8 @@ $string['onlyrealusercandeleteofflinesessions'] = 'Apenas um utilizador real pod
 $string['overlaps_current_session'] = 'Sobrepõe-se com a sessão online atual (desde o início da sessão atual)';
 $string['overlaps_old_sessions'] = 'Sobrepõe-se com outra sessão, online ou offline';
 $string['participants_attendance_report_viewed'] = 'Visualizado o relatório de presenças dos participantes';
-$string['pluginadministration'] = 'Administração do Registo de Presenças';
-$string['pluginname'] = 'Registo de Presenças';
+$string['pluginadministration'] = 'Administração do Registo de presenças';
+$string['pluginname'] = 'Registo de presenças';
 $string['prev_site_login'] = 'Penúltimo início de sessão no site';
 $string['recalc_already_pending'] = '(agendado para a próxima execução do Cron)';
 $string['recalc_complete'] = 'Recalculo das sessões concluído com sucesso';
@@ -149,8 +149,8 @@ $string['recalc_scheduled_on_next_cron'] = 'O recalculo das sessões está agend
 $string['ref_course'] = 'Disciplina Ref.';
 $string['registername'] = 'Nome do registo';
 $string['registertype'] = 'Modo de registo de presenças';
-$string['registertype_help'] = 'O modo de registo de presenças determina quais as disciplinas monitorizadas pelo Registo de Presenças (ou seja, onde será monitorizada a atividade do utilizador):<br/>
-* _Apenas esta disciplina_: apenas na disciplina onde está o módulo do Registo de Presenças.<br/>
+$string['registertype_help'] = 'O modo de registo de presenças determina quais as disciplinas monitorizadas pelo Registo de presenças (ou seja, onde será monitorizada a atividade do utilizador):<br/>
+* _Apenas esta disciplina_: apenas na disciplina onde está o módulo do Registo de presenças.<br/>
 * _Todas as disciplinas da mesma categoria_: será monitorizada a atividade em todas as disciplinas da categoria desta disciplina.<br/>
 * _Todas as disciplinas ligadas por meta-disciplina_: será monitorizada a atividade nesta disciplina assim como em todas as disciplinas ligadas por meta-disciplina.';
 $string['schedule_reclalc_all_session'] = 'Agendar "Recalcular sessões"';

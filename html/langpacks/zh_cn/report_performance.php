@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'zh_cn', version '3.11'.
+ * Strings for component 'report_performance', language 'zh_cn', version '4.1'.
  *
  * @package     report_performance
  * @category    string
@@ -32,6 +32,9 @@ $string['check_backup_details'] = '启用自动备份，在你指定的时间系
 $string['check_cachejs_comment_disable'] = '若启用，页面加载性能会改进。';
 $string['check_cachejs_comment_enable'] = '若关闭，页面加载性能可能变慢。';
 $string['check_cachejs_details'] = '对Javascript缓存并压缩，会大大提高网页加载速度。我们强烈建议在生产环境中使用此功能。';
+$string['check_dbschema_errors'] = '数据库架构未对齐。';
+$string['check_dbschema_name'] = '数据库架构检查';
+$string['check_dbschema_ok'] = '数据库架构正确';
 $string['check_debugmsg_comment_developer'] = '如果设置为开发者以外其他项，性能可能会有所改进。';
 $string['check_debugmsg_comment_nodeveloper'] = '如果设置为开发者，性能可能略受影响。';
 $string['check_debugmsg_details'] = '将提供程序进行中出现错误信息，除非你是程序开发人员，否则没有什么好处。

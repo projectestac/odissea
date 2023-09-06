@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmatch', language 'nl', version '3.11'.
+ * Strings for component 'qtype_ddmatch', language 'nl', version '4.1'.
  *
  * @package     qtype_ddmatch
  * @category    string
@@ -29,6 +29,7 @@ $string['draganswerhere'] = 'Sleep antwoord hier';
 $string['editingddmatch'] = 'Sleep-koppelvraag bewerken';
 $string['pluginname'] = 'Sleep-koppelvraag';
 $string['pluginname_help'] = 'Bij een sleep-koppelvraag kunnen deelnemers antwoorden slepen naar de bijhorende vragen.';
+$string['pluginname_link'] = 'question/type/ddmatch';
 $string['pluginnameadding'] = 'Sleep-koppelvraag toevoegen';
 $string['pluginnameediting'] = 'Sleep-koppelvraag bewerken';
 $string['pluginnamesummary'] = 'Een extensie van op de koppelvraag waarbij de deelnemer antwoorden kan slepen naar de bijhorende vragen.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'eu', version '3.11'.
+ * Strings for component 'tool_task', language 'eu', version '4.1'.
  *
  * @package     tool_task
  * @category    string
@@ -54,6 +54,7 @@ $string['enablerunnow_desc'] = 'Baimendu kudeatzaileek ataza bat edozein unetan 
 $string['faildelay'] = 'Huts egitearen ondoriozko atzerapena';
 $string['fromcomponent'] = 'Zereginaren jatorrizko osagaia: {$a}';
 $string['hostname'] = 'Hostalari-izena';
+$string['lastcronstart'] = 'Azken cron-exekuziotik igarotako denbora: {$a}';
 $string['lastruntime'] = 'Azken exekuzioa';
 $string['lastupdated'] = 'Azkenengoz eguneratuta {$a}.';
 $string['nextruntime'] = 'Hurrengo exekuzioa';

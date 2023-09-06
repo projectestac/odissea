@@ -70,11 +70,11 @@ global $CFG;
       'default' => false,
       'lock' => 'cachelock_file_default',
     ),
-    'redisservers' =>
+    'redisservers' => 
     array (
       'name' => 'redisservers',
       'plugin' => 'redis',
-      'configuration' =>
+      'configuration' => 
       array (
         'server' => $CFG->redis_servers,
         'prefix' => $CFG->redis_prefix,
@@ -98,13 +98,13 @@ global $CFG;
       'mode' => 1,
       'sort' => 0,
     ),
-    1 =>
+    1 => 
     array (
       'store' => 'default_session',
       'mode' => 2,
       'sort' => 0,
     ),
-    2 =>
+    2 => 
     array (
       'store' => 'default_request',
       'mode' => 4,
@@ -125,7 +125,6 @@ global $CFG;
       'area' => 'string',
       'selectedsharingoption' => 1,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/langmenu' => 
     array (
@@ -138,7 +137,6 @@ global $CFG;
       'area' => 'langmenu',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/databasemeta' => 
     array (
@@ -154,7 +152,6 @@ global $CFG;
       'area' => 'databasemeta',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/eventinvalidation' => 
     array (
@@ -166,7 +163,6 @@ global $CFG;
       'area' => 'eventinvalidation',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/questiondata' => 
     array (
@@ -179,7 +175,6 @@ global $CFG;
       'area' => 'questiondata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/htmlpurifier' => 
     array (
@@ -189,7 +184,6 @@ global $CFG;
       'area' => 'htmlpurifier',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/config' => 
     array (
@@ -200,7 +194,6 @@ global $CFG;
       'area' => 'config',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/groupdata' => 
     array (
@@ -213,7 +206,6 @@ global $CFG;
       'area' => 'groupdata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/calendar_subscriptions' => 
     array (
@@ -225,7 +217,6 @@ global $CFG;
       'area' => 'calendar_subscriptions',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/calendar_categories' => 
     array (
@@ -242,7 +233,6 @@ global $CFG;
       'area' => 'calendar_categories',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/capabilities' => 
     array (
@@ -250,13 +240,12 @@ global $CFG;
       'simplekeys' => true,
       'simpledata' => true,
       'staticacceleration' => true,
-      'staticaccelerationsize' => 1,
+      'staticaccelerationsize' => 2,
       'ttl' => 3600,
       'component' => 'core',
       'area' => 'capabilities',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/yuimodules' => 
     array (
@@ -265,7 +254,6 @@ global $CFG;
       'area' => 'yuimodules',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/observers' => 
     array (
@@ -278,7 +266,6 @@ global $CFG;
       'area' => 'observers',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/plugin_manager' => 
     array (
@@ -289,7 +276,6 @@ global $CFG;
       'area' => 'plugin_manager',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/coursecattree' => 
     array (
@@ -303,7 +289,6 @@ global $CFG;
       'area' => 'coursecattree',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/coursecat' => 
     array (
@@ -318,7 +303,6 @@ global $CFG;
       'area' => 'coursecat',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/coursecatrecords' => 
     array (
@@ -332,7 +316,17 @@ global $CFG;
       'area' => 'coursecatrecords',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
+    ),
+    'core/coursesectionspreferences' => 
+    array (
+      'mode' => 4,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'staticacceleration' => true,
+      'component' => 'core',
+      'area' => 'coursesectionspreferences',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'core/coursecontacts' => 
     array (
@@ -344,7 +338,16 @@ global $CFG;
       'area' => 'coursecontacts',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
+    ),
+    'core/courseeditorstate' => 
+    array (
+      'mode' => 2,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'component' => 'core',
+      'area' => 'courseeditorstate',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'core/repositories' => 
     array (
@@ -353,7 +356,6 @@ global $CFG;
       'area' => 'repositories',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/externalbadges' => 
     array (
@@ -364,18 +366,17 @@ global $CFG;
       'area' => 'externalbadges',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/coursemodinfo' => 
     array (
       'mode' => 1,
       'simplekeys' => true,
       'canuselocalstore' => true,
+      'requirelockingbeforewrite' => true,
       'component' => 'core',
       'area' => 'coursemodinfo',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/userselections' => 
     array (
@@ -386,7 +387,6 @@ global $CFG;
       'area' => 'userselections',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/completion' => 
     array (
@@ -400,7 +400,6 @@ global $CFG;
       'area' => 'completion',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/coursecompletion' => 
     array (
@@ -414,7 +413,6 @@ global $CFG;
       'area' => 'coursecompletion',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/navigation_expandcourse' => 
     array (
@@ -425,7 +423,6 @@ global $CFG;
       'area' => 'navigation_expandcourse',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/suspended_userids' => 
     array (
@@ -436,7 +433,6 @@ global $CFG;
       'area' => 'suspended_userids',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/roledefs' => 
     array (
@@ -449,7 +445,6 @@ global $CFG;
       'area' => 'roledefs',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/plugin_functions' => 
     array (
@@ -462,7 +457,6 @@ global $CFG;
       'area' => 'plugin_functions',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/tags' => 
     array (
@@ -473,7 +467,6 @@ global $CFG;
       'area' => 'tags',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/grade_categories' => 
     array (
@@ -487,7 +480,6 @@ global $CFG;
       'area' => 'grade_categories',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/temp_tables' => 
     array (
@@ -498,7 +490,6 @@ global $CFG;
       'area' => 'temp_tables',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/tagindexbuilder' => 
     array (
@@ -516,7 +507,6 @@ global $CFG;
       'area' => 'tagindexbuilder',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/contextwithinsights' => 
     array (
@@ -529,7 +519,6 @@ global $CFG;
       'area' => 'contextwithinsights',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/message_processors_enabled' => 
     array (
@@ -542,7 +531,6 @@ global $CFG;
       'area' => 'message_processors_enabled',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/message_time_last_message_between_users' => 
     array (
@@ -554,7 +542,6 @@ global $CFG;
       'area' => 'message_time_last_message_between_users',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/fontawesomeiconmapping' => 
     array (
@@ -567,7 +554,6 @@ global $CFG;
       'area' => 'fontawesomeiconmapping',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/postprocessedcss' => 
     array (
@@ -579,7 +565,6 @@ global $CFG;
       'area' => 'postprocessedcss',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/user_group_groupings' => 
     array (
@@ -591,7 +576,6 @@ global $CFG;
       'area' => 'user_group_groupings',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/presignup' => 
     array (
@@ -603,7 +587,6 @@ global $CFG;
       'area' => 'presignup',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/modelfirstanalyses' => 
     array (
@@ -614,7 +597,6 @@ global $CFG;
       'area' => 'modelfirstanalyses',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/portfolio_add_button_portfolio_instances' => 
     array (
@@ -625,7 +607,6 @@ global $CFG;
       'area' => 'portfolio_add_button_portfolio_instances',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/course_user_dates' => 
     array (
@@ -637,7 +618,6 @@ global $CFG;
       'area' => 'course_user_dates',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/calculablesinfo' => 
     array (
@@ -648,7 +628,6 @@ global $CFG;
       'area' => 'calculablesinfo',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/user_course_content_items' => 
     array (
@@ -658,7 +637,6 @@ global $CFG;
       'area' => 'user_course_content_items',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/user_favourite_course_content_items' => 
     array (
@@ -668,7 +646,6 @@ global $CFG;
       'area' => 'user_favourite_course_content_items',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/recommendation_favourite_course_content_items' => 
     array (
@@ -678,7 +655,6 @@ global $CFG;
       'area' => 'recommendation_favourite_course_content_items',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/contentbank_enabled_extensions' => 
     array (
@@ -690,7 +666,6 @@ global $CFG;
       'area' => 'contentbank_enabled_extensions',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/contentbank_context_extensions' => 
     array (
@@ -702,7 +677,6 @@ global $CFG;
       'area' => 'contentbank_context_extensions',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/h5p_content_type_translations' => 
     array (
@@ -712,7 +686,6 @@ global $CFG;
       'area' => 'h5p_content_type_translations',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/h5p_library_files' => 
     array (
@@ -723,7 +696,6 @@ global $CFG;
       'area' => 'h5p_library_files',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/grade_letters' => 
     array (
@@ -735,7 +707,6 @@ global $CFG;
       'area' => 'grade_letters',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/license' => 
     array (
@@ -746,7 +717,6 @@ global $CFG;
       'area' => 'license',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'core/gradesetting' => 
     array (
@@ -758,7 +728,6 @@ global $CFG;
       'area' => 'gradesetting',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'core/course_image' => 
     array (
@@ -771,7 +740,62 @@ global $CFG;
       'area' => 'course_image',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
+    ),
+    'core/contentbank_allowed_categories' => 
+    array (
+      'mode' => 2,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'invalidationevents' => 
+      array (
+        0 => 'changesincoursecat',
+        1 => 'changesincategoryenrolment',
+      ),
+      'component' => 'core',
+      'area' => 'contentbank_allowed_categories',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+    ),
+    'core/contentbank_allowed_courses' => 
+    array (
+      'mode' => 2,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'invalidationevents' => 
+      array (
+        0 => 'changesincoursecat',
+        1 => 'changesincategoryenrolment',
+        2 => 'changesincourse',
+      ),
+      'component' => 'core',
+      'area' => 'contentbank_allowed_courses',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+    ),
+    'core/reportbuilder_allowed_reports' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'ttl' => 1800,
+      'component' => 'core',
+      'area' => 'reportbuilder_allowed_reports',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+    ),
+    'core/file_imageinfo' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'canuselocalstore' => true,
+      'staticaccelerationsize' => 100,
+      'component' => 'core',
+      'area' => 'file_imageinfo',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'availability_completion/previous_cache' => 
     array (
@@ -783,7 +807,6 @@ global $CFG;
       'area' => 'previous_cache',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'availability_grade/scores' => 
     array (
@@ -795,7 +818,6 @@ global $CFG;
       'area' => 'scores',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'availability_grade/items' => 
     array (
@@ -807,7 +829,6 @@ global $CFG;
       'area' => 'items',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'qtype_wq/images' => 
     array (
@@ -816,7 +837,6 @@ global $CFG;
       'area' => 'images',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'mod_assign/overrides' => 
     array (
@@ -827,7 +847,49 @@ global $CFG;
       'area' => 'overrides',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
+    ),
+    'mod_bigbluebuttonbn/serverinfo' => 
+    array (
+      'mode' => 1,
+      'invalidationevents' => 
+      array (
+        0 => 'mod_bigbluebuttonbn/serversettingschanged',
+      ),
+      'component' => 'mod_bigbluebuttonbn',
+      'area' => 'serverinfo',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+    ),
+    'mod_bigbluebuttonbn/validatedurls' => 
+    array (
+      'mode' => 1,
+      'simpledata' => true,
+      'component' => 'mod_bigbluebuttonbn',
+      'area' => 'validatedurls',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+    ),
+    'mod_bigbluebuttonbn/recordings' => 
+    array (
+      'mode' => 1,
+      'invalidationevents' => 
+      array (
+        0 => 'mod_bigbluebuttonbn/recordingchanged',
+        1 => 'mod_bigbluebuttonbn/serversettingschanged',
+      ),
+      'ttl' => 300,
+      'component' => 'mod_bigbluebuttonbn',
+      'area' => 'recordings',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+    ),
+    'mod_bigbluebuttonbn/currentfetch' => 
+    array (
+      'mode' => 4,
+      'component' => 'mod_bigbluebuttonbn',
+      'area' => 'currentfetch',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'mod_forum/forum_is_tracked' => 
     array (
@@ -839,7 +901,6 @@ global $CFG;
       'area' => 'forum_is_tracked',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'mod_glossary/concepts' => 
     array (
@@ -852,7 +913,6 @@ global $CFG;
       'area' => 'concepts',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'mod_lesson/overrides' => 
     array (
@@ -863,7 +923,6 @@ global $CFG;
       'area' => 'overrides',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'mod_lti/keyset' => 
     array (
@@ -872,7 +931,6 @@ global $CFG;
       'area' => 'keyset',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'mod_quiz/overrides' => 
     array (
@@ -883,7 +941,6 @@ global $CFG;
       'area' => 'overrides',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'filter_wiris/images' => 
     array (
@@ -892,7 +949,6 @@ global $CFG;
       'area' => 'images',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'filter_wiris/formulas' => 
     array (
@@ -901,7 +957,6 @@ global $CFG;
       'area' => 'formulas',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'repository_googledocs/folder' => 
     array (
@@ -915,7 +970,6 @@ global $CFG;
       'area' => 'folder',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'repository_onedrive/folder' => 
     array (
@@ -929,16 +983,6 @@ global $CFG;
       'area' => 'folder',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
-    ),
-    'repository_skydrive/foldername' => 
-    array (
-      'mode' => 2,
-      'component' => 'repository_skydrive',
-      'area' => 'foldername',
-      'selectedsharingoption' => 2,
-      'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'tool_dataprivacy/purpose' => 
     array (
@@ -951,7 +995,6 @@ global $CFG;
       'area' => 'purpose',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'tool_dataprivacy/purpose_overrides' => 
     array (
@@ -964,7 +1007,6 @@ global $CFG;
       'area' => 'purpose_overrides',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'tool_dataprivacy/contextlevel' => 
     array (
@@ -977,7 +1019,6 @@ global $CFG;
       'area' => 'contextlevel',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'tool_mobile/plugininfo' => 
     array (
@@ -989,7 +1030,6 @@ global $CFG;
       'area' => 'plugininfo',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'tool_mobile/subscriptiondata' => 
     array (
@@ -1000,7 +1040,6 @@ global $CFG;
       'area' => 'subscriptiondata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'tool_monitor/eventsubscriptions' => 
     array (
@@ -1013,7 +1052,6 @@ global $CFG;
       'area' => 'eventsubscriptions',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'tool_policy/policy_optional' => 
     array (
@@ -1022,7 +1060,6 @@ global $CFG;
       'area' => 'policy_optional',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'tool_uploadcourse/helper' => 
     array (
@@ -1031,7 +1068,6 @@ global $CFG;
       'area' => 'helper',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 2,
     ),
     'tool_usertours/tourdata' => 
     array (
@@ -1044,7 +1080,6 @@ global $CFG;
       'area' => 'tourdata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'tool_usertours/stepdata' => 
     array (
@@ -1057,7 +1092,6 @@ global $CFG;
       'area' => 'stepdata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'quizaccess_seb/quizsettings' => 
     array (
@@ -1069,7 +1103,6 @@ global $CFG;
       'area' => 'quizsettings',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'quizaccess_seb/config' => 
     array (
@@ -1081,7 +1114,6 @@ global $CFG;
       'area' => 'config',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
     'quizaccess_seb/configkey' => 
     array (
@@ -1093,7 +1125,6 @@ global $CFG;
       'area' => 'configkey',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
-      'sharingoptions' => 15,
     ),
   ),
   'definitionmappings' => 

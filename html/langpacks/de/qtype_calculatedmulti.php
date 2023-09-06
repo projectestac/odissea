@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'de', version '3.11'.
+ * Strings for component 'qtype_calculatedmulti', language 'de', version '4.1'.
  *
  * @package     qtype_calculatedmulti
  * @category    string
@@ -29,6 +29,7 @@ $string['answeroptions'] = 'Auswahloptionen';
 $string['answeroptions_help'] = 'Die vorgeschlagene Formelauswahl ist ...<strong>{={x}+..}</strong>...';
 $string['pluginname'] = 'Berechnete Multiple-Choice';
 $string['pluginname_help'] = 'Berechnete Multiple-Choice-Fragen entsprechen normalen MultipleChoice-Fragen, können aber zusätzlich Variablen in geschweiften Klammern  (Wildcards) enthalten. In diese Variablen werden bei der Testdurchführung gegen zufällige Zahlen aus der Wertemenge eingesetzt. <p>Beispiel: Auf die Frage "Welche Fläche hat ein Rechteck mit der Länge {l} und der Breite {b}?" wäre  die Antwort "{={l}*{b}}". Der Stern (*) steht für die Multiplikation.';
+$string['pluginname_link'] = 'question/type/calculatedmulti';
 $string['pluginnameadding'] = 'Berechnete Multiple-Choice-Frage hinzufügen';
 $string['pluginnameediting'] = 'Berechnete Multiple-Choice-Frage bearbeiten';
 $string['pluginnamesummary'] = 'Berechnete Multiple-Choice-Fragen können Variablen enthalten, in die bei der Testdurchführung zufällige Zahlen aus der Wertemenge eingesetzt werden.';

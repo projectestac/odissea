@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attcontrol', language 'ar', version '3.11'.
+ * Strings for component 'attcontrol', language 'ar', version '4.1'.
  *
  * @package     attcontrol
  * @category    string
@@ -32,7 +32,7 @@ $string['allpast'] = 'كل الماضي';
 $string['calmonths'] = 'يناير,فبراير,مارس,ابريل,مايو,يونيو,يوليو,اغسطس,سبتمبر,اكتوبر,نوفمبر,ديسمبر';
 $string['caltoday'] = 'هذا اليوم';
 $string['calweekdays'] = 'أح،إث،ثل،أر،خم،جم،سب';
-$string['course'] = 'المقرر الدراسي';
+$string['course'] = 'المساق';
 $string['days'] = 'اليوم';
 $string['description'] = 'الوصف';
 $string['endtime'] = 'وقت إنتهاء الجلسة';
@@ -55,5 +55,5 @@ $string['statusdesc8'] = 'وصف الحالة 8';
 $string['student'] = 'الطالب';
 $string['studentid'] = 'مُعرَّف الطالب';
 $string['tablerenamefailed'] = 'فشلت إعادة تسمية جدول attforblock القديم إلى تسمية attendance';
-$string['thiscourse'] = 'هذا المقرر الدراسي';
+$string['thiscourse'] = 'هذا المساق';
 $string['time'] = 'الوقت';

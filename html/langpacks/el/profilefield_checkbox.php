@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_checkbox', language 'el', version '3.11'.
+ * Strings for component 'profilefield_checkbox', language 'el', version '4.1'.
  *
  * @package     profilefield_checkbox
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Πλαίσιο ελέγχου';
-$string['privacy:metadata:profilefield_checkbox:data'] = 'Τα δεδομένα χρήστη του πεδίου πλαισίου ελέγχου του προφίλ χρήστη';
-$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Ο μορφότυπος των δεδομένων χρήστη του πεδίου πλαισίου ελέγχου του προφίλ χρήστη.';
+$string['pluginname'] = 'Πλαίσιο επιλογής';
+$string['privacy:metadata:profilefield_checkbox:data'] = 'Τα δεδομένα χρήστη του πεδίου πλαισίου επιλογής του προφίλ χρήστη';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Ο μορφότυπος των δεδομένων χρήστη του πεδίου πλαισίου επιλογής του προφίλ χρήστη.';
 $string['privacy:metadata:profilefield_checkbox:fieldid'] = 'Το αναγνωριστικό του πεδίου προφίλ';
 $string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Επιπρόσθετα δεδομένα προφίλ';
-$string['privacy:metadata:profilefield_checkbox:userid'] = 'Το αναγνωριστικό του χρήστη του οποίου τα δεδομένα αποθηκεύονται από το πεδίο προφίλ χρήστη Πλαίσιο ελέγχου.';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'Το αναγνωριστικό του χρήστη του οποίου τα δεδομένα αποθηκεύονται από το πεδίο προφίλ χρήστη Πλαίσιο επιλογής.';

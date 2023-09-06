@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'es', version '3.11'.
+ * Strings for component 'qtype_gapselect', language 'es', version '4.1'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmorechoiceblanks'] = 'Espacios en blanco para {no} opciones más';
 $string['answer'] = 'Respuesta';
+$string['blanknumber'] = 'Vacío {$a}';
 $string['choices'] = 'Opciones';
 $string['choicex'] = 'Opción [[{no}]]';
 $string['combinedcontrolnamegapselect'] = 'menú desplegable';
@@ -40,6 +41,7 @@ $string['group'] = 'Grupo';
 $string['pleaseputananswerineachbox'] = 'Elige una respuesta en cada caja.';
 $string['pluginname'] = 'Elige la palabra perdida';
 $string['pluginname_help'] = 'Las preguntas para seleccionar palabras faltantes requieren que el encuestado seleccione las respuestas correctas de los menús desplegables. [[1]], [[2]], [[3]], ... se utilizan como marcadores de posición en el texto de la pregunta, con las respuestas correctas especificadas como respuestas de elección 1, 2, 3, ... respectivamente. Se pueden añadir respuestas de opción adicionales para hacer la pregunta más difícil. Las respuestas de elección se pueden agrupar para restringir las respuestas disponibles en cada menú desplegable.';
+$string['pluginname_link'] = 'question/type/gapselect';
 $string['pluginnameadding'] = 'Añadir una pregunta de selección de palabras perdidas';
 $string['pluginnameediting'] = 'Edición de una pregunta de selección de palabras perdidas';
 $string['pluginnamesummary'] = 'Las palabras que faltan en el texto de la pregunta se completan mediante menús desplegables.';
@@ -47,6 +49,8 @@ $string['privacy:metadata'] = 'El complemento de tipo de pregunta para seleccion
 $string['privacy:preference:defaultmark'] = 'La marca predeterminada establecida para una pregunta determinada.';
 $string['privacy:preference:penalty'] = 'La penalización por cada intento incorrecto cuando las preguntas se ejecutan utilizando el comportamiento \'Interactivo con múltiples intentos\' o \'Modo adaptativo\'.';
 $string['privacy:preference:shuffleanswers'] = 'Si las respuestas deben barajarse automáticamente.';
+$string['regradeissuenumchoiceschanged'] = 'El número de opciones en el grupo {$a} cambió.';
+$string['regradeissuenumgroupsschanged'] = 'El número de grupos de opciones ha cambiado.';
 $string['shuffle'] = 'Barajar';
 $string['tagsnotallowed'] = '{$a->tag} no está permitido. (Solamente {$a->allowed} están permetidos.)';
 $string['tagsnotallowedatall'] = '{$a->tag} no está permitido. (No se permite usar código HTML aquí.)';

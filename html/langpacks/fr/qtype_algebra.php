@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_algebra', language 'fr', version '3.11'.
+ * Strings for component 'qtype_algebra', language 'fr', version '4.1'.
  *
  * @package     qtype_algebra
  * @category    string
@@ -73,7 +73,7 @@ $string['dollar'] = '$...$';
 $string['dollars'] = '$$…$$';
 $string['duplicatevar'] = 'Nom de variable dupliqué : « {$a} » est déjà défini.';
 $string['dynamic'] = 'Utilisation d\'un requête dynamique AJAX';
-$string['editingalgebra'] = 'Edition d\'une question algèbre';
+$string['editingalgebra'] = 'Édition d\'une question algèbre';
 $string['evalchecks'] = 'Evaluations de contrôle';
 $string['exceptionmessage'] = '{$a}';
 $string['filloutoneanswer'] = 'Vous devez fournir au moins une réponse possible. Les réponses laissées en blanc ne seront pas utilisés. \'*\' Peut être utilisé comme un joker pour tous les caractères. La première réponse correspondante sera utilisée pour déterminer le score et commentaires. Seules les variables définies ci-dessus sont autorisés';
@@ -105,8 +105,9 @@ $string['options'] = 'Options';
 $string['parseerror'] = 'Erreur d\'analyse de la fonction « {$a} »';
 $string['pluginname'] = 'Algèbre';
 $string['pluginname_help'] = 'L\'étudiant entre une formule contenant une ou plusieurs variables comme réponse. L\'exactitude de cette réponse est évaluée par une des 3 méthodes disponibles.';
+$string['pluginname_link'] = 'question/type/algebra';
 $string['pluginnameadding'] = 'Ajout d\'une question algèbre';
-$string['pluginnameediting'] = 'Edition d\'une question algèbre';
+$string['pluginnameediting'] = 'Édition d\'une question algèbre';
 $string['pluginnamesummary'] = 'L\'étudiant entre une formule contenant une ou plusieurs variables comme réponse. L\'exactitude de cette réponse est évaluée par une des 3 méthodes disponibles.';
 $string['port'] = 'Port du serveur SAGE';
 $string['privacy:metadata'] = 'Le type de question Algebra n\'enregistre aucune donnée personnelle.';

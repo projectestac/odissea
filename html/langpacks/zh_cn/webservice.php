@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'zh_cn', version '3.11'.
+ * Strings for component 'webservice', language 'zh_cn', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = '可用的网络服务协议';
 $string['addaservice'] = '添加服务';
 $string['addcapabilitytousers'] = '检查用户权限';
 $string['addcapabilitytousersdescription'] = '用户应该有两个权限—— webservice:createtoken，还有与使用的协议相匹配的权限，例如 webservice/rest:use、webservice/soap:use。要分配这些权限，可以创建一个拥有这些权限的网络服务角色，并将它做为系统角色分配给网络服务用户。';
+$string['addexternalservice'] = '添加外部服务';
 $string['addfunction'] = '添加函数';
 $string['addfunctionhelp'] = '选择要添加到此服务的函数。';
 $string['addfunctions'] = '添加函数';
@@ -61,14 +62,16 @@ $string['default'] = '默认为“{$a}”';
 $string['deleteaservice'] = '删除服务';
 $string['deleteservice'] = '删除服务： {$a->name}（id：{$a->id}）';
 $string['deleteserviceconfirm'] = '删除一个服务也会删除与之有关的令牌。您真的要删除对外服务“{$a}”吗？';
+$string['deletetoken'] = '删除令牌';
 $string['deletetokenconfirm'] = '您确认要删除<strong>{$a->user}</strong>使用<strong>{$a->service}</strong>服务的网络服务令牌吗？';
+$string['deprecated'] = '已弃用';
 $string['disabledwarning'] = '所有网络服务协议都被禁用。在高级特性中有“启用网络服务”选项。';
 $string['doc'] = '文档';
 $string['docaccessrefused'] = '你未被批准查看此令牌的参考文档';
-$string['documentation'] = '网络服务参考文档';
 $string['downloadfiles'] = '可下载文件';
 $string['downloadfiles_help'] = '如果启用，任何用户都可以使用自己的安全密钥来下载文件。当然，他们只能从该网站允许他们下载的文件中下载。';
 $string['editaservice'] = '修改服务';
+$string['editexternalservice'] = '编辑外部服务';
 $string['editservice'] = '编辑服务：{$a->name}（id：{$a->id}）';
 $string['enabled'] = '启用';
 $string['enabledocumentation'] = '启用开发者参考文档';

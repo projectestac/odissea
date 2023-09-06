@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recentlyaccesseditems', language 'zh_cn', version '3.11'.
+ * Strings for component 'block_recentlyaccesseditems', language 'zh_cn', version '4.1'.
  *
  * @package     block_recentlyaccesseditems
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['moreitems'] = '显示更多项目';
 $string['noitems'] = '没有最近的项目';
 $string['pluginname'] = '最近访问的项目';
 $string['privacy:metadata:block_recentlyaccesseditemstablesummary'] = '最近访问过的课程内容版块保存用户最近访问过的资源和活动信息';

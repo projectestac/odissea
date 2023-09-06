@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'fr', version '3.11'.
+ * Strings for component 'survey', language 'fr', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -214,10 +214,12 @@ $string['indicator:cognitivedepth'] = 'Consultation : aspect cognitif';
 $string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Consultation.';
 $string['indicator:cognitivedepthdef'] = 'Consultation : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Consultation » (niveaux : pas de vue, vue, envoi).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Consultation : aspect social';
 $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Consultation.';
 $string['indicator:socialbreadthdef'] = 'Consultation : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Consultation » (niveaux : pas de participation, participant seul).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = 'Texte d\'introduction';
 $string['invalidsurveyid'] = 'Identifiant de consultation incorrect';
 $string['invalidtmptid'] = 'Identifiant de modèle incorrect';
@@ -226,6 +228,7 @@ $string['modulename'] = 'Consultation';
 $string['modulename_help'] = 'Le module consultation fournit un certain nombre d\'instruments qui se sont avérés utiles et stimulants pour les environnements d\'apprentissage en ligne. Les enseignants peuvent les employer pour recueillir des données qui les informeront sur leurs étudiants et ainsi réfléchir sur leur propre enseignement.
 
 Les questions proposées dans ces outils sont prédéfinies et ne peuvent pas être modifiées. Les enseignants désireux de créer leurs propres questions utiliseront plutôt le module d\'activité feedback.';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = 'Consultations';
 $string['name'] = 'Nom';
 $string['newsurveyresponses'] = 'Nouvelles réponses à une consultation';
@@ -279,6 +282,7 @@ $string['surveytype_help'] = 'Il y a trois types de consultations disponibles :
 * ATTLS - Consultation sur les Attitudes envers la réflexion et l\'apprentissage (Attitudes to Thinking and Learning Survey)
 * Incidents critiques
 * COLLES - Consultation sur les environnements d\'apprentissage constructivistes en ligne (Constructivist On-Line Learning Environment Survey)';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Merci d\'avoir répondu à cette consultation, {$a}';
 $string['time'] = 'Temps';
 $string['viewsurveyresponses'] = 'Afficher les {$a} réponses à la consultation';

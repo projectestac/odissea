@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumreport_summary', language 'gl', version '3.11'.
+ * Strings for component 'forumreport_summary', language 'gl', version '4.1'.
  *
  * @package     forumreport_summary
  * @category    string
@@ -45,14 +45,14 @@ $string['filter:groupsname'] = 'Grupos';
 $string['forumselectcourseoption'] = 'Todos os foros en curso';
 $string['forumselectlabel'] = 'Foro seleccionado';
 $string['latestpost'] = 'Publicación máis recente';
-$string['nodetitle'] = 'Informe resumido';
+$string['nodetitle'] = 'Informe resumido do foro';
 $string['pluginname'] = 'Informe resumido do foro';
 $string['postcount'] = 'Número de debates publicados';
 $string['privacy:metadata'] = 'O engadido de informe resumido non almacena ningún dato persoal.';
 $string['replycount'] = 'Número de respostas publicadas';
 $string['summary:view'] = 'Acceder ao informe resumido dentro dun foro ou foros determinados';
 $string['summary:viewall'] = 'Acceder aos datos do informe resumido para cada usuario dentro dun foro ou foros determinados';
-$string['summarytitle'] = 'Informe resumido: {$a}';
+$string['summarytitle'] = 'Informe resumo do foro: {$a}';
 $string['viewcount'] = 'Número de vistas';
 $string['viewsdisclaimer'] = 'A columna de número de visitas non se filtra por grupo';
 $string['wordcount'] = 'Reconto de palabras';

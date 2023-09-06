@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'eu', version '3.11'.
+ * Strings for component 'scorm', language 'eu', version '4.1'.
  *
  * @package     scorm
  * @category    string
@@ -33,7 +33,7 @@ $string['adminsettings'] = 'Kudeaketaren ezarpenak';
 $string['advanced'] = 'Parametroak';
 $string['aicchacpkeepsessiondata'] = 'AICC HACP saioaren datuak';
 $string['aicchacpkeepsessiondata_desc'] = 'Kanpoko AICC HACP saioaren datuak gordeko dira denbora tarte honetan (egunetan). Balio handia ezarriz gero, taula datu zaharrez beteko da, baina mesedegarri izan daiteke arazketa eginez gero';
-$string['aicchacptimeout'] = 'AICC HACPren gehieneko denbora';
+$string['aicchacptimeout'] = 'AICC HACPren denbora-muga';
 $string['aicchacptimeout_desc'] = 'Kanpoko AICC HACP saioa irekita mantendu daitekeen denbora (minututan)';
 $string['aiccuserid'] = 'AICC pass erabiltzailearen ID numerikoa';
 $string['aiccuserid_desc'] = 'AICC erabiltzaile-izenentzako estandarra oso mugatzailea da Moodlerekin konparatuta, eta karaktere alfanumerikoak, gidoia eta beheko gidoia soilik onartzen ditu. Puntuak, espazioak eta @ sinboloa ez ditu onartzen. Gaituz gero, erabiltzaileen ID zenbakiak pasatzen dira AICC paketeari erabiltzaile-izenen ordez.';
@@ -45,7 +45,7 @@ $string['allowtypeexternal'] = 'Gaitu kanpoko pakete-mota';
 $string['allowtypeexternalaicc'] = 'Gaitu AICC-ren URL zuzena';
 $string['allowtypeexternalaicc_desc'] = 'Gaituz gero, onartuko dira zuzeneko URLak AICC pakete bakunetara';
 $string['allowtypelocalsync'] = 'Gaitu jaitsitako pakete mota';
-$string['apidebugmask'] = 'API arazketa-atzipen maskara - adierazpen erregular sinplea erabili <erabiltzailea>:<jardueraizena> formatuarekin.
+$string['apidebugmask'] = 'API arazketa-atzipen maskara - adierazpen erregular sinplea erabili <erabiltzaile-izena>:<jardueraizena> formatuarekin.
 Esaterako, admin:.* soilik admin erabiltzailearentzako arazketa  egingo du';
 $string['areacontent'] = 'Eduki-fitxategiak';
 $string['areapackage'] = 'Paketearen fitxategia';
@@ -88,7 +88,7 @@ $string['completed'] = 'Osatua';
 $string['completiondetail:allscos'] = 'Jardueraren atal guztiak egitea';
 $string['completiondetail:completionscore'] = '{$a} edo gehiagoko puntuazio bat jasotzea';
 $string['completiondetail:completionstatuscompleted'] = 'Jarduera osatzea';
-$string['completiondetail:completionstatuscompletedandpassed'] = 'Jarduera osatu eta gainditzea';
+$string['completiondetail:completionstatuscompletedorpassed'] = 'Jarduera osatu eta gainditzea';
 $string['completiondetail:completionstatuspassed'] = 'Jarduera gainditzea';
 $string['completionscorerequired'] = 'Gutxieneko puntuazioa beharrezkoa da';
 $string['completionscorerequired_help'] = 'Ezarpen hau gaituz gero, ikasleari SCORM jarduera osatutzat emateko, puntuazio minimoa izan beharko du eta jarduera-osaketarako beste eskakizunak bete beharko ditu.';
@@ -130,7 +130,6 @@ $string['displaydesc'] = 'SCORM paketea leiho berri batean erakutsi ala ez.';
 $string['displaysettings'] = 'Erakusteko ezarpenak';
 $string['dnduploadscorm'] = 'Gehitu SCORM pakete bat';
 $string['domxml'] = 'DOMXML kanpoko liburutegia';
-$string['duedate'] = 'Entregatze-data';
 $string['element'] = 'Elementua';
 $string['enter'] = 'Sartu';
 $string['entercourse'] = 'Sartu ikastarora';
@@ -211,10 +210,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa SCORM jardueretan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak SCORM motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa SCORM jardueretan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek SCORM jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da, Feedbacka ikusi da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala SCORM jardueretan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak SCORM motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala SCORM jardueretan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek SCORM jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Informazioa';
 $string['interactions'] = 'Interakzioak';
 $string['invalidactivity'] = 'SCORM jarduera ez da egokia';
@@ -254,6 +255,7 @@ SCORM jardueraren erabilerak hauek izan daitezke:
 
 * Eduki multimedia eta animazioak erakusteko
 * Ebaluazio tresna gisa';
+$string['modulename_link'] = 'mod/scorm/view';
 $string['modulenameplural'] = 'SCORM paketeak';
 $string['myaiccsessions'] = 'Nire AICC saioak';
 $string['myattempts'] = 'Nire saiakerak';

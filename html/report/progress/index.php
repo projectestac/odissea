@@ -33,7 +33,7 @@ require_once($CFG->libdir . '/completionlib.php');
 $id = required_param('course',PARAM_INT);
 $course = $DB->get_record('course',array('id'=>$id));
 if (!$course) {
-    print_error('invalidcourseid');
+    throw new \moodle_exception('invalidcourseid');
 }
 $context = context_course::instance($course->id);
 
@@ -55,8 +55,8 @@ $activityinclude = optional_param('activityinclude', 'all', PARAM_TEXT);
 $activityorder = optional_param('activityorder', 'orderincourse', PARAM_TEXT);
 
 // Whether to show extra user identity information
-// TODO Does not support custom user profile fields (MDL-70456).
-$extrafields = \core_user\fields::get_identity_fields($context, false);
+$userfields = \core_user\fields::for_identity($context);
+$extrafields = $userfields->get_required_fields([\core_user\fields::PURPOSE_IDENTITY]);
 $leftcols = 1 + count($extrafields);
 
 function csv_quote($value) {
@@ -155,8 +155,6 @@ $grandtotal = $completion->get_num_tracked_users('', array(), $group);
 
 // Get user data
 $progress = array();
-
-report_helper::save_selected_report($id, $url);
 
 if ($total) {
     $progress = $completion->get_progress_all(
@@ -318,7 +316,7 @@ foreach($activities as $activity) {
             '/view.php?id='.$activity->id.'" title="' . s($displayname) . '">'.
             '<div class="rotated-text-container"><span class="rotated-text">'.$shortenedname.'</span></div>'.
             '<div class="modicon">'.
-            $OUTPUT->image_icon('icon', get_string('modulename', $activity->modname), $activity->modname) .
+            $OUTPUT->image_icon('monologo', get_string('modulename', $activity->modname), $activity->modname) .
             '</div>'.
             '</a>';
         if ($activity->completionexpected) {

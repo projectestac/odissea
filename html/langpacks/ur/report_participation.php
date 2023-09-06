@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_participation', language 'ur', version '3.11'.
+ * Strings for component 'report_participation', language 'ur', version '4.1'.
  *
  * @package     report_participation
  * @category    string
@@ -25,4 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventreportviewed'] = 'شرکت کی رپورٹ دیکھی گئی';
+$string['nologreaderenabled'] = 'کوئی لاگ ریڈر فعال نہیں ہے';
+$string['page-report-participation-index'] = 'کورس میں شرکت کی رپورٹ';
+$string['page-report-participation-x'] = 'کسی بھی شرکت کی رپورٹ';
 $string['participation:view'] = 'کورس میں شمولیت کی رپورٹ دیکھیں';
+$string['pluginname'] = 'کورس میں شرکت';
+$string['privacy:metadata'] = 'کورس میں شرکت کا پلگ ان کوئی ذاتی ڈیٹا محفوظ نہیں کرتا ہے۔';

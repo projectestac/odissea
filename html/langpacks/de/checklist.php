@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'de', version '3.11'.
+ * Strings for component 'checklist', language 'de', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -129,6 +129,7 @@ $string['lockteachermarks_help'] = 'Wenn diese Einstellung aktiv ist, können Tr
 $string['lockteachermarkswarning'] = 'Hinweis: Sobald Sie diese Kennzeichnungen gespeichert haben, werden Sie \'Ja\' Kennzeichnungen nicht mehr ändern können';
 $string['modulename'] = 'Fortschrittsliste';
 $string['modulename_help'] = 'Die Fortschrittslistenaktivität erlaubt Trainer/innen, eine Fortschrittsliste (Todo- oder Aufgabenliste) für die Teilnehmer/innen zu erstellen, welche diese abarbeiten sollen.';
+$string['modulename_link'] = 'mod/checklist/view';
 $string['modulenameplural'] = 'Fortschrittslisten';
 $string['moveitemdown'] = 'Dieses Element nach unten verschieben';
 $string['moveitemup'] = 'Dieses Element nach oben verschieben';

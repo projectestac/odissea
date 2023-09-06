@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpotattempt_qedoc', language 'es', version '3.11'.
+ * Strings for component 'hotpotattempt_qedoc', language 'es', version '4.1'.
  *
  * @package     hotpotattempt_qedoc
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Formatos de salida Qedoc';
+$string['privacy:metadata'] = 'El módulo de Formatos de salida Qedoc no almacena ningún dato personal.';

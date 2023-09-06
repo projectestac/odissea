@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_missingtype', language 'en', version '3.11'.
+ * Strings for component 'qtype_missingtype', language 'en', version '4.1'.
  *
  * @package     qtype_missingtype
  * @category    string
@@ -31,7 +31,7 @@ $string['deletedquestion'] = 'Missing question';
 $string['deletedquestiontext'] = 'This question is missing. Unable to display anything.';
 $string['missing'] = 'Question of a type that is not installed on this system';
 $string['missingqtypewarning'] = 'This question is of a type that is not currently installed on this system. You will not be able to do anything with this question.';
-$string['pluginname'] = 'Missing type';
+$string['pluginname'] = 'Missing question type placeholder';
 $string['pluginnameadding'] = 'Adding a question of a type that is not installed on this system';
 $string['pluginnameediting'] = 'Editing a question of a type that is not installed on this system';
 $string['privacy:metadata'] = 'The Select missing words question type plugin does not store any personal data.';

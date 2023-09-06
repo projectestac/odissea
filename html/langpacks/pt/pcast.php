@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pcast', language 'pt', version '3.11'.
+ * Strings for component 'pcast', language 'pt', version '4.1'.
  *
  * @package     pcast
  * @category    string
@@ -132,7 +132,7 @@ Os episódios podem ser pesquisados por ordem alfabética, por categoria, data o
 
 Um professor pode permitir comentários nos episódios. Os episódios também podem ser avaliados por professores ou alunos (avaliação por pares). As avaliações são agregadas para formar uma nota final que é registada na pauta.
 
-Os alunos podem subscrever o podcast usando o seu navegador favorito ou uma aplicação de áudio, como por exemplo: iTunes, Winamp ou Windows Media Player, e ouvi-los num leitor MP3, como por exemplo: um iPod.';
+Os alunos podem subscrever o podcast usando o seu navegador web favorito ou uma aplicação de áudio, como por exemplo: iTunes, Winamp ou Windows Media Player, e ouvi-los num leitor MP3, como por exemplo: um iPod.';
 $string['modulenameplural'] = 'Poscasts';
 $string['name'] = 'Título';
 $string['newepisodes'] = 'Novos episódios de podcast';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'zh_cn', version '3.11'.
+ * Strings for component 'lti', language 'zh_cn', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -198,10 +198,12 @@ $string['indicator:cognitivedepth'] = 'LTI 活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 LTI活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = 'LTI 活动认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与者达到了外部工具活动所提供的认知参与百分比(级别=未查看、查看、提交、查看反馈)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'LTI活动社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在LTI活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = 'LTI活动社会宽度';
 $string['indicator:socialbreadthdef_help'] = '在这个分析间隔内，参与者已经达到了外部工具活动所提供的社会参与百分比(级别=没有参与，单独参与，和其他人一起参与)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = '初始化登录网址';
 $string['initiatelogin_help'] = '要将启动登录的请求发送到的工具URL。在将消息成功发送到工具之前，需要此URL。';
 $string['invalidid'] = 'LTI ID 不正确';
@@ -260,6 +262,7 @@ $string['modulename_help'] = '外部工具活动模块使学生能够与其他�
 * 外部工具是上下文意识，即它们可获得启动该工具的用户的信息,例如机构,课程和姓名
 * 外部工具支持阅读、更新，和删除与活动实例相关的成绩
 * 外部工具配置创建一个你的网站和工具提供者之间的信任关系,允许它们之间的安全通信';
+$string['modulename_link'] = 'mod/lti/view';
 $string['modulenameplural'] = '外部工具';
 $string['modulenamepluralformatted'] = 'LTI 实例';
 $string['name'] = '名称';
@@ -285,10 +288,8 @@ $string['opensslconfiginvalid'] = 'LTI 1.3需要配置一个有效的openssl.cnf
 $string['optionalsettings'] = '可选设置';
 $string['organization'] = '机构详情';
 $string['organizationdescr'] = '组织描述';
-$string['organizationid'] = '机构 ID';
 $string['organizationid_default'] = '默认组织 ID';
 $string['organizationid_default_help'] = '组织ID的默认值。站点ID标识这个Moodle安装。';
-$string['organizationid_help'] = '这个Moodle实例的唯一标识符。通常使用组织的DNS（域名）名称。如果此字段留空，则此Moodle站点的主机名将用作默认值。';
 $string['organizationidguid'] = '组织ID';
 $string['organizationidguid_help'] = '这个Moodle实例的唯一标识符作为平台实例GUID传递给工具。
 如果该字段为空，则使用默认值。';

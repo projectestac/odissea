@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_password', language 'ja', version '3.11'.
+ * Strings for component 'quizaccess_password', language 'ja', version '4.1'.
  *
  * @package     quizaccess_password
  * @category    string
@@ -29,4 +29,4 @@ $string['passworderror'] = '入力されたパスワードが正しくありま�
 $string['pluginname'] = 'パスワード - 小テストアクセスルール';
 $string['privacy:metadata'] = 'パスワード小テストアクセスルールプラグインはいかなる個人データも保存しません。';
 $string['quizpassword'] = '小テストパスワード';
-$string['requirepasswordmessage'] = 'この小テストを受験するためはパスワードを入力する必要があります。';
+$string['requirepasswordmessage'] = 'この小テストを受験するためにはパスワードを入力する必要があります。';

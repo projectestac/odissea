@@ -1,4 +1,4 @@
-@block @block_activity_results
+@block @block_activity_results @javascript
 Feature: The activity results block displays student in separate groups scores
   In order to be display student scores
   As a user
@@ -53,7 +53,6 @@ Feature: The activity results block displays student in separate groups scores
     And I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode on
     And I navigate to "View > Grader report" in the course gradebook
-    And I turn editing mode on
     And I give the grade "100.00" to the user "Student 1" for the grade item "Test assignment"
     And I give the grade "90.00" to the user "Student 2" for the grade item "Test assignment"
     And I give the grade "90.00" to the user "Student 3" for the grade item "Test assignment"
@@ -67,12 +66,12 @@ Feature: The activity results block displays student in separate groups scores
     Given I add the "Activity results" block
     When I configure the "Activity results" block
     And I set the following fields to these values:
-      | id_config_showbest | 1 |
-      | id_config_showworst | 0 |
-      | id_config_gradeformat | Percentages |
-      | id_config_nameformat | Display full names |
-      | id_config_decimalpoints | 0 |
-      | id_config_usegroups | Yes |
+      | config_showbest | 1 |
+      | config_showworst | 0 |
+      | config_gradeformat | Percentages |
+      | config_nameformat | Display full names |
+      | config_decimalpoints | 0 |
+      | config_usegroups | Yes |
     And I press "Save changes"
     Then I should see "Group 1" in the "Activity results" "block"
     And I should see "95%" in the "Activity results" "block"
@@ -81,11 +80,11 @@ Feature: The activity results block displays student in separate groups scores
     Given I add the "Activity results" block
     When I configure the "Activity results" block
     And I set the following fields to these values:
-      | id_config_showbest | 1 |
-      | id_config_showworst | 0 |
-      | id_config_gradeformat | Fractions |
-      | id_config_nameformat | Display full names |
-      | id_config_usegroups | Yes |
+      | config_showbest | 1 |
+      | config_showworst | 0 |
+      | config_gradeformat | Fractions |
+      | config_nameformat | Display full names |
+      | config_usegroups | Yes |
     And I press "Save changes"
     Then I should see "Group 1" in the "Activity results" "block"
     And I should see "95.00/100.00" in the "Activity results" "block"
@@ -99,11 +98,11 @@ Feature: The activity results block displays student in separate groups scores
     Given I add the "Activity results" block
     When I configure the "Activity results" block
     And I set the following fields to these values:
-      | id_config_showbest | 1 |
-      | id_config_showworst | 0 |
-      | id_config_gradeformat | Absolute numbers |
-      | id_config_nameformat | Display full names |
-      | id_config_usegroups | Yes |
+      | config_showbest | 1 |
+      | config_showworst | 0 |
+      | config_gradeformat | Absolute numbers |
+      | config_nameformat | Display full names |
+      | config_usegroups | Yes |
     And I press "Save changes"
     Then I should see "Group 1" in the "Activity results" "block"
     And I should see "95.00" in the "Activity results" "block"
@@ -117,12 +116,12 @@ Feature: The activity results block displays student in separate groups scores
     Given I add the "Activity results" block
     When I configure the "Activity results" block
     And I set the following fields to these values:
-      | id_config_showbest | 3 |
-      | id_config_showworst | 0 |
-      | id_config_gradeformat | Percentages |
-      | id_config_nameformat | Display full names |
-      | id_config_decimalpoints | 0 |
-      | id_config_usegroups | Yes |
+      | config_showbest | 3 |
+      | config_showworst | 0 |
+      | config_gradeformat | Percentages |
+      | config_nameformat | Display full names |
+      | config_decimalpoints | 0 |
+      | config_usegroups | Yes |
     And I press "Save changes"
     Then I should see "Group 1" in the "Activity results" "block"
     And I should see "95%" in the "Activity results" "block"
@@ -142,11 +141,11 @@ Feature: The activity results block displays student in separate groups scores
     Given I add the "Activity results" block
     When I configure the "Activity results" block
     And I set the following fields to these values:
-      | id_config_showbest | 3 |
-      | id_config_showworst | 0 |
-      | id_config_gradeformat | Fractions |
-      | id_config_nameformat | Display full names |
-      | id_config_usegroups | Yes |
+      | config_showbest | 3 |
+      | config_showworst | 0 |
+      | config_gradeformat | Fractions |
+      | config_nameformat | Display full names |
+      | config_usegroups | Yes |
     And I press "Save changes"
     Then I should see "Group 1" in the "Activity results" "block"
     And I should see "95.00/100.00" in the "Activity results" "block"
@@ -166,11 +165,11 @@ Feature: The activity results block displays student in separate groups scores
     Given I add the "Activity results" block
     When I configure the "Activity results" block
     And I set the following fields to these values:
-      | id_config_showbest | 3 |
-      | id_config_showworst | 0 |
-      | id_config_gradeformat | Absolute numbers |
-      | id_config_nameformat | Display full names |
-      | id_config_usegroups | Yes |
+      | config_showbest | 3 |
+      | config_showworst | 0 |
+      | config_gradeformat | Absolute numbers |
+      | config_nameformat | Display full names |
+      | config_usegroups | Yes |
     And I press "Save changes"
     Then I should see "Group 1" in the "Activity results" "block"
     And I should see "95.00" in the "Activity results" "block"
@@ -192,11 +191,11 @@ Feature: The activity results block displays student in separate groups scores
     And I add the "Activity results" block
     When I configure the "Activity results" block
     And I set the following fields to these values:
-      | id_config_showbest | 3 |
-      | id_config_showworst | 0 |
-      | id_config_gradeformat | Percentages |
-      | id_config_nameformat | Display only ID numbers |
-      | id_config_usegroups | Yes |
+      | config_showbest | 3 |
+      | config_showworst | 0 |
+      | config_gradeformat | Percentages |
+      | config_nameformat | Display only ID numbers |
+      | config_usegroups | Yes |
     And I press "Save changes"
     Then I should see "Group" in the "Activity results" "block"
     And I should see "95.00%" in the "Activity results" "block"
@@ -216,11 +215,11 @@ Feature: The activity results block displays student in separate groups scores
     Given I add the "Activity results" block
     When I configure the "Activity results" block
     And I set the following fields to these values:
-      | id_config_showbest | 3 |
-      | id_config_showworst | 0 |
-      | id_config_gradeformat | Percentages |
-      | id_config_nameformat | Anonymous results |
-      | id_config_usegroups | Yes |
+      | config_showbest | 3 |
+      | config_showworst | 0 |
+      | config_gradeformat | Percentages |
+      | config_nameformat | Anonymous results |
+      | config_usegroups | Yes |
     And I press "Save changes"
     Then I should see "Group" in the "Activity results" "block"
     And I should see "95.00%" in the "Activity results" "block"

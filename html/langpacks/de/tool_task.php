@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'de', version '3.11'.
+ * Strings for component 'tool_task', language 'de', version '4.1'.
  *
  * @package     tool_task
  * @category    string
@@ -54,6 +54,7 @@ $string['enablerunnow_desc'] = 'Diese Option ermöglicht es Administrator/innen,
 $string['faildelay'] = 'Fehlerverzögerung';
 $string['fromcomponent'] = 'Von der Komponente: {$a}';
 $string['hostname'] = 'Host-Name';
+$string['lastcronstart'] = 'Zeit seit dem letzen Cron-Aufruf: {$a}';
 $string['lastruntime'] = 'Letzte Ausführung';
 $string['lastupdated'] = 'Zuletzt aktualisiert {$a}.';
 $string['nextruntime'] = 'Nächste Ausführung';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qcreate', language 'el', version '3.11'.
+ * Strings for component 'qcreate', language 'el', version '4.1'.
  *
  * @package     qcreate
  * @category    string
@@ -60,7 +60,7 @@ $string['gradeallautomatic'] = 'Η βαθμολόγηση είναι εντελ�
 $string['gradeallmanual'] = 'Η βαθμολόγηση είναι εντελώς χειροκίνητη, χωρίς αυτόματη βαθμολόγηση.';
 $string['gradecomment'] = 'Σχόλιο για την ερώτηση «{$a->qname}» δημιουργήθηκε από τον χρήστη {$a->user}';
 $string['graded'] = 'Βαθμολογήθηκε';
-$string['gradequestions'] = 'Ερωτήσεις βαθμού';
+$string['gradequestions'] = 'Βαθμολόγηση ερωτήσεων';
 $string['graderatio'] = 'Αναλογία αυτόματης / χειροκίνητης ταξινόμησης';
 $string['graderatiois'] = 'Αναλογία αυτόματης / χειροκίνητης ταξινόμησης: {$a}';
 $string['graderatiooptions'] = '{$a->automatic} / {$a->manual}';
@@ -74,6 +74,7 @@ $string['messageprovider:gradernotification'] = 'Ειδοποίηση δημιο
 $string['messageprovider:studentnotification'] = 'Ειδοποίηση βαθμολόγησης ερώτησης';
 $string['minimumquestions'] = 'Ελάχιστες ερωτήσεις';
 $string['modulename'] = 'Δημιουργία ερώτησης';
+$string['modulename_link'] = 'mod/qcreate/view';
 $string['modulenameplural'] = 'Δημιουργίες ερώτησης';
 $string['needsgrading'] = 'Χρειάζεται βαθμολόγηση';
 $string['needsregrading'] = 'Χρειάζεται επαναβαθμολόγηση';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'pt', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'pt', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -38,6 +38,7 @@ $string['cbmgrades_help'] = 'Na Avaliação com Base no Grau de Certeza (ABCG) t
 
 **Precisão** é a % da resposta correta ignorando a certeza, mas ponderada para a nota máxima de cada pergunta. Distinguir com sucesso respostas mais e menos confiáveis dá uma nota melhor do que selecionar a mesma certeza para cada pergunta. Isso é refletido no **Bónus ABGC**.
 **Precisão** + **Bónus ABGC** é uma medida de conhecimento melhor que **Precisão**. Equívocos podem levar a um bónus negativo, um aviso para analisar cuidadosamente o que é e o que não é conhecido.';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'Nota da ABGC {$a}';
 $string['certainty'] = 'Certeza';
 $string['certainty-1'] = 'Não faço ideia';
@@ -51,6 +52,7 @@ Se responder corretamente a sua nota será multiplicada por 1, 2 ou 3, consoante
 Se responder incorretamente, a sua nota será multiplicada por 0, -2 ou -6, consoante o grau de certeza escolhido C foi igual a 1, 2 ou 3.
 
 As respostas sem certeza obterão melhores notas se for reconhecido um grau de certeza baixo. Por exemplo, se houver mais do que 1 em 3 hipóteses da resposta estar errada, deverá indicar C=1 para evitar o risco de ter uma nota negativa.';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = 'Não faço ideia';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';
@@ -58,7 +60,7 @@ $string['certaintyshort3'] = 'C=3';
 $string['dontknow'] = 'Não faço ideia';
 $string['foransweredquestions'] = 'Resultados de apenas {$a} perguntas respondidas';
 $string['forentirequiz'] = 'Resultados de todo o teste ({$a} perguntas)';
-$string['howcertainareyou'] = 'Grau de certeza{$a->help}: {$a->choices}';
+$string['howcertainareyou'] = 'Grau de certeza {$a->help}: {$a->choices}';
 $string['judgementok'] = 'Ok';
 $string['judgementsummary'] = 'Respostas: {$a->responses}. Precisão: {$a->fraction}. (Intervalo ideal {$a->idealrangelow} para {$a->idealrangehigh}). Usou este grau de certeza: {$a->judgement}';
 $string['noquestions'] = 'Sem respostas';

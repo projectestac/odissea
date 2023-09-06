@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'ar', version '3.11'.
+ * Strings for component 'journal', language 'ar', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -61,6 +61,7 @@ $string['journalquestion'] = 'سؤال المذكرة';
 $string['mailsubject'] = 'إفادة المذكرة';
 $string['modulename'] = 'المذكرة';
 $string['modulename_help'] = 'نشاط المذكرة يُمكن المعلمين من الحصول على إفادات الطلاب بشأن موضوع معين';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = 'المذكرات';
 $string['needsregrade'] = 'تغير الإدخال منذ آخر حفظ للإفادة.';
 $string['newjournalentries'] = 'مدخلات مذكرة جديدة';

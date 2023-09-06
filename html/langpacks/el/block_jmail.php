@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_jmail', language 'el', version '3.11'.
+ * Strings for component 'block_jmail', language 'el', version '4.1'.
  *
  * @package     block_jmail
  * @category    string
@@ -54,7 +54,7 @@ $string['forward'] = 'Προώθηση';
 $string['from'] = 'Από';
 $string['fw'] = 'Προώθ.:';
 $string['inbox'] = 'Εισερχόμενα';
-$string['jmail:addinstance'] = 'Προσθήκη ενός στιγμιότυπου jmail';
+$string['jmail:addinstance'] = 'Προσθήκη ενός στιγμιοτύπου jmail';
 $string['jmail:approvemessages'] = 'Έγκριση μηνυμάτων';
 $string['jmail:managelabels'] = 'Διαχείριση ταμπελών';
 $string['jmail:managepreferences'] = 'Διαχείριση προτιμήσεων';
@@ -64,7 +64,7 @@ $string['label'] = 'Ταμπέλα';
 $string['labels'] = 'Ταμπέλες';
 $string['last'] = 'Τελευταίο >>';
 $string['markas'] = 'Σημείωση ως';
-$string['markread'] = 'Σημείωση ως αναγνωσμένου';
+$string['markread'] = 'Επισήμανση ως αναγνωσμένου';
 $string['markunread'] = 'Σημείωση ως μη αναγνωσμένου';
 $string['messagedeleted'] = 'Το μήνυμα διαγράφηκε';
 $string['messagehastobeapproved'] = 'Το μήνυμά σας δεν θα παραδοθεί στους προορισμούς μέχρι να εγκριθεί από έναν συντονιστή.';
@@ -83,7 +83,7 @@ $string['pluginname'] = 'jmail';
 $string['preferences'] = 'Προτιμήσεις';
 $string['previous'] = '<< Προηγούμενο';
 $string['print'] = 'Εκτύπωση';
-$string['re'] = 'Re:';
+$string['re'] = 'Απάντ:';
 $string['receivecopies'] = 'Λήψη αντιγράφων των μηνυμάτων στη διεύθυνση ηλε.ταχυδρομείου';
 $string['reply'] = 'Απάντηση';
 $string['replyall'] = 'Απάντηση προς όλους';

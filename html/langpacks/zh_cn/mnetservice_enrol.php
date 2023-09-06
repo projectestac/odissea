@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'zh_cn', version '3.11'.
+ * Strings for component 'mnetservice_enrol', language 'zh_cn', version '4.1'.
  *
  * @package     mnetservice_enrol
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_blackboard_six', language 'el', version '3.11'.
+ * Strings for component 'qformat_blackboard_six', language 'el', version '4.1'.
  *
  * @package     qformat_blackboard_six
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['defaultname'] = 'Έγινε εισαγωγή της ερώτησης {$a}';
-$string['errormanifest'] = 'Σφάλμα κατά την ανάλυση του δηλωτικού (manifest) IMS εγγράφου';
+$string['errormanifest'] = 'Σφάλμα κατά την συντακτική ανάλυση του δηλωτικού (manifest) IMS εγγράφου';
 $string['filenothandled'] = 'Αυτό το αρχείο περιέχει αναφορά σε υλικό αρχείου {$a} το οποίο δεν το χειρίζεται αυτή τη στιγμή η εισαγωγή';
 $string['imagenotfound'] = 'Το αρχείο εικόνας με διαδρομή {$a} δεν βρέθηκε στο αρχείο εισαγωγής.';
-$string['importedcategory'] = 'Η κατηγορία {$a} εισήχθη';
+$string['importedcategory'] = 'Εισαχθείσα κατηγορία {$a}';
 $string['importnotext'] = 'Λείπει κείμενο ερώτησης στο αρχείο XML';
 $string['notenoughtsubans'] = 'Δεν είναι δυνατή η εισαγωγή της ερώτησης αντιστοίχισης «{$a}», επειδή μια ερώτηση αντιστοίχισης πρέπει να περιλαμβάνει τουλάχιστον δύο ερωτήσεις και τρεις απαντήσεις.';
 $string['pluginname'] = 'Μορφότυπος ερωτήσεων Blackboard';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'englishcentral', language 'ar', version '3.11'.
+ * Strings for component 'englishcentral', language 'ar', version '4.1'.
  *
  * @package     englishcentral
  * @category    string
@@ -48,7 +48,7 @@ $string['privacy:metadata:sessionscore'] = 'درجة الجلسة';
 $string['readonlymode_desc'] = 'هذا النشاط بوضع القراءة فقط حاليًا. يمكنك معاينة المعلومات في الصفحة الأولى من نشاط EnglishCentral هذا، ولكنك لا تستطيع معاينة كل الفيديوهات.';
 $string['removevideohelp'] = 'لإزالة فيديو من هذه الصفحة، إسحبه إلى هذه الأيقونة.';
 $string['reporttitle'] = 'عنوان التقرير {$a}';
-$string['selectanother'] = 'عودة إلى المقرر الدراسي';
+$string['selectanother'] = 'عودة إلى المساق';
 $string['sessionscore'] = 'درجة الجلسة';
 $string['studygoal'] = 'وقت الدراسة';
 $string['totalactivetime'] = 'إجمالي وقت الفعالية';

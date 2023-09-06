@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_waitlist', language 'el', version '3.11'.
+ * Strings for component 'enrol_waitlist', language 'el', version '4.1'.
  *
  * @package     enrol_waitlist
  * @category    string
@@ -51,7 +51,7 @@ $string['nocursefields'] = 'Κανένα πεδίο';
 $string['password'] = 'Κλειδί εγγραφής';
 $string['passwordinvalidhint'] = 'Αυτό το κλειδί εγγραφής ήταν εσφαλμένο. Παρακαλούμε, δοκιμάστε ξανά.<br />(Ορίστε μια υπόδειξη - ξεκινάει με «{$a}»)';
 $string['pluginname'] = 'Εγγραφή με λίστα αναμονής';
-$string['pluginname_desc'] = 'Το πρόσθετο εγγραφής waitlist επιτρέπει στους χρήστες να επιλέξουν σε ποια μαθήματα θέλουν να συμμετάσχουν. Τα μαθήματα μπορούν να προστατεύονται από ένα κλειδί εγγραφής. Εσωτερικά η εγγραφή γίνεται μέσω του πρόσθετου χειροκίνητης εγγραφής που πρέπει να είναι ενεργοποιημένο στο ίδιο μάθημα.';
+$string['pluginname_desc'] = 'Το πρόσθετο εγγραφής με λίστα αναμονής επιτρέπει στους χρήστες να επιλέξουν σε ποια μαθήματα θέλουν να συμμετάσχουν. Τα μαθήματα μπορούν να προστατεύονται από ένα κλειδί εγγραφής. Εσωτερικά η εγγραφή γίνεται μέσω του πρόσθετου χειροκίνητης εγγραφής που πρέπει να είναι ενεργοποιημένο στο ίδιο μάθημα.';
 $string['privacy:metadata:user_enrol_waitlist'] = 'Αποθηκεύει μεταδεδομένα χρήστη στο πεδίο userid';
 $string['profilecreatefield'] = 'Δημιουργία μιας νέας λίστας αναμονής';
 $string['profiledescription2'] = 'Περιγραφή 2 του πεδίου';
@@ -65,8 +65,8 @@ $string['usepasswordpolicy_desc'] = 'Χρήση τυπικής πολιτική�
 $string['users_on_waitlist'] = 'Χρήστες στη λίστα αναμονής';
 $string['waitlist:manage'] = 'Διαχείριση εγγεγραμμένων χρηστών';
 $string['waitlisted_users'] = 'Χρήστες σε λίστα αναμονής';
-$string['welcometocourse'] = 'Καλωσορίσατε στο {$a}';
-$string['welcometocoursetext'] = '<p>Καλωσορίσατε στο {$a->coursename}!</p>
+$string['welcometocourse'] = 'Καλώς ορίσατε στο {$a}';
+$string['welcometocoursetext'] = '<p>Καλώς ορίσατε στο {$a->coursename}!</p>
 
 
 <p>Ημερομηνία έναρξης: {$a->startdate}</p>

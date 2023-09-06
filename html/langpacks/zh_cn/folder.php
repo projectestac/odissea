@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'zh_cn', version '3.11'.
+ * Strings for component 'folder', language 'zh_cn', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -45,10 +45,12 @@ $string['indicator:cognitivedepth'] = '文件夹资源认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在文件夹资源中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '文件夹认知';
 $string['indicator:cognitivedepthdef_help'] = 'The participant has reached this percentage of the cognitive engagement offered by the Folder resources during this analysis interval (Levels = No view, View)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '文件夹资源社会广度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在文件夹资源中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = '文件夹社交';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到文件夹资源提供的社交参与百分比（级别=无参与，仅参与者一人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['maxsizetodownload'] = '文件夹下载的最大容量限制(MB)';
 $string['maxsizetodownload_help'] = '当以压缩文件下载时，这个文件夹最大可以达到多少。若设为0，表示大小没有限制。';
 $string['modulename'] = '文件夹';
@@ -61,6 +63,7 @@ $string['modulename_help'] = '文件夹模块可以让教师在一个单一文�
 *存放同一主题的一系列文件，例如，一整套考古主题的PDF文件，或供学生写作用的一组图片文件。
 
 *在课程页面中提供教师上传共享文件的空间(保持文件夹隐藏状态，只有教师才能看到)';
+$string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = '文件夹';
 $string['newfoldercontent'] = '新文件夹内容';
 $string['noautocompletioninline'] = '查看活动时自动完成不能与“显示内联”选项一起选择';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'es', version '3.11'.
+ * Strings for component 'block_myoverview', language 'es', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Destacar este curso';
-$string['all'] = 'Todos (a excepción de los eliminados de la vista)';
-$string['allincludinghidden'] = 'Todo';
+$string['all'] = 'Todos';
+$string['allincludinghidden'] = 'Todo (incluyendo los archivados)';
 $string['aria:addtofavourites'] = 'Estrella para';
-$string['aria:allcourses'] = 'Mostrar todos los cursos excepto los cursos eliminados de la vista';
+$string['aria:allcourses'] = 'Mostrar todos los cursos excepto los cursos archivados';
 $string['aria:allcoursesincludinghidden'] = 'Mostrar todos los cursos';
 $string['aria:card'] = 'Cambiar a vista de tarjeta';
 $string['aria:controls'] = 'Controles de vista general de curso';
@@ -57,7 +57,7 @@ $string['availablegroupings'] = 'Filtros disponibles';
 $string['availablegroupings_desc'] = 'Filtros de curso que están disponibles para que los usuarios los seleccionen. Si no se selecciona ninguno se mostrarán todos los cursos.';
 $string['card'] = 'Tarjeta';
 $string['cards'] = 'Tarjetas';
-$string['complete'] = 'completo';
+$string['clearsearch'] = 'Limpiar búsqueda';
 $string['completepercent'] = '{$a}% completado';
 $string['courseprogress'] = 'Progreso del curso:';
 $string['customfield'] = 'Campo personalizado';
@@ -68,15 +68,14 @@ $string['displaycategories_help'] = 'Mostrar la Categoría del curso en ítems d
 $string['favourites'] = 'Destacados';
 $string['future'] = 'Futuros';
 $string['hidden'] = 'Cursos eliminados de la vista';
-$string['hiddencourses'] = 'Eliminados de la vista';
-$string['hidecourse'] = 'Quitar de la vista';
+$string['hiddencourses'] = 'Eliminado de la vista';
+$string['hidecourse'] = 'Eliminar de la vista';
 $string['inprogress'] = 'En progreso';
 $string['lastaccessed'] = 'Último accedido';
 $string['layouts'] = 'Diseños disponibles';
 $string['layouts_help'] = 'Diseños de descripción general del curso que están disponibles para que los usuarios los seleccionen. Si no se selecciona ninguno se utilizará el diseño de tarjeta.';
 $string['list'] = 'Lista';
 $string['myoverview:myaddinstance'] = 'Añadir un nuevo bloque de vista general de cursos al Área personal';
-$string['nocourses'] = 'Sin cursos';
 $string['nocustomvalue'] = 'No {$a}';
 $string['past'] = 'Pasados';
 $string['pluginname'] = 'Vista general de curso';
@@ -86,7 +85,11 @@ $string['privacy:metadata:overviewsortpreference'] = 'La preferencia de ordenami
 $string['privacy:metadata:overviewviewpreference'] = 'La preferencia de vista del bloque Vista general del curso.';
 $string['privacy:request:preference:set'] = 'El valor de la configuración \'{$a->name}\' era \'{$a->value}\'';
 $string['removefromfavourites'] = 'Quitar estrella a este curso';
+$string['searchcourses'] = 'Buscar cursos';
 $string['shortname'] = 'Nombre corto';
-$string['show'] = 'Mostrar vista';
+$string['show'] = 'Desarchivar';
+$string['sortbylastaccessed'] = 'Ordenar por último acceso';
+$string['sortbyshortname'] = 'Ordenar por nombre corto';
+$string['sortbytitle'] = 'Ordenar por nombre del curso';
 $string['summary'] = 'Resumen';
 $string['title'] = 'Nombre del curso';

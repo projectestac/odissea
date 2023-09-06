@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'eu', version '3.11'.
+ * Strings for component 'atto_collapse', language 'eu', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'Erakutsi botoi gutxiago';
 $string['showgroups'] = 'Erakutsi lehenengo (n) taldeak tolestutakoan.';
 $string['showgroups_desc'] = 'Tresna-barra tolestutakoan (hala dago hasieran) soilik lehenengo talde hauek erakutsiko dira.';
 $string['showmore'] = 'Erakutsi botoi gehiago';
+$string['youareonsecondrow'] = 'Orain editorearen tresna-barraren beste errenkada batean zaude, non botoi gehiago dagoen.';

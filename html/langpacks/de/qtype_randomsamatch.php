@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'de', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'de', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -30,6 +30,7 @@ $string['nosaincategory'] = 'In der ausgewählten Kategorie \'{$a->catname}\' be
 $string['notenoughsaincategory'] = 'In der ausgewählten Kategorie \'{$a->catname}\' befinden sich nur {$a->nosaquestions} Kurztextfragen. Wählen Sie eine andere Kategorie aus, erstellen Sie zusätzliche Kurztextfragen in dieser Kategorie oder reduzieren Sie die Zahl der auszuwählenden Kurztextfragen.';
 $string['pluginname'] = 'Zufällige Kurzantwortzuordnung';
 $string['pluginname_help'] = 'Aus der Ansicht von Teilnehmer/innen scheint dies eine Zuordnungsfrage zu sein. Der Unterschied besteht darin, dass die Fragen und Antworten zufällig aus den Kurzantwortfragen der gewählten Kategorie genommen werden. Es müssen ausreichend viele, noch nicht genutzte Kurzantwortfragen in der Kategorie abgelegt sein. Andernfalls erscheint eine Fehlernachricht.';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = 'Zufällige Kurzantwort Zuordnungsfrage hinzufügen';
 $string['pluginnameediting'] = 'Zufällige Kurzantwort Zuordnungsfrage bearbeiten';
 $string['pluginnamesummary'] = 'Wie Zuordnungsfrage, jedoch zufällig aus Kurzantwortfragen der Kategorie erstellt.';

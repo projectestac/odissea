@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'ru', version '3.11'.
+ * Strings for component 'format_topics', language 'ru', version '4.1'.
  *
  * @package     format_topics
  * @category    string
@@ -31,6 +31,8 @@ $string['deletesection'] = 'Удалить тему';
 $string['editsection'] = 'Редактировать тему';
 $string['editsectionname'] = 'Редактировать название темы';
 $string['hidefromothers'] = 'Скрыть тему';
+$string['indentation'] = 'Разрешить отступ на странице курса';
+$string['indentation_help'] = 'Разрешить учителям и другим пользователям с возможностью управления активными элементами устанавливать отступы элементов на странице курса.';
 $string['newsectionname'] = 'Новое название для темы {$a}';
 $string['page-course-view-topics'] = 'Главная страница любого курса формата «Разделы по темам»';
 $string['page-course-view-topics-x'] = 'Любая страница курса формата «Разделы по темам»';

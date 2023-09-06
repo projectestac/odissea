@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'ko', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'ko', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = '생성';
 $string['newsetwildcardvalues'] = '새 와일드카드 파라메터 값 집합';
 $string['pluginname'] = '단순 계산형 질문';
 $string['pluginname_help'] = '간단 계산형 질문은 퀴즈가 치루어질 때 개별 값으로 대치되는 와일드카드를 포함하는 개별 수치형 질문이 생성되도록 합니다. 간단 계산형 질문은 간단한 생성 인터페이스로 계산형 질문에서 가장 많이 사용되는 기능을 제공합니다.';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = '단순 계산형  질문 추가';
 $string['pluginnameediting'] = '간단한 계산형 질문 편집';
 $string['pluginnamesummary'] = '수치형 질문과 유사하지만 퀴즈를 볼때 무작위로 선택된 수를 사용하는 계산형 질문의 간단한 버전';

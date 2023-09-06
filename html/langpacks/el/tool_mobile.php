@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'el', version '3.11'.
+ * Strings for component 'tool_mobile', language 'el', version '4.1'.
  *
  * @package     tool_mobile
  * @category    string
@@ -42,7 +42,7 @@ $string['customlangstrings_desc'] = 'Λέξεις και φράσεις που �
 Για παράδειγμα:
 <pre>
 mm.user.student|Learner|en
-mm.user.student|Aprendiz|es
+mm.user.student|Εκπαιδευόμενος|el
 </pre>
 Για μια πλήρη λίστα αναγνωριστικών συμβολοσειρών, δείτε την τεκμηρίωση/βοήθεια.';
 $string['custommenuitems'] = 'Προσαρμοσμένα στοιχεία μενού';
@@ -55,11 +55,13 @@ $string['custommenuitems_desc'] = 'Επιπρόσθετα στοιχεία μπ�
 * browser - στον περιηγητή (για άνοιγμα ενός συνδέσμου στον προεπιλεγμένο περιηγητή της συσκευής έξω από την εφαρμογή), και
 * embedded - ενσωματωμένα (για εμφάνιση του συνδέσμου σε ένα iframe σε μια νέα σελίδα μέσα στην εφαρμογή).
 
+Όταν από τα στοιχεία λείπει μια μετάφραση για μια δεδομένη γλώσσα, θα χρησιμοποιήσουν άλλες γλώσσες ως εφεδρικές, εκτός εάν επισυνάπτεται «_only» στον κωδικό γλώσσας.
+
 Για παράδειγμα:
 <pre>
 App help|https://someurl.xyz/help|inappbrowser
 My grades|https://someurl.xyz/local/mygrades/index.php|embedded|en
-Mis calificaciones|https://someurl.xyz/local/mygrades/index.php|embedded|es
+Τα προσόντα μου|https://someurl.xyz/topika/oibathmoimoy/index.php|embedded|el
 </pre>';
 $string['darkmode'] = 'Σκοτεινή κατάσταση';
 $string['disabledfeatures'] = 'Απενεργοποιημένα χαρακτηριστικά';
@@ -131,7 +133,7 @@ $string['qrcodetype'] = 'Πρόσβαση κωδικού QR';
 $string['qrcodetype_desc'] = 'Ένας κωδικός QR μπορεί να παρέχεται προς σάρωση για τους χρήστες εφαρμογών για κινητές συσκευές και είτε να συμπληρώνεται η διεύθυνση URL του ιστοτόπου, είτε να συνδέονται αυτόματα χωρίς να χρειάζεται να εισαγάγουν τα διαπιστευτήριά τους.';
 $string['qrcodetypelogin'] = 'Κωδικός QR με αυτόματη σύνδεση';
 $string['qrcodetypeurl'] = 'Κωδικός QR με διεύθυνση URL';
-$string['qrsiteadminsnotallowed'] = 'Για λόγους ασφαλείας, η σύνδεση μέσω κωδικού QR δεν επιτρέπεται για διαχειριστές ιστότοπων ή εάν είστε συνδεδεμένοι ως άλλος χρήστης.';
+$string['qrsiteadminsnotallowed'] = 'Για λόγους ασφαλείας, η σύνδεση μέσω κωδικού QR δεν επιτρέπεται για διαχειριστές ιστοτόπων ή εάν είστε συνδεδεμένοι ως άλλος χρήστης.';
 $string['readingthisemailgettheapp'] = 'Διαβάζετε αυτό στο ηλε.ταχυδρομείο σας; <a href="{$a}">Κάντε λήψη της εφαρμογής κινητού και λάβετε ειδοποιήσεις στο κινητό σας</a>.';
 $string['remoteaddons'] = 'Απομακρυσμένα πρόσθετα';
 $string['responsivemainmenuitems'] = 'Στοιχεία μενού που ανταποκρίνονται';

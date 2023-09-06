@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'zh_cn', version '3.11'.
+ * Strings for component 'question', language 'zh_cn', version '4.1'.
  *
  * @package     question
  * @category    string
@@ -69,6 +69,7 @@ $string['cannotmovequestion'] = '您不能使用此脚本移动与不同区域�
 $string['cannotopenforwriting'] = '不能以可写模式打开：{$a}';
 $string['cannotpreview'] = '您不能预览这些试题！';
 $string['cannotread'] = '无法读取导入文件(或文件为空)';
+$string['cannotregradedifferentqtype'] = '不能使用不同类型的问题重新评分。';
 $string['cannotretrieveqcat'] = '无法获取试题类别';
 $string['cannotunhidequestion'] = '取消隐藏试题失败。';
 $string['cannotunzip'] = '不能解压缩 zip文件。';
@@ -140,6 +141,7 @@ $string['editcategories_help'] = '为了不将所有试题都放在一个大列�
 * 系统场景 - 试题在站点中所有的课程和活动中可用
 
 随机题也使用类别。它从指定的类别中随机选择试题。';
+$string['editcategories_link'] = 'question/category';
 $string['editcategory'] = '编辑类别';
 $string['editingcategory'] = '编辑一个类别';
 $string['editingquestion'] = '编辑一道试题';
@@ -191,6 +193,7 @@ $string['exportnameformat'] = '%Y%m%d-%H%M';
 $string['exportonequestion'] = '下载这个试题的Moodle XML 格式';
 $string['exportquestions'] = '导出试题到文件';
 $string['exportquestions_help'] = '此功能能够将整个类别（包括任何子类别）中的任何试题导出到一个文件。请注意，根据所选的文件格式，某些试题数据和试题类型可能不会导出。';
+$string['exportquestions_link'] = 'question/export';
 $string['feedback'] = '反馈';
 $string['filecantmovefrom'] = '无法移动试题文件，因为您没有从移动试题的位置删除文件的权限。';
 $string['filecantmoveto'] = '试题文件不能移动或复制，因为您没有在目标位置新建文件的权限。';
@@ -220,6 +223,7 @@ $string['howquestionsbehave_help'] = '学生可以和此测验中的试题有多
 再比如，您可能希望学生在答题过程中每题都提交一下，并获得立即的反馈；如果他们没有答对，还有机会再次尝试，但只能得到较低的分数。那么就应该用“交互式多次尝试”模式。
 
 它们大概是通常情况下用的最多的两种模式。';
+$string['howquestionsbehave_link'] = 'question/behaviour';
 $string['idnumber'] = 'ID号';
 $string['idnumber_help'] = '如果使用，ID号在每个试题类别中必须是唯一的。它提供了另一种识别试题的方法，这种方法有时很有用，但通常可以留空。';
 $string['ignorebroken'] = '忽略断开的链接';
@@ -236,6 +240,7 @@ $string['importingquestions'] = '从文件中导入 {$a} 道题';
 $string['importparseerror'] = '解析导入文件时发现错误。没能导入任何试题。要导入好的试题，请重试，并把“遇错中止”设为“否”';
 $string['importquestions'] = '从文件导入试题';
 $string['importquestions_help'] = '此功能可以从文本文件导入各种格式的试题。但请注意，文件必须是UTF-8编码。';
+$string['importquestions_link'] = 'question/import';
 $string['importwrongfileencoding'] = '你选择的文件没有使用UTF-8字符编码。{$a}文件必须使用UTF-8。';
 $string['importwrongfiletype'] = '您选定的文件类型（{$a->actualtype}）与此次导入使用的格式（{$a->expectedtype}）不匹配。';
 $string['impossiblechar'] = '检测括号字符时遇到不应该出现的字符 {$a}';
@@ -297,6 +302,7 @@ $string['nocate'] = '没有这样的类别{$a}！';
 $string['nopermissionadd'] = '您没有在此处添加试题的权限。';
 $string['nopermissionmove'] = '您没有将试题从此处移走的权限。您必须保存此试题在此类别中，或者将其另存为一道新试题。';
 $string['noprobs'] = '在题目数据库中未发现问题。';
+$string['noquestionbanks'] = '未找到题库插件。';
 $string['noquestions'] = '未找到可导出的试题。请确认您要导出的类别包含试题。';
 $string['noquestionsinfile'] = '导入文件中没有试题';
 $string['noresponse'] = '[未回答]';
@@ -324,6 +330,7 @@ $string['page-question-x'] = '任何试题页面';
 $string['parent'] = '父';
 $string['parentcategory'] = '父类别';
 $string['parentcategory_help'] = '新建类别会被放置在一个父类别中。“顶级”意味着该类别不包含在任何其它类别中。类别场景以粗体显示。每个场景中至少要有一个类别。';
+$string['parentcategory_link'] = 'question/category';
 $string['parenthesisinproperclose'] = '在 {$a}** 中，** 之前的括号没有正确结束';
 $string['parenthesisinproperstart'] = '在 {$a}** 中，** 之前的括号没有正确开始';
 $string['parsingquestions'] = '从导入文件解析试题。';
@@ -365,23 +372,29 @@ $string['privacy:metadata:database:question_attempts'] = '有关试答特定试�
 $string['privacy:metadata:database:question_attempts:flagged'] = '表示用户已在试答中标记了此试题。';
 $string['privacy:metadata:database:question_attempts:responsesummary'] = '试题回答的概要。';
 $string['privacy:metadata:database:question_attempts:timemodified'] = '试题试答更新的时间。';
+$string['privacy:metadata:database:question_bank_entries'] = '有关特定题库条目的详细信息。';
+$string['privacy:metadata:database:question_bank_entries:ownerid'] = '拥有题库条目的人。';
 $string['privacy:metadata:link:qbehaviour'] = '试题子系统利用试题行为插件类型。';
 $string['privacy:metadata:link:qformat'] = '试题子系统利用试题格式插件类型来导入和导出不同格式的试题。';
 $string['privacy:metadata:link:qtype'] = '‎试题子系统与包含不同类型的试题的试题类型插件进行交互。 ‎';
 $string['published'] = '共享';
+$string['qbanknotfound'] = '{$a}\' 题库插件不存在或无法识别。';
 $string['qtypeveryshort'] = '题型';
 $string['questionaffected'] = '<a href="{$a->qurl}">题目“{$a->name}” ({$a->qtype})</a>在此题目类别中，但是正被另一课程“{$a->coursename}”的<a href="{$a->qurl}">测验“{$a->quizname}”</a>使用。';
 $string['questionbank'] = '题库';
+$string['questionbanknavigation'] = '题库三级导航';
 $string['questionbehaviouradminsetting'] = '试题行为设置';
 $string['questionbehavioursdisabled'] = '禁用的试题行为';
 $string['questionbehavioursdisabledexplained'] = '输入您不希望出现在下拉菜单中的行为，用半角逗号分隔。';
 $string['questionbehavioursorder'] = '试题行为顺序';
 $string['questionbehavioursorderexplained'] = '按您希望在下拉菜单中看到的顺序输入各个行为，用半角逗号分隔';
+$string['questioncategories'] = '试题类别';
 $string['questioncategory'] = '试题类别';
 $string['questioncatsfor'] = '“{$a}”的试题类别';
 $string['questiondoesnotexist'] = '该试题不存在';
 $string['questionformtagheader'] = '{$a} 标签';
 $string['questionidmismatch'] = '试题 ID 不匹配';
+$string['questionloaderror'] = '无法载入问题选项。';
 $string['questionname'] = '试题名称';
 $string['questionnamecopy'] = '{$a} (复制)';
 $string['questionno'] = '试题{$a}';

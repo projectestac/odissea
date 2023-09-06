@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_multianswer', language 'ar', version '3.11'.
+ * Strings for component 'qformat_multianswer', language 'ar', version '4.1'.
  *
  * @package     qformat_multianswer
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'الإجابات المُضمَّنة (Cloze)';
 $string['pluginname_help'] = 'صيغة الإجابات المضمنة (Cloze) تسمح باستيراد قطعة نصية تحتوي أسئلة مضمنة فيها مثل، متعدد الخيارات والإجابة القصيرة.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['privacy:metadata'] = 'إن ملحق صيغة السؤال، الإجابات المضمنة لا يخزن أي بيانات شخصية.';

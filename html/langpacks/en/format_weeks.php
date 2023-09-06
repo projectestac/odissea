@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'en', version '3.11'.
+ * Strings for component 'format_weeks', language 'en', version '4.1'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Add weeks';
+$string['addsections'] = 'Add week';
 $string['automaticenddate'] = 'Calculate the end date from the number of sections';
 $string['automaticenddate_help'] = 'If enabled, the end date for the course will be automatically calculated from the number of sections and the course start date.';
 $string['currentsection'] = 'This week';
@@ -33,6 +33,8 @@ $string['deletesection'] = 'Delete week';
 $string['editsection'] = 'Edit week';
 $string['editsectionname'] = 'Edit week name';
 $string['hidefromothers'] = 'Hide week';
+$string['indentation'] = 'Allow indentation on course page';
+$string['indentation_help'] = 'Allow teachers, and other users with the manage activities capability, to indent items on the course page.';
 $string['newsectionname'] = 'New name for week {$a}';
 $string['page-course-view-weeks'] = 'Any course main page in weeks format';
 $string['page-course-view-weeks-x'] = 'Any course page in weeks format';

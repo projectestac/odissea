@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ar', version '3.11'.
+ * Strings for component 'resource', language 'ar', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -52,6 +52,7 @@ $string['displayselect_help'] = 'يحدد هذا الإعداد، بالإضاف
 * في نافذة منبثقة - يتم عرض الملف في نافذة متصفح جديدة من دون قائمة أو شريط عنوان
 * في إطار - يعرض الملف في إطار تحت شريط التنقل ووصف الملف
 * نافذة جديدة - يتم عرض الملف في نافذة متصفح جديدة مع القوائم وشريط العنوان.';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = 'إختر طريقة العرض، للأسف لا تناسب كل طرق العرض جميع الملفات.';
 $string['dnduploadresource'] = 'إنشاء مصدر من نوع ملف';
 $string['encryptedcode'] = 'رمز مشفر';
@@ -65,24 +66,27 @@ $string['indicator:cognitivedepth'] = 'الملف معرفياً';
 $string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في مورد الملف.';
 $string['indicator:cognitivedepthdef'] = 'الملف معرفياً';
 $string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها موارد الملف خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'الملف إجتماعياً';
 $string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في مورد الملف.';
 $string['indicator:socialbreadthdef'] = 'الملف إجتماعياً';
 $string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها موارد الملف خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً)';
-$string['legacyfiles'] = 'ترحيل ملف المقرر القديم';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['legacyfiles'] = 'ترحيل ملف المساق القديم';
 $string['legacyfilesactive'] = 'نشط';
 $string['legacyfilesdone'] = 'انتهى';
 $string['modifieddate'] = 'المُحدَّثة {$a}';
 $string['modulename'] = 'ملف';
-$string['modulename_help'] = 'وحدة الملف تُمكِّن المعلم من تقديم الملف كمورد للمقرر. حيثما كان ذلك ممكناً، سيتم عرض الملف ضمن واجهة المقرر الدراسي؛ وإلا سيتم توجيه الطلاب لتنزيله. قد يشتمل الملف على ملفات داعمة، على سبيل المثال، صفحات الويب HTML التي قد تتضمن صوراً.
+$string['modulename_help'] = 'وحدة الملف تُمكِّن المعلم من تقديم الملف كمورد للمساق. حيثما كان ذلك ممكناً، سيتم عرض الملف ضمن واجهة المساق؛ وإلا سيتم توجيه الطلاب لتنزيله. قد يشتمل الملف على ملفات داعمة، على سبيل المثال، صفحات الويب HTML التي قد تتضمن صوراً.
 
 لاحظ أن الطلاب بحاجة إلى وجود البرنامج المناسبة في حواسيبهم من أجل فتح الملف.
 
 يمكن استخدام الملف
 
 * لمشاركة العروض المقدمة في الصف
-* لتضمين موقع ويب صغير كمورد للمقرر
+* لتضمين موقع ويب صغير كمورد للمساق
 * لتقديم ملفات مسودة لبعض البرامج بحيث يمكن للطلاب تحريرها وتقديمها للتقييم';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'ملفات';
 $string['notmigrated'] = 'هذا النوع القديم من الموارد ({$a}) لم يتم ترحيله بعد، عذراً.';
 $string['optionsheader'] = 'خيارات العرض';
@@ -109,17 +113,17 @@ $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['search:activity'] = 'الملف';
 $string['selectmainfile'] = 'يرجى تحديد الملف الرئيسي من خلال النقر على أيقونة بجانب اسم الملف.';
 $string['showdate'] = 'أظهر تاريخ التحميل/ التعديل';
-$string['showdate_desc'] = 'أتريد عرض تاريخ الرفع/التعديل في صفحة المقرر الدراسي؟';
+$string['showdate_desc'] = 'أتريد عرض تاريخ الرفع/التعديل في صفحة المساق؟';
 $string['showdate_help'] = 'عرض  تاريخ التحميل / التعديل بجانب الروابط إلى الملف.
 
 إذا كان هناك عدة ملفات في هذا المصدر، يتم عرض تاريخ التحميل / التعديل لأول ملف.';
 $string['showsize'] = 'أظهر الحجم';
-$string['showsize_desc'] = 'أتريد عرض حجم ملف في صفحة المقرر الدراسي؟';
+$string['showsize_desc'] = 'أتريد عرض حجم ملف في صفحة المساق؟';
 $string['showsize_help'] = 'يعرض حجم الملف، مثل "3.1 MB"، إلى جانب وصلات إلى الملف.
 
 إذا كان هناك عدة ملفات في هذا المصدر، سيتم عرض الحجم الكلي لكافة الملفات.';
 $string['showtype'] = 'أظهر النوع';
-$string['showtype_desc'] = 'أتريد عرض نوع الملف (مثل \'مستند Word) في صفحة المقرر الدراسي؟';
+$string['showtype_desc'] = 'أتريد عرض نوع الملف (مثل \'مستند Word) في صفحة المساق؟';
 $string['showtype_help'] = 'يعرض نوع الملف، مثل "مستند Word"، إلى جانب وصلات إلى الملف.
 
 إذا كان هناك عدة ملفات في هذا المصدر، يتم عرض نوع أول الملف.

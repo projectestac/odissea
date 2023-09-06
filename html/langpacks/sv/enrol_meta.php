@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'sv', version '3.11'.
+ * Strings for component 'enrol_meta', language 'sv', version '4.1'.
  *
  * @package     enrol_meta
  * @category    string
@@ -42,3 +42,7 @@ $string['pluginname_desc'] = 'Pluginmodulen Kursmetalänk synkroniserar kursregi
 $string['privacy:metadata:core_group'] = 'Pluginmodulen Kursmetalänk kan skapa grupper eller använda en befintlig grupp för att lägga till alla deltagare från den länkade kursen.';
 $string['syncall'] = 'Synkronisera alla registrerade användare.';
 $string['syncall_desc'] = 'Om aktiverat synkroniseras samtliga användare även om de inte har någon roll i den överordnade kursen. Om inaktiverat registreras enbart användare med minst en synkroniserad roll i den överordnade kursen.';
+$string['wscannotcreategroup'] = 'Behörighet för att skapa grupp i länkad kurs med ID = {$a} saknas.';
+$string['wsinvalidcourse'] = 'Kurs-ID \'{$a}\' saknas eller så saknas behörighet att länka i metaregistrering.';
+$string['wsinvalidmetacourse'] = 'Metakurs-ID \'{$a}\' saknas eller så saknas behörighet att lägga till en instans av registreringsmetoden.';
+$string['wsnoinstancesspecified'] = 'Inga instanser har angivits';

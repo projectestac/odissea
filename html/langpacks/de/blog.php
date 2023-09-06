@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'de', version '3.11'.
+ * Strings for component 'blog', language 'de', version '4.1'.
  *
  * @package     blog
  * @category    string
@@ -160,8 +160,8 @@ $string['privacy:unknown'] = 'Unbekannt';
 $string['publishto'] = 'Veröffentlichen für';
 $string['publishto_help'] = 'Es gibt 3 Optionen für Blogveröffentlichungen:
 
-* Persönlich - Nur Sie und die Administration können diesen Beitrag lesen
-* Alle auf dieser Website - Alle auf dieser Website registrieren Personen können den Beitrag lesen
+* Persönlich - Nur Sie und die Administrator/innen können diesen Beitrag lesen
+* Alle auf dieser Website - Alle auf dieser Website angemeldeten Personen können den Beitrag lesen
 * Weltweit öffentlich - Alle können den Beitrag lesen (auch Gäste und Suchmaschinen)';
 $string['publishtocourse'] = 'Mitglieder in gemeinsamen Kursen';
 $string['publishtocourseassoc'] = 'Mitglieder des verbundenen Kurses';
@@ -169,7 +169,7 @@ $string['publishtocourseassocparam'] = 'Mitglieder von {$a}';
 $string['publishtogroup'] = 'Mitglieder in gemeinsamer Gruppe';
 $string['publishtogroupassoc'] = 'Mitglieder in gemeinsamer Gruppe im verbundenen Kurs';
 $string['publishtogroupassocparam'] = 'Mitglieder in gemeinsamer Gruppe in {$a}';
-$string['publishtonoone'] = 'Persönlich';
+$string['publishtonoone'] = 'Persönlich (Entwurf)';
 $string['publishtosite'] = 'Alle auf dieser Website';
 $string['publishtoworld'] = 'Weltweit öffentlich';
 $string['readfirst'] = 'Bitte lesen';

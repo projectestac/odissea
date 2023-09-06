@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'it', version '3.11'.
+ * Strings for component 'question', language 'it', version '4.1'.
  *
  * @package     question
  * @category    string
@@ -35,6 +35,7 @@ $string['alltries'] = 'Tutti i tentativi';
 $string['answer'] = 'Risposta';
 $string['answers'] = 'Risposte';
 $string['answersaved'] = 'Risposta salvata';
+$string['answerx'] = 'Risposta {$a}';
 $string['attemptfinished'] = 'Tentativo terminato';
 $string['attemptfinishedsubmitting'] = 'Tentativo terminato inviando: {$a}';
 $string['attemptoptions'] = 'Opzioni per il tentativo';
@@ -69,6 +70,7 @@ $string['cannotmovequestion'] = 'Impossibile usare questo script per spostare do
 $string['cannotopenforwriting'] = 'Impossibile aprire per scrittura: {$a}';
 $string['cannotpreview'] = 'Impossibile vedere l\'anteprima di queste domande!';
 $string['cannotread'] = 'Non è possibile leggere il file da importare (o il file è vuoto)';
+$string['cannotregradedifferentqtype'] = 'Non è possibile rivalutare con una domanda di tipo diverso.';
 $string['cannotretrieveqcat'] = 'Non è stato possibile ottenere la categoria di domande';
 $string['cannotunhidequestion'] = 'Non è stato possibile rendere visibile la domanda';
 $string['cannotunzip'] = 'Impossibile unzippare il file.';
@@ -141,6 +143,7 @@ Ciascuna categoria appartiene ad un contesto che determina dove le relative doma
 - Contesto di sistema - le domande possono essere utilizzate nelle attività dei corsi di tutto il sito
 
 le categorie sono utili anche per le domande casuali che possono essere selezionate da specifiche categorie.';
+$string['editcategories_link'] = 'question/category';
 $string['editcategory'] = 'Modifica categoria';
 $string['editingcategory'] = 'Modifica una categoria';
 $string['editingquestion'] = 'Modifica una domanda';
@@ -193,7 +196,10 @@ $string['exportonequestion'] = 'Esporta la domanda nel formato Moodle XML';
 $string['exportquestions'] = 'Esporta le domande in un file';
 $string['exportquestions_help'] = 'Abilita l\'esportazione di una intera categoria di domande (e tutte le sue sotto-categorie) in un file di testo.
 Da notare in base al formato prescelto non sarà possibile esportare alcuni alcuni tipi di domande e alcune informazioni.';
+$string['exportquestions_link'] = 'question/export';
 $string['feedback'] = 'Feedback';
+$string['fieldinquestion'] = '{$a->fieldname} {$a->questionindentifier}';
+$string['fieldinquestionpre'] = '{$a->questionindentifier} {$a->fieldname}';
 $string['filecantmovefrom'] = 'I file delle domande non possono essere spostati poiché noi hai il privilegio di rimuovere file di domande dal loro posto.';
 $string['filecantmoveto'] = 'Il file di domande non può essere copiato né spostato poiché non hai il privilegio di aggiungere file nell\'area dove stai cercando di metterlo.';
 $string['fileformat'] = 'Formato file';
@@ -222,6 +228,7 @@ $string['howquestionsbehave_help'] = 'Gli studenti possono interagire con le dom
 In alternativa puoi consentire agli studenti di dare una risposta a ciascuna domanda e ricevere un feedback immediato: se la risposta non è giusta possono provare ancora. Questa è la modalità \'Interattiva con tentativi multipli\'.
 
 Le due modalità sono probabilmente quelle  più comunemente utilizzate.';
+$string['howquestionsbehave_link'] = 'question/behaviour';
 $string['idnumber'] = 'Codice identificativo';
 $string['idnumber_help'] = 'Se utilizzato, il codice identificativo deve essere univoco all\'interno di ciascuna categoria di domande. Fornisce un modo alternativo per identificare una domanda che può risultare utile in alcuni scenari d\'uso, è tuttavia possibile lasciarlo vuoto.';
 $string['ignorebroken'] = 'Ignora link interrotti';
@@ -238,6 +245,7 @@ $string['importingquestions'] = 'Importazione di {$a} domande da file';
 $string['importparseerror'] = 'Sono stati riscontrati errori durante la lettura del file da importare. Per importare comunque le domande senza errori prova ad impostare \'Fermati in presenza di errori\' a \'No\'';
 $string['importquestions'] = 'Importa le domande da un file';
 $string['importquestions_help'] = 'Consente l\'importazione delle domande usando file di testo in vari tipi di formato. I file di testo devono essere codificati UTF-8.';
+$string['importquestions_link'] = 'question/import';
 $string['importwrongfileencoding'] = 'Il file selezionato non utilizza la codifica UTF-8. Il file {$a} deve utilizzare il formato UTF-8';
 $string['importwrongfiletype'] = 'Il tipo di file selezionato ({$a->actualtype}) non corrisponde al tipo di formato di importazione ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Carattere sconosciuto {$a} rilevato al posto della parentesi';
@@ -320,7 +328,7 @@ $string['movedquestionsandcategories'] = 'Le domande e le categorie di domande s
 $string['movelinksonly'] = 'Cambia solamente l\'indirizzamento dei link, non spostare o copiare i files.';
 $string['moveq'] = 'Sposta domande';
 $string['moveqtoanothercontext'] = 'Sposta domanda in un altro contesto';
-$string['moveto'] = 'Sposta in >>';
+$string['moveto'] = 'Sposta in';
 $string['movingcategory'] = 'Spostamento categoria';
 $string['movingcategoryandfiles'] = 'Sei sicuro di voler spostare la categoria {$a->name} e tutte le sotto categorie nel contesto "{$a->contextto}"?<br /> Sono stati rilevati {$a->urlcount} files linkati da domande in {$a->fromareaname}, vuoi copiare o spostare questi in {$a->toareaname}?';
 $string['movingcategorynofiles'] = 'Sei sicuro di voler spostare la categoria "{$a->name}" e tutte le sottocategorie nel contesto "{$a->contextto}"?';
@@ -330,8 +338,10 @@ $string['movingquestionsnofiles'] = 'Sei sicuro di voler spostare domande da {$a
 $string['needtochoosecat'] = 'Devi scegliere una categoria dove spostare questa domanda oppure clicca su \'Annulla\'.';
 $string['nocate'] = 'La categoria {$a} non esiste!';
 $string['nopermissionadd'] = 'Non sei autorizzato ad aggiungere domande qui.';
+$string['nopermissionedit'] = 'Non sei autorizzato a modificare la domanda da qui.';
 $string['nopermissionmove'] = 'Non sei autorizzato a spostare domande da qui. Puoi salvare la domanda in questa categoria oppure salvarla come nuova domanda.';
 $string['noprobs'] = 'Non è stato trovato nessun problema nel database delle domande.';
+$string['noquestionbanks'] = 'Non sono stati trovati plugin del deposito delle domande';
 $string['noquestions'] = 'Non sono state trovate domande da esportare. Accertati di aver selezionato per l\'esportazione una categoria che contenga domande.';
 $string['noquestionsinfile'] = 'Nel file da importare non ci sono domande';
 $string['noresponse'] = '[Nessuna risposta]';
@@ -349,7 +359,7 @@ $string['notyourpreview'] = 'L\'anteprima non ti appartiene';
 $string['novirtualquestiontype'] = 'Non ci sono tipi virtuali di domanda per il tipo di domanda {$a}';
 $string['numqas'] = 'Num. tentativi per la domanda';
 $string['numquestions'] = 'Num. domande';
-$string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} nascoste)';
+$string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} nascoste +{$a->numdraft} draft)';
 $string['options'] = 'Opzioni';
 $string['page-question-category'] = 'Pagina con categoria di domande';
 $string['page-question-edit'] = 'Pagina di modifica domande';
@@ -360,6 +370,7 @@ $string['parent'] = 'Genitore';
 $string['parentcategory'] = 'Categoria genitore';
 $string['parentcategory_help'] = 'La nuova categoria sarà inserita all\'interno della categoria genitore. "Top" significa che la nuova categoria non sarà inserita in nessun\'altra categoria.
 I contesti delle categoria sono visualizzati in grassetto. Per ogni contesto dovrebbe essere presente almeno una categoria. ';
+$string['parentcategory_link'] = 'question/category';
 $string['parenthesisinproperclose'] = 'La parentesi prima di ** non è chiusa correttamente in {$a}**';
 $string['parenthesisinproperstart'] = 'La parentesi prima di ** non è aperta correttamente in {$a}**';
 $string['parsingquestions'] = 'Analisi domande presenti nel file di importazione.';
@@ -369,9 +380,11 @@ $string['partiallycorrectfeedbackdefault'] = 'Risposta parzialmente esatta.';
 $string['penaltyfactor'] = 'Fattore di penalità';
 $string['penaltyfactor_help'] = '<p>Per ogni risposta errata può essere definita la frazione di punteggio raggiunto che deve essere sottratta. Questo è significativo solamente se il quiz è eseguito in modo adattativo tale per cui allo studente è permesso di rispondere più volte alla domanda. Il fattore di penalità può essere un numero tra 0 e 1. Un fattore uguale a 1 significa che lo studente deve rispondere correttamente al primo tentativo se vuole ottenere qualche punto dalla domanda in questione. Un fattore uguale a 0 significa che lo studente può provare quante volte vuole e ancora aspirare al massimo punteggio per la stessa domanda.</p>';
 $string['penaltyforeachincorrecttry'] = 'Penalità per ogni scelta sbagliata';
-$string['penaltyforeachincorrecttry_help'] = 'Se le domande usano i comportamenti \'Interattivo con tentativi multipli\' oppure \'Modo adattativo" per dare allo studente più possibilità per rispondere correttamente, questa opzione consente di controllare quanto penalizzare lo studente per le scelte sbagliate.
+$string['penaltyforeachincorrecttry_help'] = 'Se le domande usano i comportamenti \'Interattivo con tentativi multipli\' oppure \'Modo adattativo\' per dare allo studente più possibilità per rispondere correttamente, questa opzione consente di controllare quanto penalizzare lo studente per i tentativi sbagliati.
 
-La penalità è in proporzione al punteggio totale della domanda, ad esempio se la domanda ha un punteggio pari a tre e la penalità è 0.3333333, lo studente otterrà un punteggio pari a tre se indovina la risposta subito, pari a 2 se indovina la risposta al secondo tentativo e pari a 1 se indovina la risposta al al terzo tentativo.';
+La penalità è in proporzione al punteggio totale della domanda, ad esempio se la domanda ha un punteggio pari a tre e la penalità è 0.3333333, lo studente otterrà un punteggio pari a tre se indovina la risposta subito, pari a 2 se indovina la risposta al secondo tentativo e pari a 1 se indovina la risposta al al terzo tentativo.
+
+Per alcune domande in più parti questa logica di punteggio viene applicata separatamente a ciascuna parte della domanda. I dettagli dipendono dal tipo di domanda e possono essere complicati, ma il principio è dare credito agli studenti per le conoscenze che hanno dimostrato nel modo più equo possibile.';
 $string['permissionedit'] = 'Modificare questa domanda';
 $string['permissionmove'] = 'Spostare questa domanda';
 $string['permissionsaveasnew'] = 'Salvare questa domanda come nuova domanda';
@@ -399,21 +412,26 @@ $string['privacy:metadata:database:question_attempts:responsesummary'] = 'Riassu
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'Ora di modifica del tentativo.';
 $string['privacy:metadata:link:qbehaviour'] = 'Il sottosistema Domanda utilizza i plugin di tipo Comportamento domanda.';
 $string['privacy:metadata:link:qformat'] = 'Il sottosistema Domanda utilizza i plugin di tipo Formati di importazione/esportazione domande per importare ed esportare le domande in formati diversi.';
-$string['privacy:metadata:link:qtype'] = 'Il sottosistema Domanda interagisce con i plugin Tipi domande, che contiene le diverse tipologie di domande.';
+$string['privacy:metadata:link:qtype'] = 'Il sottosistema Domanda interagisce con i plugin Tipi di domande, che contiene le diverse tipologie di domande.';
 $string['published'] = 'condivise';
+$string['qbanknotfound'] = 'Il plugin \'{$a}\' del deposito delle domande non esiste o non è stato riconosciuto.';
 $string['qtypeveryshort'] = 'T';
+$string['question_version'] = 'Versione domanda';
 $string['questionaffected'] = '<a href="{$a->qurl}">La domanda "{$a->name}" ({$a->qtype})</a> è in questa categoria ma è anche usata nel <a href="{$a->qurl}">quiz "{$a->quizname}"</a> nell\'altro corso "{$a->coursename}".';
 $string['questionbank'] = 'Deposito delle domande';
+$string['questionbanknavigation'] = 'Navigazione terziaria del deposito delle domande';
 $string['questionbehaviouradminsetting'] = 'Impostazioni comportamento della domanda';
 $string['questionbehavioursdisabled'] = 'Comportamenti domanda da disabilitare';
 $string['questionbehavioursdisabledexplained'] = 'Inserire un elenco di comportamenti (separati da virgola) che non devono comparire nel menu a discesa.';
 $string['questionbehavioursorder'] = 'Ordine dei comportamenti delle risposte';
 $string['questionbehavioursorderexplained'] = 'Inserire un elenco di comportamenti (separati da virgole)  nello stesso ordine con il quale si desidera farli comparire nel menù a discesa';
+$string['questioncategories'] = 'Categorie di domande';
 $string['questioncategory'] = 'Categoria di domande';
 $string['questioncatsfor'] = 'Categorie di domande di \'{$a}\'';
 $string['questiondoesnotexist'] = 'Questa domanda non esiste';
 $string['questionformtagheader'] = '{$a} tag';
 $string['questionidmismatch'] = 'Mancata corrispondenza delle id delle domande';
+$string['questionloaderror'] = 'Non è stato possibile caricare le opzioni della domanda.';
 $string['questionname'] = 'Nome della domanda';
 $string['questionnamecopy'] = '{$a} (copia)';
 $string['questionno'] = 'Domanda {$a}';
@@ -455,7 +473,10 @@ $string['showmaxmarkonly'] = 'Visualizza solo punteggio massimo';
 $string['shown'] = 'Visualizzato';
 $string['shownumpartscorrect'] = 'Visualizza il numero delle risposte esatte';
 $string['shownumpartscorrectwhenfinished'] = 'Visualizza il numero delle risposte esatte dopo che la domanda è stata completata';
-$string['showquestiontext'] = 'Visualizza il corpo del testo della domanda';
+$string['showquestiontext'] = 'Visualizzazione del testo della domanda nell\'elenco delle domande';
+$string['showquestiontext_full'] = 'Si, con immagini, media, ecc.';
+$string['showquestiontext_off'] = 'No';
+$string['showquestiontext_plain'] = 'Si, solo testo';
 $string['specificfeedback'] = 'Feedback specifico';
 $string['specificfeedback_help'] = 'Feedback dipendente dalla risposta data dallo studente';
 $string['started'] = 'Iniziato';
@@ -497,6 +518,7 @@ $string['updatedisplayoptions'] = 'Aggiorna opzioni di visualizzazione';
 $string['upgradeproblemcategoryloop'] = 'Rilevato un problema nell\'aggiornamento delle categorie di domande. C\'è un circolo nell\'albero delle categorie. Gli id delle categorie interessate sono {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'La categoria di domande {$a->name} ({$a->id}) non può essere aggiornata.';
 $string['upgradeproblemunknowncategory'] = 'Rilevato un problema nell\'aggiornamento delle categorie di domande. La categoria {$a->id} sta sotto alla categoria {$a->parent}, che non esiste. La categoria superiore è stata cambiata per risolvere il problema.';
+$string['version_selection'] = 'Versione {$a->version}';
 $string['whethercorrect'] = 'Se corretto';
 $string['whethercorrect_help'] = 'Include sia la descrizione testuale "Corretta", "Parzialmente corretta" o "Errata", sia eventuali evidenziamenti basati sui colori che forniscono le medesime informazioni';
 $string['whichtries'] = 'Visualizza tentativi';

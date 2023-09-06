@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ca', version '3.11'.
+ * Strings for component 'calendar', language 'ca', version '4.1'.
  *
  * @package     calendar
  * @category    string
@@ -137,7 +137,6 @@ $string['eventtime'] = 'Hora';
 $string['eventtype'] = 'Tipus d\'esdeveniment';
 $string['eventtypecategory'] = 'de categoria';
 $string['eventtypecourse'] = 'de curs';
-$string['eventtypeglobal'] = 'globals';
 $string['eventtypegroup'] = 'de grup';
 $string['eventtypemodule'] = 'de mòdul';
 $string['eventtypeother'] = 'altre(s)';
@@ -153,10 +152,8 @@ $string['exporthelp'] = 'Com em subscric a aquest calendari des d\'una aplicaci�
 $string['forcecalendartype'] = 'Força el calendari';
 $string['fri'] = 'dv';
 $string['friday'] = 'divendres';
+$string['fullcalendar'] = 'Calendari complet';
 $string['generateurlbutton'] = 'Genera URL del calendari';
-$string['global'] = 'Global';
-$string['globalevent'] = 'Esdeveniment global';
-$string['globalevents'] = 'Esdeveniments globals';
 $string['gotoactivity'] = 'Vés a l\'activitat';
 $string['gotocalendar'] = 'Vés al calendari';
 $string['group'] = 'Grup';
@@ -165,6 +162,7 @@ $string['groupevents'] = 'Esdeveniments de grup';
 $string['hideeventtype'] = 'Oculta els esdeveniments {$a}';
 $string['hourly'] = 'Cada hora';
 $string['importcalendar'] = 'Importa calendari';
+$string['importcalendarexternal'] = 'Voleu importar un calendari extern?';
 $string['importcalendarfrom'] = 'Importa des de';
 $string['importcalendarheading'] = 'S\'està important el calendari...';
 $string['importfromfile'] = 'Fitxer del calendari (*.ics)';
@@ -278,3 +276,4 @@ $string['when'] = 'Quan';
 $string['whendate'] = 'Quan: {$a}';
 $string['yesterday'] = 'Ahir';
 $string['youcandeleteallrepeats'] = 'Aquest esdeveniment és part d\'una sèrie d\'esdeveniments que es repeteixen. Podeu suprimir només aquest esdeveniment, o tots els {$a} de la sèrie alhora.';
+$string['yoursubscriptions'] = 'Calendaris importats';

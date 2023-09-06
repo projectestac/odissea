@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'eu', version '3.11'.
+ * Strings for component 'page', language 'eu', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -36,10 +36,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa orrietan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Orria motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa orrietan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Orria baliabideak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala orrietan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Orria motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala orrietan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Orria baliabideak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Ikastaro zaharren fitxategi-migrazioa';
 $string['legacyfilesactive'] = 'Aktiboa';
 $string['legacyfilesdone'] = 'Amaituta';
@@ -54,6 +56,7 @@ Orri bat erabil daiteke
 
 * Ikastaro baten baldintzak, laburpena edo ikasketa-programa aurkezteko
 * Azalpen batekin batera hainbat bideo edo audio txertatzeko';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Orriak';
 $string['optionsheader'] = 'Erakusteko aukerak';
 $string['page-mod-page-x'] = 'Orria moduluaren edozein orri';

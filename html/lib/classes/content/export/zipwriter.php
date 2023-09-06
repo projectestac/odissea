@@ -255,7 +255,7 @@ class zipwriter {
 
         $templatedata->global = (object) [
             'righttoleft' => right_to_left(),
-            'language' => str_replace('_', '-', current_language()),
+            'language' => get_html_lang_attribute_value(current_language()),
             'sitename' => format_string($SITE->fullname, true, ['context' => context_system::instance()]),
             'siteurl' => $CFG->wwwroot,
             'pathtotop' => $this->get_relative_context_path($context, $this->rootcontext, '/'),
@@ -274,7 +274,7 @@ class zipwriter {
             'courseshortname' => $exportedcourse->shortname,
             'courselink' => $courselink,
             'exportdate' => userdate(time()),
-            'maxfilesize' => display_size($this->maxfilesize),
+            'maxfilesize' => display_size($this->maxfilesize, 0),
         ];
 
         $renderer = $PAGE->get_renderer('core');

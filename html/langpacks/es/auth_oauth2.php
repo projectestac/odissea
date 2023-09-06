@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'es', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'es', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -92,13 +92,16 @@ $string['emailpasswordchangeinfosubject'] = '{$a}: Información sobre cambiar la
 $string['info'] = 'Cuenta externa';
 $string['issuer'] = 'Servicio OAuth 2';
 $string['issuernologin'] = 'El emisor no puede utilizarse para iniciar sesión';
+$string['key'] = 'Clave';
 $string['linkedlogins'] = 'Inicios de sesión vinculados';
 $string['linkedloginshelp'] = 'Ayuda con inicios de sesión vinculados';
+$string['loggedin'] = 'El usuario se autenticó exitosamente con el proveedor.';
 $string['loginerror_authenticationfailed'] = 'El proceso de autenticación falló.';
 $string['loginerror_cannotcreateaccounts'] = 'No se pudo encontrar una cuenta con su dirección de correo electrónico.';
 $string['loginerror_invaliddomain'] = 'La dirección de correo electrónico no se permite en este sitio.';
 $string['loginerror_nouserinfo'] = 'No se devolvió información de usuario. Es posible que el servicio OAuth 2 esté configurado incorrectamente.';
 $string['loginerror_userincomplete'] = 'La información de usuario devuelta no contenía nombre de usuario ni dirección de correo electrónico. Es posible que el servicio OAuth 2 esté configurado incorrectamente.';
+$string['noconfiguredidps'] = 'No hay proveedores OAuth2 configurados.';
 $string['noissuersavailable'] = 'Ninguno de los servicios de OAuth2 configurados le permite vincular cuentas de inicio de sesión';
 $string['notenabled'] = 'Lo sentimos, el plugin de autenticación OAuth 2 no está habilitado';
 $string['notloggedindebug'] = 'El intento de inicio de sesión falló. Motivo: {$a}';
@@ -118,3 +121,6 @@ $string['privacy:metadata:auth_oauth2:timemodified'] = 'La marca de tiempo que i
 $string['privacy:metadata:auth_oauth2:userid'] = 'El ID de la cuenta de usuario a la que está vinculado el inicio de sesión OAuth 2.';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'El ID del usuario que modificó esta cuenta.';
 $string['privacy:metadata:auth_oauth2:username'] = 'El nombre de usuario externo que se asigna a esta cuenta';
+$string['testidplogin'] = 'Ingreso de prueba con:';
+$string['userinfo'] = 'Datos del usuario desde el proveedor:';
+$string['value'] = 'Valor';

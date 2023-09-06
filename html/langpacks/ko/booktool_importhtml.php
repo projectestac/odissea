@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_importhtml', language 'ko', version '3.11'.
+ * Strings for component 'booktool_importhtml', language 'ko', version '4.1'.
  *
  * @package     booktool_importhtml
  * @category    string

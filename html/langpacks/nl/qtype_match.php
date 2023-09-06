@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'nl', version '3.11'.
+ * Strings for component 'qtype_match', language 'nl', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughquestions'] = 'Je moet minstens {$a} vraag- en antwoordparen o
 $string['pleaseananswerallparts'] = 'Beantwoord alle delen van de vraag.';
 $string['pluginname'] = 'Koppelvraag';
 $string['pluginname_help'] = 'Koppelvragen vragen van de respondent om een lijst van stellingen (vragen) te koppelen aan een andere lijst van stellingen (antwoorden).';
+$string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = 'Koppelvraag toevoegen';
 $string['pluginnameediting'] = 'Koppelvraag bewerken';
 $string['pluginnamesummary'] = 'Het antwoord op elk vraagonderdeel moet gekozen worden uit een lijst met mogelijke antwoorden.';
@@ -46,5 +47,7 @@ $string['privacy:metadata'] = 'De koppelvraagtype-plugin  laat vraag-auteurs sta
 $string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een bepaalde vraag.';
 $string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
 $string['privacy:preference:shuffleanswers'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
+$string['regradeissuenumchoiceschanged'] = 'Het aantal keuzes is gewijzigd.';
+$string['regradeissuenumstemschanged'] = 'Het aantal deelvragen is gewijzigd.';
 $string['shuffle'] = 'Vragen in willekeurige volgorde';
 $string['shuffle_help'] = 'Indien ingesteld, dan zal de volgorde van de vragen bij elke poging willekeurig dooreengeschud worden, op voorwaarde dat ook de "Willekeurige volgorde in vragen" in de activiteitsinstellingen is ingeschakeld.';

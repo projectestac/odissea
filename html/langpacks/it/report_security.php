@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'it', version '3.11'.
+ * Strings for component 'report_security', language 'it', version '4.1'.
  *
  * @package     report_security
  * @category    string
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['check_antivirus_error'] = 'Sono stati rilevati {$a->errors} errori all\'interno dell\'ultimo {$a->lookback}';
+$string['check_antivirus_info'] = 'Nessuna analizzatore di virus è stato abilitato';
+$string['check_antivirus_logstore_not_supported'] = 'Non è stato possibile verificare lo stato degli scanner antivirus a causa del tipo di log store selezioanto';
+$string['check_antivirus_name'] = 'Antivirus';
+$string['check_antivirus_ok'] = 'Antivirus';
 $string['check_configrw_details'] = '<p>Si raccomanda di modificare i permessi del file <code>config.php</code> subito dopo l\'installazione per evitare che il file possa essere modificato da processi del web server.
 Questa impostazione non innalza significativamente la sicurezza del sito, tuttavia riduce e limita i pericoli provenienti dai più comuni exploit.</p>';
 $string['check_configrw_name'] = 'File config.php modificabile';
@@ -62,12 +67,11 @@ $string['check_embed_details'] = '<p>L\'inserimento incondizionato di oggetti ne
 $string['check_embed_error'] = 'L\'inserimento incondizionato di oggetti nelle pagine è abilitato. Questo rappresenta uno dei maggiori rischi per la sicurezza dei server.';
 $string['check_embed_name'] = 'Consenti tag EMBED e OBJECT';
 $string['check_embed_ok'] = 'L\'inserimento incondizionato di oggetti nelle pagine non è consentito.';
-$string['check_frontpagerole_details'] = '<p>Il Ruolo di default per la pagina home viene attribuito a tutti gli utenti autenticati per consentirgli di partecipare alle attività presenti nella pagina home. Accertati che tale ruolo non possegga privilegi tali da consentirgli di compromettere la sicurezza del sito.</p>
-<p>Si raccomanda di creare un ruolo apposito per questo scopo, evitando di utilizzare Ruoli origine.</p>';
-$string['check_frontpagerole_error'] = 'Il Ruolo di default per la pagina home, "{$a}", non è definito in modo corretto!';
-$string['check_frontpagerole_name'] = 'Ruolo di default per la pagina home';
-$string['check_frontpagerole_notset'] = 'Il Ruolo di default per la pagina home non è impostato.';
-$string['check_frontpagerole_ok'] = 'Definizione del Ruolo di default per la pagina home OK.';
+$string['check_frontpagerole_details'] = '<p>Il Ruolo di default della la pagina home del sito viene attribuito a tutti gli utenti autenticati per consentirgli di partecipare alle attività presenti nella pagina home del sito. Accertarsi che tale ruolo non possegga privilegi tali da consentirgli di compromettere la sicurezza del sito.</p>';
+$string['check_frontpagerole_error'] = 'Il ruolo di default della la pagina home, "{$a}", non è definito in modo corretto.';
+$string['check_frontpagerole_name'] = 'Ruolo di default della la pagina home del sito';
+$string['check_frontpagerole_notset'] = 'Il Ruolo di default della la pagina home del sito non è impostato.';
+$string['check_frontpagerole_ok'] = 'Definizione del Ruolo di default della pagina home del sito OK.';
 $string['check_guestrole_details'] = '<p>Il Ruolo ospite è utilizzato per gli ospiti: agli utenti non autenticati può essere consentito un accesso temporaneo come ospite. Accertati che il ruolo ospite non possegga privilegi tali da consentirgli di compromettere la sicurezza del sito.</p>
 <p>Il solo Ruolo origine supportato per il ruolo di ospite è <em>Ospite</em>.</p>';
 $string['check_guestrole_error'] = 'Il Ruolo di default per gli ospiti, "{$a}", non è definito in modo corretto.';
@@ -96,6 +100,8 @@ $string['check_preventexecpath_warning'] = 'I percorsi degli eseguibili sono con
 $string['check_publicpaths_403'] = '(È stato restituito un 403, dovrebbe essere un 404)';
 $string['check_publicpaths_generic'] = 'I file {$a} non devono essere pubblici';
 $string['check_publicpaths_name'] = 'Controllare tutti i percorsi pubblici/privati';
+$string['check_publicpaths_ok'] = 'Tutti i percorsi interni non sono accessibili pubblicamente';
+$string['check_publicpaths_warning'] = 'Alcuni percorsi interni sono accessibili pubblicamente';
 $string['check_riskadmin_detailsok'] = '<p>Per favore verifica il seguente elenco di amministratori:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Per favore verifica il seguente elenco di amministratori:
 </p>{$a->admins}

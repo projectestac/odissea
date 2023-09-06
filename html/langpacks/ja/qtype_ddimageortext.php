@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'ja', version '3.11'.
+ * Strings for component 'qtype_ddimageortext', language 'ja', version '4.1'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -42,6 +42,8 @@ $string['dropbackground'] = 'マーカをドラッグするための背景イメ
 $string['dropzone'] = 'ドロップゾーン {$a}';
 $string['dropzoneheader'] = 'ドロップゾーン';
 $string['formerror_disallowedtags'] = 'このドラッグ可能テキストでは {$a} タグのみ許可されます。';
+$string['formerror_dragrequired'] = 'あなたはこの問題に少なくとも1つのドラッグ可能なアイテムを追加する必要があります。';
+$string['formerror_droprequired'] = 'あなたはこの問題に少なくとも1つのドロップゾーンを定義する必要があります。';
 $string['formerror_multipledraginstance'] = 'あなたはドロップゾーンの正解の選択肢としてこのイメージ {$a} を1回選択しましたが無制限のドラッグアイテムとしてマークされていません。';
 $string['formerror_multipledraginstance2'] = 'あなたはドロップゾーンの正解の選択肢としてこのイメージを1回以上選択しましたが、無制限のドラッグアイテムとしてマークされていません。';
 $string['formerror_noallowedtags'] = 'このテキストにはドラッグ可能イメージの代替テキストとしてHTMLタグは許可されていません。';
@@ -59,18 +61,19 @@ $string['nolabel'] = 'ラベルテキストなし';
 $string['pleasedraganimagetoeachdropregion'] = 'あなたの解答は完了していません。それぞれのドロップエリアにアイテムをドラッグしてください。';
 $string['pluginname'] = 'ドラッグ＆ドロップイメージ';
 $string['pluginname_help'] = 'ドラッグ＆ドロップイメージ問題は背景イメージに定義されたドロップゾーンにイメージまたはテキストラベルをドラッグ＆ドロップするためのレスポンデントを必要とします。ドラッグ可能アイテムは特定のグループ内アイテムすべてをドロップゾーンで同じ色にするためにグループ分けすることができます。無制限にマークされたドラッグ可能アイテムは2つの以上のゾーンにドロップすることができます。';
+$string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnameadding'] = 'ドラッグ＆ドロップイメージの追加';
 $string['pluginnameediting'] = 'ドラッグ＆ドロップイメージの編集';
 $string['pluginnamesummary'] = 'イメージまたはテキストラベルは背景イメージのドロップゾーンにドラッグ＆ドロップされます。
 
 注意: この問題タイプは視覚に障害のあるユーザは利用できません。';
-$string['previewareaheader'] = 'プレビュ';
+$string['previewareaheader'] = 'プレビュー';
 $string['previewareamessage'] = '背景イメージを選択してドラッグ可能イメージ指定した後、ドラッグするための背景イメージのドロップゾーンを定義してください。';
-$string['privacy:metadata'] = 'ドラッグ＆ドロップイメージ問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
+$string['privacy:metadata'] = 'ドラッグ＆ドロップイメージ問題タイププラグインは問題作成者がユーザプレファレンスとしてデフォルトオプションを設定できます。';
 $string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';
 $string['privacy:preference:penalty'] = '問題が「複数回受験インタラクティブ」または「アダプティブモード」で出題された場合のそれぞれの不正解のペナルティです。';
 $string['privacy:preference:shuffleanswers'] = '解答を自動的にシャッフルするかどうか指定します。';
-$string['refresh'] = 'プレビュをリフレッシュする';
+$string['refresh'] = 'プレビューをリフレッシュする';
 $string['shuffleimages'] = '問題の受験ごとにドラッグアイテムをシャッフルする';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';
 $string['summarisechoiceno'] = 'アイテム {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'gl', version '3.11'.
+ * Strings for component 'tool_mobile', language 'gl', version '4.1'.
  *
  * @package     tool_mobile
  * @category    string
@@ -31,7 +31,9 @@ $string['androidappid_desc'] = 'Este axuste pode deixarse como predeterminado a 
 $string['apppolicy'] = 'URL da directiva de aplis';
 $string['apppolicy_help'] = 'O URL dunha directiva para usuarios de aplis que aparece na páxina «Sobre» da apli. Se o campo se deixa baleiro, empregarase no seu lugar o URL das normas do sitio.';
 $string['apprequired'] = 'Esta funcionalidade só está dispoñíbel cando se accede a través da apli móbil ou da de escritorio do Moodle.';
-$string['autologinkeygenerationlockout'] = 'A xeración de claves de acceso automático está bloqueada. Ten que agardar 6 minutos entre as solicitudes.';
+$string['autologinkeygenerationlockout'] = 'A xeración de claves de acceso automático está bloqueada. Ten que agardar {$a} minutos entre as solicitudes.';
+$string['autologinmintimebetweenreq'] = 'Tempo mínimo entre solicitudes de acceso automático';
+$string['autologinmintimebetweenreq_desc'] = 'O tempo mínimo entre as solicitudes de acceso automático dende a apli móbil. Se aos usuarios da apli se lles pide con frecuencia que introduzan as súas credenciais ao ver contido incorporado desde o sitio, estabeleza un valor máis baixo.';
 $string['autologinnotallowedtoadmins'] = 'Non está permitido o acceso automático para administradores do sitio.';
 $string['cachedef_plugininfo'] = 'Isto garda a lista de engadidos cos complementos móbiles';
 $string['cachedef_subscriptiondata'] = 'Isto almacena a información de subscrición da apli de Moodle.';
@@ -59,7 +61,7 @@ Isto só o verá en inglés|https://someurl.xyz/english|browser|en_only
 </pre>';
 $string['darkmode'] = 'Modo escuro';
 $string['disabledfeatures'] = 'Funcións desactivadas';
-$string['disabledfeatures_desc'] = 'Seleccione aquí as funcións que quere desactivar na Apli móbil para o seu sitio. Teña en conta que algunhas funcións enumeradas aquí xa se poden desactivar a través doutros axustes do sitio. Terá que saír e acceder de novo á apli para ver os cambios.';
+$string['disabledfeatures_desc'] = 'Seleccione aquí as funcións que quere desactivar na apli Mobile para o seu sitio. Teña en conta que algunhas funcións enumeradas aquí xa se poden desactivar a través doutros axustes do sitio. Terá que saír e acceder de novo á apli para ver os cambios.';
 $string['displayerrorswarning'] = 'Amosar as mensaxes de depuración (debugdisplay) está activado. Debe estar desactivado.';
 $string['downloadcourse'] = 'Descargar curso';
 $string['downloadcourses'] = 'Descargar cursos';
@@ -71,12 +73,12 @@ $string['filetypeexclusionlistplaceholder'] = 'Lista de exclusión de tipos de f
 $string['forcedurlscheme'] = 'Se quere que só se abra a súa apli de marca personalizada a través dunha xanela do navegador, especifique aquí o seu esquema de URL. Se quere permitir só a apli oficial, estabeleza o valor predeterminado. Deixe o campo baleiro se quere permitir calquera apli.';
 $string['forcedurlscheme_key'] = 'Esquema de URL';
 $string['forcelogout'] = 'Forzar a saída';
-$string['forcelogout_desc'] = 'Se está activado, a opción da apli «Cambiar o sitio» substitúese por «Saír da sesión». Isto dá como resultado que o usuario se desconecta completamente. Entón deberá introducir o seu contrasinal a próxima vez que queira acceder ao sitio.';
+$string['forcelogout_desc'] = 'Se está activado, os usuarios sempre estarán completamente desconectados mesmo cando cambien de conta. Nese caso, deberán volver introducir o seu contrasinal a próxima vez que queiran acceder ao sitio.';
 $string['getmoodleonyourmobile'] = 'Obter a apli móbil';
 $string['h5poffline'] = 'Ver o contido H5P sen conexión';
 $string['httpsrequired'] = 'Requírese HTTPS';
 $string['insecurealgorithmwarning'] = 'Parece que o certificado HTTPS usa un algoritmo inseguro para asinar (SHA-1). Tente actualizar o certificado.';
-$string['invalidcertificatechainwarning'] = 'Parece que a cadea do certificado non é válida.';
+$string['invalidcertificatechainwarning'] = 'Parece que a cadea de certificados non é válida. Este certificado pode funcionar para un navegador pero non para unha apli móbil.';
 $string['invalidcertificateexpiredatewarning'] = 'Parece que o certificado HTTPS do sitio caducou.';
 $string['invalidcertificatestartdatewarning'] = 'Parece que o certificado HTTPS do sitio aínda non é válido (con data de inicio no futuro).';
 $string['invalidprivatetoken'] = 'O testemuño privado non é válido. O testemuño non debe estar baleiro nin pasar polo parámetro GET.';
@@ -92,9 +94,9 @@ $string['mainmenu'] = 'Menú principal';
 $string['managefiletypes'] = 'Xestionar os tipos de ficheiro';
 $string['minimumversion'] = 'Se se especifica unha versión da apli (3.8.0 ou superior), solicitaráselle a todos os usuarios que usen unha versión de apli máis antiga que actualicen a súa apli antes de ter acceso ao sitio.';
 $string['minimumversion_key'] = 'Requírese unha versión mínima da apli';
-$string['mobileapp'] = 'Apli móbil';
-$string['mobileappconnected'] = 'Apli móbil conectada';
-$string['mobileappearance'] = 'Aparencia da apli móbil';
+$string['mobileapp'] = 'Apli Mobile';
+$string['mobileappconnected'] = 'Apli Mobile conectada';
+$string['mobileappearance'] = 'Aparencia da Mobile';
 $string['mobileappenabled'] = 'Este sitio ten o acceso a apli móbil activado.<br /><a href="{$a}">Descargar a apli móbil</a> .';
 $string['mobileappsubscription'] = 'Subscrición á apli de Moodle';
 $string['mobileauthentication'] = 'Autenticación da Mobile';
@@ -121,17 +123,20 @@ $string['privacy:metadata:core_userkey'] = 'As chaves de usuario utilizadas para
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'Data da última solicitude de chave de acceso automático. Entre cada solicitude ten que agardar 6 minutos.';
 $string['qrcodedisabled'] = 'O acceso mediante código QR está desactivado';
 $string['qrcodeformobileappaccess'] = 'Código QR para acceder á aplicación móbil';
+$string['qrcodeformobileapploginabout'] = 'Escanee o código QR coa súa apli móbil e accederá automaticamente. O código QR caducará en {$a}.';
 $string['qrcodeformobileappurlabout'] = 'Escanee o código QR coa súa apli móbil para encher o URL do sitio na súa aplicación.';
 $string['qrcodetype'] = 'Acceso por código QR';
 $string['qrcodetype_desc'] = 'Pódese fornecer un código QR para que os usuarios de aplis móbiles o escaneen. Este código pódese usar para encher o URL do sitio ou, se o sitio é seguro mediante HTTPS, para acceder automaticamente á sesión do usuario sen ter que introducir o seu nome de usuario e contrasinal.';
 $string['qrcodetypelogin'] = 'Código QR con acceso automático';
 $string['qrcodetypeurl'] = 'Código QR co URL do sitio';
+$string['qrkeyttl'] = 'Duración da clave de autenticación do QR';
+$string['qrkeyttl_desc'] = 'Lapso de tempo durante o que é válido un código QR para o acceso automático.';
 $string['qrsiteadminsnotallowed'] = 'Por motivos de seguridade, os administradores do sitio non poden acceder a través do código QR ou se accedeu como outro usuario.';
 $string['readingthisemailgettheapp'] = 'Lendo isto nun correo electrónico? <a href="{$a}">Descargar a apli móbil e recibir notificacións no seu dispositivo móbil</a> .';
 $string['remoteaddons'] = 'Complementos remotos';
 $string['responsivemainmenuitems'] = 'Elementos de menú adaptativo';
 $string['scanqrcode'] = 'Escanear código QR';
-$string['selfsignedoruntrustedcertificatewarning'] = 'Parece que o certificado HTTPS está autoasinado ou non é fiábel. A apli móbil só funcionará con sitios de confianza.';
+$string['selfsignedoruntrustedcertificatewarning'] = 'Parece que o certificado HTTPS está asinado por si mesmo ou non é de confianza. A apli móbil só funcionará con sitios de confianza. Use calquera comprobador SSL en liña para diagnosticar o problema. Se indica que o seu certificado está correcto, pode ignorar este aviso.';
 $string['setuplink'] = 'Páxina de descarga da apli';
 $string['setuplink_desc'] = 'URL da páxina con opcións para descargar a apli móbil dende a App Store e Google Play. A ligazón da páxina de descarga da apli amosase no rodapé da páxina e no perfil do usuario. Déixea baleira para non amosar unha ligazón.';
 $string['smartappbanners'] = 'Báners da apli';

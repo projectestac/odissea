@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'ru', version '3.11'.
+ * Strings for component 'block_timeline', language 'ru', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Все';
-$string['ariadayfilter'] = 'Фильтровать элементы шкалы времени';
+$string['ariadayfilter'] = 'Фильтровать шкалу времени по дате';
 $string['ariadayfilteroption'] = 'Вариант фильтра «{$a}»';
 $string['ariaeventlistitem'] = 'Для элемента «{$a->name}» в курсе «{$a->course}» срок сдачи {$a->date}';
 $string['ariaeventlistpagelimit'] = 'Отображать элементов курса на странице: {$a}';
@@ -35,7 +35,8 @@ $string['ariaeventlistpaginationnavdates'] = 'Разбивка на стран�
 $string['ariaviewselector'] = 'Сортировать элементы шкалы времени';
 $string['ariaviewselectoroption'] = 'Вариант сортировки «{$a}»';
 $string['duedate'] = 'Срок сдачи';
-$string['morecourses'] = 'Больше курсов';
+$string['moreactivities'] = 'Показать больше активных элементов';
+$string['morecourses'] = 'Показать больше курсов';
 $string['next30days'] = 'Следующие 30 дней';
 $string['next3months'] = 'Следующие 3 месяца';
 $string['next6months'] = 'Следующие 6 месяцев';
@@ -47,6 +48,7 @@ $string['pluginname'] = 'Шкала времени';
 $string['privacy:metadata:timelinefilterpreference'] = 'Пользовательская настройка фильтра для блока «Шкала времени»';
 $string['privacy:metadata:timelinelimitpreference'] = 'Пользовательская настройка числа элементов курса для блока «Шкала времени»';
 $string['privacy:metadata:timelinesortpreference'] = 'Пользовательская настройка сортировки для блока «Шкала времени»';
+$string['searchevents'] = 'Поиск по типу или названию активных элементов';
 $string['sortbycourses'] = 'Сортировать по курсам';
 $string['sortbydates'] = 'Сортировать по дате';
 $string['timeline'] = 'Шкала времени';

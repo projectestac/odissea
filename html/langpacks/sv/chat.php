@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'sv', version '3.11'.
+ * Strings for component 'chat', language 'sv', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -61,7 +61,7 @@ $string['currentusers'] = 'Nuvarande användare';
 $string['deletesession'] = 'Ta bort denna session';
 $string['deletesessionsure'] = 'Är du säker på att du vill ta bort denna session?';
 $string['donotusechattime'] = 'Visa inte några chattider';
-$string['enterchat'] = 'Klicka här för att ansluta till chatten';
+$string['enterchat'] = 'Anslut till chatten';
 $string['entermessage'] = 'Skriv ditt meddelande';
 $string['errornousers'] = 'Hittade inga användare!';
 $string['eventmessagesent'] = 'Meddelande skickat';
@@ -75,10 +75,12 @@ $string['indicator:cognitivedepth'] = 'Chat kognitivt';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baserad på det kognitiva djup som nåtts av en student i en Chatt-aktivitet.';
 $string['indicator:cognitivedepthdef'] = 'Chatt kognitivt';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemanget som erbjuds av Chatt-aktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa, Inskickning, Visa återkoppling, Kommentera återkoppling)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Chatt social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Chattaktivitet.';
 $string['indicator:socialbreadthdef'] = 'Chatt social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Chattaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt, Deltagaren tillsammans med andra)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = 'Inmatningsfält';
 $string['invalidid'] = 'Det gick inte att hitta det chat-rummet!';
 $string['list_all_sessions'] = 'Lista alla sessioner';
@@ -107,6 +109,7 @@ Chattar är speciellt användbara när gruppen som samtalar inte har möjlighet 
 * Yngre barn som använder chatten i hemmet under kvällarna som en kontrollerad introduktion till socialt nätverkande
 * En frågor-och-svar-session med en inbjuden talare på en annan plats
 * Sessioner för att hjälpa eleverna att förbereda sig på prov där läraren, eller andra elever, kan ställa exempelfrågor';
+$string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Chattar';
 $string['neverdeletemessages'] = 'Ta aldrig bort meddelanden';
 $string['nextchattime'] = 'Nästa chattillfälle:';
@@ -124,6 +127,7 @@ $string['notlogged'] = 'Du är inte inloggad!';
 $string['oldping'] = 'Frånkopplingstimeout';
 $string['page-mod-chat-x'] = 'Valfri sida i chattmodulen';
 $string['pastchats'] = 'Tidigare chattsessioner';
+$string['pastsessions'] = 'Tidigare sessioner';
 $string['pluginadministration'] = 'Hantera chattar';
 $string['pluginname'] = 'Chatt';
 $string['privacy:metadata:chat_messages_current'] = 'Nuvarande chatsession. Denna data är tillfällig och tas bort när chattsessionen tas bort.';
@@ -175,4 +179,4 @@ $string['usingchat_help'] = 'Chattmodulen innehåller några funktioner för att
 * Emoting - Du kan starta en rad med "/me" eller ":" för att emote, till exempel om ditt namn är Kim och du skriver ":laughs!" eller "/me laughs!" då kommer alla att se "Kim skrattar!"
 * Ping - Du kan skicka ett ljud till andra deltagare genom att klicka på länken "pinga" bredvid deras namn. En användbar genväg för att pinga alla personer i chatten på en gång är att skriva "pinga alla".
 * HTML - Om du kan använda HTML-kod kan du använda den i texten för att göra saker som att infoga bilder, spela upp ljud eller skapa färgad text';
-$string['viewreport'] = 'Visa de senaste chat-sessionerna';
+$string['viewreport'] = 'Tidigare sessioner';

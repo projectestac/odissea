@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupselect', language 'de', version '3.11'.
+ * Strings for component 'groupselect', language 'de', version '4.1'.
  *
  * @package     groupselect
  * @category    string
@@ -93,6 +93,7 @@ $string['modulename_help'] = 'Teilnehmer/innen können Gruppen erstellen und wä
 * Betreuer/innen können Gruppen hinzugefügt werden
 * Die Trainer/innen können die Gruppenliste des Kurses als CSV-Datei exportieren
 * Volle Kompatibilität zu Basis Moodle-Gruppen: Gruppen können auch durch andere Plugins erzeugt werden.';
+$string['modulename_link'] = 'mod/groupselect/view';
 $string['modulenameplural'] = 'Freie Gruppeneinteilungen';
 $string['nogroups'] = 'Keine Gruppen vorhanden, aus denen Sie wählen können.';
 $string['notavailableanymore'] = 'Die freie Gruppeneinteilung ist nicht mehr verfügbar (seit {$a}).';

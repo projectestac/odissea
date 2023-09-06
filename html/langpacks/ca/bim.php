@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bim', language 'ca', version '3.11'.
+ * Strings for component 'bim', language 'ca', version '4.1'.
  *
  * @package     bim
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['bim_table_details'] = 'Detalls';
 $string['mark'] = 'Puntua';
+$string['student_details_question_heading'] = 'Pregunta';

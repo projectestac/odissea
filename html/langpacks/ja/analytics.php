@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'ja', version '3.11'.
+ * Strings for component 'analytics', language 'ja', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -41,15 +41,15 @@ $string['defaultpredictoroption'] = 'デフォルトプロセッサ ({$a})';
 $string['defaulttimesplittingmethods'] = 'モデル評価のデフォルト分析間隔';
 $string['defaulttimesplittingmethods_help'] = '分析間隔ではシステムが予測計算するタイミングおよび予測時に考慮される活動ログの割り当てを定義します。特定の分析間隔が指定されない限り、モデル評価処理はこれらの分析間隔を通して繰り返されます。';
 $string['disabledmodel'] = '無効モデル';
-$string['erroralreadypredict'] = '{$a} ファイルはすでに予測に使用されています。';
-$string['errorcannotreaddataset'] = 'データセットファイル {$a} を読むことができません。';
+$string['erroralreadypredict'] = '{$a} ファイルはすでに予測の生成に使用されています。';
+$string['errorcannotreaddataset'] = 'データセットファイル {$a} を読めません。';
 $string['errorcannotusetimesplitting'] = '提供された分析インターバルはこのモデルで使用できません。';
-$string['errorcannotwritedataset'] = 'データセットファイル {$a} に書き込むことができません。';
+$string['errorcannotwritedataset'] = 'データセットファイル {$a} に書き込めません。';
 $string['errorexportmodelresult'] = '機械学習モデルはエクスポートできません。';
-$string['errorimport'] = '提供された JSONファイルのインポート時にエラーが発生しました。';
+$string['errorimport'] = '提供されたJSONファイルのインポート時にエラーが発生しました。';
 $string['errorimportmissingclasses'] = '次のアナリティクスコンポーネントはこのサイトで利用できません:
 {$a->missingclasses}';
-$string['errorimportmissingcomponents'] = '提供されたモデルには次のプラグインがインストールされている必要があります: {$a} あなたのサイトにインストールされているバージョンがバージョンに合致する必要がないことに留意してください。多くの場合、同じまたは新しいバージョンのインストールで十分です。';
+$string['errorimportmissingcomponents'] = '提供されたモデルには次のプラグインがインストールされている必要があります: {$a} あなたのサイトにインストールされているバージョンがバージョンに合致する必要がないことに留意してください。多くの場合、同じまたは新しいバージョンのプラグインのインストールで十分です。';
 $string['errorimportversionmismatches'] = '次のコンポーネントのバージョンがこのサイトにインストールされているバージョンと異なります: {$a} あなたはオプション「バージョンミスマッチを無視する」を使用してこれらの差異を無視できます。';
 $string['errorinvalidcontexts'] = 'いくつかの選択済みコンテクストはこのターゲットでは使用できません。';
 $string['errorinvalidindicator'] = '無効な {$a} 指標';
@@ -58,7 +58,7 @@ $string['errorinvalidtimesplitting'] = '無効な分析間隔です。あなた�
 $string['errornocontextrestrictions'] = '選択済みターゲットはコンテクスト制限をサポートしません。';
 $string['errornoexportconfig'] = 'モデル設定のエクスポート時に問題が発生しました。';
 $string['errornoexportconfigrequirements'] = '分析間隔の非静的モデルのみエクスポートできます。';
-$string['errornoindicators'] = 'このモデルには指標はありません。';
+$string['errornoindicators'] = 'このモデルに指標はありません。';
 $string['errornopredictresults'] = '予測プロセッサから戻された結果はありません。詳細はアウトプットディレクトリのコンテンツを確認してください。';
 $string['errornoroles'] = '学生または教師ロールが定義されていません。アナリティクス設定ページで設定してください。';
 $string['errornotarget'] = 'このモデルにはターゲットがありません。';
@@ -82,7 +82,7 @@ $string['insightinfomessagehtml'] = 'システムがあなたに洞察を生成�
 $string['insightinfomessageplain'] = 'システムがあなたに洞察を生成しました: {$a}';
 $string['insightmessagesubject'] = '「 {$a} 」の新しい洞察';
 $string['invalidanalysablefortimesplitting'] = '{$a} 分析間隔を使用して分析できません。';
-$string['invalidtimesplitting'] = 'トレーニングに使用する前にID {$a} のモデルには分析間隔が必要です。';
+$string['invalidtimesplitting'] = 'トレーニングに使用するにはID {$a} のモデルに分析間隔が必要です。';
 $string['levelinstitution'] = '教育レベル';
 $string['levelinstitutionisced0'] = '幼児教育 (教育的達成のための初等教育未満)';
 $string['levelinstitutionisced1'] = '初等教育';
@@ -106,7 +106,7 @@ $string['neutral'] = '中立';
 $string['neverdelete'] = '計算を削除しない';
 $string['nocourses'] = '分析するコースはありません。';
 $string['nodata'] = '分析するデータはありません。';
-$string['noevaluationbasedassumptions'] = '仮定に基づくモデルを評価することはできません。';
+$string['noevaluationbasedassumptions'] = '仮定に基づくモデルは評価できません。';
 $string['noinsights'] = '報告された洞察はありません。';
 $string['noinsightsmodel'] = 'このモデルは洞察を生成しません。';
 $string['nonewdata'] = '利用可能な新しいデータはありません。モデルは次の分析間隔後に分析されます。';
@@ -119,11 +119,15 @@ $string['notuseful'] = '有益ではない';
 $string['novaliddata'] = '利用可能な有効なデータはありません。';
 $string['novalidsamples'] = '利用可能な有効なサンプルはありません。';
 $string['onlycli'] = 'アナリティクス処理をコマンドラインのみで実行する';
-$string['onlycliinfo'] = '評価モデル、機械学習アルゴリズムまたは予測の取得等のアナリティクス処理には時間を要します。cronタスクとして実行できます。またはコマンドラインにより強制的に実行できます。この設定を無効にした場合、ウェブインターフェース経由でアナリティクス処理を手動実行できます。';
+$string['onlycliinfo'] = '評価モデル、機械学習アルゴリズムまたは予測の取得等のアナリティクス処理には時間を要します。cronタスクとして実行、またはコマンドラインにより強制的に実行できます。この設定を無効にした場合、ウェブインタフェース経由でアナリティクス処理を手動実行できます。';
 $string['percentonline'] = 'オンラインの割合';
-$string['percentonline_help'] = 'あなたの組織がブレンド型またはハイブリッド型のコースを提供する場合、学生の作業がMoodle上でオンラインで実施される割合を指定してください。0から100までの数値を使用してください。';
+$string['percentonline_help'] = 'あなたの組織がブレンド型またはハイブリッド型のコースを提供する場合、学生の作業がMoodle上でオンラインで実施される割合を指定してください。0から100までの数字を使用してください。';
 $string['predictionsprocessor'] = '予測プロセッサ';
-$string['predictionsprocessor_help'] = '予測プロセッサは計算モデルの指標およびターゲットにより生成されたデータセットを処理する機械学習バックエンドです。それぞれのモデルは異なるプロセッサで使用することができます。ここで指定したモデルはデフォルトとなります。';
+$string['predictionsprocessor_help'] = '予測プロセッサは計算モデルの指標およびターゲットにより生成されたデータセットを処理する機械学習バックエンドです。それぞれのモデルは異なるプロセッサで使用できます。ここで指定したモデルはデフォルトとなります。';
+$string['privacy:metadata:analytics:analyticsmodels'] = '分析モデル';
+$string['privacy:metadata:analytics:analyticsmodels:usermodified'] = 'モデルを修正したユーザ';
+$string['privacy:metadata:analytics:analyticsmodelslog'] = '分析モデルで使用するログ';
+$string['privacy:metadata:analytics:analyticsmodelslog:usermodified'] = 'ログを修正したユーザ';
 $string['privacy:metadata:analytics:indicatorcalc'] = '指標計算です。';
 $string['privacy:metadata:analytics:indicatorcalc:contextid'] = 'コンテクストです。';
 $string['privacy:metadata:analytics:indicatorcalc:endtime'] = '計算終了日時です。';
@@ -136,7 +140,7 @@ $string['privacy:metadata:analytics:indicatorcalc:value'] = '計算値です。'
 $string['privacy:metadata:analytics:predictionactions'] = '予測アクションです。';
 $string['privacy:metadata:analytics:predictionactions:actionname'] = 'アクション名です。';
 $string['privacy:metadata:analytics:predictionactions:predictionid'] = '予測Dです。';
-$string['privacy:metadata:analytics:predictionactions:timecreated'] = 'いつ予測アクションが実施されたか示します。';
+$string['privacy:metadata:analytics:predictionactions:timecreated'] = 'いつ予測アクションが実行されたか示します。';
 $string['privacy:metadata:analytics:predictionactions:userid'] = 'アクションを実行したユーザです。';
 $string['privacy:metadata:analytics:predictions'] = '予測です。';
 $string['privacy:metadata:analytics:predictions:calculations'] = '指標計算です。';
@@ -153,6 +157,7 @@ $string['processingsitecontents'] = 'サイトコンテンツの処理';
 $string['successfullyanalysed'] = '正常に分析しました。';
 $string['timesplittingmethod'] = '分析間隔';
 $string['timesplittingmethod_help'] = '分析間隔ではシステムが予測計算するタイミングおよび予測時に考慮される活動ログの割り当てを定義します。例えばコース継続時間を部分に分割して、それぞれの部分の最後に予測を生成できます。';
+$string['timesplittingmethod_link'] = 'Time_splitting_methods';
 $string['typeinstitution'] = 'インスティテューションタイプ';
 $string['typeinstitutionacademic'] = '高等教育';
 $string['typeinstitutionngo'] = '非政府組織 (NGO)';
@@ -162,4 +167,4 @@ $string['viewdetails'] = '詳細を表示する';
 $string['viewinsight'] = '洞察を表示する';
 $string['viewinsightdetails'] = '洞察詳細を表示する';
 $string['viewprediction'] = '予測詳細を表示する';
-$string['washelpful'] = 'これは役に立ちましたか?';
+$string['washelpful'] = 'これは参考になりましたか?';

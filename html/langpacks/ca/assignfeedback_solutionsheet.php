@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_solutionsheet', language 'ca', version '3.11'.
+ * Strings for component 'assignfeedback_solutionsheet', language 'ca', version '4.1'.
  *
  * @package     assignfeedback_solutionsheet
  * @category    string
@@ -31,6 +31,7 @@ $string['confirmtext'] = 'Confirmeu que voleu mostrar les solucions als estudian
 $string['confirmtitle'] = 'Confirmació';
 $string['default'] = 'Activat per defecte';
 $string['enabled'] = 'Fitxes de solució';
+$string['enabled_link'] = 'assignfeedback/solutionsheet';
 $string['fromnowon'] = 'Activa-ho d\'ara endavant';
 $string['hidesolutionsafter'] = 'Oculta les solucions després';
 $string['pluginname'] = 'Fitxa de solució';

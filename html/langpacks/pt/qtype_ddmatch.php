@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmatch', language 'pt', version '3.11'.
+ * Strings for component 'qtype_ddmatch', language 'pt', version '4.1'.
  *
  * @package     qtype_ddmatch
  * @category    string
@@ -29,6 +29,7 @@ $string['draganswerhere'] = 'Arraste a resposta para aqui';
 $string['editingddmatch'] = 'Editar pergunta de correspondência com arrastar e largar';
 $string['pluginname'] = 'Correspondência com arrastar e largar';
 $string['pluginname_help'] = 'A pergunta de correspondência com arrastar e largar requer que o utilizador estabeleça a correspondência entre uma lista de designações ou frases (perguntas) e outra lista de designações ou frases (respostas).';
+$string['pluginname_link'] = 'question/type/ddmatch';
 $string['pluginnameadding'] = 'Adicionar pergunta de correspondência com arrastar e largar';
 $string['pluginnameediting'] = 'Editar pergunta de correspondência com arrastar e largar';
 $string['pluginnamesummary'] = 'Uma extensão da pergunta de correspondência que permite ao utilizador arrastar e largar itens para estabelecer a correspondência entre as respostas e as perguntas.';

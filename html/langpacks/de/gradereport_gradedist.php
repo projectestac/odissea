@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_gradedist', language 'de', version '3.11'.
+ * Strings for component 'gradereport_gradedist', language 'de', version '4.1'.
  *
  * @package     gradereport_gradedist
  * @category    string
@@ -86,4 +86,5 @@ $string['privacy:null_reason'] = 'Dieses Plugin speichert keine personenbezogene
 $string['saved'] = 'Die Notenstufen wurden erfolgreich geändert.';
 $string['showgradeitem'] = 'Auswahl Bewertungsspalte';
 $string['showgradeitem_description'] = 'Zeige Bewertungsaspekte mit folgenden Bewertungsanzeige-Typen als Auswahlmöglichkeit unter Bewertungsspalte an.';
+$string['submitanddownload'] = 'Änderungen speichern';
 $string['sum'] = 'Summe';

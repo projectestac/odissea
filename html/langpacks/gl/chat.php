@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'gl', version '3.11'.
+ * Strings for component 'chat', language 'gl', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'Ten próximas sesións de conversas';
+$string['activityoverview'] = 'Ten próximas sesións de  conversas';
 $string['ajax'] = 'Versión que usa AJAX';
 $string['autoscroll'] = 'Autodesprazamento';
 $string['beep'] = 'Pito';
@@ -61,12 +61,12 @@ $string['currentusers'] = 'Usuarios actuais';
 $string['deletesession'] = 'Eliminar esta sesión';
 $string['deletesessionsure'] = 'Confirma que quere eliminar esta sesión?';
 $string['donotusechattime'] = 'Non publicar ningunha hora da conversa';
-$string['enterchat'] = 'Prema aquí para acceder á conversa agora';
+$string['enterchat'] = 'Entrar na conversa';
 $string['entermessage'] = 'Escriba a súa mensaxe';
 $string['errornousers'] = 'Non foi posíbel atopar a ningún usuario!';
 $string['eventmessagesent'] = 'Mensaxe enviada';
 $string['eventsessionsviewed'] = 'Sesións vistas';
-$string['explaingeneralconfig'] = 'Estes axustes úsanse <strong>sempre</strong>';
+$string['explaingeneralconfig'] = 'Esta configuración <strong>sempre</strong> se usa';
 $string['explainmethoddaemon'] = 'Estes axustes só teñen un efecto se se selecciona «Servizo de servidor para conversas» como método de conversas.';
 $string['explainmethodnormal'] = 'Estes axustes só teñen un efecto se se selecciona «Normal» como método de conversas.';
 $string['generalconfig'] = 'Configuración xeral';
@@ -94,7 +94,7 @@ $string['messages'] = 'Mensaxes';
 $string['messageyoubeep'] = 'Enviou un bip a {$a}';
 $string['method'] = 'Método de conversa';
 $string['methodajax'] = 'AJAX';
-$string['methoddaemon'] = 'Servizo de servidor para conversas';
+$string['methoddaemon'] = 'Servizo de servidor para conversa';
 $string['methodnormal'] = 'Normal';
 $string['modulename'] = 'Conversa';
 $string['modulename_help'] = 'O módulo de actividade de conversa permítelles aos participantes ter debates baseados en texto, en tempo real, síncronas.
@@ -127,6 +127,7 @@ $string['notlogged'] = 'Non iniciou a súa sesión!';
 $string['oldping'] = 'Tempo de expiración';
 $string['page-mod-chat-x'] = 'Calquera páxina do módulo de conversa';
 $string['pastchats'] = 'Sesións pasadas de conversa';
+$string['pastsessions'] = 'Sesións pasadas';
 $string['pluginadministration'] = 'Administración da conversa';
 $string['pluginname'] = 'Conversa';
 $string['privacy:metadata:chat_messages_current'] = 'Sesión actual de conversa. Este dato é temporal e elimínase após que se elimine a sesión de conversa';
@@ -161,7 +162,7 @@ $string['serverip'] = 'IP do servidor';
 $string['servermax'] = 'Usuarios máximos';
 $string['serverport'] = 'Porto do servidor';
 $string['sessions'] = 'Sesións de conversa';
-$string['sessionstart'] = 'A seguinte sesión de conversa comezará en: {$a->date}, ({$a->fromnow}a partires de agora)';
+$string['sessionstart'] = 'A seguinte sesión de conversa comezará en: {$a->date}, ({$a->fromnow} a partir de agora))';
 $string['sessionstartsin'] = 'A seguinte sesión de conversa comezará dentro de {$a}.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Todo o mundo pode ver as sesións pasadas';
@@ -178,4 +179,4 @@ $string['usingchat_help'] = 'O módulo de conversa contén algunhas característ
 * Ánimo (emoting) - pode comezar unha liña con «/me» ou «:» para denotar o ánimo, por exemplo se o seu nome fose Quin e escribe «:laughs!» ou «/me laughs!» Entón todo o mundo verá «Qin risas!»
 * Pitos - Pode enviar un son a outros participantes ao premer a ligazón «pito» próxima ao seu nome. Un atallo útil para enviar un pito a todas as persoas da conversa á vez é escribir «beep al»".
 * HTML - Se sabe algún código de HTML, pode utilizalo no seu texto para facer cousas como inserir imaxes, sons de xogos ou crear texto con cores diferentes';
-$string['viewreport'] = 'Ver sesións pasadas de conversa';
+$string['viewreport'] = 'Sesións pasadas';

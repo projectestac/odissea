@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -65,6 +65,7 @@ $string['pleaseenterananswer'] = '请输入一个答案。';
 $string['pleaseenteranswerwithoutthousandssep'] = '输入的答案不要包含千位分隔符（{$a}）。';
 $string['pluginname'] = '数字题';
 $string['pluginname_help'] = '从学生角度看，数字题很像填空题。区别是，数字题可以设置可接受的误差范围，这样若干个不同的答案都可被看做是一个答案。例如，如果答案是10，可接受的误差是2，那么所有8到12之间的数字都被认为是正确的。';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = '添加一道数字题';
 $string['pluginnameediting'] = '编辑一道数字题';
 $string['pluginnamesummary'] = '答案为数字，可以包含单位。通过和多种标准答案比较来自动评分，有一定的容错能力。';
@@ -108,13 +109,6 @@ $string['unitposition'] = '单位位置';
 $string['units'] = '单位';
 $string['unitselect'] = '下拉菜单';
 $string['unitx'] = '单位 {no}';
-$string['validnumberformats'] = '有效的数字格式';
-$string['validnumberformats_help'] = '* 普通数字，13500.67、13 500.67、 13500,67 或 13 500,67
-
-* 如果您用“,”做千位分隔符，就*必须*使用小数点“.”，就像 13,500.67 : 13,500。
-
-* 对对数形式，1.350067 * 10<sup>4</sup> 用 1.350067 E4 : 1.350067 E04 表示';
-$string['validnumbers'] = '13500.67、13 500.67、13,500.67、13500,67、13 500,67、1.350067 E4 或 1.350067 E04';
 $string['xmustbenumeric'] = '{$a}必须是一个数字。';
 $string['xmustnotbenumeric'] = '{$a}不能是一个数字。';
 $string['youmustenteramultiplierhere'] = '必须键入一个乘数';

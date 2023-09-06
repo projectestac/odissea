@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'gl', version '3.11'.
+ * Strings for component 'access', language 'gl', version '4.1'.
  *
  * @package     access
  * @category    string
@@ -40,7 +40,7 @@ $string['sitemap'] = 'Mapa do sitio';
 $string['skipa'] = 'Omitir {$a}';
 $string['skipblock'] = 'Omitir o bloque';
 $string['skipnavigation'] = 'Omitir a navegación';
-$string['skipto'] = 'Ir á {$a}';
+$string['skipto'] = 'Ir a {$a}';
 $string['tocontent'] = 'Ir ao contido principal';
 $string['tonavigation'] = 'Ir á navegación';
 $string['youarehere'] = 'Vostede está aquí';

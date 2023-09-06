@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'gl', version '3.11'.
+ * Strings for component 'message', language 'gl', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -31,7 +31,7 @@ $string['addcontactconfirm'] = 'Confirma que quere engadir a {$a} aos seus conta
 $string['addtofavourites'] = 'Destacar a conversa';
 $string['addtoyourcontacts'] = 'Engadir a contactos';
 $string['addtoyourcontactsandmessage'] = 'Engadir a contactos e mensaxe';
-$string['ago'] = 'Hai {$a}';
+$string['ago'] = 'vai {$a}';
 $string['allusers'] = 'Todas as mensaxes de todos os usuarios';
 $string['backto'] = 'Volver a {$a}';
 $string['backupmessageshelp'] = 'Se está activado, as mensaxes instantáneas serán incluídas nas copias de seguridade automatizadas do SITIO';
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Bloquear mensaxes de usuarios que non estean na m
 $string['blockuser'] = 'Bloquear usuario';
 $string['blockuserconfirm'] = 'Confirma que quere bloquear a «{$a}»?';
 $string['blockuserconfirmbutton'] = 'Bloque';
-$string['canceledit'] = 'Cancelar a edición de mensaxes';
 $string['cancelselection'] = 'Cancelar a selección de mensaxes';
 $string['cantblockuser'] = 'Non pode bloquear a {$a} porque ten un rol con permiso para enviar mensaxes a todos os usuarios.';
 $string['contactableprivacy'] = 'Aceptar mensaxes de:';
@@ -67,7 +66,7 @@ $string['deleteselectedmessagesconfirm'] = 'Confirma que quere eliminar as mensa
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Confirma que quere eliminar as mensaxes persoais seleccionadas?';
 $string['disableall'] = 'Desactivar as notificacións';
 $string['disabled'] = 'A mensaxería está desactivada neste sitio';
-$string['disallowed'] = 'Prohibido';
+$string['disallowed'] = 'Desbloqueado';
 $string['editmessages'] = 'Editar as mensaxes';
 $string['emailtagline'] = 'Esta é unha copia da mensaxe que se lle enviou en «{$a->sitename}». Vaia a {$a->url} para contestar.';
 $string['enabled'] = 'Activado';
@@ -86,6 +85,7 @@ $string['eventmessageviewed'] = 'Mensaxe vista';
 $string['eventnotificationsent'] = 'Notificación enviada';
 $string['eventnotificationviewed'] = 'Notificación vista';
 $string['forced'] = 'Bloqueado';
+$string['forcedmessage'] = 'Bloqueado';
 $string['groupconversations'] = 'Grupo';
 $string['groupinfo'] = 'Información do grupo';
 $string['guestnoeditmessage'] = 'Os convidados non poden editar as opcións de mensaxería';
@@ -105,8 +105,6 @@ $string['loggedoffdescription'] = 'Cando non está rexistrado no Moodle';
 $string['managemessageoutputs'] = 'Preferencias de notificación predeterminadas';
 $string['message'] = 'Mensaxe';
 $string['messagecontactrequest'] = '{$a->user} solicita ser engadido como contacto. Visite a súa páxina de <a href="{$a->url}">solicitudes de contacto</a> para responder á solicitude';
-$string['messagecontactrequestsnotification'] = '{$a} solicita ser engadido como contacto.';
-$string['messagecontactrequestsnotificationsubject'] = 'Solicitude de contacto de {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: Solicitude de contacto de {$a->user}';
 $string['messagecontentaudio'] = 'Son';
 $string['messagecontentimage'] = 'Imaxe';
@@ -137,9 +135,8 @@ $string['nofavourites'] = 'Non hai conversas destacadas';
 $string['noframesjs'] = 'Usar unha interface máis accesíbel';
 $string['nogroupconversations'] = 'Non hai conversas en grupo';
 $string['noindividualconversations'] = 'Non hai conversas privadas';
-$string['nomessages'] = 'Sen mensaxes';
 $string['nomessagesfound'] = 'Non se atoparon mensaxes';
-$string['noncontacts'] = 'Non hai contactos';
+$string['noncontacts'] = 'Sen contactos';
 $string['nonotifications'] = 'Non ten notificacións';
 $string['noparticipants'] = 'Non hai participantes';
 $string['noreply'] = 'Non responder a este correo';
@@ -156,11 +153,7 @@ $string['offline'] = 'Sen conexión';
 $string['on'] = 'Activada';
 $string['online'] = 'En liña';
 $string['otherparticipants'] = 'Outros participantes';
-$string['outputdisabled'] = 'Saída desactivada';
-$string['outputdoesnotexist'] = 'Non existe a saída de mensaxes';
-$string['outputenabled'] = 'Saída activada';
 $string['outputnotavailable'] = 'Non dispoñíbel';
-$string['outputnotconfigured'] = 'Sen configurar';
 $string['page-message-x'] = 'Calquera páxina de mensaxes';
 $string['participants'] = 'Participantes';
 $string['pendingcontactrequests'] = 'Ten pendentes {$a} solicitudes de contacto';
@@ -223,6 +216,9 @@ $string['privacy:metadata:preference:core_message_settings'] = 'Axustes relacion
 $string['privacy:request:preference:set'] = 'O valor do axuste «{$a->name}» era «{$a->value}»';
 $string['privacy_desc'] = 'Pode restrinxir quen pode enviarlle unha mensaxe';
 $string['processorsettings'] = 'Axustes do procesador';
+$string['providerenabled'] = 'Enviando «{$a}» estado activado.';
+$string['providerprocesorisdisallowed'] = '«{$a->provider}» en «{$a->processor}» está desbloqueado';
+$string['providerprocesorislocked'] = '«{$a->provider}» en «{$a->processor}» está bloqueado';
 $string['removecontact'] = 'Retirar o contacto';
 $string['removecontactconfirm'] = 'Confirma que quere retirar a {$a} dos seus contactos?';
 $string['removecoursefilter'] = 'Retirar filtro para o curso {$a}';
@@ -247,13 +243,15 @@ $string['sendbulkmessagesingle'] = 'Enviar unha mensaxe a 1 persoa';
 $string['sendcontactrequest'] = 'Enviar a solicitude de contacto';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = 'Enviando «{$a->provider}» mediante «{$a->processor}»';
+$string['sendingviaenabled'] = 'Enviando «{$a->provider}» mediante «{$a->processor}» estado activado';
+$string['sendingvialocked'] = 'Enviando «{$a->provider}» mediante «{$a->processor}» estado bloqueado';
 $string['sendingviawhen'] = 'Enviando «{$a->provider}» mediante «{$a->processor}» cando {$a->state}';
 $string['sendmessage'] = 'Enviar mensaxe';
 $string['sendmessageto'] = 'Enviar mensaxe a {$a}';
 $string['sendmessagetopopup'] = 'Enviar mensaxe a {$a} - nova xanela';
 $string['settings'] = 'Axustes';
 $string['showmessagewindownonew'] = 'Amosar a xanela de mensaxes sen novas mensaxes';
-$string['showmessagewindowwithcount'] = 'Amosar a xanela de mensaxes con {$a} mensaxes novas';
+$string['showmessagewindowwithcount'] = 'Amosar a xanela de mensaxes con  {$a} mensaxes novas';
 $string['shownotificationwindownonew'] = 'Amosar a xanela de notificación sen novas notificacións';
 $string['shownotificationwindowwithcount'] = 'Amosar a xanela de notificación con {$a} notificacións novas';
 $string['togglemessagemenu'] = 'Cambiar o caixón de mensaxería';

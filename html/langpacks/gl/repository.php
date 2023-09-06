@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'gl', version '3.11'.
+ * Strings for component 'repository', language 'gl', version '4.1'.
  *
  * @package     repository
  * @category    string
@@ -65,7 +65,7 @@ $string['chooselicense'] = 'Escolla a licenza';
 $string['chooselicense_help'] = 'Siga estas ligazóns para obter máis información sobre as opcións de licenza dispoñíbeis:';
 $string['cleancache'] = 'Limpar os meus ficheiros na caché';
 $string['close'] = 'Pechar';
-$string['commonrepositorysettings'] = 'Axustes comúns do repositorio';
+$string['commonrepositorysettings'] = 'Configuración común do repositorio';
 $string['configallowexternallinks'] = 'Esta opción activa que os usuarios escollan se os elementos multimedia externos se copien ou non en Moodle. Se está desactivada, os medios copiaranse sempre en Moodle (isto é o mellor para a integridade xeral dos datos e da seguridade). Se está activada, os usuarios poderran escoller cada vez que engadan elementos multimedia a un texto.';
 $string['configcacheexpire'] = 'Tempo total (en segundos) durante o que os listados de ficheiros están na caché local cando se navega por repositorios externos.';
 $string['configgetfiletimeout'] = 'Tempo de espera en segundos, para descargar un ficheiro externo dentro de Moodle.';
@@ -74,12 +74,12 @@ $string['configsyncfiletimeout'] = 'Tempo de espera en segundos para a sincroniz
 $string['configsyncimagetimeout'] = 'Tempo de espera en segundos para descargar un ficheiro de imaxe dende un repositorio externo durante a sincronización.';
 $string['confirmdelete'] = 'Confirma que quere eliminar o repositorio {$a}? Se escolle «Continuar e descargar», os ficheiros referidos a contidos externos descargaranse a Moodle, mais a este proceso levaralle bastante tempo.';
 $string['confirmdeletefile'] = 'Confirma que quere eliminar este ficheiro?';
-$string['confirmdeletefilewithhref'] = 'Confirma que quere eliminar este ficheiro? Hai {$a} alcumes/atallos a ficheiros que usan este ficheiro como orixe. Se continua, estes alcumes converteranse en copias auténticas.';
+$string['confirmdeletefilewithhref'] = 'Confirma que quere eliminar este ficheiro?  Hai {$a} ligazóns a este ficheiro. Se continúa, as localizacións que ligan actualmente ao ficheiro actualizaranse automaticamente para usar unha copia do ficheiro.';
 $string['confirmdeletefolder'] = 'Confirma que quere eliminar este cartafol? Eliminaranse todos os ficheiros e subcartafoles.';
 $string['confirmdeleteselectedfile'] = 'Confirma que quere eliminar os ficheiros seleccionados {$a}?';
 $string['confirmremove'] = 'Confirma que quere retirar o engadido de repositorio {$a}, as súas opcións e <strong>todas as súas instancias</strong>? Se escolle «Continuar e descargar», os ficheiros referidos a contidos externos descargaranse a Moodle, mais a este proceso levaralle bastante tempo.';
-$string['confirmrenamefile'] = 'Confirma que quere renomear/mover este ficheiro? Hai {$a} alcumes/atallos a ficheiros que usan este ficheiro como orixe. Se continua, estes alcumes converteranse en copias auténticas.';
-$string['confirmrenamefolder'] = 'Confirma que quere renomear/mover este cartafol? calquera alcume/atallo a ficheiros que fagan referencia a este cartafol converteranse en copias reais.';
+$string['confirmrenamefile'] = 'Confirma que quere renomear/mover este ficheiro?';
+$string['confirmrenamefolder'] = 'Confirma que quere mover/renomear este cartafol? Calquera localización que ligue actualmente a ficheiros deste cartafol actualizarase automaticamente para usar copias do ficheiro.';
 $string['continueuninstall'] = 'Continuar';
 $string['continueuninstallanddownload'] = 'Continuar e descargar';
 $string['copying'] = 'Copiando';
@@ -118,7 +118,7 @@ $string['enter'] = 'Introducir';
 $string['entername'] = 'Introduza o nome do cartafol';
 $string['enternewname'] = 'Introduza o novo nome do ficheiro';
 $string['error'] = 'Produciuse un erro descoñecido.';
-$string['errordoublereference'] = 'Non é posíbel sobrescribir un ficheiro cun atallo/alias debido a que xa existen atallos cara a este ficheiro.';
+$string['errordoublereference'] = 'Non é posíbel sobrescribir o ficheiro cunha ligazón porque xa existen ligazóns a este ficheiro.';
 $string['errornotyourfile'] = 'Só pode seleccionar os ficheiros que engadiu vostede.';
 $string['errorpostmaxsize'] = 'O ficheiro enviado excede a directiva post_max_size en php.ini.';
 $string['erroruniquename'] = 'O nome da instancia de repositorio debe ser único';
@@ -157,7 +157,7 @@ $string['invalidrepositoryid'] = 'ID incorrecto de repositorio';
 $string['isactive'] = 'Activo?';
 $string['keyword'] = 'Palabra clave';
 $string['lastmodified'] = 'Última modificación';
-$string['license'] = 'Licencia';
+$string['license'] = 'Licenza';
 $string['linkexternal'] = 'Ligazón externa';
 $string['listview'] = 'Ver como lista';
 $string['loading'] = 'Cargando...';
@@ -167,8 +167,8 @@ $string['logout'] = 'Saír';
 $string['lostsource'] = 'Erro: Non se atopa a orixe {$a}.';
 $string['makefilecontrolledlink'] = 'Crea unha ligazón controlada de acceso ao ficheiro';
 $string['makefileinternal'] = 'Facer unha copia do ficheiro';
-$string['makefilelink'] = 'Ligar directamente co ficheiro';
-$string['makefilereference'] = 'Crear un alcume/atallo ao ficheiro';
+$string['makefilelink'] = 'Ligazón ao ficheiro externo';
+$string['makefilereference'] = 'Ligazón ao ficheiro';
 $string['manage'] = 'Xestionar repositorios';
 $string['manageinstances'] = 'Xestionar as instancias';
 $string['manageurl'] = 'Xestionar';
@@ -218,8 +218,8 @@ $string['privacy:metadata:repository_instances:userid'] = 'O ID do usuario propi
 $string['privacy:metadata:repository_instances:username'] = 'O nome de usuario opcional configurado para a instancia do repositorio.';
 $string['privatefilesof'] = '{$a} ficheiros privados';
 $string['readonlyinstance'] = 'Non pode editar nin eliminar unha instancia de só lectura';
-$string['referencesexist'] = 'Existen {$a} alcumes/atallos de ficheiros que ligan a este ficheiro como orixe.';
-$string['referenceslist'] = 'Alcumes/atallos';
+$string['referencesexist'] = 'Hai {$a} ligazóns a este ficheiro';
+$string['referenceslist'] = 'Ligazóns';
 $string['refresh'] = 'Actualizar';
 $string['refreshnonjsfilepicker'] = 'Peche esta xanela e actualice o selector de ficheiros non-javascript';
 $string['removed'] = 'Repositorio retirado';
@@ -242,7 +242,7 @@ $string['select'] = 'Seleccionar';
 $string['setmainfile'] = 'Estabelecer como ficheiro principal';
 $string['setmainfile_help'] = 'Se houber múltiples ficheiros no cartafol, o ficheiro principal é o que aparece ao ver a páxina. Outros ficheiros, coma as imaxes ou vídeos, poden incrustarse dentro deste. No xestor de ficheiros, o ficheiro principal está indicado co seu título resaltado en grosa.';
 $string['settings'] = 'Axustes';
-$string['setupdefaultplugins'] = 'Axuste dos engadidos predeterminados de repositorio';
+$string['setupdefaultplugins'] = 'Configuración dos engadidos predeterminados de repositorio';
 $string['siteinstances'] = 'Instancias de repositorios do sitio';
 $string['size'] = 'Tamaño';
 $string['sourcekeymismatch'] = 'O URL de orixe non coincide coa chave de orixe.';

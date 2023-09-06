@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_nntp', language 'es', version '3.11'.
+ * Strings for component 'auth_nntp', language 'es', version '4.1'.
  *
  * @package     auth_nntp
  * @category    string
@@ -33,3 +33,4 @@ $string['auth_nntpnotinstalled'] = 'No puede utilizar identificación NNTP. El m
 $string['auth_nntpport'] = 'Puerto del Servidor (119 es el más habitual)';
 $string['auth_nntpport_key'] = 'Puerto';
 $string['pluginname'] = 'Usar un servidor NNTP';
+$string['privacy:metadata'] = 'El plugin de Autenticación por servidor NNTP no almacena ningun dato personal.';

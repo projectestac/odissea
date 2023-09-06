@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'eu', version '3.11'.
+ * Strings for component 'qtype_ordering', language 'eu', version '4.1'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -33,6 +33,7 @@ $string['noresponsedetails'] = 'Barkatu baina ez dago galdera honen erantzunari 
 $string['notenoughanswers'] = 'Ordenatzeko galderak {$a} baino erantzun gehiago izan behar ditu.';
 $string['pluginname'] = 'Ordenatzen';
 $string['pluginname_help'] = 'Elementu batzuk nahastutako ordenean agertzen dira. Elementuak arrastatu daitezke zentzuzko ordenean jarriaz.';
+$string['pluginname_link'] = 'question/type/ordering';
 $string['pluginnameadding'] = 'Ordenatzeko galdera bat gehitzen';
 $string['pluginnameediting'] = 'Ordenatzeko galdera bat editatzen';
 $string['pluginnamesummary'] = 'Nahastutako elementuak zentzuzko ordenean jarri.';

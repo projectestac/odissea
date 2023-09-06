@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'gl', version '3.11'.
+ * Strings for component 'tag', language 'gl', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -42,7 +42,7 @@ $string['combineselected'] = 'Combinado seleccionado';
 $string['component'] = 'Compoñente';
 $string['confirmdeletetag'] = 'Confirma que quere eliminar esta etiqueta?';
 $string['confirmdeletetags'] = 'Confirma que quere eliminar as etiquetas seleccionadas?';
-$string['count'] = 'Cantidade';
+$string['count'] = 'Número';
 $string['coursetags'] = 'Etiquetas do curso';
 $string['defautltagcoll'] = 'Colección predeterminada';
 $string['delete'] = 'Eliminar';
@@ -57,7 +57,7 @@ $string['editsearchable'] = 'Cambiar buscábel';
 $string['edittag'] = 'Editar esta etiqueta';
 $string['edittagcoll'] = 'Editar a colección de etiquetas {$a}';
 $string['edittagcollection'] = 'Cambiar a colección de etiquetas';
-$string['entertags'] = 'Introduza etiquetas ...';
+$string['entertags'] = 'Escriba as etiquetas separadas por comas';
 $string['errortagfrontpage'] = 'Non está permitido etiquetar a páxina principal do sitio.';
 $string['errorupdatingrecord'] = 'Produciuse un erro ao actualizar o rexistro da etiqueta';
 $string['eventtagadded'] = 'Etiqueta engadida a un elemento';
@@ -70,8 +70,8 @@ $string['eventtagflagged'] = 'Marcouse cun sinalador a etiqueta';
 $string['eventtagremoved'] = 'Etiqueta retirada dun elemento';
 $string['eventtagunflagged'] = 'Retiróuselle o sinalador á etiqueta';
 $string['eventtagupdated'] = 'Actualizouse a etiqueta';
-$string['exclusivemode'] = 'Amosar soamente o etiquetado {$a->tagarea}';
-$string['flag'] = 'Sinalador';
+$string['exclusivemode'] = 'Amosar soamente o etiquetada {$a->tagarea}';
+$string['flag'] = 'Indicador';
 $string['flagasinappropriate'] = 'Sinalar como inapropiadas';
 $string['flagged'] = 'Marcouse cun sinalador a etiqueta';
 $string['helprelatedtags'] = 'Etiquetas relacionadas separadas por comas';
@@ -89,15 +89,15 @@ $string['namesalreadybeeingused'] = 'Estes nomes de etiqueta xa están empregado
 $string['nameuseddocombine'] = 'Este nome de etiqueta xa foi usado, quere combinar estas etiquetas?';
 $string['newcollnamefor'] = 'Nome novo para a colección de etiquetas {$a}';
 $string['newnamefor'] = 'Novo nome para a etiqueta {$a}';
-$string['nextpage'] = 'More';
+$string['nextpage'] = 'Máis';
 $string['noresultsfor'] = 'Ningún resultado para «{$a}»';
 $string['notagsfound'] = 'Non se atoparon etiquetas que coincidan con «{$a}»';
 $string['nothingtoupdate'] = 'Nada para actualizar';
 $string['owner'] = 'Propietario';
-$string['page-tag-index'] = 'Páxina cunha soa etiqueta';
-$string['page-tag-manage'] = 'Páxina de administración de etiquetas';
-$string['page-tag-search'] = 'Páxina de busca de etiquetas';
-$string['page-tag-x'] = 'Todas as páxinas de etiquetas';
+$string['page-tag-index'] = 'Páxina de sinalador único';
+$string['page-tag-manage'] = 'Páxina para administrar sinaladores';
+$string['page-tag-search'] = 'Páxina de busca de sinaladores';
+$string['page-tag-x'] = 'Todas as páxinas etiquetadas';
 $string['prevpage'] = 'Atrás';
 $string['privacy:metadata:tag'] = 'Os datos de cada etiqueta única almacenáronse xunto coa súa descrición e outras informacións relacionadas';
 $string['privacy:metadata:tag:description'] = 'A descrición da etiqueta.';
@@ -118,7 +118,7 @@ $string['relatedtags'] = 'Etiquetas relacionadas';
 $string['removetagfrommyinterests'] = 'Retirar «{$a}» como do meu interese';
 $string['reset'] = 'Restabelecer';
 $string['resetfilter'] = 'Reiniciar o filtro';
-$string['resetflag'] = 'Restabelecer o indicador';
+$string['resetflag'] = 'Restabelecer indicador';
 $string['responsiblewillbenotified'] = 'A persoa responsábel será notificada';
 $string['rssdesc'] = 'Esta fonte RSS foi xerada automaticamente por Moodle e contén etiquetas xeradas polo usuario para os cursos.';
 $string['rsstitle'] = 'Fonte RSS de etiquetas de curso para usuario: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bim', language 'el', version '3.11'.
+ * Strings for component 'bim', language 'el', version '4.1'.
  *
  * @package     bim
  * @category    string
@@ -112,7 +112,7 @@ $string['bim_marker_error_heading'] = 'Σφάλμα: επικύρωσης δεδ
 $string['bim_marker_m_r'] = '# Ανακοινώθηκαν / # Βαθμολογήθηκαν';
 $string['bim_marker_notstudent_heading'] = 'Σφάλμα: δεν είναι μαθητής σας';
 $string['bim_marker_post_details'] = 'Βαθμολόγηση αναρτήσεων';
-$string['bim_marker_posts'] = '# αντιγραμμένων δημοσιεύσεων';
+$string['bim_marker_posts'] = '# αναρτήσεις αντιγράφηκαν';
 $string['bim_marker_progress'] = 'Αποτέλεσμα προόδου';
 $string['bim_marker_show_qs_link'] = 'εμφάνιση των προτροπών εδώ';
 $string['bim_marker_student'] = 'Μαθητής';

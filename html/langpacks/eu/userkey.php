@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'eu', version '3.11'.
+ * Strings for component 'userkey', language 'eu', version '4.1'.
  *
  * @package     userkey
  * @category    string
@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adduserkey'] = 'Gehitu erabiltzaile-gakoa';
 $string['createnewkey'] = 'Sortu erabiltzaile-gako berria';
 $string['createuserkey'] = 'Sortu erabiltzaile-gakoa';
 $string['deletekeyconfirm'] = 'Benetan ezabatu nahi al duzu erabiltzaile-gako hau?';
+$string['deleteuserkey'] = 'Ezabatu erabiltzaile-gakoa';
 $string['edituserkey'] = 'Editatu erabiltzaile-gakoa';
 $string['keyiprestriction'] = 'Gakoetarako IP helbideen murrizketa';
 $string['keyiprestriction_help'] = 'Idatzi datu hauetara sarbidea izango duen/duten IP helbide zehatza edo IP helbide-tartea. Hutsik utzi ezazu IP mugarik ezarri nahi ez baduzu (ez da gomendagarria).';

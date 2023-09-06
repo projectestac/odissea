@@ -49,6 +49,8 @@ function attendance_supports($feature) {
         // Artem Andreev: AFAIK it's not tested.
         case FEATURE_COMPLETION_TRACKS_VIEWS:
             return false;
+        case FEATURE_MOD_PURPOSE:
+            return MOD_PURPOSE_ADMINISTRATION;
         default:
             return null;
     }
@@ -460,7 +462,7 @@ function attendance_pluginfile($course, $cm, $context, $filearea, $args, $forced
     $fs = get_file_storage();
     $relativepath = implode('/', $args);
     $fullpath = "/$context->id/mod_attendance/$filearea/$sessid/$relativepath";
-    if (!$file = $fs->get_file_by_hash(sha1($fullpath)) or $file->is_directory()) {
+    if (!$file = $fs->get_file_by_hash(sha1($fullpath)) || $file->is_directory()) {
         return false;
     }
     send_stored_file($file, 0, 0, true);
@@ -485,6 +487,9 @@ function attendance_print_settings_tabs($selected = 'settings') {
         $tabs[] = new tabobject('defaultwarnings', $CFG->wwwroot . '/mod/attendance/warnings.php',
             get_string('defaultwarnings', 'attendance'), get_string('defaultwarnings', 'attendance'), false);
     }
+
+    $tabs[] = new tabobject('customfields', $CFG->wwwroot . '/mod/attendance/customfields.php',
+        get_string('customfields', 'attendance'), get_string('customfields', 'attendance'), false);
 
     $tabs[] = new tabobject('coursesummary', $CFG->wwwroot.'/mod/attendance/coursesummary.php',
         get_string('coursesummary', 'attendance'), get_string('coursesummary', 'attendance'), false);
@@ -534,5 +539,92 @@ function attendance_remove_user_from_thirdpartyemails($warnings, $userid) {
     // Sadly need to update each individually, no way to bulk update as all the thirdpartyemails field can be different.
     foreach ($updatedwarnings as $updatedwarning) {
         $DB->update_record('attendance_warning', $updatedwarning);
+    }
+}
+
+/**
+ * Add nodes to myprofile page.
+ *
+ * @param \core_user\output\myprofile\tree $tree Tree object
+ * @param stdClass $user user object
+ * @param bool $iscurrentuser
+ * @param stdClass $course Course object
+ *
+ * @return bool
+ */
+function mod_attendance_myprofile_navigation(core_user\output\myprofile\tree $tree, $user, $iscurrentuser, $course) {
+    if (empty($course)) {
+        return;
+    }
+    $cms = get_all_instances_in_course('attendance', $course, $user->id);
+    if (empty($cms)) {
+        return;
+    }
+    $cm = reset($cms);
+    if (!empty($cm->coursemodule) && has_capability('mod/attendance:viewreports', context_module::instance($cm->coursemodule))) {
+        $url = new moodle_url('/mod/attendance/view.php', ['id' => $cm->coursemodule,
+                                                           'mode' => mod_attendance_view_page_params::MODE_THIS_COURSE,
+                                                           'studentid' => $user->id]);
+
+        $node = new core_user\output\myprofile\node('reports', 'attendanceuserreport',
+                                                    get_string('attendanceuserreport', 'attendance'),
+                                                    null, $url);
+        $tree->add_node($node);
+    }
+}
+
+/**
+ * Adds module specific settings to the settings block
+ *
+ * @param settings_navigation $settingsnav The settings navigation object
+ * @param navigation_node $attendancenode The node to add module settings to
+ */
+function attendance_extend_settings_navigation(settings_navigation $settingsnav, navigation_node $attendancenode) {
+
+    $context = $settingsnav->get_page()->cm->context;
+    $cm = $settingsnav->get_page()->cm;
+    $nodes = [];
+    if (has_capability('mod/attendance:viewreports', $context)) {
+        $nodes[] = ['url' => new moodle_url('/mod/attendance/report.php', ['id' => $cm->id]),
+                    'title' => get_string('report', 'attendance')];
+    }
+    if (has_capability('mod/attendance:import', $context)) {
+        $nodes[] = ['url' => new moodle_url('/mod/attendance/import.php', ['id' => $cm->id]),
+                    'title' => get_string('import', 'attendance')];
+    }
+    if (has_capability('mod/attendance:export', $context)) {
+        $nodes[] = ['url' => new moodle_url('/mod/attendance/export.php', ['id' => $cm->id]),
+                    'title' => get_string('export', 'attendance')];
+    }
+
+    if (has_capability('mod/attendance:viewreports', $context) && get_config('attendance', 'enablewarnings')) {
+        $nodes[] = ['url' => new moodle_url('/mod/attendance/absentee.php', ['id' => $cm->id]),
+                    'title' => get_string('absenteereport', 'attendance')];
+    }
+    if (has_capability('mod/attendance:changepreferences', $context)) {
+        $nodes[] = ['url' => new moodle_url('/mod/attendance/preferences.php', ['id' => $cm->id]),
+                    'title' => get_string('statussetsettings', 'attendance')];
+        if (get_config('attendance', 'enablewarnings')) {
+            $nodes[] = ['url' => new moodle_url('/mod/attendance/warnings.php', ['id' => $cm->id]),
+            'title' => get_string('warnings', 'attendance')];
+        }
+    }
+
+    if (has_capability('mod/attendance:managetemporaryusers', context_module::instance($cm->id))) {
+        $nodes[] = ['url' => new moodle_url('/mod/attendance/tempusers.php', ['id' => $cm->id]),
+        'title' => get_string('tempusers', 'attendance'),
+        'more' => true];
+    }
+
+    foreach ($nodes as $node) {
+        $settingsnode = navigation_node::create($node['title'],
+                                                $node['url'],
+                                                navigation_node::TYPE_SETTING);
+        if (isset($settingsnode)) {
+            if (!empty($node->more)) {
+                $settingsnode->set_force_into_more_menu(true);
+            }
+            $attendancenode->add_node($settingsnode);
+        }
     }
 }

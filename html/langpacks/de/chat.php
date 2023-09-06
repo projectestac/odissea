@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'de', version '3.11'.
+ * Strings for component 'chat', language 'de', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -75,10 +75,12 @@ $string['indicator:cognitivedepth'] = 'Chat kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Chat-Aktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Chat kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Chat-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen, Feedback kommentieren).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Chat sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Chat-Aktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Chat sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Chat-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = 'Eingabefeld';
 $string['invalidid'] = 'Chat-Raum wurde nicht gefunden!';
 $string['list_all_sessions'] = 'Alle Sitzungen auflisten';
@@ -109,6 +111,7 @@ Chats sind besonders nützlich, wenn die Gruppe sich nicht persönlich treffen k
 * Jüngere Kinder nutzen den Chat zu Hause am Abend als kontrollierte (überwachte) Einführung in die Welt der sozialen Netzwerke
 * Eine Frage- und Antwortsitzung mit einem eingeladenen Redner an einem anderen Ort
 * Sitzungen zur Unterstützung der Teilnehmer/innen bei der Vorbereitung auf Tests, bei denen die/der Trainer/in oder andere Teilnehmer/innen Beispielfragen stellen würden';
+$string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Nie löschen';
 $string['nextchattime'] = 'Nächster Chat:';
@@ -126,6 +129,7 @@ $string['notlogged'] = 'Nicht angemeldet!';
 $string['oldping'] = 'Timeout';
 $string['page-mod-chat-x'] = 'Jede Chat-Seite';
 $string['pastchats'] = 'Vorherige Chat-Sitzungen';
+$string['pastsessions'] = 'Letzte Sitzung';
 $string['pluginadministration'] = 'Chat-Administration';
 $string['pluginname'] = 'Chat';
 $string['privacy:metadata:chat_messages_current'] = 'Derzeitige Chat-Session. Temporäre Daten, die kurz nach der Session gelöscht werden.';
@@ -177,4 +181,4 @@ $string['usingchat_help'] = 'Der \'Chat\' besitzt Fähigkeiten, die das Chatten 
 * Personalisierung - Wenn eine Zeile mit \'/me\' oder \':\' beginnt, wird Ihr Name vorangestellt. Wenn Ihr Name beispielsweise Kim ist und Sie geben ein \':lacht!\' oder \'/me lacht!\', dann werden alle sehen "Kim lacht!"
 * Beep - Signale werden an andere gesendet, wenn Sie den Link \'beep\' oben neben deren Namen anklicken. Um ein Signal an alle zu senden, tippen Sie \'beep all\' ins Chat-Fenster.
 * HTML - Wenn Sie sich ein bisschen mit HTML-Code auskennen, können Sie damit Bilder in den Text einfügen, Farben ändern oder Sounds abspielen';
-$string['viewreport'] = 'Chat-Protokolle anzeigen';
+$string['viewreport'] = 'Vorherige Sitzungen';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_kprime', language 'nl', version '3.11'.
+ * Strings for component 'qtype_kprime', language 'nl', version '4.1'.
  *
  * @package     qtype_kprime
  * @category    string
@@ -45,6 +45,7 @@ $string['optionno'] = 'Optie {$a}';
 $string['optionsandfeedback'] = 'Opties en feedback';
 $string['pluginname'] = 'Kprime (meervoudig waar / niet waar)';
 $string['pluginname_help'] = 'Kprime-vragen bestaan uit een vraag met vier stellingen. Voor elke stelling kunnen leerlingen beslissen of die waar of niet waar is.';
+$string['pluginname_link'] = 'question/type/kprime';
 $string['pluginnameadding'] = 'Kprime-vraag toevoegen';
 $string['pluginnameediting'] = 'Kprime-vraag bewerken';
 $string['pluginnamesummary'] = 'In Kprime-vragen moeten 4 stellingen met waar of niet waar beoordeeld worden. Standaard beoordelingsmethode is "kprime".';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'ko', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'ko', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['nosaincategory'] = '선택한 \'{$a->catname}\' 범주에는 단답형 질문이 없습니다. 다른 범주를 선택하고 이 범주에  질문들을 만드십시요.';
 $string['notenoughsaincategory'] = '선택한 \'{$a->catname}\' 범주에는 {$a->nosaquestions} 개의 단답형  질문만이 있습니다. 다른 범주를 선택하던지, 앞에서 지정한  질문수를 줄이거나 이 범주에 좀 더 많은  질문을 만들어야 합니다.';
 $string['pluginname'] = '무작위 단답 짝짓기';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = '무작위 단답 찍짓기 질문 추가';
 $string['pluginnameediting'] = '무작위 단답 찍짓기 질문 추가';
 $string['randomsamatch'] = '무작위 단답 짝찾기형';

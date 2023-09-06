@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'it', version '3.11'.
+ * Strings for component 'course', language 'it', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -49,6 +49,8 @@ $string['aria:favourite'] = 'Il corso è tra i preferiti';
 $string['aria:favouritestab'] = 'Attività preferite';
 $string['aria:modulefavourite'] = 'Rendi preferita l\'attività {$a}';
 $string['aria:recommendedtab'] = 'Attività suggerite';
+$string['browsecourseadminindex'] = 'Sfoglia l\'amministrazione del corso con questo indice.';
+$string['browsesettingindex'] = 'Sfoglia le impostazioni con questo indice.';
 $string['completion_automatic:done'] = 'Fatto:';
 $string['completion_automatic:failed'] = 'Non superato:';
 $string['completion_automatic:todo'] = 'Da fare:';
@@ -61,9 +63,21 @@ $string['completion_setby:auto:todo'] = 'Da completare: $a->condition} (Impostat
 $string['completion_setby:manual:done'] = '{$a->activityname} è stato spuntato da {$a->setby} come completato. Premere per annullare.';
 $string['completion_setby:manual:markdone'] = '{$a->activityname} è stato spuntato da {$a->setby} come non completato. Premere per annullare.';
 $string['completionrequirements'] = 'Criteri di completamento di {$a}';
+$string['courseaccess'] = 'Accesso al corso';
 $string['coursealreadyfinished'] = 'Il corso è terminato';
+$string['coursecontentnotification'] = 'Invia notifica della modifica';
+$string['coursecontentnotification_help'] = 'Seleziona per inviare una notifica ai partecipanti, informandoli della creazione o modifica di questa attività o risorsa. Solo gli utenti che possono accedere all’attività o risorsa riceveranno la notifica.';
+$string['coursecontentnotifnew'] = 'Nuovi contenuti in {$a->coursename}';
+$string['coursecontentnotifnewbody'] = '<p>Nel corso <a href="{$a->courselink}">{$a->coursename}</a> è stata creata la seguente attività o risorsa:</p>
+<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a></p>
+<p><a href="{$a->notificationpreferenceslink}">Modifica preferenze di notifica</a></p>';
+$string['coursecontentnotifupdate'] = 'Contenuti aggiornati in {$a->coursename}';
+$string['coursecontentnotifupdatebody'] = '<p>Nel corso <a href="{$a->courselink}">{$a->coursename}</a> è stata modificata la seguente attività o risorsa:</p>
+<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a></p>
+<p><a href="{$a->notificationpreferenceslink}">Modifica preferenze di notifica</a></p>';
 $string['coursenotyetfinished'] = 'Il corso non è terminato';
 $string['coursenotyetstarted'] = 'Il corso non è iniziato';
+$string['courseparticipants'] = 'Partecipanti al corso';
 $string['coursetoolong'] = 'Il corso è troppo lungo';
 $string['customfield_islocked'] = 'Bloccato';
 $string['customfield_islocked_help'] = 'Il campo è bloccato, lo possono modificare solo gli utenti con il privilegio di modificare i campi personalizzati (di default il ruolo manager) nelle impostazioni del corso.';
@@ -73,6 +87,11 @@ $string['customfield_visibility_help'] = 'L\'impostazione determina chi potrà v
 $string['customfield_visibletoall'] = 'Tutti';
 $string['customfield_visibletoteachers'] = 'Docenti';
 $string['customfieldsettings'] = 'Impostazioni comuni dei campi personalizzati del corso';
+$string['daystakingcourse'] = 'Giorni trascorsi dalla data di inizio corso';
+$string['downloadcontent'] = 'Includi nel download del contenuto del corso';
+$string['downloadcontent_help'] = 'Definisce se questa attività o risorsa deve essere inclusa nel file zip del contenuto del corso disponibile per il download. File, cartelle, pagine ed etichette possono essere scaricati interamente. Per tutte le altre attività e risorse, vengono scaricati solo il nome e la descrizione. Questa impostazione richiede che il download del contenuto del corso sia abilitato nelle impostazioni del corso.
+
+L\'impostazione non ha alcun effetto sul download dei contenuti delle app per dispositivi mobili per l\'utilizzo offline.';
 $string['downloadcourseconfirmation'] = 'Stai per scaricare lo zip con i contenuti del corso (con esclusione degli elementi che non possono essere scaricati e i file più grandi di {$a}).';
 $string['downloadcoursecontent'] = 'Scaricamento contenuti del corso';
 $string['downloadcoursecontent_help'] = 'Abilita la possibilità di scaricare il contenuto del corso da parte degli utenti il cui ruolo ha il privilegio di farlo (di default il ruolo studente e docente).';
@@ -82,8 +101,9 @@ $string['favourite'] = 'Corso preferito';
 $string['gradetopassnotset'] = 'Il corso non ha una valutazione minima per superarlo. È possibile impostarla nel registro delle valutazioni.';
 $string['informationformodule'] = 'Informazioni sull\'attività {$a}';
 $string['module'] = 'Attività';
+$string['namewithlink'] = 'Nome della categoria con link';
 $string['noaccesssincestartinfomessage'] = 'Gentile {$a->userfirstname},
-<p>Nel corso  {$a->coursename} ci sono studenti che non lo hanno mai acceduto.</p>';
+<p>Alcuni studenti non hanno mai acceduto il corso {$a->coursename}.</p>';
 $string['nocourseactivity'] = 'Nel corso non sono presenti un numero sufficiente di attività tra la data di inizio e la data di fine del corso stesso.';
 $string['nocourseendtime'] = 'Il corso non ha una data di fine';
 $string['nocoursesections'] = 'Non ci cono sezioni del corso';
@@ -92,6 +112,9 @@ $string['norecentaccessesinfomessage'] = 'Gentile {$a->userfirstname},
 <p>Nel corso  {$a->coursename} ci sono studenti che non accedono da tempo.</p>';
 $string['noteachinginfomessage'] = 'Gentile {$a->userfirstname},
 <p>Ci sono corsi in partenza la prossima settimana che non hanno docenti né studenti iscritti.</p>';
+$string['participants:perpage'] = 'Numero di partecipanti per pagina';
+$string['participants:perpage_help'] = 'Il numero di utenti che sarà visualizzato nella pagina dei partecipanti del corso.';
+$string['participantsnavigation'] = 'Navigazione terziaria dei partecipanti.';
 $string['privacy:completionpath'] = 'Completamento corso';
 $string['privacy:favouritespath'] = 'Informazioni sui corsi preferiti';
 $string['privacy:metadata:activityfavouritessummary'] = 'Il sistema corso contiene informazioni sugli elementi del selettore attività che sono i preferiti degli utenti.';

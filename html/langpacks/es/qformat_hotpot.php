@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_hotpot', language 'es', version '3.11'.
+ * Strings for component 'qformat_hotpot', language 'es', version '4.1'.
  *
  * @package     qformat_hotpot
  * @category    string
@@ -27,5 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['hotpot'] = 'Formato Hot Potatoes XML';
 $string['hotpot_help'] = 'Este es el archivo de formato para importar preguntas de archivos XML de Hot Potatoes JCloze (JCL), JCross (JCW), JMatch (JMT), JMix (JMX), JQuiz (jqz), al banco de preguntas de Moodle.';
+$string['hotpot_link'] = 'qformat/hotpot';
 $string['pluginname'] = 'Formato Hot Potatoes XML';
 $string['pluginname_help'] = 'Este es el archivo de formato para importar preguntas de archivos XML de Hot Potatoes JCloze (JCL), JCross (JCW), JMatch (JMT), JMix (JMX), JQuiz (jqz), al banco de preguntas de Moodle.';
+$string['pluginname_link'] = 'qformat/hotpot';

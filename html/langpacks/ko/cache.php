@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ko', version '3.11'.
+ * Strings for component 'cache', language 'ko', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -107,8 +107,6 @@ $string['none'] = '없음';
 $string['plugin'] = '플러그인';
 $string['pluginsummaries'] = '설치된 캐시 스토어';
 $string['purge'] = '깨끗이 지움';
-$string['purgedefinitionsuccess'] = '성공적으로 요청된 정의를 깨끗이 지웠습니다.';
-$string['purgestoresuccess'] = '성공적으로 요청된 스토어를 깨끗이 지웠습니다.';
 $string['requestcount'] = '{$a} 요청으로 테스트';
 $string['rescandefinitions'] = '정의 재스캔';
 $string['result'] = '결과';

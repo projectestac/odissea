@@ -328,19 +328,6 @@ class api {
     protected static function create_or_update_issuer($data, bool $create): issuer {
         require_capability('moodle/site:config', context_system::instance());
         $issuer = new issuer($data->id ?? 0, $data);
-        if (!empty($data->id)) {
-            foreach ($data as $property => $value) {
-
-                // XTEC ************ AFEGIT - Fixed save of oAuth2 issuers when "acceptrisk" is checked
-                // 2022.11.23 @aginard
-                if ($property === 'acceptrisk') {
-                    continue;
-                }
-                // ************ FI
-
-                $issuer->set($property, $value);
-            }
-        }
 
         // Will throw exceptions on validation failures.
         if ($create) {

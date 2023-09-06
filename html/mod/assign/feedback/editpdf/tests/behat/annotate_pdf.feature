@@ -5,6 +5,67 @@ Feature: In an assignment, teacher can annotate PDF files during grading
   I need to use the PDF editor
 
   @javascript
+  Scenario: Submit a PDF file as a student and annotate the PDF as a teacher then overwrite the submission as a student
+    Given ghostscript is installed
+    And the following "courses" exist:
+      | fullname | shortname | category | groupmode |
+      | Course 1 | C1 | 0 | 1 |
+    And the following "users" exist:
+      | username | firstname | lastname | email |
+      | teacher1 | Teacher | 1 | teacher1@example.com |
+      | student1 | Student | 1 | student1@example.com |
+    And the following "course enrolments" exist:
+      | user | course | role |
+      | teacher1 | C1 | editingteacher |
+      | student1 | C1 | student |
+    And the following "activity" exists:
+      | activity                            | assign                |
+      | course                              | C1                    |
+      | name                                | Test assignment name  |
+      | assignfeedback_editpdf_enabled      | 1                     |
+      | assignfeedback_comments_enabled     | 1                     |
+      | assignsubmission_file_enabled       | 1                     |
+      | assignsubmission_file_maxfiles      | 2                     |
+      | assignsubmission_file_maxsizebytes  | 102400                |
+      | maxfilessubmission                  | 2                     |
+      | submissiondrafts                    | 0                     |
+    And the following "mod_assign > submission" exists:
+      | assign  | Test assignment name                                       |
+      | user    | student1                                                   |
+      | file    | mod/assign/feedback/editpdf/tests/fixtures/testgs.pdf  |
+
+    When I am on the "Test assignment name" Activity page logged in as teacher1
+    And I follow "View all submissions"
+    And I click on "Grade" "link" in the "Submitted for grading" "table_row"
+    Then I should see "Page 1 of 1"
+    And I wait for the complete PDF to load
+    And I click on ".linebutton" "css_element"
+    And I draw on the pdf
+    And I press "Save changes"
+    And I should see "The changes to the grade and feedback were saved"
+    And I am on the "Test assignment name" Activity page logged in as student1
+    And I follow "View annotated PDF..."
+    Then I should see "Page 1 of 1"
+    And I click on ".closebutton" "css_element"
+    And I press "Edit submission"
+    And I upload "mod/assign/feedback/editpdf/tests/fixtures/submission.pdf" file to "File submissions" filemanager
+    And I press "Save changes"
+    And I follow "View annotated PDF..."
+    Then I should see "Page 1 of 1"
+    And I am on the "Test assignment name" Activity page logged in as teacher1
+    And I follow "View all submissions"
+    And I click on "Grade" "link" in the "Submitted for grading" "table_row"
+    Then I should see "Page 1 of 3"
+    And I wait for the complete PDF to load
+    And I click on ".linebutton" "css_element"
+    And I draw on the pdf
+    And I press "Save changes"
+    And I should see "The changes to the grade and feedback were saved"
+    And I am on the "Test assignment name" Activity page logged in as student1
+    And I follow "View annotated PDF..."
+    Then I should see "Page 1 of 3"
+
+  @javascript
   Scenario: Submit a PDF file as a student and annotate the PDF as a teacher
     Given ghostscript is installed
     And the following "courses" exist:
@@ -46,7 +107,7 @@ Feature: In an assignment, teacher can annotate PDF files during grading
     And I log out
 
     When I am on the "Test assignment name" Activity page logged in as teacher1
-    And I navigate to "View all submissions" in current page administration
+    And I follow "View all submissions"
     And I click on "Grade" "link" in the "Submitted for grading" "table_row"
     Then I should see "Page 1 of 3"
     And I click on ".navigate-next-button" "css_element"
@@ -116,7 +177,7 @@ Feature: In an assignment, teacher can annotate PDF files during grading
       | file    | mod/assign/feedback/editpdf/tests/fixtures/submission.pdf  |
 
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    And I navigate to "View all submissions" in current page administration
+    And I follow "View all submissions"
     And I open the action menu in "Student 2" "table_row"
     And I click on "Grade" "link" in the "Student 2" "table_row"
     And I wait for the complete PDF to load
@@ -124,7 +185,5 @@ Feature: In an assignment, teacher can annotate PDF files during grading
     And I draw on the pdf
     And I press "Save changes"
     And I should see "The changes to the grade and feedback were saved"
-    And I click on "Edit settings" "link"
-    And I follow "Test assignment name"
-    And I navigate to "View all submissions" in current page administration
+    And I follow "View all submissions"
     And I should see "View annotated PDF..." in the "student2@example.com" "table_row"

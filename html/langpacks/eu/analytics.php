@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'eu', version '3.11'.
+ * Strings for component 'analytics', language 'eu', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -123,6 +123,10 @@ $string['percentonline'] = 'Online ehunekoa';
 $string['percentonline_help'] = 'Zure erakundeak ikastaro hibridoak (blended learning) eskaintzen baditu, ikasleen lanaren zer ehuneko bideratzen da online Moodlen? Idatzi 0tik 100era bitarteko zenbaki bat.';
 $string['predictionsprocessor'] = 'Aurreikuspen-prozesatzailea';
 $string['predictionsprocessor_help'] = 'Aurreikuspen-prozesatzaile bat ikaste automatikoaren backend-a da, eta ereduen adierazleak eta helburuak sortutako datu-multzoak prozesatzen ditu. Eredu bakoitzak prozesatzaile ezberdina erabili dezake. Hemen zehaztutakoa lehenetsitako prozesatzailea izango da.';
+$string['privacy:metadata:analytics:analyticsmodels'] = 'Eredu analitikoak';
+$string['privacy:metadata:analytics:analyticsmodels:usermodified'] = 'Eredua aldatu zueneko erabiltzailea';
+$string['privacy:metadata:analytics:analyticsmodelslog'] = 'Eredu analitikoetarako erabilitako erregistroa';
+$string['privacy:metadata:analytics:analyticsmodelslog:usermodified'] = 'Erregistroa aldatu zueneko erabiltzailea';
 $string['privacy:metadata:analytics:indicatorcalc'] = 'Adierazleen kalkuluak';
 $string['privacy:metadata:analytics:indicatorcalc:contextid'] = 'Testuingurua';
 $string['privacy:metadata:analytics:indicatorcalc:endtime'] = 'Kalkuluaren amaiera-data';
@@ -152,6 +156,7 @@ $string['processingsitecontents'] = 'Guneko edukiak prozesatzen';
 $string['successfullyanalysed'] = 'Ondo analizatu da';
 $string['timesplittingmethod'] = 'Analisi-tartea';
 $string['timesplittingmethod_help'] = 'Analisi-tarteak sistemak aurreikuspenak noiz kalkulatuko dituen eta horietarako erabiliko dituen erregistroen zatia zehazten ditu. Esaterako, ikastaroaren iraupena zatika dezakezu eta zati bakoitzaren amaieran aurreikuspen bat sortu.';
+$string['timesplittingmethod_link'] = 'Time_splitting_methods';
 $string['typeinstitution'] = 'Erakunde mota';
 $string['typeinstitutionacademic'] = 'Akademikoa';
 $string['typeinstitutionngo'] = 'Gobernuz kanpoko erakundea (GKE)';

@@ -22,8 +22,15 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace core;
+
+use advanced_testcase;
+use coding_exception;
+use dml_missing_record_exception;
+use lang_string;
+use xmldb_table;
+
 defined('MOODLE_INTERNAL') || die();
-global $CFG;
 
 /**
  * Persistent testcase.
@@ -31,11 +38,13 @@ global $CFG;
  * @package    core
  * @copyright  2015 Frédéric Massart - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers     \core\persistent
  */
-class core_persistent_testcase extends advanced_testcase {
+class persistent_test extends advanced_testcase {
 
     public function setUp(): void {
         $this->make_persistent_table();
+        $this->make_second_persistent_table();
         $this->resetAfterTest();
     }
 
@@ -56,6 +65,35 @@ class core_persistent_testcase extends advanced_testcase {
         $table->add_field('path', XMLDB_TYPE_CHAR, '255', null, XMLDB_NOTNULL, null, null);
         $table->add_field('sortorder', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
         $table->add_field('scaleid', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+        $table->add_field('timecreated', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('timemodified', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
+        $table->add_field('usermodified', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0');
+
+        $table->add_key('primary', XMLDB_KEY_PRIMARY, array('id'));
+
+        if ($dbman->table_exists($table)) {
+            $dbman->drop_table($table);
+        }
+
+        $dbman->create_table($table);
+    }
+
+    /**
+     * Make the second table for the persistent.
+     */
+    protected function make_second_persistent_table() {
+        global $DB;
+        $dbman = $DB->get_manager();
+
+        $table = new xmldb_table(core_testable_second_persistent::TABLE);
+        $table->add_field('id', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, XMLDB_SEQUENCE, null);
+        $table->add_field('someint', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+        $table->add_field('intnull', XMLDB_TYPE_INTEGER, '10', null, null, null, null);
+        $table->add_field('somefloat', XMLDB_TYPE_FLOAT, '10,5', null, null, null, null);
+        $table->add_field('sometext', XMLDB_TYPE_TEXT, null, null, null, null, null);
+        $table->add_field('someraw', XMLDB_TYPE_CHAR, '100', null, null, null, null);
+        $table->add_field('booltrue', XMLDB_TYPE_INTEGER, '1', null, XMLDB_NOTNULL, null, '0');
+        $table->add_field('boolfalse', XMLDB_TYPE_INTEGER, '1', null, XMLDB_NOTNULL, null, '0');
         $table->add_field('timecreated', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
         $table->add_field('timemodified', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, null);
         $table->add_field('usermodified', XMLDB_TYPE_INTEGER, '10', null, XMLDB_NOTNULL, null, '0');
@@ -133,6 +171,29 @@ class core_persistent_testcase extends advanced_testcase {
             ),
         );
         $this->assertEquals($expected, core_testable_persistent::properties_definition());
+    }
+
+    /**
+     * Test creating persistent instance by specifying record ID in constructor
+     */
+    public function test_constructor() : void {
+        $persistent = (new core_testable_persistent(0, (object) [
+            'idnumber' => '123',
+            'sortorder' => 1,
+        ]))->create();
+
+        // Now create a new instance, passing the original instance ID in the constructor.
+        $another = new core_testable_persistent($persistent->get('id'));
+        $this->assertEquals($another->to_record(), $persistent->to_record());
+    }
+
+    /**
+     * Test creating persistent instance by specifying non-existing record ID in constructor throws appropriate exception
+     */
+    public function test_constructor_invalid(): void {
+        $this->expectException(dml_missing_record_exception::class);
+        $this->expectExceptionMessage('Can\'t find data record in database table phpunit_persistent.');
+        new core_testable_persistent(42);
     }
 
     public function test_to_record() {
@@ -338,6 +399,29 @@ class core_persistent_testcase extends advanced_testcase {
         $this->assertTrue($p->is_valid()); // Should always be valid after an update.
     }
 
+    /**
+     * Test set_many prior to updating the persistent
+     */
+    public function test_set_many_update(): void {
+        global $DB;
+
+        $persistent = (new core_testable_persistent(0, (object) [
+            'idnumber' => 'test',
+            'sortorder' => 2
+        ]))->create();
+
+        // Set multiple properties, and update.
+        $persistent->set_many([
+            'idnumber' => 'test2',
+            'sortorder' => 1,
+        ])->update();
+
+        // Confirm our persistent was updated.
+        $record = $DB->get_record(core_testable_persistent::TABLE, ['id' => $persistent->get('id')], '*', MUST_EXIST);
+        $this->assertEquals('test2', $record->idnumber);
+        $this->assertEquals(1, $record->sortorder);
+    }
+
     public function test_save() {
         global $DB;
         $p = new core_testable_persistent(0, (object) array('sortorder' => 123, 'idnumber' => 'abc'));
@@ -367,6 +451,77 @@ class core_persistent_testcase extends advanced_testcase {
         $this->assertEquals($expected->idnumber, $record->idnumber);
         $this->assertEquals($expected->id, $record->id);
         $this->assertTrue($p->is_valid()); // Should always be valid after a save/update.
+    }
+
+    /**
+     * Test set_many prior to saving the persistent
+     */
+    public function test_set_many_save(): void {
+        global $DB;
+
+        $persistent = (new core_testable_persistent(0, (object) [
+            'idnumber' => 'test',
+            'sortorder' => 2
+        ]));
+
+        // Set multiple properties, and save.
+        $persistent->set_many([
+            'idnumber' => 'test2',
+            'sortorder' => 1,
+        ])->save();
+
+        // Confirm our persistent was saved.
+        $record = $DB->get_record(core_testable_persistent::TABLE, ['id' => $persistent->get('id')], '*', MUST_EXIST);
+        $this->assertEquals('test2', $record->idnumber);
+        $this->assertEquals(1, $record->sortorder);
+    }
+
+    /**
+     * Test set_many with empty array should not modify the persistent
+     */
+    public function test_set_many_empty(): void {
+        global $DB;
+
+        $persistent = (new core_testable_persistent(0, (object) [
+            'idnumber' => 'test',
+            'sortorder' => 2
+        ]))->create();
+
+        // Set empty properties, and update.
+        $persistent->set_many([])->update();
+
+        // Confirm our persistent was not updated.
+        $record = $DB->get_record(core_testable_persistent::TABLE, ['id' => $persistent->get('id')], '*', MUST_EXIST);
+        $this->assertEquals('test', $record->idnumber);
+        $this->assertEquals(2, $record->sortorder);
+    }
+
+    /**
+     * Test set with invalid property
+     */
+    public function test_set_invalid_property(): void {
+        $persistent = (new core_testable_persistent(0, (object) [
+            'idnumber' => 'test',
+            'sortorder' => 2
+        ]));
+
+        $this->expectException(coding_exception::class);
+        $this->expectExceptionMessage('Unexpected property \'invalid\' requested');
+        $persistent->set('invalid', 'stuff');
+    }
+
+    /**
+     * Test set_many with invalid property
+     */
+    public function test_set_many_invalid_property(): void {
+        $persistent = (new core_testable_persistent(0, (object) [
+            'idnumber' => 'test',
+            'sortorder' => 2
+        ]));
+
+        $this->expectException(coding_exception::class);
+        $this->expectExceptionMessage('Unexpected property \'invalid\' requested');
+        $persistent->set_many(['invalid' => 'stuff']);
     }
 
     public function test_read() {
@@ -423,6 +578,39 @@ class core_persistent_testcase extends advanced_testcase {
         $this->assertEquals($json, $record->path);
     }
 
+    /**
+     * Test get_record method for creating persistent instance
+     */
+    public function test_get_record(): void {
+        $persistent = (new core_testable_persistent(0, (object) [
+            'idnumber' => '123',
+            'sortorder' => 1,
+        ]))->create();
+
+        $another = core_testable_persistent::get_record(['id' => $persistent->get('id')]);
+
+        // Assert we got back a persistent instance, and it matches original.
+        $this->assertInstanceOf(core_testable_persistent::class, $another);
+        $this->assertEquals($another->to_record(), $persistent->to_record());
+    }
+
+    /**
+     * Test get_record method for creating persistent instance, ignoring a non-existing record
+     */
+    public function test_get_record_ignore_missing(): void {
+        $persistent = core_testable_persistent::get_record(['id' => 42]);
+        $this->assertFalse($persistent);
+    }
+
+    /**
+     * Test get_record method for creating persistent instance, throws appropriate exception for non-existing record
+     */
+    public function test_get_record_must_exist(): void {
+        $this->expectException(dml_missing_record_exception::class);
+        $this->expectExceptionMessage('Can\'t find data record in database table phpunit_persistent.');
+        core_testable_persistent::get_record(['id' => 42], MUST_EXIST);
+    }
+
     public function test_record_exists() {
         global $DB;
         $this->assertFalse($DB->record_exists(core_testable_persistent::TABLE, array('idnumber' => 'abc')));
@@ -457,6 +645,41 @@ class core_persistent_testcase extends advanced_testcase {
         $this->expectExceptionMessageMatches('/The alias .+ exceeds 30 characters/');
         core_testable_persistent::get_sql_fields('c');
     }
+
+    public function test_get(): void {
+        $data = [
+            'someint' => 123,
+            'intnull' => null,
+            'somefloat' => 33.44,
+            'sometext' => 'Hello',
+            'someraw' => '/dev/hello',
+            'booltrue' => true,
+            'boolfalse' => false,
+        ];
+        $p = new core_testable_second_persistent(0, (object)$data);
+        $p->create();
+
+        $this->assertSame($data['intnull'], $p->get('intnull'));
+        $this->assertSame($data['someint'], $p->get('someint'));
+        $this->assertIsFloat($p->get('somefloat')); // Avoid === comparisons on floats, verify type and value separated.
+        $this->assertEqualsWithDelta($data['somefloat'], $p->get('somefloat'), 0.00001);
+        $this->assertSame($data['sometext'], $p->get('sometext'));
+        $this->assertSame($data['someraw'], $p->get('someraw'));
+        $this->assertSame($data['booltrue'], $p->get('booltrue'));
+        $this->assertSame($data['boolfalse'], $p->get('boolfalse'));
+
+        // Ensure that types are correct after reloading data from database.
+        $p->read();
+
+        $this->assertSame($data['someint'], $p->get('someint'));
+        $this->assertSame($data['intnull'], $p->get('intnull'));
+        $this->assertIsFloat($p->get('somefloat')); // Avoid === comparisons on floats, verify type and value separated.
+        $this->assertEqualsWithDelta($data['somefloat'], $p->get('somefloat'), 0.00001);
+        $this->assertSame($data['sometext'], $p->get('sometext'));
+        $this->assertSame($data['someraw'], $p->get('someraw'));
+        $this->assertSame($data['booltrue'], $p->get('booltrue'));
+        $this->assertSame($data['boolfalse'], $p->get('boolfalse'));
+    }
 }
 
 /**
@@ -466,7 +689,7 @@ class core_persistent_testcase extends advanced_testcase {
  * @copyright  2015 Frédéric Massart - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class core_testable_persistent extends \core\persistent {
+class core_testable_persistent extends persistent {
 
     const TABLE = 'phpunit_persistent';
 
@@ -558,4 +781,52 @@ class core_testable_persistent extends \core\persistent {
         return true;
     }
 
+}
+
+/**
+ * Example persistent class to test types.
+ *
+ * @package    core
+ * @copyright  2021 David Matamoros <davidmc@moodle.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class core_testable_second_persistent extends persistent {
+
+    /** Table name for the persistent. */
+    const TABLE = 'phpunit_second_persistent';
+
+    /**
+     * Return the list of properties.
+     *
+     * @return array
+     */
+    protected static function define_properties(): array {
+        return [
+            'someint' => [
+                'type' => PARAM_INT,
+            ],
+            'intnull' => [
+                'type' => PARAM_INT,
+                'null' => NULL_ALLOWED,
+                'default' => null,
+            ],
+            'somefloat' => [
+                'type' => PARAM_FLOAT,
+            ],
+            'sometext' => [
+                'type' => PARAM_TEXT,
+                'default' => ''
+            ],
+            'someraw' => [
+                'type' => PARAM_RAW,
+                'default' => ''
+            ],
+            'booltrue' => [
+                'type' => PARAM_BOOL,
+            ],
+            'boolfalse' => [
+                'type' => PARAM_BOOL,
+            ]
+        ];
+    }
 }

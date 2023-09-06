@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ja', version '3.11'.
+ * Strings for component 'lti', language 'ja', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -176,11 +176,11 @@ $string['external_tool_type_help'] = '* **自動、ツールURLに基づく** - 
 
 ### 事前設定ツール編集
 
-外部事前設定ツールのドロップダウンメニュでは3つのアイコンを選択することができます:
+外部事前設定ツールのドロップダウンメニューでは3つのアイコンを選択することができます:
 
 * **追加** - コースレベルの設定を作成します。コース内すべての外部ツールインスタンスではツール設定を使用することができます。
 
-* **編集** - コースレベルの事前設定ツールをドロップダウンメニュから選択してアイコンをクリックしてください。ツール設定詳細を編集することができます。
+* **編集** - コースレベルの事前設定ツールをドロップダウンメニューから選択してアイコンをクリックしてください。ツール設定詳細を編集することができます。
 
 * **削除** - 選択したコースレベルの事前設定ツールを削除します。';
 $string['external_tool_types'] = '事前設定ツール';
@@ -212,10 +212,12 @@ $string['indicator:cognitivedepth'] = 'LTI認知的';
 $string['indicator:cognitivedepth_help'] = 'この指標はLTI活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'LTI認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がLTI活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信, フィードバックの閲覧)。';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'LTI社会的';
 $string['indicator:socialbreadth_help'] = 'この指標はLTI活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'LTI社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がLTI活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = 'ログイン開始URL';
 $string['initiatelogin_help'] = 'ログインの開始をリクエストするためのツールURLが送信されます。メッセージをツールに正常に送信するにはこのURLが必要です。';
 $string['invalidid'] = 'LTI IDが正しくありません。';
@@ -295,8 +297,10 @@ $string['modulename_help'] = '外部ツール活動モジュールにおいて�
 * 外部ツールはコンテクスト志向 (context aware) です。例えばインスティテューション、コースおよび氏名等、ツールを起動したユーザの情報にアクセスすることができます。
 * 外部ツールは活動インスタンスに関する評点の閲覧、更新および削除をサポートします。
 * 外部ツール設定では両者間の安全な通信を許可することにより、あなたのサイトおよびツールプロバイダ間の信頼関係を確立します。';
+$string['modulename_link'] = 'mod/lti/view';
+$string['modulename_shortcut_link'] = 'mod/lti/view/custom';
 $string['modulenameplural'] = '外部ツール';
-$string['modulenamepluralformatted'] = 'LTIインスタンス';
+$string['modulenamepluralformatted'] = '外部ツール';
 $string['name'] = '名称';
 $string['never'] = 'なし';
 $string['new_window'] = '新しいウィンドウ';
@@ -320,12 +324,8 @@ $string['opensslconfiginvalid'] = 'あなたのウェブサーバでLTI 1.3を�
 $string['optionalsettings'] = 'オプション設定';
 $string['organization'] = '組織詳細';
 $string['organizationdescr'] = '組織説明';
-$string['organizationid'] = '組織ID';
 $string['organizationid_default'] = 'デフォルト組織ID';
 $string['organizationid_default_help'] = '組織IDに使用されるデフォルト値です。サイトIDはこのMoodleインストレーションを識別します。';
-$string['organizationid_help'] = 'このMoodleインスタンスの固有IDです。一般的に組織で使用されているDNS名です。
-
-このフィールドを空白にした場合、このMoodleサイトのホスト名がデフォルト値として使用されます。';
 $string['organizationidguid'] = '組織ID';
 $string['organizationidguid_help'] = 'プラットフォームインスタンスGUIDとしてツールに渡されるこのMoodleインスタンスのユニークIDです。
 
@@ -458,9 +458,9 @@ $string['share_roster_help'] = 'コース内の登録済みユーザ一覧にツ
 この設定はツール設定内でオーバーライドできることに留意してください。';
 $string['show_in_course_activity_chooser'] = '活動チューザまたは事前設定ツールに表示する';
 $string['show_in_course_lti1'] = 'ツール設定使用';
-$string['show_in_course_lti1_help'] = 'コースへの追加時の選択のため、このツールを教師に活動チューザ内で表示することができます。コースへの外部ツール追加時に事前設定ツールドロップダウンメニュ内にも表示することができます。さらなるツール設定のオプションはコースへの外部ツール追加時に正確なツールURLが入力された場合のみ使用されます。';
+$string['show_in_course_lti1_help'] = 'コースへの追加時の選択のため、このツールを教師に活動チューザ内で表示することができます。コースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内にも表示することができます。さらなるツール設定のオプションはコースへの外部ツール追加時に正確なツールURLが入力された場合のみ使用されます。';
 $string['show_in_course_lti2'] = 'ツール設定使用';
-$string['show_in_course_lti2_help'] = 'コースへの追加時の選択のため、このツールを活動チューザ内で教師に表示することができます。またはコースへの外部ツール追加時に事前設定ツールドロップダウンメニュ内に表示することができます。';
+$string['show_in_course_lti2_help'] = 'コースへの追加時の選択のため、このツールを活動チューザ内で教師に表示することができます。またはコースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内に表示することができます。';
 $string['show_in_course_no'] = '表示しない、合致するツールURLが入力された場合のみ使用する';
 $string['show_in_course_preconfigured'] = '外部ツール追加時に事前設定ツールとして表示する';
 $string['sitehost'] = 'サイトホスト名';

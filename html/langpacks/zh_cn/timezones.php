@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'timezones', language 'zh_cn', version '3.11'.
+ * Strings for component 'timezones', language 'zh_cn', version '4.1'.
  *
  * @package     timezones
  * @category    string
@@ -30,7 +30,6 @@ $string['africa/accra'] = '非洲/阿克拉';
 $string['africa/addis_ababa'] = '非洲/亚的斯亚贝巴';
 $string['africa/algiers'] = '非洲/阿尔及尔';
 $string['africa/asmara'] = '非洲/阿斯马拉';
-$string['africa/asmera'] = '非洲/阿斯马拉';
 $string['africa/bamako'] = '非洲/巴马科';
 $string['africa/bangui'] = '非洲/班吉';
 $string['africa/banjul'] = '非洲/班珠尔';
@@ -77,7 +76,6 @@ $string['africa/nouakchott'] = '非洲/努瓦克肖特';
 $string['africa/ouagadougou'] = '非洲/瓦加杜古';
 $string['africa/porto-novo'] = '非洲/波多诺伏';
 $string['africa/sao_tome'] = '非洲/圣多美';
-$string['africa/timbuktu'] = '非洲/廷巴克图';
 $string['africa/tripoli'] = '非洲/的黎波里';
 $string['africa/tunis'] = '非洲/突尼斯';
 $string['africa/windhoek'] = '非洲/温得和克';
@@ -89,8 +87,6 @@ $string['america/araguaina'] = '美洲/阿拉瓜伊纳';
 $string['america/argentina/buenos_aires'] = '美洲/阿根廷/布宜诺斯艾利斯
 ';
 $string['america/argentina/catamarca'] = '美洲/阿根廷/卡塔马卡';
-$string['america/argentina/comodrivadavia'] = '美洲/阿根廷/里瓦达维亚
-';
 $string['america/argentina/cordoba'] = '美洲/阿根廷/科尔多瓦';
 $string['america/argentina/jujuy'] = '美洲/阿根廷/胡胡伊';
 $string['america/argentina/la_rioja'] = '美洲/阿根廷/拉里奥哈
@@ -167,8 +163,6 @@ $string['america/indiana/vevay'] = '美国/印第安纳/韦韦
 ';
 $string['america/indiana/vincennes'] = '美国/印第安纳州/文森斯';
 $string['america/indiana/winamac'] = '美国/印第安纳州/威纳马克';
-$string['america/indianapolis'] = '美国/印第安纳波利斯
-';
 $string['america/inuvik'] = '美洲/伊努维克
 ';
 $string['america/iqaluit'] = '美洲/伊魁特';
@@ -180,7 +174,6 @@ $string['america/kralendijk'] = '美洲/克拉伦代克';
 $string['america/la_paz'] = '美洲/拉巴斯';
 $string['america/lima'] = '美洲/利马';
 $string['america/los_angeles'] = '美洲/洛杉矶';
-$string['america/louisville'] = '美洲/路易斯维尔';
 $string['america/lower_princes'] = '美洲/下王子';
 $string['america/maceio'] = '美洲/马塞约';
 $string['america/managua'] = '美洲/马那瓜';
@@ -197,7 +190,6 @@ $string['america/miquelon'] = '美洲/密克隆岛';
 $string['america/moncton'] = '美洲/蒙克顿';
 $string['america/monterrey'] = '美洲/蒙特雷';
 $string['america/montevideo'] = '美洲/蒙得维的亚';
-$string['america/montreal'] = '美洲/蒙特利尔';
 $string['america/montserrat'] = '美洲/蒙特塞拉特';
 $string['america/nassau'] = '美洲/拿骚';
 $string['america/new_york'] = '美洲/纽约';
@@ -277,10 +269,8 @@ $string['asia/barnaul'] = '亚洲/巴尔瑙尔';
 $string['asia/beirut'] = '亚洲/贝鲁特';
 $string['asia/bishkek'] = '亚洲/比什凯克';
 $string['asia/brunei'] = '亚洲/文莱';
-$string['asia/calcutta'] = '亚洲/加尔各答';
 $string['asia/chita'] = '亚洲/赤塔';
 $string['asia/choibalsan'] = '亚洲/乔巴山';
-$string['asia/chongqing'] = '亚洲/重庆';
 $string['asia/colombo'] = '亚洲/科伦坡';
 $string['asia/damascus'] = '亚洲/大马士革';
 $string['asia/dhaka'] = '亚洲/达卡';
@@ -289,7 +279,6 @@ $string['asia/dubai'] = '亚洲/迪拜';
 $string['asia/dushanbe'] = '亚洲/杜尚别';
 $string['asia/famagusta'] = '亚洲/法马古斯塔';
 $string['asia/gaza'] = '亚洲/加沙';
-$string['asia/harbin'] = '亚洲/哈尔滨';
 $string['asia/hebron'] = '亚洲/希伯伦';
 $string['asia/ho_chi_minh'] = '亚洲/胡志明市';
 $string['asia/hong_kong'] = '亚洲/香港';
@@ -301,9 +290,7 @@ $string['asia/jerusalem'] = '亚洲/耶路撒冷';
 $string['asia/kabul'] = '亚洲/喀布尔';
 $string['asia/kamchatka'] = '亚洲/堪察加';
 $string['asia/karachi'] = '亚洲/卡拉奇';
-$string['asia/kashgar'] = '亚洲/喀什';
 $string['asia/kathmandu'] = '亚洲/加德满都';
-$string['asia/katmandu'] = '亚洲/加德满都';
 $string['asia/khandyga'] = '亚洲/汉地加';
 $string['asia/kolkata'] = '亚洲/加尔各答';
 $string['asia/krasnoyarsk'] = '亚洲/克拉斯诺亚尔斯克';
@@ -326,9 +313,7 @@ $string['asia/pyongyang'] = '亚洲/平壤';
 $string['asia/qatar'] = '亚洲/卡塔尔';
 $string['asia/qostanay'] = '亚洲/哈萨克斯坦';
 $string['asia/qyzylorda'] = '亚洲/克孜勒奥尔达';
-$string['asia/rangoon'] = '亚洲/仰光';
 $string['asia/riyadh'] = '亚洲/利雅得';
-$string['asia/saigon'] = '亚洲/西贡';
 $string['asia/sakhalin'] = '亚洲/萨哈林';
 $string['asia/samarkand'] = '亚洲/撒马尔罕';
 $string['asia/seoul'] = '亚洲/汉城';
@@ -355,7 +340,6 @@ $string['atlantic/azores'] = '大西洋/亚速尔群岛';
 $string['atlantic/bermuda'] = '大西洋/百慕大';
 $string['atlantic/canary'] = '大西洋/加那利';
 $string['atlantic/cape_verde'] = '大西洋/佛得角';
-$string['atlantic/faeroe'] = '大西洋/法罗';
 $string['atlantic/faroe'] = '大西洋/法罗';
 $string['atlantic/madeira'] = '大西洋/马德拉';
 $string['atlantic/reykjavik'] = '大西洋/雷克雅未克';
@@ -378,7 +362,6 @@ $string['europe/amsterdam'] = '欧洲/阿姆斯特丹';
 $string['europe/andorra'] = '欧洲/安道尔';
 $string['europe/astrakhan'] = '欧洲/阿斯特拉罕';
 $string['europe/athens'] = '欧洲/雅典';
-$string['europe/belfast'] = '欧洲/贝尔法斯特';
 $string['europe/belgrade'] = '欧洲/贝尔格莱德';
 $string['europe/berlin'] = '欧洲/柏林';
 $string['europe/bratislava'] = '欧洲/布拉迪斯拉发';
@@ -477,15 +460,12 @@ $string['pacific/pago_pago'] = '太平洋/帕果帕果';
 $string['pacific/palau'] = '太平洋/帕劳';
 $string['pacific/pitcairn'] = '太平洋/皮特凯恩';
 $string['pacific/pohnpei'] = '太平洋/波纳佩';
-$string['pacific/ponape'] = '太平洋/波纳佩';
 $string['pacific/port_moresby'] = '太平洋/莫尔兹比港';
 $string['pacific/rarotonga'] = '太平洋/拉罗汤加';
 $string['pacific/saipan'] = '太平洋/塞班岛';
 $string['pacific/tahiti'] = '太平洋/塔希提岛';
 $string['pacific/tarawa'] = '太平洋/塔拉瓦';
 $string['pacific/tongatapu'] = '太平洋/汤加塔布';
-$string['pacific/truk'] = '太平洋/特鲁克';
 $string['pacific/wake'] = '太平洋/威克岛';
 $string['pacific/wallis'] = '太平洋/沃利斯';
-$string['pacific/yap'] = '太平洋/雅浦岛';
 $string['utc'] = '世界标准时间';

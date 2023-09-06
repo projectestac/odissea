@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'pt', version '3.11'.
+ * Strings for component 'quiz_overview', language 'pt', version '4.1'.
  *
  * @package     quiz_overview
  * @category    string
@@ -66,11 +66,13 @@ $string['regradealldrydo'] = 'Reavaliar as tentativas selecionadas ({$a})';
 $string['regradealldrydogroup'] = 'Reavaliar tentativas ({$a->countregradeneeded}) assinaladas no grupo \'{$a->groupname}\'';
 $string['regradealldrygroup'] = 'Reavaliar todo o grupo \'{$a->groupname}\'';
 $string['regradeallgroup'] = 'Reavaliação total do grupo \'{$a->groupname}\'';
-$string['regradecomplete'] = 'Reavaliação concluída com sucesso';
-$string['regradedsuccessfullyxofy'] = 'Reavaliado com sucesso ({$a->done}/{$a->count})';
+$string['regradecomplete'] = 'Reavaliação concluída';
+$string['regradedsuccessfullyxofy'] = 'Reavaliação ({$a->done}/{$a->count})';
 $string['regradeheader'] = 'A reavaliar';
 $string['regradeselected'] = 'Reavaliar as tentativas selecionadas';
+$string['regradingattemptissue'] = 'Conjunto {$a->slot}: {$a->reason}';
 $string['regradingattemptxofy'] = 'A reavaliar a tentativa ({$a->done}/{$a->count})';
+$string['regradingattemptxofyproblem'] = 'As perguntas abaixo não puderam ser reavaliadas na tentativa {$a->attemptnum} de {$a->name} (ID {$a->attemptid})';
 $string['regradingattemptxofywithdetails'] = 'A reavaliar a tentativa ({$a->done}/{$a->count}) - Tentativa {$a->attemptnum} de {$a->name} (ID {$a->attemptid})';
 $string['show'] = 'Mostrar';
 $string['showattempts'] = 'Incluir tentativas';

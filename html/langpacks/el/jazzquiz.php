@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'jazzquiz', language 'el', version '3.11'.
+ * Strings for component 'jazzquiz', language 'el', version '4.1'.
  *
  * @package     jazzquiz
  * @category    string
@@ -131,7 +131,7 @@ $string['startquiz'] = 'Έναρξη κουίζ';
 $string['student'] = 'Μαθητής';
 $string['unable_to_create_session'] = 'Αδυναμία δημιουργίας συνόδου';
 $string['view'] = 'Προβολή';
-$string['vote'] = 'Ψηφοφορία';
+$string['vote'] = 'Ψήφος';
 $string['wait_for_instructor'] = 'Παρακαλούμε, περιμένετε τον εκπαιδευτή για να ξεκινήσει την επόμενη ερώτηση.';
 $string['wait_for_question_time'] = 'Αναμονή για τον χρόνο ερώτησης';
 $string['wait_for_question_time_help'] = 'Ο χρόνος αναμονής για να αρχίσει μια ερώτηση.';

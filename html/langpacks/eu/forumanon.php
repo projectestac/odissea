@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumanon', language 'eu', version '3.11'.
+ * Strings for component 'forumanon', language 'eu', version '4.1'.
  *
  * @package     forumanon
  * @category    string
@@ -56,3 +56,4 @@ $string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['cannotadd'] = 'Ezin da eztabaidarik gehitu foro honetan';
 $string['cannotadddiscussion'] = 'Foro honetan eztabaidarik gehitzeko taldeko partaidea izan behar da.';
 $string['cannotadddiscussionall'] = 'Ez daukazu baimenik parte hartzaile guztientzako eztabaida-gairik gehitzeko.';
+$string['modulename_link'] = 'forumanon';

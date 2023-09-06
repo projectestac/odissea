@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_wiris', language 'el', version '3.11'.
+ * Strings for component 'filter_wiris', language 'el', version '4.1'.
  *
  * @package     filter_wiris
  * @category    string
@@ -30,7 +30,7 @@ $string['area'] = 'περιοχή';
 $string['atto'] = 'Atto';
 $string['cachedef_formulas'] = 'Φόρμουλες MathType';
 $string['cachedef_images'] = 'Εικόνες MathType';
-$string['clearcache'] = 'Καθαρισμός κρυφής μνήμης';
+$string['clearcache'] = 'Εκκαθάριση κρυφής μνήμης';
 $string['clearcachedesc'] = 'Εκκαθάριση κρυφής μνήμης φίλτρου MathType';
 $string['connectionsettings'] = 'Ρυθμίσεις σύνδεσης';
 $string['connectionsettings_text'] = '';

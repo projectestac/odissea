@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'ru', version '3.11'.
+ * Strings for component 'format_weeks', language 'ru', version '4.1'.
  *
  * @package     format_weeks
  * @category    string
@@ -33,6 +33,8 @@ $string['deletesection'] = 'Удалить неделю';
 $string['editsection'] = 'Редактировать неделю';
 $string['editsectionname'] = 'Редактировать название недели';
 $string['hidefromothers'] = 'Скрыть неделю';
+$string['indentation'] = 'Разрешить отступ на странице курса';
+$string['indentation_help'] = 'Разрешить учителям и другим пользователям с возможностью управления активными элементами устанавливать отступы элементов на странице курса.';
 $string['newsectionname'] = 'Новое название для недели {$a}';
 $string['page-course-view-weeks'] = 'Главная страница курса в формате Календарь';
 $string['page-course-view-weeks-x'] = 'Любой страница курса в недельном формате';

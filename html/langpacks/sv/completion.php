@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'sv', version '3.11'.
+ * Strings for component 'completion', language 'sv', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Uppnår betyg';
+$string['achievingpassinggrade'] = 'Erhåller godkänt betyg';
 $string['activities'] = 'Aktiviteter';
 $string['activitiescompleted'] = 'Slutförda aktiviteter';
 $string['activitiescompletednote'] = 'Notera: Slutförande av aktivitet måste aktiveras för en aktivitet för att den ska synas i ovanstående lista.';
@@ -36,6 +37,7 @@ $string['activityaggregation_any'] = 'NÅGON av de valda aktiviteterna slutförs
 $string['activitycompletion'] = 'Slutförande av aktivitet';
 $string['activitycompletionupdated'] = 'Ändringar sparade';
 $string['activitygradenotrequired'] = 'Betyg krävs ej';
+$string['activitygradetopassnotset'] = 'Den här aktiviteten har inte angivit någon betygsgräns för godkänt. Den kan ställas in i avsnittet Betyg i aktivitetsinställningarna.';
 $string['affectedactivities'] = 'Förändringarna påverkar följande <b>{$a}</b> aktiviteter eller resurser:';
 $string['aggregationmethod'] = 'Sammanställningsmetod';
 $string['all'] = 'Allt';
@@ -82,6 +84,7 @@ $string['completion-y'] = 'Slutförd';
 $string['completion-y-override'] = 'Slutförd (satt av {$a})';
 $string['completion_automatic'] = 'Visa aktivitet som slutförd när villkor är uppnådda.';
 $string['completion_help'] = 'Om aktiverat blir aktivitetsslutförandet markerat manuellt eller automatiskt, beroende på angivna kriterier. Flera kriterier kan anges. Om så blir aktiviteten betraktad som slutförd först då <strong>samtliga</strong> dessa uppfyllts.';
+$string['completion_link'] = 'activity/completion';
 $string['completion_manual'] = 'Kursdeltagare kan själva markera aktiviteten som slutförd.';
 $string['completion_none'] = 'Ingen slutförandebevakning';
 $string['completionactivitydefault'] = 'Använd aktivitetsstandard';
@@ -105,6 +108,9 @@ $string['completionnotenabledforcourse'] = 'Slutförande är inte aktiverat för
 $string['completionnotenabledforsite'] = 'Slutförande är inte aktiverad för den här webbplatsen';
 $string['completionondate'] = 'Datum';
 $string['completionondatevalue'] = 'Datum när kursen kommer att markeras som slutförd';
+$string['completionpassgrade'] = 'Kräv godkännandebetyg';
+$string['completionpassgrade_desc'] = 'Studenten måste erhålla ett godkänt betyg för att slutföra den här aktiviteten.';
+$string['completionpassgrade_help'] = 'Om aktiverad anses den här aktiviteten slutförd när studenten erhåller ett godkänt betyg.';
 $string['completionsettingslocked'] = 'Alternativen för slutförande är låsta';
 $string['completionupdated'] = 'Uppdaterat slutförande för aktiviteten <b>{$a}</b>';
 $string['completionusegrade'] = 'Kräv betyg';
@@ -124,6 +130,7 @@ $string['coursecompleted'] = 'Kurs slutförd';
 $string['coursecompletedmessage'] = '<p>Gratulerar!</p><p>Du har slutfört kursen <a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Kursslutförande';
 $string['coursecompletioncondition'] = 'Villkor: {$a}';
+$string['coursecompletionnavigation'] = 'Kursslutförandenavigering';
 $string['coursegrade'] = 'Kursbetyg';
 $string['coursesavailable'] = 'Tillgängliga kurser';
 $string['coursesavailableexplaination'] = 'OBS! Villkoren för slutförande av kurs måste anges för en kurs för att den ska synas i ovanstående lista.';
@@ -135,13 +142,16 @@ $string['csvdownload'] = 'Ladda ned i kalkylbladsformat (UTF-8 .csv)';
 $string['datepassed'] = 'Datum för godkännande';
 $string['days'] = 'Dagar';
 $string['daysoftotal'] = '{$a->days} av {$a->total}';
+$string['daysuntilcompletion'] = 'Dagar till slutförande';
 $string['defaultcompletion'] = 'Standardinställningar för aktivitetsslutförande';
 $string['defaultcompletionupdated'] = 'Ändringar sparade';
 $string['deletecompletiondata'] = 'Ta bort slutförandedata';
 $string['dependencies'] = 'Beroenden';
 $string['dependenciescompleted'] = 'Slutförande av andra kurser';
 $string['detail_desc:receivegrade'] = 'Få ett betyg';
+$string['detail_desc:receivepassgrade'] = 'Erhåll ett godkänt betyg';
 $string['detail_desc:view'] = 'Visa';
+$string['done'] = 'Slutförd';
 $string['editcoursecompletionsettings'] = 'Redigera slutförandevillkor';
 $string['enablecompletion'] = 'Bevaka slutförande';
 $string['enablecompletion_help'] = 'Om aktiverat kan villkor för kurs- och aktivitetsslutförande specificeras. Det rekommenderas att ha detta aktiverat så att meningsfulla data visas i kursöversikten på översiktssidan.';
@@ -159,6 +169,7 @@ $string['eventcoursecompletionupdated'] = 'Kursslutförande uppdaterat';
 $string['eventcoursemodulecompletionupdated'] = 'Slutförande för kursaktivitet uppdaterat';
 $string['eventdefaultcompletionupdated'] = 'Standardvärdet för slutförande för kursaktivitet uppdaterat';
 $string['excelcsvdownload'] = 'Ladda ned i Excelkompatibelt format (.csv)';
+$string['failed'] = 'Misslyckad';
 $string['fraction'] = 'Del';
 $string['graderequired'] = 'Betygsgräns för godkänt';
 $string['gradexrequired'] = '{$a} krävs';
@@ -223,6 +234,8 @@ $string['selfcompletion'] = 'Eget slutförande';
 $string['showcompletionconditions'] = 'Visa slutförandevillkor för aktiviteter';
 $string['showcompletionconditions_help'] = 'Slutförandevillkor för aktiviteter visas alltid på aktivitetssidan. Den här inställningen avgör om slutförandevillkor för aktiviteter också visas under varje aktivitet på kurssidan.';
 $string['showinguser'] = 'Visar användare';
+$string['timecompleted'] = 'Tid för slutförande';
+$string['todo'] = 'Att göra';
 $string['unenrolingfromcourse'] = 'Avregistrerar sig från kursen';
 $string['unenrolment'] = 'Avregistrering';
 $string['unit'] = 'Enhet';

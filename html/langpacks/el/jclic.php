@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'jclic', language 'el', version '3.11'.
+ * Strings for component 'jclic', language 'el', version '4.1'.
  *
  * @package     jclic
  * @category    string
@@ -40,7 +40,7 @@ $string['deleteallsessions'] = 'Διαγραφή όλων των συνόδων'
 $string['description'] = 'Περιγραφή';
 $string['duedate'] = 'Οφειλόμενη ημερομηνία';
 $string['event_course_module_viewed'] = 'Το άρθρωμα μαθήματος προβλήθηκε';
-$string['event_instances_list_viewed'] = 'Η λίστα στιγμιότυπων εμφανίστηκε';
+$string['event_instances_list_viewed'] = 'Η λίστα στιγμιοτύπων εμφανίστηκε';
 $string['exiturl'] = 'Διεύθυνση URL εξόδου';
 $string['expired'] = 'Λυπούμαστε, αυτή η δραστηριότητα έκλεισε στις {$a} και δεν είναι πλέον διαθέσιμη';
 $string['filetype'] = 'Τύπος';

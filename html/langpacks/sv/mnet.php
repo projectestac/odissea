@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'sv', version '3.11'.
+ * Strings for component 'mnet', language 'sv', version '4.1'.
  *
  * @package     mnet
  * @category    string
@@ -118,6 +118,7 @@ $string['is_in_range'] = 'IP-adressen <code>{$a}</code> representerar en giltig 
 $string['ispublished'] = '{$a} har aktiverat den här tjänsten för dig.';
 $string['issubscribed'] = ' {$a} prenumererar på den här tjänsten hos Din värd.';
 $string['keydeleted'] = 'Din nyckel har framgångsrikt tagits bort och ersatts.';
+$string['keydeletedcancelled'] = 'Inga ändringar';
 $string['keymismatch'] = 'Den publika nyckel som Du innehar skiljer sig från den publika nyckel som den f.n. publicerar. Den aktuella publicerade nyckeln är:';
 $string['last_connect_time'] = 'Senast tidpunkt för anslutning';
 $string['last_connect_time_help'] = 'Det senaste tillfället som Du kontaktade den här värden.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'es', version '3.11'.
+ * Strings for component 'debug', language 'es', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,17 @@ $string['notables'] = '¡No hay tablas!';
 $string['outputbuffer'] = 'Buffer de salida';
 $string['phpvaroff'] = 'The PHP server variable \'{$a->name}\' should be Off - {$a->link}';
 $string['phpvaron'] = 'The PHP server variable \'{$a->name}\' is not turned On - {$a->link}';
+$string['reactive_highlightoff'] = 'Destacar APAGADO';
+$string['reactive_highlighton'] = 'Destacar ENCENDIDO';
+$string['reactive_instances'] = 'Instancias reactivas:';
+$string['reactive_noinstances'] = 'Esta página no tiene instancias reactivas.';
+$string['reactive_pin'] = 'Fijar';
+$string['reactive_readmodeoff'] = 'Modo de lectura APAGADO';
+$string['reactive_readmodeon'] = 'Modo de lectura ENCENDIDO';
+$string['reactive_resetpanel'] = 'Resetear panel';
+$string['reactive_saveingwarning'] = '¡Atención! Editar el estado puede causar resultados inesperados.';
+$string['reactive_statedata'] = 'Datos de estado';
+$string['reactive_unpin'] = 'No fijar';
 $string['sessionmissing'] = 'El objeto {$a} está ausente de la sesión';
 $string['sqlrelyonobsoletetable'] = 'This SQL relies on obsolete table(s): {$a}! Your code must be fixed by a developer.';
 $string['stacktrace'] = 'Trazado de la pila (stack)';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_modules', language 'ur', version '3.11'.
+ * Strings for component 'block_activity_modules', language 'ur', version '4.1'.
  *
  * @package     block_activity_modules
  * @category    string
@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activity_modules:addinstance'] = 'ایک نیا سرگرمی بلاک شامل کریں';
 $string['pluginname'] = 'سرگرمیاں';
+$string['privacy:metadata'] = 'سرگرمیاں بلاک صرف دوسرے مقامات پر ذخیرہ کردہ ڈیٹا کو دکھاتا ہے۔';

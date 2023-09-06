@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xml', language 'ja', version '3.11'.
+ * Strings for component 'qformat_xml', language 'ja', version '4.1'.
  *
  * @package     qformat_xml
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['invalidxml'] = '無効なXMLファイルです - ストリングが必要です (CDATAを使用しますか?)';
 $string['pluginname'] = 'Moodle XMLフォーマット';
 $string['pluginname_help'] = 'これは問題をインポートおよびエクスポートするためのMoodle独自フォーマットです。';
+$string['pluginname_link'] = 'qformat/xml';
 $string['privacy:metadata'] = 'XML問題フォーマットプラグインはいかなる個人データも保存しません。';
 $string['truefalseimporterror'] = '<b>警告</b>: ○/×問題「 {$a->questiontext} 」を正しくインポートすることができませんでした。正解が「○」「×」のどちらであるか明確ではありません。正解が「 {$a->answer} 」であるとして問題がインポートされました。これが正しくない場合、あなたは問題を編集する必要があります。';
 $string['unsupportedexport'] = 'XMLエクスポートでは問題タイプ {$a} がサポートされていません。';

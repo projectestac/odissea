@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'sv', version '3.11'.
+ * Strings for component 'message_email', language 'sv', version '4.1'.
  *
  * @package     message_email
  * @category    string
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['email'] = 'Skicka meddelande via e-post till ';
-$string['emaildigestsubject'] = 'Meddelandesammandrag';
 $string['emaildigestunreadmessages'] = 'Olästa meddelanden';
 $string['emaildigestviewallmessages'] = 'Visa alla meddelanden';
 $string['emailonlyfromnoreplyaddress'] = 'Vill du alltid skicka e-post från no-reply adressen?';

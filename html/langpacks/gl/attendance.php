@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'gl', version '3.11'.
+ * Strings for component 'attendance', language 'gl', version '4.1'.
  *
  * @package     attendance
  * @category    string
@@ -25,9 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attendancereport'] = 'Asistencia';
+$string['attendanceuserreport'] = 'Informe de asistencia';
 $string['averageattendance'] = 'Asistencia media';
 $string['averageattendancegraded'] = 'Asistencia media';
 $string['calmonths'] = 'xaneiro,febreiro,marzo,abril,maio,xuño,xullo,agosto,setembro,outubro,novembro,decembro';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = 'Asistencia';
 $string['modulename_help'] = 'O módulo de actividade de asistencia permite que o profesorado pase lista durante a clase e que o alumnado vexa o seu rexistro de asistencia.
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlabeltype_courseclassifier', language 'el', version '3.11'.
+ * Strings for component 'customlabeltype_courseclassifier', language 'el', version '4.1'.
  *
  * @package     customlabeltype_courseclassifier
  * @category    string
@@ -27,12 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtypename'] = 'Ενεργοποίηση υπο-τύπου Ταξινομητής Μαθήματος';
 $string['courseclassifier'] = 'Ταξινομητής μαθήματος';
-$string['courseclassifier:addinstance'] = 'Προσθήκη στιγμιότυπου';
+$string['courseclassifier:addinstance'] = 'Προσθήκη στιγμιοτύπου';
 $string['courseclassifier:view'] = 'Μπορεί να δει το περιεχόμενο';
 $string['family'] = 'ειδικό';
 $string['fonction'] = 'Λειτουργία';
-$string['level0'] = 'Επίπεδο ταξιθέτησης 1';
-$string['level1'] = 'Επίπεδο ταξιθέτησης 2';
-$string['level2'] = 'Επίπεδο ταξιθέτησης 3';
+$string['level0'] = 'Επίπεδο κατηγοριοποίησης 1';
+$string['level1'] = 'Επίπεδο κατηγοριοποίησης 2';
+$string['level2'] = 'Επίπεδο κατηγοριοποίησης 3';
 $string['people'] = 'Συμμετέχοντες';
 $string['status'] = 'Κατάσταση μαθήματος';

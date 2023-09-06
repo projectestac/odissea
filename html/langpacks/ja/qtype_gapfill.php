@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapfill', language 'ja', version '3.11'.
+ * Strings for component 'qtype_gapfill', language 'ja', version '4.1'.
  *
  * @package     qtype_gapfill
  * @category    string
@@ -83,6 +83,7 @@ $string['or'] = 'または';
 $string['pleaseenterananswer'] = '解答を入力してください。';
 $string['pluginname'] = 'ギャップフィル';
 $string['pluginname_help'] = '完成するには角括弧内に語句を入力してください。例) The [cat] sat on the [mat]. 「mat」まはた「rug」を受け付ける場合、[mat|rug] を使用してください。ドロップダウンおよびドラッグ&ドロップモードにシャッフルした正解リストを表示できます。また、任意の不正解の選択肢を含めます。';
+$string['pluginname_link'] = 'question/type/gapfill';
 $string['pluginnameadding'] = 'ギャップフィル問題を追加する';
 $string['pluginnameediting'] = 'ギャップフィルを編集する';
 $string['pluginnamesummary'] = 'ギャップスタイル問題の解答を入力します。不正解の選択肢をドラッグ&ドロップまたはドロップダウンで選択できます。構文は簡単に学べます。';

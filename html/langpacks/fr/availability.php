@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'fr', version '3.11'.
+ * Strings for component 'availability', language 'fr', version '4.1'.
  *
  * @package     availability
  * @category    string
@@ -33,8 +33,8 @@ $string['condition_group_info'] = 'Ajouter un jeu de restrictions imbriquées po
 $string['enableavailability'] = 'Activer les restrictions d\'accès';
 $string['enableavailability_desc'] = 'Si ce réglage est activé, des conditions (basées sur la date, une note ou la fin d\'une activité) peuvent être définies qui déterminent si une activité ou une ressource est disponible.';
 $string['error_list_nochildren'] = 'Les jeux de restrictions doivent comporter au moins une condition';
-$string['hidden_all'] = 'Totalement caché si les conditions ne sont pas remplies par l\'utilisateur';
-$string['hidden_individual'] = 'Totalement caché si cette condition n\'est pas remplie par l\'utilisateur';
+$string['hidden_all'] = 'Totalement caché si les conditions ne sont pas remplies par l\'étudiant';
+$string['hidden_individual'] = 'Totalement caché si cette condition n\'est pas remplie par l\'étudiant';
 $string['hidden_marker'] = '(caché sinon)';
 $string['hide_verb'] = 'Cliquer pour cacher';
 $string['invalid'] = 'À définir';
@@ -65,7 +65,8 @@ $string['privacy:metadata'] = 'Le sous-système Restriction d\'accès n\'enregis
 $string['restrictaccess'] = 'Restriction d\'accès';
 $string['restrictbygroup'] = 'Ajouter une restriction de groupe/groupement';
 $string['setheading'] = '{$a->number} jeu de {$a->count} restriction(s)';
-$string['show_verb'] = 'Cliquer pour afficher en grisé';
-$string['shown_all'] = 'Affiché en grisé si les conditions ne sont pas remplies par l\'utilisateur';
-$string['shown_individual'] = 'Affiché en grisé si cette condition n\'est pas remplie par l\'utilisateur';
+$string['show_verb'] = 'Cliquer pour afficher';
+$string['showmore'] = 'Afficher plus';
+$string['shown_all'] = 'Affiché si les conditions ne sont pas remplies par l\'étudiant';
+$string['shown_individual'] = 'Affiché si cette condition n\'est pas remplie par l\'étudiant';
 $string['unknowncondition'] = 'Condition inconnue (plugin de condition supprimé)';

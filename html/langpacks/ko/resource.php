@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ko', version '3.11'.
+ * Strings for component 'resource', language 'ko', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -55,6 +55,7 @@ $string['displayselect_help'] = '이 설정은 파일 형식 및 브라우저가
 * 프레임안에 - 파일이 누비기 막대 및 파일 설명 아래 프레임안에 표시됩니다.
 * 새 창 - 파일이 메뉴와 주소 막대와 함께 새 브라우저 창에 표시됩니다.
 ';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = '표시 유형을 지정해 놓으면, 어떤 경우에는 표시되지 않을 수도 있음';
 $string['dnduploadresource'] = '파일 자원 만들기';
 $string['encryptedcode'] = '암호화된 코드';
@@ -64,11 +65,14 @@ $string['filterfilesexplain'] = '필터를 선택하면, 약간의 플래시 및
 $string['filtername'] = '자료이름 자동 연결';
 $string['forcedownload'] = '강제 내려받기';
 $string['framesize'] = '프레임 높이';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = '오래된 파일 전환';
 $string['legacyfilesactive'] = '활성화';
 $string['legacyfilesdone'] = '종료됨';
 $string['modifieddate'] = '{$a} 수정됨';
 $string['modulename'] = '파일';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = '파일';
 $string['notmigrated'] = '정규자료 형식 ({$a}) 은 아직 전환되지 않았습니다. ';
 $string['optionsheader'] = '표시 옵션';

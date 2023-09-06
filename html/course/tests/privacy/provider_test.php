@@ -149,7 +149,7 @@ class provider_test extends \core_privacy\tests\provider_testcase {
         $writer = \core_privacy\local\request\writer::with_context($this->coursecontext);
         \core_course\privacy\provider::export_user_data($approvedlist);
         $completiondata = $writer->get_data([get_string('privacy:completionpath', 'course')]);
-        $this->assertEquals('In progress', $completiondata->status);
+        $this->assertEquals('Complete', $completiondata->status);
         $this->assertCount(2, $completiondata->criteria);
 
         // User has a favourite course.
@@ -273,7 +273,7 @@ class provider_test extends \core_privacy\tests\provider_testcase {
         $records = $DB->get_records('course_modules_completion');
         $this->assertCount(2, $records);
         $records = $DB->get_records('course_completion_crit_compl');
-        $this->assertCount(2, $records);
+        $this->assertCount(4, $records);
 
         // Delete data for all users in a context different than the course context (system context).
         \core_course\privacy\provider::delete_data_for_all_users_in_context($systemcontext);

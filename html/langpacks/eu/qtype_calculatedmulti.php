@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'eu', version '3.11'.
+ * Strings for component 'qtype_calculatedmulti', language 'eu', version '4.1'.
  *
  * @package     qtype_calculatedmulti
  * @category    string
@@ -29,6 +29,7 @@ $string['answeroptions'] = 'Erantzunen aukerak';
 $string['answeroptions_help'] = 'Iradokitako erantzunaren formula hau da: <strong>{={x}+..}</strong>';
 $string['pluginname'] = 'Aukera anizkoitzeko galdera kalkulatua';
 $string['pluginname_help'] = 'Aukera anizkoitzeko galdera kalkulatuak aukera anizkoitzeko galdera arruntak bezalakoak dira, baina erantzunen aukeretan giltzen artean aldagaiak erabiltzen dituzten zenbakizko formulak gehitu daitezke, gero galdetegia egitean balioekin ordezkatuak izaten direnak. Adibidez, "Zein da {I} luzera eta {z} zabalera duen laukiaren azalera?" galderaren aukerazko erantzunetako bat {={l}*{z}} izango da (non * karaktereak biderketa esan nahi duen)';
+$string['pluginname_link'] = 'question/type/calculatedmulti';
 $string['pluginnameadding'] = 'Aukera anizkoitzeko galdera kalkulatua gehitzen';
 $string['pluginnameediting'] = 'Aukera anizkoitzeko galdera kalkulatua editatzen';
 $string['pluginnamesummary'] = 'Aukera anizkoitzeko galdera kalkulatuak aukera anizkoitzeko galdera arruntak bezalakoak dira, baina erantzunen aukeretan datu-multzo batetik ausaz aukeratzen diren zenbakizko balioen araberako formulak gehitu daitezke galdetegia egitean.';

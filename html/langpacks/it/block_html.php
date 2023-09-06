@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'it', version '3.11'.
+ * Strings for component 'block_html', language 'it', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -30,10 +30,10 @@ $string['configallowadditionalcssclasses'] = 'le istanze di blocchi HTML disporr
 $string['configclasses'] = 'Classi HTML aggiuntive';
 $string['configclasses_help'] = 'Facilita l\'identificazione di blocchi HTML multipli. Le classi CSS qui inserite (delimitate da spazi) saranno aggiunte alle classi di default del blocco.';
 $string['configcontent'] = 'Contenuto';
-$string['configtitle'] = 'Titolo del blocco HTML';
-$string['html:addinstance'] = 'Aggiungere blocco HTML';
-$string['html:myaddinstance'] = 'Aggiungere blocco HTML nella Dashboard';
-$string['newhtmlblock'] = '(nuovo blocco HTML)';
-$string['pluginname'] = 'HTML';
-$string['privacy:metadata:block'] = 'Il blocco HTML memorizza i propri dati all\'interno del sottosistema del blocco.';
-$string['search:content'] = 'Contenuto blocchi HTML';
+$string['configtitle'] = 'Titolo del blocco Testo';
+$string['html:addinstance'] = 'Aggiungere blocco Testo';
+$string['html:myaddinstance'] = 'Aggiungere blocco Testo nella Dashboard';
+$string['newhtmlblock'] = '(nuovo blocco testo)';
+$string['pluginname'] = 'Testo';
+$string['privacy:metadata:block'] = 'Il blocco Testo memorizza i propri dati all\'interno del sottosistema del blocco.';
+$string['search:content'] = 'Contenuto blocchi Testo';

@@ -55,7 +55,7 @@ $PAGE->set_heading($course->fullname);
 $PAGE->force_settings_menu(true);
 $PAGE->set_cacheable(true);
 $PAGE->navbar->add(get_string('settings', 'attendance'));
-
+$PAGE->requires->js_call_amd('mod_attendance/statusset', 'init');
 $errors = array();
 
 // Check sesskey if we are performing an action.
@@ -111,13 +111,16 @@ switch ($att->pageparams->action) {
                     ($status->description ? $status->description : get_string('nodescription', 'attendance'));
         $params = array_merge($att->pageparams->get_significant_params(), array('confirm' => 1));
         echo $OUTPUT->header();
-        echo $OUTPUT->heading(get_string('attendanceforthecourse', 'attendance').' :: ' .format_string($course->fullname));
         echo $OUTPUT->confirm($message, $att->url_preferences($params), $att->url_preferences());
         echo $OUTPUT->footer();
         exit;
     case mod_attendance_preferences_page_params::ACTION_HIDE:
         $statuses = $att->get_statuses(false);
         $status = $statuses[$att->pageparams->statusid];
+        // Prevent hiding status if in-use.
+        if (attendance_has_logs_for_status($att->pageparams->statusid)) {
+            throw new moodle_exception('canthidestatus', 'attendance', "attsettings.php?id=$id");
+        }
         attendance_update_status($status, null, null, null, 0, $att->context, $att->cm);
         break;
     case mod_attendance_preferences_page_params::ACTION_SHOW:
@@ -130,6 +133,8 @@ switch ($att->pageparams->action) {
         $description    = required_param_array('description', PARAM_TEXT);
         $grade          = required_param_array('grade', PARAM_RAW);
         $studentavailability = optional_param_array('studentavailability', null, PARAM_RAW);
+        $availability = optional_param_array('availability', null, PARAM_RAW);
+        $availablebeforesession = optional_param_array('availablebeforesession', '0', PARAM_RAW);
         $unmarkedstatus = optional_param('setunmarked', null, PARAM_INT);
 
         foreach ($grade as &$val) {
@@ -143,17 +148,24 @@ switch ($att->pageparams->action) {
             if ($unmarkedstatus == $id) {
                 $setunmarked = true;
             }
+            if (!isset($availablebeforesession[$id])) {
+                $availablebeforesession[$id] = 0;
+            }
+            if ($availability[$id] === '0') {
+                $studentavailability[$id] = '0';
+            } else if (empty($availability[$id])) {
+                $studentavailability[$id] = '';
+            }
             $errors[$id] = attendance_update_status($status, $acronym[$id], $description[$id], $grade[$id],
-                                                    null, $att->context, $att->cm, $studentavailability[$id], $setunmarked);
+                                                    null, $att->context, $att->cm, $studentavailability[$id], $availablebeforesession[$id], $setunmarked);
         }
         attendance_update_users_grade($att);
         break;
 }
 
 $output = $PAGE->get_renderer('mod_attendance');
-$tabs = new attendance_tabs($att, attendance_tabs::TAB_PREFERENCES);
-$prefdata = new attendance_preferences_data($att, array_filter($errors));
-$setselector = new attendance_set_selector($att, $maxstatusset);
+$prefdata = new mod_attendance\output\preferences_data($att, array_filter($errors));
+$setselector = new mod_attendance\output\set_selector($att, $maxstatusset);
 
 // Output starts here.
 
@@ -161,8 +173,6 @@ echo $output->header();
 if (!empty($notification)) {
     echo $notification;
 }
-echo $output->heading(get_string('attendanceforthecourse', 'attendance').' :: '. format_string($course->fullname));
-echo $output->render($tabs);
 echo $OUTPUT->box(get_string('preferences_desc', 'attendance'), 'generalbox attendancedesc', 'notice');
 echo $output->render($setselector);
 echo $output->render($prefdata);

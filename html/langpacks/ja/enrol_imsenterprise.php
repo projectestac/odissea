@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'ja', version '3.11'.
+ * Strings for component 'enrol_imsenterprise', language 'ja', version '4.1'.
  *
  * @package     enrol_imsenterprise
  * @category    string
@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aftersaving...'] = 'あなたの設定を保存した後、';
-$string['allowunenrol'] = 'IMSデータに学生/教師の<strong>登録解除</strong>を許可する';
+$string['allowunenrol'] = 'IMSデータで学生および教師の登録解除を許可する';
 $string['allowunenrol_desc'] = 'この設定を有効にした場合、エンタプライズデータ内で指定することによりコース登録が解除されます。';
 $string['basicsettings'] = '基本設定';
-$string['categoryidnumber'] = 'カテゴリIDナンバーを許可する';
-$string['categoryidnumber_desc'] = 'この設定を有効にした場合、IMS EnterpriseはIDナンバーのカテゴリを作成します。';
+$string['categoryidnumber'] = 'カテゴリIDナンバを許可する';
+$string['categoryidnumber_desc'] = 'この設定を有効にした場合、IMS EnterpriseはIDナンバのカテゴリを作成します。';
 $string['categoryseparator'] = 'カテゴリセパレータ文字';
-$string['categoryseparator_desc'] = '「カテゴリIDナンバー」が有効にされた場合、必須となります。カテゴリ名およびIDナンバーを分けるための文字です。';
+$string['categoryseparator_desc'] = '「カテゴリIDナンバ」が有効にされた場合、必須となります。カテゴリ名およびIDナンバを分けるための文字です。';
 $string['coursesettings'] = 'コースデータオプション';
 $string['createnewcategories'] = 'Moodleに登録されていない場合、新しい (非表示) コースカテゴリを作成する';
 $string['createnewcategories_desc'] = 'コースの入力データ内に&lt;org&gt;&lt;orgunit&gt;要素が存在する場合、そのコンテンツは最初から作成されるコースのカテゴリを指定するために使用されます。このプラグインは既存のコースを再度カテゴリ分類することはありません。
@@ -41,12 +41,14 @@ $string['createnewcategories_desc'] = 'コースの入力データ内に&lt;org&
 $string['createnewcourses'] = 'Moodleに登録されていない場合、新しい (非表示) コースを作成する';
 $string['createnewcourses_desc'] = 'この設定を有効にした場合、IMSエンタプライズ登録プラグインではIMSデータで見つかったMoodleデータベースに登録されていないコースを新たに作成することができます。すべての新しく作成されたコースは非表示とされます。';
 $string['createnewusers'] = 'Moodleに登録されていないユーザアカウントを作成する';
-$string['createnewusers_desc'] = 'IMSエンタープライズユーザ登録データには一般的に一連のユーザを記述します。この設定を有効にした場合、Moodleデータベースで探すことのできないユーザすべてを作成することができます。
+$string['createnewusers_desc'] = 'IMSエンタプライズユーザ登録データには一般的に一連のユーザを記述します。この設定を有効にした場合、Moodleデータベースで探すことのできないユーザすべてを作成することができます。
 
-ユーザは最初に「idnumber」、次にMoodleユーザ名で検索されます。パスワードはIMSエンタープライズプラグインによってインポートされません。Moodle認証プラグインでユーザ認証することをお勧めします。';
+ユーザは最初にIDナンバ、次にMoodleユーザ名で検索されます。パスワードはIMSエンタプライズプラグインによってインポートされません。Moodle認証プラグインでユーザ認証することをお勧めします。';
 $string['cronfrequency'] = '処理の頻度';
 $string['deleteusers'] = 'IMSデータに指定されている場合、ユーザアカウントを削除する';
 $string['deleteusers_desc'] = 'この設定を有効にした場合、IMSエンタプライズ登録データでユーザアカウントの削除を指定  (「recstatus」フラグにユーザアカウントの削除を意味する「3」を設定) することができます。Moodleの標準どおり、実際にはユーザレコードはMoodleデータベースから削除されず、アカウントに削除フラグがセットされます。';
+$string['disableenrolmentandremoveallroles'] = '登録を一時停止してロールを削除する';
+$string['disableenrolonly'] = '登録一時停止のみ';
 $string['doitnow'] = 'IMSエンタプライズインポート処理を実行してください。';
 $string['emptyattribute'] = '空白のままにする';
 $string['filelockedmail'] = 'あなたが使用しているIMSファイルベースの登録 ({$a}) テキストファイルをcronプロセスで削除することができません。通常、これはファイルパーミッションが正しくないことを意味します。Moodleが削除できるようファイルのパーミッションを変更してください。変更しない場合、この処理が繰り返し実行されます。';
@@ -66,11 +68,13 @@ $string['messageprovider:imsenterprise_enrolment'] = 'IMSエンタプライズ�
 $string['miscsettings'] = 'その他';
 $string['nestedcategories'] = 'ネストカテゴリを許可する';
 $string['nestedcategories_desc'] = 'この設定を有効にした場合、IMS Enterpriseはネストカテゴリを作成します。';
+$string['noaction'] = '操作なし';
 $string['pluginname'] = 'IMSエンタプライズファイル';
 $string['pluginname_desc'] = 'このメソッドではあなたが指定した場所にある特別にフォーマットされたテキストファイルを繰り返しチェックおよび処理します。IMSエンタプライズ仕様に基づき、ファイルにはperson、groupおよびmembershipをXML要素に含む必要があります。';
 $string['privacy:metadata'] = 'IMSエンタプライズファイル登録プラグインはいかなる個人データも保存しません。';
 $string['processphoto'] = 'ユーザ写真データをプロファイルに追加する';
 $string['processphotowarning'] = '警告: イメージ処理はサーバに深刻な負荷を与えます。多くの学生の処理が予想される場合、このオプションを有効にしないことをお勧めします。';
+$string['removeenrolmentandallroles'] = '登録およびロールを削除する';
 $string['restricttarget'] = '次のターゲットが指定されている場合のみ処理する';
 $string['restricttarget_desc'] = 'IMSエンタプライズデータファイルは複数の「ターゲット」を対象とすることができます - 異なるLMSまたは学校/大学の異なるシステム。<properties>タグ内の<target>にネーミングすることでデータが1つまたはそれ以上のターゲットシステムを対象としているエンタープライズファイルを指定することができます。
 
@@ -88,6 +92,8 @@ $string['sourcedidfallback_desc'] = 'IMSデータでは<sourcedid>フィール�
 いくつかの学生情報が<userid>フィールドに出力されない場合、この設定を有効にして<sourcedid>をMoodleのユーザIDに使用してください。そうでない場合、この設定を無効のままにしてください。';
 $string['truncatecoursecodes'] = 'この長さにコースコードを切り詰める';
 $string['truncatecoursecodes_desc'] = 'ここでは処理する前にコースコードを指定した長さに切り詰めることができます。コースコードを切り詰めたい場合、このボックスに文字長を入力してください。そうでない場合、このボックスを空白のままにすることによりコースコードは切り詰められません。';
+$string['unenrolaction'] = '登録解除操作';
+$string['unenrolaction_desc'] = 'ユーザがコースから登録解除される場合に実行される操作です (上の登録解除設定が有効な場合のみ適用されます)。';
 $string['updatecourses'] = 'コースを更新する';
 $string['updatecourses_desc'] = 'この設定を有効にした場合、IMS Enterprise登録プラグインは長いコース名およびコース省略名を更新することができます (「recstatus」フラグに「2」が設定された場合、更新を意味します)。';
 $string['updateusers'] = 'IMSデータで指定された場合、ユーザアカウントを更新する';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'ar', version '3.11'.
+ * Strings for component 'qtype_random', language 'ar', version '4.1'.
  *
  * @package     qtype_random
  * @category    string
@@ -36,10 +36,10 @@ $string['randomqnamefromtop'] = 'سؤال عشوائي خاطي! لطفاً، إ
 $string['randomqnamefromtoptags'] = 'سؤال عشوائي خاطي! لطفاً، إحذفه.';
 $string['randomqnametags'] = 'عشوائي من ({$a->category}، الوسوم: {$a->tags})';
 $string['randomqplusname'] = 'عشوائي من ({$a} وأصنافه الفرعية)';
-$string['randomqplusnamecourse'] = 'عشوائي (أي صنف للأسئلة في هذا المقرر الدراسي)';
-$string['randomqplusnamecoursecat'] = 'عشوائي (أي صنف للأسئلة ضمن تصنيف المقرر الدراسي {$a})';
-$string['randomqplusnamecoursecattags'] = 'عشوائي (أي صنف للأسئلة ضمن تصنيف المقرر الدراسي {$a->category}، الوسوم: {$a->tags})';
-$string['randomqplusnamecoursetags'] = 'عشوائي (أي صنف للأسئلة في هذا المقرر الدراسي، الوسوم: {$a->tags})';
+$string['randomqplusnamecourse'] = 'عشوائي (أي صنف للأسئلة في هذا المساق)';
+$string['randomqplusnamecoursecat'] = 'عشوائي (أي صنف للأسئلة ضمن تصنيف المساق {$a})';
+$string['randomqplusnamecoursecattags'] = 'عشوائي (أي صنف للأسئلة ضمن تصنيف المساق {$a->category}، الوسوم: {$a->tags})';
+$string['randomqplusnamecoursetags'] = 'عشوائي (أي صنف للأسئلة في هذا المساق، الوسوم: {$a->tags})';
 $string['randomqplusnamemodule'] = 'عشوائي (أي صنف للأسئلة لهذا الاختبار)';
 $string['randomqplusnamemoduletags'] = 'عشوائي (أي صنف للأسئلة لهذا الاختبار، الوسوم: {$a->tags})';
 $string['randomqplusnamesystem'] = 'عشوائي (أي صنف للأسئلة على مستوى النظام)';

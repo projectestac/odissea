@@ -38,17 +38,14 @@ use core\check\result;
 class cronrunning extends check {
 
     /**
-     * Constructor
+     * A link the running tasks report
+     *
+     * @return action_link|null
      */
-    public function __construct() {
-        global $CFG;
-        $this->id = 'cronrunning';
-        $this->name = get_string('checkcronrunning', 'tool_task');
-        if (empty($CFG->cronclionly)) {
-            $this->actionlink = new \action_link(
-                new \moodle_url('/admin/cron.php'),
-                get_string('cron', 'admin'));
-        }
+    public function get_action_link(): ?\action_link {
+        return new \action_link(
+            new \moodle_url('/admin/tool/task/runningtasks.php'),
+            get_string('runningtasks', 'tool_task'));
     }
 
     /**
@@ -71,7 +68,8 @@ class cronrunning extends check {
         $formatexpected = format_time($expectedfrequency);
         $formatinterval = format_time($lastcroninterval);
 
-        $details = format_time($delta);
+        // Inform user the time since last cron start.
+        $details = get_string('lastcronstart', 'tool_task', $formatdelta);
 
         if ($delta > $expectedfrequency + MINSECS) {
             $status = result::WARNING;

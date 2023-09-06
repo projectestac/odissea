@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'eu', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'eu', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -30,6 +30,7 @@ $string['acceptrisk_help'] = 'Helbide elektronikoaren egiaztapena desgaitzeak po
 $string['authconfirm'] = 'Ekintza honek Moodleri autentifikatutako kontuan API sarbide iraunkorra emango dio. Hau Moodlerenak diren fitxategiak kudeatzeko sistemako kontu gisa erabiltzeko pentsatuta dago.';
 $string['authconnected'] = 'Sistemako kontua lineaz kanpoko sarbiderako konektatuta dago orain';
 $string['authnotconnected'] = 'Sistemako kontua ez dago lineaz kanpoko sarbiderako konektatuta';
+$string['clever_service'] = 'Clever';
 $string['configured'] = 'Konfiguratuta';
 $string['configuredstatus'] = 'Konfiguratuta';
 $string['connectsystemaccount'] = 'Konektatu sistemako kontura';
@@ -66,6 +67,7 @@ $string['google_service'] = 'Google';
 $string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Sarbidea duten domeinuak';
 $string['issueralloweddomains_help'] = 'Zehaztuz gero, ezarpen honetan hornitzaile hau erabili saioa hasi ahalko duten domeinuak mugatu daitezke komaz banatutako zerrendan zehaztuta.';
+$string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
 $string['issuerbaseurl'] = 'Zerbitzuaren oinarrizko URLa';
 $string['issuerbaseurl_help'] = 'Zerbitzu honetarako sarbiderako oinarrizko URLa';
 $string['issuerclientid'] = 'Bezeroaren IDa';

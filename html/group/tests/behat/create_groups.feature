@@ -24,8 +24,7 @@ Feature: Organize students into groups
       | student2 | C1 | student |
       | student3 | C1 | student |
     And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    And I navigate to "Users > Groups" in current page administration
+    And I am on the "Course 1" "groups" page
     And I press "Create group"
     And I set the following fields to these values:
       | Group name | Group 1 |
@@ -77,8 +76,7 @@ Feature: Organize students into groups
     And the following config values are set as admin:
       | showuseridentity | email,country |
     And I log in as "teacher"
-    And I am on "Course 1" course homepage
-    And I navigate to "Users > Groups" in current page administration
+    And I am on the "Course 1" "groups" page
     And I press "Create group"
     And I set the following fields to these values:
       | Group name | Group 1 |
@@ -101,20 +99,18 @@ Feature: Organize students into groups
     And the following "course enrolments" exist:
       | user | course | role |
       | teacher1 | C1 | editingteacher |
-    And I log in as "admin"
-    And I set the following system permissions of "Teacher" role:
-      | moodle/course:changeidnumber | Prevent |
-    And I log out
+    And the following "role capability" exists:
+      | role                         | editingteacher |
+      | moodle/course:changeidnumber | prevent        |
     And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    And I navigate to "Users > Groups" in current page administration
+    And I am on the "Course 1" "groups" page
     When I press "Create group"
     Then the "idnumber" "field" should be readonly
     And I set the following fields to these values:
       | Group name | The greatest group that never existed |
     And I press "Save changes"
     And I should see "The greatest group that never existed"
-    And I follow "Groupings"
+    And I select "Groupings" from the "jump" singleselect
     And I press "Create grouping"
     And the "idnumber" "field" should be readonly
     And I set the following fields to these values:
@@ -128,8 +124,7 @@ Feature: Organize students into groups
       | Course 1 | C1 | 0 | 1 |
       | Course 2 | C2 | 0 | 1 |
     And I log in as "admin"
-    And I am on "Course 1" course homepage
-    And I navigate to "Users > Groups" in current page administration
+    And I am on the "Course 1" "groups" page
     When I press "Create group"
     And I set the following fields to these values:
       | Group name | Group A |
@@ -150,8 +145,7 @@ Feature: Organize students into groups
       | Enrolment key | Abcdef-2 |
     And I press "Save changes"
     And the "groups" select box should contain "Group B (0)"
-    And I am on "Course 2" course homepage
-    And I navigate to "Users > Groups" in current page administration
+    And I am on the "Course 2" "groups" page
     And I press "Create group"
     And I set the following fields to these values:
       | Group name | Group A |

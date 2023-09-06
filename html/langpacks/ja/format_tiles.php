@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'ja', version '3.11'.
+ * Strings for component 'format_tiles', language 'ja', version '4.1'.
  *
  * @package     format_tiles
  * @category    string
@@ -30,8 +30,6 @@ $string['admintools'] = '管理ツール';
 $string['all'] = 'すべて';
 $string['allcomplete'] = '完了';
 $string['allcoursescomplypalette'] = 'すべてのコースでタイルの色が許可されています。リセットする必要はありません。リセットを押す前に、許可された色の変更を保存してください。';
-$string['allowlabelconversion'] = 'ラベルからページへの変換を許可';
-$string['allowlabelconversion_desc'] = 'チェックすると、編集中の先生は、各ラベルの編集設定のドロップダウンメンユーに、ラベルをページに変換するオプションが表示されます。';
 $string['allowphototiles'] = 'フォトタイル可';
 $string['allowphototiles_desc'] = '選択された場合、教師はタイルの背景となる写真をアップロードすることができるようになります。標準のタイルアイコンも同じコースで使用することができます。(選択されていない場合は、タイルアイコンのみが許可され、以下の他の写真のタイル設定は無視されます)';
 $string['allowsubtilesview'] = 'サブタイル表示を許可';
@@ -46,8 +44,6 @@ $string['assumedatastoreconsent_desc'] = '選択された場合、ユーザー�
 $string['backupfailed'] = 'バックアップ失敗';
 $string['basecolour'] = 'タイルの色';
 $string['basecolour_help'] = 'ここで設定された色は、コース内のすべてのタイルに適用されます。';
-$string['blockedpopup'] = 'お使いのブラウザでは、ポップアップウィンドウがブロックされています。このサイトからのポップアップを許可するか、以下のリンクをクリックし、このウィンドウでサイトをご覧ください';
-$string['blockedpopuptitle'] = 'ポップアップウィンドウをブロックしました';
 $string['brandcolour'] = 'ブランド色';
 $string['canceltask'] = 'キャンセル';
 $string['changedcolour'] = 'タイルの色をコース{$a}のデフォルトに戻す';
@@ -76,11 +72,10 @@ $string['completionwarning_help'] = '個々のアイテムを編集して追跡�
 $string['contact'] = '連絡先';
 $string['contactdeveloper'] = 'お問い合わせ';
 $string['contents'] = '内容';
-$string['converttopage'] = 'ページに変換';
-$string['converttopage_confirm'] = 'よろしいですか？元に戻すことはできません（必要に応じて手動でラベルを再作成する必要があります）';
 $string['courseshowtileprogress'] = '各タイルに進行状況を表示する';
 $string['courseshowtileprogress_error'] = '完了トラッキング > 完了トラッキングを有効にする」が「No」に設定されていて（このページのさらに下を参照）、この設定と競合しています。タイル上に進捗状況を表示したい場合は、「完了トラッキング > 完了トラッキングを有効にする」を「Yes」に設定してください。それ以外の場合は、この設定を「No」にしてください。';
 $string['courseshowtileprogress_help'] = '<p>選択すると、各タイルにユーザーのアクティビティの進捗状況が、分数で表示されるか（例：「Progress 2/10」は10個のアクティビティのうち2個が完了したことを意味する）、円で表示されるパーセンテージで表示されます。</p><p>これは、「完了トラッキング > 完了トラッキングを有効 」がオンになっている場合のみ使用できます。</p><p>特定のタイル内に追跡可能なアクティビティがない場合、そのタイルにはインジケータが表示されません。</p>';
+$string['courseshowtileprogress_link'] = 'Activity_completion_settings#Activity_settings';
 $string['coursetoomanysections'] = '編集者への警告：このコースでは、許容される最大数よりも多くのタイルが使用されています。最大で{$a->max}が学生に表示されます（"{$a->tilename}"まで）（編集者はもっと見ることができます）。';
 $string['courseusebarforheadings'] = '色付きのタブで見出しを強調する';
 $string['courseusebarforheadings_help'] = 'テキストエディタで見出しスタイルが選択されると、コースの見出しの左側にカラーのタブが表示されます';
@@ -106,6 +101,7 @@ $string['disabledbyadmin'] = 'サイト管理者による無効化';
 $string['displayfilterbar'] = 'フィルターバー';
 $string['displayfilterbar_error'] = 'このコースに成果を設定していない場合、タイル番号に基づいてのみフィルタバーを表示することができ、成果に基づいて表示することはできません。まず、成果を作成してから、ここに戻ってきてください。';
 $string['displayfilterbar_help'] = '<p>選択されると、コースのタイル画面の前に自動的にボタンの配列が表示され、ユーザーはこれをクリックして、特定の範囲にタイルを絞り込むことができます。</p><p>「タイルの数に基づく」を選択すると、タイル1〜4番のボタン、タイル5〜8番のボタンなど、一連のボタンが表示されます。</p><p>「コースの成果に基づく」を選択した場合、コースの成果ごとに1つのボタンが表示されます。それぞれのタイルは、タイルの設定ページから任意の成果 (および任意のボタン) に割り当てることができます。</p>';
+$string['displayfilterbar_link'] = 'Outcomes';
 $string['displaytitle_mod_doc'] = 'ワード文書';
 $string['displaytitle_mod_html'] = 'Webページ';
 $string['displaytitle_mod_jpeg'] = '画像';
@@ -147,7 +143,6 @@ $string['hidden'] = '非表示';
 $string['hide'] = '隠す';
 $string['hidefromothers'] = 'タイルを隠す';
 $string['highestsectionnum'] = '最高のセクション番号';
-$string['highlightoff'] = 'ハイライト解除';
 $string['home'] = 'コースホーム';
 $string['hovercolour'] = 'マウスオーバー時のタイルの色';
 $string['hovercolour_descr'] = 'マウスオーバー時に表示されるタイルの色';
@@ -268,7 +263,6 @@ $string['jsdeactivate'] = 'アニメーション付きナビゲーション「�
 $string['jsdeactivated'] = 'あなたのアカウントでアニメーション付きナビゲーションを無効にしました。';
 $string['jsnavsettings'] = 'JavaScriptナビゲーション';
 $string['jsreactivated'] = 'あなたのアカウントでは、アニメーション付きナビゲーションが有効になっています。こちらの方が早いかもしれません。JavaScriptを有効にする必要があります。';
-$string['labelconverted'] = '変換されたラベル';
 $string['links'] = 'リンク';
 $string['loading'] = '読み込み中';
 $string['maxcoursesectionsallowed'] = 'この環境で許容されるコースセクションの最大数は{$a}です。';
@@ -370,10 +364,8 @@ $string['tileicon_help'] = 'ここで選択されたアイテムは、コース�
 $string['tileicons'] = 'タイルのアイコン';
 $string['tileoutcome'] = 'このタイルのアウトカム';
 $string['tileoutcome_help'] = 'このタイルに結果を選択した場合、コース設定でフィルターボタンのセットを表示することができます。各結果に対して1つずつ表示され、押したときにどの結果が割り当てられているかによって表示されたタイルをフィルターします';
-$string['tileoutofsequence'] = 'このタイルはセクション番号が順番になっていません。ボタンをクリックして修正するか、そのタイルを完全に削除してください（コンテンツを他のタイルに移動してからにしてください）。';
 $string['tileselecttip'] = 'タイルのアイコンや写真を簡単に変更する方法をご紹介します。コース上で編集モードをオンにした状態で、変更したいアイコンや写真をクリックするだけです。アイコンの選択画面が表示されます。';
 $string['tilesformatregistration'] = 'タイルフォーマットの登録';
-$string['tilesoutofsequencewarning'] = '編集者への警告です。以下のタイルにエラーがあります。ボタンをクリックするか、これらのタイルを削除して問題を解決してください。';
 $string['tip'] = '提案';
 $string['togglecompletion'] = 'クリックすると完了ステータスが切り替わります。';
 $string['tootall'] = 'タイルに対して高すぎる';

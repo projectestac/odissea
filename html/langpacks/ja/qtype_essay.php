@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'ja', version '3.11'.
+ * Strings for component 'qtype_essay', language 'ja', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -60,10 +60,11 @@ $string['nlines'] = '{$a} 行';
 $string['nonexistentfiletypes'] = '次のファイルタイプは認識されませんでした: {$a}';
 $string['pluginname'] = '作文問題';
 $string['pluginname_help'] = '問題への解答において解答者は１つ以上のファイルをアップロードまたはオンラインでテキストを入力することができます。解答は手動で評定する必要があります。';
+$string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = '作文問題の追加';
 $string['pluginnameediting'] = '作文問題の編集';
 $string['pluginnamesummary'] = 'ファイルアップロードまたはオンラインテキストによる解答を許可します。これは手動で評定する必要があります。';
-$string['privacy:metadata'] = '作文問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
+$string['privacy:metadata'] = '作文問題タイププラグインは問題作成者がユーザプレファレンスとしてデフォルトオプションを設定できます。';
 $string['privacy:preference:attachments'] = '許可される添付数です。';
 $string['privacy:preference:attachmentsrequired'] = '必要な添付数です。';
 $string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';

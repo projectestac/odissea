@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'el', version '3.11'.
+ * Strings for component 'tool_cohortroles', language 'el', version '4.1'.
  *
  * @package     tool_cohortroles
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['acohortroleassignmentssaved'] = 'Αποθηκεύτηκαν {$a} αναθέσεις ρόλου σε σύνολο χρηστών';
 $string['assign'] = 'Ανάθεση';
 $string['assignroletocohort'] = 'Ανάθεση ρόλων στο πλαίσιο χρήστη σε όλα τα μέλη ενός συνόλου χρηστών';
-$string['backgroundsync'] = 'Σημείωση: Οι νέες αναθέσεις ρόλου σε αυτό το σύνολο χρηστών δεν θα τεθούν σε ισχύ αμέσως. Οι αλλαγές ανάθεσης ρόλου θα γίνουν από μια προγραμματισμένη εργασία.';
+$string['backgroundsync'] = 'Σημείωση: Οι νέες αναθέσεις ρόλου σε αυτό το σύνολο χρηστών δεν θα τεθούν σε ισχύ αμέσως. Οι αλλαγές ανάθεσης ρόλου θα γίνουν από μια χρονοπρογραμματισμένη εργασία.';
 $string['cohortroleassignmentnotremoved'] = 'Η ανάθεση ρόλου σε σύνολο χρηστών δεν αφαιρέθηκε.';
 $string['cohortroleassignmentremoved'] = 'Η ανάθεση ρόλου στο σύνολο χρηστών αφαιρέθηκε.';
 $string['cohortroles'] = 'Ρόλοι συνόλου χρηστών';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_catalogue', language 'ca', version '3.11'.
+ * Strings for component 'block_catalogue', language 'ca', version '4.1'.
  *
  * @package     block_catalogue
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activities_resource'] = 'Recursos';
 $string['blocks_description_news_items'] = 'Els missatges recents publicats al fòrum de notícies es mostren al bloc «Darreres notícies», juntament amb un enllaç a les notícies arxivades més antigues.';
 $string['hvp_Accordion'] = 'Acordió';
 $string['hvp_Audio'] = 'Àudio';
@@ -54,3 +55,6 @@ $string['hvp_description_ImageHotspotQuestion'] = 'Crea zones interactives a la 
 $string['hvp_description_ImageHotspots'] = 'Crea una imatge amb múltiples zones d\'informació interactives';
 $string['hvp_description_InteractiveVideo'] = 'Crea vídeos enriquits amb interaccions';
 $string['hvp_description_MultiChoice'] = 'Crea preguntes d\'opció múltiple flexibles';
+$string['mods_resource'] = 'Recursos';
+$string['resources_listname'] = 'Recursos';
+$string['resources_resource'] = 'Recursos';

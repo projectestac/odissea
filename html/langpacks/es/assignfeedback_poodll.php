@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_poodll', language 'es', version '3.11'.
+ * Strings for component 'assignfeedback_poodll', language 'es', version '4.1'.
  *
  * @package     assignfeedback_poodll
  * @category    string
@@ -25,11 +25,29 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowedrecorders'] = 'Grabadoras a habilitar';
+$string['boardsize'] = 'Tamaño del pizarrón de PoodLL';
 $string['default'] = 'Activado por defecto';
+$string['default_help'] = 'Si se configura, este método de retroalimentación será habilitado por defecto para todas las tareas nuevas.';
 $string['deletefeedback'] = 'Borrar esta retroalimentación.';
 $string['downloadfile'] = '[descargar fichero]';
 $string['downloadsok'] = 'Mostrar enlace de descarga';
+$string['enabled'] = 'Retroalimentación para PoodLL';
+$string['enabled_help'] = 'Si se habilita, el evaluador puede dejar retroalimentación en audio/video para cada envío.';
 $string['no'] = 'no';
+$string['pluginname'] = 'Retroalimentación PoodLL';
+$string['poodll:reviewfeedbacks'] = 'Puede revisar retroalimentaciones Poodll (grabaciones)';
+$string['poodll:use'] = 'Permitir uso de Poodll para retroalimentación';
+$string['privacy:metadata'] = 'El plugin Poodll Online Assignment Submission (Envío de Tarea Poodll Enlínea) no almacena datos personales.';
+$string['privacy:metadata:filepurpose'] = 'Las grabaciones (envíos de archivo Poodll) para esta retroalimentación de Tarea.';
+$string['privacy:path'] = 'Retroalimentacion_Poodll';
+$string['reallydeletefeedback'] = '¿Realmente desea eliminar esta retroalimentación?';
+$string['recordertype'] = 'Tipo de Grabadora PoodLL';
 $string['replymp3voice'] = 'Grabación de Audio';
+$string['replysnapshot'] = 'Foto instantánea';
 $string['replyvideo'] = 'Grabación de Vídeo';
+$string['replyvoice'] = 'Video Grabadora (Red5)';
+$string['replywhiteboard'] = 'Pizarrón';
+$string['showcurrentfeedback'] = 'Mostrar retroalimentación actual';
+$string['showcurrentfeedbackdetails'] = 'Mostrar retroalimentación PoodLL previamente grabada en el formato para reatroalimentación, para beneficio del profesor.';
 $string['yes'] = 'sí';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'de', version '3.11'.
+ * Strings for component 'bigbluebuttonbn', language 'de', version '4.1'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptdpa'] = 'Ich verstehe und akzeptiere die Datenverarbeitungsvereinbarung';
 $string['activityoverview'] = 'Sie haben anstehende BigBlueButton-Meetings.';
 $string['bbbduetimeoverstartingtime'] = 'Die Endzeit muss später als die Anfangszeit sein.';
 $string['bbbdurationwarning'] = 'Dieses Meeting dauert maximal %duration% Minuten.';
@@ -43,34 +44,36 @@ $string['bigbluebuttonbn:publishrecordings'] = 'Aufzeichnungen veröffentlichen'
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Aufzeichnungen Schutz aufheben';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Aufzeichnungen Veröffentlichung zurückziehen';
 $string['bigbluebuttonbn:view'] = 'Meeting anzeigen';
+$string['bigbluebuttondisablednotification'] = 'Die Aktivität BigBlueButton wurde deaktiviert und alle vorhandenen Kursaktivitäten von BigBlueButton sind derzeit nicht zugänglich. Bevor Sie dieses Plugin erneut aktivieren, vergewissern Sie sich bitte, dass Sie die <a href="{$a}" target="_blank">Datenverarbeitungsvereinbarung</a> mit Blindside Networks Inc. gelesen und akzeptiert haben.';
+$string['bigbluebuttondisablednotification_subject'] = 'Die Aktivität BigBlueButton ist deaktiviert.';
 $string['cachedef_currentfetch'] = 'Daten zum Auflisten aller kürzlich abgerufenen Aufzeichnungen.';
 $string['cachedef_recordings'] = 'Metadaten zur Aufzeichnung';
 $string['cachedef_serverinfo'] = 'Infos zum Remote-Server';
 $string['cachedef_validatedurls'] = 'Cache von validierten URL-Prüfungen';
 $string['calendarstarts'] = '{$a} ist vorgesehen für';
 $string['cannotperformaction'] = 'Aktion {$a} kann für diese Aufzeichnung nicht ausgeführt werden';
-$string['completionattendance'] = 'Teilnehmer/innen müssen am Meeting teilnehmen für:';
-$string['completionattendance_desc'] = 'Teilnehmer/in muss das Meeting betreten und mindestens {$a} Minute(n) bleiben.';
+$string['completionattendance'] = 'Teilnehmer/in muss am Meeting teilnehmen für:';
+$string['completionattendance_desc'] = 'Muss mindestens {$a} Minute(n) teilnehmen';
 $string['completionattendance_event_desc'] = 'Teilnehmer/in hat das Meeting betreten und ist mindestens {$a} Minute(n) geblieben.';
 $string['completionattendancegroup'] = 'Anwesenheit erforderlich';
 $string['completionattendancegroup_help'] = 'Teilnehmer/in muss für den Abschluss mindestens (n) Minuten teilnehmen.';
-$string['completionengagement_desc'] = 'Teilnehmer/in muss während des Treffens an Aktivitäten teilnehmen';
+$string['completionengagement_desc'] = 'Muss an Aktivitäten teilnehmen';
 $string['completionengagementchats'] = 'Chats';
-$string['completionengagementchats_desc'] = 'Teilnehmer/in muss für den Abschluss an {$a} Chat(s) teilnehmen.';
+$string['completionengagementchats_desc'] = 'Muss an {$a} Chat(s) teilnehmen';
 $string['completionengagementchats_event_desc'] = 'Teilnehmer/in hat {$a} Chat(s) ausgelöst.';
 $string['completionengagementemojis'] = 'Emojis';
-$string['completionengagementemojis_desc'] = 'Teilnehmer/in muss für den Abschluss {$a} Emoji(s) an Umfragen senden.';
-$string['completionengagementemojis_event_desc'] = 'Teilnehmer/in hat {$a} Emoji-Event(s) ausgelöst.';
+$string['completionengagementemojis_desc'] = 'Muss Emoji {$a}-mal ändern';
+$string['completionengagementemojis_event_desc'] = 'Muss Emoji {$a}-mal geändert haben';
 $string['completionengagementgroup'] = 'Teilnahme erforderlich';
 $string['completionengagementgroup_help'] = 'Eine aktive Teilnahme während der Sitzung ist für den Abschluss erforderlich.';
 $string['completionengagementpollvotes'] = 'Abstimmungen';
-$string['completionengagementpollvotes_desc'] = 'Teilnehmer/in muss für den Abschluss {$a}-mal an Umfragen teilnehmen.';
-$string['completionengagementpollvotes_event_desc'] = 'Teilnehmer/in hat in {$a} Umfrage(n) ausgelöst';
+$string['completionengagementpollvotes_desc'] = 'Muss {$a}-mal in Umfragen abstimmen';
+$string['completionengagementpollvotes_event_desc'] = 'Muss {$a}-mal Umfragen beantworten';
 $string['completionengagementraisehand'] = 'Wortmeldungen notwendig';
-$string['completionengagementraisehand_desc'] = 'Teilnehmer/in muss sich für den Abschluss mindestens {$a}-mal zu Wort melden.';
+$string['completionengagementraisehand_desc'] = 'Muss sich {$a}-mal zu Wort melden';
 $string['completionengagementraisehand_event_desc'] = 'Teilnehmer/in hat sich {$a}-mal zu Wort gemeldet.';
 $string['completionengagementtalks'] = 'Gespräche';
-$string['completionengagementtalks_desc'] = 'Teilnehmer/in muss für den Abschluss mindestens {$a}-mal sprechen.';
+$string['completionengagementtalks_desc'] = 'Muss {$a}-mal sprechen';
 $string['completionengagementtalks_event_desc'] = 'Teilnehmer/in hat {$a} Gespräch(e) begonnen.';
 $string['completionupdatestate'] = 'Status der Abschlussüberprüfung';
 $string['completionvalidatestate'] = 'Abschluss überprüfen';
@@ -78,9 +81,6 @@ $string['completionvalidatestatetriggered'] = 'Die Abschlussüberprüfung wurde 
 $string['completionview'] = 'Anzeigen notwendig';
 $string['completionview_desc'] = 'Teilnehmer/in muss für den Abschluss das Meeting anzeigen.';
 $string['completionview_event_desc'] = 'Teilnehmer/in hat das Meeting angezeigt.';
-$string['config_checksum_algorithm'] = 'BigBlueButton Prüfsummenalgorithmus';
-$string['config_checksum_algorithm_description'] = 'Der Prüfsummenalgorithmus Ihres BigBlueButton Servers.
-(SHA1 garantiert die Kompatibiltät mit älteren Serverversionen, ist aber nicht so sicher. SHA512 entspricht dem FIPS 140-2 Sicherheitsstandard.)';
 $string['config_default_messages'] = 'Standardmitteilungen';
 $string['config_default_messages_description'] = 'Standardmitteilung für Aktivität festlegen';
 $string['config_disablecam_default'] = '"Webcams deaktivieren" standardmäßig aktiviert';
@@ -103,12 +103,18 @@ $string['config_disablepublicchat_default'] = '"Öffentlichen Chat deaktivieren"
 $string['config_disablepublicchat_default_description'] = 'Die Option legt fest, dass der öffentlichen Chat deaktiviert ist.';
 $string['config_disablepublicchat_editable'] = '"Öffentlichen Chat deaktivieren" bearbeitbar';
 $string['config_disablepublicchat_editable_description'] = 'Die Option "Öffentlichen Chat deaktivieren" kann bearbeitet werden, wenn die Aktivität angelegt oder aktualisiert wird.';
+$string['config_dpa_note'] = 'Hinweis: Um Ihren Datenschutzverpflichtungen nachzukommen, müssen Sie vor der Nutzung dieses Plugin sicherstellen, dass Sie die Datenverarbeitungsvereinbarung des Dienstanbieters gelesen und akzeptiert haben. Für den kostenlosen BigBlueButton-Service von Blindside Networks lesen und akzeptieren Sie bitte die folgende <a href="{$a}" target="_blank">Datenverarbeitungsvereinbarung</a>. Wenden Sie sich bitte an Ihre eigenen Datenschutzexpert/innen, wenn Sie weitere Unterstützung brauchen.<br/><br/>';
 $string['config_experimental_features'] = 'Experimentelle Optionen';
 $string['config_experimental_features_description'] = 'Einstellungen für experimentelle Optionen';
 $string['config_extended_capabilities'] = 'Erweiterte Funktionen';
 $string['config_extended_capabilities_description'] = 'Erweiterungen konfigurieren, falls der BigBlueButton-Server diese bereit stellt.';
 $string['config_general'] = 'Allgemeine Einstellungen';
-$string['config_general_description'] = '<strong>Wichtige Information zur Nutzung von BigBlueButton</strong><br/> Bei der Nutzung der Grundeinstellungen werden die Dienste eines externen Anbieters genutzt. Dazu werden an diesen personenbezogene Daten übertragen. Sofern Sie der Datenschutzgrundverordnung unterliegen, sollten Sie eine Vereinbarung zur Auftragsdatenverarbeitung nach Art 28 DSGVO abschließen. <strong>Ein Hosting-Dienstleister für Moodle ist in dem Fall nicht für diesen Service verantwortlich.</strong><br /> Wenn Sie selber einen BigBlueButton-Server betreiben, ist dies nicht erforderlich. Wenn Sie selber einen anderen Dienstleister beauftragen, sprechen Sie diesen an. <br /> Die folgenden Einstellungen werden immer verwendet.';
+$string['config_general_description'] = '<strong>Wichtige Information zur Nutzung von BigBlueButton</strong><br/>
+Bei der Nutzung der Grundeinstellungen werden die Dienste eines externen Anbieters genutzt. Dazu werden personenbezogene Daten an diesen Dienstleister übertragen. Sofern Sie der Datenschutzgrundverordnung unterliegen, sollten Sie eine Vereinbarung zur Auftragsdatenverarbeitung nach Art 28 DSGVO abschließen. <strong>Der Hosting-Dienstleister für Moodle ist in dem Fall nicht für diesen Service verantwortlich.</strong><br /><br />
+Wenn Sie selber einen BigBlueButton-Server betreiben, ist dies nicht erforderlich. Wenn Sie selber einen anderen Dienstleister beauftragen, sprechen Sie diesen an. <br /><br /><br />
+Die folgenden Einstellungen werden immer verwendet.';
+$string['config_guestaccess_enabled'] = 'Externer Gastzugriff';
+$string['config_guestaccess_enabled_description'] = 'Diese Option erlaubt es Nutzer/innen ohne Nutzerkonto in Moodle, auf den Raum zuzugreifen.';
 $string['config_hideuserlist_default'] = '"Teilnahmeliste verbergen" standardmäßig aktiviert';
 $string['config_hideuserlist_default_description'] = 'Die Option legt fest, ob die Liste der Teilnehmer/innen verborgen ist.';
 $string['config_hideuserlist_editable'] = '"Teilnahmeliste verbergen" bearbeitbar';
@@ -119,10 +125,6 @@ $string['config_importrecordings_enabled'] = 'Aufzeichnungsimport aktiviert';
 $string['config_importrecordings_enabled_description'] = 'Wenn diese Option und die Aufzeichnungsfunktion eingeschaltet sind, können Sie Aufzeichnungen aus anderen Kursen importieren.';
 $string['config_importrecordings_from_deleted_enabled'] = 'Aufzeichnungsimport aus gelöschten Aktivitäten';
 $string['config_importrecordings_from_deleted_enabled_description'] = 'Wenn diese Option und die Aufzeichnungsimportfunktion eingeschaltet sind, können Sie Aufzeichnungen aus gelöschten Aktivitäten importieren.';
-$string['config_lockonjoin_default'] = '"Sperre beim Betreten" standardmäßig aktiviert';
-$string['config_lockonjoin_default_description'] = 'Wenn diese Option aktiviert ist, werden die durch die Konfiguration gesperrten Einstellungen auf die Nutzer/innen angewendet, wenn sie eintreten. Damit dies funktioniert, muss die Sperrkonfiguration aktiviert sein.';
-$string['config_lockonjoin_editable'] = '"Sperre beim Betreten" bearbeitbar';
-$string['config_lockonjoin_editable_description'] = 'Die Option "Sperre beim Betreten" kann bearbeitet werden, wenn die Aktivität angelegt oder aktualisiert wird.';
 $string['config_locksettings'] = 'Konfiguration für Sperreinstellungen';
 $string['config_locksettings_description'] = 'Diese Einstellungen aktivieren oder deaktivieren verschiedene Optionen in der Nutzeroberfläche. Außerdem werden standardmäßige Werte für diese Optionen festgelegt.';
 $string['config_meetingevents_enabled'] = 'Live-Meetings registrieren';
@@ -135,18 +137,20 @@ $string['config_muteonstart_editable'] = '"Beim Start stummschalten" bearbeitbar
 $string['config_muteonstart_editable_description'] = 'Die Option "Beim Start stummschalten" kann bearbeitet werden, wenn die Aktivität angelegt oder aktualisiert wird.';
 $string['config_participant'] = 'Teilnehmer/innen';
 $string['config_participant_description'] = 'Diese Einstellungen definieren die standardmäßige Rolle von Teilnehmer/innen im Meeting.';
-$string['config_participant_moderator_default'] = 'Moderator/in';
+$string['config_participant_moderator_default'] = 'Moderator/innen';
 $string['config_participant_moderator_default_description'] = 'Diese Voreinstellungen werden für neu eingerichtete Räume verwendet.';
+$string['config_poll_interval'] = 'Aktualisierungsintervall zum Raumstatus';
+$string['config_poll_interval_description'] = 'Das Aktualisierungsintervall zum Raumstatusmuss mindestens 2 Sekunden betragen. Bei Bedarf können Sie die Last auf dem Remote-Server senken, indem Sie das Intervall erhöhen.';
 $string['config_presentation_default'] = 'Standardmäßige Präsentationsdatei';
 $string['config_presentation_default_description'] = 'Diese Datei wird standardmäßig in allen Meetings verwendet.';
 $string['config_preuploadpresentation'] = 'Vorabladen einer Präsentation';
 $string['config_preuploadpresentation_description'] = 'Diese Einstellungen aktivieren oder deaktivieren verschiedene Optionen in der Nutzeroberfläche. Außerdem werden standardmäßige Werte festgelegt. Diese Option funktioniert nur, wenn der Moodle-Server für BigBlueButton erreichbar ist.';
 $string['config_preuploadpresentation_editable'] = 'Vorab hochgeladene Präsentation bearbeitbar';
-$string['config_preuploadpresentation_editable_description'] = 'Die vorab hochgeladene Präsentation kann geändert werden, wenn die Instanz angelegt oder bearbeitet wird.';
+$string['config_preuploadpresentation_editable_description'] = 'Die vorab hochgeladene Präsentation kann geändert werden, wenn das Meeting angelegt oder bearbeitet wird.';
 $string['config_recording'] = 'Aufzeichnung';
 $string['config_recording_all_from_start_default'] = 'Von Anfang an aufzeichnen';
 $string['config_recording_all_from_start_default_description'] = 'Soll die Option "Von Anfang an aufzeichnen" standardmäßig aktiviert sein, wenn ein neues BigBlueButton-Meeting angelegt wird?';
-$string['config_recording_all_from_start_editable'] = '\'Von Anfang an aufzeichnen\' bearbeitbar';
+$string['config_recording_all_from_start_editable'] = '"Von Anfang an aufzeichnen" bearbeitbar';
 $string['config_recording_all_from_start_editable_description'] = 'Soll die Option "Von Anfang an aufzeichnen" in den Einstellungen bearbeitbar sein?';
 $string['config_recording_default'] = 'Aufzeichnung standardmäßig aktiviert';
 $string['config_recording_default_description'] = 'Soll die Option "Meeting kann aufgezeichnet werden" standardmäßig aktiviert sein, wenn ein neues Meeting angelegt wird?';
@@ -164,6 +168,12 @@ $string['config_recording_refresh_period_description'] = 'Wie häufig soll der B
 $string['config_recordingready_enabled'] = 'Systemnachricht, wenn Aufzeichnung verfügbar';
 $string['config_recordingready_enabled_description'] = 'Wenn die Option aktiviert ist, wird eine Mitteilung gesendet, sobald die Aufzeichnung fertig ist. Dies funktioniert nur, wenn das Script post_publish_recording_ready_callback auf dem BigBlueButton-Server aktiviert ist.';
 $string['config_recordings'] = 'Aufzeichnungen anzeigen';
+$string['config_recordings_asc_sort'] = 'Aufzeichnungen in chronologischer Reihenfolge anordnen';
+$string['config_recordings_asc_sort_description'] = 'Aufzeichnungen sind in chronologischer Reihenfolge angeordnet, entweder aufsteigend oder absteigend (neueste Aufzeichnung zuerst).';
+$string['config_recordings_deleted_default'] = 'Aufzeichnungen gelöschter Aktivitäten einbeziehen, deren Aktivierung standardmäßig ist';
+$string['config_recordings_deleted_default_description'] = 'Wenn diese Option aktiviert ist, enthält die Tabelle auch die Aufzeichnungen aus gelöschten Aktivitäten.';
+$string['config_recordings_deleted_editable'] = 'Aufzeichnungen gelöschter Aktivitäten einbeziehen, deren Aktivierung bearbeitet werden kann';
+$string['config_recordings_deleted_editable_description'] = 'Aufzeichnungen gelöschter Aktivitäten einbeziehen, deren Aktivierung bearbeitet werden kann, wenn die Instanz hinzugefügt oder bearbeitet wird';
 $string['config_recordings_description'] = 'Diese Einstellungen sind funktionsabhängig.';
 $string['config_recordings_general'] = 'Aufzeichnungseinstellungen zeigen';
 $string['config_recordings_general_description'] = 'Diese Einstellungen werden nur verwendet, wenn Aufzeichnungen angezeigt werden.';
@@ -175,20 +185,20 @@ $string['config_recordings_preview_default'] = 'Vorschau standardmäßig aktivie
 $string['config_recordings_preview_default_description'] = 'Wenn diese Option aktiviert ist, wird eine Vorschau der Präsentation einbezogen.';
 $string['config_recordings_preview_editable'] = 'Vorschau bearbeitbar';
 $string['config_recordings_preview_editable_description'] = 'Die Vorschau kann bearbeitet werden, wenn die Instanz angelegt oder aktualisiert wird.';
-$string['config_recordings_sortorder'] = 'Aufzeichnungen in aufsteigender Reihenfolge anordnen.';
-$string['config_recordings_sortorder_description'] = 'Standardmäßig werden die Aufzeichnungen in absteigender Reihenfolge angezeigt. Wenn diese Option aktiviert ist, werden sie in aufsteigender Reihenfolge sortiert.';
 $string['config_scheduled'] = 'Terminierte Meetings';
 $string['config_scheduled_description'] = 'Diese Einstellungen legen Standardwerte für \'Terminierte Meetings\' fest.';
 $string['config_scheduled_pre_opening'] = 'Zugang vor der Startzeit';
 $string['config_scheduled_pre_opening_description'] = 'Zeit (in Minuten), die das Meeting vor der geplanten Startzeit zugänglich ist.';
-$string['config_sendnotifications'] = 'Einstellungen für "Benachrichtigungen senden"';
-$string['config_sendnotifications_description'] = 'Diese Einstellungen aktivieren bzw. deaktivieren Optionen in der Nutzeroberfläche. Außerdem definieren sie Standardwerte für einige Optionen.';
-$string['config_sendnotifications_enabled'] = 'Benachrichtigungen senden aktiviert';
-$string['config_sendnotifications_enabled_description'] = 'Die Funktion zum Senden von Benachrichtigungen ist aktiviert, wenn der Raum oder die Konferenz hinzugefügt oder aktualisiert wird.';
 $string['config_server_url'] = 'BigBlueButton-Server-URL';
-$string['config_server_url_description'] = 'Standardmäßig sind Daten sind für einen <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">kostenlosen BigBlueButton-Dienst für Moodle (öffnet in neuem Fenster)</a> eingetragen, der von Blindside Networks mit folgenden Einschränkungen bereitgestellt wird: <ol> <li>Die maximale Länge jeder Sitzung beträgt 60 Minuten.</li> <li>Die maximale Anzahl gleichzeitiger Personen pro Sitzung ist 25.</li> <li>Aufzeichnungen bleiben sieben (7) Tage erhalten und können nicht heruntergeladen werden.</li> <li>Webcams von Teilnehmer/innen sind nur für Moderator/innen sichtbar.</li> </ol>';
+$string['config_server_url_description'] = 'Standardmäßig sind Daten für einen <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">kostenlosen BigBlueButton-Service für Moodle (öffnet in neuem Fenster)</a> eingetragen, der von Blindside Networks mit folgenden Einschränkungen bereitgestellt wird:
+<ol>
+<li>Die maximale Länge jeder Sitzung beträgt 60 Minuten.</li>
+<li>Die maximale Anzahl gleichzeitiger Personen pro Sitzung ist 25.</li>
+<li>Aufzeichnungen laufen nach sieben (7) Tagen ab und können nicht heruntergeladen werden.</li>
+<li>Webcams von Teilnehmer/innen sind nur für Moderator/innen sichtbar.</li>
+</ol>';
 $string['config_shared_secret'] = 'BigBlueButton Shared Secret';
-$string['config_shared_secret_description'] = 'Das "Shared Secret" sichert die Verbindung zum BigBlueButton-Server ab. Der standardmäßig eingetragene Wert gehört zum freien BigBlueButton-Service von Blindside Networks.';
+$string['config_shared_secret_description'] = 'Das "Security Secret" sichert die Verbindung zum BigBlueButton-Server ab. Der standardmäßig eingetragene Wert gehört zum freien BigBlueButton-Service von Blindside Networks.</p>';
 $string['config_uidelegation_enabled'] = 'Die Weitergabe der Werkzeuge ist aktiviert';
 $string['config_uidelegation_enabled_description'] = 'Diese Einstellungen aktivieren oder deaktivieren die Weitergabe der Werkzeuge.';
 $string['config_userlimit'] = 'Maximale Anzahl von Nutzer/innen';
@@ -216,18 +226,10 @@ $string['config_warning_curl_not_installed'] = 'Die Funktion erfordert die PHP-E
 $string['config_welcome_default'] = 'Begrüßungstext';
 $string['config_welcome_default_description'] = 'Der standardmäßige Begrüßungstext wird angezeigt, wenn Teilnehmer/innen das Meeting betreten. Wenn das Feld leer ist, wird eine Mitteilung vom BigBlueButton-Server angezeigt.';
 $string['config_welcome_editable'] = 'Begrüßungstext bearbeitbar';
-$string['config_welcome_editable_description'] = 'Der standardmäßigen Begrüßungstext kann geändert werden, wenn die Instanz angelegt oder bearbeitet wird.';
-$string['email_body_notification_meeting_by'] = 'von';
-$string['email_body_notification_meeting_description'] = 'Beschreibung';
-$string['email_body_notification_meeting_details'] = 'Details';
-$string['email_body_notification_meeting_end_date'] = 'Endzeit';
-$string['email_body_notification_meeting_has_been'] = 'war/wurde';
-$string['email_body_notification_meeting_start_date'] = 'Anfangszeit';
-$string['email_body_notification_meeting_title'] = 'Name';
-$string['email_body_recording_ready_for'] = 'Es gibt eine fertige Aufzeichnung für';
-$string['email_body_recording_ready_in_course'] = 'im Kurs';
-$string['email_footer_sent_by'] = 'Diese automatische Mitteilung wurde gesendet von';
-$string['email_footer_sent_from'] = 'aus dem Kurs';
+$string['config_welcome_editable_description'] = 'Der standardmäßige Begrüßungstext kann geändert werden, wenn diese Aktivität angelegt oder bearbeitet wird.';
+$string['dpainfonotsigned'] = 'Bevor Sie dieses Plugin aktivieren, müssen Sie bestätigen, dass Sie die <a href="{$a}">Datenverarbeitungsvereinbarung von Blindside Networks</a> gelesen und akzeptiert haben.';
+$string['enablingbigbluebutton'] = 'BigBlueButton aktivieren';
+$string['enablingbigbluebuttondpainfo'] = 'Um die Datenschutzvorgaben zu erfüllen, müssen Sie vor der Aktivierung dieses Plugins möglicherweise sicherstellen, dass Sie die <a href="{$a}" target="_blank"> Dienstvereinbarung zur Datenverarbeitung  von Blindside Networks Inc. </a>  gelesen und akzeptiert haben. Wenden Sie sich für weitere Hinweise bitte auch an Ihre eigenen Datenschutzfachleute.';
 $string['end_session_confirm'] = 'Möchten Sie das Meeting wirklich beenden?';
 $string['end_session_confirm_title'] = 'Meeting beenden?';
 $string['end_session_notification'] = 'Das Meeting ist beendet.';
@@ -253,15 +255,49 @@ $string['general_error_cannot_create_meeting'] = 'Das Meeting kann nicht angeleg
 $string['general_error_cannot_get_recordings'] = 'Die Aufzeichnungen können nicht abgerufen werden.';
 $string['general_error_no_answer'] = 'Leere Antwort. Überprüfen Sie bitte die URL des BigBlueButton-Servers UND stellen Sie sicher, dass der BigBlueButton-Server läuft.';
 $string['general_error_not_allowed_to_create_instances'] = 'Nutzer/in darf kein Meeting erstellen.';
-$string['general_error_not_found'] = 'Objekt nicht gefunden: {$a}.';
-$string['general_error_unable_connect'] = 'Das Verbinden ist nicht möglich. Prüfen Sie die URL des BigBlueButton-Servers. Stellen Sie zusätzlich sicher, dass der Server wirklich läuft. Details: {$a}';
+$string['general_error_not_found'] = 'BigBlueButton-Aktivität mit der ID {$a} nicht gefunden.';
+$string['general_error_unable_connect'] = 'Das Verbinden ist nicht möglich. Prüfen Sie die URL des BigBlueButton-Servers. Stellen Sie zusätzlich sicher, dass der Server wirklich läuft.
+Details: {$a}';
+$string['guest_invitation_full_message'] = 'Guten Tag,
+<p>Sie sind zur BigBluButton-Sitzung <strong>{$a->name}</strong> im Kurs {$a->course_fullname} eingeladen.</p>
+<p>Link: {$a->guestjoinurl}
+<br>Kennwort: {$a->guestpassword}</p>
+<p>Falls Sie Hilfe benötigen, wenden Sie sich bitte an {$a->sender}.</p>';
+$string['guest_invitation_small_message'] = 'Guten Tag,
+
+Sie sind zur BigBluButton-Sitzung {$a->name} im Kurs {$a->course_fullname} eingeladen.
+
+Link: {$a->guestjoinurl}
+Kennwort: {$a->guestpassword}
+
+Falls Sie Hilfe benötigen, wenden Sie sich bitte an {$a->sender}.';
+$string['guest_invitation_subject'] = 'Einladung zum Meeting {$a->name} auf {$a->course_fullname}';
+$string['guestaccess_activitynotfound'] = 'Aktivität nicht gefunden.';
+$string['guestaccess_add'] = 'Gäste hinzufügen';
+$string['guestaccess_add_no_id'] = 'Keine BigBlueButton-ID bereitgestellt.';
+$string['guestaccess_copy_link'] = 'Link kopieren';
+$string['guestaccess_copy_password'] = 'Kennwort kopieren';
+$string['guestaccess_emails'] = 'E-Mail-Adressen von Gästen';
+$string['guestaccess_emails_help'] = 'Liste von E-Mail-Adressen, getrennt durch Komma.';
+$string['guestaccess_emails_invalidemail'] = 'Ungültige E-Mail-Adresse: {$a}';
+$string['guestaccess_feature_disabled'] = 'Gastzugriff deaktiviert.';
+$string['guestaccess_invite_failure'] = 'Fehler {$a->errors} beim Einladen {$a->emails}.';
+$string['guestaccess_invite_success'] = 'Eine Einladung wird versendet an: {$a->emails}.';
+$string['guestaccess_join_meeting'] = 'Meeting beitreten';
+$string['guestaccess_meeting_invalid_password'] = 'Falsches Kennwort';
+$string['guestaccess_meeting_link'] = 'Link zum Meeting';
+$string['guestaccess_meeting_not_started'] = 'Das Meeting hat noch nicht begonnen. Versuchen Sie es später noch einmal.';
+$string['guestaccess_meeting_password'] = 'Kennwort für Meeting';
+$string['guestaccess_password'] = 'Kennwort';
+$string['guestaccess_title'] = 'Gäste zum Meeting hinzufügen';
+$string['guestaccess_username'] = 'Gast-Nutzername';
 $string['index_confirm_end'] = 'Möchten Sie das Meeting wirklich beenden?';
 $string['index_disabled'] = 'deaktiviert';
 $string['index_enabled'] = 'aktiviert';
 $string['index_ending'] = 'Das Meeting wird beendet ... warten Sie bitte.';
 $string['index_error_bbtn'] = 'Die BigBlueButton-ID {$a} ist falsch.';
 $string['index_error_checksum'] = 'Fehler: Prüfen Sie, ob der Wert \'Shared Secret\' richtig eingegeben ist.';
-$string['index_error_forciblyended'] = 'Ein Beitreten zu diesem Meeting ist nicht mehr  möglich, weil es manuell beendet wurde.';
+$string['index_error_forciblyended'] = 'Ein Beitreten zum Meeting ist nicht mehr möglich, weil es manuell beendet wurde.';
 $string['index_error_noinstances'] = 'Es gibt keine BigBlueButton-Aktivitäten.';
 $string['index_error_unable_display'] = 'Die Meetings können nicht angezeigt werden. Prüfen Sie die URL des BigBlueButton-Servers. Stellen Sie zusätzlich sicher, dass der Server wirklich läuft.';
 $string['index_heading'] = 'BigBlueButton-Aktivitäten';
@@ -276,7 +312,7 @@ $string['indicator:cognitivedepth'] = 'BigBlueButton kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die Teilnehmer/innen in einer BigBlueButton-Aktivität erreicht haben.';
 $string['indicator:socialbreadth'] = 'BigBlueButton sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die Teilnehmer/innen in einer BigBlueButton-Aktivität erreicht haben.';
-$string['instance_type_default'] = 'Meeting mit Aufzeichnung';
+$string['instance_type_default'] = 'Meeting mit Aufzeichnungen';
 $string['instance_type_recording_only'] = 'Nur Aufzeichnungen';
 $string['instance_type_room_only'] = 'Nur Meeting';
 $string['instanceprofilewithoutrecordings'] = 'Dieses Profil kann keine Aufzeichnungen anzeigen.';
@@ -285,6 +321,7 @@ $string['messageprovider:recording_ready'] = 'BigBlueButton-Aufzeichnung verfüg
 $string['minute'] = 'Minute';
 $string['minutes'] = 'Minuten';
 $string['mod_form_block_general'] = 'Allgemein';
+$string['mod_form_block_guestaccess'] = 'Gastzugriff';
 $string['mod_form_block_participants'] = 'Zugewiesene Rolle im Meeting';
 $string['mod_form_block_presentation'] = 'Präsentationsinhalt';
 $string['mod_form_block_presentation_default'] = 'Standardmäßiger Präsentationsinhalt';
@@ -292,7 +329,7 @@ $string['mod_form_block_record'] = 'Aufzeichnungseinstellungen';
 $string['mod_form_block_recordings'] = 'Aufzeichnungsansicht';
 $string['mod_form_block_room'] = 'Meeting-Einstellungen';
 $string['mod_form_block_schedule'] = 'Zeitplan';
-$string['mod_form_field_closingtime'] = 'Schließen';
+$string['mod_form_field_closingtime'] = 'Meeting schließt';
 $string['mod_form_field_conference_name'] = 'Name des Meetings';
 $string['mod_form_field_disablecam'] = 'Webcams deaktivieren';
 $string['mod_form_field_disablemic'] = 'Mikrofone deaktivieren';
@@ -301,23 +338,17 @@ $string['mod_form_field_disableprivatechat'] = 'Private Chats deaktivieren';
 $string['mod_form_field_disablepublicchat'] = 'Öffentlichen Chat deaktivieren';
 $string['mod_form_field_duration'] = 'Dauer';
 $string['mod_form_field_duration_help'] = 'Wenn die Dauer für ein Meeting festgelegt ist, wird die Aufzeichnung automatisch beendet, sobald die Zeit abgelaufen ist.';
+$string['mod_form_field_guestallowed'] = 'Gastzugriff erlauben';
 $string['mod_form_field_hideuserlist'] = 'Teilnahmeliste verbergen';
 $string['mod_form_field_instanceprofiles'] = 'Instanztyp';
 $string['mod_form_field_instanceprofiles_help'] = 'Wenn eine Sitzung aufgezeichnet werden soll, wählen Sie "Meeting mit Aufzeichnung", andernfalls "Nur Meeting". Wenn nach der Aufzeichnung einer Sitzung keine weiteren Sitzungen mehr stattfinden sollen, wählen Sie "Nur Aufzeichnungen".';
 $string['mod_form_field_intro'] = 'Beschreibung';
 $string['mod_form_field_intro_help'] = 'Kurze Beschreibung des Meetings';
-$string['mod_form_field_lockonjoin'] = 'Sperre beim Betreten';
+$string['mod_form_field_mustapproveuser'] = 'Gäste müssen von Moderator/in zugelassen werden.';
 $string['mod_form_field_muteonstart'] = 'Beim Start stumm schalten';
 $string['mod_form_field_name'] = 'Name des Meetings';
 $string['mod_form_field_nosettings'] = 'Es können keine Einstellungen bearbeitet werden.';
-$string['mod_form_field_notification'] = 'Erinnerung versenden';
-$string['mod_form_field_notification_created_help'] = 'Versenden Sie eine Nachricht, um alle eingeschriebenen Nutzer/innen zu informieren, dass diese Aktivität angelegt wurde.';
-$string['mod_form_field_notification_help'] = 'Versenden Sie eine Nachricht, um alle eingeschriebenen Nutzer/innen zu informieren, dass diese Aktivität angelegt oder bearbeitet wurde.';
-$string['mod_form_field_notification_modified_help'] = 'Versenden Sie eine Nachricht, um alle eingeschriebenen Nutzer/innen zu informieren, dass diese Aktivität bearbeitet wurde.';
-$string['mod_form_field_notification_msg_at'] = 'um';
-$string['mod_form_field_notification_msg_created'] = 'hinzugefügt';
-$string['mod_form_field_notification_msg_modified'] = 'aktualisiert';
-$string['mod_form_field_openingtime'] = 'Offen';
+$string['mod_form_field_openingtime'] = 'Meeting beginnt';
 $string['mod_form_field_participant_add'] = 'Zuständigkeit hinzufügen';
 $string['mod_form_field_participant_bbb_role_moderator'] = 'Moderator/in';
 $string['mod_form_field_participant_bbb_role_viewer'] = 'Zuschauer/in';
@@ -332,6 +363,7 @@ $string['mod_form_field_participant_list_type_user'] = 'Nutzer/in';
 $string['mod_form_field_record'] = 'Das Meeting kann aufgezeichnet werden.';
 $string['mod_form_field_recordallfromstart'] = 'Von Anfang an aufzeichnen';
 $string['mod_form_field_recordhidebutton'] = 'Aufzeichnungsbutton verbergen';
+$string['mod_form_field_recordings_deleted'] = 'Aufzeichnungen von gelöschten Aktivitäten einbeziehen';
 $string['mod_form_field_recordings_html'] = 'Tabelle in einfachem HTML anzeigen';
 $string['mod_form_field_recordings_imported'] = 'Nur importierte Links anzeigen';
 $string['mod_form_field_recordings_preview'] = 'Aufzeichnungsvorschau anzeigen';
@@ -349,7 +381,10 @@ $string['mod_form_field_welcome_default'] = 'Willkommen bei %%CONFNAME%%.';
 $string['mod_form_field_welcome_help'] = 'Der Begrüßungstext wird angezeigt, wenn Teilnehmer/innen dem Meeting beitreten. Wenn das Feld leer ist, wird ein Standardtext angezeigt, der von den Administrator/innen der Website festgelegt wurde.';
 $string['mod_form_locksettings'] = 'Einstellungen sperren';
 $string['modulename'] = 'BigBlueButton';
-$string['modulename_help'] = 'BigBlueButton ist ein Open-Source-Webkonferenzsystem, das für Online-Lernen entwickelt wurde und das Teilen von Audio, Video, Chat, Folien und Bildschirmfreigabe ermöglicht. Ein Multiuser-Whiteboard, Breakout-Räume, Umfragen und Emojis werden unterstützt. Mit BigBlueButton können Sie einen Raum für Meetings erstellen. Das sind z.B. Live-Online-Lernen, virtuelle Sprechstunden oder Gruppenarbeit mit Remote-Teilnehmer/innen. Eine Sitzung kann zur späteren Wiedergabe aufgezeichnet werden.';
+$string['modulename_help'] = 'BigBlueButton ist ein Open-Source-Webkonferenzsystem, das für Online-Lernen entwickelt wurde und das Teilen von Audio, Video, Chat, Folien und Bildschirmfreigabe ermöglicht. Ein Multiuser-Whiteboard, Breakout-Räume, Umfragen und Emojis werden unterstützt.
+
+Mit BigBlueButton können Sie einen Raum für Meetings erstellen. Das sind z.B. Live-Online-Lernen, virtuelle Sprechstunden oder Gruppenarbeit mit Remote-Teilnehmer/innen. Eine Sitzung kann zur späteren Wiedergabe aufgezeichnet werden.';
+$string['modulename_link'] = 'BigBlueButton/view';
 $string['modulenameplural'] = 'BigBlueButton';
 $string['new_bigblubuttonbn_activities'] = 'BigBlueButton-Aktivität';
 $string['nosuchinstance'] = 'Keine Instanz {$a->entity} mit der ID {$a->id}';
@@ -388,9 +423,9 @@ $string['removedevents'] = 'Gelöschte Ereignisse';
 $string['removedlogs'] = 'Nutzerdefinierte Protokolle gelöscht';
 $string['removedrecordings'] = 'Gelöschte Aufzeichnungen';
 $string['removedtags'] = 'Gelöschte Tags';
-$string['report_join_info'] = 'Teilnehmer/in hat das Meeting {$a} mal betreten.';
-$string['report_play_recording_info'] = 'Teilnehmer/in hat eine Aufzeichnung {$a} mal abgespielt.';
-$string['report_room_view'] = 'Teilnehmer/in hat das Meeting angezeigt.';
+$string['report_join_info'] = 'Meetings: {$a}';
+$string['report_play_recording_info'] = 'Aufzeichnungen abgespielt: {$a}';
+$string['report_room_view'] = 'angezeigt';
 $string['resetevents'] = 'Ereignisse löschen';
 $string['resetlogs'] = 'Nutzerdefinierte Protokolle löschen';
 $string['resetlogs_help'] = 'Das Löschen der Protokolle führt zum Verlust aller Verweise auf die Aufzeichnungen';
@@ -403,7 +438,7 @@ $string['sendnotification'] = 'Benachrichtigung senden';
 $string['settings'] = 'BigBlueButton-Einstellungen';
 $string['started_at'] = 'Gestartet';
 $string['starts_at'] = 'Beginnt';
-$string['taskname:check_dismissed_recordings'] = 'Nach verworfenen Aufzeichnungen suchen';
+$string['taskname:check_dismissed_recordings'] = 'Nach Aufzeichnungen suchen, die bisher nicht gefunden wurden';
 $string['taskname:check_pending_recordings'] = 'Ausstehende Aufzeichnungen abrufen';
 $string['userlimitreached'] = 'Die maximale Anzahl der in einem Meeting zulässigen Nutzer/innen wurde erreicht.';
 $string['view_conference_action_end'] = 'Meeting beenden';
@@ -418,33 +453,34 @@ $string['view_error_invalid_session'] = 'Die Sitzung ist abgelaufen. Gehen Sie z
 $string['view_error_max_concurrent'] = 'Die Anzahl der gleichzeitigen Meetings ist erreicht.';
 $string['view_error_meeting_not_running'] = 'Fehler. Das Meeting läuft nicht.';
 $string['view_error_no_group'] = 'Keine Gruppen verfügbar. Legen Sie Gruppen an, bevor Sie dem Meeting beitreten.';
-$string['view_error_no_group_student'] = 'Sie sind in keiner Gruppe eingetragen. Fragen Sie die Trainer/innen oder Administrator/innen.';
+$string['view_error_no_group_student'] = 'Sie sind in keiner Gruppe eingetragen. Wenden Sie sich an die Trainer/innen oder Administrator/innen.';
 $string['view_error_no_group_teacher'] = 'Keine Gruppen verfügbar. Legen Sie Gruppen an oder wenden Sie sich an die Administrator/innen.';
 $string['view_error_unable_join'] = 'Sie können auf das Meeting nicht zugreifen. Prüfen Sie die BigBlueButton-Server-URL. Stellen Sie außerdem sicher, dass der Server läuft.';
 $string['view_error_unable_join_student'] = 'Die Verbindung zum BigBlueButton-Server ist nicht möglich.';
 $string['view_error_unable_join_teacher'] = 'Die Verbindung zum BigBlueButton-Server ist nicht möglich. Wenden Sie sich an die Administrator/innen.';
 $string['view_error_url_missing_parameters'] = 'Fehlende Parameter in der URL';
-$string['view_error_userlimit_reached'] = 'Die maximale Anzahl von Teilnehmer/innen für dieses Meeting ist erreicht.';
+$string['view_error_userlimit_reached'] = 'Die maximale Teilnehmerzahl, die für ein Meeting erlaubt ist, wurde erreicht.';
 $string['view_groups_nogroups_warning'] = 'Das Meeting wurde für die Verwendung von Gruppen konfiguriert, aber im Kurs sind keine Gruppen angelegt.';
 $string['view_groups_notenrolled_warning'] = 'Der Raum wurde für die Verwendung von Gruppen konfiguriert, aber Sie sind keiner Gruppe zugewiesen.';
 $string['view_groups_selection'] = 'Wählen Sie die Gruppe, der Sie beitreten möchten, und bestätigen Sie die Aktion.';
 $string['view_groups_selection_join'] = 'Beitreten';
-$string['view_groups_selection_warning'] = 'Für jede Gruppe gibt es einen Konferenzraum. Falls Sie Zugriff auf mehrere Konferenzräume haben, wählen Sie den richtigen Raum aus.';
+$string['view_groups_selection_warning'] = 'Für jede Gruppe gibt es einen Raum. Falls Sie Zugriff auf mehrere Räume haben, wählen Sie den richtigen Raum aus.';
 $string['view_login_moderator'] = 'Als Moderator/in anmelden ...';
 $string['view_login_viewer'] = 'Als Zuschauer/in anmelden...';
 $string['view_message_and'] = 'und';
 $string['view_message_conference_has_ended'] = 'Das Meeting ist beendet.';
 $string['view_message_conference_in_progress'] = 'Das Meeting läuft gerade.';
 $string['view_message_conference_not_started'] = 'Das Meeting hat noch nicht begonnen.';
-$string['view_message_conference_room_ready'] = 'Der Raum ist fertig vorbereitet. Sie können jetzt an dem Meeting teilnehmen.';
-$string['view_message_conference_user_limit_reached'] = 'Die maximale Teilnehmerzahl für eine Konferenz wurde erreicht.';
+$string['view_message_conference_room_ready'] = 'Der Raum ist fertig vorbereitet. Sie können jetzt am Meeting teilnehmen.';
+$string['view_message_conference_user_limit_reached'] = 'Die maximale Teilnehmerzahl, die für ein Meeting erlaubt ist, wurde erreicht.';
 $string['view_message_conference_wait_for_moderator'] = 'Sie können teilnehmen, wenn Moderator/innen beigetreten sind.';
+$string['view_message_cron_disabled'] = 'Die Liste der Aufzeichnungen ist möglicherweise nicht auf dem neuesten Stand. Wenden Sie sich bitte mit den folgenden Informationen an Ihre Administrator/innen: {$a}';
 $string['view_message_finished'] = 'Die Aktivität ist vorbei.';
 $string['view_message_has_joined'] = 'hat teilgenommen';
 $string['view_message_have_joined'] = 'nehmen teil';
 $string['view_message_hour'] = 'Stunde';
 $string['view_message_hours'] = 'Stunden';
-$string['view_message_importrecordings_disabled'] = 'Die Möglichkeit, Aufzeichnungslinks zu importieren, ist für diesen Server deaktiviert.';
+$string['view_message_importrecordings_disabled'] = 'Der Import von Aufzeichnungslinks ist für diesen Server deaktiviert.';
 $string['view_message_minute'] = 'Minute';
 $string['view_message_minutes'] = 'Minuten';
 $string['view_message_moderator'] = 'Moderator/in';
@@ -469,8 +505,8 @@ $string['view_message_viewer'] = 'Zuschauer/in';
 $string['view_message_viewers'] = 'Zuschauer/innen';
 $string['view_mobile_message_groups_not_supported'] = 'Diese Instanz ist für die Arbeit mit Gruppen aktiviert, aber die mobile App unterstützt dies noch nicht. Öffnen Sie bitte das Meeting im Browser.';
 $string['view_mobile_message_reload_page_creation_time_meeting'] = 'Sie haben länger als 45 Sekunden auf dieser Seite gewartet. Laden Sie bitte die Seite neu, um dann an der Sitzung teilzunehmen.';
-$string['view_noguests'] = 'BigBlueButton ist nicht für Gäste geöffnet.';
-$string['view_nojoin'] = 'Mit Ihrer Rolle dürfen Sie an dem Meeting nicht teilnehmen.';
+$string['view_noguests'] = 'Das BigBlueButton-Meeting ist nicht für Gäste geöffnet.';
+$string['view_nojoin'] = 'Mit Ihrer Rolle dürfen Sie an diesem Meeting nicht teilnehmen.';
 $string['view_recording'] = 'Aufzeichnung läuft ...';
 $string['view_recording_actionbar'] = 'Werkzeuge';
 $string['view_recording_activity'] = 'Aktivität';
@@ -478,7 +514,7 @@ $string['view_recording_button_import'] = 'Aufzeichnungslinks importieren';
 $string['view_recording_button_return'] = 'Zurück';
 $string['view_recording_course'] = 'Kurs';
 $string['view_recording_date'] = 'Datum';
-$string['view_recording_delete_confirmation'] = 'Möchten Sie die Aufzeichnung wirklich löschen? {$a}';
+$string['view_recording_delete_confirmation'] = 'Möchten Sie die Aufzeichnung {$a} wirklich löschen?';
 $string['view_recording_delete_confirmation_warning_p'] = 'Für diese Aufzeichnung wurden {$a} Links in unterschiedlichen Kursen und Aktivitäten angelegt. Wenn die Aufzeichnung gelöscht wird, werden diese Links ebenfalls entfernt.';
 $string['view_recording_delete_confirmation_warning_s'] = 'Für diese Aufzeichnung wurde ein Link {$a} in einem anderen Kurs oder einer Aktivität angelegt. Wenn die Aufzeichnung gelöscht wird, wird dieser ebenfalls entfernt.';
 $string['view_recording_description'] = 'Beschreibung';
@@ -495,6 +531,7 @@ $string['view_recording_format_statistics'] = 'Statistiken';
 $string['view_recording_format_video'] = 'Video';
 $string['view_recording_import_confirmation'] = 'Möchten Sie diese Aufzeichnung wirklich importieren?';
 $string['view_recording_length'] = 'Länge';
+$string['view_recording_link'] = 'Importierter Link';
 $string['view_recording_link_warning'] = 'Dieser Link zeigt auf eine Aufzeichnung aus einem anderen Kurs oder einer anderen Aktivität.';
 $string['view_recording_list_action_delete'] = 'Wird gelöscht';
 $string['view_recording_list_action_edit'] = 'Wird aktualisiert';
@@ -536,7 +573,7 @@ $string['view_recording_protect_confirmation_warning_s'] = 'Mit dieser Aufzeichn
 $string['view_recording_publish_confirmation'] = 'Möchten Sie {$a} wirklich veröffentlichen?';
 $string['view_recording_publish_confirmation_warning_p'] = 'Mit dieser Aufzeichnung sind Links {$a} verknüpft, die in unterschiedliche Kurse oder Aktivitäten importiert wurden. Wenn die Aufnahme veröffentlicht ist, werden diese Links ebenfalls veröffentlicht.';
 $string['view_recording_publish_confirmation_warning_s'] = 'Mit dieser Aufzeichnung ist ein Link {$a} verknüpft, der in einen anderen Kurs oder in eine Aktivität importiert wurde. Wenn die Aufnahme veröffentlicht ist, werden diese Links ebenfalls veröffentlicht.';
-$string['view_recording_publish_link_deleted'] = 'Dieser Link kann nicht erneut veröffentlicht werden, da die Aufzeichnung zurückgezogen wurde. Der Link sollte gelöscht werden.';
+$string['view_recording_publish_link_deleted'] = 'Dieser Link kann nicht neu veröffentlicht werden, da die Aufzeichnung im aktuellen BigBlueButton-Server nicht vorhanden ist. Der Link sollte entfernt werden.';
 $string['view_recording_publish_link_not_published'] = 'Dieser Link kann nicht erneut veröffentlicht werden, da die Aufzeichnung zurückgezogen wurde.';
 $string['view_recording_recording'] = 'Aufzeichnung';
 $string['view_recording_select_course'] = 'Wählen Sie zuerst einen Kurs im Dropdown-Menü';
@@ -560,5 +597,11 @@ $string['view_recording_yui_show_all'] = 'Alle anzeigen';
 $string['view_room'] = 'Meeting anzeigen';
 $string['view_section_title_presentation'] = 'Präsentationsdatei';
 $string['view_section_title_recordings'] = 'Aufzeichnungen';
-$string['view_warning_default_server'] = 'Diese Website verwendet einen <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">kostenlosen BigBlueButton-Dienst für Moodle (öffnet in neuem Fenster)</a>, der von Blindside Networks mit den folgenden Einschränkungen bereitgestellt wird: <ol> <li>Die maximale Länge jeder Sitzung beträgt 60 Minuten.</li> <li>Die maximale Anzahl gleichzeitiger Personen pro Sitzung ist 25.</li> <li>Aufzeichnungen laufen nach sieben (7) Tagen ab und können nicht heruntergeladen werden.</li> <li>Webcams von Teilnehmer/innen sind nur für Moderator/innen sichtbar.</li> </ol>';
+$string['view_warning_default_server'] = 'Diese Website verwendet einen <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">kostenlosen BigBlueButton-Dienst für Moodle (öffnet in neuem Fenster)</a>, der von Blindside Networks mit den folgenden Einschränkungen bereitgestellt wird:
+<ol>
+<li>Die maximale Länge jeder Sitzung beträgt 60 Minuten.</li>
+<li>Die maximale Anzahl gleichzeitiger Personen pro Sitzung ist 25.</li>
+<li>Aufzeichnungen laufen nach sieben (7) Tagen ab und können nicht heruntergeladen werden.</li>
+<li>Webcams von Teilnehmer/innen sind nur für Moderator/innen sichtbar.</li>
+</ol>';
 $string['waitformoderator'] = 'Warten auf Moderator/in';

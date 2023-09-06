@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'es', version '3.11'.
+ * Strings for component 'auth', language 'es', version '4.1'.
  *
  * @package     auth
  * @category    string
@@ -149,6 +149,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'El CAPTCHA se utiliza para impedir abusos de programas automáticos. Siga las instrucciones para verificar que es usted una persona. Puede ser una casilla para marcar, caracteres en una imagen para que los escriba o un conjunto de imágenes sobre las que hacer una selección.
 
 Si no está seguro de que representan las imágenes, puede intentarlo generando otro CAPTCHA o un CAPTCHA de audio.';
+$string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Pregunta de seguridad';
 $string['selfregistration'] = 'Registrarse a sí mismo';
 $string['selfregistration_help'] = 'Escoja qué conector (\'plugin\') de identificación manejar cuando los usuarios se registren a sí mismos.';

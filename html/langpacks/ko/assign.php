@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ko', version '3.11'.
+ * Strings for component 'assign', language 'ko', version '4.1'.
  *
  * @package     assign
  * @category    string
@@ -104,7 +104,6 @@ $string['description'] = '설명';
 $string['downloadall'] = '모든 제출물 내려받기';
 $string['duedate'] = '마감 일시';
 $string['duedatecolon'] = '마감 일시: {$a}';
-$string['duedateno'] = '무기한';
 $string['duedatereached'] = '이 과제 제출 마감일이 지났습니다.';
 $string['duedatevalidation'] = '마감일는 제출 시작일 이후여야 합니다.';
 $string['editaction'] = '액션...';
@@ -159,6 +158,8 @@ $string['grantextensionforusers'] = '{$a}  학생들에게 연장 허가';
 $string['groupsubmissionsettings'] = '모둠 제출 설정';
 $string['hiddenuser'] = '참가자';
 $string['hideshow'] = '감추기/보여주기';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['instructionfiles'] = '안내 파일';
 $string['invalidfloatforgrade'] = '성적이 납득될 수 없습니다 : {$a}';
 $string['invalidgradeforscale'] = '입력한 성적은 현재 척도에 맞지 않습니다.';
@@ -189,26 +190,23 @@ $string['maxattempts'] = '최대 시도';
 $string['maxgrade'] = '최대 성적';
 $string['messageprovider:assign_notification'] = '과제 통지';
 $string['modulename'] = '과제';
+$string['modulename_link'] = 'mod/assignment/view';
 $string['modulenameplural'] = '과제물들';
 $string['multipleteams'] = '한 그룹 이상의 회원';
 $string['multipleteams_desc'] = '본 과제는 그룹 제출 과제입니다. 당신은 두 그룹 이상의 회원입니다. 과제 제출을 위해서는 반드시 한 곳에만 속해 있어야 합니다.  가입된 그룹을 변경 하려면 담당 선생님께 문의하시기 바랍니다.';
-$string['mysubmission'] = '내 제출';
 $string['newsubmissions'] = '제출된 과제들';
 $string['noattempt'] = '시도 하지 않음';
 $string['nofiles'] = '파일 없음';
 $string['nograde'] = '성적 없음';
-$string['nolatesubmissions'] = '늦은 제출은 받지 않습니다.';
 $string['nomoresubmissionsaccepted'] = '기한 연장이 인정된 참가자들에게만 허용됨';
 $string['noonlinesubmissions'] = '이 과제는 온라인으로 제출하는 것을 요구하지 않습니다.';
 $string['nosavebutnext'] = '다음';
 $string['nosubmission'] = '이 과제에 대해 제출된 것이 없습니다.';
-$string['nosubmissionsacceptedafter'] = '다음 이후에는 제출을 받지 않습니다';
 $string['noteam'] = '어느 그룹의 회원도 아님';
 $string['noteam_desc'] = '본 과제는 그룹 제출 과제입니다. 당신은 어떤 그룹에도 속해 있지 않기 때문에, 과제물을 제출할 수 없습니다.  그룹에 참여하려면 담당 선생님에게 연락하시기 바랍니다.';
 $string['notgraded'] = '채점되지 않음';
 $string['notgradedyet'] = '아직 채점되지 않음';
 $string['notifications'] = '통지';
-$string['notsubmittedyet'] = '아직 제출되지 않음';
 $string['nousersselected'] = '선택된 사용자가 없습니다.';
 $string['numberofdraftsubmissions'] = '초안';
 $string['numberofparticipants'] = '참가자들';
@@ -275,7 +273,6 @@ $string['submissionsclosed'] = '제출이 마감되었습니다.';
 $string['submissionsettings'] = '제출 설정';
 $string['submissionslocked'] = '이 과제는 제출을 받지 않습니다.';
 $string['submissionslockedshort'] = '제출변경이 허용되지 않습니다.';
-$string['submissionsnotgraded'] = '제출이 채점되지 않았습니다. {$a}';
 $string['submissionstatement'] = '제출문';
 $string['submissionstatement_help'] = '과제 제출 확인글';
 $string['submissionstatementacceptedlog'] = '사용자 {$a}가 제출문에 동의하였습니다.';

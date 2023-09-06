@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'gl', version '3.11'.
+ * Strings for component 'qtype_essay', language 'gl', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -45,14 +45,14 @@ $string['formatmonospaced'] = 'Texto simple, con letra monoespazada';
 $string['formatnoinline'] = 'Sen texto en liña';
 $string['formatplain'] = 'Texto simple';
 $string['graderinfo'] = 'Información para cualificadores';
-$string['graderinfoheader'] = 'Información para cualificadores';
-$string['maxbytes'] = 'Tamaño máximo de ficheiro';
+$string['graderinfoheader'] = 'Información do cualificador';
+$string['maxbytes'] = 'Tamaño máximo do ficheiro';
 $string['maxwordlimit'] = 'Límite máximo de palabras';
 $string['maxwordlimit_help'] = 'Se a resposta require que os alumnos introduzan texto, este é o número máximo de palabras que cada alumno poderá enviar.';
-$string['maxwordlimitboundary'] = 'O límite de palabras para esta pregunta son {$a->limit} palabras e estás a enviar {$a->count} palabras. Acurta a túa resposta e téntao de novo.';
+$string['maxwordlimitboundary'] = 'O límite de palabras para esta pregunta é de {$a->limit} palabras e vostede está tentando enviar {$a->count} palabras. Acurte a súa resposta e ténteo de novo.';
 $string['minwordlimit'] = 'Límite mínimo de palabras';
 $string['minwordlimit_help'] = 'Se a resposta require que os alumnos introduzan texto, este é o número mínimo de palabras que cada alumno poderá enviar.';
-$string['minwordlimitboundary'] = 'Esta pregunta require unha resposta de polo menos {$a->limit} palabras e está intentando enviar {$a->count} palabras. Amplía a túa resposta e téntao de novo.';
+$string['minwordlimitboundary'] = 'Esta pregunta require unha resposta de polo menos {$a->limit} palabras e vostede está tentando enviar {$a->count} palabras. Amplíe a súa resposta e ténteo de novo.';
 $string['mustattach'] = 'Cando se selecciona «Sen texto en liña», ou as respostas son opcionais, Vostede debe permitir polo menos un anexo.';
 $string['mustrequire'] = 'Cando se selecciona «Sen texto en liña», ou as respostas son opcionais, Vostede debe requirir polo menos un anexo.';
 $string['mustrequirefewer'] = 'Non pode requirir máis anexos dos que permite.';
@@ -64,7 +64,7 @@ $string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = 'Engadir unha pregunta de práctica';
 $string['pluginnameediting'] = 'Engadir unha pregunta de práctica';
 $string['pluginnamesummary'] = 'Permitir unha resposta dunhas poucas frases ou parágrafos. Daquela debe ser cualificada manualmente.';
-$string['privacy:metadata'] = 'O engadido de pregunta de práctica non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O complemento de tipo de pregunta de práctica permite aos autores de preguntas estabelecer opcións predeterminadas como preferencias do usuario.';
 $string['privacy:preference:attachments'] = 'Número de anexos permitidos';
 $string['privacy:preference:attachmentsrequired'] = 'Número de anexos requiridos';
 $string['privacy:preference:defaultmark'] = 'A marca predeterminada estabelecida para unha determinada pregunta.';

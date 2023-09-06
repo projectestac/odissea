@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'de', version '3.11'.
+ * Strings for component 'studentquiz', language 'de', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -217,6 +217,7 @@ $string['missingparam'] = 'Ein Parameter fehlt oder ist falsch';
 $string['moderator'] = 'Moderator/in';
 $string['modulename'] = 'StudentQuiz';
 $string['modulename_help'] = 'Die StudentQuiz-Aktivität ermöglicht es Teilnehmer/innen, Fragen zum Pool hinzuzufügen. In der StudentQuiz-Übersicht können die Teilnehmer/innen Fragen filtern. Sie können die gefilterten Fragen anschließend zum Üben benutzen. Trainer/innen haben die Option die Spalte "erstellt von" zu anonymisieren.<br><br>Die StudentQuiz-Aktivität vergibt Teilnehmer/innen Punkte, um sie zu motivieren, Fragen hinzuzufügen und damit zu üben. Die Punkte werden in einer Rangliste aufgelistet.';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = 'StudentQuizzes';
 $string['more'] = 'Mehr';
 $string['myattempts_column_name'] = 'Meine Versuche';
@@ -270,8 +271,8 @@ $string['privacy:metadata:studentquiz_comment:deleteuserid'] = 'Nutzer-ID im Kom
 $string['privacy:metadata:studentquiz_comment:edited'] = 'Zeitstempel im Kommentar geändert.';
 $string['privacy:metadata:studentquiz_comment:edituserid'] = 'Nutzer-ID im Kommentar geändert.';
 $string['privacy:metadata:studentquiz_comment:parentid'] = 'ID des übergeordneten Kommentars. 0: Kommentar auf höchster Ebene.';
-$string['privacy:metadata:studentquiz_comment:questionid'] = 'ID der Frage';
 $string['privacy:metadata:studentquiz_comment:status'] = 'Status des Kommentars';
+$string['privacy:metadata:studentquiz_comment:studentquizquestionid'] = 'ID der Studentquiz-Frage';
 $string['privacy:metadata:studentquiz_comment:timemodified'] = 'Änderungszeit des Kommentars';
 $string['privacy:metadata:studentquiz_comment:type'] = 'Art des Kommentars';
 $string['privacy:metadata:studentquiz_comment:userid'] = 'Nutzer-ID';
@@ -294,21 +295,21 @@ $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'Anzahl richt
 $string['privacy:metadata:studentquiz_progress:lastanswercorrect'] = '0: Die zuletzt gegebene Anwort war falsch oder nicht definiert. 1: Die zuletzt gegebene Antwort war richtig';
 $string['privacy:metadata:studentquiz_progress:lastreadprivatecomment'] = 'Letzter Zeitpunkt, an welchem die Person den privaten Kommentar gelesen hat';
 $string['privacy:metadata:studentquiz_progress:lastreadpubliccomment'] = 'Letzter Zeitpunkt, an welchem die Person den öffentlichen Kommentar gelesen hat';
-$string['privacy:metadata:studentquiz_progress:questionid'] = 'ID der Frage';
 $string['privacy:metadata:studentquiz_progress:studentquizid'] = 'ID des StudentQuiz';
+$string['privacy:metadata:studentquiz_progress:studentquizquestionid'] = 'ID der Studentquiz-Frage';
 $string['privacy:metadata:studentquiz_progress:userid'] = 'Nutzer-ID';
 $string['privacy:metadata:studentquiz_question'] = 'Fragenbezogene Eigenschaften speichern';
 $string['privacy:metadata:studentquiz_question:groupid'] = 'ID der Gruppe, zu welcher die Frage gehört';
 $string['privacy:metadata:studentquiz_question:hidden'] = 'Eigenschaft, ob eine Frage verborgen ist oder nicht';
 $string['privacy:metadata:studentquiz_question:pinned'] = 'Eigenschaft, ob eine Frage angeheftet ist oder nicht';
-$string['privacy:metadata:studentquiz_question:questionid'] = 'ID der Frage';
 $string['privacy:metadata:studentquiz_question:state'] = 'Eigenschaft, ob eine Frage bestätigt, nicht bestätigt, neu oder geändert ist';
+$string['privacy:metadata:studentquiz_question:studentquizid'] = 'ID des Studentquiz';
 $string['privacy:metadata:studentquiz_rate'] = 'Bewertungen zu Fragen speichern';
-$string['privacy:metadata:studentquiz_rate:questionid'] = 'ID der Frage';
 $string['privacy:metadata:studentquiz_rate:rate'] = 'Bewertung der Frage';
+$string['privacy:metadata:studentquiz_rate:studentquizquestionid'] = 'ID der Studentquiz-Frage';
 $string['privacy:metadata:studentquiz_rate:userid'] = 'Nutzer-ID';
-$string['privacy:metadata:studentquiz_state_history:questionid'] = 'ID der Frage.';
 $string['privacy:metadata:studentquiz_state_history:state'] = 'Eigenschaft, ob eine Frage bestätigt, nicht bestätigt, neu oder geändert ist';
+$string['privacy:metadata:studentquiz_state_history:studentquizquestionid'] = 'ID der Studentquiz-Frage';
 $string['privacy:metadata:studentquiz_state_history:timecreated'] = 'Erstellt am-Aktion';
 $string['privacy:metadata:studentquiz_state_history:userid'] = 'Nutzer-ID';
 $string['private'] = 'Privat';

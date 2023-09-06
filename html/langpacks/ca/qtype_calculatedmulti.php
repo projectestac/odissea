@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'ca', version '3.11'.
+ * Strings for component 'qtype_calculatedmulti', language 'ca', version '4.1'.
  *
  * @package     qtype_calculatedmulti
  * @category    string
@@ -29,6 +29,7 @@ $string['answeroptions'] = 'Opcions';
 $string['answeroptions_help'] = 'L\'opció suggerida per a la fórmula és ...<strong>{={x}+..}</strong>...';
 $string['pluginname'] = 'Opció múltiple calculada';
 $string['pluginname_help'] = 'Les preguntes d\'opció múltiple amb càlcul són semblants a les preguntes d\'opció múltiple en què als seus elements de selecció es poden incloure resultats de fórmules numèriques usant comodins entre claus que són substituïts per valors individuals quan es visualitza el qüestionari. Per exemple, si tenim la pregunta: «Quina és l\'àrea d\'un rectangle de longitud {l} i amplada {w}?», una de les opcions és {= {l}*{w}} (on * significa multiplicació).';
+$string['pluginname_link'] = 'question/type/calculatedmulti';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'opció múltiple calculada.';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'opció múltiple calculada';
 $string['pluginnamesummary'] = 'Les preguntes d\'opció múltiple amb càlcul són semblants a les les preguntes d\'opció múltiple en les quals els elements de selecció poden incloure resultats de formules presos de valors numèrics que són seleccionats aleatòriament d\'un conjunt quan s\'intenta resoldre el qüestionari.';

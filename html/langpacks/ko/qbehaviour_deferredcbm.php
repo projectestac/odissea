@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'ko', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'ko', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -26,8 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['assumingcertainty'] = '확신도를 선택하지 않았습니다.  {$a}을 가정.';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['certainty1'] = '매우는 아님( 67 %이하)';
 $string['certainty2'] = '꽤 (67 %이상)';
 $string['certainty3'] = '매우 (80 %이상)';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['howcertainareyou'] = '얼마나 확신하십니까? {$a}';
 $string['pluginname'] = '확신도기반채점과 함께 지연된 피드백';

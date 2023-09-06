@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'eu', version '3.11'.
+ * Strings for component 'organizer', language 'eu', version '4.1'.
  *
  * @package     organizer
  * @category    string
@@ -135,6 +135,7 @@ $string['err_location'] = 'Sartu kokapena!';
 $string['err_noslots'] = 'Ez duzu aukeratu tarterik!';
 $string['err_posint'] = 'Zenbaki oso bat sartu behar duzu!';
 $string['err_startdate'] = 'Ezin da hasiera-data gaurko dataren aurretik ezarri ({$a->now})!';
+$string['eval_allow_new_appointments'] = 'Onartu hitzordua berriro hartzea';
 $string['eval_attended'] = 'Artatua';
 $string['eval_feedback'] = 'Feedback';
 $string['eval_grade'] = 'Kalifikazioa';
@@ -255,6 +256,7 @@ $string['group_slot_available'] = 'Tarte erabilgarria';
 $string['group_slot_full'] = 'Hartutako tartea';
 $string['groupoptions'] = 'Talde-ezarpenak';
 $string['grouporganizer_desc_hasgroup'] = 'Hau talde antolatzailea da. Erregistro botoian klik eginez gero,  zure taldeko {$ a-> name} kide guztiei tarte honetan izena emango diezu. Taldeko kide guztiek alda dezakete eta iruzkindu dezakete izen-ematea.';
+$string['grouporganizer_desc_nogroup'] = 'Hau talde-antolatzailea da. Ikasleek bere taldeak erregistratu ditzakete hitzorduetan. Talde-kide guztiek alda eta iruzkindu dezakete izen-ematea.';
 $string['grouppicker'] = 'Talde-hautzailea';
 $string['groupwarning'] = 'Egiaztatu behean taldearen aukerak!';
 $string['headerfooter'] = 'Inprimatu goiburua/orri-oina';
@@ -276,6 +278,8 @@ $string['infobox_deadlines_title'] = 'Epe-muga';
 $string['infobox_description_title'] = 'Antolatzaile';
 $string['infobox_feedback_title'] = 'Feedback';
 $string['infobox_group'] = 'Nire taldea: {$a->groupname}';
+$string['infobox_hidelegend'] = 'Ezkutatu legenda';
+$string['infobox_legend_title'] = 'Legenda';
 $string['infobox_messages_title'] = 'Systema-mezuak';
 $string['infobox_messaging_title'] = 'Mezularitza-aukerak';
 $string['infobox_mycomments_title'] = 'Nire iruzkinak';
@@ -285,6 +289,7 @@ $string['infobox_organizer_expired'] = 'This organizer expired on {$a->date} at 
 $string['infobox_organizer_expires'] = 'Antolatzaile hau iraungiko da: data {$a->date} ordua {$a->time}.';
 $string['infobox_organizer_never_expires'] = 'Antolatzaile hau ez da iraungiko';
 $string['infobox_showfreeslots'] = 'Erakutsi tarte libreak bakarrik';
+$string['infobox_showlegend'] = 'Erakutsi legenda';
 $string['infobox_showmyslotsonly'] = 'Erakutsi nire tarteak bakarrik';
 $string['infobox_showslots'] = 'Erakutsi iragandako tarteak';
 $string['infobox_slotoverview_title'] = 'Tarteen ikuspegi orokorra';
@@ -293,6 +298,19 @@ $string['introeditor_error'] = 'Azalpena eman behar du antolatzaileak!';
 $string['invalidgrouping'] = 'Talde-multzo baliagarria aukeratu behar duzu!';
 $string['isgrouporganizer'] = 'Talde-hitzorduak';
 $string['isgrouporganizer_help'] = 'Aukeratu hau antolatzaile hau banakako erabiltzaileen arabera antolatu nahi baduzu (taldeen ordez). Kontuan hartu ez baduzu aukeratzen lagun bat baino gehiagok izena eman ahal izango dutela hitzordu berean.';
+$string['legend_anonymous'] = 'Tarte anonimoak';
+$string['legend_comments'] = 'Ikasle/Irakasleen iruzkinak';
+$string['legend_due'] = 'Tarte hau bereziki';
+$string['legend_evaluated'] = 'Ebaluatutako tartea';
+$string['legend_feedback'] = 'Irakaslearen feedbacka';
+$string['legend_group_applicant'] = 'Talde-eskatzailea';
+$string['legend_no_participants'] = 'Tarteak ez dauka partehartzailerik';
+$string['legend_not_occured'] = 'Hitzordua ez da oraindik burutu';
+$string['legend_organizer_expired'] = 'Iraungitako antolatzailea';
+$string['legend_past_deadline'] = 'Tarteak epe-muga gainditu du';
+$string['legend_pending'] = 'Ebaluazioaren zain dagoen tartea';
+$string['legend_section_details'] = 'Tarte-xehetasunen ikonoak';
+$string['legend_section_status'] = 'Estatus-ikonoak';
 $string['location'] = 'Kokapena';
 $string['location_help'] = 'Idatzi hitzorduak gertatuko diren kokapenen izenak';
 $string['locationlink'] = 'Kokapenaren link URL';
@@ -308,10 +326,18 @@ $string['message_error_slot_full_group'] = 'Denbora-tarte hau hartuta dago!';
 $string['message_error_slot_full_single'] = 'Denbora-tarte honek ez du leku librerik!';
 $string['message_error_unknown_unqueue'] = 'Ezin da ezabatu itxaron-zerrendako sarrera! Errore ezezaguna.';
 $string['message_error_unknown_unregister'] = 'Ezin da ezabatu zure izen-ematea! Errore ezezaguna.';
+$string['message_info_available'] = 'Badira {$a->freeslots} tarte hutsak {$a->notregistered} hitzordurik ez duten erabiltzaileentzat.';
+$string['message_info_available_group'] = 'Badira {$a->freeslots} tarte hutsak {$a->notregistered} hitzordurik ez duten taldeentzat.';
 $string['message_info_reminders_sent_pl'] = '{$a->count} oharpenak bidali dira.';
 $string['message_info_reminders_sent_sg'] = '{$a->count} oharpena bidalia.';
 $string['message_info_slots_added_pl'] = '{$a->count} tarte berriak gehitu dira.';
 $string['message_info_slots_added_sg'] = '{$a->count} tarte berria gehitu da.';
+$string['message_info_slots_deleted'] = 'Tarte hauek ezabatu dira:<br/>
+{$a->deleted} ezabatutako tarteak.<br/>
+{$a->notified} oharpena jaso dute erabiltzaileek.';
+$string['message_info_slots_deleted_group'] = 'Tarte hauek ezabatu dira:<br/> {$a->deleted} ezabatutako tarteak.<br/> {$a->notified} oharpena jaso dute erabiltzaileek.';
+$string['message_warning_available'] = '<span style="color:red;">Erne</span> Hauek dira hitzordurik gabeko erabiltzaileek {$a->notregistered} erabil ditzaketen tarte hutsak {$a->freeslots}';
+$string['message_warning_available_group'] = '<span style="color:red;">Erne</span> Hauek dira hitzordurik gabeko taldeek {$a->notregistered} erabil ditzaketen tarte hutsak {$a->freeslots}';
 $string['message_warning_no_slots_added'] = 'Ez da tarte berririk gehitu!';
 $string['message_warning_no_slots_selected'] = 'Lehenik eta behin, aukeratu tarte bat!';
 $string['messageprovider:test'] = 'Antolatzaileko Proba-mezua';
@@ -407,16 +433,20 @@ $string['printsubmit'] = 'Zabaldu taula inprimagarria';
 $string['queue'] = 'Itxaron-ilarak';
 $string['queue_help'] = 'Erabiltzaileek denbora-tarte batean izena emateko erabil dezaketen itxaron-ilara kopurua, nahiz eta erabiltzaile-kopurua gainditu.
 Erabiltzaileak itxaron-ilarara gehituko dira eta tarte bat esleituko zaie (ordenean), tarte eskuragarri bat sortu bezain laster.';
+$string['queuebody'] = 'Aldatu egin da denbora-tarte bateko zure izen-ematea: "itxaron-ilaratik" "hartuta" egoerara.';
+$string['queuesubject'] = 'Moodle Antolatzailea: Ilaratik sustatua';
 $string['recipientname'] = '&lt;recipient name&gt;';
 $string['reg_status'] = 'Izen-ematearen egoera';
 $string['reg_status_not_registered'] = 'Ez duzu izenik eman';
 $string['reg_status_organizer_expired'] = 'Iraungitako antolatzailea';
 $string['reg_status_registered'] = 'Izena emanda';
 $string['reg_status_slot_attended'] = 'Artatua';
+$string['reg_status_slot_attended_reapp'] = 'Artatua, aukera dago berriro izena emateko';
 $string['reg_status_slot_available'] = 'Tarte erabilgarria';
 $string['reg_status_slot_expired'] = 'Iraungitako tartea';
 $string['reg_status_slot_full'] = 'Huts-egindako tartea';
 $string['reg_status_slot_not_attended'] = 'Ez zen agertu';
+$string['reg_status_slot_not_attended_reapp'] = 'Ez zen agertu, aukera dago berriro izena emateko';
 $string['reg_status_slot_past_deadline'] = 'Tarteak epe-muga gainditu du';
 $string['reg_status_slot_pending'] = 'Ebaluazioaren zain dagoen tartea';
 $string['relative_deadline_before'] = 'Hitz-orduaren aurretik';

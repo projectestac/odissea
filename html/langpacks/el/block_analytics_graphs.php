@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_analytics_graphs', language 'el', version '3.11'.
+ * Strings for component 'block_analytics_graphs', language 'el', version '4.1'.
  *
  * @package     block_analytics_graphs
  * @category    string
@@ -35,7 +35,7 @@ $string['all_groups'] = 'Εμφάνιση όλων των ομάδων';
 $string['analytics_graphs'] = 'Γραφήματα αναλυτικής';
 $string['analytics_graphs:addinstance'] = 'Προσθήκη ενός νέου μπλοκ AG';
 $string['analytics_graphs:bemonitored'] = 'Ο χρήστης παρακολουθείται στο μάθημα';
-$string['analytics_graphs:myaddinstance'] = 'Προσθήκη ενός νέου μπλοκ AG στη σελίδα Το Moodle μου';
+$string['analytics_graphs:myaddinstance'] = 'Προσθήκη ενός νέου μπλοκ AG στη αρχική μου σελίδα';
 $string['analytics_graphs:viewpages'] = 'Εμφάνιση γραφικών';
 $string['begin_date'] = 'Ημερομηνία έναρξης';
 $string['btn_deselect_all'] = 'Αποεπιλογή όλων';

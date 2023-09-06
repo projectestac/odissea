@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'it', version '3.11'.
+ * Strings for component 'availability', language 'it', version '4.1'.
  *
  * @package     availability
  * @category    string
@@ -34,7 +34,7 @@ $string['enableavailability'] = 'Abilita disponibilità condizionata';
 $string['enableavailability_desc'] = 'La disponibilità condizionata consente di definire i criteri (basati su valutazione, date, completamento) per l\'accesso alle attività e alle risorse.';
 $string['error_list_nochildren'] = 'Gli insiemi di criteri di accesso devono contenere almeno una condizione';
 $string['hidden_all'] = 'Nascosto finché l\'utente non soddisfa le condizioni';
-$string['hidden_individual'] = 'Nascosto finché l\'utente non soddisfa la condizione';
+$string['hidden_individual'] = 'Nascosto finché l\'utente non soddisfa questa condizione';
 $string['hidden_marker'] = '(Altrimenti nascosto)';
 $string['hide_verb'] = 'Click per nascondere';
 $string['invalid'] = 'Criterio da impostare';
@@ -65,7 +65,8 @@ $string['privacy:metadata'] = 'Il sottosistema "Criteri di accesso" Criteri di a
 $string['restrictaccess'] = 'Condizioni per l\'accesso';
 $string['restrictbygroup'] = 'Aggiungi criterio di accesso basato su gruppi/raggruppamenti.';
 $string['setheading'] = 'Insieme {$a->number} di  {$a->count} criteri';
-$string['show_verb'] = 'Click per visualizzare disabilitata';
-$string['shown_all'] = 'Visualizzato disabilitato se l\'utente non soddisfa le condizioni';
-$string['shown_individual'] = 'Visualizzato disabilitato se l\'utente non soddisfa la condizione';
+$string['show_verb'] = 'Click per visualizzare';
+$string['showmore'] = 'Visualizza altro';
+$string['shown_all'] = 'Visualizzato se l\'utente non soddisfa le condizioni';
+$string['shown_individual'] = 'Visualizzato se l\'utente non soddisfa questa condizione';
 $string['unknowncondition'] = 'Criterio sconosciuto (plugin criterio eliminato)';

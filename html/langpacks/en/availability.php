@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'en', version '3.11'.
+ * Strings for component 'availability', language 'en', version '4.1'.
  *
  * @package     availability
  * @category    string
@@ -33,8 +33,8 @@ $string['condition_group_info'] = 'Add a set of nested restrictions to apply com
 $string['enableavailability'] = 'Enable restricted access';
 $string['enableavailability_desc'] = 'If enabled, conditions (based on date, grade, completion etc.) may be set to control whether an activity or resource can be accessed.';
 $string['error_list_nochildren'] = 'Restriction sets should contain at least one condition.';
-$string['hidden_all'] = 'Hidden entirely if user does not meet conditions';
-$string['hidden_individual'] = 'Hidden entirely if user does not meet this condition';
+$string['hidden_all'] = 'Hidden entirely if student doesn\'t meet the conditions';
+$string['hidden_individual'] = 'Hidden entirely if student doesn\'t meet this condition';
 $string['hidden_marker'] = '(hidden otherwise)';
 $string['hide_verb'] = 'Click to hide';
 $string['invalid'] = 'Please set';
@@ -65,7 +65,8 @@ $string['privacy:metadata'] = 'The Access restriction subsystem does not store a
 $string['restrictaccess'] = 'Restrict access';
 $string['restrictbygroup'] = 'Add group/grouping access restriction';
 $string['setheading'] = '{$a->number} Set of {$a->count} restriction(s)';
-$string['show_verb'] = 'Click to display greyed-out';
-$string['shown_all'] = 'Displayed greyed-out if user does not meet conditions';
-$string['shown_individual'] = 'Displayed greyed-out if user does not meet this condition';
+$string['show_verb'] = 'Click to display';
+$string['showmore'] = 'Show more';
+$string['shown_all'] = 'Displayed if student doesn\'t meet the conditions';
+$string['shown_individual'] = 'Displayed if student doesn\'t meet this condition';
 $string['unknowncondition'] = 'Unknown condition (deleted condition plugin)';

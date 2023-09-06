@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'eu', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'eu', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -58,6 +58,8 @@ Hauek dira hiru formen koordenatuak definitzean erabiltzen den notazioa:
 Markatzailearen testu bat aukeratzeak testu hori aurrebistako formara gehituko da.';
 $string['followingarewrong'] = 'Ondoko markatzaileak okerreko tokian jarri dira: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Hurrengo markatzaileak modu ezegokian kokatu dira: {$a}. Nabarmendutako markatzaileak orain kokapen egokietan erakusten dira.<br /> Egin klik markatzailean baimendutako eremua nabarmentzeko.';
+$string['formerror_dragrequired'] = 'Galdera honetara gutxienez markatzaile bat gehitu behar duzu.';
+$string['formerror_droprequired'] = 'Gutxienez askatze-eremu bat zehaztu behar duzu galdera honentzako.';
 $string['formerror_nobgimage'] = 'Atzeko planoko irudi bat aukeratu behar duzu hartu eta eramateko eremurako.';
 $string['formerror_noitemselected'] = 'Askatze-eremu bat zehaztu duzu baina ez duzu zehaztu bertara eraman behar den markatzailea zein den.';
 $string['formerror_nosemicolons'] = 'Ez dago puntu eta komarik zure koordenatuen katean. {$a->shape} batentzat koordenatuak horrela adierazi beharko lirateke: {$a->coordsstring}.';
@@ -78,6 +80,7 @@ $string['noofdrags'] = 'Kopurua';
 $string['pleasedragatleastonemarker'] = 'Zure erantzuna osatu gabe dago; gutxienez markatzaile bat eraman behar duzu irudira.';
 $string['pluginname'] = 'Hartu eta eraman markatzaileak';
 $string['pluginname_help'] = 'Hartu eta eraman markatzaileak motako galderek ikasleei testu-etiketak hartu eta atzeko planoko irudi batean zehaztutako askatze-eremuetara eramatea eskatzen diete.';
+$string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = 'Hartu eta eraman markatzaileak motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman markatzaileak motako galdera editatzen';
 $string['pluginnamesummary'] = 'Markatzaileak hartu eta eraman dira atzeko planoko irudira.

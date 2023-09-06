@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_statistics', language 'en', version '3.11'.
+ * Strings for component 'offlinequiz_statistics', language 'en', version '4.1'.
  *
  * @package     offlinequiz_statistics
  * @category    string
@@ -29,7 +29,7 @@ $string['actualresponse'] = 'Actual response';
 $string['allattempts'] = 'all attempts';
 $string['allattemptsavg'] = 'Average grade of all results';
 $string['allattemptscount'] = 'Total number of complete graded results';
-$string['allgroups'] = 'Statistics for all offline quiz groups';
+$string['allgroups'] = 'All groups';
 $string['analysisofresponses'] = 'Analysis of responses';
 $string['analysisofresponsesfor'] = 'Analysis of responses for {$a}.';
 $string['attempts'] = 'Attempts';
@@ -91,14 +91,14 @@ $string['preferencespage'] = 'Preferences just for this page';
 $string['preferencessave'] = 'Save preferences';
 $string['privacy:metadata'] = 'This plugin does not store any user related data.';
 $string['questionandanswerstats'] = 'Questions + Answers';
-$string['questionandanswerstatsheader'] = 'Statistics - Question- and Answer analysis';
+$string['questionandanswerstatsheader'] = 'Question and answer analysis';
 $string['questioninformation'] = 'Question information';
 $string['questionname'] = 'Question name';
 $string['questionnumber'] = 'Q#';
 $string['questionstatistics'] = 'Question statistics';
 $string['questionstats'] = 'Question Analysis';
 $string['questionstatsfilename'] = 'questionstats';
-$string['questionstatsheader'] = 'Statistics - Question Analysis';
+$string['questionstatsheader'] = 'Question analysis';
 $string['questiontype'] = 'Question type';
 $string['random_guess_score'] = 'Random guess score';
 $string['recalculatenow'] = 'Recalculate now';
@@ -111,12 +111,12 @@ $string['standarderror'] = 'Standard error';
 $string['statistics'] = 'Statistics';
 $string['statistics:componentname'] = 'Offline quiz statistics report';
 $string['statistics:view'] = 'View statistics report';
-$string['statisticsforgroup'] = 'Statistics for group';
+$string['statisticsforgroup'] = 'Group';
 $string['statisticshelp'] = 'Help for offline quiz statistics';
 $string['statisticsreport'] = 'Statistics report';
 $string['statisticsreportgraph'] = 'Statistics for question positions';
 $string['statsfor'] = 'Offline quiz statistics (for {$a})';
 $string['statsoverview'] = 'Overview';
-$string['statsoverviewheader'] = 'Overview';
+$string['statsoverviewheader'] = 'Quiz information';
 $string['worstgrade'] = 'Lowest grade achieved';
 $string['wrong'] = 'Answered wrongly';

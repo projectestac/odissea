@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'zh_cn', version '3.11'.
+ * Strings for component 'install', language 'zh_cn', version '4.1'.
  *
  * @package     install
  * @category    string
@@ -46,6 +46,7 @@ $string['cliinstallfinished'] = '安装圆满成功。';
 $string['cliinstallheader'] = 'Moodle {$a}命令行安装程序';
 $string['climustagreelicense'] = '在非交互模式，您必须使用--agree-license参数表示接受授权协议';
 $string['cliskipdatabase'] = '跳过数据库安装。';
+$string['clisupportemail'] = '支持电子邮件地址';
 $string['clitablesexist'] = '数据库表已经存在，命令行安装不能继续。';
 $string['compatibilitysettings'] = '检查您的PHP设置...';
 $string['compatibilitysettingshead'] = '检查您的PHP设置...';

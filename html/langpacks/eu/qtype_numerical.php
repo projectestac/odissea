@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'eu', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'eu', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -65,6 +65,7 @@ $string['pleaseenterananswer'] = 'Mesedez, idatzi erantzun bat.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Mesedez sartu zure erantzuna milakakoen banatzailea ({$a}) erabili gabe.';
 $string['pluginname'] = 'Zenbakizkoa';
 $string['pluginname_help'] = 'Ikaslearen ikuspuntutik, zenbakizko galdera bat erantzun laburreko galdera baten modukoa da. Ezberdintasuna zenbakizko erantzunek errore onargarri bat izan dezaketela da. Honek muga batzuen barruko erantzunak erantzun bakar gisa kalifikatzeko aukera ematen du. Esaterako, erantzun zuzena 10 bada eta errore onargarria 2 bada, 8 eta 12 arteko erantzun guztiak zuzentzat hartuko dira.';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = 'Zenbakizko galdera bat gehitzen';
 $string['pluginnameediting'] = 'Zenbakizko galdera editatzen';
 $string['pluginnamesummary'] = 'Zenbakizko erantzun bat behar du, gehienetan unitatetan, eta erantzun-tarte batekin alderatuta kalifikatzen da, malgutasun-tartearekin.';
@@ -108,13 +109,6 @@ $string['unitposition'] = 'Unitateen kokapena';
 $string['units'] = 'Unitateak';
 $string['unitselect'] = 'zabaltzen den menua';
 $string['unitx'] = '{no}. Unitatea';
-$string['validnumberformats'] = 'Zenbaki-formatu onargarriak';
-$string['validnumberformats_help'] = '* zenbaki arruntak 13500.67, 13 500.67, 13500,67 edo 13 500,67
-
-* zure hizkuntza paketearen ezarpenak (langconfig.php fitxategia) koma(,) erabiltzen badu *beti* milakakoen banatzaile bezala hamartarren puntua (.) jarri, adibidez 13,500.67 edo 13,500.
-
-* era esponentzialetarako, adibidez 1.350067 * 10<sup>4</sup>, erabili 1.350067 E4 edo 1.350067 E04';
-$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 edo 1.350067 E04';
 $string['xmustbenumeric'] = '{$a}(e)k zenbakia izan behar du.';
 $string['xmustnotbenumeric'] = '{$a}(e)k ezin da zenbakia.';
 $string['youmustenteramultiplierhere'] = 'Biderkatzaile bat zehaztu behar duzu';

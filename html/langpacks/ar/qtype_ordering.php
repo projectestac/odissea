@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'ar', version '3.11'.
+ * Strings for component 'qtype_ordering', language 'ar', version '4.1'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -85,6 +85,7 @@ $string['numberingstyleiii'] = 'i., ii., iii., ...';
 $string['numberingstylenone'] = 'بلا ترقيم';
 $string['pluginname'] = 'الترتيب';
 $string['pluginname_help'] = 'يتم عرض العديد من العناصر بترتيب مختلط. يمكن سحب العناصر إلى ترتيب ذو معنى.';
+$string['pluginname_link'] = 'question/type/ordering';
 $string['pluginnameadding'] = 'إضافة سؤال ترتيب';
 $string['pluginnameediting'] = 'تحرير سؤال ترتيب';
 $string['pluginnamesummary'] = 'ضع العناصر المختلطة بترتيب ذي معنى.';

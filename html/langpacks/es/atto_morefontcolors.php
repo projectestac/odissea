@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_morefontcolors', language 'es', version '3.11'.
+ * Strings for component 'atto_morefontcolors', language 'es', version '4.1'.
  *
  * @package     atto_morefontcolors
  * @category    string
@@ -33,6 +33,7 @@ $string['hexadecimal'] = 'Hexadecimal:';
 $string['hsl'] = 'HSL:';
 $string['luminance'] = 'Luminosidad:';
 $string['pluginname'] = 'Más colores de fuente';
+$string['privacy:metadata'] = 'El plugin atto_morefontcolors no almacena ningún dato personal.';
 $string['rgb'] = 'RGB:';
 $string['saturation'] = 'Saturación:';
 $string['setting_custom'] = 'Permitir color personalizado';

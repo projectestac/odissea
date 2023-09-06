@@ -275,7 +275,7 @@ class events_test extends \advanced_testcase {
             'relateduserid' => 5,
             'context' => \context_module::instance($this->eventcm->id),
             'courseid' => $this->eventcourse->id,
-            'other' => array('attemptid' => 2, 'instanceid' => $this->eventscorm->id, 'scoid' => 3)
+            'other' => array('attemptid' => 2, 'instanceid' => $this->eventscorm->id, 'scoid' => 3, 'mode' => 'interactions')
         ));
 
         // Trigger and capture the event.
@@ -286,7 +286,8 @@ class events_test extends \advanced_testcase {
 
         // Check that the legacy log data is valid.
         $expected = array($this->eventcourse->id, 'scorm', 'userreporttracks', 'report/userreporttracks.php?id=' .
-                $this->eventcm->id . '&user=5&attempt=' . 2 . '&scoid=3', $this->eventscorm->id, $this->eventcm->id);
+                $this->eventcm->id . '&user=5&attempt=' . 2 . '&scoid=3' . '&mode=interactions',
+                $this->eventscorm->id, $this->eventcm->id);
         $this->assertEventLegacyLogData($expected, $event);
         $this->assertEventContextNotUsed($event);
     }

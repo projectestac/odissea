@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'ko', version '3.11'.
+ * Strings for component 'format_topics', language 'ko', version '4.1'.
  *
  * @package     format_topics
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsections'] = '토픽 추가';
 $string['currentsection'] = '이 주제';
 $string['deletesection'] = '토픽 삭제';
 $string['editsection'] = '토픽 수정';

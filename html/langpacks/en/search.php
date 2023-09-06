@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'en', version '3.11'.
+ * Strings for component 'search', language 'en', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -43,6 +43,7 @@ $string['confirm_delete'] = 'Are you sure you want to delete the index for {$a}?
 $string['confirm_deleteall'] = 'Are you sure you want to delete all indexed contents now? Until the site is indexed again, users will not get search results.';
 $string['confirm_indexall'] = 'Are you sure you want to update indexed contents now? If a large amount of content needs indexing, this can take a long time. For live servers, you should normally leave indexing to the \'Global search indexing\' scheduled task.';
 $string['confirm_reindexall'] = 'Are you sure you want to reindex all site contents now? If your site contains a large amount of content, this will take a long time, and users may not get full search results until it completes.';
+$string['content:courserole'] = '{$a->role} in {$a->course}';
 $string['core-all'] = 'All';
 $string['core-course-content'] = 'Course content';
 $string['core-courses'] = 'Courses';
@@ -115,6 +116,7 @@ $string['schemaversionunknown'] = 'Search engine does not know about the current
 $string['score'] = 'Score';
 $string['search'] = 'Search';
 $string['search:course'] = 'Courses';
+$string['search:course_teacher'] = 'Course Teacher';
 $string['search:customfield'] = 'Course custom fields';
 $string['search:message_received'] = 'Messages - received';
 $string['search:message_sent'] = 'Messages - sent';
@@ -136,6 +138,7 @@ $string['thesewordsmustappear'] = 'These words must appear';
 $string['thesewordsmustnotappear'] = 'These words must not appear';
 $string['title'] = 'Title';
 $string['tofetchtheseresults'] = 'to fetch these results';
+$string['topresults'] = 'Top results';
 $string['totalsize'] = 'Total size';
 $string['totime'] = 'Modified before';
 $string['type'] = 'Type';

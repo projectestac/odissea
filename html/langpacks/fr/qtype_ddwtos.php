@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'fr', version '3.11'.
+ * Strings for component 'qtype_ddwtos', language 'fr', version '4.1'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoiceblanks'] = 'Espaces vides pour {no} choix supplémentaires';
 $string['answer'] = 'Réponse';
 $string['blank'] = 'vide';
+$string['blanknumber'] = 'Espace {$a}';
 $string['correctansweris'] = 'La réponse correcte est : {$a}';
 $string['errorlimitedchoice'] = 'Le marqueur [[{$a}]] est utilisé plus d\'une fois alors qu\'il n\'est pas indiqué comme « Réutilisable ». Veuillez vérifier cette question.';
 $string['infinite'] = 'Réutilisable';

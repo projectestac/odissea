@@ -41,19 +41,20 @@ $feedbackstructure = new mod_feedback_structure($feedback, $cm);
 $context = context_module::instance($cm->id);
 
 if (!$feedbackstructure->can_view_analysis()) {
-    print_error('error');
+    throw new \moodle_exception('error');
 }
 
 /// Print the page header
 
 $PAGE->set_heading($course->fullname);
 $PAGE->set_title($feedback->name);
+$PAGE->activityheader->set_attrs([
+    'hidecompletion' => true,
+    'description' => ''
+]);
+$PAGE->add_body_class('limitedwidth');
 echo $OUTPUT->header();
-echo $OUTPUT->heading(format_string($feedback->name));
-
-/// print the tabs
-require('tabs.php');
-
+echo $OUTPUT->heading(get_string('analysis', 'mod_feedback'), 3);
 
 //get the groupid
 $mygroupid = groups_get_activity_group($cm, true);
@@ -98,4 +99,3 @@ if ($check_anonymously) {
 echo '</div>';
 
 echo $OUTPUT->footer();
-

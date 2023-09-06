@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_saml', language 'el', version '3.11'.
+ * Strings for component 'enrol_saml', language 'el', version '4.1'.
  *
  * @package     enrol_saml
  * @category    string
@@ -46,6 +46,6 @@ $string['status_desc'] = 'Να επιτρέπεται η πρόσβαση μαθ
 $string['status_help'] = 'Αυτή η ρύθμιση καθορίζει εάν οι χρήστες μπορούν να εγγραφούν αυτόματα μέσω σύνδεσης SAML.';
 $string['statusdisabled'] = 'Απενεργοποιημένο';
 $string['statusenabled'] = 'Ενεργοποιημένο';
-$string['unenrolselfconfirm'] = 'Είστε βέβαιοι ότι θέλετε να ακυρώσετε την εγγραφή σας από το μάθημα «{$a}»;';
-$string['unenroluser'] = 'Είστε βέβαιοι ότι θέλετε να ακυρώσετε την εγγραφή του χρήστη «{$a->user}» στο μάθημα «{$a}»;';
-$string['unenrolusers'] = 'Ακύρωση εγγραφής χρηστών';
+$string['unenrolselfconfirm'] = 'Είστε βέβαιοι ότι θέλετε την απεγγραφή σας από το μάθημα «{$a}»;';
+$string['unenroluser'] = 'Είστε βέβαιοι ότι θέλετε την απεγγραφή του χρήστη «{$a->user}» από το μάθημα «{$a}»;';
+$string['unenrolusers'] = 'Απεγγραφή χρηστών';

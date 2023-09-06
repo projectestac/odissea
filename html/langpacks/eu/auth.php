@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'eu', version '3.11'.
+ * Strings for component 'auth', language 'eu', version '4.1'.
  *
  * @package     auth
  * @category    string
@@ -38,7 +38,7 @@ $string['auth_changingemailaddress'] = 'Helbide elektronikoa {$a->oldemail}-tik 
 $string['auth_common_settings'] = 'Ezarpen komunak';
 $string['auth_data_mapping'] = 'Datuen lotura';
 $string['auth_fieldlock'] = 'Blokeatu balioa';
-$string['auth_fieldlock_expl'] = '<p><b>Blokeatu balioa:</b> Gaituz gero, Moodleko erabiltzaile eta kudeatzaileek ezingo dute eremua zuzenean editatu. Aukeratu hau hautatu datu horiek kanpoko autentifikazio-sisteman badituzu. </p>';
+$string['auth_fieldlock_expl'] = '<p>Blokeatu balioa: Gaituz gero, erabiltzaileek ezingo dute eremua editatu. Erabili aukera hau datu horiek kanpoko autentifikazio-sistema batean mantentzen badituzu.</p>';
 $string['auth_fieldlockfield'] = 'Balioaren blokeoa ({$a})';
 $string['auth_fieldlocks'] = 'Blokeatu erabiltzaile-eremuak';
 $string['auth_fieldlocks_help'] = '<p>Erabiltzaileen datu-eremuak blokea ditzakezu, kudeatzaileek datuok eskuz mantentzen dituzten guneetan bereziki erabilgarria gertatzen dena, erabiltzaileen erregistroak editatuz edo \'Erabiltzaileak igo\' aplikazioaren bidez. Moodlek behar dituen eremuak blokeatzen badituzu, erabiltzaile-kontuak sortzean datu horiek ematen dituzula ziurtatu; bestela, kontuak ezingo dira erabili.</p><p>Pentsa ezazu ea \'Hutsik egotekotan desblokeatu\' aukera aktibatu behar duzun arazo hori ebitatzeko.</p>';
@@ -149,6 +149,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'CAPTCHA automatizatutako programen gehiegikeriak ekiditeko da. Jarraitu argibideei pertsona bat zarela egiaztatzeko. Klikatu beharreko laukitxo bat izan daiteke, azaldutako karaktereak idatzi beharra edo aukeratzeko irudi multzoa.
 
 Ziur ez bazaude zein irudi diren, beste CAPTCHA bat eska dezakezu edo audio CAPTCHA bat.';
+$string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Segurtasun-galdera';
 $string['selfregistration'] = 'Auto-erregistroa';
 $string['selfregistration_help'] = 'Autentifikazio-plugin bat, posta elektronikoan oinarritutako auto-erregistroa adibidez, aukeratzen bada aukera ematen die ustezko erabiltzaileei beren buruak erregistratu eta kontuak sortzeko. Horrela, spam sortzaileek kontuak sor ditzakete eta foroetako mezuak, blog sarrerak, e.a. spamerako erabili. Arrisku horri aurre egiteko, auto-erregistroa desgaitu edo mugatu egin behar da <em>Baimendutako posta elektronikoko domeinuak </em> ezarpena erabilita.';

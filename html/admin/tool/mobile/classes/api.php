@@ -53,7 +53,7 @@ class api {
     const LOGIN_KEY_TTL = 60;
     /** @var string URL of the Moodle Apps Portal */
     const MOODLE_APPS_PORTAL_URL = 'https://apps.moodle.com';
-    /** @var int seconds a QR login key will expire. */
+    /** @var int default value in seconds a QR login key will expire. */
     const LOGIN_QR_KEY_TTL = 600;
     /** @var int QR code disabled value */
     const QR_CODE_DISABLED = 0;
@@ -167,6 +167,9 @@ class api {
         // We need this to make work the format text functions.
         $PAGE->set_context($context);
 
+        // Check if contacting site support is available to all visitors.
+        $sitesupportavailable = (isset($CFG->supportavailability) && $CFG->supportavailability == CONTACT_SUPPORT_ANYONE);
+
         list($authinstructions, $notusedformat) = external_format_text($CFG->auth_instructions, FORMAT_MOODLE, $context->id);
         list($maintenancemessage, $notusedformat) = external_format_text($CFG->maintenance_message, FORMAT_MOODLE, $context->id);
         $settings = array(
@@ -197,6 +200,9 @@ class api {
             'tool_mobile_iosappid' => get_config('tool_mobile', 'iosappid'),
             'tool_mobile_androidappid' => get_config('tool_mobile', 'androidappid'),
             'tool_mobile_setuplink' => clean_param(get_config('tool_mobile', 'setuplink'), PARAM_URL),
+            'tool_mobile_qrcodetype' => clean_param(get_config('tool_mobile', 'qrcodetype'), PARAM_INT),
+            'supportpage' => $sitesupportavailable ? clean_param($CFG->supportpage, PARAM_URL) : '',
+            'supportavailability' => clean_param($CFG->supportavailability, PARAM_INT),
         );
 
         $typeoflogin = get_config('tool_mobile', 'typeoflogin');
@@ -234,8 +240,8 @@ class api {
             }
         }
 
-        // If age is verified, return also the admin contact details.
-        if ($settings['agedigitalconsentverification']) {
+        // If age is verified or support is available to all visitors, also return the admin contact details.
+        if ($settings['agedigitalconsentverification'] || $sitesupportavailable) {
             $settings['supportname'] = clean_param($CFG->supportname, PARAM_NOTAGS);
             $settings['supportemail'] = clean_param($CFG->supportemail, PARAM_EMAIL);
         }
@@ -305,6 +311,10 @@ class api {
             $settings->tool_mobile_filetypeexclusionlist = get_config('tool_mobile', 'filetypeexclusionlist');
             $settings->tool_mobile_custommenuitems = get_config('tool_mobile', 'custommenuitems');
             $settings->tool_mobile_apppolicy = get_config('tool_mobile', 'apppolicy');
+            // This setting could be not set in some edge cases such as bad upgrade.
+            $mintimereq = get_config('tool_mobile', 'autologinmintimebetweenreq');
+            $mintimereq = empty($mintimereq) ? 6 * MINSECS : $mintimereq;
+            $settings->tool_mobile_autologinmintimebetweenreq = $mintimereq;
         }
 
         if (empty($section) or $section == 'calendar') {
@@ -324,14 +334,30 @@ class api {
         }
 
         if (empty($section) or $section == 'supportcontact') {
-            $settings->supportname = $CFG->supportname;
-            $settings->supportemail = $CFG->supportemail;
-            $settings->supportpage = $CFG->supportpage;
+            $settings->supportavailability = $CFG->supportavailability;
+
+            if ($CFG->supportavailability == CONTACT_SUPPORT_DISABLED) {
+                $settings->supportname = null;
+                $settings->supportemail = null;
+                $settings->supportpage = null;
+            } else {
+                $settings->supportname = $CFG->supportname;
+                $settings->supportemail = $CFG->supportemail ?? null;
+                $settings->supportpage = $CFG->supportpage;
+            }
         }
 
         if (empty($section) || $section === 'graceperiodsettings') {
             $settings->coursegraceperiodafter = $CFG->coursegraceperiodafter;
             $settings->coursegraceperiodbefore = $CFG->coursegraceperiodbefore;
+        }
+
+        if (empty($section) || $section === 'navigation') {
+            $settings->enabledashboard = $CFG->enabledashboard;
+        }
+
+        if (empty($section) || $section === 'themesettings') {
+            $settings->customusermenuitems = $CFG->customusermenuitems;
         }
 
         return $settings;
@@ -382,17 +408,19 @@ class api {
      * Creates a QR login key for the current user, this key is restricted by time and ip address.
      * This key is used for automatically login the user in the site when the user scans a QR code in the Moodle app.
      *
+     * @param  stdClass $mobilesettings  mobile app plugin settings
      * @return string the key
      * @since Moodle 3.9
      */
-    public static function get_qrlogin_key() {
+    public static function get_qrlogin_key(stdClass $mobilesettings) {
         global $USER;
         // Delete previous keys.
         delete_user_key('tool_mobile', $USER->id);
 
         // Create a new key.
-        $iprestriction = getremoteaddr(null);
-        $validuntil = time() + self::LOGIN_QR_KEY_TTL;
+        $iprestriction = !empty($mobilesettings->qrsameipcheck) ? getremoteaddr(null) : null;
+        $qrkeyttl = !empty($mobilesettings->qrkeyttl) ? $mobilesettings->qrkeyttl : self::LOGIN_QR_KEY_TTL;
+        $validuntil = time() + $qrkeyttl;
         return create_user_key('tool_mobile', $USER->id, null, $iprestriction, $validuntil);
     }
 
@@ -492,6 +520,8 @@ class api {
                 'NoDelegate_H5POffline' => new lang_string('h5poffline', 'tool_mobile'),
                 'NoDelegate_DarkMode' => new lang_string('darkmode', 'tool_mobile'),
                 'CoreFilterDelegate' => new lang_string('type_filter_plural', 'plugin'),
+                'CoreReportBuilderDelegate' => new lang_string('reportbuilder', 'core_reportbuilder'),
+                'NoDelegate_CoreUserSupport' => new lang_string('contactsitesupport', 'admin'),
             ),
             "$mainmenu" => array(
                 '$mmSideMenuDelegate_mmaFrontpage' => new lang_string('sitehome'),
@@ -692,7 +722,7 @@ class api {
         $data = $urlscheme . '://' . $CFG->wwwroot;
 
         if ($mobilesettings->qrcodetype == static::QR_CODE_LOGIN) {
-            $qrloginkey = static::get_qrlogin_key();
+            $qrloginkey = static::get_qrlogin_key($mobilesettings);
             $data .= '?qrlogin=' . $qrloginkey . '&userid=' . $USER->id;
         }
 

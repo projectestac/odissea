@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'nl', version '3.11'.
+ * Strings for component 'repository_dropbox', language 'nl', version '4.1'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -33,6 +33,8 @@ $string['crontask'] = 'Achtergrondverwerking voor de Dropbox-opslagruimte';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Bekijk een Dropbox map';
 $string['instruction'] = 'Je kunt je API-sleutel en geheim halen van  <a href="https://www.dropbox.com/developers/apps">Dropbox developers</a>. Wanneer je je sleutel instelt, kies dan "Full Dropbox" als "Access level".';
+$string['issuer'] = 'OAuth 2-service';
+$string['issuer_help'] = 'Selecteer de OAuth 2-service die geconfigureerd is om met de Dropbox-API te communiceren. Als de service nog niet bestaat, dan zul je die moeten maken.';
 $string['logoutdesc'] = '(afmelden als je klaar bent met Dropbox)';
 $string['notitle'] = 'Geen titel';
 $string['oauth2redirecturi'] = 'OAuth 2 verwijzings URI';

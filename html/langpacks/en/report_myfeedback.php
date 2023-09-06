@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_myfeedback', language 'en', version '3.11'.
+ * Strings for component 'report_myfeedback', language 'en', version '4.1'.
  *
  * @package     report_myfeedback
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['academicyear'] = 'Academic year';
 $string['academicyearinfo'] = 'The academic year this instance of Moodle relates to.';
+$string['academicyeartextinfo'] = 'A text describing the academic year this instance of Moodle relates to.';
 $string['accumulativetitle'] = 'Accumulative:';
 $string['addeditfeedback'] = 'Add/Edit feedback';
 $string['addeditnotes'] = 'Add/Edit notes';
@@ -51,11 +52,20 @@ $string['archivedinstanceinfo'] = 'Whether this instance of Moodle is an archive
 $string['archivedomain'] = 'Archived FQDN';
 $string['archivedomaindefault'] = 'https://';
 $string['archivedomaininfo'] = 'The Fully Qualified Domain Name (FQDN) with http/https';
+$string['archivelink'] = 'Archive URL';
+$string['archivelinksettings1'] = 'URL for Archive last year';
+$string['archivelinksettings2'] = 'URL for Archive 2 years ago';
+$string['archivelinksettings3'] = 'URL for Archive 3 years ago';
+$string['archivelinksettings4'] = 'URL for Archive 4 years ago';
+$string['archivelinksettings5'] = 'URL for Archive 5 years ago';
+$string['archivelinksheading'] = 'Archive Links';
+$string['archivelinktext'] = 'Description for archived year {$a}';
+$string['archivelinktextinfo'] = 'Description for archive URL {$a} to be used in report.';
 $string['archivenamingconvention'] = 'Archived DB naming convention';
 $string['archivenamingconventiondefault'] = 'moodle_archive_';
 $string['archivenamingconventioninfo'] = 'What naming convention do you use before your academic year e.g."moodle_archive_xxxx" where xxxx is the two digit value for the academic years e.g."1415". <br>The current release only uses the default convention.';
 $string['archiveyears'] = 'Archived years';
-$string['archiveyearsinfo'] = 'How many years of archive do you want to make available?<br /> Recommend setting to 0 for production Moodle installations, due to issues with checking permissions on older versions of Moodle.';
+$string['archiveyearsinfo'] = 'How many years of archive do you want to make available?<br /> Years with <i>no</i> URL or <i>no</i> description will not be shown.';
 $string['assessmentbreakdown'] = 'Assessment breakdown';
 $string['attempt'] = 'attempt';
 $string['attempts'] = 'attempts';
@@ -78,6 +88,7 @@ $string['courselimitinfo'] = '<p style="color: #990000;">Too many courses to sho
 $string['courselimitsettings'] = 'Set the limit for the number of courses to show statistics for second level category';
 $string['coursestaff'] = 'Course staff';
 $string['coursestudents'] = 'Course students';
+$string['current_academic_year'] = 'Current';
 $string['dashboard'] = 'My feedback report';
 $string['dashboard_assessments'] = 'Assessments';
 $string['dashboard_students'] = 'Students';
@@ -279,6 +290,7 @@ $string['selfaddedfeedback'] = 'Self-added feedback';
 $string['selfassessment'] = 'Self-assessment:';
 $string['sendmail'] = 'Send mail';
 $string['settingsacademicyear'] = 'Academic year';
+$string['settingsacademicyeartext'] = 'Academic year description';
 $string['staff'] = 'staff';
 $string['staffmember'] = 'Staff member';
 $string['statsperassessment'] = 'Stats per assessment';
@@ -297,6 +309,11 @@ $string['studentbreakdown'] = 'Student breakdown';
 $string['studentgraphdesc'] = 'The lowest grade is {$a->minimum}%, the median grade is {$a->mean}% and the highest grade is {$a->maximum}%. The student\'s score is {$a->studentscore}%.';
 $string['studentrecordsystem'] = 'Launch Student Record System';
 $string['studentrecordsystemlink'] = 'https://';
+$string['studentrecordsystemlinkheading'] = 'Student Record System Link';
+$string['studentrecordsystemlinksettings'] = 'Set the link for the Student Record System';
+$string['studentrecordsystemlinktext'] = 'Student Record System Link';
+$string['studentrecordsystemsettings'] = 'Text on Button to launch the Student Record System';
+$string['studentrecordsystemtext'] = 'Student Record System Button Text';
 $string['studentsaccessto'] = 'Any personal tutees you are allocated (in Portico) will show by default in the list below. To find a student in any of the Moodle courses you teach or administer, please search for their <b>email address</b>.';
 $string['submission'] = 'view submission';
 $string['suborassessed'] = 'Assessed';

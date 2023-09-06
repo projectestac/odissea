@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'pt', version '3.11'.
+ * Strings for component 'theme_boost', language 'pt', version '4.1'.
  *
  * @package     theme_boost
  * @category    string
@@ -36,19 +36,30 @@ $string['choosereadme'] = 'Boost é um tema moderno altamente personalizável. E
 $string['configtitle'] = 'Boost';
 $string['currentinparentheses'] = '(atual)';
 $string['generalsettings'] = 'Configurações gerais';
+$string['loginbackgroundimage'] = 'Imagem de fundo da página de autenticação';
+$string['loginbackgroundimage_desc'] = 'A imagem a ser exibida como fundo na página de autenticação.';
 $string['nobootswatch'] = 'Nenhum';
 $string['pluginname'] = 'Boost';
 $string['preset'] = 'Predefinição do tema';
 $string['preset_desc'] = 'Escolha uma predefinição para alterar amplamente a aparência do tema.';
 $string['presetfiles'] = 'Ficheiros adicionais de predefinições do tema';
 $string['presetfiles_desc'] = 'Os ficheiros de predefinições podem ser usados para alterar drasticamente a aparência do tema. Consulte a <a href="https://docs.moodle.org/dev/Boost_Presets">Personalização Boost</a> para obter informações sobre como criar e partilhar os seus próprios ficheiros de predefinições e consulte também  o <a href="https://moodle.net/boost">Repositório de personalizações</a> para predefinições que outros tenham partilhado.';
+$string['privacy:drawerblockclosed'] = 'A preferência atual para o painel dos blocos é fechada.';
+$string['privacy:drawerblockopen'] = 'A preferência atual para o painel dos blocos é aberta.';
+$string['privacy:drawerindexclosed'] = 'A preferência atual para o painel do índice da disciplina é fechada.';
+$string['privacy:drawerindexopen'] = 'A preferência atual para o painel do índice da disciplina é aberta.';
 $string['privacy:drawernavclosed'] = 'A preferência atual do menu de navegação é fechado.';
 $string['privacy:drawernavopen'] = 'A preferência atual do menu de navegação é aberto.';
 $string['privacy:metadata'] = 'O tema Boost não armazena quaisquer dados pessoais dos utilizadores.';
+$string['privacy:metadata:preference:draweropenblock'] = 'A preferência do utilizador para ocultar ou mostrar o painel dos blocos.';
+$string['privacy:metadata:preference:draweropenindex'] = 'A preferência do utilizador para ocultar ou mostrar o painel do índice da disciplina.';
 $string['privacy:metadata:preference:draweropennav'] = 'A preferência do utilizador para ocultar ou mostrar o menu de navegação.';
 $string['rawscss'] = 'Raw SCSS';
 $string['rawscss_desc'] = 'Use este campo para fornecer código SCSS ou CSS que será colocado no final da folha de estilos.';
 $string['rawscsspre'] = 'Raw SCSS inicial';
-$string['rawscsspre_desc'] = 'Neste campo pode fornecer o código de inicialização SCSS, será colocado antes de tudo. Na maioria das vezes, apenas usará esta configuração para definir variáveis.';
+$string['rawscsspre_desc'] = 'Neste campo pode fornecer o código de inicialização SCSS que será colocado antes de tudo. Na maioria das vezes, apenas usará esta configuração para definir variáveis.';
 $string['region-side-pre'] = 'Direita';
+$string['showfooter'] = 'Mostrar rodapé';
 $string['totop'] = 'Ir para topo';
+$string['unaddableblocks'] = 'Blocos não necessários';
+$string['unaddableblocks_desc'] = 'Os blocos especificados não são necessários ao usar este tema e não serão listados no menu de \'Adicionar bloco\'.';

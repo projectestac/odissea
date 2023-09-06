@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'el', version '3.11'.
+ * Strings for component 'gradereport_grader', language 'el', version '4.1'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -47,14 +47,14 @@ $string['privacy:metadata:preference:grade_report_rangesdecimalpoints'] = 'Ο α
 $string['privacy:metadata:preference:grade_report_rangesdisplaytype'] = 'Εάν το διάστημα/εύρος εμφανίζεται ως πραγματικοί βαθμοί, ποσοστά ή γράμματα ή αν χρησιμοποιείται (κληρονομικά) ο τύπος εμφάνισης για την κατηγορία ή το στοιχείο βαθμού.';
 $string['privacy:metadata:preference:grade_report_showactivityicons'] = 'Εάν θα εμφανίζονται τα εικονίδια δραστηριότητας δίπλα στα ονόματα δραστηριοτήτων';
 $string['privacy:metadata:preference:grade_report_showanalysisicon'] = 'Εάν θα εμφανίζεται το εικονίδιο ανάλυσης βαθμού από προεπιλογή. Εάν το υποστηρίζει το άρθρωμα δραστηριότητας, το εικονίδιο ανάλυσης βαθμού συνδέεται με μια σελίδα με λεπτομερέστερη εξήγηση του βαθμού και με τον τρόπο με τον οποίο αποκτήθηκε.';
-$string['privacy:metadata:preference:grade_report_showaverages'] = 'Εάν θα εμφανίζεται μια επιπρόσθετη σειρά με τον μέσο όρο (μέση τιμή) για κάθε κατηγορία και στοιχείο βαθμού';
+$string['privacy:metadata:preference:grade_report_showaverages'] = 'Εάν θα εμφανίζεται μια επιπρόσθετη γραμμή με τον μέσο όρο (μέση τιμή) για κάθε κατηγορία και στοιχείο βαθμού';
 $string['privacy:metadata:preference:grade_report_showcalculations'] = 'Εάν, όταν η επεξεργασία είναι ενεργοποιημένη, θα εμφανίζεται ή όχι για κάθε είδος και κατηγορία βαθμού, ένα εικονίδιο αριθμομηχανής, με οπτική ένδειξη ότι ένα στοιχείο βαθμού υπολογίζεται.';
 $string['privacy:metadata:preference:grade_report_showeyecons'] = 'Εάν θα εμφανίζεται το εικονίδιο εμφάνισης/απόκρυψης για κάθε βαθμό για να ελέγχετε την προβολή του στον μαθητή';
 $string['privacy:metadata:preference:grade_report_showlocks'] = 'Εάν θα εμφανίζεται ένα εικονίδιο κλειδώματος/ξεκλειδώματος για κάθε βαθμό για να ελέγχεται εάν η βαθμολογία μπορεί να ενημερωθεί αυτόματα από τη σχετική δραστηριότητα όταν είναι ενεργή η επεξεργασία';
 $string['privacy:metadata:preference:grade_report_shownumberofgrades'] = 'Εάν θα εμφανίζεται σε παρένθεση μετά από κάθε μέσο όρο ο αριθμός των βαθμών που χρησιμοποιήθηκαν κατά τον υπολογισμό του μέσου όρου';
 $string['privacy:metadata:preference:grade_report_showonlyactiveenrol'] = 'Εάν θα εμφανίζονται μόνο ενεργοί εγγεγραμμένοι χρήστες (δεν έχουν ανασταλεί) στην αναφορά του βαθμολογίου ή όλοι οι εγγεγραμμένοι χρήστες';
-$string['privacy:metadata:preference:grade_report_showquickfeedback'] = 'Εάν θα εμφανίζεται ένα πλαίσιο εισαγωγής κειμένου ανατροφοδότησης με ένα διάστικτο περιθώριο για κάθε βαθμό, επιτρέποντας την επεξεργασία σχολίων για πολλούς βαθμούς ταυτόχρονα';
-$string['privacy:metadata:preference:grade_report_showranges'] = 'Εάν θα εμφανίζεται μια επιπρόσθετη σειρά με το εύρος για κάθε κατηγορία και στοιχείο βαθμού';
+$string['privacy:metadata:preference:grade_report_showquickfeedback'] = 'Εάν θα εμφανίζεται ένα πλαίσιο εισαγωγής κειμένου ανατροφοδότησης με ένα διάστικτο περίγραμμα για κάθε βαθμό, επιτρέποντας την επεξεργασία σχολίων για πολλούς βαθμούς ταυτόχρονα';
+$string['privacy:metadata:preference:grade_report_showranges'] = 'Εάν θα εμφανίζεται μια επιπρόσθετη γραμμή με το εύρος για κάθε κατηγορία και στοιχείο βαθμού';
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Εάν θα εμφανίζεται η εικόνα προφίλ χρήστη δίπλα στο όνομα';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Ο αριθμός των μαθητών που εμφανίζονται ανά σελίδα στην αναφορά βαθμολογητή';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Έχετε συμπτύξει κάποιες κατηγορίες βαθμολογίου στο μάθημα «{$a->name}»';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'zh_cn', version '3.11'.
+ * Strings for component 'scorm', language 'zh_cn', version '4.1'.
  *
  * @package     scorm
  * @category    string
@@ -87,7 +87,7 @@ $string['completed'] = '已完成';
 $string['completiondetail:allscos'] = '完成此活动的所有部分';
 $string['completiondetail:completionscore'] = '获得{$a}或以上的分数';
 $string['completiondetail:completionstatuscompleted'] = '完成活动';
-$string['completiondetail:completionstatuscompletedandpassed'] = '完成并通过活动';
+$string['completiondetail:completionstatuscompletedorpassed'] = '完成或通过活动';
 $string['completiondetail:completionstatuspassed'] = '通过活动';
 $string['completionscorerequired'] = '所需最低分数';
 $string['completionscorerequired_help'] = '启用这个设置，将会要求用户至少有一个最低分数，才可在这一SCORM活动中标示为完成，如同任何其他活动的完成要求。';
@@ -129,7 +129,6 @@ $string['displaydesc'] = '活动默认情况下是否显示包';
 $string['displaysettings'] = '课件显示设置';
 $string['dnduploadscorm'] = '添加一个 SCORM 包';
 $string['domxml'] = '外部 DOMXML 库';
-$string['duedate'] = '截止日';
 $string['element'] = '项目';
 $string['enter'] = '输入';
 $string['entercourse'] = '进入课程';
@@ -209,10 +208,12 @@ $string['indicator:cognitivedepth'] = 'SCORM课件活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 SCORM课件活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = 'SCORM认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到SCORM活动提供的认知参与百分比（级别=无查看、查看、提交、查看反馈）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'SCORM课件活动社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在SCORM课件活动中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = 'SCORM社会';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到SCORM活动提供的社会参与度的百分比（级别=无参与，仅参与者一人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = '信息';
 $string['interactions'] = '交互';
 $string['invalidactivity'] = 'Scorm 活动不正确';
@@ -245,6 +246,7 @@ $string['missingparam'] = '缺少了必须有的项目或项目取值错误';
 $string['mode'] = '模式';
 $string['modulename'] = 'SCORM 课件';
 $string['modulename_help'] = 'SCORM和AICC是一套基于Web学习内容的规范，具有互用性、辅助性和复用性。通过SCORM/AICC模块可将SCORM/AICC课件包加入到课程中。';
+$string['modulename_link'] = 'mod/scorm/view';
 $string['modulenameplural'] = 'SCORM 课件包';
 $string['myaiccsessions'] = '我的AICC会话';
 $string['myattempts'] = '我的尝试';

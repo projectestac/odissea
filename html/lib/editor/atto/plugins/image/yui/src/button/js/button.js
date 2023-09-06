@@ -365,7 +365,7 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
 
         // Trigger form upload start events.
         require(['core_form/events'], function(FormEvent) {
-            FormEvent.triggerUploadStarted(self.editor.get('id'));
+            FormEvent.notifyUploadStarted(self.editor.get('id'));
         });
 
         var options = host.get('filepickeroptions').image,
@@ -424,7 +424,7 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                             }
                             // Trigger form upload complete events.
                             require(['core_form/events'], function(FormEvent) {
-                                FormEvent.triggerUploadCompleted(self.editor.get('id'));
+                                FormEvent.notifyUploadCompleted(self.editor.get('id'));
                             });
                             throw new M.core.ajaxException(result);
                         }
@@ -455,7 +455,7 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                     Y.use('moodle-core-notification-alert', function() {
                         // Trigger form upload complete events.
                         require(['core_form/events'], function(FormEvent) {
-                            FormEvent.triggerUploadCompleted(self.editor.get('id'));
+                            FormEvent.notifyUploadCompleted(self.editor.get('id'));
                         });
                         new M.core.alert({message: M.util.get_string('servererror', 'moodle')});
                     });
@@ -465,7 +465,7 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                 }
                 // Trigger form upload complete events.
                 require(['core_form/events'], function(FormEvent) {
-                    FormEvent.triggerUploadCompleted(self.editor.get('id'));
+                    FormEvent.notifyUploadCompleted(self.editor.get('id'));
                 });
             }
         };

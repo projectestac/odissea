@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ca', version '3.11'.
+ * Strings for component 'wiki', language 'ca', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -105,12 +105,14 @@ $string['format_help'] = '* HTML - L\'editor HTML està disponible.
 $string['formatcreole'] = 'Format Creole';
 $string['formatcreole_help'] = 'Creole és un llenguatge d\'etiquetes amb una barra editora per inserir les hipermarques apropiades.
 Per crear una pàgina nova, escriviu el nom de la nova pàgina tancada dins de claudàtors, per exemple: [[Pàgina 2]].';
+$string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'Format HTML';
 $string['formathtml_help'] = 'L\'editor HTML pot utilitzar-se per donar format al contingut.
 Per crear una pàgina nova, escriviu el nom de la nova pàgina tancada dins de claudàtors, per exemple: [[Pàgina 2]].';
 $string['formatnwiki'] = 'Format Nwiki';
 $string['formatnwiki_help'] = 'Nwiki és Mediawiki: un llenguatge d\'etiquetes utilitzat al mòdul Nwiki.
 Per crear una pàgina nova, escriviu el nom de la nova pàgina tancada dins de claudàtors, per exemple: [[Pàgina 2]].';
+$string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Historial';
 $string['history_help'] = 'L\'historial enllaça amb les versions prèvies de la pàgina.';
 $string['html'] = 'HTML';
@@ -119,6 +121,8 @@ $string['incorrectpageid'] = 'L\'ID de la pàgina no és correcte.';
 $string['incorrectsubwikiid'] = 'L\'ID del subwiki no és correcte.';
 $string['incorrectwikiid'] = 'L\'ID del wiki no és correcte.';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Wiki en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = 'Aquesta pàgina wiki no existeix';
 $string['insertcomment'] = 'Insereix comentari';
 $string['insertimage'] = 'Insereix una imatge...';
@@ -151,6 +155,7 @@ Els wikis tenen molts usos, com ara:
 * Perquè els estudiants col·laborin i facin un llibre en línia, o creïn continguts en un tema establert pel seu tutor
 * Per a la creació poètica, on cada participant escriu una línia o un vers
 * Com un diari personal per a les notes dels exàmens o la revisió (utilitzant un wiki individual)';
+$string['modulename_link'] = 'mod/wiki/view';
 $string['modulenameplural'] = 'Wikis';
 $string['navigation'] = 'Navegació';
 $string['navigationfrom'] = 'Aquesta pàgina prové de';

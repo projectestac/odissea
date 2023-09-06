@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'gl', version '3.11'.
+ * Strings for component 'qtype_match', language 'gl', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -43,9 +43,9 @@ $string['pluginname_link'] = 'pregunta/tipo/coincidencia';
 $string['pluginnameadding'] = 'Engadindo unha pregunta coincidente';
 $string['pluginnameediting'] = 'Editando unha pregunta coincidentes';
 $string['pluginnamesummary'] = 'A resposta para cadanseu número de subpreguntas débese seleccionar dunha lista de posibilidades.';
-$string['privacy:metadata'] = 'O engadido de pregunta coincidente non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O complemento de tipo de pregunta coincidente permite aos autores de preguntas estabelecer opcións predeterminadas como preferencias do usuario.';
 $string['privacy:preference:defaultmark'] = 'A marca predeterminada estabelecida para unha determinada pregunta.';
 $string['privacy:preference:penalty'] = 'A penalización por cada intento incorrecto cando se executan preguntas mediante o comportamento «Interactivo con intentos múltiples» ou «Modo adaptativo».';
 $string['privacy:preference:shuffleanswers'] = 'Indica se as respostas deben ser baralladas automaticamente.';
 $string['shuffle'] = 'Barallar preguntas';
-$string['shuffle_help'] = 'De estar activado, a orde das proposicións (respostas) barallouse ao chou para cadanseu intento, dado que «Barallar as preguntas internas» tamén está activado nos axustes internos.';
+$string['shuffle_help'] = 'De estar activado, a orde das preguntas barállanse ao chou para cadanseu intento, sempre que «Barallar dentro das preguntas» tamén estea activado na configuración da actividade. Nunha pregunta coincidente, só as preguntas se ven afectadas por este parámetro. As opcións de resposta barallaranse sempre.';

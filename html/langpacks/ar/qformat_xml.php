@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xml', language 'ar', version '3.11'.
+ * Strings for component 'qformat_xml', language 'ar', version '4.1'.
  *
  * @package     qformat_xml
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['invalidxml'] = 'ملف XML غير صحيح - يُتوقع وجود نص (هل تستعمل CDATA؟)';
 $string['pluginname'] = 'صيغة XML لمودل';
 $string['pluginname_help'] = 'هذه صيغة خاصة بمودل لتصدير واستيراد الأسئلة';
+$string['pluginname_link'] = 'qformat/xml';
 $string['privacy:metadata'] = 'إن ملحق صيغة السؤال XML لا يخزن أي بيانات شخصية.';
 $string['truefalseimporterror'] = '<b>تحذير</b>: تعذر استيراد سؤال صح/خطأ \'{$a->questiontext}\' بشكل صحيح. لم يكن واضحاً فيما إذا كانت الإجابة الصحيحة هي صح أم خطأ. تم استيراد السؤال على فرض أن إجابته هي \'{$a->answer}\'. إذا كان ذلك خاطئاً، فعليك تحرير السؤال.';
 $string['unsupportedexport'] = 'نوع السؤال {$a} غير مدعوم للتصدير بصيغة XML';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'it', version '3.11'.
+ * Strings for component 'plugin', language 'it', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -67,6 +67,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Non ci sono plugin di questo tipo installati.';
 $string['notdownloadable'] = 'Non è possibile scaricare i pacchetti';
 $string['notdownloadable_help'] = 'Non è possibile scaricare automaticamente i pacchetti ZIP degli aggiornamenti.';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = 'Note';
 $string['notsupported'] = 'Il plugin può non essere compilabile con la versione {$a} di Moodle';
 $string['notwritable'] = 'I file del plugin non sono scrivibili';
@@ -125,6 +126,8 @@ $string['type_calendartype'] = 'Tipo di calendario';
 $string['type_calendartype_plural'] = 'Tipi di calendario';
 $string['type_contentbank'] = 'Deposito dei contenuti';
 $string['type_contentbank_plural'] = 'Plugin deposito dei contenuti';
+$string['type_contenttype'] = 'Deposito dei contenuti';
+$string['type_contenttype_plural'] = 'Plugin deposito dei contenuti';
 $string['type_coursereport'] = 'Report del corso';
 $string['type_coursereport_plural'] = 'Report del corso';
 $string['type_customfield'] = 'Campo personalizzato';
@@ -173,6 +176,8 @@ $string['type_portfolio'] = 'Portfolio';
 $string['type_portfolio_plural'] = 'Portfolio';
 $string['type_profilefield'] = 'Tipo di campo personalizzato';
 $string['type_profilefield_plural'] = 'Tipi di campo personalizzato';
+$string['type_qbank'] = 'Plugin Deposito delle domande';
+$string['type_qbank_plural'] = 'Plugin Deposito delle domande';
 $string['type_qbehaviour'] = 'Comportamento domanda';
 $string['type_qbehaviour_plural'] = 'Comportamenti domanda';
 $string['type_qformat'] = 'Formato di importazione/esportazione domande';
@@ -223,6 +228,7 @@ $string['validationmsg_maturity'] = 'Maturity level dichiarato';
 $string['validationmsg_maturity_help'] = 'Il plugin può dichiarare il proprio maturity level. Se il maintainer ritiene il plugin stabile, il maturity level sarà MATURITY_STABLE. Tutti gli altri maturity level dichiarati (ad esempio, alpha o beta)  saranno considerati non stabili e sarà visualizzato un avviso.';
 $string['validationmsg_missingcomponent'] = 'Il plugin non dichiara il nome del componente';
 $string['validationmsg_missingcomponent_help'] = 'Tutti i plugin devono esplicitate il nome del proprio componente tramite la dichiarazione \'$plugin->component` presente nel file version.php.';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = 'Discrepanza sul nome del file della lingua ingelse';
 $string['validationmsg_missingexpectedlangenfile_info'] = 'Il plugin deve fornire il file {$a} per la lingua inglese.';
 $string['validationmsg_missinglangenfile'] = 'Non è stato trovato il file di lingua inglese';

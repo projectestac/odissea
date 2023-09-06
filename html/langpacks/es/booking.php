@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'es', version '3.11'.
+ * Strings for component 'booking', language 'es', version '4.1'.
  *
  * @package     booking
  * @category    string
@@ -26,13 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcategory'] = 'Editar categorías';
-$string['addeditbooking'] = 'Editar reservas';
 $string['addmorebookings'] = 'Añadir más reservas';
-$string['addnewbookingoption'] = 'Añadir una nueva opción de reserva';
 $string['addnewcategory'] = 'Añadir nueva categoría';
 $string['addnewinstitution'] = 'Añadir nueva Institución';
 $string['address'] = 'Dirección';
-$string['addteachers'] = 'Añadir docentes';
 $string['addtocalendar'] = 'Añadir al calendario';
 $string['addusertogroup'] = 'Añadir usuario/a al grupo';
 $string['advancedoptions'] = 'Opciones avanzadas';
@@ -65,7 +62,6 @@ $string['aftercompletedtext_help'] = 'Deje esta opción en blanco para usar el t
 </ul>';
 $string['agreetobookingpolicy'] = 'He leído y estoy de acuerdo con las siguientes políticas para reservas';
 $string['allbookingoptions'] = 'Descargar usuarios para todas las opciones de reservas';
-$string['allchangessave'] = 'Todos los cambios han sido guardados.';
 $string['allcomments'] = 'Todos pueden comentar';
 $string['allmailssend'] = '¡Todos los correos electrónicos a los usuarios han sido enviados!';
 $string['allowdelete'] = 'Permitirle a los usuarios cancelar sus reservas ellos mismos';
@@ -136,7 +132,6 @@ $string['booking:subscribeusers'] = 'Hacer reservas para otros usuarios';
 $string['booking:updatebooking'] = 'Gestionar opciones de reserva';
 $string['bookingattachment'] = 'Archivo adjunto';
 $string['bookingcategory'] = 'Categoría';
-$string['bookingclose'] = 'Hasta';
 $string['bookingdeleted'] = 'Su reserva fue cancelada';
 $string['bookingduration'] = 'Duración';
 $string['bookingfull'] = 'No hay lugares disponibles';
@@ -171,26 +166,12 @@ $string['closed'] = 'Reservas cerradas';
 $string['comments'] = 'Comentarios';
 $string['completed'] = 'Completado';
 $string['completionmodule'] = 'Actividad completada';
-$string['confirmationmessage'] = 'Tu Reserva ha sido registrada
-
-Estado de la reserva: {$a->status}
-Participante:   {$a->participant}
-Curso:   {$a->title}
-Fecha: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Para ver todos tus cursos reservados haz clic en el siguiente enlace: {$a->bookinglink}
-El curso asociado se puede encontrar aquí: {$a->courselink}';
 $string['confirmationmessagesettings'] = 'Confirmación de ajustes de correo';
-$string['confirmationmessagewaitinglist'] = 'Hola {$a->name}, Su solicitud de reserva ha sido registrada. Status: {$a->status} Participante: {$a->name} Curso: {$a->bookingname} Fecha: {$a->date} Para ver todos sus cursos reservados, elija el enlace siguiente: {$a->link}';
-$string['confirmationsubject'] = 'Confirmación de reserva para {$a->bookingname}';
-$string['confirmationsubjectbookingmanager'] = 'Nueva reserva para {$a->bookingname} por {$a->name}';
-$string['confirmationsubjectwaitinglist'] = 'Estatus de reserva para {$a->bookingname}';
-$string['confirmationsubjectwaitinglistmanager'] = 'Status de reserva para {$a->bookingname}';
 $string['confirmbookingoffollowing'] = 'Por favor confirme la reserva para el siguiente curso';
 $string['confirmdeletebookingoption'] = '¿Realmente desea eliminar esta opción de reserva?';
 $string['coursedate'] = 'Fecha';
 $string['courseendtime'] = 'Hora de finalización del curso';
 $string['coursestarttime'] = 'Hora de inicio del curso';
-$string['createdby'] = 'Módulo de reservas hecho por edulabs.org';
 $string['customfielddesc'] = 'Después de añadir un campo personalizado, puede definir el valor para el campo en la configuración de la opción de reserva. El valor se mostrará en la descripción de la opción de reserva.';
 $string['customlabels'] = 'Etiquetas personalizadas';
 $string['datenotset'] = 'Fecha no establecida';
@@ -198,10 +179,7 @@ $string['daystonotify'] = 'Cantidad de días antes del evento para notificar a l
 $string['daystonotify2'] = 'Segunda notificación antes del inicio del evento para avisar a los participantes.';
 $string['defaultbookingoption'] = 'Opciones por defecto para reservas';
 $string['deletebooking'] = '¿Realmente desea des-inscribirse en el curso siguiente? <br /><br /> <b>{$a} </b>';
-$string['deletebookingoption'] = 'Eliminar esta opción de reserva';
 $string['deletecategory'] = 'Borrar';
-$string['deletedbookingmessage'] = 'Reserva eliminada para el curso siguiente: {$a->bookingname} Usuario: {$a->name} Liga: {$a->link};';
-$string['deletedbookingsubject'] = 'Reserva eliminada: {$a->bookingname} por {$a->name}';
 $string['deletedbookingusermessage'] = 'Hola {$ a-> participant},
 
 Su reserva para {$ a-> title} ({$ a-> startdate} {$ a-> starttime}) ha sido cancelada.';
@@ -219,11 +197,8 @@ $string['editcategory'] = 'Editar';
 $string['editrule'] = 'Editar';
 $string['edittag'] = 'Editar';
 $string['editteachers'] = 'Editar';
-$string['editteacherslink'] = 'Editar Docentes';
 $string['endtimenotset'] = 'Fecha final no configurada';
 $string['error:failedtosendconfirmation'] = 'El usuario siguiente no recibió un correo de confirmación de Reserva. Status: {$a->status} Participante: {$a->name} Curso: {$a->bookingname} Fecha: {$a->date} Liga: {$a->link}';
-$string['eventbooking_cancelled'] = 'Reserva cancelada';
-$string['eventbookingoption_booked'] = 'Opción de reserva elegida';
 $string['eventduration'] = 'Duración del evento';
 $string['expired'] = 'Lo sentimos, esta actividad se cerró el {$a} y ya no está disponible';
 $string['fillinatleastoneoption'] = 'Usted necesita proporcionar al menos dos posibles respuestas.';
@@ -253,8 +228,6 @@ $string['removeresponses'] = 'Quitar todas las respuestas';
 $string['responses'] = 'Respuestas';
 $string['responsesto'] = 'Respuestas a {$a}';
 $string['select'] = 'Selección';
-$string['sendconfirmmail'] = 'Mandar correo de confirmación';
-$string['sendconfirmmailtobookingmanger'] = 'Mandar correo de confirmación al gestor de reservas';
 $string['showallbookings'] = 'Mostrar vista general de reservas para todas las reservas';
 $string['spaceleft'] = 'espacio disponible';
 $string['spacesleft'] = 'espacios disponibles';
@@ -265,7 +238,6 @@ $string['subscribetocourse'] = 'Inscribir usuarios al curso';
 $string['subscribeuser'] = '¿Realmente quiere inscribir a los usuarios en el curso siguiente?';
 $string['taken'] = 'Tomado';
 $string['timerestrict'] = 'Restringir respuestas a este lapso de tiempo';
-$string['unlimited'] = 'Ilimitado';
 $string['updatebooking'] = 'Editar esta opción de reserva';
 $string['userdownload'] = 'Descargar usuarios';
 $string['usernameofbookingmanager'] = 'Username del gestpr de reservas';

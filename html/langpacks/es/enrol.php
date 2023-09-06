@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'es', version '3.11'.
+ * Strings for component 'enrol', language 'es', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -57,6 +57,7 @@ $string['enrollednewusers'] = 'Nuevos usuarios {$a} matriculados con éxito';
 $string['enrolledusers'] = 'Usuarios matriculados';
 $string['enrolledusersmatching'] = 'Emparejar usuarios matriculados';
 $string['enrolme'] = 'Matricularme en este curso';
+$string['enrolment'] = 'Inscripción';
 $string['enrolmentinstances'] = 'Métodos de matriculación';
 $string['enrolmentmethod'] = 'Método de matriculación';
 $string['enrolmentnew'] = 'Nueva matriculación en {$a}';
@@ -110,6 +111,7 @@ $string['invalidrequest'] = 'Solicitud inválida';
 $string['invalidrole'] = 'Rol no válido';
 $string['manageenrols'] = 'Gestionar plugins de matriculación';
 $string['manageinstance'] = 'Gestionar';
+$string['method'] = 'Método';
 $string['migratetomanual'] = 'Migrar a matriculaciones manuales';
 $string['nochange'] = 'Sin cambios';
 $string['noexistingparticipants'] = 'No existen participantes';
@@ -148,8 +150,12 @@ $string['sendfromkeyholder'] = 'Del portador de la clave';
 $string['sendfromnoreply'] = 'De la dirección de no-responder (no-reply)';
 $string['startdatetoday'] = 'Hoy';
 $string['synced'] = 'Sincronizado';
-$string['testsettings'] = 'Configuración del test';
-$string['testsettingsheading'] = 'Configuración del test de matriculación - {$a}';
+$string['testsettings'] = 'Probar configuración';
+$string['testsettingsheading'] = 'Prueba de configuración del componente de matriculación - {$a}';
+$string['timeended'] = 'Se acabó el tiempo';
+$string['timeenrolled'] = 'Tiempo inscrito';
+$string['timereaggregated'] = 'Tiempo re-agregado';
+$string['timestarted'] = 'Hora de iniciado';
 $string['totalenrolledusers'] = '{$a} usuarios matriculados';
 $string['totalotherusers'] = '{$a} otros usuarios';
 $string['totalunenrolledusers'] = '{$a} usuarios desmatriculados';

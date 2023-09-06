@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ru', version '3.11'.
+ * Strings for component 'quiz_statistics', language 'ru', version '4.1'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -101,12 +101,12 @@ $string['questiontype'] = 'Тип вопроса';
 $string['quizinformation'] = 'Информация о тесте';
 $string['quizname'] = 'Название теста';
 $string['quizoverallstatistics'] = 'Общая статистика теста';
-$string['quizstatisticscleanuptask'] = 'Очистить старые записи кэша статистики тестов';
 $string['quizstructureanalysis'] = 'Анализ структуры теста';
 $string['random_guess_score'] = 'Балл случайного угадывания';
 $string['rangebetween'] = '{$a->min} − {$a->max}';
 $string['rangeofvalues'] = 'Диапазон статистики по этим вопросам';
 $string['recalculatenow'] = 'Пересчитать сейчас';
+$string['recalculatetask'] = 'Пересчитать статистику вопросов';
 $string['reportsettings'] = 'Настройки статистического отчета';
 $string['response'] = 'Ответ';
 $string['skewness'] = 'Оценка асимметрии распределения (для {$a})';

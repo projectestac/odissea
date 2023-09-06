@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quest', language 'el', version '3.11'.
+ * Strings for component 'quest', language 'el', version '4.1'.
  *
  * @package     quest
  * @category    string
@@ -137,7 +137,7 @@ $string['firstname_help'] = '';
 $string['fullactivitylisting'] = 'Πλήρης λίστα δραστηριοτήτων';
 $string['generalcomment'] = 'Γενικό σχόλιο';
 $string['gettechnicallogs'] = 'Λάβετε τεχνικά αρχεία καταγραφής';
-$string['globalranking'] = 'Γενική κατάταξη';
+$string['globalranking'] = 'Γενική κατηγοριοποίηση';
 $string['good'] = 'Καλά';
 $string['grade'] = 'Βαθμός';
 $string['gradeassessment'] = 'Αξιολόγηση βαθμού';
@@ -289,7 +289,7 @@ $string['showanswersuser'] = 'Εμφάνιση ατομικών απαντήσε
 $string['showauthoringdetails'] = 'Εμφάνιση λεπτομερειών συγγραφής στους μαθητές στις ταξινομήσεις.';
 $string['showcalification'] = 'Εμφάνιση σκορ';
 $string['showclasifindividual'] = 'Εμφάνιση ατομικής ταξινόμησης';
-$string['showgrades'] = 'Εμφάνιση βαθμών';
+$string['showgrades'] = 'Εμφάνιση Βαθμών';
 $string['showresultssection'] = 'Πληροφορίες προς εμφάνιση στους μαθητές';
 $string['showsubmission'] = 'Εμφάνιση Υποβολής';
 $string['showsubmissions'] = 'Εμφάνιση Υποβολών';

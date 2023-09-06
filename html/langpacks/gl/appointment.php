@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'gl', version '3.11'.
+ * Strings for component 'appointment', language 'gl', version '4.1'.
  *
  * @package     appointment
  * @category    string
@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['appointment:takeattendance'] = 'Pasar lista';
 $string['appointment:viewattendees'] = 'Ver a lista de asistentes e quen está presente';
 $string['attendance'] = 'Asistencia';
-$string['error:noticeidincorrect'] = 'O identificador do aviso é incorrecto: {$a}';
 $string['managecustomfields'] = 'Xestionar campos personalizados';
+$string['modulename_link'] = 'Appointments';

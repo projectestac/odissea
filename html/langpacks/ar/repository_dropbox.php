@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ar', version '3.11'.
+ * Strings for component 'repository_dropbox', language 'ar', version '4.1'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -33,6 +33,8 @@ $string['crontask'] = 'المعالجة الخلفية لمستودع Dropbox';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'معاينة مجلد Dropbox';
 $string['instruction'] = 'يمكنك الحصول على مفتاح واجهة برمجة التطبيق وسره من <a href="https://www.dropbox.com/developers/apps">مطورو Dropbox</a>. عند تنصيب مفتاحك، لطفاً إختر "Full Dropbox" بمثابة "مستوى الوصول".';
+$string['issuer'] = 'خدمة OAuth 2';
+$string['issuer_help'] = 'إختر خدمة OAuth 2 المعرفة للتعامل مع واجهة برمجة تطبيق Dropbox. إذا لم تكن الخدمة منشأة بعد، فعليك إنشاؤها.';
 $string['logoutdesc'] = '(سجل خروجك بعد انتهائك من استعمال Dropbox)';
 $string['notitle'] = 'بلا عنوان';
 $string['oauth2redirecturi'] = 'رابط إعادة توجيه OAuth 2';

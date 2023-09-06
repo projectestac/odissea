@@ -26,7 +26,7 @@ global $CFG;
 
 require_once($CFG->dirroot . '/backup/util/includes/backup_includes.php');
 require_once($CFG->dirroot . '/backup/util/includes/restore_includes.php');
-require_once($CFG->dirroot . '/course/tests/fixtures/format_theunittest.php');
+require_once($CFG->dirroot . '/course/format/tests/fixtures/format_theunittest.php');
 
 /**
  * Course restore testcase.
@@ -540,6 +540,7 @@ class restore_test extends \advanced_testcase {
      * Tests course restore with editor in course format.
      *
      * @author Matthew Hilton
+     * @covers \core_courseformat
      */
     public function test_restore_editor_courseformat() {
         $this->resetAfterTest();

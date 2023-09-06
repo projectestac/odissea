@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'eu', version '3.11'.
+ * Strings for component 'qformat_gift', language 'eu', version '4.1'.
  *
  * @package     qformat_gift
  * @category    string
@@ -36,4 +36,5 @@ $string['importminerror'] = 'Errorea dago galderan. Ez dago nahikoa erantzunik g
 $string['nohandler'] = 'Ez dago kudeatzailerik {$a} galdera motarako';
 $string['pluginname'] = 'GIFT formatua';
 $string['pluginname_help'] = 'GIFT formatuak aukera anizkoitzeko, egia-gezurreko, erantzun laburreko, lotu motako, txertatutako, zenbakizko eta entsegu motako galderak testu-fitxategi bidez inportatzeko eta esportatzeko aukera ematen du.';
+$string['pluginname_link'] = 'qformat/gift';
 $string['privacy:metadata'] = 'GIFT formatua galdera-formatu pluginak ez du datu pertsonalik biltzen.';

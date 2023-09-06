@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'el', version '3.11'.
+ * Strings for component 'enrol_database', language 'el', version '4.1'.
  *
  * @package     enrol_database
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['database:config'] = 'Ρύθμιση στιγμιότυπων εγγραφής βάσης δεδομένων';
+$string['database:config'] = 'Ρύθμιση στιγμιοτύπων εγγραφής βάσης δεδομένων';
 $string['database:unenrol'] = 'Ακύρωση εγγραφής χρηστών σε αναστολή';
 $string['dbencoding'] = 'Κωδικοποίηση βάσης δεδομένων';
 $string['dbhost'] = 'Όνομα ή IP του Η/Υ της βάσης δεδομένων';

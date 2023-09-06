@@ -59,11 +59,7 @@ if (!\core\task\manager::is_runnable()) {
     throw new moodle_exception('cannotfindthepathtothecli', 'tool_task', $redirecturl->out());
 }
 
-$plugininfo = core_plugin_manager::instance()->get_plugin_info($task->get_component());
-$plugindisabled = $plugininfo && $plugininfo->is_enabled() === false &&
-    !$task->get_run_if_component_disabled();
-
-if (!get_config('tool_task', 'enablerunnow') || $plugindisabled) {
+if (!get_config('tool_task', 'enablerunnow') || !$task->can_run()) {
     throw new moodle_exception('nopermissions', 'error', new moodle_url('/admin/tool/task/scheduledtasks.php'),
         get_string('runnow', 'tool_task'), $task->get_name());
 }

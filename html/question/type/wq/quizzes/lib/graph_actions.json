@@ -208,6 +208,14 @@
     }
   },
   {
+    "id": "sketch",
+    "title": "tt_sketch",
+    "icon": {
+      "name": "hand",
+      "type": "svg"
+    }
+  },
+  {
     "id": "elements",
     "title": "tt_elements"
   },

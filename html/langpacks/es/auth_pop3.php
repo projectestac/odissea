@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_pop3', language 'es', version '3.11'.
+ * Strings for component 'auth_pop3', language 'es', version '4.1'.
  *
  * @package     auth_pop3
  * @category    string
@@ -37,3 +37,4 @@ $string['auth_pop3port_key'] = 'Puerto';
 $string['auth_pop3type'] = 'Tipo de servidor. Si su servidor utiliza certificado de seguridad, escoja pop3cert.';
 $string['auth_pop3type_key'] = 'Tipo';
 $string['pluginname'] = 'Servidor POP3';
+$string['privacy:metadata'] = 'El plugin de Autenticación por servidor POP3 no almacena ningun dato personal.';

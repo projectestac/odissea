@@ -50,7 +50,7 @@ if ($mode == STATS_MODE_RANKED) {
 }
 
 if (!$course = $DB->get_record("course", array("id"=>$courseid))) {
-    print_error("invalidcourseid");
+    throw new \moodle_exception("invalidcourseid");
 }
 
 if (!empty($userid)) {
@@ -76,9 +76,6 @@ $event = \report_stats\event\report_viewed::create(array('context' => $context, 
 $event->trigger();
 stats_check_uptodate($course->id);
 
-$url = new moodle_url('/report/stats/index.php', ['course' => $course->id]);
-report_helper::save_selected_report($courseid, $url);
-
 if ($course->id == SITEID) {
     admin_externalpage_setup('reportstats', '', null, '', array('pagelayout'=>'report'));
     echo $OUTPUT->header();
@@ -103,7 +100,7 @@ if (empty($CFG->enablestats)) {
     if (has_capability('moodle/site:config', context_system::instance())) {
         redirect("$CFG->wwwroot/$CFG->admin/settings.php?section=stats", get_string('mustenablestats', 'admin'), 3);
     } else {
-        print_error('statsdisable');
+        throw new \moodle_exception('statsdisable');
     }
 }
 

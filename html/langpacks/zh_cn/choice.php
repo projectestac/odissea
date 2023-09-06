@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'zh_cn', version '3.11'.
+ * Strings for component 'choice', language 'zh_cn', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = '修改和删除投票';
 $string['choice:downloadresponses'] = '下载投票';
 $string['choice:readresponses'] = '查看投票';
 $string['choice:view'] = '查看投票活动';
-$string['choiceactivityname'] = '投票：{$a}';
 $string['choiceclose'] = '结束投票';
-$string['choicecloseson'] = '投票结束于{$a}';
 $string['choicefull'] = '您选择的一个或多个选项已经被填写。你的回答尚未保存。请再做一次选择。';
 $string['choicename'] = '投票名称';
 $string['choiceopen'] = '开始投票';
@@ -76,10 +74,12 @@ $string['indicator:cognitivedepth'] = '投票活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在投票活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '投票活动认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在这个分析间隔内，参与人已经达到了投票活动所提供的认知参与度(水平=未查看、查看、提交、查看反馈)。';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '投票活动社会广度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在投票活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '投票活动社会广度';
 $string['indicator:socialbreadthdef_help'] = '在这个分析间隔内，参与人已经达到了投票活动所提供的社会参与度(级别=没有参与，单独参与，和他人一起参与)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = '限制';
 $string['limita'] = '限制：{$a}';
 $string['limitanswers'] = '限制可投的票数';
@@ -103,6 +103,7 @@ $string['modulename_help'] = '在投票活动模块中，教师可以设置一�
 * 一个快速投票以刺激学生关于某话题的思考
 * 一个快速测验以了解学生的理解程度
 * 确定一个决策，例如学生投票决定课程方向';
+$string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = '投票';
 $string['moveselectedusersto'] = '移动选定的用户到...';
 $string['multiplenotallowederror'] = '此投票不允许多选';

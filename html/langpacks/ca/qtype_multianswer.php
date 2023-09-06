@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ca', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'ca', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -40,6 +40,7 @@ $string['noquestions'] = 'La pregunta de buits "<strong>{$a}</strong>" no conté
 $string['pleaseananswerallparts'] = 'Responeu totes les parts de la pregunta.';
 $string['pluginname'] = 'Respostes incrustades (Cloze)';
 $string['pluginname_help'] = 'Una pregunta amb respostes incrustades (Cloze) consisteix en un text amb espais per a respostes d\'elecció múltiple o de resposta breu en el text.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnameadding'] = 'S\'està afegint una resposta incrustada (activitat de buits)';
 $string['pluginnameediting'] = 'S\'està editant una resposta incrustada (activitat de buits)';
 $string['pluginnamesummary'] = 'Les preguntes d\'aquest tipus són molt flexibles, però només es poden crear mitjançant l\'entrada de text amb codis especials que creen seleccions múltiples incrustades, respostes curtes i preguntes numèriques.';

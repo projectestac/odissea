@@ -45,8 +45,7 @@ class generator_test extends \advanced_testcase {
                                   // creates a Top category as well.
         $this->assertEquals($count, $DB->count_records('question_categories'));
 
-        $cat = $generator->create_question_category(array(
-                'name' => 'My category', 'sortorder' => 1));
+        $cat = $generator->create_question_category(['name' => 'My category', 'sortorder' => 1]);
         $this->assertSame('My category', $cat->name);
         $this->assertSame(1, $cat->sortorder);
     }
@@ -60,8 +59,8 @@ class generator_test extends \advanced_testcase {
         $this->assertNull($questions[0]->idnumber);
         $this->assertNull($questions[1]->idnumber);
         // Check created idnumbers.
-        $qcat1 = $generator->create_question_category(array(
-                'name' => 'My category', 'sortorder' => 1, 'idnumber' => 'myqcat'));
+        $qcat1 = $generator->create_question_category([
+                'name' => 'My category', 'sortorder' => 1, 'idnumber' => 'myqcat']);
         $this->assertSame('myqcat', $qcat1->idnumber);
         $quest1 = $generator->update_question($questions[0], null, ['idnumber' => 'myquest']);
         $this->assertSame('myquest', $quest1->idnumber);
@@ -72,7 +71,7 @@ class generator_test extends \advanced_testcase {
         question_move_questions_to_category([$quest1->id], $qcat1->id);
         $this->assertSame('myquest', \question_bank::load_question_data($quest1->id)->idnumber);
         // Can only change idnumber of quest2 once quest1 has been moved to another category.
-        $quest2 = $generator->update_question($questions[1], null, ['idnumber' => 'myquest']);
+        $quest2 = $generator->update_question($questions[1], null, ['idnumber' => 'myquest_4']);
         question_move_questions_to_category([$quest2->id], $qcat1->id);
         $this->assertSame('myquest_4', \question_bank::load_question_data($quest2->id)->idnumber);
         // Check can add an idnumber of 0.

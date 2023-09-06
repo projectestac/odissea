@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'it', version '3.11'.
+ * Strings for component 'atto_collapse', language 'it', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'Visualizza meno pulsanti';
 $string['showgroups'] = 'Visualizza i primi (n) gruppi a barra contratta';
 $string['showgroups_desc'] = 'Quando la barra degli strumenti è contratta (il default), saranno visualizzati solamente il numero di gruppi di pulsanti impostato.';
 $string['showmore'] = 'Visualizza più pulsanti';
+$string['youareonsecondrow'] = 'Ti trovi sua un\'altra riga della barra degli strumenti dell\'editor dove sono presenti ulteriori pulsanti.';

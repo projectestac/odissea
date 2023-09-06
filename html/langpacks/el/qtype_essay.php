@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'el', version '3.11'.
+ * Strings for component 'qtype_essay', language 'el', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -60,7 +60,7 @@ $string['nlines'] = '{$a} γραμμές';
 $string['nonexistentfiletypes'] = 'Οι ακόλουθοι τύποι αρχείων δεν αναγνωρίστηκαν: {$a}';
 $string['pluginname'] = 'Έκθεση';
 $string['pluginname_help'] = 'Σε απάντηση μιας ερώτησης, αυτός που απαντά μπορεί να ανεβάσει ένα ή περισσότερα αρχεία και/ή να εισάγει κείμενο εντός σύνδεσης. Μπορεί να παρέχεται ένα υπόδειγμα απόκρισης. Οι αποκρίσεις πρέπει να βαθμολογηθούν χειροκίνητα.';
-$string['pluginname_link'] = 'ερώτηση/τύπος/έκθεση';
+$string['pluginname_link'] = '';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης τύπου Έκθεσης';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης τύπου Έκθεσης';
 $string['pluginnamesummary'] = 'Επιτρέπει ως απόκριση το ανέβασμα ενός αρχείου και/ή κείμενο εντός σύνδεσης. Η απόκριση θα πρέπει έπειτα να βαθμολογηθεί χειροκίνητα.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'nl', version '3.11'.
+ * Strings for component 'atto_collapse', language 'nl', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'Toon minder knoppen';
 $string['showgroups'] = 'Toon de eerste (n) groepen wanneer ingeklapt.';
 $string['showgroups_desc'] = 'Wanneer de werkbalk ingeklapt is (standaardinstelling) dan zullen slechts zoveel groepen tegelijk getoond worden.';
 $string['showmore'] = 'Toon meer knoppen';
+$string['youareonsecondrow'] = 'Je bevindt je nu op een andere rij van de werkbalk van de editor, waar meer knoppen zijn.';

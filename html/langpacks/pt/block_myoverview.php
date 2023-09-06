@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'pt', version '3.11'.
+ * Strings for component 'block_myoverview', language 'pt', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Marcar disciplina com estrela';
-$string['all'] = 'Todas (exceto as removidas da visualização)';
-$string['allincludinghidden'] = 'Tudo';
+$string['all'] = 'Todas';
+$string['allincludinghidden'] = 'Todas (incluindo as removidas da visualização)';
 $string['aria:addtofavourites'] = 'Estrela para';
-$string['aria:allcourses'] = 'Mostrar todas as disciplinas exceto as disciplinas ocultas';
+$string['aria:allcourses'] = 'Mostrar todas as disciplinas exceto as removidas da visualização';
 $string['aria:allcoursesincludinghidden'] = 'Mostrar todas as disciplinas';
 $string['aria:card'] = 'Alternar para vista de cartões';
 $string['aria:controls'] = 'Controlos do bloco Minhas disciplinas';
@@ -57,7 +57,7 @@ $string['availablegroupings'] = 'Filtros disponíveis';
 $string['availablegroupings_desc'] = 'Filtros de disciplinas disponíveis para seleção pelos utilizadores. Se nenhum for selecionado, serão mostradas todas as disciplinas.';
 $string['card'] = 'Cartões';
 $string['cards'] = 'Cartões';
-$string['complete'] = 'concluída';
+$string['clearsearch'] = 'Limpar pesquisa';
 $string['completepercent'] = '{$a}% concluída';
 $string['courseprogress'] = 'Progresso da disciplina';
 $string['customfield'] = 'Campo personalizado';
@@ -76,7 +76,6 @@ $string['layouts'] = 'Estruturas disponíveis';
 $string['layouts_help'] = 'Estruturas do bloco \'Minhas disciplinas\' que estarão disponíveis para seleção pelos utilizadores. Se nenhuma for selecionada, será usada a estrutura de cartões.';
 $string['list'] = 'Lista';
 $string['myoverview:myaddinstance'] = 'Adicionar novo bloco \'Minhas disciplinas\' no Painel ao utilizador';
-$string['nocourses'] = 'Sem disciplinas';
 $string['nocustomvalue'] = 'Não {$a}';
 $string['past'] = 'Histórico';
 $string['pluginname'] = 'Minhas disciplinas';
@@ -86,7 +85,11 @@ $string['privacy:metadata:overviewsortpreference'] = 'A preferência de ordenaç
 $string['privacy:metadata:overviewviewpreference'] = 'A preferência de visualização do bloco Minhas disciplinas.';
 $string['privacy:request:preference:set'] = 'O valor da configuração \'{$a->name}\' era \'{$a->value}\'';
 $string['removefromfavourites'] = 'Desmarcar a estrela da disciplina';
+$string['searchcourses'] = 'Pesquisar disciplinas';
 $string['shortname'] = 'Nome curto';
 $string['show'] = 'Repor na visualização';
+$string['sortbylastaccessed'] = 'Ordenar por último acesso';
+$string['sortbyshortname'] = 'Ordenar por nome curto';
+$string['sortbytitle'] = 'Ordenar por nome da disciplina';
 $string['summary'] = 'Descrição';
 $string['title'] = 'Nome da disciplina';

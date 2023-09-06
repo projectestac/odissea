@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'ar', version '3.11'.
+ * Strings for component 'format_topcoll', language 'ar', version '4.1'.
  *
  * @package     format_topcoll
  * @category    string
@@ -44,8 +44,8 @@ $string['feedbackavailable'] = 'الإفادة متاحة';
 $string['hidefromothers'] = 'إخفاء المقطع';
 $string['layoutstructuredays'] = 'أيام';
 $string['left'] = 'اليسار';
-$string['maincoursepage'] = 'الصفحة الرئيسية للمقرر الدراسي';
-$string['page-course-view-topcoll'] = 'أي صفحة رئيسية لمقرر ذي تنسيق المواضيع المطوية';
+$string['maincoursepage'] = 'الصفحة الرئيسية للمساق الدراسي';
+$string['page-course-view-topcoll'] = 'أي صفحة رئيسية لمساق ذي تنسيق المواضيع المطوية';
 $string['page-course-view-topcoll-x'] = 'أي صفحة لمساق ذي تنسيق المواضيع المطوية';
 $string['pluginname'] = 'المواضيع المنهارة';
 $string['privacy:request:preference:toggle'] = 'مُعرَّف المساق "{$a->name}" قيمته "{$a->value}" والتي تمثل "{$a->decoded}" لأغراض أدوات التبديل.';

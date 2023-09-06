@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataform', language 'ca', version '3.11'.
+ * Strings for component 'dataform', language 'ca', version '4.1'.
  *
  * @package     dataform
  * @category    string
@@ -120,7 +120,7 @@ $string['field'] = 'camp';
 $string['fieldadd'] = 'Afegeix un camp';
 $string['fieldallowautolink'] = 'Permet autoenllaçat';
 $string['fieldattributes'] = 'Atributs del camp';
-$string['fieldcreate'] = 'Crea un nou camp';
+$string['fieldcreate'] = 'Crea un camp nou';
 $string['fielddescription'] = 'Descripció del camp';
 $string['fieldedit'] = 'S\'està editant \'{$a}';
 $string['fieldeditable'] = 'Editable';
@@ -152,7 +152,7 @@ $string['unlock'] = 'Desbloqueja';
 $string['userpref'] = 'Preferències d\'usuari';
 $string['view'] = 'vista';
 $string['viewadd'] = 'Afegeix una vista';
-$string['viewcreate'] = 'Crea una nova vista';
+$string['viewcreate'] = 'Crea una vista nova';
 $string['viewcurrent'] = 'Visualització actual';
 $string['viewdescription'] = 'Veure descripció';
 $string['viewdisabled'] = 'Inhabilitat';

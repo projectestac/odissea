@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_autoattend', language 'fr', version '3.11'.
+ * Strings for component 'block_autoattend', language 'fr', version '4.1'.
  *
  * @package     block_autoattend
  * @category    string
@@ -199,7 +199,7 @@ $string['output_idnumber_desc'] = 'Les numéros d\'identification des étudiants
 $string['page_column_size'] = 'Nombre de colonnes de la page';
 $string['page_column_size_desc'] = 'Un nom d\'utilisateur affiché pour autant de colonnes.';
 $string['page_row_size'] = 'Nombre de lignes de la page';
-$string['page_row_size_desc'] = 'Une entête est affichée pour autant de lignes.';
+$string['page_row_size_desc'] = 'Un en-tête est affiché pour autant de lignes.';
 $string['period'] = 'Période';
 $string['pleasefeedback'] = 'Commentaire S.V.P.';
 $string['pluginname'] = 'Présence automatique';

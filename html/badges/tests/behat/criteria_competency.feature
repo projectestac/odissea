@@ -1,4 +1,4 @@
-@core @core_badges @_file_upload
+@core @core_badges
 Feature: Award badges based on competency completion
   In order to award badges to users based on competency completion
   As an admin
@@ -25,10 +25,16 @@ Feature: Award badges based on competency completion
 
   @javascript
   Scenario: Award badge for completing a competency in a course
+    Given the following "core_badges > Badge" exists:
+      | name        | Course Badge                 |
+      | status      | 0                            |
+      | type        | 2                            |
+      | course      | C1                           |
+      | description | Course badge description     |
+      | image       | badges/tests/behat/badge.png |
     # Add a competency to the course
     When I am on "Course 1" course homepage
-    And I follow "Competencies"
-    And I press "Add competencies to course"
+    And I navigate to "Competencies > Add competencies to course" in current page administration
     And "Competency picker" "dialogue" should be visible
     And I select "comp1" of the competency tree
     And I click on "Add" "button" in the "Competency picker" "dialogue"
@@ -39,13 +45,11 @@ Feature: Award badges based on competency completion
     And I click on "Save changes" "button" in the "Configure course competencies" "dialogue"
     # Add a badge to the course
     And I am on "Course 1" course homepage
-    And I navigate to "Badges > Add a new badge" in current page administration
-    And I follow "Add a new badge"
-    And I set the following fields to these values:
-      | Name | Course Badge |
-      | Description | Course badge description |
-    And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
-    And I press "Create badge"
+    And I change window size to "large"
+    And I navigate to "Badges" in current page administration
+    And I press "Manage badges"
+    And I follow "Course Badge"
+    And I select "Criteria" from the "jump" singleselect
     # Set the competency as a criteria for the badge
     And I set the field "type" to "Competencies"
     When I open the autocomplete suggestions list
@@ -58,7 +62,7 @@ Feature: Award badges based on competency completion
     And I press "Continue"
     # Rate the competency in the course
     And I am on "Course 1" course homepage
-    And I follow "Competencies"
+    And I navigate to "Competencies" in current page administration
     And I click on "comp1" "link" in the "[data-region='coursecompetencies']" "css_element"
     And I press "Rate"
     And I set the following fields to these values:
@@ -73,10 +77,14 @@ Feature: Award badges based on competency completion
 
   @javascript
   Scenario: Award badge for completing a competency in the site
+    Given the following "core_badges > Badge" exists:
+      | name        | Site Badge                   |
+      | status      | 0                            |
+      | description | Site badge description       |
+      | image       | badges/tests/behat/badge.png |
     # Add a competency to the course
     When I am on "Course 1" course homepage
-    And I follow "Competencies"
-    And I press "Add competencies to course"
+    And I navigate to "Competencies > Add competencies to course" in current page administration
     And "Competency picker" "dialogue" should be visible
     And I select "comp1" of the competency tree
     And I click on "Add" "button" in the "Competency picker" "dialogue"
@@ -85,12 +93,9 @@ Feature: Award badges based on competency completion
     And I select "comp2" of the competency tree
     And I click on "Add" "button" in the "Competency picker" "dialogue"
     # Add a badge to the site
-    And I navigate to "Badges > Add a new badge" in site administration
-    And I set the following fields to these values:
-      | Name | Site Badge |
-      | Description | Site badge description |
-    And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
-    And I press "Create badge"
+    And I navigate to "Badges > Manage badges" in site administration
+    And I click on "Edit" "link" in the "Site Badge" "table_row"
+    And I select "Criteria" from the "jump" singleselect
     # Set the competency as a criteria for the badge
     And I set the field "type" to "Competencies"
     And I press "Add competency"
@@ -110,7 +115,7 @@ Feature: Award badges based on competency completion
     And I press "Continue"
     # Rate the competency in the course
     And I am on "Course 1" course homepage
-    And I follow "Competencies"
+    And I navigate to "Competencies" in current page administration
     And I click on "comp1" "link" in the "[data-region='coursecompetencies']" "css_element"
     And I press "Rate"
     And I set the following fields to these values:
@@ -125,10 +130,14 @@ Feature: Award badges based on competency completion
 
   @javascript
   Scenario: Award badge for completing all competencies in the site
+    Given the following "core_badges > Badge" exists:
+      | name        | Site Badge                   |
+      | status      | 0                            |
+      | description | Site badge description       |
+      | image       | badges/tests/behat/badge.png |
     # Add a competency to the course
     When I am on "Course 1" course homepage
-    And I follow "Competencies"
-    And I press "Add competencies to course"
+    And I navigate to "Competencies > Add competencies to course" in current page administration
     And "Competency picker" "dialogue" should be visible
     And I select "comp1" of the competency tree
     And I click on "Add" "button" in the "Competency picker" "dialogue"
@@ -137,12 +146,9 @@ Feature: Award badges based on competency completion
     And I select "comp2" of the competency tree
     And I click on "Add" "button" in the "Competency picker" "dialogue"
     # Add a badge to the site
-    And I navigate to "Badges > Add a new badge" in site administration
-    And I set the following fields to these values:
-      | Name | Site Badge |
-      | Description | Site badge description |
-    And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
-    And I press "Create badge"
+    And I navigate to "Badges > Manage badges" in site administration
+    And I click on "Edit" "link" in the "Site Badge" "table_row"
+    And I select "Criteria" from the "jump" singleselect
     # Set the competency as a criteria for the badge
     And I set the field "type" to "Competencies"
     And I press "Add competency"
@@ -164,7 +170,7 @@ Feature: Award badges based on competency completion
     And I press "Continue"
     # Rate the competency in the course
     And I am on "Course 1" course homepage
-    And I follow "Competencies"
+    And I navigate to "Competencies" in current page administration
     And I click on "comp1" "link" in the "[data-region='coursecompetencies']" "css_element"
     And I press "Rate"
     And I set the following fields to these values:
@@ -180,7 +186,7 @@ Feature: Award badges based on competency completion
     # Rate the other competency.
     And I log in as "admin"
     And I am on "Course 1" course homepage
-    And I follow "Competencies"
+    And I navigate to "Competencies" in current page administration
     And I click on "comp2" "link" in the "[data-region='coursecompetencies']" "css_element"
     And I press "Rate"
     And I set the following fields to these values:

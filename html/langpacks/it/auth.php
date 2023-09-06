@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'it', version '3.11'.
+ * Strings for component 'auth', language 'it', version '4.1'.
  *
  * @package     auth
  * @category    string
@@ -39,7 +39,7 @@ $string['auth_changingemailaddress'] = 'Hai richiesto il cambio di indirizzo ema
 $string['auth_common_settings'] = 'Impostazioni tipiche';
 $string['auth_data_mapping'] = 'Mappatura dei dati';
 $string['auth_fieldlock'] = 'Campi bloccati nel profilo utente';
-$string['auth_fieldlock_expl'] = '<p><b>Blocco del campo:</b> gli utenti e agli amministratori di Moodle non potranno modificare il campo. L\'impostazione è utile se si mappano i campi del profilo utente da una fonte di autenticazione esterna.</p>';
+$string['auth_fieldlock_expl'] = '<p>Blocco del campo: gli utenti non potranno modificare il campo. L\'impostazione è utile se si mappano i campi del profilo utente da una fonte di autenticazione esterna.</p>';
 $string['auth_fieldlockfield'] = 'Blocco del campo ({$a})';
 $string['auth_fieldlocks'] = 'Campi bloccati nel profilo utente';
 $string['auth_fieldlocks_help'] = '<p>È possibile bloccare uno o più campi del profilo utente. La funzione può risultare particolarmente utile in quei siti dove i dati dei profili utente sono gestiti a mano dagli amministratori, i quali possono modificare i record degli utenti oppure caricarli utilizzando la funzione \'Importa utenti\'.</p><p>Se si bloccano campi che Moodle considera obbligatori, accertarsi di fornire tali dati durante la creazione di account, altrimenti gli account incompleti non saranno utilizzabili.</p><p>Per evitare questo problema, è possibile utilizzare l\'opzione \'Libero se vuoto\'.</p>';
@@ -150,6 +150,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'Il CAPTCHA è un sistema per prevenire abusi da parte di sistemi automatici. per verificare che sei un persona reale, segui le istruzioni. Possono essere essere visualizzati una casella di spunta, immagini con parole da inserire, oppure una serie di immagini sa selezionare.
 
 Se non è chiaro cosa contengano le immagini, chiedi un altro CAPTCHA oppure chiedi un CAPTCHA audio.';
+$string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Domanda di sicurezza';
 $string['selfregistration'] = 'Auto creazione account';
 $string['selfregistration_help'] = 'Impostando un plugin per l\'auto creazione di account, come ad esempio il plugin per la creazione di account via email, qualsiasi visitatore del sito potrà crearsi un account. Tale funzione espone il sito al rischio che spammer possano creare account per inviare post indesiderati attraverso forum, blog od altre funzioni. Per evitare questo rischio è bene disabilitare l\' Auto creazione di account  oppure limitarla attraverso l\'impostazione <em>Domini di posta autorizzati</em> oppure ancora attivando il reCAPTCHA.';

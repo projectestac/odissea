@@ -29,15 +29,15 @@ Feature: View activity completion information in the Wiki activity
   Scenario: View automatic completion items as a teacher and confirm all tabs display conditions
     When I am on the "Music history" "wiki activity" page logged in as teacher1
     Then "Music history" should have the "View" completion condition
-    And I click on "Edit" "link" in the "region-main" "region"
+    And I select "Edit" from the "jump" singleselect
     And "Music history" should have the "View" completion condition
-    And I follow "Comments"
+    And I select "Comments" from the "jump" singleselect
     And "Music history" should have the "View" completion condition
-    And I follow "Map"
+    And I select "Map" from the "jump" singleselect
     And "Music history" should have the "View" completion condition
-    And I follow "Files"
+    And I select "Files" from the "jump" singleselect
     And "Music history" should have the "View" completion condition
-    And I follow "Administration"
+    And I select "Administration" from the "jump" singleselect
     And "Music history" should have the "View" completion condition
 
   Scenario: View automatic completion items as a student
@@ -50,6 +50,7 @@ Feature: View activity completion information in the Wiki activity
     And I am on the "Music history" "wiki activity editing" page
     And I expand all fieldsets
     And I press "Unlock completion settings"
+    And I expand all fieldsets
     And I set the field "Completion tracking" to "Students can manually mark the activity as completed"
     And I press "Save and display"
     # Teacher view.

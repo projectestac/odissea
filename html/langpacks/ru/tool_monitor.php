@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ru', version '3.11'.
+ * Strings for component 'tool_monitor', language 'ru', version '4.1'.
  *
  * @package     tool_monitor
  * @category    string
@@ -71,6 +71,7 @@ $string['messagetemplate_help'] = 'Это шаблон сообщения, ко�
 * Название этого правила {rulename}<br />
 * Описание правила {description}<br />
 * Название события, связанного с правилом {eventname}';
+$string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Экземпляр модуля';
 $string['monitor:managerules'] = 'Управлять правилами отслеживания событий';
 $string['monitor:managetool'] = 'Включать/отключать отслеживание событий';

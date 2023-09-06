@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ru', version '3.11'.
+ * Strings for component 'hotpot', language 'ru', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -327,6 +327,7 @@ HotPot может обрабатывать упражнения, созданн�
 * Xerte
 * iSpring
 * любой HTML-редактор';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'HotPots';
 $string['nameadd'] = 'Название';
 $string['nameadd_help'] = 'Название может быть определенным текстом, введенным учителем или может быть автоматически сгенерировано.

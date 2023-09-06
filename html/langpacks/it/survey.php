@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'it', version '3.11'.
+ * Strings for component 'survey', language 'it', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -214,10 +214,12 @@ $string['indicator:cognitivedepth'] = 'Sondaggio cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Sondaggio.';
 $string['indicator:cognitivedepthdef'] = 'Sondaggio cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Sondaggio (Livelli: Nessuna visualizzazione, Visualizzazione, Invio)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Sondaggio sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Sondaggio.';
 $string['indicator:socialbreadthdef'] = 'Sondaggio sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Sondaggio (Livelli: Nessuna partecipazione, Partecipazione da solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = 'Testo di introduzione';
 $string['invalidsurveyid'] = 'ID Sondaggio errata';
 $string['invalidtmptid'] = 'ID template errata';
@@ -226,6 +228,7 @@ $string['modulename'] = 'Sondaggio';
 $string['modulename_help'] = 'Il modulo di attività sondaggio fornisce diversi tipi di strumenti volti ad analizzare e stimolare l\'apprendimento in ambienti online. Il docente può utilizzare l\'attività sondaggio per ricavare informazioni utili a conoscere la propria classe e gli stili di apprendimento  degli studenti.
 
 Da notare che l\'attività sondaggio offre domande già compilate, se si desidera creare un sondaggio personalizzato è possibile usare il modulo di attività feedback.';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = 'Sondaggi';
 $string['name'] = 'Nome';
 $string['newsurveyresponses'] = 'Nuove risposte al sondaggio';
@@ -279,6 +282,7 @@ $string['surveytype_help'] = 'Sono disponibili 3 tipi di sondaggio:
 * ATTLS - Attitudes Towards Thinking and Learning Survey (sondaggio sugli atteggiamenti nei confronti del pensare e dell\'imparare) - È uno strumento per misurare se una persona è un \'conoscitore collegato\' (persone che trovano l\'apprendimento più divertente e sono spesso più collaborative, socievoli e desiderose di costruire sulle idee degli altri) o un \'conoscitore isolato\' (persone che tendono a prendere una posizione più critica e argomentativa nell\'apprendimento)
 * Incidenti critici
 * COLLES - Constructivist On-Line Learning Environment Survey (sondaggio per un ambiente di apprendimento on-line costruttivista) - Il sondaggio COLLES è stato predisposto per valutare fino a che punto si è stati capaci di sfruttare le possibilità interattive del World Wide Web per stimolare gli studenti a utilizzare le modalità di apprendimento dinamico e collaborativo.';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Grazie per aver risposto a questo sondaggio, {$a}';
 $string['time'] = 'Tempo';
 $string['viewsurveyresponses'] = 'Visualizza {$a} risposte al sondaggio';

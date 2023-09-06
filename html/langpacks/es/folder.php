@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'es', version '3.11'.
+ * Strings for component 'folder', language 'es', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -45,10 +45,12 @@ $string['indicator:cognitivedepth'] = 'Carpeta cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Carpeta.';
 $string['indicator:cognitivedepthdef'] = 'Directorio cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje de participación cognitiva ofrecida por los recursos de Carpeta durante este intervalo de análisis (Niveles = Sin vista, Ver)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Carpeta social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Carpeta.';
 $string['indicator:socialbreadthdef'] = 'Directorio social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por los recursos de Carpeta durante este intervalo de análisis (Niveles = Sin participación, Participante solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['maxsizetodownload'] = 'Tamaño máximo de descarga del directorio (MB)';
 $string['maxsizetodownload_help'] = 'El tamaño máximo del directorio para su descarga. Si está establecido a cero, el tamaño del directorio es ilimitado.';
 $string['modulename'] = 'Carpeta';
@@ -58,6 +60,7 @@ Una carpeta se puede usar para:
 
 * Agrupar una serie de documentos sobre un tema, por ejemplo, un conjunto de exámenes de otros años en formato pdf, o una colección de archivos para crear un proyecto concreto por parte de los estudiantes.
 * Crear un espacio de subida de archivos compartido entre los profesores del curso (se debería ocultar la carpeta a los alumnos para que lo vean solo los profesores)';
+$string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Carpetas';
 $string['newfoldercontent'] = 'Nuevo directorio de contenido';
 $string['noautocompletioninline'] = 'La finalización automática de la visualización de la actividad no se puede seleccionar junto con la opción "Mostrar en la página del curso"';

@@ -4,20 +4,14 @@
     "description": "Moodle - the world's open source learning platform",
     "type": "project",
     "homepage": "https://moodle.org",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/moodlehq/MinkExtension.git"
-        }
-    ],
     "require-dev": {
         "phpunit/phpunit": "9.5.*",
         "mikey179/vfsstream": "1.6.*",
         "behat/mink": "^1.10.0",
-        "friends-of-behat/mink-extension": "dev-master",
-        "behat/mink-goutte-driver": "^1.3",
-        "symfony/process": "^4.0 || ^5.0",
-        "behat/behat": "3.11.*",
+        "friends-of-behat/mink-extension": "^2.7.2",
+        "behat/mink-goutte-driver": "^2.0",
+        "symfony/process": "^4.4 || ^5.0",
+        "behat/behat": "3.12.*",
         "oleg-andreyev/mink-phpwebdriver": "^1.2.1"
     },
     "autoload-dev": {
@@ -28,7 +22,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.3.0 <8.1",
+        "php": ">=7.4.0",
         "ext-iconv": "*",
         "ext-mbstring": "*",
         "ext-curl": "*",
@@ -54,8 +48,8 @@
         "ext-sqlsrv": "Needed when Moodle uses MS SQL Server database.",
         "ext-oci8": "Needed when Moodle uses Oracle database.",
         "ext-tokenizer": "Enabling Tokenizer PHP extension is recommended, it improves Moodle Networking functionality.",
-        "ext-xmlrpc": "Enabling XMLRPC PHP extension is useful for web services and Moodle networking.",
         "ext-soap": "Enabling SOAP PHP extension is useful for web services and some plugins.",
-        "ext-sodium": "Enabling Sodium PHP extension is recommended, it is used by Moodle encryption API."
+        "ext-sodium": "Enabling Sodium PHP extension is recommended, it is used by Moodle encryption API.",
+        "ext-exif": "Enabling Exif PHP extension is recommended, it is used by Moodle to parse image meta data."
     }
 }

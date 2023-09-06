@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'eu', version '3.11'.
+ * Strings for component 'resource', language 'eu', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -52,6 +52,7 @@ $string['displayselect_help'] = 'Ezarpen honek, fitxategi-mota kontuan hartuta e
 * Pop-up-ean - Fitxategia web-nabigatzailearen leiho berri batean erakutsiko da, menu eta helbide-barrarik gabe.
 * Markoan - Fitxategia marko baten barruan erakutsiko da, nabigazio-barraren eta fitxategiaren deskribapenaren azpian.
 * Leiho berria - Fitxategia web-nabigatzailearen leiho berri batean erakutsiko da, menuekin eta nabigazio-barrarekin.';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = 'Aukeratu mota (zoritxarrez, mota guztiek ez dute fitxategi guztietan funtzionatzen).';
 $string['dnduploadresource'] = 'Sortu fitxategia izeneko baliabidea';
 $string['encryptedcode'] = 'Kode zifratua';
@@ -65,10 +66,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa fitxategietan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Fitxategia motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa fitxategietan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Fitxategia baliabideak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala fitxategietan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Fitxategia motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala fitxategietan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Fitxategia baliabideak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Ikastaro-fitxategi zaharraren migrazioa';
 $string['legacyfilesactive'] = 'Aktiboa';
 $string['legacyfilesdone'] = 'Amaituta';
@@ -83,6 +86,7 @@ Fitxategia erabil daiteke
 * Klasean erabilitako aurkezpenak partekatzeko
 * Web-gune txiki bat ikastaroko baliabide moduan gehitzeko
 * Software zehatz batzuen zirriborro-fitxategiak eskuragarri jartzeko, ikasleek edita eta kalifikatzeko bidal dezaten';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Fitxategiak';
 $string['notmigrated'] = 'Heredatutako baliabide mota hau ({$a}) ez da oraindik migratu, sentitzen dugu.';
 $string['optionsheader'] = 'Erakusteko aukerak';

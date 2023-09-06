@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'nl', version '3.11'.
+ * Strings for component 'accredible', language 'nl', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -49,6 +49,7 @@ $string['indexheader'] = 'Alle certificaten/badges voor {$a}';
 $string['issued'] = 'Uitgegeven';
 $string['manualheader'] = 'Handmatig certificaten/badges uitgeven';
 $string['modulename'] = 'Accredible certificaten en badges';
+$string['modulename_link'] = 'mod/accredible/view';
 $string['modulenameplural'] = 'Accredible certificaten/badges';
 $string['nocertificates'] = 'Er zijn geen certificaten/badges';
 $string['overview'] = 'Overzicht';
@@ -57,8 +58,10 @@ $string['pluginadministration'] = 'Beheer Accredible certificaten/badges';
 $string['pluginname'] = 'Accredible certificaten en badges';
 $string['recipient'] = 'Ontvanger';
 $string['templatename'] = 'Sitegroepnaam (van dashboard)';
+$string['unissuedheader'] = 'Onuitgegeven certificaten/badges';
 $string['usestemplatesdescription'] = 'Zorg ervoor dat je een sitegroep in het dashboard hebt met dezelfde naam als je achievement id.';
 $string['viewheader'] = 'Certificaten en badges voor {$a}';
 $string['viewimgcomplete'] = 'Klik hier om je certificaat of badge te bekijken';
+$string['viewimgincomplete'] = 'Cursus nog bezig';
 $string['viewsubheader'] = 'Groep ID: {$a}';
 $string['viewsubheaderold'] = 'Achievement ID: {$a}';

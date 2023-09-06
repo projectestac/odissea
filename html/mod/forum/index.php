@@ -35,10 +35,11 @@ if ($subscribe !== null) {
     $url->param('subscribe', $subscribe);
 }
 $PAGE->set_url($url);
+$PAGE->set_secondary_active_tab('coursehome');
 
 if ($id) {
     if (!$course = $DB->get_record('course', array('id' => $id))) {
-        print_error('invalidcourseid');
+        throw new \moodle_exception('invalidcourseid');
     }
 } else {
     $course = get_site();
@@ -454,8 +455,11 @@ if ($course->id != SITEID) {    // Only real courses have learning forums
 $PAGE->navbar->add($strforums);
 $PAGE->set_title("$course->shortname: $strforums");
 $PAGE->set_heading($course->fullname);
-$PAGE->set_button($searchform);
 echo $OUTPUT->header();
+
+echo html_writer::start_div('input-group mr-5');
+echo $searchform;
+echo html_writer::end_div();
 
 if (!isguestuser() && isloggedin() && $showsubscriptioncolumns) {
     // Show the subscribe all options only to non-guest, enrolled users.

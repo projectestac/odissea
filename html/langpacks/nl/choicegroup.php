@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'nl', version '3.11'.
+ * Strings for component 'choicegroup', language 'nl', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -108,6 +108,7 @@ $string['members/'] = 'Leden';
 $string['members/max'] = 'Leden / Capaciteit';
 $string['modulename'] = 'Groepkeuze';
 $string['modulename_help'] = 'Met de module Groepkeuze kunnen leerlingen zichzelf inschrijven voor een groep binnen een cursus. De leraar kan instellen welke groepen er gekozen kunnen worden en wat het maximum aantal leerlingen in iedere groep is.';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Groepkeuzes';
 $string['moveselectedusersto'] = 'Verplaats de geselecteerde gebruikers naar...';
 $string['multipleenrollmentspossible'] = 'Sta toe om voor meerdere groepen te kiezen.';

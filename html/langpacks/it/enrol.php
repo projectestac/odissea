@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'it', version '3.11'.
+ * Strings for component 'enrol', language 'it', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -57,6 +57,7 @@ $string['enrollednewusers'] = 'Sono stati iscritti correttamente {$a} nuovi uten
 $string['enrolledusers'] = 'Iscrizioni';
 $string['enrolledusersmatching'] = 'Corrispondenza con utenti iscritti';
 $string['enrolme'] = 'Iscrivimi in questo corso';
+$string['enrolment'] = 'Iscrizione';
 $string['enrolmentinstances'] = 'Metodi di iscrizione';
 $string['enrolmentmethod'] = 'Metodo di iscrizione';
 $string['enrolmentnew'] = 'Nuova iscrizione a {$a}';
@@ -111,6 +112,7 @@ $string['invalidrequest'] = 'Richiesta non valida';
 $string['invalidrole'] = 'Ruolo non valido';
 $string['manageenrols'] = 'Gestione iscrizione';
 $string['manageinstance'] = 'Gestisci';
+$string['method'] = 'Metodo';
 $string['migratetomanual'] = 'Migra a iscrizione manuale';
 $string['nochange'] = 'Nessuna modifica';
 $string['noexistingparticipants'] = 'Non ci sono partecipanti';
@@ -151,6 +153,10 @@ $string['startdatetoday'] = 'Oggi';
 $string['synced'] = 'Sincronizzato';
 $string['testsettings'] = 'Test impostazioni';
 $string['testsettingsheading'] = 'Test impostazioni di iscrizione - {$a}';
+$string['timeended'] = 'Orario di fine';
+$string['timeenrolled'] = 'Orario di iscrizione';
+$string['timereaggregated'] = 'Orario di ricalcolo';
+$string['timestarted'] = 'Orario di inizio';
 $string['totalenrolledusers'] = '{$a} utenti iscritti';
 $string['totalotherusers'] = '{$a} altri utenti';
 $string['totalunenrolledusers'] = '{$a} utenti disiscritti';

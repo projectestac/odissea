@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'eu', version '3.11'.
+ * Strings for component 'studentquiz', language 'eu', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -217,6 +217,7 @@ $string['missingparam'] = 'Beharrezkoa den parametro bat falta da edo baliogabea
 $string['moderator'] = 'Moderatzailea';
 $string['modulename'] = 'Ikasle-Galdetegia';
 $string['modulename_help'] = 'Ikasle-Galdetegia jarduerak ikasleei beste partaideentzako galderak gehitzeko aukera ematen die. Ikasle-Galdetegiaren aurrebistan ikasleek galderak iragazi ditzakete. Iragazitako galderak praktikatzeko ere erabili ditzakete. Irakasleak egilearen zutabea anonimo bihurtzeko aukera du.<br><br>Ikasle-Galdetegiak ikasleei puntuak ematen dizkie praktikatzeko galderak sortzera bultzatzeko. Puntuak ranking-aren taulan erakusten dira.';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = 'Ikasle-Galdetegia';
 $string['more'] = 'Gehiago';
 $string['myattempts_column_name'] = 'Nire Saiakerak';
@@ -270,7 +271,6 @@ $string['privacy:metadata:studentquiz_comment:deleteuserid'] = 'Iruzkina ezabatu
 $string['privacy:metadata:studentquiz_comment:edited'] = 'Iruzkina editatu zeneko unea.';
 $string['privacy:metadata:studentquiz_comment:edituserid'] = 'Iruzkina editatu zueneko erabiltzailearen IDa.';
 $string['privacy:metadata:studentquiz_comment:parentid'] = 'Goragoko iruzkinaren IDa. 0: maila goreneko iruzkina';
-$string['privacy:metadata:studentquiz_comment:questionid'] = 'Galderaren IDa.';
 $string['privacy:metadata:studentquiz_comment:status'] = 'Iruzkinaren egoera';
 $string['privacy:metadata:studentquiz_comment:timemodified'] = 'Iruzkinaren aldaketa-unea';
 $string['privacy:metadata:studentquiz_comment:type'] = 'Iruzkin mota';
@@ -294,20 +294,16 @@ $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'Erantzun zuz
 $string['privacy:metadata:studentquiz_progress:lastanswercorrect'] = '0: azken erantzuna okerra edo baliogabea izan zen, 1: azken erantzuna zuzena izan zen.';
 $string['privacy:metadata:studentquiz_progress:lastreadprivatecomment'] = 'Erabiltzaileak azkenengoz iruzkin pribatuak irakurri zituen unea';
 $string['privacy:metadata:studentquiz_progress:lastreadpubliccomment'] = 'Erabiltzaileak azkenengoz iruzkin publikoak irakurri zituen unea';
-$string['privacy:metadata:studentquiz_progress:questionid'] = 'Galderaren IDa.';
 $string['privacy:metadata:studentquiz_progress:studentquizid'] = 'IkasleGaldetegiaren IDa.';
 $string['privacy:metadata:studentquiz_progress:userid'] = 'Erabiltzailearen IDa.';
 $string['privacy:metadata:studentquiz_question'] = 'Galderekin lotutako ezaugarrien biltegia';
 $string['privacy:metadata:studentquiz_question:groupid'] = 'Galderaren taldeari dagokion IDa';
 $string['privacy:metadata:studentquiz_question:hidden'] = 'Galdera ezkutuan dagoen ala ez adierazten duen ezaugarria';
 $string['privacy:metadata:studentquiz_question:pinned'] = 'Galdera ainguratuta dagoen ala ez adierazten duen ezaugarria';
-$string['privacy:metadata:studentquiz_question:questionid'] = 'Galderaren IDa';
 $string['privacy:metadata:studentquiz_question:state'] = 'Galdera onartuta, baztertuta, berria ala aldatuta ezaugarria duen.';
 $string['privacy:metadata:studentquiz_rate'] = 'Galderen puntuazioak gordetzen ditu.';
-$string['privacy:metadata:studentquiz_rate:questionid'] = 'Galderaren IDa.';
 $string['privacy:metadata:studentquiz_rate:rate'] = 'Galderaren puntuazioa.';
 $string['privacy:metadata:studentquiz_rate:userid'] = 'Erabiltzailearen IDa.';
-$string['privacy:metadata:studentquiz_state_history:questionid'] = 'Galderaren IDa.';
 $string['privacy:metadata:studentquiz_state_history:state'] = 'Galdera onartuta, baztertuta, berria ala aldatuta ezaugarria duen.';
 $string['privacy:metadata:studentquiz_state_history:timecreated'] = 'Ekintza sortu zeneko unea';
 $string['privacy:metadata:studentquiz_state_history:userid'] = 'Erabiltzailearen IDa.';

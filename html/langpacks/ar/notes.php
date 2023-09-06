@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ar', version '3.11'.
+ * Strings for component 'notes', language 'ar', version '4.1'.
  *
  * @package     notes
  * @category    string
@@ -31,11 +31,12 @@ $string['addbulknotedonesingle'] = 'الملاحظة أضيفت إلى شخص و
 $string['addbulknotesingle'] = 'إضافة ملاحظة جديدة إلى شخص واحد';
 $string['addnewnote'] = 'إضافة ملاحظة جديدة';
 $string['addnewnoteselect'] = 'حدد المستخدمين لكتابة ملاحظات عنهم';
+$string['author'] = 'المؤلف';
 $string['bynameondate'] = 'بواسطة {$a->name} في {$a->date}';
 $string['configenablenotes'] = 'تمكين تخزين الملاحظات عن المستخدمين.';
 $string['content'] = 'المحتوى';
-$string['course'] = 'المقرر الدراسي';
-$string['coursenotes'] = 'ملاحظات المقرر الدراسي';
+$string['course'] = 'المساق';
+$string['coursenotes'] = 'ملاحظات المساق';
 $string['created'] = 'تم إنشاؤه';
 $string['deleteconfirm'] = 'حذف هذه الملاحظة؟';
 $string['deletenotes'] = 'حذف جميع الملاحظات';
@@ -62,7 +63,7 @@ $string['personal'] = 'شخصي';
 $string['personalnotes'] = 'الملاحظات الشخصية';
 $string['privacy:metadata:core_notes'] = 'مكون الملاحظات يحفظ ملاحظات المستخدم ضمن نواة النظام الفرعية';
 $string['privacy:metadata:core_notes:content'] = 'محتوى الملاحظة';
-$string['privacy:metadata:core_notes:courseid'] = 'مُعرَّف المقرر الدراسي المتعلق بالملاحظة';
+$string['privacy:metadata:core_notes:courseid'] = 'مُعرَّف المساق المتعلق بالملاحظة';
 $string['privacy:metadata:core_notes:created'] = 'وقت وتاريخ إنشاء الملاحظة';
 $string['privacy:metadata:core_notes:lastmodified'] = 'وقت وتاريخ آخر تحديث للملاحظة';
 $string['privacy:metadata:core_notes:publishstate'] = 'حالة نشر الملاحظة';
@@ -71,8 +72,9 @@ $string['publishstate'] = 'السياق';
 $string['publishstate_help'] = 'سياق الملاحظة يحدد من يمكنه رؤيتها في الاستعمالات اليومية. على المستخدمين أن يدركوا بأن كل الملاحظات، بضمنها الشخصية، قد تكون عرضة للكشف عنها وفقاً لقوانين سلطاتهم القضائية.
 
 * شخصي - ستكون الملاحظة مرئية بالنسبة لك فقط
-* المقرر الدراسي - ستكون الملاحظة مرئية للمعلمين في هذا المقرر
+* المقرر - ستكون الملاحظة مرئية للمعلمين في هذا المقرر
 * الموقع - ستكون الملاحظة مرئية للمعلمين في جميع المقررات الدراسية';
+$string['recipient'] = 'المتلقي';
 $string['site'] = 'الموقع';
 $string['sitenotes'] = 'ملاحظات الموقع';
 $string['unknown'] = 'غير معروف';

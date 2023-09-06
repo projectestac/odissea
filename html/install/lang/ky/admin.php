@@ -41,3 +41,4 @@ $string['cliunknowoption'] = 'Таанылбаган параметрлер {$a}
 $string['cliyesnoprompt'] = 'У киргизиңиз (Ооба дегенди билдирет) же n киргизиңиз (Жок дегенди билдирет)';
 $string['environmentrequireinstall'] = 'Орнотуу жана күйгүзүү зарыл';
 $string['environmentrequireversion'] = '{$a->needed} версиясы талап кылынат, сиз колдонгон версия {$a->current}';
+$string['upgradekeyset'] = 'Жаӊыртуу ачкычы (аны көрсөткүӊүз келбесе бош калтырыӊыз)';

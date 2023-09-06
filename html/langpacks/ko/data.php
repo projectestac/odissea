@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ko', version '3.11'.
+ * Strings for component 'data', language 'ko', version '4.1'.
  *
  * @package     data
  * @category    string
@@ -221,6 +221,8 @@ $string['importsuccess'] = '초기설정이 성공적으로 적용됨';
 $string['includeapproval'] = '승인 상태 포함';
 $string['includetime'] = '추가/변경된 시간 포함';
 $string['includeuserdetails'] = '사용자 세부정보 포함';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insufficiententries'] = '이 데이터베이스를 보기 위해서는 입력항목이 더 필요함';
 $string['intro'] = '설명';
 $string['invalidaccess'] = '이 페이지는 제대로 접속되지 않았습니다.';
@@ -256,6 +258,7 @@ $string['missingdata'] = '데이터 ID 혹은 대상이 필드 클래스로 제�
 $string['missingfield'] = '작성 오류: 필드 클래스를 정의할 때 필드/데이터를 지정해야만 함';
 $string['modulename'] = '데이터베이스';
 $string['modulename_help'] = '데이터베이스 활동 모듈은, 참여자들이 자료를 생성하고 관리, 검색할 수 있게 해 준다. 입력되는 자료들은 이미지를 비롯하여 파일, 인터넷 주소, 숫자 또는 문서 등, 그 형식이나 구조에 거의 제한 받지 않는다. ';
+$string['modulename_link'] = 'mod/data/view';
 $string['modulenameplural'] = '데이터베이스';
 $string['more'] = '더 이상';
 $string['moreurl'] = 'URL 더';
@@ -362,6 +365,7 @@ $string['unsupportedexport'] = '({$a->fieldtype}) 내보낼 수 없음';
 $string['updatefield'] = '기존 필드 업데이트';
 $string['uploadfile'] = '파일 올리기';
 $string['uploadrecords'] = '파일에서 항목 올리기';
+$string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = '검색에 포함합니다.';
 $string['usestandard'] = '초기설정 사용';

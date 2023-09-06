@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'ar', version '3.11'.
+ * Strings for component 'block_completion_progress', language 'ar', version '4.1'.
  *
  * @package     block_completion_progress
  * @category    string
@@ -26,21 +26,21 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['completion_not_enabled'] = 'تعقب الإكمال غير مُمَكَّن في هذا الموقع.';
-$string['completion_not_enabled_course'] = 'تعقب الإكمال غير مُمَكَّن في هذا المقرر الدراسي.';
+$string['completion_not_enabled_course'] = 'تعقب الإكمال غير مُمَكَّن في هذا المساق.';
 $string['completion_progress:addinstance'] = 'إضافة كتلة جديدة من تقدم الإكمال';
 $string['completion_progress:myaddinstance'] = 'إضافة كتلة جديدة من تقدم الإكمال إلى صفحتي الرئيسية';
 $string['completion_progress:showbar'] = 'إظهار الشريط في كتلة تقدم الإكمال';
 $string['config_activitycompletion'] = 'كل النشاطات ذات إعداد الإكمال';
 $string['config_title'] = 'العنوان البديل';
-$string['coursenametoshow'] = 'اسم المقرر الدراسي لعرضه في لوحة التحكم';
+$string['coursenametoshow'] = 'اسم المساق لعرضه في دفة القيادة';
 $string['fullname'] = 'الاسم الكامل للقرر';
 $string['how_group_works_help'] = '<p>تحديد مجموعة أو تجميع سيجعل عرض هذه الكتلة مقتصرًا على تلك المجموعة أو التجميع فقط.</p>';
-$string['no_blocks'] = 'لم يتم إعداد أي كتل تقدم إكمال لمقرراتك.';
+$string['no_blocks'] = 'لم يتم إعداد أي كتل تقدم إكمال لمقرراتك الدراسية.';
 $string['not_all_expected_set'] = 'لم يتم ضبط "{$a}" في كل النشاطات ذات الإكمال.';
 $string['pluginname'] = 'تقدم الإكمال';
 $string['privacy:metadata'] = 'كتلة تقدم الإكمال تعرض فقط بيانات الإكمال الموجودة.';
-$string['shortname'] = 'الاسم المختصر للمقرر';
-$string['showlastincourse'] = 'إظهار آخر وقت للطالب في المقرر الدراسي في النظرة العامة';
+$string['shortname'] = 'الاسم المختصر للمساق';
+$string['showlastincourse'] = 'إظهار آخر وقت للطالب في المساق في النظرة العامة';
 $string['why_set_the_title'] = 'لماذا قد ترغب بتعيين عنوان عيِّنة الكتلة؟';
 $string['why_set_the_title_help'] = '<p>توجد عيِّنات متعددة من كتلة تقدم الإكمال. يمكنك استعمال كتل تقدم إكمال مختلفة لمراقبة مجموعات مختلفة من النشاطات والموارد. على سبيل المثال، يمكنك تعقب مستوى التقدم في الواجبات في كتلة واحدة والاختبارات في كتلة أخرى. لهذا السبب، يمكنك تجاوز العنوان الافتراضي وتعيين عنوان كتلة ملائم أكثر لكل عيِّنة.</p>';
 $string['why_use_icons_help'] = '<p>قد ترغب بإضافة أيقونات التأشير والضرب في شريط التقدم لجعل هذه الكتلة بصريًا أكثر قبولاً بالنسبة للطلاب المصابين بعمى الألوان.</p>

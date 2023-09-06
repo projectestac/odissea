@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'en', version '3.11'.
+ * Strings for component 'user', language 'en', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -89,8 +89,8 @@ $string['privacy:metadata:lastaccess'] = 'The time that the user last accessed t
 $string['privacy:metadata:lastaccesstablesummary'] = 'Information about the last time a user accessed a course.';
 $string['privacy:metadata:lastip'] = 'The last IP address for the user.';
 $string['privacy:metadata:lastlogin'] = 'The last login of this user.';
-$string['privacy:metadata:lastname'] = 'The surname of the user.';
-$string['privacy:metadata:lastnamephonetic'] = 'The phonetic details about the user\'s surname.';
+$string['privacy:metadata:lastname'] = 'The last name of the user.';
+$string['privacy:metadata:lastnamephonetic'] = 'The phonetic details of the user\'s last name.';
 $string['privacy:metadata:maildigest'] = 'A setting for the mail digest for this user.';
 $string['privacy:metadata:maildisplay'] = 'A preference for the user about displaying their email address to other users.';
 $string['privacy:metadata:middlename'] = 'The middle name of the user';
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'secret set and emailed to user';
 $string['privacy:metadata:trackforums'] = 'A preference for forums and tracking them.';
 $string['privacy:metadata:trustbitmask'] = 'The trust bit mask';
 $string['privacy:metadata:url'] = 'A URL related to this user.';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Timestamp logged for when the welcome message was shown to the user for the first time.';
 $string['privacy:metadata:user_preferences'] = 'Preferences associated with the given user';
 $string['privacy:metadata:user_preferences:name'] = 'Preference name';
 $string['privacy:metadata:user_preferences:userid'] = 'The user ID';
@@ -149,6 +150,11 @@ $string['privacy:privatefilespath'] = 'Private files';
 $string['privacy:profileimagespath'] = 'Profile images';
 $string['privacy:sessionpath'] = 'Session data';
 $string['selectfiltertype'] = 'Select';
+$string['supportmessagealternative'] = 'Instead you can email {$a}.';
+$string['supportmessagenotsent'] = 'Unfortunately your message could not be sent.';
+$string['supportmessagesent'] = 'Your message has been sent.';
+$string['supportmessagesentforloggedoutuser'] = 'Be careful with this message. The sender was not logged in, so their identity has not been confirmed.';
 $string['target:upcomingactivitiesdue'] = 'Upcoming activities due';
 $string['target:upcomingactivitiesdue_help'] = 'This target generates reminders for upcoming activities due.';
 $string['target:upcomingactivitiesdueinfo'] = 'All upcoming activities due insights are listed here. These students have received these insights directly.';
+$string['userprofile'] = 'User profile';

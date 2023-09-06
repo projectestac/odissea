@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'de', version '3.11'.
+ * Strings for component 'my', language 'de', version '4.1'.
  *
  * @package     my
  * @category    string
@@ -28,9 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['addpage'] = 'Seite hinzufügen';
 $string['alldashboardswerereset'] = 'Alle Dashboard-Seiten wurden auf die Standardwerte zurückgesetzt.';
 $string['allprofileswerereset'] = 'Alle Nutzerprofile wurden auf die Standardwerte zurückgesetzt.';
+$string['coursemanagementoptions'] = 'Optionen zur Kursverwaltung';
 $string['defaultpage'] = 'Standard-Dashboard';
 $string['defaultprofilepage'] = 'Standard-Profilseite';
 $string['delpage'] = 'Seite löschen';
+$string['error:dashboardisdisabled'] = 'Das Dashboard wurde in der Administration deaktiviert.';
 $string['managepages'] = 'Seiten verwalten';
 $string['mymoodle'] = 'Dashboard';
 $string['nocourses'] = 'Keine Kursinfos';

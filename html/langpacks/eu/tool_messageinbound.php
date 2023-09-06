@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'eu', version '3.11'.
+ * Strings for component 'tool_messageinbound', language 'eu', version '4.1'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -63,6 +63,7 @@ $string['messageinboundenabled_desc'] = 'Sarrerako posta elektronikoaren prozesa
 $string['messageinboundgeneralconfiguration'] = 'Ezarpen orokorra';
 $string['messageinboundgeneralconfiguration_desc'] = 'Sarrerako mezuen prozesatzeak e-mailak jaso eta Moodleren baitan kudeatzea ahalbidetzen du. Honela posta elektroniko bidez foroetan erantzutea eta gune pribatura fitxategiak igotzea moduko erabilerak gaitu daitezke.';
 $string['messageinboundhost'] = 'Sarrerako posta elektronikoko zerbitzaria';
+$string['messageinboundhostoauth_help'] = 'IMAP zerbitzariarekin XOUATH2 autentifikazioa erabilita komunikatzeko konfiguratutako OAuth 2 zerbitzua. Zerbitzua oraindik existitzen ez bada, aukeratu aurretik zerbitzua sortu beharko duzu.';
 $string['messageinboundhostpass'] = 'Pasahitza';
 $string['messageinboundhostpass_desc'] = 'Hemen zure zerbitzu-hornitzaileak helbide elektronikoan sartzeko eman dizun pasahitza zehaztu behar da.';
 $string['messageinboundhostssl'] = 'Erabili SSL';

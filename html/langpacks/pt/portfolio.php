@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'pt', version '3.11'.
+ * Strings for component 'portfolio', language 'pt', version '4.1'.
  *
  * @package     portfolio
  * @category    string
@@ -114,8 +114,8 @@ $string['intro'] = 'Os conteúdos que criou, tais como submissões de trabalhos,
 Poderá esconder qualquer portfólio que não deseje utilizar, desta forma o mesmo não será listado como uma opção para exportar os conteúdos.';
 $string['invalidaddformat'] = 'O formato de adição passado a portfolio_add_button é inválido. O valor "{$a}" deve ser um de PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'Não é possível encontrar a propriedade ({$a}) no portfolio_button';
-$string['invalidconfigproperty'] = 'Não é possível encontrar esta propriedade de configuração ({$a->property} de {$a->class})';
-$string['invalidexportproperty'] = 'Não é possível encontrar esta propriedade de configuração de exportação ({$a->property} of {$a->class})';
+$string['invalidconfigproperty'] = 'Não é possível encontrar a propriedade de configuração ({$a->property} em {$a->class})';
+$string['invalidexportproperty'] = 'Não é possível encontrar a propriedade de configuração de exportação ({$a->property} em {$a->class})';
 $string['invalidfileareaargs'] = 'Os argumentos de área de ficheiro passados a  set_file_and_format_data são inválidos. Estes devem conter contextid, component, filearea e itemid';
 $string['invalidformat'] = 'Algo está a exportar num formato inválido, {$a}';
 $string['invalidinstance'] = 'Não foi possível encontrar a instância de Portefólio indicada';
@@ -123,7 +123,7 @@ $string['invalidpreparepackagefile'] = 'Invocação inválida de prepare_package
 $string['invalidproperty'] = 'Não é possível encontrar a propriedade ({$a->property} em {$a->class})';
 $string['invalidsha1file'] = 'Invocação inválida de get_sha1_file inválida. Devem estar definidos ficheiros individuais ou múltiplos';
 $string['invalidtempid'] = 'O ID exportado é inválido. Pode ter expirado.';
-$string['invaliduserproperty'] = 'Não é possível encontrar a propriedade de conf do utilizador ({$a->property} em {$a->class})';
+$string['invaliduserproperty'] = 'Não é possível encontrar a propriedade de configuração do utilizador ({$a->property} em {$a->class})';
 $string['leap2a_emptyselection'] = 'O valor não foi selecionado';
 $string['leap2a_entryalreadyexists'] = 'Está a tentar adicionar uma entrada Leap2A com o ID ({$a}) que já existe nesta lista';
 $string['leap2a_feedtitle'] = 'Leap2A exportado do Moodle para {$a}';

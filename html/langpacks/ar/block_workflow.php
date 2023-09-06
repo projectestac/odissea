@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_workflow', language 'ar', version '3.11'.
+ * Strings for component 'block_workflow', language 'ar', version '4.1'.
  *
  * @package     block_workflow
  * @category    string
@@ -66,7 +66,7 @@ $string['invalidmissingvalue'] = 'أمر غير صالح، القيمة مفقو
 $string['invalidobsoletesetting'] = 'تم تحديد قيمة قديمة غير صالحة. إعدادات القيمة هي 0 أو 1.';
 $string['invalidpermission'] = 'تم تحديد صلاحية خاطئة. الصلاحيات الصائبة هي وراثة، سماح، منع، حظر.';
 $string['invalidvisibilitysetting'] = 'تم تحديد خيار إظهار غير صحيح. الخيارات الصحيحة هي مرئي ومخفي. لقد اخترتَ {$a}.';
-$string['managedescription'] = 'في هذه الصفحة يمكنك إنشاء وتحرير مخططات سير العمل وقوالب البريد الالكتروني التي تستعملها.';
+$string['managedescription'] = 'في هذه الصفحة يمكنك إنشاء وتحرير مخططات سير العمل ومظاهر البريد الالكتروني التي تستعملها.';
 $string['name'] = 'الاسم';
 $string['nameinuse'] = 'الاسم المحدد مستعمل سابقًا. لا بد للأسماء أن تكون فريدة';
 $string['nomorestepsleft'] = 'لقد تم إكمال مخطط سير العمل.';
@@ -81,6 +81,9 @@ $string['shortnameinuse'] = 'الاسم المختصر المحدد مستعمل
 $string['shownamesx'] = 'إظهار الأسماء ({$a})';
 $string['state_history_active'] = 'مُفعَّلة';
 $string['state_history_detail'] = '{$a->newstate} من قِبَل {$a->user} في {$a->time}.';
+$string['stepactivation_link'] = 'block/workflow';
+$string['stepcompletion_link'] = 'block/workflow';
+$string['stepextranotify_link'] = 'block/workflow';
 $string['workflow:dostep'] = 'صلاحية تنفيذ الخطوة';
 $string['workflow:editdefinitions'] = 'صلاحية تحرير تفاصيل سير العمل';
 $string['workflow:manage'] = 'صلاحية إدارة سير العمل';

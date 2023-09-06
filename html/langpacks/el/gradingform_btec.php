@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_btec', language 'el', version '3.11'.
+ * Strings for component 'gradingform_btec', language 'el', version '4.1'.
  *
  * @package     gradingform_btec
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addcriterion'] = 'Προσθήκη κριτηρίου';
 $string['and'] = 'και';
 $string['backtoediting'] = 'Επιστροφή στην επεξεργασία';
+$string['btecgrading_link'] = 'BTEC_marking';
 $string['btecoptions'] = 'Επιλογές βαθμολόγησης';
 $string['clicktoedit'] = 'Κάντε κλικ για επεξεργασία';
 $string['clicktoeditname'] = 'Κάντε κλικ για επεξεργασία επιπέδου (π.χ. Π1, Δ2 κλπ)';

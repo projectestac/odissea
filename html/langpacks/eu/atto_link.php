@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_link', language 'eu', version '3.11'.
+ * Strings for component 'atto_link', language 'eu', version '4.1'.
  *
  * @package     atto_link
  * @category    string
@@ -31,4 +31,5 @@ $string['enterurl'] = 'Idatzi URLa';
 $string['openinnewwindow'] = 'Ireki leiho berrian';
 $string['pluginname'] = 'Esteka';
 $string['privacy:metadata'] = 'atto_link pluginak ez du datu pertsonalik biltzen.';
+$string['texttodisplay'] = 'Erakusteko testua';
 $string['unlink'] = 'Kendu esteka';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'gl', version '3.11'.
+ * Strings for component 'antivirus', language 'gl', version '4.1'.
  *
  * @package     antivirus
  * @category    string
@@ -28,8 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['actantivirushdr'] = 'Engadidos antivirus dispoñíbeis';
 $string['antiviruscommonsettings'] = 'Axustes comúns do antivirus';
 $string['antiviruses'] = 'Engadidos antivirus';
-$string['antivirussettings'] = 'Xestionar os engadidos de antivirus';
+$string['antivirussettings'] = 'Xestionar os engadidos antivirus';
 $string['configantivirusplugins'] = 'Escolla os engadidos de antivirus que desexa utilizar e dispóñaos na orde de aplicación.';
+$string['dataerrordesc'] = 'Produciuse un erro no escáner de datos.';
+$string['dataerrorname'] = 'Produciuse un erro no escáner de datos.';
 $string['datainfecteddesc'] = 'Detectáronse datos infectados.';
 $string['datainfectedname'] = 'Datos infectados';
 $string['datastream'] = 'Datos';
@@ -50,15 +52,23 @@ $string['emailscannererrordetected'] = 'Produciuse un erro do escáner';
 $string['emailsubject'] = '{$a} :: Notificación de antivirus';
 $string['enablequarantine'] = 'Activar a corentena';
 $string['enablequarantine_help'] = 'Se está activado, os ficheiros detectados como virus colocaranse nun cartafol de corentena ([dataroot]/{$a}) para a súa posterior inspección. A carga en Moodle fallará. Se ten algún escaneo de virus a nivel de sistema de ficheiros, o cartafol de corentena debería excluírse da comprobación antivirus para evitar detectar os ficheiros en corentena.';
+$string['fileerrordesc'] = 'Produciuse un erro no escáner de ficheiros.';
+$string['fileerrorname'] = 'Produciuse un erro no escáner de ficheiros.';
 $string['fileinfecteddesc'] = 'Detectouse un ficheiro infectado.';
 $string['fileinfectedname'] = 'Ficheiro infectado';
 $string['notifyemail'] = 'Correo de notificación de alerta antivirus';
 $string['notifyemail_help'] = 'O enderezo de correo para as notificacións cando se detecta un virus. Se se deixa en branco, recibirán as notificacións a todos os administradores do sitio.';
-$string['privacy:metadata'] = 'O sistema de antivirus non almacena ningún dato persoal.';
+$string['notifylevel'] = 'Nivel de notificación';
+$string['notifylevel_help'] = 'Os diferentes niveis de información sobre os que quere ser notificado';
+$string['notifylevelerror'] = 'Ameazas detectadas e erros do escáner';
+$string['notifylevelfound'] = 'Só as ameazas detectadas';
+$string['privacy:metadata'] = 'O sistema de Antivirus non almacena ningún dato persoal.';
 $string['quarantinedfiles'] = 'Ficheiros en corentena de antivirus';
 $string['quarantinedisabled'] = 'A corentena está desactivada. O ficheiro non está almacenado.';
 $string['quarantinetime'] = 'Tempo máximo de corentena';
 $string['quarantinetime_desc'] = 'Eliminaranse os ficheiros en corentena anteriores ao período especificado.';
 $string['taskcleanup'] = 'Limpar os ficheiros en corentena.';
+$string['threshold'] = 'Limiar para a comprobación do estado';
+$string['threshold_desc'] = 'Canto tempo atrás hai que comprobar os resultados anteriores para detectar erros, etc., segundo se indica en {$a}.';
 $string['unknown'] = 'Descoñecido';
 $string['virusfound'] = '{$a->item}, foi examinado por un antivirus e detectouse que está infectado!';

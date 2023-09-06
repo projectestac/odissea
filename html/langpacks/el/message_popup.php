@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_popup', language 'el', version '3.11'.
+ * Strings for component 'message_popup', language 'el', version '4.1'.
  *
  * @package     message_popup
  * @category    string

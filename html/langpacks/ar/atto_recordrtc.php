@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'ar', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'ar', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'الصوت والفيديو';
 $string['audiobitrate'] = 'معدل البت للصوت';
 $string['audiobitrate_desc'] = 'جودة التسجيل الصوتي (الرقم الأعلى معناه جودة أعلى)';
 $string['audiortc'] = 'تسجيل الصوت';
+$string['audiotimelimit'] = 'محدد وقت الصوت بالثواني';
+$string['audiotimelimit_desc'] = 'أقصى مدة مسموح بتسجيلها بالنسبة إلى مقاطع الصوت';
 $string['gumabort'] = 'حدث أمر غريب يحول دون استعمال كامرة الويب واللاقطة';
 $string['gumabort_title'] = 'حدث أمر ما';
 $string['gumnotallowed'] = 'ينبغي على المستخدم السماح للمستعرض باستعمال كامرة الويب واللاقطة';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'إبدأ التسجيل';
 $string['stoprecording'] = 'أوقف التسجيل';
 $string['timelimit'] = 'حد الوقت بالثواني';
 $string['timelimit_desc'] = 'أقصى مدة تسجيل مسموح بها لمقطوعات الصوت/الفيديو';
+$string['timelimitwarning'] = 'ينبغي أن تدخل رقمًا أكبر من 0.';
 $string['uploadaborted'] = 'تم إحباط الرفع:';
 $string['uploadfailed'] = 'فشل الرفع:';
 $string['uploadfailed404'] = 'فشل الرفع: الملف كبير جداً';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'إكتمل';
 $string['videobitrate'] = 'معدل البت للفيديو';
 $string['videobitrate_desc'] = 'جودة التسجيل الفيديوي (الرقم الأكبر معناه جودة أعلى)';
 $string['videortc'] = 'تسجيل الفيديو';
+$string['videotimelimit'] = 'محدد وقت الفيديو بالثواني';
+$string['videotimelimit_desc'] = 'أقصى مدة مسموح بتسجيلها بالنسبة إلى مقاطع الفيديو';

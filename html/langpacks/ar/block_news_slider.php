@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_news_slider', language 'ar', version '3.11'.
+ * Strings for component 'block_news_slider', language 'ar', version '4.1'.
  *
  * @package     block_news_slider
  * @category    string
@@ -31,11 +31,11 @@ $string['blocktitle'] = 'شريط التمرير الإخباري';
 $string['cachedef_sliderdata'] = 'البيانات المخزنة لشريط تمرير الأخبار';
 $string['cachingttl'] = 'مهلة تخبئة البيانات';
 $string['cachingttldesc'] = 'مهلة تخبئة البيانات بالثواني (TTL)';
-$string['courseitemsperiod'] = 'المدة القصوى لإظهار إعلانات المقرر الدراسي - بالأيام';
-$string['courseitemstoshow'] = 'أقصى عدد من الإعلانات المعروضة في المقرر الدراسي';
+$string['courseitemsperiod'] = 'المدة القصوى لإظهار إعلانات المساق - بالأيام';
+$string['courseitemstoshow'] = 'أقصى عدد من الإعلانات المعروضة في المساق';
 $string['displaymode'] = 'زر تبديل عرض محتوى الأخبار';
-$string['displaymodestringall'] = 'الكل (الموقع + اخبار المقرر الدراسي)';
-$string['displaymodestringcourse'] = 'اخبار المقرر الدراسي فقط';
+$string['displaymodestringall'] = 'الكل (الموقع + اخبار المساق)';
+$string['displaymodestringcourse'] = 'اخبار المساق فقط';
 $string['displaymodestringsite'] = 'اخبار الموقع فقط';
 $string['excerptlength'] = 'طول الاقتباس';
 $string['excerptlengthdesc'] = 'طول المقتطف (عدد الأحرف). (نصيحة: جرب 200 - 210 للحصول على تخطيطات أعرض أطول).';

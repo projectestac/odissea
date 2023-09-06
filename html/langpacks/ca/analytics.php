@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'ca', version '3.11'.
+ * Strings for component 'analytics', language 'ca', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -95,6 +95,7 @@ $string['privacy:metadata:analytics:indicatorcalc:timecreated'] = 'Quan es va fe
 $string['privacy:metadata:analytics:indicatorcalc:value'] = 'El valor calculat';
 $string['privacy:metadata:analytics:predictionactions'] = 'Accions de predicció';
 $string['privacy:metadata:analytics:predictionactions:actionname'] = 'El nom de l\'acció';
+$string['timesplittingmethod_link'] = 'Time_splitting_methods';
 $string['useful'] = 'Útil';
 $string['viewdetails'] = 'Mostra els detalls';
 $string['washelpful'] = 'Això us ha semblat útil?';

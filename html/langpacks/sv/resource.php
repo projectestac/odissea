@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'sv', version '3.11'.
+ * Strings for component 'resource', language 'sv', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -52,6 +52,7 @@ $string['displayselect_help'] = 'Denna inställning bestämmer tillsammans med t
 * Öppna i popupfönster – filen visas i ett popupfönster vars egenskaper kan ställas in.
 * I ram – filen visas i en inbäddad ram på moodlesidan
 * Nytt fönster – filen visas i webbläsaren i ett nytt fönster';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = 'Välj visningsläge. Dessvärre passar inte alla lägen för alla filer.';
 $string['dnduploadresource'] = 'Skapa filresurs';
 $string['encryptedcode'] = 'Krypterad kod';
@@ -65,10 +66,12 @@ $string['indicator:cognitivedepth'] = 'Fil kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Filresurs.';
 $string['indicator:cognitivedepthdef'] = 'Fil kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av Fil-resurserna under detta analysintervall (Nivåer = Ingen visning, Visa)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Fil social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Filresurs.';
 $string['indicator:socialbreadthdef'] = 'Fil social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Filresurserna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migrering av gammal kursfil';
 $string['legacyfilesactive'] = 'Aktiv';
 $string['legacyfilesdone'] = 'Avslutad';
@@ -83,6 +86,7 @@ En fil kan användas
 * För att dela presentationer som ges i klassen
 * Att inkludera en miniwebbplats som kursresurs
 * För att tillhandahålla utkast till filer skapade för olika mjukvaror (som t.ex. Word, Photoshop eller programkod) så att deltagarna kan redigera och skicka in dem för bedömning';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Filer';
 $string['notmigrated'] = 'Den här "legacy"-typen av resurs ({$a}) har tyvärr ännu inte migrerats. ';
 $string['optionsheader'] = 'Visa alternativ';

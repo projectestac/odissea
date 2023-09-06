@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_solutionsheet', language 'fr', version '3.11'.
+ * Strings for component 'assignfeedback_solutionsheet', language 'fr', version '4.1'.
  *
  * @package     assignfeedback_solutionsheet
  * @category    string
@@ -35,6 +35,7 @@ $string['dohidesolutions'] = 'Cliquez pour cacher le corrigé aux étudiants.';
 $string['doshowsolutions'] = 'Cliquez pour montrer maintenant le corrigé aux étudiants.';
 $string['enabled'] = 'Corrigés';
 $string['enabled_help'] = 'Si activé, l\'enseignant peut déposer un ou plusieurs corrigés pour ce devoir.';
+$string['enabled_link'] = 'assignfeedback/solutionsheet';
 $string['fromnowon'] = 'Activer à partir de maintenant';
 $string['fromnowon_help'] = 'Si activé, un enseignant peut décider d\'afficher le corrigé dès la création du devoir.';
 $string['hidesolutionsafter'] = 'Cacher le corrigé après';

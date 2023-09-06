@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'ar', version '3.11'.
+ * Strings for component 'block_glossary_random', language 'ar', version '4.1'.
  *
  * @package     block_glossary_random
  * @category    string
@@ -30,8 +30,8 @@ $string['askaddentry'] = 'عندما يستطيع المستخدمون من إض
 $string['askinvisible'] = 'عندما لا يستطيع المستخدمون من تحرير أو مشاهدة المسرد، أظهر هذا النص. (بدون رابط)';
 $string['askviewglossary'] = 'عندما يستطيع المستخدمون مشاهدة المسرد بدون أن يستطيعوا إضافة مدخلاتهم إلى المسرد، أظهر الرابط مع هذا النص.';
 $string['glossary_random:addinstance'] = 'إضافة كتلة جديدة لمصطلح عشوائي من مسرد';
-$string['glossary_random:myaddinstance'] = 'إضافة كتلة جديدة لمصطلح عشوائي من مسرد إلى لوحة التحكم';
-$string['intro'] = 'تأكد من وجود مسرد وأحد بمدخل وأحد على الأقل في هذا المقرر الدراسي، بعد ذلك يمكنك القيام بتعديل الإعدادات التالية';
+$string['glossary_random:myaddinstance'] = 'إضافة كتلة جديدة لمصطلح عشوائي من مسرد إلى دفة القيادة';
+$string['intro'] = 'تأكد من وجود مسرد وأحد بمدخل وأحد على الأقل في هذا المساق، بعد ذلك يمكنك القيام بتعديل الإعدادات التالية';
 $string['invisible'] = '(سيتم التتابع)';
 $string['lastmodified'] = 'المدخل المعدل مؤخراً';
 $string['nextalpha'] = 'ترتيب هجائي';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_advnotifications', language 'ca', version '3.11'.
+ * Strings for component 'block_advnotifications', language 'ca', version '4.1'.
  *
  * @package     block_advnotifications
  * @category    string
@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['advnotifications'] = 'Notificacions avançades';
 $string['advnotifications_add_option_announcement'] = 'Anunci';
+$string['advnotifications_cell_yes'] = 'Sí';
+$string['advnotifications_save'] = 'Desa';
 $string['advnotifications_table_heading'] = 'Notificacions avançades';
 $string['advnotifications_task_name'] = 'Notificacions avançades';
 $string['pluginname'] = 'Notificacions avançades';

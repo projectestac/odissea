@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'el', version '3.11'.
+ * Strings for component 'enrol_cohort', language 'el', version '4.1'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Προσθήκη σε ομάδα';
 $string['assignrole'] = 'Ανάθεση ρόλου';
-$string['cohort:config'] = 'Ρύθμιση στιγμιότυπων (συγχρονισμού) ενός συνόλου χρηστών';
+$string['cohort:config'] = 'Ρύθμιση στιγμιοτύπων (συγχρονισμού) ενός συνόλου χρηστών';
 $string['cohort:unenrol'] = 'Ακύρωση εγγραφής χρηστών σε αναστολή';
 $string['creategroup'] = 'Δημιουργία νέας ομάδας';
 $string['defaultgroupnametext'] = '{$a->name} σύνολο χρηστών {$a->increment}';

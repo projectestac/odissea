@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'ko', version '3.11'.
+ * Strings for component 'auth_cas', language 'ko', version '4.1'.
  *
  * @package     auth_cas
  * @category    string
@@ -26,8 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['CASform'] = '인증서 선택';
-$string['accesCAS'] = 'CAS 사용자';
-$string['accesNOCAS'] = '기타 사용자';
 $string['auth_cas_auth_user_create'] = '외부 사용자 생성';
 $string['auth_cas_baseuri'] = '서버의 URI (기반 uri가 없는 것)
 <br /> 예를 들면, 만약 CAS 서버가

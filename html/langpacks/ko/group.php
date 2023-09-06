@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ko', version '3.11'.
+ * Strings for component 'group', language 'ko', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -139,6 +139,7 @@ $string['importgroups_help'] = '모둠은 텍스트 파일로 가져오기 할 �
 * 첫 레코드에는 파일의 나머지 부분의 형식을 정의하는 필드 이름 목록
 * 필수 필드이름은 groupname
 * 선택적 필드이름은 description, enrolmentkey, picture, hidepicture';
+$string['importgroups_link'] = 'group/import';
 $string['javascriptrequired'] = '이 페이지는 자바스크립트가 활성되는 것이 필요합니다.';
 $string['members'] = '모둠당 구성원들';
 $string['membersofselectedgroup'] = '다음 모둠의 구성원';

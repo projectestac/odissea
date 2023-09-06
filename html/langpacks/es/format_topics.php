@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'es', version '3.11'.
+ * Strings for component 'format_topics', language 'es', version '4.1'.
  *
  * @package     format_topics
  * @category    string
@@ -31,6 +31,8 @@ $string['deletesection'] = 'Borrar tema';
 $string['editsection'] = 'Editar tema';
 $string['editsectionname'] = 'Editar nombre del tema';
 $string['hidefromothers'] = 'Ocultar tema';
+$string['indentation'] = 'Permitir indentación en página de curso';
+$string['indentation_help'] = 'Permitirle a profesores, y otros usuarios con la capacidad para gestionar actividades, el indentar elementos en la página de curso.';
 $string['newsectionname'] = 'Nuevo nombre para el tema {$a}';
 $string['page-course-view-topics'] = 'Cualquier página principal de curso en formato por temas';
 $string['page-course-view-topics-x'] = 'Cualquier página de curso en formato por temas';

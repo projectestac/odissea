@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_hotpot', language 'eu', version '3.11'.
+ * Strings for component 'qformat_hotpot', language 'eu', version '4.1'.
  *
  * @package     qformat_hotpot
  * @category    string
@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['hotpot'] = 'Hot Potatoes XML formatua';
 $string['hotpot_help'] = 'Hau fitxategi formatua da, Moodleko galdera-bankura hurrengo formatuetatik galderak inportatzeko: Hot Potatoes xml files, JCloze (jcl), JCross (jcw), JMatch (jmt), JMix(jmx) eta JQuiz (jqz)';
+$string['hotpot_link'] = 'qformat/hotpot';
 $string['pluginname'] = 'Hot Potatoes XML formatua';
 $string['pluginname_help'] = 'Hau fitxategi formatua da, Moodleko galdera-bankura hurrengo formatuetatik galderak inportatzeko: Hot Potatoes xml files, JCloze (jcl), JCross (jcw), JMatch (jmt), JMix(jmx) eta JQuiz (jqz)';
+$string['pluginname_link'] = 'qformat/hotpot';
 $string['requiremodhotpot'] = 'Hot Potatoes galderak inportatzeko gehigarria ezin da instalatu HotPot modulua falta delako. HotPot jarduera modulua jaitsi ezazu, {$a}/mod/hotpot helbidean kopiatu eta ondoren orri hau freskatu ezazu';

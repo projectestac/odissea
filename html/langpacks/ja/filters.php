@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'ja', version '3.11'.
+ * Strings for component 'filters', language 'ja', version '4.1'.
  *
  * @package     filters
  * @category    string
@@ -41,7 +41,7 @@ $string['contentandheadings'] = 'コンテンツおよびヘッディング';
 $string['coursecategory'] = 'コースカテゴリ';
 $string['courserole'] = 'コースロール';
 $string['courserolelabel'] = '{$a->label} は {$a->categoryname} 内の {$a->coursename} の {$a->rolename} です。';
-$string['courserolelabelerror'] = '{$a->label} エラー: コース {$a->coursename} がありません。';
+$string['courserolelabelerror'] = '{$a->label} エラー: コース {$a->coursename} が存在しません。';
 $string['coursevalue'] = 'コース値';
 $string['datelabelisafter'] = '{$a->label} が {$a->after} 以後';
 $string['datelabelisbefore'] = '{$a->label} が {$a->before} 以前';
@@ -50,11 +50,11 @@ $string['defaultx'] = 'デフォルト ({$a})';
 $string['disabled'] = '無効';
 $string['doesnotcontain'] = '次の文字を含まない';
 $string['endswith'] = '次の文字で終わる';
-$string['filterallwarning'] = 'ヘッディングおよびコンテンツにフィルタを適用する場合、あなたのサーバに対する負荷を極めて増大させます。「適用先」設定は控えめに使ってください。主な使用は多言語コンテンツフィルタです。';
+$string['filterallwarning'] = 'ヘッディングおよびコンテンツにフィルタを適用する場合、あなたのサーバに対する負荷を大幅に増加させる可能性があります。「適用先」設定は控えめに使ってください。主な使用は多言語コンテンツフィルタです。';
 $string['filtersettings'] = 'フィルタ設定';
-$string['filtersettings_help'] = 'このページではあなたはサイトの特定部分においてフィルタを有効または無効にすることができます。
+$string['filtersettings_help'] = 'あなたはこのページでサイトの特定部分でのフィルタを有効または無効にできます。
 
-いくつかのフィルタにおいてあなたはローカル設定を設定することができます。この場合、フィルタ名の次に「設定」リンクが表示されます。';
+あなたはいくつかのフィルタでローカル設定を設定できます。この場合、フィルタ名の次に「設定」リンクが表示されます。';
 $string['filtersettingsforin'] = '{$a->context} の {$a->filter} に関するフィルタ設定';
 $string['filtersettingsin'] = '{$a} のフィルタ設定';
 $string['firstaccess'] = '初回アクセス';

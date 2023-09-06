@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'el', version '3.11'.
+ * Strings for component 'format_tiles', language 'el', version '4.1'.
  *
  * @package     format_tiles
  * @category    string
@@ -34,13 +34,12 @@ $string['alternativelink'] = 'εναλλακτικός σύνδεσμος';
 $string['asfraction'] = 'Εμφάνιση ως κλάσμα';
 $string['aspercentagedial'] = 'Εμφάνιση ως % σε κύκλο';
 $string['basecolour'] = 'Χρώμα πλακιδίων';
-$string['blockedpopuptitle'] = 'Μπλοκαρίστηκε αναδυόμενο παράθυρο';
 $string['brandcolour'] = 'Χρώμα μάρκας';
 $string['canceltask'] = 'Ακύρωση εργασίας';
 $string['checkforproblemcourses'] = 'Έλεγχος για και διόρθωση προβληματικών μαθημάτων';
 $string['clickiffailstoload'] = 'Κάντε κλικ αν η σελίδα αποτύχει να φορτωθεί';
 $string['close'] = 'Κλείσιμο';
-$string['collapse'] = 'Ανάπτυξη τμήματος';
+$string['collapse'] = 'Ανάπτυξη ενότητας';
 $string['collapsesections'] = 'Ανάπτυξη όλων';
 $string['colourblue'] = 'Μπλε';
 $string['colourdarkgreen'] = 'Σκούρο πράσινο';
@@ -55,8 +54,6 @@ $string['completionwarning_changeinbulk'] = 'Μαζική αλλαγή';
 $string['contact'] = 'Ελάτε σε επαφή';
 $string['contactdeveloper'] = 'Επικοινωνία με τον προγραμματιστή';
 $string['contents'] = 'Περιεχόμενα';
-$string['converttopage'] = 'Μετατροπή σε σελίδα';
-$string['converttopage_confirm'] = 'Σίγουρα; Αυτό δεν μπορεί να αναιρεθεί (θα πρέπει να δημιουργήσετε την ταμπέλα ξανά χειροκίνητα αν χρειαστεί).';
 $string['courseshowtileprogress'] = 'Πρόοδος σε κάθε πλακίδιο';
 $string['courseshowtileprogress_link'] = 'Ρυθμίσεις_ολοκλήρωσης_δραστηριότητας#Ρυθμίσεις_δραστηριότητας';
 $string['courseusebarforheadings'] = 'Δώστε έμφαση σε επικεφαλίδες με έγχρωμη καρτέλα';
@@ -99,7 +96,7 @@ $string['entersection'] = 'Δώστε τμήμα';
 $string['existingimage'] = 'Υπάρχουσα εικόνα για αυτό το πλακίδιο';
 $string['expand'] = 'Ανάπτυξη';
 $string['expandall'] = 'Ανάπτυξη όλων';
-$string['expandsections'] = 'Αποκάλυψη όλων των δραστηριοτήτων (όλα τα τμήματα)';
+$string['expandsections'] = 'Αποκάλυψη όλων των δραστηριοτήτων (όλες οι ενότητες)';
 $string['experimentalfeature'] = 'Πειραματική λειτουργία';
 $string['experimentalsetting'] = '(πειραματική ρύθμιση)';
 $string['fileaddedtobottom'] = 'Το αρχείο προστέθηκε στο υποσέλιδο στης επιλογής';
@@ -115,7 +112,6 @@ $string['height'] = 'ύψος';
 $string['hidden'] = 'Σε απόκρυψη';
 $string['hide'] = 'Απόκρυψη';
 $string['hidefromothers'] = 'Απόκρυψη πλακιδίου';
-$string['highlightoff'] = 'Κατάργηση φωτο-επισήμανσης';
 $string['home'] = 'Αρχική μαθήματος';
 $string['hovercolour'] = 'Χρώμα αιώρησης πλακιδίου';
 $string['hovercolour_descr'] = 'Χρώμα που θα εμφανίζουν τα πλακίδια κατά την αιώρηση του ποντικιού πάνω τους';
@@ -200,7 +196,7 @@ $string['icontitle-number_9'] = 'Αριθμός 9';
 $string['icontitle-pencil-square-o'] = 'Μολύβι σε τετράγωνο';
 $string['icontitle-person'] = 'Άτομο';
 $string['icontitle-pie-chart'] = 'Γράφημα πίτας';
-$string['icontitle-podcast'] = 'Podcast';
+$string['icontitle-podcast'] = 'Podcast (Διαδικτυακή εκπομπή σειράς αρχείων)';
 $string['icontitle-puzzle-piece'] = 'Κομμάτι πάζλ';
 $string['icontitle-question-circle'] = 'Ερωτηματικό σε κύκλο';
 $string['icontitle-random'] = 'Τυχαίο';
@@ -236,7 +232,6 @@ $string['jsdeactivate'] = 'Πλοήγηση χωρίς κινούμενα σχέ
 $string['jsdeactivated'] = 'Έχετε απενεργοποιήσει την πλοήγηση με κινούμενα σχέδια στο λογαριασμό σας';
 $string['jsnavsettings'] = 'Περιήγηση JavaScript';
 $string['jsreactivated'] = 'Έχετε ενεργοποιήσει την πλοήγηση με κινούμενα σχέδια στο λογαριασμό σας. Αυτό μπορεί να είναι πιο γρήγορο στη χρήση. Απαιτεί ενεργοποιημένη τη JavaScript.';
-$string['labelconverted'] = 'Μετατραπείσα ταμπέλα';
 $string['links'] = 'Σύνδεσμοι';
 $string['loading'] = 'Φόρτωση...';
 $string['newsectionname'] = 'Νέο όνομα για το θέμα {$a}';
@@ -282,7 +277,7 @@ $string['registerintro1'] = 'Θα θέλαμε πολύ να διατηρήσο�
 $string['registerintro2'] = 'υποστηρίζετε την μελλοντική ανάπτυξη αυτού του πρόσθετου';
 $string['registerintro3'] = 'μπορείτε να μαθαίνετε άμεσα σχετικά με σημαντικές ενημερώσεις και μελλοντικά σχέδια';
 $string['registerintro4'] = 'μπορούμε να μάθουμε περισσότερα για το τι θα θέλατε να κάνει αυτό το πρόσθετο.';
-$string['registerintro5'] = 'Τα στοιχεία σας θα παραμείνουν ιδιωτικά από τον προγραμματιστή, όπως ορίζεται στην πολιτική προστασίας προσωπικών δεδομένων που συνδέεται παρακάτω. Σας ευχαριστούμε για την υποστήριξή σας!';
+$string['registerintro5'] = 'Τα στοιχεία σας θα παραμείνουν ιδιωτικά από τον προγραμματιστή, όπως ορίζεται στην πολιτική απορρήτου που συνδέεται παρακάτω. Σας ευχαριστούμε για την υποστήριξή σας!';
 $string['registermissingemail'] = 'Παρακαλούμε, συμπληρώστε τη διεύθυνση ηλε.ταχυδρομείου σας (έχετε επιλέξει «Ναι» παρακάτω για μηνύματα ηλε.ταχυδρομείου)';
 $string['registerpickemailpref'] = 'Παρακαλούμε, επιλέξτε την προτίμησή σας ηλε.ταχυδρομείου';
 $string['registerpolicyagreedlinktext'] = 'Πολιτική απορρήτου και συμφωνία για επεξεργασία δεδομένων';
@@ -297,7 +292,7 @@ $string['section0name'] = 'Γενικά';
 $string['sectionerrorstring'] = 'Η σύνοδός σας ίσως έχει λήξει. Προσπαθήστε να ανανεώσετε αυτή τη σελίδα.';
 $string['sectionerrortitle'] = 'Σφάλμα φόρτωσης περιεχομένου';
 $string['sectionname'] = 'Πλακίδιο';
-$string['sectionnumber'] = 'Αριθμός τμήματος/πλακιδίου';
+$string['sectionnumber'] = 'Αριθμός ενότητας/πλακιδίου';
 $string['selected'] = 'Επιλεγμένο';
 $string['setavailabletilecolours'] = 'Επιτρεπόμενα χρώματα πλακιδίων (ιστοτόπου)';
 $string['settings'] = 'Ρυθμίσεις μορφότυπου πλακιδίων';

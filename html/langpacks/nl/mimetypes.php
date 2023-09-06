@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'nl', version '3.11'.
+ * Strings for component 'mimetypes', language 'nl', version '4.1'.
  *
  * @package     mimetypes
  * @category    string
@@ -31,7 +31,7 @@ $string['application/json'] = '{$a->MIMETYPE2} tekst';
 $string['application/msword'] = 'Word-document';
 $string['application/pdf'] = 'PDF-document';
 $string['application/vnd.moodle.backup'] = 'Moodle-back-up';
-$string['application/vnd.ms-excel'] = 'Excell rekenblad';
+$string['application/vnd.ms-excel'] = 'Excel rekenblad';
 $string['application/vnd.ms-excel.sheet.macroEnabled.12'] = 'Excel 2007 werkboek met macro\'s ingeschakeld';
 $string['application/vnd.ms-powerpoint'] = 'Powerpoint presentatie';
 $string['application/vnd.oasis.opendocument.spreadsheet'] = 'OpenDocument rekenblad';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'pt', version '3.11'.
+ * Strings for component 'block_completion_progress', language 'pt', version '4.1'.
  *
  * @package     block_completion_progress
  * @category    string
@@ -72,6 +72,7 @@ $string['how_ordering_works_help'] = '<p>Existem duas maneiras de ordenar as ati
  <li><em>Ordem na disciplina</em><br/>As atividades/recursos são apresentadas na mesma ordem em que estão na página da disciplina. Quando esta opção é escolhida, as datas previstas de conclusão são ignoradas. Se for utilizada esta opção, o indicador AGORA não é exibido.</li></ul>';
 $string['how_selectactivities_works'] = 'Como funcionam as atividades incluídas';
 $string['how_selectactivities_works_help'] = '<p>Para selecionar manualmente as atividades que pretende incluir na barra, garanta que a opção "Atividades incluídas" está definida para "Atividades selecionadas".</p><p>Apenas podem ser incluídas as atividades com verificação da conclusão definida.</p><p>Mantenha pressionada a tecla CTRL para selecionar várias atividades.</p>';
+$string['indeterminate'] = '?';
 $string['lastonline'] = 'Último acesso';
 $string['mouse_over_prompt'] = 'Passe o rato sobre a barra ou clique para mais informações.';
 $string['no_activities_config_message'] = 'Não existem atividades ou recursos com verificação da conclusão definida ou não foram selecionadas atividades e/ou recursos. Defina a verificação da conclusão das atividades e recursos, e em seguida, configure este bloco.';

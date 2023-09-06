@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'sv', version '3.11'.
+ * Strings for component 'report_security', language 'sv', version '4.1'.
  *
  * @package     report_security
  * @category    string
@@ -25,6 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['check_antivirus_details'] = 'Denna status kontrollerar om det nyligen upptäckts fel baserat på nivån som konfigurerats i antivirusinställningarna.';
+$string['check_antivirus_error'] = '{$a->errors} fel har hittats de senaste {$a->lookback}';
+$string['check_antivirus_info'] = 'Inga antivirusgenomsökare är aktiverade';
+$string['check_antivirus_logstore_not_supported'] = 'Kan inte verifiera tillståndet hos antivirusgenomsökare på grund av den loggtyp som valts';
+$string['check_antivirus_name'] = 'Antivirus';
+$string['check_antivirus_ok'] = '{$a->scanners} antivirusgenomsökare aktiverade. Inga problem har upptäckts de senaste {$a->lookback}';
 $string['check_configrw_details'] = '<p>Det rekommenderas att filbehörigheterna för <code>config.php</code> ändras efter installationen så att filen inte kan ändras av webbservern. Observera att denna åtgärd inte förbättrar serverns säkerhet nämvärt, även om den kan fördröja eller begränsa säkerhetsrisker generellt.</p>';
 $string['check_configrw_name'] = 'Skrivbar config.php';
 $string['check_configrw_ok'] = 'config.php kan inte ändras av PHP-skript.';
@@ -64,9 +70,9 @@ $string['check_embed_ok'] = 'Obegränsad objekts-inbäddning ej tillåten.';
 $string['check_frontpagerole_details'] = '<p>Standardrollen för startsidan ges till alla registrerade användare för aktiviteter på startsidan. Vänligen se till att inga riskfyllda funktioner är tillåtna för den här rollen.</p>
 <p>Det rekommenderas att en särskild roll skapas för detta ändamål och att en äldre rolltyp inte används.</p>';
 $string['check_frontpagerole_error'] = 'Felaktigt definierad roll "{$a}" för startsidan har upptäckts!';
-$string['check_frontpagerole_name'] = 'Förstasidesroll';
-$string['check_frontpagerole_notset'] = 'Förstasidesroll ej angiven.';
-$string['check_frontpagerole_ok'] = 'Förstasidesroll OK.';
+$string['check_frontpagerole_name'] = 'Startsideroll';
+$string['check_frontpagerole_notset'] = 'Startsideroll ej angiven.';
+$string['check_frontpagerole_ok'] = 'Startsideroll OK.';
 $string['check_guestrole_details'] = '<p>Gästrollen används för gäster, inte inloggade användare och tillfällig gästkursåtkomst. Vänligen se till att inga riskfyllda funktioner är tillåtna i den här rollen.</p> <p>Den enda äldre gästrolltyp som stöds är <em>Gäst</em>.</p>';
 $string['check_guestrole_error'] = 'Gästrollen "{$a}" är felaktigt definierad!';
 $string['check_guestrole_name'] = 'Gästroll';
@@ -95,6 +101,8 @@ $string['check_preventexecpath_warning'] = 'Sökvägar till körbara filer kan a
 $string['check_publicpaths_403'] = '(Returnerade 403, skulle helst vara 404)';
 $string['check_publicpaths_generic'] = '{$a}-filer bör inte vara publika';
 $string['check_publicpaths_name'] = 'Kontrollera alla publika / privata sökvägar';
+$string['check_publicpaths_ok'] = 'Vissa interna sökvägar är inte nåbara utifrån';
+$string['check_publicpaths_warning'] = 'Vissa interna sökvägar är nåbara utifrån';
 $string['check_riskadmin_detailsok'] = '<p>Vänligen verifiera följande lista över systemadministratörer:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Vänligen verifiera följande lista över systemadministratörer:</p>{$a->admins}
 <p>Det rekommenderas att endast tilldela administratörsroll i systemetskontexten. Följande användare har administratörsrolltilldelningar (som inte stöds) i andra kontext:</p>{$a->unsupported}';

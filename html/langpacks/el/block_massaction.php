@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_massaction', language 'el', version '3.11'.
+ * Strings for component 'block_massaction', language 'el', version '4.1'.
  *
  * @package     block_massaction
  * @category    string
@@ -37,9 +37,9 @@ $string['invalidmoduleid'] = 'Μη έγκυρο αναγνωριστικό αρ�
 $string['massaction:addinstance'] = 'Προσθήκη νέου μπλοκ μαζικών ενεργειών';
 $string['massaction:use'] = 'Χρήση του μπλοκ μαζικών ενεργειών';
 $string['noaction'] = 'Δεν καθορίστηκε ενέργεια';
-$string['noitemselected'] = 'Παρακαλώ επιλέξτε τουλάχιστον ένα στοιχείο για να εφαρμόσετε την μαζική ενέργεια';
+$string['noitemselected'] = 'Παρακαλούμε επιλέξτε τουλάχιστον ένα στοιχείο για να εφαρμόσετε την μαζική ενέργεια';
 $string['pluginname'] = 'Μπλοκ μαζικής ενέργειας';
-$string['sectionnotexist'] = 'Το τμήμα στόχος δεν υπάρχει';
+$string['sectionnotexist'] = 'Η ενότητα στόχος δεν υπάρχει';
 $string['selectall'] = 'επιλογή όλων';
 $string['usage'] = 'Βοήθεια για μαζικές ενέργειες';
 $string['withselected'] = 'Με την επιλογή';

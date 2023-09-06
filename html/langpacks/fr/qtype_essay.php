@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'fr', version '3.11'.
+ * Strings for component 'qtype_essay', language 'fr', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -60,6 +60,7 @@ $string['nlines'] = '{$a} lignes';
 $string['nonexistentfiletypes'] = 'Les types de fichier suivants n\'ont pas été reconnus : {$a}';
 $string['pluginname'] = 'Composition';
 $string['pluginname_help'] = 'Pour répondre à la question, les participants peut déposer un ou plusieurs fichiers ou écrire un texte en ligne. Un modèle de réponse peut être fourni. Les réponses doivent être évaluées manuellement.';
+$string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = 'Ajout d\'une question de composition';
 $string['pluginnameediting'] = 'Modification d\'une question de composition';
 $string['pluginnamesummary'] = 'Permet une réponse sous forme d\'un fichier ou d\'un texte en ligne. Cette question doit être évaluée manuellement.';

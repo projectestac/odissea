@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'de', version '3.11'.
+ * Strings for component 'block_timeline', language 'de', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Alle';
-$string['ariadayfilter'] = 'Zeitleiste-Einträge filtern';
+$string['ariadayfilter'] = 'Zeitleiste nach Datum filtern';
 $string['ariadayfilteroption'] = '{$a} Filteroption';
 $string['ariaeventlistitem'] = 'Aktivität {$a->name} in {$a->course} ist {$a->date} fällig';
 $string['ariaeventlistpagelimit'] = '{$a} Aktivitäten pro Seite anzeigen';
@@ -35,18 +35,20 @@ $string['ariaeventlistpaginationnavdates'] = 'Paginierung der Zeitleiste-Aktivit
 $string['ariaviewselector'] = 'Zeitleiste-Einträge sortieren';
 $string['ariaviewselectoroption'] = '{$a} Sortieroption';
 $string['duedate'] = 'Fälligkeitsdatum';
-$string['morecourses'] = 'Mehr Kurse';
+$string['moreactivities'] = 'Mehr Aktivitäten';
+$string['morecourses'] = 'Weitere Kurse';
 $string['next30days'] = 'Nächste 30 Tage';
 $string['next3months'] = 'Nächste 3 Monate';
 $string['next6months'] = 'Nächste 6 Monate';
 $string['next7days'] = 'Nächste 7 Tage';
 $string['nocoursesinprogress'] = 'Keine laufenden Kurse';
-$string['noevents'] = 'Keine bevorstehenden Aktivitäten fällig';
+$string['noevents'] = 'Keine Aktivität erfordert ein Handeln';
 $string['overdue'] = 'Überfällig';
 $string['pluginname'] = 'Zeitleiste';
 $string['privacy:metadata:timelinefilterpreference'] = 'Einstellung für die Datumsfilterung für den Zeitleisten-Block';
 $string['privacy:metadata:timelinelimitpreference'] = 'Einstellung für die Seitenbegrenzung im Block \'Zeitleiste\'.';
 $string['privacy:metadata:timelinesortpreference'] = 'Einstellung für die Sortierpräferenz für den Zeitleisten-Block';
+$string['searchevents'] = 'Suche nach Aktivitätstyp oder Aktivitätsname';
 $string['sortbycourses'] = 'Sortiert nach Kursen';
 $string['sortbydates'] = 'Sortiert nach Datum';
 $string['timeline'] = 'Zeitleiste';

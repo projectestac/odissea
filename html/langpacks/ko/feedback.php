@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ko', version '3.11'.
+ * Strings for component 'feedback', language 'ko', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -130,6 +130,8 @@ $string['horizontal'] = '수평으로';
 $string['import_questions'] = '질문 가져오기';
 $string['import_successfully'] = '가져오기 성공';
 $string['importfromthisfile'] = '이 파일로부터 가져오기';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = '안내';
 $string['infotype'] = '안내-유형';
 $string['insufficient_responses'] = '부족한 응답';
@@ -162,6 +164,7 @@ $string['modulename_help'] = '피드백 활동 모듈은 선생님이 선다형,
 * 참가자들로 하여금 강좌 모듈, 행사에 등록하도록 함
 * 강좌 선택, 학교 정책등에 대한 설문 조사
 * 학생들로 하여금 따돌림 사건을 익명으로 보고하는 따돌림 방지 설문조사';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = '피드백 활동';
 $string['move_item'] = '이 질문 이동';
 $string['multichoice'] = '선다형질문';

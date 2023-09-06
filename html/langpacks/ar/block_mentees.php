@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'ar', version '3.11'.
+ * Strings for component 'block_mentees', language 'ar', version '4.1'.
  *
  * @package     block_mentees
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configtitle'] = 'عنوان كتلة التلاميذ';
 $string['configtitleblankhides'] = 'عنوان كتلة التلاميذ (بلا عنوان إذا ترك فارغاً)';
 $string['mentees:addinstance'] = 'إضافة كتلة جديدة للتلاميذ';
-$string['mentees:myaddinstance'] = 'إضافة كتلة جديدة للتلاميذ إلى لوحة التحكم';
+$string['mentees:myaddinstance'] = 'إضافة كتلة جديدة للتلاميذ إلى دفة القيادة';
 $string['newmenteesblock'] = '(كتلة تلاميذ جديدة)';
 $string['pluginname'] = 'التلاميذ';
 $string['privacy:metadata'] = 'كتلة التلاميذ تظهر فقط البيانات المخزونة في مواضع أخرى.';

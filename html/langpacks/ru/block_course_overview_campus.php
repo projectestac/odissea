@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview_campus', language 'ru', version '3.11'.
+ * Strings for component 'block_course_overview_campus', language 'ru', version '4.1'.
  *
  * @package     block_course_overview_campus
  * @category    string
@@ -31,6 +31,7 @@ $string['all'] = 'Все';
 $string['appearancesettingheading'] = 'Внешний вид';
 $string['blocktitle'] = 'Название блока';
 $string['blocktitle_desc'] = 'Это название отображается в заголовке блока';
+$string['blocktitledefault'] = 'Обзор курсов';
 $string['category'] = 'Родительская категория';
 $string['categorycoursefilter'] = 'Активировать фильтр родительских категорий';
 $string['categorycoursefilter_desc'] = 'Разрешить пользователям фильтровать курсы по родительской категории';
@@ -44,7 +45,7 @@ $string['defaultterm_desc'] = 'Если пользователь ранее не
 $string['enablehidecourses'] = 'Включить возможность скрывать курсы';
 $string['enablehidecourses_desc'] = 'Включает возможность скрывать курсы, что позволяет пользователям скрывать курсы из списка обзора курсов';
 $string['firstrowcoursename'] = 'Первая строка: Стиль названия курса';
-$string['firstrowcoursename_desc'] = 'Показать полное или краткое название курса в первой строке элемента списка в обзоре курса';
+$string['firstrowcoursename_desc'] = 'Показать полное или краткое название курса в первой строке элемента списка обзора курсов';
 $string['hiddencourses'] = 'скрытых курсов';
 $string['hidecourse'] = 'Скрыть курс из списка обзора курсов';
 $string['hidecoursessettingheading'] = 'Скрыть курсы';
@@ -61,24 +62,38 @@ $string['ordersettingheading'] = 'Список обзора курсов: Сор
 $string['other'] = 'Другие';
 $string['pluginname'] = 'Обзор курсов кампуса';
 $string['prioritizemyteachedcourses'] = 'В первую очередь курсы, которые я преподаю';
-$string['prioritizemyteachedcourses_desc'] = 'Курсы, в которых пользователю назначена роль учителя, отображаются первыми в списке в обзоре курса';
+$string['prioritizemyteachedcourses_desc'] = 'Курсы, в которых пользователю назначена роль учителя, отображаются первыми в списке обзора курсов';
+$string['privacy:metadata:preference:hidecourse'] = 'Статус «показан/скрыт» для курса в списке обзора курсов.';
+$string['privacy:metadata:preference:local_boostcoc-activefilters'] = 'Список активных в данный момент фильтров для использования в сопутствующем плагине «Boost — обзор курсов кампуса».';
+$string['privacy:metadata:preference:local_boostcoc-notshowncourses'] = 'Список не показываемых в данный момент курсов для использования в сопутствующем плагине «Boost — обзор курсов кампуса».';
+$string['privacy:metadata:preference:selectedcategory'] = 'Текущий выбор фильтра родительских категорий.';
+$string['privacy:metadata:preference:selectedteacher'] = 'Текущий выбор фильтра учителей.';
+$string['privacy:metadata:preference:selectedterm'] = 'Текущий выбор фильтра периодов.';
+$string['privacy:metadata:preference:selectedtoplevelcategory'] = 'Текущий выбор фильтра категорий верхнего уровня.';
+$string['privacy:request:preference:hidecourse'] = 'Статус «показан/скрыт» для курса «{$a->item}» в списке обзора курсов: {$a->value}.';
+$string['privacy:request:preference:local_boostcoc-activefilters'] = 'Список активных в данный момент фильтров для использования в сопутствующем плагине «Boost — обзор курсов кампуса»: {$a->value}.';
+$string['privacy:request:preference:local_boostcoc-notshowncourses'] = 'Список не показываемых в данный момент курсов для использования в сопутствующем плагине «Boost — обзор курсов кампуса»: {$a->value}.';
+$string['privacy:request:preference:selectedcategory'] = 'Текущий выбор фильтра родительских категорий: {$a->value}.';
+$string['privacy:request:preference:selectedteacher'] = 'Текущий выбор фильтра учителей: {$a->value}.';
+$string['privacy:request:preference:selectedterm'] = 'Текущий выбор фильтра периодов: {$a->value}.';
+$string['privacy:request:preference:selectedtoplevelcategory'] = 'Текущий выбор фильтра категорий верхнего уровня: {$a->value}.';
 $string['secondrowhideonphones'] = 'Вторая строка: скрывать на телефонах';
 $string['secondrowhideonphones_desc'] = 'Скрывает вторую строку на мобильных телефонах для экономии места';
 $string['secondrowshowcategoryname'] = 'Вторая строка: Показать название родительской категории';
-$string['secondrowshowcategoryname_desc'] = 'Показать название категории курса во второй строке элемента списка в обзоре курса';
+$string['secondrowshowcategoryname_desc'] = 'Показать название родительской категории для курса во второй строке элемента списка обзора курсов';
 $string['secondrowshowshortname'] = 'Вторая строка: Показать краткое название';
-$string['secondrowshowshortname_desc'] = 'Показать краткое название курса во второй строке элемента списка в обзоре курса';
+$string['secondrowshowshortname_desc'] = 'Показать краткое название курса во второй строке элемента списка обзора курсов';
 $string['secondrowshowteachername'] = 'Вторая строка: Показать имя учителя';
-$string['secondrowshowteachername_desc'] = 'Показать имя учителя (имена учителей) во второй строке элемента списка в обзоре курса';
+$string['secondrowshowteachername_desc'] = 'Показать имя учителя (имена учителей) во второй строке элемента списка обзора курсов. Если учителей несколько, имена будут отсортированы сначала по <a href="/admin/roles/manage.php">глобальному порядку ролей</a>, а затем по фамилиям учителей.';
 $string['secondrowshowteachernamestyle'] = 'Вторая строка: формат имени учителя';
 $string['secondrowshowteachernamestyle_desc'] = 'Определяет, как будет показано имя учителя на второй строке элемента в списке обзора курсов<br /><em>Эта настройка учитывается только тогда, когда активирован параметр «Показать имя учителя»</em>';
 $string['secondrowshowtermname'] = 'Вторая строка: Показать название периода';
-$string['secondrowshowtermname_desc'] = 'Показать  название периода для курса во второй строке элемента списка в обзоре курса';
+$string['secondrowshowtermname_desc'] = 'Показать  название периода для курса во второй строке элемента списка обзора курсов';
 $string['secondrowshowtoplevelcategoryname'] = 'Вторая строка: Показать название категории верхнего уровня';
-$string['secondrowshowtoplevelcategoryname_desc'] = 'Показать название категории верхнего уровня для курса во второй строке элемента списка в обзоре курса';
+$string['secondrowshowtoplevelcategoryname_desc'] = 'Показать название категории верхнего уровня для курса во второй строке элемента списка обзора курсов';
 $string['semester_desc'] = 'Семестр (Календарный год делится на два периода)';
 $string['settingspage_categoryfilter'] = 'Фильтр родительских категорий';
-$string['settingspage_courseoverviewlist'] = 'Список в обзоре курса';
+$string['settingspage_courseoverviewlist'] = 'Список обзора курсов';
 $string['settingspage_general'] = 'Общие';
 $string['settingspage_hidecourses'] = 'Скрыть курсы';
 $string['settingspage_teacherfilter'] = 'Фильтр учителей';

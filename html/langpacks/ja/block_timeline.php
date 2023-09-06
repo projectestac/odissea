@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'ja', version '3.11'.
+ * Strings for component 'block_timeline', language 'ja', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'すべて';
-$string['ariadayfilter'] = 'タイムラインアイテムをフィルタする';
+$string['ariadayfilter'] = '日付でタイムラインをフィルタする';
 $string['ariadayfilteroption'] = '{$a} フィルタオプション';
 $string['ariaeventlistitem'] = '{$a->course} の {$a->name} 活動は {$a->date} が期限です。';
 $string['ariaeventlistpagelimit'] = '1ページあたり {$a} 活動を表示する';
@@ -35,18 +35,20 @@ $string['ariaeventlistpaginationnavdates'] = 'タイムライン活動ページ�
 $string['ariaviewselector'] = 'タイムラインアイテムを並べ替える';
 $string['ariaviewselectoroption'] = '{$a} 並べ替えオプション';
 $string['duedate'] = '期限';
-$string['morecourses'] = 'コースをさらに';
+$string['moreactivities'] = 'さらに活動を表示する';
+$string['morecourses'] = 'さらにコースを表示する';
 $string['next30days'] = '次の30日';
 $string['next3months'] = '次の3ヶ月';
 $string['next6months'] = '次の6ヶ月';
 $string['next7days'] = '次の7日';
 $string['nocoursesinprogress'] = '進行中のコースはありません。';
-$string['noevents'] = '直近の活動期限はありません。';
+$string['noevents'] = 'アクションを必要とする活動はありません。';
 $string['overdue'] = '期限切れ';
 $string['pluginname'] = 'タイムライン';
-$string['privacy:metadata:timelinefilterpreference'] = 'タイムラインブロックのユーザ日付フィルタプリファレンスです。';
-$string['privacy:metadata:timelinelimitpreference'] = 'タイプラインブロックのユーザページ制限プリファレンスです。';
-$string['privacy:metadata:timelinesortpreference'] = 'タイムラインブロックのユーザ並べ替えプリファレンスです。';
+$string['privacy:metadata:timelinefilterpreference'] = 'タイムラインブロックのユーザ日付フィルタプレファレンスです。';
+$string['privacy:metadata:timelinelimitpreference'] = 'タイプラインブロックのユーザページ制限プレファレンスです。';
+$string['privacy:metadata:timelinesortpreference'] = 'タイムラインブロックのユーザ並べ替えプレファレンスです。';
+$string['searchevents'] = '活動タイプまたは活動名で検索する';
 $string['sortbycourses'] = 'コースで並べ替える';
 $string['sortbydates'] = '日付で並べ替える';
 $string['timeline'] = 'タイムライン';

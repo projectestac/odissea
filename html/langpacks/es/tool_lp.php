@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'es', version '3.11'.
+ * Strings for component 'tool_lp', language 'es', version '4.1'.
  *
  * @package     tool_lp
  * @category    string
@@ -166,6 +166,7 @@ $string['nouserevidence'] = 'No se ha agregado evidencia de aprendizajes previos
 $string['nouserplans'] = 'Aún no se han creado planes de aprendizaje.';
 $string['oneplanwascreated'] = 'Se creó un plan de aprendizaje';
 $string['outcome'] = 'Resultado';
+$string['overridegrade'] = 'Sobreescribir la evaluación de la competencia cuando se haya completado.';
 $string['parentcompetency'] = 'Competencia padre';
 $string['parentcompetency_edit'] = 'Editar la competencia padre';
 $string['parentcompetency_help'] = 'Definir el padre bajo el que se añadirá la nueva competencia. Puede ser otra competencia dentro del mismo marco o la raíz del marco de competencias, lo que creará una competencia de nivel superior.';

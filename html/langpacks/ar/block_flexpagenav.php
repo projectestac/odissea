@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_flexpagenav', language 'ar', version '3.11'.
+ * Strings for component 'block_flexpagenav', language 'ar', version '4.1'.
  *
  * @package     block_flexpagenav
  * @category    string
@@ -30,7 +30,7 @@ $string['addmenudotdotdot'] = 'إضافة قائمة جديدة...';
 $string['dockable'] = 'السماح بإرساء هذه الكتلة';
 $string['dockable_help'] = 'يقرر ما إذا كان بالإمكان إرساء الكتلة من قبل المستخدم أم لا. يرجى ملاحظة أن الإرسال يمكن تعطيله بسبب الاستثناءات الآتية:
 <ul>
-    <li>إعدادات القالب يمكنها تعطيل إرساء الكتل.</li>
+    <li>إعدادات المظهر يمكنها تعطيل إرساء الكتل.</li>
     <li>لوحدها قوائم Flexpage المعروضة بشكل أشجار يمكن إرساؤها.</li>
     <li>لا يمكن إرساء الكتل التي بلا عناوين.</li>
 </ul>';

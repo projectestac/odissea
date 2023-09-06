@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'gl', version '3.11'.
+ * Strings for component 'debug', language 'gl', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -31,7 +31,7 @@ $string['cannotbenull'] = '{$a} non pode ser NULO.';
 $string['cannotdowngrade'] = 'Non é posíbel reverter {$a->plugin} dende {$a->oldversion} cara a {$a->newversion}.';
 $string['cannotfindadmin'] = 'Non foi posíbel atopar un usuario administrador.';
 $string['cannotinitpage'] = 'Non é posíbel inicializar de forma completa a paxina: incorrecta {$a->name} ID {$a->id}';
-$string['cannotsetuptable'] = 'As táboas {$a} NON foi posíbel estabelecelas satisfactoriamente.';
+$string['cannotsetuptable'] = 'As táboas {$a} NON foi posíbel estabelecelas correctamente.';
 $string['codingerror'] = 'Detectouse un erro no código, debe ser arranxado por un programador: {$a}';
 $string['configmoodle'] = 'Este Moodle non está ben configurado. Debe editar primeiro o ficheiro config.php.';
 $string['debuginfo'] = 'Información da depuración';
@@ -41,7 +41,7 @@ $string['invalideventdata'] = 'Enviáronse datos incorrectos dende «eventdata»
 $string['invalidparameter'] = 'Detectouse un valor incorrecto de parámetro';
 $string['invalidresponse'] = 'Detectouse un valor incorrecto de resposta';
 $string['line'] = 'Liña';
-$string['missingconfigversion'] = 'A táboa de configuración non contén a versión, non é posíbel continuar.';
+$string['missingconfigversion'] = 'A táboa de configuración non contén a versión. Non pode continuar.';
 $string['modulenotexist'] = 'O módulo {$a} non existe';
 $string['morethanonerecordinfetch'] = 'Atopouse máis dun rexistro en fetch()';
 $string['mustbeoveride'] = 'O método abstracto {$a} debe ser substituído.';
@@ -55,6 +55,17 @@ $string['notables'] = 'Non hai táboas';
 $string['outputbuffer'] = 'Búfer de saída';
 $string['phpvaroff'] = 'A variábel do servidor PHP «{$a->name}» debería estar desactivada - {$a->link}';
 $string['phpvaron'] = 'A variábel do servidor PHP «{$a->name}» non está activada - {$a->link}';
+$string['reactive_highlightoff'] = 'Resaltado DESACTIVADO';
+$string['reactive_highlighton'] = 'Resaltado ACTIVADO';
+$string['reactive_instances'] = 'Instancias reactivas';
+$string['reactive_noinstances'] = 'Esta páxina non ten instancias reactivas.';
+$string['reactive_pin'] = 'Fixar';
+$string['reactive_readmodeoff'] = 'Modo lectura DESACTIVADO';
+$string['reactive_readmodeon'] = 'Modo lectura ACTIVADO';
+$string['reactive_resetpanel'] = 'Reiniciar o panel';
+$string['reactive_saveingwarning'] = 'Advertencia: a edición do estado pode provocar resultados inesperados.';
+$string['reactive_statedata'] = 'Datos de estado';
+$string['reactive_unpin'] = 'Desprender';
 $string['sessionmissing'] = 'Falta o obxecto {$a} na sesión';
 $string['sqlrelyonobsoletetable'] = 'Este SQL basease na(s) táboa(s) obsoleta(s): {$a}! O código debe ser arranxado por un desenvolvedor.';
 $string['stacktrace'] = 'Traza de chamadas';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'el', version '3.11'.
+ * Strings for component 'message', language 'el', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Φραγή όλων των νέων μηνυμά�
 $string['blockuser'] = 'Αποκλεισμός χρήστη';
 $string['blockuserconfirm'] = 'Είστε βέβαιοι ότι θέλετε να αποκλείσετε τον/την {$a};';
 $string['blockuserconfirmbutton'] = 'Μπλοκ';
-$string['canceledit'] = 'Ακύρωση επεξεργασίας μηνυμάτων';
 $string['cancelselection'] = 'Ακύρωση επιλογής μηνυμάτων';
 $string['cantblockuser'] = 'Δεν μπορείτε να αποκλείσετε τον/την {$a} επειδή έχει ένα ρόλο με δικαίωμα να στέλνει μηνύματα σε όλους τους χρήστες';
 $string['contactableprivacy'] = 'Αποδοχή μηνυμάτων από:';
@@ -52,7 +51,7 @@ $string['contactblocked'] = 'Η επαφή αποκλείστηκε';
 $string['contactrequests'] = 'Αιτήματα επαφής';
 $string['contactrequestsent'] = 'Το αίτημα επαφής στάλθηκε';
 $string['contacts'] = 'Επαφές';
-$string['conversationactions'] = 'Μενού ενεργειών συνομιλίας';
+$string['conversationactions'] = 'Μενού ενεργειών συζήτησης';
 $string['decline'] = 'Άρνηση';
 $string['defaultmessageoutputs'] = 'Ρυθμίσεις ειδοποιήσεων';
 $string['defaults'] = 'Προεπιλογές';
@@ -105,8 +104,6 @@ $string['loggedoffdescription'] = 'Όταν δεν έχετε συνδεθεί �
 $string['managemessageoutputs'] = 'Προεπιλεγμένες προτιμήσεις ειδοποιήσεων';
 $string['message'] = 'Μήνυμα';
 $string['messagecontactrequest'] = 'Ο/Η χρήστης {$a->user} ζητά να προστεθεί ως επαφή. Επισκεφτείτε τη σελίδα <a href="{$a->url}">αιτήματα επικοινωνίας</a> για να απαντήσετε στο αίτημα';
-$string['messagecontactrequestsnotification'] = 'Ο/Η {$a} ζητά να προστεθεί ως επαφή';
-$string['messagecontactrequestsnotificationsubject'] = 'Αίτημα επαφής από τον/την {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: Αίτημα επικοινωνίας από {$a->user}';
 $string['messagecontentaudio'] = 'Ήχος';
 $string['messagecontentimage'] = 'Εικόνα';
@@ -133,11 +130,10 @@ $string['newonlymsg'] = 'Εμφάνιση μόνο νέων';
 $string['nocontactrequests'] = 'Καθόλου αιτήματα επαφών';
 $string['nocontacts'] = 'Καμία επαφή';
 $string['nocontactsgetstarted'] = 'Καθόλου επαφές';
-$string['nofavourites'] = 'Δεν υπάρχουν συνομιλίες με αστερίσκο';
+$string['nofavourites'] = 'Δεν υπάρχουν συζητήσεις με αστερίσκο';
 $string['noframesjs'] = 'Χρήση μιας περισσότερο προσβάσιμης διεπαφής';
 $string['nogroupconversations'] = 'Καθόλου ομαδικές συζητήσεις';
 $string['noindividualconversations'] = 'Καθόλου ιδιωτικές συζητήσεις';
-$string['nomessages'] = 'Δεν υπάρχουν μηνύματα';
 $string['nomessagesfound'] = 'Δε βρέθηκαν μηνύματα';
 $string['noncontacts'] = 'Μη επαφές';
 $string['nonotifications'] = 'Δεν έχετε καμία ειδοποίηση';
@@ -156,18 +152,14 @@ $string['offline'] = 'Εκτός σύνδεσης';
 $string['on'] = 'ΝΑΙ';
 $string['online'] = 'Εντός σύνδεσης';
 $string['otherparticipants'] = 'Άλλοι συμμετέχοντες';
-$string['outputdisabled'] = 'Έξοδος απενεργοποιημένη';
-$string['outputdoesnotexist'] = 'Η έξοδος μηνύματος δεν υπάρχει';
-$string['outputenabled'] = 'Ενεργοποιημένη έξοδος';
 $string['outputnotavailable'] = 'Μη διαθέσιμη';
-$string['outputnotconfigured'] = 'Δεν έχει ρυθμιστεί';
 $string['page-message-x'] = 'Οποιεσδήποτε σελίδες μηνύματος/-ων';
 $string['participants'] = 'Συμμετέχοντες';
 $string['pendingcontactrequests'] = 'Υπάρχουν {$a} αιτήματα επικοινωνίας σε εκκρεμότητα';
 $string['permitted'] = 'Επιτρέπεται';
 $string['privacy'] = 'Ιδιωτικότητα';
 $string['privacy:export:conversationprefix'] = 'Συζήτηση:';
-$string['privacy:metadata:core_favourites'] = 'Οι συνομιλίες που επισημάνθηκαν με αστερίσκο από το χρήστη';
+$string['privacy:metadata:core_favourites'] = 'Οι συζητήσεις που επισημάνθηκαν με αστερίσκο από το χρήστη';
 $string['privacy:metadata:message_contact_requests'] = 'Η λίστα των αιτημάτων επικοινωνίας';
 $string['privacy:metadata:message_contact_requests:requesteduserid'] = 'Το αναγνωριστικό του χρήστη που έλαβε το αίτημα επικοινωνίας';
 $string['privacy:metadata:message_contact_requests:timecreated'] = 'Η ώρα δημιουργίας του αιτήματος επαφής';
@@ -207,7 +199,7 @@ $string['privacy:metadata:messages:useridfrom'] = 'Το αναγνωριστικ
 $string['privacy:metadata:notifications'] = 'Ειδοποιήσεις';
 $string['privacy:metadata:notifications:component'] = 'Το στοιχείο λογισμικού που είναι υπεύθυνο για την αποστολή της ειδοποίησης';
 $string['privacy:metadata:notifications:contexturl'] = 'Η διεύθυνση URL που σχετίζεται με αυτή την ειδοποίηση';
-$string['privacy:metadata:notifications:contexturlname'] = 'Το όνομα του πλαισίου';
+$string['privacy:metadata:notifications:contexturlname'] = 'Το όνομα του πλαισίου συμφραζομένων';
 $string['privacy:metadata:notifications:customdata'] = 'Προσαρμοσμένα δεδομένα που συνήθως περιέχουν εσωτερικά αναγνωριστικά και μια δημόσια διεύθυνση URL της εικόνας του αποστολέα (αν υπάρχει)';
 $string['privacy:metadata:notifications:eventtype'] = 'Ο τύπος του γεγονότος';
 $string['privacy:metadata:notifications:fullmessage'] = 'Η πλήρης ειδοποίηση';

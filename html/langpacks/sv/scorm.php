@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'sv', version '3.11'.
+ * Strings for component 'scorm', language 'sv', version '4.1'.
  *
  * @package     scorm
  * @category    string
@@ -91,7 +91,7 @@ $string['completed'] = 'Slutfört';
 $string['completiondetail:allscos'] = 'Gör alla delar av denna aktivitet';
 $string['completiondetail:completionscore'] = 'Få en poäng på {$a} eller högre';
 $string['completiondetail:completionstatuscompleted'] = 'Slutför aktiviteten';
-$string['completiondetail:completionstatuscompletedandpassed'] = 'Slutför och klara aktiviteten';
+$string['completiondetail:completionstatuscompletedorpassed'] = 'Slutför och klara aktiviteten';
 $string['completiondetail:completionstatuspassed'] = 'Klara aktiviteten';
 $string['completionscorerequired'] = 'Kräv ett lägsta betyg';
 $string['completionscorerequired_help'] = 'Om du aktiverar den här inställningen måste en användare ha minst den angivna poängen, samt ha uppfyllt övriga slutförandevillkor, för att markeras som slutförd i den här SCORM-aktiviteten.';
@@ -133,7 +133,6 @@ $string['displaydesc'] = 'Om SCORM-paketet ska visas i ett nytt fönster.';
 $string['displaysettings'] = 'Visningsalternativ';
 $string['dnduploadscorm'] = 'Lägg till som SCORM-paket';
 $string['domxml'] = 'DOMXML externt bibliotek';
-$string['duedate'] = 'Sista inskickningsdatum';
 $string['element'] = 'Element';
 $string['enter'] = 'Ange';
 $string['entercourse'] = 'Ange kurs';
@@ -216,10 +215,12 @@ $string['indicator:cognitivedepth'] = 'SCORM kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en SCORM-aktivitet.';
 $string['indicator:cognitivedepthdef'] = 'SCORM kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har uppnått denna procentandel av det kognitiva engagemanget som erbjuds av SCORM-aktiviteterna under detta analysintervall (Nivåer = Ej visad, Visad, Skicka in, Visa återkoppling)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'SCORM social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en SCORM-aktivitet.';
 $string['indicator:socialbreadthdef'] = 'SCORM social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av SCORM-aktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interaktioner';
 $string['invalidactivity'] = 'SCORM-aktiviteten är inkorrekt';
@@ -259,6 +260,7 @@ SCORM-aktiviteter kan användas:
 
 * För att presentera multimediainnehåll och animationer
 * Som ett bedömningsverktyg';
+$string['modulename_link'] = 'mod/scorm/view';
 $string['modulenameplural'] = 'SCORM-paket';
 $string['myaiccsessions'] = 'Mina AICC-sessioner';
 $string['myattempts'] = 'Mina försök';

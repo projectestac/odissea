@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_censor', language 'el', version '3.11'.
+ * Strings for component 'filter_censor', language 'el', version '4.1'.
  *
  * @package     filter_censor
  * @category    string
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['badwords'] = 'shit,fucked,fucker,fuck,dickhead,dick,cockhead,cock,cunt,asshole,arsehole,prick,bitch,jism,whore,slut,wanker,wank,bastard,dildo,masturbate,orgasm,penis,nigger,pussy,vagina,σκατά,γαμημένο,γαμώ,μουνί,κωλο,κόλο,μαλάκα,μαλακισμένο,οργασμός,πόρνη,πουτάνα,μαλακιστήρι,μπάσταρδο,αυνανισμός,πέος,πούτσα,πούτσος,μουνάκι,βυζιά';
-$string['filtername'] = 'Λογοκρισία του λόγου';
-$string['privacy:metadata'] = 'Το πρόσθετο «Λογοκρισία Word» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['filtername'] = 'Λογοκρισία λέξεων';
+$string['privacy:metadata'] = 'Το πρόσθετο «Λογοκρισία λέξεων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

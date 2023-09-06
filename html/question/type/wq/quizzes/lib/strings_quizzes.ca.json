@@ -111,7 +111,7 @@
 		"quizzes_studio_home_initial_graph_content_label": "Contingut inicial",
 		"quizzes_studio_home_correct_graph_answer_label": "Resposta correcta",
 
-		"quizzes_studio_home_activity_list_label": "Settings",
+		"quizzes_studio_home_activity_list_label": "Configuració",
 		"quizzes_studio_home_input_options_label": "Opcions d'entrada",
 		"quizzes_studio_home_validation_options_label": "Opcions de validació",
 		"quizzes_studio_home_variables_options_label": "Variables aleatòries",
@@ -502,7 +502,7 @@
 		"gotsession": "Canvis desats (revisió ${n}).",
 		"showcas": "Empra Wiris CAS",
 		"showcalcme": "Empra CalcMe",
-		"learnmore": "Learn more",
+		"learnmore": "Més informació",
 
 
 		"catalan": "Català",
@@ -570,7 +570,7 @@
 		"quizzes_studio_home_random_variables_help_button": "Documentació de les variables aleatòries",
 
 		"quizzes_studio_home_random_variable_row_variable_name_text": "Nom de la variable",
-		"quizzes_studio_home_random_variable_row_prefix_text": "Núm.",
+		"quizzes_studio_home_random_variable_row_prefix_text": "#",
 		"quizzes_studio_home_random_variable_type_text": "és un enter entre",
 		"quizzes_studio_home_random_variable_min_value_text": "valor mín.",
 		"quizzes_studio_home_random_variable_row_and_text": "i",
@@ -586,8 +586,8 @@
 		
 		"evaluate_keyword": "avalua",
 		
-		"home_getting_started_welcome_header_text": "Et donem la benvinguda a WirisQuizzes 4.7.0",
-        "home_getting_started_welcome_description_text": "Hola, hem incorporat una secció d’introducció al nostre menú per ajudar-te a obtenir més informació sobre WirisQuizzes si accedeixes als nostres recursos de documentació, formació i notícies.",
+		"home_getting_started_welcome_header_text": "Presentem WirisQuizzes 4.8.0: ara amb respostes gràfiques escrites a mà",
+        "home_getting_started_welcome_description_text": "Ens complau presentar un nou tipus de resposta que permet als alumnes respondre dibuixant a mà un gràfic. Per obtenir més informació sobre aquesta funció, consulteu les nostres notes de la versió i la documentació. Esperem que vostè i els seus alumnes gaudeixin d'aquesta nova incorporació a WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Notes de la versió",
         "home_getting_give_us_feedback_button_text": "Fes-nos arribar els teus comentaris",
         "home_getting_started_create_question_header_text": "Com crear la primera pregunta",
@@ -603,7 +603,15 @@
         "home_getting_started_contact_us_button_text": "Contacte",
         "home_getting_started_visit_our_webpage_button_text": "Visita el nostre lloc web",
         "home_getting_started_report_an_issue_button_text": "Informa sobre un problema",
-		"home_getting_started_list_button_text": "Introducció"
+		"home_getting_started_list_button_text": "Introducció",
+
+		"quizzes_studio_home_answer_type_sketch_label": "Esbós",
+		"quizzes_studio_home_initial_content_description_sketch": "Aquest és l'estat de contingut inicial de l'editor de gràfics que veuran els vostres alumnes quan provin de fer la pregunta. Tingueu en compte que la barra d'eines dels estudiants només tindrà els botons d'escriptura a mà i eliminació. Utilitzeu la funció \"Previsualització\" per veure l'aspecte que tindrà.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_1": "Introduïu la resposta correcta per a aquesta pregunta. Els alumnes utilitzaran l'eina d'escriptura a mà per dibuixar la seva solució, per la qual cosa hem definit una tolerància mínima per a respostes lleugerament inexactes. Podeu ajustar aquesta funció fent clic a les \"opcions de validació\".",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Utilitzeu el botó \"Previsualització\" per veure la vista de l'estudiant.",
+		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Tipus esbós",
+		"quizzes_demo_sketch_title_menu" : "Esbós",
+		"home_getting_started_documentation_button_text" : "Documentació"
 	}
 }
 

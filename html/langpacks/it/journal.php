@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'it', version '3.11'.
+ * Strings for component 'journal', language 'it', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -49,6 +49,7 @@ $string['journalquestion'] = 'Domanda del diario';
 $string['mailsubject'] = 'Feedback sul diario';
 $string['modulename'] = 'Diario';
 $string['modulename_help'] = 'Il diario è un\'attività che consente di registrare, anche quotidianamente, le riflessioni degli studenti. Il docente chiede ad ogni singolo studente di redigere un\'annotazione sul diario che può essere modificata dallo studente nell\'arco di tutta la durata del corso. Le annotazioni degli studenti sono riservate e possono essere lette esclusivamente dal docente, il quale può commentarle e valutarle.';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = 'Diari';
 $string['newjournalentries'] = 'Nuove annotazioni sul diario';
 $string['noentry'] = 'Nessuna annotazione';

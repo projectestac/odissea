@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'ar', version '3.11'.
+ * Strings for component 'checklist', language 'ar', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -36,6 +36,7 @@ $string['eventstudentchecksupdated'] = 'تدقيقات طالب تم تحديث�
 $string['eventteacherchecksupdated'] = 'تدقيقات معلم تم تحديثها';
 $string['guestsno'] = 'ليست لديك صلاحية معاينة قائمة التدقيق هذه';
 $string['linktomodule'] = 'النشاط المرتبط بهذا العنصر';
+$string['modulename_link'] = 'mod/checklist/view';
 $string['openlinkinnewwindow'] = 'أتريد الفتح في نافذة جديدة؟';
 $string['percentcompleteall'] = 'كل العناصر';
 $string['teachernoteditcheck'] = 'الطالب فقط';

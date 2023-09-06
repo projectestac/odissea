@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_equation', language 'ru', version '3.11'.
+ * Strings for component 'atto_equation', language 'ru', version '4.1'.
  *
  * @package     atto_equation
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cursorinfo'] = 'Стрелка показывают позицию нового элемента';
+$string['cursorinfo'] = 'Стрелка показывает позицию нового элемента';
 $string['editequation'] = 'Введите формулу, используя язык разметки <a href="{$a}" target="_blank">TeX</a>';
 $string['librarygroup1'] = 'Операторы';
 $string['librarygroup1_desc'] = 'Команды TeX, которые будут отображаться на вкладке «Операторы»';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'el', version '3.11'.
+ * Strings for component 'choice', language 'el', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -32,7 +32,7 @@ $string['answered'] = 'Απαντήθηκε';
 $string['atleastoneoption'] = 'Θα πρέπει να δώσετε τουλάχιστον μία πιθανή απάντηση.';
 $string['calendarend'] = '{$a} κλείνει';
 $string['calendarstart'] = '{$a} ανοίγει';
-$string['cannotsubmit'] = 'Λυπούμαστε, υπήρξε πρόβλημα κατά την υποβολή της επιλογής σας. Παρακαλώ προσπαθήστε ξανά.';
+$string['cannotsubmit'] = 'Λυπούμαστε, υπήρξε πρόβλημα κατά την υποβολή της επιλογής σας. Παρακαλούμε προσπαθήστε ξανά.';
 $string['choice'] = 'Επιλογή';
 $string['choice:addinstance'] = 'Προσθέστε μια νέα επιλογή';
 $string['choice:choose'] = 'Καταγραφή επιλογής';
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'Τροποποίηση και διαγρα�
 $string['choice:downloadresponses'] = 'Λήψη αποκρίσεων';
 $string['choice:readresponses'] = 'Εμφάνιση αποκρίσεων';
 $string['choice:view'] = 'Δείτε τη δραστηριότητα επιλογής';
-$string['choiceactivityname'] = 'Επιλογή: {$a}';
 $string['choiceclose'] = 'Επιτρέπονται αποκρίσεις μέχρι';
-$string['choicecloseson'] = 'Η επιλογή κλείνει στις {$a}';
 $string['choicefull'] = 'Μία ή περισσότερες από τις επιλογές που έχετε επιλέξει έχουν ήδη συμπληρωθεί. Η απόκρισή σας δεν έχει αποθηκευτεί. Παρακαλούμε, κάντε άλλη επιλογή.';
 $string['choicename'] = 'Όνομα επιλογής';
 $string['choiceopen'] = 'Να επιτρέπονται αποκρίσεις από';
@@ -95,7 +93,7 @@ $string['modulename_help'] = 'Το άρθρωμα επιλογής δραστη�
 * Ως μια γρήγορη δημοσκόπηση για την πρόκληση σκέψης για ένα θέμα
 * Για να δοκιμάσετε γρήγορα την κατανόηση των μαθητών
 * Για να διευκολυνθεί η λήψη αποφάσεων από τους μαθητές, για παράδειγμα, επιτρέποντας στους μαθητές να ψηφίσουν για μια κατεύθυνση για το μάθημα.';
-$string['modulename_link'] = 'άρθρωμα/επιλογή/εμφάνιση';
+$string['modulename_link'] = '';
 $string['modulenameplural'] = 'Επιλογές';
 $string['moveselectedusersto'] = 'Μετακίνησε τους επιλεγμένους χρήστες στο...';
 $string['multiplenotallowederror'] = 'Σε αυτήν την επιλογή δεν επιτρέπονται πολλές απαντήσεις';
@@ -120,7 +118,7 @@ $string['privacy'] = 'Ιδιωτικότητα αποτελεσμάτων';
 $string['privacy:metadata:choice_answers'] = 'Πληροφορίες για τις απαντήσεις(η) που έχει επιλέξει ο χρήστης για μια δεδομένη δραστηριότητα επιλογής';
 $string['privacy:metadata:choice_answers:choiceid'] = 'Το αναγνωριστικό της δραστηριότητας Επιλογής';
 $string['privacy:metadata:choice_answers:optionid'] = 'Το αναγνωριστικό της επιλογής που επέλεξε ο χρήστης.';
-$string['privacy:metadata:choice_answers:timemodified'] = 'Η χρονοσφραγίδα που δείχνει πότε τροποποιήθηκε η επιλογή από τον χρήστη';
+$string['privacy:metadata:choice_answers:timemodified'] = 'Η χρονοσήμανση που δείχνει πότε τροποποιήθηκε η επιλογή από τον χρήστη';
 $string['privacy:metadata:choice_answers:userid'] = 'Το αναγνωριστικό του χρήστη που απαντά σε αυτή τη δραστηριότητα επιλογής';
 $string['publish'] = 'Δημοσιοποίηση αποτελεσμάτων';
 $string['publishafteranswer'] = 'Εμφάνιση αποτελεσμάτων στο μαθητή αφού απαντήσει';

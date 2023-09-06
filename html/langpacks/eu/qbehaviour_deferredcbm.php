@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'eu', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'eu', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -37,6 +37,7 @@ $string['cbmgrades'] = 'CBM kalifikazioak';
 $string['cbmgrades_help'] = 'Ziurtasunean oinarritutako ebaluazioarekin (ingelesez Certainty Based Marking, CBM) erantzun guztiak C=1-ekin (zalantzan) ondo erantzunez gero %100-eko kalifikazioa lortzen da. Kalifikazioak %300-ra arte igo daitezke erantzun guztiak C=3-rekin (oso ziur) ondo erantzunez gero. Erantzun okerrek ordea penalizazio handiagoa dute erantzuna oso ziurtzat markatuz gero zalantzazkoa markatuz baino. Honek galdetegiaren kalifikazio negatiboak eskuratzera eraman dezake jendea.
 
 **Zehaztasuna** egoki dagoen %-a da ziurtasuna kontuan hartu gabe, baina galdera bakoitzerako gehieneko kalifikazioarekiko ponderatua. Ziurtasun gehiago eta gutxiagoko erantzunak ezberdintzeak galdera guztientzat ziurtasun berdina aukeratzeak baino kalifikazio hobeak ematen ditu. Hau **CBM Sarian** islatzen da. **Zehaztasuna**+**CBM Saria** **Zehaztasuna** baino jakintzaren neurri hobea da. Erantzun okerrek kalifikazio negatiboak eragin ditzakete, jakiten eta jakiten ez denaren inguruan begiratzeko ohartarazpen gisa.';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'CBM ebaluazioa {$a}';
 $string['certainty'] = 'Ziurtasuna';
 $string['certainty-1'] = 'Ideiarik ez';
@@ -50,6 +51,7 @@ Ziurtasun maila                 | C=1 (Zalantzan) | C=2 (Nahiko ziur) | C=3 (Oso
 Erantzun zuzenaren kalifikazioa |        1        |          2        |        3
 Erantzun okerraren kalifikazioa |        0        |         -2        |       -6
 Zuzen izatearen probabilitatea  |      <%67       |       %67-80      |      >%80';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = 'Idearik ez';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';

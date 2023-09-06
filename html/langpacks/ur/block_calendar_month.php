@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_month', language 'ur', version '3.11'.
+ * Strings for component 'block_calendar_month', language 'ur', version '4.1'.
  *
  * @package     block_calendar_month
  * @category    string
@@ -25,4 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'تقویم';
+$string['calendar_month:addinstance'] = 'ایک نیا کیلنڈر بلاک شامل کریں';
+$string['calendar_month:myaddinstance'] = 'ڈیش بورڈ میں ایک نیا کیلنڈر بلاک شامل کریں';
+$string['pluginname'] = 'کیلنڈر';
+$string['privacy:metadata'] = 'کیلنڈر بلاک صرف موجودہ کیلنڈر ڈیٹا دکھاتا ہے۔';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'it', version '3.11'.
+ * Strings for component 'debug', language 'it', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,12 @@ $string['notables'] = 'Non ci sono tabelle!';
 $string['outputbuffer'] = 'Buffer di output';
 $string['phpvaroff'] = 'La variabile PHP \'{$a->name}\' dovrebbe essere impostata ad Off - {$a->link}';
 $string['phpvaron'] = 'La variabile PHP \'{$a->name}\' non è impostata ad On - {$a->link}';
+$string['reactive_highlightoff'] = 'Evidenziazione OFF';
+$string['reactive_highlighton'] = 'Evidenziazione ON';
+$string['reactive_readmodeoff'] = 'Modalità lettura OFF';
+$string['reactive_readmodeon'] = 'Modalità lettura ON';
+$string['reactive_resetpanel'] = 'Reimposta apannello';
+$string['reactive_saveingwarning'] = 'Attenzione: la modifica dello stato può produrre risultati inattesi.';
 $string['sessionmissing'] = 'L\'oggetto {$a} manca dalla sessione';
 $string['sqlrelyonobsoletetable'] = 'Questo SQL fa affidamento su tabelle obsolete: {$a}!. Il tuo codice deve essere sistemato da uno sviluppatore.';
 $string['stacktrace'] = 'Stack trace';

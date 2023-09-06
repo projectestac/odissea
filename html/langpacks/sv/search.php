@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'sv', version '3.11'.
+ * Strings for component 'search', language 'sv', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -43,6 +43,7 @@ $string['confirm_delete'] = 'Vill du ta bort indexet för {$a}? Tills sökområd
 $string['confirm_deleteall'] = 'Vill du ta bort allt indexerat innehåll nu? Tills webbplatsen indexeras igen får användarna inga sökresultat.';
 $string['confirm_indexall'] = 'Vill du uppdatera indexerat innehåll nu? Om en stor mängd innehåll behöver indexeras kan det ta lång tid. För liveservrar bör du normalt överlåta indexeringen till den schemalagda aktiviteten "Global sökindexering".';
 $string['confirm_reindexall'] = 'Vill du indexera om allt webbplatsinnehåll nu? Om webbplatsen innehåller en stor mängd innehåll tar det lång tid och användarna kanske inte får fullständiga sökresultat innan indexeringen är klar.';
+$string['content:courserole'] = '{$a->role} i {$a->course}';
 $string['core-all'] = 'Allt';
 $string['core-course-content'] = 'Kursinnehåll';
 $string['core-courses'] = 'Kurser';
@@ -115,6 +116,7 @@ $string['schemaversionunknown'] = 'Sökmotorn känner inte till den aktuella sch
 $string['score'] = 'Resultat';
 $string['search'] = 'Sök';
 $string['search:course'] = 'Kurser';
+$string['search:course_teacher'] = 'Lärare';
 $string['search:customfield'] = 'Anpassade kursfält';
 $string['search:message_received'] = 'Meddelanden - mottagna';
 $string['search:message_sent'] = 'Meddelanden - skickade';
@@ -136,6 +138,7 @@ $string['thesewordsmustappear'] = 'De här orden måste visa sig';
 $string['thesewordsmustnotappear'] = 'De här orden får inte visa sig';
 $string['title'] = 'Titel';
 $string['tofetchtheseresults'] = 'för att hämta dessa resultat';
+$string['topresults'] = 'Toppträffar';
 $string['totalsize'] = 'Totalstorlek';
 $string['totime'] = 'Tidigare ändrad';
 $string['type'] = 'Typ';

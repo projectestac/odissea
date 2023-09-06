@@ -41,13 +41,19 @@ $adminroot = admin_get_root(); // need all settings
 $settingspage = $adminroot->locate($category, true);
 
 if (empty($settingspage) or !($settingspage instanceof admin_category)) {
-    print_error('categoryerror', 'admin', "$CFG->wwwroot/$CFG->admin/");
+    throw new \moodle_exception('categoryerror', 'error', "$CFG->wwwroot/$CFG->admin/");
 }
 
 if (!($settingspage->check_access())) {
-    print_error('accessdenied', 'admin');
+    throw new \moodle_exception('accessdenied', 'admin');
 }
 
+$hassiteconfig = has_capability('moodle/site:config', $PAGE->context);
+if ($hassiteconfig) {
+    $PAGE->add_header_action($OUTPUT->render_from_template('core_admin/header_search_input', [
+        'action' => new moodle_url('/admin/search.php'),
+    ]));
+}
 
 $statusmsg = '';
 $errormsg  = '';
@@ -75,7 +81,7 @@ if ($PAGE->user_allowed_editing() && $adminediting != -1) {
     $USER->editing = $adminediting;
 }
 $buttons = null;
-if ($PAGE->user_allowed_editing()) {
+if ($PAGE->user_allowed_editing() && !$PAGE->theme->haseditswitch) {
     $url = clone($PAGE->url);
     if ($PAGE->user_is_editing()) {
         $caption = get_string('blockseditoff');
@@ -140,13 +146,7 @@ if ($errormsg !== '') {
     echo $OUTPUT->notification($statusmsg, 'notifysuccess');
 }
 
-$path = array_reverse($settingspage->visiblepath);
-if (is_array($path)) {
-    $visiblename = join(' / ', $path);
-} else {
-    $visiblename = $path;
-}
-echo $OUTPUT->heading(get_string('admincategory', 'admin', $visiblename), 2);
+echo $OUTPUT->heading(get_string('admincategory', 'admin', $settingspage->visiblename), 2);
 
 echo html_writer::start_tag('form', array('action' => '', 'method' => 'post', 'id' => 'adminsettings'));
 echo html_writer::start_tag('div');
@@ -158,9 +158,7 @@ echo $outputhtml;
 echo html_writer::end_tag('fieldset');
 echo html_writer::end_tag('form');
 
-$PAGE->requires->yui_module('moodle-core-formchangechecker', 'M.core_formchangechecker.init', [[
-    'formid' => 'adminsettings'
-]]);
-$PAGE->requires->string_for_js('changesmadereallygoaway', 'moodle');
+// Add the form change checker.
+$PAGE->requires->js_call_amd('core_form/changechecker', 'watchFormById', ['adminsettings']);
 
 echo $OUTPUT->footer();

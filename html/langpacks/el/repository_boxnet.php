@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_boxnet', language 'el', version '3.11'.
+ * Strings for component 'repository_boxnet', language 'el', version '4.1'.
  *
  * @package     repository_boxnet
  * @category    string
@@ -41,6 +41,6 @@ $string['pluginname_help'] = 'Χώρος αποθήκευσης στο Box';
 $string['privacy:metadata:repository_boxnet'] = 'Το πρόσθετο «Αποθετήριο Box» δεν αποθηκεύει κανένα προσωπικό δεδομένο αλλά μεταβιβάζει δεδομένα χρήστη από το Moodle προς το απομακρυσμένο σύστημα.';
 $string['privacy:metadata:repository_boxnet:query'] = 'Το κείμενο αναζήτησης ερωτήματος χρήστη του αποθετηρίου Box.';
 $string['saved'] = 'Τα δεδομένα του Box αποθηκεύτηκαν';
-$string['shareurl'] = 'Διαμοιρασμός της τοποθεσίας';
+$string['shareurl'] = 'Κοινή χρήση της τοποθεσίας';
 $string['username'] = 'Όνομα χρήστη για το Box';
 $string['warninghttps'] = 'Το Box απαιτεί από τον ιστότοπό σας να χρησιμοποιεί το HTTPS για να λειτουργήσει ο αποθετήριο.';

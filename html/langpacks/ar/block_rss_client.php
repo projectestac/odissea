@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ar', version '3.11'.
+ * Strings for component 'block_rss_client', language 'ar', version '4.1'.
  *
  * @package     block_rss_client
  * @category    string
@@ -82,7 +82,7 @@ $string['rss_client:createprivatefeeds'] = 'إنشاء مغذيات إخباري
 $string['rss_client:createsharedfeeds'] = 'إنشاء خدمة التغذية الاخبارية المشتركة';
 $string['rss_client:manageanyfeeds'] = 'إدارة أي خدمة تغذية إخبارية';
 $string['rss_client:manageownfeeds'] = 'إدارة خدمة التغذية الإخبارية الخاصة به';
-$string['rss_client:myaddinstance'] = 'إضافة كتلة جديدة لمغذي الأخبار عن بعد إلى لوحة التحكم';
+$string['rss_client:myaddinstance'] = 'إضافة كتلة جديدة لمغذي الأخبار عن بعد إلى دفة القيادة';
 $string['seeallfeeds'] = 'شاهد كل التغذيات';
 $string['sharedfeed'] = 'تغذية مشتركة';
 $string['shownumentrieslabel'] = 'الحد الاقصى لعدد المدخلات المغروضة في كل كتلة';

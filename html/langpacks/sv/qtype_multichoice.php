@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'sv', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'sv', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -63,6 +63,7 @@ $string['pleaseselectananswer'] = 'Välj ett svar.';
 $string['pleaseselectatleastoneanswer'] = 'Välj ett eller flera svar.';
 $string['pluginname'] = 'Flerval';
 $string['pluginname_help'] = 'Man väljer från olika svaralternativ när man svarar på frågan (som även kan innehålla en bild). En flervalsfråga kan ha ett eller flera korrekta svar.';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = 'Lägger till en flervalsfråga';
 $string['pluginnameediting'] = 'Redigerar en flervalsfråga';
 $string['pluginnamesummary'] = 'Tillåter val av ett eller flera svar från en fördefinierad lista.';
@@ -73,6 +74,7 @@ $string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök 
 $string['privacy:preference:showstandardinstruction'] = 'Om standardinstruktionen visas.';
 $string['privacy:preference:shuffleanswers'] = 'Om svaren ska blandas automatiskt.';
 $string['privacy:preference:single'] = 'Om svaret är enskilt med alternativknappar eller flera med kryssrutor.';
+$string['regradeissuenumchoiceschanged'] = 'Antalet svarsalternativ i frågan har ändrats.';
 $string['selectmulti'] = 'Välj ett eller flera alternativ:';
 $string['selectone'] = 'Välj ett av alternativen:';
 $string['showstandardinstruction'] = 'Visa svarsinstruktioner?';

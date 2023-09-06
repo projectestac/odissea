@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'eu', version '3.11'.
+ * Strings for component 'availability_completion', language 'eu', version '4.1'.
  *
  * @package     availability_completion
  * @category    string
@@ -35,10 +35,10 @@ $string['missing'] = '(Jarduera falta da)';
 $string['option_complete'] = 'osatutzat markatu behar da';
 $string['option_fail'] = 'gutxiegi kalifikazioarekin osatua egon behar du';
 $string['option_incomplete'] = 'ez du osatutzat markatuta egon behar';
-$string['option_pass'] = 'gaindituta kalifikazioarekin osatua egon behar da';
+$string['option_pass'] = 'gainditzeko kalifikazioarekin osatua egon behar da';
 $string['option_previous'] = 'Osaketaren jarraipena duen aurreko jarduera';
-$string['pluginname'] = 'Jarduera-osaketaren araberako baldintza';
-$string['privacy:metadata'] = 'Jarduera-osaketaren araberako baldintza pluginak ez du datu pertsonalik biltzen.';
+$string['pluginname'] = 'Jarduera-osaketaren araberako eskuragarritasun baldintza';
+$string['privacy:metadata'] = 'Jarduera-osaketaren araberako eskuragarritasun baldintza pluginak ez du datu pertsonalik biltzen.';
 $string['requires_complete'] = '<strong>{$a}</strong> jarduera osatutzat markatuta egotea';
 $string['requires_complete_fail'] = '<strong>{$a}</strong> jarduera osatua eta gainditu gabe egotea';
 $string['requires_complete_pass'] = '<strong>{$a}</strong> jarduera osatua eta gaindituta egotea';

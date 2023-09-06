@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_fn_marking', language 'ar', version '3.11'.
+ * Strings for component 'block_fn_marking', language 'ar', version '4.1'.
  *
  * @package     block_fn_marking
  * @category    string
@@ -36,9 +36,9 @@ $string['blocksitesettings'] = 'إعدادات كتلة الموقع';
 $string['cfgdisplaytitle'] = 'عَرض العنوان';
 $string['config_days'] = 'حدد عدد الأيام التي لم يسجل فيها الطلبة دخولهم';
 $string['config_days_help'] = '<p>هذا الإعداد يسمح بتحديد </p>
-<p>عدد الأيام التي لم يسجل فيها الطالب دخوله إلى المقرر الدراسي.</p>';
+<p>عدد الأيام التي لم يسجل فيها الطالب دخوله إلى المساق.</p>';
 $string['config_sectiontitles'] = 'عناوين المقاطع';
-$string['config_sectiontitles_help'] = '<p>فارغ = إفتراضي المقرر الدراسي.</p>';
+$string['config_sectiontitles_help'] = '<p>فارغ = إفتراضي المساق.</p>';
 $string['config_title'] = 'عنوان العيِّنة';
 $string['config_title_help'] = '<p>هذا الإعداد يسمح بتغيير عنوان الكتلة.</p>
 <p>إذا كان رأس الكتلة مخفيًا، لن يظهر العنوان.</p>';
@@ -48,7 +48,7 @@ $string['forum'] = 'المنتدى';
 $string['hideonlineeditor'] = 'إخفاء المحرر المتصل بالإنترنت';
 $string['labelnoblocks'] = 'إخفاء كل الكتل';
 $string['listcourseszeroungraded'] = 'عرض المقررات الدراسية التي ليس فيها أي نشاطات غير مقيمة';
-$string['markinmanagerscoursecatsdesc'] = 'حدد تصنيفات المساقات التي ستتم معالجتها من قبل كتلة مدير التأشير في صفحة واجهة مودل وفي لوحة التحكم.';
+$string['markinmanagerscoursecatsdesc'] = 'حدد تصنيفات المقررات الدراسية التي ستتم معالجتها من قبل كتلة مدير التأشير في صفحة واجهة مودل وفي لوحة التحكم.';
 $string['morethan10'] = 'هناك أكثر من 10 مقررات دراسية ذات أعمال غير مُقيَّمة.';
 $string['name'] = 'الاسم';
 $string['opensitesettingspage'] = 'صفحة إعدادات إفتتاح الموقع';

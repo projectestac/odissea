@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'it', version '3.11'.
+ * Strings for component 'badges', language 'it', version '4.1'.
  *
  * @package     badges
  * @category    string
@@ -144,6 +144,7 @@ $string['backpackweburl'] = 'URL del backpack';
 $string['badgedetails'] = 'Dettagli badge';
 $string['badgeimage'] = 'Immagine';
 $string['badgeimage_help'] = 'L\'immagine deve avere una dimensione di ameno 300 x 300 pixel. Sarà visualizzata con dimensione 300 x 300 pixel nella pagina del badge e con dimensione 100 x100 pixel nella pagina del profilo utente.';
+$string['badgeissued'] = 'Badge rilasciati';
 $string['badgeprivacysetting'] = 'Impostazioni di privacy del badge';
 $string['badgeprivacysetting_help'] = 'I badge conseguiti possono essere visualizzati automaticamente nella pagina del profilo. L\'impostazione definisce la visibilità dei nuovi badge conseguiti.
 
@@ -217,7 +218,7 @@ $string['criteria_8_help'] = 'Il badge sarà rilasciato sulla base dell\'apparte
 $string['criteria_9'] = 'Competenze';
 $string['criteria_9_help'] = 'Il badge sarà rilasciato sulla base del raggiungimento dei competenze.';
 $string['criteria_descr'] = 'Gli utenti conseguono il badge al soddisfacimento dei requisti elencati:';
-$string['criteria_descr_0'] = 'Gli utenti conseguono il badge se i requisiti elencati (<strong>{$a}</strong>) sono soddisfatti';
+$string['criteria_descr_0'] = 'Gli utenti conseguono il badge se <strong>{$a}</strong> dei requisiti elencati risultano soddisfatti';
 $string['criteria_descr_1'] = 'Le seguenti attività devono essere completate (<strong>{$a}</strong>):';
 $string['criteria_descr_2'] = 'Il badge viene conseguito se i ruoli elencati (<strong>{$a}</strong>) lo rilasciano:';
 $string['criteria_descr_4'] = 'Gli utenti devono completare il corso';
@@ -283,7 +284,6 @@ $string['delparamconfirm'] = 'Sei sicuro di eliminare questo parametro?';
 $string['description'] = 'Descrizione';
 $string['disconnect'] = 'Scollega';
 $string['donotaward'] = 'Il badge non è attivo e gli utenti non possono conseguirlo. Se desideri che gli utenti conseguano il badge, devi cambiare lo stato ad attivo.';
-$string['editsettings'] = 'Modifica impostazioni';
 $string['enablebadges'] = 'Abilita badge';
 $string['endorsement'] = 'Garanzia di terzi';
 $string['error:backpackdatainvalid'] = 'I dati restituiti dal backpack non sono validi';
@@ -462,6 +462,7 @@ $string['oauth2issuer'] = 'Servizi Oauth 2';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
+$string['othernavigation'] = 'Altra navigazione...';
 $string['overallcrit'] = 'Metodo di aggregazione dei requisiti';
 $string['potentialrecipients'] = 'Destinatari potenziali badge';
 $string['preferences'] = 'Preferenze badge';
@@ -488,7 +489,7 @@ $string['privacy:metadata:external:backpacks'] = 'Informazioni condivise quando 
 $string['privacy:metadata:external:backpacks:badge'] = 'Nome del badge';
 $string['privacy:metadata:external:backpacks:description'] = 'Descrizione del badge';
 $string['privacy:metadata:external:backpacks:image'] = 'Immagine del badge';
-$string['privacy:metadata:external:backpacks:issuer'] = 'Alcune informazioni sull\'emittente.';
+$string['privacy:metadata:external:backpacks:issuer'] = 'Alcune informazioni su chi rilascia il badge';
 $string['privacy:metadata:external:backpacks:url'] = 'URL di Moodle per visualizzare le informazioni sul badge rilasciato.';
 $string['privacy:metadata:issued'] = 'Registro dei badge ottenuti.';
 $string['privacy:metadata:issued:dateexpire'] = 'Data di scadenza del badge.';
@@ -499,10 +500,11 @@ $string['privacy:metadata:manualaward:datemet'] = 'Data di ottenimento del badge
 $string['privacy:metadata:manualaward:issuerid'] = 'ID dell\'utente che ha ottenuto il badge.';
 $string['privacy:metadata:manualaward:issuerrole'] = 'Ruolo dell\'utente che ha ottenuto il badge.';
 $string['privacy:metadata:manualaward:recipientid'] = 'ID dell\'utente che ha ottenuto manualmente il badge.';
+$string['recipient'] = 'Destinatario del badge';
 $string['recipientdetails'] = 'Dettagli destinatario';
 $string['recipientidentificationproblem'] = 'Non è possibile trovare un destinatario del badge tra gli utenti esistenti.';
 $string['recipients'] = 'Destinatari badge';
-$string['recipientvalidationproblem'] = 'L\'utente attuale non può essere verificato come destinatario del badge';
+$string['recipientvalidationproblem'] = 'Questo utente non può essere verificato come destinatario del badge.';
 $string['relatedbages'] = 'Badge correlati';
 $string['relative'] = 'Data relativa';
 $string['requiredbadge'] = 'È necessario aggiungere almeno un badge al criterio.';
@@ -529,7 +531,6 @@ $string['sitebackpack'] = 'Backpack esterno attivo';
 $string['sitebackpack_help'] = 'Il backpack esterno al quale potranno collegarsi gli utenti del sito. Da notare che impostare questo collegamento dopo che gli utenti avranno collegato il proprio backpack li obbligherà a scollegare e ricollegare il backpack.';
 $string['sitebackpackdeleted'] = 'Il backpack di sito è stato eliminato.';
 $string['sitebackpacknotdeleted'] = 'Non è possibile eliminare il backpack poiché è il backpack di default del sito.';
-$string['sitebackpackverify'] = 'Collegamento backpack';
 $string['sitebackpackwarning'] = 'Non è stato possibile collegarsi al backpack.<br/><br/>Verificare che l\'"Email di chi rilascia il badge" sia una email valida per l\'account backpack del sito.<br/><br/>Verificare che la "Password di chi rilascia il badge" inserita nelle  <a href="{$a->url}">impostazioni backpack del sito</a> sia corretta.<br/><br/> Di seguito la riposta del backpack: "{$a->warning}"';
 $string['sitebadges'] = 'Badge del sito';
 $string['sitebadges_help'] = 'I badge del sito possono essere rilasciati agli utenti solo per attività svolte a livello di sito, come ad esempio completare un gruppo di corsi o compilare campi del profilo utente. I badge del sito possono essere rilasciati manualmente da un utente abilitato.

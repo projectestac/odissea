@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'de', version '3.11'.
+ * Strings for component 'qtype_match', language 'de', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughquestions'] = 'Sie müssen mindestens {$a} Paare mit Frage und
 $string['pleaseananswerallparts'] = 'Bitte beantworten Sie alle Teile der Frage';
 $string['pluginname'] = 'Zuordnung';
 $string['pluginname_help'] = 'Zuordnungsfragen fordern dazu auf, eine Liste von Begriffen oder Aussagen (Fragen) jeweils anderen Begriffen oder Aussagen (Antworten) zuzuordnen.';
+$string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = 'Zuordnungsfrage hinzufügen';
 $string['pluginnameediting'] = 'Zuordnungsfrage bearbeiten';
 $string['pluginnamesummary'] = 'Die Antwort auf jede der Unterfragen muss aus einer Liste von Möglichkeiten ausgewählt werden.';
@@ -46,5 +47,7 @@ $string['privacy:metadata'] = 'Das Plugin "Zuordnungsfrage" erlaubt es Frageauto
 $string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
 $string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
 $string['privacy:preference:shuffleanswers'] = 'Ob die Antworten automatisch gemischt werden sollen.';
+$string['regradeissuenumchoiceschanged'] = 'Die Anzahl der Auswahloptionen hat sich geändert.';
+$string['regradeissuenumstemschanged'] = 'Die Anzahl der Unterfragen hat sich geändert.';
 $string['shuffle'] = 'Mischen';
 $string['shuffle_help'] = 'Wenn diese Option aktiviert ist, ist die Reihenfolge der Begriffe oder Aussagen (Antworten) bei jedem Versuch zufällig, sofern die Option "Antworten innerhalb der Fragen mischen" in den Einstellungen des Tests ebenfalls aktiviert ist. Bei einer Zuordnungsfrage sind nur die Fragen von diesem Parameter betroffen. Die Antwortmöglichkeiten werden immer gemischt.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'nl', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'nl', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -65,6 +65,7 @@ $string['pleaseenterananswer'] = 'Geef een antwoord';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Geef je antwoord zonder scheidingsteken voor de duizendtallen ({$a}).';
 $string['pluginname'] = 'Numeriek';
 $string['pluginname_help'] = 'Vanuit het perspectief van de leerling lijkt een numerieke vraag hetzelfde als een kort antwoordvraag. Het verschil is dat numerieke vragen een foutentolerantie kunnen hebben. Dit maakt het mogelijk om een reeks antwoorden als juist antwoord te laten beoordelen. Als het juiste antwoord bijvoorbeeld 10 is met een foutenmarge van 2, dan zal elk getal tussen 8 en 12 juist gerekend worden.';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = 'Numerieke vraag toevoegen';
 $string['pluginnameediting'] = 'Numerieke vraag bewerken';
 $string['pluginnamesummary'] = 'Maakt het mogelijk een numeriek antwoord te laten geven, zelfs met eenheden en toleranties. Dat antwoord kan beoordeeld worden met verschillende modelantwoorden,';
@@ -108,13 +109,6 @@ $string['unitposition'] = 'Waar eenheden staan';
 $string['units'] = 'Eenheden';
 $string['unitselect'] = 'een rolmenu';
 $string['unitx'] = 'Eenheid {no}';
-$string['validnumberformats'] = 'Geldige getalopmaak';
-$string['validnumberformats_help'] = '* gewone getallen 13500.67, 13 500.67, 13500,67 of 13 500,67
-
-* als je taalpakketinstellingen (lanconfig.php-bestand) een komma (,) als scheidingsteken voor duizendtallen gebruikt, moet je altijd een decimaal punt  (.)  gebruiken, zoals in 13,500.67 : 13,500. (noot van de vertaler: Het  Nederlandse taalpakket gebruikt een komma voor de decimalen en een spatie als scheidingsteken voor de duizendtallen. Rapporteer eventuele problemen via https://moodle.org/mod/forum/view.php?id=1312)
-
-* voor exponenten zoals 1.350067 * 10<sup>4</sup>, gebruik je 1.350067 E4 : 1.350067 E04';
-$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 of 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} moet een getal zijn.';
 $string['xmustnotbenumeric'] = '{$a} kan geen getal zijn.';
 $string['youmustenteramultiplierhere'] = 'Je moet hier een vermenigvuldigtal opgeven.';

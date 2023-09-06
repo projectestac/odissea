@@ -33,7 +33,7 @@ $workshop = $DB->get_record('workshop', array('id' => $cm->instance), '*', MUST_
 
 require_login($course, false, $cm);
 if (isguestuser()) {
-    print_error('guestsarenotallowed');
+    throw new \moodle_exception('guestsarenotallowed');
 }
 $workshop = new workshop($workshop, $cm, $course);
 
@@ -43,6 +43,11 @@ $PAGE->set_title($workshop->name);
 $PAGE->set_heading($course->fullname);
 $PAGE->navbar->add(get_string('editingassessmentform', 'workshop'), $workshop->editform_url(), navigation_node::TYPE_CUSTOM);
 $PAGE->navbar->add(get_string('previewassessmentform', 'workshop'));
+$PAGE->set_secondary_active_tab('workshopassessement');
+$PAGE->activityheader->set_attrs([
+    "hidecompletion" => true,
+    "description" => ''
+]);
 $currenttab = 'editform';
 
 // load the grading strategy logic
@@ -53,7 +58,6 @@ $mform = $strategy->get_assessment_form($workshop->editform_url(), 'preview');
 
 // output starts here
 echo $OUTPUT->header();
-echo $OUTPUT->heading(format_string($workshop->name));
 echo $OUTPUT->heading(get_string('assessmentform', 'workshop'), 3);
 $mform->display();
 echo $OUTPUT->footer();

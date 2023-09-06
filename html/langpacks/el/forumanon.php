@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumanon', language 'el', version '3.11'.
+ * Strings for component 'forumanon', language 'el', version '4.1'.
  *
  * @package     forumanon
  * @category    string
@@ -56,9 +56,9 @@ $string['cannotadd'] = 'Αδυναμία προσθήκης της συζήτη�
 $string['cannotadddiscussion'] = 'Η προσθήκη συζητήσεων σε αυτό το φόρουμ απαιτεί συμμετοχή σε ομάδα.';
 $string['cannotadddiscussionall'] = 'Δεν έχετε δικαίωμα να προσθέσετε ένα νέο θέμα συζήτησης για όλους τους συμμετέχοντες.';
 $string['cannotaddsubscriber'] = 'Αδυναμία πρόσθεσης εγγεγραμμένου με αναγνωριστικό {$a} σε αυτό το φόρουμ!';
-$string['cannotaddteacherforumto'] = 'Αδυναμία προσθήκης του μετατραπέντος στιγμιότυπου του φόρουμ διδασκόντων στο τμήμα 0 στο μάθημα';
+$string['cannotaddteacherforumto'] = 'Αδυναμία προσθήκης του μετατραπέντος στιγμιοτύπου του φόρουμ διδασκόντων στην ενότητα 0 στο μάθημα';
 $string['cannotcreatediscussion'] = 'Αδυναμία δημιουργίας νέας συζήτησης';
-$string['cannotcreateinstanceforteacher'] = 'Αδυναμία δημιουργίας νέου στιγμιότυπου αρθρώματος μαθήματος για το φόρουμ διδασκόντων';
+$string['cannotcreateinstanceforteacher'] = 'Αδυναμία δημιουργίας νέου στιγμιοτύπου αρθρώματος μαθήματος για το φόρουμ διδασκόντων';
 $string['cannotdeleteforummodule'] = 'Δεν μπορείτε να διαγράψετε το άρθρωμα φόρουμ.';
 $string['cannotdeletepost'] = 'Δεν μπορείτε να διαγράψετε αυτή την ανάρτηση!';
 $string['cannoteditposts'] = 'Δεν μπορείτε να τροποποιήσετε αναρτήσεις άλλων χρηστών!';
@@ -71,7 +71,7 @@ $string['cannotmovenotvisible'] = 'Το φόρουμ είναι μη ορατό'
 $string['cannotmovetonotexist'] = 'Δεν μπορείτε να μετακινήσετε σε αυτό το φόρουμ - δεν υπάρχει!';
 $string['cannotmovetonotfound'] = 'Το φόρουμ προορισμού δεν βρέθηκε σε αυτό το μάθημα.';
 $string['cannotpurgecachedrss'] = 'Δεν ήταν δυνατόν να καθαριστεί η κρυφή μνήμη των τροφοδοσιών RSS για το/τα φόρουμ προέλευσης και/ή προορισμού - ελέγξτε το αρχείο σας permissionsforums (δικαιώματα φόρουμ)';
-$string['cannotremovesubscriber'] = 'Δεν ήταν δυνατόν να αφαιρεθεί ο συνδρομητής με αναγνωριστικό {$a} από αυτό το φόρουμ!';
+$string['cannotremovesubscriber'] = 'Δεν ήταν δυνατόν να αφαιρεθεί η δήλωση εγγραφής χρήστη με αναγνωριστικό {$a} από αυτό το φόρουμ!';
 $string['cannotreply'] = 'Δεν μπορείτε να απαντήσετε σε αυτή την ανάρτηση';
 $string['cannotsplit'] = 'Οι συζητήσεις από αυτό το φόρουμ δεν μπορούν να διαιρεθούν';
 $string['cannotsubscribe'] = 'Λυπόμαστε, αλλά πρέπει να είστε μέλος ομάδας για να εγγραφείτε.';
@@ -224,6 +224,7 @@ $string['modenested'] = 'Εμφάνιση απαντήσεων σε φωλιασ
 $string['modethreaded'] = 'Εμφάνιση απαντήσεων σε μορφή νημάτων';
 $string['modulename'] = 'Ανωνυμοποιήσιμο φόρουμ';
 $string['modulename_help'] = 'Το άρθρωμα δραστηριότητας ανώνυμου φόρουμ δίνει την δυνατότητα στους συμμετέχοντες να έχουν ασύγχρονες συζητήσεις.';
+$string['modulename_link'] = 'forumanon';
 $string['modulenameplural'] = 'Φόρουμ';
 $string['more'] = 'περισσότερα';
 $string['movedmarker'] = '(Μετακινήθηκε)';
@@ -284,14 +285,14 @@ $string['postrating3'] = 'Κυρίως συνδεδεμένη γνώση';
 $string['posts'] = 'Αναρτήσεις';
 $string['posttoforum'] = 'Ανάρτηση στο φόρουμ';
 $string['postupdated'] = 'Η ανάρτησή σας ενημερώθηκε';
-$string['potentialsubscribers'] = 'Δυνητικοί συνδρομητές';
+$string['potentialsubscribers'] = 'Δυνητικοί χρήστες για δήλωση εγγραφής';
 $string['processingdigest'] = 'Επεξεργασία μηνύματος ηλε.ταχυδρομείου ανασκόπησης για το χρήστη {$a}';
 $string['processingpost'] = 'Επεξεργασία ανάρτησης {$a}';
 $string['prune'] = 'Διαχωρισμός';
 $string['prunedpost'] = 'Μια νέα συζήτηση έχει δημιουργηθεί από αυτή την ανάρτηση';
 $string['qandaforum'] = 'Φόρουμ Ερωτήσεων & Απαντήσεων';
 $string['qandanotify'] = 'Αυτό είναι ένα φόρουμ ερωτήσεων και απαντήσεων. Για να δείτε τις αποκρίσεις των άλλων σε αυτές τις ερωτήσεις, πρέπει πρώτα να αναρτήσετε την δική σας απάντηση.';
-$string['re'] = 'Re:';
+$string['re'] = 'Απάντ:';
 $string['readtherest'] = 'Ανάγνωση του υπολοίπου αυτού του θέματος';
 $string['replies'] = 'Απαντήσεις';
 $string['repliesmany'] = '{$a} απαντήσεις μέχρι τώρα';
@@ -300,7 +301,7 @@ $string['reply'] = 'Απάντηση';
 $string['replyforum'] = 'Απαντήστε στο φόρουμ';
 $string['resetforums'] = 'Διαγραφή αναρτήσεων από';
 $string['resetforumsall'] = 'Διαγραφή όλων των αναρτήσεων';
-$string['resetsubscriptions'] = 'Διαγραφή όλων των εγγραφών φόρουμ';
+$string['resetsubscriptions'] = 'Διαγραφή όλων των δηλώσεων εγγραφής στο φόρουμ';
 $string['resettrackprefs'] = 'Διαγραφή όλων των προτιμήσεων παρακολούθησης φόρουμ';
 $string['rsssubscriberssposts'] = 'Τροφοδοσία RSS αναρτήσεων';
 $string['rsstype'] = 'Τροφοδοσία RSS για αυτή τη δραστηριότητα';

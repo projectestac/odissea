@@ -34,7 +34,7 @@ $course = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST)
 
 require_login($course, false, $cm);
 if (isguestuser()) {
-    print_error('guestsarenotallowed');
+    throw new \moodle_exception('guestsarenotallowed');
 }
 
 $workshop = $DB->get_record('workshop', array('id' => $cm->instance), '*', MUST_EXIST);
@@ -46,7 +46,7 @@ $PAGE->set_url($workshop->excompare_url($sid, $aid));
 $example    = $workshop->get_example_by_id($sid);
 $assessment = $workshop->get_assessment_by_id($aid);
 if ($assessment->submissionid != $example->id) {
-   print_error('invalidarguments');
+    throw new \moodle_exception('invalidarguments');
 }
 $mformassessment = $strategy->get_assessment_form($PAGE->url, 'assessment', $assessment, false);
 if ($refasid = $DB->get_field('workshop_assessments', 'id', array('submissionid' => $example->id, 'weight' => 1))) {
@@ -62,7 +62,7 @@ if ($canmanage) {
 } elseif ($isreviewer and $workshop->assessing_examples_allowed()) {
     // ok you can go
 } else {
-    print_error('nopermissions', 'error', $workshop->view_url(), 'compare example assessment');
+    throw new \moodle_exception('nopermissions', 'error', $workshop->view_url(), 'compare example assessment');
 }
 
 $PAGE->set_title($workshop->name);
@@ -72,7 +72,11 @@ $PAGE->navbar->add(get_string('examplecomparing', 'workshop'));
 // Output starts here
 $output = $PAGE->get_renderer('mod_workshop');
 echo $output->header();
-echo $output->heading(format_string($workshop->name));
+// Output the back button.
+echo $output->single_button($workshop->view_url(), get_string('back'), 'get', ['class' => 'mb-3']);
+if (!$PAGE->has_secondary_navigation()) {
+    echo $output->heading(format_string($workshop->name));
+}
 echo $output->heading(get_string('assessedexample', 'workshop'), 3);
 
 echo $output->render($workshop->prepare_example_submission($example));

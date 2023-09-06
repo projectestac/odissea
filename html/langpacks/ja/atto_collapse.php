@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'ja', version '3.11'.
+ * Strings for component 'atto_collapse', language 'ja', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'ボタンを少なく表示する';
 $string['showgroups'] = '折りたたみ時に最初の (n) グループを表示する';
 $string['showgroups_desc'] = 'ツールバーが折りたたまれる場合 (デフォルト)、ここで設定したグループ数が同時に表示されます。';
 $string['showmore'] = 'さらにボタンを表示する';
+$string['youareonsecondrow'] = 'あなたはエディタツールバーの別の行に移動したため、さらに多くのボタンが表示されるようになりました。';

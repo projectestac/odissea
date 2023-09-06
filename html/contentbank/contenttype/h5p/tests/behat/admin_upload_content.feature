@@ -5,11 +5,16 @@ Feature: H5P file upload to content bank for admins
   I need to be able to upload a new .h5p file to content bank
 
   Background:
-    Given I log in as "admin"
+    Given the following "blocks" exist:
+      | blockname     | contextlevel | reference | pagetypepattern | defaultregion |
+      | private_files | System       | 1         | my-index        | side-post     |
+    And I log in as "admin"
     And I follow "Manage private files..."
     And I upload "h5p/tests/fixtures/filltheblanks.h5p" file to "Files" filemanager
     And I click on "Save changes" "button"
-    And I press "Customise this page"
+    And I turn editing mode on
+    And the following config values are set as admin:
+      | unaddableblocks | | theme_boost|
     And I add the "Navigation" block if not present
     And I expand "Site pages" node
     And I click on "Content bank" "link"
@@ -50,7 +55,7 @@ Feature: H5P file upload to content bank for admins
     And I navigate to "Plugins > Content bank > Manage content types" in site administration
     And I click on "Disable" "icon" in the "H5P" "table_row"
     And I wait until the page is ready
-    When I click on "Content bank" "link"
+    When I navigate to "Plugins > Content bank" in site administration
     Then I should not see "filltheblanks.h5p"
 
   Scenario: Contents in a context are not available from other contexts
@@ -66,6 +71,8 @@ Feature: H5P file upload to content bank for admins
     And I wait until the page is ready
     Then I should see "filltheblanks.h5p"
     And I am on "Course 1" course homepage
+    And the following config values are set as admin:
+      | unaddableblocks | | theme_boost|
     And I add the "Navigation" block if not present
     And I expand "Site pages" node
     And I click on "Content bank" "link"
@@ -74,7 +81,7 @@ Feature: H5P file upload to content bank for admins
   Scenario: Admins can upload and deployed content types when libraries are not installed
     Given I navigate to "H5P > Manage H5P content types" in site administration
     And I should not see "Fill in the Blanks"
-    And I follow "Dashboard" in the user menu
+    And I follow "Dashboard"
     And I expand "Site pages" node
     And I click on "Content bank" "link"
     And I should not see "filltheblanks.h5p"

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'ca', version '3.11'.
+ * Strings for component 'qtype_ddimageortext', language 'ca', version '4.1'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -59,6 +59,7 @@ $string['nolabel'] = 'No hi ha text a l\'etiqueta';
 $string['pleasedraganimagetoeachdropregion'] = 'La vostra resposta no està completa; arrossegueu un element a cadascuna de les zones de destí.';
 $string['pluginname'] = 'Arrossegueu i deixeu anar sobre una imatge';
 $string['pluginname_help'] = 'Les preguntes d\'arrossegar i deixar anar sobre imatges demanen que qui respon arrossegui imatges o etiquetes de text i les deixi anar dins de zones de col·locació definides sobre una imatge de fons. Els elements arrossegables es poden agrupar de forma que tots els elements d\'un grup concret tinguin el mateix color que les zones on es deixin anar. Els elements arrossegables marcats com a il·limitats es poden deixar anar a més d\'una zona.';
+$string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'arrossegar sobre una imatge.';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'arrossegar sobre una imatge';
 $string['pluginnamesummary'] = 'Permet arrossegar i deixar anar imatges o textos dins d\'una imatge.';

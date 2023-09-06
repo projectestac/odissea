@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'it', version '3.11'.
+ * Strings for component 'enrol_manual', language 'it', version '4.1'.
  *
  * @package     enrol_manual
  * @category    string
@@ -57,6 +57,7 @@ $string['expirymessageenrollerbody'] = 'Per gli utenti elencati sotto, l\'iscriz
 
 Per prorogare l\'iscrizione, puoi recarti su {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notifica di scadenza iscrizione';
+$string['managemanualenrolements'] = 'Gestione iscrizioni manuali';
 $string['manual:config'] = 'Configurare istanze plugin Iscrizioni manuali';
 $string['manual:enrol'] = 'Iscrivere utenti';
 $string['manual:manage'] = 'Gestire iscrizioni';

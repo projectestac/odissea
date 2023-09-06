@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'ru', version '3.11'.
+ * Strings for component 'pdfannotator', language 'ru', version '4.1'.
  *
  * @package     pdfannotator
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['itemsperpage'] = 'Элементов на странице';
+$string['modulename_link'] = 'mod/pdfannotator/view';

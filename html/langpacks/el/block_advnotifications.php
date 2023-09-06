@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_advnotifications', language 'el', version '3.11'.
+ * Strings for component 'block_advnotifications', language 'el', version '4.1'.
  *
  * @package     block_advnotifications
  * @category    string
@@ -96,7 +96,7 @@ $string['advnotifications_update'] = 'Ενημέρωση';
 $string['pluginname'] = 'Προχωρημένες ειδοποιήσεις';
 $string['setting/auto_delete'] = 'Αυτόματη διαγραφή:';
 $string['setting/auto_delete_default'] = '';
-$string['setting/auto_delete_desc'] = 'Εναλλάσσει το αν μια ειδοποίηση που ξεπερνά την καθορισμένη ημερομηνία τερματισμού διαγράφεται αυτόματα - αλλά μπορεί να γίνει επαναφορά ξανά. <br> (Βοηθά στη διαχείριση)';
+$string['setting/auto_delete_desc'] = 'Εναλλάσσει το αν μια ειδοποίηση που ξεπερνά την καθορισμένη ημερομηνία τερματισμού διαγράφεται αυτόματα - αλλά μπορεί να γίνει επαναφορά ξανά.<br />(Βοηθά στη διαχείριση)<hr />';
 $string['setting/auto_delete_user_data'] = 'Αυτόματη διαγραφή δεδομένων χρήστη:';
 $string['setting/auto_delete_user_data_default'] = '';
 $string['setting/auto_delete_user_data_desc'] = 'Εναλλάσσει το αν διαγράφονται αυτόματα τα δεδομένα χρήστη (όπως αν ο χρήστης έχει δει / απορρίψει ειδοποιήσεις που δεν υπάρχουν πια, κλπ.) σχετικά με προχωρημένες ειδοποιήσεις. <br> (Βοηθά στη διαχείριση)';

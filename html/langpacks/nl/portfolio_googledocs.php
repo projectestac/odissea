@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'nl', version '3.11'.
+ * Strings for component 'portfolio_googledocs', language 'nl', version '4.1'.
  *
  * @package     portfolio_googledocs
  * @category    string
@@ -30,7 +30,7 @@ $string['noauthtoken'] = 'Er is geen authenticatietoken van Google opgegeven. Zo
 $string['nooauthcredentials'] = 'OAuth credentials vereist';
 $string['nooauthcredentials_help'] = 'Om de Google Drive portfolio plugin te gebruiken, moet je de OAuth credentials configureren in de portfolio instellingen.';
 $string['nosessiontoken'] = 'Er bestaat geen sessie-token dat export naar Google verhindert.';
-$string['oauthinfo'] = '<p>Om deze plugin te kunnen gebruiken, moet je je site registreren bij Google, zoals beschreven in de documentatie <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Als deel van het registratieproces zul je volgende URL moeten ingeven als \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p>Als je geregistreerd bent, zul je een client ID en geheim krijgen die je dan kunt gebruiken om alle Google Drive en Picasa plugins te configureren.</p>';
+$string['oauthinfo'] = '<p>Om deze plugin te kunnen gebruiken, moet je je site registreren bij Google, zoals beschreven in de documentatie <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Als deel van het registratieproces zul je volgende URL moeten ingeven als \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p>Als je geregistreerd bent, zul je een client ID en geheim krijgen die je dan kunt gebruiken om alle Google Drive-plugins te configureren.</p>';
 $string['pluginname'] = 'Google Drive';
 $string['privacy:metadata'] = 'Deze plugin stuurt gegevens extern door naar een gelinkte Google-account en bewaart geen gegevens lokaal.';
 $string['privacy:metadata:data'] = 'Persoonlijke gegevens, binnengekomen via het portfolio subsysteem.';

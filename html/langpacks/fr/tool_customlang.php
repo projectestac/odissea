@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'fr', version '3.11'.
+ * Strings for component 'tool_customlang', language 'fr', version '4.1'.
  *
  * @package     tool_customlang
  * @category    string
@@ -47,6 +47,7 @@ $string['confirmcheckin'] = 'Vous êtes sur le point d\'exporter les modificatio
 $string['customlang:edit'] = 'Modifier les chaînes de caractères locales';
 $string['customlang:export'] = 'Exporter les traductions locales';
 $string['customlang:view'] = 'Voir les chaînes de caractères locales';
+$string['editlangpack'] = 'Modifier un paquetage de langue';
 $string['export'] = 'Exporter des chaînes personnalisées';
 $string['exportfilter'] = 'Sélectionner le(s) composant(s) à exporter';
 $string['exportzipfilename'] = 'export-lang-perso-{$a->lang}.zip';
@@ -65,8 +66,8 @@ $string['headingstringid'] = 'Chaîne';
 $string['import'] = 'Importer des chaînes personnalisées';
 $string['import_all'] = 'Creér ou mettre à jour toutes les chaînes des paquetages';
 $string['import_mode'] = 'Mode d\'importation';
-$string['import_new'] = 'Ne créer que les chaînes sans personnalisation locale';
-$string['import_update'] = 'Ne mettre à jour que les chaînes sans personnalisation locale';
+$string['import_new'] = 'Créer uniquement les chaînes sans personnalisation locale';
+$string['import_update'] = 'Mettre à jour uniquement les chaînes avec une personnalisation locale';
 $string['importfile'] = 'Importer le fichier';
 $string['langpack'] = 'Paquetage(s) de langue';
 $string['markinguptodate'] = 'Marquer la modification comme « à jour »';

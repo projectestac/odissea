@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'fr', version '3.11'.
+ * Strings for component 'portfolio_googledocs', language 'fr', version '4.1'.
  *
  * @package     portfolio_googledocs
  * @category    string
@@ -30,7 +30,7 @@ $string['noauthtoken'] = 'Aucun jeton d\'authentification n\'a été reçu de Go
 $string['nooauthcredentials'] = 'Données d\'authentification OAuth requises.';
 $string['nooauthcredentials_help'] = 'Pour utiliser le plugin de portfolio Google Drive, vous devez configurer d\'abord les données d\'authentification OAuth dans les réglages de portfolio.';
 $string['nosessiontoken'] = 'Il n\'y a pas de jeton de session, ce qui empêche l\'exportation vers Google.';
-$string['oauthinfo'] = '<p>Pour utiliser ce plugin, vous devez d\'abord enregistrer votre site auprès de Google, suivant la documentation de <a href="{$a->docsurl}">configuration Google OAuth 2.0</a>.</p><p>Au cours du processus d\'enregistrement, vous devrez saisir l\'URL suivante comme « Authorized Redirect URIs » :</p><p>{$a->callbackurl}</p><p>Après l\'enregistrement, vous recevrez un ID client et un secret que vous pourrez utiliser pour configurer tous les plugins Google Drive et Picasa.</p>';
+$string['oauthinfo'] = '<p>Pour utiliser ce plugin, vous devez d\'abord enregistrer votre site auprès de Google, suivant la documentation de <a href="{$a->docsurl}">configuration Google OAuth 2.0</a>.</p><p>Au cours du processus d\'enregistrement, vous devrez saisir l\'URL suivante comme « Authorized Redirect URIs » :</p><p>{$a->callbackurl}</p><p>Après l\'enregistrement, vous recevrez un ID client et un secret que vous pourrez utiliser pour configurer tous les plugins Google Drive.</p>';
 $string['pluginname'] = 'Google Drive';
 $string['privacy:metadata'] = 'Ce plugin transmet des données vers un compte Google lié. Il n\'enregistre aucune donnée localement.';
 $string['privacy:metadata:data'] = 'Données personnelles transmises à partir du sous-système portfolio.';

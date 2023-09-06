@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_webct', language 'eu', version '3.11'.
+ * Strings for component 'qformat_webct', language 'eu', version '4.1'.
  *
  * @package     qformat_webct
  * @category    string
@@ -30,6 +30,7 @@ $string['missinganswer'] = 'Behar baino :ANSWER, :Lx, :Rx erantzun gutxiago {$a}
 $string['missingquestion'] = 'Falta da galderaren etiketa {$a} lerroaren ondoren';
 $string['pluginname'] = 'WebCT formatua';
 $string['pluginname_help'] = 'WebCT formatuak WebCT-ko testu-bidezko formatuan gordetako erantzun anizkoitzeko eta erantzun laburreko galderak inportatzeko aukera ematen du.';
+$string['pluginname_link'] = 'qformat/webct';
 $string['privacy:metadata'] = 'WebCT formatua galdera-formatu pluginak ez du datu pertsonalik biltzen.';
 $string['questionnametoolong'] = 'Galderaren izen luzeegia {$a} lerroan (gehienez 255 karaktere). Moztua izan da.';
 $string['unknowntype'] = 'Galdera mota ezezaguna {$a} lerroaren ondoren';

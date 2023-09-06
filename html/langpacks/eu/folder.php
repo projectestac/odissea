@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'eu', version '3.11'.
+ * Strings for component 'folder', language 'eu', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -45,10 +45,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa karpetetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Karpeta motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa karpetetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Karpeta baliabideak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala karpetetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Karpeta motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala karpetetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Karpeta baliabideak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['maxsizetodownload'] = 'Karpetak jaisteko gehieneko tamaina (MB)';
 $string['maxsizetodownload_help'] = 'Karpetak zip fitxategi moduan jaisteko gehieneko tamaina. 0 ezarriz gero, karpetaren tamainak ez du mugarik izango.';
 $string['modulename'] = 'Karpeta';
@@ -58,6 +60,7 @@ Karpeta bat erabil daiteke
 
 * Gai batekin lotutako fitxategi-multzoak erakusteko, iraganeko azterketa-multzoak edo ikasleek proiektuetan erabilitako irudi-multzoak adibidez.
 * Irakasleen ikastaroko elkartrukerako gune bezala (karpeta ezkutaturik utzita soilik irakasleek ikus dezaten)';
+$string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Karpetak';
 $string['newfoldercontent'] = 'Karpeta berriaren edukia';
 $string['noautocompletioninline'] = 'Jarduera ikustearen osaketa automatikoa ezin da aukeratu "Erakutsi ikastaroaren orrian" aukerarekin batera.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'eu', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'eu', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -83,14 +83,17 @@ $string['emailpasswordchangeinfosubject'] = '{$a}: Pasahitz-aldaketari buruzko i
 $string['info'] = 'Kanpoko kontua';
 $string['issuer'] = 'OAuth 2 zerbitzua';
 $string['issuernologin'] = 'Emaile hau ezin da sarbiderako erabili.';
+$string['key'] = 'Gakoa';
 $string['linkedlogins'] = 'Lotutako sarbideak';
 $string['linkedloginshelp'] = 'Laguntza lotutako sarbideekin';
+$string['loggedin'] = 'Erabiltzailea hornitzailearekin arrakastaz autentifikatu da.';
 $string['loginerror_authenticationfailed'] = 'Autentifikazio-prozesuak huts egin du.';
 $string['loginerror_cannotcreateaccounts'] = 'Ezin da aurkitu zure helbide elektronikoa duen konturik.';
 $string['loginerror_invaliddomain'] = 'Helbide elektroniko hau ez dago gune honetan baimenduta.';
 $string['loginerror_nouserinfo'] = 'Ez da itzuli erabiltzaile-informaziorik. Baliteke OAuth 2 zerbitzua modu ezegokian konfiguratuta egotea.';
 $string['loginerror_userincomplete'] = 'Itzulitako erabiltzaile-informazioak ez du erabiltzaile-izen eta helbide elektronikorik. Baliteke OAuth 2 zerbitzua modu ezegokian konfiguratuta egotea.';
-$string['noissuersavailable'] = 'Konfiguratuta dauden OAuth2 zerbitzuetatik batek ere ez du kontuak lotzea baimentzen';
+$string['noconfiguredidps'] = 'Ez dago OAuth2 hornitzailerik konfiguratuta.';
+$string['noissuersavailable'] = 'Konfiguratuta dauden OAuth 2 zerbitzuetatik batek ere ez du kontuak lotzea baimentzen';
 $string['notenabled'] = 'Sentitzen dugu, OAuth 2 autentifikazio-plugina ez dago gaituta';
 $string['notloggedindebug'] = 'Sarrera-saiakerak huts egin du. Arrazoia: {$a}';
 $string['notwhileloggedinas'] = 'Lotutako sarbideak ezin dira kudeatu beste erabiltzaile bat bezala sartuta zaudenean.';
@@ -109,3 +112,6 @@ $string['privacy:metadata:auth_oauth2:timemodified'] = 'Erregistro hau aldatu ze
 $string['privacy:metadata:auth_oauth2:userid'] = 'OAuth 2 saio-hasierarekin lotutako erabiltzaile-kontuaren IDa.';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'Kontu hau aldatu zueneko erabiltzailearen IDa.';
 $string['privacy:metadata:auth_oauth2:username'] = 'Kontu honekin lotutako kanpoko erabiltzailearen erabiltzaile-izena.';
+$string['testidplogin'] = 'Probatu saio-hasiera honekin:';
+$string['userinfo'] = 'Hornitzaileko erabiltzaile-datuak';
+$string['value'] = 'Balioa';

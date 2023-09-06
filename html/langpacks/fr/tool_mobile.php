@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'fr', version '3.11'.
+ * Strings for component 'tool_mobile', language 'fr', version '4.1'.
  *
  * @package     tool_mobile
  * @category    string
@@ -31,7 +31,9 @@ $string['androidappid_desc'] = 'Ce réglage ne doit être modifié que si vous a
 $string['apppolicy'] = 'URL de la politique de l\'app';
 $string['apppolicy_help'] = 'L\'URL d\'une politique pour les utilisateurs de l\'app, qui est affichée sur la page À propos de l\'app. Si le champ est laissé vide, la politique de site sera utilisée.';
 $string['apprequired'] = 'Cette fonctionnalité n\'est disponible que lors de l\'accès au moyen de l\'app mobile ou de l\'app desktop.';
-$string['autologinkeygenerationlockout'] = 'La génération de clefs de connexion automatique est bloquée. Veuillez attendre 6 minutes entre les demandes.';
+$string['autologinkeygenerationlockout'] = 'La génération de clefs de connexion automatique est bloquée. Veuillez attendre {$a} minutes entre les demandes.';
+$string['autologinmintimebetweenreq'] = 'Temps minimal entre les demandes de connexion automatique';
+$string['autologinmintimebetweenreq_desc'] = 'La durée minimale entre les demandes de connexion automatique à partir de l\'app mobile. Si les utilisateurs sont trop souvent confrontés à une demande de re-saisir leurs données de connexion lors de l\'affichage de données du site, il faut indiquer une valeur plus basse.';
 $string['autologinnotallowedtoadmins'] = 'La connexion automatique n\'est pas permise pour les administrateurs du site.';
 $string['cachedef_plugininfo'] = 'Ce cache enregistre la liste des plugins avec des fonctionnalités pour mobiles';
 $string['cachedef_subscriptiondata'] = 'Ceci enregistre les informations d\'abonnement à l\'app Moodle.';
@@ -124,12 +126,16 @@ $string['privacy:metadata:core_userkey'] = 'Clefs de l\'utilisateur utilisée po
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'La date de la dernière demande de clef de connexion automatique. Une durée de 6 minutes est requise entre chaque demande.';
 $string['qrcodedisabled'] = 'Accès via code QR désactivé';
 $string['qrcodeformobileappaccess'] = 'Code QR pour accès avec l\'app mobile';
-$string['qrcodeformobileapploginabout'] = 'Lire le code QR avec votre app mobile pour vous connecter automatiquement. Le code QR sera périmé dans {$a} minutes.';
+$string['qrcodeformobileapploginabout'] = 'Lire le code QR avec votre app mobile pour vous connecter automatiquement. Le code QR sera périmé dans {$a}.';
 $string['qrcodeformobileappurlabout'] = 'Lire le code QR avec votre app mobile pour vous remplir l\'URL du site dans votre app.';
 $string['qrcodetype'] = 'Code QR d\'accès';
 $string['qrcodetype_desc'] = 'Un code QR à lire par les utilisateurs de l\'app mobile peut être fourni, soit pour remplir automatiquement l\'URL du site, soit, dans le cas où le site est en HTTPS, pour connecter automatiquement l\'utilisateur, sans qu\'il ait besoin de saisir son nom et son mot de passe.';
 $string['qrcodetypelogin'] = 'Code QR avec connexion automatique';
 $string['qrcodetypeurl'] = 'Code QR avec URL du site';
+$string['qrkeyttl'] = 'Durée du code QR d\'authentification';
+$string['qrkeyttl_desc'] = 'La durée de validité des codes QR de connexion automatique.';
+$string['qrsameipcheck'] = 'Vérification IP identique pour code QR d\'authentification';
+$string['qrsameipcheck_desc'] = 'Si ce réglage est activé, les utilisateurs doivent être sur le même réseau lors de la génération et lors du scan du code QR de connexion. Ne désactiver que si les utilisateurs annoncent des dysfonctionnements de la connexion via code QR.';
 $string['qrsiteadminsnotallowed'] = 'Pour des raisons de sécurité, la connexion via code QR n\'est pas autorisée pour les administrateurs ou si vous êtes connecté sous un autre nom.';
 $string['readingthisemailgettheapp'] = 'Vous lisez ceci dans un courriel ? <a href="{$a}">Téléchargez l\'app mobile et recevez ainsi des notifications sur votre appareil mobile</a>.';
 $string['remoteaddons'] = 'Plugins distants';

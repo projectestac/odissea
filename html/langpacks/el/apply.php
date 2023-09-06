@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'apply', language 'el', version '3.11'.
+ * Strings for component 'apply', language 'el', version '4.1'.
  *
  * @package     apply
  * @category    string
@@ -67,8 +67,8 @@ $string['cancel_entry_button'] = 'Άκυρο';
 $string['cancel_moving'] = 'Ακύρωση μετακίνησης';
 $string['cannot_save_templ'] = 'δεν επιτρέπεται αποθήκευση υποδειγμάτων';
 $string['captcha'] = 'Captcha';
-$string['check'] = 'Πλαίσιο ελέγχου';
-$string['checkbox'] = 'Πλαίσια ελέγχου';
+$string['check'] = 'Πλαίσιο επιλογής';
+$string['checkbox'] = 'Πλαίσια επιλογής';
 $string['class_cancel'] = 'Άκυρο';
 $string['class_draft'] = 'Προσχέδιο';
 $string['class_newpost'] = 'Νέα ανάρτηση';
@@ -293,10 +293,10 @@ $string['textfield_maxlength'] = 'Μέγιστος αριθμός αποδεκτ
 $string['textfield_size'] = 'Πλάτος πεδίου κειμένου';
 $string['time_close'] = 'Χρόνος για να κλείσει';
 $string['time_close_help'] = 'Μπορείτε να καθορίσετε χρόνους κατά τους οποίους το άρθρωμα είναι διαθέσιμο για χρήστες για να απαντήσουν στις αιτήσεις.
-Αν το πλαίσιο ελέγχου δεν είναι επιλεγμένο, τότε δεν υπάρχει κανένα όριο χρόνου.';
+Αν το πλαίσιο επιλογής δεν είναι επιλεγμένο, τότε δεν υπάρχει κανένα όριο χρόνου.';
 $string['time_open'] = 'Χρόνος για να ανοίξει';
 $string['time_open_help'] = 'Μπορείτε να καθορίσετε χρόνους κατά τους οποίους το άρθρωμα είναι διαθέσιμο για χρήστες για να απαντήσουν στις αιτήσεις.
-Αν το πλαίσιο ελέγχου δεν είναι επιλεγμένο, τότε δεν υπάρχει κανένα όριο χρόνου.';
+Αν το πλαίσιο επιλογής δεν είναι επιλεγμένο, τότε δεν υπάρχει κανένα όριο χρόνου.';
 $string['title_ack'] = 'Αποδοχή';
 $string['title_before'] = 'Πριν την υποβολή';
 $string['title_check'] = 'Έλεγχος';

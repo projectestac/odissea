@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'gl', version '3.11'.
+ * Strings for component 'mimetypes', language 'gl', version '4.1'.
  *
  * @package     mimetypes
  * @category    string
@@ -56,7 +56,7 @@ $string['archive'] = 'Ficheiro ({$a->EXT})';
 $string['audio'] = 'Ficheiro de son ({$a->EXT})';
 $string['default'] = '{$a->mimetype}';
 $string['document/unknown'] = 'Ficheiro';
-$string['group:archive'] = 'Arquivo de ficheiros';
+$string['group:archive'] = 'Arquivo de picheiros';
 $string['group:audio'] = 'Ficheiros de son';
 $string['group:document'] = 'Ficheiros de documentos';
 $string['group:html_audio'] = 'Ficheiros de son compatíbeis nativamente cos navegadores';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_backups', language 'el', version '3.11'.
+ * Strings for component 'report_backups', language 'el', version '4.1'.
  *
  * @package     report_backups
  * @category    string
@@ -29,7 +29,7 @@ $string['backupofcourselogs'] = 'Καταγραφές αντιγράφων ασ�
 $string['logsofbackupexecutedon'] = 'Καταγραφές για το αντίγραφο ασφαλείας που δημιουργήθηκε στις {$a}';
 $string['nobackupsfound'] = 'Δεν βρέθηκαν αντίγραφα ασφαλείας.';
 $string['nologsfound'] = 'Δεν βρέθηκαν καταγραφές για αυτό το αντίγραφο ασφαλείας.';
-$string['pluginname'] = 'Αναφορά εφεδρικών αντιγράφων ασφαλείας';
+$string['pluginname'] = 'Αναφορά αντιγράφων ασφαλείας';
 $string['privacy:metadata'] = 'Το πρόσθετο «Αναφορές αντιγράφων ασφαλείας» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['strftimetime'] = '%I:%M:%S %p';
 $string['viewlogs'] = 'Εμφάνιση καταγραφών';

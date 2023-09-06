@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'it', version '3.11'.
+ * Strings for component 'gradingform_guide', language 'it', version '4.1'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -90,6 +90,7 @@ $string['regrademessage1'] = 'Stai per salvare modifiche di una valutazione guid
 $string['regrademessage5'] = 'Stai per salvare significative  modifiche di una valutazione guidata che è già stata usata per valutare. la valutazione presente nel registro valutatore non sarà modificata, ma le valutazioni non saranno più visualizzabili dagli studenti finché le loro valutazioni non saranno aggiornate.';
 $string['regradeoption0'] = 'Non contrassegnare da rivedere';
 $string['regradeoption1'] = 'Contrassegna da rivedere';
+$string['remark_help'] = 'Inserire eventuali commenti aggiuntivi su questo criterio.';
 $string['restoredfromdraft'] = 'NOTA: il salvataggio dell\'ultimo tentativo di valutare questo partecipante non è andato a buon fine, sono stati ripristinate le valutazioni in bozza. Se desideri annullare queste modifiche utilizza il pulsante \'Annulla\'.';
 $string['save'] = 'Salva';
 $string['saveguide'] = 'Salva la valutazione guidata e rendila disponibile';

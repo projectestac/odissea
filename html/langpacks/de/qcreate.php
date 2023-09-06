@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qcreate', language 'de', version '3.11'.
+ * Strings for component 'qcreate', language 'de', version '4.1'.
  *
  * @package     qcreate
  * @category    string
@@ -99,6 +99,7 @@ $string['minimumquestions'] = 'Mindestanzahl Fragen';
 $string['minimumquestions_help'] = 'In diesem Menü können Sie festlegen, wie viele Fragen eines bestimmten Typs die Teilnehmer  zu erstellen haben.';
 $string['modulename'] = 'Fragen entwickeln';
 $string['modulename_help'] = 'Über die Aktivität \'Fragen entwickeln\' kann der Dozent die  Kursteilnehmern auffordern, eine bestimmte Anzahl eigener Fragen eines bestimmten Typs zu erstellen.';
+$string['modulename_link'] = 'mod/qcreate/view';
 $string['modulenameplural'] = 'Frage entwickeln';
 $string['needsgrading'] = 'Bewertung erforderlich';
 $string['needsregrading'] = 'Neue Bewertung erforderlich';

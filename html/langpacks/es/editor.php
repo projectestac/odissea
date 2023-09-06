@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'es', version '3.11'.
+ * Strings for component 'editor', language 'es', version '4.1'.
  *
  * @package     editor
  * @category    string
@@ -58,6 +58,7 @@ $string['cutpastemozilla'] = 'Desafortunadamente, no puede usar los atajos norma
 $string['delete'] = 'Eliminar';
 $string['editors'] = 'Editores de texto';
 $string['editorsettings'] = 'Gestionar editores';
+$string['editorxformat'] = 'Formato {$a}';
 $string['enterurlfirst'] = 'Debe introducir antes una URL';
 $string['filebrowser'] = 'Navegador de archivos';
 $string['findwhat'] = 'Encontrar';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'it', version '3.11'.
+ * Strings for component 'gradereport_singleview', language 'it', version '4.1'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -26,21 +26,27 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all_grades'] = 'Tutte le valutazioni';
+$string['ariareporttype'] = 'Selezionare il tipo di report da visualizzare';
 $string['assessmentname'] = 'Elemento di valutazione';
 $string['blanks'] = 'Valutazioni mancanti';
 $string['bulkappliesto'] = 'Per';
+$string['bulkchoice'] = 'L\'inserimento massivo consente di sostituire più valutazioni in una sola volta. Selezionare le valutazioni da sostituire:';
 $string['bulkfor'] = 'Valutazioni per {$a}';
-$string['bulkinsertvalue'] = 'Inserisci valore';
-$string['bulklegend'] = 'Inserimento in massa';
+$string['bulkinsertvalue'] = 'Inserisci nuova valutazione';
+$string['bulklegend'] = 'Inserimento valutazioni in massa';
 $string['bulkperform'] = 'Esegui inserimento in massa';
 $string['entrypage'] = 'Valutazione utente o elemento di valutazione';
 $string['eventgradereportviewed'] = 'Visualizzazione report scheda singola';
 $string['exclude'] = 'Esclusioni';
 $string['excludeall'] = 'Escludi tutte le valutazioni';
+$string['excludeallgrades'] = 'Escludi tutto';
 $string['excludefor'] = 'Esclusioni per {$a}';
 $string['excludenone'] = 'Nessuna esclusione di valutazioni';
+$string['excludenonegrades'] = 'Includi tutto';
 $string['feedbackfor'] = 'Feedback per {$a}';
 $string['filtergrades'] = 'Visualizza valutazioni di {$a}.';
+$string['gotonextreport'] = 'Vai al prossimo report utente';
+$string['gotopreviousreport'] = 'Vai al precedente report utente';
 $string['gradefor'] = 'Valutazioni di {$a}';
 $string['gradeitem'] = 'Elemento di valutazione: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Non è possibile modificare questo elemento di valutazione.';
@@ -56,9 +62,16 @@ $string['pluginname'] = 'Scheda singola';
 $string['save'] = 'Salva';
 $string['savegrades'] = 'Salvataggio delle valutazioni';
 $string['savegradessuccess'] = 'Sono state impostate le valutazioni per {$a} elementi';
-$string['selectgrade'] = 'Seleziona elemento di valutazione...';
-$string['selectuser'] = 'Seleziona utente...';
+$string['searchgrades'] = 'Cerca elemento di valutazione';
+$string['selectagrade'] = 'Selezionare un elemento di valutazione';
+$string['selectgradeitemlink'] = 'Selezionare un elemento di valutazione';
 $string['singleview:view'] = 'Visualizzare scheda singola';
 $string['summarygrade'] = 'Una tabella di utenti, con colonne per intervalli, valutazioni, feedback e e la possibilità di modificare o escludere voti.';
 $string['summaryuser'] = 'Una tabella di elementi di valutazione, con colonne per le categorie di valutazione, intervalli, voti, feedback e la possibilità di modificare o escludere voti.';
+$string['unsavedataalert'] = 'Se nella pagina sono presenti modifiche non salvate, queste andranno perse se si procede con l\'inserimento massivo delle valutazioni.';
+$string['unsavedataconfirm'] = 'Sono consapevole che le modifiche non salvate andranno perse.';
+$string['unsaveddatawarning'] = 'Attenzione: dati non salvati';
 $string['userselect'] = 'Seleziona attività';
+$string['viewby'] = '';
+$string['viewsinglegradeitem'] = 'Selezionare un elemento di valutazione sopra';
+$string['viewsingleuser'] = 'Selezionare sopra un utente per visualizzane le valutazioni';

@@ -35,7 +35,7 @@ $cm         = get_coursemodule_from_instance('workshop', $workshop->id, $course-
 
 require_login($course, false, $cm);
 if (isguestuser()) {
-    print_error('guestsarenotallowed');
+    throw new \moodle_exception('guestsarenotallowed');
 }
 $workshop = new workshop($workshop, $cm, $course);
 
@@ -43,6 +43,7 @@ $PAGE->set_url($workshop->exassess_url($assessment->id));
 $PAGE->set_title($workshop->name);
 $PAGE->set_heading($course->fullname);
 $PAGE->navbar->add(get_string('assessingexample', 'workshop'));
+$PAGE->set_secondary_active_tab('modulepage');
 $currenttab = 'assessment';
 
 $canmanage  = has_capability('mod/workshop:manageexamples', $workshop->context);
@@ -51,7 +52,7 @@ $isreviewer = ($USER->id == $assessment->reviewerid);
 if ($isreviewer or $canmanage) {
     // such a user can continue
 } else {
-    print_error('nopermissions', 'error', $workshop->view_url(), 'assess example submission');
+    throw new \moodle_exception('nopermissions', 'error', $workshop->view_url(), 'assess example submission');
 }
 
 // only the reviewer is allowed to modify the assessment
@@ -133,7 +134,9 @@ if ($mform->is_cancelled()) {
 // output starts here
 $output = $PAGE->get_renderer('mod_workshop');      // workshop renderer
 echo $output->header();
-echo $output->heading(format_string($workshop->name));
+if (!$PAGE->has_secondary_navigation()) {
+    echo $output->heading(format_string($workshop->name));
+}
 echo $output->heading(get_string('assessedexample', 'workshop'), 3);
 
 $example = $workshop->get_example_by_id($example->id);     // reload so can be passed to the renderer

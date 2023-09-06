@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'sv', version '3.11'.
+ * Strings for component 'qtype_ddwtos', language 'sv', version '4.1'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -34,6 +34,7 @@ $string['infinite'] = 'Obegränsat';
 $string['pleaseputananswerineachbox'] = 'Vänligen ange ett svar i varje textruta.';
 $string['pluginname'] = 'Dra och släpp i texten';
 $string['pluginname_help'] = 'Dra och släpp i text-frågor kräver att användaren drar ord eller fraser till rätt mellanrum i frågetexten. [[1]], [[2]], [[3]], ... används som platshållare i frågetexten, med de rätta svaren angivna som svarsalternativ 1, 2, 3, ... Svarsalternativen kan grupperas så att alla svar i en viss grupp färgas likadant som luckorna för dem i frågetexten. De svarsalternativ som markerats som obegränsade får användas i mer än ett mellanrum.';
+$string['pluginname_link'] = 'question/type/ddwtos';
 $string['pluginnameadding'] = 'Lägger till dra och släpp i texten';
 $string['pluginnameediting'] = 'Redigerar dra och släpp i texten';
 $string['pluginnamesummary'] = 'Saknade ord i frågetexten fylls i genom att dra och släppa svar på den tomma platsen.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'eu', version '3.11'.
+ * Strings for component 'antivirus', language 'eu', version '4.1'.
  *
  * @package     antivirus
  * @category    string
@@ -30,6 +30,8 @@ $string['antiviruscommonsettings'] = 'Antibirusen ezarpen orokorrak';
 $string['antiviruses'] = 'Antibirus-pluginak';
 $string['antivirussettings'] = 'Kudeatu antibirus-pluginak';
 $string['configantivirusplugins'] = 'Mesedez, aukeratu zein antibirus-plugin erabili nahi dituzun eta antolatu aplikatu ahal izateko.';
+$string['dataerrordesc'] = 'Datu-eskanerraren errorea gertatu da.';
+$string['dataerrorname'] = 'Datu-eskanerraren errorea';
 $string['datainfecteddesc'] = 'Kutsatutako datuak aurkitu dira.';
 $string['datainfectedname'] = 'Kutsatutako datuak';
 $string['datastream'] = 'Datuak';
@@ -50,15 +52,23 @@ $string['emailscannererrordetected'] = 'Eskaneatze-errorea gertatu da';
 $string['emailsubject'] = '{$a} :: Antibirus-jakinarazpena';
 $string['enablequarantine'] = 'Gaitu berrogeialdia';
 $string['enablequarantine_help'] = 'Gaituz gero, birus gisa antzemandako edozein fitxategi berrogeialdi-direktorioan ([dataroot]/{$a}) mantenduko da beranduagoko azterketarako. Moodlerako igoerak huts egingo du. Fitxategi-sistema mailako edozein birus-eskanerrik baduzu, berrogeialdi-direktorioa salbuetsi beharko zenuke berrogeialdian dauden fitxategiak antzematea ekiditeko.';
+$string['fileerrordesc'] = 'Fitxategi-eskanerraren errorea gertatu da.';
+$string['fileerrorname'] = 'Fitxategi-eskanerraren errorea';
 $string['fileinfecteddesc'] = 'Kutsatutako fitxategi bat antzeman da.';
 $string['fileinfectedname'] = 'Kutsatutako fitxategia';
 $string['notifyemail'] = 'Antibirusaren alertaren jakinarazpen emaila';
 $string['notifyemail_help'] = 'Birus bat antzematen denean jakinarazpenak bidaltzeko erabiliko den helbide elektronikoa. Hutsik utziz gero, jakinarazpenak guneko kudeatzaile guztiei bidaliko zaizkie.';
+$string['notifylevel'] = 'Jakinarazpen-maila';
+$string['notifylevel_help'] = 'Jakinarazpenak jaso nahi dituzun informazio-mailak';
+$string['notifylevelerror'] = 'Antzemandako mehatxu eta eskaneatze-arazoak';
+$string['notifylevelfound'] = 'Antzemandako mehatxuak soilik';
 $string['privacy:metadata'] = 'Antibirus sistemak ez du datu pertsonalik biltzen.';
 $string['quarantinedfiles'] = 'Antiburusaren berrogeialdiko fitxategiak';
 $string['quarantinedisabled'] = 'Berrogeialdia desgaituta dago. Fitxategia ez da gorde.';
 $string['quarantinetime'] = 'Gehieneko berrogeialdi-denbora';
 $string['quarantinetime_desc'] = 'Berrogeialdi-direktorioan zehaztutako denbora baino gehiago daramaten fitxategiak ezabatuko dira.';
 $string['taskcleanup'] = 'Garbitu berrogeialdiko fitxategiak.';
+$string['threshold'] = 'Egoera-egiaztapenen atalasea';
+$string['threshold_desc'] = 'Erroreak, oharrak, etab. egiaztatzean atzera noraino joan, {$a} adierazita dagoen moduan.';
 $string['unknown'] = 'Ezezaguna';
 $string['virusfound'] = '{$a->item} antibirusak eskaneatu eta kutsatuta dagoela aurkitu du!';

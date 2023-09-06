@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'pt', version '3.11'.
+ * Strings for component 'cache', language 'pt', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -40,6 +40,8 @@ $string['cachedef_calendar_subscriptions'] = 'Subscrições do calendário';
 $string['cachedef_capabilities'] = 'Lista de permissões do sistema';
 $string['cachedef_completion'] = 'Estado de conclusão da atividade';
 $string['cachedef_config'] = 'Configurar definições';
+$string['cachedef_contentbank_allowed_categories'] = 'Banco de conteúdo de categorias de disciplinas permitidos para o utilizador atual';
+$string['cachedef_contentbank_allowed_courses'] = 'Banco de conteúdo de disciplinas permitidos para o utilizador atual';
 $string['cachedef_contentbank_context_extensions'] = 'Extensões permitidas e respetivos módulos de suporte num contexto de banco de conteúdos';
 $string['cachedef_contentbank_enabled_extensions'] = 'Extensões permitidas e respetivos módulos de suporte num banco de conteúdos';
 $string['cachedef_contextwithinsights'] = 'Contexto com perceções';
@@ -50,10 +52,14 @@ $string['cachedef_coursecatrecords'] = 'Registos de categorias de disciplinas';
 $string['cachedef_coursecattree'] = 'Árvore de categorias de disciplinas';
 $string['cachedef_coursecompletion'] = 'Estado de conclusão da disciplina';
 $string['cachedef_coursecontacts'] = 'Lista de contactos da disciplina';
+$string['cachedef_courseeditorstate'] = 'Chaves de cache do estado da sessão da disciplina para detetar alterações da disciplina no frontend';
 $string['cachedef_coursemodinfo'] = 'Informação acumulada sobre módulos e secções para cada disciplina';
+$string['cachedef_coursesectionspreferences'] = 'Preferências da secção da disciplina';
 $string['cachedef_databasemeta'] = 'Meta-informação da base de dados';
+$string['cachedef_deprecatedcapabilities'] = 'Lista de recursos obsoletos do sistema';
 $string['cachedef_eventinvalidation'] = 'Invalidação de evento';
 $string['cachedef_externalbadges'] = 'Medalhas externas para um utilizador em particular';
+$string['cachedef_file_imageinfo'] = 'Informações do ficheiro da imagem, por exemplo: as dimensões';
 $string['cachedef_fontawesomeiconmapping'] = 'Mapeamento de ícones para o tipo de letra awesome';
 $string['cachedef_grade_categories'] = 'Consultas às categorias de avaliação';
 $string['cachedef_grade_letters'] = 'Consultas às notas alfabéticas';
@@ -77,6 +83,7 @@ $string['cachedef_postprocessedcss'] = 'CSS processado da mensagem';
 $string['cachedef_presignup'] = 'Dados de pré-inscrição para determinado utilizador ainda não registado';
 $string['cachedef_questiondata'] = 'Definições da pergunta';
 $string['cachedef_recommendation_favourite_course_content_items'] = 'Recomendação de itens de conteúdo da disciplina';
+$string['cachedef_reportbuilder_allowed_reports'] = 'Relatórios permitidos aos utilizadores de acordo com o público-alvo';
 $string['cachedef_repositories'] = 'Dados de instância de repositórios';
 $string['cachedef_roledefs'] = 'Definições do papel';
 $string['cachedef_string'] = 'Cache do pacote linguístico';
@@ -91,6 +98,7 @@ $string['cachedef_userselections'] = 'Dados usados para fazer prevalecer as sele
 $string['cachedef_yuimodules'] = 'Definições do Módulo YUI';
 $string['cachelock_file_default'] = 'Bloqueio de ficheiros predefinido';
 $string['cachestores'] = 'Unidades de armazenamento de cache';
+$string['cacheusage'] = 'Utilização da cache';
 $string['caching'] = 'Cache';
 $string['canuselocalstore'] = 'Pode usar armazenamento local';
 $string['component'] = 'Componente';
@@ -113,6 +121,7 @@ $string['deletestore'] = 'Eliminar unidade de armazenamento';
 $string['deletestoreconfirmation'] = 'Tem a certeza de que pretende eliminar a unidade de armazenamento "{$a}"?';
 $string['deletestorehasmappings'] = 'Não pode eliminar esta unidade de armazenamento pois contém mapeamentos. Por favor, elimine todos os mapeamentos antes de eliminar a unidade de armazenamento';
 $string['deletestoresuccess'] = 'A unidade de armazenamento de cache foi eliminada com sucesso';
+$string['editdefinitionmapping'] = 'Editar mapeamento de definição';
 $string['editdefinitionmappings'] = 'Definição {$a} do mapeamento da unidade de armazenamento';
 $string['editdefinitionsharing'] = 'Editar definição de partilha para {$a}';
 $string['editmappings'] = 'Editar mapeamentos';
@@ -155,8 +164,6 @@ $string['pluginsummaries'] = 'Cache de unidades de armazenamento instaladas';
 $string['privacy:metadata:cachestore'] = 'O subsistema Cache armazena dados temporários em nome de outras partes do Moodle.';
 $string['purge'] = 'Apagar';
 $string['purgeagain'] = 'Limpar novamente';
-$string['purgedefinitionsuccess'] = 'A definição requerida foi eliminada com sucesso.';
-$string['purgestoresuccess'] = 'A unidade de armazenamento requerida foi apagada com sucesso.';
 $string['purgexdefinitionsuccess'] = 'Limpeza com sucesso da cache "{$a->name}" ({$a->component}/{$a->area}).';
 $string['purgexstoresuccess'] = 'Limpeza com sucesso do armazenamento "{$a->store}"';
 $string['requestcount'] = 'Testar com {$a} pedidos';
@@ -204,5 +211,14 @@ $string['tested'] = 'Testado';
 $string['testperformance'] = 'Teste de desempenho';
 $string['unsupportedmode'] = 'Modo não suportado';
 $string['untestable'] = 'Não é possível testar';
+$string['updatedefinitionmapping'] = 'Editar mapeamento de definição';
+$string['updatedefinitionsharing'] = 'Editar partilha de definição';
+$string['usage_items'] = 'Itens';
+$string['usage_mean'] = 'Tamanho médio do item';
+$string['usage_realtotal'] = 'Utilização atual (se conhecida)';
+$string['usage_samples'] = 'Itens amostrados por cache';
+$string['usage_sd'] = 'Dev. Std.';
+$string['usage_total'] = 'Total estimado';
+$string['usage_totalmargin'] = 'Margem de erro (95%)';
 $string['userinputsharingkey'] = 'Chave personalizada para partilhar';
 $string['userinputsharingkey_help'] = 'Insira aqui a sua chave privada. Quando configurar outras unidades de armazenamento noutros sites com os quais pretende partilhar dados, certifique-se que define exatamente a mesma chave.';

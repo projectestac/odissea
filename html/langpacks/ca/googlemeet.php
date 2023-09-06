@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'googlemeet', language 'ca', version '3.11'.
+ * Strings for component 'googlemeet', language 'ca', version '4.1'.
  *
  * @package     googlemeet
  * @category    string
@@ -25,10 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'Clau de l\'API';
 $string['checkweekdays'] = 'Trieu els dies de la setmana que s\'escauen dins de l\'interval de dates seleccionat.';
-$string['clientid'] = 'ID del client OAuth';
-$string['clientid_desc'] = '<a href="https://github.com/ronefel/moodle-mod_googlemeet/wiki/How-to-create-the-API-key-and-OAuth-client-ID" target="_blank">Com crear la clau de l\'API i l\'ID del client d\'OAuth</a>';
 $string['date'] = 'Data';
 $string['duration'] = 'Durada';
 $string['emailcontent'] = 'Contingut del missatge';

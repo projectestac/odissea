@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'el', version '3.11'.
+ * Strings for component 'qtype_shortanswer', language 'el', version '4.1'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -39,7 +39,7 @@ $string['notenoughanswers'] = 'Αυτός ο τύπος ερώτησης απα�
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
 $string['pluginname'] = 'Σύντομης Απάντησης';
 $string['pluginname_help'] = 'Σε απάντηση μιας ερώτησης (που μπορεί να περιλαμβάνει μια εικόνα) ο ερωτώμενος πληκτρολογεί μια λέξη ή μια σύντομη φράση. Μπορεί να υπάρχουν πολλές πιθανές σωστές απαντήσεις, καθεμιά με διαφορετικό βαθμό. Εάν είναι επιλεγμένη η επιλογή «Διάκριση πεζών/κεφαλαίων», τότε μπορείτε να έχετε διαφορετικά σκορ για «Λέξη» ή «λέξη».';
-$string['pluginname_link'] = 'ερώτηση/τύπος/σύντομηαπάντηση';
+$string['pluginname_link'] = '';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης Σύντομης Απάντησης';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης Σύντομης Απάντησης';
 $string['pluginnamesummary'] = 'Επιτρέπει μια απόκριση η οποία αποτελείται από μία ή λίγες λέξεις και η οποία βαθμολογείται σε σύγκριση με διάφορες πρότυπες απαντήσεις, οι οποίες μπορούν να περιέχουν μπαλαντέρ.';

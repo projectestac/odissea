@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'it', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'it', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -40,6 +40,7 @@ $string['clivalidationerror'] = 'Errore di validazione:';
 $string['csvdelimiter'] = 'Separatore CSV';
 $string['defaultvalues'] = 'Valori di default';
 $string['deleteerrors'] = 'Elimina errori';
+$string['duplicateemail'] = 'Sono stati rilevatiti più utenti con la stessa email {$a}';
 $string['encoding'] = 'Codifica';
 $string['errormnetadd'] = 'Non è possibile aggiungere utenti remoti';
 $string['errorprefix'] = 'Errore:';
@@ -86,6 +87,7 @@ $string['uploadusers_help'] = 'È possibile caricare utenti (ed iscriverli ai co
 * il record è una serie di dati dati divisi dal separatore selezionato
 * il primo record deve contenere l\'elenco dei nomi dei campi che definiscono il formato del dati presenti nel resto del file
 * i campi obbligatori sono username, password, firstname,  lastname, email';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Anteprima importazione utenti';
 $string['uploadusersresult'] = 'Risultati importazione utenti';
 $string['useraccountupdated'] = 'Utente aggiornato';

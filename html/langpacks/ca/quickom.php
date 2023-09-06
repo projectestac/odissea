@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quickom', language 'ca', version '3.11'.
+ * Strings for component 'quickom', language 'ca', version '4.1'.
  *
  * @package     quickom
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['connectionstatus'] = 'Estat de la connexió';
 $string['err_password'] = 'La contrasenya només pot contenir els caràcters següents: [a-z A-Z 0-9 @ - _ *]. Màxim: 10 caràcters.';
 $string['password'] = 'Contrasenya';
 $string['passwordprotected'] = 'Contrasenya protegida';

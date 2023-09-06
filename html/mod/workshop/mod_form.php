@@ -32,6 +32,7 @@ require_once($CFG->dirroot . '/course/moodleform_mod.php');
 require_once(__DIR__ . '/locallib.php');
 require_once($CFG->libdir . '/filelib.php');
 
+use core_grades\component_gradeitems;
 /**
  * Module settings form for Workshop instances
  */
@@ -96,10 +97,9 @@ class mod_workshop_mod_form extends moodleform_mod {
         $mform->setDefault('grade', $workshopconfig->grade);
         $mform->addHelpButton('submissiongradegroup', 'submissiongrade', 'workshop');
 
-        $mform->addElement('text', 'submissiongradepass', get_string('gradetopasssubmission', 'workshop'));
+        $mform->addElement('float', 'submissiongradepass', get_string('gradetopasssubmission', 'workshop'));
         $mform->addHelpButton('submissiongradepass', 'gradepass', 'grades');
         $mform->setDefault('submissiongradepass', '');
-        $mform->setType('submissiongradepass', PARAM_RAW);
 
         $label = get_string('gradinggrade', 'workshop');
         $mform->addGroup(array(
@@ -109,10 +109,9 @@ class mod_workshop_mod_form extends moodleform_mod {
         $mform->setDefault('gradinggrade', $workshopconfig->gradinggrade);
         $mform->addHelpButton('gradinggradegroup', 'gradinggrade', 'workshop');
 
-        $mform->addElement('text', 'gradinggradepass', get_string('gradetopassgrading', 'workshop'));
+        $mform->addElement('float', 'gradinggradepass', get_string('gradetopassgrading', 'workshop'));
         $mform->addHelpButton('gradinggradepass', 'gradepass', 'grades');
         $mform->setDefault('gradinggradepass', '');
-        $mform->setType('gradinggradepass', PARAM_RAW);
 
         $options = array();
         for ($i = 5; $i >= 0; $i--) {
@@ -459,6 +458,30 @@ class mod_workshop_mod_form extends moodleform_mod {
                 if ($gradepassfloat > $data['gradinggrade']) {
                     $errors['gradinggradepass'] = get_string('gradepassgreaterthangrade', 'grades', $data['gradinggrade']);
                 }
+            }
+        }
+
+        // We need to do a custom completion validation because workshop grade items identifiers divert from standard.
+        // Refer to validation defined in moodleform_mod.php.
+        if (isset($data['completionpassgrade']) && $data['completionpassgrade'] &&
+            isset($data['completiongradeitemnumber'])) {
+            $itemnames = component_gradeitems::get_itemname_mapping_for_component('mod_workshop');
+            $gradepassfield = $itemnames[(int) $data['completiongradeitemnumber']] . 'gradepass';
+            // We need to make all the validations related with $gradepassfield
+            // with them being correct floats, keeping the originals unmodified for
+            // later validations / showing the form back...
+            // TODO: Note that once MDL-73994 is fixed we'll have to re-visit this and
+            // adapt the code below to the new values arriving here, without forgetting
+            // the special case of empties and nulls.
+            $gradepass = isset($data[$gradepassfield]) ? unformat_float($data[$gradepassfield]) : null;
+            if (is_null($gradepass) || $gradepass == 0) {
+                $errors['completionpassgrade'] = get_string(
+                    'activitygradetopassnotset',
+                    'completion'
+                );
+            } else {
+                // We have validated grade pass. Unset any errors.
+                unset($errors['completionpassgrade']);
             }
         }
 

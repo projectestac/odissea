@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'sv', version '3.11'.
+ * Strings for component 'course', language 'sv', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -49,6 +49,8 @@ $string['aria:favourite'] = 'Kursen är favoritmärkt';
 $string['aria:favouritestab'] = 'Favoritmärkta aktiviteter';
 $string['aria:modulefavourite'] = 'Markera aktiviteten {$a} som favorit';
 $string['aria:recommendedtab'] = 'Rekommenderade aktiviteter';
+$string['browsecourseadminindex'] = 'Bläddra i kursadministrationen med detta index.';
+$string['browsesettingindex'] = 'Bläddra i inställningarna med detta index.';
 $string['completion_automatic:done'] = 'Slutförd:';
 $string['completion_automatic:failed'] = 'Underkänd:';
 $string['completion_automatic:todo'] = 'Att göra:';
@@ -61,9 +63,17 @@ $string['completion_setby:auto:todo'] = 'Att göra: {$a->condition} (satt av {$a
 $string['completion_setby:manual:done'] = '{$a->activityname} har markerats som slutförd av {$a->setby}. Tryck för att ångra.';
 $string['completion_setby:manual:markdone'] = '{$a->activityname} har markerats som ej slutförd av {$a->setby}. Tryck för att ångra.';
 $string['completionrequirements'] = 'Slutförandevillkor för <b>{$a}</b>';
+$string['courseaccess'] = 'Kursåtkomst';
 $string['coursealreadyfinished'] = 'Kursen är redan avslutad';
+$string['coursecontentnotification'] = 'Avisera om ändrat innehåll';
+$string['coursecontentnotification_help'] = 'Markera kryssrutan om du vill meddela kursdeltagarna om den nya eller ändrade aktiviteten eller resursen. Endast användare som kan komma åt aktiviteten eller resursen får meddelandet.';
+$string['coursecontentnotifnew'] = '{$a->coursename} nytt innehåll';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> är ny i kursen <a href="{$a->courselink}">{$a->coursename}</a>.</p> <p><a href="{$a->notificationpreferenceslink}">Ändra dina meddelandeinställningar</a></p>';
+$string['coursecontentnotifupdate'] = '{$a->coursename} ändrat innehåll';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> har ändrats i kursen <a href="{$a->courselink}">{$a->coursename}</a>.</p> <p><a href="{$a->notificationpreferenceslink}">Ändra dina meddelandeinställningar</a></p>';
 $string['coursenotyetfinished'] = 'Kursen har inte avslutats ännu';
 $string['coursenotyetstarted'] = 'Kursen har inte börjat';
+$string['courseparticipants'] = 'Kursdeltagare';
 $string['coursetoolong'] = 'Kursen är för lång';
 $string['customfield_islocked'] = 'Låst';
 $string['customfield_islocked_help'] = 'Om fältet är låst kan enbart användare som har behörighet att ändra låsta anpassade fält göra denna ändring i kursinställningarna. Standard är att enbart användare med standardrollen <em>Chef</em> har denna behörighet.';
@@ -73,6 +83,11 @@ $string['customfield_visibility_help'] = 'Denna inställning bestämmer vem som 
 $string['customfield_visibletoall'] = 'Alla';
 $string['customfield_visibletoteachers'] = 'Lärare';
 $string['customfieldsettings'] = 'Grundläggande inställningar för anpassade fält';
+$string['daystakingcourse'] = 'Dagar på kurs';
+$string['downloadcontent'] = 'Inkludera i kursnedladdningar';
+$string['downloadcontent_help'] = 'Ska den här aktiviteten eller resursen inkluderas i ZIP-filen i det nedladdningsbara kursinnehållet? Filer, mappar, sidor och etiketter kan laddas ned i sin helhet. För alla andra aktiviteter och resurser hämtas endast namn och beskrivning. Det här alternativet kräver att nedladdnings av kursinnehåll aktiverats i kursinställningarna.
+
+Inställningen påverkar inte nedladdning av mobilappinnehåll för offlineanvändning.';
 $string['downloadcourseconfirmation'] = 'Du håller på att ladda ned en ZIP-fil med kursinnehåll (exklusive objekt som inte går att ladda ned samt filer större än {$a}).';
 $string['downloadcoursecontent'] = 'Ladda ned kursinnehåll';
 $string['downloadcoursecontent_help'] = 'Den här inställningen avgör om kursinnehållet får hämtas av användare med behörighet att ladda ned kursinnehåll (som standard användare med rollen student eller lärare).';
@@ -82,6 +97,7 @@ $string['favourite'] = 'Favoritmärkt kurs';
 $string['gradetopassnotset'] = 'För denna kurs finns ingen inställning gjord för vilka betyg som krävs för att bli godkänd. Detta kan ställas in i betygsobjektet i kursen (Inställningar för betygsbok).';
 $string['informationformodule'] = 'Information om {$a}-aktiviteten';
 $string['module'] = 'Aktivitet';
+$string['namewithlink'] = 'Kategorinamn med länk';
 $string['noaccesssincestartinfomessage'] = 'Hej {$a->userfirstname},
 <p>Några av deltagarna i {$a->coursename} har aldrig varit inne i kursen.</p>';
 $string['nocourseactivity'] = 'Otillräcklig kursaktivitet mellan kursens början och slut';
@@ -92,6 +108,9 @@ $string['norecentaccessesinfomessage'] = 'Hej {$a->userfirstname},
 <p>Några av deltagarna i {$a->coursename} har inte besökt kursen på ett tag.</p>';
 $string['noteachinginfomessage'] = 'Hej {$a->userfirstname},
 <p>Kurser med startdatum i nästa vecka har konstaterats sakna lärare eller registrerade studenter.<p>';
+$string['participants:perpage'] = 'Antal deltagare per sida';
+$string['participants:perpage_help'] = 'Ange antalet deltagare att visa per sida';
+$string['participantsnavigation'] = 'Tertiär navigering.';
 $string['privacy:completionpath'] = 'Slutförande av kurs';
 $string['privacy:favouritespath'] = 'Favoritmärkt kursinformation';
 $string['privacy:metadata:activityfavouritessummary'] = 'Kurssystemet innehåller information om vilka aktiviteter från aktivitetsväljaren som märkts som favoriter av användaren.';

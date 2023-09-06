@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'it', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'it', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -61,7 +61,8 @@ $string['partiallycorrectfeedback'] = 'Per risposte parzialmente esatte';
 $string['pleaseselectananswer'] = 'Per favore scegli una risposta';
 $string['pleaseselectatleastoneanswer'] = 'Per favore scegli almeno una risposta';
 $string['pluginname'] = 'Risposta multipla';
-$string['pluginname_help'] = 'In risposta a una domanda (che può includere un\'immagine) chi risponde sceglie tra più risposte possibili. Ci sono due tipi di domande a scelta/risposta multipla - risposta singola e risposta multipla.';
+$string['pluginname_help'] = 'In risposta a una domanda (che può includere un\'immagine) chi risponde sceglie tra più risposte possibili. Una domanda a scelta multipla può avere una o più risposte esatte.';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = 'Creazione domanda a Risposta multipla';
 $string['pluginnameediting'] = 'Modifica di una domanda a Risposta multipla';
 $string['pluginnamesummary'] = 'Consente l\'utilizzo di domande a risposta multipla con una o più risposte esatte.';
@@ -69,10 +70,11 @@ $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Risposta multipla\' n
 $string['privacy:preference:answernumbering'] = 'Stile di numerazione da utilizzare (\'1, 2, 3, ...\', \'a, b, c, ...\' etc.).';
 $string['privacy:preference:defaultmark'] = 'Punteggio di default di una specifica domanda.';
 $string['privacy:preference:showstandardinstruction'] = 'Opzione di visualizzazione delle istruzioni standard.';
+$string['regradeissuenumchoiceschanged'] = 'Il numero di possibili risposte della domanda è cambiato.';
 $string['selectmulti'] = 'Scegli una o più alternative:';
 $string['selectone'] = 'Scegli un\'alternativa:';
 $string['showstandardinstruction'] = 'Visualizza istruzioni standard';
-$string['showstandardinstruction_help'] = 'Consente di visualizzare, prima delle risposte a scelta multipla, le istruzioni "Scegli una un\'alternativa:" oppure "Scegli una o più alternative:".';
+$string['showstandardinstruction_help'] = 'Consente di visualizzare, prima delle risposte a scelta multipla, le istruzioni "Scegli una un\'alternativa:" oppure "Scegli una o più alternative:". In alternativa è possibile inserire le istruzioni nel testo della domanda.';
 $string['shuffleanswers'] = 'Alternative in ordine casuale';
 $string['shuffleanswers_help'] = 'Consente l\'ordinamento casuale delle possibili risposte alternative, purché l\'opzione "Alternative in ordine casuale" sia abilitata.';
 $string['singleanswer'] = 'Scegli una sola risposta.';

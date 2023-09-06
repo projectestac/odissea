@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'ko', version '3.11'.
+ * Strings for component 'qformat_gift', language 'ko', version '4.1'.
  *
  * @package     qformat_gift
  * @category    string
@@ -36,3 +36,4 @@ $string['importminerror'] = '질문에 오류가 있습니다. 이 질문유형�
 $string['nohandler'] = '{$a} 문형에 대한 핸들러가 없음';
 $string['pluginname'] = 'Gift 형식';
 $string['pluginname_help'] = 'GIFT 형식은 일반 문서 형식으로 내보내진 선다형, 참/거짓형, 단답형, 짝찾기형, ( )넣기, 수치형 및 에세이 질문 등을 가져올 수 있게 합니다. ';
+$string['pluginname_link'] = 'qformat/gift';

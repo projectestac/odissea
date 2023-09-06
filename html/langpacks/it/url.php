@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'it', version '3.11'.
+ * Strings for component 'url', language 'it', version '4.1'.
  *
  * @package     url
  * @category    string
@@ -50,10 +50,12 @@ $string['indicator:cognitivedepth'] = 'URL cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse URL.';
 $string['indicator:cognitivedepthdef'] = 'URL cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalla risorsa URL (Livelli: Nessuna visualizzazione, Visualizzazione)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'URL sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse URL.';
 $string['indicator:socialbreadthdef'] = 'URL sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dalle risorse URL (Livelli: Nessuna partecipazione, Partecipazione da solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidstoredurl'] = 'Non è possibile visualizzare la risorsa, l\'URL non è valida';
 $string['invalidurl'] = 'L\'URL inserito non è valido';
 $string['modulename'] = 'URL';
@@ -62,6 +64,7 @@ $string['modulename_help'] = 'Il modulo URL consente ai docenti di inserire link
 Sono disponibili molte opzioni di visualizzazione per aprire l\'URL, ad esempio in una finestra popup oppure incorporandola, ed anche opzioni avanzate per inviare all\'URL parametri come il nome dello studente.
 
 Da notare che è possibile aggiungere URL ad altri tipi di risorse o attività tramite l\'editor di testo.';
+$string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = 'URL';
 $string['page-mod-url-x'] = 'Qualsiasi pagina con modulo URL';
 $string['parameterinfo'] = '&amp;parametro=variabile';

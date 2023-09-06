@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'ca', version '3.11'.
+ * Strings for component 'enrol_guest', language 'ca', version '4.1'.
  *
  * @package     enrol_guest
  * @category    string
@@ -42,5 +42,6 @@ $string['showhint_desc'] = 'Mostra la primera lletra de la contrasenya d\'accés
 $string['status'] = 'Permetre l\'accés de visitants';
 $string['status_desc'] = 'Permetre l\'accés de visitants temporals per defecte.';
 $string['status_help'] = 'Aquest paràmetre determina si un usuari pot accedir al curs com a visitant, sense necessitat d\'inscriure\'s.';
+$string['status_link'] = 'enrol/guest';
 $string['usepasswordpolicy'] = 'Utilitzeu la política de contrasenyes';
 $string['usepasswordpolicy_desc'] = 'Utilitzeu la política de contrasenyes estàndard per a contrasenyes d\'accés de visitants.';

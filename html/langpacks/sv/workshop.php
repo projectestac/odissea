@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'sv', version '3.11'.
+ * Strings for component 'workshop', language 'sv', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -43,8 +43,10 @@ $string['allocationdone'] = 'Fördelning utförd';
 $string['allocationerror'] = 'Fel vid fördelning';
 $string['allowedfiletypesforoverallfeedback'] = 'Tillåtna filtyper i återkopplingsbilagor';
 $string['allowedfiletypesforoverallfeedback_help'] = 'Filtyper för återkopplingsbilagor kan begränsas genom att ange en lista över tillåtna filtyper. Om fältet lämnas tomt är alla filtyper tillåtna.';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
 $string['allowedfiletypesforsubmission'] = 'Tillåtna filtyper i inlämningsbilagor';
 $string['allowedfiletypesforsubmission_help'] = 'Tillåtna filtyper i inlämningsbilagor kan begränsas genom att ange en lista över tillåtna filtyper. Om fältet lämnas tomt är alla filtyper tillåtna.';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = 'Alla inlämningar ({$a})';
 $string['alreadygraded'] = 'Redan betygsatt';
 $string['areaconclusion'] = 'Slutsatstext';
@@ -193,10 +195,12 @@ $string['indicator:cognitivedepth'] = 'Workshop kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Workshopaktivitet.';
 $string['indicator:cognitivedepthdef'] = 'Workshop kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har uppnått denna procentandel av det kognitiva engagemanget som tillhandahålls av Workshop-aktiviteten under detta analysintervall (Nivåer = Ej visad, Visad, Lämna in, Visa återkoppling, Kommentera återkoppling, Ny inlämning efter att ha sett återkoppling)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Workshop social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Workshopaktivitet.';
 $string['indicator:socialbreadthdef'] = 'Workshop social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Workshopaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt, Deltagaren tillsammans med andra)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Inlämningsinstruktioner';
 $string['instructreviewers'] = 'Bedömningsinstruktioner';
@@ -215,6 +219,7 @@ Eleverna kan lämna digitalt innehåll (filer), som dokument från ordbehandling
 Inlämningarna bedöms med hjälp av ett formulär där läraren definierat ett flertal bedömningskriterier. Processen för bedömning av inlämnade uppgifter samt att förstå bedömningsformuläret kan förövas med exempelinlämningar och exempelbedömningar som läraren skapat. Eleverna ges möjlighet att bedöma en eller flera av deras tilldelade inlämningar. Inlämnade uppgifter och gjorda bedömningar av arbeten kan vara anonyma vid behov.
 
 Eleverna får två betyg i en workshop - ett betyg för sin inlämnade uppgift och ett betyg för sina medarbetarbedömningar. Båda betygen sparas i betygsboken.';
+$string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = 'Workshops';
 $string['myassessments'] = 'Mina bedömningar';
 $string['mysubmission'] = 'Min inskickade uppgift';
@@ -362,6 +367,7 @@ $string['submissiongradeof'] = 'Betyg för inlämning (av {$a})';
 $string['submissionlastmodified'] = 'Senast ändrad';
 $string['submissionrequiredcontent'] = 'Du måste skriva något eller lägga till en fil.';
 $string['submissionrequiredfile'] = 'Du måste lägga till en fil eller ange text';
+$string['submissionsallocation'] = 'Inlämningstilldelning';
 $string['submissionsettings'] = 'Inlämningsinställningar';
 $string['submissionsreport'] = 'Workshopinlämningsrapport';
 $string['submissionstart'] = 'Öppen för inlämning av uppgifter';

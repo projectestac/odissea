@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mediagallery', language 'es', version '3.11'.
+ * Strings for component 'mediagallery', language 'es', version '4.1'.
  *
  * @package     mediagallery
  * @category    string
@@ -298,6 +298,9 @@ $string['storagetotalusage'] = 'Uso total de almacenamiento en el sitio: {$a}.';
 $string['submittedforgrading'] = 'Enviado para calificarse';
 $string['synclastcompleted'] = 'Última sincronización completada';
 $string['syncwiththebox'] = 'Sincronizar desde theBox';
+$string['tagarea_mediagallery'] = 'Colecciones de medios';
+$string['tagarea_mediagallery_gallery'] = 'Galerías de medios';
+$string['tagarea_mediagallery_item'] = 'Elementos de medios';
 $string['tags'] = 'Etiquetas';
 $string['theboxisnotenabled'] = 'Desafortunadamente, esta colección actualmente no es accesible porque está ligada a theBox, que actualmente no está habilitada.';
 $string['thumbnail'] = 'Miniatura';

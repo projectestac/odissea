@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ar', version '3.11'.
+ * Strings for component 'auth_ldap', language 'ar', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -124,6 +124,10 @@ $string['diag_toooldversion'] = 'إنه من غير المرجح أن يستعم
 $string['didntfindexpiretime'] = 'الدالة password_expire() لم تعثر على وقت انتهاء الصلاحية.';
 $string['didntgetusersfromldap'] = 'لم نحصل على أي مستخدمين من LDAP -- خطأ؟ -- يتم الآن الخروج';
 $string['gotcountrecordsfromldap'] = 'تم الحصول على {$a} سجل/سجلات من LDAP';
+$string['invalidusererrors'] = 'تنبيه: تم تخطي إنشاء {$a} من حسابات المستخدمين.';
+$string['invaliduserexception'] = 'خطأ: يتعذر إنشاء حساب جديد للمستخدم. التفاصيل والسبب:
+{$a}
+يجري تخطي هذا المستخدم.';
 $string['ldapnotconfigured'] = 'رابط مضيف LDAP غير مهيأ حالياً';
 $string['morethanoneuser'] = 'تم العثور على أكثر من سجل مستخدم في LDAP. سيتم استعمال السجل الأول فقط.';
 $string['needbcmath'] = 'أنت بحاجة إلى استعمال الامتداد BCMath لخاصية التحقق من انتهاء صلاحية كلمة المرور مع المجلد النشط.';
@@ -157,7 +161,6 @@ $string['updatepasserrorexpire'] = 'خطأ في الدالة user_update_passwor
 $string['updatepasserrorexpiregrace'] = 'خطأ في الدالة user_update_password() عند تحديث وقت انتهاء صلاحية كلمة المرور و/أو إمهال الدخول. رمز الخطأ: {$a->errno}؛ نص الخطأ: {$a->errstring}';
 $string['updateremfail'] = 'خطأ عند تحديث سجل LDAP. رمز الخطأ: {$a->errno}؛ نص الخطأ: {$a->errstring}<br/>المفتاح ({$a->key}) - قيمة مودل القديمة: \'{$a->ouvalue}\' القيمة الجديدة: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'فشل تحديث LDAP بالحقل الغامض {$a->key}؛ قيمة مودل القديمة: \'{$a->ouvalue}\' القيمة الجديدة: \'{$a->nuvalue}\'';
-$string['updateremfailfield'] = 'فشل تحديث LDAP بحقل غير موجود (\'{$a->ldapkey}\'). المفتاح ({$a->key}) - قيمة مودل القديمة: \'{$a->ouvalue}\' القيمة الجديدة: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'تعذر العثور على المستخدم في أثناء التحديث الخارجي. التفاصيل تتبع: أساس البحث: \'{$a->userdn}\'؛ مرشح البحث: \'(objectClass=*)\'؛ سمات البحث: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'الدالة auth: ldap user_activate() لا تدعم نوع المستخدم المحدد: {$a}';
 $string['user_disablenotsupportusertype'] = 'الدالة auth: ldap user_disable() لا تدعم usertype المحدد: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_upload', language 'el', version '3.11'.
+ * Strings for component 'assignment_upload', language 'el', version '4.1'.
  *
  * @package     assignment_upload
  * @category    string
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'Έχει υποβληθεί μια υποβολή με ανέβασμα εργασίας.';
 $string['event_assessable_uploaded'] = 'Ένα αρχείο έχει ανεβεί.';
 $string['pluginname'] = 'Ανέβασμα εργασίας';
-$string['privacy:metadata'] = 'Το πρόσθετο Ανέβασμα εργασίας δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata'] = 'Το πρόσθετο Ανεβάσματος εργασίας δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

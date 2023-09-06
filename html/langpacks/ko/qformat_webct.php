@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_webct', language 'ko', version '3.11'.
+ * Strings for component 'qformat_webct', language 'ko', version '4.1'.
  *
  * @package     qformat_webct
  * @category    string
@@ -30,6 +30,7 @@ $string['missinganswer'] = '너무 적음 :ANSWER, :질문 줄 {$a} Lx, :Rx 문�
 $string['missingquestion'] = '줄 {$a} 이후 누락된 질문 라벨';
 $string['pluginname'] = 'WebCT 형식';
 $string['pluginname_help'] = 'WebCT 형식은 WebCT의 문서 형식으로 저장된 다답 및 주관식 단답형 질문을 가져올 수 있게 합니다.';
+$string['pluginname_link'] = 'qformat/webct';
 $string['questionnametoolong'] = '줄 {$a}에 있는 질문이름이 너무 길음 (최대 255 문자). 잘림.';
 $string['unknowntype'] = '알수 없는 형식';
 $string['warningsdetected'] = '{$a} 경고가 발견되었습니다.';

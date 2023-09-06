@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_ddimageortext', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -59,6 +59,7 @@ $string['nolabel'] = '没有标签文字';
 $string['pleasedraganimagetoeachdropregion'] = '您的答案不完整；请将选项拖放到放置区域。';
 $string['pluginname'] = '拖放到图片题';
 $string['pluginname_help'] = '拖放到图片题要求做题者拖放图片或文字标签到一张定义好拖放区域的背景图片上。可拖放的项目可以被分组，所以特定组的所有项目被着上与相应拖放区域相同的颜色。被标记为无限的可拖放项目可以拖放到不止一个拖放区域。';
+$string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnameadding'] = '添加拖放到图片题';
 $string['pluginnameediting'] = '编辑拖放到图片题';
 $string['pluginnamesummary'] = '拖放图片或文字标签到背景图片上的拖放区域。';

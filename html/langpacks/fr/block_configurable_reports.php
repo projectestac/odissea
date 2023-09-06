@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'fr', version '3.11'.
+ * Strings for component 'block_configurable_reports', language 'fr', version '4.1'.
  *
  * @package     block_configurable_reports
  * @category    string
@@ -175,7 +175,7 @@ $string['datatables_search'] = 'Recherche :';
 $string['datatables_sortascending'] = ' : activer le tri croissant de la colonne';
 $string['datatables_sortdescending'] = ' : activer le tri décroissant de la colonne';
 $string['datatables_zerorecords'] = 'Aucun enregistrement correspondant trouvé';
-$string['datatablesinfo'] = 'Librairie JS DataTables (tri des colonnes, entête fixe, recherche, pagination…)';
+$string['datatablesinfo'] = 'Librairie JS DataTables (tri des colonnes, en-tête fixe, recherche, pagination…)';
 $string['date'] = 'Date';
 $string['dateformat'] = 'Format de la date';
 $string['dbhost'] = 'Hôte BDD';
@@ -381,7 +381,7 @@ $string['reporttable_help'] = '<p>Il s\'agit de la largeur du tableau qui affich
 
 <p>Si vous utilisez un modèle, cette option n\'a pas d\'effet.</p>';
 $string['reporttableui'] = 'Interface du tableau des rapports';
-$string['reporttableuiinfo'] = 'Afficher le rapport comme : simple tableau HTML déroulant, jQuery avec tri de colonne ou une bibliothèque DataTables JS (tri par colonne, titre défini, recherche, pagination… )';
+$string['reporttableuiinfo'] = 'Afficher le rapport comme : simple tableau HTML déroulant, jQuery avec tri de colonne ou une bibliothèque DataTables JS (tri par colonne, titre défini, recherche, pagination…)';
 $string['repository'] = 'Dépôt de rapports';
 $string['repository_help'] = 'Vous pouvez importer des exemples de rapports à partir d\'un référentiel partagé public.
 

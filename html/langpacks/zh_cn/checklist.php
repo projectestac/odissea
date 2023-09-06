@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'zh_cn', version '3.11'.
+ * Strings for component 'checklist', language 'zh_cn', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -29,4 +29,5 @@ $string['changetextcolour'] = '下一个文字颜色';
 $string['checklist:emailoncomplete'] = '收到完成电子邮件';
 $string['confirmdeleteitem'] = '你确定要完全删除这一检查名单吗?';
 $string['emailoncomplete'] = '当检查清单完成时电邮：';
+$string['modulename_link'] = 'mod/checklist/view';
 $string['updatecompletescore'] = '保存结业成绩';

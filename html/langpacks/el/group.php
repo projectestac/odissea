@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'el', version '3.11'.
+ * Strings for component 'group', language 'el', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -46,7 +46,7 @@ $string['creategroupinselectedgrouping'] = 'Δημιουργία ομάδας σ
 $string['createingrouping'] = 'Ομαδοποίηση αυτόματα δημιουργημένων ομάδων';
 $string['createorphangroup'] = 'Δημιουργία ορφανής ομάδας';
 $string['csvdelimiter'] = 'Διαχωριστικό CSV';
-$string['databaseupgradegroups'] = 'Η έκδοση του Ομάδες είναι τώρα {$a}';
+$string['databaseupgradegroups'] = 'Η έκδοση των Ομάδων είναι τώρα {$a}';
 $string['defaultgrouping'] = 'Προεπιλεγμένη ομαδοποίηση';
 $string['defaultgroupingname'] = 'Ομαδοποίηση';
 $string['defaultgroupname'] = 'Ομάδα';
@@ -105,7 +105,7 @@ $string['groupingname'] = 'Όνομα ομαδοποίησης';
 $string['groupingnameexists'] = 'Το όνομα ομαδοποίησης «{$a}» υπάρχει ήδη σε αυτό το μάθημα, παρακαλούμε επιλέξτε ένα άλλο.';
 $string['groupings'] = 'Ομαδοποιήσεις';
 $string['groupingsection'] = 'Πρόσβαση ομαδοποίησης';
-$string['groupingsection_help'] = 'Μια ομαδοποίηση είναι μια συλλογή ομάδων μέσα σε ένα μάθημα. Εάν επιλεγεί μια ομάδα εδώ, μόνο οι μαθητές που έχουν ανατεθεί σε ομάδες εντός αυτής της ομαδοποίησης θα έχουν πρόσβαση στο τμήμα μαθήματος.';
+$string['groupingsection_help'] = 'Μια ομαδοποίηση είναι μια συλλογή ομάδων μέσα σε ένα μάθημα. Εάν επιλεγεί μια ομαδοποίηση εδώ, μόνο οι μαθητές που έχουν ανατεθεί σε ομάδες εντός αυτής της ομαδοποίησης θα έχουν πρόσβαση στην ενότητα.';
 $string['groupingsonly'] = 'Μόνο ομαδοποιήσεις';
 $string['groupmember'] = 'Μέλος ομάδας';
 $string['groupmemberdesc'] = 'Τυπικός ρόλος για το μέλος μιας ομάδας.';
@@ -131,7 +131,7 @@ $string['groupscount'] = 'Ομάδες ({$a})';
 $string['groupsettingsheader'] = 'Ομάδες';
 $string['groupsgroupings'] = 'Ομάδες & Ομαδοποιήσεις';
 $string['groupsinselectedgrouping'] = 'Ομάδες σε:';
-$string['groupsnone'] = 'Καθόλου ομάδες';
+$string['groupsnone'] = 'Χωρίς ομάδες';
 $string['groupsonly'] = 'Μόνο ομάδες';
 $string['groupspreview'] = 'Προεπισκόπηση ομάδων';
 $string['groupsseparate'] = 'Διαχωρισμός ομάδων';
@@ -146,7 +146,7 @@ $string['importgroups_help'] = 'Οι ομάδες μπορούν να εισαχ
 * Η πρώτη εγγραφή περιέχει μια λίστα με ονόματα πεδίων που καθορίζουν το μορφότυπο του υπόλοιπου αρχείου
 * Απαιτούμενο όνομα πεδίου είναι το groupname (όνομα της ομάδας)
 * Προαιρετικά ονόματα πεδίων είναι τα εξής: groupidnumber (αναγνωριστικός αριθμός ομάδας), description (περιγραφή), enrolmentkey (κλειδί εγγραφής), groupingname (όνομα της ομαδοποίησης), enablemessaging (ενεργοποίηση μηνυμάτων)';
-$string['importgroups_link'] = 'ομάδα/εισαγωγή';
+$string['importgroups_link'] = '';
 $string['includeonlyactiveenrol'] = 'Να συμπεριληφθούν μόνο ενεργές εγγραφές';
 $string['includeonlyactiveenrol_help'] = 'Εάν ενεργοποιηθεί, οι χρήστες σε αναστολή δεν θα συμπεριλαμβάνονται σε ομάδες.';
 $string['javascriptrequired'] = 'Αυτή η σελίδα απαιτεί ενεργοποίηση της Javascript.';
@@ -181,7 +181,7 @@ $string['printerfriendly'] = 'Εμφάνιση φιλική για εκτύπω�
 $string['privacy:metadata:core_message'] = 'Οι ομαδικές συζητήσεις';
 $string['privacy:metadata:groups'] = 'Ένα ιστορικό μελών της ομάδας.';
 $string['privacy:metadata:groups:groupid'] = 'Το αναγνωριστικό της ομάδας.';
-$string['privacy:metadata:groups:timeadded'] = 'Η χρονοσφραγίδα που δείχνει πότε προστέθηκε ο χρήστης στην ομάδα.';
+$string['privacy:metadata:groups:timeadded'] = 'Η χρονοσήμανση που δείχνει πότε προστέθηκε ο χρήστης στην ομάδα.';
 $string['privacy:metadata:groups:userid'] = 'Το αναγνωριστικό του χρήστη το οποίο συσχετίζεται με την ομάδα.';
 $string['random'] = 'Τυχαία';
 $string['removefromgroup'] = 'Αφαίρεση χρήστη από την ομάδα {$a}';

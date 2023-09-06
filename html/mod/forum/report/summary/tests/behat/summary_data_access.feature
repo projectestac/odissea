@@ -19,8 +19,8 @@ Feature: Report relevant content availability
       | student1 | C1     | student        |
       | student2 | C1     | student        |
     And the following "activities" exist:
-      | activity | name   | description | course | idnumber |
-      | forum    | forum1 | C1 forum    | C1     | forum1   |
+      | activity | name   | course | idnumber |
+      | forum    | forum1 | C1     | forum1   |
     And the following forum discussions exist in course "Course 1":
       | user     | forum  | name        | message   | attachments | inlineattachments |
       | teacher1 | forum1 | discussion1 | message 1 |             |                   |
@@ -34,7 +34,7 @@ Feature: Report relevant content availability
   @javascript
   Scenario: Teachers can access report data about other users by default
     Given I am on the "forum1" "forum activity" page logged in as teacher1
-    And I navigate to "Forum summary report" in current page administration
+    And I navigate to "Reports" in current page administration
     Then the following should exist in the "forumreport_summary_table" table:
       | -2-       | -3- | -4- | -5- | -6- | -7- | -8- |
       | Student 1 | 1   | 1   | 5   | 0   | 3   | 14  |
@@ -42,7 +42,7 @@ Feature: Report relevant content availability
       | Teacher 1 | 1   | 0   | 0   | 1   | 2   | 8   |
     And "select-all-users" "checkbox" should be visible
     And "First name" "link" should be visible
-    And "Surname" "link" should be visible
+    And "Last name" "link" should be visible
     And "Number of discussions posted" "link" should be visible
     And "Number of replies posted" "link" should be visible
     And "Number of attachments" "link" should be visible
@@ -64,7 +64,7 @@ Feature: Report relevant content availability
       | capability               | permission | role    | contextlevel | reference |
       | forumreport/summary:view | Allow      | student | Course       | C1        |
     When I am on the "forum1" "forum activity" page logged in as student1
-    And I navigate to "Forum summary report" in current page administration
+    And I navigate to "Reports" in current page administration
     Then the following should exist in the "forumreport_summary_table" table:
       | -1-       | -2- | -3- | -4- | -5- | -6- | -7- |
       | Student 1 | 1   | 1   | 5   | 1   | 3   | 14  |
@@ -74,7 +74,7 @@ Feature: Report relevant content availability
       | Teacher 1 |
     And "select-all-users" "checkbox" should not exist
     And "First name" "link" should be visible
-    And "Surname" "link" should be visible
+    And "Last name" "link" should be visible
     And "Number of discussions posted" "link" should be visible
     And "Number of replies posted" "link" should be visible
     And "Number of attachments" "link" should be visible

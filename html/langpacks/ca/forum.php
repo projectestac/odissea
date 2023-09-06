@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ca', version '3.11'.
+ * Strings for component 'forum', language 'ca', version '4.1'.
  *
  * @package     forum
  * @category    string
@@ -29,9 +29,10 @@ $string['actionsforgraderinterface'] = 'Accions per a la interfície del qualifi
 $string['actionsforpost'] = 'Accions per a la publicació';
 $string['activitydate:due'] = 'Venciment:';
 $string['activityoverview'] = 'Hi ha missatges nous al fòrum';
-$string['addanewdiscussion'] = 'Afegeix un tema de debat nou';
+$string['addanewdiscussion'] = 'Afegeix un tema de debat';
 $string['addanewquestion'] = 'Afegeix una pregunta nova';
 $string['addanewtopic'] = 'Afegeix un tema nou';
+$string['addreply'] = 'Afegeix una resposta';
 $string['addtofavourites'] = 'Destaca aquest debat';
 $string['advancedsearch'] = 'Cerca avançada';
 $string['alldiscussions'] = 'Tots els debats';
@@ -74,7 +75,6 @@ $string['cannotaddsubscriber'] = 'No es pot afegir la subscripció de l\'usuari 
 $string['cannotaddteacherforumto'] = 'No s\'ha pogut agregar instància al fòrum del professor en la secció 0 del curs.';
 $string['cannotcreatediscussion'] = 'No s\'ha pogut obrir un debat nou';
 $string['cannotcreateinstanceforteacher'] = 'No s\'ha pogut crear una instància nova del mòdul de curs al fòrum del professor.';
-$string['cannotdeletediscussioninsinglediscussion'] = 'No podeu esborrar el missatge inicial d\'un debat';
 $string['cannotdeletepost'] = 'No podeu esborrar aquest missatge';
 $string['cannoteditposts'] = 'No podeu modificar els missatges d\'altres usuaris';
 $string['cannotexportforum'] = 'No podeu exportar aquest fòrum';
@@ -201,6 +201,7 @@ $string['discussionsplit'] = 'El debat s\'ha dividit';
 $string['discussionsstartedby'] = 'Debats iniciats per {$a}';
 $string['discussionsstartedbyrecent'] = 'Debats iniciats recentment per {$a}';
 $string['discussionsstartedbyuserincourse'] = 'Debats iniciats per {$a->fullname} en el curs {$a->coursename}';
+$string['discussionsstartedincourse'] = 'Els debats van començar el {$a}';
 $string['discussionstartedby'] = '{$a} ha començat el debat';
 $string['discussionsubscribed'] = 'Ara esteu subscrit a aquest debat.';
 $string['discussionsubscribestart'] = 'Envieu-me notificacions de missatges nous en aquest debat';
@@ -226,6 +227,8 @@ $string['duedate_help'] = 'És la data fins a la qual s\'espera que s\'enviïn m
 $string['duedatetodisplayincalendar'] = 'Data de venciment per mostrar al calendari';
 $string['eachuserforum'] = 'Cada persona inicia un debat';
 $string['edit'] = 'Edita';
+$string['editdiscussion'] = 'Edita el debat';
+$string['editdiscussiontopic'] = 'Edita el tema de debat';
 $string['editedby'] = 'Editat per {$a->name} - Missatge original enviat el {$a->date}';
 $string['editedpostupdated'] = 'El missatge de {$a} s\'ha actualitzat';
 $string['editing'] = 'S\'està editant';
@@ -374,12 +377,13 @@ $string['indicator:cognitivedepth'] = 'Fòrum: aspecte cognitiu';
 $string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva que ha assolit l\'estudiant en una activitat de fòrum.';
 $string['indicator:cognitivedepthdef'] = 'Fòrum: aspecte cognitiu';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Fòrum en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions, Comenaris a les retroalimentacions, Reenviament després de veure les retroalimentacions)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Fòrum social';
 $string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en l\'abast social assolit per l\'estudiant en una activitat de fòrum.';
 $string['indicator:socialbreadthdef'] = 'Fòrum social';
 $string['indicator:socialbreadthdef_help'] = 'El participant ha assolit aquest percentatge de compromís social oferit per les activitats de fòrum durant aquest interval d\'anàlisi (Nivells: Sense participació, Hi participa tot sol, Hi participa amb altres persones)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inforum'] = 'en {$a}';
-$string['inpagereplysubject'] = 'Re: {$a}';
 $string['inreplyto'] = 'En resposta a {$a}';
 $string['introblog'] = 'Els missatges d\'alguns blogs d\'usuaris d\'aquest curs s\'han copiat automàticament en aquest fòrum perquè les entrades d\'aquests blogs ja no estan disponibles';
 $string['intronews'] = 'Anuncis i notícies generals';
@@ -456,6 +460,7 @@ Els fòrums tenen diverses utilitats, com ara:
 * Com a centre d\'ajuda on tutors i estudiants poden oferir consells
 * Com a àrea de suport personalitzada per establir una comunicació privada entre el professor i un estudiant (utilitzant un fòrum amb grups separats i un sol estudiant per grup)
 * Per a activitats d\'extensió; per exemple, proposar reptes als estudiants per tal que hi reflexionin i hi proposin solucions';
+$string['modulename_link'] = 'mod/forum/view';
 $string['modulenameplural'] = 'Fòrums';
 $string['more'] = 'més';
 $string['movedmarker'] = '(traslladat)';
@@ -513,8 +518,6 @@ $string['numposts'] = '{$a} missatges';
 $string['olderdiscussions'] = 'Debats anteriors';
 $string['oldertopics'] = 'Temes anteriors';
 $string['oldpostdays'] = 'Llegit dies després';
-$string['overviewnumpostssince'] = '{$a} missatges des del darrer inici de sessió';
-$string['overviewnumunread'] = '{$a} no llegits en total';
 $string['page-mod-forum-discuss'] = 'Pàgina dels temes de debat del mòdul «fòrum»';
 $string['page-mod-forum-view'] = 'Pàgina principal del mòdul «fòrum»';
 $string['page-mod-forum-x'] = 'Qualsevol pàgina del mòdul «fòrum»';
@@ -534,7 +537,7 @@ $string['postbymailsuccess'] = 'La vostra resposta «{$a->subject}» s\'ha afegi
 $string['postbymailsuccess_html'] = 'La vostra resposta <a href="{$a->discussionurl}">{$a->subject}</a> s\'ha publicat amb èxit.';
 $string['postbyuser'] = '{$a->post} de {$a->user}';
 $string['postincontext'] = 'Mostra aquest missatge en el seu context';
-$string['postisprivatereply'] = 'Aquesta resposta és privada. Només la podeu veure vós i qualsevol persona amb la capacitat de veure respostes privades, com ara docents o gestors.';
+$string['postisprivatereply'] = 'Aquesta resposta és privada. (Els docents i la resta d\'usuaris amb la capacitat de veure respostes privades també la poden veure.)';
 $string['postmailinfo'] = 'Això és una còpia d\'un missatge enviat a {$a}.';
 $string['postmailinfolink'] = 'Aquesta és una còpia d\'un missatge enviat al curs {$a->coursename}.
 Per respondre, feu clic en aquest enllaç: {$a->replylink}';
@@ -548,6 +551,7 @@ $string['posts'] = 'Missatges';
 $string['postsfrom'] = 'Missatges de';
 $string['postsmadebyuser'] = 'Missatges enviats per {$a}';
 $string['postsmadebyuserincourse'] = 'Missatges de {$a->fullname} en el curs {$a->coursename}';
+$string['postsmadeincourse'] = 'Missatges enviats el {$a}';
 $string['poststo'] = 'Missatges a';
 $string['posttoforum'] = 'Envia al fòrum';
 $string['posttomygroups'] = 'Envia una còpia a tots els grups';
@@ -621,10 +625,11 @@ $string['privatereply_help'] = 'Una resposta privada només pot ser vista per l\
 $string['processingdigest'] = 'S\'està processant el resum de correu de l\'usuari {$a}';
 $string['processingpost'] = 'S\'està processant el missatge {$a}';
 $string['prune'] = 'Divideix';
+$string['prunediscussion'] = 'Divideix el debat';
 $string['prunedpost'] = 'S\'ha creat un nou debat amb aquest missatge';
 $string['pruneheading'] = 'Divideix el debat i mou aquest missatge a un debat nou';
 $string['qandaforum'] = 'Fòrum de preguntes i respostes';
-$string['qandanotify'] = 'Aquest és un fòrum de preguntes i respostes. Per tal de poder veure les respostes d\'altres a aquestes preguntes, heu d\'enviar primer la vostra resposta.';
+$string['qandanotify'] = 'Aquest és un fòrum de preguntes i respostes. Per tal de poder veure altres respostes, primer n\'heu de publicar la vostra.';
 $string['re'] = 'Re:';
 $string['readtherest'] = 'Mostra la resta d\'aquest tema';
 $string['removeallforumtags'] = 'Suprimeix totes les etiquetes del fòrum';
@@ -639,6 +644,7 @@ $string['replyauthorself'] = '{$a} (vós)';
 $string['replyforum'] = 'Respon al fòrum';
 $string['replyingtoauthor'] = 'Responent a {$a}...';
 $string['replyplaceholder'] = 'Escriviu una resposta...';
+$string['replypostdiscussion'] = 'Respon al debat';
 $string['replytopostbyemail'] = 'Podeu respondre-hi mitjançant el correu electrònic.
 <strong>Atenció</strong>: cal esborrar tot el text del missatge original abans d\'enviar la resposta; és imprescindible perquè arribi correctament.';
 $string['replytouser'] = 'Utilitza l\'adreça de correu en la resposta';
@@ -701,7 +707,7 @@ $string['smallmessagedigest'] = 'Resum del fòrum contenint {$a} missatges';
 $string['starredonly'] = 'Cerca només debats destacats';
 $string['startedby'] = 'Iniciat per';
 $string['subject'] = 'Assumpte';
-$string['subscribe'] = 'Subscriu-me a aquest fòrum';
+$string['subscribe'] = 'Subscriu-me al fòrum';
 $string['subscribeall'] = 'Subscriu tothom a aquest fòrum';
 $string['subscribed'] = 'Subscrit';
 $string['subscribediscussion'] = 'Subscriu-me a aquest debat';
@@ -728,6 +734,7 @@ Hi ha quatre modalitats de subscripció:
 * Subscripció inhabilitada. No s\'hi permeten les subscripcions.
 
 Nota: Qualssevol canvis en la modalitat de subscripció afecten només els usuaris que s\'inscriguin al curs en el futur i els usuaris no existents.';
+$string['subscriptionmodeconfirm'] = 'Segur que voleu canviar el mode de subscripció a {$a}?';
 $string['subscriptionoptional'] = 'Subscripció voluntària';
 $string['subscriptions'] = 'Subscripcions';
 $string['tagarea_forum_posts'] = 'Missatges del fòrum';
@@ -763,7 +770,7 @@ $string['unreadpost'] = 'Missatge sense llegir';
 $string['unreadposts'] = 'Missatges no llegits';
 $string['unreadpostsnumber'] = '{$a} missatges no llegits';
 $string['unreadpostsone'] = 'Un missatge no llegit';
-$string['unsubscribe'] = 'Cancel·la la meva subscripció a aquest fòrum';
+$string['unsubscribe'] = 'Cancel·la la meva subscripció al fòrum';
 $string['unsubscribeall'] = 'Cancel·la la meva subscripció a tots els fòrums';
 $string['unsubscribeallconfirm'] = 'Us heu subscrit a {$a->forums} fòrums i a {$a->discussions} debats. Segur que voleu cancel·lar la vostra subscripció a tots els fòrums i debats, i inhabilitar la subscripció automàtica?';
 $string['unsubscribeallconfirmdiscussions'] = 'Us heu subscrit a {$a->discussions} debats. Segur que voleu cancel·lar la vostra subscripció a tots els debats i inhabilitar-hi la subscripció automàtica?';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_fbcomments', language 'el', version '3.11'.
+ * Strings for component 'block_fbcomments', language 'el', version '4.1'.
  *
  * @package     block_fbcomments
  * @category    string
@@ -35,10 +35,10 @@ $string['coursepage'] = 'Περιεχόμενο για το μάθημα';
 $string['darkcolor'] = 'Αισθητικό θέμα σκούρου χρώματος';
 $string['enablecomment'] = 'Ενεργοποίηση σχολίων';
 $string['enablelike'] = 'Ενεργοποίηση πλήκτρου Μου αρέσει/Το προτείνω';
-$string['enableshare'] = 'Ενεργοποίηση πλήκτρου διαμοιρασμού';
-$string['fbcomments:addinstance'] = 'Προσθήκη νέου μπλοκ σχόλιο Facebook';
+$string['enableshare'] = 'Ενεργοποίηση πλήκτρου Κοινής χρήσης';
+$string['fbcomments:addinstance'] = 'Προσθήκη νέου μπλοκ Σχόλια Facebook';
 $string['fbcomments:manageurl'] = 'Διαχείριση διεύθυνσης URL μπλοκ Σχόλια Facebook';
-$string['fbcomments:myaddinstance'] = 'Προσθήκη νέου μπλοκ σχόλιο Facebook';
+$string['fbcomments:myaddinstance'] = 'Προσθήκη νέου μπλοκ Σχόλια Facebook';
 $string['invalidvalue'] = 'Αυτή είναι μια μη έγκυρη τιμή';
 $string['leaveblanktohide'] = 'αφήστε κενό για απόκρυψη του πεδίου';
 $string['lightcolor'] = 'Αισθητικό θέμα ανοιχτού χρώματος';

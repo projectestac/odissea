@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'advmindmap', language 'el', version '3.11'.
+ * Strings for component 'advmindmap', language 'el', version '4.1'.
  *
  * @package     advmindmap
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advmindmap'] = 'Προηγμένος νοητικός χάρτης';
-$string['advmindmap:addinstance'] = 'Προσθήκη ενός στιγμιότυπου προηγμένου νοητικού χάρτη';
+$string['advmindmap:addinstance'] = 'Προσθήκη ενός στιγμιοτύπου προηγμένου νοητικού χάρτη';
 $string['advmindmap:givecomment'] = 'Παροχή σχολίου';
 $string['advmindmap:submit'] = 'Υποβολή';
 $string['advmindmap:view'] = 'Προβολή';
@@ -69,7 +69,7 @@ $string['detail_help'] = '<div class="indent">
     </tr>
 </tbody>
 </table>
-<p>(Το άρθρωμα Mindmap αναπτύχθηκε αρχικά από το <a href="http://ekpenso.com">ekpenso.com</a>. Στη συνέχεια τροποποιείται από <a href="http://www.cite.hku.hk">ΑΝΑΦΕΡΕΤΕ</a>.)</p>
+<p>(Το άρθρωμα Mindmap αναπτύχθηκε αρχικά από το <a href="http://ekpenso.com">ekpenso.com</a>. Στη συνέχεια τροποποιείται από <a href="http://www.cite.hku.hk">ΠΑΡΑΠΟΜΠΗ</a>.)</p>
 </div>';
 $string['editable'] = 'Επεξεργάσιμο';
 $string['editingbyuser'] = 'Αυτός ο νοητικός χάρτης ομάδας είναι/ήταν επιμέλεια του/της <span style=\\"\\">{$a}</span> σε αυτή την ώρα και, επομένως, είναι κλειδωμένος.';
@@ -87,7 +87,7 @@ $string['eventmindmapupdated'] = 'Ένας νοητικός χάρτης ενη�
 $string['groupmembers'] = 'Μέλη της ομάδας';
 $string['groupname'] = 'Όνομα ομάδας';
 $string['instances'] = 'Στιγμιότυπα προηγμένου νοητικού χάρτη';
-$string['invalidgroupmodefordummygroups'] = 'Όταν είναι επιλεγμένη η δυνατότητα ψεύτικων ομάδων, η ρύθμιση κατάστασης ομάδας θα πρέπει να είναι «Χωρίς ομάδες»';
+$string['invalidgroupmodefordummygroups'] = 'Όταν είναι επιλεγμένο το χαρακτηριστικό/δυνατότητα ψεύτικων ομάδων, η ρύθμιση κατάστασης ομάδας θα πρέπει να είναι «Χωρίς ομάδες»';
 $string['invalidid'] = 'το αναγνωριστικό προηγμένου νοητικού χάρτη ήταν λανθασμένο';
 $string['ismember'] = '(&#10004; Είστε μέλος της ομάδας)';
 $string['largeconvas'] = 'Μεγέθυνση περιοχής επεξεργασίας';
@@ -100,7 +100,7 @@ $string['numdummygroups'] = 'Αριθμός ψεύτικων ομάδων';
 $string['pluginadministration'] = 'Διαχείριση προηγμένου νοητικού χάρτη';
 $string['pluginname'] = 'Προηγμένος νοητικός χάρτης';
 $string['print'] = 'Εκτύπωση:';
-$string['removeinstances'] = 'Διαγραφή όλων των στιγμιότυπων προηγμένου νοητικού χάρτη';
+$string['removeinstances'] = 'Διαγραφή όλων των στιγμιοτύπων Προηγμένου νοητικού χάρτη';
 $string['smallconvas'] = 'Σμίκρυνση περιοχής επεξεργασίας';
 $string['uneditable'] = 'Ο νοητικός χάρτης τώρα δεν είναι τροποποιήσιμος!';
 $string['uniquelink'] = 'Σύνδεσμος προς αυτόν τον νοητικό χάρτη';

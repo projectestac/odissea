@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'ko', version '3.11'.
+ * Strings for component 'hvp', language 'ko', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -266,6 +266,7 @@ H5P는 내용이 알찬 콘텐츠에 대한 저작도구가 될 뿐만 아니라
 사용자 상호작용과 점수는 xAPI를 사용하여 추적되며 Moodle 성적(Gradebook)을 통해 확인할 수 있다. 프로그래밍 기술을 가진 사람들은 현재 H5P 상호작용에서 부정행위를 하고 정답을 알지 못하는 상태에서 만점을 받는 것이 가능하다는 점에 유의한다. 시험이나 시험과 유사한 경우 등에 H5P를 사용해서는 안 된다.
 
 내장된 저작 도구를 사용하여 콘텐츠를 만들거나 다른 H5P 지원 사이트에서 발견된 H5P 파일을 업로드하여 대화형 H5P 콘텐츠를 추가하십시오.';
+$string['modulename_link'] = 'https://h5p.org/moodle-more-help';
 $string['modulenameplural'] = '상호작용적 콘텐츠';
 $string['nextpage'] = '다음 페이지';
 $string['noanswersubmitted'] = '이 사용자는 아직 H5P에 대한 답변을 제출하지 않음';

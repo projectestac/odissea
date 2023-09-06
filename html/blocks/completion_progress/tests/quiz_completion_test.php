@@ -33,6 +33,12 @@ require_once($CFG->dirroot.'/mod/quiz/locallib.php');
 use block_completion_progress\completion_progress;
 use block_completion_progress\defaults;
 
+if (!class_exists('mod_quiz\quiz_settings')) {
+    // Moodle 4.1 or earlier.
+    class_alias('quiz', 'mod_quiz\quiz_settings', false);
+    class_alias('quiz_attempt', 'mod_quiz\quiz_attempt', false);
+}
+
 /**
  * Quiz activity-related unit tests for Completion Progress block.
  *
@@ -213,9 +219,9 @@ class quiz_completion_test extends \block_completion_progress\tests\completion_t
      * @return quiz_attempt
      */
     private function submit_for_student($student, $quiz, $attemptnumber) {
-        $quizobj = \quiz::create($quiz->id, $student->id);
+        $quizobj = \mod_quiz\quiz_settings::create($quiz->id, $student->id);
         $attempt = quiz_prepare_and_start_new_attempt($quizobj, $attemptnumber, null, false, [], [], $student->id);
-        $attemptobj = \quiz_attempt::create($attempt->id);
+        $attemptobj = \mod_quiz\quiz_attempt::create($attempt->id);
 
         // Save a response for the essay in the first slot.
         $qa = $attemptobj->get_question_attempt(1);
@@ -251,7 +257,12 @@ class quiz_completion_test extends \block_completion_progress\tests\completion_t
         $update->timemodified = time();
         $update->sumgrades = $quba->get_total_mark();
         $DB->update_record('quiz_attempts', $update);
-        quiz_save_best_grade($attemptobj->get_quiz(), $attemptobj->get_userid());
+
+        if (class_exists('mod_quiz\grade_calculator')) {
+            $attemptobj->get_quizobj()->get_grade_calculator()->recompute_final_grade($attemptobj->get_userid());
+        } else {
+            quiz_save_best_grade($attemptobj->get_quiz(), $attemptobj->get_userid());
+        }
 
         $this->setUser(null);
     }

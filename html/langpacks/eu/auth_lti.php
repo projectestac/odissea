@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'eu', version '3.11'.
+ * Strings for component 'auth_lti', language 'eu', version '4.1'.
  *
  * @package     auth_lti
  * @category    string
@@ -25,6 +25,34 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accountcreatedsuccess'] = 'Zure kontua sortu da eta dagoeneko erabiltzeko prest dago.';
+$string['accountlinkedsuccess'] = 'Existitzen den zure kontua ondo estekatu da.';
 $string['auth_ltidescription'] = 'LTI autentifikazio-pluginak, \'Argitaratu LTI tresna gisa\' matrikulazio-pluginarekin batera, urrutiko erabiltzaileei aurkeratutako ikastaro eta jardueretara sartzeko baimena ematen die. Bestela esanda, Moodlek LTI tresna-hornitzaile gisa lan egiten du.';
+$string['cannotcreateaccounts'] = 'Kontuen sorrera gune honetan debekatuta dago une honetan.';
+$string['createaccount'] = 'Sortu kontua';
+$string['createaccountforme'] = 'Sortu niretzako kontu bat';
+$string['createnewaccount'] = 'Kontu berri bat sortu nahi dut';
+$string['currentlyloggedinas'] = 'Une honetan honela hasi duzu saioa:';
+$string['firstlaunchnoauthnotice'] = 'Zure kontua lotzeko aurretik gunean saioa hasi behar duzu. Gunean saioa hasi ezazu leiho/fitxa berri batean eta ondoren hemen tresna berriz abiarazi ezazu. Informazio gehiagorako ikusi <a href="{$a}" target="_blank">Publikatu LTI tresna</a>ren dokumentazioa.';
+$string['firstlaunchnotice'] = 'Hemen zauden lehen aldia dela dirudi. Aukeratu ezazu mesedez hurrengo kontu aukeretako bat.';
+$string['getstartedwithnewaccount'] = 'Kontu berri batekin hasi zaitez';
+$string['haveexistingaccount'] = 'Dagoeneko kontu bat daukat';
+$string['linkthisaccount'] = 'Estekatu kontu hau';
+$string['mustbeloggedin'] = 'Existitzen den zure kontuarekin saioa hasita izan behar duzu';
 $string['pluginname'] = 'LTI';
 $string['privacy:metadata'] = 'LTI autentifikazio-pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata:auth_lti'] = 'LTI autentifikazioa';
+$string['privacy:metadata:auth_lti:authsubsystem'] = 'Plugin hau autentifikazio-sistemarekin lotuta dago.';
+$string['privacy:metadata:auth_lti:issuer'] = 'Estekatutako erabiltzailearen jatorrizko plataforma identifikatzen duen emailearen URLa.';
+$string['privacy:metadata:auth_lti:issuer256'] = 'Emailearen URLaren SHA256 hash-a.';
+$string['privacy:metadata:auth_lti:sub'] = 'Emailean erabiltzailea identifikatzen duen gaiaren katea.';
+$string['privacy:metadata:auth_lti:sub256'] = 'Emailean erabiltzailea identifikatzen duen gaiaren katearen SHA256 hash-a.';
+$string['privacy:metadata:auth_lti:tableexplanation'] = 'Erabiltzailearen Moodle kontuarekin lotutako LTI kontuak.';
+$string['privacy:metadata:auth_lti:timecreated'] = 'Erabiltzaile-kontua LTI saioarekin lotu zeneko unea.';
+$string['privacy:metadata:auth_lti:timemodified'] = 'Erregistro hau aldatu zeneko unea.';
+$string['privacy:metadata:auth_lti:userid'] = 'LTI saioarekin lotuta dagoen erabiltzaile-kontuaren IDa.';
+$string['provisioningmodeauto'] = 'Kontu berriak soilik (automatikoa)';
+$string['provisioningmodeexistingonly'] = 'Existitzen diren kontuak soilik (pantaila)';
+$string['provisioningmodenewexisting'] = 'Existitzen diren kontuak eta kontu berriak (pantaila)';
+$string['useexistingaccount'] = 'Erabili existitzen den kontua';
+$string['welcome'] = 'Ongi etorri!';

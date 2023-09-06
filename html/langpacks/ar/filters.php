@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'ar', version '3.11'.
+ * Strings for component 'filters', language 'ar', version '4.1'.
  *
  * @package     filters
  * @category    string
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['actfilterhdr'] = 'المرشحات المفعلة';
 $string['addfilter'] = 'إضافة المرشح';
 $string['anycategory'] = 'أي تصنيف';
-$string['anycourse'] = 'أي مقرر دراسي';
-$string['anycourses'] = 'منضم إلى أي مقرر دراسي';
+$string['anycourse'] = 'أي مساق';
+$string['anycourses'] = 'منضم إلى أي مساق';
 $string['anyfield'] = 'أي حقل';
 $string['anyrole'] = 'أي دور';
 $string['anyvalue'] = 'أي قيمة';
@@ -38,11 +38,11 @@ $string['categoryrole'] = 'دور التصنيف';
 $string['contains'] = 'يحتوي';
 $string['content'] = 'المحتوى';
 $string['contentandheadings'] = 'المحتوى والعناوين';
-$string['coursecategory'] = 'تصنيف المقرر الدراسي';
-$string['courserole'] = 'دور المقرر الدراسي';
+$string['coursecategory'] = 'تصنيف المساق';
+$string['courserole'] = 'دور المساق';
 $string['courserolelabel'] = '{$a->label} is {$a->rolename} in {$a->coursename} from {$a->categoryname}';
-$string['courserolelabelerror'] = 'خطأ {$a->label}: المقرر الدراسي {$a->coursename} ليس له وجود';
-$string['coursevalue'] = 'قيمة المقرر الدراسي';
+$string['courserolelabelerror'] = 'خطأ {$a->label}: المساق {$a->coursename} ليس له وجود';
+$string['coursevalue'] = 'قيمة المساق';
 $string['datelabelisafter'] = '{$a->label} is after {$a->after}';
 $string['datelabelisbefore'] = '{$a->label} is before {$a->before}';
 $string['datelabelisbetween'] = '{$a->label} is between {$a->after} and {$a->before}';

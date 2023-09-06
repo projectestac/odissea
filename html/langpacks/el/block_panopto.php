@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_panopto', language 'el', version '3.11'.
+ * Strings for component 'block_panopto', language 'el', version '4.1'.
  *
  * @package     block_panopto
  * @category    string
@@ -62,14 +62,14 @@ $string['block_panopto_enforce_category_structure'] = 'Συγχρονισμός 
 $string['block_panopto_enforce_https_on_wsdl'] = 'Επιβολή HTTPS στις κλήσεις API Panopto';
 $string['block_panopto_folder_name_style'] = 'Στυλ ονόματος φακέλου Panopto';
 $string['block_panopto_non_editing_teacher_provision'] = 'Να επιτρέπεται η προπαροχή και σε περιορισμένο διδάσκοντα';
-$string['block_panopto_non_editing_teacher_provision_desc'] = 'Ενεργοποίηση αυτής της επιλογής για να επιτρέπεται σε περιορισμένους διδάσκοντες να προπαρέχουν φακέλους μαθήματος Panopto';
+$string['block_panopto_non_editing_teacher_provision_desc'] = 'Ενεργοποίηση αυτής της επιλογής για να επιτρέπεται σε περιορισμένους διδάσκοντες (χωρίς δικαιώματα επεξεργασίας) να προπαρέχουν φακέλους μαθήματος Panopto';
 $string['block_panopto_print_log_to_file'] = 'Ανακατεύθυνση καταγραφών σφαλμάτων σε αρχείο κειμένου';
 $string['block_panopto_publisher_system_role_mapping'] = 'Ρόλοι συστήματος με δικαιώματα προπαροχής';
 $string['block_panopto_server_number_desc'] = 'Κάντε κλικ στο πλήκτρο «Αποθήκευση αλλαγών» για ενημέρωση αριθμού εξυπηρετητών.';
 $string['block_panopto_server_number_name'] = 'Αριθμός εξυπηρετητών Panopto';
 $string['block_panopto_sync_after_login'] = 'Αυθεντικοποίηση και συγχρονισμός με το Panopto κατά την σύνδεση με το Moodle (δεν συνιστάται)';
 $string['block_panopto_wsdl_proxy_host_desc'] = 'Η διεύθυνση κεντρικού Η/Υ προς χρήση για τον διακομιστή μεσολάβησης για οποιαδήποτε υπηρεσία WSDL Panopto (Προαιρετικά)';
-$string['block_panopto_wsdl_proxy_port'] = 'Θύρα διακομιστή διαμεσολάβησης WSDL';
+$string['block_panopto_wsdl_proxy_port'] = 'Θύρα διακομιστή μεσολάβησης WSDL';
 $string['block_panopto_wsdl_proxy_port_desc'] = 'Η θύρα προς χρήση για τον διακομιστή μεσολάβησης για οποιαδήποτε υπηρεσία WSDL Panopto (Προαιρετικά)';
 $string['cli_category_invalid_arguments'] = 'Παρακαλούμε, εκτελέστε την εντολή με τα ακόλουθα ορίσματα «build_category_structure.php <panoptoservername> <applicationkey>»';
 $string['cli_heading_build_category_structure'] = 'Συγχρονισμός όλων των κατηγοριών Moodle με το Panopto';
@@ -103,7 +103,7 @@ $string['no_live_sessions'] = 'Καμία ζωντανή σύνοδος';
 $string['no_publishers'] = 'Καθόλου εκδότες.';
 $string['no_users_synced_desc'] = 'Οι χρήστες που εγγράφονται στο μάθημα θα συγχρονίζονται με το Panopto μόλις εμφανίσουν το μπλοκ Panopto σε ένα μάθημα.';
 $string['no_viewers'] = 'Χωρίς θεατές.';
-$string['or'] = 'Η';
+$string['or'] = 'Ή';
 $string['panopto:addinstance'] = 'Προσθήκη νέου μπλοκ Panopto';
 $string['panopto:myaddinstance'] = 'Προσθήκη νέου μπλοκ Panopto στη σελίδα Η αρχική μου';
 $string['panopto:provision_aspublisher'] = 'Προπαροχή ως εκδότης';
@@ -128,7 +128,7 @@ $string['provisioncourseselect_help'] = 'Πολλαπλές επιλογές ε�
 $string['publisher'] = 'Εκδότης';
 $string['publisher_help'] = 'Ένας εκδότης μπορεί να εγκρίνει περιεχόμενο που έχει υποβληθεί από δημιουργούς';
 $string['publishers'] = 'Εκδότες';
-$string['removed_panopto_adhoc_tasks'] = 'Όλες οι υπάρχουσες ειδικά για το Panopto εργασίες έχουν διαγραφεί';
+$string['removed_panopto_adhoc_tasks'] = 'Όλες οι υπάρχουσες ειδικού σκοπού εργασίες Panopto έχουν διαγραφεί';
 $string['require_panopto_version_title'] = 'Ελάχιστη έκδοση Panopto που απαιτείται για αυτή την έκδοση του μπλοκ Panopto του Moodle';
 $string['result'] = 'Αποτέλεσμα';
 $string['role_map_header'] = 'Αλλαγή αντιστοιχίσεων ρόλων Panopto';
@@ -142,7 +142,7 @@ $string['show_less'] = 'Εμφάνισε λιγότερα';
 $string['sso_invalid_authcode'] = 'Μη έγκυρος κωδικός αυθεντικοποίησης.';
 $string['synced_user_info'] = 'Συγχρονισμένες πληροφορίες χρήστη';
 $string['take_notes'] = 'Κρατήστε σημειώσεις';
-$string['unconfigured'] = 'Οι γενικές ρυθμίσεις είναι μη ολοκληρωμένες. Παρακαλούμε, επικοινωνήστε με τον διαχειριστή του συστήματός σας.';
+$string['unconfigured'] = 'Οι καθολικές ρυθμίσεις είναι μη ολοκληρωμένες. Παρακαλούμε, επικοινωνήστε με τον διαχειριστή του συστήματός σας.';
 $string['unknown_provisioning_error'] = 'Παρουσιάστηκε κάποιο άγνωστο σφάλμα.';
 $string['unprovision'] = 'Κατάργηση προπαροχής';
 $string['unprovision_courses'] = 'Κατάργηση προπαροχής μαθημάτων από το Panopto';

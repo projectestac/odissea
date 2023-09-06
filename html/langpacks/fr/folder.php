@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'fr', version '3.11'.
+ * Strings for component 'folder', language 'fr', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -46,10 +46,12 @@ $string['indicator:cognitivedepth'] = 'Dossier : aspect cognitif';
 $string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Dossier.';
 $string['indicator:cognitivedepthdef'] = 'Dossier : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « Dossier » (niveaux : pas de vue, vue).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Dossier : aspect social';
 $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Dossier.';
 $string['indicator:socialbreadthdef'] = 'Dossier : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « Dossier » (niveaux : pas de participation, participant seul).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['maxsizetodownload'] = 'Taille maximale des dossiers à télécharger (Mo)';
 $string['maxsizetodownload_help'] = 'La taille maximale d\'un dossier pouvant être téléchargé sous forme d\'une archive ZIP. Si 0 est indiqué, la taille du dossier est illimitée.';
 $string['modulename'] = 'Dossier';
@@ -59,6 +61,7 @@ Un dossier peut être utilisé par exemple pour :
 
 * rassembler plusieurs fichiers sur un même sujet
 * fournir sur la page de cours un espace de dépôt de fichiers commun à plusieurs enseignants, en cachant le dossier de sorte que seuls les enseignants puissent le voir';
+$string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Dossiers';
 $string['newfoldercontent'] = 'Nouveau contenu de dossier';
 $string['noautocompletioninline'] = 'L\'achèvement automatique lors de la consultation d\'une activité ne peut pas être sélectionné en même temps que l\'option « Afficher sur la page du cours »';

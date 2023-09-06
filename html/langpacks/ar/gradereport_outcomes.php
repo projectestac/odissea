@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_outcomes', language 'ar', version '3.11'.
+ * Strings for component 'gradereport_outcomes', language 'ar', version '4.1'.
  *
  * @package     gradereport_outcomes
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addoutcome'] = 'أضف مخرج';
-$string['courseoutcomes'] = 'مخرجات المقرر الدراسي';
-$string['coursespecoutcome'] = 'مخرجات المقرر الدراسي';
+$string['courseoutcomes'] = 'مخرجات المساق';
+$string['coursespecoutcome'] = 'مخرجات المساق';
 $string['eventgradereportviewed'] = 'تقرير مخرجات التقديرات تمت معاينته';
 $string['outcomes:view'] = 'معاينة تقرير المخرجات';
 $string['pluginname'] = 'تقرير المخرجات';

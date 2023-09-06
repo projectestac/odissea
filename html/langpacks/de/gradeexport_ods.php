@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_ods', language 'de', version '3.11'.
+ * Strings for component 'gradeexport_ods', language 'de', version '4.1'.
  *
  * @package     gradeexport_ods
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventgradeexported'] = 'Bewertung als ODS exportiert';
+$string['eventgradeexported'] = 'Bewertung als OpenDocument exportiert';
 $string['ods:publish'] = 'Bewertungen als OpenDocument veröffentlichen';
 $string['ods:view'] = 'Bewertungen als OpenDocument exportieren';
 $string['pluginname'] = 'OpenDocument-Datei';

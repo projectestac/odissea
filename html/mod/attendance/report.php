@@ -73,9 +73,8 @@ $PAGE->set_cacheable(true);
 $PAGE->navbar->add(get_string('report', 'attendance'));
 
 $output = $PAGE->get_renderer('mod_attendance');
-$tabs = new attendance_tabs($att, attendance_tabs::TAB_REPORT);
-$filtercontrols = new attendance_filter_controls($att, true);
-$reportdata = new attendance_report_data($att);
+$filtercontrols = new mod_attendance\output\filter_controls($att, true);
+$reportdata = new mod_attendance\output\report_data($att);
 
 // Trigger a report viewed event.
 $event = \mod_attendance\event\report_viewed::create(array(
@@ -87,13 +86,8 @@ $event->add_record_snapshot('course_modules', $cm);
 $event->add_record_snapshot('attendance', $attrecord);
 $event->trigger();
 
-$title = get_string('attendanceforthecourse', 'attendance').' :: ' .format_string($course->fullname);
-$header = new mod_attendance_header($att, $title);
-
 // Output starts here.
 echo $output->header();
-echo $output->render($header);
-echo $output->render($tabs);
 echo $output->render($filtercontrols);
 echo $output->render($reportdata);
 echo $output->footer();

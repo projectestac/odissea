@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'fr', version '3.11'.
+ * Strings for component 'choicegroup', language 'fr', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -109,6 +109,7 @@ $string['members/'] = 'Membres';
 $string['members/max'] = 'Membres / Capacité';
 $string['modulename'] = 'Choix de Groupe';
 $string['modulename_help'] = 'Le module « Choix de Groupe » permet à l\'enseignant de laisser l\'étudiant choisir un groupe. L\'enseignant peut déterminer parmi quels groupes les étudiants peuvent choisir et le nombre maximal d\'étudiants dans chaque groupe.';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Choix de Groupe';
 $string['moveselectedusersto'] = 'Déplacer les utilisateurs sélectionnés pour…';
 $string['multipleenrollmentspossible'] = 'Permettre l\'inscription à plusieurs groupes';

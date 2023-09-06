@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_jme', language 'fr', version '3.11'.
+ * Strings for component 'qtype_jme', language 'fr', version '4.1'.
  *
  * @package     qtype_jme
  * @category    string
@@ -45,6 +45,7 @@ $string['notenoughanswers'] = 'Ce type de question demande au moins {$a} répons
 $string['pleaseenterananswer'] = 'Veuillez saisir une réponse.';
 $string['pluginname'] = 'Editeur de Molécule Java';
 $string['pluginname_help'] = 'Pour répondre à une question les participants doivent créer un modèle de molécule en utilisant l\'éditeur de molécule Java (JME). Cette réponse est évaluée par comparaison à différents modèles de réponses.';
+$string['pluginname_link'] = 'question/type/jme';
 $string['pluginnameadding'] = 'Ajout d\'une question Editeur de Molécule Java (JME)';
 $string['pluginnameediting'] = 'Modification d\'une question Editeur de Molécule Java (JME)';
 $string['pluginnamesummary'] = 'Réponse sous forme d\'un modèle de molécule  évaluée en comparant divers modèles de réponses.';

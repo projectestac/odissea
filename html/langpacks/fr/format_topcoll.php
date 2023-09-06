@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'fr', version '3.11'.
+ * Strings for component 'format_topcoll', language 'fr', version '4.1'.
  *
  * @package     format_topcoll
  * @category    string
@@ -36,10 +36,11 @@ $string['cannotgetactivitycacheslock'] = 'Impossible d\'obtenir le verrouillage 
 $string['center'] = 'Centre';
 $string['cloud'] = 'Nuage';
 $string['colourrule'] = 'Veuillez entrer une couleur RVB valide, six chiffres hexadécimaux ou « - » par défaut.';
+$string['columndynamic'] = 'Dynamique';
 $string['columnhorizontal'] = 'Horizontal';
 $string['columnvertical'] = 'Vertical';
 $string['configurationheadingsub'] = 'Configuration';
-$string['configurationheadingsubdesc'] = 'Paramètres de configuration';
+$string['configurationheadingsubdesc'] = 'Paramètres de configuration au niveau du site';
 $string['courseadditionalmoddatamaxstudents'] = 'Définir le nombre maximum d\'étudiants d\'un cours auquel s\'appliquera l\'option « Afficher les informations supplémentaires »';
 $string['courseadditionalmoddatamaxstudentsdesc'] = 'Les informations supplémentaires peuvent prendre du temps à calculer, en particulier pour les cours de grande taille. Vous pouvez donc définir ici le nombre maximum d\'étudiants qu\'un cours peut avoir pour que la fonctionnalité s\'affiche sur ce cours.  Au-delà de cette valeur, les « Informations supplémentaires » ne seront PAS calculées ni affichées, quels que soient les paramètres du cours !  Une valeur à « 0 » signifie « illimité ».  Remarque : Il faut purger les caches lorsqu\'ils sont modifiés.';
 $string['courseadditionalmoddatastudentsinfo'] = 'Statut d\'information supplémentaire :';
@@ -47,6 +48,7 @@ $string['courseadditionalmoddatastudentsinfolimitednoshow'] = 'Les informations 
 $string['courseadditionalmoddatastudentsinfolimitedshow'] = 'Des informations supplémentaires seront affichées pour les activités activées pour les  {$a->étudiants} étudiants si le nombre ne dépasse pas le maximum « {$a->maxstudents} » défini par l\'administrateur dans le paramètre « courseadditionalmoddatamaxstudents » du format de cours Sections Réduites.';
 $string['courseadditionalmoddatastudentsinfounlimited'] = 'Des informations supplémentaires s\'afficheront pour les activités activées pour {$a} étudiants.';
 $string['coursesectionactivityfurtherinformation'] = 'Page du cours pour plus d\'informations';
+$string['coursesectionactivityfurtherinformation_desc'] = 'Paramètres de la page de cours au niveau du site pour plus d\'informations';
 $string['coursesectionactivityfurtherinformationassign'] = 'Afficher les informations sur le devoir';
 $string['coursesectionactivityfurtherinformationassigndesc'] = 'Permet de sélectionner les informations sur les devoirs à afficher dans un cours.  Pour les enseignants/administrateurs, afficher le nombre de rendus.';
 $string['coursesectionactivityfurtherinformationchoice'] = 'Afficher les choix';
@@ -73,9 +75,9 @@ $string['defaultdisplayblocksloc_desc'] = 'Choisir l\'emplacement d\'affichage d
 $string['defaultdisplayinstructions'] = 'Afficher les instructions aux utilisateurs';
 $string['defaultdisplayinstructions_desc'] = 'Afficher des instructions aux utilisateurs les informant de la manière d\'utiliser les boutons.  Peut être oui ou non.';
 $string['defaultheadingsub'] = 'Défauts';
-$string['defaultheadingsubdesc'] = 'Paramètres par défaut';
+$string['defaultheadingsubdesc'] = 'Paramètres par défaut qui peuvent être remplacés au niveau du cours.';
 $string['defaultlayoutcolumnorientation'] = 'Orientation de la colonne';
-$string['defaultlayoutcolumnorientation_desc'] = 'Orientation de la colonne par défaut : verticale ou horizontale.';
+$string['defaultlayoutcolumnorientation_desc'] = 'Orientation de la colonne par défaut : <br>Dynamique - Le nombre de sections par « ligne » s\'ajuste à la taille de la fenêtre, le paramètre « Colonne » n\'est pas utilisé actuellement.<br>Horizontal - Les sections vont de gauche à droite.<br>Vertical - Les sections vont de haut en bas.';
 $string['defaultlayoutcolumns'] = 'Nombre de colonnes';
 $string['defaultlayoutcolumns_desc'] = 'Nombre de colonne entre un et quatre';
 $string['defaultlayoutelement'] = 'Mise en page';
@@ -85,6 +87,8 @@ $string['defaultlayoutstructure'] = 'Configuration de la structure';
 $string['defaultlayoutstructure_desc'] = 'Le paramètre de structure peut être l\'un des suivants : <br />Sujet<br />Semaine<br />Dernière semaine en premier<br />Sujet actuel en premier<br />Jour';
 $string['defaultonesection'] = 'Une section';
 $string['defaultonesection_desc'] = 'Indique si une seule section devrait être ouverte à la fois. Note : ce paramètre est ignoré en mode édition pour permettre le déplacement d\'éléments entre les sections.';
+$string['defaultonesectioniconfont'] = 'Police d\'icônes d\'une section';
+$string['defaultonesectioniconfont_desc'] = 'Indiquer la classe de police d\'icônes à utiliser pour l\'icône de lien d\'une section, par exemple, voir les classes d\'icône de FontAwesome.  S\'il est vide, l\'icône par défaut « one_section » du dossier « pix » du format sera utilisée.';
 $string['defaultshowadditionalmoddata'] = 'Cours par défaut « Afficher des informations supplémentaires »';
 $string['defaultshowadditionalmoddatadesc'] = 'Si une activité est définie au niveau du site (ci-dessous) pour afficher des informations supplémentaires, ce paramètre indique l\'état par défaut de l\'instance spécifique au cours.';
 $string['defaultshowsectionsummary'] = 'Afficher le résumé de la section lorsqu\'elle est réduite';
@@ -119,12 +123,18 @@ $string['defaulttoggleborderradiustl'] = 'Rayon du coin en haut à gauche';
 $string['defaulttoggleborderradiustl_desc'] = 'Arrondi de la bordure en haut à gauche';
 $string['defaulttoggleborderradiustr'] = 'Rayon du coin en haut à droite';
 $string['defaulttoggleborderradiustr_desc'] = 'Arrondi de la bordure en haut à droite';
+$string['defaulttoggleiconfontclosed'] = 'Police de l\'icône pour section repliée';
+$string['defaulttoggleiconfontclosed_desc'] = 'Lorsque « defaulttoggleiconset » est défini sur « Police d\'icônes », cela indique les classes CSS par défaut à utiliser pour l\'icône repliée, c\'est-à-dire les classes d\'icônes de FontAwesome.';
+$string['defaulttoggleiconfontopen'] = 'Police de l\'icône pour section dépliée';
+$string['defaulttoggleiconfontopen_desc'] = 'Lorsque « defaulttoggleiconset » est défini sur « Police d\'icônes », cela indique les classes CSS par défaut à utiliser pour l\'icône dépliée, c\'est-à-dire les classes d\'icône de FontAwesome.';
 $string['defaulttoggleiconposition'] = 'Position des icônes';
 $string['defaulttoggleiconposition_desc'] = 'Précise si les icônes doivent être à droite ou à gauche du mot « Basculer ».';
 $string['defaulttoggleiconset'] = 'Changer le jeu d\'icônes';
-$string['defaulttoggleiconset_desc'] = '<table><tbody><tr><td>Flèche</td><td>{$a->arrow}</td></tr><tr><td>Ampoule</td><td>{$a->bulb} </td> </tr> <tr> <td>Nuage</td> <td> {$a->cloud} </td> </tr> <tr> <td> Œil </td><td>{$a->eye}</td></tr><tr><td>Dossier</td> <td> {$a->dossier} </td> </ tr > <tr> <td> Signal de masse </td> <td> {$a->groundsignal} </td> </tr> <tr> <td> Diode électroluminescente </td> <td> {$a ->led} </td> </tr> <tr> <td> Point </td> <td> {$a->point} </td> </tr> <tr> <td> Puissance </ td> <td> {$a->power} </td> </tr> <tr> <td> Radio </td> <td> {$a->radio} </td> </tr> < tr> <td> Smiley </td> <td> {$a->smiley} </td> </tr> <tr> <td> Carré </td> <td> {$a->square} < / td> </tr> <tr> <td> Soleil / Lune </td> <td> {$a->sunmoon} </td> </tr> <tr> <td> Interrupteur </td> < td> {$a->switch} </td> </tr> </tbody> </table>';
+$string['defaulttoggleiconset_desc'] = '<table><tbody><tr><td>Flèche</td><td>{$a->arrow}</td></tr><tr><td>Ampoule</td><td>{$a->bulb} </td> </tr> <tr> <td>Nuage</td> <td> {$a->cloud} </td> </tr> <tr> <td>Œil</td><td>{$a->eye}</td></tr><tr><td>Dossier</td> <td> {$a->folder} </td> </ tr > <tr> <td>Signal de masse</td> <td> {$a->groundsignal} </td> </tr> <tr> <td>Diode électroluminescente</td> <td> {$a->led} </td> </tr> <tr> <td>Point</td> <td> {$a->point} </td> </tr> <tr> <td>Puissance</ td> <td> {$a->power} </td> </tr> <tr> <td>Radio</td> <td> {$a->radio} </td> </tr> < tr> <td>Smiley</td> <td> {$a->smiley} </td> </tr> <tr> <td>Carré</td> <td> {$a->square} < /td> </tr> <tr> <td>Soleil / Lune</td> <td> {$a->sunmoon} </td> </tr> <tr> <td>Interrupteur</td> <td> {$a->switch} </td> </tr>
+<tr><td>Police d\'icônes</td><td>{$a->tif}</td></tr>
+</tbody> </table>';
 $string['defaulttoggleiconsize'] = 'Taille des icônes';
-$string['defaulttoggleiconsize_desc'] = 'Taille des icônes : petit = 16px, moyen = 24px et grand = 32px';
+$string['defaulttoggleiconsize_desc'] = 'Taille des icônes : petit = 16px, moyen = 24px et grand = 32px ou Police d\'icône : Petite = 0.8em, Moyenne = 1.2em et Grande = 1.8em.';
 $string['defaulttogglepersistence'] = 'Persistance de la bascule';
 $string['defaulttogglepersistence_desc'] = '« On » ou « Off ». Mettre sur « Off » pour améliorer la performance AJAX, mais la position des sections basculées par l\'utilisateur ne sera pas rappelée à l\'actualisation de la page.<br /> Remarque : Lorsque vous désactivez la persistance, veuillez supprimer toutes les lignes contenant « topcoll_toggle_x » dans le champ « name » de la table « user_preferences » de la base de données.  Le « x » de « topcoll_toggle_x » correspond à l\'identifiant du cours.  Ceci permet de gagner de la place si vous n\'avez pas l\'intention de le réactiver.';
 $string['defaultuserpreference'] = 'État initial des bascules';
@@ -195,6 +205,9 @@ $string['formatsettingsinformation'] = '<br />Pour modifier les paramètres du f
 $string['four'] = 'Quatre';
 $string['groundsignal'] = 'Signal de base';
 $string['hidefromothers'] = 'Cacher la section';
+$string['information'] = 'Information';
+$string['informationsettings'] = 'Paramètres d\'information';
+$string['informationsettingsdesc'] = 'Informations sur le format des Sections Réduites';
 $string['instructions'] = 'Instruction : un clic sur le titre de la section affiche ou masque cette section';
 $string['large'] = 'Grand';
 $string['layoutstructuredays'] = 'jours';
@@ -277,7 +290,7 @@ $string['setlayout_toggle_word'] = 'Mention de « Basculer »';
 $string['setlayout_toggle_word_section_number'] = 'Mention de « Basculer » et numéro de section';
 $string['setlayout_toggle_word_section_x'] = 'Mention de « Basculer » et « Section x » / « Semaine x » / « Jour x à basculer »';
 $string['setlayoutcolumnorientation'] = 'Orientation des colonnes';
-$string['setlayoutcolumnorientation_help'] = 'Verticalement - Les sections s\'affichent de haut en bas.<br />Horizontalement - Les sections s\'affichent de gauche à droite.';
+$string['setlayoutcolumnorientation_help'] = 'Dynamique - Le nombre de sections par « ligne » s\'ajuste à la taille de la fenêtre, le paramètre « Colonne » n\'est pas utilisé actuellement.<br>Horizontal - Les sections vont de gauche à droite.<br>Vertical - Les sections vont de haut en bas.';
 $string['setlayoutcolumns'] = 'Colonnes';
 $string['setlayoutcolumns_help'] = 'Définit le nombre de colonnes à utiliser.';
 $string['setlayoutelements'] = 'Éléments';
@@ -291,6 +304,9 @@ $string['setlayoutstructuretopic'] = 'Section';
 $string['setlayoutstructureweek'] = 'Semaine';
 $string['setshowsectionsummary'] = 'Afficher le résumé de la section si réduite';
 $string['setshowsectionsummary_help'] = 'Fixe le résumé de la section toujours affiché même si la section est réduite.';
+$string['settings'] = 'Paramètres';
+$string['settingssettings'] = 'Réglages des paramètres';
+$string['settingssettingsdesc'] = 'Paramètres du format Sections Réduites';
 $string['settogglealignment'] = 'Changer l\'alignement du texte';
 $string['settogglealignment_help'] = 'Définit l\'alignement du texte dans le bandeau de la section réduite';
 $string['settoggleallenabled'] = 'Tout basculer activé';
@@ -313,6 +329,10 @@ $string['settoggleforegroundhoveropacity'] = 'Opacité du survol du premier plan
 $string['settoggleforegroundhoveropacity_help'] = 'Définit l\'opacité du texte au survol de la bascule entre 0 et 1 par incréments de 0,1.';
 $string['settoggleforegroundopacity'] = 'Opacité du premier plan';
 $string['settoggleforegroundopacity_help'] = 'Définit l\'opacité du texte sur la bascule entre 0 et 1 par incréments de 0,1.';
+$string['settoggleiconfontclosed'] = 'Police de l\'icône pour section repliée';
+$string['settoggleiconfontclosed_help'] = 'Lorsque « defaulttoggleiconset » est défini sur « Icon font », cela indique les classes CSS par défaut à utiliser pour l\'icône repliée, c\'est-à-dire les classes d\'icône de FontAwesome. Si la valeur est « - », la valeur par défaut est utilisée.';
+$string['settoggleiconfontopen'] = 'Police de l\'icône pour section dépliée';
+$string['settoggleiconfontopen_help'] = 'Lorsque « defaulttoggleiconset » est défini sur « Icon font », cela indique les classes CSS par défaut à utiliser pour l\'icône dépliée, c\'est-à-dire les classes d\'icône de FontAwesome. Si la valeur est « - », la valeur par défaut est utilisée.';
 $string['settoggleiconposition'] = 'Position des icônes';
 $string['settoggleiconposition_help'] = 'Indique que l\'icône doit se trouver à gauche ou à droite du texte de basculement.';
 $string['settoggleiconset'] = 'Jeu d\'icônes';
@@ -330,6 +350,9 @@ $string['square'] = 'Carré';
 $string['sunmoon'] = 'Soleil / Lune';
 $string['switch'] = 'Interrupteur';
 $string['three'] = 'Trois';
+$string['tif'] = 'Police d\'icônes';
+$string['toggleclose'] = 'Fermer';
+$string['toggleopen'] = 'Ouvrir';
 $string['topcoll:changeactivitymeta'] = 'Modifier ou réinitialiser l\'activité meta';
 $string['topcoll:changecolour'] = 'Modifier ou réinitialiser les couleurs';
 $string['topcoll:changelayout'] = 'Modifier ou réinitialiser la configuration';
@@ -341,6 +364,11 @@ $string['topcollopened'] = 'Tout ouvrir';
 $string['topcollsidewidthlang'] = 'en-28px';
 $string['topcolltoggle'] = 'Basculer';
 $string['two'] = 'Deux';
+$string['versionalpha'] = 'Version alpha - Contient très certainement des bogues.  Il s\'agit d\'une version de développement pour les développeurs « uniquement » !  Ne pensez même pas à l\'installer sur un serveur de production !';
+$string['versionbeta'] = 'Version bêta - Susceptible de contenir des bogues.  Prêt à être testé par les administrateurs sur un serveur de test uniquement.';
+$string['versioninfo'] = 'Version {$a->release}, version {$a->version} sur Moodle {$a->moodle}';
+$string['versionrc'] = 'Version Release Candidate - Peut contenir des bogues.  Vérifiez-la complètement sur un serveur de test avant de l\'envisager sur un serveur de production.';
+$string['versionstable'] = 'Version stable - Peut contenir des bogues.  Vérifiez sur un serveur de test avant d\'installer sur votre serveur de production.';
 $string['viewonly'] = 'Voir seulement  « {$a->sectionname} »';
 $string['xanswered'] = '{$a->completed} ont répondu';
 $string['xattempted'] = '{$a->completed} ont tenté';

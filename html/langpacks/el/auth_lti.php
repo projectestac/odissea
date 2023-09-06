@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_lti', language 'el', version '3.11'.
+ * Strings for component 'auth_lti', language 'el', version '4.1'.
  *
  * @package     auth_lti
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_ltidescription'] = 'Το πρόσθετο ελέγχου ταυτότητας LTI, μαζί με το πρόσθετο εγγραφών «Δημοσίευση ως εργαλείο LTI», επιτρέπει σε απομακρυσμένους χρήστες να έχουν πρόσβαση σε επιλεγμένα μαθήματα και δραστηριότητες. Με άλλα λόγια, το Moodle λειτουργεί ως πάροχος εργαλείου LTI (Learning Tools Interoperability = Διαλειτουργικότητα μαθησιακών εργαλείων).';
+$string['auth_ltidescription'] = 'Το πρόσθετο αυθεντικοποίησης LTI, μαζί με το πρόσθετο εγγραφών «Δημοσίευση ως εργαλείο LTI», επιτρέπει σε απομακρυσμένους χρήστες να έχουν πρόσβαση σε επιλεγμένα μαθήματα και δραστηριότητες. Με άλλα λόγια, το Moodle λειτουργεί ως πάροχος εργαλείου LTI (Learning Tools Interoperability = Διαλειτουργικότητα μαθησιακών εργαλείων).';
 $string['pluginname'] = 'LTI';
 $string['privacy:metadata'] = 'Το πρόσθετο «Αυθεντικοποίηση LTI» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

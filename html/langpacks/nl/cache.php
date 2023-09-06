@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'nl', version '3.11'.
+ * Strings for component 'cache', language 'nl', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -40,6 +40,8 @@ $string['cachedef_calendar_subscriptions'] = 'Kalenderinschrijvingen';
 $string['cachedef_capabilities'] = 'Lijst systeemmogelijkheden';
 $string['cachedef_completion'] = 'Status van activiteitsvoltooiing';
 $string['cachedef_config'] = 'Configuratie-instellingen';
+$string['cachedef_contentbank_allowed_categories'] = 'Toegestane cursuscategorieën voor de inhoudbank voor huidige gebruiker';
+$string['cachedef_contentbank_allowed_courses'] = 'Toegestane inhoudbank-cursussen voor huidige gebruiker';
 $string['cachedef_contentbank_context_extensions'] = 'Toegestane extensies en de bijbehorende plug-ins in een inhoudsbank context';
 $string['cachedef_contentbank_enabled_extensions'] = 'Toegestane extensies en de bijbehorende plug-ins in de inhoudsbank';
 $string['cachedef_contextwithinsights'] = 'Context met inzichten';
@@ -50,10 +52,14 @@ $string['cachedef_coursecatrecords'] = 'Cursuscategorie-records';
 $string['cachedef_coursecattree'] = 'Cursuscategorieboomstructuur';
 $string['cachedef_coursecompletion'] = 'Cursus voltooiingsstatus';
 $string['cachedef_coursecontacts'] = 'Lijst met cursuscontacten';
+$string['cachedef_courseeditorstate'] = 'Sessie cursus status cache sleutels om cursuswijzigingen te detecteren in het frontend';
 $string['cachedef_coursemodinfo'] = 'Geaccumuleerde informatie over modules en secties voor elke cursus';
+$string['cachedef_coursesectionspreferences'] = 'Voorkeuren voor cursussecties';
 $string['cachedef_databasemeta'] = 'Meta-informatie databank';
+$string['cachedef_deprecatedcapabilities'] = 'Verouderde systeemmogelijkhedenlijst';
 $string['cachedef_eventinvalidation'] = 'Gebeurtenis ongeldig maken';
 $string['cachedef_externalbadges'] = 'Externe badges voor een bepaalde gebruiker';
+$string['cachedef_file_imageinfo'] = 'Afbeeldingsinformatie, bijv. afmetingen';
 $string['cachedef_fontawesomeiconmapping'] = 'Koppeling van icoontjes voor lettertype awesome';
 $string['cachedef_grade_categories'] = 'Cijfercategorie queries';
 $string['cachedef_grade_letters'] = 'Queries letterbeoordelingen';
@@ -77,6 +83,7 @@ $string['cachedef_postprocessedcss'] = 'Nabewerkt CSS';
 $string['cachedef_presignup'] = 'Pre-aanmeldingsgegevens voor bepaalde niet-geregistreerde gebruikers';
 $string['cachedef_questiondata'] = 'Vraagdefinities';
 $string['cachedef_recommendation_favourite_course_content_items'] = 'Aanbeveling voor cursusinhoudsitems';
+$string['cachedef_reportbuilder_allowed_reports'] = 'Toegestane gebruikersrapporten op basis van doelgroep';
 $string['cachedef_repositories'] = 'Opslagruimtegegevens';
 $string['cachedef_roledefs'] = 'Roldefinities';
 $string['cachedef_string'] = 'Taalstringcache';
@@ -91,6 +98,7 @@ $string['cachedef_userselections'] = 'Gegevens gebruikt om gebruikersselecties d
 $string['cachedef_yuimodules'] = 'YUI Moduledefinities';
 $string['cachelock_file_default'] = 'Standaard bestandsblokkering';
 $string['cachestores'] = 'Cache opslag';
+$string['cacheusage'] = 'Cachegebruik';
 $string['caching'] = 'Caching';
 $string['canuselocalstore'] = 'Kan lokale opslag gebruiken.';
 $string['component'] = 'Component';
@@ -113,6 +121,7 @@ $string['deletestore'] = 'Verwijder opslag';
 $string['deletestoreconfirmation'] = 'Weet je zeker dat je de "{$a}" opslag wil verwijderen?';
 $string['deletestorehasmappings'] = 'Je kunt deze opslag niet verwijderen omdat die koppelingen heeft. Verwijder alle koppelingen voor je de opslag verwijderd';
 $string['deletestoresuccess'] = 'Verwijderen van cache opslag gelukt';
+$string['editdefinitionmapping'] = 'Definitietoewijzing bewerken';
 $string['editdefinitionmappings'] = '{$a} definitie opslagkoppelingen';
 $string['editdefinitionsharing'] = 'Bewerk deeldefinitie voor {$a}';
 $string['editmappings'] = 'Bewerk koppelingen';
@@ -155,8 +164,6 @@ $string['pluginsummaries'] = 'Geïnstalleerde cache opslag';
 $string['privacy:metadata:cachestore'] = 'Het cache subsysteem bewaart tijdelijk gegevens voor andere delen van Moodle. Deze gegevens kunnen niet eenvoudig geïdentificeerd worden en leven kort. Het is bedoeld als cache van gegevens die elders in Moodle bewaard worden en zijn daarom al behandeld door die Moodle-componenten.';
 $string['purge'] = 'Leegmaken';
 $string['purgeagain'] = 'Verwijder cache opnieuw';
-$string['purgedefinitionsuccess'] = 'Met succes de gevraagde definitie weggegooid.';
-$string['purgestoresuccess'] = 'Opslag met succes leeggemaakt';
 $string['purgexdefinitionsuccess'] = 'De cache "{$a->name}" cache ({$a->component}/{$a->area}) is verwijderd.';
 $string['purgexstoresuccess'] = 'De opslagruimte "{$a->store}" is verwijderd.';
 $string['requestcount'] = 'Test met {$a} vragen';
@@ -204,5 +211,14 @@ $string['tested'] = 'Getest';
 $string['testperformance'] = 'Testperformantie';
 $string['unsupportedmode'] = 'Niet ondersteunde modus';
 $string['untestable'] = 'Niet te testen';
+$string['updatedefinitionmapping'] = 'Definitietoewijzing bewerken';
+$string['updatedefinitionsharing'] = 'Definitie delen bewerken';
+$string['usage_items'] = 'Items';
+$string['usage_mean'] = 'Gemiddelde itemgrootte';
+$string['usage_realtotal'] = 'Werkelijk gebruik (indien bekend)';
+$string['usage_samples'] = 'Items gesampled per cache';
+$string['usage_sd'] = 'Standaarddeviatie';
+$string['usage_total'] = 'Geschat totaal';
+$string['usage_totalmargin'] = 'Foutmarge (95%)';
 $string['userinputsharingkey'] = 'Aangepaste sleutel voor delen';
 $string['userinputsharingkey_help'] = 'Geef je eigen private sleutel hier. Als je opslagruimtes op andere sites instelt waarmee je data wil delen, zorg er dan voor dat je daar dezelfde sleutel ingeeft.';

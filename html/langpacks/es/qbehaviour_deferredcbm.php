@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'es', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'es', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -37,6 +37,7 @@ $string['cbmgrades'] = 'Calificaciones CBM (Marca Basada en Certeza)';
 $string['cbmgrades_help'] = 'Con Puntuación Basado en Certeza = PBC (Certainty Based Marking = CBM) el tener todas las preguntas correctas con C=1 (baja certeza) da una puntuación de 100%. Las calificaciones pueden ser tan altas como del 300% si todas las preguntas fueran correctas y con C=3 (alta certeza). Los prejuicios (mostrar confianza en respuestas erroneas) hacen que las calificaciones bajen mucho más de lo que lo harían respuestas equivocadas que se reconozcan como de poca confianza. Esto podría inclusive llegar a calificaciones globales negativas.
 
 **Precisión** es el % de correctas, ignorando la certeza, pero ponderando para la puntuación máxima de cada pregunta. El poder distiguir exitosamente las respuestas más confiables de las menos confiables da una mejor calificación que si se eligira la misma certeza para cada pregunta. Esto se refleja en el **Bono PBC**. **Precisión** + **Bono PBC** es una mejor medida del conocimiento que la mera **Precisión**. Los prejuicios pueden conducir a un bono negativo; una advertencia para revisar con cuidado qué es lo que si se sabe contra lo que no se sabe.';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'Puntuación CBM {$a}';
 $string['certainty'] = 'Certeza';
 $string['certainty-1'] = 'Ni idea';
@@ -52,6 +53,7 @@ Marque si está mal | 0 | -2 | -6
 Probabilidad correcta | <67% | 67-80% | > 80%
 
 Las mejores notas se obtienen reconociendo la incertidumbre. Por ejemplo, si cree que hay más de 1 entre 3 posibilidades de estar equivocado, debe introducir C = 1 y evitar el riesgo de una puntuación negativa.';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = 'Ni idea';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ca', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'ca', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -88,6 +88,7 @@ $string['uploadusers_help'] = '<p>En primer lloc, fixeu-vos que <strong>generalm
 <p><font size="-1" face="Courier New, Courier, mono">username, password, firstname, lastname, email, lang, idnumber, maildisplay, course1, group1<br />
 jonest, verysecret, Tom, Jones, jonest@someplace.edu, en, 3663737, 1, Intro101, Section 1<br />
 reznort, somesecret, Trent, Reznor, reznort@someplace.edu, en_us, 6736733, 0, Advanced202, Section 3</font></p>';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Previsualització de la càrrega d\'usuaris';
 $string['uploadusersresult'] = 'Resultats de la càrrega d\'usuaris';
 $string['useraccountupdated'] = 'S\'ha actualitzat l\'usuari';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'ru', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'ru', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -40,6 +40,7 @@ $string['idnumber'] = 'Номер ID';
 $string['import'] = 'Импорт';
 $string['importfile'] = 'CSV-файл описания набора';
 $string['importfile_help'] = 'Структуру компетенций можно импортировать через текстовый файл. Формат файла можно определить, создав новую структуру компетенций на сайте и затем экспортировав ее.';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = 'Импорт данных файла';
 $string['invalidimportfile'] = 'Недопустимый формат файла.';
 $string['noframeworks'] = 'Пока нет созданных структур компетенций.';

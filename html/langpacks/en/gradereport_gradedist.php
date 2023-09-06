@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_gradedist', language 'en', version '3.11'.
+ * Strings for component 'gradereport_gradedist', language 'en', version '4.1'.
  *
  * @package     gradereport_gradedist
  * @category    string
@@ -32,10 +32,10 @@ $string['actualcolumns'] = 'current grade letters';
 $string['actualgrade'] = 'Grade (current)';
 $string['boundaryerror'] = 'Some entries for new grade letters may be invalid. There must be input on each field';
 $string['category'] = 'Gradecategory';
-$string['changeletters'] = 'Change grade letters';
+$string['changeletters'] = 'Save changed grade letters';
 $string['chart'] = 'Chart';
 $string['columns'] = 'Bars';
-$string['confirm'] = 'Change grade letters';
+$string['confirm'] = 'Save changed grade letters';
 $string['confirmationtableviewed'] = 'Confirmation table viewed';
 $string['confirmationtableviewed_description'] = 'The user with id {$a->userid} viewed the grade distribution confirmation table.';
 $string['contextbuttontitle'] = 'Chart context menu';
@@ -86,4 +86,5 @@ $string['privacy:null_reason'] = 'This plugin does not store any personal inform
 $string['saved'] = 'Grade letters successfully changed.';
 $string['showgradeitem'] = 'Display grade item';
 $string['showgradeitem_description'] = 'Show grade display type as choice for grade item.';
+$string['submitanddownload'] = 'Save changes';
 $string['sum'] = 'Sum';

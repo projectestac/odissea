@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'en', version '3.11'.
+ * Strings for component 'enrol', language 'en', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -57,6 +57,7 @@ $string['enrollednewusers'] = 'Successfully enrolled {$a} new users';
 $string['enrolledusers'] = 'Enrolled users';
 $string['enrolledusersmatching'] = 'Matching enrolled users';
 $string['enrolme'] = 'Enrol me in this course';
+$string['enrolment'] = 'Enrolment';
 $string['enrolmentinstances'] = 'Enrolment methods';
 $string['enrolmentmethod'] = 'Enrolment method';
 $string['enrolmentnew'] = 'New enrolment in {$a}';
@@ -85,7 +86,7 @@ $string['eventenrolinstancedeleted'] = 'Enrolment instance deleted';
 $string['eventenrolinstanceupdated'] = 'Enrolment instance updated';
 $string['eventuserenrolmentcreated'] = 'User enrolled in course';
 $string['eventuserenrolmentdeleted'] = 'User unenrolled from course';
-$string['eventuserenrolmentupdated'] = 'User unenrolment updated';
+$string['eventuserenrolmentupdated'] = 'User enrolment updated';
 $string['expirynotify'] = 'Notify before enrolment expires';
 $string['expirynotify_help'] = 'This setting determines whether enrolment expiry notification messages are sent.';
 $string['expirynotifyall'] = 'Enroller and enrolled user';
@@ -110,6 +111,7 @@ $string['invalidrequest'] = 'Invalid request';
 $string['invalidrole'] = 'Invalid role';
 $string['manageenrols'] = 'Manage enrol plugins';
 $string['manageinstance'] = 'Manage';
+$string['method'] = 'Method';
 $string['migratetomanual'] = 'Migrate to manual enrolments';
 $string['nochange'] = 'No change';
 $string['noexistingparticipants'] = 'No existing participants';
@@ -150,6 +152,10 @@ $string['startdatetoday'] = 'Today';
 $string['synced'] = 'Synced';
 $string['testsettings'] = 'Test settings';
 $string['testsettingsheading'] = 'Test enrol settings - {$a}';
+$string['timeended'] = 'Time ended';
+$string['timeenrolled'] = 'Time enrolled';
+$string['timereaggregated'] = 'Time reaggregated';
+$string['timestarted'] = 'Time started';
 $string['totalenrolledusers'] = '{$a} enrolled users';
 $string['totalotherusers'] = '{$a} other users';
 $string['totalunenrolledusers'] = '{$a} unenrolled users';

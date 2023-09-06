@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'adobeconnect', language 'ca', version '3.11'.
+ * Strings for component 'adobeconnect', language 'ca', version '4.1'.
  *
  * @package     adobeconnect
  * @category    string
@@ -34,3 +34,4 @@ $string['host'] = 'Amfitrió';
 $string['invalidurl'] = 'L\'URL ha de començar amb una lletra (a-z)';
 $string['private'] = 'Privat';
 $string['public'] = 'Públic';
+$string['savechanges'] = 'Desa';

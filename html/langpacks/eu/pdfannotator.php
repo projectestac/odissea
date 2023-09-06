@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'eu', version '3.11'.
+ * Strings for component 'pdfannotator', language 'eu', version '4.1'.
  *
  * @package     pdfannotator
  * @category    string
@@ -212,13 +212,13 @@ $string['messageprovider:forwardedquestion'] = 'Galdera bat bidaltzen zaizunean'
 $string['messageprovider:newanswer'] = 'Harpidetuta zauden galdera bati erantzuten zaionean';
 $string['messageprovider:newquestion'] = 'Galdera berri bat egiten denean';
 $string['messageprovider:newreport'] = 'Iruzkin baten gaineko salaketa egiten denean';
-$string['min2Chars'] = 'Ezin da bi karaktere baino gutxiagoko galderak eta iruzkinak egin.';
 $string['minute'] = 'minutu';
 $string['minutes'] = 'minutu';
 $string['missingAnnotation'] = 'Dagokion oharra ezin izan da aurkitu!';
 $string['modifiedby'] = 'egilea';
 $string['modulename'] = 'PDF gaineko oharrak';
 $string['modulename_help'] = 'Erreminta honek PDF dokumentuen gaineko oharrak elkarlanean egitea ahalbidetzen du. Erabiltzaileek PDF-aren atal zehatzetan oharrak egin ditzakete eta beste erabiltzaileekin eztabaidatu dezakete.';
+$string['modulename_link'] = 'mod/pdfannotator/view';
 $string['modulenameplural'] = 'PDF gaineko oharrak';
 $string['month'] = 'hilabete';
 $string['months'] = 'hilabete';

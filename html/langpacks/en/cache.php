@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'en', version '3.11'.
+ * Strings for component 'cache', language 'en', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -40,6 +40,8 @@ $string['cachedef_calendar_subscriptions'] = 'Calendar subscriptions';
 $string['cachedef_capabilities'] = 'System capabilities list';
 $string['cachedef_completion'] = 'Activity completion status';
 $string['cachedef_config'] = 'Config settings';
+$string['cachedef_contentbank_allowed_categories'] = 'Allowed content bank course categories for current user';
+$string['cachedef_contentbank_allowed_courses'] = 'Allowed content bank courses for current user';
 $string['cachedef_contentbank_context_extensions'] = 'Allowed extensions and its supporter plugins in a content bank context';
 $string['cachedef_contentbank_enabled_extensions'] = 'Allowed extensions and its supporter plugins in content bank';
 $string['cachedef_contextwithinsights'] = 'Context with insights';
@@ -50,10 +52,14 @@ $string['cachedef_coursecatrecords'] = 'Course categories records';
 $string['cachedef_coursecattree'] = 'Course categories tree';
 $string['cachedef_coursecompletion'] = 'Course completion status';
 $string['cachedef_coursecontacts'] = 'List of course contacts';
+$string['cachedef_courseeditorstate'] = 'Session course state cache keys to detect course changes in the frontend';
 $string['cachedef_coursemodinfo'] = 'Accumulated information about modules and sections for each course';
+$string['cachedef_coursesectionspreferences'] = 'Course section preferences';
 $string['cachedef_databasemeta'] = 'Database meta information';
+$string['cachedef_deprecatedcapabilities'] = 'System deprecated capabilities list';
 $string['cachedef_eventinvalidation'] = 'Event invalidation';
 $string['cachedef_externalbadges'] = 'External badges for particular user';
+$string['cachedef_file_imageinfo'] = 'File image info e.g. dimensions';
 $string['cachedef_fontawesomeiconmapping'] = 'Mapping of icons for font awesome';
 $string['cachedef_grade_categories'] = 'Grade category queries';
 $string['cachedef_grade_letters'] = 'Grade letter queries';
@@ -77,6 +83,7 @@ $string['cachedef_postprocessedcss'] = 'Post processed CSS';
 $string['cachedef_presignup'] = 'Pre sign-up data for particular unregistered user';
 $string['cachedef_questiondata'] = 'Question definitions';
 $string['cachedef_recommendation_favourite_course_content_items'] = 'Recommendation of course content items';
+$string['cachedef_reportbuilder_allowed_reports'] = 'Users allowed reports according to audience';
 $string['cachedef_repositories'] = 'Repositories instances data';
 $string['cachedef_roledefs'] = 'Role definitions';
 $string['cachedef_string'] = 'Language string cache';
@@ -91,6 +98,7 @@ $string['cachedef_userselections'] = 'Data used to persist user selections throu
 $string['cachedef_yuimodules'] = 'YUI Module definitions';
 $string['cachelock_file_default'] = 'Default file locking';
 $string['cachestores'] = 'Cache stores';
+$string['cacheusage'] = 'Cache usage';
 $string['caching'] = 'Caching';
 $string['canuselocalstore'] = 'Can use local store';
 $string['component'] = 'Component';
@@ -113,6 +121,7 @@ $string['deletestore'] = 'Delete store';
 $string['deletestoreconfirmation'] = 'Are you sure you want to delete the "{$a}" store?';
 $string['deletestorehasmappings'] = 'You cannot delete this store because it has mappings. Please delete all mappings before deleting the store';
 $string['deletestoresuccess'] = 'Successfully deleted the cache store';
+$string['editdefinitionmapping'] = 'Edit definition mapping';
 $string['editdefinitionmappings'] = '{$a} definition store mappings';
 $string['editdefinitionsharing'] = 'Edit definition sharing for {$a}';
 $string['editmappings'] = 'Edit mappings';
@@ -155,8 +164,6 @@ $string['pluginsummaries'] = 'Installed cache stores';
 $string['privacy:metadata:cachestore'] = 'The Cache subsystem stores data temporarily on behalf of other parts of Moodle. This data is not easily identifiable, and is very short lived. It serves as a cache of data stored elsewhere in Moodle, and should therefore already be handled by those Moodle components.';
 $string['purge'] = 'Purge';
 $string['purgeagain'] = 'Purge again';
-$string['purgedefinitionsuccess'] = 'Successfully purged the requested definition.';
-$string['purgestoresuccess'] = 'Successfully purged the requested store.';
 $string['purgexdefinitionsuccess'] = 'Successfully purged the "{$a->name}" cache ({$a->component}/{$a->area}).';
 $string['purgexstoresuccess'] = 'Successfully purged the "{$a->store}" store.';
 $string['requestcount'] = 'Test with {$a} requests';
@@ -204,5 +211,14 @@ $string['tested'] = 'Tested';
 $string['testperformance'] = 'Test performance';
 $string['unsupportedmode'] = 'Unsupported mode';
 $string['untestable'] = 'Untestable';
+$string['updatedefinitionmapping'] = 'Edit definition mapping';
+$string['updatedefinitionsharing'] = 'Edit definition sharing';
+$string['usage_items'] = 'Items';
+$string['usage_mean'] = 'Mean item size';
+$string['usage_realtotal'] = 'Actual usage (if known)';
+$string['usage_samples'] = 'Items sampled per cache';
+$string['usage_sd'] = 'Std. dev.';
+$string['usage_total'] = 'Estimated total';
+$string['usage_totalmargin'] = 'Error margin (95%)';
 $string['userinputsharingkey'] = 'Custom key for sharing';
 $string['userinputsharingkey_help'] = 'Enter your own private key here. When you set up other stores on other sites you wish to share data with make sure you set the exact same key there.';

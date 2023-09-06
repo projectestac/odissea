@@ -245,6 +245,7 @@ class mod_attendance_external extends external_api {
         $sess->calendarevent = (int) $params['addcalendarevent'];
         $sess->timemodified = time();
         $sess->studentscanmark = 0;
+        $sess->allowupdatestatus = 0;
         $sess->autoassignstatus = 0;
         $sess->subnet = '';
         $sess->studentpassword = '';
@@ -256,6 +257,7 @@ class mod_attendance_external extends external_api {
         $sess->statusset = 0;
         $sess->groupid = $groupid;
         $sess->automarkcmid = 0;
+        $sess->studentsearlyopentime = get_config('attendance', 'studentsearlyopentime');
 
         $sessionid = $attendance->add_session($sess);
         return array('sessionid' => $sessionid);
@@ -377,7 +379,8 @@ class mod_attendance_external extends external_api {
                          'preventsharedip' => new external_value(PARAM_INT, 'Prevent students from sharing IP addresses.'),
                          'preventsharediptime' => new external_value(PARAM_INT, 'Time delay before IP address is allowed again.'),
                          'statusset' => new external_value(PARAM_INT, 'Session statusset.'),
-                         'includeqrcode' => new external_value(PARAM_INT, 'Include QR code when displaying password'));
+                         'includeqrcode' => new external_value(PARAM_INT, 'Include QR code when displaying password'),
+                         'studentsearlyopentime' => new external_value(PARAM_INT, 'Duration to allow session to opened early'));
 
         return $session;
     }
@@ -572,11 +575,23 @@ class mod_attendance_external extends external_api {
      * @param int $attendanceid
      */
     public static function get_sessions($attendanceid) {
-        global $DB;
-
          $params = self::validate_parameters(self::get_sessions_parameters(), array(
             'attendanceid' => $attendanceid,
          ));
+
+        // Check permissions.
+        $cm = get_coursemodule_from_instance('attendance', $attendanceid, 0, false, MUST_EXIST);
+        $context = context_module::instance($cm->id);
+        self::validate_context($context);
+
+        $capabilities = array(
+            'mod/attendance:manageattendances',
+            'mod/attendance:takeattendances',
+            'mod/attendance:changeattendances'
+        );
+        if (!has_any_capability($capabilities, $context)) {
+            throw new invalid_parameter_exception('Invalid session id or no permissions.');
+        }
 
         return attendance_handler::get_sessions($params['attendanceid']);
     }

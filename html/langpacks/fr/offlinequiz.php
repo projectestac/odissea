@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'fr', version '3.11'.
+ * Strings for component 'offlinequiz', language 'fr', version '4.1'.
  *
  * @package     offlinequiz
  * @category    string
@@ -29,7 +29,7 @@ $string['add'] = 'Ajouter';
 $string['addarandomquestion'] = 'questions aléatoires';
 $string['addarandomquestion_help'] = 'Moodle ajoute une sélection aléatoire de questions à choix multiple (ou questions à choix multiple tout ou rien) au groupe de test hors-ligne courant. Le nombre de questions ajouté peut être choisi. Les questions sont choisies dans la catégorie courante (et ses sous catégories si cette option est sélectionnée).';
 $string['addarandomselectedquestion'] = 'Ajouter une question sélectionnée aléatoirement…';
-$string['addlist'] = 'Ajouter une liste';
+$string['addlist'] = 'Ajouter une liste des présences';
 $string['addnewpagesafterselected'] = 'Ajouter de nouvelles pages après les questions sélectionnées';
 $string['addnewquestion'] = 'une nouvelle question';
 $string['addnewquestionsqbank'] = 'Ajouter des questions à la catégorie {$a->catname} : {$a->link}';
@@ -62,7 +62,9 @@ $string['attemptexists'] = 'Des tentatives existent';
 $string['attemptsexist'] = 'Vous ne pouvez plus ajouter ou supprimer de question.';
 $string['attemptsnum'] = 'Résultats : {$a}';
 $string['attemptsonly'] = 'Afficher uniquement les étudiants ayant des résultats';
+$string['attendanceoverview'] = 'Vue d\'ensemble';
 $string['attendances'] = 'Présences';
+$string['attendancesheadline'] = 'Présences';
 $string['basicideasofofflinequiz'] = 'Les concepts de base pour créer des tests hors-ligne';
 $string['blackwhitethreshold'] = 'Seuil de Noir/Blanc.';
 $string['bulksavegrades'] = 'Enregistrer les notes';
@@ -102,6 +104,7 @@ $string['copytogroup'] = 'Ajouter toutes les questions au groupe : {$a}';
 $string['correct'] = 'correct';
 $string['correcterror'] = 'corriger';
 $string['correctforgroup'] = 'Réponses correctes pour le groupe {$a}';
+$string['correctionerrors'] = 'Formulaires avec des erreurs de correction :';
 $string['correctionform'] = 'Formulaire de correction';
 $string['correctionforms'] = 'Formulaires de correction';
 $string['correctionoptionsheading'] = 'Options de correction';
@@ -116,8 +119,8 @@ $string['createpdf'] = 'Formulaire';
 $string['createpdferror'] = 'Le formulaire pour le groupe {$a} n\'a pas pu être créé. Il est possible qu\'il n\'y ait pas de question pour ce groupe.';
 $string['createpdffirst'] = 'Créer la liste PDF d\'abord';
 $string['createpdfforms'] = 'Créer les formulaires';
-$string['createpdfs'] = 'Télécharger les formulaires';
-$string['createpdfsparticipants'] = 'Formulaires PDF pour la liste des participants';
+$string['createpdfs'] = 'Formulaires';
+$string['createpdfsparticipants'] = 'Formulaires';
 $string['createquestionandadd'] = 'Créer une nouvelle question et l\'ajouter au test hors-ligne.';
 $string['createquiz'] = 'Créer les formulaires';
 $string['csvfile'] = 'Fichier CSV';
@@ -149,7 +152,7 @@ $string['displayoptions'] = 'Options d\'affichage';
 $string['done'] = 'fait';
 $string['downloadallzip'] = 'Télécharger toutes les données sous forme ZIP';
 $string['downloadpartpdf'] = 'Télécharger le fichier PDF pour la liste « {$a} »';
-$string['downloadpdfs'] = 'Télécharger les documents';
+$string['downloadpdfs'] = 'Formulaires';
 $string['downloadresultsas'] = 'Télécharger les résultats comme :';
 $string['dragtoafter'] = 'Après {$a}';
 $string['dragtostart'] = 'Au début';
@@ -159,22 +162,24 @@ $string['editingofflinequiz'] = 'Modification des questions des groupes';
 $string['editingofflinequiz_help'] = 'Lorsque vous créez un test hors ligne, les concepts principaux sont :
 <ul><li> Le test hors ligne, qui contient les questions réparties sur une ou plusieurs pages</li>
 <li> La banque de questions, qui stock des copies de toutes les questions organisées dans des catégories</li></ul>';
-$string['editingofflinequizx'] = 'Modifier le test hors-ligne : {$a}';
+$string['editingofflinequizx'] = 'Questions';
 $string['editlist'] = 'Modifier la liste';
-$string['editlists'] = 'Modifier les listes';
+$string['editlists'] = 'Listes des présences';
 $string['editmaxmark'] = 'Modifier la note maximale';
 $string['editofflinequiz'] = 'Modifier le test hors-ligne';
 $string['editofflinesettings'] = 'Modifier les réglages du test hors-ligne';
 $string['editorder'] = 'Modifier l\'ordre';
 $string['editparticipants'] = 'Modifier les participants';
 $string['editquestion'] = 'Modifier question';
-$string['editquestions'] = 'Modifier les questions';
+$string['editquestionlistitem'] = '{$a} questions ajoutées';
+$string['editquestions'] = 'Questions';
 $string['editscannedform'] = 'Modifier la grille scannée';
 $string['editthislist'] = 'Modifier cette liste';
 $string['emptygroups'] = 'Certains groupes du test hors-ligne sont vides. Veuillez ajouter des questions.';
 $string['enroluser'] = 'Inscrire l\'utilisateur';
 $string['erroraccessingreport'] = 'Vous n\'êtes pas autorisé à afficher ce rapport.';
-$string['errorreport'] = 'Rapport des erreurs d\'importation';
+$string['errorreport'] = 'Rapport des erreurs d\'évaluation';
+$string['evaluation'] = 'Résultats';
 $string['eventattemptdeleted'] = 'Suppression d\'une tentative de test hors-ligne';
 $string['eventattemptpreviewstarted'] = 'Début de prévisualisation d\'une tentative de test hors-ligne';
 $string['eventattemptreviewed'] = 'Vérification d\'une tentative de test hors-ligne';
@@ -212,7 +217,7 @@ $string['formforgrouplatex'] = 'Formulaire question pour le groupe {$a} (LATEX)'
 $string['formsexist'] = 'Des formulaires ont déjà été créés.';
 $string['formsexistx'] = 'Des formulaires ont déjà été créés (<a href="{$a}">Téléchargez les formulaires</a>)';
 $string['formsheetsettings'] = 'Réglage de formulaire';
-$string['formspreview'] = 'Aperçu des formulaires';
+$string['formspreview'] = 'Aperçu';
 $string['formwarning'] = 'Aucune grille de réponses n\'est définie. Veuillez contacter votre administrateur.';
 $string['fromquestionbank'] = 'depuis la banque de questions';
 $string['functiondisabledbysecuremode'] = 'Cette fonctionnalité est actuellement désactivée';
@@ -226,12 +231,11 @@ $string['gradeiszero'] = 'Note : le nombre maximum de points pour ce test hors-
 $string['gradeswarning'] = 'Les notes de question doivent être numériques !';
 $string['gradewarning'] = 'La note de la question doit être numérique !';
 $string['gradingofflinequiz'] = 'Notes';
-$string['gradingofflinequizx'] = 'Notes : {$a}';
+$string['gradingofflinequizx'] = 'Notes';
 $string['gradingoptionsheading'] = 'Options de notation';
 $string['greeniscross'] = 'compté comme une croix';
 $string['group'] = 'Groupe';
 $string['groupoutofrange'] = 'Le groupe était hors limite et a été remplacé par le groupe A.';
-$string['groupquestions'] = 'Questions des groupes';
 $string['hasresult'] = 'Un résultat existe';
 $string['hotspotdeletiontask'] = 'Suppression des zones sensibles';
 $string['html'] = 'HTML';
@@ -240,8 +244,8 @@ $string['imagefile'] = 'Fichier image';
 $string['imagenotfound'] = 'Fichier image : {$a} non trouvé !';
 $string['imagenotjpg'] = 'Image non jpg ou png : {$a}';
 $string['imagickwarning'] = 'Imagemagick manquant : demandez à votre administrateur système d\'installer la librairie imagemagick et de vérifier le chemin vers le fichier binaire convert dans les réglages du filtre TeX. Vous ne pouvez pas importer de fichier TIF sans imagemagick !';
-$string['import'] = 'Importer';
-$string['importedon'] = 'Importé le';
+$string['import'] = 'Évaluer';
+$string['importedon'] = 'Évalué le';
 $string['importerror11'] = 'Un autre résultat existe';
 $string['importerror12'] = 'Utilisateur non inscrit';
 $string['importerror13'] = 'Pas de donnée de groupe';
@@ -253,20 +257,20 @@ $string['importerror21'] = 'Lecture impossible';
 $string['importerror22'] = 'Lectures non fiables';
 $string['importerror23'] = 'Utilisateur absent de la liste';
 $string['importerror24'] = 'Liste non détectée';
-$string['importforms'] = 'Importer des grilles de réponses';
-$string['importfromto'] = 'Import de {$a->from} à {$a->to} sur {$a->total}.';
-$string['importisfinished'] = 'L\'import pour le test hors-ligne {$a} est terminé.';
+$string['importforms'] = 'Déposer des grilles de réponses';
+$string['importfromto'] = 'Évaluation de {$a->from} à {$a->to} sur {$a->total}.';
+$string['importisfinished'] = 'L\'évaluation pour le test hors-ligne {$a} est terminé.';
 $string['importlinkresults'] = 'Lien vers les résultats : {$a}';
 $string['importlinkverify'] = 'Lien vers la vérification : {$a}';
-$string['importmailsubject'] = 'Notification d\'import de quiz hors-ligne';
-$string['importnew'] = 'Importer';
+$string['importmailsubject'] = 'Notification d\'évaluation de test hors-ligne';
+$string['importnew'] = 'Évaluer';
 $string['importnew_help'] = '<p>
-Vous pouvez importer un fichier image scanné ou un ensemble de fichiers images scannés groupés au sein d\'une archive ZIP. Le module test hors-ligne traitera les fichiers images en tâche de fond.
+Vous pouvez déposer un fichier image scanné ou un ensemble de fichiers images scannés groupés au sein d\'une archive ZIP. Le module test hors-ligne traitera les fichiers images en tâche de fond.
 Les noms de fichiers ne sont pas importants mais ne devraient pas contenir de caractères spéciaux. Les images devraient être au format GIF, PNG ou TIF.
 Une résolution entre 200 et 300 dpi est recommandée.</p>';
 $string['importnumberexisting'] = 'Nombre de grilles en double : {$a}';
-$string['importnumberpages'] = 'Nombre de pages importées avec succès : {$a}';
-$string['importnumberresults'] = 'Nombre importé : {$a}';
+$string['importnumberpages'] = 'Nombre de pages évaluées avec succès : {$a}';
+$string['importnumberresults'] = 'Nombre évalué : {$a}';
 $string['importnumberverify'] = 'Nombre de grilles qui nécessitent une vérification : {$a}';
 $string['importtimefinish'] = 'Processus terminé : {$a}';
 $string['importtimestart'] = 'Processus démarré : {$a}';
@@ -313,7 +317,7 @@ $string['missinguserid'] = 'Numéro d\'identification de l\'utilisateur manquant
 $string['modulename'] = 'Test hors-ligne';
 $string['modulename_help'] = 'Ce module permet à l\'enseignant de concevoir les tests hors-lignes constitués de questions à choix multiples.
 Les questions sont sauvegardées dans la banque de questions de Moodle et peuvent  être réutilisées dans le cours et même dans d\'autres cours.
-Les tests hors-lignes peuvent-être téléchargés au format PDF. Les étudiants cochent leurs réponses sur une grille. Les grilles sont scannées et les réponses importées dans le système.';
+Les tests hors-lignes peuvent être téléchargés au format PDF, DOCX ou LaTeX. Les étudiants cochent leurs réponses sur une grille. Les grilles sont scannées, déposées dans le système et les réponses sont évaluées.';
 $string['modulenameplural'] = 'Tests hors-ligne';
 $string['moodleprocessing'] = 'Laisser Moodle traiter les données';
 $string['movecorners'] = 'Changez la position des marques de coins en premier. Utilisez le glisser-déplacer.';
@@ -327,14 +331,14 @@ $string['neededcorrection'] = '<strong>Attention : certaines de vos marques ont 
 $string['newgrade'] = 'Noté';
 $string['newpage'] = 'Nouvelle page';
 $string['noattemptexists'] = 'Aucun résultat';
-$string['noattempts'] = 'Aucun résultat importé !';
+$string['noattempts'] = 'Aucun résultat disponible !';
 $string['noattemptsonly'] = 'Afficher uniquement les étudiants sans résultat';
 $string['nocourse'] = 'Le cours avec l\'identifiant {$a->course} auquel le test hors-ligne avec l\'identifiant {$a->offlinequiz} appartient est manquant.';
 $string['nogradesseelater'] = 'Ce test hors-ligne n\'a pas encore été évalué pour {$a}. Les résultats seront publiés ici.';
 $string['nogroupdata'] = 'Pas de donnée de groupe pour l\'utilisateur {$a}';
 $string['nomcquestions'] = 'Il n\'y a aucune question à choix multiple dans le groupe {$a} !';
 $string['noofflinequiz'] = 'Il n\'y a pas de test hors-ligne avec l\'identifiant {$a} !';
-$string['nopages'] = 'Aucune page importée';
+$string['nopages'] = 'Aucune page évaluée';
 $string['noparticipantsfound'] = 'Aucun participant trouvé';
 $string['nopdfscreated'] = 'Aucun document créé !';
 $string['noquestions'] = 'Certains groupes de tests hors-ligne sont vides. Veuillez ajouter des questions.';
@@ -346,15 +350,16 @@ $string['noreview'] = 'Vous n\'êtes par autorisé à relire ce test hors-ligne'
 $string['noscannedpage'] = 'Il n\'y a pas de page avec l\'identifiant {$a} !';
 $string['notagselected'] = 'Aucune balise sélectionnée';
 $string['nothingtodo'] = 'Rien à faire !';
+$string['notonattendancelist'] = 'Pas sur la liste de présences :';
 $string['notxtfile'] = 'Aucun fichier TXT';
 $string['notyetgraded'] = 'Pas encore noté';
 $string['nozipfile'] = 'Pas de fichier ZIP';
-$string['numattempts'] = 'Nombre de résultats importés : {$a}';
+$string['numattempts'] = 'Nombre de résultats évalués : {$a}';
 $string['numattemptsqueue'] = '{$a} grilles de réponse ajoutés à la file d\'attente. Vous recevrez un courriel lorsque le traitement sera terminé.';
 $string['numattemptsverify'] = 'Grilles scannées en attente de correction : {$a}';
 $string['numberformat'] = 'La valeur doit être un nombre avec {$a} chiffres !';
 $string['numbergroups'] = 'Nombre de groupes';
-$string['numpages'] = '{$a} pages importées';
+$string['numpages'] = '{$a} pages évaluées';
 $string['numquestionsx'] = 'Questions : {$a}';
 $string['numusersadded'] = '{$a} participants ajoutés';
 $string['odsformat'] = 'Feuille de calcul OpenDocument (ODS)';
@@ -371,6 +376,7 @@ $string['offlinequiz:view'] = 'Afficher les informations du test hors-ligne';
 $string['offlinequiz:viewreports'] = 'Afficher les rapports de test hors-ligne';
 $string['offlinequizcloses'] = 'Ce test hors-ligne est fermé';
 $string['offlinequizcloseson'] = 'La relecture pour ce test hors-ligne fermera le {$a}';
+$string['offlinequizcontent'] = 'Contenu du test hors-ligne';
 $string['offlinequizisclosed'] = 'Ce test hors-ligne est fermé';
 $string['offlinequizisclosedwillopen'] = 'Test hors-ligne fermé (ouverture {$a})';
 $string['offlinequizisopen'] = 'Ce test hors-ligne est ouvert';
@@ -391,19 +397,19 @@ Pour ajouter des sauts de page après certaines questions, cochez la case en fac
 
 Pour organiser les questions sur plusieurs pages, cliquez sur le bouton « Repagination » et indiquez le nombre de questions désirées par page.';
 $string['orderingofflinequiz'] = 'Ordre et pagination';
-$string['otherresultexists'] = 'Un résultat différent pour {$a} existe déjà, import ignoré ! Supprimez le résultat existant d\'abord.';
+$string['otherresultexists'] = 'Un résultat différent pour {$a} existe déjà, évaluation ignorée ! Supprimez le résultat existant d\'abord.';
 $string['outof'] = '{$a->grade} sur {$a->maxgrade}';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
 $string['overallfeedback'] = 'Feedback global';
-$string['overview'] = 'Notes';
+$string['overview'] = 'Informations sur le test';
 $string['overviewdownload_help'] = 'Télécharger les notes';
 $string['page-mod-offlinequiz-edit'] = 'Modifier la page du test hors-ligne';
 $string['page-mod-offlinequiz-x'] = 'Ajouter une page au test hors-ligne';
-$string['pagecorrected'] = 'Feuille de la liste des participants corrigée importée';
+$string['pagecorrected'] = 'Feuille corrigée de la liste des participants évaluée';
 $string['pageevaluationtask'] = 'Évaluation de la grille de réponse pour le plugin test hors ligne';
-$string['pageimported'] = 'Feuille de la liste des participants importée';
+$string['pageimported'] = 'Feuille de la liste des présences évaluée';
 $string['pagenotdetected'] = 'Impossible de détecter le code barre pour la page !';
-$string['pagenumberimported'] = 'Feuille {$a} de la liste des participants importée';
+$string['pagenumberimported'] = 'Feuille {$a} de la liste des présences évaluée';
 $string['pagenumberupdate'] = 'Modifier le numéro de la page';
 $string['pagesizeparts'] = 'Participants affichés par page :';
 $string['papergray'] = 'Niveau de blanc du papier';
@@ -417,11 +423,11 @@ Vous pouvez ajouter des utilisateurs aux différentes listes. Chaque liste peut 
 Des listes de participants peuvent être téléchargées sous forme de documents PDF, imprimées et cochées exactement comme les grilles de réponse des tests hors-ligne. Plus tard elles peuvent être importées et les étudiants marqués seront considérés comme présents au test hors-ligne.
 Veuillez éviter toute marque ou tâche sur les codes barres car ils sont utilisés pour identifier chaque participant.</p>';
 $string['participantsinlists'] = 'Participants dans les listes';
-$string['participantslist'] = 'Liste des participants';
+$string['participantslist'] = 'Liste des présences';
 $string['participantslists'] = 'Participants';
-$string['partimportnew'] = 'Télécharger les listes de participants';
+$string['partimportnew'] = 'Déposer les listes de présences';
 $string['partimportnew_help'] = '<p>
-Sur cet onglet vous pouvez déposer les listes remplies des participants. Vous pouvez importer un fichier image scanné ou un ensemble de fichiers images scannés groupés au sein d\'une archive ZIP. Le module test hors-ligne traitera les fichiers images en tâche de fond.
+Sur cet onglet vous pouvez déposer et évaluer les listes de présences remplies. Vous pouvez déposer un fichier image scanné ou un ensemble de fichiers images scannés groupés au sein d\'une archive ZIP. Le module test hors-ligne traitera les fichiers images en tâche de fond.
 Les noms de fichiers ne sont pas importants mais ne devraient pas contenir de caractères spéciaux. Les images devraient être au format GIF, PNG ou TIF.
 Une résolution entre 200 et 300 dpi est recommandée.</p>';
 $string['partuncheckedwithoutresult'] = '{$a} participants non cochés sans résultat';
@@ -437,10 +443,11 @@ $string['pearlywhite'] = 'Blanc perle';
 $string['pluginadministration'] = 'Administration test hors-ligne';
 $string['pluginname'] = 'Test hors-ligne';
 $string['point'] = 'point';
+$string['preparation'] = 'Préparation';
 $string['present'] = 'présent';
 $string['preventsamequestion'] = 'Éviter l\'utilisation de la même question dans les groupes différents';
 $string['preview'] = 'Prévisualiser';
-$string['previewforgroup'] = 'Prévisualisation pour le groupe {$a}';
+$string['previewforgroup'] = 'Groupe {$a}';
 $string['previewquestion'] = 'Prévisualiser la question';
 $string['printstudycodefield'] = 'Imprimer le champ code d\'étude sur la grille question';
 $string['printstudycodefield_help'] = 'Si coché, le champ code d\'étude sera imprimé sur la première page de la grille question';
@@ -521,10 +528,10 @@ $string['privacy:metadata:offlinequiz_participants:checked'] = 'Information indi
 $string['privacy:metadata:offlinequiz_participants:listid'] = 'L\'identifiant de la liste sur laquelle se trouve ce participant.';
 $string['privacy:metadata:offlinequiz_participants:userid'] = 'L\'identifiant de l\'utilisateur.';
 $string['privacy:metadata:offlinequiz_queue'] = 'Cette table enregistre la file d\'attente d\'un dépôt. Pour chaque dépôt, il y a un objet propre dans cette table.';
-$string['privacy:metadata:offlinequiz_queue:importuserid'] = 'L\'identifiant de l\'enseignant qui a importé les fichiers.';
+$string['privacy:metadata:offlinequiz_queue:importuserid'] = 'L\'identifiant de l\'enseignant qui a déposé les fichiers.';
 $string['privacy:metadata:offlinequiz_queue:offlinequizid'] = 'L\'identifiant de la file d\'attente du test hors-ligne.';
 $string['privacy:metadata:offlinequiz_queue:status'] = 'Le statut de la file d\'attente qui est nécessaire.';
-$string['privacy:metadata:offlinequiz_queue:timecreated'] = 'L\'heure à laquelle les feuilles de ce test hors-ligne ont été importées.';
+$string['privacy:metadata:offlinequiz_queue:timecreated'] = 'L\'heure à laquelle les feuilles de ce test hors-ligne ont été évaluées.';
 $string['privacy:metadata:offlinequiz_queue:timefinish'] = 'L\'heure à laquelle l\'évaluation de la file d\'attente a été terminée.';
 $string['privacy:metadata:offlinequiz_queue:timestart'] = 'L\'heure à laquelle l\'évaluation de la file d\'attente a été lancée.';
 $string['privacy:metadata:offlinequiz_queue_data'] = 'Cette table enregistre les données de la file d\'attente car chaque fichier de la file d\'attente recevra un objet de données de file d\'attente.';
@@ -561,8 +568,9 @@ $string['privacy:metadata:offlinequiz_scanned_pages:status'] = 'Le statut de cet
 $string['privacy:metadata:offlinequiz_scanned_pages:time'] = 'L\'heure à laquelle cette page a été traitée.';
 $string['privacy:metadata:offlinequiz_scanned_pages:userkey'] = 'La « clé d\'utilisateur » (pas l\'identifiant) de l\'utilisateur barré sur la page.';
 $string['privacy:metadata:offlinequiz_scanned_pages:warningfilename'] = 'Le nom du fichier qui est créé lorsqu\'un test hors-ligne mal rempli est corrigé et que l\'utilisateur reçoit un avertissement à ce sujet.';
-$string['questionanalysis'] = 'Analyse de difficulté';
-$string['questionanalysistitle'] = 'Tableau de l\'analyse de difficulté';
+$string['questionanalysis'] = 'Analyse des questions';
+$string['questionanalysistitle'] = 'Tableau de l\'analyse des questions';
+$string['questionandansweranalysis'] = 'Analyse des questions et réponses';
 $string['questionbankcontents'] = 'Contenu de la banque de questions';
 $string['questionforms'] = 'Questionnaires';
 $string['questioninfoanswers'] = 'Nombre de réponses correctes';
@@ -654,24 +662,34 @@ Identifiant : & $\\underline{\\hspace*{8cm}}$\\\\[5mm]
 
 \\end{document}';
 $string['questionsin'] = 'Questions dans';
-$string['questionsingroup'] = 'Questions dans le groupe';
+$string['questionsingroup'] = 'Groupe';
 $string['questionsinthisofflinequiz'] = 'Questions dans ce test hors-ligne';
 $string['questiontextisempty'] = '[Texte de question vide]';
 $string['quizdate'] = 'Date du test hors-ligne';
 $string['quizopenclose'] = 'Dates d\'ouverture et de fermeture';
-$string['quizopenclose_help'] = 'Les étudiants ne peuvent voir leurs tentatives qu\'après l\'heure d\'ouverture et avant l\'heure de fermeture.';
-$string['quizquestions'] = 'Questions du test';
+$string['quizopenclose_help'] = 'La relecture en ligne peut être limité à une période de temps spécifique. Cliquez sur « Afficher » pour modifier les paramètres de date et d\'heure.
+
+**Attention :** Si aucune période n\'est activée pour la révision en ligne, la révision est illimitée tant que le test hors ligne est visible pour les participants.
+
+Dans tous les cas, seules les options cochées sous « La relecture inclut » sont affichées.';
+$string['qversioncannotupdate'] = 'La question ne peut pas être mise à jour. La version de la question n\'a pas changé.';
+$string['qversionnumbersdiffer'] = 'Le nombre de réponses diffère entre l\'ancienne et la nouvelle version. Cela conduirait à des incohérences.';
+$string['qversionupdated'] = 'Question mise à jour. La version de la question a changé.';
+$string['qversionupdatedwarning'] = 'Les formulaires sont déjà créés avec une autre version de cette question. Veuillez vérifier si cela n\'a pas introduit des effets de bord.';
+$string['qversionupdateerror'] = 'Une erreur s\'est produite lors de la mise à jour de la version de la question.';
 $string['randomfromexistingcategory'] = 'Question aléatoire depuis une catégorie existante';
 $string['randomnumber'] = 'Nombre de questions aléatoires';
 $string['randomquestionusinganewcategory'] = 'Question aléatoire en utilisant une nouvelle catégorie';
 $string['readjust'] = 'Ré-ajuster';
 $string['reallydeletepdfs'] = 'Voulez-vous vraiment supprimer le formulaire de fichiers ?';
 $string['reallydeleteupdatepdf'] = 'Voulez-vous vraiment supprimer et modifier la liste des participants ?';
+$string['recordupdateanddocscreated'] = 'Les questions ont été mises à jour mais comme les formulaires sont déjà créés, l\'ancienne version de la question est toujours active. Pour passer à la version la plus récente, veuillez supprimer les formulaires et modifier la version manuellement.';
+$string['recordupdateanddocscreatedversion'] = 'Les questions ont été mises à jour mais les formulaires sont déjà créés. Veuillez vérifier si les modifications n\'ont pas introduit de modifications affectant la notation.';
 $string['recreatepdfs'] = 'Recréer les PDF';
 $string['recurse'] = 'Inclure également les questions des sous catégories';
 $string['rediswrong'] = 'croix fausse ou manquante';
 $string['refreshpreview'] = 'Rafraîchir l\'aperçu';
-$string['regrade'] = 'Ré-évaluer';
+$string['regrade'] = 'Ré-évaluation';
 $string['regradedisplayexplanation'] = '<b>Attention !</b>Noter à nouveau ne va pas changer les notes qui ont été remplacées manuellement !';
 $string['regradinginfo'] = 'Si vous modifiez le score d\'une question, vous devez ré-évaluer le Test hors-ligne pour mettre à jour les résultats des participants.';
 $string['regradingquiz'] = 'Ré-évaluation';
@@ -692,9 +710,9 @@ $string['reportends'] = 'Relecture de la fin des résultats';
 $string['reportoverview'] = 'Vue d\'ensemble';
 $string['reportstarts'] = 'L\'examen des résultats commence';
 $string['resetofflinequizzes'] = 'Réinitialiser les données du test hors-ligne';
-$string['resultexists'] = 'Un résultat identique pour {$a} existe déjà, import ignoré';
-$string['resultimport'] = 'Importer des résultats';
-$string['results'] = 'Résultats';
+$string['resultexists'] = 'Un résultat identique pour {$a} existe déjà, évaluation ignorée';
+$string['resultimport'] = 'Déposer & Corriger';
+$string['results'] = 'Vue d\'ensemble';
 $string['review'] = 'Relecture';
 $string['reviewbefore'] = 'Permettre la relecture pendant que le test hors-ligne est ouvert';
 $string['reviewclosed'] = 'Après la fermeture du test hors-ligne';
@@ -704,38 +722,23 @@ $string['reviewincludes'] = 'La relecture inclus';
 $string['reviewofresult'] = 'Relecture du résultat';
 $string['reviewopens'] = 'Début de relecture';
 $string['reviewoptions'] = 'Les étudiants peuvent relire';
-$string['reviewoptions_help'] = 'Ces options vous permettent de contrôler ce que les étudiants peuvent voir après l\'import des résultats.
-Vous pouvez également définir l\'heure de début et de fin du rapport de résultats. Les cases à cocher signifient :
-<table>
-<tr><td style="vertical-align: top;"><b>La tentative</b></td><td>
-Le texte des questions et les réponses seront affichés aux étudiants. Ils verront quelles réponses ils ont choisies, mais les réponses correctes ne seront pas indiquées.</td>
-</td></tr>
-<tr><td style="vertical-align: top;"><b>Si correcte</b></td><td>
-Cette option ne peut être activée que si l\'option "La tentative" est aussi activée. Si activée, les étudiants verront quelles réponses étaient correctes (fond vert) ou incorrectes (fond rouge).
-</td></tr>
-<tr><td style="vertical-align: top;"><b>Points</b></td><td>
-Le groupe (par exemple B), les notes (note obtenue, note totale des questions, note obtenue en pourcentage, par exemple 40/80 (50)) et la note (par exemple 50 sur un maximum de 100) sont affichés.
-En outre, si l\'option "La tentative" est sélectionnée, la note obtenue et la note maximale sont affichées pour chaque question.
-</td></tr>
-<tr><td style="vertical-align: top;"><b>Feedback spécifique</b></td><td>
-Feedback qui dépend de la réponse donnée par l\'étudiant.
-</td></tr>
-<tr><td style="vertical-align: top ;"><b>Feedback général</b></td><td>.
-<p>Les feedbacks généraux sont montrés à l\'étudiant après l\'import des résultats.
-Contrairement au feedback spécifique, qui dépend du type de question et de la réponse donnée par l\'étudiant, le même texte de feedback général s\'affiche pour tous les étudiants.</p>
-<p></p><p>Vous pouvez utiliser le feedback général pour donner aux étudiants une réponse entièrement travaillée et peut-être un lien vers des informations supplémentaires qu\'ils peuvent utiliser s\'ils n\'ont pas compris les questions.</p>
-</td></tr>
-<tr><td style="vertical-align: top ;"><b>Réponses correctes</b></td><td>.
-Il est indiqué quelles réponses sont correctes ou fausses. Cette option n\'est disponible que si "La tentative" est définie.
-</td></tr>
-<tr><td style="vertical-align: top ;"><b>Formulaire numérisé</b></td><td>.
-Les formulaires de réponse numérisés sont affichés. Les cases cochées sont marquées par des carrés verts.
-</td></tr>
-<tr><td style="vertical-align: top ;"><b>Formulaire numérisé avec les notes</b></td><td>.
-Les formulaires de réponse numérisés sont affichés. Les cases cochées sont marquées par des carrés verts. Les notes erronées et les notes manquantes sont mises en évidence.
-En outre, un tableau indique la note maximale et la note obtenue pour chaque question.
-</td></tr>
-</table>';
+$string['reviewoptions_help'] = 'Ces options vous permettent de contrôler ce que les étudiants peuvent voir après l\'import des résultats. Vous pouvez également définir l\'heure de début et de fin du rapport de résultats. Les cases à cocher signifient :
+
+**La tentative** - Les textes des questions et les réponses seront affichés aux étudiants. Ils verront quelles réponses ils ont choisies, mais les réponses correctes ne seront pas indiquées.<
+
+**Si correcte** - Cette option ne peut être activée que si l\'option « La tentative » est aussi activée. Si activée, les étudiants verront quelles réponses étaient correctes (fond vert) ou incorrectes (fond rouge).
+
+**Points** - Le groupe (par exemple B), les notes (note obtenue, note totale des questions, note obtenue en pourcentage, par exemple 40/80 (50)) et la note (par exemple 50 sur un maximum de 100) sont affichés. En outre, si l\'option « La tentative » est sélectionnée, la note obtenue et la note maximale sont affichées pour chaque question.
+
+**Feedback spécifique<** - Feedback qui dépend de la réponse donnée par l\'étudiant.
+
+**Feedback général** - Les feedbacks généraux sont montrés à l\'étudiant après l\'évaluation des résultats. Contrairement au feedback spécifique, qui dépend du type de question et de la réponse donnée par l\'étudiant, le même texte de feedback général s\'affiche pour tous les étudiants. Vous pouvez utiliser le feedback général pour donner aux étudiants une réponse entièrement travaillée et peut-être un lien vers des informations supplémentaires qu\'ils peuvent utiliser s\'ils n\'ont pas compris les questions.
+
+**Réponses correctes** - Il est indiqué quelles réponses sont correctes ou fausses. Cette option n\'est disponible que si « La tentative » est définie.
+
+**Formulaire numérisé** - Les formulaires de réponse numérisés sont affichés. Les cases cochées sont marquées par des carrés verts.
+
+**Formulaire numérisé avec les notes** - Les formulaires de réponse numérisés sont affichés. Les cases cochées sont marquées par des carrés verts. Les notes erronées et les notes manquantes sont mises en évidence. En outre, un tableau indique la note maximale et la note obtenue pour chaque question.';
 $string['reviewoptionsheading'] = 'Options de relecture';
 $string['rimport'] = 'Importer/Corriger';
 $string['rotate'] = 'Rotation';
@@ -801,6 +804,27 @@ $string['statistics'] = 'Statistique';
 $string['statisticsplural'] = 'Statistiques';
 $string['statsoverview'] = 'Vue d\'ensemble des statistiques';
 $string['studycode'] = 'Code étudiant';
+$string['tabattendances'] = 'Présences';
+$string['tabattendancesoverview'] = 'Vue d\'ensemble';
+$string['tabdownloadparticipantsforms'] = 'Formulaires';
+$string['tabdownloadquizforms'] = 'Formulaires';
+$string['tabeditgrades'] = 'Notes';
+$string['tabeditgroupquestions'] = 'Questions';
+$string['tabeditparticipants'] = 'Participants';
+$string['tabofflinequizcontent'] = 'Préparation';
+$string['tabofflinequizcorrect'] = 'Corriger';
+$string['tabofflinequizupload'] = 'Déposer & Corriger';
+$string['tabparticipantlists'] = 'Listes des présences';
+$string['tabparticipantscorrect'] = 'Corriger';
+$string['tabparticipantsupload'] = 'Déposer & Corriger';
+$string['tabpreview'] = 'Prévisualiser';
+$string['tabquestionandanswerstats'] = 'Analyse des questions et réponses';
+$string['tabquestionstats'] = 'Analyse des questions';
+$string['tabregrade'] = 'Ré-évaluation';
+$string['tabresults'] = 'Résultats';
+$string['tabresultsoverview'] = 'Vue d\'ensemble';
+$string['tabstatistics'] = 'Statistiques';
+$string['tabstatsoverview'] = 'Informations sur le test';
 $string['temporaryfiledeletiontask'] = 'Supprime les fichiers temporaires';
 $string['theattempt'] = 'La tentative';
 $string['timesup'] = 'Temps écoulé !';
@@ -815,8 +839,8 @@ $string['updatedsumgrades'] = 'La somme des notes du groupe {$a->letter} a été
 $string['upgradingfilenames'] = 'Mise à jour des noms de fichiers des documents : offline quiz {$a->done}/{$a->outof} (Test hors ligne ID {$a->info})';
 $string['upgradingilogs'] = 'Mise à jour des pages scannées : page scannée {$a->done}/{$a->outof} <br/>(identifiant de test hors-ligne {$a->info})';
 $string['upgradingofflinequizattempts'] = 'Mise à jour des tentatives du test hors-ligne : test hors-ligne {$a->done}/{$a->outof} <br/>(identifiant de test hors-ligne {$a->info})';
-$string['upload'] = 'Importer/Corriger';
-$string['uploadpart'] = 'Importer/Corriger des listes de participants';
+$string['upload'] = 'Déposer & Corriger';
+$string['uploadpart'] = 'Déposer & Corriger';
 $string['uppertrigger'] = 'Seconde borne supérieure';
 $string['uppertriggerzero'] = 'La seconde borne supérieure est nulle';
 $string['upperwarning'] = 'Première borne supérieure';
@@ -825,15 +849,15 @@ $string['useradded'] = 'Utilisateur {$a} ajouté';
 $string['userdoesnotexist'] = 'L\'utilisateur {$a} n\'existe pas dans le système';
 $string['useridentification'] = 'Identification des utilisateurs';
 $string['useridviolation'] = 'Plusieurs utilisateurs trouvés';
-$string['userimported'] = 'L\'utilisateur {$a} a été importé et noté';
+$string['userimported'] = 'L\'utilisateur {$a} a été évalué et noté';
 $string['usernotincourse'] = 'L\'utilisateur {$a} ne participe pas au cours.';
 $string['usernotinlist'] = 'Utilisateur non enregistré dans la liste !';
 $string['usernotregistered'] = 'L\'utilisteur {$a} n\'est pas enregistré dans le cours';
-$string['userpageimported'] = 'Page isolée importée pour l\'utilisateur {$a}';
+$string['userpageimported'] = 'Page isolée évaluée pour l\'utilisateur {$a}';
 $string['valuezero'] = 'La valeur ne doit pas être nulle';
 $string['viewresults'] = 'Voir les résultats';
 $string['white'] = 'Blanc';
 $string['withselected'] = 'Avec la sélection';
 $string['zerogradewarning'] = 'Attention : la note du test hors-ligne est 0.0 !';
 $string['zipfile'] = 'Fichier ZIP';
-$string['zipok'] = 'Fichier ZIP importé';
+$string['zipok'] = 'Fichier ZIP déposé';

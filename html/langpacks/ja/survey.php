@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ja', version '3.11'.
+ * Strings for component 'survey', language 'ja', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -214,10 +214,12 @@ $string['indicator:cognitivedepth'] = '調査認知的';
 $string['indicator:cognitivedepth_help'] = 'この指標は調査活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = '調査認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者が調査活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信)。';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '調査社会的';
 $string['indicator:socialbreadth_help'] = 'この指標は調査活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = '調査社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者が調査活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = 'イントロダクションテキスト';
 $string['invalidsurveyid'] = '調査IDが正しくありません。';
 $string['invalidtmptid'] = '無効なテンプレートIDです。';
@@ -226,6 +228,7 @@ $string['modulename'] = '調査';
 $string['modulename_help'] = '調査モジュールはオンライン学習環境における評価および刺激に関して有益であると検証された多くの調査手段を提供します。自身の授業に関して学ぶことや指導に反映させる手助けとするため教師は学生からデータを収集する目的で使用できます。
 
 調査ツールには事前に質問が実装されていることに留意してください。自分の調査を作成したい場合、フィードバックモジュールをお使いください。';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = '調査';
 $string['name'] = '名称';
 $string['newsurveyresponses'] = '新しい調査回答';
@@ -279,6 +282,7 @@ $string['surveytype_help'] = '調査には以下の3つのタイプがありま�
 * 考え方と学び方に対する姿勢の調査 (ATTLS - Attitudes to Thinking and Learning Survey) - どの人が「関連認識者」 (学ぶことに楽しみを感じ、多くの場合、協力的であり愛想がよく、他の人とアイデアを構築することを望む傾向があります) または「分離認識者」 (学習に対して批判的および論争的なスタンスをとる傾向があります) であるか程度を測定します。
 * クリティカルインシデント調査
 * 構成主義オンライン学習環境調査 (COLLES - On-line Learning Environment Survey) - ワールドワイドウェブの双方向性が学生の動的学習の実践に興味を持たせる効果の程度を測定します。';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = '{$a} さん、調査にご回答頂きましてありがとうございます';
 $string['time'] = '時間';
 $string['viewsurveyresponses'] = '{$a} 件の調査結果を表示する';

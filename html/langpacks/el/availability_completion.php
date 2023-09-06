@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'el', version '3.11'.
+ * Strings for component 'availability_completion', language 'el', version '4.1'.
  *
  * @package     availability_completion
  * @category    string
@@ -37,8 +37,8 @@ $string['option_fail'] = 'πρέπει να έχει ολοκληρωθεί με
 $string['option_incomplete'] = 'πρέπει να μην έχει επισημανθεί ως ολοκληρωμένη';
 $string['option_pass'] = 'πρέπει να έχει ολοκληρωθεί με βαθμό πάνω από τη βάση';
 $string['option_previous'] = 'Προηγούμενη δραστηριότητα με ολοκλήρωση';
-$string['pluginname'] = 'Περιορισμός με βάση την ολοκλήρωση δραστηριότητας';
-$string['privacy:metadata'] = 'Το πρόσθετο «Περιορισμός με βάση την ολοκλήρωση δραστηριότητας» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['pluginname'] = 'Περιορισμός βάσει ολοκλήρωσης δραστηριότητας';
+$string['privacy:metadata'] = 'Το πρόσθετο «Περιορισμός βάσει ολοκλήρωσης δραστηριότητας» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['requires_complete'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι επισημασμένη ως ολοκληρωμένη';
 $string['requires_complete_fail'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ολοκληρωμένη και κάτω από τη βάση';
 $string['requires_complete_pass'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ολοκληρωμένη και πάνω από τη βάση';

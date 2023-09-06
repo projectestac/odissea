@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'en', version '3.11'.
+ * Strings for component 'auth_ldap', language 'en', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -124,6 +124,10 @@ $string['diag_toooldversion'] = 'It is very unlikely a modern LDAP server uses L
 $string['didntfindexpiretime'] = 'password_expire() didn\'t find expiration time.';
 $string['didntgetusersfromldap'] = 'Did not get any users from LDAP -- error? -- exiting';
 $string['gotcountrecordsfromldap'] = 'Got {$a} records from LDAP';
+$string['invalidusererrors'] = 'Warning: Skipped creation of {$a} user accounts.';
+$string['invaliduserexception'] = 'Error: Cannot create new user account. Details and reason:
+{$a}
+Skipping this user.';
 $string['ldapnotconfigured'] = 'The LDAP host url is currently not configured';
 $string['morethanoneuser'] = 'More than one user record found in LDAP. Using only the first one.';
 $string['needbcmath'] = 'You need the BCMath extension to use expired password checking with Active Directory.';
@@ -157,7 +161,6 @@ $string['updatepasserrorexpire'] = 'Error in user_update_password() when reading
 $string['updatepasserrorexpiregrace'] = 'Error in user_update_password() when modifying expiry time and/or grace logins. Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updateremfail'] = 'Error updating LDAP record. Error code: {$a->errno}; Error string: {$a->errstring}<br/>Key ({$a->key}) - old moodle value: \'{$a->ouvalue}\' new value: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Failed to update LDAP with ambiguous field {$a->key}; old moodle value: \'{$a->ouvalue}\', new value: \'{$a->nuvalue}\'';
-$string['updateremfailfield'] = 'Failed to update LDAP with non-existent field (\'{$a->ldapkey}\'). Key ({$a->key}) - old Moodle value: \'{$a->ouvalue}\' new value: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Could not find user while updating externally. Details follow: search base: \'{$a->userdn}\'; search filter: \'(objectClass=*)\'; search attributes: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() does not support selected usertype: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() does not support selected usertype: {$a}';

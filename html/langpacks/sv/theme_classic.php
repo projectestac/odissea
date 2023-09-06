@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'sv', version '3.11'.
+ * Strings for component 'theme_classic', language 'sv', version '4.1'.
  *
  * @package     theme_classic
  * @category    string
@@ -38,3 +38,4 @@ $string['privacy:metadata'] = 'Temat Classic lagrar ingen personinformation';
 $string['region-side-post'] = 'Höger';
 $string['region-side-pre'] = 'Vänster';
 $string['sitetitle'] = 'Webbplatsnamn';
+$string['totop'] = 'Till början';

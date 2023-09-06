@@ -31,7 +31,7 @@ defined('MOODLE_INTERNAL') || die;
  * @copyright  2012 Marina Glancy
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class format_legacy extends format_base {
+class format_legacy extends core_courseformat\base {
 
     /**
      * Returns true if this course format uses sections
@@ -126,7 +126,7 @@ class format_legacy extends format_base {
                     $usercoursedisplay = COURSE_DISPLAY_SINGLEPAGE;
                 }
             } else {
-                $usercoursedisplay = $course->coursedisplay;
+                $usercoursedisplay = $course->coursedisplay ?? COURSE_DISPLAY_SINGLEPAGE;
             }
             if ($sectionno != 0 && $usercoursedisplay == COURSE_DISPLAY_MULTIPAGE) {
                 $url->param('section', $sectionno);
@@ -268,11 +268,11 @@ class format_legacy extends format_base {
                     'type' => PARAM_INT,
                 ),
                 'hiddensections' => array(
-                    'default' => $courseconfig->hiddensections,
+                    'default' => $courseconfig->hiddensections ?? 0,
                     'type' => PARAM_INT,
                 ),
                 'coursedisplay' => array(
-                    'default' => $courseconfig->coursedisplay,
+                    'default' => $courseconfig->coursedisplay ?? COURSE_DISPLAY_SINGLEPAGE,
                     'type' => PARAM_INT,
                 ),
             );

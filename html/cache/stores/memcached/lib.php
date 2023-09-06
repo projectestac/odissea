@@ -203,25 +203,10 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
 
         $this->connection = new Memcached(crc32($this->name));
         $servers = $this->connection->getServerList();
-
-        // XTEC ************ AFEGIT - Fixed cache pollution in memcached
-        // 19.08.05 @aginard
-        foreach ($this->options as $key => $value) {
-            $this->connection->setOption($key, $value);
-        }
-        // ************ FI
-
         if (empty($servers)) {
-
-            // XTEC ************ ELIMINAT - Fixed cache pollution in memcached
-            // 19.08.05 @aginard
-            /*
             foreach ($this->options as $key => $value) {
                 $this->connection->setOption($key, $value);
             }
-            */
-            // ************ FI
-
             $this->connection->addServers($this->servers);
         }
 

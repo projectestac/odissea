@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'ca', version '3.11'.
+ * Strings for component 'block_timeline', language 'ca', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -32,9 +32,10 @@ $string['next3months'] = 'Propers 3 mesos';
 $string['next6months'] = 'Propers 6 mesos';
 $string['next7days'] = 'Propers 7 dies';
 $string['nocoursesinprogress'] = 'No hi ha cursos en marxa';
-$string['noevents'] = 'No hi ha cap activitat propera prevista';
+$string['noevents'] = 'No hi ha cap activitat que requereixi una acció';
 $string['overdue'] = 'Vençuda';
 $string['pluginname'] = 'Cronologia';
+$string['searchevents'] = 'Cerca per tipus d\'activitat o nom';
 $string['sortbycourses'] = 'Ordena per cursos';
 $string['sortbydates'] = 'Ordena per data';
 $string['viewcourse'] = 'Visualitza el curs';

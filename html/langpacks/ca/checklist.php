@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'ca', version '3.11'.
+ * Strings for component 'checklist', language 'ca', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -32,5 +32,6 @@ $string['export'] = 'Exporta elements';
 $string['gradetocomplete'] = 'Qualificació per a complet:';
 $string['import'] = 'Importa elements';
 $string['itemcomplete'] = 'Completat';
+$string['modulename_link'] = 'mod/checklist/view';
 $string['showprogressbars'] = 'Mostra les barres de progrés';
 $string['updatecompletescore'] = 'Desa les qualificacions de la compleció';

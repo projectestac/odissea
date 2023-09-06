@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_link', language 'it', version '3.11'.
+ * Strings for component 'atto_link', language 'it', version '4.1'.
  *
  * @package     atto_link
  * @category    string
@@ -31,4 +31,5 @@ $string['enterurl'] = 'Inserisci un URL';
 $string['openinnewwindow'] = 'Apri in una nuova finestra';
 $string['pluginname'] = 'Collegamento';
 $string['privacy:metadata'] = 'Il plugin  atto_link non memorizza dati personali.';
+$string['texttodisplay'] = 'Testo da visualizzare';
 $string['unlink'] = 'Elimina collegamento';

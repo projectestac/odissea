@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'el', version '3.11'.
+ * Strings for component 'offlinequiz', language 'el', version '4.1'.
  *
  * @package     offlinequiz
  * @category    string
@@ -162,7 +162,6 @@ $string['gradingofflinequiz'] = 'Βαθμοί';
 $string['gradingofflinequizx'] = 'Βαθμοί: {$a}';
 $string['gradingoptionsheading'] = 'Επιλογές βαθμών';
 $string['group'] = 'Ομάδα συμμετεχόντων';
-$string['groupquestions'] = 'Ερωτήσεις ομάδας';
 $string['hasresult'] = 'Το αποτέλεσμα υπάρχει';
 $string['html'] = 'HTML';
 $string['idnumber'] = 'Αναγνωριστικός αριθμός';
@@ -309,7 +308,7 @@ $string['totalmarksx'] = 'Σύνολο βαθμών: {$a}';
 $string['totalpointsx'] = 'Σύνολο βαθμών: {$a}';
 $string['totalquestionsinrandomqcategory'] = 'Συνολικά {$a} ερωτήσεις στην κατηγορία.';
 $string['trigger'] = 'χαμηλότερο/υψηλότερο όριο';
-$string['tutorial'] = 'Καθοδηγούμενη αυτοδιδασκαλία για κουίζ εκτός σύνδεσης';
+$string['tutorial'] = 'Βίντεο εκμάθησης για κουίζ εκτός σύνδεσης';
 $string['type'] = 'Τύπος';
 $string['uncheckparts'] = 'Επισήμανση επιλεγμένων συμμετεχόντων ως απόντων';
 $string['updatedsumgrades'] = 'Το σύνολο όλων των βαθμών της ομάδας {$a->letter} επανα-βαθμολογήθηκε σε {$a->grade}.';

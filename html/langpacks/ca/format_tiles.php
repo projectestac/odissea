@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'ca', version '3.11'.
+ * Strings for component 'format_tiles', language 'ca', version '4.1'.
  *
  * @package     format_tiles
  * @category    string
@@ -45,6 +45,7 @@ Depenent de la manera com s\'estableixin els paràmetres, pot aparèixer de form
 En els altres casos, podeu clicar el cercle buit quan cregueu que heu completat l\'activitat, i es convertirà en una marca de color verd sòlid. (Si canvieu d\'opinió, cliqueu-hi un altre pic i s\'eliminarà la marca.)';
 $string['courseshowtileprogress'] = 'Progrés a cada mosaic';
 $string['courseshowtileprogress_help'] = '<p>Quan se selecciona aquesta opció, es mostra a cada mosaic el progrés de l\'usuari amb les activitats, sia com a <em>fracció</em> (p. ex. «Progrés 2/10», que significa que s\'han completat 2 de 10 activitats), o com a <em>percentatge</em> dins un cercle.</p><p>Això només es pot utilitzar si s\'ha activat: «Compleció > Habilita el seguiment de la compleció.</p><p>Si no hi ha cap activitat rastrejable dins un mosaic determinat, no es mostrarà l\'indicador per al dit mosaic.</p>';
+$string['courseshowtileprogress_link'] = 'Activity_completion_settings#Activity_settings';
 $string['courseusebarforheadings'] = 'Destaca els títols amb una pestanya de color';
 $string['courseusebarforheadings_help'] = 'Mostra una pestanya de color a la dreta del títol dins el curs sempre que se seleccioni un estil de títol a l\'editor de text';
 $string['courseusesubtiles'] = 'Utilitza submosaics per a les activitats';
@@ -57,6 +58,7 @@ $string['deletesection'] = 'Suprimeix la secció';
 $string['deletetile'] = 'Suprimeix el mosaic';
 $string['displayfilterbar'] = 'Barra de filtre';
 $string['displayfilterbar_help'] = '<p>Quan se selecciona aquesta opció, es mostra de manera automàtica una matriu de botons abans de la pantalla del mosaic en un curs, en la qual els usuaris poden clicar per filtrar mosaics per rangs determinats. </p><p>Quan se selecciona «basats en el nombre de mosaics», es mostra una sèrie de botons, p. ex., un botó per als mosaics 1-4, un botó per als mosaics 5-8 etc.</p><p>Quan se selecciona «basats en els resultats del curs», hi haurà un botó per a cada resultat del curs. Es pot assignar cada mosaic a un resultat determinat (i, per tant, a un botó determinat) des de la pàgina de configuració d\'aquest mosaic.</p>';
+$string['displayfilterbar_link'] = 'Outcomes';
 $string['displaytitle_mod_mp3'] = 'Àudio';
 $string['documentation'] = 'Documentació';
 $string['editsectionname'] = 'Edita el nom de la secció';
@@ -67,6 +69,7 @@ $string['expandsections'] = 'Deixa veure totes les activitats (totes les seccion
 $string['filterboth'] = 'Mostra botons basats en el nombre de mosaics i els resultats del curs';
 $string['filternumbers'] = 'Mostra botons basats en el nombre de mosaics';
 $string['filteroutcomes'] = 'Mostra botons basats en els resultats del curs';
+$string['guidance'] = 'Guia';
 $string['hide'] = 'Amaga\'l';
 $string['hidefromothers'] = 'Amaga el mosaic';
 $string['home'] = 'Pàgina d\'inici del curs';
@@ -179,6 +182,8 @@ $string['notrecommended'] = 'No recomanat';
 $string['outcomes'] = 'resultats';
 $string['outcomesunavailable'] = 'Resultats no disponibles';
 $string['overallprogressshort'] = 'Progrés general';
+$string['photoguidance_desc'] = '<p>Puja una fotografia en format <strong>horitzontal</strong>. L\'amplària hauria de fer 1.3 vegades l\'alçària, aproximadament. Per exemple: 270 d\'amplària x 200 d\'alçària s\'ajustaria bé. No cal que sigueu exactes.</p>
+<p>Les fotografies en format vertical no coincidiran amb la forma del mosaic. Les imatges o els fitxers grans es comprimiran i se\'n reduirà l\'escala, si cal, després d\'haver-los pujat.</p>';
 $string['photolibrary'] = 'Biblioteca de fotos';
 $string['picknewicon'] = 'Tria una icona nova';
 $string['picknewiconphoto'] = 'Tria una icona o una imatge de fons nova';

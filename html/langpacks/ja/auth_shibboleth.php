@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ja', version '3.11'.
+ * Strings for component 'auth_shibboleth', language 'ja', version '4.1'.
  *
  * @package     auth_shibboleth
  * @category    string
@@ -55,7 +55,7 @@ $string['auth_shibboleth_login'] = 'Shibbolethログイン';
 $string['auth_shibboleth_login_long'] = 'Shibboleth経由でMoodleにログインする';
 $string['auth_shibboleth_manual_login'] = '手動ログイン';
 $string['auth_shibboleth_select_member'] = '私は ...';
-$string['auth_shibboleth_select_organization'] = 'Shibboleth経由の認証のため、あなたの組織をドロップダウンメニュから選択してください。';
+$string['auth_shibboleth_select_organization'] = 'Shibboleth経由の認証のため、あなたの組織をドロップダウンメニューから選択してください。';
 $string['auth_shibbolethdescription'] = 'この方法を使用することにより、Shibbolethを使用してユーザが作成および認証されます。詳細は<a href="{$a}">Shibboleth README</a>をご覧ください。';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = 'Shibboleth認証プラグインはいかなる個人データも保存しません。';

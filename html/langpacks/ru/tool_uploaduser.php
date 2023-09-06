@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ru', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'ru', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -40,6 +40,7 @@ $string['clivalidationerror'] = 'Ошибка проверки:';
 $string['csvdelimiter'] = 'Разделитель для CSV';
 $string['defaultvalues'] = 'Значения по умолчанию';
 $string['deleteerrors'] = 'Ошибки удаления';
+$string['duplicateemail'] = 'Обнаружено несколько пользователей с адресом электронной почты {$a}';
 $string['encoding'] = 'Кодировка';
 $string['errormnetadd'] = 'Невозможно добавить отдаленных пользователей';
 $string['errorprefix'] = 'Ошибка:';
@@ -53,6 +54,7 @@ $string['invalidtheme'] = 'Тема «{$a}» не установлена и бу
 $string['invalidupdatetype'] = 'Этот параметр не может быть выбран с заданным типом загрузки.';
 $string['invaliduserdata'] = 'Обнаружены некорректные данные для пользователя {$a}, они были автоматически очищены.';
 $string['linex'] = 'Строка {$а}';
+$string['matchemail'] = 'Совпадают адреса электронной почты';
 $string['nochanges'] = 'Не изменять';
 $string['notheme'] = 'Тема не определена для этого пользователя.';
 $string['pluginname'] = 'Загрузка пользователей';
@@ -82,6 +84,7 @@ $string['uploadusers_help'] = 'Пользователи могут быть за
 * Каждая запись - ряд данных, разделенных запятыми (или другими разделителями)
 * Первая запись содержит список имен полей, определяющих формат остальной части файла
 * Обязательными именами полей являются: username, password, firstname, lastname, email (логин, пароль, имя, фамилия, адрес электронной почты)';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Предварительный просмотр загружаемых пользователей';
 $string['uploadusersresult'] = 'Результаты загрузки пользователей';
 $string['useraccountupdated'] = 'Пользователь обновлен';

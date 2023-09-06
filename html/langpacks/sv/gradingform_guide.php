@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'sv', version '3.11'.
+ * Strings for component 'gradingform_guide', language 'sv', version '4.1'.
  *
  * @package     gradingform_guide
  * @category    string

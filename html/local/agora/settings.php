@@ -1,8 +1,11 @@
 <?php
 
+
 if ($hassiteconfig) {
 
     global $CFG;
+
+    include_once($CFG->dirroot.'/local/agora/lib.php');
 
     if (is_xtecadmin() || (!is_agora() && is_siteadmin())) {
         $ADMIN->add('root', new admin_category('agora', 'Àgora'));

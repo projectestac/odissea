@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ru', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'ru', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -63,6 +63,7 @@ $string['pleaseselectananswer'] = 'Пожалуйста, выберите отв
 $string['pleaseselectatleastoneanswer'] = 'Выберите хотя бы один ответ.';
 $string['pluginname'] = 'Множественный выбор';
 $string['pluginname_help'] = 'Ответ на вопрос (который может содержать изображение) отвечающий выбирает из нескольких вариантов. Множественный выбор бывает двух типов: с одним правильным ответом или с несколькими правильными ответами.';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = 'Добавление вопроса «В закрытой форме (множественный выбор)»';
 $string['pluginnameediting'] = 'Редактирование вопроса «В закрытой форме (множественный выбор)»';
 $string['pluginnamesummary'] = 'Позволяет выбирать один или несколько правильных ответов из заданного списка.';
@@ -73,10 +74,12 @@ $string['privacy:preference:penalty'] = 'Штраф за каждую непра
 $string['privacy:preference:showstandardinstruction'] = 'Показывать ли стандартную инструкцию.';
 $string['privacy:preference:shuffleanswers'] = 'Следует ли автоматически перемешивать ответы.';
 $string['privacy:preference:single'] = 'Будет ли один ответ с переключателями или несколько ответов с флажками.';
+$string['regradeissuenumchoiceschanged'] = 'В вопросе изменено количество вариантов ответа.';
 $string['selectmulti'] = 'Выберите один или несколько ответов:';
 $string['selectone'] = 'Выберите один ответ:';
 $string['showstandardinstruction'] = 'Показать стандартные инструкции';
-$string['showstandardinstruction_help'] = 'Показывать ли инструкции «Выберите один:» или «Выберите один или несколько:» перед вопросами с несколькими вариантами верных ответов.';
+$string['showstandardinstruction_desc'] = 'Показывать ли инструкции «Выберите один:» или «Выберите один или несколько:» перед вопросами с несколькими вариантами ответов.';
+$string['showstandardinstruction_help'] = 'Показывать ли инструкции «Выберите один:» или «Выберите один или несколько:» перед вопросами с несколькими вариантами ответов. Если этот параметр отключен, авторы вопросов могут при необходимости включать инструкции в содержание вопроса.';
 $string['shuffleanswers'] = 'Случайный порядок ответов';
 $string['shuffleanswers_desc'] = 'Следует ли по умолчанию для каждой попытки перетасовывать варианты ответов.';
 $string['shuffleanswers_help'] = 'Если параметр включен, то порядок ответов в каждой попытке будет случайным, если «Случайный порядок ответов» также включен в настройках элемента курса.';

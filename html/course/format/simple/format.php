@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -22,24 +21,27 @@
  * @package    course/format
  * @subpackage Simple
  * @copyright 2012-2014 UPCnet
- * @author Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat, Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es
+ * @author Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat, 
+ * Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es, Israel Forés Monzó israel.fores@ithinkupc.com
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->libdir . '/filelib.php');
-require_once($CFG->libdir . '/completionlib.php');
+require_once($CFG->libdir.'/filelib.php');
+require_once($CFG->libdir.'/completionlib.php');
 
-// Horrible backwards compatible parameter aliasing..
+// Horrible backwards compatible parameter aliasing.
 if ($topic = optional_param('topic', 0, PARAM_INT)) {
     $url = $PAGE->url;
     $url->param('section', $topic);
     debugging('Outdated topic param passed to course/view.php', DEBUG_DEVELOPER);
     redirect($url);
 }
-// End backwards-compatible aliasing..
+// End backwards-compatible aliasing.
 
+$format = course_get_format($course);
+$course = $format->get_course();
 $context = context_course::instance($course->id);
 
 if (($marker >= 0) && has_capability('moodle/course:setcurrentsection', $context) && confirm_sesskey()) {
@@ -48,11 +50,9 @@ if (($marker >= 0) && has_capability('moodle/course:setcurrentsection', $context
 }
 
 // make sure all sections are created
-$course = course_get_format($course)->get_course();
 course_create_sections_if_missing($course, range(0, $course->numsections));
 
-//$is_teacher = has_capability('moodle/course:setcurrentsection', $context);
-if ($PAGE->user_is_editing()) {
+if ($format->show_editor()) {
     $alt_format = 'topics';
     include($CFG->dirroot . '/course/format/' . $alt_format . '/format.php');
     return;
@@ -75,9 +75,17 @@ if ($course->coursedisplay == COURSE_DISPLAY_MULTIPAGE){
 }
 
 $section = optional_param('section', $displaysection, PARAM_INT);
-if ($section !== false) {
-    //$course->hiddensections = false;
-    $renderer->print_single_section_page($course, null, null, null, null, $section);
-} else {
-    $renderer->print_multiple_section_page($course, null, null, null, null);
+
+
+if (!empty($section)) {
+    // Setup the format instance to display a single section.
+    $format->set_section_number($section);
 }
+// Create the ouptut instance and render it.
+$outputclass = $format->get_output_classname('content');
+$widget = new $outputclass($format);
+
+echo $renderer->render($widget);
+
+// Include course format js module.
+$PAGE->requires->js('/course/format/topics/format.js');

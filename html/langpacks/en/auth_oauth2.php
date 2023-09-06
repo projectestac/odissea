@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'en', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'en', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -90,16 +90,19 @@ Please log in as before, using the link on the login page.
 {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: Change password information';
 $string['info'] = 'External account';
-$string['issuer'] = 'OAuth 2 Service';
+$string['issuer'] = 'OAuth 2 service';
 $string['issuernologin'] = 'This issuer can not be used to login';
+$string['key'] = 'Key';
 $string['linkedlogins'] = 'Linked logins';
 $string['linkedloginshelp'] = 'Help with linked logins';
+$string['loggedin'] = 'User successfully authenticated with provider.';
 $string['loginerror_authenticationfailed'] = 'The authentication process failed.';
 $string['loginerror_cannotcreateaccounts'] = 'An account with your email address could not be found.';
 $string['loginerror_invaliddomain'] = 'The email address is not allowed at this site.';
 $string['loginerror_nouserinfo'] = 'No user information was returned. The OAuth 2 service may be configured incorrectly.';
 $string['loginerror_userincomplete'] = 'The user information returned did not contain a username and email address. The OAuth 2 service may be configured incorrectly.';
-$string['noissuersavailable'] = 'None of the configured OAuth2 services allow you to link login accounts';
+$string['noconfiguredidps'] = 'There are no configured OAuth2 providers.';
+$string['noissuersavailable'] = 'None of the configured OAuth 2 services allow you to link login accounts.';
 $string['notenabled'] = 'Sorry, OAuth 2 authentication plugin is not enabled';
 $string['notloggedindebug'] = 'The login attempt failed. Reason: {$a}';
 $string['notwhileloggedinas'] = 'Linked logins cannot be managed while logged in as another user.';
@@ -118,3 +121,6 @@ $string['privacy:metadata:auth_oauth2:timemodified'] = 'The timestamp when this 
 $string['privacy:metadata:auth_oauth2:userid'] = 'The ID of the user account which the OAuth 2 login is linked to.';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'The ID of the user who modified this account.';
 $string['privacy:metadata:auth_oauth2:username'] = 'The external username that maps to this account.';
+$string['testidplogin'] = 'Test login with:';
+$string['userinfo'] = 'User data from provider:';
+$string['value'] = 'Value';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_data', language 'es', version '3.11'.
+ * Strings for component 'filter_data', language 'es', version '4.1'.
  *
  * @package     filter_data
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'nl', version '3.11'.
+ * Strings for component 'tag', language 'nl', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -78,7 +78,9 @@ $string['helprelatedtags'] = 'Komma gescheiden gerelateerde tags';
 $string['id'] = 'id';
 $string['inalltagcoll'] = 'Overal';
 $string['inputstandardtags'] = 'Geef een kommagescheiden lijst met nieuwe tags';
+$string['itemid'] = 'Item ID';
 $string['itemstaggedwith'] = '{$a->tagarea} getagged met "{$a->tag}"';
+$string['itemtype'] = 'Item type';
 $string['lesstags'] = 'minder...';
 $string['managestandardtags'] = 'Beheer standaard tags';
 $string['managetagcolls'] = 'Beheer tag-collectie';
@@ -87,6 +89,7 @@ $string['moretags'] = 'meer...';
 $string['name'] = 'Tag-naam';
 $string['namesalreadybeeingused'] = 'Tag-naam is al in gebruik';
 $string['nameuseddocombine'] = 'De tag-naam is al in gebruik. Wil je deze tags combineren?';
+$string['namewithlink'] = 'Tag-naam met link';
 $string['newcollnamefor'] = 'Nieuwe naam voor tag-collectie {$a}';
 $string['newnamefor'] = 'Nieuwe naam voor tag {$a}';
 $string['nextpage'] = 'Meer';
@@ -144,6 +147,7 @@ $string['standardsuggest'] = 'Suggereren';
 $string['standardtag'] = 'Standaard';
 $string['suredeletecoll'] = 'Weet je zeker dat je tag-collectie "{$a}" wil verwijderen?';
 $string['tag'] = 'Tag';
+$string['tagarea'] = 'Tag-gebied';
 $string['tagarea_blog_external'] = 'Externe blogberichten';
 $string['tagarea_course'] = 'Cursussen';
 $string['tagarea_course_modules'] = 'Activiteiten en bronnen';
@@ -152,10 +156,12 @@ $string['tagarea_user'] = 'Gebruikersinteresses';
 $string['tagareaenabled'] = 'Ingeschakeld';
 $string['tagareaname'] = 'Naam';
 $string['tagareas'] = 'Tag-zones';
+$string['tagauthor'] = 'Tag-auteur';
 $string['tagcollection'] = 'Tag-collectie';
 $string['tagcollection_help'] = 'Tag-collecties zijn sets met tags voor verschillende zones. Zo kan bijvoorbeeld een collectie met standaard tags gebruikt worden om cursussen te taggen, met interesses van de gebruikers en tags voor blogberichten in een aparte collectie. Wanneer een gebruiker klikt op een tag, dan zal de pagina enkel items tonen met die tag in dezelfde collectie. Tags kunnen automatisch aan een collectie toegevoegd worden die overeen komen met de getagde zone of kunnen manueel als standaard-tags toegevoegd worden.';
 $string['tagcollections'] = 'Tag-collectie';
 $string['tagdescription'] = 'Tag-beschrijving';
+$string['taginstance'] = 'Tag-instantie';
 $string['tags'] = 'Tags';
 $string['tagsaredisabled'] = 'Tags zijn uitgeschakeld';
 $string['thingstaggedwith'] = ' "{$a->name}" is {$a->count}  keer gebruikt';

@@ -25,5 +25,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'customfield_textarea';
-$plugin->version   = 2021051700;
-$plugin->requires  = 2021051100;
+$plugin->version   = 2022112800;
+$plugin->requires  = 2022111800;

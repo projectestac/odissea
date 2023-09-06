@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'es', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'es', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -62,6 +62,7 @@ $string['pleaseenterananswer'] = 'Por favor, introduce una respuesta.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Por favor, escribe tu respuesta sin usar el separador de miles ({$a}).';
 $string['pluginname'] = 'Numérica';
 $string['pluginname_help'] = 'Desde la perspectiva del alumno, una pregunta numérica es muy semejante a una pregunta de respuesta corta. La diferencia es que a las respuestas numéricas se les permite tener un margen de error. Esto permite evaluar la respuesta debtro de un rango fijo. Por ejemplo, si la respuesta es 10, con un margen de error de 2, entonces cualquier número entre 8 y 12 se aceptará como correcto.';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = 'Agregando una pregunta numérica';
 $string['pluginnameediting'] = 'Editando una pregunta numérica';
 $string['pluginnamesummary'] = 'Permite una respuesta numérica (con posibilidad de especificar las unidades) que es calificada comparándola con distintas respuestas modelo (es posible incluir márgenes de tolerancia).';
@@ -104,15 +105,6 @@ $string['unitposition'] = 'Posición de unidad';
 $string['units'] = 'Unidades';
 $string['unitselect'] = 'menú emergente';
 $string['unitx'] = 'Unidad {no}';
-$string['validnumberformats'] = 'Formatos de número válidos';
-$string['validnumberformats_help'] = '* números regulares 13500.67, 13 500.67, 13500,67 or 13 500,67
-
-* si usa coma (,) como separador de miles, use SIEMPRE el punto (.) decimal, por ejemplo:
- 13,500.67 : 13,500.
-
-* para la forma exponencial, digamos 1.350067 * 10<sup>4</sup>, utilice
- 1.350067 E4 : 1.350067 E04';
-$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 or 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} debe ser un número.';
 $string['xmustnotbenumeric'] = '{$a} no puede ser un número.';
 $string['youmustenteramultiplierhere'] = 'Debe escribir un multiplicador aquí.';

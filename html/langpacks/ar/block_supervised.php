@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_supervised', language 'ar', version '3.11'.
+ * Strings for component 'block_supervised', language 'ar', version '4.1'.
  *
  * @package     block_supervised
  * @category    string
@@ -36,7 +36,7 @@ $string['allgroups'] = 'كل المجموعات';
 $string['alllessontypes'] = 'كل أنواع الدروس';
 $string['allstates'] = 'كل الولايات';
 $string['allusers'] = 'كل المستخدمين';
-$string['backtocourse'] = 'عودة إلى المقرر الدراسي';
+$string['backtocourse'] = 'عودة إلى المساق';
 $string['cannotdeleteclassroom'] = 'كانت هناك جلسات في هذا الصف. إحذف الجلسات التي تستعمل هذا الصف أولاً. يمكنك إخفاء الصف';
 $string['cannotdeletelessontype'] = 'لا يمكنك حذف نوع الدرس هذا لأنه مستعمل في الجلسات أو الاختبارات';
 $string['classroom'] = 'الصف الدراسي';
@@ -54,7 +54,7 @@ $string['editingclassroom'] = 'تحرير الصف الدراسي';
 $string['emaileditedsessionsubject'] = '{$a->sitename}: تم تحرير الجلسة في {$a->timestart}';
 $string['emailnewsessionsubject'] = '{$a->sitename}: جلسة جديدة في {$a->timestart}';
 $string['emailremovedsessionsubject'] = '{$a->sitename}: تمت إزالة الجلسة في {$a->timestart}';
-$string['emailsessioninfo'] = 'المقرر الدراسي:         {$a->course}
+$string['emailsessioninfo'] = 'المساق:         {$a->course}
 الصف:         {$a->classroom}
 المجموعة:     {$a->group}
 نوع الدرس:   {$a->lessontype}

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'fr', version '3.11'.
+ * Strings for component 'workshop', language 'fr', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -43,8 +43,10 @@ $string['allocationdone'] = 'Attribution effectuée';
 $string['allocationerror'] = 'Erreur d\'attribution';
 $string['allowedfiletypesforoverallfeedback'] = 'Types de fichier autorisés en annexe du feedback';
 $string['allowedfiletypesforoverallfeedback_help'] = 'Les types de fichiers annexés aux feedbacks peuvent être limités en indiquant une liste d\'extensions des types de fichiers autorisés. Si le champ est laissé vide, tous les types de fichiers sont autorisés.';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
 $string['allowedfiletypesforsubmission'] = 'Types de fichier autorisés pour le travail à remettre';
 $string['allowedfiletypesforsubmission_help'] = 'Les types de fichiers remis peuvent être limités en indiquant une liste d\'extensions des types de fichiers autorisés. Si le champ est laissé vide, tous les types de fichiers sont autorisés.';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = 'Tous les travaux remis ({$a})';
 $string['alreadygraded'] = 'Déjà noté';
 $string['areaconclusion'] = 'Texte de conclusion';
@@ -193,10 +195,12 @@ $string['indicator:cognitivedepth'] = 'Atelier : aspect cognitif';
 $string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Atelier.';
 $string['indicator:cognitivedepthdef'] = 'Atelier : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Atelier » (niveaux : pas de vue, vue, envoi, vue du feedback, commentaire du feedback, nouvel envoi après vue du feedback).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Atelier : aspect social';
 $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Atelier.';
 $string['indicator:socialbreadthdef'] = 'Atelier : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Atelier » (niveaux : pas de participation, participant seul, participant avec d\'autres).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Instructions pour la remise du travail';
 $string['instructreviewers'] = 'Instructions pour l\'évaluation';
@@ -215,6 +219,7 @@ Les participants peuvent remettre tous types de travaux sous forme de fichiers n
 Les travaux remis sont évalués au moyen d\'un formulaire d\'évaluation multicritère défini par l\'enseignant. Pour la phase d\'évaluation par les pairs et afin que le formulaire d\'évaluation soit bien compris, des travaux exemplaires accompagnés d\'une évaluation de référence peuvent être mis en place par l\'enseignant. Les participants ont la possibilité d\'évaluer un ou plusieurs travaux de pairs, au besoin de façon anonyme.
 
 Les participants peuvent obtenir deux notes dans l\'activité atelier : une pour le travail qu\'ils remettent, et l\'autre pour la qualité de leur évaluation des travaux de pairs. Les deux notes sont enregistrées dans le carnet de notes.';
+$string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = 'Ateliers';
 $string['myassessments'] = 'Mes évaluations';
 $string['mysubmission'] = 'Mon travail remis';
@@ -362,6 +367,7 @@ $string['submissiongradeof'] = 'Note pour le travail remis (sur {$a})';
 $string['submissionlastmodified'] = 'Dernière modification';
 $string['submissionrequiredcontent'] = 'Veuillez saisir du texte ou ajouter un fichier.';
 $string['submissionrequiredfile'] = 'Veuillez ajouter un fichier ou saisir du texte.';
+$string['submissionsallocation'] = 'Attribution des travaux remis';
 $string['submissionsettings'] = 'Réglages de remise des travaux';
 $string['submissionsreport'] = 'Rapport de remise de l\'atelier';
 $string['submissionstart'] = 'Début de la remise des travaux';

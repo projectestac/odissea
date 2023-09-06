@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'el', version '3.11'.
+ * Strings for component 'certificate', language 'el', version '4.1'.
  *
  * @package     certificate
  * @category    string
@@ -41,7 +41,7 @@ $string['borderlines'] = 'Γραμμές';
 $string['borderstyle'] = 'Εικόνα περιγράμματος';
 $string['certificate'] = 'Επαλήθευση κωδικού πιστοποιητικού:';
 $string['certificate:addinstance'] = 'Προσθήκη ενός στιγμιοτύπου πιστοποιητικού';
-$string['certificate:manage'] = 'Διαχείριση ενός στιγμιότυπου πιστοποιητικού';
+$string['certificate:manage'] = 'Διαχείριση ενός στιγμιοτύπου πιστοποιητικού';
 $string['certificate:printteacher'] = 'Εκτύπωση διδάσκοντος';
 $string['certificate:student'] = 'Ανάκτηση ενός πιστοποιητικού';
 $string['certificate:view'] = 'Εμφάνιση ενός πιστοποιητικού';
@@ -128,7 +128,7 @@ $string['letter'] = 'Γράμμα';
 $string['lockingoptions'] = 'Επιλογές κλειδώματος';
 $string['modulename'] = 'Πιστοποιητικό';
 $string['modulename_help'] = 'Το άρθρωμα αυτό επιτρέπει την δυναμική δημιουργία πιστοποιητικών με βάση προκαθορισμένες συνθήκες που ορίζονται από τον διδάσκοντα.';
-$string['modulename_link'] = 'Άρθρωμα πιστοποιητικού';
+$string['modulename_link'] = '';
 $string['modulenameplural'] = 'Πιστοποιητικά';
 $string['mycertificates'] = 'Τα πιστοποιητικά μου';
 $string['nocertificates'] = 'Δεν υπάρχουν καθόλου πιστοποιητικά';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'it', version '3.11'.
+ * Strings for component 'chat', language 'it', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -46,7 +46,7 @@ $string['chattime'] = 'Orario della chat';
 $string['compact'] = 'Compatto';
 $string['composemessage'] = 'Scrivi un messaggio';
 $string['configmethod'] = 'Il metodo chat AJAX fornisce una chat basata su AJAX che contatta il server con regolarità per ricevere gli aggiornamenti. Il metodo normale prevede che i client contattino il server per ottenere gli aggiornamenti. Il metodo normale non richiede configurazione e funziona sempre, tuttavia con molti client collegati contemporaneamente alla chat si potrebbe generare un sovraccarico sul server. Il metodo server chat per essere configurato necessita di accesso ad una shell Unix, ma è molto più veloce e scalabile.';
-$string['confignormalupdatemode'] = 'Gli aggiornamenti delle chat sono forniti in modo efficiente utilizzando la funzionalità <em>Keep-Alive</em> dell\'HTTP 1.1, tuttavia questo metodo è gravoso per il server. Un metodo di aggiornamento più avanzato è lo <em>Stream</em>. Il metodo <em>Stream</em> consente una migliore scalabilità  (analogamente al Server chat) ma il tuo server potrebbe non supportarlo.';
+$string['confignormalupdatemode'] = 'Gli aggiornamenti delle chat sono forniti in modo efficiente utilizzando la funzionalità <em>Keep-Alive</em> dell\'HTTP 1.1, tuttavia questo metodo è gravoso per il server. Un metodo di aggiornamento più avanzato è lo <em>Stream</em>. Il metodo <em>Stream</em> consente una migliore scalabilità  (analogamente al Server chat) ma il server potrebbe non supportarlo.';
 $string['configoldping'] = 'Tempo massimo per individuare la disconnessione dalla chat di un partecipante (in secondi). Rappresenta un tempo limite, in genere le disconnessioni vengono individuate molto rapidamente. Valori bassi aumentano il carico sul server. Se usi il Metodo normale, questo valore <strog>non deve essere mai inferiore</strong> a 2 * chat_refresh_room.';
 $string['configrefreshroom'] = 'Tempo di aggiornamento della chat (in secondi). Impostando un valore basso i tempi di risposta della chat saranno più brevi ma a spese di un carico molto maggiore sul server in presenza di molte connessioni contemporanee. Se utilizzi il Metodo di aggiornamento <em>Stream</em> puoi impostare un valore di aggiornamento più basso, ad esempio 2.';
 $string['configrefreshuserlist'] = 'Tempo di aggiornamento dell\'elenco dei partecipanti alla chat (in secondi)';
@@ -75,10 +75,12 @@ $string['indicator:cognitivedepth'] = 'Chat cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Chat.';
 $string['indicator:cognitivedepthdef'] = 'Chat cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dall\'attività Chat (Livelli: Nessuna visualizzazione, Visualizzazione, Invio, Visualizzazione feedback, Commento al feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Chat sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Chat.';
 $string['indicator:socialbreadthdef'] = 'Chat sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Chat (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = 'Area di input';
 $string['invalidid'] = 'Non è stato possibile trovare la chat!';
 $string['list_all_sessions'] = 'Elenca tutte le sessioni';
@@ -106,6 +108,7 @@ Le chat sono particolarmente utili per incontri di gruppo online, come ad ad ese
 * Scambi di esperienze tra studenti che svolgono attività lavorative e docenti
 * Introduzione alla chat ed al mondo del social networking per i bambini con modalità controllate e seguite
 * Sessioni di domande e risposte con invitati provenienti da posti diversi';
+$string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Chat';
 $string['neverdeletemessages'] = 'Sempre';
 $string['nextchattime'] = 'Orario della prossima chat:';
@@ -123,6 +126,7 @@ $string['notlogged'] = 'Non sei autenticato!';
 $string['oldping'] = 'Timeout disconnessione';
 $string['page-mod-chat-x'] = 'Qualsiasi pagina con chat';
 $string['pastchats'] = 'Sessioni di chat svolte';
+$string['pastsessions'] = 'Sessioni svolte';
 $string['pluginadministration'] = 'Gestione Chat';
 $string['pluginname'] = 'Chat';
 $string['privacy:metadata:chat_messages_current'] = 'Sessione chat attuale. Tali dati sono temporanei e vengono eliminati al termine della sessione.';
@@ -174,4 +178,4 @@ $string['usingchat_help'] = 'Il modulo Chat contiene alcune caratteristiche che 
 * Emozioni - È possibile inserire testo preceduto da "/me" or ":" per manifestare emozioni. Per esempio, se il tuo nome è Mario e scrivi ":ride!" o "/me ride!" nella chat apparirà "Mario ride!"
 * Campanella - È possibile inviare un suono ad una persona cliccando su "campanella" accanto al nome del destinatario. Per inviare simultaneamente il suono a tutti i partecipanti alla Chat è possibile è scrivere "beep all".
 * HTML - È possibile usare l\'HTML per inserire immagini, riprodurre suoni e modificare la dimensione ed il colore del teso.';
-$string['viewreport'] = 'Visualizza le sessioni già svolte';
+$string['viewreport'] = 'Sessioni svolte';

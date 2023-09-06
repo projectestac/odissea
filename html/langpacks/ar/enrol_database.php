@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ar', version '3.11'.
+ * Strings for component 'enrol_database', language 'ar', version '4.1'.
  *
  * @package     enrol_database
  * @category    string
@@ -42,27 +42,27 @@ $string['dbtype_desc'] = 'اسم مشغل قاعدة بيانات ADOdb، نوع
 $string['dbuser'] = 'مستخدم قاعدة البيانات';
 $string['debugdb'] = 'اكتشاف أخطاء ADOdb';
 $string['debugdb_desc'] = 'اكتشاف أخطاء اتصال ADOdb مع قاعدة البيانات الخارجية - استعمله عند ظهور صفحة فارغة عند تسجيل الدخول. لا يتناسب مع المواقع قيد التشغيل الفعلي!';
-$string['defaultcategory'] = 'التصنيف الافتراضي للمقرر الجديد';
-$string['defaultcategory_desc'] = 'التصنيف الافتراضي للمقررات الدراسية المنشأة تلقائياً. استعمله عند عدم تحديد مُعرَّف التصنيف الجديد أو تعذر العثور عليه.';
+$string['defaultcategory'] = 'التصنيف الافتراضي للمساق الجديد';
+$string['defaultcategory_desc'] = 'التصنيف الافتراضي للمساقات الدراسية المنشأة تلقائياً. استعمله عند عدم تحديد مُعرَّف التصنيف الجديد أو تعذر العثور عليه.';
 $string['defaultrole'] = 'الدور الافتراضي';
 $string['defaultrole_desc'] = 'الدور الذي سيتم منحه تلقائياً إذا لم يتم تحديد أي دور في الجدول الخارجي.';
 $string['ignorehiddencourses'] = 'تجاهل المقررات الدراسية المخفية';
 $string['ignorehiddencourses_desc'] = 'عند تمكينه، لن يتم ضم المستخدمين إلى المقررات الدراسية التي تم ضبطها غير متاحة للطلبة.';
 $string['localcategoryfield'] = 'حقل التصنيف المحلي';
-$string['localcoursefield'] = 'حقل المقرر المحلي';
+$string['localcoursefield'] = 'حقل المساق المحلي';
 $string['localrolefield'] = 'حقل الدور المحلي';
 $string['localuserfield'] = 'حقل المستخدم المحلي';
-$string['newcoursecategory'] = 'حقل تصنيف المقرر الدراسي الجديد';
-$string['newcoursefullname'] = 'حقل الاسم الكامل للمقرر الجديد';
+$string['newcoursecategory'] = 'حقل تصنيف المساق الجديد';
+$string['newcoursefullname'] = 'حقل الاسم الكامل للمساق الجديد';
 $string['newcourseidnumber'] = 'حقل مُعرَّف المساق الجديد';
-$string['newcourseshortname'] = 'حقل الاسم المختصر للمقرر الجديد';
+$string['newcourseshortname'] = 'حقل الاسم المختصر للمساق الجديد';
 $string['newcoursetable'] = 'جدول المقررات الدراسية الجديدة البعيد';
-$string['newcoursetable_desc'] = 'حدد اسم الجدول الذي يضم قائمة بالمقررات الدراسية التي ينبغي إنشاؤها تلقائياً. تركه فارغاً معناه لن يتم إنشاء أي مقرر.';
+$string['newcoursetable_desc'] = 'حدد اسم الجدول الذي يضم قائمة بالمقررات الدراسيةالتي ينبغي إنشاؤها تلقائياً. تركه فارغاً معناه لن يتم إنشاء أي مقرر.';
 $string['pluginname'] = 'قاعدة البيانات الخارجية';
-$string['pluginname_desc'] = 'يمكنك استعمال قاعدة بيانات خارجية (تقريباً بأي نوع) للسيطرة على عمليات الانضمام. من المفترض أن قاعدة بياناتك تحتوي على الأقل على حقل يضم مُعرَّف المقرر، وحقل آخر يحتوي على مُعرَّف المستخدم. ستتم مقارنتهما مع الحقول التي تختارها في جدولي المقررات الدراسية والمستخدمين المحليين.';
+$string['pluginname_desc'] = 'يمكنك استعمال قاعدة بيانات خارجية (تقريباً بأي نوع) للسيطرة على عمليات الانضمام. من المفترض أن قاعدة بياناتك تحتوي على الأقل على حقل يضم مُعرَّف المساق، وحقل آخر يحتوي على مُعرَّف المستخدم. ستتم مقارنتهما مع الحقول التي تختارها في جدولي المقررات الدراسية والمستخدمين المحليين.';
 $string['privacy:metadata'] = 'إن محلق انضمام قاعدة البيانات لا يخزن أي بيانات شخصية.';
-$string['remotecoursefield'] = 'حقل المقرر عن بعد';
-$string['remotecoursefield_desc'] = 'اسم الحقل في الجدول البعيد والذي سيتم استعماله للمقارنة من مدخلات جدول المقرر الدراسي.';
+$string['remotecoursefield'] = 'حقل المساق عن بعد';
+$string['remotecoursefield_desc'] = 'اسم الحقل في الجدول البعيد والذي سيتم استعماله للمقارنة من مدخلات جدول المساق.';
 $string['remoteenroltable'] = 'جدول انضمام المستخدم البعيد';
 $string['remoteenroltable_desc'] = 'حدد اسم الجدول الذي يحتوي على قائمة انضمامات المستخدمين. تركه فارغاً معناه عدم إجراء مزامنة على انضمامات المستخدمين.';
 $string['remoteotheruserfield'] = 'حقل آخر للمستخدم البعيد';
@@ -73,8 +73,8 @@ $string['remoteuserfield'] = 'حقل المستخدم البعيد';
 $string['remoteuserfield_desc'] = 'اسم الحقل في الجدول البعيد والذي سيتم استعماله للمقارنة من مدخلات جدول المستخدمين.';
 $string['settingsheaderdb'] = 'اتصال قاعدة البيانات الخارجي';
 $string['settingsheaderlocal'] = 'تعيين الحقل المحلي';
-$string['settingsheadernewcourses'] = 'إنشاء مقررات دراسية جديدة';
+$string['settingsheadernewcourses'] = 'إنشاء مساقات جديدة';
 $string['settingsheaderremote'] = 'مزامنة الانضمام البعيد';
 $string['syncenrolmentstask'] = 'مهمة مزامنة انضمامات قاعدة البيانات الخارجية';
-$string['templatecourse'] = 'قالب المقرر الدراسي الجديد';
-$string['templatecourse_desc'] = 'إختياري: يمكن للمقررات المنشأة تلقائياً نسخ إعداداتها من قالب مقرر. أدخل هنا الاسم المختصر للمقرر الذي سيكون بمثابة قالب.';
+$string['templatecourse'] = 'مظهر المساق الجديد';
+$string['templatecourse_desc'] = 'إختياري: يمكن للمساقات المنشأة تلقائياً نسخ إعداداتها من مظهر مساق. أدخل هنا الاسم المختصر للمساق الذي سيكون بمثابة مظهر.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'sv', version '3.11'.
+ * Strings for component 'atto_h5p', language 'sv', version '4.1'.
  *
  * @package     atto_h5p
  * @category    string
@@ -28,18 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['browserepositories'] = 'Bläddra bland lagringsplatser...';
 $string['copyrightbutton'] = 'Copyright-knapp';
 $string['downloadbutton'] = 'Tillåt nedladdning';
-$string['either'] = 'Antingen';
 $string['embedbutton'] = 'Bädda in knapp';
-$string['enterurl'] = 'URL eller inbäddningskod';
 $string['h5p:addembed'] = 'Lägg till inbäddad H5P';
 $string['h5pfile'] = 'Uppladdning av H5P-fil';
 $string['h5pfileorurl'] = 'Uppladdning av URL eller H5P-fil';
 $string['h5poptions'] = 'H5P-alternativ';
-$string['h5pproperties'] = 'H5P-egenskaper';
 $string['h5purl'] = 'H5P URL';
 $string['instructions'] = 'Du kan infoga H5P-innehåll genom att <strong>antingen</strong> ange en URL <strong>eller</strong> genom att ladda upp en H5P-fil.';
 $string['invalidh5purl'] = 'Ogiltig URL';
 $string['noh5pcontent'] = 'Inget H5P-innehåll tillagt';
-$string['or'] = 'eller';
 $string['pluginname'] = 'Infoga H5P';
 $string['privacy:metadata'] = 'Pluginmodulen atto_h5p lagrar ingen personinformation.';

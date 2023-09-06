@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'pt', version '3.11'.
+ * Strings for component 'tool_dataprivacy', language 'pt', version '4.1'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -80,7 +80,7 @@ $string['createnewdatarequest'] = 'Criar um novo pedido de dados';
 $string['createpurpose'] = 'Criar finalidade';
 $string['creationauto'] = 'Automaticamente';
 $string['creationmanual'] = 'Manualmente';
-$string['datadeletion'] = 'Apagamento de dados';
+$string['datadeletion'] = 'Eliminação de dados';
 $string['datadeletionpagehelp'] = 'Esta página lista os dados cujo período de retenção já expirou. Por favor, reveja e confirme o apagamento dos dados. Uma vez confirmado, o apagamento será processado na próxima execução da tarefa agendada "Apagar contextos expirados".';
 $string['dataprivacy:downloadallrequests'] = 'Descarregar dados exportados de todos';
 $string['dataprivacy:downloadownrequest'] = 'Descarregar os seus próprios dados exportados';
@@ -241,6 +241,8 @@ $string['pluginregistrytitle'] = 'Registo de conformidade de privacidade do mód
 $string['privacy'] = 'Privacidade';
 $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = 'Os filtros atualmente aplicados à página de solicitações de dados.';
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = 'Número de solicitações de dados que o utilizador prefere ver por página';
+$string['privacy:metadata:purpose'] = 'Informações sobre as finalidades do processamento de dados neste site.';
+$string['privacy:metadata:purpose:usermodified'] = 'O ID do utilizador que alterou a finalidade';
 $string['privacy:metadata:request'] = 'Informações de solicitações de dados pessoais (solicitações de acesso e eliminação de pedidos) feitas para este site.';
 $string['privacy:metadata:request:comments'] = 'Qualquer comentário do utilizador que acompanhe a solicitação.';
 $string['privacy:metadata:request:dpocomment'] = 'Comentários feitos pelo responsável pela privacidade em relação à solicitação.';

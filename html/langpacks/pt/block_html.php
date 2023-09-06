@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'pt', version '3.11'.
+ * Strings for component 'block_html', language 'pt', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = 'Permitir classes CSS adicionais';
-$string['configallowadditionalcssclasses'] = 'Adiciona uma opção de configuração às instâncias do bloco HTML permitindo que sejam configuradas classes CSS adicionais.';
+$string['configallowadditionalcssclasses'] = 'Adiciona uma opção de configuração às instâncias do bloco Texto permitindo que sejam configuradas classes CSS adicionais.';
 $string['configclasses'] = 'Classes CSS adicionais';
-$string['configclasses_help'] = 'O objetivo desta configuração é auxiliar na personalização ajudando a distinguir blocos HTML uns dos outros. Quaisquer classes CSS introduzidas aqui (delimitadas por espaço) serão anexadas às classes predefinidas do bloco.';
+$string['configclasses_help'] = 'O objetivo desta configuração é auxiliar na personalização do tema ajudando a distinguir blocos Texto uns dos outros. Quaisquer classes CSS inseridas aqui (delimitadas por espaço) serão anexadas às classes predefinidas do bloco.';
 $string['configcontent'] = 'Conteúdo';
-$string['configtitle'] = 'Título do bloco HTML';
-$string['html:addinstance'] = 'Adicionar um novo bloco HTML';
-$string['html:myaddinstance'] = 'Adicionar um novo bloco HTML ao Painel do utilizador';
-$string['newhtmlblock'] = '(novo bloco HTML)';
-$string['pluginname'] = 'HTML';
-$string['privacy:metadata:block'] = 'O bloco HTML armazena todos os seus dados dentro do subsistema de blocos.';
-$string['search:content'] = 'Conteúdo do bloco HTML';
+$string['configtitle'] = 'Título do bloco Texto';
+$string['html:addinstance'] = 'Adicionar um novo bloco Texto';
+$string['html:myaddinstance'] = 'Adicionar um novo bloco Texto ao Painel do utilizador';
+$string['newhtmlblock'] = '(novo bloco Texto)';
+$string['pluginname'] = 'Texto';
+$string['privacy:metadata:block'] = 'O bloco Texto armazena todos os seus dados no subsistema de blocos.';
+$string['search:content'] = 'Conteúdo do bloco Texto';

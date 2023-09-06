@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'es', version '3.11'.
+ * Strings for component 'antivirus', language 'es', version '4.1'.
  *
  * @package     antivirus
  * @category    string
@@ -30,6 +30,8 @@ $string['antiviruscommonsettings'] = 'Configuraciones de antivirus comunes';
 $string['antiviruses'] = 'Plugins de antivirus';
 $string['antivirussettings'] = 'Administrar plugins de antivirus';
 $string['configantivirusplugins'] = 'Por favor, elige los plugins de antivirus que deseas utilizar y organízalos en el orden en que serán aplicados.';
+$string['dataerrordesc'] = 'Ocurrió un error en el escáner de datos.';
+$string['dataerrorname'] = 'Error en el escáner de datos';
 $string['datainfecteddesc'] = 'Se detectaron datos infectados.';
 $string['datainfectedname'] = 'Datos infectados';
 $string['datastream'] = 'Datos';
@@ -50,16 +52,24 @@ $string['emailscannererrordetected'] = 'Ocurrió un error de escáner';
 $string['emailsubject'] = '{$a} :: Notificación de antivirus';
 $string['enablequarantine'] = 'Habilitar cuarentena';
 $string['enablequarantine_help'] = 'Si se habilita, cualquier archivo que sea detectado como virus será colocado en la carpeta de cuarentena  ([dataroot]/{$a}) para su posterior inspección. La subida a Moodle  fallará.
-Si Usted tiene en operación cualquier escaneo de virus a nivel del sistema de archivos, la carpeta de cuarentena debería de estar excluida de las revisiones del antivirus para evitar detectar los archivos en cuarentena.';
+Si usted tiene en operación cualquier escaneo de virus a nivel del sistema de archivos, la carpeta de cuarentena debería de estar excluida de las revisiones del antivirus para evitar detectar los archivos en cuarentena.';
+$string['fileerrordesc'] = 'Ocurrió un error en el escáner de archivos.';
+$string['fileerrorname'] = 'Error en el escáner de archivos';
 $string['fileinfecteddesc'] = 'Se detectó un archivo infectado.';
 $string['fileinfectedname'] = 'Archivo infectado';
 $string['notifyemail'] = 'Correo electrónico de notificación de alerta antivirus';
 $string['notifyemail_help'] = 'La dirección de correo electrónico para recibir notificaciones cuando se detecta un virus. Si se deja en blanco, se enviarán notificaciones a todos los administradores del sitio.';
+$string['notifylevel'] = 'Nivel de notificación';
+$string['notifylevel_help'] = 'Los diferentes niveles de información sobre los que quiere recibir notificaciones';
+$string['notifylevelerror'] = 'Amenazas detectadas y problemas de escaneo';
+$string['notifylevelfound'] = 'Solo amenazas detectadas';
 $string['privacy:metadata'] = 'El sistema de Antivirus no almacena información personal.';
 $string['quarantinedfiles'] = 'Archivos en cuarentena por antivirus';
 $string['quarantinedisabled'] = 'La cuarentena está desactivada. El archivo no se almacena.';
 $string['quarantinetime'] = 'Tiempo máximo de cuarentena';
 $string['quarantinetime_desc'] = 'Los archivos en cuarentena más antiguos que el período especificado serán removidos.';
 $string['taskcleanup'] = 'Limpiar archivos en cuarentena.';
+$string['threshold'] = 'Umbral para verificación de estado';
+$string['threshold_desc'] = 'Cuánto tiempo atrás para verificar los resultados anteriores en busca de errores, etc., como se informa en {$a}.';
 $string['unknown'] = 'Desconocido';
 $string['virusfound'] = '¡{$a->item} ha sido escaneado por un antivirus y ha sido marcado como infectado!';

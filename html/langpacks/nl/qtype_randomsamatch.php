@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'nl', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'nl', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -30,6 +30,7 @@ $string['nosaincategory'] = 'Er zijn geen kort antwoord vragen in de door jou ge
 $string['notenoughsaincategory'] = 'Er is/zijn slechts {$a->nosaquestions} kort antwoord vragen in de door jou gekozen categorie \'{$a->catname}\'. Kies een andere categorie of verminder het aantal door jou geselecteerde vragen.';
 $string['pluginname'] = 'Willekeurig kort antwoord koppelen';
 $string['pluginname_help'] = 'Vanuit het perspectief van de leerling lijkt deze vraag op een koppel vraag. Het verschil is dat lijst met namen of stellingen (de vragen) om te koppelen, willekeurig gehaald zijn uit de kort antwoordvragen van de geselecteerde categorie. Er moeten voldoende ongebruikte kort antwoordvragen in de categorie aanwezig zijn, anders zal er een foutmelding getoond worden.';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = 'Toevoegen van een willekeurig kort antwoord  koppelen-vraag';
 $string['pluginnameediting'] = 'Bewerken van een willekeurig kort antwoord  koppelen-vraag';
 $string['pluginnamesummary'] = 'Zoals een koppelvraag, maar willekeurig gemaakt uit de kort antwoordvragen van een bepaalde categorie.';

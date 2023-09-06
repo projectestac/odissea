@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'ca', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'ca', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = 'Genera';
 $string['newsetwildcardvalues'] = 'conjunt(s) nou(s) valors de comodi(ns)';
 $string['pluginname'] = 'Calculada simple';
 $string['pluginname_help'] = 'Les preguntes de càlcul senzilles habiliten la creació de preguntes numèriques utilitzant targetes que són substituïdes amb valors individuals quan es comença el qüestionari. Les preguntes de càlcul senzilles ofereixen les característiques més utilitzades en preguntes de càlcul amb la creació d\'interfícies simples.';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta calculada simple.';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de càlcul senzilla';
 $string['pluginnamesummary'] = 'Una versió més simple de les preguntes de càlcul que tenen preguntes numèriques però en les quals els números s\'agafen de forma aleatòria d\'un conjunt del qüestionari.';

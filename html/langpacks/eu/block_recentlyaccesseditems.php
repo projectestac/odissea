@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recentlyaccesseditems', language 'eu', version '3.11'.
+ * Strings for component 'block_recentlyaccesseditems', language 'eu', version '4.1'.
  *
  * @package     block_recentlyaccesseditems
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['moreitems'] = 'Erakutsi elementu gehiago';
 $string['noitems'] = 'Ez dago duela gutxiko elementurik';
 $string['pluginname'] = 'Duela gutxi bisitatutako elementuak';
 $string['privacy:metadata:block_recentlyaccesseditemstablesummary'] = 'Duela gutxi bisitatutako ikastaroak blokeak informazioa biltzen du erabiltzaileak berriki bisitatu dituen elementuez';

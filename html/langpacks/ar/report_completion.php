@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'ar', version '3.11'.
+ * Strings for component 'report_completion', language 'ar', version '4.1'.
  *
  * @package     report_completion
  * @category    string
@@ -26,15 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clicktomarkusercomplete'] = 'أنقر لتأشير المستخدم على أنه مكتمل';
-$string['completion:view'] = 'معاينة تقرير إكمال المقرر الدراسي';
+$string['completion:view'] = 'معاينة تقرير إكمال المساق';
 $string['completiondate'] = 'تاريخ الإتمام';
 $string['eventreportviewed'] = 'تقرير إكمال تمت معاينته';
 $string['eventuserreportviewed'] = 'تقرير إكمال مستخدم تمت معاينته';
 $string['id'] = 'المُعرَّف';
 $string['name'] = 'الاسم';
 $string['nocapability'] = 'تعذر الوصول إلى تقرير إكمال المستخدم';
-$string['page-report-completion-index'] = 'تقرير إكمال المقرر الدراسي';
-$string['page-report-completion-user'] = 'تقرير إكمال المستخدم للمقرر';
+$string['page-report-completion-index'] = 'تقرير إكمال المساق';
+$string['page-report-completion-user'] = 'تقرير إكمال المستخدم للمساق';
 $string['page-report-completion-x'] = 'أي تقرير إكمال';
-$string['pluginname'] = 'إكمال المقرر الدراسي';
-$string['privacy:metadata'] = 'تقرير إكمال المقرر الدراسي يظهر فقط البيانات المحفوظة في مواضع أخرى.';
+$string['pluginname'] = 'إكمال المساق';
+$string['privacy:metadata'] = 'تقرير إكمال المساق يظهر فقط البيانات المحفوظة في مواضع أخرى.';

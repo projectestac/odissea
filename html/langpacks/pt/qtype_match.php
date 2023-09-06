@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'pt', version '3.11'.
+ * Strings for component 'qtype_match', language 'pt', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -47,5 +47,7 @@ $string['privacy:metadata'] = 'O módulo Pergunta do tipo Correspondência permi
 $string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
 $string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das perguntas é \'Interativo com múltiplas tentativas\' ou \'Modo adaptável\'.';
 $string['privacy:preference:shuffleanswers'] = 'Se as respostas devem, ou não, ser baralhadas automaticamente.';
+$string['regradeissuenumchoiceschanged'] = 'O número de opções foi alterado.';
+$string['regradeissuenumstemschanged'] = 'O número de sub-perguntas foi alterado.';
 $string['shuffle'] = 'Baralhar';
 $string['shuffle_help'] = 'Se ativar esta opção, a ordem das perguntas é definida aleatoriamente a cada nova tentativa, tendo em conta que "Baralhar perguntas" também se encontra ativa nas configurações do teste. Numa pergunta de Correspondência, apenas as perguntas são afetadas por este parâmetro. As opções de resposta serão sempre baralhadas.';

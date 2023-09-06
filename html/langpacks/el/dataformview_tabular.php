@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataformview_tabular', language 'el', version '3.11'.
+ * Strings for component 'dataformview_tabular', language 'el', version '4.1'.
  *
  * @package     dataformview_tabular
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tabular';
-$string['table'] = 'Σχέδιο πίνακα';
+$string['table'] = 'Σχεδιασμός πίνακα';

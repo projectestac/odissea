@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'eu', version '3.11'.
+ * Strings for component 'error', language 'eu', version '4.1'.
  *
  * @package     error
  * @category    string
@@ -158,6 +158,7 @@ $string['cannotsetupcapformod'] = 'Ezin dira gaitasunak esleitu honentzat: {$a}'
 $string['cannotsetupcapforplugin'] = 'Ezin dira gaitasunak esleitu honentzat: {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Ezin dira ikastaroak erakutsi/ezkutatu {$a} kategorian.';
 $string['cannotsignup'] = 'Ezin duzu konturik sortu dagoeneko saioa hasi duzulako {$a} gisa.';
+$string['cannotswitcheditmodeon'] = 'Ezin izan da edizio-modua aktibatu';
 $string['cannotunassigncap'] = 'Ezin izan zaio {$a->role} rolari zaharkitutako {$a->cap} gaitasuna kendu.';
 $string['cannotunassignrolefrom'] = 'Ezin zaio erabiltzaie honi {$a} ID-a duen rola kendu';
 $string['cannotunzipfile'] = 'Ezin da fitxategia deskonprimatu';
@@ -336,6 +337,7 @@ $string['invalidcourseformat'] = 'Ikastaro-formatu baliogabea';
 $string['invalidcourseid'] = 'Ikastaroaren ID baliogabea ari zara erabiltzen';
 $string['invalidcourselevel'] = 'Testuinguru-maila ez da egokia';
 $string['invalidcoursemodule'] = 'Ikastaro-moduluaren ID-a baliogabea da';
+$string['invalidcoursemoduleid'] = 'Ikastaro-moduluaren ID baliogabea: {$a}';
 $string['invalidcoursenameshort'] = 'Ikastaroaren izen laburra baliogabea da';
 $string['invaliddata'] = 'Bidalitako data ez da egokia';
 $string['invaliddatarootpermissions'] = 'Baimen baliogabeak antzeman dira direktorioa sortzen saiatzean. Gaitu arazketa xehetasun gehiago lortzeko.';
@@ -410,6 +412,7 @@ $string['messagingdisable'] = 'Mezularitza desgaituta dago gune honetan';
 $string['mimetexisnotexist'] = 'Zure sistema ez dago mimeTeX exekutatzeko konfiguratuta. <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip</a> helbidetik C iturburua eskuratu behar duzu, berau konpilatu eta exekutagarria zure guneko /filter/tex/ direktorioan jarri beharko zenuke.';
 $string['mimetexnotexecutable'] = 'mimetex pertsonalizatua ez da exekutagarria!';
 $string['missing_moodle_backup_xml_file'] = 'Segurtasun-kopian XML fitxategia falta da: {$a}';
+$string['missingcategoryrole'] = 'Ezin izan zaio esleitu rola erabiltzaileari: kategoriarentzako rola falta da.';
 $string['missingfield'] = '"{$a}" eremua falta da';
 $string['missingkeyinsql'] = 'ERROREA: kontsultan "{$a}" parametroa falta da';
 $string['missingparam'] = 'Behar den ({$a}) parametroa falta da';
@@ -456,6 +459,7 @@ $string['nonmeaningfulcontent'] = 'Eduki esaguratsurik ez';
 $string['noparticipants'] = 'Ez da partaiderik aurkitu ikastaro honetarako';
 $string['noparticipatorycms'] = 'Sentitzen dugu, baina ez duzu ikastaroez informatzeko partaidetza-modulurik';
 $string['nopermissions'] = 'Sentitzen dugu, baina oraingoz ez duzu hori egiteko baimenik ({$a}).';
+$string['nopermissiontoaccesspage'] = 'Ez duzu orri honetara sartzeko baimenik.';
 $string['nopermissiontocomment'] = 'Ezin duzu iruzkinik gehitu';
 $string['nopermissiontodelentry'] = 'Ezin duzu iruzkin hau ezabatu!';
 $string['nopermissiontoeditcomment'] = 'Ezin dituzu beste pertsonen iruzkinak editatu!';
@@ -489,6 +493,8 @@ $string['oauth2upgradetokenerror'] = 'Ezin izan da OAuth 2 tokena eguneratu. Urr
 $string['onlyadmins'] = 'Kudeatzaileek baino ezin dute hori egin.';
 $string['onlyeditingteachers'] = 'Edizio-baimena duten irakasleek baino ezin dute hori egin.';
 $string['onlyeditown'] = 'Zeure informazioa baino ezin duzu editatu';
+$string['opensslsealerror'] = 'OpenSSLk ezin ditu datuak zigilatu';
+$string['opensslsignerror'] = 'OpenSSLk ezin ditu datuak sinatu';
 $string['orderidnotfound'] = '{$a} ordenatze-IDa ez da aurkitu';
 $string['pagenotexist'] = '<p>Ezohiko errore bat gertatu da ez dagoen orri batera sartzeko saiakera egitean:</p>{$a}';
 $string['pagenotexisttitle'] = '404 Errorea: Fitxategia ez da aurkitu';
@@ -527,6 +533,9 @@ $string['sendmessage'] = 'Bidali mezua';
 $string['sendmessagesent'] = 'Eskerrik asko honi buruzko zure feedbackagatik:<br>{$a}';
 $string['serverconnection'] = 'Errorea zerbitzariarekin konektatzean';
 $string['servicedonotexist'] = 'Zerbitzua ez da existitzen';
+$string['sessioncannotobtainlock'] = '<p>Ezin izan da {$a->id} IDa duen saioaren blokeoa {$a->acquiretimeout} eskuratu.</p>
+<p>Ziurrenik beste nabigatzailearen beste fitxa bateko orri bat ({$a->whohaslock}) oraindik martxan egongo da, edo errore baten ondorioz ez du blokeoa behar bezala askatu.</p>
+<p>Saioaren blokeoaren denbora-muga ({$a->lockexpire}) iritsi arte itxaron dezakezu edo zure nabigatzailearen saioa berrabiarazi dezakezu. Errore hau errepikatzen bada, jarri zaitez harremanetan zure guneko kudeatzailearekin.</p>';
 $string['sessioncookiesdisable'] = 'require_key_login() funtzioaren erabilera ezegokia - saioaren cookie-ak desgaituta egon behar dira!';
 $string['sessiondiskfull'] = 'Saioen partizioa beteta dago. Une honetan ezin zara sartu. Mesedez kudeatzaileari jakinarazi.';
 $string['sessionerroruser'] = 'Saioaren denbora tartea amaitu da. Sar zaitez berriro, mesedez.';
@@ -566,6 +575,7 @@ $string['unknowcontext'] = 'Hau ({$a}) testuinguru ezezaguna da get_child_contex
 $string['unknowformat'] = 'Formatu ezezaguna ({$a})';
 $string['unknownbackupexporterror'] = 'Errore ezezaguna inportatzeko informazioa prestatzean';
 $string['unknownblockregion'] = '\'{$a}\' bloke-eremua ez da onartzen orri honetan.';
+$string['unknowncategory'] = '"{$a}" kategoriaren ID zenbakiaren kategoria ezezaguna';
 $string['unknowncontext'] = 'Hau testuinguru ezezaguna da.';
 $string['unknowncourse'] = 'Ez dago "{$a}" izeneko ikastarorik';
 $string['unknowncourseidnumber'] = 'Ikastaroaren ID ezezaguna: "{$a}"';
@@ -597,6 +607,7 @@ $string['useradminodelete'] = 'Kudeatzaileen kontuak ezin dira ezabatu.';
 $string['userautherror'] = 'Autentifikazio-plugin ezezaguna';
 $string['userauthunsupported'] = 'Auth plugina ez da hemen onartzen';
 $string['useremailduplicate'] = 'Bikoiztutako helbidea';
+$string['userisfilteredout'] = 'Erabiltzaile hau ez dator bat iragazkia eta taularen hobespenekin!';
 $string['usermustbemnet'] = 'MNET sarbide-kontrolerako zerrendako erabiltzaileak urruneko MNET-eko erabiltzaileak izan behar dira';
 $string['usernamelowercase'] = 'Erabiltzailearen izena letra xehez idatzi behar da';
 $string['usernotaddederror'] = 'Erabiltzailea ez da gehitu - errorea';

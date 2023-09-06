@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'de', version '3.11'.
+ * Strings for component 'cachestore_file', language 'de', version '4.1'.
  *
  * @package     cachestore_file
  * @category    string
@@ -25,8 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['asyncpurge'] = 'Verzeichnis asynchron löschen';
+$string['asyncpurge_help'] = 'Wenn diese Option aktiviert ist, wird ein neues Verzeichnis mit Cache-Revision erstellt und das alte Verzeichnis wird asynchron über eine geplante Task gelöscht.';
 $string['autocreate'] = 'Verzeichnis automatisch anlegen';
 $string['autocreate_help'] = 'Nach der Aktivierung wird der angegebene Pfad automatisch erstellt sofern er noch nicht existiert.';
+$string['lockwait'] = 'Maximale Sperrwartezeit';
+$string['lockwait_help'] = 'Die maximale Wartezeit (in Sekunden) auf eine exklusive Sperre, bevor ein Cache-Schlüssel gelesen oder geschrieben wird. Dies wird nur für Cache-Definitionen verwendet, für die eine Lese- oder Schreibsperre erforderlich ist.';
 $string['path'] = 'Cache-Pfad';
 $string['path_help'] = 'Das Verzeichnis wird zur Ablage von Dateien des Cache-Speichers verwendet. Falls der Eintrag leer bleibt (default) wird automatisch ein Verzeichnis in moodledata angelegt. Damit kann ein Verzeichnis deklariert werden, in dem Daten abgelegt werden, um sie mit grosser Leistungsfähigkeit (z.B. memory) zu nutzen.';
 $string['pluginname'] = 'Datei-Cache';
@@ -39,3 +43,4 @@ Dateitransaktionen können dadurch beschleunigt werden. Es kann jedoch auch an d
 Empfohlen wird dies nunmehr nur wenn folgendes zutrifft:<br />
 - Wenn Sie sich sicher sind, das die Zahl der Werte im Cache gering genug ist, um nicht das Dateisystem zu sehr zu beanspruchen. <br />
 - Die gecachten Daten sind nicht zu umfangreich. Solte dies jedoch der Fall sein, ist die Standardeinstellung (default) die bessere Option, um Probleme zu vermeiden.';
+$string['task_asyncpurge'] = 'Alte Cache-Revisionsverzeichnisse des Dateispeichers asynchron löschen';

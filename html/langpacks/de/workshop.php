@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'de', version '3.11'.
+ * Strings for component 'workshop', language 'de', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -43,8 +43,10 @@ $string['allocationdone'] = 'Zuordnung erledigt';
 $string['allocationerror'] = 'Zuordnungsfehler';
 $string['allowedfiletypesforoverallfeedback'] = 'Erlaubte Dateitypen für Feedbackanhänge';
 $string['allowedfiletypesforoverallfeedback_help'] = 'Die erlaubten Dateitypen für das Feedback können über eine kommagetrennte Liste von Dateitypen eingeschränkt werden. Wenn die Liste leer ist, sind alle Dateitypen zugelassen.';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
 $string['allowedfiletypesforsubmission'] = 'Erlaubte Dateitypen für Dateianhänge zur Einreichung';
 $string['allowedfiletypesforsubmission_help'] = 'Die erlaubten Dateitypen für Dateianhänge zur Einreichung können über eine kommagetrennte Liste von Dateitypen eingeschränkt werden. Wenn die Liste leer ist, sind alle Dateitypen zugelassen.';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = 'Alle Einreichungen ({$a})';
 $string['alreadygraded'] = 'Bereits bewertet';
 $string['areaconclusion'] = 'Abschlusstext';
@@ -99,7 +101,7 @@ $string['conclusion'] = 'Abschluss';
 $string['conclusion_help'] = 'Der Abschlusstext wird Teilnehmer/innen am Ende der gegenseitigen Beurteilung angezeigt. Er kann ein Gesamt-Feedback, eine Zusammenfassung oder Anregungen für nächste Schritte (z.B. verfassen eines Blog-Beitrages zu den gesammelten Erfahrungen) enthalten.';
 $string['configexamplesmode'] = 'Standardmodus für Beispielbeurteilungen in gegenseitigen Beurteilungen';
 $string['configgrade'] = 'Standardwert max. Einreichungspunktzahl in gegenseitigen Beurteilungen';
-$string['configgradedecimals'] = 'Standardanzahl von Nachkommastellen bei der Anzeige von Punkten.';
+$string['configgradedecimals'] = 'Anzahl von Nachkommastellen, die in Bewertungen angezeigt werden';
 $string['configgradinggrade'] = 'Standardwert für max. Bewertungspunktzahl für Beurteilungen in gegenseitigen Beurteilungen';
 $string['configmaxbytes'] = 'Standardwert für die maximale Dateigröße bei Einreichungen für alle gegenseitigen Beurteilungen dieser Website (vorbehaltlich Kurseinstellungen und anderen lokale Einstellungen)';
 $string['configstrategy'] = 'Standardwert für Beurteilungsart für gegenseitige Beurteilungen';
@@ -171,7 +173,7 @@ $string['givengrades'] = 'Vergebene Bewertungen';
 $string['grade_grading_name'] = 'Beurteilung';
 $string['grade_submission_name'] = 'Einreichung';
 $string['gradecalculated'] = 'Berechnete Bewertung für Einreichung';
-$string['gradedecimals'] = 'Dezimalstellen bei Punkten';
+$string['gradedecimals'] = 'Nachkommastellen in Bewertungen';
 $string['gradegivento'] = '&gt;';
 $string['gradeinfo'] = 'Bewertung: {$a->received} von {$a->max}';
 $string['gradeitemassessment'] = '{$a->workshopname} (Beurteilung)';
@@ -193,10 +195,12 @@ $string['indicator:cognitivedepth'] = 'Gegenseitige Beurteilung kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer gegenseitigen Beurteilungsaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Gegenseitige Beurteilung kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die gegenseitigen Beurteilungsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen, Feedback kommentieren, Beiträge nach Feedback überarbeiten).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gegenseitige Beurteilung sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer gegenseitigen Beurteilungsaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Gegenseitige Beurteilung sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die gegenseitige Beurteilungsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Anleitungen für die Einreichung';
 $string['instructreviewers'] = 'Hinweise zur Beurteilung';
@@ -217,6 +221,7 @@ Die Einreichungen werden anhand eines von dem/der Trainer/in festgelegten Beurte
 Hinweis: Es müssen nicht alle Schritte aktiviert werden.
 
 Die Teilnehmer/innen erhalten in einer gegenseitigen Beurteilung zwei Bewertungen - eine Bewertung für ihre Einreichung und eine Bewertung für die Beurteilung der Einreichungen ihrer Kollegen. Beide Noten werden in den Bewertungen festgehalten.';
+$string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = 'Gegenseitige Beurteilungen';
 $string['myassessments'] = 'Meine Beurteilungen';
 $string['mysubmission'] = 'Meine Einreichung';
@@ -294,7 +299,7 @@ $string['privacy:metadata:reviewerid'] = 'ID der Person, die die Beurteilung abg
 $string['privacy:metadata:strategy'] = 'Name des Bewertungsstratgieplugins, das Datensätze auswertet';
 $string['privacy:metadata:submissioncontent'] = 'Inhalt der Einreichung';
 $string['privacy:metadata:submissioncontentformat'] = 'Textformat des Einreichungsinhalts';
-$string['privacy:metadata:submissiongrade'] = 'Zusammengefasste Bewertung der Einreichung als Dezimalzahl zwischen 0.. 100';
+$string['privacy:metadata:submissiongrade'] = 'Zusammengefasste Bewertung der Einreichung als Dezimalzahl zwischen 0..100';
 $string['privacy:metadata:submissiongradeover'] = 'Manuell angepasster Wert der zusammengefassten Bewertung';
 $string['privacy:metadata:submissionid'] = 'ID der Einreichung';
 $string['privacy:metadata:submissiontitle'] = 'Titel der Einreichung';
@@ -364,6 +369,7 @@ $string['submissiongradeof'] = 'Bewertung für die Einreichung (von {$a})';
 $string['submissionlastmodified'] = 'Zuletzt bearbeitet';
 $string['submissionrequiredcontent'] = 'Text eingeben oder Datei hinzufügen';
 $string['submissionrequiredfile'] = 'Datei hinzufügen oder Text eingeben';
+$string['submissionsallocation'] = 'Zuteilung der Einreichungen';
 $string['submissionsettings'] = 'Einstellungen Einreichungen';
 $string['submissionsreport'] = 'Einreichungsübersicht für gegenseitige Beurteilung';
 $string['submissionstart'] = 'Einreichungen ab';

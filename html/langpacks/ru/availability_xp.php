@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_xp', language 'ru', version '3.11'.
+ * Strings for component 'availability_xp', language 'ru', version '4.1'.
  *
  * @package     availability_xp
  * @category    string
@@ -27,9 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Запретить доступ пользователя, не достигшего необходимого уровня.';
 $string['invalidlevel'] = 'Неверный уровень';
+$string['levelconditionoperator'] = 'Оператор условия уровня';
 $string['levelgreaterorequalto'] = 'Уровень равен или больше';
+$string['levelis'] = 'Уровень';
+$string['levelnexactlynotrequiredtoaccess'] = 'Ваш уровень не {$a}.';
+$string['levelnexactlyrequiredtoaccess'] = 'Ваш точный уровень - {$a}.';
 $string['levelnnotrequiredtoaccess'] = 'Ваш уровень - не {$a} или больше.';
 $string['levelnrequiredtoaccess'] = 'Ваш уровень - {$a} или больше.';
+$string['levelnumber'] = 'Номер уровня';
+$string['opequalto'] = 'строго равен';
+$string['opgreaterorequalto'] = 'больше или равен';
 $string['pluginname'] = 'Имеющийся уровень';
 $string['privacy:metadata'] = 'Плагин не хранит никаких персональных данных';
 $string['title'] = 'Уровень';

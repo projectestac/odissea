@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'es', version '3.11'.
+ * Strings for component 'block_progress', language 'es', version '4.1'.
  *
  * @package     block_progress
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activity_completion'] = 'actividad realizada';
 $string['addallcurrentitems'] = 'Añadir todas las actividades/recursos';
 $string['answered'] = 'contestada';
+$string['aspirelist'] = 'Lista de recurso Aspire';
 $string['assessed'] = 'evaluada';
 $string['assign'] = 'Tarea';
 $string['assignment'] = 'Tarea';
@@ -38,6 +39,7 @@ $string['attempted_colour_title'] = 'Color de Intentado';
 $string['awarded'] = 'otorgada';
 $string['bigbluebuttonbn'] = 'Big Blue Button';
 $string['book'] = 'Libro';
+$string['cachedef_cachedlogs'] = 'Cacheo de consulta de bitácora de Barra de Progreso';
 $string['certificate'] = 'Certificado';
 $string['chat'] = 'Chat';
 $string['choice'] = 'Consulta';
@@ -49,14 +51,26 @@ $string['config_header_expected'] = 'Esperada para';
 $string['config_header_icon'] = 'Icono';
 $string['config_header_locked'] = 'Bloquear a fecha límite';
 $string['config_header_monitored'] = 'Monitorizada';
+$string['config_header_showsubmitted'] = 'Mostrar acción enviado con anterioridad';
 $string['config_icons'] = 'Usar iconos en la barra';
+$string['config_longbars'] = 'Como presentar barras largas';
 $string['config_now'] = 'Usar';
 $string['config_orderby'] = 'Ordenar elementos de la barra por';
 $string['config_orderby_course_order'] = 'Ordenación en curso';
 $string['config_orderby_due_time'] = '"Esperado por" fecha y hora';
 $string['config_percentage'] = 'Mostrar porcentaje a los alumnos';
+$string['config_scroll'] = 'Deslizar';
+$string['config_squeeze'] = 'Comprimir';
 $string['config_title'] = 'Título alternativo';
+$string['config_warning_loglifetime'] = 'Advertencia: Las bitácoras son borradas después de {$a} día(s). Las acciones que dependen de vistas serán afectadas por esto.';
+$string['config_warning_logstores'] = 'Advertencia: Las bitácoras están deshabilitadas por lo que las acciones que dependen de vistas no serán revisadas.';
+$string['config_wrap'] = 'Dar-la-vuelta';
+$string['coursenametoshow'] = 'Nombre del curso a mostrarse en el Tablero';
+$string['cross'] = 'Cruz';
 $string['data'] = 'Base de Datos';
+$string['defaultlongbars'] = 'Presentación por defecto para barras largas';
+$string['dmelearn'] = 'Digital Media e-Learning';
+$string['equella'] = 'Equella';
 $string['feedback'] = 'Retroalimentación';
 $string['finished'] = 'terminada';
 $string['flashcardtrainer'] = 'Entrenador de Flashcards';
@@ -66,19 +80,25 @@ $string['fullname'] = 'Nombre completo del curso';
 $string['futureNotAttempted_colour'] = '#025187';
 $string['futurenotattempted_colour_descr'] = 'Código de color HTML para los elementos futuros que no se han intentado';
 $string['futurenotattempted_colour_title'] = 'Color de futuro intento';
+$string['geogebra'] = 'Geogebra';
 $string['glossary'] = 'Glosario';
 $string['graded'] = 'calificada';
 $string['hotpot'] = 'Hot Potatoes';
 $string['how_group_works'] = 'Cómo se ven los trabajos en grupo';
+$string['how_group_works_help'] = '<p>El seleccionar un grupo limitará la visibilidad de este bloque a solamente dicho grupo.</p>';
+$string['how_longbars_works'] = 'Como se presentan las barras largas';
 $string['how_ordering_works'] = 'Cómo ordenar trabajos';
 $string['hsuforum'] = 'Foro avanzado';
 $string['imscp'] = 'Paquete de contenido IMS';
+$string['jclic'] = 'JClic';
 $string['journal'] = 'Diario';
 $string['lastonline'] = 'Última online';
 $string['lesson'] = 'Lección';
+$string['lti'] = 'Herramienta externa';
 $string['marked'] = 'marcada';
 $string['mouse_over_prompt'] = 'Pasar el ratón por encima para ver información';
 $string['no_blocks'] = 'No hay  bloques de barra de progreso definidos para tu curso';
+$string['no_courses'] = 'Usted no está inscrito en ningún curso. Solamente se mostrarán barras de cursos inscritos.';
 $string['no_events_config_message'] = 'No hay actividades o recursos de los que monitorizar su progreso. Cree algunas actividades y/o recursos y después configure este bloque.';
 $string['no_events_message'] = 'No se están monitorizando actividades ni recursos. Use la configuración para iniciar la monitorización.';
 $string['no_visible_events_message'] = 'Ninguno de los eventos monitorizados está actualmente visible.';
@@ -86,9 +106,12 @@ $string['notAttempted_colour'] = '#C71C22';
 $string['notattempted_colour_descr'] = 'Código de color HTML para los elementos actuales que no se han intentado';
 $string['notattempted_colour_title'] = 'Color de no Intentado';
 $string['now_indicator'] = 'AHORA';
+$string['ouwiki'] = 'OU Wiki';
 $string['overview'] = 'Vista general de alumnos';
 $string['page'] = 'Página';
+$string['panopto'] = 'Video Panopto';
 $string['passed'] = 'pasada';
+$string['passedby'] = 'pasado por fecha límite';
 $string['passedscorm'] = 'pasada';
 $string['pluginname'] = 'Barra de Progreso';
 $string['posted_to'] = 'publicado a';
@@ -96,7 +119,9 @@ $string['progress'] = 'Progreso';
 $string['progress:addinstance'] = 'Añadir una nueva Barra de Progreso';
 $string['progress:myaddinstance'] = 'Añadir un bloque de Barra de Progreso en la página principal';
 $string['progress:overview'] = 'Ver vista general de las Barras de Progreso para todos los estudiantes';
+$string['progress:showbar'] = 'Mostrar la barra dentro del bloque de Barra de Progreso';
 $string['progressbar'] = 'Barra de Progreso';
+$string['questionnaire'] = 'Cuestionario (Questionnaire)';
 $string['quiz'] = 'Cuestionario';
 $string['recordingsbn'] = 'Grabaciones BBB';
 $string['resource'] = 'Archivo';
@@ -104,12 +129,22 @@ $string['responded_to'] = 'respondido a';
 $string['scorm'] = 'SCORM';
 $string['selectitemstobeadded'] = 'Seleccionar actividades/recursos';
 $string['shortname'] = 'Nombre corto del curso';
+$string['showallinfo'] = 'Mostrar toda la información';
+$string['showinactive'] = 'Mostrar estudiantes inactivos en vista general';
+$string['subcourse'] = 'Subcurso';
 $string['submitted'] = 'enviado';
+$string['submittednotcomplete_colour'] = '#FFCC00';
+$string['submittednotcomplete_colour_descr'] = 'Código HTML del color para los elementos que han sido enviados, pero que todavía no han sido completados.';
+$string['submittednotcomplete_colour_title'] = 'Color para enviado pero todavía no completado';
+$string['survey'] = 'Encuesta predefinida';
+$string['tick'] = 'Palomita';
 $string['time_expected'] = 'Esperado';
 $string['turnitintool'] = 'Herramienta Turnitin';
+$string['turnitintooltwo'] = 'Herramienta 2 de Turnitin';
 $string['url'] = 'URL';
 $string['video'] = 'Vídeo';
 $string['viewed'] = 'visto';
+$string['vpl'] = 'Laboratorio de Programación Virtual';
 $string['what_actions_can_be_monitored'] = '¿Qué acciones pueden monitorizarse?';
 $string['what_actions_can_be_monitored_help'] = '<p>Se pueden monitorizar diferentes actividades y recursos.</p> <p>Debido a que las diferentes actividades y recursos se usan de forma diferente, lo que se monitoriza para cada módulo varía. Por ejemplo, para las tareas se pueden monitorizar los envíos; para los cuestionarios serán monitorizados los intentos; en los foros,  las publicaciones; en las consultas, las respuestas y en los recursos, la visualización de los mismos.</p>
 <p>Para los módulos de tareas y cuestionarios, el concepto de aprobar es con respecto a la "Calificación de aprobado" que se configuraron en el libro de calificaciones. <a href="http://docs.moodle.org/en/Grade_items#Activity-based_grade_items" target="_blank">Más ayuda...</a></p>';
@@ -135,6 +170,8 @@ $string['what_locked_means_help'] = 'Cuando en una actividad, en su propia confi
 Para bloquear la Barra de Progreso a la fecha límite de una actividad, debe tener disponible y estar definida una fecha límite. Si la fecha límite está bloqueada, al cambiar la fecha límite en la configuración de la actividad, automáticamente se cambiará la fecha asociada con dicha actividad en la Barra de Progreso.
 
 Cuando una actividad no está bloqueada a la fecha límite de la actividad, cambiar la fecha y hora en la configuración de la Barra de Progreso no afecta a la fecha límite de la actividad.';
+$string['what_show_submitted_means'] = 'Qué significa \'enviado antes de acción\'.';
+$string['what_show_submitted_means_help'] = 'Algunas actividades les permiten a los estudiantes que hagan envíos. Cuando los estudiantes han enviado, pero la acción final (por ejemplo, calificar) para la actividad no ha sido completada, la Barra de Progreso cambiará de color para mostrar que se ha hecho un envío.';
 $string['why_display_now'] = '¿Por qué desearía ocultar/mostrar el indicador AHORA?';
 $string['why_display_now_help'] = '<p>No todos los cursos están orientados a que se terminen las tareas en un tiempo determinado. Algunos cursos pueden tener inscripción abierta, que permite a los estudiantes inscribirse y completar el curso cuando puedan.</p> <p>Para usar la Barra de Progreso como herramienta en estos cursos, debe crear fechas de "Esperado para" a muy largo plazo y configurar la opción de "Usar AHORA" a "NO".</p>';
 $string['why_set_the_title'] = '¿Porqué desearía configurar el título de instancia del bloque?';
@@ -147,3 +184,4 @@ $string['why_use_icons'] = '¿Por qué desearía usar iconos?';
 $string['why_use_icons_help'] = '<p>Puede que desee añadir iconos en forma de marcas en la Barra de Progreso, para hacer este bloque visualmente más accesible a estudiantes con daltonismo.</p> <p>También puede conseguir que el significado del bloque sea más claro en caso de que considere que los colores no son intuitivos por motivos culturales o personales.</p>';
 $string['wiki'] = 'Wiki';
 $string['workshop'] = 'Taller';
+$string['wrapafter'] = 'Al dar-la-vuelta, limitar filas a';

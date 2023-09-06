@@ -45,7 +45,6 @@ require_once(__DIR__ . '/../../config.php');
 require_once($CFG->dirroot . '/mod/quiz/locallib.php');
 require_once($CFG->dirroot . '/mod/quiz/addrandomform.php');
 require_once($CFG->dirroot . '/question/editlib.php');
-require_once($CFG->dirroot . '/question/category_class.php');
 
 // These params are only passed from page request to request while we stay on
 // this page otherwise they would go in question_edit_setup.
@@ -60,6 +59,7 @@ $defaultcategory = $defaultcategoryobj->id . ',' . $defaultcategoryobj->contexti
 $quizhasattempts = quiz_has_attempts($quiz->id);
 
 $PAGE->set_url($thispageurl);
+$PAGE->set_secondary_active_tab("mod_quiz_edit");
 
 // Get the course object and related bits.
 $course = $DB->get_record('course', array('id' => $quiz->course), '*', MUST_EXIST);
@@ -68,17 +68,6 @@ $structure = $quizobj->get_structure();
 
 // You need mod/quiz:manage in addition to question capabilities to access this page.
 require_capability('mod/quiz:manage', $contexts->lowest());
-
-// Log this visit.
-$params = array(
-    'courseid' => $course->id,
-    'context' => $contexts->lowest(),
-    'other' => array(
-        'quizid' => $quiz->id
-    )
-);
-$event = \mod_quiz\event\edit_page_viewed::create($params);
-$event->trigger();
 
 // Process commands ============================================================.
 
@@ -169,10 +158,19 @@ if (optional_param('savechanges', false, PARAM_BOOL) && confirm_sesskey()) {
     redirect($afteractionurl);
 }
 
+// Log this visit.
+$event = \mod_quiz\event\edit_page_viewed::create([
+    'courseid' => $course->id,
+    'context' => $contexts->lowest(),
+    'other' => [
+        'quizid' => $quiz->id
+    ]
+]);
+$event->trigger();
+
 // Get the question bank view.
 $questionbank = new mod_quiz\question\bank\custom_view($contexts, $thispageurl, $course, $cm, $quiz);
 $questionbank->set_quiz_has_attempts($quizhasattempts);
-$questionbank->process_actions($thispageurl, $cm);
 
 // End of process commands =====================================================.
 
@@ -183,6 +181,7 @@ $output = $PAGE->get_renderer('mod_quiz', 'edit');
 
 $PAGE->set_title(get_string('editingquizx', 'quiz', format_string($quiz->name)));
 $PAGE->set_heading($course->fullname);
+$PAGE->activityheader->disable();
 $node = $PAGE->settingsnav->find('mod_quiz_edit', navigation_node::TYPE_SETTING);
 if ($node) {
     $node->make_active();

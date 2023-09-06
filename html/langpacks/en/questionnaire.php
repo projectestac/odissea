@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'en', version '3.11'.
+ * Strings for component 'questionnaire', language 'en', version '4.1'.
  *
  * @package     questionnaire
  * @category    string
@@ -69,6 +69,7 @@ $string['boxesnbmin'] = 'a minimum of {$a} box(es).';
 $string['boxesnbreq'] = 'For this question you must tick';
 $string['by'] = 'by';
 $string['cannotviewpublicresponses'] = 'You cannot view responses to this public questionnaire.';
+$string['centerlabel'] = 'Centre label';
 $string['chart:bipolar'] = 'Bipolar bars';
 $string['chart:hbar'] = 'Horizontal bars';
 $string['chart:radar'] = 'Radar';
@@ -257,14 +258,19 @@ $string['incorrectcourseid'] = 'Course ID is incorrect';
 $string['incorrectmodule'] = 'Course Module ID was incorrect';
 $string['incorrectquestionnaire'] = 'Questionnaire is incorrect';
 $string['indirectwarnings'] = 'This list shows the indirect dependent questions and the remaining dependencies for direct dependent questions:';
+$string['invalidincrement'] = 'Note that the value increments must be lower than the maximum value. For example, if a scale of 1-10, the increment value would probably be 1.';
+$string['invalidminmaxrange'] = 'This question type supports an absolute maximum range of -100 to +100. We expect the vast majority of questionnaire designs to use a range of 1-10 or -10 to +10.';
+$string['invalidrange'] = 'The maximum slider value must be greater than the minimum slider value.';
 $string['invalidresponse'] = 'Invalid response specified.';
 $string['invalidresponserecord'] = 'Invalid response record specified.';
 $string['invalidsectionid'] = 'Invalid feedback section specified.';
+$string['invalidstartingvalue'] = 'The starting value must be equal to or between the minimum and maximum values. For example, if using a scale of 1-10, the starting value could be 5.';
 $string['invalidsurveyid'] = 'Invalid questionnaire ID.';
 $string['kindofratescale'] = 'Type of rate scale';
 $string['kindofratescale_help'] = 'Right-click on the More Help link below.';
 $string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['lastrespondent'] = 'Last Respondent';
+$string['leftlabel'] = 'Left label';
 $string['length'] = 'Length';
 $string['managequestions'] = 'Manage questions';
 $string['managequestions_help'] = 'In the Manage questions section of the Edit Questions page, you can conduct a number of operations on a Questionnaire\'s questions.';
@@ -280,6 +286,8 @@ force an exact number of check boxes to be ticked, set **Min.** and **Max.** to 
 value to its default **0** value. If you set **Min.** or **Max.** to values other than their default **0** value, a warning message will be displayed if
 respondent does not comply with your requirements. Obviously you should make any requirements clear to the respondent either in the general instructions of
 your Questionnaire or in the text of relevant questions.';
+$string['maxrange'] = 'Maximum slider range (right)';
+$string['maxrange_help'] = 'Set the maximum value of the range on the right-hand side. It defaults to 100, but it could be  any number between 1-100. If the minimum value for the left-hand is a negative value, the maximum range will be expressed with a positive (+) sign.';
 $string['maxtextlength'] = 'Max. text length';
 $string['maxtextlength_help'] = 'For the Text Box question type, enter the Input Box length and the Maximum text length of text to be entered by respondent.
 Default values are 20 characters for the Input Box width and 25 characters for the maximum length of text entered.';
@@ -291,6 +299,8 @@ force an exact number of check boxes to be ticked, set **Min.** and **Max.** to 
 value to its default **0** value. If you set **Min.** or **Max.** to values other than their default **0** value, a warning message will be displayed if
 respondent does not comply with your requirements. Obviously you should make any requirements clear to the respondent either in the general instructions of
 your Questionnaire or in the text of relevant questions.';
+$string['minrange'] = 'Minimum slider range (left)';
+$string['minrange_help'] = 'Set the minimum value of the range on the left-hand side. It defaults to 1, but can set as low as -100. If you use a negative number (-100 to -1), the right-hand maximum will be expressed with a positive (+) sign.';
 $string['misconfigured'] = 'Course is misconfigured';
 $string['missingname'] = 'Question {$a} cannot be used in this feedback section because it does not have a name.';
 $string['missingnameandrequired'] = 'Question {$a} cannot be used in this feedback section because it does not have a name and it is not required.';
@@ -539,6 +549,7 @@ $string['resume_help'] = 'Setting this option allows users to save their answers
 $string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
 $string['resumesurvey'] = 'Resume questionnaire';
 $string['return'] = 'Return';
+$string['rightlabel'] = 'Right label';
 $string['save'] = 'Save';
 $string['save_and_exit'] = 'Save and exit';
 $string['saveasnew'] = 'Save as New Question';
@@ -566,7 +577,13 @@ $string['set'] = 'set';
 $string['settings'] = 'Settings';
 $string['settingssaved'] = 'Settings saved';
 $string['show_nonrespondents'] = 'Non-respondents';
+$string['slider'] = 'Slider';
+$string['slider_help'] = 'The slider question allows respondents to select a value from a continuous range by dragging a slider between two extremes. A centre value can also be set.';
 $string['started'] = 'started';
+$string['startingvalue'] = 'Slider starting value';
+$string['startingvalue_help'] = 'The slider starting value specifies where the slider should first appear for respondents. It defaults to 1 because the range is unknown. You may wish to start it in the centre of the range by giving a central value (a range of 1-100 has a centre value of 50).';
+$string['stepvalue'] = 'Slider increment value';
+$string['stepvalue_help'] = 'The slider increment value specifies how finely you wish respondents to indicate their response in the range. The question defaults to a range of 1-100 with an increment of one, allowing respondents to give values of 70, 71, 72, 73, 74 etc. But you could instead set increments of five, allowing respondents to give values of 60, 65, 70, 75, 80 etc., or even just a range of 1-10 with increments of 1.';
 $string['strfdate'] = '%d/%m/%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
 $string['strictdateformatting'] = 'Enter the date using the date picker below.';

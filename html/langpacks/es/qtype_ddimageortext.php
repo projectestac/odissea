@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'es', version '3.11'.
+ * Strings for component 'qtype_ddimageortext', language 'es', version '4.1'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -42,6 +42,8 @@ $string['dropbackground'] = 'Imagen de fondo para arrastrar los marcadores dentr
 $string['dropzone'] = 'Zona para soltar {$a}';
 $string['dropzoneheader'] = 'Zonas para soltar';
 $string['formerror_disallowedtags'] = 'Solo etiquetas "{$a}" están permitidas en este texto arrastrable.';
+$string['formerror_dragrequired'] = 'Debe añadir al menos un elemento arrastrable a esta pregunta.';
+$string['formerror_droprequired'] = 'Debe definir al menos una zona de arrastre para esta pregunta.';
 $string['formerror_multipledraginstance'] = 'Ha seleccionado esta imagen {$a} más de una vez como elección correcta para una zona pero no está marcada para ser un elemento arrastable ilimitado.';
 $string['formerror_multipledraginstance2'] = 'Ha seleccionado esta imagen más de una vez como opción correcta para una zona pero no está marcada para ser un elemento arrastable ilimitado.';
 $string['formerror_noallowedtags'] = 'Las etiquetas HTML no están permitidas en el texto que es el texto alternativo para una imagen arrastrable.';
@@ -59,6 +61,7 @@ $string['nolabel'] = 'Texto sin etiqueta';
 $string['pleasedraganimagetoeachdropregion'] = 'Su respuesta no es completa; por favor arrastre un elemento a cada región.';
 $string['pluginname'] = 'Arrastrar y soltar sobre una imagen';
 $string['pluginname_help'] = 'Las preguntas de arrastrar y soltar en imagen requieren que el usuario arrastre imágenes o etiquetas de texto y las suelte dentro de zonas para soltar definidas sobre de una imagen de fondo. Los ítems arrastrables pueden agruparse de forma tal que todos los ítems en un grupo particular estén coloreados igual que las zonas para soltarlos. Los ítem arrastrables marcados como ilimitados pueden soltarse adentro de más de una zona.';
+$string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnameadding'] = 'Añadir arrastrar y soltar sobre una imagen';
 $string['pluginnameediting'] = 'Editar arrastrar y soltar sobre una imagen';
 $string['pluginnamesummary'] = 'Las imágenes o etiquetas de texto son arrastradas y soltadas dentro de zonas para soltar sobre una imagen de fondo.

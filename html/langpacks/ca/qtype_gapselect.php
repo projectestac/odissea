@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'ca', version '3.11'.
+ * Strings for component 'qtype_gapselect', language 'ca', version '4.1'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -40,6 +40,7 @@ $string['group'] = 'Grup';
 $string['pleaseputananswerineachbox'] = 'Poseu una resposta a cada camp.';
 $string['pluginname'] = 'Seleccioneu les paraules que falten';
 $string['pluginname_help'] = 'Les preguntes de completar amb paraules demanen que qui respon seleccioni la resposta correcta d\'uns menús desplegables.  [[1]], [[2]], [[3]], ...  s\'usen com marcadors de posició al text de la pregunta, amb les respostes correctes especificades com les opcions de resposta 1, 2, 3, ... respectivament. Es poden afegir opcions extra de resposta per fer la pregunta més difícil. Les opcions de resposta es poden agrupar per a restringir les respostes disponibles en cada menú desplegable.';
+$string['pluginname_link'] = 'question/type/gapselect';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'omplir forats';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'omplir forats';
 $string['pluginnamesummary'] = 'Les paraules que falten en el text de la pregunta s\'emplenen emprant  menús desplegables.';

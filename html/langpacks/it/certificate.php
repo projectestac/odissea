@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'it', version '3.11'.
+ * Strings for component 'certificate', language 'it', version '4.1'.
  *
  * @package     certificate
  * @category    string
@@ -133,6 +133,7 @@ $string['letter'] = 'Letter';
 $string['lockingoptions'] = 'Opzioni di blocco';
 $string['modulename'] = 'Certificato';
 $string['modulename_help'] = 'Il modulo consente la generazione dinamica di certificati basata su condizioni impostate dai docenti.';
+$string['modulename_link'] = 'Certificate_module';
 $string['modulenameplural'] = 'Certificati';
 $string['mycertificates'] = 'I miei certificati';
 $string['nocertificates'] = 'Non ci sono certificati';

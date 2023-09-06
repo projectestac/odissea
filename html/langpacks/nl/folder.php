@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'nl', version '3.11'.
+ * Strings for component 'folder', language 'nl', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -45,10 +45,12 @@ $string['indicator:cognitivedepth'] = 'Map cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Map bron.';
 $string['indicator:cognitivedepthdef'] = 'Map cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de mapresources bereikt tijdens dit analyse-interval (Niveaus = Geen weergave, Weergave)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Map sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Map bron.';
 $string['indicator:socialbreadthdef'] = 'Map sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid bereikt die door de mapresources wordt geboden tijdens dit analyse-interval (niveaus = geen deelname, alleen deelnemer)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['maxsizetodownload'] = 'Maximum map downloadgrootte (MB)';
 $string['maxsizetodownload_help'] = 'De maximale grootte van een map die gedownload kan worden als een zip-bestand. Als dit op nul gezet wordt, dan is de mapgrootte onbeperkt.';
 $string['modulename'] = 'Map';
@@ -58,6 +60,7 @@ En map kan gebruikt worden
 
 * voor een reeks bestanden over één onderwerp, bijvoorbeeld een ingevulde cursus of een verzameling afbeeldingen die een leerling kan gebruiken in een project
 * om een gedeelde uploadruimte te voorzien voor leraren in dezelfde cursus, waarbij de map verborgen gehouden wordt voor leerlingen, zodat enkel de leraren die kunnen zien.';
+$string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'Mappen';
 $string['newfoldercontent'] = 'Nieuwe mapinhoud';
 $string['noautocompletioninline'] = 'Automatisch voltooien kan niet gekozen worden met de optie "inline op de cursuspagina".';

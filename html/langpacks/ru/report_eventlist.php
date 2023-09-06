@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'ru', version '3.11'.
+ * Strings for component 'report_eventlist', language 'ru', version '4.1'.
  *
  * @package     report_eventlist
  * @category    string
@@ -31,6 +31,8 @@ $string['affectedtable'] = 'Затрагиваемая таблица';
 $string['all'] = 'Все';
 $string['clear'] = 'Очистить';
 $string['component'] = 'Компонент';
+$string['core'] = 'Ядро';
+$string['coresubsystem'] = 'Подсистема ({$a})';
 $string['create'] = 'добавление';
 $string['crud'] = 'Тип запроса к базе данных';
 $string['delete'] = 'удаление';

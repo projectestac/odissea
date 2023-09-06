@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'eu', version '3.11'.
+ * Strings for component 'enrol_guest', language 'eu', version '4.1'.
  *
  * @package     enrol_guest
  * @category    string
@@ -43,5 +43,6 @@ $string['showhint_desc'] = 'Erakutsi gonbidatuen sarbide-pasahitzaren lehenbizik
 $string['status'] = 'Baimendu gonbidatuen sarbidea';
 $string['status_desc'] = 'Baimendu aldi baterako gonbidatuen sarbidea lehenetsitako balio gisa.';
 $string['status_help'] = 'Ezarpen honek zehazten du erabiltzaileak ikastarora gonbidatu gisa sartu ahal izango diren, matrikulatuta egon gabe.';
+$string['status_link'] = 'enrol/guest';
 $string['usepasswordpolicy'] = 'Erabili pasahitzen politika';
 $string['usepasswordpolicy_desc'] = 'Gonbidatuen pasahitzei ohiko pasahitzen politika aplikatu.';

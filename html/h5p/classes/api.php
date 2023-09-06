@@ -163,7 +163,7 @@ class api {
             unset($library->major_version);
             $library->minorVersion = (int) $library->minorversion;
             unset($library->minorversion);
-            $library->metadataSettings = json_decode($library->metadatasettings);
+            $library->metadataSettings = json_decode($library->metadatasettings ?? '');
 
             // If we already add this library means that it is an old version,as the previous query was sorted by version.
             if (isset($added[$library->name])) {
@@ -214,6 +214,114 @@ class api {
 
         $h5p = $DB->get_record('h5p', ['pathnamehash' => $pathnamehash]);
         return [$file, $h5p];
+    }
+
+    /**
+     * Get the original file and H5P DB instance for a given H5P pluginfile URL. If it doesn't exist, it's not created.
+     * If the file has been added as a reference, this method will return the original linked file.
+     *
+     * @param string $url H5P pluginfile URL.
+     * @param bool $preventredirect Set to true in scripts that can not redirect (CLI, RSS feeds, etc.), throws exceptions.
+     * @param bool $skipcapcheck Whether capabilities should be checked or not to get the pluginfile URL because sometimes they
+     *     might be controlled before calling this method.
+     *
+     * @return array of [\stored_file|false, \stdClass|false, \stored_file|false]:
+     *             - \stored_file: original local file for the given url (if it has been added as a reference, this method
+     *                            will return the linked file) or false if there isn't any H5P file with this URL.
+     *             - \stdClass: an H5P object or false if there isn't any H5P with this URL.
+     *             - \stored_file: file associated to the given url (if it's different from original) or false when both files
+     *                            (original and file) are the same.
+     * @since Moodle 4.0
+     */
+    public static function get_original_content_from_pluginfile_url(string $url, bool $preventredirect = true,
+        bool $skipcapcheck = false): array {
+
+        $file = false;
+        list($originalfile, $h5p) = self::get_content_from_pluginfile_url($url, $preventredirect, $skipcapcheck);
+        if ($originalfile) {
+            if ($reference = $originalfile->get_reference()) {
+                $file = $originalfile;
+                // If the file has been added as a reference to any other file, get it.
+                $fs = new \file_storage();
+                $referenced = \file_storage::unpack_reference($reference);
+                $originalfile = $fs->get_file(
+                    $referenced['contextid'],
+                    $referenced['component'],
+                    $referenced['filearea'],
+                    $referenced['itemid'],
+                    $referenced['filepath'],
+                    $referenced['filename']
+                );
+                $h5p = self::get_content_from_pathnamehash($originalfile->get_pathnamehash());
+                if (empty($h5p)) {
+                    $h5p = false;
+                }
+            }
+        }
+
+        return [$originalfile, $h5p, $file];
+    }
+
+    /**
+     * Check if the user can edit an H5P file. It will return true in the following situations:
+     * - The user is the author of the file.
+     * - The component is different from user (i.e. private files).
+     * - If the component is contentbank, the user can edit this file (calling the ContentBank API).
+     * - If the component is mod_xxx or block_xxx, the user has the addinstance capability.
+     * - If the component implements the can_edit_content in the h5p\canedit class and the callback to this method returns true.
+     *
+     * @param \stored_file $file The H5P file to check.
+     *
+     * @return boolean Whether the user can edit or not the given file.
+     * @since Moodle 4.0
+     */
+    public static function can_edit_content(\stored_file $file): bool {
+        global $USER;
+
+        list($type, $component) = \core_component::normalize_component($file->get_component());
+
+        // Private files.
+        $currentuserisauthor = $file->get_userid() == $USER->id;
+        $isuserfile = $component === 'user';
+        if ($currentuserisauthor && $isuserfile) {
+            // The user can edit the content because it's a private user file and she is the owner.
+            return true;
+        }
+
+        // Check if the plugin where the file belongs implements the custom can_edit_content method and call it if that's the case.
+        $classname = '\\' . $file->get_component() . '\\h5p\\canedit';
+        $methodname = 'can_edit_content';
+        if (method_exists($classname, $methodname)) {
+            return $classname::{$methodname}($file);
+        }
+
+        // For mod/block files, check if the user has the addinstance capability of the component where the file belongs.
+        if ($type === 'mod' || $type === 'block') {
+            // For any other component, check whether the user can add/edit them.
+            $context = \context::instance_by_id($file->get_contextid());
+            $plugins = \core_component::get_plugin_list($type);
+            $isvalid = array_key_exists($component, $plugins);
+            if ($isvalid && has_capability("$type/$component:addinstance", $context)) {
+                // The user can edit the content because she has the capability for creating instances where the file belongs.
+                return true;
+            }
+        }
+
+        // For contentbank files, use the API to check if the user has access.
+        if ($component == 'contentbank') {
+            $cb = new \core_contentbank\contentbank();
+            $content = $cb->get_content_from_id($file->get_itemid());
+            $contenttype = $content->get_content_type_instance();
+            if ($contenttype instanceof \contenttype_h5p\contenttype) {
+                // Only H5P contenttypes should be considered here.
+                if ($contenttype->can_edit($content)) {
+                    // The user has permissions to edit the H5P in the content bank.
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 
     /**

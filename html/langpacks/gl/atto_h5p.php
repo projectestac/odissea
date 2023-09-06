@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'gl', version '3.11'.
+ * Strings for component 'atto_h5p', language 'gl', version '4.1'.
  *
  * @package     atto_h5p
  * @category    string
@@ -28,18 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['browserepositories'] = 'Examinar repositorios';
 $string['copyrightbutton'] = 'Botón de Copyright';
 $string['downloadbutton'] = 'Permitir descarga';
-$string['either'] = 'Ou';
 $string['embedbutton'] = 'Botón de incrustado';
-$string['enterurl'] = 'URL ou código de incrustado';
 $string['h5p:addembed'] = 'Engadir H5P incrustado';
 $string['h5pfile'] = 'Subida de ficheiro H5P';
 $string['h5pfileorurl'] = 'URL do H5P ou subida do arquivo';
 $string['h5poptions'] = 'Opcións H5P';
-$string['h5pproperties'] = 'Propiedades H5P';
 $string['h5purl'] = 'URL do H5P';
 $string['instructions'] = 'Podes inserir contido H5P <strong>ben</strong> escribindo un URL <strong>ou</strong> subindo un ficheiro H5P.';
 $string['invalidh5purl'] = 'URL non válido';
 $string['noh5pcontent'] = 'Non se engadiu contido H5P';
-$string['or'] = 'ou';
 $string['pluginname'] = 'Inserir H5P';
 $string['privacy:metadata'] = 'O engadido atto_h5p non garda información persoal algunha';

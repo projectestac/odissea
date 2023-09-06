@@ -23,7 +23,7 @@ Feature: Workshop grading strategy selection
     Given I set the following fields to these values:
       | strategy | accumulative |
     And I press "Save and display"
-    When I navigate to "Edit assessment form" in current page administration
+    When I click on "Assessment form" "link"
     Then I should see "Accumulative grading"
     And I should see "Description"
     And I should see "Best possible grade / Scale to use"
@@ -48,7 +48,7 @@ Feature: Workshop grading strategy selection
     Given I set the following fields to these values:
       | strategy | comments |
     And I press "Save and display"
-    When I navigate to "Edit assessment form" in current page administration
+    When I click on "Assessment form" "link"
     Then I should see "Comments"
     And I should see "Description"
     And I set the following fields to these values:
@@ -69,7 +69,7 @@ Feature: Workshop grading strategy selection
     Given I set the following fields to these values:
       | strategy | numerrors |
     And I press "Save and display"
-    When I navigate to "Edit assessment form" in current page administration
+    When I click on "Assessment form" "link"
     Then I should see "Number of errors"
     And I should see "Description"
     And I should see "Word for the error"
@@ -95,7 +95,7 @@ Feature: Workshop grading strategy selection
     Given I set the following fields to these values:
       | strategy | rubric |
     And I press "Save and display"
-    When I navigate to "Edit assessment form" in current page administration
+    When I click on "Assessment form" "link"
     Then I should see "Rubric"
     And I should see "Description"
     And I should see "Level grade and definition"

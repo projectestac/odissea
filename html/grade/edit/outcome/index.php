@@ -29,7 +29,8 @@ require_once($CFG->libdir.'/gradelib.php');
 $courseid = optional_param('id', 0, PARAM_INT);
 $action   = optional_param('action', '', PARAM_ALPHA);
 
-$PAGE->set_url('/grade/edit/outcome/index.php', array('id' => $courseid));
+$url = new moodle_url('/grade/edit/outcome/index.php', ['id' => $courseid]);
+$PAGE->set_url($url);
 $PAGE->set_pagelayout('admin');
 
 /// Make sure they can even access this course
@@ -44,12 +45,15 @@ if ($courseid) {
     }
     // This page doesn't exist on the navigation so map it to another
     navigation_node::override_active_url(new moodle_url('/grade/edit/outcome/course.php', array('id'=>$courseid)));
+    $PAGE->navbar->add(get_string('manageoutcomes', 'grades'), $url);
 } else {
     if (empty($CFG->enableoutcomes)) {
         redirect('../../../');
     }
     require_once $CFG->libdir.'/adminlib.php';
     admin_externalpage_setup('outcomes');
+    $context = context_system::instance();
+    $PAGE->set_primary_active_tab('siteadminnode');
 }
 
 /// return tracking object
@@ -78,7 +82,7 @@ switch ($action) {
         if (empty($outcome->courseid)) {
             require_capability('moodle/grade:manage', context_system::instance());
         } else if ($outcome->courseid != $courseid) {
-            print_error('invalidcourseid');
+            throw new \moodle_exception('invalidcourseid');
         }
 
         if (!$outcome->can_delete()) {
@@ -89,6 +93,7 @@ switch ($action) {
 
         if(!$deleteconfirmed){
             $PAGE->set_title(get_string('outcomedelete', 'grades'));
+            $PAGE->navbar->add(get_string('outcomedelete', 'grades'));
             echo $OUTPUT->header();
             $confirmurl = new moodle_url('index.php', array(
                     'id' => $courseid, 'outcomeid' => $outcome->id,
@@ -113,7 +118,6 @@ if ($courseid) {
     $caneditcoursescales = has_capability('moodle/course:managescales', $context);
 
 } else {
-    echo $OUTPUT->header();
     $caneditcoursescales = $caneditsystemscales;
 }
 
@@ -122,7 +126,7 @@ $outcomes_tables = array();
 $heading = get_string('outcomes', 'grades');
 
 if ($courseid and $outcomes = grade_outcome::fetch_all_local($courseid)) {
-    $return = $OUTPUT->heading($strcustomoutcomes, 3, 'main');
+    $return = $OUTPUT->heading($strcustomoutcomes, 3, 'main mt-3');
     $data = array();
     foreach($outcomes as $outcome) {
         $line = array();
@@ -172,7 +176,7 @@ if ($courseid and $outcomes = grade_outcome::fetch_all_local($courseid)) {
 
 
 if ($outcomes = grade_outcome::fetch_all_global()) {
-    $return = $OUTPUT->heading($strstandardoutcome, 3, 'main');
+    $return = $OUTPUT->heading($strstandardoutcome, 3, 'main mt-3');
     $data = array();
     foreach($outcomes as $outcome) {
         $line = array();
@@ -223,21 +227,18 @@ if ($outcomes = grade_outcome::fetch_all_global()) {
     $outcomes_tables[] = $return;
 }
 
-if ($courseid) {
-    /// Print header
-    print_grade_page_head($courseid, 'outcome', 'edit', $heading);
-}
+$actionbar = new \core_grades\output\manage_outcomes_action_bar($context, !empty($outcomes_tables));
+print_grade_page_head($courseid ?: SITEID, 'outcome', 'edit', $heading, false, false,
+    true, null, null, null, $actionbar);
 
-foreach($outcomes_tables as $table) {
-    echo $table;
+// If there are existing outcomes, output the outcome tables.
+if (!empty($outcomes_tables)) {
+    foreach ($outcomes_tables as $table) {
+        echo $table;
+    }
+} else {
+    echo $OUTPUT->notification(get_string('noexistingoutcomes', 'grades'), 'info', false);
 }
-
-echo $OUTPUT->container_start('buttons');
-echo $OUTPUT->single_button(new moodle_url('edit.php', array('courseid'=>$courseid)), $strcreatenewoutcome);
-if ( !empty($outcomes_tables) ) {
-    echo $OUTPUT->single_button(new moodle_url('export.php', array('id'=>$courseid, 'sesskey'=>sesskey())),  get_string('exportalloutcomes', 'grades'));
-}
-echo $OUTPUT->container_end();
 
 echo $OUTPUT->footer();
 

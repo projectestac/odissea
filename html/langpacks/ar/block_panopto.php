@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_panopto', language 'ar', version '3.11'.
+ * Strings for component 'block_panopto', language 'ar', version '4.1'.
  *
  * @package     block_panopto
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['back_to_config'] = 'عودة إلى التهيئة';
-$string['back_to_course'] = 'عودة إلى المقرر الدراسي';
+$string['back_to_course'] = 'عودة إلى المساق';
 $string['block_global_instance_name'] = 'اسم عَيِّنة مودل';
 $string['block_global_rename_all_folders'] = 'تحديث أسماء كل مجلدات Panopto';
 $string['block_panopto_auto_sync_imports'] = 'إمنح الصلاحيات تلقائيًا عند استيراد المساق';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'el', version '3.11'.
+ * Strings for component 'install', language 'el', version '4.1'.
  *
  * @package     install
  * @category    string
@@ -40,7 +40,7 @@ $string['admindirsettingsub'] = 'Πολλοί λίγοι κεντρικοί υπ
 <b>moodleadmin</b>
 <br /><br />
 Αυτό θα διορθώσει όλους τους συνδέσμους με το admin στην διεύθυνσή τους σε όλη την εγκατάσταση του Moodle σας.';
-$string['availablelangs'] = 'Λίστα διαθέσιμων πακέτων γλωσσών';
+$string['availablelangs'] = 'Λίστα διαθέσιμων πακέτων γλώσσας';
 $string['caution'] = 'Προσοχή';
 $string['chooselanguage'] = 'Επιλογή γλώσσας';
 $string['chooselanguagehead'] = 'Επιλογή γλώσσας';
@@ -114,7 +114,7 @@ $string['downloadlanguagenotneeded'] = 'Μπορείτε να συνεχίσετ
 $string['downloadlanguagesub'] = 'Τώρα έχετε την επιλογή της λήψης ενός γλωσσικού πακέτου και συνέχιση της εγκατάστασης σε αυτή τη γλώσσα.<br /><br /> Εάν δεν μπορέσετε να κατεβάσετε το γλωσσικό πακέτο, η εγκατάσταση θα προχωρήσει στα αγγλικά. (Μόλις η εγκατάσταση ολοκληρωθεί, θα έχετε την δυνατότητα να κατεβάσετε και να εγκαταστήσετε επιπλέον γλωσσικά πακέτα.)';
 $string['doyouagree'] = 'Συμφωνείτε ; (ναι/όχι):';
 $string['environmenthead'] = 'Έλεγχος περιβάλλοντος...';
-$string['environmentsub'] = 'Έλεγχος εάν τα διάφορα τμήματα του συστήματός σας ταιριάζουν με τις απαιτήσεις συστήματος';
+$string['environmentsub'] = 'Έλεγχος εάν τα διάφορα στοιχεία του συστήματός σας ταιριάζουν με τις απαιτήσεις συστήματος';
 $string['environmentsub2'] = 'Κάθε έκδοση Moodle έχει κάποια ελάχιστη απαίτηση σχετικά με την έκδοση της PHP και ενός αριθμού από αναγκαίες επεκτάσεις PHP.
 Ο πλήρης έλεγχος του περιβάλλοντος πραγματοποιείται πριν κάθε εγκατάσταση και αναβάθμιση. Παρακαλούμε επικοινωνήστε με τον διαχειριστή του εξυπηρετητή εάν δεν ξέρετε πως να εγκαταστήσετε νέα έκδοση της PHP ή να ενεργοποιήσετε επεκτάσεις της.';
 $string['errorsinenvironment'] = 'Ο έλεγχος του περιβάλλοντος απέτυχε!';
@@ -205,7 +205,7 @@ $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'Βλέπετε αυτή τη σελίδα γιατί εγκαταστήσατε και ξεκινήσατε με επιτυχία το πακέτο <strong>{$a->packname} {$a->packversion}</strong> στον υπολογιστή σας. Συγχαρητήρια!';
 $string['welcomep30'] = 'Αυτή η έκδοση/διανομή <strong>{$a->installername}</strong> περιλαμβάνει τις εφαρμογές για τη δημιουργία ενός περιβάλλοντος μέσα στο οποίο θα λειτουργεί το <strong>Moodle</strong>, ονομαστικά:';
 $string['welcomep40'] = 'Το πακέτο περιλαμβάνει επίσης το <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.';
-$string['welcomep50'] = 'Η χρήση όλων των εφαρμογών σε αυτό το πακέτο υπόκειται στις αντίστοιχες άδειες. Ολόκληρο το πακέτο <strong>{$a->installername}</strong> είναι <a href="https://www.opensource.org/docs/definition_plain.html">λογισμικό ανοικτού κώδικα</a> και διανέμεται με την <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a> άδεια.';
+$string['welcomep50'] = 'Η χρήση όλων των εφαρμογών σε αυτό το πακέτο υπόκειται στις αντίστοιχες άδειες χρήσης. Ολόκληρο το πακέτο <strong>{$a->installername}</strong> είναι <a href="https://www.opensource.org/docs/definition_plain.html">λογισμικό ανοικτού κώδικα</a> και διανέμεται με την άδεια χρήσης <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a>.';
 $string['welcomep60'] = 'Οι παρακάτω σελίδες θα σας καθοδηγήσουν με εύκολα βήματα στην εγκατάσταση και ρύθμιση του <strong>Moodle</strong> στον υπολογιστή σας. Μπορείτε να δεχθείτε τις προεπιλεγμένες ρυθμίσεις ή προαιρετικά, να τις τροποποιήσετε ανάλογα με τις ανάγκες σας.';
 $string['welcomep70'] = 'Πατήστε το κουμπί «Συνέχεια» για να συνεχίσετε με την εγκατάσταση του <strong>Moodle</strong>.';
 $string['wwwroot'] = 'Διεύθυνση ιστού';

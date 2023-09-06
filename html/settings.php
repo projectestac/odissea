@@ -9,10 +9,10 @@ $CFG->isagora = true;
 $CFG->iseoi = $agora['iseoi'];
 $CFG->isodissea = false;
 $CFG->isalexandria = false;
-$CFG->center = $school_info['clientCode'] ?? $school_info['id_moodle2'];
+$CFG->center = $school_info['code'] ?? $school_info['id_moodle'];
 
 // The following line calculates correctly the diskPercent (uploading files will be disabled when diskPercent >= 100)
-$CFG->diskPercent = $school_info['diskPercent_moodle2'] ?? 0;
+$CFG->diskPercent = $school_info['diskPercent_moodle'] ?? 0;
 $CFG->userquota = 0;  // Block private files
 
 // Force values for standard Moodle params to ensure proper values
@@ -34,7 +34,7 @@ $CFG->enableanalytics = false;
 $CFG->themedesignermode = false;
 $CFG->cachejs = true;
 $CFG->slasharguments = true;
-$CFG->themelist = 'xtec2020';
+$CFG->themelist = 'xtecboost';
 $CFG->useexternalyui = false;
 $CFG->yuicomboloading = true;
 $CFG->cachetemplates = true;
@@ -141,9 +141,6 @@ if (!empty($agora['moodle2']['redis_session_servers'])) {
     $CFG->lock_factory = '\\core\\lock\\db_record_lock_factory';
 }
 
-// Use the system temporary directory
-$CFG->localrequestdir = '/tmp';
-
 // if (isset($agora['proxy']['host']) && !empty($agora['proxy']['host'])) {
 //    $CFG->proxyhost = $agora['proxy']['host'];
 //    $CFG->proxyport = $agora['proxy']['port'];
@@ -151,11 +148,11 @@ $CFG->localrequestdir = '/tmp';
 //    $CFG->proxypassword = $agora['proxy']['pass'];
 //}
 
-$CFG->customusermenuitems = "grades,grades|/grade/report/mygrades.php|grades
-    messages,message|/message/index.php|message
-    badges,badges|/badges/mybadges.php|award
-    calendar,calendar|/calendar/view.php|i/calendar
-    preferences,moodle|/user/preferences.php|preferences";
+$CFG->customusermenuitems = 'profile,moodle|/user/profile.php
+messages,message|/message/index.php
+grades,grades|/grade/report/mygrades.php
+badges,badges|/badges/mybadges.php
+calendar,core_calendar|/calendar/view.php?view=month';
 
 $CFG->forced_plugin_settings = [
     'logstore_standard' => [

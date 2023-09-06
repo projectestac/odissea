@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'fr', version '3.11'.
+ * Strings for component 'enrol_guest', language 'fr', version '4.1'.
  *
  * @package     enrol_guest
  * @category    string
@@ -43,5 +43,6 @@ $string['showhint_desc'] = 'Afficher la première lettre du mot de passe d\'acc�
 $string['status'] = 'Permettre l\'accès anonyme';
 $string['status_desc'] = 'Permettre par défaut l\'accès anonyme temporaire';
 $string['status_help'] = 'Ce réglage détermine si un utilisateur peut accéder au cours anonymement, sans nécessiter d\'inscription.';
+$string['status_link'] = 'enrol/guest';
 $string['usepasswordpolicy'] = 'Utiliser la politique de mots de passe';
 $string['usepasswordpolicy_desc'] = 'Utiliser la politique de mots de passe standard pour les mots de passe d\'accès anonyme.';

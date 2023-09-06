@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_poodll', language 'el', version '3.11'.
+ * Strings for component 'assignfeedback_poodll', language 'el', version '4.1'.
  *
  * @package     assignfeedback_poodll
  * @category    string
@@ -46,7 +46,7 @@ $string['privacy:path'] = 'feedback_poodll';
 $string['reallydeletefeedback'] = 'Σίγουρα να διαγραφεί αυτή η ανατροφοδότηση;';
 $string['recordertype'] = 'Τύπος εγγραφέα Poodll';
 $string['replymp3voice'] = 'Εγγραφέας ήχου';
-$string['replysnapshot'] = 'Στιγμιότυπο';
+$string['replysnapshot'] = 'Στιγμιότυπο οθόνης';
 $string['replyvideo'] = 'Εγγραφέας βίντεο';
 $string['replyvoice'] = 'Εγγραφέας βίντεο (Red5)';
 $string['replywhiteboard'] = 'Ασπροπίνακας';

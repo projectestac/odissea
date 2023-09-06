@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'ar', version '3.11'.
+ * Strings for component 'portfolio_googledocs', language 'ar', version '4.1'.
  *
  * @package     portfolio_googledocs
  * @category    string
@@ -30,7 +30,7 @@ $string['noauthtoken'] = 'لم يتم تلقي ترميز المصادقة من 
 $string['nooauthcredentials'] = 'شهادات مصادقة OAuth مطلوبة.';
 $string['nooauthcredentials_help'] = 'لاستعمال ملحق محفظة Google Drive، عليك تعريف شهادة مصادقة OAuth في إعدادات المحفظة.';
 $string['nosessiontoken'] = 'ترميز الجلسة غير موجود مما يمنع التصدير إلى Google.';
-$string['oauthinfo'] = '<p>لاستعمال هذا الملحق، عليك تسجيل موقعك في Google، كما هو موصوف في التوثيقات <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>كجزء من عملية التسجيل، عليك إدخال الرابط الآتي بمثابة \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p><p>بمجرد التسجيل، سيتم تزويدك بمُعرَّف الزبون وكلمة السر وبهما يمكنك تهيئة كل ملاحق Google Drive و Picasa.</p>';
+$string['oauthinfo'] = '<p>لاستعمال هذه الإضافة، عليك تسجيل موقعك في Google، كما هو موصوف في التوثيقات <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>كجزء من عملية التسجيل، عليك إدخال الرابط الآتي بمثابة \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p><p>بمجرد التسجيل، سيتم تزويدك بمُعرَّف الزبون وكلمة السر وبهما يمكنك تهيئة كل إضافات Google Drive.</p>';
 $string['pluginname'] = 'Google Drive';
 $string['privacy:metadata'] = 'هذه الإضافة ترسل البيانات خارجياً إلى حساب Google مرتبط. هو لا يحفظ البيانات محلياً.';
 $string['privacy:metadata:data'] = 'البيانات الشخصية المُمرَّرة عبر نظام المحفظة الفرعي';

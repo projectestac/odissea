@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'el', version '3.11'.
+ * Strings for component 'webservice', language 'el', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -65,7 +65,6 @@ $string['deletetokenconfirm'] = 'Θέλετε πραγματικά να διαγ
 $string['disabledwarning'] = 'Όλα τα πρωτόκολλα υπηρεσιών ιστού είναι απενεργοποιημένα. Η ρύθμιση «Ενεργοποίηση υπηρεσιών ιστού» βρίσκεται στα «Προχωρημένα χαρακτηριστικά».';
 $string['doc'] = 'Τεκμηρίωση';
 $string['docaccessrefused'] = 'Δεν επιτρέπεται να δείτε την τεκμηρίωση για αυτό το κουπόνι';
-$string['documentation'] = 'τεκμηρίωση υπηρεσίας ιστού';
 $string['downloadfiles'] = 'Μπορούν να ληφθούν αρχεία';
 $string['downloadfiles_help'] = 'Εάν ενεργοποιηθεί, οποιοσδήποτε χρήστης μπορεί να κατεβάσει αρχεία με τα κλειδιά ασφαλείας του. Φυσικά περιορίζεται στα αρχεία που επιτρέπεται να κατεβάσει στον ιστότοπο.';
 $string['editaservice'] = 'Επεξεργασία υπηρεσίας';
@@ -153,7 +152,7 @@ $string['privacy:metadata:tokens'] = 'Ένα ιστορικό των κουπο�
 $string['privacy:metadata:tokens:creatorid'] = 'Το αναγνωριστικό του χρήστη που δημιούργησε το κουπόνι';
 $string['privacy:metadata:tokens:iprestriction'] = 'Το IP αυτό περιορίζεται να χρησιμοποιεί μόνο αυτό το κουπόνι';
 $string['privacy:metadata:tokens:lastaccess'] = 'Η ημερομηνία κατά την οποία χρησιμοποιήθηκε τελευταία φορά το κουπόνι';
-$string['privacy:metadata:tokens:privatetoken'] = 'Ένα πιο ιδιωτικό κουπόνι χρησιμοποιείται περιστασιακά για την επικύρωση ορισμένων λειτουργιών, όπως η SSO (Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση).';
+$string['privacy:metadata:tokens:privatetoken'] = 'Ένα πιο ιδιωτικό κουπόνι χρησιμοποιείται περιστασιακά για την επικύρωση ορισμένων λειτουργιών, όπως η ενιαία αυθεντικοποίηση SSO';
 $string['privacy:metadata:tokens:timecreated'] = 'Η ημερομηνία κατά την οποία δημιουργήθηκε το κουπόνι';
 $string['privacy:metadata:tokens:token'] = 'Το κουπόνι του χρήστη';
 $string['privacy:metadata:tokens:tokentype'] = 'Ο τύπος του κουπονιού';
@@ -163,7 +162,7 @@ $string['privacy:request:notexportedsecurity'] = 'Δεν εξήχθη για λ�
 $string['protocol'] = 'Πρωτόκολλο';
 $string['removefunction'] = 'Αφαίρεση';
 $string['removefunctionconfirm'] = 'Θέλετε πραγματικά να καταργήσετε τη λειτουργία «{$a->function}» από την υπηρεσία «{$a->service}»;';
-$string['requireauthentication'] = 'Αυτή η μέθοδος απαιτεί έλεγχο ταυτότητας με την άδεια xxx.';
+$string['requireauthentication'] = 'Αυτή η μέθοδος απαιτεί αυθεντικοποίηση με άδεια xxx.';
 $string['required'] = 'Απαιτείται';
 $string['requiredcapability'] = 'Απαιτούμενη δυνατότητα';
 $string['requiredcapability_help'] = 'Εάν οριστεί, μόνο οι χρήστες με την απαιτούμενη δυνατότητα μπορούν να έχουν πρόσβαση στην υπηρεσία.';

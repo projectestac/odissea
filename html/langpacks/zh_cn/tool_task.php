@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'zh_cn', version '3.11'.
+ * Strings for component 'tool_task', language 'zh_cn', version '4.1'.
  *
  * @package     tool_task
  * @category    string
@@ -54,6 +54,7 @@ $string['enablerunnow_desc'] = '允许管理员立即运行一个单独的预定
 $string['faildelay'] = '故障延迟';
 $string['fromcomponent'] = '来自组件：{$a}';
 $string['hostname'] = '主机名';
+$string['lastcronstart'] = '自上次cron运行以来的时间：{$a}';
 $string['lastruntime'] = '最后运行';
 $string['lastupdated'] = '上次更新{$a}。';
 $string['nextruntime'] = '下次运行';

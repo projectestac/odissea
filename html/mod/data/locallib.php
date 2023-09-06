@@ -333,6 +333,11 @@ class data_portfolio_caller extends portfolio_module_caller_base {
         $replacement[] = userdate($record->timecreated);
         $replacement[] = userdate($record->timemodified);
 
+        if (empty($this->data->singletemplate)) {
+            // Use default template if the template is not created.
+            $this->data->singletemplate = data_generate_default_template($this->data, 'singletemplate', 0, false, false);
+        }
+
         // actual replacement of the tags
         return array(str_ireplace($patterns, $replacement, $this->data->singletemplate), $files);
     }
@@ -963,6 +968,10 @@ function data_get_tag_title_field($dataid) {
     $validfieldtypes = array('text', 'textarea', 'menu', 'radiobutton', 'checkbox', 'multimenu', 'url');
     $fields = $DB->get_records('data_fields', ['dataid' => $dataid]);
     $template = $DB->get_field('data', 'addtemplate', ['id' => $dataid]);
+    if (empty($template)) {
+        $data = $DB->get_record('data', ['id' => $dataid]);
+        $template = data_generate_default_template($data, 'addtemplate', 0, false, false);
+    }
 
     $filteredfields = [];
 
@@ -1013,6 +1022,7 @@ function data_get_tag_title_field($dataid) {
  */
 function data_get_tag_title_for_entry($field, $entry) {
     global $CFG, $DB;
+
     if (!isset($field->type)) {
         return null;
     }

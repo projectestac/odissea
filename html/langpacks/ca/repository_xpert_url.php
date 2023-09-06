@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_xpert_url', language 'ca', version '3.11'.
+ * Strings for component 'repository_xpert_url', language 'ca', version '4.1'.
  *
  * @package     repository_xpert_url
  * @category    string

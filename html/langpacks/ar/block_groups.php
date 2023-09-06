@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_groups', language 'ar', version '3.11'.
+ * Strings for component 'block_groups', language 'ar', version '4.1'.
  *
  * @package     block_groups
  * @category    string
@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['allgroupsinstatehidden'] = 'كل المجموعات مخفية مسبقًا.';
 $string['allgroupsinstatevisible'] = 'كل المجموعات مرئية مسبقًا.';
 $string['groups:addinstance'] = 'إضافة كتلة جديدة من المجموعة';
-$string['groups:myaddinstance'] = 'إضافة كتلة جديدة من المجموعة إلى لوحة التحكم';
+$string['groups:myaddinstance'] = 'إضافة كتلة جديدة من المجموعة إلى دفة القيادة';
 $string['groupschangedhidden'] = 'كل المجموعات مخفية.';
 $string['groupschangedvisible'] = 'كل المجموعات مرئية.';

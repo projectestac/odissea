@@ -116,7 +116,7 @@ class main implements renderable, templatable {
         if (in_array($this->filter, [BLOCK_TIMELINE_FILTER_BY_NONE, BLOCK_TIMELINE_FILTER_BY_OVERDUE])) {
             $offset = -14;
             if ($this->filter == BLOCK_TIMELINE_FILTER_BY_OVERDUE) {
-                $limit = 0;
+                $limit = 1;
             }
         } else {
             $offset = 0;
@@ -183,7 +183,8 @@ class main implements renderable, templatable {
             'hasdaysoffset' => true,
             'hasdayslimit' => $offsets['dayslimit'] !== '' ,
             'nodayslimit' => $offsets['dayslimit'] === '' ,
-            'limit' => $this->limit
+            'limit' => $this->limit,
+            'hascourses' => !empty($formattedcourses),
         ];
         return array_merge($contextvariables, $filters, $offsets);
     }

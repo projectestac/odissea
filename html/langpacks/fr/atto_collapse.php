@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'fr', version '3.11'.
+ * Strings for component 'atto_collapse', language 'fr', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'Afficher moins de boutons';
 $string['showgroups'] = 'Afficher les (n) premiers groupes quand repliée.';
 $string['showgroups_desc'] = 'Ce réglage définit le nombre de groupes affichés en une fois, lorsque la barre d\'outils est repliée (par défaut).';
 $string['showmore'] = 'Afficher plus de boutons';
+$string['youareonsecondrow'] = 'Vous êtes maintenant sur une autre rangée de la barre d\'outils de l\'éditeur, où se trouvent d\'autres boutons.';

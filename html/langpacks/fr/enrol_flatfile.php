@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'fr', version '3.11'.
+ * Strings for component 'enrol_flatfile', language 'fr', version '4.1'.
  *
  * @package     enrol_flatfile
  * @category    string
@@ -42,7 +42,7 @@ $string['notifyadmin'] = 'Informer l\'administrateur';
 $string['notifyenrolled'] = 'Informer les utilisateurs inscrits';
 $string['notifyenroller'] = 'Informer l\'utilisateur responsable des inscriptions';
 $string['pluginname'] = 'Fichier plat (CSV)';
-$string['pluginname_desc'] = 'Cette méthode permet une vérification systématique à partir d\'un fichier texte spécialement mis en forme disposé à un emplacement que vous choisissez. Le fichier est en format CSV (séparateurs virgules) avec 4 ou 6 champs par ligne, à savoir :
+$string['pluginname_desc'] = 'Cette méthode permet une vérification systématique à partir d\'un fichier texte spécialement mis en forme disposé à un emplacement choisi. Le fichier est en format CSV (séparateurs virgules) avec 4 ou 6 champs par ligne, à savoir :
 
   opération, rôle, ID (utilisateur), ID (cours) [, début, fin]
 

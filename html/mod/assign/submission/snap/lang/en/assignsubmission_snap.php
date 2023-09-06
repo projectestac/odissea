@@ -33,15 +33,15 @@ $string['cloud_op_enabled'] = 'Snap! cloud features enabled but not selected by 
 $string['default'] = 'Selected by default in new assignments';
 $string['default_help'] = 'If set, this submission method will be selected by default for all new assignments.';
 $string['distros'] = 'Available Snap! distros';
-$string['distros_help'] = 'We need a current online distro (like Snap!-Berkeley, just the default value). '.
-    'But we can add other distros (one per line) and then, teachers will choose the one they need for each assignment. '.
-    'The format (for each entry) is: <b>&lt;code&gt; | &lt;visible name&gt; | &lt;url&gt;</b>. '.
-    'Keep the "code" parameter in future changes (url...) to maintain their relationship with the previous assignments. '.
-    'First distro is the default option for new assignments and for those with a "distro" disabled.';
+$string['distros_help'] = 'We need a current online distro (like Snap!-Berkeley, just the default value). 
+    But we can add other distros (one per line) and then, teachers will choose the one they need for each assignment. 
+    The format (for each entry) is: <b>&lt;code&gt; | &lt;visible name&gt; | &lt;url&gt;</b>. 
+    Keep the "code" parameter in future changes (url...) to maintain their relationship with the previous assignments. 
+    First distro is the default option for new assignments and for those with a "distro" disabled.';
 $string['enabled'] = 'Snap!';
-$string['enabled_help'] = 'If enabled, students are able to edit and send Snap! projects directly for their submission. ' .
-    'If a Snap! XML file is attached into the "Additional files" section, it will be used as a template (starting point) for the student '.
-    'when a new submission is created, instead of displaying a new (empty) Snap! project.';
+$string['enabled_help'] = 'If enabled, students are able to edit and send Snap! projects directly for their submission.
+    If a Snap! XML file is attached into the "Additional files" section, it will be used as a template (starting point) for the student
+    when a new submission is created, instead of displaying a new (empty) Snap! project.';
 $string['eventassessableuploaded'] = 'Snap! content uploaded.';
 $string['langmoodle'] = 'Use Moodle language';
 $string['langsnap'] = 'Snap! language';
@@ -61,8 +61,3 @@ $string['snapfilename'] = 'snapproject.xml';
 $string['snap_project'] = 'Project area';
 $string['snap_embedded'] = 'Snap! embedded in Moodle';
 $string['snap_readonlywarning'] = 'READ-ONLY MODE';
-$string['distros'] = 'Available Snap! distros';
-$string['disros_help'] = 'We need a current online distro (like Snap! berkeley, set by default). '.
-     'But we can add other distros (one by line) and then, teachers will choose the one they need for each assignment. '.
-     'The format (for each distro is): <b>&lt;code&gt; | &lt;visible name&gt; | &lt;url&gt;</b>. '.
-     'Keep the "code" parameter in future changes (url...) to maintain their relationship with the previous assignments.';

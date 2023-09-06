@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'ar', version '3.11'.
+ * Strings for component 'tool_assignmentupgrade', language 'ar', version '4.1'.
  *
  * @package     tool_assignmentupgrade
  * @category    string
@@ -55,7 +55,7 @@ $string['upgradeall'] = 'ترقية جميع التكاليف';
 $string['upgradeallconfirm'] = 'ترقية جميع التكاليف؟';
 $string['upgradeassignmentfailed'] = 'النتيجة: فشل ترقية. سجل من الترقية و:<br/><div class="tool_assignmentupgrade_upgradelog">{$a->log}</div>';
 $string['upgradeassignmentsuccess'] = 'النتيجة: ترقية ناجحة';
-$string['upgradeassignmentsummary'] = 'ترقية التكليف:{$a->name} (المقرر الدراسي:{$a->shortname})';
+$string['upgradeassignmentsummary'] = 'ترقية التكليف:{$a->name} (المساق:{$a->shortname})';
 $string['upgradeprogress'] = 'ترقية التكاليف الـ{$a->current}  من {$a->total}';
 $string['upgradeselected'] = 'ترقية تكاليف محددة';
 $string['upgradeselectedcount'] = 'ترقية التكاليف المُحدَّدة الـ{$a}';

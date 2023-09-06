@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datapreset_imagegallery', language 'gl', version '3.11'.
+ * Strings for component 'datapreset_imagegallery', language 'gl', version '4.1'.
  *
  * @package     datapreset_imagegallery
  * @category    string

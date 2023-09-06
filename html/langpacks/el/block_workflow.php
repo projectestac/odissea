@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_workflow', language 'el', version '3.11'.
+ * Strings for component 'block_workflow', language 'el', version '4.1'.
  *
  * @package     block_workflow
  * @category    string
@@ -65,8 +65,8 @@ $string['contexthasactiveworkflow'] = 'Το πλαίσιο αυτό έχει ή�
 $string['coursestartdate'] = 'η ημερομηνία έναρξης του μαθήματος';
 $string['coursestudentclose'] = 'το μάθημα είναι κλειστό για μαθητές';
 $string['coursestudentopen'] = 'το μάθημα είναι ανοιχτό για μαθητές';
-$string['coursetutorclose'] = 'το μάθημα είναι κλειστό για εκπαιδευτές';
-$string['coursetutoropen'] = 'το μάθημα είναι ανοιχτό για εκπαιδευτές';
+$string['coursetutorclose'] = 'το μάθημα είναι κλειστό για βοηθούς εκμάθησης';
+$string['coursetutoropen'] = 'το μάθημα είναι ανοιχτό για βοηθούς εκμάθησης';
 $string['create'] = 'Δημιουργία';
 $string['createemail'] = 'Δημιουργία νέου υποδείγματος μηνύματος ηλε.ταχυδρομείου.';
 $string['createstep'] = 'Δημιουργία βήματος';
@@ -164,7 +164,7 @@ $string['jumpstep'] = 'Άλμα στο βήμα';
 $string['jumptostep'] = 'Μεταπήδηση στο βήμα';
 $string['lastmodified'] = 'Τελευταία τροποποίηση';
 $string['manageworkflows'] = 'Διαχείριση ροών εργασίας';
-$string['messageprovider:notification'] = 'Ειδοποιήσεις και συναγερμικές ειδοποιήσεις ροής εργασίας';
+$string['messageprovider:notification'] = 'Ειδοποιήσεις και επαγρυπνήσεις ροής εργασίας';
 $string['missingfield'] = 'Το απαιτούμενο πεδίο λείπει: {$a}';
 $string['movedown'] = 'Μετακίνηση κάτω';
 $string['moveup'] = 'Μετακίνηση πάνω';

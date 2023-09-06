@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'ja', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'ja', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -31,7 +31,9 @@ $string['attachrecording'] = 'レコーディングを添付する';
 $string['audioandvideo'] = 'オーディオおよびビデオ';
 $string['audiobitrate'] = 'オーディオビットレート';
 $string['audiobitrate_desc'] = 'オーディオレコーディングの音質です (大きな数字ほど音質が高いことを意味します)';
-$string['audiortc'] = 'オーディオをレコーディングします。';
+$string['audiortc'] = 'オーディオをレコーディングする';
+$string['audiotimelimit'] = 'オーディオ時間制限 (秒)';
+$string['audiotimelimit_desc'] = 'オーディオクリップに許可される最大録音時間です。';
 $string['gumabort'] = 'ウェブカメラ/マイクの使用を妨げる問題が発生しました。';
 $string['gumabort_title'] = '問題発生';
 $string['gumnotallowed'] = 'ユーザはブラウザによるウェブカメラ/マイクへのアクセスを許可する必要があります。';
@@ -69,10 +71,13 @@ $string['startrecording'] = 'レコーディングを開始する';
 $string['stoprecording'] = 'レコーディングを終了する';
 $string['timelimit'] = '制限時間 (秒)';
 $string['timelimit_desc'] = 'オーディオ/ビデオクリップに許可される最大レコード長です。';
+$string['timelimitwarning'] = 'あなたはゼロより大きな数字を入力する必要があります。';
 $string['uploadaborted'] = 'アップロード中止:';
 $string['uploadfailed'] = 'アップロード失敗:';
 $string['uploadfailed404'] = 'アップロード失敗: ファイルが大きすぎます。';
 $string['uploadprogress'] = '完了';
 $string['videobitrate'] = 'ビデオビットレート';
 $string['videobitrate_desc'] = 'ビデオレコーディングの画質です (大きな数字ほど画質が高いことを意味します)';
-$string['videortc'] = 'ビデオをレコーディングします。';
+$string['videortc'] = 'ビデオをレコーディングする';
+$string['videotimelimit'] = 'ビデオ時間制限 (秒)';
+$string['videotimelimit_desc'] = 'ビデオクリップに許可される最大録画時間です。';

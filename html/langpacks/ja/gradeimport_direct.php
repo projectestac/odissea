@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'ja', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'ja', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -30,3 +30,4 @@ $string['pluginname'] = 'スプレッドシートから貼り付ける';
 $string['privacy:metadata'] = 'スプレッドシートのコピーから評定をインポートするインポートプラグインはいかなる個人データも保存しません。';
 $string['userdata'] = 'このフォームにデータをコピーする';
 $string['userdata_help'] = 'スプレッドシートから評点を評定表にコピー＆ペーストすることができます。スプレッドシートにはユーザ識別データを含むカラムが必要です - ユーザ名またはIDナンバーまたはメールアドレス。また、インポートするカラムそれぞれにカラムヘッダが必要です。';
+$string['userdata_link'] = 'grade/import/direct/index';

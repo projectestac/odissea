@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'zh_cn', version '3.11'.
+ * Strings for component 'cachestore_file', language 'zh_cn', version '4.1'.
  *
  * @package     cachestore_file
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['asyncpurge'] = '异步清除目录';
+$string['asyncpurge_help'] = '如果启用，将使用缓存修订创建新目录，并通过计划任务异步删除旧目录。';
 $string['autocreate'] = '自动建立目录';
 $string['autocreate_help'] = '若启用，将会自动建立不存在的指定目录。';
 $string['path'] = '缓存路径';
@@ -42,3 +44,4 @@ $string['singledirectory_help'] = '如果启用，文件（缓存项目）将被
 
 * 如果你知道缓存中的项目数量将足够小，不会引起你正在运行的文件系统出现问题。
 * 被缓存的数据产生的成本并不高。如果是这样的话，坚持使用默认值可能仍然是更好的选择，因为它减少了问题出现的几率。';
+$string['task_asyncpurge'] = '异步清除文件存储的旧缓存修订目录';

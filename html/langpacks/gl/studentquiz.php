@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'gl', version '3.11'.
+ * Strings for component 'studentquiz', language 'gl', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -180,3 +180,4 @@ $string['mine_column_name'] = 'Meu';
 $string['missingparam'] = 'Un parámetro necesario está ausente ou é erróneo';
 $string['moderator'] = 'Moderador';
 $string['modulename'] = 'Cuestionario de estudiante';
+$string['modulename_link'] = 'mod/studentquiz/view';

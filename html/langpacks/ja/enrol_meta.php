@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'ja', version '3.11'.
+ * Strings for component 'enrol_meta', language 'ja', version '4.1'.
  *
  * @package     enrol_meta
  * @category    string
@@ -42,3 +42,7 @@ $string['pluginname_desc'] = 'コースメタリンク登録プラグインで�
 $string['privacy:metadata:core_group'] = 'コースメタリンクプラグインは新しいグループを作成または既存のグループを使用してコースにリンクされた参加者すべてを追加することができます。';
 $string['syncall'] = 'すべての登録済みユーザを同期する';
 $string['syncall_desc'] = 'この設定を有効にした場合、親コースにロールがない場合でも登録済みユーザすべてが同期されます。この設定を無効にした場合、少なくとも1つの同期ロールが割り当てられているユーザのみが子コースに登録されます。';
+$string['wscannotcreategroup'] = 'コースID「 {$a} 」でリンクされるグループを作成するためのパーミッションがありません。';
+$string['wsinvalidcourse'] = 'コースID「 {$a} 」が存在しないか、メタ登録にリンクするためのパーミッションがありません。';
+$string['wsinvalidmetacourse'] = 'メタコースID「 {$a} 」が存在しないか、登録インスタンスを追加するためのパーミッションがありません。';
+$string['wsnoinstancesspecified'] = '指定されたインスタンスはありません。';

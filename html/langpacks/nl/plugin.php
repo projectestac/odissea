@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'nl', version '3.11'.
+ * Strings for component 'plugin', language 'nl', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -67,6 +67,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Er zijn geen plugins van dit type geïnstalleerd';
 $string['notdownloadable'] = 'Kan pakket niet downloaden';
 $string['notdownloadable_help'] = 'Het ZIP-pakket met de update kan niet automatisch gedownload worden.';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = 'Notities';
 $string['notsupported'] = 'Plugin zou niet-compatibel kunnen zijn met Moodle versie {$a}';
 $string['notwritable'] = 'Pluginbestanden niet beschrijfbaar';
@@ -125,6 +126,8 @@ $string['type_calendartype'] = 'Kalendertype';
 $string['type_calendartype_plural'] = 'Kalendertypes';
 $string['type_contentbank'] = 'Inhoudsbank';
 $string['type_contentbank_plural'] = 'Inhoudsbank plugins';
+$string['type_contenttype'] = 'Inhoudsbank';
+$string['type_contenttype_plural'] = 'Inhoudsbank plugins';
 $string['type_coursereport'] = 'Cursusrapport';
 $string['type_coursereport_plural'] = 'Cursusrapporten';
 $string['type_customfield'] = 'Aangepast veld';
@@ -173,6 +176,8 @@ $string['type_portfolio'] = 'Portfolio';
 $string['type_portfolio_plural'] = 'Portfolio\'s';
 $string['type_profilefield'] = 'Profielveldtype';
 $string['type_profilefield_plural'] = 'Profielveldtypes';
+$string['type_qbank'] = 'Plugin voor vragenpool';
+$string['type_qbank_plural'] = 'Plug-ins voor vragenpool';
 $string['type_qbehaviour'] = 'Vragengedrag';
 $string['type_qbehaviour_plural'] = 'Vragengedrag';
 $string['type_qformat'] = 'Vraag import/export opmaak';
@@ -222,6 +227,7 @@ $string['validationmsg_maturity'] = 'Verklaar maturiteitsniveau';
 $string['validationmsg_maturity_help'] = 'De plugin kan verklaren hoe volwassen de code is. Als degene die de code onderhoud vindt dat de code stabiel is, dan zal er MATURITY_STABLE staan. Alle andere niveau\'s (zoals alfa of beta) moeten als niet stabiel beschouwd worden en er wordt een waarschuwing getoond.';
 $string['validationmsg_missingcomponent'] = 'Plugin verklaart zijn componentnaam niet';
 $string['validationmsg_missingcomponent_help'] = 'Alle plugins moeten hun volledige componentnaam geven via de `$plugin->component` verklaring in het bestand version.php.';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = 'Fout in de bestandsnaam van het Engelstalig taalpakket';
 $string['validationmsg_missingexpectedlangenfile_info'] = 'Het plugin-type mist het verwachte Engelstalig taalbestand {$a}.';
 $string['validationmsg_missinglangenfile'] = 'Geen Engelstalig taalpakket gevonden';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'ur', version '3.11'.
+ * Strings for component 'block_glossary_random', language 'ur', version '4.1'.
  *
  * @package     block_glossary_random
  * @category    string
@@ -25,23 +25,27 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addentry'] = 'اپنے ذاتی پسندیدہ قول کا اضافہ کریں';
-$string['askaddentry'] = 'جب استعمال کنندگان فرہنگ میں اضافہ کریں تو لنک ان الفاظ سے ظاہر کرو';
-$string['askinvisible'] = 'جب استعمال کنندگان فرہنگ میں اضافہ کریں تو یہ صرف الفاظ  ظاہر کرو';
-$string['askviewglossary'] = 'جب استعمال کنندگان صرف فرہنگ دیکھ سکیں، اضافہ نا کر سکیں تو ان الفاظ سے لنک ظاہر کرو';
-$string['intro'] = 'تصدیق کر لیں کہ آپ کے پاس ایک گلاسری کے ساتھ کم از کم ایک اندراج اس کورس کیلیے ہے  تاکہ آپ مندرجہ ذیل سیٹینگز کو موافق بنا سکیں';
+$string['addentry'] = 'ایک نیا اندراج شامل کریں';
+$string['askaddentry'] = 'جب صارفین لغت میں اندراجات شامل کر سکتے ہیں، تو اس متن کے ساتھ ایک لنک دکھائیں';
+$string['askinvisible'] = 'جب صارف لغت میں ترمیم یا دیکھ نہیں سکتے تو یہ متن دکھائیں (بغیر لنک کے)';
+$string['askviewglossary'] = 'جب صارف لغت کو دیکھ سکتے ہیں لیکن اندراجات شامل نہیں کر سکتے ہیں، تو اس متن کے ساتھ ایک لنک دکھائیں';
+$string['glossary_random:addinstance'] = 'ایک نیا بے ترتیب لغت کا اندراج بلاک شامل کریں';
+$string['glossary_random:myaddinstance'] = 'ڈیش بورڈ میں ایک نیا بے ترتیب لغت کا اندراج بلاک شامل کریں';
+$string['intro'] = 'یقینی بنائیں کہ آپ کے پاس اس کورس میں کم از کم ایک اندراج کے ساتھ کم از کم ایک لغت ہے۔ پھر آپ درج ذیل ترتیبات کو ایڈجسٹ کر سکتے ہیں۔';
 $string['invisible'] = '(جاری ھے)';
-$string['lastmodified'] = 'آخری تبدیل کردہ اضافہ';
+$string['lastmodified'] = 'آخری ترمیم شدہ اندراج';
+$string['nextalpha'] = 'حروف تہجی کی ترتیب';
 $string['nextone'] = 'اگلا اضافہ';
-$string['noentriesyet'] = 'منتخب کردہ فرہنگ میں کچھ موجود نہیں';
-$string['notyetconfigured'] = 'براہ مہربانی اس بلاک کو ردو بدل کرنے والے آئیکن کی مدد سےتشکیل دیں';
-$string['notyetglossary'] = 'آپ کو کم از کم ایک فرہنگ کو منتخب کرنا ہے';
-$string['pluginname'] = 'فرہنگ میں بے قصد اضافہ';
-$string['random'] = 'بے قصد اضافہ';
-$string['refresh'] = 'نئے اضافےکے منتخب کرنے سے پہلے کے دن';
-$string['select_glossary'] = 'اس فرہنگ سے اضافہ کے لیے لو';
-$string['showconcept'] = 'ہر اضافہ کیلیے قیاس کی سرخی دکھاؤ';
+$string['noentriesyet'] = 'منتخب کردہ لغت میں ابھی تک کوئی اندراج نہیں ہے۔';
+$string['notyetconfigured'] = 'براہ کرم ترمیم کے آئیکن کا استعمال کرتے ہوئے اس بلاک کو ترتیب دیں۔';
+$string['notyetglossary'] = 'آپ کو منتخب کرنے کے لیے کم از کم ایک لغت کی ضرورت ہے۔';
+$string['pluginname'] = 'بے ترتیب لغت کا اندراج';
+$string['privacy:metadata'] = 'رینڈم لغت کے اندراج کا بلاک صرف دوسرے مقامات پر ذخیرہ شدہ ڈیٹا کو دکھاتا ہے۔';
+$string['random'] = 'بے ترتیب اندراج';
+$string['refresh'] = 'نئے اندراج کے انتخاب سے چند دن پہلے';
+$string['select_glossary'] = 'اس لغت سے اندراجات لیں';
+$string['showconcept'] = 'ہر اندراج کے لیے تصور (ہیڈنگ) دکھائیں';
 $string['title'] = 'عنوان';
-$string['type'] = 'کس طرح نئے اضافہ کا انتخاب ہو';
-$string['viewglossary'] = 'مزید اقوال';
-$string['whichfooter'] = 'فرہنگ کے کاروائیوں کے لنکس کو ظاہر کرسکتے ہیں جو اس بلاک سے وابسطہ ہیں۔ بلاک صرف ان کاروائیوں کے لنکس ظاہر کرے گا جو اس فرہنگ کیلیے مجاز ہوں گے۔';
+$string['type'] = 'نئے اندراج کا انتخاب کیسے کیا جاتا ہے';
+$string['viewglossary'] = 'تمام اندراجات دیکھیں';
+$string['whichfooter'] = 'آپ لغت کی کارروائیوں کے لنکس دکھا سکتے ہیں جس سے یہ بلاک وابستہ ہے۔ بلاک صرف ان اعمال کے لنکس دکھائے گا جو اس لغت کے لیے فعال ہیں۔';

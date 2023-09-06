@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ca', version '3.11'.
+ * Strings for component 'lesson', language 'ca', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -52,7 +52,6 @@ $string['addedendofcluster'] = 'S\'ha afegit un final de clúster';
 $string['addendofbranch'] = 'Afegeix un final de branca';
 $string['addendofcluster'] = 'Afegeix un final de clúster';
 $string['addessay'] = 'Crea una pàgina de pregunta d\'assaig';
-$string['additionalattemptsremaining'] = 'Completada. Podeu reintentar la lliçó.';
 $string['addmatching'] = 'Crea una pàgina de pregunta d\'aparellaments';
 $string['addmultichoice'] = 'Crea una pàgina de pregunta de resposta múltiple';
 $string['addnewgroupoverride'] = 'Afegeix una excepció de grup';
@@ -187,7 +186,9 @@ $string['editcluster'] = 'S\'està editant un clúster';
 $string['editendofbranch'] = 'S\'està editant una pàgina de final de branca';
 $string['editendofcluster'] = 'S\'està editant una pàgina de final de clúster';
 $string['editessay'] = 'S\'està editant una pàgina de pregunta d\'assaig';
+$string['editinglesson'] = 'S\'està editant la lliçó';
 $string['editingquestionpage'] = 'S\'està editant la pàgina de preguntes {$a}';
+$string['editlesson'] = 'Edita la lliçó';
 $string['editlessonsettings'] = 'Edita els paràmetres de la lliçó';
 $string['editmatching'] = 'S\'està editant una pàgina de pregunta d\'aparellament';
 $string['editmultichoice'] = 'S\'està editant una pàgina de pregunta de resposta múltiple';
@@ -278,10 +279,12 @@ $string['indicator:cognitivedepth'] = 'Llíçó cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en l\'aprofundiment cognitiu assolit per l\'estudiant en una activitat de lliçó.';
 $string['indicator:cognitivedepthdef'] = 'Lliçó: aspecte cognitiu';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge d\'implicació cognitiva oferta per les activitats de Lliçó durant l\'interval d\'anàlisi (Nivells = No vist, Vist, Enviat, Vista la retroacció, Comentaris a la retroacció, Reenviament després de veure la retroacció)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Lliçó social';
 $string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en l\'amplitud social assolida per l\'estudiant en una activitat de lliçó.';
 $string['indicator:socialbreadthdef'] = 'Lliçó: aspecte social';
 $string['indicator:socialbreadthdef_help'] = 'El participant ha assolit aquest percentatge d\'implicació social oferta per les activitats de la lliçó durant l\'interval d\'anàlisi (Nivells = No participació, Participació individual, Participació en grup)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insertedpage'] = 'S\'ha inserit la pàgina';
 $string['invalidfile'] = 'Fitxer no vàlid';
 $string['invalidid'] = 'No s\'ha passat un ID de lliçó o de mòdul del curs';
@@ -304,12 +307,10 @@ $string['lesson:view'] = 'Mostra l\'activitat de la lliçó';
 $string['lesson:viewreports'] = 'Mostra els informes de la lliçó';
 $string['lessonclosed'] = 'La lliçó es va tancar el {$a}.';
 $string['lessoncloses'] = 'Es tanca la lliçó';
-$string['lessoncloseson'] = 'La lliçó es tanca el {$a}';
 $string['lessoneventcloses'] = '{$a} es tanca el';
 $string['lessoneventopens'] = '{$a} s\'obre el';
 $string['lessonformating'] = 'Formatatge de la lliçó.';
 $string['lessonmenu'] = 'Menú de la lliçó';
-$string['lessonname'] = 'Lliçó: {$a}';
 $string['lessonnotready'] = 'Encara no es pot entrar en aquesta lliçó. Contacteu amb el vostre {$a}.';
 $string['lessonnotready2'] = 'Aquesta lliçó encara no està preparada per a ser oberta.';
 $string['lessonopen'] = 'La lliçó s\'obrirà el {$a}.';
@@ -354,6 +355,7 @@ Les lliçons es poden emprar:
 * Per a l\'autoaprenentatge de matèria nova
 * Per a exercicis d\'escenaris o simulacions / presa de decisions
 * Per al repàs diferenciat, amb diferents conjunts de preguntes de repàs que es mostraran en funció de les respostes inicials de l\'estudiant';
+$string['modulename_link'] = 'mod/lesson/view';
 $string['modulenameplural'] = 'Lliçons';
 $string['move'] = 'Mou la pàgina';
 $string['movedpage'] = 'S\'ha mogut la pàgina';
@@ -605,7 +607,6 @@ $string['withselectedattempts'] = 'Amb els intents seleccionats...';
 $string['wronganswerjump'] = 'Salt de resposta errònia';
 $string['wronganswerscore'] = 'Puntuació de resposta errònia';
 $string['wrongresponse'] = 'Resposta errònia';
-$string['xattempts'] = '{$a} intents';
 $string['youhaveseen'] = 'Ja heu vist més d\'una pàgina d\'aquesta lliçó.<br /> Voleu començar a la darrera pàgina que vau veure?';
 $string['youranswer'] = 'La vostra resposta';
 $string['yourcurrentgradeis'] = 'La vostra qualificació actual és {$a}';

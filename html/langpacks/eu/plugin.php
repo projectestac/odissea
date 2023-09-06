@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'eu', version '3.11'.
+ * Strings for component 'plugin', language 'eu', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -67,6 +67,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Honelako pluginak ez daude instalatuta';
 $string['notdownloadable'] = 'Ezin da paketea jaitsi';
 $string['notdownloadable_help'] = 'Eguneraketa duen ZIP paketea ezin da automatikoki jaitsi.';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = 'Oharrak';
 $string['notsupported'] = 'Plugina agian ez da bateragarria Moodleko bertsioarekin {$a}';
 $string['notwritable'] = 'Pluginaren fitxategiak ezin dira idatzi';
@@ -125,6 +126,8 @@ $string['type_calendartype'] = 'Egutegi mota';
 $string['type_calendartype_plural'] = 'Egutegi motak';
 $string['type_contentbank'] = 'Eduki-bankua';
 $string['type_contentbank_plural'] = 'Eduki-bankuko pluginak';
+$string['type_contenttype'] = 'Eduki-bankua';
+$string['type_contenttype_plural'] = 'Eduki-bankuko pluginak';
 $string['type_coursereport'] = 'Ikastaroaren txostena';
 $string['type_coursereport_plural'] = 'Ikastaroaren txostenak';
 $string['type_customfield'] = 'Eremu pertsonalizatua';
@@ -173,6 +176,8 @@ $string['type_portfolio'] = 'Portfolioa';
 $string['type_portfolio_plural'] = 'Portfolioak';
 $string['type_profilefield'] = 'Profilerako eremu mota';
 $string['type_profilefield_plural'] = 'Profilerako eremu motak';
+$string['type_qbank'] = 'Galdera-bankuko plugina';
+$string['type_qbank_plural'] = 'Galdera-bankuko pluginak';
 $string['type_qbehaviour'] = 'Galderen jokaera';
 $string['type_qbehaviour_plural'] = 'Galderen jokaerak';
 $string['type_qformat'] = 'Galdera inportatzeko/esportatzeko formatua';
@@ -222,6 +227,7 @@ $string['validationmsg_maturity'] = 'Adierazitako kode-heldutasuna';
 $string['validationmsg_maturity_help'] = 'Pluginak bere heldutasun-maila adierazi dezake. Arduradunak plugina egonkorra dela uste badu, adierazitako heldutasun-maila MATURITY_STABLE izango da. Beste heldutasun-maila guztiak (hala nola alpha edo beta) ezegonkortzat hartu beharko lirateke eta abisu bat erakutsiko da.';
 $string['validationmsg_missingcomponent'] = 'Pluginak ez du bere osagaiaren izenik adierazten';
 $string['validationmsg_missingcomponent_help'] = 'Plugin guztiek bere osagaiaren izen osoa adierazi behar dute `$plugin->component` adierazpenaren bidez version.php fitxategian.';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = 'Ingelesezko hizkuntza fitxategiaren izena ez dator bat';
 $string['validationmsg_missingexpectedlangenfile_info'] = 'Emandako plugin motak ez du espero zen {$a} ingelesezko hizkuntza fitxategia.';
 $string['validationmsg_missinglangenfile'] = 'Ez da ingelesaren hizkuntza-fitxategia aurkitu';

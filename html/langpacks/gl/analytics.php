@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'gl', version '3.11'.
+ * Strings for component 'analytics', language 'gl', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -41,7 +41,7 @@ $string['defaultpredictoroption'] = 'Procesador predeterminado ({$a})';
 $string['defaulttimesplittingmethods'] = 'Intervalos de análise predeterminados para a avaliación do modelo';
 $string['defaulttimesplittingmethods_help'] = 'O intervalo de análise define cando o sistema calculará as predicións e a parte dos rexistros de actividade que serán considerados para esas predicións. O proceso de avaliación do modelo reiterará a través destes intervalos de análise a menos que se especifique un intervalo de análise específico.';
 $string['disabledmodel'] = 'Modelo desactivado';
-$string['erroralreadypredict'] = 'O ficheiro {$a} xa foi usado para xerar predicións.';
+$string['erroralreadypredict'] = 'O ficheiro {$ a} xa foi usado para xerar predicións.';
 $string['errorcannotreaddataset'] = 'Non é posíbel ler o ficheiro do conxunto de datos {$a}.';
 $string['errorcannotusetimesplitting'] = 'Non é posíbel usar o intervalo fornecido para este modelo.';
 $string['errorcannotwritedataset'] = 'Non é posíbel escribir no ficheiro de conxunto de datos {$a}';
@@ -51,7 +51,7 @@ $string['errorimportmissingclasses'] = 'Os seguintes compoñentes analíticos no
 $string['errorimportmissingcomponents'] = 'O modelo fornecido require a instalación dos seguintes engadidos: {$a}. Teña en conta que as versións non necesariamente deben coincidir coas versións instaladas no seu sitio. A instalación do mesmo ou unha versión máis recente do engadido debería estar ben na maioría dos casos.';
 $string['errorimportversionmismatches'] = 'A versión dos seguintes compoñentes é diferente da versión instalada neste sitio: {$a}. Pode usar a opción «Ignorar os desaxustes de versións» para ignorar estas diferenzas.';
 $string['errorinvalidcontexts'] = 'Algúns dos contextos seleccionados non se poden usar neste destino.';
-$string['errorinvalidindicator'] = 'Indicador {$a} non válido';
+$string['errorinvalidindicator'] = 'Indicador non válido de {$a}';
 $string['errorinvalidtarget'] = 'Destino {$a} non válido';
 $string['errorinvalidtimesplitting'] = 'Intervalo de análise non válido; asegúrese de engadir o nome de clase totalmente cualificado.';
 $string['errornocontextrestrictions'] = 'O destino seleccionado non admite restricións de contexto';

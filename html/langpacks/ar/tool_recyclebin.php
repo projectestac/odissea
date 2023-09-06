@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'ar', version '3.11'.
+ * Strings for component 'tool_recyclebin', language 'ar', version '4.1'.
  *
  * @package     tool_recyclebin
  * @category    string
@@ -31,8 +31,8 @@ $string['alertrestored'] = 'تمت استعادة {$a->name}.';
 $string['autohide'] = 'إخفاء تلقائي';
 $string['autohide_desc'] = 'يخفي رابط سلة المحذوفات تلقائياً عندما تكون فارغة.';
 $string['categorybinenable'] = 'تمكين سلة المحذوفات للتصنيفات';
-$string['categorybinexpiry'] = 'فترة حياة المقرر الدراسي';
-$string['categorybinexpiry_desc'] = 'كم من الوقت ينبغي أن يبقى المقرر الدراسي المحذوف في سلة المحذوفات؟';
+$string['categorybinexpiry'] = 'فترة حياة المساق';
+$string['categorybinexpiry_desc'] = 'كم من الوقت ينبغي أن يبقى المساق المحذوف في سلة المحذوفات؟';
 $string['coursebinenable'] = 'تمكين سلة المحذوفات';
 $string['coursebinexpiry'] = 'فترة حياة العنصر';
 $string['coursebinexpiry_desc'] = 'كم من الوقت ينبغي أن يبقى العنصر المحذوف في سلة المحذوفات؟';

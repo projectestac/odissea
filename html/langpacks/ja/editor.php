@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'ja', version '3.11'.
+ * Strings for component 'editor', language 'ja', version '4.1'.
  *
  * @package     editor
  * @category    string
@@ -54,10 +54,11 @@ $string['createanchor'] = 'アンカーを作成する';
 $string['createfolder'] = 'フォルダを作成する';
 $string['createlink'] = 'ウェブリンクを挿入する';
 $string['cut'] = '選択したものを切り取る';
-$string['cutpastemozilla'] = '大変残念ですが、現在通常のキーボードショートカット (ペーストボタンも) を使用できません。これはMozillaおよびFirefoxブラウザのいくつかのバージョンにセキュリティ機能が組み込まれたことが原因しています。<br /><br />これに関して3つの対処方法があります: <br /> (1) CTRL + vを使用する代わりにSHIFT + Insertを使用する。<br /> (2) ブラウザの「編集->貼り付け」メニュを使用する。<br /> (3) user.jsファイルを編集してあなたのブラウザプリファレンスを変更する。<br /><br />ヘルプを表示するには下のOKボタンをクリックしてください。エディタに戻るにはキャンセルをクリックしてください。';
+$string['cutpastemozilla'] = '大変残念ですが、現在通常のキーボードショートカット (ペーストボタンも) を使用できません。これはMozillaおよびFirefoxブラウザのいくつかのバージョンにセキュリティ機能が組み込まれたことが原因しています。<br /><br />これに関して3つの対処方法があります: <br /> (1) CTRL + vを使用する代わりにSHIFT + Insertを使用する。<br /> (2) ブラウザの「編集->貼り付け」メニューを使用する。<br /> (3) user.jsファイルを編集してあなたのブラウザプレファレンスを変更する。<br /><br />ヘルプを表示するには下のOKボタンをクリックしてください。エディタに戻るにはキャンセルをクリックしてください。';
 $string['delete'] = '削除';
 $string['editors'] = 'テキストエディタ';
 $string['editorsettings'] = 'エディタを管理する';
+$string['editorxformat'] = '{$a} フォーマット';
 $string['enterurlfirst'] = 'あなたは最初にURLを入力する必要があります。';
 $string['filebrowser'] = 'ファイルブラウザ';
 $string['findwhat'] = '検索';
@@ -119,8 +120,8 @@ $string['pixels'] = 'ピクセル';
 $string['pleaseenteralt'] = '代替テキストを入力してください。';
 $string['popupeditor'] = 'エディタを大きくする';
 $string['preformatted'] = '整形済み';
-$string['preview'] = 'プレビュ';
-$string['privacy:metadata:preference:htmleditor'] = 'テキストエディタのプリファレンスです。';
+$string['preview'] = 'プレビュー';
+$string['privacy:metadata:preference:htmleditor'] = 'テキストエディタのプレファレンスです。';
 $string['privacy:preference:htmleditor'] = 'あなたがHTMLテキストの記述に使用する優先エディタは {$a} です。';
 $string['properties'] = '属性';
 $string['redo'] = 'やり直す';

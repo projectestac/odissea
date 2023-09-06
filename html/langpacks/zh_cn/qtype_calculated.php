@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -55,6 +55,7 @@ $string['deletelastitem'] = '删除最后一项';
 $string['distributionoption'] = '选择分配选项';
 $string['editdatasets'] = '编辑通配符数据集';
 $string['editdatasets_help'] = '在每个通配符域输入一个数，然后点击添加按钮，可以创建通配符的值。如想自动生成 10 个或更多个值，先选择需要几个值，然后再点击添加按钮。均匀分布的意思是在上下限之间的任何值都有均等的生成概率；对数均匀分布的意思是越小的值生成的概率越大。';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = '使用一个现有的共享数据集';
 $string['existingcategory2'] = '此类别中的其它题目也使用的文件集中的一个文件';
 $string['existingcategory3'] = '此类别中的其它题目也使用的链接集中的一个链接';
@@ -111,6 +112,7 @@ $string['param'] = '参数 {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = '给任意部分正确答案';
 $string['pluginname'] = '计算题';
 $string['pluginname_help'] = '在计算题中，每道题都可以使用通配符（放在大括号中），而在答题时通配符会被替换。例如，题目是“长为{l}宽为{w}的长方形面积是多少？”的正确答案计算公式是“{l}*{w}”（*表示乘法）。';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = '增加一道计算题';
 $string['pluginnameediting'] = '编辑计算问题';
 $string['pluginnamesummary'] = '计算题和数值题类似，但在答题时，题目中的数可以从一个集合中随机选择。';

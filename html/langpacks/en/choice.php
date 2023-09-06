@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'en', version '3.11'.
+ * Strings for component 'choice', language 'en', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'Modify and delete responses';
 $string['choice:downloadresponses'] = 'Download responses';
 $string['choice:readresponses'] = 'View responses';
 $string['choice:view'] = 'View choice activity';
-$string['choiceactivityname'] = 'Choice: {$a}';
 $string['choiceclose'] = 'Allow responses until';
-$string['choicecloseson'] = 'Choice closes on {$a}';
 $string['choicefull'] = 'One or more of the options you have selected have already been filled. Your response has not been saved. Please make another selection.';
 $string['choicename'] = 'Choice name';
 $string['choiceopen'] = 'Allow responses from';

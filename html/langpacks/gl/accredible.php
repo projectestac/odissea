@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'gl', version '3.11'.
+ * Strings for component 'accredible', language 'gl', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityname'] = 'Nome da actividade';
 $string['apikeylabel'] = 'Chave API';
 $string['description'] = 'Descrición';
+$string['modulename_link'] = 'mod/accredible/view';

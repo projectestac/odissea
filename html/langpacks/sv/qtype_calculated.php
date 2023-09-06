@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'sv', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'sv', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -55,6 +55,7 @@ $string['deletelastitem'] = 'Ta bort sista objektet';
 $string['distributionoption'] = 'Välj alternativ för distribution';
 $string['editdatasets'] = 'Redigera  datamängder för wildcard';
 $string['editdatasets_help'] = 'Wildcard värden kan skapas genom att ange en siffra i varje wild card fälte och sedan klicka på knappen "Lägg till". För att automatiskt generera 10 eller fler värden kan du välja hur många värden som krävs innan du klickar på knappen "Lägg till". En likformig fördelning av varje värde mellan gränserna är lika sannolik att genereras som en loguniform fördelning vilket innebär att värden mot den undre gränsen är mer sannolika.';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = 'kommer att använda en redan befintlig delad datauppsättning';
 $string['existingcategory2'] = 'en fil från en redan existerande uppsättning filer som också används av andra frågor i denna kategori';
 $string['existingcategory3'] = 'en länk från en redan existerande uppsättning länkar som också används av andra frågor i denna kategori';
@@ -111,6 +112,7 @@ $string['param'] = 'Parameter <strong>{$a}</strong>';
 $string['partiallycorrectfeedback'] = 'För alla delvis korrekta svar';
 $string['pluginname'] = 'Beräknad';
 $string['pluginname_help'] = 'Beräknade frågor möjliggör att enskilda numeriska frågor kan skapas med hjälp av platshållare i klammerparenteser som ersätts av individuella värden när kunskapstestet genomförs. Till exempel skulle frågan <em>"Vad är arean av en rektangel med längden {L} och bredden {B}?"</em> ha en svarsformel <code>{L} * {B}</code> där <code>*</code> betecknar multiplikation.';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = 'Lägga till en beräknad fråga';
 $string['pluginnameediting'] = 'Redigerar en Beräknad fråga';
 $string['pluginnamesummary'] = 'Beräknade frågor är som numeriska frågor,  med skillnaden att siffror som används väljs slumpmässigt från en datamängd när testet tas.';

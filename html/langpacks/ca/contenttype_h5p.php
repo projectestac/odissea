@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contenttype_h5p', language 'ca', version '3.11'.
+ * Strings for component 'contenttype_h5p', language 'ca', version '4.1'.
  *
  * @package     contenttype_h5p
  * @category    string
@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Contingut interactiu H5P';
 $string['h5p:access'] = 'Accediu a contingut H5P des del tauler de contingut';
-$string['h5p:upload'] = 'Penja contingut H5P nou';
-$string['h5p:useeditor'] = 'Crea o edita contingut utilitzant l\'editor H5P';
+$string['h5p:upload'] = 'Pengeu contingut H5P nou';
+$string['h5p:useeditor'] = 'Creeu o editeu contingut utilitzant l\'editor d\'H5P';
 $string['pluginname'] = 'H5P';
 $string['pluginname_help'] = 'Banc de contingut per penjar i compartir contingut H5P';
 $string['privacy:metadata'] = 'El connector del banc de contingut H5P no emmagatzema cap dada personal.';

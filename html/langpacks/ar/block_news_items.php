@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_news_items', language 'ar', version '3.11'.
+ * Strings for component 'block_news_items', language 'ar', version '4.1'.
  *
  * @package     block_news_items
  * @category    string
@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['news_items:addinstance'] = 'إضافة كتلة آخر الأخبار جديدة';
-$string['news_items:myaddinstance'] = 'إضافة كتلة جديدة لأحدث الإعلانات إلى لوحة التحكم';
+$string['news_items:myaddinstance'] = 'إضافة كتلة جديدة لأحدث الإعلانات إلى دفة القيادة';
 $string['pluginname'] = 'آخر الإعلانات';
 $string['privacy:metadata'] = 'كتلة آخر الإعلانات تظهر فقط البيانات المخزونة في المنتدى ولا تخزن أي بيانات بحد ذاتها.';

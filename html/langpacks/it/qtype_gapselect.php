@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'it', version '3.11'.
+ * Strings for component 'qtype_gapselect', language 'it', version '4.1'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -41,6 +41,7 @@ $string['group'] = 'Gruppo';
 $string['pleaseputananswerineachbox'] = 'Per favore inserisci una risposta in ciascuno spazio';
 $string['pluginname'] = 'Scelta delle parole mancanti';
 $string['pluginname_help'] = 'Inserisci del testo del tipo "Il [[1]] saltò sopra il [[2]]", quindi inserisci sotto le parole mancanti in 1 e 2,';
+$string['pluginname_link'] = 'question/type/gapselect';
 $string['pluginnameadding'] = 'Inserimento domanda Scelta delle parole mancanti';
 $string['pluginnameediting'] = 'Modifica domanda Scelta delle parole mancanti';
 $string['pluginnamesummary'] = 'Nel testo della domanda le parole mancanti vengono inserite tramite menu a discesa.';

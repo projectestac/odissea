@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'nl', version '3.11'.
+ * Strings for component 'report_security', language 'nl', version '4.1'.
  *
  * @package     report_security
  * @category    string
@@ -25,6 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['check_antivirus_details'] = 'Deze status controleert of er een recente fout is gedetecteerd op basis van de drempel die is ingesteld in de belangrijkste antivirusinstellingen.';
+$string['check_antivirus_error'] = '{$a->errors} fouten zijn gedetecteerd in de laatste {$a->lookback}';
+$string['check_antivirus_info'] = 'Er zijn momenteel geen antivirusscanners ingeschakeld';
+$string['check_antivirus_logstore_not_supported'] = 'Kan de status van antivirusscanners niet verifiëren vanwege het gekozen type logarchief';
+$string['check_antivirus_name'] = 'Antivirus';
+$string['check_antivirus_ok'] = '{$a->scanners} antivirusscanner(s) ingeschakeld, er zijn geen problemen gedetecteerd in de laatste {$a->lookback}';
 $string['check_configrw_details'] = '<p>We raden aan om de rechten op het bestand <code>config.php</code> te wijzigen na installatie, zodat het bestand niet door de webserver gewijzigd kan worden.
 Merk op dat dit de veiligheid van de server niet enorm gaat verhogen, maar het kan inbraken vertragen of beperken.</p>';
 $string['check_configrw_name'] = 'config.php beschrijfbaar';
@@ -41,7 +47,8 @@ $string['check_crawlers_info'] = 'Zoekrobots mogen binnen als gasten';
 $string['check_crawlers_name'] = 'Open voor Google';
 $string['check_crawlers_ok'] = 'Gast-toegang voor zoekrobots uitgeschakeld';
 $string['check_defaultuserrole_details'] = '<p>Alle aangemelde gebruikers krijgen de mogelijkheden van de standaard rol. Zorg er voor dat er geen gevaarlijke mogelijkheden toegelaten zijn in deze rol.</p>
-<p>De enige ondersteunde verouderde rol voor de standaard gebruiker is de rol: <em>geauthenticeerde gebruiker</em>. De bekijk cursusmogelijkheid kan beter niet ingeschakeld zijn.</p>';
+<p>De enige ondersteunde verouderde rol voor de standaard gebruiker is de rol: <em>geauthenticeerde gebruiker</em>. De bekijk cursusmogelijkheid kan beter niet ingeschakeld zijn.</p>
+<p>Controleer of de de tool voor automatisch aanvraag om gegevens verwijderen (tool_dataprivacy | automaticdatadeletionapproval) is ingeschakeld. Gebruikers kunnen dan aanvragen om gegevensverwijdering aanvragen die grote hoeveelheden gegevens kunnen verwijderen.</p>';
 $string['check_defaultuserrole_error'] = 'Fout gedefinieerde standaard rol "{$a}" gedetecteerd!';
 $string['check_defaultuserrole_name'] = 'Standaard rol voor alle gebruikers';
 $string['check_defaultuserrole_notset'] = 'Standaardrol niet ingeschakeld';
@@ -61,12 +68,12 @@ $string['check_embed_details'] = '<p>Het onbeperkt embedden van objecten is erg 
 $string['check_embed_error'] = 'Onbeperkt embedden van objecten ingeschakeld - dit is erg gevaarlijk voor de meeste servers.';
 $string['check_embed_name'] = 'EMBED en OBJECT toelaten';
 $string['check_embed_ok'] = 'Onbeperkt embedden van objecten is niet toegelaten';
-$string['check_frontpagerole_details'] = '<p>Alle geregistreerde gebruikers krijgen de standaardrol voor de startpagina voor activiteiten op die pagina.</p>
-<p>Er wordt aangeraden een speciale rol hiervoor te maken en de verouderde  standaardrollen niet te gebruiken.</p>';
-$string['check_frontpagerole_error'] = 'Fout gedefinieerde starpaginarol "{$a}" gedetecteerd!';
-$string['check_frontpagerole_name'] = 'Startpaginarol';
-$string['check_frontpagerole_notset'] = 'Startpaginarol niet ingeschakeld';
-$string['check_frontpagerole_ok'] = 'Startpaginarol roldefinitie OK';
+$string['check_frontpagerole_details'] = '<p>Alle geregistreerde gebruikers krijgen de standaardrol voor de  site startpagina voor activiteiten op die pagina. Zorg ervoor dat deze rol geen mogelijkheden heeft met beveiligingsproblemen.</p>
+<p>Er wordt aangeraden een speciale rol hiervoor te maken en de standaardrollen niet te gebruiken.</p>';
+$string['check_frontpagerole_error'] = 'Fout gedefinieerde site startpaginarol "{$a}" gedetecteerd!';
+$string['check_frontpagerole_name'] = 'Site startpaginarol';
+$string['check_frontpagerole_notset'] = 'Site startpaginarol niet ingesteld.';
+$string['check_frontpagerole_ok'] = 'Site startpagina roldefinitie is OK.';
 $string['check_guestrole_details'] = '<p>De gastrol wordt gebruikt voor gasten, niet aangemelde gebruikers en tijdelijke gasttoegang voor cursussen. Zorg er voor dat geen gevaarlijke mogelijkheden toegelaten zijn voor deze rol.</p>
 <p>De enige ondersteunde verouderde rol voor dit type gebruiker is <em>Gast</em>.</p>';
 $string['check_guestrole_error'] = 'Fout geconfigureerde gastrol "{$a}" gedetecteerd!';
@@ -95,6 +102,8 @@ $string['check_preventexecpath_warning'] = 'Paden voor uitvoerbare programma\'s 
 $string['check_publicpaths_403'] = '(Retourneerde een 403, idealiter zou 404 moeten zijn)';
 $string['check_publicpaths_generic'] = '{$a} -bestanden mogen niet openbaar zijn';
 $string['check_publicpaths_name'] = 'Controleer alle openbare / privépaden';
+$string['check_publicpaths_ok'] = 'Geen enkel intern pad is openbaar';
+$string['check_publicpaths_warning'] = 'Sommige interne paden zijn openbaar';
 $string['check_riskadmin_detailsok'] = '<p>Controleer aub volgende lijst beheerders:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Controleer onderstaande lijst beheerders::</p>{$a->admins}
 <p>Aangeraden wordt om de beheerdersrol enkel toe te wijzen in de systeemcontext. Volgende gebruikers hebben een niet-ondersteunde beheerdersrol:</p>{$a->unsupported}';

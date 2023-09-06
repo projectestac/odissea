@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'de', version '3.11'.
+ * Strings for component 'hotpot', language 'de', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -347,6 +347,7 @@ Eine HotPot-Aktivität kann mit folgender Software extern erstellt und dann in M
 * Xerte
 * iSpring
 * HTML-Editor';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'HotPots';
 $string['nameadd'] = 'Name';
 $string['nameadd_help'] = 'Der Name kann als Text eingegeben oder automatisch generiert werden.

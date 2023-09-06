@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'ca', version '3.11'.
+ * Strings for component 'pdfannotator', language 'ca', version '4.1'.
  *
  * @package     pdfannotator
  * @category    string
@@ -25,4 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['edit'] = 'Edita';
+$string['fullscreen'] = 'Pantalla completa';
 $string['markasread'] = 'Marca com a llegit';
+$string['modulename_link'] = 'mod/pdfannotator/view';
+$string['question'] = 'Pregunta';
+$string['yesButton'] = 'Sí';

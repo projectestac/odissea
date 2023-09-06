@@ -192,16 +192,31 @@ function uu_validate_user_upload_columns(csv_import_reader $cir, $stdfields, $pr
     if (empty($columns)) {
         $cir->close();
         $cir->cleanup();
-        print_error('cannotreadtmpfile', 'error', $returnurl);
+        throw new \moodle_exception('cannotreadtmpfile', 'error', $returnurl);
     }
     if (count($columns) < 2) {
         $cir->close();
         $cir->cleanup();
-        print_error('csvfewcolumns', 'error', $returnurl);
+        throw new \moodle_exception('csvfewcolumns', 'error', $returnurl);
     }
 
     // test columns
     $processed = array();
+    $acceptedfields = [
+        'category',
+        'categoryrole',
+        'cohort',
+        'course',
+        'enrolperiod',
+        'enrolstatus',
+        'enroltimestart',
+        'group',
+        'role',
+        'sysrole',
+        'type',
+    ];
+    $specialfieldsregex = "/^(" . implode('|', $acceptedfields) . ")\d+$/";
+
     foreach ($columns as $key=>$unused) {
         $field = $columns[$key];
         $field = trim($field);
@@ -218,19 +233,19 @@ function uu_validate_user_upload_columns(csv_import_reader $cir, $stdfields, $pr
             // hack: somebody wrote uppercase in csv file, but the system knows only lowercase profile field
             $newfield = $lcfield;
 
-        } else if (preg_match('/^(sysrole|cohort|course|group|type|role|enrolperiod|enrolstatus|enroltimestart)\d+$/', $lcfield)) {
+        } else if (preg_match($specialfieldsregex, $lcfield)) {
             // special fields for enrolments
             $newfield = $lcfield;
 
         } else {
             $cir->close();
             $cir->cleanup();
-            print_error('invalidfieldname', 'error', $returnurl, $field);
+            throw new \moodle_exception('invalidfieldname', 'error', $returnurl, $field);
         }
         if (in_array($newfield, $processed)) {
             $cir->close();
             $cir->cleanup();
-            print_error('duplicatefieldname', 'error', $returnurl, $newfield);
+            throw new \moodle_exception('duplicatefieldname', 'error', $returnurl, $newfield);
         }
         $processed[$key] = $newfield;
     }
@@ -369,17 +384,32 @@ function uu_allowed_roles() {
 }
 
 /**
- * Returns mapping of all roles using short role name as index.
+ * Returns assignable roles for current user using short role name and role ID as index.
+ * This function is no longer called without parameters.
+ *
+ * @param int|null $categoryid Id of the category to get roles for.
+ * @param int|null $courseid Id of the course to get roles for.
  * @return array
  */
-function uu_allowed_roles_cache() {
-    $allowedroles = get_assignable_roles(context_course::instance(SITEID), ROLENAME_SHORT);
+function uu_allowed_roles_cache(?int $categoryid = null, ?int $courseid = null): array {
+    if (!is_null($categoryid) && !is_null($courseid)) {
+        return [];
+    } else if (is_null($categoryid) && !is_null($courseid)) {
+        $allowedroles = get_assignable_roles(context_course::instance($courseid), ROLENAME_SHORT);
+    } else if (is_null($courseid) && !is_null($categoryid)) {
+        $allowedroles = get_assignable_roles(context_coursecat::instance($categoryid), ROLENAME_SHORT);
+    } else {
+        $allowedroles = get_assignable_roles(context_course::instance(SITEID), ROLENAME_SHORT);
+    }
+
     $rolecache = [];
+    // A role can be searched for by its ID or by its shortname.
     foreach ($allowedroles as $rid=>$rname) {
         $rolecache[$rid] = new stdClass();
         $rolecache[$rid]->id   = $rid;
         $rolecache[$rid]->name = $rname;
-        if (!is_numeric($rname)) { // only non-numeric shortnames are supported!!!
+        // Since numeric short names are allowed, to avoid replacement of another role, we only accept non-numeric values.
+        if (!is_numeric($rname)) {
             $rolecache[$rname] = new stdClass();
             $rolecache[$rname]->id   = $rid;
             $rolecache[$rname]->name = $rname;

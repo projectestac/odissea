@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'sv', version '3.11'.
+ * Strings for component 'antivirus', language 'sv', version '4.1'.
  *
  * @package     antivirus
  * @category    string
@@ -30,6 +30,8 @@ $string['antiviruscommonsettings'] = 'Gemensamma antivirusinställningar';
 $string['antiviruses'] = 'Antivirus-plugins';
 $string['antivirussettings'] = 'Hantera Antivirus-plugins';
 $string['configantivirusplugins'] = 'Vänligen välj de antivirus-plugins du vill använda och arrangera dem i den ordning du vill att de ska tillämpas.';
+$string['dataerrordesc'] = 'Ett fel inträffade vid genomsökning.';
+$string['dataerrorname'] = 'Fel vid genomsökning.';
 $string['datainfecteddesc'] = 'Infekterad data har upptäckts.';
 $string['datainfectedname'] = 'Infekterad data';
 $string['datastream'] = 'Data';
@@ -50,15 +52,23 @@ $string['emailscannererrordetected'] = 'Ett fel inträffade vid genomsökningen'
 $string['emailsubject'] = '{$a} :: Antivirusnotis';
 $string['enablequarantine'] = 'Aktivera karantän';
 $string['enablequarantine_help'] = 'Om aktiverad kommer alla infekterade filer som upptäcks placeras i en karantänmapp ([dataroot]/{$a}) för senare inspektion. Uppladdningen i Moodle kommer att misslyckas. Om du använder ett antivirusprogram på filnivå bör denna katalog uteslutas från sökningen för att undvika att eventuella filer i karantän ger utslag.';
+$string['fileerrordesc'] = 'Ett fel vid filgenomsökning inträffade.';
+$string['fileerrorname'] = 'Fel vid filgenomsökning';
 $string['fileinfecteddesc'] = 'En infekterad fil upptäcktes.';
 $string['fileinfectedname'] = 'Infekterad fil';
 $string['notifyemail'] = 'E-post för notifiering från Antivirusprogrammet';
 $string['notifyemail_help'] = 'E-postadress för notifieringar när ett virus upptäcks. Om detta fält lämnas tomt kommer alla webbplatsadministratörer få notifieringen.';
+$string['notifylevel'] = 'Notifieringsnivå';
+$string['notifylevel_help'] = 'De olika nivåerna med information du vill få notiser för';
+$string['notifylevelerror'] = 'Vid hot och scannerfel';
+$string['notifylevelfound'] = 'Enbart vid upptäckta hot';
 $string['privacy:metadata'] = 'Antivirussystemet lagrar inga personliga data.';
 $string['quarantinedfiles'] = 'Filer i karantän';
 $string['quarantinedisabled'] = 'Karantän är inaktiverad. Filen lagras inte.';
 $string['quarantinetime'] = 'Maximal karantäntid';
 $string['quarantinetime_desc'] = 'Filer i karantän äldre än den angivna perioden kommer att tas bort.';
 $string['taskcleanup'] = 'Städa upp filer i karantän';
+$string['threshold'] = 'Tröskel för statuskontroll';
+$string['threshold_desc'] = 'Anger hur långt tillbaka som kontroller av fel och varningar i tidigare resultat, så som rapporterats i {$a}, ska göras.';
 $string['unknown'] = 'Okänd';
 $string['virusfound'] = '{$a->item} har sökts igenom av antivirusprogrammet och har konstaterats vara infekterad!';

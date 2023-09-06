@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_correctwriting', language 'ar', version '3.11'.
+ * Strings for component 'qtype_correctwriting', language 'ar', version '4.1'.
  *
  * @package     qtype_correctwriting
  * @category    string
@@ -37,6 +37,7 @@ $string['langid'] = 'لغة الإجابة';
 $string['lexemedescriptions'] = 'أوصاف الترميزات';
 $string['movedmistakemessagenodescription'] = 'إن "{$a->value}" عند {$a->line}:{$a->position} ليست في موضعها الصحيح';
 $string['pleaseenterananswer'] = 'يرجى إدخال الإجابة.';
+$string['pluginname_link'] = 'question/type/correctwriting';
 $string['questioneditingheading'] = 'إعدادات تحرير الأسئلة';
 $string['toobigfloatvalue'] = 'هذه القيمة ينبغي أن لا تكون أكبر من {$a}';
 $string['toosmallfloatvalue'] = 'هذه القيمة ينبغي أن لا تكون أصغر من {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'en', version '3.11'.
+ * Strings for component 'glossary', language 'en', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Add category';
 $string['addcomment'] = 'Add comment';
 $string['addentry'] = 'Add a new entry';
 $string['addingcomment'] = 'Add a comment';
+$string['addsingleentry'] = 'Add entry';
 $string['alias'] = 'Keyword';
 $string['aliases'] = 'Keyword(s)';
 $string['aliases_help'] = 'Each glossary entry can have an associated list of keywords (or aliases). If the entry is auto-linked, then any keywords will also be auto-linked.
@@ -169,6 +170,7 @@ $string['errconceptalreadyexists'] = 'This concept already exists. No duplicates
 $string['errdeltimeexpired'] = 'You can\'t delete this. Time expired!';
 $string['erredittimeexpired'] = 'The editing time for this entry has expired.';
 $string['errorparsingxml'] = 'Errors occurred while parsing the file. Make sure it is valid XML syntax.';
+$string['errreservedkeywords'] = 'One or more keywords contain a special character which cannot be used.';
 $string['eventcategorycreated'] = 'Category has been created';
 $string['eventcategorydeleted'] = 'Category has been deleted';
 $string['eventcategoryupdated'] = 'Category has been updated';
@@ -184,6 +186,7 @@ $string['explainalphabet'] = 'Browse the glossary using this index';
 $string['explainexport'] = 'Click on the button below to export glossary entries.<br />You can import it anytime you wish in this or other course.<p>Please note that attachments (e.g. images) and authors are not exported.</p>';
 $string['explainimport'] = 'You must specify the file to import and define the criteria of the process.<p>Submit your request and review the results.</p>';
 $string['explainspecial'] = 'Shows entries that do not begin with a letter';
+$string['export'] = 'Export';
 $string['exportedentry'] = 'Exported entry';
 $string['exportentries'] = 'Export entries';
 $string['exportentriestoxml'] = 'Export entries to XML file';
@@ -277,6 +280,7 @@ $string['onebyline'] = '(one per line)';
 $string['page-mod-glossary-edit'] = 'Glossary add/edit entry page';
 $string['page-mod-glossary-view'] = 'View glossary edit page';
 $string['page-mod-glossary-x'] = 'Any glossary module page';
+$string['pendingapproval'] = 'Pending approval';
 $string['pluginadministration'] = 'Glossary administration';
 $string['pluginname'] = 'Glossary';
 $string['popupformat'] = 'Popup format';
@@ -303,6 +307,7 @@ $string['resetglossaries'] = 'Delete entries from';
 $string['resetglossariesall'] = 'Delete entries from all glossaries';
 $string['rssarticles'] = 'Number of RSS recent articles';
 $string['rssarticles_help'] = 'This setting specifies the number of glossary entry concepts to include in the RSS feed. Between 5 and 20 generally acceptable.';
+$string['rssfeed'] = 'RSS feed';
 $string['rsssubscriberss'] = 'Display the RSS feed for \'{$a}\' concepts';
 $string['rsstype'] = 'RSS feed for this activity';
 $string['rsstype_help'] = 'To enable the RSS feed for this activity, select either concepts with author or concepts without author to be included in the feed.';

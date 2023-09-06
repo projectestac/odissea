@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_correctwriting', language 'el', version '3.11'.
+ * Strings for component 'qtype_correctwriting', language 'el', version '4.1'.
  *
  * @package     qtype_correctwriting
  * @category    string
@@ -52,7 +52,7 @@ $string['objectname'] = 'ερώτηση';
 $string['parseerror'] = 'Σφάλμα κατά την ανάλυση! Παρακαλούμε ελέγξτε την απάντησή σας για μια ακόμη φορά και διορθώστε την';
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
 $string['pluginname'] = 'Σωστή αναγραφή';
-$string['pluginname_link'] = 'ερώτηση/τύπος/σωστήαναγραφή';
+$string['pluginname_link'] = '';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης σωστής αναγραφής';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης σωστής αναγραφής';
 $string['questioneditingheading'] = 'Ρυθμίσεις τροποποίησης ερώτησης';

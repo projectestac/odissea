@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'nl', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'nl', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -58,6 +58,8 @@ Ter informatie: de drie vormen gebruiken coördinaten op volgende manieren:
 Het selecteren van een markeertekst zal die tekst toevoegen aan de vorm in het voorbeeld.';
 $string['followingarewrong'] = 'Volgende woorden staan in de foute zone: {$a}';
 $string['followingarewrongandhighlighted'] = 'Volgende woorden zijn fout geplaatst:  {$a}. De gemarkeerde woorden worden nu getoond op de juiste plaats.<br /> Klik op het gemarkeerde woord om de toegestane zone aan te geven.';
+$string['formerror_dragrequired'] = 'Je moet ten minste één markering aan deze vraag toevoegen.';
+$string['formerror_droprequired'] = 'Je moet ten minste één neerzetzone definiëren voor deze vraag.';
 $string['formerror_nobgimage'] = 'Je moet een afbeelding selecteren om als achtergrond te gebruiken in de zone voor slepen en neerzetten.';
 $string['formerror_noitemselected'] = 'Je hebt een neerzetzone gedefinieerd maar niets gekozen dat naar die zone moet gesleept worden.';
 $string['formerror_nosemicolons'] = 'Er staan geen puntkomma\'s in je coördinaten. Je coördinaten voor een {$a->shape} moeten geschreven worden als  - {$a->coordsstring}.';
@@ -78,6 +80,7 @@ $string['noofdrags'] = 'Aantal';
 $string['pleasedragatleastonemarker'] = 'Je antwoord is niet volledig; je moet minstens één woord op de afbeelding plaatsen.';
 $string['pluginname'] = 'Woorden slepen en neerzetten';
 $string['pluginname_help'] = 'Woorden slepen en neerzetten verwacht van de respondent dat tekstlabels gesleept worden op zones op een achtergrondafbeelding.';
+$string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = 'Woorden slepen en neerzetten toevoegen';
 $string['pluginnameediting'] = 'Woorden slepen en neerzetten bewerken';
 $string['pluginnamesummary'] = 'Woorden worden gesleept en neergezet op de achtergrondafbeelding.

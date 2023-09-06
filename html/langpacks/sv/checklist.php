@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'sv', version '3.11'.
+ * Strings for component 'checklist', language 'sv', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -104,6 +104,7 @@ $string['lockteachermarks_help'] = 'När den här inställningen är aktiverad o
 $string['lockteachermarkswarning'] = 'OBS: När du har sparat dessa markeringar så kommer du inte att kunna ändra \'Ja\' markeringar';
 $string['modulename'] = 'Checklista';
 $string['modulename_help'] = 'Checklistemodulen ger lärare möjlighet att skapa en att-göra-lista eller checklista som deras studenter kan jobba igenom.';
+$string['modulename_link'] = 'mod/checklist/view';
 $string['modulenameplural'] = 'Checklistor';
 $string['moveitemdown'] = 'Flytta element nedåt';
 $string['moveitemup'] = 'Flytta element uppåt';

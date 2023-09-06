@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ru', version '3.11'.
+ * Strings for component 'auth_ldap', language 'ru', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -124,6 +124,10 @@ $string['diag_toooldversion'] = 'Маловероятно, что совреме
 $string['didntfindexpiretime'] = 'Функция password_expire() не смогла определить срок действия пароля.';
 $string['didntgetusersfromldap'] = 'Ошибка - не удалось получить ни одного пользователя с сервера LDAP - выход.';
 $string['gotcountrecordsfromldap'] = 'Получено записей из LDAP - {$a}';
+$string['invalidusererrors'] = 'Предупреждение: пропущено создание учетных записей пользователей - {$a}.';
+$string['invaliduserexception'] = 'Ошибка: не удается создать учетную запись нового пользователя. Детали и причина:
+{$a}
+Пропуск этого пользователя.';
 $string['ldapnotconfigured'] = 'URL-адрес хоста LDAP в настоящее время не настроен';
 $string['morethanoneuser'] = 'В LDAP найдено более одной учетной записи пользователя. Используется только первая.';
 $string['needbcmath'] = 'Для проверки срока действия пароля в Active Directory необходимо установленное расширение BCMath';
@@ -157,7 +161,6 @@ $string['updatepasserrorexpire'] = 'Ошибка в функции user_update_p
 $string['updatepasserrorexpiregrace'] = 'Ошибка в функции user_update_password() при изменении срока действия пароля и/или задании возможности входа при просроченном пароле. Код ошибки: {$a->errno}; строка ошибки: {$a->errstring}';
 $string['updateremfail'] = 'Ошибка при обновлении записи на сервере LDAP. Код ошибки: {$a->errno}; описание ошибки: {$a->errstring}<br/>Ключ: {$a->key}, старое значение в Moodle: «{$a->ouvalue}», новое значение: «{$a->nuvalue}»';
 $string['updateremfailamb'] = 'Не удалось обновить LDAP с неоднозначным полем {$a->key}; старое значение Moodle : «{$a->ouvalue}», новое значение:«{$a->nuvalue}»';
-$string['updateremfailfield'] = 'Не удалось обновить LDAP с несуществующим полем (\'{$a->ldapkey}\'). Ключ ({$a->key}) - старое значение Moodle: \'{$a->ouvalue}\'; новое значение: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Не удалось найти пользователя при внешнем обновлении. Имеющиеся сведения: база поиска: «{$a->userdn}»; фильтр поиска:«(objectClass=*)»; атрибуты поиска: «{$a->attribs}».';
 $string['user_activatenotsupportusertype'] = 'Аутентификация: LDAP user_activate () не поддерживает выбранный тип пользователя: {$a}';
 $string['user_disablenotsupportusertype'] = 'Аутентификация: LDAP user_disable () не поддерживает выбранный тип пользователя: {$a}';

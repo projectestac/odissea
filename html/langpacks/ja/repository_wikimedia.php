@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_wikimedia', language 'ja', version '3.11'.
+ * Strings for component 'repository_wikimedia', language 'ja', version '4.1'.
  *
  * @package     repository_wikimedia
  * @category    string
@@ -30,8 +30,8 @@ $string['keyword'] = '検索';
 $string['maxheight'] = '最大イメージ高 (px)';
 $string['maxwidth'] = '最大イメージ幅 (px)';
 $string['pluginname'] = 'Wikimedia';
-$string['privacy:metadata:repository_wikimedia'] = 'Wikimediaリポジトリプラグインはユーザプリファレンスを保存します。また、ユーザデータをMoodleからリモートシステムに転送します。';
-$string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'Wikimediaリポジトリの最大高設定ユーザプリファレンスです。';
-$string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'Wikimediaリポジトリの最大幅設定ユーザプリファレンスです。';
+$string['privacy:metadata:repository_wikimedia'] = 'Wikimediaリポジトリプラグインはユーザプレファレンスを保存します。また、ユーザデータをMoodleからリモートシステムに転送します。';
+$string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'Wikimediaリポジトリの最大高設定ユーザプレファレンスです。';
+$string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'Wikimediaリポジトリの最大幅設定ユーザプレファレンスです。';
 $string['privacy:metadata:repository_wikimedia:search_text'] = 'Wikimediaリポジトリユーザ検索テキストクエリです。';
 $string['wikimedia:view'] = 'Wikiメディアリポジトリを表示する';

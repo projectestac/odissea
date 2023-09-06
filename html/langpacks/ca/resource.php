@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ca', version '3.11'.
+ * Strings for component 'resource', language 'ca', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -58,6 +58,7 @@ $string['displayselect_help'] = 'Aquest paràmetre, junt amb el tipus de fitxer 
 * Marc - El fitxer es mostra dins d\'un marc sota la barra de navegació i la descripció del fitxer
 
 * Finestra nova - El fitxer es mostra en una finestra nova del navegador amb menús i barra d\'adreces';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = 'Tria el tipus de visualització, dissortadament tots els tipus no estan disponibles per tots els fitxers.';
 $string['dnduploadresource'] = 'Crea un recurs de fitxer';
 $string['encryptedcode'] = 'Codi xifrat';
@@ -68,6 +69,8 @@ $string['filtername'] = 'Enllaços automàtics a recursos';
 $string['forcedownload'] = 'Imposa que es baixi';
 $string['framesize'] = 'Altura del marc';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Fitxer en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migració d\'un fitxer de curs antic';
 $string['legacyfilesactive'] = 'Actiu';
 $string['legacyfilesdone'] = 'Finalitzat';
@@ -82,6 +85,7 @@ Un fitxer pot servir per:
 * Compartir presentacions utilitzades a classe.
 * Incloure un minilloc web com un recurs dins del curs
 * Proporcionar plantilles o esborranys de documents de certes aplicacions (per exemple, .psd de Photoshop) de manera que els estudiants puguin editar-les i trametre-les perquè siguin avaluades.';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Fitxers';
 $string['notmigrated'] = 'Aquest tipus de recurs heretat ({$a}) encara no s\'ha migrat.';
 $string['optionsheader'] = 'Opcions';
@@ -116,7 +120,7 @@ $string['showsize_desc'] = 'Mostra la mida del fitxer en la pàgina principal de
 $string['showsize_help'] = 'Mostra la mida del fitxer, p.ex. \'3,1 MB\', junt a l\'enllaç al fitxer.
 
 Si hi ha diversos fitxers en aquest recurs, es mostra la mida total del conjunt de fitxers.';
-$string['showtype'] = 'Mostra tipus';
+$string['showtype'] = 'Mostra el tipus';
 $string['showtype_desc'] = 'Mostra el tipus de fitxer en la pàgina principal del curs (p.ex. "document Word")?';
 $string['showtype_help'] = 'Mostra el tipus de fitxer, p.ex. \'document Word\', junt a l\'enllaç al fitxer.
 

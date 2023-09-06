@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_multianswer', language 'sv', version '3.11'.
+ * Strings for component 'qformat_multianswer', language 'sv', version '4.1'.
  *
  * @package     qformat_multianswer
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Inbäddade svar (Cloze-test)';
 $string['pluginname_help'] = 'Inbäddade svar (Cloze-test) formatet möjliggör import av en text passage med frågor som exempelvis flerval eller korta svar inbäddade i texten.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['privacy:metadata'] = 'Pluginmodulen Inbäddade svar frågeformat lagrar ingen personinformation.';

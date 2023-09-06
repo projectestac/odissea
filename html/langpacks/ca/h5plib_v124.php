@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'ca', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'ca', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -31,7 +31,7 @@ $string['editor:addentity'] = 'Afegeix :entity';
 $string['editor:addfile'] = 'Afegeix un fitxer';
 $string['editor:addnewchange'] = 'Afegeix un canvi nou';
 $string['editor:addtitle'] = 'Afegeix un títol';
-$string['editor:addvideodescription'] = 'L\'H5P és compatible amb totes les fonts de vídeo externes formatades com a mp4, webm o ogv, com Vimeo Pro, i admet els enllaços a YouTube.';
+$string['editor:addvideodescription'] = 'H5P és compatible amb tots els orígens de vídeo externs amb format MP4, WebM o OGV, com ara Vimeo Pro, i admet els enllaços a YouTube.';
 $string['editor:atoz'] = 'A-Z';
 $string['editor:avtablistlabel'] = 'Insereix amb';
 $string['editor:belowmin'] = 'El valor :property està per sota del mínim (:min).';
@@ -39,19 +39,19 @@ $string['editor:cancel'] = 'Cancel·la';
 $string['editor:cancellabel'] = 'Cancel·la';
 $string['editor:changefile'] = 'Canvia el fitxer';
 $string['editor:changelanguage'] = 'Voleu canviar l\'idioma a :language?';
-$string['editor:changelibrary'] = 'Canvia el tipus de contingut?';
+$string['editor:changelibrary'] = 'Voleu canviar el tipus de contingut?';
 $string['editor:changelogdescription'] = 'Algunes llicències requereixen que es registrin i es mostrin els canvis fets al projecte original o els derivats. Podeu registrar els canvis aquí per complir els requisits de la llicència o simplement per fer el seguiment dels canvis que es realitzin en aquest contingut i perquè altres persones també puguin fer-ho.';
 $string['editor:close'] = 'Tanca';
 $string['editor:commonfields'] = 'Substitucions de text i traduccions';
-$string['editor:commonfieldsdescription'] = 'Aquí podeu editar els paràmetres o traduir els textos utilitzats en aquest contingut.';
-$string['editor:confirmchangelibrary'] = 'Si feu això, perdreu tota la feina que heu fet amb l\'actual tipus de contingut. Confirmeu que voleu canviar el tipus de contingut?';
+$string['editor:commonfieldsdescription'] = 'Aquí podeu modificar la configuració o traduir els textos que s\'utilitzen en aquest contingut.';
+$string['editor:confirmchangelibrary'] = 'Si ho feu, perdreu tota la feina que hàgiu fet al tipus de contingut actual. Confirmeu que voleu canviar el tipus de contingut?';
 $string['editor:confirmdeletechangelog'] = 'Confirmeu que voleu suprimir aquesta entrada de registre de canvis?';
-$string['editor:confirmimageremoval'] = 'Això suprimirà la vostra imatge. Confirmeu que voleu continuar?';
-$string['editor:confirmpastebuttontext'] = 'Reemplaça el contingut';
-$string['editor:confirmpastecontent'] = 'Si feu això, reemplaçareu el contingut actual pel contingut del vostre porta-retalls. El contingut actual es perdrà. Confirmeu que voleu continuar?';
+$string['editor:confirmimageremoval'] = 'La vostra imatge se suprimirà. Confirmeu que voleu continuar?';
+$string['editor:confirmpastebuttontext'] = 'Substitueix el contingut';
+$string['editor:confirmpastecontent'] = 'Si ho feu, el contingut del porta-retalls substituirà el contingut actual. Confirmeu que voleu continuar?';
 $string['editor:confirmremoval'] = 'Confirmeu que voleu suprimir aquest :type?';
 $string['editor:confirmremoveauthor'] = 'Confirmeu que voleu suprimir aquest autor?';
-$string['editor:contenttypebackbuttonlabel'] = 'Torna';
+$string['editor:contenttypebackbuttonlabel'] = 'Enrere';
 $string['editor:contenttypecacheoutdated'] = 'La llista de tipus de contingut ha quedat obsoleta';
 $string['editor:contenttypecacheoutdateddesc'] = 'El lloc web té dificultats per connectar-se a H5P.org a fi de comprovar les actualitzacions del tipus de contingut. Pot ser que no pugueu actualitzar ni instal·lar tipus de contingut nous.';
 $string['editor:contenttypedemobuttonlabel'] = 'Demostració de contingut';
@@ -68,7 +68,7 @@ $string['editor:contenttypenotinstalleddesc'] = 'No teniu permís per instal·la
 $string['editor:contenttypeowner'] = 'Per :owner';
 $string['editor:contenttyperestricted'] = 'Tipus de contingut restringit';
 $string['editor:contenttyperestricteddesc'] = 'Un administrador ha restringit l\'ús d\'aquest tipus de contingut.';
-$string['editor:contenttypesearchfieldplaceholder'] = 'Cerca tipus de continguts';
+$string['editor:contenttypesearchfieldplaceholder'] = 'Cerca tipus de contingut';
 $string['editor:contenttypesectionall'] = 'Tots els tipus de contingut';
 $string['editor:contenttypeunsupportedapiversioncontent'] = 'Contacteu amb l\'administrador del sistema perquè us proporcioni les actualitzacions necessàries.';
 $string['editor:contenttypeunsupportedapiversiontitle'] = 'Aquest tipus de contingut requereix una versió de nucli més recent.';

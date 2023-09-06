@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mojeid', language 'el', version '3.11'.
+ * Strings for component 'auth_mojeid', language 'el', version '4.1'.
  *
  * @package     auth_mojeid
  * @category    string
@@ -41,7 +41,7 @@ $string['pluginname'] = 'mojeID';
 $string['security_level'] = 'Επίπεδο ασφαλείας';
 $string['security_level_info'] = 'Τι επίπεδο ασφάλειας χρειάζεστε για τους χρήστες μέσω της αίτησης προς την αρχή MojeID.';
 $string['sign_in_with'] = 'Συνδεθείτε μέσω mojeID';
-$string['unknown_error_during_communication_with_mojeid'] = 'Κατά την επικοινωνία με τν εξυπηρετητή mojeID παρουσιάστηκε κάποιο άγνωστο σφάλμα.';
+$string['unknown_error_during_communication_with_mojeid'] = 'Κατά την επικοινωνία με τον εξυπηρετητή mojeID παρουσιάστηκε κάποιο άγνωστο σφάλμα.';
 $string['unknown_error_during_create_user'] = 'Άγνωστο σφάλμα κατά τη δημιουργία χρήστη.';
 $string['unknown_error_during_login_user'] = 'Άγνωστο σφάλμα κατά τη σύνδεση χρήστη.';
 $string['validation'] = 'Επικύρωση';

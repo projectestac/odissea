@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'zh_cn', version '3.11'.
+ * Strings for component 'format_tiles', language 'zh_cn', version '4.1'.
  *
  * @package     format_tiles
  * @category    string
@@ -30,16 +30,17 @@ $string['admintools'] = '管理员工具';
 $string['all'] = '全部';
 $string['allcomplete'] = '全部完成';
 $string['allcoursescomplypalette'] = '所有课程都已经允许了瓷砖颜色。没有要重置的内容。请确保在按reset之前保存对允许颜色的任何更改。';
-$string['allowlabelconversion'] = '允许标签转换为页面';
 $string['asfraction'] = '显示为分数';
 $string['aspercentagedial'] = '在圆圈中显示为%';
 $string['basecolour'] = '瓷砖颜色';
 $string['collapse'] = '折叠本节';
 $string['collapsesections'] = '折叠全部小节';
+$string['courseshowtileprogress_link'] = 'Activity_completion_settings#Activity_settings';
 $string['courseusesubtiles'] = '活动使用下级瓷砖';
 $string['defaulttileicon'] = '瓷砖图标';
 $string['deleteimage'] = '删除图像';
 $string['deletesection'] = '删除本节';
+$string['displayfilterbar_link'] = 'Outcomes';
 $string['displaytitle_mod_jpeg'] = '图像';
 $string['displaytitle_mod_mp3'] = '声音';
 $string['displaytitle_mod_mp4'] = '视频';

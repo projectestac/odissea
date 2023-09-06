@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_poodll', language 'ar', version '3.11'.
+ * Strings for component 'filter_poodll', language 'ar', version '4.1'.
  *
  * @package     filter_poodll
  * @category    string
@@ -38,7 +38,7 @@ $string['oneeighty_days'] = '180 يومًا';
 $string['poodllsupportinfo'] = 'معلومات دعم Poodll';
 $string['ppn_assignfeedback_onlinepoodll'] = 'إفادة Poodll';
 $string['ppn_atto_subtitle'] = 'الترجمة التلقائية';
-$string['presets'] = 'إملاء تلقائي للقالب بالتحضير المسبق';
+$string['presets'] = 'إملاء تلقائي للمظهر بالتحضير المسبق';
 $string['privacy:metadata'] = 'إن إضافة منقح Poodll لا تخزن أي بيانات شخصية.';
 $string['recorderorder_whiteboard'] = 'ترتيب السجلات في السبورة';
 $string['recui_inaudibleerror'] = 'لا يمكننا سماعك. يرجى التحقق من صلاحيات الفلاش والمستعرض.';
@@ -52,8 +52,8 @@ $string['servername'] = 'عنوان مخدم Poodll Red5';
 $string['sitedefault'] = 'إفتراضي الموقع';
 $string['size'] = 'الحجم';
 $string['supportinfo'] = 'معلومات الدعم';
-$string['templatealternate'] = 'المحتوى البديل (القالب {$a})';
-$string['templatealternate_end'] = 'نهاية المحتوى البديل (القالب {$a})';
+$string['templatealternate'] = 'المحتوى البديل (المظهر {$a})';
+$string['templatealternate_end'] = 'نهاية المحتوى البديل (المظهر {$a})';
 $string['templatedefaults_desc'] = 'حدد الافتراضيات عبر أزواج مفصولة بمحددات من الاسم=القيمة. أي width=800,height=900,feeling=joy';
 $string['thirty_days'] = '30 يومًا';
 $string['threehundredsixtyfive_days'] = '365 يومًا';

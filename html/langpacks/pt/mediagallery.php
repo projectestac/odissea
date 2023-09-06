@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mediagallery', language 'pt', version '3.11'.
+ * Strings for component 'mediagallery', language 'pt', version '4.1'.
  *
  * @package     mediagallery
  * @category    string
@@ -131,6 +131,7 @@ $string['enablethebox'] = 'Ativar theBox';
 $string['enforcedefaults'] = 'Forçar predefinições da galeria';
 $string['enforcedefaults_help'] = 'Se ativar esta opção, serão aplicadas as predefinições da galeria determinados pelo instrutor.';
 $string['errorchooseimportoption'] = 'Selecione uma opção de importação';
+$string['errornopermissiontoadd'] = 'Não pode adicionar uma galeria a esta coleção';
 $string['errornotyouritem'] = 'Não pode editar este objeto multimédia. Pertence a outro utilizador.';
 $string['errortheboxunavailable'] = 'Parece que theBox não está disponível de momento. Por favor, tente novamente mais tarde.';
 $string['errortoomanygalleries'] = 'Desculpe, você ou o seu grupo excedeu o número máximo de galerias permitidas nesta coleção ({$a}).';
@@ -232,6 +233,7 @@ $string['otherfiles'] = 'Outros ficheiros';
 $string['others'] = 'outros';
 $string['pluginadministration'] = 'Administração da coleção multimédia';
 $string['pluginname'] = 'Coleção multimédia';
+$string['privacy:metadata:core_comments'] = '';
 $string['privacy:metadata:mediagallery_item:externalurl'] = '';
 $string['privacy:metadata:mediagallery_item:medium'] = 'Ferramenta usada para criar o trabalho.';
 $string['privacy:metadata:mediagallery_item:moralrights'] = 'Se o utilizador reivindicou os seus direitos morais sobre o item.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'it', version '3.11'.
+ * Strings for component 'block', language 'it', version '4.1'.
  *
  * @package     block
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = 'Sposta nel dock';
 $string['anypagematchingtheabove'] = 'Qualsiasi pagina corrispondente a quanto sopra';
 $string['appearsinsubcontexts'] = 'Visibile nei sotto contesti';
 $string['assignrolesinblock'] = 'Assegna ruoli nel blocco {$a}';
@@ -37,18 +36,18 @@ $string['configureblock'] = 'Configura blocco {$a}';
 $string['contexts'] = 'Contesti pagina';
 $string['contexts_help'] = 'I contesti sono specifici tipi di pagine dove il blocco sarà visualizzato nella sua posizione originale. Puoi avere diverse opzioni in funzione della posizione originale ed effettiva del blocco. Per esempio puoi far apparire un blocco solo nelle pagine dei forum aggiungendolo al corso e impostandolo per farlo apparire solo nelle pagine figlie. Poi nelle pagine dei forum dove vuoi che il blocco appaia modifica le impostazioni del blocco affinché sia visualizzato solo nella pagine dei forum.';
 $string['createdat'] = 'Posizione originale del blocco';
-$string['createdat_help'] = 'La posizione originaria dove il blocco è stato creato. Le impostazioni del blocco possono consentire la sua visualizzazione in sotto contesti della posizione originaria.  Ad esempio, un blocco creato su una pagina del corso può essere visualizzato anche nella attività del corso. Un blocco creato nella pagina home del sito può essere visualizzato in tutto il sito.';
+$string['createdat_help'] = 'La posizione originaria dove il blocco è stato creato. Le impostazioni del blocco possono consentire la sua visualizzazione in altre posizioni (contesti) figlie della posizione originaria.  Ad esempio, un blocco creato su una pagina del corso può essere visualizzato anche nelle attività del corso. Un blocco creato nella pagina home del sito può essere visualizzato in tutto il sito.';
 $string['defaultregion'] = 'Area di default';
 $string['defaultregion_help'] = 'I temi possono disporre di una o più regioni denominate dove visualizzare i blocchi. L\'impostazione definisce la regione di default dove comparirà il blocco.  Tenere presente che le impostazioni di pagine specifiche possono avere la precedenza sul peso di default.';
 $string['defaultweight'] = 'Peso di default';
 $string['defaultweight_help'] = 'Il peso di default consente di indicare grossolanamente la posizione del blocco in una data regione. La posizione effettiva sarà calcolata tenendo presenti tutti i blocchi presenti nella regione, (ad esempio, solo un blocco può essere presente nel punto più alto della regione). Tenere presente che le impostazioni di pagine specifiche possono avere la precedenza sul peso di default.';
 $string['deleteblock'] = 'Elimina blocco {$a}';
-$string['deleteblockcheck'] = 'Sei sicuro di eliminare questo blocco dal titolo {$a}?';
+$string['deleteblockcheck'] = 'Il blocco {$a} sarà eliminato.';
+$string['deleteblockinprogress'] = 'Rimozione del blocco {$a} in corso...';
 $string['deleteblockwarning'] = '<p>Stai per eliminare un blocco che è presente in altri posizioni.</p><p>Posizione originale del blocco: {$a->location}<br />Visualizzato nelle pagine di tipo: {$a->pagetype}</p><p>Sei sicuro di continuare?</p>';
 $string['deletecheck'] = 'Eliminare il blocco {$a}?';
-$string['dockblock'] = 'Sposta blocco {$a} nel dock';
+$string['deletecheck_modal'] = 'Eliminare il blocco?';
 $string['hideblock'] = 'Nascondi blocco {$a}';
-$string['hidedockpanel'] = 'Nascondi il pannello dock';
 $string['hidepanel'] = 'Nascondi pannello';
 $string['moveblock'] = 'Sposta blocco {$a}';
 $string['moveblockafter'] = 'Sposta il blocco dopo il blocco {$a}';
@@ -69,13 +68,10 @@ $string['showblock'] = 'Visualizza blocco {$a}';
 $string['showoncontextandsubs'] = 'Visualizza in \'{$a}\' e tutte le pagine in esso';
 $string['showoncontextonly'] = 'Visualizza solo in \'{$a}\'';
 $string['showonentiresite'] = 'Visualizza in tutto il sito';
-$string['showonfrontpageandsubs'] = 'Visualizza nella pagina home e nelle pagine figlie della pagina home';
-$string['showonfrontpageonly'] = 'Visualizza solo nella pagina home';
+$string['showonfrontpageandsubs'] = 'Visualizza nella pagina home del sito e nelle pagine figlie della pagina home';
+$string['showonfrontpageonly'] = 'Visualizza nella pagina home del sito';
 $string['subpages'] = 'Seleziona pagine';
 $string['thisspecificpage'] = 'Questa pagina specifica';
-$string['undockall'] = 'Rimuovi tutto dal dock';
-$string['undockblock'] = 'Togli il blocco {$a} dal dock';
-$string['undockitem'] = 'Rimuovi dal dock';
 $string['visible'] = 'Visibile';
 $string['weight'] = 'Peso';
 $string['wherethisblockappears'] = 'Persistenza e visibilità';

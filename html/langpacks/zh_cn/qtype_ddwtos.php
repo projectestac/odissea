@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_ddwtos', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -34,6 +34,7 @@ $string['infinite'] = '无限制';
 $string['pleaseputananswerineachbox'] = '请在每个盒子里放一个答案。';
 $string['pluginname'] = '拖放填空题';
 $string['pluginname_help'] = '拖放填空题要求做题者拖放词语或短语到正确的空缺。 [[1]], [[2]], [[3]], ... 作为题干占位符，正确答案被分别指定为选项1, 2, 3, ... 可选答案可以被分组，特定组内的所有可选答案被着为与相关题干空缺相同的颜色。被标记为无限制的可选答案可以用在多个空缺。';
+$string['pluginname_link'] = 'question/type/ddwtos';
 $string['pluginnameadding'] = '添加一个拖放填空题';
 $string['pluginnameediting'] = '编辑一个拖放填空题';
 $string['pluginnamesummary'] = '用拖放的方式填充题目中缺失的词语。';

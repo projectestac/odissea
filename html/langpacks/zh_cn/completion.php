@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'zh_cn', version '3.11'.
+ * Strings for component 'completion', language 'zh_cn', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = '完成的成绩';
+$string['achievingpassinggrade'] = '达到及格分数';
 $string['activities'] = '活动';
 $string['activitiescompleted'] = '活动完成情况';
 $string['activitiescompletednote'] = '提醒：只有启用进度跟踪的活动才会出现在上面的列表之中。';
@@ -36,6 +37,7 @@ $string['activityaggregation_any'] = '至少完成一个选中的活动。';
 $string['activitycompletion'] = '活动进度';
 $string['activitycompletionupdated'] = '修改已经保存';
 $string['activitygradenotrequired'] = '不需要等级';
+$string['activitygradetopassnotset'] = '此活动没有有效的及格分数。它可以在活动设置的成绩部分中设置。';
 $string['affectedactivities'] = '这些修改将影响以下<b>{$a}</b>活动或资源:';
 $string['aggregationmethod'] = '汇总方法';
 $string['all'] = '全部';
@@ -78,6 +80,7 @@ $string['completion-y'] = '已完成';
 $string['completion-y-override'] = '已完成（由 {$a} 设置）';
 $string['completion_automatic'] = '当条件都满足时，将活动标为完成';
 $string['completion_help'] = '如果启用，则会根据特定条件手动或自动跟踪活动完成情况。如果需要，可以设置多个条件。如果是这样，只有当所有条件都满足时，活动才会被视为完成。';
+$string['completion_link'] = 'activity/completion';
 $string['completion_manual'] = '学生可以手工标记此活动为完成';
 $string['completion_none'] = '不标示活动完成状态';
 $string['completionactivitydefault'] = '用户活动默认设置';
@@ -99,6 +102,9 @@ $string['completionnotenabledforcourse'] = '本课程未开启进度跟踪功能
 $string['completionnotenabledforsite'] = '本站未开启进度跟踪功能';
 $string['completionondate'] = '日期';
 $string['completionondatevalue'] = '用户必须在此日期之前一直保持选课';
+$string['completionpassgrade'] = '要求通过分数';
+$string['completionpassgrade_desc'] = '学生必须获得及格分数才能完成此活动';
+$string['completionpassgrade_help'] = '如果启用，当学生获得及格分数时，该活动被视为完成。';
 $string['completionsettingslocked'] = '完成设置已锁定';
 $string['completionupdated'] = '活动 <b>{$a}</b> 的更新完成';
 $string['completionusegrade'] = '必须有成绩';
@@ -118,6 +124,7 @@ $string['coursecompleted'] = '课程已完成';
 $string['coursecompletedmessage'] = '<p>恭喜！</p><p>您已完成课程<a href="{$a->courselink}">{$a->coursename}</a>。</p>';
 $string['coursecompletion'] = '课程进度';
 $string['coursecompletioncondition'] = '满足条件: {$a}';
+$string['coursecompletionnavigation'] = '课程完成三级导航';
 $string['coursegrade'] = '课程成绩';
 $string['coursesavailable'] = '可用的课程';
 $string['coursesavailableexplaination'] = '注意：课程必须先启用进度跟踪，才能出现在上面列表中。';
@@ -135,7 +142,9 @@ $string['deletecompletiondata'] = '删除已完成数据';
 $string['dependencies'] = '依赖条件';
 $string['dependenciescompleted'] = '完成其它课程';
 $string['detail_desc:receivegrade'] = '获得等级';
+$string['detail_desc:receivepassgrade'] = '获得及格分数';
 $string['detail_desc:view'] = '查看';
+$string['done'] = '完毕';
 $string['editcoursecompletionsettings'] = '编辑课程进度跟踪设置';
 $string['enablecompletion'] = '启用进度跟踪';
 $string['enablecompletion_help'] = '如果启用，可以在活动设置中设置活动完成条件和/或课程完成条件。建议启动此功能，以便在报表的课程概览中显示有意义的数据。';
@@ -153,6 +162,7 @@ $string['eventcoursecompletionupdated'] = '课程完成已更新';
 $string['eventcoursemodulecompletionupdated'] = '课程活动完成情况已更新';
 $string['eventdefaultcompletionupdated'] = '课程活动完成的默认值已更新';
 $string['excelcsvdownload'] = '用Excel兼容格式（.csv）下载';
+$string['failed'] = '失败的';
 $string['fraction'] = '分数';
 $string['graderequired'] = '需要课程分数';
 $string['gradexrequired'] = '至少得 {$a}';
@@ -217,6 +227,7 @@ $string['selfcompletion'] = '自设完成';
 $string['showcompletionconditions'] = '显示活动完成条件';
 $string['showcompletionconditions_help'] = '活动完成情况始终显示在活动页面上。 此设置确定活动完成条件是否也显示在课程页面上的每个活动下方。';
 $string['showinguser'] = '显示用户';
+$string['todo'] = '待办事项';
 $string['unenrolingfromcourse'] = '退出该选课';
 $string['unenrolment'] = '注销选课';
 $string['unit'] = '单元';

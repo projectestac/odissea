@@ -35,6 +35,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use core\output\named_templatable;
 use core_completion\cm_completion_details;
 use core_course\output\activity_information;
 
@@ -73,6 +74,11 @@ class renderer_base {
      * @var Mustache_Engine $mustache The mustache template compiler
      */
     private $mustache;
+
+    /**
+     * @var array $templatecache The mustache template cache.
+     */
+    protected $templatecache = [];
 
     /**
      * Return an instance of the mustache class.
@@ -173,7 +179,6 @@ class renderer_base {
      * @return string|boolean
      */
     public function render_from_template($templatename, $context) {
-        static $templatecache = array();
         $mustache = $this->get_mustache();
 
         try {
@@ -189,12 +194,12 @@ class renderer_base {
         // e.g. aria attributes that only work with id attributes and must be
         // unique in a page.
         $mustache->addHelper('uniqid', new \core\output\mustache_uniqid_helper());
-        if (isset($templatecache[$templatename])) {
-            $template = $templatecache[$templatename];
+        if (isset($this->templatecache[$templatename])) {
+            $template = $this->templatecache[$templatename];
         } else {
             try {
                 $template = $mustache->loadTemplate($templatename);
-                $templatecache[$templatename] = $template;
+                $this->templatecache[$templatename] = $template;
             } catch (Mustache_Exception_UnknownTemplateException $e) {
                 throw new moodle_exception('Unknown template: ' . $templatename);
             }
@@ -230,14 +235,29 @@ class renderer_base {
         $classparts = explode('\\', get_class($widget));
         // Strip namespaces.
         $classname = array_pop($classparts);
-        // Remove _renderable suffixes
+        // Remove _renderable suffixes.
         $classname = preg_replace('/_renderable$/', '', $classname);
 
-        $rendermethod = 'render_'.$classname;
+        $rendermethod = "render_{$classname}";
         if (method_exists($this, $rendermethod)) {
+            // Call the render_[widget_name] function.
+            // Note: This has a higher priority than the named_templatable to allow the theme to override the template.
             return $this->$rendermethod($widget);
         }
+
+        if ($widget instanceof named_templatable) {
+            // This is a named templatable.
+            // Fetch the template name from the get_template_name function instead.
+            // Note: This has higher priority than the guessed template name.
+            return $this->render_from_template(
+                $widget->get_template_name($this),
+                $widget->export_for_template($this)
+            );
+        }
+
         if ($widget instanceof templatable) {
+            // Guess the templat ename based on the class name.
+            // Note: There's no benefit to moving this aboved the named_templatable and this approach is more costly.
             $component = array_shift($classparts);
             if (!$component) {
                 $component = 'core';
@@ -246,7 +266,7 @@ class renderer_base {
             $context = $widget->export_for_template($this);
             return $this->render_from_template($template, $context);
         }
-        throw new coding_exception('Can not render widget, renderer method ('.$rendermethod.') not found.');
+        throw new coding_exception("Can not render widget, renderer method ('{$rendermethod}') not found.");
     }
 
     /**
@@ -389,17 +409,18 @@ class renderer_base {
      */
     public function should_display_navbar_logo() {
         $logo = $this->get_compact_logo_url();
-        return !empty($logo) && !$this->should_display_main_logo();
+        return !empty($logo);
     }
 
     /**
      * Whether we should display the main logo.
-     *
+     * @deprecated since Moodle 4.0
+     * @todo final deprecation. To be removed in Moodle 4.4 MDL-73165.
      * @param int $headinglevel The heading level we want to check against.
      * @return bool
      */
     public function should_display_main_logo($headinglevel = 1) {
-
+        debugging('should_display_main_logo() is deprecated and will be removed in Moodle 4.4.', DEBUG_DEVELOPER);
         // Only render the logo if we're on the front page or login page and the we have a logo.
         $logo = $this->get_logo_url();
         if ($headinglevel == 1 && !empty($logo)) {
@@ -457,17 +478,33 @@ class plugin_renderer_base extends renderer_base {
      */
     public function render(renderable $widget) {
         $classname = get_class($widget);
+
         // Strip namespaces.
         $classname = preg_replace('/^.*\\\/', '', $classname);
-        // Keep a copy at this point, we may need to look for a deprecated method.
-        $deprecatedmethod = 'render_'.$classname;
-        // Remove _renderable suffixes
-        $classname = preg_replace('/_renderable$/', '', $classname);
 
-        $rendermethod = 'render_'.$classname;
+        // Keep a copy at this point, we may need to look for a deprecated method.
+        $deprecatedmethod = "render_{$classname}";
+
+        // Remove _renderable suffixes.
+        $classname = preg_replace('/_renderable$/', '', $classname);
+        $rendermethod = "render_{$classname}";
+
         if (method_exists($this, $rendermethod)) {
+            // Call the render_[widget_name] function.
+            // Note: This has a higher priority than the named_templatable to allow the theme to override the template.
             return $this->$rendermethod($widget);
         }
+
+        if ($widget instanceof named_templatable) {
+            // This is a named templatable.
+            // Fetch the template name from the get_template_name function instead.
+            // Note: This has higher priority than the deprecated method which is not overridable by themes anyway.
+            return $this->render_from_template(
+                $widget->get_template_name($this),
+                $widget->export_for_template($this)
+            );
+        }
+
         if ($rendermethod !== $deprecatedmethod && method_exists($this, $deprecatedmethod)) {
             // This is exactly where we don't want to be.
             // If you have arrived here you have a renderable component within your plugin that has the name
@@ -477,15 +514,20 @@ class plugin_renderer_base extends renderer_base {
             // You need to change your renderers render_blah_renderable to render_blah.
             // Until you do this it will not be possible for a theme to override the renderer to override your method.
             // Please do it ASAP.
-            static $debugged = array();
+            static $debugged = [];
             if (!isset($debugged[$deprecatedmethod])) {
-                debugging(sprintf('Deprecated call. Please rename your renderables render method from %s to %s.',
-                    $deprecatedmethod, $rendermethod), DEBUG_DEVELOPER);
+                debugging(sprintf(
+                    'Deprecated call. Please rename your renderables render method from %s to %s.',
+                    $deprecatedmethod,
+                    $rendermethod
+                ), DEBUG_DEVELOPER);
                 $debugged[$deprecatedmethod] = true;
             }
             return $this->$deprecatedmethod($widget);
         }
-        // pass to core renderer if method not found here
+
+        // Pass to core renderer if method not found here.
+        // Note: this is not a parent. This is _new_ renderer which respects the requested format, and output type.
         return $this->output->render($widget);
     }
 
@@ -818,14 +860,13 @@ class core_renderer extends renderer_base {
     }
 
     /**
-     * The standard tags (typically performance information and validation links,
-     * if we are in developer debug mode) that should be output in the footer area
+     * content that should be output in the footer area
      * of the page. Designed to be called in theme layout.php files.
      *
      * @return string HTML fragment.
      */
     public function standard_footer_html() {
-        global $CFG, $SCRIPT;
+        global $CFG;
 
         $output = '';
         if (during_initial_install()) {
@@ -849,10 +890,6 @@ class core_renderer extends renderer_base {
             );
         }
 
-        // This function is normally called from a layout.php file in {@link core_renderer::header()}
-        // but some of the content won't be known until later, so we return a placeholder
-        // for now. This will be replaced with the real content in {@link core_renderer::footer()}.
-        $output .= $this->unique_performance_info_token;
         if ($this->page->devicetypeinuse == 'legacy') {
             // The legacy theme is in use print the notification
             $output .= html_writer::tag('div', get_string('legacythemeinuse'), array('class'=>'legacythemeinuse'));
@@ -861,11 +898,34 @@ class core_renderer extends renderer_base {
         // Get links to switch device types (only shown for users not on a default device)
         $output .= $this->theme_switch_links();
 
+        return $output;
+    }
+
+    /**
+     * Performance information and validation links for debugging.
+     *
+     * @return string HTML fragment.
+     */
+    public function debug_footer_html() {
+        global $CFG, $SCRIPT;
+        $output = '';
+
+        if (during_initial_install()) {
+            // Debugging info can not work before install is finished.
+            return $output;
+        }
+
+        // This function is normally called from a layout.php file
+        // but some of the content won't be known until later, so we return a placeholder
+        // for now. This will be replaced with the real content in the footer.
+        $output .= $this->unique_performance_info_token;
+
         if (!empty($CFG->debugpageinfo)) {
             $output .= '<div class="performanceinfo pageinfo">' . get_string('pageinfodebugsummary', 'core_admin',
                 $this->page->debug_summary()) . '</div>';
         }
         if (debugging(null, DEBUG_DEVELOPER) and has_capability('moodle/site:config', context_system::instance())) {  // Only in developer mode
+
             // Add link to profiling report if necessary
             if (function_exists('profiling_is_running') && profiling_is_running()) {
                 $txt = get_string('profiledscript', 'admin');
@@ -878,6 +938,9 @@ class core_renderer extends renderer_base {
                 'sesskey' => sesskey(), 'returnurl' => $this->page->url->out_as_local_url(false)));
             $output .= '<div class="purgecaches">' .
                     html_writer::link($purgeurl, get_string('purgecaches', 'admin')) . '</div>';
+
+            // Reactive module debug panel.
+            $output .= $this->render_from_template('core/local/reactive/debugpanel', []);
         }
         if (!empty($CFG->debugvalidators)) {
             $siteurl = qualified_me();
@@ -946,8 +1009,17 @@ class core_renderer extends renderer_base {
             return '';
         }
 
-        // Get a list of all the activities in the course.
         $course = $this->page->cm->get_course();
+        $courseformat = course_get_format($course);
+
+        // If the theme implements course index and the current course format uses course index and the current
+        // page layout is not 'frametop' (this layout does not support course index), show no links.
+        if ($this->page->theme->usescourseindex && $courseformat->uses_course_index() &&
+                $this->page->pagelayout !== 'frametop') {
+            return '';
+        }
+
+        // Get a list of all the activities in the course.
         $modules = get_fast_modinfo($course->id)->get_cms();
 
         // Put the modules into an array in order by the position they are shown in the course.
@@ -1372,7 +1444,11 @@ class core_renderer extends renderer_base {
         $this->opencontainers->push('header/footer', $footer);
         $this->page->set_state(moodle_page::STATE_IN_BODY);
 
-        return $header . $this->skip_link_target('maincontent');
+        // If an activity record has been set, activity_header will handle this.
+        if (!$this->page->cm || !empty($this->page->layout_options['noactivityheader'])) {
+            $header .= $this->skip_link_target('maincontent');
+        }
+        return $header;
     }
 
     /**
@@ -1624,28 +1700,12 @@ class core_renderer extends renderer_base {
      * @return string The lang menu HTML or empty string
      */
     public function lang_menu() {
-        global $CFG;
-
-        if (empty($CFG->langmenu)) {
-            return '';
+        $languagemenu = new \core\output\language_menu($this->page);
+        $data = $languagemenu->export_for_single_select($this);
+        if ($data) {
+            return $this->render_from_template('core/single_select', $data);
         }
-
-        if ($this->page->course != SITEID and !empty($this->page->course->lang)) {
-            // do not show lang menu if language forced
-            return '';
-        }
-
-        $currlang = current_language();
-        $langs = get_string_manager()->get_list_of_translations();
-
-        if (count($langs) < 2) {
-            return '';
-        }
-
-        $s = new single_select($this->page->url, 'lang', $langs, $currlang, null);
-        $s->label = get_accesshide(get_string('language'));
-        $s->class = 'langmenu';
-        return $this->render($s);
+        return '';
     }
 
     /**
@@ -1984,16 +2044,23 @@ class core_renderer extends renderer_base {
     * @param string $message The question to ask the user
     * @param single_button|moodle_url|string $continue The single_button component representing the Continue answer. Can also be a moodle_url or string URL
     * @param single_button|moodle_url|string $cancel The single_button component representing the Cancel answer. Can also be a moodle_url or string URL
+    * @param array $displayoptions optional extra display options
     * @return string HTML fragment
     */
-    public function confirm($message, $continue, $cancel) {
+    public function confirm($message, $continue, $cancel, array $displayoptions = []) {
+
+        // Check existing displayoptions.
+        $displayoptions['confirmtitle'] = $displayoptions['confirmtitle'] ?? get_string('confirm');
+        $displayoptions['continuestr'] = $displayoptions['continuestr'] ?? get_string('continue');
+        $displayoptions['cancelstr'] = $displayoptions['cancelstr'] ?? get_string('cancel');
+
         if ($continue instanceof single_button) {
             // ok
             $continue->primary = true;
         } else if (is_string($continue)) {
-            $continue = new single_button(new moodle_url($continue), get_string('continue'), 'post', true);
+            $continue = new single_button(new moodle_url($continue), $displayoptions['continuestr'], 'post', true);
         } else if ($continue instanceof moodle_url) {
-            $continue = new single_button($continue, get_string('continue'), 'post', true);
+            $continue = new single_button($continue, $displayoptions['continuestr'], 'post', true);
         } else {
             throw new coding_exception('The continue param to $OUTPUT->confirm() must be either a URL (string/moodle_url) or a single_button instance.');
         }
@@ -2001,9 +2068,9 @@ class core_renderer extends renderer_base {
         if ($cancel instanceof single_button) {
             // ok
         } else if (is_string($cancel)) {
-            $cancel = new single_button(new moodle_url($cancel), get_string('cancel'), 'get');
+            $cancel = new single_button(new moodle_url($cancel), $displayoptions['cancelstr'], 'get');
         } else if ($cancel instanceof moodle_url) {
-            $cancel = new single_button($cancel, get_string('cancel'), 'get');
+            $cancel = new single_button($cancel, $displayoptions['cancelstr'], 'get');
         } else {
             throw new coding_exception('The cancel param to $OUTPUT->confirm() must be either a URL (string/moodle_url) or a single_button instance.');
         }
@@ -2018,7 +2085,7 @@ class core_renderer extends renderer_base {
         $output = $this->box_start('generalbox modal modal-dialog modal-in-page show', 'notice', $attributes);
         $output .= $this->box_start('modal-content', 'modal-content');
         $output .= $this->box_start('modal-header px-3', 'modal-header');
-        $output .= html_writer::tag('h4', get_string('confirm'));
+        $output .= html_writer::tag('h4', $displayoptions['confirmtitle']);
         $output .= $this->box_end();
         $attributes = [
             'role'=>'alert',
@@ -2028,7 +2095,7 @@ class core_renderer extends renderer_base {
         $output .= html_writer::tag('p', $message);
         $output .= $this->box_end();
         $output .= $this->box_start('modal-footer', 'modal-footer');
-        $output .= html_writer::tag('div', $this->render($continue) . $this->render($cancel), array('class' => 'buttons'));
+        $output .= html_writer::tag('div', $this->render($cancel) . $this->render($continue), ['class' => 'buttons']);
         $output .= $this->box_end();
         $output .= $this->box_end();
         $output .= $this->box_end();
@@ -2199,7 +2266,7 @@ class core_renderer extends renderer_base {
     public function doc_link($path, $text = '', $forcepopup = false, array $attributes = []) {
         global $CFG;
 
-        $icon = $this->pix_icon('docs', '', 'moodle', array('class'=>'iconhelp icon-pre', 'role'=>'presentation'));
+        $icon = $this->pix_icon('book', '', 'moodle', array('class' => 'iconhelp icon-pre', 'role' => 'presentation'));
 
         $attributes['href'] = new moodle_url(get_docs_url($path));
         $newwindowicon = '';
@@ -2553,6 +2620,8 @@ class core_renderer extends renderer_base {
      * @return string
      */
     protected function render_user_picture(user_picture $userpicture) {
+        global $CFG;
+
         $user = $userpicture->user;
         $canviewfullnames = has_capability('moodle/site:viewfullnames', $this->page->context);
 
@@ -2589,8 +2658,13 @@ class core_renderer extends renderer_base {
             $attributes['title'] = $alt;
         }
 
-        // get the image html output fisrt
-        $output = html_writer::empty_tag('img', $attributes);
+        // Get the image html output first, auto generated based on initials if one isn't already set.
+        if ($user->picture == 0 && empty($CFG->enablegravatar) && !defined('BEHAT_SITE_RUNNING')) {
+            $output = html_writer::tag('span', mb_substr($user->firstname, 0, 1) . mb_substr($user->lastname, 0, 1),
+                ['class' => 'userinitials size-' . $size]);
+        } else {
+            $output = html_writer::empty_tag('img', $attributes);
+        }
 
         // Show fullname together with the picture when desired.
         if ($userpicture->includefullname) {
@@ -2707,7 +2781,7 @@ class core_renderer extends renderer_base {
         if ($size == -1) {
             $maxsize = '';
         } else {
-            $maxsize = get_string('maxfilesize', 'moodle', display_size($size));
+            $maxsize = get_string('maxfilesize', 'moodle', display_size($size, 0));
         }
         if ($options->buttonname) {
             $buttonname = ' name="' . $options->buttonname . '"';
@@ -2768,10 +2842,14 @@ EOD;
      * Returns HTML to display a "Turn editing on/off" button in a form.
      *
      * @param moodle_url $url The URL + params to send through when clicking the button
+     * @param string $method
      * @return string HTML the button
      */
-    public function edit_button(moodle_url $url) {
+    public function edit_button(moodle_url $url, string $method = 'post') {
 
+        if ($this->page->theme->haseditswitch == true) {
+            return;
+        }
         $url->param('sesskey', sesskey());
         if ($this->page->user_is_editing()) {
             $url->param('edit', 'off');
@@ -2781,7 +2859,28 @@ EOD;
             $editstring = get_string('turneditingon');
         }
 
-        return $this->single_button($url, $editstring);
+        return $this->single_button($url, $editstring, $method);
+    }
+
+    /**
+     * Create a navbar switch for toggling editing mode.
+     *
+     * @return string Html containing the edit switch
+     */
+    public function edit_switch() {
+        if ($this->page->user_allowed_editing()) {
+
+            $temp = (object) [
+                'legacyseturl' => (new moodle_url('/editmode.php'))->out(false),
+                'pagecontextid' => $this->page->context->id,
+                'pageurl' => $this->page->url,
+                'sesskey' => sesskey(),
+            ];
+            if ($this->page->user_is_editing()) {
+                $temp->checked = true;
+            }
+            return $this->render_from_template('core/editswitch', $temp);
+        }
     }
 
     /**
@@ -2818,9 +2917,8 @@ EOD;
     /**
      * Do not call this function directly.
      *
-     * To terminate the current script with a fatal error, call the {@link print_error}
-     * function, or throw an exception. Doing either of those things will then call this
-     * function to display the error, before terminating the execution.
+     * To terminate the current script with a fatal error, throw an exception.
+     * Doing this will then call this function to display the error, before terminating the execution.
      *
      * @param string $message The message to output
      * @param string $moreinfourl URL where more info can be found about the error
@@ -2872,6 +2970,8 @@ EOD;
             //$this->page->set_pagelayout('base'); //TODO: MDL-20676 blocks on error pages are weird, unfortunately it somehow detect the pagelayout from URL :-(
             $this->page->set_title(get_string('error'));
             $this->page->set_heading($this->page->course->fullname);
+            // No need to display the activity header when encountering an error.
+            $this->page->activityheader->disable();
             $output .= $this->header();
         }
 
@@ -3345,40 +3445,25 @@ EOD;
 
         $loginpage = $this->is_login_page();
         $loginurl = get_login_url();
-        // If not logged in, show the typical not-logged-in string.
-        if (!isloggedin()) {
-            $returnstr = get_string('loggedinnot', 'moodle');
-            if (!$loginpage) {
-                $returnstr .= " (<a href=\"$loginurl\">" . get_string('login') . '</a>)';
-            }
-            return html_writer::div(
-                html_writer::span(
-                    $returnstr,
-                    'login'
-                ),
-                $usermenuclasses
-            );
-
-        }
-
-        // If logged in as a guest user, show a string to that effect.
-        if (isguestuser()) {
-            $returnstr = get_string('loggedinasguest');
-            if (!$loginpage && $withlinks) {
-                $returnstr .= " (<a href=\"$loginurl\">".get_string('login').'</a>)';
-            }
-
-            return html_writer::div(
-                html_writer::span(
-                    $returnstr,
-                    'login'
-                ),
-                $usermenuclasses
-            );
-        }
 
         // Get some navigation opts.
         $opts = user_get_user_navigation_info($user, $this->page);
+
+        if (!empty($opts->unauthenticateduser)) {
+            $returnstr = get_string($opts->unauthenticateduser['content'], 'moodle');
+            // If not logged in, show the typical not-logged-in string.
+            if (!$loginpage && (!$opts->unauthenticateduser['guest'] || $withlinks)) {
+                $returnstr .= " (<a href=\"$loginurl\">" . get_string('login') . '</a>)';
+            }
+
+            return html_writer::div(
+                html_writer::span(
+                    $returnstr,
+                    'login nav-link'
+                ),
+                $usermenuclasses
+            );
+        }
 
         $avatarclasses = "avatars";
         $avatarcontents = html_writer::span($opts->metadata['useravatar'], 'avatar current');
@@ -3443,10 +3528,10 @@ EOD;
 
         $am = new action_menu();
         $am->set_menu_trigger(
-            $returnstr
+            $returnstr,
+            'nav-link'
         );
         $am->set_action_label(get_string('usermenu'));
-        $am->set_alignment(action_menu::TR, action_menu::BR);
         $am->set_nowrap_on_items();
         if ($withlinks) {
             $navitemcount = count($opts->navitems);
@@ -3771,7 +3856,7 @@ EOD;
                 if ($langtype !== $currentlang) {
                     $attributes[] = [
                         'key' => 'lang',
-                        'value' => str_replace('_', '-', $langtype),
+                        'value' => get_html_lang_attribute_value($langtype),
                     ];
                 }
                 $this->language->add($langname, new moodle_url($this->page->url, ['lang' => $langtype]), null, null, $attributes);
@@ -4114,6 +4199,70 @@ EOD;
     }
 
     /**
+     * Returns the HTML for the site support email link
+     *
+     * @param array $customattribs Array of custom attributes for the support email anchor tag.
+     * @return string The html code for the support email link.
+     */
+    public function supportemail(array $customattribs = []): string {
+        global $CFG;
+
+        // Do not provide a link to contact site support if it is unavailable to this user. This would be where the site has
+        // disabled support, or limited it to authenticated users and the current user is a guest or not logged in.
+        if (!isset($CFG->supportavailability) ||
+                $CFG->supportavailability == CONTACT_SUPPORT_DISABLED ||
+                ($CFG->supportavailability == CONTACT_SUPPORT_AUTHENTICATED && (!isloggedin() || isguestuser()))) {
+            return '';
+        }
+
+        $label = get_string('contactsitesupport', 'admin');
+        $icon = $this->pix_icon('t/email', '');
+        $content = $icon . $label;
+
+        if (!empty($CFG->supportpage)) {
+            $attributes = ['href' => $CFG->supportpage, 'target' => 'blank'];
+            $content .= $this->pix_icon('i/externallink', '', 'moodle', ['class' => 'ml-1']);
+        } else {
+            $attributes = ['href' => $CFG->wwwroot . '/user/contactsitesupport.php'];
+        }
+
+        $attributes += $customattribs;
+
+        return html_writer::tag('a', $content, $attributes);
+    }
+
+    /**
+     * Returns the services and support link for the help pop-up.
+     *
+     * @return string
+     */
+    public function services_support_link(): string {
+        global $CFG;
+
+        if (during_initial_install() ||
+            (isset($CFG->showservicesandsupportcontent) && $CFG->showservicesandsupportcontent == false) ||
+            !is_siteadmin()) {
+            return '';
+        }
+
+        $liferingicon = $this->pix_icon('t/life-ring', '', 'moodle', ['class' => 'fa fa-life-ring']);
+        $newwindowicon = $this->pix_icon('i/externallink', get_string('opensinnewwindow'), 'moodle', ['class' => 'ml-1']);
+        $link = 'https://moodle.com/help/?utm_source=CTA-banner&utm_medium=platform&utm_campaign=name~Moodle4+cat~lms+mp~no';
+        $content = $liferingicon . get_string('moodleservicesandsupport') . $newwindowicon;
+
+        return html_writer::tag('a', $content, ['target' => '_blank', 'href' => $link]);
+    }
+
+    /**
+     * Helper function to decide whether to show the help popover header or not.
+     *
+     * @return bool
+     */
+    public function has_popover_links(): bool {
+        return !empty($this->services_support_link()) || !empty($this->page_doc_link()) || !empty($this->supportemail());
+    }
+
+    /**
      * Returns the page heading menu.
      *
      * @since Moodle 2.5.1 2.6
@@ -4140,7 +4289,17 @@ EOD;
      * @return moodle_url The moodle_url for the favicon
      */
     public function favicon() {
-        return $this->image_url('favicon', 'theme');
+        $logo = null;
+        if (!during_initial_install()) {
+            $logo = get_config('core_admin', 'favicon');
+        }
+        if (empty($logo)) {
+            return $this->image_url('favicon', 'theme');
+        }
+
+        // Use $CFG->themerev to prevent browser caching when the file changes.
+        return moodle_url::make_pluginfile_url(context_system::instance()->id, 'core_admin', 'favicon', '64x64/',
+            theme_get_revision(), $logo);
     }
 
     /**
@@ -4192,7 +4351,7 @@ EOD;
         }
 
         // The user context currently has images and buttons. Other contexts may follow.
-        if (isset($headerinfo['user']) || $context->contextlevel == CONTEXT_USER) {
+        if ((isset($headerinfo['user']) || $context->contextlevel == CONTEXT_USER) && $this->page->pagetype !== 'my-index') {
             if (isset($headerinfo['user'])) {
                 $user = $headerinfo['user'];
             } else {
@@ -4251,33 +4410,12 @@ EOD;
                                 'page' => $this->page
                             );
                     }
-
-                    $this->page->requires->string_for_js('changesmadereallygoaway', 'moodle');
                 }
             } else {
                 $heading = null;
             }
         }
 
-        if ($this->should_display_main_logo($headinglevel)) {
-            $sitename = format_string($SITE->fullname, true, ['context' => context_course::instance(SITEID)]);
-            // Logo.
-            $html = html_writer::div(
-                html_writer::empty_tag('img', [
-                    'src' => $this->get_logo_url(null, 150),
-                    'alt' => get_string('logoof', '', $sitename),
-                    'class' => 'img-fluid'
-                ]),
-                'logo'
-            );
-            // Heading.
-            if (!isset($heading)) {
-                $html .= $this->heading($this->page->heading, $headinglevel, 'sr-only');
-            } else {
-                $html .= $this->heading($heading, $headinglevel, 'sr-only');
-            }
-            return $html;
-        }
 
         $contextheader = new context_header($heading, $headinglevel, $imagedata, $userbuttons);
         return $this->render_context_header($contextheader);
@@ -4326,10 +4464,14 @@ EOD;
         // Image data.
         if (isset($contextheader->imagedata)) {
             // Header specific image.
-            $html .= html_writer::div($contextheader->imagedata, 'page-header-image');
+            $html .= html_writer::div($contextheader->imagedata, 'page-header-image icon-size-7');
         }
 
         // Headings.
+        if (isset($contextheader->prefix)) {
+            $prefix = html_writer::div($contextheader->prefix, 'text-muted');
+            $heading = $prefix . $heading;
+        }
         $html .= html_writer::tag('div', $heading, array('class' => 'page-header-headings'));
 
         // Buttons.
@@ -4370,7 +4512,15 @@ EOD;
      * @return string HTML to display the main header.
      */
     public function full_header() {
-
+        $pagetype = $this->page->pagetype;
+        $homepage = get_home_page();
+        $homepagetype = null;
+        // Add a special case since /my/courses is a part of the /my subsystem.
+        if ($homepage == HOMEPAGE_MY || $homepage == HOMEPAGE_MYCOURSES) {
+            $homepagetype = 'my-index';
+        } else if ($homepage == HOMEPAGE_SITE) {
+            $homepagetype = 'site-index';
+        }
         if ($this->page->include_region_main_settings_in_header_actions() &&
                 !$this->page->blocks->is_block_present('settings')) {
             // Only include the region main settings if the page has requested it and it doesn't already have
@@ -4391,6 +4541,9 @@ EOD;
         $header->pageheadingbutton = $this->page_heading_button();
         $header->courseheader = $this->course_header();
         $header->headeractions = $this->page->get_header_actions();
+        if (!empty($pagetype) && !empty($homepagetype) && $pagetype == $homepagetype) {
+            $header->welcomemessage = \core_user::welcome_message();
+        }
         return $this->render_from_template('core/full_header', $header);
     }
 
@@ -4695,12 +4848,6 @@ EOD;
 
         $context = $form->export_for_template($this);
 
-        // Override because rendering is not supported in template yet.
-        if ($CFG->rememberusername == 0) {
-            $context->cookieshelpiconformatted = $this->help_icon('cookiesenabledonlysession');
-        } else {
-            $context->cookieshelpiconformatted = $this->help_icon('cookiesenabled');
-        }
         $context->errorformatted = $this->error_text($context->error);
         $url = $this->get_logo_url();
         if ($url) {
@@ -4866,6 +5013,65 @@ EOD;
      */
     public function render_checkbox_toggleall(\core\output\checkbox_toggleall $element) {
         return $this->render_from_template($element->get_template(), $element->export_for_template($this));
+    }
+
+    /**
+     * Renders the tertiary nav for the participants page
+     *
+     * @param object $course The course we are operating within
+     * @param string|null $renderedbuttons Any additional buttons/content to be displayed in line with the nav
+     * @return string
+     */
+    public function render_participants_tertiary_nav(object $course, ?string $renderedbuttons = null) {
+        $actionbar = new \core\output\participants_action_bar($course, $this->page, $renderedbuttons);
+        $content = $this->render_from_template('core_course/participants_actionbar', $actionbar->export_for_template($this));
+        return $content ?: "";
+    }
+
+    /**
+     * Renders release information in the footer popup
+     * @return string Moodle release info.
+     */
+    public function moodle_release() {
+        global $CFG;
+        if (!during_initial_install() && is_siteadmin()) {
+            return $CFG->release;
+        }
+    }
+
+    /**
+     * Generate the add block button when editing mode is turned on and the user can edit blocks.
+     *
+     * @param string $region where new blocks should be added.
+     * @return string html for the add block button.
+     */
+    public function addblockbutton($region = ''): string {
+        $addblockbutton = '';
+        $regions = $this->page->blocks->get_regions();
+        if (count($regions) == 0) {
+            return '';
+        }
+        if (isset($this->page->theme->addblockposition) &&
+                $this->page->user_is_editing() &&
+                $this->page->user_can_edit_blocks() &&
+                $this->page->pagelayout !== 'mycourses'
+        ) {
+            $params = ['bui_addblock' => '', 'sesskey' => sesskey()];
+            if (!empty($region)) {
+                $params['bui_blockregion'] = $region;
+            }
+            $url = new moodle_url($this->page->url, $params);
+            $addblockbutton = $this->render_from_template('core/add_block_button',
+                [
+                    'link' => $url->out(false),
+                    'escapedlink' => "?{$url->get_query_string(false)}",
+                    'pageType' => $this->page->pagetype,
+                    'pageLayout' => $this->page->pagelayout,
+                    'subPage' => $this->page->subpage,
+                ]
+            );
+        }
+        return $addblockbutton;
     }
 }
 
@@ -5365,9 +5571,10 @@ class core_renderer_maintenance extends core_renderer {
      * @param string $message The question to ask the user
      * @param single_button|moodle_url|string $continue The single_button component representing the Continue answer.
      * @param single_button|moodle_url|string $cancel The single_button component representing the Cancel answer.
+     * @param array $displayoptions optional extra display options
      * @return string HTML fragment
      */
-    public function confirm($message, $continue, $cancel) {
+    public function confirm($message, $continue, $cancel, array $displayoptions = []) {
         // We need plain styling of confirm boxes on upgrade because we don't know which stylesheet we have (it could be
         // from any previous version of Moodle).
         if ($continue instanceof single_button) {
@@ -5395,7 +5602,7 @@ class core_renderer_maintenance extends core_renderer {
         $output = $this->box_start('generalbox', 'notice');
         $output .= html_writer::tag('h4', get_string('confirm'));
         $output .= html_writer::tag('p', $message);
-        $output .= html_writer::tag('div', $this->render($continue) . $this->render($cancel), array('class' => 'buttons'));
+        $output .= html_writer::tag('div', $this->render($cancel) . $this->render($continue), ['class' => 'buttons']);
         $output .= $this->box_end();
         return $output;
     }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'nl', version '3.11'.
+ * Strings for component 'qtype_ordering', language 'nl', version '4.1'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -57,6 +57,7 @@ $string['numberingstyleiii'] = 'i., ii., iii., ...';
 $string['numberingstylenone'] = 'Geen nummering';
 $string['pluginname'] = 'Rangschikken';
 $string['pluginname_help'] = 'Er worden verscheidene items getoond in een willekeurige volgorde. De items kunnen door slepen in een betekenisvolle volgorde gezet worden.';
+$string['pluginname_link'] = 'question/type/ordering';
 $string['pluginnameadding'] = 'Een vraag van het type Rangschikken toevoegen';
 $string['pluginnameediting'] = 'Een vraag van het type Rangschikken bewerken';
 $string['pluginnamesummary'] = 'Zet geschudde items in een betekenisvolle volgorde.';

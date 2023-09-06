@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'ar', version '3.11'.
+ * Strings for component 'imscp', language 'ar', version '4.1'.
  *
  * @package     imscp
  * @category    string
@@ -35,18 +35,21 @@ $string['indicator:cognitivedepth'] = 'رزمة IMS معرفياً';
 $string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في مورد رزمة IMS.';
 $string['indicator:cognitivedepthdef'] = 'رزمة IMS معرفياً';
 $string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها موارد رزمة IMS خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'رزمة IMS إجتماعياً';
 $string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في مورد رزمة IMS.';
 $string['indicator:socialbreadthdef'] = 'رزمة IMS إجتماعياً';
 $string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها موارد رزمة IMS خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = 'الحزم المورشفه';
 $string['keepoldexplain'] = 'كم رزمة ينبغي أرشفتها؟';
 $string['modulename'] = 'رزمة محتوى IMS';
-$string['modulename_help'] = 'إن حزمة محتوى IMS هي مجموعة من الملفات يتم حزمها معاً وفقاً لمعايير قياسية بحيث تكون صالحة لإعادة الاستعمال في أنظمة مختلفة. تُمَكِّن وحدة حزمة محتوى IMS من رفع مثل هكذا حزم بشكل ملفات مضغوطة zip وإضافتها إلى المقرر الدراسي كمورد.
+$string['modulename_help'] = 'إن حزمة محتوى IMS هي مجموعة من الملفات يتم حزمها معاً وفقاً لمعايير قياسية بحيث تكون صالحة لإعادة الاستعمال في أنظمة مختلفة. تُمَكِّن وحدة حزمة محتوى IMS من رفع مثل هكذا حزم بشكل ملفات مضغوطة zip وإضافتها إلى المساق كمورد.
 
 عادة ما يتم عرض المحتوى عبر صفحات متعددة، مع التنقل فيما بينها. هناك عدة خيارات بشأن عرض المحتوى؛ في نافذة منبثقة، مع قائمة تنقل، أو أزرار... إلخ.
 
 يمكن استعمال حزمة محتوى IMS لاستعراض محتوى من الوسائط المتعددة والرسوم المتحركة.';
+$string['modulename_link'] = 'mod/imscp/view';
 $string['modulenameplural'] = 'رزم محتوى IMS';
 $string['navigation'] = 'التنقل';
 $string['packagefile'] = 'ملف الحزمة';

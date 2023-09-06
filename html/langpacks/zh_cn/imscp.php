@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'zh_cn', version '3.11'.
+ * Strings for component 'imscp', language 'zh_cn', version '4.1'.
  *
  * @package     imscp
  * @category    string
@@ -35,14 +35,17 @@ $string['indicator:cognitivedepth'] = 'IMS内容包资源认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在IMS内容包资源中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = 'IMS-pkg认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到IMS包资源提供的认知参与百分比（级别=无视图，视图）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'IMS内容包资源社会广度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在IMS内容包资源中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = 'IMS软件包社会';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到IMS包资源提供的社会参与度的百分比（级别=无参与，仅参与者一人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = '归档包';
 $string['keepoldexplain'] = '要归档多少包？';
 $string['modulename'] = 'IMS 内容包';
 $string['modulename_help'] = 'IMS 内容包可以在课程中显示按照 IMS 内容包规范创建的包。';
+$string['modulename_link'] = 'mod/imscp/view';
 $string['modulenameplural'] = 'IMS 内容包';
 $string['navigation'] = '导航';
 $string['packagefile'] = '包文件';

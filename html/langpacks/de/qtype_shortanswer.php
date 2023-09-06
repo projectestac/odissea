@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'de', version '3.11'.
+ * Strings for component 'qtype_shortanswer', language 'de', version '4.1'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughanswers'] = 'Dieser Fragetyp benötigt mindestens {$a} Antwort
 $string['pleaseenterananswer'] = 'Bitte geben Sie eine Antwort ein';
 $string['pluginname'] = 'Kurzantwort';
 $string['pluginname_help'] = 'Als Antwort auf eine Frage (welche auch ein Bild enthalten darf) kann ein Wort oder ein kurzer Satz eingegeben werden. Dabei können mehrere richtige Antworten erlaubt sein, die alle unterschiedlich bewertet werden. Mit der Option "Groß-/Kleinschreibung" kann auch die Schreibweise berücksichtigt werden.';
+$string['pluginname_link'] = 'question/type/shortanswer';
 $string['pluginnameadding'] = 'Kurzantwort hinzufügen';
 $string['pluginnameediting'] = 'Kurztextfrage bearbeiten';
 $string['pluginnamesummary'] = 'Die Antwort wird von Teilnehmer/innen eingetippt. Zur automatischen Bewertung wird der Eintrag mit Musterantworten verglichen. Wildcards (Platzhalter) sind möglich.';

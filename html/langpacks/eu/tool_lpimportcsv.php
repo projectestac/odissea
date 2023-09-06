@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'eu', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'eu', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -40,6 +40,7 @@ $string['idnumber'] = 'ID zenbakia';
 $string['import'] = 'Inportatu';
 $string['importfile'] = 'Markoaren CSV deskribapen-fitxategia';
 $string['importfile_help'] = 'Konpetentzia-marko bat testuzko fitxategi batetik inporta daiteke. Fitxategiaren formatua gunean konpetentzia-marko berri bat sortu eta ondoren esportatuz jakin daiteke.';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = 'Datuen fitxategia inportatzen';
 $string['invalidimportfile'] = 'Fitxategiaren formatua baliogabea da.';
 $string['isframework'] = 'markoa da';

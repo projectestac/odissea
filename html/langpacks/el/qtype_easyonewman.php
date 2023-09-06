@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyonewman', language 'el', version '3.11'.
+ * Strings for component 'qtype_easyonewman', language 'el', version '4.1'.
  *
  * @package     qtype_easyonewman
  * @category    string
@@ -39,9 +39,10 @@ $string['configeasyonewmanoptions'] = '';
 $string['correctansweris'] = 'Η σωστή απάντηση είναι: {$a}.';
 $string['insert'] = 'Εισαγωγή από τον επεξεργαστή κειμένου';
 $string['insertfromeditor'] = 'Εισαγωγή από τον επεξεργαστή κειμένου';
-$string['instructions'] = '<b>Ιδρύματα</b>';
+$string['instructions'] = '<b>Οδηγίες</b>';
 $string['javaneeded'] = 'Για να χρησιμοποιήσετε αυτή τη σελίδα χρειάζεστε έναν περιηγητή με δυνατότητα Java. Κάντε λήψη του πιο πρόσφατου πρόσθετου Java από {$a}.';
 $string['notenoughanswers'] = 'Αυτός ο τύπος ερώτησης απαιτεί τουλάχιστον {$a} απαντήσεις';
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
+$string['pluginname_link'] = 'question/type/easyonewman';
 $string['staggered'] = 'Τμηματικά';
 $string['youranswer'] = 'Η απάντησή σας: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_cmanager', language 'ca', version '3.11'.
+ * Strings for component 'block_cmanager', language 'ca', version '4.1'.
  *
  * @package     block_cmanager
  * @category    string
@@ -25,4 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['edit'] = 'Edita';
 $string['entryFields_Description'] = 'Descripció';
+$string['formBuilder_saveTxt'] = 'Desa';
+$string['historynav'] = 'Historial';
+$string['view'] = 'Visualitza';
+$string['yes'] = 'Sí';
+$string['yesDeleteRecords'] = 'Sí';

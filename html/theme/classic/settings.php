@@ -35,6 +35,11 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    // Unaddable blocks.
+    $setting = new admin_setting_configtext('theme_classic/unaddableblocks',
+        get_string('unaddableblocks', 'theme_boost'), get_string('unaddableblocks_desc', 'theme_boost'), '', PARAM_TEXT);
+    $page->add($setting);
+
     // Preset.
     $name = 'theme_classic/preset';
     $title = get_string('preset', 'theme_classic');
@@ -72,6 +77,13 @@ if ($ADMIN->fulltree) {
     $title = get_string('backgroundimage', 'theme_boost');
     $description = get_string('backgroundimage_desc', 'theme_boost');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'backgroundimage');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_classic/loginbackgroundimage';
+    $title = get_string('loginbackgroundimage', 'theme_boost');
+    $description = get_string('loginbackgroundimage_desc', 'theme_boost');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginbackgroundimage');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 

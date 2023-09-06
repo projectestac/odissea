@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'es', version '3.11'.
+ * Strings for component 'contentbank', language 'es', version '4.1'.
  *
  * @package     contentbank
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor/a';
+$string['choosecontext'] = 'Elegir curso o categoría...';
 $string['close'] = 'Cerrar';
 $string['contentbank'] = 'Banco de contenidos';
 $string['contentbankpreferences'] = 'Preferencias del banco de contenidos';
@@ -54,10 +55,12 @@ $string['eventcontentreplaced'] = 'Contenido remplazado con archivo';
 $string['eventcontentupdated'] = 'Contenido actualizado';
 $string['eventcontentuploaded'] = 'Contenido subido';
 $string['eventcontentviewed'] = 'Contenido visto';
+$string['exit'] = 'Salir';
 $string['file'] = 'Subir contenido';
 $string['file_help'] = 'Los archivos pueden ser almacenados en el banco de contenidos para usarse en cursos. Solamente pueden subirse archivos correspondientes a tipos de contenido habilitados en el sitio.';
 $string['itemsfound'] = '{$a} elementos encontrados';
 $string['lastmodified'] = 'Última modificación';
+$string['more'] = 'Más';
 $string['name'] = 'Contenido';
 $string['nocontentavailable'] = 'Sin contenido disponible';
 $string['nocontenttypes'] = 'No hay tipos de contenido disponibles';
@@ -89,7 +92,7 @@ $string['uses'] = 'Sitios enlazados';
 $string['visibilitychoicepublic'] = 'Público';
 $string['visibilitychoiceunlisted'] = 'No-listado';
 $string['visibilitypref'] = 'Visibilidad predeterminada del contenido';
-$string['visibilitypref_help'] = 'El contenido que Usted cree en el banco de contenido usará esta configuración de visibilidad de forma predeterminada.';
+$string['visibilitypref_help'] = 'El contenido que se cree en el banco de contenido usará esta configuración de visibilidad de forma predeterminada.';
 $string['visibilitysetpublic'] = 'Hacer público';
 $string['visibilitysetunlisted'] = 'Hacer no-listado';
 $string['visibilitytitleunlisted'] = '{$a} (No-listado)';

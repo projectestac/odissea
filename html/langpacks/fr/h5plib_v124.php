@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'fr', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'fr', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['editor:a11ytitlehidelabel'] = 'Cacher le titre d\'accessibilité';
+$string['editor:a11ytitleshowlabel'] = 'Montrer le titre d\'accessibilité';
 $string['editor:add'] = 'Ajouter';
 $string['editor:addauthor'] = 'Enregistrer l\'auteur';
 $string['editor:addentity'] = 'Ajouter :entity';
 $string['editor:addfile'] = 'Ajouter fichier';
 $string['editor:addnewchange'] = 'Ajouter nouvelle modification';
 $string['editor:addtitle'] = 'Ajouter titre';
-$string['editor:addvideodescription'] = 'H5P supporte toutes les sources vidéo en format mp4, webm ou ogv, ainsi que Vimeo Pro et les liens YouTube.';
+$string['editor:addvideodescription'] = 'H5P supporte toutes les sources vidéo externes en format mp4, webm ou ogv, telles que Vimeo Pro, ainsi que les liens YouTube et Panopto.';
 $string['editor:atoz'] = 'A à Z';
 $string['editor:avtablistlabel'] = 'Insérer en utilisant';
 $string['editor:belowmin'] = 'La valeur :property est inférieur au minimum de :min.';
@@ -91,7 +93,7 @@ $string['editor:enteraudiotitle'] = 'Copier un lien ou l\'URL d\'une source audi
 $string['editor:enteraudiourl'] = 'Saisier l\'URL d\'une source audio';
 $string['editor:enterfullscreenbuttonlabel'] = 'Mode plein écran';
 $string['editor:entervideotitle'] = 'Coller un lien YouTube ou l\'URL d\'une source vidéo';
-$string['editor:entervideourl'] = 'Saisier l\'URL d\'une source vidéo ou un lien YouTube';
+$string['editor:entervideourl'] = 'Saisier l\'URL de la vidéo';
 $string['editor:errorcalculatingmaxscore'] = 'Impossible de calculer le score maximal pour ce contenu. Le score maximal est considéré comme 0. Contacter l\'administrateur si cela n\'est pas correct.';
 $string['editor:errorcommunicatinghubcontent'] = 'Une erreur est survenu. Veuillez essayer encore.';
 $string['editor:errorcommunicatinghubtitle'] = 'Impossible de communiquer avec le serveur.';

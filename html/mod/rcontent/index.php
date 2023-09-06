@@ -81,12 +81,7 @@ for($i=$startindex;$i<($startindex+$limit);$i++) {
     $reportshow = '&nbsp;';
 
     if (has_capability('mod/rcontent:viewreport', $context)) {
-// MARSUPIAL ********** MODIFIED -> Filter by status
-// 2011.08.31 @mmartinez
-        $trackedusers = rcontent_get_count_users($rcontent->id, $rcontent->groupingid, $context, $filterby);
-// ********* ORIGINAL
-        //$trackedusers = rcontent_get_count_users($rcontent->id, $rcontent->groupingid, $context);
-// ********* FI
+        $trackedusers = rcontent_get_count_users($rcontent->id, $context, $rcontent->groupingid, $filterby);
         if ($trackedusers > 0) {
             $reportshow = '<a href="report.php?id='.$rcontent->coursemodule.$filteroptionsparam.'">'.get_string('viewalluserreports','rcontent',$trackedusers).'</a></div>';
         } else {

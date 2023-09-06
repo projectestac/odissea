@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'de', version '3.11'.
+ * Strings for component 'pdfannotator', language 'de', version '4.1'.
  *
  * @package     pdfannotator
  * @category    string
@@ -66,6 +66,7 @@ $string['colorPicker'] = 'Farbauswahl';
 $string['comment'] = 'Kommentar';
 $string['commentDeleted'] = 'Kommentar wurde gelöscht';
 $string['comments'] = 'Kommentare';
+$string['configmaxbytes'] = 'maximale Dateigröße';
 $string['correct'] = 'richtig';
 $string['count'] = 'Anzahl';
 $string['createAnnotation'] = 'Annotation erstellen';
@@ -105,6 +106,7 @@ $string['error:closequestion'] = 'Beim Schließen/Öffnen der Frage ist ein Fehl
 $string['error:deleteAnnotation'] = 'Beim Löschen der Annotation ist ein Fehler aufgetreten.';
 $string['error:editAnnotation'] = 'Beim Ändern einer Annotation ist ein Fehler aufgetreten.';
 $string['error:editcomment'] = 'Beim Editieren des Kommentars ist ein Fehler aufgetreten.';
+$string['error:findimage'] = 'Beim Versuch, Bild {$a} zu finden, ist ein Fehler aufgetreten.';
 $string['error:forwardquestion'] = 'Beim Weiterleiten der Frage ist ein Fehler aufgetreten.';
 $string['error:forwardquestionnorecipient'] = 'Beim Weiterleiten der Frage ist ein Fehler aufgetreten. Niemand in diesem Kurs hat die Berechtigung weitergeleitete Fragen zu empfangen.';
 $string['error:getAllQuestions'] = 'Beim Auslesen der Fragen dieses Dokumentes ist ein Fehler aufgetreten.';
@@ -112,14 +114,18 @@ $string['error:getAnnotation'] = 'Beim Auslesen der Annotation ist ein Fehler au
 $string['error:getAnnotations'] = 'Beim Auslesen der Annotationen ist ein Fehler aufgetreten.';
 $string['error:getComments'] = 'Beim Auslesen der Kommentare ist ein Fehler aufgetreten.';
 $string['error:getQuestions'] = 'Beim Auslesen der Fragen dieser Seite ist ein Fehler aufgetreten.';
+$string['error:getimageheight'] = 'Beim Abrufen der Bildbreite von {$a} ist ein Fehler aufgetreten.';
+$string['error:getimagewidth'] = 'Beim Abrufen der Bildbreite von {$a} ist ein Fehler aufgetreten.';
 $string['error:hideComment'] = 'Beim Ausblenden des Kommentars ist ein Fehler aufgetreten.';
 $string['error:markasread'] = 'Das Element konnte nicht als gelesen markiert werden.';
 $string['error:markasunread'] = 'Das Element konnte nicht als ungelesen markiert werden.';
 $string['error:markcorrectanswer'] = 'Beim Markieren der Antwort als richtig ist ein Fehler aufgetreten';
+$string['error:maximalsizeoffile'] = 'Ihre Datei {$a->filename}, weil sie {$a->filesize} als maximale Dateigröße überschreitet. Sie können Dateien mit höchstens {$a->maxfilesize} an einen einzelnen Kommentar anhängen.';
 $string['error:missingAnnotationtype'] = 'Annotationstyp existiert nicht. Eventuell fehlt der Eintrag in der Tabelle pdfannotator_annotationtypes.';
 $string['error:openingPDF'] = 'Beim Öffnen der PDF-Datei ist ein Fehler aufgetreten';
 $string['error:openprintview'] = 'Beim Öffnen des PDFs ist ein Fehler aufgetreten.';
 $string['error:printcomments'] = 'Beim Öffnen der Kommentare ist ein Fehler aufgetreten.';
+$string['error:printcommentsdata'] = 'Fehler mit Daten vom Server.';
 $string['error:printlatex'] = 'Beim Versuch, eine LaTeX-Formel zum PDF hinzuzufügen, ist ein Fehler aufgetreten.';
 $string['error:redihideCommentsplayComment'] = 'Beim Wiedereinblenden des Kommentars für Teilnehmer ist ein Fehler aufgetreten.';
 $string['error:redisplayComment'] = 'Beim Wiederanzeigen des Kommentars ist ein Fehler aufgetreten.';
@@ -127,6 +133,7 @@ $string['error:renderPage'] = 'Beim Anzeigen der Seite ist ein Fehler aufgetrete
 $string['error:reportComment'] = 'Beim Speichern Ihrer Meldung ist ein Fehler aufgetreten.';
 $string['error:subscribe'] = 'Beim Abonnieren der Frage ist ein Fehler aufgetreten.';
 $string['error:unsubscribe'] = 'Beim Kündigen des Abonnements ist ein Fehler aufgetreten.';
+$string['error:unsupportedextension'] = 'Die Erweiterung übermittelter Daten wird nicht unterstützt. Bitte wählen Sie eine andere Erweiterung aus.';
 $string['error:voteComment'] = 'Beim Speichern des Votes ist ein Fehler aufgetreten.';
 $string['eventreport_added'] = 'Ein Kommentar wurde gemeldet.';
 $string['filenotfound'] = 'Leider wurde keine Datei gefunden.';
@@ -149,6 +156,8 @@ $string['fullscreen'] = 'Vollbild-Modus';
 $string['fullscreenBack'] = 'Vollbild-Modus beenden';
 $string['global_setting_anonymous'] = 'Anonymes Posten erlauben?';
 $string['global_setting_anonymous_desc'] = 'Mit dieser Einstellung erlauben Sie allen Benutzern das Posten unter anonymem Namen';
+$string['global_setting_attobuttons'] = 'Symbolleistenkonfiguration des Atto-Editors';
+$string['global_setting_attobuttons_desc'] = 'Die Liste der Plugins und die Reihenfolge, in der sie angezeigt werden, kann hier konfiguriert werden. Die Konfiguration besteht aus Gruppen (eine pro Zeile), gefolgt von der geordneten Liste der Plugins für diese Gruppe. Die Gruppe wird von den Plugins mit einem Gleichheitszeichen getrennt und die Plugins werden mit Kommas getrennt. Die Gruppennamen müssen eindeutig sein und sollten angeben, was die Schaltflächen gemeinsam haben. Schaltflächen- und Gruppennamen sollten sich nicht wiederholen und dürfen nur alphanumerische Zeichen enthalten.';
 $string['global_setting_latexapisetting'] = 'LaTeX-zu-PNG API';
 $string['global_setting_latexapisetting_desc'] = 'API zur Umwandling von LaTeX in PNG beim Herunterladen von PDFs.<br>
         Hinweis: Wenn Sie die Google Chart API verwenden, erhält Google alle Formeln aus dem Dokument, sobald jemand sich entscheidet LaTeX zu nutzen.<br>
@@ -206,13 +215,15 @@ $string['markUnsolved'] = 'Frage öffnen';
 $string['markasread'] = 'Als gelesen markieren';
 $string['markasunread'] = 'Als ungelesen markieren';
 $string['markhidden'] = 'Verbergen';
+$string['maximumfilesize'] = 'maximale Dateigröße';
+$string['maximumfilesize_help'] = 'Von Nutzer/innen hochgeladene Dateien können diese Größe erreichen.';
 $string['me'] = 'ich';
 $string['messageforwardform'] = 'Ihre Nachricht an die Empfänger/innen';
 $string['messageprovider:forwardedquestion'] = 'Wenn eine Frage zu Ihnen weitergeleitet wurde';
 $string['messageprovider:newanswer'] = 'Mitteilung bei neuer Antwort auf eine abonnierte Frage';
 $string['messageprovider:newquestion'] = 'Mitteilung, wenn eine neue Frage gestellt wurde';
 $string['messageprovider:newreport'] = 'Mitteilung, wenn ein Kommentar gemeldet wurde';
-$string['min2Chars'] = 'Eine Frage oder Kommentar mit weniger als zwei Zeichen ist nicht erlaubt.';
+$string['min0Chars'] = 'Eine leere Frage oder ein leerer Kommentar ist nicht erlaubt.';
 $string['minute'] = 'Minute';
 $string['minutes'] = 'Minuten';
 $string['missingAnnotation'] = 'Die zugehörige Annotation konnte nicht gefunden werden.';
@@ -313,6 +324,7 @@ $string['pdfannotator:writeprotectedcomments'] = 'Private Kommentare verfassen';
 $string['pdfannotatorcolumn'] = 'Dokument';
 $string['pdfannotatorcontent'] = 'Dateien und Unterordner';
 $string['pdfannotatorname'] = 'PDF-Annotation Tool';
+$string['pdfannotatorpost'] = 'Kommentare und Fragen';
 $string['pluginadministration'] = 'PDF-Annotation Administration';
 $string['pluginname'] = 'PDF-Annotation';
 $string['point'] = 'Mit dem Pin-Werkzeug wird ein Pin gesetzt und ein Kommentar hinzugefügt.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'ar', version '3.11'.
+ * Strings for component 'booking', language 'ar', version '4.1'.
  *
  * @package     booking
  * @category    string
@@ -26,11 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmorebookings'] = 'إضافة المزيد من الحجوزات';
-$string['addnewbookingoption'] = 'إضافة خيار حجز جديد';
-$string['addnewbookingoptionfromtemplate'] = 'إضافة خيار حجز جديد من قالب';
 $string['addnewcategory'] = 'إضافة تصنيف جديد';
 $string['addnewinstitution'] = 'إضافة مؤسسة جديدة';
-$string['addnewtagtemplate'] = 'إضافة قالب وسم جديد';
+$string['addnewtagtemplate'] = 'إضافة مظهر وسم جديد';
 $string['address'] = 'العنوان';
 $string['advancedoptions'] = 'خيارات متقدمة';
 $string['aftercompletedtext_help'] = 'إتركه فارغاً لاستعمال النص الافتراضي للموقع. يمكنك استعمال ما تشاء من العناصر النائبة الآتية في النص:
@@ -60,7 +58,6 @@ $string['aftercompletedtext_help'] = 'إتركه فارغاً لاستعمال �
 <li>{times} - أوقات الجلسات</li>
 <li>{shorturl} - خيار مختصر عنوان الرابط</li>
 </ul>';
-$string['allchangessave'] = 'تم حفظ كل التغييرات';
 $string['allowdelete'] = 'السماح للمستخدمين بإلغاء حجوزاتهم بأنفسهم';
 $string['allowupdate'] = 'السماح بتحديث الحجوزات';
 $string['answer'] = 'الإجابة';
@@ -157,42 +154,12 @@ $string['btncancelname'] = 'تسمية الزر: إلغاء الحجز';
 $string['cancancelbook'] = 'أتريد السماح للمستخدمين بإلغاء الحجوزات خلال مدة الحجز؟';
 $string['cancancelbookdaysno'] = 'لا تحدد';
 $string['choosepdftitle'] = 'إختر عنوانًا لورقة تسجيل الدخول';
-$string['confirmationmessage'] = 'تم تسجيل حجزك
-
-
-حالة الحجز: {$a->status}
-المشارك: {$a->participant}
-المساق: {$a->title}
-التاريخ: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-لمعاينة كل مساقاتك المحجوزة، أنقر الرابط الآتي: {$a->bookinglink}
-المساق ذو الصلة يمكن العثور عليه هنا: {$a->courselink}';
-$string['confirmationmessagewaitinglist'] = 'مرحباً {$a->participant}،
-
-لقد تم تسجيل طلبك للحجز
-
-حالة الحجز: {$a->status}
-المشارك:    {$a->participant}
-المقرر الدراسي:      {$a->title}
-التاريخ:      {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-لمعاينة كل مقرراتك المحجوزة، أنقر الرابط الآتي: {$a->bookinglink}';
-$string['confirmationsubject'] = 'تأكيد الحجز لـ {$a->title}';
-$string['confirmationsubjectbookingmanager'] = 'حجز جديد لـ {$a->title} من قِبل {$a->participant}';
-$string['confirmationsubjectwaitinglist'] = 'حالة الحجز لـ {$a->title}';
-$string['confirmationsubjectwaitinglistmanager'] = 'حالة الحجز لـ {$a->title}';
-$string['courseendtime'] = 'وقت إنتهاء المقرر الدراسي';
-$string['coursestarttime'] = 'وقت بدء المقرر الدراسي';
+$string['courseendtime'] = 'وقت إنتهاء المساق';
+$string['coursestarttime'] = 'وقت بدء المساق';
 $string['customfieldoptions'] = 'قائمة القيم الممكنة';
 $string['days'] = '{$a} من الأيام';
 $string['daystonotify'] = 'عدد الأيام السابقة لبدء الحدث لإشعار المشاركين';
 $string['daystonotify2'] = 'الإشعار الثاني قبل بدء الحدث من أجل إشعار المشاركين.';
-$string['deletedbookingmessage'] = 'تم حذف الحجز للمساق الآتي: {$a->title}
-
-المستخدم: {$a->participant}
-العنوان: {$a->title}
-التاريخ: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-المساق: {$a->courselink}
-رابط الحجز: {$a->bookinglink}';
-$string['deletedbookingsubject'] = 'تم حذف الحجز: {$a->title} من قبل {$a->participant}';
 $string['deletedbookingusermessage'] = 'مرحباً {$a->participant}،
 
 إن حجزك لـ {$a->title} ({$a->startdate} {$a->starttime}) قد تم إلغاؤه.';
@@ -232,8 +199,6 @@ $string['error:failedtosendconfirmation'] = 'المستخدم الآتي لم ي
 التاريخ: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
 الرابط: {$a->bookinglink}
 المساق المعني: {$a->courselink}';
-$string['eventbooking_cancelled'] = 'حجز تم إلغاؤه';
-$string['eventbookingoption_booked'] = 'خيار حجز تم حجزه';
 $string['eventduration'] = 'مدة الحدث';
 $string['eventpoints'] = 'النقاط';
 $string['eventreport_viewed'] = 'تقرير تمت معاينته';
@@ -285,10 +250,6 @@ $string['notificationtext_help'] = 'إتركه فارغاً لاستعمال ا�
 <li>{times} - أوقات الجلسات</li>
 <li>{shorturl} - خيار مختصر عنوان الرابط</li>
 </ul>';
-$string['notificationtextmessage'] = 'المساق سيبدأ:
-
-المساق: {$a->title}
-التاريخ: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}';
 $string['notifyemail_help'] = 'إتركه فارغاً لاستعمال النص الافتراضي للموقع. يمكنك استعمال ما تشاء من العناصر النائبة الآتية في النص:
 <ul>
 <li>{status}</li>
@@ -316,20 +277,8 @@ $string['notifyemail_help'] = 'إتركه فارغاً لاستعمال النص
 <li>{times} - أوقات الجلسات</li>
 <li>{shorturl} - خيار مختصر عنوان الرابط</li>
 </ul>';
-$string['notifyemaildefaultmessage'] = 'تم تسجيل حجزك
-
-
-حالة الحجز: {$a->status}
-المشارك: {$a->participant}
-المساق: {$a->title}
-التاريخ: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-لمعاينة كل مساقاتك المحجوزة، أنقر الرابط الآتي: {$a->bookinglink}
-المساق ذو الصلة يمكن العثور عليه هنا: {$a->courselink}';
 $string['optiondatesmessage'] = 'الجلسة {$a->number}: {$a->date} <br> من: {$a->starttime} <br> إلى: {$a->endtime}';
 $string['otherbookingaddrule'] = 'إضافة قاعدة جديدة';
-$string['pdfroom'] = 'الغرفة:';
-$string['pdfstudentname'] = 'اسم الطالب';
-$string['pdftodaydate'] = 'التاريخ:';
 $string['pollurl_help'] = 'يمكنك استعمال ما تشاء من العناصر النائبة الآتية في النص:
 <ul>
 <li>{status}</li>
@@ -437,6 +386,7 @@ $string['pollurltext_help'] = 'إتركه فارغاً لاستعمال النص
 $string['privacy:metadata:booking_answers:timecreated'] = 'الطابع الزمني لوقت إنشاء الحجز';
 $string['privacy:metadata:booking_answers:timemodified'] = 'الطابع الزمني لوقت آخر تعديل في الحجز';
 $string['question'] = 'السؤال';
+$string['rule_optionfield_address'] = 'العنوان (address)';
 $string['searchname'] = 'الاسم الأول';
 $string['searchsurname'] = 'الاسم الأخير';
 $string['searchtag'] = 'البحث في الوسوم';
@@ -446,9 +396,10 @@ $string['signinextracols_desc'] = 'يمكنك الطباعة إلى حد 3 أع�
 $string['signinlogo'] = 'الشعار المزمع عرضه في ورقة تسجيل الدخول';
 $string['signinlogofooter'] = 'الشعار في التذييل لعرضه في ورقة تسجيل الدخول';
 $string['signinlogoheader'] = 'الشعار في الرأس لعرضه في ورقة تسجيل الدخول';
+$string['signinsheetaddress'] = 'العنوان:';
 $string['spaceleft'] = 'المساحة المتاحة';
 $string['spacesleft'] = 'المساحات المتاحة';
-$string['startendtimeknown'] = 'وقت بدء المقرر الدراسي وانتهائه معروفان';
+$string['startendtimeknown'] = 'وقت بدء المساق وانتهائه معروفان';
 $string['statuschangetext_help'] = 'إتركه فارغاً لاستعمال النص الافتراضي للموقع. يمكنك استعمال ما تشاء من العناصر النائبة الآتية في النص:
 <ul>
 <li>{status}</li>
@@ -508,10 +459,6 @@ $string['userleave_help'] = 'إتركه فارغاً لاستعمال النص �
 <li>{times} - أوقات الجلسات</li>
 <li>{shorturl} - خيار مختصر عنوان الرابط</li>
 </ul>';
-$string['userleavebookedmessage'] = 'مرحبًا {$a->participant}،
-
-لقد تم إلغاء اشتراكك في {$a->title}.';
-$string['userleavebookedsubject'] = 'لقد تم إلغاء اشتراكك في {$a->title} بنجاح.';
 $string['userssuccessfullenrolled'] = 'تم ضم كل المستخدمين!';
 $string['waitingtext_help'] = 'إتركه فارغاً لاستعمال النص الافتراضي للموقع. يمكنك استعمال ما تشاء من العناصر النائبة الآتية في النص:
 <ul>

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_algebra', language 'ar', version '3.11'.
+ * Strings for component 'qtype_algebra', language 'ar', version '4.1'.
  *
  * @package     qtype_algebra
  * @category    string
@@ -118,6 +118,7 @@ $string['options'] = 'الخيارات';
 $string['parseerror'] = 'خطأ عند تحليل الدالة: \'{$a}\'';
 $string['pluginname'] = 'الجبر';
 $string['pluginname_help'] = 'يقوم الطالب بإدخال معادلة كجواب وهي تتضمن متغيراً واحداً أو أكثر. يتم تقييم صحة الإجابة باستعمال واحدة من 3 طرق مختلفة.';
+$string['pluginname_link'] = 'question/type/algebra';
 $string['pluginnameadding'] = 'إضافة سؤال جبري';
 $string['pluginnameediting'] = 'تحرير سؤال جبري';
 $string['pluginnamesummary'] = 'يقوم الطالب بإدخال معادلة يمكن لها أن تتضمن متغيراً واحداً أو أكثر. يتم تقييم صحة الإجابة باستعمال واحدة من 3 طرق مختلفة.';

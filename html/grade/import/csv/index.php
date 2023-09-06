@@ -39,7 +39,7 @@ if ($verbosescales !== 1) {
 $PAGE->set_url($url);
 
 if (!$course = $DB->get_record('course', array('id'=>$id))) {
-    print_error('invalidcourseid');
+    throw new \moodle_exception('invalidcourseid');
 }
 
 require_login($course);
@@ -51,8 +51,9 @@ $separatemode = (groups_get_course_groupmode($COURSE) == SEPARATEGROUPS and
         !has_capability('moodle/site:accessallgroups', $context));
 $currentgroup = groups_get_course_group($course);
 
+$actionbar = new \core_grades\output\import_action_bar($context, null, 'csv');
 print_grade_page_head($course->id, 'import', 'csv', get_string('importcsv', 'grades'), false, false, true,
-        'importcsv', 'grades');
+    'importcsv', 'grades', null, $actionbar);
 
 $renderer = $PAGE->get_renderer('gradeimport_csv');
 
@@ -75,6 +76,7 @@ if (!$iid) {
         $csvimporterror = $csvimport->get_error();
         if (!empty($csvimporterror)) {
             echo $renderer->errors(array($csvimport->get_error()));
+            echo $OUTPUT->continue_button(new moodle_url('/grade/import/csv/index.php', ['id' => $course->id]));
             echo $OUTPUT->footer();
             die();
         }
@@ -121,6 +123,7 @@ if ($formdata = $mform2->get_data()) {
         $errors = $gradeimport->get_gradebookerrors();
         $errors[] = get_string('importfailed', 'grades');
         echo $renderer->errors($errors);
+        echo $OUTPUT->continue_button(new moodle_url('/grade/import/csv/index.php', ['id' => $course->id]));
     }
     echo $OUTPUT->footer();
 } else {

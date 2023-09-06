@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'zh_cn', version '3.11'.
+ * Strings for component 'contentbank', language 'zh_cn', version '4.1'.
  *
  * @package     contentbank
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = '作者';
+$string['choosecontext'] = '选择课程或类别...';
 $string['close'] = '关闭';
 $string['contentbank'] = '内容库';
 $string['contentbankpreferences'] = '内容库偏好';
@@ -54,10 +55,12 @@ $string['eventcontentreplaced'] = '内容替换为文件';
 $string['eventcontentupdated'] = '内容更新';
 $string['eventcontentuploaded'] = '内容上传';
 $string['eventcontentviewed'] = '内容浏览';
+$string['exit'] = '出口';
 $string['file'] = '上传内容';
 $string['file_help'] = '文件可以存储在内容库中，以便在课程中使用。只有网站上启用的内容类型所使用的文件才能被上传。';
 $string['itemsfound'] = '找到{$a}个项目';
 $string['lastmodified'] = '最后修改';
+$string['more'] = '更多';
 $string['name'] = '内容';
 $string['nocontentavailable'] = '没有可用的内容';
 $string['nocontenttypes'] = '无内容类型可用';

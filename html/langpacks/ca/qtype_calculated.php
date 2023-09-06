@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'ca', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'ca', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -55,6 +55,7 @@ $string['deletelastitem'] = 'Suprimeix el darrer element';
 $string['distributionoption'] = 'Selecciona l\'opció de distribució';
 $string['editdatasets'] = 'Edita els conjunts de dades dels comodins';
 $string['editdatasets_help'] = 'Els valors comodí es poden crear escrivint un número en cada camp de comodí i fent clic al botó Afegeix. Per generar automàticament 10 o més valors, seleccioneu el nombre requerit abans de fer clic a Afegeix. Una distribució uniforme significa que qualsevol valor entre els límits es reparteix igual; una distribució irregular significa que els valors apropats al límit inferior seran més abundants.';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = 's\'usarà un conjunt de dades compartit ja existent';
 $string['existingcategory2'] = 'un fitxer d\'un conjunt existent de fitxer que també utilitzen altres preguntes d\'aquesta categoria';
 $string['existingcategory3'] = 'un enllaç d\'un conjunt existent d\'enllaços que també utilitzen altres preguntes d\'aquesta categoria';
@@ -113,6 +114,7 @@ $string['param'] = 'Parametre {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Per qualsevol resposta parcialment correcta';
 $string['pluginname'] = 'Calculada';
 $string['pluginname_help'] = 'Les preguntes calculades permeten crear preguntes numèriques individuals utilitzant comodins entre claudàtors, els quals se substitueixen amb valors concrets en respondre el qüestionari. Per exemple, la pregunta «Quina és l\'àrea del rectangle de base {b} i alçada {a}?» tindria una fórmula de resposta correcta «{a}*{b}» (on * denota la multiplicació).';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta calculada';
 $string['pluginnameediting'] = 'S\'està editant una pregunta calculada';
 $string['pluginnamesummary'] = 'Les preguntes calculades són com les numèriques, però amb els valors numèrics escollits aleatòriament d\'un conjunt en el moment de respondre el qüestionari.';

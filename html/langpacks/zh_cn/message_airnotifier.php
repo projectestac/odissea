@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'zh_cn', version '3.11'.
+ * Strings for component 'message_airnotifier', language 'zh_cn', version '4.1'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -49,6 +49,8 @@ $string['messageprovidersempty'] = '默认通知首选项中未启用移动端�
 $string['messageproviderslow'] = '默认通知首选项中仅启用了少数移动端通知。';
 $string['moodleappsportallimitswarning'] = '请注意，允许接收通知的用户设备数量取决于您的Moodle应用程序订阅。有关详细信息，请访问<a href="{$a}" target="_blank"> Moodle 应用程序门户网站</a>。';
 $string['nodevices'] = '没有注册的设备。安装Moodle应用程序并添加此站点后，设备将自动出现。';
+$string['noemailevernotset'] = '$CFG->noemailever 禁用';
+$string['noemaileverset'] = '$CFG->noemailever 在 config.php 中启用。您需要将此设置为否或将其删除。';
 $string['nopermissiontomanagedevices'] = '您没有管理设备的权限。';
 $string['notconfigured'] = '尚未配置短信通知服务器，因此无法发送推送通知。';
 $string['notificationsserverconfiguration'] = '通知服务器（Airnotifier）配置';

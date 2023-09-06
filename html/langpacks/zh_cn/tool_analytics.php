@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'zh_cn', version '3.11'.
+ * Strings for component 'tool_analytics', language 'zh_cn', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -88,7 +88,6 @@ $string['exportmodel'] = '导出配置';
 $string['exporttrainingdata'] = '导出训练数据';
 $string['extrainfo'] = '信息';
 $string['generalerror'] = '评估错误。状态代码 {$a}';
-$string['getpredictions'] = '取得预测';
 $string['goodmodel'] = '这是用于获取预测的良好模型。启用它以开始获取预测。';
 $string['ignoreversionmismatches'] = '忽略版本不匹配';
 $string['ignoreversionmismatchescheckbox'] = '忽略此网站版本和原始网站版本之间的差异。';
@@ -96,6 +95,7 @@ $string['importedsuccessfully'] = '该模型已成功导入。';
 $string['importmodel'] = '导入模型';
 $string['indicators'] = '指标';
 $string['indicators_help'] = '这些指标是您认为能够准确预测目标的东西。';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = '指标数量：{$a}';
 $string['info'] = '信息';
 $string['insights'] = '洞察';
@@ -144,6 +144,7 @@ $string['scheduledanalysisresultscli'] = '结果使用{$a->name} (id: {$a->id})�
 $string['selecttimesplittingforevaluation'] = '‎选择要用于评估模型配置的分析间隔。';
 $string['target'] = '目标';
 $string['target_help'] = '‎目标是模型将预测的内容。 ‎';
+$string['target_link'] = 'Targets';
 $string['timesplittingnotdefined'] = '‎未定义分析间隔。‎';
 $string['timesplittingnotdefined_help'] = '‎在启用模型之前，您需要选择分析间隔。 ‎';
 $string['trainandpredictmodel'] = '训练模型和计算预测';

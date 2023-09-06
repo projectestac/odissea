@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'sv', version '3.11'.
+ * Strings for component 'analytics', language 'sv', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -123,6 +123,10 @@ $string['percentonline'] = 'Procentandel on-line';
 $string['percentonline_help'] = 'Om din organisation erbjuder utbildningar både ansikte mot ansikte och on-line anger du här hur stor procentandel av elevarbetet som sker on-line i Moodle. Ange ett värde mellan 0 och 100.';
 $string['predictionsprocessor'] = 'Förutsägelseprocessor';
 $string['predictionsprocessor_help'] = 'En förutsägelsemotor är den maskininlärnings-backend som bearbetar de datauppsättningar som genereras genom att beräkna modellers indikatorer och mål. Varje enskild modell kan använda en specifik beräkningsmotor. Den som anges här kommer att vara standard.';
+$string['privacy:metadata:analytics:analyticsmodels'] = 'Analysmodeller';
+$string['privacy:metadata:analytics:analyticsmodels:usermodified'] = 'Användare som ändrade modellen';
+$string['privacy:metadata:analytics:analyticsmodelslog'] = 'Logg som används för analysmodeller';
+$string['privacy:metadata:analytics:analyticsmodelslog:usermodified'] = 'Användare som ändrade loggen';
 $string['privacy:metadata:analytics:indicatorcalc'] = 'Indikatorberäkningar';
 $string['privacy:metadata:analytics:indicatorcalc:contextid'] = 'Kontexten';
 $string['privacy:metadata:analytics:indicatorcalc:endtime'] = 'Sluttid för beräkningar';
@@ -152,6 +156,7 @@ $string['processingsitecontents'] = 'Beabetar webbplatsinnehåll';
 $string['successfullyanalysed'] = 'Analyserades';
 $string['timesplittingmethod'] = 'Analysintervall';
 $string['timesplittingmethod_help'] = 'Analysintervallet definierar när systemet ska beräkna förutsägelser och den del av aktivitetsloggar som kommer att beaktas för dessa förutsägelser. Kursens varaktighet kan till exempel delas in i delar, med en förutsägelse som genereras i slutet av varje del.';
+$string['timesplittingmethod_link'] = 'Time_splitting_methods';
 $string['typeinstitution'] = 'Institutionstyp';
 $string['typeinstitutionacademic'] = 'Akademisk';
 $string['typeinstitutionngo'] = 'Icke-statlig organisation';

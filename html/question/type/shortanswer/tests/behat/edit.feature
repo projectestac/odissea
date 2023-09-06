@@ -40,7 +40,6 @@ Feature: Test editing a Short answer question
     And I press "id_submitbutton"
     And I should see "Edited shortanswer-001 name"
     And I choose "Preview" action for "Edited shortanswer-001" in the question bank
-    And I switch to "questionpreview" window
     And I should see "Name an amphibian:"
     # Set behaviour options
     And I set the following fields to these values:

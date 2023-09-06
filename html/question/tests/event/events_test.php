@@ -24,11 +24,10 @@
 
 namespace core_question\event;
 
+use qbank_managecategories\question_category_object;
 use qtype_description;
 use qtype_description_edit_form;
 use qtype_description_test_helper;
-use question_category_object;
-use question_edit_contexts;
 use test_question_maker;
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,7 +35,6 @@ defined('MOODLE_INTERNAL') || die();
 global $CFG;
 
 require_once($CFG->dirroot . '/question/editlib.php');
-require_once($CFG->dirroot . '/question/category_class.php');
 
 class events_test extends \advanced_testcase {
 
@@ -45,166 +43,6 @@ class events_test extends \advanced_testcase {
      */
     public function setUp(): void {
         $this->resetAfterTest();
-    }
-
-    /**
-     * Test the question category created event.
-     */
-    public function test_question_category_created() {
-        $this->setAdminUser();
-        $course = $this->getDataGenerator()->create_course();
-        $quiz = $this->getDataGenerator()->create_module('quiz', array('course' => $course->id));
-
-        $contexts = new question_edit_contexts(\context_module::instance($quiz->cmid));
-
-        $defaultcategoryobj = question_make_default_categories(array($contexts->lowest()));
-        $defaultcategory = $defaultcategoryobj->id . ',' . $defaultcategoryobj->contextid;
-
-        $qcobject = new question_category_object(
-            1,
-            new \moodle_url('/mod/quiz/edit.php', array('cmid' => $quiz->cmid)),
-            $contexts->having_one_edit_tab_cap('categories'),
-            $defaultcategoryobj->id,
-            $defaultcategory,
-            null,
-            $contexts->having_cap('moodle/question:add'));
-
-        // Trigger and capture the event.
-        $sink = $this->redirectEvents();
-        $categoryid = $qcobject->add_category($defaultcategory, 'newcategory', '', true);
-        $events = $sink->get_events();
-        $event = reset($events);
-
-        // Check that the event data is valid.
-        $this->assertInstanceOf('\core\event\question_category_created', $event);
-        $this->assertEquals(\context_module::instance($quiz->cmid), $event->get_context());
-        $expected = array($course->id, 'quiz', 'addcategory', 'view.php?id=' . $quiz->cmid , $categoryid, $quiz->cmid);
-        $this->assertEventLegacyLogData($expected, $event);
-        $this->assertEventContextNotUsed($event);
-    }
-
-    /**
-     * Test the question category deleted event.
-     */
-    public function test_question_category_deleted() {
-        $this->setAdminUser();
-        $course = $this->getDataGenerator()->create_course();
-        $quiz = $this->getDataGenerator()->create_module('quiz', ['course' => $course->id]);
-
-        $contexts = new question_edit_contexts(\context_module::instance($quiz->cmid));
-
-        $defaultcategoryobj = question_make_default_categories([$contexts->lowest()]);
-        $defaultcategory = $defaultcategoryobj->id . ',' . $defaultcategoryobj->contextid;
-
-        $qcobject = new question_category_object(
-                1,
-                new \moodle_url('/mod/quiz/edit.php', ['cmid' => $quiz->cmid]),
-                $contexts->having_one_edit_tab_cap('categories'),
-                $defaultcategoryobj->id,
-                $defaultcategory,
-                null,
-                $contexts->having_cap('moodle/question:add'));
-
-        // Create the category.
-        $categoryid = $qcobject->add_category($defaultcategory, 'newcategory', '', true);
-
-        // Trigger and capture the event.
-        $sink = $this->redirectEvents();
-        $qcobject->delete_category($categoryid);
-        $events = $sink->get_events();
-        $event = reset($events);
-
-        // Check that the event data is valid.
-        $this->assertInstanceOf('\core\event\question_category_deleted', $event);
-        $this->assertEquals(\context_module::instance($quiz->cmid), $event->get_context());
-        $this->assertEquals($categoryid, $event->objectid);
-        $this->assertDebuggingNotCalled();
-    }
-
-    /**
-     * Test the question category updated event.
-     */
-    public function test_question_category_updated() {
-        $this->setAdminUser();
-        $course = $this->getDataGenerator()->create_course();
-        $quiz = $this->getDataGenerator()->create_module('quiz', ['course' => $course->id]);
-
-        $contexts = new question_edit_contexts(\context_module::instance($quiz->cmid));
-
-        $defaultcategoryobj = question_make_default_categories([$contexts->lowest()]);
-        $defaultcategory = $defaultcategoryobj->id . ',' . $defaultcategoryobj->contextid;
-
-        $qcobject = new question_category_object(
-                1,
-                new \moodle_url('/mod/quiz/edit.php', ['cmid' => $quiz->cmid]),
-                $contexts->having_one_edit_tab_cap('categories'),
-                $defaultcategoryobj->id,
-                $defaultcategory,
-                null,
-                $contexts->having_cap('moodle/question:add'));
-
-        // Create the category.
-        $categoryid = $qcobject->add_category($defaultcategory, 'newcategory', '', true);
-
-        // Trigger and capture the event.
-        $sink = $this->redirectEvents();
-        $qcobject->update_category($categoryid, $defaultcategory, 'updatedcategory', '', FORMAT_HTML, '', false);
-        $events = $sink->get_events();
-        $event = reset($events);
-
-        // Check that the event data is valid.
-        $this->assertInstanceOf('\core\event\question_category_updated', $event);
-        $this->assertEquals(\context_module::instance($quiz->cmid), $event->get_context());
-        $this->assertEquals($categoryid, $event->objectid);
-        $this->assertDebuggingNotCalled();
-    }
-
-    /**
-     * Test the question category viewed event.
-     * There is no external API for viewing the category, so the unit test will simply
-     * create and trigger the event and ensure data is returned as expected.
-     */
-    public function test_question_category_viewed() {
-
-        $this->setAdminUser();
-        $course = $this->getDataGenerator()->create_course();
-        $quiz = $this->getDataGenerator()->create_module('quiz', ['course' => $course->id]);
-
-        $contexts = new question_edit_contexts(\context_module::instance($quiz->cmid));
-
-        $defaultcategoryobj = question_make_default_categories([$contexts->lowest()]);
-        $defaultcategory = $defaultcategoryobj->id . ',' . $defaultcategoryobj->contextid;
-
-        $qcobject = new question_category_object(
-                1,
-                new \moodle_url('/mod/quiz/edit.php', ['cmid' => $quiz->cmid]),
-                $contexts->having_one_edit_tab_cap('categories'),
-                $defaultcategoryobj->id,
-                $defaultcategory,
-                null,
-                $contexts->having_cap('moodle/question:add'));
-
-        // Create the category.
-        $categoryid = $qcobject->add_category($defaultcategory, 'newcategory', '', true);
-
-        // Log the view of this category.
-        $category = new \stdClass();
-        $category->id = $categoryid;
-        $context = \context_module::instance($quiz->cmid);
-        $event = \core\event\question_category_viewed::create_from_question_category_instance($category, $context);
-
-        // Trigger and capture the event.
-        $sink = $this->redirectEvents();
-        $event->trigger();
-        $events = $sink->get_events();
-        $event = reset($events);
-
-        // Check that the event data is valid.
-        $this->assertInstanceOf('\core\event\question_category_viewed', $event);
-        $this->assertEquals(\context_module::instance($quiz->cmid), $event->get_context());
-        $this->assertEquals($categoryid, $event->objectid);
-        $this->assertDebuggingNotCalled();
-
     }
 
     /**
@@ -218,7 +56,7 @@ class events_test extends \advanced_testcase {
         $course = $this->getDataGenerator()->create_course();
         $quiz = $this->getDataGenerator()->create_module('quiz', ['course' => $course->id]);
 
-        $contexts = new question_edit_contexts(\context_module::instance($quiz->cmid));
+        $contexts = new \core_question\local\bank\question_edit_contexts(\context_module::instance($quiz->cmid));
 
         $defaultcategoryobj = question_make_default_categories([$contexts->lowest()]);
         $defaultcategory = $defaultcategoryobj->id . ',' . $defaultcategoryobj->contextid;
@@ -269,7 +107,7 @@ class events_test extends \advanced_testcase {
         $course = $this->getDataGenerator()->create_course();
         $quiz = $this->getDataGenerator()->create_module('quiz', ['course' => $course->id]);
 
-        $contexts = new question_edit_contexts(\context_module::instance($quiz->cmid));
+        $contexts = new \core_question\local\bank\question_edit_contexts(\context_module::instance($quiz->cmid));
 
         $defaultcategoryobj = question_make_default_categories([$contexts->lowest()]);
         $defaultcategory = $defaultcategoryobj->id . ',' . $defaultcategoryobj->contextid;
@@ -390,12 +228,13 @@ class events_test extends \advanced_testcase {
 
         // Trigger and capture the event.
         $sink = $this->redirectEvents();
-        $qtype->save_question($questiondata, $fromform);
+        $question = $qtype->save_question($questiondata, $fromform);
         $events = $sink->get_events();
         $event = reset($events);
 
         // Check that the event data is valid.
-        $this->assertInstanceOf('\core\event\question_updated', $event);
+        // Every save is a new question after Moodle 4.0.
+        $this->assertInstanceOf('\core\event\question_created', $event);
         $this->assertEquals($question->id, $event->objectid);
         $this->assertEquals($cat->id, $event->other['categoryid']);
         $this->assertDebuggingNotCalled();

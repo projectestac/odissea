@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'pt', version '3.11'.
+ * Strings for component 'message_email', language 'pt', version '4.1'.
  *
  * @package     message_email
  * @category    string
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['email'] = 'Enviar notificações por e-mail para';
-$string['emaildigestsubject'] = 'Resumo das mensagens';
 $string['emaildigestunreadmessages'] = 'Mensagens não lidas';
 $string['emaildigestviewallmessages'] = 'Ver todas as mensagens';
 $string['emailonlyfromnoreplyaddress'] = 'Enviar e-mails sempre a partir do endereço \'Não responder\' (no-reply)?';

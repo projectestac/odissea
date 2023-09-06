@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ca', version '3.11'.
+ * Strings for component 'hotpot', language 'ca', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -326,6 +326,7 @@ L\'exercici d\'aprenentatge pot ser una pàgina web estàtica o una pàgina web 
 * Xerte
 * iSpring
 * qualsevol editor HTML';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'Qüestionaris Hot Potatoes';
 $string['nameadd'] = 'Nom';
 $string['nameadd_help'] = 'El nom pot ser un text specfic introduït pel professor o pot ser generat de forma automàtica.

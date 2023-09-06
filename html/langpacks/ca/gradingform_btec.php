@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_btec', language 'ca', version '3.11'.
+ * Strings for component 'gradingform_btec', language 'ca', version '4.1'.
  *
  * @package     gradingform_btec
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['btecgrading_link'] = 'BTEC_marking';
 $string['comments'] = 'Frequently used comments';
 $string['confirmdeletecriterion'] = 'Confirmeu que voleu suprimir aquest element?';
 $string['level'] = 'Nivell';

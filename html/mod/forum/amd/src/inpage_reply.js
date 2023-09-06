@@ -21,18 +21,20 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 define([
-        'jquery',
-        'core/templates',
-        'core/notification',
-        'mod_forum/repository',
-        'mod_forum/selectors',
-    ], function(
-        $,
-        Templates,
-        Notification,
-        Repository,
-        Selectors
-    ) {
+    'jquery',
+    'core/templates',
+    'core/notification',
+    'mod_forum/repository',
+    'mod_forum/selectors',
+    'core_form/changechecker',
+], function(
+    $,
+    Templates,
+    Notification,
+    Repository,
+    Selectors,
+    FormChangeChecker
+) {
 
     var DISPLAYCONSTANTS = {
         NESTED_V2: 4,
@@ -170,14 +172,13 @@ define([
                         allButtons.prop('disabled', false);
 
                         // Tell formchangechecker we submitted the form.
-                        if (typeof M.core_formchangechecker !== 'undefined') {
-                            M.core_formchangechecker.reset_form_dirty_state();
-                        }
+                        FormChangeChecker.resetFormDirtyState(submitButton[0]);
 
                         return currentRoot.find(Selectors.post.inpageReplyContent).hide();
                     })
                     .then(function() {
                         location.href = "#p" + newid;
+
                         // Reload the page, say if threshold is being set by user those would get reflected through the templates.
                         location.reload();
                     })

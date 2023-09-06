@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'eu', version '3.11'.
+ * Strings for component 'block_myprofile', language 'eu', version '4.1'.
  *
  * @package     block_myprofile
  * @category    string
@@ -34,9 +34,11 @@ $string['display_currentlogin'] = 'Erakutsi oraingo saio-hasiera';
 $string['display_email'] = 'Erakutsi helbide elektronikoa';
 $string['display_firstaccess'] = 'Erakutsi lehen saio-hasiera';
 $string['display_icq'] = 'Erakutsi ICQ';
+$string['display_idnumber'] = 'Erakutsi ID zenbakia';
 $string['display_institution'] = 'Erakutsi erakundea';
 $string['display_lastaccess'] = 'Erakutsi azken saio-hasiera';
 $string['display_lastip'] = 'Erakutsi azken IPa';
+$string['display_lastlogin'] = 'Erakutsi azken sarrera';
 $string['display_msn'] = 'Erakutsi MSN';
 $string['display_phone1'] = 'Erakutsi telefonoa';
 $string['display_phone2'] = 'Erakutsi telefono mugikorra';

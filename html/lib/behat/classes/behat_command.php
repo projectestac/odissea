@@ -40,7 +40,7 @@ class behat_command {
     /**
      * Docs url
      */
-    const DOCS_URL = 'https://docs.moodle.org/dev/Running_acceptance_test';
+    const DOCS_URL = 'https://moodledev.io/general/development/tools/behat';
 
     /**
      * Ensures the behat dir exists in moodledata
@@ -203,13 +203,19 @@ class behat_command {
         // We only need to check this when the behat site is not running as
         // at this point, when it is running, all $CFG->behat_* vars have
         // already been copied to $CFG->dataroot, $CFG->prefix and $CFG->wwwroot.
-        if (!defined('BEHAT_SITE_RUNNING') &&
-                ($CFG->behat_prefix == $CFG->prefix ||
-                $CFG->behat_dataroot == $CFG->dataroot ||
-                $CFG->behat_wwwroot == $CFG->wwwroot ||
-                (!empty($CFG->phpunit_prefix) && $CFG->phpunit_prefix == $CFG->behat_prefix) ||
-                (!empty($CFG->phpunit_dataroot) && $CFG->phpunit_dataroot == $CFG->behat_dataroot)
-                )) {
+        $phpunitprefix = empty($CFG->phpunit_prefix) ? '' : $CFG->phpunit_prefix;
+        $behatdbname = empty($CFG->behat_dbname) ? $CFG->dbname : $CFG->behat_dbname;
+        $phpunitdbname = empty($CFG->phpunit_dbname) ? $CFG->dbname : $CFG->phpunit_dbname;
+        $behatdbhost = empty($CFG->behat_dbhost) ? $CFG->dbhost : $CFG->behat_dbhost;
+        $phpunitdbhost = empty($CFG->phpunit_dbhost) ? $CFG->dbhost : $CFG->phpunit_dbhost;
+
+        $samedataroot = $CFG->behat_dataroot == $CFG->dataroot;
+        $samedataroot = $samedataroot || (!empty($CFG->phpunit_dataroot) && $CFG->phpunit_dataroot == $CFG->behat_dataroot);
+        $samewwwroot = $CFG->behat_wwwroot == $CFG->wwwroot;
+        $sameprefix = ($CFG->behat_prefix == $CFG->prefix && $behatdbname == $CFG->dbname && $behatdbhost == $CFG->dbhost);
+        $sameprefix = $sameprefix || ($CFG->behat_prefix == $phpunitprefix && $behatdbname == $phpunitdbname &&
+                $behatdbhost == $phpunitdbhost);
+        if (!defined('BEHAT_SITE_RUNNING') && ($samedataroot || $samewwwroot || $sameprefix)) {
             self::output_msg(get_string('erroruniqueconfig', 'tool_behat'));
             return BEHAT_EXITCODE_CONFIG;
         }
@@ -220,12 +226,6 @@ class behat_command {
         }
         if (empty($CFG->behat_dataroot) || !is_dir($CFG->behat_dataroot) || !is_writable($CFG->behat_dataroot)) {
             self::output_msg(get_string('errordataroot', 'tool_behat'));
-            return BEHAT_EXITCODE_CONFIG;
-        }
-
-        // If app config is supplied, check the value is correct.
-        if (!empty($CFG->behat_ionic_dirroot) && !file_exists($CFG->behat_ionic_dirroot . '/ionic.config.json')) {
-            self::output_msg(get_string('errorapproot', 'tool_behat'));
             return BEHAT_EXITCODE_CONFIG;
         }
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grouptool', language 'en', version '3.11'.
+ * Strings for component 'grouptool', language 'en', version '4.1'.
  *
  * @package     grouptool
  * @category    string
@@ -54,6 +54,8 @@ $string['asterisk_marks_moodle_registrations'] = 'Users with leading asterisk (*
 $string['availabledate'] = 'Registration start';
 $string['availabledate_help'] = 'Begin of the registration period. After this date students are able to register themselves in the selected groups (if enabled).';
 $string['availabledateno'] = 'Always available';
+$string['calendaravailable'] = '{$a} registration opens';
+$string['calendardue'] = '{$a} registration is due';
 $string['cant_enrol'] = 'Can\'t enrol user automatically in course.';
 $string['cfg_addinstanceset_head'] = 'Additional Instance Settings';
 $string['cfg_addinstanceset_head_info'] = 'Additional settings for grouptool.';
@@ -95,6 +97,8 @@ $string['cfg_moodlesync_head'] = 'Synchronisation behaviour';
 $string['cfg_moodlesync_head_info'] = 'How grouptools should behave if moodle group members are added/deleted or single groups are deleted';
 $string['cfg_name_scheme'] = 'Standard name scheme';
 $string['cfg_name_scheme_desc'] = 'Standard name scheme used for group creation';
+$string['cfg_show_add_info'] = 'Display additional group information in self registration';
+$string['cfg_show_add_info_desc'] = 'Display addidional information from Moodle groups like descriptions or pictures in the registration tab';
 $string['cfg_show_members'] = 'Show group members';
 $string['cfg_show_members_desc'] = 'Determines if group members should be visible by default';
 $string['cfg_use_individual'] = 'Use individual size';
@@ -439,6 +443,7 @@ $string['number_of_students'] = 'Number of students';
 $string['occupied'] = 'Occupied';
 $string['onenewgrouping'] = 'In ONE new grouping';
 $string['onenewgroupingpergroup'] = 'One grouping PER group';
+$string['open_group_message'] = 'Open group messages';
 $string['orientation'] = 'PDF-orientation';
 $string['outdated'] = 'deviating';
 $string['overflowwarning'] = 'If you continue importing the group size in instance <strong>{$a->instancename}</strong> will be exceeded!';
@@ -478,7 +483,7 @@ $string['queues'] = 'Queues';
 $string['queues_max'] = 'Max. simultaneous queue-places per participant';
 $string['queuesgrp'] = 'Queue and maximum queue places';
 $string['queuesgrp_help'] = 'If queues are enabled, students who try to register in a full group, get queued until someone deregisters from the very same group. After the deadline the teacher has the ability to move students to other groups if they are still queued, where groups are filled using the current sort order of the group list. You should define a maximum number of groups in whom a user can be queued.<br />Limits the maximum simultaneous queue entries for each person in this grouptool.';
-$string['queuesizeerror'] = 'Queue places have to be greater than or equal 0. Letters or other signs are not allowed.';
+$string['queuesizeerror'] = 'Queue places have to be integers and greater than or equal 0. Letters or other signs are not allowed.';
 $string['queuespresent'] = 'Queues are already present! These will be deleted if you continue. To continue hit the save button again!';
 $string['queuespresenterror'] = 'There are users listet in queues. You can\'t deactivate queues until these are resolved.';
 $string['rank'] = 'Rank';
@@ -512,7 +517,7 @@ $string['regpresent'] = 'User\'s already {$a}';
 $string['rename_failed'] = 'Rename failed!';
 $string['renamed_group'] = 'Renamed group!';
 $string['require_registration'] = 'Require registrations';
-$string['require_registration_help'] = 'The minimum amount of groups students need to register to in order to mark this activity as completed. Spots in queues are not considered by the rule. If the number is higher than 1, "Multiple registrations" needs to be activated and "Maximum groups to choose" needs to be greater or equal to this value.';
+$string['require_registration_help'] = 'The minimum amount of groups students need to register to in order to mark this activity as completed. Spots in queues are not considered by the rule. If the number is higher than 1, "Multiple registrations" needs to be activated and "Maximum groups to choose" needs to be greater or equal to this value';
 $string['reset_agrps'] = 'Reset active groups';
 $string['reset_agrps_help'] = 'Resets all course groups to be inactive for grouptools. This will also delete every registration and queue in grouptools of this course!';
 $string['reset_queues'] = 'Reset queues';
@@ -606,7 +611,7 @@ $string['unregister_progress_unregister'] = 'Deregister user';
 $string['unregister_skipped'] = 'Skipped user <strong>{$a->fullname}</strong> for group <strong>{$a->groupname}</strong>!';
 $string['unregister_user'] = 'Deregistration of <strong>{$a->fullname}</strong> (<strong>{$a->idnumber}</strong>) from group <strong>{$a->groupname}</strong> succeeded.';
 $string['unregister_user_from_moodle_group'] = 'Deregistration of <strong>{$a->fullname}</strong> (<strong>{$a->idnumber}</strong>) from moodle group <strong>{$a->groupname}</strong> succeeded.';
-$string['unregister_user_not_in_group'] = 'User <strong>{$a->fullname}</strong> (<strong>{$a->idnumber}</strong>) not in group <strong>{$a->groupname}</strong>!';
+$string['unregister_user_not_in_group'] = 'User <strong>{$a->fullname}</strong> (<strong>{$a->idnumber}</strong>) not in moodle group <strong>{$a->groupname}</strong>!';
 $string['unregister_user_only_in_moodle_group'] = 'User <strong>{$a->fullname}</strong> is only in moodle group <strong>{$a->groupname}</strong> but not in grouptool group!';
 $string['unregister_user_prev'] = 'Deregistrating <strong>{$a->fullname}</strong> (<strong>{$a->idnumber}</strong>) from group <strong>{$a->groupname}</strong>.';
 $string['unregisterbutton'] = 'Deregister users';

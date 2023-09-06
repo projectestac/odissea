@@ -58,7 +58,7 @@ switch ($action) {
         $minor = optional_param('minorVersion', 0, PARAM_INT);
 
         // Normalise Moodle language using underscore, as opposed to H5P which uses dash.
-        $language = optional_param('default-language', null, PARAM_RAW);
+        $language = optional_param('default-language', '', PARAM_RAW);
         $language = clean_param(str_replace('-', '_', $language), PARAM_LANG);
 
         if (!empty($name)) {
@@ -87,7 +87,7 @@ switch ($action) {
         foreach ($_FILES as $uploadedfile) {
             $filename = clean_param($uploadedfile['name'], PARAM_FILE);
             if ($uploadedfile['size'] > $maxsize) {
-                H5PCore::ajaxError(get_string('maxbytesfile', 'error', ['file' => $filename, 'size' => display_size($maxsize)]));
+                H5PCore::ajaxError(get_string('maxbytesfile', 'error', ['file' => $filename, 'size' => display_size($maxsize, 0)]));
                 return;
             }
             \core\antivirus\manager::scan_file($uploadedfile['tmp_name'], $filename, true);

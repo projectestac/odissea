@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_xp', language 'en', version '3.11'.
+ * Strings for component 'block_xp', language 'en', version '4.1'.
  *
  * @package     block_xp
  * @category    string
@@ -238,7 +238,7 @@ $string['promocontactus'] = 'Get in touch';
 $string['promoemailusat'] = 'E-mail us at _levelup@branchup.tech_.';
 $string['promoerrorsendingemail'] = 'Ouch! We could not send the message... please e-mail us directly at: {$a}. Thanks!';
 $string['promoifpreferemailusat'] = 'Psst! If you prefer, e-mail us directly at _{$a}_.';
-$string['promointro'] = 'Become the game master, and unleash Level Up to its full potential. Unlock additional features with Level Up XP+!';
+$string['promointro'] = 'Become the game master, and unleash Level Up XP to its full potential. Unlock additional features with Level Up XP+!';
 $string['promointroinstalled'] = 'The add-on _Level Up XP+_ is installed on your system and all of its features have been enabled.';
 $string['promorulesdidyouknow'] = 'Did you know that with <em>Level Up XP+</em> students can receive points for <em>completing courses</em> and <em>activities</em>, or even receive points according to their <em>grades</em>? <a href="{$a->url}">Discover more here</a>.';
 $string['promoyourmessagewassent'] = 'Thank you, your message was sent. We will get back to you very shortly.';
@@ -247,6 +247,7 @@ $string['property:component'] = 'Event component';
 $string['property:crud'] = 'Event CRUD';
 $string['property:eventname'] = 'Event name';
 $string['property:target'] = 'Event target';
+$string['questreleasenotice'] = '🎉 We are excited to announce our **new gamification plugin** called **Level Up Quest** 🥳. Turn your courses into **exciting adventures**, filled with **re-engagement strategies** and **celebrations** 🤯! Check out [Quest\'s website]({$a->questurl}) and our [launch post here]({$a->questblogurl}). 👈';
 $string['rank'] = 'Rank';
 $string['ranking'] = 'Ranking';
 $string['ranking_help'] = 'The rank is the absolute position of the current user in the leaderboard. The relative rank is the difference in experience points between a user and their neighbours.';

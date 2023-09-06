@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'nl', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'nl', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -55,6 +55,7 @@ $string['deletelastitem'] = 'Verwijder laatste item';
 $string['distributionoption'] = 'Kies een distributieoptie';
 $string['editdatasets'] = 'Bewerk de datasets voor de jokerwaarden';
 $string['editdatasets_help'] = 'Jokerwaarden kunnen aangemaakt worden door een getal in elk joker veld in te typen en op de voeg toe knop te klikken. Om automatisch 10 of meer waarden te genereren kies je het vereiste aantal voor je op de voeg toe knop klikt. Een uniforme distributie betekent dat elke waarde tussen de twee limieten een gelijke kans heeft om gegenereerd te worden; een loguniforme distributie betekent dat waarden dichter bij de lage grens eerder berekend zullen worden.';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = 'zal een bestaande gedeelde dataset gebruiken';
 $string['existingcategory2'] = 'een bestand uit een bestaande reeks bestanden die ook gebruikt worden door vragen in een andere categorie';
 $string['existingcategory3'] = 'een link uit een bestaande reeks links die ook gebruikt worden door vragen in een andere categorie';
@@ -111,6 +112,7 @@ $string['param'] = 'Param {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Voor elk gedeeltelijk juist antwoord';
 $string['pluginname'] = 'Berekend';
 $string['pluginname_help'] = 'Met berekende vragen kun je unieke numerieke vragen maken door jokers tussen accolades te vervangen door getallen wanneer de test wordt afgenomen. Bijvoorbeeld de vraag: "Wat is de oppervlakte van een rechthoek met lengten {l} en breedte {b}?" heeft als juist antwoord de formule "{l}*{b}" (met * als vermenigvuldigingsteken).';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = 'Berekende vraag toevoegen';
 $string['pluginnameediting'] = 'Berekende vraag bewerken';
 $string['pluginnamesummary'] = 'Berekende vragen zijn als numerieke vragen, maar met de getallen tijdens de test willekeurig gekozen uit een vooraf opgestelde set.';

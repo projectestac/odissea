@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grouptool', language 'pt', version '3.11'.
+ * Strings for component 'grouptool', language 'pt', version '4.1'.
  *
  * @package     grouptool
  * @category    string
@@ -54,6 +54,8 @@ $string['asterisk_marks_moodle_registrations'] = 'Os utilizadores marcados com a
 $string['availabledate'] = 'Data de início dos registos';
 $string['availabledate_help'] = 'Início do período de registo. Se ativo, após esta data os alunos podem registar-se nos grupos selecionados.';
 $string['availabledateno'] = 'Sempre disponível';
+$string['calendaravailable'] = 'Abre registo em {$a}';
+$string['calendardue'] = 'Já terminou registo em {$a}';
 $string['cant_enrol'] = 'Não é possível inscrever automaticamente o utilizador na disciplina.';
 $string['cfg_addinstanceset_head'] = 'Configurações adicionais da instância';
 $string['cfg_addinstanceset_head_info'] = 'Configurações adicionais para a Ferramenta de Grupos.';
@@ -95,6 +97,8 @@ $string['cfg_moodlesync_head'] = 'Comportamento na sincronização';
 $string['cfg_moodlesync_head_info'] = 'Como devem comportar-se os grupos criados através da ferramenta caso os membros do grupo Moodle sejam adicionados/apagados ou quando grupos únicos são apagados';
 $string['cfg_name_scheme'] = 'Esquema predefinido do nome';
 $string['cfg_name_scheme_desc'] = 'Esquema predefinido para o nome dos grupos a usar na criação dos grupos';
+$string['cfg_show_add_info'] = 'Mostrar informações adicionais do grupo no autorregisto';
+$string['cfg_show_add_info_desc'] = 'Mostrar informações adicionais dos grupos do Moodle, tais como, descrições ou imagens no separador de registo.';
 $string['cfg_show_members'] = 'Mostrar os membros do grupo';
 $string['cfg_show_members_desc'] = 'Determina se os membros do grupo devem estar visíveis por predefinição';
 $string['cfg_use_individual'] = 'Usar tamanho individual';
@@ -372,7 +376,7 @@ $string['messageprovider:grouptool_moveupreg'] = 'Efetuar registo ao subir na fi
 $string['missing_source_selection'] = 'Nenhuma origem selecionada!';
 $string['modulename'] = 'Ferramenta de Grupos';
 $string['modulename_help'] = 'O módulo Ferramenta de Grupos é indicado para diferentes tipos de tarefas relacionadas com grupos:<ul><li>Permite criar grupos em diferentes modos (número de grupos/membros, grupos de uma só pessoa, intervalo de grupos), bem como agrupamentos para cada grupo.</li><li>Pode ser usado para dar aos alunos a possibilidade de se registarem em determinados grupos durante um período de tempo definido.</li><li>O módulo também tem a capacidade de classificar grupos - copiando as notas de uma atividade de 1 membro do grupo para outros membros do grupo.</li><li>Importar utilizadores para grupos através de lista com números de identificação.</li><li>Vista geral dos grupos da disciplina, incluindo todos os registos, membros, filas, etc. É possível exportar estes dados para diferentes formatos de ficheiro (PDF/XLSX/ODS/TXT).</li><li>Lista exportável de todos os utilizadores da disciplina, incluindo os seus registos, filas, etc.</li></ul><p>Tenha em atenção que os grupos da Ferramenta de grupos diferem fundamentalmente dos grupos Moodle da disciplina. Para garantir a consistência entre os tipos de grupo, defina os parâmetros da secção "Comportamento nas alterações do Moodle" para  "Seguir as alterações".</p>';
-$string['modulenameplural'] = 'Ferramentas de gGrupos';
+$string['modulenameplural'] = 'Ferramentas de Grupos';
 $string['moodlesync'] = 'Comportamento nas alterações do Moodle';
 $string['moodlesync_help'] = 'Comportamento das Ferramentas de Grupos se os membros do grupo Moodle forem adicionados/apagados ou os grupos únicos forem apagados';
 $string['moreregsthanpossible'] = 'Os número de registos necessários para conclusão não podem ser superiores ao máximo de registos permitidos';
@@ -440,6 +444,7 @@ $string['number_of_students'] = 'Número de alunos';
 $string['occupied'] = 'Ocupado';
 $string['onenewgrouping'] = 'NOVO agrupamento';
 $string['onenewgroupingpergroup'] = 'Um agrupamento POR grupo';
+$string['open_group_message'] = 'Abrir mensagens de grupo';
 $string['orientation'] = 'Orientação do PDF';
 $string['outdated'] = 'divergente';
 $string['overflowwarning'] = 'Se continuar a importar, o tamanho do grupo na instância <strong>{$a->instancename}</strong> será excedido!';
@@ -479,7 +484,7 @@ $string['queues'] = 'Filas';
 $string['queues_max'] = 'Máximo de lugares simultâneos na fila por participante';
 $string['queuesgrp'] = 'Fila e máximo de lugares na fila';
 $string['queuesgrp_help'] = 'Se ativar a opção de colocar em filas, os alunos ao tentarem registar-se num grupo cheio, ficam em fila até que alguém cancele o registo no mesmo grupo. Após o prazo de registo, o professor tem a capacidade de mover os alunos para outros grupos se eles ainda estiverem em fila, onde os grupos são preenchidos usando a ordem de classificação atual da lista de grupos. Deve definir um número máximo de grupos nos quais um utilizador pode ser colocado em fila.<br />Limita o máximo de entradas simultâneas em fila para cada pessoa nesta Ferramenta de Grupos.';
-$string['queuesizeerror'] = 'Os números de lugares da fila devem ser maiores ou iguais a 0. Não são permitidas letras ou outros sinais.';
+$string['queuesizeerror'] = 'Os números de lugares da fila têm de se inteiros e maiores ou iguais a 0. Não são permitidas letras ou outros sinais.';
 $string['queuespresent'] = 'Já existem filas! Estas serão eliminadas se continuar. Para avançar, clique novamente no botão Guardar!';
 $string['queuespresenterror'] = 'Existem utilizadores listados em filas. Não pode desativar as filas até que elas sejam resolvidas.';
 $string['rank'] = 'Posição';
@@ -513,7 +518,7 @@ $string['regpresent'] = 'Utilizador já {$a}';
 $string['rename_failed'] = 'Ocorreu um erro ao renomear!';
 $string['renamed_group'] = 'Grupo foi renomeado!';
 $string['require_registration'] = 'Requer registos';
-$string['require_registration_help'] = 'O número mínimo de grupos em que os alunos têm de se inscrever para marcar esta atividade como concluída. Não são considerados pela regra as vagas em filas de espera. Se o número for maior do que 1, é necessário ativar "Registos múltiplos" e "Máximo de grupos a escolher" tem de ser maior ou igual a esse valor.';
+$string['require_registration_help'] = 'O número mínimo de grupos em que os alunos têm de se inscrever para marcar esta atividade como concluída. Não são considerados pela regra as vagas em filas de espera. Se o número for maior do que 1, é necessário ativar "Registos múltiplos" e "Máximo de grupos a escolher" tem de ser maior ou igual a esse valor';
 $string['reset_agrps'] = 'Reiniciar os grupos ativos';
 $string['reset_agrps_help'] = 'Reiniciar todos os grupos da disciplina para ficarem inativos na Ferramenta de Grupos. Irá excluir também todos os registos e filas na Ferramenta de Grupos desta disciplina!';
 $string['reset_queues'] = 'Reiniciar filas';
@@ -607,7 +612,7 @@ $string['unregister_progress_unregister'] = 'Cancelar registo do utilizador';
 $string['unregister_skipped'] = 'Foi ignorado o utilizador <strong>{$a->fullname}</strong> para o grupo <strong>{$a->groupname}</strong>!';
 $string['unregister_user'] = 'O cancelamento do registo de <strong>{$a->fullname}</strong> (<strong>{$a->idnumber}</strong>) no grupo <strong>{$a->groupname}</strong> foi concluído com sucesso.';
 $string['unregister_user_from_moodle_group'] = 'O cancelamento do registo de <strong>{$a->fullname}</strong> (<strong>{$a->idnumber}</strong>) no grupo Moodle <strong>{$a->groupname}</strong> foi concluído com sucesso.';
-$string['unregister_user_not_in_group'] = 'O utilizador <strong>{$a->fullname}</strong> (<strong>{$a->idnumber}</strong>) não pertence ao grupo <strong>{$a->groupname}</strong>!';
+$string['unregister_user_not_in_group'] = 'O utilizador <strong>{$a->fullname}</strong> (<strong>{$a->idnumber}</strong>) não pertence ao grupo Moodle <strong>{$a->groupname}</strong>!';
 $string['unregister_user_only_in_moodle_group'] = 'O utilizador <strong>{$a->fullname}</strong> está apenas no grupo Moodle <strong>{$a->groupname}</strong> mas não no grupo da ferramenta de grupos!';
 $string['unregister_user_prev'] = 'Cancelamento do registo de <strong>{$a->fullname}</strong> (<strong>{$a->idnumber}</strong>) no grupo <strong>{$a->groupname}</strong>.';
 $string['unregisterbutton'] = 'Cancelar registo de utilizadores';
@@ -621,6 +626,7 @@ $string['use_individual_help'] = 'Substituir o tamanho global do grupo com o val
 $string['use_queue'] = 'Usar filas';
 $string['use_queue_help'] = 'Os alunos podem colocar-se na fila de espera em grupos já preenchidos. Esta configuração só pode ser usada se o autorregistro estiver ativado e se estiver definido o limite do tamanho do grupo.';
 $string['use_size'] = 'Ativado';
+$string['user'] = 'Utilizador';
 $string['user_has_too_less_regs'] = 'O cancelamento de registo/fila de espera não é possível porque <strong>{$a->username}</strong> está em fila de espera/registado em muito menos grupos!';
 $string['user_is_deleted'] = 'A conta de utilizador encontrada (ID <strong>{$a->id}</strong>, Nome: <strong>{$a->fullname}</strong>) já está apagada. Sendo assim, não é possível a inscrição nesta disciplina.';
 $string['user_move_prev'] = '<strong>{$a->user}</strong> será movido da fila de espera do grupo <strong>{$a->from_group}</strong> para o grupo <strong>{$a->to_group}</strong>!';

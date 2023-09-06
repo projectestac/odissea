@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'pt', version '3.11'.
+ * Strings for component 'editor_tinymce', language 'pt', version '4.1'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -125,7 +125,7 @@ $string['advanced_dlg:colorpicker_named_title'] = 'Cores Personalizadas';
 $string['advanced_dlg:colorpicker_palette_tab'] = 'Paleta de Cores';
 $string['advanced_dlg:colorpicker_palette_title'] = 'Paleta de Cores';
 $string['advanced_dlg:colorpicker_picker_tab'] = 'Editor';
-$string['advanced_dlg:colorpicker_picker_title'] = 'Editor de Cores';
+$string['advanced_dlg:colorpicker_picker_title'] = 'Seletor de cor';
 $string['advanced_dlg:colorpicker_title'] = 'Selecione uma cor';
 $string['advanced_dlg:image_align'] = 'Alinhamento';
 $string['advanced_dlg:image_align_baseline'] = 'Sobre a linha de texto';
@@ -597,7 +597,7 @@ $string['paste:selectall_desc'] = 'Selecionar tudo';
 $string['paste_dlg:text_linebreaks'] = 'Manter quebras de linha';
 $string['paste_dlg:text_title'] = 'Use as teclas Ctrl+V para colar o texto na janela.';
 $string['paste_dlg:word_title'] = 'Use as teclas Ctrl+V para colar o texto na janela.';
-$string['pluginname'] = 'Editor HTML TinyMCE';
+$string['pluginname'] = 'Editor HTML TinyMCE (legado)';
 $string['preview:preview_desc'] = 'Pré-visualização';
 $string['print:print_desc'] = 'Imprimir';
 $string['privacy:metadata'] = 'O módulo de editor HTML TinyMCE não armazena quaisquer dados pessoais.';

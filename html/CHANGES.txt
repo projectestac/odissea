@@ -4,6 +4,37 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 23.07.10
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.1.4+
+- Updated langpacks
+- Attendance: Upgraded module
+- Atto plugin cloze: Upgraded version
+- Choicegroup: Upgraded module
+- Clickedu: Upgraded module
+- Completion progress: Upgraded block
+- Coursequotas: Updated report
+- Course format type Simple: Upgraded for Moodle 4.x
+- jclic: Added monologo icon
+- Local Àgora: Upgraded cache definitions for Moodle 4.1.4
+- Local Àgora: Copy of settings from xtec2020
+- Questionnaire: Upgraded module
+- rcontent: Added monologo icon
+- TinyMCE Editor: Restricted access to uninstall and to record video
+- XTEC Boost: Added theme
+- Wiris: Upgraded all components
+
+
+Changes 23.05.23
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.14+
+- Updated langpacks
+- Journal: Upgraded module
+- Ordering: Upgraded question type
+- Snap: Upgraded module
+- Wiris: Upgraded all components
+
+
 Changes 23.03.27
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 3.11.13+

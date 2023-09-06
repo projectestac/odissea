@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'ja', version '3.11'.
+ * Strings for component 'report_loglive', language 'ja', version '4.1'.
  *
  * @package     report_loglive
  * @category    string
@@ -32,6 +32,7 @@ $string['eventorigin'] = 'オリジン';
 $string['eventrelatedfullnameuser'] = '影響を受けるユーザ';
 $string['eventreportviewed'] = 'ライブログレポートが閲覧されました。';
 $string['livelogs'] = '過去1時間のライブログ';
+$string['livelogswithupdate'] = '過去1時間のライブログ ({$a})';
 $string['loglive:view'] = 'ライブログを表示する';
 $string['nologreaderenabled'] = '有効にされているログリーダはありません。';
 $string['pause'] = 'ライブアップデートを一時停止する';

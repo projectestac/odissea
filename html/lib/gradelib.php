@@ -58,9 +58,11 @@ require_once($CFG->libdir . '/grade/grade_outcome.php');
  * @param int    $itemnumber Most probably 0. Modules can use other numbers when having more than one grade for each user
  * @param mixed  $grades Grade (object, array) or several grades (arrays of arrays or objects), NULL if updating grade_item definition only
  * @param mixed  $itemdetails Object or array describing the grading item, NULL if no change
+ * @param bool   $isbulkupdate If bulk grade update is happening.
  * @return int Returns GRADE_UPDATE_OK, GRADE_UPDATE_FAILED, GRADE_UPDATE_MULTIPLE or GRADE_UPDATE_ITEM_LOCKED
  */
-function grade_update($source, $courseid, $itemtype, $itemmodule, $iteminstance, $itemnumber, $grades=NULL, $itemdetails=NULL) {
+function grade_update($source, $courseid, $itemtype, $itemmodule, $iteminstance, $itemnumber, $grades = null,
+        $itemdetails = null, $isbulkupdate = false) {
     global $USER, $CFG, $DB;
 
     // only following grade_item properties can be changed in this function
@@ -76,22 +78,20 @@ function grade_update($source, $courseid, $itemtype, $itemmodule, $iteminstance,
         return GRADE_UPDATE_FAILED;
     }
 
-    if (!$grade_items = grade_item::fetch_all($params)) {
+    if (!$gradeitems = grade_item::fetch_all($params)) {
         // create a new one
-        $grade_item = false;
-
-    } else if (count($grade_items) == 1){
-        $grade_item = reset($grade_items);
-        unset($grade_items); //release memory
-
+        $gradeitem = false;
+    } else if (count($gradeitems) == 1) {
+        $gradeitem = reset($gradeitems);
+        unset($gradeitems); // Release memory.
     } else {
         debugging('Found more than one grade item');
         return GRADE_UPDATE_MULTIPLE;
     }
 
     if (!empty($itemdetails['deleted'])) {
-        if ($grade_item) {
-            if ($grade_item->delete($source)) {
+        if ($gradeitem) {
+            if ($gradeitem->delete($source)) {
                 return GRADE_UPDATE_OK;
             } else {
                 return GRADE_UPDATE_FAILED;
@@ -102,7 +102,7 @@ function grade_update($source, $courseid, $itemtype, $itemmodule, $iteminstance,
 
 /// Create or update the grade_item if needed
 
-    if (!$grade_item) {
+    if (!$gradeitem) {
         if ($itemdetails) {
             $itemdetails = (array)$itemdetails;
 
@@ -126,11 +126,11 @@ function grade_update($source, $courseid, $itemtype, $itemmodule, $iteminstance,
                 $params[$k] = $v;
             }
         }
-        $grade_item = new grade_item($params);
-        $grade_item->insert();
+        $gradeitem = new grade_item($params);
+        $gradeitem->insert(null, $isbulkupdate);
 
     } else {
-        if ($grade_item->is_locked()) {
+        if ($gradeitem->is_locked()) {
             // no notice() here, test returned value instead!
             return GRADE_UPDATE_ITEM_LOCKED;
         }
@@ -144,33 +144,33 @@ function grade_update($source, $courseid, $itemtype, $itemmodule, $iteminstance,
                     continue;
                 }
                 if (in_array($k, $floats)) {
-                    if (grade_floats_different($grade_item->{$k}, $v)) {
-                        $grade_item->{$k} = $v;
+                    if (grade_floats_different($gradeitem->{$k}, $v)) {
+                        $gradeitem->{$k} = $v;
                         $update = true;
                     }
 
                 } else {
-                    if ($grade_item->{$k} != $v) {
-                        $grade_item->{$k} = $v;
+                    if ($gradeitem->{$k} != $v) {
+                        $gradeitem->{$k} = $v;
                         $update = true;
                     }
                 }
             }
             if ($update) {
-                $grade_item->update();
+                $gradeitem->update(null, $isbulkupdate);
             }
         }
     }
 
 /// reset grades if requested
     if (!empty($itemdetails['reset'])) {
-        $grade_item->delete_all_grades('reset');
+        $gradeitem->delete_all_grades('reset');
         return GRADE_UPDATE_OK;
     }
 
 /// Some extra checks
     // do we use grading?
-    if ($grade_item->gradetype == GRADE_TYPE_NONE) {
+    if ($gradeitem->gradetype == GRADE_TYPE_NONE) {
         return GRADE_UPDATE_OK;
     }
 
@@ -208,12 +208,12 @@ function grade_update($source, $courseid, $itemtype, $itemmodule, $iteminstance,
     $count = count($grades);
     if ($count > 0 and $count < 200) {
         list($uids, $params) = $DB->get_in_or_equal(array_keys($grades), SQL_PARAMS_NAMED, $start='uid');
-        $params['gid'] = $grade_item->id;
+        $params['gid'] = $gradeitem->id;
         $sql = "SELECT * FROM {grade_grades} WHERE itemid = :gid AND userid $uids";
 
     } else {
         $sql = "SELECT * FROM {grade_grades} WHERE itemid = :gid";
-        $params = array('gid'=>$grade_item->id);
+        $params = array('gid' => $gradeitem->id);
     }
 
     $rs = $DB->get_recordset_sql($sql, $params);
@@ -221,7 +221,7 @@ function grade_update($source, $courseid, $itemtype, $itemmodule, $iteminstance,
     $failed = false;
 
     while (count($grades) > 0) {
-        $grade_grade = null;
+        $gradegrade = null;
         $grade       = null;
 
         foreach ($rs as $gd) {
@@ -233,21 +233,21 @@ function grade_update($source, $courseid, $itemtype, $itemmodule, $iteminstance,
             }
             // existing grade requested
             $grade       = $grades[$userid];
-            $grade_grade = new grade_grade($gd, false);
+            $gradegrade = new grade_grade($gd, false);
             unset($grades[$userid]);
             break;
         }
 
-        if (is_null($grade_grade)) {
+        if (is_null($gradegrade)) {
             if (count($grades) == 0) {
-                // no more grades to process
+                // No more grades to process.
                 break;
             }
 
             $grade       = reset($grades);
             $userid      = $grade['userid'];
-            $grade_grade = new grade_grade(array('itemid'=>$grade_item->id, 'userid'=>$userid), false);
-            $grade_grade->load_optional_fields(); // add feedback and info too
+            $gradegrade = new grade_grade(array('itemid' => $gradeitem->id, 'userid' => $userid), false);
+            $gradegrade->load_optional_fields(); // add feedback and info too
             unset($grades[$userid]);
         }
 
@@ -288,8 +288,8 @@ function grade_update($source, $courseid, $itemtype, $itemmodule, $iteminstance,
         }
 
         // update or insert the grade
-        if (!$grade_item->update_raw_grade($userid, $rawgrade, $source, $feedback, $feedbackformat, $usermodified,
-                $dategraded, $datesubmitted, $grade_grade, $feedbackfiles)) {
+        if (!$gradeitem->update_raw_grade($userid, $rawgrade, $source, $feedback, $feedbackformat, $usermodified,
+                $dategraded, $datesubmitted, $gradegrade, $feedbackfiles, $isbulkupdate)) {
             $failed = true;
         }
     }
@@ -386,8 +386,10 @@ function grade_regrade_final_grades_if_required($course, callable $callback = nu
     }
 
     if (grade_needs_regrade_progress_bar($course->id)) {
-        $PAGE->set_heading($course->fullname);
-        echo $OUTPUT->header();
+        if ($PAGE->state !== moodle_page::STATE_IN_BODY) {
+            $PAGE->set_heading($course->fullname);
+            echo $OUTPUT->header();
+        }
         echo $OUTPUT->heading(get_string('recalculatinggrades', 'grades'));
         $progress = new \core\progress\display(true);
         $status = grade_regrade_final_grades($course->id, null, null, $progress);
@@ -759,14 +761,14 @@ function grade_set_setting($courseid, $name, $value) {
 /**
  * Returns string representation of grade value
  *
- * @param float $value The grade value
+ * @param float|null $value The grade value
  * @param object $grade_item Grade item object passed by reference to prevent scale reloading
  * @param bool $localized use localised decimal separator
  * @param int $displaytype type of display. For example GRADE_DISPLAY_TYPE_REAL, GRADE_DISPLAY_TYPE_PERCENTAGE, GRADE_DISPLAY_TYPE_LETTER
  * @param int $decimals The number of decimal places when displaying float values
  * @return string
  */
-function grade_format_gradevalue($value, &$grade_item, $localized=true, $displaytype=null, $decimals=null) {
+function grade_format_gradevalue(?float $value, &$grade_item, $localized=true, $displaytype=null, $decimals=null) {
     if ($grade_item->gradetype == GRADE_TYPE_NONE or $grade_item->gradetype == GRADE_TYPE_TEXT) {
         return '';
     }
@@ -830,13 +832,13 @@ function grade_format_gradevalue($value, &$grade_item, $localized=true, $display
 /**
  * Returns a float representation of a grade value
  *
- * @param float $value The grade value
+ * @param float|null $value The grade value
  * @param object $grade_item Grade item object
  * @param int $decimals The number of decimal places
  * @param bool $localized use localised decimal separator
  * @return string
  */
-function grade_format_gradevalue_real($value, $grade_item, $decimals, $localized) {
+function grade_format_gradevalue_real(?float $value, $grade_item, $decimals, $localized) {
     if ($grade_item->gradetype == GRADE_TYPE_SCALE) {
         if (!$scale = $grade_item->load_scale()) {
             return get_string('error');
@@ -853,13 +855,13 @@ function grade_format_gradevalue_real($value, $grade_item, $decimals, $localized
 /**
  * Returns a percentage representation of a grade value
  *
- * @param float $value The grade value
+ * @param float|null $value The grade value
  * @param object $grade_item Grade item object
  * @param int $decimals The number of decimal places
  * @param bool $localized use localised decimal separator
  * @return string
  */
-function grade_format_gradevalue_percentage($value, $grade_item, $decimals, $localized) {
+function grade_format_gradevalue_percentage(?float $value, $grade_item, $decimals, $localized) {
     $min = $grade_item->grademin;
     $max = $grade_item->grademax;
     if ($min == $max) {
@@ -874,11 +876,11 @@ function grade_format_gradevalue_percentage($value, $grade_item, $decimals, $loc
  * Returns a letter grade representation of a grade value
  * The array of grade letters used is produced by {@link grade_get_letters()} using the course context
  *
- * @param float $value The grade value
+ * @param float|null $value The grade value
  * @param object $grade_item Grade item object
  * @return string
  */
-function grade_format_gradevalue_letter($value, $grade_item) {
+function grade_format_gradevalue_letter(?float $value, $grade_item) {
     global $CFG;
     $context = context_course::instance($grade_item->courseid, IGNORE_MISSING);
     if (!$letters = grade_get_letters($context)) {
@@ -1150,7 +1152,7 @@ function grade_regrade_final_grades($courseid, $userid=null, $updated_item=null,
     if ($userid) {
         // one raw grade updated for one user
         if (empty($updated_item)) {
-            print_error("cannotbenull", 'debug', '', "updated_item");
+            throw new \moodle_exception("cannotbenull", 'debug', '', "updated_item");
         }
         if ($course_item->needsupdate) {
             $updated_item->force_regrading();
@@ -1273,7 +1275,7 @@ function grade_regrade_final_grades($courseid, $userid=null, $updated_item=null,
             }
 
             // Let's update, calculate or aggregate.
-            $result = $grade_items[$gid]->regrade_final_grades($userid);
+            $result = $grade_items[$gid]->regrade_final_grades($userid, $progress);
 
             if ($result === true) {
 
@@ -1350,7 +1352,7 @@ function grade_grab_course_grades($courseid, $modname=null, $userid=0) {
     }
 
     if (!$mods = core_component::get_plugin_list('mod') ) {
-        print_error('nomodules', 'debug');
+        throw new \moodle_exception('nomodules', 'debug');
     }
 
     foreach ($mods as $mod => $fullmod) {
@@ -1584,14 +1586,14 @@ function grade_course_reset($courseid) {
 }
 
 /**
- * Convert a number to 5 decimal point float, an empty string or a null db compatible format
+ * Convert a number to 5 decimal point float, null db compatible format
  * (we need this to decide if db value changed)
  *
- * @param mixed $number The number to convert
- * @return mixed float or null
+ * @param float|null $number The number to convert
+ * @return float|null float or null
  */
-function grade_floatval($number) {
-    if (is_null($number) or $number === '') {
+function grade_floatval(?float $number) {
+    if (is_null($number)) {
         return null;
     }
     // we must round to 5 digits to get the same precision as in 10,5 db fields
@@ -1603,11 +1605,11 @@ function grade_floatval($number) {
  * Compare two float numbers safely. Uses 5 decimals php precision using {@link grade_floatval()}. Nulls accepted too.
  * Used for determining if a database update is required
  *
- * @param float $f1 Float one to compare
- * @param float $f2 Float two to compare
+ * @param float|null $f1 Float one to compare
+ * @param float|null $f2 Float two to compare
  * @return bool True if the supplied values are different
  */
-function grade_floats_different($f1, $f2) {
+function grade_floats_different(?float $f1, ?float $f2): bool {
     // note: db rounding for 10,5 is different from php round() function
     return (grade_floatval($f1) !== grade_floatval($f2));
 }
@@ -1619,11 +1621,11 @@ function grade_floats_different($f1, $f2) {
  * different from php round() function.
  *
  * @since Moodle 2.0
- * @param float $f1 Float one to compare
- * @param float $f2 Float two to compare
+ * @param float|null $f1 Float one to compare
+ * @param float|null $f2 Float two to compare
  * @return bool True if the values should be considered as the same grades
  */
-function grade_floats_equal($f1, $f2) {
+function grade_floats_equal(?float $f1, ?float $f2): bool {
     return (grade_floatval($f1) === grade_floatval($f2));
 }
 

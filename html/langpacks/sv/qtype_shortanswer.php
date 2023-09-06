@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'sv', version '3.11'.
+ * Strings for component 'qtype_shortanswer', language 'sv', version '4.1'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughanswers'] = 'Denna typ av fråga kräver minst {$a} svar';
 $string['pleaseenterananswer'] = 'Ange ett svar.';
 $string['pluginname'] = 'Kort svar';
 $string['pluginname_help'] = 'Som svar på en fråga (som kan innehålla en bild) skriver den som svarar ett ord eller en kort fras. Det kan finnas flera möjliga korrekta svar, alla med olika betyg. Om "Skiftlägeskänslig" är valt, kan du ha olika poäng för "Ord" eller "ord".';
+$string['pluginname_link'] = 'question/type/shortanswer';
 $string['pluginnameadding'] = 'Lägga en kortsvarsfråga';
 $string['pluginnameediting'] = 'Redigera en kortsvarsfråga';
 $string['pluginnamesummary'] = 'Tillåter ett svar på ett eller några få ord som rättas genom att jämföra mot olika modell svar, som kan innehålla jokertecken.';

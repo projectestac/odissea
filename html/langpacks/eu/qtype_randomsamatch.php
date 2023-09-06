@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'eu', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'eu', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -30,6 +30,7 @@ $string['nosaincategory'] = 'Ez dago erantzun laburreko galderarik aukeratutako 
 $string['notenoughsaincategory'] = '{$a->nosaquestions} erantzun laburreko galdera baino ez dago aukeratutako \'{$a->catname}\' kategorian. Aukeratu beste kategoria bat, sartu bertan galdera gehiago edo gutxitu aukeratutako galdera kopurua.';
 $string['pluginname'] = 'Erantzun laburrak ausaz lotu';
 $string['pluginname_help'] = 'Ikaslearen ikuspuntutik, galdera hau lotu motakoa dirudi. Ezberdintasuna lotzeko izenen edo galderen zerrenda kategoria horretako erantzun laburreko galderetatik ausaz hartutakoak izatea da. Erabili gabeko erantzun laburreko galdera nahiko egon beharko litzateke kategorian, bestela errore mezu bat erakutsiko da.';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = 'Erantzun laburrak ausaz lotzeko galderak gehitzen';
 $string['pluginnameediting'] = 'Erantzun laburrak ausaz lotzeko galderak';
 $string['pluginnamesummary'] = 'Lotu mota galdera bezalakoa, baina galderen zerrenda kategoria bateko erantzun laburreko galderetatik ausaz hartutakoak.';

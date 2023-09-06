@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'sv', version '3.11'.
+ * Strings for component 'block', language 'sv', version '4.1'.
  *
  * @package     block
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = 'Flytta det här till dockan';
 $string['anypagematchingtheabove'] = 'Alla sidor matchar den ovanstående';
 $string['appearsinsubcontexts'] = 'Visas i underliggande sammanhang';
 $string['assignrolesinblock'] = 'Tilldela roller i {$a} block';
@@ -44,11 +43,11 @@ $string['defaultweight'] = 'Standardvikt';
 $string['defaultweight_help'] = 'Med en standardviktning kan du välja ungefär var du vill att blocket ska visas i den valda regionen; antingen överst eller längst ned. Den slutliga platsen beräknas utifrån alla block i den regionen (till exempel kan endast ett block faktiskt vara överst). Det här värdet kan åsidosättas på specifika sidor om det behövs.';
 $string['deleteblock'] = 'Ta bort {$a} block';
 $string['deleteblockcheck'] = 'Är du säker att du vill ta bort blocket <b>{$a}</b>?';
+$string['deleteblockinprogress'] = '{$a}-blocket håller på att tas bort från den här sidan.';
 $string['deleteblockwarning'] = '<p>Du håller på att ta bort ett block som även visas på andra platser.</p><p>Ursprunglig plats: {$a->location}<br />Visas på dessa sidtyper: {$a->pagetype}</p><p>Är du säker på att du vill fortsätta?</p>';
 $string['deletecheck'] = 'Ta bort blocket <strong>{$a}</strong>?';
-$string['dockblock'] = 'Docka {$a} blocket';
+$string['deletecheck_modal'] = 'Ta bort block?';
 $string['hideblock'] = 'Dölj blocket {$a}';
-$string['hidedockpanel'] = 'Dölj dockpanelen';
 $string['hidepanel'] = 'Dölj panel';
 $string['moveblock'] = 'Flytta blocket {$a}';
 $string['moveblockafter'] = 'Flytta blocket till efter blocket {$a}';
@@ -73,9 +72,6 @@ $string['showonfrontpageandsubs'] = 'Visa på startsidan och på alla sidor som 
 $string['showonfrontpageonly'] = 'Visa bara på startsidan';
 $string['subpages'] = 'Välj sidor';
 $string['thisspecificpage'] = 'Den här specifika sidan';
-$string['undockall'] = 'Frigör samtliga från dockning';
-$string['undockblock'] = 'Docka av {$a} blocket';
-$string['undockitem'] = 'Frigör den här komponenten från dockning';
 $string['visible'] = 'Synligt';
 $string['weight'] = 'Vikt ';
 $string['wherethisblockappears'] = 'Där det här blocket förekommer';

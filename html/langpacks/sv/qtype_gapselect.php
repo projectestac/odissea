@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'sv', version '3.11'.
+ * Strings for component 'qtype_gapselect', language 'sv', version '4.1'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -41,6 +41,7 @@ $string['group'] = 'Grupp';
 $string['pleaseputananswerineachbox'] = 'Placera ett svar i var och en av rutorna.';
 $string['pluginname'] = 'Välj de saknade orden';
 $string['pluginname_help'] = 'Välj saknade ord-frågor kräver att användaren väljer rätt svar fria listrutor. [[1]], [[2]], [[3]], ... används som platshållare i frågetexten, med de rätta svaren angivna som svarsalternativ 1, 2, 3, ... osv. Ytterligare svarsalternativ kan läggas till för att göra frågan svårare. Svarsalternativen kan grupperas för att begränsa vilka svar som finns i varje listruta.';
+$string['pluginname_link'] = 'question/type/gapselect';
 $string['pluginnameadding'] = 'Lägger till en Välj de saknade orden-fråga';
 $string['pluginnameediting'] = 'Redigerar en Välj de saknade orden-fråga';
 $string['pluginnamesummary'] = 'Saknade ord i texten fylls i via listrutor.';
@@ -48,6 +49,8 @@ $string['privacy:metadata'] = 'Pluginmodulen för frågetypen Saknade ord gör d
 $string['privacy:preference:defaultmark'] = 'Standardpoängen för en viss fråga.';
 $string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök när frågor körs med beteendet "Interaktivt med flera försök" eller "Adaptivt läge".';
 $string['privacy:preference:shuffleanswers'] = 'Om svaren ska blandas automatiskt.';
+$string['regradeissuenumchoiceschanged'] = 'Antalet alternativ i gruppen {$a} har ändrats.';
+$string['regradeissuenumgroupsschanged'] = 'Antalet grupper med alternativ har ändrats.';
 $string['shuffle'] = 'Blanda';
 $string['tagsnotallowed'] = '{$a->tag} är inte tillåtet. (Enbart {$a->allowed} är tillåtna.)';
 $string['tagsnotallowedatall'] = '{$a->tag} är inte tillåten. (Ingen HTML är tillåten här.)';

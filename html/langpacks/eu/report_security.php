@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'eu', version '3.11'.
+ * Strings for component 'report_security', language 'eu', version '4.1'.
  *
  * @package     report_security
  * @category    string
@@ -25,6 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['check_antivirus_details'] = 'Egoera-egiaztapen honek antibiruseko ezarpen orokorretako atalasean oinarrituta orain dela gutxiko errorerik egon den edo ez egiaztatzen du.';
+$string['check_antivirus_error'] = '{$a->errors} errore antzeman dira azken {$a->lookback}';
+$string['check_antivirus_info'] = 'Une honetan ez dago antibirus-eskanerrik gaituta';
+$string['check_antivirus_logstore_not_supported'] = 'Ezin da antibirusa-eskanerraren egoera egiaztatu aukeratutako agerraldi-biltegi mota dela-eta';
+$string['check_antivirus_name'] = 'Antibirusa';
+$string['check_antivirus_ok'] = '{$a->scanners} antibirusa-eskaner gaituta, ez da arazorik aurkitu azken {$a->lookback}';
 $string['check_configrw_details'] = '<p>Instalazioa burutu ondoren <code>config.php</code>  fitxategiaren baimenak aldatzea gomendatzen da, fitxategia web-zerbitzaritik aldatzea ekiditeko.
 Kontuan izan neurri honek ez duela zerbitzariaren segurtasuna modu nabarmenean hobetzen, baina exploit orokorrak mugatu edo mantsotu ditzake.</p>';
 $string['check_configrw_name'] = 'config.php idatz daiteke';
@@ -41,7 +47,8 @@ $string['check_crawlers_info'] = 'Bilaketa-motorrak gonbidatu gisa sar daitezke'
 $string['check_crawlers_name'] = 'Ireki bilaketa-motorrei';
 $string['check_crawlers_ok'] = 'Bilaketa-motoreen sarbidea ez dago gaituta.';
 $string['check_defaultuserrole_details'] = '<p>Saioa hasten duten erabiltzaile guztiei lehenetsitako erabiltzaile-rola esleitzen zaie. Mesedez ziurtatu rol honi ez zaizkiola arriskutsuak izan daitezkeen gaitasunak esleitzen.</p>
-<p>Lehenetsitako erabiltzaile rolarentzat onartzen den modu zaharkitu bakarra <em>Autentifikatutako erabiltzailea</em> da. Ikastaroak ikusteko gaitasuna ez litzateke gaitu beharko.</p>';
+<p>Lehenetsitako erabiltzaile rolarentzat onartzen den modu zaharkitu bakarra <em>Autentifikatutako erabiltzailea</em> da. Ikastaroak ikusteko gaitasuna ez litzateke gaitu beharko.</p>
+<p>Egiaztatu mesedez datuen ezabatze eskaeren onarpen automatikoko (tool_dataprivacy | automaticdatadeletionapproval) aukera gaituta dagoen. Erabiltzaileek datu kopuru handiak ezabatu ditzaketen eskaerak egin ditzakete.</p>';
 $string['check_defaultuserrole_error'] = '"{$a}" izeneko lehenetsitako erabiltzaile-rola modu ezegokian definituta dago!';
 $string['check_defaultuserrole_name'] = 'Lehenetsitako rola erabiltzaile guztientzat';
 $string['check_defaultuserrole_notset'] = 'Lehenetsitako rola ez da ezarri.';
@@ -62,7 +69,7 @@ $string['check_embed_details'] = '<p>Objektuak mugarik gabe enbotatzeko aukera o
 $string['check_embed_error'] = 'Objektuak mugarik gabe enbotatzeko aukera gaituta dago - hau oso arriskutsua izan daiteke zerbitzari gehienetan.';
 $string['check_embed_name'] = 'Baimendu EMBED eta OBJECT';
 $string['check_embed_ok'] = 'Objektuak mugarik gabe enbotatzea ez dago baimenduta.';
-$string['check_frontpagerole_details'] = '<p>Hasiera-orriko lehenetsitako rola erregistratutako erabiltzaile guztiei hasiera-orriko jardueretan esleitzen zaie. Ziurtatu rol honi ez zaizkiola arriskutsuak izan daitezkeen gaitasunak esleitzen.</p>
+$string['check_frontpagerole_details'] = '<p>Hasiera-orriko lehenetsitako rola autentifikatutako erabiltzaile guztiei hasiera-orriko jardueretan esleitzen zaie. Ziurtatu rol honi ez zaizkiola arriskutsuak izan daitezkeen gaitasunak esleitzen.</p>
 <p>Helburu honetarako rol berezi bat sortzea eta zaharkitutako rol-mota ez erabiltzea gomendatzen da.</p>';
 $string['check_frontpagerole_error'] = 'Modu ezegokian definitutako hasiera-orriko "{$a}" rola antzeman da!';
 $string['check_frontpagerole_name'] = 'Hasiera-orriko rola';
@@ -98,6 +105,8 @@ $string['check_preventexecpath_warning'] = 'Exekutagarrietarako bideak kudeatzai
 $string['check_publicpaths_403'] = '(403 errorea itzuli da, idealki 404 izan beharko litzateke)';
 $string['check_publicpaths_generic'] = '{$a} fitxategiak ez lirateke publikoak izan beharko';
 $string['check_publicpaths_name'] = 'Egiaztatu bide publiko/pribatu guztiak';
+$string['check_publicpaths_ok'] = 'Barne-bide guztiak ez daude publikoki eskuragarri';
+$string['check_publicpaths_warning'] = 'Barne-bide batzuk publikoki eskuragarri daude';
 $string['check_riskadmin_detailsok'] = '<p>Mesedez, egiaztatu ezazu sistemako kudeatzaileen ondoko zerrenda hau:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Mesedez, egiazta ezazu sistemako kudeatzaileen zerrenda hau:</p>{$a->admins}
 <p>Gomendagarria da kudeatzaile-rola sistemaren testuinguruan baino ez esleitzea. Ondoko erabiltzaileek (onartzen ez den) kudeatzaile-rola esleituta dute beste testuinguru batzuetan:</p>{$a->unsupported}';

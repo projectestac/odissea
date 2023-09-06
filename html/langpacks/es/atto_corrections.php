@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_corrections', language 'es', version '3.11'.
+ * Strings for component 'atto_corrections', language 'es', version '4.1'.
  *
  * @package     atto_corrections
  * @category    string
@@ -27,11 +27,15 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcomment'] = 'Añadir';
 $string['addmark'] = 'Añadir una marca de corrección';
+$string['corrections:canmarkup'] = 'Utilizar lenguaje de marcado';
 $string['corrtext'] = 'Comentario';
 $string['corrtype'] = 'Tipo de corrección';
 $string['corrtypes'] = 'Tipos de correcciones';
+$string['corrtypes_desc'] = 'Por favor, escriba un tipo de corrección por línea, en la forma de "abreviatura = descripción".<br><strong>Advertencia:</strong> ¡Cada abreviatura debe de ser única!';
 $string['dialogtitle'] = 'Añadir/modificar una corrección';
 $string['displayfulltext'] = 'Mostrar texto con marcas de corrección';
 $string['fulltexttitle'] = 'Texto con marcas de corrección';
 $string['pluginname'] = 'Correcciones';
+$string['privacy:metadata'] = 'El plugin atto_corrections no almacena ningún dato personal.';
 $string['removemark'] = 'Borrar esta marca de corrección';
+$string['settings'] = 'Configuraciones para correcciones de texto en-línea';

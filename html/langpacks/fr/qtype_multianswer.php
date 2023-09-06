@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'fr', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'fr', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -40,11 +40,13 @@ $string['layoutselectinline'] = 'Menu déroulant intégré au texte';
 $string['layoutundefined'] = 'Disposition non définie';
 $string['layoutvertical'] = 'Colonne verticale de boutons radio';
 $string['missingsubquestion'] = 'Cette sous-question manque dans votre système et ne peut pas être affichée.';
+$string['multichoicex'] = 'Choix multiple {$a}';
 $string['nooptionsforsubquestion'] = 'Impossible d\'obtenir les options de la partie de question no {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'La question Cloze (multianswer) « <strong>{$a}</strong> » ne contient aucune question';
 $string['pleaseananswerallparts'] = 'Merci de répondre à tous les éléments de la question.';
 $string['pluginname'] = 'Cloze (réponses intégrées)';
 $string['pluginname_help'] = 'Les questions à réponses intégrées (Cloze) sont formées d\'un texte au sein duquel sont incluses des questions à choix multiple et des questions à réponse courte.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnameadding'] = 'Ajout d\'une question Cloze';
 $string['pluginnameediting'] = 'Modification d\'une question Cloze';
 $string['pluginnamesummary'] = 'Les questions de ce type sont très flexibles, mais ne peuvent être créées qu\'en tapant du texte suivant un format particulier avec des codes spécifiques qui crééent des questions à choix multiple, des questions à réponses courtes et des questions numériques intégrées.';
@@ -66,6 +68,7 @@ $string['questionsmore'] = '{$a} question(s) de plus que dans la question à ré
 $string['questiontypechanged'] = 'Type de question modifié';
 $string['questiontypechangedcomment'] = 'Au moins un type de question a été modifié.<br />Avez-vous ajouté, supprimé ou déplacé une question ?<br />Veuillez vérifier.';
 $string['questionusedinquiz'] = 'Cette question est utilisée dans {$a->nb_of_quiz} test(s), nombre total de tentative(s) : {$a->nb_of_attempts} ';
+$string['regradeissuenumsubquestionschanged'] = 'Le nombre de sous-questions intégrées dans la question a été modifié.';
 $string['storedqtype'] = 'Type de question enregistré {$a}';
 $string['subqresponse'] = 'partie {$a->i} : {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Type de question inconnu : {$a->type} de la partie de question no {$a->sub}';

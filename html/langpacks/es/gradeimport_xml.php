@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'es', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'es', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -37,6 +37,7 @@ $string['fileurl'] = 'URL de archivo remoto';
 $string['fileurl_help'] = 'El archivo remoto del campo URL se usa para buscar datos de un servidor remoto, como un sistema de información del estudiante.';
 $string['importxml'] = 'Importar XML';
 $string['importxml_help'] = 'Las notas se pueden importar a través de un archivo XML que contenga los números de identificación de usuario y su actividad. Para obtener el formato correcto, primero exporte algunas notas al archivo XML y luego compruebe el archivo.';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'Archivo XML';
 $string['privacy:metadata'] = 'El complemento de importación de calificaciones desde XML no almacena ningún dato personal.';
 $string['xml:publish'] = 'Publicar importación de calificaciones XML';

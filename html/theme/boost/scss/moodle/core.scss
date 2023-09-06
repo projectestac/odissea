@@ -5,22 +5,21 @@
 // want white default colour.
 $bg-inverse-link-color: #fff !default;
 
+$dropzone-border: $gray-900 !default;
+
+$collapse-list-item-padding-y: 0.5rem !default;
+$collapse-list-item-padding-x: 1rem !default;
+$collapse-list-item-hover-bg: theme-color-level('info', -11) !default;
+$collapse-list-item-hover-border: theme-color-level('info', -9) !default;
+
+$thin-scroll-bg-thumb: $gray-600 !default;
+$thin-scroll-bg-hover: $gray-700 !default;
+
 $font-size-xs: ($font-size-base * .75) !default;
 
 #region-main {
-    overflow-x: auto;
     overflow-y: visible;
     background-color: $body-bg;
-}
-
-@include media-breakpoint-up(sm) {
-    #region-main {
-        border: $card-border-width solid $card-border-color;
-        @if $enable-rounded {
-            @include border-radius($card-border-radius);
-        }
-        padding: $card-spacer-x;
-    }
 }
 
 @include media-breakpoint-up(sm) {
@@ -41,35 +40,6 @@ $font-size-xs: ($font-size-base * .75) !default;
         display: flex;
         justify-content: flex-end;
     }
-}
-
-$gototop-bottom-position: 50px !default;
-
-#goto-top-link {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .7s ease 0s, visibility .1s ease .8s;
-    display: block;
-    position: fixed;
-    bottom: $gototop-bottom-position;
-    right: 0;
-    a {
-        position: absolute;
-        right: 0;
-        transform: translateY(-100%);
-    }
-}
-
-@include media-breakpoint-down(sm) {
-    #goto-top-link {
-        bottom: 0;
-    }
-}
-
-body.scrolled #goto-top-link {
-    opacity: 1;
-    visibility: visible;
-    transition: visibility 0s ease 0s, opacity .7s ease .1s;
 }
 
 .context-header-settings-menu .dropdown-toggle > .icon,
@@ -159,6 +129,7 @@ a:not([class]),
 .btn-link,
 .nav-link,
 .editor_atto_toolbar button,
+.editor_atto_toolbar .atto_toolbar_row,
 [role="button"],
 .list-group-item-action,
 input[type="checkbox"],
@@ -179,6 +150,14 @@ button.close,
     }
     &:focus:hover {
         text-decoration: none;
+    }
+}
+
+// Modal dialogs border should be rounded too.
+.modal-dialog[tabindex="0"] {
+    &.focus,
+    &:focus {
+        @include border-radius($modal-content-border-radius);
     }
 }
 
@@ -220,7 +199,6 @@ button.close,
 .inline-list li,
 .block .list,
 .block .list li,
-.section li.activity,
 .section li.movehere,
 .tabtree li {
     list-style: none;
@@ -343,19 +321,6 @@ a.autolink {
     display: block;
 }
 
-.collapsible-actions .collapseexpand {
-    padding-left: 20px;
-    background: url([[pix:t/collapsed]]) 2px center no-repeat;
-}
-/*rtl:raw:
-.collapsible-actions .collapseexpand {
-    background: url([[pix:t/collapsed_rtl]]) right center no-repeat;
-}
-*/
-.collapsible-actions .collapse-all {
-    background-image: url([[pix:t/expanded]]);
-}
-
 .yui-overlay .yui-widget-bd {
     background-color: #ffee69;
     border: 1px solid #a6982b;
@@ -386,10 +351,6 @@ a.autolink {
     font-weight: bold;
 }
 
-img.userpicture {
-    margin-right: 0.5rem;
-}
-
 img.resize {
     height: 1em;
     width: 1em;
@@ -397,10 +358,12 @@ img.resize {
 
 .action-menu .dropdown-toggle {
     text-decoration: none;
+    display: inline-block;
 }
 
 .action-menu {
     white-space: nowrap;
+    display: inline;
 }
 
 .block img.resize {
@@ -451,9 +414,20 @@ form.popupform div {
 
 // Position required for table sizing inside a flex container.
 .no-overflow > .generaltable {
-    position: relative;
     margin-bottom: 0;
 }
+
+.no-overflow,
+.table-responsive {
+    .generaltable {
+        .sr-only,
+        .accesshide {
+            position: relative;
+            display: block;
+        }
+    }
+}
+
 // Accessibility features
 
 // Accessibility: text 'seen' by screen readers but not visual users.
@@ -563,21 +537,6 @@ a.skip:active {
 
 .groupselector label {
     display: inline-block;
-}
-
-// Login
-.login-page {
-    [name="username"] {
-        margin-bottom: -1px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-
-    [type="password"] {
-        margin-bottom: 10px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
 }
 
 // Notes
@@ -698,8 +657,8 @@ table.mod_index {
 }
 
 .comment-message .picture {
-    width: 20px;
     float: left;
+    margin-right: 0.25rem;
 }
 
 .comment-message .text {
@@ -1175,6 +1134,10 @@ tr.flagged-tag a {
     padding-top: 20px;
 }
 
+.activity.label.modtype_label .mod-indent {
+    float: none;
+}
+
 @include media-breakpoint-up(sm) {
     $mod-indent-size: 30px;
     /* Creates a series of .mod-indent-# rule declarations based on indent size and number of indent levels. */
@@ -1568,7 +1531,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 .choosercontainer #chooseform .option label {
     display: block;
     margin: 0;
-    padding: ($spacer / 2) 0;
+    padding: ($spacer * 0.5) 0;
     border-bottom: 1px solid #fff;
 }
 
@@ -2060,6 +2023,9 @@ img#persona_signin {
 
 /** Page header */
 #page-header {
+    h1.h2 {
+        font-weight: bold;
+    }
     .logo {
         margin: $spacer 0;
         img {
@@ -2089,18 +2055,11 @@ nav.navbar .logo img {
 
     // Do not remove these rules.
     overflow: hidden;
-    padding: 0.25rem;
+    padding: 0.25rem 0;
 
-    .page-header-image,
-    .page-header-headings {
-        float: left;
-        display: block;
-        position: relative;
-    }
+    display: flex;
 
     .page-header-image {
-        margin-right: 1em;
-        margin-bottom: 1em;
         & > a {
             display: inline-block;
         }
@@ -2182,6 +2141,9 @@ dd:after {
                 width: 330px;
                 vertical-align: text-bottom;
                 margin-bottom: 0;
+                &[role="combobox"] {
+                    width: auto;
+                }
             }
         }
 
@@ -2219,6 +2181,14 @@ h3.sectionname .inplaceeditable.inplaceeditingon .editinstructions {
 
 /** Chart area. */
 .chart-area {
+    @include media-breakpoint-up(lg) {
+        .chart-image {
+            position: relative;
+            margin: auto;
+            height: 48vh;
+            width: 46vw;
+        }
+    }
 
     .chart-table-data {
         display: none;
@@ -2238,12 +2208,6 @@ h3.sectionname .inplaceeditable.inplaceeditingon .editinstructions {
             }
         }
     }
-}
-
-// Reset for ul.
-ul {
-    padding-left: 1rem;
-    -webkit-margin-start: 0.2rem;  /* stylelint-disable-line */
 }
 
 /* YUI 2 Tree View */
@@ -2328,7 +2292,7 @@ ul {
     padding-right: 0;
     padding-left: 0;
     .nav {
-        margin-right: $grid-gutter-width / 2;
+        margin-right: $grid-gutter-width * 0.5;
         background-color: $card-bg;
     }
     @include media-breakpoint-down(sm) {
@@ -2343,14 +2307,63 @@ ul {
 // but really in bootstrap we want the colour of links on .bg-inverse to be changed
 // rather than being specific to the footer. This is kept for backwards compatibility.
 $footer-link-color: $bg-inverse-link-color !default;
-#page-footer a {
-    color: $footer-link-color;
-    text-decoration: underline;
-    .icon {
+
+.footer-dark {
+    a {
         color: $footer-link-color;
+        text-decoration: underline;
+
+        .icon {
+            color: $footer-link-color;
+        }
+
+        &:focus .icon {
+            color: $body-color;
+        }
     }
-    &:focus .icon {
-        color: $body-color;
+}
+
+.btn-footer-popover {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    @include box-shadow($popover-box-shadow);
+}
+
+.hasstickyfooter .btn-footer-popover {
+    bottom: calc(2rem + #{$navbar-height});
+}
+
+.popover.footer {
+    .popover-body {
+        padding: 0;
+        .footer-section {
+            a {
+                color: $body-color;
+                text-decoration: underline;
+                .icon {
+                    color: $body-color;
+                }
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.footer-support-link {
+    padding-bottom: 5px;
+}
+
+@include media-breakpoint-up(sm) {
+    .jsenabled #page-footer .footer-content-popover {
+        display: none;
+    }
+    .jsenabled .btn-footer-popover {
+        display: block;
+        z-index: $zindex-dropdown;
     }
 }
 
@@ -2374,10 +2387,8 @@ $footer-link-color: $bg-inverse-link-color !default;
         display: block;
         width: 100%;
         color: $body-color;
-        &:focus-visible {
-            outline: 0;
-        }
     }
+    &.active,
     &:active,
     &:hover,
     &:focus,
@@ -2389,13 +2400,14 @@ $footer-link-color: $bg-inverse-link-color !default;
             color: $dropdown-link-active-color;
         }
     }
-    &[aria-current="true"] {
+    &[aria-current="true"],
+    &[aria-selected="true"] {
         position: relative;
         display: flex;
         align-items: center;
         &:before {
             @include fa-icon();
-            content: $fa-var-circle;
+            content: $fa-var-check;
             position: absolute;
             left: 0.4rem;
             font-size: 0.7rem;
@@ -2510,6 +2522,15 @@ body.h5p-embed {
     vertical-align: middle;
 }
 
+#page.drawers {
+    form#h5peditor,
+    form#coolh5peditor,
+    .core_contentbank_viewcontent {
+        max-width: $h5p-content-maxwidth;
+        margin: 0 auto;
+    }
+}
+
 .text-decoration-none {
     text-decoration: none !important; /* stylelint-disable-line declaration-no-important */
 }
@@ -2561,6 +2582,7 @@ input[disabled] {
 
 .custom-select {
     width: auto;
+    max-width: 100%;
 }
 
 .fade.in {
@@ -2607,7 +2629,7 @@ $picker-emojis-per-row: 7 !default;
     .category-button {
         padding: .375rem 0;
         height: 100%;
-        width: $picker-width / $picker-emoji-category-count;
+        width: divide($picker-width, $picker-emoji-category-count);
         border-top: none;
         border-left: none;
         border-right: none;
@@ -2651,7 +2673,7 @@ $picker-emojis-per-row: 7 !default;
     }
 
     .emoji-short-name {
-        line-height: $picker-row-height / 2;
+        line-height: $picker-row-height * 0.5;
     }
 
     @include media-breakpoint-down(xs) {
@@ -2701,6 +2723,10 @@ $picker-emojis-per-row: 7 !default;
     font-weight: $font-weight-bold;
 }
 
+.breadcrumb:empty {
+    padding: 0;
+}
+
 @include media-breakpoint-down(sm) {
     #page-navbar {
         width: 100%;
@@ -2708,13 +2734,19 @@ $picker-emojis-per-row: 7 !default;
 
     .breadcrumb:not(:empty) {
         width: 100%;
-        border: ($border-width * 2) solid $gray-200;
-        padding: $spacer / 4;
-        margin-bottom: $spacer / 2;
+        flex-wrap: nowrap;
+        margin-bottom: $spacer * 0.5;
         .breadcrumb-item {
-            padding-top: $spacer / 3;
-            padding-bottom: $spacer / 3;
-            display: inline-block;
+            padding-top: $spacer * 0.33333;
+            padding-bottom: $spacer * 0.33333;
+            display: inline-flex;
+            overflow: hidden;
+        }
+        .breadcrumb-item a,
+        .breadcrumb-item span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 
@@ -2731,7 +2763,7 @@ $picker-emojis-per-row: 7 !default;
         max-width: 100%;
     }
     .card .card-body {
-        padding: $card-spacer-x / 2;
+        padding: $card-spacer-x * 0.5;
     }
     #page-header {
         .card {
@@ -2741,11 +2773,11 @@ $picker-emojis-per-row: 7 !default;
             }
         }
     }
-    .nav-tabs,
+    .nav-tabs:not(.more-nav),
     .nav-pills {
         margin: 0;
         border: 0;
-        padding: $spacer / 8;
+        padding: $spacer * 0.125;
         background-color: $gray-200;
         .nav-item {
             flex: 1 1 auto;
@@ -2754,7 +2786,7 @@ $picker-emojis-per-row: 7 !default;
         .nav-link {
             background: $white;
             border: 0;
-            margin: $spacer / 8;
+            margin: $spacer * 0.125;
             &.active {
                 @include button-outline-variant($gray-600);
                 border-color: $gray-600;
@@ -2819,6 +2851,170 @@ $scrollbar-track: lighten($primary, 40%);
     }
 }
 
+// Thin scrollbars.
+@mixin thin-scrolls($bg-track) {
+
+    // Firefox.
+    scrollbar-width: thin;
+    scrollbar-color: $thin-scroll-bg-thumb $bg-track;
+
+    // Chrome, Edge and Safari.
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $bg-track;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $thin-scroll-bg-thumb;
+        border-radius: 20px;
+        border: 3px solid $bg-track;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: $thin-scroll-bg-hover;
+    }
+}
+
+// Generic dropzones and dragging styles.
+
+body.dragging {
+
+    .drop-zone {
+        border: 1px dashed $dropzone-border;
+    }
+
+    .drop-up {
+        border-top: 1px solid $dropzone-border;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .drop-down {
+        border-bottom: 1px solid $dropzone-border;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .dragging {
+        opacity: .6;
+    }
+}
+
+.dragicon {
+    visibility: hidden;
+}
+
+.draggable:hover .dragicon {
+    visibility: visible;
+    cursor: move;
+}
+
+// Generic classes reactive components can use.
+
+.waitstate {
+    display: none;
+}
+
+.stateready {
+    .waitstate {
+        display: inherit;
+    }
+    .whilenostate {
+        display: none;
+    }
+}
+
+// Collapsible list.
+
+.collapse-list {
+    .collapse-list-item {
+        padding: $collapse-list-item-padding-y $collapse-list-item-padding-x;
+        @include hover-focus() {
+            background-color: $collapse-list-item-hover-bg;
+            border-color: $collapse-list-item-hover-border;
+        }
+    }
+    .collapse-list-item-content {
+        .collapse-list-item {
+            padding-left: calc(#{$collapse-list-item-padding-x} * 3);
+        }
+    }
+}
+
+.drawers {
+    .block_myoverview {
+        border: 0;
+        & > .card-body {
+            padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */
+            padding-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+            padding-right: 0 !important; /* stylelint-disable-line declaration-no-important */
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    content: $fa-var-chevron-down;
+    margin-right: 0;
+    margin-left: 4px;
+    @include fa-icon();
+    font-size: 9px;
+    width: 9px;
+    border: 0;
+
+}
+
+.dropleft .dropdown-toggle::before {
+    border: 0;
+    content: $fa-var-chevron-left;
+    @include fa-icon();
+    font-size: 9px;
+    margin-left: 0;
+    margin-right: 4px;
+    width: 9px;
+}
+
+.dropright .dropdown-toggle::after {
+    border: 0;
+    content: $fa-var-chevron-right;
+}
+
+.dropup .dropdown-toggle::after {
+    border: 0;
+    content: $fa-var-chevron-up;
+}
+
+.select-menu {
+    li:first-child {
+        ul[role="group"] {
+            padding: 0;
+        }
+    }
+
+    ul[role="group"] {
+        padding: 0.3rem 0 0 0;
+        margin: 0;
+        li:first-child {
+            cursor: default;
+            color: $gray-600;
+            padding: 0.25rem 1.5rem;
+            display: block;
+        }
+        .dropdown-item {
+            padding-left: 2.5rem;
+        }
+    }
+    .dropdown-item {
+        cursor: pointer;
+
+        &[aria-selected="true"] {
+            font-weight: bold;
+        }
+    }
+}
+
 .initialbargroups ul {
     -webkit-margin-start: 0; /* stylelint-disable-line */
     margin-right: -1px;
@@ -2853,4 +3049,25 @@ $scrollbar-track: lighten($primary, 40%);
             }
         }
     }
+}
+
+blockquote {
+    margin: 0 0.5rem 1rem;
+    padding-left: 1rem;
+    color: $gray-700;
+    border-left: 5px solid $gray-400;
+}
+
+/* Prevent long strings exceeding page width */
+.page-header-headings,
+.coursename,
+.categoryname,
+.breadcrumb-item {
+
+    &:not(.text-truncate) {
+        word-break: normal;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'iso6392', language 'de', version '3.11'.
+ * Strings for component 'iso6392', language 'de', version '4.1'.
  *
  * @package     iso6392
  * @category    string
@@ -73,7 +73,7 @@ $string['bel'] = 'Weißrussisch';
 $string['bem'] = 'Bemba-Sprache';
 $string['ben'] = 'Bengali';
 $string['ber'] = 'Berbersprachen';
-$string['bho'] = 'Bhodschpuri';
+$string['bho'] = 'Bhojpuri';
 $string['bih'] = 'Bihari';
 $string['bik'] = 'Bikol';
 $string['bin'] = 'Bini';

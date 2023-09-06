@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'eu', version '3.11'.
+ * Strings for component 'wiki', language 'eu', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -106,6 +106,7 @@ $string['formatcreole'] = 'Creole formatua';
 $string['formatcreole_help'] = 'Creole wiki-marken hizkuntza arrunta da, ediziorako erreminta-barra batekin marka egokiak gehitzeko.
 
 Orri berria sortzeko, idatzi orri berriaren izena bi kortxeteren artean, esaterako [[2 Orria]].';
+$string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'HTML formatua';
 $string['formathtml_help'] = 'HTML editorea edukiei formatua emateko erabil daiteke.
 
@@ -114,6 +115,7 @@ $string['formatnwiki'] = 'NWiki formatua';
 $string['formatnwiki_help'] = 'Nwiki Mediawiki-ren antzerako marka-hizkuntza da, Nwiki moduluan erabiltzen dena.
 
 Orri berria sortzeko, idatzi orri berriaren izena bi kortxeteren artean, esaterako [[2 Orria]].';
+$string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Historia';
 $string['history_help'] = 'Orriaren aurreko bertsioetarako esteka-zerrenden historia';
 $string['html'] = 'HTML';
@@ -125,10 +127,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa wikietan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Wikia motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa wikietan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Wikia jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala wikietan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Wikia motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala wikietan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Wikia jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = 'Norberaren wiki-orria ez da existitzen';
 $string['insertcomment'] = 'Txertatu iruzkina';
 $string['insertimage'] = 'Txertatu irudi bat...';
@@ -142,7 +146,7 @@ $string['links'] = 'Estekak';
 $string['listall'] = 'Zerrendatu guztiak';
 $string['listorphan'] = 'Zerrenda umezurtza';
 $string['lockingajaxtimeout'] = 'Edizio-orriaren blokeoa freskatzeko tartea';
-$string['lockingtimeout'] = 'Blokeorako denbora';
+$string['lockingtimeout'] = 'Blokeorako denbora-muga';
 $string['map'] = 'Mapa';
 $string['mapmenu'] = 'Mapa-menua';
 $string['migrationfinished'] = 'Migrazioa ondo amaitu da';
@@ -161,6 +165,7 @@ Wikiak erabili daitezke
 * Ikasleek elkarlanean on-line liburu bat osatzeko, tutoreak proposatutako gaiaren inguruan edukiak sortuz.
 * Istorio-kontaketa edo poesia elkarlanean sortzeko, non partaide bakoitzak lerro edo bertso bat idazten duen.
 * Azterketa ohar edo berrikuspenen norbanakoen eguneroko bat osatzeko (banakako wikia erabilita)';
+$string['modulename_link'] = 'mod/wiki/view';
 $string['modulenameplural'] = 'Wikiak';
 $string['navigation'] = 'Nabigazioa';
 $string['navigationfrom'] = 'Orri hau hemendik dator';
@@ -247,7 +252,7 @@ $string['rating'] = 'Puntuazioa';
 $string['ratingmode'] = 'Puntuazio-modua';
 $string['removeallwikitags'] = 'Kendu wiki-etiketa guztiak';
 $string['removepages'] = 'Ezabatu orriak';
-$string['reparsetimeout'] = 'Lehenetsitako itxaron-tartearen berrazterketa';
+$string['reparsetimeout'] = 'Lehenetsitako berrazterketaren denbora-muga';
 $string['repeatedsection'] = 'Wiki errorea: Atalaren izena ezin da errepikatu: \'{$a}\'';
 $string['restore'] = 'Berreskuratu';
 $string['restoreconfirm'] = 'Ziur zaude #{$a} bertsioa berreskuratu nahi duzula?';
@@ -309,7 +314,7 @@ $string['wikiimage'] = 'Irudia';
 $string['wikiinternalurl'] = 'Barruko esteka';
 $string['wikiintro'] = 'Deskribapena';
 $string['wikiitalictext'] = 'Etzana';
-$string['wikilockingsettings'] = 'Denbora-mugak blokeatu eta berraztertzen';
+$string['wikilockingsettings'] = 'Blokeo eta berrazterketaren denbora-mugak';
 $string['wikimode'] = 'Wiki modua';
 $string['wikimode_help'] = 'Wiki moduak zehazten du ea edozeinek editatu ahal duen wikia (elkarlanerako wikia) ala nork bere wikia baino ezin duen editatu (banakako wikia).';
 $string['wikimodecollaborative'] = 'Elkarlanerako wikia';

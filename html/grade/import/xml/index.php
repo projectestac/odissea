@@ -25,7 +25,7 @@ $PAGE->set_url(new moodle_url('/grade/import/xml/index.php', array('id'=>$id)));
 $PAGE->set_pagelayout('admin');
 
 if (!$course = $DB->get_record('course', array('id'=>$id))) {
-    print_error('invalidcourseid');
+    throw new \moodle_exception('invalidcourseid');
 }
 
 require_login($course);
@@ -87,8 +87,9 @@ if ($data = $mform->get_data()) {
     }
 }
 
-print_grade_page_head($COURSE->id, 'import', 'xml',
-                      get_string('importxml', 'grades'), false, false, true, 'importxml', 'gradeimport_xml');
+$actionbar = new \core_grades\output\import_action_bar($context, null, 'xml');
+print_grade_page_head($COURSE->id, 'import', 'xml', get_string('importxml', 'grades'),
+    false, false, true, 'importxml', 'gradeimport_xml', null, $actionbar);
 
 $mform->display();
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlabel', language 'en', version '3.11'.
+ * Strings for component 'customlabel', language 'en', version '4.1'.
  *
  * @package     customlabel
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addatype'] = 'Add a type';
+$string['addvalue'] = 'Add a value';
 $string['adminmetadata'] = 'Classifiers configuration';
 $string['apparence'] = 'Apparence';
 $string['category'] = 'Category';
@@ -37,7 +39,7 @@ $string['classificationmodel'] = 'Classification model';
 $string['classificationtypetable'] = 'Classification dimensions and filters table';
 $string['classificationtypetable_help'] = 'This table provides domains of classification. A domain holds a set of values.';
 $string['classificationvalues'] = 'Values';
-$string['classificationvaluetable'] = 'classification values table';
+$string['classificationvaluetable'] = 'Classification values table';
 $string['classificationvaluetable_help'] = 'This table provides all values for all classifiers defined in the Type Table.';
 $string['classificationvaluetypekey'] = 'classifier Type field';
 $string['classificationvaluetypekey_help'] = 'This must define the table column name that is used to key the type ownership on values.';
@@ -65,7 +67,7 @@ $string['configcoursemetadatavaluekey'] = 'Value key name in metadata binder';
 $string['configcoursemetadatavaluekey_desc'] = 'This is the name of the field that serves as data value foreign key in the metadata table.';
 $string['configmetadatabinding'] = 'Metadata schema binding';
 $string['configmetadatabinding_desc'] = '<p>The couse indexer relies on a capability to index courses with some metadata and classifiers. the course index model uses 4 tables to achieve this feature, and allows binding those tables from any implementation
-the integrator would need. The default binding uses the Customlabel module and its inbound classifier tableset. But the ocurse index might bind to any other model that respects following defs:</p>
+the integrator would need. The default binding uses the Customlabel module and its inbound classifier tableset. But the course index might bind to any other model that respects following defs:</p>
 <ul>
 <li>There is a table to store the metadata domain values</li>
 <li>Metadata values are typed. A table exists to store the metadata types to which values refer.</li>
@@ -79,7 +81,7 @@ $string['coursemetadatacmidkey'] = 'Tagging field for course module id (metadata
 $string['coursemetadatacmidkey_help'] = 'This must define a column name in database that maps a record to a course module instance.';
 $string['coursemetadatacoursekey'] = 'Tagging key for course (course to metadata binding)';
 $string['coursemetadatacoursekey_help'] = 'This must define a column name in database that maps a record to a course ID.';
-$string['coursemetadatatable'] = 'course metadata tagging table';
+$string['coursemetadatatable'] = 'Course metadata tagging table';
 $string['coursemetadatatable_help'] = 'This table provides course to metadata bindings.';
 $string['coursemetadatavaluekey'] = 'Tagging field for values (metadata to value binding)';
 $string['coursemetadatavaluekey_help'] = 'This must define a column name in database that maps a record to a metadata value.';
@@ -98,6 +100,8 @@ $string['doupdate'] = 'Update !!';
 $string['down'] = 'Down';
 $string['editclass'] = 'Update classifier class&ensp;';
 $string['editvalues'] = 'Edit values';
+$string['elementtitle'] = 'Element identifier';
+$string['elementtitle_help'] = 'This identifier serves to identify uniquely this content item. It is not shown for usual users.';
 $string['errorclassloading'] = 'Error loading : Null class';
 $string['errorfailedloading'] = 'Failed loading class for custom label {$a}. Reverting to "text" customlabel.';
 $string['errorinsertvalue'] = 'Could not insert a new value';
@@ -137,6 +141,7 @@ and register.';
 $string['modulenameplural'] = 'Course elements';
 $string['name'] = 'Label';
 $string['noclassifiers'] = 'No classifier';
+$string['noclassifiersdefined'] = 'Classification has no classifier defined. Check global settings.';
 $string['nocontentforthislanguage'] = 'No content available for this language<br/>';
 $string['none'] = 'Undefined';
 $string['notypes'] = 'No classifier type';
@@ -205,4 +210,4 @@ $string['value'] = 'Value';
 $string['withcompletions'] = 'Reset label completions';
 $string['wsattributekey'] = '<span class="lighttext">Attribute key to use in WS : {$a}</span>';
 $string['wsfieldkey'] = 'Attribute key for web services: {$a}';
-$string['wsurl'] = 'Web services: use type {$a} in webservice call customlabel_add_instance().<br/>See WS moodle API documentation in plugin administration.';
+$string['wsurl'] = 'Web services: <br/><span class="customlabel-form-static-content">use type {$a} in webservice call customlabel_add_instance().<br/>See WS moodle API documentation in plugin administration.</span>';

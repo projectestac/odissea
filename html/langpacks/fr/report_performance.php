@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'fr', version '3.11'.
+ * Strings for component 'report_performance', language 'fr', version '4.1'.
  *
  * @package     report_performance
  * @category    string
@@ -32,6 +32,9 @@ $string['check_backup_details'] = 'L\'activation des sauvegardes automatiques cr
 $string['check_cachejs_comment_disable'] = 'Si ce réglage est activé, la performance de chargement des pages est améliorée.';
 $string['check_cachejs_comment_enable'] = 'Si ce réglage est désactivé, les pages pourraient se charger lentement.';
 $string['check_cachejs_details'] = 'La mise en cache et la compression du Javascript améliore substantiellement le temps de chargement des pages. Elles sont fortement recommandées pour des sites en production.';
+$string['check_dbschema_errors'] = 'Le schéma de la base de données n\'est pas conforme.';
+$string['check_dbschema_name'] = 'Vérification du schéma de base de données';
+$string['check_dbschema_ok'] = 'Le schéma de la base de données est conforme.';
 $string['check_debugmsg_comment_developer'] = 'Si le réglage est placé sur autre chose que Développeur, la performance sera légèrement meilleure.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Si le réglage est placé sur Développeur, la performance sera légèrement moins bonne.';
 $string['check_debugmsg_details'] = 'Il ne sert généralement à rien de régler le niveau à Développeur, à moins qu\'un développeur ne le demande.<p>Une fois le message d\'erreur obtenu, copié et collé quelque part, il est <b>fortement recommandé</b> de remettre le niveau de débogage sur Aucun. Les messages de débogage pourrait donner des indices à un éventuel pirate sur la configuration de votre site et peuvent en outre dégrader la performance.</p>';

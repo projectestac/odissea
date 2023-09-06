@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_aiken', language 'ca', version '3.11'.
+ * Strings for component 'qformat_aiken', language 'ca', version '4.1'.
  *
  * @package     qformat_aiken
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Format Aiken';
 $string['pluginname_help'] = 'Aquest és un format senzill per importar preguntes d\'opcions múltiples des d\'un fitxer de text.';
+$string['pluginname_link'] = 'qformat/aiken';

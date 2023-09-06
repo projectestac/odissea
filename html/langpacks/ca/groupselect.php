@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupselect', language 'ca', version '3.11'.
+ * Strings for component 'groupselect', language 'ca', version '4.1'.
  *
  * @package     groupselect
  * @category    string
@@ -92,6 +92,7 @@ $string['modulename_help'] = 'Permet als participants crear i triar grups. Carac
 *Es poden assignar supervisors als grups.
 *El professor pot exportar la llista de grups del curs com a fitxer CSV.
 *És plenament compatible amb el sistema bàsic de grups de Moodle: els grups es poden crear per altres mitjans, si cal; admet tasques amb trameses en grup, etc.';
+$string['modulename_link'] = 'mod/groupselect/view';
 $string['modulenameplural'] = 'Tria de grups';
 $string['nogroups'] = 'No hi ha cap grup disponible per seleccionar.';
 $string['notavailableanymore'] = 'Des de {$a}, aquesta Tria de grup no està disponible.';

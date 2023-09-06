@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dialogue', language 'sv', version '3.11'.
+ * Strings for component 'dialogue', language 'sv', version '4.1'.
  *
  * @package     dialogue
  * @category    string
@@ -163,13 +163,13 @@ $string['replydeleteconfirm'] = 'Är du säker på att du vill radera svaret?';
 $string['replydeleted'] = 'Svaret raderades';
 $string['replysent'] = 'Ditt svar skickades';
 $string['runsuntil'] = 'Pågår till&nbsp;';
-$string['savedraft'] = 'Spara utkast';
+$string['savedraft'] = 'Spara som utkast';
 $string['searchpotentials'] = 'Sök användare...';
 $string['second'] = 'sekund';
 $string['seconds'] = 'sekunder';
 $string['send'] = 'Skicka';
 $string['senton'] = '<small><strong>Skickat: </strong></small>';
-$string['sortedby'] = 'Sorteringsalternativ: {$a}';
+$string['sortedby'] = 'Sorteringsalternativ';
 $string['studenttostudent'] = 'Student till student';
 $string['subject'] = 'Rubrik';
 $string['teachertostudent'] = 'Lärare till student';

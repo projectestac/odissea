@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_menu', language 'ja', version '3.11'.
+ * Strings for component 'block_blog_menu', language 'ja', version '4.1'.
  *
  * @package     block_blog_menu
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_menu:addinstance'] = '新しいブログメニュブロックを追加する';
-$string['pluginname'] = 'ブログメニュ';
-$string['privacy:metadata'] = 'ブログメニュブロックは他の場所で保存されたデータのみ表示します。';
+$string['blog_menu:addinstance'] = '新しいブログメニューブロックを追加する';
+$string['pluginname'] = 'ブログメニュー';
+$string['privacy:metadata'] = 'ブログメニューブロックは他の場所で保存されたデータのみ表示します。';

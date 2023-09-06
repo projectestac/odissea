@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'fr', version '3.11'.
+ * Strings for component 'block_timeline', language 'fr', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Tout';
-$string['ariadayfilter'] = 'Filtrer les éléments de la chronologie';
+$string['ariadayfilter'] = 'Filtrer la chronologie par date';
 $string['ariadayfilteroption'] = 'Option de filtre {$a}';
 $string['ariaeventlistitem'] = 'L\'activité {$a->name} dans {$a->course} doit être effectuée le {$a->date}';
 $string['ariaeventlistpagelimit'] = 'Afficher {$a} activités par page';
@@ -35,18 +35,20 @@ $string['ariaeventlistpaginationnavdates'] = 'Pagination de la Filtrer les élé
 $string['ariaviewselector'] = 'Trier les éléments de la Filtrer les éléments de la chronologie';
 $string['ariaviewselectoroption'] = 'Option de tri {$a}';
 $string['duedate'] = 'Date limite';
-$string['morecourses'] = 'Plus de cours';
+$string['moreactivities'] = 'Afficher plus d\'activités';
+$string['morecourses'] = 'Afficher plus de cours';
 $string['next30days'] = '30 prochains jours';
 $string['next3months'] = '3 prochains mois';
 $string['next6months'] = '6 prochains mois';
 $string['next7days'] = '7 prochains jours';
 $string['nocoursesinprogress'] = 'Aucun cours actif';
-$string['noevents'] = 'Aucune activité à rendre à venir';
+$string['noevents'] = 'Aucune activité ne nécessite d\'action';
 $string['overdue'] = 'En retard';
 $string['pluginname'] = 'Chronologie';
 $string['privacy:metadata:timelinefilterpreference'] = 'La réglage utilisateur pour le filtre du jour dans le bloc Chronologie.';
 $string['privacy:metadata:timelinelimitpreference'] = 'La préférence utilisateur pour la pagination de bloc Chronologie.';
 $string['privacy:metadata:timelinesortpreference'] = 'La préférence utilisateur pour le tri du bloc Chronologie.';
+$string['searchevents'] = 'Rechercher par type d\'activité ou par nom';
 $string['sortbycourses'] = 'Trier par cours';
 $string['sortbydates'] = 'Trier par date';
 $string['timeline'] = 'Chronologie';

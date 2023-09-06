@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'zh_cn', version '3.11'.
+ * Strings for component 'block_myoverview', language 'zh_cn', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -57,7 +57,7 @@ $string['availablegroupings'] = '可用的过滤器';
 $string['availablegroupings_desc'] = '可供用户选择的课程筛选器。如果没有选择，将显示所有课程。';
 $string['card'] = '卡片';
 $string['cards'] = '卡片';
-$string['complete'] = '完成';
+$string['clearsearch'] = '清除搜索';
 $string['completepercent'] = '{$a}% 已完成';
 $string['courseprogress'] = '课程进度';
 $string['customfield'] = '自定义字段';
@@ -76,7 +76,6 @@ $string['layouts'] = '可用布局';
 $string['layouts_help'] = '可供用户选择的课程概览布局。如果没有选择，将使用卡片式布局。';
 $string['list'] = '列表';
 $string['myoverview:myaddinstance'] = '增加一个新的课程概览区块到仪表板';
-$string['nocourses'] = '没有课程';
 $string['nocustomvalue'] = '没有 {$a}';
 $string['past'] = '过去的';
 $string['pluginname'] = '课程概览';
@@ -86,7 +85,11 @@ $string['privacy:metadata:overviewsortpreference'] = '“课程概述”板块�
 $string['privacy:metadata:overviewviewpreference'] = '“课程概览”板块视图首选项。';
 $string['privacy:request:preference:set'] = '设置 \'{$a->name}\' 的值是 \'{$a->value}\'';
 $string['removefromfavourites'] = '撤销标星此课程';
+$string['searchcourses'] = '搜索课程';
 $string['shortname'] = '简称';
 $string['show'] = '恢复';
+$string['sortbylastaccessed'] = '按上次访问排序';
+$string['sortbyshortname'] = '按简称排序';
+$string['sortbytitle'] = '按课程名称排序';
 $string['summary'] = '摘要';
 $string['title'] = '课程名称';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'ru', version '3.11'.
+ * Strings for component 'appointment', language 'ru', version '4.1'.
  *
  * @package     appointment
  * @category    string
@@ -25,20 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addstudent'] = 'Добавить студента';
 $string['closed'] = 'Закрыто';
-$string['confirmation'] = 'Подтверждение';
-$string['dateadd'] = 'Добавить новую дату';
-$string['dateremove'] = 'Удалить эту дату';
 $string['decline'] = 'Отклонить';
 $string['delete'] = 'Удалить';
-$string['duration'] = 'Продолжительность';
-$string['edit'] = 'Редактировать';
-$string['exporttofile'] = 'Экспорт в файл';
-$string['field:text'] = 'Текст';
-$string['format'] = 'Формат';
-$string['lookfor'] = 'Поиск';
-$string['or'] = 'или';
-$string['setting:defaultvalue'] = 'Значение по умолчанию';
+$string['modulename_link'] = 'Appointments';
 $string['settings'] = 'Настройки';
-$string['time'] = 'Время';

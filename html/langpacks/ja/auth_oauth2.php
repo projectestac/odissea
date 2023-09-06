@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'ja', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'ja', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accountexists'] = 'このユーザ名のユーザはこのシステムにすでに存在します。これがあなたのアカウントの場合、あなたのユーザ名およびパスワードを使用してログインした後、プリファレンスページからリンクログインとして追加してください。';
+$string['accountexists'] = 'このユーザ名のユーザはこのシステムにすでに存在します。これがあなたのアカウントの場合、あなたのユーザ名およびパスワードを使用してログインした後、プレファレンスページからリンクログインとして追加してください。';
 $string['alreadylinked'] = 'この外部アカウントはすでにこのサイトのアカウントとリンクされています。';
 $string['auth_oauth2description'] = 'OAuth 2標準ベース認証';
 $string['auth_oauth2settings'] = 'OAuth 2認証設定';
@@ -79,14 +79,17 @@ $string['emailpasswordchangeinfosubject'] = '{$a}: パスワード変更情報';
 $string['info'] = '外部アカウント';
 $string['issuer'] = 'OAuth 2サービス';
 $string['issuernologin'] = 'このイシュアはログインに使用できません。';
+$string['key'] = 'キー';
 $string['linkedlogins'] = 'リンクログイン';
 $string['linkedloginshelp'] = 'リンクログインのヘルプです。';
+$string['loggedin'] = 'ユーザが正常にプロバイダと認証しました。';
 $string['loginerror_authenticationfailed'] = '認証処理に失敗しました。';
 $string['loginerror_cannotcreateaccounts'] = 'あなたのメールアドレスのアカウントは見つかりませんでした。';
 $string['loginerror_invaliddomain'] = 'このサイトでは指定されたメールアドレスは許可されていません。';
 $string['loginerror_nouserinfo'] = 'ユーザ情報が戻されませんでした。OAuth 2サービスが正しく設定されていない可能性があります。';
 $string['loginerror_userincomplete'] = '戻されたユーザ情報にはユーザ名およびメールアドレスを含んでいません。OAuth 2サービスが正しく設定されていない可能性があります。';
-$string['noissuersavailable'] = 'あなたがログインアカウントにリンクできる設定済みOAuth2サービスはありません。';
+$string['noconfiguredidps'] = '設定済みのOAuth2プロバイダがありません。';
+$string['noissuersavailable'] = 'あなたがログインアカウントにリンクできる設定済みOAuth 2サービスサービスはありません。';
 $string['notenabled'] = '申し訳ございません、OAuth 2認証プラグインが有効にされていません。';
 $string['notloggedindebug'] = 'ログインに失敗しました。理由: {$a}';
 $string['notwhileloggedinas'] = '別のユーザでログインされているため、リンクログインを管理することができません。';
@@ -105,3 +108,6 @@ $string['privacy:metadata:auth_oauth2:timemodified'] = 'このレコードが修
 $string['privacy:metadata:auth_oauth2:userid'] = 'このOAuth 2ログインがリンクされているユーザアカウントのユーザIDです。';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'このアカウントを修正したユーザのIDです。';
 $string['privacy:metadata:auth_oauth2:username'] = 'このアカウントにマップする外部ユーザ名です。';
+$string['testidplogin'] = 'テストログイン:';
+$string['userinfo'] = 'プロバイダからのユーザーデータ:';
+$string['value'] = '値';

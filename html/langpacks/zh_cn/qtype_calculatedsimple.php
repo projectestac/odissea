@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = '生成';
 $string['newsetwildcardvalues'] = '个新通配符数据集合';
 $string['pluginname'] = '计算题简化版';
 $string['pluginname_help'] = '在计算题简化版中，每道题都可以使用通配符（放在大括号中），而在答题时通配符会被替换。简化的计算题提供了计算题中最常用的功能，界面更简单。';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = '添加一道简化版计算题';
 $string['pluginnameediting'] = '编辑一道简化版计算题';
 $string['pluginnamesummary'] = '更简单的计算题，和数值题类似，但在答题时，题目中的数可以从一个集合中随机选择。';

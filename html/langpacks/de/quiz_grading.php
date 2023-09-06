@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'de', version '3.11'.
+ * Strings for component 'quiz_grading', language 'de', version '4.1'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,11 +49,12 @@ $string['graded'] = '(bewertet)';
 $string['gradenextungraded'] = 'Die nächsten {$a} unbewerten Versuche bewerten';
 $string['gradeungraded'] = 'Unbewertete Versuche ({$a}) jetzt bewerten';
 $string['grading'] = 'Manuelle Bewertung';
-$string['grading:viewidnumber'] = 'Teilnehmer-ID beim Bewerten anzeigen';
+$string['grading:viewidnumber'] = 'Teilnehmer/innen-ID beim Bewerten anzeigen';
 $string['grading:viewstudentnames'] = 'Namen der Teilnehmer/innen beim Bewerten anzeigen';
 $string['gradingall'] = 'Alle Bewertungen ({$a}) für diese Frage';
 $string['gradingattempt'] = 'Versuch {$a->attempt} von {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Versuche von {$a->from} bis {$a->to} von {$a->of}';
+$string['gradingattemptwithcustomfields'] = 'Versuch Nummer {$a->attempt} von {$a->fullname} ({$a->customfields})';
 $string['gradingattemptwithidnumber'] = 'Versuch Nummer {$a->attempt} von {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Nächste {$a} unbewertete Versuche';
 $string['gradingnotallowed'] = 'Sie sind nicht berechtigt, Antworten in diesem Test manuell zu bewerten.';
@@ -69,6 +70,7 @@ $string['noquestionsfound'] = 'Keine manuell bewerteten Fragen gefunden';
 $string['nothingfound'] = 'Nichts anzuzeigen';
 $string['options'] = 'Optionen';
 $string['orderattempts'] = 'Versuche ordnen';
+$string['orderattemptsby'] = 'Versuche sortiert nach';
 $string['pluginname'] = 'Manuelle Bewertung';
 $string['privacy:preference:order'] = 'In welcher Sortierung sollen die Versuche angezeigt werden, die auf eine Bewertung warten?';
 $string['privacy:preference:pagesize'] = 'Wie viele Versuche sollen auf jeder Seite in der Bewertungsoberfläche angezeigt werden?';
@@ -77,6 +79,7 @@ $string['questionname'] = 'Fragename';
 $string['questionsperpage'] = 'Fragen pro Seite';
 $string['questionsthatneedgrading'] = 'Fragen, die eine Bewertung erwarten';
 $string['questiontitle'] = 'Frage {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} Versuche {$a->openspan}bewertet{$a->closespan}).';
+$string['random'] = 'Zufall';
 $string['randomly'] = 'Zufällig';
 $string['saveandnext'] = 'Speichern und zur nächsten Seite';
 $string['showstudentnames'] = 'Namen der Teilnehmer/innen anzeigen';

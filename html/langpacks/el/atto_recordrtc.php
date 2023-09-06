@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'el', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'el', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'Ήχος και βίντεο';
 $string['audiobitrate'] = 'Ρυθμός μετάδοσης δεδομένων ήχου';
 $string['audiobitrate_desc'] = 'Ποιότητα ηχογράφησης (μεγαλύτερος αριθμός σημαίνει υψηλότερη ποιότητα)';
 $string['audiortc'] = 'Ηχογράφηση';
+$string['audiotimelimit'] = 'Χρονικό όριο ήχου σε δευτερόλεπτα';
+$string['audiotimelimit_desc'] = 'Επιτρέπεται το μέγιστο μήκος εγγραφής για τα ηχητικά κλιπ';
 $string['gumabort'] = 'Παρουσιάστηκε κάτι παράξενο, που εμπόδισε τη χρήση μικροφώνου/βιντεοκάμερας ιστού';
 $string['gumabort_title'] = 'Κάτι συνέβη';
 $string['gumnotallowed'] = 'Ο χρήστης πρέπει να επιτρέπει στον περιηγητή να έχει πρόσβαση σε μικρόφωνο/βιντεοκάμερα ιστού';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'Έναρξη εγγραφής ήχου/βίντεο
 $string['stoprecording'] = 'Σταμάτημα εγγραφής ήχου/βίντεο';
 $string['timelimit'] = 'Όριο χρόνου σε δευτερόλεπτα';
 $string['timelimit_desc'] = 'Μέγιστο μήκος εγγραφής ήχου/βίντεο που επιτρέπεται για τα κλιπ';
+$string['timelimitwarning'] = 'Πρέπει να εισαγάγετε έναν αριθμό μεγαλύτερο από 0.';
 $string['uploadaborted'] = 'Ακύρωση ανεβάσματος:';
 $string['uploadfailed'] = 'Αποτυχία ανεβάσματος:';
 $string['uploadfailed404'] = 'Αποτυχία ανεβάσματος: πολύ μεγάλο αρχείο';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'ολοκληρώθηκε';
 $string['videobitrate'] = 'Ρυθμός μετάδοσης δεδομένων βίντεο';
 $string['videobitrate_desc'] = 'Ποιότητα της εγγραφής βίντεο (μεγαλύτερος αριθμός σημαίνει υψηλότερη ποιότητα)';
 $string['videortc'] = 'Εγγραφή βίντεο';
+$string['videotimelimit'] = 'Χρονικό όριο βίντεο σε δευτερόλεπτα';
+$string['videotimelimit_desc'] = 'Επιτρέπεται το μέγιστο μήκος εγγραφής για τα βίντεο κλιπ';

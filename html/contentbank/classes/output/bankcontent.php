@@ -14,25 +14,20 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * core_contentbank specific renderers
- *
- * @package   core_contentbank
- * @copyright  2020 Ferran Recio <ferran@moodle.com>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
 namespace core_contentbank\output;
 
+use context_coursecat;
+use core_contentbank\content;
+use core_contentbank\contentbank;
 use renderable;
 use templatable;
 use renderer_base;
 use stdClass;
-use core_contentbank\content;
 
 /**
  * Class containing data for bank content
  *
+ * @package    core_contentbank
  * @copyright  2020 Ferran Recio <ferran@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -54,16 +49,28 @@ class bankcontent implements renderable, templatable {
     private $context;
 
     /**
+     * @var array   Course categories that the user has access to.
+     */
+    private $allowedcategories;
+
+    /**
+     * @var array   Courses that the user has access to.
+     */
+    private $allowedcourses;
+
+    /**
      * Construct this renderable.
      *
      * @param \core_contentbank\content[] $contents   Array of content bank contents.
-     * @param array $toolbar     List of content bank toolbar options.
+     * @param array $toolbar List of content bank toolbar options.
      * @param \context|null $context Optional context to check (default null)
+     * @param contentbank $cb Contenbank object.
      */
-    public function __construct(array $contents, array $toolbar, ?\context $context) {
+    public function __construct(array $contents, array $toolbar, ?\context $context, contentbank $cb) {
         $this->contents = $contents;
         $this->toolbar = $toolbar;
         $this->context = $context;
+        list($this->allowedcategories, $this->allowedcourses) = $cb->get_contexts_with_capabilities_by_user();
     }
 
     /**
@@ -73,7 +80,7 @@ class bankcontent implements renderable, templatable {
      * @return stdClass
      */
     public function export_for_template(renderer_base $output): stdClass {
-        global $PAGE;
+        global $PAGE, $SITE;
 
         $PAGE->requires->js_call_amd('core_contentbank/search', 'init');
         $PAGE->requires->js_call_amd('core_contentbank/sort', 'init');
@@ -116,6 +123,43 @@ class bankcontent implements renderable, templatable {
                 $this->$method($tool);
             }
             $data->tools[] = $tool;
+        }
+
+        $allowedcontexts = [];
+        $systemcontext = \context_system::instance();
+        if (has_capability('moodle/contentbank:access', $systemcontext)) {
+            $allowedcontexts[$systemcontext->id] = get_string('coresystem');
+        }
+        $options = [];
+        foreach ($this->allowedcategories as $allowedcategory) {
+            $options[$allowedcategory->ctxid] = format_string($allowedcategory->name, true, [
+                'context' => context_coursecat::instance($allowedcategory->ctxinstance),
+            ]);
+        }
+        if (!empty($options)) {
+            $allowedcontexts['categories'] = [get_string('coursecategories') => $options];
+        }
+        $options = [];
+        foreach ($this->allowedcourses as $allowedcourse) {
+            // Don't add the frontpage course to the list.
+            if ($allowedcourse->id != $SITE->id) {
+                $options[$allowedcourse->ctxid] = $allowedcourse->shortname;
+            }
+        }
+        if (!empty($options)) {
+            $allowedcontexts['courses'] = [get_string('courses') => $options];
+        }
+        if (!empty($allowedcontexts)) {
+            $strchoosecontext = get_string('choosecontext', 'core_contentbank');
+            $singleselect = new \single_select(
+                new \moodle_url('/contentbank/index.php'),
+                'contextid',
+                $allowedcontexts,
+                $this->context->id,
+                $strchoosecontext
+            );
+            $singleselect->set_label($strchoosecontext, ['class' => 'sr-only']);
+            $data->allowedcontexts = $singleselect->export_for_template($output);
         }
 
         return $data;

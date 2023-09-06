@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'eu', version '3.11'.
+ * Strings for component 'badges', language 'eu', version '4.1'.
  *
  * @package     badges
  * @category    string
@@ -111,11 +111,12 @@ $string['backpackconnectionnottested'] = 'Ezin da motxila honetarako konexioa pr
 $string['backpackconnectionok'] = 'Motxilarako konexioa ondo egin da';
 $string['backpackconnectionresendemail'] = 'Berriz bidali egiaztapenerako e-maila';
 $string['backpackconnectionunexpectedmessage'] = 'Motxilak errorea itzuli du: "{$a}".';
-$string['backpackconnectionunexpectedresult'] = 'Arazoa gertatu da motxilarekin konektatzean. Egiaztatu zure kredentzialak eta saiatu zaitez berriro, mesedez.';
+$string['backpackconnectionunexpectedresult'] = 'Arazoa gertatu da motxilarekin konektatzean. Zure motxilaren hornitzaileak mezu hau bidali du: \'{$a}\'.';
 $string['backpackdetails'] = 'Motxilaren ezarpenak';
 $string['backpackdisconnected'] = 'Motxila konektatu gabe dago';
 $string['backpackemail'] = 'Helbide elektronikoa';
 $string['backpackemail_help'] = 'Zure motxilarekin lotutako helbide elektronikoa. Konektatuta zauden bitartean, gune honetan irabazitako dominak helbide elektroniko honekin lotuko dira.';
+$string['backpackemail_required'] = 'Helbide elektronikoa ezin da hutsik egon';
 $string['backpackemailverificationpending'] = 'Egiaztapena falta da';
 $string['backpackemailverifyemailbody'] = 'Kaixo:
 
@@ -134,6 +135,7 @@ $string['backpackemailverifypending'] = 'Helbide elektronikoa egiaztatzeko mezua
 $string['backpackemailverifysuccess'] = 'Eskerrik asko zure helbide elektronikoa egiaztatzeagatik. Orain zure motxilarekin konektatuta zaude.';
 $string['backpackemailverifytokenmismatch'] = 'Klik egin duzun estekaren tokena ez dator bat gordetako tokenarekin. Ziurtatu ezazu jasotako azken e-maila mezuko estekan klik egin duzula.';
 $string['backpackexporterror'] = 'Domina ezin da motxilara esportatu';
+$string['backpackexporterrorwithinfo'] = 'Ezin da "{$a->badgename}" domina motxilara esportatu. Errorea: {$a->error}';
 $string['backpackimport'] = 'Domina inportatzeko ezarpenak';
 $string['backpackimport_help'] = 'Motxilarako konexio egokia ezarri ondoren, zure motxilako dominak zure dominen orrian eta zure profil-orrian ikusi ahal izango dira.
 
@@ -145,6 +147,7 @@ $string['backpackweburl'] = 'Motxilaren URLa';
 $string['badgedetails'] = 'Dominaren xehetasunak';
 $string['badgeimage'] = 'Irudia';
 $string['badgeimage_help'] = 'Irudiak gutxienez 300 x 300 pixeleko tamaina izan beharko luke. Dominan 300x300 pixeleko tamainan erakutsiko da, eta 100 x 100 pixeleko tamainan erabiltzailearen profil-orrian .';
+$string['badgeissued'] = 'Domina eman da';
 $string['badgeprivacysetting'] = 'Dominen pribatutasun-ezarpenak';
 $string['badgeprivacysetting_help'] = 'Irabazten dituzun dominak zure kontuaren profil-orrian erakutsi ahal dira. Ezarpen honek irabazitako azken dominak automatikoki erakusteko aukera ematen dizu.
 
@@ -218,7 +221,7 @@ $string['criteria_8_help'] = 'Erabiltzaileei kohortetako partaidetzan oinarritut
 $string['criteria_9'] = 'Konpetentziak';
 $string['criteria_9_help'] = 'Erabiltzaileek osatutako konpetentzien arabera domina esleitzea ahalbidetzen du.';
 $string['criteria_descr'] = 'Ondorengo baldintza betetzen dutenean emango zaie ikasleei domina hau:';
-$string['criteria_descr_0'] = 'Erabiltzaileei domina hau zerrendako <strong>{$a}</strong> baldintza betetzean emango zaie.';
+$string['criteria_descr_0'] = 'Osatu zerrendako <strong>{$a}</strong> baldintza.';
 $string['criteria_descr_1'] = 'Ondorengo jardueretatik <strong>{$a}</strong> osatu dira:';
 $string['criteria_descr_2'] = 'Domina hau ondorengo roletatik <strong>{$a}</strong> dituzten erabiltzaileek eman behar dute:';
 $string['criteria_descr_4'] = 'Erabiltzaileek ikastaroa osatu behar dute';
@@ -284,7 +287,6 @@ $string['delparamconfirm'] = 'Ziur zaude parametro hau ezabatu nahi duzula?';
 $string['description'] = 'Deskribapena';
 $string['disconnect'] = 'Deskonektatu';
 $string['donotaward'] = 'Une honetan domina hau ez dago aktibatuta eta beraz, ezin zaie erabiltzaileei eman. Domina hau eman nahi baduzu, aktiba ezazu.';
-$string['editsettings'] = 'Editatu ezarpenak';
 $string['enablebadges'] = 'Gaitu dominak';
 $string['endorsement'] = 'Onarpena';
 $string['error:backpackdatainvalid'] = 'Motxilak itzulitako datuak ez dira egokiak.';
@@ -463,7 +465,9 @@ $string['oauth2issuer'] = 'OAuth 2 zerbitzuak';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
+$string['othernavigation'] = 'Bestelako nabigazioa...';
 $string['overallcrit'] = 'aukeratutako irizpideetatik bete da.';
+$string['password_required'] = 'Pasahitza ezin da hutsik egon';
 $string['potentialrecipients'] = 'Balizko domina-jasotzaileak';
 $string['preferences'] = 'Dominen aukerak';
 $string['privacy:metadata:backpack'] = 'Erabiltzailearen motxilen erregistroa';
@@ -500,10 +504,11 @@ $string['privacy:metadata:manualaward:datemet'] = 'Erabiltzaileari domina eskuz 
 $string['privacy:metadata:manualaward:issuerid'] = 'Domina eman zuen erabiltzailearen IDa';
 $string['privacy:metadata:manualaward:issuerrole'] = 'Domina eman zuen erabiltzailearen rola';
 $string['privacy:metadata:manualaward:recipientid'] = 'Eskuz emandako domina jaso duen erabiltzailearen IDa';
+$string['recipient'] = 'Dominaren jasotzailea';
 $string['recipientdetails'] = 'Jasotzailearen zehaztasunak';
 $string['recipientidentificationproblem'] = 'Ezin da domina honetarako jasotzailerik aurkitu dauden erabiltzaileen artean.';
 $string['recipients'] = 'Domina-jasotzaileak';
-$string['recipientvalidationproblem'] = 'Une honetako erabiltzailea ezin da egiaztatu domina honen jasotzaile gisa.';
+$string['recipientvalidationproblem'] = 'Ezin da erabiltzaile hau domina honen jasotzaile gisa egiaztatu.';
 $string['relatedbages'] = 'Erlazionatutako dominak';
 $string['relative'] = 'Data erlatiboa';
 $string['requiredbadge'] = 'Gutxienez domina bat gehitu behar da dominen irizpidera.';
@@ -530,7 +535,6 @@ $string['sitebackpack'] = 'Kanpoko motxila aktiboak';
 $string['sitebackpack_help'] = 'Erabiltzaileek gune honetatik konektatu dezaketen kanpoko motxila. Kontuan izan ezarpen hau aldatuz gero bere motxilekin lotura eginda duten erabiltzaileek euren motxilen ezarpenen orrira joan eta motxila deskonektatu eta berriz lotu beharko dute.';
 $string['sitebackpackdeleted'] = 'Guneko motxila ezabatua izan da.';
 $string['sitebackpacknotdeleted'] = 'Motxila hau ezin da ezabatu une honetan gunean lehenetsitakoa delako.';
-$string['sitebackpackverify'] = 'Motxilaren konexioa';
 $string['sitebackpackwarning'] = 'Ezin izan da motxilarekin konektatu. <br/><br/>Egiaztatu ezazu "Domina-emailearen helbide elektronikoa" ezarpenak motxilaren webguneko kontuarentzako baliozko helbide elektronikoa duela.<br/><br/>Egiaztatu ezazu <a href="{$a->url}">guneko motxilaren ezarpenen orriko</a> "Domina-emailearen pasahitza" webguneko motxilaren kontuaren pasahitz zuzena dela.<br/><br/>Motxilak hurrengoa itzuli du: "{$a->warning}"';
 $string['sitebadges'] = 'Guneko dominak';
 $string['sitebadges_help'] = 'Guneko dominak soilik gunearekin lotutako jarduerak egin dituzten erabiltzaileei eman ahal zaizkie. Jarduera horien artean daude hainbat ikastaro osatzea edo erabiltzaile-profileko hainbat eremu betetzea. Guneko dominak eskuz ere eman ahal dizkio erabiltzaile batek beste bati.

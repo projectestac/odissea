@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'nl', version '3.11'.
+ * Strings for component 'availability_grade', language 'nl', version '4.1'.
  *
  * @package     availability_grade
  * @category    string
@@ -39,9 +39,9 @@ $string['option_min'] = 'moet  ≥ zijn';
 $string['pluginname'] = 'Beperking door cijfers';
 $string['privacy:metadata'] = 'De beperkingen door cijfers-plugin bewaart geen persoonlijke gegevens.';
 $string['requires_any'] = 'Je hebt een cijfer in  <strong>{$a}</strong>';
-$string['requires_max'] = 'Je krijgt een geschikt cijfer in  <strong>{$a}</strong>';
-$string['requires_min'] = 'Je bereikt een vereist cijfer in  <strong>{$a}</strong>';
+$string['requires_max'] = 'Je scoort lager dan een vereist cijfer in  <strong>{$a}</strong>';
+$string['requires_min'] = 'Je scoort hoger dan een vereist cijfer in  <strong>{$a}</strong>';
 $string['requires_notany'] = 'Je hebt geen cijfer in  <strong>{$a}</strong>';
 $string['requires_notgeneral'] = 'Je hebt bepaalde cijfers in  <strong>{$a}</strong> niet gekregen';
-$string['requires_range'] = 'Je krijgt een bepaald cijfer in  <strong>{$a}</strong>';
+$string['requires_range'] = 'Je scoort binnen een bepaald bereik in  <strong>{$a}</strong>';
 $string['title'] = 'Cijfer';

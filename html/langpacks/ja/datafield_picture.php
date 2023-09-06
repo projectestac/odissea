@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'ja', version '3.11'.
+ * Strings for component 'datafield_picture', language 'ja', version '4.1'.
  *
  * @package     datafield_picture
  * @category    string
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_invalidparam1'] = 'シングルビューの幅は数値で指定する必要があります。';
+$string['error_invalidparam2'] = 'シングルビューの高さは数値で指定する必要があります。';
+$string['error_invalidparam4'] = 'リストビューの幅は数値で指定する必要があります。';
+$string['error_invalidparam5'] = 'リストビューの高さは数値で指定する必要があります。';
 $string['fieldtypelabel'] = '画像';
 $string['pluginname'] = '画像';
 $string['privacy:metadata'] = '画像フィールドコンポーネントはいかなる個人データも保存しません。mod_dataで定義されたテーブルを使用します。';
+$string['sample'] = 'イメージ説明プレースホルダ';

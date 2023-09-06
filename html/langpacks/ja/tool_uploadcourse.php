@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ja', version '3.11'.
+ * Strings for component 'tool_uploadcourse', language 'ja', version '4.1'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -111,14 +111,14 @@ $string['mode'] = 'アップロードモード';
 $string['mode_help'] = 'ここであなたはコースを作成するのか、更新するのか指定できます。';
 $string['nochanges'] = '変更なし';
 $string['pluginname'] = 'コースアップロード';
-$string['preview'] = 'プレビュ';
+$string['preview'] = 'プレビュー';
 $string['privacy:metadata'] = 'コースアップロードプラグインはいかなる個人データも保存しません。';
 $string['reset'] = 'アップロード後、コースをリセットする';
 $string['reset_help'] = '作成/アップロード後、コースをリセットするかどうか指定します。';
 $string['restoreafterimport'] = 'インポート後にリストアする';
 $string['result'] = '結果';
-$string['rowpreviewnum'] = 'プレビュ行';
-$string['rowpreviewnum_help'] = '次のページでプレビュされるCSVファイルの行数です。このオプションは次のページのサイズを制限するためにあります。';
+$string['rowpreviewnum'] = 'プレビュー行';
+$string['rowpreviewnum_help'] = '次のページでプレビューされるCSVファイルの行数です。このオプションは次のページのサイズを制限するためにあります。';
 $string['shortnametemplate'] = '省略名を生成するテンプレート';
 $string['shortnametemplate_help'] = 'コース省略名はナビゲーションに表示されます。あなたはここでテンプレート構文 (%f = フルネーム、%i = IDナンバー) または増分するための初期値を入力できます。';
 $string['templatefile'] = 'アップロード後、このファイルからリストアする';
@@ -138,5 +138,5 @@ $string['uploadcourses_help'] = 'コースはテキストファイルでアッ�
 * それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
 * 最初の行にはファイルの残りのフォーマットを決定する一連のフィールド名を含みます。
 * 必須フィールド名はshortname、fullnameおよびcategoryです。';
-$string['uploadcoursespreview'] = 'アップロードコースプレビュ';
+$string['uploadcoursespreview'] = 'アップロードコースプレビュー';
 $string['uploadcoursesresult'] = 'アップロードコース結果';

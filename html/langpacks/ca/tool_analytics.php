@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'ca', version '3.11'.
+ * Strings for component 'tool_analytics', language 'ca', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -26,10 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['analyticmodels'] = 'Models d\'analítiques';
+$string['delete'] = 'Suprimeix';
 $string['enabled'] = 'Habilitat';
 $string['export'] = 'Exporta';
 $string['importmodel'] = 'Importa el model';
 $string['indicators'] = 'Indicadors';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = 'Nombre d\'indicadors: {$a}';
 $string['info'] = 'Informació';
 $string['insights'] = 'Prediccions';
@@ -39,3 +41,4 @@ $string['modeltimesplitting'] = 'Interval d\'anàlisi';
 $string['newmodel'] = 'Model nou';
 $string['nextpage'] = 'Pàgina següent';
 $string['pluginname'] = 'Models d\'analítiques';
+$string['target_link'] = 'Targets';

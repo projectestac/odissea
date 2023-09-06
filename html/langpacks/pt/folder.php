@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'pt', version '3.11'.
+ * Strings for component 'folder', language 'pt', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -49,10 +49,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão da Pasta';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recurso Pasta.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão da Pasta';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelos recursos Pasta durante esse intervalo de análise (Níveis = Não visualizado, Visualizado)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização da Pasta';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Pasta.';
 $string['indicator:socialbreadthdef'] = 'Socialização da Pasta';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelos recursos Pasta durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['maxsizetodownload'] = 'Tamanho máximo da pasta a descarregar (MB)';
 $string['maxsizetodownload_help'] = 'O tamanho máximo da pasta que pode ser descarregada como um ficheiro Zip. Se definir como zero, o tamanho da pasta é ilimitado.';
 $string['modulename'] = 'Pasta';

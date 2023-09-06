@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'es', version '3.11'.
+ * Strings for component 'enrol_guest', language 'es', version '4.1'.
  *
  * @package     enrol_guest
  * @category    string
@@ -43,5 +43,6 @@ $string['showhint_desc'] = 'Mostrar la primera letra de la contraseña de acceso
 $string['status'] = 'Se permite el acceso de invitados';
 $string['status_desc'] = 'Permitir por defecto el acceso de invitados temporales';
 $string['status_help'] = 'Esta opción determina si un usuario puede acceder al curso como invitado, sin necesidad de inscribirse.';
+$string['status_link'] = 'enrol/guest';
 $string['usepasswordpolicy'] = 'Utilice la directiva de contraseñas';
 $string['usepasswordpolicy_desc'] = 'Utilice la política de contraseñas estándar para contraseñas de acceso de invitados.';

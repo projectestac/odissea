@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'it', version '3.11'.
+ * Strings for component 'theme_classic', language 'it', version '4.1'.
  *
  * @package     theme_classic
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['choosereadme'] = 'Classic è un tema altamente personalizzabile, basato su Boost, con un layout di navigazione alternativo. Questo tema è destinato a essere utilizzato direttamente o come tema padre quando si creano o si aggiornano temi personalizzati per utilizzare Bootstrap 4.';
 $string['configtitle'] = 'Classic';
 $string['navbardark'] = 'Utilizza barra di navigazione scura';
 $string['pluginname'] = 'Classic';
@@ -34,3 +35,4 @@ $string['privacy:metadata'] = 'Il tema Classic non memorizza dati personali.';
 $string['region-side-post'] = 'Destra';
 $string['region-side-pre'] = 'Sinistra';
 $string['sitetitle'] = 'Titolo del sito';
+$string['totop'] = 'Vai all\'inizio';

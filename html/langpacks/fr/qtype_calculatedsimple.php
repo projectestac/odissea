@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'fr', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'fr', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = 'Générer';
 $string['newsetwildcardvalues'] = 'nouveau(x) jeu(x) de valeur(s) pour le(s) joker(s)';
 $string['pluginname'] = 'Calculée simple';
 $string['pluginname_help'] = 'Les questions calculées simples permettent de créer des questions numériques en utilisant des variables qui sont remplacées par des valeurs quand le test est en cours. Les questions calculées simples offrent les fonctionnalités les plus utilisées des questions calculées, mais avec une interface de création plus simple.';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = 'Ajout d\'une question calculée simple';
 $string['pluginnameediting'] = 'Modification d\'une question calculée simple';
 $string['pluginnamesummary'] = 'Version simplifiée des questions calculées (questions numériques dont les nombres sont tirés aléatoirement d\'un jeu de données lorsque le test est effectué).';

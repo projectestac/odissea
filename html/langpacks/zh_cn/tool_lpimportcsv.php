@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'zh_cn', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'zh_cn', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -40,6 +40,7 @@ $string['idnumber'] = 'ID 号';
 $string['import'] = '导入';
 $string['importfile'] = 'CSV 框架描述文件';
 $string['importfile_help'] = '能力框架可以通过文本文件导入。文件的格式可以通过在网站上创建新的能力框架，然后将其导出来确定。';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = '正在导入文件数据';
 $string['invalidimportfile'] = '文件格式无效。';
 $string['isframework'] = '是能力框架';

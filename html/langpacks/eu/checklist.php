@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'eu', version '3.11'.
+ * Strings for component 'checklist', language 'eu', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['modulename_link'] = 'mod/checklist/view';
 $string['savechecks'] = 'Gorde';
 $string['viewallsave'] = 'Gorde';

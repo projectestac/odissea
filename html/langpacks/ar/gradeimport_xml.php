@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'ar', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'ar', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errbadxmlformat'] = 'خطأ - تنسيق XML خاطئ';
-$string['errduplicategradeidnumber'] = 'خطأ - هناك مفردتا تقييم تحملان الرمز التعريفي \'{$a}\' في هذا المقرر الدراسي. ينبغي أن يكون ذلك مستحيلاً.';
+$string['errduplicategradeidnumber'] = 'خطأ - هناك مفردتا تقييم تحملان الرمز التعريفي \'{$a}\' في هذا المساق. ينبغي أن يكون ذلك مستحيلاً.';
 $string['errduplicateidnumber'] = 'خطأ - تكرار في الرمز التعريفي';
 $string['errincorrectgradeidnumber'] = 'خطأ - الرمز التعريفي \'{$a}\' من ملف الاستيراد لا يطابق أي مفردة تقييم.';
 $string['errincorrectidnumber'] = 'خطأ - رمز تعريفي خاطئ';
@@ -37,6 +37,7 @@ $string['fileurl'] = 'رابط الملف البعيد';
 $string['fileurl_help'] = 'حقل رابط الملف البعيد هو من أجل إحضار البيانات من مخدم بعيد، مثل أنظمة معلومات الطلبة.';
 $string['importxml'] = 'استيراد XML';
 $string['importxml_help'] = 'يمكن استيراد التقديرات بواسطة ملف XML يحتوي على مُعرَّفات المستخدمين ومُعرَّفات النشاطات. للحصول على التنسيق الصحيح، قم أولاً بتصدير بعض التقديرات إلى ملف XML ثم عاينه.';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'ملف XML';
 $string['privacy:metadata'] = 'إن ملحق استيراد التقديرات من XML لا يخزن أي بيانات شخصية.';
 $string['xml:publish'] = 'نشر التقديرات المستوردة من XML';

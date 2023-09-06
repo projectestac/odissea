@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'ur', version '3.11'.
+ * Strings for component 'block_course_list', language 'ur', version '4.1'.
  *
  * @package     block_course_list
  * @category    string
@@ -27,8 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adminview'] = 'منتظم کا نظارہ';
 $string['allcourses'] = 'منتظم تمام کورسز دیکھ سکتے ہیں';
-$string['configadminview'] = 'منتظمین کو کورسز کی فہرست کے بلاک میں کیا نظر آنا چاہیے؟';
-$string['confighideallcourseslink'] = 'بلاک کے نچلے حصے میں تمام کورسز کے لنک کو چھپاؤ، لنک چھپانے سے منتظم کا نظارہ اثر انداز نا ہو گا';
-$string['hideallcourseslink'] = 'تمام کورسز کے لنک کو چھپاؤ';
+$string['configadminview'] = 'آیا تمام کورسز کو کورسز بلاک میں ڈسپلے کرنا ہے، یا صرف وہ کورسز جن میں ایڈمن کا اندراج ہے۔';
+$string['confighideallcourseslink'] = 'کورسز کی فہرست کے نیچے \'تمام کورسز\' کا لنک ہٹا دیں۔ (یہ ترتیب منتظم کے منظر کو متاثر نہیں کرتی ہے۔)';
+$string['course_list:addinstance'] = 'ایک نیا کورس بلاک شامل کریں';
+$string['course_list:myaddinstance'] = 'ڈیش بورڈ میں ایک نیا کورس بلاک شامل کریں';
+$string['hideallcourseslink'] = '\'تمام کورسز\' کا لنک چھپائیں';
 $string['owncourses'] = 'منتظم اپنے کورسز دیکھ سکتے ہیں';
-$string['pluginname'] = 'کورسز کی فہرست';
+$string['pluginname'] = 'کورسز';
+$string['privacy:metadata'] = 'کورسز بلاک صرف کورسز کے بارے میں ڈیٹا دکھاتا ہے اور خود کوئی ڈیٹا اسٹور نہیں کرتا ہے۔';

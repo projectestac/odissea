@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'es', version '3.11'.
+ * Strings for component 'chat', language 'es', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -63,7 +63,7 @@ $string['currentusers'] = 'Usuarios';
 $string['deletesession'] = 'Borrar esta sesión';
 $string['deletesessionsure'] = '¿Está seguro que desea borrar esta sesión?';
 $string['donotusechattime'] = 'No publicar horas de chat';
-$string['enterchat'] = 'Entrar a la sala';
+$string['enterchat'] = 'Entrar al chat';
 $string['entermessage'] = 'Inserta tu mensaje';
 $string['errornousers'] = '¡No puedo encontrar usuarios!';
 $string['eventmessagesent'] = 'Mensaje enviado';
@@ -77,10 +77,12 @@ $string['indicator:cognitivedepth'] = 'Chat cognitivo';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Chat.';
 $string['indicator:cognitivedepthdef'] = 'Chat cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades de Chat durante este intervalo de análisis (Niveles = Sin Ver, Ver, Enviar, Ver retroalimentación, Comentar en retroalimentación)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Chat social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Chat.';
 $string['indicator:socialbreadthdef'] = 'Chat social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por las actividades de Chat durante este intervalo de análisis (Niveles = Sin participación, Participante solo, Participante con otros)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = 'Área de entrada';
 $string['invalidid'] = 'No se encontró esa sala de chat';
 $string['list_all_sessions'] = 'Listar todas las sesiones.';
@@ -109,6 +111,7 @@ Los chats son especialmente útiles cuando un grupo no tiene posibilidad de reun
 * Niños pequeños en casa por las tardes, como una introducción controlada (monitoreada) al mundo de las redes sociales
 * Una sesión de preguntas y respuestas con un orador invitado de una localidad diferente (a distancia)
 * Sesiones para ayudar a los estudiantes a prepararse para exámenes, donde el maestro, o los estudiantes, hagan preguntas de ejemplo';
+$string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Nunca borrar mensajes';
 $string['nextchattime'] = 'Próxima hora de chat:';
@@ -126,6 +129,7 @@ $string['notlogged'] = '¡Usted no se ha identificado!';
 $string['oldping'] = 'Desconectar tiempo de espera';
 $string['page-mod-chat-x'] = 'Cualquier página del módulo de chat';
 $string['pastchats'] = 'Sesiones de chat pasadas';
+$string['pastsessions'] = 'Sesiones pasadas';
 $string['pluginadministration'] = 'Administración del chat';
 $string['pluginname'] = 'Chat';
 $string['privacy:metadata:chat_messages_current'] = 'Sesión actual de chat. Los datos son temporales y son eliminados después de que la sesión de chat sea eliminada';
@@ -177,4 +181,4 @@ $string['usingchat_help'] = 'El módulo chat contiene algunas características p
 * Emociones - Puede empezar una oración con "/me" o ":" para mostrar emociones, por ejemplo: si su nombre es Kim y escribe ":laughs!" o "/me laughs!", entonces todos verán "Kim laughs!"
 * Beeps - Puede mandar un sonido a otros participantes eligiendo el enlace de "beep" que está junto a sus nombres. Un atajo útil para mandar un sonido a todas las personas en el chat al mismo tiempo es tecleando "beep all".
 * HTML - si sabe emplear código HTML, lo puede utilizar en su texto para hacer cosas como insertar imágenes, hacer que suenen ruidos o crear texto con diferentes colores';
-$string['viewreport'] = 'Ver las sesiones anteriores';
+$string['viewreport'] = 'Sesiones anteriores';

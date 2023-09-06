@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'congrea', language 'el', version '3.11'.
+ * Strings for component 'congrea', language 'el', version '4.1'.
  *
  * @package     congrea
  * @category    string
@@ -70,7 +70,7 @@ $string['congreadocument'] = 'Αυτό το έχετε ήδη κατεβάσει
 $string['congreafieldset'] = 'Προσαρμοσμένο παράδειγμα σετ πεδίων';
 $string['congreagenerald'] = 'Κλειδί API Congrea';
 $string['congreaname'] = 'Όνομα Congrea';
-$string['congreaname_help'] = 'Αυτή είναι μια αίθουσα διδασκαλίας πραγματικού χρόνου και εντός σύνδεσης, που επιτρέπει στους συμμετέχοντες να αλληλεπιδρούν μεταξύ τους και παρέχει εργαλεία ασύγχρονης επικοινωνίας όπως ασπροπίνακα, συνομιλία και διαμοιρασμό οθόνης.';
+$string['congreaname_help'] = 'Αυτή είναι μια αίθουσα διδασκαλίας πραγματικού χρόνου εντός σύνδεσης, που επιτρέπει στους συμμετέχοντες να αλληλεπιδρούν μεταξύ τους και παρέχει εργαλεία ασύγχρονης επικοινωνίας όπως ασπροπίνακα, γραπτή συνομιλία και κοινή χρήση οθόνης.';
 $string['congreapoll'] = 'Ερώτηση ψηφοφορίας Congrea';
 $string['congrearecseeting'] = 'Εγγραφή Congrea';
 $string['correct'] = 'Σωστά';
@@ -89,7 +89,7 @@ $string['displaymode'] = 'Κατάσταση εμφάνισης';
 $string['domain'] = 'Διεύθυνση URL τομέα';
 $string['downloadsession'] = 'Παρακαλούμε, περιμένετε όσο η εγγραφή κατεβαίνει.';
 $string['editbtn'] = 'Τροποποίηση';
-$string['editingschedule'] = 'Επεξεργασία μιας χρονοδρομολογημένης συνόδου';
+$string['editingschedule'] = 'Επεξεργασία μιας χρονοπρογραμματισμένης συνόδου';
 $string['editingsession'] = 'Τροποποιήσεις χρονοπρογράμματος:';
 $string['email'] = 'Διεύθυνση ηλε.ταχυδρομείου';
 $string['email_help'] = 'Δώστε την διεύθυνση ηλε.ταχυδρομείου σας.';
@@ -182,7 +182,7 @@ $string['pushtotalk_help'] = 'Εάν ενεργοποιηθεί, εμφανίζ�
 $string['qaAnswer'] = 'Απάντηση';
 $string['qaAnswer_help'] = 'Εάν ενεργοποιηθεί, να επιτρέπεται στους μαθητές να απαντήσουν στην ερώτηση που αναρτήθηκε στον πίνακα «Ερώτηση»';
 $string['qaComment'] = 'Σχόλιο';
-$string['qaComment_help'] = 'Εάν ενεργοποιηθεί, να επιτρέπεται στους μαθητές να δημοσιεύουν σχόλια για απαντήσεις και άλλα σχόλια';
+$string['qaComment_help'] = 'Εάν ενεργοποιηθεί, να επιτρέπεται στους μαθητές να αναρτούν σχόλια για απαντήσεις και άλλα σχόλια';
 $string['qaMarkNotes'] = 'Σελιδοδείκτες & Σημειώσεις';
 $string['qaMarkNotes_help'] = 'Εάν ενεργοποιηθεί, να επιτρέπεται στον παρουσιαστή και στους μαθητές να προσθέτουν ιδιωτικούς σελιδοδείκτες και σημειώσεις';
 $string['qaUpvote'] = 'Ψήφοι';
@@ -216,8 +216,8 @@ $string['selectcolor_help'] = 'Επιλογή του δικού σας χρώμ�
 $string['selectdays'] = 'Επιλογή ημερών';
 $string['selectteacher'] = 'Επιλογή παρουσιαστή';
 $string['selectteacher_help'] = 'Ανάθεση ενός παρουσιαστή για αυτή τη σύνοδο.';
-$string['sessionareport'] = 'Αναφορά παρακολούθησης/απουσιών συνόδου';
-$string['sessionclosed'] = 'Αυτή η σύνοδος είναι μη διαθέσιμη';
+$string['sessionareport'] = 'Αναφορά παρουσιών συνόδου';
+$string['sessionclosed'] = 'Η αίθουσα τάξης δεν έχει ανοίξει ακόμα';
 $string['sessiondate'] = 'Ημερομηνία συνόδου';
 $string['sessionduration'] = 'Διάρκεια συνόδου:';
 $string['sessionedited'] = 'Η σύνοδος/-οι ενημερώθηκαν.';
@@ -227,16 +227,16 @@ $string['sessionendmsg'] = 'Η σύνοδος έχει κλείσει. Μπορ�
 $string['sessionnouser'] = 'Δεν υπάρχει χρήστης σε αυτήν την σύνοδο';
 $string['sessions'] = 'σύνοδος/-οι';
 $string['sessionsettings'] = 'Χρονοπρογραμματισμός συνόδου/-ων';
-$string['sessionsschedule'] = 'Πρόγραμμα για συνόδους';
+$string['sessionsschedule'] = 'Χρονοπρόγραμμα για συνόδους';
 $string['showAttendeeRecordingStatus'] = 'Ορατότητα προς τον μαθητή, της κατάστασης εγγραφής';
 $string['silencedetect'] = 'Ανίχνευση σιγής';
 $string['srecordingsection_help'] = '<b>Ρυθμίσει μαθητή</b> - Αυτές οι ρυθμίσεις θα επηρρεάσουν τα δικαιώματα εγγραφής ήχου/βίντεο των μαθητών.';
 $string['studentaudio'] = 'Ήχος των μαθητών';
-$string['studentgc'] = 'Ομαδική συνομιλία';
+$string['studentgc'] = 'Ομαδική γραπτή συνομιλία';
 $string['studentgc_help'] = 'Εάν ενεργοποιηθεί, επιτρέπει στους μαθητές να συμμετέχουν σε ομαδική γραπτή συνομιλία/συζήτηση κατά τη διάρκεια της συνόδου.';
 $string['studentm'] = 'Διαχείριση δυνατοτήτων';
 $string['studentm_help'] = 'Διαχείριση δυνατοτήτων';
-$string['studentpc'] = 'Ιδιωτική συνομιλία';
+$string['studentpc'] = 'Ιδιωτική γραπτή συνομιλία';
 $string['studentvideo'] = 'Βίντεο μαθητή';
 $string['submiterror'] = 'Σφάλμα:';
 $string['teacher'] = 'Παρουσιαστής';

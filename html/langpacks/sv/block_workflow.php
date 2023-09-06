@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_workflow', language 'sv', version '3.11'.
+ * Strings for component 'block_workflow', language 'sv', version '4.1'.
  *
  * @package     block_workflow
  * @category    string
@@ -32,3 +32,6 @@ $string['jumptostepon'] = 'Hoppa till steg \'{$a->stepname}\' on {$a->contextnam
 $string['percentcomplete'] = '{$a}% slutförd';
 $string['state_completed'] = 'Färdigt';
 $string['state_history_completed'] = 'Färdigt';
+$string['stepactivation_link'] = 'block/workflow';
+$string['stepcompletion_link'] = 'block/workflow';
+$string['stepextranotify_link'] = 'block/workflow';

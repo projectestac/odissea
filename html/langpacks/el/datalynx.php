@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datalynx', language 'el', version '3.11'.
+ * Strings for component 'datalynx', language 'el', version '4.1'.
  *
  * @package     datalynx
  * @category    string
@@ -61,7 +61,7 @@ $string['behaviors'] = 'Συμπεριφορές';
 $string['between'] = 'μεταξύ';
 $string['blankfilter'] = 'Κενό φίλτρο';
 $string['browse'] = 'Περιήγηση';
-$string['check_enable'] = 'Πρέπει να τικάρετε το πλαίσιο ελέγχου ενεργοποίησης για να επιβεβαιώσετε την εγκυρότητα της επιλεγμένης τιμής.';
+$string['check_enable'] = 'Πρέπει να επιλέξετε/τικάρετε το πλαίσιο επιλογής ενεργοποίησης για να επιβεβαιώσετε την εγκυρότητα της επιλεγμένης τιμής.';
 $string['columns'] = 'στήλες';
 $string['comment'] = 'Σχόλιο';
 $string['commentadd'] = 'Προσθήκη σχολίου';
@@ -571,7 +571,7 @@ $string['targetview_this_new'] = 'Αυτή η προβολή (Νέα)';
 $string['teacher'] = 'Διδάσκων';
 $string['teachersandstudents'] = '{$a->teachers} και {$a->students}';
 $string['teamfield'] = 'Πεδίο ομάδας';
-$string['teammembers'] = 'Μέλη ομάδας';
+$string['teammembers'] = 'Μέλη ομάδας χρηστών';
 $string['teams'] = 'Ομάδες χρηστών';
 $string['teamsize'] = 'Μέγιστο μέγεθος ομάδας χρηστών';
 $string['teamsize_error_required'] = 'Αυτό το πεδίο απαιτείται!';

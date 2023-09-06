@@ -20,7 +20,6 @@ Feature: Edit quiz marks with attempts
       | activity   | name   | course | idnumber | grade | decimalpoints | questiondecimalpoints |
       | quiz       | Quiz 1 | C1     | quiz1    | 20    | 2             | -1                    |
     And I log in as "teacher1"
-    And I am on "Course 1" course homepage
     And I add a "True/False" question to the "Quiz 1" quiz with:
       | Question name | First question |
       | Question text | Answer me      |
@@ -31,7 +30,7 @@ Feature: Edit quiz marks with attempts
       | Default mark  | 3.0             |
     And I log out
     And I am on the "Quiz 1" "mod_quiz > View" page logged in as "student1"
-    And I press "Attempt quiz now"
+    And I press "Attempt quiz"
     And I log out
     And I log in as "teacher1"
     And I am on the "Quiz 1" "mod_quiz > Edit" page
@@ -61,8 +60,9 @@ Feature: Edit quiz marks with attempts
 
   @javascript
   Scenario: Verify the number of decimal places shown is what the quiz settings say it should be.
+    Given I change window size to "large"
     # Then the field "maxgrade" matches value "20.00" -- with exact match on decimal places.
-    Given "//input[@name = 'maxgrade' and @value = '20.00']" "xpath_element" should exist
+    And "//input[@name = 'maxgrade' and @value = '20.00']" "xpath_element" should exist
     And I should see "2.00"
     And I should see "3.00"
     And I should see "Total of marks: 5.00"
@@ -72,7 +72,7 @@ Feature: Edit quiz marks with attempts
     When I am on the "Quiz 1" "quiz activity editing" page
     And I set the following fields to these values:
       | Decimal places in grades | 3 |
-      | Decimal places in question grades | 5 |
+      | Decimal places in marks for questions | 5 |
     And I press "Save and display"
     And I am on the "Quiz 1" "mod_quiz > Edit" page
     # Then the field "maxgrade" matches value "20.000" -- with exact match on decimal places.

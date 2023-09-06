@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'el', version '3.11'.
+ * Strings for component 'atto_table', language 'el', version '4.1'.
  *
  * @package     atto_table
  * @category    string
@@ -56,11 +56,11 @@ $string['moverowup'] = 'Μετακίνηση σειράς πάνω';
 $string['noborder'] = 'Χωρίς περίγραμμα';
 $string['none'] = 'Κανένα';
 $string['numberofcolumns'] = 'Αριθμός στηλών';
-$string['numberofrows'] = 'Αριθμός σειρών';
+$string['numberofrows'] = 'Αριθμός γραμμών';
 $string['outer'] = 'Γύρω από τον πίνακα';
 $string['pluginname'] = 'Πίνακας';
 $string['privacy:metadata'] = 'Το πρόσθετο «atto_table» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
-$string['rows'] = 'Σειρές';
+$string['rows'] = 'Γραμμές';
 $string['settings'] = 'Ρυθμίσεις πίνακα';
 $string['solid'] = 'Συμπαγής';
 $string['themedefault'] = 'Προεπιλογή αισθητικού θέματος';

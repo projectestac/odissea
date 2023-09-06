@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'de', version '3.11'.
+ * Strings for component 'tag', language 'de', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -78,7 +78,9 @@ $string['helprelatedtags'] = 'Verwandte Tags (kommagetrennt)';
 $string['id'] = 'ID';
 $string['inalltagcoll'] = 'Überall';
 $string['inputstandardtags'] = 'Kommagetrennte Liste neuer Tags eingeben';
+$string['itemid'] = 'Objekt-ID';
 $string['itemstaggedwith'] = '{$a->tagarea} mit \'{$a->tag}\' markiert';
+$string['itemtype'] = 'Objekt-Typ';
 $string['lesstags'] = 'weniger...';
 $string['managestandardtags'] = 'Standard-Tags verwalten';
 $string['managetagcolls'] = 'Tag-Collections verwalten';
@@ -87,6 +89,7 @@ $string['moretags'] = 'mehr...';
 $string['name'] = 'Tag';
 $string['namesalreadybeeingused'] = 'Tag bereits benutzt';
 $string['nameuseddocombine'] = 'Dieser Tag wird bereits verwendet. Möchten Sie die Tags verbinden?';
+$string['namewithlink'] = 'Tag-Name mit Link';
 $string['newcollnamefor'] = 'Neuer Name für Tag-Collection {$a}';
 $string['newnamefor'] = 'Neuer Name für Tag {$a}';
 $string['nextpage'] = 'Mehr';
@@ -144,6 +147,7 @@ $string['standardsuggest'] = 'Vorschlagen';
 $string['standardtag'] = 'Standardmäßig';
 $string['suredeletecoll'] = 'Möchten Sie wirklich die Tag-Collection \'{$a}\' löschen?';
 $string['tag'] = 'Tag';
+$string['tagarea'] = 'Tag-Bereich';
 $string['tagarea_blog_external'] = 'Externe Blogeinträge';
 $string['tagarea_course'] = 'Kurse';
 $string['tagarea_course_modules'] = 'Aktivitäten und Material';
@@ -152,10 +156,12 @@ $string['tagarea_user'] = 'Nutzerinteressen';
 $string['tagareaenabled'] = 'Aktiviert';
 $string['tagareaname'] = 'Name';
 $string['tagareas'] = 'Tag-Bereiche';
+$string['tagauthor'] = 'Tag-Autor/in';
 $string['tagcollection'] = 'Tag-Collection';
 $string['tagcollection_help'] = 'Eine Tag-Kollektion ist eine Gruppe von Tags für unterschiedliche Bereiche. Eine Standard-Kollektion kann z.B. verwendet werden, um Kurse zu markieren. Tags für Nutzerinteressen und Blogs kommen in eine separate Kollektion. Wenn jemand auf einen Tag klickt, werden nur Tags aus der gleichen Kollektion gezeigt. Tags können automatisch zu einer zum Bereich gehörenden Kollektion hinzugefügt oder manuell als Standard-Tag angelegt werden.';
 $string['tagcollections'] = 'Tag-Collections';
 $string['tagdescription'] = 'Beschreibung zum Tag';
+$string['taginstance'] = 'Tag-Instanz';
 $string['tags'] = 'Tags';
 $string['tagsaredisabled'] = 'Tags sind deaktiviert';
 $string['thingstaggedwith'] = '\'{$a->name}\' wird {$a->count} Mal verwendet';

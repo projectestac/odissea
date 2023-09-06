@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'ru', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'ru', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -30,3 +30,4 @@ $string['pluginname'] = 'Вставка из электронной таблиц
 $string['privacy:metadata'] = 'Плагин «Импорт оценок из скопированной таблицы» не хранит никаких персональных данных.';
 $string['userdata'] = 'Помощь по копированию данных в эту форму.';
 $string['userdata_help'] = 'Оценки могут быть скопированы и вставлены из электронной таблицы в журнал оценок. Электронная таблица должна иметь столбец, содержащий данные о личности пользователя - имя пользователя или идентификационный номер или адрес электронной почты. Каждый импортируемый столбец должен иметь свой заголовок.';
+$string['userdata_link'] = 'grade/import/direct/index';

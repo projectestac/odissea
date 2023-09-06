@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'nl', version '3.11'.
+ * Strings for component 'quiz_statistics', language 'nl', version '4.1'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -49,7 +49,7 @@ $string['coursename'] = 'Cursusnaam';
 $string['detailedanalysis'] = 'Meer gedetailleerde analyse van de antwoorden op deze vraag';
 $string['detailedanalysisforvariant'] = 'Meer gedetailleerde analyse van de antwoorden op variant {$a} van deze vraag';
 $string['discrimination_index'] = 'Discriminatie-index';
-$string['discriminative_efficiency'] = 'Discriminatieve efficientie';
+$string['discriminative_efficiency'] = 'Discriminatieve efficiëntie';
 $string['downloadeverything'] = 'Download volledig rapport als';
 $string['duration'] = 'Open voor';
 $string['effective_weight'] = 'Effectieve weging';
@@ -101,19 +101,19 @@ $string['questiontype'] = 'Vraagtype';
 $string['quizinformation'] = 'Testinformatie';
 $string['quizname'] = 'Testnaam';
 $string['quizoverallstatistics'] = 'Algemene teststatistieken';
-$string['quizstatisticscleanuptask'] = 'Opruimen van oude cache-records voor testtatistieken';
 $string['quizstructureanalysis'] = 'Analyse teststructuur';
 $string['random_guess_score'] = 'Gok-score';
 $string['rangebetween'] = '{$a->min} − {$a->max}';
 $string['rangeofvalues'] = 'Reeks statistieken voor deze vragen';
 $string['recalculatenow'] = 'Herbereken nu';
+$string['recalculatetask'] = 'Vraagstatistieken opnieuw berekenen';
 $string['reportsettings'] = 'Instellingen statistische berekening';
 $string['response'] = 'Antwoord';
 $string['skewness'] = 'Score verdelingsscheefheid (voor {$a})';
 $string['slotstructureanalysis'] = 'Structurele analyse van vraag nummer {$a}';
 $string['standarddeviation'] = 'Standaarddeviatie (voor {$a})';
 $string['standarddeviationq'] = 'Standaarddeviatie';
-$string['standarderror'] = 'Standaardafwijking (voor {$a})';
+$string['standarderror'] = 'Standaardfout (voor {$a})';
 $string['statistics'] = 'Statistieken';
 $string['statistics:view'] = 'Bekijk rapport teststatistieken';
 $string['statisticsreport'] = 'Statistisch rapport';

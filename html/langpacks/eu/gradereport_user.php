@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'eu', version '3.11'.
+ * Strings for component 'gradereport_user', language 'eu', version '4.1'.
  *
  * @package     gradereport_user
  * @category    string
@@ -25,11 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allusersnum'] = 'Erabiltzaile guztiak ({$a})';
 $string['eventgradereportviewed'] = 'Kalifikazioen erabiltzaile-txostena ikusi da';
-$string['myself'] = 'Ni neu';
-$string['otheruser'] = 'Erabiltzailea';
+$string['gotonextreport'] = 'Joan hurrengo erabiltzaile-txostenera';
+$string['gotopreviousreport'] = 'Joan aurreko erabiltzaile-txostenera';
 $string['pluginname'] = 'Erabiltzaile-txostena';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Kalifikazio-liburuko txostena uneko erabiltzaile gisa edo beste erabiltzaile bat gisa ikustea.';
 $string['tablesummary'] = 'Taula antolatuta dago kalifikatutako elementu-zerrenda bat jarraituz, horien kategoria barne hartuta. Elementuak kategoria baten barruan daudenean, hala adieraziko da.';
-$string['user:view'] = 'Ikusi nork bere kalifikazio-txostena';
-$string['viewas'] = 'Ikusi txostena honela';
+$string['user:view'] = 'Ikusi erabiltzaile-txostena';
+$string['userreportdesc'] = 'Erabiltzaile-txostenak erabiltzailearen kalifikazioak, feedbackak eta ikastaroko kalifikazio osoa erakusten ditu.';
+$string['userreports'] = 'Aukeratu erabiltzaile bat goian bere txostena ikusteko';

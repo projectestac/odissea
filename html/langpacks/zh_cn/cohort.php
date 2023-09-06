@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'zh_cn', version '3.11'.
+ * Strings for component 'cohort', language 'zh_cn', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -36,6 +36,7 @@ $string['bulkadd'] = '添加到群';
 $string['bulknocohort'] = '没有可用的群';
 $string['categorynotfound'] = '分类 <b>{$a}</b>未找到，或者你没有在这里创建群的权限。将使用默认值。';
 $string['cohort'] = '群组';
+$string['cohortmember'] = '队列成员';
 $string['cohorts'] = '群组';
 $string['cohortsin'] = '{$a}：可用群';
 $string['component'] = '来源';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = '群更新';
 $string['external'] = '外部群';
 $string['idnumber'] = '群ID';
 $string['invalidtheme'] = '群组主题不存在';
+$string['memberofcohort'] = '队列成员';
 $string['memberscount'] = '群大小';
 $string['name'] = '名称';
 $string['namecolumnmissing'] = 'CSV文件的格式有问题。请检查它是否包含正确的列名。要将用户添加到群组，请前往网站管理中的“上传用户”。';

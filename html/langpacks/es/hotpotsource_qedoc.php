@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpotsource_qedoc', language 'es', version '3.11'.
+ * Strings for component 'hotpotsource_qedoc', language 'es', version '4.1'.
  *
  * @package     hotpotsource_qedoc
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Archivos de origen Qedoc';
+$string['privacy:metadata'] = 'El módulo de archivos fuente Qedoc no almacena ningún dato personal.';

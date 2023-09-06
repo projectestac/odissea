@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ko', version '3.11'.
+ * Strings for component 'lesson', language 'ko', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -150,6 +150,7 @@ $string['displayscorewithessays'] = '자동으로 채점되는 질문에 대해 
 $string['displayscorewithoutessays'] = '당신의 점수는 {$a->score} 점 입니다.({$a->grade} 점 만점)';
 $string['edit'] = '편집';
 $string['editingquestionpage'] = '{$a} 질문 페이지 편집';
+$string['editlesson'] = '{$a} 편집';
 $string['editlessonsettings'] = '완전학습 설정';
 $string['editpage'] = '내용 편집';
 $string['editpagecontent'] = '페이지 내용 편집';
@@ -200,6 +201,8 @@ $string['hightime'] = '최장 시간';
 $string['importcount'] = '{$a} 질문 가져오기';
 $string['importquestions'] = '질문 가져오기';
 $string['importquestions_help'] = '이 기능은 텍스트 파일을 통하여 다양한 형식의 질문을 가져오기 할 수 있게 합니다.';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insertedpage'] = '페이지 삽입';
 $string['invalidfile'] = '잘못된 파일';
 $string['invalidid'] = '어떤 강좌 모듈/학습 ID도 통과하지 못함';
@@ -218,7 +221,6 @@ $string['lesson:edit'] = '완전학습 편집';
 $string['lesson:manage'] = '완전학습 관리';
 $string['lessonclosed'] = '이 완전학습은 {$a} 에 종료되었습니다.';
 $string['lessoncloses'] = '완전학습 종료';
-$string['lessoncloseson'] = '완전학습은 {$a} 에 종료됨';
 $string['lessonformating'] = '완전 학습 포맷중';
 $string['lessonmenu'] = '완전 학습 메뉴';
 $string['lessonnotready'] = '이 학습은 진행할 수 없습니다. {$a} 에게 연락하기 바랍니다.';
@@ -259,6 +261,7 @@ $string['modattempts_help'] = '<p>이것은 학생이 앞쪽으로 다시 가서
 $string['modattemptsnoteacher'] = '검토과정은 학생에게만 해당됨';
 $string['modulename'] = '완전학습';
 $string['modulename_help'] = '완전학습 모듈은 선생님이 질문 포함 페이지들로 구성된 적응 학습 경험을 제공할 수 있도록 합니다. ';
+$string['modulename_link'] = 'mod/lesson/view';
 $string['modulenameplural'] = '완전학습';
 $string['move'] = '페이지 옮김';
 $string['movedpage'] = '페이지 옮겨짐';
@@ -424,7 +427,6 @@ $string['whatdofirst'] = '처음에 무엇을 하길 원합니까?';
 $string['wronganswerjump'] = '오답의 경우 이동할 곳';
 $string['wronganswerscore'] = '오답에 대한 점수';
 $string['wrongresponse'] = '오답에 대한 반응';
-$string['xattempts'] = '{$a} 번째 시도';
 $string['youhaveseen'] = '당신은 이미 이 학습을 시도한 적이 있습니다.<br /> 도중에 끝마쳤던 부분부터 시작하길 원합니까?';
 $string['youranswer'] = '당신의 대답';
 $string['yourcurrentgradeis'] = '현재 성적은  {$a} 입니다';

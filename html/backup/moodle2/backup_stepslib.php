@@ -195,15 +195,81 @@ trait backup_questions_attempt_data_trait {
     }
 }
 
+/**
+ * Helper to backup question reference data for an instance.
+ */
+trait backup_question_reference_data_trait {
+
+    /**
+     * Backup the related data from reference table for the instance.
+     *
+     * @param backup_nested_element $element
+     * @param string $component
+     * @param string $questionarea
+     */
+    protected function add_question_references($element, $component, $questionarea) {
+        // Check $element is one nested_backup_element.
+        if (! $element instanceof backup_nested_element) {
+            throw new backup_step_exception('question_states_bad_parent_element', $element);
+        }
+
+        $reference = new backup_nested_element('question_reference', ['id'],
+            ['usingcontextid', 'component', 'questionarea', 'questionbankentryid', 'version']);
+
+        $element->add_child($reference);
+
+        $reference->set_source_table('question_references', [
+            'usingcontextid' => backup::VAR_CONTEXTID,
+            'component' => backup_helper::is_sqlparam($component),
+            'questionarea' => backup_helper::is_sqlparam($questionarea),
+            'itemid' => backup::VAR_PARENTID
+        ]);
+    }
+}
 
 /**
- * Abstract structure step to help activities that store question attempt data.
+ * Helper to backup question set reference data for an instance.
+ */
+trait backup_question_set_reference_trait {
+
+    /**
+     * Backup the related data from set_reference table for the instance.
+     *
+     * @param backup_nested_element $element
+     * @param string $component
+     * @param string $questionarea
+     */
+    protected function add_question_set_references($element, $component, $questionarea) {
+        // Check $element is one nested_backup_element.
+        if (! $element instanceof backup_nested_element) {
+            throw new backup_step_exception('question_states_bad_parent_element', $element);
+        }
+
+        $setreference = new backup_nested_element('question_set_reference', ['id'],
+            ['usingcontextid', 'component', 'questionarea', 'questionscontextid', 'filtercondition']);
+
+        $element->add_child($setreference);
+
+        $setreference->set_source_table('question_set_references', [
+            'usingcontextid' => backup::VAR_CONTEXTID,
+            'component' => backup_helper::is_sqlparam($component),
+            'questionarea' => backup_helper::is_sqlparam($questionarea),
+            'itemid' => backup::VAR_PARENTID
+        ]);
+    }
+}
+
+
+/**
+ * Abstract structure step to help activities that store question attempt data, reference data and set reference data.
  *
  * @copyright 2011 The Open University
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 abstract class backup_questions_activity_structure_step extends backup_activity_structure_step {
     use backup_questions_attempt_data_trait;
+    use backup_question_reference_data_trait;
+    use backup_question_set_reference_trait;
 }
 
 
@@ -273,8 +339,9 @@ class backup_module_structure_step extends backup_structure_step {
             'modulename', 'sectionid', 'sectionnumber', 'idnumber',
             'added', 'score', 'indent', 'visible', 'visibleoncoursepage',
             'visibleold', 'groupmode', 'groupingid',
-            'completion', 'completiongradeitemnumber', 'completionview', 'completionexpected',
-            'availability', 'showdescription'));
+            'completion', 'completiongradeitemnumber', 'completionpassgrade',
+            'completionview', 'completionexpected',
+            'availability', 'showdescription', 'downloadcontent', 'lang'));
 
         $tags = new backup_nested_element('tags');
         $tag = new backup_nested_element('tag', array('id'), array('name', 'rawname'));
@@ -479,9 +546,11 @@ class backup_course_structure_step extends backup_structure_step {
                                      backup_helper::is_sqlparam('course'),
                                      backup::VAR_PARENTID));
 
+        // Section level settings are dealt with in backup_section_structure_step.
+        // We only need to deal with course level (sectionid = 0) here.
         $courseformatoption->set_source_sql('SELECT id, format, sectionid, name, value
                                  FROM {course_format_options}
-                                 WHERE courseid = ?', [ backup::VAR_PARENTID ]);
+                                 WHERE courseid = ? AND sectionid = 0', [ backup::VAR_PARENTID ]);
 
         $handler = core_course\customfield\course_handler::create();
         $fieldsforbackup = $handler->get_instance_data_for_backup($this->task->get_courseid());
@@ -793,34 +862,28 @@ class backup_filters_structure_step extends backup_structure_step {
 }
 
 /**
- * structure step in charge of constructing the comments.xml file for all the comments found
- * in a given context
+ * Structure step in charge of constructing the comments.xml file for all the comments found in a given context.
  */
 class backup_comments_structure_step extends backup_structure_step {
 
     protected function define_structure() {
-
-        // Define each element separated
-
+        // Define each element separated.
         $comments = new backup_nested_element('comments');
 
         $comment = new backup_nested_element('comment', array('id'), array(
-            'commentarea', 'itemid', 'content', 'format',
+            'component', 'commentarea', 'itemid', 'content', 'format',
             'userid', 'timecreated'));
 
-        // Build the tree
-
+        // Build the tree.
         $comments->add_child($comment);
 
-        // Define sources
-
+        // Define sources.
         $comment->set_source_table('comments', array('contextid' => backup::VAR_CONTEXTID));
 
-        // Define id annotations
-
+        // Define id annotations.
         $comment->annotate_ids('user', 'userid');
 
-        // Return the root element (comments)
+        // Return the root element (comments).
         return $comments;
     }
 }
@@ -843,7 +906,6 @@ class backup_badges_structure_step extends backup_structure_step {
         global $CFG;
 
         require_once($CFG->libdir . '/badgeslib.php');
-
         // Define each element separated.
 
         $badges = new backup_nested_element('badges');
@@ -1224,7 +1286,6 @@ class backup_userscompletion_structure_step extends backup_structure_step {
     protected function define_structure() {
 
         // Define each element separated
-
         $completions = new backup_nested_element('completions');
 
         $completion = new backup_nested_element('completion', array('id'), array(
@@ -1242,8 +1303,22 @@ class backup_userscompletion_structure_step extends backup_structure_step {
 
         $completion->annotate_ids('user', 'userid');
 
-        // Return the root element (completions)
+        $completionviews = new backup_nested_element('completionviews');
+        $completionview = new backup_nested_element('completionview', ['id'], ['userid', 'timecreated']);
+
+        // Build the tree.
+        $completionviews->add_child($completionview);
+
+        // Define sources.
+        $completionview->set_source_table('course_modules_viewed', ['coursemoduleid' => backup::VAR_MODID]);
+
+        // Define id annotations.
+        $completionview->annotate_ids('user', 'userid');
+
+        $completions->add_child($completionviews);
+        // Return the root element (completions).
         return $completions;
+
     }
 }
 
@@ -1783,10 +1858,10 @@ class backup_activity_competencies_structure_step extends backup_structure_step 
         $wrapper->add_child($competencies);
 
         $competency = new backup_nested_element('competency', null, array('idnumber', 'ruleoutcome',
-            'sortorder', 'frameworkidnumber'));
+            'sortorder', 'frameworkidnumber', 'overridegrade'));
         $competencies->add_child($competency);
 
-        $sql = 'SELECT c.idnumber, cmc.ruleoutcome, cmc.sortorder, f.idnumber AS frameworkidnumber
+        $sql = 'SELECT c.idnumber, cmc.ruleoutcome, cmc.overridegrade, cmc.sortorder, f.idnumber AS frameworkidnumber
                   FROM {' . \core_competency\course_module_competency::TABLE . '} cmc
                   JOIN {' . \core_competency\competency::TABLE . '} c ON c.id = cmc.competencyid
                   JOIN {' . \core_competency\competency_framework::TABLE . '} f ON f.id = c.competencyframeworkid
@@ -2308,28 +2383,40 @@ class backup_annotate_all_question_files extends backup_execution_step {
                                          AND bi.itemname = 'question_categoryfinal'", array($this->get_backupid()));
         // To know about qtype specific components/fileareas
         $components = backup_qtype_plugin::get_components_and_fileareas();
+        $progress = $this->task->get_progress();
+        $progress->start_progress($this->get_name());
         // Let's loop
         foreach($rs as $record) {
             // Backup all the file areas the are managed by the core question component.
             // That is, by the question_type base class. In particular, we don't want
             // to include files belonging to responses here.
-            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'questiontext', null);
-            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'generalfeedback', null);
-            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'answer', null);
-            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'answerfeedback', null);
-            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'hint', null);
-            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'correctfeedback', null);
-            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'partiallycorrectfeedback', null);
-            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'incorrectfeedback', null);
+            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'questiontext', null,
+                                        $progress);
+            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'generalfeedback', null,
+                                        $progress);
+            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'answer', null,
+                                        $progress);
+            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'answerfeedback', null,
+                                        $progress);
+            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'hint', null,
+                                        $progress);
+            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'correctfeedback', null,
+                                        $progress);
+            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question',
+                                        'partiallycorrectfeedback', null, $progress);
+            backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, 'question', 'incorrectfeedback', null,
+                                        $progress);
 
             // For files belonging to question types, we make the leap of faith that
             // all the files belonging to the question type are part of the question definition,
             // so we can just backup all the files in bulk, without specifying each
             // file area name separately.
             foreach ($components as $component => $fileareas) {
-                backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, $component, null, null);
+                backup_structure_dbops::annotate_files($this->get_backupid(), $record->contextid, $component, null, null,
+                                            $progress);
             }
         }
+        $progress->end_progress();
         $rs->close();
     }
 }
@@ -2337,86 +2424,138 @@ class backup_annotate_all_question_files extends backup_execution_step {
 /**
  * structure step in charge of constructing the questions.xml file for all the
  * question categories and questions required by the backup
- * and letters related to one activity
+ * and letters related to one activity.
  */
 class backup_questions_structure_step extends backup_structure_step {
 
     protected function define_structure() {
 
-        // Define each element separated
-
+        // Define each element separately.
         $qcategories = new backup_nested_element('question_categories');
 
-        $qcategory = new backup_nested_element('question_category', array('id'), array(
-            'name', 'contextid', 'contextlevel', 'contextinstanceid',
-            'info', 'infoformat', 'stamp', 'parent',
-            'sortorder', 'idnumber'));
+        $qcategory = new backup_nested_element('question_category', ['id'],
+            [
+                'name',
+                'contextid',
+                'contextlevel',
+                'contextinstanceid',
+                'info',
+                'infoformat',
+                'stamp',
+                'parent',
+                'sortorder',
+                'idnumber',
+            ]);
+
+        $questionbankentries = new backup_nested_element('question_bank_entries');
+
+        $questionbankentry = new backup_nested_element('question_bank_entry', ['id'],
+            [
+                'questioncategoryid',
+                'idnumber',
+                'ownerid',
+            ]);
+
+        $questionversions = new backup_nested_element('question_version');
+
+        $questionverion = new backup_nested_element('question_versions', ['id'], ['version', 'status']);
 
         $questions = new backup_nested_element('questions');
 
-        $question = new backup_nested_element('question', array('id'), array(
-            'parent', 'name', 'questiontext', 'questiontextformat',
-            'generalfeedback', 'generalfeedbackformat', 'defaultmark', 'penalty',
-            'qtype', 'length', 'stamp', 'version',
-            'hidden', 'timecreated', 'timemodified', 'createdby', 'modifiedby', 'idnumber'));
+        $question = new backup_nested_element('question', ['id'],
+            [
+                'parent',
+                'name',
+                'questiontext',
+                'questiontextformat',
+                'generalfeedback',
+                'generalfeedbackformat',
+                'defaultmark',
+                'penalty',
+                'qtype',
+                'length',
+                'stamp',
+                'timecreated',
+                'timemodified',
+                'createdby',
+                'modifiedby',
+            ]);
 
-        // attach qtype plugin structure to $question element, only one allowed
+        // Attach qtype plugin structure to $question element, only one allowed.
         $this->add_plugin_structure('qtype', $question, false);
+
+        // Attach qbank plugin stucture to $question element, multiple allowed.
+        $this->add_plugin_structure('qbank', $question, true);
 
         // attach local plugin stucture to $question element, multiple allowed
         $this->add_plugin_structure('local', $question, true);
 
         $qhints = new backup_nested_element('question_hints');
 
-        $qhint = new backup_nested_element('question_hint', array('id'), array(
-            'hint', 'hintformat', 'shownumcorrect', 'clearwrong', 'options'));
+        $qhint = new backup_nested_element('question_hint', ['id'],
+            [
+                'hint',
+                'hintformat',
+                'shownumcorrect',
+                'clearwrong',
+                'options',
+            ]);
 
         $tags = new backup_nested_element('tags');
 
-        $tag = new backup_nested_element('tag', array('id', 'contextid'), array('name', 'rawname'));
+        $tag = new backup_nested_element('tag', ['id', 'contextid'], ['name', 'rawname']);
 
-        // Build the tree
-
+        // Build the initial tree.
         $qcategories->add_child($qcategory);
-        $qcategory->add_child($questions);
+        $qcategory->add_child($questionbankentries);
+        $questionbankentries->add_child($questionbankentry);
+        $questionbankentry->add_child($questionversions);
+        $questionversions->add_child($questionverion);
+        $questionverion->add_child($questions);
         $questions->add_child($question);
         $question->add_child($qhints);
         $qhints->add_child($qhint);
 
+        // Add question tags.
         $question->add_child($tags);
         $tags->add_child($tag);
 
-        // Define the sources
-
         $qcategory->set_source_sql("
-            SELECT gc.*, contextlevel, instanceid AS contextinstanceid
+            SELECT gc.*,
+                   contextlevel,
+                   instanceid AS contextinstanceid
               FROM {question_categories} gc
               JOIN {backup_ids_temp} bi ON bi.itemid = gc.id
               JOIN {context} co ON co.id = gc.contextid
              WHERE bi.backupid = ?
-               AND bi.itemname = 'question_categoryfinal'", array(backup::VAR_BACKUPID));
+               AND bi.itemname = 'question_categoryfinal'", [backup::VAR_BACKUPID]);
 
-        $question->set_source_table('question', array('category' => backup::VAR_PARENTID));
+        $questionbankentry->set_source_table('question_bank_entries', ['questioncategoryid' => backup::VAR_PARENTID]);
+
+        $questionverion->set_source_table('question_versions', ['questionbankentryid' => backup::VAR_PARENTID]);
+
+        $question->set_source_sql('
+                SELECT q.*
+                 FROM {question} q
+                 JOIN {question_versions} qv ON qv.questionid = q.id
+                 JOIN {question_bank_entries} qbe ON qbe.id = qv.questionbankentryid
+                WHERE qv.id = ?', [backup::VAR_PARENTID]);
 
         $qhint->set_source_sql('
                 SELECT *
-                FROM {question_hints}
+                 FROM {question_hints}
                 WHERE questionid = :questionid
-                ORDER BY id',
-                array('questionid' => backup::VAR_PARENTID));
+             ORDER BY id', ['questionid' => backup::VAR_PARENTID]);
 
         $tag->set_source_sql("SELECT t.id, ti.contextid, t.name, t.rawname
-                              FROM {tag} t
-                              JOIN {tag_instance} ti ON ti.tagid = t.id
-                              WHERE ti.itemid = ?
-                              AND ti.itemtype = 'question'
-                              AND ti.component = 'core_question'",
-            [
-                backup::VAR_PARENTID
-            ]);
+                                FROM {tag} t
+                                JOIN {tag_instance} ti ON ti.tagid = t.id
+                               WHERE ti.itemid = ?
+                                 AND ti.itemtype = 'question'
+                                 AND ti.component = 'core_question'", [backup::VAR_PARENTID]);
 
-        // don't need to annotate ids nor files
-        // (already done by {@link backup_annotate_all_question_files}
+        // Don't need to annotate ids nor files.
+        // ...(already done by {@see backup_annotate_all_question_files()}.
 
         return $qcategories;
     }
@@ -2813,12 +2952,13 @@ class backup_completion_defaults_structure_step extends backup_structure_step {
         $cc = new backup_nested_element('course_completion_defaults');
 
         $defaults = new backup_nested_element('course_completion_default', array('id'), array(
-            'modulename', 'completion', 'completionview', 'completionusegrade', 'completionexpected', 'customrules'
+            'modulename', 'completion', 'completionview', 'completionusegrade', 'completionpassgrade',
+            'completionexpected', 'customrules'
         ));
 
         // Use module name instead of module id so we can insert into another site later.
         $sourcesql = "SELECT d.id, m.name as modulename, d.completion, d.completionview, d.completionusegrade,
-                  d.completionexpected, d.customrules
+                  d.completionpassgrade, d.completionexpected, d.customrules
                 FROM {course_completion_defaults} d join {modules} m on d.module = m.id
                 WHERE d.course = ?";
         $defaults->set_source_sql($sourcesql, array(backup::VAR_COURSEID));

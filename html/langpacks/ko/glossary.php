@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ko', version '3.11'.
+ * Strings for component 'glossary', language 'ko', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -227,6 +227,8 @@ $string['importedentries'] = '가져온 항목';
 $string['importentries'] = '항목 가져오기';
 $string['importentriesfromxml'] = 'XML파일에서 내용 가져옴';
 $string['includegroupbreaks'] = '모둠 해체 포함';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = '이 용어집이 전역 용어집입니까?';
 $string['isglobal_help'] = '전역 용어집은 용어집이 있는 강좌뿐만 아니라 사이트 전체에서 링크된 입력항목을 가지고 있습니다. 오직 관리자만이 용어집을 전역로 설정할 수 있습니다.';
 $string['letter'] = '문자';
@@ -237,6 +239,7 @@ $string['mainglossary'] = '주 용어집';
 $string['maxtimehaspassed'] = '죄송합니다만, 수정할 수 있는 횟수({$a})를 초과하였습니다!';
 $string['modulename'] = '용어집';
 $string['modulename_help'] = '용어집 모듈은 참여자들이 사전과 같은 정의 목록을 만들고 관리하는 것을 가능하게 해 줍니다. 용어집의 항목은 강좌 전반에 거쳐 그 단어나 문구와 관련된 내용이 노출될 때 자동적으로 연결될 수도 있습니다.';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = '용어활용';
 $string['newentries'] = '새 자료 항목';
 $string['newglossary'] = '새 용어집';

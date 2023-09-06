@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'nl', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'nl', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,4 +30,5 @@ $string['endanswernotfound'] = 'Kon het vereiste "}"-teken niet vinden in de ge√
 $string['noanswerfound'] = 'Geen antwoorden gevonden in de vraag';
 $string['pluginname'] = 'Ontbrekend woordopmaak';
 $string['pluginname_help'] = 'Met ontbrekend woordopmaak kun je vragen importeren vanuit een tekstbestand.';
+$string['pluginname_link'] = 'qformat/missingword';
 $string['privacy:metadata'] = 'De plug-in Missing word question format slaat geen persoonlijke gegevens op.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ru', version '3.11'.
+ * Strings for component 'quiz_overview', language 'ru', version '4.1'.
  *
  * @package     quiz_overview
  * @category    string
@@ -70,7 +70,9 @@ $string['regradecomplete'] = 'Переоценивание успешно зав
 $string['regradedsuccessfullyxofy'] = 'Успешно переоценено ({$a->done}/{$a->count})';
 $string['regradeheader'] = 'Переоценивание';
 $string['regradeselected'] = 'Переоценить выбранные попытки';
+$string['regradingattemptissue'] = 'Вопрос {$a->slot}: {$a->reason}';
 $string['regradingattemptxofy'] = 'Переоценка попыток ({$a->done}/{$a->count})';
+$string['regradingattemptxofyproblem'] = 'Следующие вопросы не могут быть переоценены при попытке {$a->attemptnum} пользователя {$a->name} (id {$a->attemptid})';
 $string['regradingattemptxofywithdetails'] = 'Переоценивание попыток ({$a->done}/{$a->count}) - Попытка {$a->attemptnum} от {$a->name} (id {$a->attemptid})';
 $string['show'] = 'Включить';
 $string['showattempts'] = 'Только показать / скачать попытки';

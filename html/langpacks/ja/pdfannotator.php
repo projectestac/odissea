@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'ja', version '3.11'.
+ * Strings for component 'pdfannotator', language 'ja', version '4.1'.
  *
  * @package     pdfannotator
  * @category    string
@@ -175,13 +175,13 @@ $string['me'] = '私';
 $string['messageprovider:newanswer'] = 'あなたが購読している質問に回答された場合';
 $string['messageprovider:newquestion'] = '新しい質問に回答された場合';
 $string['messageprovider:newreport'] = 'コメントが報告された場合';
-$string['min2Chars'] = '2文字未満の質問およびコメントは許可されません。';
 $string['minute'] = '分';
 $string['minutes'] = '分';
 $string['missingAnnotation'] = '該当するアノテーションが見つかりませんでした!';
 $string['modifiedby'] = 'by';
 $string['modulename'] = 'PDFアノテーション';
 $string['modulename_help'] = 'このツールではPDFドキュメント上に共同マークアップを追加できます。ユーザはPDFの特定部分にアノテーションを追加して他のユーザと議論できます。';
+$string['modulename_link'] = 'mod/pdfannotator/view';
 $string['modulenameplural'] = 'PDFアノテーション';
 $string['month'] = '月';
 $string['months'] = '月';

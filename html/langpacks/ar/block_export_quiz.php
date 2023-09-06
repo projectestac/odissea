@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_export_quiz', language 'ar', version '3.11'.
+ * Strings for component 'block_export_quiz', language 'ar', version '4.1'.
  *
  * @package     block_export_quiz
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['export_quiz:addinstance'] = 'إضافة كتلة تصدير اختبار جديدة';
-$string['export_quiz:myaddinstance'] = 'إضافة كتلة تصدير اختبار جديدة إلى لوحة التحكم';
+$string['export_quiz:myaddinstance'] = 'إضافة كتلة تصدير اختبار جديدة إلى دفة القيادة';
 $string['footer'] = 'أنقر اسم الاختبار لتنزيله.';
 $string['noaccess'] = 'لا وصول إلى الاختبار المعطى';
 $string['pluginname'] = 'تصدير الاختبار';

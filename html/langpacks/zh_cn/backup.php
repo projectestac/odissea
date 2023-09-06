@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'zh_cn', version '3.11'.
+ * Strings for component 'backup', language 'zh_cn', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -206,7 +206,7 @@ $string['errorfilenametoolong'] = '文件名长度必须小于255个字符。';
 $string['errorinvalidformat'] = '无法识别的备份格式';
 $string['errorinvalidformatinfo'] = '所选文件不是有效的Moodle备份文件，不能恢复。';
 $string['errorminbackup20version'] = '此备份文件由开发版的Moodle备份创建 ({$a->backup})。最低需求是{$a->min}。不能恢复。';
-$string['errorrestorefrontpagebackup'] = '你只能在一个首页上恢复首页备份';
+$string['errorrestorefrontpagebackup'] = '您只能在站点首页上还原站点首页备份';
 $string['executionsuccess'] = '成功建立备份文件。';
 $string['extractingbackupfileto'] = '将备份文件解压到：{$a}';
 $string['failed'] = '备份失败';
@@ -214,6 +214,7 @@ $string['filealiasesrestorefailures'] = '别名恢复失败';
 $string['filealiasesrestorefailures_help'] = '别名是链接到其他文件的符号链接，包括存储在外部容器中的文件。在某些情况下，Moodle 不能恢复它们——例如，在另一个站点恢复此备份文件或引用的文件不存在在时。
 
 在恢复日志文件里能找到更多的细节和失败的确切原因。';
+$string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = '备份文件里的一些别名不能恢复。下面列出了它们预期的位置，和它们在原始网站的源文件。';
 $string['filename'] = '文件名';
 $string['filereferencesincluded'] = '备份包中某些文件引用了外部内容，如果备份在其他站点上还原，它们将会无效。';
@@ -393,7 +394,7 @@ $string['setting_overwrite_course_fullname'] = '覆盖课程的全名';
 $string['setting_overwrite_course_shortname'] = '覆盖课程简称';
 $string['setting_overwrite_course_startdate'] = '覆盖课程开始日期';
 $string['showtypes'] = '显示类型选项';
-$string['sitecourseformatwarning'] = '这是一个首页备份，注意你只能在首页上恢复。';
+$string['sitecourseformatwarning'] = '这是一个站点首页备份。 它只能在站点首页上恢复。';
 $string['skiphidden'] = '忽略隐藏课程';
 $string['skiphiddenhelp'] = '选择是否要忽略隐藏课程';
 $string['skipmodifdays'] = '忽略有多少天没有更新的课程';

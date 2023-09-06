@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_jmol', language 'es', version '3.11'.
+ * Strings for component 'filter_jmol', language 'es', version '4.1'.
  *
  * @package     filter_jmol
  * @category    string
@@ -130,6 +130,7 @@ $string['jmolfiletypes'] = 'Tipos de archivo de Jmol';
 $string['jmolfiletypes_desc'] = 'Descripción de los tipos de archivo de Jmol';
 $string['jsmol'] = 'JSmol';
 $string['jsmol_desc'] = 'JSmol';
+$string['jsmol_link'] = 'http://google.co.uk';
 $string['krypton'] = 'Kriptón';
 $string['labels'] = 'Etiquetas';
 $string['lanthanoids'] = 'lantánidos';

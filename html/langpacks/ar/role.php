@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ar', version '3.11'.
+ * Strings for component 'role', language 'ar', version '4.1'.
  *
  * @package     role
  * @category    string
@@ -44,9 +44,9 @@ $string['analytics:listowninsights'] = 'استعراض رؤاه الخاصة';
 $string['analytics:managemodels'] = 'إدارة النماذج';
 $string['archetype'] = 'النموذج الأصلي للدور';
 $string['archetype_help'] = 'النموذج الأصلي للدور يحدد الصلاحيات عند إعادة تعيين الدور إلى وضعه الافتراضي. هو أيضاً يحدد أي صلاحيات جديدة للدور عند ترقية الموقع.';
-$string['archetypecoursecreator'] = 'نموذج أصل: منشيء المقرر الدراسي';
+$string['archetypecoursecreator'] = 'نموذج أصل: منشيء المساق';
 $string['archetypeeditingteacher'] = 'نموذج أصل: معلم (يحرر)';
-$string['archetypefrontpage'] = 'نموذج أصل: مستخدم مصادق عليه في صفحة الواجهة';
+$string['archetypefrontpage'] = 'نموذج أصل: مستخدم مصرح له في واجهة الموقع';
 $string['archetypeguest'] = 'نموذج أصل: ضيف';
 $string['archetypemanager'] = 'نموذج أصل: مدير';
 $string['archetypestudent'] = 'نموذج أصل: طالب';
@@ -61,13 +61,14 @@ $string['assignmentoptions'] = 'خيارات التعيين';
 $string['assignrole'] = 'تعيين الدور';
 $string['assignrolenameincontext'] = 'تعيين دور \'{$a->role}\' في {$a->context}';
 $string['assignroles'] = 'إسناد أدوار';
-$string['assignroles_help'] = 'عند تعيين الدور إلى مستخدم ضمن سياق، أنت تمنحه الصلاحيات المضمنة في ذلك الدور عند السياق الحالي وكل السياقات التابعة له. على سبيل المثال، إذا تم تعيين دور الطالب لمستخدم ما في مقرر دراسي، سيكون له أيضاً دور الطالب في كل النشاطات والكتل داخل ذلك المقرر.';
+$string['assignroles_help'] = 'عند تعيين الدور إلى مستخدم ضمن سياق، أنت تمنحه الصلاحيات المضمنة في ذلك الدور عند السياق الحالي وكل السياقات التابعة له. على سبيل المثال، إذا تم تعيين دور الطالب لمستخدم ما في مساق، سيكون له أيضاً دور الطالب في كل النشاطات والكتل داخل ذلك المساق.';
+$string['assignroles_link'] = 'admin/roles/assign';
 $string['assignrolesin'] = 'تعيين الأدوار في {$a}';
 $string['assignrolesrelativetothisuser'] = 'تعيين الأدوار المتعلقة بهذا المستخدم';
 $string['backtoallroles'] = 'عودة إلى قائمة كل الأدوار';
 $string['backup:anonymise'] = 'إخفاء هويات المستخدمين عند حفظ بياناتهم احتياطياً';
 $string['backup:backupactivity'] = 'الحفظ الاحتياطي للأنشطة';
-$string['backup:backupcourse'] = 'النسخ الاحتياطي للمقررات الدراسية';
+$string['backup:backupcourse'] = 'النسخ الاحتياطي للمساقات الدراسية';
 $string['backup:backupsection'] = 'الحفظ الاحتياطي للمقاطع';
 $string['backup:backuptargetimport'] = 'الحفظ الاحتياطي للاستيراد';
 $string['backup:configure'] = 'تهيئة خيارات الحفظ الاحتياطي';
@@ -103,7 +104,7 @@ $string['category:create'] = 'إنشاء تصنيفات';
 $string['category:delete'] = 'حذف تصنيفات ';
 $string['category:manage'] = 'إدارة التصنيفات';
 $string['category:update'] = 'تحديث التصنيفات ';
-$string['category:viewcourselist'] = 'معاينة تصنيف المقررات الدراسية والمقررات التي فيها';
+$string['category:viewcourselist'] = 'معاينة تصنيف المقررات والمقررات الدراسية التي فيها';
 $string['category:viewhiddencategories'] = 'معاينة التصنيفات المخفية';
 $string['category:visibility'] = 'مشاهدة التصنيفات المخفية';
 $string['checkglobalpermissions'] = 'فحص صلاحيات النظام';
@@ -121,10 +122,10 @@ $string['comment:view'] = 'معاينة التعليقات';
 $string['competency:competencygrade'] = 'وضع تقييم الكفاءة';
 $string['competency:competencymanage'] = 'إدارة إطارات عمل الكفاءة';
 $string['competency:competencyview'] = 'معاينة إطارات عمل الكفاءة';
-$string['competency:coursecompetencyconfigure'] = 'تهيئة إعدادات كفاءة المقرر الدراسي';
+$string['competency:coursecompetencyconfigure'] = 'تهيئة إعدادات كفاءة المساق';
 $string['competency:coursecompetencygradable'] = 'تلقي علامات الكفاءة';
-$string['competency:coursecompetencymanage'] = 'إدارة كفاءات المقرر الدراسي';
-$string['competency:coursecompetencyview'] = 'معاينة كفاءات المقرر الدراسي';
+$string['competency:coursecompetencymanage'] = 'إدارة كفاءات المساق';
+$string['competency:coursecompetencyview'] = 'معاينة كفاءات المساق';
 $string['competency:evidencedelete'] = 'حذف الدليل';
 $string['competency:plancomment'] = 'التعليق على خطة التعلم';
 $string['competency:plancommentown'] = 'التعليق على خطة تعلمه';
@@ -139,8 +140,8 @@ $string['competency:planview'] = 'معاينة كل خطط التعلم';
 $string['competency:planviewdraft'] = 'معاينة مسودات خطط التعلم';
 $string['competency:planviewown'] = 'معاينة خطط تعلمه';
 $string['competency:planviewowndraft'] = 'معاينة مسوداته لخطط التعلم';
-$string['competency:templatemanage'] = 'إدارة قوالب خطط التعلم';
-$string['competency:templateview'] = 'معاينة قوالب خطط التعلم';
+$string['competency:templatemanage'] = 'إدارة مظاهر خطط التعلم';
+$string['competency:templateview'] = 'معاينة مظاهر خطط التعلم';
 $string['competency:usercompetencycomment'] = 'التعليق على كفاءة المستخدم';
 $string['competency:usercompetencycommentown'] = 'التعليق على كفاءته';
 $string['competency:usercompetencyrequestreview'] = 'إلتماس مراجعة كفاءة المستخدم';
@@ -171,20 +172,20 @@ $string['context'] = 'السياق';
 $string['contextrolenotallowed'] = 'دور {$a} غير مسموح به في هذا السياق.';
 $string['course:activityvisibility'] = 'إخفاء/إظهار الأنشطة';
 $string['course:bulkmessaging'] = 'إرسال رسالة لأشخاص عديدين';
-$string['course:changecategory'] = 'تغيير تصنيف المقرر الدراسي';
-$string['course:changefullname'] = 'تغيير الاسم الكامل للمقرر';
-$string['course:changeidnumber'] = 'تغيير مُعرَّف المقرر الدراسي';
+$string['course:changecategory'] = 'تغيير تصنيف المساق';
+$string['course:changefullname'] = 'تغيير الاسم الكامل للمساق';
+$string['course:changeidnumber'] = 'تغيير مُعرَّف المساق';
 $string['course:changelockedcustomfields'] = 'تغيير الحقول المخصصة المقفولة';
-$string['course:changeshortname'] = 'تغيير الاسم المختصر للمقرر';
-$string['course:changesummary'] = 'تغيير ملخص المقرر الدراسي';
+$string['course:changeshortname'] = 'تغيير الاسم المختصر للمساق';
+$string['course:changesummary'] = 'تغيير ملخص المساق';
 $string['course:configurecustomfields'] = 'تهيئة الحقول المخصصة';
-$string['course:configuredownloadcontent'] = 'تهيئة تنزيل محتوى المقرر الدراسي';
+$string['course:configuredownloadcontent'] = 'تهيئة تنزيل محتوى المساق';
 $string['course:create'] = 'إنشاء المقررات الدراسية';
 $string['course:creategroupconversations'] = 'إنشاء محادثات جماعية';
 $string['course:delete'] = 'حذف المقررات الدراسية';
-$string['course:downloadcoursecontent'] = 'تنزيل محتوى المقرر الدراسي';
+$string['course:downloadcoursecontent'] = 'تنزيل محتوى المساق';
 $string['course:enrolconfig'] = 'تهيئة عينات الانضمام في المقررات الدراسية';
-$string['course:enrolreview'] = 'مراجعة انضمامات المقرر الدراسي';
+$string['course:enrolreview'] = 'مراجعة انضمامات المساق';
 $string['course:ignoreavailabilityrestrictions'] = 'تجاهل تقييدات الإتاحة';
 $string['course:ignorefilesizelimits'] = 'استعمال ملفات ذات حجوم أكبر من أي قيود لحجم الملف';
 $string['course:isincompletionreports'] = 'أن يظهر في تقارير الإكمال';
@@ -193,23 +194,23 @@ $string['course:managefiles'] = 'إدارة الملفات';
 $string['course:managegrades'] = 'إدارة التقديرات';
 $string['course:managegroups'] = 'إدارة المجموعات';
 $string['course:managescales'] = 'إدارة المقاييس';
-$string['course:markcomplete'] = 'تأشير المستخدمين بأنهم مكتملون في إكمال المقرر الدراسي';
+$string['course:markcomplete'] = 'تأشير المستخدمين بأنهم مكتملون في إكمال المساق';
 $string['course:movesections'] = 'نقل المقاطع';
 $string['course:overridecompletion'] = 'تجاوز حالة إكمال النشاط';
 $string['course:recommendactivity'] = 'التوصية بالنشاطات في منتقي النشاطات';
 $string['course:renameroles'] = 'إعادة تسمية الأدوار';
-$string['course:request'] = 'طلب مقررات دراسية جديدة';
-$string['course:reset'] = 'إعادة تعيين المقرر الدراسي';
+$string['course:request'] = 'طلب مساقات جديدة';
+$string['course:reset'] = 'إعادة تعيين المساق';
 $string['course:reviewotherusers'] = 'تقييم المستخدمين الآخرين';
 $string['course:sectionvisibility'] = 'التحكم في إظهار المقطع';
 $string['course:setcurrentsection'] = 'تحديد المقطع الحالي';
-$string['course:setforcedlanguage'] = 'فرض لغة المقرر الدراسي';
-$string['course:tag'] = 'تغيير وسوم المقرر الدراسي';
+$string['course:setforcedlanguage'] = 'فرض لغة المساق أو النشاط';
+$string['course:tag'] = 'تغيير وسوم المساق';
 $string['course:togglecompletion'] = 'تأشير النشاطات على أنها مكتملة يدوياً';
-$string['course:update'] = 'تحديث إعدادات المقرر الدراسي';
+$string['course:update'] = 'تحديث إعدادات المساق';
 $string['course:useremail'] = 'تمكين/تعطيل عنوان البريد الالكتروني';
 $string['course:view'] = 'معاينة المقررات الدراسية بدون الانضمام إليها';
-$string['course:viewcoursegrades'] = 'معاينة تقديرات المقرر الدراسي';
+$string['course:viewcoursegrades'] = 'معاينة تقديرات المساق';
 $string['course:viewhiddenactivities'] = 'معاينة الأنشطة المخفية';
 $string['course:viewhiddencourses'] = 'معاينة المقررات الدراسية المخفية';
 $string['course:viewhiddensections'] = 'معاينة المقاطع المخفية';
@@ -229,7 +230,7 @@ $string['customrolename_help'] = 'أسماء الأدوار القياسية ت�
 $string['defaultrole'] = 'الدور الافتراضي';
 $string['defaultx'] = 'افتراضي: {$a}';
 $string['defineroles'] = 'تعريف الأدوار';
-$string['deletecourseoverrides'] = 'حذف كل التجاوزات في المقرر الدراسي';
+$string['deletecourseoverrides'] = 'حذف كل التجاوزات في المساق';
 $string['deletelocalroles'] = 'حذف كافة تعيينات الأدوار المحلية';
 $string['deleterolesure'] = '<p>هل أنت متأكد من رغبتك في حذف الدور "{$a->name} ({$a->shortname})"؟</p><p>حالياً هذا الدور معيَّن لـ {$a->count} مستخدم.</p>';
 $string['deletexrole'] = 'حذف {$a} الدور';
@@ -261,8 +262,8 @@ $string['export'] = 'تصدير';
 $string['extusers'] = 'المستخدمون الموجودون';
 $string['extusersmatching'] = 'المستخدمون الموجودون المطابقون \'{$a}\'';
 $string['filter:manage'] = 'إدارة إعدادات المنقحات المحلية';
-$string['frontpageuser'] = 'المستخدم المصادق عليه في صفحة الواجهة';
-$string['frontpageuserdescription'] = 'كل المستخدمين مسجلي الدخول في مقرر صفحة الواجهة.';
+$string['frontpageuser'] = 'المستخدم المصرح له في واجهة الموقع';
+$string['frontpageuserdescription'] = 'كل المستخدمين مسجلي الدخول في مساق واجهة الموقع.';
 $string['globalrole'] = 'دور النظام';
 $string['globalroleswarning'] = 'تحذير! أي أدوار تمنحها من هذه الصفحة ستطبق على المستخدمين المعنيين على امتداد النظام بأكمله، بما في ذلك صفحة الواجهة وكل المقررات الدراسية.';
 $string['gotoassignroles'] = 'إذهب لتعيين الأدوار لهذا {$a->contextlevel}';
@@ -276,9 +277,9 @@ $string['grade:manage'] = 'إدارة مفردات التقييم';
 $string['grade:managegradingforms'] = 'إدارة الطرق المتقدمة لمنح التقديرات';
 $string['grade:manageletters'] = 'إدارة تقديرات الأحرف';
 $string['grade:manageoutcomes'] = 'إدارة مخرجات التقديرات';
-$string['grade:managesharedforms'] = 'إدارة الطرق المتقدمة لمنح التقديرات من القوالب';
+$string['grade:managesharedforms'] = 'إدارة الطرق المتقدمة لمنح التقديرات من المظاهر';
 $string['grade:override'] = 'تخطي الدرجات';
-$string['grade:sharegradingforms'] = 'مشاركة نموذج منح التقديرات المتقدم بمثابة قالب';
+$string['grade:sharegradingforms'] = 'مشاركة نموذج منح التقديرات المتقدم بمثابة مظهر';
 $string['grade:unlock'] = 'إلغاء تأمين التقديرات أو مفرداتها';
 $string['grade:view'] = 'معاينة تقديراته';
 $string['grade:viewall'] = 'معاينة تقديرات المستخدمين الآخرين';
@@ -293,7 +294,7 @@ $string['ingroup'] = 'في المجموعة "{$a->group}"';
 $string['inherit'] = 'موروث';
 $string['invalidpresetfile'] = 'ملف تعريف الدور غير صالح';
 $string['legacy:admin'] = 'دور موروث: مدير';
-$string['legacy:coursecreator'] = 'دور موروث: منشئ مقررات دراسية';
+$string['legacy:coursecreator'] = 'دور موروث: منشئ مساقات';
 $string['legacy:editingteacher'] = 'دور موروث: معلم (محرر)';
 $string['legacy:guest'] = 'دور موروث: ضيف';
 $string['legacy:student'] = 'دور موروث: طالب';
@@ -311,8 +312,8 @@ $string['manageroles'] = 'إدارة الأدوار';
 $string['maybeassignedin'] = 'أنواع السياقات التي يمكن فيها إسناد هذا الدور';
 $string['morethan'] = 'أكثر من {$a}';
 $string['multipleroles'] = 'أدوار متعددة';
-$string['my:configsyspages'] = 'تهيئة قوالب النظام لصفحات لوحة التحكم';
-$string['my:manageblocks'] = 'إدارة كتل صفحة لوحة التحكم';
+$string['my:configsyspages'] = 'تهيئة مظاهر النظام لصفحات دفة القيادة';
+$string['my:manageblocks'] = 'إدارة كتل صفحة دفة القيادة';
 $string['neededroles'] = 'الأدوار ذات الصلاحية';
 $string['nocapabilitiesincontext'] = 'لا توجد إمكانيات متاحة في هذا السياق';
 $string['noneinthisx'] = 'لا أحد من نوع {$a}';
@@ -330,6 +331,7 @@ $string['overrideanotherrole'] = 'تجاوز دور آخر';
 $string['overridecontext'] = 'تجاوز السياق';
 $string['overridepermissions'] = 'تجاوز الصلاحيات';
 $string['overridepermissions_help'] = 'تجاوز الصلاحيات يسمح بتمكين أو منع إمكانيات مختارة في سياق معين.';
+$string['overridepermissions_link'] = 'admin/roles/override';
 $string['overridepermissionsforrole'] = 'تجاوز صلاحيات دور \'{$a->role}\' في {$a->context}';
 $string['overridepermissionsin'] = 'تجاوز الصلاحيات في {$a}';
 $string['overrideroles'] = 'تجاوز الأدوار';
@@ -373,6 +375,8 @@ $string['privacy:metadata:role_cohortroles'] = 'الأدوار إلى الدفع
 $string['prohibit'] = 'حظر';
 $string['prohibitedroles'] = 'محظور';
 $string['question:add'] = 'إضافة أسئلة جديدة';
+$string['question:commentall'] = 'التعليق على كل الأسئلة';
+$string['question:commentmine'] = 'التعليق على أسئلتك';
 $string['question:config'] = 'تهيئة أنواع الأسئلة';
 $string['question:editall'] = 'تحرير كل الأسئلة';
 $string['question:editmine'] = 'تحرير أسئلته';
@@ -390,6 +394,10 @@ $string['rating:rate'] = 'إضافة تقييمات إلى العناصر';
 $string['rating:view'] = 'معاينة التقييم الكلي الذي تلقيته';
 $string['rating:viewall'] = 'معاينة كل التقييمات الخام المقدمة من الأفراد';
 $string['rating:viewany'] = 'معاينة إجمالي التقييمات التي تلقاها أي أحد';
+$string['reportbuilder:edit'] = 'إنشاء/تحرير تقاريرك المخصصة';
+$string['reportbuilder:editall'] = 'تحرير كل التقارير المخصصة';
+$string['reportbuilder:scheduleviewas'] = 'تقارير الجدولة التي ستتم معاينتها بمثابة مستخدمين آخرين';
+$string['reportbuilder:view'] = 'معاينة التقارير المخصصة';
 $string['resetrole'] = 'إعادة التعيين';
 $string['resettingrole'] = 'إعادة الدور \'{$a}\' إلى وضعه الافتراضي';
 $string['restore:configure'] = 'تهيئة خيارات الاستعادة';
@@ -423,6 +431,7 @@ $string['roleresetrole'] = 'استعمال الدور أو النموذج الأ
 $string['rolerisks'] = 'مخاطر الدور';
 $string['roles'] = 'الأدوار';
 $string['roles_help'] = 'الدور هو مجموعة من الصلاحيات المُعرَّفة على مستوى النظام بأكمله والتي يمكنك تعيينها إلى مستخدمين معينين ضمن سياقات معينة.';
+$string['roles_link'] = 'roles';
 $string['roleselect'] = 'إختر الدور';
 $string['rolesforuser'] = 'أدوار المستخدم {$a}';
 $string['roleshortname'] = 'الاسم المختصر';
@@ -437,7 +446,7 @@ $string['selectrole'] = 'اختر دور';
 $string['showallroles'] = 'إظهار جميع الأدوار';
 $string['showthisuserspermissions'] = 'إظهار صلاحيات هذا المستخدم';
 $string['site:accessallgroups'] = 'الوصول إلى كل المجموعات';
-$string['site:approvecourse'] = 'الموافقة على إنشاء المقرر الدراسي';
+$string['site:approvecourse'] = 'الموافقة على إنشاء المساق';
 $string['site:backup'] = 'حفظ المقررات الدراسية إحتياطياً';
 $string['site:config'] = 'تغيير إعدادات الموقع';
 $string['site:configview'] = 'معاينة شجرة إشراف الموقع (لكن ليس كل الصفحات فيه)';
@@ -445,8 +454,8 @@ $string['site:deleteanymessage'] = 'حذف أي رسائل في الموقع';
 $string['site:deleteownmessage'] = 'حذف الرسائل المرسلة إلى المستخدم أو المرسلة منه';
 $string['site:doanything'] = 'مسموح له بعمل أي شيء';
 $string['site:doclinks'] = 'إظهار الروابط لوثائق خارج الموقع';
-$string['site:forcelanguage'] = 'تجاوز لغة المقرر الدراسي';
-$string['site:import'] = 'استيراد مقررات دراسية أخرى إلى المقرر';
+$string['site:forcelanguage'] = 'تجاوز لغة المساق';
+$string['site:import'] = 'استيراد مساقات أخرى إلى المساق';
 $string['site:maintenanceaccess'] = 'الوصول إلى الموقع حتى في نمط الصيانة';
 $string['site:manageallmessaging'] = 'إضافة، إزالة، حظر وإلغاء حظر عناوين الاتصال لأي مستخدم';
 $string['site:manageblocks'] = 'إدارة الكتل في صفحة';

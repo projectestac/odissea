@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_aiken', language 'ar', version '3.11'.
+ * Strings for component 'qformat_aiken', language 'ar', version '4.1'.
  *
  * @package     qformat_aiken
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'صيغة Aiken';
 $string['pluginname_help'] = 'هذه صيغة بسيطة لاستيراد أسئلة متعدد الخيارات من ملف نصي.';
+$string['pluginname_link'] = 'qformat/aiken';
 $string['privacy:metadata'] = 'إن ملحق صيغة السؤال، Aiken لا يخزن أي بيانات شخصية.';
 $string['questionmissinganswers'] = 'ينبغي أن تكون للسؤال إجابتان على الأقل في السطر {$a}';
 $string['questionnotcomplete'] = 'لم يكتمل السؤال قبل البدء بالسؤال اللاحق عند السطر {$a}';

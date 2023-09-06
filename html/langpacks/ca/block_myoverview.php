@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ca', version '3.11'.
+ * Strings for component 'block_myoverview', language 'ca', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Destaca el curs';
-$string['all'] = 'Tots (excepte els amagats)';
-$string['allincludinghidden'] = 'Tots';
+$string['all'] = 'Tots';
+$string['allincludinghidden'] = 'Tots (inclosos els amagats)';
 $string['aria:addtofavourites'] = 'Destaca';
 $string['aria:allcourses'] = 'Mostra tots els cursos excepte els cursos suprimits de la vista';
 $string['aria:allcoursesincludinghidden'] = 'Mostra tots els cursos';
@@ -54,7 +54,6 @@ $string['aria:title'] = 'Ordena els cursos pel nom del curs';
 $string['availablegroupings'] = 'Filtres disponibles';
 $string['card'] = 'Targeta';
 $string['cards'] = 'Targetes';
-$string['complete'] = 'complet';
 $string['completepercent'] = '{$a}% complet';
 $string['courseprogress'] = 'Progrés del curs:';
 $string['displaycategories'] = 'Mostra les categories';
@@ -63,12 +62,11 @@ $string['favourites'] = 'Destacats';
 $string['future'] = 'Futurs';
 $string['hidden'] = 'Cursos suprimits de la vista';
 $string['hiddencourses'] = 'Amagats';
-$string['hidecourse'] = 'Amaga el curs';
+$string['hidecourse'] = 'Amaga';
 $string['inprogress'] = 'Actuals';
 $string['lastaccessed'] = 'Accedits recentment';
 $string['list'] = 'Llista';
 $string['myoverview:myaddinstance'] = 'Afegeix un bloc nou de resum del curs al Tauler';
-$string['nocourses'] = 'Cap curs';
 $string['past'] = 'Passats';
 $string['pluginname'] = 'Resum dels cursos';
 $string['privacy:metadata:overviewgroupingpreference'] = 'La preferència d\'agrupament del bloc de Resum dels cursos';
@@ -78,6 +76,6 @@ $string['privacy:metadata:overviewviewpreference'] = 'La preferència de vista d
 $string['privacy:request:preference:set'] = 'El valor del paràmetre \'{$a->name}\' era \'{$a->value}\'';
 $string['removefromfavourites'] = 'Deixa de destacar el curs';
 $string['shortname'] = 'Nom curt';
-$string['show'] = 'Mostra el curs';
+$string['show'] = 'Mostra';
 $string['summary'] = 'Resum';
 $string['title'] = 'Nom del curs';

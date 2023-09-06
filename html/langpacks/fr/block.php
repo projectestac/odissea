@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'fr', version '3.11'.
+ * Strings for component 'block', language 'fr', version '4.1'.
  *
  * @package     block
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = 'Déplacer vers le dock';
 $string['anypagematchingtheabove'] = 'Toutes les pages correspondant aux critères ci-dessus';
 $string['appearsinsubcontexts'] = 'Apparaît dans des sous-contextes';
 $string['assignrolesinblock'] = 'Attribuer des rôles dans le bloc {$a}';
@@ -43,12 +42,12 @@ $string['defaultregion_help'] = 'Les thèmes peuvent définir une ou plusieurs r
 $string['defaultweight'] = 'Poids par défaut';
 $string['defaultweight_help'] = 'Le poids par défaut vous permet de choisir où vous voulez que le bloc s\'affiche dans la région choisie, plutôt vers le haut ou vers le bas. L\'emplacement définitif est calculé à partir de tous les blocs de la région (par exemple, un seul d\'entre eux peut être tout en haut). Cette valeur peut être court-circuitée sur des pages spécifiques, si nécessaire.';
 $string['deleteblock'] = 'Supprimer le bloc {$a}';
-$string['deleteblockcheck'] = 'Voulez-vous vraiment supprimer le bloc {$a} ?';
+$string['deleteblockcheck'] = 'Cette opération supprimera le bloc {$a}.';
+$string['deleteblockinprogress'] = 'Suppression du bloc {$a} en cours…';
 $string['deleteblockwarning'] = '<p>Vous êtes sur le point de supprimer un bloc affiché ailleurs.</p><p>Emplacement du bloc original : {$a->location}<br />Affichage sur des pages de types : {$a->pagetype}</p><p>Voulez-vous vraiment continuer ?</p>';
 $string['deletecheck'] = 'Supprimer le bloc {$a} ?';
-$string['dockblock'] = 'Mettre le bloc {$a} dans le dock';
+$string['deletecheck_modal'] = 'Supprimer le bloc ?';
 $string['hideblock'] = 'Cacher le bloc {$a}';
-$string['hidedockpanel'] = 'Cacher le panneau du dock';
 $string['hidepanel'] = 'Cacher le dock';
 $string['moveblock'] = 'Déplacer le bloc {$a}';
 $string['moveblockafter'] = 'Déplacer le bloc après le bloc {$a}';
@@ -62,20 +61,17 @@ $string['pagetypewarning'] = 'Le type de page indiqué précédemment n\'est plu
 $string['privacy:metadata:userpref:dockedinstance'] = 'Enregistre quand l\'utilisateur a placé un bloc dans le dock';
 $string['privacy:metadata:userpref:hiddenblock'] = 'Enregistre quand l\'utilisateur a replié/caché un bloc';
 $string['privacy:request:blockisdocked'] = 'Indique si un bloc a été placé dans le dock';
-$string['privacy:request:blockishidden'] = 'Indique si un bloc a été replié/caché';
+$string['privacy:request:blockishidden'] = 'Indique si un bloc a été caché/replié';
 $string['region'] = 'Région';
 $string['restrictpagetypes'] = 'Afficher sur les types de page';
 $string['showblock'] = 'Montrer le bloc {$a}';
 $string['showoncontextandsubs'] = 'Afficher sur « {$a} » et toutes les sous-pages';
 $string['showoncontextonly'] = 'Afficher sur « {$a} » seulement';
 $string['showonentiresite'] = 'Afficher sur tout le site';
-$string['showonfrontpageandsubs'] = 'Afficher sur la page d\'accueil et sur les pages ajoutées à la page d\'accueil';
+$string['showonfrontpageandsubs'] = 'Afficher sur la page d\'accueil et sur toute page ajoutée à la page d\'accueil.';
 $string['showonfrontpageonly'] = 'Afficher sur la page d\'accueil seulement';
 $string['subpages'] = 'Sélectionner pages';
 $string['thisspecificpage'] = 'Cette page spécifique';
-$string['undockall'] = 'Tout retirer du dock';
-$string['undockblock'] = 'Ôter du dock le bloc {$a}';
-$string['undockitem'] = 'Retirer cet élément du dock';
 $string['visible'] = 'Visible';
 $string['weight'] = 'Poids';
 $string['wherethisblockappears'] = 'Où ce bloc apparaît';

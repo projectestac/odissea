@@ -40,5 +40,5 @@ Feature: Scorm availability
     And the activity date in "Future SCORM" should contain "##tomorrow noon##%A, %d %B %Y, %I:%M##"
     And the activity date in "Future SCORM" should contain "Closes:"
     And the activity date in "Future SCORM" should contain "##tomorrow noon##%A, %d %B %Y, %I:%M##"
-    And I should not see "Enter"
+    And "Enter" "button" should not exist
     And I should not see "Preview"

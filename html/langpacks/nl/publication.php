@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'nl', version '3.11'.
+ * Strings for component 'publication', language 'nl', version '4.1'.
  *
  * @package     publication
  * @category    string

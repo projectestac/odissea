@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlesson', language 'ar', version '3.11'.
+ * Strings for component 'customlesson', language 'ar', version '4.1'.
  *
  * @package     customlesson
  * @category    string
@@ -95,6 +95,7 @@ $string['maximumnumberofattemptsreached'] = 'تم بلوغ العدد الأقص
 $string['maxtime'] = 'حد الوقت (بالدقائق)';
 $string['mediafile'] = 'الانبثاق إلى ملف أو صفحة ويب';
 $string['minimumnumberofquestions'] = 'أدنى عدد من الأسئلة';
+$string['modulename_link'] = 'mod/customlesson/view';
 $string['movepagehere'] = 'نقل الصفحة إلى هنا';
 $string['multianswer'] = 'متعدد الإجابات';
 $string['multipleanswer'] = 'متعدد الإجابات';

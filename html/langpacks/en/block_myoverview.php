@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'en', version '3.11'.
+ * Strings for component 'block_myoverview', language 'en', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Star this course';
-$string['all'] = 'All (except removed from view)';
-$string['allincludinghidden'] = 'All';
+$string['all'] = 'All';
+$string['allincludinghidden'] = 'All (including removed from view)';
 $string['aria:addtofavourites'] = 'Star for';
 $string['aria:allcourses'] = 'Show all courses except courses removed from view';
 $string['aria:allcoursesincludinghidden'] = 'Show all courses';
@@ -57,7 +57,7 @@ $string['availablegroupings'] = 'Available filters';
 $string['availablegroupings_desc'] = 'Course filters which are available for selection by users. If none are selected, all courses will be displayed.';
 $string['card'] = 'Card';
 $string['cards'] = 'Cards';
-$string['complete'] = 'complete';
+$string['clearsearch'] = 'Clear search';
 $string['completepercent'] = '{$a}% complete';
 $string['courseprogress'] = 'Course progress:';
 $string['customfield'] = 'Custom field';
@@ -76,7 +76,6 @@ $string['layouts'] = 'Available layouts';
 $string['layouts_help'] = 'Course overview layouts which are available for selection by users. If none are selected, the card layout will be used.';
 $string['list'] = 'List';
 $string['myoverview:myaddinstance'] = 'Add a new course overview block to Dashboard';
-$string['nocourses'] = 'No courses';
 $string['nocustomvalue'] = 'No {$a}';
 $string['past'] = 'Past';
 $string['pluginname'] = 'Course overview';
@@ -86,7 +85,11 @@ $string['privacy:metadata:overviewsortpreference'] = 'The Course overview block 
 $string['privacy:metadata:overviewviewpreference'] = 'The Course overview block view preference.';
 $string['privacy:request:preference:set'] = 'The value of the setting \'{$a->name}\' was \'{$a->value}\'';
 $string['removefromfavourites'] = 'Unstar this course';
+$string['searchcourses'] = 'Search courses';
 $string['shortname'] = 'Short name';
 $string['show'] = 'Restore to view';
+$string['sortbylastaccessed'] = 'Sort by last accessed';
+$string['sortbyshortname'] = 'Sort by short name';
+$string['sortbytitle'] = 'Sort by course name';
 $string['summary'] = 'Summary';
 $string['title'] = 'Course name';

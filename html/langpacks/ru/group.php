@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ru', version '3.11'.
+ * Strings for component 'group', language 'ru', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -87,7 +87,8 @@ $string['eventgroupmemberadded'] = 'Член группы добавлен';
 $string['eventgroupmemberremoved'] = 'Член группы удален';
 $string['eventgroupupdated'] = 'Группа обновлена';
 $string['existingmembers'] = 'Существующие участники: {$a}';
-$string['filtergroups'] = 'Фильтр групп по:';
+$string['exportgroupsgroupings'] = 'Скачать группы и потоки как';
+$string['filtergroups'] = 'Фильтр групп по:&nbsp;';
 $string['group'] = 'Группа';
 $string['groupaddedsuccesfully'] = 'Группа {$a} успешно добавлена';
 $string['groupaddedtogroupingsuccesfully'] = 'Группа {$a->groupname} добавлена в поток {$a->groupingname}';
@@ -151,6 +152,7 @@ $string['importgroups_help'] = 'Группы могут быть импорти�
 - groupingname (название потока)**.
 
 ** - в скобках приведен перевод. В файле НЕ использовать!';
+$string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Включать только активных участников';
 $string['includeonlyactiveenrol_help'] = 'При включенном параметре заблокированные пользователи не будут включены в группы.';
 $string['javascriptrequired'] = 'Для этой страницы необходимо включить JavaScript';

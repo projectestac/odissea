@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_local', language 'el', version '3.11'.
+ * Strings for component 'repository_local', language 'el', version '4.1'.
  *
  * @package     repository_local
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Ρυθμίσεις αποθετηρίου τοπικών αρχείων στον εξυπηρετητή';
-$string['currentusefiles'] = 'Τρέχοντα χρησιμοποιούμενα αρχεία';
+$string['currentusefiles'] = 'Χρησιμοποιούμενα αρχεία αυτή τη στιγμή';
 $string['emptyfilelist'] = 'Δεν υπάρχουν αρχεία για εμφάνιση';
 $string['local:view'] = 'Εμφάνιση του αποθετηρίου του εξυπηρετητή';
 $string['notitle'] = 'Χωρίς τίτλο';

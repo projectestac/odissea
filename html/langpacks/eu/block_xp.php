@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_xp', language 'eu', version '3.11'.
+ * Strings for component 'block_xp', language 'eu', version '4.1'.
  *
  * @package     block_xp
  * @category    string
@@ -237,7 +237,7 @@ $string['promocontactus'] = 'Jarri harremanetan';
 $string['promoemailusat'] = 'E-maila bidali iezaguzu _levelup@branchup.tech_ helbidera.';
 $string['promoerrorsendingemail'] = 'Ups! Ezin izan dugu mezua bidali... e-maila zuzenean bidali iezaguzu {$a} helbidera. Eskerrik asko!';
 $string['promoifpreferemailusat'] = 'Aizu! Nahiago baduzu, e-maila zuzenean bidali iezaguzu _{$a}_ helbidera.';
-$string['promointro'] = 'Joko aditua bihurtu zaitez, eta eraman ezazu Maila Gora bere maila gorenera. Desblokeatu itzazu funtzio gehigarriak Maila Gora XP+ bertsioarekin.';
+$string['promointro'] = 'Joko aditua bihurtu zaitez, eta eraman ezazu Maila Gora XP bere maila gorenera. Desblokeatu itzazu funtzio gehigarriak Maila Gora XP+ bertsioarekin!';
 $string['promointroinstalled'] = '_Maila gora XP+_ gehigarria zure sisteman instalatuta dago eta bere funtzio guztiak gaituta daude.';
 $string['promorulesdidyouknow'] = 'Ba al dakizu <em>Maila gora XP+</em>-ekin ikasleek puntuak jaso ditzaketela <em>ikastaroak</em> eta <em>jarduerak osatzeagatik</em>, baita euren <em>kalifikazioen</em> arabera ere? <a href="{$a->url}">Ezagutu gehiago hemen</a>.';
 $string['promoyourmessagewassent'] = 'Eskerrik asko, zure mezua bidali. Laster erantzungo dizugu.';
@@ -246,6 +246,7 @@ $string['property:component'] = 'Ekitaldiaren osagaia';
 $string['property:crud'] = 'Ekitaldiaren CRUDa';
 $string['property:eventname'] = 'Ekitaldiaren izena';
 $string['property:target'] = 'Ekitaldiaren helburua';
+$string['questreleasenotice'] = '🎉 Pozik gaude **Maila Gora Bilkaeta (Level Up Quest)** izeneko gure **gamifikazio plugin berria** iragarrita 🥳. Bihurtu itzazu zure ikastaroak **abentura zirraragarri**, **berrengaiatze estrategiez** eta **ospakizunez** betez 🤯! Ezagutu ezazu [Level Up Quest-en webgunea]({$a->questurl}) eta gure [iragartze-mezua hemen]({$a->questblogurl}). 👈';
 $string['rank'] = 'Rankinga';
 $string['ranking'] = 'Rankinga';
 $string['ranking_help'] = 'Rankinga oraingo erabiltzaileak lider-panelean duen kokapen absolutua da. Ranking erlatiboa erabiltzailearen esperientzia-puntuen eta bere aldamenekoen arteko diferentzia da.';

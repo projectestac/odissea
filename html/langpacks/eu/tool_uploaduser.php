@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'eu', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'eu', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -40,6 +40,7 @@ $string['clivalidationerror'] = 'Balioztatze-errorea:';
 $string['csvdelimiter'] = 'CSV banatzailea';
 $string['defaultvalues'] = 'Lehenetsitako balioak';
 $string['deleteerrors'] = 'Ezabatu erroreak';
+$string['duplicateemail'] = '{$a} helbide elektronikoa duten hainbat erabiltzaile aurkitu dira';
 $string['encoding'] = 'Kodifikazioa';
 $string['errormnetadd'] = 'Ezin da urrutiko erabiltzailerik gehitu';
 $string['errorprefix'] = 'Errorea:';
@@ -53,6 +54,7 @@ $string['invalidtheme'] = '"{$a}" azala ez dago instalatuta eta baztertua izango
 $string['invalidupdatetype'] = 'Igoera-mota honetan ezin da aukera hau hautatu.';
 $string['invaliduserdata'] = '{$a} erabiltzailearen datu baliogabea antzeman da eta automatikoki garbitu da.';
 $string['linex'] = '{$a} lerroa';
+$string['matchemail'] = 'Parekatu helbide elektronikoa';
 $string['nochanges'] = 'Aldaketarik ez';
 $string['notheme'] = 'Ez dago azalik zehaztuta erabiltzaile honentzat.';
 $string['pluginname'] = 'Igo erabiltzailea';
@@ -82,6 +84,7 @@ $string['uploadusers_help'] = 'Erabiltzaileak testu-fitxategi bidez igo (eta auk
 * Erregistro bakoitza aukeratutako banatzaileaz banatutako datu-multzo bat da
 * Fitxategiko lehen errenkadak fitxategiaren formatua definitzen duten eremuen zerrenda du.
 * Derrigorrezko eremuen izenak: \'username\' (erabiltzaile-izena), \'firstname\' (izena), \'lastname\' (abizena) eta \'email\' (helbide elektronikoa)';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Aurreikusi igotako erabiltzaileak';
 $string['uploadusersresult'] = 'Igotako erabiltzaileen emaitzak';
 $string['useraccountupdated'] = 'Erabiltzailea eguneratu da';

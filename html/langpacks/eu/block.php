@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'eu', version '3.11'.
+ * Strings for component 'block', language 'eu', version '4.1'.
  *
  * @package     block
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = 'Mugitu hau ertzera';
 $string['anypagematchingtheabove'] = 'Gainetik dagoen edozein orri';
 $string['appearsinsubcontexts'] = 'Azpi-testuingurutan agertzen da';
 $string['assignrolesinblock'] = 'Esleitu rolak {$a} blokean';
@@ -37,18 +36,18 @@ $string['configureblock'] = 'Konfiguratu {$a} blokea';
 $string['contexts'] = 'Orriaren testuinguruak';
 $string['contexts_help'] = 'Testuinguruak orri-mota bereziagoak dira zeinetan bloke hau blokearen jatorrizko kokapenarekin ager daitekeen. Hemen aukera ezberdinak izango dituzu blokearen jatorrizko kokapenaren eta oraingo kokapenaren arabera. Adibidez, bloke bat ikastaroan gehitzean (azpi-orri guztietan agertaraziz) mugatu egin dezakezu blokea soilik ikastaroko foroetako orrietan ager dadin, foro batera joan, blokearen ezarpenak editatu eta soilik foroetako orrietan erakusteko mugatuta.';
 $string['createdat'] = 'Blokearen jatorrizko kokapena';
-$string['createdat_help'] = 'Blokea sortu zeneko jatorrizko kokapena. Blokearen ezarpenen arabera bestelako kokapenetan (testuinguruak) ager daiteke blokea jatorrizko kokapenaz gain. Adibidez, ikastaro baten hasiera orrian sortutako bloke bat ikastaro horretako jardueretan erakus daiteke. Hasiera-orrian sortutako bloke bat gune osoan zehar erakus daiteke.';
+$string['createdat_help'] = 'Blokea sortu zeneko jatorrizko kokapena. Blokearen ezarpenen arabera bestelako kokapenetan (testuinguruak) ager daiteke blokea jatorrizko kokapenaz gain. Adibidez, ikastaro baten hasiera orrian sortutako bloke bat ikastaro horretako jardueretan erakutsi daiteke. Hasiera-orrian sortutako bloke bat gune osoan zehar erakutsi daiteke.';
 $string['defaultregion'] = 'Lehenetsitako kokapena';
 $string['defaultregion_help'] = 'Azalek blokeak erakusteko bloke-eremu bat edo gehiago zehaztu ditzakete. Ezarpen honek bloke hau modu lehenetsian horietako zeinetan erakutsi behar den zehazten du. Orri zehatzetan eremua baliogabetu daiteke hala behar izanez gero.';
 $string['defaultweight'] = 'Lehenetsitako pisua';
 $string['defaultweight_help'] = 'Lehenetsitako pisuak hautatutako bloke-eremuaren barruan blokea gutxi gorabehera non agertu behar den zehazteko balio du, goialdean edo behealdean. Behin betiko kokapena bloke-eremuko bloke guztiak kontuan izanda kalkulatzen da (bloke bakarra egon daiteke goialdean, adibidez). Orri zehatzetan eremua baliogabetu daiteke hala behar izanez gero.';
 $string['deleteblock'] = 'Ezabatu {$a} blokea';
-$string['deleteblockcheck'] = 'Ziur zaude {$a} izena duen blokea ezabatu nahi duzula?';
+$string['deleteblockcheck'] = 'Ekintza honek {$a} blokea ezabatuko du.';
+$string['deleteblockinprogress'] = '{$a} blokearen ezabatzea martxan dago...';
 $string['deleteblockwarning'] = '<p>Beste nonbait agertzen den blokea ezabatzekotan zaude.</p><p>Blokearen jatorrizko kokapena: {$a->location}<br />Orri-mota honetan erakusten da: {$a->pagetype}</p><p>Ziur zaude aurrera egin nahi duzula?</p>';
 $string['deletecheck'] = 'Ezabatu {$a} blokea?';
-$string['dockblock'] = 'Mugitu ertzera {$a} blokea';
+$string['deletecheck_modal'] = 'Ezabatu blokea?';
 $string['hideblock'] = 'Ezkutatu {$a} blokea';
-$string['hidedockpanel'] = 'Ezkutatu alboko barra';
 $string['hidepanel'] = 'Ezkutatu panela';
 $string['moveblock'] = 'Mugitu {$a} blokea';
 $string['moveblockafter'] = 'Mugitu blokea {$a} blokearen atzera';
@@ -68,14 +67,11 @@ $string['restrictpagetypes'] = 'Erakutsi orri mota hauetan';
 $string['showblock'] = 'Erakutsi {$a} blokea';
 $string['showoncontextandsubs'] = 'Erakutsi \'{$a}\'-n eta edozein orri bertan';
 $string['showoncontextonly'] = '\'{$a}\'-n baino ez erakutsi';
-$string['showonentiresite'] = 'Erakutsi gune osoa';
-$string['showonfrontpageandsubs'] = 'Erakutsi hasiera-orrian eta orriak hasiera-orriari gehituta';
-$string['showonfrontpageonly'] = 'Hasiera-orrian baino ez erakutsi';
+$string['showonentiresite'] = 'Erakutsi gune osoan zehar';
+$string['showonfrontpageandsubs'] = 'Erakutsi hasiera-orrian eta hasiera-orrira gehitutako edozein orrietan.';
+$string['showonfrontpageonly'] = 'Erakutsi soilik hasiera-orrian';
 $string['subpages'] = 'Aukeratu orriak';
 $string['thisspecificpage'] = 'Orri zehatz hau';
-$string['undockall'] = 'Banatu guztia';
-$string['undockblock'] = 'Banatu {$a} blokea';
-$string['undockitem'] = 'Banatu elementu hau';
 $string['visible'] = 'Ikusgai';
 $string['weight'] = 'Pisua';
 $string['wherethisblockappears'] = 'Non agertuko den bloke hau';

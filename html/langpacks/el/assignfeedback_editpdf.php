@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'el', version '3.11'.
+ * Strings for component 'assignfeedback_editpdf', language 'el', version '4.1'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -63,7 +63,7 @@ $string['gotopage'] = 'Πήγαινε στην σελίδα';
 $string['green'] = 'Πράσινο';
 $string['gsimage'] = 'Εικόνα δοκιμής Ghostscript';
 $string['highlight'] = 'Φωτο-επισήμανση';
-$string['jsrequired'] = 'Για επισημειώσεις πάνω σε PDF απαιτείται JavaScript. Παρακαλούμε ενεργοποιήστε την JavaScript στον περιηγητή για να χρησιμοποιήσετε αυτή τη δυνατότητα.';
+$string['jsrequired'] = 'Για επισημειώσεις πάνω σε PDF απαιτείται JavaScript. Παρακαλούμε ενεργοποιήστε την JavaScript στον περιηγητή για να χρησιμοποιήσετε αυτό το χαρακτηριστικό.';
 $string['launcheditor'] = 'Εκκίνηση επεξεργαστή PDF...';
 $string['line'] = 'Γραμμή';
 $string['loadingeditor'] = 'Ο επεξεργαστής PDF φορτώνεται';

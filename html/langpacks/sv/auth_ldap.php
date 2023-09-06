@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'sv', version '3.11'.
+ * Strings for component 'auth_ldap', language 'sv', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -124,6 +124,10 @@ $string['diag_toooldversion'] = 'Det är mycket osannolikt att en modern LDAP-se
 $string['didntfindexpiretime'] = 'password_expire() kunde inte hitta någon utgående tid';
 $string['didntgetusersfromldap'] = 'Hittade inga användare från LDAP - fel? - avslutar';
 $string['gotcountrecordsfromldap'] = 'Hittade {$a} datauppgifter som kommer från LDAP';
+$string['invalidusererrors'] = '<strong>Varning!</strong> Hoppade över skapandet av {$a} användarkonton.';
+$string['invaliduserexception'] = '<strong>Fel!</strong> Kan inte skapa nytt användarkonto. Detaljer och orsak:
+{$a}
+Hoppar över den här användaren.';
 $string['ldapnotconfigured'] = 'LDAP-värdadressen är inte konfigurerad för närvarande';
 $string['morethanoneuser'] = 'Mer än en användarpost hittades i LDAP. Använder bara den första.';
 $string['needbcmath'] = 'Du behöver BCMath-tillägget för att använda kontroll av förfallna lösenord för Active Directory.';
@@ -157,7 +161,6 @@ $string['updatepasserrorexpire'] = 'Fel i user_update_password() vid läsning av
 $string['updatepasserrorexpiregrace'] = 'Fel i user_update_password() när förfallotid och/eller graceinloggningar ändrades. Felkod: {$a->errno}; Felsträng: {$a->errstring}';
 $string['updateremfail'] = 'Det gick inte att uppdatera LDAP-posten. Felkod: {$a->errno}; Felsträng: {$a->errstring}<br/>Nyckel ({$a->key}) – gammalt moodle-värde: \'{$a->ouvalue}\', nytt värde: \'{$a->nuvalue}\'.';
 $string['updateremfailamb'] = 'Det gick inte att uppdatera LDAP med det tvetydiga fältet {$a->key}. gammalt moodle-värde: \'{$a->ouvalue}\', nytt värde: \'{$a->nuvalue}\'.';
-$string['updateremfailfield'] = 'Det gick inte att uppdatera LDAP med det icke-existerande fältet (\'{$a->ldapkey}\'). Nyckel ({$a->key}) – gammalt Moodle-värde: \'{$a->ouvalue}\', nytt värde: \'{$a->nuvalue}\'.';
 $string['updateusernotfound'] = 'Det gick inte att hitta användaren vid den externa uppdateringen. Detaljer: sökbas: \'{$a->userdn}\'; Sökfilter: \'(objectClass=*)\'; sökattribut: \'{$a->attribs}\'';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() stödjer inte den valda användartypen: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() stödjer inte den valda användartypen: {$a}';

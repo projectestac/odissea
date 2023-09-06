@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datapreset_imagegallery', language 'ur', version '3.11'.
+ * Strings for component 'datapreset_imagegallery', language 'ur', version '4.1'.
  *
  * @package     datapreset_imagegallery
  * @category    string
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'تصویر خانہ';
+$string['pluginname'] = 'تصویر خانہ';
+$string['privacy:metadata'] = 'تصویری خانہ پلگ ان کوئی ذاتی ڈیٹا ذخیرہ نہیں کرتا ہے۔';

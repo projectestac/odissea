@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmatch', language 'ru', version '3.11'.
+ * Strings for component 'qtype_ddmatch', language 'ru', version '4.1'.
  *
  * @package     qtype_ddmatch
  * @category    string
@@ -29,6 +29,7 @@ $string['draganswerhere'] = 'Перетащите ответ сюда';
 $string['editingddmatch'] = 'Редактирование вопроса «На соответствие (с перетаскиванием)»';
 $string['pluginname'] = 'На соответствие (с перетаскиванием)';
 $string['pluginname_help'] = 'Вопрос типа «На соответствие (с перетаскиванием)» требует, чтобы студент корректно сопоставил список с названиями или утверждениями (вопросы) с другим списком названий или утверждений (ответы).';
+$string['pluginname_link'] = 'question/type/ddmatch';
 $string['pluginnameadding'] = 'Добавление вопроса «На соответствие (с перетаскиванием)»';
 $string['pluginnameediting'] = 'Редактирование вопроса «На соответствие (с перетаскиванием)»';
 $string['pluginnamesummary'] = 'Разновидность вопроса  «На соответствие». Позволяет пользователям перетаскивать ответы для сопоставления с подвопросами.';

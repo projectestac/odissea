@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_role', language 'es', version '3.11'.
+ * Strings for component 'availability_role', language 'es', version '4.1'.
  *
  * @package     availability_role
  * @category    string
@@ -29,6 +29,12 @@ $string['description'] = 'Permitir sólo a los usuarios con un determinado rol e
 $string['error_selectrole'] = 'Debes seleccionar un rol.';
 $string['missing'] = '[Falta rol]';
 $string['pluginname'] = 'Restricción por rol en el curso';
+$string['privacy:metadata'] = 'El plugin de Restricción por rol de curso no almacena ningún dato personal.';
 $string['requires_notrole'] = 'No eres un <em>{$a}</em>';
 $string['requires_role'] = 'Eres un <em>{$a}</em>';
+$string['setting_supportedrolesheading'] = 'Roles soportados';
+$string['setting_supportguestrole'] = 'Rol de invitado';
+$string['setting_supportguestrole_desc'] = 'Si se activa, la disponibilidad de actividades puede ser restringida a, o prohibida, para usuarios que estén viendo un curso como invitado.';
+$string['setting_supportnotloggedinrole'] = 'Rol no-ingresado al sitio';
+$string['setting_supportnotloggedinrole_desc'] = 'Si se activa, la disponibilidad de actividades puede ser restringida a, o prohibida, para usuarios que no hayan ingresado al sitio.';
 $string['title'] = 'Rol';

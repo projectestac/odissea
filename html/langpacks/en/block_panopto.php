@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_panopto', language 'en', version '3.11'.
+ * Strings for component 'block_panopto', language 'en', version '4.1'.
  *
  * @package     block_panopto
  * @category    string

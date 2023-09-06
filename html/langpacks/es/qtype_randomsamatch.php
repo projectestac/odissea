@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'es', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'es', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -30,6 +30,7 @@ $string['nosaincategory'] = 'No existen preguntas de respuesta corta en la categ
 $string['notenoughsaincategory'] = '{$a->nosaquestions} preguntas de respuesta corta en la categoría elegida \'{$a->catname}\'. Elija una categoría diferente, incluya algunas preguntas en ella o reduzca la cantidad de preguntas seleccionadas.';
 $string['pluginname'] = 'Emparejamiento aleatorio';
 $string['pluginname_help'] = 'Desde la perspectiva del alumno, es muy semejante a una pregunta de Emparejamiento. La diferencia es que la lista de nombre o enunciados (preguntas) para el Emparejamiento son seleccionados aleatoriamente de entre las preguntas de respuesta corta de la categoría elegida. Deben de haber un número suficiente de preguntas de respuesta corta sin usar en la categoría, de lo contrario se mostrará un mensaje de error.';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = 'Añadir una pregunta de tipo Emparejamiento aleatorio';
 $string['pluginnameediting'] = 'Editar una pregunta de tipo Emparejamiento aleatorio';
 $string['pluginnamesummary'] = 'Como una pregunta de Emparejamiento, pero creada aleatoriamente a partir de las preguntas de Respuesta corta de una categoría en concreto.';

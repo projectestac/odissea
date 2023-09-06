@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'ar', version '3.11'.
+ * Strings for component 'debug', language 'ar', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,17 @@ $string['notables'] = 'لا يوجد جداول !';
 $string['outputbuffer'] = 'التخزين المؤقت للمخرجات';
 $string['phpvaroff'] = 'متغيرات خادم PHP \'{$a->name}\' يجب أن يكون مغلقا  - {$a->link}';
 $string['phpvaron'] = 'متغيرات خادم PHP  \'{$a->name}\' يجب أن يكون مفتوحا - {$a->link}';
+$string['reactive_highlightoff'] = 'إطفاء التوضيح';
+$string['reactive_highlighton'] = 'تشغيل التوضيح';
+$string['reactive_instances'] = 'عيِّنات تفاعلية:';
+$string['reactive_noinstances'] = 'لا توجد عيِّنات تفاعلية في هذه الصفحة.';
+$string['reactive_pin'] = 'تثبيت';
+$string['reactive_readmodeoff'] = 'إطفاء وضع القراءة';
+$string['reactive_readmodeon'] = 'تشغيل وضع القراءة';
+$string['reactive_resetpanel'] = 'إعادة تعيين اللوحة';
+$string['reactive_saveingwarning'] = 'تحذير: تحرير الحالة قد يؤدي إلى نتائج غير متوقعة.';
+$string['reactive_statedata'] = 'بيانات الحالة';
+$string['reactive_unpin'] = 'إلغاء التثبيت';
 $string['sessionmissing'] = 'الغرض {$a} مفقود من الجلسة';
 $string['sqlrelyonobsoletetable'] = 'هذه الـ SQL تعتمد على جداول متقادمة : {$a} ! يجب إصلاح النص البرمجي من قبل مبرمج .';
 $string['stacktrace'] = 'تتبع المكدس';

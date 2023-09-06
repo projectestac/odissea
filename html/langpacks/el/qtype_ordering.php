@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'el', version '3.11'.
+ * Strings for component 'qtype_ordering', language 'el', version '4.1'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -46,6 +46,7 @@ $string['noresponsedetails'] = 'Λυπούμαστε, δεν υπάρχουν δ
 $string['noscore'] = 'Δεν υπάρχει βαθμός';
 $string['notenoughanswers'] = 'Οι ερωτήσεις ordering πρέπει να έχουν περισσότερες από {$a} απαντήσεις.';
 $string['pluginname_help'] = 'Αρκετά αντικείμενα εμφανίζονται με μπερδεμένη σειρά. Τα αντικείμενα μπορούν να συρθούν σε μία σειρά που βγάζει νόημα.';
+$string['pluginname_link'] = 'question/type/ordering';
 $string['pluginnameadding'] = 'Προσθήκη μίας ερώτησης Ordering';
 $string['pluginnameediting'] = 'Επεξεργασία μίας ερώτησης Ordering';
 $string['pluginnamesummary'] = 'Τοποθετήστε τα μπερδεμένα αντικείμενα σε μία σειρά που βγάζει νόημα.';

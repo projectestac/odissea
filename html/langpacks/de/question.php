@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'de', version '3.11'.
+ * Strings for component 'question', language 'de', version '4.1'.
  *
  * @package     question
  * @category    string
@@ -35,6 +35,7 @@ $string['alltries'] = 'Alle Versuche';
 $string['answer'] = 'Antwort';
 $string['answers'] = 'Antworten';
 $string['answersaved'] = 'Antwort gespeichert';
+$string['answerx'] = 'Antwort {$a}';
 $string['attemptfinished'] = 'Versuch beendet';
 $string['attemptfinishedsubmitting'] = 'Abgeschlossener Versuch wird übertragen: {$a}';
 $string['attemptoptions'] = 'Versuchsoptionen';
@@ -69,6 +70,7 @@ $string['cannotmovequestion'] = 'Mit dieser Funktionen können Sie keine Fragen 
 $string['cannotopenforwriting'] = 'Öffnen zum Schreiben von {$a} nicht möglich.';
 $string['cannotpreview'] = 'Keine Vorschau für diese Fragen möglich!';
 $string['cannotread'] = 'Importdatei kann nicht geöffnet werden oder ist leer';
+$string['cannotregradedifferentqtype'] = 'Eine Neubewertung mit einer Frage eines anderen Typs ist nicht möglich.';
 $string['cannotretrieveqcat'] = 'Fragekategorie konnte nicht aufgerufen werden';
 $string['cannotunhidequestion'] = 'Frage konnte nicht sichtbar gemacht werden';
 $string['cannotunzip'] = 'Datei konnte nicht entpackt werden.';
@@ -115,15 +117,19 @@ $string['cwrqpfs'] = 'Zufallsfragen, die Fragen aus der Unterkategorie auswähle
 $string['cwrqpfsinfo'] = '<p>Beim Update auf Moodle 1.9 werden Kategorien, in denen Fragen abgelegt wurden, unterschiedlichen Kontexten zugeordnet. Bei einigen Kategorien kann es vorkommen, dass der Status der Freigabe dabei angepasst werden muss. Dies ist in dem seltenen Fall erforderlich, dass Sie die Funktion zufällig ausgewählte Fragen verwenden und diese aus Kategorien stammen, die sowohl nur in Ihem Kurs, als auch in anderen Kursen verwandt werden. Dies ist in diesem System der Fall. Die spassiert wenn auf unterschiedlichen Hierarchieebenen unterschiedliche Freigabewerte existieren.</p>
 <p>In den folgenden Fragenkategorien wurde der Freigabestatus so angepasst, dass die übergeordnete Kategorie den gleichen Status erhält wie die Kategorie, in der Fragen zur Zufallsauswahl abgelegt sind. Die von dieser Änderung betroffenen Fragen können wie bisher in allen Tests weiter genutzt werden, bis sie aus den Tests entfernt werden.</p>';
 $string['cwrqpfsnoprob'] = 'Es sind keine Fragekategorien von der Funktion "Zufallsfragenauswahl aus untergeordnete Kategorien" betroffen.';
-$string['decimalplacesingrades'] = 'Dezimalstellen bei der Bewertung';
+$string['decimalplacesingrades'] = 'Nachkommastellen in Bewertungen';
 $string['defaultfor'] = 'Standard für {$a}';
 $string['defaultinfofor'] = 'Standardkategorie für Fragen, die im Kontext \'{$a}\' freigegeben sind.';
 $string['defaultmark'] = 'Erreichbare Punkte';
 $string['defaultmarkmustbepositive'] = 'Die Standardbewertung muss ein positiver Wert sein.';
 $string['deletecoursecategorywithquestions'] = 'In dieser Kurskategorie sind Fragen in der Testfragendatenbank hinterlegt. Wenn Sie nun fortfahren, werden diese gelöscht. Über die Testfragenverwaltung können diese  von Ihnen verschoben werden.';
-$string['deletequestioncheck'] = 'Sind Sie absolut sicher, die Sie \'{$a}\' löschen möchten?';
-$string['deletequestionscheck'] = '<p>Möchten Sie die folgenden Fragen wirklich löschen? </p>
-<p>{$a}</p>';
+$string['deletequestioncheck'] = 'Die folgende Frage und alle ihre Versionen werden gelöscht: <br /><br />{$a}';
+$string['deletequestionscheck'] = 'Die folgende Fragen und alle ihre Versionen werden gelöscht: <br /><br />{$a}';
+$string['deletequestiontitle'] = 'Frage löschen?';
+$string['deletequestiontitle_plural'] = 'Fragen löschen?';
+$string['deleteselectedquestioncheck'] = 'Ausgewählte Versionen der folgenden Frage werden gelöscht: <br /><br />{$a}';
+$string['deleteversiontitle'] = 'Ausgewählte Version löschen?';
+$string['deleteversiontitle_plural'] = 'Ausgewählte Versionen löschen?';
 $string['deletingbehaviour'] = 'Frageverhalten \'{$a}\' wird gelöscht';
 $string['deletingqtype'] = 'Fragetyp \'{$a}\' löschen';
 $string['didnotmatchanyanswer'] = '[Passt zu keiner Antwort]';
@@ -142,6 +148,7 @@ Jede Kategorie verfügt über einen Kontext, der festlegt wo die Fragen dieser K
 * Systemkontext - Frage kann in allen Kursen genutzt werden.
 
 Kategorien können auch als Container für Zufallsfragen genutzt werden.';
+$string['editcategories_link'] = 'question/category';
 $string['editcategory'] = 'Kategorie bearbeiten';
 $string['editingcategory'] = 'Kategorie bearbeiten';
 $string['editingquestion'] = 'Frage bearbeiten';
@@ -199,7 +206,10 @@ einem Programm exportiert und in ein anderes
 Programm importiert wird, muss also nicht identisch
 sein. Prüfen Sie daher alle Fragen, bevor Sie sie in einem
 Kurs verwenden.</p>';
+$string['exportquestions_link'] = 'question/export';
 $string['feedback'] = 'Feedback';
+$string['fieldinquestion'] = '{$a->fieldname} {$a->questionindentifier}';
+$string['fieldinquestionpre'] = '{$a->questionindentifier} {$a->fieldname}';
 $string['filecantmovefrom'] = 'Die Fragedateien können von Ihnen nicht verschoben werden. Sie verfügen nicht über ausreichende Rechte Sie von diesem Ort zu verschieben.';
 $string['filecantmoveto'] = 'Die Fragedateien können von Ihnen nicht verschoben oder kopiert werden. Sie verfügen nicht über ausreichende Rechte Sie an diesen Ort zu verschieben.';
 $string['fileformat'] = 'Dateiformat';
@@ -229,6 +239,7 @@ Häufig müssen Teilnehmer/innen erst den gesamten Test bearbeiten, bevor die Be
 Alternativ könnte nach der Beantwortung jeder einzelnen Frage eine sofortige  Rückmeldung gegeben werden. Bei falscher Beantwortung der Frage könnten sie eine neue Antwort abgeben. Bei der dann richtigen Antwort könnte ein Punktabzug vom Höchstwert erfolgen (Mehrfachbeantwortung (mit Abzügen)).
 
 Dies sind die am häufigsten genutzten Frageverhalten.';
+$string['howquestionsbehave_link'] = 'question/behaviour';
 $string['idnumber'] = 'ID-Nummer';
 $string['idnumber_help'] = 'Wenn verwendet, muss die ID-Nummer in jeder Fragenkategorie eindeutig sein. Dies ist ein alternativer Weg, um Fragen zu identifizieren. Manchmal ist dies sinnvoll, aber normalerweise kann das Feld leer bleiben.';
 $string['ignorebroken'] = 'Ungültige Links ignorieren';
@@ -247,6 +258,7 @@ $string['importingquestions'] = '{$a} Frage(n) werden aus der Datei importiert';
 $string['importparseerror'] = 'Fehler beim Einlesen der Importdatei gefunden. Es wurden daher keine Fragen importiert. Zum Einlesen fehlerfreier Fragen setzen Sie die Einstellung \'Bei Fehler stoppen\' auf \'Nein\'.';
 $string['importquestions'] = 'Fragen aus Datei importieren';
 $string['importquestions_help'] = 'Die Funktion ermöglicht es Ihnen Fragen mit verschiedene Fragetypen aus eienr Textdatei zu importieren. Achtung: die Datei muss im UTF-8 Format codiert sein. ';
+$string['importquestions_link'] = 'question/import';
 $string['importwrongfileencoding'] = 'Die gewählte Datei ist nicht UTF-8 kodiert. {$a}-Dateien müssen aber UTF-8 verwenden.';
 $string['importwrongfiletype'] = 'Die Inhalte der Datei ({$a->actualtype}) passen nicht zum Format der gewählten Importdatei ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Unzulässiges Zeichen {$a} innerhalb der Klammern entdeckt';
@@ -329,7 +341,7 @@ $string['movedquestionsandcategories'] = 'Fragen und Fragenkategorien wurden von
 $string['movelinksonly'] = 'Verändert die Angabe auf die Links verweisen. Verschiebt oder kopiert keine Dateien.';
 $string['moveq'] = 'Frage(n) verschieben';
 $string['moveqtoanothercontext'] = 'Frage in einen anderen Kontext verschieben';
-$string['moveto'] = 'Verschieben nach >>';
+$string['moveto'] = 'Verschieben nach';
 $string['movingcategory'] = 'Kategorie wird verschoben';
 $string['movingcategoryandfiles'] = 'Sind Sie sicher, dass Sie die Kategorie {$a->name} und alle Unterkategorien in den Kontext  "{$a->contextto}" verschieben wollen?<br/> Wir haben {$a->urlcount} Dateien entdeckt, auf die in den Fragen aus {$a->fromareaname} verlinkt wird. Wollen Sie diese nach {$a->toareaname} verschieben oder kopieren?';
 $string['movingcategorynofiles'] = 'Sind Sie sicher, dass Sie die Kategorie "{$a->name}" und alle Unterkategorien in den Kontext "{$a->contextto}" verschieben wollen?';
@@ -339,8 +351,10 @@ $string['movingquestionsnofiles'] = 'Sind Sie sicher, dass Sie die Frage(n) {$a-
 $string['needtochoosecat'] = 'Sie müssen eine Kategorie auswählen, um diese Frage zu verschieben. Oder Sie drücken "Abbrechen".';
 $string['nocate'] = 'Keine solche Kategorie: {$a}!';
 $string['nopermissionadd'] = 'Sie haben nicht das Recht, hier Fragen hinzuzufügen.';
+$string['nopermissionedit'] = 'Sie können von hier aus keine Fragen bearbeiten';
 $string['nopermissionmove'] = 'Sie haben nicht das Recht, hier Fragen zu verschieben. Speichern Sie die Frage in dieser Kategorie oder als neue Frage.';
 $string['noprobs'] = 'Es wurden keine Probleme in Ihrer Fragen-Datenbank gefunden.';
+$string['noquestionbanks'] = 'Keine Fragensammlungsplugins gefunden';
 $string['noquestions'] = 'Es wurden keine Fragen gefunden, die exportiert werden könnten. Stellen Sie sicher, dass Sie eine Kategorie ausgewählt haben, die auch Fragen enthält.';
 $string['noquestionsinfile'] = 'In der Importdatei sind keine Fragen enthalten.';
 $string['noresponse'] = '[Keine Antwort]';
@@ -358,7 +372,7 @@ $string['notyourpreview'] = 'Diese Vorschau ist nicht für Sie gedacht';
 $string['novirtualquestiontype'] = 'Kein virtueller Fragetyp für Fragetyp {$a} vorhanden';
 $string['numqas'] = 'Anzahl der Versuche';
 $string['numquestions'] = 'Fragenanzahl';
-$string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} verborgene)';
+$string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} verborgene +{$a->numdraft} Entwürfe)';
 $string['options'] = 'Optionen';
 $string['page-question-category'] = 'Jede Fragenkategorieseite';
 $string['page-question-edit'] = 'Jede Fragenbearbeitungsseite';
@@ -379,6 +393,7 @@ $string['parentcategory_help'] = '<p>Fragenkategorien können hierarchisch struk
   <li><a href="help.php?module=question&file=categorycontexts.html">Kontexte von Fragenkategorien</a></li>
   <li><a href="help.php?module=question&file=permissions.html">Berechtigungen für Fragen</a></li>
 </ul>';
+$string['parentcategory_link'] = 'question/category';
 $string['parenthesisinproperclose'] = 'Die Klammer vor ** ist nicht richtig geschlossen bei {$a}**';
 $string['parenthesisinproperstart'] = 'Die Klammer vor ** ist nicht richtig geöffnet bei {$a}**';
 $string['parsingquestions'] = 'Fragen aus Importdatei einlesen';
@@ -420,31 +435,39 @@ $string['privacy:metadata:database:question_attempts'] = 'Informationen über ei
 $string['privacy:metadata:database:question_attempts:flagged'] = 'Kennzeichen, dass der Nutzer beim Frageversuch Frage markiert hat';
 $string['privacy:metadata:database:question_attempts:responsesummary'] = 'Zusammenfassung der Antworten zu einer Frage';
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'Zeitpunkt zu dem Fragenversuch aktualisiert wurde';
+$string['privacy:metadata:database:question_bank_entries'] = 'Die Details zu einem bestimmten Eintrag in der Fragensammlung.';
+$string['privacy:metadata:database:question_bank_entries:ownerid'] = 'Die Person, welcher der Eintrag in der Fragensammlung gehört.';
 $string['privacy:metadata:link:qbehaviour'] = 'Das Fragen-Subsystem nutzt den Plugintyp \'Frageverhalten\'.';
 $string['privacy:metadata:link:qformat'] = 'Das Fragen-Subsystem nutzt den Plugintyp \'Fragenformat\', um Fragen aus unterschiedlichen Formaten zu importieren oder zu exportieren.';
 $string['privacy:metadata:link:qtype'] = 'Das Fragen-Subsystem nutzt den Plugintyp \'Fragetyp\', der verschiedene Fragentypen umfasst.';
 $string['published'] = 'Freigegeben';
+$string['qbanknotfound'] = 'Das Fragensammlungsplugin \'{$a}\' existiert nicht oder wurde nicht erkannt.';
 $string['qtypeveryshort'] = 'T';
+$string['question_version'] = 'Frageversion';
 $string['questionaffected'] = '<a href="{$a->qurl}">Die Frage "{$a->name}" ({$a->qtype})</a> gehört zu dieser Fragenkategorie. Sie wird aber auch im <a href="{$a->qurl}">Test "{$a->quizname}"</a> innerhalb des Kurses "{$a->coursename}" benutzt.';
 $string['questionbank'] = 'Fragensammlung';
+$string['questionbanknavigation'] = 'Fragendatenbank tertiäre Navigation';
 $string['questionbehaviouradminsetting'] = 'Einstellungen zum Frageverhalten';
 $string['questionbehavioursdisabled'] = 'Frageverhalten deaktivieren';
 $string['questionbehavioursdisabledexplained'] = 'Geben Sie eine kommagetrennte Liste von Verhaltensweisen ein, die nicht im Dropdown-Menü angezeigt werden sollen.';
 $string['questionbehavioursorder'] = 'Frageverhalten-Reihenfolge';
 $string['questionbehavioursorderexplained'] = 'Geben Sie eine kommagetrennte Liste von Verhaltensweisen in der Reihenfolge ein, in der sie im Dropdown-Menü angezeigt werden sollen.';
+$string['questioncategories'] = 'Fragenkategorien';
 $string['questioncategory'] = 'Fragenkategorie';
 $string['questioncatsfor'] = 'Fragenkategorien für \'{$a}\'';
 $string['questiondoesnotexist'] = 'Diese Frage gibt es nicht';
 $string['questionformtagheader'] = '{$a} Tags';
 $string['questionidmismatch'] = 'Frage-IDs können nicht zugeordnet werden';
+$string['questionloaderror'] = 'Die Frageoptionen konnten nicht geladen werden.';
 $string['questionname'] = 'Fragetitel';
+$string['questionnameandquestionversion'] = '{$a->name} v{$a->version}';
 $string['questionnamecopy'] = '{$a} (Kopie)';
 $string['questionno'] = 'Frage {$a}';
 $string['questionpreviewdefaults'] = 'Standardeinstellungen für die Fragenvorschau';
 $string['questionpreviewdefaults_desc'] = 'Diese Standardeinstellungen werden verwendet, wenn jemand eine Frage aus der Fragensammlung erstmalig anzeigt. Sobald eine Frage angezeigt wurde, werden die persönlichen Einstellungen gespeichert.';
 $string['questions'] = 'Fragen';
 $string['questionsaveerror'] = 'Fehler beim Speichern der Frage aufgetreten - ({$a})';
-$string['questionsinuse'] = '(* Fragen, die mit einem Sternchen versehen sind, werden irgendwo in Tests eingesetzt. Die Fragen werden nicht richtig gelöscht, jedoch in der Kategorienliste nicht mehr angezeigt.)';
+$string['questionsinuse'] = '* Fragen werden gekennzeichnet, die in Verwendung sind und nicht gelöscht werden können. Stattdessen werden sie in der Fragendatenbank ausgeblendet, außer die Option „Alte Fragen anzeigen“.ist gewählt.';
 $string['questionsmovedto'] = 'In Gebrauch befindliche Fragen wurden nach "{$a}" in der Kategorie verschoben.';
 $string['questionsrescuedfrom'] = 'Fragen aus Kontext {$a} gespeichert.';
 $string['questionsrescuedfrominfo'] = 'Diese Fragen (einige mögen verborgen sein) wurden gespeichert als der Kontext {$a} gelöscht wurde, da sie in Tests oder anderen Aktivitäten in Gebrauch sind.';
@@ -478,7 +501,10 @@ $string['showmaxmarkonly'] = 'Zeige nur maximale Punkte';
 $string['shown'] = 'Anzeigen';
 $string['shownumpartscorrect'] = 'Zeige die Anzahl der korrekten Antworten';
 $string['shownumpartscorrectwhenfinished'] = 'Anzahl der richtigen Antworten anzeigen, sobald die Frage beendet ist';
-$string['showquestiontext'] = 'Fragetext in der Frageliste anzeigen';
+$string['showquestiontext'] = 'Fragetext in der Frageliste anzeigen?';
+$string['showquestiontext_full'] = 'Ja, mit Bildern, Medien, usw.';
+$string['showquestiontext_off'] = 'Nein';
+$string['showquestiontext_plain'] = 'Ja, nur Text';
 $string['specificfeedback'] = 'Spezifisches Feedback';
 $string['specificfeedback_help'] = 'Spezifisches Feedback, das von der Antwort der Person abhängt.';
 $string['started'] = 'Begonnen';
@@ -520,6 +546,7 @@ $string['updatedisplayoptions'] = 'Anzeigeoptionen aktualisieren';
 $string['upgradeproblemcategoryloop'] = 'Bei der Aktualisierung der Fragenkategorien wurde ein Problem erkannt. Es wurde eine Schleife (Wiederholung) im Kategorien-Baum entdeckt. Es handelt sich hierbei um die Kategorie mit der ID {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Die Fragenkategorie {$a->name} ({$a->id}) konnte nicht aktualisiert werden.';
 $string['upgradeproblemunknowncategory'] = 'Bei der Aktualisierung der Fragenkategorien wurde ein Problem erkannt. Kategorie {$a->id} bezieht sich auf die Vorgänger-Kategorie, die nicht existiert. Die Vorgänger-Kategorie wurde geändert um das Problem zu beheben.';
+$string['version_selection'] = 'Version {$a->version}';
 $string['whethercorrect'] = 'Ob richtig';
 $string['whethercorrect_help'] = 'Dies beinhaltet sowohl die textliche Beschreibung für \'Richtig\', \'Teilweise richtig\' und \'Falsch\' wie auch alle farbigen Hervorhebungen für die Informationen.';
 $string['whichtries'] = 'Welche Versuche';

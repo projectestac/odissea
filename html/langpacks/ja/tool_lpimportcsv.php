@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'ja', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'ja', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -40,6 +40,7 @@ $string['idnumber'] = 'IDナンバー';
 $string['import'] = 'インポート';
 $string['importfile'] = 'CSVフレームワーク説明ファイル';
 $string['importfile_help'] = 'コンピテンシフレームワークをテキストファイルでエクスポートすることができます。ファイルのフォーマットはサイトに新しいコンピテンシを作成してインポートする時点で決定できます。';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = 'ファイルデータをインポートする';
 $string['invalidimportfile'] = 'ファイルフォーマットが無効です。';
 $string['isframework'] = 'フレームワークである';

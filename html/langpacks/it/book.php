@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'it', version '3.11'.
+ * Strings for component 'book', language 'it', version '4.1'.
  *
  * @package     book
  * @category    string
@@ -55,10 +55,12 @@ $string['indicator:cognitivedepth'] = 'Libro cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse Libro.';
 $string['indicator:cognitivedepthdef'] = 'Libro cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dall\'attività Compito (Livelli: Nessuna visualizzazione, Visualizzazione)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Libro sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse Libro.';
 $string['indicator:socialbreadthdef'] = 'Libro sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Libro (Livelli: Nessuna partecipazione, Partecipazione da solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = 'Libro';
 $string['modulename_help'] = 'Il modulo libro consente ad un docente di creare risorse multi pagina componendole, similmente ad un libro, in capitoli e paragrafi.
 I libri possono contenere file multimediali e testi e sono indicati per contenuti corposi da suddividere in diverse sezioni.
@@ -68,6 +70,7 @@ I libri possono contenere file multimediali e testi e sono indicati per contenut
 * visualizzare materiale da leggere per moduli di studi individuale
 * redigere un manuale per lo staff
 * presentare un portfolio di lavori degli studenti';
+$string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Libri';
 $string['movechapterdown'] = 'Sposta in basso il capitolo "{$a}"';
 $string['movechapterup'] = 'Sposta in alto il capitolo "{$a}"';

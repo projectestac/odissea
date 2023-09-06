@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'fr', version '3.11'.
+ * Strings for component 'qtype_match', language 'fr', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughquestions'] = 'Vous devez fournir au moins {$a} paires de ques
 $string['pleaseananswerallparts'] = 'Merci de répondre à tous les éléments de la question.';
 $string['pluginname'] = 'Appariement';
 $string['pluginname_help'] = 'La question d\'appariement demande au participant de faire correspondre une liste de termes (questions) avec une autre liste de termes (réponses).';
+$string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = 'Ajout d\'une question d\'appariement';
 $string['pluginnameediting'] = 'Modification d\'une question d\'appariement';
 $string['pluginnamesummary'] = 'La réponse à chaque sous-question doit être choisie parmi une liste de possibilités prédéfinies.';
@@ -46,5 +47,7 @@ $string['privacy:metadata'] = 'Le plugin de type de question Appariement permet 
 $string['privacy:preference:defaultmark'] = 'Le nombre de points par défaut pour une question.';
 $string['privacy:preference:penalty'] = 'La pénalité pour chaque tentative incorrecte lorsque les questions sont utilisées dans le comportement « Interactif avec essais multiples » ou « Adaptatif ».';
 $string['privacy:preference:shuffleanswers'] = 'Si les réponses doivent être mélangées automatiquement.';
+$string['regradeissuenumchoiceschanged'] = 'Le nombre de choix a été modifié.';
+$string['regradeissuenumstemschanged'] = 'Le nombre de sous-questions a été modifié.';
 $string['shuffle'] = 'Mélanger';
 $string['shuffle_help'] = 'Si ce réglage est activé, l\'ordre des questions est fixé aléatoirement avant chaque tentative, pour autant que l\'option « Mélanger les réponses possibles » soit activée dans les paramètres du test. Dans une question d\'appariement, seules les questions sont affectées par ce réglage. Les choix de réponses sont toujours mélangés aléatoirement.';

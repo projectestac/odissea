@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ca', version '3.11'.
+ * Strings for component 'message', language 'ca', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Impedeix que m\'enviïn missatges els usuaris que
 $string['blockuser'] = 'Bloca l\'usuari';
 $string['blockuserconfirm'] = 'Esteu segur que voleu blocar {$a}?';
 $string['blockuserconfirmbutton'] = 'Bloc';
-$string['canceledit'] = 'Cancel·la l\'edició de missatges';
 $string['cancelselection'] = 'Cancel·la la selecció de missatge';
 $string['cantblockuser'] = 'No podeu bloquejar {$a} perquè té un rol amb permisos per enviar missatges a tots els usuaris.';
 $string['contactableprivacy'] = 'Accepta missatges de:';
@@ -67,7 +66,7 @@ $string['deleteselectedmessagesconfirm'] = 'Confirmeu que voleu suprimir els mis
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Confirmeu que voleu suprimir els missatges personals seleccionats?';
 $string['disableall'] = 'Inhabilita les notificacions';
 $string['disabled'] = 'La missatgeria està inhabilitada en aquest lloc';
-$string['disallowed'] = 'Inhabilitat';
+$string['disallowed'] = 'Bloquejat';
 $string['editmessages'] = 'Edita els missatges';
 $string['emailtagline'] = 'Això és una còpia d\'un missatge que us han enviat a "{$a->sitename}". Aneu a {$a->url} per respondre.';
 $string['enabled'] = 'Habilitat';
@@ -104,8 +103,6 @@ $string['loggedoffdescription'] = 'Quan no esteu connectat a Moodle';
 $string['managemessageoutputs'] = 'Preferències de notificació per defecte';
 $string['message'] = 'Missatge';
 $string['messagecontactrequest'] = '{$a->user} demana que l\'afegiu com a contacte. Aneu a la pàgina de <a href="{$a->url}">peticions de contacte</a> per respondre-li';
-$string['messagecontactrequestsnotification'] = '{$a} sol·licita ésser afegit com a contacte.';
-$string['messagecontactrequestsnotificationsubject'] = 'Sol·licitud de contacte de {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: Petició de contacte de {$a->user}';
 $string['messagecontentaudio'] = 'Àudio';
 $string['messagedrawerviewcontact'] = 'Detalls de l\'usuari per a {$a}';
@@ -131,7 +128,6 @@ $string['nofavourites'] = 'No teniu converses destacades';
 $string['noframesjs'] = 'Utilitza una versió més accessible';
 $string['nogroupconversations'] = 'No teniu converses de grup';
 $string['noindividualconversations'] = 'No teniu converses privades';
-$string['nomessages'] = 'No teniu missatges';
 $string['nomessagesfound'] = 'No s\'han trobat missatges';
 $string['noncontacts'] = 'No contactes';
 $string['nonotifications'] = 'No teniu cap notificació';
@@ -150,11 +146,7 @@ $string['offline'] = 'Fora de línia';
 $string['on'] = 'Sí';
 $string['online'] = 'En línia';
 $string['otherparticipants'] = 'Altres participants';
-$string['outputdisabled'] = 'Sortida inhabilitada';
-$string['outputdoesnotexist'] = 'La sortida de missatges no existeix';
-$string['outputenabled'] = 'S\'ha habilitat la sortida';
 $string['outputnotavailable'] = 'No disponible';
-$string['outputnotconfigured'] = 'No configurat';
 $string['page-message-x'] = 'Qualsevol pàgina de missatges';
 $string['participants'] = 'Participants';
 $string['pendingcontactrequests'] = 'Hi ha {$a} sol·licituds de contacte pendents';

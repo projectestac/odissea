@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'el', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'el', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -32,18 +32,18 @@ $string['correctanswerandfeedback'] = 'Σωστή απάντηση και ανα
 $string['decodeverifyquestiontext'] = 'Αποκωδικοποίηση και επαλήθευση του κειμένου της ερώτησης';
 $string['invalidmultianswerquestion'] = 'Μη έγκυρη ερώτηση ενσωματωμένων απαντήσεων (Cloze) ({$a}).';
 $string['layout'] = 'Διάταξη';
-$string['layouthorizontal'] = 'Οριζόντια σειρά από κουμπιά μοναδικής επιλογής';
-$string['layoutmultiple_horizontal'] = 'Οριζόντια σειρά από πλαίσια ελέγχου';
-$string['layoutmultiple_vertical'] = 'Κάθετη στήλη από πλαίσια ελέγχου';
+$string['layouthorizontal'] = 'Οριζόντια γραμμή από κουμπιά μοναδικής επιλογής';
+$string['layoutmultiple_horizontal'] = 'Οριζόντια γραμμή από πλαίσια επιλογής';
+$string['layoutmultiple_vertical'] = 'Κάθετη στήλη από πλαίσια επιλογής';
 $string['layoutselectinline'] = 'Πτυσσόμενο μενού στην ίδια γραμμή με το κείμενο';
 $string['layoutundefined'] = 'Μη ορισμένη διάταξη';
 $string['layoutvertical'] = 'Κάθετη στήλη από κουμπιά μοναδικής επιλογής';
-$string['nooptionsforsubquestion'] = 'Αδυναμία λήψης επιλογών για το τμήμα # {$a->sub} (question->id={$a->id}) της ερώτησης';
+$string['nooptionsforsubquestion'] = 'Αδυναμία λήψης επιλογών για το σκέλος # {$a->sub} (question->id={$a->id}) της ερώτησης';
 $string['noquestions'] = 'Η ερώτηση τύπου ενσωματωμένων απαντήσεων (Cloze πολλαπλής απάντησης) «<strong>{$a}</strong>» δεν περιέχει καμία ερώτηση';
-$string['pleaseananswerallparts'] = 'Απαντήστε σε όλα τα τμήματα της ερώτησης.';
+$string['pleaseananswerallparts'] = 'Απαντήστε σε όλα τα σκέλη της ερώτησης.';
 $string['pluginname'] = 'Ενσωματωμένες απαντήσεις (Cloze)';
 $string['pluginname_help'] = 'Οι ερωτήσεις Ενσωματωμένων απαντήσεων (Cloze) αποτελούνται από ένα απόσπασμα κειμένου με ερωτήσεις, όπως π.χ. πολλαπλής επιλογής ή σύντομης απάντησης, ενσωματωμένες μέσα σε αυτό.';
-$string['pluginname_link'] = 'ερώτηση/τύπος/πολλαπλήςαπάντησης';
+$string['pluginname_link'] = '';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης με Ενσωματωμένες απαντήσεις (Cloze)';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης με Ενσωματωμένες απαντήσεις (Cloze)';
 $string['pluginnamesummary'] = 'Οι ερωτήσεις αυτού του τύπου είναι πολύ ευέλικτες, αλλά μπορούν να δημιουργηθούν μόνο με την εισαγωγή κειμένου το οποίο περιέχει ειδικούς κωδικούς που δημιουργούν ενσωματωμένες ερωτήσεις πολλαπλής επιλογής, σύντομης απάντησης και αριθμητικές.';
@@ -56,7 +56,7 @@ $string['questioninquiz'] = '<ul>
 <li>αλλάξτε τη σειρά ερωτήσεων στο κείμενο,</li>
 <li>αλλάξτε τον τύπο τους (αριθμητικές, σύντομες, πολλαπλής επιλογής).</li>
 </ul>';
-$string['questionnotfound'] = 'Αδυναμία εύρεσης της ερώτησης του τμήματος ερώτησης #{$a}';
+$string['questionnotfound'] = 'Αδυναμία εύρεσης της ερώτησης της ενότητας ερώτησης #{$a}';
 $string['questionsadded'] = 'Η ερώτηση προστέθηκε';
 $string['questionsaveasedited'] = 'Η ερώτηση θα αποθηκευτεί όπως συντάχθηκε';
 $string['questionsless'] = '{$a} ερωτήσεις/-η λιγότερες/-η από ό,τι στην ερώτηση πολλαπλών απαντήσεων που είναι αποθηκευμένη στη βάση δεδομένων';
@@ -67,6 +67,6 @@ $string['questiontypechangedcomment'] = 'Τουλάχιστον ένας τύπ�
 $string['questionusedinquiz'] = 'Αυτή η ερώτηση χρησιμοποιείται σε {$a->nb_of_quiz} κουίζ. Συνολικές προσπάθειες: {$a->nb_of_attempts}';
 $string['storedqtype'] = 'Τύπος αποθηκευμένης ερώτησης {$a}';
 $string['subqresponse'] = 'μέρος {$a->i}: {$a->response}';
-$string['unknownquestiontypeofsubquestion'] = 'Άγνωστος τύπος ερώτησης: {$a->type} του τμήματος ερώτησης # {$a->sub}';
+$string['unknownquestiontypeofsubquestion'] = 'Άγνωστος τύπος ερώτησης: {$a->type} του σκέλους ερώτησης # {$a->sub}';
 $string['warningquestionmodified'] = '<b>ΠΡΟΕΙΔΟΠΟΙΗΣΗ</b>';
 $string['youshouldnot'] = '<b>ΔΕΝ ΠΡΕΠΕΙ</b>';

@@ -165,6 +165,16 @@ class block_accessreview extends block_base {
     }
 
     /**
+     * This block shouldn't be added to a page if the accessibility tools setting is disabled.
+     *
+     * @param moodle_page $page
+     * @return bool
+     */
+    public function can_block_be_added(moodle_page $page): bool {
+        return accessibility::is_accessibility_enabled();
+    }
+
+    /**
      * Fetches and groups the relevent error data for the table to display.
      * @param int $courseid The ID of the course.
      * @return array The data required by the table.

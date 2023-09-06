@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'ko', version '3.11'.
+ * Strings for component 'attendance', language 'ko', version '4.1'.
  *
  * @package     attendance
  * @category    string
@@ -53,7 +53,6 @@ $string['attendance:viewsummaryreports'] = '강좌 요약 보고서 보기';
 $string['attendance_already_submitted'] = '이미 설정된 출석을 스스로 등록 할 수 없습니다.';
 $string['attendance_no_status'] = '유효한 출석 상태가 없습니다. 출석을 기록하기에는 너무 늦었을 수 있습니다.';
 $string['attendancedata'] = '출석 자료';
-$string['attendanceforthecourse'] = '강좌 출석';
 $string['attendancegrade'] = '출석 성적';
 $string['attendancenotset'] = '출석을 설정해야 합니다.';
 $string['attendancenotstarted'] = '이 강좌에 대해 출석이 아직 시작되지 않았습니다.';
@@ -161,6 +160,8 @@ $string['includeall'] = '모든 수업 선택';
 $string['includenottaken'] = '체크되지 않은 수업 포함';
 $string['includeremarks'] = '비고 포함';
 $string['indetail'] = '상세히...';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidaction'] = '작업을 선택해야 합니다.';
 $string['invalidsessionendtime'] = '종료 시간은 시작 시간보다 커야 합니다.';
 $string['maxpossiblepercentage'] = '획득 가능한 최대 점수 비율';

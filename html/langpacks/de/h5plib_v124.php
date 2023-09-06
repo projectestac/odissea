@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'de', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'de', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['editor:a11ytitlehidelabel'] = 'Label für AT verbergen';
+$string['editor:a11ytitleshowlabel'] = 'Label für AT anzeigen';
 $string['editor:add'] = 'Hinzufügen';
 $string['editor:addauthor'] = 'Autor/in speichern';
 $string['editor:addentity'] = ':entity hinzufügen';
 $string['editor:addfile'] = 'Datei hinzufügen';
 $string['editor:addnewchange'] = 'Neue Änderung hinzufügen';
 $string['editor:addtitle'] = 'Titel hinzufügen';
-$string['editor:addvideodescription'] = 'H5P unterstützt alle externen Videoquellen, die wie Vimeo Pro als mp4, webm oder ogv formatiert sind. H5P unterstützt außerdem YouTube-Links.';
+$string['editor:addvideodescription'] = 'H5P unterstützt alle externen Videoquellen, die Vimeo Pro als mp4, webm oder ogv formatiert sind. H5P unterstützt außerdem YouTube- und Panopto-Links.';
 $string['editor:atoz'] = 'A bis Z';
 $string['editor:avtablistlabel'] = 'Verwendung invertieren';
 $string['editor:belowmin'] = 'Der Wert :property liegt unter dem Minimum von :min.';
@@ -91,7 +93,7 @@ $string['editor:enteraudiotitle'] = 'Link oder andere Audio-URL einfügen';
 $string['editor:enteraudiourl'] = 'Audio-URL eingeben';
 $string['editor:enterfullscreenbuttonlabel'] = 'Vollbild einschalten';
 $string['editor:entervideotitle'] = 'YouTube-Link oder andere Video-URL einfügen';
-$string['editor:entervideourl'] = 'Video-URL oder YouTube-Link eingeben';
+$string['editor:entervideourl'] = 'Video-URL eingeben';
 $string['editor:errorcalculatingmaxscore'] = 'Die maximale Punktzahl für diesen Inhalt konnte nicht berechnet werden. Die maximale Punktzahl wird mit 0 angenommen. Wenden Sie sich an Ihre/n Administrator/in, wenn dies nicht korrekt ist.';
 $string['editor:errorcommunicatinghubcontent'] = 'Fehler aufgetreten. Versuchen Sie es noch einmal.';
 $string['editor:errorcommunicatinghubtitle'] = 'Keine Kommunikation mit dem Hub möglich';
@@ -116,7 +118,7 @@ $string['editor:height'] = 'Höhe';
 $string['editor:hide'] = 'Verbergen';
 $string['editor:hideimportantinstructions'] = 'Wichtige Anleitungen verbergen';
 $string['editor:hubpanellabel'] = 'Inhaltstyp auswählen';
-$string['editor:illegaldecimalnumber'] = ':property kann nur Zahlen mit maximal :decimals Dezimalstellen enthalten.';
+$string['editor:illegaldecimalnumber'] = ':property kann nur Zahlen mit maximal :decimals Nachkommastellen enthalten.';
 $string['editor:imagelightboxprogress'] = ':num von :total';
 $string['editor:imagelightboxtitle'] = 'Bilder';
 $string['editor:importantinstructions'] = 'Wichtige Anleitung';

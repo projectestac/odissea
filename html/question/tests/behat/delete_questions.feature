@@ -6,14 +6,14 @@ Feature: A teacher can delete questions in the question bank
 
   Background:
     Given the following "users" exist:
-      | username | firstname | lastname | email |
-      | teacher1 | Teacher | 1 | teacher1@example.com |
+      | username | firstname | lastname | email                |
+      | teacher1 | Teacher   | 1        | teacher1@example.com |
     And the following "courses" exist:
       | fullname | shortname | format |
-      | Course 1 | C1 | weeks |
+      | Course 1 | C1        | weeks  |
     And the following "course enrolments" exist:
-      | user | course | role |
-      | teacher1 | C1 | editingteacher |
+      | user     | course | role           |
+      | teacher1 | C1     | editingteacher |
     And the following "question categories" exist:
       | contextlevel | reference | name           |
       | Course       | C1        | Test questions |
@@ -26,10 +26,9 @@ Feature: A teacher can delete questions in the question bank
   Scenario: A question not used anywhere can really be deleted
     When I choose "Delete" action for "Test question to be deleted" in the question bank
     And I press "Delete"
-    And I click on "Also show old questions" "checkbox"
+    And I set the field "Also show old questions" to "1"
     Then I should not see "Test question to be deleted"
 
-  @javascript
   Scenario: Deleting a question can be cancelled
     When I choose "Delete" action for "Test question to be deleted" in the question bank
     And I press "Cancel"
@@ -52,12 +51,14 @@ Feature: A teacher can delete questions in the question bank
       | Test used question to be deleted | 1    | 0               |
     When I am on the "Course 1" "core_question > course question bank" page
     And I choose "Delete" action for "Test used question to be deleted" in the question bank
+    And I should see "This will delete the following question and all its versions:"
+    And I should see "* Denotes questions which can't be deleted because they are in use. Instead, they will be hidden in the question bank unless you select 'Show old questions'."
     And I press "Delete"
     Then I should not see "Test used question to be deleted"
-    And I click on "Also show old questions" "checkbox"
+    And I set the field "Also show old questions" to "1"
     And I should see "Test used question to be deleted"
     And I am on the "Test quiz" "quiz activity" page
-    And I click on "Preview quiz now" "button"
+    And I click on "Preview quiz" "button"
     And I should see "Write about whatever you want"
 
   @javascript
@@ -68,5 +69,18 @@ Feature: A teacher can delete questions in the question bank
     And I reload the page
     When I choose "Delete" action for "Broken question" in the question bank
     And I press "Delete"
-    And I click on "Also show old questions" "checkbox"
+    And I set the field "Also show old questions" to "1"
     Then I should not see "Broken question"
+
+  @javascript
+  Scenario: Delete question has multiple versions in question bank page
+    Given I am on the "Course 1" "core_question > course question bank" page logged in as "teacher1"
+    When the following "core_question > updated questions" exist:
+      | questioncategory | question                    | questiontext                          |
+      | Test questions   | Test question to be deleted | Test question to be deleted version 2 |
+    And I choose "Delete" action for "Test question to be deleted" in the question bank
+    And I should see "This will delete the following question and all its versions:"
+    And I should not see "* Denotes questions which can't be deleted because they are in use. Instead, they will be hidden in the question bank unless you select 'Show old questions'."
+    And I press "Delete"
+    Then I should not see "Test question to be deleted"
+    And I should not see "Test question to be deleted version2"

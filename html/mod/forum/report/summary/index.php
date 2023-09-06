@@ -25,7 +25,7 @@
 require_once("../../../../config.php");
 
 if (isguestuser()) {
-    print_error('noguest');
+    throw new \moodle_exception('noguest');
 }
 
 $courseid = required_param('courseid', PARAM_INT);
@@ -107,7 +107,12 @@ $PAGE->set_url($pageurl);
 $PAGE->set_pagelayout('report');
 $PAGE->set_title($title);
 $PAGE->set_heading($course->fullname);
+$PAGE->activityheader->disable();
 $PAGE->navbar->add(get_string('nodetitle', 'forumreport_summary'));
+
+// Activate the secondary nav tab.
+navigation_node::override_active_url(new moodle_url('/mod/forum/report/summary/index.php',
+    ['courseid' => $courseid, 'forumid' => $forumid]));
 
 $allowbulkoperations = !$download && !empty($CFG->messaging) && has_capability('moodle/course:bulkmessaging', $context);
 $canseeprivatereplies = false;
@@ -167,7 +172,6 @@ if ($download) {
     \forumreport_summary\event\report_viewed::create($eventparams)->trigger();
 
     echo $OUTPUT->header();
-    echo $OUTPUT->heading(get_string('summarytitle', 'forumreport_summary', $title), 2, 'pb-5');
 
     if (!empty($filters['groups'])) {
         \core\notification::info(get_string('viewsdisclaimer', 'forumreport_summary'));
@@ -178,6 +182,7 @@ if ($download) {
     $forumselect = new single_select($reporturl, 'forumid', $forumselectoptions, $forumid, '');
     $forumselect->set_label(get_string('forumselectlabel', 'forumreport_summary'));
     echo $OUTPUT->render($forumselect);
+    echo $OUTPUT->heading(get_string('nodetitle', 'forumreport_summary'), 2, 'pb-5 mt-3');
 
     // Render the report filters form.
     $renderer = $PAGE->get_renderer('forumreport_summary');

@@ -30,7 +30,7 @@ $filtertype   = optional_param('filtertype', '', PARAM_ALPHA);
 $filterselect = optional_param('filterselect', 0, PARAM_INT);
 
 if (empty($CFG->enablenotes)) {
-    print_error('notesdisabled', 'notes');
+    throw new \moodle_exception('notesdisabled', 'notes');
 }
 
 $url = new moodle_url('/notes/index.php');
@@ -127,6 +127,9 @@ if ($course->id == SITEID) {
 echo $OUTPUT->header();
 
 if ($course->id != SITEID) {
+    $backurl = new moodle_url('/user/view.php', ['id' => $userid, 'course' => $courseid]);
+    echo $OUTPUT->single_button($backurl, get_string('back'), 'get', ['class' => 'mb-3']);
+
     $headerinfo = array('heading' => fullname($user), 'user' => $user);
     echo $OUTPUT->context_header($headerinfo, 2);
 }

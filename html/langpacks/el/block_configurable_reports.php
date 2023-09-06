@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'el', version '3.11'.
+ * Strings for component 'block_configurable_reports', language 'el', version '4.1'.
  *
  * @package     block_configurable_reports
  * @category    string
@@ -215,7 +215,7 @@ $string['noorderingyet'] = 'Καμία ταξινόμηση ακόμη';
 $string['nopermissionsyet'] = 'Καθόλου δικαιώματα ακόμη';
 $string['norecordsfound'] = 'Δεν βρέθηκαν εγγραφές';
 $string['noreportsavailable'] = 'Καμία διαθέσιμη αναφορά';
-$string['norowsreturned'] = 'Δεν επιστράφηκαν σειρές';
+$string['norowsreturned'] = 'Δεν επιστράφηκαν γραμμές';
 $string['nosemicolon'] = 'Χωρίς ερωτηματικό (;)';
 $string['notallowedwords'] = 'Μη επιτρεπτές λέξεις';
 $string['operator'] = 'Τελεστής';

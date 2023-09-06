@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ja', version '3.11'.
+ * Strings for component 'gradingform_guide', language 'ja', version '4.1'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -79,7 +79,7 @@ $string['name'] = '名称';
 $string['needregrademessage'] = 'この学生が評定された後、評定ガイド定義が変更されています。あなたが評定ガイドを確認して評点を更新するまで、学生はこの評定ガイドを閲覧することができません。';
 $string['outof'] = '{$a} 中';
 $string['pluginname'] = '評定ガイド';
-$string['previewmarkingguide'] = '評定ガイドをプレビュする';
+$string['previewmarkingguide'] = '評定ガイドをプレビューする';
 $string['privacy:metadata:criterionid'] = '高度な評定のためのクライテリアのIDです。';
 $string['privacy:metadata:fillingssummary'] = '評定ガイドのためのユーザの評定およびフィードバックに関する情報を保持します。';
 $string['privacy:metadata:instanceid'] = '活動に使用される評定のIDです。';

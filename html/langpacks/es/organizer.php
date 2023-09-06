@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'es', version '3.11'.
+ * Strings for component 'organizer', language 'es', version '4.1'.
  *
  * @package     organizer
  * @category    string
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['Error'] = 'Error';
+$string['Info'] = 'Información';
+$string['Warning'] = 'Advertencia';
 $string['absolutedeadline'] = 'Fin del registro';
 $string['absolutedeadline_help'] = 'Active esto para definir el tiempo después del cual ya no serán posibles más acciones del estudiante.';
 $string['actionlink_delete'] = 'eliminar';

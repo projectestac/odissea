@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'gl', version '3.11'.
+ * Strings for component 'enrol_self', language 'gl', version '4.1'.
  *
  * @package     enrol_self
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'A matriculación está desactivada ou inactiva';
 $string['canntenrolearly'] = 'Aínda non pode matricularse; a matriculación comeza o {$a}.';
-$string['canntenrollate'] = 'Xa non pode matricularse, a matriculación rematou o {$a}.';
+$string['canntenrollate'] = 'Xa non pode matricularse, a matriculación rematou o  {$a}.';
 $string['cohortnonmemberinfo'] = 'Soamente os membros do círculo «{$a}» poden automatricularse.';
 $string['cohortonly'] = 'Soamente os membros do círculo';
 $string['cohortonly_help'] = 'A automatriculación pódese restrinxir aos membros dun único círculo especifico. Teña en conta que o cambio deste axuste non ten efecto sobre as matriculacións existentes.';
@@ -62,7 +62,7 @@ Esta é unha notificación de que a súa matriculación no curso «{$a->course}�
 
 Se necesita axuda, contacte con {$a->enroller}.';
 $string['expirymessageenrolledsubject'] = 'Notificación da expiración da automatrícula';
-$string['expirymessageenrollerbody'] = 'A automatriculación no curso «{$a->course}» expirará no seguinte {$a->threshold} no caso dos seguintes usuarios:
+$string['expirymessageenrollerbody'] = 'A matriculación no curso «{$a->course}» expirará no seguinte {$a->threshold} no caso dos seguintes usuarios:
 
 {$a->users}
 
@@ -83,7 +83,7 @@ $string['maxenrolled_help'] = 'Especifica o número máximo de usuarios que se p
 $string['maxenrolledreached'] = 'Xa se acadou o número máximo de usuarios aos que se lles permite matricularse por si mesmos.';
 $string['messageprovider:expiry_notification'] = 'Notificacións de expiración da automatrículación';
 $string['newenrols'] = 'Permitir novas matriculacións';
-$string['newenrols_desc'] = 'Permitirlles aos usuarios matricularse por si mesmos en novos cursos de forma predeterminada.';
+$string['newenrols_desc'] = 'Permitirlles aos usuarios matricularse por si mesmos en novos cursos de xeito predeterminado.';
 $string['newenrols_help'] = 'Este axuste determina cando un usuario se pode matricular neste curso.';
 $string['nopassword'] = 'Non se require chave de matriculación.';
 $string['password'] = 'Chave de matriculación';

@@ -16,8 +16,8 @@
 
 namespace mod_quiz;
 
+use core_question\local\bank\question_edit_contexts;
 use mod_quiz\question\bank\custom_view;
-use question_edit_contexts;
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -60,7 +60,15 @@ class quiz_question_bank_view_test extends \advanced_testcase {
         // Generate the view.
         $view = new custom_view($contexts, new \moodle_url('/'), $course, $cm, $quiz);
         ob_start();
-        $view->display('editq', 0, 20, $cat->id . ',' . $cat->contextid, false, false, false);
+        $pagevars = [
+            'qpage' => 0,
+            'qperpage' => 20,
+            'cat' => $cat->id . ',' . $context->id,
+            'recurse' => false,
+            'showhidden' => false,
+            'qbshowtext' => false
+        ];
+        $view->display($pagevars, 'editq');
         $html = ob_get_clean();
 
         // Verify the output includes the expected question.

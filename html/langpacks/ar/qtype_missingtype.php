@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_missingtype', language 'ar', version '3.11'.
+ * Strings for component 'qtype_missingtype', language 'ar', version '4.1'.
  *
  * @package     qtype_missingtype
  * @category    string
@@ -31,7 +31,7 @@ $string['deletedquestion'] = 'سؤال مفقود';
 $string['deletedquestiontext'] = 'هذا السؤال مفقود. لا يمكن عرض أيّ شيء.';
 $string['missing'] = 'السؤال الذي من نوع لم يتم تنصيبه في هذا النظام';
 $string['missingqtypewarning'] = 'هذا النوع من الأسئلة ليس منصباً حالياً في هذا النظام. لن تكون قادراً على فعل أيّ شيء مع هذا السؤال.';
-$string['pluginname'] = 'نوع مفقود';
+$string['pluginname'] = 'عنصر نائب لنوع سؤال مفقود';
 $string['pluginnameadding'] = 'إضافة سؤال من نوع غير منصب على هذا النظام';
 $string['pluginnameediting'] = 'تحرير سؤال من نوع لم يتم تنصيبه في هذا النظام';
 $string['privacy:metadata'] = 'إن ملحق نوع السؤال، إختيار الكلمة المفقودة لا يخزن أي بيانات شخصية.';

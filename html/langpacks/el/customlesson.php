@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlesson', language 'el', version '3.11'.
+ * Strings for component 'customlesson', language 'el', version '4.1'.
  *
  * @package     customlesson
  * @category    string
@@ -132,8 +132,8 @@ $string['gradeis'] = 'Ο βαθμός είναι {$a}';
 $string['gradeoptions'] = 'Επιλογές βαθμού';
 $string['havenotgradedyet'] = 'Δεν βαθμολογήθηκε ακόμη.';
 $string['here'] = 'εδώ';
-$string['highscore'] = 'Υψηλότερη βαθμολογία';
-$string['highscores'] = 'Υψηλότερες βαθμολογίες';
+$string['highscore'] = 'Κορυφαία βαθμολογία';
+$string['highscores'] = 'Κορυφαίες βαθμολογίες';
 $string['hightime'] = 'Κορυφαίος χρόνος';
 $string['importcount'] = 'Εισαγωγή {$a} ερωτήσεων';
 $string['importindividualdata'] = 'Εισαγωγή μεμονωμένων δεδομένων';
@@ -165,7 +165,7 @@ $string['matching'] = 'Ταίριασμα';
 $string['matchingpair'] = 'Ζεύγος που ταιριάζει {$a}';
 $string['maxgrade'] = 'Μέγιστος βαθμός';
 $string['maxgrade_help'] = 'Αυτή η ρύθμιση καθορίζει τον μέγιστο βαθμό για τη διδασκαλία. Αν οριστεί το 0, η διδασκαλία δεν εμφανίζεται στις σελίδες βαθμών.';
-$string['maxhighscores'] = 'Αριθμός των ανώτατων σκορ που θα εμφανίζονται';
+$string['maxhighscores'] = 'Αριθμός των κορυφαίων σκορ που θα εμφανίζονται';
 $string['maximumnumberofanswersbranches'] = 'Μέγιστος αριθμός απαντήσεων';
 $string['maximumnumberofattempts'] = 'Μέγιστος αριθμός προσπαθειών';
 $string['maxtime'] = 'Όριο χρόνου (λεπτά)';
@@ -174,11 +174,11 @@ $string['mediaclose'] = 'Εμφάνιση πλήκτρου κλεισίματο�
 $string['mediafilepopup'] = 'Κάντε κλικ εδώ για εμφάνιση';
 $string['mediaheight'] = 'Ύψος αναδυόμενου παραθύρου:';
 $string['mediawidth'] = 'Πλάτος αναδυόμενου παραθύρου:';
-$string['missingname'] = 'Παρακαλώ, δώστε ένα ψευδώνυμο';
+$string['missingname'] = 'Παρακαλούμε, δώστε ένα ψευδώνυμο';
 $string['modattempts'] = 'Επιτρέπεται η επανεξέταση από τον μαθητή';
 $string['modattemptsnoteacher'] = 'Η επανεξέταση μαθητή λειτουργεί μόνο για μαθητές.';
 $string['modulename'] = 'Προσαρμοσμένη διδασκαλία';
-$string['modulename_link'] = 'άρθρωμα/προσαρμοσμένηδιδακαλία/εμφάνιση';
+$string['modulename_link'] = '';
 $string['modulenameplural'] = 'Προσαρμοσμένες διδασκαλίες';
 $string['move'] = 'Μετακίνηση σελίδας';
 $string['movedpage'] = 'Η σελίδα μετακινήθηκε';

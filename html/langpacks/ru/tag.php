@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ru', version '3.11'.
+ * Strings for component 'tag', language 'ru', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -79,6 +79,7 @@ $string['id'] = 'идентификатор';
 $string['inalltagcoll'] = 'Везде';
 $string['inputstandardtags'] = 'Введите список новых тегов через запятую';
 $string['itemstaggedwith'] = 'Область «{$a->tagarea}» помечена тегом «{$a->tag}»';
+$string['itemtype'] = 'Тип элемента';
 $string['lesstags'] = 'меньше...';
 $string['managestandardtags'] = 'Управлять стандартными тегами';
 $string['managetagcolls'] = 'Управлять коллекциями тегов';
@@ -87,6 +88,7 @@ $string['moretags'] = 'больше...';
 $string['name'] = 'Название тега';
 $string['namesalreadybeeingused'] = 'Название тега уже используется';
 $string['nameuseddocombine'] = 'Название тега уже используется. Вы хотите скомбинировать эти теги?';
+$string['namewithlink'] = 'Название тега со ссылкой';
 $string['newcollnamefor'] = 'Новое название для коллекции тегов «{$a}»';
 $string['newnamefor'] = 'Новое название для тега «{$a}»';
 $string['nextpage'] = 'Больше';
@@ -144,6 +146,7 @@ $string['standardsuggest'] = 'Предлагать';
 $string['standardtag'] = 'Стандартные';
 $string['suredeletecoll'] = 'Вы уверены, что хотите удалить коллекцию тегов «{$a}»?';
 $string['tag'] = 'Тег';
+$string['tagarea'] = 'Область тега';
 $string['tagarea_blog_external'] = 'Записи во внешних  блогах';
 $string['tagarea_course'] = 'Курсы';
 $string['tagarea_course_modules'] = 'Элементы и ресурсы';
@@ -152,10 +155,12 @@ $string['tagarea_user'] = 'Интересы пользователей';
 $string['tagareaenabled'] = 'Включено';
 $string['tagareaname'] = 'Название';
 $string['tagareas'] = 'Области тегов';
+$string['tagauthor'] = 'Автор тега';
 $string['tagcollection'] = 'Коллекция тегов';
 $string['tagcollection_help'] = 'Коллекции тегов — это наборы тегов для разных областей. Например, коллекция стандартных тегов может использоваться для отметки тегами курсов, тогда как интересы пользователей и теги записей в блогах могут быть в отдельной коллекции. Когда пользователь щелкает по тегу, страница тега показывает только элементы с этим тегом в той же коллекции. Теги могут быть автоматически добавлены в коллекцию, исходя из области, в которой они ставятся, или могут быть добавлены вручную в качестве стандартных тегов.';
 $string['tagcollections'] = 'Коллекции тегов';
 $string['tagdescription'] = 'Описание тега';
+$string['taginstance'] = 'Экземпляр тега';
 $string['tags'] = 'Теги';
 $string['tagsaredisabled'] = 'Теги отключены';
 $string['thingstaggedwith'] = '«{$a->name}» использовалось {$a->count} раз(а)';

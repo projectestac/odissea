@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'ru', version '3.11'.
+ * Strings for component 'tool_messageinbound', language 'ru', version '4.1'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -63,6 +63,7 @@ $string['messageinboundenabled_desc'] = 'Обработка входящей п�
 $string['messageinboundgeneralconfiguration'] = 'Общие настройки';
 $string['messageinboundgeneralconfiguration_desc'] = 'Обработка входящих сообщений позволяет получать и обрабатывать электронную почту через Moodle. Это можно использовать для того, чтобы путем отправки сообщений электронной почты отвечать на сообщения на форумах или добавлять файлы в область личных файлов пользователя.';
 $string['messageinboundhost'] = 'Сервер входящей почты';
+$string['messageinboundhostoauth_help'] = 'Служба OAuth 2 для доступа к серверу IMAP с использованием аутентификации XOAUTH2. Если служба еще не существует, вам нужно будет её создать.';
 $string['messageinboundhostpass'] = 'Пароль';
 $string['messageinboundhostpass_desc'] = 'Пароль для работы с указанной учетной записью электронной почты.';
 $string['messageinboundhostssl'] = 'Использовать SSL';

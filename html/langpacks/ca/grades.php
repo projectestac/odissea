@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ca', version '3.11'.
+ * Strings for component 'grades', language 'ca', version '4.1'.
  *
  * @package     grades
  * @category    string
@@ -65,18 +65,23 @@ $string['aggregation_help'] = 'L\'agregació determina com es combinen les difer
 * Qualificació més alta.
 * Moda de les qualificacions. La qualificació que es dóna amb més freqüència.
 * Natural. La suma ponderada de totes les qualificacions.';
+$string['aggregation_link'] = 'grade/aggregation';
 $string['aggregationcoef'] = 'Coeficient d\'agregació';
 $string['aggregationcoefextra'] = 'Punts extra';
 $string['aggregationcoefextra_help'] = 'Si l\'agregació és la «Suma de les qualificacions» o la «Mitjana ponderada simple» i està marcada la casella de verificació de «Crèdit extra», el valor màxim de l\'element de qualificació no s\'afegeix a la qualificació màxima de la categoria, resultant així que existeix la possibilitat d\'assolir la puntuació màxima en la categoria (o puntuacions per sobre del màxim si l\'administrador del lloc ha habilitat aquesta opció) sense tenir necessàriament la puntuació màxima en tots els elements de qualificació.
 
 Si l\'agregació és la  «Mitjana de les qualificacions (amb crèdits extra)» i el «Crèdit extra» es fixa en un valor més gran que zero, el valor del «Crèdit extra» és el factor pel qual es multiplica la qualificació abans d\'afegir-la al total un cop calculada la mitjana.';
+$string['aggregationcoefextra_link'] = 'grade/aggregation';
 $string['aggregationcoefextrasum'] = 'Crèdit extra';
 $string['aggregationcoefextrasum_help'] = 'Si la casella de crèdit extra està seleccionada, la màxima qualificació de l\'element NO s\'afegeix a la màxima qualificació de la categoria, cosa que comporta la possibilitat d\'aconseguir la màxima qualificació de la categoria sense necessitat d\'haver de tenir la màxima qualificació en tots els elements.';
+$string['aggregationcoefextrasum_link'] = 'grade/aggregation';
 $string['aggregationcoefextrasumabbr'] = '+';
 $string['aggregationcoefextraweight'] = 'Pes del crèdit extra';
 $string['aggregationcoefextraweight_help'] = 'Si el pes del crèdit extra s\'estableix a un valor més gran de zero, la qualificació actua com un crèdit extra durant l\'agregació. El nombre és el factor pel qual es multiplica la qualificació abans de sumar-la al total per calcular el promig.';
+$string['aggregationcoefextraweight_link'] = 'grade/aggregation';
 $string['aggregationcoefweight'] = 'Pes de l\'element';
 $string['aggregationcoefweight_help'] = 'El pes de l\'element s\'utilitza en l\'agregació de la categoria per tal d\'influenciar la importància de l\'element en comparació als altres elements de la mateixa categoria.';
+$string['aggregationcoefweight_link'] = 'grade/aggregation';
 $string['aggregationhintdropped'] = '( Descartat )';
 $string['aggregationhintexcluded'] = '( Exclós )';
 $string['aggregationhintextra'] = '( Crèdit extra )';
@@ -105,6 +110,7 @@ $string['bulkcheckboxes'] = 'Caselles de selecció en massa';
 $string['calculatedgrade'] = 'Qualificació calculada';
 $string['calculation'] = 'Càlcul';
 $string['calculation_help'] = 'El càlcul de la qualificació és una fórmula que s\'utilitza per calcular qualificacions. La fórmula ha de començar amb un signe igual (=) i pot utilitzar els operadors matemàtics comuns, com ara el màxim (max), el mínim (min) i la suma (sum). Si voleu, podeu incloure en el càlcul altres elements de qualificació escrivint els seus números ID entre dobles claudàtors. Exemple: [[1234]]';
+$string['calculation_link'] = 'grade/calculation';
 $string['calculationadd'] = 'Afegeix càlcul';
 $string['calculationedit'] = 'Edita càlcul';
 $string['calculationsaved'] = 'S\'ha desat el càlcul';
@@ -405,6 +411,7 @@ $string['importcsv_help'] = 'Les qualificacions es poden importar mitjançant un
 <p>* Es requereix un nom de camp que contingui les dades d\'identitat de l\'usuari: el nom d\'usuari o bé el número d\'identificació o l\'adreça electrònica</p>
 
 Es pot obtenir un fitxer del format correcte exportant primer algunes qualificacions. Aquest fitxer després es pot editar i desar com a fitxer CSV.';
+$string['importcsv_link'] = 'grade/import/csv/index';
 $string['importcustom'] = 'Importa com a resultats personalitzats (només en aquest curs)';
 $string['importerror'] = 'S\'ha produït un error. L\'script no ha estat cridat amb els paràmetres correctes.';
 $string['importfailed'] = 'La importació ha fallat. No s\'ha importat res.';
@@ -415,6 +422,7 @@ $string['importfrom'] = 'Importa de';
 $string['importoutcomenofile'] = 'El fitxer que heu penjat està buit o corrupte. Comproveu que sigui un fitxer vàlid. El problema s\'ha detectat a la línia {$a}. Això passa quan una línia de dades no té el mateix nombre de columnes que la primera línia del fitxer (la línia de capçalera) o quan falten les capçaleres. Com a exemple de fitxer amb una capçalera vàlida, podeu examinar el fitxer exportat.';
 $string['importoutcomes'] = 'Importa resultats';
 $string['importoutcomes_help'] = 'Els resultats es poden importar mitjançant un fitxer CSV amb el format corresponent al fitxer CSV d\'exportació de resultats.';
+$string['importoutcomes_link'] = 'grade/outcome';
 $string['importoutcomesuccess'] = 'S\'ha importat el resultat «{$a->name}» amb l\'identificador #{$a->id}';
 $string['importplugins'] = 'Connectors d\'importació';
 $string['importpreview'] = 'Previsualització de la importació';
@@ -481,6 +489,7 @@ $string['minimum_show_help'] = 'La qualificació mínima s\'utilitza en els càl
 $string['minmaxtouse'] = 'Qualificacions mínima i màxima emprades per al càlcul';
 $string['minmaxtouse_desc'] = 'Aquest paràmetre determina si, quan es calcula la qualificació que es mostra al llibre de qualificacions, s\'han d\'emprar les qualificacions mínima i màxima inicials de quan es van donar les qualificacions o les qualificacions mínima i màxima especificades als paràmetres de l\'element de qualificació. Es recomana que aquest paràmetre es modifiqui en un període de poca activitat, perquè totes les qualificacions es tornaran a calcular, la qual cosa pot provocar una sobrecàrrega del servidor.';
 $string['minmaxtouse_help'] = 'Aquest paràmetre determina si, quan es calcula la qualificació que es mostra al llibre de qualificacions, s\'han d\'emprar les qualificacions mínima i màxima inicials de quan es van donar les qualificacions o les qualificacions mínima i màxima especificades als paràmetres de l\'element de qualificació.';
+$string['minmaxtouse_link'] = 'Grades_min_max';
 $string['minmaxupgradedgrades'] = 'Nota: Algunes qualificacions han canviat tractant de resoldre una inconsistència al quadern de qualificacions causat per un canvi a les qualificacions mínimes i màximes usades en el càlcul de la qualificació mostrada. Es recomana que reviseu i accepteu els canvis.';
 $string['minmaxupgradefixbutton'] = 'Resol les inconsistències';
 $string['minmaxupgradewarning'] = 'Nota: S\'ha detectat una inconsistència en algunes qualificacions a causa d\'un canvi en la qualificació mínima i màxima usades en el càlcul de la qualificació mostrada al quadern de qualificacions. Es recomana que resolgueu la inconsistència prement el botó de sota, encara que això modificarà algunes qualificacions.';

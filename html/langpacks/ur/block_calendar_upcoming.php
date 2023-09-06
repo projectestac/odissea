@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_upcoming', language 'ur', version '3.11'.
+ * Strings for component 'block_calendar_upcoming', language 'ur', version '4.1'.
  *
  * @package     block_calendar_upcoming
  * @category    string
@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'آنے والے واقعات';
+$string['calendar_upcoming:addinstance'] = 'ایک  نیا آنے والا تقریب بلاک شامل کریں';
+$string['calendar_upcoming:myaddinstance'] = 'ڈیش بورڈ میں ایک نیا آنے والا تقریب بلاک شامل کریں';
+$string['gotocalendar'] = 'کیلنڈر پر جائیں۔۔۔';
+$string['pluginname'] = 'آنے والی تقاریب';
+$string['privacy:metadata'] = 'آنے والے تقاریب بلاک صرف موجودہ کیلنڈر ڈیٹا دکھاتا ہے۔';

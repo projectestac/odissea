@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -30,6 +30,7 @@ $string['nosaincategory'] = '在选择的\'{$a->catname}\'类别中没有填空�
 $string['notenoughsaincategory'] = '在您选择的类别“{$a->catname}”中只有{$a->nosaquestions}道填空题。请选择另一个类别，在此类别中再建几道题或者减少您需要的试题数量。';
 $string['pluginname'] = '随机填空匹配题';
 $string['pluginname_help'] = '从学生的角度来看，这看起来就像一个匹配题。不同的是，用于匹配的名称或陈述（问题）列表是从当前类别的简答题中随机抽取的。该类别中应该有足够的未使用的简答题，否则将显示错误信息。';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = '增加一个随机填空匹配题';
 $string['pluginnameediting'] = '编辑一个随机填空匹配题';
 $string['pluginnamesummary'] = '像匹配题一样，但是从某个类别的填空题库中随机创建。';

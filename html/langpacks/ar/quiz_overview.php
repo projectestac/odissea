@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ar', version '3.11'.
+ * Strings for component 'quiz_overview', language 'ar', version '4.1'.
  *
  * @package     quiz_overview
  * @category    string
@@ -66,11 +66,13 @@ $string['regradealldrydo'] = 'إعادة تقييم المحاولات المؤ�
 $string['regradealldrydogroup'] = 'إعادة تقييم المحاولات المؤشرة بأنها بحاجة لإعادة التقييم ({$a->countregradeneeded}) في المجموعة \'{$a->groupname}\'';
 $string['regradealldrygroup'] = 'إعادة تقدير الدرجات بالكامل للمجموعة \'{$a->groupname}\\';
 $string['regradeallgroup'] = 'إعادة تقييم الدرجات للمجموعة بالكامل \'{$a->groupname}\\';
-$string['regradecomplete'] = 'تم اكتمال إعادة التقييم بنجاح';
-$string['regradedsuccessfullyxofy'] = 'تمت إعادة التقييم بنجاح ({$a->done}/{$a->count})';
+$string['regradecomplete'] = 'إعادة التقييم إكتملت';
+$string['regradedsuccessfullyxofy'] = 'إعادة التقييم المنتهية ({$a->done}/{$a->count})';
 $string['regradeheader'] = 'إعادة التقييم';
 $string['regradeselected'] = 'إعادة التقييم للمحاولات المحددة';
+$string['regradingattemptissue'] = 'الخانة {$a->slot}: {$a->reason}';
 $string['regradingattemptxofy'] = 'إعادة التقييم للمحاولات ({$a->done}/{$a->count})';
+$string['regradingattemptxofyproblem'] = 'تعذرت إعادة تقييم الأسئلة الآتية في المحاولة {$a->attemptnum} من قبل {$a->name} (المُعرَّف {$a->attemptid})';
 $string['regradingattemptxofywithdetails'] = 'تجري إعادة التقييم ({$a->done}/{$a->count}) - المحاولة {$a->attemptnum} من قِبل {$a->name} (المُعرَّف {$a->attemptid})';
 $string['show'] = 'أظهر / حمّل';
 $string['showattempts'] = 'فقط أظهر / حمّل المحاولات';

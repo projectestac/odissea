@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_profile_field_identifier', language 'el', version '3.11'.
+ * Strings for component 'block_profile_field_identifier', language 'el', version '4.1'.
  *
  * @package     block_profile_field_identifier
  * @category    string
@@ -37,7 +37,7 @@ $string['notification_page'] = 'Σελίδα ειδοποίησης';
 $string['picture_profile'] = 'Εικόνα προφίλ';
 $string['pluginname'] = 'Αναγνωριστικό πεδίου προφίλ';
 $string['profile_field_identifier'] = 'Αναγνωριστικό πεδίου προφίλ';
-$string['profile_field_identifier:addinstance'] = 'Προσθήκη στιγμιότυπου';
+$string['profile_field_identifier:addinstance'] = 'Προσθήκη στιγμιοτύπου';
 $string['profile_field_identifier:sendmessages'] = 'Αποστολή ειδοποίησης';
 $string['profile_field_identifier:view'] = 'Εμφάνιση αναγνωριστικού πεδίου προφίλ';
 $string['profile_field_identifier:viewmessages'] = 'Εμφάνιση ειδοποίησης';

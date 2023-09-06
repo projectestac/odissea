@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ar', version '3.11'.
+ * Strings for component 'wiki', language 'ar', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -106,6 +106,7 @@ $string['formatcreole'] = 'تنسيق Creole';
 $string['formatcreole_help'] = 'Creole هي لغة مُعلَّمات شائعة للويكي مع شريط تحرير لإدراج المُعلَّمات المناسبة.
 
 لإنشاء صفحة جديدة، أدخل اسمها محصوراً بين أقواس مربعة مزدوجة، على سبيل المثال: [[صفحة 2]].';
+$string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'تنسيق HTML';
 $string['formathtml_help'] = 'يمكن استعمال محرر HTML لتنسيق المحتوى.
 
@@ -114,6 +115,7 @@ $string['formatnwiki'] = 'تنسيق Nwiki';
 $string['formatnwiki_help'] = 'Nwiki هي لغة مشابهة للغة مُعلَّمات Mediawiki وتستعمل في وحدة Nwiki المساهم بها.
 
 لإنشاء صفحة جديدة، أدخل اسمها محصوراً بين أقواس مربعة مزدوجة، على سبيل المثال: [[صفحة 2]].';
+$string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'تاريخ';
 $string['history_help'] = 'يدرج الماضي روابط إلى الإصدارات السابقة من الصفحة.';
 $string['html'] = '';
@@ -125,10 +127,12 @@ $string['indicator:cognitivedepth'] = 'الويكي معرفياً';
 $string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في نشاط الويكي.';
 $string['indicator:cognitivedepthdef'] = 'الويكي معرفياً';
 $string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها نشاطات الويكي خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة، تقديم)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'الويكي إجتماعياً';
 $string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في نشاط الويكي.';
 $string['indicator:socialbreadthdef'] = 'الويكي إجتماعياً';
 $string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها نشاطات الويكي خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً، المشاركة مع الآخرين)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = 'صفحة ويكي شخصية غير موجودة';
 $string['insertcomment'] = 'إدراج تعليق';
 $string['insertimage'] = 'أدرج صورة...';
@@ -161,6 +165,7 @@ $string['modulename_help'] = 'تُمكِّن وحدة نشاط الويكي ال
 * للطلبة ليتعاونوا في تأليف كتاب منشور على الإنترنت أو إنشاء محتوى عن موضوع موجه من قبل معلمهم
 * للتعاون في كتابة قصة أو نظم الشعر، حيث يساهم كل مشارك بإدراج سطر أو بيت
 * كصحيفة شخصية عن ملاحظات الامتحانات إو المراجعات (باستعمال الويكي الفردي)';
+$string['modulename_link'] = 'mod/wiki/view';
 $string['modulenameplural'] = 'ويكيات';
 $string['navigation'] = 'تنقل';
 $string['navigationfrom'] = 'تأتي هذه الصفحة من';

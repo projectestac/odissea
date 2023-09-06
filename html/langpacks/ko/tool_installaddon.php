@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ko', version '3.11'.
+ * Strings for component 'tool_installaddon', language 'ko', version '4.1'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -35,6 +35,7 @@ $string['installfromzipfile'] = 'ZIP 패키지';
 $string['installfromziprootdir'] = '루트 디렉토리의 이름';
 $string['installfromzipsubmit'] = 'zip 파일로 추가 모듈 설치';
 $string['installfromziptype'] = '플러그인 유형';
+$string['installfromziptype_link'] = 'Development:Plugins';
 $string['permcheckerror'] = '쓰기 권한 체크하는 도중 오류';
 $string['permcheckprogress'] = '쓰기 권한 체크';
 $string['permcheckresultno'] = '플러그인 유형 위치 <em>{$a->path}</em>에 쓸 수 없습니다';

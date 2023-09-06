@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_formulas', language 'ca', version '3.11'.
+ * Strings for component 'qtype_formulas', language 'ca', version '4.1'.
  *
  * @package     qtype_formulas
  * @category    string
@@ -54,6 +54,7 @@ Les respostes de tipus nombre, numèric i fórmula numèrica demanen un nombre o
 La fórmula algebraica necessita una cadena o una llista de cadenes com a resposta.
 
 Els diferents tipus de respostes imposaran diferents restriccions quan s\'introdueixin les respostes, per tant cal que els alumnes sàpiguen com ho han d\'escriure. La comprovació de format en el codi de la pregunta també els dirà mentre escriuen si alguna cosa és errònia. Llegiu la documentació per a saber-ne més.';
+$string['answertype_link'] = 'https://moodleformulas.org/';
 $string['answerunitmulti'] = 'Unitat per a la part {$a->part}';
 $string['answerunitsingle'] = 'Unitat';
 $string['checkvarshdr'] = 'Comprova la instanciació de variables';
@@ -67,6 +68,7 @@ $string['correctness'] = 'Criteris de puntuació*';
 $string['correctness_help'] = '**Necessari**. Podeu escollir tant error relatiu com error absolut amb la corresponent escala. L\'error relatiu no es pot emprar si la resposta és algebraica.
 
 Per a una  definició més precisa sobre l’error relatiu i l’error absolut quan hi ha més d’un camp de resposta, consulteu la documentació.';
+$string['correctness_link'] = 'https://moodleformulas.org/';
 $string['correctnessexpert'] = 'Expert';
 $string['correctnesssimple'] = 'Simple';
 $string['defaultanswermark'] = 'Puntuació per defecte de les parts';
@@ -155,6 +157,7 @@ Per a possibles preguntes, aneu a <a href="https://moodleformulas.org/">moodlefo
 Per a les opcions del formulari d’edició següent, aneu a <a href="https://moodleformulas.org/">moodleformulas.org</a>
 
 Per obtenir la documentació completa, aneu a <a href="https://moodleformulas.org/">moodleformulas.org</a>';
+$string['pluginname_link'] = 'question/type/formulas';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de fórmules';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de fórmules';
 $string['pluginnamesummary'] = 'Tipus de pregunta amb valors aleatoris i respostes múltiples.
@@ -208,17 +211,20 @@ $string['vars1_help'] = 'Podeu definir les variables locals aquí, de la mateixa
 Les variables definides aquí es poden emprar tant en la resposta de la part com en la retroacció, i el seu abast de visibilitat es limita a la part.';
 $string['vars2'] = 'Variables de qualificació';
 $string['vars2_help'] = 'Totes les variables locals, així com les respostes dels alumnes, es poden emprar aquí. Consulteu la documentació per a usos avançats.';
+$string['vars2_link'] = 'https://moodleformulas.org/';
 $string['varsdata'] = 'Conjunt de dades instanciades';
 $string['varsglobal'] = 'Variables globals';
 $string['varsglobal_help'] = 'Aquí es poden especificar fórmules per manipular les variables aleatòries instanciades
 (totes les variables aleatòries estan disponibles aquí). La llista completa de funcions matemàtiques i operadors es dona a la documentació.
 
 <pre class="prettyprint">a = 1.11111;<br>b = exp(3);<br>c = A + a + b;<br>d = sin(1.5*pi()) + c;<br>e = round(a, 0);<br>f = [0,1,2,3][A];<br>g = ["zero","one","two","three"][A];<br>distance = sqrt(a*a + b*b);</pre>';
+$string['varsglobal_link'] = 'https://moodleformulas.org/';
 $string['varsrandom'] = 'Variables aleatòries';
 $string['varsrandom_help'] = 'Es generen valors aleatoris nous a l\'inici de cada intent. Es pot fer definint un conjunt d\'elements per triar:
 
 <pre class="prettyprint">A = {1,2,3};<br>C = {[1,-1], [2,-2], [3,-3]};<br>E = {10:100:10, 100, 1000};</pre>
 
 Els elements poden ser nombres, cadenes o llistes de nombres. A l\'inici de cada intent s\'agafarà un valor del conjunt i s\'assignarà a la variable de l\'esquerra. A més, per a un conjunt de nombres, podeu emprar una notació de l\'estil 10:100:10 (vegeu-ne l\'exemple E més amunt). </p>';
+$string['varsrandom_link'] = 'https://moodleformulas.org/';
 $string['varsstatistics'] = 'Estadístiques';
 $string['yougotnright'] = 'Heu respost correctament {$a->num} part(s) d\'aquesta pregunta.';

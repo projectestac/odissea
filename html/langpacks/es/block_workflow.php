@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_workflow', language 'es', version '3.11'.
+ * Strings for component 'block_workflow', language 'es', version '4.1'.
  *
  * @package     block_workflow
  * @category    string
@@ -293,10 +293,13 @@ $string['status'] = 'Estado actual';
 $string['step'] = 'Paso';
 $string['stepactivation'] = 'Paso de activación';
 $string['stepactivation_help'] = 'Paso de activación';
+$string['stepactivation_link'] = 'block/workflow';
 $string['stepcompletion'] = 'Finalización del paso';
 $string['stepcompletion_help'] = 'Finalización del paso';
+$string['stepcompletion_link'] = 'block/workflow';
 $string['stepextranotify'] = 'Notificación de paso extra';
 $string['stepextranotify_help'] = 'Configure la notificación por correo electrónico para que se envíe automáticamente a los destinatarios elegidos en la fecha de notificación seleccionada.';
+$string['stepextranotify_link'] = 'block/workflow';
 $string['stepfinishconfirmation'] = 'El paso se completó con éxito. Ha completado todo el trabajo requerido en esta etapa';
 $string['stepinstructions'] = 'Instrucciones';
 $string['stepname'] = 'Nombre del paso';

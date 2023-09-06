@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_memberships', language 'pt', version '3.11'.
+ * Strings for component 'ltiservice_memberships', language 'pt', version '4.1'.
  *
  * @package     ltiservice_memberships
  * @category    string
@@ -36,4 +36,4 @@ $string['privacy:metadata:firstname'] = 'firstname do utilizador a usar o sistem
 $string['privacy:metadata:fullname'] = 'O fullname do utilizador a usar o sistema LTI.';
 $string['privacy:metadata:lastname'] = 'lastname do utilizador a usar o sistema LTI.';
 $string['privacy:metadata:userid'] = 'O ID do utilizado a usar o sistema LTI.';
-$string['privacy:metadata:useridnumber'] = 'O ID do utilizador ao usar o sistema LTI';
+$string['privacy:metadata:useridnumber'] = 'O número de identificação (ID) do utilizador a usar ao sistema LTI';

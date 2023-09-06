@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'fr', version '3.11'.
+ * Strings for component 'search', language 'fr', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -43,6 +43,7 @@ $string['confirm_delete'] = 'Voulez-vous vraiment supprimer l\'index pour {$a} 
 $string['confirm_deleteall'] = 'Voulez-vous vraiment supprimer tous les index maintenant ? Tant que le site n\'est pas indexé à nouveau, les utilisateurs n\'obtiendront aucun résultat de recherche.';
 $string['confirm_indexall'] = 'Voulez-vous vraiment mettre à jour les index maintenant ? Si une grande quantité de contenus nécessite une indexation, ceci peut prendre un temps considérable. Pour les serveurs en production, il est plus judicieux de laisser faire l\'indexation au moyen de la tâche programmée « Indexation pour recherche globale ».';
 $string['confirm_reindexall'] = 'Voulez-vous vraiment reconstruire l\'index de tous les contenus du site maintenant ? Si votre site contient une grande quantité de contenus, ceci peut prendre un temps considérable, et les utilisateurs n\'obtiendront pas des résultats complets avant la fin de l\'indexation.';
+$string['content:courserole'] = '{$a->role} dans {$a->course}';
 $string['core-all'] = 'Tout';
 $string['core-course-content'] = 'Contenu de cours';
 $string['core-courses'] = 'Cours';
@@ -115,6 +116,7 @@ $string['schemaversionunknown'] = 'Le moteur de recherche n\'a pas d\'informatio
 $string['score'] = 'Score';
 $string['search'] = 'Recherche';
 $string['search:course'] = 'Cours';
+$string['search:course_teacher'] = 'Enseignant du cours';
 $string['search:customfield'] = 'Champs personnalisés de cours';
 $string['search:message_received'] = 'Messages – reçus';
 $string['search:message_sent'] = 'Messages – envoyés';
@@ -136,6 +138,7 @@ $string['thesewordsmustappear'] = 'Ces termes doivent être présents';
 $string['thesewordsmustnotappear'] = 'Ces termes ne doivent pas être présents';
 $string['title'] = 'Titre';
 $string['tofetchtheseresults'] = 'pour retrouver ces résultats';
+$string['topresults'] = 'Meilleurs résultats';
 $string['totalsize'] = 'Taille totale';
 $string['totime'] = 'Modifié avant';
 $string['type'] = 'Type';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'pt', version '3.11'.
+ * Strings for component 'auth_ldap', language 'pt', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -124,6 +124,9 @@ $string['diag_toooldversion'] = 'É pouco provável que um servidor LDAP moderno
 $string['didntfindexpiretime'] = 'password_expire() não conseguiu encontrar intervalo de expiração';
 $string['didntgetusersfromldap'] = 'Não foram encontrados utilizadores no servidor LDAP -- erro? -- a terminar operação';
 $string['gotcountrecordsfromldap'] = 'Foram encontrados {$a} registos no LDAP';
+$string['invalidusererrors'] = 'Aviso: Ignorada a criação de {$a} contas de utilizador.';
+$string['invaliduserexception'] = 'Erro: Não é possível criar uma nova conta de utilizador. Detalhes e motivo: {$a}
+Utilizador ignorado.';
 $string['ldapnotconfigured'] = 'O URL do servidor LDAP ainda não está configurado';
 $string['morethanoneuser'] = 'Foram encontrados mais do que um utilizador no LDAP. Será utilizado o primeiro.';
 $string['needbcmath'] = 'Para utilizar a verificação de senha expirada na Ative Directory é preciso instalar e ativar a extensão BCMath do PHP';
@@ -157,7 +160,6 @@ $string['updatepasserrorexpire'] = 'Erro na função user_update_password() ao l
 $string['updatepasserrorexpiregrace'] = 'Erro na função user_update_password() ao modificar os parâmetros: data de expiração e/ou tolerância de autenticação. Código do erro: {$a->errno}; Mensagem do erro: {$a->errstring}';
 $string['updateremfail'] = 'Erro ao atualizar registo LDAP. Código do erro: {$a->errno}; Mensagem do erro: {$a->errstring}<br/>Key ({$a->key}) - valor moodle antigo: "{$a->ouvalue}" novo valor: "{$a->nuvalue}"';
 $string['updateremfailamb'] = 'Falha ao atualizar LDAP com campo ambíguo {$a->key}; valor moodle antigo: "{$a->ouvalue}", novo valor: "{$a->nuvalue}"';
-$string['updateremfailfield'] = 'Ocorreu um erro ao atualizar o LDAP com um campo inexistente (\'{$a->ldapkey}\'). Chave ({$a->key}) - valor Moodle antigo: \'{$a->ouvalue}\' novo valor: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Não foi possível encontrar o utilizador ao pesquisar externamente. Detalhes: base da pesquisa: "{$a->userdn}"; filtro da pesquisa: "(objectClass=*)"; atributos da pesquisa: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'A função user_activate() não aceita o usertype: {$a}';
 $string['user_disablenotsupportusertype'] = 'A função user_disable() não aceita o usertype: {$a}';

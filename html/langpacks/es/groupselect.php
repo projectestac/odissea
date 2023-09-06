@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupselect', language 'es', version '3.11'.
+ * Strings for component 'groupselect', language 'es', version '4.1'.
  *
  * @package     groupselect
  * @category    string
@@ -87,6 +87,7 @@ $string['minmembers_notification'] = 'Su grupo tiene menos miembros del requerid
 $string['miscellaneoussettings'] = 'Ajustes diversos';
 $string['modulename'] = 'Auto-selección de grupo';
 $string['modulename_help'] = '<p>Permite crear y seleccionar grupos a los propios estudiantes. Funcionalidades: </p><ul><li>Los estudiantes pueden crear grupos, con una descripción y protegerlos con una contraseña, si se quiere</li><li>Los estudiantes pueden elegir y unirse a grupos</li><li>Los supervisores se pueden asignar a grupos</li><li>El profesor puede exportar la lista de grupos del curso en un fichero csv</li><li>Plena compatibilidad con los grupos de Moodle: los grupos se pueden crear por cualquier otro método si fuese necesario, soporta entrega de tareas por grupo, etc.</li></ul>';
+$string['modulename_link'] = 'mod/groupselect/view';
 $string['modulenameplural'] = 'Auto-selección de grupos';
 $string['nogroups'] = 'No hay grupos disponibles para seleccionar, lo lamentamos.';
 $string['notavailableanymore'] = 'La selección de grupos no está disponible, lo lamentos (desde el {$a}).';
@@ -119,7 +120,7 @@ $string['studentcansetgroupname'] = 'Los estudiantes podrán poner nombre a los 
 $string['studentcansetgroupname_help'] = 'Si se establece, los estudiantes podrán poner nombre a los grupos';
 $string['supervisionrole'] = 'Rol de supervisor';
 $string['supervisionrole_help'] = 'Define el rol de supervisor (por defecto profesores sin permisos de edición)';
-$string['targetgrouping'] = 'Selecionar grupo desde el agrupamiento';
+$string['targetgrouping'] = 'Seleccionar grupo desde el agrupamiento';
 $string['timeavailable'] = 'Permitir apuntarse desde';
 $string['timeavailable_error_past_timedue'] = '¡Error: no se puede empezar después de la fecha límite!';
 $string['timedue'] = 'Permitir apuntarse hasta';

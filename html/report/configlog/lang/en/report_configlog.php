@@ -26,13 +26,14 @@
 $string['configlog'] = 'Config changes';
 $string['datefrom'] = 'Date from';
 $string['dateto'] = 'Date to';
+$string['entityconfigchange'] = 'Config change';
 $string['plugin'] = 'Plugin';
 $string['pluginname'] = 'Config changes';
 $string['setting'] = 'Setting';
 $string['timemodified'] = 'Date';
 $string['user'] = 'User';
 $string['usernone'] = 'CLI or install';
-$string['user_help'] = 'Search by user first name or surname';
+$string['user_help'] = 'Search by user first name or last name';
 $string['value'] = 'Value';
 $string['value_help'] = 'Search by new or original value of the configuration';
 $string['valuenew'] = 'New value';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ja', version '3.11'.
+ * Strings for component 'glossary', language 'ja', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'カテゴリを追加する';
 $string['addcomment'] = 'コメントを追加する';
 $string['addentry'] = '新しいエントリを追加する';
 $string['addingcomment'] = 'コメントを追加する';
+$string['addsingleentry'] = 'エントリを追加する';
 $string['alias'] = 'キーワード';
 $string['aliases'] = 'キーワード';
 $string['aliases_help'] = '関連付けられたキーワードリスト (またはエイリアス) をそれぞれの用語集エントリに付加することができます。
@@ -169,6 +170,7 @@ $string['errconceptalreadyexists'] = 'この用語はすでに登録されてい
 $string['errdeltimeexpired'] = 'あなたはこのエントリを削除できません。編集期限は終了しました!';
 $string['erredittimeexpired'] = 'このエントリの編集期限は終了しました。';
 $string['errorparsingxml'] = 'ファイルの構文解析中にエラーが発生しました。有効なXML構文かどうか確認してください。';
+$string['errreservedkeywords'] = '1つまたはそれ以上のキーワードに使用できない特殊文字が含まれています。';
 $string['eventcategorycreated'] = 'カテゴリが作成されました。';
 $string['eventcategorydeleted'] = 'カテゴリが削除されました。';
 $string['eventcategoryupdated'] = 'カテゴリが更新されました。';
@@ -184,6 +186,7 @@ $string['explainalphabet'] = 'このインデックスを使用して用語集�
 $string['explainexport'] = '用語集をエクスポートするには以下のボタンをクリックしてください。<br />いつでも必要なときに用語集をこのコースまたは他のコースにインポートすることができます。<p>添付(例 イメージ) および著者はエクスポートされない点に留意してください。</p>';
 $string['explainimport'] = 'インポートするファイルおよび処理のクライテリアを指定してください。<p>実行後、結果を検証してください。</p>';
 $string['explainspecial'] = '１文字で始まらないエントリを表示します。';
+$string['export'] = 'エクスポート';
 $string['exportedentry'] = 'エクスポートされたエントリ';
 $string['exportentries'] = 'エントリをエクスポートする';
 $string['exportentriestoxml'] = 'エントリをXMLファイルにエクスポートする';
@@ -226,10 +229,12 @@ $string['indicator:cognitivedepth'] = '用語集認知的';
 $string['indicator:cognitivedepth_help'] = 'この指標は用語集活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = '用語集認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者が用語集活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信)。';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '用語集社会的';
 $string['indicator:socialbreadth_help'] = 'この指標は用語集活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = '用語集社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者が用語集活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = 'これはグローバル用語集ですか?';
 $string['isglobal_help'] = '用語集エントリがコース内でのみリンクされるのに対してグローバル用語集はサイト全体からリンクされるエントリを持つことができます。管理者のみ用語集をグローバルに設定することができます。';
 $string['letter'] = 'アルファベット';
@@ -254,6 +259,7 @@ $string['modulename_help'] = '用語集活動モジュールにおいて、参�
 * 実習科目に関するベストプラクティスの「役立つヒント」リソースとして
 * 有用なビデオ、イメージまたは音声ファイルの共有エリアとして
 * 記憶しておくべき事実の試験対策リソースとして';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = '用語集';
 $string['newentries'] = '新しい用語集エントリ';
 $string['newglossary'] = '新しい用語集';
@@ -274,6 +280,7 @@ $string['onebyline'] = '(1行あたり1件)';
 $string['page-mod-glossary-edit'] = '用語集エントリ追加/編集ページ';
 $string['page-mod-glossary-view'] = '用語集編集ページを表示する';
 $string['page-mod-glossary-x'] = 'すべての用語集モジュールページ';
+$string['pendingapproval'] = '承認待ち';
 $string['pluginadministration'] = '用語集管理';
 $string['pluginname'] = '用語集';
 $string['popupformat'] = 'ポップアップフォーマット';
@@ -300,6 +307,7 @@ $string['resetglossaries'] = 'エントリ削除対象';
 $string['resetglossariesall'] = 'すべての用語集からエントリを削除する';
 $string['rssarticles'] = '最近の記事のRSS数';
 $string['rssarticles_help'] = 'ここではRSSフィードに含まれる記事数を設定します。一般的に5から20の間が適切です。';
+$string['rssfeed'] = 'RSSフィード';
 $string['rsssubscriberss'] = '{$a} の用語のRSSフィードを表示する';
 $string['rsstype'] = 'この活動のRSSフィード';
 $string['rsstype_help'] = 'この活動のRSSフィードを有効にするにはフィードに含まれるのが著者ありの用語であるかまたは著者なしの用語であるか選択してください。';

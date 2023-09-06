@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'it', version '3.11'.
+ * Strings for component 'lesson', language 'it', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -52,7 +52,6 @@ $string['addedendofcluster'] = 'La fine gruppo è stata aggiunta';
 $string['addendofbranch'] = 'Aggiungi fine diramazione';
 $string['addendofcluster'] = 'Aggiungi fine gruppo';
 $string['addessay'] = 'Crea una pagina con domanda componimento';
-$string['additionalattemptsremaining'] = 'Completata. Puoi riprovare la lezione.';
 $string['addmatching'] = 'Crea pagina con domanda corrispondenza';
 $string['addmultichoice'] = 'Crea pagina con domanda a scelta multipla';
 $string['addnewgroupoverride'] = 'Aggiungi personalizzazione di gruppo';
@@ -176,7 +175,7 @@ $string['displayleftmenu'] = 'Visualizza menu';
 $string['displayleftmenu_help'] = 'Consente la visualizzazione di un menu per navigare nell\'elenco delle pagine.';
 $string['displayofgrade'] = 'Visualizzazione voti (solo per studenti)';
 $string['displayreview'] = 'Consente di riprovare la risposta ad una domanda';
-$string['displayreview_help'] = 'Se la una risposta è errata verrà visualizzato un pulsante, consentendo allo studente di riprovare senza ricevere valutazione oppure di proseguire nella lezione.';
+$string['displayreview_help'] = 'In caso di risposta errata, lo studente avrà la possibilità di riprovare senza però ottenere punteggio oppure continuare con la lezione. Se lo studente fa clic per passare a un\'altra domanda, verrà eseguita il salto relativo alla risposta data (sbagliata). Per default, i salti delle risposte sbagliate sono impostati su "questa pagina" e hanno un punteggio pari a 0, quindi si consiglia di impostare il salto delle risposte sbagliate a una pagina diversa per evitare confusione con gli studenti.';
 $string['displayscorewithessays'] = '<p>Hai ottenuto {$a->score} su {$a->tempmaxgrade} per le domande valutate automaticamente.</p>
 <p>Le tue {$a->essayquestions} domande a testo libero saranno valutate successivamente e il voto sarà aggiunto<br />al tuo punteggio finale.</p>
 <p>La tua valutazione senza le domande a testo libero è {$a->score} su {$a->grade}.</p>';
@@ -188,7 +187,9 @@ $string['editcluster'] = 'Modifica cluster';
 $string['editendofbranch'] = 'Modifica fine diramazione';
 $string['editendofcluster'] = 'Modifica fine cluster';
 $string['editessay'] = 'Modifica pagina con domanda componimento';
+$string['editinglesson'] = 'Modifica lezione';
 $string['editingquestionpage'] = 'Modifica pagina con domanda {$a}';
+$string['editlesson'] = 'Modifica lezione';
 $string['editlessonsettings'] = 'Modifica impostazioni lezione';
 $string['editmatching'] = 'Modifica pagina con domanda corrispondenza';
 $string['editmultichoice'] = 'Modifica pagina con domanda a scelta multipla';
@@ -200,9 +201,9 @@ $string['editquestion'] = 'Modifica pagina con domanda';
 $string['editshortanswer'] = 'Modifica pagina con domanda a risposta breve';
 $string['edittruefalse'] = 'Modifica pagina con domanda vero/falso';
 $string['email'] = 'Email';
-$string['emailallgradedessays'] = 'Invia per email a TUTTI i testi liberi valutati';
-$string['emailgradedessays'] = 'Invia per email i testi liberi  valutati';
-$string['emailsuccess'] = 'Invio email effettuato correttamente';
+$string['emailallgradedessays'] = 'Invia notifiche della valutazione dei testi liberi';
+$string['emailgradedessays'] = 'Invia notifiche della valutazione dei testi liberi';
+$string['emailsuccess'] = 'Notifiche inviate correttamente';
 $string['emptypassword'] = 'La password deve essere inserita';
 $string['enabled'] = 'Abilitato';
 $string['endofbranch'] = 'Fine diramazione';
@@ -275,10 +276,12 @@ $string['indicator:cognitivedepth'] = 'Lezione cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Lezione.';
 $string['indicator:cognitivedepthdef'] = 'Lezione cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Lezione (Livelli: Nessuna visualizzazione, Visualizzazione, Invio, Visualizzazione feedback, Commento al feedback, Nuovo invio dopo il feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Lezione sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Lezione.';
 $string['indicator:socialbreadthdef'] = 'Lezione sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Lezione (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insertedpage'] = 'Pagina aggiunta';
 $string['invalidfile'] = 'File non valido';
 $string['invalidid'] = 'Non è stato passato l\'ID modulo o l\'ID lezione';
@@ -299,14 +302,13 @@ $string['lesson:manage'] = 'Gestire lezioni';
 $string['lesson:manageoverrides'] = 'Gestione personalizzazioni lezione';
 $string['lesson:view'] = 'Visualizzare attività lezione';
 $string['lesson:viewreports'] = 'Visualizzati report lezione';
+$string['lessonbeingpreviewed'] = 'La lezione è visualizzata in anteprima.';
 $string['lessonclosed'] = 'Questa lezione è stata chiusa il {$a}.';
 $string['lessoncloses'] = 'La lezione chiude';
-$string['lessoncloseson'] = 'La lezione si chiude il {$a}';
 $string['lessoneventcloses'] = '{$a} chiude';
 $string['lessoneventopens'] = '{$a} apre';
 $string['lessonformating'] = 'Formato della lezione';
 $string['lessonmenu'] = 'Menu della lezione';
-$string['lessonname'] = 'Lezione: {$a}';
 $string['lessonnotready'] = 'Questa lezione non è ancora pronta. Contatta il tuo {$a}.';
 $string['lessonnotready2'] = 'Questa lezione non è pronta.';
 $string['lessonopen'] = 'Questa lezione sarà disponibile dal {$a}.';
@@ -354,6 +356,7 @@ Se lo si desidera, è possibile valutare l\'attività ed il punteggio ottenuto s
 * giochi di ruolo e esercizi di decision making
 * soddisfare differenti stili di apprendimento; ad esempio, uno studente può scegliere di visualizzare una pagina contenente un video al posto di un pagina di testo
 * revisioni differenziate, con diverse serie di domande di revisione basate sulle risposte date alle domande iniziali.';
+$string['modulename_link'] = 'mod/lesson/view';
 $string['modulenameplural'] = 'Lezioni';
 $string['move'] = 'Sposta pagina';
 $string['movedpage'] = 'Pagina spostata';
@@ -388,6 +391,7 @@ $string['nooneenteredthis'] = 'Non è stato inserito da nessuno.';
 $string['noonehasanswered'] = 'Nessuno ha ancora risposto a una domanda a testo libero.';
 $string['noonehasansweredgroup'] = 'Nessuno in {$a} ha risposto alla domanda a testo libero.';
 $string['noopen'] = 'Senza data di inzio';
+$string['nooverridecreated'] = 'Non sono state create personalizzazioni.';
 $string['nooverridedata'] = 'Devi personalizzare almeno una impostazione della lezione';
 $string['noretake'] = 'Non sei autorizzato a  riprovare la lezione.';
 $string['normal'] = 'Normale - segui il flusso della lezione';
@@ -604,7 +608,6 @@ $string['withselectedattempts'] = 'Con i tentativi selezionati...';
 $string['wronganswerjump'] = 'Per risposta errata salta a';
 $string['wronganswerscore'] = 'Punteggio per risposta errata';
 $string['wrongresponse'] = 'Replica a risposta errata';
-$string['xattempts'] = '{$a} tentativi';
 $string['youhaveseen'] = 'Hai già  visto più di una pagina di questa lezione. <br />Vuoi iniziare dall\'ultima pagina visitata?';
 $string['youranswer'] = 'La tua risposta';
 $string['yourcurrentgradeis'] = 'Punteggio ottenuto: {$a}';

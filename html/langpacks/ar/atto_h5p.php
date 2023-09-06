@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'ar', version '3.11'.
+ * Strings for component 'atto_h5p', language 'ar', version '4.1'.
  *
  * @package     atto_h5p
  * @category    string
@@ -28,20 +28,16 @@ defined('MOODLE_INTERNAL') || die();
 $string['browserepositories'] = 'تصفح المستودعات...';
 $string['copyrightbutton'] = 'زر الحقوق الفكرية';
 $string['downloadbutton'] = 'إسمح بالتنزيل';
-$string['either'] = 'إما';
 $string['embedbutton'] = 'زر التضمين';
-$string['enterurl'] = 'الرابط أو رمز التضمين';
 $string['h5p:addembed'] = 'إضافة H5P مضمن';
 $string['h5pfile'] = 'رفع ملف H5P';
 $string['h5pfileorurl'] = 'رابط H5P أو رفع الملف';
 $string['h5poptions'] = 'خيارات H5P';
-$string['h5pproperties'] = 'خصائص H5P';
 $string['h5purl'] = 'رابط H5P';
 $string['instructions'] = 'يمكنك إدراج محتوى H5P عبر
 <strong>إما</strong> إدخال رابط
 <strong>أو</strong> عبر رفع ملف H5P.';
 $string['invalidh5purl'] = 'رابط غير صحيح';
 $string['noh5pcontent'] = 'لم تتم إضافة محتوى H5P';
-$string['or'] = 'أو';
 $string['pluginname'] = 'إدراج H5P';
 $string['privacy:metadata'] = 'إن إضافة atto_h5p لا تخزن أي بيانات شخصية.';

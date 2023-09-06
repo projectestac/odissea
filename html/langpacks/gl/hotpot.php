@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'gl', version '3.11'.
+ * Strings for component 'hotpot', language 'gl', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -46,6 +46,7 @@ $string['hotpot:view'] = 'Utilizar exame';
 $string['ignored'] = 'Ignorados';
 $string['inprogress'] = 'En curso';
 $string['modulename'] = 'Exame Hot Potatoes';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'Exames Hot Potatoes';
 $string['navigation'] = 'Navegación';
 $string['navigation_frame'] = 'Marco de navegación Moodle';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'ar', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'ar', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -92,14 +92,17 @@ $string['emailpasswordchangeinfosubject'] = '{$a}: معلومات تغير كل�
 $string['info'] = 'حساب خارجي';
 $string['issuer'] = 'خدمة OAuth 2';
 $string['issuernologin'] = 'جهة الإصدار هذه لا يمكن استعمالها لتسجيل الدخول';
+$string['key'] = 'المفتاح';
 $string['linkedlogins'] = 'تسجيلات الدخول المرتبطة';
 $string['linkedloginshelp'] = 'المساعدة بشأن تسجيلات الدخول المرتبطة';
+$string['loggedin'] = 'تمت مصادقة المستخدم بنجاح مع المزود.';
 $string['loginerror_authenticationfailed'] = 'فشلت عملية المصادقة.';
 $string['loginerror_cannotcreateaccounts'] = 'تعذر العثور على حساب بعنوان بريدك الالكتروني.';
 $string['loginerror_invaliddomain'] = 'عنوان البريد الالكتروني غير مسموح به في هذا الموقع.';
 $string['loginerror_nouserinfo'] = 'لم ترجع أي بيانات للمستخدم. ربما خدمة OAuth 2 معرفة بشكل خاطئ.';
 $string['loginerror_userincomplete'] = 'بيانات للمستخدم الراجعة لم تتضمن اسم الدخول وعنوان البريد الالكتروني. ربما خدمة OAuth 2 معرفة بشكل خاطئ.';
-$string['noissuersavailable'] = 'لا أي من خدمات OAuth2 تسمح لك بربط حسابات دخول';
+$string['noconfiguredidps'] = 'لم تتم تهيئة أي مزود مصادقة من نوع OAuth2.';
+$string['noissuersavailable'] = 'لا أي من خدمات OAuth2 تسمح لك بربط حسابات دخول.';
 $string['notenabled'] = 'عذراً، إن إضافة مصادقة OAuth 2 غير مُمَكَّنة';
 $string['notloggedindebug'] = 'محاولة تسجيل الدخول فشلت. السبب: {$a}';
 $string['notwhileloggedinas'] = 'لا يمكن إدارة عمليات الدخول المرتبطة عند الدخول بمثابة مستخدم آخر.';
@@ -118,3 +121,6 @@ $string['privacy:metadata:auth_oauth2:timemodified'] = 'البصمة الزمن�
 $string['privacy:metadata:auth_oauth2:userid'] = 'مُعرَّف حساب المستخدم الذي يرتبط به دخول OAuth 2';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'مُعرَّف المستخدم الذي قام بتعديل هذا الحساب';
 $string['privacy:metadata:auth_oauth2:username'] = 'حساب المستخدم الخارجي المعين لهذا الحساب';
+$string['testidplogin'] = 'فحص تسجيل الدخول باستعمال:';
+$string['userinfo'] = 'بيانات المستخدم من الموفر:';
+$string['value'] = 'القيمة';

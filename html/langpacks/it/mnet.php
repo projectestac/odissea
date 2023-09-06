@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'it', version '3.11'.
+ * Strings for component 'mnet', language 'it', version '4.1'.
  *
  * @package     mnet
  * @category    string
@@ -90,7 +90,7 @@ $string['hideremote'] = 'Nascondi utenti remoti';
 $string['host'] = 'host';
 $string['hostcoursenotfound'] = 'Host o corso non trovato';
 $string['hostdeleted'] = 'Host eliminato';
-$string['hostexists'] = 'Esiste già un record per un host con quel nome (è possibile eliminarlo). <a href="{$a}">fai click qui </a> per modificare il record.';
+$string['hostexists'] = 'Esiste già un record per un host con quel nome (Potrebbe essere stato eliminato). <a href="{$a}">fai click qui </a> per modificare il record.';
 $string['hostlist'] = 'Elenco host collegati';
 $string['hostname'] = 'Nome host';
 $string['hostnamehelp'] = 'Il nome a dominio qualificato dell\'host remoto, per esempio: www.example.com';
@@ -118,6 +118,7 @@ $string['is_in_range'] = 'L\'indirizzo IP <code>{$a}</code>  appartiene ad un 
 $string['ispublished'] = '{$a} ha abilitato questo servizio per te.';
 $string['issubscribed'] = '{$a} ha sottoscritto questo servizio sul tuo host.';
 $string['keydeleted'] = 'La chiave è stata eliminata e sostituita con una nuova.';
+$string['keydeletedcancelled'] = 'Nessuna modifica effettuata sulla chiave';
 $string['keymismatch'] = 'La chiave pubblica che hai per questo host è diversa dalla chiave pubblicata. La chiave pubblica attuale è:';
 $string['last_connect_time'] = 'Ora ultima connessione';
 $string['last_connect_time_help'] = 'L\'orario della tua ultima connessione a questo host.';
@@ -236,7 +237,7 @@ $string['testtrustedhosts'] = 'Prova un indirizzo';
 $string['testtrustedhostsexplain'] = 'Inserisci un indirizzo IP per vedere se è un host affidabile.';
 $string['theypublish'] = 'Offrono';
 $string['theysubscribe'] = 'Sottoscrivono';
-$string['transport_help'] = 'Queste opzioni sono reciproche, per cui puoi obbligare un host remoto a usare un certificato SSL firmato solo se il tuo server ha anche un certificato SSL firmato.';
+$string['transport_help'] = 'Queste opzioni sono reciproche, è possibile obbligare un host remoto a usare un certificato SSL firmato solo se il server possiede un certificato SSL firmato.';
 $string['trustedhosts'] = 'Host XML-RPC';
 $string['trustedhostsexplain'] = '<p>Il meccanismo degli host affidabili consente a determinate macchine di effettuare chiamate via XML-RPC a qualunque API di Moodle. Grazie a questa opzione script esterni possono controllare il comportamento di Moodle, pertanto può essere una impostazione molto pericolosa. Se hai qualche dubbio, tienila disattivata.</p>
 <p><strong>Non è</strong> necessaria per il funzionamento di MNet/p>

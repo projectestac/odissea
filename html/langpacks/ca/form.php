@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ca', version '3.11'.
+ * Strings for component 'form', language 'ca', version '4.1'.
  *
  * @package     form
  * @category    string
@@ -64,7 +64,7 @@ $string['newvaluefor'] = 'Valor nou per a {$a}';
 $string['nomethodforaddinghelpbutton'] = 'No hi ha cap mètode per a afegir un botó d\'ajuda a l\'element del formulari {$a->name} (classe {$a->classname})';
 $string['nonexistentformelements'] = 'Esteu provant d\'afegir botons d\'ajuda a elements del formulari inexistents: {$a}';
 $string['nopermissionform'] = 'No teniu permís per a accedir a aquest formulari.';
-$string['noselection'] = 'No s\'ha fet cap selecció';
+$string['noselection'] = 'No heu seleccionat res';
 $string['nosuggestions'] = 'Sense suggeriments';
 $string['novalue'] = 'No s\'ha introduït res';
 $string['novalueclicktoset'] = 'Cliqueu per introduir text';

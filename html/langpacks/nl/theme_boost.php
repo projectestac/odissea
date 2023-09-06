@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'nl', version '3.11'.
+ * Strings for component 'theme_boost', language 'nl', version '4.1'.
  *
  * @package     theme_boost
  * @category    string
@@ -36,19 +36,30 @@ $string['choosereadme'] = 'Boost is een modern zeer aanpasbaar thema. Dit thema 
 $string['configtitle'] = 'Boost';
 $string['currentinparentheses'] = '(huidige)';
 $string['generalsettings'] = 'Algemene instellingen';
+$string['loginbackgroundimage'] = 'Achtergrondafbeelding voor de inlogpagina';
+$string['loginbackgroundimage_desc'] = 'De afbeelding die moet worden weergegeven als achtergrond voor de inlogpagina.';
 $string['nobootswatch'] = 'Geen';
 $string['pluginname'] = 'Boost';
 $string['preset'] = 'Thema standaardinstellingen';
 $string['preset_desc'] = 'Kies een standaardinstelling  om het uiterlijk van het thema in grote lijnen te veranderen.';
 $string['presetfiles'] = 'Extra thema instellingsbestanden';
 $string['presetfiles_desc'] = 'Preset-bestanden kunnen worden gebruikt om het uiterlijk van het thema drastisch te veranderen.  Zie <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> voor informatie over het maken en delen van uw eigen preset-bestanden, en zie de <a href="https://archive.moodle.net/boost">Presets repository</a> voor presets die anderen hebben gedeeld.';
+$string['privacy:drawerblockclosed'] = 'De huidige voorkeur voor het blokkenpaneel is gesloten.';
+$string['privacy:drawerblockopen'] = 'De huidige voorkeur voor het blokkenpaneel is open.';
+$string['privacy:drawerindexclosed'] = 'De huidige voorkeur voor de inhoudsopgave is gesloten.';
+$string['privacy:drawerindexopen'] = 'De huidige voorkeur voor de inhoudsopgave is geopend.';
 $string['privacy:drawernavclosed'] = 'De huidige voorkeur voor het navigatiepaneel is gesloten.';
 $string['privacy:drawernavopen'] = 'De huidige voorkeur voor het navigatiepaneel is open.';
 $string['privacy:metadata'] = 'Het Boost-thema slaat geen persoonlijke gegevens over een gebruiker op.';
+$string['privacy:metadata:preference:draweropenblock'] = 'De voorkeur van de gebruiker om het paneel met blokken te verbergen of te tonen.';
+$string['privacy:metadata:preference:draweropenindex'] = 'De voorkeur van de gebruiker voor het verbergen of tonen van de cursusindex.';
 $string['privacy:metadata:preference:draweropennav'] = 'De gebruikersvoorkeur voor het tonen of verbergen van het navigatiepaneel.';
 $string['rawscss'] = 'Raw SCSS';
 $string['rawscss_desc'] = 'Gebruik dit veld om SCSS of CSS-code die aan het einde van de style sheet zal worden toegevoegd.';
 $string['rawscsspre'] = 'Raw initial SCSS';
 $string['rawscsspre_desc'] = 'In dit veld kunt je initialisatie SCSS code zetten, deze zal het worden toegevoegd voor alles. Het merendeel van de tijd zul je deze instelling gebruiken om variabelen te definiëren.';
 $string['region-side-pre'] = 'Rechts';
+$string['showfooter'] = 'Toon voettekst';
 $string['totop'] = 'Ga naar boven';
+$string['unaddableblocks'] = 'Onnodige blokken';
+$string['unaddableblocks_desc'] = 'Deze blokken zijn niet nodig wanneer je dit thema gebruikt en worden niet weergegeven in het menu \'Blok toevoegen\'.';

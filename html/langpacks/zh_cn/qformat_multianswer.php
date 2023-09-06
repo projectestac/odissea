@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_multianswer', language 'zh_cn', version '3.11'.
+ * Strings for component 'qformat_multianswer', language 'zh_cn', version '4.1'.
  *
  * @package     qformat_multianswer
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '嵌入答案（完形填空）';
 $string['pluginname_help'] = '使用嵌入答案（完形填空）格式可以导入一段嵌有问题的文本，问题包括多项选择和简答。';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['privacy:metadata'] = '内嵌答案问题插件不存储任何个人数据。';

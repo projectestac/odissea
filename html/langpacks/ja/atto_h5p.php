@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'ja', version '3.11'.
+ * Strings for component 'atto_h5p', language 'ja', version '4.1'.
  *
  * @package     atto_h5p
  * @category    string
@@ -28,18 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['browserepositories'] = 'リポジトリを閲覧する ...';
 $string['copyrightbutton'] = '著作権ボタン';
 $string['downloadbutton'] = 'ダウンロードを許可する';
-$string['either'] = '&nbsp;';
 $string['embedbutton'] = '埋め込みボタン';
-$string['enterurl'] = 'URLまたは埋め込みコード';
 $string['h5p:addembed'] = '埋め込みH5Pを追加する';
 $string['h5pfile'] = 'H5Pファイルアップロード';
 $string['h5pfileorurl'] = 'H5P URLまたはファイルアップロード';
 $string['h5poptions'] = 'H5Pオプション';
-$string['h5pproperties'] = 'H5Pプロパティ';
 $string['h5purl'] = 'H5P URL';
 $string['instructions'] = 'あなたはURL入力<strong>または</strong>H5PファイルのアップロードによりH5Pコンテンツを挿入できます。';
 $string['invalidh5purl'] = '無効なURL';
 $string['noh5pcontent'] = '追加されたH5Pコンテンツはありません。';
-$string['or'] = 'または';
 $string['pluginname'] = 'H5Pを挿入する';
 $string['privacy:metadata'] = 'atto_h5pプラグインはいかなる個人データも保存しません。';

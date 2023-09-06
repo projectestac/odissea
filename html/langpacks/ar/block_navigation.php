@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'ar', version '3.11'.
+ * Strings for component 'block_navigation', language 'ar', version '4.1'.
  *
  * @package     block_navigation
  * @category    string
@@ -27,13 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['courseactivities'] = 'التصنيفات، المقررات الدراسية، وأنشطة المقررات الدراسية';
 $string['courses'] = 'الفئات، المقررات الدراسية';
-$string['coursestructures'] = 'الفئات، المقررات الدراسية، وتراكيب المقرر الدراسي';
+$string['coursestructures'] = 'الفئات، المقررات الدراسية، وتراكيب المقرر';
 $string['enabledockdesc'] = 'السماح للمستخدم بإرساء هذه الكتلة';
 $string['everything'] = 'كُلّ شيء';
 $string['expansionlimit'] = 'التنقل العام لما يأتي';
 $string['linkcategoriesdesc'] = 'أعرض التصنيفات كروابط';
 $string['navigation:addinstance'] = 'إضافة كتلة جديدة للتنقل';
-$string['navigation:myaddinstance'] = 'إضافة كتلة جديدة للتنقل إلى لوحة التحكم';
+$string['navigation:myaddinstance'] = 'إضافة كتلة جديدة للتنقل إلى دفة القيادة';
 $string['pluginname'] = 'التنقل';
 $string['privacy:metadata'] = 'كتلة التنقل تعرض فقط البيانات المخزونة في مواضع أخرى.';
 $string['trimlength'] = 'عدد الحروف الذي يتم القطع عنده';

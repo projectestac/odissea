@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_gismo', language 'el', version '3.11'.
+ * Strings for component 'block_gismo', language 'el', version '4.1'.
  *
  * @package     block_gismo
  * @category    string
@@ -38,18 +38,18 @@ $string['assignments_chart_title'] = 'Δραστηριότητες: επισκό
 $string['authors'] = 'Συγγραφείς';
 $string['cancel'] = 'Άκυρο';
 $string['chats'] = 'Συνομιλίες';
-$string['chats_chart_title'] = 'Δραστηριότητες: επισκόπηση συνομιλιών';
+$string['chats_chart_title'] = 'Δραστηριότητες: επισκόπηση γραπτών συνομιλιών';
 $string['chats_over_time'] = 'Συνομιλίες με την πάροδο του χρόνου';
-$string['chats_over_time_chart_title'] = 'Δραστηριότητες: συνεισφορές σε συνομιλίες με την πάροδο του χρόνου';
-$string['chats_ud_chart_title'] = 'Δραστηριότητες: στοιχεία μαθητών στις συνομιλίες';
+$string['chats_over_time_chart_title'] = 'Δραστηριότητες: συνεισφορές σε γραπτές συνομιλίες με την πάροδο του χρόνου';
+$string['chats_ud_chart_title'] = 'Δραστηριότητες: στοιχεία μαθητών στις γραπτές συνομιλίες';
 $string['close'] = 'Κλείσιμο';
 $string['completion'] = 'Ολοκλήρωση';
 $string['completion_assignment22_chart_title'] = 'Ολοκλήρωση αναθέσεων εργασιών 2.2';
 $string['completion_assignment22_menu'] = 'Αναθέσεις εργασιών 2.2';
 $string['completion_assignment_chart_title'] = 'Ολοκλήρωση αναθέσεων εργασιών';
 $string['completion_assignment_menu'] = 'Αναθέσεις εργασιών';
-$string['completion_chat_chart_title'] = 'Ολοκληρώσεις συνομιλιών';
-$string['completion_chat_menu'] = 'Συνομιλίες';
+$string['completion_chat_chart_title'] = 'Ολοκληρώσεις γραπτές συνομιλιών';
+$string['completion_chat_menu'] = 'Γραπτές Συνομιλίες';
 $string['completion_completed_on_tooltip'] = 'Ολοκληρώθηκε στις';
 $string['completion_completed_on_tooltip_months'] = '[\'Ιαν\',\'Φεβ\',\'Μαρ\',\'Απρ\',\'Μάη\',\'Ιυν\',\'Ιυλ\',\'Αυγ\',\'Σεπ\',\'Οκτ\',\'Νοε\',\'Δεκ\']';
 $string['completion_forum_chart_title'] = 'Ολοκληρώσεις φόρουμ';
@@ -131,7 +131,7 @@ $string['option_chart_settings'] = 'Ρυθμίσεις γραφήματος';
 $string['option_general_settings'] = 'Γενικές ρυθμίσεις';
 $string['option_green'] = 'Πράσινο';
 $string['option_include_hidden_items'] = 'Συμπερίληψη κρυμμένων στοιχείων';
-$string['option_intro'] = 'Αυτό το τμήμα σάς επιτρέπει να προσαρμόσετε συγκεκριμένες επιλογές εφαρμογής.';
+$string['option_intro'] = 'Αυτή η ενότητα σάς επιτρέπει να προσαρμόσετε συγκεκριμένες επιλογές εφαρμογής.';
 $string['option_other_settings'] = 'Άλλες ρυθμίσεις';
 $string['option_red'] = 'Κόκκινο';
 $string['option_window_resize_delay_seconds'] = 'Καθυστέρηση αλλαγής μεγέθους παραθύρου (σε δευτερόλεπτα)';
@@ -167,7 +167,7 @@ $string['students'] = 'Μαθητές';
 $string['teachers'] = 'διδάσκοντες';
 $string['timeline'] = 'Χρονολόγιο';
 $string['to'] = 'Προς';
-$string['tutorial'] = 'Καθοδηγούμενη αυτοδιδασκαλία';
+$string['tutorial'] = 'Βίντεο εκμάθησης';
 $string['users'] = 'χρήστες';
 $string['welcome'] = 'Καλώς ορίσατε στο GISMO v. 3.3';
 $string['wikis'] = 'Wikis';

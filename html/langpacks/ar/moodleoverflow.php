@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodleoverflow', language 'ar', version '3.11'.
+ * Strings for component 'moodleoverflow', language 'ar', version '4.1'.
  *
  * @package     moodleoverflow
  * @category    string
@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addanewdiscussion'] = 'إضافة موضوع مناقشة جديد';
 $string['addanewreply'] = 'إضافة إجابة جديدة';
-$string['bestanswer'] = 'مالك السؤال ومالك المقرر الدراسي قبلا هذا بمثابة أفضل إجابة.';
 $string['cannotcreatediscussion'] = 'تعذر إنشاء مناقشة جديدة';
 $string['clicktosubscribe'] = 'لستَ مشتركاً في هذه المناقشة. أنقر للاشتراك.';
 $string['clicktounsubscribe'] = 'أنت مشترك في هذه المناقشة. أنقر لإلغاء الاشتراك.';
@@ -57,8 +56,6 @@ $string['eventreadtrackingdisabled'] = 'تعقب قراءة تم تعطيله';
 $string['eventreadtrackingenabled'] = 'تعقب قراءة تم تمكينه';
 $string['eventsubscriptioncreated'] = 'إشتراك تم إنشاؤه';
 $string['eventsubscriptiondeleted'] = 'إشتراك تم حذفه';
-$string['headerdiscussion'] = 'المناقشة';
-$string['helpfulanswer'] = 'مالك السؤال  قبل هذا بمثابة أفضل إجابة.';
 $string['invaliddiscussionid'] = 'مُعرَّف المناقشة لم يكن صحيحاً';
 $string['manydiscussions'] = 'المناقشات في الصفحة الواحدة';
 $string['markallread'] = 'قم باعتبار كل منشورات هذه المناقشة مقروءة.';
@@ -69,7 +66,6 @@ $string['moodleoverflow:addinstance'] = 'إضافة عيِّنة جديدة من
 $string['moodleoverflow:managesubscriptions'] = 'إدارة الاشتراكات';
 $string['moodleoverflow:replypost'] = 'رد في المناقشة';
 $string['moodleoverflow:startdiscussion'] = 'إبدأ المناقشة';
-$string['moodleoverflow:view'] = 'معاينة قائمة المناقشات';
 $string['moodleoverflow:viewdiscussion'] = 'معاينة المناقشة';
 $string['moodleoverflowbodyhidden'] = 'لا يمكن معاينة هذا المنشور من قبلك، ربما لأنك لم تنشر شيئاً في المناقشة، لم تنقضِ بعد مدة التحرير القصوى، لم تبدأ المناقشة بعد، أو المناقشة قد انتهت صلاحيتها.';
 $string['nodiscussions'] = 'لا يوجد موضوع للمناقشة بعد في هذا المنتدى';

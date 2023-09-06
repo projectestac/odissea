@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_homework', language 'ar', version '3.11'.
+ * Strings for component 'block_homework', language 'ar', version '4.1'.
  *
  * @package     block_homework
  * @category    string
@@ -72,14 +72,14 @@ $string['section_help'] = 'المقطع أو الموضوع ضمن المساق 
 $string['selectcourse_help'] = 'هذا هو المساق الذي ستتم إضافة نشاط الواجب البيتي إليه. الطلاب المنضمون إلى الوساق حصرًا سيكون لهم إمكانية الوصول إليه.';
 $string['sethomework'] = 'وضع الواجب البيتي';
 $string['showdescription'] = 'إظهار الوصف في المساق';
-$string['showdescription_help'] = 'فيما إذا كان ينبغي عرض الوصف في صفحة المقرر الدراسي';
+$string['showdescription_help'] = 'فيما إذا كان ينبغي عرض الوصف في صفحة المساق';
 $string['staffstatistics'] = 'إحصائيات الموظفين';
 $string['student'] = 'الطالب';
 $string['studentgrades'] = 'تقديرات الطالب';
 $string['studentview'] = '، معاينة الطالب';
 $string['subject_help'] = 'هذا يستعمل في مقطع التقارير من هذه الكتلة';
-$string['thereishomeworkdue'] = 'هناك واجب منزلي مستحق في هذا المقرر الدراسي';
-$string['thereishomeworkset'] = 'هناك واجب منزلي موضوع في هذا المقرر الدراسي';
+$string['thereishomeworkdue'] = 'هناك واجب منزلي مستحق في هذا المساق';
+$string['thereishomeworkset'] = 'هناك واجب منزلي موضوع في هذا المساق';
 $string['thishomeworkisdone'] = 'لقد تم إكمال هذا الواجب البيتي';
 $string['thishomeworkisdue'] = 'هذا الواجب البيتي مستحق';
 $string['thishomeworkisset'] = 'هذا الواجب البيتي موضوع';

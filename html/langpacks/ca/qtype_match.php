@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'ca', version '3.11'.
+ * Strings for component 'qtype_match', language 'ca', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughquestions'] = 'Heu de proporcionar almenys {$a} parells de pre
 $string['pleaseananswerallparts'] = 'Responeu totes les parts de la pregunta.';
 $string['pluginname'] = 'Aparellament';
 $string['pluginname_help'] = 'Per respondre bé les preguntes d\'aparellament cal que l\'alumne aparelli correctament una llista de noms o enunciats (preguntes) amb una altra llista de noms o enunciats (les respostes).';
+$string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'aparellament.';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'aparellament.';
 $string['pluginnamesummary'] = 'La resposta a cadascuna d\'una sèrie de preguntes s\'ha de seleccionar d\'una llista de possibilitats.';

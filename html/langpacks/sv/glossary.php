@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'sv', version '3.11'.
+ * Strings for component 'glossary', language 'sv', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Lägg till kategori';
 $string['addcomment'] = 'Lägg till kommentarer';
 $string['addentry'] = 'Nytt uppslagsord';
 $string['addingcomment'] = 'Lägg till kommentar';
+$string['addsingleentry'] = 'Nytt uppslagsord';
 $string['alias'] = 'Nyckelord';
 $string['aliases'] = 'Alias';
 $string['aliases_help'] = 'Varje uppslagsord kan ha en associerad lista med sökord (eller alias). Om posten är auto-länkad kommer sökorden också vara auto-länkade.
@@ -184,6 +185,7 @@ $string['explainalphabet'] = 'Bläddra i ordlistan med hjälp av detta index';
 $string['explainexport'] = 'En fil har skapats.<br />Ladda ned den och spara den på ett säkert ställe. Du kan importera den när helst du vill, i den här kursen eller i någon annan.';
 $string['explainimport'] = 'Du måste ange vilken fil som ska importeras och villkoren för processen.<p>Skicka in din förfrågan och titta på resultaten igen.</p>';
 $string['explainspecial'] = 'Visa uppslagsord som inte börjar med en bokstav';
+$string['export'] = 'Exportera';
 $string['exportedentry'] = 'Exporterat uppslagsord';
 $string['exportentries'] = 'Exportera uppslagsord';
 $string['exportentriestoxml'] = 'Exportera uppslagsorden till en XML-fil';
@@ -226,10 +228,12 @@ $string['indicator:cognitivedepth'] = 'Ordlista kognitivt';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baserad på det kognitiva djup som uppnåtts av studenten i en Ordliste-aktivitet.';
 $string['indicator:cognitivedepthdef'] = 'Ordlista kognitivt';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har uppnått denna procentandel av det kognitiva engagemanget i Ordliste-aktiviteter under detta analysintervall (Nivåer = Ej visat, Visat, Inlämnat)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Ordlista socialt';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baserad på den sociala bredd som uppnåtts av studenten i en Ordliste-aktivitet.';
 $string['indicator:socialbreadthdef'] = 'Ordlista socialt';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har uppnått denna procentandel av det sociala engagemanget i Ordlisteaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = 'Detta är en global ordlista';
 $string['isglobal_help'] = 'En global ordlista har uppslagsord som är länkade till från hela webbplatsen, snarare än bara i den kurs som ordlistan är definierad i. Endast administratörer kan ange en ordlista som global.';
 $string['letter'] = 'bokstav';
@@ -254,6 +258,7 @@ Ordlistor har många användningsområden, som till exempel
 * En "praktiska tips"-resurs i för ämne
 * En delad yta med användbara videor, bilder eller ljudfiler
 * En reviderbar resurs med fakta att komma ihåg';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = 'Ordlistor';
 $string['newentries'] = 'Nya uppslagsord';
 $string['newglossary'] = 'Ny ordlista';
@@ -274,6 +279,7 @@ $string['onebyline'] = '(en per rad)';
 $string['page-mod-glossary-edit'] = 'Lägg till/ta bort-sida för ordlista';
 $string['page-mod-glossary-view'] = 'Visa redigeringssida';
 $string['page-mod-glossary-x'] = 'Godtycklig ordlistesida';
+$string['pendingapproval'] = 'Väntar på godkännande';
 $string['pluginadministration'] = 'Hantera ordlista';
 $string['pluginname'] = 'Ordlista';
 $string['popupformat'] = 'Popup-format';
@@ -303,6 +309,7 @@ $string['rssarticles_help'] = '<p>Det här alternativet gör det möjligt för d
 artiklar som du vill ta med i RSS-flödet.</p>
 <p>Ett antal mellan 5 och 20 bör vara lagom för de flesta ord- och begreppslistor.
  Öka detta antal om ord- och begreppslistan används mycket flitigt.</p>';
+$string['rssfeed'] = 'RSS-flöde';
 $string['rsssubscriberss'] = 'Visa RSS-flöden för \'{$a}\' koncept';
 $string['rsstype'] = 'RSS-flöde för den här aktiviteten';
 $string['rsstype_help'] = '<p>Det här alternativet låter dig aktivera RSS-flödentill denna ord- och begreppslista.</p>

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'en', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'en', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -40,6 +40,7 @@ $string['layoutselectinline'] = 'Drop-down menu in-line in the text';
 $string['layoutundefined'] = 'Undefined layout';
 $string['layoutvertical'] = 'Vertical column of radio buttons';
 $string['missingsubquestion'] = 'This subquestion is missing from your system and cannot be displayed.';
+$string['multichoicex'] = 'Multiple choice {$a}';
 $string['nooptionsforsubquestion'] = 'Unable to get options for question part # {$a->sub} (question->id={$a->id})';
 $string['noquestions'] = 'The Cloze(multianswer) question "<strong>{$a}</strong>" does not contain any question';
 $string['pleaseananswerallparts'] = 'Please answer all parts of the question.';
@@ -66,6 +67,7 @@ $string['questionsmore'] = '{$a} question(s) more than in the multianswer questi
 $string['questiontypechanged'] = 'Question type changed';
 $string['questiontypechangedcomment'] = 'At least one question type has been changed.<br />Did you add, delete or move a question?<br />Look ahead.';
 $string['questionusedinquiz'] = 'This question is used in {$a->nb_of_quiz} quiz(s), total attempt(s) : {$a->nb_of_attempts}';
+$string['regradeissuenumsubquestionschanged'] = 'The number of embedded sub-questions in the question has changed.';
 $string['storedqtype'] = 'Stored question type {$a}';
 $string['subqresponse'] = 'part {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Unknown question type: {$a->type} of question part # {$a->sub}';

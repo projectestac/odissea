@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'el', version '3.11'.
+ * Strings for component 'pagetype', language 'el', version '4.1'.
  *
  * @package     pagetype
  * @category    string
@@ -38,7 +38,7 @@ $string['page-mod-x'] = 'Οποιαδήποτε σελίδα αρθρώματο�
 $string['page-mod-x-view'] = 'Οποιαδήποτε κύρια σελίδα αρθρώματος δραστηριότητας';
 $string['page-my-index'] = 'Σελίδα Ταμπλό';
 $string['page-report-x'] = 'Οποιαδήποτε σελίδα αναφοράς';
-$string['page-site-index'] = 'Η αρχική σελίδα μόνο';
+$string['page-site-index'] = 'Η πρώτη σελίδα μόνο';
 $string['page-site-x'] = 'Οποιαδήποτε ανώτατου επιπέδου σελίδα ιστοτόπου';
 $string['page-user-profile'] = 'Μόνο σελίδες προφίλ χρήστη';
 $string['page-user-view'] = 'Μόνο σελίδες προφίλ χρήστη';

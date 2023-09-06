@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'ar', version '3.11'.
+ * Strings for component 'qtype_essay', language 'ar', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -59,7 +59,8 @@ $string['mustrequirefewer'] = 'لا يمكنك طلب مرفقات أكثر مم
 $string['nlines'] = 'أسطر {$a}';
 $string['nonexistentfiletypes'] = 'لم يتم التعرف على أنواع الملفات التالية: {$a}';
 $string['pluginname'] = 'مقالي';
-$string['pluginname_help'] = 'ردًا على السؤال، المجيب يمكنه رفع ملف أو أكثر و/أو إدخال نص عبر الإنترنت. يمكن توجيه الطالب عبر تزويده بقالب يوضح شكل الإجابة. ينبغي هنا تقييم الإجابات يدويًا.';
+$string['pluginname_help'] = 'ردًا على السؤال، المجيب يمكنه رفع ملف أو أكثر و/أو إدخال نص عبر الإنترنت. يمكن توجيه الطالب عبر تزويده بمظهر يوضح شكل الإجابة. ينبغي هنا تقييم الإجابات يدويًا.';
+$string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = 'إضافة سؤال مقالي';
 $string['pluginnameediting'] = 'تحرير سؤال مقالي';
 $string['pluginnamesummary'] = 'يسمح بالإجابة لبعض الجمل أو الفقرات. ثم يجب أن تقيم بعد ذلك يدوياً.';
@@ -77,9 +78,9 @@ $string['responseisrequired'] = 'اطلب من الطالب إدخال النص'
 $string['responsenotrequired'] = 'إدخال النص اختياري';
 $string['responseoptions'] = 'خيارات الاستجابة';
 $string['responserequired'] = 'النص المطلوب';
-$string['responsetemplate'] = 'قالب الاستجابة';
+$string['responsetemplate'] = 'مظهر الاستجابة';
 $string['responsetemplate_help'] = 'سيتم عرض أيّ نص تم إدخاله هنا في مربع إدخال الاستجابة عند بدء محاولة جديدة على السؤال.';
-$string['responsetemplateheader'] = 'قالب الاستجابة';
+$string['responsetemplateheader'] = 'مظهر الاستجابة';
 $string['wordcount'] = 'عدد الكلمات: {$a}';
 $string['wordcounttoofew'] = 'عدد الكلمات: {$a->count}، أقل مما هو مطلوب والبالغ {$a->limit}.';
 $string['wordcounttoomuch'] = 'عدد الكلمات: {$a->count}، أكثر من الحد الأقصى والبالغ {$a->limit}.';

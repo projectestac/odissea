@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pcast', language 'es', version '3.11'.
+ * Strings for component 'pcast', language 'es', version '4.1'.
  *
  * @package     pcast
  * @category    string
@@ -49,6 +49,7 @@ $string['categoryview'] = 'Búsqueda por categoría';
 $string['changeto'] = 'Cambias a {$a}';
 $string['clean'] = 'Limpiar';
 $string['commentsnotenabled'] = 'Error: los comentarios no están habilitados';
+$string['completiondetail:episodes'] = 'Añadir {$a} episodio(s)';
 $string['completionepisodes'] = 'El estudiante debe crear episodios:';
 $string['completionepisodesgroup'] = 'Requerir episodios';
 $string['configallowhtmlinsummary'] = 'Este interruptor permitirá que las fuentes de los campos de descripción RSS contengan HTML. Cuando está deshabilitado, el HTML se eliminará silenciosamente como parte de la generación de fuentes RSS.';

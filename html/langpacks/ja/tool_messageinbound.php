@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'ja', version '3.11'.
+ * Strings for component 'tool_messageinbound', language 'ja', version '4.1'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -63,6 +63,7 @@ $string['messageinboundenabled_desc'] = '適切な情報をメッセージ送信
 $string['messageinboundgeneralconfiguration'] = '一般設定';
 $string['messageinboundgeneralconfiguration_desc'] = '受信メッセージ処理ではあなたがMoodle内でメールを受信および処理できます。これはフォーラム投稿に返信するため、またはユーザのプライベートファイルにファイルを追加するためにメールを送信する用途に使用できます。';
 $string['messageinboundhost'] = '受信メールサーバ';
+$string['messageinboundhostoauth_help'] = 'XOAUTH2認証を使用してIMAPサーバにアクセスするために使用するOAuth　2サービスです。サービスがまだ存在しない場合、あなたはサービスを作成する必要があります。';
 $string['messageinboundhostpass'] = 'パスワード';
 $string['messageinboundhostpass_desc'] = 'これはあなたのメールアカウントにログインするためサービスプロバイダが提供したパスワードです。';
 $string['messageinboundhostssl'] = 'SSLを使用する';
@@ -83,10 +84,10 @@ $string['messageprocessingfailed'] = 'あなたが送信した件名「 {$a->sub
 $string['messageprocessingfailedunknown'] = '件名「 {$a->subject} 」のメールを処理できませんでした。詳細情報に関してあなたのシステム管理者にご連絡ください。';
 $string['messageprocessingsuccess'] = '{$a->plain} さん
 
-あなたが将来的にこれらの通知を受信したくない場合、ブラウザで {$a->messagepreferencesurl} を開くことによりパーソナルメッセージングプリファレンスを編集できます。';
+あなたが将来的にこれらの通知を受信したくない場合、ブラウザで {$a->messagepreferencesurl} を開くことによりパーソナルメッセージングプレファレンスを編集できます。';
 $string['messageprocessingsuccesshtml'] = '{$a->html} さん
 
-<p>あなたが将来的にこれらの通知を受信したくない場合、あなたの<a href="{$a->messagepreferencesurl}">パーソナルメッセージングプリファレンスを編集</a>できます。</p>';
+<p>あなたが将来的にこれらの通知を受信したくない場合、あなたの<a href="{$a->messagepreferencesurl}">パーソナルメッセージングプレファレンスを編集</a>できます。</p>';
 $string['messageprovider:invalidrecipienthandler'] = 'あなたから受信メッセージが到着したことを確認するメッセージ';
 $string['messageprovider:messageprocessingerror'] = '受信メッセージを処理できなかった場合の警告';
 $string['messageprovider:messageprocessingsuccess'] = 'メッセージが正常に送信された場合の確認';

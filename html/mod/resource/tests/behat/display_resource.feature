@@ -43,11 +43,11 @@ Feature: Teacher can specify different display options for the resource
       | Show type                 | <showtype> |
       | Show upload/modified date | <showdate> |
     And I press "Save and display"
-    Then I <seesize> see "6 bytes" in the ".resourcedetails" "css_element"
+    Then I <seesize> see "6 bytes" in the ".resourcedetails" "css_element"
     And I <seetype> see "Text file" in the ".resourcedetails" "css_element"
     And I <seedate> see "Uploaded" in the ".resourcedetails" "css_element"
     And I am on "Course 1" course homepage
-    And I <seesize> see "6 bytes" in the ".activity.resource .resourcelinkdetails" "css_element"
+    And I <seesize> see "6 bytes" in the ".activity.resource .resourcelinkdetails" "css_element"
     And I <seetype> see "Text file" in the ".activity.resource .resourcelinkdetails" "css_element"
     And I <seedate> see "Uploaded" in the ".activity.resource .resourcelinkdetails" "css_element"
 

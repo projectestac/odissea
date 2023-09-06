@@ -4,7 +4,7 @@ Feature: Manage badges is not shown when there are no existing badges.
   Scenario: Check navigation at site level with no badges
     Given I log in as "admin"
     When I navigate to "Badges > Manage badges" in site administration
-    And I should see "There are currently no badges available for users to earn."
+    And I should see "There are currently no badges available for users to earn"
     Then "Manage badges" "button" should not exist
 
   Scenario: Check navigation at course level with no badges
@@ -19,8 +19,8 @@ Feature: Manage badges is not shown when there are no existing badges.
       | teacher | C1     | editingteacher |
     And I log in as "teacher"
     And I am on "Course 1" course homepage
-    When I follow "Badges"
-    Then "Manage badges" "button" should exist
+    When I navigate to "Badges" in current page administration
+    Then "Manage badges" "button" should not exist
     And I click on "Add a new badge" "button"
     And I set the following fields to these values:
       | Name | Testing course badge |
@@ -31,24 +31,33 @@ Feature: Manage badges is not shown when there are no existing badges.
       | Image caption | Test caption image |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I click on "Create badge" "button"
+    And I click on "Back" "button"
+    And I should see "Testing course badge"
+    And I click on "Back" "button"
+    And "Manage badges" "button" should exist
+#    Badge is not enabled so is not listed.
+    And I should not see "Testing course badge"
+    And I click on "Manage badges" "button"
+    And I click on "Edit" "link" in the "Testing course badge" "table_row"
+    And I click on "Add criteria" "button"
     And I set the field "type" to "Manual issue by role"
     And I expand all fieldsets
     And I set the field "Teacher" to "1"
     And I click on "Save" "button"
-    And I click on "Manage badges" "link"
+    And I click on "Back" "button"
     And I should see "Testing course badge"
-    And I follow "Badges"
-    # Badge is not enabled yet so is not listed.
+    And I click on "Back" "button"
+    And "Manage badges" "button" should exist
+#    Badge is not enabled yet so is not listed.
     And I should not see "Testing course badge"
-    And I should see "There are currently no badges available for users to earn."
     And I click on "Manage badges" "button"
     And I click on "Enable access" "link" in the "Testing course badge" "table_row"
     And I click on "Continue" "button"
     And I should see "Testing course badge"
-    And I follow "Badges"
-    # Badge is already enabled so is listed.
+    And I click on "Back" "button"
+    And "Manage badges" "button" should exist
+#    Badge is already enabled so is listed.
     And I should see "Testing course badge"
-    And I should not see "There are currently no badges available for users to earn."
 
   Scenario: Check navigation at course level with no badges as a student
     # Create a badge, but leave it not enabled for now.
@@ -80,7 +89,7 @@ Feature: Manage badges is not shown when there are no existing badges.
     And I log out
     # Enable the badge.
     And I am on the "C1" "Course" page logged in as "admin"
-    And I follow "Badges"
+    And I navigate to "Badges" in current page administration
     And I click on "Manage badges" "button"
     And I click on "Enable access" "link" in the "Testing course badge" "table_row"
     And I press "Continue"

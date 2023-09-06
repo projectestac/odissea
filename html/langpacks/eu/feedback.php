@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'eu', version '3.11'.
+ * Strings for component 'feedback', language 'eu', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -59,7 +59,7 @@ $string['completed_feedbacks'] = 'Bidalitako erantzunak';
 $string['completedon'] = 'Noiz osatua: {$a}';
 $string['completiondetail:submit'] = 'Inkesta bidaltzea';
 $string['completionsubmit'] = 'Ikasleak inkesta bidali behar du osatzeko';
-$string['configallowfullanonymous'] = '\'Bai\' aukeratuz gero, erabiltzaileek inkesta osatu ahal izango dute hasiera-orrian, saioa hasi gabe ere.';
+$string['configallowfullanonymous'] = '\'Bai\' aukeratuz gero, erabiltzaileek hasiera-orriko inkesta bat osatu ahal izango dute, saioa hasi gabe ere.';
 $string['confirmdeleteentry'] = 'Ziur zaude sarrera hau ezabatu nahi duzula?';
 $string['confirmdeleteitem'] = 'Ziur zaude elementu hau ezabatu nahi duzula?';
 $string['confirmdeletetemplate'] = 'Ziur zaude txantiloi hau ezabatu nahi duzula?';
@@ -135,6 +135,7 @@ $string['feedback_is_not_open'] = 'Inkesta ez dago zabalik';
 $string['feedbackclose'] = 'Erantzunetarako itxiera-data';
 $string['feedbackcompleted'] = '{$a->username}(e)k osatu du {$a->feedbackname}';
 $string['feedbackopen'] = 'Erantzunetarako hasiera-data';
+$string['feedbackupdated'] = 'Inkesta eguneratuta.';
 $string['file'] = 'Fitxategia';
 $string['filter_by_course'] = 'Iragazi ikastaroen arabera';
 $string['handling_error'] = 'Errorea gertatu da inkesta moduluak ekintza kudeatzean';
@@ -148,10 +149,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa inkestetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Inkesta motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa inkestetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Inkesta jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala inkestetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Inkesta motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala inkestetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Inkesta jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea, parte-hartzea besteekin)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Informazioa';
 $string['infotype'] = 'Informazioa mota';
 $string['insufficient_responses'] = 'Ez dago erantzun nahikorik';
@@ -184,6 +187,7 @@ Inkesta jarduerak erabili daitezke
 * Parte-hartzaileek ikastaroko moduluetan, ekitaldietan, e.a. izena eman dezaten.
 * Gonbidatuen ikastaro aukerak, e.a. zundatzeko
 * Bullying-aren kontrako ikuskapena egiteko, bertan ikasleek modu anonimoan gertakarien berri eman dezaten';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = 'Inkesta';
 $string['move_item'] = 'Mugitu galdera hau';
 $string['multichoice'] = 'Aukera anizkoitzak';
@@ -225,6 +229,7 @@ $string['pagebreak'] = 'Orri-jauzia';
 $string['pluginadministration'] = 'Inkestaren kudeaketa';
 $string['pluginname'] = 'Inkesta';
 $string['position'] = 'Kokalekua';
+$string['previewquestions'] = 'Aurreikusi galderak';
 $string['previous_page'] = 'Aurreko orria';
 $string['privacy:metadata:completed'] = 'Inkestari egindako bidalketen erregistroa';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Bidalketa modu anonimoan erabiliko den edo ez.';
@@ -292,3 +297,4 @@ $string['use_one_line_for_each_value'] = 'Erabil ezazu lerro bat erantzun bakoit
 $string['use_this_template'] = 'Erabili txantiloi hau';
 $string['using_templates'] = 'Erabili txantiloia';
 $string['vertical'] = 'Bertikala';
+$string['whatfor'] = 'Zer egin nahi duzu?';

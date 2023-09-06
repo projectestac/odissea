@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'sv', version '3.11'.
+ * Strings for component 'datafield_picture', language 'sv', version '4.1'.
  *
  * @package     datafield_picture
  * @category    string
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'Fält för bild';
 $string['pluginname'] = 'Bild';
 $string['privacy:metadata'] = 'Fältkomponenten Bild lagrar ingen personinformation. Den använder tabeller definierade i mod_data.';
+$string['sample'] = 'Exempelbeskrivning';

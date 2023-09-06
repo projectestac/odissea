@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_estream', language 'el', version '3.11'.
+ * Strings for component 'assignsubmission_estream', language 'el', version '4.1'.
  *
  * @package     assignsubmission_estream
  * @category    string
@@ -27,12 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['currentsubmission'] = 'Τρέχουσα Υποβολή';
 $string['default'] = 'Ενεργοποιημένο από προεπιλογή';
-$string['enabled'] = 'Υποβολές Planet eStream ενεργοποιημένες';
-$string['enabled_help'] = 'Εάν ενεργοποιηθεί, οι μαθητές μπορούν να υποβάλλουν ανεβασμένα αρχεία ήχου/βίντεο για αξιολόγηση μέσω Planet eStream.';
+$string['enabled'] = 'Υποβολές Πλανήτη eStream ενεργοποιημένες';
+$string['enabled_help'] = 'Εάν ενεργοποιηθεί, οι μαθητές μπορούν να υποβάλλουν ανεβασμένα αρχεία ήχου/βίντεο για αξιολόγηση μέσω Πλανήτη eStream.';
 $string['nosubmission'] = 'Δεν έχει υποβληθεί ακόμη τίποτα';
-$string['notyetconfigured'] = 'Λυπούμαστε, το πρόσθετο υποβολής Planet eStream δεν είναι ακόμη ρυθμισμένο.';
-$string['pluginname'] = 'Πρόσθετο υποβολής Planet eStream';
-$string['settingsurl'] = 'Διεύθυνση URL Planet eStream';
+$string['notyetconfigured'] = 'Λυπούμαστε, το πρόσθετο υποβολής Πλανήτη eStream δεν είναι ακόμη ρυθμισμένο.';
+$string['pluginname'] = 'Πρόσθετο υποβολής Πλανήτη eStream';
+$string['settingsurl'] = 'Διεύθυνση URL Πλανήτη eStream';
 $string['shortname'] = 'Υποβολή βίντεο/ήχου';
 $string['upload'] = 'Ανέβασμα ενός αρχείου βίντεο ή ήχου';
 $string['uploadfailed'] = 'Το ανέβασμα απέτυχε!<br /><br />Παρακαλούμε, ανανεώστε την σελίδα και προσπαθήστε ξανά.';

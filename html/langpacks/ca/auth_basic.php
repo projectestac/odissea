@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_basic', language 'ca', version '3.11'.
+ * Strings for component 'auth_basic', language 'ca', version '4.1'.
  *
  * @package     auth_basic
  * @category    string
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['password'] = 'Contrasenya';
+$string['usage'] = 'Ús';
+$string['uses'] = 'Ús';

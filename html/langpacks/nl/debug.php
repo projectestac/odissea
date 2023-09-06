@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'nl', version '3.11'.
+ * Strings for component 'debug', language 'nl', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,17 @@ $string['notables'] = 'Geen tabellen!';
 $string['outputbuffer'] = 'Uitvoerbuffer';
 $string['phpvaroff'] = 'De PHP server variable \'{$a->name}\' moet Off zijn - {$a->link}';
 $string['phpvaron'] = 'De PHP server variable \'{$a->name}\' is niet ingeschakeld - {$a->link}';
+$string['reactive_highlightoff'] = 'Markeer UIT';
+$string['reactive_highlighton'] = 'Markeer AAN';
+$string['reactive_instances'] = 'Reactieve instanties:';
+$string['reactive_noinstances'] = 'Deze pagina heeft geen reactieve instanties';
+$string['reactive_pin'] = 'Vastzetten';
+$string['reactive_readmodeoff'] = 'Leesmodus UIT';
+$string['reactive_readmodeon'] = 'Leesmodus AAN';
+$string['reactive_resetpanel'] = 'Paneel resetten';
+$string['reactive_saveingwarning'] = 'Waarschuwing: het bewerken van de status kan onverwachte resultaten veroorzaken';
+$string['reactive_statedata'] = 'Staatsgegevens';
+$string['reactive_unpin'] = 'Losmaken';
 $string['sessionmissing'] = '{$a} object ontbreekt in de sessie';
 $string['sqlrelyonobsoletetable'] = 'Deze SQL steunt op onbestaande tabellen: {$a}! Je code moet aangepast worden door een software-ontwikkelaar.';
 $string['stacktrace'] = 'Stack trace';

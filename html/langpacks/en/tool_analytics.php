@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'en', version '3.11'.
+ * Strings for component 'tool_analytics', language 'en', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -88,7 +88,6 @@ $string['exportmodel'] = 'Export configuration';
 $string['exporttrainingdata'] = 'Export training data';
 $string['extrainfo'] = 'Info';
 $string['generalerror'] = 'Evaluation error. Status code {$a}';
-$string['getpredictions'] = 'Get predictions';
 $string['goodmodel'] = 'This is a good model for using to obtain predictions. Enable it to start obtaining predictions.';
 $string['ignoreversionmismatches'] = 'Ignore version mismatches';
 $string['ignoreversionmismatchescheckbox'] = 'Ignore the differences between this site version and the original site version.';

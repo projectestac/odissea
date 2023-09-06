@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'it', version '3.11'.
+ * Strings for component 'tool_behat', language 'it', version '4.1'.
  *
  * @package     tool_behat
  * @category    string
@@ -27,7 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'Tool amministrativo per aiutare sviluppatori e tester a creare file .feature che descrivono le funzionalità di Moodle. I file potranno essere eseguiti automaticamente. Le definizioni disponibili degli step sono elencate sotto.';
 $string['allavailablesteps'] = 'Tutte le definizioni disponibili degli step';
-$string['errorapproot'] = '$CFG->behat_ionic_dirroot non punta a un\'installazione valida dello sviluppatore dell\'app Moodle.';
 $string['errorbehatcommand'] = 'Si è verificato un errore durante l\'elaborazione CLI di behat. Prova a lanciare manualmente "{$a} --help" via CLI per ottenere maggiori informazioni sul problema.';
 $string['errorcomposer'] = 'Le dipendenze di Composer non sono installate.';
 $string['errordataroot'] = '$CFG->behat_dataroot non impostata o non valida.';
@@ -36,10 +35,7 @@ $CFG->behat_prefix and $CFG->behat_wwwroot devono essere impostate in config.php
 $string['erroruniqueconfig'] = 'I valori di
 $CFG->behat_dataroot,
 $CFG->behat_prefix and $CFG->behat_wwwroot devono essere diversi da
-$CFG->dataroot,
-$CFG->prefix,
-$CFG->wwwroot,
-$CFG->phpunit_dataroot and $CFG->phpunit_prefix values.';
+$CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot e$CFG->phpunit_prefix values.<br/>Oppure, se $CFG->behat_prefix è lo stesso, $CFG->behat_dbname or $CFG->behat_dbhost devono essere diversi da $CFG->phpunit_dbname and $CFG->phpunit_dbhost e da $CFG->dbnam e e$CFG->dbhost.';
 $string['fieldvalueargument'] = 'Argomenti valore del campo';
 $string['fieldvalueargument_help'] = 'L\'argomento deve essere completato da un valore del campo. Esistono diversi tipi di campo, alcuni semplici come caselle di spunta, menu a tendina o aree d testo, altri più complessi come i campi data. Per conoscere il valore atteso in funzione del tipo di campo è possibile consultare <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Field values</a>.';
 $string['giveninfo'] = 'Fornito. Procedure per impostare l\'ambiente';

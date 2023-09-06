@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ko', version '3.11'.
+ * Strings for component 'message', language 'ko', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -108,7 +108,6 @@ $string['nofavourites'] = '별 없는 대화방';
 $string['noframesjs'] = '더 접근성 있는 인터페이스 사용';
 $string['nogroupconversations'] = '그룹 대화 없음';
 $string['noindividualconversations'] = '비공개 대화 없음';
-$string['nomessages'] = '대기중인 쪽지 없음';
 $string['nomessagesfound'] = '메세지가 없습니다.';
 $string['noreply'] = '이 쪽지에 답장하지 마십시요.';
 $string['notificationpreferences'] = '알림 환경설정';
@@ -117,11 +116,7 @@ $string['notincontactsheading'] = '{$a}님이 연락처에 없습니다.';
 $string['numparticipants'] = '참가자 {$a}';
 $string['offline'] = '오프라인';
 $string['online'] = '온라인';
-$string['outputdisabled'] = '출력 비활성화됨';
-$string['outputdoesnotexist'] = '메세지 출력이 존재하지 않습니다.';
-$string['outputenabled'] = '출력 활성화됨';
 $string['outputnotavailable'] = '사용할 수 없음';
-$string['outputnotconfigured'] = '구성되지 않음';
 $string['page-message-x'] = '모든 메세지 페이지';
 $string['pendingcontactrequests'] = '대기 중인 연락처 요청이 있습니다.';
 $string['permitted'] = '승인됨';

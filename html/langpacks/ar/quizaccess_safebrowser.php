@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_safebrowser', language 'ar', version '3.11'.
+ * Strings for component 'quizaccess_safebrowser', language 'ar', version '4.1'.
  *
  * @package     quizaccess_safebrowser
  * @category    string

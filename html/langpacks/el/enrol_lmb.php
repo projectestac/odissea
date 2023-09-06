@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_lmb', language 'el', version '3.11'.
+ * Strings for component 'enrol_lmb', language 'el', version '4.1'.
  *
  * @package     enrol_lmb
  * @category    string
@@ -39,7 +39,7 @@ $string['cathiddenhelp'] = 'Δημιουργία νέων κατηγοριών �
 $string['catselect'] = 'Επιλεγμένη Κατηγορία';
 $string['catselecthelp'] = '';
 $string['commadelimit'] = '(Διαχωριζόμενα με κόμμα)';
-$string['computesections'] = 'Υπολογισμός αριθμού τμημάτων';
+$string['computesections'] = 'Υπολογισμός αριθμού ενοτήτων';
 $string['computesectionshelp'] = 'Υπολογισμός του αριθμού των ενοτήτων/θεμάτων προς εμφάνιση, με βάση τον αριθμό των εβδομάδων σε ένα μάθημα.';
 $string['coursehidden'] = 'Δημιουργία νέων μαθημάτων σε απόκρυψη';
 $string['coursehiddenalways'] = 'Πάντα';
@@ -67,7 +67,7 @@ $string['filtermode'] = 'Κατάσταση λειτουργίας φιλτρα�
 $string['forceadr'] = 'Υποχρεωτικά οδός διεύθυνσης';
 $string['forcecat'] = 'Επιβολή κατηγορίας κατά την ενημέρωση';
 $string['forcecity'] = 'Επιβολή πόλης κατά την ενημέρωση';
-$string['forcecomputesections'] = 'Επιβολή υπολογισμού τμημάτων';
+$string['forcecomputesections'] = 'Επιβολή υπολογισμού ενοτήτων';
 $string['forceemail'] = 'Επιβολή διεύθυνσης ηλε.ταχυδρομείου κατά την ενημέρωση';
 $string['forcename'] = 'Επιβολή ονόματος κατά την ενημέρωση';
 $string['forcepassword'] = 'Επιβολή κωδικού πρόσβασης κατά την ενημέρωση';
@@ -119,7 +119,7 @@ $string['parseperson'] = 'Συντακτική ανάλυση XML - Άτομο';
 $string['parsepersonxml'] = 'Συντακτική ανάλυση XML ατόμου';
 $string['passwordsource'] = 'Προέλευση κωδικού πρόσβασης';
 $string['selectedcat'] = 'Επιλογή:';
-$string['sourdidfallback'] = 'Επαναφορά στο sourcedid αν το όνομα χρήστη δεν υπάρχει';
+$string['sourdidfallback'] = 'Εναλλακτικά στο sourcedid αν το όνομα χρήστη δεν υπάρχει';
 $string['sourdidfallbackhelp'] = 'Ορίστε το userid στο sourcedid των ατόμων αν δεν υπάρχει το όνομα χρήστη. Σε γενικές γραμμές, οι χρήστες δεν θα γνωρίζουν αυτόν τον αριθμό, οπότε δεν θα μπορούν να συνδεθούν, αλλά θα δημιουργηθεί ο λογαριασμός ως σύμβολο υποκατάστασης μέχρι να ληφθούν περισσότερα ολοκληρωμένα δεδομένα.';
 $string['standardcity'] = 'Τυπική πόλη';
 $string['standardcityhelp'] = '';

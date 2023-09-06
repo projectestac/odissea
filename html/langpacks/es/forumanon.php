@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumanon', language 'es', version '3.11'.
+ * Strings for component 'forumanon', language 'es', version '4.1'.
  *
  * @package     forumanon
  * @category    string
@@ -124,3 +124,4 @@ $string['discussionmovedpost'] = 'Este debate se ha trasladado <a href="{$a->dis
 $string['discussionname'] = 'Título del debate';
 $string['discussions'] = 'Debates';
 $string['introsocial'] = 'Un foro abierto para charlar sobre cualquier cosa';
+$string['modulename_link'] = 'forumanon';

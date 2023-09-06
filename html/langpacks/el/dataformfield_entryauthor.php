@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataformfield_entryauthor', language 'el', version '3.11'.
+ * Strings for component 'dataformfield_entryauthor', language 'el', version '4.1'.
  *
  * @package     dataformfield_entryauthor
  * @category    string
@@ -29,7 +29,7 @@ $string['currentuser'] = 'Τρέχων χρήστης';
 $string['fieldname'] = 'EAU';
 $string['pluginname'] = 'Συγγραφέας καταχώρησης (εσωτερικά)';
 $string['useremail'] = 'Διεύθυνση ηλε.ταχυδρομείου χρήστη';
-$string['userfirstname'] = 'Πρώτο/βαπτιστικό όνομα χρήστη';
+$string['userfirstname'] = 'Μικρό/βαπτιστικό όνομα χρήστη';
 $string['userid'] = 'Αναγνωριστικό χρήστη';
 $string['useridnumber'] = 'Αναγνωριστικός αριθμός χρήστη';
 $string['userlastname'] = 'Επώνυμο χρήστη';

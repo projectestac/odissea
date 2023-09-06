@@ -586,8 +586,8 @@
 		
 		"evaluate_keyword": "auswerten",
 		
-		"home_getting_started_welcome_header_text": "Willkommen zu WirisQuizzes 4.7.0",
-        "home_getting_started_welcome_description_text": "Hallo, wir haben eine Rubrik \"Erste Schritte\" in unser Menü aufgenommen, damit Sie anhand unserer Dokumentation, Schulungen und Neuigkeiten mehr über WirisQuizzes erfahren können.",
+		"home_getting_started_welcome_header_text": "Wir stellen Ihnen WirisQuizzes 4.8.0 vor: Jetzt mit handgeschriebenen Diagrammbearbeitungen",
+        "home_getting_started_welcome_description_text": "Wir freuen uns, Ihnen einen neuen Antworttyp vorzustellen, der es Ihren Studierenden ermöglicht, ein Diagramm handschriftlich zu bearbeiten. Wenn Sie mehr über diese Funktion erfahren möchten, lesen Sie unsere Versionshinweise und die Dokumentationsunterlagen. Wir hoffen, dass Ihnen und Ihren Studierenden diese neue Funktion für WirisQuizzes gefällt!",
         "home_getting_started_release_notes_button_text": "Versionshinweise",
         "home_getting_give_us_feedback_button_text": "Ihr Feedback",
         "home_getting_started_create_question_header_text": "So erstellen Sie Ihre erste Frage",
@@ -603,7 +603,15 @@
         "home_getting_started_contact_us_button_text": "Kontaktieren Sie uns",
         "home_getting_started_visit_our_webpage_button_text": "Unsere Website besuchen",
         "home_getting_started_report_an_issue_button_text": "Ein Problem melden",
-		"home_getting_started_list_button_text": "Erste Schritte"
+		"home_getting_started_list_button_text": "Erste Schritte",
+
+		"quizzes_studio_home_answer_type_sketch_label": "Skizze",
+		"quizzes_studio_home_initial_content_description_sketch": "Dies ist der ursprüngliche Inhaltsstatus des Diagrammeditors, den Ihre Studierenden sehen, wenn sie die Frage bearbeiten. Beachten Sie, dass die Symbolleiste für Studierende nur die Schaltflächen Handschrift und Löschen enthält. Nutzen Sie die Funktion „Teste diese Frage“, um zu sehen, wie sie aussieht.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_1": "Die richtige Antwort auf diese Frage eingeben. Ihre Studierenden benutzen das Tool „Handschrift“, um ihre Lösung zu skizzieren, daher haben wir eine minimale Toleranz für geringfügige Ungenauigkeiten bei den Antworten festgelegt. Sie können dies anpassen, indem Sie auf „Validierungsoptionen“ klicken.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Über die Schaltfläche „Teste diese Frage“ können Sie die Ansicht des Studierenden sehen.",
+		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Skizze gleich",
+		"quizzes_demo_sketch_title_menu" : "Skizze",
+		"home_getting_started_documentation_button_text" : "Dokumentation"
 	}
 }
 

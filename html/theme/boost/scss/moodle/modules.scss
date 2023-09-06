@@ -10,11 +10,64 @@ select {
 }
 
 .path-mod {
-    div.activity-information {
-        border-bottom: $border-width solid $table-border-color;
-        padding-top: map-get($spacers, 2);
+    .activity-header:not(:empty) {
+        background-color: $gray-100;
+        margin-bottom: map-get($spacers, 3);
+        padding-left: map-get($spacers, 3);
+        padding-right: map-get($spacers, 3);
+
+        @include border-radius();
+
+        & > div:last-child > div:last-child {
+            border-bottom: 0;
+        }
+    }
+    .activity-information {
+
+        .activity-dates {
+            padding-top: map-get($spacers, 3);
+            padding-bottom: map-get($spacers, 3);
+            border-bottom: $border-width solid $border-color;
+        }
+        .completion-info {
+            padding-top: map-get($spacers, 3);
+            padding-bottom: map-get($spacers, 3);
+            border-bottom: $border-width solid $border-color;
+        }
+    }
+    .activity-description {
+        padding-top: map-get($spacers, 3);
         padding-bottom: map-get($spacers, 3);
-        margin-bottom: map-get($spacers, 2);
+        & > .box.py-3 {
+            padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */
+            padding-bottom: 0 !important; /* stylelint-disable-line declaration-no-important */
+        }
+        & > .box.py-3:empty {
+            display: none;
+        }
+    }
+    .automatic-completion-conditions .badge {
+        font-size: 80%;
+        padding: map-get($spacers, 2);
+        margin-top: map-get($spacers, 1);
+        mix-blend-mode: multiply;
+        &.badge-light {
+            background-color: $gray-200 !important; /* stylelint-disable-line declaration-no-important */
+        }
+
+        .icon {
+            width: 0.7rem;
+            height: 0.7rem;
+            font-size: 0.7rem;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .activity-description .no-overflow p:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -30,19 +83,6 @@ select {
     .choices .option label {
         vertical-align: top;
     }
-}
-
-.path-mod-feedback .feedback_form .col-form-label {
-    display: block !important; /* stylelint-disable-line declaration-no-important */
-}
-
-// Feedback module
-.path-mod-feedback .itemactions {
-    float: right;
-}
-.path-mod-feedback .itemhandle {
-    position: absolute;
-    right: 1rem;
 }
 
 // Forum module
@@ -117,17 +157,6 @@ select {
             // Do not use the default bold style for the table headings.
             font-weight: inherit;
         }
-    }
-
-    // Style for the forum subscription mode node.
-    .subscriptionmode {
-        color: $body-color;
-    }
-
-    // Style for the currently selected subscription mode.
-    .activesetting {
-        color: $body-color;
-        font-weight: bold;
     }
 }
 
@@ -383,7 +412,7 @@ $author-image-margin-sm: 8px;
                 .author-image-container {
                     width: $author-image-width-sm;
                     margin-right: $author-image-margin-sm;
-                    padding-top: (36px - $author-image-width-sm) / 2;
+                    padding-top: (36px - $author-image-width-sm) * 0.5;
                 }
 
                 /**
@@ -442,10 +471,6 @@ $author-image-margin-sm: 8px;
 .filter-dates-popover {
     width: 100%;
     max-width: 41.5em;
-
-    .mform {
-        margin-left: -3em;
-    }
 }
 
 $grading-drawer-width: 430px !default;
@@ -461,7 +486,7 @@ $grading-content-show-content-button-padding-left: calc(#{map-get($spacers, 2) *
     from {
         height: $grading-icon-button-size;
         width: $grading-icon-button-size;
-        border-radius: $grading-icon-button-size / 2;
+        border-radius: $grading-icon-button-size * 0.5;
         background-color: $gray-200;
     }
     to {
@@ -496,7 +521,7 @@ $grading-content-show-content-button-padding-left: calc(#{map-get($spacers, 2) *
     to {
         height: $grading-icon-button-size;
         width: $grading-icon-button-size;
-        border-radius: $grading-icon-button-size / 2;
+        border-radius: $grading-icon-button-size * 0.5;
         background-color: $gray-200;
     }
 }
@@ -959,10 +984,6 @@ $grading-content-show-content-button-padding-left: calc(#{map-get($spacers, 2) *
     width: auto;
 }
 
-.path-mod-data form {
-    margin-top: 10px;
-}
-
 .template_heading {
     margin-top: 10px;
 }
@@ -1077,12 +1098,6 @@ div#dock {
 }
 
 // Usermenu
-.usermenu {
-    .login {
-        line-height: 2.25rem;
-    }
-}
-
 .userloggedinas,
 .userswitchedrole,
 .loginfailures {
@@ -1090,11 +1105,11 @@ div#dock {
         .usertext {
             float: left;
             text-align: right;
-            margin-right: $spacer / 2;
+            margin-right: $spacer * 0.5;
             height: 35px;
             .meta {
-                display: block;
                 font-size: $font-size-sm;
+                align-items: center;
             }
         }
         .avatar {
@@ -1121,6 +1136,13 @@ div#dock {
                 img {
                     vertical-align: baseline;
                 }
+                .userinitials.size-35 {
+                    width: 20px;
+                    height: 20px;
+                    border: $border-width solid $border-color;
+                    background-color: $white;
+                    font-size: $font-size-base * .6;
+                }
             }
             img {
                 width: inherit;
@@ -1133,6 +1155,41 @@ div#dock {
             display: inline-block;
         }
     }
+}
+
+.userinitials {
+    background-color: $gray-200;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: $gray-800;
+    font-weight: normal;
+    margin-right: $spacer * 0.25;
+    &.size-16,
+    &.size-30 {
+        font-size: 0.7rem;
+        width: 30px;
+        height: 30px;
+    }
+    &.size-35 {
+        width: 35px;
+        height: 35px;
+    }
+    &.size-64 {
+        width: 64px;
+        height: 64px;
+    }
+    &.size-100 {
+        width: 100px;
+        height: 100px;
+        font-size: $h2-font-size;
+    }
+}
+
+img.userpicture {
+    margin-right: $spacer * 0.25;
 }
 
 @include media-breakpoint-down(sm) {
@@ -1338,6 +1395,8 @@ $popout-header-height: 4rem;
 
 .path-mod-assign [data-region="grade-panel"] .mform .fitem.has-popout .felement {
     width: 100%;
+    overflow: auto;
+    height: calc(100% - 4rem);
 }
 
 .path-mod-assign [data-region="grade-panel"] .mform .fitem .felement {

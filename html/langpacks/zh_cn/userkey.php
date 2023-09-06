@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'zh_cn', version '3.11'.
+ * Strings for component 'userkey', language 'zh_cn', version '4.1'.
  *
  * @package     userkey
  * @category    string
@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adduserkey'] = '添加用户密钥';
 $string['createnewkey'] = '新建一个用户密钥';
 $string['createuserkey'] = '创建用户密钥';
 $string['deletekeyconfirm'] = '确定删除该用户的密钥吗？';
+$string['deleteuserkey'] = '删除用户密钥';
 $string['edituserkey'] = '编辑用户密钥';
 $string['keyiprestriction'] = '密钥IP限制';
 $string['keyiprestriction_help'] = '输入一个IP地址，或者一个IP地址段，只允许此范围内的IP地址访问数据。如果不限制IP访问，则不用输入（不推荐后）。';

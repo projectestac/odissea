@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ca', version '3.11'.
+ * Strings for component 'label', language 'ca', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -34,6 +34,8 @@ $string['dndresizewidth'] = 'Amplada de redimensionat en arrossegar i soltar';
 $string['dnduploadlabel'] = 'Afegeix un recurs multimèdia a la pàgina del curs';
 $string['dnduploadlabeltext'] = 'Afegeix una etiqueta a la pàgina del curs';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats d\'Etiqueta en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['label:addinstance'] = 'Afegeix una etiqueta nova';
 $string['labeltext'] = 'Text de l\'etiqueta';
 $string['modulename'] = 'Etiqueta';
@@ -44,7 +46,8 @@ Les etiquetes es poden utilitzar
 * Per a separar una llista llarga d\'activitats amb subtítols o alguna imatge
 * Per a mostrar un fitxer incrustat d\'àudio o vídeo directament en la pàgina principal del curs
 * Per a afegir una breu descripció en una secció del curs';
+$string['modulename_link'] = 'mod/label/view';
 $string['modulenameplural'] = 'Etiquetes';
 $string['pluginadministration'] = 'Administració d\'etiquetes';
-$string['pluginname'] = 'Etiqueta';
+$string['pluginname'] = 'Àrea de text i multimèdia';
 $string['search:activity'] = 'Etiqueta';

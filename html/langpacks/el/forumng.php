@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumng', language 'el', version '3.11'.
+ * Strings for component 'forumng', language 'el', version '4.1'.
  *
  * @package     forumng
  * @category    string
@@ -49,7 +49,7 @@ $string['alert_reasons'] = 'Λόγοι αναφοράς ανάρτησης';
 $string['alert_reporterdetail'] = '{$a->fullname} ({$a->username}; {$a->email}; {$a->ip})';
 $string['alert_reporterinfo'] = '<strong>Λεπτομέρειες του αναφέροντος</strong>:';
 $string['alert_submit'] = 'Αποστολή αναφοράς';
-$string['alert_turnedoff'] = 'Η λειτουργία συναγερμικής ειδοποίησης δεν είναι διαθέσιμη.';
+$string['alert_turnedoff'] = 'Η λειτουργία επαγρύπνησης δεν είναι διαθέσιμη.';
 $string['allowsubscribe'] = 'Να επιτρέπεται στους χρήστες να εγγράφονται';
 $string['allsubscribe'] = 'Εγγραφή σε όλα τα φόρουμ.';
 $string['allunsubscribe'] = 'Απεγγραφή από όλα τα φόρουμ.';
@@ -89,7 +89,7 @@ $string['configfeeditems'] = 'Αριθμός πρόσφατων μηνυμάτω
 $string['configfeedtype'] = 'Επιλογή των πληροφοριών προς συμπερίληψη σε όλες τις τροφοδοσίες RSS για φόρουμ.';
 $string['confighousekeepingstophour'] = 'Η αρχειοθέτηση εργασιών θα σταματά αυτή την ώρα.';
 $string['configreplytouser'] = 'Όταν μια ανάρτηση φόρουμ αποστέλλεται με ηλε.ταχυδρομείο, να περιέχει τη διεύθυνση του αποστολέα, ώστε οι παραλήπτες να μπορούν να απαντήσουν προσωπικά και όχι μόνο μέσω του φόρουμ; Ακόμα και αν οριστεί σε «Ναι» οι χρήστες μπορούν να επιλέξουν μέσα από το προφίλ τους να αποκρύπτουν την διεύθυνση ηλε.ταχυδρομείου τους.';
-$string['configreportunacceptable'] = 'Αυτή η διεύθυνση ηλε.ταχυδρομείου χρησιμοποιείται για αναφορά προσβλητικών αναρτήσεων από το ForumNG σε επίπεδο ιστοτόπου. Αν αυτή η διεύθυνση αφεθεί κενή, τότε η λειτουργία συναγερμικών ειδοποιήσεων θα απενεργοποιηθεί εκτός αν έχει ενεργοποιηθεί σε επίπεδο φόρουμ.';
+$string['configreportunacceptable'] = 'Αυτή η διεύθυνση ηλε.ταχυδρομείου χρησιμοποιείται για αναφορά προσβλητικών αναρτήσεων από το ForumNG σε επίπεδο ιστοτόπου. Αν αυτή η διεύθυνση αφεθεί κενή, τότε η λειτουργία επαγρυπνήσεων θα απενεργοποιηθεί εκτός αν έχει ενεργοποιηθεί σε επίπεδο φόρουμ.';
 $string['configtrackreadposts'] = 'Ορίστε το σε «Ναι» αν θέλετε να παρακολουθείται η ανάγνωση ή η μη ανάγνωση για κάθε χρήστη.';
 $string['confirmdeletediscuss'] = 'Διαγραφή συζήτησης';
 $string['confirmselection'] = 'Επιβεβαίωση επιλογής';
@@ -242,6 +242,7 @@ $string['forumng:viewsubscribers'] = 'Εμφάνιση εγγεγραμμένω�
 $string['forums'] = 'Φόρουμ';
 $string['forumsubscription'] = 'Εγγραφή σε φόρουμ';
 $string['forumtype'] = 'Τύπος φόρουμ';
+$string['forumtype_link'] = 'mod/forumng/forumtypes';
 $string['from'] = 'από: {$a}';
 $string['grade'] = 'Βαθμός';
 $string['grading'] = 'Βαθμός';
@@ -371,12 +372,12 @@ $string['setforumtags'] = 'Ορισμός ετικετών για το φόρο�
 $string['setimportant'] = 'Επισήμανση αναρτήσεων ως σημαντικών';
 $string['settag_label'] = 'Ορισμός';
 $string['settags'] = 'Ορισμός ετικετών συζήτησης';
-$string['shared'] = 'Να επιτρέπεται ο διαμοιρασμός του φόρουμ';
+$string['shared'] = 'Να επιτρέπεται η κοινή χρήση του φόρουμ';
 $string['sharedviewinfolist'] = 'Συμπεριλαμβάνεται στο ακόλουθο: {$a}.';
 $string['sharedviewinfonone'] = 'Δεν συμπεριλαμβάνεται αυτή τη στιγμή σε κανένα άλλο μάθημα.';
-$string['sharedviewinfooriginal'] = '<strong>Αυτό το φόρουμ διαμοιράζεται</strong> με το όνομα
+$string['sharedviewinfooriginal'] = '<strong>Αυτό το φόρουμ χρησιμοποιείται από κοινού </strong> με το όνομα
 <strong>{$a}</strong> για χρήση σε άλλα μαθήματα.';
-$string['sharing'] = 'Διαμοιρασμός φόρουμ';
+$string['sharing'] = 'Κοινή χρήση φόρουμ';
 $string['show_all'] = 'Εμφάνιση όλων';
 $string['showidnumber'] = 'Εμφάνιση αναγνωριστικών αριθμών';
 $string['showusername'] = 'Εμφάνιση ονόματος χρηστών';

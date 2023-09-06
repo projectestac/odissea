@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'it', version '3.11'.
+ * Strings for component 'report_performance', language 'it', version '4.1'.
  *
  * @package     report_performance
  * @category    string
@@ -33,6 +33,9 @@ $string['check_backup_details'] = 'Il backup automatico creerà automaticamente 
 $string['check_cachejs_comment_disable'] = 'Se abilitata, la velocità di caricamento delle pagine migliora';
 $string['check_cachejs_comment_enable'] = 'Se disabilitata, la velocità di caricamento delle pagine potrebbe ridursi';
 $string['check_cachejs_details'] = 'Il caching e la compressione javascript migliorano notevolmente la velocità di caricamento delle pagine. Si raccomanda di abilitare l\'impostazione in tutti i siti di produzione.';
+$string['check_dbschema_errors'] = 'Lo schema del database non è allineato.';
+$string['check_dbschema_name'] = 'Controllo dello schema database';
+$string['check_dbschema_ok'] = 'Lo schema del database è corretto.';
 $string['check_debugmsg_comment_developer'] = 'Dando all\'impostazione un valore diverso da SVILUPPATORE, le prestazioni possono migliorare leggermente.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Con l\'impostazione valorizzata a SVILUPPATORE  le prestazioni possono ridursi leggermente.';
 $string['check_debugmsg_details'] = 'A meno che il sito sia di sviluppo, è difficile che ci siano vantaggi a mantenere il livello di debug a SVILUPPATORE.<p>Qualora necessario per individuare un problema, si raccomanda fortemente di riportare il livello di debug  a NESSUNO subito dopo l\'individuazione dell\'errore. I messaggi di debug non solo riducono le prestazioni ma possono suggerire informazioni sulla configurazione del sito ad un hacker.</p>';

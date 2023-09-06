@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'ru', version '3.11'.
+ * Strings for component 'atto_charmap', language 'ru', version '4.1'.
  *
  * @package     atto_charmap
  * @category    string
@@ -61,7 +61,7 @@ $string['carriagereturn'] = 'возврат строки';
 $string['ccedilla'] = 'c с седиль';
 $string['ccedilla_caps'] = 'С с седиль';
 $string['cedilla'] = 'седиль (крючок снизу)';
-$string['centsign'] = 'цент';
+$string['centsign'] = 'Символ цента';
 $string['chi'] = 'ши';
 $string['chi_caps'] = 'Ши';
 $string['circledplus'] = 'исключающее или';
@@ -103,7 +103,7 @@ $string['eta'] = 'эта';
 $string['eta_caps'] = 'Эта';
 $string['eth'] = 'буква eth';
 $string['eth_caps'] = 'буква ETH';
-$string['eurosign'] = 'евро';
+$string['eurosign'] = 'Символ евро';
 $string['feminineordinalindicator'] = 'женский символ';
 $string['finalsigma'] = 'сигма в конце слова';
 $string['forall'] = 'для всех';
@@ -210,7 +210,7 @@ $string['pi_caps'] = 'Пи';
 $string['pisymbol'] = 'пи';
 $string['pluginname'] = 'Вставка символа';
 $string['plusminussign'] = 'плюс-минус';
-$string['poundsign'] = 'фунт стерлингов';
+$string['poundsign'] = 'Символ фунта стерлингов';
 $string['privacy:metadata'] = 'Плагин atto_charmap не хранит никаких персональных данных.';
 $string['proportionalto'] = 'пропорционален';
 $string['psi'] = 'пси';

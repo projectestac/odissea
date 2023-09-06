@@ -14,15 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * Unit tests for lib/navigationlib.php
- *
- * @package   core
- * @category  test
- * @copyright 2009 Sam Hemelryk
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later (5)
- */
-
 namespace core;
 
 use action_link;
@@ -563,6 +554,147 @@ class navigationlib_test extends \advanced_testcase {
 
         // Test it's empty again!
         $this->assertEquals(0, count($navigationnodecollection->get_key_list()));
+    }
+
+    /**
+     * Test the set_force_into_more_menu method.
+     *
+     * @param bool $haschildren       Whether the navigation node has children nodes
+     * @param bool $forceintomoremenu Whether to force the navigation node and its children into the "more" menu
+     * @dataProvider set_force_into_more_menu_provider
+     */
+    public function test_set_force_into_more_menu(bool $haschildren, bool $forceintomoremenu) {
+        // Create a navigation node.
+        $node = new navigation_node(['text' => 'Navigation node', 'key' => 'navnode']);
+
+        // If required, add some children nodes to the navigation node.
+        if ($haschildren) {
+            for ($i = 1; $i <= 3; $i++) {
+                $node->add("Child navigation node {$i}");
+            }
+        }
+
+        $node->set_force_into_more_menu($forceintomoremenu);
+        // Assert that the expected value has been assigned to the 'forceintomoremenu' property
+        // in the navigation node and its children.
+        $this->assertEquals($forceintomoremenu, $node->forceintomoremenu);
+        foreach ($node->children as $child) {
+            $this->assertEquals($forceintomoremenu, $child->forceintomoremenu);
+        }
+    }
+
+    /**
+     * Data provider for the test_set_force_into_more_menu function.
+     *
+     * @return array
+     */
+    public function set_force_into_more_menu_provider(): array {
+        return [
+            'Navigation node without any children nodes; Force into "more" menu => true.' =>
+                [
+                    false,
+                    true,
+                ],
+            'Navigation node with children nodes; Force into "more" menu => true.' =>
+                [
+                    true,
+                    true,
+                ],
+            'Navigation node with children nodes; Force into "more" menu => false.' =>
+                [
+                    true,
+                    false,
+                ],
+        ];
+    }
+
+    /**
+     * Test the is_action_link method.
+     *
+     * @param navigation_node $node The sample navigation node
+     * @param bool $expected Whether the navigation node contains an action link
+     * @dataProvider is_action_link_provider
+     * @covers navigation_node::is_action_link
+     */
+    public function test_is_action_link(navigation_node $node, bool $expected) {
+        $this->assertEquals($node->is_action_link(), $expected);
+    }
+
+    /**
+     * Data provider for the test_is_action_link function.
+     *
+     * @return array
+     */
+    public function is_action_link_provider(): array {
+        return [
+            'The navigation node has an action link.' =>
+                [
+                    navigation_node::create('Node', new action_link(new \moodle_url('/'), '',
+                        new popup_action('click', new \moodle_url('/'))), navigation_node::TYPE_SETTING),
+                    true
+                ],
+
+            'The navigation node does not have an action link.' =>
+                [
+                    navigation_node::create('Node', new \moodle_url('/'), navigation_node::TYPE_SETTING),
+                    false
+                ],
+        ];
+    }
+
+    /**
+     * Test the action_link_actions method.
+     *
+     * @param navigation_node $node The sample navigation node
+     * @dataProvider action_link_actions_provider
+     * @covers navigation_node::action_link_actions
+     */
+    public function test_action_link_actions(navigation_node $node) {
+        // Get the formatted array of action link actions.
+        $data = $node->action_link_actions();
+        // The navigation node has an action link.
+        if ($node->action instanceof action_link) {
+            if (!empty($node->action->actions)) { // There are actions added to the action link.
+                $this->assertArrayHasKey('actions', $data);
+                $this->assertCount(1, $data['actions']);
+                $expected = (object)[
+                    'id' => $node->action->attributes['id'],
+                    'event' => $node->action->actions[0]->event,
+                    'jsfunction' => $node->action->actions[0]->jsfunction,
+                    'jsfunctionargs' => json_encode($node->action->actions[0]->jsfunctionargs)
+                ];
+                $this->assertEquals($expected, $data['actions'][0]);
+            } else { // There are no actions added to the action link.
+                $this->assertArrayHasKey('actions', $data);
+                $this->assertEmpty($data['actions']);
+            }
+        } else { // The navigation node does not have an action link.
+            $this->assertEmpty($data);
+        }
+    }
+
+    /**
+     * Data provider for the test_action_link_actions function.
+     *
+     * @return array
+     */
+    public function action_link_actions_provider(): array {
+        return [
+            'The navigation node has an action link with an action attached.' =>
+                [
+                    navigation_node::create('Node', new action_link(new \moodle_url('/'), '',
+                        new popup_action('click', new \moodle_url('/'))), navigation_node::TYPE_SETTING),
+                ],
+            'The navigation node has an action link without an action.' =>
+                [
+                    navigation_node::create('Node', new action_link(new \moodle_url('/'), '', null),
+                        navigation_node::TYPE_SETTING),
+                ],
+            'The navigation node does not have an action link.' =>
+                [
+                    navigation_node::create('Node', new \moodle_url('/'), navigation_node::TYPE_SETTING),
+                ],
+        ];
     }
 }
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'fr', version '3.11'.
+ * Strings for component 'question', language 'fr', version '4.1'.
  *
  * @package     question
  * @category    string
@@ -35,6 +35,7 @@ $string['alltries'] = 'Toutes les tentatives';
 $string['answer'] = 'Réponse';
 $string['answers'] = 'Réponses';
 $string['answersaved'] = 'Réponse enregistrée';
+$string['answerx'] = 'Réponse {$a}';
 $string['attemptfinished'] = 'Tentative terminée';
 $string['attemptfinishedsubmitting'] = 'Envoi de la tentative terminée : {$a}';
 $string['attemptoptions'] = 'Options des tentatives';
@@ -69,6 +70,7 @@ $string['cannotmovequestion'] = 'Vous ne pouvez pas utiliser ce script pour dép
 $string['cannotopenforwriting'] = 'Impossible d\'ouvrir en écriture {$a}';
 $string['cannotpreview'] = 'Impossible de prévisualiser ces questions !';
 $string['cannotread'] = 'Impossible d\'ouvrir le fichier d\'importation (ou le fichier est vide)';
+$string['cannotregradedifferentqtype'] = 'Impossible de ré-évaluer avec une question d\'un type différent.';
 $string['cannotretrieveqcat'] = 'Impossible de trouver la catégorie de questions';
 $string['cannotunhidequestion'] = 'Impossible de rendre visible cette question.';
 $string['cannotunzip'] = 'Impossible de décompresser le fichier.';
@@ -120,8 +122,13 @@ $string['defaultinfofor'] = 'La catégorie par défaut pour les questions partag
 $string['defaultmark'] = 'Note par défaut';
 $string['defaultmarkmustbepositive'] = 'La note par défaut doit être positive.';
 $string['deletecoursecategorywithquestions'] = 'La banque de questions associée à cette catégorie contient des questions. Si vous continuez, ces questions seront supprimées. Si vous voulez les conserver, veuillez d\'abord les déplacer en utilisant l\'interface de la banque de questions.';
-$string['deletequestioncheck'] = 'Voulez-vous vraiment supprimer « {$a} » ?';
-$string['deletequestionscheck'] = 'Voulez-vous vraiment supprimer les questions ci-dessous ?<br /><br />{$a}';
+$string['deletequestioncheck'] = 'Cette opération supprimera la question suivante et toutes ses versions :<br /><br />{$a}';
+$string['deletequestionscheck'] = 'Cette opération supprimera les questions suivantes et toutes leurs versions :<br /><br />{$a}';
+$string['deletequestiontitle'] = 'Supprimer la question ?';
+$string['deletequestiontitle_plural'] = 'Supprimer les questions ?';
+$string['deleteselectedquestioncheck'] = 'Cette opération supprimera les versions sélectionnées de la question suivante :<br /><br />{$a}';
+$string['deleteversiontitle'] = 'Supprimer la version sélectionnée ?';
+$string['deleteversiontitle_plural'] = 'Supprimer les versions sélectionnées ?';
 $string['deletingbehaviour'] = 'Suppression du comportement de question « {$a} »';
 $string['deletingqtype'] = 'Suppression du type de question « {$a} »';
 $string['didnotmatchanyanswer'] = '[Ne correspond à aucune réponse]';
@@ -140,6 +147,7 @@ Chaque catégorie a un contexte qui détermine où les questions peuvent être u
 * le contexte système : les questions sont disponibles dans tous les cours et toutes les activités de votre site.
 
 Les catégories sont aussi utilisées pour les questions aléatoires, puisque les questions sont alors tirées dans une catégorie.';
+$string['editcategories_link'] = 'question/category';
 $string['editcategory'] = 'Modifier la catégorie';
 $string['editingcategory'] = 'Modification d\'une catégorie';
 $string['editingquestion'] = 'Modification d\'une question';
@@ -191,7 +199,10 @@ $string['exportnameformat'] = '%Y%m%d-%H%M';
 $string['exportonequestion'] = 'Télécharger cette question en format Moodle XML';
 $string['exportquestions'] = 'Exporter des questions vers un fichier';
 $string['exportquestions_help'] = 'Ce réglage permet d\'activer l\'exportation de catégories (avec toutes les sous-catégories) de questions vers un fichier. Suivant le format de fichier choisi, certaines données de questions et certains types de questions ne pourront pas être exportés.';
+$string['exportquestions_link'] = 'question/export';
 $string['feedback'] = 'Feedback';
+$string['fieldinquestion'] = '{$a->fieldname} {$a->questionindentifier}';
+$string['fieldinquestionpre'] = '{$a->questionindentifier} {$a->fieldname}';
 $string['filecantmovefrom'] = 'Le fichier de questions ne peut pas être déplacé, car vous n\'avez pas les permissions requises pour supprimer des fichiers de l\'endroit d\'où vous voulez déplacer des questions.';
 $string['filecantmoveto'] = 'Le fichier de questions ne peut pas être déplacé, car vous n\'avez pas les permissions requises pour écrire des fichiers à l\'endroit où vous voulez déplacer des questions.';
 $string['fileformat'] = 'Format de fichier';
@@ -206,9 +217,9 @@ $string['flagthisquestion'] = 'Marquer cette question';
 $string['formquestionnotinids'] = 'Le formulaire contient une question qui n\'apparaît pas dans les identifiants de question';
 $string['fractionsnomax'] = 'L\'une des réponses doit donner un score de 100% afin qu\'il soit possible d\'obtenir la totalité des points pour cette question.';
 $string['generalfeedback'] = 'Feedback général';
-$string['generalfeedback_help'] = 'Le feedback général est affiché aux participants après qu\'ils aient tenté une question. À la différence du feedback, qui dépend du type de la question et de la réponse donnée par le participant, le même feedback général est affiché à tous les participants.
+$string['generalfeedback_help'] = 'Le feedback général est révélé à l\'étudiant après qu\'il a répondu à la question. À la différence du feedback spécifique, qui dépend du type de la question et de la réponse donnée par l\'étudiant, le même feedback général est montré à tous les étudiants.
 
-Vous pouvez utiliser le feedback général pour donner à vos participants des indications sur les connaissances testées par la question, ou leur fournir des liens qu\'ils pourront utiliser s\'ils n\'ont pas compris la question.';
+Le feedback général peut être utilisé pour donner aux étudiants une réponse complètement développée, des indications sur les connaissances évaluées par la question ou leur fournir des liens à utiliser s\'ils n\'ont pas compris la question.';
 $string['getcategoryfromfile'] = 'Obtenir la catégorie à partir du fichier';
 $string['getcontextfromfile'] = 'Obtenir le contexte à partir du fichier';
 $string['hintn'] = 'Indice {no}';
@@ -220,6 +231,7 @@ $string['howquestionsbehave_help'] = 'Les participants peuvent agir avec les que
 Sinon, vous pourriez souhaiter que les participants envoient chaque question au fur et à mesure du test et reçoivent immédiatement le feedback correspondant, qu\'ils puissent tenter de répondre à nouveau s\'ils ont échoué, mais avec une note moindre. Ce sera le mode « Interactif avec essais multiples ».
 
 Ces deux exemples illustrent les deux comportements les plus utilisés.';
+$string['howquestionsbehave_link'] = 'question/behaviour';
 $string['idnumber'] = 'Numéro d\'identification';
 $string['idnumber_help'] = 'Si renseigné, le numéro d\'identification doit être unique dans chaque catégorie de question. Ce numéro fournit une autre façon d\'identifier une question. Il est laissé vide la plupart du temps.';
 $string['ignorebroken'] = 'Ignorer les liens cassés';
@@ -236,6 +248,7 @@ $string['importingquestions'] = 'Importation de {$a} questions depuis le fichier
 $string['importparseerror'] = 'Des erreurs ont été trouvées en analysant le fichier d\'importation. Aucune question n\'a été importée. Pour importer toutes les questions valides, essayez à nouveau en réglant le paramètre « Arrêter en cas d\'erreur » sur « Non ».';
 $string['importquestions'] = 'Importer des questions d\'un fichier';
 $string['importquestions_help'] = 'Ce réglage permet d\'activer l\'importation de questions de divers formats à partir d\'un fichier texte. L\'encodage du fichier doit être UTF-8.';
+$string['importquestions_link'] = 'question/import';
 $string['importwrongfileencoding'] = 'Le fichier sélectionné n\'utilise pas l\'encodage UTF-8. Les fichiers {$a} doivent utiliser l\'encodage UTF-8.';
 $string['importwrongfiletype'] = 'Le type de fichier que vous avez sélectionné ({$a->actualtype}) ne correspond pas au type attendu par ce format d\'importation ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Caractère impossible {$a} détecté comme séparateur';
@@ -285,7 +298,7 @@ $string['movedquestionsandcategories'] = 'Les questions et catégories de questi
 $string['movelinksonly'] = 'Modifier les liens sans déplacer ni copier de fichier.';
 $string['moveq'] = 'Déplacer question(s)';
 $string['moveqtoanothercontext'] = 'Déplacer la question vers un autre contexte.';
-$string['moveto'] = 'Déplacer vers >>';
+$string['moveto'] = 'Déplacer vers';
 $string['movingcategory'] = 'Déplacement catégorie';
 $string['movingcategoryandfiles'] = 'Voulez-vous vraiment déplacer la catégorie {$a->name} et toutes les catégories filles vers le contexte « {$a->contextto} »?<br />{$a->urlcount} fichiers liés depuis des questions situées dans {$a->fromareaname} ont été détectés. Voulez-vous les copier ou les déplacer vers {$a->toareaname} ?';
 $string['movingcategorynofiles'] = 'Voulez-vous vraiment déplacer la catégorie {$a->name} et toutes les catégories filles vers le contexte « {$a->contextto} » ?';
@@ -295,8 +308,10 @@ $string['movingquestionsnofiles'] = 'Voulez-vous vraiment déplacer la(les) ques
 $string['needtochoosecat'] = 'Vous devez choisir une catégorie dans laquelle déplacer cette question ou cliquer sur « Annuler ».';
 $string['nocate'] = 'Aucune catégorie {$a} !';
 $string['nopermissionadd'] = 'Vous n\'avez pas les permissions requises pour ajouter des questions ici.';
+$string['nopermissionedit'] = 'Vous n\'avez pas les permissions requises pour modifier ici les questions.';
 $string['nopermissionmove'] = 'Vous n\'avez pas les permissions requises pour déplacer des questions depuis ici. Vous devez enregistrer la question dans cette catégorie ou l\'enregistrer comme nouvelle question.';
 $string['noprobs'] = 'Aucun problème n\'a été détecté dans votre banque de questions.';
+$string['noquestionbanks'] = 'Aucun plugin banque de questions trouvé.';
 $string['noquestions'] = 'Aucune question à exporter. Assurez-vous que vous avez sélectionné pour l\'exportation une catégorie contenant des questions.';
 $string['noquestionsinfile'] = 'Il n\'y a aucune question dans le fichier d\'importation';
 $string['noresponse'] = '[Pas de réponse]';
@@ -314,7 +329,7 @@ $string['notyourpreview'] = 'Cette prévisualisation ne vous appartient pas';
 $string['novirtualquestiontype'] = 'Il n\'y a pas de type de question virtuelle pour les questions de type {$a}';
 $string['numqas'] = 'Nombre de tentatives de question';
 $string['numquestions'] = 'No. de questions';
-$string['numquestionsandhidden'] = '{$a->numquestions} (+ {$a->numhidden} cachées)';
+$string['numquestionsandhidden'] = '{$a->numquestions} (+ {$a->numhidden} cachées + {$a->numdraft} brouillons)';
 $string['options'] = 'Options';
 $string['page-question-category'] = 'Page de catégorie de questions';
 $string['page-question-edit'] = 'Page de modification de question';
@@ -324,6 +339,7 @@ $string['page-question-x'] = 'Toute page de questions';
 $string['parent'] = 'Parent';
 $string['parentcategory'] = 'Catégorie parente';
 $string['parentcategory_help'] = 'La catégorie parente est celle dans laquelle la nouvelle catégorie sera placée. Le plus haut niveau signifie que cette catégorie n\'est contenue dans aucune autre. Les contextes de catégories sont en caractères gras. Il faut avoir au moins une catégorie par contexte.';
+$string['parentcategory_link'] = 'question/category';
 $string['parenthesisinproperclose'] = 'La parenthèse avant ** n\'est pas fermée correctement dans {$a}**';
 $string['parenthesisinproperstart'] = 'La parenthèse avant ** n\'est pas ouverte correctement dans {$a}**';
 $string['parsingquestions'] = 'Analyse des questions du fichier d\'importation.';
@@ -365,31 +381,39 @@ $string['privacy:metadata:database:question_attempts'] = 'Les informations sur u
 $string['privacy:metadata:database:question_attempts:flagged'] = 'Une indication que l\'utilisateur a signalé cette question durant la tentative.';
 $string['privacy:metadata:database:question_attempts:responsesummary'] = 'Un résumé de la réponse.';
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'La date et l\'heure de la modification de la tentative de la question.';
-$string['privacy:metadata:link:qbehaviour'] = 'Le sous-système question utilise le type de plugin Comportement de question.';
-$string['privacy:metadata:link:qformat'] = 'Le sous-système question utilise le type de plugin Format d\'importation/exportation de questions afin d\'importer/exporter des questions dans différents formats.';
-$string['privacy:metadata:link:qtype'] = 'Le sous-système question interagit avec le type de plugin Type de question, qui contient les différentes types de question.';
+$string['privacy:metadata:database:question_bank_entries'] = 'Les informations sur un élément spécifique de la banque de questions.';
+$string['privacy:metadata:database:question_bank_entries:ownerid'] = 'L\'utilisateur propriétaire de l\'élément de la banque de questions.';
+$string['privacy:metadata:link:qbehaviour'] = 'Le sous-système Question utilise le type de plugin Comportement de question.';
+$string['privacy:metadata:link:qformat'] = 'Le sous-système Question utilise le type de plugin Format d\'importation/exportation de questions afin d\'importer/exporter des questions dans différents formats.';
+$string['privacy:metadata:link:qtype'] = 'Le sous-système Question interagit avec le type de plugin Type de question, qui contient les différentes types de question.';
 $string['published'] = 'partagée';
+$string['qbanknotfound'] = 'Le plugin banque de questions « {$a} » n\'existe pas ou n\'est pas reconnu.';
 $string['qtypeveryshort'] = 'T';
+$string['question_version'] = 'Version de la question';
 $string['questionaffected'] = '<a href="{$a->qurl}">La question « {$a->name} » ({$a->qtype})</a> est dans cette catégorie, mais est aussi utilisée dans le <a href="{$a->qurl}">test « {$a->quizname} »</a> dans le cours « {$a->coursename} ».';
 $string['questionbank'] = 'Banque de questions';
+$string['questionbanknavigation'] = 'Navigation tertiaire de la banque de questions';
 $string['questionbehaviouradminsetting'] = 'Paramètres des comportements de questions';
 $string['questionbehavioursdisabled'] = 'Comportements de questions à désactiver';
 $string['questionbehavioursdisabledexplained'] = 'Saisissez une liste des comportements que vous ne voulez pas voir apparaître dans le menu déroulant, séparés par des virgules.';
 $string['questionbehavioursorder'] = 'Ordre des comportements de questions';
 $string['questionbehavioursorderexplained'] = 'Saisissez une liste des comportements dans l\'ordre où vous souhaitez les voir apparaître dans le menu déroulant, séparés par des virgules.';
+$string['questioncategories'] = 'Catégories de questions';
 $string['questioncategory'] = 'Catégorie de questions';
 $string['questioncatsfor'] = 'Catégories de question de « {$a} »';
 $string['questiondoesnotexist'] = 'Cette question n\'existe pas';
 $string['questionformtagheader'] = 'Tags {$a}';
 $string['questionidmismatch'] = 'Les identifiants de questions ne correspondent pas';
+$string['questionloaderror'] = 'Impossible de charger les options de question.';
 $string['questionname'] = 'Nom de question';
+$string['questionnameandquestionversion'] = '{$a->name} v{$a->version}';
 $string['questionnamecopy'] = '{$a} (copie)';
 $string['questionno'] = 'Question {$a}';
 $string['questionpreviewdefaults'] = 'Réglages par défaut de la prévisualisation des questions';
 $string['questionpreviewdefaults_desc'] = 'Ces réglages sont utilisés lors de la première prévisualisation d\'une question dans la banque de questions. Lorsqu\'un utilisateur a prévisualisé une question, ses préférences personnelles sont enregistrées.';
 $string['questions'] = 'Questions';
 $string['questionsaveerror'] = 'Des erreurs sont survenues lors de l\'enregistrement de la question ({$a})';
-$string['questionsinuse'] = '(* Les questions marquées d\'un astérisque sont déjà utilisées ailleurs, par exemple dans un autre test. C\'est pourquoi, si vous continuez, ces questions ne seront pas supprimées, mais seulement cachées.)';
+$string['questionsinuse'] = '* Indique les questions qui ne peuvent pas être supprimées, car elles sont  utilisées. Ces questions seront cachées dans la banque de questions, à moins que vous ne cochiez « Montrer les anciennes questions ».';
 $string['questionsmovedto'] = 'Les questions encore utilisées ont été déplacées vers « {$a} » dans la catégorie de cours mère.';
 $string['questionsrescuedfrom'] = 'Questions enregistrées depuis le contexte {$a}.';
 $string['questionsrescuedfrominfo'] = 'Ces questions (dont certaines sont peut-être cachées) ont été enregistrées lors de la suppression du contexte {$a}, car elles sont encore utilisées dans certains tests ou d\'autres activités.';
@@ -406,7 +430,7 @@ $string['restartwiththeseoptions'] = 'Recommencer avec ces options';
 $string['restoremultipletopcats'] = 'Le fichier de sauvegarde contient plus d\'une catégorie racine de questions pour le contexte {$a}.';
 $string['reviewresponse'] = 'Relire la réponse';
 $string['rightanswer'] = 'Réponse juste';
-$string['rightanswer_help'] = 'Un résumé de la réponse correcte généré automatiquement. Ce texte peut être limitatif. Il peut être plus judicieux d\'expliquer la réponse correcte dans le feedback général de la question et de désactiver cette option.';
+$string['rightanswer_help'] = 'La réponse correcte, générée automatiquement. Il peut être plus judicieux d\'expliquer la réponse correcte dans le feedback général de la question et de désactiver cette option.';
 $string['save'] = 'Enregistrer';
 $string['savechangesandcontinueediting'] = 'Enregistrer les modifications et continuer';
 $string['saved'] = 'Enregistré : {$a}';
@@ -423,7 +447,10 @@ $string['showmaxmarkonly'] = 'Montrer la note maximale seulement';
 $string['shown'] = 'Affiché';
 $string['shownumpartscorrect'] = 'Montrer le nombre de réponses correctes';
 $string['shownumpartscorrectwhenfinished'] = 'Montrer le nombre de réponses correctes une fois la question terminée';
-$string['showquestiontext'] = 'Montrer le texte de la question dans la liste';
+$string['showquestiontext'] = 'Montrer le texte de la question dans la liste des questions ?';
+$string['showquestiontext_full'] = 'Oui, avec images, médias, etc.';
+$string['showquestiontext_off'] = 'Non';
+$string['showquestiontext_plain'] = 'Oui, texte seulement';
 $string['specificfeedback'] = 'Feedback spécifique';
 $string['specificfeedback_help'] = 'Feedback dépendant de la réponse donnée par le participant';
 $string['started'] = 'Commencé';
@@ -465,8 +492,9 @@ $string['updatedisplayoptions'] = 'Modifier les options d\'affichage';
 $string['upgradeproblemcategoryloop'] = 'Un problème a été détecté lors de la modification des catégories de question : il y a une boucle dans l\'arbre des catégories. Les identifiants des catégories touchés sont {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Impossible de modifier la catégorie de question {$a->name} ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Un problème a été détecté lors de la modification des catégories de question : la catégorie {$a->id} fait référence à la catégorie parente {$a->parent}, qui n\'existe pas. La catégorie parente a été changée pour corriger le problème.';
+$string['version_selection'] = 'Version {$a->version}';
 $string['whethercorrect'] = 'Si correcte';
-$string['whethercorrect_help'] = 'Ceci couvre à la fois la description pour « Correct », « Partiellement correct » et « Incorrect » et toutes les indications surlignées en couleur portant la même information.';
+$string['whethercorrect_help'] = 'L\'indication « Correct », « Partiellement correct » ou « Incorrect » ainsi que toutes les indications surlignées en couleur portant la même information.';
 $string['whichtries'] = 'Choix des tentatives';
 $string['withselected'] = 'Avec la sélection';
 $string['wrongprefix'] = 'Le préfixe est mal formatté {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'nl', version '3.11'.
+ * Strings for component 'repository', language 'nl', version '4.1'.
  *
  * @package     repository
  * @category    string
@@ -41,7 +41,7 @@ $string['areacourseoverviewfiles'] = 'Cursusafbeelding';
 $string['areamainfile'] = 'Hoofdbestand';
 $string['arearoot'] = 'Systeem';
 $string['areauserbackup'] = 'Gebruikersback-up';
-$string['areauserdraft'] = 'Kladwerk';
+$string['areauserdraft'] = 'Concept';
 $string['areauserpersonal'] = 'Persoonlijke bestanden';
 $string['areauserprofile'] = 'Profiel';
 $string['attachedfiles'] = 'Bijlagen';
@@ -49,7 +49,7 @@ $string['attachment'] = 'Bijlage';
 $string['author'] = 'Auteur';
 $string['automatedbackup'] = 'Automatische back-ups';
 $string['back'] = 'Terug';
-$string['backtodraftfiles'] = 'Terug naar beheer kladbestanden';
+$string['backtodraftfiles'] = 'Terug naar beheer conceptbestanden';
 $string['cachecleared'] = 'Cache-bestanden zijn verwijderd';
 $string['cacheexpire'] = 'Cache verloopt';
 $string['cannotaccessparentwin'] = 'Wanneer je https gebruikt, dan kan de opslagruimte niet automatisch ververst worden. Je moet dan terug naar de bestandenkiezer en de opslagruimte opnieuw selecteren.';
@@ -59,7 +59,7 @@ $string['cannotdownloaddir'] = 'Kan deze map niet downloaden';
 $string['cannotinitplugin'] = 'Call plugin_init mislukt';
 $string['cannotunzipcontentunreadable'] = 'Can bestand niet uitpakken omdat de inhoud van het bestand niet gelezen kan worden.';
 $string['cannotunzipextractfileerror'] = 'Kan dit bestand niet uitpakken omdat één of meerdere bestanden niet gelezen kunnen worden.';
-$string['cannotunzipquotaexceeded'] = 'Kan dit bestand niet uitpakken omdat de maximale grootte, toegestaan in deze kladwerkomgeving overschreden zal worden.';
+$string['cannotunzipquotaexceeded'] = 'Kan dit bestand niet uitpakken omdat de maximale grootte, toegestaan in deze conceptzone overschreden zal worden.';
 $string['choosealink'] = 'Kies een link...';
 $string['chooselicense'] = 'Kies een licentie';
 $string['chooselicense_help'] = 'Volg deze links voor meer informatie over de beschikbare licentie-opties:';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'nl', version '3.11'.
+ * Strings for component 'imscp', language 'nl', version '4.1'.
  *
  * @package     imscp
  * @category    string
@@ -35,10 +35,12 @@ $string['indicator:cognitivedepth'] = 'IMS pkg cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een IMS Inhoudspakket bron.';
 $string['indicator:cognitivedepthdef'] = 'IMS pkg cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid bereikt die door de IMS-pakketbronnen wordt aangeboden tijdens dit analyse-interval (Niveaus = Geen weergave, Weergave)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'IMS pkg sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een IMS Inhoudspakket bron.';
 $string['indicator:socialbreadthdef'] = 'IMS pkg sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid die door de IMS-pakketbronnen wordt aangeboden tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, alleen deelnemer)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = 'Archiefpakketten';
 $string['keepoldexplain'] = 'Hoeveel pakketten moeten gearchiveerd worden?';
 $string['modulename'] = 'IMS inhoudspakket';
@@ -47,6 +49,7 @@ $string['modulename_help'] = 'Een IMS inhoudspakket is een verzameling van besta
 De inhoud wordt meestal getoond op verschillende pagina\'s, met navigatie tussen de pagina\'s. Er zijn verschillende mogelijkheden om de inhoud weer te geven: in een pop-upvenster, met een navigatiemenu of met knoppen enz.
 
 Een IMS inhoudspakket kan o.a. gebruikt worden om multimedia en animaties te tonen.';
+$string['modulename_link'] = 'mod/imscp/view';
 $string['modulenameplural'] = 'IMS inhoudspakketten';
 $string['navigation'] = 'Navigatie';
 $string['packagefile'] = 'Pakketbestand';

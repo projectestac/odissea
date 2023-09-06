@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ar', version '3.11'.
+ * Strings for component 'block_section_links', language 'ar', version '4.1'.
  *
  * @package     block_section_links
  * @category    string
@@ -32,9 +32,9 @@ $string['incby2_help'] = 'هذه قيمة زيادة المقطع عند كل م
 $string['jumptocurrenttopic'] = 'الأنتقال إلى الموضوع الحالي';
 $string['jumptocurrentweek'] = 'الأنتقال إلى الأسبوع الحالي';
 $string['numsections1'] = 'عدد المقاطع';
-$string['numsections1_help'] = 'بمجرد وصول عدد المقاطع في المقرر الدراسي إلى هذا العدد، فسيتم استعمال الزيادة حسب القيم.';
+$string['numsections1_help'] = 'بمجرد وصول عدد المقاطع في المساق إلى هذا العدد، فسيتم استعمال الزيادة حسب القيم.';
 $string['numsections2'] = 'عدد المقاطع البديل';
-$string['numsections2_help'] = 'بمجرد وصول عدد المقاطع في المقرر الدراسي إلى هذا العدد، فسيتم استعمال الزيادة حسب القيم البديلة.';
+$string['numsections2_help'] = 'بمجرد وصول عدد المقاطع في المساق إلى هذا العدد، فسيتم استعمال الزيادة حسب القيم البديلة.';
 $string['pluginname'] = 'روابط المقطع';
 $string['privacy:metadata'] = 'كتلة روابط المقاطع تظهر فقط البيانات المخزونة في مواضع أخرى.';
 $string['section_links:addinstance'] = 'إضافة كتلة جديدة لروابط المقاطع';

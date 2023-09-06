@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'ja', version '3.11'.
+ * Strings for component 'debug', language 'ja', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,17 @@ $string['notables'] = 'テーブルがありません!';
 $string['outputbuffer'] = '出力バッファ';
 $string['phpvaroff'] = 'PHPサーバ変数「 {$a->name} 」をOffにしてください - {$a->link}';
 $string['phpvaron'] = 'PHPサーバ変数「 {$a->name} 」がOnにされていません - {$a->link}';
+$string['reactive_highlightoff'] = 'ハイライトOFF';
+$string['reactive_highlighton'] = 'ハイライトON';
+$string['reactive_instances'] = 'リアクティブインスタンス:';
+$string['reactive_noinstances'] = 'このページにはリアクティブインスタンスはありません。';
+$string['reactive_pin'] = 'ピン留め';
+$string['reactive_readmodeoff'] = 'リードモードOFF';
+$string['reactive_readmodeon'] = 'リードモードON';
+$string['reactive_resetpanel'] = 'パネルをリセットする';
+$string['reactive_saveingwarning'] = '警告: 状態を編集した場合、予期しない結果になることがあります。';
+$string['reactive_statedata'] = '状態データ';
+$string['reactive_unpin'] = 'ピン留め解除';
 $string['sessionmissing'] = 'セッションに {$a} オブジェクトがありません。';
 $string['sqlrelyonobsoletetable'] = 'このSQLは古いテーブル {$a} を参照しています! あなたのコードは開発者によって修正される必要があります。';
 $string['stacktrace'] = 'スタックトレース';

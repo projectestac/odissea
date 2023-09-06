@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'fr', version '3.11'.
+ * Strings for component 'webservice', language 'fr', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'Protocoles de service web actifs';
 $string['addaservice'] = 'Ajouter un service';
 $string['addcapabilitytousers'] = 'Vérifier la capacité des utilisateurs';
 $string['addcapabilitytousersdescription'] = 'Les utilisateurs doivent avoir deux capacités : webservice:createtoken et une capacité correspondant au protocole utilisé, par exemple webservice/rest:use ou webservice/soap:use. Pour ce faire, veuillez créer un rôle « Web services » avec les capacités adéquates et l\'attribuer à l\'utilisateur web services comme rôle système.';
+$string['addexternalservice'] = 'Ajouter un service externe';
 $string['addfunction'] = 'Ajouter fonction';
 $string['addfunctionhelp'] = 'Sélectionner la fonction à ajouter au service.';
 $string['addfunctions'] = 'Ajouter des fonctions';
@@ -61,14 +62,16 @@ $string['default'] = 'Défaut pour « {$a} »';
 $string['deleteaservice'] = 'Supprimer service';
 $string['deleteservice'] = 'Supprimer le service : {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'La suppression d\'un service détruira aussi les jetons en liens avec ce service. Voulez-vous vraiment supprimer le service externe « {$a} » ?';
+$string['deletetoken'] = 'Supprimer le jeton';
 $string['deletetokenconfirm'] = 'Voulez-vous vraiment supprimer ce jeton web service pour <strong>{$a->user}</strong> pour le service <strong>{$a->service}</strong> ?';
+$string['deprecated'] = 'Déprécié';
 $string['disabledwarning'] = 'Tous les protocoles de services web sont désactivés. Le réglage « Activer les services web » se trouve dans les réglages avancés.';
 $string['doc'] = 'Documentation';
 $string['docaccessrefused'] = 'Vous n\'avez pas les permissions requises pour voir la documentation pour ce jeton';
-$string['documentation'] = 'Documentation service web';
 $string['downloadfiles'] = 'Peut télécharger des fichiers';
 $string['downloadfiles_help'] = 'Si ce réglage est activé, tous les utilisateurs peuvent télécharger des fichiers avec leurs clefs de sécurité. Le téléchargement est bien entendu restreint aux fichiers auxquels les utilisateurs ont accès dans le site.';
 $string['editaservice'] = 'Modifier service';
+$string['editexternalservice'] = 'Ajouter un service externe';
 $string['editservice'] = 'Modifier le service : {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Activé';
 $string['enabledocumentation'] = 'Activer la documentation développeur';

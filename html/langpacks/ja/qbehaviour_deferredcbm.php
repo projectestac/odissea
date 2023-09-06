@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'ja', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'ja', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -37,6 +37,7 @@ $string['cbmgrades'] = 'CBM評点';
 $string['cbmgrades_help'] = '確信度ベースの評定 (Certainty Based Marking - CBM) においてC=1 (低い確信度) ですべての問題が正解の場合、評点100%が与えられます。C=3 (高い確信度) で問題すべてが正解の場合、評点は300%となります。 誤認 (確信を持った誤回答) は一般的に不明確であると認められる誤回答よりもさらに評点を低くします。さらにこれは全体の評点がマイナスになる原因ともなり得ます。
 
 **正確性**は確信度を無視して何パーセント正しいかということですがそれぞれの問題の最大評点に加重されます。成功裏に識別できたとして程度の差はありますが信頼できる回答はそれぞれの問題に同じ確信度を選択するよりも良い評点を与えることになります。これは**CBMボーナス**に反映されます。**正確性** + **CBMボーナス**は**正確性**より良いも知識尺度です。 誤認は何が知られていて何が知られていないか注意深く確認する警告であるマイナスボーナスの原因となり得ます。';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'CBM評点 {$a}';
 $string['certainty'] = '確信度';
 $string['certainty-1'] = '分かりません';
@@ -52,6 +53,7 @@ $string['certainty_help'] = '確信度ベースの評定の場合、あなたの
 正解率 | <67% | 67-80% | >80%
 
 確信のないことを認めることで最高評点を取得することができます。例えばあなたが3つのうち1つ以上正しくないと思う場合、C=1と入力することでマイナス点のリスクを避けることができます。';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = '分かりません';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';

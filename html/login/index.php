@@ -218,7 +218,7 @@ if ($frm and isset($frm->username)) {                             // Login WITH 
             // auth plugins can temporarily override this from loginpage_hook()
             // do not save $CFG->nolastloggedin in database!
 
-        } else if (empty($CFG->rememberusername) or ($CFG->rememberusername == 2 and empty($frm->rememberusername))) {
+        } else if (empty($CFG->rememberusername)) {
             // no permanent cookies, delete old one if exists
             set_moodle_cookie('');
 
@@ -314,7 +314,7 @@ if (!empty($CFG->alternateloginurl)) {
 
     $loginurlstr = $loginurl->out(false);
 
-    if (strpos($SESSION->wantsurl, $loginurlstr) === 0) {
+    if (strpos($SESSION->wantsurl ?? '', $loginurlstr) === 0) {
         // We do not want to return to alternate url.
         $SESSION->wantsurl = null;
     }

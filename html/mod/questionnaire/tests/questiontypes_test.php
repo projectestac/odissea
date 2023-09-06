@@ -29,6 +29,7 @@ use mod_questionnaire\question\question;
 
 global $CFG;
 require_once($CFG->dirroot.'/mod/questionnaire/locallib.php');
+require_once($CFG->dirroot . '/mod/questionnaire/classes/question/question.php');
 
 /**
  * Unit tests for questionnaire_questiontypes_testcase.
@@ -84,6 +85,12 @@ class mod_questionnaire_questiontypes_testcase extends advanced_testcase {
             'length' => 20,
             'precise' => 25);
         $this->create_test_question(QUESTEXT, '\\mod_questionnaire\\question\\text', $questiondata);
+    }
+
+    public function test_create_question_slider() {
+        $questiondata = array(
+                'content' => 'Enter a number');
+        $this->create_test_question(QUESSLIDER, '\\mod_questionnaire\\question\\slider', $questiondata);
     }
 
     public function test_create_question_yesno() {

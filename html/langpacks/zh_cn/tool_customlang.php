@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'zh_cn', version '3.11'.
+ * Strings for component 'tool_customlang', language 'zh_cn', version '4.1'.
  *
  * @package     tool_customlang
  * @category    string
@@ -47,6 +47,7 @@ $string['confirmcheckin'] = '即将把修改过的字符串保存到您本地语
 $string['customlang:edit'] = '编辑本地翻译';
 $string['customlang:export'] = '导出本地翻译';
 $string['customlang:view'] = '查看本地翻译';
+$string['editlangpack'] = '编辑语言包';
 $string['export'] = '导出自定义字符串';
 $string['exportfilter'] = '选择要导出的组件';
 $string['filter'] = '过滤字符串';

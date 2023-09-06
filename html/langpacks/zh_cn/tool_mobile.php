@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'zh_cn', version '3.11'.
+ * Strings for component 'tool_mobile', language 'zh_cn', version '4.1'.
  *
  * @package     tool_mobile
  * @category    string
@@ -32,6 +32,8 @@ $string['apppolicy'] = '应用政策网址';
 $string['apppolicy_help'] = '应用用户政策网址，列在应用的“关于”页面上。如果字段为空，则使用站点政策网址。';
 $string['apprequired'] = '该功能只有通过Moodle移动或桌面应用访问时才能使用。';
 $string['autologinkeygenerationlockout'] = '自动登录密钥生成被阻塞。您需要在请求之间等待 6 分钟。';
+$string['autologinmintimebetweenreq'] = '自动登录请求之间的最短间隔时间';
+$string['autologinmintimebetweenreq_desc'] = '来自移动应用程序的自动登录请求之间的最短时间间隔。如果经常要求用户在查看网站的内容时登陆账号，请设置较低的值。';
 $string['autologinnotallowedtoadmins'] = '站点管理员不允许自动登录。';
 $string['cachedef_plugininfo'] = '它存储包含移动插件的插件列表';
 $string['cachedef_subscriptiondata'] = '它存储Moodle应用的订阅信息。';
@@ -128,6 +130,8 @@ $string['qrcodetype'] = '二维码访问';
 $string['qrcodetype_desc'] = '用户可以通过移动应用扫描二维码，填写站点网址，或者无需输入用户凭证即可自动登录。';
 $string['qrcodetypelogin'] = '带自动登录的二维码';
 $string['qrcodetypeurl'] = '带站点网址的二维码';
+$string['qrkeyttl'] = 'QR身份验证密钥持续时间';
+$string['qrkeyttl_desc'] = '用于自动登录的二维码有效的时间长度。';
 $string['qrsiteadminsnotallowed'] = '出于安全原因，站点管理员或者以其他用户身份登录不允许通过二维码登录。';
 $string['readingthisemailgettheapp'] = '在邮件中阅读？<a href="{$a}">在您的移动设备上下载移动应用并接收通知</a>。';
 $string['remoteaddons'] = '远程附件';

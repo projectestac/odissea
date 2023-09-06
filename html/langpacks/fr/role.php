@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'fr', version '3.11'.
+ * Strings for component 'role', language 'fr', version '4.1'.
  *
  * @package     role
  * @category    string
@@ -62,6 +62,7 @@ $string['assignrole'] = 'Attribuer rôle';
 $string['assignrolenameincontext'] = 'Attribuer le rôle « {$a->role} » dans {$a->context}';
 $string['assignroles'] = 'Attribution des rôles';
 $string['assignroles_help'] = 'En attribuant un rôle à un utilisateur dans un certain contexte, vous lui accordez les permissions correspondant à ce rôle, pour le contexte en question et tous les contextes inférieurs. Par exemple, si dans un cours vous attribuez un rôle d\'étudiant à un utilisateur, cet utilisateur aura ce rôle dans le cours, mais également dans les blocs et activités de ce cours.';
+$string['assignroles_link'] = 'admin/roles/assign';
 $string['assignrolesin'] = 'Attribuer les rôles dans {$a}';
 $string['assignrolesrelativetothisuser'] = 'Attribuer des rôles relativement à cet utilisateur';
 $string['backtoallroles'] = 'Retour à la liste des rôles';
@@ -203,7 +204,7 @@ $string['course:reset'] = 'Réinitialiser les cours';
 $string['course:reviewotherusers'] = 'Consulter les autres utilisateurs';
 $string['course:sectionvisibility'] = 'Contrôler la visibilité des sections';
 $string['course:setcurrentsection'] = 'Déterminer la section actuelle';
-$string['course:setforcedlanguage'] = 'Imposer la langue du cours';
+$string['course:setforcedlanguage'] = 'Imposer la langue du cours ou de l\'activité';
 $string['course:tag'] = 'Modifier les tags de cours';
 $string['course:togglecompletion'] = 'Marquer manuellement les activités comme achevées';
 $string['course:update'] = 'Modifier les réglages des cours';
@@ -264,7 +265,7 @@ $string['filter:manage'] = 'Gérer les réglages des filtres locaux';
 $string['frontpageuser'] = 'Utilisateur authentifié sur la page d\'accueil';
 $string['frontpageuserdescription'] = 'Tous les utilisateurs connectés sur le cours page d\'accueil.';
 $string['globalrole'] = 'Rôle système';
-$string['globalroleswarning'] = 'ATTENTION ! Les rôles que vous attribuez sur cette page s\'appliqueront aux utilisateurs concernés pour l\'intégralité du système, y compris pour la page d\'accueil et pour tous les cours.';
+$string['globalroleswarning'] = 'Attention ! Les rôles que vous attribuez sur cette page s\'appliqueront aux utilisateurs concernés pour l\'intégralité du système, y compris la page d\'accueil et tous les cours.';
 $string['gotoassignroles'] = 'Aller à l\'attribution des rôles pour ce {$a->contextlevel}';
 $string['gotoassignsystemroles'] = 'Aller à l\'attribution des rôles système';
 $string['grade:edit'] = 'Modifier les notes';
@@ -330,6 +331,7 @@ $string['overrideanotherrole'] = 'Définir une dérogation pour un autre rôle';
 $string['overridecontext'] = 'Contexte de dérogation';
 $string['overridepermissions'] = 'Définir des dérogations aux permissions';
 $string['overridepermissions_help'] = 'Les dérogations aux permissions permettent d\'accorder ou de retirer des permissions spécifiques pour certaines capacités d\'un rôle dans un contexte spécifique.';
+$string['overridepermissions_link'] = 'admin/roles/override';
 $string['overridepermissionsforrole'] = 'Définir des dérogations pour le rôle « {$a->role} » dans {$a->context}';
 $string['overridepermissionsin'] = 'Définir des dérogations aux permissions dans {$a}';
 $string['overrideroles'] = 'Définir des dérogations aux rôles';
@@ -373,6 +375,8 @@ $string['privacy:metadata:role_cohortroles'] = 'Rôles de cohorte';
 $string['prohibit'] = 'Interdire';
 $string['prohibitedroles'] = 'Interdit';
 $string['question:add'] = 'Ajouter des questions';
+$string['question:commentall'] = 'Commenter toutes les questions';
+$string['question:commentmine'] = 'Commenter ses propres questions';
 $string['question:config'] = 'Configurer les types de question';
 $string['question:editall'] = 'Modifier toutes les questions';
 $string['question:editmine'] = 'Modifier ses propres questions';
@@ -390,6 +394,10 @@ $string['rating:rate'] = 'Ajouter des notes aux éléments';
 $string['rating:view'] = 'Voir sa propre note globale';
 $string['rating:viewall'] = 'Voir toutes les notes brutes reçues';
 $string['rating:viewany'] = 'Voir les notes globales de tout le monde';
+$string['reportbuilder:edit'] = 'Modifier ses propres rapports personnalisés';
+$string['reportbuilder:editall'] = 'Modifier tous les rapports personnalisés';
+$string['reportbuilder:scheduleviewas'] = 'Programmer des rapports pour consultation par d\'autres utilisateurs';
+$string['reportbuilder:view'] = 'Consulter des rapports personnalisés';
 $string['resetrole'] = 'Réinitialiser';
 $string['resettingrole'] = 'Réinitialisation du rôle « {$a} »';
 $string['restore:configure'] = 'Configurer les réglages de restauration';
@@ -423,6 +431,7 @@ $string['roleresetrole'] = 'Utiliser rôle ou modèle de rôle';
 $string['rolerisks'] = 'Risques du rôle';
 $string['roles'] = 'Rôles';
 $string['roles_help'] = 'Un rôle est un ensemble de permissions définies pour la totalité d\'un système, et que l\'on peut attribuer à des utilisateurs déterminés dans des contextes déterminés.';
+$string['roles_link'] = 'roles';
 $string['roleselect'] = 'Sélectionner rôle';
 $string['rolesforuser'] = 'Rôles de l\'utilisateur {$a}';
 $string['roleshortname'] = 'Nom abrégé';

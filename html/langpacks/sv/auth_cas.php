@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'sv', version '3.11'.
+ * Strings for component 'auth_cas', language 'sv', version '4.1'.
  *
  * @package     auth_cas
  * @category    string
@@ -26,8 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['CASform'] = 'Val angående autentisering';
-$string['accesCAS'] = 'CAS-användare';
-$string['accesNOCAS'] = 'andra användare';
 $string['auth_cas_auth_logo'] = 'Lopgotyp för autentiseringsmetod';
 $string['auth_cas_auth_logo_description'] = 'Ange en logotyp för CAS-autentiseringsmetoden som känns bekant för dina användare.';
 $string['auth_cas_auth_name'] = 'Namn';

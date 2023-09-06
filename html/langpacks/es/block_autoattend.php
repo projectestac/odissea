@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_autoattend', language 'es', version '3.11'.
+ * Strings for component 'block_autoattend', language 'es', version '4.1'.
  *
  * @package     block_autoattend
  * @category    string
@@ -100,7 +100,7 @@ $string['choosegrouping'] = 'Elegir Agrupamiento';
 $string['class_division'] = 'Clasificaciones';
 $string['class_settings'] = 'Ajustes de clase';
 $string['classname'] = 'Clase';
-$string['clearall'] = 'Deselecionar todas';
+$string['clearall'] = 'Deseleccionar todas';
 $string['correctuser'] = 'Correcto';
 $string['courseidwrong'] = 'ID del curso incorrecto';
 $string['coursename'] = 'Nombre del curso';

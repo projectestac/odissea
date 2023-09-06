@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ko', version '3.11'.
+ * Strings for component 'question', language 'ko', version '4.1'.
  *
  * @package     question
  * @category    string
@@ -136,6 +136,7 @@ $string['editcategories_help'] = '모든 질문을 하나의 큰 목록에 넣�
 범주는 질문이 특정 범주에서 추출되는 무작위형 질문에서도 사용됩니다.
 
 ';
+$string['editcategories_link'] = 'question/category';
 $string['editcategory'] = '범주 편집';
 $string['editingcategory'] = '범주 편집';
 $string['editingquestion'] = '질문 편집';
@@ -179,6 +180,7 @@ $string['exportfilename'] = '퀴즈';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
 $string['exportquestions'] = '파일로 질문 내보냄';
 $string['exportquestions_help'] = '이 기능은 하위 범주를 포함, 범주 전체의  질문을 파일로 내보낼 수 있게 합니다. 다만, 선택한 파일 형식에 따라, 어떤  질문과 질문 유형들은 내보낼 수 없는 경우도 있습니다.';
+$string['exportquestions_link'] = 'question/export';
 $string['feedback'] = '피드백';
 $string['filecantmovefrom'] = '질문 파일을 옮기고자 하는 곳에서 파일을 제거할 권한이 없기 때문에 질문 파일을 옮길 수 없습니다.';
 $string['filecantmoveto'] = '질문 파일을 옮기고자 하는 곳으로 파일을 추가할 권한이 없기 때문에 질문 파일을 옮기거나 복사할 수 없습니다.';
@@ -198,6 +200,7 @@ $string['hintn'] = '힌트(없음)';
 $string['hintnoptions'] = '힌트 {no} 옵션';
 $string['hinttext'] = '힌트 문장';
 $string['howquestionsbehave'] = '어떻게 질문들이 진행될지';
+$string['howquestionsbehave_link'] = 'question/behaviour';
 $string['ignorebroken'] = '깨진 링크 무시';
 $string['import'] = '가져오기';
 $string['importcategory'] = '범주 가져오기';
@@ -214,6 +217,7 @@ $string['importingquestions'] = '파일에서 {$a} 질문 가져오기';
 $string['importparseerror'] = '가져오기 파일을 파싱하는데 오류가 발견되었습니다. 질문들을 가져오기 할 수 없습니다. 정상적인 질문들을 가져오려면 \'오류시 정지\'를 \'아니오\'로 설정하고 다시 시도하십시요.';
 $string['importquestions'] = '파일에서 질문 가져오기';
 $string['importquestions_help'] = '이 기능은 문서 파일을 이용하여 다양한 형태의 질문들을 가져올 수 있게 합니다. 다만 이 때, 파일은 UTF-8 인코딩을 사용해야만 합니다.';
+$string['importquestions_link'] = 'question/import';
 $string['importwrongfiletype'] = '선택한 파일 유형 ({$a->actualtype})이 가져오기 형식 ({$a->expectedtype}) 과 일치하지 않습니다.';
 $string['impossiblechar'] = '불가능한 문자 {$a} 가 괄호 문자로 검출되었음';
 $string['includesubcategories'] = '하위 범주의 질문도 보여주기';
@@ -295,6 +299,7 @@ $string['page-question-x'] = '모든 질문 페이지';
 $string['parent'] = '부모';
 $string['parentcategory'] = '상위 범주';
 $string['parentcategory_help'] = '상위범주는 새 범주가 만들어질 수 있는 범주입니다. "최상의 범주"는 범주가 다른 어떤 범주에도 속하지 않는다는 것을 의미합니다. 문맥범주는 굵은 글씨체로 표시됩니다. 각 문맥에는 최소 한개의 범주가 있어야 합니다.';
+$string['parentcategory_link'] = 'question/category';
 $string['parenthesisinproperclose'] = '{$a}**의 ** 앞에 있는 괄호는 제대로 닫히지 않았음';
 $string['parenthesisinproperstart'] = '{$a}**의 ** 앞에 있는 괄호가 없음';
 $string['parsingquestions'] = '가져오기 파일에서 질문 파싱';
@@ -318,6 +323,7 @@ $string['questionbehavioursdisabled'] = '비활성화할 질문 진행방식';
 $string['questionbehavioursdisabledexplained'] = '드롭다운 메뉴에 나타나지 않기를 원하는 질문진행방식의 목록을 콤마로 분리하여 입력하십시요.';
 $string['questionbehavioursorder'] = '질문 진행방식 순서';
 $string['questionbehavioursorderexplained'] = '드롭다운 메뉴에 나타나기를 원하는 순서대로 질문진행방식의 목록을 콤마로 분리하여 입력하십시요.';
+$string['questioncategories'] = '질문 범주';
 $string['questioncategory'] = '질문 범주';
 $string['questioncatsfor'] = '\'{$a}\'의 질문 범주';
 $string['questiondoesnotexist'] = '질문이 존재하지 않음';

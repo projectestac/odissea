@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'gl', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'gl', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -27,15 +27,15 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['confirmquestionsaveasedited'] = 'Confirmo que quero que a pregunta se garde tal como quedou editada.';
 $string['confirmsave'] = 'Confirmar e logo gardar {$a}';
-$string['correctanswer'] = 'Corrixir a resposta';
+$string['correctanswer'] = 'Resposta correcta';
 $string['correctanswerandfeedback'] = 'Corrixir a resposta e o comentario';
 $string['corruptedquestion'] = 'Esta pregunta está estragada e contén subpreguntas que non están presentes no seu sistema.';
 $string['decodeverifyquestiontext'] = 'Descodificar e comprobar o texto da pregunta';
 $string['invalidmultianswerquestion'] = 'Pregunta de respostas incrustadas (Cloze) non válida({$a}).';
 $string['layout'] = 'Deseño';
 $string['layouthorizontal'] = 'Fila horizontal de botóns de opción';
-$string['layoutmultiple_horizontal'] = 'Fila horizontal de caixas de verificación';
-$string['layoutmultiple_vertical'] = 'Fila vertical de caixas de verificación';
+$string['layoutmultiple_horizontal'] = 'Fila horizontal de caixas de selección';
+$string['layoutmultiple_vertical'] = 'Fila vertical de caixas de selección';
 $string['layoutselectinline'] = 'Menú despregábel en liña no texto';
 $string['layoutundefined'] = 'Deseño sen definir';
 $string['layoutvertical'] = 'Columna vertical de botóns de opción';
@@ -44,13 +44,13 @@ $string['nooptionsforsubquestion'] = 'Non foi posíbel obter as opcións para a 
 $string['noquestions'] = 'A pregunta Cloze (multiresposta) «<strong>{$a}</strong>» non contén ningunha pregunta';
 $string['pleaseananswerallparts'] = 'Responda a todas as partes da pregunta.';
 $string['pluginname'] = 'Respostas incorporadas (Cloze)';
-$string['pluginname_help'] = 'As respostas incorporadas (Cloze) a preguntas consisten nunha pasaxe de texto con preguntas como as de multiescolla e resposta curta incorporadas dentro';
+$string['pluginname_help'] = 'As respostas incorporadas (Cloze) a preguntas consisten nunha pasaxe de texto con preguntas  como as de multiescolla e resposta curta incorporadas dentro';
 $string['pluginname_link'] = 'pregunta/tipo/multiresposta';
 $string['pluginnameadding'] = 'Engadindo respostas incorporadas (Cloze) a unha pregunta';
 $string['pluginnameediting'] = 'Editando unha resposta incorporada (Cloze) a unha pregunta';
 $string['pluginnamesummary'] = 'As preguntas deste tipo son moi flexíbeis pero soamente poden crearse introducindo texto que contén códigos especiais para crear multiescolla incorporada, respostas curtas e preguntas numéricas.';
 $string['privacy:metadata'] = 'O engadido de pregunta de respostas incrustadas (CLOZE) non almacena ningún dato persoal.';
-$string['qtypenotrecognized'] = 'Non se recoñece o tipo e pregunta {$a}';
+$string['qtypenotrecognized'] = 'Non se recoñece o tipo de pregunta {$a}';
 $string['questiondefinition'] = 'Definición da pregunta';
 $string['questiondeleted'] = 'Pregunta eliminada';
 $string['questioninquiz'] = '<ul>

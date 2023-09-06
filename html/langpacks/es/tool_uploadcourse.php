@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'es', version '3.11'.
+ * Strings for component 'tool_uploadcourse', language 'es', version '4.1'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -49,7 +49,7 @@ $string['coursecreated'] = 'Curso creado';
 $string['coursedeleted'] = 'Curso eliminado';
 $string['coursedeletionnotallowed'] = 'No está permitido eliminar curso';
 $string['coursedoesnotexistandcreatenotallowed'] = 'El curso no existe y no está permitido crear cursos';
-$string['courseexistsanduploadnotallowed'] = 'El curso existe y no está permitida la actualziación';
+$string['courseexistsanduploadnotallowed'] = 'El curso existe y no está permitida la actualización';
 $string['coursefile'] = 'Archivo';
 $string['coursefile_help'] = 'Debe ser un archivo CSV';
 $string['courseidnumberincremented'] = 'Número ID del curso incrementado {$a->from} -> {$a->to}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'ru', version '3.11'.
+ * Strings for component 'message_airnotifier', language 'ru', version '4.1'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -41,14 +41,20 @@ $string['configairnotifierurl'] = 'URL-адрес сервера для подк
 $string['configured'] = 'Настроено';
 $string['deletecheckdevicename'] = 'Удаление устройства: {$a->name}';
 $string['deletedevice'] = 'Устройство удалено. Обратите внимание, что приложение может зарегистрировать устройство еще раз. Если устройство продолжает появляться - отключите его.';
-$string['devicetoken'] = 'Ключ (токен) устройства';
+$string['devicetoken'] = 'Токен устройства';
+$string['donotsendnotification'] = 'Вообще не отправлять уведомления';
 $string['enableprocessor'] = 'Включить мобильные уведомления';
+$string['encryptnotifications'] = 'Шифровать уведомления';
+$string['encryptprocessing'] = 'Для устройств, не поддерживающих шифрование';
+$string['encryptprocessing_desc'] = 'Для шифрования уведомлений требуется как минимум Android 8 или iOS 13 и приложение Moodle 4.2 или более поздней версии.';
 $string['errorretrievingkey'] = 'Ошибка при получении ключа доступа. Ваш сайт должен быть зарегистрирован, чтобы пользоваться этой услугой. Если ваш сайт уже зарегистрирован, попробуйте обновить регистрацию. Кроме того, вы можете получить ключ доступа, создав учетную запись на <a href="https://apps.moodle.com"> Портале приложений Moodle </a>.';
 $string['keyretrievedsuccessfully'] = 'Ключ доступа успешно получен. Чтобы получить доступ к статистике использования приложения Moodle, создайте учетную запись на <a href="https://apps.moodle.com"> Портале приложений Moodle </a>.';
 $string['messageprovidersempty'] = 'В настройках уведомлений по умолчанию нет мобильных уведомлений.';
 $string['messageproviderslow'] = 'В настройках уведомлений по умолчанию включены только несколько мобильных уведомлений.';
 $string['moodleappsportallimitswarning'] = 'Обратите внимание, что количество пользовательских устройств, которым разрешено получать уведомления, зависит от вашей подписки на приложение Moodle. Для получения дополнительной информации посетите <a href="{$a}" target="_blank"> Портал приложений Moodle </a>.';
 $string['nodevices'] = 'Нет зарегистрированных устройств. Устройства будут автоматически появляться после того, как Вы установите приложение Moodle Mobile и добавите этот сайт.';
+$string['noemailevernotset'] = '$CFG->noemailever запрещен';
+$string['noemaileverset'] = '$CFG->noemailever включен в config.php. Вам необходимо установить значение false или удалить этот параметр.';
 $string['nopermissiontomanagedevices'] = 'Вы не имеете разрешения на управление устройствами.';
 $string['notconfigured'] = 'Сервер Airnotifier не был настроен - сообщения Airnotifier не могут быть отправлены';
 $string['notificationsserverconfiguration'] = 'Конфигурация сервера уведомлений (Airnotifier)';
@@ -71,6 +77,7 @@ $string['privacy:metadata:username'] = 'Логин пользователя.';
 $string['privacy:metadata:usersubsystem'] = 'Этот плагин подключен к пользовательской подсистеме.';
 $string['privacy:subcontext'] = 'Сообщения Airnotifier';
 $string['requestaccesskey'] = 'Запрос ключа доступа';
+$string['sendnotificationnotenc'] = 'Отправлять уведомления без шифрования';
 $string['sendtest'] = 'Отправить тестовое push-уведомление на мои устройства';
 $string['sendtestconfirmation'] = 'На устройства, которые вы используете для подключения к этому сайту, будет отправлено тестовое push-уведомление. Убедитесь, что ваши устройства подключены к Интернету и мобильное приложение не открыто (поскольку push-уведомления отображаются только при получении в фоновом режиме).';
 $string['serverconnectivityerror'] = 'Этот сайт не может подключиться к серверу уведомлений {$a}';
@@ -78,3 +85,4 @@ $string['showhide'] = 'Включить/отключить устройство.
 $string['sitemustberegistered'] = 'Для использования общественного Airnotifier ваш сайт должен быть зарегистрирован. Кроме того, вы можете получить ключ доступа, создав учетную запись на <a href="https://apps.moodle.com"> Портале приложений Moodle </a>.';
 $string['unknowndevice'] = 'Неизвестное устройство';
 $string['userdevices'] = 'Пользовательские устройства';
+$string['view_notification'] = 'Нажмите для просмотра';

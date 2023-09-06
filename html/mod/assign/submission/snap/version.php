@@ -23,9 +23,9 @@
  */
 defined ( 'MOODLE_INTERNAL' ) || die ();
 
-$plugin->version = 2022080500;
+$plugin->version = 2023032201;
 $plugin->requires = 2019111800;
-$plugin->supported = [38, 400]; // Moodle 3.8, 3.9, 3.10, 3.11 and 4.0 suported and tested.
+$plugin->supported = [38, 410]; // Moodle 3.8, 3.9, 3.10, 3.11, 4.0 and 4.1 suported and tested.
 $plugin->component = 'assignsubmission_snap';
-$plugin->release = 'v2.1 (Snap! online)';
+$plugin->release = 'v2.2 (Snap! online)';
 $plugin->maturity = MATURITY_STABLE;

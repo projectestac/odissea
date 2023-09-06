@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'es', version '3.11'.
+ * Strings for component 'cache', language 'es', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -40,6 +40,8 @@ $string['cachedef_calendar_subscriptions'] = 'Suscripciones al calendario';
 $string['cachedef_capabilities'] = 'Listado de prestaciones del sistema';
 $string['cachedef_completion'] = 'Estado de finalización de la actividad';
 $string['cachedef_config'] = 'Ajustes de configuración';
+$string['cachedef_contentbank_allowed_categories'] = 'Categorías de curso del Banco de contenido permitidas para el usuario actual';
+$string['cachedef_contentbank_allowed_courses'] = 'Cursos del Banco de contenido permitidos para el usuario actual';
 $string['cachedef_contentbank_context_extensions'] = 'Extensiones permitidas y sus plugins que las soportan en un contexto de banco de contenido';
 $string['cachedef_contentbank_enabled_extensions'] = 'Extensiones permitidas y sus plugins que las soportan en banco de contenido';
 $string['cachedef_contextwithinsights'] = 'Contexto con intuiciones (predicciones)';
@@ -50,10 +52,14 @@ $string['cachedef_coursecatrecords'] = 'Registros de categorías de cursos';
 $string['cachedef_coursecattree'] = 'Árbol de categorías de cursos';
 $string['cachedef_coursecompletion'] = 'Estado de finalización del curso';
 $string['cachedef_coursecontacts'] = 'Lista de contactos del curso';
+$string['cachedef_courseeditorstate'] = 'El estado del curso de la sesión cachea claves para detectar cambios de curso en la parte del usuario.';
 $string['cachedef_coursemodinfo'] = 'Información acumulada sobre los módulos y secciones para cada curso';
+$string['cachedef_coursesectionspreferences'] = 'Preferencias de sección de curso';
 $string['cachedef_databasemeta'] = 'Meta Información de Base de Datos';
+$string['cachedef_deprecatedcapabilities'] = 'Lista de capacidades deprecadas del sistema';
 $string['cachedef_eventinvalidation'] = 'Invalidación de evento';
 $string['cachedef_externalbadges'] = 'Insignias externas de un usuario concreto';
+$string['cachedef_file_imageinfo'] = 'Información sobre imagen de archivo como por ejemplo dimensiones';
 $string['cachedef_fontawesomeiconmapping'] = 'Mapeo de iconos para font Awesome';
 $string['cachedef_grade_categories'] = 'Consulta de categorías de grado';
 $string['cachedef_grade_letters'] = 'Consultas de calificaciones con letras';
@@ -77,6 +83,7 @@ $string['cachedef_postprocessedcss'] = 'CSS post procesado';
 $string['cachedef_presignup'] = 'Preinscribir datos para un usuario no registrado determinado';
 $string['cachedef_questiondata'] = 'Definiciones de preguntas';
 $string['cachedef_recommendation_favourite_course_content_items'] = 'Recomendaciones de elementos de contenido del curso';
+$string['cachedef_reportbuilder_allowed_reports'] = 'Usuarios que tiene permitido reportes de acuerdo a audiencia';
 $string['cachedef_repositories'] = 'Datos de repositorios';
 $string['cachedef_roledefs'] = 'Definiciones de roles';
 $string['cachedef_string'] = 'Caché de cadenas de idioma';
@@ -91,6 +98,7 @@ $string['cachedef_userselections'] = 'Información empleada para mantener las se
 $string['cachedef_yuimodules'] = 'Definiciones de módulos YUI';
 $string['cachelock_file_default'] = 'Bloqueo de archivo por defecto';
 $string['cachestores'] = 'Almacenes de caché';
+$string['cacheusage'] = 'Uso de caché';
 $string['caching'] = 'Caché';
 $string['canuselocalstore'] = 'Puede usar almacén local';
 $string['component'] = 'Componente';
@@ -113,8 +121,8 @@ $string['deletestore'] = 'Eliminar almacén';
 $string['deletestoreconfirmation'] = '¿Está seguro de querer eliminar el almacén  "{$a}" ?';
 $string['deletestorehasmappings'] = 'Usted no puede eliminar este almacén porque tiene mapeos. Por favor elimine todos los mapeos antes de eliminar el almacén.';
 $string['deletestoresuccess'] = 'Se eliminó exitosamente el almacén de caché';
-$string['editdefinitionmappings'] = 'Mapeos de almacén definiciones
-{$a}';
+$string['editdefinitionmapping'] = 'Editar mapeo de definición';
+$string['editdefinitionmappings'] = 'Mapeos del almacén de definiciones {$a}';
 $string['editdefinitionsharing'] = 'Editar la definición de compartición para {$a}';
 $string['editmappings'] = 'Editar mapeos';
 $string['editsharing'] = 'Editar compartir';
@@ -157,8 +165,6 @@ $string['pluginsummaries'] = 'Almacenes de caché instalados';
 $string['privacy:metadata:cachestore'] = 'El subsistema de Caché almacena datos temporalmente a nombre de otras partes de Moodle. Estos datos no son fácilmente identificables, y son de muy corta duración. Sirve como una caché de datos almacenados en otro sitio en Moodle y por lo tanto deberían de ser manejados por esos componentes de Moodle.';
 $string['purge'] = 'Purgar';
 $string['purgeagain'] = 'Purgar otra vez';
-$string['purgedefinitionsuccess'] = 'Definición solicitada purgada con éxito.';
-$string['purgestoresuccess'] = 'Se purgó exitosamente el almacén solicitado.';
 $string['purgexdefinitionsuccess'] = 'Se purgó exitosamente ({$a->component}/{$a->area}) del caché "{$a->name}" .';
 $string['purgexstoresuccess'] = 'Se purgó exitosamente el almacenamiento "{$a->store}".';
 $string['requestcount'] = 'Probar con {$a} solicitudes';
@@ -206,5 +212,14 @@ $string['tested'] = 'Probado';
 $string['testperformance'] = 'Desempeño de prueba';
 $string['unsupportedmode'] = 'Modo no soportado';
 $string['untestable'] = 'No puede probarse';
+$string['updatedefinitionmapping'] = 'Editar mapeo de definición';
+$string['updatedefinitionsharing'] = 'Editar compartición de definición';
+$string['usage_items'] = 'Elementos';
+$string['usage_mean'] = 'Tamaño medio del elemento';
+$string['usage_realtotal'] = 'Uso actual (si se conoce)';
+$string['usage_samples'] = 'Elementos muestreados por caché';
+$string['usage_sd'] = 'Desviación Típica';
+$string['usage_total'] = 'Total estimado';
+$string['usage_totalmargin'] = 'Margen de error (95%)';
 $string['userinputsharingkey'] = 'Clave personalizada para compartir';
 $string['userinputsharingkey_help'] = 'Escriba su propia clave privada aquí. Al configurar otros almacenes en otros sitios con los que desea compartir los datos debe asegurarse de que se establece la misma clave allí.';

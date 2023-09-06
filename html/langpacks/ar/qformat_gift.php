@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'ar', version '3.11'.
+ * Strings for component 'qformat_gift', language 'ar', version '4.1'.
  *
  * @package     qformat_gift
  * @category    string
@@ -36,4 +36,5 @@ $string['importminerror'] = 'هناك خطأ في السؤال. لا توجد إ
 $string['nohandler'] = 'لا معالج لنوع السؤال {$a}';
 $string['pluginname'] = 'صيغة GIFT';
 $string['pluginname_help'] = 'صيغة GIFT تتيح استيراد وتصدير الأسئلة بأنواع: متعدد الخيارات، صح/خطأ، الإجابة القصيرة، المطابقة، الكلمة المفقودة، الرقمية والمقالة عبر ملف نصي.';
+$string['pluginname_link'] = 'qformat/gift';
 $string['privacy:metadata'] = 'إن ملحق صيغة السؤال، GIFT لا يخزن أي بيانات شخصية.';

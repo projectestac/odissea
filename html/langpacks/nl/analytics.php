@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'nl', version '3.11'.
+ * Strings for component 'analytics', language 'nl', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -123,6 +123,10 @@ $string['percentonline'] = 'Percentage online';
 $string['percentonline_help'] = 'Als uw organisatie gemengde of hybride cursussen aanbiedt, welk percentage van het leerlingenwerk wordt online uitgevoerd in Moodle? Voer een cijfer tussen 0 en 100 in.';
 $string['predictionsprocessor'] = 'Voorspellingsprocessor';
 $string['predictionsprocessor_help'] = 'Een voorspellingsprocessor is het machine lerende achtergrondproces dat de gegevenssets verwerkt door het berekenen van modelindicatoren en doelen. Elk model kan een andere processor gebruiken. Degene die je hier opgeeft zal de standaard zijn.';
+$string['privacy:metadata:analytics:analyticsmodels'] = 'Analytische modellen';
+$string['privacy:metadata:analytics:analyticsmodels:usermodified'] = 'De gebruiker die het model heeft gewijzigd';
+$string['privacy:metadata:analytics:analyticsmodelslog'] = 'Het logboek dat wordt gebruikt voor analytische modellen';
+$string['privacy:metadata:analytics:analyticsmodelslog:usermodified'] = 'De gebruiker die het logboek heeft gewijzigd';
 $string['privacy:metadata:analytics:indicatorcalc'] = 'Indicatorberekeningen';
 $string['privacy:metadata:analytics:indicatorcalc:contextid'] = 'De context';
 $string['privacy:metadata:analytics:indicatorcalc:endtime'] = 'Berekening eindtijd';
@@ -152,6 +156,7 @@ $string['processingsitecontents'] = 'Site inhoud verwerken';
 $string['successfullyanalysed'] = 'Succesvol geanalyseerd';
 $string['timesplittingmethod'] = 'Analyse-interval';
 $string['timesplittingmethod_help'] = 'Het analyse-interval bepaalt wanneer het systeem voorspellingen zal berekenen en het deel van de activiteiten-logs dat zal gebruikt worden voor deze voorspellingen. Hiermee kan bijvoorbeeld de cursus opgesplitst worden in tijdsblokken en een voorspelling kan berekend worden aan het einde van elk deel.';
+$string['timesplittingmethod_link'] = 'Time_splitting_methods';
 $string['typeinstitution'] = 'Type instelling';
 $string['typeinstitutionacademic'] = 'Academisch';
 $string['typeinstitutionngo'] = 'Niet-gouvernementele organisatie (NGO)';

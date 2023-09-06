@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'eu', version '3.11'.
+ * Strings for component 'gradereport_singleview', language 'eu', version '4.1'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -26,21 +26,27 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all_grades'] = 'Kalifikazio guztiak';
+$string['ariareporttype'] = 'Aukeratu txosten mota bat ikusteko';
 $string['assessmentname'] = 'Kalifikazio-elementua';
 $string['blanks'] = 'Hutsik dauden kalifikazioak';
 $string['bulkappliesto'] = 'Hauentzat:';
+$string['bulkchoice'] = 'Kalifikazioak masiboki sartzeak hainbat kalifikazio batera ordezkatzea ahalbidetzen dizu. Aukeratu itzazu ordezkatu nahi dituzun kalifikazioak:';
 $string['bulkfor'] = '{$a}(r)rentzako kalifikazioak';
-$string['bulkinsertvalue'] = 'Sartu balioa';
-$string['bulklegend'] = 'Sartu masiboki';
+$string['bulkinsertvalue'] = 'Sartu kalifikazio berria';
+$string['bulklegend'] = 'Sartu kalifikazioak masiboki';
 $string['bulkperform'] = 'Exekutatu sarrera masiboa';
 $string['entrypage'] = 'Kalifikatu erabiltzailea edo elementua';
 $string['eventgradereportviewed'] = 'Kalifikazioen banakako ikuspegia txostena ikusi da.';
 $string['exclude'] = 'Utzi kanpoan';
 $string['excludeall'] = 'Utzi kanpoan kalifikazio guztiak';
+$string['excludeallgrades'] = 'Utzi kanpoan guztiak';
 $string['excludefor'] = 'Baztertu hauek: {$a}';
 $string['excludenone'] = 'Ez utzi kanpoan kalifikaziorik';
+$string['excludenonegrades'] = 'Barne hartu guztiak';
 $string['feedbackfor'] = 'Feedbacka {$a}(r)entzat';
 $string['filtergrades'] = 'Erakutsi {$a}(r)en kalifikazioak';
+$string['gotonextreport'] = 'Joan hurrengo erabiltzaile-txostena';
+$string['gotopreviousreport'] = 'Joan aurreko erabiltzaile-txostena';
 $string['gradefor'] = 'Kalifikatu hauek: {$a}';
 $string['gradeitem'] = 'Kalifikazio-elementua: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Kalifikazio-elementu hau ezin da baliogabetu.';
@@ -50,17 +56,30 @@ $string['noscreens'] = 'Ez da aurkitu banakako ikuspegia pantaila egokirik.';
 $string['notvalid'] = 'Pantaila honek ez du balio Banakako ikuspegirako: {$a}';
 $string['override'] = 'Baliogabetu';
 $string['overrideall'] = 'Baliogabetu kalifikazio guztiak';
+$string['overrideallgrades'] = 'Baliogabetu guztiak';
 $string['overridefor'] = 'Baliogabetzea ondokoarentzat: {$a}';
 $string['overridenone'] = 'Ez baliogabetu kalifikaziorik';
-$string['overridenoneconfirm'] = 'Kalifikazio-baliogabetzeak desgaitzera zoaz. Honek aurretik baliogabetutako kalifikazio guztiak ezabatuko ditu. Ziur zaude?';
+$string['overridenoneconfirm'] = 'Ekintza honek orri honetan aurretik baliogabetutako kalifikazio guztiak ezabatuko ditu aldaketak gordetzen dituzunean.';
+$string['overridenonegrades'] = 'Bat ere ez baliogabetu';
 $string['pluginname'] = 'Banakako ikuspegia';
 $string['privacy:metadata'] = 'Kallifikazioen banakako ikuspegia txostenak soilik beste kokapenetan gordetako datuak erakusten ditu.';
+$string['removeoverride'] = 'Kendu kalifikazio-baliogabetzeak';
+$string['removeoverridesave'] = 'Kendu baliogabetzeak';
 $string['save'] = 'Gorde';
 $string['savegrades'] = 'Kalifikazioak gordetzen';
 $string['savegradessuccess'] = 'Kalifikazioak ezarri dira {$a} elementuentzat';
-$string['selectgrade'] = 'Aukeratu kalifikazio-elementua...';
-$string['selectuser'] = 'Aukeratu erabiltzailea...';
-$string['singleview:view'] = 'Ikusi txostena';
+$string['searchgrades'] = 'Bilatu kalifikazio-elementuak';
+$string['selectagrade'] = 'Aukeratu kalifikazio-elementu bat';
+$string['selectgradeitemlink'] = 'Aukeratu kalifikazio-elementu bat';
+$string['singleview:view'] = 'Ikusi banakako ikuspegia';
+$string['singleviewdescription'] = 'Banakako ikuspegian aukeratutako kalifikazioak baliogabetu ala alde batera utzi eta kalifikazioak masiboki sartu ditzakezu.';
 $string['summarygrade'] = 'Erabiltzaileen taula bat hurrengo zutabeekin: ibiltartea, kalifikazioa, feedbacka eta kalifikazioren bat baliogabetu edo kanpoan utzi behar den zehazteko.';
 $string['summaryuser'] = 'Kalifikazio-elementuen taula bat hurrengo zutabeekin: kalifikazio-kategoria, ibiltartea, kalifikazioa, feedbacka eta kalifikazioren bat baliogabetu edo kanpoan utzi behar den zehazteko.';
+$string['unsavedataalert'] = 'Orri honetan gorde gabeko aldaketak badituzu galdu egingo dira kalifikazioak masiboki sartzearekin aurrera eginez gero.';
+$string['unsavedataconfirm'] = 'Ulertzen dut gorde gabeko kalifikazioak galduko direla.';
+$string['unsaveddatawarning'] = 'Gorde gabeko datuen oharra';
 $string['userselect'] = 'Aukeratu jarduera';
+$string['viewby'] = 'Nork ikusita';
+$string['viewsinglegradeitem'] = 'Aukeratu kalifikazio-elementu bat goian';
+$string['viewsingleuser'] = 'Aukeratu erabiltzaile bat goian bere kalifikazio guztiak ikusteko';
+$string['viewsingleuserorgradeitem'] = 'Ikusi erabiltzaile ala kalifikazio-elementu bateko kalifikazio guztiak.';

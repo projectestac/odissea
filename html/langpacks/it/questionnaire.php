@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'it', version '3.11'.
+ * Strings for component 'questionnaire', language 'it', version '4.1'.
  *
  * @package     questionnaire
  * @category    string
@@ -37,6 +37,7 @@ $string['addquestiontosection'] = 'Aggiungi una domanda alla sezione';
 $string['addselqtype'] = 'Aggiungi una domanda del tipo selezionato';
 $string['alignment'] = 'Allineamento';
 $string['alignment_help'] = 'Di default, i pulsanti radio sono allineati verticalmente. Se le indicazioni nella lista "Risposte" sono relativamente corte (o numerose) si può scegliere di mostrarle orizzontalmente. <br /><strong>Nota:</strong><br />La correttezza della visualizzazione orizzontale non è garantita su tutti i browsers. Si prega di effettuare delle verifiche personali.';
+$string['alignment_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['all'] = 'Tutto';
 $string['allnameddegrees'] = 'Gradi nominali';
 $string['allnameddegrees_help'] = 'Specificare il testo per far visualizzare gradi nominali al posto dei numeri. Lasciare vuoto se non utilizzato.';
@@ -77,6 +78,7 @@ $string['chart:vprogress'] = 'Barra verticale';
 $string['checkallradiobuttons'] = 'Selezionare tutti i <strong>{$a}</strong> pulsanti radio!';
 $string['checkboxes'] = 'Caselle di spunta';
 $string['checkboxes_help'] = 'Inserisci una opzione per ogni linea.';
+$string['checkboxes_link'] = 'mod/questionnaire/questions#Check_Boxes';
 $string['checkbreaksadded'] = 'Interruzioni di pagina inserite nelle posizioni:';
 $string['checkbreaksok'] = 'Tute le interruzioni di pagina richieste sono presenti!';
 $string['checkbreaksremoved'] = 'Rimosse {$a} interruzioni di pagina  in eccesso.';
@@ -118,10 +120,12 @@ $string['createcontent_help'] = 'Per creare un nuovo questionario selezionare un
     * **Usa Pubblico:** Se un questionario di tipo Pubblico è già stato creato (in un altro corso dello stessa installazione di Moodle), questa opzione consente di usare tale questionario in questa attività. Il numero di opzioni disponibili, per questo tipo di questionario, ai docenti di questo corso è ridotto e non è possibile né modificarne il contenuto né visualizzarne le risposte.
 
     <br />**Esempio:** Se un questionario di tipo "Pubblico" è stato creato nel corso A, esso può essere erogato nei corsi B, C... Tutte le risposte dagli utenti dei corsi A, B, C... saranno raccolte nel questionario pubblico creato nel corso A e saranno visualizzabili solamente nel contesto del corso A dagli amministratori o docenti che lo hanno realizzato.';
+$string['createcontent_link'] = 'mod/questionnaire/mod#Content_Options';
 $string['createnew'] = 'Crea nuovo';
 $string['crontask'] = 'Pulizia Questionario';
 $string['date'] = 'Data';
 $string['date_help'] = 'Usare questo tipo di domanda se si desidera che la risposta sia formattata correttamente come data.';
+$string['date_link'] = 'mod/questionnaire/questions#Date';
 $string['dateformatting'] = 'E\' possibile usare il formato gg/mm/aaaa, es: 14 Marzo, 1945 <strong>14/3/1945</strong>';
 $string['deleteallresponses'] = 'Elimina TUTTE le risposte';
 $string['deletecurrentquestion'] = 'Elimina la domanda';
@@ -136,6 +140,7 @@ $string['dependencies'] = 'Dipendenze';
 $string['dependquestion'] = 'Domanda genitore';
 $string['dependquestion_help'] = 'E\' possibile selezionare una domanda genitore e un\'opzione di scelta per questa domanda. Allo studente verrà visualizzata una domanda figlia"
                  in basse alla scelta operata nella domanda genitore.';
+$string['dependquestion_link'] = 'mod/questionnaire/questions#Parent_Question';
 $string['didnotrespondtoquestion'] = 'Non ha risposto alla domanda';
 $string['directwarnings'] = 'Le dipendenze dirette di questa domanda verranno rimosse. Questo influenzerà:';
 $string['displaymethod'] = 'Il metodo di visualizzazione delle domande non è definito.';
@@ -144,9 +149,11 @@ $string['downloadpdf'] = 'Scarica PDF';
 $string['downloadtextformat'] = 'Download in formato testo';
 $string['downloadtextformat_help'] = 'Questa opzione permette di salvare tutte le risposte di un questionario in un file di testo (CSV).
 Questo file può essere importato in un programma di foglio di calcolo (ad esempio, MS Excel o Open Office Calc).';
+$string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
 $string['downloadtypes'] = 'Tipo di report';
 $string['dropdown'] = 'Menu a tendina';
 $string['dropdown_help'] = 'Inserire una opzione di risposta per ogni linea';
+$string['dropdown_link'] = 'mod/questionnaire/questions#Dropdown_Box';
 $string['edit'] = 'Modifica';
 $string['editingfeedback'] = 'Modifica impostazioni del feedback';
 $string['editingquestionnaire'] = 'Modifica del questionario - Pagina principale';
@@ -181,6 +188,7 @@ $string['event_saved'] = 'Salvate risposte';
 $string['event_submitted'] = 'Inviate risposte';
 $string['feedback'] = 'Feedback';
 $string['feedback_help'] = 'Aiuto sul feedback';
+$string['feedback_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Messages';
 $string['feedbackaddmorefeedbacks'] = 'Aggiungi {no} campi feedback';
 $string['feedbackbysection'] = 'Sezioni di feedback';
 $string['feedbackdefaultlabel'] = '[Nuova sezione]';
@@ -208,6 +216,7 @@ $string['feedbacknotes_help'] = 'Il testo inserito verrà visualizzato dall\'ute
 $string['feedbackoptions'] = 'Opzioni di feedback';
 $string['feedbackoptions_help'] = 'Le opzioni del feedback saranno disponibili se il questionario contiene i seguenti tipi di domande e impostazioni:
 Pulsanti radio; Menu a tendina; Scala. Queste domande devono essere impostate con risposta obbligatoria, deve essere inserito un nome e le possibili risposte devono contenere un valore.';
+$string['feedbackoptions_link'] = 'mod/questionnaire/personality_test';
 $string['feedbackremovequestionfromsection'] = 'Questa domanda fa parte della sezione del feedback [{$a}]';
 $string['feedbackremovesection'] = 'Eliminando questa domanda si eliminerà la sezione del feedback [{$a}]';
 $string['feedbackreport'] = 'Report del feedback';
@@ -225,6 +234,7 @@ $string['feedbacksectionquestions'] = '{$a} domande della sezione';
 $string['feedbacksections'] = '{$a} sezioni per il feedback';
 $string['feedbacksectionsselect'] = 'Sezioni';
 $string['feedbacksectionsselect_help'] = 'Posiziona le tue domande in queste sezioni';
+$string['feedbacksectionsselect_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Sections_2';
 $string['feedbacksettingssaved'] = 'Impostazioni del feedback salvate';
 $string['feedbacktype'] = 'Tipo di feedback';
 $string['field'] = 'La domanda numero {$a}';
@@ -254,13 +264,16 @@ $string['invalidsectionid'] = 'E\' stata specificata una sezione non corretta de
 $string['invalidsurveyid'] = 'ID del questionario non corretto';
 $string['kindofratescale'] = 'Tipo di scala';
 $string['kindofratescale_help'] = 'Click con il pulsante destro del mouse sul link "Aiuto ulteriore"';
+$string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['lastrespondent'] = 'Ultimo utente che ha risposto';
 $string['length'] = 'Lunghezza';
 $string['managequestions'] = 'Gestisci domande';
 $string['managequestions_help'] = 'Nella sezione Gestisci domande della pagina Modifica domande, puoi effettuare varie operazioni sulle domande del Questionario';
+$string['managequestions_link'] = 'mod/questionnaire/questions#Manage_questions';
 $string['mandatory'] = 'Obbligatorio - Tutte queste dipendenze devono essere soddisfatte.';
 $string['maxdigitsallowed'] = 'Numero massimo di cifre consentite';
 $string['maxdigitsallowed_help'] = 'Impostando i parametri del numero massimo di cifre consentite e delle cifre decimali, è possibile specificare la lunghezza e il numero dei decimali.';
+$string['maxdigitsallowed_link'] = 'mod/questionnaire/questions#Numeric';
 $string['maxforcedresponses'] = 'Numero massimo di scelte';
 $string['maxforcedresponses_help'] = 'Utilizza questi parametri per obbligare chi compila il questionario a selezionare un minimo di **Min.** caselle di spunta e un massimo di **Massimo** caselle di controllo. Per fare in modo che venga selezionato un numero esatto di caselle di controllo, imposta lo stesso valore su **Min.** e **Massimo**. Se si desidera impostare solo un valore minimo o solo un valore massimo, lasciare l\'altro valore di default a **00**: verrà visualizzato un messaggio di avviso se il rispondente non soddisfa i requisiti impostati. Occorre ovviamente chiarire qualsiasi requisito al rispondente, nelle istruzioni generali o nel testo delle domande pertinenti.';
 $string['maxtextlength'] = 'Massima lunghezza del testo';
@@ -278,6 +291,7 @@ $string['missingquestions'] = 'Per favore rispondi alle seguenti  domande obblig
 $string['missingrequired'] = 'La domanda {$a} non può essere utilizzata nella sezione del feedback perché non è obbligatoria.';
 $string['modulename'] = 'Questionario';
 $string['modulename_help'] = 'Il modulo Questionario consente di costruire questionari (indagini) usando diversi tipi di domande, allo scopo di raccogliere dati dagli utenti.';
+$string['modulename_link'] = 'mod/questionnaire/view';
 $string['modulenameplural'] = 'Questionari';
 $string['movedisabled'] = 'Questo elemento non può essere spostato';
 $string['myresponses'] = 'Tutte le mie risposte';
@@ -286,6 +300,7 @@ $string['myresults'] = 'I miei risultati';
 $string['name'] = 'Nome';
 $string['navigate'] = 'Consenti domande condizionate';
 $string['navigate_help'] = 'Consente alle domande di tipo Sì/No e Pulsanti radio di avere domande figlie dipendenti dalle opzioni selezionate nel questionario.';
+$string['navigate_link'] = 'mod/questionnaire/conditional_branching';
 $string['navigatetosection'] = 'Ritorna alla sezione del feedback';
 $string['next'] = 'Prossimo';
 $string['nextpage'] = 'Pagina successiva';
@@ -312,6 +327,7 @@ $string['notenoughscaleitems'] = 'Inserire almeno 2 elementi!';
 $string['notificationfull'] = 'Invio completo';
 $string['notifications'] = 'Invia notifica della consegna del questionario';
 $string['notifications_help'] = 'Invia una notifica della consegna del questionario agli utenti con la capability "mod/questionnaire:submissionnotification"';
+$string['notifications_link'] = 'mod/questionnaire/mod#Submission_Notifications';
 $string['notificationsimple'] = 'Solo notifica';
 $string['notopen'] = 'Il questionario sarà disponibile a partire dal {$a}';
 $string['notrequired'] = 'Risposta non obbligatoria';
@@ -322,6 +338,7 @@ $string['numattemptsmade'] = '{$a} tentativi effettuati in questo questionario';
 $string['numberfloat'] = 'Il numero inserito <strong>{$a->number}</strong> è stato arrotondato a <strong>{$a->precision}</strong> cifra/e decimale/i.';
 $string['numberofdecimaldigits'] = 'Numero di cifre decimali';
 $string['numberofdecimaldigits_help'] = 'Utilizza **Numero di cifre decimali** per specificare il formato del valore medio calcolato e mostrato nella pagina del report del Questionario.';
+$string['numberofdecimaldigits_link'] = 'mod/questionnaire/questions#Numeric';
 $string['numberscaleitems'] = 'Numero di valori';
 $string['numberscaleitems_help'] = 'Numero di valori è il *numero di opzioni* che saranno usate nella scala. Si usa comunemente un valore compreso fra 3 e 5. Valore di default: **5**.';
 $string['numeric'] = 'Numerico';
@@ -334,6 +351,7 @@ $string['optional'] = 'Opzionale - Almeno una di queste dipendenze deve essere s
 $string['optionalname'] = 'Nome <em>(opzionale)</em>';
 $string['optionalname_help'] = 'Il nome di una domanda è un identificativo mnemonico utile per il docente che gestisce il questionario.
 Ciò nonostante, assegnare un nome ad una domanda non è assolutamente necessario. Quest\'ultimo, infatti, viene usato soltanto come intestazione delle colonne dei documenti di esportazione delle risposte ai questionari nel formato CSV ed Excel. Se non si intendono esportare tali dati, non c\'è alcuna necessità di assegnare dei nomi alle domande. Se, per contro, si prevede di esportare sistematicamente le risposte acquisite nei questionari, si hanno due possibilità d\'uso del nome della domanda.';
+$string['optionalname_link'] = 'mod/questionnaire/questions#Question_Name';
 $string['or'] = 'oppure:';
 $string['order_ascending'] = 'Ascendente';
 $string['order_default'] = 'Default';
@@ -348,6 +366,7 @@ E\' possibile ordinare i 4 seguenti tipi di domande per numero di risposte:
 * scala (1..5) (inclusa la Scala Likert).
 
 E\' possibile visualizzarle in ordine discendente o ascendente.';
+$string['orderresponses_link'] = 'mod/questionnaire/report#Order_Responses';
 $string['osgood'] = 'Scala di Osgood';
 $string['other'] = 'Altro:';
 $string['otherempty'] = 'Questa selezione prevede che si debba inserire del testo nel campo corrispondente';
@@ -462,6 +481,7 @@ $string['questiontypes_help'] = 'Per aggiungere al proprio questionario una nuov
 $string['questiontypes_link'] = 'mod/questionnaire/questions#Question_Types';
 $string['radiobuttons'] = 'Pulsanti radio';
 $string['radiobuttons_help'] = 'In questo tipo di domanda l\'utente deve selezionare una delle possibili scelte elencate.';
+$string['radiobuttons_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['rank'] = 'Punteggio';
 $string['ratescale'] = 'Scala (1..5)';
 $string['ratescale_help'] = 'Per questo tipo di domanda si hanno due opzioni di visualizzazione. L\'opzione di default mostra i gradi della scala Likert come numeri (1...5). Se si preferisce avere gradi nominali invece di numeri, è possibile registrare questi nomi nella lista delle risposte. In ogni riga del campo relativo alle "risposte" registrare il numero del grado, immediatamente seguito dal segno di uguale = immediatamente seguito dal nome che si desidera assegnare a tale grado.
@@ -469,6 +489,7 @@ $string['ratescale_help'] = 'Per questo tipo di domanda si hanno due opzioni di 
 Attualmente, il numero che precede ogni nome del grado serve solo a ricordare la posizione nella scala orizzontale; esso non viene usato dal programma, e si può comunque utilizzare, ad esempio 0=Quasi mai; 0=Raramente; 0=Talvolta; etc. E\' necessario, però, cominciare con un numero immediatamente seguito dal segno di uguale = .
 <br />
 Se il numero di gradi nominali nella lista delle risposte è diverso da quello indicato nel campo **Numero di valori,** questo verrà automaticamente corretto quando si salverà la domanda. Se si decide di usare gradi nominali nella scala Likert, si raccomanda (ma non è obbligatorio) di cominciare la lista delle risposte con i gradi nominali, e registrare poi i diversi items da ordinare (per es. "Il mio studio è orientato...", "Ciò che studio è importante...", etc).';
+$string['ratescale_link'] = 'mod/questionnaire/questions#Rate_.28scale_1..5.29';
 $string['realm'] = 'Tipo di Questionario';
 $string['realm_help'] = 'Sono previsti tre tipi di questionario:
 
@@ -481,6 +502,7 @@ $string['realm_help'] = 'Sono previsti tre tipi di questionario:
 
 <br />**Esempio**:
     Se un questionario di tipo "Pubblico" è stato creato nel corso A esso può essere erogato nei corsi B, C... Tutte le risposte dagli utenti dei corsi A, B, C... saranno raccolte nel questionario pubblico creato nel corso A e saranno visualizzabili solamente nel contesto del corso A dagli amministratori o docenti che lo hanno realizzato. In altri termini, le modifiche e la visulizzazione potranno essere eseguite solamente dagli aventi diritto nel contesto del corso nel quale il questionario è stato originariamente creato come "Pubblico".';
+$string['realm_link'] = 'mod/questionnaire/qsettings#Questionnaire_Type';
 $string['redirecturl'] = 'L\'URL alla quale viene re-indirizzato l\'utente dopo aver partecipato al questionario';
 $string['remove'] = 'Elimina';
 $string['removeallquestionnaireattempts'] = 'Elimina tutte le risposte al questionario';
@@ -488,6 +510,7 @@ $string['removenotinuse'] = 'Questo questionario dipendeva da un questionario pu
 Non può più essere usato e deve essere cancellato.';
 $string['required'] = 'Risposta obbligatoria';
 $string['required_help'] = 'Se si seleziona **Sì**, la domanda sarà obbligatoria, ovvero l\'utente non potrà inviare il questionario senza aver prima risposto a questa domanda. Se, prima di rispondere alle domande obbligatorie, si cercherà di inviare un questionario (o, nel caso di questionari su più pagine, di passare ad un\'altra pagina dello stesso) verrà mostrato un messaggio di errore con l\'elenco di tutte le domande obbligatorie alle quali non si è fornita risposta nel questionario (o nella pagina).';
+$string['required_link'] = 'mod/questionnaire/questions#Response_Required';
 $string['requiredparameter'] = 'E\' stato omesso un parametro obbligatorio.';
 $string['reset'] = 'Resetta';
 $string['respeligiblerepl'] = '(rimpiazzata dai ruoli)';
@@ -501,6 +524,7 @@ $string['respondenttype_help'] = 'E\' possibile mostrare il nome completo degli 
 E\' possibile nascondere l\'identità degli stessi selezionando la voce "anonimo". <br />
 **Nota:**<br />
 Se il corso Moodle consente l\'accesso agli ospiti, questi ultimi saranno autorizzati a rispondere soltanto ai questionari per i quali l\'identità del compilatore è stato impostata ad "anonima".';
+$string['respondenttype_link'] = 'mod/questionnaire/mod#Respondent_Type';
 $string['respondenttypeanonymous'] = 'anonimo';
 $string['respondenttypefullname'] = 'nome completo';
 $string['response'] = 'Risposta';
@@ -522,6 +546,7 @@ Si ricorra al sistema di ruoli e privilegi per decidere quale categoria di utent
 
 * le risposte inviate personalmente
 * tutte le risposte inviate';
+$string['responseview_link'] = 'mod/questionnaire/mod#Response_viewing';
 $string['responseviewstudentsalways'] = 'Sempre';
 $string['responseviewstudentsnever'] = 'Mai';
 $string['responseviewstudentswhenanswered'] = 'Dopo aver risposto al questionario';
@@ -532,6 +557,7 @@ $string['resume_help'] = 'Quando è selezionata l\'opzione **Sì**, gli utenti p
 <br />**Nota:**<br />
 Se questa opzione è impostata a **Sì**, gli ospiti non saranno autorizzati a compilare il questionario.
 Questo dipende dal fatto che non c\'è modo per Moodle di distinguere un ospite da un altro, e, di conseguenza, non avrebbe senso che un ospite potesse cominciasse a rispondere ad un questionario mentre un altro potesse portarlo a termine.';
+$string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
 $string['resumesurvey'] = 'Riprendi questionario';
 $string['return'] = 'Ritorna';
 $string['save'] = 'Salva';
@@ -616,6 +642,7 @@ $string['vertical'] = 'Verticale';
 $string['view'] = 'Visualizza';
 $string['viewallresponses'] = 'Visualizza tutte le risposte';
 $string['viewallresponses_help'] = 'Se il questionario è impostato su **Modalità Gruppi: Gruppi visibili** o se è impostato su **Gruppi separati** e  l\'utente è autorizzato a visualizzare tutti i gruppi (nel contesto corrente) e i gruppi sono stati definiti nel corso corrente, sarà disponibile un menu a tendina con la lista dei gruppi, che permetterà di "filtrare" le risposte dei questionari per gruppi. Se invece l\'impostazione è **Modalità gruppi: Gruppi separati**, gli utenti che non sono autorizzati a visualizzare tutti i gruppi (ad esempio, in genere gli studenti o i docenti non editor), potranno visualizzare esclusivamente le risposte del gruppo o gruppi a cui appartengono.';
+$string['viewallresponses_link'] = 'Viewing_Questionnaire_responses#Group_filtering';
 $string['viewbyresponse'] = 'Elenco delle risposte';
 $string['viewindividualresponse'] = 'Risposte individuali';
 $string['viewindividualresponse_help'] = 'Per visualizzare le risposte individuali, clicca sul nome degli utenti che hanno compilato il questionario nell\'elenco sottostante';

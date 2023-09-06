@@ -1,4 +1,4 @@
-@core @core_grades
+@core @core_grades @javascript
 Feature: We can enter in grades and view reports from the gradebook
   In order to check the expected results are displayed
   As a teacher
@@ -28,13 +28,13 @@ Feature: We can enter in grades and view reports from the gradebook
     And I log in as "teacher1"
     And I am on "Course 1" course homepage
     And I follow "Test assignment name 1"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I set the following fields to these values:
       | Description | Submit your online text |
       | assignsubmission_onlinetext_enabled | 1 |
     And I press "Save and return to course"
     And I follow "Test assignment name 2"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I set the following fields to these values:
       | Description | Submit your online text |
       | assignsubmission_onlinetext_enabled | 1 |
@@ -70,8 +70,8 @@ Feature: We can enter in grades and view reports from the gradebook
 
   Scenario: Grade a grade item and ensure the results display correctly in the gradebook
     When I navigate to "View > User report" in the course gradebook
-    And "Grader report" "link" should exist
-    And the "Select all or one user" select box should contain "All users (1)"
+    And the "Gradebook navigation menu" select menu should contain "Grader report"
+    And I click on "All users (1)" in the "user" search widget
     And I log out
     And I log in as "student1"
     And I follow "Grades" in the user menu

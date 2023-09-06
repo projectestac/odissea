@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'ar', version '3.11'.
+ * Strings for component 'message_airnotifier', language 'ar', version '4.1'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -42,13 +42,18 @@ $string['configured'] = 'مهيأ';
 $string['deletecheckdevicename'] = 'إحذف جهازك: {$a->name}';
 $string['deletedevice'] = 'إحذف الجهاز. لاحظ أن التطبيق يمكنه تسجيل الجهاز مجدداً. إذا استمر الجهاز بالظهور، عطله.';
 $string['devicetoken'] = 'ترميز الجهاز';
+$string['donotsendnotification'] = 'لا ترسل أي إشعارات على الإطلاق';
 $string['enableprocessor'] = 'تمكين إشعارات الجوال';
+$string['encryptnotifications'] = 'تشفير الإشعارات';
+$string['encryptprocessing'] = 'للأجهزة التي لا تدعم التشفير';
 $string['errorretrievingkey'] = 'وقع خطأ عند إحضار مفتاح الوصول. ينبغي أن يكون موقعك مسجلاً لاستعمال هذه الخدمة. إن كان موقعك مسجل مسبقاً، لطفاً، حاول تحديث تسجيلك. كبديل، يمكنك الحصول على مفتاح الوصول عبر إنشاء حساب في <a href="https://apps.moodle.com">بوابة تطبيقات مودل</a>.';
 $string['keyretrievedsuccessfully'] = 'تم الحصول على مفتاح الوصول بنجاح. للوصول إلى إحصائيات استعمال تطبيق مودل، لطفاً، أنشئ حساباً في <a href="https://apps.moodle.com">بوابة تطبيقات مودل</a>.';
 $string['messageprovidersempty'] = 'ليست هناك إشعارات جوال مُمَكَّنة في تفضيلات الإشعارات الافتراضية.';
 $string['messageproviderslow'] = 'فقط القليل من إشعارات الجوال مُمَكَّنة في تفضيلات الإشعارات الافتراضية.';
 $string['moodleappsportallimitswarning'] = 'لطفاً، لاحظ أن عدد أجهزة المستخدمين المسموح لها بتلقي الإشعارات يعتمد على اشتراكك في تطبيقات مودل. لمعرفة التفاصيل، قم بزيارة <a href="{$a}" target="_blank">بوابة تطبيقات مودل</a>.';
 $string['nodevices'] = 'لا أجهزة مسجلة. ستظهر الأجهزة تلقائياً بعد تنصيب تطبيق مودل وإضافة هذا الموقع.';
+$string['noemailevernotset'] = '$CFG->noemailever معطل';
+$string['noemaileverset'] = '$CFG->noemailever مُمَكَّن في الملف config.php. ينبغي عليك ضبط هذا الإعداد إلى false أو إزالته.';
 $string['nopermissiontomanagedevices'] = 'ليست لديك صلاحية إدارة الأجهزة.';
 $string['notconfigured'] = 'لم تتم تهيئة مخدم Airnotifier بعد، لذلك يتعذر إرسال دفعات الإشعارات.';
 $string['notificationsserverconfiguration'] = 'تهيئة مخدم الإشعارات (Airnotifier)';
@@ -71,6 +76,7 @@ $string['privacy:metadata:username'] = 'اسم المستخدم للمستخدم
 $string['privacy:metadata:usersubsystem'] = 'هذه الإضافة مرتبطة بنظام المستخدم الفرعي';
 $string['privacy:subcontext'] = 'مراسلة Airnotifier';
 $string['requestaccesskey'] = 'أطلب مفتاح الوصول';
+$string['sendnotificationnotenc'] = 'أرسل إشعارات بدون تشفير';
 $string['sendtest'] = 'إرسال دفع إشعارات تجريبي إلى أجهزتي';
 $string['sendtestconfirmation'] = 'سيتم إرسال دفع إشعار تجريبي إلى الأجهزة التي تستعملها للاتصال بهذا الموقع. يرجى التأكد من أن أجهزتك متصلة بالإنترنت وتطبيق الجوال فيها غير مفتوح (لأن دفع الإشعارات يتم عرضه فقط عند تلقيه في الخلفية).';
 $string['serverconnectivityerror'] = 'هذا الموقع غير قادر على الاتصال مع مخدم الإشعارات {$a}';
@@ -78,3 +84,4 @@ $string['showhide'] = 'تمكين/تعطيل الجهاز';
 $string['sitemustberegistered'] = 'من أجل استعمال عينة Airnotifier العامة، لا بد من تسجيل موقعك. كبديل، يمكنك الحصول على مفتاح وصول عبر إنشاء حساب في <a href="https://apps.moodle.com">بوابة تطبيقات مودل</a>.';
 $string['unknowndevice'] = 'جهاز مجهول';
 $string['userdevices'] = 'أجهزة المستخدم';
+$string['view_notification'] = 'أنقر للمعاينة';

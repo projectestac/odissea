@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'activequiz', language 'ar', version '3.11'.
+ * Strings for component 'activequiz', language 'ar', version '4.1'.
  *
  * @package     activequiz
  * @category    string
@@ -183,7 +183,7 @@ $string['modulename_help'] = '<p>نشاط الاختبار النشط يسمح �
 $string['modulenameplural'] = 'إختبارات نشطة';
 $string['nextquestion'] = 'السؤال التالي';
 $string['no_questions'] = 'لا توجد أسئلة مُضافة لهذا الاختبار';
-$string['nochangegroups'] = 'لا يمكنك تعديل المجموعات بعد إنشاء الجولات أو لا توجد تجميعات مُعرَّفة ضمن هذا المقرر الدراسي.';
+$string['nochangegroups'] = 'لا يمكنك تعديل المجموعات بعد إنشاء الجولات أو لا توجد تجميعات مُعرَّفة ضمن هذا المساق.';
 $string['nochangegroups_label'] = '&nbsp;';
 $string['nofeedback'] = 'لا توجد إفادة لهذا السؤال';
 $string['nosession'] = 'لا توجد هناك جولة مفتوحة حالياً';

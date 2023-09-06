@@ -35,14 +35,14 @@ Feature: View the user page for the outline report
     And I am on "Course 1" course homepage
     # We want to view this multiple times, to make sure the count is working.
     And I follow "Folder name"
-    And I follow "Folder name"
-    And I follow "Folder name"
-    And I follow "Folder name"
-    And I am on "Course 1" course homepage
+    And I reload the page
+    And I reload the page
+    And I reload the page
     # We want to view this multiple times, to make sure the count is working.
+    And I am on "Course 1" course homepage
     And I follow "URL name"
-    And I follow "URL name"
-    And I follow "URL name"
+    And I reload the page
+    And I reload the page
     And I follow "Profile" in the user menu
     And I click on "Course 1" "link" in the "region-main" "region"
     When I follow "Outline report"
@@ -63,14 +63,14 @@ Feature: View the user page for the outline report
     And I am on "Course 1" course homepage
     # We want to view this multiple times, to make sure the count is working.
     And I follow "Folder name"
-    And I follow "Folder name"
-    And I follow "Folder name"
-    And I follow "Folder name"
+    And I reload the page
+    And I reload the page
+    And I reload the page
     And I am on "Course 1" course homepage
     # We want to view this multiple times, to make sure the count is working.
     And I follow "URL name"
-    And I follow "URL name"
-    And I follow "URL name"
+    And I reload the page
+    And I reload the page
     And I follow "Profile" in the user menu
     And I click on "Course 1" "link" in the "region-main" "region"
     When I follow "Outline report"
@@ -93,14 +93,14 @@ Feature: View the user page for the outline report
     And I am on "Course 1" course homepage
     # We want to view this multiple times, to make sure the count is working.
     And I follow "Folder name"
-    And I follow "Folder name"
-    And I follow "Folder name"
-    And I follow "Folder name"
+    And I reload the page
+    And I reload the page
+    And I reload the page
     And I am on "Course 1" course homepage
     # We want to view this multiple times, to make sure the count is working.
     And I follow "URL name"
-    And I follow "URL name"
-    And I follow "URL name"
+    And I reload the page
+    And I reload the page
     And I follow "Profile" in the user menu
     And I click on "Course 1" "link" in the "region-main" "region"
     When I follow "Outline report"
@@ -114,14 +114,14 @@ Feature: View the user page for the outline report
 
   Scenario: View the user complete report page when there is a no-grade forum
     Given the following "activities" exist:
-      | activity | name   | description     | course | idnumber |
-      | forum    | forum1 | C1 first forum  | C1     | forum1   |
+      | activity | name   | course | idnumber |
+      | forum    | forum1 | C1     | forum1   |
     And I am on "Course 1" course homepage
     When I follow "Participants"
     And I follow "Student 1"
     And I follow "Outline report"
-    Then I should see "Outline report"
+    Then I should see "Activity report"
     When I follow "Participants"
     And I follow "Student 1"
     And I follow "Complete report"
-    Then I should see "Complete report"
+    Then I should see "Activity report"

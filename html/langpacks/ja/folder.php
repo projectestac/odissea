@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ja', version '3.11'.
+ * Strings for component 'folder', language 'ja', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -45,10 +45,12 @@ $string['indicator:cognitivedepth'] = 'フォルダ認知的';
 $string['indicator:cognitivedepth_help'] = 'この指標はフォルダリソースで学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'フォルダ認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がフォルダリソースから提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧)。';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'フォルダ社会的';
 $string['indicator:socialbreadth_help'] = 'この指標はフォルダリソースで学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'フォルダ社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がフォルダリソースから提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['maxsizetodownload'] = '最大フォルダダウンロードサイズ  (MB)';
 $string['maxsizetodownload_help'] = 'ZIPファイルとしてダウンロードできるフォルダの最大サイズです。ゼロに設定された場合、フォルダサイズに制限はありません。';
 $string['modulename'] = 'フォルダ';
@@ -58,6 +60,7 @@ $string['modulename_help'] = 'フォルダモジュールにおいてコース�
 
 * 例えば過去のPDF版の試験問題または学生プロジェクトで使用するイメージコレクションのように1つのテーマに関する一連のファイル用として
 * コースページ内の教師に共有アップロードスペースを提供するため (教師のみ閲覧できるようフォルダを非表示にする)';
+$string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = 'フォルダ';
 $string['newfoldercontent'] = '新しいフォルダコンテンツ';
 $string['noautocompletioninline'] = '活動閲覧による自動完了は「コースページにインライン表示する」オプションと同時に選択することはできません。';

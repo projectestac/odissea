@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'ru', version '3.11'.
+ * Strings for component 'tool_task', language 'ru', version '4.1'.
  *
  * @package     tool_task
  * @category    string
@@ -29,10 +29,10 @@ $string['adhoc'] = 'Разовая';
 $string['adhocempty'] = 'Очередь разовых задач пуста';
 $string['adhocqueueold'] = 'Самая старая задача {$a->age}, что превышает {$a->max}';
 $string['adhocqueuesize'] = 'В очереди разовых задач: {$a}';
-$string['adhoctaskid'] = 'ID специальной задачи: {$a}';
+$string['adhoctaskid'] = 'ID разовой задачи: {$a}';
 $string['adhoctasks'] = 'Разовые задачи';
 $string['asap'] = 'При первой же возможности';
-$string['backtoscheduledtasks'] = 'Назад к запланированным задачам';
+$string['backtoscheduledtasks'] = 'Вернуться к запланированным задачам';
 $string['blocking'] = 'Блокирующая задача';
 $string['cannotfindthepathtothecli'] = 'Не удается найти путь к исполняемому файлу PHP CLI, поэтому выполнение задачи прервано. Установите параметр «Путь к PHP CLI» в разделе «Администрирование сайта / Сервер / Системные пути».';
 $string['checkadhocqueue'] = 'Очередь разовых задач';
@@ -46,14 +46,15 @@ $string['crondisabled'] = 'Cron отключен. Никакие новые за
 $string['cronok'] = 'Cron работает часто';
 $string['default'] = 'По умолчанию';
 $string['defaultx'] = 'По умолчанию: {$a}';
-$string['disabled'] = 'Отключена';
+$string['disabled'] = 'Отключено';
 $string['disabled_help'] = 'Отключенные задачи не будут запускаться при вызове cron. Тем не менее, вы можете запустить их выполнение вручную с помощью инструмента командной строки.';
 $string['edittaskschedule'] = 'Изменение расписания задачи «{$a}»';
 $string['enablerunnow'] = 'Разрешить команду «Запустить сейчас» в планировщике задач';
 $string['enablerunnow_desc'] = 'Позволяет администраторам запустить любую из задач в любой момент, а не ждать, пока она будет запущена по расписанию. Эта функция требует, чтобы «Путь к PHP CLI» (pathtophp) был установлен в разделе «Системные пути». Задачи выполняются на веб-сервере, поэтому на некоторых сайтах эта функция может быть отключена, чтобы избежать возможного снижения производительности.';
 $string['faildelay'] = 'Задержка после неудачного запуска';
 $string['fromcomponent'] = 'Из компонента: {$a}';
-$string['hostname'] = 'имя хоста';
+$string['hostname'] = 'Имя хоста';
+$string['lastcronstart'] = 'Время с момента последнего запуска cron: {$a}';
 $string['lastruntime'] = 'Последний запуск';
 $string['lastupdated'] = 'Последнее обновление: {$a}.';
 $string['nextruntime'] = 'Следующий запуск';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'de', version '3.11'.
+ * Strings for component 'tool_mobile', language 'de', version '4.1'.
  *
  * @package     tool_mobile
  * @category    string
@@ -31,7 +31,9 @@ $string['androidappid_desc'] = 'Diese Einstellung sollte nur dann geändert werd
 $string['apppolicy'] = 'URL zu den Richtlinien für die App';
 $string['apppolicy_help'] = 'URL zu den Richtlinien für die mobile App, die auf der Seite \'Info\' in der App angezeigt wird. Wenn das Feld leer bleibt, wird stattdessen die URL der Datenschutzinfo für die Website verwendet.';
 $string['apprequired'] = 'Diese Funktionalität ist nur verfügbar, wenn Moodle Mobile oder Moodle Desktop verwendet wird.';
-$string['autologinkeygenerationlockout'] = 'Das Erzeugen von Auto-Login-Token ist blockiert. Sie müssen 6 Minuten zwischen den Anforderungen warten.';
+$string['autologinkeygenerationlockout'] = 'Das Erzeugen von Auto-Login-Token ist blockiert. Sie müssen {$a} Minuten zwischen den Anforderungen warten.';
+$string['autologinmintimebetweenreq'] = 'Verzögerung zwischen zwei Auto-Login-Versuchen';
+$string['autologinmintimebetweenreq_desc'] = 'Minimale Zeit zwischen zwei Auto-Login-Versuchen mit der mobilen App. Sie sollten einen niedrigen Wert verwenden, wenn Nutzer/innen der App häufig aufgefordert werden, ihre Anmeldedaten einzugeben, um eingebettete Inhalte anzuzeigen.';
 $string['autologinnotallowedtoadmins'] = 'Das Auto-Login ist für Administrator/innen der Website nicht erlaubt.';
 $string['cachedef_plugininfo'] = 'Hier wird die Liste von Plugins mit mobilen Add-ons gespeichert.';
 $string['cachedef_subscriptiondata'] = 'Hier werden die Infos zum Moodle-App-Abonnement gespeichert.';
@@ -121,13 +123,17 @@ $string['privacy:metadata:core_userkey'] = 'Nutzerschlüssel zum Erstellen eines
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'Datum der letzten Auto-Login-Schlüsselanforderung. Zwischen jeder Anfrage sind 6 Minuten erforderlich.';
 $string['qrcodedisabled'] = 'Zugriff über QR-Code deaktiviert';
 $string['qrcodeformobileappaccess'] = 'QR-Code für den Zugriff mit der mobilen App';
-$string['qrcodeformobileapploginabout'] = 'Scannen Sie den QR-Code mit Ihrer mobilen App und Sie werden automatisch angemeldet. Der QR-Code läuft in {$a} Minuten ab.';
-$string['qrcodeformobileappurlabout'] = 'Scannen Sie den QR-Code mit Ihrer mobilen App, um die Website-URL einzugeben.';
+$string['qrcodeformobileapploginabout'] = 'Scannen Sie den QR-Code mit Ihrer mobilen App und Sie werden automatisch angemeldet. Der QR-Code läuft in {$a} ab.<br><br>';
+$string['qrcodeformobileappurlabout'] = 'Scannen Sie den QR-Code mit Ihrer mobilen App, um die Website-URL einzugeben.<br><br>';
 $string['qrcodetype'] = 'QR-Code-Zugriff';
-$string['qrcodetype_desc'] = 'Für Nutzer/innen der mobilen App kann ein QR-Code zum Scannen bereitgestellt werden. Der QR-Code kann verwendet werden, um die Website-URL einzugeben oder um die Person automatisch anzumelden, ohne einen Anmeldenamen oder ein Kennwort eingeben zu müssen.';
+$string['qrcodetype_desc'] = 'Für die Nutzung der mobilen App kann ein QR-Code bereitgestellt werden. Der QR-Code erlaubt es, die Website-URL einzugeben oder um die betreffende Person automatisch anzumelden, ohne einen Anmeldenamen oder ein Kennwort eingeben zu müssen.';
 $string['qrcodetypelogin'] = 'QR-Code mit automatischer Anmeldung';
 $string['qrcodetypeurl'] = 'QR-Code mit Website-URL';
-$string['qrsiteadminsnotallowed'] = 'Aus Sicherheitsgründen ist eine Anmeldung über QR-Code  für Administrator/innen nicht zulässig oder wenn Sie als andere Person angemeldet sind.';
+$string['qrkeyttl'] = 'Gültigkeit der QR-Code-Anmeldung';
+$string['qrkeyttl_desc'] = 'Die Gültigkeitsdauer eines QR-Codes für die automatische Anmeldung';
+$string['qrsameipcheck'] = 'QR-Code-Anmeldung mit gleicher IP';
+$string['qrsameipcheck_desc'] = 'Nutzer/innen müssen beim Generieren und beim Scannen einer QR-Code-Anmeldung das gleiche Netzwerk verwenden. Deaktivieren Sie diese Option nur, wenn es Probleme mit der QR-Code-Anmeldung gibt.';
+$string['qrsiteadminsnotallowed'] = 'Aus Sicherheitsgründen können Sie sich nicht über einen QR-Code anmelden, wenn Sie Administrator/in sind oder sich als andere Person angemeldet haben.';
 $string['readingthisemailgettheapp'] = 'Lesen Sie dies in einer E-Mail? <a href="{$a}">Laden Sie die mobile App und empfangen Sie alle Mitteilungen auf Ihrem mobilen Endgerät</a>.';
 $string['remoteaddons'] = 'Remote Add-ons';
 $string['responsivemainmenuitems'] = 'Responsive Menüelemente';

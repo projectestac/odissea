@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_accessibility', language 'gl', version '3.11'.
+ * Strings for component 'block_accessibility', language 'gl', version '4.1'.
  *
  * @package     block_accessibility
  * @category    string
@@ -31,7 +31,7 @@ $string['autolaunch'] = '(sempre?)';
 $string['blockname'] = 'Accesibilidade';
 $string['char'] = 'A';
 $string['clearedoldcache'] = 'Limpáronse {$a} ficheiros antigos da caché';
-$string['col1text'] = 'Esquema de cores predeterminado (elimina o axuste gardado)';
+$string['col1text'] = 'Esquema de cores predeterminado (borra os axustes gardados)';
 $string['col2text'] = 'Contraste reducido 1';
 $string['col3text'] = 'Contraste reducido 2';
 $string['col4text'] = 'Alto contraste';

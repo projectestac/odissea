@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'de', version '3.11'.
+ * Strings for component 'glossary', language 'de', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Kategorie hinzufügen';
 $string['addcomment'] = 'Kommentar hinzufügen';
 $string['addentry'] = 'Eintrag hinzufügen';
 $string['addingcomment'] = 'Kommentar hinzufügen';
+$string['addsingleentry'] = 'Eintrag hinzufügen';
 $string['alias'] = 'Alternativbegriff';
 $string['aliases'] = 'Alternativbegriffe';
 $string['aliases_help'] = 'Zu jedem Glossareintrag kann eine Reihe von Alternativbegriffen (Tags, Schlagwörter, Synonyme, Keywords) angegeben werden. Tragen Sie jeden Begriff in einer neuen Zeile ein (nicht als kommagetrennte Liste).
@@ -181,6 +182,7 @@ $string['errconceptalreadyexists'] = 'Diesen Begriff gibt es bereits. In diesem 
 $string['errdeltimeexpired'] = 'Sie dürfen dies nicht löschen. Die Zeit ist abgelaufen!';
 $string['erredittimeexpired'] = 'Die Bearbeitungszeit für diesen Eintrag wurde überschritten.';
 $string['errorparsingxml'] = 'Es sind Fehler bei der Analyse der Datei aufgetreten. Stellen Sie sicher, dass die  XML-Syntax zulässig ist.';
+$string['errreservedkeywords'] = 'Manche Schlüsselwörter können nicht verwendet werden, da sie Sonderzeichen enthalten.';
 $string['eventcategorycreated'] = 'Kategorie angelegt';
 $string['eventcategorydeleted'] = 'Kategorie gelöscht';
 $string['eventcategoryupdated'] = 'Kategorie aktualisiert';
@@ -196,6 +198,7 @@ $string['explainalphabet'] = 'Sie können das Glossar über das Suchfeld und das
 $string['explainexport'] = 'Klicken Sie auf den untenstehenden Button, um das Glossar zu exportieren. <br />Es wird eine Datei erstellt, die Sie herunterladen und jederzeit in einen anderen Kurs importieren können.<p>Beachten Sie, dass Anhänge (z.B. Bilder) und Autoren dabei verloren gehen.</p>';
 $string['explainimport'] = 'Wählen Sie die zu importierende Datei aus und legen Sie die Kriterien des weiteren Vorgehens fest.';
 $string['explainspecial'] = 'Sonderzeichen: alle Einträge anzeigen, die nicht mit einem Buchstaben beginnen';
+$string['export'] = 'Export';
 $string['exportedentry'] = 'Exportierte Einträge';
 $string['exportentries'] = 'Einträge exportieren';
 $string['exportentriestoxml'] = 'Glossar als XML-Datei exportieren';
@@ -238,10 +241,12 @@ $string['indicator:cognitivedepth'] = 'Glossar kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Glossaraktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Glossar kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Glossaraktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Glossar sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Glossaraktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Glossar sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Glossaraktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = 'Kursübergreifendes Glossar 
 ';
 $string['isglobal_help'] = 'Ein kursübergreifendes Glossar enthält Einträge, die im gesamten Moodle verlinkt werden. Ist ein Glossar nicht global, werden die Einträge nur lokal im Kurs verlinkt. Ausschließlich Administrator/innen können Glossare als kursübergreifend definieren.';
@@ -267,6 +272,7 @@ Die Glossar-Aktivität hat viele Verwendungsmöglichkeiten, wie z.B.
 * Eine Ressource mit praktischen Tipps für good practices in einem Arbeitsgebiet
 * Ein Bereich zur gemeinsamen Sammlung von nützlichen Videos, Bildern oder Audiodateien
 * Eine Sammlung für die Repetition von Dingen, die Sie sich merken sollten';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = 'Glossare';
 $string['newentries'] = 'Neue Einträge im Glossar';
 $string['newglossary'] = 'Neues Glossar';
@@ -289,6 +295,7 @@ $string['page-mod-glossary-edit'] = 'Glossareintragbearbeitungsseite
 $string['page-mod-glossary-view'] = 'Glossaransichtsseite
 ';
 $string['page-mod-glossary-x'] = 'Jede Glossarseite';
+$string['pendingapproval'] = 'Genehmigung ausstehend';
 $string['pluginadministration'] = 'Glossar-Administration';
 $string['pluginname'] = 'Glossar';
 $string['popupformat'] = 'Popup-Format';
@@ -315,6 +322,7 @@ $string['resetglossaries'] = 'Einträge löschen von';
 $string['resetglossariesall'] = 'Einträge aus allen Glossaren löschen';
 $string['rssarticles'] = 'Anzahl neuer RSS-Artikel ';
 $string['rssarticles_help'] = 'Diese Option legt fest, wie viele neue Glossarbegriffe in den RSS-Feed übernommen werden. Eine Zahl zwischen 5 und 20 sollte angemessen sein. Die Zahl sollte höher sein, wenn das Glossar häufig bearbeitet wird.';
+$string['rssfeed'] = 'RSS Feed';
 $string['rsssubscriberss'] = 'RSS Feed-Anzeige für \'{$a}\' Begriffe';
 $string['rsstype'] = 'RSS Feed für dieses Glossar';
 $string['rsstype_help'] = 'Diese Option ermöglicht es, RSS Feeds für dieses Glossar zu aktivieren, wobei im Feed die Begriffe mit oder ohne Autor/in einbezogen werden können.';

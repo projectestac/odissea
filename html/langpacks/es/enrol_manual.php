@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'es', version '3.11'.
+ * Strings for component 'enrol_manual', language 'es', version '4.1'.
  *
  * @package     enrol_manual
  * @category    string
@@ -55,6 +55,7 @@ $string['expirymessageenrollerbody'] = 'La matrícula en el curso \'{$a->course}
 
 Para extender su matrícula, vaya a {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notificación de la caducidad de la matricula';
+$string['managemanualenrolements'] = 'Gestionar inscripciones manuales';
 $string['manual:config'] = 'Configurar instancias de la matriculaciñon manual';
 $string['manual:enrol'] = 'Matricular usuarios';
 $string['manual:manage'] = 'Gestión de matriculas de usuario';

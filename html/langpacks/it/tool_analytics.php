@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'it', version '3.11'.
+ * Strings for component 'tool_analytics', language 'it', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -88,7 +88,6 @@ $string['exportmodel'] = 'Esporta configurazione';
 $string['exporttrainingdata'] = 'Esportazione dei dati di addestramento';
 $string['extrainfo'] = 'Informazioni';
 $string['generalerror'] = 'Errore nella valutazione. Codice di stato {$a}';
-$string['getpredictions'] = 'Ottieni i pronostici';
 $string['goodmodel'] = 'È un buon modello da utilizzare per le predizioni. Abilitalo per iniziare a ottenere predizioni.';
 $string['ignoreversionmismatches'] = 'Ignora differenze di versione';
 $string['ignoreversionmismatchescheckbox'] = 'Le differenze di versione tra sito origine e destinazione saranno ignorate.';
@@ -96,6 +95,7 @@ $string['importedsuccessfully'] = 'Il modello è stato importato correttamente.'
 $string['importmodel'] = 'Importa modello';
 $string['indicators'] = 'Indicatori';
 $string['indicators_help'] = 'Gli indicatori rappresentano ciò che si ritene utile per ottenere un pronostico accurato sull\'obiettivo.';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = 'Numero di indicatori: {$a}';
 $string['info'] = 'Informazioni';
 $string['insights'] = 'Considerazioni';
@@ -144,6 +144,7 @@ $string['scheduledanalysisresultscli'] = 'Risultati ottenuti utilizzando l\'inte
 $string['selecttimesplittingforevaluation'] = 'Selezionare l\'intervallo di analisi da utilizzare per valutare la configurazione del modello.';
 $string['target'] = 'Obiettivo';
 $string['target_help'] = 'L\'obiettivo rappresenta ciò che il modello pronosticherà.';
+$string['target_link'] = 'Targets';
 $string['timesplittingnotdefined'] = 'L\'intervallo di analisi non è impostato.';
 $string['timesplittingnotdefined_help'] = 'Prima di abilitare il modello, devi selezionare un intervallo di analisi.';
 $string['trainandpredictmodel'] = 'Addestramento del modello e calcolo dei pronostici';

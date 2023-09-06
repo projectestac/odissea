@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpotattempt_qedoc', language 'ru', version '3.11'.
+ * Strings for component 'hotpotattempt_qedoc', language 'ru', version '4.1'.
  *
  * @package     hotpotattempt_qedoc
  * @category    string

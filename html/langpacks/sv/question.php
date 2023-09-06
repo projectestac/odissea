@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'sv', version '3.11'.
+ * Strings for component 'question', language 'sv', version '4.1'.
  *
  * @package     question
  * @category    string
@@ -69,6 +69,7 @@ $string['cannotmovequestion'] = 'Du kan inte använda det här skriptet för att
 $string['cannotopenforwriting'] = 'Det går inte att öppna för skrivning: {$a}';
 $string['cannotpreview'] = 'Du kan inte förhandsgranska de här frågorna!';
 $string['cannotread'] = 'Det går inte att läsa den importerade filen ({$a}) eller så är den tom';
+$string['cannotregradedifferentqtype'] = 'Kan inte justera betyg med en fråga av en annan typ.';
 $string['cannotretrieveqcat'] = 'Kunde inte hämta frågekategori';
 $string['cannotunhidequestion'] = 'Det gick inte att ta fram frågan.';
 $string['cannotunzip'] = 'Det gick inte att packa upp filen';
@@ -140,6 +141,7 @@ Varje kategori har ett sammanhang som avgör var frågan i kategorin kan använd
 * System sammanhang - Frågan är tillgänglig i alla kurser och aktiviteter på webbplatsen
 
 Kategorier används även för slumpvisa frågor då frågor väljs från en speciell kategori.';
+$string['editcategories_link'] = 'question/category';
 $string['editcategory'] = 'Redigera kategori';
 $string['editingcategory'] = 'Redigerar en kategori';
 $string['editingquestion'] = 'Redigerar en fråga';
@@ -191,6 +193,7 @@ $string['exportnameformat'] = '%Y%m%d-%H%M';
 $string['exportonequestion'] = 'Ladda ner denna fråga i Moodle XML-format';
 $string['exportquestions'] = 'Exportera frågor till fil';
 $string['exportquestions_help'] = 'Med den här funktionen kan du exportera en fullständig kategori (och eventuella underkategorier) till fil. Observera att vissa frågedata och vissa frågetyper kanske inte exporteras beroende på vilket filformat som valts.';
+$string['exportquestions_link'] = 'question/export';
 $string['feedback'] = 'Återkoppling';
 $string['filecantmovefrom'] = 'Frågefilerna kan inte flyttas eftersom du inte har behörighet att ta bort filer från den plats du försöker flytta dem från.';
 $string['filecantmoveto'] = 'Frågefilerna kan inte flyttas eller kopieras eftersom du inte har behörighet att lägga till filer på den plats du försöker flytta till.';
@@ -220,6 +223,7 @@ $string['howquestionsbehave_help'] = 'Eleverna kan interagera med frågorna i te
 Alternativt kan du vilja att studenter skickar in varje fråga efterhand för att få omedelbar återkoppling om de inte svarar rätt. De kan sedan försöka igen, dock med ett poängavdrag. I detta fall skulle inställningen vara "Interaktivt med flera försök".
 
 Detta är förmodligen de två vanligaste inställningarna.';
+$string['howquestionsbehave_link'] = 'question/behaviour';
 $string['idnumber'] = 'ID-nummer';
 $string['idnumber_help'] = 'Om ID-nummer används måste ID-numret vara unikt inom varje frågekategori. Det möjliggör ett annat sätt att identifiera en fråga som ibland är användbar, men kan oftast lämnas tomt.';
 $string['ignorebroken'] = 'Ta inte hänsyn till brutna länkar';
@@ -236,6 +240,7 @@ $string['importingquestions'] = 'Importerar {$a} frågor från fil';
 $string['importparseerror'] = 'Fel uppstod vid analys av importfilen. Inga frågor har importerats. Om du vill prova att importera de eventuella frågor i filen som är i rätt format, ändra inställningen "Stoppa vid fel" till "Nej".';
 $string['importquestions'] = 'Importera frågor från fil';
 $string['importquestions_help'] = 'Denna funktion möjliggör att frågor i en mängd olika format kan importeras från textfil. Notera att filen måste använda teckenkodning UTF-8.';
+$string['importquestions_link'] = 'question/import';
 $string['importwrongfileencoding'] = 'Den valda filen är inte kodad enligt UFT-8 teckenkodningen. {$a} filer måste använda UFT-8.';
 $string['importwrongfiletype'] = 'Den typ av fil som du valde ({$a->actualtype}) motsvarar inte den typ som förväntas av detta importformat ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Ogiltligt tecken {$a} identifierades som parentestecken';
@@ -285,7 +290,7 @@ $string['movedquestionsandcategories'] = 'Flyttade frågor och kategorier fråga
 $string['movelinksonly'] = 'Ändra bara länkadresserna, flytta inte och kopiera inte filerna.';
 $string['moveq'] = 'Flytta fråga/or';
 $string['moveqtoanothercontext'] = 'Flytta fråga till ett annat sammanhang';
-$string['moveto'] = 'Flytta till >>';
+$string['moveto'] = 'Flytta till';
 $string['movingcategory'] = 'Flyttar kategori';
 $string['movingcategoryandfiles'] = 'Är Du säker på att Du vill flytta kategorin {$a->name} och alla barn-kategorier till sammanhanget för "{$a->contextto}"?<br />Vi har upptäckt {$a->urlcount} filer som är länkade från frågor i {$a->fromareaname}, skulle Du vilja kopiera eller flytta dessa till {$a->toareaname}?';
 $string['movingcategorynofiles'] = 'Är Du säker på att du vill flytta kategorin "{$a->name}" och alla underkategorier till kontextet för "{$a->contextto}"?';
@@ -295,8 +300,10 @@ $string['movingquestionsnofiles'] = 'Är du säker på att du vill flytta frågo
 $string['needtochoosecat'] = 'Du måste välja en kategori för att flytta den här frågan eller klicka på \'Avbryt\'.';
 $string['nocate'] = 'Ingen sådan kategori {$a}!';
 $string['nopermissionadd'] = 'Du har inte behörighet att lägga till frågor här.';
+$string['nopermissionedit'] = 'Du har inte behörighet att redigera frågor härifrån.';
 $string['nopermissionmove'] = 'Du har inte behörighet att flytta frågor härifrån. Du måste spara frågan i denna kategori eller spara den som en ny fråga.';
 $string['noprobs'] = 'Det fanns inga problem i Din databas för frågor.';
+$string['noquestionbanks'] = 'Hittade ingen pluginmodul för frågebank.';
 $string['noquestions'] = 'Inga frågor hittades som kunde exporteras. Se till att du har valt en kategori att exportera som innehåller frågor.';
 $string['noquestionsinfile'] = 'Det finns inga frågor i importfilen';
 $string['noresponse'] = '[Inget svar]';
@@ -324,6 +331,7 @@ $string['page-question-x'] = 'Vilken frågesida som helst';
 $string['parent'] = 'Överliggande';
 $string['parentcategory'] = 'Huvudkategori';
 $string['parentcategory_help'] = 'Föräldrakategorin är den i vilken den nya kategorin placeras. "Överst" betyder att denna kategori inte ingår i/ under någon annan kategori. Sammanhang för kategori visas med fet text. Det måste finnas minst en kategori i varje sammanhang.';
+$string['parentcategory_link'] = 'question/category';
 $string['parenthesisinproperclose'] = 'Parentes innan ** är inte ordentligt stängd {$a} **';
 $string['parenthesisinproperstart'] = 'Parentes innan ** är inte korrekt startade {$a} **';
 $string['parsingquestions'] = 'Analysera frågor från importfilen';
@@ -363,23 +371,30 @@ $string['privacy:metadata:database:question_attempts'] = 'Information om ett fö
 $string['privacy:metadata:database:question_attempts:flagged'] = 'Indikation på att användaren flaggat denna fråga under ett försök.';
 $string['privacy:metadata:database:question_attempts:responsesummary'] = 'Summering av frågesvaret.';
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'Tidpunkten då frågeförsöket uppdaterades.';
+$string['privacy:metadata:database:question_bank_entries'] = 'Detaljer för specifik frågebankspost';
+$string['privacy:metadata:database:question_bank_entries:ownerid'] = 'Personen som äger frågebanksposten';
 $string['privacy:metadata:link:qbehaviour'] = 'Undersystemet Fråga använder sig av plugintypen Frågebeteende.';
 $string['privacy:metadata:link:qformat'] = 'Undersystemet Fråga använder sig av plugintypen Frågebeteende för att importera och exportera frågor i olika format.';
 $string['privacy:metadata:link:qtype'] = 'Undersystemet Fråga (Question) samverkar med plugintypen Frågetyp (Question Type) som innehåller de olika frågetyperna.';
 $string['published'] = 'gemensam';
+$string['qbanknotfound'] = 'Pluginmodulen {$a} för frågebank finns inte eller känns inte igen.';
 $string['qtypeveryshort'] = 'T';
+$string['question_version'] = 'Frågeversion';
 $string['questionaffected'] = '<a href="{$a->qurl}">Frågan "{$a->name}" ({$a->qtype})</a> finns i den här frågekategorin men den används även i <a href="{$a->qurl}">test "{$a->quizname}"</a> i en annan kurs "{$a->coursename}".';
 $string['questionbank'] = 'Frågebank';
+$string['questionbanknavigation'] = 'Övergripande frågebanksnavigering';
 $string['questionbehaviouradminsetting'] = 'Inställningar för frågebeteenden';
 $string['questionbehavioursdisabled'] = 'Frågebeteenden att inaktivera';
 $string['questionbehavioursdisabledexplained'] = 'Ange en kommaseparerad lista med frågebeteenden du inte vill ska visas i listrutan.';
 $string['questionbehavioursorder'] = 'Ordning för frågebeteenden';
 $string['questionbehavioursorderexplained'] = 'Ange en kommaseparerad lista med beteenden i den ordning du vill att de ska visas i listrutan.';
+$string['questioncategories'] = 'Frågekategorier';
 $string['questioncategory'] = 'Frågekategori';
 $string['questioncatsfor'] = 'Frågekategorier för \'{$a}\'';
 $string['questiondoesnotexist'] = 'Den här frågan finns inte';
 $string['questionformtagheader'] = '{$a}-etiketter';
 $string['questionidmismatch'] = 'Identiteten för frågan stämmer inte överrens';
+$string['questionloaderror'] = 'Kunde inte hämta frågealternativen.';
 $string['questionname'] = 'Frågenamn';
 $string['questionnamecopy'] = '{$a} (kopia)';
 $string['questionno'] = 'Fråga {$a}';
@@ -463,6 +478,7 @@ $string['updatedisplayoptions'] = 'Uppdatera visningsalternativ';
 $string['upgradeproblemcategoryloop'] = 'Problem upptäcktes vid uppgradering av frågekategorier. Det finns en loop i kategoriträdet. Den berörda kategorins ID är {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Det gick inte att uppdatera {$a->name} frågekategori ({$a->id}).';
 $string['upgradeproblemunknowncategory'] = 'Problem upptäcktes vid uppgradering av frågekategorier. Kategori {$a->id} avser den överliggande kategorin {$a->parent}, som inte existerar. Den överliggande kategorin ändrad för att åtgärda problemet.';
+$string['version_selection'] = 'Version {$a->version}';
 $string['whethercorrect'] = 'Huruvida korrekt';
 $string['whethercorrect_help'] = 'Detta täcker både textbeskrivningen \'Korrekt\', \'Delvis korrekt\' eller \'Felaktig\' och alla färgade markeringar som förmedlar samma information.';
 $string['whichtries'] = 'Vilket försök';

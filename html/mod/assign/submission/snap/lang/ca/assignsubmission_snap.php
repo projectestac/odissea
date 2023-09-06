@@ -33,15 +33,15 @@ $string['cloud_op_enabled'] = 'Snap! cloud habilitat però no seleccionat per de
 $string['default'] = 'Seleccionat per defecte en les tasques noves';
 $string['default_help'] = 'Si està marcat, aquest mètode de tramesa estarà seleccionat per defecte en les tasques noves.';
 $string['distros'] = 'Distribucions d\'Snap! habilitades';
-$string['distros_help'] = 'Es necessita almenys una distribució funcional (com  Snap!-Berkeley, l\'opció que ver defecte). '.
-    'Però podem afegir més distribucions (una per línia) i el professorat podrà escollir quina necessita en cada tasca individualment. '.
-    'El format (per a cada entrada) és: <b>&lt;codi&gt; | &lt;nom visible&gt; | &lt;url&gt;</b>. '.
-    'Cal mantenir el "codi" en fer canvis (url...) per mantenir la correspondència amb les tasques anteriors.'.
-    'La primera "distro" és l\'opció per defecte, per les noves tasques i per les que tinguessin una ara deshabilitada.';
+$string['distros_help'] = 'Es necessita almenys una distribució funcional (com  Snap!-Berkeley, l\'opció que ver defecte).
+    Però podem afegir més distribucions (una per línia) i el professorat podrà escollir quina necessita en cada tasca individualment.
+    El format (per a cada entrada) és: <b>&lt;codi&gt; | &lt;nom visible&gt; | &lt;url&gt;</b>.
+    Cal mantenir el "codi" en fer canvis (url...) per mantenir la correspondència amb les tasques anteriors.
+    La primera "distro" és l\'opció per defecte, per les noves tasques i per les que tinguessin una ara deshabilitada.';
 $string['enabled'] = 'Snap!';
-$string['enabled_help'] = 'Si està habilitat, l\'estudiantat podrà editar i enviar projectes de Snap! a les seves trameses. ' .
-    'Si un projete de Snap! en format de fitxer XML s\'adjunta a la secció de "Fitxes addicionals", aquest serà utilitzat com a plantilla (punt de partida) dels estudiants '.
-    'quan s\'inicia una nova tramesa. Si no, tindran un projecte nou (buit) de Snap! com a punt de partida.';
+$string['enabled_help'] = 'Si està habilitat, l\'estudiantat podrà editar i enviar projectes de Snap! a les seves trameses.
+    Si un projete de Snap! en format de fitxer XML s\'adjunta a la secció de "Fitxes addicionals", aquest serà utilitzat com a plantilla (punt de partida) dels estudiants
+    quan s\'inicia una nova tramesa. Si no, tindran un projecte nou (buit) de Snap! com a punt de partida.';
 $string['eventassessableuploaded'] = 'Contingut de Snap! carregat.';
 $string['langmoodle'] = 'Utilitza el mateix idioma que a Moodle';
 $string['langsnap'] = 'Idioma a Snap!';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'en', version '3.11'.
+ * Strings for component 'workshop', language 'en', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -367,6 +367,7 @@ $string['submissiongradeof'] = 'Grade for submission (of {$a})';
 $string['submissionlastmodified'] = 'Last modified';
 $string['submissionrequiredcontent'] = 'You need to enter some text or add a file.';
 $string['submissionrequiredfile'] = 'You need to add a file or enter some text.';
+$string['submissionsallocation'] = 'Submissions allocation';
 $string['submissionsettings'] = 'Submission settings';
 $string['submissionsreport'] = 'Workshop submissions report';
 $string['submissionstart'] = 'Open for submissions from';

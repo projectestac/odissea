@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'icontent', language 'el', version '3.11'.
+ * Strings for component 'icontent', language 'el', version '4.1'.
  *
  * @package     icontent
  * @category    string
@@ -81,7 +81,7 @@ $string['highlighted'] = 'Φωτο-επισημασμένο';
 $string['highlights'] = 'Φωτο-επισημάνσεις';
 $string['icontent'] = 'Περιεχόμενο';
 $string['icontent:addinstance'] = 'Προσθήκη μιας νέας σελίδας περιεχομένου';
-$string['icontent:checkboxdoubttutornotes'] = 'Ερώτηση για εκπαιδευτή';
+$string['icontent:checkboxdoubttutornotes'] = 'Ερώτηση για εκπαιδευτικό';
 $string['icontent:checkboxfeaturednotes'] = 'Σημειώστε τις σημειώσεις αυτές ως προβεβλημένες';
 $string['icontent:checkboxprivatenotes'] = 'Σημειώστε τις σημειώσεις αυτές ως ιδιωτικές';
 $string['icontent:edit'] = 'Επεξεργασία σελίδων περιεχομένου';

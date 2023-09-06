@@ -23,7 +23,8 @@ Feature: tool_monitor_subscriptions
     And I navigate to "Reports > Event monitoring rules" in site administration
     And I click on "Enable" "link"
     And I am on "Course 1" course homepage
-    And I navigate to "Reports > Event monitoring rules" in current page administration
+    And I navigate to "Reports" in current page administration
+    And I click on "Event monitoring rules" "link"
     And I press "Add a new rule"
     And I set the following fields to these values:
       | name                 | New rule course level                             |
@@ -102,7 +103,7 @@ Feature: tool_monitor_subscriptions
     Given I log in as "admin"
     And I follow "Preferences" in the user menu
     And I click on "Notification preferences" "link" in the "#page-content" "css_element"
-    And I click on "//td[@data-processor-name='popup']//label[@data-state='loggedin']" "xpath_element" in the "Notifications of rule subscriptions" "table_row"
+    And I click on "//td[@data-processor-name='popup']//div[@class='preference-state']" "xpath_element" in the "Notifications of rule subscriptions" "table_row"
     And I wait until the page is ready
     And I follow "Preferences" in the user menu
     And I follow "Event monitoring"
@@ -123,7 +124,7 @@ Feature: tool_monitor_subscriptions
     Given I log in as "teacher1"
     And I follow "Preferences" in the user menu
     And I click on "Notification preferences" "link" in the "#page-content" "css_element"
-    And I click on "//td[@data-processor-name='popup']//label[@data-state='loggedin']" "xpath_element" in the "Notifications of rule subscriptions" "table_row"
+    And I click on "//td[@data-processor-name='popup']//div[@class='preference-state']" "xpath_element" in the "Notifications of rule subscriptions" "table_row"
     And I wait until the page is ready
     And I follow "Preferences" in the user menu
     And I follow "Event monitoring"
@@ -168,10 +169,9 @@ Feature: tool_monitor_subscriptions
     And I should not see "You can manage rules the from the Event monitoring rules page."
 
   Scenario: No manage rules link when user does not have permission
-    Given I log in as "admin"
-    And I set the following system permissions of "Non-editing teacher" role:
-      | tool/monitor:managerules | Prohibit |
-    And I log out
+    Given the following "role capability" exists:
+      | role                     | teacher  |
+      | tool/monitor:managerules | prohibit |
     And I log in as "teacher1"
     And I follow "Preferences" in the user menu
     And I follow "Event monitoring"

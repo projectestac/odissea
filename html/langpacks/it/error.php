@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'it', version '3.11'.
+ * Strings for component 'error', language 'it', version '4.1'.
  *
  * @package     error
  * @category    string
@@ -157,6 +157,7 @@ $string['cannotsetupcapformod'] = 'Non è stato possibile impostare i privilegi 
 $string['cannotsetupcapforplugin'] = 'Non è stato possibile impostare i privilegi per {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Non è possibile visualizzare/nascondere il corso nella categoria {$a}';
 $string['cannotsignup'] = 'Non puoi creare un nuovo account poiché sei già autenticato come {$a}.';
+$string['cannotswitcheditmodeon'] = 'Non è stato possibile passare alla modalità modifica';
 $string['cannotunassigncap'] = 'Non è possibile rimuovere il privilegio deprecato {$a->cap} dal ruolo {$a->role}';
 $string['cannotunassignrolefrom'] = 'Non è possibile togliere a questo utente il ruolo id: {$a}';
 $string['cannotunzipfile'] = 'Non è possibile decomprimere il file.';
@@ -335,6 +336,7 @@ $string['invalidcourseformat'] = 'Formato di corso non valido';
 $string['invalidcourseid'] = 'Stai tentando di usare un ID di corso non valido';
 $string['invalidcourselevel'] = 'Livello di contesto errato';
 $string['invalidcoursemodule'] = 'ID modulo del corso non valido';
+$string['invalidcoursemoduleid'] = 'ID non valido del modulo del corso: {$a}';
 $string['invalidcoursenameshort'] = 'Titolo abbreviato del corso non valido';
 $string['invaliddata'] = 'I dati inseriti non sono validi';
 $string['invaliddatarootpermissions'] = 'Sono state rilevati permessi non validi durante la creazione di una cartella. Per maggiori informazioni attivare la modalità debugging.';
@@ -409,6 +411,7 @@ $string['messagingdisable'] = 'La messaggistica è disabilitata';
 $string['mimetexisnotexist'] = 'Il sistema non è configurato per eseguire mimeTEX. È necessario scaricare il sorgente C da <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip</a>, compilarlo e copiare l\'eseguibile nella cartella  moodle/filter/tex/.';
 $string['mimetexnotexecutable'] = 'Il mimetex personalizzato non è eseguibile!';
 $string['missing_moodle_backup_xml_file'] = 'Al backup manca il file XML: {$a}';
+$string['missingcategoryrole'] = 'Non è stato possibile assegnare il ruolo all\'utente: non esiste il ruolo nella categoria.';
 $string['missingfield'] = 'Manca il campo "{$a}"';
 $string['missingkeyinsql'] = 'ERROR: nella query manca il parametro "{$a}"';
 $string['missingparam'] = 'Un parametro obbligatorio ({$a}) è mancante';
@@ -455,6 +458,7 @@ $string['nonmeaningfulcontent'] = 'Contenuto senza significato';
 $string['noparticipants'] = 'In questo corso non sono stati trovati partecipanti';
 $string['noparticipatorycms'] = 'Spiacente, ma il report di partecipazione dei moduli del corso non è attivato.';
 $string['nopermissions'] = 'Non sei autorizzato a svolgere questa azione ({$a})';
+$string['nopermissiontoaccesspage'] = 'Non sei autorizzato a visualizzare questa pagina.';
 $string['nopermissiontocomment'] = 'Non puoi aggiungere commenti';
 $string['nopermissiontodelentry'] = 'Non puoi eliminare questo commento.';
 $string['nopermissiontoeditcomment'] = 'Non puoi eliminare i commenti di altre persone!';
@@ -488,6 +492,8 @@ $string['oauth2upgradetokenerror'] = 'Non è stato possibile eseguire l\'upgrade
 $string['onlyadmins'] = 'Solo gli amministratori possono farlo.';
 $string['onlyeditingteachers'] = 'Solo i docenti con diritti di modifica possono farlo.';
 $string['onlyeditown'] = 'È possibile modificare solo le proprie informazioni';
+$string['opensslsealerror'] = 'OpenSSL non è in grado di sigillare i dati';
+$string['opensslsignerror'] = 'OpenSSL non è in grado di firmare i dati';
 $string['orderidnotfound'] = 'L\'ordine ID {$a} non è stato trovato';
 $string['pagenotexist'] = '<p>Si è verificato un errore inatteso durante la visualizzazione di una pagina non esistente.</p>{$a}';
 $string['pagenotexisttitle'] = 'Errore 404: File non trovato';
@@ -527,6 +533,9 @@ $string['sendmessage'] = 'Invia messaggio';
 $string['sendmessagesent'] = 'Grazie per il feedback su: <br>{$a}';
 $string['serverconnection'] = 'Si è verificato un errore durante la connessione al server';
 $string['servicedonotexist'] = 'Il servizio non esiste';
+$string['sessioncannotobtainlock'] = '<p>Non è stato possibile ottenere il lock della sessione id {$a->id} entro {$a->acquiretimeout}.</p>
+<p>È probabile che un\'altra pagina ({$a->whohaslock}) sia ancora in esecuzione in un\'altra scheda del browser o che non abbia rilasciato il lock a causa di un errore.</p>
+<p>È possibile attendere fino al timeout del lock della sessione ({$a->lockexpire}) oppure è possibile riavviare la sessione del browser. Se l\'errore persiste, avvisare l\'amministratore del server.</p>';
 $string['sessioncookiesdisable'] = 'È stato rilevato un uso errato di require_key_login() - i cookie di sessione devono essere disabilitati!';
 $string['sessiondiskfull'] = 'La partizione contenente le sessioni è piena. Al momento non è possibile autenticarsi. Per favore avvertire l\'amministratore del server.';
 $string['sessionerroruser'] = 'La sessione è scaduta. Si prega di autenticarsi nuovamente.';
@@ -566,6 +575,7 @@ $string['unknowcontext'] = 'Questo è un contesto sconosciuto ({$a}) in get_chil
 $string['unknowformat'] = 'Formato sconosciuto ({$a})';
 $string['unknownbackupexporterror'] = 'Si è verificato un errore sconosciuto durante la preparazione delle informazioni da importare';
 $string['unknownblockregion'] = 'In questa pagina l\'area blocchi \'{$a}\' non è stata individuata.';
+$string['unknowncategory'] = 'La categoria con ID "{$a}" è sconosciuta';
 $string['unknowncontext'] = 'Questo contesto è sconosciuto.';
 $string['unknowncourse'] = 'Il corso di nome "{$a}" è sconosciuto';
 $string['unknowncourseidnumber'] = 'L\'ID del corso "{$a}" è sconosciuta';

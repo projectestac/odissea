@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_offlinemode', language 'el', version '3.11'.
+ * Strings for component 'quizaccess_offlinemode', language 'el', version '4.1'.
  *
  * @package     quizaccess_offlinemode
  * @category    string
@@ -56,7 +56,7 @@ $string['reviewthisattempt'] = 'Ανασκόπηση της προσπάθεια
 $string['savefailed'] = 'Η αποθήκευση απέτυχε. Μπορείτε να συνεχίσετε να εργάζεστε. Ανά διαστήματα θα πρέπει να {$a}.';
 $string['savetheresponses'] = 'αποθηκεύσετε τις απαντήσεις';
 $string['savingdots'] = 'Αποθήκευση ...';
-$string['savingtryagaindots'] = 'Προσπάθεια αποθήκευσης στο διακομιστή ξανά ...';
+$string['savingtryagaindots'] = 'Προσπάθεια αποθήκευσης στον εξυπηρετητή ξανά ...';
 $string['submitfailed'] = 'Η υποβολή απέτυχε';
 $string['submitfaileddownloadmessage'] = '... ή μπορείτε να {$a} ως αρχείο που μπορείτε να επεξεργαστείτε αργότερα.';
 $string['submitfailedmessage'] = 'Δεν ήταν δυνατή η υποβολή των απαντήσεων σας. Μπορείτε είτε να δοκιμάσετε ξανά ...';

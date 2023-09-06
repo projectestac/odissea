@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'ca', version '3.11'.
+ * Strings for component 'choicegroup', language 'ca', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -103,6 +103,7 @@ $string['members/'] = 'Ocupació';
 $string['members/max'] = 'Ocupació / Capacitat';
 $string['modulename'] = 'Elecció de grup';
 $string['modulename_help'] = 'El mòdul Tria grup permet als estudiants afegir-se ells mateixos a un grup d\'un curs. El professor pot escollir quins grups podran escollir els estudiants i el màxim de membres en cada grup';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Elecció de grups';
 $string['moveselectedusersto'] = 'Mou els usuaris seleccionats a...';
 $string['multipleenrollmentspossible'] = 'Permet la inscripció a diferents grups';

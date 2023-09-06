@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'de', version '3.11'.
+ * Strings for component 'qtype_essay', language 'de', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -60,6 +60,7 @@ $string['nlines'] = '{$a} Zeilen';
 $string['nonexistentfiletypes'] = 'Folgende Typen werden nicht erkannt: {$a}';
 $string['pluginname'] = 'Freitext';
 $string['pluginname_help'] = 'Teilnehmer/innen laden zur Beantwortung der Frage eine oder mehrere Dateien hoch oder erstellen einen Text. Eine Antwortvorlage kann bereitgestellt werden. Die Bewertung erfolgt durch die Trainer/innen manuell und wird danach den Teilnehmer/innen angezeigt.';
+$string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = 'Freitextfrage hinzufügen';
 $string['pluginnameediting'] = 'Freitextfrage bearbeiten';
 $string['pluginnamesummary'] = 'Eine Freitextantwort erlaubt eine Antwort als Datei und/oder als Onlinetext. Diese Antwort muss manuell bewertet werden.';

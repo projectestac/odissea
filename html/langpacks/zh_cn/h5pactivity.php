@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'zh_cn', version '3.11'.
+ * Strings for component 'h5pactivity', language 'zh_cn', version '4.1'.
  *
  * @package     h5pactivity
  * @category    string
@@ -73,6 +73,7 @@ $string['grade_grademethod_help'] = '使用点放坡时，以下方法可用于�
 *第一次尝试（忽略所有其他尝试）
 *最后一次尝试（忽略所有其他尝试）
 *不使用放坡尝试（禁用放坡计算）';
+$string['grade_h5p'] = '分数：{$a}';
 $string['grade_highest_attempt'] = '最高等级';
 $string['grade_last_attempt'] = '最后一次尝试';
 $string['grade_manual'] = '不要计算分数';
@@ -89,8 +90,10 @@ $string['maxscore'] = '最高分';
 $string['modulename'] = 'H5P';
 $string['modulename_help'] = 'H5P是HTML5软件包的缩写-交互式内容，如演示文稿、视频和其他多媒体、问题、测验、游戏等。H5P活动允许上传H5P并将其添加到课程中。
 任何问题尝试都会自动标记，成绩记录在成绩册中。';
+$string['modulename_link'] = 'mod/h5pactivity/view';
 $string['modulenameplural'] = 'H5P';
 $string['myattempts'] = '我的尝试';
+$string['newsubmissions'] = 'H5P已提交';
 $string['no_compatible_track'] = '此交互({$a})不提供跟踪信息或所提供的跟踪
 与当前活动版本不兼容。';
 $string['noparticipants'] = '没有要展示的参与者';

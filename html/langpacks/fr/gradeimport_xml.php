@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'fr', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'fr', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -37,6 +37,7 @@ $string['fileurl'] = 'URL du fichier distant';
 $string['fileurl_help'] = 'Le champ de l\'URL de fichier distant permet de récupérer des données d\'un serveur distant, par exemple d\'un système d\'informations.';
 $string['importxml'] = 'Importation XML';
 $string['importxml_help'] = 'Les notes peuvent être importées via un fichier XML contenant les identifiants numériques des utilisateurs et les identifiants numériques des activités. Pour obtenir un exemple de format correct, exportez quelques notes en format XML et consultez le fichier obtenu.';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'Fichier XML';
 $string['privacy:metadata'] = 'Le plugin d\'importation de notes Fichier XML n\'enregistre aucune donnée personnelle.';
 $string['xml:publish'] = 'Publier les notes importées depuis un fichier XML';

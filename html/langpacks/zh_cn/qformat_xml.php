@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xml', language 'zh_cn', version '3.11'.
+ * Strings for component 'qformat_xml', language 'zh_cn', version '4.1'.
  *
  * @package     qformat_xml
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['invalidxml'] = '无效的 XML 文件：应为字符串（您用 CDATA 了吗？）';
 $string['pluginname'] = 'Moodle XML格式';
 $string['pluginname_help'] = '这是一个Moodle专用格式，用来导入和导出题目。';
+$string['pluginname_link'] = 'qformat/xml';
 $string['privacy:metadata'] = 'XML问题格式插件不存储任何个人数据。';
 $string['truefalseimporterror'] = '<b>警告</b>：不能正确导入判断题“{$a->questiontext}”。正确答案是真是假不明确。导入后的此题假定答案是“{$a->answer}”。如果这是错的，您需要编辑此题。';
 $string['unsupportedexport'] = '题目类型“{$a}”不支持 XML 导出';

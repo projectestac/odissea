@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'es', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'es', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -40,6 +40,7 @@ $string['clivalidationerror'] = 'Error de validación:';
 $string['csvdelimiter'] = 'Separador CSV';
 $string['defaultvalues'] = 'Valores por defecto';
 $string['deleteerrors'] = 'Eliminar errores';
+$string['duplicateemail'] = 'Detectados múltiples usuarios con correo electrónico {$a}';
 $string['encoding'] = 'Codificación';
 $string['errormnetadd'] = 'No se puede añadir usuarios externos';
 $string['errorprefix'] = 'Error:';
@@ -53,6 +54,7 @@ $string['invalidtheme'] = 'El tema "{$a}" no está instalado y se ignorará.';
 $string['invalidupdatetype'] = 'Esta opción no puede seleccionarse con el tipo de subida/carga elegido.';
 $string['invaliduserdata'] = 'Se detectaron datos no válidos para el usuario {$a} y se limpiaron automáticamente.';
 $string['linex'] = 'Línea {$a}';
+$string['matchemail'] = 'Coincidencia en dirección de correo electrónico';
 $string['nochanges'] = 'Sin cambios';
 $string['notheme'] = 'No hay ningún tema definido para este usuario.';
 $string['pluginname'] = 'Subida de usuario';
@@ -83,6 +85,7 @@ $string['uploadusers_help'] = 'Los usuarios pueden cargarse (y, opcionalmente, i
 * Cada registro es una serie de datos separados por comas (u otros delimitadores)
 * El primer registro contiene una lista de nombres de campo que definen el formato del resto del archivo
 * Los nombres de campo obligatorios son nombre de usuario, contraseña, nombre, apellido, correo electrónico';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Previsualizar subida de usuarios';
 $string['uploadusersresult'] = 'Resultados de subida de usuarios';
 $string['useraccountupdated'] = 'Usuario actualizado';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'nl', version '3.11'.
+ * Strings for component 'glossary', language 'nl', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Categorie toevoegen';
 $string['addcomment'] = 'Voeg commentaar toe';
 $string['addentry'] = 'Voeg een item toe';
 $string['addingcomment'] = 'Commentaar toevoegen';
+$string['addsingleentry'] = 'Voeg toe';
 $string['alias'] = 'Alias';
 $string['aliases'] = 'Alias(sen)';
 $string['aliases_help'] = 'Elk item in de woordenlijst kan een geassocieerde lijst met sleutelwoorden (of aliassen) hebben. Als het woordenlijstitem automatisch gelinkt wordt, dan zullen ook de sleutelwoorden automatisch gelinkt worden.
@@ -179,6 +180,7 @@ $string['errconceptalreadyexists'] = 'Dit item bestaat al. In deze woordenlijst 
 $string['errdeltimeexpired'] = 'Je kunt dit niet verwijderen. Tijd verstreken!';
 $string['erredittimeexpired'] = 'De bewerktijd voor dit item is voorbij.';
 $string['errorparsingxml'] = 'Er zijn fouten opgetreden bij het verwerken van het bestand. Zorg ervoor dat de XML-syntax geldig is.';
+$string['errreservedkeywords'] = 'Eén of meer trefwoorden bevatten en speciaal teken dat niet kan worden gebruikt.';
 $string['eventcategorycreated'] = 'Categorie is aangemaakt';
 $string['eventcategorydeleted'] = 'Categorie is verwijderd';
 $string['eventcategoryupdated'] = 'Categorie is aangepast';
@@ -194,6 +196,7 @@ $string['explainalphabet'] = 'Blader door de woordenlijst met deze index';
 $string['explainexport'] = 'Er is een bestand gemaakt.<br />Download het en bewaar het veilig. Je kunt het altijd in dit of een andere cursus importeren.';
 $string['explainimport'] = 'Specifieer het te importeren bestand en bepaal de criteria van het proces.<p>Verstuur je verzoek en kijk het resultaat na.';
 $string['explainspecial'] = 'Toon items die niet met een letter beginnen';
+$string['export'] = 'Exporteren';
 $string['exportedentry'] = 'Geëxporteerd item';
 $string['exportentries'] = 'Exporteer inhoud';
 $string['exportentriestoxml'] = 'Exporteer items naar XML-bestand';
@@ -240,10 +243,12 @@ $string['indicator:cognitivedepth'] = 'Woordenlijst cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Woordenlijst activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Woordenlijst cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de verklarende woordenlijstactiviteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Woordenlijst sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Woordenlijst activiteit.';
 $string['indicator:socialbreadthdef'] = 'Woordenlijst sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de maatschappelijke betrokkenheid van de verklarende woordenlijstactiviteiten tijdens dit analyse-interval bereikt (niveaus = geen deelname, alleen deelnemer)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = 'Is dit een globale woordenlijst?';
 $string['isglobal_help'] = '<p>Enkel beheerders en andere gebruikers met de mogelijkheid site:doanything toegelaten kunnen een globale woordenlijst definiëren.</p>
 
@@ -265,7 +270,7 @@ Een leraar kan toestaan dat bestanden als bijlage bij een item gevoegd worden. A
 
 Als het autolink-filter voor woordenlijsten is ingeschakeld, dan kunnen woordenlijstitems automatisch gelinkt worden telkens wanneer het woord ergens in de cursus verschijnt.
 
-Een leraar kan commentaren op woordenlijstitems toestaan. De items kunnen ook beoordeeld worden door leraars of leerlingen (peer-evaluatie). Beoordelingen kunnen samengeteld worden om een totaalcijfer te vormen dat opgenomen wordt in de cijferlijst.
+Een leraar kan commentaren op woordenlijstitems toestaan. De items kunnen ook beoordeeld worden door leraren of leerlingen (peer-evaluatie). Beoordelingen kunnen samengeteld worden om een totaalcijfer te vormen dat opgenomen wordt in de cijferlijst.
 
 Woordenlijsten kunnen gebruikt worden voor vele zaken, zoals
 
@@ -274,6 +279,7 @@ Woordenlijsten kunnen gebruikt worden voor vele zaken, zoals
 * een bron van handige tips over een bepaald onderwerp
 * een zone waar nuttige afbeeldingen, video\'s of geluidsbestanden kunnen gedeeld worden
 * een bron van belangrijke te studeren feiten';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = 'Woordenlijsten';
 $string['newentries'] = 'Nieuwe woordenlijstinvoer';
 $string['newglossary'] = 'Nieuwe woordenlijst';
@@ -294,6 +300,7 @@ $string['onebyline'] = '(één per lijn)';
 $string['page-mod-glossary-edit'] = 'Woordenlijst toevoegen/bewerken pagina';
 $string['page-mod-glossary-view'] = 'Bekijk woordenlijkst bewerk pagina';
 $string['page-mod-glossary-x'] = 'Elke woordenlijstmodule pagina';
+$string['pendingapproval'] = 'In afwachting van goedkeuring';
 $string['pluginadministration'] = 'Woordenlijst beheer';
 $string['pluginname'] = 'Woordenlijst';
 $string['popupformat'] = 'Pop-upgrootte';
@@ -322,6 +329,7 @@ $string['rssarticles'] = 'Aantal RSS recente artikels';
 $string['rssarticles_help'] = '<p>Met deze instelling kun je kiezen hoeveel artikels je in de RSS-feed wil zetten.</p>
 
 <p>Een getal tussen 5 en 20 zou goed moeten zijn voor de meeste woordenlijsten. Verhoog het getal als de woordenlijst erg veel gebruikt wordt.</p>';
+$string['rssfeed'] = 'RSS-feed';
 $string['rsssubscriberss'] = 'Toon de RSS-feed voor \'{$a}\' items';
 $string['rsstype'] = 'RSS-feed voor deze activiteit';
 $string['rsstype_help'] = '<p>Met deze optie kun je een RSS-feed maken van deze woordenlijst.</p>

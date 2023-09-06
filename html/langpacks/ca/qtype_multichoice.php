@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ca', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'ca', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -61,6 +61,7 @@ $string['pleaseselectananswer'] = 'Trieu una resposta.';
 $string['pleaseselectatleastoneanswer'] = 'Seleccioneu almenys una resposta.';
 $string['pluginname'] = 'Opció múltiple';
 $string['pluginname_help'] = 'En resposta a una pregunta (que pot contenir una imatge) l\'alumne pot escollir entre diferents opcions. Una pregunta d\'opció múltiple pot tenir una única resposta correcta o múltiples respostes correctes.';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'opcions múltiples';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'opcions múltiples';
 $string['pluginnamesummary'] = 'Permet la selecció d\'una o diverses respostes d\'una llista predefinida.';

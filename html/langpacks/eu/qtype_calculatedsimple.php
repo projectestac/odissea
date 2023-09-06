@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'eu', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'eu', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = 'Sortu';
 $string['newsetwildcardvalues'] = 'Aldagaien balioen ezarpen berriak';
 $string['pluginname'] = 'Galdera kalkulatu sinplea';
 $string['pluginname_help'] = 'Galdera kalkulatu sinpleek zenbakizko galderak aldagaiak erabiliz sortzea ahalbidetzen dute, galdetegia egiterakoan balioekin ordezkatzen direnak. Galdera kalkulatu sinpleak galdera kalkulatuen aukera erabilienak eskaintzen ditu sortze-interfaze sinpleagoa erabilita.';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = 'Galdera kalkulatu sinplea gehitzen';
 $string['pluginnameediting'] = 'Galdera kalkulatu sinplea editatzen';
 $string['pluginnamesummary'] = 'Galdera kalkulatuen bertsio sinpleagoa, zenbakizko galderen modukoak direnak baina hauetan erabilitako zenbakiak datu-multzo batetik ausaz aukeratzen dira galdetegia egitean.';

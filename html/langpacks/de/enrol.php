@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'de', version '3.11'.
+ * Strings for component 'enrol', language 'de', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -38,7 +38,7 @@ $string['configenrolplugins'] = 'Aktivieren Sie bitte die notwendigen Plugins un
 $string['custominstancename'] = 'Nutzerdefinierter Name';
 $string['defaultenrol'] = 'Plugin zu neuen Kursen hinzufügen';
 $string['defaultenrol_desc'] = 'Es ist möglich, dieses Plugin standardmäßig zu neuen Kursen hinzuzufügen.';
-$string['deleteinstanceconfirm'] = 'Möchten Sie wirklich die Einschreibemethode \'{$a->name}\' und alle verbundenen Daten löschen? Alle {$a->users} Nutzer/innen, die über diese Methode eingeschrieben sind, werden abgemeldet und deren Bewertungen, Gruppenmtgliedschaften, Forenabonnements sowie kursbezogene Daten werden gelöscht.';
+$string['deleteinstanceconfirm'] = 'Möchten Sie wirklich die Einschreibemethode \'{$a->name}\' und alle verbundenen Daten löschen? Alle {$a->users} Nutzer/innen, die über diese Methode eingeschrieben sind, werden abgemeldet und deren Bewertungen, Gruppenmitgliedschaften, Forenabonnements sowie kursbezogene Daten werden gelöscht.';
 $string['deleteinstanceconfirmself'] = 'Möchten Sie wirklich die Einschreibemethode \'{$a->name}\' löschen, mit der Sie Zugriff auf diesen Kurs haben? Es könnte passieren, dass Sie danach keinen Zugriff mehr haben.';
 $string['deleteinstancenousersconfirm'] = 'Möchten Sie wirklich die Einschreibemethode \'{$a->name}\' löschen?';
 $string['disableinstanceconfirmself'] = 'Möchten Sie wirklich die Einschreibemethode \'{$a->name}\' deaktivieren, mit der Sie Zugriff auf diesen Kurs haben? Es könnte passieren, dass Sie danach keinen Zugriff mehr haben.';
@@ -55,6 +55,7 @@ $string['enrollednewusers'] = 'Erfolgreich {$a} neue Nutzer/innen eingeschrieben
 $string['enrolledusers'] = 'Eingeschriebene Nutzer/innen';
 $string['enrolledusersmatching'] = 'Eingeschriebene passende Nutzer/innen';
 $string['enrolme'] = 'Mich in diesem Kurs einschreiben';
+$string['enrolment'] = 'Einschreibung';
 $string['enrolmentinstances'] = 'Einschreibemethoden';
 $string['enrolmentmethod'] = 'Einschreibemethode';
 $string['enrolmentnew'] = 'Neue Einschreibung in {$a}';
@@ -108,6 +109,7 @@ $string['invalidrequest'] = 'Ungültige Anfrage';
 $string['invalidrole'] = 'Falsche Rolle';
 $string['manageenrols'] = 'Übersicht';
 $string['manageinstance'] = 'Verwalten';
+$string['method'] = 'Methode';
 $string['migratetomanual'] = 'Auf manuelle Einschreibung ändern';
 $string['nochange'] = 'Ohne Änderung';
 $string['noexistingparticipants'] = 'Keine existierenden Teilnehmer/innen';
@@ -148,6 +150,10 @@ $string['startdatetoday'] = 'Heute';
 $string['synced'] = 'synchronisiert';
 $string['testsettings'] = 'Einstellungen prüfen';
 $string['testsettingsheading'] = 'Einschreibeeinstellungen prüfen - {$a}';
+$string['timeended'] = 'Zeit beendet';
+$string['timeenrolled'] = 'Zeit eingeschrieben';
+$string['timereaggregated'] = 'Zeit neu gesammelt';
+$string['timestarted'] = 'Zeit begonnen';
 $string['totalenrolledusers'] = '{$a} eingeschriebene Nutzer/innen';
 $string['totalotherusers'] = '{$a} weitere Nutzer/innen';
 $string['totalunenrolledusers'] = '{$a} abgemeldete Nutzer/innen';

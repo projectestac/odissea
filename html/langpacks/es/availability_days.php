@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_days', language 'es', version '3.11'.
+ * Strings for component 'availability_days', language 'es', version '4.1'.
  *
  * @package     availability_days
  * @category    string
@@ -25,8 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['ajaxerror'] = 'Error al contactar al servidor para convertir tiempos';
 $string['conditiontitle'] = 'Días a partir del inicio';
 $string['configreferencedate'] = 'Fecha de referencia';
+$string['configreferencedate_desc'] = 'Elija la fecha a partir de la cua se calculará el desplazamiento';
 $string['coursestartdate'] = 'Fecha de inicio del curso';
+$string['description'] = 'Impedir el acceso hasta que se alcance el desplazamiento hasta una fecha especificada relativa a la fecha de inicio del curso.';
+$string['full_days'] = 'Disponible en el día <strong>{$a}</strong> a partir de la fecha de inicio del curso';
+$string['pluginname'] = 'Restricción por desplazamiento de días desde el inicio';
 $string['short_days'] = 'Disponible a partir del día <strong>{$a}</strong>';
 $string['title'] = 'Días';
+$string['userenroldate'] = 'Fecha de inscripción del usuario';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'eu', version '3.11'.
+ * Strings for component 'quiz_statistics', language 'eu', version '4.1'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -101,12 +101,12 @@ $string['questiontype'] = 'Galdera mota';
 $string['quizinformation'] = 'Galdetegiaren informazioa';
 $string['quizname'] = 'Galdetegiaren izena';
 $string['quizoverallstatistics'] = 'Galdetegiaren estatistika orokorrak';
-$string['quizstatisticscleanuptask'] = 'Garbitu zaharkitutako galdetegi-estatistiken cache-aren erregistroak';
 $string['quizstructureanalysis'] = 'Galdetegiaren egituraren analisia';
 $string['random_guess_score'] = 'Ausaz erantzundakoen kalifikazioa';
 $string['rangebetween'] = '{$a->min} − {$a->max}';
 $string['rangeofvalues'] = 'Galdera hauetarako estatistika-tartea';
 $string['recalculatenow'] = 'Berriz kalkulatu orain';
+$string['recalculatetask'] = 'Berriz kalkulatu galderen estatistikak';
 $string['reportsettings'] = 'Estatistikak kalkulatzeko ezarpenak';
 $string['response'] = 'Erantzuna';
 $string['skewness'] = 'Kalifikazioen asimetria-banaketa ({$a} kontuan hartuta)';

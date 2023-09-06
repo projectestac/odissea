@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'zh_cn', version '3.11'.
+ * Strings for component 'analytics', language 'zh_cn', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -152,6 +152,7 @@ $string['processingsitecontents'] = '正在处理网站内容';
 $string['successfullyanalysed'] = '分析成功完成';
 $string['timesplittingmethod'] = '分析间隔';
 $string['timesplittingmethod_help'] = '分析间隔定义了系统何时计算预测，以及为这些预测将考虑的活动日志的部分。例如，课程持续时间可以分为几个部分，在每个部分结束时产生预测。';
+$string['timesplittingmethod_link'] = 'Time_splitting_methods';
 $string['typeinstitution'] = '机构类型';
 $string['typeinstitutionacademic'] = '学术的';
 $string['typeinstitutionngo'] = '非政府组织(NGO)';

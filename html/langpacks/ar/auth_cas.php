@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'ar', version '3.11'.
+ * Strings for component 'auth_cas', language 'ar', version '4.1'.
  *
  * @package     auth_cas
  * @category    string
@@ -26,8 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['CASform'] = 'خيار المصادقة';
-$string['accesCAS'] = 'مستخدمين خدمة التوثيق المركزية';
-$string['accesNOCAS'] = 'المستخدمون الآخرون';
 $string['auth_cas_auth_logo'] = 'شعار طريقة المصادقة';
 $string['auth_cas_auth_logo_description'] = 'أعط شعاراً لطريقة مصادقة خدمة المصادقة المركزية بحيث يكون مألوفاً للمستخدمين عندك.';
 $string['auth_cas_auth_name'] = 'اسم طريقة المصادقة';

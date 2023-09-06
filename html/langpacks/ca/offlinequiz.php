@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'ca', version '3.11'.
+ * Strings for component 'offlinequiz', language 'ca', version '4.1'.
  *
  * @package     offlinequiz
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addnewuseroverride'] = 'Afegeix una excepció d\'usuari';
+$string['filterbytags'] = 'Filtra per etiquetes...';
 $string['import'] = 'Importa';
 $string['multichoice'] = 'Opció múltiple';
 $string['participants'] = 'Participants';

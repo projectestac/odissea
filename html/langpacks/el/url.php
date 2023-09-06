@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'el', version '3.11'.
+ * Strings for component 'url', language 'el', version '4.1'.
  *
  * @package     url
  * @category    string
@@ -64,7 +64,7 @@ $string['modulename_help'] = 'Το άρθρωμα διεύθυνσης URL επ�
 Υπάρχουν ορισμένες επιλογές εμφάνισης για τη διεύθυνση URL, όπως ενσωματωμένα ή άνοιγμα σε νέο παράθυρο, και προχωρημένες επιλογές για την παράδοση πληροφοριών, όπως το όνομα ενός μαθητή, μέσω της διεύθυνσης URL, εάν απαιτείται.
 
 Σημειώστε ότι οι διευθύνσεις URL μπορούν επίσης να προστεθούν σε κάθε άλλο τύπο πόρων ή δραστηριότητας μέσω του επεξεργαστή κειμένου.';
-$string['modulename_link'] = 'άρθρωμα/URL/εμφάνιση';
+$string['modulename_link'] = '';
 $string['modulenameplural'] = 'Διευθύνσεις URL';
 $string['page-mod-url-x'] = 'Οποιαδήποτε σελίδα αρθρώματος διεύθυνσης URL';
 $string['parameterinfo'] = '&amp;parameter=variable (&amp;παράμετρος=μεταβλητή)';

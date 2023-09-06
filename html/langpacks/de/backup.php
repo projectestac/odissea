@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'de', version '3.11'.
+ * Strings for component 'backup', language 'de', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -25,29 +25,29 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['asyncbackupcomplete'] = 'Der Sicherungsvorgang ist abgeschlossen';
+$string['asyncbackupcomplete'] = 'Der Sicherungsvorgang ist abgeschlossen.';
 $string['asyncbackupcompletebutton'] = 'Weiter';
 $string['asyncbackupcompletedetail'] = 'Der Sicherungsvorgang ist erfolgreich abgeschlossen.<br />Sie finden die Sicherungsdatei auf der Seite <a href="{$a}">Wiederherstellen</a>.';
 $string['asyncbackuperror'] = 'Die Hintergrundverarbeitung ist fehlgeschlagen.';
-$string['asyncbackuperrordetail'] = 'Die Hintergrundverarbeitung ist fehlgeschlagen. Wenden Sie sich an die Administrator/innen der Website.';
-$string['asyncbackuppending'] = 'Der Sicherungsvorgang ist vorbereitet';
+$string['asyncbackuperrordetail'] = 'Die Hintergrundverarbeitung ist fehlgeschlagen. Wenden Sie sich bitte an die Administrator/innen der Website.';
+$string['asyncbackuppending'] = 'Der Sicherungsvorgang ist vorbereitet.';
 $string['asyncbackupprocessing'] = 'Der Sicherungsvorgang läuft ...';
-$string['asyncbadexecution'] = 'Fehlerhafte Ausführung des Sicherungs-Controllers. Es ist {$a} und sollte 2 sein.';
+$string['asyncbadexecution'] = 'Fehlerhafte Ausführung der Sicherung. Das Ergebnis ist {$a}, sollte aber 2 sein.';
 $string['asynccheckprogress'] = 'Der Fortschritt wird jederzeit auf der Seite <a href="{$a}">Wiederherstellen</a> angezeigt.';
 $string['asyncemailenable'] = 'Systemnachrichten aktivieren';
-$string['asyncemailenabledetail'] = 'Die Option legt fest, ob Mitteilungen versendet werden, wenn eine asynchrone Sicherung oder Wiederherstellung abgeschlossen wird.';
-$string['asyncgeneralsettings'] = 'Asynchrones Sichern/Wiederherstellen';
+$string['asyncemailenabledetail'] = 'Wenn die Option aktiviert ist, werden Mitteilungen versendet, sobald eine asynchrone Sicherung oder Wiederherstellung abgeschlossen ist.';
+$string['asyncgeneralsettings'] = 'Asynchrones Sichern / Wiederherstellen';
 $string['asyncmessagebody'] = 'Mitteilung';
-$string['asyncmessagebodydefault'] = 'Ihre {operation} (ID: {backupid}) ist erfolgreich abgeschlossen. Sie können über die URL darauf zugreifen: <a href="{link}">{link}</a>.';
-$string['asyncmessagebodydetail'] = 'Zu sendende Mitteilung, wenn eine asynchrone Sicherung oder Wiederherstellung abgeschlossen wird.';
+$string['asyncmessagebodydefault'] = '{operation} (ID: {backupid}) ist erfolgreich abgeschlossen. Sie können über die URL darauf zugreifen: <a href="{link}">{link}</a>.';
+$string['asyncmessagebodydetail'] = 'Zu sendende Mitteilung, wenn eine asynchrone Sicherung oder Wiederherstellung abgeschlossen ist.';
 $string['asyncmessagesubject'] = 'Betreff';
-$string['asyncmessagesubjectdefault'] = 'Moodle {operation} erfolgreich abgeschlossen';
+$string['asyncmessagesubjectdefault'] = 'Moodle {operation} abgeschlossen';
 $string['asyncmessagesubjectdetail'] = 'Betreff der Mitteilung';
 $string['asyncnowait'] = 'Sie müssen nicht warten, während der Prozess im Hintergrund ausgeführt wird.';
 $string['asyncprocesspending'] = 'Vorgang anstehend';
 $string['asyncrestorecomplete'] = 'Die Wiederherstellung ist abgeschlossen.';
 $string['asyncrestorecompletebutton'] = 'Weiter';
-$string['asyncrestorecompletedetail'] = 'Die Wiederherstellung ist erfolgreich abgeschlossen. Mit Weiter gelangen Sie zum <a href="{$a}">Kurs mit dem wiederhergestellten Element</a>.';
+$string['asyncrestorecompletedetail'] = 'Die Wiederherstellung ist erfolgreich abgeschlossen. <a href="{$a}">Zum Kurs mit dem wiederhergestellten Element</a>.';
 $string['asyncrestoreerror'] = 'Die Wiederherstellung ist fehlgeschlagen.';
 $string['asyncrestoreerrordetail'] = 'Die Wiederherstellung ist fehlgeschlagen. Wenden Sie sich an die Administrator/innen.';
 $string['asyncrestoreinprogress'] = 'Laufende Wiederherstellung';
@@ -61,7 +61,7 @@ $string['autoactiveenabled'] = 'Aktiviert';
 $string['autoactivemanual'] = 'Manuell';
 $string['automatedbackupschedule'] = 'Planung';
 $string['automatedbackupschedulehelp'] = 'Wählen Sie, an welchen Wochentagen automatische Sicherungen durchgeführt werden sollen.';
-$string['automatedbackupsinactive'] = 'Automatische Sicherungen wurden von Administrator/innen nicht aktiviert.';
+$string['automatedbackupsinactive'] = 'Automatische Sicherungen wurden von den Administrator/innen nicht aktiviert.';
 $string['automatedbackupstatus'] = 'Status der automatischen Sicherungen';
 $string['automateddeletedays'] = 'Sicherungen löschen, wenn älter als';
 $string['automatedmaxkept'] = 'Maximale Anzahl von aufgehobenen Sicherungen';
@@ -71,8 +71,9 @@ $string['automatedminkepthelp'] = 'Diese Option legt die minimale Anzahl automat
 $string['automatedsettings'] = 'Automatische Sicherungen';
 $string['automatedsetup'] = 'Automatische Sicherungen';
 $string['automatedstorage'] = 'Speicherplatz für automatisierte Sicherungen';
-$string['automatedstoragehelp'] = 'Wählen SIe den Ort, an dem Sie die  automatisch erstellten Sicherungen speichern möchten.';
+$string['automatedstoragehelp'] = 'Wählen Sie den Ort, an dem Sie die  automatisch erstellten Sicherungen speichern möchten.';
 $string['backupactivity'] = 'Aktivität sichern: {$a}';
+$string['backupautoactivitiesdescription'] = 'Diese Option legt die Standardeinstellung für das Einbeziehen von Aktivitäten in eine Sicherung fest. Damit der Papierkorb funktioniert, muss diese Einstellung aktiviert sein.';
 $string['backupcourse'] = 'Kurs sichern: {$a}';
 $string['backupcoursedetails'] = 'Kursdetails';
 $string['backupcoursesection'] = 'Abschnitt: {$a}';
@@ -123,7 +124,7 @@ $string['config_overwrite_conf'] = 'Nutzer/in erlauben, die Kurseinstellungen zu
 $string['config_overwrite_course_fullname'] = 'Voreingestellt ist, dass der aktuelle Kursname mit dem Kursnamen aus der Sicherungsdatei überschrieben wird. Um den Kursnamen zu ändern (moodle/course:changefullname) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
 $string['config_overwrite_course_shortname'] = 'Der aktuelle Kurskurzname wird mit dem Kurskurznamen aus der Sicherungsdatei überschrieben. Um das Recht zu haben, den Kurskurznamen zu ändern (moodle/course:changeshortname) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
 $string['config_overwrite_course_startdate'] = 'Der aktuelle Kursbeginn wird mit dem Kursbeginn aus der Sicherungsdatei überschrieben. Um das Recht zu haben, den Kursbeginn zu ändern (moodle/restore:rolldates) muss auch \'Kurseinstellungen überschreiben\' aktiviert sein.';
-$string['configgeneralactivities'] = 'Standard für das Einbeziehen von Aktivitäten in eine Sicherung';
+$string['configgeneralactivities'] = 'Standardeinstellungen für die Aktivitäten in einer Sicherung';
 $string['configgeneralanonymize'] = 'Standard für die Anonymisierung aller nutzerbezogenen Daten in eine Sicherung';
 $string['configgeneralbadges'] = 'Standard für das Einbeziehen von Badges in eine Sicherung';
 $string['configgeneralblocks'] = 'Standard für das Einbeziehen von Blöcken in eine Sicherung';
@@ -174,11 +175,11 @@ $string['copycoursetitle'] = 'Kurs duplizieren: {$a}';
 $string['copydest'] = 'Ziel';
 $string['copyfieldnotfound'] = 'Notwendige Felddaten wurden nicht gefunden für: {$a}';
 $string['copyformfail'] = 'Die AJAX-Anfrage des Kursduplizierungsformulars ist fehlgeschlagen.';
-$string['copyingcourse'] = 'Duplizieren von Kursen in Bearbeitung';
-$string['copyingcourseshortname'] = 'am Duplizieren';
+$string['copyingcourse'] = 'Kursduplizierung in Bearbeitung';
+$string['copyingcourseshortname'] = 'Wird dupliziert';
 $string['copyop'] = 'Derzeitiger Vorgang';
-$string['copyprogressheading'] = 'Kursduplizierungen in Bearbeitung';
-$string['copyprogressheading_help'] = 'Diese Tabelle zeigt den Status aller Ihrer unvollendeten Kursduplizierungen.';
+$string['copyprogressheading'] = 'Kursduplizierung in Bearbeitung';
+$string['copyprogressheading_help'] = 'Diese Tabelle zeigt den Status laufenden Kursduplizierungen.';
 $string['copyprogresstitle'] = 'Fortschritt der Kurskopie';
 $string['copyreturn'] = 'Duplizieren und zurückkehren';
 $string['copysource'] = 'Quelle';
@@ -204,12 +205,13 @@ $string['errorfilenametoolong'] = 'Der Dateiname muss weniger als 255 Zeichen ha
 $string['errorinvalidformat'] = 'Unbekanntes Sicherungsformat';
 $string['errorinvalidformatinfo'] = 'Die ausgewählte Datei ist keine gültige Moodlesicherung und kann nicht zur Wiederherstellung verwendet werden';
 $string['errorminbackup20version'] = 'Diese Sicherungsdatei wurde mit einer Entwicklungsversion des Moodle-Backups ({$a->backup}) erstellt. Für die Wiederherstellung ist mindestens {$a->min} notwendig.';
-$string['errorrestorefrontpagebackup'] = 'Sicherungen einer Startseite können nur auf der Startseite wiederhergestellt werden.';
+$string['errorrestorefrontpagebackup'] = 'Sie können ausschließlich Sicherungen einer Startseite auf der Startseite wiederherstellen.';
 $string['executionsuccess'] = 'Die Sicherung wurde erfolgreich abgeschlossen.';
 $string['extractingbackupfileto'] = 'Die Sicherung wird entpackt nach: {$a}';
 $string['failed'] = 'Sicherung fehlgeschlagen';
 $string['filealiasesrestorefailures'] = 'Fehler bei der Alias-Wiederherstellung';
 $string['filealiasesrestorefailures_help'] = 'Aliases sind symbolische Links zu anderen Dateien, auch Dateien in externen Repositories. In einigen Fällen kann Moodle diese Aliases nicht wiederherstellen, z.B. wenn eine Sicherung in einem anderen System wiederhergestellt wird oder die verlinkte Datei nicht existiert.';
+$string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = 'Aliases aus der Sicherungsdatei konnten nicht wiederhergestellt werden. Die nachfolgende Liste enthält deren angenommenen Speicherorte und die Quelldatei aus dem Ursprungssystem.';
 $string['filename'] = 'Dateiname';
 $string['filereferencesincluded'] = 'In der Sicherung sind Dateiverweise zu externen Inhalten enthalten. Diese Dateiverweise werden nicht funktionieren, wenn die Sicherung in einer anderen Website wiederhergestellt wird.';
@@ -306,13 +308,13 @@ $string['qcategory2coursefallback'] = 'Die Fragenkategorie "{$a->name}" in der S
 $string['qcategorycannotberestored'] = 'Die Fragenkategorie "{$a->name}" kann bei der Wiederherstellung nicht erstellt werden';
 $string['question2coursefallback'] = 'Die Fragenkategorie "{$a->name}" in der Sicherungsdatei ist ursprünglich eine System- bzw. Kurskategorie. Bei der Wiederherstellung wird sie im Kurskontext erstellt.';
 $string['questionegorycannotberestored'] = 'Die Fragen "{$a->name}" können bei der Wiederherstellung nicht erstellt werden';
-$string['recyclebin_desc'] = 'Diese Einstellungen werden auch auf den Papierkorb angewendet.';
+$string['recyclebin_desc'] = 'Diese Einstellungen werden auch für den Papierkorb verwendet.';
 $string['replacerestoredefaults'] = 'Standard wiederherstellen, wenn in einem anderen Kurs wiederhergestellt wird und die bisherigen Kursinhalte gelöscht werden';
 $string['restoreactivity'] = 'Aktivität wiederherstellen';
 $string['restorecourse'] = 'Kurs wiederherstellen';
 $string['restorecoursesettings'] = 'Kurseinstellungen';
 $string['restoredcourseid'] = 'ID des wiederhergestellten Kurses: {$a}';
-$string['restoreexecutionsuccess'] = 'Der Kurs wurde erfolgreich wiederhergestellt. Klicken Sie auf Weiter, um in den Kurs zu gelangen.';
+$string['restoreexecutionsuccess'] = 'Der Kurs wurde erfolgreich wiederhergestellt.';
 $string['restorefileweremissing'] = 'Einige Dateien konnten nicht wiederhergestellt werden. Sie fehlten im Backup.';
 $string['restorenewcoursefullname'] = 'Neuer Kursname';
 $string['restorenewcourseshortname'] = 'Kurzer Kursname des neuen Kurses';
@@ -389,7 +391,7 @@ $string['setting_overwrite_course_fullname'] = 'Kursnamen überschreiben';
 $string['setting_overwrite_course_shortname'] = 'Kurze Kursnamen überschreiben';
 $string['setting_overwrite_course_startdate'] = 'Kursbeginn überschreiben';
 $string['showtypes'] = 'Typ-Optionen anzeigen';
-$string['sitecourseformatwarning'] = 'Dies ist die Sicherung einer Startseite. Eine solche Sicherung kann nur auf der Startseite wiederhergestellt werden.';
+$string['sitecourseformatwarning'] = 'Dies ist eine Sicherung einer Startseite. Eine solche Sicherung kann nur auf der Startseite wiederhergestellt werden.';
 $string['skiphidden'] = 'Verborgene Kurse überspringen';
 $string['skiphiddenhelp'] = 'Wählen Sie, ob verborgene Kurse gesichert werden sollen oder nicht.';
 $string['skipmodifdays'] = 'Unveränderte Kurse überspringen';

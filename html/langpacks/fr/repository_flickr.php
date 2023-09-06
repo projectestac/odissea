@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr', language 'fr', version '3.11'.
+ * Strings for component 'repository_flickr', language 'fr', version '4.1'.
  *
  * @package     repository_flickr
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyoselectjs', language 'ar', version '3.11'.
+ * Strings for component 'qtype_easyoselectjs', language 'ar', version '4.1'.
  *
  * @package     qtype_easyoselectjs
  * @category    string
@@ -51,6 +51,7 @@ $string['filloutoneanswer'] = '<b><ul>
 $string['javaneeded'] = 'لاستعمال هذه الصفحة، تحتاج إلى مستعرض تم فيه تمكين Java. قم بتنزيل آخر إصدار من ملحق Java من {$a}.';
 $string['notenoughanswers'] = 'هذا النوع من الأسئلة يتطلب {$a} من الإجابات على الأقل';
 $string['pleaseenterananswer'] = 'يرجى إدخال الإجابة.';
+$string['pluginname_link'] = 'question/type/easyoselect';
 $string['viewing_answer'] = 'تجري حالياً معاينة الإجابة';
 $string['viewing_answer1'] = 'تجري حالياً معاينة الإجابة الأولى';
 $string['youranswer'] = 'إجابتك: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'pt', version '3.11'.
+ * Strings for component 'enrol_cohort', language 'pt', version '4.1'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -31,9 +31,9 @@ $string['cohort:config'] = 'Configurar instâncias de Grupos globais';
 $string['cohort:unenrol'] = 'Cancelar a inscrição de utilizadores suspensos';
 $string['creategroup'] = 'Criar novo grupo';
 $string['defaultgroupnametext'] = '{$a->increment} Grupo global {$a->name}';
-$string['enrolcohortsynctask'] = 'Tarefa de sincronização de inscrição em grupos globais';
+$string['enrolcohortsynctask'] = 'Tarefa de sincronização de inscrição em Grupos globais';
 $string['instanceexists'] = 'O Grupo global já está sincronizado com o papel selecionado';
 $string['pluginname'] = 'Sincronização com Grupos globais';
-$string['pluginname_desc'] = 'Este módulo de inscrição sincroniza os membros de grupos globais com os participantes da disciplina.';
+$string['pluginname_desc'] = 'Este módulo de inscrição sincroniza os membros de Grupos globais com os participantes da disciplina.';
 $string['privacy:metadata:core_group'] = 'O módulo de inscrição de Grupos globais pode criar um novo grupo ou usar um grupo existente para adicionar todos os membros do Grupo global.';
 $string['status'] = 'Ativo';

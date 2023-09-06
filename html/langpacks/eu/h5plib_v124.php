@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'eu', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'eu', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['editor:a11ytitlehidelabel'] = 'Ezkutatu etiketa AT-rentzat';
+$string['editor:a11ytitleshowlabel'] = 'Erakutsi etiketa AT-rentzat';
 $string['editor:add'] = 'Gehitu';
 $string['editor:addauthor'] = 'Gorde egilea';
 $string['editor:addentity'] = 'Gehitu :entity';
 $string['editor:addfile'] = 'Gehitu fitxategia';
 $string['editor:addnewchange'] = 'Gehitu aldaketa berria';
 $string['editor:addtitle'] = 'Gehitu izenburua';
-$string['editor:addvideodescription'] = 'H5Pk mp4, webm edo ogv formatua duten kanpoko bideo-jatorriak onartzen ditu, esaterako Vimeo Pro, eta YouTube-ko estekak ere onartzen ditu.';
+$string['editor:addvideodescription'] = 'H5Pk mp4, webm edo ogv formatua duten kanpoko bideo-jatorriak onartzen ditu, esaterako Vimeo Pro, eta YouTube-ko eta Panopto-ko estekak ere onartzen ditu.';
 $string['editor:atoz'] = 'Atik Zra';
 $string['editor:avtablistlabel'] = 'Txertatu hurrengoa erabiliz:';
 $string['editor:belowmin'] = ':property balioa gutxieneko :min balioa baino txikiagoa da.';
@@ -91,7 +93,7 @@ $string['editor:enteraudiotitle'] = 'Itsatsi esteka edo bestelako audio-jatorria
 $string['editor:enteraudiourl'] = 'Sartu audio-jatorriaren URLa';
 $string['editor:enterfullscreenbuttonlabel'] = 'Pantaila osoa';
 $string['editor:entervideotitle'] = 'Itsatsi YouTube-ko esteka edo bestelako bideo-jatorriaren URLa';
-$string['editor:entervideourl'] = 'Sartu bideo-jatorriaren URLa edo YouTube-ko esteka';
+$string['editor:entervideourl'] = 'Idatzi bideoaren URLa';
 $string['editor:errorcalculatingmaxscore'] = 'Ezin izan da kalkulatu eduki honen gehieneko puntuazio. Gehieneko puntuazioa 0 dela suposatuko da. Jarri harremanetan zure kudeatzailearekin hau zuzena ez bada.';
 $string['editor:errorcommunicatinghubcontent'] = 'Errorea gertatu da. Mesedez saiatu zaitez berriro.';
 $string['editor:errorcommunicatinghubtitle'] = 'Ezin izan da bilgunearekin komunikatu.';

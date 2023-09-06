@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataformfield_entryauthor', language 'en', version '3.11'.
+ * Strings for component 'dataformfield_entryauthor', language 'en', version '4.1'.
  *
  * @package     dataformfield_entryauthor
  * @category    string

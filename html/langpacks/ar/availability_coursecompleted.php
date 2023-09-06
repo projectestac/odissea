@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_coursecompleted', language 'ar', version '3.11'.
+ * Strings for component 'availability_coursecompleted', language 'ar', version '4.1'.
  *
  * @package     availability_coursecompleted
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'التقييد حسب إكتمال المقرر الدراسي';
-$string['privacy:metadata'] = 'إن ملحق الإتاحة بإكمال المقرر الدراسي لا يخزن أي بيانات شخصية.';
+$string['pluginname'] = 'التقييد حسب إكتمال المساق';
+$string['privacy:metadata'] = 'إن إضافة الإتاحة بإكمال المساق لا تخزن أي بيانات شخصية.';

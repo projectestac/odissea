@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'zh_cn', version '3.11'.
+ * Strings for component 'report_loglive', language 'zh_cn', version '4.1'.
  *
  * @package     report_loglive
  * @category    string
@@ -32,6 +32,7 @@ $string['eventorigin'] = '起源';
 $string['eventrelatedfullnameuser'] = '受影响的用户';
 $string['eventreportviewed'] = '查看了实时日志报表';
 $string['livelogs'] = '一小时内的实时日志';
+$string['livelogswithupdate'] = '过去一小时的实时日志 ({$a})';
 $string['loglive:view'] = '查看实时日志';
 $string['nologreaderenabled'] = '未启用日志读取器';
 $string['pause'] = '暂停实时更新';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'nl', version '3.11'.
+ * Strings for component 'userkey', language 'nl', version '4.1'.
  *
  * @package     userkey
  * @category    string
@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adduserkey'] = 'Voeg gebruikerssleutel toe';
 $string['createnewkey'] = 'Maak een nieuwe gebruikerssleutel';
 $string['createuserkey'] = 'Maak gebruikerssleutel';
 $string['deletekeyconfirm'] = 'Wil je deze gebruikerssleutel echt verwijderen?';
+$string['deleteuserkey'] = 'Gebruikerssleutel verwijderen';
 $string['edituserkey'] = 'Bewerk gebruikerssleutel';
 $string['keyiprestriction'] = 'IP-beperking van deze sleutel';
 $string['keyiprestriction_help'] = '<p>Geef een specifiek IP-adres of een reeks IP-adressen die de enige IP-adressen zullen zijn die toegang hebben tot deze gegevens. Niets ingeven zal IP-restrictie uitschakelen (niet aanbevolen).</p>';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'eu', version '3.11'.
+ * Strings for component 'survey', language 'eu', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -213,10 +213,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa hausnarketetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Hausnarketa motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa hausnarketetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Hausnarketa jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala hausnarketetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Hausnarketa motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala hausnarketetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Hausnarketa jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = 'Sarrera-testua';
 $string['invalidsurveyid'] = 'Hausnarketaren IDa ez zen egokia';
 $string['invalidtmptid'] = 'Txantiloiaren IDa ez da baliozkoa';
@@ -225,6 +227,7 @@ $string['modulename'] = 'Hausnarketa';
 $string['modulename_help'] = 'Hausnarketa jarduerak online inguruneetan ikasketa eta ebaluazioa sustatzeko baliagarriak diren egiaztatutako hainbat hausnarketa erreminta erabiltzeko aukera ematen du. Irakasleak erreminta hauek bere ikasleak eta bere irakasteko modua hobeto ezagutzen laguntzeko erabili ditzake.
 
 Kontuan izan hausnarketa erreminta hauetako galderak aurrez definiturik daudela. Norbere hausnarketak egin nahi dituen irakasleak feedback jarduera erabili behar du.';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = 'Hausnarketak';
 $string['name'] = 'Izena';
 $string['newsurveyresponses'] = 'Hausnarketaren erantzun berriak';
@@ -278,6 +281,7 @@ $string['surveytype_help'] = '3 hausnarketa mota daude eskuragarri:
 * Pentsatzeko eta Ikasteko Jarrerarako Inkesta (ATTS ingelesezko hitzetatik) - pertsona bat zein neurrira arte \'konektatutako ikaslea\' den (ikastea gustagarriago aurkitzen du, eta askotan lagunkoiagoa, atseginagoa eta besteekin ideiak eraikitzeko prestutasun handiagoa izaten du) edo \'ikasle bereizia\' den (ikastean kritikoagoa eta jarrera eztabaidatsuagoa izateko joera du) neurtzeko.
 * Gertakari kritikoetarako inkesta
 * On-line-ko Ikaste Ingurune Konstruktibistarako Inkesta (COLLES ingelesezko hitzetatik) - World Wide Web-eko gaitasun interaktiboa ikasteko praktika dinamikoetan ikasleen parte-hartzea areagotzeko esplotatzeko gaitasuna monitorizatzeko.';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Eskerrik asko erantzuteagatik, {$a}';
 $string['time'] = 'Denbora';
 $string['viewsurveyresponses'] = 'Ikusi hausnarketaren {$a} erantzun';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'pt', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'pt', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -36,19 +36,20 @@ $string['encoding'] = 'Codificação';
 $string['export'] = 'Exportar';
 $string['exportid'] = 'ID exportado (opcional)';
 $string['exportnavlink'] = 'Exportar quadro de competências';
-$string['idnumber'] = 'Número ID';
+$string['idnumber'] = 'Número de identificação (ID)';
 $string['import'] = 'Importar';
 $string['importfile'] = 'Descrição do ficheiro CSV com quadro de competências';
 $string['importfile_help'] = 'Um quadro de competências pode ser importado via ficheiro de texto. O formato do ficheiro pode ser determinado criando um novo quadro de competências no site e, em seguida, exportando-o.';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = 'A importar dados do ficheiro';
 $string['invalidimportfile'] = 'Formato de ficheiro não válido';
 $string['isframework'] = 'É quadro de competências';
 $string['noframeworks'] = 'Ainda não foi criado qualquer quadro de competências';
-$string['parentidnumber'] = 'Número ID do ascendente';
+$string['parentidnumber'] = 'Número de identificação (ID) do ascendente';
 $string['pluginname'] = 'Importar quadro de competências';
 $string['privacy:metadata'] = 'O módulo Importar quadro de competências não armazena dados pessoais.';
 $string['processingfile'] = 'A processar ficheiro';
-$string['relatedidnumbers'] = 'Números ID da competência referenciada';
+$string['relatedidnumbers'] = 'Número de identificação (ID) da competência referenciada';
 $string['ruleconfig'] = 'Configuração da regra (opcional)';
 $string['ruleoutcome'] = 'Regra do resultado da aprendizagem (opcional)';
 $string['ruletype'] = 'Tipo de regra (opcional)';

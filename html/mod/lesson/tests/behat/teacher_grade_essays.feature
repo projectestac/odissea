@@ -55,7 +55,7 @@ Feature: In a lesson activity, a non editing teacher can grade essay questions
     And I press "Submit"
     When I am on the "Test lesson name" "lesson activity" page logged in as teacher1
     Then I should see "Grade essays"
-    And I follow "Grade essays"
+    And I grade lesson essays
     And I should see "Student 1"
     And I should see "Student 2"
     And I should see "Essay question"
@@ -77,6 +77,6 @@ Feature: In a lesson activity, a non editing teacher can grade essay questions
     And I should see "No one in Group C has answered an essay question yet."
     And I am on the "Test lesson name" "lesson activity" page logged in as teacher2
     Then I should see "Grade essays"
-    And I follow "Grade essays"
+    And I grade lesson essays
     And I should not see "Student 1"
     And I should see "Student 2"

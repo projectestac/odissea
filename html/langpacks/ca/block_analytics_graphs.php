@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_analytics_graphs', language 'ca', version '3.11'.
+ * Strings for component 'block_analytics_graphs', language 'ca', version '4.1'.
  *
  * @package     block_analytics_graphs
  * @category    string
@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['new_message'] = 'Missatge nou';
+$string['resources'] = 'Recursos';
 $string['submissions'] = 'Trameses';
+$string['typename_scheduler'] = 'Agenda';

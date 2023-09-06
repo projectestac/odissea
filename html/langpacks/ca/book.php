@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ca', version '3.11'.
+ * Strings for component 'book', language 'ca', version '4.1'.
  *
  * @package     book
  * @category    string
@@ -50,6 +50,8 @@ $string['eventchapterupdated'] = 'S\'ha actualitzat el capítol.';
 $string['eventchapterviewed'] = 'S\'ha visualitzat el capítol.';
 $string['hidechapter'] = 'Amaga el capítol «{$a}»';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Llibre en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = 'Llibre';
 $string['modulename_help'] = 'El mòdul de llibre permet al professor crear un recurs de diverses pàgines en un format de llibre, amb capítols i subcapítols. Els llibres poden contenir fitxers multimèdia, així com text, i són útils per a mostrar llargs passatges d\'informació que es poden dividir en seccions.
 
@@ -57,6 +59,7 @@ Un llibre pot utilitzar-se
 * Per mostrar material de lectura per a cada mòdul d\'estudi
 * Com a manual departamental del personal
 * Com a portafolis de presentació del treball de l\'estudiant';
+$string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Llibres';
 $string['movechapterdown'] = 'Mou avall el capítol «{$a}»';
 $string['movechapterup'] = 'Mou amunt el capítol «{$a}»';

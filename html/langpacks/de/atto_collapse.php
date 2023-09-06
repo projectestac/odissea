@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'de', version '3.11'.
+ * Strings for component 'atto_collapse', language 'de', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'Weniger Symbole anzeigen';
 $string['showgroups'] = 'Symbolgruppen in der ersten Menüzeile';
 $string['showgroups_desc'] = 'Diese Option legt fest, wie viele Symbolgruppen in der ersten Menuzeile angezeigt werden.';
 $string['showmore'] = 'Mehr Symbole anzeigen';
+$string['youareonsecondrow'] = 'Sie befinden sich jetzt in einer anderen Zeile der Werkzeugleiste, wo sich weitere Schaltflächen befinden.';

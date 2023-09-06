@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'nl', version '3.11'.
+ * Strings for component 'tool_usertours', language 'nl', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -43,21 +43,34 @@ $string['confirmtourremovalquestion'] = 'Weet je zeker dat je deze rondleiding w
 $string['confirmtourremovaltitle'] = 'Bevestig verwijderen van rondleiding';
 $string['content'] = 'Inhoud';
 $string['content_heading'] = 'Inhoud';
-$string['content_help'] = 'Inhoud die de stap beschrijft kan als tekst toegevoegd worden, ingebed in multilang tags (om te gebruiken met de multilang filter) indien vereist.
-
-Als alternatief kan een taal ID-string ingegeven worden in de opmaak identificatie,component (zonder haakjes of spatie na de komma).';
+$string['content_help'] = 'Inhoud die de stap beschrijft kan als tekst toegevoegd worden, ingebed in multilang tags (om te gebruiken met de multilang filter) indien vereist.';
+$string['content_type'] = 'Inhoudstype';
+$string['content_type_help'] = '* Handmatig - inhoud wordt ingevoerd met een teksteditor
+* Taalstring ID - in het format string identifier,component (zonder spatie na de komma)';
+$string['content_type_langstring'] = 'Taalstring ID';
+$string['content_type_manual'] = 'Handmatig';
 $string['cssselector'] = 'CSS selector';
 $string['defaultvalue'] = 'Standaard ({$a})';
 $string['delay'] = 'Wachttijd voor het tonen van de stap';
 $string['delay_help'] = 'Je kunt optioneel een wachttijd toevoegen voor de stap getoond wordt.
 Deze wachttijd is in milliseconden.';
 $string['description'] = 'Beschrijving';
+$string['description_help'] = 'De beschrijving van een rondleiding kan worden toegevoegd als platte tekst, ingesloten in multilang tags (voor gebruik met het filter voor meertalige inhoud) indien nodig.
+
+Daarnaast kan een taalstring ID worden ingevoerd in het format identifier,component (zonder haken of spatie na de komma).';
+$string['displaystepnumbers'] = 'Toon stap-aantallen';
+$string['displaystepnumbers_help'] = 'Of het aantal overblijvende stappen , bijvoorbeeld 1/4, 2/4, ... wordt getoond in de rondleiding-navigatie.';
 $string['done'] = 'Klaar';
 $string['duplicatetour'] = 'Dubbele rondleiding';
 $string['duplicatetour_name'] = '{$a} (kopie)';
 $string['editstep'] = '"{$a}" bewerken';
 $string['enabled'] = 'Ingeschakeld';
+$string['endonesteptour'] = 'Begrepen';
 $string['endtour'] = 'Einde rondleiding';
+$string['endtourlabel'] = 'Label op de einde rondleiding-knop';
+$string['endtourlabel_help'] = 'Je kunt een aangepast label op de einde rondleidng-knop zetten. Het standaard label is "Begrepen" voor een enkele stap rondleiding en "Einde rondleiding" voor een meerdere stappen rondleiding.
+
+Als alternatief kun je ook een taalstring-ID ingeven in de opmaak identifier,component (zonder haakjes of spatie achter de komma).';
 $string['event_step_shown'] = 'Getoonde stap';
 $string['event_tour_ended'] = 'Rondleiding beëindigd';
 $string['event_tour_reset'] = 'Rondleiding terug instellen';
@@ -84,17 +97,23 @@ $string['filter_role_help'] = 'Een rondleiding kan beperkt worden tot gebruikers
 $string['filter_theme'] = 'Thema';
 $string['filter_theme_help'] = 'Toon de rondleiding wanneer de gebruiker één van volgende thema\'s gebruikt.';
 $string['importtour'] = 'Importeer rondleiding';
+$string['invalid_lang_id'] = 'Ingeldige taalstring-ID';
 $string['left'] = 'Links';
 $string['modifyshippedtourwarning'] = 'Dit is een rondleiding voor gebruikers die meegeleverd wordt met Moodle. Alle wijzigingen die je maakt kunnen overschreven worden tijdens de volgende upgrade van je site.';
+$string['moodle_language_identifier'] = 'Taalstring-ID';
 $string['movestepdown'] = 'Stap naar beneden';
 $string['movestepup'] = 'Stap omhoog';
 $string['movetourdown'] = 'Rondleiding naar beneden';
 $string['movetourup'] = 'Rondleiding omhoog';
 $string['name'] = 'Naam';
+$string['name_help'] = 'De naam van een rondleiding kan toegevoegd worden als platte tekst of  ingesloten in multilang-tags (voor gebruik met de multi-language inhoudsfilter) indien nodig.
+
+Als alternatief mag er ook een taalstring-ID ingegeven worden in het formaat identifier,component (zonder haakjes of spatie na de komma).';
 $string['newstep'] = 'Nieuwe stap';
 $string['newtour'] = 'Maak een nieuwe rondleiding';
 $string['next'] = 'Volgende';
 $string['nextstep'] = 'Volgende';
+$string['nextstep_sequence'] = 'Volgende ({$a->position}/{$a->total})';
 $string['options_heading'] = 'Opties';
 $string['orphan'] = 'Toon als het doel niet gevonden wordt';
 $string['orphan_help'] = 'Toon deze stap als het doel niet gevonden wordt op de pagina.';
@@ -131,6 +150,7 @@ $string['selectordisplayname'] = 'Een CSS-selector die overeenkomt met \'{$a}\''
 $string['selecttype'] = 'Selecteer een stap-type';
 $string['sharedtourslink'] = 'Rondleidingsopslagruimte';
 $string['skip'] = 'Sla over';
+$string['skip_tour'] = 'Rondleiding overslaan';
 $string['target'] = 'Doel';
 $string['target_block'] = 'Blok';
 $string['target_heading'] = 'Stap doel';
@@ -150,7 +170,7 @@ $string['title_help'] = 'De titel van een stap kan toegevoegd worden als tekst, 
 Er mag ook een taalstringID ingegeven worden in het formaat identificatie,component (zonder haakjes of spaties na de komma).';
 $string['tour1_content_addingblocks'] = 'Denk goed na over het plaatsen van blokken op je pagina\'s. Blokken worden niet getoond op de Mobiele app, dus als algemene regel is het beter om er voor te zorgen dat je site goed werkt zonder blokken.';
 $string['tour1_content_blockregion'] = 'Er is hier nog een blok-zone. We raden aan om het navigatie- en instellingenblok volledig te verwijderen omdat alle functionaliteit op andere plaatsen zit in het Boost thema.';
-$string['tour1_content_customisation'] = 'Om het uiterlijk van je site en je startpagina aan te passen kun je het instellingenmenu gebruiken in de hoek van deze kopregel. Probeer nu bewerken in te schakelen.';
+$string['tour1_content_customisation'] = 'Om het uiterlijk van je site en je site startpagina aan te passen kun je het instellingenmenu gebruiken in de hoek van deze kopregel. Probeer nu bewerken in te schakelen.';
 $string['tour1_content_end'] = 'Dit is het einde van jouw rondleiding. Dit zal niet meer getoond worden, tenzij je deze opnieuw instelt door de link te gebruiken onderaan de pagina. Als beheerder kun je ook rondleidingen zoals deze maken!';
 $string['tour1_content_navigation'] = 'De belangrijkste navigatie gebeurt nu door dit navigatiepaneel. De inhoud past zich aan afhankelijk van jouw positie op de site. Gebruik de knoppen bovenaan om te verbergen of te tonen.';
 $string['tour1_content_welcome'] = 'Welkom in het Boost thema. Als je Moodle vroeger al gebruikt hebt, dan zul je opmerken dat sommige zaken er nu wat anders uitzien.';
@@ -228,6 +248,27 @@ $string['tour_activityinfo_course_teacher_content'] = 'De nieuwe cursusinstellin
 $string['tour_activityinfo_course_teacher_title'] = 'Nieuw: activiteitsinformatie';
 $string['tour_final_step_content'] = 'Dit is het einde van je rondleiding. Je zult dit niet meer zien, tenzij je opnieuw start via de link onderaan de pagina.';
 $string['tour_final_step_title'] = 'Einde van de rondleiding';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Plaats hier belangrijk nieuws.';
+$string['tour_navigation_course_announcements_teacher_title'] = 'Iets te melden voor iedereen?';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Voeg hier nieuwe inhoud toe of bewerk bestaande inhoud.';
+$string['tour_navigation_course_edit_teacher_title'] = 'Bewerkmodus activeren';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Blader door activiteiten en houd je voortgang bij.';
+$string['tour_navigation_course_index_student_title'] = 'Vind je weg';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Sleep activiteiten om de cursusinhoud te herschikken.';
+$string['tour_navigation_course_index_teacher_title'] = 'Inhoudsopgave cursus';
+$string['tour_navigation_course_student_tour_des'] = 'Waar je door activiteiten in een cursus kunt bladeren';
+$string['tour_navigation_course_student_tour_name'] = 'Inhoudsopgave cursus';
+$string['tour_navigation_course_teacher_tour_des'] = 'Bewerkmodus, activiteiten slepen en mededelingen plaatsen in een cursus';
+$string['tour_navigation_course_teacher_tour_name'] = 'Cursus bewerken';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Dit blokkenpaneel kan meerdere functies bevatten.';
+$string['tour_navigation_dashboard_title'] = 'Uitvouwen om te verkennen';
+$string['tour_navigation_dashboard_tour_des'] = 'Waar je blokken vindt';
+$string['tour_navigation_dashboard_tour_name'] = 'Blokkenpaneel';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>Via dit menu kun je cursussen toevoegen, kopiëren en verbergen.';
+$string['tour_navigation_mycourses_endtourlabel'] = 'Ik begrijp het';
+$string['tour_navigation_mycourses_title'] = 'Cursussen en categorieën';
+$string['tour_navigation_mycourses_tour_des'] = 'Opties voor cursusbeheer op de pagina Mijn cursussen';
+$string['tour_navigation_mycourses_tour_name'] = 'Cursusbeheer';
 $string['tour_resetforall'] = 'De status van de rondleiding is teruggezet. Ze zal opnieuw getoond worden aan alle gebruikers.';
 $string['tourconfig'] = 'Te importeren configuratiebestand voor een rondleiding';
 $string['tourisenabled'] = 'Rondleiding is ingeschakeld';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ko', version '3.11'.
+ * Strings for component 'survey', language 'ko', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -207,12 +207,15 @@ $string['guestsnotallowed'] = '등록된 사용자들만 조사 응답을 제출
 $string['howlong'] = '이 조사를 마치는데 시간이 얼마나 걸렸습니까?';
 $string['howlongoptions'] = '1분 미만, 1-2분, 2-3분, 3-4분, 4-5분, 5-10분, 10분 초과';
 $string['ifoundthat'] = '을 발견하다.';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = '소개글';
 $string['invalidsurveyid'] = '설문 ID가 바르지 않음';
 $string['invalidtmptid'] = '잘못된 설문지 ID';
 $string['ipreferthat'] = '을 더 좋아하다.';
 $string['modulename'] = '조사';
 $string['modulename_help'] = '설문조사 모듈은 온라인 환경에서 학습을 자극하고 평가하기 위한 세 가지 유형의 조사를 제공하고 있습니다. 선생님은 자신이 가르치는 학급의 상황을 파악하고 도움을 얻기 위해 이들을 이용할 수 있습니다.';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = '설문조사';
 $string['name'] = '이름';
 $string['newsurveyresponses'] = '새 조사 응답';
@@ -256,6 +259,7 @@ $string['surveytype_help'] = '3가지 조사 유형이 있습니다.
 * 사고 학습 태도 조사(Attitudes to Thinking and Learning Survey, ATTLS) - 어느 정도 연결된 학습자(학습을 즐길만한 것으로 생각하고, 협동적이고, 친화력이 있으며 다른 사람의 생각을 구축하고자 하는 사람들)인지, 분리된 학습자(비판적이고 학습에 대해 논쟁적인 입장을 가진 사람들)를 측정하기 위함
 * 중요 사례 조사
 * 구성주의자 온라인 학습환경 조사 (Constructivist On-line Learning Environment Survey, COLLES) -   웹의 상호작용적인 능력이 학습자들을 역동적인 학습활동으로 참여시키는데 이용되는 정도를 모니터링 하기 위함.';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = '{$a} 님, 조사에 응답해 주셔서 감사합니다.';
 $string['time'] = '시간';
 $string['viewsurveyresponses'] = '{$a} 조사 응답 열람';

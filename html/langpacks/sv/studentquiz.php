@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'sv', version '3.11'.
+ * Strings for component 'studentquiz', language 'sv', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -190,6 +190,7 @@ $string['mine_column_name'] = 'Mina';
 $string['missingparam'] = 'En parameter fattas eller är felaktig.';
 $string['modulename'] = 'StudentQuiz';
 $string['modulename_help'] = 'StudentQuiz gör det möjligt för studenter att skapa egna frågor för gemensamma övningsquizzar/tester. I översikten kan studenterna filtrera fram frågor beroende på exempelvis svårighetsgrad och göra individuella quizzar. <br> <br> Aktiviteten ger studenterna poäng inom aktiviteten, men inte i betygsboken. Poängen listas i en rankingtabell. <BR><BR>För att betygssätta aktiviteten kan en Uppgift utan inlämning sättas upp.<BR><BR>Lärare kan välja att importera bra frågor till kursens frågebank, för användning i andra tester.';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = 'StudentQuizar';
 $string['more'] = 'Mer';
 $string['myattempts_column_name'] = 'Mina försök';

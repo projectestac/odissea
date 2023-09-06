@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'de', version '3.11'.
+ * Strings for component 'editor_tinymce', language 'de', version '4.1'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -289,7 +289,7 @@ $string['colors:00CCFF'] = 'Himmelblau';
 $string['colors:00FF00'] = 'Limone';
 $string['colors:00FFFF'] = 'Wasserblau';
 $string['colors:333300'] = 'Oliv (dunkel)';
-$string['colors:333333'] = 'Grau (sehr dunkel)';
+$string['colors:333333'] = 'Sehr dunkles Grau';
 $string['colors:333399'] = 'Indigo';
 $string['colors:3366FF'] = 'Königsblau';
 $string['colors:339966'] = 'Seegrün';
@@ -301,7 +301,7 @@ $string['colors:808000'] = 'Oliv';
 $string['colors:808080'] = 'Grau';
 $string['colors:993300'] = 'Braunorange';
 $string['colors:993366'] = 'Braun';
-$string['colors:999999'] = 'Grau (mittel)';
+$string['colors:999999'] = 'Mittleres Grau';
 $string['colors:99CC00'] = 'Gelbgrün';
 $string['colors:99CCFF'] = 'Himmelblau';
 $string['colors:C0C0C0'] = 'Silber';
@@ -595,7 +595,7 @@ $string['paste:selectall_desc'] = 'Alles auswählen';
 $string['paste_dlg:text_linebreaks'] = 'Zeilenumbrüche beibehalten';
 $string['paste_dlg:text_title'] = 'Drücken Sie Strg+V bzw. Cmd+V, um den Text einzufügen.';
 $string['paste_dlg:word_title'] = 'Drücken Sie Strg+V bzw. Cmd+V, um den Text einzufügen.';
-$string['pluginname'] = 'HTML-Editor TinyMCE';
+$string['pluginname'] = 'Editor TinyMCE (veraltet)';
 $string['preview:preview_desc'] = 'Vorschau';
 $string['print:print_desc'] = 'Drucken';
 $string['privacy:metadata'] = 'Das Plugin "Editor TinyMCE" speichert keine personenbezogenen Daten';

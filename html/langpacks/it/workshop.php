@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'it', version '3.11'.
+ * Strings for component 'workshop', language 'it', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -43,8 +43,10 @@ $string['allocationdone'] = 'Distribuzione effettuata';
 $string['allocationerror'] = 'Errore durante la distribuzione';
 $string['allowedfiletypesforoverallfeedback'] = 'Tipi di file consentiti da allegare al feedback';
 $string['allowedfiletypesforoverallfeedback_help'] = 'I tipi di file che è consentito allegare ai feedback possono essere specificati inserendo un elenco separato da virgole con le estensioni desiderate. Lasciando il campo vuoto, sarà possibile allegare un file di qualsiasi tipo.';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
 $string['allowedfiletypesforsubmission'] = 'Tipi di file consentiti da allegare alla consegna';
 $string['allowedfiletypesforsubmission_help'] = 'I tipi di file che è consentito allegare alle consegne possono essere specificati inserendo un elenco separato da virgole con le estensioni desiderate. Lasciando il campo vuoto, sarà possibile allegare un file di qualsiasi tipo.';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = 'Tutte le consegne ({$a})';
 $string['alreadygraded'] = 'Ha già un voto';
 $string['areaconclusion'] = 'Contenuto della conclusione';
@@ -195,10 +197,12 @@ $string['indicator:cognitivedepth'] = 'Workshop cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Workshop.';
 $string['indicator:cognitivedepthdef'] = 'Workshop cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Workshop (Livelli: Nessuna visualizzazione, Visualizzazione, Invio, Visualizzazione feedback, Commento al feedback, Nuovo invio dopo il feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Workshop sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Workshop.';
 $string['indicator:socialbreadthdef'] = 'Workshop sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Workshop (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Informazioni';
 $string['instructauthors'] = 'Istruzioni di consegna';
 $string['instructreviewers'] = 'Istruzioni per la valutazione';
@@ -218,6 +222,7 @@ Le consegne vengono valutate in accordo ai diversi criteri definiti dal docente.
 Gli studenti possono valutare una o più consegne di altri studenti, volendo anche in forma anonima.
 
 La valutazione ricevuta degli studenti si compone di due parti, una valutazione per la propria consegna e una valutazione per aver valutato le consegne  degli altri studenti. Entrambe le valutazioni vengono memorizzate nel registro valutatore.';
+$string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = 'Workshop';
 $string['myassessments'] = 'Le mie valutazioni';
 $string['mysubmission'] = 'le mie consegne';
@@ -365,6 +370,7 @@ $string['submissiongradeof'] = 'Voto per la consegna (su {$a})';
 $string['submissionlastmodified'] = 'Ultima modifica';
 $string['submissionrequiredcontent'] = 'Devi inserire del testo o aggiungere un file.';
 $string['submissionrequiredfile'] = 'Devi aggiungere un file o inserire del testo.';
+$string['submissionsallocation'] = 'Distribuzione consegne';
 $string['submissionsettings'] = 'Impostazioni consegna';
 $string['submissionsreport'] = 'Report delle consegne';
 $string['submissionstart'] = 'Inizio consegne da';

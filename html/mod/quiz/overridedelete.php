@@ -32,13 +32,13 @@ $overrideid = required_param('id', PARAM_INT);
 $confirm = optional_param('confirm', false, PARAM_BOOL);
 
 if (! $override = $DB->get_record('quiz_overrides', array('id' => $overrideid))) {
-    print_error('invalidoverrideid', 'quiz');
+    throw new \moodle_exception('invalidoverrideid', 'quiz');
 }
 if (! $quiz = $DB->get_record('quiz', array('id' => $override->quiz))) {
-    print_error('invalidcoursemodule');
+    throw new \moodle_exception('invalidcoursemodule');
 }
 if (! $cm = get_coursemodule_from_instance("quiz", $quiz->id, $quiz->course)) {
-    print_error('invalidcoursemodule');
+    throw new \moodle_exception('invalidcoursemodule');
 }
 $course = $DB->get_record('course', array('id'=>$cm->course), '*', MUST_EXIST);
 
@@ -51,11 +51,11 @@ require_capability('mod/quiz:manageoverrides', $context);
 
 if ($override->groupid) {
     if (!groups_group_visible($override->groupid, $course, $cm)) {
-        print_error('invalidoverrideid', 'quiz');
+        throw new \moodle_exception('invalidoverrideid', 'quiz');
     }
 } else {
     if (!groups_user_groups_visible($course, $override->userid, $cm)) {
-        print_error('invalidoverrideid', 'quiz');
+        throw new \moodle_exception('invalidoverrideid', 'quiz');
     }
 }
 
@@ -84,33 +84,27 @@ $title = get_string('deletecheck', null, $stroverride);
 
 $PAGE->set_url($url);
 $PAGE->set_pagelayout('admin');
+$PAGE->add_body_class('limitedwidth');
 $PAGE->navbar->add($title);
 $PAGE->set_title($title);
 $PAGE->set_heading($course->fullname);
-
+$PAGE->activityheader->set_attrs([
+    "title" => format_string($quiz->name, true, ['context' => $context]),
+    "description" => "",
+    "hidecompletion" => true
+]);
 echo $OUTPUT->header();
-echo $OUTPUT->heading(format_string($quiz->name, true, array('context' => $context)));
 
 if ($override->groupid) {
     $group = $DB->get_record('groups', ['id' => $override->groupid], 'id, name');
-    $confirmstr = get_string("overridedeletegroupsure", "quiz", $group->name);
+    $confirmstr = get_string("overridedeletegroupsure", "quiz", format_string($group->name, true, ['context' => $context]));
 } else {
     $user = $DB->get_record('user', ['id' => $override->userid]);
+    profile_load_custom_fields($user);
 
-    $username = fullname($user);
-    $namefields = [];
-
-    // TODO Does not support custom user profile fields (MDL-70456).
-    foreach (\core_user\fields::for_identity($context, false)->get_required_fields() as $field) {
-        if (isset($user->$field) && $user->$field !== '') {
-            $namefields[] = s($user->$field);
-        }
-    }
-    if ($namefields) {
-        $username .= ' (' . implode(', ', $namefields) . ')';
-    }
-
-    $confirmstr = get_string('overridedeleteusersure', 'quiz', $username);
+    $confirmstr = get_string('overridedeleteusersure', 'quiz',
+            quiz_override_form::display_user_name($user,
+                    \core_user\fields::get_identity_fields($context)));
 }
 
 echo $OUTPUT->confirm($confirmstr, $confirmurl, $cancelurl);

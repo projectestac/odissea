@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ja', version '3.11'.
+ * Strings for component 'backup', language 'ja', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -73,6 +73,7 @@ $string['automatedsetup'] = '自動バックアップ設定';
 $string['automatedstorage'] = '自動バックアップストレージ';
 $string['automatedstoragehelp'] = '自動バックアップ作成時にあなたがバックアップを保存したい場所を選択してください。';
 $string['backupactivity'] = '活動をバックアップする: {$a}';
+$string['backupautoactivitiesdescription'] = 'バックアップに活動を含めるためのデフォルトを設定します。ごみ箱を機能させるためにはこの設定を有効にする必要があります。';
 $string['backupcourse'] = 'コースをバックアップする: {$a}';
 $string['backupcoursedetails'] = 'コース詳細';
 $string['backupcoursesection'] = 'セクション: {$a}';
@@ -204,7 +205,7 @@ $string['errorfilenametoolong'] = 'ファイル名は半角255文字以下の長
 $string['errorinvalidformat'] = '不明なバックアップフォーマットです。';
 $string['errorinvalidformatinfo'] = '選択されたファイルは有効なMoodleバックアップファイルではないため、リストアすることはできません。';
 $string['errorminbackup20version'] = 'このバックアップファイルは開発バージョンのMoodleバックアップ ({$a->backup}) により作成されました。最小必要条件は {$a->min} です。リストアすることはできません。';
-$string['errorrestorefrontpagebackup'] = 'フロントページにおいて、あなたはフロントページバックアップのみリストアすることができます。';
+$string['errorrestorefrontpagebackup'] = 'あなたはサイトホームでサイトホームバックアップのみリストアできます。';
 $string['executionsuccess'] = 'バックアップファイルが正常に作成されました。';
 $string['extractingbackupfileto'] = 'バックアップファイル展開先: {$a}';
 $string['failed'] = 'バックアップ失敗';
@@ -212,6 +213,7 @@ $string['filealiasesrestorefailures'] = 'エイリアスリストア失敗';
 $string['filealiasesrestorefailures_help'] = 'エイリアスは外部リポジトリに保存されたファイルを含む他のファイルへのシンボリックリンクです。一部の例ではMoodeがシンボリックリンクをリストアできない場合があります - 例えば別のサイトでのバックアップをリストアする場合、または参照ファイルが存在しくなった場合です。
 
 詳細情報および実際のリストア失敗理由に関して、リストアログファイルをご覧ください。';
+$string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = 'バックアップファイルに含まれるいくつかのエイリアスをリストアすることができませんでした。以下のリストではオリジナルサイトで参照されていた予測されるロケーションおよびソースファイルを含みます。';
 $string['filename'] = 'ファイル名';
 $string['filereferencesincluded'] = '外部コンテンツのファイル参照がバックアップファイルに含まれます。バックアップが異なるサイトでリストアされる場合、これらは動作しません。';
@@ -314,7 +316,7 @@ $string['restoreactivity'] = '活動をリストアする';
 $string['restorecourse'] = 'コースをリストアする';
 $string['restorecoursesettings'] = 'コース設定';
 $string['restoredcourseid'] = 'リストア済みコースID: {$a}';
-$string['restoreexecutionsuccess'] = 'コースが正常にリストアされました。「続ける」ボタンをクリックすることにより、あなたがリストアしたコースを閲覧することができます。';
+$string['restoreexecutionsuccess'] = 'コースが正常にリストアされました。';
 $string['restorefileweremissing'] = 'バックアップの中に存在しないため、いくつかのファイルをリストアすることができませんでした。';
 $string['restorenewcoursefullname'] = '新しいコース名';
 $string['restorenewcourseshortname'] = '新しいコース省略名';

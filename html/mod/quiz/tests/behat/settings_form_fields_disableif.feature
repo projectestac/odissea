@@ -51,14 +51,13 @@ Feature: Settings form fields disabled if not required
     # And the "id_delay2_enabled" "field" should be enabled
 
     And I press "Save and display"
-    And I navigate to "User overrides" in current page administration
+    And I navigate to "Overrides" in current page administration
     And I press "Add user override"
     And I set the following fields to these values:
         | Override user    | Student1 |
         | Attempts allowed | 3        |
     And I press "Save"
-    And I follow "Test quiz"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     And I set the field "Attempts allowed" to "1"
     And the "Grading method" "field" should be enabled
@@ -67,12 +66,11 @@ Feature: Settings form fields disabled if not required
     And the "id_delay2_enabled" "field" should be enabled
 
     And I press "Save and display"
-    And I navigate to "User overrides" in current page administration
+    And I navigate to "Overrides" in current page administration
     And I click on "Edit" "link" in the "region-main" "region"
     And I set the field "Attempts allowed" to "2"
     And I press "Save"
-    And I follow "Test quiz"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     And I set the field "Attempts allowed" to "1"
     And the "Grading method" "field" should be enabled
@@ -81,14 +79,13 @@ Feature: Settings form fields disabled if not required
     And the "id_delay2_enabled" "field" should be disabled
 
     And I press "Save and display"
-    And I navigate to "User overrides" in current page administration
+    And I navigate to "Overrides" in current page administration
     And I press "Add user override"
     And I set the following fields to these values:
         | Override user    | Student2  |
         | Attempts allowed | Unlimited |
     And I press "Save"
-    And I follow "Test quiz"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     And I set the field "Attempts allowed" to "1"
     And the "Grading method" "field" should be enabled

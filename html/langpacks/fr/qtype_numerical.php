@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'fr', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'fr', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -67,6 +67,7 @@ $string['pleaseenterananswer'] = 'Merci de saisir votre réponse.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Veuillez saisir votre réponse sans utiliser de séparateur de milliers ({$a})';
 $string['pluginname'] = 'Numérique';
 $string['pluginname_help'] = 'Du point de vue du participant, une question numérique est comme une question à réponse courte. La différence est que la réponse numérique accepte une marge d\'erreur dans la réponse. Cela permet d\'utiliser une fourchette de valeurs comme réponse attendue. Par exemple, si la réponse est 10 avec une marge d\'erreur de 2, Alors, n\'importe quel nombre entre 8 et 12 sera considéré comme correct.';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = 'Ajout d\'une question numérique';
 $string['pluginnameediting'] = 'Modification d\'une question numérique';
 $string['pluginnamesummary'] = 'Permet une réponse numérique, le cas échéant avec des unités, qui est évaluée en comparant divers modèles de réponses, comprenant une tolérance.';
@@ -110,13 +111,6 @@ $string['unitposition'] = 'Position de l\'unité';
 $string['units'] = 'Unités';
 $string['unitselect'] = 'un menu déroulant';
 $string['unitx'] = 'Unité {no}';
-$string['validnumberformats'] = 'Formats de nombre valides';
-$string['validnumberformats_help'] = '* nombres réguliers 13500.67, 13 500.67, 13500,67 ou 13 500,67
-
-* si votre paquetage de langue utilise le caractère « , » en tant que séparateur de milliers, il faut *impérativement* utiliser le caractère « . » pour indiquer la décimale comme dans 13,500.67 ou 13,500
-
-* pour l\'exposant, par exemple pour écrire 1.350067 * 10<sup>4</sup>, il faut utiliser 1.350067 E4 ou 1.350067 E04';
-$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 ou 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} doit être un nombre.';
 $string['xmustnotbenumeric'] = '{$a} ne peut pas être un nombre.';
 $string['youmustenteramultiplierhere'] = 'Vous devez saisir un coefficient dans ce champ.';

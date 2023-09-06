@@ -60,6 +60,7 @@ class com_wiris_quizzes_impl_LocalData extends com_wiris_util_xml_SerializableIm
 	static $VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTE;
 	static $VALUE_AUXILIARY_CAS_HIDE_FILE_MENU_TRUE = "true";
 	static $VALUE_AUXILIARY_CAS_HIDE_FILE_MENU_FALSE = "false";
+	static $KEY_ELEMENTS_TO_HANDWRITE = "elementsToHandwrite";
 	static $keys;
 	function __toString() { return 'com.wiris.quizzes.impl.LocalData'; }
 }
@@ -83,4 +84,4 @@ com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_ADD = com_wiris_quizzes_api_Qu
 com_wiris_quizzes_impl_LocalData::$VALUE_SHOW_CAS_REPLACE_INPUT = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_SHOW_CAS_REPLACE;
 com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_AND = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_COMPOUND_ANSWER_GRADE_AND;
 com_wiris_quizzes_impl_LocalData::$VALUE_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTE = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_COMPOUND_ANSWER_GRADE_DISTRIBUTE;
-com_wiris_quizzes_impl_LocalData::$keys = new _hx_array(array(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD, com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS, com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION, com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION, com_wiris_quizzes_impl_LocalData::$KEY_SHOW_AUXILIARY_TEXT_INPUT, com_wiris_quizzes_impl_LocalData::$KEY_AUXILIARY_TEXT, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_GRAPH_TOOLBAR, com_wiris_quizzes_impl_LocalData::$KEY_AUXILIARY_CAS_HIDE_FILE_MENU));
+com_wiris_quizzes_impl_LocalData::$keys = new _hx_array(array(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_INPUT_FIELD, com_wiris_quizzes_impl_LocalData::$KEY_SHOW_CAS, com_wiris_quizzes_impl_LocalData::$KEY_CAS_INITIAL_SESSION, com_wiris_quizzes_impl_LocalData::$KEY_CAS_SESSION, com_wiris_quizzes_impl_LocalData::$KEY_SHOW_AUXILIARY_TEXT_INPUT, com_wiris_quizzes_impl_LocalData::$KEY_AUXILIARY_TEXT, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_COMPOUND_ANSWER_GRADE_DISTRIBUTION, com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_GRAPH_TOOLBAR, com_wiris_quizzes_impl_LocalData::$KEY_AUXILIARY_CAS_HIDE_FILE_MENU, com_wiris_quizzes_impl_LocalData::$KEY_ELEMENTS_TO_HANDWRITE));

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'eu', version '3.11'.
+ * Strings for component 'enrol', language 'eu', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -57,8 +57,9 @@ $string['enrollednewusers'] = 'Egoki matrikulatu dira {$a} erabiltzaile berri';
 $string['enrolledusers'] = 'Matrikulatutako erabiltzaileak';
 $string['enrolledusersmatching'] = 'Bat datoz matrikulatutako erabiltzaileak';
 $string['enrolme'] = 'Ikastaro honetan matrikulatu nahi dut';
+$string['enrolment'] = 'Matrikulazioa';
 $string['enrolmentinstances'] = 'Matrikulazio-metodoak';
-$string['enrolmentmethod'] = 'Matrikulazio-metodoa';
+$string['enrolmentmethod'] = 'Matrikulazio-metodoak';
 $string['enrolmentnew'] = '{$a} ikastaroan matrikula berria';
 $string['enrolmentnewuser'] = '{$a->user} (e)k "{$a->course}" ikastaroan matrikulatu da';
 $string['enrolmentoptions'] = 'Matrikulazio-aukerak';
@@ -85,7 +86,7 @@ $string['eventenrolinstancedeleted'] = 'Matrikulazio-instantzia ezabatuta';
 $string['eventenrolinstanceupdated'] = 'Matrikulazio-instantzia eguneratuta';
 $string['eventuserenrolmentcreated'] = 'Erabiltzailea ikastaroan matrikulatu da';
 $string['eventuserenrolmentdeleted'] = 'Erabiltzailea ikastarotik  desmatrikulatu da';
-$string['eventuserenrolmentupdated'] = 'Erabiltzaile-desmatrikulazioa eguneratuta';
+$string['eventuserenrolmentupdated'] = 'Erabiltzaile-matrikulazioa eguneratuta';
 $string['expirynotify'] = 'Jakinarazi matrikula iraungi aurretik';
 $string['expirynotify_help'] = 'Ezarpen honek zehazten du noiz bidaltzen diren matrikula amaituko dela jakinarazteko abisuak.';
 $string['expirynotifyall'] = 'Matrikulatzailea eta matrikulatutako erabiltzailea';
@@ -110,6 +111,7 @@ $string['invalidrequest'] = 'Eskari baliogabea';
 $string['invalidrole'] = 'Rolak ez du balio';
 $string['manageenrols'] = 'Kudeatu matrikulazio-pluginak';
 $string['manageinstance'] = 'Kudeatu';
+$string['method'] = 'Metodoa';
 $string['migratetomanual'] = 'Migratu eskuzko matrikulaziora';
 $string['nochange'] = 'Aldaketarik ez';
 $string['noexistingparticipants'] = 'Ez dago partaiderik';
@@ -150,6 +152,10 @@ $string['startdatetoday'] = 'Gaur';
 $string['synced'] = 'Sinkronizatua';
 $string['testsettings'] = 'Probatu ezarpenak';
 $string['testsettingsheading'] = 'Matrikulazio-ezarpenen proba - {$a}';
+$string['timeended'] = 'Amaitze-unea';
+$string['timeenrolled'] = 'Matrikulatuta igarotako denbora';
+$string['timereaggregated'] = 'Berriz agregatzeko unea';
+$string['timestarted'] = 'Hasiera-unea';
 $string['totalenrolledusers'] = '{$a} erabiltzaile matrikulatuta';
 $string['totalotherusers'] = 'beste {$a} erabiltzaile';
 $string['totalunenrolledusers'] = '{$a} erabiltzaile desmatrikulatu dira';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'ar', version '3.11'.
+ * Strings for component 'repository_filesystem', language 'ar', version '4.1'.
  *
  * @package     repository_filesystem
  * @category    string
@@ -29,7 +29,7 @@ $string['blockedpath'] = 'مسار الجذر المحظور';
 $string['configplugin'] = 'تهيئة مستودع نظام الملفات';
 $string['crontask'] = 'المعالجة الخلفية لمستودع نظام الملفات';
 $string['donotusesysdir'] = 'لا تستعمل مجلد النظام بمثابة مستودع، بضمنه';
-$string['enablecourseinstances'] = 'إسمح للمشرفين بإضافة عينة مستودع نظام الملفات إلى المقرر الدراسي (قابل للتهيئة من قبل المشرفين حصراً)';
+$string['enablecourseinstances'] = 'إسمح للمشرفين بإضافة عينة مستودع نظام الملفات إلى المساق (قابل للتهيئة من قبل المشرفين حصراً)';
 $string['enableuserinstances'] = 'إسمح للمشرفين بإضافة عينة مستودع نظام الملفات للاستعمال الشخصي (قابل للتهيئة من قبل المشرفين حصراً)';
 $string['filesystem:view'] = 'معاينة مستودع نظام الملفات';
 $string['information'] = 'هذه المجلدات تقع ضمن المجلد <b>{$a}</b>.';

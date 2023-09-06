@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'sv', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'sv', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -37,6 +37,7 @@ $string['cbmgrades'] = 'CBM-betyg';
 $string['cbmgrades_help'] = 'Med visshetsbaserad betygsättning (eng. <em>Certainty Based Marking</em> - CBM) får varje fråga korrekt med C = 1 (låg visshet) ett betyg på 100%. Betygen kan vara så höga som 300% om varje fråga är korrekt med C=3 (hög visshet). Missuppfattningar (med säkerhet felaktiga svar) sänker betygen mycket mer än felaktiga svar som erkänns vara osäkra. Detta kan till och med leda till negativa övergripande betyg.
 
 **Noggrannhet** är den %-korrekta ignorerad med avseende på visshet men viktad för det maximala betyget för varje fråga. Att lyckas särskilja fler och mindre tillförlitliga svar ger ett bättre betyg än att välja samma visshet för varje fråga. Detta återspeglas i **CBM Bonus**. **Noggrannhet** + **CBM Bonus** är ett bättre mått på kunskap än **Noggrannhet**. Missuppfattningar kan leda till en negativ bonus, en varning om att titta noga på vad som är, och inte är, känt.';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'CBM-poäng {$a}';
 $string['certainty'] = 'Säkerhet';
 $string['certainty-1'] = 'Ingen aning';
@@ -52,6 +53,7 @@ Betyg om det är fel |   0 |   -2 |     -6
 Sannolikhet korrekt |  <67% | 67-80% | >80%
 
 Bästa betyg uppnås genom att erkänna osäkerhet. Om du till exempel tror att det finns risk som är högre än 1 av 3 att ha fel, bör du ange C = 1 för att undvika risken för ett negativt betyg.';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = 'Ingen aning';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';

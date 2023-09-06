@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'eu', version '3.11'.
+ * Strings for component 'imscp', language 'eu', version '4.1'.
  *
  * @package     imscp
  * @category    string
@@ -35,10 +35,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa IMS eduki-paketeetan'
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak IMS motako eduki-paketea baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa IMS eduki-paketeetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek IMS eduki-paketea jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala IMS eduki-paketeetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak IMS motako eduki-paketea baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala IMS eduki-paketeetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek IMS eduki-paketea jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = 'Artxiboko paketeak';
 $string['keepoldexplain'] = 'Zenbat pakete gorde  behar dira?';
 $string['modulename'] = 'IMS eduki-paketea';
@@ -47,6 +49,7 @@ $string['modulename_help'] = 'IMS eduki-paketeak sistema ezberdinetan erabiliak 
 Edukia hainbat orritan erakutsi ohi da, orrien arteko nabigazioarekin. Edukiak erakusteko modu ezberdinak daude: pop-up leiho batetan, nabigazio-menuarekin edo botoiekin,...
 
 IMS eduki-paketea eduki multimedia eta animazioak erakusteko erabil daiteke.';
+$string['modulename_link'] = 'mod/imscp/view';
 $string['modulenameplural'] = 'IMS eduki-paketeak';
 $string['navigation'] = 'Nabigazioa';
 $string['packagefile'] = 'Pakete-fitxategia';

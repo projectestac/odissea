@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'el', version '3.11'.
+ * Strings for component 'journal', language 'el', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -53,6 +53,7 @@ $string['journalquestion'] = 'Ερώτηση χρονικού';
 $string['mailsubject'] = 'Ανατροφοδότηση χρονικού';
 $string['modulename'] = 'Χρονικό';
 $string['modulename_help'] = 'Η δραστηριότητα χρονικού επιτρέπει στους διδάσκοντες να λαμβάνουν ανατροφοδότηση για ένα συγκεκριμένο θέμα συζήτησης';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = 'Χρονικά υποβολών';
 $string['needsregrade'] = 'Η καταχώρηση άλλαξε από την τελευταία αποθήκευση ανατροφοδότησης.';
 $string['newjournalentries'] = 'Νέες καταχωρήσεις χρονικών υποβολών';

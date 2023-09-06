@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ca', version '3.11'.
+ * Strings for component 'questionnaire', language 'ca', version '4.1'.
  *
  * @package     questionnaire
  * @category    string
@@ -34,6 +34,7 @@ $string['addquestions'] = 'Afegeix una pregunta';
 $string['addselqtype'] = 'Afegeix-hi una pregunta del tipus seleccionat';
 $string['alignment'] = 'Alineació dels botons d\'opció';
 $string['alignment_help'] = 'Alineació dels botons d\'opció: vertical (per defecte) o horitzontal.';
+$string['alignment_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['all'] = 'Tot';
 $string['alreadyfilled'] = 'Ja heu respost aquesta enquesta {$a}. Gràcies.';
 $string['andaveragevalues'] = 'i les mitjanes';
@@ -60,6 +61,7 @@ $string['boxesnbmin'] = 'un mínim de {$a} quadre(s).';
 $string['boxesnbreq'] = 'Per a aquesta pregunta heu de marcar';
 $string['by'] = 'per';
 $string['cannotviewpublicresponses'] = 'No podeu visualitzar les respostes d\'aquesta enquesta pública.';
+$string['centerlabel'] = 'Etiqueta central';
 $string['chart:bipolar'] = 'Barres bipolars';
 $string['chart:hbar'] = 'Barres horitzontals';
 $string['chart:radar'] = 'Radar';
@@ -70,6 +72,7 @@ $string['chart:vprogress'] = 'Barra de progrés vertical';
 $string['checkallradiobuttons'] = 'Marqueu <strong>{$a}</strong> botons d\'opció!';
 $string['checkboxes'] = 'Quadres de selecció';
 $string['checkboxes_help'] = 'Escriviu una opció de selecció per línia';
+$string['checkboxes_link'] = 'mod/questionnaire/questions#Check_Boxes';
 $string['checkbreaksadded'] = 'S\'ha inserit un o més salts de pàgina nous en les posicions:';
 $string['checkbreaksok'] = 'Conté tots els salts de pàgina requerits';
 $string['checkbreaksremoved'] = 'Nombre de salts de pàgina extra eliminats: {$a}';
@@ -98,10 +101,12 @@ $string['couldnotcreatenewsurvey'] = 'No es pot crear una altra enquesta';
 $string['couldnotdelresp'] = 'No es pot esborrar la resposta';
 $string['createcontent'] = 'Defineix el contingut nou';
 $string['createcontent_help'] = 'Trieu un botó d\'opció. «Crea» és el valor predefinit.';
+$string['createcontent_link'] = 'mod/questionnaire/mod#Content_Options';
 $string['createnew'] = 'Crea';
 $string['crontask'] = 'Tasques de neteja del qüestionari';
 $string['date'] = 'Data';
 $string['date_help'] = 'Utilitzeu aquest tipus de pregunta si espereu que la resposta sigui una data amb el format correcte.';
+$string['date_link'] = 'mod/questionnaire/questions#Date';
 $string['dateformatting'] = 'Utilitzeu el format dia/mes/any; per exemple, per a l\'11 de setembre de 1714, <strong>11/9/1714</strong>';
 $string['deleteallresponses'] = 'Esborra TOTES les respostes';
 $string['deletecurrentquestion'] = 'Esborra la pregunta {$a}';
@@ -114,13 +119,16 @@ $string['deletingresp'] = 'S\'està esborrant la resposta';
 $string['dependencies'] = 'Dependències';
 $string['dependquestion'] = 'Pregunta mare';
 $string['dependquestion_help'] = 'Podeu seleccionar una pregunta mare i una opció d\'elecció per a aquesta pregunta. Només es mostrarà a l\'estudiant una pregunta filla si la seva pregunta mare i la seva opció mare s\'han seleccionat prèviament.';
+$string['dependquestion_link'] = 'mod/questionnaire/questions#Parent_Question';
 $string['displaymethod'] = 'Forma de presentació de la pregunta sense definir.';
 $string['download'] = 'Descarrega';
 $string['downloadtextformat'] = 'Descarrega en format text';
 $string['downloadtextformat_help'] = 'Aquesta característica us permet desar totes les respostes d\'una enquesta en un fitxer de text (CSV).
 Podeu importar aquest fitxer en un full de càlcul (per exemple: Calc del LibreOffice, o un full de MS Excel), o amb un paquet d\'anàlisi estadística per processar les dades.';
+$string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
 $string['dropdown'] = 'Quadre de llista desplegable de selecció';
 $string['dropdown_help'] = 'No hi ha cap diferència entre usar el quadre de llista desplegable de selecció i els botons d\'opció, excepte, potser, per a llistes d\'opcions molt llargues, per estalviar espai a la pantalla.';
+$string['dropdown_link'] = 'mod/questionnaire/questions#Dropdown_Box';
 $string['edit'] = 'Edita';
 $string['editingquestionnaire'] = 'S\'estan editant els paràmetres de l\'enquesta';
 $string['editquestion'] = 'S\'està editant la pregunta {$a}';
@@ -146,6 +154,7 @@ $string['event_saved'] = 'S\'han desat les respostes';
 $string['event_submitted'] = 'S\'han tramès les respostes';
 $string['feedback'] = 'Retroacció';
 $string['feedback_help'] = 'Ajuda de la retroacció';
+$string['feedback_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Messages';
 $string['feedbackaddmorefeedbacks'] = '{No} afegeixis més camps de retroacció';
 $string['feedbackbysection'] = 'Retroacció per seccions';
 $string['feedbackeditingglobal'] = 'S\'està editant la retroacció global de l\'enquesta';
@@ -171,6 +180,7 @@ $string['feedbacknotes'] = 'Notes de retroacció';
 $string['feedbacknotes_help'] = 'El text introduït aquí es mostrarà als que han respost al final del seu Informe de retroacció';
 $string['feedbackoptions'] = 'Opcions de retroacció';
 $string['feedbackoptions_help'] = 'Les opcions de retroacció estan disponibles si el vostre qüestionari conté els tipus de preguntes i els paràmetres de pregunta següents: Botons d\'opció; Llista de selecció o Puntua. Aquestes preguntes s\'han d\'establir com a necessàries, el seu camp Nom de la pregunta no ha d\'estar buit i les opcions de Respostes possibles han de contenir un valor.';
+$string['feedbackoptions_link'] = 'mod/questionnaire/personality_test';
 $string['feedbackremovequestionfromsection'] = 'Aquesta pregunta forma part de la secció de retroacció [{$a}]';
 $string['feedbackremovesection'] = 'La supressió d\'aquesta pregunta eliminarà completament la retroacció de la secció [{$a}]';
 $string['feedbackreport'] = 'Informe de la retroacció';
@@ -187,6 +197,7 @@ $string['feedbacksectionlabel_help'] = 'Aquesta etiqueta s\'utilitzarà en els g
 $string['feedbacksections'] = '{$a} Seccions de retroacció';
 $string['feedbacksectionsselect'] = 'Seccions';
 $string['feedbacksectionsselect_help'] = 'Col·loqueu les vostres preguntes en aquestes seccions';
+$string['feedbacksectionsselect_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Sections_2';
 $string['feedbacksettingssaved'] = 'S\'han desat els paràmetres de la retroacció';
 $string['feedbacktype'] = 'Tipus de retroacció';
 $string['field'] = 'Pregunta {$a}';
@@ -214,15 +225,21 @@ $string['invalidresponserecord'] = 'El registre de la resposta indicat és incor
 $string['invalidsurveyid'] = 'L\'identificador de l\'enquesta és incorrecte.';
 $string['kindofratescale'] = 'Tipus d\'escala de valoració';
 $string['kindofratescale_help'] = 'Fes clic amb el botó dret del ratolí a l\'enllaç Més ajuda que apareix més avall.';
+$string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['lastrespondent'] = 'Darrer enquestat';
+$string['leftlabel'] = 'Etiqueta esquerra';
 $string['length'] = 'Longitud';
 $string['managequestions'] = 'Gestiona les preguntes';
 $string['managequestions_help'] = 'A la secció Gestiona les preguntes de la pàgina Edita les preguntes podeu dur a terme una sèrie d\'operacions en les preguntes de l\'enquesta.';
+$string['managequestions_link'] = 'mod/questionnaire/questions#Manage_questions';
 $string['mandatory'] = 'Obligatori: s\'han de completar totes aquestes dependències';
 $string['maxdigitsallowed'] = 'Màxim nombre de dígits permès';
 $string['maxdigitsallowed_help'] = 'Utilitzeu el **Màxim nombre de dígits permès** per establir un límit al nombre total de caràcters admesos en una pregunta numèrica. Pareu esment que el punt o la coma decimal també compta com a caràcter!';
+$string['maxdigitsallowed_link'] = 'mod/questionnaire/questions#Numeric';
 $string['maxforcedresponses'] = 'Nombre màxim obligatori de respostes';
 $string['maxforcedresponses_help'] = 'Utilitzeu aquests paràmetres per forçar l\'enquestat a marcar un mínim de **Min.** caselles i un màxim de **Max.** caselles de selecció. Per forçar que estigui marcat un nombre exacte de caselles de selecció, establiu **Min.** i **Max.** en el mateix valor. Si només voleu un valor mínim o màxim, deixeu l\'altre valor en el valor per defecte **0**. Si establiu **Min.** o **Max.** a valors diferents al valor per defecte **0**, es mostrarà un missatge d\'avís si l\'enquestat no compleix els vostres requisits. Òbviament, és recomanable que aclariu aquests requisits o a les instruccions generals de la vostra enquesta o al text de preguntes rellevants.';
+$string['maxrange'] = 'Interval màxim del control lliscant (dreta)';
+$string['maxrange_help'] = 'Estableix el valor màxim de l\'interval a la banda dreta. Aquest valor per defecte és 100, però podria ser qualsevol nombre entre 1 i 100. Si el valor mínim per a la banda esquerra és un nombre negatiu, l\'interval màxim s\'expressarà amb un signe positiu (+).';
 $string['maxtextlength'] = 'Longitud màxima del text';
 $string['maxtextlength_help'] = 'Per al tipus de pregunta Quadre d\'edició, introduïu la Longitud del quadre d\'edició i la Longitud màxima del text que hagi d\'introduir l\'enquestat.
 Els valors per defecte són 20 caràcters per a l\'amplària del quadre d\'edició i 25 caràcters per a la longitud màxima del text introduït.';
@@ -231,6 +248,8 @@ $string['messageprovider:notification'] = 'Tramesa de l\'enquesta';
 $string['minforcedresponses'] = 'Nombre mínim obligatori de respostes';
 $string['minforcedresponses_help'] = 'Utilitzeu aquests paràmetres per forçar els alumnes a marcar un mínim i un màxim de quadres de selecció. Per forçar un nombre exacte de seleccions, establiu el mínim i el màxim en el mateix valor. Si només voleu un mínim o un màxim, establiu-ne el valor i deixeu l\'altre a **0**.
 Si establiu el mínim i/o el màxim de quadres marcats i la resposta no s\'ajusta a aquests marges, s\'emet un missatge d\'avís. Òbviament, és millor que les persones que respondran l\'enquesta coneguin per endavant les condicions de resposta.';
+$string['minrange'] = 'Interval mínim del control lliscant (esquerra)';
+$string['minrange_help'] = 'Estableix el valor mínim de l\'interval a la banda esquerra. Aquest valor per defecte és 1, però es pot establir tan baix com -100. Si utilitzeu un nombre negatiu (de -100 a -1), el màxim de la banda dreta s\'expressarà amb un signe positiu (+).';
 $string['misconfigured'] = 'El curs no està ben configurat';
 $string['missingname'] = 'La pregunta {$a} no es pot utilitzar en aquesta secció de retroacció perquè no té un nom.';
 $string['missingnameandrequired'] = 'La pregunta {$a} no es pot utilitzar en aquesta secció de retroacció perquè no té un nom i no és necessària.';
@@ -239,6 +258,7 @@ $string['missingquestions'] = 'Responeu les preguntes necessàries:';
 $string['missingrequired'] = 'La pregunta {$a} no es pot utilitzar en aquesta secció de retroacció perquè no és necessària.';
 $string['modulename'] = 'Questionnaire';
 $string['modulename_help'] = 'El mòdul Questionnaire permet construir enquestes utilitzant diferents tipologies de preguntes, amb la finalitat de recopilar dades dels usuaris.';
+$string['modulename_link'] = 'mod/questionnaire/view';
 $string['modulenameplural'] = 'Qüestionaris';
 $string['movedisabled'] = 'Aquest element no es pot moure';
 $string['myresponses'] = 'Totes les vostres respostes';
@@ -247,6 +267,7 @@ $string['myresults'] = 'Els vostres resultats';
 $string['name'] = 'Nom';
 $string['navigate'] = 'Permet ramificar preguntes';
 $string['navigate_help'] = 'Habilita les preguntes de Sí o No i les de botons d\'opció perquè tinguin preguntes filles que depenguin de les respostes del vostre qüestionari.';
+$string['navigate_link'] = 'mod/questionnaire/conditional_branching';
 $string['next'] = 'Següent';
 $string['nextpage'] = 'Pàgina següent';
 $string['nlines'] = '{$a} línies';
@@ -272,6 +293,7 @@ $string['notenoughscaleitems'] = 'Heu d\'introduir un valor mínim de 2 elements
 $string['notificationfull'] = 'Tramesa completa';
 $string['notifications'] = 'Envia notificacions de la tramesa';
 $string['notifications_help'] = 'Envia una notificació als rols amb la capacitat «mod/questionnaire:submissionnotification» quan es fa una tramesa.';
+$string['notifications_link'] = 'mod/questionnaire/mod#Submission_Notifications';
 $string['notificationsimple'] = 'Només la notificació';
 $string['notopen'] = 'Aquesta enquesta s\'obrirà el dia {$a}.';
 $string['notrequired'] = 'Resposta no requerida';
@@ -281,6 +303,7 @@ $string['numattemptsmade'] = 'Nombre d\'intents que s\'han fet en aquesta enques
 $string['numberfloat'] = 'El número que heu escrit <strong>{$a->number}</strong> s\'ha arrodonit o se li ha canviat el format amb <strong>{$a->precision}</strong> xifres decimals.';
 $string['numberofdecimaldigits'] = 'Nombre de xifres decimals';
 $string['numberofdecimaldigits_help'] = 'Utilitzeu **Nombre de xifres decimals** per especificar el format del valor de mitjana que s\'ha comptat i s\'ha mostrat a la pàgina de l\'informe de l\'enquesta.';
+$string['numberofdecimaldigits_link'] = 'mod/questionnaire/questions#Numeric';
 $string['numberscaleitems'] = 'Nombre d\'elements de l\'escala';
 $string['numberscaleitems_help'] = 'El nombre d\'elements de l\'escala és la quantitat d\'elements que té l\'escala de valoració. Normalment s\'utilitzen de 3 a 5 elements. El valor predefinit és **5**.';
 $string['numeric'] = 'Numèric';
@@ -293,6 +316,7 @@ $string['optionalname'] = 'Nom de la pregunta';
 $string['optionalname_help'] = 'El nom de la pregunta només s\'utilitza en exportar els resultats a format CSV o full de càlcul. Si sabeu que no fareu mai aquesta exportació, no cal que l\'escriviu.
 
 Si heu d\'exportar habitualment dades de les enquestes a format CSV, podeu posar el nom de dues maneres diferents.';
+$string['optionalname_link'] = 'mod/questionnaire/questions#Question_Name';
 $string['or'] = '- O -';
 $string['order_ascending'] = 'Ordre ascendent';
 $string['order_default'] = 'Mostra l\'ordre predefinit';
@@ -306,6 +330,7 @@ $string['orderresponses_help'] = 'En mostrar totes les respostes, podeu ordenar-
 * preguntes de qualificació (incloses les escales Likert)
 
 Quan arribeu a la pàgina de totes les respostes, per defecte, les trobareu de manera predefinida segons l\'ordre de creació. Les podreu ordenar per ordre ascendent o descendent.';
+$string['orderresponses_link'] = 'mod/questionnaire/report#Order_Responses';
 $string['osgood'] = 'Osgood';
 $string['other'] = 'Altres:';
 $string['otherempty'] = 'Si marqueu aquesta opció heu d\'escriure alguna cosa al quadre de text!';
@@ -369,16 +394,20 @@ $string['questions'] = 'Preguntes';
 $string['questionsinsection'] = 'Preguntes en aquesta secció:';
 $string['questiontypes'] = 'Tipus de preguntes';
 $string['questiontypes_help'] = 'Vegeu la documentació de Moodle al dessota';
+$string['questiontypes_link'] = 'mod/questionnaire/questions#Question_Types';
 $string['radiobuttons'] = 'Botons d\'opció';
 $string['radiobuttons_help'] = 'En aquest tipus de pregunta, l\'enquestat ha de triar una de les opcions que s\'ofereixen';
+$string['radiobuttons_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['rank'] = 'Interval';
 $string['ratescale'] = 'Qualifica (escala 1..5)';
 $string['ratescale_help'] = 'Vegeu la documentació de Moodle';
+$string['ratescale_link'] = 'mod/questionnaire/questions#Rate_.28scale_1..5.29';
 $string['realm'] = 'Tipus d\'enquesta';
 $string['realm_help'] = '* **Hi ha tres tipus d\'enquestes:**
 * Privades: pertanyen només al curs on es defineixen.
 * Plantilles: es poden copiar i editar.
 * Públiques: es poden compartir entre cursos.';
+$string['realm_link'] = 'mod/questionnaire/qsettings#Questionnaire_Type';
 $string['redirecturl'] = 'L\'URL cap a on es redirecciona l\'usuari després de completar l\'enquesta';
 $string['remove'] = 'Esborra';
 $string['removeallquestionnaireattempts'] = 'Suprimeix totes les respostes de les enquestes';
@@ -386,6 +415,7 @@ $string['removenotinuse'] = 'Aquesta enquesta solia dependre d\'una enquesta pú
 Ja no es pot utilitzar més, i seria convenient esborrar-la.';
 $string['required'] = 'Resposta requerida';
 $string['required_help'] = 'Si marqueu ***Sí***, es requerirà una resposta a aquesta pregunta, és a dir, no es podrà trametre l\'enquesta fins que s\'hagi respost a aquesta pregunta';
+$string['required_link'] = 'mod/questionnaire/questions#Response_Required';
 $string['requiredparameter'] = 'S\'ha deixat en blanc algun paràmetre obligatori.';
 $string['reset'] = 'Reinicia';
 $string['respeligiblerepl'] = '(substituït per les excepcions dels rols)';
@@ -397,6 +427,7 @@ $string['respondents'] = 'Persones enquestades';
 $string['respondenttype'] = 'Tipus de persona enquestada';
 $string['respondenttype_help'] = 'Podeu visualitzar els noms complets dels usuaris amb cada resposta si marqueu l\'opció «nom complet».
 Podeu mantenir l\'anonimat de les respostes marcant l\'opció «anònim».';
+$string['respondenttype_link'] = 'mod/questionnaire/mod#Respondent_Type';
 $string['respondenttypeanonymous'] = 'anònim';
 $string['respondenttypefullname'] = 'nom complet';
 $string['response'] = 'Resposta';
@@ -406,6 +437,7 @@ $string['responseoptions'] = 'Opcions de resposta';
 $string['responses'] = 'Respostes';
 $string['responseview'] = 'Els estudiants poden veure TOTES les respostes';
 $string['responseview_help'] = 'Podeu especificar qui pot veure les respostes de tots els enquestats de les enquestes enviades (taules d\'estadístiques generals).';
+$string['responseview_link'] = 'mod/questionnaire/mod#Response_viewing';
 $string['responseviewstudentsalways'] = 'Sempre';
 $string['responseviewstudentsnever'] = 'Mai';
 $string['responseviewstudentswhenanswered'] = 'Després de respondre l\'enquesta';
@@ -413,8 +445,10 @@ $string['responseviewstudentswhenclosed'] = 'Després de tancar l\'enquesta';
 $string['restrictedtoteacher'] = 'Aquestes funcionalitats només són per als professors editors!';
 $string['resume'] = 'Desa/Recupera les respostes';
 $string['resume_help'] = 'Marcar aquesta opció permet que els usuaris puguin desar les respostes d\'una enquesta abans d\'enviar-la. Poden deixar l\'enquesta a mig fer i reprendre-la un altre dia en el punt que la van deixar.';
+$string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
 $string['resumesurvey'] = 'Reprèn l\'enquesta';
 $string['return'] = 'Torna';
+$string['rightlabel'] = 'Etiqueta dreta';
 $string['save'] = 'Desa';
 $string['saveasnew'] = 'Desa com a pregunta nova';
 $string['savedbutnotsubmitted'] = 'Aquesta enquesta s\'ha desat, però encara no s\'ha tramès.';
@@ -440,8 +474,14 @@ Deixeu el camp en blanc si no voleu enviar còpies per correu electrònic.';
 $string['settings'] = 'Paràmetres';
 $string['settingssaved'] = 'S\'han desat els paràmetres';
 $string['show_nonrespondents'] = 'Els que no han respost';
+$string['slider'] = 'Control lliscant';
+$string['startingvalue'] = 'Valor inicial del control lliscant';
+$string['startingvalue_help'] = 'El valor inicial del control lliscant indica el lloc on el dit control lliscant hauria d\'aparèixer per primer cop per als que han respost. Aquest valor per defecte és 1, perquè l\'interval és desconegut. Per ventura voleu que comenci al centre de l\'interval, per a la qual cosa haureu de proporcionar un valor central (un interval d\'1 a 100 té un valor central de 50).';
+$string['stepvalue'] = 'Valor de l\'increment del control lliscant';
+$string['stepvalue_help'] = 'El valor de l\'increment del control lliscant especifica la precisió amb què voleu que els que responen indiquin la seva resposta dins l\'interval. La pregunta s\'estableix per defecte dins un interval d\'1 a 100 amb un increment d\'1, de manera que permet que els que responen proporcionin valors de 70, 71, 72, 73, 74, etc. En lloc d\'això podríeu, emperò, establir increments de cinc, de manera que permetríeu que els que responen proporcionessin valors de 60, 65, 70, 75, 80, etc., o fins i tot només un rang d\'1 a 10 amb increments d\'1.';
 $string['strfdate'] = '%d/%m/%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
+$string['strictdateformatting'] = 'Introduïu la data emprant el selector de data següent.';
 $string['subject'] = 'Assumpte';
 $string['submissionnotificationhtmlanon'] = 'Hi ha una <a href="{$a->submissionurl}">tramesa</a> nova a l’enquesta «{$a->name}».';
 $string['submissionnotificationhtmluser'] = '<a href="{$a->profileurl}">{$a->username}</a> té una <a href="{$a->submissionurl}">tramesa</a> nova a l\'enquesta «{$a->name}» del curs «{$a->coursename}».';
@@ -497,6 +537,7 @@ $string['viewallresponses'] = 'Mostra totes les respostes';
 $string['viewallresponses_help'] = 'Si l\'enquesta s\'estableix a **Mode de grup**: *Grups visibles* o a *Grups separats*, i l\'usuari actual té el permís *moodle/site:accessallgroups* (en el context actual), i s\'han establert grups al curs, aleshores l\'usuari podrà accedir a una llista desplegable de grups.
 Aquesta llista desplegable permet que l\'usuari «filtri» les respostes de l\'enquesta per grups.
 Si el paràmetre és **Mode de grup**: *Grups separats*, aleshores els usuaris que no tinguin el permís *moodle/site:accessallgroups* (habitualment, estudiants o professors no editors, etc.) només podran veure les respostes del(s) grup(s) al(s) qual(s) pertanyen.';
+$string['viewallresponses_link'] = 'Viewing_Questionnaire_responses#Group_filtering';
 $string['viewbyresponse'] = 'Llista de respostes';
 $string['viewindividualresponse'] = 'Respostes individuals';
 $string['viewindividualresponse_help'] = 'Clica damunt dels noms dels que han respost, a la llista que apareix tot seguit, per veure\'n les respostes individuals.';

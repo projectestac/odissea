@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'pt', version '3.11'.
+ * Strings for component 'studentquiz', language 'pt', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -219,6 +219,7 @@ $string['missingparam'] = 'Um parâmetro obrigatório está incorreto ou está e
 $string['moderator'] = 'Moderador';
 $string['modulename'] = 'Auto-Teste';
 $string['modulename_help'] = 'A atividade **Auto-Teste** permite que os alunos adicionem perguntas para a comunidade. Na vista geral do Auto-Teste, os estudantes podem filtrar as perguntas. Também podem usar as perguntas filtradas na comunidade para praticar. O professor tem a opção de tornar "não visível" a coluna do criador da pergunta.<br><br>A atividade Auto-Teste premeia os alunos com pontos para motivá-los a adicionar perguntas e a praticar. Os pontos são listados numa tabela de classificação.';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = 'Auto-Testes';
 $string['more'] = 'Mais';
 $string['myattempts_column_name'] = 'Minhas tentativas';
@@ -266,7 +267,6 @@ $string['privacy:metadata:studentquiz_attempt:userid'] = 'ID do utilizador.';
 $string['privacy:metadata:studentquiz_comment'] = 'Armazena comentários das perguntas.';
 $string['privacy:metadata:studentquiz_comment:comment'] = 'Comentário da pergunta.';
 $string['privacy:metadata:studentquiz_comment:created'] = 'Data/hora da criação do documentário';
-$string['privacy:metadata:studentquiz_comment:questionid'] = 'ID da pergunta.';
 $string['privacy:metadata:studentquiz_comment:status'] = 'Estado do comentário';
 $string['privacy:metadata:studentquiz_comment:timemodified'] = 'Data/hora da modificação do comentário';
 $string['privacy:metadata:studentquiz_comment:userid'] = 'ID do utilizador.';
@@ -284,11 +284,9 @@ $string['privacy:metadata:studentquiz_progress'] = 'Armazena informação do pro
 $string['privacy:metadata:studentquiz_progress:attempts'] = 'Número de tentativas de resposta a esta pergunta.';
 $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'Número de respostas corretas.';
 $string['privacy:metadata:studentquiz_progress:lastanswercorrect'] = '0: a última resposta estava errada ou indefinida, 1: a última resposta estava correta.';
-$string['privacy:metadata:studentquiz_progress:questionid'] = 'ID da pergunta.';
 $string['privacy:metadata:studentquiz_progress:studentquizid'] = 'ID do Auto-Teste.';
 $string['privacy:metadata:studentquiz_progress:userid'] = 'ID do utilizador.';
 $string['privacy:metadata:studentquiz_rate'] = 'Armazena as avaliações das perguntas.';
-$string['privacy:metadata:studentquiz_rate:questionid'] = 'ID da pergunta.';
 $string['privacy:metadata:studentquiz_rate:rate'] = 'Avaliação da pergunta.';
 $string['privacy:metadata:studentquiz_rate:userid'] = 'ID do utilizador.';
 $string['private'] = 'Privado';

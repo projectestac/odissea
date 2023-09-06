@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_saml2', language 'ca', version '3.11'.
+ * Strings for component 'auth_saml2', language 'ca', version '4.1'.
  *
  * @package     auth_saml2
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['nouser'] = 'Us heu autenticat correctament com a «{$a}», però no teniu un compte al Moodle.';
 $string['suspendeduser'] = 'Us heu autenticat correctament com a «{$a}», però el vostre compte ha estat suspès al Moodle.';
+$string['update_never'] = 'Mai';
 $string['wrongauth'] = 'Us heu autenticat correctament com a «{$a}», però no esteu autoritzats a accedir al Moodle.';

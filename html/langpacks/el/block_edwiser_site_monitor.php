@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_edwiser_site_monitor', language 'el', version '3.11'.
+ * Strings for component 'block_edwiser_site_monitor', language 'el', version '4.1'.
  *
  * @package     block_edwiser_site_monitor
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activeusers'] = 'Ενεργό';
 $string['changelog'] = 'Καταγραφές αλλαγών';
-$string['checksettings'] = 'Παρακαλώ, ελέγξτε <a target="_blank" href="{$a->link}">{$a->text}</a>';
+$string['checksettings'] = 'Παρακαλούμε, ελέγξτε <a target="_blank" href="{$a->link}">{$a->text}</a>';
 $string['contactus'] = 'Επικοινωνήστε μαζί μας';
 $string['cpu'] = 'ΚΜΕ (Κεντρική Μονάδα Επεξεργασίας)';
 $string['cpuhigherlimit'] = 'Ανώτατο όριο CPU (ΚΜΕ)';

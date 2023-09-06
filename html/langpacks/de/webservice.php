@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'de', version '3.11'.
+ * Strings for component 'webservice', language 'de', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'Webservice-Protokolle aktivieren';
 $string['addaservice'] = 'Service hinzufügen';
 $string['addcapabilitytousers'] = 'Nutzerrechte prüfen';
 $string['addcapabilitytousersdescription'] = 'Nutzer/innen brauchen zwei Rechte: \'webservice:createtoken\' und ein zum jeweiligen Webservice-Protokoll passendes Recht (\'webservice/rest:use\', \'webservice/soap:use\', ...). <br />Zur Konfiguration ist es sinnvoll, eine neue Rolle \'Webservice\' mit dem Recht \'webservice:createtoken\' und mehreren Protokollrechten anzulegen und anschließend diese Rolle dem Webservice-Nutzer zuzuweisen.';
+$string['addexternalservice'] = 'Externen Service hinzufügen';
 $string['addfunction'] = 'Funktion hinzufügen';
 $string['addfunctionhelp'] = 'Funktion auswählen, um sie dem Service hinzuzufügen';
 $string['addfunctions'] = 'Funktionen hinzufügen';
@@ -61,14 +62,16 @@ $string['default'] = 'Standard für \'{$a}\'';
 $string['deleteaservice'] = 'Service löschen';
 $string['deleteservice'] = 'Service löschen: {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'Wenn ein Webservice gelöscht wird, werden auch alle damit verbundenen Token gelöscht. Möchten Sie wirklich den externen Service \'{$a}\' löschen?';
+$string['deletetoken'] = 'Token löschen';
 $string['deletetokenconfirm'] = 'Möchten Sie wirklich das Nutzer-Token von \'{$a->user}\' für den Webservice \'{$a->service}\' löschen?';
+$string['deprecated'] = 'Veraltet';
 $string['disabledwarning'] = 'Alle Webservice-Protokolle sind deaktiviert. Die Einstellung \'Webservice aktivieren\' befindet sich bei \'Zusatzoptionen\'';
 $string['doc'] = 'Dokumentation';
 $string['docaccessrefused'] = 'Sie sind nicht berechtigt, die Dokumentation für dieses Token zu sehen.';
-$string['documentation'] = 'Webservice-Dokumentation';
 $string['downloadfiles'] = 'Dateien herunterladen';
-$string['downloadfiles_help'] = 'Nach der Aktivierung können alle Nutzer Dateien mit ihrem Sicherheitsschlüssel herunterladen. Dies gilt nur für die Dateien für die sie eine Berechtigung haben.';
+$string['downloadfiles_help'] = 'Nach der Aktivierung können alle Nutzer/innen Dateien mit ihrem Sicherheitsschlüssel herunterladen. Dies gilt nur für die Dateien für die sie eine Berechtigung haben.';
 $string['editaservice'] = 'Service bearbeiten';
+$string['editexternalservice'] = 'Externen Service bearbeiten';
 $string['editservice'] = 'Service bearbeiten: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Aktiviert';
 $string['enabledocumentation'] = 'Entwicklerdokumentation aktivieren';

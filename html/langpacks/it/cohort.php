@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'it', version '3.11'.
+ * Strings for component 'cohort', language 'it', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -36,6 +36,7 @@ $string['bulkadd'] = 'Aggiungi al gruppo globale';
 $string['bulknocohort'] = 'Non sono stati trovati gruppi globali disponibili';
 $string['categorynotfound'] = 'La categoria <b>{$a}</b> non esiste oppure in quella categoria non sei autorizzato a creare gruppi globali. Verrà usato il contesto di default.';
 $string['cohort'] = 'Gruppo globale';
+$string['cohortmember'] = 'Membro del gruppo globale';
 $string['cohorts'] = 'Gruppi globali';
 $string['cohortsin'] = '{$a}: gruppi globali disponibili';
 $string['component'] = 'Provenienza';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = 'Aggiornamento gruppo globale';
 $string['external'] = 'Gruppo globale esterno';
 $string['idnumber'] = 'Codice identificativo gruppo globale';
 $string['invalidtheme'] = 'Il tema del gruppo globale non esiste';
+$string['memberofcohort'] = 'Membro del gruppo globale';
 $string['memberscount'] = 'Dimensione gruppo globale';
 $string['name'] = 'Nome';
 $string['namecolumnmissing'] = 'Sono stati riscontrati problemi sul formato del file CSV. Verificare che il file includa i nomi delle colonne. Per aggiungere utenti ad un gruppo globale, utilizzare il \'Caricamento utenti\' disponibile nell\'Amministrazione del sito.';

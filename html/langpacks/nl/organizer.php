@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'nl', version '3.11'.
+ * Strings for component 'organizer', language 'nl', version '4.1'.
  *
  * @package     organizer
  * @category    string
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['Error'] = 'Fout';
+$string['Info'] = 'Informatie';
+$string['Warning'] = 'Waarschuwing';
 $string['absolutedeadline'] = 'Einde inschrijving';
 $string['absolutedeadline_help'] = 'Vink dit aan om de datum en tijd in te stellen waarna deelnemers geen acties meer kunnen doen.';
 $string['actionlink_delete'] = 'verwijderen';
@@ -105,10 +108,12 @@ $string['reg_status_not_registered'] = 'Niet ingeschreven';
 $string['reg_status_organizer_expired'] = 'Organizer verlopen';
 $string['reg_status_registered'] = 'Inschreven';
 $string['reg_status_slot_attended'] = 'Bijgewoond';
+$string['reg_status_slot_attended_reapp'] = 'Bijgewoond, nieuwe afspraak toegestaan';
 $string['reg_status_slot_available'] = 'Tijdslot beschikbaar';
 $string['reg_status_slot_expired'] = 'Tijdslot verlopen';
 $string['reg_status_slot_full'] = 'Tijdslot vol';
 $string['reg_status_slot_not_attended'] = 'Niet bijgewoond';
+$string['reg_status_slot_not_attended_reapp'] = 'Niet bijgewoond, nieuwe afspraak toegestaan';
 $string['reg_status_slot_past_deadline'] = 'Tijdslot voorbij deadline';
 $string['register_notify_teacher:queue:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Leerling in wachtrij geplaatst';
 $string['register_reminder_student:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Herinnering inschrijving';

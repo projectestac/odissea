@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'ar', version '3.11'.
+ * Strings for component 'report_outline', language 'ar', version '4.1'.
  *
  * @package     report_outline
  * @category    string
@@ -33,8 +33,8 @@ $string['nologreaderenabled'] = 'لا قارئ مُمَكَّن لسجل الو�
 $string['numviews'] = '{$a->numviews} معاينات من قبل {$a->distinctusers} مستخدم/مستخدمين';
 $string['outline:view'] = 'معاينة تقرير النشاط';
 $string['outline:viewuserreport'] = 'معاينة تقرير النشاط لمستخدم';
-$string['page-report-outline-index'] = 'تقرير الملامح العامة للمقرر';
-$string['page-report-outline-user'] = 'تقرير الملامح العامة للمستخدم في المقرر الدراسي';
+$string['page-report-outline-index'] = 'تقرير الملامح العامة للمساق';
+$string['page-report-outline-user'] = 'تقرير الملامح العامة للمستخدم في المساق';
 $string['page-report-outline-x'] = 'أي تقرير للملامح العامة';
 $string['pluginname'] = 'تقرير النشاط';
 $string['privacy:metadata'] = 'إن ملحق تقرير النشاط لا يخزن أي بيانات شخصية.';

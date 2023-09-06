@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -45,6 +45,7 @@ $string['noquestions'] = '完形题“<strong>{$a}</strong>”中没有任何问
 $string['pleaseananswerallparts'] = '请回答题目的所有部分。';
 $string['pluginname'] = '内嵌答案(完形填空)';
 $string['pluginname_help'] = '内嵌答案(完形填空)题是一段文字，中间可以夹杂多道题目，例如选择题、填空题。';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnameadding'] = '添加内嵌答案(完形填空)题';
 $string['pluginnameediting'] = '修改内嵌答案(完形填空)';
 $string['pluginnamesummary'] = '这种类型的题目非常灵活，但创建题目时必须输入特殊代码。可以内嵌的题目包括选择题、填空题和数字题。';
@@ -66,6 +67,7 @@ $string['questionsmore'] = '比数据库中保存的完形题多 {$a} 个问题'
 $string['questiontypechanged'] = '题目类型已改变';
 $string['questiontypechangedcomment'] = '至少一个问题类型已经改变。<br />您曾添加、删除或移动题目吗？<br />向前看。';
 $string['questionusedinquiz'] = '此题目已被{$a->nb_of_quiz}个测验使用，共有{$a->nb_of_attempts}次答题';
+$string['regradeissuenumsubquestionschanged'] = '问题中嵌入的子问题的数量已更改。';
 $string['storedqtype'] = '保存的题目类型 {$a}';
 $string['subqresponse'] = '子问题 {$a->i}：{$a->response}';
 $string['unknownquestiontypeofsubquestion'] = '未知题型：{$a->type}(题目 #{$a->sub})';

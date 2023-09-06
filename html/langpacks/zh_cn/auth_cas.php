@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'zh_cn', version '3.11'.
+ * Strings for component 'auth_cas', language 'zh_cn', version '4.1'.
  *
  * @package     auth_cas
  * @category    string
@@ -26,8 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['CASform'] = '选择认证方式';
-$string['accesCAS'] = 'CAS 用户';
-$string['accesNOCAS'] = '其他用户';
 $string['auth_cas_auth_logo'] = '认证方法 LOGO';
 $string['auth_cas_auth_logo_description'] = '提供一个用户熟悉的CAS身份验证方法 LOGO。';
 $string['auth_cas_auth_name'] = '身份验证方法名称';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'eu', version '3.11'.
+ * Strings for component 'course', language 'eu', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -49,6 +49,8 @@ $string['aria:favourite'] = 'Ikastaroa nabarmenduta dago';
 $string['aria:favouritestab'] = 'Nabarmendutako jarduerak';
 $string['aria:modulefavourite'] = 'Nabarmendu {$a} jarduera';
 $string['aria:recommendedtab'] = 'Gomendatutako jarduerak';
+$string['browsecourseadminindex'] = 'Arakatu ikastaroaren kudeaketa indize honekin.';
+$string['browsesettingindex'] = 'Arakatu ezarpenak indize honekin.';
 $string['completion_automatic:done'] = 'Eginda:';
 $string['completion_automatic:failed'] = 'Huts eginda:';
 $string['completion_automatic:todo'] = 'Egiteke:';
@@ -61,9 +63,17 @@ $string['completion_setby:auto:todo'] = 'Egiteke: {$a->condition} ({$a->setby} e
 $string['completion_setby:manual:done'] = '{$a->setby} erabiltzaileak {$a->activityname} egindako gisa markatu du. Sakatu desegiteko.';
 $string['completion_setby:manual:markdone'] = '{$a->setby} erabiltzaileak {$a->activityname} egin gabeko gisa markatu du. Sakatu desegiteko.';
 $string['completionrequirements'] = '{$a} jardueraren osaketa irizpideak';
+$string['courseaccess'] = 'Ikastaro-sarbidea';
 $string['coursealreadyfinished'] = 'Jadanik amaitutako ikastaroa';
+$string['coursecontentnotification'] = 'Bidali eduki-aldaketaren jakinarazpena';
+$string['coursecontentnotification_help'] = 'Markatu laukitxo hau ikastaroko partaideei berria den edo aldatutako jarduera/baliabide honen inguruko jakinarazpena bidaltzeko. Jakinarazpena soilik jarduera/baliabiderako sarbidea duten erabiltzaileek jasoko dute.';
+$string['coursecontentnotifnew'] = '{$a->coursename} ikastaroko eduki berria';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> berria da <a href="{$a->courselink}">{$a->coursename}</a> ikastaroan.</p><p><a href="{$a->notificationpreferenceslink}">Aldatu zure jakinarazpenen hobespenak</a></p>';
+$string['coursecontentnotifupdate'] = '{$a->coursename} ikastaroko edukien aldaketa';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> aldatua izan da <a href="{$a->courselink}">{$a->coursename}</a> ikastaroan.</p><p><a href="{$a->notificationpreferenceslink}">Aldatu zure jakinarazpenen hobespenak</a></p>';
 $string['coursenotyetfinished'] = 'Ikastaroa ez da oraindik amaitu';
 $string['coursenotyetstarted'] = 'Ikastaroa ez da oraindik hasi';
+$string['courseparticipants'] = 'Ikastaroko partaideak';
 $string['coursetoolong'] = 'Ikastaroa luzeegia da';
 $string['customfield_islocked'] = 'Blokeatuta';
 $string['customfield_islocked_help'] = 'Eremua blokeatuta dagoenean "Aldatu blokeatutako eremuak" baimena duten kudeatzaileek baino ezingo dute aldatu ikastaroko edizio-formularioan.';
@@ -73,6 +83,11 @@ $string['customfield_visibility_help'] = 'Ezarpen honek zehazten du eremu pertso
 $string['customfield_visibletoall'] = 'Guztiak';
 $string['customfield_visibletoteachers'] = 'Irakasleak';
 $string['customfieldsettings'] = 'Ikastaroko eremu pertsonalizatuen ezarpen komunak';
+$string['daystakingcourse'] = 'Ikastaroa egiten igarotako egunak';
+$string['downloadcontent'] = 'Sartu ikastaro-edukiaren deskargan';
+$string['downloadcontent_help'] = 'Jarduera/baliabide hau ikastaro-edukiaren deskargarako zip fitxategian sartu beharko litzateke? Fitxategia, Karpeta, Orria eta Etiketa osorik jaitsi daitezke. Bestelako jarduera eta baliabideen kasuan soilik izena eta deskribapena jaisten dira. Aukera honek ikastaroaren ezarpenetan \'Jaitsi ikastaroko edukia\' aukera gaituta egotea behar du.
+
+Ezarpen honek ez du eraginik gailu mugikorretarako aplikazioaren lineaz kanpoko erabilerarako edukien deskargan.';
 $string['downloadcourseconfirmation'] = 'Ikastaroko edukia duen zip fitxategi bat deskargatzera zoaz ({$a} baino handiagoak diren fitxategiak ez dira sartuko).';
 $string['downloadcoursecontent'] = 'Jaitsi ikastaroko edukia';
 $string['downloadcoursecontent_help'] = 'Ezarpen honek zehazten du jaitsi ikastaroko edukia baimena duten erabiltzaileek ikastaroko edukia deskargatu ahalko duten (modu lehenetsian ikasle edo irakasle rola duten erabiltzaileak).';
@@ -82,6 +97,7 @@ $string['favourite'] = 'Nabarmendutako ikastaroa';
 $string['gradetopassnotset'] = 'Ez da ikastaro hau gainditzeko kalifikaziorik ezarri. Ikastaroaren kalifikazio-elementuan ezarri daiteke (Kalifikazio-liburuaren ezarpenak).';
 $string['informationformodule'] = '{$a} jarduerari buruzko informazioa';
 $string['module'] = 'Jarduera';
+$string['namewithlink'] = 'Kategoria-izena estekarekin';
 $string['noaccesssincestartinfomessage'] = 'Kaixo, {$a->userfirstname}:
 <p>{$a->coursename} ikastaroko hainbat ikasle ez da inoiz ikastaroan sartu.</p>';
 $string['nocourseactivity'] = 'Ikastaroaren hasiera eta amaieraren artean ez da aktibitate nahikorik izan';
@@ -92,6 +108,9 @@ $string['norecentaccessesinfomessage'] = 'Kaixo, {$a->userfirstname}:
 <p>{$a->coursename} ikastaroko hainbat ikasle ez da berriki ikastaroan sartu.</p>';
 $string['noteachinginfomessage'] = 'Kaixo, {$a->userfirstname}:
 <p>Datorren astean hasiera-data duten ikastaroak irakasle edo ikaslerik ez dutela antzeman da.</p>';
+$string['participants:perpage'] = 'Partaide kopurua orriko';
+$string['participants:perpage_help'] = 'Ikastaro bakoitzeko partaideen orri bakoitzean erakutsi beharreko erabiltzaile kopurua.';
+$string['participantsnavigation'] = 'Partaideen hirugarren mailako nabigazioa.';
 $string['privacy:completionpath'] = 'Ikastaro-osaketa';
 $string['privacy:favouritespath'] = 'Nabarmendutako ikastaroaren informazioa';
 $string['privacy:metadata:activityfavouritessummary'] = 'Ikastaro-sistemak erabiltzaileak jarduera-hautatzailean nabarmendu dituen elementuen inguruko informazioa gordetzen du.';

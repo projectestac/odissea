@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_catalogue', language 'es', version '3.11'.
+ * Strings for component 'block_catalogue', language 'es', version '4.1'.
  *
  * @package     block_catalogue
  * @category    string
@@ -25,4 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['grades_gradereport'] = 'Informes de calificación';
 $string['hvp_CoursePresentation'] = 'Presentación del curso';
+$string['hvp_InteractiveVideo'] = 'Video interactivo';
+$string['hvp_Summary'] = 'Resumen';
+$string['reports_listname'] = 'Informes';
+$string['reports_report'] = 'Informes';

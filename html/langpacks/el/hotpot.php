@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'el', version '3.11'.
+ * Strings for component 'hotpot', language 'el', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -56,7 +56,7 @@ $string['clearcache'] = 'Εκκαθάριση κρυφής μνήμης HotPot';
 $string['cleardetails'] = 'Εκκαθάριση λεπτομερειών HotPot';
 $string['clearedcache'] = 'Η κρυφή μνήμη HotPot εκκαθαρίστηκε';
 $string['cleareddetails'] = 'Οι λεπτομέρειες HotPot εκκαθαρίστηκαν';
-$string['clickreporting'] = 'Ενεργοποίησε αναφορά κλικ';
+$string['clickreporting'] = 'Ενεργοποίηση αναφοράς κλικ';
 $string['clickreporting_help'] = 'Εάν ενεργοποιηθεί, διατηρείται ξεχωριστή εγγραφή κάθε φορά που κάνετε κλικ σε ένα πλήκτρο «υπόδειξη», «ένδειξη» ή «έλεγχος». Αυτό επιτρέπει στον διδάσκοντα να δει μια πολύ λεπτομερή αναφορά που δείχνει την κατάσταση της εργασίας σε κάθε κλικ. Διαφορετικά, διατηρείται μόνο μία εγγραφή ανά προσπάθεια σε μια εργασία.';
 $string['clicktrailreport'] = 'Κάντε κλικ στα ίχνη';
 $string['closed'] = 'Αυτή η δραστηριότητα έχει κλείσει';
@@ -91,7 +91,7 @@ $string['entry_grading'] = 'Βαθμολόγηση';
 $string['entry_title'] = 'Όνομα ενότητας ως τίτλος';
 $string['entrycm'] = 'Προηγούμενη δραστηριότητα';
 $string['entrycmcourse'] = 'Προηγούμενη δραστηριότητα σε αυτό το μάθημα';
-$string['entrycmsection'] = 'Προηγούμενη δραστηριότητα σε αυτό το τμήμα μαθήματος';
+$string['entrycmsection'] = 'Προηγούμενη δραστηριότητα σε αυτή την ενότητα μαθήματος';
 $string['entrycompletionwarning'] = 'Πριν ξεκινήσετε αυτή τη δραστηριότητα, πρέπει να δείτε το {$a}.';
 $string['entrygrade'] = 'Βαθμός προηγούμενης δραστηριότητας';
 $string['entryhotpotcourse'] = 'Το προηγούμενο HotPot σε αυτό το μάθημα';
@@ -150,7 +150,7 @@ $string['frameheight'] = 'Ύψος πλαισίου';
 $string['giveup'] = 'Εγκαταλείψτε';
 $string['grademethod'] = 'Μέθοδος βαθμολόγησης';
 $string['gradeweighting'] = 'Συντελεστής βαρύτητας βαθμού';
-$string['highestscore'] = 'Το καλύτερο σκορ';
+$string['highestscore'] = 'Μέγιστο σκορ';
 $string['hints'] = 'Υποδείξεις';
 $string['hotpot:addinstance'] = 'Προσθήκη μιας νέας δραστηριότητας HotPot';
 $string['hotpot:attempt'] = 'Δοκιμάστε μια δραστηριότητα HotPot και υποβάλετε αποτελέσματα';
@@ -173,6 +173,7 @@ $string['maxeventlength'] = 'Μέγιστος αριθμός ημερών για
 $string['mediafilter_hotpot'] = 'Φίλτρο πολυμέσων HotPot';
 $string['mediafilter_moodle'] = 'Τυπικά φίλτρα πολυμέσων του Moodle';
 $string['modulename'] = 'HotPot';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'HotPots';
 $string['nameadd'] = 'Όνομα';
 $string['nameedit'] = 'Όνομα';
@@ -180,7 +181,7 @@ $string['nameedit_help'] = 'Το συγκεκριμένο κείμενο που 
 $string['navigation'] = 'Πλοήγηση';
 $string['navigation_embed'] = 'Ενσωματωμένη ιστοσελίδα';
 $string['navigation_frame'] = 'Πλαίσιο πλοήγησης Moodle';
-$string['navigation_give_up'] = 'Ένα μοναδικό πλήκτρο «Εγκατάλειψης»';
+$string['navigation_give_up'] = 'Ένα ενιαίο πλήκτρο «Εγκατάλειψης»';
 $string['navigation_none'] = 'Καμία';
 $string['navigation_original'] = 'Πρωτότυπα βοηθήματα πλοήγησης';
 $string['navigation_topbar'] = 'Επάνω μπάρα πλοήγησης Moodle μόνο (χωρίς πλευρικές γραμμές)';
@@ -204,7 +205,7 @@ $string['overviewreport'] = 'Επισκόπηση';
 $string['penalties'] = 'Ποινές';
 $string['percent'] = 'Ποσοστό %';
 $string['pluginadministration'] = 'Διαχείριση HotPot';
-$string['pluginname'] = 'Το άρθρωμα Hot Potatoes';
+$string['pluginname'] = 'Άρθρωμα Hot Pot';
 $string['pressoktocontinue'] = 'Πατήστε OK για να συνεχίσετε ή Άκυρο για να παραμείνετε στην τρέχουσα σελίδα.';
 $string['privacy'] = 'Απόρρητο των αποτελεσμάτων';
 $string['privacy:metadata:hotpot_attempts'] = 'Πληροφορίες σχετικά με τις προσπάθειες του χρήστη στις δραστηριότητες HotPot';
@@ -225,15 +226,15 @@ $string['sourcefile'] = 'Πηγαίο αρχείο';
 $string['sourcefilenotfound'] = 'Αδυναμία εύρεσης πηγαίου αρχείου (ή είναι κενό): {$a}';
 $string['status'] = 'Κατάσταση';
 $string['stopbutton'] = 'Εμφάνιση πλήκτρου τερματισμού';
-$string['stopbutton_help'] = 'Αν αυτή η ρύθμιση είναι ενεργοποιημένη, στο κουίζ θα προστεθεί ένα κουμπί διακοπής.
+$string['stopbutton_help'] = 'Αν αυτή η ρύθμιση είναι ενεργοποιημένη, στο κουίζ θα προστεθεί ένα πλήκτρο τερματισμού.
 <br /><br />
-Αν ένας μαθητής πατήσει το κουμπί διακοπής, τα αποτελέσματα μέχρι εκείνη τη στιγμή θα επιστραφούν στο Moodle και η κατάσταση της προσπάθειας στο κουίζ θα οριστεί ως εγκαταλείφθηκε.
+Αν ένας μαθητής πατήσει το πλήκτρο τερματισμού, τα αποτελέσματα μέχρι εκείνη τη στιγμή θα επιστραφούν στο Moodle και η κατάσταση της προσπάθειας στο κουίζ θα οριστεί ως Εγκαταλείφθηκε.
 <br /><br />
-Το κείμενο που εμφανίζεται στο κουμπί διακοπής μπορεί να είναι μία από τις προκαθορισμένες φράσεις από τα πακέτα γλωσσών του Moodle ή μπορεί να καθορίσει ο διδάσκων το δικό του κείμενο για το κουμπί.';
+Το κείμενο που εμφανίζεται στο πλήκτρο τερματισμού μπορεί να είναι μία από τις προκαθορισμένες φράσεις από τα πακέτα γλώσσας του Moodle ή μπορεί να καθορίσει ο διδάσκων το δικό του κείμενο για το πλήκτρο.';
 $string['stopbutton_langpack'] = 'Από πακέτο γλώσσας';
 $string['stopbutton_specific'] = 'Χρήση συγκεκριμένου κειμένου';
-$string['stoptext'] = 'Κείμενο πλήκτρου σταματήματος';
-$string['studentfeedback'] = 'Ανάδραση φοιτητών';
+$string['stoptext'] = 'Κείμενο πλήκτρου τερματισμού';
+$string['studentfeedback'] = 'Ανάδραση μαθητή';
 $string['submits'] = 'Υποβολές';
 $string['subplugintype_hotpotattempt'] = 'Μορφότυπος εξόδου';
 $string['subplugintype_hotpotattempt_plural'] = 'Μορφότυποι εξόδου';

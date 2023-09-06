@@ -21,10 +21,10 @@ Feature: The forum search allows users to perform advanced searches for forum po
     And the following "tags" exist:
       | name         | isstandard  |
       | SearchedTag  | 1           |
-    And I log in as "teacher1"
-    And I am on "Course 1" course homepage with editing mode on
-    And I add the "Latest announcements" block
-    And I navigate to "Edit settings" in current page administration
+    And the following "blocks" exist:
+      | blockname  | contextlevel | reference | pagetypepattern | defaultregion |
+      | news_items | Course       | C1        | course-view-*   | side-pre      |
+    And I am on the "Course 1" "course editing" page logged in as teacher1
     And I expand all fieldsets
     And I set the field "id_newsitems" to "1"
     And I press "Save and display"
@@ -35,24 +35,23 @@ Feature: The forum search allows users to perform advanced searches for forum po
     And I add a new topic to "Announcements" forum with:
       | Subject | Your subjective|
       | Message | Your long message |
-    And I log out
 
   Scenario: Perform an advanced search using any term
     Given I am on the "Announcements" "forum activity" page logged in as student1
-    And I press "Search forums"
-    And I should see "Advanced search"
+    And I press "Search"
+    And I should see "Please enter search terms into one or more of the following fields"
     And I set the field "words" to "subject"
-    When I press "Search forums"
+    When I press "Search"
     Then I should see "My subject"
     And I should see "Your subjective"
 
   Scenario: Perform an advanced search avoiding words
     Given I am on the "Announcements" "forum activity" page logged in as student1
-    And I press "Search forums"
-    And I should see "Advanced search"
+    And I press "Search"
+    And I should see "Please enter search terms into one or more of the following fields"
     And I set the field "words" to "My"
     And I set the field "notwords" to "subjective"
-    When I press "Search forums"
+    When I press "Search"
     Then I should see "My subject"
     And I should not see "Your subjective"
 
@@ -61,43 +60,41 @@ Feature: The forum search allows users to perform advanced searches for forum po
       | mysql    |
       | postgres |
     And I am on the "Announcements" "forum activity" page logged in as student1
-    And I press "Search forums"
-    And I should see "Advanced search"
+    And I press "Search"
+    And I should see "Please enter search terms into one or more of the following fields"
     And I set the field "fullwords" to "subject"
-    When I press "Search forums"
+    When I press "Search"
     Then I should see "My subject"
     And I should not see "Your subjective"
 
   Scenario: Perform an advanced search matching the subject
     Given I am on the "Announcements" "forum activity" page logged in as student1
-    And I press "Search forums"
-    And I should see "Advanced search"
+    And I press "Search"
+    And I should see "Please enter search terms into one or more of the following fields"
     And I set the field "subject" to "subjective"
-    When I press "Search forums"
+    When I press "Search"
     Then I should not see "My message"
     And I should see "Your subjective"
 
   Scenario: Perform an advanced search matching the author
-    Given I log in as "teacher2"
-    And I am on "Course 1" course homepage
+    Given I am on the "Course 1" course page logged in as teacher2
     And I add a new topic to "Announcements" forum with:
       | Subject | My Subjects |
       | Message | My message |
-    And I log out
     When I am on the "Announcements" "forum activity" page logged in as student1
-    And I press "Search forums"
-    And I should see "Advanced search"
+    And I press "Search"
+    And I should see "Please enter search terms into one or more of the following fields"
     And I set the field "user" to "TWO"
-    And I press "Search forums"
+    And I press "Search"
     Then I should see "Teacher TWO"
     And I should not see "Teacher ONE"
 
   Scenario: Perform an advanced search with multiple words
     Given I am on the "Announcements" "forum activity" page logged in as student1
-    And I press "Search forums"
-    And I should see "Advanced search"
+    And I press "Search"
+    And I should see "Please enter search terms into one or more of the following fields"
     And I set the field "subject" to "your subjective"
-    When I press "Search forums"
+    When I press "Search"
     Then I should not see "My message"
     And I should see "Your subjective"
 
@@ -109,12 +106,11 @@ Feature: The forum search allows users to perform advanced searches for forum po
     And I set the following fields to these values:
         | Tags    | SearchedTag |
     And I press "Save changes"
-    And I log out
     And I am on the "Announcements" "forum activity" page logged in as student1
-    And I press "Search forums"
-    And I should see "Advanced search"
+    And I press "Search"
+    And I should see "Please enter search terms into one or more of the following fields"
     And I set the field "Is tagged with" to "SearchedTag"
-    When I press "Search forums"
+    When I press "Search"
     Then I should see "My subject"
     And I should not see "Your subjective"
 
@@ -123,10 +119,10 @@ Feature: The forum search allows users to perform advanced searches for forum po
     Given I am on the "Announcements" "forum activity" page logged in as student1
     And I click on "Your subjective" action menu
     And I follow "Star this discussion"
-    And I press "Search forums"
-    And I should see "Advanced search"
+    And I press "Search"
+    And I should see "Please enter search terms into one or more of the following fields"
     And I set the field "starredonly" to "1"
-    When I press "Search forums"
+    When I press "Search"
     Then I should not see "My message"
     And I should see "Your subjective"
 
@@ -135,10 +131,10 @@ Feature: The forum search allows users to perform advanced searches for forum po
     Given I am on the "Announcements" "forum activity" page logged in as student1
     And I click on "Your subjective" action menu
     And I follow "Star this discussion"
-    And I press "Search forums"
-    And I should see "Advanced search"
+    And I press "Search"
+    And I should see "Please enter search terms into one or more of the following fields"
     And I set the field "words" to "message"
     And I set the field "starredonly" to "1"
-    When I press "Search forums"
+    When I press "Search"
     Then I should not see "My message"
     And I should see "Your subjective"

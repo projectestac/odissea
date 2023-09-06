@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'pt', version '3.11'.
+ * Strings for component 'block_activity_results', language 'pt', version '4.1'.
  *
  * @package     block_activity_results
  * @category    string
@@ -38,7 +38,7 @@ $string['config_grade_format'] = 'Exibir notas como';
 $string['config_name_format'] = 'Privacidade dos resultados';
 $string['config_names_anon'] = 'Resultados anónimos';
 $string['config_names_full'] = 'Exibir nomes completos';
-$string['config_names_id'] = 'Mostrar apenas os números de identificação';
+$string['config_names_id'] = 'Mostrar apenas os números de identificação (ID)';
 $string['config_no_activities_in_course'] = 'Ainda não existem atividades nesta disciplina.';
 $string['config_select_activity'] = 'Este bloco deve exibir os resultados de que atividade?';
 $string['config_show_best'] = 'Das notas mais elevadas, quantas devem ser exibidas (0 para desativar)?';

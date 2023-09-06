@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'de', version '3.11'.
+ * Strings for component 'publication', language 'de', version '4.1'.
  *
  * @package     publication
  * @category    string
@@ -33,8 +33,8 @@ $string['allowedfiletypes_help'] = 'Die akzeptierten Dateitypen können Sie hier
 $string['allowsubmissionsanddescriptionfromdatesummary'] = 'Die Aufgabendetails und das Abgabeformular ist von <strong>{$a}</strong> verfügbar';
 $string['allowsubmissionsfromdate'] = 'Von';
 $string['allowsubmissionsfromdate_import'] = 'Freigeben von';
-$string['allowsubmissionsfromdate_upload'] = 'Uploadmöglichkeit von';
-$string['allowsubmissionsfromdateh'] = 'Zeitraum für Uploadmöglichkeit/Einverständniserklärung';
+$string['allowsubmissionsfromdate_upload'] = 'Hochladen von';
+$string['allowsubmissionsfromdateh'] = 'Zeitraum zum Hochladen und Freigeben';
 $string['allowsubmissionsfromdateh_help'] = 'Im festgelegten Zeitraum können Teilnehmer/innen je nach Modus entweder Dateien hochladen oder ihr Einverständnis für die Sichtbarkeit ihrer Dateien geben. Solange der Zeitraum geöffnet ist, können Sie ihre hochgeladenen Dateien bearbeiten oder ihr Einverständnis für die Sichtbarkeit wieder entziehen.';
 $string['allowsubmissionsfromdatesummary'] = 'Diese Aufgabe akzeptiert Abgaben von <strong>{$a}</strong>';
 $string['alwaysshowdescription'] = 'Beschreibung immer anzeigen';
@@ -42,15 +42,15 @@ $string['alwaysshowdescription_help'] = 'Wenn diese Option deaktiviert ist, wird
 $string['approval_timeover'] = 'Sie können ihre Zustimmung nur während des Änderungszeitraumes ändern.';
 $string['approvalchange'] = 'Freigeben wurde geändert';
 $string['approved'] = 'Zugestimmt';
-$string['approveusers'] = 'für alle sichtbar';
+$string['approveusers'] = 'Sichtbar für alle';
 $string['assignment'] = 'Aufgabe';
 $string['assignment_help'] = 'Aufgabe für den Dateiimport auswählen. Derzeit können Gruppenabgaben nicht zum Import herangezogen werden.';
 $string['assignment_notfound'] = 'Die Aufgabe von der Dateien importiert wurden, konnte nicht mehr gefunden werden.';
 $string['assignment_notset'] = 'Es wurde noch keine Aufgabe ausgewählt.';
 $string['autoimport'] = 'Automatische Synchronisation mit Aufgabe';
 $string['autoimport_help'] = 'Wenn diese Option aktiviert ist, werden neue Abgaben in der entsprechenden Aufgabe automatisch in den Studentenordner übernommen. (Optional) Für die neuen Dateien muss die Zustimmung erneut eingeholt werden.';
-$string['availability'] = 'Zeitraum für Uploadmöglichkeit/Einverständniserklärung';
-$string['choose'] = 'bitte auswählen ...';
+$string['availability'] = 'Zeitraum für Hochladen und Freigeben';
+$string['choose'] = 'Bitte auswählen ...';
 $string['configautoimport'] = 'Wenn Sie möchten, dass Abgaben automatisch in den/die Studierendenordner importiert werden. Dieses Feature kann für jeden Studierendenordner separat ein-/ausgeschaltet werden.';
 $string['configmaxbytes'] = 'Standardmäßige maximale Dateigröße für Dateien im Studierendenordner.';
 $string['configmaxfiles'] = 'Standardmäßige maximale Anzahl von Dateien, die pro Teilnehmer/in im Studierendenordner erlaubt sind.';
@@ -62,7 +62,7 @@ $string['currentlynotapproved'] = '* Aktuell keine Freigabe oder Ablehnung ertei
 $string['cutoffdate'] = 'Letzter Abgabetermin';
 $string['cutoffdate_help'] = 'Diese Funktion sperrt die Abgabe von Lösungen ab diesem Termin, sofern keine Terminverlängerung gewährt wird.';
 $string['cutoffdate_import'] = 'Letztes Freigeben bis';
-$string['cutoffdate_upload'] = 'Letzte Uploadmöglichkeit bis';
+$string['cutoffdate_upload'] = 'Letzten Hochladen bis';
 $string['cutoffdatefromdatevalidation'] = 'Der letzte Abgabetermin muss nach der erstmöglichen Abgabe liegen.';
 $string['cutoffdatevalidation'] = 'Der letzte Abgabetermin muss nach dem Abgabebeginn liegen.';
 $string['details'] = 'Details';
@@ -70,10 +70,10 @@ $string['downloadall'] = 'Alle Dateien als ZIP herunterladen';
 $string['duedate'] = 'Bis';
 $string['duedate_help'] = 'Zum Abgabeende wird die Aufgabe fällig. Wenn spätere Abgaben erlaubt sind, wird jede nach diesem Datum eingereichte Abgabe als verspätet markiert. Um eine Abgabe nach einem bestimmten Verspätungsdatum zu verhindern kann ein letzter Abgabetermin gesetzt werden.';
 $string['duedate_import'] = 'Einverständniserklärung bis';
-$string['duedate_upload'] = 'Uploadmöglichkeit bis';
+$string['duedate_upload'] = 'Hochladen bis';
 $string['duedatevalidation'] = 'Das Abgabeende muss später als der Abgabebeginn sein.';
 $string['edit_timeover'] = 'Dateien können nur während des Änderungszeitraumes geändert werden.';
-$string['edit_uploads'] = 'Dateien bearbeiten/hochladen';
+$string['edit_uploads'] = 'Dateien hochladen / bearbeiten';
 $string['emailstudentsmail'] = '{$a->username} hat die Einverständniserklärung zu \'{$a->filename}\'
 für \'{$a->publication}\' auf {$a->apstatus} am {$a->dayupdated} um {$a->timeupdated} geändert.
 
@@ -108,7 +108,7 @@ $string['groupapprovalmode'] = 'Modus Gruppenzustimmung';
 $string['groupapprovalmode_all'] = 'ALLE Gruppenmitglieder müssen bestätigen';
 $string['groupapprovalmode_help'] = 'Hier legen Sie fest, ob Sie das Einverständnis aller Gruppenmitglieder oder eines einzelnen Gruppenmitglied einholen.<br />Erst nach Einverständnis aller Gruppenmitglieder oder eines einzelnen Gruppenmitglied sind die Dateien auch wirklich für alle sichtbar.';
 $string['groupapprovalmode_single'] = 'Mindestens EIN Gruppenmitglied muss bestätigen';
-$string['guideline'] = 'sichtbar für alle:';
+$string['guideline'] = 'Sichtbar für alle:';
 $string['hidden'] = 'verborgen';
 $string['importfrom_err'] = 'Sie müssen eine Aufgabe auswählen von der Sie importieren möchten.';
 $string['maxbytes'] = 'Maximale Dateigröße';
@@ -144,8 +144,8 @@ $string['notice_uploadrequireapproval'] = 'Alle Dateien, die Sie hier hochladen,
 $string['notifications'] = 'Benachrichtigungen';
 $string['notifystudents'] = 'Teilnehmer/innen über Zustimmungsänderungen informieren';
 $string['notifystudents_help'] = 'Wenn aktiviert, erhalten Teilnehmer/innen eine Benachrichtigung, sobald sich der Status einer ihrer hochgeladenen Dateien ändert. Benachrichtigungseinstellungen sind konfigurierbar.';
-$string['notifyteacher'] = 'Bewerter/innen über Uploads informieren';
-$string['notifyteacher_help'] = 'Wenn aktiviert, erhalten Bewerter/Innen (üblicherweise Lehrende) eine Benachrichtigung, sobald ein/e Studierende/r eine Datei hochlädt. Benachrichtigungseinstellungen sind konfigurierbar.';
+$string['notifyteacher'] = 'Trainer/innen über Uploads informieren';
+$string['notifyteacher_help'] = 'Wenn aktiviert, erhalten Trainer/innen eine Benachrichtigung, sobald Teilnehmer/innen eine Datei hochladen. Benachrichtigungseinstellungen sind konfigurierbar.';
 $string['obtainstudentapproval'] = 'Einverständnis einholen';
 $string['obtainstudentapproval_help'] = 'Hier legen Sie fest, ob Sie das Einverständnis der Teilnehmer/innen über Moodle (ja) oder auf eine andere Weise einholen (nein). <br> In Moodle können Sie festlegen, von welchen Teilnehmer/innen das Einverständnis eingeholt wird. Erst nach Einverständnis der Teilnehmer/innen sind die Dateien auch wirklich für alle sichtbar.';
 $string['obtainteacherapproval'] = 'Sofortige Freigabe';
@@ -182,8 +182,8 @@ $string['publication:receiveteachernotification'] = 'Benachrichtigung für Train
 $string['publication:upload'] = 'Dateien in den Studierendenordner hochladen';
 $string['publication:view'] = 'Studierendenordner anzeigen';
 $string['publicfiles'] = 'Öffentliche Dateien';
-$string['published_aftercheck'] = 'nein, erst nach Prüfung durch die Trainer/innen';
-$string['published_immediately'] = 'ja sofort, ohne Prüfung durch die Trainer/innen';
+$string['published_aftercheck'] = 'Nein, erst nach Prüfung durch die Trainer/innen';
+$string['published_immediately'] = 'Ja sofort, ohne Prüfung durch die Trainer/innen';
 $string['rejected'] = 'Abgelehnt';
 $string['rejectusers'] = 'für alle unsichtbar';
 $string['requiremodintro'] = 'Beschreibung notwendig';

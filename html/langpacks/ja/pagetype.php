@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'ja', version '3.11'.
+ * Strings for component 'pagetype', language 'ja', version '4.1'.
  *
  * @package     pagetype
  * @category    string
@@ -38,7 +38,7 @@ $string['page-mod-x'] = 'すべての活動モジュールページ';
 $string['page-mod-x-view'] = 'すべてのメイン活動モジュールページ';
 $string['page-my-index'] = 'ダッシュボードページ';
 $string['page-report-x'] = 'すべてのレポートページ';
-$string['page-site-index'] = 'フロントページのみ';
+$string['page-site-index'] = 'サイトホームのみ';
 $string['page-site-x'] = 'すべてのトップレベルサイトページ';
 $string['page-user-profile'] = 'ユーザプロファイルページのみ';
 $string['page-user-view'] = 'ユーザプロファイルページのみ';

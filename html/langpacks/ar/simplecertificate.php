@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'simplecertificate', language 'ar', version '3.11'.
+ * Strings for component 'simplecertificate', language 'ar', version '4.1'.
  *
  * @package     simplecertificate
  * @category    string
@@ -35,11 +35,11 @@ $string['certificatename'] = 'اسم الشهادة';
 $string['certificatename_help'] = 'اسم الشهادة';
 $string['certificatenot'] = 'تعذر العثور على عيِّنة الشهادة البسيطة';
 $string['certificatetext'] = 'نص الشهادة';
-$string['certificatetext_help'] = 'هذا هو النص الذي سيتم استعماله في خلف الشهادة. سيتم استبدال بعض الكلمات الخاصة بمتغيرات، مثل اسم المقرر الدراسي، اسم الطالب، التقدير...
+$string['certificatetext_help'] = 'هذا هو النص الذي سيتم استعماله في خلف الشهادة. سيتم استبدال بعض الكلمات الخاصة بمتغيرات، مثل اسم المساق، اسم الطالب، التقدير...
 وهذه هي:
 <ul>
 <li>{USERNAME} -> الاسم الكامل للمستخدم</li>
-<li>{COURSENAME} -> الاسم الكامل للمقرر (أو تسمية مُعرفة بديلة للمقرر)</li>
+<li>{COURSENAME} -> الاسم الكامل للمساق (أو تسمية مُعرفة بديلة للمساق)</li>
 <li>{GRADE} -> الدرجة المنسقة</li>
 <li>{DATE} -> التاريخ المنسق</li>
 <li>{OUTCOME} -> مخرجات التعلم</li>
@@ -62,10 +62,10 @@ $string['certificatetext_help'] = 'هذا هو النص الذي سيتم است
 <li>{COUNTRY} -> بلد المستخدم</li>
 <li>{URL} -> الصفحة الرئيسية للمستخدم</li>
 <li>{CERTIFICATECODE} -> نص الترميز الفريد للشهادة</li>
-<li>{USERROLENAME} -> تسمية دور المستخدم في المقرر</li>
-<li>{TIMESTART} -> تاريخ بدء انضمام المستخدم إلى المقرر</li>
+<li>{USERROLENAME} -> تسمية دور المستخدم في المساق</li>
+<li>{TIMESTART} -> تاريخ بدء انضمام المستخدم إلى المساق</li>
 <li>{USERIMAGE} -> صورة الملف الشخصي للمستخدم</li>
-<li>{USERRESULTS} -> نتائج المستخدم (التقديرات) في نشاطات المقرر الأخرى</li>
+<li>{USERRESULTS} -> نتائج المستخدم (التقديرات) في نشاطات المساق الأخرى</li>
 <li>{PROFILE_xxxx} -> الحقول المخصصة للملف الشخصي للمستخدم</li>
 </ul>
 من أجل استعمال الحقول المخصصة للملف الشخصي عليك استعمال البادئة "PORFILE_"، على سبيل المثال: سبق وأنت قمت بإنشاء حقل ملف شخصي مخصص ذي الاسم المختصر "birthday"، لذلك سيكون النص المستعمل في الشهادة بالشكل {PROFILE_BIRTHDAY}.

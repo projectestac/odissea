@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_multilang', language 'de', version '3.11'.
+ * Strings for component 'filter_multilang', language 'de', version '4.1'.
  *
  * @package     filter_multilang
  * @category    string
@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Mehrsprachiger Inhalt';
+$string['forceoldsyntax'] = 'Alte Syntax erzwingen';
+$string['forceoldsyntax_desc'] = 'Alte Mehrsprach-Syntax festlegen: &lt;span&gt; ohne class="multilang" und &lt;lang&gt;.';
 $string['privacy:metadata'] = 'Der Filter "Mehrsprachiger Inhalt" speichert keine personenbezogenen Daten.';

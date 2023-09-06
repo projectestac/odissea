@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_socialwall', language 'ar', version '3.11'.
+ * Strings for component 'format_socialwall', language 'ar', version '4.1'.
  *
  * @package     format_socialwall
  * @category    string
@@ -31,7 +31,7 @@ $string['missingcapdeletepost'] = 'ليست لديك صلاحية حذف الم�
 $string['missingcappostfile'] = 'ليست لديك صلاحية نشر الملف.';
 $string['missingcapposturl'] = 'ليست لديك صلاحية نشر الرابط.';
 $string['missingcapupdatepost'] = 'ليست لديك صلاحية تحديث هذا المنشور.';
-$string['page-course-view-socialwall'] = 'أي صفحة رئيسية لمقرر ذي تنسيق الحائط الاجتماعي';
+$string['page-course-view-socialwall'] = 'أي صفحة رئيسية لمساق ذي تنسيق الحائط الاجتماعي';
 $string['page-course-view-socialwall-x'] = 'أي صفحة لمساق ذي تنسيق الحائط الاجتماعي';
 $string['showalldicussions'] = 'إظهار كل المناقشات';
 $string['showallposts'] = 'إعادة تعيين المرشح لإظهار كل المنشورات';

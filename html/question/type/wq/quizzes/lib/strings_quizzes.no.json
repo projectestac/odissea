@@ -502,7 +502,7 @@
 		"gotsession": "Endringer lagret (revision ${n}).",
 		"showcas": "Bruk Wiris CAS",
 		"showcalcme": "Bruk CalcMe",
-		"learnmore": "Lær mer",
+		"learnmore": "Finn ut mer",
 
 
 		"catalan": "Català",
@@ -586,8 +586,8 @@
 		
 		"evaluate_keyword": "evaluere",
 		
-		"home_getting_started_welcome_header_text": "Velkommen til WirisQuizzes 4.7.0",
-        "home_getting_started_welcome_description_text": "Hei. Vi har innført en Kom i gang-del i menyen der du kan få tilgang til dokumentasjon, opplæring og nyheter for å lære mer om WirisQuizzes.",
+		"home_getting_started_welcome_header_text": "Vi presenterer WirisQuizzes 4.8.0: Nå med mulighet for håndskrevne svar på grafbaserte oppgaver",
+        "home_getting_started_welcome_description_text": "Vi er glade for å kunne lansere en ny svartype som gjør det mulig for studentene å tegne grafer for hånd. Ler mer om denne funksjonen i produktmerknadene og dokumentasjonen. Vi håper at du og studentene dine vil sette pris på dette nye tillegget til WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Produktmerknader",
         "home_getting_give_us_feedback_button_text": "Gi oss tilbakemelding",
         "home_getting_started_create_question_header_text": "Slik oppretter du ditt første spørsmål",
@@ -603,7 +603,15 @@
         "home_getting_started_contact_us_button_text": "Kontakt oss",
         "home_getting_started_visit_our_webpage_button_text": "Besøk webområdet vårt",
         "home_getting_started_report_an_issue_button_text": "Rapporter et problem",
-		"home_getting_started_list_button_text": "Komme i gang"
+		"home_getting_started_list_button_text": "Komme i gang",
+
+		"quizzes_studio_home_answer_type_sketch_label": "Skissere",
+		"quizzes_studio_home_initial_content_description_sketch": "Dette er starttilstanden for grafverktøyet som studentene ser når de går i gang med å svare på spørsmålet. Husk at på studentenes verktøylinje vil det bare være knapper for håndskrift og sletting. Bruk funksjonen 'test dette spørsmålet' for å vise hvordan det vil se ut.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_1": "Angi riktig svar på dette spørsmålet. Siden studentene bruker håndskriftverktøyet til å skissere løsningene sine, tillates det avvik fra det riktige svaret. Du kan justere størrelsen på tillatt avvik ved å klikke på 'Valideringsalternativer'.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Bruk knappen 'test dette spørsmålet' for å se hvordan det vises for studentene.",
+		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Skissere i samme forhold",
+		"quizzes_demo_sketch_title_menu" : "Skissere",
+		"home_getting_started_documentation_button_text" : "Dokumentasjon"
 	}
 }
 

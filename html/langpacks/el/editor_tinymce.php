@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'el', version '3.11'.
+ * Strings for component 'editor_tinymce', language 'el', version '4.1'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -373,9 +373,9 @@ $string['emotions_dlg:wink'] = 'Κλείσιμο ματιού';
 $string['emotions_dlg:yell'] = 'Φωνάζω';
 $string['fontselectlist'] = 'Διαθέσιμη λίστα γραμματοσειρών';
 $string['fullpage:delta_height'] = '';
-$string['fullpage:delta_width'] = '140';
+$string['fullpage:delta_width'] = '';
 $string['fullpage:desc'] = 'Ιδιότητες εγγράφου';
-$string['fullpage_dlg:active_color'] = 'Χρώμα συνδέσμου (Active)';
+$string['fullpage_dlg:active_color'] = 'Ενεργό χρώμα';
 $string['fullpage_dlg:add'] = 'Προσθήκη στοιχείου';
 $string['fullpage_dlg:add_base'] = 'Στοιχείο βάσης';
 $string['fullpage_dlg:add_comment'] = 'Κόμβος σχολίου';
@@ -499,7 +499,7 @@ $string['media_dlg:balance'] = 'Ισορροπία';
 $string['media_dlg:base'] = 'Βάση';
 $string['media_dlg:baseurl'] = 'Βασική διεύθυνση URL';
 $string['media_dlg:bgcolor'] = 'Υπόβαθρο';
-$string['media_dlg:cache'] = 'Μνήμη cache';
+$string['media_dlg:cache'] = 'Κρυφή μνήμη';
 $string['media_dlg:captioningid'] = 'Αναγνωριστικό υπομνηματισμού (λεζάντας)';
 $string['media_dlg:center'] = 'Κέντρο';
 $string['media_dlg:class_name'] = 'Κλάση';
@@ -535,7 +535,7 @@ $string['media_dlg:kioskmode'] = 'Λειτουργία Kiosk';
 $string['media_dlg:list'] = 'Λίστα';
 $string['media_dlg:liveconnect'] = 'SWLiveConnect';
 $string['media_dlg:loop'] = 'Επανάληψη';
-$string['media_dlg:maintainaspect'] = 'Διατήρηση αναλογίας πλ. - ύψους';
+$string['media_dlg:maintainaspect'] = 'Διατήρηση αναλογίας διαστάσεων (πλάτος-ύψος)';
 $string['media_dlg:menu'] = 'Εμφάνιση μενού';
 $string['media_dlg:mute'] = 'Σίγαση';
 $string['media_dlg:name'] = 'Όνομα';
@@ -577,7 +577,7 @@ $string['media_dlg:swstretchhalign'] = 'Οριζόντια-Στοίχιση επ
 $string['media_dlg:swstretchstyle'] = 'Στυλ Επέκτασης';
 $string['media_dlg:swstretchvalign'] = 'Κατακόρυφη-Στοίχιση επέκταση';
 $string['media_dlg:target'] = 'Στόχος';
-$string['media_dlg:targetcache'] = 'Μνήμη cache στόχου';
+$string['media_dlg:targetcache'] = 'Κρυφή μνήμη στόχου';
 $string['media_dlg:title'] = 'Εισαγωγή/επεξεργασία ενσωματωμένων πολυμέσων';
 $string['media_dlg:type'] = 'Τύπος';
 $string['media_dlg:uimode'] = 'Λειτουργία UI';
@@ -673,7 +673,7 @@ $string['style_dlg:box_height'] = 'Ύψος';
 $string['style_dlg:box_tab'] = 'Κουτί';
 $string['style_dlg:box_width'] = 'Πλάτος';
 $string['style_dlg:bullet_image'] = 'Εικόνα τελείας';
-$string['style_dlg:clip'] = 'Clip';
+$string['style_dlg:clip'] = '';
 $string['style_dlg:color'] = 'Χρώμα';
 $string['style_dlg:height'] = 'Ύψος';
 $string['style_dlg:left'] = 'Αριστερά';
@@ -764,7 +764,7 @@ $string['table_dlg:cell_limit'] = 'Έχετε ξεπεράσει τον μέγι
 $string['table_dlg:cell_row'] = 'Ενημέρωση όλων των κελιών της γραμμής';
 $string['table_dlg:cell_title'] = 'Ιδιότητες κελιού πίνακα';
 $string['table_dlg:cell_type'] = 'Τύπος κελιού';
-$string['table_dlg:cellpadding'] = 'Εσωτερικό περιθώριο κελιού';
+$string['table_dlg:cellpadding'] = 'Εσωτερικό γέμισμα/περιθώριο κελιού';
 $string['table_dlg:cellspacing'] = 'Απόσταση κελιών';
 $string['table_dlg:col_limit'] = 'Έχετε ξεπεράσει τον μέγιστο αριθμό στηλών που είναι {$cols}.';
 $string['table_dlg:colgroup'] = 'Ομάδα στηλών';
@@ -844,7 +844,7 @@ $string['xhtmlxtras:attribs_delta_width'] = '';
 $string['xhtmlxtras:attribs_desc'] = 'Εισαγωγή/επεξεργασία χαρακτηριστικών';
 $string['xhtmlxtras:cite_delta_height'] = '';
 $string['xhtmlxtras:cite_delta_width'] = '';
-$string['xhtmlxtras:cite_desc'] = 'Citation';
+$string['xhtmlxtras:cite_desc'] = 'Παραπομπή';
 $string['xhtmlxtras:del_delta_height'] = '';
 $string['xhtmlxtras:del_delta_width'] = '';
 $string['xhtmlxtras:del_desc'] = 'Διαγραφή';
@@ -856,7 +856,7 @@ $string['xhtmlxtras_dlg:attribs_title'] = 'Εισαγωγή/επεξεργασί
 $string['xhtmlxtras_dlg:attribute_attrib_tab'] = 'Ιδιότητες';
 $string['xhtmlxtras_dlg:attribute_events_tab'] = 'Γεγονότα';
 $string['xhtmlxtras_dlg:attribute_label_accesskey'] = 'Πλήκτρο πρόσβασης';
-$string['xhtmlxtras_dlg:attribute_label_cite'] = 'Cite';
+$string['xhtmlxtras_dlg:attribute_label_cite'] = 'Παραπομπή/Παράθεση';
 $string['xhtmlxtras_dlg:attribute_label_class'] = 'Κλάση';
 $string['xhtmlxtras_dlg:attribute_label_datetime'] = 'Ημερομηνία/ώρα';
 $string['xhtmlxtras_dlg:attribute_label_id'] = 'Αναγνωριστικό';
@@ -878,6 +878,6 @@ $string['xhtmlxtras_dlg:option_rtl'] = 'Δεξιά προς αριστερά';
 $string['xhtmlxtras_dlg:remove'] = 'Αφαίρεση';
 $string['xhtmlxtras_dlg:title_abbr_element'] = 'Στοιχείο συντομογραφίας';
 $string['xhtmlxtras_dlg:title_acronym_element'] = 'Στοιχείο ακρωνυμίου';
-$string['xhtmlxtras_dlg:title_cite_element'] = 'Στοιχείο αναφοράς';
+$string['xhtmlxtras_dlg:title_cite_element'] = 'Στοιχείο παράθεσης';
 $string['xhtmlxtras_dlg:title_del_element'] = 'Στοιχείο διαγραφής';
 $string['xhtmlxtras_dlg:title_ins_element'] = 'Στοιχείο εισαγωγής';

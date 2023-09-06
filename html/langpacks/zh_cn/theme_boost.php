@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'zh_cn', version '3.11'.
+ * Strings for component 'theme_boost', language 'zh_cn', version '4.1'.
  *
  * @package     theme_boost
  * @category    string
@@ -36,19 +36,30 @@ $string['choosereadme'] = 'Boost是一套现代且高度可定制化的主题。
 $string['configtitle'] = 'Boost';
 $string['currentinparentheses'] = '(当前)';
 $string['generalsettings'] = '常规设置';
+$string['loginbackgroundimage'] = '登录页面的背景图像';
+$string['loginbackgroundimage_desc'] = '作为登录页面的背景显示的图片。';
 $string['nobootswatch'] = '无';
 $string['pluginname'] = 'Boost';
 $string['preset'] = '主题预设';
 $string['preset_desc'] = '选择一种预设可明显改变主题外观。';
 $string['presetfiles'] = '主题预设附加文件';
 $string['presetfiles_desc'] = '使用预设文件可明显改变主题外观。有关创建及分享你自己主题预设文件的方法参见 <a href=https://docs.moodle.org/dev/Boost_Presets>Boost presets</a> , 也可以访问 <a href=http://moodle.net/boost>Presets repository</a> 获取他人分享的主题预设文件。';
+$string['privacy:drawerblockclosed'] = '版块抽屉的默认选项已关闭。';
+$string['privacy:drawerblockopen'] = '版块抽屉的默认选项已开启。';
+$string['privacy:drawerindexclosed'] = '索引抽屉的默认选项已关闭。';
+$string['privacy:drawerindexopen'] = '索引抽屉的默认选项已开启。';
 $string['privacy:drawernavclosed'] = '导航栏关闭时，当前的选项。';
 $string['privacy:drawernavopen'] = '导航栏打开时，当前的选项。';
 $string['privacy:metadata'] = 'Boost主题不会保存任何用户的任何个人信息。';
+$string['privacy:metadata:preference:draweropenblock'] = '用户关于隐藏或显示版块抽屉的偏好。';
+$string['privacy:metadata:preference:draweropenindex'] = '用户关于隐藏或显示索引抽屉的偏好。';
 $string['privacy:metadata:preference:draweropennav'] = '用户对显示或隐藏导航栏的偏好。';
 $string['rawscss'] = '原始SCSS';
 $string['rawscss_desc'] = '在此处提供 SCSS 或 CSS 代码，代码将被添加到样式表的后面。';
 $string['rawscsspre'] = '原始初始SCSS';
 $string['rawscsspre_desc'] = '可在此处提供初始化 SCSS 代码，代码将被添加到最开始。绝大多数情况下主要用于定义变量。';
 $string['region-side-pre'] = '右侧';
+$string['showfooter'] = '显示页脚';
 $string['totop'] = '回到顶部';
+$string['unaddableblocks'] = '不需要的版块';
+$string['unaddableblocks_desc'] = '使用此主题时指定不需要的版块，将不会列出在“添加版块”菜单中。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ko', version '3.11'.
+ * Strings for component 'folder', language 'ko', version '4.1'.
  *
  * @package     folder
  * @category    string
@@ -34,7 +34,10 @@ $string['folder:addinstance'] = '새로운 폴더 추가';
 $string['folder:managefiles'] = '폴더 모듈에서 파일관리';
 $string['folder:view'] = '폴더 콘텐츠 보기';
 $string['foldercontent'] = '파일 및 하위 폴더';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = '폴더';
+$string['modulename_link'] = 'mod/folder/view';
 $string['modulenameplural'] = '폴더';
 $string['page-mod-folder-view'] = '폴더 모듈 주 페이지';
 $string['page-mod-folder-x'] = '모든 폴더 모듈 페이지';

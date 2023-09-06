@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'zh_cn', version '3.11'.
+ * Strings for component 'enrol_meta', language 'zh_cn', version '4.1'.
  *
  * @package     enrol_meta
  * @category    string
@@ -42,3 +42,7 @@ $string['pluginname_desc'] = '课程元链接选课插件在两个不同课程�
 $string['privacy:metadata:core_group'] = 'Enrol meta 插件可以创建新组或使用现有组添加链接课程的所有参与者。';
 $string['syncall'] = '同步所有已选课用户';
 $string['syncall_desc'] = '如果启用所有已选课用户都会被同步，无论他们是否参与父课程。如果禁用，则至少有一个已同步角色的用户才会被选课到子课程。';
+$string['wscannotcreategroup'] = '无权在链接的课程 ID = {$a} 中创建小组。';
+$string['wsinvalidcourse'] = '课程 id = {$a} 不存在或没有权限在元注册中链接。';
+$string['wsinvalidmetacourse'] = '元课程 id = {$a} 不存在或无添加注册实例的权限。';
+$string['wsnoinstancesspecified'] = '未指定实例';

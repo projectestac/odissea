@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ru', version '3.11'.
+ * Strings for component 'message', language 'ru', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Не принимать сообщения от �
 $string['blockuser'] = 'Блокировать пользователя';
 $string['blockuserconfirm'] = 'Вы уверены, что хотите заблокировать {$a}?';
 $string['blockuserconfirmbutton'] = 'Блок';
-$string['canceledit'] = 'Отменить редактирование сообщений';
 $string['cancelselection'] = 'Отменить выбор сообщения';
 $string['cantblockuser'] = 'Вы не можете заблокировать пользователя {$a}, потому что у него есть роль с правом отправлять сообщения всем пользователям.';
 $string['contactableprivacy'] = 'Принимать сообщения от:';
@@ -67,7 +66,7 @@ $string['deleteselectedmessagesconfirm'] = 'Вы уверены, что хоти
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Вы уверены, что хотите удалить выбранные личные сообщения?';
 $string['disableall'] = 'Отключить уведомления';
 $string['disabled'] = 'На этом сайте отключена система обмена сообщениями.';
-$string['disallowed'] = 'Выключены';
+$string['disallowed'] = 'Запрещено';
 $string['editmessages'] = 'Редактировать сообщения';
 $string['emailtagline'] = 'Это письмо - копия сообщения, отправленного Вам на сайте «{$a->sitename}». Для ответа пройдите по ссылке <a href="{$a->url}">{$a->url}</a>.';
 $string['enabled'] = 'Включено';
@@ -86,6 +85,7 @@ $string['eventmessageviewed'] = 'Сообщение просмотрено';
 $string['eventnotificationsent'] = 'Уведомление отправлено';
 $string['eventnotificationviewed'] = 'Уведомление просмотрено';
 $string['forced'] = 'Заблокировано';
+$string['forcedmessage'] = 'Разрешено';
 $string['groupconversations'] = 'Группа';
 $string['groupinfo'] = 'Информация о группе';
 $string['guestnoeditmessage'] = 'Гость не может редактировать настройки обмена сообщениями';
@@ -105,8 +105,6 @@ $string['loggedoffdescription'] = 'Когда Вы вне сайта';
 $string['managemessageoutputs'] = 'Настройки уведомлений по умолчанию';
 $string['message'] = 'Сообщение';
 $string['messagecontactrequest'] = '{$a->user} просит добавить себя в качестве собеседника. Посетите страницу <a href="{$a->url} "> запросов контактов </a>, чтобы ответить на запрос.';
-$string['messagecontactrequestsnotification'] = '{$a} хочет быть добавлен в контакты';
-$string['messagecontactrequestsnotificationsubject'] = 'Запрос контакта от {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: запрос контакта от {$a->user}';
 $string['messagecontentaudio'] = 'Аудио';
 $string['messagecontentimage'] = 'Изображение';
@@ -137,7 +135,6 @@ $string['nofavourites'] = 'Нет помеченных бесед';
 $string['noframesjs'] = 'Использовать простой интерфейс';
 $string['nogroupconversations'] = 'Нет групповых бесед';
 $string['noindividualconversations'] = 'Нет личных бесед';
-$string['nomessages'] = 'Нет сообщений';
 $string['nomessagesfound'] = 'Сообщений не найдено';
 $string['noncontacts'] = 'Собеседники отсутствуют';
 $string['nonotifications'] = 'Уведомлений нет';
@@ -156,11 +153,7 @@ $string['offline'] = 'Вне сайта';
 $string['on'] = 'Вкл.';
 $string['online'] = 'На сайте';
 $string['otherparticipants'] = 'Другие участники';
-$string['outputdisabled'] = 'Вывод отключен';
-$string['outputdoesnotexist'] = 'Место для вывода сообщений не задано';
-$string['outputenabled'] = 'Вывод включен';
 $string['outputnotavailable'] = 'Недоступно';
-$string['outputnotconfigured'] = 'Не настроено';
 $string['page-message-x'] = 'Любая из страниц сообщений';
 $string['participants'] = 'Участники';
 $string['pendingcontactrequests'] = 'Ожидающих запросов на добавление в собеседники: {$a}';
@@ -256,8 +249,8 @@ $string['showmessagewindownonew'] = 'Показать окно без новых
 $string['showmessagewindowwithcount'] = 'Показать окно с новыми сообщениями ({$a})';
 $string['shownotificationwindownonew'] = 'Показать окно без новых уведомлений';
 $string['shownotificationwindowwithcount'] = 'Показать окно с новыми уведомлениями ({$a})';
-$string['togglemessagemenu'] = 'Переключить меню сообщений';
-$string['togglenotificationmenu'] = 'Переключить меню уведомлений';
+$string['togglemessagemenu'] = 'Сообщения';
+$string['togglenotificationmenu'] = 'Уведомления';
 $string['totalconversations'] = 'Всего бесед: {$a}';
 $string['touserdoesntexist'] = 'Вы не можете отправить сообщение пользователю с id ({$a}) - пользователь не существует';
 $string['unabletomessage'] = 'Вы не можете отправить сообщение этому пользователю';

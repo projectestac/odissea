@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'fr', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'fr', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -40,6 +40,7 @@ $string['idnumber'] = 'ID';
 $string['import'] = 'Importer';
 $string['importfile'] = 'Fichier de description du référentiel CSV';
 $string['importfile_help'] = 'Un référentiel de compétence peut être importé au moyen d\'un fichier texte. Le format de ce fichier peut être consulté en créant, puis exportant un nouveau référentiel de compétences.';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = 'Importation des données du fichier';
 $string['invalidimportfile'] = 'Le format de fichier n\'est pas valide';
 $string['isframework'] = 'Est un référentiel';

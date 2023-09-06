@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ja', version '3.11'.
+ * Strings for component 'page', language 'ja', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -36,10 +36,12 @@ $string['indicator:cognitivedepth'] = 'ページ認知的';
 $string['indicator:cognitivedepth_help'] = 'この指標はページリソースで学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'ページ認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がページリソースから提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧)。';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'ページ社会的';
 $string['indicator:socialbreadth_help'] = 'この指標はページリソースで学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'ページ社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がページリソースから提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = '古いコースファイルの移行';
 $string['legacyfilesactive'] = 'アクティブ';
 $string['legacyfilesdone'] = '終了';
@@ -54,6 +56,7 @@ $string['modulename_help'] = 'ページモジュールにおいて教師はテ�
 
 * コースの利用規約を表示またはコースシラバス概要を表示するため
 * 説明文と共にいくつかのビデオまたは音声ファイルを埋め込むため';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'ページ';
 $string['optionsheader'] = '表示オプション';
 $string['page-mod-page-x'] = 'すべてのページモジュールページ';

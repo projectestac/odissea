@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'it', version '3.11'.
+ * Strings for component 'page', language 'it', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -36,10 +36,12 @@ $string['indicator:cognitivedepth'] = 'Pagina cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse Pagina.';
 $string['indicator:cognitivedepthdef'] = 'Pagina cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalla risorsa Pagina (Livelli: Nessuna visualizzazione, Visualizzazione)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Pagina sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse Pagina';
 $string['indicator:socialbreadthdef'] = 'Pagina sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dalle risorse Pagina (Livelli: Nessuna partecipazione, Partecipazione da solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migrazione dei file di corsi precedenti';
 $string['legacyfilesactive'] = 'Attivo';
 $string['legacyfilesdone'] = 'Completato';
@@ -54,6 +56,7 @@ Per contenuti corposi, si raccomanda di utilizzare il modulo di attività libro 
 
 * presentare le condizioni di partecipazione o il programma del corso
 * inserire video e suoni accompagnati da testo esplicativo';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Pagine';
 $string['optionsheader'] = 'Opzioni di visualizzazione';
 $string['page-mod-page-x'] = 'Qualsiasi pagina con moduli';

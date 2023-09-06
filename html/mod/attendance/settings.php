@@ -53,6 +53,9 @@ if ($ADMIN->fulltree) {
     $settings->add(new admin_setting_configcheckbox('attendance/studentscanmark',
         get_string('studentscanmark', 'attendance'), get_string('studentscanmark_desc', 'attendance'), 1));
 
+    $settings->add(new admin_setting_configcheckbox('attendance/allowupdatestatus',
+        get_string('allowupdatestatus', 'attendance'), get_string('allowupdatestatus_desc', 'attendance'), 0));
+
     $settings->add(new admin_setting_configtext('attendance/rotateqrcodeinterval',
         get_string('rotateqrcodeinterval', 'attendance'),
         get_string('rotateqrcodeinterval_desc', 'attendance'), '15', PARAM_INT));
@@ -154,10 +157,16 @@ if ($ADMIN->fulltree) {
     $settings->add(new admin_setting_configcheckbox('attendance/studentscanmark_default',
         get_string('studentscanmark', 'attendance'), '', 0));
 
+    $settings->add(new admin_setting_configcheckbox('attendance/allowupdatestatus_default',
+        get_string('allowupdatestatus', 'attendance'), '', 0));
+
     $options = attendance_get_automarkoptions();
 
     $settings->add(new admin_setting_configselect('attendance/automark_default',
         get_string('automark', 'attendance'), '', 0, $options));
+
+    $settings->add(new admin_setting_configduration('attendance/studentsearlyopentime',
+        get_string('studentsearlyopentime', 'attendance'), get_string('studentsearlyopentime_help', 'attendance'), 0));
 
     $settings->add(new admin_setting_configcheckbox('attendance/randompassword_default',
         get_string('randompassword', 'attendance'), '', 0));

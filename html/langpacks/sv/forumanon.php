@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumanon', language 'sv', version '3.11'.
+ * Strings for component 'forumanon', language 'sv', version '4.1'.
  *
  * @package     forumanon
  * @category    string
@@ -30,4 +30,5 @@ $string['modeflatnewestfirst'] = 'Visa svar i enkel form (nyaste överst)';
 $string['modeflatoldestfirst'] = 'Visa svar i enkel form (äldsta överst)';
 $string['modenested'] = 'Visa svar i inkapslad form';
 $string['modethreaded'] = 'Visa svar i trådad form';
+$string['modulename_link'] = 'forumanon';
 $string['namenews_help'] = 'Nyhetsforumet är ett speciellt forum för meddelanden som skapas automatiskt när en kurs skapas. En kurs kan bara ha ett nyhetsforum. Endast lärare och administratörer kan publicera i nyhetsforumet. Blocket "Senaste nytt" kommer att visa de senaste diskussionerna från nyhetsforumet.';

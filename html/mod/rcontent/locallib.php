@@ -26,7 +26,7 @@ function rcontent_get_what_grade_array() {
  * @param int $groupingid -> ID of the group
  * @return int -> count of grades
  */
-function rcontent_get_count_users($rcontentid, $groupingid=null, $context, $filter = '') {
+function rcontent_get_count_users($rcontentid, $context, $groupingid = null, $filter = '') {
 
     global $CFG, $USER, $DB;
 

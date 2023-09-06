@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_moodletxt', language 'ar', version '3.11'.
+ * Strings for component 'block_moodletxt', language 'ar', version '4.1'.
  *
  * @package     block_moodletxt
  * @category    string
@@ -77,7 +77,7 @@ $string['headeraddressbooks'] = 'دفاتر عناوينك';
 $string['headerreceivedmessages'] = 'رسائلك المتلقاة';
 $string['headersend'] = 'إرسل رسالى نصية';
 $string['headertags'] = 'وسومك';
-$string['headertemplatesnew'] = 'إضافة قالب جديد';
+$string['headertemplatesnew'] = 'إضافة مظهر جديد';
 $string['imgtitlesentmessages'] = 'معاينة رسائلك المرسلة سابقًا';
 $string['inboxfoldersadd'] = 'إضافة مجلد جديد';
 $string['inboxtableheadertags'] = 'الوسوم';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupselect', language 'eu', version '3.11'.
+ * Strings for component 'groupselect', language 'eu', version '4.1'.
  *
  * @package     groupselect
  * @category    string
@@ -93,6 +93,7 @@ $string['modulename_help'] = 'Utzi partaideei taldeak sortzen eta aukeratzen. Ez
 * Taldeei gainbegiraleak eslei dakizkieke.
 * Irakasleak ikastaroko taldeen zerrenda csv fitxategi batean esporta dezake.
 * Moodle-ko oinarrizko taldeekin bateragarritasuna: taldeak beste asmoekin ere sortu, zereginetako taldeko bidalketak, etab.';
+$string['modulename_link'] = 'mod/groupselect/view';
 $string['modulenameplural'] = 'Talde-aukeraketa automatikoak';
 $string['nogroups'] = 'Sentitzen dugu, ez dago aukeratzeko talderik';
 $string['notavailableanymore'] = 'Sentitzen dugu, talde-aukeraketa dagoeneko ez dago eskuragarri ({$a}tik).';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_upcoming', language 'ar', version '3.11'.
+ * Strings for component 'block_calendar_upcoming', language 'ar', version '4.1'.
  *
  * @package     block_calendar_upcoming
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = 'إضافة كتلة جديدة للأحداث القادمة';
-$string['calendar_upcoming:myaddinstance'] = 'إضافة كتلة جديدة للأحداث القادمة إلى لوحة التحكم';
+$string['calendar_upcoming:myaddinstance'] = 'إضافة كتلة جديدة للأحداث القادمة إلى دفة القيادة';
 $string['gotocalendar'] = 'إذهب إلى التقويم..';
 $string['pluginname'] = 'الأحداث القادمة';
 $string['privacy:metadata'] = 'كتلة الأحداث القادمة تظهر فقط بيانات التقويم الموجودة.';

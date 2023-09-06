@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'ur', version '3.11'.
+ * Strings for component 'block_settings', language 'ur', version '4.1'.
  *
  * @package     block_settings
  * @category    string
@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['enabledock'] = 'صارف کو اس بلاک کو ڈاک کرنے کی اجازت دیں';
 $string['pluginname'] = 'انتظامیہ';
+$string['privacy:metadata'] = 'ایڈمنسٹریشن بلاک صرف دوسرے مقامات پر ذخیرہ شدہ ڈیٹا کو دکھاتا ہے۔';
+$string['settings:addinstance'] = 'ایک نیا ایڈمنسٹریشن بلاک شامل کریں';
+$string['settings:myaddinstance'] = 'ڈیش بورڈ میں ایک نیا ایڈمنسٹریشن بلاک شامل کریں';

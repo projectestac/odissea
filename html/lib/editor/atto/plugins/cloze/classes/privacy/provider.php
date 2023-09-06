@@ -24,8 +24,6 @@
 
 namespace atto_cloze\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy Subsystem for atto_cloze implementing null_provider.
  *

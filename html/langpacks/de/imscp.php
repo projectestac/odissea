@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'de', version '3.11'.
+ * Strings for component 'imscp', language 'de', version '4.1'.
  *
  * @package     imscp
  * @category    string
@@ -35,10 +35,12 @@ $string['indicator:cognitivedepth'] = 'IMS Paket kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer IMS Content Package Ressource erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'IMS Paket kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die IMS Content Package Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'IMS Paket sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer IMS-Paket-Ressource erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'IMS Paket sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die IMS-Paket-Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = 'Pakete archivieren';
 $string['keepoldexplain'] = 'Wie viele Pakete sollen archiviert werden?';
 $string['modulename'] = 'IMS-Content';
@@ -47,6 +49,7 @@ $string['modulename_help'] = 'Ein IMS-Content-Paket ist eine Sammlung von Lernin
 Ein IMS Content Paket wird als gezippte Datei hochgeladen und in Moodle geöffnet.
 
 Im Unterschied zur Aktivität \'Lernpaket\' (geeignet für Pakete im SCORM-Standard) werden bei IMS Paketen keine Ergebnisse der Teilnehmer/innen abgespeichert.';
+$string['modulename_link'] = 'mod/imscp/view';
 $string['modulenameplural'] = 'IMS-Content';
 $string['navigation'] = 'Navigation';
 $string['packagefile'] = 'Paketdatei';

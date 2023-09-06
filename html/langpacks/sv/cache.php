@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'sv', version '3.11'.
+ * Strings for component 'cache', language 'sv', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -40,6 +40,8 @@ $string['cachedef_calendar_subscriptions'] = 'Kalenderprenumerationer';
 $string['cachedef_capabilities'] = 'Funktionsbehörigheter';
 $string['cachedef_completion'] = 'Status för aktivitetsslutförande';
 $string['cachedef_config'] = 'Konfigurationsinställningar';
+$string['cachedef_contentbank_allowed_categories'] = 'Tillåtna innehållsbank-kurskategorier för nuvarande användare';
+$string['cachedef_contentbank_allowed_courses'] = 'Tillåtna innehållsbank-kurser för nuvarande användare';
 $string['cachedef_contentbank_context_extensions'] = 'Tillåtna tillägg samt deras stödpluginmoduler i ett innehållsbankskontext';
 $string['cachedef_contentbank_enabled_extensions'] = 'Tillåtna tillägg samt deras stödpluginmoduler i innehållsbanken';
 $string['cachedef_contextwithinsights'] = 'Kontext med insikter';
@@ -50,10 +52,14 @@ $string['cachedef_coursecatrecords'] = 'Kurskategoriposter';
 $string['cachedef_coursecattree'] = 'Kurskategoriträd';
 $string['cachedef_coursecompletion'] = 'Kursslutförandestatus';
 $string['cachedef_coursecontacts'] = 'Lista med kurskontakter';
+$string['cachedef_courseeditorstate'] = 'Cachenycklar för sessionskurstillstånd för att identifiera kursändringar i användargränssnittet';
 $string['cachedef_coursemodinfo'] = 'Ackumulerad information om moduler och sektioner för varje kurs';
+$string['cachedef_coursesectionspreferences'] = 'Inställningar för kursavsnitt';
 $string['cachedef_databasemeta'] = 'Databasmetainformation';
+$string['cachedef_deprecatedcapabilities'] = 'Föråldrade systemfunktionsbehörigheter';
 $string['cachedef_eventinvalidation'] = 'Ogiltigförklarande av händelse';
 $string['cachedef_externalbadges'] = 'Externa märken för en särskild användare';
+$string['cachedef_file_imageinfo'] = 'Bildinformation, t.ex. dimensioner';
 $string['cachedef_fontawesomeiconmapping'] = 'Ikonmappning för awesome-fonter';
 $string['cachedef_grade_categories'] = 'Betygskategori-frågor';
 $string['cachedef_grade_letters'] = 'Betygbokstavs-frågor';
@@ -77,6 +83,7 @@ $string['cachedef_postprocessedcss'] = 'Efterbearbetad CSS';
 $string['cachedef_presignup'] = 'Förhandsregistreringsdata för specifik oregistrerad användare';
 $string['cachedef_questiondata'] = 'Frågedefinitioner';
 $string['cachedef_recommendation_favourite_course_content_items'] = 'Rekommendation av kursinnehållsobjekt';
+$string['cachedef_reportbuilder_allowed_reports'] = 'Användartillåtna rapporter enligt målgrupp';
 $string['cachedef_repositories'] = 'Instansdata på lagringsplatser';
 $string['cachedef_roledefs'] = 'Rolldefinitioner';
 $string['cachedef_string'] = 'Språksträngscache';
@@ -91,6 +98,7 @@ $string['cachedef_userselections'] = 'Data som används för att lagra användar
 $string['cachedef_yuimodules'] = 'Definitioner för YUI modul';
 $string['cachelock_file_default'] = 'Standardfillåsning';
 $string['cachestores'] = 'Cachelagringsytor';
+$string['cacheusage'] = 'Cacheanvändning';
 $string['caching'] = 'Cachning';
 $string['canuselocalstore'] = 'Kan använda lokal lagring';
 $string['component'] = 'Komponent';
@@ -113,6 +121,7 @@ $string['deletestore'] = 'Ta bort lagringsplats';
 $string['deletestoreconfirmation'] = 'Är du säker på att du vill ta bort "{$a}"-lagringsplatsen?';
 $string['deletestorehasmappings'] = 'Du kan inte ta bort denna lagringsplats då det finns mappningar gjorda mot den. Vänligen ta bort mappningarna innan du tar bort lagringsplatsen.';
 $string['deletestoresuccess'] = 'Tog bort cache-arkivet';
+$string['editdefinitionmapping'] = 'Redigera definitionsmappning';
 $string['editdefinitionmappings'] = '{$a}-definitionsmappningar';
 $string['editdefinitionsharing'] = 'Redigera definitionsdelning för {$a}';
 $string['editmappings'] = 'Redigera mappningar';
@@ -155,8 +164,6 @@ $string['pluginsummaries'] = 'Installerade cachelagringsplatser';
 $string['privacy:metadata:cachestore'] = 'Cache-undersystemet lagrar data tillfälligt på uppdrag av andra delar i Moodle. Dessa data är inte lätta att identifiera, och är mycket kortlivade. Det fungerar som en cache av data som lagras någon annanstans i Moodle, och bör därför redan hanteras av dessa Moodle-komponenter.';
 $string['purge'] = 'Rensa';
 $string['purgeagain'] = 'Rensa på nytt';
-$string['purgedefinitionsuccess'] = 'Tömde begärd definition';
-$string['purgestoresuccess'] = 'Tömde det önskade arkivet.';
 $string['purgexdefinitionsuccess'] = 'Tömde "{$a->name}"-cachen ({$a->component}/{$a->area}).';
 $string['purgexstoresuccess'] = 'Tömde "{$a->store}"-arkivet.';
 $string['requestcount'] = 'Testa med {$a} förfrågningar';
@@ -204,5 +211,14 @@ $string['tested'] = 'Testad';
 $string['testperformance'] = 'Testa prestanda';
 $string['unsupportedmode'] = 'Läget stöds inte';
 $string['untestable'] = 'Går inte att testa';
+$string['updatedefinitionmapping'] = 'Redigera definitionsmappning';
+$string['updatedefinitionsharing'] = 'Redigera definitionsdelning';
+$string['usage_items'] = 'Objekt';
+$string['usage_mean'] = 'Genomsnittlig storlek';
+$string['usage_realtotal'] = 'Faktisk storlek (om känd)';
+$string['usage_samples'] = 'Objektsurval per cachetyp';
+$string['usage_sd'] = 'Stdav';
+$string['usage_total'] = 'Uppskattad totalstorlek';
+$string['usage_totalmargin'] = 'Felmarginal (95%)';
 $string['userinputsharingkey'] = 'Anpassad delningsnyckel';
 $string['userinputsharingkey_help'] = 'Ange din egen privata nyckel här. När du ställer in andra lagringsplatser på andra webbplatser du vill dela data med, se till att du ställer in exakt samma nyckel där.';

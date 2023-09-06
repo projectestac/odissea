@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'zh_cn', version '3.11'.
+ * Strings for component 'plugin', language 'zh_cn', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -67,6 +67,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = '没有安装这类插件';
 $string['notdownloadable'] = '不能下载这个安装包';
 $string['notdownloadable_help'] = 'ZIP更新包不能自动下载。请参阅文档页面获取更多帮助。';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = '笔记';
 $string['notsupported'] = '插件可能与 Moodle 版本 {$a} 不兼容';
 $string['notwritable'] = '插件的文件不可写';
@@ -126,6 +127,8 @@ $string['type_calendartype'] = '日历类型';
 $string['type_calendartype_plural'] = '日历类型';
 $string['type_contentbank'] = '内容库';
 $string['type_contentbank_plural'] = '内容库插件';
+$string['type_contenttype'] = '内容库';
+$string['type_contenttype_plural'] = '内容库插件';
 $string['type_coursereport'] = '课程报表';
 $string['type_coursereport_plural'] = '课程报表';
 $string['type_customfield'] = '自定义字段';
@@ -174,6 +177,8 @@ $string['type_portfolio'] = '组合';
 $string['type_portfolio_plural'] = '组合';
 $string['type_profilefield'] = '组合域类型';
 $string['type_profilefield_plural'] = '配置文件字段类型';
+$string['type_qbank'] = '题库插件';
+$string['type_qbank_plural'] = '题库插件';
 $string['type_qbehaviour'] = '题目行为';
 $string['type_qbehaviour_plural'] = '题目行为';
 $string['type_qformat'] = '题目导入导出格式';
@@ -223,6 +228,7 @@ $string['validationmsg_maturity'] = '声明的成熟度级别';
 $string['validationmsg_maturity_help'] = '该插件可以声明其成熟度级别。 如果维护者认为插件稳定，则声明的成熟度级别将读取 MATURITY_STABLE。 所有其他成熟度级别（例如 alpha 或 beta）都应被视为不稳定并发出警告。';
 $string['validationmsg_missingcomponent'] = '插件未声明其组件名称';
 $string['validationmsg_missingcomponent_help'] = '所有插件必须在version.php文件的“$plugin-$component”中提供完整的组件名称。';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = '英文文件名不匹配';
 $string['validationmsg_missingexpectedlangenfile_info'] = '指定的插件类型缺少应有的英语语言文件{$a}。';
 $string['validationmsg_missinglangenfile'] = '没有找到英语语言文件';

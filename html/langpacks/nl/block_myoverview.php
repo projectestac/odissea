@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'nl', version '3.11'.
+ * Strings for component 'block_myoverview', language 'nl', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtofavourites'] = 'Toevoegen aan favorieten';
-$string['all'] = 'Alles (behalve verborgen)';
-$string['allincludinghidden'] = 'Alle';
+$string['all'] = 'Alle';
+$string['allincludinghidden'] = 'Alle (ook verborgen)';
 $string['aria:addtofavourites'] = 'Favoriet voor';
 $string['aria:allcourses'] = 'Toon alle cursussen behalve verborgen cursussen';
 $string['aria:allcoursesincludinghidden'] = 'Toon alle cursussen';
@@ -57,7 +57,7 @@ $string['availablegroupings'] = 'Beschikbare filters';
 $string['availablegroupings_desc'] = 'Cursusfilters die beschikbaar zijn voor selectie door gebruikers. Als er geen is geselecteerd, worden alle cursussen weergegeven.';
 $string['card'] = 'Kaart';
 $string['cards'] = 'Kaarten';
-$string['complete'] = 'voltooid';
+$string['clearsearch'] = 'Verwijder zoekoverzicht';
 $string['completepercent'] = '{$a}% voltooid';
 $string['courseprogress'] = 'Cursusvordering:';
 $string['customfield'] = 'Aangepast veld';
@@ -76,7 +76,6 @@ $string['layouts'] = 'Beschikbare lay-outs';
 $string['layouts_help'] = 'Cursus overzicht-lay-outs die beschikbaar zijn voor selectie door gebruikers. Als er geen geselecteerd zijn, zal de kaart-lay-out gebruikt worden.';
 $string['list'] = 'Lijst';
 $string['myoverview:myaddinstance'] = 'Een nieuw cursusoverzichtblok toevoegen aan Mijn startpagina';
-$string['nocourses'] = 'Geen cursussen';
 $string['nocustomvalue'] = 'Geen {$a}';
 $string['past'] = 'Voltooid';
 $string['pluginname'] = 'Cursusoverzicht';
@@ -86,7 +85,11 @@ $string['privacy:metadata:overviewsortpreference'] = 'Het Cursusoverzichtsblok s
 $string['privacy:metadata:overviewviewpreference'] = 'Het Cursusoverzichtsblok bekijk voorkeur.';
 $string['privacy:request:preference:set'] = 'De waarde van de instelling \'{$a->name}\' was \'{$a->value}\'';
 $string['removefromfavourites'] = 'Verwijderen uit favorieten';
+$string['searchcourses'] = 'Zoek cursussen';
 $string['shortname'] = 'Korte naam';
 $string['show'] = 'Toon deze cursus';
+$string['sortbylastaccessed'] = 'Sorteer op laatste toegang';
+$string['sortbyshortname'] = 'Sorteer op korte naam';
+$string['sortbytitle'] = 'Sorteer op cursusnaam';
 $string['summary'] = 'Samenvatting';
 $string['title'] = 'Cursusnaam';

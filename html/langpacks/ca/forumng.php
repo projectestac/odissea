@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumng', language 'ca', version '3.11'.
+ * Strings for component 'forumng', language 'ca', version '4.1'.
  *
  * @package     forumng
  * @category    string
@@ -28,4 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['event:discussionviewed'] = 'Visualitza el debat';
 $string['filterdiscussions'] = 'Visualitza els debats amb etiqueta';
 $string['forumng:viewdiscussion'] = 'Visualitza els debats';
+$string['forumtype_link'] = 'mod/forumng/forumtypes';
+$string['history'] = 'Historial';
+$string['historypage'] = 'Historial: {$a}';
 $string['markpostread'] = 'Marca el missatge del fòrum com a llegit';

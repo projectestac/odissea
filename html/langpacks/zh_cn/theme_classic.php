@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'zh_cn', version '3.11'.
+ * Strings for component 'theme_classic', language 'zh_cn', version '4.1'.
  *
  * @package     theme_classic
  * @category    string
@@ -38,3 +38,4 @@ $string['privacy:metadata'] = '经典主题不存储任何个人数据。';
 $string['region-side-post'] = '右';
 $string['region-side-pre'] = '左';
 $string['sitetitle'] = '网站名称';
+$string['totop'] = '转到顶部';

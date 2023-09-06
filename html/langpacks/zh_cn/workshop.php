@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'zh_cn', version '3.11'.
+ * Strings for component 'workshop', language 'zh_cn', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -43,8 +43,10 @@ $string['allocationdone'] = '分配完成';
 $string['allocationerror'] = '分配错误';
 $string['allowedfiletypesforoverallfeedback'] = '反馈附件允许的文件类型';
 $string['allowedfiletypesforoverallfeedback_help'] = '可以通过提供允许的文件类型列表来限制反馈附件文件类型。如果字段为空，则允许所有文件类型。';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
 $string['allowedfiletypesforsubmission'] = '提交附件允许的文件类型';
 $string['allowedfiletypesforsubmission_help'] = '可以通过提供允许的文件类型列表来限制提交附件文件类型。如果字段为空，则允许所有文件类型。';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = '所有提交({$a})';
 $string['alreadygraded'] = '已评分';
 $string['areaconclusion'] = '总结文本';
@@ -193,10 +195,12 @@ $string['indicator:cognitivedepth'] = '互动评价活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 互动评价活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '互动评价活动认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与者已达到互动评价活动提供的认知参与百分比(级别=未查看、查看、提交、查看反馈、评论反馈、查看反馈后重新提交)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '互动评价活动认社会广度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在 互动评价活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '互动评价活动认社会广度';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔内，参与者达到了互动评价活动所提供的社会参与百分比(级别=没有参与，单独参与，和其他人一起参与)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = '信息';
 $string['instructauthors'] = '提交说明';
 $string['instructreviewers'] = '评价说明';
@@ -209,6 +213,7 @@ $string['legacyallocationplugincron'] = '遗留的cron互动评价分配';
 $string['maxbytes'] = '最大提交附件大小';
 $string['modulename'] = '互动评价';
 $string['modulename_help'] = '互动评价活动模块可以收集、评价和对学生的工作进行同学间互评。学生可以提交任何数字内容(文件)，如文字处理文档或电子表格，还可以使用文本编辑器直接在字段中输入文本。提交的作品将使用教师定义的多标准评价表单进行评价。同学间互评和理解评价表单的过程，可由教师提供范例，连同参考评价一起预先练习。学生们有机会评价他们的一个或多个同学的提交。如果需要，提交和评价人可以是匿名的。学生在一次互动评价活动中获得两个成绩——提交的成绩和对同学提交评价的成绩。两个成绩都记录在成绩单上。';
+$string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = '互动评价';
 $string['myassessments'] = '我的评价';
 $string['mysubmission'] = '我的提交';
@@ -349,6 +354,7 @@ $string['submissiongradeof'] = '提交({$a})的成绩';
 $string['submissionlastmodified'] = '最后修改';
 $string['submissionrequiredcontent'] = '您需要输入一些文字或添加一个文件。';
 $string['submissionrequiredfile'] = '您需要添加一个文件或输入一些文本。';
+$string['submissionsallocation'] = '提交资料分配';
 $string['submissionsettings'] = '提交设置';
 $string['submissionsreport'] = '互动评价提交报表';
 $string['submissionstart'] = '提交打开从';

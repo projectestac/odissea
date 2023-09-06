@@ -1,6 +1,6 @@
 This files describes API changes in the editor_atto code.
 
-=== 3.11 ===
+=== 4.1 ===
 
 * Two new helper functions have been added to lib/editor/atto
 to handle enable/disable the empty placeholder for empty content in the HTML source view:

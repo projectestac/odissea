@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredfeedback', language 'el', version '3.11'.
+ * Strings for component 'qbehaviour_deferredfeedback', language 'el', version '4.1'.
  *
  * @package     qbehaviour_deferredfeedback
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Καθυστερημένη ανατροφοδότηση';
-$string['privacy:metadata'] = 'Το πρόσθετο «Συμπεριφορά καθυστερημένης ανατροφοδότησης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata'] = 'Το πρόσθετο συμπεριφοράς ερώτησης «Καθυστερημένη ανατροφοδότηση» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

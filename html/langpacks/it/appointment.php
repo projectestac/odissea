@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'it', version '3.11'.
+ * Strings for component 'appointment', language 'it', version '4.1'.
  *
  * @package     appointment
  * @category    string
@@ -58,6 +58,7 @@ $string['appointmentcustomfields'] = 'Campi personalizzati del meeting';
 $string['appointmentname'] = 'Nome meeting';
 $string['appointments'] = 'Meeting';
 $string['appointmentsession'] = 'Sessione del meeting';
+$string['appointmentsessiondates'] = 'Date della sessione del meeting';
 $string['appointmentsessions'] = 'Sessioni del meeting';
 $string['appointmentsettings'] = 'Impostazioni meeting';
 $string['approvalreqd'] = 'Approvazione obbligatoria';
@@ -70,6 +71,7 @@ $string['attendees'] = 'Partecipanti';
 $string['attendeestablesummary'] = 'Persone che hanno in programma di partecipare o hanno partecipato alla sessione.';
 $string['availableseats'] = '{$a} posti disponibili';
 $string['book'] = 'Prenota';
+$string['bookedat'] = '<strong>Prenotato:</strong> {$a}';
 $string['bookedvscapacity'] = 'Prenotato / Capienza';
 $string['bookingcancelled'] = 'La tua prenotazione è stata cancellata.';
 $string['bookingcompleted'] = 'La tua prenotazione è stata registrata.';
@@ -98,8 +100,11 @@ $string['capacity_help'] = 'La **Capienza** è il numero di posti disponibili in
 Quando la capacità viene raggiunta, i dettagli della sessione non compariranno nella pagina home del corso. I dettagli inoltre appariranno non attivi nella pagina "Visualizza sessioni" e non sarà più possibile effettuare prenotazioni.
 &nbsp;';
 $string['closed'] = 'Chiuso';
+$string['completionattended'] = 'Il partecipante deve prenotare e partecipare per completare l\'attività';
+$string['completionattended_help'] = 'L\'attività sarà considerata come completata se la presenza del partecipante risulta "Presente" o "Parzialmente presente".';
 $string['completionbooked'] = 'Lo studente deve prenotare per completare l\'attività';
 $string['completionbooked_help'] = 'L\'attività sarà considerata come completata se la presenza del partecipante risulta "Prenotato", "Presente" o "Parzialmente presente". Se il partecipante ha cancellato la prenotazione si trova in lista di attesa o il suo stato è "Assente", l\'attività non sarà considerata completata.';
+$string['completiondetail:attended'] = 'Partecipa al meeting';
 $string['completiondetail:booked'] = 'Prenota meeting';
 $string['confirmationinstrmngr'] = '# Notifica per i manager';
 $string['confirmationinstrmngr_help'] = 'Selezionando **Invia notifica ai manager**, il testo redatto nel campo "Notifica ai manager" sarà inviato via email al manager del partecipante in caso di prenotazione di una sessione.';
@@ -155,7 +160,7 @@ $string['eventdeletesession'] = 'Eliminazione sessione';
 $string['eventsignup'] = 'Prenotazione sessione';
 $string['eventupdatesession'] = 'Aggiornamento sessione';
 $string['full'] = 'La data è al completo';
-$string['fullfilter'] = '';
+$string['fullfilter'] = 'Completo';
 $string['goback'] = 'Indietro';
 $string['icalendarheading'] = 'Allegati iCal';
 $string['joinwaitlist'] = 'Entra in lista di attesa';
@@ -171,10 +176,10 @@ Il Meeting supporta sia sessioni 1 a 1 sia sessioni multiple come i seminari.
 All\'interno di uno stesso meeting è possibile avere sessioni in ate diverse che possono anche essere create in massa utilizzando gli slot temporali indicati durante la configurazione.
 
 Il meeting inoltre consente la registrazione delle presenze.';
+$string['modulename_link'] = 'Appointments';
 $string['modulenameplural'] = 'Meeting';
 $string['multipleappointments'] = 'Meeting multipli';
 $string['noactionableunapprovedrequests'] = 'Non ci sono richieste non approvate da gestire.';
-$string['none'] = 'nessuno';
 $string['noremindersneedtobesent'] = 'Non ci sono promemoria da inviare.';
 $string['nosignedupusers'] = 'Non ci sono prenotazioni di questa sessione.';
 $string['notset'] = 'Non impostato';
@@ -227,10 +232,12 @@ $string['seatsbooked'] = 'Posti prenotati';
 $string['sessionavailability'] = 'Disponibilità delle sessione';
 $string['sessiondatetime'] = 'Data/ora delle sessione';
 $string['sessiondescription'] = 'Descrizione';
+$string['sessionduration'] = 'Durata della sessione';
 $string['sessionfinished'] = 'Terminata';
 $string['sessionfinishtime'] = 'Orario di fine sessione';
 $string['sessioninprogress'] = 'sessione in corso';
 $string['sessionisfull'] = 'La sessione è al completo. È necessario selezionare una data diversa oppure rivolgere all\'istruttore.';
+$string['sessionnotstarted'] = 'Non iniziato';
 $string['sessionrequiresmanagerapproval'] = 'Per prenotare questa sessione è richiesta l\'approvazione del proprio manager.';
 $string['sessions'] = 'Sessioni';
 $string['sessionsdetailstablesummary'] = 'Descrizione estesa della sessione.';
@@ -240,6 +247,7 @@ $string['sessionstartdateandtimewithouttimezone'] = '{$a->startdate}, {$a->start
 $string['sessionstartfinishdateandtime'] = '{$a->startdate} - {$a->enddate}, {$a->starttime} - {$a->endtime} (fuso orario: {$a->timezone})';
 $string['sessionstartfinishdateandtimewithouttimezone'] = '{$a->startdate} - {$a->enddate}, {$a->starttime} - {$a->endtime}';
 $string['sessionstarttime'] = 'Data di inizio della sessione';
+$string['sessionstatus'] = 'Stato della sessione';
 $string['setting:defaultcancellationmessagedefault'] = 'La prenotazione del seguente meeting è stata cancellata:
 <br><br>
 ***PRENOTAZIONE CANCELLATA***<br><br>

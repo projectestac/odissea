@@ -678,6 +678,18 @@ class theme_config {
     public $precompiledcsscallback = null;
 
     /**
+     * Whether the theme uses course index.
+     * @var bool
+     */
+    public $usescourseindex = false;
+
+    /**
+     * Configuration for the page activity header
+     * @var array
+     */
+    public $activityheaderconfig = [];
+
+    /**
      * Load the config.php file for a particular theme, and return an instance
      * of this class. (That is, this is a factory method.)
      *
@@ -747,14 +759,16 @@ class theme_config {
             $baseconfig = $config;
         }
 
-        $configurable = array(
+        $configurable = [
             'parents', 'sheets', 'parents_exclude_sheets', 'plugins_exclude_sheets', 'usefallback',
             'javascripts', 'javascripts_footer', 'parents_exclude_javascripts',
             'layouts', 'enablecourseajax', 'requiredblocks',
             'rendererfactory', 'csspostprocess', 'editor_sheets', 'editor_scss', 'rarrow', 'larrow', 'uarrow', 'darrow',
             'hidefromselector', 'doctype', 'yuicssmodules', 'blockrtlmanipulations', 'blockrendermethod',
             'scss', 'extrascsscallback', 'prescsscallback', 'csstreepostprocessor', 'addblockposition',
-            'iconsystem', 'precompiledcsscallback');
+            'iconsystem', 'precompiledcsscallback', 'haseditswitch', 'usescourseindex', 'activityheaderconfig',
+            'removedprimarynavitems',
+        ];
 
         foreach ($config as $key=>$value) {
             if (in_array($key, $configurable)) {
@@ -911,6 +925,11 @@ class theme_config {
     public function editor_css_url($encoded=true) {
         global $CFG;
         $rev = theme_get_revision();
+        $type = 'editor';
+        if (right_to_left()) {
+            $type .= '-rtl';
+        }
+
         if ($rev > -1) {
             $themesubrevision = theme_get_sub_revision_for_theme($this->name);
 
@@ -922,13 +941,19 @@ class theme_config {
 
             $url = new moodle_url("/theme/styles.php");
             if (!empty($CFG->slasharguments)) {
-                $url->set_slashargument('/'.$this->name.'/'.$rev.'/editor', 'noparam', true);
+                $url->set_slashargument("/{$this->name}/{$rev}/{$type}", 'noparam', true);
             } else {
-                $url->params(array('theme'=>$this->name,'rev'=>$rev, 'type'=>'editor'));
+                $url->params([
+                    'theme' => $this->name,
+                    'rev' => $rev,
+                    'type' => $type,
+                ]);
             }
         } else {
-            $params = array('theme'=>$this->name, 'type'=>'editor');
-            $url = new moodle_url('/theme/styles_debug.php', $params);
+            $url = new moodle_url('/theme/styles_debug.php', [
+                'theme' => $this->name,
+                'type' => $type,
+            ]);
         }
         return $url;
     }
@@ -949,7 +974,7 @@ class theme_config {
                 $files['plugin_'.$plugin] = $sheetfile;
             }
 
-            $subplugintypes = core_component::get_subplugins("editor_{$plugin}");
+            $subplugintypes = core_component::get_subplugins("editor_{$plugin}") ?? [];
             // Fetch sheets for any editor subplugins.
             foreach ($subplugintypes as $plugintype => $subplugins) {
                 foreach ($subplugins as $subplugin) {
@@ -1574,7 +1599,10 @@ class theme_config {
             }
             $candidates[] = $parent_config->extrascsscallback;
         }
-        $candidates[] = $this->extrascsscallback;
+
+        if (isset($this->extrascsscallback)) {
+            $candidates[] = $this->extrascsscallback;
+        }
 
         // Calling the functions.
         foreach ($candidates as $function) {
@@ -1604,7 +1632,10 @@ class theme_config {
             }
             $candidates[] = $parent_config->prescsscallback;
         }
-        $candidates[] = $this->prescsscallback;
+
+        if (isset($this->prescsscallback)) {
+            $candidates[] = $this->prescsscallback;
+        }
 
         // Calling the functions.
         foreach ($candidates as $function) {
@@ -1829,7 +1860,7 @@ class theme_config {
         // Now resolve all theme settings or do any other postprocessing.
         // This needs to be done before calling core parser, since the parser strips [[settings]] tags.
         $csspostprocess = $this->csspostprocess;
-        if (function_exists($csspostprocess)) {
+        if ($csspostprocess && function_exists($csspostprocess)) {
             $css = $csspostprocess($css, $this);
         }
 
@@ -2102,24 +2133,45 @@ class theme_config {
 
         } else {
             if (strpos($component, '_') === false) {
-                $component = 'mod_'.$component;
+                $component = "mod_{$component}";
             }
             list($type, $plugin) = explode('_', $component, 2);
 
-            if ($imagefile = $this->image_exists("$this->dir/pix_plugins/$type/$plugin/$image", $svg)) {
-                return $imagefile;
-            }
-            foreach (array_reverse($this->parent_configs) as $parent_config) { // base first, the immediate parent last
-                if ($imagefile = $this->image_exists("$parent_config->dir/pix_plugins/$type/$plugin/$image", $svg)) {
-                    return $imagefile;
+            // In Moodle 4.0 we introduced a new image format.
+            // Support that image format here.
+            $candidates = [$image];
+
+            if ($type === 'mod') {
+                if ($image === 'icon' || $image === 'monologo') {
+                    $candidates = ['monologo', 'icon'];
+                    if ($image === 'icon') {
+                        debugging(
+                            "The 'icon' image for activity modules has been replaced with a new 'monologo'. " .
+                                "Please update your calling code to fetch the new icon where possible. " .
+                                "Called for component {$component}.",
+                            DEBUG_DEVELOPER
+                        );
+                    }
                 }
             }
-            if ($imagefile = $this->image_exists("$CFG->dataroot/pix_plugins/$type/$plugin/$image", $svg)) {
-                return $imagefile;
-            }
-            $dir = core_component::get_plugin_directory($type, $plugin);
-            if ($imagefile = $this->image_exists("$dir/pix/$image", $svg)) {
-                return $imagefile;
+            foreach ($candidates as $image) {
+                if ($imagefile = $this->image_exists("$this->dir/pix_plugins/$type/$plugin/$image", $svg)) {
+                    return $imagefile;
+                }
+
+                // Base first, the immediate parent last.
+                foreach (array_reverse($this->parent_configs) as $parentconfig) {
+                    if ($imagefile = $this->image_exists("$parentconfig->dir/pix_plugins/$type/$plugin/$image", $svg)) {
+                        return $imagefile;
+                    }
+                }
+                if ($imagefile = $this->image_exists("$CFG->dataroot/pix_plugins/$type/$plugin/$image", $svg)) {
+                    return $imagefile;
+                }
+                $dir = core_component::get_plugin_directory($type, $plugin);
+                if ($imagefile = $this->image_exists("$dir/pix/$image", $svg)) {
+                    return $imagefile;
+                }
             }
             return null;
         }

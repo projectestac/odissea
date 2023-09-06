@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'es', version '3.11'.
+ * Strings for component 'userkey', language 'es', version '4.1'.
  *
  * @package     userkey
  * @category    string
@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adduserkey'] = 'Añadir clave de usuario';
 $string['createnewkey'] = 'Crear nueva clave de usuario';
 $string['createuserkey'] = 'Crear clave de usuario';
 $string['deletekeyconfirm'] = '¿Realmente desea eliminar esta clave de usuario?';
+$string['deleteuserkey'] = 'Borrar clave de usuario';
 $string['edituserkey'] = 'Editar clave de usuario';
 $string['keyiprestriction'] = 'Restricción IP de clave';
 $string['keyiprestriction_help'] = 'Introduzca una dirección IP o un rango de direcciones IP que serán las únicas direcciones IP a las que se permita acceder a estos datos. Deje en blanco para desactivar la restricción IP (no recomendado).';
@@ -36,13 +38,13 @@ $string['keyvaliduntil'] = 'Clave válida hasta';
 $string['keyvaliduntil_help'] = 'Seleccione una fecha opcional después de la cual la clave ya no será válida (es recomendable para incremetnar la seguridad).';
 $string['keyvalue'] = 'Valor de clave';
 $string['newuserkey'] = 'Nueva clave de usuario';
-$string['privacy:metadata:user_private_key'] = 'Claves privadas para el usuario.';
+$string['privacy:metadata:user_private_key'] = 'Clave Privada para el usuario';
 $string['privacy:metadata:user_private_key:instance'] = 'La instancia del script.';
 $string['privacy:metadata:user_private_key:iprestriction'] = 'El intervalo de direcciones IP desde el que se puede utilizar esta clave.';
 $string['privacy:metadata:user_private_key:script'] = 'El script responsable de la clave de usuario.';
-$string['privacy:metadata:user_private_key:timecreated'] = 'La fecha y hora en que se creó la clave.';
-$string['privacy:metadata:user_private_key:userid'] = 'El usuario asociado con la clave.';
-$string['privacy:metadata:user_private_key:validuntil'] = 'La fecha hasta la que la clave privada es válida';
+$string['privacy:metadata:user_private_key:timecreated'] = 'Fecha y hora en la que la clave fue creada.';
+$string['privacy:metadata:user_private_key:userid'] = 'Usuario asociado con la clave.';
+$string['privacy:metadata:user_private_key:validuntil'] = 'Fecha hasta la que la clave privada es válida.';
 $string['privacy:metadata:user_private_key:value'] = 'El valor de la clave.';
 $string['userkey'] = 'Clave de usuario';
 $string['userkey_help'] = 'Seleccione una clave guardada que dé a los usuarios acceso a los datos publicados por este conector de exportación, sin tener que almacenarlos en Moodle. Seleccione \'crear nueva clave de usuario\' para generar una nueva clave al remitir este formulario.';

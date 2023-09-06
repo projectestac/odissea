@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataplus', language 'ar', version '3.11'.
+ * Strings for component 'dataplus', language 'ar', version '4.1'.
  *
  * @package     dataplus
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addadditionaltocomment'] = 'إضافة معلومات إضافية إلى قالب تعليقاتك';
+$string['addadditionaltocomment'] = 'إضافة معلومات إضافية إلى مظهر تعليقاتك';
 $string['addadditionaltorecord'] = 'إضافة معلومات إضافية إلى سجلك';
 $string['addinfo'] = 'إضافة معلومات إضافية إلى سجلك';
 $string['advancedsearch'] = 'بحث متقدم';
@@ -34,7 +34,7 @@ $string['allowmultiple'] = 'السماح باختيارات متعددة';
 $string['capablilty_delete_database'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لحذف السجلات من قاعدة البيانات.';
 $string['capablilty_delete_record'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لحذف هذا السجل.';
 $string['capablilty_edit_record'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لتحرير هذا السجل.';
-$string['capablilty_edit_template'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لتحرير القوالب.';
+$string['capablilty_edit_template'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لتحرير المظاهر.';
 $string['capablilty_insert_database'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لإضافة سجلات قاعدة البيانات أو تحريرها.';
 $string['capablilty_manage_database'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لإدارة قاعدة البيانات.';
 $string['capablilty_view_database'] = 'عذرًا، حسابك لا يمتلك الإمكانيات المطلوبة لمعاينة السجلات.';

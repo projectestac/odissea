@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'sv', version '3.11'.
+ * Strings for component 'format_tiles', language 'sv', version '4.1'.
  *
  * @package     format_tiles
  * @category    string
@@ -30,8 +30,6 @@ $string['admintools'] = 'Administratörsverktyg';
 $string['all'] = 'Alla';
 $string['allcomplete'] = 'Alla slutförda';
 $string['allcoursescomplypalette'] = 'Alla kurser har redan tillåtna panelfärger. Inget att återställa. Se till att du sparar eventuella ändringar i tillåtna färger innan du klickar på återställ.';
-$string['allowlabelconversion'] = 'Tillåt etikett- till sidkonvertering';
-$string['allowlabelconversion_desc'] = 'Om markerad får kursutvecklaren ett alternativ i varje etiketts redigeringsinställningar för att konvertera etiketten till en sida.';
 $string['allowphototiles'] = 'Tillåt fotopaneler';
 $string['allowphototiles_desc'] = 'Om det här alternativet väljs kan lärare ladda upp ett foto som en panelbakgrund.  De kommer fortfarande att kunna använda standardpanelikoner i samma kurs. (Om inget annat är markerat tillåts endast panelikoner och övriga inställningar för fotopaneler nedan ignoreras.)';
 $string['allowsubtilesview'] = 'Tillåt visning av underpaneler';
@@ -46,8 +44,6 @@ $string['assumedatastoreconsent_desc'] = 'Om det här alternativet väljs kommer
 $string['backupfailed'] = 'Säkerhetskopieringen misslyckades';
 $string['basecolour'] = 'Panelfärger';
 $string['basecolour_help'] = 'Den här färguppsättningen här kommer att appliceras på alla paneler i kursen.  (De tillgängliga färgerna bestäms av webbplatsadministratören via sidan Inställningar för Panelpluginmodulen).';
-$string['blockedpopup'] = 'Din webbläsare har blockerat ett popup-fönster. Vänligen tillåt popup-fönster eller klicka på länken nedan för att besöka webbplatsen i detta fönster.';
-$string['blockedpopuptitle'] = 'Popup-fönster blockerades';
 $string['brandcolour'] = 'Varumärkesfärg';
 $string['canceltask'] = 'Avbryt åtgärd';
 $string['changedcolour'] = 'Panelfärgerna återställdes till standard för <strong>{$a}</strong>';
@@ -80,11 +76,10 @@ $string['completionwarning_help'] = 'Du måste göra enskilda objekt spårbara g
 $string['contact'] = 'Håll kontakten';
 $string['contactdeveloper'] = 'Kontakta utvecklaren';
 $string['contents'] = 'Innehåll';
-$string['converttopage'] = 'Konvertera till sida';
-$string['converttopage_confirm'] = 'Är du säker? Detta går inte att ångra.';
 $string['courseshowtileprogress'] = 'Förlopp på varje panel';
 $string['courseshowtileprogress_error'] = 'Inställningen <em>\'Slutförandespårning &#10132; Aktivera slutförandespårning\'</em> är satt till <em>\'Nej\'</em> (se längre ned på denna sida) vilket står i konflikt med denna inställning. Om du vill visa förlopp på panelerna ange istället den inställningen till <em>\'Ja\'</em>.  I annat fall behöver du sätta den här inställningen till <em>\'Nej\'</em>.';
 $string['courseshowtileprogress_help'] = '<p>Om aktiverat visas användarens förlopp på varje panel, antingen som ett <em>bråk</em> (t.ex. "Förlopp 2/10" som betyder 2 av 10 aktiviteter slutförda) eller som en <em>procentsats</em> i en cirkel.</p> <p>Detta kan endast användas om <em>"Slutförandebevakning ➔ Slutförandebevakning"</em> är satt till "Ja".</p> <p>Om det inte finns några spårbara aktiviteter inom en viss panel visas ingen indikator för den panelen.</p>';
+$string['courseshowtileprogress_link'] = 'Activity_completion_settings#Activity_settings';
 $string['coursetoomanysections'] = 'Varning till redaktörer: den här kursen har fler paneler än vad som är tillåtet.  Högst {$a->max} visas för deltagarna (ned till "{$a->tilename}") (redaktörer kan se mer).';
 $string['courseusebarforheadings'] = 'Förtydliga rubriker med färgad flik';
 $string['courseusebarforheadings_help'] = 'Visa en färgad flik till vänster om rubriken i kursen när ett rubrikformat är markerat i textredigeraren';
@@ -110,6 +105,7 @@ $string['disabledbyadmin'] = 'Inaktiverad av webbplatsadministratören';
 $string['displayfilterbar'] = 'Filterrad';
 $string['displayfilterbar_error'] = 'Om du inte har ställt in resultat för den här kursen kan du bara visa ett filterfält baserat på panelnummer och inte baserat på resultat.  Skapa några resultat först och kom sedan tillbaka hit. Se';
 $string['displayfilterbar_help'] = '<p>Om markerad visas automatiskt en rad knappar före panelskärmen i en kurs som användare kan klicka på för att filtrera ner paneler till vissa intervall</p><p>När "baserat på panelnummer" är valt kommer en serie knappar att visas t.ex. en knapp för paneler 1-4, en knapp för paneler 5-8 etc.</p> <p>När "baserat på kursresultat" väljs kommer det att finnas en knapp per kursresultat. Varje panel kan tilldelas ett givet resultat (och därmed till en viss knapp) från panelens inställningssida.</p>';
+$string['displayfilterbar_link'] = 'Outcomes';
 $string['displaytitle_mod_doc'] = 'Word-dokument';
 $string['displaytitle_mod_html'] = 'Webbsida';
 $string['displaytitle_mod_jpeg'] = 'Bild';
@@ -124,6 +120,8 @@ $string['documentation'] = 'Dokumentation';
 $string['documentationurl'] = 'URL till dokumentation';
 $string['documentationurl_descr'] = 'URL till platsen där dokumentationen för Paneler finns.';
 $string['download'] = 'Hämta';
+$string['editoradvicesubtiles'] = 'I den här versionen av pluginmodulen Panelformat visas aktiviteter som underpaneler endast om redigeringsläget är inaktiverat';
+$string['editsection'] = 'Redigera titel';
 $string['editsectionname'] = 'Redigera namn';
 $string['embeddedurlerror'] = 'Om den externa webbplatsen inte kan ansluta i fönstret ovan, använd denna:';
 $string['enablelinebreakfilter'] = 'Aktivera radbrytningsfilter';
@@ -153,7 +151,6 @@ $string['hidden'] = 'Dold';
 $string['hide'] = 'Dölj';
 $string['hidefromothers'] = '';
 $string['highestsectionnum'] = 'Högsta sektionsnummer';
-$string['highlightoff'] = 'Ta bort markering';
 $string['home'] = 'Hem';
 $string['hovercolour'] = 'Hovringsfärg';
 $string['hovercolour_descr'] = 'Färg som visas då musen passerar över paneler';
@@ -274,7 +271,6 @@ $string['jsdeactivate'] = 'Stäng av animerad navigering';
 $string['jsdeactivated'] = 'Du har inaktiverat animerad navigering för ditt konto';
 $string['jsnavsettings'] = 'JavaScript-navigering';
 $string['jsreactivated'] = 'Du har aktiverat animerad navigering för ditt konto. Detta kan göra navigeringen snabbare. Detta kräver att JavaScript är aktiverat.';
-$string['labelconverted'] = 'Etikett konverterad';
 $string['links'] = 'Länkar';
 $string['loading'] = 'Laddar';
 $string['maxcoursesectionsallowed'] = 'Det maximala antalet kurssektioner som tillåts i den här miljön är <strong>{$a}</strong>.';
@@ -377,12 +373,12 @@ $string['tileicon_help'] = 'Det objekt som väljs här åsidosätter, endast fö
 $string['tileicons'] = 'Panelikoner';
 $string['tileoutcome'] = 'Resultat för denna panel';
 $string['tileoutcome_help'] = 'Om du väljer ett resultat för den här panelen kan du under kursinställningarna visa en uppsättning <em>filterknappar</em>, en för varje resultat, som när du trycker på den filtrerar de visade panelerna efter vilket resultat de har tilldelats';
-$string['tileoutofsequence'] = 'Den här panelen har ett avsnittsnummer som ligger utanför intervallet. Klicka på knappen för att åtgärda eller ta bort panelen helt och hållet (flytta allt innehåll till en annan panel först)';
 $string['tileselecttip'] = 'Här är ett enklare sätt att ändra en panelikon eller ett foto: klicka bara på ikonen eller fotot som du vill ändra i kursen, med redigeringsläge på. Fönstret ikonväljaren visas.';
 $string['tilesformatregistration'] = 'Registrera Panelformat-modulen.';
-$string['tilesoutofsequencewarning'] = 'För redigerare: <strong>Varning!</strong> Följande paneler har ett fel. Klicka på knappen eller ta bort en eller flera av dessa paneler för att åtgärda problemen:';
 $string['tip'] = 'Tips';
 $string['togglecompletion'] = 'Klicka för att växla slutförandestatus';
+$string['togglecompletioncomplete'] = 'Klicka för att växla slutförandestatus (slutförd)';
+$string['togglecompletionincomplete'] = 'Klicka för att växla slutförandestatus (ej slutförd)';
 $string['tootall'] = 'för hög för panelen';
 $string['toowide'] = 'för bred för panelen';
 $string['transparenttitleadjustments'] = 'Justering av rubriktransparens';
@@ -400,4 +396,5 @@ $string['usesubtilesseczero'] = 'Använd underpaneler i översta sektionen';
 $string['usesubtilesseczero_help'] = 'Om det här alternativet är markerat kommer underpaneler naturligtvis att användas i det övre avsnittet och inom alla paneler. Endast tillgängligt om du använder underpaneler i kursen totalt sett.  Detta eftersom underplattorna tar upp mycket utrymme högst upp i kursen. Det kan vara bättre att lämna detta omarkerat, så att alla objekt i det övre avsnittet visas i standardlisteformat i stället.';
 $string['usetooltips'] = 'Använd JavaScript-verktygstips';
 $string['usetooltips_desc'] = 'Använda JavaScript-verktygstips när användaren hovrar över vissa objekt, t.ex. kompletteringsrutor, paneler för kakelinnehåll';
+$string['version'] = 'Version {$a}';
 $string['width'] = 'bredd';

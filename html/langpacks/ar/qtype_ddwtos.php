@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ar', version '3.11'.
+ * Strings for component 'qtype_ddwtos', language 'ar', version '4.1'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoiceblanks'] = 'إضافة {no} خيارات أخرى';
 $string['answer'] = 'الإجابة';
 $string['blank'] = 'فراغ';
+$string['blanknumber'] = 'خالية {$a}';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}';
 $string['errorlimitedchoice'] = 'الخيار [[{$a}]] تم استعماله لأكثر من مرة دون ضبطه على "غير محدود". رجاءً، تحقق من هذا السؤال مرة أخرى.';
 $string['infinite'] = 'غير محدود';
@@ -35,6 +36,7 @@ $string['pleaseputananswerineachbox'] = 'يرجى وضع إجابة في كل م
 $string['pluginname'] = 'السحب والإفلات في النص';
 $string['pluginname_help'] = 'أسئلة السحب والإفلات إلى النص تتطلب من المستجيب سحب الكلمات أو العبارات إلى الفجوات الصحيحة في نص السؤال.
 يتم استعمال [[1]]، [[2]]، [[3]]، ... كعناصر نائبة في نص السؤال، مع تحديد الصائب من خيارات الإجابات بالشكل 1، 2، 3، ... على التوالي. يمكن تجميع خيارات الإجابات بحيث يتم تلوين كل الإجابات الموجودة في مجموعة معينة بنفس لون الفجوات المحاكية لها والموجودة في نص السؤال. خيارات الإجابات التي تحمل علامة غير محدودة يمكن استعمالها في أكثر من فجوة واحدة.';
+$string['pluginname_link'] = 'question/type/ddwtos';
 $string['pluginnameadding'] = 'إضافة السحب والإفلات إلى النص';
 $string['pluginnameediting'] = 'تحرير السحب والإفلات إلى النص';
 $string['pluginnamesummary'] = 'يتم ملء الكلمات المفقودة في نص السؤال باستعمال السحب والإفلات.';

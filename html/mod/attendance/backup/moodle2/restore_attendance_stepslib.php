@@ -22,8 +22,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Define all the restore steps that will be used by the restore_attendance_activity_task
  *
@@ -54,6 +52,9 @@ class restore_attendance_activity_structure_step extends restore_activity_struct
 
         $paths[] = new restore_path_element('attendance_session',
                        '/activity/attendance/sessions/session');
+
+        $paths[] = new restore_path_element('customfield',
+                       '/activity/attendance/customfields/customfield');
 
         // End here if no-user data has been selected.
         if (!$userinfo) {
@@ -175,6 +176,17 @@ class restore_attendance_activity_structure_step extends restore_activity_struct
         $data->takenby = $this->get_mappingid('user', $data->takenby);
 
         $DB->insert_record('attendance_log', $data);
+    }
+
+    /**
+     * Process custom fields
+     *
+     * @param array $data
+     */
+    public function process_customfield($data) {
+        $handler = mod_attendance\customfield\session_handler::create();
+        $data['sessionid'] = $this->get_mappingid('attendance_session', $data['sessionid']);
+        $handler->restore_instance_data_from_backup($this->task, $data);
     }
 
     /**

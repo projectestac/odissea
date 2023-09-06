@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'nl', version '3.11'.
+ * Strings for component 'message_airnotifier', language 'nl', version '4.1'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -42,7 +42,11 @@ $string['configured'] = 'Geconfigureerd';
 $string['deletecheckdevicename'] = 'Verwijder je toestel: {$a->name}';
 $string['deletedevice'] = 'Verwijder het apparaat. Merk op dat een app het apparaat opnieuw kan registreren. Als het apparaat blijft verschijnen, schakel het dan uit.';
 $string['devicetoken'] = 'Apparaatstoken';
+$string['donotsendnotification'] = 'Stuur helemaal geen meldigingen';
 $string['enableprocessor'] = 'Schakel mobiele meldingen in';
+$string['encryptnotifications'] = 'Versleutel meldingen';
+$string['encryptprocessing'] = 'Voor toestellen die geen encryptie ondersteunen';
+$string['encryptprocessing_desc'] = 'Geëncrypteerde meldingen vereisen minstens Android 8, IOS 13 en Moodle App 4.2 of nieuwer.';
 $string['errorretrievingkey'] = 'Er is een fout opgetreden bij het ontvangen van de sleutel. Jouw Moodle-site moet geregistreerd zijn om deze service te kunnen gebruiken. Als je site al geregistreerd is, probeer deze registratie dan te updaten.
 Je kunt ook een toegangssleutel bekomen door een account te maken op de <a href="https://apps.moodle.com">Moodle Apps Portal</a>.';
 $string['keyretrievedsuccessfully'] = 'Het ontvangen van de toegangssleutel is gelukt. Om toegang te krijgen tot de Moodle app statistieken moet je een account maken op de <a href="https://apps.moodle.com">Moodle Apps Portal</a>.';
@@ -50,6 +54,8 @@ $string['messageprovidersempty'] = 'Mobiele notificaties zijn niet ingeschakeld 
 $string['messageproviderslow'] = 'Slechts enkele mobiele notificaties zijn ingeschakeld in de standaard notificatievoorkeuren.';
 $string['moodleappsportallimitswarning'] = 'Merk op dat het toegestane aantal toestellen waarmee berichten kunnen ontvangen worden afhangt van je Moodle App abonnement. Bezoek voor meer details de <a href="{$a}" target="_blank">Moodle Apps Portal</a>';
 $string['nodevices'] = 'Geen geregistreerde apparaten. Apparaten zullen automatisch verschijnen nadat de Moodle Mobile app geïnstalleerd hebt en je deze site toegevoegd hebt.';
+$string['noemailevernotset'] = '$CFG->noemailever uitgeschakeld';
+$string['noemaileverset'] = '$CFG->noemailever is ingeschakeld in config.php. Je moet deze instelling op uit zetten of verwijderen.';
 $string['nopermissiontomanagedevices'] = 'Je hebt het recht niet om apparaten te beheren.';
 $string['notconfigured'] = 'De Airnotifier server is nog niet geconfigureerd, dus push-berichten kunnen niet verstuurd worden.';
 $string['notificationsserverconfiguration'] = 'Configuratie notificatieserver (Airnotifier)';
@@ -72,6 +78,7 @@ $string['privacy:metadata:username'] = 'De gebruikersnaam van de gebruiker.';
 $string['privacy:metadata:usersubsystem'] = 'Deze plugin is verbonden met het gebruikerssubsysteem';
 $string['privacy:subcontext'] = 'Berichten Airnotifier';
 $string['requestaccesskey'] = 'Toegangssleutel vragen';
+$string['sendnotificationnotenc'] = 'Stuur melingen zonder encryptie';
 $string['sendtest'] = 'Stuur push-notificaties naar mijn toestellen';
 $string['sendtestconfirmation'] = 'Er werd een test push-notificatie is gestuurd naar de toestellen die je gebruikt om verbinding te maken met deze site. Zorg er voor dat je toestellen met het internet verbonden zijn en dat de mobiele app niet open staat (push-notificaties worden enkel getoond als ze op de achtergrond ontvangen worden).';
 $string['serverconnectivityerror'] = 'Deze site kan geen verbinding maken met notificatie-server {$a}';
@@ -79,3 +86,4 @@ $string['showhide'] = 'Apparaat inschakelen/uitschakelen.';
 $string['sitemustberegistered'] = 'Om de publieke Airnotifier te kunnen gebruiken, moet je je site registreren bij Moodle. Je kunt ook een sleutel bekomen door een account te maken op de <a href="https://apps.moodle.com">Moodle Apps Portal</a>.';
 $string['unknowndevice'] = 'Onbekend apparaat';
 $string['userdevices'] = 'Gebruikerstoestellen';
+$string['view_notification'] = 'Tik om te bekijken';

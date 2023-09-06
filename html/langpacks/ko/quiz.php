@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ko', version '3.11'.
+ * Strings for component 'quiz', language 'ko', version '4.1'.
  *
  * @package     quiz
  * @category    string
@@ -242,6 +242,7 @@ $string['editingquiz_help'] = '퀴즈를 만들때 주된 개념은 다음과 �
 * 퀴즈, 한 개 이상의 페이지에 질문을 가지고 있음
 * 질문 은행, 범주별로 정리된 모든 질문의 사본을 가지고 있음
 * 무작위 질문 - 퀴즈를 볼 때 마다 학생들은 다른 질문을 받게되고, 다른 학생들은 다른 질문을 받게 됩니다.';
+$string['editingquiz_link'] = 'mod/quiz/edit';
 $string['editingquizx'] = '퀴즈 편집: {$a}';
 $string['editoverride'] = '편집 덮어쓰기';
 $string['editqcats'] = '질문 범주 편집';
@@ -360,6 +361,7 @@ $string['import_help'] = '이 기능은 외부 텍스트 파일에서 질문을 
 만일 파일에 ascii 코드가 아닌 문자를 가지고 있으면  UTF-8 엔코딩을 사용해야 합니다. 마이크로소프트 오피스에 의해 만들어진 파일은 평상적으로 올바르게 처리되지 않는 특수 엔코딩을 사용할 수 있으므로 특히 주의를 기울여야 합니다.
 
 내보내기 및 가져오기 포맷은 끼워 넣을 수 있는 자원입니다. 선택할 수 있는 포맷이 모듈 및 플러그인 데이터베이스에 있을 수도 있습니다.';
+$string['import_link'] = 'question/import';
 $string['importcategory'] = '범주 가져오기';
 $string['importerror'] = '가져오기 과정에서 오류 발생';
 $string['importfilearea'] = '강좌에 있는 기존 파일에서 가져오기';
@@ -371,6 +373,8 @@ $string['importmaxerror'] = '질문에 오류가 있습니다.  너무 많은 �
 $string['importquestions'] = '파일에서 질문 가져오기';
 $string['inactiveoverridehelp'] = '* 학생은 퀴즈를 풀 수 있는 자격이 안 되거나 제대로된 모둠에 속해있지 않습니다.';
 $string['incorrect'] = '부정확';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['indivresp'] = '각 항목에 대한 개인들의 응답';
 $string['info'] = '정보';
 $string['infoshort'] = 'i';
@@ -415,6 +419,7 @@ $string['missingitemtypename'] = '빠짐 : 명칭';
 $string['missingquestion'] = '질문이 더 이상 존재하지 않는 것 같습니다.';
 $string['modulename'] = '퀴즈';
 $string['modulename_help'] = '퀴즈 모듈은 선생님들로 하여금 선다형, 참/거짓형, 짝찾기형 및 여타 유형의 질문을을 가지고 퀴즈를 만들수 있게 해 줍니다. 매 시도는 자동으로 채점되고 선생님들은 피드백이나 정답 등을 보여줄지 여부를 선택할 수 있습니다.';
+$string['modulename_link'] = 'mod/quiz/view';
 $string['modulenameplural'] = '퀴즈';
 $string['moveselectedonpage'] = '선택한 질문을 {$a} 페이지로 옮김';
 $string['multichoice'] = '선다형';
@@ -470,7 +475,6 @@ $string['notyetviewed'] = '아직 보지 않음';
 $string['notyourattempt'] = '당신이 한 시도가 아닙니다!';
 $string['noview'] = '로그인 사용자는 이 퀴즈를 볼 수 없음';
 $string['numattempts'] = '{$a->studentnum} {$a->studentstring} 가 {$a->attemptnum} 번의 시도를 하였음';
-$string['numattemptsmade'] = '이 퀴즈에 대해 {$a} 시도가 있었음';
 $string['numberabbr'] = '#';
 $string['numerical'] = '수치형';
 $string['numquestionsx'] = '질문: {$a}';
@@ -498,6 +502,7 @@ $string['overallfeedback_help'] = '전반적인 회신의견은 학생들이 퀴
 ';
 $string['overdue'] = '기한초과';
 $string['overduehandling'] = '종료시';
+$string['overduehandling_link'] = 'mod/quiz/timing';
 $string['overduehandlingautoabandon'] = '시도는 시간이 만료되기전에 제출되어야 합니다. 그렇지 않으면 계산되지 않습니다.';
 $string['overduehandlingautosubmit'] = '열린 시도는 자동으로 제출됩니다.';
 $string['override'] = '덮어쓰기';
@@ -595,6 +600,7 @@ $string['quiznavigation'] = '퀴즈 찾아가기';
 $string['quizopen'] = '퀴즈시작';
 $string['quizopenclose'] = '시작 및 종료 일자';
 $string['quizopenclose_help'] = '학습자들은 퀴즈 시작시간 이후 시도를 할 수 있으며 종료시간이전에 시도를 마쳐야 합니다.';
+$string['quizopenclose_link'] = 'mod/quiz/timing';
 $string['quizopened'] = '본 퀴즈는 시작됬음.';
 $string['quizopenedon'] = '이 퀴즈는 {$a} 에 개봉됨';
 $string['quizopens'] = '퀴즈열기';
@@ -694,8 +700,6 @@ $string['reviewclosed'] = '퀴즈 마감 이후';
 $string['reviewduring'] = '시도 중에';
 $string['reviewimmediately'] = '퀴즈 제출 직후';
 $string['reviewnever'] = '재검토를 허용하지 않음';
-$string['reviewofattempt'] = '{$a} 차 시도 검토';
-$string['reviewofpreview'] = '미리보기 검토';
 $string['reviewopen'] = '나중에, 퀴즈 마감 이전';
 $string['reviewoptions'] = '재검토 허용여부';
 $string['reviewoptionsheading'] = '검토 옵션';
@@ -739,7 +743,6 @@ $string['serveridentifier'] = '식별자';
 $string['serverinfo'] = '서버 정보';
 $string['servers'] = '서버';
 $string['serverurl'] = '서버 URL';
-$string['settingsoverrides'] = '설정 덮어쓰기';
 $string['shortanswer'] = '단답';
 $string['show'] = '보기';
 $string['showall'] = '한 페이지에 모든 질문 보기';
@@ -811,6 +814,7 @@ $string['timedelay'] = '재시도 경과시간이 지나지 않았기 때문에 
 $string['timeleft'] = '남은 시간';
 $string['timelimit'] = '시간제한';
 $string['timelimit_help'] = '활성화되면, 시간 제한은 초기 퀴즈 페이지에 표시되며 카운트 다운 타이머는 퀴즈 네비게이션 블록에 표시된다.';
+$string['timelimit_link'] = 'mod/quiz/timing';
 $string['timelimitexeeded'] = '미안합니다!  시간이 초과됐습니다.';
 $string['timestr'] = '%y/%m/%d %H:%M:%S';
 $string['timesup'] = '시간이 다 되었습니다!';

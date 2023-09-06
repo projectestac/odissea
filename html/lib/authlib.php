@@ -117,6 +117,9 @@ class auth_plugin_base {
      */
     protected $errorlogtag = '';
 
+    /** @var array Stores extra information available to the logged in event. */
+    protected $extrauserinfo = [];
+
     /**
      * This is the primary method that is used by the authenticate_user_login()
      * function in moodlelib.php.
@@ -133,7 +136,7 @@ class auth_plugin_base {
      * @return bool Authentication success or failure.
      */
     function user_login($username, $password) {
-        print_error('mustbeoveride', 'debug', '', 'user_login()' );
+        throw new \moodle_exception('mustbeoveride', 'debug', '', 'user_login()' );
     }
 
     /**
@@ -302,7 +305,7 @@ class auth_plugin_base {
      */
     function user_signup($user, $notify=true) {
         //override when can signup
-        print_error('mustbeoveride', 'debug', '', 'user_signup()' );
+        throw new \moodle_exception('mustbeoveride', 'debug', '', 'user_signup()' );
     }
 
     /**
@@ -335,7 +338,7 @@ class auth_plugin_base {
      */
     function user_confirm($username, $confirmsecret) {
         //override when can confirm
-        print_error('mustbeoveride', 'debug', '', 'user_confirm()' );
+        throw new \moodle_exception('mustbeoveride', 'debug', '', 'user_confirm()' );
     }
 
     /**
@@ -651,7 +654,7 @@ class auth_plugin_base {
         $user = $DB->get_record('user', array('username' => $username, 'mnethostid' => $CFG->mnet_localhost_id));
         if (empty($user)) { // Trouble.
             error_log($this->errorlogtag . get_string('auth_usernotexist', 'auth', $username));
-            print_error('auth_usernotexist', 'auth', '', $username);
+            throw new \moodle_exception('auth_usernotexist', 'auth', '', $username);
             die;
         }
 
@@ -806,6 +809,25 @@ class auth_plugin_base {
             'subject' => $subject,
             'message' => $message
         ];
+    }
+
+    /**
+     * Set extra user information.
+     *
+     * @param array $values Any Key value pair.
+     * @return void
+     */
+    public function set_extrauserinfo(array $values): void {
+        $this->extrauserinfo = $values;
+    }
+
+    /**
+     * Returns extra user information.
+     *
+     * @return array An array of keys and values
+     */
+    public function get_extrauserinfo(): array {
+        return $this->extrauserinfo;
     }
 }
 

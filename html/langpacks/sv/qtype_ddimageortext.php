@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'sv', version '3.11'.
+ * Strings for component 'qtype_ddimageortext', language 'sv', version '4.1'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -60,6 +60,7 @@ $string['nolabel'] = 'Ingen etikettext';
 $string['pleasedraganimagetoeachdropregion'] = 'Ditt svar är inte fullständigt; Dra ett objekt till varje släppregion.';
 $string['pluginname'] = 'Dra och släpp på bild';
 $string['pluginname_help'] = 'Dra och släpp på bildfrågor kräver att respondenten drar bilder eller textetiketter och släpper dem i definierade släppzoner på en bakgrundsbild. Dragbara objekt kan grupperas så att alla objekt i en viss grupp färgas på samma sätt som släppzonerna. Dragbara objekt som är markerade som obegränsade kan släppas i mer än en zon.';
+$string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnameadding'] = 'Lägger till dra och släpp på bild';
 $string['pluginnameediting'] = 'Redigerar dra-och-släpp på bild';
 $string['pluginnamesummary'] = 'Bilder eller textetiketter dras och släpps i släppzoner på en bakgrundsbild.

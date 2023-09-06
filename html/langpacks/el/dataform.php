@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataform', language 'el', version '3.11'.
+ * Strings for component 'dataform', language 'el', version '4.1'.
  *
  * @package     dataform
  * @category    string
@@ -119,7 +119,7 @@ $string['dataform:viewaccesshidden'] = '** Ξεπερασμένο **';
 $string['dataform:viewanonymousentry'] = '** Ξεπερασμένο **';
 $string['dataform:viewentry'] = '** Ξεπερασμένο **';
 $string['dataform:writeentry'] = '** Ξεπερασμένο **';
-$string['dataformearly'] = 'Αυτή η δραστηριότητα είναι προγραμματισμένη να αρχίσει στις {$a}';
+$string['dataformearly'] = 'Αυτή η δραστηριότητα είναι χρονοπρογραμματισμένη να αρχίσει στις {$a}';
 $string['descending'] = 'Φθίνουσα';
 $string['documenttype'] = 'Τύπος εγγράφου';
 $string['dots'] = '...';
@@ -240,7 +240,7 @@ $string['filterselection'] = 'Επιλογή';
 $string['filtersimplesearch'] = 'Απλή αναζήτηση';
 $string['filtersmax'] = 'Μέγιστος αριθμός φίλτρων';
 $string['filtersnonedefined'] = 'Δεν ορίστηκαν καθόλου φίλτρα';
-$string['filtersnoneindataform'] = 'Δεν υπάρχει κανένα φίλτρο ορισμένο για αυτή το φόρμα δεδομένων.';
+$string['filtersnoneindataform'] = 'Δεν υπάρχει κανένα φίλτρο ορισμένο για αυτή τη φόρμα δεδομένων.';
 $string['filtersortfieldlabel'] = 'Πεδίο ταξινόμησης';
 $string['filtersupdated'] = '{$a} φίλτρα ενημερώθηκαν';
 $string['filterupdate'] = 'Ενημέρωση ενός υπάρχοντος φίλτρου';
@@ -251,9 +251,9 @@ $string['formemptyadd'] = 'Δεν συμπληρώσατε καθόλου πεδ
 $string['fromfile'] = 'Εισαγωγή από αρχείο zip';
 $string['generalactions'] = 'Γενικές ενέργειες';
 $string['getstarted'] = 'Αυτή η dataform  φαίνεται να είναι νέα ή με μη ολοκληρωμένη εγκατάσταση.';
-$string['getstartedfields'] = 'Προσθήκη πεδίων στο τμήμα {$a}';
+$string['getstartedfields'] = 'Προσθήκη πεδίων στην ενότητα {$a}';
 $string['getstartedpresets'] = 'Εφαρμογή μιας προρύθμισης στην ενότητα {$a}';
-$string['getstartedviews'] = 'Προσθήκη προβολών στο τμήμα {$a}';
+$string['getstartedviews'] = 'Προσθήκη προβολών στην ενότητα {$a}';
 $string['gradecalc'] = 'Υπολογισμός βαθμού';
 $string['gradeguide'] = 'Οδηγός/ρουμπρίκα βαθμών';
 $string['gradeitems'] = 'Βαθμολόγηση στοιχείων';
@@ -294,7 +294,7 @@ $string['max'] = 'Μέγιστο';
 $string['maxsize'] = 'Μέγιστο μέγεθος';
 $string['mediafile'] = 'Αρχείο πολυμέσων';
 $string['message'] = 'Μήνυμα';
-$string['messageprovider:dataform_notification'] = 'Ειδοποιήσεις φόρμας δεδομένων';
+$string['messageprovider:dataform_notification'] = 'Ειδοποιήσεις dataform';
 $string['min'] = 'Ελάχιστο';
 $string['modulename'] = 'Φόρμα δεδομένων';
 $string['modulenameplural'] = 'Φόρμες δεδομένων';
@@ -337,7 +337,7 @@ $string['pluginname'] = 'Φόρμα δεδομένων';
 $string['presetadd'] = 'Προσθήκη προρυθμίσεων';
 $string['presetapply'] = 'Εφαρμογή';
 $string['presetavailableincourse'] = 'Προρυθμίσεις μαθημάτων';
-$string['presetavailableinsite'] = 'Προρυθμίσεις ιστότοπου';
+$string['presetavailableinsite'] = 'Προρυθμίσεις ιστοτόπου';
 $string['presetchoose'] = 'επιλέξτε μια προκαθορισμένη προρύθμιση';
 $string['presetdata'] = 'με τα δεδομένα χρήστη';
 $string['presetdataanon'] = 'με ανωνυμοποιημένα δεδομένα χρήστη';
@@ -457,7 +457,7 @@ $string['viewsdeleted'] = 'Διαγράφηκαν {$a} προβολές/-ή';
 $string['viewsectionpos'] = 'Θέση ενότητας';
 $string['viewslidepaging'] = 'Σελιδοποίηση διαφάνειας';
 $string['viewsmax'] = 'Μέγιστο εμφανίσεων';
-$string['viewsupdated'] = '{$a} εμφανίσεις/-η ενημερώθηκαν/-ε';
+$string['viewsupdated'] = '{$a} προβολή/-ές ενημερώθηκε/-αν';
 $string['viewtemplate'] = 'Εμφάνιση υποδείγματος';
 $string['viewvisibility'] = 'Ορατότητα';
 $string['viewvisible'] = 'Ορατή';

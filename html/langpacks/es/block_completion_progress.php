@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'es', version '3.11'.
+ * Strings for component 'block_completion_progress', language 'es', version '4.1'.
  *
  * @package     block_completion_progress
  * @category    string
@@ -53,6 +53,7 @@ $string['config_title'] = 'Alternar título';
 $string['config_wrap'] = 'Envolver';
 $string['coursenametoshow'] = 'Nombre del curso a mostrar en el Panel';
 $string['defaultlongbars'] = 'Presentación predeterminada para las barras largas';
+$string['forceiconsinbar'] = 'Forzar íconos en la barra de progreso';
 $string['fullname'] = 'Nombre completo del curso';
 $string['futureNotCompleted_colour'] = '#025187';
 $string['futureNotCompleted_colour_descr'] = 'Código de color HTML para los elementos futuros que no se han completado';
@@ -67,6 +68,7 @@ $string['how_ordering_works'] = 'Como funciona ordenamiento';
 $string['how_ordering_works_help'] = '<p>Hay dos formas de ordenar las actividades en el bloque de Estado de finalización.</p> <ul> <li> <em>El tiempo usando "Esperando la finalización en" fecha </em> (predeterminado) <br />Las fechas de finalización previstas de actividades/recursos se utilizan para ordenar la barra. En el caso de que las actividades/recursos no tengan una fecha de finalización prevista, en su lugar se utiliza el orden en el curso. Cuando se utiliza esta opción, se muestra el indicador AHORA. </li> <li> <em> Ordenamiento en curso </em> <br /> Las actividades/recursos se presentan en el mismo orden en que están en la página del curso. Cuando se utiliza esta opción, las fechas de finalización prevista se ignoran. Cuando se utiliza esta opción, no se muestra el indicador AHORA. </li> </ul>';
 $string['how_selectactivities_works'] = 'Como funciona incluyendo actividades';
 $string['how_selectactivities_works_help'] = '<p> Para seleccionar manualmente las actividades a incluir en la barra, asegúrese que "Actividades incluidas" esté marcado como "actividades seleccionadas". </p> <p> Sólo las actividades con ajustes de finalización pueden ser incluidas. </p> <p> Mantenga pulsada la tecla CTRL para seleccionar múltiples actividades. </p>';
+$string['indeterminate'] = '?';
 $string['lastonline'] = 'Último en el curso';
 $string['mouse_over_prompt'] = 'Coloque el puntero del ratón encima o toque la barra para más información.';
 $string['no_activities_config_message'] = 'No hay actividades o recursos con la finalización de actividad establecida o no se han seleccionado actividades o recursos. Configure los requisitos de finalización de las actividades en las actividades y los recursos, y luego configure este bloque.';
@@ -81,11 +83,14 @@ $string['not_all_expected_set'] = 'No todas las actividades con finalización ti
 $string['now_indicator'] = 'AHORA';
 $string['overview'] = 'Vista general de estudiantes';
 $string['pluginname'] = 'Estado de Finalización';
+$string['privacy:metadata'] = 'El Bloque Progreso de Finalización solamente muestra datos de finalización existentes.';
 $string['progress'] = 'Progreso';
 $string['progressbar'] = 'Estado de Finalización';
+$string['selectitem'] = 'Seleccionar \'{$a}\'';
 $string['shortname'] = 'Nombre corto de curso';
 $string['showallinfo'] = 'Mostrar toda la información';
 $string['showinactive'] = 'Mostrar estudiantes inactivos en Vista general';
+$string['showlastincourse'] = 'Mostrar última vez que estudiante estuvo en curso en la Vista general';
 $string['submitted'] = 'Enviado';
 $string['submittednotcomplete_colour'] = '#FFCC00';
 $string['submittednotcomplete_colour_descr'] = 'El código de color HTML para los elementos enviados, pero no completados aún.';

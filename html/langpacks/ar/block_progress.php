@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'ar', version '3.11'.
+ * Strings for component 'block_progress', language 'ar', version '4.1'.
  *
  * @package     block_progress
  * @category    string
@@ -29,7 +29,7 @@ $string['answered'] = 'مجاب عنه';
 $string['certificate'] = 'الشهادة';
 $string['config_orderby_due_time'] = '"متوقعة بحلول" التاريخ-الوقت';
 $string['config_title'] = 'العنوان البديل';
-$string['coursenametoshow'] = 'اسم المساق لعرضه في لوحة التحكم';
+$string['coursenametoshow'] = 'اسم المساق لعرضه في دفة القيادة';
 $string['feedback'] = 'الإفادة';
 $string['fullname'] = 'الاسم الكامل للمساق';
 $string['geogebra'] = 'جيوجبرا';

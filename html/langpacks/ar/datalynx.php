@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datalynx', language 'ar', version '3.11'.
+ * Strings for component 'datalynx', language 'ar', version '4.1'.
  *
  * @package     datalynx
  * @category    string
@@ -110,7 +110,7 @@ $string['privacy:metadata:datalynx_entries:timecreated'] = 'وقت إنشاء ا
 $string['privacy:metadata:datalynx_entries:timemodified'] = 'وقت آخر تعديل للسجل';
 $string['ratingsaggregate'] = '{$a->value} ({$a->method} من {$a->count ratings})';
 $string['ratingvalue'] = 'قيمة التقييم';
-$string['rsstitletemplate'] = 'قالب عنوان التغذية الإخبارية';
+$string['rsstitletemplate'] = 'مظهر عنوان التغذية الإخبارية';
 $string['ruledescription'] = 'وصف القاعدة';
 $string['statistics'] = 'الإحصائيات';
 $string['statisticsfor'] = 'إحصائيات \'{$a}\'';

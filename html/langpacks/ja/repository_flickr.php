@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr', language 'ja', version '3.11'.
+ * Strings for component 'repository_flickr', language 'ja', version '4.1'.
  *
  * @package     repository_flickr
  * @category    string
@@ -44,9 +44,9 @@ $string['notitle'] = 'タイトルなし';
 $string['nullphotolist'] = 'このアカウントの写真はありません。';
 $string['pluginname'] = 'Flickr';
 $string['pluginname_help'] = 'flickr.comのリポジトリ';
-$string['privacy:metadata:repository_flickr'] = 'Flickrリポジトリプラグインはユーザプリファレンスを保存します。また、ユーザデータをMoodleからリモートシステムに転送します。';
-$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token'] = 'FlickrリポジトリのOAuthトークンプリファレンスです。';
-$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token_secret'] = 'FlickrリポジトリのOAuth秘密鍵プリファレンスです。これはプライバシーデータのエクスポートから除外されます。';
+$string['privacy:metadata:repository_flickr'] = 'Flickrリポジトリプラグインはユーザプレファレンスを保存します。また、ユーザデータをMoodleからリモートシステムに転送します。';
+$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token'] = 'FlickrリポジトリのOAuthトークンプレファレンスです。';
+$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token_secret'] = 'FlickrリポジトリのOAuth秘密鍵プレファレンスです。これはプライバシーデータのエクスポートから除外されます。';
 $string['privacy:metadata:repository_flickr:text'] = 'Flickrリポジトリユーザ検索テキストクエリです。';
 $string['remember'] = '次回から入力を省略する';
 $string['secret'] = '秘密鍵';

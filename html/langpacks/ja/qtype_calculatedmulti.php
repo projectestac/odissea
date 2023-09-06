@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'ja', version '3.11'.
+ * Strings for component 'qtype_calculatedmulti', language 'ja', version '4.1'.
  *
  * @package     qtype_calculatedmulti
  * @category    string
@@ -29,6 +29,7 @@ $string['answeroptions'] = '選択肢オプション';
 $string['answeroptions_help'] = '選択肢の推奨公式は次のとおりです ...<strong>{={x}+..}</strong>...';
 $string['pluginname'] = '多肢選択計算問題';
 $string['pluginname_help'] = '多肢選択計算問題は小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値式を選択肢に含むことのできる多肢選択問題のような問題です。例えば「高さ {l} 、幅 {w} の長方形の面積は?」という問題の場合、1つの選択肢は {={l}*{w}} ( * は乗算を意味します) のようにすることができます。';
+$string['pluginname_link'] = 'question/type/calculatedmulti';
 $string['pluginnameadding'] = '多肢選択計算問題の追加';
 $string['pluginnameediting'] = '多肢選択計算問題の編集';
 $string['pluginnamesummary'] = '多肢選択計算問題は小テスト受験時に個別の値に置換される波括弧内「{}」のワイルドカードを使用する数値式を選択肢に含むことのできる多肢選択問題のような問題です。';

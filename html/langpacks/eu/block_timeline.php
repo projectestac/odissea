@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'eu', version '3.11'.
+ * Strings for component 'block_timeline', language 'eu', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Guztiak';
-$string['ariadayfilter'] = 'Iragazi denbora-lerroko elementuak';
+$string['ariadayfilter'] = 'Iragazi denbora-lerroa dataren arabera';
 $string['ariadayfilteroption'] = '{$a} iragazki-aukerak';
 $string['ariaeventlistitem'] = '{$a->course} ikastaroko {$a->name} jarduera {$a->date} datan entregatu behar da';
 $string['ariaeventlistpagelimit'] = 'Erakutsi {$a} jarduera orriko';
@@ -35,18 +35,20 @@ $string['ariaeventlistpaginationnavdates'] = 'Denbora-lerroko jardueren orrialde
 $string['ariaviewselector'] = 'Ordenatu elementuak kronologian';
 $string['ariaviewselectoroption'] = 'Ordenatzeko aukera: {$a}';
 $string['duedate'] = 'Entregatze-data';
-$string['morecourses'] = 'Ikastaro gehiago';
+$string['moreactivities'] = 'Erakutsi jarduera gehiago';
+$string['morecourses'] = 'Erakutsi ikastaro gehiago';
 $string['next30days'] = 'Datozen 30 egunetan';
 $string['next3months'] = 'Datozen 3 hilabetetan';
 $string['next6months'] = 'Datozen 6 hilabetetan';
 $string['next7days'] = 'Datozen 7 egunetan';
 $string['nocoursesinprogress'] = 'Ez dago ikastarorik martxa';
-$string['noevents'] = 'Ez da jarduerarik programatu';
+$string['noevents'] = 'Ez dago ekintzaren bat behar duen jarduerarik';
 $string['overdue'] = 'Atzeratuta';
 $string['pluginname'] = 'Kronologia';
 $string['privacy:metadata:timelinefilterpreference'] = 'Erabiltzailearen iragazki lehenetsia denbora-lerroko blokerako.';
 $string['privacy:metadata:timelinelimitpreference'] = 'Erabiltzailearen orri-muga lehenetsia denbora-lerroko blokerako.';
 $string['privacy:metadata:timelinesortpreference'] = 'Erabiltzailearen ordena-lehentasuna denbora-lerroko blokerako.';
+$string['searchevents'] = 'Bilatu jarduera-mota edo izenaren arabera';
 $string['sortbycourses'] = 'Ordenatu ikastaroen arabera';
 $string['sortbydates'] = 'Ordenatu daten arabera';
 $string['timeline'] = 'Kronologia';

@@ -48,9 +48,12 @@ navigation_node::override_active_url(new moodle_url('/backup/restorefile.php', a
 $PAGE->set_url(new moodle_url('/backup/restore.php', array('contextid'=>$contextid)));
 $PAGE->set_context($context);
 $PAGE->set_pagelayout('admin');
+$PAGE->set_secondary_active_tab('coursereuse');
 
 require_login($course, null, $cm);
 require_capability('moodle/restore:restorecourse', $context);
+
+$PAGE->secondarynav->set_overflow_selected_node('restore');
 
 if (is_null($course)) {
     $coursefullname = $SITE->fullname;

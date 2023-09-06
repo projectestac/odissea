@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'sv', version '3.11'.
+ * Strings for component 'customcert', language 'sv', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -96,7 +96,6 @@ $string['height'] = 'Höjd';
 $string['height_help'] = 'Detta är höjden på certifikatets i mm. Som referens är ett A4-papper 297 mm högt och ett brev är 279 mm högt.';
 $string['invalidcode'] = 'Felaktig kod angiven';
 $string['invalidcolour'] = 'Ogiltig färg vald, ange ett giltigt HTML-färgnamn eller en sex- eller tresiffrig hexadecimal färg.';
-$string['invalidelementwidth'] = 'Ange ett positivt tal.';
 $string['invalidheight'] = 'Höjden måste vara ett giltigt tal större än 0.';
 $string['invalidmargin'] = 'Marginalen måste vara ett giltigt tal större än 0.';
 $string['invalidposition'] = 'Välj ett positivt tal för position {$a}.';
@@ -109,6 +108,7 @@ $string['load'] = 'Ladda';
 $string['modify'] = 'Redigera';
 $string['modulename'] = 'Certifikat';
 $string['modulename_help'] = 'Denna modul möjliggör dynamisk generering av PDF-certifikat.';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['modulenameplural'] = 'Certifikat';
 $string['mycertificates'] = 'Mina certifikat';
 $string['mycertificatesdescription'] = 'Det här är de certifikat du har utfärdat via antingen e-post eller nedladdning manuellt.';

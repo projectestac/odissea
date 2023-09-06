@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ja', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'ja', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -36,15 +36,17 @@ $string['layout'] = 'レイアウト';
 $string['layouthorizontal'] = 'ラジオボタンの横の列';
 $string['layoutmultiple_horizontal'] = 'チェックボックスの横の列';
 $string['layoutmultiple_vertical'] = 'チェックボックスの縦のカラム';
-$string['layoutselectinline'] = 'テキスト内のインラインのドロップダウンメニュ';
+$string['layoutselectinline'] = 'テキスト内のインラインのドロップダウンメニュー';
 $string['layoutundefined'] = 'レイアウト未定義';
 $string['layoutvertical'] = 'ラジオボタンの縦のカラム';
 $string['missingsubquestion'] = 'このサブ問題はシステムに存在していないため表示できません。';
+$string['multichoicex'] = '多肢選択 {$a}';
 $string['nooptionsforsubquestion'] = '問題部分 # {$a->sub} のオプションを取得できません (question->id={$a->id})。';
 $string['noquestions'] = '穴埋め問題 (Cloze) 「 <strong>{$a}</strong> 」に問題が含まれていません。';
 $string['pleaseananswerallparts'] = '問題のすべての部分に答えてください。';
 $string['pluginname'] = '穴埋め問題 (Cloze)';
 $string['pluginname_help'] = '穴埋め問題 (Cloze) では多肢選択問題および記述問題のような問題を一連のテキストの中に埋め込むことができます。';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnameadding'] = '穴埋め問題 (Cloze) の追加';
 $string['pluginnameediting'] = '穴埋め問題 (Cloze) の編集';
 $string['pluginnamesummary'] = 'このタイプの問題は非常に柔軟性がありますが埋め込み式の多肢選択問題、記述問題および数値時問題を作成できる特別なコードを含んだテキストを入力する必要があります。';
@@ -66,6 +68,7 @@ $string['questionsmore'] = 'データベースに保存されている穴埋め�
 $string['questiontypechanged'] = '問題タイプが変更されました。';
 $string['questiontypechangedcomment'] = '少なくとも1つの問題タイプが変更されました。<br /> 問題を追加、削除または移動しましたか?<br />確認してください。';
 $string['questionusedinquiz'] = 'この問題は {$a->nb_of_quiz} の小テストで使用されています。合計受験数: {$a->nb_of_attempts}';
+$string['regradeissuenumsubquestionschanged'] = '問題の埋め込みサブ問題数が変わりました。';
 $string['storedqtype'] = '保存された問題タイプ {$a}';
 $string['subqresponse'] = 'パート {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = '不明な問題タイプ: 問題部分 # {$a->sub} の {$a->type}';

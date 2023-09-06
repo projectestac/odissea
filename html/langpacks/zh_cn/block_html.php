@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'zh_cn', version '3.11'.
+ * Strings for component 'block_html', language 'zh_cn', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -35,5 +35,5 @@ $string['html:addinstance'] = '添加一个HTML版块';
 $string['html:myaddinstance'] = '在个人主页新增一个HTML版块';
 $string['newhtmlblock'] = '（新HTML版块）';
 $string['pluginname'] = 'HTML';
-$string['privacy:metadata:block'] = 'HTML块将其所有数据存储在块子系统中。';
-$string['search:content'] = 'HTML版块内容';
+$string['privacy:metadata:block'] = '“文本”板块将其所有数据存储在板块子系统中。';
+$string['search:content'] = '文本板块内容';

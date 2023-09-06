@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'es', version '3.11'.
+ * Strings for component 'qtype_match', language 'es', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughquestions'] = 'Debe suministrar al menos {$a} pares de pregunt
 $string['pleaseananswerallparts'] = 'Responder a todas las partes de la pregunta.';
 $string['pluginname'] = 'Emparejamiento';
 $string['pluginname_help'] = 'Las preguntas de emparejamiento requieren para su resolución que se establezcan de forma correcta las relaciones entre una lista de nombres o enunciados (preguntas) y otra lista de nombres o enunciados (respuestas).';
+$string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = 'Agregando una pregunta de emparejamiento';
 $string['pluginnameediting'] = 'Editando una pregunta de emparejamiento';
 $string['pluginnamesummary'] = 'La respuesta a cada una de las sub-preguntas debe seleccionarse a partir de una lista de posibilidades.';
@@ -46,5 +47,7 @@ $string['privacy:metadata'] = 'El complemento de tipo de pregunta coincidente pe
 $string['privacy:preference:defaultmark'] = 'La marca predeterminada establecida para una pregunta determinada.';
 $string['privacy:preference:penalty'] = 'La penalización por cada intento incorrecto cuando las preguntas se ejecutan utilizando el comportamiento \'Interactivo con múltiples intentos\' o \'Modo adaptativo\'.';
 $string['privacy:preference:shuffleanswers'] = 'Si las respuestas deben barajarse automáticamente.';
+$string['regradeissuenumchoiceschanged'] = 'El número de opciones ha cambiado.';
+$string['regradeissuenumstemschanged'] = 'Ha cambiado el número de subpreguntas.';
 $string['shuffle'] = 'Barajar';
 $string['shuffle_help'] = 'Si está habilitado, el orden de los elementos (respuestas) se elaborará al azar en cada intento, siempre que suponiendo que la opcion "Ordenar al azar" en los ajustes del cuestionario este también habilitada.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ca', version '3.11'.
+ * Strings for component 'course', language 'ca', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -62,6 +62,8 @@ $string['completion_setby:manual:done'] = '{$a->activityname} marcat com a fet p
 $string['completion_setby:manual:markdone'] = '{$a->activityname} marcat com a no fet per {$a->setby}. Feu clic per marcar com a fet.';
 $string['completionrequirements'] = 'Requeriments de finalització per a {$a}';
 $string['coursealreadyfinished'] = 'El curs ja ha acabat';
+$string['coursecontentnotification'] = 'Envia una notificació de canvi de contingut';
+$string['coursecontentnotification_help'] = 'Marqueu la casella per enviar una notificació als participants del curs sobre aquesta activitat o recurs nou o modificat. Només els usuaris que poden accedir a l\'activitat o el recurs rebran la notificació.';
 $string['coursenotyetfinished'] = 'El curs encara no ha acabat';
 $string['coursenotyetstarted'] = 'El curs encara no ha començat';
 $string['coursetoolong'] = 'El curs és massa llarg';

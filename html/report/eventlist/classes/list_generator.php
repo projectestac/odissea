@@ -88,9 +88,14 @@ class report_eventlist_list_generator {
      *
      * @param bool $detail True will return details, but no abstract classes, False will return all events, but no details.
      * @return array Core events.
+     *
+     * @deprecated since 4.0 use {@see get_all_events_list} instead
      */
     public static function get_core_events_list($detail = true) {
         global $CFG;
+
+        debugging(__FUNCTION__ . '() is deprecated, please use report_eventlist_list_generator::get_all_events_list() instead',
+            DEBUG_DEVELOPER);
 
         // Disable developer debugging as deprecated events will fire warnings.
         // Setup backup variables to restore the following settings back to what they were when we are finished.
@@ -213,9 +218,15 @@ class report_eventlist_list_generator {
      *
      * @param bool $detail True will return details, but no abstract classes, False will return all events, but no details.
      * @return array A list of events from all plug-ins.
+     *
+     * @deprecated since 4.0 use {@see get_all_events_list} instead
      */
     public static function get_non_core_event_list($detail = true) {
         global $CFG;
+
+        debugging(__FUNCTION__ . '() is deprecated, please use report_eventlist_list_generator::get_all_events_list() instead',
+            DEBUG_DEVELOPER);
+
         // Disable developer debugging as deprecated events will fire warnings.
         // Setup backup variables to restore the following settings back to what they were when we are finished.
         $debuglevel          = $CFG->debug;

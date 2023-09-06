@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'ar', version '3.11'.
+ * Strings for component 'geogebra', language 'ar', version '4.1'.
  *
  * @package     geogebra
  * @category    string
@@ -41,5 +41,5 @@ $string['name'] = 'الاسم';
 $string['nomoreattempts'] = 'لم تبقَ أي محاولات لهذا النشاط';
 $string['pluginname'] = 'جيوجبرا';
 $string['privacy:metadata:geogebra_attempts:userid'] = 'مُعرَّف المستخدم المجيب على نشاط geogebra هذا';
-$string['redirecttocourse'] = 'لقد تم حفظ النشاط. يجري الرجوع إلى الصفحة الرئيسية للمقرر.';
+$string['redirecttocourse'] = 'لقد تم حفظ النشاط. يجري الرجوع إلى الصفحة الرئيسية للمساق.';
 $string['showAlgebraInput'] = 'إظهار شريط الإدخال';

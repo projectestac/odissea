@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'ja', version '3.11'.
+ * Strings for component 'portfolio_googledocs', language 'ja', version '4.1'.
  *
  * @package     portfolio_googledocs
  * @category    string
@@ -30,7 +30,7 @@ $string['noauthtoken'] = 'Googleから認証トークンが受信されません
 $string['nooauthcredentials'] = 'OAuth認証情報が必要です。';
 $string['nooauthcredentials_help'] = 'Google Driveポートフォリオプラグインを使用するにはあなたはポートフォリオ設定でOAuth認証情報を設定する必要があります。';
 $string['nosessiontoken'] = 'セッショントークンが存在しません。Googleへのエクスポートを中止します。';
-$string['oauthinfo'] = '<p>このプラグインを使用するにはドキュメンテーション「<a href="{$a->docsurl}">Google OAuth 2.0セットアップ</a>」に記載されているようにあなたのサイトをGoogleに登録する必要があります。</p><p>登録処理の一環としてあなたは次のURLを「公式リダイレクトURL」として入力する必要があります:</p><p>{$a->callbackurl}</p><p>登録後、すべてのGoogle DriveおよびPicasaプラグインで使用できるクライアントIDおよび秘密鍵が提供されます。</p>';
+$string['oauthinfo'] = '<p>このプラグインを使用するにはドキュメンテーション「<a href="{$a->docsurl}">Google OAuth 2.0セットアップ</a>」に記載されているようにあなたのサイトをGoogleに登録する必要があります。</p><p>登録処理の一環としてあなたは次のURLを「公式リダイレクトURL」として入力する必要があります:</p><p>{$a->callbackurl}</p><p>登録後、すべてのGoogle Driveプラグインで使用できるクライアントIDおよび秘密鍵が提供されます。</p>';
 $string['pluginname'] = 'Google Drive';
 $string['privacy:metadata'] = 'このプラグインは外部のリンクされたGoogleアカウントにデータを送信します。ローカルにデータを保存することはありません。';
 $string['privacy:metadata:data'] = 'ポートフォリオサブシステムから渡された個人データです。';

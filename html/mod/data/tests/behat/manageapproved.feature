@@ -30,18 +30,17 @@ Feature: Users can edit approved entries in database activities
     And I add a "Short text" field to "Test database name" database and I fill the form with:
       | Field name | Test field name |
       | Field description | Test field description |
-    # To generate the default templates.
-    And I follow "Templates"
     And I log out
     # Add an entry as a student.
     And I am on the "Test database name" "data activity" page logged in as student1
     And I add an entry to "Test database name" database with:
       | Test field name | Student entry |
-    And I press "Save and view"
+    And I press "Save"
     And I log out
     # Approve the student's entry as a teacher.
     And I am on the "Test database name" "data activity" page logged in as teacher1
-    And I follow "Approve"
+    And I open the action menu in ".defaulttemplate-listentry" "css_element"
+    And I choose "Approve" in the open action menu
     And I log out
     # Make sure the student can still edit their entry after it's approved.
     When I am on the "Test database name" "data activity" page logged in as student1
@@ -62,18 +61,17 @@ Feature: Users can edit approved entries in database activities
     And I add a "Short text" field to "Test database name" database and I fill the form with:
       | Field name | Test field name |
       | Field description | Test field description |
-    # To generate the default templates.
-    And I follow "Templates"
     And I log out
     # Add an entry as a student.
     And I am on the "Test database name" "data activity" page logged in as student1
     And I add an entry to "Test database name" database with:
       | Test field name | Student entry |
-    And I press "Save and view"
+    And I press "Save"
     And I log out
     # Approve the student's entry as a teacher.
     And I am on the "Test database name" "data activity" page logged in as teacher1
-    And I follow "Approve"
+    And I open the action menu in ".defaulttemplate-listentry" "css_element"
+    And I choose "Approve" in the open action menu
     And I log out
     # Make sure the student isn't able to edit their entry after it's approved.
     When I am on the "Test database name" "data activity" page logged in as student1

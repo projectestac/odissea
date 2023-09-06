@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'sv', version '3.11'.
+ * Strings for component 'offlinequiz', language 'sv', version '4.1'.
  *
  * @package     offlinequiz
  * @category    string
@@ -62,6 +62,7 @@ $string['attemptexists'] = 'Försök finns';
 $string['attemptsexist'] = 'Du kan inte längre lägga till eller ta bort frågor.';
 $string['attemptsnum'] = 'Resultat: {$a}';
 $string['attemptsonly'] = 'Visa endast deltagare med resultat';
+$string['attendanceoverview'] = 'Översikt';
 $string['attendances'] = 'Närvaroregistreringar';
 $string['basicideasofofflinequiz'] = 'Den grundläggande idén med kunskapstest offline';
 $string['blackwhitethreshold'] = 'Gräns för svart-/vitkonvertering';
@@ -116,8 +117,8 @@ $string['createpdf'] = 'Formulär';
 $string['createpdferror'] = 'Det gick inte att skapa formuläret för gruppen {$a}. Det kanske inte finns några frågor i gruppen.';
 $string['createpdffirst'] = 'Skapa PDF-lista först';
 $string['createpdfforms'] = 'Skapa formulär';
-$string['createpdfs'] = 'Ladda ned formulär';
-$string['createpdfsparticipants'] = 'PDF-formulär för deltagarlista';
+$string['createpdfs'] = 'Formulär';
+$string['createpdfsparticipants'] = 'Formulär';
 $string['createquestionandadd'] = 'Skapa en ny fråga och lägg till den i kunskapstestet.';
 $string['createquiz'] = 'Skapa formulär';
 $string['csvfile'] = 'CSV-fil';
@@ -149,10 +150,11 @@ $string['displayoptions'] = 'Visningsalternativ';
 $string['done'] = 'klart';
 $string['downloadallzip'] = 'Ladda ned alla filer som en ZIP-fil';
 $string['downloadpartpdf'] = 'Ladda ned PDF-fil för lista \'{$a}\'';
-$string['downloadpdfs'] = 'Ladda ned dokument';
+$string['downloadpdfs'] = 'Formulär';
 $string['downloadresultsas'] = 'Ladda ned resultat som:';
 $string['dragtoafter'] = 'Efter {$a}';
 $string['dragtostart'] = 'Till början';
+$string['editgrades'] = 'Betyg';
 $string['editgroupquestions'] = 'Redigera frågegrupper';
 $string['editgroups'] = 'Redigera offline-grupper';
 $string['editingofflinequiz'] = 'Redigerar frågegrupper';
@@ -175,6 +177,7 @@ $string['emptygroups'] = 'Vissa grupper i kunskapstestet är tomma. Lägg till n
 $string['enroluser'] = 'Registrera användare';
 $string['erroraccessingreport'] = 'Du har inte behörighet att se den här rapporten.';
 $string['errorreport'] = 'Rapport över importfel';
+$string['evaluation'] = 'Resultat';
 $string['eventattemptdeleted'] = 'Testförsök borttaget';
 $string['eventattemptpreviewstarted'] = 'Förhandsgrandskning av offline-kunskapstest påbörjad';
 $string['eventattemptreviewed'] = 'Offline-test försök granskade';
@@ -226,12 +229,11 @@ $string['gradeiszero'] = 'OBS! Maxpoängen för detta offline-kunskapstest är 0
 $string['gradeswarning'] = 'Frågebetygen måste vara numeriska!';
 $string['gradewarning'] = 'Frågebetyget måste vara numeriskt!';
 $string['gradingofflinequiz'] = 'Betyg';
-$string['gradingofflinequizx'] = 'Betyg: {$a}';
+$string['gradingofflinequizx'] = 'Betyg';
 $string['gradingoptionsheading'] = 'Alternativ för betygsättning';
 $string['greeniscross'] = 'räknas som kryss';
 $string['group'] = 'Grupp';
 $string['groupoutofrange'] = 'Gruppen låg utanför intervallet och ersattes med grupp A.';
-$string['groupquestions'] = 'Frågegrupper';
 $string['hasresult'] = 'Resultat finns';
 $string['hotspotdeletiontask'] = 'Borttagning av hotspots';
 $string['html'] = 'HTML';
@@ -240,8 +242,8 @@ $string['imagefile'] = 'Bildfil';
 $string['imagenotfound'] = 'Hittade inte bildfilen {$a}!';
 $string['imagenotjpg'] = 'Filen är inte en <code>jpg</code> eller <code>png</code>: {$a}';
 $string['imagickwarning'] = 'Imagemagick saknas: Be systemadministratören att installera Imagemagick-biblioteket och kontrollera sökvägen till konverteringsprogrammet i TeX-notationsfilterinställningarna. Du kan inte importera TIF-filer utan Imagemagick!';
-$string['import'] = 'Importera';
-$string['importedon'] = 'Importerat den';
+$string['import'] = 'Utvärdera';
+$string['importedon'] = 'Utvärderat';
 $string['importerror11'] = 'Andra resultat finns';
 $string['importerror12'] = 'Användaren är inte registrerad';
 $string['importerror13'] = 'Ingen gruppdata';
@@ -259,7 +261,7 @@ $string['importisfinished'] = 'Importen av offline-kunskapstest {$a} är slutfö
 $string['importlinkresults'] = 'Länk till resultat: {$a}';
 $string['importlinkverify'] = 'Länk till verifiering: {$a}';
 $string['importmailsubject'] = 'notis om import av offline-kunskapstest';
-$string['importnew'] = 'Importera';
+$string['importnew'] = 'Utvärdera';
 $string['importnew_help'] = 'Du kan importera enstaka skannade bildfiler eller flera skannade bildfiler i ett ZIP-arkiv. Offline-kunskapstest modulen bearbetar bildfilerna i bakgrunden.
 Filnamn är inte relevanta men bör inte innehålla specialtecken som t.ex. \'&\'. Bilder ska vara i formaten GIF, PNG
 eller TIF. En upplösning mellan 200 och 300dpi rekommenderas.';
@@ -345,6 +347,7 @@ $string['noreview'] = 'Du är inte behörig att granska detta offline-kunskapste
 $string['noscannedpage'] = 'Det finns ingen inskannad sida med id {$a}!';
 $string['notagselected'] = 'Ingen etikett vald';
 $string['nothingtodo'] = 'Inget att göra!';
+$string['notonattendancelist'] = 'Ej på deltagarlistan:';
 $string['notxtfile'] = 'Ej TXT-fil';
 $string['notyetgraded'] = 'Ännu ej betygsatt';
 $string['nozipfile'] = 'Ingen ZIP-fil';
@@ -370,6 +373,7 @@ $string['offlinequiz:view'] = 'Visa information om offline-kunskapstest';
 $string['offlinequiz:viewreports'] = 'Visa offline-kunskapstest rapporter';
 $string['offlinequizcloses'] = 'Offline-kunskapstest stänger';
 $string['offlinequizcloseson'] = 'Granskningen av detta offline-kunskapstest avslutas {$a}';
+$string['offlinequizcontent'] = 'Innehåll';
 $string['offlinequizisclosed'] = 'Offline-kunskapstest stängt';
 $string['offlinequizisclosedwillopen'] = 'Offline-kunskapstest stängt (öppnar {$a})';
 $string['offlinequizisopen'] = 'Detta offline-kunskapstest är öppet.';

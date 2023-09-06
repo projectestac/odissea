@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'de', version '3.11'.
+ * Strings for component 'checkmark', language 'de', version '4.1'.
  *
  * @package     checkmark
  * @category    string
@@ -27,8 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['absent'] = 'Nicht anwesend';
 $string['activateindividuals'] = 'Individualfunktionen aktivieren';
-$string['activitydate:due'] = 'Fällig:';
-$string['activitydate:open'] = 'Öffnet:';
+$string['activitydate:due'] = 'Fällig';
 $string['activitydate:opened'] = 'Geöffnet';
 $string['activitydate:opens'] = 'Öffnet:';
 $string['addnewgroupoverride'] = 'Verfügbarkeitsänderungen für Gruppen anlegen';
@@ -58,7 +57,7 @@ $string['attendancegradelink_hint'] = 'Hinweis: Automatische Bewertung ist an An
 $string['attendancestatus'] = 'Aktueller Status ihrer Anwesenheit';
 $string['attendant'] = 'Anwesend';
 $string['autograde_all'] = 'Alle Abgaben bewerten';
-$string['autograde_confirm'] = 'Sie sind dabei, Bewertungen und Feedback von <strong>{$a->total}</strong> zu aktualisieren. <strong>{$a->graded}</strong> frühere Bewertungen und Feedbacks werden dadurch überschrieben.';
+$string['autograde_confirm'] = 'Sie sind dabei, Bewertungen und Kommentare von <strong>{$a->total}</strong> zu aktualisieren. <strong>{$a->graded}</strong> frühere Bewertungen und Kommentare werden dadurch überschrieben.';
 $string['autograde_confirm_continue'] = 'Sind Sie SICHER, dass Sie fortfahren wollen?';
 $string['autograde_custom'] = 'Ausgewählte bewerten';
 $string['autograde_error'] = 'Ein Fehler ist während der automatischen Bewertung aufgetreten!';
@@ -94,16 +93,16 @@ Abwesende Teilnehmer/innen erhalten 0 Punkte und Teilnehmer/innen mit unbekannte
 $string['bulk_no_users_selected'] = 'Sie haben keine Teilnehmer/in ausgewählt. Wählen Sie die gewünschten Teilnehmer/innen über die Checkboxen der linken Tabellenspalte aus.';
 $string['calendardue'] = '{$a} ist fällig.';
 $string['calendargradingdue'] = '{$a} ist zur Bewertung fällig';
+$string['calendarteachers'] = 'Abgabetermin für Trainer/innen im Kalender anzeigen';
+$string['calendarteachers_help'] = 'Der Abgabetermin der Kreuzerlübung kann für Trainer/innen optional im Kalender angezeigt werden. Bei Teilnehmer/innen wird der Abgabetermin standardmäßig im Kalender angezeigt. Achtung: Wenn es viele Kreuzerlübungen im Kurs gibt, kann die Kalenderansicht für Trainer/innen unübersichtlich werden.';
 $string['cannotviewcheckmark'] = 'Sie können diese Kreuzerlübung nicht betrachten';
 $string['cantfixevent'] = 'Konnte Kalendereintrag mit der ID {$a->id}, Name {$a->name} nicht reparieren ({$a->matches} treffer).';
 $string['cfg_nowarning'] = 'keine Warnung';
 $string['cfg_pdfexampleswarning'] = 'Beispielanzahl-Limit für Warnung PDF Export';
 $string['cfg_pdfexampleswarning_desc'] = 'Ab wie vielen Beispielen in einer Instanz eine Warnung gezeigt wird, dass kein ordentlicher PDF-Export mehr garantiert werden kann. Üblicherweise muss dieser Wert nicht verändert werden, es sei denn, man möchte diese Warnung gar nicht anzeigen, oder sie für die konkrete Installation etwas verfeinern.';
-$string['checkbrokengradebookgrades'] = 'Auf fehlerhafte Bewertungseinträge prüfen';
-$string['checkbrokengradebookgrades_desc'] = 'Aufgrund eines Bugs in Version 2.9.1 wurden Bewertungen nicht korrekt ins Gradebook übertragen.
-Die folgenden Abgaben sind davon betroffen:';
-$string['checkbrokengradebookgrades_mail'] = 'Aufgrund eines Bugs in Version 2.9.1 wurden Bewertungen nicht korrekt ins Gradebook übertragen.
-Die folgenden Abgaben waren davon betroffen und wurden automatisch repariert:';
+$string['checkbrokengradebookgrades'] = 'Auf fehlerhafte Bewertungs-Einträge prüfen';
+$string['checkbrokengradebookgrades_desc'] = 'Aufgrund eines Bugs in Version 2.9.1 wurden Bewertungen nicht korrekt in den Bewertungsbereich übertragen. Die folgenden Abgaben sind davon betroffen:';
+$string['checkbrokengradebookgrades_mail'] = 'Aufgrund eines Bugs in Version 2.9.1 wurden Bewertungen nicht korrekt in den Bewertungsbereich übertragen. Die folgenden Abgaben waren davon betroffen und wurden automatisch repariert:';
 $string['checkmark:addinstance'] = 'Kreuzerlübung anlegen';
 $string['checkmark:grade'] = 'Kreuzerlübung benoten';
 $string['checkmark:gradepresentation'] = 'Tafelleistung benoten';
@@ -117,17 +116,9 @@ $string['checkmark_overviewsummary_nograde'] = 'Sie haben {$a->checked_examples}
 $string['checkmark_summary'] = 'Sie haben <span id="examples">{$a->checked_examples}</span> von {$a->total_examples} Beispielen gekreuzt.<br />(<span id="grade">{$a->checked_grade}</span> von maximal {$a->total_grade} Punkten)';
 $string['checkmarkdetails'] = 'Kreuzerlübungsdetails';
 $string['checkmarkisdue'] = 'Kreuzerlübungs-Abgabe ist fällig';
-$string['checkmarkmail'] = '{$a->grader} hat eine Rückmeldung bezüglich ihrer
-Kreuzerlübungsabgabe für \'{$a->checkmark}\' gepostet.
-
-Sie können sie als Anhang an Ihre Abgabe einsehen:
-
-    {$a->url}';
-$string['checkmarkmailhtml'] = '{$a->grader} hat eine Rückmeldung zu ihrer
-Kreuzerlübungsabgabe für \'<i>{$a->checkmark}</i>\' gegeben.<br /><br />
-Sie können sie als Anhang an ihre <a href="{$a->url}">Abgabe</a> einsehen.';
-$string['checkmarkmailsmall'] = '{$a->grader} hat eine Rückmeldung zu ihrer
-Kreuzerlübungsabgabe für \'{$a->checkmark}\' gegeben. Sie können sie als Anhang an ihre Abgabe einsehen.';
+$string['checkmarkmail'] = '{$a->grader} hat einen Kommentar zu Ihrer Kreuzerlübungsabgabe für \'{$a->checkmark}\' verfasst. Sie können diesen als Anhang an Ihre Abgabe einsehen: {$a->url}';
+$string['checkmarkmailhtml'] = '{$a->grader} hat einen Kommentar zu Ihrer Kreuzerlübungsabgabe für \'<i>{$a->checkmark}</i>\' verfasst.<br /><br /> Sie können diesen als Anhang an Ihre <a href="{$a->url}">Abgabe</a> einsehen.';
+$string['checkmarkmailsmall'] = '{$a->grader} hat einen Kommentar zu Ihrer Kreuzerlübungsabgabe für \'{$a->checkmark}\' verfasst. Sie können diesen als Anhang an Ihre Abgabe einsehen.';
 $string['checkmarkname'] = 'Name der Kreuzerlübung';
 $string['checkmarks'] = 'Kreuzerl';
 $string['checkmarkstatstitle'] = 'Kursübersicht Kreuzerlübungen';
@@ -141,7 +132,7 @@ $string['configshowrecentsubmissions'] = 'Jeder kann Benachrichtigungen über Ab
 $string['couldfixevent'] = 'Konnte Termin mit der ID {$a->id} und dem Namen {$a->name} erfolgreich reparieren.';
 $string['count_individuals_mismatch'] = 'Die Anzahl der Beispielnamen({$a->namecount}) stimmt nicht mit der Anzahl der Beispielgewichtungen({$a->gradecount}) überein!';
 $string['coursemisconf'] = 'Kurs ist falsch konfiguriert';
-$string['currentgrade'] = 'Aktuelle Note im Gradebook';
+$string['currentgrade'] = 'Aktuelle Bewertung im Bewertungsbereich';
 $string['custom_settings'] = 'Benutzerdefinierte Einstellungen';
 $string['cutoffdate'] = 'Letzter Abgabetermin';
 $string['cutoffdate_help'] = 'Wenn aktiviert markiert dieses Datum das Ende der Abgabeperiode. Nach diesem Datum können Teilnehmer/innen nichts mehr abgeben. Wenn deaktivert können Teilnehmer/innen auch nach dem Abgabeende weiter Abgaben tätigen, welche als zu spät gekennzeichnet werden.';
@@ -231,10 +222,10 @@ $string['exporttemplates_help'] = 'Schneller Export mit Vorlagen<br />
         enthält folgende Spalten: [Nachname, Vorname, Matrikelnummer, Beispiele, Kreuzerl, Bewertung, Unterschrift]</li>
 </ul>';
 $string['extended_until'] = 'Verlängert bis {$a}';
-$string['failedupdatefeedback'] = 'Aktualisierung der Rückmeldung für Teilnehmer/in {$a} gescheitert';
-$string['feedback'] = 'Rückmeldung';
-$string['feedbackfromteacher'] = 'Rückmeldung von {$a}';
-$string['feedbackupdated'] = 'Abgaberückmeldung für {$a} Personen aktualisiert';
+$string['failedupdatefeedback'] = 'Aktualisierung des Kommentars für Teilnehmer/in {$a} gescheitert';
+$string['feedback'] = 'Kommentar';
+$string['feedbackfromteacher'] = 'Kommentar von {$a}';
+$string['feedbackupdated'] = 'Kommentar zur Abgabe für {$a} Personen aktualisiert';
 $string['filter'] = 'Filter';
 $string['filtergrantedextension'] = 'Gewährte Verlängerung';
 $string['filternotsubmitted'] = 'Nicht abgegeben';
@@ -247,6 +238,7 @@ $string['forcesinglelinenames'] = 'Erzwinge einzeilige Namen';
 $string['forcesinglelinenames_help'] = '<p>Erzwingt die Darstellung der Namen in einer Zeile im PDF.</p>
 <p><i>Achtung:</i> bei zu vielen Spalten oder wenn der Name zu lang ist, wird dieser gestaucht und kann unleserlich werden. Blenden Sie nicht benötigte Spalten aus um mehr Platz zu haben, falls dies passiert.</p>';
 $string['format'] = 'Format';
+$string['gotoactivity'] = 'Zur Aktivität gehen';
 $string['grade'] = 'Bewertung';
 $string['grade_attendence_name'] = 'Note der Anwesenheit';
 $string['grade_automatically'] = 'Automatisch bewerten';
@@ -299,7 +291,7 @@ $string['noclose'] = 'Kein Enddatum';
 $string['nolatesubmissions'] = 'Spätere Abgaben sind nicht zugelassen.';
 $string['nomoresubmissions'] = 'Es sind keine weiteren Abgaben erlaubt.';
 $string['nomoresubmissionsaccepted'] = 'Weitere Abgaben sind nur zugelassen, wenn der Abgabezeitraum verlängert wird.';
-$string['nonnegativeintrequired'] = 'Muss größer oder gleich null (>= 0) und ganzzahlig sein!';
+$string['nonnegativeintrequired'] = 'Muss größer als 0 und ganzzahlig sein!';
 $string['noopen'] = 'Kein Startdatum';
 $string['norequiregrading'] = 'Es sind keine Kreuzerlübungen vorhanden, die eine Benotung erfordern';
 $string['nostudents'] = 'Es sind keine Teilnehmer/innen zur Anzeige vorhanden!';
@@ -344,14 +336,14 @@ $string['pdftextsize'] = 'Textgröße';
 $string['pluginadministration'] = 'Kreuzerlübungsverwaltung';
 $string['pluginname'] = 'Kreuzerlübung';
 $string['popupinnewwindow'] = 'Öffne Pop-up in neuem Fenster';
-$string['posintrequired'] = 'Muss größer als 0 (> 0) und ganzzahlig sein!';
-$string['posintst100required'] = 'Muss im Intervall [0,100] liegen (0 <= X <= 100) sowie ganzzahlig sein!';
-$string['presentationfeedback'] = 'Tafelleistungskommentar';
+$string['posintrequired'] = 'Muss größer als 0 und ganzzahlig sein!';
+$string['posintst100required'] = 'Muss zwischen 0 und 100 liegen und ganzzahlig sein!';
+$string['presentationfeedback'] = 'Kommentar (Tafelleistung)';
 $string['presentationfeedback_table'] = 'Kommentar (Tafelleistung)';
-$string['presentationgrade'] = 'Tafelleistung';
+$string['presentationgrade'] = 'Bewertung (Tafelleistung)';
 $string['presentationgrade_short'] = 'TL';
 $string['presentationgrade_table'] = 'Bewertung (Tafelleistung)';
-$string['presentationgradebook'] = 'Tafelleistung in Kursbewertungen erfassen';
+$string['presentationgradebook'] = 'Tafelleistung in Kursbewertung erfassen';
 $string['presentationgradebook_help'] = 'Wird diese Option aktiviert, so scheint die Tafelleistung als eigener Bewertungsaspekt in den Kursbewertungen auf.';
 $string['presentationgrading'] = 'Tafelleistung erfassen';
 $string['presentationgrading_grade'] = 'Bewertung der Tafelleistung';
@@ -360,47 +352,47 @@ $string['presentationgrading_help'] = 'Wird diese Option aktiviert, können Tafe
 $string['presentationgradingcount'] = 'Bewertete Tafelleistungen';
 $string['presentationheader'] = 'Tafelleistung';
 $string['printsettingstitle'] = 'Exporteinstellungen';
-$string['privacy:metadata:attendance'] = 'Anwesenheitsstatus der Person';
-$string['privacy:metadata:checks'] = 'Tabelle mit den geprüften Beispielen der Person (gebunden an einen Eintrag in der Abgabetabelle).';
+$string['privacy:metadata:attendance'] = 'Anwesenheitsstatus der Nutzerin/ des Nutzers.';
+$string['privacy:metadata:checks'] = 'Tabelle mit den geprüften Beispielen der Nutzerin/ des Nutzers (gebunden an einen Eintrag in der Abgabetabelle).';
 $string['privacy:metadata:cutoffdate'] = 'Uhrzeit und Datum bis zur Abgabe sind möglich.';
-$string['privacy:metadata:feedback'] = 'Feedback als Text an den Benutzer.';
-$string['privacy:metadata:feedback:timecreated'] = 'Die Uhrzeit und das Datum, an dem das Feedback erstellt wurde.';
-$string['privacy:metadata:feedback:timemodified'] = 'Datum und Uhrzeit der letzten Aktualisierung/Änderung des Feedbacks.';
-$string['privacy:metadata:feedbacks'] = 'Tabelle mit den Kommentardaten der Person';
-$string['privacy:metadata:format'] = 'Format für das textuelle Feedback an den Benutzer.';
-$string['privacy:metadata:grade'] = 'Bewertung der Person';
-$string['privacy:metadata:graderid'] = 'Der Benutzer, der ein Feedback gegeben hat.';
-$string['privacy:metadata:mailed'] = 'Gibt an, ob der Benutzer über das Feedback informiert wurde.';
-$string['privacy:metadata:override:timecreated'] = 'Die Uhrzeit und das Datum, an dem die Daten für diese Person überschrieben wurden.';
-$string['privacy:metadata:override:timemodified'] = 'Der letzte Zeitpunkt und das Datum, an dem die Daten für diese Person überschrieben wurden.';
+$string['privacy:metadata:feedback'] = 'Kommentar als Text an die Person';
+$string['privacy:metadata:feedback:timecreated'] = 'Die Uhrzeit und das Datum, an dem der Kommentar erstellt wurde.';
+$string['privacy:metadata:feedback:timemodified'] = 'Datum und Uhrzeit der letzten Aktualisierung/Änderung des Kommentars.';
+$string['privacy:metadata:feedbacks'] = 'Tabelle mit den Kommentardaten der Nutzerin/ des Nutzers.';
+$string['privacy:metadata:format'] = 'Format für den Kommentar/ das textuelle Feedback an die Person';
+$string['privacy:metadata:grade'] = 'Bewertung der Nutzerin/ des Nutzers.';
+$string['privacy:metadata:graderid'] = 'Person, die einen Kommentar verfasst hat.';
+$string['privacy:metadata:mailed'] = 'Gibt an, ob die Person über den Kommentar informiert wurde.';
+$string['privacy:metadata:override:timecreated'] = 'Die Uhrzeit und das Datum, an dem die Daten für diese/n Nutzer/in überschrieben wurden.';
+$string['privacy:metadata:override:timemodified'] = 'Der letzte Zeitpunkt und das Datum, an dem die Daten für diese/n Nutzer/in überschrieben wurden.';
 $string['privacy:metadata:overrides'] = 'Tabelle mit allen überschriebenen Datumsangaben (Verfügbarkeitszeitraum, Fälligkeitsdatum und Datum für die letzte Abgabemöglichkeit).';
 $string['privacy:metadata:pref:filter'] = 'Der Standardfilter für die Anzeige der Abgabetabellen.';
 $string['privacy:metadata:pref:forcesinglelinenames'] = 'Die Standardeinstellung, ob beim Exportieren von Einreichungen einzelne Zeilennamen erzwungen werden sollen.';
 $string['privacy:metadata:pref:format'] = 'Das Standardformat, das beim Anzeigen von Abgabetabellen im Formular verwendet werden soll.';
-$string['privacy:metadata:pref:mailinfo'] = 'Die Standardeinstellung, ob Nachrichten an Benutzer gesendet werden sollen oder nicht, wenn sie Feedback erhalten.';
+$string['privacy:metadata:pref:mailinfo'] = 'Standardeinstellung, ob Nachrichten an Nutzer/innen gesendet werden sollen oder nicht, wenn sie Kommentare erhalten.';
 $string['privacy:metadata:pref:pageorientation'] = 'Die standardmäßige Seitenausrichtung, die beim Anzeigen des Exportformulars für Einreichungen verwendet werden soll.';
 $string['privacy:metadata:pref:pdfprintperpage'] = 'Wie viele Einreichungen sollen standardmäßig exportiert werden.';
 $string['privacy:metadata:pref:perpage'] = 'Wie viele Einreichungen sollten standardmäßig auf einer Seite sichtbar sein.';
-$string['privacy:metadata:pref:printheader'] = 'Sollen die Header standardmäßig für diese Person exportiert werden?';
-$string['privacy:metadata:pref:quickgrade'] = 'Soll das Schnellbewertung für diese Person standardmäßig aktiviert sein?';
-$string['privacy:metadata:pref:sumabs'] = 'Sollen für diese Person standardmäßig absolute Summen angezeigt werden?';
-$string['privacy:metadata:pref:sumrel'] = 'Sollen für diese Person standardmäßig relative Summen angezeigt werden?';
-$string['privacy:metadata:pref:textsize'] = 'Standard-Textgröße, die für die Exporte dieser Person Nutzers verwendet wird.';
+$string['privacy:metadata:pref:printheader'] = 'Sollen die Header standardmäßig für diese/n Nutzer/in exportiert werden?';
+$string['privacy:metadata:pref:quickgrade'] = 'Soll das Schnellbewertung für diese/n Nutzer/in standardmäßig aktiviert sein?';
+$string['privacy:metadata:pref:sumabs'] = 'Sollen für diese/n Nutzer/in standardmäßig absolute Summen angezeigt werden?';
+$string['privacy:metadata:pref:sumrel'] = 'Sollen für diese/n Nutzer/in standardmäßig relative Summen angezeigt werden?';
+$string['privacy:metadata:pref:textsize'] = 'Standard-Textgröße, die für die Exporte dieser Nutzerin/ dieses Nutzers verwendet wird.';
 $string['privacy:metadata:pref:zipped'] = 'Standardeinstellung, wenn separate PDFs pro Gruppe als ZIP-Archiv bevorzugt werden.';
-$string['privacy:metadata:presentationfeedback'] = 'Textfeedback, das dem Nutzer für seine Präsentation gegeben wurde.';
-$string['privacy:metadata:presentationformat'] = 'Format für das Textfeedback, das dem Nutzer für seine Präsentation gegeben wurde.';
-$string['privacy:metadata:presentationgrade'] = 'Bewertung für die Präsentation der Person';
+$string['privacy:metadata:presentationfeedback'] = 'Kommentar, der der Person für die Präsentation gegeben wurde.';
+$string['privacy:metadata:presentationformat'] = 'Format für einen Kommentar, der der Person für die Präsentation gegeben wurde.';
+$string['privacy:metadata:presentationgrade'] = 'Bewertung für die Präsentation der Nutzerin/ des Nutzers.';
 $string['privacy:metadata:state'] = 'Markieren, wenn das Beispiel aktivert / deaktiviert ist.';
 $string['privacy:metadata:submission:timecreated'] = 'Die Uhrzeit und das Datum, an dem die Abgabe erstellt wurde.';
 $string['privacy:metadata:submission:timemodified'] = 'Datum und Uhrzeit der letzten Aktualisierung / Änderung der Abgabe.';
-$string['privacy:metadata:submissions'] = 'Tabelle mit Daten zu den Abgaben der Person';
-$string['privacy:metadata:subsys:message'] = 'Wenn aktiviert, werden Benachrichtigungen an die Teilnehmer/innen verschickt, wenn sie Feedback erhalten haben und an Trainer/innen, wenn jemand eine Abgabe eingereicht hat.';
+$string['privacy:metadata:submissions'] = 'Tabelle mit Daten zu den Abgaben der Nutzerin/ des Nutzers.';
+$string['privacy:metadata:subsys:message'] = 'Wenn aktiviert, werden Benachrichtigungen an die Teilnehmer/innen verschickt, wenn sie einen Kommentar erhalten haben, und an Trainer/innen, wenn jemand eine Abgabe eingereicht hat.';
 $string['privacy:metadata:timeavailable'] = 'Zeit seit dem Beginn der Abgabefrist.';
 $string['privacy:metadata:timedue'] = 'Fälligkeitsdatum für die Abgabe.';
-$string['privacy:path:feedback'] = 'Feedback';
+$string['privacy:path:feedback'] = 'Kommentar';
 $string['privacy:path:submission'] = 'Abgabe';
 $string['quickgrade'] = 'Schnelle Bewertung erlauben';
-$string['quickgrade_help'] = 'Wenn aktiviert, können mehrere Abgaben auf einer Seite bewertet werden. Wählen Sie zuerst Ihre Bewertungen aus und fügen Sie Kommentare hinzu. Danach klicken Sie auf "Speichere all meine Rückmeldungen" um alle Änderungen zu speichern.';
+$string['quickgrade_help'] = 'Wenn aktiviert, können mehrere Abgaben auf einer Seite bewertet werden. Wählen Sie zuerst Ihre Bewertungen aus und fügen Sie Kommentare hinzu. Danach klicken Sie auf "Alle Bewertungsänderungen sichern" um alle Änderungen zu speichern.';
 $string['remembertoupdategrades'] = 'Sie haben automatisch bewertete Abgaben in dieser Kreuzerlübung. Wir empfehlen ausdrücklich diese Bewertungen zu aktualisieren oder erneut automatisch zu bewerten, für den Fall, dass Sie die Beispielgewichtungen geändert haben!';
 $string['requiregrading'] = 'Bewertung erforderlich';
 $string['requiresubmit'] = 'Abgabe erforderlich';
@@ -414,7 +406,7 @@ $string['sendnotifications'] = 'Sende Benachrichtigungen';
 $string['seperatenamecolumns'] = 'Vollständigen Namen in separate Spalten aufteilen.';
 $string['seperatenamecolumns_help'] = 'Wenn diese Option aktiviert ist, wird der vollständige Name in separate Spalten aufgeteilt (z.B. Vorname und Nachname).';
 $string['sequentialnumbering'] = 'Fortlaufende Zeilennummerierung';
-$string['sequentialnumbering_help'] = 'Zusätzliche Spalte mit forlaufender Nummerierung jeder Zeile (entspr. Teilnehmer/in) anzeigen, beginnend mit 1. Kann z.B. verwendet werden, um Teilnehmer/innen zufällig auszuwählen, die präsentieren sollen.';
+$string['sequentialnumbering_help'] = 'Zusätzliche Spalte mit forlaufender Nummerierung jeder Zeile (entspr. Teilnehmer/in) anzeigen, beginnend mit 1. Kann zum Beispiel verwendet werden, um Teilnehmer/innen zufällig auszuwählen, die präsentieren sollen.';
 $string['setabsent'] = 'Als abwesend markieren';
 $string['setabsentandgrade'] = 'Als abwesend markieren und bewerten';
 $string['setattendant'] = 'Als anwesend markieren';
@@ -472,14 +464,16 @@ $string['trackattendance'] = 'Anwesenheit erfassen';
 $string['trackattendance_help'] = 'Aktivieren Sie diese Funktion, um die Anwesenheit bei Teilnehmer/innen zu protokollieren.';
 $string['ungraded'] = 'Nicht bewertete';
 $string['unknown'] = 'Unbekannt';
+$string['upgradekeyerror'] = 'Das Upgrade ist fehlgeschlagen, da für ein bestimmtes Beispiel/Abgabe-Paar mehrere Häkchen vorhanden sind. Sehen Sie sich das folgende Github-Issue für weitere Details an: {$a}';
 $string['user_dates_overridden'] = 'Nutzerdaten wurden überschrieben!';
-$string['usermisconf'] = 'Benutzer/in ist falsch konfiguriert';
+$string['usermisconf'] = 'Nutzer/in ist falsch konfiguriert';
 $string['usernosubmit'] = 'Es ist Ihnen nicht erlaubt abzugeben.';
 $string['useroverride'] = 'Verfügbarkeitsänderung für Nutzer/in';
 $string['useroverride_edit'] = 'Überschreibung für Nutzer/in bearbeiten';
 $string['useroverrides'] = 'Verfügbarkeitsänderungen für Nutzer/in';
 $string['usersnone'] = 'Teilnehmer/innen haben keinen Zugriff auf diese Aufgabe.';
-$string['viewfeedback'] = 'Zeige Kreuzerlübungsnote und Kommentar';
+$string['viewallsubmissions'] = 'Alle Abgaben anzeigen';
+$string['viewfeedback'] = 'Zeige Kreuzerlübungsbewertung und Kommentar';
 $string['viewmysubmission'] = 'Zeige meine Abgabe';
 $string['viewsubmissions'] = 'Alle Abgaben anzeigen';
 $string['yoursubmission'] = 'Ihre Abgabe';

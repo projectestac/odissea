@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'pt', version '3.11'.
+ * Strings for component 'tool_mobile', language 'pt', version '4.1'.
  *
  * @package     tool_mobile
  * @category    string
@@ -31,7 +31,9 @@ $string['androidappid_desc'] = 'Esta definição pode ser deixada com o valor pr
 $string['apppolicy'] = 'URL da política da Aplicação Móvel Moodle';
 $string['apppolicy_help'] = 'URL da política para os utilizadores da Aplicação móvel Moodle, listada na página Acerca da aplicação. Se o campo ficar em branco, será usado o URL da política do site.';
 $string['apprequired'] = 'Essa funcionalidade só está disponível quando acede com a Aplicação móvel Moodle para dispositivos móveis ou computadores de secretária.';
-$string['autologinkeygenerationlockout'] = 'A geração de chaves de autenticação automática está bloqueada. Tem de esperar 6 minutos entre os pedidos.';
+$string['autologinkeygenerationlockout'] = 'A geração de chaves de autenticação automática está bloqueada. Tem de esperar {$a} minutos entre os pedidos.';
+$string['autologinmintimebetweenreq'] = 'Intervalo mínimo entre solicitações de autenticação automática';
+$string['autologinmintimebetweenreq_desc'] = 'O tempo mínimo entre as solicitações de autenticação automática da Aplicação móvel. Se os utilizadores da Aplicação móvel forem solicitados a inserir as respetivas credenciais com frequência ao visualizar o conteúdo incorporado do site, defina um valor mais baixo.';
 $string['autologinnotallowedtoadmins'] = 'A autenticação automática não é permitida aos administradores do site.';
 $string['cachedef_plugininfo'] = 'Armazena a lista de módulos com suplementos móveis';
 $string['cachedef_subscriptiondata'] = 'Armazena as informações da subscrição da Aplicação móvel Moodle.';
@@ -81,7 +83,7 @@ $string['invalidcertificatechainwarning'] = 'Parece que a cadeia de certificados
 $string['invalidcertificateexpiredatewarning'] = 'Parece que o certificado HTTPS para o site expirou.';
 $string['invalidcertificatestartdatewarning'] = 'Parece que o certificado HTTPS para o site ainda não é válido (com uma data de início no futuro).';
 $string['invalidprivatetoken'] = 'Token privado inválido. O token não pode estar em branco ou ser transmitido através do parâmetro GET.';
-$string['invaliduserquotawarning'] = 'A quota do utilizador (userquota) está definida para um número inválido. Deve ser alterada para um número válido (número inteiro) nas Configurações de segurança do site.';
+$string['invaliduserquotawarning'] = 'A quota do utilizador (userquota) está definida para um número inválido. Deve ser alterada para um número válido (número inteiro) nas \'Configurações de segurança do site\'.';
 $string['iosappid'] = 'Identificador exclusivo da aplicação iOS';
 $string['iosappid_desc'] = 'Esta configuração pode ser deixada com o valor predefinido a não que tenha uma aplicação iOS personalizada.';
 $string['launchviasiteinbrowser'] = 'Iniciar via site no navegador do sistema';
@@ -122,14 +124,18 @@ $string['privacy:metadata:core_userkey'] = 'Chaves de utilizador para criar chav
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'A data do último pedido da chave de autenticação automática. Entre cada pedido, são necessários 6 minutos.';
 $string['qrcodedisabled'] = 'Acesso via código QR desativado';
 $string['qrcodeformobileappaccess'] = 'Código QR para acesso com aplicações de dispositivos móveis';
-$string['qrcodeformobileapploginabout'] = 'Faça a leitura do código QR com o seu dispositivo móvel e ficará autenticado automaticamente. O código QR é válido durante {$a} minutos.';
+$string['qrcodeformobileapploginabout'] = 'Faça a leitura do código QR com o seu dispositivo móvel e ficará autenticado automaticamente. O código QR é válido durante {$a}.';
 $string['qrcodeformobileappurlabout'] = 'Faça a leitura do código QR com o seu dispositivo móvel para preencher o URL do site.';
 $string['qrcodetype'] = 'Acesso por código QR';
 $string['qrcodetype_desc'] = 'Pode ser fornecido um código QR aos utilizadores da aplicação móvel Moodle. Pode ser usado para preencher o URL do site, ou se o site for seguro por usar HTTPS, autenticarem-se automaticamente sem ter que inserir o nome de utilizador e a senha.';
 $string['qrcodetypelogin'] = 'Código QR com autenticação automática';
 $string['qrcodetypeurl'] = 'Código QR com URL do site';
+$string['qrkeyttl'] = 'Validade da chave de autenticação QR';
+$string['qrkeyttl_desc'] = 'Período de tempo durante o qual um código QR para autenticação é válido.';
+$string['qrsameipcheck'] = 'Verificação do mesmo IP na autenticação QR';
+$string['qrsameipcheck_desc'] = 'Os utilizadores devem, ou não, usar a mesma rede para gerar e digitalizar um código QR para autenticação. Desative-a apenas se os seus utilizadores relatarem problemas com a autenticação QR.';
 $string['qrsiteadminsnotallowed'] = 'Por motivos de segurança, a autenticação via código QR não é permitida para administradores do site ou se estiver autenticado como outro utilizador.';
-$string['readingthisemailgettheapp'] = 'Está a ler esta mensagem num e-mail? <a href="{$a}">Descarregue a Aplicação móvel Moodle</a> e receba notificações no seu dispositivo móvel.';
+$string['readingthisemailgettheapp'] = 'Está a ler esta mensagem num e-mail? <a href="{$a}">Descarregue a Aplicação móvel Moodle</a> e receba as notificações no seu dispositivo móvel.';
 $string['remoteaddons'] = 'Suplementos remotos';
 $string['responsivemainmenuitems'] = 'Itens de menu responsivos';
 $string['scanqrcode'] = 'Ler código QR';

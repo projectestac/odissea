@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'eu', version '3.11'.
+ * Strings for component 'debug', language 'eu', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,17 @@ $string['notables'] = 'Ez dago taularik!';
 $string['outputbuffer'] = 'Irteera-buffer-a';
 $string['phpvaroff'] = 'PHP zerbitzariaren aldagaiak \'{$a->name}\'  izan behar luke - {$a->link}';
 $string['phpvaron'] = 'PHP zerbitzariaren aldagaia \'{$a->name}\'  ez da On jarri - {$a->link}';
+$string['reactive_highlightoff'] = 'Nabarmentzea DESGAITUTA';
+$string['reactive_highlighton'] = 'Nabarmentzea GAITUTA';
+$string['reactive_instances'] = 'Reactive instantziak:';
+$string['reactive_noinstances'] = 'Orri honek ez dauka reactive instantziarik.';
+$string['reactive_pin'] = 'Finkatu';
+$string['reactive_readmodeoff'] = 'Irakurtze-modua DESGAITUTA';
+$string['reactive_readmodeon'] = 'Irakurtze-modua GAITUTA';
+$string['reactive_resetpanel'] = 'Berrabiarazi panela';
+$string['reactive_saveingwarning'] = 'Oharra: Egoera editatzeak ezusteko emaitzak sortu ditzake.';
+$string['reactive_statedata'] = 'Egoeraren datuak';
+$string['reactive_unpin'] = 'Kendu finkatzea';
 $string['sessionmissing'] = '{$a} objektua falta da saio honetatik';
 $string['sqlrelyonobsoletetable'] = 'SQL hau zaharkitutako taul(et)an oinarrituta dago: {$a}! Programatzaile batek zure kodea konpondu behar du.';
 $string['stacktrace'] = 'Pilaren arrastoa';

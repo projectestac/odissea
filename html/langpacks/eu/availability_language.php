@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_language', language 'eu', version '3.11'.
+ * Strings for component 'availability_language', language 'eu', version '4.1'.
  *
  * @package     availability_language
  * @category    string
@@ -29,6 +29,6 @@ $string['description'] = 'Behartu ikasleak hizkuntza jakin bat erabiltzera.';
 $string['getdescription'] = 'Ikaslearen hizkuntza {$a} da';
 $string['getdescriptionnot'] = 'Ikaslearen hizkuntza ez da {$a}';
 $string['missing'] = 'Hizkuntza bat aukeratu behar duzu.';
-$string['pluginname'] = 'Hizkuntzaren araberako baldintza';
+$string['pluginname'] = 'Hizkuntzaren araberako eskuragarritasun baldintza';
 $string['privacy:metadata'] = 'Hizkuntzaren araberako baldintza pluginak  ez du datu pertsonalik biltzen.';
 $string['title'] = 'Hizkuntza';

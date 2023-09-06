@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grouptool', language 'gl', version '3.11'.
+ * Strings for component 'grouptool', language 'gl', version '4.1'.
  *
  * @package     grouptool
  * @category    string
@@ -510,6 +510,7 @@ $string['regpresent'] = 'O usuario xa é {$a}';
 $string['rename_failed'] = 'Fallou o cambio de nome!';
 $string['renamed_group'] = 'Grupo renomeado!';
 $string['require_registration'] = 'Requirir rexistros';
+$string['require_registration_help'] = 'Cantidade mínima de grupos nos que os alumnos deben rexistrarse para marcar esta actividade como rematada. Os puntos nas colas non son considerados pola regra. Se o número é superior a 1, hai que activar «Múltiples rexistros» e «Máximo de grupos a escoller» debe ser maior ou igual a este valor.';
 $string['reset_agrps'] = 'Restabelecer grupos activos';
 $string['reset_agrps_help'] = 'Restabelece todos os grupos de cursos para que estean inactivos para as ferramentas de grupos. Isto tamén eliminará todos os rexistros e colas nas ferramentas de grupos deste curso.';
 $string['reset_queues'] = 'Restabelecer as colas';
@@ -559,7 +560,7 @@ $string['sortlist_no_data'] = 'Non hai grupos presentes polo momento!';
 $string['source'] = 'Orixe';
 $string['source_missing'] = 'Non hai ningunha orixe para copiar!';
 $string['sources_missing'] = 'Hai polo menos 1 grupo sen unha orixe escollida para copiar!';
-$string['start'] = 'Comezar';
+$string['start'] = 'Iniciar';
 $string['status'] = 'Estado';
 $string['status_help'] = '<ul>
 <li><strong>✔</strong> rexistrado no grupo Moodle e na ferramenta de grupos</li>

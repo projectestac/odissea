@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_algebra', language 'el', version '3.11'.
+ * Strings for component 'qtype_algebra', language 'el', version '4.1'.
  *
  * @package     qtype_algebra
  * @category    string
@@ -79,7 +79,7 @@ $string['novarmin'] = 'Δεν καθορίστηκε κανένα ελάχιστ
 $string['options'] = 'Επιλογές';
 $string['parseerror'] = 'Σφάλμα συντακτικής ανάλυσης συνάρτησης: «{$a}»';
 $string['pluginname'] = 'Άλγεβρα';
-$string['pluginname_link'] = 'ερώτηση/τύπος/άλγεβρα';
+$string['pluginname_link'] = '';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης άλγεβρας';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης άλγεβρας';
 $string['port'] = 'Θύρα εξυπηρετητή SAGE';

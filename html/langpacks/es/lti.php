@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'es', version '3.11'.
+ * Strings for component 'lti', language 'es', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -217,10 +217,12 @@ $string['indicator:cognitivedepth'] = 'LTI cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad LTI.';
 $string['indicator:cognitivedepthdef'] = 'LTI cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades LTI durante este intervalo de análisis (Niveles = Sin visualización, Visualización, Envío, Visualización de comentarios)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'LTI social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad LTI.';
 $string['indicator:socialbreadthdef'] = 'LTI social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje de compromiso social ofrecido por las actividades LTI durante este intervalo de análisis (Niveles = Sin participación, Participante solo, Participante con otros)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = 'Iniciar URL de inicio de sesión';
 $string['initiatelogin_help'] = 'La URL de la herramienta a la que se enviarán las solicitudes para iniciar un inicio de sesión. Esta URL es necesaria antes de que un mensaje se pueda enviar correctamente a la herramienta.';
 $string['invalidid'] = 'ID de LTI incorrecta';
@@ -300,6 +302,8 @@ Las herramientas externas difieren se los recursos URL en varias formas:
 * Las herramientas externas soportan leer, actualizar y borrar calificaciones asociadas con la instancia de la actividad
 
 * Las configuraciones de la herramienta externa crean una relación de confianza entre su sitio Moodle y el provedor de la herramienta, permitiendo la comunicación segura entre ambos';
+$string['modulename_link'] = 'mod/lti/view';
+$string['modulename_shortcut_link'] = 'mod/lti/view/custom (mod/lti/ver/personalizar)';
 $string['modulenameplural'] = 'Herramientas externas';
 $string['modulenamepluralformatted'] = 'Instancias LTI';
 $string['name'] = 'Nombre';
@@ -325,12 +329,8 @@ $string['opensslconfiginvalid'] = 'LTI 1.3 requiere un archivo openssl.cnf váli
 $string['optionalsettings'] = 'Ajustes opcionales';
 $string['organization'] = 'Detalles de la organización';
 $string['organizationdescr'] = 'Descripción de la organización';
-$string['organizationid'] = 'ID de la organización';
 $string['organizationid_default'] = 'ID por defecto de la organización';
 $string['organizationid_default_help'] = 'El valor por defecto para utilizarlo como ID de la organización. El ID del sitio identifica esta instalación de Moodle.';
-$string['organizationid_help'] = 'Un identificador único para esta instancia de Moodle. Habitualmente se utiliza el nombre DNS de la organización.
-
-Si este campo se deja en blanco, el nombre del host de este sitio Moodle se utilizará como valor por defecto.';
 $string['organizationidguid'] = 'ID de la organización';
 $string['organizationidguid_help'] = 'Un identificador único para esta instancia de Moodle que se pasa a la herramienta como GUID de instancia de plataforma.
 

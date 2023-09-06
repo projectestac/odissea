@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodleoverflow', language 'ca', version '3.11'.
+ * Strings for component 'moodleoverflow', language 'ca', version '4.1'.
  *
  * @package     moodleoverflow
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['crontask'] = 'Tasques de manteniment del Moodleoverflow';
-$string['moodleoverflow:view'] = 'Visualitza la llista de distribució';
+$string['edit'] = 'Edita';
 $string['moodleoverflow:viewdiscussion'] = 'Visualitza el debat';
 $string['noviewdiscussionspermission'] = 'No teniu permís per visualitzar debats en aquest fòrum';
+$string['questions'] = 'Preguntes';

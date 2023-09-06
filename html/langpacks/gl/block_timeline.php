@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'gl', version '3.11'.
+ * Strings for component 'block_timeline', language 'gl', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -25,30 +25,32 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['all'] = 'Todos';
-$string['ariadayfilter'] = 'Filtrar os elementos da liña temporal';
+$string['all'] = 'Todo';
+$string['ariadayfilter'] = 'Filtrar a liña temporal pola data';
 $string['ariadayfilteroption'] = 'Opción de filtro {$a}';
 $string['ariaeventlistitem'] = 'A actividade {$a->name} en {$a->course} debe ser entregada antes do {$a->date}';
 $string['ariaeventlistpagelimit'] = 'Amosar {$a} actividades por páxina';
 $string['ariaeventlistpaginationnavcourses'] = 'Actividades da liña temporal para a paxinación do curso {$a}';
 $string['ariaeventlistpaginationnavdates'] = 'Paxinación de actividades da liña temporal';
-$string['ariaviewselector'] = 'Ordenar os elementos da liña temporal';
+$string['ariaviewselector'] = 'Ordenar os elementos do cronograma';
 $string['ariaviewselectoroption'] = 'Opción de ordenamento';
 $string['duedate'] = 'Data límite';
-$string['morecourses'] = 'Máis cursos';
+$string['moreactivities'] = 'Amosar máis actividades';
+$string['morecourses'] = 'Amosar máis cursos';
 $string['next30days'] = 'Próximos 30 días';
 $string['next3months'] = 'Próximos 3 meses';
 $string['next6months'] = 'Próximos 6 meses';
 $string['next7days'] = 'Próximos 7 días';
 $string['nocoursesinprogress'] = 'Non hai cursos en progreso';
-$string['noevents'] = 'Non hai actividades pendentes de entrega';
+$string['noevents'] = 'Ningunha actividade require acción';
 $string['overdue'] = 'Atrasada';
-$string['pluginname'] = 'Liña temporal';
-$string['privacy:metadata:timelinefilterpreference'] = 'A preferencia do filtro do día do usuario para o bloque de liña temporal.';
-$string['privacy:metadata:timelinelimitpreference'] = 'A preferencia do límite de páxina do usuario para o bloque de liña temporal.';
-$string['privacy:metadata:timelinesortpreference'] = 'A preferencia do ordenamento do usuario para o bloque de liña temporal.';
+$string['pluginname'] = 'Cronograma';
+$string['privacy:metadata:timelinefilterpreference'] = 'A preferencia do filtro do día do usuario para o bloque do cronograma.';
+$string['privacy:metadata:timelinelimitpreference'] = 'A preferencia do límite de páxina do usuario para o bloque do cronograma.';
+$string['privacy:metadata:timelinesortpreference'] = 'A preferencia do ordenamento do usuario para o bloque do cronograma.';
+$string['searchevents'] = 'Buscar por tipo de actividade ou nome';
 $string['sortbycourses'] = 'Ordenar por cursos';
 $string['sortbydates'] = 'Ordenar por datas';
-$string['timeline'] = 'Liña temporal';
-$string['timeline:myaddinstance'] = 'Engadir un novo bloque de liña temporal ao Taboleiro';
+$string['timeline'] = 'Cronograma';
+$string['timeline:myaddinstance'] = 'Engadir un novo bloque de cronograma ao Taboleiro';
 $string['viewcourse'] = 'Ver o curso';

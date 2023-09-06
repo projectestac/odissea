@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'eu', version '3.11'.
+ * Strings for component 'qtype_essay', language 'eu', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -49,10 +49,10 @@ $string['graderinfoheader'] = 'Irakaslearentzako informazioa';
 $string['maxbytes'] = 'Fitxategien gehieneko tamaina';
 $string['maxwordlimit'] = 'Gehieneko hitz kopurua';
 $string['maxwordlimit_help'] = 'Erantzunak ikasleak testua idaztea eskatzen badu, honek ikasle bakoitzak gehienezk bidali ahalko duen hitz kopurua zehazten du.';
-$string['maxwordlimitboundary'] = 'Galdera honen erantzunen gehienezko hitz kopurua {$a->limit} da eta zu {$a->count} hitz bidaltzen saiatzen ari zara. Zure erantzuna laburtu ezazu eta ondoren saiatu zaitez berriz, mesedez.';
+$string['maxwordlimitboundary'] = 'Galdera honen erantzunen gehieneko hitz kopurua {$a->limit} da eta zu {$a->count} hitz bidaltzen saiatzen ari zara. Zure erantzuna laburtu ezazu eta ondoren saiatu zaitez berriro, mesedez.';
 $string['minwordlimit'] = 'Gutxieneko hitz kopurua';
 $string['minwordlimit_help'] = 'Erantzunak ikasleak testua idaztea eskatzen badu, honek ikasle bakoitzak gutxienez bidali beharko duen hitz kopurua zehazten du.';
-$string['minwordlimitboundary'] = 'Galdera honen erantzunen gutxienezko hitz kopurua {$a->limit} da eta zu {$a->count} hitz bidaltzen saiatzen ari zara. Zure erantzuna luzatu ezazu eta ondoren saiatu zaitez berriz, mesedez.';
+$string['minwordlimitboundary'] = 'Galdera honen erantzunen gutxieneko hitz kopurua {$a->limit} da eta zu {$a->count} hitz bidaltzen saiatzen ari zara. Zure erantzuna luzatu ezazu eta ondoren saiatu zaitez berriro, mesedez.';
 $string['mustattach'] = '"Lerro-arteko testurik ez" aukeratzean, edo erantzunak hautazkoak direnean, gutxienez eranskin bat baimendu behar duzu.';
 $string['mustrequire'] = '"Lerro-arteko testurik ez" aukeratzean, edo erantzunak hautazkoak direnean, gutxienez eranskin bat eskatu behar duzu.';
 $string['mustrequirefewer'] = 'Ezin duzu eskatu baimentzen duzun eranskin kopurua baino gehiago.';
@@ -60,6 +60,7 @@ $string['nlines'] = '{$a} lerro';
 $string['nonexistentfiletypes'] = 'Hurrengo fitxategi motak ez dira onartu: {$a}';
 $string['pluginname'] = 'Entsegua';
 $string['pluginname_help'] = 'Galderari erantzuteko ikasleak fitxategi bat edo gehiago igo edota testua idatzi dezake. Erantzunaren txantiloia eskaini daiteke. Galdera hauek eskuz kalifikatu behar dira.';
+$string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = 'Entsegu motako galdera gehitzen';
 $string['pluginnameediting'] = 'Entsegu motako galdera editatzen';
 $string['pluginnamesummary'] = 'Fitxategiak igota edo testua idatziz erantzuna ematen uzten du. Hauek eskuz kalifikatu behar dira.';

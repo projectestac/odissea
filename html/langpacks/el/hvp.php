@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'el', version '3.11'.
+ * Strings for component 'hvp', language 'el', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -110,7 +110,7 @@ $string['contentissyncing'] = 'Το περιεχόμενο συγχρονίζε�
 $string['contentlicensetitle'] = 'Πληροφορίες άδειας περιεχομένου';
 $string['contentnotshared'] = 'Το περιεχόμενο δεν κοινοποιείται στον διανομέα.';
 $string['contentstatefrequency'] = 'Συχνότητα αποθήκευσης κατάστασης περιεχομένου';
-$string['contentstatefrequency_help'] = 'Σε δευτερόλεπτα, πόσο συχνά θέλετε να αποθηκεύεται αυτόματα η πρόοδος για τον χρήστη. Αυξήστε τον αριθμό αυτό αν έχετε προβλήματα σχετικά με πολλά αιτήματα ajax';
+$string['contentstatefrequency_help'] = 'Σε δευτερόλεπτα, πόσο συχνά θέλετε να αποθηκεύεται αυτόματα η πρόοδος για τον χρήστη. Αυξήστε τον αριθμό αυτό αν έχετε προβλήματα σχετικά με πολλά αιτήματα ajax.';
 $string['contenttype'] = 'Τύπος περιεχομένου';
 $string['contenttypecacheheader'] = 'Κρυφή μνήμη τύπου περιεχομένου';
 $string['contentupdatesoon'] = 'Το περιεχόμενό σας θα ενημερωθεί σύντομα';
@@ -128,11 +128,11 @@ $string['country'] = 'Χώρα';
 $string['create'] = 'Δημιουργία';
 $string['creativecommons'] = 'Creative Commons';
 $string['ctcachebuttonlabel'] = 'Ενημέρωση κρυφής μνήμης τύπου περιεχομένου';
-$string['ctcacheconnectionfailed'] = 'Αδυναμία επικοινωνίας με το H5P Hub. Παρακαλούμε, προσπαθήστε ξανά αργότερα.';
+$string['ctcacheconnectionfailed'] = 'Αδυναμία επικοινωνίας με τον διανομέα H5P. Παρακαλούμε, προσπαθήστε ξανά αργότερα.';
 $string['ctcachedescription'] = 'Βεβαιωθείτε ότι η κρυφή μνήμη τύπου περιεχομένου είναι ενημερωμένη, για να διασφαλίσετε ότι μπορείτε να προβάλετε, να κάνετε λήψη και να χρησιμοποιήσετε τις πιο πρόσφατες βιβλιοθήκες. Αυτό διαφέρει από την ενημέρωση των ίδιων των βιβλιοθηκών.';
 $string['ctcachelastupdatelabel'] = 'Τελευταία ενημέρωση';
 $string['ctcacheneverupdated'] = 'Ποτέ';
-$string['ctcachenolibraries'] = 'Δεν ελήφθησαν τύποι περιεχομένου από τον διανομέα (Hub) H5P. Παρακαλώ, προσπαθήστε ξανά αργότερα.';
+$string['ctcachenolibraries'] = 'Δεν ελήφθησαν τύποι περιεχομένου από τον διανομέα H5P. Παρακαλούμε, προσπαθήστε ξανά αργότερα.';
 $string['ctcachesuccess'] = 'Η κρυφή μνήμη της βιβλιοθήκης ενημερώθηκε με επιτυχία!';
 $string['ctcachetaskname'] = 'Ενημέρωση κρυφής μνήμης τύπου περιεχομένου';
 $string['currentpage'] = 'Σελίδα $current από $total';
@@ -143,7 +143,7 @@ $string['description'] = 'Περιγραφή';
 $string['disablefileextensioncheck'] = 'Απενεργοποίηση ελέγχου επεκτάσεων αρχείου';
 $string['disablefileextensioncheckwarning'] = 'Προειδοποίηση! Η απενεργοποίηση του ελέγχου επέκτασης αρχείων ενδέχεται να έχει επιπτώσεις στην ασφάλεια καθώς επιτρέπει το ανέβασμα αρχείων php. Αυτό με τη σειρά του θα μπορούσε να επιτρέψει στους εισβολείς να εκτελέσουν κακόβουλο κώδικα στον ιστότοπό σας. Παρακαλούμε, βεβαιωθείτε ότι γνωρίζετε ακριβώς τι ανεβάζετε.';
 $string['disablefullscreen'] = 'Απενεργοποίηση πλήρους οθόνης';
-$string['disablehubconfirmationmsg'] = 'Θέλετε ακόμα να ενεργοποιήσετε τον κεντρικό κόμβο;';
+$string['disablehubconfirmationmsg'] = 'Θέλετε ακόμα να ενεργοποιήσετε τον διανομέα;';
 $string['disablehubdescription'] = 'Συνιστάται ανεπιφύλακτα να διατηρήσετε αυτήν την επιλογή ενεργοποιημένη. Ο διανομέας (Hub) H5P παρέχει μια εύκολη διεπαφή για τη λήψη νέων τύπων περιεχομένου και για την ενημέρωση των υπαρχόντων τύπων περιεχομένου. Στο μέλλον, θα διευκολύνει επίσης την κοινή χρήση και την επαναχρησιμοποίηση περιεχομένου. Εάν αυτή η επιλογή είναι απενεργοποιημένη, θα πρέπει να εγκαταστήσετε και να ενημερώσετε τύπους περιεχομένου μέσω φορμών ανεβάσματος αρχείων.';
 $string['disciplinedescription'] = 'Μπορείτε να επιλέξετε πολλαπλούς κλάδους';
 $string['disciplinelabel'] = 'Κλάδοι';
@@ -156,8 +156,8 @@ $string['displayoptiondownloadalways'] = 'Πάντα';
 $string['displayoptiondownloadnever'] = 'Ποτέ';
 $string['displayoptiondownloadpermission'] = 'Μόνο εάν ο χρήστης έχει δικαιώματα να εξάγει H5P';
 $string['displayoptionnevershow'] = 'Να μην εμφανίζεται ποτέ';
-$string['displayoptionpermissions'] = 'Εμφάνιση μόνο αν ο χρήστης έχει άδεια να εξάγει H5P';
-$string['displayoptionpermissionsembed'] = 'Εμφάνιση μόνο αν ο χρήστης έχει άδεια να ενσωματώσει H5P';
+$string['displayoptionpermissions'] = 'Εμφάνιση μόνο αν ο χρήστης έχει δικαιώματα να εξάγει H5P';
+$string['displayoptionpermissionsembed'] = 'Εμφάνιση μόνο αν ο χρήστης έχει δικαιώματα να ενσωματώσει H5P';
 $string['displayoptions'] = 'Επιλογές εμφάνισης';
 $string['download'] = 'Λήψη';
 $string['downloadfailed'] = 'Η λήψη της βιβλιοθήκης που ζητήθηκε, απέτυχε.';
@@ -195,13 +195,13 @@ $string['enabledlrscontenttypes_help'] = 'Επιτρέπει τη χρήση τ�
 $string['enabledownload'] = 'Επιτρέπεται λήψη';
 $string['enableembed'] = 'Ενσωμάτωση πλήκτρου';
 $string['enableframe'] = 'Εμφάνιση μπάρας ενεργειών και πλαισίου';
-$string['enablehublabel'] = 'Χρήση κεντρικού κόμβου H5P';
+$string['enablehublabel'] = 'Χρήση διανομέα H5P';
 $string['enablejavascript'] = 'Παρακαλούμε, ενεργοποιήστε την JavaScript.';
 $string['enablesavecontentstate'] = 'Αποθήκευση κατάστασης περιεχομένου';
 $string['enablesavecontentstate_help'] = 'Αυτόματη αποθήκευση της τρέχουσας κατάστασης διαδραστικού περιεχομένου για κάθε χρήστη. Αυτό σημαίνει ότι ο χρήστης θα μπορεί να συνεχίσει από εκεί που σταμάτησε.';
 $string['failedtodownloadh5p'] = 'Αποτυχία λήψης του H5P που ζητήθηκε.';
 $string['fileexceedsmaxsize'] = 'Ένα από τα αρχεία μέσα στο πακέτο υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος. (%file %used > %max)';
-$string['filenotfoundonserver'] = 'Αδυναμία εύρεσης αρχείου στο διακομιστή. Ελέγξτε τις ρυθμίσεις ανεβάσματος αρχείου.';
+$string['filenotfoundonserver'] = 'Αδυναμία εύρεσης αρχείου στον εξυπηρετητή. Ελέγξτε τις ρυθμίσεις ανεβάσματος αρχείου.';
 $string['filenotimage'] = 'Το αρχείο δεν είναι εικόνα.';
 $string['filetypenotallowed'] = 'Ο τύπος αρχείου δεν επιτρέπεται.';
 $string['finished'] = 'Ολοκληρώθηκε';
@@ -392,7 +392,7 @@ $string['pd'] = 'Κοινό Κτήμα';
 $string['pddl'] = 'Εκχώρηση και Άδεια ως Κοινό Κτήμα';
 $string['pdm'] = 'Επισήμανση Κοινού Κτήματος';
 $string['phone'] = 'Τηλέφωνο';
-$string['pleasewait'] = 'Παρακαλώ περιμένετε...';
+$string['pleasewait'] = 'Παρακαλούμε περιμένετε...';
 $string['pluginadministration'] = 'H5P';
 $string['pluginname'] = 'H5P';
 $string['postmessagerequired'] = 'Απαιτείται ένα μήνυμα post για πρόσβαση στο δεδομένο τελικό σημείο';
@@ -495,7 +495,7 @@ $string['startingover'] = 'Θα ξεκινήσετε από την αρχή.';
 $string['subcontentwarning'] = 'Το υπο-περιεχόμενο (εικόνες, ερωτήσεις κ.λπ.) θα τεθεί σε κοινή χρήση υπό :license (άδεια χρήσης) εκτός εάν ορίζεται διαφορετικά στο εργαλείο συγγραφής';
 $string['sublevel'] = 'Υποεπίπεδο';
 $string['submitted'] = 'Υποβλήθηκε!';
-$string['successfullyregisteredwithhub'] = 'Ο ιστότοπός σας καταχωρήθηκε με επιτυχία στο H5P Hub.';
+$string['successfullyregisteredwithhub'] = 'Ο ιστότοπός σας καταχωρήθηκε με επιτυχία στον διανομέα H5P.';
 $string['successfullyregistred'] = 'Έχετε καταχωρήσει με επιτυχία έναν λογαριασμό στον διανομέα H5P';
 $string['successfullyregistreddescription'] = 'Τα στοιχεία του λογαριασμού σας μπορούν να αλλάξουν';
 $string['successfullyupdated'] = 'Οι ρυθμίσεις του λογαριασμού σας στον διανομέα H5P άλλαξαν με επιτυχία';

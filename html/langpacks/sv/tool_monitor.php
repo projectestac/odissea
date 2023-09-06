@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'sv', version '3.11'.
+ * Strings for component 'tool_monitor', language 'sv', version '4.1'.
  *
  * @package     tool_monitor
  * @category    string
@@ -72,6 +72,7 @@ Det kan omfatta någon eller alla av följande platshållare:
 * Regelnamn {rulename}
 * Beskrivning {description}
 * Händelse {eventname}';
+$string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Instans';
 $string['monitor:managerules'] = 'Hantera bevakningsregler';
 $string['monitor:managetool'] = 'Aktivera/inaktivera händelsebevakning';

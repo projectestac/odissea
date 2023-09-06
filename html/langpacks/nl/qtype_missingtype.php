@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_missingtype', language 'nl', version '3.11'.
+ * Strings for component 'qtype_missingtype', language 'nl', version '4.1'.
  *
  * @package     qtype_missingtype
  * @category    string
@@ -31,7 +31,7 @@ $string['deletedquestion'] = 'Ontbrekende vraag';
 $string['deletedquestiontext'] = 'De vraag ontbreekt. Kan niets tonen.';
 $string['missing'] = 'Vraag van een type dat niet geïnstalleerd is in dit systeem';
 $string['missingqtypewarning'] = 'Deze vraag is van een type dat momenteel niet is geïnstalleerd in dit systeem. Je zult niets kunnen aanvangen met deze vraag.';
-$string['pluginname'] = 'Type ontbreekt';
+$string['pluginname'] = 'Ontbrekende plaatshouder voor vraagtype';
 $string['pluginnameadding'] = 'Een vraag toevoegen van een type dat niet geïnstalleerd is op dit systeem';
 $string['pluginnameediting'] = 'Onbekend vraagtype bewerken';
 $string['privacy:metadata'] = 'De selecteer ontbrekende woorden vraagtype-plugin bewaart geen persoonlijke gegevens.';

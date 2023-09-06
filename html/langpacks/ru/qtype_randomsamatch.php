@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'ru', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'ru', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -30,6 +30,7 @@ $string['nosaincategory'] = 'В выбранной категории «{$a->cat
 $string['notenoughsaincategory'] = 'В выбранной категории «{$a->catname}» есть только {$a->nosaquestions} вопр. типа «Короткий ответ». Выберите другую категорию, создайте еще несколько вопросов в этой категории или сократите количество выбранных вопросов.';
 $string['pluginname'] = 'Случайный вопрос на соответствие';
 $string['pluginname_help'] = 'Для студента такой вопрос выглядит так же, как вопрос «На соответствие». Различие в том, что перечень вопросов для соответствия выбирается случайным образом из вопросов типа «Короткий ответ» в данной категории. В категории должно быть достаточное количество неиспользованных вопросов типа «Короткий ответ», иначе будет отображаться сообщение об ошибке.';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = 'Добавление вопроса «Случайный вопрос на соответствие»';
 $string['pluginnameediting'] = 'Редактирование вопроса «Случайный вопрос на соответствие»';
 $string['pluginnamesummary'] = 'Подобен вопросу «На соответствие», но создается из вопросов типа «Короткий ответ», выбираемых случайным образом из конкретной категории.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'es', version '3.11'.
+ * Strings for component 'page', language 'es', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -36,10 +36,12 @@ $string['indicator:cognitivedepth'] = 'Página cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Página.';
 $string['indicator:cognitivedepthdef'] = 'Página cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por los recursos de Página durante este intervalo de análisis (Niveles = Sin vista, Ver)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Página social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Página.';
 $string['indicator:socialbreadthdef'] = 'Página social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por los recursos de Página durante este intervalo de análisis (Niveles = Sin participación, Participante solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migración de ficheros de curso antiguos';
 $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Finalizado';
@@ -52,6 +54,7 @@ Una página puede ser utilizada para
 
  * Dar a conocer los términos y condiciones de un curso o el programa de la asignatura
 * Para incrustar varios vídeos o archivos de sonido, junto con un texto explicativo';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Páginas';
 $string['optionsheader'] = 'Mostrar opciones';
 $string['page-mod-page-x'] = 'Cualquier página del recurso Página';

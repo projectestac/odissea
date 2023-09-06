@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ar', version '3.11'.
+ * Strings for component 'webservice', language 'ar', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'بروتوكول خدمة الويب النشي
 $string['addaservice'] = 'أضف خدمة';
 $string['addcapabilitytousers'] = 'تحقق من إمكانية المستخدمين';
 $string['addcapabilitytousersdescription'] = 'ينبغي أن يكون للمستخدمين إمكانيتان - webservice:createtoken وإمكانية تضاهي البروتوكولات المستعملة، على سبيل المثال webservice/rest:use، webservice/soap:use. لتحقيق ذلك، أنشئ دوراً لخدمة الويب مع الإمكانيات المناسبة وقم بتعيينه إلى مستخدم خدمات الويب بمثابة دور على مستوى النظام.';
+$string['addexternalservice'] = 'إضافة الخدمة الخارجية';
 $string['addfunction'] = 'أضف وظيفة';
 $string['addfunctionhelp'] = 'إختر الوظيفة لإضافتها إلى الخدمة.';
 $string['addfunctions'] = 'أضف وظائف';
@@ -44,7 +45,7 @@ $string['arguments'] = 'العوامل';
 $string['authmethod'] = 'طريقة المصادقة';
 $string['callablefromajax'] = 'قابل للاستدعاء من AJAX';
 $string['cannotcreatetoken'] = 'لا صلاحية لإنشاء ترميز خدمة الويب للخدمة {$a}.';
-$string['cannotgetcoursecontents'] = 'يتعذر الحصول على محتويات المقرر الدراسي';
+$string['cannotgetcoursecontents'] = 'يتعذر الحصول على محتويات المساق';
 $string['checkusercapability'] = 'تحقق من إمكانية المستخدم';
 $string['checkusercapabilitydescription'] = 'ينبغي أن يكون للمستخدم الإمكانيات المناسبة حسب البروتوكولات المستعملة، على سبيل المثال webservice/rest:use، webservice/soap:use. لتحقيق ذلك، أنشئ دوراً لخدمة الويب مع الإمكانيات المناسبة وقم بتعيينه إلى مستخدم خدمات الويب بمثابة دور على مستوى النظام.';
 $string['configwebserviceplugins'] = 'لدواعي الأمان، ينبغي الاقتصار على تمكين البروتوكولات التي هي قيد الاستعمال فقط.';
@@ -61,14 +62,16 @@ $string['default'] = 'الافتراضي لـ "{$a}"';
 $string['deleteaservice'] = 'إحذف الخدمة';
 $string['deleteservice'] = 'إحذف الخدمة: {$a->name} (المُعرَّف: {$a->id})';
 $string['deleteserviceconfirm'] = 'حذف الخدمة سيؤدي أيضاً إلى حذف الترميزات المتعلقة بها. هل ترغب حقاً بحذف الخدمة الخارجية "{$a}"؟';
+$string['deletetoken'] = 'حذف الترميز';
 $string['deletetokenconfirm'] = 'هل ترغب حقاً بحذف ترميز خدمة الويب لهذا للمستخدم <strong>{$a->user}</strong> من الخدمة <strong>{$a->service}</strong>؟';
+$string['deprecated'] = 'مُهمَل';
 $string['disabledwarning'] = 'كل بروتوكولات خدمة الويب معطلة. يمكن العثور على الإعداد "تمكين خدمات الويب" في المزايا المتقدمة.';
 $string['doc'] = 'التوثيق';
 $string['docaccessrefused'] = 'ليس مسموحاً لك بمعاينة توثيقات هذا الترميز';
-$string['documentation'] = 'توثيق خدمة الويب';
 $string['downloadfiles'] = 'يستطيع تنزيل الملفات';
 $string['downloadfiles_help'] = 'عند تمكينه، أي مستخدم سيستطيع تنزيل الملفات بمفاتيحه الأمنية. بلا شك، هم مقيدون بالملفات المسموح لهم بتنزيلها في الموقع.';
 $string['editaservice'] = 'تحرير الخدمة';
+$string['editexternalservice'] = 'تحرير الخدمة الخارجية';
 $string['editservice'] = 'تحرير الخدمة: {$a->name} (المُعرَّف: {$a->id})';
 $string['enabled'] = 'مُمَكَّنة';
 $string['enabledocumentation'] = 'تمكين توثيقات المطور';
@@ -81,7 +84,7 @@ $string['entertoken'] = 'أدخل مفتاح/ترميز الأمان:';
 $string['error'] = 'خطأ: {$a}';
 $string['errorcatcontextnotvalid'] = 'لا يمكنك تنفيذ الوظائف في سياق التصنيف (مُعرَّف التصنيف :{$a->catid}). رسالة الخطأ في السياق كانت: {$a->message}';
 $string['errorcodes'] = 'رسالة الخطأ';
-$string['errorcoursecontextnotvalid'] = 'لا يمكنك تنفيذ الوظائف في سياق المقرر (مُعرَّف المقرر الدراسي: {$a->courseid}). رسالة الخطأ في السياق كانت: {$a->message}';
+$string['errorcoursecontextnotvalid'] = 'لا يمكنك تنفيذ الوظائف في سياق المساق (مُعرَّف المساق: {$a->courseid}). رسالة الخطأ في السياق كانت: {$a->message}';
 $string['errorinvalidparam'] = 'المعامل "{$a}" غير صحيح.';
 $string['errornotemptydefaultparamarray'] = 'معامل وصف خدمة الويب المسمى \'{$a}\' هو في بنية مفردة أو متعددة. الافتراضي يمكن فقط أن يكون مصفوفة فارغة. تحقق من وصف خدمة الويب.';
 $string['erroroptionalparamarray'] = 'معامل وصف خدمة الويب المسمى \'{$a}\' هو في بنية مفردة أو متعددة. لا يمكن ضبطه ليكون بمثابة VALUE_OPTIONAL. تحقق من وصف خدمة الويب.';

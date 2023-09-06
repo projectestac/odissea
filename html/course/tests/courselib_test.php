@@ -54,8 +54,6 @@ defined('MOODLE_INTERNAL') or die();
 // Require library globally because it's constants are used within dataProvider methods, executed before setUpBeforeClass.
 global $CFG;
 require_once($CFG->dirroot . '/course/lib.php');
-require_once($CFG->dirroot . '/course/tests/fixtures/course_capability_assignment.php');
-require_once($CFG->dirroot . '/enrol/imsenterprise/tests/imsenterprise_test.php');
 
 /**
  * Course related unit tests
@@ -66,6 +64,16 @@ require_once($CFG->dirroot . '/enrol/imsenterprise/tests/imsenterprise_test.php'
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class courselib_test extends advanced_testcase {
+
+    /**
+     * Load required libraries and fixtures.
+     */
+    public static function setUpBeforeClass(): void {
+        global $CFG;
+
+        require_once($CFG->dirroot . '/course/tests/fixtures/course_capability_assignment.php');
+        require_once($CFG->dirroot . '/enrol/imsenterprise/tests/imsenterprise_test.php');
+    }
 
     /**
      * Set forum specific test values for calling create_module().
@@ -256,6 +264,7 @@ class courselib_test extends advanced_testcase {
         $moduleinfo->completion = COMPLETION_TRACKING_AUTOMATIC;
         $moduleinfo->completionview = COMPLETION_VIEW_REQUIRED;
         $moduleinfo->completiongradeitemnumber = 1;
+        $moduleinfo->completionpassgrade = 0;
         $moduleinfo->completionexpected = time() + (7 * 24 * 3600);
 
         // Conditional activity.
@@ -318,6 +327,7 @@ class courselib_test extends advanced_testcase {
         $this->assertEquals($moduleinfo->completion, $dbcm->completion);
         $this->assertEquals($moduleinfo->completionview, $dbcm->completionview);
         $this->assertEquals($moduleinfo->completiongradeitemnumber, $dbcm->completiongradeitemnumber);
+        $this->assertEquals($moduleinfo->completionpassgrade, $dbcm->completionpassgrade);
         $this->assertEquals($moduleinfo->completionexpected, $dbcm->completionexpected);
         $this->assertEquals($moduleinfo->availability, $dbcm->availability);
         $this->assertEquals($moduleinfo->showdescription, $dbcm->showdescription);
@@ -539,6 +549,7 @@ class courselib_test extends advanced_testcase {
         $moduleinfo->completion = COMPLETION_TRACKING_AUTOMATIC;
         $moduleinfo->completionview = COMPLETION_VIEW_REQUIRED;
         $moduleinfo->completiongradeitemnumber = 1;
+        $moduleinfo->completionpassgrade = 0;
         $moduleinfo->completionexpected = time() + (7 * 24 * 3600);
         $moduleinfo->completionunlocked = 1;
 
@@ -596,6 +607,7 @@ class courselib_test extends advanced_testcase {
         $this->assertEquals($moduleinfo->completion, $dbcm->completion);
         $this->assertEquals($moduleinfo->completionview, $dbcm->completionview);
         $this->assertEquals($moduleinfo->completiongradeitemnumber, $dbcm->completiongradeitemnumber);
+        $this->assertEquals($moduleinfo->completionpassgrade, $dbcm->completionpassgrade);
         $this->assertEquals($moduleinfo->completionexpected, $dbcm->completionexpected);
         $this->assertEquals($moduleinfo->availability, $dbcm->availability);
         $this->assertEquals($moduleinfo->showdescription, $dbcm->showdescription);
@@ -877,8 +889,9 @@ class courselib_test extends advanced_testcase {
         $this->assertEquals($cmids[0] . ',' . $cmids[1], $sequence);
 
         // Check that modinfo cache was reset but not rebuilt (important for performance if calling repeatedly).
-        $this->assertGreaterThan($coursecacherev, $DB->get_field('course', 'cacherev', array('id' => $course->id)));
-        $this->assertEmpty(cache::make('core', 'coursemodinfo')->get($course->id));
+        $newcacherev = $DB->get_field('course', 'cacherev', ['id' => $course->id]);
+        $this->assertGreaterThan($coursecacherev, $newcacherev);
+        $this->assertEmpty(cache::make('core', 'coursemodinfo')->get_versioned($course->id, $newcacherev));
 
         // Add one to section that doesn't exist (this might rebuild modinfo).
         course_add_cm_to_section($course, $cmids[2], 2);
@@ -1032,12 +1045,58 @@ class courselib_test extends advanced_testcase {
     }
 
     /**
+     * Test move_section_to method with caching
+     *
+     * @covers ::move_section_to
+     * @return void
+     */
+    public function test_move_section_with_section_cache(): void {
+        $this->resetAfterTest();
+        $this->setAdminUser();
+        $cache = cache::make('core', 'coursemodinfo');
+
+        // Generate the course and pre-requisite module.
+        $course = $this->getDataGenerator()->create_course(['format' => 'topics', 'numsections' => 3], ['createsections' => true]);
+        // Reset course cache.
+        rebuild_course_cache($course->id, true);
+
+        // Build course cache.
+        get_fast_modinfo($course->id);
+        // Get the course modinfo cache.
+        $coursemodinfo = $cache->get_versioned($course->id, $course->cacherev);
+        // Get the section cache.
+        $sectioncaches = $coursemodinfo->sectioncache;
+
+        // Make sure that we will have 4 section caches here.
+        $this->assertCount(4, $sectioncaches);
+        $this->assertArrayHasKey(0, $sectioncaches);
+        $this->assertArrayHasKey(1, $sectioncaches);
+        $this->assertArrayHasKey(2, $sectioncaches);
+        $this->assertArrayHasKey(3, $sectioncaches);
+
+        // Move section.
+        move_section_to($course, 2, 3);
+        // Get the course modinfo cache.
+        $coursemodinfo = $cache->get_versioned($course->id, $course->cacherev);
+        // Get the section cache.
+        $sectioncaches = $coursemodinfo->sectioncache;
+
+        // Make sure that we will have 2 section caches left.
+        $this->assertCount(2, $sectioncaches);
+        $this->assertArrayHasKey(0, $sectioncaches);
+        $this->assertArrayHasKey(1, $sectioncaches);
+        $this->assertArrayNotHasKey(2, $sectioncaches);
+        $this->assertArrayNotHasKey(3, $sectioncaches);
+    }
+
+    /**
      * Test move_section_to method.
      * Make sure that we only update the moving sections, not all the sections in the current course.
      *
+     * @covers ::move_section_to
      * @return void
      */
-    public function test_move_section_to() {
+    public function test_move_section_to(): void {
         global $DB, $CFG;
         $this->resetAfterTest();
         $this->setAdminUser();
@@ -1158,6 +1217,7 @@ class courselib_test extends advanced_testcase {
 
         // Delete section in the middle (2).
         $this->assertFalse(course_delete_section($course, 2, false));
+        $this->assertEquals(4, course_get_format($course)->get_last_section_number());
         $this->assertTrue(course_delete_section($course, 2, true));
         $this->assertFalse($DB->record_exists('course_modules', array('id' => $assign21->cmid)));
         $this->assertFalse($DB->record_exists('course_modules', array('id' => $assign22->cmid)));
@@ -1765,8 +1825,13 @@ class courselib_test extends advanced_testcase {
                 $this->assertEquals(0, $DB->count_records('question_categories', $criteria));
 
                 // Verify questions deleted.
-                $criteria = array('category' => $qcat->id);
-                $this->assertEquals(0, $DB->count_records('question', $criteria));
+                $criteria = [$qcat->id];
+                $sql = 'SELECT COUNT(q.id)
+                          FROM {question} q
+                          JOIN {question_versions} qv ON qv.questionid = q.id
+                          JOIN {question_bank_entries} qbe ON qbe.id = qv.questionbankentryid
+                          WHERE qbe.questioncategoryid = ?';
+                $this->assertEquals(0, $DB->count_records_sql($sql, $criteria));
                 break;
             default:
                 break;
@@ -3250,7 +3315,6 @@ class courselib_test extends advanced_testcase {
         $this->assertTrue($navoptions->badges);
         $this->assertTrue($navoptions->tags);
         $this->assertFalse($navoptions->search);
-        $this->assertTrue($navoptions->calendar);
         $this->assertTrue($navoptions->competencies);
 
         // Enable global search now.
@@ -3275,7 +3339,6 @@ class courselib_test extends advanced_testcase {
         $this->assertTrue($navoptions->badges);
         $this->assertTrue($navoptions->tags);
         $this->assertTrue($navoptions->search);
-        $this->assertTrue($navoptions->calendar);
     }
 
     /**
@@ -4899,6 +4962,104 @@ class courselib_test extends advanced_testcase {
                 'expectedprocessedcount' => 10
             ],
         ];
+    }
+
+    /**
+     * Test the course_get_enrolled_courses_for_logged_in_user_from_search function.
+     */
+    public function test_course_get_enrolled_courses_for_logged_in_user_from_search() {
+        global $DB;
+
+        // Set up.
+
+        $this->resetAfterTest();
+        $generator = $this->getDataGenerator();
+        $student = $generator->create_user();
+
+        $cat1 = core_course_category::create(['name' => 'Cat1']);
+        $cat2 = core_course_category::create(['name' => 'Cat2', 'parent' => $cat1->id]);
+        $c1 = $this->getDataGenerator()->create_course(['category' => $cat1->id, 'fullname' => 'Test 3', 'summary' => 'Magic', 'idnumber' => 'ID3']);
+        $c2 = $this->getDataGenerator()->create_course(['category' => $cat1->id, 'fullname' => 'Test 1', 'summary' => 'Magic']);
+        $c3 = $this->getDataGenerator()->create_course(['category' => $cat1->id, 'fullname' => 'Математика', 'summary' => ' Test Magic']);
+        $c4 = $this->getDataGenerator()->create_course(['category' => $cat1->id, 'fullname' => 'Test 4', 'summary' => 'Magic', 'idnumber' => 'ID4']);
+
+        $c5 = $this->getDataGenerator()->create_course(['category' => $cat2->id, 'fullname' => 'Test 5', 'summary' => 'Magic']);
+        $c6 = $this->getDataGenerator()->create_course(['category' => $cat2->id, 'fullname' => 'Дискретная Математика', 'summary' => 'Magic']);
+        $c7 = $this->getDataGenerator()->create_course(['category' => $cat2->id, 'fullname' => 'Test 7', 'summary' => 'Magic']);
+        $c8 = $this->getDataGenerator()->create_course(['category' => $cat2->id, 'fullname' => 'Test 8', 'summary' => 'Magic']);
+
+        for ($i = 1; $i < 9; $i++) {
+            $generator->enrol_user($student->id, ${"c$i"}->id, 'student');
+        }
+
+        $this->setUser($student);
+
+        $returnedcourses = course_get_enrolled_courses_for_logged_in_user_from_search(
+            0,
+            0,
+            'id ASC',
+            null,
+            COURSE_DB_QUERY_LIMIT,
+            ['search' => 'test'],
+            ['idonly' => true]
+        );
+
+        $actualresult = array_map(function($course) {
+            return $course->id;
+        }, iterator_to_array($returnedcourses, false));
+
+        $this->assertEquals([$c1->id, $c2->id, $c3->id, $c4->id, $c5->id, $c7->id, $c8->id], $actualresult);
+
+        // Test no courses matching the search.
+        $returnedcourses = course_get_enrolled_courses_for_logged_in_user_from_search(
+            0,
+            0,
+            'id ASC',
+            null,
+            COURSE_DB_QUERY_LIMIT,
+            ['search' => 'foobar'],
+            ['idonly' => true]
+        );
+
+        $actualresult = array_map(function($course) {
+            return $course->id;
+        }, iterator_to_array($returnedcourses, false));
+
+        $this->assertEquals([], $actualresult);
+
+        // Test returning all courses that have a mutual summary.
+        $returnedcourses = course_get_enrolled_courses_for_logged_in_user_from_search(
+            0,
+            0,
+            'id ASC',
+            null,
+            COURSE_DB_QUERY_LIMIT,
+            ['search' => 'Magic'],
+            ['idonly' => true]
+        );
+
+        $actualresult = array_map(function($course) {
+            return $course->id;
+        }, iterator_to_array($returnedcourses, false));
+
+        $this->assertEquals([$c1->id, $c2->id, $c3->id, $c4->id, $c5->id, $c6->id, $c7->id, $c8->id], $actualresult);
+
+        // Test returning a unique course.
+        $returnedcourses = course_get_enrolled_courses_for_logged_in_user_from_search(
+            0,
+            0,
+            'id ASC',
+            null,
+            COURSE_DB_QUERY_LIMIT,
+            ['search' => 'Дискретная'],
+            ['idonly' => true]
+        );
+
+        $actualresult = array_map(function($course) {
+            return $course->id;
+        }, iterator_to_array($returnedcourses, false));
+
+        $this->assertEquals([$c6->id], $actualresult);
     }
 
     /**
@@ -7201,4 +7362,30 @@ class courselib_test extends advanced_testcase {
         $this->assertEquals(1, average_number_of_participants(true));
     }
 
+    /**
+     * Test the set_downloadcontent() function.
+     */
+    public function test_set_downloadcontent() {
+        $this->resetAfterTest();
+
+        $generator = $this->getDataGenerator();
+        $course = $generator->create_course();
+        $page = $generator->create_module('page', ['course' => $course]);
+
+        // Test the module 'downloadcontent' field is set to enabled.
+        set_downloadcontent($page->cmid, DOWNLOAD_COURSE_CONTENT_ENABLED);
+        $modinfo = get_fast_modinfo($course)->get_cm($page->cmid);
+        $this->assertEquals(DOWNLOAD_COURSE_CONTENT_ENABLED, $modinfo->downloadcontent);
+
+        // Now let's test the 'downloadcontent' value is updated to disabled.
+        set_downloadcontent($page->cmid, DOWNLOAD_COURSE_CONTENT_DISABLED);
+        $modinfo = get_fast_modinfo($course)->get_cm($page->cmid);
+        $this->assertEquals(DOWNLOAD_COURSE_CONTENT_DISABLED, $modinfo->downloadcontent);
+
+        // Nothing to update, the download course content value is the same, it should return false.
+        $this->assertFalse(set_downloadcontent($page->cmid, DOWNLOAD_COURSE_CONTENT_DISABLED));
+
+        // The download course content value has changed, it should return true in this case.
+        $this->assertTrue(set_downloadcontent($page->cmid, DOWNLOAD_COURSE_CONTENT_ENABLED));
+    }
 }

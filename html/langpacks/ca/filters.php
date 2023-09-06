@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'ca', version '3.11'.
+ * Strings for component 'filters', language 'ca', version '4.1'.
  *
  * @package     filters
  * @category    string
@@ -81,6 +81,7 @@ $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'Suprimeix tots els filtres';
 $string['removeselected'] = 'Suprimeix filtres seleccionats';
+$string['replacefilters'] = 'Reemplaça els filtres';
 $string['selectlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['startswith'] = 'comença per';
 $string['tablenosave'] = 'Els canvis en la taula de dalt es desen automàticament.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_massaction', language 'sv', version '3.11'.
+ * Strings for component 'block_massaction', language 'sv', version '4.1'.
  *
  * @package     block_massaction
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['action_contentchangednotification'] = 'Skicka notifikation om ändrat innehåll';
 $string['action_delete'] = 'Radera';
 $string['action_duplicate'] = 'Kopiera';
 $string['action_duplicatetocourse'] = 'Kopiera till en annan kurs';
@@ -59,6 +60,7 @@ $string['invalidmoduleid'] = 'Ogiltigt objekt-id: {$a}';
 $string['jsonerror'] = 'Felkodning: Ogiltigt JSON-format';
 $string['keepsectionnum'] = 'Behåll nuvarande sektionsnummer';
 $string['massaction:addinstance'] = 'Lägg till blocket Masshandlingar';
+$string['massaction:sendcontentchangednotifications'] = 'Skicka notifikationer om ändrat innehåll';
 $string['massaction:use'] = 'Använd blocket Masshandlingar';
 $string['modulename'] = 'Aktivitetsnamn';
 $string['moduletype'] = 'Aktivitetstyp';

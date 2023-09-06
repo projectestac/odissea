@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_attributes', language 'el', version '3.11'.
+ * Strings for component 'enrol_attributes', language 'el', version '4.1'.
  *
  * @package     enrol_attributes
  * @category    string
@@ -29,7 +29,7 @@ $string['addcondition'] = 'Προσθήκη συνθήκης';
 $string['addgroup'] = 'Προσθήκη ομάδας';
 $string['ajax-error'] = 'Παρουσιάστηκε κάποιο σφάλμα';
 $string['ajax-okforced'] = 'ΟΚ. Έκαναν εγγραφή {$a} χρήστες.';
-$string['attributes:config'] = 'Ρυθμίσεις στιγμιότυπων πρόσθετων';
+$string['attributes:config'] = 'Ρυθμίσεις στιγμιοτύπων πρόσθετων';
 $string['attributes:manage'] = 'Διαχείριση εγγεγραμμένων χρηστών';
 $string['attributes:unenrol'] = 'Ακύρωση εγγραφής χρηστών στο μάθημα';
 $string['attributes:unenrolself'] = 'Ακύρωση εγγραφής στο μάθημα';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'ar', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'ar', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = 'توليد';
 $string['newsetwildcardvalues'] = 'مجموعة جديدة من قيم البطاقات البديلة';
 $string['pluginname'] = 'حسابي بسيط';
 $string['pluginname_help'] = 'الأسئلة الحسابية البسيطة تُمكن من إنشاء الأسئلة العددية الفردية باستعمال الرموز البديلة، تلك التي يتم استبدالها مع القيم الفردية عندما يتم أخذ الاختبار. الأسئلة الحسابية البسيطة تقدم الميزات الأكثر استعمالاً في المسألة الحسابية مع واجهة إنشاء أبسط.';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = 'إضافة سؤال حسابي بسيط';
 $string['pluginnameediting'] = 'تحرير سؤال حسابي بسيط';
 $string['pluginnamesummary'] = 'صيغة أبسط من الأسئلة الحسابية التي هي مثل الأسئلة العددية، ولكن مع كون الأرقام المستعملة منتخبة عشوائياً من مجموعة أرقام عندما يتم أخذ الاختبار.';

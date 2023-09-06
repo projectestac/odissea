@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ar', version '3.11'.
+ * Strings for component 'block_myoverview', language 'ar', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -25,23 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtofavourites'] = 'ضع نجمة على هذا المقرر الدراسي';
-$string['all'] = 'الكل (ما عدا المزال من العرض)';
-$string['allincludinghidden'] = 'الكل';
+$string['addtofavourites'] = 'ضع نجمة على هذا المساق';
+$string['all'] = 'الكل';
+$string['allincludinghidden'] = 'الكل (متضمنًا المزالة من المعاينة)';
 $string['aria:addtofavourites'] = 'وضع نجمة لـ';
-$string['aria:allcourses'] = 'أظهر كل المقررات الدراسية ما عدا تلك المزالة من العرض';
+$string['aria:allcourses'] = 'إظهار كل المساقات ما عدا تلك المزالة من المعاينة';
 $string['aria:allcoursesincludinghidden'] = 'أظهر كل المقررات الدراسية';
 $string['aria:card'] = 'التبديل إلى عرض البطاقة';
 $string['aria:controls'] = 'أدوات سيطرة النظرة العامة على المقررات الدراسية';
-$string['aria:courseactions'] = 'إجراءات المقرر الحالي';
-$string['aria:courseprogress'] = 'تقدم المقرر الدراسي:';
-$string['aria:coursesummary'] = 'نص ملخص المقرر الدراسي:';
+$string['aria:courseactions'] = 'إجراءات المساق الحالي';
+$string['aria:courseprogress'] = 'تقدم المساق:';
+$string['aria:coursesummary'] = 'نص ملخص المساق:';
 $string['aria:customfield'] = 'أظهر {$a} من المقررات الدراسية';
 $string['aria:displaydropdown'] = 'أظهر القائمة المنسدلة';
-$string['aria:favourites'] = 'أظهر االمقررات الدراسية المعلمة بنجمة';
+$string['aria:favourites'] = 'أظهر المقررات الدراسية المعلمة بنجمة';
 $string['aria:future'] = 'أظهر المقررات الدراسية المستقبلية';
 $string['aria:groupingdropdown'] = 'قائمة التجميع المنسدلة';
-$string['aria:hiddencourses'] = 'أظهر المقررات الدراسية المزالة من العرض';
+$string['aria:hiddencourses'] = 'إظهار المساقات المزالة من المعاينة';
 $string['aria:hidecourse'] = 'أزل {$a} من العرض';
 $string['aria:inprogress'] = 'أظهر المقررات الدراسية الجارية';
 $string['aria:lastaccessed'] = 'أظهر المقررات الدراسية حسب تاريخ آخر وصول';
@@ -54,39 +54,42 @@ $string['aria:sortingdropdown'] = 'قائمة الفرز المنسدلة';
 $string['aria:summary'] = 'التبديل إلى عرض الملخص';
 $string['aria:title'] = 'رتب المقررات الدراسية حسب أسمائها';
 $string['availablegroupings'] = 'المنقحات المتاحة';
-$string['availablegroupings_desc'] = 'مرشحات المقررات الدراسية المتاحة للمستخدمين ليختاروا منها. إن لم يتم تحديد أحدها، سيتم عرض كل المقررات الدراسية.';
+$string['availablegroupings_desc'] = 'مرشحات المقررات الدراسية المتاحة للمستخدمين ليختاروا منها. إن لم يتم تحديد أحدها، سيتم عرض كل المقررات.';
 $string['card'] = 'بطاقة';
 $string['cards'] = 'بطاقات';
-$string['complete'] = 'مكتمل';
+$string['clearsearch'] = 'إخلاء مربع البحث';
 $string['completepercent'] = 'مكتمل بنسبة {$a}%';
-$string['courseprogress'] = 'تقدم المقرر الدراسي:';
+$string['courseprogress'] = 'تقدم المساق:';
 $string['customfield'] = 'حقل مخصص';
 $string['customfiltergrouping'] = 'الحقل المستعمل';
-$string['customfiltergrouping_nofields'] = 'هذا الخيار يتطلب وضع حقل مخصص للمقرر وجعله مرئياً للجميع.';
+$string['customfiltergrouping_nofields'] = 'هذا الخيار يتطلب وضع حقل مخصص للمساق وجعله مرئياً للجميع.';
 $string['displaycategories'] = 'عرض التصنيفات';
-$string['displaycategories_help'] = 'إعرض تصنيف المقرر في عناصر مقررات لوحة التحكم متضمنة البطاقات، عناصر القائمة وعناصر الملخص.';
+$string['displaycategories_help'] = 'إعرض تصنيف المقرر في عناصر مقررات دراسية دفة القيادة متضمنة البطاقات، عناصر القائمة وعناصر الملخص.';
 $string['favourites'] = 'المعلمة بنجمة';
 $string['future'] = 'المستقبلية';
-$string['hidden'] = 'المقررات الدراسية المزالة من العرض';
-$string['hiddencourses'] = 'مزالة من العرض';
-$string['hidecourse'] = 'أزله من العرض';
+$string['hidden'] = 'المساقات المزالة من المعاينة';
+$string['hiddencourses'] = 'مزال من العرض';
+$string['hidecourse'] = 'إزالة من العرض';
 $string['inprogress'] = 'الجارية';
 $string['lastaccessed'] = 'الأخيرة من حيث الوصول';
 $string['layouts'] = 'التخطيطات المتاحة';
 $string['layouts_help'] = 'تخطيطات النظرة العامة على المقررات الدراسية والمتاحة للمستخدمين ليختاروا منها. إن لم يتم تحديد أحدها، سيتم استعمال عرض البطاقات.';
 $string['list'] = 'قائمة';
-$string['myoverview:myaddinstance'] = 'إضافة كتلة جديدة من نظرة عامة على المقرر الدراسي إلى لوحة التحكم';
-$string['nocourses'] = 'بدون مقررات';
+$string['myoverview:myaddinstance'] = 'إضافة كتلة جديدة من نظرة عامة على المساق إلى دفة القيادة';
 $string['nocustomvalue'] = 'لا {$a}';
 $string['past'] = 'الماضية';
 $string['pluginname'] = 'استعراض المقررات الدراسية';
-$string['privacy:metadata:overviewgroupingpreference'] = 'تفضيلات التجميع لكتلة النظرة العامة على المقرر الدراسي';
-$string['privacy:metadata:overviewpagingpreference'] = 'تفضيلات التصفح لكتلة النظرة العامة على المقرر الدراسي';
-$string['privacy:metadata:overviewsortpreference'] = 'تفضيلات الفرز لكتلة النظرة العامة على المقرر الدراسي';
-$string['privacy:metadata:overviewviewpreference'] = 'تفضيلات المعاينة لكتلة النظرة العامة على المقرر الدراسي';
+$string['privacy:metadata:overviewgroupingpreference'] = 'تفضيلات التجميع لكتلة النظرة العامة على المساق';
+$string['privacy:metadata:overviewpagingpreference'] = 'تفضيلات التصفح لكتلة النظرة العامة على المساق';
+$string['privacy:metadata:overviewsortpreference'] = 'تفضيلات الفرز لكتلة النظرة العامة على المساق';
+$string['privacy:metadata:overviewviewpreference'] = 'تفضيلات المعاينة لكتلة النظرة العامة على المساق';
 $string['privacy:request:preference:set'] = 'قيمة الإعداد \'{$a->name}\' كانت \'{$a->value}\'';
-$string['removefromfavourites'] = 'إرفع النجمة من هذا المقرر الدراسي';
+$string['removefromfavourites'] = 'إرفع النجمة من هذا المساق';
+$string['searchcourses'] = 'البحث في المقررات الدراسية';
 $string['shortname'] = 'الاسم المختصر';
-$string['show'] = 'الاستعادة إلى العرض';
+$string['show'] = 'الاستعادة إلى المعاينة';
+$string['sortbylastaccessed'] = 'الفرز حسب آخر وصول';
+$string['sortbyshortname'] = 'الفرز حسب الاسم المختصر';
+$string['sortbytitle'] = 'الفرز حسب اسم المساق';
 $string['summary'] = 'الملخص';
-$string['title'] = 'اسم المقرر الدراسي';
+$string['title'] = 'اسم المساق';

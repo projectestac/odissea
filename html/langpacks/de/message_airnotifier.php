@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'de', version '3.11'.
+ * Strings for component 'message_airnotifier', language 'de', version '4.1'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -42,13 +42,19 @@ $string['configured'] = 'Konfiguriert';
 $string['deletecheckdevicename'] = 'Ihr Endgerät \'{$a->name}\' löschen';
 $string['deletedevice'] = 'Endgerät löschen. Beachten Sie, dass eine App das Endgerät erneut registrieren kann. Wenn das Endgerät sich erneut verbindet, dann deaktivieren Sie es.';
 $string['devicetoken'] = 'Geräte-Token';
+$string['donotsendnotification'] = 'Systembenachrichtigung nicht an alle senden';
 $string['enableprocessor'] = 'Mobile Systemnachrichten aktivieren';
+$string['encryptnotifications'] = 'Benachrichtigungen verschlüsseln';
+$string['encryptprocessing'] = 'Für Endgeräte die keine Verschlüsselung unterstützen';
+$string['encryptprocessing_desc'] = 'Verschlüsselte Benachrichtigungen erfordern mindestens Android 8 oder iOS 13, sowie die Moodle App 4.2 oder aktueller.';
 $string['errorretrievingkey'] = 'Beim Abrufen des Zugriffsschlüssels ist ein Fehler aufgetreten. Ihre Website muss registriert sein, um diesen Service nutzen zu können. Wenn Ihre Website bereits registriert ist, aktualisieren Sie bitte Ihre Registrierung. Alternativ erhalten Sie einen Zugriffsschlüssel, indem Sie ein Konto im <a href="https://apps.moodle.com">Moodle Apps Portal</a> erstellen.';
 $string['keyretrievedsuccessfully'] = 'Der Zugriffsschlüssel wurde erfolgreich abgerufen. Um auf die Nutzungsstatistiken für Moodle-Apps zuzugreifen, erstellen Sie ein Konto im <a href="https://apps.moodle.com">Moodle Apps-Portal</a>.';
 $string['messageprovidersempty'] = 'In den standardmäßigen Einstellungen für die Push-Mitteilungen keine mobilen Benachrichtigungen aktiviert.';
 $string['messageproviderslow'] = 'In den standardmäßigen Einstellungen für die Push-Mitteilungen sind nur sehr wenige mobile Benachrichtigungen aktiviert.';
 $string['moodleappsportallimitswarning'] = 'Beachten Sie bitte, dass die Anzahl der Endgeräte, die Push-Mitteilungen empfangen dürfen, von Ihrem Moodle-App-Abonnement abhängt. Weitere Informationen finden Sie im <a href="{$a}" target="_blank">Moodle Apps-Portal</a>.';
 $string['nodevices'] = 'Keine registrierten Endgeräte. Die Endgeräte werden automatisch registriert, wenn Sie die mobile App installieren und diese Website aufrufen.';
+$string['noemailevernotset'] = '$CFG->noemailever deaktiviert';
+$string['noemaileverset'] = '$CFG->noemailever ist in der config.php aktiviert. Sie dürfen diese Einstellung nicht auf falsch setzen und nicht entfernen.';
 $string['nopermissiontomanagedevices'] = 'Sie haben keine Rechte, um die Endgeräte zu verwalten.';
 $string['notconfigured'] = 'Der Airnotifier-Server ist nicht konfiguriert, so dass keine Push-Mitteilungen gesendet werden können.';
 $string['notificationsserverconfiguration'] = 'Airnotifier-Konfiguration';
@@ -71,6 +77,7 @@ $string['privacy:metadata:username'] = 'Nutzername der Person.';
 $string['privacy:metadata:usersubsystem'] = 'Das Plugin ist mit dem Nutzer-Subsystem verbunden.';
 $string['privacy:subcontext'] = 'Airnotifier-Mitteilungen';
 $string['requestaccesskey'] = 'Zugangsschlüssel abrufen';
+$string['sendnotificationnotenc'] = 'Systembenachrichtigungen ohne Verschlüsselung senden';
 $string['sendtest'] = 'Push-Mitteilung an meine mobilen Endgeräte senden';
 $string['sendtestconfirmation'] = 'Eine Push-Mitteilung wird an die mobilen Endgeräte gesendet, mit denen Sie eine Verbindung zu dieser Website hergestellt haben. Stellen Sie sicher, dass Ihre Endgeräte mit dem Internet verbunden sind und die mobile App nicht geöffnet ist. Push-Mitteilungen werden nämlich nur angezeigt, wenn sie im Hintergrund empfangen werden.';
 $string['serverconnectivityerror'] = 'Diese Website kann keine Verbindung zum Benachrichtigungsserver {$a} herstellen.';
@@ -78,3 +85,4 @@ $string['showhide'] = 'Endgerät aktivieren / deaktivieren';
 $string['sitemustberegistered'] = 'Um die öffentliche Airnotifier-Instanz verwenden zu können, muss Ihre Website registriert sein. Alternativ erhalten Sie einen Zugriffsschlüssel, indem Sie ein Konto im <a href="https://apps.moodle.com">Moodle Apps Portal</a> erstellen.';
 $string['unknowndevice'] = 'Unbekanntes Gerät';
 $string['userdevices'] = 'Mobile Endgeräte';
+$string['view_notification'] = 'Zum Anzeigen tippen';

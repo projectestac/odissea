@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mis', language 'el', version '3.11'.
+ * Strings for component 'block_mis', language 'el', version '4.1'.
  *
  * @package     block_mis
  * @category    string
@@ -39,7 +39,7 @@ $string['attTable'] = 'Παρουσίες για';
 $string['attendanceTab'] = 'Παρουσίες';
 $string['blockname'] = 'Γονική πύλη';
 $string['calendarTab'] = 'Ημερολόγιο';
-$string['classroom'] = 'Δωμάτιο';
+$string['classroom'] = 'Αίθουσα';
 $string['code'] = 'Κωδικός';
 $string['configtitle'] = 'Τίτλος μπλοκ';
 $string['dataset'] = 'Σύνολο δεδομένων';
@@ -51,7 +51,7 @@ $string['descdbq'] = 'Χρειάζεται/χρησιμοποιείται μόν
 $string['descmisc'] = 'Μη ειδικές διάφορες ρυθμίσεις';
 $string['descprofi'] = '';
 $string['descpztab'] = 'Οι ακόλουθες ρυθμίσεις καθορίζουν ποιες καρτέλες είναι ορατές μέσα στην πύλη γονέα';
-$string['desctimet'] = 'Αυτό ΠΡΕΠΕΙ να οριστεί για να λειτουργήσει η καρτέλα «Καλωσόρισμα»';
+$string['desctimet'] = 'Αυτό ΠΡΕΠΕΙ να έχει οριστεί για να λειτουργεί η καρτέλα καλωσορίσματος';
 $string['descwel'] = 'Σημείωση, θα ΠΡΕΠΕΙ να επιλέξετε και παρουσίες και χρονοδιάγραμμα.';
 $string['eportfolioTab'] = 'Ηλε.Χαρτοφυλάκιο';
 $string['exam'] = 'Εξέταση';

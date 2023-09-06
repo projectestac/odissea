@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'sv', version '3.11'.
+ * Strings for component 'tool_analytics', language 'sv', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -89,7 +89,6 @@ $string['exportmodel'] = 'Exportera konfiguration';
 $string['exporttrainingdata'] = 'Exportera träningsdata';
 $string['extrainfo'] = 'Information';
 $string['generalerror'] = 'Fel i utvärdering. Statuskod {$a}';
-$string['getpredictions'] = 'Hämta förutsägelser';
 $string['goodmodel'] = 'Detta är en bra modell att använda för att erhålla förutsägelser. Aktivera den för att börja erhålla förutsägelser.';
 $string['ignoreversionmismatches'] = 'Ignorera versionsglapp';
 $string['ignoreversionmismatchescheckbox'] = 'Ignorera skillnaderna mellan den här webbplatsversionen och den ursprungliga webbplatsversionen.';
@@ -97,6 +96,7 @@ $string['importedsuccessfully'] = 'Modellen har importerats framgångsrikt.';
 $string['importmodel'] = 'Importera modell';
 $string['indicators'] = 'Indikatorer';
 $string['indicators_help'] = 'Indikatorerna representerar vad du tror kommer att leda till en korrekt förutsägelse av målet.';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = 'Antal indikatorer: {$a}';
 $string['info'] = 'Information';
 $string['insights'] = 'Insikter';
@@ -145,6 +145,7 @@ $string['scheduledanalysisresultscli'] = 'Resultat med hjälp av analysintervall
 $string['selecttimesplittingforevaluation'] = 'Välj det analysintervall du vill använda för att utvärdera modellkonfigurationen.';
 $string['target'] = 'Mål';
 $string['target_help'] = 'Målet är vad modellen kommer att förutsäga.';
+$string['target_link'] = 'Targets';
 $string['timesplittingnotdefined'] = 'Inget analysintervall har definierats.';
 $string['timesplittingnotdefined_help'] = 'Du behöver välja ett analysintervall innan du aktiverar modellen.';
 $string['trainandpredictmodel'] = 'Tränar modell och beräknar förutsägelser';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'fr', version '3.11'.
+ * Strings for component 'studentquiz', language 'fr', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -218,6 +218,7 @@ $string['missingparam'] = 'Un paramètre requis est manquant ou erroné';
 $string['moderator'] = 'Modérateur';
 $string['modulename'] = 'Test étudiant';
 $string['modulename_help'] = 'L\'activité Test étudiant permet aux étudiants d\'ajouter des questions pour l’ensemble des participants. Dans l\'aperçu de l’activité Test étudiant, les élèves peuvent filtrer les questions. Ils peuvent également utiliser les questions filtrées avec l’ensemble des contributions pour s\'entraîner. L\'enseignant a la possibilité d\'anonymiser la colonne « Créée par ».<br><br>L\'activité Test étudiant attribue aux étudiants des points pour les motiver à ajouter des questions et à s\'entraîner. Les points sont listés dans un tableau de classement.';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = 'Tests étudiant';
 $string['more'] = 'Plus';
 $string['myattempts_column_name'] = 'Mes tentatives';
@@ -270,7 +271,6 @@ $string['privacy:metadata:studentquiz_comment:deleteuserid'] = 'Identifiant de l
 $string['privacy:metadata:studentquiz_comment:edited'] = 'Horodatage de modification du commentaire.';
 $string['privacy:metadata:studentquiz_comment:edituserid'] = 'Identifiant de l\'utilisateur qui a édité le commentaire';
 $string['privacy:metadata:studentquiz_comment:parentid'] = 'Identifiant du commentaire parent. 0 : commentaire de premier niveau.';
-$string['privacy:metadata:studentquiz_comment:questionid'] = 'Identifiant de la question.';
 $string['privacy:metadata:studentquiz_comment:status'] = 'Status du commentaire';
 $string['privacy:metadata:studentquiz_comment:timemodified'] = 'Date de modification du commentaire';
 $string['privacy:metadata:studentquiz_comment:type'] = 'Type de commentaire';
@@ -294,20 +294,16 @@ $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'Nombre de r�
 $string['privacy:metadata:studentquiz_progress:lastanswercorrect'] = '0 : la dernière réponse était fausse ou indéfinie, 1 : la dernière réponse était correcte.';
 $string['privacy:metadata:studentquiz_progress:lastreadprivatecomment'] = 'La dernière fois que l’utilisateur a lu les commentaires privés';
 $string['privacy:metadata:studentquiz_progress:lastreadpubliccomment'] = 'La dernière fois que l’utilisateur a lu les commentaires publics';
-$string['privacy:metadata:studentquiz_progress:questionid'] = 'Identifiant de la question.';
 $string['privacy:metadata:studentquiz_progress:studentquizid'] = 'Identifiant du Test étudiant.';
 $string['privacy:metadata:studentquiz_progress:userid'] = 'Identifiant de l\'utilisateur.';
 $string['privacy:metadata:studentquiz_question'] = 'Enregistrer les propriétés liées aux questions';
 $string['privacy:metadata:studentquiz_question:groupid'] = 'Identifiant du groupe auquel appartient la question';
 $string['privacy:metadata:studentquiz_question:hidden'] = 'Propriété si la question est cachée ou non';
 $string['privacy:metadata:studentquiz_question:pinned'] = 'Propriété si la question a été épinglée ou non';
-$string['privacy:metadata:studentquiz_question:questionid'] = 'Identifiant de la question';
 $string['privacy:metadata:studentquiz_question:state'] = 'Propriété si la question est approuvée, désapprouvée, nouvelle ou modifiée';
 $string['privacy:metadata:studentquiz_rate'] = 'Enregistrer les notes des questions';
-$string['privacy:metadata:studentquiz_rate:questionid'] = 'Identifiant de la question.';
 $string['privacy:metadata:studentquiz_rate:rate'] = 'Note de la question.';
 $string['privacy:metadata:studentquiz_rate:userid'] = 'Identifiant de l\'utilisateur.';
-$string['privacy:metadata:studentquiz_state_history:questionid'] = 'Identifiant de la question.';
 $string['privacy:metadata:studentquiz_state_history:state'] = 'Propriété si la question est approuvée, désapprouvée, nouvelle ou modifiée';
 $string['privacy:metadata:studentquiz_state_history:timecreated'] = 'Il est temps de créer l’action.';
 $string['privacy:metadata:studentquiz_state_history:userid'] = 'Identifiant de l’utilisateur.';

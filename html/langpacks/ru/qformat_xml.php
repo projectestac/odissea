@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xml', language 'ru', version '3.11'.
+ * Strings for component 'qformat_xml', language 'ru', version '4.1'.
  *
  * @package     qformat_xml
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['invalidxml'] = 'Неверный файл XML - ожидалась строка (использовать CDATA?)';
 $string['pluginname'] = 'Формат Moodle XML';
 $string['pluginname_help'] = 'Это специфический формат Moodle для импорта и экспорта вопросов.';
+$string['pluginname_link'] = 'qformat/xml';
 $string['privacy:metadata'] = 'Плагин формата вопросов XML не хранит никаких личных данных.';
 $string['truefalseimporterror'] = '<b>Предупреждение</b>: Вопрос Верно/Неверно «{$a->questiontext}» не мог быть импортирован должным образом. Непонятно, что является правильным ответом: Верно или Неверно. Вопрос был импортирован с предположением, что правильным ответом является «{$a->answer}». Если это не так, отредактируйте вопрос.';
 $string['unsupportedexport'] = 'Тип вопроса {$a} не поддерживается при экспорте XML';

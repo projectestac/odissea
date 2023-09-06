@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'it', version '3.11'.
+ * Strings for component 'qtype_ddwtos', language 'it', version '4.1'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -33,6 +33,7 @@ $string['infinite'] = 'Illimitato';
 $string['pleaseputananswerineachbox'] = 'Per favore inserisci una risposta in ciascun riquadro.';
 $string['pluginname'] = 'Trascina e rilascia su un testo';
 $string['pluginname_help'] = 'Inserisci del testo del tipo "Il [[1]] saltò sopra il [[2]]", quindi inserisci sotto le parole mancanti in 1 e 2,';
+$string['pluginname_link'] = 'question/type/ddwtos';
 $string['pluginnameadding'] = 'Inserimento domanda Trascina e rilascia su un testo';
 $string['pluginnameediting'] = 'Modifica domanda Trascina e rilascia su un testo';
 $string['pluginnamesummary'] = 'Nel testo della domanda le parole mancanti vengono riempite con il trascina e rilascia.';

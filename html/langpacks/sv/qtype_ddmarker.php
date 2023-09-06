@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'sv', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'sv', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -78,6 +78,7 @@ $string['noofdrags'] = 'Nummer';
 $string['pleasedragatleastonemarker'] = 'Ditt svar är inte fullständigt; du måste placera minst en markör på bilden.';
 $string['pluginname'] = 'Dra och släpp markörer';
 $string['pluginname_help'] = 'Dra och släpp markörer kräver att användaren drar textetiketter och släpper dem i definierade zoner på bakgrundsbilden.';
+$string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = 'Lägger till dra och släpp-markörer';
 $string['pluginnameediting'] = 'Redigerar dra och släpp-markörer';
 $string['pluginnamesummary'] = 'Markörer dras och släpps på bakgrundsbilden. Observera: Denna frågetyp är inte tillgänglig för användare med synnedsättning.';

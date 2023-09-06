@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'eu', version '3.11'.
+ * Strings for component 'webservice', language 'eu', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'Web-zerbitzuetarako protokolo aktiboak';
 $string['addaservice'] = 'Gehitu zerbitzua';
 $string['addcapabilitytousers'] = 'Egiaztatu erabiltzaileen gaitasunak';
 $string['addcapabilitytousersdescription'] = 'Erabiltzaileek bi gaitasun izan beharko lituzkete - webservice:createtoken eta erabiiltako protokoloekin lotutakoa, adibidez webservice/rest:use edo webservice/soap:use. Hau lortzeko, sortu ezazu web-zerbitzuetan beharrezko gaitasunak baimenduta dituen rol bat eta esleitu iezaiozu web-zerbitzuaren erabiltzaileari sistemako rol moduan.';
+$string['addexternalservice'] = 'Gehitu kanpoko zerbitzua';
 $string['addfunction'] = 'Gehitu funtzioa';
 $string['addfunctionhelp'] = 'Aukeratu zein funtzio gehitu zerbitzura.';
 $string['addfunctions'] = 'Gehitu funtzioak';
@@ -61,14 +62,16 @@ $string['default'] = 'Lehenetsitako balioa: "{$a}"';
 $string['deleteaservice'] = 'Ezabatu zerbitzua';
 $string['deleteservice'] = 'Ezabatu zerbitzua: {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'Zerbitzu bat ezabatzeak zerbitzu horrekin lotutako tokenak ere ezabatuko ditu. Ziur zaude "{$a}" kanpoko zerbitzua ezabatu nahi duzula?';
+$string['deletetoken'] = 'Ezabatu tokena';
 $string['deletetokenconfirm'] = 'Ziur zaude <strong>{$a->service}</strong> zerbitzuko <strong>{$a->user}</strong> erabiltzailearen web-zerbitzuko tokena ezabatu nahi duzula?';
+$string['deprecated'] = 'Zaharkitua';
 $string['disabledwarning'] = 'Web-zerbitzuetako protokolo guztiak desgaituta daude. "Gaitu web-zerbitzuak" ezarpena Funtzio aurreratuetan aurkitu daiteke.';
 $string['doc'] = 'Dokumentazioa';
 $string['docaccessrefused'] = 'Ez duzu baimenik token honen dokumentazioa ikusteko';
-$string['documentation'] = 'web-zerbitzuaren dokumentazioa';
 $string['downloadfiles'] = 'Fitxategiak jaitsi daitezke';
 $string['downloadfiles_help'] = 'Gaituz gero, edozein erabiltzailek fitxategiak jaitsi ditzake bere segurtasun-gakoa erabiliz. Gunetik jaitsi ditzaketen fitxategiak baino ezingo dituzte jaitsi, noski.';
 $string['editaservice'] = 'Editatu zerbitzua';
+$string['editexternalservice'] = 'Editatu kanpoko zerbitzua';
 $string['editservice'] = 'Editatu zerbitzua: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Gaituta';
 $string['enabledocumentation'] = 'Gaitu garatzaileen dokumentazioa';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'ru', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'ru', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -37,6 +37,7 @@ $string['fileurl'] = 'Адрес файла';
 $string['fileurl_help'] = 'Поле «Адрес файла» предназначено для получения данных с удаленного сервера, например, из информационной системы с данными о студентах.';
 $string['importxml'] = 'Импорт XML';
 $string['importxml_help'] = 'Оценки могут быть импортированы из файла XML, содержащего ID пользователей и ID элементов. Для получения правильного формата сначала экспортируйте несколько оценок в файл XML, а затем просмотрите файл.';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'XML файл';
 $string['privacy:metadata'] = 'Плагин «Импорт оценок из XML» не хранит никаких персональных данных.';
 $string['xml:publish'] = 'Опубликовывать ссылку для импорта оценок в формате XML';

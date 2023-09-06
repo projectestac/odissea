@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exaport', language 'ar', version '3.11'.
+ * Strings for component 'block_exaport', language 'ar', version '4.1'.
  *
  * @package     block_exaport
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['back'] = 'رجوع';
 $string['back_to_desp'] = 'عودة إلى محفظة اللغة';
-$string['backtocourse'] = 'عودة إلى المقرر الدراسي';
+$string['backtocourse'] = 'عودة إلى المساق';
 $string['block_exaport_maxbytes'] = 'أقصى حجم للملف المرفوع في Exabis ePortfolio';
 $string['block_exaport_maxbytes_body'] = 'هذا يحدد الحجم الأقصى الذي يمكن أن تبلغه الملفات المرفوعة عبر المحفظة الالكترونية Exabis.<br> القيمة لكل الموقع هي: {$a->sitemaxbytes}. أنظر <a href="{$a->settingsurl}">الإعدادات</a>';
 $string['block_exaport_userquota_body'] = 'العدد الأقصى من البايتات الذي يمكن للمستخدم خزنه في محفظته الالكترونية Exabis.<br> القيمة لكل الموقع هي: {$a->bytes}. أنظر <a href="{$a->settingsurl}">الإعدادات</a>';

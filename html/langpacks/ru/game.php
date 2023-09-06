@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'game', language 'ru', version '3.11'.
+ * Strings for component 'game', language 'ru', version '4.1'.
  *
  * @package     game
  * @category    string
@@ -97,7 +97,7 @@ $string['cryptex_options'] = 'Варианты Криптекс';
 $string['deleteattemptcheck'] = 'Вы уверены, что хотите полностью удалить эти попытки?';
 $string['different_glossary_category'] = 'Выбранная категория не соответствует выбранному словарю';
 $string['disablesummarize'] = 'Отключить суммирование';
-$string['displayoptions'] = 'Отобразить дополнительно';
+$string['displayoptions'] = 'Параметры отображения';
 $string['downloadods'] = 'Загрузить в формате ODS';
 $string['eventgamecreated'] = 'Игра создана';
 $string['eventgamedeleted'] = 'Игра удалена';

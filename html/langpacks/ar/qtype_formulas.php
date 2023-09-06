@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_formulas', language 'ar', version '3.11'.
+ * Strings for component 'qtype_formulas', language 'ar', version '4.1'.
  *
  * @package     qtype_formulas
  * @category    string
@@ -40,11 +40,13 @@ $string['answertype_help'] = 'هناك أربعة أنواع من الإجابا
 إجابات المعادلات الجبرية تتطلب سلسلة حروف أو قائمة من سلاسل الحروف بمثابة إجابة.
 
 أنواع الإجابات المختلفة ستفرض قيوداً مختلفة عند إدخال الإجابات، لذلك سيكون الطلاب بحاجة إلى معرفة كيفية إدخالها. فحص التنسيق الذي في ترميز السؤال سيخبرهم أيضاً في أثناء إدخالهم للإجابة ما إذا كان هناك شيء خاطئ. لطفاً، إقرأ التوثيقات لمزيد من التفاصيل.';
+$string['answertype_link'] = 'https://moodleformulas.org/';
 $string['choiceno'] = 'لا';
 $string['choiceyes'] = 'نعم';
 $string['correctansweris'] = 'الإجابة الصحيحة المحتملة الوحيدة هي: {$a}';
 $string['correctfeedback'] = 'لأي رد صحيح';
 $string['correctfeedback_help'] = 'سيتم إظهار هذه الإفادة إلى الطلبة الذين يحصلون على الدرجة القصوى لهذا الجزء. يمكنها أن تتضمن متغيرات عمومية ومتغيرات اللغة والتي يتم استبدالها بقيمها الفعلية.';
+$string['correctness_link'] = 'https://moodleformulas.org/';
 $string['correctnessexpert'] = 'خبير';
 $string['defaultanswertype'] = 'نوع الإجابة الافتراضي';
 $string['error_mark'] = 'علامة الجواب ينبغي أن تأخذ قيمة أكبر من 0.';
@@ -64,8 +66,12 @@ $string['otherrule'] = 'قواعد أخرى';
 $string['partiallycorrectfeedback'] = 'لأي إجابة صحيحة جزئياً';
 $string['partiallycorrectfeedback_help'] = 'سيتم إظهار هذه الإفادة إلى الطلبة الذين لا يحصلون على الدرجة القصوى لهذا الجزء. يمكنها أن تتضمن متغيرات عمومية ومتغيرات اللغة والتي يتم استبدالها بقيمها الفعلية.';
 $string['pleaseputananswer'] = 'يرجى إدخال إجابة في كل حقل إدخال.';
+$string['pluginname_link'] = 'question/type/formulas';
 $string['privacy:metadata'] = 'إن ملحق نوع السؤال، المعادلات لا يخزن أي بيانات شخصية.';
 $string['questiontext'] = 'نص السؤال';
 $string['settingusepopup_desc'] = 'عرض الإجابة الصحيحة والإفادة في تلميح الشاشة';
+$string['vars2_link'] = 'https://moodleformulas.org/';
+$string['varsglobal_link'] = 'https://moodleformulas.org/';
+$string['varsrandom_link'] = 'https://moodleformulas.org/';
 $string['varsstatistics'] = 'الإحصائيات';
 $string['yougotnright'] = 'لقد أجبت بشكل صحيح على {$a->num} من أجزاء هذا السؤال.';

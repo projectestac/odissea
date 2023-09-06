@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'gl', version '3.11'.
+ * Strings for component 'auth', language 'gl', version '4.1'.
  *
  * @package     auth
  * @category    string
@@ -45,7 +45,7 @@ $string['auth_fieldlocks_help'] = '<p>Vostede pode bloquear os campos de datos d
 $string['auth_fieldmapping'] = 'Asignación de datos ({$a})';
 $string['auth_invalidnewemailkey'] = 'Erro: Si está tentando confirmar un cambio de enderezo de correo. debe ter cometido un error ao copiar o URL que lle enviamos por correo. Copie a ligazón e tenteo de novo.';
 $string['auth_multiplehosts'] = 'Pode especificar varios servidores (p.ex. servidor1.com;servidor2.com;servidor3.com) ou (p.ex. xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
-$string['auth_notconfigured'] = 'O método de autenticación {$a} non está configurado.';
+$string['auth_notconfigured'] = 'O método de de autenticación {$a} non está configurado.';
 $string['auth_outofnewemailupdateattempts'] = 'Fixo máis intentos dos permitidos para actualizar e seu enderezo de correo. A súa solicitude de actualización foi cancelada.';
 $string['auth_passwordisexpired'] = 'O seu contrasinal caducou. Quere cambiar agora o seu contrasinal?';
 $string['auth_passwordwillexpire'] = 'O seu contrasinal caduca en {$a} días. Quere cambiar agora o seu contrasinal?';
@@ -75,7 +75,7 @@ $string['authloginviaemail_desc'] = 'Permitir aos usuarios usar tanto o nome de 
 $string['auto_add_remote_users'] = 'Engadir automaticamente usuarios remotos';
 $string['cannotmapfield'] = 'O campo «{$a->fieldname}» non pode ser asignado porque o seu nome abreviado «{$a->shortname}» é longo de máis. Para permitir que sexa asignado, é necesario que reduza o nome abreviado a {$a->charlimit} caracteres. <a href="{$a->link}">Editar campos de perfil de usuario</a>';
 $string['changepassword'] = 'URL para cambiar o contrasinal';
-$string['changepasswordhelp'] = 'Aquí pode especificar onde poden os seus usuarios recuperar ou cambiar o seu nome de usuario/contrasinal se o esqueceron. Para iso, aparecerá un botón na páxina de acceso. Se deixa isto en branco, non se amosará este botón.';
+$string['changepasswordhelp'] = 'Aquí pode especificar onde poden os seus usuarios recuperar ou cambiar o seu nome de usuario/contrasinal se o esqueceron. Para elo, aparecerá un botón na páxina de acceso. Se deixa isto en branco, non se amosará este botón.';
 $string['chooseauthmethod'] = 'Escolla un método de autenticación';
 $string['chooseauthmethod_help'] = 'Este axuste determina o método de autenticación empregado cando o usuario accede. Só debe escoller a activación do engadido de autenticación, senón o usuario xa non poderá acceder. Para bloquear o acceso de usuarios seleccione «Sen acceso»';
 $string['createpassword'] = 'Xerar o contrasinal e notificar ao usuario';
@@ -84,23 +84,23 @@ $string['emailchangecancel'] = 'Cancelar o cambio de correo';
 $string['emailchangepending'] = 'Cambio pendente. Abra a ligazón enviada a {$a->preference_newemail}.';
 $string['emailnowexists'] = 'O enderezo de correo que tentou asignar ao seu perfil foi asignado a outra persoa. A súa solicitude de cambio queda cancelada, mais pode tentalo con outro enderezo.';
 $string['emailupdate'] = 'Actualización do enderezo de correo';
-$string['emailupdatemessage'] = 'Prezado/a {$a->fullname},
+$string['emailupdatemessage'] = 'Estimado {$a->fullname},
 
-Solicitou un cambio do seu enderezo de correo na súa conta de {$a->site}. Abra a seguinte ligazón no seu navegador para confirmar este cambio.
+Solicitou un cambio do seu enderezo de correo para a súa conta en {$a->site}. Para confirmar este cambio, vaia ao seguinte enderezo web:
 
-Se ten algunha dúbida, póñase en contacto co servizo de asistencia en: {$a->supportemail}
+{$a->url}
 
-{$a->url}';
-$string['emailupdatesuccess'] = 'O enderezo de correo do usuario <em>{$a->fullname}</em> foi actualizado satisfactoriamente a <em>{$a->email}</em>.';
+{$a->supportemail}';
+$string['emailupdatesuccess'] = 'O enderezo de correo do usuario <em>{$a->fullname}</em> foi actualizado correctamente a <em>{$a->email}</em>.';
 $string['emailupdatetitle'] = 'Confirmación da actualización de correo en {$a->site}';
 $string['errormaxconsecutiveidentchars'] = 'Os contrasinais deben ter como máximo {$a} caracteres consecutivos idénticos.';
 $string['errorminpassworddigits'] = 'Os contrasinais deben ter polo menos {$a} díxito(s).';
 $string['errorminpasswordlength'] = 'Os contrasinais deben ter polo menos unha lonxitude de {$a} caracteres.';
 $string['errorminpasswordlower'] = 'Os contrasinais deben ter polo menos {$a} letra(s) minúscula(s).';
-$string['errorminpasswordnonalphanum'] = 'Os contrasinais deben ter polo menos {$a} caracteres non alfanuméricos.';
+$string['errorminpasswordnonalphanum'] = 'O contrasinal debe ter polo menos {$a} caracteres especiais, como *, - ou #';
 $string['errorminpasswordupper'] = 'Os contrasinais deben ter polo menos {$a} letra(s) maiúscula(s).';
 $string['errorpasswordreused'] = 'Xa usou este contrasinal con anterioridade polo que non se permite o seu uso';
-$string['errorpasswordupdate'] = 'Produciuse un erro ao actualizar o contrasinal. O contrasinal non cambiou';
+$string['errorpasswordupdate'] = 'Produciuse un erro ao actualizar o contrasnal. O contrasinal non cambiou';
 $string['eventuserloggedin'] = 'O usuario accedeu';
 $string['eventuserloggedinas'] = 'O usuario accedeu como outro usuario';
 $string['eventuserloginfailed'] = 'Erro no acceso do usuario';
@@ -116,7 +116,7 @@ $string['infilefield'] = 'Campo requirido no ficheiro';
 $string['informminpassworddigits'] = 'cando menos {$a} díxito(s)';
 $string['informminpasswordlength'] = 'cando menos {$a} carácter(es)';
 $string['informminpasswordlower'] = 'cando menos {$a} letra(s) minúscula(s)';
-$string['informminpasswordnonalphanum'] = 'cando menos {$a} carácter(es) non alfanuméricos';
+$string['informminpasswordnonalphanum'] = 'cando menos {$a} caracteres especiais, como *, - ou #';
 $string['informminpasswordreuselimit'] = 'Os contrasinais pódense reutilizar logo de {$a} cambios';
 $string['informminpasswordupper'] = 'cando menos {$a} letra(s) maiúscula(s)';
 $string['informpasswordpolicy'] = 'O contrasinal debería ter {$a}';
@@ -161,8 +161,8 @@ $string['stdchangepassword_expl'] = 'Se o sistema externo de autenticación perm
 $string['stdchangepassword_explldap'] = 'NOTA: recomendase que empregue LDAP sobre un túnel cifrado SSL (ldaps://) se o servidor LDAP é remoto.';
 $string['suspended'] = 'Conta suspendida';
 $string['suspended_help'] = 'As contas de usuario suspendidas non poden acceder ou empregar os servizos web, e todas as mensaxes saíntes desbotaranse.';
-$string['testsettings'] = 'Proba dos axustess';
-$string['testsettingsheading'] = 'Proba dos axustes da autenticación - {$a}';
+$string['testsettings'] = 'Axustes de proba';
+$string['testsettingsheading'] = 'Proba da configuración da autenticación - {$a}';
 $string['unlocked'] = 'Desbloqueado';
 $string['unlockedifempty'] = 'Desbloqueado se está baleiro';
 $string['update_never'] = 'Nunca';

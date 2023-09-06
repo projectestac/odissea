@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_cloudpoodll', language 'en', version '3.11'.
+ * Strings for component 'assignsubmission_cloudpoodll', language 'en', version '4.1'.
  *
  * @package     assignsubmission_cloudpoodll
  * @category    string
@@ -115,6 +115,9 @@ $string['nl-nl'] = 'Dutch';
 $string['no'] = 'no';
 $string['noapisecret'] = 'No API secret entered. This plugin will not work correctly.';
 $string['noapiuser'] = 'No API user entered. This plugin will not work correctly.';
+$string['noaudiofilters'] = 'Disable audio noise filters';
+$string['noaudiofilters_desc'] = 'Disable audio noise filters - can be useful when shadowing or recording music.';
+$string['noaudiofilters_details'] = 'Turning off echo cancellation and noise suppression can be useful when shadowing or recording music.';
 $string['nocredentials'] = 'API user and secret not entered. Please enter them on <a href="{$a}">the settings page.</a> You can get them from <a href="https://poodll.com/member">Poodll.com.</a>';
 $string['nosubmission'] = 'Nothing has been submitted for this assignment';
 $string['nosubscriptions'] = 'There is no current subscription for this site/plugin.';
@@ -170,6 +173,7 @@ $string['skinupload'] = 'Upload';
 $string['sydney'] = 'Sydney, Australia';
 $string['ta-in'] = 'Tamil';
 $string['te-in'] = 'Telugu';
+$string['textcopiedtoclipboard'] = 'Text copied to clipboard';
 $string['timelimit'] = 'Cloud Poodll Rec. Time Limit';
 $string['tokyo'] = 'Tokyo, Japan';
 $string['tr-tr'] = 'Turkish';
@@ -177,6 +181,7 @@ $string['transcriberamazon'] = 'Normal transcription';
 $string['transcribergooglecloud'] = 'Fast transcription(audio only)';
 $string['transcribernone'] = 'No transcription';
 $string['transcripttitle'] = 'Transcript';
+$string['unabletocopytoclipboard'] = 'Unable to copy text to the clipboard';
 $string['useast1'] = 'US East';
 $string['videolistdisplay'] = 'Video player size (in lists)';
 $string['videosingledisplay'] = 'Video player size (single)';

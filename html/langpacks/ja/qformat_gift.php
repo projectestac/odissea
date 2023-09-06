@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'ja', version '3.11'.
+ * Strings for component 'qformat_gift', language 'ja', version '4.1'.
  *
  * @package     qformat_gift
  * @category    string
@@ -36,4 +36,5 @@ $string['importminerror'] = '問題にエラーがあります。この問題タ
 $string['nohandler'] = '問題タイプ {$a} のハンドラがありません。';
 $string['pluginname'] = 'GIFTフォーマット';
 $string['pluginname_help'] = 'GIFTフォーマットではテキストファイルを使用して多肢選択問題、○/×問題、記述問題、組み合わせ問題、ミッシングワード問題、数値問題および作文問題をインポートまたはエクスポートすることができます。';
+$string['pluginname_link'] = 'qformat/gift';
 $string['privacy:metadata'] = 'GIFT問題フォーマットプラグインはいかなる個人データも保存しません。';

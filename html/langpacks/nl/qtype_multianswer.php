@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'nl', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'nl', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -40,11 +40,13 @@ $string['layoutselectinline'] = 'Rolmenu in lijn met de tekst';
 $string['layoutundefined'] = 'Ongedefiniëerde opmaak';
 $string['layoutvertical'] = 'Verticale kolom keuzerondjes';
 $string['missingsubquestion'] = 'Deze subvraag ontbreekt in uw systeem en kan niet worden weergegeven.';
+$string['multichoicex'] = 'Meerkeuze {$a}';
 $string['nooptionsforsubquestion'] = 'Kan opties voor vraagdeel {$a->sub} (question->id={$a->id}) niet vinden';
 $string['noquestions'] = 'De gatentekst-vraag "<strong>{$a}</strong>" bevat geen vraag';
 $string['pleaseananswerallparts'] = 'Beantwoord alle delen van de vraag.';
 $string['pluginname'] = 'Ingebedde antwoorden (cloze)';
 $string['pluginname_help'] = 'Ingebedde antwoord (Cloze) vragen bestaan uit een stuk tekst met daarin ingebed enkele vragen, zoals meerkeuzevragen en kort antwoordvragen.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnameadding'] = 'Ingebedde antwoorden (cloze) toevoegen';
 $string['pluginnameediting'] = 'Ingebedde antwoorden (cloze) bewerken';
 $string['pluginnamesummary'] = 'Dit type vragen zijn erg flexibel, maar kunnen enkel opgesteld worden door tekst in te voeren waarin code gezet wordt. Die code zal de ingebedde meerkeuzevragen, kort antwoord en numerieke vragen vormen.';
@@ -54,8 +56,8 @@ $string['questiondefinition'] = 'Vraagdefinitie';
 $string['questiondeleted'] = 'Vraag verwijderd';
 $string['questioninquiz'] = '<ul>
   <li>vragen toevoegen of verwijderen, </li>
-  <li>wijzig de vraagvolgorde in de tekst,</li>
-  <li>wijzig het vraagtype (numeriek, kortantwoord, meerkeuze). </li></ul>';
+  <li>de vraagvolgorde wijzigen in de tekst,</li>
+  <li>het vraagtype (numeriek, kortantwoord, meerkeuze) wijzigen. </li></ul>';
 $string['questionnotfound'] = 'Kan de vraag niet vinden van vraagdeel #{$a}';
 $string['questionsadded'] = 'Vraag toegevoegd';
 $string['questionsaveasedited'] = 'De vraag zal bewaard worden zoals ze bewerkt is';
@@ -65,6 +67,7 @@ $string['questionsmore'] = '{$a} vragen meer dan in de meerkeuzenvraag in de dat
 $string['questiontypechanged'] = 'Vraagtype gewijzigd';
 $string['questiontypechangedcomment'] = 'Minstens een vraagtype is gewijzigd.<br />Heb je een vraag toegevoegd, verwijderd of verplaatst?<br />Kijk verder.';
 $string['questionusedinquiz'] = 'Deze vraag is gebruikt in {$a->nb_of_quiz} test(en), totaal poging(en):{$a->nb_of_attempts}';
+$string['regradeissuenumsubquestionschanged'] = 'Het aantal ingesloten subvragen in de vraag is gewijzigd.';
 $string['storedqtype'] = 'Opgeslagen vraagtype {$a}';
 $string['subqresponse'] = 'deel {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Onbekend vraagtype:  {$a->type} van vraagdeel # {$a->sub}';

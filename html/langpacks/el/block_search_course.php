@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_search_course', language 'el', version '3.11'.
+ * Strings for component 'block_search_course', language 'el', version '4.1'.
  *
  * @package     block_search_course
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['completioncriteria'] = 'Κριτήρια ολοκλήρωσης';
 $string['courseformat'] = 'Μορφότυπος μαθήματος';
-$string['description'] = 'Αναζήτηση στη σύνοψη μαθημάτων';
+$string['description'] = 'Αναζήτηση στις περιλήψεις μαθημάτων';
 $string['filterresults'] = 'Φίλτρο αναζήτησης';
 $string['pluginname'] = 'Εύρεση μαθημάτων';
 $string['search'] = 'Αναζήτηση';

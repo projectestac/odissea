@@ -20,7 +20,7 @@ Feature: Scorm multi-sco review mode.
       | activity | course | name                           | packagefilepath                                               | forcenewattempt |
       | scorm    | C1     | Basic Multi-sco SCORM package  | mod/scorm/tests/packages/RuntimeMinimumCalls_SCORM12.zip      | 0               |
     And I am on the "Basic Multi-sco SCORM package" "scorm activity" page logged in as student1
-    And I should see "Normal"
+    And I should see "Enter"
     And I press "Enter"
     And I switch to "scorm_object" iframe
     And I should see "Play of the game"
@@ -29,7 +29,7 @@ Feature: Scorm multi-sco review mode.
     And I wait until the page is ready
     And I should see "Basic Multi-sco SCORM package"
     And I am on the "Basic Multi-sco SCORM package" "scorm activity" page
-    And I should see "Normal"
+    And I should see "Enter"
     And I press "Enter"
     Then I should not see "Review mode"
 
@@ -39,7 +39,7 @@ Feature: Scorm multi-sco review mode.
       | activity | course | name                           | packagefilepath                                               | forcenewattempt |
       | scorm    | C1     | ADV Multi-sco SCORM package    | mod/scorm/tests/packages/RuntimeMinimumCalls_SCORM12.zip      | 0               |
     And I am on the "ADV Multi-sco SCORM package" "scorm activity" page logged in as student1
-    And I should see "Normal"
+    And I should see "Enter"
     And I press "Enter"
     And I switch to "scorm_object" iframe
     And I should see "Play of the game"
@@ -133,7 +133,7 @@ Feature: Scorm multi-sco review mode.
     And I wait until the page is ready
     And I should see "ADV Multi-sco SCORM package"
     And I am on the "ADV Multi-sco SCORM package" "scorm activity" page
-    And I should see "Normal"
+    And I should see "Enter"
     And I press "Enter"
     Then I should see "Review mode"
 
@@ -143,7 +143,7 @@ Feature: Scorm multi-sco review mode.
       | activity | course | name                          | packagefilepath                                               | forcenewattempt |
       | scorm    | C1     | Basic Multi-sco SCORM package | mod/scorm/tests/packages/RuntimeMinimumCalls_SCORM12-mini.zip | 2               |
     And I am on the "Basic Multi-sco SCORM package" "scorm activity" page logged in as student1
-    And I should see "Normal"
+    And I should see "Enter"
     And I press "Enter"
     And I switch to "scorm_object" iframe
     And I should see "Play of the game"
@@ -152,7 +152,7 @@ Feature: Scorm multi-sco review mode.
     And I wait until the page is ready
     And I should see "Basic Multi-sco SCORM package"
     And I am on the "Basic Multi-sco SCORM package" "scorm activity" page
-    And I should see "Normal"
+    And I should see "Enter"
     And I should not see "Start a new attempt"
     And I press "Enter"
     Then I should not see "Review mode"
@@ -165,7 +165,7 @@ Feature: Scorm multi-sco review mode.
       | activity | course | name                          | packagefilepath                                               | forcenewattempt |
       | scorm    | C1     | Basic Multi-sco SCORM package | mod/scorm/tests/packages/RuntimeMinimumCalls_SCORM12-mini.zip | 1               |
     And I am on the "Basic Multi-sco SCORM package" "scorm activity" page logged in as student1
-    And I should see "Normal"
+    And I should see "Enter"
     And I press "Enter"
     And I switch to "scorm_object" iframe
     And I should see "Play of the game"
@@ -174,7 +174,7 @@ Feature: Scorm multi-sco review mode.
     And I wait until the page is ready
     And I should see "Basic Multi-sco SCORM package"
     And I am on the "Basic Multi-sco SCORM package" "scorm activity" page
-    And I should see "Normal"
+    And I should see "Enter"
     And I should not see "Start a new attempt"
     And I press "Enter"
     And I should not see "Review mode"
@@ -220,7 +220,7 @@ Feature: Scorm multi-sco review mode.
     And I wait until the page is ready
     And I should see "Basic Multi-sco SCORM package"
     And I am on the "Basic Multi-sco SCORM package" "scorm activity" page
-    And I should see "Normal"
+    And I should see "Enter"
     And I press "Enter"
     Then I should not see "Review mode"
     And I switch to "scorm_object" iframe

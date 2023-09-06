@@ -39,8 +39,8 @@ Feature: Lesson user override
   @javascript
   Scenario: Add, modify then delete a user override
     Given I am on the "Test lesson name" "lesson activity" page logged in as teacher1
-    And I navigate to "User overrides" in current page administration
-    And I press "Add user override"
+    And I navigate to "Overrides" in current page administration
+    And I follow "Add user override"
     And I set the following fields to these values:
       | Override user       | Student1 |
       | id_deadline_enabled | 1 |
@@ -63,8 +63,8 @@ Feature: Lesson user override
   @javascript
   Scenario: Duplicate a user override
     Given I am on the "Test lesson name" "lesson activity" page logged in as teacher1
-    And I navigate to "User overrides" in current page administration
-    And I press "Add user override"
+    And I navigate to "Overrides" in current page administration
+    And I follow "Add user override"
     And I set the following fields to these values:
       | Override user       | Student1 |
       | id_deadline_enabled | 1 |
@@ -89,8 +89,8 @@ Feature: Lesson user override
     And I set the following fields to these values:
       | Re-takes allowed | 0 |
     And I press "Save and display"
-    And I navigate to "User overrides" in current page administration
-    And I press "Add user override"
+    And I navigate to "Overrides" in current page administration
+    And I follow "Add user override"
     And I set the following fields to these values:
       | Override user    | Student1  |
       | Re-takes allowed | 1 |
@@ -123,8 +123,8 @@ Feature: Lesson user override
       | Password protected lesson | Yes |
       | id_password               | moodle_rules |
     And I press "Save and display"
-    And I navigate to "User overrides" in current page administration
-    And I press "Add user override"
+    And I navigate to "Overrides" in current page administration
+    And I follow "Add user override"
     And I set the following fields to these values:
       | Override user             | Student1  |
       | Password protected lesson | 12345 |
@@ -166,8 +166,8 @@ Feature: Lesson user override
       | deadline[hour]      | 08 |
       | deadline[minute]    | 00 |
     And I press "Save and display"
-    And I navigate to "User overrides" in current page administration
-    And I press "Add user override"
+    And I navigate to "Overrides" in current page administration
+    And I follow "Add user override"
     And I set the following fields to these values:
       | Override user       | Student1 |
       | id_deadline_enabled | 1 |
@@ -196,8 +196,8 @@ Feature: Lesson user override
       | available[hour]      | 08 |
       | available[minute]    | 00 |
     And I press "Save and display"
-    And I navigate to "User overrides" in current page administration
-    And I press "Add user override"
+    And I navigate to "Overrides" in current page administration
+    And I follow "Add user override"
     And I set the following fields to these values:
       | Override user        | Student1 |
       | id_available_enabled | 1 |
@@ -221,8 +221,8 @@ Feature: Lesson user override
     And I set the following fields to these values:
       | Re-takes allowed | 1 |
     And I press "Save and display"
-    And I navigate to "User overrides" in current page administration
-    And I press "Add user override"
+    And I navigate to "Overrides" in current page administration
+    And I follow "Add user override"
     And I set the following fields to these values:
       | Override user              | Student1  |
       | Maximum number of attempts per question | 2 |
@@ -255,10 +255,10 @@ Feature: Lesson user override
     And the following "activities" exist:
       | activity | name     | intro                | course | idnumber | groupmode |
       | lesson   | Lesson 2 | Lesson 2 description | C1     | lesson2  | 1         |
-    And I am on the "Lesson 2" "lesson activity" page logged in as teacher1
-    And I navigate to "User overrides" in current page administration
+    When I am on the "Lesson 2" "lesson activity" page logged in as teacher1
+    And I navigate to "Overrides" in current page administration
     Then I should see "No groups you can access."
-    And the "Add user override" "button" should be disabled
+    And I should not see "Add user override"
 
   Scenario: A teacher without accessallgroups permission should only be able to add user override for their group-mates, when the activity's group mode is 'separate groups'
     Given the following "permission overrides" exist:
@@ -277,8 +277,8 @@ Feature: Lesson user override
       | student1 | G1    |
       | student2 | G2    |
     When I am on the "Lesson 2" "lesson activity" page logged in as teacher1
-    And I navigate to "User overrides" in current page administration
-    And I press "Add user override"
+    And I navigate to "Overrides" in current page administration
+    And I follow "Add user override"
     Then the "Override user" select box should contain "Sam1 Student1, student1@example.com"
     And the "Override user" select box should not contain "Sam2 Student2, student2@example.com"
 
@@ -300,8 +300,8 @@ Feature: Lesson user override
       | student1 | G1    |
       | student2 | G2    |
     And I am on the "Lesson 2" "lesson activity" page logged in as admin
-    And I navigate to "User overrides" in current page administration
-    And I press "Add user override"
+    And I navigate to "Overrides" in current page administration
+    And I follow "Add user override"
     And I set the following fields to these values:
       | Override user       | Student1 |
       | id_deadline_enabled | 1        |
@@ -321,7 +321,7 @@ Feature: Lesson user override
       | deadline[minute]    | 00       |
     And I press "Save"
     When I am on the "Lesson 2" "lesson activity" page logged in as teacher1
-    And I navigate to "User overrides" in current page administration
+    And I navigate to "Overrides" in current page administration
     Then I should see "Student1" in the ".generaltable" "css_element"
     And I should not see "Student2" in the ".generaltable" "css_element"
 
@@ -329,10 +329,10 @@ Feature: Lesson user override
   Scenario: Create a user override when the lesson is not available to the student
     Given I am on the "Test lesson name" "lesson activity editing" page logged in as teacher1
     And I expand all fieldsets
-    And I set the field "Availability" to "Hide from students"
+    And I set the field "Availability" to "Hide on course page"
     And I click on "Save and display" "button"
-    When I navigate to "User overrides" in current page administration
-    And I press "Add user override"
+    When I navigate to "Overrides" in current page administration
+    And I follow "Add user override"
     And I set the following fields to these values:
       | Override user              | Student1 |
       | Maximum number of attempts per question | 2 |

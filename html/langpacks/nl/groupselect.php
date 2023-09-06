@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupselect', language 'nl', version '3.11'.
+ * Strings for component 'groupselect', language 'nl', version '4.1'.
  *
  * @package     groupselect
  * @category    string
@@ -93,6 +93,7 @@ $string['modulename_help'] = 'Stelt deelnemers in staat zelf groepen aan te make
 * Supervisoren kunnen aan groepen worden toegewezen
 * Leraren kunnen een lijst van cursusgroepen als CSV-bestand exporteren
 * Werkt volledig samen met standaardfunctionaliteit Moodle groepen: groepen kunnen ook op andere wijze worden aangemaakt indien nodig, ondersteunt groepsopdrachten etc.';
+$string['modulename_link'] = 'mod/groupselect/view';
 $string['modulenameplural'] = 'Zelf groepen kiezen';
 $string['nogroups'] = 'Er zijn helaas geen groepen om uit te kiezen.';
 $string['notavailableanymore'] = 'Groepen kiezen is helaas niet meer mogelijk (sinds {$a}).';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_massaction', language 'de', version '3.11'.
+ * Strings for component 'block_massaction', language 'de', version '4.1'.
  *
  * @package     block_massaction
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['action_contentchangednotification'] = 'Änderungsbenachrichtigung senden';
 $string['action_delete'] = 'Löschen';
 $string['action_duplicate'] = 'Duplizieren';
 $string['action_duplicatetocourse'] = 'Duplizieren in anderen Kurs';
@@ -59,6 +60,7 @@ $string['invalidmoduleid'] = 'Ungültige Modul-ID: {$a}';
 $string['jsonerror'] = 'Programmierfehler: Ungültiges JSON-format.';
 $string['keepsectionnum'] = 'Ursprünglichen Abschnitt beibehalten';
 $string['massaction:addinstance'] = 'Stapeloperationen-Block hinzufügen';
+$string['massaction:sendcontentchangednotifications'] = 'Änderungsbenachrichtigungen senden';
 $string['massaction:use'] = 'Benutzung des Stapeloperationen-Blocks';
 $string['modulename'] = 'Aktivitätsname';
 $string['moduletype'] = 'Aktivitätstyp';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'fr', version '3.11'.
+ * Strings for component 'customcert', language 'fr', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -107,7 +107,6 @@ $string['height'] = 'Hauteur';
 $string['height_help'] = 'La hauteur du certificat PDF en mm. Comme référence, une feuille de papier A4 est 297mm de haut et une lettre est 279mm de haut.';
 $string['invalidcode'] = 'Le code fourni est invalide.';
 $string['invalidcolour'] = 'La couleur choisie est invalide, veuillez saisir un nom de couleur HTML valide, ou une couleur hexadécimale à 3 ou 6 caractères.';
-$string['invalidelementwidth'] = 'Veuillez saisir un nombre positif.';
 $string['invalidheight'] = 'La hauteur doit être un nombre valide plus grand que 0.';
 $string['invalidmargin'] = 'La marge doit être un nombre valide plus grand que 0.';
 $string['invalidposition'] = 'Veuillez choisir un nombre positif pour la position {$a}.';
@@ -124,6 +123,7 @@ $string['managetemplatesdesc'] = 'Ce lien vous mènera à un nouvel écran, dans
 $string['modify'] = 'Modifier';
 $string['modulename'] = 'Certificat personnalisé';
 $string['modulename_help'] = 'Ce module permet la génération dynamique de certificat en format PDF.';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['modulenameplural'] = 'Certificats personnalisés';
 $string['mycertificates'] = 'Mes certificats';
 $string['mycertificatesdescription'] = 'Vous trouverez ici les certificats qui vous ont été délivrés par courriel ou que vous avez téléchargés.';

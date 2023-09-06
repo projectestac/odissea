@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'es', version '3.11'.
+ * Strings for component 'quiz_grading', language 'es', version '4.1'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,11 +49,12 @@ $string['graded'] = '(calificado)';
 $string['gradenextungraded'] = 'Calificar los siguientes ??? intentos no calificados';
 $string['gradeungraded'] = 'Calificar todos los ??? intentos no calificados';
 $string['grading'] = 'Calificación manual';
-$string['grading:viewidnumber'] = 'Ver los números ID de los estudiantes mientras se califica';
+$string['grading:viewidnumber'] = 'Ver los campos de identificación de los estudiantes mientras se califica';
 $string['grading:viewstudentnames'] = 'Ver los nombres de los estudiantes mientras se califica';
 $string['gradingall'] = 'Todos los ??? intentos de contestar esta pregunta.';
 $string['gradingattempt'] = 'Intento número {$a->attempt} de {$a->fullname}.';
 $string['gradingattemptsxtoyofz'] = 'Intentos de calificación {$a->from} a {$a->to} de {$a->of}';
+$string['gradingattemptwithcustomfields'] = 'Número de intento {$a->attempt} para {$a->fullname} ({$a->customfields})';
 $string['gradingattemptwithidnumber'] = 'Número de intento {$a->attempt} para {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Los siguientes ??? intentos no calificados';
 $string['gradingnotallowed'] = 'No tiene permiso para calificar manualmente las respuestas de este cuestionario';
@@ -69,6 +70,7 @@ $string['noquestionsfound'] = 'No se han encontrado preguntas clasificadas manua
 $string['nothingfound'] = 'Nada que mostrar';
 $string['options'] = 'Opciones';
 $string['orderattempts'] = 'Ordenar intentos';
+$string['orderattemptsby'] = 'Ordenar intentos por';
 $string['pluginname'] = 'Calificación manual';
 $string['privacy:preference:order'] = 'Qué orden se muestra para los intentos que necesitan calificación.';
 $string['privacy:preference:pagesize'] = 'Cuántos intentos se muestran en cada página de la interfaz de calificación.';
@@ -77,8 +79,9 @@ $string['questionname'] = 'Nombre de la pregunta';
 $string['questionsperpage'] = 'Preguntas por página';
 $string['questionsthatneedgrading'] = 'Preguntas que requieren calificación';
 $string['questiontitle'] = 'Pregunta {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} intentos {$a->openspan}graded{$a->closespan}).';
+$string['random'] = 'Aleatorio';
 $string['randomly'] = 'Aleatoriamente';
-$string['saveandnext'] = 'Guardar e ir a la página siguiente';
+$string['saveandnext'] = 'Guardar y mostrar siguiente';
 $string['showstudentnames'] = 'Mostrar nombres de estudiantes';
 $string['tograde'] = 'Para calificar';
 $string['total'] = 'Total';

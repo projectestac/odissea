@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_advnotifications', language 'pt', version '3.11'.
+ * Strings for component 'block_advnotifications', language 'pt', version '4.1'.
  *
  * @package     block_advnotifications
  * @category    string
@@ -31,7 +31,7 @@ $string['advnotifications'] = 'Notificações avançadas';
 $string['advnotifications:addinstance'] = 'Adicionar um novo bloco de Notificações avançadas';
 $string['advnotifications:managenotifications'] = 'Gerir notificações e respetivas configurações';
 $string['advnotifications:manageownnotifications'] = 'Gerir as próprias notificações e as configurações relativas';
-$string['advnotifications:myaddinstance'] = 'Adicionar um novo bloco Notificações avançadas na minha página principal';
+$string['advnotifications:myaddinstance'] = 'Adicionar um novo bloco Notificações avançadas ao Painel do utilizador';
 $string['advnotifications_add_done'] = 'Feito!';
 $string['advnotifications_add_heading'] = 'Nova notificação';
 $string['advnotifications_add_option_announcement'] = 'Anúncio';

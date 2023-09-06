@@ -83,6 +83,8 @@ M.course.format.process_sections = function(Y, sectionlist, response, sectionfro
             stridx = str.lastIndexOf(' ');
             newstr = str.substr(0, stridx + 1) + i;
             ele.setAttribute('title', newstr);
+            // Update the aria-label for the section.
+            sectionlist.item(i).setAttribute('aria-label', content.get('innerText').trim());
         }
     }
 };

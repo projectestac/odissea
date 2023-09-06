@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'it', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'it', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -56,6 +56,7 @@ $string['deletelastitem'] = 'Elimina ultimo elemento';
 $string['distributionoption'] = 'Seleziona opzione di distribuzione';
 $string['editdatasets'] = 'Modifica i dataset di caratteri jolly';
 $string['editdatasets_help'] = 'I valori dei caratteri jolly possono essere creati inserendo un numero in ogni campo corrispondente e cliccando sul pulsante Aggiungi. Per generare automaticamente 10 o più valori, scegliere il numero di valori prima di cliccare su Aggiungi. Una distribuzione Uniform significa che ogni valore tra i limiti ha uguale probabilità di essere generato; una distribuzione Loguniform significa che valori verso il limite più basso sono più probabili.';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = 'userà un dataset preesistente condiviso';
 $string['existingcategory2'] = 'un file da un insieme esistente di file usati anche da altre domande in questa categoria';
 $string['existingcategory3'] = 'un link da un insieme esistente di link usati anche da altre domande in questa categoria';
@@ -112,6 +113,7 @@ $string['param'] = 'Parametro {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Per ogni risposta parzialmente esatta';
 $string['pluginname'] = 'Calcolata';
 $string['pluginname_help'] = 'Le domande \'calcolate\' offrono un modo per creare singole domande numeriche tramite l\'uso di caratteri jolly che vengono sostituiti da valori reali durante la somministrazione del quiz. Ad esempio, la domanda "Quale è l\'area di un rettangolo di lunghezza {l} e larghezza {w}?" avrà come risposta corretta la formula  "{l}*{w}" (dove * è il segno di moltiplicazione).';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = 'Creazione domanda calcolata';
 $string['pluginnameediting'] = 'Modifica domanda calcolata';
 $string['pluginnamesummary'] = 'Le domande Calcolate sono simili alla domande Numeriche dove però i numeri utilizzati sono scelti a caso durante lo svolgimento del quiz.';

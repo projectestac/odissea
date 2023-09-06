@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'sv', version '3.11'.
+ * Strings for component 'atto_collapse', language 'sv', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'Visa färre knappar';
 $string['showgroups'] = 'Visa de första (n) grupperna när ihopfälld';
 $string['showgroups_desc'] = 'När verktygsfältet är komprimerat (standard) visas bara så här många grupper samtidigt.';
 $string['showmore'] = 'Visa fler knappar';
+$string['youareonsecondrow'] = 'Du är nu på en annan rad i redigerarens verktygsrad där det finns fler knappar.';

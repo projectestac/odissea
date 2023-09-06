@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'sv', version '3.11'.
+ * Strings for component 'bigbluebuttonbn', language 'sv', version '4.1'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -25,62 +25,65 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'Du har inga kommande bigbluebuttonbn -sessioner';
-$string['bbbduetimeoverstartingtime'] = 'Sluttiden för den här aktiviteten måste inträffa efter starttiden';
+$string['acceptdpa'] = 'Jag förstår och accepterar databehandlingsavtalet';
+$string['activityoverview'] = 'Du har kommande BigBlueButton-sessioner';
+$string['bbbduetimeoverstartingtime'] = 'Sluttiden för den här aktiviteten måste inträffa efter starttiden.';
 $string['bbbdurationwarning'] = 'Den längsta varaktigheten för den här sessioner är %duration% minuter.';
 $string['bbbrecordallfromstartwarning'] = 'Den här sessionen spelas in från start.';
 $string['bbbrecordwarning'] = 'Den här sessionen kan komma att spelas in.';
 $string['bigbluebuttonbn'] = 'BigBlueButton';
-$string['bigbluebuttonbn:addinstance'] = 'Ny BigBlueButtonbn aktivitet';
-$string['bigbluebuttonbn:addinstancewithmeeting'] = 'Skapa instanser som erbjuder funktioner för live-möten';
-$string['bigbluebuttonbn:addinstancewithrecording'] = 'Skapa instanser med inspelningsmöjligheter';
+$string['bigbluebuttonbn:addinstance'] = 'Nytt BigBlueButton-rum';
+$string['bigbluebuttonbn:addinstancewithmeeting'] = 'Skapa instans av live-sessioner';
+$string['bigbluebuttonbn:addinstancewithrecording'] = 'Skapa instans med inspelningsmöjligheter';
 $string['bigbluebuttonbn:deleterecordings'] = 'Ta bort inspelningar';
 $string['bigbluebuttonbn:importrecordings'] = 'Importera inspelningar';
-$string['bigbluebuttonbn:join'] = 'Anslut till ett bigbluebuttonbn-möte';
+$string['bigbluebuttonbn:join'] = 'Anslut till ett BigBlueButton-rum';
 $string['bigbluebuttonbn:managerecordings'] = 'Hantera inspelningar';
 $string['bigbluebuttonbn:protectrecordings'] = 'Skydda inspelningar';
 $string['bigbluebuttonbn:publishrecordings'] = 'Publicera inspelningar';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Ta bort skydd';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Avpublicera inspelningar';
-$string['bigbluebuttonbn:view'] = 'Visa rum/aktivitet';
+$string['bigbluebuttonbn:view'] = 'Visa BigBlueButton-rum';
+$string['bigbluebuttondisablednotification'] = 'Aktivitetsmodulen BigBlueButton har inaktiverats och befintliga BigBlueButton-kursaktiviteter är för närvarande inte tillgängliga. Innan du återaktiverar denna pluginmodul, se till att du har läst och accepterat <a href="{$a}" target="_blank">databehandlingsavtalet</a> med Blindside Networks Inc.';
+$string['bigbluebuttondisablednotification_subject'] = 'BBB-aktivitetsmodul inaktiverad.';
 $string['cachedef_currentfetch'] = 'Data för att lista senaste inspelning';
 $string['cachedef_recordings'] = 'Inspelningsmetadata';
 $string['cachedef_serverinfo'] = 'Information om fjärrserver';
 $string['cachedef_validatedurls'] = 'Cachade URL-kontroller';
 $string['calendarstarts'] = '{$a} är schemalagt till';
 $string['cannotperformaction'] = 'Kan inte utföra åtgärden {$a} för denna inspelning';
-$string['completionattendance'] = 'Studenten måste närvara vid mötet minst:';
+$string['completionattendance'] = 'Studenten måste närvara vid sessionen i minst:';
 $string['completionattendance_desc'] = 'Studenten måste delta i mötet och vara kvar i sessionen i minst {$a} minuter';
 $string['completionattendance_event_desc'] = 'Deltagaren har deltagit i mötet eller stannat kvar i sessionen i minst {$a} minuter';
 $string['completionattendancegroup'] = 'Kräv närvaro';
-$string['completionattendancegroup_help'] = 'Deltagande i mötet i (n) minuter krävs för slutförande';
+$string['completionattendancegroup_help'] = 'Deltagande i mötet i (n) minuter krävs för slutförande.';
 $string['completionengagement_desc'] = 'Studenten måste delta i aktiviteter under mötet';
-$string['completionengagementchats'] = 'Kräv chatthändelser';
-$string['completionengagementchats_desc'] = 'Deltagaren måste delta i {$a} chatthändelser för att slutföra';
+$string['completionengagementchats'] = 'Chattar';
+$string['completionengagementchats_desc'] = 'Deltagaren måste delta i {$a} chattar för att slutföra den.';
 $string['completionengagementchats_event_desc'] = 'Har initierat {$a} chatthändelser';
 $string['completionengagementemojis'] = 'Emojis';
-$string['completionengagementemojis_desc'] = 'Deltagaren måste skicka {$a} emojis i omröstningar för att slutföra';
-$string['completionengagementemojis_event_desc'] = 'Har initierat {$a} emojihändelser';
-$string['completionengagementgroup'] = 'Kräv engagemang';
-$string['completionengagementgroup_help'] = 'Aktivt deltagande under sessionen krävs för slutförande';
+$string['completionengagementemojis_desc'] = 'Deltagaren måste skicka {$a} emojis i omröstningar för att slutföra.';
+$string['completionengagementemojis_event_desc'] = 'Har initierat {$a} emojis';
+$string['completionengagementgroup'] = 'Kräv deltagande';
+$string['completionengagementgroup_help'] = 'Aktivt deltagande under sessionen krävs för slutförande.';
 $string['completionengagementpollvotes'] = 'Omröstningar';
-$string['completionengagementpollvotes_desc'] = 'Deltagare måste rösta i {$a} omröstningar för att slutföra';
-$string['completionengagementpollvotes_event_desc'] = 'Har initierat {$a} omröstningar';
-$string['completionengagementraisehand'] = 'Kräv räck upp handen-händelser';
-$string['completionengagementraisehand_desc'] = 'Deltagaren måste räcka upp handen {$a} gånger för att slutföra';
-$string['completionengagementraisehand_event_desc'] = 'Har initierat {$a} räck upp handen-händelser';
-$string['completionengagementtalks'] = 'Samtalshändelser';
+$string['completionengagementpollvotes_desc'] = 'Deltagare måste rösta {$a} gånger i omröstningar för att slutföra.';
+$string['completionengagementpollvotes_event_desc'] = 'Har genomfört {$a} omröstningar';
+$string['completionengagementraisehand'] = 'Kräv handuppräckning';
+$string['completionengagementraisehand_desc'] = 'Deltagaren måste räcka upp handen {$a} gånger för att slutföra.';
+$string['completionengagementraisehand_event_desc'] = 'Har gjort {$a} handuppräckningar';
+$string['completionengagementtalks'] = 'Tala';
 $string['completionengagementtalks_desc'] = 'Deltagaren måste prata {$a} gånger för att slutföra';
-$string['completionengagementtalks_event_desc'] = 'Har initierat {$a} samtalshändelser';
+$string['completionengagementtalks_event_desc'] = 'Har talat {$a} gånger';
 $string['completionupdatestate'] = 'Uppdateringstillstånd för slutförande';
 $string['completionvalidatestate'] = 'Validera slutförande';
 $string['completionvalidatestatetriggered'] = 'Validering av slutförande har utlösts.';
 $string['completionview'] = 'Kräv visning';
-$string['completionview_desc'] = 'Deltagaren måste delta i ett möte eller spela upp en inspelning för att slutföra';
-$string['completionview_event_desc'] = 'Har anslutit till mötet eller spelat upp en inspelning {$a} gånger';
+$string['completionview_desc'] = 'Deltagaren måste visa rummet för att slutföra.';
+$string['completionview_event_desc'] = 'Har visat rummet.';
 $string['config_default_messages'] = 'Standardmeddelanden';
 $string['config_default_messages_description'] = 'Ange standardvärden för meddelanden för aktiviteter';
-$string['config_disablecam_default'] = 'Inaktivera kamera är aktiverat som standard';
+$string['config_disablecam_default'] = 'Inaktiverad kamera är som standard aktiverat';
 $string['config_disablecam_default_description'] = 'Om markerad kommer webbkameror vara inaktiverade';
 $string['config_disablecam_editable'] = 'Inaktivera kamera kan redigeras';
 $string['config_disablecam_editable_description'] = 'Inaktivera kamera som standard kan redigeras när instansen läggs till eller uppdateras.';
@@ -100,26 +103,27 @@ $string['config_disablepublicchat_default'] = 'Inaktivera publik chatt aktiverat
 $string['config_disablepublicchat_default_description'] = 'Om aktiverat kommer publika chattar vara inaktiverade.';
 $string['config_disablepublicchat_editable'] = 'Inaktivera publik chatt kan redigeras';
 $string['config_disablepublicchat_editable_description'] = 'Inaktivera publik chatt som standard kan redigeras när instansen läggs till eller uppdateras.';
-$string['config_experimental_features'] = 'Inställningar för experimentella funktioner';
+$string['config_dpa_note'] = 'För att uppfylla dina dataskyddsskyldigheter kan du, innan du använder en tjänsteleverantör för denna pluginmodul, behöva se till att du har läst och accepterat tjänsteleverantörens databehandlingsavtal.
+För den kostnadsfria standard BigBlueButton-tjänsten som tillhandahålls av Blindside Networks Inc., läs och godkänn följande <a href="{$a}" target="_blank">databehandlingsavtal</a>.<br/>
+Rådgör med dina egna sekretessrådgivare för ytterligare information.';
+$string['config_experimental_features'] = 'Experimentella funktioner';
 $string['config_experimental_features_description'] = 'Konfiguration för experimentella funktioner.';
-$string['config_extended_capabilities'] = 'Konfiguration av utökade funktionsbehörigheter';
+$string['config_extended_capabilities'] = 'Utökade funktioner';
 $string['config_extended_capabilities_description'] = 'Inställningar för utökade funktioner när BBB-servern erbjuder detta.';
 $string['config_general'] = 'Allmänna inställningar';
-$string['config_general_description'] = 'Dessa inställningar används <strong>alltid</strong>';
+$string['config_general_description'] = 'Dessa inställningar används <strong>alltid</strong>.';
+$string['config_guestaccess_enabled'] = 'Gäståtkomst';
+$string['config_guestaccess_enabled_description'] = 'Ge användare utan konto på denna webbplats åtkomst till rummet.';
 $string['config_hideuserlist_default'] = 'Dölj användarlista aktiverat som standard';
 $string['config_hideuserlist_default_description'] = 'Om aktiverat kommer deltagarlistan för sessionen vara dold.';
 $string['config_hideuserlist_editable'] = 'Dölj användarlista kan redigeras';
 $string['config_hideuserlist_editable_description'] = 'Dölj användarlista som standard kan redigeras när instansen läggs till eller uppdateras.';
-$string['config_importrecordings'] = 'Konfiguration av "Importera inspelningar"-funktionen';
-$string['config_importrecordings_description'] = 'Dessa inställningar är funktionsspecifika';
+$string['config_importrecordings'] = 'Importera inspelningar';
+$string['config_importrecordings_description'] = 'Dessa inställningar är funktionsspecifika.';
 $string['config_importrecordings_enabled'] = 'Import av inspelningar är aktiverat';
 $string['config_importrecordings_enabled_description'] = 'När detta och inspelningsfunktionen är aktiverad är det möjligt att importera inspelningar från olika kurser till en aktivitet.';
 $string['config_importrecordings_from_deleted_enabled'] = 'Importera inspelningar från borttagna aktiviteter aktiverat';
 $string['config_importrecordings_from_deleted_enabled_description'] = 'När detta och funktionen importera inspelning är aktiverad är det möjligt att importera inspelningar från aktiviteter som inte längre finns i kursen.';
-$string['config_lockonjoin_default'] = 'Ignorera lås vid anslut aktiverat som standard';
-$string['config_lockonjoin_default_description'] = 'Om aktiverat ignoreras låsningsinställningarna. Låsningskonfigurationen måste vara aktiverad för att detta skall gälla.';
-$string['config_lockonjoin_editable'] = 'Ignorera lås vid anslut kan redigeras';
-$string['config_lockonjoin_editable_description'] = 'Ignorera lås vid anslut som standard kan redigeras när instansen läggs till eller uppdateras.';
 $string['config_locksettings'] = 'Konfiguration av låsningsinställningar';
 $string['config_locksettings_description'] = 'De här inställningarna aktiverar eller inaktiverar alternativ för låsningsalternativen i användargränssnittet och definierar även standardvärden för dessa alternativ.';
 $string['config_meetingevents_enabled'] = 'Registrera livehändelser';
@@ -140,8 +144,8 @@ $string['config_preuploadpresentation'] = 'Inställningar för funktionen <em>"F
 $string['config_preuploadpresentation_description'] = 'Dessa inställningar aktiverar eller inaktiverar alternativ i användargränssnittet och definierar även standardvärden för dessa alternativ. Funktionen fungerar bara om Moodle-servern är tillgänglig för BigBlueButton.';
 $string['config_preuploadpresentation_editable'] = 'Uppladdning i förväg av presentation redigerbar';
 $string['config_preuploadpresentation_editable_description'] = 'Funktionen att kunna ladda upp presentationer i förväg går att redigera i användargränssnittet när rummet eller konferensen läggs till eller redigeras.';
-$string['config_recording'] = 'Inställningar för <em>"Spela in möte"</em>-funktionen';
-$string['config_recording_all_from_start_default'] = 'Spela in allt från start';
+$string['config_recording'] = 'Inspelning';
+$string['config_recording_all_from_start_default'] = 'Spela in från start';
 $string['config_recording_all_from_start_default_description'] = 'Om markerat spelas mötet in från start';
 $string['config_recording_all_from_start_editable'] = 'Spela in från start kan redigeras';
 $string['config_recording_all_from_start_editable_description'] = 'Om aktiverat inkluderar användargränssnittet ett alternativ för att aktivera och inaktivera "Spela in allt från start"-funktionen</em>.';
@@ -161,6 +165,12 @@ $string['config_recording_refresh_period_description'] = 'För att undvika att f
 $string['config_recordingready_enabled'] = 'Meddela när en inspelning är klar';
 $string['config_recordingready_enabled_description'] = 'Aktivera pluginmodulen för att skicka meddelanden när inspelningen är klar. (Det fungerar bara om skriptet <code>post_publish_recording_ready_callback</code> är aktiverat på BigBlueButton-servern)';
 $string['config_recordings'] = 'Inställningar för "Visa inspelningar"-funktionen';
+$string['config_recordings_asc_sort'] = 'Sortera inspelningarna stigande';
+$string['config_recordings_asc_sort_description'] = 'Som standard visas inspelningarna i fallande ordning. Om markerat visas de i stigande ordning.';
+$string['config_recordings_deleted_default'] = 'Inkludera inspelningar från borttagna aktiviteter aktiverat som standard';
+$string['config_recordings_deleted_default_description'] = 'Om aktiverat kommer tabellen med inspelningar inkludera inspelningar som hör till borttagna aktiviteter, om sådana finns.';
+$string['config_recordings_deleted_editable'] = 'Egenskaperna för att inkludera inspelningar från borttagna aktiviteter kan redigeras';
+$string['config_recordings_deleted_editable_description'] = 'Inkludera inspelningar från borttagna aktiviteter som standard kan redigeras när instansen läggs till eller uppdateras.';
 $string['config_recordings_description'] = 'De här inställningarna är funktionsspecifika';
 $string['config_recordings_general'] = 'Visa inspelningsinställningar';
 $string['config_recordings_general_description'] = 'De här inställningarna används enbart då inspelningar visas';
@@ -172,18 +182,18 @@ $string['config_recordings_preview_default'] = 'Förhandsgranskning är aktivera
 $string['config_recordings_preview_default_description'] = 'Om aktiverat inkluderar tabellen en förhandsgranskning av presentationen.';
 $string['config_recordings_preview_editable'] = 'Förhandsgranskningsfunktionen kan redigeras';
 $string['config_recordings_preview_editable_description'] = 'Förhandsgranskningsfunktionen kan redigeras när instansen läggs till eller uppdateras.';
-$string['config_recordings_sortorder'] = 'Sortera inspelningarna stigande';
-$string['config_recordings_sortorder_description'] = 'Som standard visas inspelningarna i fallande ordning. Om markerat visas de i stigande ordning.';
 $string['config_scheduled'] = 'Inställningar för <em>"Schemalagda sessioner"</em>';
 $string['config_scheduled_description'] = 'De här inställningarna definierar vissa aspekter av standardbeteendet för schemalagda sessioner.';
 $string['config_scheduled_pre_opening'] = 'Tillgänglig innan öppningstiden (minuter)';
 $string['config_scheduled_pre_opening_description'] = 'Tid i minuter som sessionen i förväg är tillgänglig i relation till öppningstiden för sessionen.';
-$string['config_sendnotifications'] = 'Inställningar för "Skicka meddelande"-funktionen';
-$string['config_sendnotifications_description'] = 'Dessa inställningar aktiverar eller inaktiverar UI-alternativ samt deras standardvärden.';
-$string['config_sendnotifications_enabled'] = 'Skicka meddelande aktiverat';
-$string['config_sendnotifications_enabled_description'] = 'Om aktiverat inkluderar redigeringsgränssnittet för aktiviteten alternativ för att skicka ett meddelande till användaren då aktiviteten läggs till eller uppdateras.';
 $string['config_server_url'] = 'BigBlueButton server-URL';
-$string['config_server_url_description'] = 'URL:en till din BigBlueButton-server måste avslutas med <code>/bigbluebutton/</code>. (Denna standard-URL är för en BBB-server tillhandahållen av <em>Blindside Networks</em> för att du ska kunna testa funktionen.)';
+$string['config_server_url_description'] = 'Standardautentiseringsuppgifterna gäller för en <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">gratis BigBlueButton-tjänst för Moodle (öppnas i nytt fönster)</a> som tillhandahålls av Blindside Networks med följande begränsningar:
+<ol>
+<li>Den maximala längden för varje session är 60 minuter</li>
+<li>Det maximala antalet samtidiga användare per session är 25</li>
+<li>Inspelningar upphör att gälla efter sju (7) dagar och kan inte laddas ned</li>
+<li>Deltagares webbkameror är bara synliga för moderatorn.</li>
+</ol>';
 $string['config_shared_secret'] = 'Delad hemlighet för BigBlueButton';
 $string['config_shared_secret_description'] = 'Säkerhetssaltning för din BigBlueButton-server. (Den här saltningen är för en BBB-server som tillhandahålls av Blindside Networks som du kan använda för testning.)';
 $string['config_uidelegation_enabled'] = 'UI-delegering är aktiverad';
@@ -214,7 +224,8 @@ $string['config_welcome_default'] = 'Standardmeddelande för välkomstmeddelande
 $string['config_welcome_default_description'] = 'Ersätter standardmeddelandet som har upprättats för BigBlueButton-servern. Meddelandet kan innehålla nyckelord (%%CONFNAME%%, %%DIALNUM%%, %%CONFNUM%%) som kommer att ersättas automatiskt, och även html-taggar som <b>...</b> eller <i></i>';
 $string['config_welcome_editable'] = 'Standardvälkomstmeddelandet är redigerbart för lärare';
 $string['config_welcome_editable_description'] = 'Välkomstmeddelande kan redigeras när instanser läggs till eller uppdateras';
-$string['email_body_notification_meeting_description'] = 'Beskrivning';
+$string['enablingbigbluebutton'] = 'Aktiverar BBB-aktiviteten';
+$string['enablingbigbluebuttondpainfo'] = 'För att uppfylla dina dataskyddsförpliktelser måste du, innan du aktiverar denna pluginmodul, bekräfta att du har läst och accepterat <a href = "{$a}" target = "_blank">Blindside Networks databehandlingsavtal</a>. Rådgör med dina egna sekretessexperter för råd.';
 $string['end_session_confirm'] = 'Vill du avsluta den virtuella klassrumssessionen?';
 $string['end_session_confirm_title'] = 'Vill du verkligen avsluta sessionen?';
 $string['end_session_notification'] = 'Sessionen har nu stängts.';
@@ -248,7 +259,7 @@ $string['index_disabled'] = 'inaktiverad';
 $string['index_enabled'] = 'Aktiverad';
 $string['index_ending'] = 'Avslutar det virtuella klassrummet. Vänta…';
 $string['index_error_bbtn'] = 'BigBlueButton-ID {$a} är inte korrekt';
-$string['index_error_checksum'] = 'Ett checksummefel inträffade. Säkerställ att du angav korrekt salt.';
+$string['index_error_checksum'] = 'Ett checksummefel inträffade. Säkerställ att du angav korrekt hemlighet.';
 $string['index_error_forciblyended'] = 'Kan inte ansluta till det här mötet eftersom det har avslutats manuellt.';
 $string['index_error_noinstances'] = 'Det finns inga instanser av bigbluebuttonbn';
 $string['index_error_unable_display'] = 'Det gick inte att visa mötena. Kontrollera webbadressen till BigBlueButton-servern OCH kontrollera om BigBlueButton-servern körs.';
@@ -294,16 +305,10 @@ $string['mod_form_field_instanceprofiles'] = 'Instanstyp';
 $string['mod_form_field_instanceprofiles_help'] = 'Välj typ för den här BigBlueButton-instansen.';
 $string['mod_form_field_intro'] = 'Beskrivning';
 $string['mod_form_field_intro_help'] = 'En kort beskrivning av rummet eller konferensen.';
-$string['mod_form_field_lockonjoin'] = 'Ignorera låsinställningar';
 $string['mod_form_field_muteonstart'] = 'Tyst vid start';
 $string['mod_form_field_name'] = 'Namn';
 $string['mod_form_field_nosettings'] = 'Inga inställningar kan redigeras';
-$string['mod_form_field_notification'] = 'Skicka en notis till registrerade användare';
-$string['mod_form_field_notification_created_help'] = 'Skicka ett meddelande till alla användare som är registrerade att denna aktivitet har skapats.';
-$string['mod_form_field_notification_help'] = 'Skicka ett meddelande till alla användare som är registrerade att denna aktivitet har lagts till eller uppdaterats.';
-$string['mod_form_field_notification_modified_help'] = 'Skicka ett meddelande till alla användare som är registrerade att denna aktivitet har uppdaterats';
-$string['mod_form_field_notification_msg_at'] = 'vid';
-$string['mod_form_field_openingtime'] = 'Anslut till öppen';
+$string['mod_form_field_openingtime'] = 'Öppna';
 $string['mod_form_field_participant_add'] = 'Lägg till tilldelning';
 $string['mod_form_field_participant_bbb_role_moderator'] = 'Moderator';
 $string['mod_form_field_participant_bbb_role_viewer'] = 'Åskådare';
@@ -318,6 +323,7 @@ $string['mod_form_field_participant_list_type_user'] = 'Användare';
 $string['mod_form_field_record'] = 'Sessioner kan spelas in';
 $string['mod_form_field_recordallfromstart'] = 'Spela in allt från start';
 $string['mod_form_field_recordhidebutton'] = 'Dölj inspelningsknappen';
+$string['mod_form_field_recordings_deleted'] = 'Inkludera inspelningar från borttagna aktiviteter';
 $string['mod_form_field_recordings_html'] = 'Visa tabellen i ren HTML';
 $string['mod_form_field_recordings_imported'] = 'Visa enbart importerade länkar';
 $string['mod_form_field_recordings_preview'] = 'Visa förhandsgranskning av inspelning';
@@ -329,15 +335,16 @@ $string['mod_form_field_voicebridge_format_error'] = 'Formateringsfel. Du måste
 $string['mod_form_field_voicebridge_help'] = 'Röstkonferensnummer som deltagarna anger för att delta i röstkonferensen när de använder uppringning. Ett tal mellan 1 och 9999 måste anges. Om värdet är 0 ignoreras det statiska röstbryggenumret och ett slumpmässigt nummer genereras av BigBlueButton. Ett nummer 7 kommer att föregå de fyra siffror som skrivs';
 $string['mod_form_field_voicebridge_notunique_error'] = 'Inte ett unikt värde. Detta nummer används av ett annat rum eller en annat möte.';
 $string['mod_form_field_wait'] = 'Vänta på moderator';
-$string['mod_form_field_wait_help'] = 'Tittarna måste vänta tills en moderator går in i sessionen innan de också kan göra så';
+$string['mod_form_field_wait_help'] = 'Behöver deltagarna vänta på moderator innan de släpps in i rummet?';
 $string['mod_form_field_welcome'] = 'Välkomstmeddelande';
-$string['mod_form_field_welcome_default'] = '<br>Välkommen till <strong>%%CONFNAME%%</strong>! <br><br>För hjälp med att använda BigBlueButton se dessa (korta) <a href="event:http://www.bigbluebutton.org/content/videos"><u>hjälpvideor</u></a>.<br> <br>För att använda ljud klickar du på telefonikonen (övre mitten). <strong>Vänligen använd ett headset för att undvika att orsaka bakgrundsljud för de andra.</strong>';
-$string['mod_form_field_welcome_help'] = 'Ersätter standardmeddelandet som har angivits för BigBlueButton-servern. Meddelandet kan innehålla nyckelord (%%CONFNAME%%, %%DIALNUM%%, %%CONFNUM%%) som kommer att ersättas automatiskt, samt även html-taggar som &lt;b>...&lt;/b>, &lt;br />, &lt;u>&lt;/u> or &lt;i>&lt;/i>';
+$string['mod_form_field_welcome_default'] = 'Välkommen till %%CONFNAME%%.';
+$string['mod_form_field_welcome_help'] = 'Välkomstmeddelandet visas när deltagarna kommer in i rummet. Om fältet lämnas tomt visas ett standardmeddelande som konfigurerats i webbplatsadministrationen.';
 $string['mod_form_locksettings'] = 'Lås inställningar';
 $string['modulename'] = 'BigBlueButton';
-$string['modulename_help'] = 'BigBlueButton låter dig skapa länkar till online-klassrum inifrån Moodle i realtid med BigBlueButton, ett webbkonferenssystem med öppen källkod för distansutbildning.
+$string['modulename_help'] = 'BigBlueButton är ett webbkonferenssystem baserat på öppen källkod som är utformat för onlineinlärning. Systemet stöder realtidsdelning av ljud, video, chatt, bilder, skärmdelning, en whiteboard för flera användare, breakout-rum, omröstningar och emojis.
 
-Med BigBlueButton kan du ange titel, beskrivning, kalenderpost (som anger ett datumintervall för att gå med i sessionen), grupper och information om inspelningen av online-sessionen.';
+Med BigBlueButton kan du skapa ett rum för sessioner så som live online-klasser, virtuella kontorstider eller gruppsamarbeten med externa studenter. Sessionen kan spelas in för senare uppspelning.';
+$string['modulename_link'] = 'BigBlueButton/view';
 $string['modulenameplural'] = 'BigBlueButton';
 $string['new_bigblubuttonbn_activities'] = 'BigBlueButton-aktivitet';
 $string['nosuchinstance'] = 'Ingen sådan instans {$a->entity} med id: {$a->id}';
@@ -546,5 +553,11 @@ $string['view_recording_yui_show_all'] = 'Visa alla';
 $string['view_room'] = 'Visa rum';
 $string['view_section_title_presentation'] = 'Presentationsfil';
 $string['view_section_title_recordings'] = 'Inspelningar';
-$string['view_warning_default_server'] = 'Den här Moodle-servern använder BigBlueButton-testservern som levereras förkonfigurerad som standard. Den bör bytas ut i produktionsmiljöer.';
+$string['view_warning_default_server'] = 'Den här webbplatsen använder en <a href="https://bigbluebutton.org/free-bigbluebutton-service-for-moodle/" target="_blank">gratis BigBlueButton-tjänst för Moodle (öppnas i nytt fönster)</a> som tillhandahålls av Blindside Networks med begränsningar enligt följande:
+<ol>
+<li>Den maximala längden för varje session är 60 minuter</li>
+<li>Det maximala antalet samtidiga användare per session är 25</li>
+<li>Inspelningarna upphör att gälla efter sju (7) dagar och kan inte laddas ned</li>
+<li>Deltagarnas kameror är bara synliga för moderatorn.</li>
+</ol>';
 $string['waitformoderator'] = 'Väntar på att en moderator ska ansluta.';

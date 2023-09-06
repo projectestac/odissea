@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'el', version '3.11'.
+ * Strings for component 'cohort', language 'el', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -74,7 +74,7 @@ $string['potusersmatching'] = 'Πιθανοί χρήστες που ταιριά
 $string['preview'] = 'Προεπισκόπηση';
 $string['privacy:metadata:cohort_members'] = 'Πληροφορίες σχετικά με το σύνολο χρηστών του χρήστη.';
 $string['privacy:metadata:cohort_members:cohortid'] = 'Το αναγνωριστικό του συνόλου χρηστών';
-$string['privacy:metadata:cohort_members:timeadded'] = 'Η χρονοσφραγίδα που δείχνει πότε ο χρήστης προστέθηκε στο σύνολο χρηστών';
+$string['privacy:metadata:cohort_members:timeadded'] = 'Η χρονοσήμανση που δείχνει πότε ο χρήστης προστέθηκε στο σύνολο χρηστών';
 $string['privacy:metadata:cohort_members:userid'] = 'Το αναγνωριστικό του χρήστη που συσχετίζεται με το σύνολο χρηστών';
 $string['removeuserwarning'] = 'Η αφαίρεση χρηστών από ένα σύνολο χρηστών μπορεί να έχει ως αποτέλεσμα την ακύρωση εγγραφής των χρηστών από πολλαπλά μαθήματα και περιλαμβάνει διαγραφή ρυθμίσεων χρήστη, βαθμών, συμμετοχής σε ομάδες συμμετεχόντων μαθήματος και άλλες πληροφορίες χρήστη από τα επηρεαζόμενα μαθήματα.';
 $string['search'] = 'Αναζήτηση';

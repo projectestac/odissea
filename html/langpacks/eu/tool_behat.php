@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'eu', version '3.11'.
+ * Strings for component 'tool_behat', language 'eu', version '4.1'.
  *
  * @package     tool_behat
  * @category    string
@@ -27,14 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'Kudeaketa erreminta honek garatzaileei eta probatzaileei Moodleko funtzionalitateak zehazten dituzten .feature fitxategiak sortzen eta automatikoki exekutatzen laguntzen die. .feature fitxategietan erabiltzeko eskuragarri dauden urratsen definizioak behean zerrendatzen dira.';
 $string['allavailablesteps'] = 'Eskuragarri dauden urratsen definizio guztiak';
-$string['errorapproot'] = '$CFG->behat_ionic_dirroot ez da zuzentzen Moodle aplikazioaren garatzaile-instalazio baliagarri batera.';
 $string['errorbehatcommand'] = 'Errorea behat CLI komandoa exekutatzean. Saiatu "{$a} --help" CLI bidez eskuz exekutatzen arazoaren inguruan gehiago jakiteko.';
 $string['errorcomposer'] = 'Composer-eko menpekotasunak ez daude instalatuta.';
 $string['errordataroot'] = '$CFG->behat_dataroot ez dago zehaztuta edo baliogabea da.';
 $string['errorsetconfig'] = 'config.php fitxategian $CFG->behat_dataroot, $CFG->behat_prefix eta $CFG->behat_wwwroot zehaztu behar dira.';
-$string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix eta $CFG->behat_wwwroot balioek $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot eta $CFG->phpunit_prefix balioekiko ezberdinak izan behar dute.';
+$string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix eta $CFG->behat_wwwroot balioek $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot eta $CFG->phpunit_prefix balioekiko ezberdinak izan behar dute.<br>Bestela, $CFG->behat_prefix berbera bada, $CFG->behat_dbname edo $CFG->behat_dbhost  $CFG->phpunit_dbname-ekiko desberdinak izan behar dira eta $CFG->phpunit_dbhost zein $CFG->dbname eta $CFG->dbhost-ekiko desberdinak.';
 $string['fieldvalueargument'] = 'Eremu-balioetako argumentuak';
-$string['fieldvalueargument_help'] = 'Argumentu hau eremu-balio batekin osatu behar da. Eremu-mota asko dago, batzuk sinpleak (laukitxoak, aukera-zerrendak edo testu-eremuak bezalakoak) eta konplexuak besteak (datu-hautatzaileak bezalakoak). Ikusi garatzaileentzako dokumentazioa <a href="http://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a> espero diren eremu-balioen zehaztasun gehiagora ikusteko.';
+$string['fieldvalueargument_help'] = 'Argumentu hau eremu-balio batekin osatu behar da. Eremu-mota asko dago, batzuk sinpleak (laukitxoak, aukera-zerrendak edo testu-eremuak bezalakoak) eta konplexuak besteak (datu-hautatzaileak bezalakoak). Ikusi garatzaileentzako dokumentazioa <a href="https://moodledev.io/general/development/tools/behat" target="_blank">Acceptance_testing</a> espero diren eremu-balioen zehaztasun gehiagora ikusteko.';
 $string['giveninfo'] = 'Emandakoa. Ingurunea konfiguratzeko prozesuak.';
 $string['infoheading'] = 'Informazioa';
 $string['installinfo'] = 'Irakurri {$a} instalazio eta proben exekuzioaren informazioa izateko';

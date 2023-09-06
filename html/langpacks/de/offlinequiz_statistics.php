@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_statistics', language 'de', version '3.11'.
+ * Strings for component 'offlinequiz_statistics', language 'de', version '4.1'.
  *
  * @package     offlinequiz_statistics
  * @category    string
@@ -29,7 +29,7 @@ $string['actualresponse'] = 'Aktuelle Antwort';
 $string['allattempts'] = 'Alle Ergebnisse';
 $string['allattemptsavg'] = 'Durchschnittliche erreichte Bewertung';
 $string['allattemptscount'] = 'Gesamtzahl an vollständig bewerteten Ergebnissen';
-$string['allgroups'] = 'Statistik über alle Offline-Test-Gruppen';
+$string['allgroups'] = 'Alle Gruppen';
 $string['analysisofresponses'] = 'Antwortanalyse';
 $string['analysisofresponsesfor'] = 'Antwortanalyse für {$a}';
 $string['attempts'] = 'Ergebnisse';
@@ -48,7 +48,7 @@ $string['differentquestions'] = 'Ihre Offline-Test-Gruppen enthalten unterschied
 $string['differentsumgrades'] = 'Ihre Offline-Test-Gruppen haben unterschiedliche maximale Bewertungen ({$a}).
  Deshalb können mehrere Werte, wie z.B. "Durchschnittliche erreichte Bewertung", "Median" und "Standardabweichung" für den Gesamttest nicht berechnet werden. Die Berechnung kann nur auf Basis
 der einzelnen Gruppen erfolgen. Bitte wählen Sie eine Gruppe aus!';
-$string['discrimination_index'] = 'Discrimination Index';
+$string['discrimination_index'] = 'Diskriminationsindex';
 $string['discriminative_efficiency'] = 'Unterscheidungs-Effizienz';
 $string['downloadeverything'] = 'Bericht herunterladen als';
 $string['duration'] = 'Geöffnet für';
@@ -90,7 +90,7 @@ $string['positions'] = 'Position(en)';
 $string['preferencespage'] = 'Einstellungen für diese Seite';
 $string['preferencessave'] = 'Einstellungen speichern';
 $string['privacy:metadata'] = 'Dieses Plugin speichert keine personenbezogenen Daten.';
-$string['questionandanswerstats'] = 'Fragen + Antworten';
+$string['questionandanswerstats'] = 'Fragen und Antworten';
 $string['questionandanswerstatsheader'] = 'Fragen- und Antwortanalyse';
 $string['questioninformation'] = 'Information zur Frage';
 $string['questionname'] = 'Frage';
@@ -111,12 +111,12 @@ $string['standarderror'] = 'Standardfehler';
 $string['statistics'] = 'Statistik';
 $string['statistics:componentname'] = 'Teststatistik-Report';
 $string['statistics:view'] = 'Ansehen des Statistik-Reports';
-$string['statisticsforgroup'] = 'Statistik für Gruppe';
+$string['statisticsforgroup'] = 'Gruppe';
 $string['statisticshelp'] = 'Hilfe zu Offline-Test Statistiken';
 $string['statisticsreport'] = 'Statistik-Report';
 $string['statisticsreportgraph'] = 'Statistik für Fragepositionen';
 $string['statsfor'] = 'Statistik (für {$a})';
 $string['statsoverview'] = 'Übersicht';
-$string['statsoverviewheader'] = 'Übersicht';
+$string['statsoverviewheader'] = 'Test-Informationen';
 $string['worstgrade'] = 'Niedrigste erreichte Bewertung';
 $string['wrong'] = 'Falsch beantwortet';

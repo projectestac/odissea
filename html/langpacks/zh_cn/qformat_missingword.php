@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'zh_cn', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'zh_cn', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,4 +30,5 @@ $string['endanswernotfound'] = '在导入文件的内容中无法找到必需的
 $string['noanswerfound'] = '在题目中没有找到答案';
 $string['pluginname'] = '缺失字格式';
 $string['pluginname_help'] = '缺失字格式可以使问题通过文本文件来导入。';
+$string['pluginname_link'] = 'qformat/missingword';
 $string['privacy:metadata'] = '选词填空题格式插件不存储任何个人数据。';

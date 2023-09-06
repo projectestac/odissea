@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ko', version '3.11'.
+ * Strings for component 'choice', language 'ko', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -58,6 +58,8 @@ $string['eventreportviewed'] = '선택 보고서 봄';
 $string['expired'] = '이 활동은 {$a}에 종료되었습니다.';
 $string['full'] = '(마감됨)';
 $string['havetologin'] = '설문에 응하려면 로그인해야 합니다.';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = '한도';
 $string['limita'] = '마감: {$a}';
 $string['limitanswers'] = '응답 인원 제한';
@@ -71,6 +73,7 @@ $string['limitanswers_help'] = '<p>이 옵션은 개별적 항목을 선택할 �
 $string['limitno'] = '제한 {no}';
 $string['modulename'] = '간편설문';
 $string['modulename_help'] = '간편 설문 모듈은 선생님들이 질문을 작성하고, 복수의 답안을 제시하고 응답을 얻을 수 있게끔 도와준다.';
+$string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = '간편설문';
 $string['moveselectedusersto'] = '선택한 사용자들을 다음으로 이동 ...';
 $string['mustchooseone'] = '저장하기 전에 응답을 하여야 합니다. 저장되지 않았습니다.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ja', version '3.11'.
+ * Strings for component 'plugin', language 'ja', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -67,6 +67,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'このタイプのプラグインはインストールされていません。';
 $string['notdownloadable'] = 'パッケージをダウンロードできません。';
 $string['notdownloadable_help'] = 'アップデートのZIPパッケージを自動的にダウンロードできません。';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = 'ノート';
 $string['notsupported'] = 'Moodleバージョン {$a} に互換性のないプラグイン';
 $string['notwritable'] = 'プラグインファイル書き込み不可';
@@ -125,6 +126,8 @@ $string['type_calendartype'] = 'カレンダータイプ';
 $string['type_calendartype_plural'] = 'カレンダータイプ';
 $string['type_contentbank'] = 'コンテンツバンク';
 $string['type_contentbank_plural'] = 'コンテンツバンクプラグイン';
+$string['type_contenttype'] = 'コンテンツバンク';
+$string['type_contenttype_plural'] = 'コンテンツバンクプラグイン';
 $string['type_coursereport'] = 'コースレポート';
 $string['type_coursereport_plural'] = 'コースレポート';
 $string['type_customfield'] = 'カスタムフィールド';
@@ -173,6 +176,8 @@ $string['type_portfolio'] = 'ポートフォリオ';
 $string['type_portfolio_plural'] = 'ポートフォリオ';
 $string['type_profilefield'] = 'プロファイルフィールドタイプ';
 $string['type_profilefield_plural'] = 'プロファイルフィールドタイプ';
+$string['type_qbank'] = '問題バンクプラグイン';
+$string['type_qbank_plural'] = '問題バンクプラグイン';
 $string['type_qbehaviour'] = '問題動作';
 $string['type_qbehaviour_plural'] = '問題動作';
 $string['type_qformat'] = '問題インポート/エクスポートフォーマット';
@@ -222,6 +227,7 @@ $string['validationmsg_maturity'] = '宣言済み成熟レベル';
 $string['validationmsg_maturity_help'] = 'プラグインに成熟レベルを宣言することができます。メインテナがプラグインを安定していると考える場合、宣言済み成熟レベルでは「MATURITY_STABLE」を読み込みます。他の成熟レベル (alphaまたはbeta等) は不安定だとみなされ、警告が表示されます。';
 $string['validationmsg_missingcomponent'] = 'プラグインのコンポーネント名が宣言されていません。';
 $string['validationmsg_missingcomponent_help'] = 'すべてのプラグインはversion.phpファイル内の「$plugin->component」変数経由で完全なコンポーネント名を提供する必要があります。';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = '英語言語ファイル名の不一致';
 $string['validationmsg_missingexpectedlangenfile_info'] = 'プラグインタイプに英語言語ファイル「 {$a} 」を提供する必要があります。';
 $string['validationmsg_missinglangenfile'] = '英語言語ファイルがありません。';

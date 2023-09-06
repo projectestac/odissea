@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ko', version '3.11'.
+ * Strings for component 'scorm', language 'ko', version '4.1'.
  *
  * @package     scorm
  * @category    string
@@ -103,7 +103,6 @@ $string['displaydesc'] = '새 창에 스콤 패키지를 표시할 것인지';
 $string['displaysettings'] = '디스플레이 설정';
 $string['dnduploadscorm'] = '새 SCORM 패키지 추가';
 $string['domxml'] = 'DOMXML 외부 라이브러리';
-$string['duedate'] = '마감일';
 $string['element'] = '요소';
 $string['enter'] = '입력';
 $string['entercourse'] = '스콤 강좌 입장';
@@ -168,6 +167,8 @@ $string['hidetocdesc'] = '이 설정은 스콤 플레이어에서 목차가 어�
 $string['highestattempt'] = '최고 시도';
 $string['identifier'] = '질문 식별자';
 $string['incomplete'] = '미완성됨';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = '정보';
 $string['interactions'] = '상호작용';
 $string['invalidactivity'] = '스콤 활동이 틀립니다.';
@@ -195,6 +196,7 @@ $string['missingparam'] = '필요항목이 없거나 잘못 됨';
 $string['mode'] = '모드';
 $string['modulename'] = '스콤 패키지';
 $string['modulename_help'] = 'SCORM 과 AICC는 웹 기반 콘텐츠의 상호 운영, 접근성, 재활용성을 가능하게 하는 사양의 모음입니다. SCORM/AICC 모듈은 강좌에 SCORM/AICC패키지를 포함할 때 사용합니다.';
+$string['modulename_link'] = 'mod/scorm/view';
 $string['modulenameplural'] = '스콤 패키지';
 $string['nav'] = '찾아가기 보기';
 $string['navigation'] = '찾아가기';

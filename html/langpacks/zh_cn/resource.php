@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'zh_cn', version '3.11'.
+ * Strings for component 'resource', language 'zh_cn', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -53,6 +53,7 @@ $string['displayselect_help'] = '此设置，文件的类型，及浏览器是�
 * 在框架中 - 在导航栏和文件描述下方的框架里显示文件
 * 新窗口 - 在有菜单和地址栏的新窗口中显示文件
 ';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = '选择显示类型，但并不是所有类型都适合所有文件。';
 $string['dnduploadresource'] = '创建文件资源';
 $string['encryptedcode'] = '加密代码';
@@ -66,10 +67,12 @@ $string['indicator:cognitivedepth'] = '文件资源认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 文件资源中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '文件认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到文件资源提供的认知参与百分比（级别=无视图，视图）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '文件资源社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在文件资源中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = '文件社交';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到文件资源提供的社会参与度的百分比（级别=无参与，仅参与者一人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = '移植的旧课程文件';
 $string['legacyfilesactive'] = '活动的';
 $string['legacyfilesdone'] = '已结束';
@@ -84,6 +87,7 @@ $string['modulename_help'] = '文件模块允许教师提供一个文件作为�
 * 分享课堂上的演示
 * 包括一个迷你网站作为课程资源
 * 提供某些软件程序的草稿文件(如Photoshop .psd)，这样学生就可以编辑并提交他们进行评估';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = '文件';
 $string['notmigrated'] = '抱歉，传统的资源类型（{$a}）还不能移植。';
 $string['optionsheader'] = '选项';

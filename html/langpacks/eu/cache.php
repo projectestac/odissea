@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'eu', version '3.11'.
+ * Strings for component 'cache', language 'eu', version '4.1'.
  *
  * @package     cache
  * @category    string
@@ -40,6 +40,8 @@ $string['cachedef_calendar_subscriptions'] = 'Egutegiaren harpidetzak';
 $string['cachedef_capabilities'] = 'Sistemako gaitasunen zerrenda';
 $string['cachedef_completion'] = 'Jarduera-osaketaren egoera';
 $string['cachedef_config'] = 'Konfigurazioaren ezarpenak';
+$string['cachedef_contentbank_allowed_categories'] = 'Uneko erabiltzailearentzat baimendutako eduki-bankuko ikastaro-kategoriak';
+$string['cachedef_contentbank_allowed_courses'] = 'Uneko erabiltzailearentzat baimendutako eduki-bankuko ikastaroak';
 $string['cachedef_contentbank_context_extensions'] = 'Baimendutako luzapenak eta eurak sostengatutako pluginak eduki-banku baten testuinguruan';
 $string['cachedef_contentbank_enabled_extensions'] = 'Baimendutako luzapenak eta eurak sostengatutako pluginak eduki-banku batean';
 $string['cachedef_contextwithinsights'] = 'Pertzepzioen testuingurua';
@@ -50,10 +52,14 @@ $string['cachedef_coursecatrecords'] = 'Ikastaro-kategorien erregistroak';
 $string['cachedef_coursecattree'] = 'Ikastaro-kategorien zuhaitza';
 $string['cachedef_coursecompletion'] = 'Ikastaro-osaketaren egoera';
 $string['cachedef_coursecontacts'] = 'Ikastaroko kontaktu-zerrenda';
+$string['cachedef_courseeditorstate'] = 'Saioaren ikastaroko egoera-cacheak ikastaroko frontend-eko aldaketak antzemateko gakoak gordetzen ditu.';
 $string['cachedef_coursemodinfo'] = 'Ikastaro bakoitzeko modulu eta gaien inguruan pilatutako informazioa';
+$string['cachedef_coursesectionspreferences'] = 'Ikastaro-atalen hobespenak';
 $string['cachedef_databasemeta'] = 'Datu-basearen metainformazioa';
+$string['cachedef_deprecatedcapabilities'] = 'Sisteman zaharkitutako baimenen zerrenda';
 $string['cachedef_eventinvalidation'] = 'Ekitaldi-baliogabetzea';
 $string['cachedef_externalbadges'] = 'Erabiltzaile jakin batentzako kanpoko dominak';
+$string['cachedef_file_imageinfo'] = 'Fitxategiko irudiaren informazioa, esaterako dimentsioak';
 $string['cachedef_fontawesomeiconmapping'] = 'Font awesome-erako ikonoen lotura';
 $string['cachedef_grade_categories'] = 'Kalifikazio-kategorien kontsultak';
 $string['cachedef_grade_letters'] = 'Kalifikazio-letren kontsultak';
@@ -77,6 +83,7 @@ $string['cachedef_postprocessedcss'] = 'Ondoren prozesatutako CSSa';
 $string['cachedef_presignup'] = 'Erregistratu gabeko erabiltzaile baten izena eman aurretiko datuak';
 $string['cachedef_questiondata'] = 'Galdera-definizioak';
 $string['cachedef_recommendation_favourite_course_content_items'] = 'Ikastaroko eduki-elementuen gomendioak';
+$string['cachedef_reportbuilder_allowed_reports'] = 'Erabiltzaileentzat baimendutako txostenak audientziaren arabera';
 $string['cachedef_repositories'] = 'Biltegi-instantzien datuak';
 $string['cachedef_roledefs'] = 'Rolen definizioak';
 $string['cachedef_string'] = 'Hizkuntza-kateen cachea';
@@ -91,6 +98,7 @@ $string['cachedef_userselections'] = 'Erabiltzaile-aukerak Moodle osoan zehar ir
 $string['cachedef_yuimodules'] = 'YUI moduluen definizioak';
 $string['cachelock_file_default'] = 'Lehenetsitako fitxategi-blokeoa';
 $string['cachestores'] = 'Cache-biltegiak';
+$string['cacheusage'] = 'Cachearen erabilera';
 $string['caching'] = 'Cacheak';
 $string['canuselocalstore'] = 'Biltegi lokala erabili dezake';
 $string['component'] = 'Osagaia';
@@ -113,6 +121,7 @@ $string['deletestore'] = 'Ezabatu biltegia';
 $string['deletestoreconfirmation'] = 'Ziur zaude "{$a}" biltegia ezabatu nahi duzula?';
 $string['deletestorehasmappings'] = 'Ezin duzu biltegia ezabatu loturak dituelako. Mesedez, ezabatu lotura guztiak biltegia ezabatu baino lehen.';
 $string['deletestoresuccess'] = 'Ondo ezabatu da cache-biltegia';
+$string['editdefinitionmapping'] = 'Editatu definizioen loturak';
 $string['editdefinitionmappings'] = '{$a} definizio-biltegiaren loturak';
 $string['editdefinitionsharing'] = 'Editatu {$a}(r)entzako partekatutako definizioak';
 $string['editmappings'] = 'Editatu loturak';
@@ -155,8 +164,6 @@ $string['pluginsummaries'] = 'Instalatutako cache-biltegiak';
 $string['privacy:metadata:cachestore'] = 'Cache azpisistemak datuak behin behinean gordetzen ditu Moodleko beste osagaien ordez. Datu hauek ez dira errazak identifikatzen, eta bizitza oso motza dute. Moodleko beste kokapenetan gordetako cache gisa funtzionatzen du, eta beraz Moodleko osagai horiek kudeatu beharko lituzkete.';
 $string['purge'] = 'Garbitu';
 $string['purgeagain'] = 'Garbitu berriro';
-$string['purgedefinitionsuccess'] = 'Eskatutako definizioak ondo garbitu dira.';
-$string['purgestoresuccess'] = 'Eskatutako biltegia ondo garbitu dira.';
 $string['purgexdefinitionsuccess'] = '"{$a->name}" cache ({$a->component}/{$a->area}) ondo garbitu da.';
 $string['purgexstoresuccess'] = '"{$a->store}" biltegia ondo garbitu da.';
 $string['requestcount'] = 'Probatu {$a} eskaerekin';
@@ -204,5 +211,14 @@ $string['tested'] = 'Probatu da';
 $string['testperformance'] = 'Probatu errendimendua';
 $string['unsupportedmode'] = 'Onartzen ez den modua';
 $string['untestable'] = 'Ezin da probatu';
+$string['updatedefinitionmapping'] = 'Editatu definizioen loturak';
+$string['updatedefinitionsharing'] = 'Editatu definizioen partekatzeak';
+$string['usage_items'] = 'Elementuak';
+$string['usage_mean'] = 'Batez besteko elementuaren tamaina';
+$string['usage_realtotal'] = 'Oraingo erabilera (ezaguna bada)';
+$string['usage_samples'] = 'Lagineko elementuak cache bakoitzeko';
+$string['usage_sd'] = 'Desb. est.';
+$string['usage_total'] = 'Guztirakoaren balioespena';
+$string['usage_totalmargin'] = 'Errore-tartea (%95)';
 $string['userinputsharingkey'] = 'Partekatzeko gako pertsonalizatua';
 $string['userinputsharingkey_help'] = 'Idatzihemen zure gako pribatua. Beste gune batzuetan datuak partekatuko dituzten beste biltegi batzuk konfiguratzen dituzunean bertan gako zehatz hau sartu beharko duzu.';

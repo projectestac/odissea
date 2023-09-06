@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'sv', version '3.11'.
+ * Strings for component 'backup', language 'sv', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -73,6 +73,7 @@ $string['automatedsetup'] = 'Inställningar för automatisk säkerhetskopiering'
 $string['automatedstorage'] = 'Plats för automatiska säkerhetskopior';
 $string['automatedstoragehelp'] = 'Välj vilken plats som automatiska säkerhetskopior ska lagras på.';
 $string['backupactivity'] = 'Säkerhetskopiera aktivitet: {$a}';
+$string['backupautoactivitiesdescription'] = 'Anger standardinställningen för inkludering av aktiviteter i en säkerhetskopiering. Denna inställning måste vara aktiverad för att papperskorgen ska fungera.';
 $string['backupcourse'] = 'Säkerhetskopiera kurs: {$a}';
 $string['backupcoursedetails'] = 'Kursdetaljer';
 $string['backupcoursesection'] = 'Sektion: {$a}';
@@ -210,6 +211,7 @@ $string['extractingbackupfileto'] = 'Extraherar säkerhetskopia till: {$a}';
 $string['failed'] = 'Säkerhetskopieringen misslyckades';
 $string['filealiasesrestorefailures'] = 'Fel vid återställning av alias';
 $string['filealiasesrestorefailures_help'] = 'Alias är symboliska länkar till andra filer, inklusive de som lagras i externa databaser. I vissa fall kan Moodle inte återställa dem - till exempel när du återställer säkerhetskopian på en annan plats eller när den refererade filen finns inte. Fler detaljer och den faktiska orsaken till felet finns i loggfilen för återställningen.';
+$string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = 'Vissa alias som ingår i säkerhetskopian kunde inte återställas. Följande lista innehåller deras förväntade plats och källfilen de hänvisar till på dess ursprungliga plats.';
 $string['filename'] = 'Filnamn';
 $string['filereferencesincluded'] = 'Filreferenser till externt innehåll inkluderas i säkerhetskopian. Dessa kommer inte fungera om de återställs på en annan webbplats än denna.';
@@ -389,7 +391,7 @@ $string['setting_overwrite_course_fullname'] = 'Skriv över kursnamnet';
 $string['setting_overwrite_course_shortname'] = 'Skriv över kursens kortnamn';
 $string['setting_overwrite_course_startdate'] = 'Skriv över kursens startdatum';
 $string['showtypes'] = 'Visa typalternativ';
-$string['sitecourseformatwarning'] = 'Detta är en säkerhetskopia av en startsida. <strong>OBS!</strong> Denna kan endast återställas på startsidan.';
+$string['sitecourseformatwarning'] = 'Detta är en säkerhetskopia av en startsida. OBS! Dessa kan endast återställas på startsidan.';
 $string['skiphidden'] = 'Hoppa över dolda kurser';
 $string['skiphiddenhelp'] = 'Välj om du vill hoppa över dolda kurser, eller ej';
 $string['skipmodifdays'] = 'Hoppa över kurser som inte ändrats sedan';

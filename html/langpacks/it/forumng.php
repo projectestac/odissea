@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumng', language 'it', version '3.11'.
+ * Strings for component 'forumng', language 'it', version '4.1'.
  *
  * @package     forumng
  * @category    string
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['forumtype_link'] = 'mod/forumng/forumtypes';
 $string['subscribelong'] = 'Sottoscrivi il forum';

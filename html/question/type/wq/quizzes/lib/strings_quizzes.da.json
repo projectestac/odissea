@@ -586,8 +586,8 @@
 		
 		"evaluate_keyword": "evaluer",
 		
-		"home_getting_started_welcome_header_text": "Velkommen til WirisQuizzes 4.7.0",
-        "home_getting_started_welcome_description_text": "Hej, vi har føjet et kom godt i gang-afsnit til vores menu for at hjælpe dig med at finde flere oplysninger om vores WirisQuizzes ved at få adgang til vores dokumentation, træning og nyheder.",
+		"home_getting_started_welcome_header_text": "Introduktion til WirisQuizzes 4.8.0: Nu med håndskrevne grafsvar",
+        "home_getting_started_welcome_description_text": "Vi er glade for at introducere en ny svartype, der giver dine elever mulighed for at svare ved at skrive en graf i hånden. For at lære mere om denne funktion henvises der til vores produktbemærkninger og dokumentation. Vi håber, at du og dine elever nyder denne nye tilføjelse til WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Udgivelsesbemærkninger",
         "home_getting_give_us_feedback_button_text": "Giv os din feedback",
         "home_getting_started_create_question_header_text": "Sådan opretter du dit første spørgsmål",
@@ -603,7 +603,15 @@
         "home_getting_started_contact_us_button_text": "Kontakt os",
         "home_getting_started_visit_our_webpage_button_text": "Besøg vores websted",
         "home_getting_started_report_an_issue_button_text": "Rapportér et problem",
-		"home_getting_started_list_button_text": "Kom godt i gang"
+		"home_getting_started_list_button_text": "Kom godt i gang",
+
+		"quizzes_studio_home_answer_type_sketch_label": "Skitse",
+		"quizzes_studio_home_initial_content_description_sketch": "Det er sådan graf-redigeringsprogrammet vises for dine elever, når de prøver spørgsmålet. Husk, at elevernes værktøjslinje kun vil have knapper til at skrive i hånden og til at slette. Brug funktionen 'test dette spørgsmål' for at se, hvordan det vil se ud.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_1": "Indtast det rigtige svar på dette spørgsmål. Dine elever vil bruge håndskriftsværktøjet til at skitsere deres løsning, så vi har indstillet en minimal tolerance for lidt unøjagtige svar. Du kan justere dette ved at klikke på 'valideringsmuligheder'.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Brug knappen 'test dette spørgsmål' for at se, hvordan det vises for eleverne.",
+		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Skitser lig med hinanden",
+		"quizzes_demo_sketch_title_menu" : "Skitse",
+		"home_getting_started_documentation_button_text" : "Dokumentation"
 	}
 }
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'gl', version '3.11'.
+ * Strings for component 'block', language 'gl', version '4.1'.
  *
  * @package     block
  * @category    string
@@ -25,11 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = 'Mover isto á doca (bloque ancorado)';
 $string['anypagematchingtheabove'] = 'Calquera páxina coincidente coa anterior';
 $string['appearsinsubcontexts'] = 'Aparece en subcontextos';
 $string['assignrolesinblock'] = 'Asignar roles no bloque {$a}';
-$string['blocksdrawertoggle'] = 'Agochar/amosar o caixón de bloques';
+$string['blocksdrawertoggle'] = 'Agochar/amosar o caixón do bloque';
 $string['blocksettings'] = 'Axustes do bloque';
 $string['bracketfirst'] = '{$a} (primeiro)';
 $string['bracketlast'] = '{$a} (último)';
@@ -37,18 +36,18 @@ $string['configureblock'] = 'Configurar o bloque {$a}';
 $string['contexts'] = 'Contextos da páxina';
 $string['contexts_help'] = 'Os contextos son tipos máis específicos de páxinas onde este bloque pode ser presentado dentro da localización orixinal do bloque. Aquí disporá de diferentes opcións dependendo da localización orixinal do bloque e a localización actual de vostede. Por exemplo, pode restrinxir un bloque para que unicamente apareza nas páxinas de foros dun curso engadindo o bloque ao curso (facendo que apareza en todas as sub-páxinas), e após entrando no foro e editando os axustes do bloque de novo para restrinxir a súa vista só á páxinas de foros.';
 $string['createdat'] = 'Localización orixinal do bloque';
-$string['createdat_help'] = 'A localización orixinal onde se creou o bloque. Os axustes do bloque poden facer que apareza noutras localizacións (contextos) dentro da localización orixinal. Por exemplo, un bloque creado nunha páxina de curso podería ser presentado nas actividades dentro dese curso. Un bloque creado na páxina de portada pode ser presentado en todo o sitio.';
+$string['createdat_help'] = 'A localización orixinal onde se creou o bloque. Os axustes do bloque poden facer que apareza noutras localizacións (contextos) dentro da localización orixinal. Por exemplo, un bloque creado nunha páxina de curso podería ser presentado nas actividades dentro dese curso. Un bloque creado na páxina de de inicio do sitio pode ser presentado en todo o sitio.';
 $string['defaultregion'] = 'Área predeterminada';
 $string['defaultregion_help'] = 'Os temas poden definir unha ou máis áreas de bloques co nome onde se pode presentar os bloques. Este axuste define en cales destas quere que apareza este bloque de xeito predeterminado. A área pode ser anulada en páxinas específicas se for preciso.';
 $string['defaultweight'] = 'Peso predeterminado';
 $string['defaultweight_help'] = 'O peso predeterminado permite escoller aproximadamente onde quere que apareza o bloque na área escollida, ben enriba de todo ou no fondo. A localización final calculase a partir de todos os bloques nesa área (por exemplo, só un bloque pode estar arriba de todo). Este valor pode ser anulado en páxinas específicas se for preciso.';
 $string['deleteblock'] = 'Eliminar o bloque {$a}';
 $string['deleteblockcheck'] = 'Confirma que quere eliminar o bloque titulado {$a}?';
+$string['deleteblockinprogress'] = 'Estase en proceso de eliminar o bloque {$a}...';
 $string['deleteblockwarning'] = '<p>Está a piques de eliminar un bloque que aparece noutro lugar.</p><p>Localización orixinal do bloque: {$a->location}<br />Amosar en tipos de páxinas: {$a->pagetype}</p><p>Confirma que quere continuar?</p>';
 $string['deletecheck'] = 'Eliminar o bloque {$a}?';
-$string['dockblock'] = 'Ancorar o bloque {$a}';
+$string['deletecheck_modal'] = 'Eliminar o bloque?';
 $string['hideblock'] = 'Agochar o bloque {$a}';
-$string['hidedockpanel'] = 'Agochar o panel da doca';
 $string['hidepanel'] = 'Agochar o panel';
 $string['moveblock'] = 'Mover o bloque {$a}';
 $string['moveblockafter'] = 'Mover o bloque após o bloque {$a}';
@@ -69,13 +68,10 @@ $string['showblock'] = 'Amosar o bloque {$a}';
 $string['showoncontextandsubs'] = 'Presentar en «{$a}» e en calquera páxina dentro dela';
 $string['showoncontextonly'] = 'Presentar só en «{$a}»';
 $string['showonentiresite'] = 'Presentar en todo o sitio';
-$string['showonfrontpageandsubs'] = 'Presentar na páxina de portada e en calquera páxina engadida a esta';
-$string['showonfrontpageonly'] = 'Presentar só na páxina de portada';
+$string['showonfrontpageandsubs'] = 'Presentar na páxina de inicio do sitio e en calquera páxina engadida a esta';
+$string['showonfrontpageonly'] = 'Presentar só na páxina de inicio do sitio';
 $string['subpages'] = 'Seleccionar páxinas';
 $string['thisspecificpage'] = 'Esta páxina específica';
-$string['undockall'] = 'Desancorar todo';
-$string['undockblock'] = 'Desancorar o bloque {$a}';
-$string['undockitem'] = 'Desancorar este elemento';
 $string['visible'] = 'Visíbel';
 $string['weight'] = 'Peso';
 $string['wherethisblockappears'] = 'Onde aparece este bloque';

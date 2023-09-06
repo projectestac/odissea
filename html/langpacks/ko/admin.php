@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ko', version '3.11'.
+ * Strings for component 'admin', language 'ko', version '4.1'.
  *
  * @package     admin
  * @category    string
@@ -46,7 +46,6 @@ $string['allcountrycodes'] = '모든 국가 코드';
 $string['allowattachments'] = '첨부 허용';
 $string['allowbeforeblock'] = '허용 IP 우선 처리';
 $string['allowbeforeblockdesc'] = '일반적으로 차단 IP 목록이 우선 적용되지만, 이 기능을 켜 놓으면 허용된 IP 목록을 먼저 처리합니다.';
-$string['allowblockstodock'] = '블록이 도킹영역을 사용하는 것을 허용';
 $string['allowcategorythemes'] = '범주별 테마 허용';
 $string['allowcohortthemes'] = '코호트 테마 허용';
 $string['allowcoursethemes'] = '강좌별 테마 허용';
@@ -76,7 +75,6 @@ $string['authpreventaccountcreation_help'] = '사용자 인증 시, 아직 계�
 $string['authsettings'] = '인증 관리';
 $string['autolang'] = '언어 자동 인식';
 $string['autologinguests'] = '자동 로그인 손님';
-$string['availablelicenses'] = '가능 사용허가 수준';
 $string['availableto'] = '사용 대상';
 $string['backgroundcolour'] = '투명 색상';
 $string['backup_shortname'] = '백업 파일이름으로 강좌이름 사용';
@@ -140,6 +138,7 @@ $string['cliupgradefinished'] = '명령어 줄 판올림이 성공적으로 완�
 $string['cliupgradenoneed'] = '설치 버전 {$a} 에 대해  업그레이드가 필요하지 않습니다. 감사합니다!';
 $string['cliupgradepending'] = '업그레이드 중';
 $string['cliyesnoprompt'] = 'y(예를 의미) 혹은 n(아니오를 의미)을 입력';
+$string['close'] = '닫기';
 $string['commentsperpage'] = '페이지마다 표시될 덧글';
 $string['commonactivitysettings'] = '일반 설정';
 $string['commonfiltersettings'] = '공용 필터 설정';
@@ -150,7 +149,6 @@ $string['condifmodeditdefaults'] = '새 활동 생성 시, 기본으로 삼을 �
 $string['confeditorhidebuttons'] = 'HTML 편집기에서 감추고자 하는 버튼을 선택하세요.';
 $string['configallcountrycodes'] = '사용자 개인정보 등에서 선택할 수 있는 국가 목록입니다. 빈칸(기본값)으로 두면, 기본 영어 팩에 있는 countries.php에 있는 목록이 사용됩니다. 이는 ISO 3166-1의 목록과 동일하다. 만일 뭔가 쓰려면, \'KR,FR,ES\' 처럼 컴마로 구분해 적으면 됩니다. 만일 새로운 비 표준 코드를 추가하려면, \'en\' 안에 있는 countries.php에 이들을 추가하고 자신의 언어팩에도 이들를 추가해야 할 것입니다.';
 $string['configallowassign'] = '왼쪽의 역할이 기표된 각 칼럼의 역할을 부여할 수 있게 허용';
-$string['configallowblockstodock'] = '만일 이것이 활성화되어 있고 선택된 테마에 의해 지원이 된다면, 사용자는 특별한 도킹영역으로 블록을 이동시킬 수 있습니다.';
 $string['configallowcategorythemes'] = '이것을 활성화하면, 범주 수준에서 테마를 설정할 수 있게 된다. 각각의 하위 범주 혹은 강좌 나름대로 테마를 지정하지 않는 한, 범주 수준에서 설정한 테마가 그 하위에도 적용된다. 경고: 범주 테마 활성화는 성능에 영향을 미칠 수도 있다.';
 $string['configallowcoursethemes'] = '이것을 활성화하면, 각 강좌 나름대로 독특한 테마로 설정될 수 있습니다. 강좌 테마는 다른 모든 테마(사이트, 사용자, 또는 세션 테마) 를 덮어쓰게 됩니다.';
 $string['configallowemailaddresses'] = '만약 특정 도메인의 이메일 주소만 허용하고자 한다면, 그 주소를 한 칸씩 띄어 적어 놓아라. 그 외 모든 다른 도메인은 거부된다. ( 예: <strong>sun.ac.kr moodle.org</strong> )';
@@ -310,7 +308,6 @@ $string['configproxytype'] = '웹 프록시의 종류(SOCKS5지원을 위해서�
 $string['configproxyuser'] = '어떤 경우 프록시를 통해 인터넷에 접속할 때 사용자 ID가 필요합니다. 필요없을 경우에는 비워 두십시오(PHP cURL 익스텐션이 필요)';
 $string['configrecaptchaprivatekey'] = '무들 서버와 recaptcha 서버 사이에 통신하기 위해 사용하는 문자열. http://www.google.com/recaptcha에 접속하여 이 사이트를 위한 문자열을 받아 오세요.';
 $string['configrecaptchapublickey'] = '가입 양식에 reCAPTCHA 요소를 표시하기 위해 사용되는 문자열. http://www.google.com/recaptcha 에서 생성.';
-$string['configrequestcategoryselection'] = '강좌를 요청할 때 범주를 선택할 수 있습니다.';
 $string['configrequestedstudentname'] = '강좌에서 학생을 지칭하는 용어';
 $string['configrequestedstudentsname'] = '강좌에서 학생들을 지칭하는 용어';
 $string['configrequestedteachername'] = '강좌에서 선생님을 지칭하는 용어';
@@ -368,7 +365,6 @@ $string['configthemelist'] = '다양한 테마를 사용하게 하려면 이 부
 $string['configtimezone'] = '여기에서 표준시간대를 선택합니다. 이것은 단지 기본값으로 쓸 표준시간대이며, 각 사용자는 개인정보 난에서 그들 자신에 맞는 설정을 따로 할 수가 있습니다. 이곳의 "서버 지역시간대"는 서버 전반에 적용되는 기준 시간으로 무들의 기본값인데, 사용자 개인정보에 있는 시간대와는 별도입니다. Cronjob은 이 시간을 기준으로 작동합니다.';
 $string['configuseblogassociations'] = '사용자들이 강좌 및 강좌 모듈의 항목을 연합해서 자신들의 블로그를 쓸 수 있게 할까요? ';
 $string['configuseexternalyui'] = '로컬 파일을 사용하는 대신 Yahoo 서버에서 온라인으로 제공하는 파일을 사용하세요. 주의: 인터넷 연결이 필요합니다. 그렇지 않으면 AJAX가 동작하지 않을 것입니다. 이설정은 https를 사용하는 사이트에는 맞지 않습니다.';
-$string['configuserquota'] = '사용자가 자신의 영역에 저장할 수 있는 파일의 최대 용량. {$a->bytes} bytes == {$a->displaysize}';
 $string['configusetags'] = '사이트 전반에 걸쳐 태그 기능을 활성화할 필요가 있을까요?';
 $string['configvariables'] = '변수';
 $string['configverifychangedemail'] = '허용 혹은 거부된 도메인을 이용하여 바뀐 이메일 주소를 검증. 이 설정이 비활성화되어 있을 경우 새 사용자에게만 도메인 검증이 이루어짐';
@@ -402,6 +398,7 @@ $string['creatornewroleid'] = '새 강좌 생성자의 역할';
 $string['creatornewroleid_help'] = '사용자가 새 강좌를 관리할 권한을 가지지 않았다면 사용자는 이 역활을 사용하여 자동으로 등록될 수 있습니다.';
 $string['cron'] = '크론';
 $string['cron_help'] = 'cron.php 유지 스크립트는 새롭게 작성된 포럼 게시글을 이메일로 보내는 것처럼 무들 모듈이 정해진 시간마다 작업을 수행하는 것을 도와줍니다. 스크립트를 예를 들어 5분마다 실행시키는 메카니즘이 필요합니다.';
+$string['cron_link'] = 'admin/cron';
 $string['cronclionly'] = '명령어 줄에서만 크론 실행';
 $string['cronerrorclionly'] = '죄송합니다. 이  페이지는 관리자에 의하여 인터넷 접속을 금하도록 설정되었습니다.';
 $string['cronerrorpassword'] = '죄송합니다. 이  페이지에 접속하려면 적절한 암호가 있어야 합니다.';
@@ -654,7 +651,6 @@ $string['maintinprogress'] = '유지 관리 진행 중...';
 $string['manageformats'] = '강좌 포맷 관리';
 $string['manageformatsgotosettings'] = '{$a}에서 기본 포맷이 변경될 수 있습니다.';
 $string['managelang'] = '언어팩 관리';
-$string['managelicenses'] = '사용허가 관리';
 $string['manageqbehaviours'] = '질문 진행방식 관리';
 $string['manageqtypes'] = '질문 유형 관리';
 $string['maturity100'] = '베타';
@@ -865,8 +861,6 @@ $string['questiontypes'] = '질문 유형';
 $string['recaptchaprivatekey'] = 'ReCAPTCHA 비밀키';
 $string['recaptchapublickey'] = 'ReCAPTCHA 공개키';
 $string['register'] = '사이트 등록';
-$string['registermoodleorg'] = '{$a}로 사이트를 등록할 때';
-$string['registerwithmoodleorg'] = 'Moodle.org 에 등록';
 $string['registration'] = '사이트등록';
 $string['registrationwarning'] = '사이트가 등록되지 않았습니다.';
 $string['registrationwarningcontactadmin'] = '사이트가 등록되지 않았습니다. 관리자에게 알려주십시오.';
@@ -874,7 +868,6 @@ $string['releasenoteslink'] = '무들 버전에 대한 정보를 얻기 위해�
 $string['rememberusername'] = '사용자이름 기억';
 $string['rememberusername_desc'] = '사용자가 로그인 되어 있을 동안, 쿠키와 사용자명을 저장할 수 있습니다. 이렇게 저장된 쿠키는 동의 없이 사용될 경우 보안 문제를 일으킬 수 있습니다.';
 $string['reportsmanage'] = '보고서 관리';
-$string['requestcategoryselection'] = '범주 선택 활성화';
 $string['requiredentrieschanged'] = '<strong>중요 - 필히 읽어볼 것<br/>(본 경고 메세지는 판올림 과정에서만 보이게 될 것입니다.)</strong><br/>버그 수정 때문에, \'필수 항목\' 및 \'설정을 보기전 필수 항목\'설정을 이용하는 데이터베이스 활동에 대한 동작이 변경될 것입니다. 좀 더 자세한 변경 내용은 <a href="http://moodle.org/mod/forum/discuss.php?d=110928" target="_blank">데이터베이스 모듈 포럼</a>을 참고하면 됩니다. 이러한 설정이 어떻게 작동할 것인가는 <a href="http://docs.moodle.org/en/Adding/editing_a_database#Required_entries" target="_blank">무들 문서 </a>에서 역시 찾아볼 수 있습니다.
 <br/><br/>본 변경은 여러분의 시스템의 다음과 같은 데이터베이스에 영향을 줄 것입니다.(지금 즉시 이 목록을 저장하여 두고, 판올림 이후에 활동들이 선생님들의 의도한 대로 온전히 구동되는지를 점검해 보기 바랍니다.)<br/><strong>{$a->text}</strong><br/>';
 $string['requiremodintro'] = '활동 개요 필요';
@@ -1057,6 +1050,7 @@ $string['upgradelogs'] = '원활한 작동을 위해서 오래된 로그(경과�
 $string['upgradelogsinfo'] = '최근에 바뀐 로그 기록이 저장되었습니다. 이전의 활동 기록을 보려면, 오래된 기록들은 업그레이드 되어야 합니다. 사이트에 따라 시간이 길어질 수 있으며(수 시간) 데이터베이스의 규모에 따라 좀 더 시간이 걸릴 수도 있습니다. 일단 이것을 진행시키면 꼭 끝을 보아야 합니다.(윈도우 브라우저 창을 유지시키는 것 만으로 할 수 있습니다.) 걱정마십시오 - 당신의 사이트는 로그를 업그레이드 하는 동안 다른사람이 이용하는데 불편없이 잘 운영이 될 것입니다.<br /><br />이제부터 경과기록(로그)를 업그레이드 할까요?';
 $string['upgradepluginsfirst'] = '사용가능한 모든 업데이트를 먼저 설치하는 것을 권장합니다.';
 $string['upgradepluginsinfo'] = '플러그인 업데이트';
+$string['upgradepluginsinfo_link'] = 'admin/upgradepluginsinfo';
 $string['upgradesettings'] = '새로운 설정';
 $string['upgradesettingsintro'] = '앞서의 판올림과정 동안 아래의 설정이 추가되었습니다. 기본 설정에서 필요한 내용을 바꾼 다음, 페이지  하단에 있는 "변경사항 저장"을 클릭하십시요.';
 $string['upgradestalefiles'] = '혼합된 무들 버전이 발견되었습니다. 업그레이드를 계속할 수 없습니다.';
@@ -1103,6 +1097,5 @@ $string['verifychangedemail'] = '이메일 변경시 도메인 점검';
 $string['warningcurrentsetting'] = '잘못된 값: {$a}';
 $string['webproxy'] = '웹 프록시';
 $string['webproxyinfo'] = '무들서버가 인터넷을 직접 접속할 수 없는 경우 다음 옵션을 입력하세요. 환경변수, 언어팩, RSS 피드, 표준시 등을 내려받기 위해서는 인터넷 접속이 이루어져야 합니다. <br/><em> PHP cURL 확장자를 설치할 것을 권고합니다. </em>';
-$string['xmlrpcrecommended'] = 'xmlrpc 익스텐션은 허브 통신에 필요하며 웹서비스와 무들 네트워킹에 유용합니다,';
 $string['yuicomboloading'] = 'YUI 콤보 로딩';
 $string['ziprequired'] = '더 이상  info-ZIP 이나 PclZip 라이브러리가 사용되지 않으므로 Zip PHP확장자가 필요합니다.';

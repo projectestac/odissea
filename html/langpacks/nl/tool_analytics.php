@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'nl', version '3.11'.
+ * Strings for component 'tool_analytics', language 'nl', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -88,7 +88,6 @@ $string['exportmodel'] = 'Exporteer configuratie';
 $string['exporttrainingdata'] = 'Exporteer trainingsgegevens';
 $string['extrainfo'] = 'Info';
 $string['generalerror'] = 'Evaluatiefout. Statuscode {$a}';
-$string['getpredictions'] = 'Voorspellingen ophalen';
 $string['goodmodel'] = 'Dit is een goed model om te gebruiken voor het bekomen van voorspellingen. Schakel het in om te beginnen met het bekomen van voorspellingen.';
 $string['ignoreversionmismatches'] = 'Negeer niet overeenkomende versies';
 $string['ignoreversionmismatchescheckbox'] = 'Negeer de verschillen tussen deze siteversie en de originele siteversie.';
@@ -96,6 +95,7 @@ $string['importedsuccessfully'] = 'Het model is succesvol geïmporteerd.';
 $string['importmodel'] = 'Importeer model';
 $string['indicators'] = 'Indicatoren';
 $string['indicators_help'] = 'De indicatoren zijn wat je denkt dat zal leiden tot een nauwkeurige voorspelling van het doelwit.';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = 'Aantal indicatoren: {$a}';
 $string['info'] = 'Info';
 $string['insights'] = 'Inzichten';
@@ -144,6 +144,7 @@ $string['scheduledanalysisresultscli'] = 'Resultaten die gebruik maken van {$a->
 $string['selecttimesplittingforevaluation'] = 'Selecteer het analyse-interval dat je wil gebruiken om de modelconfiguratie te evalueren.';
 $string['target'] = 'Doel';
 $string['target_help'] = 'Het doel is wat het model zal voorspellen.';
+$string['target_link'] = 'Targets';
 $string['timesplittingnotdefined'] = 'Geen analyse-interval bepaald.';
 $string['timesplittingnotdefined_help'] = 'Je moet een analyse-interval selecteren voor je dit model inschakelt.';
 $string['trainandpredictmodel'] = 'Model aan het trainen en voorspellingen aan het berekenen';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'ar', version '3.11'.
+ * Strings for component 'tool_customlang', language 'ar', version '4.1'.
  *
  * @package     tool_customlang
  * @category    string
@@ -47,6 +47,7 @@ $string['confirmcheckin'] = 'أنت بصدد حفظ تعديلات في الحز
 $string['customlang:edit'] = 'تحرير الترجمة المحلية';
 $string['customlang:export'] = 'تصدير الترجمة المحلية';
 $string['customlang:view'] = 'معاينة الترجمة المحلية';
+$string['editlangpack'] = 'تحرير حزمة اللغة';
 $string['export'] = 'تصدير الجُمل المخصصة';
 $string['exportfilter'] = 'إختر المكونات المزمع تصديرها';
 $string['exportzipfilename'] = 'تصدير-لغة-مخصصة-{$a->lang}.zip';

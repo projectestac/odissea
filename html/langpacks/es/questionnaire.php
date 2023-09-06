@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'es', version '3.11'.
+ * Strings for component 'questionnaire', language 'es', version '4.1'.
  *
  * @package     questionnaire
  * @category    string
@@ -37,6 +37,7 @@ $string['addquestiontosection'] = 'Añadir pregunta a sección';
 $string['addselqtype'] = 'Añadir una pregunta de este tipo';
 $string['alignment'] = 'Alineación de los botones de radio';
 $string['alignment_help'] = 'Selección de botones de alineación: vertical (por defecto) u horizontal.';
+$string['alignment_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['all'] = 'Todo';
 $string['allnameddegrees'] = 'Grados nombrados';
 $string['allnameddegrees_help'] = 'Especificar texto a mostrar para valorar valores en lugar del número. Deje un valor vacío para no usarlo.';
@@ -77,6 +78,7 @@ $string['chart:vprogress'] = 'Barra Vertical de progreso';
 $string['checkallradiobuttons'] = '¡Por favor, compruebe todos los <strong>{$a}</strong> botones de radio!';
 $string['checkboxes'] = 'Comprobar Casillas';
 $string['checkboxes_help'] = 'Agregue una opción por línea para que el usuario seleccione una o múltiples respuestas';
+$string['checkboxes_link'] = 'mod/questionnaire/questions#Check_Boxes';
 $string['checkbreaksadded'] = 'Nuevo salto de página(s) que se inserta en la posición(es):';
 $string['checkbreaksok'] = 'Todos los saltos de página requeridos están presentes!';
 $string['checkbreaksremoved'] = 'Eliminar {$a} salto(s) de página extra.';
@@ -111,10 +113,12 @@ $string['couldnotcreatenewsurvey'] = 'No se pudo crear una nueva encuesta!';
 $string['couldnotdelresp'] = 'No ha sido posible borrar las respuestas';
 $string['createcontent'] = 'Definir nuevo contenido';
 $string['createcontent_help'] = 'Seleccione una de las opciones del botón de radio. \'Crear nuevo\' es el valor predeterminado.';
+$string['createcontent_link'] = 'mod/questionnaire/mod#Content_Options';
 $string['createnew'] = 'Crear un nuevo cuestionario';
 $string['crontask'] = 'Limpieza de cuestionario';
 $string['date'] = 'Fecha';
 $string['date_help'] = 'Utilice este tipo de pregunta si espera que la respuesta sea una fecha con el formato correcto.';
+$string['date_link'] = 'mod/questionnaire/questions#Date';
 $string['dateformatting'] = 'dateformatting';
 $string['deleteallresponses'] = 'Borrar TODAS las respuestas';
 $string['deletecurrentquestion'] = 'Borrar la pregunta {$a}';
@@ -128,6 +132,7 @@ $string['deletingresp'] = 'Supresión de respuestas';
 $string['dependencies'] = 'Dependencias';
 $string['dependquestion'] = 'Pregunta Padre';
 $string['dependquestion_help'] = 'Usted puede seleccionar una pregunta padre y una opción elegible para esta pregunta. Una pregunta hija solamente se le mostrará al estudiante si su pregunta padre y opción padre han sido previamente seleccionadas.';
+$string['dependquestion_link'] = 'mod/questionnaire/questions#Parent_Question';
 $string['didnotrespondtoquestion'] = 'No respondió a la pregunta';
 $string['directwarnings'] = 'Las dependencias directas a esta pregunta serán removidas. Esto afectará:';
 $string['displaymethod'] = 'El método de visualización no se ha definido para este tipo de pregunta.';
@@ -135,9 +140,11 @@ $string['download'] = 'Descargar';
 $string['downloadpdf'] = 'Descargar PDF';
 $string['downloadtextformat'] = 'Descargar en formato de texto';
 $string['downloadtextformat_help'] = 'Esta opción permite guardar todas las respuestas de una encuesta en un archivo de texto (CSV). Este archivo se puede importar a una hoja de cálculo (por ejemplo, MS Excel o Open Office Calc) o un paquete estadístico para el procesamiento de los datos.';
+$string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
 $string['downloadtypes'] = 'Tipo de reporte';
 $string['dropdown'] = 'Lista desplegable';
 $string['dropdown_help'] = 'No hay ninguna ventaja real de utilizar el cuadro desplegable sobre el uso de los botones de radio, excepto tal vez para las listas bastante largas de opciones, para ahorrar espacio en la pantalla.';
+$string['dropdown_link'] = 'mod/questionnaire/questions#Dropdown_Box';
 $string['edit'] = 'Editar';
 $string['editingfeedback'] = 'Editando configuraciones de retroalimentación';
 $string['editingquestionnaire'] = 'Modificación de cuestionario - página General';
@@ -173,6 +180,7 @@ $string['event_saved'] = 'Respuestas guardadas';
 $string['event_submitted'] = 'Respuestas enviadas';
 $string['feedback'] = 'Retroalimentación';
 $string['feedback_help'] = 'Ayuda de retroalimentación';
+$string['feedback_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Messages';
 $string['feedbackaddmorefeedbacks'] = 'Agregar {no} campos más de retroalimentación';
 $string['feedbackbysection'] = 'Sección de retroalimentación';
 $string['feedbackdefaultlabel'] = '[Nueva sección]';
@@ -200,6 +208,7 @@ $string['feedbacknotes_help'] = 'El texto escrito aquí se mostrará a los encue
 $string['feedbackoptions'] = 'Opciones de retroalimentación';
 $string['feedbackoptions_help'] = 'Las opciones de retroalimentación están disponibles si su cuestionario contiene los siguientes tipos de preguntas y configuraciones de preguntas:
 Botones de selección; Caja desplegable, Si/No, o Valorar (normal o escala Osgood). Esas preguntas deberán configurarse como obligatorias; su campo para Nombre de Pregunta NO deberá estar vacío y las opciones para respuestas posibles deben contener un valor.';
+$string['feedbackoptions_link'] = 'mod/questionnaire/personality_test';
 $string['feedbackremovequestionfromsection'] = 'Esta pregunta es parte de la sección de retroalimentación [{$a}]';
 $string['feedbackremovesection'] = 'El remover esta pregunta removerá completamente la sección de retroalimentación [{$a}]';
 $string['feedbackreport'] = 'Reporte de Retroalimentación';
@@ -217,6 +226,7 @@ $string['feedbacksectionquestions'] = '{$a} preguntas de sección';
 $string['feedbacksections'] = 'Secciones de Retroalimentación';
 $string['feedbacksectionsselect'] = 'Secciones';
 $string['feedbacksectionsselect_help'] = 'Poner sus preguntas dentro de esas Secciones';
+$string['feedbacksectionsselect_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Sections_2';
 $string['feedbacksettingssaved'] = 'Configuraciones de retroalimentación guardadas';
 $string['feedbacktype'] = 'Tipo de retroalimentación';
 $string['field'] = 'Pregunta {$a}';
@@ -242,13 +252,17 @@ $string['invalidresponse'] = 'Respuesta no válida.';
 $string['invalidresponserecord'] = 'Registro de respuesta no válida.';
 $string['invalidsurveyid'] = 'ID de la encuesta no válido';
 $string['kindofratescale'] = 'Tipo de escala';
+$string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['length'] = 'Longitud';
 $string['managequestions'] = 'Gestionar preguntas';
 $string['managequestions_help'] = 'En la esta sección se puede llevar a cabo una serie de operaciones de edición, añadido y borrado de preguntas del cuestionario.';
+$string['managequestions_link'] = 'mod/questionnaire/questions#Manage_questions';
 $string['maxdigitsallowed'] = 'Número máximo de dígitos permitidos';
+$string['maxdigitsallowed_link'] = 'mod/questionnaire/questions#Numeric';
 $string['maxforcedresponses'] = 'Número máximo de casillas que se pueden seleccionar';
 $string['maxtextlength'] = 'Longitud máxima del texto';
 $string['messageprovider:message'] = 'Recordatorio';
+$string['messageprovider:notification'] = 'Cuestionario entregado';
 $string['minforcedresponses'] = 'Número mínimo de casillas que se han de seleccionar';
 $string['minforcedresponses_help'] = 'Use estos parámetros para forzar a los encuestados a marcar un mínimo de **Min.** casillas de verificación y un máximo de **Max** casillas de verificación. Para forzar un número exacto de casillas de verificación marcar ajuste **Min.** y  **Max.** con el mismo valor.
 Si sólo desea un valor mínimo o máximo deje el otro valor con el valor **0** predeterminado.
@@ -258,6 +272,7 @@ $string['missingquestion'] = 'Por favor, conteste a esta pregunta que es obligat
 $string['missingquestions'] = 'Por favor, conteste las preguntas Obligatorias:';
 $string['modulename'] = 'Encuesta';
 $string['modulename_help'] = 'El módulo Encuesta le permite construir encuestas empleando diversos tipos de preguntas, con el propósito de recopilar información de sus usuarios.';
+$string['modulename_link'] = 'mod/questionnaire/view';
 $string['modulenameplural'] = 'Encuestas';
 $string['movedisabled'] = 'Este elemento no puede ser movido';
 $string['myresponses'] = 'Todas sus respuestas';
@@ -265,6 +280,7 @@ $string['myresponsetitle'] = 'Sus resultados para {$a} respuestas';
 $string['myresults'] = 'Mis resultados';
 $string['name'] = 'Nombre';
 $string['navigate'] = 'Permitir ramificación de preguntas';
+$string['navigate_link'] = 'mod/questionnaire/conditional_branching';
 $string['next'] = 'Siguiente';
 $string['nextpage'] = 'Página siguiente';
 $string['nlines'] = '{$a} líneas';
@@ -288,6 +304,7 @@ $string['notemplatesurveys'] = 'No hay plantillas de encuesta';
 $string['notificationfull'] = 'Respuesta completa';
 $string['notifications'] = 'Enviar notificaciones de entrega';
 $string['notifications_help'] = 'Avisa a los roles con el permiso "mod/questionnaire:submissionnotification" cuando se realiza una entrega.';
+$string['notifications_link'] = 'mod/questionnaire/mod#Submission_Notifications';
 $string['notificationsimple'] = 'Solo notificación';
 $string['notopen'] = 'Esta encuesta no se abrirá hasta {$a}.';
 $string['notrequired'] = 'Respuesta no obligatoria';
@@ -296,6 +313,8 @@ $string['num'] = 'nº';
 $string['numattemptsmade'] = '{$a} intentos realizados en este cuestionario';
 $string['numberfloat'] = 'El número que introdujo,<strong>{$a->number}</strong> ha sido redondeado con <strong>{$a->precision}</strong> decimal(es).';
 $string['numberofdecimaldigits'] = 'Número de decimales';
+$string['numberofdecimaldigits_help'] = 'Use **No. de decimales** para especificar el formato del valor medio contado y mostrado en la página del informe del cuestionario.';
+$string['numberofdecimaldigits_link'] = 'mod/questionnaire/questions#Numeric';
 $string['numberscaleitems'] = 'Número de ítem en la escala';
 $string['numeric'] = 'Numérico';
 $string['of'] = 'de';
@@ -305,6 +324,7 @@ $string['optionalname'] = 'Nombre de la pregunta';
 $string['optionalname_help'] = 'El nombre de pregunta sólo se utiliza al exportar las respuestas al formato CSV/Excel.
 Si nunca va a exportar a CSV, entonces no tiene que preocuparse acerca de los nombres de las preguntas.
 Si va a exportar regularmente sus datos de las encuestas a CSV, entonces usted tiene dos opciones para nombrar la pregunta.';
+$string['optionalname_link'] = 'mod/questionnaire/questions#Question_Name';
 $string['or'] = '- O -';
 $string['order_ascending'] = 'Ordenación ascendente';
 $string['order_default'] = 'Ordenación por defecto';
@@ -319,6 +339,7 @@ $string['orderresponses_help'] = 'Cuando se muestran todas las respuestas usted 
 
 Cuando llegue a la página con todas las respuestas, por defecto todas las respuestas se ordenan en el orden en que el creador de la encuesta introdujo las opciones de selección.
 Usted puede ordenar en orden ascendente o descendente.';
+$string['orderresponses_link'] = 'mod/questionnaire/report#Order_Responses';
 $string['other'] = 'Otro';
 $string['otherempty'] = 'Si selecciona esta opción debe escribir algún contenido en la caja de texto.';
 $string['overviewnumresplog'] = 'respuestas';
@@ -382,11 +403,14 @@ $string['questions'] = 'Preguntas';
 $string['questionsinsection'] = 'Preguntas en esta sección:';
 $string['questiontypes'] = 'Tipos de preguntas';
 $string['questiontypes_help'] = 'Mira la Documentación de Moodle a continuación';
+$string['questiontypes_link'] = 'mod/questionnaire/questions#Question_Types';
 $string['radiobuttons'] = 'Botones de radio';
 $string['radiobuttons_help'] = 'En este tipo de pregunta el usuario debe seleccionar una de entre las opciones mostradas.';
+$string['radiobuttons_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['rank'] = 'Ranking';
 $string['ratescale'] = 'Escala Likert (1..5)';
 $string['ratescale_help'] = 'Mira la Documentación de Moodle a continuación';
+$string['ratescale_link'] = 'mod/questionnaire/questions#Rate_.28scale_1..5.29';
 $string['realm'] = 'Tipo de Encuesta';
 $string['realm_help'] = '* ** Hay tres tipos de encuesta:**
 
@@ -395,11 +419,13 @@ $string['realm_help'] = '* ** Hay tres tipos de encuesta:**
 * Plantilla * - puede ser copiada y editada.
 
 * Pública  - se puede compartir entre cursos.';
+$string['realm_link'] = 'mod/questionnaire/qsettings#Questionnaire_Type';
 $string['redirecturl'] = 'La URL a la que el usuario será redireccionado después de completar esta encuesta.';
 $string['remove'] = 'Suprimir';
 $string['removeallquestionnaireattempts'] = 'Eliminar todas las respuestas del cuestionario';
 $string['required'] = 'Esta respuesta es obligatoria';
 $string['required_help'] = 'Si selecciona ***Sí***, la respuesta a esta pregunta será obligatotia, es decir, el encuestado no podrá enviar la encuesta hasta haber contestado esta pregunta.';
+$string['required_link'] = 'mod/questionnaire/questions#Response_Required';
 $string['requiredparameter'] = 'Falta un parámetro obligatorio.';
 $string['reset'] = 'Reinicializar';
 $string['respeligiblerepl'] = '(reemplazado por la gestión de roles)';
@@ -409,6 +435,7 @@ $string['respondenteligiblestudents'] = 'Sólamente los estudiantes';
 $string['respondenteligibleteachers'] = 'Sólamente los profesores';
 $string['respondents'] = 'Encuestados';
 $string['respondenttype'] = 'Tipo de encuestado (Anónimo o Nominativo)';
+$string['respondenttype_link'] = 'mod/questionnaire/mod#Respondent_Type';
 $string['respondenttypeanonymous'] = 'anónimo';
 $string['respondenttypefullname'] = 'nominativo';
 $string['response'] = 'Respuesta';
@@ -417,6 +444,7 @@ $string['responseoptions'] = 'Opciones de respuesta';
 $string['responses'] = 'Respuestas';
 $string['responseview'] = 'Ver las respuestas';
 $string['responseview_help'] = 'Puede especificar quién puede ver las respuestas de los encuestados en las encuestas enviados (tablas estadísticas generales).';
+$string['responseview_link'] = 'mod/questionnaire/mod#Response_viewing';
 $string['responseviewstudentsalways'] = 'Siempre';
 $string['responseviewstudentsnever'] = 'Nunca';
 $string['responseviewstudentswhenanswered'] = 'Después de responder a la encuesta';
@@ -424,6 +452,7 @@ $string['responseviewstudentswhenclosed'] = 'Después de que la encuesta se cier
 $string['restrictedtoteacher'] = 'Estas funciones están restringidas a los profesores';
 $string['resume'] = 'Guardar / Continuar';
 $string['resume_help'] = 'Esta opción permite a los usuarios guardar sus respuestas a una encuesta antes de enviarla. Los usuarios pueden dejar sin terminar la encuesta y reanudarla posteriormente desde el punto de guardador.';
+$string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
 $string['resumesurvey'] = 'Reanudar encuesta';
 $string['return'] = 'Volver';
 $string['save'] = 'Guardar';
@@ -464,6 +493,7 @@ $string['submitted'] = 'Enviado el:';
 $string['subtitle'] = 'Subtítulo';
 $string['subtitle_help'] = 'Subtítulo de esta encuesta. Se muestra solo debajo del título de la primera página.';
 $string['summary'] = 'Resumen';
+$string['summaryreportattached'] = 'Informe de resumen del cuestionario adjunto';
 $string['surveynotexists'] = 'la encuesta no existe';
 $string['surveyowner'] = 'Debe ser propietario de la encuesta para realizar esta operación';
 $string['surveyresponse'] = 'Respuesta a la encuesta';
@@ -500,6 +530,7 @@ $string['viewallresponses_help'] = 'Si la encuesta está en **Modo de grupo**: *
 Esta lista desplegable permite al usuario "filtrar"  las respuestas a la encuesta por grupos.
 
 Si el ajuste es **Modo de grupo**: *Grupos separados *, los usuarios que no tienen la capacidad *moodle/site:accessallgroups capacidad* (por lo general, los  Estudiantes o los Profesores sin capacidad de edición, etc), sólo podrán ver las respuestas de los grupos a los que pertenecen.';
+$string['viewallresponses_link'] = 'Viewing_Questionnaire_responses#Group_filtering';
 $string['viewbyresponse'] = 'Lista de respuestas';
 $string['viewindividualresponse'] = 'Respuestas individuales';
 $string['viewresponses'] = 'Todas las respuestas ({$a})';

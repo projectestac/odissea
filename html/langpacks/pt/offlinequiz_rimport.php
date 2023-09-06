@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_rimport', language 'pt', version '3.11'.
+ * Strings for component 'offlinequiz_rimport', language 'pt', version '4.1'.
  *
  * @package     offlinequiz_rimport
  * @category    string
@@ -53,14 +53,14 @@ $string['erroruseridviolation'] = 'Encontrados múltiplos utilizadores';
 $string['errorusernotincourse'] = 'Utilizador não existe na disciplina';
 $string['errorusernotinlist'] = 'Utilizador não consta da lista';
 $string['idnumber'] = 'NúmeroID';
-$string['import'] = 'Importar';
-$string['importedon'] = 'Importado em';
-$string['importforms'] = 'Importar os formulários das respostas';
+$string['import'] = 'Avaliar';
+$string['importedon'] = 'Avaliado em';
+$string['importforms'] = 'Carregar os formulários das respostas';
 $string['importlisterror'] = 'Não foi detetada a lista';
-$string['importpforms'] = 'Importar a lista de participantes';
+$string['importpforms'] = 'Carregar as listas de presença';
 $string['newformsinqueue'] = '{$a} formulário(s) das resposta está/estão pendente(s) de avaliação.';
 $string['pluginname'] = 'Importação de resultados do Teste Offline';
-$string['privacy:metadata'] = 'Este módulo não armazena qualquer dado relacionado com o utilizador.';
+$string['privacy:metadata'] = 'Este módulo não armazena quaisquer dados pessoais.';
 $string['processingformsinqueue'] = '{$a} formulário(s) das respostas em processamento';
 $string['showpage'] = 'Mostrar';
 $string['username'] = 'Nome de utilizador';

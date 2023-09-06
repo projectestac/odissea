@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'sv', version '3.11'.
+ * Strings for component 'block_myprofile', language 'sv', version '4.1'.
  *
  * @package     block_myprofile
  * @category    string
@@ -34,9 +34,11 @@ $string['display_currentlogin'] = 'Visa aktuell inloggning';
 $string['display_email'] = 'Visa e-post';
 $string['display_firstaccess'] = 'Visa första inloggning';
 $string['display_icq'] = 'Visa ICQ';
+$string['display_idnumber'] = 'Visa ID-nummer';
 $string['display_institution'] = 'Visa institution';
 $string['display_lastaccess'] = 'Visa senaste inloggning';
 $string['display_lastip'] = 'Visa senaste IP';
+$string['display_lastlogin'] = 'Visa senaste inloggning';
 $string['display_msn'] = 'Visa MSN';
 $string['display_phone1'] = 'Visa telefonnummer';
 $string['display_phone2'] = 'Visa mobiltelefon';

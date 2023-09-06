@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'sv', version '3.11'.
+ * Strings for component 'lti', language 'sv', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -205,10 +205,12 @@ $string['indicator:cognitivedepth'] = 'LTI kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en LTI-aktivitet.';
 $string['indicator:cognitivedepthdef'] = 'LTI kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av LTI-aktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa, Skicka in, Visa återkoppling)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'LTI social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en LTI-aktivitet.';
 $string['indicator:socialbreadthdef'] = 'LTI social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av LTI-aktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt, Deltagaren tillsammans med andra)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = 'Påbörja inloggning-URL';
 $string['initiatelogin_help'] = 'Verktygsadressen till vilken begäran om att initiera en inloggning ska skickas.  Den här URL:en krävs innan ett meddelande kan skickas till verktyget.';
 $string['invalidid'] = 'Ogiltigt LTI-ID';
@@ -289,6 +291,7 @@ Externa verktygsaktiviteter skiljer sig åt från URL-resurser på några olika 
 * Externa verktyg är kontextmedvetna, dvs. de har tillgång till information om den användare som startade verktyget, till exempel institution, kurs och namn
 * Externa verktyg stöder läsning, uppdatering och borttagning av resultat som är associerade med aktivitetsinstansen
 * Externa verktygskonfigurationer skapar en förtroenderelation mellan din webbplats och verktygsleverantören, vilket möjliggör säker kommunikation mellan dem';
+$string['modulename_link'] = 'mod/lti/view';
 $string['modulenameplural'] = 'Externa verktyg';
 $string['modulenamepluralformatted'] = 'LTI-instanser';
 $string['name'] = 'Namn';
@@ -314,12 +317,8 @@ $string['opensslconfiginvalid'] = 'LTI 1.3 kräver att en giltig openssl.cnf kon
 $string['optionalsettings'] = 'Valfria inställningar';
 $string['organization'] = 'Organisationsdetaljer';
 $string['organizationdescr'] = 'Organisationsbeskrivning';
-$string['organizationid'] = 'Organisations-ID';
 $string['organizationid_default'] = 'Förinställt Organisations-ID';
 $string['organizationid_default_help'] = 'Standardvärdet som ska användas för organisations-ID. Plats-ID identifierar den här installationen av Moodle.';
-$string['organizationid_help'] = 'En unik identifierare för denna Moodle-instans. Vanligtvis används organisationens DNS-namn.
-
-Om det här fältet lämnas tomt används värdnamnet för moodle-webbplatsen som standardvärde.';
 $string['organizationidguid'] = 'Organisations-ID';
 $string['organizationidguid_help'] = 'En unik identifierare för den här Moodle-instansen som skickas till verktyget som instansens <em>Platform Instance GUID</em>.
 

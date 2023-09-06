@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_unsuproles', language 'el', version '3.11'.
+ * Strings for component 'tool_unsuproles', language 'el', version '4.1'.
  *
  * @package     tool_unsuproles
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmdelete'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε όλες τις μη υποστηριζόμενες αναθέσεις ρόλου για το ρόλο «{$a->role}» στο επίπεδο «{$a->level}»;';
+$string['confirmdelete'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε όλες τις μη υποστηριζόμενες αναθέσεις ρόλου για το ρόλο «{$a->role}» στο επίπεδο πλαισίου «{$a->level}»;';
 $string['contextlevel'] = 'Επίπεδο πλαισίου';
 $string['count'] = 'Πλήθος';
 $string['noprolbems'] = 'Δεν βρέθηκαν μη υποστηριζόμενες αναθέσεις ρόλου';

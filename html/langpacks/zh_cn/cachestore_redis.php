@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'zh_cn', version '3.11'.
+ * Strings for component 'cachestore_redis', language 'zh_cn', version '4.1'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -43,12 +43,15 @@ $string['serializer_igbinary'] = '二进制序列化程序。';
 $string['serializer_php'] = '默认PHP序列化程序。';
 $string['server'] = '服务器';
 $string['server_help'] = '这将设置要使用的Redis服务器的主机名或IP地址。';
+$string['task_ttl'] = '释放 Redis 缓存中过期条目使用的内存';
 $string['test_password'] = '测试服务器密码';
 $string['test_password_desc'] = 'Redis测试服务器密码。';
 $string['test_serializer'] = '序列化程序';
 $string['test_serializer_desc'] = '用于测试的序列化程序。';
 $string['test_server'] = '测试服务器';
 $string['test_server_desc'] = '用于测试的Redis服务器。';
+$string['test_ttl'] = '测试 TTL';
+$string['test_ttl_desc'] = '使用需要TTL（较慢的集合）的缓存运行性能测试。';
 $string['usecompressor'] = '使用压缩器';
 $string['usecompressor_help'] = '指定序列化后要使用的压缩器。它是在Moodle缓存API级别完成的，而不是在php redis级别。';
 $string['useserializer'] = '使用序列化程序';

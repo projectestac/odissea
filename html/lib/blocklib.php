@@ -214,15 +214,18 @@ class block_manager {
             return $this->addableblocks;
         }
 
-        $unaddableblocks = self::get_undeletable_block_types();
+        $undeletableblocks = self::get_undeletable_block_types();
+        $unaddablebythemeblocks = $this->get_unaddable_by_theme_block_types();
         $requiredbythemeblocks = $this->get_required_by_theme_block_types();
         $pageformat = $this->page->pagetype;
         foreach($allblocks as $block) {
             if (!$bi = block_instance($block->name)) {
                 continue;
             }
-            if ($block->visible && !in_array($block->name, $unaddableblocks) &&
+            if ($block->visible && !in_array($block->name, $undeletableblocks) &&
                     !in_array($block->name, $requiredbythemeblocks) &&
+                    !in_array($block->name, $unaddablebythemeblocks) &&
+                    $bi->can_block_be_added($this->page) &&
                     ($bi->instance_allow_multiple() || !$this->is_block_present($block->name)) &&
                     blocks_name_allowed_in_format($block->name, $pageformat) &&
                     $bi->user_can_addto($this->page)) {
@@ -383,6 +386,18 @@ class block_manager {
     }
 
     /**
+     * Determine whether a region contains any fake blocks.
+     *
+     * (Fake blocks are typically added to the extracontent array per region)
+     *
+     * @param string $region a block region that exists on this page.
+     * @return boolean Whether there are fake blocks in this region.
+     */
+    public function region_has_fakeblocks($region): bool {
+        return !empty($this->extracontent[$region]);
+    }
+
+    /**
      * Get an array of all of the installed blocks.
      *
      * @return array contents of the block table.
@@ -413,6 +428,21 @@ class block_manager {
         } else {
             return $requiredbythemeblocks;
         }
+    }
+
+    /**
+     * It returns the list of blocks that can't be displayed in the "Add a block" list.
+     * This information is taken from the unaddableblocks theme setting.
+     *
+     * @return array A list with the blocks that won't be displayed in the "Add a block" list.
+     */
+    public function get_unaddable_by_theme_block_types(): array {
+        $unaddablebythemeblocks = [];
+        if (isset($this->page->theme->settings->unaddableblocks) && !empty($this->page->theme->settings->unaddableblocks)) {
+            $unaddablebythemeblocks = array_map('trim', explode(',', $this->page->theme->settings->unaddableblocks));
+        }
+
+        return $unaddablebythemeblocks;
     }
 
     /**
@@ -825,12 +855,23 @@ class block_manager {
         }
     }
 
-    public function add_block_at_end_of_default_region($blockname) {
+    /**
+     * When passed a block name create a new instance of the block in the specified region.
+     *
+     * @param string $blockname Name of the block to add.
+     * @param null|string $blockregion If defined add the new block to the specified region.
+     */
+    public function add_block_at_end_of_default_region($blockname, $blockregion = null) {
         if (empty($this->birecordsbyregion)) {
             // No blocks or block regions exist yet.
             return;
         }
-        $defaulregion = $this->get_default_region();
+
+        if ($blockregion === null) {
+            $defaulregion = $this->get_default_region();
+        } else {
+            $defaulregion = $blockregion;
+        }
 
         $lastcurrentblock = end($this->birecordsbyregion[$defaulregion]);
         if ($lastcurrentblock) {
@@ -1362,11 +1403,27 @@ class block_manager {
                 $deleteactionurl->param('cache', 1);
             }
 
+            $deleteconfirmationurl = new moodle_url($actionurl, [
+                'bui_deleteid' => $block->instance->id,
+                'bui_confirm' => 1,
+                'sesskey' => sesskey(),
+            ]);
+            $blocktitle = $block->get_title();
+
             $controls[] = new action_menu_link_secondary(
                 $deleteactionurl,
                 new pix_icon('t/delete', $str, 'moodle', array('class' => 'iconsmall', 'title' => '')),
                 $str,
-                array('class' => 'editing_delete')
+                [
+                    'class' => 'editing_delete',
+                    'data-modal' => 'confirmation',
+                    'data-modal-title-str' => json_encode(['deletecheck_modal', 'block']),
+                    'data-modal-content-str' => json_encode(['deleteblockcheck', 'block', $blocktitle]),
+                    'data-modal-yes-button-str' => json_encode(['delete', 'core']),
+                    'data-modal-toast' => 'true',
+                    'data-modal-toast-confirmation-str' => json_encode(['deleteblockinprogress', 'block', $blocktitle]),
+                    'data-modal-destination' => $deleteconfirmationurl->out(false),
+                ]
             );
         }
 
@@ -1430,6 +1487,8 @@ class block_manager {
         global $CFG, $PAGE, $OUTPUT;
 
         $blocktype = optional_param('bui_addblock', null, PARAM_PLUGIN);
+        $blockregion = optional_param('bui_blockregion', null, PARAM_TEXT);
+
         if ($blocktype === null) {
             return false;
         }
@@ -1491,7 +1550,7 @@ class block_manager {
             throw new moodle_exception('cannotaddthisblocktype', '', $this->page->url->out(), $blocktype);
         }
 
-        $this->add_block_at_end_of_default_region($blocktype);
+        $this->add_block_at_end_of_default_region($blocktype, $blockregion);
 
         // If the page URL was a guess, it will contain the bui_... param, so we must make sure it is not there.
         $this->page->ensure_param_not_in_url('bui_addblock');
@@ -1532,6 +1591,7 @@ class block_manager {
             $deleteurlparams = $this->page->url->params();
             $deletepage->set_url($deleteurlbase, $deleteurlparams);
             $deletepage->set_block_actions_done();
+            $deletepage->set_secondarynav($this->get_secondarynav($block));
             // At this point we are either going to redirect, or display the form, so
             // overwrite global $PAGE ready for this. (Formslib refers to it.)
             $PAGE = $deletepage;
@@ -1621,6 +1681,31 @@ class block_manager {
     }
 
     /**
+     * Convenience function to check whether a block is implementing a secondary nav class and return it
+     * initialised to the calling function
+     *
+     * @todo MDL-74939 Remove support for old 'local\views\secondary' class location
+     * @param block_base $block
+     * @return \core\navigation\views\secondary
+     */
+    protected function get_secondarynav(block_base $block): \core\navigation\views\secondary {
+        $class = "core_block\\navigation\\views\\secondary";
+        if (class_exists("block_{$block->name()}\\navigation\\views\\secondary")) {
+            $class = "block_{$block->name()}\\navigation\\views\\secondary";
+        } else if (class_exists("block_{$block->name()}\\local\\views\\secondary")) {
+            // For backwards compatibility, support the old location for this class (it was in a
+            // 'local' namespace which shouldn't be used for core APIs).
+            debugging("The class block_{$block->name()}\\local\\views\\secondary uses a deprecated " .
+                    "namespace. Please move it to block_{$block->name()}\\navigation\\views\\secondary.",
+                    DEBUG_DEVELOPER);
+            $class = "block_{$block->name()}\\local\\views\\secondary";
+        }
+        $secondarynav = new $class($this->page);
+        $secondarynav->initialise();
+        return $secondarynav;
+    }
+
+    /**
      * Handle showing/processing the submission from the block editing form.
      * @return boolean true if the form was submitted and the new config saved. Does not
      *      return if the editing form was displayed. False otherwise.
@@ -1647,6 +1732,8 @@ class block_manager {
         $editpage->set_course($this->page->course);
         //$editpage->set_context($block->context);
         $editpage->set_context($this->page->context);
+        $editpage->set_secondarynav($this->get_secondarynav($block));
+
         if ($this->page->cm) {
             $editpage->set_cm($this->page->cm);
         }
@@ -2598,7 +2685,29 @@ function blocks_add_default_system_blocks() {
         $subpagepattern = null;
     }
 
-    $newblocks = array('timeline', 'private_files', 'online_users', 'badges', 'calendar_month', 'calendar_upcoming');
-    $newcontent = array('lp', 'recentlyaccessedcourses', 'myoverview');
-    $page->blocks->add_blocks(array(BLOCK_POS_RIGHT => $newblocks, 'content' => $newcontent), 'my-index', $subpagepattern);
+    if ($defaultmycoursespage = $DB->get_record('my_pages', array('userid' => null, 'name' => '__courses', 'private' => 0))) {
+        $mycoursesubpagepattern = $defaultmycoursespage->id;
+    } else {
+        $mycoursesubpagepattern = null;
+    }
+
+    $page->blocks->add_blocks([
+        BLOCK_POS_RIGHT => [
+            'recentlyaccesseditems',
+        ],
+        'content' => [
+            'timeline',
+            'calendar_month',
+        ]],
+        'my-index',
+        $subpagepattern
+    );
+
+    $page->blocks->add_blocks([
+        'content' => [
+            'myoverview'
+        ]],
+        'my-index',
+        $mycoursesubpagepattern
+    );
 }

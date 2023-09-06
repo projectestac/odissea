@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataformfield_file', language 'el', version '3.11'.
+ * Strings for component 'dataformfield_file', language 'el', version '4.1'.
  *
  * @package     dataformfield_file
  * @category    string
@@ -29,5 +29,5 @@ $string['alttext'] = 'Εναλλακτικό κείμενο';
 $string['clearcontent'] = 'Καθαρισμός περιεχομένου';
 $string['filesseparator'] = 'Διαχωριστικό';
 $string['filesseparator_help'] = 'Επιλέξτε Αλλαγή γραμμής για να εμφανίσετε πολλαπλά αρχεία σε ξεχωριστές γραμμές.';
-$string['newline'] = 'Νέα γραμμή';
+$string['newline'] = 'Αλλαγή γραμμής';
 $string['pluginname'] = 'Αρχείο';

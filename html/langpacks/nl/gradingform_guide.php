@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'nl', version '3.11'.
+ * Strings for component 'gradingform_guide', language 'nl', version '4.1'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -66,7 +66,7 @@ $string['err_scoreisnegative'] = 'De score, gegeven aan \'{$a->criterianame}\' i
 $string['err_shortnametoolong'] = 'Criteriumnaam moet minder dan 256 tekens zijn';
 $string['gradingof'] = '{$a} beoordeling';
 $string['guide'] = 'Beoordelingsgids';
-$string['guidemappingexplained'] = 'WAARSCHUWING: je beoordelingshulp heeft een maximumcijfer van <b>{$a->maxscore} punten</b> maar het maximumcijfer van je activeit is {$a->modulegrade}. Het maximumcijfer van je beoordelingshulp zal geschaald worden naar het maximumcijfer van de activiteitsmodule.<br />
+$string['guidemappingexplained'] = 'WAARSCHUWING: je beoordelingshulp heeft een maximumcijfer van <b>{$a->maxscore} punten</b> maar het maximumcijfer van je activiteit is {$a->modulegrade}. Het maximumcijfer van je beoordelingshulp zal geschaald worden naar het maximumcijfer van de activiteitsmodule.<br />
 Tussenresultaten zullen geconverteerd en afgerond worden.';
 $string['guidenotcompleted'] = 'Geef een geldig cijfer voor elk criterium';
 $string['guideoptions'] = 'Opties beoordelingshulp';
@@ -93,10 +93,10 @@ $string['regrademessage5'] = 'Je gaat grote wijzigingen aanbrengen aan een beoor
 $string['regradeoption0'] = 'Niet markeren voor opnieuw beoordelen';
 $string['regradeoption1'] = 'Markeer om opnieuw te boordelen';
 $string['remark_help'] = 'Voer eventuele aanvullende opmerkingen over dit criterium in.';
-$string['restoredfromdraft'] = 'OPMERKING: de laatste poging om deze leerling te beoordelen is niet behoorlijk bewaard, dus zijn de als klad bewaarde punten teruggezet. Als je deze wijzigingen wil annuleren, klik dan op \'annuleren\' onderaan';
+$string['restoredfromdraft'] = 'OPMERKING: de laatste poging om deze leerling te beoordelen is niet behoorlijk bewaard, dus zijn de als concept bewaarde punten teruggezet. Als je deze wijzigingen wil annuleren, klik dan op \'annuleren\' onderaan.';
 $string['save'] = 'Bewaar';
 $string['saveguide'] = 'Bewaar de beoordelingshulp en maak die klaar voor gebruik';
-$string['saveguidedraft'] = 'Bewaar als klad';
+$string['saveguidedraft'] = 'Bewaar als concept';
 $string['score'] = 'cijfer';
 $string['score_help'] = 'Voer een score in voor {$a->criterion} tussen 0 en {$a->maxscore}.';
 $string['scoreforcriterion'] = '{$a} score';

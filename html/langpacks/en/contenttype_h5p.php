@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contenttype_h5p', language 'en', version '3.11'.
+ * Strings for component 'contenttype_h5p', language 'en', version '4.1'.
  *
  * @package     contenttype_h5p
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_dedication', language 'ar', version '3.11'.
+ * Strings for component 'block_dedication', language 'ar', version '4.1'.
  *
  * @package     block_dedication
  * @category    string
@@ -25,9 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['dedication_estimation'] = 'وقتك الحصري المقدر هو';
 $string['period'] = 'الفترة منذ <em>{$a->mintime}</em> إلى <em>{$a->maxtime}</em>';
 $string['perioddiff'] = '<strong>الوقت المنقضي:</strong> {$a}';
-$string['perioddiffrow'] = 'الوقت المنقضي';
-$string['show_dedication'] = 'إظهار الوقت الحصري للطلبة';
-$string['show_dedication_help'] = 'إفتراضياً، يمكن معاينة الوقت الحصري فقط من قبل المعلمين. هذا الإعداد يسمح للطلبة بمعاينة وقتهم الحصري في الكتلة.';

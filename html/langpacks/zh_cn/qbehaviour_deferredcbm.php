@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'zh_cn', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'zh_cn', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -38,6 +38,7 @@ $string['cbmgrades_help'] = '在信心加权计分法（Certainty Based Marking 
 错误的想法（答错却很自信）会比（答错却知道自己不确定）得到更低的分数，因此可能导致负的总分。
 
 **正确度**是指只看答对百分比而忽视对于答案的信心，然后再依据每一题的配分进行加权。**正确度**+**信心加权分**是比**正确度**更好的测量知识的方法。但是错误的想法会导致负的加权分，这会提醒师生仔细检查错在什么地方。';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'CBM 信心加权分 {$a}';
 $string['certainty'] = '确定';
 $string['certainty-1'] = '不知道';
@@ -51,6 +52,7 @@ $string['certainty_help'] = '基于确定性的评分需要你来回答对于你
 标记是否错误| 0         |-2           |-6
 正确的概率|<67%      | 67-80% |>80%
 通过承认不确定性获得最佳分数。例如，如果您认为错误的概率超过1/3，则应输入C=1，避免出现负分的风险。';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = '不知道';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';

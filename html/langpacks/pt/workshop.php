@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'pt', version '3.11'.
+ * Strings for component 'workshop', language 'pt', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -43,8 +43,10 @@ $string['allocationdone'] = 'Atribuição de trabalhos realizada com sucesso';
 $string['allocationerror'] = 'Erro na atribuição de trabalhos';
 $string['allowedfiletypesforoverallfeedback'] = 'Tipos de ficheiro que são permitidos anexar ao feedback';
 $string['allowedfiletypesforoverallfeedback_help'] = 'Os tipos de ficheiro que podem ser anexados ao feedback podem ser restringidos se indicar uma lista dos tipos de ficheiro permitidos. Se o campo ficar em branco, todos os tipos de ficheiro são permitidos.';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
 $string['allowedfiletypesforsubmission'] = 'Tipos de ficheiro que são permitidos anexar à submissão';
 $string['allowedfiletypesforsubmission_help'] = 'Os tipos de ficheiro que podem ser anexados à submissão podem ser restringidos se indicar uma lista dos tipos de ficheiro permitidos. Se o campo ficar em branco, todos os tipos de ficheiro são permitidos.';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = 'Todos os trabalhos submetidos ({$a})';
 $string['alreadygraded'] = 'Já avaliado';
 $string['areaconclusion'] = 'Texto da conclusão';
@@ -193,10 +195,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão do Workshop';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na profundidade cognitiva alcançada pelo aluno numa atividade de Workshop.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Workshop';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Workshop durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido, Visualizado feedback, Comentários ao feedback, Voltar a submeter após visualizar feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização do Workshop';
 $string['indicator:socialbreadth_help'] = 'Este indicador baseia-se na amplitude social alcançada pelo aluno numa atividade de Workshop.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Workshop';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Workshop durante esse intervalo de análise (Níveis = Sem participação, Participante individual, Participante com outros)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Informação';
 $string['instructauthors'] = 'Instruções para submissão do trabalho';
 $string['instructreviewers'] = 'Instruções para a avaliação';
@@ -363,6 +367,7 @@ $string['submissiongradeof'] = 'Nota do trabalho (em {$a})';
 $string['submissionlastmodified'] = 'Última modificação';
 $string['submissionrequiredcontent'] = 'Tem de inserir texto ou adicionar um ficheiro';
 $string['submissionrequiredfile'] = 'Tem de adicionar um ficheiro ou inserir texto';
+$string['submissionsallocation'] = 'Atribuição das submissões';
 $string['submissionsettings'] = 'Configurações da submissão';
 $string['submissionsreport'] = 'Relatório das submissões do workshop';
 $string['submissionstart'] = 'Iniciar submissões em';

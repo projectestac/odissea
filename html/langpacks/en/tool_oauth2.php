@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'en', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'en', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -30,6 +30,7 @@ $string['acceptrisk_help'] = 'Disabling email verification can potentially allow
 $string['authconfirm'] = 'This action will grant permanent API access to Moodle for the authenticated account. This is intended to be used as a system account for managing files owned by Moodle.';
 $string['authconnected'] = 'The system account is now connected for offline access';
 $string['authnotconnected'] = 'The system account was not connected for offline access';
+$string['clever_service'] = 'Clever';
 $string['configured'] = 'Configured';
 $string['configuredstatus'] = 'Configured';
 $string['connectsystemaccount'] = 'Connect to a system account';

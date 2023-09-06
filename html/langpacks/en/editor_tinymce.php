@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'en', version '3.11'.
+ * Strings for component 'editor_tinymce', language 'en', version '4.1'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -292,19 +292,19 @@ $string['colors:00CCFF'] = 'Sky blue';
 $string['colors:00FF00'] = 'Lime';
 $string['colors:00FFFF'] = 'Aqua';
 $string['colors:333300'] = 'Dark olive';
-$string['colors:333333'] = 'Very dark gray';
+$string['colors:333333'] = 'Very dark grey';
 $string['colors:333399'] = 'Indigo';
 $string['colors:3366FF'] = 'Royal blue';
 $string['colors:339966'] = 'Sea green';
 $string['colors:33CCCC'] = 'Turquoise';
-$string['colors:666699'] = 'Grayish blue';
+$string['colors:666699'] = 'Greyish blue';
 $string['colors:800000'] = 'Maroon';
 $string['colors:800080'] = 'Purple';
 $string['colors:808000'] = 'Olive';
-$string['colors:808080'] = 'Gray';
+$string['colors:808080'] = 'Grey';
 $string['colors:993300'] = 'Burnt orange';
 $string['colors:993366'] = 'Brown';
-$string['colors:999999'] = 'Medium gray';
+$string['colors:999999'] = 'Medium grey';
 $string['colors:99CC00'] = 'Yellow green';
 $string['colors:99CCFF'] = 'Light sky blue';
 $string['colors:C0C0C0'] = 'Silver';
@@ -600,7 +600,7 @@ $string['paste:selectall_desc'] = 'Select All';
 $string['paste_dlg:text_linebreaks'] = 'Keep linebreaks';
 $string['paste_dlg:text_title'] = 'Use Ctrl+V on your keyboard to paste the text into the window.';
 $string['paste_dlg:word_title'] = 'Use Ctrl+V on your keyboard to paste the text into the window.';
-$string['pluginname'] = 'TinyMCE HTML editor';
+$string['pluginname'] = 'TinyMCE HTML editor (legacy)';
 $string['preview:preview_desc'] = 'Preview';
 $string['print:print_desc'] = 'Print';
 $string['privacy:metadata'] = 'The TinyMCE HTML editor plugin does not store any personal data.';

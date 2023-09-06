@@ -76,6 +76,35 @@ class mod_scorm_renderer extends plugin_renderer_base {
         return html_writer::tag('div', $output, array('class' => 'paging'));
     }
 
+    /**
+     * Rendered HTML for the report action is provided.
+     *
+     * @param \mod_scorm\output\actionbar $actionbar actionbar object.
+     * @return bool|string rendered HTML for the report action.
+     */
+    public function report_actionbar(\mod_scorm\output\actionbar $actionbar): string {
+        return $this->render_from_template('mod_scorm/report_actionbar', $actionbar->export_for_template($this));
+    }
+
+    /**
+     * Rendered HTML for the user report action is provided
+     *
+     * @param \mod_scorm\output\userreportsactionbar $userreportsactionbar userreportsactionbar object
+     * @return string rendered HTML for the user report action.
+     */
+    public function user_report_actionbar(\mod_scorm\output\userreportsactionbar $userreportsactionbar): string {
+        return $this->render_from_template('mod_scorm/user_report_actionbar', $userreportsactionbar->export_for_template($this));
+    }
+
+    /**
+     * Generate the SCORM's "Exit activity" button
+     *
+     * @param string $url The url to be hooked up to the exit button
+     * @return string
+     */
+    public function generate_exitbar(string $url): string {
+        return $this->render_from_template('mod_scorm/player_exitbar', ['action' => $url]);
+    }
 }
 
 /**

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'es', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'es', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -63,6 +63,7 @@ $string['pleaseselectananswer'] = 'Por favor, selecciona una respuesta.';
 $string['pleaseselectatleastoneanswer'] = 'Por favor, selecciona al menos una respuesta.';
 $string['pluginname'] = 'Opción múltiple';
 $string['pluginname_help'] = 'En respuesta a una pregunta (puede incluir una imagen) el estudiante escoge la respuesta entre varias respuestas posibles. Una pregunta de opción múltiple puede tener una o varias respuesta(s) correcta(s).';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = 'Agregando pregunta de opción múltiple';
 $string['pluginnameediting'] = 'Editando una pregunta de opción múltiple';
 $string['pluginnamesummary'] = 'Permite la selección de una o varias respuestas a partir de una lista predefinida.';
@@ -73,9 +74,11 @@ $string['privacy:preference:penalty'] = 'La penalización por cada intento incor
 $string['privacy:preference:showstandardinstruction'] = 'Si muestra instrucción estándar.';
 $string['privacy:preference:shuffleanswers'] = 'Si las respuestas deben mezclarse automáticamente.';
 $string['privacy:preference:single'] = 'Si la respuesta es simple con botones de opción o múltiple con casillas de verificación.';
+$string['regradeissuenumchoiceschanged'] = 'El número de opciones de la pregunta ha cambiado.';
 $string['selectmulti'] = 'Seleccione una o más de una:';
 $string['selectone'] = 'Seleccione una:';
 $string['showstandardinstruction'] = 'Mostrar instrucciones estándar';
+$string['showstandardinstruction_desc'] = 'Si se muestran o no las insrucciones "Seleccione una:" o "Seleccione una o más:" antes de las preguntas de respuesta múltiple.';
 $string['showstandardinstruction_help'] = 'Si se muestran las instrucciones "Seleccione una:" o "Seleccione una o más:" antes de las opciones de respuesta.';
 $string['shuffleanswers'] = '¿Barajar respuestas?';
 $string['shuffleanswers_desc'] = 'Si por defecto las opciones deben ser barajadas aleatoriamente para cada intento.';

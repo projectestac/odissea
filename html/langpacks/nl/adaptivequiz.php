@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'adaptivequiz', language 'nl', version '3.11'.
+ * Strings for component 'adaptivequiz', language 'nl', version '4.1'.
  *
  * @package     adaptivequiz
  * @category    string
@@ -25,14 +25,34 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adaptivequizname'] = 'Naam';
+$string['answer'] = 'Antwoord';
+$string['answerdistgraph_right'] = 'Correct';
+$string['answerdistgraph_wrong'] = 'Fout';
+$string['answers_display_name'] = 'Antwoorden';
+$string['attempt_user'] = 'Gebruiker';
 $string['attemptclosed'] = 'Deze poging werd manueel afgesloten.';
 $string['attemptclosedstatus'] = 'Manueel afgesloten door {$a->current_user_name} (user-id: {$a->current_user_id}) op {$a->now}.';
 $string['attemptfirst'] = 'Eerste poging';
 $string['attemptlast'] = 'Vorige poging';
+$string['attemptquestion_num'] = '#';
 $string['attemptquestion_rightwrong'] = 'Juist/Onjuist';
+$string['bestscore'] = 'Beste score';
 $string['bestscorestderror'] = 'Standaardfout';
+$string['browsersecurity'] = 'Browserbeveiliging';
+$string['deleteattemp'] = 'Verwijder poging';
+$string['discrimination_display_name'] = 'Discriminatie';
+$string['downloadcsv'] = 'CSV downloaden';
 $string['errorclosingattempt_alreadycomplete'] = 'Deze poging is bijna compleet, ze kan niet manueel afgesloten worden.';
+$string['formelementempty'] = 'Voer een positief heel getal in van 1 tot 999';
+$string['formelementnegative'] = 'Voer een positief getal in van 1 tot 999';
+$string['formelementnumeric'] = 'Voer een numerieke waarde in van 1 tot 999';
+$string['gradehighest'] = 'Hoogste cijfer';
+$string['grademethod'] = 'Beoordelingsmethode';
 $string['graphlegend_error'] = 'Standaardfout';
+$string['graphlegend_target'] = 'Doelniveau';
+$string['highestlevel'] = 'Hoogste moeilijkheidsniveau';
+$string['lowestlevel'] = 'Laagste moeilijkheidsniveau';
 $string['maximumquestions'] = 'Maximum aantal vragen';
 $string['na'] = 'n.v.t.';
 $string['name'] = 'Naam';
@@ -41,8 +61,14 @@ $string['question_report'] = 'Vraaganalyse';
 $string['questionanalysisbtn'] = 'Vraaganalyse';
 $string['questionnumber'] = 'Vraag #';
 $string['questions_report'] = 'Vraagrapportage';
+$string['recentcomplete'] = 'Voltooid';
+$string['recentinprogress'] = 'Bezig';
+$string['reportattemptsfilterformheader'] = 'Filteren';
+$string['reportattemptsfilterformsubmit'] = 'Filter';
+$string['reportattemptsfilterusers'] = 'Toon';
 $string['requirepassword'] = 'Wachtwoord vereist';
 $string['result'] = 'Resultaat';
+$string['score'] = 'Score';
 $string['standarderror'] = 'Standaardfout om te stoppen';
 $string['standarderrorhdr'] = 'Standaardfout';
 $string['statistic'] = 'Statistiek';

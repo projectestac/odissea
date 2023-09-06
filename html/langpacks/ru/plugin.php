@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ru', version '3.11'.
+ * Strings for component 'plugin', language 'ru', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -67,6 +67,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Плагинов этого типа не установлено';
 $string['notdownloadable'] = 'Не удается загрузить пакет';
 $string['notdownloadable_help'] = 'ZIP-пакет с обновлением не может быть загружен автоматически.';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = 'Заметки';
 $string['notsupported'] = 'Плагин может быть не совместим с версией Moodle {$a}';
 $string['notwritable'] = 'Файлы плагинов не перезаписываются';
@@ -83,7 +84,7 @@ $string['packagesdownloading'] = 'Идет загрузка {$a}';
 $string['packagesextracting'] = 'Идет извлечение {$a}';
 $string['packagesvalidating'] = 'Идет проверка {$a}';
 $string['packagesvalidatingfailed'] = 'Установка отменена в связи с ошибкой проверки';
-$string['packagesvalidatingok'] = 'Проверка прошла успешна, установка может быть продолжена';
+$string['packagesvalidatingok'] = 'Проверка прошла успешно, установка может быть продолжена';
 $string['plugincheckall'] = 'Все плагины';
 $string['plugincheckattention'] = 'Плагины, требующие внимания';
 $string['pluginchecknone'] = 'Сейчас нет плагинов, требующих внимания';
@@ -127,6 +128,8 @@ $string['type_calendartype'] = 'Тип календаря';
 $string['type_calendartype_plural'] = 'Типы календарей';
 $string['type_contentbank'] = 'Банк контента';
 $string['type_contentbank_plural'] = 'Плагины банка контента';
+$string['type_contenttype'] = 'Банк контента';
+$string['type_contenttype_plural'] = 'Плагины банка контента';
 $string['type_coursereport'] = 'Отчет по курсу';
 $string['type_coursereport_plural'] = 'Отчеты по курсам';
 $string['type_customfield'] = 'Пользовательское поле';
@@ -173,6 +176,8 @@ $string['type_portfolio'] = 'Портфолио';
 $string['type_portfolio_plural'] = 'Портфолио';
 $string['type_profilefield'] = 'Тип поля профиля';
 $string['type_profilefield_plural'] = 'Типы полей профиля';
+$string['type_qbank'] = 'Плагин банка вопросов';
+$string['type_qbank_plural'] = 'Плагины банка вопросов';
 $string['type_qbehaviour'] = 'Поведение вопросов';
 $string['type_qbehaviour_plural'] = 'Поведение вопросов';
 $string['type_qformat'] = 'Формат импорта/экспорта вопросов';
@@ -222,6 +227,7 @@ $string['validationmsg_maturity'] = 'Заявленная стадия разр�
 $string['validationmsg_maturity_help'] = 'Для плагина может быть указана стадия разработки. Если разработчик считает плагин стабильным, то он указывает значение MATURITY_STABLE. Все остальные стадии разработки (например, альфа- или бета-) считаются нестабильными. В этом случае выводится соответствующее предупреждение.';
 $string['validationmsg_missingcomponent'] = 'Для плагина не указано название компонента';
 $string['validationmsg_missingcomponent_help'] = 'Для всех плагинов должно быть указано полное название компонента. Это делается путем объявления переменной «$plugin->component» в файле version.php.';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = 'Неправильное имя языкового файла для английского языка';
 $string['validationmsg_missingexpectedlangenfile_info'] = 'Отсутствует необходимый для данного типа плагина языковой файл английского языка «{$a}».';
 $string['validationmsg_missinglangenfile'] = 'Не найден языковой файл для английского языка';

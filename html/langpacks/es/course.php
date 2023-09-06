@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'es', version '3.11'.
+ * Strings for component 'course', language 'es', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -49,6 +49,8 @@ $string['aria:favourite'] = 'El curso es destacado';
 $string['aria:favouritestab'] = 'Actividades destacadas';
 $string['aria:modulefavourite'] = 'Destacar actividad {$a}';
 $string['aria:recommendedtab'] = 'Actividades recomendadas';
+$string['browsecourseadminindex'] = 'Explorar la administración del curso con este índice.';
+$string['browsesettingindex'] = 'Examine la configuración con este índice.';
 $string['completion_automatic:done'] = 'Hecho:';
 $string['completion_automatic:failed'] = 'Error:';
 $string['completion_automatic:todo'] = 'Por hacer:';
@@ -61,9 +63,17 @@ $string['completion_setby:auto:todo'] = 'Por hacer: {$a->condition} (establecido
 $string['completion_setby:manual:done'] = '{$a->activityname} está marcado por {$a->setby} como completado. Presione para deshacer.';
 $string['completion_setby:manual:markdone'] = '{$a->activityname} está marcado por {$a->setby} como no completado. Presione para marcar como completado.';
 $string['completionrequirements'] = 'Requisitos para la finalización de {$a}';
+$string['courseaccess'] = 'Acceso al curso';
 $string['coursealreadyfinished'] = 'Curso ya completado';
+$string['coursecontentnotification'] = 'Enviar notificación de actualización de contenido';
+$string['coursecontentnotification_help'] = 'Marque la casilla para notificar a los participantes del curso sobre esta actividad o recurso nuevo o modificado. Solo los usuarios que puedan acceder a la actividad o recurso recibirán la notificación.';
+$string['coursecontentnotifnew'] = '{$a->coursename} contenido nuevo';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> es nuevo en el curso <a href="{$a-> Courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambiar sus preferencias de notificación</a></p>';
+$string['coursecontentnotifupdate'] = '{$a->coursename} cambio de contenido';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> se ha cambiado en el curso <a href="{$a- >courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambiar sus preferencias de notificación</a></p>';
 $string['coursenotyetfinished'] = 'El curso aún no ha sido completado.';
 $string['coursenotyetstarted'] = 'El curso aún no ha comenzado.';
+$string['courseparticipants'] = 'Participantes del curso';
 $string['coursetoolong'] = 'El curso es demasiado largo.';
 $string['customfield_islocked'] = 'Bloqueado';
 $string['customfield_islocked_help'] = 'Cuando el campo está bloqueado, solamente los usuarios con la capacidad para "Modificar campos bloqueados" (por defecto solamente los usuarios con el rol de Mánager) podrán cambiarlo en las configuraciones del curso.';
@@ -73,6 +83,9 @@ $string['customfield_visibility_help'] = 'Este parámetro determina quién puede
 $string['customfield_visibletoall'] = 'Todos';
 $string['customfield_visibletoteachers'] = 'Profesores';
 $string['customfieldsettings'] = 'Configuraciones para campos comunes personalizados del curso';
+$string['daystakingcourse'] = 'Días de curso';
+$string['downloadcontent'] = 'Incluir en la descarga de contenido del curso';
+$string['downloadcontent_help'] = '¿Debe incluirse esta actividad o recurso en el archivo zip del contenido del curso disponible para descargar? El archivo, la carpeta, la página y la etiqueta se pueden descargar por completo. Para todas las demás actividades y recursos, solo se descargan el nombre y la descripción. Esta opción requiere que la descarga del contenido del curso esté habilitada en la configuración del curso. La configuración no tiene efecto en la descarga de contenido de la aplicación móvil para uso sin conexión.';
 $string['downloadcourseconfirmation'] = 'Está a punto de descargar un archivo ZIP de contenidos del curso (excluyendo elementos que no pueden ser descargados y cualquier archivo mayor a {$a}).';
 $string['downloadcoursecontent'] = 'Descargar contenido del curso';
 $string['downloadcoursecontent_help'] = 'Esta configuración determina si el contenido del curso puede ser descargado por usuarios con la capacidad para descargar contenido del curso (por defecto usuarios con el rol de estudiante o profesor).';
@@ -82,6 +95,7 @@ $string['favourite'] = 'Curso destacado';
 $string['gradetopassnotset'] = 'Este curso no tiene configurada una calificación para superarlo. Puede configurarse en el elemento de calificación del curso (Configuración del Libro de calificaciones).';
 $string['informationformodule'] = 'Información acerca de la actividad {$a}';
 $string['module'] = 'Actividad';
+$string['namewithlink'] = 'Nombre de la categoría con enlace';
 $string['noaccesssincestartinfomessage'] = 'Hola {$a->userfirstname},
 <p>Un número de estudiantes en {$a->coursename} nunca han accedido al curso.</p>';
 $string['nocourseactivity'] = 'No hay suficientes actividades del curso entre el principio y el fin del curso';
@@ -92,6 +106,9 @@ $string['norecentaccessesinfomessage'] = 'Hola {$a->userfirstname},
 <p>Un número de estudiantes en {$a->coursename} no han accedido recientemente al curso.</p>';
 $string['noteachinginfomessage'] = 'Hola {$a->userfirstname},
 <p>Los cursos con fechas de inicio en la próxima semana han sido identificados como cursos que no tienen inscripciones de profesores o estudiantes.</p>';
+$string['participants:perpage'] = 'Número de participantes por página';
+$string['participants:perpage_help'] = 'El número de usuarios mostrados por página en la página de participantes en cada curso.';
+$string['participantsnavigation'] = 'Participantes navegación terciaria.';
 $string['privacy:completionpath'] = 'Finalización del curso';
 $string['privacy:favouritespath'] = 'Información de curso destacado';
 $string['privacy:metadata:activityfavouritessummary'] = 'El sistema del curso contiene información acerca de cuales elementos del selector de actividades han sido destacados por el usuario.';

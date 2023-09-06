@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'fr', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'fr', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -40,6 +40,7 @@ $string['clivalidationerror'] = 'Erreur de validation :';
 $string['csvdelimiter'] = 'Séparateur CSV';
 $string['defaultvalues'] = 'Valeurs par défaut';
 $string['deleteerrors'] = 'Erreurs lors de suppressions';
+$string['duplicateemail'] = 'Plusieurs utilisateurs détectés avec l\'adresse de courriel {$a}';
 $string['encoding'] = 'Encodage';
 $string['errormnetadd'] = 'Impossible d\'ajouter des utilisateurs distants';
 $string['errorprefix'] = 'Erreur :';
@@ -53,6 +54,7 @@ $string['invalidtheme'] = 'Le thème « {$a} » n\'est pas installé et sera i
 $string['invalidupdatetype'] = 'Cette option ne peut pas être sélectionnée avec le type de dépôt choisi.';
 $string['invaliduserdata'] = 'Données invalides détectées pour l\'utilisateur {$a}. Nettoyage automatique effectué.';
 $string['linex'] = 'Ligne {$a}';
+$string['matchemail'] = 'Correspondance sur l\'adresse de courriel';
 $string['nochanges'] = 'Aucune modification';
 $string['notheme'] = 'Aucun thème défini pour cet utilisateur.';
 $string['pluginname'] = 'Déposer des comptes utilisateurs';
@@ -82,6 +84,7 @@ $string['uploadusers_help'] = 'Il est possible d\'importer manuellement des comp
 * chaque enregistrement est constitué d\'une série de données séparées par le caractère de séparation sélectionné ;
 * le premier enregistrement contient la liste des noms des champs définissant le format du reste du fichier ;
 * les champs requis sont username, password, firstname, lastname, email.';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Prévisualisation de la création d\'utilisateurs';
 $string['uploadusersresult'] = 'Résultats de la création d\'utilisateurs';
 $string['useraccountupdated'] = 'Utilisateur modifié';

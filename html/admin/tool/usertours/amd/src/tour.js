@@ -14,23 +14,47 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Manage user tours in Moodle.
+ * A user tour.
  *
  * @module tool_usertours/tour
  * @copyright  2018 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/**
+ * A list of steps.
+ *
+ * @typedef {Object[]} StepList
+ * @property {Number} stepId The id of the step in the database
+ * @property {Number} position The position of the step within the tour (zero-indexed)
+ */
+
 import $ from 'jquery';
 import * as Aria from 'core/aria';
 import Popper from 'core/popper';
+import {dispatchEvent} from 'core/event_dispatcher';
+import {eventTypes} from './events';
+import {get_string as getString} from 'core/str';
+import {prefetchStrings} from 'core/prefetch';
 
 /**
- * A Tour.
+ * The minimum spacing for tour step to display.
  *
- * @class
+ * @private
+ * @constant
+ * @type {number}
  */
-export default class Tour {
+const MINSPACING = 10;
+
+/**
+ * A user tour.
+ *
+ * @class tool_usertours/tour
+ * @property {boolean} tourRunning Whether the tour is currently running.
+ */
+const Tour = class {
+    tourRunning = false;
+
     /**
      * @param   {object}    config  The configuration object.
      */
@@ -59,6 +83,12 @@ export default class Tour {
         // Apply configuration.
         this.configure.apply(this, arguments);
 
+        // Unset recalculate state.
+        this.possitionNeedToBeRecalculated = false;
+
+        // Unset recalculate count.
+        this.recalculatedNo = 0;
+
         try {
             this.storage = window.sessionStorage;
             this.storageKey = 'tourstate_' + this.tourName;
@@ -66,6 +96,11 @@ export default class Tour {
             this.storage = false;
             this.storageKey = '';
         }
+
+        prefetchStrings('tool_usertours', [
+            'nextstep_sequence',
+            'skip_tour'
+        ]);
 
         return this;
     }
@@ -215,7 +250,7 @@ export default class Tour {
      * Retrieve the current step number.
      *
      * @method  getCurrentStepNumber
-     * @return  {Integer}                   The current step number
+     * @return  {Number}                   The current step number
      */
     getCurrentStepNumber() {
         return parseInt(this.currentStepNumber, 10);
@@ -225,7 +260,7 @@ export default class Tour {
      * Store the current step number.
      *
      * @method  setCurrentStepNumber
-     * @param   {Integer}   stepNumber      The current step number
+     * @param   {Number}   stepNumber      The current step number
      * @chainable
      */
     setCurrentStepNumber(stepNumber) {
@@ -245,8 +280,8 @@ export default class Tour {
      * Get the next step number after the currently displayed step.
      *
      * @method  getNextStepNumber
-     * @param   {Integer}   stepNumber      The current step number
-     * @return  {Integer}    The next step number to display
+     * @param   {Number}   stepNumber      The current step number
+     * @return  {Number}    The next step number to display
      */
     getNextStepNumber(stepNumber) {
         if (typeof stepNumber === 'undefined') {
@@ -269,8 +304,8 @@ export default class Tour {
      * Get the previous step number before the currently displayed step.
      *
      * @method  getPreviousStepNumber
-     * @param   {Integer}   stepNumber      The current step number
-     * @return  {Integer}    The previous step number to display
+     * @param   {Number}   stepNumber      The current step number
+     * @return  {Number}    The previous step number to display
      */
     getPreviousStepNumber(stepNumber) {
         if (typeof stepNumber === 'undefined') {
@@ -293,26 +328,13 @@ export default class Tour {
      * Is the step the final step number?
      *
      * @method  isLastStep
-     * @param   {Integer}   stepNumber  Step number to test
+     * @param   {Number}   stepNumber  Step number to test
      * @return  {Boolean}               Whether the step is the final step
      */
     isLastStep(stepNumber) {
         let nextStepNumber = this.getNextStepNumber(stepNumber);
 
         return nextStepNumber === null;
-    }
-
-    /**
-     * Is the step the first step number?
-     *
-     * @method  isFirstStep
-     * @param   {Integer}   stepNumber  Step number to test
-     * @return  {Boolean}               Whether the step is the first step
-     */
-    isFirstStep(stepNumber) {
-        let previousStepNumber = this.getPreviousStepNumber(stepNumber);
-
-        return previousStepNumber === null;
     }
 
     /**
@@ -348,6 +370,26 @@ export default class Tour {
     }
 
     /**
+     * Get potentially visible steps in a tour.
+     *
+     * @returns {StepList} A list of ordered steps
+     */
+    getPotentiallyVisibleSteps() {
+        let position = 1;
+        let result = [];
+        // Checking the total steps.
+        for (let stepNumber = 0; stepNumber < this.steps.length; stepNumber++) {
+            const stepConfig = this.getStepConfig(stepNumber);
+            if (this.isStepPotentiallyVisible(stepConfig)) {
+                result[stepNumber] = {stepId: stepConfig.stepid, position: position};
+                position++;
+            }
+        }
+
+        return result;
+    }
+
+    /**
      * Is this step actually visible?
      *
      * @method  isStepActuallyVisible
@@ -360,6 +402,11 @@ export default class Tour {
             return false;
         }
 
+        // Check if the CSS styles are allowed on the browser or not.
+        if (!this.isCSSAllowed()) {
+            return false;
+        }
+
         let target = this.getStepTarget(stepConfig);
         if (target && target.length && target.is(':visible')) {
             // Without a target, there can be no step.
@@ -367,6 +414,22 @@ export default class Tour {
         }
 
         return false;
+    }
+
+    /**
+     * Is the browser actually allow CSS styles?
+     *
+     * @returns {boolean} True if the browser is allowing CSS styles
+     */
+    isCSSAllowed() {
+        const testCSSElement = document.createElement('div');
+        testCSSElement.classList.add('hide');
+        document.body.appendChild(testCSSElement);
+        const styles = window.getComputedStyle(testCSSElement);
+        const isAllowed = styles.display === 'none';
+        testCSSElement.remove();
+
+        return isAllowed;
     }
 
     /**
@@ -395,10 +458,14 @@ export default class Tour {
      * Go to the specified step in the tour.
      *
      * @method  gotoStep
-     * @param   {Integer}   stepNumber     The step number to display
-     * @param   {Integer}   direction      Next or previous step
+     * @param   {Number}   stepNumber     The step number to display
+     * @param   {Number}   direction      Next or previous step
      * @chainable
      * @return {Object} this.
+     * @fires tool_usertours/stepRender
+     * @fires tool_usertours/stepRendered
+     * @fires tool_usertours/stepHide
+     * @fires tool_usertours/stepHidden
      */
     gotoStep(stepNumber, direction) {
         if (stepNumber < 0) {
@@ -430,9 +497,11 @@ export default class Tour {
 
         this.hide();
 
-        this.fireEventHandlers('beforeRender', stepConfig);
-        this.renderStep(stepConfig);
-        this.fireEventHandlers('afterRender', stepConfig);
+        const stepRenderEvent = this.dispatchEvent(eventTypes.stepRender, {stepConfig}, true);
+        if (!stepRenderEvent.defaultPrevented) {
+            this.renderStep(stepConfig);
+            this.dispatchEvent(eventTypes.stepRendered, {stepConfig});
+        }
 
         return this;
     }
@@ -441,7 +510,7 @@ export default class Tour {
      * Fetch the normalised step configuration for the specified step number.
      *
      * @method  getStepConfig
-     * @param   {Integer}   stepNumber      The step number to fetch configuration for
+     * @param   {Number}   stepNumber      The step number to fetch configuration for
      * @return  {Object}                    The step configuration
      */
     getStepConfig(stepNumber) {
@@ -513,21 +582,23 @@ export default class Tour {
     /**
      * Fire any event handlers for the specified event.
      *
-     * @param   {String}    eventName       The name of the event to handle
-     * @param   {Object}    data            Any data to pass to the event
-     * @chainable
-     * @return {Object} this.
+     * @param {String} eventName The name of the event
+     * @param {Object} [detail={}] Any additional details to pass into the eveent
+     * @param {Boolean} [cancelable=false] Whether preventDefault() can be called
+     * @returns {CustomEvent}
      */
-    fireEventHandlers(eventName, data) {
-        if (typeof this.eventHandlers[eventName] === 'undefined') {
-            return this;
-        }
-
-        this.eventHandlers[eventName].forEach(function(thisEvent) {
-            thisEvent.call(this, data);
-        }, this);
-
-        return this;
+    dispatchEvent(
+        eventName,
+        detail = {},
+        cancelable = false
+    ) {
+        return dispatchEvent(eventName, {
+            // Add the tour to the detail.
+            tour: this,
+            ...detail,
+        }, document, {
+            cancelable,
+        });
     }
 
     /**
@@ -556,13 +627,10 @@ export default class Tour {
      */
     processStepListeners(stepConfig) {
         this.listeners.push(
-        // Next/Previous buttons.
+        // Next button.
         {
             node: this.currentStepNode,
             args: ['click', '[data-role="next"]', $.proxy(this.next, this)]
-        }, {
-            node: this.currentStepNode,
-            args: ['click', '[data-role="previous"]', $.proxy(this.previous, this)]
         },
 
         // Close and end tour buttons.
@@ -646,24 +714,39 @@ export default class Tour {
         template.find('[data-placeholder="body"]')
             .html(stepConfig.body);
 
-        // Is this the first step?
-        if (this.isFirstStep(stepConfig.stepNumber)) {
-            template.find('[data-role="previous"]').hide();
-        } else {
-            template.find('[data-role="previous"]').prop('disabled', false);
-        }
+        // Buttons.
+        const nextBtn = template.find('[data-role="next"]');
+        const endBtn = template.find('[data-role="end"]');
 
         // Is this the final step?
         if (this.isLastStep(stepConfig.stepNumber)) {
-            template.find('[data-role="next"]').hide();
-            template.find('[data-role="end"]').removeClass("btn-secondary").addClass("btn-primary");
+            nextBtn.hide();
+            endBtn.removeClass("btn-secondary").addClass("btn-primary");
         } else {
-            template.find('[data-role="next"]').prop('disabled', false);
+            nextBtn.prop('disabled', false);
+            // Use Skip tour label for the End tour button.
+            getString('skip_tour', 'tool_usertours').then(value => {
+                endBtn.html(value);
+                return;
+            }).catch();
         }
 
-        template.find('[data-role="previous"]').attr('role', 'button');
-        template.find('[data-role="next"]').attr('role', 'button');
-        template.find('[data-role="end"]').attr('role', 'button');
+        nextBtn.attr('role', 'button');
+        endBtn.attr('role', 'button');
+
+        if (this.originalConfiguration.displaystepnumbers) {
+            const stepsPotentiallyVisible = this.getPotentiallyVisibleSteps();
+            const totalStepsPotentiallyVisible = stepsPotentiallyVisible.length;
+            const position = stepsPotentiallyVisible[stepConfig.stepNumber].position;
+            if (totalStepsPotentiallyVisible > 1) {
+                // Change the label of the Next button to include the sequence.
+                getString('nextstep_sequence', 'tool_usertours',
+                    {position: position, total: totalStepsPotentiallyVisible}).then(value => {
+                    nextBtn.html(value);
+                    return;
+                }).catch();
+            }
+        }
 
         // Replace the template with the updated version.
         stepConfig.template = template;
@@ -708,6 +791,10 @@ export default class Tour {
 
         if (this.isStepActuallyVisible(stepConfig)) {
             let targetNode = this.getStepTarget(stepConfig);
+
+            if (targetNode.parents('[data-usertour="scroller"]').length) {
+                animationTarget = targetNode.parents('[data-usertour="scroller"]');
+            }
 
             targetNode.data('flexitour', 'target');
 
@@ -762,7 +849,6 @@ export default class Tour {
             $(document.body).append(currentStepNode);
             this.currentStepNode = currentStepNode;
 
-            this.currentStepNode.offset(this.calculateStepPositionInPage());
             this.currentStepNode.css('position', 'fixed');
 
             this.currentStepPopper = new Popper(
@@ -780,6 +866,17 @@ export default class Tour {
                             onLoad: null,
                             enabled: false,
                         },
+                    },
+                    onCreate: () => {
+                        // First, we need to check if the step's content contains any images.
+                        const images = this.currentStepNode.find('img');
+                        if (images.length) {
+                            // Images found, need to calculate the position when the image is loaded.
+                            images.on('load', () => {
+                                this.calculateStepPositionInPage(currentStepNode);
+                            });
+                        }
+                        this.calculateStepPositionInPage(currentStepNode);
                     }
                 }
             );
@@ -854,6 +951,7 @@ export default class Tour {
         // Configure ARIA attributes on the target.
         let target = this.getStepTarget(stepConfig);
         if (target) {
+            target.data('original-tabindex', target.attr('tabindex'));
             if (!target.attr('tabindex')) {
                 target.attr('tabindex', 0);
             }
@@ -968,9 +1066,11 @@ export default class Tour {
      * Start the current tour.
      *
      * @method  startTour
-     * @param   {Integer}   startAt     Which step number to start at. If not specified, starts at the last point.
+     * @param   {Number} startAt Which step number to start at. If not specified, starts at the last point.
      * @chainable
      * @return {Object} this.
+     * @fires tool_usertours/tourStart
+     * @fires tool_usertours/tourStarted
      */
     startTour(startAt) {
         if (this.storage && typeof startAt === 'undefined') {
@@ -987,9 +1087,12 @@ export default class Tour {
             startAt = this.getCurrentStepNumber();
         }
 
-        this.fireEventHandlers('beforeStart', startAt);
-        this.gotoStep(startAt);
-        this.fireEventHandlers('afterStart', startAt);
+        const tourStartEvent = this.dispatchEvent(eventTypes.tourStart, {startAt}, true);
+        if (!tourStartEvent.defaultPrevented) {
+            this.gotoStep(startAt);
+            this.tourRunning = true;
+            this.dispatchEvent(eventTypes.tourStarted, {startAt});
+        }
 
         return this;
     }
@@ -1011,9 +1114,14 @@ export default class Tour {
      * @method  endTour
      * @chainable
      * @return {Object} this.
+     * @fires tool_usertours/tourEnd
+     * @fires tool_usertours/tourEnded
      */
     endTour() {
-        this.fireEventHandlers('beforeEnd');
+        const tourEndEvent = this.dispatchEvent(eventTypes.tourEnd, {}, true);
+        if (tourEndEvent.defaultPrevented) {
+            return this;
+        }
 
         if (this.currentStepConfig) {
             let previousTarget = this.getStepTarget(this.currentStepConfig);
@@ -1027,7 +1135,8 @@ export default class Tour {
 
         this.hide(true);
 
-        this.fireEventHandlers('afterEnd');
+        this.tourRunning = false;
+        this.dispatchEvent(eventTypes.tourEnded);
 
         return this;
     }
@@ -1039,9 +1148,14 @@ export default class Tour {
      * @param {Bool} transition Animate the visibility change
      * @chainable
      * @return {Object} this.
+     * @fires tool_usertours/stepHide
+     * @fires tool_usertours/stepHidden
      */
     hide(transition) {
-        this.fireEventHandlers('beforeHide');
+        const stepHideEvent = this.dispatchEvent(eventTypes.stepHide, {}, true);
+        if (stepHideEvent.defaultPrevented) {
+            return this;
+        }
 
         if (this.currentStepNode && this.currentStepNode.length) {
             this.currentStepNode.hide();
@@ -1064,6 +1178,12 @@ export default class Tour {
 
                 if (target.data('original-tabindex')) {
                     target.attr('tabindex', target.data('tabindex'));
+                } else {
+                    // If the target does not have the tabindex attribute at the beginning. We need to remove it.
+                    // We should wait a little here before removing the attribute to prevent the browser from adding it again.
+                    window.setTimeout(() => {
+                        target.removeAttr('tabindex');
+                    }, 400);
                 }
             }
 
@@ -1098,7 +1218,7 @@ export default class Tour {
 
         this.accessibilityHide();
 
-        this.fireEventHandlers('afterHide');
+        this.dispatchEvent(eventTypes.stepHidden);
 
         this.currentStepNode = null;
         this.currentStepPopper = null;
@@ -1137,16 +1257,21 @@ export default class Tour {
      * @return  {Number}
      */
     calculateScrollTop(stepConfig) {
-        let scrollTop = $(window).scrollTop();
         let viewportHeight = $(window).height();
         let targetNode = this.getStepTarget(stepConfig);
+
+        let scrollParent = $(window);
+        if (targetNode.parents('[data-usertour="scroller"]').length) {
+            scrollParent = targetNode.parents('[data-usertour="scroller"]');
+        }
+        let scrollTop = scrollParent.scrollTop();
 
         if (stepConfig.placement === 'top') {
             // If the placement is top, center scroll at the top of the target.
             scrollTop = targetNode.offset().top - (viewportHeight / 2);
         } else if (stepConfig.placement === 'bottom') {
             // If the placement is bottom, center scroll at the bottom of the target.
-            scrollTop = targetNode.offset().top + targetNode.height() - (viewportHeight / 2);
+            scrollTop = targetNode.offset().top + targetNode.height() + scrollTop - (viewportHeight / 2);
         } else if (targetNode.height() <= (viewportHeight * 0.8)) {
             // If the placement is left/right, and the target fits in the viewport, centre screen on the target
             scrollTop = targetNode.offset().top - ((viewportHeight - targetNode.height()) / 2);
@@ -1168,20 +1293,31 @@ export default class Tour {
     /**
      * Calculate dialogue position for page middle.
      *
+     * @param {jQuery} currentStepNode Current step node
      * @method  calculateScrollTop
-     * @return  {Number}
      */
-    calculateStepPositionInPage() {
-        let viewportHeight = $(window).height();
-        let stepHeight = this.currentStepNode.height();
-
-        let viewportWidth = $(window).width();
-        let stepWidth = this.currentStepNode.width();
-
-        return {
-            top: Math.ceil((viewportHeight - stepHeight) / 2),
+    calculateStepPositionInPage(currentStepNode) {
+        let top = MINSPACING;
+        const viewportHeight = $(window).height();
+        const stepHeight = currentStepNode.height();
+        const viewportWidth = $(window).width();
+        const stepWidth = currentStepNode.width();
+        if (viewportHeight >= (stepHeight + (MINSPACING * 2))) {
+            top = Math.ceil((viewportHeight - stepHeight) / 2);
+        } else {
+            const headerHeight = currentStepNode.find('.modal-header').first().outerHeight() ?? 0;
+            const footerHeight = currentStepNode.find('.modal-footer').first().outerHeight() ?? 0;
+            const currentStepBody = currentStepNode.find('[data-placeholder="body"]').first();
+            const maxHeight = viewportHeight - (MINSPACING * 2) - headerHeight - footerHeight;
+            currentStepBody.css({
+                'max-height': maxHeight + 'px',
+                'overflow': 'auto',
+            });
+        }
+        currentStepNode.offset({
+            top: top,
             left: Math.ceil((viewportWidth - stepWidth) / 2)
-        };
+        });
     }
 
     /**
@@ -1194,6 +1330,7 @@ export default class Tour {
      */
     positionStep(stepConfig) {
         let content = this.currentStepNode;
+        let thisT = this;
         if (!content || !content.length) {
             // Unable to find the step node.
             return this;
@@ -1233,9 +1370,15 @@ export default class Tour {
             },
             onCreate: function(data) {
                 recalculateArrowPosition(data);
+                recalculateStepPosition(data);
             },
             onUpdate: function(data) {
                 recalculateArrowPosition(data);
+                if (thisT.possitionNeedToBeRecalculated) {
+                    thisT.recalculatedNo++;
+                    thisT.possitionNeedToBeRecalculated = false;
+                    recalculateStepPosition(data);
+                }
             },
         };
 
@@ -1283,6 +1426,90 @@ export default class Tour {
                     $(arrowElement).css('left', newArrowPos);
                 }
             }
+        };
+
+        const recalculateStepPosition = function(data) {
+            const placement = data.placement.split('-')[0];
+            const isVertical = ['left', 'right'].indexOf(placement) !== -1;
+            const popperElement = $(data.instance.popper);
+            const targetElement = $(data.instance.reference);
+            const arrowElement = popperElement.find('[data-role="arrow"]');
+            const stepElement = popperElement.find('[data-role="flexitour-step"]');
+            const viewportHeight = $(window).height();
+            const viewportWidth = $(window).width();
+            const arrowHeight = parseFloat(arrowElement.outerHeight(true));
+            const popperHeight = parseFloat(popperElement.outerHeight(true));
+            const targetHeight = parseFloat(targetElement.outerHeight(true));
+            const arrowWidth = parseFloat(arrowElement.outerWidth(true));
+            const popperWidth = parseFloat(popperElement.outerWidth(true));
+            const targetWidth = parseFloat(targetElement.outerWidth(true));
+            let maxHeight;
+
+            if (thisT.recalculatedNo > 1) {
+                // The current screen is too small, and cannot fit with the original placement.
+                // We should set the placement to auto so the PopperJS can calculate the perfect placement.
+                thisT.currentStepPopper.options.placement = isVertical ? 'auto-left' : 'auto-bottom';
+            }
+            if (thisT.recalculatedNo > 2) {
+                // Return here to prevent recursive calling.
+                return;
+            }
+
+            if (isVertical) {
+                // Find the best place to put the tour: Left of right.
+                const leftSpace = targetElement.offset().left > 0 ? targetElement.offset().left : 0;
+                const rightSpace = viewportWidth - leftSpace - targetWidth;
+                const remainingSpace = leftSpace >= rightSpace ? leftSpace : rightSpace;
+                maxHeight = viewportHeight - MINSPACING * 2;
+                if (remainingSpace < (popperWidth + arrowWidth)) {
+                    const maxWidth = remainingSpace - MINSPACING - arrowWidth;
+                    if (maxWidth > 0) {
+                        popperElement.css({
+                            'max-width': maxWidth + 'px',
+                        });
+                        // Not enough space, flag true to make Popper to recalculate the position.
+                        thisT.possitionNeedToBeRecalculated = true;
+                    }
+                } else if (maxHeight < popperHeight) {
+                    // Check if the Popper's height can fit the viewport height or not.
+                    // If not, set the correct max-height value for the Popper element.
+                    popperElement.css({
+                        'max-height': maxHeight + 'px',
+                    });
+                }
+            } else {
+                // Find the best place to put the tour: Top of bottom.
+                const topSpace = targetElement.offset().top > 0 ? targetElement.offset().top : 0;
+                const bottomSpace = viewportHeight - topSpace - targetHeight;
+                const remainingSpace = topSpace >= bottomSpace ? topSpace : bottomSpace;
+                maxHeight = remainingSpace - MINSPACING - arrowHeight;
+                if (remainingSpace < (popperHeight + arrowHeight)) {
+                    // Not enough space, flag true to make Popper to recalculate the position.
+                    thisT.possitionNeedToBeRecalculated = true;
+                }
+            }
+
+            // Check if the Popper's height can fit the viewport height or not.
+            // If not, set the correct max-height value for the body.
+            const currentStepBody = stepElement.find('[data-placeholder="body"]').first();
+            const headerEle = stepElement.find('.modal-header').first();
+            const footerEle = stepElement.find('.modal-footer').first();
+            const headerHeight = headerEle.outerHeight(true) ?? 0;
+            const footerHeight = footerEle.outerHeight(true) ?? 0;
+            maxHeight = maxHeight - headerHeight - footerHeight;
+            if (maxHeight > 0) {
+                headerEle.removeClass('minimal');
+                footerEle.removeClass('minimal');
+                currentStepBody.css({
+                    'max-height': maxHeight + 'px',
+                    'overflow': 'auto',
+                });
+            } else {
+                headerEle.addClass('minimal');
+                footerEle.addClass('minimal');
+            }
+            // Call the Popper update method to update the position.
+            thisT.currentStepPopper.update();
         };
 
         let background = $('[data-flexitour="step-background"]');
@@ -1347,7 +1574,10 @@ export default class Tour {
             if (this.isStepActuallyVisible(stepConfig)) {
                 // The step has a visible target.
                 // Punch a hole through the backdrop.
-                let background = $('<div data-flexitour="step-background"></div>');
+                let background = $('[data-flexitour="step-background"]');
+                if (!background.length) {
+                    background = $('<div data-flexitour="step-background"></div>');
+                }
 
                 let targetNode = this.getStepTarget(stepConfig);
 
@@ -1358,11 +1588,23 @@ export default class Tour {
                     colorNode = $('body');
                 }
 
+                let drawertop = 0;
+                if (targetNode.parents('[data-usertour="scroller"]').length) {
+                    const scrollerElement = targetNode.parents('[data-usertour="scroller"]');
+                    const navigationBuffer = scrollerElement.offset().top;
+                    if (scrollerElement.scrollTop() >= navigationBuffer) {
+                        drawertop = scrollerElement.scrollTop() - navigationBuffer;
+                        background.css({
+                            position: 'fixed'
+                        });
+                    }
+                }
+
                 background.css({
                     width: targetNode.outerWidth() + buffer + buffer,
                     height: targetNode.outerHeight() + buffer + buffer,
                     left: targetNode.offset().left - buffer,
-                    top: targetNode.offset().top - buffer,
+                    top: targetNode.offset().top + drawertop - buffer,
                     backgroundColor: this.calculateInherittedBackgroundColor(colorNode),
                 });
 
@@ -1373,7 +1615,7 @@ export default class Tour {
                     });
                 }
 
-                if (targetNode.offset().top < buffer) {
+                if ((targetNode.offset().top + drawertop) < buffer) {
                     background.css({
                         height: targetNode.outerHeight() + targetNode.offset().top + buffer,
                         top: targetNode.offset().top,
@@ -1386,9 +1628,7 @@ export default class Tour {
                 }
 
                 let targetPosition = this.calculatePosition(targetNode);
-                if (targetPosition === 'fixed') {
-                    background.css('top', 0);
-                } else if (targetPosition === 'absolute') {
+                if (targetPosition === 'absolute') {
                     background.css('position', 'fixed');
                 }
 
@@ -1398,6 +1638,11 @@ export default class Tour {
                     opacity: backdrop.css('opacity'),
                 });
                 fader.attr('data-flexitour', 'step-background-fader');
+
+                if (targetNode.parents('[data-region="fixed-drawer"]').length) {
+                    let targetClone = targetNode.clone();
+                    background.append(targetClone);
+                }
 
                 if (stepConfig.zIndex) {
                     if (stepConfig.attachPoint === 'append') {
@@ -1561,4 +1806,6 @@ export default class Tour {
             showFunction($(node));
         });
     }
-}
+};
+
+export default Tour;

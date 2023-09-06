@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'el', version '3.11'.
+ * Strings for component 'auth_db', language 'el', version '4.1'.
  *
  * @package     auth_db
  * @category    string
@@ -43,7 +43,7 @@ $string['auth_dbfieldpass_key'] = 'Πεδίο κωδικού πρόσβασης'
 $string['auth_dbfielduser'] = 'Όνομα πεδίου που περιέχει τα ονόματα χρηστών. Το πεδίο αυτό πρέπει να είναι τύπου δεδομένων varchar.';
 $string['auth_dbfielduser_key'] = 'Πεδίο ονόματος χρήστη';
 $string['auth_dbhost'] = 'Ο υπολογιστής που φιλοξενεί τον εξυπηρετητή βάσης δεδομένων. Χρησιμοποιήστε μια καταχώρηση DSN συστήματος αν χρησιμοποιείτε ODBC. Χρησιμοποιήστε μια καταχώρηση DSN PDO εάν χρησιμοποιείτε PDO. (ODBC: Open Database Connectivity) (DSN: Data Source Name) (PDO: PHP Data Objects)';
-$string['auth_dbhost_key'] = 'O Η/Υ που φιλοξενεί τον εξυπηρετητή της βάσης δεδομένων';
+$string['auth_dbhost_key'] = 'Ο Η/Υ που φιλοξενεί τον εξυπηρετητή της βάσης δεδομένων';
 $string['auth_dbinsertuser'] = 'Ο χρήστης «{$a->name}» με αναγνωριστικό «{$a->id}» εισήχθη';
 $string['auth_dbinsertuserduplicate'] = 'Σφάλμα κατά την εισαγωγή χρήστη με όνομα «{$a->username}» - χρήστης με αυτό το όνομα χρήστη δημιουργήθηκε ήδη μέσω του πρόσθετου «{$a->auth}».';
 $string['auth_dbinsertusererror'] = 'Σφάλμα κατά την εισαγωγή του χρήστη «{$a}»';
@@ -57,7 +57,7 @@ $string['auth_dbpasstype'] = '<p>Ορίστε τον μορφότυπο που �
 <p>Χρησιμοποιήστε «εσωτερικά» αν θέλετε η εξωτερική βάση δεδομένων να χειρίζεται ονόματα χρηστών και διευθύνσεις ηλε.ταχυδρομείου ενώ το Moodle να χειρίζεται τους κωδικούς πρόσβασης.
 Αν χρησιμοποιήσετε το «εσωτερικά», <i>πρέπει</i> να παρέχετε μια διεύθυνση ηλε.ταχυδρομείου στο αντίστοιχο πεδίο της εξωτερικής βάσης δεδομένων και πρέπει να ενεργοποιήσετε την χρονοπρογραμματισμένη εργασία \\auth_db\\task\\sync_users. Το Moodle θα στείλει ένα μήνυμα ηλε.ταχυδρομείου στους νέους χρήστες με έναν προσωρινό κωδικό πρόσβασης.</p>';
 $string['auth_dbpasstype_key'] = 'Μορφότυπος κωδικού πρόσβασης';
-$string['auth_dbreviveduser'] = 'O χρήστης «{$a->name}» με αναγνωριστικό «{$a->id}» αναβιώθηκε';
+$string['auth_dbreviveduser'] = 'Ο χρήστης «{$a->name}» με αναγνωριστικό «{$a->id}» αναβιώθηκε';
 $string['auth_dbrevivedusererror'] = 'Σφάλμα κατά την αναβίωση του χρήστη «{$a}»';
 $string['auth_dbsaltedcrypt'] = 'Μονόδρομος κατακερματισμός συμβολοσειράς μέσω της εντολής crypt';
 $string['auth_dbsetupsql'] = 'Εντολή εγκατάστασης SQL';
@@ -65,7 +65,7 @@ $string['auth_dbsetupsqlhelp'] = 'Εντολή SQL για ειδική εγκα�
 $string['auth_dbsuspenduser'] = 'Ο χρήστης με όνομα «{$a->name}» και αναγνωριστικό «{$a->id}» μπήκε σε αναστολή';
 $string['auth_dbsuspendusererror'] = 'Σφάλμα κατά την αναστολή χρήστη «{$a}»';
 $string['auth_dbsybasequoting'] = 'Χρήση sybase εισαγωγικών';
-$string['auth_dbsybasequotinghelp'] = 'Η μορφή sybase μονών εισαγωγικών απαιτείται για την Oracle, την MS SQL και ορισμένες άλλες βάσεις δεδομένων. Μην τα χρησιμοποιείται για την MySQL!';
+$string['auth_dbsybasequotinghelp'] = 'Η μορφή sybase μονών εισαγωγικών απαιτείται για την Oracle, την MS SQL και ορισμένες άλλες βάσεις δεδομένων. Μην τα χρησιμοποιείτε για την MySQL!';
 $string['auth_dbsyncuserstask'] = 'Εργασία συγχρονισμού χρηστών';
 $string['auth_dbtable'] = 'Όνομα του πίνακα στη βάση δεδομένων';
 $string['auth_dbtable_key'] = 'Πίνακας';
@@ -81,4 +81,4 @@ $string['auth_dbuser_key'] = 'Χρήστης βάσης δεδομένων';
 $string['auth_dbuserstoadd'] = 'Καταχωρήσεις χρηστών προς εισαγωγή: {$a}';
 $string['auth_dbuserstoremove'] = 'Καταχωρήσεις χρήστη προς διαγραφή: {$a}';
 $string['pluginname'] = 'Εξωτερική βάση δεδομένων';
-$string['privacy:metadata'] = 'Το πρόσθετο «Αυθεντικοποίηση μέσω εξωτερικής βάσης δεδομένων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata'] = 'Το πρόσθετο αυθεντικοποίησης μέσω εξωτερικής βάσης δεδομένων δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

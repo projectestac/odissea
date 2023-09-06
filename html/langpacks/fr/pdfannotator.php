@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'fr', version '3.11'.
+ * Strings for component 'pdfannotator', language 'fr', version '4.1'.
  *
  * @package     pdfannotator
  * @category    string
@@ -66,6 +66,7 @@ $string['colorPicker'] = 'Choisir une couleur';
 $string['comment'] = 'Commentaire';
 $string['commentDeleted'] = 'Commentaire supprimé';
 $string['comments'] = 'Commentaires';
+$string['configmaxbytes'] = 'Taille maximale du fichier';
 $string['correct'] = 'correct';
 $string['count'] = 'nombre';
 $string['createAnnotation'] = 'Ajouter une annotation';
@@ -105,6 +106,7 @@ $string['error:closequestion'] = 'Une erreur s\'est produite lors de la fermetur
 $string['error:deleteAnnotation'] = 'Une erreur s\'est produite lors de la suppression d\'une annotation.';
 $string['error:editAnnotation'] = 'Une erreur s\'est produite lors de la modification d\'une annotation.';
 $string['error:editcomment'] = 'Une erreur s\'est produite lors de la tentative de modification d\'un commentaire.';
+$string['error:findimage'] = 'Une erreur est survenue lors de la recherche de l\'image {$a}.';
 $string['error:forwardquestion'] = 'Une erreur s\'est produite lors du transfert de la question.';
 $string['error:forwardquestionnorecipient'] = 'Une erreur s\'est produite lors du transfert de la question. : Personne dans ce cours n\'a la capacité de recevoir des questions transférées.';
 $string['error:getAllQuestions'] = 'Une erreur s\'est produite lors de la récupération des questions de ce document.';
@@ -112,14 +114,18 @@ $string['error:getAnnotation'] = 'Une erreur s\'est produite lors de la récupé
 $string['error:getAnnotations'] = 'Une erreur s\'est produite lors de la récupération de toutes les annotations.';
 $string['error:getComments'] = 'Une erreur s\'est produite lors de la récupération des commentaires.';
 $string['error:getQuestions'] = 'Une erreur s\'est produite lors de la récupération des questions de cette page.';
+$string['error:getimageheight'] = 'Une erreur s\'est produite lors de l\'obtention d\'une hauteur d\'image de {$a}.';
+$string['error:getimagewidth'] = 'Une erreur s\'est produite lors de l\'obtention d\'une largeur d\'image de {$a}.';
 $string['error:hideComment'] = 'Une erreur s\'est produite lors de la tentative de masquage du commentaire de la vue des participants.';
 $string['error:markasread'] = 'L\'élément n\'a pas pu être marqué comme lu.';
 $string['error:markasunread'] = 'L\'élément n\'a pas pu être marqué comme non lu.';
 $string['error:markcorrectanswer'] = 'Une erreur s\'est produite lors du marquage de la réponse comme correcte.';
+$string['error:maximalsizeoffile'] = 'Votre fichier {$a->filename}, car il dépasse {$a->filesize} comme taille maximale des fichiers. Vous pouvez joindre à un commentaire des fichiers d\'au plus {$a->maxfilesize}.';
 $string['error:missingAnnotationtype'] = 'Le type d\'annotation n\'existe pas. Il est possible que l\'entrée dans la table pdfannotator_annotationtypes soit manquante.';
 $string['error:openingPDF'] = 'Une erreur s\'est produite lors de l\'ouverture du fichier PDF.';
 $string['error:openprintview'] = 'Une erreur s\'est produite lors de la tentative d\'ouverture du fichier PDF dans Acrobat Reader.';
 $string['error:printcomments'] = 'Une erreur s\'est produite lors de l\'ouverture des commentaires dans un fichier PDF.';
+$string['error:printcommentsdata'] = 'Erreur avec les données du serveur.';
 $string['error:printlatex'] = 'Une erreur s\'est produite lors de la tentative d\'ajout d\'une formule LaTeX au pdf.';
 $string['error:redihideCommentsplayComment'] = 'Une erreur s\'est produite lors de la réinsertion du commentaire pour les participants.';
 $string['error:redisplayComment'] = 'Une erreur s\'est produite lors de la réaffichage du commentaire.';
@@ -127,6 +133,7 @@ $string['error:renderPage'] = 'Une erreur s\'est produite lors de l\'affichage d
 $string['error:reportComment'] = 'Une erreur s\'est produite lors de l\'enregistrement du rapport.';
 $string['error:subscribe'] = 'Une erreur s\'est produite lors de l\'abonnement à la question.';
 $string['error:unsubscribe'] = 'Une erreur s\'est produite lors du désabonnement à la question.';
+$string['error:unsupportedextension'] = 'L\'extension des données envoyées n\'est pas prise en charge. Veuillez sélectionner une autre extension.';
 $string['error:voteComment'] = 'Une erreur s\'est produite lors de l\'enregistrement du vote.';
 $string['eventreport_added'] = 'Un commentaire a été signalé';
 $string['filenotfound'] = 'Fichier non trouvé.';
@@ -149,6 +156,8 @@ $string['fullscreen'] = 'Plein écran';
 $string['fullscreenBack'] = 'Quitter le mode plein écran';
 $string['global_setting_anonymous'] = 'Autoriser les posts anonymes ?';
 $string['global_setting_anonymous_desc'] = 'Avec cette option, vous autorisez vos utilisateurs à poster des commentaires anonymement. Cette option active les publication anonyme globalement';
+$string['global_setting_attobuttons'] = 'Configuration de la barre d\'outils de l\'éditeur Atto';
+$string['global_setting_attobuttons_desc'] = 'La liste des plugins et l\'ordre dans lequel ils sont affichés peuvent être configurés ici. La configuration se compose de groupes (un par ligne) suivis de la liste ordonnée des plugins pour ce groupe. Le groupe est séparé des plugins par un signe égal et les plugins sont séparés par des virgules. Les noms de groupe doivent être uniques et doivent indiquer ce que les boutons ont en commun. Les noms de bouton et de groupe ne doivent pas être répétés et ne peuvent contenir que des caractères alphanumériques.';
 $string['global_setting_latexapisetting'] = 'API LaTeX vers PNG';
 $string['global_setting_latexapisetting_desc'] = 'API pour convertir Latex en PNG pour les téléchargements PDF. <br>
         Remarque : Si vous utilisez l\'API Google Chart, Google obtiendra toutes les formules incluses dans le document si quelqu\'un choisit d\'utiliser LaTeX<br>
@@ -206,19 +215,22 @@ $string['markUnsolved'] = 'Réouvrir la question';
 $string['markasread'] = 'Marqué comme lu';
 $string['markasunread'] = 'Marqué comme non lu';
 $string['markhidden'] = 'Cacher';
+$string['maximumfilesize'] = 'Taille maximale de fichier';
+$string['maximumfilesize_help'] = 'Les fichiers téléchargés par les utilisateurs peuvent atteindre cette taille.';
 $string['me'] = 'moi';
 $string['messageforwardform'] = 'Votre message au(x) destinataire(s)';
 $string['messageprovider:forwardedquestion'] = 'Lorsqu\'une question vous a été transmise';
 $string['messageprovider:newanswer'] = 'Lorsque l\'on répond à une question à laquelle vous êtes abonné·e';
 $string['messageprovider:newquestion'] = 'Lorsqu\'une nouvelle question est posée';
 $string['messageprovider:newreport'] = 'Lorsqu\'un commentaire a été signalé';
-$string['min2Chars'] = 'Une question ou un commentaire avec moins de 2 caractères n\'est pas autorisé.';
+$string['min0Chars'] = 'Une question vide ou un commentaire n\'est pas autorisé.';
 $string['minute'] = 'minute';
 $string['minutes'] = 'minutes';
 $string['missingAnnotation'] = 'L\'annotation correspondante ne peut pas être trouvée·!';
 $string['modifiedby'] = 'par';
 $string['modulename'] = 'Annotation PDF';
 $string['modulename_help'] = 'Cette activité permet de collaborer sur un document PDF. Les participants peuvent annoter des parties spécifiques du PDF et en discuter avec les autres.';
+$string['modulename_link'] = 'mod/pdfannotator/view';
 $string['modulenameplural'] = 'Annotations PDF';
 $string['month'] = 'mois';
 $string['months'] = 'mois';
@@ -311,6 +323,7 @@ $string['pdfannotator:writeprotectedcomments'] = 'Ecrire des commentaires privé
 $string['pdfannotatorcolumn'] = 'Document';
 $string['pdfannotatorcontent'] = 'Fichiers et sous-dossiers';
 $string['pdfannotatorname'] = 'Outil d\'annotation PDF';
+$string['pdfannotatorpost'] = 'Commentaires et questions';
 $string['pluginadministration'] = 'Administration de PDF Annotation';
 $string['pluginname'] = 'PDF Annotation';
 $string['point'] = 'Ajoutez une épingle dans le document et écrivez un commentaire.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'sv', version '3.11'.
+ * Strings for component 'tool_installaddon', language 'sv', version '4.1'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -42,6 +42,7 @@ $string['installfromziprootdir_help'] = 'Vissa ZIP-paket, till exempel de som ge
 $string['installfromzipsubmit'] = 'Installera pluginmodul från ZIP-fil';
 $string['installfromziptype'] = 'Plugintyp';
 $string['installfromziptype_help'] = 'För plugins som korrekt deklarerar sitt komponentnamn, kan installationsprogrammet upptäcka plugin-typen automatiskt. Om auto-identifieringen misslyckas, välj rätt typ av plugin manuellt. Varning: Installationsproceduren kan misslyckas helt om en felaktig plugin-typ anges.';
+$string['installfromziptype_link'] = 'Development:Plugins';
 $string['permcheck'] = 'Kontrollera att rotplatsen för plugintypen är skrivbar för webbserver-processen.';
 $string['permcheckerror'] = 'Fel vid kontroll av skrivbehörighet';
 $string['permcheckprogress'] = 'Kontrollerar skrivbehörighet...';

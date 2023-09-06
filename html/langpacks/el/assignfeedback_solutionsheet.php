@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_solutionsheet', language 'el', version '3.11'.
+ * Strings for component 'assignfeedback_solutionsheet', language 'el', version '4.1'.
  *
  * @package     assignfeedback_solutionsheet
  * @category    string
@@ -34,7 +34,7 @@ $string['dohidesolutions'] = 'Κάντε κλικ για να αποκρύψετ
 $string['doshowsolutions'] = 'Κάντε κλικ για να εμφανίσετε τις λύσεις στους μαθητές τώρα.';
 $string['enabled'] = 'Φύλλα λύσεων';
 $string['enabled_help'] = 'Εάν ενεργοποιηθεί, ο διδάσκων μπορεί να ανεβάσει ένα ή περισσότερα φύλλα λύσεων για αυτή την ανάθεση.';
-$string['enabled_link'] = 'assignfeedback/solutionsheet';
+$string['enabled_link'] = '';
 $string['fromnowon'] = 'Ενεργοποίηση από τώρα και στο εξής';
 $string['hidesolutionsafter'] = 'Απόκρυψη λύσεων μετά';
 $string['pluginname'] = 'Φύλλο λύσεων';

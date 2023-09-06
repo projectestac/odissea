@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ko', version '3.11'.
+ * Strings for component 'badges', language 'ko', version '4.1'.
  *
  * @package     badges
  * @category    string
@@ -119,7 +119,6 @@ $string['delcritconfirm'] = '이 기준을 삭제하기를 원하는게 확실�
 $string['delparamconfirm'] = '이 파라메터를 삭제하기를 원하는게 확실합니까?';
 $string['description'] = '설명';
 $string['disconnect'] = '연결 분리';
-$string['editsettings'] = '설정 편집';
 $string['enablebadges'] = '뱃지 활성화';
 $string['error:cannotact'] = '뱃지를 활성화할 수 없습니다.';
 $string['error:cannotawardbadge'] = '사용자에게 뱃지를 수여할 수 없습니다.';

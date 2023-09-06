@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_licensemanager', language 'el', version '3.11'.
+ * Strings for component 'tool_licensemanager', language 'el', version '4.1'.
  *
  * @package     tool_licensemanager
  * @category    string
@@ -46,10 +46,10 @@ $string['pluginname'] = 'Διαχειριστής αδειών χρήσης';
 $string['privacy:metadata'] = 'Το πρόσθετο tool_licensemanager δεν αποθηκεύει προσωπικά δεδομένα.';
 $string['shortname'] = 'Σύντομο όνομα άδειας χρήσης';
 $string['shortnamerequirederror'] = 'Πρέπει να εισαγάγετε ένα σύντομο όνομα για την άδεια χρήσης.';
-$string['sitedefaultlicenselock'] = 'Αυτή είναι η προεπιλεγμένη άδεια χρήσης του ιστότοπου. Δεν μπορεί να απενεργοποιηθεί.';
+$string['sitedefaultlicenselock'] = 'Αυτή είναι η προεπιλεγμένη άδεια χρήσης του ιστοτόπου. Δεν μπορεί να απενεργοποιηθεί.';
 $string['source'] = 'Πηγή άδειας χρήσης';
 $string['source_help'] = 'Η διεύθυνση URL (με http:// ή https:// πρόθεμα) όπου μπορούν να βρεθούν οι όροι και οι προϋποθέσεις της άδειας χρήσης.';
 $string['sourcerequirederror'] = 'Πρέπει να εισαγάγετε μια έγκυρη διεύθυνση URL για την πηγή της άδειας χρήσης.';
-$string['version'] = 'Έκδοση άδειας';
+$string['version'] = 'Έκδοση άδειας χρήσης';
 $string['version_help'] = 'Ημερομηνία δημοσίευσης της έκδοσης άδειας που χρησιμοποιείται.';
 $string['versioncannotbefuture'] = 'Η έκδοση της άδειας χρήσης δεν μπορεί να οριστεί σε μελλοντική ημερομηνία.';

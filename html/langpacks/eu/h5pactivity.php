@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'eu', version '3.11'.
+ * Strings for component 'h5pactivity', language 'eu', version '4.1'.
  *
  * @package     h5pactivity
  * @category    string
@@ -74,6 +74,7 @@ $string['grade_grademethod_help'] = 'Zenbakizko kalifikazioa erabiliz gero, kali
 * Lehen saiakeraren kalifikazioa (gainerako saiakera guztiak ez dira kontuan hartzen)
 * Azken saiakeraren kalifikazioa (gainerako saiakera guztiak ez dira kontuan hartzen)
 * Ez erabili saiakerak kalifikazioa kalkulatzen (desgaitu kalifikazioaren kalkulua)';
+$string['grade_h5p'] = 'Kalifikazioa: {$a}';
 $string['grade_highest_attempt'] = 'Kalifikazio altuena';
 $string['grade_last_attempt'] = 'Azken saiakera';
 $string['grade_manual'] = 'Ez kalkulatu kalifikaziorik';
@@ -91,8 +92,10 @@ $string['modulename'] = 'H5P';
 $string['modulename_help'] = 'H5P HTML5 Paketearen laburdura da - aurkezpenak, bideoak eta bestelako eduki multimedia, galderak, galdetegiak, jokoak eta bestelako eduki interaktiboa. H5P jarduerak H5P edukia igo eta ikastaro batera gehitzea ahalbidetzen du.
 
 Galderen edozein saiakera automatikoki kalifikatuko da, eta kalifikazioa kalifikazio-liburuan gordeko da.';
+$string['modulename_link'] = 'mod/h5pactivity/view';
 $string['modulenameplural'] = 'H5P';
 $string['myattempts'] = 'Nire saiakerak';
+$string['newsubmissions'] = 'H5P bidalita';
 $string['no_compatible_track'] = 'Interakzio honek ({$a}) ez du osaketaren inguruko informaziorik eskaintzen edo emandako informazioa ez da oraingo jarduera-bertsioarekin bateragarria.';
 $string['noparticipants'] = 'Ez dago partaiderik erakusteko';
 $string['opencontentbank'] = '<a href="{$a}" target="_blank">Ikusi H5P fitxategia eduki-bankuan</a> (leiho berri batean irekitzen da).';

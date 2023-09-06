@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'de', version '3.11'.
+ * Strings for component 'block_activity_results', language 'de', version '4.1'.
  *
  * @package     block_activity_results
  * @category    string
@@ -30,7 +30,7 @@ $string['bestgrade'] = 'Höchstbewertung:';
 $string['bestgrades'] = 'Die {$a} höchsten Bewertungen:';
 $string['bestgroupgrade'] = 'Die Gruppe mit der höchsten Bewertung:';
 $string['bestgroupgrades'] = 'Die {$a} Gruppen mit der höchsten Bewertung:';
-$string['config_decimalplaces'] = 'Dezimalstellen für Anzeige';
+$string['config_decimalplaces'] = 'Nachkommastellen zum Anzeigen';
 $string['config_format_absolute'] = 'Absolute Werte';
 $string['config_format_fraction'] = 'Verhältniswerte';
 $string['config_format_percentage'] = 'Prozentwert';
@@ -46,7 +46,7 @@ $string['config_show_worst'] = 'Wie viele der niedrigsten Bewertungen sollen ang
 $string['config_use_groups'] = 'Gruppen statt Teilnehmer/innen anzeigen? (nur möglich, wenn Gruppen von der Aktivität unterstützt werden)';
 $string['configuredtoshownothing'] = 'Die Blockeinstellungen erlauben nicht, irgendwelche Ergebnisse anzuzeigen.';
 $string['defaultdecimalplaces'] = 'Nachkommastellen';
-$string['defaultdecimalplaces_desc'] = 'Anzahl der Nachkommastellen, die angezeigt werden soll';
+$string['defaultdecimalplaces_desc'] = 'Anzahl der Nachkommastellen, die angezeigt werden sollen';
 $string['defaultgradedisplay'] = 'Bewertungen anzeigen als';
 $string['defaultgradedisplay_desc'] = 'Wie sollen die Bewertungen angezeigt werden?';
 $string['defaulthighestgrades'] = 'Anzeige der besten Noten';

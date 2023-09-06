@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'it', version '3.11'.
+ * Strings for component 'backup', language 'it', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -73,6 +73,7 @@ $string['automatedsetup'] = 'Impostazioni backup automatico';
 $string['automatedstorage'] = 'Archivio backup automatico';
 $string['automatedstoragehelp'] = 'La posizione dove memorizzare i backup automatici';
 $string['backupactivity'] = 'Backup attività: {$a}';
+$string['backupautoactivitiesdescription'] = 'Imposta il default dell\'inclusione delle attività nei backup. Affinché il cestino funzioni, questa impostazione deve essere abilitata.';
 $string['backupcourse'] = 'Backup corso: {$a}';
 $string['backupcoursedetails'] = 'Dettagli corso';
 $string['backupcoursesection'] = 'Sezione: {$a}';
@@ -204,7 +205,7 @@ $string['errorfilenametoolong'] = 'Il nome del file deve essere lungo meno di 25
 $string['errorinvalidformat'] = 'Formato backup sconosciuto';
 $string['errorinvalidformatinfo'] = 'Il file selezionato non è un file di backup Moodle valido e non può essere ripristinato.';
 $string['errorminbackup20version'] = 'Questo file di backup è stato creato con una versione di sviluppo del backup di Moodle ({$a->backup}). La versione minima dalla quale è possibile ripristinare è la {$a->min}.';
-$string['errorrestorefrontpagebackup'] = 'I backup della pagina home possono essere ripristinati solamente nella pagina home';
+$string['errorrestorefrontpagebackup'] = 'I backup della pagina home del sito possono essere ripristinati solamente nella pagina home del sito.';
 $string['executionsuccess'] = 'Il file di backup è stato creato correttamente. ';
 $string['extractingbackupfileto'] = 'Estrazione del file di backup su: {$a}';
 $string['failed'] = 'Il backup non è andato a buon fine';
@@ -212,6 +213,7 @@ $string['filealiasesrestorefailures'] = 'Errori nel ripristino di alias';
 $string['filealiasesrestorefailures_help'] = 'Gli alias sono link simbolici a file, tra cui i file memorizzati in repository esterni. In alcuni casi Moodle non può ripristinarli, ad esempio nel caso in cui si tenti di ripristinare backup provenienti da altri siti oppure quando il file collegato non esiste.
 
 Per maggiori informazioni sugli errori consultare il log di ripristino.';
+$string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = 'Non è stato possibile ripristinare alcuni alias presenti nel file di backup. L\'elenco che segue presenta le sorgenti dei file ai quali si riferivano gli alias nel sito di origine.';
 $string['filename'] = 'Nome file';
 $string['filereferencesincluded'] = 'Il backup contiene file collegati a contenuti esterni. I file collegati non funzioneranno se si ripristina il backup in altri siti.';
@@ -314,7 +316,7 @@ $string['restoreactivity'] = 'Ripristina attività';
 $string['restorecourse'] = 'Ripristina corso';
 $string['restorecoursesettings'] = 'Impostazioni corso';
 $string['restoredcourseid'] = 'ID del corso ripristinato: {$a}';
-$string['restoreexecutionsuccess'] = 'Il corso è stato ripristinato correttamente, fai click sul pulsante Prosegui per vedere il corso.';
+$string['restoreexecutionsuccess'] = 'Il corso è stato ripristinato correttamente.';
 $string['restorefileweremissing'] = 'Alcuni file non sono stati ripristinati poiché non erano presenti nel backup.';
 $string['restorenewcoursefullname'] = 'Nuovo titolo del corso';
 $string['restorenewcourseshortname'] = 'Nuovo titolo abbreviato del corso';
@@ -391,7 +393,7 @@ $string['setting_overwrite_course_fullname'] = 'Sovrascrivi il titolo del corso'
 $string['setting_overwrite_course_shortname'] = 'Sovrascrivi il titolo abbreviato del corso';
 $string['setting_overwrite_course_startdate'] = 'Sovrascrivi la data di inizio del corso';
 $string['showtypes'] = 'Visualizza le opzioni di tipo';
-$string['sitecourseformatwarning'] = 'Questo è un backup della pagina home, è possibile ripristinarlo solamente nella pagina home.';
+$string['sitecourseformatwarning'] = 'Questo è un backup della pagina home del sito, è possibile ripristinarlo solamente nella pagina home del sito.';
 $string['skiphidden'] = 'Salta i corsi nascosti';
 $string['skiphiddenhelp'] = 'Consente di escludere dal backup i corsi nascosti';
 $string['skipmodifdays'] = 'Salta i corsi non modificati per';

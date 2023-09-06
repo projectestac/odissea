@@ -614,8 +614,10 @@ class dndupload_ajax_processor {
         $visible = get_fast_modinfo($this->course)->get_section_info($this->section)->visible;
 
         $DB->set_field('course_modules', 'instance', $instanceid, array('id' => $this->cm->id));
+
+        \course_modinfo::purge_course_module_cache($this->course->id, $this->cm->id);
         // Rebuild the course cache after update action
-        rebuild_course_cache($this->course->id, true);
+        rebuild_course_cache($this->course->id, true, true);
 
         $sectionid = course_add_cm_to_section($this->course, $this->cm->id, $this->section);
 
@@ -651,14 +653,15 @@ class dndupload_ajax_processor {
         $resp = new stdClass();
         $resp->error = self::ERROR_OK;
         $resp->elementid = 'module-' . $mod->id;
+        $resp->cmid = $mod->id;
 
-        $courserenderer = $PAGE->get_renderer('core', 'course');
-        $completioninfo = new completion_info($this->course);
-        $info = get_fast_modinfo($this->course);
-        $sr = null;
-        $modulehtml = $courserenderer->course_section_cm($this->course, $completioninfo,
-                $mod, null, array());
-        $resp->fullcontent = $courserenderer->course_section_cm_list_item($this->course, $completioninfo, $mod, $sr);
+        $format = course_get_format($this->course);
+        $renderer = $format->get_renderer($PAGE);
+        $modinfo = $format->get_modinfo();
+        $section = $modinfo->get_section_info($mod->sectionnum);
+
+        // Get the new element html content.
+        $resp->fullcontent = $renderer->course_section_updated_cm_item($format, $section, $mod);
 
         echo $OUTPUT->header();
         echo json_encode($resp);

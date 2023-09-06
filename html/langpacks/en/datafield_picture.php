@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'en', version '3.11'.
+ * Strings for component 'datafield_picture', language 'en', version '4.1'.
  *
  * @package     datafield_picture
  * @category    string
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_invalidparam1'] = 'Width in single view needs to be a numeric value.';
+$string['error_invalidparam2'] = 'Height in single view needs to be a numeric value.';
+$string['error_invalidparam4'] = 'Width in list view needs to be a numeric value.';
+$string['error_invalidparam5'] = 'Height in list view needs to be a numeric value.';
 $string['fieldtypelabel'] = 'Image';
 $string['pluginname'] = 'Image';
 $string['privacy:metadata'] = 'The Image field component doesn\'t store any personal data; it uses tables defined in mod_data.';
+$string['sample'] = 'Image description placeholder';

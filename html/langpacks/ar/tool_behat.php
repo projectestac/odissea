@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'ar', version '3.11'.
+ * Strings for component 'tool_behat', language 'ar', version '4.1'.
  *
  * @package     tool_behat
  * @category    string
@@ -27,12 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'تساعد أداة الإدارة هذه المطورين وكتاب الاختبار على إنشاء ملفات .feature تصف وظائف مودل وتقوم بتشغيلها تلقائياً. تعريفات الخطوة المتاحة للاستعمال في ملفات .feature مدرجة أدناه.';
 $string['allavailablesteps'] = 'كل ما يتوافر من تعاريف الخطوة';
-$string['errorapproot'] = '$CFG-> behat_ionic_dirroot لا يشير إلى تنصيب صالح من مطور تطبيق مودل.';
 $string['errorbehatcommand'] = 'خطأ في تشغيل الأمر من واجهة سطر الأوامر لـ behat. حاول تشغيل "{$a} --help" يدويًا من واجهة سطر الأوامر لمعرفة المزيد عن المشكلة.';
 $string['errorcomposer'] = 'لم يتم تنصيب تبعيات المؤلف.';
 $string['errordataroot'] = 'لم يتم تعيين $CFG-> behat_dataroot أو هو غير صالح.';
 $string['errorsetconfig'] = 'يجب ضبط $CFG-> behat_dataroot و $CFG-> behat_prefix و $CFG-> behat_wwwroot في config.php.';
-$string['erroruniqueconfig'] = 'يجب أن تكون قيم $CFG-> behat_dataroot و $CFG-> behat_prefix و $CFG-> behat_wwwroot  مختلفة عن قيم $CFG-> dataroot و $CFG->prefix و $CFG-> wwwroot و $CFG-> phpunit_dataroot و $CFG->phpunit_prefix.';
+$string['erroruniqueconfig'] = 'يجب أن تكون قيم $CFG-> behat_dataroot و $CFG-> behat_prefix و $CFG-> behat_wwwroot  مختلفة عن قيم $CFG-> dataroot و $CFG->prefix و $CFG-> wwwroot و $CFG-> phpunit_dataroot و $CFG->phpunit_prefix.<br/>أو إذا كان $CFG->behat_prefix هو نفسه $CFG->behat_dbname أو $CFG->behat_dbhost ينبغي أن يكون مختلفاً عن $CFG->phpunit_dbname و $CFG->phpunit_dbhost وعن $CFG->dbname و $CFG->dbhost.';
 $string['fieldvalueargument'] = 'وسيطات قيمة الحقل';
 $string['fieldvalueargument_help'] = 'يجب إكمال هذا المعامل بقيمة حقل. هناك العديد من أنواع الحقول، بما في ذلك الأنواع البسيطة مثل خانات الاختيار، التحديدات أو المناطق النصية، أو الأنواع المعقدة مثل محددات التاريخ. راجع توثيقات المطور <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a> للحصول على تفاصيل عن قيم الحقول المتوقعة.';
 $string['giveninfo'] = 'معطى. العمليات لإعداد البيئة.';

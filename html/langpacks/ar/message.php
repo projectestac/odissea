@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ar', version '3.11'.
+ * Strings for component 'message', language 'ar', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'امنع المستخدمين الذين ليسو
 $string['blockuser'] = 'حظر المستخدم';
 $string['blockuserconfirm'] = 'هل أنت متأكد من رغبتك في حظر {$a}؟';
 $string['blockuserconfirmbutton'] = 'كتلة';
-$string['canceledit'] = 'إلغاء تحرير الرسالة';
 $string['cancelselection'] = 'إلغاء تحديد الرسالة';
 $string['cantblockuser'] = 'لا يمكنك حظر {$a} لأن لديهم دور بصلاحية مراسلة كل المستخدمين.';
 $string['contactableprivacy'] = 'إقبل الرسائل من:';
@@ -67,7 +66,7 @@ $string['deleteselectedmessagesconfirm'] = 'هل أنت متأكد من رغبت
 $string['deleteselectedmessagesconfirmselfconversation'] = 'هل أنت متأكد من رغبتك في حذف الرسائل الشخصية المحددة؟';
 $string['disableall'] = 'تعطيل الاشعارات';
 $string['disabled'] = 'المحادثات غير مفعّلة على هذا الموقع';
-$string['disallowed'] = 'غير مسموح';
+$string['disallowed'] = 'مقفل';
 $string['editmessages'] = 'تعديل الرسائل';
 $string['emailtagline'] = 'هذه نسخة من رسالة أرسلت لك من الموقع {$a->sitename}. لترد عليها، إذهب إلى <a href="{$a->url}">{$a->url}</a>.';
 $string['enabled'] = 'تم تفعيله';
@@ -86,6 +85,7 @@ $string['eventmessageviewed'] = 'رسالة تمت معاينتها';
 $string['eventnotificationsent'] = 'إشعار تم إرساله';
 $string['eventnotificationviewed'] = 'إشعار تمت معاينته';
 $string['forced'] = 'مغلق';
+$string['forcedmessage'] = 'مفتوح';
 $string['groupconversations'] = 'المجموعة';
 $string['groupinfo'] = 'معلومات المجموعة';
 $string['guestnoeditmessage'] = 'لا يمكن للمستخدم الضيف تعديل خيارات المحادثة';
@@ -105,8 +105,6 @@ $string['loggedoffdescription'] = 'عندما لا تكون متواجداً ف�
 $string['managemessageoutputs'] = 'التفضيلات الافتراضية للإشعارات';
 $string['message'] = 'الرسالة';
 $string['messagecontactrequest'] = '{$a->user} يلتمس إضافته كجهة اتصال. قم بزيارة صفحة <a href="{$a->url}">طلبات الاتصال</a> للاستجابة لهذا الطلب';
-$string['messagecontactrequestsnotification'] = '{$a} يلتمس إضافته كجهة اتصال.';
-$string['messagecontactrequestsnotificationsubject'] = 'طلب اتصال من {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: طلب اتصال من {$a->user}';
 $string['messagecontentaudio'] = 'صوت';
 $string['messagecontentimage'] = 'صورة';
@@ -137,7 +135,6 @@ $string['nofavourites'] = 'لا محادثات معلمة بنجمة';
 $string['noframesjs'] = 'استعمل واجهة أسهل';
 $string['nogroupconversations'] = 'لا محادثات جماعية';
 $string['noindividualconversations'] = 'لا محادثات خاصة';
-$string['nomessages'] = 'لا مراسلات';
 $string['nomessagesfound'] = 'لم يتم العثور على إي رسالة';
 $string['noncontacts'] = 'من غير جهات الاتصال';
 $string['nonotifications'] = 'ليس لديك اشعارات';
@@ -156,11 +153,7 @@ $string['offline'] = 'غير متصل بالأنترنت';
 $string['on'] = 'شغال';
 $string['online'] = 'متصل بالإنترنت';
 $string['otherparticipants'] = 'المشاركون الآخرون';
-$string['outputdisabled'] = 'المخرجات معطلة';
-$string['outputdoesnotexist'] = 'مخرجات الرسالة غير موجودة';
-$string['outputenabled'] = 'تم تمكين المخرجات';
 $string['outputnotavailable'] = 'غير متاح';
-$string['outputnotconfigured'] = 'لم يتم اعداده';
 $string['page-message-x'] = 'صفحات أي رسالة';
 $string['participants'] = 'المشاركون';
 $string['pendingcontactrequests'] = 'هناك {$a} طلبات اتصال معلقة';
@@ -223,16 +216,19 @@ $string['privacy:metadata:preference:core_message_settings'] = 'الإعدادا
 $string['privacy:request:preference:set'] = 'قيمة الإعداد \'{$a->name}\' كانت \'{$a->value}\'';
 $string['privacy_desc'] = 'بإمكانك تقييد من تسمح له بمراسلتك';
 $string['processorsettings'] = 'اعدادات المعالج';
+$string['providerenabled'] = 'إرسال حالة تمكين "{$a}"';
+$string['providerprocesorisdisallowed'] = '"{$a->provider}" عند "{$a->processor}" مقفل';
+$string['providerprocesorislocked'] = '"{$a->provider}" عند "{$a->processor}" مفتوح';
 $string['removecontact'] = 'ازل جهة الاتصال';
 $string['removecontactconfirm'] = 'هل أنت متأكد من رغبتك في إزالة {$a} من جهات اتصالك؟';
-$string['removecoursefilter'] = 'أزل المرشح من المقرر الدراسي {$a}';
+$string['removecoursefilter'] = 'أزل المرشح من المساق {$a}';
 $string['removefromfavourites'] = 'إرفع النجمة عن المحادثة';
 $string['removefromyourcontacts'] = 'إحذف من جهات اتصالك';
 $string['requirecontacttomessage'] = 'أنت بحاجة إلى مطالبة {$a} لإضافتك إلى جهات اتصالهم لتتمكن من مراسلتهم.';
 $string['requiresconfiguration'] = 'يتطلب التهيئة';
 $string['searchcombined'] = 'البحث عن الأشخاص والرسائل';
 $string['searchforuser'] = 'البحث عن مستخدم';
-$string['searchforuserorcourse'] = 'ابحث عن مستخدم أو مقرر';
+$string['searchforuserorcourse'] = 'ابحث عن مستخدم أو مساق';
 $string['searchmessages'] = 'البحث في الرسائل';
 $string['seeall'] = 'مشاهدة الكل';
 $string['selectmessagestodelete'] = 'إختر رسائل لحذفها';
@@ -247,6 +243,8 @@ $string['sendbulkmessagesingle'] = 'ارسل إلى شخص واحد';
 $string['sendcontactrequest'] = 'أرسل طلب مراسلة';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = 'يجري إرسال "{$a->provider}" بواسطة "{$a->processor}"';
+$string['sendingviaenabled'] = 'إرسال حالة تمكين "{$a->provider}" بواسطة "{$a->processor}"';
+$string['sendingvialocked'] = 'إرسال حالة تأمين "{$a->provider}" بواسطة "{$a->processor}"';
 $string['sendingviawhen'] = 'يجري إرسال "{$a->provider}" بواسطة "{$a->processor}" عند {$a->state}';
 $string['sendmessage'] = 'أرسل الرسالة';
 $string['sendmessageto'] = 'أرسل رسالة إلى {$a}';

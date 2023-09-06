@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_overview', language 'it', version '3.11'.
+ * Strings for component 'gradereport_overview', language 'it', version '4.1'.
  *
  * @package     gradereport_overview
  * @category    string
@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Visualizzazione scheda globale utente';
 $string['gradesoverview'] = 'Panoramica valutazioni';
-$string['overview:view'] = 'Visualizzare la propria scheda globale';
+$string['overview:view'] = 'Visualizzare la scheda globale';
 $string['pluginname'] = 'Scheda globale utente';
 $string['privacy:metadata'] = 'Il report Panoramica delle valutazioni visualizza solamente dati memorizzati da altri componenti.';

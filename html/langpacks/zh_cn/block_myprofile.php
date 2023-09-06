@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'zh_cn', version '3.11'.
+ * Strings for component 'block_myprofile', language 'zh_cn', version '4.1'.
  *
  * @package     block_myprofile
  * @category    string
@@ -34,6 +34,7 @@ $string['display_currentlogin'] = '显示当前登录';
 $string['display_email'] = '显示email';
 $string['display_firstaccess'] = '显示第一次访问';
 $string['display_icq'] = '显示ICQ';
+$string['display_idnumber'] = '显示ID号码';
 $string['display_institution'] = '显示院系';
 $string['display_lastaccess'] = '显示最后一次访问';
 $string['display_lastip'] = '显示最后登录IP';

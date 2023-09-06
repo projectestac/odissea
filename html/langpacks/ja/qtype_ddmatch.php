@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmatch', language 'ja', version '3.11'.
+ * Strings for component 'qtype_ddmatch', language 'ja', version '4.1'.
  *
  * @package     qtype_ddmatch
  * @category    string
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['draganswerhere'] = '解答をここにドラッグ';
 $string['editingddmatch'] = 'ドラッグ＆ドロップ組み合わせ問題の編集';
 $string['pluginname'] = 'ドラッグ＆ドロップ組み合わせ問題';
+$string['pluginname_link'] = 'question/type/ddmatch';
 $string['pluginnameadding'] = 'ドラッグ＆ドロップ組み合わせ問題の追加';
 $string['pluginnameediting'] = 'ドラッグ＆ドロップ組み合わせ問題の編集';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_authorize', language 'ar', version '3.11'.
+ * Strings for component 'enrol_authorize', language 'ar', version '4.1'.
  *
  * @package     enrol_authorize
  * @category    string
@@ -35,7 +35,7 @@ $string['adminemailexpiredsortcount'] = 'رقم الطلبات';
 $string['adminemailexpiredsortsum'] = 'المبلغ الاجمالي';
 $string['adminhelpcapturetitle'] = 'يوم الاستحواذ الذاتي';
 $string['adminhelpreviewtitle'] = 'مراجعة الطلب';
-$string['adminteachermanagepay'] = 'يستطيع المعلمون إدارة الدفعات المالية للمقرر الدارسي.';
+$string['adminteachermanagepay'] = 'يستطيع المعلمون إدارة الدفعات المالية للمساق الدارسي.';
 $string['allpendingorders'] = 'كل الطلبات قيد الانتظار';
 $string['amount'] = 'الملبغ';
 $string['anavs'] = 'نظام التحقق من العناوين';
@@ -122,7 +122,7 @@ $string['shopper'] = 'متسوق';
 $string['tested'] = 'تم اختباره';
 $string['testmode'] = '[وضع اختباري]';
 $string['transid'] = 'الرقم التعريفي للصفقة';
-$string['unenrolselfconfirm'] = 'هل تريد بالفعل إلغاء تسجيلك من المقرر "{$a}"؟';
+$string['unenrolselfconfirm'] = 'هل تريد بالفعل إلغاء تسجيلك من المساق "{$a}"؟';
 $string['unenrolstudent'] = 'هل سيتم إلغاء تسجيل الطالب؟';
 $string['uploadcsv'] = 'رفع ملف CSV';
 $string['void'] = 'ملغي';

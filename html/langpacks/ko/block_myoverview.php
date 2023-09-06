@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ko', version '3.11'.
+ * Strings for component 'block_myoverview', language 'ko', version '4.1'.
  *
  * @package     block_myoverview
  * @category    string
@@ -32,7 +32,6 @@ $string['hiddencourses'] = '숨김';
 $string['hidecourse'] = '숨김';
 $string['inprogress'] = '진행중 강좌';
 $string['lastaccessed'] = '최근 수강한 강좌';
-$string['nocourses'] = '강좌 없음';
 $string['past'] = '이전 강좌';
 $string['pluginname'] = '강좌 개요';
 $string['removefromfavourites'] = '강좌 별점 취소하기';

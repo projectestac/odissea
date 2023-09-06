@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ru', version '3.11'.
+ * Strings for component 'qtype_ddwtos', language 'ru', version '4.1'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -34,6 +34,7 @@ $string['infinite'] = 'Несколько';
 $string['pleaseputananswerineachbox'] = 'Пожалуйста, введите ответ в каждое поле';
 $string['pluginname'] = 'Перетаскивание в текст';
 $string['pluginname_help'] = 'Вопросы с перетаскиванием в текст требуют, чтобы отвечающий перетаскивал слова или фразы в нужные места в тексте вопроса. [[1]], [[2]], [[3]], ... используются в качестве заполнителей в тексте вопроса, а правильные ответы соответственно указаны как варианты ответов 1, 2, 3, ... . Варианты ответов могут быть сгруппированы таким образом, чтобы все ответы в определенной группе были окрашены так же, как пробелы для них в тексте вопроса. Варианты ответов, помеченные как «Несколько», могут использоваться более чем в одном месте.';
+$string['pluginname_link'] = 'question/type/ddwtos';
 $string['pluginnameadding'] = 'Добавить «Перетаскивание в текст»';
 $string['pluginnameediting'] = 'Редактирование «Перетаскивание в текст»';
 $string['pluginnamesummary'] = 'Пропущенные слова в тексте заполняются с помощью перетаскивания';

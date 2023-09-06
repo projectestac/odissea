@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'nl', version '3.11'.
+ * Strings for component 'scorm', language 'nl', version '4.1'.
  *
  * @package     scorm
  * @category    string
@@ -91,7 +91,7 @@ $string['completed'] = 'Volledig';
 $string['completiondetail:allscos'] = 'Doe alle delen van deze activiteit';
 $string['completiondetail:completionscore'] = 'Behaal een score van {$a} of meer';
 $string['completiondetail:completionstatuscompleted'] = 'Voltooi de activiteit';
-$string['completiondetail:completionstatuscompletedandpassed'] = 'Voltooi de activiteit en slaag ervoor';
+$string['completiondetail:completionstatuscompletedorpassed'] = 'Voltooi de activiteit en slaag ervoor';
 $string['completiondetail:completionstatuspassed'] = 'Slaag voor de activiteit';
 $string['completionscorerequired'] = 'Vereiste minimumscore';
 $string['completionscorerequired_help'] = 'Het inschakelen van deze instelling zal er voor zorgen dat een gebruiker minstens de minimumscore moet behalen om deze SCORM-activiteit als voltooid te markeren, samen met eventuele andere vereisten voor Voltooide Activiteit.';
@@ -133,7 +133,6 @@ $string['displaydesc'] = 'Of SCORM-pakketten in een nieuw venster getoond moeten
 $string['displaysettings'] = 'Scherminstellingen';
 $string['dnduploadscorm'] = 'Voeg een SCORM-pakket toe';
 $string['domxml'] = 'DOMXML externe bibliotheek';
-$string['duedate'] = 'Klaar tegen';
 $string['element'] = 'Element';
 $string['enter'] = 'Start';
 $string['entercourse'] = 'Begin de SCORM/AICC-cursus';
@@ -217,10 +216,12 @@ $string['indicator:cognitivedepth'] = 'SCORM cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een SCORM activiteit.';
 $string['indicator:cognitivedepthdef'] = 'SCORM cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de SCORM-activiteiten bereikt tijdens dit analyse-interval (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'SCORM sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een SCORM activiteit.';
 $string['indicator:socialbreadthdef'] = 'SCORM sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de SCORM-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, alleen deelnemer)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interacties';
 $string['invalidactivity'] = 'Fout in SCORM-activiteit';
@@ -260,6 +261,7 @@ SCORM-activiteiten kunnen gebruikt worden
 
 * om multimedia-inhoud en animaties te tonen
 * als een beoordelingstool';
+$string['modulename_link'] = 'mod/scorm/view';
 $string['modulenameplural'] = 'SCORM-pakketten';
 $string['myaiccsessions'] = 'Mijn AICC-sessies';
 $string['myattempts'] = 'Mijn pogingen';

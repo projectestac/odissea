@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_insights', language 'ru', version '3.11'.
+ * Strings for component 'report_insights', language 'ru', version '4.1'.
  *
  * @package     report_insights
  * @category    string
@@ -27,12 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actionsaved'] = 'Ваш отзыв о «{$a}» сохранен.';
 $string['confirmbulkaction'] = 'Вы действительно хотите отметить выбранные прогнозы ({$a->nitems}) как «{$a->action}»?';
-$string['disabledmodel'] = 'Эта модель была отключена администратором';
+$string['disabledmodel'] = 'Эта модель была отключена администратором.';
 $string['indicators'] = 'Показатели';
 $string['insight'] = 'Инсайт';
-$string['insights'] = 'Сведения';
-$string['justpredictions'] = 'Обратите внимание, что следующие идеи являются только предположениями. Невозможно с уверенностью предсказать будущее. Информация предоставляется для того, чтобы можно было предпринять необходимые действия, чтобы любые негативные прогнозы не стали реальностью.';
-$string['nodetailsavailable'] = 'Данные прогноза сомнительны';
+$string['insights'] = 'Инсайты';
+$string['justpredictions'] = 'Обратите внимание, что следующие инсайты являются только предположениями. Невозможно с уверенностью предсказать будущее. Информация предоставляется для того, чтобы можно было предпринять необходимые действия и любые негативные прогнозы не стали реальностью.';
+$string['nodetailsavailable'] = 'Данные прогноза сомнительны.';
 $string['outcome'] = 'Результат';
 $string['outcomenegative'] = 'Отрицательный результат';
 $string['outcomeneutral'] = 'Нейтральный результат';
@@ -40,11 +40,11 @@ $string['outcomeok'] = 'Прекрасный результат';
 $string['outcomepositive'] = 'Положительный результат';
 $string['outcomeverynegative'] = 'Очень отрицательный результат';
 $string['outcomeverypositive'] = 'Очень положительный результат';
-$string['pluginname'] = 'Сведения';
+$string['pluginname'] = 'Инсайты';
 $string['prediction'] = 'Прогноз';
 $string['predictiondetails'] = 'Данные прогноза';
-$string['privacy:metadata'] = 'Плагин Прогнозы не хранит никаких личных данных.';
-$string['selectotherinsights'] = 'Выбрать другие прогнозы...';
+$string['privacy:metadata'] = 'Плагин «Инсайты» не хранит никаких персональных данных.';
+$string['selectotherinsights'] = 'Выбрать другие инсайты...';
 $string['selectprediction'] = 'Выберите {$a} для массового действия';
 $string['timecreated'] = 'Время создания прогноза';
 $string['timerange'] = 'Интервал анализа';

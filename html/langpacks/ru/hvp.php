@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'ru', version '3.11'.
+ * Strings for component 'hvp', language 'ru', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -264,6 +264,7 @@ $string['modulename_help'] = 'Модуль H5P позволяет создава
 Пользовательский интерфейс и баллы отслеживаются с использованием xAPI и доступны через Журнал оценок Moodle.
 
 Вы можете добавлять интерактивный контент H5P, создавая его с помощью встроенного инструмента разработки или загружая файлы H5P, найденные на других сайтах, поддерживающих H5P.';
+$string['modulename_link'] = 'https://h5p.org/moodle-more-help';
 $string['modulenameplural'] = 'Интерактивный контент';
 $string['nextpage'] = 'Следующая страница';
 $string['noanswersubmitted'] = 'Этот пользователь еще не отправил ответ в H5P';

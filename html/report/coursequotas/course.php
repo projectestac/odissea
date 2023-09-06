@@ -41,7 +41,7 @@ function_exists('require_not_rush_hour') && require_not_rush_hour();
 $table = new coursequotas_coursesize(COURSESIZE_TABLENAME);
 
 $backuptab = '';
-$backupusage = report_coursequotas_format_size(intval(get_config(REPORT_COMPONENTNAME, 'backup_usage')));
+$backupusage = report_coursequotas_format_size((int)get_config(REPORT_COMPONENTNAME, 'backup_usage'));
 
 if ($backupusage->bytes > 0) {
     $backuptab = '<li><a href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php?backups=true&sort=filesize&dir=DESC">' . get_string('backups', 'report_coursequotas') . '</a></li>';
@@ -49,11 +49,11 @@ if ($backupusage->bytes > 0) {
 
 // Create the page and send it to the user
 echo '<div role="main" id="coursequotas">
-        <div style="margin: 5px 0px 15px 0px;">
+        <div style="margin: 5px 0 15px 0;">
             <ul class="nav nav-tabs">
-                <li><a href="index.php">' . get_string('total_data', REPORT_COMPONENTNAME) . '</a></li>
-                <li><a href="category.php">' . get_string('category_data', REPORT_COMPONENTNAME) . '</a></li>
-                <li class="active"><a href="course.php">' . get_string('larger_courses', REPORT_COMPONENTNAME) . '</a></li>
+                <li style="margin: 10px;"><a href="index.php">' . get_string('total_data', REPORT_COMPONENTNAME) . '</a></li>
+                <li style="margin: 10px;"><a href="category.php">' . get_string('category_data', REPORT_COMPONENTNAME) . '</a></li>
+                <li class="active" style="margin: 10px;"><a href="course.php">' . get_string('larger_courses', REPORT_COMPONENTNAME) . '</a></li>
                 ' . $backuptab . '
             </ul>
         </div> 

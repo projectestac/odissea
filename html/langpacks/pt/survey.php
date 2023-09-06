@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'pt', version '3.11'.
+ * Strings for component 'survey', language 'pt', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -214,10 +214,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão do Inquérito';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Inquérito predefinido.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Inquérito';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Inquérito durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização do Inquérito predefinido';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Inquérito predefinido.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Inquérito';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Inquérito durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = 'Texto introdutório';
 $string['invalidsurveyid'] = 'O ID do questionário está incorreto';
 $string['invalidtmptid'] = 'Modelo ID inválido';
@@ -269,7 +271,7 @@ $string['survey:addinstance'] = 'Adicionar novo inquérito predefinido';
 $string['survey:download'] = 'Descarregar respostas';
 $string['survey:participate'] = 'Responder ao inquérito';
 $string['survey:readresponses'] = 'Ver respostas';
-$string['surveycompleted'] = 'Concluiu o inquérito. O gráfico abaixo mostra um sumário dos seus resultados comparados com as médias da turma.';
+$string['surveycompleted'] = 'Concluiu o inquérito. O gráfico abaixo mostra um resumo dos seus resultados comparados com as médias da turma.';
 $string['surveycompletednograph'] = 'Completou o presente inquérito.';
 $string['surveygraph'] = 'Gráfico do inquérito';
 $string['surveyname'] = 'Nome do inquérito';

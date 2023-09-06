@@ -94,5 +94,14 @@ $PAGE->set_title($course->fullname.': '.get_string('totalotherusers', 'enrol', $
 $PAGE->set_heading($PAGE->title);
 
 echo $OUTPUT->header();
+
+// Check we have a search button to render.
+$searchbuttonrender = null;
+if ($searchbutton = $table->get_user_search_button()) {
+    $searchbutton->primary = true;
+    $searchbuttonrender = $OUTPUT->render($searchbutton);
+}
+
+echo $OUTPUT->render_participants_tertiary_nav($course, $searchbuttonrender);
 echo $renderer->render($table);
 echo $OUTPUT->footer();

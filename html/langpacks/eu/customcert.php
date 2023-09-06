@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'eu', version '3.11'.
+ * Strings for component 'customcert', language 'eu', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -75,6 +75,8 @@ $string['duplicatetemplateconfirm'] = 'Ziur zaude ziurtagiri-txantiloi hau bikoi
 $string['editcustomcert'] = 'Editatu ziurtagiria';
 $string['editelement'] = 'Editatu elementua';
 $string['edittemplate'] = 'Editatu txantiloia';
+$string['elementheight'] = 'Altuera';
+$string['elementheight_help'] = 'Zehaztu elementuaren altuera. \'0\' baimenduta badago automatikoki kalkulatuko da.';
 $string['elementname'] = 'Elementuaren izena';
 $string['elementname_help'] = 'Hau izango da ziurtagiria editatzean elementu hau identifikatzeko erabiliko den izena. Oharra: hau ez da PDFan erakutsiko.';
 $string['elementplugins'] = 'Elementuen pluginak';
@@ -100,6 +102,15 @@ $string['emailstudents_help'] = 'Zehaztuz gero ziurtagiria eskuragarri dagoenean
 $string['emailstudentsubject'] = '{$a->coursefullname}: {$a->certificatename}';
 $string['emailteachers'] = 'Bidali e-maila irakasleei';
 $string['emailteachers_help'] = 'Zehaztuz gero ziurtagiria eskuragarri dagoenean irakasleari ziurtagiriaren kopia bat bidaliko zaio. <strong>Kontuz:</strong> Eremu hau ziurtagiria sortzen amaitu aurretik konfiguratuz gero irakasleari osatu gabeko ziurtagiria bidaliko zaio.';
+$string['eventelementcreated'] = 'Ziurtagiri pertsonalizatuko elementua sortuta';
+$string['eventelementdeleted'] = 'Ziurtagiri pertsonalizatuko elementua ezabatuta';
+$string['eventelementupdated'] = 'Ziurtagiri pertsonalizatuko elementua eguneratuta';
+$string['eventpagecreated'] = 'Ziurtagiri pertsonalizatuko orria sortuta';
+$string['eventpagedeleted'] = 'Ziurtagiri pertsonalizatuko orria ezabatuta';
+$string['eventpageupdated'] = 'Ziurtagiri pertsonalizatuko orria eguneratuta';
+$string['eventtemplatecreated'] = 'Ziurtagiri pertsonalizatuko txantiloia sortuta';
+$string['eventtemplatedeleted'] = 'Ziurtagiri pertsonalizatuko txantiloia ezabatuta';
+$string['eventtemplateupdated'] = 'Ziurtagiri pertsonalizatuko txantiloia eguneratuta';
 $string['exampledatawarning'] = 'Baliteke balio hauetako batzuk elementuak kokatu daitezkeela erakusteko adibideak baino ez izatea.';
 $string['font'] = 'Letra-mota';
 $string['font_help'] = 'Elementu hau sortzerakoan erabilitako letra-mota.';
@@ -113,7 +124,9 @@ $string['height'] = 'Altuera';
 $string['height_help'] = 'Hau PDF ziurtagiriaren altuera da (milimetrotan). Erreferentziarako kontuan izan A4 paperaren altuera 297mm dela eta gutunarena 279mm.';
 $string['invalidcode'] = 'Emandako kodea baliogabea da.';
 $string['invalidcolour'] = 'Aukeratutako kolorea baliogabea da, idatzi ezazu mesedez baliozko HTML kolore-izen bat edo sei ala hiru digituko kolore hamaseitarra.';
-$string['invalidelementwidth'] = 'Idatzi ezazu mesedez zenbaki positibo bat.';
+$string['invalidelementwidthorheightnotnumber'] = 'Baliozko zenbaki bat idatzi ezazu.';
+$string['invalidelementwidthorheightzeroallowed'] = '0 ala handiagoa den zenbaki bat idatzi ezazu.';
+$string['invalidelementwidthorheightzeronotallowed'] = '0 baino handiagoa den zenbaki bat idatzi ezazu.';
 $string['invalidheight'] = 'Altuera 0 baino handiagoa den baliozko zenbaki bat izan behar da.';
 $string['invalidmargin'] = 'Marjina 0 baino handiagoa den baliozko zenbakia izan behar da.';
 $string['invalidposition'] = 'Aukeratu ezazu mesedez zenbaki positibo bat {$a} posiziorako.';
@@ -131,6 +144,7 @@ $string['managetemplatesdesc'] = 'Esteka honek beste pantaila batera eramango za
 $string['modify'] = 'Aldatu';
 $string['modulename'] = 'Ziurtagiri pertsonalizatua';
 $string['modulename_help'] = 'Modulu honek PDF ziurtagiriak dinamikoki sortzea ahalbidetzen dizu.';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['modulenameplural'] = 'Ziurtagiri pertsonalizatuak';
 $string['mycertificates'] = 'Nire ziurtagiriak';
 $string['mycertificatesdescription'] = 'Hauek dira posta elektroniko bidez bidalita edo eskuz jaitsitako zuri emandako ziurtagiriak.';

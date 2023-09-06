@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'ru', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'ru', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,4 +30,5 @@ $string['endanswernotfound'] = 'Не найден необходимый сим�
 $string['noanswerfound'] = 'В вопросе не найдены ответы';
 $string['pluginname'] = 'Формат «Пропущенное слово»';
 $string['pluginname_help'] = 'Формат «Пропущенное слово» позволяет импортировать вопросы из текстового файла.';
+$string['pluginname_link'] = 'qformat/missingword';
 $string['privacy:metadata'] = 'Плагин  «Формат Пропущенное слово» не хранит никаких персональных данных.';

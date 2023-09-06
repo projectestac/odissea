@@ -22,7 +22,7 @@ Feature: Set time spent as a completion condition for a lesson
       | idnumber      | 0001                    |
       | name          | Test lesson             |
     And I am on the "Course 1" course page logged in as teacher1
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I set the following fields to these values:
       | Enable completion tracking | Yes |
     And I press "Save and display"

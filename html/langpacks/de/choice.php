@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'de', version '3.11'.
+ * Strings for component 'choice', language 'de', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'Antworten ändern und löschen';
 $string['choice:downloadresponses'] = 'Antworten herunterladen';
 $string['choice:readresponses'] = 'Antworten anzeigen';
 $string['choice:view'] = 'Abstimmungsaktivität anzeigen';
-$string['choiceactivityname'] = 'Abstimmung: {$a}';
 $string['choiceclose'] = 'Antworten zulassen bis';
-$string['choicecloseson'] = 'Ende der Abstimmung: {$a}';
 $string['choicefull'] = 'Eine oder mehrere von Ihnen gewählte Optionen sind bereits voll. Ihre Auswahl wurde nicht gespeichert. Wählen Sie etwas anderes.';
 $string['choicename'] = 'Abstimmungsname';
 $string['choiceopen'] = 'Antworten zulassen ab';
@@ -76,10 +74,12 @@ $string['indicator:cognitivedepth'] = 'Abstimmung kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Abstimmungsaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Abstimmung kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Abstimmungsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Abstimmung sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Abstimmungsaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Abstimmung sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Abstimmungsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'Obergrenze';
 $string['limita'] = 'Obergrenze: {$a}';
 $string['limitanswers'] = 'Anzahl der Antworten bei den Abstimmungsoptionen beschränken';
@@ -99,6 +99,7 @@ Eine Abstimmungs-Aktivität kann verwendet werden
 * Als schnelle Umfrage, um das Nachdenken über ein Thema anzuregen
 * Um das Verständnis der Teilnehmer/innen schnell zu testen
 * Um den Teilnehmer/innen die Entscheidungsfindung zu erleichtern, z.B. die Möglichkeit, über eine Richtung für den Kurs abzustimmen';
+$string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Abstimmungen';
 $string['moveselectedusersto'] = 'Ausgewählte Nutzer/innen bewegen nach...';
 $string['multiplenotallowederror'] = 'In dieser Auswahl ist nur eine Antwort erlaubt.';

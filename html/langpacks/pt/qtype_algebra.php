@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_algebra', language 'pt', version '3.11'.
+ * Strings for component 'qtype_algebra', language 'pt', version '4.1'.
  *
  * @package     qtype_algebra
  * @category    string
@@ -106,6 +106,7 @@ $string['options'] = 'Opções';
 $string['parseerror'] = 'Erro ao analisar a função: \'{$a}\'';
 $string['pluginname'] = 'Álgebra';
 $string['pluginname_help'] = 'O aluno digita uma fórmula como resposta que contém uma ou mais variáveis. A exatidão é avaliada utilizando um dos três métodos diferentes.';
+$string['pluginname_link'] = 'question/type/algebra';
 $string['pluginnameadding'] = 'A adicionar uma pergunta de Álgebra';
 $string['pluginnameediting'] = 'A editar uma pergunta de Álgebra';
 $string['pluginnamesummary'] = 'O aluno digita uma fórmula que pode conter uma ou mais variáveis. A exatidão é avaliada utilizando um dos três métodos diferentes.';

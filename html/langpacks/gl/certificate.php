@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'gl', version '3.11'.
+ * Strings for component 'certificate', language 'gl', version '4.1'.
  *
  * @package     certificate
  * @category    string
@@ -81,6 +81,7 @@ $string['issued'] = 'Emitido';
 $string['issueoptions'] = 'Opcións de emisión';
 $string['lockingoptions'] = 'Opcións de bloqueo';
 $string['modulename'] = 'Certificado';
+$string['modulename_link'] = 'Certificate_module';
 $string['modulenameplural'] = 'Certificados';
 $string['mycertificates'] = 'Os meus certificados';
 $string['nocertificatesreceived'] = 'non recibiu ningún certificado';

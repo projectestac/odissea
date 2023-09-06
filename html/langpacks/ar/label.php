@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ar', version '3.11'.
+ * Strings for component 'label', language 'ar', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -25,35 +25,38 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdndmedia'] = 'يعرض هذا الخيار إنشاء مُلصقات عند سحب وإفلات ملفات الوسائط في صفحة المقرر الدراسي';
-$string['configdndresizeheight'] = 'عند إنشاء ملصق عن طريق سحب وإفلات صورة، سيتم تغيير الحجم إذا كان الارتفاع أكبر من هذا الرقم بالبكسل (وضع رقم 0 بمعنى لن يتم تغييرالحجم)';
-$string['configdndresizewidth'] = 'عند إنشاء ملصق عن طريق سحب وإفلات صورة، سيتم تغيير الحجم إذا كان العرض أكبر من هذا الرقم بالبكسل (وضع رقم 0 بمعنى لن يتم تغييرالحجم)';
+$string['configdndmedia'] = 'يعرض هذا الخيار إنشاء منطقة نص ووسائط عند سحب وإفلات ملفات الوسائط في صفحة المساق.';
+$string['configdndresizeheight'] = 'عند إنشاء منطقة نص ووسائط عن طريق سحب وإفلات ملف وسائط، قم بتغيير الحجم إذا كان الارتفاع أكبر من هذا الرقم بالبكسل. وضع رقم 0 معناه لن يتم تغيير حجم ملف الوسائط.';
+$string['configdndresizewidth'] = 'عند إنشاء منطقة نص ووسائط عن طريق سحب وإفلات ملف وسائط، قم بتغيير الحجم إذا كان العرض أكبر من هذا الرقم بالبكسل. وضع رقم 0 معناه لن يتم تغيير حجم ملف الوسائط.';
 $string['dndmedia'] = 'وسائط السحب والإفلات';
 $string['dndresizeheight'] = 'تغيير ارتفاع منطقة السحب والإفلات';
 $string['dndresizewidth'] = 'تغيير عرض منطقة السحب والإفلات';
-$string['dnduploadlabel'] = 'إضافة وسائط إلى صفحة المقرر الدراسي';
-$string['dnduploadlabeltext'] = 'إضافة ملصق إلى صفحة المقرر الدراسي';
-$string['indicator:cognitivedepth'] = 'الملصق معرفياً';
-$string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في مورد الملصق.';
-$string['indicator:cognitivedepthdef'] = 'الملصق معرفياً';
-$string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها موارد الملصق خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة)';
-$string['indicator:socialbreadth'] = 'الملصق إجتماعياً';
-$string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في مورد الملصق.';
-$string['indicator:socialbreadthdef'] = 'الملصق إجتماعياً';
-$string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها موارد الملصق خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً)';
-$string['label:addinstance'] = 'إضافة ملصق جديد';
-$string['label:view'] = 'معاينة الملصق';
-$string['labeltext'] = 'نص الملصق';
-$string['modulename'] = 'ملصق';
-$string['modulename_help'] = 'وحدة الملصق تتيح إدراج النصوص والوسائط المتعددة في صفحة المقرر الدراسي فيما بين روابط النشاطات والموارد الأخرى. الملصقات لها نواح استعمال عديدة ويمكنها المساعدة في تحسين مظهر المقرر الدراسي إذا استُعمِلت بروية.
+$string['dnduploadlabel'] = 'إضافة وسائط إلى صفحة المساق';
+$string['dnduploadlabeltext'] = 'إضافة منطقة نص ووسائط إلى صفحة المساق';
+$string['indicator:cognitivedepth'] = 'منطقة نص ووسائط معرفياً';
+$string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في مورد منطقة نص ووسائط.';
+$string['indicator:cognitivedepthdef'] = 'منطقة نص ووسائط معرفياً';
+$string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها موارد مناطق نص ووسائط خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'منطقة نص ووسائط إجتماعياً';
+$string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في مورد منطقة نص ووسائط.';
+$string['indicator:socialbreadthdef'] = 'منطقة نص ووسائط إجتماعياً';
+$string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها موارد منطقة نص ووسائط خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['label:addinstance'] = 'إضافة منطقة نص ووسائط جديدة';
+$string['label:view'] = 'معاينة منطقة نص ووسائط';
+$string['labeltext'] = 'نص';
+$string['modulename'] = 'منطقة نص ووسائط';
+$string['modulename_help'] = 'وحدة منطقة نص ووسائط تتيح إدراج النصوص والوسائط المتعددة في صفحة المساق.
 
-يمكن استعمال الملصقات:
+يمكن استعمال منطقة نص ووسائط في الحالات الآتية:
 
 * للفصل ما بين قائمة طويلة من النشاطات بعنوان فرعي أو صورة
-* لعرض ملف صوت أو فيديو مضمَّنين مباشرة في صفحة المقرر الدراسي
-* لإضافة وصف موجز لمقطع المقرر الدراسي';
-$string['modulenameplural'] = 'ملصقات';
-$string['pluginadministration'] = 'إدارة الملصق';
-$string['pluginname'] = 'الملصق';
-$string['privacy:metadata'] = 'إن ملحق مورد الملصق لا يخزن أي بيانات شخصية.';
-$string['search:activity'] = 'الملصق';
+* لعرض فيديو مضمَّن مباشرة في صفحة المساق
+* لإضافة وصف موجز لمقطع المساق';
+$string['modulename_link'] = 'mod/label/view';
+$string['modulenameplural'] = 'مناطق نص ووسائط';
+$string['pluginadministration'] = 'إدارة منطقة نص ووسائط';
+$string['pluginname'] = 'منطقة نص ووسائط';
+$string['privacy:metadata'] = 'إن ملحق مورد منطقة نص ووسائط لا يخزن أي بيانات شخصية.';
+$string['search:activity'] = 'منطقة نص ووسائط';

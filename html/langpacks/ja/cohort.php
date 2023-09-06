@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ja', version '3.11'.
+ * Strings for component 'cohort', language 'ja', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -36,6 +36,7 @@ $string['bulkadd'] = 'コーホートに追加する';
 $string['bulknocohort'] = '利用可能なコーホートは見つかりませんでした。';
 $string['categorynotfound'] = 'カテゴリ <b>{$a}</b> が見つからないか、あなたにはコーホートを作成するためのパーミッションがありません。デフォルトコンテクストが使用されます。';
 $string['cohort'] = 'コーホート';
+$string['cohortmember'] = 'コーホートメンバ';
 $string['cohorts'] = 'コーホート';
 $string['cohortsin'] = '{$a}: 利用可能なコーホート';
 $string['component'] = 'ソース';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = 'コーホートが更新されました。';
 $string['external'] = '外部コーホート';
 $string['idnumber'] = 'コーホートID';
 $string['invalidtheme'] = 'コーホートテーマが存在しません。';
+$string['memberofcohort'] = 'コーホートのメンバ';
 $string['memberscount'] = 'コーホートサイズ';
 $string['name'] = '名称';
 $string['namecolumnmissing'] = 'CSVファイルのフォーマットに問題があります。正しいカラム名が含まれていることを確認してください。ユーザをコーホートに追加するにはサイト管理の「ユーザをアップロードする」に移動してください。';
@@ -71,7 +73,7 @@ $string['newnamefor'] = 'コーホート {$a} の新しい名称';
 $string['nocomponent'] = '手動作成';
 $string['potusers'] = '潜在的ユーザ';
 $string['potusersmatching'] = '潜在的な合致ユーザ';
-$string['preview'] = 'プレビュ';
+$string['preview'] = 'プレビュー';
 $string['privacy:metadata:cohort_members'] = 'ユーザのコーホートに関する情報です。';
 $string['privacy:metadata:cohort_members:cohortid'] = 'コーホートのIDです。';
 $string['privacy:metadata:cohort_members:timeadded'] = 'タイムスタンプはユーザがコーホートに追加された日時を示します。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'advmindmap', language 'ar', version '3.11'.
+ * Strings for component 'advmindmap', language 'ar', version '4.1'.
  *
  * @package     advmindmap
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['coursemisconf'] = 'تمت تهيئة المقرر الدراسي بشكل خاطئ';
+$string['coursemisconf'] = 'تمت تهيئة المساق بشكل خاطئ';
 $string['detail_help'] = '<div class="indent">
 <p>الخريطة الذهنية هي رسم تخطيطي يستعمل لتمثيل الكلمات، الأفكار، المهام أو العناصر الأخرى المرتبطة أو المتمحورة على كلمة مفتاحية أو فكرة مركزية.</p>
 <table class="advmindmap_help_table">
@@ -60,7 +60,7 @@ $string['detail_help'] = '<div class="indent">
 </div>';
 $string['errorcannotviewgroupmindmap'] = 'ليست لديك صلاحية معاينة الخرائط الذهنية لمجموعات الآخرين.';
 $string['errorcannotviewusermindmap'] = 'ليست لديك صلاحية معاينة الخريطة الذهنية للآخرين.';
-$string['errornostudentincourse'] = 'لا يوجد طلاب في هذا المقرر.';
+$string['errornostudentincourse'] = 'لا يوجد طلاب في هذا المساق.';
 $string['errornotingroup'] = 'هذه خريطة ذهنية جماعية ولكنك لستَ ضمن أي مجموعة ولا تمتلك صلاحية معاينة الخرائط الذهنية لمجموعات الآخرين.';
 $string['eventmindmapunlocked'] = 'خارطة ذهنية أُلغيَ تأمينها';
 $string['eventmindmapupdated'] = 'خارطة ذهنية تم تحديثها';

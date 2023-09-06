@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xhtml', language 'ko', version '3.11'.
+ * Strings for component 'qformat_xhtml', language 'ko', version '4.1'.
  *
  * @package     qformat_xhtml
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XHTML 형식';
 $string['pluginname_help'] = 'XHTML 형식은 다른 응용프로그램에서 사용될 수 있도록 범주내 모든 질문을 한개의 엄격한 XHTML 페이지로 내보내기 할 수 있도록 합니다. ';
+$string['pluginname_link'] = 'qformat/xhtml';

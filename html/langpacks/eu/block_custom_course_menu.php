@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_custom_course_menu', language 'eu', version '3.11'.
+ * Strings for component 'block_custom_course_menu', language 'eu', version '4.1'.
  *
  * @package     block_custom_course_menu
  * @category    string

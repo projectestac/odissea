@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmatch', language 'ar', version '3.11'.
+ * Strings for component 'qtype_ddmatch', language 'ar', version '4.1'.
  *
  * @package     qtype_ddmatch
  * @category    string
@@ -29,6 +29,7 @@ $string['draganswerhere'] = 'إسحب الإجابة إلى هنا';
 $string['editingddmatch'] = 'تحرير سؤال المطابقة للسحب والإفلات';
 $string['pluginname'] = 'مطابقة السحب والإفلات';
 $string['pluginname_help'] = 'تتطلب أسئلة المطابقة بالسحب والإفلات من المستجيب أن يطابق قائمة الأسماء أو العبارات (الأسئلة) بشكل صحيح مع قائمة أخرى من الأسماء أو العبارات (الإجابات).';
+$string['pluginname_link'] = 'question/type/ddmatch';
 $string['pluginnameadding'] = 'إضافة سؤال مطابقة السحب والإفلات';
 $string['pluginnameediting'] = 'تحرير سؤال مطابقة السحب والإفلات';
 $string['pluginnamesummary'] = 'إمتداد لسؤال المطابقة الذي يسمح للمستخدم بسحب وإفلات العناصر لمطابقة إجابات الأسئلة الفرعية.';

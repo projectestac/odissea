@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'fr', version '3.11'.
+ * Strings for component 'tool_monitor', language 'fr', version '4.1'.
  *
  * @package     tool_monitor
  * @category    string
@@ -73,6 +73,7 @@ $string['messagetemplate_help'] = 'Un message est envoyé aux abonnés lorsque l
 * Nom de la règle {rulename}
 * Description {description}
 * Nom de l\'événement {eventname}';
+$string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Instance';
 $string['monitor:managerules'] = 'Gérer les règles de surveillance d\'événements';
 $string['monitor:managetool'] = 'Activer/désactiver la surveillance d\'événements';

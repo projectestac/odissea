@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'zh_cn', version '3.11'.
+ * Strings for component 'customcert', language 'zh_cn', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -31,6 +31,7 @@ $string['emailnonstudentcertificatelinktext'] = '';
 $string['emailstudentcertificatelinktext'] = '查看证书';
 $string['getcustomcert'] = '查看证书';
 $string['invalidcode'] = '提供的代码无效。';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['mycertificates'] = '我的证书';
 $string['mycertificatesdescription'] = '这些是您通过电子邮件或手动下载的证书.';
 $string['notverified'] = '未经验证';

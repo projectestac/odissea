@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'eu', version '3.11'.
+ * Strings for component 'workshop', language 'eu', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -43,8 +43,10 @@ $string['allocationdone'] = 'Esleipena egin da';
 $string['allocationerror'] = 'Esleipen-errorea';
 $string['allowedfiletypesforoverallfeedback'] = 'Feedback-eko fitxategietan onartutako fitxategi motak';
 $string['allowedfiletypesforoverallfeedback_help'] = 'Feedback-eko fitxategietan onartutako fitxategi motak mugatu daitezke onartutako fitxategi-luzapenen zerrenda sartuta. Eremu hau hutsik utziz gero, fitxategi mota guztiak onartuko dira.';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
 $string['allowedfiletypesforsubmission'] = 'Bidalketetako fitxategietan onartutako fitxategi motak';
 $string['allowedfiletypesforsubmission_help'] = 'Bidalketetako fitxategietan onartutako fitxategi mota mugatu daitezke onartutako fitxategi-luzapenen zerrenda sartuta. Eremu hau hutsik utziz gero, fitxategi mota guztiak onartuko dira.';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = 'Bidalketa guztiak ({$a})';
 $string['alreadygraded'] = 'Dagoeneko kalifikatuta';
 $string['areaconclusion'] = 'Ondorio-testua';
@@ -193,10 +195,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa tailerretan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Tailerra motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa tailerretan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Tailerra jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da, Feedbacka ikusi da, Feedbackari iruzkina egin da, Feedback ikusi ondoren berriz bidali da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala tailerretan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Tailerra motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala tailerretan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Tailerra jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Bidalketarako argibideak';
 $string['instructreviewers'] = 'Ebaluaziorako argibideak';
@@ -215,6 +219,7 @@ Ikasleak edozein eduki digital bidal dezake (fitxategiak), hala nola testu-fitxa
 Bidalitako lanak irakasleak zehazturiko irizpide anizkoitzeko ebaluazio-formulario bat erabilita kalifikatzen dira. Aurretik parekoen arteko ebaluazio prozesua eta ebaluazio formularioa ulertzeko praktikak egin daitezke irakasleak emandako adibiderako bidalketak erabilita, ebaluazio-erreferentzia batekin batera. Ikasleek kide baten edo gehiagoren ebaluazioa egiteko aukera du. Bidalketak eta ebaluatzaileak anonimoak izan daitezke nahi izanez gero.
 
 Ikasleak bi kalifikazio lortuko ditu tailerra jardueran, bat bere bidalketarena eta bestea beste kideei eginiko kalifikazioarena. Biak kalifikatzailean gordetzen dira.';
+$string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = 'Tailerrak';
 $string['myassessments'] = 'Nire ebaluazioak';
 $string['mysubmission'] = 'Nire bidalketa';
@@ -289,7 +294,7 @@ $string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = '\'
 $string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = '\'Zure kalifikazioak\' atalaren zabaltze/toleste egoera.';
 $string['privacy:metadata:published'] = 'Behin tailerra itxi ondoren bidalketa partaide guztiei argitaratu behar den edo ez';
 $string['privacy:metadata:reviewerid'] = 'Ebaluazioa eman zuen erabiltzailearen IDa';
-$string['privacy:metadata:strategy'] = 'Gordetako balioak interpretatuko dituen kalifikazio-estrategia pluginaren izena';
+$string['privacy:metadata:strategy'] = 'Gordetako balioak interpretatuko dituen kalifikazio-estrategia azpi-pluginaren izena';
 $string['privacy:metadata:submissioncontent'] = 'Bidalketaren edukia';
 $string['privacy:metadata:submissioncontentformat'] = 'Bidalketaren edukiaren testu-formatua';
 $string['privacy:metadata:submissiongrade'] = 'Bidalketaren kalifikazioen batura 0 eta 100 arteko zenbaki hamartar gisa idatzita';
@@ -308,7 +313,7 @@ $string['privacy:metadata:workshopassessments'] = 'Tailerreko bidalketen ebaluaz
 $string['privacy:metadata:workshopgrades'] = 'Ebaluazio-formularioak kalifikazioekin eta iruzkinekin nola osatu zireneko informazioa gordetzen du';
 $string['privacy:metadata:workshopid'] = 'Tailer-jardueraren IDa';
 $string['privacy:metadata:workshopsubmissions'] = 'Tailerreko bidalketen inguruko informazioa gordetzen du';
-$string['privacy:request:delete:content'] = 'Edukia ezabatua izan da (egilearen eskaeraren ondorioz edo iraungitu delako)';
+$string['privacy:request:delete:content'] = 'Edukia ezabatua izan da (egilearen eskaeraren ondorioz edo iraungi delako)';
 $string['privacy:request:delete:title'] = '[Ezabatua]';
 $string['publishedsubmissions'] = 'Argitaratutako bidalketak';
 $string['publishsubmission'] = 'Argitaratu bidalketa';
@@ -362,6 +367,7 @@ $string['submissiongradeof'] = 'Bidalketaren kalifikazioa ({$a}(e)tik)';
 $string['submissionlastmodified'] = 'Azken aldaketa';
 $string['submissionrequiredcontent'] = 'Testuren bat idatzi edo fitxategiren bat gehitu behar duzu.';
 $string['submissionrequiredfile'] = 'Fitxategiren bat gehitu edo testuren bat idatzi behar duzu.';
+$string['submissionsallocation'] = 'Bidalketen esleipena';
 $string['submissionsettings'] = 'Bidalketaren ezarpenak';
 $string['submissionsreport'] = 'Tailerraren bidalketa-txostena';
 $string['submissionstart'] = 'Bidalketetarako hasiera-data';

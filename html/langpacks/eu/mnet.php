@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'eu', version '3.11'.
+ * Strings for component 'mnet', language 'eu', version '4.1'.
  *
  * @package     mnet
  * @category    string
@@ -90,7 +90,7 @@ $string['hideremote'] = 'Ezkutatu urrutiko erabiltzaileak';
 $string['host'] = 'ostalaria';
 $string['hostcoursenotfound'] = 'Ez dira ostalaria edo ikastaroa aurkitu';
 $string['hostdeleted'] = 'Ostalaria ezabatuta';
-$string['hostexists'] = 'Dagoeneko badago ostalari-izen hau duen ostalari baten erregistroa (agian ezabatu daiteke). <a href="{$a}">Egin klik hemen</a> erregistro hori ezabatzeko.';
+$string['hostexists'] = 'Dagoeneko badago ostalari-izen hau duen ostalari baten erregistroa. (Agian ezabatu daiteke). <a href="{$a}">Editatu erregistroa</a>';
 $string['hostlist'] = 'Sarean dauden ostalarien zerrenda';
 $string['hostname'] = 'Ostalariaren izena';
 $string['hostnamehelp'] = 'Urrutiko ostalariaren domeinuaren izen osoa, adibidez, www.adibidea.com';
@@ -118,6 +118,7 @@ $string['is_in_range'] = '<code>{$a}</code> IP helbideak konfiantzazko ostalari 
 $string['ispublished'] = '{$a}-k zerbitzu hau gaitu du zuretzat.';
 $string['issubscribed'] = '{$a} zerbitzu honetara harpidetzen ari da zure ostalarian.';
 $string['keydeleted'] = 'Zure gakoa ondo ezabatu eta ordezkatu da.';
+$string['keydeletedcancelled'] = 'Gakoari ez zaio aldaketarik egin';
 $string['keymismatch'] = 'Ostalari honentzat daukazun gako publikoa ez dator bat une honetan publibkoki erakusten ari denarekin. Une honetan publikatutako gakoa hurrengoa da:';
 $string['last_connect_time'] = 'Azken konexioa';
 $string['last_connect_time_help'] = 'Ostalari honetara konektatu zaren azken aldia.';

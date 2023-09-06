@@ -312,7 +312,7 @@ abstract class moodleform {
         // the _qf__.$this->_formname serves as a marker that form was actually submitted
         if (array_key_exists('_qf__'.$this->_formname, $submission) and $submission['_qf__'.$this->_formname] == 1) {
             if (!confirm_sesskey()) {
-                print_error('invalidsesskey');
+                throw new \moodle_exception('invalidsesskey');
             }
             $files = $_FILES;
         } else {
@@ -1615,7 +1615,7 @@ class MoodleQuickForm extends HTML_QuickForm_DHTMLRulesTableless {
      */
     var $_disableShortforms = false;
 
-    /** @var bool whether to automatically initialise M.formchangechecker for this form. */
+    /** @var bool whether to automatically initialise the form change detector this form. */
     protected $_use_form_change_checker = true;
 
     /**
@@ -2465,12 +2465,17 @@ class MoodleQuickForm extends HTML_QuickForm_DHTMLRulesTableless {
 
         $js = '
 
-require(["core/event", "jquery"], function(Event, $) {
+require([
+    "core_form/events",
+    "jquery",
+], function(
+    FormEvents,
+    $
+) {
 
     function qf_errorHandler(element, _qfMsg, escapedName) {
-        var event = $.Event(Event.Events.FORM_FIELD_VALIDATION);
-        $(element).trigger(event, _qfMsg);
-        if (event.isDefaultPrevented()) {
+        const event = FormEvents.notifyFieldValidationFailure(element, _qfMsg);
+        if (event.defaultPrevented) {
             return _qfMsg == \'\';
         } else {
             // Legacy mforms.
@@ -2586,11 +2591,11 @@ require(["core/event", "jquery"], function(Event, $) {
       ret = validate_' . $this->_formName . '_' . $escapedElementName.'(frm.elements[\''.$elementName.'\'], \''.$escapedElementName.'\') && ret;
       if (!ret && !first_focus) {
         first_focus = true;
-        Y.use(\'moodle-core-event\', function() {
-            Y.Global.fire(M.core.globalEvents.FORM_ERROR, {formid: \'' . $this->_attributes['id'] . '\',
-                                                           elementid: \'' . $errorid. '\'});
-            document.getElementById(\'' . $errorid . '\').focus();
-        });
+        const element = document.getElementById("' . $errorid . '");
+        if (element) {
+          FormEvents.notifyFormError(element);
+          element.focus();
+        }
       }
 ';
 
@@ -2618,12 +2623,12 @@ require(["core/event", "jquery"], function(Event, $) {
       return ret;
     }
 
-    var form = $(document.getElementById(\'' . $this->_attributes['id'] . '\')).closest(\'form\');
-    form.on(M.core.event.FORM_SUBMIT_AJAX, function() {
+    var form = document.getElementById(\'' . $this->_attributes['id'] . '\').closest(\'form\');
+    form.addEventListener(FormEvents.eventTypes.formSubmittedByJavascript, () => {
         try {
             var myValidator = validate_' . $this->_formName . ';
         } catch(e) {
-            return true;
+            return;
         }
         if (myValidator) {
             myValidator();
@@ -3017,10 +3022,6 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless{
      */
     var $_openHiddenFieldsetTemplate = "\n\t<fieldset class=\"hidden\"><div>";
 
-    /** @var string Header Template string */
-    var $_headerTemplate =
-       "\n\t\t<legend class=\"ftoggler\">{header}</legend>\n\t\t<div class=\"fcontainer clearfix\">\n\t\t";
-
     /** @var string Template used when opening a fieldset */
     var $_openFieldsetTemplate = "\n\t<fieldset class=\"{classes}\" {id}>";
 
@@ -3117,7 +3118,7 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless{
      * @param MoodleQuickForm $form reference of the form
      */
     function startForm(&$form){
-        global $PAGE;
+        global $PAGE, $OUTPUT;
         $this->_reqHTML = $form->getReqHTML();
         $this->_elementTemplates = str_replace('{req}', $this->_reqHTML, $this->_elementTemplates);
         $this->_advancedHTML = $form->getAdvancedHTML();
@@ -3132,19 +3133,14 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless{
         }
 
         if ($form->is_form_change_checker_enabled()) {
-            $PAGE->requires->yui_module('moodle-core-formchangechecker',
-                    'M.core_formchangechecker.init',
-                    array(array(
-                        'formid' => $formid,
-                        'initialdirtystate' => $form->is_dirty(),
-                    ))
-            );
-            $PAGE->requires->string_for_js('changesmadereallygoaway', 'moodle');
+            $PAGE->requires->js_call_amd('core_form/changechecker', 'watchFormById', [$formid]);
+            if ($form->is_dirty()) {
+                $PAGE->requires->js_call_amd('core_form/changechecker', 'markFormAsDirtyById', [$formid]);
+            }
         }
         if (!empty($this->_collapsibleElements)) {
             if (count($this->_collapsibleElements) > 1) {
-                $this->_collapseButtons = $this->_collapseButtonsTemplate;
-                $this->_collapseButtons = str_replace('{strexpandall}', get_string('expandall'), $this->_collapseButtons);
+                $this->_collapseButtons = $OUTPUT->render_from_template('core_form/collapsesections', (object)[]);
             }
             $PAGE->requires->yui_module('moodle-form-shortforms', 'M.form.shortforms', array(array('formid' => $formid)));
         }
@@ -3199,7 +3195,7 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless{
             $html = str_replace('{groupname}', 'data-groupname="'.$group->getName().'"', $html);
             $html = str_replace('{typeclass}', 'fgroup', $html);
             $html = str_replace('{type}', 'group', $html);
-            $html = str_replace('{class}', $group->getAttribute('class'), $html);
+            $html = str_replace('{class}', $group->getAttribute('class') ?? '', $html);
             $emptylabel = '';
             if ($group->getLabel() == '') {
                 $emptylabel = 'femptylabel';
@@ -3265,7 +3261,7 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless{
             $html = str_replace('{type}', $element->getType(), $html);
             $html = str_replace('{name}', $element->getName(), $html);
             $html = str_replace('{groupname}', '', $html);
-            $html = str_replace('{class}', $element->getAttribute('class'), $html);
+            $html = str_replace('{class}', $element->getAttribute('class') ?? '', $html);
             $emptylabel = '';
             if ($element->getLabel() == '') {
                 $emptylabel = 'femptylabel';
@@ -3326,18 +3322,29 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless{
     * @global moodle_page $PAGE
     */
     function renderHeader(&$header) {
-        global $PAGE;
+        global $PAGE, $OUTPUT;
 
         $header->_generateId();
         $name = $header->getName();
 
+        $collapsed = $collapseable = '';
+        if (isset($this->_collapsibleElements[$header->getName()])) {
+            $collapseable = true;
+            $collapsed = $this->_collapsibleElements[$header->getName()];
+        }
+
         $id = empty($name) ? '' : ' id="' . $header->getAttribute('id') . '"';
-        if (is_null($header->_text)) {
-            $header_html = '';
-        } elseif (!empty($name) && isset($this->_templates[$name])) {
-            $header_html = str_replace('{header}', $header->toHtml(), $this->_templates[$name]);
+        if (!empty($name) && isset($this->_templates[$name])) {
+            $headerhtml = str_replace('{header}', $header->toHtml(), $this->_templates[$name]);
         } else {
-            $header_html = str_replace('{header}', $header->toHtml(), $this->_headerTemplate);
+            $headerhtml = $OUTPUT->render_from_template('core_form/element-header',
+                (object)[
+                    'header' => $header->toHtml(),
+                    'id' => $header->getAttribute('id'),
+                    'collapseable' => $collapseable,
+                    'collapsed' => $collapsed,
+                    'helpbutton' => $header->getHelpButton(),
+                ]);
         }
 
         if ($this->_fieldsetsOpen > 0) {
@@ -3362,7 +3369,7 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless{
         $openFieldsetTemplate = str_replace('{id}', $id, $this->_openFieldsetTemplate);
         $openFieldsetTemplate = str_replace('{classes}', join(' ', $fieldsetclasses), $openFieldsetTemplate);
 
-        $this->_html .= $openFieldsetTemplate . $header_html;
+        $this->_html .= $openFieldsetTemplate . $headerhtml;
         $this->_fieldsetsOpen++;
     }
 

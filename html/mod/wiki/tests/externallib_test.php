@@ -168,9 +168,9 @@ class externallib_test extends externallib_advanced_testcase {
 
         // Create what we expect to be returned when querying the two courses.
         // First for the student user.
-        $expectedfields = array('id', 'coursemodule', 'course', 'name', 'intro', 'introformat', 'introfiles', 'firstpagetitle',
-                                'wikimode', 'defaultformat', 'forceformat', 'editbegin', 'editend', 'section', 'visible',
-                                'groupmode', 'groupingid');
+        $expectedfields = array('id', 'coursemodule', 'course', 'name', 'intro', 'introformat', 'introfiles', 'lang',
+                'firstpagetitle', 'wikimode', 'defaultformat', 'forceformat', 'editbegin', 'editend', 'section', 'visible',
+                'groupmode', 'groupingid');
 
         // Add expected coursemodule and data.
         $wiki1 = $this->wiki;
@@ -181,6 +181,7 @@ class externallib_test extends externallib_advanced_testcase {
         $wiki1->groupmode = 0;
         $wiki1->groupingid = 0;
         $wiki1->introfiles = [];
+        $wiki1->lang = '';
 
         $wiki2->coursemodule = $wiki2->cmid;
         $wiki2->introformat = 1;
@@ -189,6 +190,7 @@ class externallib_test extends externallib_advanced_testcase {
         $wiki2->groupmode = 0;
         $wiki2->groupingid = 0;
         $wiki2->introfiles = [];
+        $wiki2->lang = '';
 
         foreach ($expectedfields as $field) {
             $expected1[$field] = $wiki1->{$field};
@@ -644,15 +646,7 @@ class externallib_test extends externallib_advanced_testcase {
 
         // Check that WS doesn't return page content if includecontent is false, it returns the size instead.
         foreach ($expectedpages as $i => $expectedpage) {
-            $expectedpages[$i]['contentsize'] = strlen($expectedpages[$i]['cachedcontent']);
-            // TODO: Remove this block of code once PHP 8.0 is the min version supported.
-            // For PHP < 8.0, if strlen() was overloaded, calculate
-            // the bytes using mb_strlen(..., '8bit').
-            if (PHP_VERSION_ID < 80000) {
-                if (function_exists('mb_strlen') && ((int)ini_get('mbstring.func_overload') & 2)) {
-                    $expectedpages[$i]['contentsize'] = mb_strlen($expectedpages[$i]['cachedcontent'], '8bit');
-                }
-            }
+            $expectedpages[$i]['contentsize'] = \core_text::strlen($expectedpages[$i]['cachedcontent']);
             unset($expectedpages[$i]['cachedcontent']);
             unset($expectedpages[$i]['contentformat']);
         }

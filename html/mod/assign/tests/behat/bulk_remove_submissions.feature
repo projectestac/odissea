@@ -35,14 +35,11 @@ Feature: Bulk remove submissions
       | assign                | user      | onlinetext                   |
       | Test assignment name  | student1  | I'm the student1 submission  |
       | Test assignment name  | student2  | I'm the student2 submission  |
-    And I log in as "admin"
-    And I set the following system permissions of "Teacher" role:
-      | capability                     | permission |
-      | mod/assign:editothersubmission | Allow      |
-    And I log out
-
+    And the following "role capability" exists:
+      | role                           | editingteacher |
+      | mod/assign:editothersubmission | allow          |
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    And I navigate to "View all submissions" in current page administration
+    And I follow "View all submissions"
     And I should see "I'm the student1 submission"
     And I should see "I'm the student2 submission"
     And I set the field "selectall" to "1"
@@ -75,7 +72,7 @@ Feature: Bulk remove submissions
       | Test assignment name  | student2  | I'm the student2 submission  |
 
     When I am on the "Test assignment name" Activity page logged in as teacher1
-    And I navigate to "View all submissions" in current page administration
+    And I follow "View all submissions"
     And I should see "I'm the student1 submission"
     And I should see "I'm the student2 submission"
     And I set the field "selectall" to "1"
@@ -96,15 +93,11 @@ Feature: Bulk remove submissions
       | assign                | user      | onlinetext                   |
       | Test assignment name  | student1  | I'm the student1 submission  |
       | Test assignment name  | student2  | I'm the student2 submission  |
-
-    And I log in as "admin"
-    And I set the following system permissions of "Teacher" role:
-      | capability                     | permission |
-      | mod/assign:editothersubmission | Allow      |
-    And I log out
-
+    And the following "role capability" exists:
+      | role                           | editingteacher |
+      | mod/assign:editothersubmission | allow          |
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    And I navigate to "View all submissions" in current page administration
+    And I follow "View all submissions"
     And I should see "I'm the student1 submission"
     And I should see "I'm the student2 submission"
     And I set the field "selectall" to "1"
@@ -135,14 +128,11 @@ Feature: Bulk remove submissions
       | assign                | user      | onlinetext                   |
       | Test assignment name  | student1  | I'm the student1 submission  |
       | Test assignment name  | student2  | I'm the student2 submission  |
-    And I log in as "admin"
-    And I set the following system permissions of "Teacher" role:
-      | capability                     | permission |
-      | mod/assign:editothersubmission | Allow      |
-    And I log out
-
+    And the following "role capability" exists:
+      | role                           | editingteacher |
+      | mod/assign:editothersubmission | allow          |
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    And I navigate to "View all submissions" in current page administration
+    And I follow "View all submissions"
     And I should see "I'm the student1 submission"
     And I should see "I'm the student2 submission"
     And I set the field "selectall" to "1"

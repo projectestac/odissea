@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ja', version '3.11'.
+ * Strings for component 'auth_ldap', language 'ja', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -124,6 +124,10 @@ $string['diag_toooldversion'] = '最新のLDAPサーバがLDAPv2プロトコル�
 $string['didntfindexpiretime'] = 'password_expire()が有効期限を見つけることができませんでした。';
 $string['didntgetusersfromldap'] = 'LDAPサーバからユーザを取得できませんでした。';
 $string['gotcountrecordsfromldap'] = 'LDAPから {$a} レコードを取得しました。';
+$string['invalidusererrors'] = '警告: {$a} ユーザアカウントの作成をスキップしました。';
+$string['invaliduserexception'] = 'エラー: 新しいユーザアカウントを作成できません。詳細および理由は以下のとおりです:
+{$a}
+このユーザをスキップします。';
 $string['ldapnotconfigured'] = '現在、LDAPホストURLが設定されていません。';
 $string['morethanoneuser'] = 'LDAPに2名以上のユーザレコードが見つかりました。最初のユーザレコードのみ使用します。';
 $string['needbcmath'] = '有効期限切れパスワードを使用してActive Directoryに問い合わせる場合、あなたはBCMath拡張モジュールが必要です。';
@@ -157,7 +161,6 @@ $string['updatepasserrorexpire'] = 'パスワードの有効期限読み込み�
 $string['updatepasserrorexpiregrace'] = 'パスワード有効期限または猶予ログインの修正中にuser_update_password()にエラーが発生しました。エラーコード: {$a->errno}  エラーストリング: {$a->errstring}';
 $string['updateremfail'] = 'LDAPレコードの更新中にエラーが発生しました。エラーコード: {$a->errno}; エラーストリング: {$a->errstring}<br />キー ({$a->key}) - 古いMoodle値: {$a->ouvalue}  新しい値: {$a->nuvalue}';
 $string['updateremfailamb'] = 'LDAPのあいまいなフィールド {$a->key} の更新に失敗しました。古いMoodle値: {$a->ouvalue}  新しい値: {$a->nuvalue}';
-$string['updateremfailfield'] = '存在しないフィールド (「 {$a->ldapkey} 」) のLDAPの更新に失敗しました。キー ({$a->key}) - 古いMoodleの値: 「 {$a->ouvalue} 」 新しい値: 「 {$a->nuvalue} 」';
 $string['updateusernotfound'] = '外部更新中にユーザを見つけることができませんでした。詳細は次のとおりです: 検索ベース: {$a->userdn}  検索フィルタ: (objectClass=*)  検索属性: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate()は選択された次のusertypeをサポートしていません: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable()は選択された次のusertypeをサポートしていません: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'pt', version '3.11'.
+ * Strings for component 'chat', language 'pt', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -61,7 +61,7 @@ $string['currentusers'] = 'Utilizadores no chat';
 $string['deletesession'] = 'Apagar sessão';
 $string['deletesessionsure'] = 'Tem a certeza de que pretende apagar a gravação desta sessão?';
 $string['donotusechattime'] = 'Sem hora definida';
-$string['enterchat'] = 'Clique aqui para entrar no chat';
+$string['enterchat'] = 'Entrar no chat';
 $string['entermessage'] = 'Introduza a sua mensagem';
 $string['errornousers'] = 'Não foi encontrado nenhum utilizador!';
 $string['eventmessagesent'] = 'Mensagem enviada';
@@ -75,10 +75,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão do Chat';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Chat.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Chat';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Chat durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido, Visualizado feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização do Chat';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Chat.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Chat';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Chat durante esse intervalo de análise (Níveis = Sem participação, Participante individual, Participante com outros)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = 'Área de entrada';
 $string['invalidid'] = 'Não foi possível encontrar a sala de chat!';
 $string['list_all_sessions'] = 'Listar todas as sessões';
@@ -124,6 +126,7 @@ $string['notlogged'] = 'Não está autenticado!';
 $string['oldping'] = 'Tempo limite de sem atividade';
 $string['page-mod-chat-x'] = 'Qualquer página da atividade chat';
 $string['pastchats'] = 'Sessões de chat anteriores';
+$string['pastsessions'] = 'Sessões anteriores';
 $string['pluginadministration'] = 'Administração do Chat';
 $string['pluginname'] = 'Chat';
 $string['privacy:metadata:chat_messages_current'] = 'Sessão atual do chat. Estes dados são temporários e são apagados depois da sessão de chat ser apagada.';
@@ -174,4 +177,4 @@ $string['usingchat_help'] = 'O módulo Chat inclui algumas caraterísticas para 
 * Personalização - Pode começar uma linha com "/me" ou ":" para personalizar a mensagem. Por exemplo, se o seu nome for Joaquim, e escrever ":sorriu!" ou "/me sorriu!", todos os outros participantes verão "Joaquim sorriu!"
 * Beeps - Pode enviar um som aos outros participantes clicando em "chamar" junto dos seus nomes. Um atalho útil para chamar todos os participantes consiste em escrever "beep all".
 * HTML - Se souber algum código HTML, poderá usá-lo no seu texto para fazer coisas como, por exemplo, inserir imagens, tocar sons ou enviar texto com diferentes cores.';
-$string['viewreport'] = 'Ver gravações de sessões anteriores';
+$string['viewreport'] = 'Sessões anteriores';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_checkbox', language 'ur', version '3.11'.
+ * Strings for component 'profilefield_checkbox', language 'ur', version '4.1'.
  *
  * @package     profilefield_checkbox
  * @category    string
@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'چیک باکس';
+$string['privacy:metadata:profilefield_checkbox:data'] = 'چیک باکس صارف پروفائل فیلڈ صارف ڈیٹا';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'چیک باکس صارف پروفائل فیلڈ صارف ڈیٹا کا فارمیٹ';
+$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'پروفائل فیلڈ کی آئی ڈی';
+$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'اضافی پروفائل ڈیٹا';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'صارف کی  آئی ڈی جس کا ڈیٹا چیک باکس صارف پروفائل فیلڈ کے ذریعے محفوظ کیا جاتا ہے';

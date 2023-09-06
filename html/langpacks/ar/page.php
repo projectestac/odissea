@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ar', version '3.11'.
+ * Strings for component 'page', language 'ar', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -36,11 +36,13 @@ $string['indicator:cognitivedepth'] = 'الصفحة معرفياً';
 $string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في مورد الصفحة.';
 $string['indicator:cognitivedepthdef'] = 'الصفحة معرفياً';
 $string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها موارد الصفحة خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'الصفحة إجتماعياً';
 $string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في مورد الصفحة.';
 $string['indicator:socialbreadthdef'] = 'الصفحة إجتماعياً';
 $string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها موارد الصفحة خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً)';
-$string['legacyfiles'] = 'ترحيل ملف المقرر القديم';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['legacyfiles'] = 'ترحيل ملف المساق القديم';
 $string['legacyfilesactive'] = 'نشط';
 $string['legacyfilesdone'] = 'انتهى';
 $string['modulename'] = 'صفحة';
@@ -52,8 +54,9 @@ $string['modulename_help'] = 'وحدة الصفحة تمكن المعلم من �
 
 يمكن استعمال مصدر الصفحة:
 
-* لعرض بنود وشروط المقرر الدراسي أو لعرض ملخص المنهج الدراسي
+* لعرض بنود وشروط المساق أو لعرض ملخص المنهج الدراسي
 * لتضمين العديد من أشرطة الفيديو أو ملفات الصوت مع بعض النصوص التوضيحية';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'صفحات';
 $string['optionsheader'] = 'خيارات العرض';
 $string['page-mod-page-x'] = 'أي صفحة لوحدة الصفحة';

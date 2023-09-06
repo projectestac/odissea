@@ -586,8 +586,8 @@
 		
 		"evaluate_keyword": "评估",
 		
-		"home_getting_started_welcome_header_text": "欢迎使用 WirisQuizzes 4.7.0",
-        "home_getting_started_welcome_description_text": "您好，我们在菜单中引入了入门部分，以帮助您通过访问我们的文档、培训和新闻来了解有关 WirisQuizzes 的更多信息。",
+		"home_getting_started_welcome_header_text": "WirisQuizzes 4.8.0介绍：现在配备了手写图表回答",
+        "home_getting_started_welcome_description_text": "我们很高兴地向您介绍一种新的答复类型，使您的学生可以通过手写图表回答问题。要想了解该功能的更多信息，请查看发布说明和文档。希望您和您的学生能享用WirisQuizzes的这个新功能！",
         "home_getting_started_release_notes_button_text": "版本发布通知",
         "home_getting_give_us_feedback_button_text": "向我们提供您的反馈",
         "home_getting_started_create_question_header_text": "如何创建您的第一个问题",
@@ -603,7 +603,15 @@
         "home_getting_started_contact_us_button_text": "联系我们",
         "home_getting_started_visit_our_webpage_button_text": "访问我们的网站",
         "home_getting_started_report_an_issue_button_text": "报告问题",
-		"home_getting_started_list_button_text": "开始"
+		"home_getting_started_list_button_text": "开始",
+
+		"quizzes_studio_home_answer_type_sketch_label": "草图",
+		"quizzes_studio_home_initial_content_description_sketch": "这是您的学生在尝试解答该问题时将看到的图表编辑器的初始内容状态。请注意，学生工具栏仅有手写和删除按钮。请使用“测试该问题”功能查看它将如何显示。",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_1": "请输入此问题的正确答案。您的学生将使用手写工具起草答案，该功能为此对不完全准确的答案设置了最低容忍度。您可点击“验证选项”对此进行设置。",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "请使用“测试该问题”按钮查看学生界面。",
+		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "等效草图",
+		"quizzes_demo_sketch_title_menu" : "草图",
+		"home_getting_started_documentation_button_text" : "文档"
 	}
 }
 

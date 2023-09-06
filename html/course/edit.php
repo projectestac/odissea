@@ -81,7 +81,7 @@ if ($id) {
     // Editing course.
     if ($id == SITEID){
         // Don't allow editing of  'site course' using this from.
-        print_error('cannoteditsiteform');
+        throw new \moodle_exception('cannoteditsiteform');
     }
 
     // Login to the course and retrieve also all fields defined by course format.
@@ -110,6 +110,11 @@ if ($id) {
     $catcontext = context_coursecat::instance($category->id);
     require_capability('moodle/course:create', $catcontext);
     $PAGE->set_context($catcontext);
+}
+
+// We are adding a new course and have a category context.
+if (isset($catcontext)) {
+    $PAGE->set_secondary_active_tab('categorymain');
 }
 
 // Prepare course and the editor.
@@ -164,7 +169,15 @@ if ($editform->is_cancelled()) {
         // Get the context of the newly created course.
         $context = context_course::instance($course->id, MUST_EXIST);
 
-        if (!empty($CFG->creatornewroleid) and !is_viewing($context, NULL, 'moodle/role:assign') and !is_enrolled($context, NULL, 'moodle/role:assign')) {
+        // Admins have all capabilities, so is_viewing is returning true for admins.
+        // We are checking 'enroladminnewcourse' setting to decide to enrol them or not.
+        if (is_siteadmin($USER->id)) {
+            $enroluser = $CFG->enroladminnewcourse;
+        } else {
+            $enroluser = !is_viewing($context, null, 'moodle/role:assign');
+        }
+
+        if (!empty($CFG->creatornewroleid) and $enroluser and !is_enrolled($context, null, 'moodle/role:assign')) {
             // Deal with course creators - enrol them internally with default role.
             // Note: This does not respect capabilities, the creator will be assigned the default role.
             // This is an expected behaviour. See MDL-66683 for further details.
@@ -173,21 +186,6 @@ if ($editform->is_cancelled()) {
 
         // The URL to take them to if they chose save and display.
         $courseurl = new moodle_url('/course/view.php', array('id' => $course->id));
-
-        // If they choose to save and display, and they are not enrolled take them to the enrolments page instead.
-        if (!is_enrolled($context) && isset($data->saveanddisplay)) {
-            // Redirect to manual enrolment page if possible.
-            $instances = enrol_get_instances($course->id, true);
-            foreach($instances as $instance) {
-                if ($plugin = enrol_get_plugin($instance->enrol)) {
-                    if ($plugin->get_manual_enrol_link($instance)) {
-                        // We know that the ajax enrol UI will have an option to enrol.
-                        $courseurl = new moodle_url('/user/index.php', array('id' => $course->id, 'newcourse' => 1));
-                        break;
-                    }
-                }
-            }
-        }
     } else {
         // Save any changes to the files used in the editor.
         update_course($data, $editoroptions);
@@ -230,17 +228,20 @@ if (!empty($course->id)) {
         // If the user doesn't have either manage caps then they can only manage within the given category.
         $managementurl->param('categoryid', $categoryid);
     }
-    // Because the course category management interfaces are buried in the admin tree and that is loaded by ajax
+    // Because the course category interfaces are buried in the admin tree and that is loaded by ajax
     // we need to manually tell the navigation we need it loaded. The second arg does this.
-    navigation_node::override_active_url($managementurl, true);
+    navigation_node::override_active_url(new moodle_url('/course/index.php', ['categoryid' => $category->id]), true);
+    $PAGE->set_primary_active_tab('home');
+    $PAGE->navbar->add(get_string('coursemgmt', 'admin'), $managementurl);
 
     $pagedesc = $straddnewcourse;
     $title = "$site->shortname: $straddnewcourse";
-    $fullname = $site->fullname;
+    $fullname = format_string($category->name);
     $PAGE->navbar->add($pagedesc);
 }
 
 $PAGE->set_title($title);
+$PAGE->add_body_class('limitedwidth');
 $PAGE->set_heading($fullname);
 
 echo $OUTPUT->header();

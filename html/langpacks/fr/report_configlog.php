@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_configlog', language 'fr', version '3.11'.
+ * Strings for component 'report_configlog', language 'fr', version '4.1'.
  *
  * @package     report_configlog
  * @category    string
@@ -28,13 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['configlog'] = 'Modifications de configuration';
 $string['datefrom'] = 'Date de début';
 $string['dateto'] = 'Date de fin';
+$string['entityconfigchange'] = 'Modification de configuration';
 $string['plugin'] = 'Plugin';
 $string['pluginname'] = 'Modifications de configuration';
 $string['privacy:metadata'] = 'Le plugin Modifications de configuration n\'enregistre aucune donnée personnelle.';
 $string['setting'] = 'Réglage';
 $string['timemodified'] = 'Date';
 $string['user'] = 'Utilisateur';
-$string['user_help'] = 'Recherche par prénom ou nom';
+$string['user_help'] = 'Recherche par prénom ou nom de famille';
 $string['usernone'] = 'CLI ou installation';
 $string['value'] = 'Valeur';
 $string['value_help'] = 'Rechercher par nouvelle valeur ou valeur originale de configuration';

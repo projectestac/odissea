@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_lti', language 'el', version '3.11'.
+ * Strings for component 'qtype_lti', language 'el', version '4.1'.
  *
  * @package     qtype_lti
  * @category    string
@@ -60,6 +60,7 @@ $string['cannot_edit'] = 'Δεν μπορείτε να τροποποιήσετ�
 $string['capabilities'] = 'Δυνατότητες';
 $string['comment'] = 'Σχόλιο';
 $string['delete'] = 'Διαγραφή';
+$string['modulename_link'] = 'mod/lti/view';
 $string['name'] = 'Όνομα';
 $string['never'] = 'Ποτέ';
 $string['new_window'] = 'Νέο παράθυρο';
@@ -73,5 +74,6 @@ $string['parameter'] = 'Παράμετεροι εργαλείου';
 $string['password'] = 'Κοινόχρηστο μυστικό';
 $string['password_admin'] = 'Κοινόχρηστο μυστικό';
 $string['pending'] = 'Σε εκκρεμότητα';
+$string['pluginname_link'] = 'question/type/lti';
 $string['resourcekey'] = 'Κλειδί καταναλωτή';
 $string['resourcekey_admin'] = 'Κλειδί καταναλωτή';

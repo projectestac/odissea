@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'nl', version '3.11'.
+ * Strings for component 'atto_h5p', language 'nl', version '4.1'.
  *
  * @package     atto_h5p
  * @category    string
@@ -28,18 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['browserepositories'] = 'Blader door opslagruimten ...';
 $string['copyrightbutton'] = 'Copyright-knop';
 $string['downloadbutton'] = 'Downloaden toestaan';
-$string['either'] = 'Een van beide';
 $string['embedbutton'] = 'Knop Insluiten';
-$string['enterurl'] = 'URL of invoegcode';
 $string['h5p:addembed'] = 'Voeg ingesloten H5P toe';
 $string['h5pfile'] = 'H5P bestand uploaden';
 $string['h5pfileorurl'] = 'H5P URL of bestandsupload';
 $string['h5poptions'] = 'H5P opties';
-$string['h5pproperties'] = 'H5P eigenschappen';
 $string['h5purl'] = 'H5P URL';
 $string['instructions'] = 'Je kunt H5P-inhoud invoegen door <strong>ofwel</strong> een URL in te voeren <strong>of</strong> door een H5P-bestand te uploaden.';
 $string['invalidh5purl'] = 'Ongeldige URL';
 $string['noh5pcontent'] = 'Geen H5P inhoud toegevoegd';
-$string['or'] = 'of';
 $string['pluginname'] = 'H5P invoegen';
 $string['privacy:metadata'] = 'De plug-in atto_h5p slaat geen persoonlijke gegevens op.';

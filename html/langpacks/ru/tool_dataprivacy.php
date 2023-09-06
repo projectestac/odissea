@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'ru', version '3.11'.
+ * Strings for component 'tool_dataprivacy', language 'ru', version '4.1'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -243,6 +243,8 @@ $string['pluginregistrytitle'] = 'Реестр соблюдения конфид
 $string['privacy'] = 'Конфиденциальность';
 $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = 'Фильтры, применяемые в настоящее время на странице запросов данных.';
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = 'Количество запросов данных, которые пользователь предпочитает видеть на одной странице.';
+$string['privacy:metadata:purpose'] = 'Информация о целях для этого сайта.';
+$string['privacy:metadata:purpose:usermodified'] = 'ID пользователя, изменившего цель';
 $string['privacy:metadata:request'] = 'Запросы информации с персональными данными (запросы на доступ и удаление), сделанные для этого сайта.';
 $string['privacy:metadata:request:comments'] = 'Комментарии любых пользователей, сопровождающие запрос.';
 $string['privacy:metadata:request:dpocomment'] = 'Любые комментарии к запросу, сделанные сотрудником по вопросам конфиденциальности сайта.';

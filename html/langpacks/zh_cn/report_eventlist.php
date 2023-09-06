@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'zh_cn', version '3.11'.
+ * Strings for component 'report_eventlist', language 'zh_cn', version '4.1'.
  *
  * @package     report_eventlist
  * @category    string
@@ -31,6 +31,8 @@ $string['affectedtable'] = '受影响的表格';
 $string['all'] = '全部';
 $string['clear'] = '清楚的';
 $string['component'] = '组件';
+$string['core'] = '核心';
+$string['coresubsystem'] = '子系统 ({$a})';
 $string['create'] = '创建';
 $string['crud'] = '数据库查询类型';
 $string['delete'] = '删除';

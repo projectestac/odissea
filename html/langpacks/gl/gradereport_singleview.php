@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'gl', version '3.11'.
+ * Strings for component 'gradereport_singleview', language 'gl', version '4.1'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -57,8 +57,6 @@ $string['privacy:metadata'] = 'O informe de vista individual de cualificacións 
 $string['save'] = 'Gardar';
 $string['savegrades'] = 'Gardando as cualificacións';
 $string['savegradessuccess'] = 'As cualificacións fixáronse para {$a} elementos';
-$string['selectgrade'] = 'Seleccionar elemento de cualificación...';
-$string['selectuser'] = 'Seleccionar usuario...';
 $string['singleview:view'] = 'Ver informe';
 $string['summarygrade'] = 'Unha táboa de usuarios, con columnas para intervalo, cualificación, comentarios e se quere substituír ou excluír unha nota determinada.';
 $string['summaryuser'] = 'Unha táboa de elementos de cualificación, con columnas para a categoría de cualificación,intervalo, cualificación, comentarios e se quere substituír ou excluír unha nota determinada.';

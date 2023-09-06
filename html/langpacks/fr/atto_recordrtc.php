@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'fr', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'fr', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'Audio et vidéo';
 $string['audiobitrate'] = 'Débit audio';
 $string['audiobitrate_desc'] = 'Qualité de l\'enregistrement audio (plus le nombre est grand, meilleure est la qualité)';
 $string['audiortc'] = 'Enregistrer un son';
+$string['audiotimelimit'] = 'Limite de durée audio en secondes';
+$string['audiotimelimit_desc'] = 'Durée maximale permise pour les engistrements audio';
 $string['gumabort'] = 'Un comportement inattendu empêche l\'utilisation du micro ou de la webcam';
 $string['gumabort_title'] = 'Erreur';
 $string['gumnotallowed'] = 'L\'utilisateur doit autoriser le navigateur à accéder au micro et à la webcam';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'Commencer l\'enregistrement';
 $string['stoprecording'] = 'Terminer l\'enregistrement';
 $string['timelimit'] = 'Durée maximale en secondes';
 $string['timelimit_desc'] = 'Durée maximale permise pour les enregistrements audio et vidéo';
+$string['timelimitwarning'] = 'Veuillez saisir un nombre plus grand que 0.';
 $string['uploadaborted'] = 'Dépôt annulé :';
 $string['uploadfailed'] = 'Échec du dépôt :';
 $string['uploadfailed404'] = 'Échec du dépôt : le fichier est trop volumineux';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'terminé';
 $string['videobitrate'] = 'Débit vidéo';
 $string['videobitrate_desc'] = 'Qualité de l\'enregistrement vidéo (plus le nombre est grand, meilleure est la qualité)';
 $string['videortc'] = 'Enregistrer une vidéo';
+$string['videotimelimit'] = 'Limite de durée vidéo en secondes';
+$string['videotimelimit_desc'] = 'Durée maximale permise pour les séquences vidéo';

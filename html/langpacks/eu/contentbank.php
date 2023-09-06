@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'eu', version '3.11'.
+ * Strings for component 'contentbank', language 'eu', version '4.1'.
  *
  * @package     contentbank
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Egilea';
+$string['choosecontext'] = 'Aukeratu ezazu ikastaroa edo kategoria...';
 $string['close'] = 'Itxi';
 $string['contentbank'] = 'Eduki-bankua';
 $string['contentbankpreferences'] = 'Eduki-bankuko hobespenak';
@@ -54,10 +55,12 @@ $string['eventcontentreplaced'] = 'Edukia fitxategiaren edukiarekin ordezkatu da
 $string['eventcontentupdated'] = 'Edukia eguneratu da';
 $string['eventcontentuploaded'] = 'Edukia igo da';
 $string['eventcontentviewed'] = 'Edukia ikusi da';
+$string['exit'] = 'Irten';
 $string['file'] = 'Igo edukia';
 $string['file_help'] = 'Fitxategiak eduki-bankuan gorde daitezke ikastaroetan erabiliak izan daitezen. Soilik gunean gaitutako eduki-motetako fitxategiak igo ahalko dira.';
 $string['itemsfound'] = '{$a} elementu aurkitu dira';
 $string['lastmodified'] = 'Azkenengoz aldatua';
+$string['more'] = 'Gehiago';
 $string['name'] = 'Edukia';
 $string['nocontentavailable'] = 'Ez dago edukirik eskuragarri';
 $string['nocontenttypes'] = 'Ez dago eduki-motarik eskuragarri';

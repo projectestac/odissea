@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'pt', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'pt', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -71,13 +71,15 @@ $string['privacy:metadata'] = 'O módulo Pergunta do tipo Escolha múltipla perm
 $string['privacy:preference:answernumbering'] = 'O tipo de numeração que deve ser usado (\'1., 2., 3., ...\', \'a., b., c., ...\', etc.).';
 $string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
 $string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das perguntas é \'Interativo com múltiplas tentativas\' ou \'Modo adaptável\'.';
-$string['privacy:preference:showstandardinstruction'] = 'Se deve, ou não, ser mostrada a instrução predefinida.';
+$string['privacy:preference:showstandardinstruction'] = 'Se devem, ou não, ser mostradas as instruções predefinidas.';
 $string['privacy:preference:shuffleanswers'] = 'Se as respostas devem, ou não, ser baralhadas automaticamente.';
 $string['privacy:preference:single'] = 'Se a resposta é única com botões de rádio ou múltipla com caixas de seleção.';
+$string['regradeissuenumchoiceschanged'] = 'O número de opções da pergunta foi alterado.';
 $string['selectmulti'] = 'Selecione uma ou mais opções:';
 $string['selectone'] = 'Selecione uma opção:';
 $string['showstandardinstruction'] = 'Mostrar instruções predefinidas';
-$string['showstandardinstruction_help'] = 'Se pretende mostrar, ou não, as instruções "Selecione uma opção:" ou "Selecione uma ou mais opções:" antes das opções de respostas.';
+$string['showstandardinstruction_desc'] = 'Se pretende mostrar, ou não, as instruções "Selecione uma opção:" ou "Selecione uma ou mais opções:" antes das opções de respostas.';
+$string['showstandardinstruction_help'] = 'Se pretende mostrar, ou não, as instruções "Selecione uma opção:" ou "Selecione uma ou mais opções:" antes das opções de respostas. Em alternativa, pode incluir instruções no conteúdo da pergunta.';
 $string['shuffleanswers'] = 'Baralhar opções de resposta';
 $string['shuffleanswers_desc'] = 'Se ativar esta opção, as opções serão aleatoriamente baralhadas em cada tentativa, por predefinição.';
 $string['shuffleanswers_help'] = 'Se ativar esta opção, a ordem das opções de resposta é definida aleatoriamente em cada nova tentativa, desde que a opção "Baralhar perguntas" nas opções de configuração do teste também esteja ativa.';

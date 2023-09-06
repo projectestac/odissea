@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'game', language 'el', version '3.11'.
+ * Strings for component 'game', language 'el', version '4.1'.
  *
  * @package     game
  * @category    string
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allattempts'] = 'Δείξε όλες τις προσπάθειες';
-$string['allstudents'] = 'Δείξε όλα {$a}';
+$string['allattempts'] = 'Εμφάνιση όλων των προσπαθειών';
+$string['allstudents'] = 'Εμφάνιση όλων των {$a}';
 $string['and'] = 'και';
 $string['attempt'] = 'Προσπάθεια';
 $string['attemptduration'] = 'Διάρκεια παιχνιδιού';
@@ -51,14 +51,14 @@ $string['bookquiz_questions'] = 'Αντιστοίχιση κατηγοριών �
 $string['bottomtext'] = 'Κείμενο στο κάτω μέρος της σελίδας';
 $string['clearrepetitions'] = 'Μηδενισμός στατιστικών';
 $string['col_highscores'] = 'Τα καλύτερα σκορ';
-$string['comment'] = 'Σχόλια';
+$string['comment'] = 'Σχόλιο';
 $string['common_problems'] = 'Κοινά προβλήματα';
 $string['common_problems_allowspaces'] = 'Υπάρχουν λέξεις με κενά αλλά στο παιχνίδι, τα κενά δεν επιτρέπονται';
 $string['common_problems_crossword_param1'] = 'Ο «Μέγιστος αριθμός στηλών/γραμμών» δεν είναι αρκετά μεγάλος';
 $string['common_problems_shortanswer_hangman'] = 'Δεν είναι όλοι οι χαρακτήρες στην γλώσσα του παιχνιδιού';
 $string['completedon'] = 'Ολοκληρώθηκε στις';
 $string['computerepetitions'] = 'Επανυπολογισμός στατιστικών';
-$string['confighangmanimagesets'] = 'Ρυθμίζει πόσα σύνολα από εικόνες θα χρησιμοποιούνται από την κρεμάλα';
+$string['confighangmanimagesets'] = 'Ρυθμίζει πόσα σύνολα από εικόνες θα χρησιμοποιούνται από την Κρεμάλα';
 $string['confighidebookquiz'] = 'Ρυθμίζει αν το παιχνίδι «Βιβλίο με ερωτήσεις» θα εμφανίζεται σε διδάσκοντες ή όχι';
 $string['confighidecross'] = 'Ρυθμίζει αν το παιχνίδι Σταυρόλεξο εμφανίζεται στους διδάσκοντες ή όχι';
 $string['confighidecryptex'] = 'Ρυθμίζει αν το παιχνίδι Κρυπτόλεξο εμφανίζεται στους διδάσκοντες ή όχι';
@@ -93,7 +93,7 @@ $string['cross_maxcomputetime'] = 'Μέγιστος χρόνος υπολογι�
 $string['cross_maxwords'] = 'Μέγιστος αριθμός λέξεων';
 $string['cross_minwords'] = 'Ελάχιστος αριθμός λέξεων';
 $string['cross_options'] = 'Επιλογές Σταυρολέξου';
-$string['cross_pleasewait'] = 'Παρακαλώ περιμένετε όση ώρα το σταυρόλεξο φορτώνει';
+$string['cross_pleasewait'] = 'Παρακαλούμε περιμένετε όση ώρα το σταυρόλεξο φορτώνει';
 $string['cross_welcome'] = '<h3>Καλώς ορίσατε!</h3><p>Κάντε κλικ σε μία λέξη για να ξεκινήσετε/συνεχίσετε.</p>';
 $string['cryptex_error'] = 'Σφάλμα Κρυπτόλεξου: %s';
 $string['cryptex_maxtries'] = 'Μέγιστος αριθμός προσπαθειών';
@@ -122,8 +122,8 @@ $string['game:manage'] = 'Διαχείριση (των παιχνιδιών)';
 $string['game:manageoverrides'] = 'Διαχείριση παρακάμψεων παιχνιδιού';
 $string['game:preview'] = 'Προεπισκόπηση των παιχνιδιών';
 $string['game:reviewmyattempts'] = 'Ανασκόπηση των δικών σου προσπαθειών';
-$string['game:view'] = 'Εμφάνιση πληροφοριών του παιχνιδιού';
-$string['game:viewreports'] = 'Εμφάνιση των αναφορών του παιχνιδιού';
+$string['game:view'] = 'εμφάνιση';
+$string['game:viewreports'] = 'εμφάνιση αναφορών';
 $string['game_bookquiz'] = 'Βιβλίο με ερωτήσεις';
 $string['game_cross'] = 'Σταυρόλεξο';
 $string['game_cryptex'] = 'Κρυπτόλεξο';
@@ -153,7 +153,7 @@ $string['hangman_correct_phrase'] = 'Η σωστή φράση ήταν: &nbsp;';
 $string['hangman_correct_word'] = 'Η σωστή λέξη ήταν: &nbsp;';
 $string['hangman_error'] = 'Σφάλμα παιχνιδιού Κρεμάλα: %s';
 $string['hangman_gradeinstance'] = 'Βαθμολογία σε όλο το παιχνίδι';
-$string['hangman_imageset'] = 'Διαλέξτε συλλογή φωτογραφιών';
+$string['hangman_imageset'] = 'Επιλέξτε τις εικόνες του παιχνιδιού Κρεμάλα';
 $string['hangman_language'] = 'Γλώσσα στην οποία είναι οι λέξεις';
 $string['hangman_letters'] = 'Γράμματα: &nbsp;';
 $string['hangman_loose'] = '<big><b>Τέλος παιχνιδιού</b></big>';
@@ -167,12 +167,12 @@ $string['hangman_showfirst'] = 'Να εμφανίζει το πρώτο γράμ
 $string['hangman_showlast'] = 'Να εμφανίζει το τελευταίο γράμμα της λέξης';
 $string['hangman_showquestion'] = 'Να εμφανίζει τις ερωτήσεις ;';
 $string['hangman_wrongnum'] = 'Λανθασμένα: %%d out of %%d';
-$string['hangmanimagesets'] = 'Αριθμός συνόλων εικόνων που χρησιμοποιούνται από την κρεμάλα';
+$string['hangmanimagesets'] = 'Αριθμός συνόλων εικόνων που χρησιμοποιούνται από την Κρεμάλα';
 $string['header_footer_options'] = 'Επιλογές επικεφαλίδας/υποσέλιδου';
-$string['helpbookquiz'] = 'Όταν ο μαθητής απαντά σωστά μια ερώτηση πάει στο επόμενο κεφάλαιο του βιβλίου.';
+$string['helpbookquiz'] = 'Όταν ο μαθητής απαντά σωστά μια ερώτηση μπορεί να πάει στο επόμενο κεφάλαιο του βιβλίου.';
 $string['helpcross'] = 'Αυτό το παιχνίδι δέχεται λέξεις από ένα γλωσσάριο ή από σύντομες απαντήσεις ερωτήσεων κουίζ και δημιουργεί ένα τυχαίο σταυρόλεξο. Ο δάσκαλος μπορεί να ορίσει το μέγιστο αριθμό γραμμών/στηλών ή λέξεων. Ο μαθητής μπορεί να κάνει κλικ στο πλήκτρο «Έλεγχος σταυρολέξου» για να ελέγξει αν οι απαντήσεις είναι σωστές. Κάθε σταυρόλεξο είναι δυναμικό και έτσι ο κάθε μαθητής βλέπει διαφορετικό σταυρόλεξο.';
 $string['helpcryptex'] = 'Αυτό το παιχνίδι μοιάζει με το σταυρόλεξο αλλά οι απαντήσεις είναι κρυμμένες μέσα στο κρυπτόλεξο οριζόντια ή κατακόρυφα.';
-$string['helphangman'] = 'Αυτό το παιχνίδι χρησιμοποιεί λέξεις από το λεξικό ή τη βάση ερωτήσεων του Moodle και δημιουργεί το γνωστό παιχνίδι Κρεμάλα. Ο καθηγητής μπορεί να καθορίσει τον αριθμό των λέξεων που θα περιέχει κάθε παιχνίδι, αν θα δείχνει το πρώτο ή το τελευταίο γράμμα ή αν θα εμφανίζει την απάντηση στο τέλος.';
+$string['helphangman'] = 'Αυτό το παιχνίδι χρησιμοποιεί λέξεις από το λεξικό ή τη βάση ερωτήσεων του Moodle και δημιουργεί το γνωστό παιχνίδι Κρεμάλα. Ο διδάσκων μπορεί να καθορίσει τον αριθμό των λέξεων που θα περιέχει κάθε παιχνίδι, αν θα δείχνει το πρώτο ή το τελευταίο γράμμα ή αν θα εμφανίζει την απάντηση στο τέλος.';
 $string['helphiddenpicture'] = 'Το παιχνίδι αυτό μετά από κάθε επιτυχημένη απάντηση σε μια ερώτηση αποκαλύπτει ένα μικρό κομμάτι της εικόνας βοηθώντας έτσι το μαθητή να απαντήσει στην κυρίως ερώτηση.';
 $string['helpmillionaire'] = 'Σε αυτό το παιχνίδι εμφανίζεται μια ερώτηση πολλαπλής επιλογής και αν ο μαθητής την απαντήσει σωστά προχωρά στο επόμενο επίπεδο.';
 $string['helpsnakes'] = 'Αυτό το παιχνίδι εμφανίζει στο μαθητή ένα ζάρι και μια ερώτηση. Αν ο μαθητής απαντήσει σωστά στην ερώτηση προχωράει στην πίστα τόσες θέσεις όσες λέει το ζάρι.';
@@ -196,7 +196,7 @@ $string['hidehiddenpicture'] = 'Απόκρυψη του παιχνιδιού «�
 $string['hidemillionaire'] = 'Απόκρυψη του παιχνιδιού «Εκατομμυριούχος»';
 $string['hidesnakes'] = 'Απόκρυψη του παιχνιδιού «Φιδάκι»';
 $string['hidesudoku'] = 'Απόκρυψη του παιχνιδιού «Sudoku»';
-$string['highscore'] = 'Εμφάνιση του καλύτερου σκορ (αριθμός μαθητών)';
+$string['highscore'] = 'Εμφάνιση κορυφαίων σκορ (αριθμός μαθητών)';
 $string['html_hangman_new'] = 'Νέο';
 $string['html_hascheckbutton'] = 'Να υπάρχει πλήκτρο ελέγχου σωστής απάντησης:';
 $string['html_hasprintbutton'] = 'Να υπάρχει πλήκτρο εκτύπωσης:';
@@ -337,13 +337,13 @@ $string['privacy:metadata:game_repetitions:repetitions'] = 'επαναλήψει
 $string['privacy:metadata:game_repetitions:userid'] = 'αναγνωριστικό χρήστη';
 $string['reattemptgame'] = 'Προσπάθεια παιχνιδιού ξανά';
 $string['repetitions'] = 'Επαναλήψεις';
-$string['reportoverview'] = 'Σύνοψη';
+$string['reportoverview'] = 'Επισκόπηση';
 $string['reset_game_all'] = 'Διαγραφή προσπαθειών από όλα τα παιχνίδια';
 $string['reset_game_deleted_course'] = 'Διαγραφή προσπαθειών από όλα τα διαγραμμένα μαθήματα';
 $string['results'] = 'Αποτελέσματα';
 $string['review'] = 'Επανεξέταση';
 $string['reviewofattempt'] = 'Ανασκόπηση της προσπάθειας {$a}';
-$string['score'] = 'Βαθμολογία';
+$string['score'] = 'Σκορ';
 $string['selectall'] = 'Επιλογή όλων';
 $string['selectnone'] = 'Αποεπιλογή όλων';
 $string['showall'] = 'Εμφάνιση όλων';
@@ -353,7 +353,7 @@ $string['showdetailedmarks'] = 'Εμφάνιση λεπτομερειών βαθ
 $string['showsolution'] = 'Λύση';
 $string['snakes_background'] = 'Υπόβαθρο';
 $string['snakes_cols'] = 'Στήλες';
-$string['snakes_data'] = 'Πίστα';
+$string['snakes_data'] = 'Θέσεις για φίδια & σκάλες (Πίστα για το Φιδάκι)';
 $string['snakes_dice'] = 'Το ζάρι έφερε {$a}.';
 $string['snakes_error'] = 'Φιδάκι - Σφάλμα: %s';
 $string['snakes_file'] = 'Αρχείο πίστας';

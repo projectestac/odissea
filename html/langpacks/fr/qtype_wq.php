@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_wq', language 'fr', version '3.11'.
+ * Strings for component 'qtype_wq', language 'fr', version '4.1'.
  *
  * @package     qtype_wq
  * @category    string
@@ -30,6 +30,7 @@ $string['access_provider_enabled_help'] = 'En cas d\'activation, seuls les utili
 $string['addingwq'] = 'Ajouter une question générique de test Wiris';
 $string['auxiliar_text'] = 'Écrire un raisonnement facultatif pour votre réponse :';
 $string['cachedef_images'] = 'Images de test Wiris.';
+$string['cachedir'] = 'CACHE_DIR :';
 $string['compatibility_settings'] = 'Paramètres de compatibilité';
 $string['connectionsettings'] = 'Paramètres de connexion';
 $string['debug_mode_enabled'] = 'Mode débogage';
@@ -88,10 +89,18 @@ $string['pluginname'] = 'Tests Wiris';
 $string['privacy:metadata:qtype_wq'] = 'Informations sur la bonne réponse de l\'utilisateur pour un type de question Tests Wiris donné';
 $string['privacy:metadata:qtype_wq:question'] = 'Identifiant de question Test Wiris';
 $string['privacy:metadata:qtype_wq:xml'] = 'Queston XML Test Wiris';
+$string['proxyurl'] = 'PROXY_URL :';
 $string['quizzeseditorurl'] = 'URL du service MathType';
 $string['quizzeseditorurl_help'] = 'URL où charger MathType.';
+$string['quizzeshandurl'] = 'URL du service MathType Hand';
+$string['quizzeshandurl_help'] = 'URL où charger le Wiris HAND.';
 $string['quizzesserviceurl'] = 'URL du service Tests Wiris';
 $string['quizzesserviceurl_help'] = 'URL pour se connecter au service Tests Wiris.';
+$string['quizzeswirislauncherurl'] = 'URL Wiris CAS JNLP';
+$string['quizzeswirislauncherurl_help'] = 'URL où obtenir le fichier JNLP pour l\'application Wiris CAS.';
+$string['quizzeswirisurl'] = 'URL du service d\'applet Wiris CAS';
+$string['quizzeswirisurl_help'] = 'URL où charger l\'applet Wiris CAS.';
+$string['serviceurl'] = 'SERVICE_URL :';
 $string['troubleshooting_settings'] = 'Dépannage';
 $string['wirisquestionincorrect'] = 'Désolé ! Le système ne peut pas générer l\'une des questions du quiz. <br />Peut-être qu\'il y a un problème de connexion temporaire en ce moment. <br />Peut-être que l\'algorithme de question a un bogue et échoue parfois. <br />Peut-être qu\'il échouera toujours. <br />Pas de panique... <br />Vous pouvez réessayer le quiz, sans pénalité, en cliquant simplement sur Continuer. <br />Vous pouvez également signaler aux enseignants qu\'il y a un problème avec la question intitulée : \'{$a->questionname}\'';
 $string['wirisquizzeserror'] = 'Désolé ! Il y a eu une erreur dans le Test Wiris.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'de', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'de', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -30,6 +30,7 @@ $string['acceptrisk_help'] = 'Das Deaktivieren der E-Mail-Bestätigung kann ein 
 $string['authconfirm'] = 'Diese Aktion gewährt Moodle einen permanenten API-Zugriff für das authentifizierte Konto. Dies soll als Systemaccount für die Verwaltung von Dateien von Moodle verwendet werden.';
 $string['authconnected'] = 'Der Systemaccount ist nun für Offline-Zugriffe verbunden.';
 $string['authnotconnected'] = 'Der Systemaccount wurde nicht für Offline-Zugriffe verbunden.';
+$string['clever_service'] = 'Clever';
 $string['configured'] = 'Konfiguriert';
 $string['configuredstatus'] = 'Konfiguriert';
 $string['connectsystemaccount'] = 'Mit Systemaccount verbinden';
@@ -66,6 +67,7 @@ $string['google_service'] = 'Google';
 $string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Login-Domains';
 $string['issueralloweddomains_help'] = 'Wenn diese Option aktiviert ist, wird eine kommagetrennte Liste von Domainnamen angegeben, auf die die Logins beschränken werden.';
+$string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
 $string['issuerbaseurl'] = 'Service-Basis-URL';
 $string['issuerbaseurl_help'] = 'Basis-URL für den Zugriff auf den Service';
 $string['issuerclientid'] = 'Client-ID';

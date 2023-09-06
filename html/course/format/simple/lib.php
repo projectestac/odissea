@@ -20,15 +20,16 @@
  * @since     2.0
  * @package   format_simple
  * @copyright 2012-2014 UPCnet
- * @author Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat, Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es
+ * @author Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat, 
+ * Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es, Israel Forés Monzó israel.fores@ithinkupc.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 require_once($CFG->dirroot. '/course/format/lib.php');
-require_once($CFG->dirroot.'/course/format/simple/renderer.php');
 require_once($CFG->dirroot. '/course/format/topics/lib.php');
 
+use format_simple\output\renderer as format_simple_renderer;
 /**
  * Main class for the Simple Topics course format
  *
@@ -43,10 +44,6 @@ class format_simple extends format_topics {
         if ($courseformatoptions === false) {
             $courseconfig = get_config('moodlecourse');
             $courseformatoptions = array(
-                'numsections' => array(
-                    'default' => $courseconfig->numsections,
-                    'type' => PARAM_INT,
-                ),
                 'hiddensections' => array(
                     'default' => $courseconfig->hiddensections,
                     'type' => PARAM_INT,

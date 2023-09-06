@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'ar', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'ar', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -30,6 +30,7 @@ $string['nosaincategory'] = 'ليس هناك أسئلة إجابات قصيرة 
 $string['notenoughsaincategory'] = 'هناك فقط {$a->nosaquestions} أسئلة إجابات قصيرة في الصنف الذي اخترته \'{$a->catname}\'. إختر صنفاً آخر وضَع فيه مزيداً من الأسئلة أو قم بتقليل عدد الأسئلة التي اخترتها.';
 $string['pluginname'] = 'مطابقة إجابة قصيرة عشوائي';
 $string['pluginname_help'] = 'من وجهة نظر الطلبة، هذا يبدو مماثلاً لسؤال المطابقة. الفرق هو أن قائمة الأسماء أو العبارات (الأسئلة) للمطابقة يتم سحبها عشوائياً من أسئلة الإجابة القصيرة في التصنيف الحالي. ينبغي أن يكون هناك عدد كاف من تلك الأسئلة غير مستعمل، بخلافه، ستظهر رسالة خطأ.';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = 'تجري إضافة سؤال إجابة قصيرة عشوائي';
 $string['pluginnameediting'] = 'يجري تحرير سؤال إجابة قصيرة عشوائي';
 $string['pluginnamesummary'] = 'كسؤال المطابقة، ولكنه منشأ عشوائياً من أسئلة الإجابة القصيرة من صنف معين.';

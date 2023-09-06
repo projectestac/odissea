@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'ja', version '3.11'.
+ * Strings for component 'availability_grade', language 'ja', version '4.1'.
  *
  * @package     availability_grade
  * @category    string
@@ -39,9 +39,9 @@ $string['option_min'] = '評点 ≥';
 $string['pluginname'] = '評点による制限';
 $string['privacy:metadata'] = '評点による制限プラグインはいかなる個人データも保存しません。';
 $string['requires_any'] = 'あなたに <strong>{$a}</strong> の評点がない場合';
-$string['requires_max'] = 'あなたが <strong>{$a}</strong> の適切な評点を取得している場合';
-$string['requires_min'] = 'あなたが <strong>{$a}</strong> の必須評点に達した場合';
+$string['requires_max'] = 'あなたが到達した <strong>{$a}</strong> の評点が特定の評点以下の場合';
+$string['requires_min'] = 'あなたが到達した <strong>{$a}</strong> の評点が特定の評点以上の場合';
 $string['requires_notany'] = 'あなたに <strong>{$a}</strong> の評点がない場合';
 $string['requires_notgeneral'] = 'あなたが <strong>{$a}</strong> の評点を取得していない場合';
-$string['requires_range'] = 'あなたが <strong>{$a}</strong> の特定の評点を取得している場合';
+$string['requires_range'] = 'あなたが到達した <strong>{$a}</strong> の評点が特定の範囲内の場合';
 $string['title'] = '評点';

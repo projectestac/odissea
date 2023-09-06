@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'ru', version '3.11'.
+ * Strings for component 'certificate', language 'ru', version '4.1'.
  *
  * @package     certificate
  * @category    string
@@ -130,6 +130,7 @@ $string['letter'] = 'Буква';
 $string['lockingoptions'] = 'Параметры блокировки';
 $string['modulename'] = 'Сертификат';
 $string['modulename_help'] = 'Этот модуль позволяет динамическую генерацию сертификатов, исходя из предварительно заданного учителем набора условий.';
+$string['modulename_link'] = 'Certificate_module';
 $string['modulenameplural'] = 'Сертификаты';
 $string['mycertificates'] = 'Мои сертификаты';
 $string['nocertificates'] = 'Нет сертификатов';

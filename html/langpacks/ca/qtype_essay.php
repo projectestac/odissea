@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'ca', version '3.11'.
+ * Strings for component 'qtype_essay', language 'ca', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -46,6 +46,7 @@ $string['mustrequirefewer'] = 'No podeu demanar més adjunts dels que permeteu.'
 $string['nlines'] = '{$a} línies';
 $string['pluginname'] = 'Resposta oberta';
 $string['pluginname_help'] = 'Com a resposta a la pregunta (que pot incloure una imatge), l\'estudiant escriu una resposta d\'un o dos paràgrafs. La pregunta de resposta oberta no es puntuarà fins que no l\'hagi revisada un professor i li hagi assignat manualment una qualificació.';
+$string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de resposta oberta';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de resposta oberta';
 $string['pluginnamesummary'] = 'Permet una resposta consistent en poques frases o paràgrafs. Cal qualificar-la manualment.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'pt', version '3.11'.
+ * Strings for component 'format_topcoll', language 'pt', version '4.1'.
  *
  * @package     format_topcoll
  * @category    string
@@ -31,10 +31,11 @@ $string['bulb'] = 'Lâmpada';
 $string['center'] = 'Centro';
 $string['cloud'] = 'Nuvem';
 $string['colourrule'] = 'Indique um código RGB válido com seis dígitos hexadecimais ou \'-\' para usar valor predefinido.';
+$string['columndynamic'] = 'Dinâmico';
 $string['columnhorizontal'] = 'Horizontal';
 $string['columnvertical'] = 'Vertical';
 $string['configurationheadingsub'] = 'Configuração';
-$string['configurationheadingsubdesc'] = 'Opções de configuração';
+$string['configurationheadingsubdesc'] = 'Opções globais de configuração';
 $string['coursesectionactivityfurtherinformation'] = 'Página da disciplina com mais informações';
 $string['coursesectionactivityfurtherinformationassign'] = 'Mostrar informação do trabalho';
 $string['coursesectionactivityfurtherinformationassigndesc'] = 'Mostrar informações do trabalho. Aos professores/administradores será mostrado o número de submissões.';

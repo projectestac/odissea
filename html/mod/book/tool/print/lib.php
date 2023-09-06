@@ -31,22 +31,22 @@ defined('MOODLE_INTERNAL') || die;
  * @param navigation_node $node The node to add module settings to
  */
 function booktool_print_extend_settings_navigation(settings_navigation $settings, navigation_node $node) {
-    global $USER, $PAGE, $CFG, $DB, $OUTPUT;
-
-    $params = $PAGE->url->params();
+    $params = $settings->get_page()->url->params();
     if (empty($params['id']) or empty($params['chapterid'])) {
         return;
     }
 
-    if (has_capability('booktool/print:print', $PAGE->cm->context)) {
+    if (has_capability('booktool/print:print', $settings->get_page()->cm->context)) {
         $url1 = new moodle_url('/mod/book/tool/print/index.php', array('id'=>$params['id']));
         $url2 = new moodle_url('/mod/book/tool/print/index.php', array('id'=>$params['id'], 'chapterid'=>$params['chapterid']));
         $action = new action_link($url1, get_string('printbook', 'booktool_print'), new popup_action('click', $url1));
-        $node->add(get_string('printbook', 'booktool_print'), $action, navigation_node::TYPE_SETTING, null, null,
-                new pix_icon('book', '', 'booktool_print', array('class'=>'icon')));
+        $booknode = $node->add(get_string('printbook', 'booktool_print'), $action, navigation_node::TYPE_SETTING, null, 'printbook',
+                new pix_icon('book', '', 'booktool_print', array('class' => 'icon')));
+        $booknode->set_force_into_more_menu(true);
         $action = new action_link($url2, get_string('printchapter', 'booktool_print'), new popup_action('click', $url2));
-        $node->add(get_string('printchapter', 'booktool_print'), $action, navigation_node::TYPE_SETTING, null, null,
-                new pix_icon('chapter', '', 'booktool_print', array('class'=>'icon')));
+        $chapternode = $node->add(get_string('printchapter', 'booktool_print'), $action, navigation_node::TYPE_SETTING, null,
+            'printchapter', new pix_icon('chapter', '', 'booktool_print', array('class' => 'icon')));
+        $chapternode->set_force_into_more_menu(true);
     }
 }
 

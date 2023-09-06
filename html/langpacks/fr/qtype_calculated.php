@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'fr', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'fr', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -55,6 +55,7 @@ $string['deletelastitem'] = 'Supprimer dernier élément';
 $string['distributionoption'] = 'Sélectionner une option de distribution';
 $string['editdatasets'] = 'Modifier le jeu de données des variables';
 $string['editdatasets_help'] = 'Les valeurs de variables sont créées en renseignant un nombre dans chaque champ de variable et en cliquant sur le bouton ajouter. Pour générer 10 valeurs ou plus, sélectionnez le nombre de valeurs souhaitées avant de cliquer sur le bouton ajouter. Une distribution uniforme signifie que chaque valeur sera générée de manière équilibrée entre les limites ; une distribution logarithmique signifie que les valeurs proches de la limite basse seront majoritaires.';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = 'utilisera un jeu de données partagé déjà existant';
 $string['existingcategory2'] = 'Un fichier d\'un ensemble de fichiers existants qui sont également utilisés par d\'autres questions de cette catégorie';
 $string['existingcategory3'] = 'Un lien d\'un ensemble de liens existants qui sont également utilisés par d\'autres questions de cette catégorie';
@@ -112,6 +113,7 @@ $string['param'] = 'Paramètre {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Pour toute réponse partiellement correcte';
 $string['pluginname'] = 'Calculée';
 $string['pluginname_help'] = 'Les questions calculées permettent de créer des questions numériques en utilisant des variables, placées entre deux accolades, qui sont remplacées pas des valeurs lorsque le test est lancé. Par exemple, la question « Quelle est l\'aire d\'un rectangle de longueur {a} et de largeur {b} ?» aura comme réponse correcte la formule « {a}*{b} » (où le symbole * représente la multiplication).';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = 'Ajout d\'une question calculée';
 $string['pluginnameediting'] = 'Modification d\'une question calculée';
 $string['pluginnamesummary'] = 'Les questions calculées sont des questions numériques dont les nombres sont tirés aléatoirement d\'un jeu de données lorsque le test est effectué.';

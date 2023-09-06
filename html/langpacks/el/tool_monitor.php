@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'el', version '3.11'.
+ * Strings for component 'tool_monitor', language 'el', version '4.1'.
  *
  * @package     tool_monitor
  * @category    string
@@ -71,7 +71,7 @@ $string['messagetemplate_help'] = 'Ένα μήνυμα ειδοποίησης α
 * Όνομα κανόνα {rulename}
 * Περιγραφή {description}
 * Γεγονός {eventname}';
-$string['messagetemplate_link'] = 'διαχείριση/εργαλείο/παρακολούθηση/διαχείρισηκανόνων';
+$string['messagetemplate_link'] = '';
 $string['moduleinstance'] = 'Στιγμιότυπο';
 $string['monitor:managerules'] = 'Διαχείριση κανόνων παρακολούθησης γεγονότων';
 $string['monitor:managetool'] = 'Ενεργοποίηση/απενεργοποίηση παρακολούθησης γεγονότων';
@@ -86,7 +86,7 @@ $string['privacy:metadata:eventname'] = 'Πλήρες όνομα του γεγο
 $string['privacy:metadata:frequency'] = 'Συχνότητα ειδοποιήσεων';
 $string['privacy:metadata:historysummary'] = 'Αποθηκεύει το ιστορικό των μηνυμάτων που στάλθηκαν';
 $string['privacy:metadata:inactivedate'] = 'Περίοδος χρόνου, σε ημέρες, μετά την οποία θα αφαιρεθεί εντελώς μια ανενεργή εγγραφή';
-$string['privacy:metadata:lastnotificationsent'] = 'Πότε έγινε τελευταία φορά ειδοποίηση για αυτήν τη συνδρομή.';
+$string['privacy:metadata:lastnotificationsent'] = 'Πότε έγινε τελευταία φορά ειδοποίηση για αυτήν τη δήλωση συμμετοχής.';
 $string['privacy:metadata:messagesummary'] = 'Οι ειδοποιήσεις αποστέλλονται στο σύστημα μηνυμάτων.';
 $string['privacy:metadata:name'] = 'Όνομα του κανόνα';
 $string['privacy:metadata:plugin'] = 'Το όνομα Frankenstlye του πρόσθετου';

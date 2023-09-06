@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'nl', version '3.11'.
+ * Strings for component 'pagetype', language 'nl', version '4.1'.
  *
  * @package     pagetype
  * @category    string
@@ -38,7 +38,7 @@ $string['page-mod-x'] = 'Alle pagina\'s van activiteitenmodules';
 $string['page-mod-x-view'] = 'Alle hoofdpagina\'s van activiteitenmodules';
 $string['page-my-index'] = 'Mijn startpagina';
 $string['page-report-x'] = 'Elke rapportpagina';
-$string['page-site-index'] = 'Enkel op de startpagina';
+$string['page-site-index'] = 'Enkel op de site startpagina';
 $string['page-site-x'] = 'Alle hoofdpagina\'s';
 $string['page-user-profile'] = 'Enkel gebruikersprofielpagina\'s';
 $string['page-user-view'] = 'Enkel gebruikersprofielpagina\'s';

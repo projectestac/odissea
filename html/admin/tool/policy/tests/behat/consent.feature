@@ -11,7 +11,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | sitepolicyhandler | tool_policy |
     And I am on site homepage
     And I follow "Log in"
-    When I press "Create new account"
+    When I click on "Create new account" "link"
     Then I should not see "I understand and agree"
     And I set the following fields to these values:
       | Username      | user1                 |
@@ -19,7 +19,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Email address | user1@address.invalid |
       | Email (again) | user1@address.invalid |
       | First name    | User1                 |
-      | Surname       | L1                    |
+      | Last name     | L1                    |
     And I press "Create my new account"
     And I should see "Confirm your account"
     And I should see "An email should have been sent to your address at user1@address.invalid"
@@ -45,7 +45,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | P1     | This privacy policy |          | full text2 | short text2 | draft |
     And I am on site homepage
     And I follow "Log in"
-    When I press "Create new account"
+    When I click on "Create new account" "link"
     Then I should not see "I understand and agree"
     And I set the following fields to these values:
       | Username      | user1                 |
@@ -53,7 +53,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Email address | user1@address.invalid |
       | Email (again) | user1@address.invalid |
       | First name    | User1                 |
-      | Surname       | L1                    |
+      | Last name     | L1                    |
     And I press "Create my new account"
     And I should see "Confirm your account"
     And I should see "An email should have been sent to your address at user1@address.invalid"
@@ -80,7 +80,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | P1     | This site policy |          | full text3 | short text3 | draft    |
     And I am on site homepage
     And I follow "Log in"
-    When I press "Create new account"
+    When I click on "Create new account" "link"
     Then I should see "This site policy" in the "region-main" "region"
     And I should see "short text2"
     And I should see "full text2"
@@ -98,7 +98,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Email address | user1@address.invalid |
       | Email (again) | user1@address.invalid |
       | First name    | User1                 |
-      | Surname       | L1                    |
+      | Last name     | L1                    |
     And I press "Create my new account"
     And I should see "Confirm your account"
     And I should see "An email should have been sent to your address at user1@address.invalid"
@@ -128,7 +128,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | This guests policy  | 0    |          | full text4 | short text4 | active   | guest    |
     And I am on site homepage
     And I follow "Log in"
-    When I press "Create new account"
+    When I click on "Create new account" "link"
     Then I should see "This site policy" in the "region-main" "region"
     And I should see "short text2"
     And I should see "full text2"
@@ -157,7 +157,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Email address | user1@address.invalid |
       | Email (again) | user1@address.invalid |
       | First name    | User1                 |
-      | Surname       | L1                    |
+      | Last name     | L1                    |
     And I press "Create my new account"
     And I should see "Confirm your account"
     And I should see "An email should have been sent to your address at user1@address.invalid"
@@ -188,7 +188,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | This site policy |          | full text2 | short text2 | active   |
     And I am on site homepage
     And I follow "Log in"
-    When I press "Create new account"
+    When I click on "Create new account" "link"
     Then I should see "Age and location verification"
     And I set the field "What is your age?" to "16"
     And I set the field "In which country do you live?" to "DZ"
@@ -210,7 +210,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Email address | user1@address.invalid |
       | Email (again) | user1@address.invalid |
       | First name    | User1                 |
-      | Surname       | L1                    |
+      | Last name     | L1                    |
     And I press "Create my new account"
     And I should see "Confirm your account"
     And I should see "An email should have been sent to your address at user1@address.invalid"
@@ -239,7 +239,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | This privacy policy | 1    |          | full text3 | short text3 | active   | loggedin |
     And I am on site homepage
     And I follow "Log in"
-    And I press "Create new account"
+    And I click on "Create new account" "link"
     And I should see "This site policy"
     And I press "Next"
     And I should see "This privacy policy"
@@ -460,11 +460,12 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | This privacy policy | 1    |          | full text3 | short text3 | active   | loggedin |
       | This guests policy  | 0    |          | full text4 | short text4 | active   | guest    |
     And I am on site homepage
+    And I change window size to "large"
     And I follow "Log in"
-    When I press "Log in as a guest"
+    When I press "Access as a guest"
     Then I should see "If you continue browsing this website, you agree to our policies"
     # Confirm when navigating, the pop-up policies are displayed.
-    When I follow "Home"
+    When I am on the "My courses" page
     Then I should see "If you continue browsing this website, you agree to our policies"
     And I should see "This site policy"
     And I should see "This guests policy"
@@ -472,11 +473,11 @@ Feature: User must accept policy managed by this plugin when logging in and sign
     # Confirm when clicking on the policy links, the policy content is displayed.
     When I click on "This site policy" "link"
     Then I should see "full text2"
-    And I click on "Close" "button"
+    And I click on "Close" "button" in the "This site policy" "dialogue"
     And I should not see "full text2"
     When I click on "This guests policy" "link"
     Then I should see "full text4"
-    And I click on "Close" "button"
+    And I click on "Close" "button" in the "This guests policy" "dialogue"
     And I should not see "full text4"
     # Confirm when agreeing to policies the pop-up is no longer displayed.
     When I follow "Continue"
@@ -494,7 +495,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | This guests policy  | 0    |          | full text4 | short text4 | active   | guest    |
     And I am on site homepage
     And I follow "Log in"
-    When I press "Create new account"
+    When I click on "Create new account" "link"
     Then I should see "This site policy" in the "region-main" "region"
     And I should see "short text2"
     And I should see "full text2"
@@ -521,12 +522,12 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Email address | user1@address.invalid |
       | Email (again) | user1@address.invalid |
       | First name    | User1                 |
-      | Surname       | L1                    |
+      | Last name     | L1                    |
     When I press "Create my new account"
     Then I should see "Confirm your account"
     And I should see "An email should have been sent to your address at user1@address.invalid"
     And I follow "Log in"
-    When I press "Create new account"
+    When I click on "Create new account" "link"
     # Confirm that the user can view and accept policies when attempting to create another account.
     Then I should see "This site policy" in the "region-main" "region"
     And I should see "short text2"
@@ -562,9 +563,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
     And the following "users" exist:
       | username | firstname | lastname | email            |
       | user1    | User      | 1        | user1@example.com    |
-    When I log in as "admin"
-    And I navigate to "Users > Accounts > Browse list of users" in site administration
-    And I follow "User 1"
+    When I am on the "user1" "user > profile" page logged in as "admin"
     And I follow "Log in as"
     Then I should see "You are logged in as User 1"
     And I press "Continue"
@@ -603,8 +602,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
     And I set the field "I agree to the This site policy" to "1"
     And I set the field "I agree to the This privacy policy" to "1"
     And I press "Next"
-    And I navigate to "Users > Accounts > Browse list of users" in site administration
-    And I follow "User 1"
+    And I am on the "user1" "user > profile" page
     And I follow "Log in as"
     Then I should see "You are logged in as User 1"
     And I press "Continue"
@@ -625,10 +623,10 @@ Feature: User must accept policy managed by this plugin when logging in and sign
     And I am on site homepage
     And I follow "Log in"
     # First log in as a guest
-    And I press "Log in as a guest"
+    And I press "Access as a guest"
     # Now sign up
     And I follow "Log in"
-    When I press "Create new account"
+    When I click on "Create new account" "link"
     Then I should see "This site policy"
     And I should see "short text2"
     And I should see "full text2"
@@ -646,7 +644,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Email address | user1@address.invalid |
       | Email (again) | user1@address.invalid |
       | First name    | User1                 |
-      | Surname       | L1                    |
+      | Last name     | L1                    |
     And I press "Create my new account"
     And I should see "Confirm your account"
     And I should see "An email should have been sent to your address at user1@address.invalid"
@@ -677,7 +675,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Terms of Service              | We teach, you learn       | Here goes content.  | 1               |
     And I am on site homepage
     And I follow "Log in"
-    When I press "Create new account"
+    When I click on "Create new account" "link"
     # The first policy with the agreement style "on its own page" must be accepted first.
     Then I should see "Digital maturity declaration" in the "region-main" "region"
     And I should see "You declare be old enough"
@@ -715,7 +713,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Email address | user1@address.invalid |
       | Email (again) | user1@address.invalid |
       | First name    | User1                 |
-      | Surname       | L1                    |
+      | Last name     | L1                    |
     And I press "Create my new account"
     And I should see "Confirm your account"
     And I should see "An email should have been sent to your address at user1@address.invalid"
@@ -841,7 +839,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Terms of Service              | We teach, you learn       | Here goes content.  | 1               | guest     |
     And I am on site homepage
     And I follow "Log in"
-    When I press "Create new account"
+    When I click on "Create new account" "link"
     # All the policies to be displayed one by one with a button to accept each of them prior seeing the next.
     Then I should see "Digital maturity declaration" in the "region-main" "region"
     And I should see "You declare be old enough"
@@ -857,7 +855,7 @@ Feature: User must accept policy managed by this plugin when logging in and sign
       | Email address | user1@address.invalid |
       | Email (again) | user1@address.invalid |
       | First name    | User1                 |
-      | Surname       | L1                    |
+      | Last name     | L1                    |
     And I press "Create my new account"
     And I should see "Confirm your account"
     And I should see "An email should have been sent to your address at user1@address.invalid"

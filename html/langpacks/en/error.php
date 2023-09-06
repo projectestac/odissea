@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'en', version '3.11'.
+ * Strings for component 'error', language 'en', version '4.1'.
  *
  * @package     error
  * @category    string
@@ -158,6 +158,7 @@ $string['cannotsetupcapformod'] = 'Could not set up the capabilities for {$a}';
 $string['cannotsetupcapforplugin'] = 'Could not set up the capabilities for {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Cannot show/hide the courses in category {$a}.';
 $string['cannotsignup'] = 'You cannot create a new account because you are already logged in as {$a}.';
+$string['cannotswitcheditmodeon'] = 'Could not switch edit mode on';
 $string['cannotunassigncap'] = 'Could not unassign deprecated capability {$a->cap} from role {$a->role}';
 $string['cannotunassignrolefrom'] = 'Cannot unassign this user from role id: {$a}';
 $string['cannotunzipfile'] = 'Cannot unzip file';
@@ -336,6 +337,7 @@ $string['invalidcourseformat'] = 'Invalid course format';
 $string['invalidcourseid'] = 'You are trying to use an invalid course ID';
 $string['invalidcourselevel'] = 'Incorrect context level';
 $string['invalidcoursemodule'] = 'Invalid course module ID';
+$string['invalidcoursemoduleid'] = 'Invalid course module ID: {$a}';
 $string['invalidcoursenameshort'] = 'Invalid short course name';
 $string['invaliddata'] = 'Data submitted is invalid';
 $string['invaliddatarootpermissions'] = 'Invalid permissions detected when trying to create a directory. Turn debugging on for further details.';
@@ -410,6 +412,7 @@ $string['messagingdisable'] = 'Messaging is disabled on this site';
 $string['mimetexisnotexist'] = 'Your system is not configured to run mimeTeX. You need to obtain the C source from <a href="https://www.forkosh.com/mimetex.zip">https://www.forkosh.com/mimetex.zip</a>, compile it and put the executable into your moodle/filter/tex/ directory.';
 $string['mimetexnotexecutable'] = 'Custom mimetex is not executable!';
 $string['missing_moodle_backup_xml_file'] = 'Backup is missing XML file: {$a}';
+$string['missingcategoryrole'] = 'Could not assign role to user: missing role for category.';
 $string['missingfield'] = 'Field "{$a}" is missing';
 $string['missingkeyinsql'] = 'ERROR: missing param "{$a}" in query';
 $string['missingparam'] = 'A required parameter ({$a}) was missing';
@@ -456,6 +459,7 @@ $string['nonmeaningfulcontent'] = 'Non meaningful content';
 $string['noparticipants'] = 'No participants found for this course';
 $string['noparticipatorycms'] = 'Sorry, but you have no participatory course modules to report on';
 $string['nopermissions'] = 'Sorry, but you do not currently have permissions to do that ({$a}).';
+$string['nopermissiontoaccesspage'] = 'You don\'t have permission to access this page.';
 $string['nopermissiontocomment'] = 'You can\'t add comments';
 $string['nopermissiontodelentry'] = 'You can\'t delete this comment!';
 $string['nopermissiontoeditcomment'] = 'You can\'t edit other people\'s comments!';
@@ -489,6 +493,8 @@ $string['oauth2upgradetokenerror'] = 'Could not upgrade OAuth 2 token. HTTP stat
 $string['onlyadmins'] = 'Only administrators can do that';
 $string['onlyeditingteachers'] = 'Only editing teachers can do that';
 $string['onlyeditown'] = 'You can only edit your own information';
+$string['opensslsealerror'] = 'OpenSSL unable to seal data';
+$string['opensslsignerror'] = 'OpenSSL unable to sign data';
 $string['orderidnotfound'] = 'Order ID {$a} not found';
 $string['pagenotexist'] = '<p>An unusual error occurred trying to view a page that does not exist:</p>{$a}';
 $string['pagenotexisttitle'] = '404 Error: File not found';
@@ -528,6 +534,9 @@ $string['sendmessage'] = 'Send message';
 $string['sendmessagesent'] = 'Thanks for your feedback about:<br>{$a}';
 $string['serverconnection'] = 'Error connecting to the server';
 $string['servicedonotexist'] = 'The service does not exist';
+$string['sessioncannotobtainlock'] = '<p>Unable to obtain lock for session id {$a->id} within {$a->acquiretimeout}.</p>
+<p>It is likely that another page ({$a->whohaslock}) is still running in another browser tab, or it did not release the lock due to an error.</p>
+<p>You can wait until the session lock timeout ({$a->lockexpire}) or you can restart your browser session. If this error persists, please notify the server administrator.</p>';
 $string['sessioncookiesdisable'] = 'Incorrect use of require_key_login() - session cookies must be disabled!';
 $string['sessiondiskfull'] = 'The session partition is full. It is not possible to log in at this time. Please notify the server administrator.';
 $string['sessionerroruser'] = 'Your session has timed out. Please log in again.';
@@ -567,6 +576,7 @@ $string['unknowcontext'] = 'This is an unknown context ({$a}) in get_child_conte
 $string['unknowformat'] = 'Format not known ({$a})';
 $string['unknownbackupexporterror'] = 'Unknown error preparing information for import';
 $string['unknownblockregion'] = 'The block region \'{$a}\' is not recognised on this page.';
+$string['unknowncategory'] = 'Unknown category with category ID number "{$a}"';
 $string['unknowncontext'] = 'This is an unknown context.';
 $string['unknowncourse'] = 'Unknown course named "{$a}"';
 $string['unknowncourseidnumber'] = 'Unknown course ID "{$a}"';
@@ -598,6 +608,7 @@ $string['useradminodelete'] = 'Administrator accounts cannot be deleted.';
 $string['userautherror'] = 'Unknown auth plugin';
 $string['userauthunsupported'] = 'Auth plugin not supported here';
 $string['useremailduplicate'] = 'Duplicate address';
+$string['userisfilteredout'] = 'This user does not match filters and table preferences!';
 $string['usermustbemnet'] = 'Users in the MNET access control list must be remote MNET users';
 $string['usernamelowercase'] = 'The username must be in lower case';
 $string['usernotaddederror'] = 'User not added - error';

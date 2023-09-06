@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_xp', language 'sv', version '3.11'.
+ * Strings for component 'block_xp', language 'sv', version '4.1'.
  *
  * @package     block_xp
  * @category    string
@@ -25,9 +25,28 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actions'] = 'Åtgärder';
+$string['addarule'] = 'Lägg till en regel';
+$string['addinstructions'] = 'Lägg till mer information';
+$string['configheader'] = 'Inställningar';
+$string['configtitle'] = 'Titel';
+$string['congratulationsyouleveledup'] = 'Grattis!';
+$string['coolthanks'] = 'Cool, Tack!';
+$string['coursesettings'] = 'Kursinställningar';
+$string['defaultlevels'] = 'Standardnivåer';
+$string['defaultrules'] = 'Standardregler';
+$string['defaultsettings'] = 'Standardinställningar';
+$string['deleterule'] = 'Radera regel';
+$string['description'] = 'Beskrivning';
+$string['displayeveryone'] = 'Visa alla';
+$string['documentation'] = 'Dokumentation';
+$string['editinstructions'] = 'Redigera information';
+$string['enableladder'] = 'Aktivera topplistan';
 $string['errornotalllevelsbadgesprovided'] = 'Inte alla nivåer av märken har getts. Saknas: {$a}';
 $string['levelbadges'] = 'Nivåmärken';
 $string['levelbadgesformhelp'] = 'Namnge filerna [level].[file extension], till exempel: 1.png, 2.png osv... Den rekommenderade bildstorleken är 100x100.';
 $string['requires'] = 'Kräver';
 $string['usecustomlevelbadges'] = 'Använd egna nivåmärken.';
 $string['usecustomlevelbadges_help'] = 'Om satt till ja så måste du ange en bild för varje nivå.';
+$string['youreachedlevel'] = 'Du har uppnått nivå:';
+$string['youreachedlevela'] = 'Du har uppnått nivå {$a}!';

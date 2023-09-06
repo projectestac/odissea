@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'eu', version '3.11'.
+ * Strings for component 'journal', language 'eu', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -75,6 +75,7 @@ $string['lastnamedesc'] = 'Abizenaren arabera Beherantz';
 $string['mailsubject'] = 'Egunkariaren feedbacka';
 $string['modulename'] = 'Egunkaria';
 $string['modulename_help'] = 'Egunkariak irakasleak ikasleengandik gai jakin bati buruzko feedbacka lortzea ahalbidetzen du';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = 'Egunkariak';
 $string['needsregrade'] = 'Sarrera aldatu da feedbacka gorde zen azken alditik.';
 $string['newjournalentries'] = 'Egunkari-sarrera berriak';

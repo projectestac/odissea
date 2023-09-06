@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'en', version '3.11'.
+ * Strings for component 'cachestore_memcached', language 'en', version '4.1'.
  *
  * @package     cachestore_memcached
  * @category    string

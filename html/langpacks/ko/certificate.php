@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'ko', version '3.11'.
+ * Strings for component 'certificate', language 'ko', version '4.1'.
  *
  * @package     certificate
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['completiondate'] = '강좌 완료';
+$string['modulename_link'] = 'Certificate_module';
 $string['receivedcerts'] = '받은 인증서';
 $string['receiveddate'] = '수여일';
 $string['reissuecert'] = '인증서 재발행';

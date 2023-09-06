@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'ko', version '3.11'.
+ * Strings for component 'journal', language 'ko', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -38,6 +38,7 @@ $string['journalname'] = '저널 명칭';
 $string['journalquestion'] = '저널 의문사항';
 $string['mailsubject'] = '저널에 대한 답변';
 $string['modulename'] = '저널';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = '저널모음';
 $string['newjournalentries'] = '새저널 기재';
 $string['noentry'] = '기재안함';

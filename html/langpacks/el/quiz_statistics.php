@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'el', version '3.11'.
+ * Strings for component 'quiz_statistics', language 'el', version '4.1'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -97,7 +97,6 @@ $string['questiontype'] = 'Τύπος ερώτησης';
 $string['quizinformation'] = 'Πληροφορίες Κουίζ';
 $string['quizname'] = 'Όνομα κουίζ';
 $string['quizoverallstatistics'] = 'Γενικά στατιστικά κουίζ';
-$string['quizstatisticscleanuptask'] = 'Εκκαθάριση των παλιών εγγραφών κρυφής μνήμης των στατιστικών στοιχείων του κουίζ';
 $string['quizstructureanalysis'] = 'Ανάλυση δομής του κουίζ';
 $string['random_guess_score'] = 'Σκορ τυχαίας εικασίας';
 $string['rangebetween'] = '{$a->min} − {$a->max}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'sv', version '3.11'.
+ * Strings for component 'lesson', language 'sv', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -62,7 +62,6 @@ $string['addedendofcluster'] = 'Lade till slut på ett kluster';
 $string['addendofbranch'] = 'Lägg till förgreningsslut';
 $string['addendofcluster'] = 'Lägg till slut på kluster';
 $string['addessay'] = 'Ska uppsatsfrågesida';
-$string['additionalattemptsremaining'] = 'Slutförd, du kan göra denna lektion igen';
 $string['addmatching'] = 'Skapa matchande svar';
 $string['addmultichoice'] = 'Skapa flervalsfrågesida';
 $string['addnewgroupoverride'] = 'Lägg till gruppåsidosättande';
@@ -206,7 +205,9 @@ $string['editcluster'] = 'Redigera kluster';
 $string['editendofbranch'] = 'Redigera förgreningsslut';
 $string['editendofcluster'] = 'Redigera klusterslut';
 $string['editessay'] = 'Redigera uppsatsfråga';
+$string['editinglesson'] = 'Redigerar lektion';
 $string['editingquestionpage'] = 'Redigerar frågesidan {$a} ';
+$string['editlesson'] = 'Redigera lektion';
 $string['editlessonsettings'] = 'Redigera lektionsinställningar';
 $string['editmatching'] = 'Redigera matchande svar';
 $string['editmultichoice'] = 'Redigera flervalsfråga';
@@ -296,10 +297,12 @@ $string['indicator:cognitivedepth'] = 'Lektion kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Lektionsaktivitet.';
 $string['indicator:cognitivedepthdef'] = 'Lektion kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av Lektions-aktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa, Skicka in, Visa återkoppling, Kommentera återkoppling, Skicka in på nytt efter läst återkoppling)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Lektion social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Lektionresurs.';
 $string['indicator:socialbreadthdef'] = 'Lektion social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Lektionsaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt, Deltagaren tillsammans med andra)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insertedpage'] = 'Infogad sida';
 $string['invalidfile'] = 'Ogiltig fil';
 $string['invalidid'] = 'Det avgavs ingen ID för modul eller lektion';
@@ -338,14 +341,13 @@ $string['lesson:manage'] = 'Hantera lektionsaktivitet';
 $string['lesson:manageoverrides'] = 'Hantera lektionsåsidosättanden';
 $string['lesson:view'] = 'Visa lektionsaktivitet';
 $string['lesson:viewreports'] = 'Visa lektionsrapport';
+$string['lessonbeingpreviewed'] = 'Lektionen förhandsgranskas för närvarande.';
 $string['lessonclosed'] = 'Den här lektionen stängdes  {$a}';
 $string['lessoncloses'] = 'Lektionen avslutas';
-$string['lessoncloseson'] = 'Lektionen stängs på {$a}';
 $string['lessoneventcloses'] = '{$a} stänger';
 $string['lessoneventopens'] = '{$a} öppnar';
 $string['lessonformating'] = 'Lektionsformat';
 $string['lessonmenu'] = 'Lektionsmeny';
-$string['lessonname'] = 'Lektioner: {$a}';
 $string['lessonnotready'] = 'Den här lektionen är klar för användning. Vänligen kontakta din {$a}.';
 $string['lessonnotready2'] = 'Den här lektionen är ännu inte färdig för användning';
 $string['lessonopen'] = 'Den här lektionen kommer att öppnas {$a}';
@@ -390,6 +392,7 @@ Lektioner kan användas
 * För självstyrt lärande av ett nytt ämne
 * För scenarier, simuleringar eller beslutsövningar
 * För att skapa ett adaptivt innehållet och lektionsspåret förändras beroende på elevens agerande på innehållssidorna';
+$string['modulename_link'] = 'mod/lesson/view';
 $string['modulenameplural'] = 'Lektioner';
 $string['move'] = 'Flytta sida';
 $string['movedpage'] = 'Flyttad sida';
@@ -424,6 +427,7 @@ $string['nooneenteredthis'] = 'Ingen matade in det här.';
 $string['noonehasanswered'] = 'Ingen har besvarat någon essäfråga ännu.';
 $string['noonehasansweredgroup'] = 'Ingen i {$a} har svarat på en essäfråga ännu.';
 $string['noopen'] = 'Inget öppningsdatum';
+$string['nooverridecreated'] = 'Inga åsidosättanden har skapats.';
 $string['nooverridedata'] = 'Du måste åsidosätta minst en av lektionsinställningarna.';
 $string['noretake'] = 'Du får inte göra om den här lektionen.';
 $string['normal'] = 'Normal - följ lektionens spår';
@@ -641,7 +645,6 @@ $string['withselectedattempts'] = 'Med valda försök...';
 $string['wronganswerjump'] = 'Hopp vid felsvar';
 $string['wronganswerscore'] = 'Resultat vid felsvar';
 $string['wrongresponse'] = 'Felsvar';
-$string['xattempts'] = '{$a} försök';
 $string['youhaveseen'] = 'Du har redan påbörjat den här lektionen.<br />Vill du fortsätta där du slutade?';
 $string['youranswer'] = 'Ditt svar';
 $string['yourcurrentgradeis'] = 'Ditt nuvarande betyg är {$a}';

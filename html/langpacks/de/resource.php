@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'de', version '3.11'.
+ * Strings for component 'resource', language 'de', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -25,19 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['clicktodownload'] = 'Klicken Sie auf den Link \'{$a}\', um die Datei herunterzuladen';
+$string['clicktodownload'] = 'Klicken Sie auf den Link \'{$a}\', um die Datei herunterzuladen.';
 $string['clicktoopen2'] = 'Klicken Sie auf den Link \'{$a}\', um die Datei anzuzeigen.';
-$string['configdisplayoptions'] = 'Wählen Sie alle Optionen aus, die voreingestellt verfügbar sein sollen. Bestehende Einstellungen werden nicht geändert. Für  die Mehrfachauswahl drücken Sie die Taste \'strg\' oder \'cmd\'.';
+$string['configdisplayoptions'] = 'Wählen Sie alle Optionen aus, die voreingestellt verfügbar sein sollen. Bestehende Einstellungen werden nicht geändert. Für eine Mehrfachauswahl drücken Sie die Taste \'strg\' oder \'cmd\'.';
 $string['configframesize'] = 'Wenn eine Webseite oder eine hochgeladene Datei in einem Frame angezeigt wird, dann ist dieser Wert die Höhe (in Pixeln) des Top-Frames mit der Navigation';
-$string['configparametersettings'] = 'Stellen Sie hier die Standardwerte für die Formularparameter beim Anlegen neuer Arbeitsmaterialien ein, die später individuell angepasst werden können';
-$string['configpopup'] = 'Soll ein neues Arbeitsmaterial  in einem Popup-Fenster angezeigt werden soll, falls dies überhaupt möglich ist?';
-$string['configpopupdirectories'] = 'Sollen in Popup-Fenstern Verzeichnislinks angezeigt werden?';
+$string['configparametersettings'] = 'Stellen Sie hier die Standardwerte für die Formularparameter beim Anlegen neuer Arbeitsmaterialien ein, die später individuell angepasst werden können.';
+$string['configpopup'] = 'Soll ein neues Arbeitsmaterial in einem Popup-Fenster angezeigt werden, falls dies überhaupt möglich ist?';
+$string['configpopupdirectories'] = 'Sollen Verzeichnislinks in Popup-Fenstern angezeigt werden?';
 $string['configpopupheight'] = 'Welche Höhe sollen Popup-Fenster haben?';
 $string['configpopuplocation'] = 'Sollen Popup-Fenster die Adressleiste anzeigen?';
 $string['configpopupmenubar'] = 'Sollen Popup-Fenster die Menüleiste zeigen?';
 $string['configpopupresizable'] = 'Soll die Größe von Popup-Fenstern veränderbar sein?';
 $string['configpopupscrollbars'] = 'Sollen Popup-Fenster scrollbar sein?';
-$string['configpopupstatus'] = 'Sollen Popup-Fenster  eine Statusleiste haben?';
+$string['configpopupstatus'] = 'Sollen Popup-Fenster eine Statusleiste haben?';
 $string['configpopuptoolbar'] = 'Sollen Popup-Fenster die Toolbar anzeigen?';
 $string['configpopupwidth'] = 'Welche Breite sollen Popup-Fenster  haben?';
 $string['contentheader'] = 'Inhalt';
@@ -57,39 +57,43 @@ Folgende Einstelloptionen sind möglich:
 * Als Popup - Die Datei wird in einem Popup-Fenster ohne Menüs und ohne Adressleiste angezeigt
 * Im Frame - Die Datei wird in einem Frame unterhalb der Navigationsleiste angezeigt, zusammen mit der Dateibeschreibung
 * Neues Fenster - Die Datei wird in einem neuen Browserfenster mit Menüs und mit Adressleiste angezeigt';
-$string['displayselectexplain'] = 'Wählen Sie die Anzeigeart, aber nicht alle Arten sind für alle Dateien sinnvoll';
+$string['displayselect_link'] = 'mod/file/mod';
+$string['displayselectexplain'] = 'Wählen Sie die Anzeigeart, aber leider sind nicht alle Arten für alle Dateien sinnvoll.';
 $string['dnduploadresource'] = 'Als Datei einbinden';
 $string['encryptedcode'] = 'Verschlüsselter Code';
 $string['filenotfound'] = 'Datei nicht gefunden';
 $string['filterfiles'] = 'Filter für den Dateiinhalt benutzen';
-$string['filterfilesexplain'] = 'Bitte wählen Sie die Art der Filterung von Dateiinhalten aus. Beachten Sie dabei, dass dies Probleme mit Flash und JavaApplets verursachen könnte. Stellen Sie sicher, dass alle Textdateien in der Kodierung utf-8 vorliegen.';
-$string['filtername'] = 'Autoverlinkung zu Materialnamen';
+$string['filterfilesexplain'] = 'Wählen Sie bitte die Art der Filterung von Dateiinhalten aus. Beachten Sie, dass dies Probleme mit Flash- und JavaApplets verursachen könnte. Stellen Sie sicher, dass alle Textdateien in der Kodierung utf-8 vorliegen.';
+$string['filtername'] = 'Autoverlinkung zu Ressourcenamen';
 $string['forcedownload'] = 'Download erzwingen';
 $string['framesize'] = 'Framegröße';
 $string['indicator:cognitivedepth'] = 'Datei kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einer Datei erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Datei kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Dateiaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Datei sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einer Datei erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Datei sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Datei-Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migration einer alten Kursdatei';
 $string['legacyfilesactive'] = 'Aktiv';
 $string['legacyfilesdone'] = 'Beendet';
 $string['modifieddate'] = 'Geändert {$a}';
 $string['modulename'] = 'Datei';
-$string['modulename_help'] = 'Mit dem Lernmaterial \'Datei\' können Trainer/innen eine Datei als Kursressource bereitstellen. Nach Möglichkeit wird die Datei in der Kursoberfläche angezeigt; andernfalls werden die Teilnehmer/innen zum Herunterladen aufgefordert. Die Datei kann zugehörige Dateien enthalten, beispielsweise eingebettete Bilder in einer HTML-Seite.
+$string['modulename_help'] = 'Mit der Ressource \'Datei\' können Trainer/innen eine Datei im Kurs bereitstellen. Nach Möglichkeit wird die Datei in der Kursoberfläche angezeigt; andernfalls werden die Teilnehmer/innen zum Herunterladen aufgefordert. Die Datei kann zugehörige Dateien enthalten, beispielsweise eingebettete Bilder in einer HTML-Seite.
 
-Beachten Sie, dass die Teilnehmer/innen die entsprechende Software brauchen, um die Datei zu öffnen.
+Beachten Sie, dass Teilnehmer/innen die entsprechende Software brauchen, um die Datei zu öffnen.
 
 Eine Datei kann verwendet werden
 
- * Um Präsentationen für den Unterricht zu teilen
- * Um eine Mini-Website als Kursressource einzubinden
- * Um Entwurfsdateien bereitzustellen, damit die Teilnehmer/innen diese bearbeiten und zur Bewertung einreichen können.';
+ * um Präsentationen für den Unterricht zu teilen
+ * um eine Mini-Website als Kursressource einzubinden
+ * um Entwurfsdateien bereitzustellen, damit die Teilnehmer/innen diese bearbeiten und zur Bewertung einreichen können.';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Dateien';
-$string['notmigrated'] = 'Dieser ältere Materialtyp ({$a}) wurde bisher noch nicht migriert';
+$string['notmigrated'] = 'Dieser veraltete Ressourcetyp ({$a}) wurde bisher noch nicht migriert.';
 $string['optionsheader'] = 'Optionen';
 $string['page-mod-resource-x'] = 'Jede Dateiseite';
 $string['pluginadministration'] = 'Datei-Administration';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'nl', version '3.11'.
+ * Strings for component 'qformat_gift', language 'nl', version '4.1'.
  *
  * @package     qformat_gift
  * @category    string
@@ -36,4 +36,5 @@ $string['importminerror'] = 'Er is een fout in de vraag. Er zijn niet genoeg ant
 $string['nohandler'] = 'Het verwerken van vraag type {$a} is niet mogelijk';
 $string['pluginname'] = 'Gift-opmaak';
 $string['pluginname_help'] = 'Met GIFT-opmaak kun je meerkeuze, waar/niet waar, kort antwoord, koppelvragen, ontbrekend woord, numerieke en open vragen importeren of exporteren via een tekstbestand.';
+$string['pluginname_link'] = 'qformat/gift';
 $string['privacy:metadata'] = 'De plug-in Gift vraagformat slaat geen persoonlijke gegevens op.';

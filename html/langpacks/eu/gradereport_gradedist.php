@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_gradedist', language 'eu', version '3.11'.
+ * Strings for component 'gradereport_gradedist', language 'eu', version '4.1'.
  *
  * @package     gradereport_gradedist
  * @category    string
@@ -32,10 +32,10 @@ $string['actualcolumns'] = 'oraingo kalifikazio-letrak';
 $string['actualgrade'] = 'Kalifikazioa (oraingoa)';
 $string['boundaryerror'] = 'Kalifikazio-letretako sarrera berrietako batzuk baliogabeak dira. Eremu guztiak bete behar dira.';
 $string['category'] = 'Kalifikazio-kategoria';
-$string['changeletters'] = 'Aldatu kalifikazio-letrak';
+$string['changeletters'] = 'Gorde aldatutako kalifikazio-letrak';
 $string['chart'] = 'Grafikoa';
 $string['columns'] = 'Barrak';
-$string['confirm'] = 'Aldatu kalifikazio-letrak';
+$string['confirm'] = 'Gorde aldatutako kalifikazio-letrak';
 $string['confirmationtableviewed'] = 'Berrespen-taula ikusi da';
 $string['confirmationtableviewed_description'] = '{$a->userid} IDa duen erabiltzaileak kalifikazioen banaketaren berrespen-taula ikusi du.';
 $string['contextbuttontitle'] = 'Grafikoaren testuinguru-menua';
@@ -86,4 +86,5 @@ $string['privacy:null_reason'] = 'Plugin honek ez du datu pertsonalik biltzen. I
 $string['saved'] = 'Kalifikazio-letrak ondo aldatu dira.';
 $string['showgradeitem'] = 'Erakutsi kalifikazio-elementua';
 $string['showgradeitem_description'] = 'Erakutsi kalifikazioaren erakuste-mota kalifikazio-elementuaren aukera gisa.';
+$string['submitanddownload'] = 'Gorde aldaketak';
 $string['sum'] = 'Batura';

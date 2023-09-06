@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'de', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'de', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -40,6 +40,7 @@ $string['clivalidationerror'] = 'Validierungsfehler:';
 $string['csvdelimiter'] = 'CSV-Trennzeichen';
 $string['defaultvalues'] = 'Standardwerte';
 $string['deleteerrors'] = 'Fehler löschen';
+$string['duplicateemail'] = 'Mehrere Nutzer/innen haben die E-Mail-Adresse {$a}.';
 $string['encoding'] = 'Encoding';
 $string['errormnetadd'] = 'Remote-Nutzer/innen können nicht hinzugefügt werden';
 $string['errorprefix'] = 'Fehler:';
@@ -53,6 +54,7 @@ $string['invalidtheme'] = 'Das Design "{$a}" ist nicht installiert und wird igno
 $string['invalidupdatetype'] = 'Diese Option kann mit dem ausgesuchten \'Upload Typ\' nicht ausgewählt werden.';
 $string['invaliduserdata'] = 'Für den Nutzer {$a} wurden ungültige Daten entdeckt und automatisch bereinigt.';
 $string['linex'] = 'Zeile {$a}';
+$string['matchemail'] = 'Übereinstimmung bzgl. der E-Mail-Adresse';
 $string['nochanges'] = 'Keine Änderungen';
 $string['notheme'] = 'Für diese Person ist kein Design definiert.';
 $string['pluginname'] = 'Nutzerupload';
@@ -84,6 +86,7 @@ $string['uploadusers_help'] = 'Nutzer/innen können über eine Textdatei angeleg
 * Die Feldnamen müssen in der englischen Bezeichnung angegeben sein
 * Notwendige Feldnamen sind username, password, firstname, lastname, email
 * Optionale Feldnamen sind course1, course2, ..., cohort1, cohort2, ...';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Vorschau Nutzer-Upload';
 $string['uploadusersresult'] = 'Ergebnisse Nutzer-Upload';
 $string['useraccountupdated'] = 'Nutzer/in aktualisiert';

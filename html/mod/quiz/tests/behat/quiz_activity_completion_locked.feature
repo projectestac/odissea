@@ -36,7 +36,7 @@ Feature: Ensure saving a quiz does not modify the completion settings.
       | completion                   | 2         |
       | completionview               | 0         |
       | completionusegrade           | 1         |
-      | completionpass               | 1         |
+      | completionpassgrade          | 1         |
       | completionattemptsexhausted  | 1         |
     And quiz "Test quiz" contains the following questions:
       | question       | page |
@@ -47,10 +47,10 @@ Feature: Ensure saving a quiz does not modify the completion settings.
 
   Scenario: Ensure saving quiz activty does not change completion settings
     Given I am on the "Test quiz" "mod_quiz > View" page logged in as "teacher1"
-    When I navigate to "Edit settings" in current page administration
+    When I navigate to "Settings" in current page administration
     Then the "completionattemptsexhausted" "field" should be disabled
     And the field "completionattemptsexhausted" matches value "1"
     And I press "Save and display"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And the "completionattemptsexhausted" "field" should be disabled
     And the field "completionattemptsexhausted" matches value "1"

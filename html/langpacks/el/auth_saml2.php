@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_saml2', language 'el', version '3.11'.
+ * Strings for component 'auth_saml2', language 'el', version '4.1'.
  *
  * @package     auth_saml2
  * @category    string
@@ -85,8 +85,8 @@ $string['logtofile'] = 'Ενεργοποιήστε την καταγραφή σ�
 $string['manageidpsheading'] = 'Διαχείριση διαθέσιμων IdP';
 $string['mdlattr'] = 'Αντιστοίχιση Moodle';
 $string['mdlattr_help'] = 'Με ποιο πεδίο χρήστη Moodle πρέπει να αντιστοιχιστεί το ιδιοχαρακτηριστικό IdP;';
-$string['metadatafetchfailed'] = 'Η κλήση/λήψη μεταδεδομένων απέτυχε: {$a}';
-$string['metadatafetchfailedstatus'] = 'Η κλήση/λήψη μεταδεδομένων απέτυχε: Κωδικός κατάστασης {$a}';
+$string['metadatafetchfailed'] = 'Η εύρεση/λήψη μεταδεδομένων απέτυχε: {$a}';
+$string['metadatafetchfailedstatus'] = 'Η εύρεση/λήψη μεταδεδομένων απέτυχε: Κωδικός κατάστασης {$a}';
 $string['metadatafetchfailedunknown'] = 'Η εύρεση/λήψη μεταδεδομένων απέτυχε: Άγνωστο σφάλμα cURL';
 $string['multiidp:label:active'] = 'Ενεργό';
 $string['multiidp:label:admin'] = 'Διαχειριστής';

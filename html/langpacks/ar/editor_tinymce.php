@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'ar', version '3.11'.
+ * Strings for component 'editor_tinymce', language 'ar', version '4.1'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -104,9 +104,9 @@ $string['advanced_dlg:about_author'] = 'الكاتب';
 $string['advanced_dlg:about_general'] = 'حول';
 $string['advanced_dlg:about_help'] = 'مساعدة';
 $string['advanced_dlg:about_license'] = 'الرخصة';
-$string['advanced_dlg:about_loaded'] = 'الإضافات المحملة';
+$string['advanced_dlg:about_loaded'] = 'الملاحق المحملة';
 $string['advanced_dlg:about_plugin'] = 'الملحق';
-$string['advanced_dlg:about_plugins'] = 'الإضافات';
+$string['advanced_dlg:about_plugins'] = 'الملاحق';
 $string['advanced_dlg:about_title'] = 'حول TinyMCE';
 $string['advanced_dlg:about_version'] = 'الإصدار';
 $string['advanced_dlg:accessibility_help'] = 'المساعدة في الوصول';
@@ -598,7 +598,7 @@ $string['paste:selectall_desc'] = 'تحديد الكل';
 $string['paste_dlg:text_linebreaks'] = 'أبقِ فواصل الأسطر';
 $string['paste_dlg:text_title'] = 'استعمل CTRL+V في لوحة المفاتيح للصق النص في النافذة.';
 $string['paste_dlg:word_title'] = 'استعمل CTRL+V في لوحة المفاتيح للصق النص في النافذة.';
-$string['pluginname'] = 'محرر TinyMCE HTML';
+$string['pluginname'] = 'محرر TinyMCE HTML (موروث)';
 $string['preview:preview_desc'] = 'معاينة';
 $string['print:print_desc'] = 'الطباعة';
 $string['privacy:metadata'] = 'إن إضافة محرر TinyMCE HTML لا تخزن أي بيانات شخصية.';
@@ -816,20 +816,20 @@ $string['table_dlg:thead'] = 'رأس الجدول';
 $string['table_dlg:title'] = 'إدراج/تعديل الجدول';
 $string['table_dlg:valign'] = 'المحاذاة العمودية';
 $string['table_dlg:width'] = 'العرض';
-$string['template:desc'] = 'إدراج محتوى القالب المعد مسبقًا';
+$string['template:desc'] = 'إدراج مظهر موجود مسبقا';
 $string['template_dlg:cdate_format'] = '%Y-%m-%d %H:%M:%S';
 $string['template_dlg:day_long'] = 'الأحد,الإثنين,الثلاثاء,الأربعاء,الخميس,الجمعة,السبت,الأحد';
 $string['template_dlg:day_short'] = 'أحد,إثن,ثلا,أرب,خمي,جمع,سبت,أحد';
-$string['template_dlg:desc'] = 'إدراج محتوى القالب المعد مسبقًا';
+$string['template_dlg:desc'] = 'إدراج قبل تعين محتوى المظهر';
 $string['template_dlg:desc_label'] = 'الوصف';
-$string['template_dlg:label'] = 'القالب';
+$string['template_dlg:label'] = 'المظهر';
 $string['template_dlg:mdate_format'] = '%Y-%m-%d %H:%M:%S';
 $string['template_dlg:months_long'] = 'يناير,فبراير,مارس,ابريل,مايو,يونيو,يوليو,اغسطس,سبتمبر,اكتوبر,نوفمبر,ديسمبر';
 $string['template_dlg:months_short'] = 'يناير,فبراير,مارس,ابريل,مايو,يونيو,يوليو,اغسطس,سبتمبر,اكتوبر,نوفمبر,ديسمبر';
 $string['template_dlg:preview'] = 'معاينة';
-$string['template_dlg:select'] = 'حدد القالب';
-$string['template_dlg:title'] = 'القوالب';
-$string['template_dlg:warning'] = 'تحذير: تحديث القالب بقالب آخر ربما يؤدي إلى فقدان البيانات.';
+$string['template_dlg:select'] = 'حدد مظهر';
+$string['template_dlg:title'] = 'المظاهر';
+$string['template_dlg:warning'] = 'تحذير: تحديث المظهر بمظهر آخر ربما يؤدي لفقدان البيانات.';
 $string['visualblocks:desc'] = 'إظهار/إخفاء عناصر الكتل';
 $string['visualchars:desc'] = 'إظهار/إخفاء المسيطرات البصرية';
 $string['wordcount:words'] = 'كلمات:';

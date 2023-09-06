@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'de', version '3.11'.
+ * Strings for component 'h5pactivity', language 'de', version '4.1'.
  *
  * @package     h5pactivity
  * @category    string
@@ -74,6 +74,7 @@ $string['grade_grademethod_help'] = 'Bei Verwendung der Punktbewertung stehen di
 * Erster Versuch (alle anderen Versuche werden ignoriert)
 * Letzter Versuch (alle anderen Versuche werden ignoriert)
 * Keine Versuche für die Bewertung verwenden (deaktivieren Sie die Bewertungsberechnung).';
+$string['grade_h5p'] = 'Note: {$a}';
 $string['grade_highest_attempt'] = 'Beste Note';
 $string['grade_last_attempt'] = 'Letzter Versuch';
 $string['grade_manual'] = 'Keine Note berechnen';
@@ -91,8 +92,10 @@ $string['modulename'] = 'H5P';
 $string['modulename_help'] = 'H5P ist eine Abkürzung für HTML5 Package - interaktive Inhalte wie Präsentationen, Videos und andere multimediale Inhalte, Fragen, Tests, Spiele und mehr. Mit der H5P-Aktivität kann H5P hochgeladen und einem Kurs hinzugefügt werden.
 
 Alle Fragenversuche werden automatisch markiert und die Note in den Bewertungen festgehalten.';
+$string['modulename_link'] = 'mod/h5pactivity/view';
 $string['modulenameplural'] = 'H5P';
 $string['myattempts'] = 'Meine Versuche';
+$string['newsubmissions'] = 'H5P abgegeben';
 $string['no_compatible_track'] = 'Diese Interaktion ({$a}) liefert keine Tracking-Informationen oder das bereitgestellte Tracking ist nicht kompatibel mit der aktuellen Aktivitätsversion.';
 $string['noparticipants'] = 'Keine Teilnehmer/innen anzuzeigen';
 $string['opencontentbank'] = '<a href="{$a}" target="_blank">Zugriff auf die H5P-Datei im Inhaltsspeicher</a> (öffnet in einem neuen Fenster).';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'oublog', language 'ar', version '3.11'.
+ * Strings for component 'oublog', language 'ar', version '4.1'.
  *
  * @package     oublog
  * @category    string
@@ -54,8 +54,8 @@ $string['event:siteentriesviewed'] = 'إدخالات موقع تمت معاين�
 $string['export:header_tags'] = 'الوسوم';
 $string['export:header_title'] = 'العنوان';
 $string['exportuntitledpost'] = 'مشاركة بلا عنوان';
-$string['externaldashboardadd'] = 'إضافة مدونة إلى لوحة التحكم';
-$string['externaldashboardremove'] = 'إزالة المدونة من لوحة التحكم';
+$string['externaldashboardadd'] = 'إضافة مدونة إلى دفة القيادة';
+$string['externaldashboardremove'] = 'إزالة المدونة من دفة القيادة';
 $string['import_step1_all'] = 'إختيار الكل';
 $string['import_step1_from'] = 'الاستيراد من';
 $string['import_step1_table_tags'] = 'الوسوم';

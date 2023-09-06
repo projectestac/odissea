@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'el', version '3.11'.
+ * Strings for component 'blog', language 'el', version '4.1'.
  *
  * @package     blog
  * @category    string
@@ -97,7 +97,7 @@ $string['evententryadded'] = 'Η ανάρτηση προστέθηκε';
 $string['evententrydeleted'] = 'Η ανάρτηση διαγράφηκε';
 $string['evententryupdated'] = 'Η ανάρτηση ενημερώθηκε';
 $string['eventexternalblogsviewed'] = 'Αναγνωσμένα εξωτερικά καταχωρημένα ιστολόγια';
-$string['externalblogcrontime'] = 'Χρονοδιάγραμμα (της εντολής χρονο-προγραμματισμού) cron, εξωτερικού ιστολογίου';
+$string['externalblogcrontime'] = 'Χρονοπρόγραμμα (της εντολής χρονο-προγραμματισμού) cron, εξωτερικού ιστολογίου';
 $string['externalblogdeleteconfirm'] = 'Διαγραφή της καταχώρησης του εξωτερικού ιστολογίου;';
 $string['externalblogdeleted'] = 'Η καταχώρηση του εξωτερικού ιστολογίου διαγράφηκε';
 $string['externalblogs'] = 'Εξωτερικά ιστολόγια';
@@ -109,7 +109,7 @@ $string['filtertags_help'] = 'Μπορείτε να χρησιμοποιήσετ
 $string['groupblog'] = 'Ιστολόγιο ομάδας: {$a}';
 $string['groupblogdisable'] = 'Τα ιστολόγια ομάδων είναι απενεργοποιημένα';
 $string['groupblogentries'] = 'Αναρτήσεις ιστολογίου συσχετισμένες με το μάθημα {$a->coursename} από την ομάδα {$a->groupname}';
-$string['groupblogs'] = 'Οι χρήστες μπορούν να δουν μόνο τα ιστολόγια των ατόμων της ομάδας τους';
+$string['groupblogs'] = 'Οι χρήστες μπορούν να δουν μόνο τα ιστολόγια των ατόμων με τα οποία μοιράζονται μια κοινή ομάδα';
 $string['incorrectblogfilter'] = 'Εσφαλμένη επιλογή είδους φίλτρου ιστολογίου';
 $string['intro'] = 'Αυτή η τροφοδοσία RSS δημιουργήθηκε αυτόματα από ένα ή περισσότερα ιστολόγια.';
 $string['invalidgroupid'] = 'Μη έγκυρο αναγνωριστικό ομάδας';
@@ -163,10 +163,10 @@ $string['publishto_help'] = 'Υπάρχουν 3 επιλογές:
 * Στον εαυτό σας (προσχέδιο) - Μόνο εσείς και οι διαχειριστές μπορείτε να δείτε αυτή την καταχώρηση
 * Οποιοσδήποτε σε αυτόν τον ιστότοπο - Όποιος είναι καταχωρημένος σε αυτόν τον ιστότοπο μπορεί να διαβάσει αυτή την καταχώρηση
 * Οποιοσδήποτε στον κόσμο - Οποιοσδήποτε, συμπεριλαμβανομένων των επισκεπτών, μπορεί να διαβάσει αυτή την καταχώρηση';
-$string['publishtocourse'] = 'Χρήστες που μοιράζονται ένα μάθημα μαζί σας';
+$string['publishtocourse'] = 'Χρήστες που κάνουν κοινή χρήση ενός μαθήματος με εσάς';
 $string['publishtocourseassoc'] = 'Μέλη του συσχετισμένου μαθήματος';
 $string['publishtocourseassocparam'] = 'Μέλη του {$a}';
-$string['publishtogroup'] = 'Χρήστες που μοιράζονται μια ομάδα μαζί σας';
+$string['publishtogroup'] = 'Χρήστες που κάνουν κοινή χρήση μιας ομάδας με εσάς';
 $string['publishtogroupassoc'] = 'Τα μέλη της ομάδας σας στο συσχετισμένο μάθημα';
 $string['publishtogroupassocparam'] = 'Τα μέλη της ομάδας σας στο {$a}';
 $string['publishtonoone'] = 'Στον εαυτό σας (προσχέδιο)';

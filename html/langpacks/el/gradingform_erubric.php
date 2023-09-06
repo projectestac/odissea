@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_erubric', language 'el', version '3.11'.
+ * Strings for component 'gradingform_erubric', language 'el', version '4.1'.
  *
  * @package     gradingform_erubric
  * @category    string
@@ -29,7 +29,7 @@ $string['addcriterion'] = 'Προσθήκη κριτηρίου';
 $string['addnew'] = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Προσθ. (+)';
 $string['alwaysshowdefinition'] = 'Να επιτρέπεται η προεπισκόπηση της ρουμπρίκας από τους μαθητές (αλλιώς θα εμφανίζεται μόνο μετά τη βαθμολόγηση)';
 $string['backtoediting'] = 'Επιστροφή στην επεξεργασία';
-$string['benchmarkfinal'] = 'Τελική τιμή αναφοράς μαθητή';
+$string['benchmarkfinal'] = 'Τελική τιμή συγκριτικής αξιολόγησης μαθητή';
 $string['benchmarkinfo'] = 'Αποτελέσματα Μαθησιακής Αναλυτικής';
 $string['benchmarkinfonull'] = 'Δεν υπάρχουν αποτελέσματα Μαθησιακής Αναλυτικής';
 $string['collaborationempty'] = 'Τύπος συνεργασίας';
@@ -77,20 +77,20 @@ $string['enrichedvaluesuffixpoints'] = 'βαθμοί/100';
 $string['enrichedvaluesuffixstudents'] = 'άτομα';
 $string['enrichedvaluesuffixtimes'] = 'φορές';
 $string['enrichment'] = 'Εμπλουτισμός';
-$string['enrichment_help'] = 'Παρακολουθήστε την ταινία παραδείγματος χρήσης για να δημιουργήσετε κριτήρια σε μια Εμπλουτισμένη Ρουμπρίκα Μαθησιακής Αναλυτικής:
+$string['enrichment_help'] = 'Παρακολουθήστε το ακόλουθο βίντεο εκμάθησης για να δημιουργήσετε κριτήρια σε μια Εμπλουτισμένη Ρουμπρίκα Μαθησιακής Αναλυτικής:
 <br /><br />
-<a target="_blank" href="https://www.youtube.com/watch?v=jCuNm463yTU&hd=1">Δημιουργία στιγμιότυπου Εμπλουτισμένης Ρουμπρίκας Μαθησιακής Αναλυτικής.</a><br /><br />';
+<a target="_blank" href="https://www.youtube.com/watch?v=jCuNm463yTU&hd=1">Δημιουργία στιγμιοτύπου Εμπλουτισμένης Ρουμπρίκας Μαθησιακής Αναλυτικής.</a><br /><br />';
 $string['enrichmentoptions'] = 'Επιλογές εμπλουτισμού κριτηρίων';
 $string['enrichshareconfirm'] = '<p style="text-align:center;color:red;font-weight:bold">ΠΡΟΣΟΧΗ!</p>
 Το πρόσθετο <b>Εμπλουτισμένη Ρουμπρίκα Μαθησιακής Αναλυτικής</b> μπορεί να χρησιμοποιηθεί ως υπόδειγμα φόρμας προχωρημένης βαθμολόγησης, ΜΟΝΟ ΓΙΑ ΤΟ ΠΑΡΟΝ ΜΑΘΗΜΑ!
 Αν άλλοι χρήστες στον ιστότοπό σας χρησιμοποιήσουν αυτή τη φόρμα σε οποιοδήποτε άλλο μάθημα, <b>δεν θα δουλέψει ως έχει</b>! Η βασική δομή της ρουμπρίκας δεν θα αλλοιωθεί, όμως θα πρέπει να αντικαταστήσετε όλα τα ενσωματωμένα αρθρώματα μαθήματος με παρόμοια αρθρώματα από το μάθημα προορισμού.';
 $string['err_attention'] = '<p style="text-align:center;color:red;font-weight:bold">ΠΡΟΣΟΧΗ!</p>';
-$string['err_collaborationhoice'] = 'Οι εκπαιδευτικοί πόροι άμεσης ομιλίας (chat modules) δεν δύναται να επιλεγούν για έλεγχο απαντήσεων και υποβολής αρχείων σε ομαδικές συζητήσεις (forums).';
+$string['err_collaborationhoice'] = 'Δεν είναι δυνατή η επιλογή των αρθρωμάτων γραπτής συνομιλίας για έλεγχο υποβολών αρχείων ή απαντήσεων σε φόρουμ.';
 $string['err_collaborationtypeneedless'] = 'Το πεδίο τύπος πρέπει να επιλέγεται μόνο για έλεγχο συνεργασίας.';
 $string['err_criterionmethod'] = 'Πρέπει να επιλέξετε ατομική ή συλλογική αναφορά για το εμπλουτισμένο κριτήριο.';
 $string['err_criteriontypeid'] = 'Πρέπει να επιλέξετε τελεστή για το εμπλουτισμένο κριτήριο.';
 $string['err_enrichedcriterionmissing'] = 'Πρέπει να επιλεχθούν όλα τα κριτήρια εμπλουτισμού, ή κανένα.';
-$string['err_enrichedmoduleselection'] = 'Οι επιλεγμένοι εκπαιδευτικοί πόροι πρέπει να είναι του ίδιου τύπου, σύμφωνα με το είδος ελέγχου.';
+$string['err_enrichedmoduleselection'] = 'Τα επιλεγμένα αρθρώματα μαθήματος πρέπει να είναι του ίδιου τύπου εμπλουτισμένων κριτηρίων.';
 $string['err_enrichedvalueformat'] = 'Η τιμή ελέγχου των επιπέδων εμπλουτισμού πρέπει να είναι έγκυρος θετικός ακέραιος αριθμός.';
 $string['err_enrichedvaluemissing'] = 'Τα εμπλουτισμένα κριτήρια πρέπει να έχουν τιμές ελέγχου σε κάθε επίπεδο.';
 $string['err_mintwolevels'] = 'Κάθε κριτήριο πρέπει να έχει τουλάχιστον δυο επίπεδα.';
@@ -141,10 +141,10 @@ $string['pluginname'] = 'Εμπλουτισμένη Ρουμπρίκα Μαθη�
 $string['previewerubric'] = 'Προεπισκόπηση LA e-Rubric (ηλε.Ρουμπρίκας Μ.Α.)';
 $string['privacy:metadata:fillings'] = 'Ό πίνακας στη Βάση Δεδομένων που αποθηκεύει βαθμολογικές πληροφορίες και παραγόμενα Μαθησιακής Αναλυτικής και Εξόρυξης Δεδομένων.';
 $string['privacy:metadata:fillings:criterionid'] = 'Το αναγνωριστικό κριτηρίου μιας ηλε.ρουμπρίκας που χρησιμοποιήθηκε για βαθμολόγηση.';
-$string['privacy:metadata:fillings:enrichedbenchmark'] = 'Η τελική τιμή αναφοράς του εμπλουτισμένου κριτηρίου, που προέκυψε από τα εξαγόμενα της Μαθησιακής Αναλυτικής και την Εξόρυξη Δεδομένων.';
-$string['privacy:metadata:fillings:enrichedbenchmarkstudent'] = 'Η τιμή αναφοράς του μαθητή, που προέκυψε από τα εξαγόμενα της Μαθησιακής Αναλυτικής και την Εξόρυξη Δεδομένων.';
+$string['privacy:metadata:fillings:enrichedbenchmark'] = 'Η τελική τιμή της συγκριτικής αξιολόγησης του εμπλουτισμένου κριτηρίου, που προέκυψε από την Εξόρυξη Δεδομένων και την Μαθησιακή Αναλυτική.';
+$string['privacy:metadata:fillings:enrichedbenchmarkstudent'] = 'Η τελική τιμή της συγκριτικής αξιολόγησης του μαθητή, που προέκυψε από την Εξόρυξη Δεδομένων και την Μαθησιακή Αναλυτική.';
 $string['privacy:metadata:fillings:enrichedbenchmarkstudents'] = 'Η συγκεντρωτική τιμή αναφοράς των εν ενεργεία μαθητών που προέκυψε από τα εξαγόμενα της Μαθησιακής Αναλυτικής και την Εξόρυξη Δεδομένων.';
-$string['privacy:metadata:fillings:instanceid'] = 'Το αναγνωριστικό του στιγμιότυπου βαθμολόγησης μιας προσπάθειας βαθμολόγησης από ένα συγκεκριμένο βαθμολογητή που χρησιμοποιεί μια συγκεκριμένη ηλε.ρουμπρίκα.';
+$string['privacy:metadata:fillings:instanceid'] = 'Το αναγνωριστικό του στιγμιοτύπου βαθμολόγησης μιας προσπάθειας βαθμολόγησης από ένα συγκεκριμένο βαθμολογητή που χρησιμοποιεί μια συγκεκριμένη ηλε.ρουμπρίκα.';
 $string['privacy:metadata:fillings:levelid'] = 'Το αναγνωριστικό του επιλεγμένου επιπέδου ενός κριτηρίου ηλε.ρουμπρίκας.';
 $string['privacy:metadata:fillings:remark'] = 'Οι παρατηρήσεις αξιολόγησης ενός βαθμολογητή, κατά την αξιολόγηση με βάση ένα κριτήριο της ηλε.ρουμπρίκας.';
 $string['referencetypeempty'] = 'Ατομ./Συνολ.';
@@ -176,8 +176,8 @@ $string['selectgrade'] = 'βαθμολογία';
 $string['selectstudy'] = 'μελέτη';
 $string['showdescriptionstudent'] = 'Εμφάνιση περιγραφής ρουμπρίκας στους βαθμολογούμενους';
 $string['showdescriptionteacher'] = 'Εμφάνιση περιγραφής ρουμπρίκας κατά τη βαθμολόγηση';
-$string['showenrichedbenchmarkstudent'] = 'Εμφάνιση των υπολογιζόμενων τιμών αναφοράς εμπλουτισμού στους βαθμολογούμενους';
-$string['showenrichedbenchmarkteacher'] = 'Εμφάνιση των υπολογιζόμενων τιμών αναφοράς εμπλουτισμού κατά τη βαθμολόγηση';
+$string['showenrichedbenchmarkstudent'] = 'Εμφάνιση της συγκριτικής αξιολόγησης υπολογιζόμενου εμπλουτισμού στους βαθμολογούμενους';
+$string['showenrichedbenchmarkteacher'] = 'Εμφάνιση της συγκριτικής αξιολόγησης υπολογιζόμενου εμπλουτισμού κατά τη βαθμολόγηση';
 $string['showenrichedcriteriastudent'] = 'Εμφάνιση εμπλουτισμού των κριτηρίων στους βαθμολογούμενους';
 $string['showenrichedcriteriateacher'] = 'Εμφάνιση εμπλουτισμού των κριτηρίων κατά τη βαθμολόγηση';
 $string['showenrichedvaluestudent'] = 'Εμφάνιση τιμών ελέγχου εμπλουτισμού για κάθε επίπεδο στους βαθμολογούμενους';
@@ -188,8 +188,8 @@ $string['showscoreteacher'] = 'Εμφάνιση βαθμολογίας για κ
 $string['sortlevelsasc'] = 'Σειρά ταξινόμησης για τα επίπεδα:';
 $string['sortlevelsasc0'] = 'Φθίνουσα με βάση τους πόντους';
 $string['sortlevelsasc1'] = 'Αύξουσα με βάση τους πόντους';
-$string['studentbenchmarkinfo'] = 'Τιμή αναφοράς μαθητή';
-$string['studentsbenchmarkinfo'] = 'Τιμή αναφοράς μαθητών';
+$string['studentbenchmarkinfo'] = 'Συγκριτική αξιολόγηση μαθητή';
+$string['studentsbenchmarkinfo'] = 'Συγκριτική αξιολόγηση μαθητών';
 $string['timestampenrichmentend'] = 'Οι υπολογισμοί εμπλουτισμού γίνονται μέχρι την οφειλόμενη ημερομηνία υποβολής (αν έχει ενεργοποιηθεί)';
 $string['timestampenrichmentstart'] = 'Οι υπολογισμοί εμπλουτισμού γίνονται από την ημερομηνία έναρξης υποβολών της εργασίας (αν έχει ενεργοποιηθεί)';
 $string['zerolevelsabsent'] = 'Προσοχή: Η ελάχιστη δυνατή βαθμολογία για αυτή τη ρουμπρίκα δεν είναι μηδέν (0). Αυτό μπορεί να παράγει απροσδόκητα αποτελέσματα για τη συγκεκριμένη βαθμολογική δραστηριότητα.

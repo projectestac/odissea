@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_notifications', language 'es', version '3.11'.
+ * Strings for component 'block_notifications', language 'es', version '4.1'.
  *
  * @package     block_notifications
  * @category    string
@@ -27,24 +27,34 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assign'] = 'Tarea';
 $string['assignment'] = 'Tarea';
+$string['book'] = 'Libro';
+$string['calendar_event'] = 'Evento del calendario';
+$string['chapter'] = 'Capítulo';
 $string['chat'] = 'Chat';
 $string['checklist'] = 'Lista de Chequeo';
 $string['choice'] = 'Consulta';
 $string['choicegroup'] = 'Consulta grupal';
 $string['configuration_comment'] = 'No hay canales de notificación activados';
 $string['course_configuration_presets_comment'] = 'Las configuraciones predeterminadas le permiten establecer configuraciones de usuario para los canales de correo y SMS. Estas configuraciones afectarán solamente a usuarios que no han definido sus preferencias.';
+$string['course_module'] = 'Módulo';
 $string['data'] = 'Base de Datos';
 $string['email'] = 'Correo electrónico';
 $string['email_icon_tooltip'] = 'La notificación de nuevo contenido está activada. Le llegará un correo cada';
 $string['email_notification_preset'] = 'Predeterminar notificaciones por Correo';
 $string['email_notification_preset_explanation'] = 'Predeterminar notificaciones por correo para el usuario si el canal de correo está activado.';
+$string['events_explanation'] = 'Habilite aquí los eventos que serán notificados.';
 $string['folder'] = 'Carpeta';
 $string['forum'] = 'Foro';
 $string['global_configuration_comment'] = 'Canales de notificación globalmente activados';
+$string['global_configuration_presets_actions_comment'] = 'Preconfigure las acciones que serán notificadas a los usuarios.';
 $string['global_configuration_presets_comment'] = 'Las configuraciones predeterminadas le permiten establecer configuraciones de usuario para los canales de correo y SMS. Las predeterminadas son globales pero pueden ser cambiadas al interior del curso.';
+$string['global_events_explanation'] = 'Configuraciones globales para las notificaciones de los eventos en el curso,. Los eventos seleccionados serán notificados a los usuarios. La notificación de estos eventos todavía puede deshbilitarse anivel del curso.';
 $string['glossary'] = 'Glosario';
 $string['help_title'] = 'Agregue su número de teléfono';
+$string['history_length'] = 'Longitud de la historia de los eventos notificados';
+$string['history_length_explanation'] = 'Este es el límite de los eventos notificados. Es el límite de la longitud de la bitácora de historia.';
 $string['imscp'] = 'Paquete IMS';
+$string['label'] = 'Etiqueta';
 $string['last_notification'] = 'Última';
 $string['lesson'] = 'Lección';
 $string['lightboxgallery'] = 'Galería';
@@ -52,6 +62,7 @@ $string['mailsubject'] = 'Actualizaciones en el curso';
 $string['notifications'] = 'Notificaciones';
 $string['notifications:addinstance'] = 'Agregar bloque de Notificaciones';
 $string['notifications:myaddinstance'] = 'Agregar bloque de Notificaciones a la página "Mi Moodle"';
+$string['notify'] = 'Tarea del Bloque de Notificaciones';
 $string['notify_by_email'] = 'Notificar por correo electrónico';
 $string['notify_by_rss'] = 'Notificar por RSS';
 $string['notify_by_sms'] = 'Notificar por SMS';
@@ -61,6 +72,7 @@ $string['quiz'] = 'Cuestionario';
 $string['quizport'] = 'Quizport';
 $string['resource'] = 'Recurso';
 $string['rss'] = 'RSS';
+$string['rss_by_shortname'] = 'Identifique el RSS del curso al usar la opción del URL del nombre_corto. El valor por defecto es la ID del curso.';
 $string['rss_empty_description'] = 'Este RSS está vacío. Espere a que la plataforma escanee y obtenga el contenido del curso.';
 $string['rss_empty_title'] = 'RSS vacío';
 $string['rss_icon_tooltip'] = 'La notificación de nuevo contenido vía RSS está activada. Clic en el icono para abrir el canal RSS y suscribirse.';

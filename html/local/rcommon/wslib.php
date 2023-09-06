@@ -3,7 +3,9 @@
 
 function get_marsupial_ws_client($publisher, $auth_content = false) {
     // This call must be included to ensure the WSDL loading
-    libxml_disable_entity_loader(false);
+    if (\PHP_VERSION_ID < 80000) {
+        libxml_disable_entity_loader(true);
+    }
 
     $debugging = debugging();
     $tracer = get_config('rcommon', 'tracer');
@@ -122,14 +124,15 @@ function rcommon_object_to_array_lower($value, $recursive = false) {
     }
 
     // Solve lack of xmlns
-    if(count($array) == 1 && isset($array['any'])){
+    if(count($array) === 1 && isset($array['any'])){
         $anyxml = simplexml_load_string ('<aux>'.$array['any'].'</aux>');
         $anyxml = $anyxml->children();
         if (!$anyxml) {
             return false;
         }
+
         $name = $anyxml->getName();
-        if (count($anyxml->$name) == 1) {
+        if (is_array($anyxml->$name) && count($anyxml->$name) === 1) {
             $array = array($name => $anyxml->$name);
         } else {
             $children = array();
@@ -141,11 +144,11 @@ function rcommon_object_to_array_lower($value, $recursive = false) {
     }
 
 	$array_ret = array();
-    foreach ($array as $key => $value) {
+    foreach ($array as $key => $data) {
         if ($recursive) {
-            $array_ret[strtolower($key)] = rcommon_object_to_array_lower($value, $recursive);
+            $array_ret[strtolower($key)] = rcommon_object_to_array_lower($data, $recursive);
         } else {
-            $array_ret[strtolower($key)] = $value;
+            $array_ret[strtolower($key)] = $data;
         }
 
     }
@@ -197,7 +200,7 @@ function rcommon_ws_error($function, $message, $module = 'rcommon', $cmid = 0, $
         $record->userid    =  isset($USER->id) ? $USER->id : 0;
         $record->ip        =  $_SERVER['REMOTE_ADDR'];
         $record->module    =  $module;
-        $course            =  $course ? $course : isset($COURSE->id) ? $COURSE->id : 0;
+        $course            =  $course ? $course : (isset($COURSE->id) ? $COURSE->id : 0);
         $record->course    =  $course != SITEID ? $course : 0;
         $record->cmid      =  $cmid ? $cmid : 0;
         $record->action    =  $function.'_error';

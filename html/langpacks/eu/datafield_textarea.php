@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'eu', version '3.11'.
+ * Strings for component 'datafield_textarea', language 'eu', version '4.1'.
  *
  * @package     datafield_textarea
  * @category    string
@@ -30,3 +30,4 @@ $string['maxbytes'] = 'Enbotatutako fitxatategiaren gehieneko tamaina  (byteak)'
 $string['maxbytes_desc'] = 'Zero ezarriz gero, modu lehenetsian mugarik gabea izango da';
 $string['pluginname'] = 'Testu-eremua';
 $string['privacy:metadata'] = 'Testu-eremua eremu-osagaiak ez du datu pertsonalik biltzen; datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['sample'] = '<p>Hau testu-eremu bat da. Erabiltzaileei testu luzeak idatzi eta hainbat errenkadatan antolatzeko aukera ematen du.</p><p>Testu-eremuen tamaina errenkada eta zutabeetan ezarri dezakezu.</p><p>Testu-eremuko testuari formatua eman ahal zaio, esaterako <strong>letra lodiak</strong>, eta <a href="#">estekak</a> edo irudiak ere txertatu daitezke.</p>';

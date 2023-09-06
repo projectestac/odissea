@@ -203,8 +203,8 @@ function rgrade_get_time($sDate){
  * @param string $begin
  * @param string $end
  */
-function rgrade_get_grades($courseid, $bookid, $unitid = null,
-$groupid = null, $userid, $state = null, $begin = null, $end = null) {
+function rgrade_get_grades($courseid, $bookid, $userid, $unitid = null,
+                           $groupid = null, $state = null, $begin = null, $end = null) {
 
 	global $CFG, $DB;
 

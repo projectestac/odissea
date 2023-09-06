@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'el', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'el', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -107,12 +107,12 @@ $string['pluginname'] = 'OAuth 2';
 $string['privacy:metadata:auth_oauth2'] = 'Αυθεντικοποίηση OAuth 2';
 $string['privacy:metadata:auth_oauth2:authsubsystem'] = 'Αυτό το πρόσθετο είναι συνδεδεμένο στο υποσύστημα αυθεντικοποίησης.';
 $string['privacy:metadata:auth_oauth2:confirmtoken'] = 'Το κουπόνι επιβεβαίωσης.';
-$string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'Η χρονοσφραγίδα όταν το κουπόνι επιβεβαίωσης λήγει.';
+$string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'Η χρονοσήμανση του πότε το κουπόνι επιβεβαίωσης λήγει.';
 $string['privacy:metadata:auth_oauth2:email'] = 'Η εξωτερική διεύθυνση ηλε.ταχυδρομείου που αντιστοιχεί σε αυτόν το λογαριασμό.';
 $string['privacy:metadata:auth_oauth2:issuerid'] = 'Το αναγνωριστικό του εκδότη OAuth 2 για αυτή την σύνδεση OAuth 2.';
 $string['privacy:metadata:auth_oauth2:tableexplanation'] = 'Λογαριασμοί OAuth 2 που συνδέονται με το λογαριασμό Moodle ενός χρήστη.';
-$string['privacy:metadata:auth_oauth2:timecreated'] = 'Η χρονοσφραγίδα όταν ο λογαριασμός χρήστη συνδέθηκε μέσω OAuth 2 σύνδεσης.';
-$string['privacy:metadata:auth_oauth2:timemodified'] = 'Η χρονοσφραγίδα όταν αυτή η εγγραφή τροποποιήθηκε.';
+$string['privacy:metadata:auth_oauth2:timecreated'] = 'Η χρονοσήμανση του πότε ο λογαριασμός χρήστη συνδέθηκε μέσω OAuth 2 σύνδεσης.';
+$string['privacy:metadata:auth_oauth2:timemodified'] = 'Η χρονοσήμανση του πότε αυτή η εγγραφή τροποποιήθηκε.';
 $string['privacy:metadata:auth_oauth2:userid'] = 'Το αναγνωριστικό του λογαριασμού χρήστη στον οποίο το OAuth 2 είναι συνδεδεμένο.';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'Το αναγνωριστικό του χρήστη που τροποποίησε αυτόν τον λογαριασμό.';
 $string['privacy:metadata:auth_oauth2:username'] = 'Το εξωτερικό όνομα χρήστη που αντιστοιχεί σε αυτόν το λογαριασμό.';

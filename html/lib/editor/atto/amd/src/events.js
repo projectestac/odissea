@@ -21,6 +21,8 @@
  * @since      3.10.5
  */
 
+import {dispatchEvent} from 'core/event_dispatcher';
+
 /**
  * Events for the `editor_atto` plugin.
  *
@@ -52,22 +54,12 @@ export const eventTypes = {
  * @param {Boolean} highlight True when the button was highlighted. False, otherwise.
  */
 export const notifyButtonHighlightToggled = (attoButton, buttonName, highlight) => {
-    const detail = {
-        buttonName,
-        highlight,
-    };
-
-    const customEvent = new CustomEvent(
+    return dispatchEvent(
         eventTypes.attoButtonHighlightToggled,
         {
-            bubbles: true,
-            cancelable: false,
-            composed:  false,
-            detail,
-        }
+            buttonName,
+            highlight,
+        },
+        attoButton
     );
-
-    attoButton.dispatchEvent(customEvent);
-
-    return customEvent;
 };

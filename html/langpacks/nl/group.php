@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'nl', version '3.11'.
+ * Strings for component 'group', language 'nl', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -87,6 +87,7 @@ $string['eventgroupmemberadded'] = 'Groepslid toegevoegd';
 $string['eventgroupmemberremoved'] = 'Groepslid verwijderd';
 $string['eventgroupupdated'] = 'Groep aangepast';
 $string['existingmembers'] = 'Leden: {$a}';
+$string['exportgroupsgroupings'] = 'Groepen en groeperingen downloaden als';
 $string['filtergroups'] = 'Filter groepeert op:';
 $string['group'] = 'Groep';
 $string['groupaddedsuccesfully'] = 'Groep {$a} toegevoegd';
@@ -146,6 +147,7 @@ $string['importgroups_help'] = 'Groepen kunnen geïmporteerd worden via een teks
 * De eerste record bevat een lijst met veldnamen die de opmaak bepalen van de rest van het bestand
 * De vereiste veldnaam is groupname
 * Optionele velnamen zijn groupidnumber, description, enrolmentkey, groupingname, enablemessaging';
+$string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Enkel actieve aanmeldingen meenemen';
 $string['includeonlyactiveenrol_help'] = 'Indien ingeschakeld zullen geschorste gebruikers niet mee opgenomen worden in groepen.';
 $string['javascriptrequired'] = 'Voor deze pagina moet Javascript ingeschakeld zijn';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'sv', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'sv', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -41,6 +41,7 @@ $string['clivalidationerror'] = 'Valideringsfel;';
 $string['csvdelimiter'] = 'CSV-avgränsare';
 $string['defaultvalues'] = 'Förinställda standardvärden';
 $string['deleteerrors'] = 'Ta bort fel';
+$string['duplicateemail'] = 'Hittade flera användare med e-postadressen {$a}';
 $string['encoding'] = 'Inkodning';
 $string['errormnetadd'] = 'Kan inte lägga till externa användare';
 $string['errorprefix'] = 'Fel:';
@@ -54,6 +55,7 @@ $string['invalidtheme'] = '"{$a}"-temat är inte installerat och kommer att igno
 $string['invalidupdatetype'] = 'Detta alternativ kan inte väljas för den valda uppladdningstypen.';
 $string['invaliduserdata'] = 'Ogiltig data hittades för användare {$a} och den har rensats bort.';
 $string['linex'] = 'Rad {$a}';
+$string['matchemail'] = 'Matcha på e-postadress';
 $string['nochanges'] = 'Inga ändringar';
 $string['notheme'] = 'Inget tema för denna användare.';
 $string['pluginname'] = 'Användaruppladdning';
@@ -85,6 +87,7 @@ $string['uploadusers_help'] = 'Användare kan laddas upp (och eventuellt registr
 * Varje post är en serie data åtskilda av kommatecken (eller andra avgränsare)
 * Den första posten innehåller en lista med fältnamn som definierar formatet för resten av filen
 * Obligatoriska fältnamn är: <code>username, password, firstname, lastname, email</code>';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Förhandsgranska uppladdning av användare';
 $string['uploadusersresult'] = 'Resultat av uppladdning av användare';
 $string['useraccountupdated'] = 'Användare har uppdaterats';

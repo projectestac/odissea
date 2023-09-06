@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_multilang', language 'ru', version '3.11'.
+ * Strings for component 'filter_multilang', language 'ru', version '4.1'.
  *
  * @package     filter_multilang
  * @category    string
@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Многоязычный контент';
+$string['forceoldsyntax'] = 'Использовать старый синтаксис';
+$string['forceoldsyntax_desc'] = 'Принудительно использовать старый синтаксис фильтра многоязычного контента: &lt;span&gt; без class=«multilang» и &lt;lang&gt;';
 $string['privacy:metadata'] = 'Плагин Многоязычный контент не хранит никаких персональных данных.';

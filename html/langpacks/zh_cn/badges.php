@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'zh_cn', version '3.11'.
+ * Strings for component 'badges', language 'zh_cn', version '4.1'.
  *
  * @package     badges
  * @category    string
@@ -118,6 +118,7 @@ $string['backpackweburl'] = '背包URL';
 $string['badgedetails'] = '勋章详情';
 $string['badgeimage'] = '图片';
 $string['badgeimage_help'] = '图像的大小应至少为 300 x 300 像素。它将在徽章页面上显示为 300 x 300像素，在用户的个人资料页面上显示为100 x 100像素。';
+$string['badgeissued'] = '颁发的徽章';
 $string['badgeprivacysetting'] = '勋章的隐私设置';
 $string['badgeprivacysetting_help'] = '您获得的勋章可以显示在您的帐户个人档案页面。此设置允许您自动设置新获得的勋章的可见性。您仍然可以在您的勋章页面上控制个人的勋章隐私设置。';
 $string['badgeprivacysetting_str'] = '自动在我的个人档案页面上展示我获得的勋章';
@@ -188,7 +189,7 @@ $string['criteria_8_help'] = '允许根据群组成员资格向用户授予勋�
 $string['criteria_9'] = '能力';
 $string['criteria_9_help'] = '允许根据用户完成的能力授予勋章。';
 $string['criteria_descr'] = '符合下列条件的用户可以获得此勋章：';
-$string['criteria_descr_0'] = '符合下列 <strong>{$a}</strong> 条件的用户可以获得此勋章。';
+$string['criteria_descr_0'] = '完成列出的要求中的 <strong>{$a}</strong>。';
 $string['criteria_descr_1'] = '<strong>{$a}</strong>已完成下列活动：';
 $string['criteria_descr_2'] = '此勋章必须由以下角色<strong>{$a}</strong>的用户授予:';
 $string['criteria_descr_4'] = '用户必须完成课程';
@@ -253,7 +254,6 @@ $string['delparamconfirm'] = '您确定要删除此参数？';
 $string['description'] = '描述';
 $string['disconnect'] = '断开连接';
 $string['donotaward'] = '目前，这个勋章不可用，所以它不能授予用户。如果您想授予此勋章，请将其状态设置为活跃。';
-$string['editsettings'] = '编辑设置';
 $string['enablebadges'] = '启用勋章';
 $string['endorsement'] = '签注';
 $string['error:backpackdatainvalid'] = '背包返回的数据无效。';
@@ -426,6 +426,7 @@ $string['oauth2issuer'] = 'OAuth 2 服务';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
+$string['othernavigation'] = '其他导航...';
 $string['overallcrit'] = '所选规则中的一个是完整的。';
 $string['potentialrecipients'] = '潜在的勋章获得者';
 $string['preferences'] = '勋章偏好';
@@ -463,10 +464,11 @@ $string['privacy:metadata:manualaward:datemet'] = '用户被授予勋章的日�
 $string['privacy:metadata:manualaward:issuerid'] = '被授予勋章的用户的ID';
 $string['privacy:metadata:manualaward:issuerrole'] = '被授予勋章的用户的角色';
 $string['privacy:metadata:manualaward:recipientid'] = '被手动授予勋章的用户的ID';
+$string['recipient'] = '徽章接受者';
 $string['recipientdetails'] = '获得者详情';
 $string['recipientidentificationproblem'] = '在现有用户中找不到此勋章的获得者。';
 $string['recipients'] = '勋章获得者';
-$string['recipientvalidationproblem'] = '当前用户无法验证为此勋章的获得者。';
+$string['recipientvalidationproblem'] = '此用户无法验证为此徽章的接收者。';
 $string['relatedbages'] = '关联勋章';
 $string['relative'] = '相对日期';
 $string['requiredbadge'] = '至少应该向勋章规则中添加一个勋章。';
@@ -487,7 +489,6 @@ $string['sitebackpack'] = '可用的外部背包';
 $string['sitebackpack_help'] = '用户可以从这个网站连接到的外部背包。请注意，在用户连接背包后更改此设置将要求每个用户进入背包设置页面，断开连接然后重新连接。';
 $string['sitebackpackdeleted'] = '网站背包已被删除。';
 $string['sitebackpacknotdeleted'] = '无法删除此背包，因为它当前是站点默认值。';
-$string['sitebackpackverify'] = '背包连接';
 $string['sitebackpackwarning'] = '无法连接到背包。<br/><br/>检查“勋章发行者电子邮件地址”管理设置是否为背包网站账户的有效电子邮件。<br/><br/>在 <a href="{$a->url}">站点背包设置页面</a>检查 "勋章发行人密码", 背包网站上的账号密码是否正确.。<br/><br/>背包返回："{$a->warning}"';
 $string['sitebadges'] = '站点勋章';
 $string['sitebadges_help'] = '站点勋章只能授予站点级别相关活动的用户。包括完成一个课程组或者是完善一部分个人档案等。站点勋章也可以由一个用户手工颁发给别人。 课程相关活动的勋章则只能在课程级别创建。课程勋章可以在课程管理 >勋章中找到。';

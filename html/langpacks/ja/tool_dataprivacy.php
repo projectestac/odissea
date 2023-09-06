@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'ja', version '3.11'.
+ * Strings for component 'tool_dataprivacy', language 'ja', version '4.1'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -121,7 +121,7 @@ $string['deletedefaults'] = 'デフォルトを削除する: {$a}';
 $string['deletedefaultsconfirmation'] = '本当に {$a} モジュールのデフォルトカテゴリおよび目的を削除してもよろしいですか?';
 $string['deleteexistingdeleteduserstask'] = '既存の削除済みユーザのデータ削除リクエストを作成する';
 $string['deleteexpiredcontextstask'] = '有効期限切れコンテクストを削除する';
-$string['deleteexpireddatarequeststask'] = '有効期限切れのデータリクエストエクスポートファイルを削除します。';
+$string['deleteexpireddatarequeststask'] = '有効期限切れデータリクエストエクスポートファイルを削除する';
 $string['deletemyaccount'] = '私のアカウントを削除する';
 $string['deletepurpose'] = '目的を削除する';
 $string['deletepurposetext'] = '本当に目的「 {$a} 」を削除してもよろしいですか?';
@@ -171,7 +171,7 @@ $string['explanationtitle'] = 'このページで使用されているアイコ�
 $string['external'] = '追加';
 $string['externalexplanation'] = 'このサイトにインストールされている追加プラグインです。';
 $string['filteroption'] = '{$a->category}: {$a->name}';
-$string['frontpagecourse'] = 'フロントページコース';
+$string['frontpagecourse'] = 'サイトホームコース';
 $string['gdpr_art_6_1_a_description'] = 'データ主体は1つまたはそれ以上の目的で彼または彼女の個人データを処理することに同意しています。';
 $string['gdpr_art_6_1_a_name'] = '同意 (GDPR Art. 6.1(a))';
 $string['gdpr_art_6_1_b_description'] = 'データ主体が関係する契約を履行する場合、または契約前のデータのリクエストの対策を講じる場合に処理が必要です。';
@@ -244,6 +244,8 @@ $string['pluginregistrytitle'] = 'プラグインプライバシー準拠レジ�
 $string['privacy'] = 'プライバシー';
 $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = 'データリクエストページに現在適用されているフィルタです。';
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = 'ユーザが1ページ内で閲覧したいデータリクエスト数です。';
+$string['privacy:metadata:purpose'] = 'このサイトのために作成されたデータ利用目的情報です。';
+$string['privacy:metadata:purpose:usermodified'] = '目的を修正したユーザのIDです。';
 $string['privacy:metadata:request'] = 'このサイトのために作成された個人データリクエスト (個人情報調査および削除リクエスト) の情報です。';
 $string['privacy:metadata:request:comments'] = 'リクエストに付随するすべてのユーザコメントです。';
 $string['privacy:metadata:request:dpocomment'] = 'リクエストに関してサイトのプライバシー責任者によって作成されたすべてのコメントです。';
@@ -287,7 +289,7 @@ $string['requesttypedelete'] = '私の個人データすべてを削除する';
 $string['requesttypedeleteshort'] = '削除';
 $string['requesttypeexport'] = '私の個人データすべてをエクスポートする';
 $string['requesttypeexportshort'] = 'エクスポート';
-$string['requesttypeothers'] = '一般の問い合わせ';
+$string['requesttypeothers'] = '一般的な問い合わせ';
 $string['requesttypeothersshort'] = 'メッセージ';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';
 $string['requireallenddatesforuserdeletion'] = '終了日のないコースをアクティブとみなす';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'el', version '3.11'.
+ * Strings for component 'search', language 'el', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -97,7 +97,7 @@ $string['normalsearch'] = 'Κανονική έρευνα';
 $string['notitle'] = 'Χωρίς τίτλο';
 $string['openedon'] = 'ανοίχτηκε στις';
 $string['optimize'] = 'Βελτιστοποίηση';
-$string['order'] = 'Ταξινόμηση αποτελεσμάτων';
+$string['order'] = 'Σειρά αποτελεσμάτων';
 $string['order_location'] = 'Προτεραιότητα στα αποτελέσματα που σχετίζονται με «{$a}»';
 $string['order_relevance'] = 'Τα πιο σχετικά αποτελέσματα πρώτα';
 $string['priority'] = 'Προτεραιότητα';
@@ -119,7 +119,7 @@ $string['search:customfield'] = 'Προσαρμοσμένα πεδία μαθή�
 $string['search:message_received'] = 'Μηνύματα - ληφθέντα';
 $string['search:message_sent'] = 'Μηνύματα - απεσταλμένα';
 $string['search:mycourse'] = 'Τα μαθήματά μου';
-$string['search:section'] = 'Τμήματα μαθήματος';
+$string['search:section'] = 'Ενότητες μαθήματος';
 $string['search:user'] = 'Χρήστες';
 $string['searcharea'] = 'Περιοχή αναζήτησης';
 $string['searchareacategories'] = 'Κατηγορίες περιοχών αναζήτησης';

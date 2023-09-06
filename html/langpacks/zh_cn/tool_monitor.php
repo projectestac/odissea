@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'zh_cn', version '3.11'.
+ * Strings for component 'tool_monitor', language 'zh_cn', version '4.1'.
  *
  * @package     tool_monitor
  * @category    string
@@ -71,6 +71,7 @@ $string['messagetemplate_help'] = '一旦达到发出通知的门槛，将会寄
 * 规则名称 {rulename}<br />
 * 说明 {description}<br />
 * 事件 {eventname}';
+$string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = '实例';
 $string['monitor:managerules'] = '管理事件监看规则';
 $string['monitor:managetool'] = '启用/关闭事件监看';

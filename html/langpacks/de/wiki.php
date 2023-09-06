@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'de', version '3.11'.
+ * Strings for component 'wiki', language 'de', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -106,6 +106,7 @@ $string['formatcreole'] = 'Creole-Format';
 $string['formatcreole_help'] = 'Creole ist eine Markup-Sprache für Wikis mit einer Werkzeugleiste zum Einfügen der entsprechenden Formatierungszeichen.
 
 Um eine neue Seite zu erstellen, geben Sie den neuen Seitennamen in doppelte Eckige Klammern ein, z.B. [[Neue Seite]].';
+$string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'HTML-Format';
 $string['formathtml_help'] = 'Der HTML-Editor kann benutzt werden, um Texte im Wiki zu formatieren.
 
@@ -114,6 +115,7 @@ $string['formatnwiki'] = 'NWiki-Format';
 $string['formatnwiki_help'] = 'NWiki ist eine dem MediaWiki ähnliche Markup-Sprache, um Texte im Wiki zu formatieren.
 
 Um eine neue Seite zu anzulegen, geben Sie den Namen der neuen Seite in doppelte eckige Klammern ein, z.B. [[Neue Seite]].';
+$string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Verlauf';
 $string['history_help'] = 'Der Link \'Verlauf\' führt zu älteren Versionen der Seite';
 $string['html'] = 'HTML';
@@ -125,10 +127,12 @@ $string['indicator:cognitivedepth'] = 'Wiki kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Wiki-Aktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Wiki kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Wiki-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Wiki sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Wiki-Aktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Wiki sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Wiki-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = 'Wikiseite existiert nicht';
 $string['insertcomment'] = 'Kommentar einfügen';
 $string['insertimage'] = 'Bild einfügen...';
@@ -161,6 +165,7 @@ Eine Wiki-Aktivität kann verwendet werden
 * Um Teilnehmer/innen gemeinsam ein Online-Buch verfassen und Inhalte zu einem von ihrem Tutor festgelegten Thema erstellen lassen
 * Für das gemeinsame Erzählen von Geschichten oder das Verfassen von Gedichten, wobei jede/r Teilnehmer/in eine Zeile oder einen Vers schreibt
 * Als persönliches Tagebuch für Prüfungsnotizen oder für das Überarbeiten (unter Verwendung eines individuellen Wikis)';
+$string['modulename_link'] = 'mod/wiki/view';
 $string['modulenameplural'] = 'Wikis';
 $string['navigation'] = 'Navigation';
 $string['navigationfrom'] = 'Diese Seite kommt von';

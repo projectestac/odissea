@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'nl', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'nl', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -63,6 +63,7 @@ $string['pleaseselectananswer'] = 'Kies een antwoord';
 $string['pleaseselectatleastoneanswer'] = 'Kies minstens één antwoord';
 $string['pluginname'] = 'Meerkeuze';
 $string['pluginname_help'] = 'Als antwoord op een vraag (waarin een afbeelding kan staan), kiest de respondent uit meerdere antwoorden. Een meerkeuzevraag kan één of meerdere juiste antwoorden hebben.';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = 'Een meerkeuzevraag toevoegen';
 $string['pluginnameediting'] = 'Meerkeuzevraag bewerken';
 $string['pluginnamesummary'] = 'Laat de keuze van één of meerdere antwoorden toe uit een vooraf opgestelde lijst.';
@@ -70,13 +71,15 @@ $string['privacy:metadata'] = 'De meerkeuzevraagtype-plugin  laat vraag-auteurs 
 $string['privacy:preference:answernumbering'] = 'Welke nummeringsstijl gebruikt moet worden (\'1., 2., 3., ...\', \'a., b., c., ...\' enz.)';
 $string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een bepaalde vraag.';
 $string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
-$string['privacy:preference:showstandardinstruction'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
+$string['privacy:preference:showstandardinstruction'] = 'Of stantdaardinstructies getoond worden.';
 $string['privacy:preference:shuffleanswers'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
 $string['privacy:preference:single'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
+$string['regradeissuenumchoiceschanged'] = 'Het aantal keuzes in de vraag is gewijzigd.';
 $string['selectmulti'] = 'Kies één of meer:';
 $string['selectone'] = 'Kies één:';
 $string['showstandardinstruction'] = 'Toon standaardinstructies';
-$string['showstandardinstruction_help'] = 'Of de instructies "Kies één:" of "Kies één of meer" getoond worden voor meerkeuze antwoorden.';
+$string['showstandardinstruction_desc'] = 'Of de instructies "Kies één:" of "Kies één of meer:" moeten getoond worden voor meerkeuzevragen.';
+$string['showstandardinstruction_help'] = 'Of de instructies "Kies één:" of "Kies één of meer" getoond worden voor meerkeuze antwoorden. Je kunt de instructies ook in de vraagtekst opnemen indien nodig.';
 $string['shuffleanswers'] = 'Antwoorden in willekeurige volgorde?';
 $string['shuffleanswers_desc'] = 'Moeten opties standaard door elkaar geschud worden voor elke poging?';
 $string['shuffleanswers_help'] = 'Indien ingeschakeld wordt de volgorde van de antwoorden voor elke poging door elkaar gehaald, toch indien "Door elkaar halen binnen vragen" ook is ingesteld op het niveau van de activiteit.';

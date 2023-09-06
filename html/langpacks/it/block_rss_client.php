@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'it', version '3.11'.
+ * Strings for component 'block_rss_client', language 'it', version '4.1'.
  *
  * @package     block_rss_client
  * @category    string
@@ -47,13 +47,7 @@ $string['editfeeds'] = 'Modifica, sottoscrivi o revoca l\'iscrizione al feed new
 $string['editnewsfeeds'] = 'Modifica feed di news';
 $string['editrssblock'] = 'Modifica titolo blocco RSS';
 $string['enableautodiscovery'] = 'Abilita l\'individuazione automatica dei feed';
-$string['enableautodiscovery_help'] = '<p>
-L\'opzione consente a Moodle di individuare automaticamente un feed senza doverne specificare il link completo.
-</p>
-<p>Ad esempio, utilizzando l\'URL di Moodle Docs: <pre>http://docs.moodle.org</pre>
-Moodle individuerà automaticamente il feed da usare:
-<pre>http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss</pre>
-</p>';
+$string['enableautodiscovery_help'] = 'Consente di trovare automaticamentei feed delle pagine Web . Ad esempio, se si inserisce https://docs.moodle.org, verrà trovato https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss.';
 $string['failedfeed'] = 'Non è stato possibile scaricare il feed. Verrà effettuato un nuovo tentativo dopo {$a}';
 $string['failedfeeds'] = 'Non è stato possibile scaricare uno o più feed RSS.';
 $string['feed'] = 'Feed';

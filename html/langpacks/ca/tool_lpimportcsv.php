@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'ca', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'ca', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -34,6 +34,7 @@ $string['exportnavlink'] = 'Exporta el marc de competències';
 $string['import'] = 'Importa';
 $string['importfile'] = 'Fitxer CSV de descripció del marc';
 $string['importfile_help'] = 'Es pot importar un marc de competències mitjançant un fitxer de text. El format del fitxer es pot determinar creant un marc de competències nou al lloc i després exportant-lo.';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['noframeworks'] = 'Encara no s\'ha creat cap marc de competències';
 $string['pluginname'] = 'Importa el marc de competències';
 $string['ruleoutcome'] = 'Regla de resultat (opcional)';

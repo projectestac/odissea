@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'eu', version '3.11'.
+ * Strings for component 'atto_h5p', language 'eu', version '4.1'.
  *
  * @package     atto_h5p
  * @category    string
@@ -28,18 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['browserepositories'] = 'Arakatu biltegiak...';
 $string['copyrightbutton'] = 'Copyright botoia';
 $string['downloadbutton'] = 'Baimendu deskarga';
-$string['either'] = '';
 $string['embedbutton'] = 'Enbotatu botoia';
-$string['enterurl'] = 'URLa edo enbotatzeko kodea';
 $string['h5p:addembed'] = 'Gehitu enbotatutako H5Pa';
 $string['h5pfile'] = 'Igo H5P fitxategia';
 $string['h5pfileorurl'] = 'H5P URL edo fitxategi-igoera';
 $string['h5poptions'] = 'H5P aukerak';
-$string['h5pproperties'] = 'H5P ezarpenak';
 $string['h5purl'] = 'H5P URLa';
 $string['instructions'] = 'H5P edukia txertatu dezakezu URLa idatzita <strong>edo</strong> H5P fitxategi bat igota.';
 $string['invalidh5purl'] = 'URL baliogabea';
 $string['noh5pcontent'] = 'Ez da H5P edukirik gehitu';
-$string['or'] = 'edo';
 $string['pluginname'] = 'Txertatu H5P edukia';
 $string['privacy:metadata'] = 'Txertatu H5P edukia pluginak ez du inolako datu pertsonalik biltzen.';

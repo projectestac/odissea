@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'zh_cn', version '3.11'.
+ * Strings for component 'course', language 'zh_cn', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -49,6 +49,8 @@ $string['aria:favourite'] = '课程已标星';
 $string['aria:favouritestab'] = '标星的活动';
 $string['aria:modulefavourite'] = '标星{$a}活动';
 $string['aria:recommendedtab'] = '推荐的活动';
+$string['browsecourseadminindex'] = '使用此索引浏览课程管理。';
+$string['browsesettingindex'] = '使用此索引浏览课程管理。';
 $string['completion_automatic:done'] = '完成:';
 $string['completion_automatic:failed'] = '失败:';
 $string['completion_automatic:todo'] = '要做:';
@@ -62,6 +64,15 @@ $string['completion_setby:manual:done'] = '{$a->activityname}被 {$a->setby} 标
 $string['completion_setby:manual:markdone'] = '{$a->activityname}被{$a->setby}标记为未完成。点击以标记为完成。';
 $string['completionrequirements'] = '{$a}的完成要求';
 $string['coursealreadyfinished'] = '课程已经结束';
+$string['coursecontentnotification'] = '发送内容更改通知';
+$string['coursecontentnotification_help'] = '勾选此框以通知课程参与者新的或更改的活动或资源。 只有可以访问活动或资源的用户才会收到通知。';
+$string['coursecontentnotifnew'] = '{$a->coursename}新内容';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href=""{$a->link}"">{$a->modulename}</a>
+是课程中的新内容 <a href=""{$a->courselink}"">{$a->coursename}</a>.
+</p><p><a href=""{$a->notificationpreferenceslink}"">更改您的通知偏好</a></p>';
+$string['coursecontentnotifupdate'] = '{$a->coursename} 内容更改';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href=""{$a->link}"">{$a->modulename}</a>
+在课程中已更改 <a href=""{$a->courselink}"">{$a->coursename}</a>.</p><p><a href=""{$a->notificationpreferenceslink}"">更改您的通知偏好</a></p>';
 $string['coursenotyetfinished'] = '课程还没有结束';
 $string['coursenotyetstarted'] = '课程还没有开始';
 $string['coursetoolong'] = '课程太长了';
@@ -73,6 +84,10 @@ $string['customfield_visibility_help'] = '此设置确定谁可以在课程列�
 $string['customfield_visibletoall'] = '每个人';
 $string['customfield_visibletoteachers'] = '教师';
 $string['customfieldsettings'] = '普通课程自定义字段设置';
+$string['downloadcontent'] = '包含在课程内容下载中';
+$string['downloadcontent_help'] = '此活动或资源是否应包含在可供下载的课程内容的zip文件中？ 文件、文件夹、页面和标签可以完全下载。对于其他所有活动和资源，仅名称和描述可以下载。此选项需要在课程设置中启用下载课程内容。
+
+该设置对离线使用的移动应用内容下载没有影响。';
 $string['downloadcourseconfirmation'] = '您将要下载课程内容的zip文件（不包括无法下载的项目和任何大于{$a}的文件）。';
 $string['downloadcoursecontent'] = '下载课程内容';
 $string['downloadcoursecontent_help'] = '此设置确定具有下载课程内容权限的用户，是否可以下载课程内容（默认情况下，具有学生或教师角色的用户）';
@@ -89,6 +104,9 @@ $string['nocoursesections'] = '没有课程小节';
 $string['nocoursestudents'] = '没有学生';
 $string['norecentaccessesinfomessage'] = '{$a->userfirstname}，您好！<p>  {$a->coursename} 中的许多学生最近没有访问过该课程。</p>';
 $string['noteachinginfomessage'] = '{$a->userfirstname}，您好！<p>开始日期在下周的课程被确定为没有老师或学生加入。</p>';
+$string['participants:perpage'] = '每页的参与者数量';
+$string['participants:perpage_help'] = '在每门课程的参与人页面上显示的用户数量。';
+$string['participantsnavigation'] = '参加者三级导航。';
 $string['privacy:completionpath'] = '课程完成情况';
 $string['privacy:favouritespath'] = '课程标星的信息';
 $string['privacy:metadata:activityfavouritessummary'] = '此课程系统包含用户已为活动选择器中的哪些项目标星的信息。';

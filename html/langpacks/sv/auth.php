@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'sv', version '3.11'.
+ * Strings for component 'auth', language 'sv', version '4.1'.
  *
  * @package     auth
  * @category    string
@@ -38,7 +38,7 @@ $string['auth_changingemailaddress'] = 'Du har begärt en ändring av e-postadre
 $string['auth_common_settings'] = 'Generella inställningar';
 $string['auth_data_mapping'] = 'Datamappning';
 $string['auth_fieldlock'] = 'Lås värdet';
-$string['auth_fieldlock_expl'] = '<p><b>Lås värdet:</b> Om aktiverat förhindras Moodle-användare och administratörer från att redigera fältet direkt. Använd det här alternativet om du underhåller dessa data i det externa autentiseringssystemet. </p>';
+$string['auth_fieldlock_expl'] = '<p><strong>Lås värdet:</strong> Om aktiverat förhindras Moodle-användare och administratörer från att redigera fältet direkt. Använd det här alternativet om du underhåller dessa data i det externa autentiseringssystemet.</p>';
 $string['auth_fieldlockfield'] = 'Lås värdet ({$a})';
 $string['auth_fieldlocks'] = 'Lås användarfält';
 $string['auth_fieldlocks_help'] = 'Du kan låsa användarnas datafält. Detta är användbart för webbplatser där administratörerna underhåller användardata manuellt genom att redigera användarposter eller genom att använda komponenten "Ladda upp användare".  Om Du låser de fält som Moodle kräve ska Du säkerställa att Du fyller i dessa data när Du skapar användarkonton, annars kommer kontona att bli oanvändbara.
@@ -153,6 +153,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'CAPTCHA används för att förhindra missbruk av automatiserade program. Följ anvisningarna för att verifiera att du är en person. Det kan vara en ruta att markera, tecken som visas i en bild som du måste ange eller en uppsättning bilder att välja mellan.
 
 Om du inte är säker på vad bilderna föreställer kan du prova att få en annan CAPTCHA eller en ljud-CAPTCHA.';
+$string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Säkerhetsfråga';
 $string['selfregistration'] = 'Själv-registrering';
 $string['selfregistration_help'] = 'Om en pluginmodul för autentisering, till exempel e-postbaserad självregistrering, väljs, blir det möjligt för potentiella användare att registrera sig och skapa konton. Detta resulterar i möjligheten att spammare skapar konton för att använda foruminlägg, blogginlägg etc. för skräppost. För att undvika denna risk bör självregistrering inaktiveras eller begränsas via inställningen <em>Tillåtna e-postdomäner</em>.';

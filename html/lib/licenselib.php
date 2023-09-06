@@ -93,20 +93,10 @@ class license_manager {
     }
 
     /**
-     * Adding a new license type
-     *
      * @deprecated Since Moodle 3.9, MDL-45184.
-     * @todo MDL-67344 This will be deleted in Moodle 4.1.
-     * @see license_manager::save()
-     *
-     * @param object $license the license record to add.
-     *
-     * @return bool true on success.
      */
-    public function add($license) : bool {
-        debugging('add() is deprecated. Please use license_manager::save() instead.', DEBUG_DEVELOPER);
-
-        return self::save($license);
+    public function add() {
+        throw new coding_exception('license_manager::add() is deprecated. Please use license_manager::save() instead.');
     }
 
     /**
@@ -186,8 +176,9 @@ class license_manager {
 
         if (!empty($licensetodelete)) {
             if ($licensetodelete->custom == self::CUSTOM_LICENSE) {
-                // Check that the license is not in use by any files, if so it cannot be deleted.
-                $countfilesusinglicense = $DB->count_records('files', ['license' => $licenseshortname]);
+                // Check that the license is not in use by any non-draft files, if so it cannot be deleted.
+                $countfilesselect = 'license = :license AND NOT (component = \'user\' AND filearea = \'draft\')';
+                $countfilesusinglicense = $DB->count_records_select('files', $countfilesselect, ['license' => $licenseshortname]);
                 if ($countfilesusinglicense > 0) {
                     throw new moodle_exception('cannotdeletelicenseinuse', 'license');
                 }
@@ -323,7 +314,7 @@ class license_manager {
         global $CFG;
         // Site default license cannot be disabled!
         if ($license == $CFG->sitedefaultlicense) {
-            print_error('error');
+            throw new \moodle_exception('error');
         }
         if ($license = self::get_license_by_shortname($license)) {
             $license->enabled = self::LICENSE_DISABLED;

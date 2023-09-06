@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'fr', version '3.11'.
+ * Strings for component 'mnet', language 'fr', version '4.1'.
  *
  * @package     mnet
  * @category    string
@@ -90,7 +90,7 @@ $string['hideremote'] = 'Cacher les utilisateurs distants';
 $string['host'] = 'Serveur';
 $string['hostcoursenotfound'] = 'Le serveur ou le cours n\'a pas été trouvé';
 $string['hostdeleted'] = 'Serveur supprimé';
-$string['hostexists'] = 'Un enregistrement d\'un serveur de ce nom existe déjà (peut-être déjà supprimé). <a href="{$a}">Cliquer ici</a> pour modifier cet enregistrement.';
+$string['hostexists'] = 'Un enregistrement d\'un serveur de ce nom existe déjà (peut-être déjà supprimé). <a href="{$a}">Modifier cet enregistrement</a>';
 $string['hostlist'] = 'Liste des serveurs en réseau';
 $string['hostname'] = 'Nom d\'hôte';
 $string['hostnamehelp'] = 'Le nom de domaine complet (FQDN) du serveur distant, par exemple www.exemple.fr';
@@ -118,6 +118,7 @@ $string['is_in_range'] = 'L\'adresse IP <code>{$a}</code> représente un serveur
 $string['ispublished'] = '{$a} a activé ce service pour vous.';
 $string['issubscribed'] = '{$a} est abonné à ce service de votre serveur.';
 $string['keydeleted'] = 'Votre clef a été supprimée et remplacée.';
+$string['keydeletedcancelled'] = 'Aucune modification de la clef.';
 $string['keymismatch'] = 'La clef publique que vous détenez pour ce serveur est différente de la clef qu\'il publie actuellement. La clef publiée actuellement est :';
 $string['last_connect_time'] = 'Dernière connexion';
 $string['last_connect_time_help'] = 'La date de votre dernière connexion à ce serveur.';

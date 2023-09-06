@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'de', version '3.11'.
+ * Strings for component 'lesson', language 'de', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -53,7 +53,6 @@ $string['addedendofcluster'] = 'Ende des Clusters hinzugefügt';
 $string['addendofbranch'] = 'Ende des Asts hinzufügen';
 $string['addendofcluster'] = 'Ende des Clusters hinzufügen';
 $string['addessay'] = 'Seite mit Freitextfrage anlegen';
-$string['additionalattemptsremaining'] = 'Abgeschlossen. Sie können die Lektion erneut versuchen.';
 $string['addmatching'] = 'Seite mit Zuordnungsfrage anlegen';
 $string['addmultichoice'] = 'Seite mit Multiple-Choice-Frage anlegen';
 $string['addnewgroupoverride'] = 'Gruppenänderung hinzufügen';
@@ -177,6 +176,7 @@ $string['displayleftif'] = 'Inhaltsverzeichnis nur anzeigen, wenn die Bewertung 
 $string['displayleftif_help'] = 'Diese Option legt fest, ob eine bestimmte Bewertung erreicht sein muss, damit das Menü sichtbar ist. Dies zwingt Teilnehmer/innen, bei ihrem ersten Versuch durch die gesamte Lektion zu gehen. Erst mit dem Erreichen einer bestimmten Punktzahl kann das Menü benutzt werden, um  alle Lösungen nochmals zu kontrollieren.';
 $string['displayleftmenu'] = 'Inhaltsverzeichnis anzeigen';
 $string['displayleftmenu_help'] = 'Diese Option legt fest, ob ein Menü zur Navigation zwischen den Seiten angezeigt wird.';
+$string['displaymode'] = 'Modus anzeigen';
 $string['displayofgrade'] = 'Anzeige der Bewertungen (für Teilnehmer/innen)';
 $string['displayreview'] = 'Wiederholung bei falscher Antwort';
 $string['displayreview_help'] = 'Wenn diese Option aktiviert ist und eine Frage falsch beantwortet wird, haben Teilnehmer/innen die Möglichkeit, die Frage erneut ohne Punkte zu wiederholen oder weiter mit der Lektion fortzufahren. Wenn Teilnehmer/innen klicken, zu einer anderen Frage zu gehen, wird die bereits gewählte (falsche) Antwort berücksichtigt. Standardmäßig sind Sprünge bei falscher Antwort auf "diese Seite" gesetzt und haben eine Punktzahl 0. Daher wird empfohlen, den Sprung bei falscher Antwort auf eine andere Seite zu setzen, um Konfusion bei den Teilnehmer/innen zu vermeiden.';
@@ -191,7 +191,9 @@ $string['editcluster'] = 'Cluster bearbeiten';
 $string['editendofbranch'] = 'Seite mit Astende bearbeiten';
 $string['editendofcluster'] = 'Seite mit Clusterende bearbeiten';
 $string['editessay'] = 'Seite mit Freitextfrage bearbeiten';
+$string['editinglesson'] = 'Lektion bearbeiten';
 $string['editingquestionpage'] = 'Frageseite {$a} bearbeiten';
+$string['editlesson'] = 'Lektion bearbeiten';
 $string['editlessonsettings'] = 'Einstellungen für Lektion bearbeiten';
 $string['editmatching'] = 'Seite mit Zuordnungsfrage bearbeiten';
 $string['editmultichoice'] = 'Seite mit Multiple-Choice-Frage bearbeiten';
@@ -203,9 +205,9 @@ $string['editquestion'] = 'Seite mit Frage bearbeiten';
 $string['editshortanswer'] = 'Seite mit Kurzantwortfrage bearbeiten';
 $string['edittruefalse'] = 'Seite mit Wahr/Falsch-Frage beantworten';
 $string['email'] = 'E-Mail';
-$string['emailallgradedessays'] = 'E-Mail an alle versenden, deren Freitexte bewertet wurden';
-$string['emailgradedessays'] = 'E-Mail mit Freitext-Bewertung versenden';
-$string['emailsuccess'] = 'E-Mails erfolgreich gesendet';
+$string['emailallgradedessays'] = 'Benachrichtigungen zur Freitext-Bewertung versenden';
+$string['emailgradedessays'] = 'Benachrichtigungen zur Freitext-Bewertung versenden';
+$string['emailsuccess'] = 'Benachrichtigungen erfolgreich gesendet';
 $string['emptypassword'] = 'Das Kennwort darf nicht leer sein.';
 $string['enabled'] = 'Aktiviert';
 $string['endofbranch'] = 'Ende des Zweigs';
@@ -283,10 +285,12 @@ $string['indicator:cognitivedepth'] = 'Lektion kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die ein/e Teilnehmer/in in einer Lektionsaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Lektion kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Lektionsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen, Feedback kommentieren, Beiträge nach Feedback überarbeiten).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Lektion sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Lektionsaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Lektion sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Lektionsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insertedpage'] = 'Seite eingefügt';
 $string['invalidfile'] = 'Ungültige Datei';
 $string['invalidid'] = 'Keine Kursmodul-ID oder Lektions-ID angegeben';
@@ -307,14 +311,13 @@ $string['lesson:manage'] = 'Lektion verwalten';
 $string['lesson:manageoverrides'] = 'Lektionsüberschreibungen verwalten';
 $string['lesson:view'] = 'Lektionsaktivität anzeigen';
 $string['lesson:viewreports'] = 'Lektionsbericht anzeigen';
+$string['lessonbeingpreviewed'] = 'Die Lektion befindet sich derzeit in der Vorschau.';
 $string['lessonclosed'] = 'Die Lektion war verfügbar bis {$a}';
 $string['lessoncloses'] = 'Verfügbarkeit der Lektion endet';
-$string['lessoncloseson'] = 'Verfügbarkeit der Lektion endet: {$a}';
 $string['lessoneventcloses'] = '{$a} endet';
 $string['lessoneventopens'] = '{$a} beginnt';
 $string['lessonformating'] = 'Lektion wird formatiert';
 $string['lessonmenu'] = 'Inhaltsverzeichnis';
-$string['lessonname'] = 'Lektion: {$a}';
 $string['lessonnotready'] = 'Diese Lektion ist noch nicht verfügbar. Nehmen Sie bitte mit {$a} Kontakt auf.';
 $string['lessonnotready2'] = 'Diese Lektion kann noch nicht bearbeitet werden.';
 $string['lessonopen'] = 'Diese Lektion ist ab {$a} verfügbar.';
@@ -325,6 +328,7 @@ $string['linkedmedia'] = 'Verlinkte Medien';
 $string['loginfail'] = 'Der Login ist gescheitert. Versuchen Sie es bitte noch einmal.';
 $string['lowscore'] = 'Schlechteste Bewertung';
 $string['lowtime'] = 'Niedrigste Zeit';
+$string['manageoverrides'] = 'Überschreibungen verwalten';
 $string['manualgrading'] = 'Freitext-Bewertung';
 $string['matchesanswer'] = 'Zugeordnete Antwort';
 $string['matching'] = 'Zuordnung';
@@ -362,6 +366,7 @@ Eine Lektions-Aktivität kann verwendet werden
 * Zum selbstgesteuerten Lernen eines neuen Themas
 * Für Szenarien oder Simulationen/Entscheidungsübungen
 * Für differenzierte Repetitionen, mit verschiedenen Sätzen von Repetitionfragen, je nach den Antworten auf die ersten Fragen';
+$string['modulename_link'] = 'mod/lesson/view';
 $string['modulenameplural'] = 'Lektionen';
 $string['move'] = 'Seite verschieben';
 $string['movedpage'] = 'Seite verschoben';
@@ -396,6 +401,7 @@ $string['nooneenteredthis'] = 'Niemand hat dies eingegeben.';
 $string['noonehasanswered'] = 'Bisher wurden keine Freitextfragen beantwortet.';
 $string['noonehasansweredgroup'] = 'Bisher wurden in {$a} keine Freitextfragen beantwortet.';
 $string['noopen'] = 'Keine Anfangszeit';
+$string['nooverridecreated'] = 'Keine Lektionsüberschreibung angelegt.';
 $string['nooverridedata'] = 'Sie müssen mindestens eine Lektionseinstellung außer Kraft setzen.';
 $string['noretake'] = 'Sie können diese Lektion nicht wiederholen.';
 $string['normal'] = 'Dem Pfad der Lektion folgen';
@@ -556,6 +562,7 @@ $string['search:activity'] = 'Lektion - Aktivitätsinfo';
 $string['secondpluswrong'] = 'Nicht ganz. Möchten Sie es noch einmal versuchen?';
 $string['selectallattempts'] = 'Alle Versuche auswählen';
 $string['selectaqtype'] = 'Fragetyp auswählen';
+$string['selectreport'] = 'Bericht auswählen';
 $string['sent'] = 'Gesendet';
 $string['shortanswer'] = 'Kurzantwort';
 $string['showanunansweredpage'] = 'Noch nicht beantwortete Seite anzeigen';
@@ -618,7 +625,6 @@ $string['withselectedattempts'] = 'Mit den ausgewählten Versuchen ...';
 $string['wronganswerjump'] = 'Sprung bei falscher Antwort';
 $string['wronganswerscore'] = 'Bewertung bei falscher Antwort';
 $string['wrongresponse'] = 'Feedback bei falscher Antwort';
-$string['xattempts'] = '{$a} Versuche';
 $string['youhaveseen'] = 'Sie haben einige Seiten der Lektion schon einmal bearbeitet. <br />Möchten Sie an der Stelle weitermachen, an der Sie damals aufgehört haben?';
 $string['youranswer'] = 'Ihre Antwort';
 $string['yourcurrentgradeis'] = 'Derzeitige Bewertung: {$a}';

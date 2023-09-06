@@ -21,10 +21,25 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since      3.0
  */
-define(
-    ['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification', 'core/loadingicon', 'core/aria'],
-function($, log, str, templates, notification, LoadingIcon, Aria) {
-
+define([
+    'jquery',
+    'core/log',
+    'core/str',
+    'core/templates',
+    'core/notification',
+    'core/loadingicon',
+    'core/aria',
+    'core_form/changechecker',
+], function(
+    $,
+    log,
+    str,
+    templates,
+    notification,
+    LoadingIcon,
+    Aria,
+    FormChangeChecker
+) {
     // Private functions and variables.
     /** @var {Object} KEYS - List of keycode constants. */
     var KEYS = {
@@ -203,9 +218,7 @@ function($, log, str, templates, notification, LoadingIcon, Aria) {
      * @param {jQuery} originalSelect The jQuery object matching the hidden select list.
      */
     var notifyChange = function(originalSelect) {
-        if (typeof M.core_formchangechecker !== 'undefined') {
-            M.core_formchangechecker.set_form_changed();
-        }
+        FormChangeChecker.markFormChangedFromNode(originalSelect[0]);
 
         // Note, jQuery .change() was not working here. Better to
         // use plain JavaScript anyway.
@@ -225,6 +238,9 @@ function($, log, str, templates, notification, LoadingIcon, Aria) {
      */
     var deselectItem = function(options, state, item, originalSelect) {
         var selectedItemValue = $(item).attr('data-value');
+
+        // Preprend an empty option to the select list to avoid having a default selected option.
+        originalSelect.prepend($('<option>'));
 
         // Look for a match, and toggle the selected property if there is a match.
         originalSelect.children('option').each(function(index, ele) {
@@ -642,10 +658,7 @@ function($, log, str, templates, notification, LoadingIcon, Aria) {
             var processedResults = ajaxHandler.processResults(options.selector, results);
             var existingValues = [];
 
-            // Now destroy all options that are not currently selected.
-            if (!options.multiple) {
-                originalSelect.children('option').remove();
-            }
+            // Now destroy all options that are not current
             originalSelect.children('option').each(function(optionIndex, option) {
                 option = $(option);
                 if (!option.prop('selected')) {

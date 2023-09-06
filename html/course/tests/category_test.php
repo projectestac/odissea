@@ -328,7 +328,7 @@ class category_test extends \advanced_testcase {
         //   $course4
         // structure.
 
-        // Note that we also have default 'Miscellaneous' category and default 'site' course.
+        // Note that we also have default course category and default 'site' course.
         $this->assertEquals(1, $DB->get_field_sql('SELECT count(*) FROM {course_categories} WHERE id > ?', array($initialcatid)));
         $this->assertEquals($category1->id, $DB->get_field_sql('SELECT max(id) FROM {course_categories}'));
         $this->assertEquals(1, $DB->get_field_sql('SELECT count(*) FROM {course} WHERE id <> ?', array(SITEID)));
@@ -904,7 +904,7 @@ class category_test extends \advanced_testcase {
 
         // Reset default settings.
         $CFG->courseoverviewfileslimit = 1;
-        $CFG->courseoverviewfilesext = '.jpg,.gif,.png';
+        $CFG->courseoverviewfilesext = 'web_image';
 
         $courses = $cat1->get_courses();
         $this->assertTrue($courses[$c1->id]->has_course_overviewfiles());
@@ -1099,5 +1099,292 @@ class category_test extends \advanced_testcase {
         $courses = $coursecategory->get_courses();
         $this->assertCount(1, $courses);
         $this->assertArrayHasKey($othercourse->id, $courses);
+    }
+
+    /**
+     * Test get_nearest_editable_subcategory() method.
+     *
+     * @covers \core_course_category::get_nearest_editable_subcategory
+     */
+    public function test_get_nearest_editable_subcategory(): void {
+        global $DB;
+
+        $coursecreatorrole = $DB->get_record('role', ['shortname' => 'coursecreator']);
+        $managerrole = $DB->get_record('role', ['shortname' => 'manager']);
+
+        // Create categories.
+        $category1 = core_course_category::create(['name' => 'Cat1']);
+        $category2 = core_course_category::create(['name' => 'Cat2']);
+        $category3 = core_course_category::create(['name' => 'Cat3']);
+        // Get the category contexts.
+        $category1context = $category1->get_context();
+        $category2context = $category2->get_context();
+        $category3context = $category3->get_context();
+        // Create user.
+        $user1 = $this->getDataGenerator()->create_user();
+        $user2 = $this->getDataGenerator()->create_user();
+        $user3 = $this->getDataGenerator()->create_user();
+        // Assign the user1 to 'Course creator' role for Cat1.
+        role_assign($coursecreatorrole->id, $user1->id, $category1context->id);
+        // Assign the user2 to 'Manager' role for Cat3.
+        role_assign($managerrole->id, $user2->id, $category3context->id);
+
+        // Start scenario 1.
+        // user3 has no permission to create course or manage category.
+        $this->setUser($user3);
+        $coursecat = core_course_category::user_top();
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['create']));
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/course:create']));
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['manage']));
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/category:manage']));
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['create', 'manage']));
+        // End scenario 1.
+
+        // Start scenario 2.
+        // user1 has permission to create course but has no permission to manage category.
+        $this->setUser($user1);
+        $coursecat = core_course_category::user_top();
+        $this->assertNotEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['create']));
+        $this->assertNotEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/course:create']));
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['manage']));
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/category:manage']));
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['create', 'manage']));
+        // The get_nearest_editable_subcategory should return Cat1.
+        $this->assertEquals($category1->id, core_course_category::get_nearest_editable_subcategory($coursecat, ['create'])->id);
+        $this->assertEquals($category1->id,
+            core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/course:create'])->id);
+        // Assign the user1 to 'Course creator' role for Cat2.
+        role_assign($coursecreatorrole->id, $user1->id, $category2context->id);
+        // The get_nearest_editable_subcategory should still return Cat1 (First creatable subcategory) for create course capability.
+        $this->assertEquals($category1->id, core_course_category::get_nearest_editable_subcategory($coursecat, ['create'])->id);
+        $this->assertEquals($category1->id,
+            core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/course:create'])->id);
+        // End scenario 2.
+
+        // Start scenario 3.
+        // user2 has no permission to create course but has permission to manage category.
+        $this->setUser($user2);
+        // Remove the moodle/course:create capability for the manager role.
+        unassign_capability('moodle/course:create', $managerrole->id);
+        $coursecat = core_course_category::user_top();
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['create']));
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/course:create']));
+        $this->assertNotEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['manage']));
+        $this->assertNotEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/category:manage']));
+        $this->assertEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['create', 'manage']));
+        // The get_nearest_editable_subcategory should return Cat3.
+        $this->assertEquals($category3->id, core_course_category::get_nearest_editable_subcategory($coursecat, ['manage'])->id);
+        $this->assertEquals($category3->id,
+            core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/category:manage'])->id);
+        // End scenario 3.
+
+        // Start scenario 4.
+        // user2 has both permission to create course and manage category.
+        // Add the moodle/course:create capability back again for the manager role.
+        assign_capability('moodle/course:create', CAP_ALLOW, $managerrole->id, $category3context->id);
+        $this->setUser($user2);
+        $coursecat = core_course_category::user_top();
+        $this->assertNotEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['create']));
+        $this->assertNotEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/course:create']));
+        $this->assertNotEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['manage']));
+        $this->assertNotEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['moodle/category:manage']));
+        $this->assertNotEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, ['create', 'manage']));
+        // The get_nearest_editable_subcategory should return Cat3.
+        $this->assertEquals($category3->id,
+            core_course_category::get_nearest_editable_subcategory($coursecat, ['create', 'manage'])->id);
+        $this->assertEquals($category3->id, core_course_category::get_nearest_editable_subcategory($coursecat,
+            ['moodle/course:create', 'moodle/category:manage'])->id);
+        // End scenario 4.
+
+        // Start scenario 5.
+        // Exception will be thrown if $permissionstocheck is empty.
+        $this->setUser($user1);
+        $coursecat = core_course_category::user_top();
+        $this->expectException('coding_exception');
+        $this->expectExceptionMessage('Invalid permissionstocheck parameter');
+        $this->assertNotEmpty(core_course_category::get_nearest_editable_subcategory($coursecat, []));
+        // End scenario 5.
+    }
+
+    /**
+     * Test get_nearest_editable_subcategory() method with hidden categories.
+     *
+     * @param int $visible  Whether the category is visible or not.
+     * @param bool $child   Whether the category is child of main category or not.
+     * @param string $role  The role the user must have.
+     * @param array $permissions An array of permissions we must check.
+     * @param bool $result Whether the result should be the category or null.
+     *
+     * @dataProvider get_nearest_editable_subcategory_provider
+     * @covers \core_course_category::get_nearest_editable_subcategory
+     */
+    public function test_get_nearest_editable_subcategory_with_hidden_categories(
+        int $visible = 0,
+        bool $child = false,
+        string $role = 'manager',
+        array $permissions = [],
+        bool $result = false
+    ): void {
+        global $DB;
+
+        $userrole = $DB->get_record('role', ['shortname' => $role]);
+        $maincat = core_course_category::create(['name' => 'Main cat']);
+
+        $catparams = new \stdClass();
+        $catparams->name = 'Test category';
+        $catparams->visible = $visible;
+        if ($child) {
+            $catparams->parent = $maincat->id;
+        }
+        $category = core_course_category::create($catparams);
+        $catcontext = $category->get_context();
+        $user = $this->getDataGenerator()->create_user();
+        role_assign($userrole->id, $user->id, $catcontext->id);
+        $this->setUser($user);
+
+        $nearestcat = core_course_category::get_nearest_editable_subcategory(core_course_category::user_top(), $permissions);
+
+        if ($result) {
+            $this->assertEquals($category->id, $nearestcat->id);
+        } else {
+            $this->assertEmpty($nearestcat);
+        }
+    }
+
+    /**
+     * Data provider for test_get_nearest_editable_subcategory_with_hidden_categories().
+     *
+     * @return array
+     */
+    public function get_nearest_editable_subcategory_provider(): array {
+        return [
+            'Hidden main category for manager. Checking create and manage' => [
+                0,
+                false,
+                'manager',
+                ['create', 'manage'],
+                true,
+            ],
+            'Hidden main category for course creator. Checking create and manage' => [
+                0,
+                false,
+                'coursecreator',
+                ['create', 'manage'],
+                false,
+            ],
+            'Hidden main category for student. Checking create and manage' => [
+                0,
+                false,
+                'student',
+                ['create', 'manage'],
+                false,
+            ],
+            'Hidden main category for manager. Checking create' => [
+                0,
+                false,
+                'manager',
+                ['create'],
+                true,
+            ],
+            'Hidden main category for course creator. Checking create' => [
+                0,
+                false,
+                'coursecreator',
+                ['create'],
+                true,
+            ],
+            'Hidden main category for student. Checking create' => [
+                0,
+                false,
+                'student',
+                ['create'],
+                false,
+            ],
+            'Hidden subcategory for manager. Checking create and manage' => [
+                0,
+                true,
+                'manager',
+                ['create', 'manage'],
+                true,
+            ],
+            'Hidden subcategory for course creator. Checking create and manage' => [
+                0,
+                true,
+                'coursecreator',
+                ['create', 'manage'],
+                false,
+            ],
+            'Hidden subcategory for student. Checking create and manage' => [
+                0,
+                true,
+                'student',
+                ['create', 'manage'],
+                false,
+            ],
+            'Hidden subcategory for manager. Checking create' => [
+                0,
+                true,
+                'manager',
+                ['create'],
+                true,
+            ],
+            'Hidden subcategory for course creator. Checking create' => [
+                0,
+                true,
+                'coursecreator',
+                ['create'],
+                true,
+            ],
+            'Hidden subcategory for student. Checking create' => [
+                0,
+                true,
+                'student',
+                ['create'],
+                false,
+            ],
+        ];
+    }
+
+    /**
+     * This test ensures that the filter context list is populated by the correct filter contexts from make_category_list.
+     *
+     * @coversNothing
+     */
+    public function test_make_category_list_context() {
+        global $DB;
+        // Ensure that the category list is empty.
+        $DB->delete_records('course_categories');
+        set_config('perfdebug', 15);
+
+        // Create a few categories to populate the context cache.
+        $this->getDataGenerator()->create_category(['name' => 'cat1']);
+        $this->getDataGenerator()->create_category(['name' => 'cat2']);
+        $this->getDataGenerator()->create_category(['name' => 'cat3']);
+        $filtermanager = \filter_manager::instance();
+
+        // Configure a filter to apply to all content and headings.
+        filter_set_global_state('multilang', TEXTFILTER_ON);
+        filter_set_applies_to_strings('multilang', true);
+
+        $perf = $filtermanager->get_performance_summary();
+        $this->assertEquals(0, $perf[0]['contextswithfilters']);
+
+        // Now fill the cache with the category strings.
+        \core_course_category::make_categories_list();
+        // 3 Categories + system context.
+        $perf = $filtermanager->get_performance_summary();
+        $this->assertEquals(3, $perf[0]['contextswithfilters']);
+        $filtermanager->reset_caches();
+        // We need to refresh the instance, resetting caches unloads the singleton.
+        $filtermanager = \filter_manager::instance();
+        \cache_helper::purge_by_definition('core', 'coursecat');
+
+        // Now flip the bit on the filter context.
+        set_config('filternavigationwithsystemcontext', 1);
+
+        // Repeat the check. Only context should be system context.
+        \core_course_category::make_categories_list();
+        $perf = $filtermanager->get_performance_summary();
+        $this->assertEquals(1, $perf[0]['contextswithfilters']);
     }
 }

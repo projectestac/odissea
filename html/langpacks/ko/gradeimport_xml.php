@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'ko', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'ko', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -33,6 +33,7 @@ $string['errincorrectidnumber'] = '오류- 틀린 식별번호';
 $string['errincorrectuseridnumber'] = '오류 - 가져오는 파일의 식별번호 \'{$a}\'가 어떤 사용자와도 일치하지 않음';
 $string['error'] = '오류 발생';
 $string['fileurl'] = '원격 파일 URL';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'XML 파일';
 $string['xml:publish'] = 'XML로 성적 가져오기 공개';
 $string['xml:view'] = 'XML로 성적 가져오기';

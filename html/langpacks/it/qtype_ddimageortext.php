@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'it', version '3.11'.
+ * Strings for component 'qtype_ddimageortext', language 'it', version '4.1'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -42,6 +42,8 @@ $string['dropbackground'] = 'Immagine di sfondo dove trascinare gli indicatori';
 $string['dropzone'] = 'Area di rilascio {$a}';
 $string['dropzoneheader'] = 'Area di rilascio';
 $string['formerror_disallowedtags'] = 'In questo testo trascinabile sono consentiti solo i tag "{$a}".';
+$string['formerror_dragrequired'] = 'È necessario aggiungere almeno un elemento trascinabile a questa domanda.';
+$string['formerror_droprequired'] = 'È necessario definire almeno una zona di rilascio a questa domanda.';
 $string['formerror_multipledraginstance'] = 'Hai selezionato l\'immagine {$a} più di una volta come scelta corretta per un\'area di rilascio ma non l\'hai indicata come trascinabile illimitatamente.';
 $string['formerror_multipledraginstance2'] = 'Hai selezionato questa immagine più di una volta come scelta corretta per un\'area di rilascio ma non l\'hai indicata come trascinabile illimitatamente.';
 $string['formerror_noallowedtags'] = 'Nel testo alternativo di un\'immagine trascinabile non sono consentiti tag HTML.';
@@ -59,6 +61,7 @@ $string['nolabel'] = 'Senza etichetta di testo';
 $string['pleasedraganimagetoeachdropregion'] = 'La risposta non è completa, per favore trascina e rilascia gli elementi nelle rispettive zone di rilascio.';
 $string['pluginname'] = 'Trascina e rilascia su un\'immagine';
 $string['pluginname_help'] = 'Seleziona un\'immagine di sfondo, seleziona le immagini da trascinare oppure inserisci del testo e definisci  sull\'immagine di sfondo le rispettive zone di rilascio.';
+$string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnameadding'] = 'Inserimento domanda Trascina e rilascia su un\'immagine';
 $string['pluginnameediting'] = 'Modifica domanda Trascina e rilascia su un\'immagine';
 $string['pluginnamesummary'] = 'Immagini e le etichette di testo vengono trascinate e rilasciate su aree definite su un\'immagine di sfondo.

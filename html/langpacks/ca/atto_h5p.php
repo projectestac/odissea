@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'ca', version '3.11'.
+ * Strings for component 'atto_h5p', language 'ca', version '4.1'.
  *
  * @package     atto_h5p
  * @category    string
@@ -26,20 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Navega pels repositoris...';
-$string['copyrightbutton'] = 'Botó de copyright';
+$string['copyrightbutton'] = 'Botó de drets d\'autor';
 $string['downloadbutton'] = 'Permet les baixades';
-$string['either'] = 'O';
 $string['embedbutton'] = 'Botó d\'incrustació';
-$string['enterurl'] = 'URL o codi d\'incrustació';
 $string['h5p:addembed'] = 'Afegiu contingut H5P incrustat';
 $string['h5pfile'] = 'Càrrega del fitxer H5P';
 $string['h5pfileorurl'] = 'URL de l\'H5P o càrrega del fitxer';
 $string['h5poptions'] = 'Opcions d\'H5P';
-$string['h5pproperties'] = 'propietats de l\'H5P';
 $string['h5purl'] = 'URL de l\'H5P';
-$string['instructions'] = 'Podeu inserir contingut H5P <strong>o</strong> introduint un URL <strong>o</strong> pujant un fitxer H5P.';
+$string['instructions'] = 'Podeu inserir contingut H5P <strong>o bé</strong> introduint un URL <strong>o bé</strong> penjant un fitxer H5P.';
 $string['invalidh5purl'] = 'L\'URL no és vàlid';
 $string['noh5pcontent'] = 'No s\'ha afegit cap contingut H5P';
-$string['or'] = 'o';
 $string['pluginname'] = 'Insereix H5P';
 $string['privacy:metadata'] = 'El connector atto_h5p no emmagatzema cap dada personal.';

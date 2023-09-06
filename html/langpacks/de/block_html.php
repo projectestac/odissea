@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'de', version '3.11'.
+ * Strings for component 'block_html', language 'de', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowadditionalcssclasses'] = 'Zusätzliche CSS-Klassen erlauben';
 $string['configallowadditionalcssclasses'] = 'Option hinzufügen, um für jeden Textblock eigene CSS-Klassen zu erlauben';
 $string['configclasses'] = 'Zusätzliche CSS-Klassen';
-$string['configclasses_help'] = 'Zweck dieser Option ist, mehrere Textblöcke durch eigene CSS-Festlegungen unterscheidbar zu machen. Alle hier eingegebenen CSS-Klassen (Leerzeichen getrennt) werden den Klassen hinzugefügt.';
+$string['configclasses_help'] = 'Zweck dieser Option ist, unterschiedliche Textblöcke durch jeweils eigene CSS-Festlegungen unterscheidbar zu machen. Alle hier eingegebenen CSS-Klassen (Leerzeichen getrennt) werden den Klassen hinzugefügt.';
 $string['configcontent'] = 'Inhalt';
 $string['configtitle'] = 'Titel für Textblock';
 $string['html:addinstance'] = 'Neuen Textblock hinzufügen';
-$string['html:myaddinstance'] = 'Neuen Textblock zum Dashboard hinzufügen';
+$string['html:myaddinstance'] = 'Neuen Textblock im Dashboard hinzufügen';
 $string['newhtmlblock'] = '(Textblock)';
 $string['pluginname'] = 'Textblock';
-$string['privacy:metadata:block'] = 'Der Textblock speichert alle seine Daten im Block-Subsystem von Moodle.';
+$string['privacy:metadata:block'] = 'Der Textblock speichert seine Daten im Block-Subsystem von Moodle.';
 $string['search:content'] = 'Inhalt des Textblocks';

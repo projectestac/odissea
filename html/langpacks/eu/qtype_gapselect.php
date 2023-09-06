@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'eu', version '3.11'.
+ * Strings for component 'qtype_gapselect', language 'eu', version '4.1'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -41,6 +41,7 @@ $string['group'] = 'Taldea';
 $string['pleaseputananswerineachbox'] = 'Mesedez, jarri erantzun bat kaxa bakoitzean.';
 $string['pluginname'] = 'Aukeratu falta diren hitzak';
 $string['pluginname_help'] = 'Aukeratu falta diren hitzak motako galderak eskatzen du erantzun zuzenak aukeratzea zabaltzen den menutik. Galderaren testuan [[1]], [[2]], [[3]], ... erabili behar dira gako gisa. Horiek hurrenez hurren 1, 2, 3,... bezala zehaztutako aukera zuzenekin bat etorri behar dute. Galdera zailago egiteko, erantzun posible gehiago gehi daitezke. Aukeren erantzunak taldeka daitezke zabaltzen den menu bakoitzean eskuragarri izango diren erantzunak mugatzeko.';
+$string['pluginname_link'] = 'question/type/gapselect';
 $string['pluginnameadding'] = 'Aukeratu falta diren hitzak motako galdera bat gehitzen';
 $string['pluginnameediting'] = 'Aukeratu falta diren hitzak motako galdera bat editatzen';
 $string['pluginnamesummary'] = 'Galderaren testuan falta diren hitzak zabaltzen diren menuetan betetzen dira.';
@@ -48,6 +49,8 @@ $string['privacy:metadata'] = 'Aukeratu falta diren hitzak galdera mota pluginak
 $string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
 $string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
 $string['privacy:preference:shuffleanswers'] = 'Erantzunak automatikoki nahastu behar diren edo ez.';
+$string['regradeissuenumchoiceschanged'] = '{$a} taldeko aukera kopurua aldatu da.';
+$string['regradeissuenumgroupsschanged'] = 'Aukera taldeen kopurua aldatu da.';
 $string['shuffle'] = 'Nahastu';
 $string['tagsnotallowed'] = '{$a->tag} ez dago baimenduta. ({$a->tag} soilik dago baimenduta.)';
 $string['tagsnotallowedatall'] = '{$a->tag} ez dago baimenduta. (Ezin da HTML kodea erabili hemen.)';

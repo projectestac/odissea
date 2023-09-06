@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'nl', version '3.11'.
+ * Strings for component 'tool_uploadcourse', language 'nl', version '4.1'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -39,7 +39,7 @@ $string['cannotreadbackupfile'] = 'Kan backupbestand niet lezen';
 $string['cannotrenamecoursenotexist'] = 'Kan onbestaande cursus niet hernoemen';
 $string['cannotrenameidnumberconflict'] = 'Kan cursus niet hernoemen: IDnummer conflict met bestaande cursus.';
 $string['cannotrenameshortnamealreadyinuse'] = 'Kan cursus niet hernoemen: korte naam al in gebruik.';
-$string['cannotupdatefrontpage'] = 'Wijzigen van de startpagina niet toegestaan';
+$string['cannotupdatefrontpage'] = 'Wijzigen van de site startpagina niet toegestaan';
 $string['canonlyrenameinupdatemode'] = 'Kan een cursus enkel hernoemen als aanpassen is toegestaan';
 $string['canonlyresetcourseinupdatemode'] = 'Kan een cursus enkel naar standaardinstellingen zetten als aanpassen toegestaan is.';
 $string['couldnotresolvecatgorybyid'] = 'Kon categorie niet vinden op ID';

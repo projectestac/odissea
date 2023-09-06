@@ -222,15 +222,6 @@ $tasks = array(
         'month' => '*'
     ),
     array(
-        'classname' => 'core\task\question_stats_cleanup_task',
-        'blocking' => 0,
-        'minute' => '*',
-        'hour' => '*',
-        'day' => '*',
-        'dayofweek' => '*',
-        'month' => '*'
-    ),
-    array(
         'classname' => 'core\task\registration_cron_task',
         'blocking' => 0,
         'minute' => 'R',
@@ -419,4 +410,22 @@ $tasks = array(
         'dayofweek' => '*',
         'month' => '*',
     ),
+    array(
+        'classname' => 'core_reportbuilder\task\send_schedules',
+        'blocking' => 0,
+        'minute' => '*',
+        'hour' => '*',
+        'day' => '*',
+        'month' => '*',
+        'dayofweek' => '*',
+    ),
+    [
+        'classname' => 'core\task\task_lock_cleanup_task',
+        'blocking' => 0,
+        'minute' => 'R',
+        'hour' => '0',
+        'day' => '*',
+        'dayofweek' => '*',
+        'month' => '*'
+    ]
 );

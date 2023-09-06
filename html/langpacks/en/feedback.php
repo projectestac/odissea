@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'en', version '3.11'.
+ * Strings for component 'feedback', language 'en', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -59,7 +59,7 @@ $string['completed_feedbacks'] = 'Submitted answers';
 $string['completedon'] = 'Completed on {$a}';
 $string['completiondetail:submit'] = 'Submit feedback';
 $string['completionsubmit'] = 'View as completed if the feedback is submitted';
-$string['configallowfullanonymous'] = 'If set to \'yes\', users can complete a feedback activity on the front page without being required to log in.';
+$string['configallowfullanonymous'] = 'If set to \'yes\', users can complete a feedback activity on the site home without being required to log in.';
 $string['confirmdeleteentry'] = 'Are you sure you want to delete this entry?';
 $string['confirmdeleteitem'] = 'Are you sure you want to delete this element?';
 $string['confirmdeletetemplate'] = 'Are you sure you want to delete this template?';
@@ -135,6 +135,7 @@ $string['feedback_is_not_open'] = 'The feedback is not open';
 $string['feedbackclose'] = 'Allow answers to';
 $string['feedbackcompleted'] = '{$a->username} completed {$a->feedbackname}';
 $string['feedbackopen'] = 'Allow answers from';
+$string['feedbackupdated'] = 'Feedback updated.';
 $string['file'] = 'File';
 $string['filter_by_course'] = 'Filter by course';
 $string['handling_error'] = 'Error occurred in feedback module action handling';
@@ -229,6 +230,7 @@ $string['pagebreak'] = 'Page break';
 $string['pluginadministration'] = 'Feedback administration';
 $string['pluginname'] = 'Feedback';
 $string['position'] = 'Position';
+$string['previewquestions'] = 'Preview questions';
 $string['previous_page'] = 'Previous page';
 $string['privacy:metadata:completed'] = 'A record of the submissions to the feedback';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Whether the submission is to be used anonymously.';
@@ -296,3 +298,4 @@ $string['use_one_line_for_each_value'] = 'Use one line for each answer!';
 $string['use_this_template'] = 'Use this template';
 $string['using_templates'] = 'Use a template';
 $string['vertical'] = 'Vertical';
+$string['whatfor'] = 'What do you want to do?';

@@ -37,13 +37,15 @@ $course = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST)
 
 require_login($course, false, $cm);
 if (isguestuser()) {
-    print_error('guestsarenotallowed');
+    throw new \moodle_exception('guestsarenotallowed');
 }
 
 $workshoprecord = $DB->get_record('workshop', array('id' => $cm->instance), '*', MUST_EXIST);
 $workshop = new workshop($workshoprecord, $cm, $course);
 
 $PAGE->set_url($workshop->submission_url(), array('cmid' => $cmid, 'id' => $id));
+
+$PAGE->set_secondary_active_tab("modulepage");
 
 if ($edit) {
     $PAGE->url->param('edit', $edit);
@@ -119,7 +121,7 @@ if ($submission->id and ($ownsubmission or $canviewall or $isreviewer)) {
 } elseif (is_null($submission->id) and $cansubmit) {
     // ok you can go
 } else {
-    print_error('nopermissions', 'error', $workshop->view_url(), 'view or create submission');
+    throw new \moodle_exception('nopermissions', 'error', $workshop->view_url(), 'view or create submission');
 }
 
 if ($submission->id) {
@@ -173,6 +175,10 @@ if (!$edit and ($canoverride or $canpublish)) {
 
 $PAGE->set_title($workshop->name);
 $PAGE->set_heading($course->fullname);
+$PAGE->activityheader->set_attrs([
+    'hidecompletion' => true,
+    'description' => ''
+]);
 if ($edit) {
     $PAGE->navbar->add(get_string('mysubmission', 'workshop'), $workshop->submission_url(), navigation_node::TYPE_CUSTOM);
     $PAGE->navbar->add(get_string('editingsubmission', 'workshop'));
@@ -185,7 +191,6 @@ if ($edit) {
 // Output starts here
 $output = $PAGE->get_renderer('mod_workshop');
 echo $output->header();
-echo $output->heading(format_string($workshop->name), 2);
 echo $output->heading(get_string('mysubmission', 'workshop'), 3);
 
 // show instructions for submitting as thay may contain some list of questions and we need to know them
@@ -247,19 +252,19 @@ if (!$delete) {
             $btnurl = new moodle_url($PAGE->url, array('edit' => 'on'));
             $btntxt = get_string('createsubmission', 'workshop');
         }
-        echo $output->single_button($btnurl, $btntxt, 'get');
+        echo $output->box($output->single_button($btnurl, $btntxt, 'get'), 'mr-1 inline');
     }
 
     // Display delete button.
     if ($submission->id and $deletable) {
         $url = new moodle_url($PAGE->url, array('delete' => 1));
-        echo $output->single_button($url, get_string('deletesubmission', 'workshop'), 'get');
+        echo $output->box($output->single_button($url, get_string('deletesubmission', 'workshop'), 'get'), 'mr-1 inline');
     }
 
     // Display assess button.
     if ($submission->id and !$edit and !$isreviewer and $canallocate and $workshop->assessing_allowed($USER->id)) {
         $url = new moodle_url($PAGE->url, array('assess' => 1));
-        echo $output->single_button($url, get_string('assess', 'workshop'), 'post');
+        echo $output->box($output->single_button($url, get_string('assess', 'workshop'), 'post'), 'mr-1 inline');
     }
 }
 

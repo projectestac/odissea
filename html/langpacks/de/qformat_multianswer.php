@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_multianswer', language 'de', version '3.11'.
+ * Strings for component 'qformat_multianswer', language 'de', version '4.1'.
  *
  * @package     qformat_multianswer
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Lückentext-Antworten';
 $string['pluginname_help'] = 'Beim Lückentext-Format können Fragen mit Multiple-Choice oder Kurzantwort aus einer Textdatei importiert werden. ';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['privacy:metadata'] = 'Das eingebettete Antwort Frageformat Plugin speichert keine personenbezogenen Daten.';

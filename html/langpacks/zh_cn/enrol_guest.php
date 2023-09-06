@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'zh_cn', version '3.11'.
+ * Strings for component 'enrol_guest', language 'zh_cn', version '4.1'.
  *
  * @package     enrol_guest
  * @category    string
@@ -44,5 +44,6 @@ $string['showhint_desc'] = '显示访客密码的第一个字符。';
 $string['status'] = '允许访客访问';
 $string['status_desc'] = '缺省允许访客临时访问。';
 $string['status_help'] = '这项设置决定使用者是否可以不经选课，直接以访客身份进入课程。';
+$string['status_link'] = 'enrol/guest';
 $string['usepasswordpolicy'] = '使用密码策略';
 $string['usepasswordpolicy_desc'] = '使用标准密码策略约束访客密码。';

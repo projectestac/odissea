@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_flexpagenav', language 'el', version '3.11'.
+ * Strings for component 'block_flexpagenav', language 'el', version '4.1'.
  *
  * @package     block_flexpagenav
  * @category    string
@@ -55,10 +55,10 @@ $string['flexpagenav:manage'] = 'Διαχείριση των μενού Flexpage
 $string['flexpagenav:view'] = 'Εμφάνιση των μενού Flexpage';
 $string['flexpagenavlink'] = 'Μενού Flexpage';
 $string['flexpagenavx'] = '{$a} μενού';
-$string['flexpagewithchildren'] = '{$a} με παιδιά';
-$string['flexpagewithoutchildren'] = '{$a} χωρίς παιδιά';
+$string['flexpagewithchildren'] = '{$a} με απογόνους';
+$string['flexpagewithoutchildren'] = '{$a} χωρίς απογόνους';
 $string['formnamerequired'] = 'Το όνομα μενού απαιτείται.';
-$string['includechildren'] = 'Συμπερίληψη παιδιών';
+$string['includechildren'] = 'Συμπερίληψη απογόνων';
 $string['invalidurl'] = 'Η εισαγόμενη διεύθυνση URL δεν είναι έγκυρη και δεν μπορεί να χρησιμοποιηθεί. Παρακαλούμε, επαληθεύστε την διεύθυνση URL που δώσατε.';
 $string['label'] = 'Ταμπέλα';
 $string['labelrequired'] = 'Το πεδίο ταμπέλας απαιτείται.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'sv', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'sv', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -83,13 +83,16 @@ $string['emailpasswordchangeinfosubject'] = '{$a}: information om byte av lösen
 $string['info'] = 'Externt konto';
 $string['issuer'] = 'OAuth 2 Service';
 $string['issuernologin'] = 'Denna utfärdare kan inte användas för att logga in';
+$string['key'] = 'Nyckel';
 $string['linkedlogins'] = 'Länkade konton';
 $string['linkedloginshelp'] = 'Hjälp med länkade konton';
+$string['loggedin'] = 'Användaren autentiserades av utfärdaren.';
 $string['loginerror_authenticationfailed'] = 'Autentisering misslyckades';
 $string['loginerror_cannotcreateaccounts'] = 'Hittade inte konto med din e-postadress.';
 $string['loginerror_invaliddomain'] = 'E-postadressen är inte tillåten på denna webbplats.';
 $string['loginerror_nouserinfo'] = 'Ingen användarinformation returnerades. OAuth 2-tjänsten kanske inte är korrekt konfigurerad.';
 $string['loginerror_userincomplete'] = 'Användarinformationen som returnerades innehöll inget användarnamn eller e-postadress. OAuth 2-tjänsten kanske inte är korrekt konfigurerad.';
+$string['noconfiguredidps'] = 'Inga OAuth2-utfärdare har konfigurerats';
 $string['noissuersavailable'] = 'Ingen av de konfigurerade OAuth 2-tjänsterna tillåter att du länkar inloggningskonton';
 $string['notenabled'] = 'OAuth 2 autentiserings-pluginen är inte aktiverad';
 $string['notloggedindebug'] = 'Inloggningsförsöket misslyckades. Orsak: {$a}';
@@ -109,3 +112,6 @@ $string['privacy:metadata:auth_oauth2:timemodified'] = 'Tidstämpel för när de
 $string['privacy:metadata:auth_oauth2:userid'] = 'ID:t för användarkontot som OAuth 2-inloggningen är länkad till.';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'ID:t för användaren som ändrade detta konto.';
 $string['privacy:metadata:auth_oauth2:username'] = 'Externt användarnamn kopplat till detta konto.';
+$string['testidplogin'] = 'Testa att logga in med:';
+$string['userinfo'] = 'Användarinformation från utfärdaren:';
+$string['value'] = 'Värde';

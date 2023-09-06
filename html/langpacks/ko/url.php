@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ko', version '3.11'.
+ * Strings for component 'url', language 'ko', version '4.1'.
  *
  * @package     url
  * @category    string
@@ -50,9 +50,12 @@ $string['displayselect_help'] = '이 설정은 URL 파일 형식 및 브라우�
 $string['displayselectexplain'] = '가급적 모든 주소지를 표시하는 데 적합한 표시 유형을 선택';
 $string['externalurl'] = '외부 URL';
 $string['framesize'] = '프레임의 높이';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidstoredurl'] = '이 자원을 표시할 수 없습니다. URL이 잘못되었습니다.';
 $string['invalidurl'] = '입력한 URL이 잘못되었습니다.';
 $string['modulename'] = 'URL';
+$string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = 'URLs';
 $string['page-mod-url-x'] = '모든 URL 모듈 페이지';
 $string['parameterinfo'] = '&amp;파라메터=변수';

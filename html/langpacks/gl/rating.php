@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'gl', version '3.11'.
+ * Strings for component 'rating', language 'gl', version '4.1'.
  *
  * @package     rating
  * @category    string
@@ -31,7 +31,7 @@ $string['aggregatemax'] = 'Puntuación máxima';
 $string['aggregatemin'] = 'Puntuación mínima';
 $string['aggregatenone'] = 'Sen puntuacións';
 $string['aggregatesum'] = 'Suma de puntuacións';
-$string['aggregatetype'] = 'Tipo de agregación';
+$string['aggregatetype'] = 'Tipo agregado';
 $string['aggregatetype_help'] = 'O tipo de agregación define como se combinan as puntuacións para formar a cualificación final no libro de cualificacións.
 
 * Media de puntuacións - A media de todas as puntuacións.
@@ -51,9 +51,9 @@ $string['noviewanyrate'] = 'Só pode ver os resultados dos elementos que fixo vo
 $string['noviewrate'] = 'Non ten a funcionalidade para ver as puntuacións dos elementos';
 $string['privacy:metadata:rating'] = 'A puntuación introducida polo usuario almacénase xunto cunha asignación do elemento que foi puntuado.';
 $string['privacy:metadata:rating:rating'] = 'A puntuación numérica que introduciu o usuario.';
-$string['privacy:metadata:rating:timecreated'] = 'O momento no que se realizou a puntuación por primeira vez';
-$string['privacy:metadata:rating:timemodified'] = 'O momento no que se actualizou a puntuación por última vez';
-$string['privacy:metadata:rating:userid'] = 'O usuario que fixo a puntuación.';
+$string['privacy:metadata:rating:timecreated'] = 'O momento que se realizou a puntuación por primeira vez';
+$string['privacy:metadata:rating:timemodified'] = 'O momento que se actualizou a puntuación por última vez';
+$string['privacy:metadata:rating:userid'] = 'O usuario que fixo a puntuación..';
 $string['rate'] = 'Cualificar';
 $string['ratepermissiondenied'] = 'Non ten permiso para cualificar este elemento';
 $string['rating'] = 'Puntuación';
@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'A puntuación é incorrecta';
 $string['ratings'] = 'Puntuacións';
 $string['ratingtime'] = 'Limitar as puntuacións aos elementos con datas neste intervalo:';
 $string['rolewarning'] = 'Roles con permiso para cualificar';
-$string['rolewarning_help'] = 'Para entregar puntuacións dos usuarios requírese a funcionalidade moodle/rating:rate e calquera módulo específico sobre capacidades. Os usuarios cos seguintes roles asignados deberían quen de puntuar elementos. A lista de roles pode modificarse mediante a ligazón de permisos do menú de accións ou bloque de administración, segundo o tema.';
-$string['scaleselectionrequired'] = 'Ao seleccionar un tipo de agregación de puntuacións Vostede debe seleccionar tamén o uso dunha escala ou estabelecer unha puntuación máxima.';
+$string['rolewarning_help'] = 'Os roles con permiso para cualificar son roles coa capacidade moodle/rating:rate máis calquera capacidade de cualificación específica da actividade. Pode dar permiso a máis roles para cualificar a  través da páxina Permisos.';
+$string['scaleselectionrequired'] = 'Ao seleccionar un tipo de agregación de puntuacións Vostede debe  seleccionar tamén o uso dunha escala ou estabelecer unha puntuación máxima.';

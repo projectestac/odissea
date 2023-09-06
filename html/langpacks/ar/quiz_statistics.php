@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ar', version '3.11'.
+ * Strings for component 'quiz_statistics', language 'ar', version '4.1'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -45,7 +45,7 @@ $string['cic'] = 'معامل الاتساق الداخلي (لـ{$a})';
 $string['completestatsfilename'] = 'حالات كاملة';
 $string['count'] = 'العدد';
 $string['counttryno'] = 'عدّ المحاولة {$a}';
-$string['coursename'] = 'اسم المقرر الدراسي';
+$string['coursename'] = 'اسم المساق';
 $string['detailedanalysis'] = 'تحليل أكثر تفصيلاً لاستجابات هذا السؤال';
 $string['detailedanalysisforvariant'] = 'تحليل أكثر تفصيلاً للاستجابات على التباين {$a} لهذا السؤال';
 $string['discrimination_index'] = 'مؤشر التمييز';
@@ -101,12 +101,12 @@ $string['questiontype'] = 'نوع السؤال';
 $string['quizinformation'] = 'معلومات الاختبار';
 $string['quizname'] = 'اسم الاختبار';
 $string['quizoverallstatistics'] = 'إحصاءات الاختبار الكاملة';
-$string['quizstatisticscleanuptask'] = 'تنظيف سجلات الخبء القديمة لإحصائيات الاختبار';
 $string['quizstructureanalysis'] = 'تحليل بنية الاختبار';
 $string['random_guess_score'] = 'درجة التخمين العشوائي';
 $string['rangebetween'] = '{$a->min} − {$a->max}';
 $string['rangeofvalues'] = 'نطاق إحصائيات هذه الأسئلة';
 $string['recalculatenow'] = 'أعد حسابها الآن';
+$string['recalculatetask'] = 'إعادة إحتساب إحصائيات السؤال';
 $string['reportsettings'] = 'إعدادات حساب الإحصائيات';
 $string['response'] = 'الاستجابة';
 $string['skewness'] = 'انحراف توزيع الدرجة (ل{$a})';

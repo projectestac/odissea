@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_imap', language 'ur', version '3.11'.
+ * Strings for component 'auth_imap', language 'ur', version '4.1'.
  *
  * @package     auth_imap
  * @category    string

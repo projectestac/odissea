@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'eu', version '3.11'.
+ * Strings for component 'block_html', language 'eu', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = 'Baimendu CSS mota gehigarriak';
-$string['configallowadditionalcssclasses'] = 'HTML blokearen instantziei CSS mota osagarriak ezartzeko aukera eskaintzen duen ezarpen-aukera bat gehitzen dio.';
+$string['configallowadditionalcssclasses'] = 'Testua blokearen instantziei CSS mota gehigarriak ezartzeko aukera eskaintzen duen ezarpen-aukera bat gehitzen dio.';
 $string['configclasses'] = 'CSS mota gehigarriak';
-$string['configclasses_help'] = 'Ezarpen honen helburua itxuraketa egiten laguntzea da, HTML blokeak errazago desberdintzeko. Hemen sartutako CSS motak (zuriunez bereizita) blokearen lehenetsitako motei gehituko zaizkie.';
+$string['configclasses_help'] = 'Ezarpen honen helburua itxuraketa egiten laguntzea da, Testua blokeak errazago desberdintzeko. Hemen sartutako CSS motak (zuriunez bereizita) blokearen lehenetsitako motei gehituko zaizkie.';
 $string['configcontent'] = 'Edukia';
-$string['configtitle'] = 'HTML blokearen izenburua';
-$string['html:addinstance'] = 'Gehitu HTML bloke berria';
-$string['html:myaddinstance'] = 'Gehitu HTML bloke berria Aginte-panelean';
-$string['newhtmlblock'] = '(HTML bloke berria)';
-$string['pluginname'] = 'HTML';
-$string['privacy:metadata:block'] = 'HTML blokeak blokeen azpisistemaren baitan gordetzen ditu bere datuak.';
-$string['search:content'] = 'HTML blokearen edukia';
+$string['configtitle'] = 'Testua blokearen izenburua';
+$string['html:addinstance'] = 'Gehitu Testua bloke berria';
+$string['html:myaddinstance'] = 'Gehitu Testua bloke berria Aginte-panelean';
+$string['newhtmlblock'] = '(Testua bloke berria)';
+$string['pluginname'] = 'Testua';
+$string['privacy:metadata:block'] = 'Testua blokeak blokeen azpisistemaren baitan gordetzen ditu bere datuak.';
+$string['search:content'] = 'Testua blokearen edukia';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ca', version '3.11'.
+ * Strings for component 'badges', language 'ca', version '4.1'.
  *
  * @package     badges
  * @category    string
@@ -283,7 +283,6 @@ $string['delparamconfirm'] = 'Confirmeu que voleu suprimir aquest paràmetre?';
 $string['description'] = 'Descripció';
 $string['disconnect'] = 'Desconnecta';
 $string['donotaward'] = 'Actualment, aquesta insígnia no està activa, per la qual cosa no es pot concedir als usuaris. Si voleu atorgar aquesta insígnia, configureu el seu estat a actiu.';
-$string['editsettings'] = 'Edita els paràmetres';
 $string['enablebadges'] = 'Habilita les insígnies';
 $string['endorsement'] = 'Aval';
 $string['error:backpackdatainvalid'] = 'Les dades retornades pel servei de motxilla no són vàlides.';

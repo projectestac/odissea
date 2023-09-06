@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'gl', version '3.11'.
+ * Strings for component 'userkey', language 'gl', version '4.1'.
  *
  * @package     userkey
  * @category    string
@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adduserkey'] = 'Engadir a chave de usuario';
 $string['createnewkey'] = 'Crear unha nova chave de usuario';
 $string['createuserkey'] = 'Crear unha chave de usuario';
 $string['deletekeyconfirm'] = 'Confirma que quere eliminar esta chave de usuario?';
+$string['deleteuserkey'] = 'Eliminar a chave de usuario';
 $string['edituserkey'] = 'Editar a chave de usuario';
 $string['keyiprestriction'] = 'Restrición de chave por IP';
 $string['keyiprestriction_help'] = 'Escriba un enderezo IP específico, ou un intervalo de enderezos IP que serán os únicos enderezos IP permitidos para acceder a estes datos. Déixeo baleiro para desactivar a restrición por IP (non recomendábel).';

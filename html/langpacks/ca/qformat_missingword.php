@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'ca', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'ca', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,3 +30,4 @@ $string['endanswernotfound'] = 'No s\'ha trobat el caràcter obligatori "}" en e
 $string['noanswerfound'] = 'No s\'han trobat respostes en la qüestió';
 $string['pluginname'] = 'Format de paraula omesa';
 $string['pluginname_help'] = 'El format de paraules omeses permet la importació de preguntes mitjançant un fitxer de text.';
+$string['pluginname_link'] = 'qformat/missingword';

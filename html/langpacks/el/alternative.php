@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'alternative', language 'el', version '3.11'.
+ * Strings for component 'alternative', language 'el', version '4.1'.
  *
  * @package     alternative
  * @category    string
@@ -35,8 +35,8 @@ $string['alternativeoptions_help'] = 'Κάθε εναλλακτική δείχν
 $string['changeallowed'] = 'Επιτρέπεται αλλαγή';
 $string['changeallowed_help'] = 'Εάν δεν επιλεγεί, ο χρήστης δεν θα είναι σε θέση να αλλάξει την επιλογή του.
 Διδάσκοντες, και όλοι οι ρόλοι που έχουν την δυνατότητα «alternatives:forceregistration» (εναλλακτικές: επιβολή καταχώρησης), θα είναι σε θέση να αλλάξουν την επιλογή οποιουδήποτε.';
-$string['chooseteammembers'] = 'Παρακαλώ επιλέξτε τα μέλη της ομάδας σας';
-$string['chooseuser'] = 'Παρακαλώ επιλέξτε το χρήστη προς καταχώρηση';
+$string['chooseteammembers'] = 'Παρακαλούμε επιλέξτε τα μέλη της ομάδας σας';
+$string['chooseuser'] = 'Παρακαλούμε επιλέξτε το χρήστη προς καταχώρηση';
 $string['csv'] = 'Εισαγωγή CSV';
 $string['csv2ndfield'] = 'Το 2ο πεδίο (θέσεις) θα πρέπει να είναι αριθμητικό· 0 = δεν υπάρχει όριο.';
 $string['csv_help'] = 'Κάθε γραμμή αποτελείται από Τίτλο ; Μέρη ; Ημερομηνία ; Περιγραφή';
@@ -86,7 +86,7 @@ $string['public'] = 'Δημόσια';
 $string['publicreg'] = 'Δημόσιες καταχωρήσεις';
 $string['publicreg_help'] = 'Οι καταχωρήσεις μπορεί να γίνουν:<dl>
 <dt>δημόσια</dt>
-<dd>δημόσια σε όλους,</dd><dt>δημόσια στην ίδια ομάδα</dt><dd>δημόσια για χρήστες που μοιράζονται τουλάχιστον μια ομάδα</dd>
+<dd>δημόσια σε όλους,</dd><dt>δημόσια στην ίδια ομάδα</dt><dd>δημόσια για χρήστες που κάνουν κοινή χρήση τουλάχιστον μιας ομάδας</dd>
 <dt>ιδιωτικά</dt><dd>ιδιωτικά εκτός από τους χρήστες με αυξημένες δυνατότητες(διδάσκοντες, κλπ).</dd>
 </dl>';
 $string['register'] = 'Καταχώρηση';

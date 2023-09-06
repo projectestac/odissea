@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'ca', version '3.11'.
+ * Strings for component 'studentquiz', language 'ca', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -39,6 +39,7 @@ $string['createnewquestion'] = 'Crea una pregunta nova';
 $string['createnewquestionfirst'] = 'Crea la primera pregunta';
 $string['difficulty_all_column_name'] = 'Dificultat comunitària';
 $string['difficulty_level_column_name'] = 'Dificultat';
+$string['editedcommenthistorylinktext'] = 'Historial';
 $string['emailcommentaddedbody'] = 'Hola, {$a->recepientname},
 
 La vostra pregunta «{$a->questionname}» de l\'activitat StudentQuiz «{$a->modulename}» dins el curs «{$a->coursename}» ha estat comentada per «{$a->actorname}» el «{$a->timestamp}».
@@ -96,6 +97,7 @@ $string['filter_label_rates'] = 'Valoració';
 $string['filter_label_show_mine'] = 'Les meves preguntes';
 $string['filter_label_tags'] = 'Etiqueta';
 $string['finish_button'] = 'Acaba';
+$string['history'] = 'Historial';
 $string['lastattempt_right'] = '✓';
 $string['lastattempt_wrong'] = '✗';
 $string['latest_column_name'] = 'Més recent';
@@ -106,6 +108,7 @@ $string['messageprovider:questionchanged'] = 'Notificació de canvis en les preg
 $string['mine_column_name'] = 'Meves';
 $string['modulename'] = 'StudentQuiz';
 $string['modulename_help'] = 'L\'activitat StudentQuiz permet als estudiants afegir preguntes per a tothom. A la visió general de StudentQuiz els estudiants poden filtrar les preguntes. També poden fitrar les preguntes creades per tothom per practicar. El professor té l\'opció de convertir en anònimes les preguntes creades per columna. <br><br>L\'activitat StudentQuiz premia els estudiants amb punts per motivar-los a afegir preguntes i practicar-hi. Els punts són a una llista en una taula de classificació.<br><br>Per a més informació, consulteu la <a href="https://studentquiz.hsr.ch/docs/">documentació de StudentQuiz</a>.';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = 'StudentQuizzes';
 $string['more'] = 'Més';
 $string['myattempts_column_name'] = 'Els meus intents';

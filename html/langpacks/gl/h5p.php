@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'gl', version '3.11'.
+ * Strings for component 'h5p', language 'gl', version '4.1'.
  *
  * @package     h5p
  * @category    string
@@ -32,9 +32,9 @@ $string['addedandupdatedsp'] = 'Engadiuse {$a->%new} nova biblioteca H5P e actua
 $string['addedandupdatedss'] = 'Engadiuse {$a->%new} nova biblioteca H5P e actualizouse {$a->%old} antiga.';
 $string['addednewlibraries'] = 'Engadíronse {$a->%new} novas bibliotecas H5P.';
 $string['addednewlibrary'] = 'Engadiuse {$a->%new} nova biblioteca H5P.';
-$string['additionallicenseinfo'] = 'Información adicional sobre a licenza.';
-$string['atto_h5p'] = 'Botón de inserción H5P';
-$string['atto_h5p_description'] = 'O botón de inserción H5P no editor Atto permite que os usuarios insiran contido H5P mediante un URL, un código de inserción ou mediante a subida dun ficheiro H5P';
+$string['additionallicenseinfo'] = 'Calquera información adicional sobre a licenza';
+$string['atto_h5p'] = 'Botón Inserir H5PP';
+$string['atto_h5p_description'] = 'O botón Inserir H5P no editor Atto permite aos usuarios inserir contido H5P inserindo un URL ou un código de inserción, ou incrustando un ficheiro H5P.';
 $string['author'] = 'Autor';
 $string['authorcomments'] = 'Comentarios do autor';
 $string['authorcommentsdescription'] = 'Comentarios para o editor do contido. (Este texto non será publicado como parte da información sobre dereitos de autor.)';
@@ -61,6 +61,7 @@ $string['connectionLost'] = 'Perdeuse a conexión. Os resultados almacenaranse e
 $string['connectionReestablished'] = 'Restabeleceuse a conexión.';
 $string['contentCopied'] = 'O contido cópiase no portapapeis';
 $string['contentchanged'] = 'Este contido cambiou dende que o usou por última vez.';
+$string['contentinuse'] = 'Este contido pode estar en uso noutros lugares.';
 $string['contenttype'] = 'Tipo de contido';
 $string['copyright'] = 'Dereitos de uso';
 $string['copyrightinfo'] = 'Información dos Dereitos de autoría';
@@ -70,29 +71,32 @@ $string['couldNotParseJSONFromZip'] = 'Non foi posíbel analizar JSON dende o pa
 $string['couldNotReadFileFromZip'] = 'Non foi posíbel  ler o ficheiro dende o paquete: {$a->%fileName}';
 $string['creativecommons'] = 'Creative Commons';
 $string['date'] = 'Data';
-$string['deletelibraryconfirm'] = '<p>Estás seguro de querer borrar a versión <em>\'{$a->version}\'</em> da biblioteca <em>\'{$a->name}\'</em>? Isto borrará a biblioteca e todos os seus usos.</p><p>Esta operación non se pode desfacer.</p>';
-$string['deletelibraryversion'] = 'Borrar versión';
-$string['deleting'] = 'Borrando unha biblioteca';
+$string['deletelibraryconfirm'] = '<p>Confirma que quere eliminar a versión <em>\'{$a->version}\'</em> da biblioteca <em>\'{$a->name}\'</em>? Eliminará a biblioteca e todos os seus usos.</p><p> Esta operación non se pode desfacer.</p>';
+$string['deletelibraryversion'] = 'Eliminar a versión';
+$string['deleting'] = 'Eliminando unha biblioteca';
 $string['description'] = 'Descrición';
 $string['disablefullscreen'] = 'Desactivar a pantalla completa';
 $string['download'] = 'Descargar';
 $string['downloadtitle'] = 'Descargar este contido como un ficheiro H5P.';
+$string['editcontent'] = 'Editar contido H5P';
 $string['editor'] = 'Editor';
 $string['embed'] = 'Incrustado';
 $string['embedtitle'] = 'Ver o código incrustado para este contido.';
+$string['error:emptycontentid'] = 'O URL indicado é incorrecto ou  vostede non pode editar este ficheiro.';
 $string['eventh5pdeleted'] = 'H5P eliminado';
 $string['eventh5pviewed'] = 'Visto o contido H5P';
 $string['feature'] = 'Característica';
 $string['fetchtypesfailure'] = 'Non foi posíbel obter información sobre os tipos de contido H5P dispoñíbeis. Fallou a conexión do repositorio H5P';
 $string['fileExceedsMaxSize'] = 'Un dos ficheiros do paquete excede do tamaño máximo permitido. ({$a->%file} {$a->%used} > {$a->%max})';
-$string['filter_displayh5p'] = 'Amosar filtro H5P';
-$string['filter_displayh5p_description'] = 'O filtro Amosar H5P converte URLs en contido H5P incrustado';
+$string['filter_displayh5p'] = 'Filtro Amosar H5P';
+$string['filter_displayh5p_description'] = 'O filtro Amosar H5P converte os URL en contido H5P incrustado.';
 $string['fullscreen'] = 'Pantalla completa';
 $string['gpl'] = 'Licenza Pública Xeral v3';
 $string['h5p'] = 'H5P';
+$string['h5peditor'] = 'Editor H5P';
 $string['h5pfilenotfound'] = 'Non se atopou o ficheiro H5P';
 $string['h5pinvalidurl'] = 'URL de contido H5P non válido.';
-$string['h5plibraryhandler'] = 'Xestor do marco H5P';
+$string['h5plibraryhandler'] = 'Controlador de entorno de traballo H5P';
 $string['h5plibraryhandler_help'] = 'O entorno de traballo H5P usado para amosar contido H5P. Recoméndase a última versión.';
 $string['h5pmanage'] = 'Xestionar tipos de contido H5P';
 $string['h5poverview'] = 'Vista xeral H5P';
@@ -137,7 +141,7 @@ $string['licenseV1'] = 'Versión 1';
 $string['licenseV2'] = 'Versión 2';
 $string['licenseV3'] = 'Versión 3';
 $string['licensee'] = 'Licenciatario';
-$string['licenseextras'] = 'Extras da licenza';
+$string['licenseextras'] = 'Extras de licenza';
 $string['licenseversion'] = 'Versión da licenza';
 $string['lockh5pdeploy'] = 'Non é posíbel acceder a este contido H5P porque se está a despregar. Ténteo de novo máis tarde.';
 $string['mainlibrarydisabled'] = 'Non é posíbel amosar este ficheiro porque o seu tipo de contido está desactivado. Póñase en contacto co seu administrador para solicitar que se active o tipo de contido.';
@@ -162,7 +166,7 @@ $string['offlineDialogBody'] = 'Non puidemos enviar información sobre o complet
 $string['offlineDialogHeader'] = 'Perdeuse a súa conexión co servidor';
 $string['offlineDialogRetryButtonLabel'] = 'Volver intentalo agora';
 $string['offlineDialogRetryMessage'] = 'Volver tentalo en :num....';
-$string['offlineSuccessfulSubmit'] = 'Resultados enviados satisfactoriamente.';
+$string['offlineSuccessfulSubmit'] = 'Resultados enviados correctamente.';
 $string['originator'] = 'Orixinador';
 $string['pd'] = 'Dominio público';
 $string['pddl'] = 'Dedicación e licenza de dominio público';

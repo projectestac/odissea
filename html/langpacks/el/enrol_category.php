@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'el', version '3.11'.
+ * Strings for component 'enrol_category', language 'el', version '4.1'.
  *
  * @package     enrol_category
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['category:config'] = 'Ρύθμιση στιγμιότυπων εγγραφής κατηγορίας';
+$string['category:config'] = 'Ρύθμιση στιγμιοτύπων εγγραφής κατηγορίας';
 $string['category:synchronised'] = 'Οι αναθέσεις ρόλων συγχρονίζονται με τις εγγραφές μαθημάτων';
 $string['enrolcategorysynctask'] = 'Εργασία συγχρονισμού εγγραφής κατηγορίας';
 $string['pluginname'] = 'Κατηγορία εγγραφών';

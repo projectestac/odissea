@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'es', version '3.11'.
+ * Strings for component 'block_timeline', language 'es', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Todo';
-$string['ariadayfilter'] = 'Elementos de filtro de línea del tiempo';
+$string['ariadayfilter'] = 'Filtrar línea de tiempo por fecha';
 $string['ariadayfilteroption'] = '{$a} opción de filtro';
 $string['ariaeventlistitem'] = '{$a->name} actividad en {$a->course} está pendiente para {$a->date}';
 $string['ariaeventlistpagelimit'] = 'Mostrar {$a} actividades por página';
@@ -35,18 +35,20 @@ $string['ariaeventlistpaginationnavdates'] = 'Paginación de actividades en lín
 $string['ariaviewselector'] = 'Ordenar ítems en línea del tiempo';
 $string['ariaviewselectoroption'] = 'Opción de ordenamiento {$a}';
 $string['duedate'] = 'Fecha de vencimiento';
-$string['morecourses'] = 'Más cursos';
+$string['moreactivities'] = 'Mostrar más actividades';
+$string['morecourses'] = 'Mostrar más cursos';
 $string['next30days'] = 'Próximos 30 días';
 $string['next3months'] = 'Próximos 3 meses';
 $string['next6months'] = 'Próximos 6 meses';
 $string['next7days'] = 'Próximos 7 días';
 $string['nocoursesinprogress'] = 'No hay cursos actuales';
-$string['noevents'] = 'No hay actividades previstas';
+$string['noevents'] = 'No hay actividades que requieran acciones';
 $string['overdue'] = 'Atrasados';
 $string['pluginname'] = 'Línea de tiempo';
 $string['privacy:metadata:timelinefilterpreference'] = 'La preferencia del filtro de día del usuario para el bloque de línea de tiempo.';
 $string['privacy:metadata:timelinelimitpreference'] = 'La preferencia de límite de página del usuario para el bloque de línea de tiempo.';
 $string['privacy:metadata:timelinesortpreference'] = 'La preferencia de ordenamiento del usuario para el bloque de tínea de tiempo.';
+$string['searchevents'] = 'Buscar por tipo o nombre de actividad';
 $string['sortbycourses'] = 'Ordenar por curso';
 $string['sortbydates'] = 'Ordenar por fecha';
 $string['timeline'] = 'Línea de tiempo';

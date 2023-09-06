@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+use \mod_assign\output\assign_header;
+
 require_once($CFG->dirroot.'/grade/grading/lib.php');
 
 /**
@@ -117,7 +119,7 @@ class assign_feedback_offline extends assign_feedback_plugin {
                                                                      'plugin'=>'offline',
                                                                      'pluginaction'=>'uploadgrades',
                                                                      'id' => $this->assignment->get_course_module()->id));
-            print_error('invalidgradeimport', 'assignfeedback_offline', $thisurl);
+            throw new \moodle_exception('invalidgradeimport', 'assignfeedback_offline', $thisurl);
             return;
         }
         // Does this assignment use a scale?

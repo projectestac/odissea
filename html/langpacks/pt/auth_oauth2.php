@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'pt', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'pt', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -37,40 +37,40 @@ Para confirmar a sua nova conta, aceda a este endereço:
 
 {$a->link}
 
-Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, então copie o endereço e cole na linha de endereço do seu navegador de internet.
+Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, copie o endereço e cole na linha de endereço do seu navegador web.
 
-Se precisar de ajuda, entre em contacto com o administrador do site,
+Se precisar de ajuda, contacte o administrador do site,
 {$a->admin}
 
 Se não fez este pedido, outra pessoa pode estar a tentar aceder à sua conta.
-Entre em contacto com o(a) administrador(a) da plataforma imediatamente.';
+Contacte imediatamente o administrador do site.';
 $string['confirmaccountemailsubject'] = '{$a}: confirmação da conta';
 $string['confirmationinvalid'] = 'A hiperligação de confirmação é inválida ou expirou. Inicie novamente o processo de autenticação para gerar um novo e-mail de confirmação.';
 $string['confirmationpending'] = 'Esta conta está pendente da confirmação do e-mail.';
 $string['confirmlinkedloginemail'] = 'Caro(a) {$a->fullname},
 
-Foi feita uma solicitação para vincular a autenticação via {$a->issuername} com o e-mail {$a->linkedemail} à sua conta em \'{$a->sitename}\'.
+Foi feita uma solicitação para vincular a autenticação via {$a->issuername} com o e-mail {$a->linkedemail} à sua conta na plataforma de e-learning \'{$a->sitename}\'.
 
 Para confirmar este pedido e vincular estas autenticações, aceda a este endereço:
 
 {$a->link}
 
-Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, então copie o endereço e cole na linha de endereço do seu navegador de internet.
+Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, copie o endereço e cole na linha de endereço do seu navegador web.
 
-Se precisar de ajuda, entre em contacto com o administrador do site:
+Se precisar de ajuda, contacte o administrador do site,
 {$a->admin}
 
 Se não fez este pedido, outra pessoa pode estar a tentar aceder à sua conta.
-Entre em contacto com o(a) administrador(a) da plataforma imediatamente.';
+Contacte imediatamente o administrador do site.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: confirmação da vinculação de autenticação';
 $string['createaccountswarning'] = 'Este módulo de autenticação permite aos utilizadores criarem contas no seu site. Se pretende usar esta funcionalidade, é importante ativar a configuração "authpreventaccountcreation".';
 $string['createnewlinkedlogin'] = 'Vincular uma nova conta ({$a})';
 $string['emailconfirmlink'] = 'Vincular as suas contas';
 $string['emailconfirmlinksent'] = '<p>Foi encontrada uma conta existente com este endereço de e-mail mas ainda não está vinculada.</p>
-<p>As contas devem ser vinculadas antes que possa autenticar-se.</p>
-<p>Foi enviada uma mensagem para o seu endereço <b>{$a}</b>.</p>
+<p>As contas têm de ser vinculadas antes que possa autenticar-se.</p>
+<p>Foi enviada uma mensagem para o seu endereço de e-mail <b>{$a}</b>.</p>
 <p>Contém instruções fáceis para vincular as suas contas.</p>
-<p>Se tiver alguma dificuldade, entre em contacto com o administrador do site.</p>';
+<p>Se tiver alguma dificuldade, contacte o administrador do site.</p>';
 $string['emailpasswordchangeinfo'] = 'Olá {$a->firstname},
 
 Solicitou uma nova senha para a sua conta em \'{$a->sitename}\'.
@@ -83,14 +83,17 @@ $string['emailpasswordchangeinfosubject'] = '{$a}: Informação para alteração
 $string['info'] = 'Conta externa';
 $string['issuer'] = 'Serviço OAuth 2';
 $string['issuernologin'] = 'Este provedor não pode ser utilizado para iniciar sessão';
+$string['key'] = 'Chave';
 $string['linkedlogins'] = 'Autenticações vinculadas';
 $string['linkedloginshelp'] = 'Ajuda com autenticações vinculadas';
+$string['loggedin'] = 'Utilizador autenticado com sucesso através do fornecedor.';
 $string['loginerror_authenticationfailed'] = 'O processo de autenticação falhou.';
 $string['loginerror_cannotcreateaccounts'] = 'Não foi possível encontrar uma conta com o seu endereço de e-mail.';
 $string['loginerror_invaliddomain'] = 'Não é permitido o uso de endereço de e-mail neste site.';
 $string['loginerror_nouserinfo'] = 'Nenhuma informação de utilizador foi devolvida. O serviço OAuth 2 pode estar configurado incorretamente.';
 $string['loginerror_userincomplete'] = 'As informações do utilizador devolvidas não continham um nome de utilizador e um endereço de e-mail. O serviço OAuth 2 pode estar configurado incorretamente.';
-$string['noissuersavailable'] = 'Nenhum dos serviços OAuth 2  configurados permite que vincule contas de autenticação';
+$string['noconfiguredidps'] = 'Não existem fornecedores OAuth 2 configurados.';
+$string['noissuersavailable'] = 'Nenhum dos serviços OAuth 2 configurados permite que vincule contas de autenticação.';
 $string['notenabled'] = 'O módulo de autenticação OAuth 2 não está ativado';
 $string['notloggedindebug'] = 'A tentativa de autenticação falhou. Motivo: {$a}';
 $string['notwhileloggedinas'] = 'As autenticações vinculadas não podem ser geridas enquanto estiver na sessão como outro utilizador.';
@@ -109,3 +112,6 @@ $string['privacy:metadata:auth_oauth2:timemodified'] = 'A data exata de quando e
 $string['privacy:metadata:auth_oauth2:userid'] = 'ID da conta de utilizador à qual a autenticação OAuth 2 está ligada.';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'ID do utilizador que modificou esta conta.';
 $string['privacy:metadata:auth_oauth2:username'] = 'O nome de utilizador externo que mapeia para esta conta.';
+$string['testidplogin'] = 'Testar autenticação com:';
+$string['userinfo'] = 'Dados do utilizador obtidos do fornecedor:';
+$string['value'] = 'Valor';

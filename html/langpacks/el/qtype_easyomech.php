@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyomech', language 'el', version '3.11'.
+ * Strings for component 'qtype_easyomech', language 'el', version '4.1'.
  *
  * @package     qtype_easyomech
  * @category    string
@@ -31,7 +31,7 @@ $string['answermustbegiven'] = 'Πρέπει να δώσετε μια απάντ
 $string['answerno'] = 'Απάντηση {$a}';
 $string['caseshowproducts'] = 'Εμφάνιση (ευκολότερο)';
 $string['correctansweris'] = 'Η σωστή απάντηση είναι: {$a}.';
-$string['correctanswers'] = '<b>Ιδρύματα</b>';
+$string['correctanswers'] = '<b>Οδηγίες</b>';
 $string['insert'] = 'Εισαγωγή από τον επεξεργαστή κειμένου';
 $string['insertfromeditor'] = 'Εισαγωγή από τον επεξεργαστή κειμένου';
 $string['instructions'] = 'Η αναπαράσταση ChemAxon «mrv» του μοντέλου σας πρέπει να αποθηκευτεί στο ακόλουθο πεδίο για να βαθμολογηθεί:';
@@ -40,4 +40,5 @@ $string['notenoughanswers'] = 'Αυτός ο τύπος ερώτησης απα�
 $string['orderimportant'] = 'Ναι';
 $string['ordernotimportant'] = 'Όχι';
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
+$string['pluginname_link'] = 'question/type/easyomech';
 $string['youranswer'] = 'Η απάντησή σας: {$a}';

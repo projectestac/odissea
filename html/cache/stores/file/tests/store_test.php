@@ -33,6 +33,7 @@ require_once($CFG->dirroot.'/cache/stores/file/lib.php');
  * @package    cachestore_file
  * @copyright  2013 Sam Hemelryk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \cachestore_file
  */
 class store_test extends \cachestore_tests {
     /**
@@ -71,5 +72,43 @@ class store_test extends \cachestore_tests {
         make_cache_directory('cachestore_file_test');
 
         $cache->get('testing');
+    }
+
+    /**
+     * Tests the get_last_read byte count.
+     */
+    public function test_get_last_io_bytes(): void {
+        $definition = cache_definition::load_adhoc(cache_store::MODE_REQUEST, 'cachestore_file', 'phpunit_test');
+        $store = new \cachestore_file('Test');
+        $store->initialise($definition);
+
+        $store->set('foo', 'bar');
+        $store->set('frog', 'ribbit');
+        $store->get('foo');
+        // It's not 3 bytes, because the data is stored serialized.
+        $this->assertEquals(10, $store->get_last_io_bytes());
+        $store->get('frog');
+        $this->assertEquals(13, $store->get_last_io_bytes());
+        $store->get_many(['foo', 'frog']);
+        $this->assertEquals(23, $store->get_last_io_bytes());
+
+        $store->set('foo', 'goo');
+        $this->assertEquals(10, $store->get_last_io_bytes());
+        $store->set_many([
+                ['key' => 'foo', 'value' => 'bar'],
+                ['key' => 'frog', 'value' => 'jump']
+        ]);
+        $this->assertEquals(21, $store->get_last_io_bytes());
+    }
+
+    public function test_lock() {
+        $store = new \cachestore_file('Test');
+
+        $this->assertTrue($store->acquire_lock('lock', '123'));
+        $this->assertTrue($store->check_lock_state('lock', '123'));
+        $this->assertFalse($store->check_lock_state('lock', '321'));
+        $this->assertNull($store->check_lock_state('notalock', '123'));
+        $this->assertFalse($store->release_lock('lock', '321'));
+        $this->assertTrue($store->release_lock('lock', '123'));
     }
 }

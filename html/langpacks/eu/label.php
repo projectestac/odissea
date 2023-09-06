@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'eu', version '3.11'.
+ * Strings for component 'label', language 'eu', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -25,35 +25,38 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdndmedia'] = 'Etiketa sortzea eskaintzen du ikastaroan media-fitxategiak hartu eta eraman egiten direnean';
-$string['configdndresizeheight'] = 'Hartu eta eramandako irudi batetik etiketa bat sortzen denean, egokitu tamaina pixel-kopuru hau baino altuagoa bada (0 tamaina ez egokitzeko)';
-$string['configdndresizewidth'] = 'Hartu eta eramandako irudi batetik etiketa bat sortzen denean, egokitu tamaina pixel-kopuru hau baino zabalagoa bada (0 tamaina ez egokitzeko)';
+$string['configdndmedia'] = 'Testua eta multimedia eremua sortzea eskaintzen du multimedia-fitxategiak hartu eta ikastarora eramaten direnean.';
+$string['configdndresizeheight'] = 'Hartu eta eramandako multimedia-elementu batetik Testua eta multimedia eremua bat sortzen denean, egokitu tamaina pixel-kopuru hau baino altuagoa bada. 0 zehaztuz gero  multimedia-fitxategiaren tamaina ez da aldatuko.';
+$string['configdndresizewidth'] = 'Hartu eta eramandako multimedia-elementu batetik Testua eta multimedia eremua bat sortzen denean, egokitu tamaina pixel-kopuru hau baino zabalagoa bada. 0 zehaztuz gero  multimedia-fitxategiaren tamaina ez da aldatuko.';
 $string['dndmedia'] = 'Hartu eta eraman media';
 $string['dndresizeheight'] = 'Egokitu hartu eta eraman altueran';
 $string['dndresizewidth'] = 'Egokitu hartu eta eraman zabaleran';
 $string['dnduploadlabel'] = 'Gehitu media ikastaroaren orrira';
-$string['dnduploadlabeltext'] = 'Gehitu etiketa ikastaroaren orrira';
-$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa etiketetan';
-$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Etiketa motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
-$string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa etiketetan';
-$string['indicator:cognitivedepthdef_help'] = 'Partaide honek Etiketa baliabideak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da)';
-$string['indicator:socialbreadth'] = 'Gaitasun soziala etiketetan';
-$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Etiketa motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
-$string['indicator:socialbreadthdef'] = 'Gaitasun soziala etiketetan';
-$string['indicator:socialbreadthdef_help'] = 'Partaide honek Etiketa baliabideak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea)';
-$string['label:addinstance'] = 'Gehitu etiketa berria';
-$string['label:view'] = 'Ikusi etiketa';
-$string['labeltext'] = 'Etiketaren testua';
-$string['modulename'] = 'Etiketa';
-$string['modulename_help'] = 'Etiketa baten bidez testu eta irudiak txerta daitezke ikastaroaren hasiera-orriko jarduera eta baliabideen esteken artean. Etiketek erabilera anitz dituzte, eta era egokian erabiliz gero ikastaroaren itxura hobetzen lagun dezakete.
+$string['dnduploadlabeltext'] = 'Gehitu Testua eta multimedia eremua bat ikastaroaren orrira';
+$string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa Testua eta multimedia eremuan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Testua eta multimedia eremuetan lortutako sakonera kognitiboan oinarrituta dago.';
+$string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa Testua eta multimedia eremuetan';
+$string['indicator:cognitivedepthdef_help'] = 'Partaide honek Testua eta multimedia eremuak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'Gaitasun soziala Testua eta multimedia eremuetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Testua eta multimedia eremuaetan lortutako zabalera sozialean oinarrituta dago.';
+$string['indicator:socialbreadthdef'] = 'Gaitasun soziala Testua eta multimedia eremuetan';
+$string['indicator:socialbreadthdef_help'] = 'Partaide honek Testua eta multimedia eremuak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['label:addinstance'] = 'Gehitu Testua eta multimedia eremu berria';
+$string['label:view'] = 'Ikusi Testua eta multimedia eremua';
+$string['labeltext'] = 'Testua';
+$string['modulename'] = 'Testua eta multimedia eremua';
+$string['modulename_help'] = 'Testua eta multimedia eremuaren bidez ikastaroaren hasiera-orrian testu, irudiak eta bestelako multimedia baliabideak txerta daitezke.
 
-Etiketak erabil daitezke
+Testua eta multimedia eremua erabil dezakezu
 
-* Aktibitate zerrenda luzeak goiburu edo irudien bitartez zatitzeko
-* Ikastaroan bertan bideo edo audioak txertatzeko.
+* Ikastaroko jarduera zerrenda luzeak goiburu edo irudien bitartez zatitzeko
+* Ikastaroan bertan txertatutako bideoak erakusteko
 * Ikastaroaren atal bati azalpen txiki bat gehitzeko';
-$string['modulenameplural'] = 'Etiketak';
-$string['pluginadministration'] = 'Etiketaren kudeaketa';
-$string['pluginname'] = 'Etiketa';
-$string['privacy:metadata'] = 'Etiketa baliabide-pluginak ez du datu pertsonalik biltzen.';
-$string['search:activity'] = 'Etiketa';
+$string['modulename_link'] = 'mod/label/view';
+$string['modulenameplural'] = 'Testua eta multimedia eremuak';
+$string['pluginadministration'] = 'Testua eta multimedia eremuen kudeaketa';
+$string['pluginname'] = 'Testua eta multimedia eremua';
+$string['privacy:metadata'] = 'Testua eta multimedia eremua pluginak ez du datu pertsonalik biltzen.';
+$string['search:activity'] = 'Testua eta multimedia eremua';

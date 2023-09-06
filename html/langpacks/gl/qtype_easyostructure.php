@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyostructure', language 'gl', version '3.11'.
+ * Strings for component 'qtype_easyostructure', language 'gl', version '4.1'.
  *
  * @package     qtype_easyostructure
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['correctansweris'] = 'A resposta correcta é: {$a}.';
+$string['pluginname_link'] = 'question/type/easyostructure';

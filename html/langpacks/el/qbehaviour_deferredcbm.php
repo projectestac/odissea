@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'el', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'el', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -38,7 +38,7 @@ $string['cbmgrades_help'] = 'Με την βαθμολόγηση με βάση τ
 ** Ακρίβεια ** είναι το ποσοστό % σωστών απαντήσεων με αγνόηση της βεβαιότητας αλλά σταθμισμένο για το μέγιστο βαθμό κάθε ερωτήματος.
 Η επιτυχής διάκριση περισσότερο και λιγότερο αξιόπιστων αποκρίσεων δίνει καλύτερο βαθμό από την επιλογή της ίδιας βεβαιότητας για κάθε ερώτηση. Αυτό αντανακλάται στο Bonus ** CBM **.
 ** Ακρίβεια ** + ** Μπόνους CBM ** είναι ένα καλύτερο μέτρο της γνώσης από (μόνο) ** Ακρίβεια **. Οι παρανοήσεις μπορούν να οδηγήσουν σε αρνητική βαθμολογία. Αυτό είναι μια προειδοποίηση για να δει κανείς πιο προσεκτικά τι είναι και δεν είναι γνωστό.';
-$string['cbmgrades_link'] = 'συμπεριφοράερ/καθυστερημένηCBM/βαθμόςβεβαιότητας';
+$string['cbmgrades_link'] = '';
 $string['cbmmark'] = 'Βαθμοί CBM {$a}';
 $string['certainty'] = 'Βεβαιότητα';
 $string['certainty-1'] = 'Δεν έχω ιδέα';
@@ -54,7 +54,7 @@ $string['certainty_help'] = 'Η βαθμολόγηση βάσει βεβαιότ
 Πιθανότητα ορθότητας        | <67%            | 67-80%      | > 80%
 
 Οι καλύτεροι βαθμοί κερδίζονται αναγνωρίζοντας την αβεβαιότητα. Για παράδειγμα, αν νομίζετε ότι υπάρχει μεγαλύτερη πιθανότητα από 1 στις 3 να κάνετε λάθος, πρέπει να εισάγετε Β = 1 και να αποφύγετε τον κίνδυνο αρνητικού σημείου.';
-$string['certainty_link'] = 'συμπεριφοράερ/καθυστερημένηCBM/βεβαιότητα';
+$string['certainty_link'] = '';
 $string['certaintyshort-1'] = 'Δεν έχω ιδέα';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';
@@ -67,7 +67,7 @@ $string['judgementok'] = 'ΟΚ';
 $string['judgementsummary'] = 'Αποκρίσεις: {$a->responses}. Ακρίβεια: {$a->fraction}. (Βέλτιστο εύρος από {$a->idealrangelow} σε {$a->idealrangehigh}). . Είσαστε {$a->judgement} χρησιμοποιώντας αυτό το επίπεδο βεβαιότητας.';
 $string['noquestions'] = 'Χωρίς απόκριση';
 $string['overconfident'] = 'με υπερβολική αυτοπεποίθηση';
-$string['pluginname'] = 'Αναβαλλόμενη ανατροφοδότηση με CBM (Certainty-based marking: βαθμολόγηση με βάση την βεβαιότητα)';
+$string['pluginname'] = 'Συμπεριφορά καθυστερημένης ανατροφοδότησης με CBM';
 $string['privacy:metadata'] = 'Το πρόσθετο «Συμπεριφορά καθυστερημένης ανατροφοδότησης με CBM» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['slightlyoverconfident'] = 'με λίγο υπερβολική αυτοπεποίθηση';
 $string['slightlyunderconfident'] = 'με λίγο μειωμένη αυτοπεποίθηση';

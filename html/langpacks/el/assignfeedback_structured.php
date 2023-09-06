@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_structured', language 'el', version '3.11'.
+ * Strings for component 'assignfeedback_structured', language 'el', version '4.1'.
  *
  * @package     assignfeedback_structured
  * @category    string
@@ -31,7 +31,7 @@ $string['criteriafieldsadd'] = 'Προσθέστε περισσότερα πεδ
 $string['criteriaset'] = 'Σετ κριτηρίων';
 $string['criteriasetconfirmdelete'] = 'Είστε σίγουροι ότι θέλετε να διαγράψετε μόνιμα το σετ κριτηρίων «{$a}»;';
 $string['criteriasetname'] = 'Όνομα σετ κριτηρίων';
-$string['criteriasetname_help'] = 'Το όνομα ενός συνόλου κριτηρίων πρέπει να είναι μοναδικό σε ολόκληρο τον ιστότοπο. Παρακαλούμε επιλέξτε προσεκτικά.';
+$string['criteriasetname_help'] = 'Το όνομα ενός σετ κριτηρίων πρέπει να είναι μοναδικό σε ολόκληρο τον ιστότοπο. Παρακαλούμε επιλέξτε προσεκτικά.';
 $string['criteriasetnameedit'] = 'Επεξεργασία ονόματος του σετ κριτηρίων';
 $string['criteriasetnameenter'] = 'Δώστε ένα μοναδικό όνομα';
 $string['criteriasetnameused'] = 'Δυστυχώς υπάρχει ήδη ένα σετ κριτηρίων που ονομάζεται «{$a}». Παρακαλούμε, δοκιμάστε ένα διαφορετικό όνομα.';
@@ -41,7 +41,7 @@ $string['criteriasetnonametitle'] = 'Δεν δόθηκε όνομα';
 $string['criteriasetnotdeleted'] = 'Δυστυχώς το σετ κριτηρίων «{$a}» δεν μπόρεσε να διαγραφεί. Παρακαλούμε προσπαθήστε ξανά ή να αναφέρετε αυτό το σφάλμα στο διαχειριστή σας.';
 $string['criteriasetnotsaved'] = 'Δυστυχώς το σετ κριτηρίων «{$a}» δεν μπόρεσε να αποθηκευτεί. Παρακαλούμε προσπαθήστε ξανά ή να αναφέρετε αυτό το σφάλμα στο διαχειριστή σας.';
 $string['criteriasetnotupdated'] = 'Δυστυχώς το σετ κριτηρίων «{$a}» δεν μπόρεσε να ενημερωθεί. Παρακαλούμε προσπαθήστε ξανά ή να αναφέρετε αυτό το σφάλμα στο διαχειριστή σας.';
-$string['criteriasetpublish'] = 'Μοιραστείτε με άλλους χρήστες';
+$string['criteriasetpublish'] = 'Κάντε κοινή χρήση με άλλους χρήστες';
 $string['criteriasetpublish_help'] = 'Τσεκάρετε αυτό το κουτάκι για να επιτρέψετε σε οποιονδήποτε να κάνει αντίγραφο αυτού του σετ κριτηρίων. Από προεπιλογή είναι διαθέσιμο μόνο σε σας.';
 $string['criteriasetsave'] = 'Αποθήκευση σετ κριτηρίων';
 $string['criteriasetsave_help'] = 'Κάντε κλικ σε αυτό το πλήκτρο και δώστε ένα μοναδικό όνομα για το σετ κριτηρίων σας, ώστε να επιτρέψετε να αντιγραφεί εύκολα σε άλλες αναθέσεις εργασιών.';
@@ -54,7 +54,7 @@ $string['criteriasetsmanage_help'] = 'Κάντε κλικ σε αυτό το π�
 $string['criteriasetsowned'] = 'Τα σετ κριτηρίων σας';
 $string['criteriasetssaved'] = 'Αποθηκευμένα σετ κριτηρίων';
 $string['criteriasetsshared'] = 'Κοινόχρηστα σετ κριτηρίων';
-$string['criteriasetsshowshared'] = 'Εμφάνιση σετ κριτηρίων';
+$string['criteriasetsshowshared'] = 'Εμφάνιση κοινόχρηστων σετ κριτηρίων';
 $string['criteriasetupdated'] = 'Το σετ κριτηρίων ενημερώθηκε';
 $string['criteriasetupdatedsuccess'] = 'Το σετ κριτηρίων σας ενημερώθηκε με επιτυχία.';
 $string['criteriasetuse'] = 'Χρήση αυτού το σετ';
@@ -66,13 +66,13 @@ $string['default'] = 'Ενεργοποιημένο από προεπιλογή';
 $string['default_help'] = 'Αν τσεκαριστεί, αυτή η μέθοδος ανατροφοδότησης θα ενεργοποιηθεί ως προεπιλογή για όλες τις νέες αναθέσεις εργασιών.';
 $string['enabled'] = 'Δομημένη ανατροφοδότηση';
 $string['escapetocancel'] = 'Escape για ακύρωση';
-$string['noownedsets'] = 'Δεν έχετε αυτή τη στιγμή καθόλου αποθηκευμένα σύνολα.';
-$string['nopermissionstodelete'] = 'Συγγνώμη, αλλά αυτή τη στιγμή δεν έχετε τα δικαιώματα για να διαγράψετε τα αποθηκευμένα σύνολα κριτηρίων σας.';
-$string['nopermissionstomanage'] = 'Συγγνώμη, αλλά αυτή τη στιγμή δεν έχετε τα δικαιώματα για να διαχειριστείτε τα αποθηκευμένα σύνολα κριτηρίων σας.';
-$string['nopermissionstopublish'] = 'Συγγνώμη, αλλά αυτή τη στιγμή δεν έχετε τα δικαιώματα για να μοιραστείτε τα αποθηκευμένα σύνολα κριτηρίων σας.';
-$string['nopermissionstosave'] = 'Συγγνώμη, αλλά αυτή τη στιγμή δεν έχετε τα δικαιώματα για να αποθηκεύσετε σύνολα κριτηρίων.';
-$string['nopermissionstoupdate'] = 'Συγγνώμη, αλλά αυτή τη στιγμή δεν έχετε τα δικαιώματα για να ενημερώσετε τα αποθηκευμένα σύνολα κριτηρίων σας.';
-$string['nosharedsets'] = 'Δεν υπάρχουν αυτή τη στιγμή καθόλου διαθέσιμα κοινόχρηστα σύνολα.';
+$string['noownedsets'] = 'Δεν έχετε αυτή τη στιγμή καθόλου αποθηκευμένα σετ.';
+$string['nopermissionstodelete'] = 'Συγγνώμη, αλλά αυτή τη στιγμή δεν έχετε τα δικαιώματα για να διαγράψετε τα αποθηκευμένα σετ κριτηρίων σας.';
+$string['nopermissionstomanage'] = 'Συγγνώμη, αλλά αυτή τη στιγμή δεν έχετε τα δικαιώματα για να διαχειριστείτε τα αποθηκευμένα σετ κριτηρίων σας.';
+$string['nopermissionstopublish'] = 'Συγγνώμη, αλλά αυτή τη στιγμή δεν έχετε τα δικαιώματα για να κάνετε κοινή χρήση των αποθηκευμένων σετ κριτηρίων σας.';
+$string['nopermissionstosave'] = 'Συγγνώμη, αλλά αυτή τη στιγμή δεν έχετε τα δικαιώματα για να αποθηκεύσετε σετ κριτηρίων.';
+$string['nopermissionstoupdate'] = 'Συγγνώμη, αλλά αυτή τη στιγμή δεν έχετε τα δικαιώματα για να ενημερώσετε τα αποθηκευμένα σετ κριτηρίων σας.';
+$string['nosharedsets'] = 'Δεν υπάρχουν αυτή τη στιγμή καθόλου διαθέσιμα κοινόχρηστα σετ.';
 $string['pluginname'] = 'Δομημένη ανατροφοδότηση';
 $string['privacy:metadata:assignmentid'] = 'Αναγνωριστικό ανάθεσης εργασίας';
 $string['privacy:metadata:commentpurpose'] = 'Το κείμενο σχολίου.';
@@ -81,6 +81,6 @@ $string['privacy:metadata:criterionpurpose'] = 'Το όνομα του κριτ�
 $string['privacy:metadata:gradepurpose'] = 'Το αναγνωριστικό βαθμού που σχετίζεται με την ανατροφοδότηση.';
 $string['privacy:metadata:tablesummary'] = 'Αυτό αποθηκεύει σχόλια από τους βαθμολογητές ως ανατροφοδότηση για τον μαθητή πάνω σε συγκεκριμένες πτυχές/διαστάσεις της υποβολής του.';
 $string['privacy:path'] = 'Δομημένη ανατροφοδότηση';
-$string['structured:manageowncriteriasets'] = 'Διαχείριση δικών σας αποθηκευμένων συνόλων κριτηρίων';
-$string['structured:publishcriteriasets'] = 'Να γίνουν τα αποθηκευμένα σύνολα κριτηρίων διαθέσιμα στους άλλους χρήστες';
+$string['structured:manageowncriteriasets'] = 'Διαχείριση δικών σας αποθηκευμένων σετ κριτηρίων';
+$string['structured:publishcriteriasets'] = 'Να γίνουν τα αποθηκευμένα σετ κριτηρίων διαθέσιμα στους άλλους χρήστες';
 $string['structuredfilename'] = 'δομημένη.html';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'nl', version '3.11'.
+ * Strings for component 'quiz_overview', language 'nl', version '4.1'.
  *
  * @package     quiz_overview
  * @category    string
@@ -66,11 +66,13 @@ $string['regradealldrydo'] = 'Herberekende pogingen gemarkeerd als herberekenen 
 $string['regradealldrydogroup'] = 'Herberekende pogingen ({$a->countregradeneeded}) gemarkeerd als herberekenen noodzakelijk in groep \'{$a->groupname}\'';
 $string['regradealldrygroup'] = 'Test voor volledige herberekening voor groep \'{$a->groupname}\'';
 $string['regradeallgroup'] = 'Volledige herberekening voor groep \'{$a->groupname}\'';
-$string['regradecomplete'] = 'Herberekenen gelukt';
-$string['regradedsuccessfullyxofy'] = 'Herbeoordelen gelukt ({$a->done}/{$a->count})';
+$string['regradecomplete'] = 'Herbeoordelen klaar';
+$string['regradedsuccessfullyxofy'] = 'Herbeoordelen klaar ({$a->done}/{$a->count})';
 $string['regradeheader'] = 'Herberekenen';
 $string['regradeselected'] = 'Herbereken geselecteerde pogingen';
+$string['regradingattemptissue'] = 'Slot {$a->slot}: {$a->reason}';
 $string['regradingattemptxofy'] = 'Herberekenen poging ({$a->done}/{$a->count})';
+$string['regradingattemptxofyproblem'] = 'De volgende vragen konden niet opnieuw worden beoordeeld in poging {$a->attemptnum} door {$a->name} (id {$a->attemptid})';
 $string['regradingattemptxofywithdetails'] = 'Opnieuw proberen ({$a->done}/{$a->count}) - Probeer {$a->attemptnum} door {$a->name} (id {$a->attemptid})';
 $string['show'] = 'Inbegrepen';
 $string['showattempts'] = 'Pogingen inbegrepen';

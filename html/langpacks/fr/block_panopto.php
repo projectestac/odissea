@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_panopto', language 'fr', version '3.11'.
+ * Strings for component 'block_panopto', language 'fr', version '4.1'.
  *
  * @package     block_panopto
  * @category    string
@@ -93,7 +93,7 @@ $string['block_panopto_check_server_interval'] = 'Intervalle de vérification de
 $string['block_panopto_check_server_interval_desc'] = 'Fréquence à laquelle le bilan de santé du serveur doit tenter de se connecter au serveur Panopto. Le résultat sera enregistré et mis en cache jusqu\'au prochain contrôle de santé.';
 $string['block_panopto_check_server_status'] = 'Vérifier la santé du serveur avant de charger le bloc';
 $string['block_panopto_check_server_status_desc'] = 'Lorsque cette option est sélectionnée, le serveur Panopto cible est vérifié pour s\'assurer qu\'il est en cours d\'exécution afin d\'éviter des appels de délai potentiellement longs lorsque le serveur est inaccessible. Cette option est désélectionnée par défaut car elle utilise une fonctionnalité dépendant de la plate-forme ou du système d\'exploitation. Elle ne doit être sélectionnée que si le support Panopto vous l\'a conseillé.';
-$string['block_panopto_creator_mapping'] = 'Cartographie du rôles créateur';
+$string['block_panopto_creator_mapping'] = 'Attribution du rôle créateur';
 $string['block_panopto_creator_mapping_desc'] = 'Sélectionner les rôles de cours qui seront définis comme créateurs dans les nouveaux dossiers de cours Panopto.';
 $string['block_panopto_enforce_category_after_course_provision'] = 'Créer des dossiers de catégories lors de la (re)mise à disposition de cours';
 $string['block_panopto_enforce_category_after_course_provision_desc'] = 'Lorsque cette option est sélectionnée, le (re)provisionnement créera des dossiers pour les catégories dans lesquelles se trouve le cours, ainsi que le dossier du cours lui-même.';
@@ -113,8 +113,8 @@ $string['block_panopto_print_log_to_file'] = 'Rediriger les journaux d\'erreurs 
 $string['block_panopto_print_log_to_file_desc'] = 'Lorsque cette option est sélectionnée, le journal d\'erreur de Panopto sera redirigé vers un fichier .txt, « PanoptoLogs.txt », situé dans le répertoire de base de Moodle. Cette option ne doit être sélectionnée que si le support Panopto le recommande.';
 $string['block_panopto_print_verbose_logs'] = 'Imprimer les journaux détaillés';
 $string['block_panopto_print_verbose_logs_desc'] = 'Lorsque cette option est sélectionnée, davantage de journaux seront ajoutés au journal d\'erreurs PHP de Panopto. Cette option ne doit être sélectionnée qu\'en cas de besoin, à des fins de débogage.';
-$string['block_panopto_publisher_mapping'] = 'Publisher role mapping';
-$string['block_panopto_publisher_mapping_desc'] = 'Cartographie du rôle éditeur';
+$string['block_panopto_publisher_mapping'] = 'Attribution du rôle éditeur';
+$string['block_panopto_publisher_mapping_desc'] = 'Attribution du rôle éditeur';
 $string['block_panopto_publisher_system_role_mapping'] = 'Rôles système avec autorisations d\'approvisionnement';
 $string['block_panopto_publisher_system_role_mapping_desc'] = 'Sélectionnez les rôles du système qui peuvent approvisionner de nouveaux dossiers de cours Panopto. L\'ajout de rôles à ce paramètre peut avoir un impact sur les performances des grands systèmes.';
 $string['block_panopto_server_number_desc'] = 'Cliquez sur "Enregistrer les modifications" pour mettre à jour le nombre de serveurs.';
@@ -126,7 +126,7 @@ $string['block_panopto_sync_after_login_desc'] = 'Lorsque cette option est séle
 $string['block_panopto_sync_after_provisioning'] = 'Synchroniser les utilisateurs inscrits après avoir réussi le provisionnement (non recommandé)';
 $string['block_panopto_sync_after_provisioning_desc'] = 'Si cette option est sélectionnée, tous les utilisateurs inscrits à un cours seront synchronisés après le provisionnement. En général, lorsqu\'un utilisateur accède au bloc Panopto dans un cours, l\'authentification et la synchronisation des autorisations pour ce cours se produisent. Par conséquent, nous ne recommandons aux organisations d\'activer ce paramètre que si elles ne placent pas le bloc Panopto dans Moodle (non recommandé).';
 $string['block_panopto_sync_on_enrolment'] = 'Synchroniser les utilisateurs après l\'inscription à une classe (facultatif)';
-$string['block_panopto_sync_on_enrolment_desc'] = 'Synchronise l\'autorisation lorsqu\'un étudiant est inscrit à un cours avec un dossier Panopto valide. Lorsqu\'elle est désactivée, l\'autorisation est synchronisée avec Panopto lorsque l\'utilisateur visualise le bloc Panopto. Cette fonction peut être activée si vous n\'avez pas l\'intention d\'utiliser le bloc dans un cours, ou si un cours a intégré du contenu Panopto directement dans la page d\'accueil du cours (dans ce cas, le contenu se chargera avant la synchronisation du bloc). Notez que l\'activation de cette fonctionnalité peut entraîner un ralentissement des performances lors de l\'inscription des utilisateurs.';
+$string['block_panopto_sync_on_enrolment_desc'] = 'Synchronise l\'autorisation lorsqu\'un étudiant est inscrit à un cours avec un dossier Panopto valide. Lorsqu\'elle est désactivée, l\'autorisation est synchronisée avec Panopto lorsque l\'utilisateur visionne le bloc Panopto. Cette fonction peut être activée si vous n\'avez pas l\'intention d\'utiliser le bloc dans un cours, ou si un cours a intégré du contenu Panopto directement dans la page d\'accueil du cours (dans ce cas, le contenu se chargera avant la synchronisation du bloc). Notez que l\'activation de cette fonctionnalité peut entraîner un ralentissement des performances lors de l\'inscription des utilisateurs.';
 $string['block_panopto_wsdl_proxy_host'] = 'Hôte du proxy WSDL';
 $string['block_panopto_wsdl_proxy_host_desc'] = 'Facultativement, vous pouvez ajouter l\'adresse hôte utilisée comme proxy pour tout service Panopto WSDL.';
 $string['block_panopto_wsdl_proxy_port'] = 'Port du proxy WSDL';
@@ -141,7 +141,7 @@ $string['bulk_rename_start_renaming'] = 'Début de la mise à jour de tous les n
 $string['bulk_reprovision_begin_reprovision'] = 'Re-provisionnement des cours vérifiés';
 $string['bulk_reprovision_start'] = 'Mise à jour de tous les dossiers de panopto';
 $string['bulk_reprovision_start_button'] = 'Commencez à mettre à niveau les dossiers';
-$string['bulk_task_access_error'] = 'BULK TASK BLOCKED : L\'utilisateur {$a} n\'a pas accès à un dossier de cours Panopto provisionné. L\'utilisateur doit avoir au moins un accès de visualisation à tous les dossiers de cours Panopto pour les opérations en masse. Il est fortement recommandé que l\'utilisateur soit un administrateur de Panopto.';
+$string['bulk_task_access_error'] = 'BULK TASK BLOCKED : L\'utilisateur {$a} n\'a pas accès à un dossier de cours Panopto provisionné. L\'utilisateur doit avoir au moins un accès de visionneur à tous les dossiers de cours Panopto pour les opérations en masse. Il est fortement recommandé que l\'utilisateur soit un administrateur de Panopto.';
 $string['bulk_task_contact_support'] = 'Veuillez ouvrir un ticket de support Panopto si vous avez des questions.';
 $string['bulk_task_new_step'] = 'Commençons maintenant l\'étape : {$a}';
 $string['bulk_task_reached_count'] = 'Vous avez atteint le nombre de dossiers souhaité, vous passez à l\'étape suivante.';
@@ -214,7 +214,7 @@ $string['no_live_sessions'] = 'Pas de sessions en direct';
 $string['no_publishers'] = 'Pas d\'éditeurs.';
 $string['no_server'] = 'Il n\'y a pas de serveurs configurés pour le provisionnement. Veuillez contacter l\'administrateur système.';
 $string['no_users_synced_desc'] = 'Tous les utilisateurs inscrits au cours seront synchronisés avec Panopto dès qu\'ils verront le bloc Panopto dans un cours.';
-$string['no_viewers'] = 'Pas de visualisateurs';
+$string['no_viewers'] = 'Pas de visionneurs';
 $string['or'] = 'OU';
 $string['panopto:addinstance'] = 'Ajouter un nouveau bloc Panopto';
 $string['panopto:myaddinstance'] = 'Ajouter un nouveau bloc Panopto à ma page';
@@ -227,13 +227,13 @@ $string['pluginname'] = 'Panopto';
 $string['podcast_audio'] = 'Podcast audio';
 $string['podcast_feeds'] = 'Flux de podcasts';
 $string['podcast_video'] = 'Podcast video';
-$string['privacy:metadata:block_panopto'] = 'In order to integrate with a Panopto service, user data needs to be exchanged with that service.';
+$string['privacy:metadata:block_panopto'] = 'Pour s\'intégrer à un service Panopto, les données de l\'utilisateur doivent être échangées avec ce service.';
 $string['privacy:metadata:block_panopto:email'] = 'Votre e-mail est envoyé à Panopto pour permettre l\'utilisation des fonctions de messagerie de Panopto.';
 $string['privacy:metadata:block_panopto:firstname'] = 'Votre prénom est envoyé à Panopto pour permettre de montrer le vrai nom de l\'utilisateur dans l\'expérience utilisateur de Panopto.';
 $string['privacy:metadata:block_panopto:lastname'] = 'Votre nom de famille est envoyé à Panopto pour permettre de montrer le vrai nom de l\'utilisateur dans l\'expérience utilisateur de Panopto.';
 $string['privacy:metadata:block_panopto:username'] = 'Votre nom d\'utilisateur est envoyé à Panopto pour lui permettre de créer un compte Panopto en utilisant le nom d\'utilisateur Moodle comme nom d\'utilisateur Panopto.';
 $string['provision'] = 'Provisionnement';
-$string['provision_access_error'] = 'Cours déjà provisionné dans un dossier Panopto et l\'utilisateur actuel n\'a pas l\'accès pour effectuer des opérations sur ce dossier (l\'utilisateur doit avoir au moins un accès de visualisateur dnas le dossier Panopto cible).';
+$string['provision_access_error'] = 'Cours déjà provisionné dans un dossier Panopto et l\'utilisateur actuel n\'a pas l\'accès pour effectuer des opérations sur ce dossier (l\'utilisateur doit avoir au moins un accès de visionneurs dans le dossier Panopto cible).';
 $string['provision_course_link_text'] = 'Provisionnement du cours';
 $string['provision_courses'] = 'Provisionnement des cours';
 $string['provision_error'] = 'Erreur de provisionnement du cours, veuillez vérifier les journaux pour plus de détails.';
@@ -248,8 +248,8 @@ $string['reinitialize_import_started'] = 'Début de la réinitialisation de l\'i
 $string['removed_panopto_adhoc_tasks'] = 'Toutes les tâches adhoc Panopto existantes ont été supprimées.';
 $string['require_panopto_version_title'] = 'Version minimale de Panopto requise pour cette version du bloc Panopto de Moodle';
 $string['result'] = 'Résultat';
-$string['role_map_header'] = 'Modifier les mappages des rôles Panopto';
-$string['role_map_header_help'] = 'Choisissez comment les rôles Moodle sont associés aux rôles Panopto. Les rôles Moodle non mappés se verront attribuer le rôle de visualisateur dans Panopto.';
+$string['role_map_header'] = 'Modifier les attributions des rôles Panopto';
+$string['role_map_header_help'] = 'Choisir comment les rôles Moodle sont associés aux rôles Panopto. Les rôles Moodle non attribués se verront attribuer le rôle de visionneur dans Panopto.';
 $string['select_server'] = 'Sélectionnez un serveur Panopto';
 $string['select_server_help'] = 'Choisissez le serveur Panopto sur lequel les dossiers de cours seront provisionnés.';
 $string['server_info_not_valid'] = 'Le nom du serveur ou la clé d\'application ne sont pas valides. Voici les valeurs tentées.';
@@ -281,5 +281,5 @@ $string['upgrade_panopto_required_version'] = 'Le serveur Panopto que vous utili
 $string['users_have_been_synced'] = 'Les utilisateurs ci-dessous ont été synchronisés et devraient être prêts à utiliser Panopto.';
 $string['users_will_be_synced_custom'] = 'Les futurs utilisateurs seront automatiquement synchronisés en fonction de vos paramètres Panopto personnalisés.';
 $string['verifying_permission'] = 'Vérification de l\'autorisation';
-$string['viewers'] = 'Visualisateurs';
-$string['watch_live'] = 'Regarder en direct';
+$string['viewers'] = 'Visionneurs';
+$string['watch_live'] = 'Visionner en direct';

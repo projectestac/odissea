@@ -76,7 +76,8 @@ DIALOGUE = function(config) {
             .append(Y.Node.create('<div class="' + CSS_CLASSES.HEADER + ' yui3-widget-hd"></div>'))
             .append(Y.Node.create('<div class="' + CSS_CLASSES.BODY + ' yui3-widget-bd"></div>'))
             .append(Y.Node.create('<div class="' + CSS_CLASSES.FOOTER + ' yui3-widget-ft"></div>')));
-    Y.one(document.body).append(config.notificationBase);
+    config.attachmentPoint = config.attachmentPoint || document.body;
+    Y.one(config.attachmentPoint).append(config.notificationBase);
     config.srcNode = '#' + id;
     delete config.buttons; // Don't let anyone pass in buttons as we want to control these during init. addButton can be used later.
     DIALOGUE.superclass.constructor.apply(this, [config]);
@@ -165,6 +166,18 @@ Y.extend(DIALOGUE, Y.Panel, {
         this.set('focusOn', Y.Array(this.get('focusOn')).filter(function(node) {
             return node.eventName !== 'focusoutside';
         }));
+
+        Y.one('document').on('orientationchange', function() {
+            // This will detect a change in orientation and re-trigger centering.
+            this.centerDialogOnVisible();
+        }, this);
+
+        Y.one('window').on('resize', function() {
+            // Detect window resize (most browsers).
+            this.centerDialogOnVisible();
+        }, this);
+        // Observe dialog on size change.
+        this.centerDialogOnDialogSizeChange(this);
 
         // Workaround upstream YUI bug http://yuilibrary.com/projects/yui3/ticket/2532507
         // and allow setting of z-index in theme.
@@ -408,6 +421,43 @@ Y.extend(DIALOGUE, Y.Panel, {
         }
         this.makeResponsive();
     },
+
+    /**
+     * Automatic re-center dialog when dialog size is changed.
+     *
+     * @method centerDialogOnDialogSizeChange
+     * @param {M.core.dialogue} dialog object to apply centering.
+     */
+    centerDialogOnDialogSizeChange: function(dialog) {
+        // ResizeObserver doesn't get recognized in JSHint.
+        // So we need to suppress the false warning.
+        var observer = new ResizeObserver(function() { // jshint ignore:line
+            dialog.centerDialogOnVisible();
+        });
+        var bb = dialog.get('boundingBox');
+        observer.observe(bb._node, {attributes: true, attributeFilter: ['class']});
+    },
+
+    /**
+     * Centering dialog when dialog is visible.
+     *
+     * @method centerDialogOnVisible
+     */
+    centerDialogOnVisible: function() {
+        if (!this.get('visible')) {
+            return; // Only centre visible dialogue.
+        }
+
+        if (this.name !== DIALOGUE_NAME) {
+            return; // Only centre Moodle dialogues.
+        }
+
+        if (this.shouldResizeFullscreen()) {
+            this.makeResponsive();
+        }
+        this.centerDialogue();
+    },
+
     /**
      * Return whether this dialogue should be fullscreen or not.
      *

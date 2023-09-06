@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'el', version '3.11'.
+ * Strings for component 'auth_ldap', language 'el', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -64,7 +64,7 @@ $string['auth_ldap_memberattribute_key'] = 'Χαρακτηριστικό member 
 $string['auth_ldap_no_mbstring'] = 'Χρειάζεστε την επέκταση mbstring για να δημιουργήσετε χρήστες στο Active Directory.';
 $string['auth_ldap_noconnect'] = 'Το άρθρωμα LDAP δεν μπορεί να συνδεθεί με τον εξυπηρετητή: {$a}';
 $string['auth_ldap_noconnect_all'] = 'Το άρθρωμα LDAP δεν μπορεί να συνδεθεί με κανέναν εξυπηρετητή: {$a}';
-$string['auth_ldap_noextension'] = 'Το άρθρωμα PHP  LDAP δεν φαίνεται να υπάρχει. Παρακαλούμε επιβεβαιώστε ότι είναι εγκατεστημένο και ενεργοποιημένο αν θέλετε να χρησιμοποιήσετε αυτό το πρόσθετο αυθεντικοποίησης.';
+$string['auth_ldap_noextension'] = '<em>Το άρθρωμα LDAP της PHP δεν φαίνεται να είναι  ********** υπάρχει. Παρακαλούμε επιβεβαιώστε ότι είναι εγκατεστημένο και ενεργοποιημένο αν θέλετε να χρησιμοποιήσετε αυτό το πρόσθετο αυθεντικοποίησης.</em>';
 $string['auth_ldap_objectclass'] = 'Προαιρετικό: Παρακάμπτει το objectClass που χρησιμοποιείται για την ονομασία/αναζήτηση χρηστών στο ldap_user_type. Συνήθως δεν χρειάζεται να το αλλάξετε.';
 $string['auth_ldap_objectclass_key'] = 'Κλάση αντικειμένου';
 $string['auth_ldap_opt_deref'] = 'Καθορίζει πως γίνεται χειρισμός των aliases (ψευδώνυμα) κατά την αναζήτηση. Επιλέξτε μία από τις παρακάτω τιμές: «Όχι» (LDAP_DEREF_NEVER) ή «Ναι» (LDAP_DEREF_ALWAYS)';
@@ -98,10 +98,10 @@ $string['auth_ldapextrafields'] = 'Αυτά τα πεδία είναι προα�
 <p>Εάν αφήσετε αυτά τα πεδία κενά, τότε τίποτα δεν θα αποσταλεί από το LDAP (Lightweight Directory Access Protocol: Υπηρεσίες καταλόγου) και θα χρησιμοποιηθούν οι προεπιλογές του Moodle.</p>
 <p>Σε κάθε περίπτωση, ο χρήστης θα μπορεί να παρέμβει σε όλα αυτά τα πεδία μετά την σύνδεση.</p>';
 $string['auth_ldapnotinstalled'] = 'Δεν είναι δυνατή η χρήση της αυθεντικοποίησης LDAP. Το άρθρωμα LDAP της PHP δεν είναι εγκατεστημένο.';
-$string['auth_ntlmsso'] = 'NTLM SSO (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση)';
-$string['auth_ntlmsso_enabled'] = 'Ορίστε το σε «ναι» για προσπάθεια SSO (Single Sign On: μία και μόνον ενιαία αυθεντικοποίηση) στον τομέα NTLM (NT LAN Manager: Πρωτόκολλα ασφαλείας της Microsoft). Σημειώστε ότι αυτό απαιτεί επιπρόσθετες ρυθμίσεις στον εξυπηρετητή για να λειτουργήσει. Για περισσότερες λεπτομέρειες, δείτε <a href="https://docs.moodle.org/en/NTLM_authentication">https://docs.moodle.org/en/NTLM_authentication</a>';
+$string['auth_ntlmsso'] = 'NTLM ενιαία αυθεντικοποίηση SSO (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση)';
+$string['auth_ntlmsso_enabled'] = 'Ορίστε το σε «ναι» για προσπάθεια ενιαίας αυθεντικοποίησης SSO (Single Sign On: μία και μόνον ενιαία αυθεντικοποίηση) στον τομέα NTLM (NT LAN Manager: Πρωτόκολλα ασφαλείας της Microsoft). Σημειώστε ότι αυτό απαιτεί επιπρόσθετες ρυθμίσεις στον εξυπηρετητή για να λειτουργήσει. Για περισσότερες λεπτομέρειες, δείτε <a href="https://docs.moodle.org/en/NTLM_authentication">https://docs.moodle.org/en/NTLM_authentication</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Ενεργοποίηση';
-$string['auth_ntlmsso_ie_fastpath'] = 'Επιλέξτε το για να ενεργοποιήσετε το γρήγορο μονοπάτι του NTLM SSO (παρακάμπτει ορισμένα βήματα μόνο στον περιηγητή MS Internet Explorer). (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση)';
+$string['auth_ntlmsso_ie_fastpath'] = 'Επιλέξτε το για να ενεργοποιήσετε το γρήγορο μονοπάτι της NTLM ενιαίας αυθεντικοποίησης SSO (παρακάμπτει ορισμένα βήματα μόνο στον περιηγητή MS Internet Explorer). (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση)';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Δοκιμάστε το NTLM σε όλους τους περιηγητές';
 $string['auth_ntlmsso_ie_fastpath_key'] = 'Γρήγορο μονοπάτι MS IE (Microsoft Internet Explorer);';
 $string['auth_ntlmsso_ie_fastpath_yesattempt'] = 'Ναι, δοκιμή του NTLM σε άλλους περιηγητές';
@@ -110,7 +110,7 @@ $string['auth_ntlmsso_maybeinvalidformat'] = 'Δεν είναι δυνατή η 
 $string['auth_ntlmsso_missing_username'] = 'Πρέπει να καθορίσετε τουλάχιστον το %username% στο μορφότυπο του απομακρυσμένου ονόματος χρήστη.';
 $string['auth_ntlmsso_remoteuserformat'] = 'Αν έχετε επιλέξει «NTLM» ως «Τύπο αυθεντικοποίησης», μπορείτε να καθορίσετε τον μορφότυπο του ονόματος απομακρυσμένου χρήστη. Αν το αφήσετε κενό, θα χρησιμοποιηθεί ο προεπιλεγμένος μορφότυπος DOMAIN\\uservame. Μπορείτε να χρησιμοποιήσετε το προαιρετικό δεσμευτικό θέσης<b>%domain%</b> για να προσδιορίσετε που θα εμφανίζεται το όνομα τομέα και το υποχρεωτικό δεσμευτικό θέσης <b>%username%</b> για να προσδιορίσετε που θα εμφανίζεται το όνομα χρήστη. <br /><br /> Μερικοί ευρέως χρησιμοποιούμενοι μορφότυποι είναι <tt>%domain%\\%username%</tt> (προεπιλογή των MS Windows), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> και μόνο <tt>%username%</tt> (αν δεν υπάρχει καθόλου τομέας).';
 $string['auth_ntlmsso_remoteuserformat_key'] = 'Μορφότυπος απομακρυσμένου ονόματος χρήστη';
-$string['auth_ntlmsso_subnet'] = 'Αν οριστεί, θα επιτρέπει SSO (Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση) μόνο με πελάτες στο ίδιο υποδίκτυο. Μορφότυπος IP: xxx.xxx.xxx.xxx/bitmask. Διαχωρίστε πολλαπλά υποδίκτυα με «,» (κόμμα).';
+$string['auth_ntlmsso_subnet'] = 'Αν οριστεί, θα επιτρέπει ενιαία αυθεντικοποίηση SSO (Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση) μόνο με πελάτες στο ίδιο υποδίκτυο. Μορφότυπος IP: xxx.xxx.xxx.xxx/bitmask. Διαχωρίστε πολλαπλά υποδίκτυα με «,» (κόμμα).';
 $string['auth_ntlmsso_subnet_key'] = 'Υποδίκτυο';
 $string['auth_ntlmsso_type'] = 'Η μέθοδος αυθεντικοποίησης που ορίστηκε στις ρυθμίσεις του εξυπηρετητή ιστού για να αυθεντικοποιεί τους χρήστες (αν υπάρχει αμφιβολία, επιλέξτε NTLM)';
 $string['auth_ntlmsso_type_key'] = 'Τύπος αυθεντικοποίησης';
@@ -126,6 +126,10 @@ $string['diag_toooldversion'] = 'Είναι πολύ απίθανο ένας σ�
 $string['didntfindexpiretime'] = 'Η password_expire() (λήξη κωδικού πρόσβασης) δεν βρήκε χρόνο λήξης.';
 $string['didntgetusersfromldap'] = 'Δεν επιστράφηκε κανένας χρήστης από το LDAP -- σφάλμα; -- έξοδος...';
 $string['gotcountrecordsfromldap'] = 'Λήφθηκαν {$a} εγγραφές από το LDAP';
+$string['invalidusererrors'] = 'Προειδοποίηση: Παραλείφθηκε η δημιουργία {$a} λογαριασμών χρηστών.';
+$string['invaliduserexception'] = 'Σφάλμα: Αδυναμία δημιουργίας  νέου λογαριασμού χρήστη. Λεπτομέρειες και αιτία:
+{$a}
+Παράλειψη του χρήστη.';
 $string['ldapnotconfigured'] = 'Η διεύθυνση URL του εξυπηρετητή LDAP δεν είναι ρυθμισμένη';
 $string['morethanoneuser'] = 'Περισσότερες από μία εγγραφές χρήστη βρέθηκαν στο LDAP. Θα χρησιμοποιηθεί μόνο η πρώτη.';
 $string['needbcmath'] = 'Χρειάζεται η επέκταση BCMath για να χρησιμοποιηθεί ο έλεγχος ληγμένων κωδικών πρόσβασης με το Active Directory.';
@@ -137,10 +141,10 @@ $string['noupdatestobedone'] = 'Δεν υπάρχουν ενημερώσεις';
 $string['nouserentriestoremove'] = 'Δεν υπάρχουν καταχωρήσεις χρήστη για να διαγραφούν';
 $string['nouserentriestorevive'] = 'Δεν υπάρχουν καταχωρήσεις χρηστών προς αναβίωση';
 $string['nouserstobeadded'] = 'Δεν υπάρχουν καταχωρήσεις χρηστών για να προστεθούν';
-$string['ntlmsso_attempting'] = 'Attempting Single Sign On via NTLM...';
+$string['ntlmsso_attempting'] = 'Προσπάθεια για Single Sign On μέσω NTLM...';
 $string['ntlmsso_failed'] = 'Αποτυχία αυτόματης σύνδεσης, παρακαλούμε δοκιμάστε την κανονική σελίδα σύνδεσης...';
-$string['ntlmsso_isdisabled'] = 'Απενεργοποίηση του NTLM SSO (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση).';
-$string['ntlmsso_unknowntype'] = 'Άγνωστος τύπος NTLM SSO (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση).';
+$string['ntlmsso_isdisabled'] = 'Απενεργοποίηση της NTLM ενιαίας αυθεντικοποίησης SSO (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση).';
+$string['ntlmsso_unknowntype'] = 'Άγνωστος τύπος NTLM ενιαίας αυθεντικοποίησης SSO (NTLM =NT LAN Manager: διαχειριστής τοπικού δικτύου των Microsoft NT) (SSO=Single sign-on: μία και μόνον ενιαία αυθεντικοποίηση).';
 $string['pagedresultsnotsupp'] = 'Δεν υποστηρίζονται τα σελιδοποιημένα αποτελέσματα LDAP (είτε η έκδοση PHP δεν τα υποστηρίζει, είτε έχετε ρυθμίσει το Moodle να χρησιμοποιεί το πρωτόκολλο LDAP έκδοσης 2, ή το Moodle δεν μπορεί να επικοινωνήσει με τον LDAP εξυπηρετητή σας για να δει αν είναι διαθέσιμη η υποστήριξη σελιδοποίησης.';
 $string['pagesize'] = 'Επιβεβαιώστε ότι αυτή η τιμή είναι μικρότερη από το όριο πλήθους αποτελεσμάτων του LDAP εξυπηρετητή σας (μέγιστος αριθμός καταχωρήσεων που μπορούν να επιστραφούν σε ένα ερώτημα)';
 $string['pagesize_key'] = 'Μέγεθος σελίδας';
@@ -159,7 +163,6 @@ $string['updatepasserrorexpire'] = 'Σφάλμα στο user_update_password() �
 $string['updatepasserrorexpiregrace'] = 'Σφάλμα στην (διαδικασία) user_update_password() κατά την τροποποίηση του χρόνου λήξης και/ή των συνδέσεων χάριτος μετά τη λήξη. Κωδικός σφάλματος: {$a->errno}. Μήνυμα σφάλματος: {$a->errstring}';
 $string['updateremfail'] = 'Σφάλμα κατά την ενημέρωση της εγγραφής LDAP. Κωδικός σφάλματος: {$a->errno}. Μήνυμα σφάλματος: {$a->errstring}<br/>Πλήκτρο ({$a->key}) - παλιά τιμή moodle: «{$a->ouvalue}» νέα τιμή: «{$a->nuvalue}».';
 $string['updateremfailamb'] = 'Αποτυχία ενημέρωσης LDAP με διφορούμενο πεδίο {$a->key}. Παλιά τιμή moodle: «{$a->ouvalue}», νέα τιμή: «{$a->nuvalue}».';
-$string['updateremfailfield'] = 'Αποτυχία ενημέρωσης του LDAP με μη υπάρχον πεδίο («{$a->ldapkey}»). Κλειδί ({$a->key}) - παλαιά τιμή Moodle: «{$a->ouvalue}», νέα τιμή: «{$a->nuvalue}».';
 $string['updateusernotfound'] = 'Δεν ήταν δυνατή η εύρεση χρήστη κατά την ενημέρωση εξωτερικά. Λεπτομέρειες/στοιχεία σφάλματος: βάση αναζήτησης: «{$a->userdn}»; φίλτρο αναζήτησης: «(objectClass = *)»; χαρακτηριστικά αναζήτησης: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() δεν υποστηρίζει τον επιλεγμένο τύπο χρήστη: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() δεν υποστηρίζει τον επιλεγμένο τύπο χρήστη: {$a}';

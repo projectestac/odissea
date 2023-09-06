@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'zh_cn', version '3.11'.
+ * Strings for component 'user', language 'zh_cn', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = '保密设置并通过电子邮件发送给�
 $string['privacy:metadata:trackforums'] = '讨论区及其跟踪的偏好。';
 $string['privacy:metadata:trustbitmask'] = '信任码掩码';
 $string['privacy:metadata:url'] = '与此用户相关的网址。';
+$string['privacy:metadata:user_preference:core_user_welcome'] = '首次向用户显示欢迎消息时记录的时间戳。';
 $string['privacy:metadata:user_preferences'] = '与指定用户关联的偏好';
 $string['privacy:metadata:user_preferences:name'] = '偏好名称';
 $string['privacy:metadata:user_preferences:userid'] = '用户 ID';
@@ -149,6 +150,10 @@ $string['privacy:privatefilespath'] = '私人文件';
 $string['privacy:profileimagespath'] = '头像';
 $string['privacy:sessionpath'] = '会话数据';
 $string['selectfiltertype'] = '选择';
+$string['supportmessagealternative'] = '相反您可以通过电子邮件发送 {$a}.';
+$string['supportmessagenotsent'] = '很遗憾您的消息无法发送。';
+$string['supportmessagesent'] = '您的消息已发送。';
+$string['supportmessagesentforloggedoutuser'] = '要小心处理这条消息。发件人未登录，因此尚未确认他们的身份。';
 $string['target:upcomingactivitiesdue'] = '即将到来的活动';
 $string['target:upcomingactivitiesdue_help'] = '此目标为即将到来的活动生成提醒。';
 $string['target:upcomingactivitiesdueinfo'] = '此处列出了所有即将到来的应有见解的活动。这些学生直接收到了这些见解。';

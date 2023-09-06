@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ja', version '3.11'.
+ * Strings for component 'tool_usertours', language 'ja', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -43,9 +43,12 @@ $string['confirmtourremovalquestion'] = '本当にこのツアーを削除して
 $string['confirmtourremovaltitle'] = 'ツアーの削除を確認する';
 $string['content'] = 'コンテンツ';
 $string['content_heading'] = 'コンテンツ';
-$string['content_help'] = '必要であればステップを記述するコンテンツをマルチメディアタグ (multi-languageコンテンツフィルタを使用) で囲まれたプレインテキストで追加できます。
-
-代わりにフォーマットID、コンポーネントに言語ストリングIDを入力できます (角括弧なしまたはカンマの後のスペースなし)。';
+$string['content_help'] = '必要であればステップを記述するコンテンツをマルチメディアタグ (multi-languageコンテンツフィルタを使用) で囲まれたプレインテキストで追加できます。';
+$string['content_type'] = 'コンテンツタイプ';
+$string['content_type_help'] = '* 手動 - テキストエディタでコンテンツを入力します。
+* 言語ストリングID - ストリングID,コンポーネント (カンマの後にスペースなし) 形式で記述します。';
+$string['content_type_langstring'] = '言語ストリングID';
+$string['content_type_manual'] = '手動';
 $string['cssselector'] = 'CSSセレクタ';
 $string['defaultvalue'] = 'デフォルト ({$a})';
 $string['delay'] = 'ステップ表示までの遅延';
@@ -53,12 +56,22 @@ $string['delay_help'] = 'あなたは任意でステップが表示されるま�
 
 この遅延はミリ秒です。';
 $string['description'] = '説明';
+$string['description_help'] = 'ツアー説明は必要に応じてmultilangタグで囲んだプレインテキストとして追加できます (多言語コンテンツフィルタで使用するため)。
+
+代わりに言語ストリングIDを「identifier,component」の形式で入力できます (カンマの後に括弧または空白を付加しないでください)。';
+$string['displaystepnumbers'] = 'ステップ数を表示する';
+$string['displaystepnumbers_help'] = 'ユーザツアーの長さを示すために1/4、2/4等のステップ数を表示するかどうか決定します。';
 $string['done'] = '完了';
 $string['duplicatetour'] = 'ツアーを複製する';
 $string['duplicatetour_name'] = '{$a} (コピー)';
 $string['editstep'] = '編集 「 {$a} 」';
 $string['enabled'] = '有効';
+$string['endonesteptour'] = '分かりました';
 $string['endtour'] = 'ツアー終了';
+$string['endtourlabel'] = 'ツアー終了ボタンラベル';
+$string['endtourlabel_help'] = 'あなたは任意でツアー終了ボタンにカスタムラベルを指定できます。単一ステップツアーのデフォルトラベルは「分かりました」、複数ステップツアーのデフォルトラベルは「ツアー終了」です。
+
+代わりに言語ストリングIDを「identifier,component」の形式で入力できます (カンマの後に括弧または空白を付加しないでください)。';
 $string['event_step_shown'] = '表示ステップ';
 $string['event_tour_ended'] = 'ツアー終了';
 $string['event_tour_reset'] = 'ツアーリセット';
@@ -85,17 +98,23 @@ $string['filter_role_help'] = 'ツアー表示時にコンテクスト内の選�
 $string['filter_theme'] = 'テーマ';
 $string['filter_theme_help'] = '選択されたテーマをユーザが使用している場合にツアーを表示します。';
 $string['importtour'] = 'ツアーをインポートする';
+$string['invalid_lang_id'] = '無効な言語ストリングIDです。';
 $string['left'] = '左';
 $string['modifyshippedtourwarning'] = 'これはMoodleに同梱されているユーザツアーです。あなたの修正すべては次のサイトアップグレードで上書きされる可能性があります。';
+$string['moodle_language_identifier'] = '言語ストリングID';
 $string['movestepdown'] = 'ステップを下に移動する';
 $string['movestepup'] = 'ステップを上に移動する';
 $string['movetourdown'] = 'ツアーを下に移動する';
 $string['movetourup'] = 'ツアーを上に移動する';
 $string['name'] = '名称';
+$string['name_help'] = 'ツアー名は必要に応じてmultilangタグで囲んだプレインテキストとして追加できます (多言語コンテンツフィルタで使用するため)。
+
+代わりに言語ストリングIDを「identifier,component」の形式で入力できます (カンマの後に括弧または空白を付加しないでください)。';
 $string['newstep'] = '新しいステップ';
 $string['newtour'] = '新しいツアーを作成する';
 $string['next'] = '次へ';
 $string['nextstep'] = '次へ';
+$string['nextstep_sequence'] = '次 ({$a->position}/{$a->total})';
 $string['options_heading'] = 'オプション';
 $string['orphan'] = 'ターゲットが見つからない場合に表示する';
 $string['orphan_help'] = 'ページ上にターゲットが見つからない場合にステップを表示します。';
@@ -133,6 +152,7 @@ $string['selectordisplayname'] = 'CSSセレクタ合致「 {$a} 」';
 $string['selecttype'] = 'ステップタイプを選択する';
 $string['sharedtourslink'] = 'ツアーリポジトリ';
 $string['skip'] = 'スキップ';
+$string['skip_tour'] = 'ツアーをスキップする';
 $string['target'] = 'ターゲット';
 $string['target_block'] = 'ブロック';
 $string['target_heading'] = 'ステップターゲット';
@@ -152,7 +172,7 @@ $string['title_help'] = 'ステップのタイトルは必要であればマル�
 代わりにフォーマットID、コンポーネントに言語ストリングIDを入力できます (カンマの後に角括弧またはスペースなし)。';
 $string['tour1_content_addingblocks'] = '実際、あなたのページにブロックを追加する場合、慎重に考えてください。ブロックはMoodleアプリで表示されないため、一般的にあなたのサイトがブロックなしでも正常に動作することを確認した方が良いでしょう。';
 $string['tour1_content_blockregion'] = 'ここにまだブロック領域があります。すべての機能がBoostテーマの別の場所にあるため、ナビゲーションおよび管理ブロックを完全に削除することをお勧めします。';
-$string['tour1_content_customisation'] = 'あなたのサイトおよびフロントページの概観をカスタマイズする場合、このヘッダの角にある設定メニューを使用してください。編集モードを開始してください。';
+$string['tour1_content_customisation'] = 'あなたのサイトおよびサイトホームの概観をカスタマイズする場合、このヘッダの角にある設定メニューを使用してください。編集モードを開始してください。';
 $string['tour1_content_end'] = 'あなたのユーザツアーの最後です。あなたがフッタ内のリンクをクリックしてリセットしない限り、再度表示されることはありません。あなたは管理者としてこのような独自のツアーを作成することもできます!';
 $string['tour1_content_navigation'] = '主ナビゲーションはこのナビゲーションドロワを使用します。サイト内でのあなたの場所に応じてコンテンツが更新されます。ナビゲーションドロワを表示または非表示にするには最上部のボタンを使用してください。';
 $string['tour1_content_welcome'] = 'Boostテーマにようこそ。あなたが前のバージョンからアップグレードした場合、このテーマが少しだけ違う点に気付くことでしょう。';
@@ -164,7 +184,7 @@ $string['tour1_title_navigation'] = 'ナビゲーション';
 $string['tour1_title_welcome'] = 'ようこそ';
 $string['tour2_content_addblock'] = '編集モードを開始した場合、あなたはナビゲーションドロワよりブロックを追加できます。しかし、あなたのページにブロックを設置する場合、慎重に考えてください。ブロックはMoodleアプリで表示されないため、最良のユーザ経験のためにあなたのコースワークがブロックなしでも正常に動作することを確認した方が良いでしょう。';
 $string['tour2_content_addingblocks'] = 'このボタンを使用することにより、あなたはこのページにブロックを追加できます。しかし、あなたのページにブロックを設置する場合、慎重に考えてください。ブロックはMoodleアプリで表示されないため、最良のユーザ経験のためにあなたのコースワークがブロックなしでも正常に動作することを確認した方が良いでしょう。';
-$string['tour2_content_customisation'] = 'コース設定を変更する場合、このヘッダの角にある設定メニュを使用してください。すべての活動のホームページにも似たような設定メニュがあります。編集モードを開始してください。';
+$string['tour2_content_customisation'] = 'コース設定を変更する場合、このヘッダの角にある設定メニューを使用してください。すべての活動のホームページにも似たような設定メニューがあります。編集モードを開始してください。';
 $string['tour2_content_end'] = 'あなたのユーザツアーの最後です。あなたがフッタ内のリンクをクリックしてリセットしない限り、再度表示されることはありません。必要であればサイト管理者はこのサイトのツアーをさらに作成することができます。';
 $string['tour2_content_navigation'] = 'ナビゲーションはこのナビゲーションドロワを使用します。ナビゲーションドロワを表示または非表示にするには最上部のボタンを使用してください。あなたのコースセクションへのリンクが表示されます。';
 $string['tour2_content_opendrawer'] = 'ナビゲーションドロワを開いてみてください。';
@@ -230,6 +250,27 @@ $string['tour_activityinfo_course_teacher_content'] = '新しいコース設定�
 $string['tour_activityinfo_course_teacher_title'] = 'New: 活動情報';
 $string['tour_final_step_content'] = 'ここであなたのユーザツアーは終了します。あなたがフッタのリンクを使ってリセットしない限り、再度表示されることはありません。';
 $string['tour_final_step_title'] = 'ツアー終了';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br />ここに重要なニュースを投稿します。';
+$string['tour_navigation_course_announcements_teacher_title'] = 'すべての人に伝えたいことがありますか?';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br />新しいコンテンツを追加するか、既存のコンテンツを編集します。';
+$string['tour_navigation_course_edit_teacher_title'] = '編集モードを開始する';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br />活動を閲覧してあなたの進捗を確認します。';
+$string['tour_navigation_course_index_student_title'] = 'あなたの道を探す';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br />活動をドラッグ&ドロップしてコースコンテンツを並べ替えます。';
+$string['tour_navigation_course_index_teacher_title'] = 'コースインデックス';
+$string['tour_navigation_course_student_tour_des'] = 'コース内の活動を閲覧する場所';
+$string['tour_navigation_course_student_tour_name'] = 'コースインデックス';
+$string['tour_navigation_course_teacher_tour_des'] = '編集モード、活動のドラッグ&ドロップおよびコース内のアナウンスメントの投稿等';
+$string['tour_navigation_course_teacher_tour_name'] = 'コース編集';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br />このサイドパネルにはさらに機能を追加することができます。';
+$string['tour_navigation_dashboard_title'] = '探検するために拡大する';
+$string['tour_navigation_dashboard_tour_des'] = 'ブロックを表示できる場所';
+$string['tour_navigation_dashboard_tour_name'] = 'ブロックドロワ';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br />このメニューからコースを追加、コピー、削除および秘匿します。';
+$string['tour_navigation_mycourses_endtourlabel'] = '了解しました。';
+$string['tour_navigation_mycourses_title'] = 'コースおよびカテゴリ';
+$string['tour_navigation_mycourses_tour_des'] = 'マイコースページのコース管理オプション';
+$string['tour_navigation_mycourses_tour_name'] = 'コース管理';
 $string['tour_resetforall'] = 'ツアーの状態がリセットされました。再度すべてのユーザに表示されます。';
 $string['tourconfig'] = 'インポートするツアー設定ファイル';
 $string['tourisenabled'] = 'ツアー有効';

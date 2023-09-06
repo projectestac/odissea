@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_checkbox', language 'el', version '3.11'.
+ * Strings for component 'datafield_checkbox', language 'el', version '4.1'.
  *
  * @package     datafield_checkbox
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Πεδίο πλαισίου ελέγχου';
-$string['pluginname'] = 'Πλαίσιο ελέγχου';
-$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο πλαισίου ελέγχου» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';
+$string['fieldtypelabel'] = 'Πεδίο πλαισίου επιλογής';
+$string['pluginname'] = 'Πλαίσιο επιλογής';
+$string['privacy:metadata'] = 'Το στοιχείο λογισμικού «Πεδίο πλαισίου επιλογής» δεν αποθηκεύει κανένα προσωπικό δεδομένο· χρησιμοποιεί πίνακες που ορίζονται στο mod_data.';

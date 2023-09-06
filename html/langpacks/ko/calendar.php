@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ko', version '3.11'.
+ * Strings for component 'calendar', language 'ko', version '4.1'.
  *
  * @package     calendar
  * @category    string
@@ -30,10 +30,12 @@ $string['advancedoptions'] = '상세 설정';
 $string['allday'] = '모든 날';
 $string['annually'] = '매년';
 $string['calendar'] = '달력';
+$string['calendarexporturl'] = '달력 URL';
 $string['calendarheading'] = '{$a} 달력';
 $string['calendarpreferences'] = '달력 선택 설정';
 $string['calendartypes'] = '달력 유형';
 $string['calendarurl'] = '달력 URL : {$a}';
+$string['calendarurlcopiedtoclipboard'] = '달력 URL이 클립보드에 복사되었습니다.';
 $string['category'] = '범주';
 $string['categoryevents'] = '일정 분류';
 $string['clickhide'] = '감추기';
@@ -45,6 +47,8 @@ $string['colpoll'] = '업데이트';
 $string['commontasks'] = '선택사항들';
 $string['confirmeventdelete'] = '"{$a}"일정을 지울까요?';
 $string['confirmeventseriesdelete'] = '"{$a->name}"일정은 묶음일정의 일부입니다. 이 일정을 지우길 원하거나, 아니면 모든 {$a->count}묶음일정을 지우기를 원하십니까?';
+$string['copycalendarurl'] = '달력 URL 복사';
+$string['copyurl'] = 'URL 복사';
 $string['course'] = '강좌';
 $string['courseevent'] = '강좌행사';
 $string['courseevents'] = '강좌일정';
@@ -108,9 +112,6 @@ $string['exportcalendar'] = '달력 내보냄';
 $string['fri'] = '금';
 $string['friday'] = '금요일';
 $string['generateurlbutton'] = '달력 URL 가져옴';
-$string['global'] = '전체';
-$string['globalevent'] = '전체 행사';
-$string['globalevents'] = '전체 일정';
 $string['gotoactivity'] = '활동으로 이동';
 $string['gotocalendar'] = '달력으로 가기';
 $string['group'] = '모둠';

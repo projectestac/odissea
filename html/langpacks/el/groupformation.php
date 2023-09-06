@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupformation', language 'el', version '3.11'.
+ * Strings for component 'groupformation', language 'el', version '4.1'.
  *
  * @package     groupformation
  * @category    string
@@ -168,7 +168,7 @@ $string['importance'] = 'Σπουδαιότητα:';
 $string['inactive_members_are'] = 'Χρήστες που εγκατέλειψαν την ομάδα ή το μάθημα:';
 $string['input'] = 'Είσοδος:';
 $string['invalid'] = 'μη έγκυρη κατάσταση';
-$string['jobget_name'] = 'Διαμόρφωση ομάδων και εκκαθάριση';
+$string['jobget_name'] = 'σχηματισμός ομάδων και εκκαθάριση';
 $string['justpass'] = 'Απλώς περνάει';
 $string['knowledge'] = 'Γνώση';
 $string['knowledgeChoice'] = 'Γνώση';
@@ -199,7 +199,7 @@ $string['no_data_to_display'] = 'Καθόλου δεδομένα προς εμφ
 $string['no_evaluation_ready'] = 'Δεν υπάρχει καμία αξιολόγηση για εσάς. Η αξιολόγηση των απαντήσεών σας είναι δυνατή εάν απαντήσατε σε όλα και υποβάλατε τις απαντήσεις σας.';
 $string['no_time'] = 'Δεν έχει οριστεί χρόνος';
 $string['nochangespossible'] = 'Το ερωτηματολόγιο έχει ήδη απαντηθεί.
-Μπορεί μόνο να αλλάξει ο μέγιστο αριθμός των μελών ή των ομάδων. Άλλες αλλαγές δεν θα αποθηκευτούν.';
+Μπορεί μόνο να αλλάξει ο μέγιστος αριθμός των μελών ή των ομάδων. Άλλες αλλαγές δεν θα αποθηκευτούν.';
 $string['noevaluation'] = 'Καμία αξιολόγηση';
 $string['nogroupformation'] = 'Χωρίς σχηματισμό ομάδων';
 $string['none'] = 'καμία';

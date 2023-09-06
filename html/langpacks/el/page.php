@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'el', version '3.11'.
+ * Strings for component 'page', language 'el', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -50,7 +50,7 @@ $string['modulename_help'] = 'Το άρθρωμα σελίδας επιτρέπ�
 
 * Για παρουσίαση των όρων και προϋποθέσεων ενός μαθήματος ή μιας περίληψης της ύλης του μαθήματος.
 * Για ενσωμάτωση μερικών αρχείων βίντεο ή ήχου μαζί με κάποιο επεξηγηματικό κείμενο.';
-$string['modulename_link'] = 'άρθρωμα/σελίδα/εμφάνιση';
+$string['modulename_link'] = '';
 $string['modulenameplural'] = 'Σελίδες';
 $string['optionsheader'] = 'Εμφάνιση επιλογών';
 $string['page-mod-page-x'] = 'Οποιαδήποτε σελίδα αρθρώματος σελίδας';

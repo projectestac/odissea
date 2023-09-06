@@ -59,8 +59,10 @@ class missingtype_test extends \question_testcase {
         $questiondata->qtype = 'strange_unknown';
         $questiondata->length = 1;
         $questiondata->stamp = make_unique_id_code();
-        $questiondata->version = make_unique_id_code();
-        $questiondata->hidden = 0;
+        $questiondata->status = \core_question\local\bank\question_version_status::QUESTION_STATUS_READY;
+        $questiondata->version = 1;
+        $questiondata->versionid = 0;
+        $questiondata->questionbankentryid = 0;
         $questiondata->idnumber = null;
         $questiondata->timecreated = 0;
         $questiondata->timemodified = 0;

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'gl', version '3.11'.
+ * Strings for component 'group', language 'gl', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -32,7 +32,7 @@ $string['addgroupstogroupings'] = 'Engadir/retirar grupos';
 $string['adduserstogroup'] = 'Engadir/retirar usuarios';
 $string['allocateby'] = 'Asignar membros';
 $string['anygrouping'] = '[Calquera agrupamento]';
-$string['autocreategroups'] = 'Crear grupos automaticamente';
+$string['autocreategroups'] = 'Crear grupos automáticamente';
 $string['backtogroupings'] = 'Volver aos agrupamentos';
 $string['backtogroups'] = 'Volver aos grupos';
 $string['badnamingscheme'] = 'Debe conter exactamente un carácter «@» ou «#»';
@@ -45,7 +45,7 @@ $string['creategrouping'] = 'Crear agrupamento';
 $string['creategroupinselectedgrouping'] = 'Crear grupo en agrupamento';
 $string['createingrouping'] = 'Crear en agrupamento';
 $string['createorphangroup'] = 'Crear un grupo orfo';
-$string['csvdelimiter'] = 'Delimitador CSV';
+$string['csvdelimiter'] = 'Separador CSV';
 $string['databaseupgradegroups'] = 'A versión dos grupos agora é a {$a}';
 $string['defaultgrouping'] = 'Agrupamento predeterminado:';
 $string['defaultgroupingname'] = 'Agrupamento';
@@ -57,7 +57,7 @@ $string['deletegrouping'] = 'Eliminar agrupamento';
 $string['deletegroupingconfirm'] = 'Confirma que quere eliminar o agrupamento «{$a}»? (Os grupos non se eliminarán).';
 $string['deletegroupsconfirm'] = 'Confirma que quere eliminar os grupos seguintes?';
 $string['deleteselectedgroup'] = 'Eliminar grupo seleccionado';
-$string['editgroupingsettings'] = 'Editar os axustes de agrupamento';
+$string['editgroupingsettings'] = 'Editar a configuración de agrupamento';
 $string['editgroupsettings'] = 'Editar os axustes de grupo';
 $string['editusersgroupsa'] = 'Editar grupos para «{$a}»';
 $string['enablemessaging'] = 'Mensaxería en grupo';
@@ -89,8 +89,8 @@ $string['eventgroupupdated'] = 'Grupo actualizado';
 $string['existingmembers'] = 'Membros existentes: {$a}';
 $string['filtergroups'] = 'Filtrar grupos por:';
 $string['group'] = 'Grupo';
-$string['groupaddedsuccesfully'] = 'O grupo {$a} foi engadido satisfactoriamente';
-$string['groupaddedtogroupingsuccesfully'] = 'O grupo {$a->groupname} foi engadido satisfactoriamente ao agrupamento {$a->groupingname}';
+$string['groupaddedsuccesfully'] = 'O grupo {$a} foi engadido correctamente';
+$string['groupaddedtogroupingsuccesfully'] = 'O grupo {$a->groupname} foi engadido correctamente ao agrupamento {$a->groupingname}';
 $string['groupby'] = 'Especificar';
 $string['groupdescription'] = 'Descrición do grupo';
 $string['groupinfo'] = 'Información sobre o grupo seleccionado';
@@ -98,7 +98,7 @@ $string['groupinfomembers'] = 'Información sobre os membros seleccionados';
 $string['groupinfopeople'] = 'Información sobre as persoas seleccionadas';
 $string['grouping'] = 'Agrupamento';
 $string['grouping_help'] = 'Un agrupamento é un conxunto de grupos dentro dun curso. De estar seleccionado un agrupamento, os usuarios asignados aos grupos dentro do agrupamento poderán traballar xuntos.';
-$string['groupingaddedsuccesfully'] = 'O agrupamento {$a} foi engadido satisfactoriamente';
+$string['groupingaddedsuccesfully'] = 'O agrupamento {$a} foi engadido correctamente';
 $string['groupingdescription'] = 'Descrición do agrupamento';
 $string['groupingname'] = 'Nome do agrupamento';
 $string['groupingnameexists'] = 'O nome de agrupamento «{$a}» xa existe neste curso. Escolla outro.';
@@ -141,14 +141,14 @@ $string['importgroups'] = 'Importar grupos';
 $string['importgroups_help'] = 'Os grupos poden importarse mediante un ficheiro de texto. O formato do ficheiro ten que ser como sigue:
 
 * Cada liña do ficheiro contén un rexistro
-* Cada rexistro é unha serie de datos separados por comas
+* Cada rexistro é unha serie de datos separados polo separador seleccionado
 * O primeiro rexistro contén unha lista de nomes de campos que definen o formato do resto do ficheiro
 * É obrigatorio o nome de campo groupname
 * Son opcionais os nomes de campo: groupidnumber, description, enrolmentkey, groupingname, enablemessaging';
 $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Incluír soamente as matriculacións activas';
-$string['includeonlyactiveenrol_help'] = 'Se está activado, os usuarios suspendidos no serán incluídos nos grupos.';
-$string['javascriptrequired'] = 'Esta páxina require que JavaScript estea activado.';
+$string['includeonlyactiveenrol_help'] = 'Se o activa, os usuarios suspendidos no serán incluídos nos grupos.';
+$string['javascriptrequired'] = 'Esta páxina require que Javascript estea activado.';
 $string['memberofgroup'] = 'Membro do grupo de: {$a}';
 $string['members'] = 'Membros por grupo';
 $string['membersofselectedgroup'] = 'Membros de:';
@@ -168,8 +168,8 @@ $string['nogroupsassigned'] = 'Non hai grupos asignados';
 $string['nopermissionforcreation'] = 'Non é posíbel crear o grupo «{$a}», vostede non ten os permisos requiridos';
 $string['nosmallgroups'] = 'Evitar o último grupo pequeno';
 $string['notingroup'] = 'Ignorar usuarios en grupos';
-$string['notingrouping'] = '[Fóra dun agrupamento]';
-$string['notingrouplist'] = '[Fóra dun grupo]';
+$string['notingrouping'] = 'Fóra dun agrupamento';
+$string['notingrouplist'] = 'Fóra dun grupo';
 $string['nousersinrole'] = 'Non existen usuarios axeitados no rol seleccionado';
 $string['number'] = 'Número de grupos/membros';
 $string['numgroups'] = 'Número de grupos';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_quizanalytics', language 'el', version '3.11'.
+ * Strings for component 'gradereport_quizanalytics', language 'el', version '4.1'.
  *
  * @package     gradereport_quizanalytics
  * @category    string
@@ -27,14 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['accuaracyrate'] = 'Ποσοστό ακρίβειας :';
 $string['action'] = 'Ενέργεια';
-$string['apiversion'] = 'Εισαγάγετε την έκδοση API';
-$string['apiversiondes'] = 'Παρακαλούμε, εισαγάγετε την έκδοση API σας.';
 $string['attemptsummarydes'] = 'Αυτό το γράφημα απεικονίζει πώς τα πήγατε στην προσπάθειά σας.';
 $string['avgscore'] = 'Μέσος όρος';
 $string['bestscore'] = 'Το καλύτερο σκορ';
 $string['correct'] = 'Σωστό';
-$string['enterfbappid'] = 'Εισαγάγετε το αναγνωριστικό εφαρμογής FaceBook';
-$string['fbsharetitle'] = 'Προσθέστε έναν τίτλο';
 $string['gradeanalysisdes'] = 'Αριθμός χρηστών σε κάθε ομάδα ποσοστών (ποσοστό βαθμολογίας).';
 $string['gradeboundary'] = 'Όρια βαθμού';
 $string['gradeboundarydes'] = 'Όρια βαθμού είναι διαστήματα (range: πεδίο, εύρος, διάστημα) που ορίζονται από το διαχειριστή, τα οποία θα εμφανίζονται στο γράφημα στατιστικών αποτελεσμάτων.';
@@ -44,7 +40,6 @@ $string['hardestquestion'] = 'Οι πιο δύσκολες ερωτήσεις';
 $string['hardness'] = 'Δυσκολία (%)';
 $string['impandpredicanalysis'] = 'Καμπύλη Βελτίωσης & Προγνωστική Ανάλυση';
 $string['incorrect'] = 'Ανακριβής';
-$string['lastattemptsummary'] = 'Περίληψη προσπάθειας';
 $string['lastattemptsummarydes'] = 'Αυτό το γράφημα απεικονίζει πώς τα πήγατε στην τελευταία προσπάθεια.';
 $string['loggedinuserdes'] = 'Ας ρίξουμε μια ματιά στις κατηγορίες που δεν τα έχετε πάει τόσο καλά.';
 $string['lowestscore'] = 'Χαμηλότερη βαθμολογία';
@@ -58,25 +53,12 @@ $string['noquizfound'] = 'Δεν βρέθηκε κανένα κουίζ!';
 $string['notgraded'] = 'Χωρίς βαθμολογία ακόμη';
 $string['partialcorrect'] = 'Μερικώς σωστές';
 $string['peerscores'] = 'Ομότιμες βαθμολογίες';
-$string['pluginname'] = 'Αναλύσεις κουίζ';
+$string['pluginname'] = 'Αναλυτική κουίζ';
 $string['quesanalysis'] = 'Ανάλυση ερώτησης';
 $string['questionspercategory'] = 'Ερωτήσεις ανά Κατηγορία';
-$string['quizanalytics:view'] = 'Εμφάνιση αναφοράς αναλύσεων κουίζ';
 $string['quizname'] = 'Όνομα κουίζ';
 $string['score'] = 'Σκορ';
 $string['setglobal'] = 'Καθολικός ορισμός';
-$string['tab1'] = 'Περίληψη προσπάθειας';
-$string['tab2'] = 'Η πρόοδός μου και προβλέψεις';
-$string['tab2subtab11'] = 'Καμπύλη βελτίωσης';
-$string['tab2subtab12'] = 'Απόδοση ομότιμων';
-$string['tab2subtab2'] = 'Η δυσκολότερη ερώτηση';
-$string['tab2subtab3'] = 'Στιγμιότυπο οθόνης προσπάθειας';
-$string['tab3'] = 'Ανάλυση κατηγοριών ερωτήσεων';
-$string['tab3subtab1'] = 'Ερώτηση στην Κατηγορία';
-$string['tab3subtab2'] = 'Κατηγορίες-πρόκληση (για όλους τους χρήστες)';
-$string['tab3subtab3'] = 'Κατηγορίες-πρόκληση για μένα';
-$string['tab4'] = 'Στατιστικά των σκορ & των ερωτήσεων';
-$string['tab4subtab1'] = 'Σκορ κατά ποσοστό (Όλοι οι χρήστες)';
 $string['timetaken'] = 'Στιγμιότυπο οθόνης προσπαθειών (Χρόνος που χρειάστηκε:';
 $string['totalquizattempt'] = 'Συνολικές προσπάθειες';
 $string['unattempted'] = 'Καμία προσπάθεια';

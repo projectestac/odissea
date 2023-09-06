@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_category', language 'ar', version '3.11'.
+ * Strings for component 'enrol_category', language 'ar', version '4.1'.
  *
  * @package     enrol_category
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['category:config'] = 'تهيئة عينات الانضمام إلى التصنيفات';
-$string['category:synchronised'] = 'تعيينات الأدوار المزامَنة مع الانضمام إلى المقرر الدراسي';
+$string['category:synchronised'] = 'تعيينات الأدوار المزامَنة مع الانضمام إلى المساق';
 $string['enrolcategorysynctask'] = 'مهمة مزامنة الانضمام إلى التصنيفات';
 $string['pluginname'] = 'الانضمامات إلى التصنيف';
 $string['pluginname_desc'] = 'تقوم إضافة الانضمام إلى التصنيف بمزامنة أي أدوار معينة ضمن سياق التصنيف مع الأدوار التي تمتلك الإمكانية enrol/category:synchronised.';

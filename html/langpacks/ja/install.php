@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ja', version '3.11'.
+ * Strings for component 'install', language 'ja', version '4.1'.
  *
  * @package     install
  * @category    string
@@ -46,6 +46,7 @@ $string['cliinstallfinished'] = 'インストールが正常に完了しまし�
 $string['cliinstallheader'] = 'Moodle {$a} コマンドラインインストールプログラム';
 $string['climustagreelicense'] = '非インタラクティブモードにおいて、あなたは「--agree-license」オプションを指定してライセンスに同意する必要があります。';
 $string['cliskipdatabase'] = 'データベースインストレーションをスキップしています。';
+$string['clisupportemail'] = 'サポートメールアドレス';
 $string['clitablesexist'] = 'データベーステーブルはすでに作成されています。CLIインストールを続けることはできません。';
 $string['compatibilitysettings'] = 'あなたのPHP設定を確認しています ...';
 $string['compatibilitysettingshead'] = 'あなたのPHP設定を確認しています ...';

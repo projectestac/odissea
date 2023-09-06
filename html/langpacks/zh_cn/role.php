@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'zh_cn', version '3.11'.
+ * Strings for component 'role', language 'zh_cn', version '4.1'.
  *
  * @package     role
  * @category    string
@@ -62,6 +62,7 @@ $string['assignrole'] = '分配角色';
 $string['assignrolenameincontext'] = '在{$a->context}中分配“{$a->role}”角色';
 $string['assignroles'] = '分配角色';
 $string['assignroles_help'] = '通过在某个场景中分配角色给某个用户，您可以给予用户该角色拥有的权限，但只限在当前场景和所有它包含的低级场景中。例如，如果一个用户在某课程中被分配为学生角色，那么他在课程的所有活动和版块中的角色都是学生。';
+$string['assignroles_link'] = 'admin/roles/assign';
 $string['assignrolesin'] = '在{$a}中分配角色';
 $string['assignrolesrelativetothisuser'] = '分配针对此用户的角色';
 $string['backtoallroles'] = '回到所有角色列表';
@@ -329,6 +330,7 @@ $string['overrideanotherrole'] = '修改另一个角色';
 $string['overridecontext'] = '修改场景';
 $string['overridepermissions'] = '修改权限';
 $string['overridepermissions_help'] = '通过修改权限可以在指定的场景中允许或阻止做某件事情。';
+$string['overridepermissions_link'] = 'admin/roles/override';
 $string['overridepermissionsforrole'] = '修改角色“{$a->role}”在{$a->context}中的权限';
 $string['overridepermissionsin'] = '覆盖{$a}的权限设置';
 $string['overrideroles'] = '修改角色';
@@ -389,6 +391,7 @@ $string['rating:rate'] = '添加评分';
 $string['rating:view'] = '查看收到的总评分';
 $string['rating:viewall'] = '查看每个评分的原始数据';
 $string['rating:viewany'] = '查看每个人收到的总评分';
+$string['reportbuilder:view'] = '查看报告';
 $string['resetrole'] = '重置';
 $string['resettingrole'] = '重置角色"{$a}"';
 $string['restore:configure'] = '配置恢复选项';
@@ -422,6 +425,7 @@ $string['roleresetrole'] = '使用角色或原型';
 $string['rolerisks'] = '角色风险';
 $string['roles'] = '角色';
 $string['roles_help'] = '角色是系统权限的集合，通过角色可以将特定情境下的一组权限指派给一组特定的用户。';
+$string['roles_link'] = 'roles';
 $string['roleselect'] = '选择角色';
 $string['rolesforuser'] = '用户{$a}的角色';
 $string['roleshortname'] = '简称';

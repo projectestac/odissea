@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyoselectjs', language 'de', version '3.11'.
+ * Strings for component 'qtype_easyoselectjs', language 'de', version '4.1'.
  *
  * @package     qtype_easyoselectjs
  * @category    string
@@ -63,6 +63,7 @@ $string['notenoughanswers'] = 'Dieser Fragetyp benötigt mindestens {$a} Antwort
 $string['pleaseenterananswer'] = 'Bitte geben Sie eine Antwort ein.';
 $string['pluginname'] = 'Chemie - Atome oder Moleküle auswählen (MarvinJS)';
 $string['pluginname_help'] = 'Teilnehmer/innen sollen vordefinerte Atome, Moleküle oder funktionelle Gruppen auswählen. Sie können z.B. folgende Fragen stellen; <ul><li>Markieren Sie alle tertiären Kohlenstoffatome.</li><li>Wählen Sie alle chiralen Kohlenstoffatome in der folgenden Struktur aus.</li><li>Wählen Sie die längste Kohlenstoffatomkette aus.</li></ul>';
+$string['pluginname_link'] = 'question/type/easyoselect';
 $string['pluginnameadding'] = 'Eine "Atome oder Moleküle auswählen" Frage hinzufügen';
 $string['pluginnameediting'] = 'Eine "Atome oder Moleküle auswählen" Frage bearbeiten';
 $string['pluginnamesummary'] = 'Teilnehmer/innen sollen vordefinerte Atome, Moleküle oder funktionelle Gruppen auswählen. Sie können z.B. folgende Fragen stellen; <ul><li>Markieren Sie alle tertiären Kohlenstoffatome.</li><li>Wählen Sie alle chiralen Kohlenstoffatome in der folgenden Struktur aus.</li><li>Wählen Sie die längste Kohlenstoffatomkette aus.</li></ul>';

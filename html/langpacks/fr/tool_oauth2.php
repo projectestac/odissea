@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'fr', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'fr', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -30,6 +30,7 @@ $string['acceptrisk_help'] = 'La désactivation de la vérification par courriel
 $string['authconfirm'] = 'Cette action donnera à Moodle un accès permanent à l\'API au moyen du compte authentifié. Ce compte système est destiné à être utilisé pour la gestion des fichiers dont Moodle est le possesseur.';
 $string['authconnected'] = 'Le compte système est désormais connecté pour accès hors ligne';
 $string['authnotconnected'] = 'Le compte système n\'a pas été connecté pour accès hors ligne';
+$string['clever_service'] = 'Clever';
 $string['configured'] = 'Configuré';
 $string['configuredstatus'] = 'Configuré';
 $string['connectsystemaccount'] = 'Se connecter à un compte système';
@@ -66,6 +67,7 @@ $string['google_service'] = 'Google';
 $string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Domaines de connexion';
 $string['issueralloweddomains_help'] = 'Liste des domaines, séparés par des virgules, pour lesquels les connexions seront restreintes lorsque ce fournisseur est utilisé.';
+$string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
 $string['issuerbaseurl'] = 'URL de base du service';
 $string['issuerbaseurl_help'] = 'URL de base utilisée pour accéder au service.';
 $string['issuerclientid'] = 'ID client';
@@ -121,7 +123,7 @@ $string['systemaccountconnected'] = 'Compte système connecté';
 $string['systemaccountconnected_help'] = 'Les comptes système sont utilisés pour fournir aux plugins des fonctionnalités avancées. Ils ne sont pas seulement requis pour les fonctionnalités de connexion. Certains plugins utilisant le service OAuth fonctionneront de manière réduite si le compte système n\'est pas connecté. Par exemple, certains dépôts ne peuvent pas gérer les liens contrôlés sans un compte système pour effectuer les opérations de fichier.';
 $string['systemaccountnotconnected'] = 'Compte système non connecté';
 $string['systemauthstatus'] = 'Compte système connecté';
-$string['usebasicauth'] = 'Authentifier les requêtes de jeton au moyen des entêtes HTTP';
+$string['usebasicauth'] = 'Authentifier les requêtes de jeton au moyen des en-têtes HTTP';
 $string['usebasicauth_help'] = 'Utiliser le schéma d\'authentification HTTP Basic lors de l\'envoi de l\'ID client et du mot de passe lors des requêtes d\'actualisation de jeton. Ce réglage est recommandé par le standard OAuth 2, mais n\'est pas disponible avec certains fournisseurs.';
 $string['userfieldexternalfield'] = 'Nom du champ externe';
 $string['userfieldexternalfield_error'] = 'Ce champ ne peut pas contenir du code HTML.';

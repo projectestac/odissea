@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'zh_cn', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'zh_cn', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -30,3 +30,4 @@ $string['pluginname'] = '从电子表格粘贴';
 $string['privacy:metadata'] = '从复制的电子表格导入成绩插件不存储任何个人数据。';
 $string['userdata'] = '帮助复制数据到此表单。';
 $string['userdata_help'] = '成绩可以从电子表格复制粘贴到成绩册。电子表格应该有一个列包含用户身份数据——用户名或 ID 号或电子邮件地址。导入的每个列都应该有一个列标题。';
+$string['userdata_link'] = 'grade/import/direct/index';

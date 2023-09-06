@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'sv', version '3.11'.
+ * Strings for component 'portfolio_googledocs', language 'sv', version '4.1'.
  *
  * @package     portfolio_googledocs
  * @category    string
@@ -30,7 +30,7 @@ $string['noauthtoken'] = 'Det har inte kommit något autentiseringstoken från G
 $string['nooauthcredentials'] = 'OAuth-autentiseringsuppgifter krävs.';
 $string['nooauthcredentials_help'] = 'Om du vill använda pluginmodule för Google Drive-portföljen måste du konfigurera OAuth-autentiseringsuppgifter i portföljinställningarna.';
 $string['nosessiontoken'] = 'Det finns inte någon "token" för session som förhindrar export till google.';
-$string['oauthinfo'] = '<p>Om du vill använda den här pluginmodulen måste du registrera din webbplats hos Google, enligt beskrivningen i dokumentationen <a href="{$a->docsurl}">konfigurera Google OAuth 2.0</a>.</p><p>Som en del av registreringsprocessen måste du ange följande URL som \'Auktoriserade omdirigerings-URI:er\':</p><p>{$a->callbackurl}</p><p>När du registrerats kommer du att få ett klient-ID och hemlighet som kan användas för att konfigurera alla Google Drive och Picasa pluginmoduler.</p>';
+$string['oauthinfo'] = '<p>Om du vill använda den här pluginmodulen måste du registrera din webbplats hos Google, enligt beskrivningen i dokumentationen <a href="{$a->docsurl}">konfigurera Google OAuth 2.0</a>.</p><p>Som en del i registreringsprocessen måste du ange följande URL som \'Auktoriserade omdirigerings-URI:er\':</p><p>{$a->callbackurl}</p><p>När du registrerats kommer du att få ett klient-ID och hemlighet som kan användas för att konfigurera alla Google Drive-pluginmoduler.</p>';
 $string['pluginname'] = 'Google Drive';
 $string['privacy:metadata'] = 'Denna pluginmodul skickar data externt till ett länkat Google-konto. Den lagrar inte data lokalt.';
 $string['privacy:metadata:data'] = 'Personuppgifter som överförs från portföljens delsystem.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'it', version '3.11'.
+ * Strings for component 'user', language 'it', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -149,6 +149,10 @@ $string['privacy:privatefilespath'] = 'File privati';
 $string['privacy:profileimagespath'] = 'Immagini del profilo';
 $string['privacy:sessionpath'] = 'Dati della sessione';
 $string['selectfiltertype'] = 'Seleziona';
+$string['supportmessagealternative'] = 'In alternativa, puoi inviare una email a {$a}.';
+$string['supportmessagenotsent'] = 'Purtroppo non è stato possibile inviare il messaggio.';
+$string['supportmessagesent'] = 'Il messaggio è stato inviato.';
+$string['supportmessagesentforloggedoutuser'] = 'Trattare il messaggio con attenzione. Il mittente non era autenticato quindi la sua identità on è confermata.';
 $string['target:upcomingactivitiesdue'] = 'Prossime attività da svolgere';
 $string['target:upcomingactivitiesdue_help'] = 'L\'obiettivo genera promemoria per prossime attività da svolgere.';
 $string['target:upcomingactivitiesdueinfo'] = 'Di seguito sono elencate tutte le considerazioni relative alle prossime attività da svolgere. Gli studenti hanno ricevuto le considerazioni direttamente.';

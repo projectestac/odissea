@@ -28,241 +28,143 @@
  * @package mod_data
  */
 
+use mod_data\local\importer\preset_importer;
+use mod_data\local\importer\preset_upload_importer;
+use mod_data\manager;
+use mod_data\preset;
+use mod_data\output\action_bar;
+use mod_data\output\preset_preview;
+
 require_once('../../config.php');
 require_once($CFG->dirroot.'/mod/data/lib.php');
 require_once($CFG->dirroot.'/mod/data/preset_form.php');
-require_once($CFG->libdir.'/xmlize.php');
 
-$id     = optional_param('id', 0, PARAM_INT);           // course module id
+// The course module id.
+$id = optional_param('id', 0, PARAM_INT);
+
+$manager = null;
 if ($id) {
-    $cm = get_coursemodule_from_id('data', $id, null, null, MUST_EXIST);
-    $course = $DB->get_record('course', array('id'=>$cm->course), '*', MUST_EXIST);
-    $data = $DB->get_record('data', array('id'=>$cm->instance), '*', MUST_EXIST);
+    list($course, $cm) = get_course_and_cm_from_cmid($id, manager::MODULE);
+    $manager = manager::create_from_coursemodule($cm);
+    $data = $manager->get_instance();
 } else {
-    $d = required_param('d', PARAM_INT);     // database activity id
-    $data = $DB->get_record('data', array('id'=>$d), '*', MUST_EXIST);
-    $course = $DB->get_record('course', array('id'=>$data->course), '*', MUST_EXIST);
-    $cm = get_coursemodule_from_instance('data', $data->id, $course->id, null, MUST_EXIST);
+    // We must have the database activity id.
+    $d = required_param('d', PARAM_INT);
+    $data = $DB->get_record('data', ['id' => $d], '*', MUST_EXIST);
+    $manager = manager::create_from_instance($data);
+    $cm = $manager->get_coursemodule();
+    $course = get_course($cm->course);
 }
 
-$context = context_module::instance($cm->id, MUST_EXIST);
+$action = optional_param('action', 'view', PARAM_ALPHA); // The page action.
+$allowedactions = ['view', 'importzip', 'finishimport',
+    'export', 'preview'];
+if (!in_array($action, $allowedactions)) {
+    throw new moodle_exception('invalidaccess');
+}
+
+$context = $manager->get_context();
+
 require_login($course, false, $cm);
 require_capability('mod/data:managetemplates', $context);
-$PAGE->set_url(new moodle_url('/mod/data/preset.php', array('d'=>$data->id)));
+
+$url = new moodle_url('/mod/data/preset.php', array('d' => $data->id));
+
+$PAGE->add_body_class('mediumwidth');
+$PAGE->set_url($url);
 $PAGE->set_title(get_string('course') . ': ' . $course->fullname);
 $PAGE->set_heading($course->fullname);
 $PAGE->force_settings_menu(true);
+$PAGE->activityheader->disable();
+$PAGE->requires->js_call_amd('mod_data/deletepreset', 'init');
 
 // fill in missing properties needed for updating of instance
 $data->course     = $cm->course;
 $data->cmidnumber = $cm->idnumber;
 $data->instance   = $cm->instance;
 
-$presets = data_get_available_presets($context);
-$strdelete = get_string('deleted', 'data');
-foreach ($presets as &$preset) {
-    if (!empty($preset->userid)) {
-        $userfieldsapi = \core_user\fields::for_name();
-        $namefields = $userfieldsapi->get_sql('', false, '', '', false)->selects;
-        $presetuser = $DB->get_record('user', array('id' => $preset->userid), 'id, ' . $namefields, MUST_EXIST);
-        $preset->description = $preset->name.' ('.fullname($presetuser, true).')';
-    } else {
-        $preset->userid = 0;
-        $preset->description = $preset->name;
-        if (data_user_can_delete_preset($context, $preset) && $preset->name != 'Image gallery') {
-            $delurl = new moodle_url('/mod/data/preset.php', array('d'=> $data->id, 'action'=>'confirmdelete', 'fullname'=>$preset->userid.'/'.$preset->shortname, 'sesskey'=>sesskey()));
-            $delicon = $OUTPUT->pix_icon('t/delete', $strdelete . ' ' . $preset->description);
-            $preset->description .= html_writer::link($delurl, $delicon);
-        }
+$renderer = $manager->get_renderer();
+$presets = $manager->get_available_presets();
+
+if ($action === 'export') {
+    if (headers_sent()) {
+        throw new \moodle_exception('headersent');
     }
-    if ($preset->userid > 0 && data_user_can_delete_preset($context, $preset)) {
-        $delurl = new moodle_url('/mod/data/preset.php', array('d'=> $data->id, 'action'=>'confirmdelete', 'fullname'=>$preset->userid.'/'.$preset->shortname, 'sesskey'=>sesskey()));
-        $delicon = $OUTPUT->pix_icon('t/delete', $strdelete . ' ' . $preset->description);
-        $preset->description .= html_writer::link($delurl, $delicon);
-    }
+
+    // Check if we should export a given preset or the current one.
+    $presetname = optional_param('presetname', $data->name, PARAM_FILE);
+
+    $preset = preset::create_from_instance($manager, $presetname);
+    $exportfile = $preset->export();
+    $exportfilename = basename($exportfile);
+    header("Content-Type: application/download\n");
+    header("Content-Disposition: attachment; filename=\"$exportfilename\"");
+    header('Expires: 0');
+    header('Cache-Control: must-revalidate,post-check=0,pre-check=0');
+    header('Pragma: public');
+
+    // If this file was requested from a form, then mark download as complete.
+    \core_form\util::form_download_complete();
+
+    $exportfilehandler = fopen($exportfile, 'rb');
+    print fread($exportfilehandler, filesize($exportfile));
+    fclose($exportfilehandler);
+    unlink($exportfile);
+    exit(0);
 }
-// This is required because its currently bound to the last element in the array.
-// If someone were to inadvently use it again and this call were not here
-unset($preset);
 
-$form_importexisting = new data_existing_preset_form(null, array('presets'=>$presets));
-$form_importexisting->set_data(array('d' => $data->id));
 
-$form_importzip = new data_import_preset_zip_form();
-$form_importzip->set_data(array('d' => $data->id));
+if ($action == 'importzip') {
+    $filepath = optional_param('filepath', '', PARAM_PATH);
+    $importer = new preset_upload_importer($manager, $CFG->tempdir . $filepath);
+    if ($importer->needs_mapping()) {
+        echo $OUTPUT->header();
+        echo $OUTPUT->heading(get_string('fieldmappings', 'data'), 2, 'mb-4');
+        echo $renderer->importing_preset($data, $importer);
+        echo $OUTPUT->footer();
+        exit(0);
+    }
+    $importer->import(false);
+    core\notification::success(get_string('importsuccess', 'mod_data'));
+    redirect(new moodle_url('/mod/data/field.php', ['id' => $cm->id]));
+    exit(0);
+}
 
-$form_export = new data_export_form();
-$form_export->set_data(array('d' => $data->id));
-
-$form_save = new data_save_preset_form();
-$form_save->set_data(array('d' => $data->id, 'name'=>$data->name));
-
-/* Output */
-if (!$form_export->is_submitted()) {
+// Preset preview injects CSS and JS to the page and should be done before the page header.
+if ($action === 'preview') {
+    $fullname = optional_param('fullname', '', PARAM_PATH); // The directory the preset is in.
+    $templatename = optional_param('template', 'listtemplate', PARAM_ALPHA);
+    // Find out preset owner userid and shortname.
+    $preset = preset::create_from_fullname($manager, $fullname);
+    // Validate if the user can view this preset.
+    if (!$manager->can_view_preset($preset)) {
+        throw new \moodle_exception('cannotaccesspresentsother', manager::PLUGINNAME);
+    }
+    $preview = new preset_preview($manager, $preset, $templatename);
+    $preview->prepare_page($PAGE);
+    // Print the preview screen.
     echo $OUTPUT->header();
-    echo $OUTPUT->heading(format_string($data->name), 2);
-
-    // Render the activity information.
-    $cminfo = cm_info::create($cm);
-    $completiondetails = \core_completion\cm_completion_details::get_instance($cminfo, $USER->id);
-    $activitydates = \core\activity_dates::get_dates_for_module($cminfo, $USER->id);
-    echo $OUTPUT->activity_information($cminfo, $completiondetails, $activitydates);
-
-    // Needed for tabs.php
-    $currenttab = 'presets';
-    $currentgroup = groups_get_activity_group($cm);
-    $groupmode = groups_get_activity_groupmode($cm);
-    echo $OUTPUT->box(format_module_intro('data', $data, $cm->id), 'generalbox', 'intro');
-
-    include('tabs.php');
+    $actionbar = new action_bar($data->id, $url);
+    echo $actionbar->get_presets_preview_action_bar($manager, $fullname, $templatename);
+    echo $renderer->render($preview);
+    echo $OUTPUT->footer();
+    exit(0);
 }
 
-if (optional_param('sesskey', false, PARAM_BOOL) && confirm_sesskey()) {
-
-    $renderer = $PAGE->get_renderer('mod_data');
-
-    if ($formdata = $form_importexisting->get_data()) {
-        $importer = new data_preset_existing_importer($course, $cm, $data, $formdata->fullname);
-        echo $renderer->import_setting_mappings($data, $importer);
-        echo $OUTPUT->footer();
-        exit(0);
-    } else if ($formdata = $form_importzip->get_data()) {
-        $file = new stdClass;
-        $file->name = $form_importzip->get_new_filename('importfile');
-        $file->path = $form_importzip->save_temp_file('importfile');
-        $importer = new data_preset_upload_importer($course, $cm, $data, $file->path);
-        echo $renderer->import_setting_mappings($data, $importer);
-        echo $OUTPUT->footer();
-        exit(0);
-    } else if ($formdata = $form_export->get_data()) {
-
-        if (headers_sent()) {
-            print_error('headersent');
-        }
-
-        $exportfile = data_presets_export($course, $cm, $data);
-        $exportfilename = basename($exportfile);
-        header("Content-Type: application/download\n");
-        header("Content-Disposition: attachment; filename=\"$exportfilename\"");
-        header('Expires: 0');
-        header('Cache-Control: must-revalidate,post-check=0,pre-check=0');
-        header('Pragma: public');
-
-        // If this file was requested from a form, then mark download as complete.
-        \core_form\util::form_download_complete();
-
-        $exportfilehandler = fopen($exportfile, 'rb');
-        print fread($exportfilehandler, filesize($exportfile));
-        fclose($exportfilehandler);
-        unlink($exportfile);
-        exit(0);
-
-    } else if ($formdata = $form_save->get_data()) {
-        if (!empty($formdata->overwrite)) {
-            $selectedpreset = new stdClass();
-            foreach ($presets as $preset) {
-                if ($preset->name == $formdata->name) {
-                    $selectedpreset = $preset;
-                    break;
-                }
-            }
-            if (isset($selectedpreset->name)) {
-                if (data_user_can_delete_preset($context, $selectedpreset)) {
-                    data_delete_site_preset($formdata->name);
-                } else {
-                    print_error('cannotoverwritepreset', 'data');
-                }
-            }
-        }
-
-        // If the preset exists now then we need to throw an error.
-        $sitepresets = data_get_available_site_presets($context);
-        foreach ($sitepresets as $key=>$preset) {
-            if ($formdata->name == $preset->name) {
-                print_error('errorpresetexists', 'preset');
-            }
-        }
-
-        // Save the preset now
-        data_presets_save($course, $cm, $data, $formdata->name);
-
-        echo $OUTPUT->notification(get_string('savesuccess', 'data'), 'notifysuccess');
-        echo $OUTPUT->continue_button($PAGE->url);
-        echo $OUTPUT->footer();
-        exit(0);
-    } else {
-        $action = optional_param('action', null, PARAM_ALPHANUM);
-        $fullname = optional_param('fullname', '', PARAM_PATH); // directory the preset is in
-        //
-        // find out preset owner userid and shortname
-        $parts = explode('/', $fullname, 2);
-        $userid = empty($parts[0]) ? 0 : (int)$parts[0];
-        $shortname = empty($parts[1]) ? '' : $parts[1];
-
-        if ($userid && ($userid != $USER->id) && !has_capability('mod/data:viewalluserpresets', $context)) {
-            print_error('cannotaccesspresentsother', 'data');
-        }
-
-        if ($action == 'confirmdelete') {
-            $path = data_preset_path($course, $userid, $shortname);
-            $strwarning = get_string('deletewarning', 'data').'<br />'.$shortname;
-            $optionsyes = array('fullname' => $userid.'/'.$shortname,
-                             'action' => 'delete',
-                             'd' => $data->id);
-            $optionsno = array('d' => $data->id);
-            echo $OUTPUT->confirm($strwarning, new moodle_url('preset.php', $optionsyes), new moodle_url('preset.php', $optionsno));
-            echo $OUTPUT->footer();
-            exit(0);
-        } else if ($action == 'delete') {
-            $selectedpreset = new stdClass();
-            foreach ($presets as $preset) {
-                if ($preset->shortname == $shortname) {
-                    $selectedpreset = $preset;
-                }
-            }
-            if (!isset($selectedpreset->shortname) || !data_user_can_delete_preset($context, $selectedpreset)) {
-               print_error('invalidrequest');
-            }
-
-            data_delete_site_preset($shortname);
-
-            $strdeleted = get_string('deleted', 'data');
-            echo $OUTPUT->notification("$shortname $strdeleted", 'notifysuccess');
-        } else if ($action == 'finishimport') {
-            $overwritesettings = optional_param('overwritesettings', false, PARAM_BOOL);
-            if (!$fullname) {
-                $presetdir = $CFG->tempdir.'/forms/'.required_param('directory', PARAM_FILE);
-                if (!file_exists($presetdir) || !is_dir($presetdir)) {
-                    print_error('cannotimport');
-                }
-                $importer = new data_preset_upload_importer($course, $cm, $data, $presetdir);
-            } else {
-                $importer = new data_preset_existing_importer($course, $cm, $data, $fullname);
-            }
-            $importer->import($overwritesettings);
-            $strimportsuccess = get_string('importsuccess', 'data');
-            $straddentries = get_string('addentries', 'data');
-            $strtodatabase = get_string('todatabase', 'data');
-            if (!$DB->get_records('data_records', array('dataid'=>$data->id))) {
-                echo $OUTPUT->notification("$strimportsuccess <a href='edit.php?d=$data->id'>$straddentries</a> $strtodatabase", 'notifysuccess');
-            } else {
-                echo $OUTPUT->notification("$strimportsuccess", 'notifysuccess');
-            }
-        }
-        echo $OUTPUT->continue_button($PAGE->url);
-        echo $OUTPUT->footer();
-        exit(0);
+if ($action === 'finishimport') {
+    if (!confirm_sesskey()) {
+        throw new moodle_exception('invalidsesskey');
     }
+    $overwritesettings = optional_param('overwritesettings', false, PARAM_BOOL);
+    $importer = preset_importer::create_from_parameters($manager);
+    $importer->finish_import_process($overwritesettings, $data);
 }
 
-// Export forms
-echo $OUTPUT->heading(get_string('export', 'data'), 3);
-$form_export->display();
-$form_save->display();
+echo $OUTPUT->header();
 
-// Import forms
-echo $OUTPUT->heading(get_string('import'), 3);
-$form_importzip->display();
-$form_importexisting->display();
+$actionbar = new \mod_data\output\action_bar($data->id, $url);
+echo $actionbar->get_presets_action_bar();
+$presets = new \mod_data\output\presets($manager, $presets, new \moodle_url('/mod/data/field.php'), true);
+echo $renderer->render_presets($presets);
 
 echo $OUTPUT->footer();

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'apply', language 'ar', version '3.11'.
+ * Strings for component 'apply', language 'ar', version '4.1'.
  *
  * @package     apply
  * @category    string
@@ -26,24 +26,24 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add_pagebreak'] = 'إضافة فاصل صفحات للمعتمد';
-$string['apply:createprivatetemplate'] = 'إنشاء قالب خاص';
-$string['apply:createpublictemplate'] = 'إنشاء قالب عام';
-$string['apply:deletetemplate'] = 'حذف القالب';
-$string['apply:edittemplates'] = 'تحرير القوالب';
+$string['apply:createprivatetemplate'] = 'إنشاء مظهر خاص';
+$string['apply:createpublictemplate'] = 'إنشاء مظهر عام';
+$string['apply:deletetemplate'] = 'حذ المظهر';
+$string['apply:edittemplates'] = 'تحرير المظاهر';
 $string['apply:viewanalysepage'] = 'معاينة صفحة التحليل بعد التسليم';
 $string['back_button'] = 'رجوع';
-$string['cannot_save_templ'] = 'حفظ القوالب غير مسموح به';
+$string['cannot_save_templ'] = 'حفظ المظاهر غير مسموح به';
 $string['confirm_delete_entry'] = 'هل أنت متأكد من رغبتك في سحب هذا الإدخال؟';
-$string['confirm_delete_template'] = 'هل أنت متأكد من رغبتك في حذف هذا القالب؟';
+$string['confirm_delete_template'] = 'هل أنت متأكد من رغبتك في حذف هذا المظهر؟';
 $string['confirm_rollback_entry'] = 'هل أنت متأكد من رغبتك في سحب هذا الإدخال؟';
-$string['confirm_use_template'] = 'هل أنت متأكد من رغبتك في استعمال هذا القالب؟';
-$string['creating_templates'] = 'حفظ هذه الأسئلة بمثابة قالب جديد';
+$string['confirm_use_template'] = 'هل أنت متأكد من رغبتك في استعمال هذا المظهر؟';
+$string['creating_templates'] = 'حفظ هذه الأسئلة بمثابة مظهر جديد';
 $string['date_format'] = 'عرض تنسيق التاريخ (الوقت)';
 $string['date_format_help'] = 'تحديد تنسيق عرض التاريخ والوقت. القيمة الافتراضية هي %m/%d/%y %H:%M';
 $string['delete_entry'] = 'إنسحاب';
 $string['delete_entry_button'] = 'إنسحاب';
-$string['delete_template'] = 'حذف القالب';
-$string['delete_templates'] = 'حذف القالب...';
+$string['delete_template'] = 'حذف المظهر';
+$string['delete_templates'] = 'حذف المظهر...';
 $string['depending_help'] = 'من الممكن إظهار العنصر المعتمد على قيمة عنصر آخر.<br />
 <strong>إليك مثالاً على ذلك.</strong><br />
 <ul>
@@ -65,9 +65,9 @@ $string['dependvalue'] = 'القيمة المعتمدة';
 $string['description'] = 'الوصف';
 $string['email_user_other'] = 'قام المشرف بمعالجة تطبيقك';
 $string['entry_saved_operation'] = 'لقد تمت معالجة طلبك.';
-$string['export_templates'] = 'تصدير القوالب';
+$string['export_templates'] = 'تصدير المظاهر';
 $string['fixedtitle'] = 'العنوان الثابت';
-$string['import_templates'] = 'استيراد القوالب';
+$string['import_templates'] = 'استيراد المظاهر';
 $string['item_name'] = 'اسم العنصر';
 $string['items_are_required'] = 'الإجابات مطلوبة للعناصر المعلمة بنجمة.';
 $string['messageprovider:processed'] = 'تمت معالجة العملية';
@@ -75,7 +75,7 @@ $string['multichoice_values'] = 'قيم متعدد الاختيارات';
 $string['name'] = 'الاسم';
 $string['name_required'] = 'الاسم مطلوب';
 $string['next_page_button'] = 'الصفحة التالية';
-$string['no_templates_available_yet'] = 'لا قوالب متاحة بعد';
+$string['no_templates_available_yet'] = 'لا مظاهر متاحة بعد';
 $string['no_title'] = 'بلا عنوان';
 $string['numeric'] = 'إجابة رقمية';
 $string['only_acked_accept_help'] = 'تمكين قبول الاستلام فقط. حدده عندما تكون المعالجة غير مطلوبة.';
@@ -89,7 +89,7 @@ $string['printpagebreak'] = 'إضافة فاصل صفحات للطباعة';
 $string['responsetime'] = 'وقت الاستجابة';
 $string['rollback_entry'] = 'إنسحاب';
 $string['rollback_entry_button'] = 'إنسحاب';
-$string['save_as_new_template'] = 'الحفظ بمثابة قالب جديد';
+$string['save_as_new_template'] = 'الحفظ بمثابة مظهر جديد';
 $string['saving_failed_because_missing_or_false_values'] = 'فشل الحفظ بسبب قيم مفقودة أو خاطئة.';
 $string['show_perpage'] = 'إظهار {$a} لكل صفحة';
 $string['switch_item_to_not_required'] = 'التبديل إلى: الإجابة غير مطلوبة';
@@ -97,14 +97,14 @@ $string['switch_item_to_required'] = 'التبديل إلى: الإجابة مط
 $string['table_disp_iname_help'] = 'عرض اسم الفقرة في الجدول.';
 $string['table_th_strings'] = 'عنوان كل عمود';
 $string['table_th_strings_help'] = 'أعطِ وصفًا لعنوان كل عمود مفصولاً بفاصل نهاية السطر. أي بشكل عنوان واحد لكل سطر.';
-$string['template_saved'] = 'تم حفظ القالب';
-$string['templates'] = 'القوالب';
+$string['template_saved'] = 'تم حفظ المظهر';
+$string['templates'] = 'المظاهر';
 $string['textarea'] = 'إجابة ذات نص أطول';
 $string['textfield'] = 'إجابة قصيرة';
 $string['time_close'] = 'وقت الإغلاق';
 $string['time_open'] = 'وقت الفتح';
 $string['title_title'] = 'العنوان';
 $string['use_one_line_for_each_value'] = 'استعمل سطر واحد لكل قيمة!';
-$string['use_this_template'] = 'استعمل هذا القالب';
+$string['use_this_template'] = 'استعمل هذا المظهر';
 $string['username_manage'] = 'إدارة اسم المستخدم';
-$string['using_templates'] = 'استعمل القالب';
+$string['using_templates'] = 'استعمل المظهر';

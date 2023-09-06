@@ -101,7 +101,7 @@ if ($hassiteconfig) {
         new lang_string('limitconcurrentlogins', 'core_auth'),
         new lang_string('limitconcurrentlogins_desc', 'core_auth'), 0, $options));
     $temp->add(new admin_setting_configtext('alternateloginurl', new lang_string('alternateloginurl', 'auth'),
-                                            new lang_string('alternatelogin', 'auth', htmlspecialchars(get_login_url())), ''));
+                                            new lang_string('alternatelogin', 'auth', htmlspecialchars(get_login_url(), ENT_COMPAT)), ''));
     $temp->add(new admin_setting_configtext('forgottenpasswordurl', new lang_string('forgottenpasswordurl', 'auth'),
                                             new lang_string('forgottenpassword', 'auth'), '', PARAM_URL));
     $temp->add(new admin_setting_confightmleditor('auth_instructions', new lang_string('instructions', 'auth'),
@@ -188,6 +188,26 @@ if ($hassiteconfig) {
         )
     );
 
+    // Notify level.
+    $temp->add(new admin_setting_configselect('antivirus/notifylevel',
+        get_string('notifylevel', 'antivirus'), '', core\antivirus\scanner::SCAN_RESULT_ERROR, [
+            core\antivirus\scanner::SCAN_RESULT_ERROR => get_string('notifylevelerror', 'antivirus'),
+            core\antivirus\scanner::SCAN_RESULT_FOUND => get_string('notifylevelfound', 'antivirus')
+        ]),
+    );
+
+    // Threshold for check displayed on the /report/status/index.php page.
+    $url = new moodle_url('/report/status/index.php');
+    $link = html_writer::link($url, get_string('pluginname', 'report_status'));
+    $temp->add(
+        new admin_setting_configduration(
+            'antivirus/threshold',
+            new lang_string('threshold', 'antivirus'),
+            get_string('threshold_desc', 'antivirus', $link),
+            20 * MINSECS
+        )
+    );
+
     // Enable quarantine.
     $temp->add(
         new admin_setting_configcheckbox(
@@ -269,10 +289,10 @@ if ($hassiteconfig) {
     $temp->add(new admin_setting_heading('managemediaplayerscommonheading', new lang_string('commonsettings', 'admin'), ''));
     $temp->add(new admin_setting_configtext('media_default_width',
         new lang_string('defaultwidth', 'core_media'), new lang_string('defaultwidthdesc', 'core_media'),
-        400, PARAM_INT, 10));
+        640, PARAM_INT, 10));
     $temp->add(new admin_setting_configtext('media_default_height',
         new lang_string('defaultheight', 'core_media'), new lang_string('defaultheightdesc', 'core_media'),
-        300, PARAM_INT, 10));
+        360, PARAM_INT, 10));
     $ADMIN->add('mediaplayers', $temp);
 
     // Convert plugins.
@@ -436,6 +456,21 @@ if ($hassiteconfig) {
     foreach ($plugins as $plugin) {
         /** @var \core\plugininfo\repository $plugin */
         $plugin->load_settings($ADMIN, 'repositorysettings', $hassiteconfig);
+    }
+}
+
+// Question bank settings.
+if ($hassiteconfig || has_capability('moodle/question:config', $systemcontext)) {
+    $ADMIN->add('modules', new admin_category('qbanksettings',
+            new lang_string('type_qbank_plural', 'plugin')));
+    $temp = new admin_settingpage('manageqbanks', new lang_string('manageqbanks', 'admin'));
+    $temp->add(new \core_question\admin\manage_qbank_plugins_page());
+    $ADMIN->add('qbanksettings', $temp);
+    $plugins = core_plugin_manager::instance()->get_plugins_of_type('qbank');
+
+    foreach ($plugins as $plugin) {
+        /** @var \core\plugininfo\qbank $plugin */
+        $plugin->load_settings($ADMIN, 'qbanksettings', $hassiteconfig);
     }
 }
 
@@ -654,6 +689,24 @@ if ($hassiteconfig) {
         new lang_string('searchhideallcategory_desc', 'admin'),
         0));
 
+    // Top result options.
+    $temp->add(new admin_setting_heading('searchtopresults', new lang_string('searchtopresults', 'admin'), ''));
+    // Max Top results.
+    $options = range(0, 10);
+    $temp->add(new admin_setting_configselect('searchmaxtopresults',
+        new lang_string('searchmaxtopresults', 'admin'),
+        new lang_string('searchmaxtopresults_desc', 'admin'),
+        3, $options));
+    // Teacher roles.
+    $options = [];
+    foreach (role_get_names() as $role) {
+        $options[$role->id] = $role->localname;
+    }
+    $temp->add(new admin_setting_configmultiselect('searchteacherroles',
+        new lang_string('searchteacherroles', 'admin'),
+        new lang_string('searchteacherroles_desc', 'admin'),
+        [], $options));
+
     $temp->add(new admin_setting_heading('searchmanagement', new lang_string('searchmanagement', 'admin'),
             new lang_string('searchmanagement_desc', 'admin')));
 
@@ -730,6 +783,8 @@ if ($hassiteconfig) {
     $ADMIN->add('modules', new admin_category('cache', new lang_string('caching', 'cache')));
     $ADMIN->add('cache', new admin_externalpage('cacheconfig', new lang_string('cacheconfig', 'cache'), $CFG->wwwroot .'/cache/admin.php'));
     $ADMIN->add('cache', new admin_externalpage('cachetestperformance', new lang_string('testperformance', 'cache'), $CFG->wwwroot . '/cache/testperformance.php'));
+    $ADMIN->add('cache', new admin_externalpage('cacheusage',
+            new lang_string('cacheusage', 'cache'), $CFG->wwwroot . '/cache/usage.php'));
     $ADMIN->add('cache', new admin_category('cachestores', new lang_string('cachestores', 'cache')));
     $ADMIN->locate('cachestores')->set_sorting(true);
     foreach (core_component::get_plugin_list('cachestore') as $plugin => $path) {

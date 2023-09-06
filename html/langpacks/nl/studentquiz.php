@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'nl', version '3.11'.
+ * Strings for component 'studentquiz', language 'nl', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -211,6 +211,7 @@ $string['moderator'] = 'Moderator';
 $string['modulename'] = 'StudentQuiz';
 $string['modulename_help'] = 'Met StudentQuiz kunnen leerlingen vragen toevoegen voor hun gemeenschap. In het overzicht van StudentQuiz kunnen leerlingen vragen filteren. Ze kunnen bovendien deze gefilterde vragen gebruiken om mee te oefenen. De leraar heeft de mogelijkheid de kolom \'Gemaakt door\' te anonimiseren.
 <br><br>De activiteit StudentQuiz beloont de leerlingen met punten om ze aan te sporen meer vragen toe te voegen en te oefenen. De punten worden weergegeven in een rangschikkingstabel.';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = 'StudentQuizzen';
 $string['more'] = 'Meer';
 $string['myattempts_column_name'] = 'Mijn pogingen';
@@ -259,7 +260,6 @@ $string['privacy:metadata:studentquiz_comment:deleteuserid'] = 'ID van gebruiker
 $string['privacy:metadata:studentquiz_comment:edited'] = 'Tijdstip opmerking bewerkt.';
 $string['privacy:metadata:studentquiz_comment:edituserid'] = 'ID van gebruiker die opmerking bewerkte.';
 $string['privacy:metadata:studentquiz_comment:parentid'] = 'ID van bovenliggende opmerking. 0: hoogste niveau opmerking.';
-$string['privacy:metadata:studentquiz_comment:questionid'] = 'ID van de vraag.';
 $string['privacy:metadata:studentquiz_comment:status'] = 'Status van de opmerking';
 $string['privacy:metadata:studentquiz_comment:timemodified'] = 'Tijdstip opmerking gewijzigd';
 $string['privacy:metadata:studentquiz_comment:type'] = 'Type opmerking';
@@ -281,11 +281,9 @@ $string['privacy:metadata:studentquiz_progress'] = 'Bewaart voortgangsinformatie
 $string['privacy:metadata:studentquiz_progress:attempts'] = 'Aantal pogingen om deze vraag te beantwoorden.';
 $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'Aantal juiste antwoorden.';
 $string['privacy:metadata:studentquiz_progress:lastanswercorrect'] = '0: laatste antwoord was onjuist of niet gedefinieerd, 1: laatste antwoord was juist.';
-$string['privacy:metadata:studentquiz_progress:questionid'] = 'ID van de vraag.';
 $string['privacy:metadata:studentquiz_progress:studentquizid'] = 'ID van de StudentQuiz.';
 $string['privacy:metadata:studentquiz_progress:userid'] = 'ID van de gebruiker.';
 $string['privacy:metadata:studentquiz_rate'] = 'Bewaart de beoordelingen van vragen.';
-$string['privacy:metadata:studentquiz_rate:questionid'] = 'ID van de vraag.';
 $string['privacy:metadata:studentquiz_rate:rate'] = 'Beoordeling voor de vraag.';
 $string['privacy:metadata:studentquiz_rate:userid'] = 'ID van de gebruiker.';
 $string['private'] = 'Privé';

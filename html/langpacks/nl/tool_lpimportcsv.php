@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'nl', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'nl', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -40,6 +40,7 @@ $string['idnumber'] = 'IDnummer';
 $string['import'] = 'Importeer';
 $string['importfile'] = 'CSV frameworkbeschrijvingsbestand';
 $string['importfile_help'] = 'Een competentieframework kan geïmporteerd worden via een tekstbestand. De opmaak van het bestand kan bepaald worden door het maken van een nieuw competentieframework op de site en dat te exporteren.';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = 'Gegevensbestand importeren';
 $string['invalidimportfile'] = 'Bestandsformaat is niet geldig';
 $string['isframework'] = 'Is framework';

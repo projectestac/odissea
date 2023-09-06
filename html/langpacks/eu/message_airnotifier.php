@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'eu', version '3.11'.
+ * Strings for component 'message_airnotifier', language 'eu', version '4.1'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -42,13 +42,19 @@ $string['configured'] = 'Konfiguratuta';
 $string['deletecheckdevicename'] = 'Ezabatu zure gailua: {$a->name}';
 $string['deletedevice'] = 'Ezabatu gailua. Kontuan izan app batek gailua berriz ere erregistratu dezakeela. Gailua berriz agertzen jarraituz gero, desgaitu ezazu.';
 $string['devicetoken'] = 'Gailuaren tokena';
+$string['donotsendnotification'] = 'Ez bidali inolako jakinarazpenik';
 $string['enableprocessor'] = 'Gaitu mobile jakinarazpenak.';
+$string['encryptnotifications'] = 'Zifratu jakinarazpenak';
+$string['encryptprocessing'] = 'Zifratzea onartzen ez duten gailuentzat';
+$string['encryptprocessing_desc'] = 'Zifratutako jakinarazpenek gutxienez Android 6 ala iOS 13 eta Moodle Aplikazioaren 4.2 edo goragoko bertsioa izatea behar dute.';
 $string['errorretrievingkey'] = 'Errorea gertatu da sarrera-gakoa berreskuratzean. Zure gunea erregistratuta egon behar da zerbitzu hau erabiltzeko. Zure gunea dagoeneko erregistratuta badago mesedez saiatu zure erregistroa eguneratzen. Bestela, sarbide-gako bat lortu dezakezu <a href="https://apps.moodle.com">Moodle Aplikazioen Atarian</a> kontu bat sortuta.';
 $string['keyretrievedsuccessfully'] = 'Gakoa ondo berreskuratu da. Moodle aplikazioaren erabilera-estatistiketara sarbidea izateko, sortu ezazu mesedez kontu bat <a href="https://apps.moodle.com">Moodle Aplikazioen Atarian</a>.';
 $string['messageprovidersempty'] = 'Ez dago mobile jakinarazpenik gaituta lehenetsitako jakinarazpenen hobespenetan.';
 $string['messageproviderslow'] = 'Gailu mugikorren jakinarazpen batzuk baino ez daude gaituta lehenetsitako jakinarazpenen hobespenetan.';
 $string['moodleappsportallimitswarning'] = 'Kontuan izan jakinarazpenak jaso dezakeen erabiltzaile kopurua zure Moodle aplikazioaren harpidetzaren araberakoa izango dela. Xehetasunerako, joan <a href="{$a}" target="_blank">Moodle Aplikazioen Atarira</a>.';
 $string['nodevices'] = 'Ez dago erregistratutako gailurik. Gailuak automatikoki agertuko dira Moodle aplikazioa instalatu eta gune hau gehitzen duzunean.';
+$string['noemailevernotset'] = '$CFG->noemailever desgaituta';
+$string['noemaileverset'] = '$CFG->noemailever gaituta dago config.php fitxategian. Ezarpen honetan false ezarri edo kendu behar duzu.';
 $string['nopermissiontomanagedevices'] = 'Ez duzu baimenik gailuak kudeatzeko.';
 $string['notconfigured'] = 'Airnotifier zerbitzaria ez da konfiguratu eta ondorioz push jakinarazpenak ezin dira bidali.';
 $string['notificationsserverconfiguration'] = 'Jakinarazpenen zerbitzariaren (Airnotifier) konfigurazioa';
@@ -71,6 +77,7 @@ $string['privacy:metadata:username'] = 'Erabiltzailearen erabiltzaile-izena.';
 $string['privacy:metadata:usersubsystem'] = 'Plugin hau erabiltzaile-azpisistemara konektatuta dago.';
 $string['privacy:subcontext'] = 'Airnotifier Mezuak';
 $string['requestaccesskey'] = 'Eskatu sarbide-gakoa';
+$string['sendnotificationnotenc'] = 'Bidali jakinarazpenak zifratu gabe';
 $string['sendtest'] = 'Bidali probarako push jakinarazpena nire gailuetara';
 $string['sendtestconfirmation'] = 'Probarako push jakinarazpena bidaliko da gune honetara konektatzeko erabiltzen dituzun gailuetara. Egiaztatu ezazu mesedez zure gailuak Internetera konektatuta daudela eta mobile aplikazioa ez dagoela irekita (push jakinarazpenak soilik jasotzen dira atzeko planoan jasotzen direnean).';
 $string['serverconnectivityerror'] = 'Gune hau ez da jakinarazpenen zerbitzariarekin ({$a}) konektatzeko gai';
@@ -78,3 +85,4 @@ $string['showhide'] = 'Gaitu/desgaitu gailua';
 $string['sitemustberegistered'] = 'Airnotifier instantzia publikoa erabili ahal izateko, zure gunea erregistratuta egon behar da. Bestela, sarbide-gako bat lortu dezakezu <a href="https://apps.moodle.com">Moodle Aplikazioen Atarian</a> kontu bat sortuta.';
 $string['unknowndevice'] = 'Gailu ezezaguna';
 $string['userdevices'] = 'Erabiltzaile-gailuak';
+$string['view_notification'] = 'Ukitu ikusteko';

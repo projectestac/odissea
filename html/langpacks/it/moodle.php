@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'it', version '3.11'.
+ * Strings for component 'moodle', language 'it', version '4.1'.
  *
  * @package     moodle
  * @category    string
@@ -38,9 +38,11 @@ $string['activities'] = 'Attività';
 $string['activities_help'] = 'Le attività, come i forum, i quiz, i wiki, consentono di inserire contenuti interattivi nei corsi.';
 $string['activity'] = 'Attività';
 $string['activityclipboard'] = 'Spostamento dell\'attività {$a}';
+$string['activityheader'] = 'Menu attività';
 $string['activityiscurrentlyhidden'] = 'Purtroppo al momento questa attività è nascosta';
 $string['activitymodule'] = 'Modulo attività';
 $string['activitymodules'] = 'Moduli attività';
+$string['activitynotready'] = 'Attività non ancora pronta';
 $string['activityreport'] = 'Report delle attività';
 $string['activityreports'] = 'Report delle attività';
 $string['activityselect'] = 'Seleziona questa attività per spostarla altrove';
@@ -53,6 +55,7 @@ $string['addactivitytosection'] = 'Aggiungi un\'attività alla sezione \'{$a}\''
 $string['addadmin'] = 'Aggiungi amministratore';
 $string['addblock'] = 'Aggiungi un blocco';
 $string['addcomment'] = 'Aggiungi un commento...';
+$string['addcondition'] = 'Aggiungi condizione';
 $string['addcountertousername'] = 'Crea gli utenti aggiungendo un numero allo username';
 $string['addcreator'] = 'Aggiungi creatore corsi';
 $string['adddots'] = 'Aggiungi...';
@@ -60,10 +63,11 @@ $string['added'] = 'Aggiunto {$a}';
 $string['addedtogroup'] = 'Aggiunto al gruppo "{$a}"';
 $string['addedtogroupnot'] = 'Non è stato aggiunto al gruppo {$a}';
 $string['addedtogroupnotenrolled'] = 'Non è stato aggiunto al gruppo "{$a}" in quanto non iscritto al corso';
-$string['addfilehere'] = 'Aggiungi file qui';
+$string['addfilehere'] = 'Rilasciare qui i file per aggiungerli in fondo alla sezione';
 $string['addinganew'] = 'Creazione {$a}';
 $string['addinganewto'] = 'Aggiungi {$a->what} a {$a->to}';
 $string['addingdatatoexisting'] = 'Aggiungi a dati esistenti';
+$string['additionalcustomnav'] = 'Navigazione personalizzata aggiuntiva';
 $string['additionalnames'] = 'Nomi aggiuntivi';
 $string['addlinkhere'] = 'Aggiungi collegamento qui';
 $string['addnew'] = 'Aggiungi {$a}';
@@ -93,7 +97,7 @@ $string['adminhelpconfigvariables'] = 'Configura le variabili generali del sito'
 $string['adminhelpcourses'] = 'Definisci corsi e categorie e assegnagli le persone';
 $string['adminhelpeditorsettings'] = 'Impostazioni di base dell\'editor HTML';
 $string['adminhelpedituser'] = 'Visualizza l\'elenco degli utenti e modificali';
-$string['adminhelpenvironment'] = 'Verifica se il tuo server supporta la versione installata e le versioni future di Moodle';
+$string['adminhelpenvironment'] = 'Verificare se il server supporta la versione installata e le versioni future di Moodle';
 $string['adminhelpfailurelogs'] = 'Visualizza log degli accessi falliti';
 $string['adminhelplanguage'] = 'Controlla e modifica il language pack corrente';
 $string['adminhelplogs'] = 'Visualizza i log di tutte le attività in questo sito';
@@ -105,7 +109,7 @@ $string['adminhelpmanageroles'] = 'Crea e definisci ruoli che possono essere ass
 $string['adminhelpmymoodle'] = 'Configura i blocchi MyMoodle per gli utenti';
 $string['adminhelpreports'] = 'Report per l\'intero sito';
 $string['adminhelpsitefiles'] = 'Pubblica file generici e carica copie di salvataggio esterne';
-$string['adminhelpsitesettings'] = 'Definisci come la pagina home deve essere visualizzata';
+$string['adminhelpsitesettings'] = 'Definisce l\'aspetto della home del sito';
 $string['adminhelpstickyblocks'] = 'Imposta blocchi "permanenti" per tutto il sito Moodle';
 $string['adminhelpthemes'] = 'Scelta del tema del sito (colori, caratteri, ecc)';
 $string['adminhelpuploadusers'] = 'Importa registrazioni di nuovi utenti da un file di testo';
@@ -153,6 +157,7 @@ $string['and'] = '{$a->one} e {$a->two}';
 $string['answer'] = 'Risposta';
 $string['any'] = 'Qualsiasi';
 $string['appearance'] = 'Aspetto';
+$string['applyfilters'] = 'Applica filtri';
 $string['approve'] = 'Approva';
 $string['areyousure'] = 'Sei sicuro?';
 $string['areyousuretorestorethis'] = 'Sei sicuro di continuare?';
@@ -241,13 +246,16 @@ $string['categorycontents'] = 'Sotto categorie e corsi';
 $string['categorycurrentcontents'] = 'Contenuto di {$a}';
 $string['categorydeleted'] = 'La categoria \'{$a}\' è stata eliminata';
 $string['categoryduplicate'] = 'Esiste già una categoria di nome \'{$a}\'!';
+$string['categoryheader'] = 'Menu categorie';
 $string['categoryhidden'] = '(nascosto)';
 $string['categorymodifiedcancel'] = 'La categoria è stata modificata! Annulla e riprova.';
 $string['categoryname'] = 'Nome categoria';
+$string['categorypath'] = 'Percorso categoria';
 $string['categorysubcategoryof'] = '{$a->category} - sottocategoria di {$a->parentcategory}';
 $string['categoryupdated'] = 'La categoria \'{$a}\' è stata aggiornata';
 $string['changedpassword'] = 'Password modificata';
 $string['changepassword'] = 'Cambia password';
+$string['changesmade'] = 'Modifiche apportate';
 $string['changesmadereallygoaway'] = 'Hai effettuato delle modifiche. Sei sicuro di navigare altrove e perdere le modifiche ?';
 $string['changessaved'] = 'Modifiche salvate';
 $string['check'] = 'Verifica';
@@ -276,16 +284,22 @@ $string['chooseuser'] = 'Seleziona un utente';
 $string['city'] = 'Città /Località';
 $string['cleaningtempdata'] = 'Eliminazione dati temporanei';
 $string['clear'] = 'Svuota';
+$string['clearfilterrow'] = 'Elimina riga del filtro';
+$string['clearfilters'] = 'Azzera filtri';
 $string['clearsearch'] = 'Elimina le selezioni della ricerca';
 $string['clickhelpiconformoreinfo'] = '...prosegue...Fate click sulla icona aiuto per accedere all\'articolo completo';
 $string['clickhere'] = 'Clicca qui ...';
 $string['clicktochangeinbrackets'] = '{$a} (Click per cambiare)';
 $string['clicktohideshow'] = 'Click per aprire e chiudere';
+$string['closeblockdrawer'] = 'Chiudi cassetto dei blocchi';
 $string['closebuttontitle'] = 'Chiudi';
+$string['closecourseindex'] = 'Chiudi indice del corso';
+$string['closedrawer'] = 'Chiudi cassetto';
 $string['closewindow'] = 'Chiudi questa finestra';
 $string['collapse'] = 'Minimizza';
 $string['collapseall'] = 'Minimizza tutto';
 $string['collapsecategory'] = 'Minimizza {$a}';
+$string['comebacklater'] = 'Per favore riprovare più tardi.';
 $string['commentincontext'] = 'Trova questo commento nel contesto';
 $string['comments'] = 'Commenti';
 $string['commentscount'] = 'Commenti: ({$a})';
@@ -310,6 +324,8 @@ $string['contentexport_coursesummary'] = 'Il file fa parte del contenuto di <a h
 $string['contentexport_footersummary'] = 'Il file fa parte del contenuto di <a href="{$a->courselink}">{$a->coursename}</a> e scaricato da {$a->userfullname} il {$a->date}.';
 $string['contentexport_modulesummary'] = 'La pagina fa parte del contenuto di <a href="{$a->modulelink}">{$a->modulename}</a> scaricato il {$a->date}. Da notare che porzioni del contenuto e file più grandi di {$a->maxfilesize} non sono stati scaricati.';
 $string['contentexport_viewfilename'] = 'Visualizza il file {$a}';
+$string['context'] = 'Contesto';
+$string['contexturl'] = 'URL del contesto';
 $string['continue'] = 'Continua';
 $string['continuetocourse'] = 'Clicca qui per entrare nel corso';
 $string['convertingwikitomarkdown'] = 'È in corso la conversione del wiki al formato Markdown';
@@ -319,9 +335,15 @@ $string['cookiesenabled_help'] = 'Il sito utilizza due tipi di cookie:
 Il primo è un cookie di sessione ed è normalmente chiamato MoodleSession. È un cookie essenziale ed è indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.
 
 Il secondo cookie, generalmente chiamato MOODLEID, serve solo per ricordare il proprio username all\'interno del browser. Grazie a questo cookie quando si ritorna a far vista allo stesso sito, il campo della pagina di login sarà già compilato con lo username. Non ci sono problemi a rifiutare questo cookie, l\'unico inconveniente sarà quello di dover inserire nuovamente lo username nella pagina di login.';
+$string['cookiesenabled_help_html'] = 'Il sito utilizza due tipi di cookie:<br/><br/>
+
+Il primo è un cookie di sessione ed è normalmente chiamato MoodleSession. È un cookie essenziale ed è indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.<br/><br/>
+
+Il secondo cookie, generalmente chiamato MOODLEID, serve solo per ricordare il proprio username all\'interno del browser. Grazie a questo cookie quando si ritorna a far vista allo stesso sito, il campo della pagina di login sarà già compilato con lo username. Non ci sono problemi a rifiutare questo cookie, l\'unico inconveniente sarà quello di dover inserire nuovamente lo username nella pagina di login.';
 $string['cookiesenabledonlysession'] = 'Il browser deve avere i cookie abilitati';
 $string['cookiesenabledonlysession_help'] = 'Il sito utilizza un cookie di sessione, normalmente chiamato MoodleSession. È indispensabile che il browser sia configurato per accettare questo cookie al fine di garantire la validità della propria autenticazione navigando tra le pagine. Quando si chiuderà il browser o si effettuerà la disconnessione, il cookie verrà eliminato, sia dal browser sia dal server.';
 $string['cookiesnotenabled'] = 'Purtroppo al momento i cookie non sono abilitati nel tuo browser.';
+$string['cookiesnotice'] = 'Informativa cookie';
 $string['copy'] = 'copia';
 $string['copyasnoun'] = 'copia';
 $string['copycourse'] = 'Copia corso';
@@ -374,6 +396,7 @@ $string['courseformatoptions'] = 'Opzioni di formattazione di {$a}';
 $string['courseformats'] = 'Formati dei corsi';
 $string['courseformatudpate'] = 'Aggiorna formato';
 $string['coursegrades'] = 'Valutazioni del corso';
+$string['courseheader'] = 'Menu corso';
 $string['coursehelpcategory'] = 'Definisce a quale categoria apparterrà il corso.';
 $string['coursehelpforce'] = 'Forza la modalità gruppo prescelta in qualsiasi attività presente nel corso.';
 $string['coursehelpformat'] = 'Il formato con il quale sarà visualizzata la pagina principale del corso.';
@@ -388,6 +411,7 @@ $string['courselegacyfiles'] = 'File legacy del corso';
 $string['courselegacyfiles_help'] = 'L\'area file del corso fornisce una compatibilità con Moodle 1.9 e versioni precedenti. I file presenti in quest\'area sono sempre accessibili da tutti i partecipanti al corso, indipendentemente se sono collegati o meno tramite un link. Inoltre non è possibile sapere dove i file sono utilizzati da Moodle.
 
 Utilizzando i File del corso ti esponi ad una serie di problemi di privacy, di sicurezza e problemi di backup, ripristino ed importazione: in generale potresti incorre in problemi tutte le volte che un file è riutilizzato o condiviso. Si raccomanda di non usare i File del corso a meno che non ti siano perfettamente chiare le limitazioni.';
+$string['courselegacyfiles_link'] = 'coursefiles2';
 $string['courselegacyfilesofcourse'] = 'File legacy del corso: {$a}';
 $string['coursenotaccessible'] = 'Questo corso non è abilitato all\'accesso pubblico';
 $string['courseoverview'] = 'Panoramica corsi';
@@ -418,6 +442,7 @@ $string['courserequestsuccess'] = 'La tua richiesta di corso è stata salvata. L
 $string['courserequestsupport'] = 'Informazioni aggiuntive per consentire agli Amministratori di valutare al meglio la richiesta';
 $string['courserequestwarning'] = 'L\'utente che ha richiesto il corso verrà automaticamente iscritto con il ruolo di {$a}.';
 $string['courserestore'] = 'Ripristino corso';
+$string['coursereuse'] = 'Riutilizzo corso';
 $string['courses'] = 'Corsi';
 $string['coursesearch'] = 'Cerca corsi';
 $string['coursesearch_help'] = 'È possibile cercare usando più parole e raffinare la ricerca:
@@ -498,6 +523,7 @@ $string['day'] = 'giorno';
 $string['days'] = 'giorni';
 $string['decodinginternallinks'] = 'Decodifica collegamenti interni';
 $string['default'] = 'Default';
+$string['defaultcategoryname'] = 'Categoria 1';
 $string['defaultcompetencescale'] = 'Scala di competenze di default';
 $string['defaultcompetencescaledesc'] = 'Una scala di valutazione binaria che indica solo se un utente ha dimostrato esperienza oppure no.';
 $string['defaultcompetencescalenotproficient'] = 'Non competente';
@@ -607,6 +633,7 @@ $string['editgroupprofile'] = 'Modifica profilo del gruppo';
 $string['editinga'] = 'Modifica di {$a}';
 $string['editingteachershort'] = 'Editor';
 $string['editlock'] = 'Questo valore non può essere modificato!';
+$string['editmode'] = 'Modalità modifica';
 $string['editmyprofile'] = 'Modifica';
 $string['editorbgcolor'] = 'Colore di sfondo';
 $string['editorcleanonpaste'] = 'Pulisci HTML di Word incollandolo';
@@ -674,13 +701,15 @@ $string['emaildigestsubjects'] = 'Oggetti (email giornaliera con solo l\'oggetto
 $string['emaildisable'] = 'Questo indirizzo email è disabilitato.';
 $string['emaildisableclick'] = 'Clicca qui per disabilitare tutte le email dall\'essere spedite a questo indirizzo';
 $string['emaildisplay'] = 'Visibilità email';
-$string['emaildisplay_help'] = 'Gli utenti con ruoli privilegiati (ad esempio docenti e manager) potranno sempre visualizzare l\'indirizzo email.';
-$string['emaildisplaycourse'] = 'Consenti solo agli altri iscritti al corso di visualizzare il mio indirizzo email';
+$string['emaildisplay_help'] = '* Nascosto - Solo gli utenti con idonei privilegi (ad esempio docenti e manager) potranno visualizzare l\'indirizzo email.
+* Visibile a tutti - Tutti gli utenti visualizzeranno l’indirizzo email
+* Visibile agli iscritti al corso - Solo i partecipanti al corso dove si è iscritti potranno visualizzare l\'indirizzo email.';
+$string['emaildisplaycourse'] = 'Visibile ai partecipanti del corso';
 $string['emaildisplaycoursemembersonly'] = '(visibile ad altri partecipanti al corso)';
 $string['emaildisplayeveryone'] = '(visibile a tutti)';
-$string['emaildisplayhide'] = '(Nascosto per tutti gli utenti senza privilegi)';
-$string['emaildisplayno'] = 'Non visualizzare il mio indirizzo email ad utenti che non hanno gli opportuni privilegi';
-$string['emaildisplayyes'] = 'Visualizza il mio indirizzo email agli altri';
+$string['emaildisplayhide'] = '(Nascosto per tutti gli utenti senza idonei privilegi)';
+$string['emaildisplayno'] = 'Nascosto';
+$string['emaildisplayyes'] = 'Visibile a tutti';
 $string['emailenable'] = 'Questo indirizzo email è abilitato.';
 $string['emailenableclick'] = 'Clicca qui per riabilitare tutte le email che sono spedite a questo indirizzo';
 $string['emailexists'] = 'Questo indirizzo email è già esistente.';
@@ -741,14 +770,14 @@ $string['emailpasswordsent'] = 'Grazie per aver confermato il cambiamento della 
 La nuova password è stata generata automaticamente, <a href="{$a->link}">se vuoi puoi cambiarla con una di tua scelta</a>.';
 $string['emailresetconfirmation'] = 'Gentile {$a->firstname},
 
-è stata richiesta una nuova password per il tuo account \'{$a->username}\' su \'{$a->sitename}\'.
+è stato richiesto un cambio password del tuo account \'{$a->username}\' su \'{$a->sitename}\'.
 
-Per confermare la richiesta ed impostare una nuova password devi cliccare sul link seguente:
-
+Per confermare la richiesta ed impostare una nuova password, fare click sul link seguente:
 {$a->link}
-(Il link sarà valido per i {$a->resetminutes} minuti successivi alla richiesta)
 
-Se la richiesta non è stata effettuata da te, non devi fare nulla.
+(Il link sarà valido per {$a->resetminutes} minuti a partire dal momento in cui è stata effettuata la richiesta)
+
+Se la richiesta non è stata effettuata da te, puoi ignorare questa email.
 
 Se hai bisogno di aiuto, contatta l\'amministratore del sito, {$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: Richiesta recupero password';
@@ -769,7 +798,9 @@ $string['emojicategoryrecent'] = 'Recenti';
 $string['emojicategorysmileysemotion'] = 'Sorrisi & emozione';
 $string['emojicategorysymbols'] = 'Simboli';
 $string['emojicategorytravelplaces'] = 'Viaggi & luoghi';
+$string['emptycmids'] = 'L\'ID del modulo del corso è vuoto';
 $string['emptydragdropregion'] = 'regione vuota';
+$string['emptysectionids'] = 'L\'ID della sezione è vuoto';
 $string['enable'] = 'Abilita';
 $string['encryptedcode'] = 'Codice criptato';
 $string['enddate'] = 'Data di fine corso';
@@ -820,6 +851,7 @@ $string['eventdashboardsreset'] = 'Reimpostazione dashboard';
 $string['eventdashboardviewed'] = 'Visualizzazione dashboard';
 $string['eventdatabasetextfieldcontentreplaced'] = 'Ricerca e sostituzione nel database';
 $string['eventemailfailed'] = 'Invio email fallito';
+$string['eventmycoursesviewed'] = 'Visualizzazione I miei corsi';
 $string['eventname'] = 'Evento';
 $string['eventrecentactivityviewed'] = 'Visualizzazione attività recente';
 $string['eventsearchindexed'] = 'Indicizzazione dati per la ricerca';
@@ -872,7 +904,10 @@ $string['fileuploadwithcontent'] = 'I caricamenti di file non devono contenere i
 $string['filloutallfields'] = 'Compila tutti i campi di questo form';
 $string['filter'] = 'Filtro';
 $string['filteroption'] = '{$a->criteria}: {$a->value}';
+$string['filterrowlegend'] = 'Filtro {$a}';
 $string['filters'] = 'Filtri';
+$string['filtersetmatchdescription'] = 'La modalità di combinazione dei filtri';
+$string['filtertype'] = 'Tipo di filtro';
 $string['findmorecourses'] = 'Trova altri corsi...';
 $string['first'] = 'Inizio';
 $string['firstaccess'] = 'Primo accesso';
@@ -922,13 +957,13 @@ $string['frontpagecategorycombo'] = 'Elenco combinato';
 $string['frontpagecategorynames'] = 'Elenco delle categorie';
 $string['frontpagecourselist'] = 'Elenco dei corsi';
 $string['frontpagecoursesearch'] = 'Riquadro cerca corsi';
-$string['frontpagedescription'] = 'Descrizione pagina home';
-$string['frontpagedescriptionhelp'] = 'La descrizione del sito può essere visualizzata nella pagina home tramite il blocco "Descrizione del corso/sito".';
+$string['frontpagedescription'] = 'Descrizione home del sito';
+$string['frontpagedescriptionhelp'] = 'La descrizione può essere visualizzata nella pagina home tramite il blocco "Descrizione del corso/sito".';
 $string['frontpageenrolledcourselist'] = 'Elenco dei corsi dove l\'utente è iscritto';
-$string['frontpageformat'] = 'Formato pagina home';
-$string['frontpageformatloggedin'] = 'Formato pagina home dopo il login';
+$string['frontpageformat'] = 'Formato pagina home del sito';
+$string['frontpageformatloggedin'] = 'Formato pagina home del sito dopo il login';
 $string['frontpagenews'] = 'Annunci';
-$string['frontpagesettings'] = 'Impostazioni pagina home';
+$string['frontpagesettings'] = 'Impostazioni pagina home del sito';
 $string['fulllistofcourses'] = 'Tutti i corsi';
 $string['fullname'] = 'Nome';
 $string['fullnamecourse'] = 'Titolo del corso';
@@ -1003,26 +1038,28 @@ $string['hiddenassign'] = 'Attribuzione nascosta';
 $string['hiddenfromstudents'] = 'Nascosta agli studenti';
 $string['hiddenoncoursepage'] = 'Disponibile ma non visibile sulla pagina del corso';
 $string['hiddensections'] = 'Sezioni nascoste';
-$string['hiddensections_help'] = 'L\'impostazione determina come visualizzare le sezioni nascoste agli studenti. La sezione può essere visualizzata in formato compatto (ad esempio una settimana di vacanze quando il formato del corso è settimanale) oppure può essere nascosta del tutto.';
-$string['hiddensectionscollapsed'] = 'Le sezioni nascoste visualizzano solo l\'intestazione';
+$string['hiddensections_help'] = 'L\'impostazione determina come visualizzare le sezioni nascoste agli studenti (ad esempio una settimana di vacanze quando il formato del corso è settimanale) oppure se deve essere nascosta del tutto.';
+$string['hiddensectionscollapsed'] = 'Le sezioni nascoste sono visualizzate come non disponibili';
 $string['hiddensectionsinvisible'] = 'Le sezioni nascoste non sono visibili';
 $string['hiddenwithbrackets'] = '(nascosto)';
 $string['hide'] = 'Nascondi';
 $string['hideadvancedsettings'] = 'Nascondi le impostazioni avanzate';
 $string['hidechartdata'] = 'Nascondi i dati del grafico';
-$string['hidefromstudents'] = 'Nascondi agli studenti';
-$string['hideoncoursepage'] = 'Rendi disponibile ma non visibile sulla pagina del corso';
+$string['hidefromstudents'] = 'Nascondi nella pagina home del corso';
+$string['hideoncoursepage'] = 'Rendi disponibile ma non visibile nella pagina home del corso';
 $string['hidepicture'] = 'Nascondi immagine';
 $string['hidepopoverwindow'] = 'Nascondi finestra popover';
 $string['hidesection'] = 'Nascondi sezione {$a}';
 $string['hidesettings'] = 'Nascondi impostazioni';
 $string['hideshowblocks'] = 'Nascondi o visualizza blocchi';
 $string['highlight'] = 'Evidenzia';
+$string['highlighted'] = 'Evidenziato';
 $string['highlightoff'] = 'Rimuovi evidenziazione';
 $string['hits'] = 'Accessi';
 $string['hitsoncourse'] = 'Accessi al corso {$a->coursename} dell\'utente {$a->username}';
 $string['hitsoncoursetoday'] = 'Accessi di oggi al corso {$a->coursename} dell\'utente {$a->username}';
 $string['home'] = 'Home';
+$string['homeheader'] = 'Menu home';
 $string['hour'] = 'ora';
 $string['hours'] = 'ore';
 $string['howtomakethemes'] = 'Come realizzare un nuovo tema';
@@ -1096,10 +1133,12 @@ $string['indicator:potentialcognitive'] = 'Profondità cognitiva potenziale del 
 $string['indicator:potentialcognitive_help'] = 'L\'indicatore è basato sulla profondità cognitiva potenziale che lo studente potrebbe toccare svolgendo le attività del corso.';
 $string['indicator:potentialcognitivedef'] = 'Profondità cognitiva potenziale del corso';
 $string['indicator:potentialcognitivedef_help'] = 'La profondità che il corso offre in termini di coinvolgimento cognitivo, come ad esempio consegna di un lavoro per aver un feedback, la possibilità di rivedere i lavori di altri, la possibilità di rivedere e consegnare di nuovo il proprio lavoro.';
+$string['indicator:potentialcognitivedef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:potentialsocial'] = 'Dimensione sociale potenziale del corso';
 $string['indicator:potentialsocial_help'] = 'L\'indicatore è basato sulla dimensione sociale potenziale che lo studente potrebbe raggiungere svolgendo le attività del corso.';
 $string['indicator:potentialsocialdef'] = 'Dimensione sociale potenziale del corso';
 $string['indicator:potentialsocialdef_help'] = 'La dimensione che il corso offre in termini di coinvolgimento sociale, come ad esempio l\'interazione con altri partecipanti e con la comunità di pratica al di là della propria classe.';
+$string['indicator:potentialsocialdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['indicator:readactions'] = 'Numero di letture';
 $string['indicator:readactions_help'] = 'L\'indicatore rappresenta il numero di letture (visualizzazioni) effettuate dallo studente.';
 $string['indicator:userforumstracking'] = 'Evidenziazione dei messaggi dei forum';
@@ -1124,6 +1163,7 @@ $string['langltr'] = 'Direzione scrittura da sinistra a destra';
 $string['langrtl'] = 'Direzione scrittura da destra a sinistra';
 $string['language'] = 'Lingua';
 $string['languagegood'] = 'Questo language pack è aggiornato! :-)';
+$string['languageselector'] = 'Selettore Lingua';
 $string['last'] = 'Fine';
 $string['lastaccess'] = 'Accesso più recente';
 $string['lastcourseaccess'] = 'Ultimo accesso al corso';
@@ -1190,7 +1230,9 @@ $string['makeeditable'] = 'Se si rende \'{$a}\' modificabile dal processo del se
 $string['makethismyhome'] = 'Rendi questa pagina la mia pagina home';
 $string['makeunavailable'] = 'Rendi non disponibile';
 $string['manageblocks'] = 'Blocchi';
+$string['managecategories'] = 'Gestione categorie di corso';
 $string['managecategorythis'] = 'Gestione categoria';
+$string['managecombined'] = 'Gestione categorie  di corso e corsi';
 $string['managecontentbanktypes'] = 'Gestione tipi contenuti';
 $string['managecourses'] = 'Gestisci i corsi';
 $string['managedatabase'] = 'Gestione database';
@@ -1202,7 +1244,9 @@ $string['manageroles'] = 'Ruoli e privilegi';
 $string['markallread'] = 'Segna tutti come letti';
 $string['markedthistopic'] = 'Questo argomento è evidenziato come argomento attuale';
 $string['markthistopic'] = 'Contrassegna questo argomento come argomento corrente';
+$string['match'] = 'Filtra';
 $string['matchingsearchandrole'] = 'Corrispondenze per \'{$a->search}\' e {$a->role}';
+$string['matchofthefollowing'] = 'delle seguenti condizioni:';
 $string['maxareabytesreached'] = 'La dimensione del file (o la dimensione complessiva di più file) eccede lo spazio rimasto disponibile in quest\'area.';
 $string['maxfilesize'] = 'Dimensione massima dei nuovi file: {$a}';
 $string['maxfilesreached'] = 'Sei autorizzato ad allegare a questo elemento un massimo di {$a} file';
@@ -1223,6 +1267,8 @@ $string['maxsizeandareasize'] = 'Dimensione massima dei file: {$a->size}, limite
 $string['maxsizeandattachments'] = 'Dimensione massima dei file: {$a->size}, numero massimo di file: {$a->attachments}';
 $string['maxsizeandattachmentsandareasize'] = 'Dimensione massima dei file: {$a->size}, numero massimo di file: {$a->attachments}, dimensione totale: {$a->areasize}';
 $string['memberincourse'] = 'Persone nel corso';
+$string['menu'] = 'Menu';
+$string['message'] = 'Messaggio';
 $string['messagebody'] = 'Corpo del messaggio';
 $string['messagedselectedusers'] = 'È stato inviato il messaggio agli utenti selezionati e l\'elenco dei destinatari è stata svuotata.';
 $string['messagedselectedusersfailed'] = 'Qualcosa non è andato a buon fine mentre veniva mandato il messaggio agli utenti selezionati. Alcuni utenti potrebbero aver ricevuto la mail.';
@@ -1234,6 +1280,7 @@ $string['messageprovider:badgerecipientnotice'] = 'Notifiche destinatario del ba
 $string['messageprovider:competencyplancomment'] = 'Commenti sui piani di formazione';
 $string['messageprovider:competencyusercompcomment'] = 'Commenti sulle competenze';
 $string['messageprovider:coursecompleted'] = 'Corso completato';
+$string['messageprovider:coursecontentupdated'] = 'Modifiche ai contenuti dei corsi';
 $string['messageprovider:courserequestapproved'] = 'Notifiche di approvazione corsi a richiesta';
 $string['messageprovider:courserequested'] = 'Notifiche di richieste corsi';
 $string['messageprovider:courserequestrejected'] = 'Notifiche di mancata approvazione corsi a richiesta';
@@ -1245,6 +1292,7 @@ $string['messageprovider:insights'] = 'Considerazioni generate dai modelli dei p
 $string['messageprovider:instantmessage'] = 'Messaggi personali tra utenti';
 $string['messageprovider:instantmessage_help'] = 'La sezione consente di configurare il comportamento dei  messaggi che ricevi dagli altri utenti del sito.';
 $string['messageprovider:messagecontactrequests'] = 'Notifiche di richieste di contatto';
+$string['messageprovider:newlogin'] = 'Notifiche di nuove autenticazione';
 $string['messageprovider:notices'] = 'Notifiche di problemi minori';
 $string['messageprovider:notices_help'] = 'Si tratta di note che dovrebbero essere rese note l\'amministratore.';
 $string['messageselect'] = 'Seleziona questo utente come destinatario del messaggio';
@@ -1262,7 +1310,7 @@ $string['missingemail'] = 'Non hai inserito l\'email';
 $string['missingfirstname'] = 'Non hai inserito il nome';
 $string['missingfromdisk'] = 'Manca sul disco';
 $string['missingfullname'] = 'Non hai inserito il Nome';
-$string['missinglastname'] = 'Non hai inserito il cognome';
+$string['missinglastname'] = 'Il cognome è mancante';
 $string['missingname'] = 'Non hai inserito il nome';
 $string['missingnewpassword'] = 'Nuova password mancante';
 $string['missingpassword'] = 'Non hai inserito la password';
@@ -1287,31 +1335,30 @@ $string['modulesetup'] = 'Impostazione tabelle modulo';
 $string['modulesuccess'] = 'Tabelle {$a} impostate correttamente';
 $string['modulesused'] = 'Moduli utilizzati';
 $string['modvisible'] = 'Disponibilità';
-$string['modvisible_help'] = 'Impostando la disponibilità su "Visualizza sulla pagina del corso", l\'attività o la risorsa sarà disponibile agli studenti (ma soggetta a restrizioni a seconda delle eventuali condizioni di accesso).
-
-Impostando la disponibilità su "Nascondi agli studenti", l\'attività o la risorsa sarà disponibile solamente agli utenti con il privilegio di visualizzare attività nascoste (per impostazione predefinita, gli utenti con il ruolo di docente o docente non editor).';
+$string['modvisible_help'] = '* Visualizza nella pagina home del corso*: disponibile agli studenti (a seconda delle eventuali condizioni di accesso).
+* Nascondi nella pagina home del corso *:  Non disponibile agli studenti';
 $string['modvisiblehiddensection'] = 'Disponibilità';
-$string['modvisiblehiddensection_help'] = 'Impostando la disponibilità su "Nascondi agli studenti", l\'attività o risorsa sarà disponibile solamente agli utenti con il privilegio di visualizzare attività nascoste (per impostazione predefinita, gli utenti con il ruolo di docente o docente non editore).
-
-Se il corso contiene numerose attività o risorse, la pagina del corso può essere semplificata con l\'impostazione "Rendi disponibile ma non visibile sulla pagina del corso". In questo caso, occorrerà inserire un link a questa attività o risorsa altrove, ad esempio, in una risorsa "Pagina". L\'attività sarà comunque elencata nel registro delle valutazione e in altri report.';
+$string['modvisiblehiddensection_help'] = '* Nascondi nella pagina home del corso *:  Non disponibile agli studenti
+* Rendi disponibile ma non visibile nella pagina home del corso: Disponibile agli studenti se viene fornito un link. Le attività appariranno comunque nel registro delle valutazioni ed n altri report.';
 $string['modvisiblewithstealth'] = 'Disponibilità';
-$string['modvisiblewithstealth_help'] = 'Impostando la disponibilità su "Visualizza sulla pagina del corso", l\'attività o risorsa sarà disponibile agli studenti (ma soggetta a restrizioni a seconda delle eventuali condizioni di accesso).
-
-Impostando la disponibilità su "Nascondi agli studenti", l\'attività o risorsa sarà disponibile solo agli (per impostazione predefinita, gli utenti con il ruolo di docente o docente non editore).
-
-Se il corso contiene numerose attività o risorse, la pagina del corso può essere semplificata con l\'impostazione "Rendi disponibile ma non visibile sulla pagina del corso". In questo caso, occorre inserire altrove un link a questo elemento, ad esempio, in una pagina di risorse. L\'attività sarà ancora elencata nel registro di valutazione e in altri report.';
+$string['modvisiblewithstealth_help'] = '* Visualizza nella pagina home del corso*: disponibile agli studenti (a seconda delle eventuali condizioni di accesso).
+* Nascondi nella pagina home del corso *:  Non disponibile agli studenti
+* Rendi disponibile ma non visibile nella pagina home del corso: Disponibile agli studenti se viene fornito un link. Le attività appariranno comunque nel registro delle valutazioni ed n altri report.';
 $string['month'] = 'Mese';
 $string['months'] = 'Mesi';
 $string['moodledocs'] = 'Moodle Doc';
 $string['moodledocslink'] = 'Aiuto e documentazione';
 $string['moodlelogo'] = 'Logo Moodle';
 $string['moodlerelease'] = 'Release di Moodle';
+$string['moodleservicesandsupport'] = 'Servizi e supporto';
 $string['moodleversion'] = 'Versione Moodle';
 $string['more'] = 'ancora';
+$string['moreactions'] = 'Altra azioni';
 $string['morehelp'] = 'Aiuto ulteriore';
 $string['morehelpaboutmodule'] = 'Ulteriore aiuto sull\'attività {$a}';
 $string['moreinfo'] = 'Ulteriori informazioni';
 $string['moreinformation'] = 'Maggiori informazioni su questo errore';
+$string['moremenu'] = 'Altro';
 $string['morenavigationlinks'] = 'Altro...';
 $string['moreprofileinfoneeded'] = 'Per cortesia, dicci di più su te stesso';
 $string['mostrecently'] = 'più recentemente';
@@ -1326,7 +1373,7 @@ $string['movecontent'] = 'Sposta {$a}';
 $string['movecontentafter'] = 'Dopo "{$a}"';
 $string['movecontentstoanothercategory'] = 'Sposta i corsi in un altra categoria';
 $string['movecontenttothetop'] = 'All\'inizio dell\'elenco';
-$string['movecoursemodule'] = 'Sposta risorsa';
+$string['movecoursemodule'] = 'Sposta attività';
 $string['movecoursesection'] = 'Sposta sezione';
 $string['movecourseto'] = 'Sposta corso in:';
 $string['movedown'] = 'Sposta in basso';
@@ -1363,6 +1410,18 @@ $string['new'] = 'Nuovo';
 $string['newaccount'] = 'Nuovo account';
 $string['newactivityname'] = 'Nuovo nome dell\'attività {$a}';
 $string['newcourse'] = 'Nuovo corso';
+$string['newloginnotificationbodyfull'] = '<p>Gentile {$a->userfullname},</p>
+<p>è stata rilevata un\'autenticazione con il tuo account su {$a->sitename} tramite un nuovo dispositivo.</p>
+<ul>
+<li>Account: {$a->username} {$a->useremail}</li>
+<li>{$a->logintime}</li>
+<li>Dispositivo: {$a->logindevice}</li>
+<li>IP: {$a->loginip}</li>
+</ul>
+<p>Se riconosci questa attività, puoi ignorare questo messaggio.</p>
+<p>Se invece non riconosci l\'attività, allora per favore <a href="{$a->changepasswordlink}">cambia subito la tua password</a>.</p>';
+$string['newloginnotificationbodysmall'] = 'È stato appena effettuato l\'accesso al tuo account {$a} da un nuovo dispositivo.';
+$string['newloginnotificationtitle'] = 'Nuova autenticazione del tuo account su {$a}';
 $string['newpassword'] = 'Nuova password';
 $string['newpassword_help'] = 'Inserisci una password oppure lascia vuoto per mantenere la password attuale.';
 $string['newpasswordfromlost'] = '<strong>NOTA:</strong> La tua  <strong>Password </strong> ti verrà spedita nella <strong>seconda</strong> delle due mail spedite dalla procedura di recupero password. Accertati di aver ricevuto la nuova passowrd prima di proseguire.';
@@ -1509,7 +1568,12 @@ $string['numyears'] = '{$a} anni';
 $string['ok'] = 'OK';
 $string['oldpassword'] = 'Password attuale';
 $string['olduserdirectory'] = 'Questa è la VECCHIA cartella utenti, e non è più necessaria. La puoi tranquillamente eliminare. Tutti i file che contiene sono stati copiati nella NUOVA cartella utenti.';
+$string['opendrawerblocks'] = 'Apri il cassetto del blocco';
+$string['opendrawerindex'] = 'Apri indice del corso';
 $string['opensinnewwindow'] = 'Apri in una nuova finestra';
+$string['operator_and'] = 'and';
+$string['operator_andnot'] = 'and not';
+$string['operator_or'] = 'or';
 $string['optional'] = 'opzionale';
 $string['options'] = 'opzioni';
 $string['order'] = 'Ordine';
@@ -1531,7 +1595,6 @@ $string['parentcategory'] = 'Categoria di appartenenza';
 $string['parentcoursenotfound'] = 'Corso padre non trovato!';
 $string['parentfolder'] = 'Cartella superiore';
 $string['participants'] = 'Partecipanti';
-$string['participantscount'] = 'Numero di partecipanti: {$a}';
 $string['participantslist'] = 'Elenco';
 $string['participationratio'] = 'Tasso di partecipazione';
 $string['participationreport'] = 'Report della partecipazione';
@@ -1572,14 +1635,18 @@ $string['phone'] = 'Telefono';
 $string['phone1'] = 'Telefono';
 $string['phone2'] = 'Cellulare';
 $string['phpinfo'] = 'PHP info';
+$string['picture'] = 'Immagine';
 $string['pictureof'] = 'Immagine {$a}';
 $string['pictureofuser'] = 'Immagine dell\'utente';
+$string['placeholdertypeorselect'] = 'Scrivi o seleziona...';
 $string['pleaseclose'] = 'Si prega di chiudere questa finestra adesso.';
 $string['pleasesearchmore'] = 'Per favore cercate ancora';
 $string['pleaseusesearch'] = 'Per favore usate la ricerca';
 $string['plugin'] = 'Plugin';
+$string['pluginarea'] = 'Area';
 $string['plugincheck'] = 'Controllo dei plugin';
 $string['plugindeletefiles'] = 'Tutti i dati relativi al plugin \'{$a->name}\' sono stati eliminati dal database. Per evitare che il plugin si installi nuovamente, è necessario rimuovere dal server la seguente cartella: {$a->directory}';
+$string['pluginitemid'] = 'ID elemento';
 $string['pluginsetup'] = 'Impostazione tabelle plugin';
 $string['policyaccept'] = 'Ho letto le condizioni e le accetto';
 $string['policyagree'] = 'Per continuare ad usare questo sito, è necessario accettare le condizioni riportate.';
@@ -1594,6 +1661,7 @@ $string['potentialadmins'] = 'Amministratori possibili';
 $string['potentialcreators'] = 'Creatori di corsi possibili';
 $string['potentialstudents'] = 'Studenti possibili';
 $string['potentialteachers'] = 'Potenziali docenti';
+$string['poweredbymoodle'] = 'Powered by <a href="https://moodle.com">Moodle</a>';
 $string['preferences'] = 'Preferenze';
 $string['preferredlanguage'] = 'Preferenze lingua';
 $string['preferredtheme'] = 'Tema preferito';
@@ -1629,7 +1697,7 @@ $string['privacy:metadata:log:time'] = 'Data di svolgimento dell\'azione';
 $string['privacy:metadata:log:url'] = 'URL correlata all\'evento';
 $string['privacy:metadata:log:userid'] = 'ID dell\'utente che ha svolto l\'azione';
 $string['privacy:metadata:oauth2_refresh_token'] = 'Token aggiornato utilizzato nella comunicazione OAuth 2.0';
-$string['privacy:metadata:oauth2_refresh_token:issuerid'] = 'ID dell\'emittente a cui corrisponde il token';
+$string['privacy:metadata:oauth2_refresh_token:issuerid'] = 'ID dell\'issuer a cui corrisponde il token';
 $string['privacy:metadata:oauth2_refresh_token:scopehash'] = 'ID dell\'utente a cui corrisponde il token';
 $string['privacy:metadata:oauth2_refresh_token:timecreated'] = 'Orario di creazione del token';
 $string['privacy:metadata:oauth2_refresh_token:timemodified'] = 'Orario in cui il token è stato aggiornato l\'ultima volta';
@@ -1710,6 +1778,7 @@ $string['rename'] = 'Rinomina';
 $string['renamefileto'] = 'Rinomina <b>{$a}</b> in';
 $string['report'] = 'Report';
 $string['reports'] = 'Report';
+$string['reporttype'] = 'Tipo di report';
 $string['repositories'] = 'Repository';
 $string['requestcourse'] = 'Richiedi l\'attivazione di un corso';
 $string['requestedby'] = 'Richiesto da';
@@ -1755,8 +1824,8 @@ $string['restoredaccountinfo'] = 'Questo account è stato importato da un altro 
 $string['restorefinished'] = 'Recupero completato con successo';
 $string['restoremnethostidmismatch'] = 'L\'host id MNet dell\'utente \'{$a}\' non corrisponde all\'host Id MNet locale.';
 $string['restoreto'] = 'Recupera a';
-$string['restoretositeadding'] = 'Attenzione: state per ripristinare la pagina home del sito in modalità aggiunta dati!';
-$string['restoretositedeleting'] = 'Attenzione: state per ripristinare la pagina home del sito in modalità eliminazione dati esistenti!';
+$string['restoretositeadding'] = 'Attenzione: si sta per ripristinare la pagina home del sito in modalità aggiunta dati.';
+$string['restoretositedeleting'] = 'Attenzione: si sta per ripristinare la pagina home del sito in modalità eliminazione dati esistenti.';
 $string['restoreuserconflict'] = 'Tentare di ripristinare l\'utente \'{$a}\' causerà dei conflitti';
 $string['restoreuserinfofailed'] = 'Il ripristino è stato interrotto poiché non hai il permesso di ripristinare dati utente.';
 $string['restoreusersprecheck'] = 'Controllo dati utente';
@@ -1807,6 +1876,7 @@ $string['scale_help'] = '<p>I docenti possono creare scale di valutazione person
   Questa descrizione apparirà nelle pagine di help dei docenti e degli studenti.</p>
 <p>È anche possibile definire una o più scale di valutazione "standard"
   a livello di sito da parte dell\'amministratore del sistema e queste saranno disponibili in tutti i corsi.</p>';
+$string['scale_link'] = 'grade/scale';
 $string['scales'] = 'Scale';
 $string['scalescustom'] = 'Scale personalizzate';
 $string['scalescustomcreate'] = 'Aggiungi una scala';
@@ -1814,6 +1884,7 @@ $string['scalescustomno'] = 'Non sono ancora state create scale personalizzate';
 $string['scalesstandard'] = 'Scale standard';
 $string['scalestandard'] = 'Scala standard';
 $string['scalestandard_help'] = '<p>È una scala definita a livello di sito e disponibile in qualsiasi corso.</p>';
+$string['scalestandard_link'] = 'grade/scale';
 $string['scalestip'] = 'Per creare scale personalizzate, utilizza il link \'Scale\' nel menu di amministrazione del tuo corso.';
 $string['scalestip2'] = 'Per creare scale personalizzate, fate click sul link Scale presente nel blocco Amministrazione del corso, poi selezionate Modifica -> Scale';
 $string['schedule'] = 'Schedula';
@@ -1869,6 +1940,9 @@ $string['selectedcategories'] = 'Categorie selezionate';
 $string['selectedfile'] = 'File selezionati';
 $string['selectednowmove'] = 'Hai selezionato {$a} file da spostare. Ora vai alla cartella di destinazione e premi \'Sposta i file qui\'';
 $string['selectfiles'] = 'Seleziona file';
+$string['selectfiltertype'] = 'Seleziona';
+$string['selectgroupsseparate'] = 'Seleziona gruppi separati';
+$string['selectgroupsvisible'] = 'Seleziona gruppi visibili';
 $string['selectitem'] = 'Seleziona \'{$a}\'';
 $string['selectmoduletoviewhelp'] = 'Scegli una risorsa o un\'attività per visualizzare l\'help associato';
 $string['selectnos'] = 'Seleziona tutti i \'no\'';
@@ -1884,6 +1958,7 @@ $string['serverlocaltime'] = 'Ora locale del server';
 $string['sessionforceclean'] = 'Per motivi di sicurezza, in questa sessione gli script generati dall\'utente sono stati disabilitati.';
 $string['sessiontimeoutsoon'] = 'La sessione sta per scadere. Desideri prolungarla?';
 $string['setcategorytheme'] = 'Imposta tema di categoria';
+$string['setmode'] = 'Imposta modalità';
 $string['setpassword'] = 'Imposta password';
 $string['setpasswordinstructions'] = 'Per favore inserisci sotto la nuova password e poi salva.';
 $string['settings'] = 'Impostazioni';
@@ -1912,12 +1987,12 @@ $string['showcommentsnonjs'] = 'Visualizza commenti';
 $string['showdescription'] = 'Visualizza descrizione nella home del corso';
 $string['showdescription_help'] = 'Consente di visualizzare la descrizione soprastante nella pagina home del corso, subito sotto il link della risorsa o dell\'attività.';
 $string['showgrades'] = 'Visualizza valutazioni agli studenti';
-$string['showgrades_help'] = 'Molte delle attività di un corso possono essere oggetto di valutazione. L\'impostazione determina se uno studente potrà visualizzare le proprie valutazioni tramite apposito collegamento.';
+$string['showgrades_help'] = 'Molte delle attività di un corso possono essere oggetto di valutazione. L\'impostazione determina se uno studente potrà visualizzare l\'elenco delle proprie valutazioni.';
 $string['showingacourses'] = 'Sono visualizzati tutti i {$a} corsi.';
 $string['showingxofycourses'] = 'Sono visualizzati i corsi da  {$a->start} a {$a->end} su {$a->total}';
 $string['showlistofcourses'] = 'Visualizza l\'elenco dei corsi';
 $string['showmodulecourse'] = 'Visualizza l\'elenco dei corsi che contengono attività';
-$string['showoncoursepage'] = 'Visualizza nella pagina del corso';
+$string['showoncoursepage'] = 'Visualizza nella pagina home del corso';
 $string['showonly'] = 'Visualizza solo';
 $string['showperpage'] = 'Visualizza {$a} per pagina';
 $string['showpopoverwindow'] = 'Visualizza finestra popover';
@@ -2028,6 +2103,7 @@ $string['statuserror'] = 'Errore';
 $string['statusinfo'] = 'Informazione';
 $string['statusna'] = 'N/D';
 $string['statusok'] = 'OK';
+$string['statusunknown'] = 'Sconosciuto';
 $string['statuswarning'] = 'Avviso';
 $string['stringsnotset'] = 'Le seguenti stringhe non sono definite in {$a}';
 $string['studentnotallowed'] = 'Spiacenti, ma non puoi accedere a questo corso come \'{$a}\'';
@@ -2036,6 +2112,7 @@ $string['studentsandteachers'] = 'Studenti e docenti';
 $string['subcategories'] = 'Sotto categorie';
 $string['subcategory'] = 'Sottocategoria';
 $string['subcategoryof'] = 'Sottocategoria di {$a}';
+$string['subject'] = 'Oggetto';
 $string['submit'] = 'Invia';
 $string['success'] = 'Operazione eseguita correttamente';
 $string['successduration'] = 'Operazione completata correttamente ({$a} secondi)';
@@ -2065,6 +2142,7 @@ $string['targetrole'] = 'Ruolo finale';
 $string['teacheronly'] = 'solo per {$a}';
 $string['teacherroles'] = '{$a} ruoli';
 $string['teachers'] = 'Docenti';
+$string['textcopiedtoclipboard'] = 'Testo copiato negli appunti';
 $string['textediting'] = 'Editor di testo';
 $string['textediting_help'] = 'Selezionando un editor HTML come Atto o TinyMCE, le aree di testo presenteranno una barra degli strumenti con pulsanti che facilitano l\'inserimento di contenuti.
 
@@ -2083,6 +2161,7 @@ $string['thereareno'] = 'Non ci sono {$a} in questo corso';
 $string['thiscategory'] = 'Questa categoria';
 $string['thiscategorycontains'] = 'Questa categoria contiene';
 $string['time'] = 'Data/Ora';
+$string['timecreated'] = 'Data di creazione';
 $string['timecreatedcourse'] = 'Data creazione corso';
 $string['timesplitting:deciles'] = 'Ultimo decimo';
 $string['timesplitting:deciles_help'] = 'L\'intervallo di analisi divide la durata del corso in decimi (10 parti uguali), con ogni pronostico basato sui dati di tutti i decimi precedenti.';
@@ -2143,8 +2222,11 @@ $string['trackforumsyes'] = 'Si: evidenzia i messaggi non letti';
 $string['trysearching'] = 'Prova a cercare.';
 $string['turneditingoff'] = 'Termina modifica';
 $string['turneditingon'] = 'Attiva modifica';
+$string['unabletocopytoclipboard'] = 'Impossibile copiare il testo negli appunti';
 $string['unauthorisedlogin'] = 'L\'account utente "{$a}" non è presente in questo sito';
 $string['undecided'] = 'Indeciso';
+$string['unexistingcmid'] = 'L\'ID del modulo del corso non è stato trovato';
+$string['unexistingsectionid'] = 'L\'ID della sezione del corso non è stato trovato';
 $string['unfinished'] = 'Non terminato';
 $string['unknowncategory'] = 'Categoria sconosciuta';
 $string['unknownerror'] = 'Errore sconosciuto';
@@ -2203,11 +2285,11 @@ $string['userdescription'] = 'Descrizione';
 $string['userdescription_help'] = 'L\'area di testo ti consente di inserire delle informazioni personali visibili anche ad altri utenti tramite il tuo profilo';
 $string['userdetails'] = 'Dettagli dell\'utente';
 $string['userfiles'] = 'File utente';
-$string['userfilterplaceholder'] = 'Cerca una parola chiave o imposta un filtro';
 $string['userlist'] = 'Elenco utenti';
 $string['usermenu'] = 'Menu utente';
+$string['usermenugoback'] = 'Torna al menu utente';
 $string['username'] = 'Username';
-$string['usernameemail'] = 'Username / email';
+$string['usernameemail'] = 'Username o email';
 $string['usernameemailmatch'] = 'Il nome utente e l\'indirizzo mail non appartengono allo stesso utente';
 $string['usernameexists'] = 'Questo username è già esistente, sceglierne un altro';
 $string['usernamelowercase'] = 'Sono consentite solo lettere minuscole';
@@ -2252,12 +2334,14 @@ $string['weekhide'] = 'Nascondi questa settimana da {$a}';
 $string['weeklyoutline'] = 'Attività settimanale';
 $string['weeks'] = 'settimane';
 $string['weekshow'] = 'Visualizza questa settimana a {$a}';
+$string['welcomeback'] = 'Bentornato, {$a->firstname}! 👋';
 $string['welcometocourse'] = 'Benvenuto(a) {$a}';
 $string['welcometocoursetext'] = 'Benvenuto(a) in {$a->coursename}!
 
 Se non lo hai già fatto, dovresti modificare la pagina del tuo profilo personale in modo da consentirci di conoscerti meglio:
 
 {$a->profileurl}';
+$string['welcometosite'] = 'Benvenuto, {$a->firstname}! 👋';
 $string['whatforlink'] = 'Cosa fare del link';
 $string['whatforpage'] = 'Cosa fare del testo';
 $string['whatisyourage'] = 'Quanti anni hai?';

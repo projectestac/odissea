@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'ar', version '3.11'.
+ * Strings for component 'atto_table', language 'ar', version '4.1'.
  *
  * @package     atto_table
  * @category    string
@@ -63,7 +63,7 @@ $string['privacy:metadata'] = 'إن إضافة atto_table لا تخزن أي ب�
 $string['rows'] = 'الصفوف';
 $string['settings'] = 'إعدادات الجدول';
 $string['solid'] = 'مصمت';
-$string['themedefault'] = 'إفتراضيات القالب';
+$string['themedefault'] = 'إفتراضيات المظهر';
 $string['transparent'] = 'شفاف';
 $string['updatetable'] = 'تحديث الجدول';
 $string['width'] = 'عرض الجدول (بالمئة %)';

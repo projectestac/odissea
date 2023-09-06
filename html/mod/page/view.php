@@ -34,13 +34,13 @@ $inpopup = optional_param('inpopup', 0, PARAM_BOOL);
 
 if ($p) {
     if (!$page = $DB->get_record('page', array('id'=>$p))) {
-        print_error('invalidaccessparameter');
+        throw new \moodle_exception('invalidaccessparameter');
     }
     $cm = get_coursemodule_from_instance('page', $page->id, $page->course, false, MUST_EXIST);
 
 } else {
     if (!$cm = get_coursemodule_from_id('page', $id)) {
-        print_error('invalidcoursemodule');
+        throw new \moodle_exception('invalidcoursemodule');
     }
     $page = $DB->get_record('page', array('id'=>$cm->instance), '*', MUST_EXIST);
 }
@@ -58,34 +58,26 @@ $PAGE->set_url('/mod/page/view.php', array('id' => $cm->id));
 
 $options = empty($page->displayoptions) ? [] : (array) unserialize_array($page->displayoptions);
 
+$activityheader = ['hidecompletion' => false];
+if (empty($options['printintro'])) {
+    $activityheader['description'] = '';
+}
+
 if ($inpopup and $page->display == RESOURCELIB_DISPLAY_POPUP) {
     $PAGE->set_pagelayout('popup');
     $PAGE->set_title($course->shortname.': '.$page->name);
     $PAGE->set_heading($course->fullname);
 } else {
+    $PAGE->add_body_class('limitedwidth');
     $PAGE->set_title($course->shortname.': '.$page->name);
     $PAGE->set_heading($course->fullname);
     $PAGE->set_activity_record($page);
-}
-echo $OUTPUT->header();
-if (!isset($options['printheading']) || !empty($options['printheading'])) {
-    echo $OUTPUT->heading(format_string($page->name), 2);
-}
-
-// Display any activity information (eg completion requirements / dates).
-$cminfo = cm_info::create($cm);
-$completiondetails = \core_completion\cm_completion_details::get_instance($cminfo, $USER->id);
-$activitydates = \core\activity_dates::get_dates_for_module($cminfo, $USER->id);
-echo $OUTPUT->activity_information($cminfo, $completiondetails, $activitydates);
-
-if (!empty($options['printintro'])) {
-    if (trim(strip_tags($page->intro))) {
-        echo $OUTPUT->box_start('mod_introbox', 'pageintro');
-        echo format_module_intro('page', $page, $cm->id);
-        echo $OUTPUT->box_end();
+    if (!$PAGE->activityheader->is_title_allowed()) {
+        $activityheader['title'] = "";
     }
 }
-
+$PAGE->activityheader->set_attrs($activityheader);
+echo $OUTPUT->header();
 $content = file_rewrite_pluginfile_urls($page->content, 'pluginfile.php', $context->id, 'mod_page', 'content', $page->revision);
 $formatoptions = new stdClass;
 $formatoptions->noclean = true;

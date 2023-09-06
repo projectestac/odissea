@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'es', version '3.11'.
+ * Strings for component 'workshop', language 'es', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -43,8 +43,10 @@ $string['allocationdone'] = 'Asignación hecha';
 $string['allocationerror'] = 'Error de asignación';
 $string['allowedfiletypesforoverallfeedback'] = 'Formatos de archivo permitidos para la retroalimentación';
 $string['allowedfiletypesforoverallfeedback_help'] = 'Los formatos de archivos adjuntos permitidos para la retroalimentación pueden ser restringidos proporcionando una lista de los formatos de archivo válidos. Si el campo se deja vacío, se permitirá entregar cualquier tipo de archivo.';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
 $string['allowedfiletypesforsubmission'] = 'Formatos de ficheros que se permiten entregar';
 $string['allowedfiletypesforsubmission_help'] = 'Los formatos de archivos que se permiten entregar pueden ser restringidos proporcionando una lista de los formatos de archivo válidos. Si el campo se deja vacío, se permitirá entregar cualquier tipo de archivo.';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = 'Todos los envíos ({$a})';
 $string['alreadygraded'] = 'Ya calificada';
 $string['areaconclusion'] = 'Texto de conclusión';
@@ -193,10 +195,12 @@ $string['indicator:cognitivedepth'] = 'Taller cognitivo';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad de Taller.';
 $string['indicator:cognitivedepthdef'] = 'Taller cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades del Taller durante este intervalo de análisis (Niveles = Sin visualización, Ver, Enviar, Ver comentarios, Comentar comentarios, Reenviar después de ver comentarios)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Taller social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad de Taller.';
 $string['indicator:socialbreadthdef'] = 'Taller social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por las actividades del Taller durante este intervalo de análisis (Niveles = Sin participación, Participante solo, Participante con otros)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Instrucciones para el envío';
 $string['instructreviewers'] = 'Instrucciones para la evaluación';
@@ -215,6 +219,7 @@ Los estudiantes pueden enviar cualquier contenido digital (archivos), tales como
 Los envíos son evaluados empleando un formato de evaluación de criterios múltiples definido por el profesor. El proceso de revisión por pares  y el formato para comprender cómo funciona la evaluación se pueden practicar por anticipado con envíos de ejemplo proporcionados por el maestro, junto con una evaluación de referencia. A los estudiantes se les dará la oportunidad de evaluar uno o más de los envíos de sus pares estudiantes. Los que envían y los que evalúan pueden permanecer anónimos si se requiere así.
 
 Los estudiantes tendrán dos calificaciones para la actividad de taller: una calificación por  enviarlo y otra por la evaluación de sus pares. Ambas calificaciones se guardan en el libro de calificaciones.';
+$string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = 'Talleres';
 $string['myassessments'] = 'Mis evaluaciones';
 $string['mysubmission'] = 'Mi envío';
@@ -365,6 +370,7 @@ $string['submissiongradeof'] = 'Calificación por el envío (de {$a})';
 $string['submissionlastmodified'] = 'Último modificado';
 $string['submissionrequiredcontent'] = 'Debe introducir algún texto o añadir un archivo.';
 $string['submissionrequiredfile'] = 'Debe añadir un archivo o introducir algún texto.';
+$string['submissionsallocation'] = 'Asignación de envíos';
 $string['submissionsettings'] = 'Parámetros de los envíos';
 $string['submissionsreport'] = 'Informe de envíos del taller';
 $string['submissionstart'] = 'Abierto para envíos desde';

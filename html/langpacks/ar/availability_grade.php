@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'ar', version '3.11'.
+ * Strings for component 'availability_grade', language 'ar', version '4.1'.
  *
  * @package     availability_grade
  * @category    string
@@ -39,9 +39,9 @@ $string['option_min'] = 'يجب أن يكون ≥';
 $string['pluginname'] = 'التقييد حسب التقديرات';
 $string['privacy:metadata'] = 'إن إضافة التقييد حسب التقديرات لا تخزن أيّ بيانات شخصية.';
 $string['requires_any'] = 'لديك درجة في {$a}';
-$string['requires_max'] = 'أنت تحصل على درجة مناسبة في <strong>{$a}</strong>';
-$string['requires_min'] = 'أنت تحقق الدرجة المطلوب في <strong>{$a}</strong>';
+$string['requires_max'] = 'أنت تحصل على أدنى من درجة معينة في <strong>{$a}</strong>';
+$string['requires_min'] = 'أنت تحصل على أعلى من درجة معينة في <strong>{$a}</strong>';
 $string['requires_notany'] = 'ليس لديك درجة في {$a}';
 $string['requires_notgeneral'] = 'أنت لا تحصل على نتائج مؤكدة في <strong>{$a}</strong>';
-$string['requires_range'] = 'أنت تحصل على درجة معينة في <strong>{$a}</strong>';
+$string['requires_range'] = 'أنت تحصل على درجة ضمن مدى معين في <strong>{$a}</strong>';
 $string['title'] = 'الدرجة';

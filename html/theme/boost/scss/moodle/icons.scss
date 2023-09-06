@@ -99,3 +99,68 @@ $iconsizes: map-merge((
 .helplink .icon {
     margin-left: 0.5rem;
 }
+
+.icons-collapse-expand {
+    display: flex;
+    align-items: center;
+    .expanded-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .collapsed-icon {
+        display: none;
+    }
+
+    &.collapsed {
+        .expanded-icon {
+            display: none;
+        }
+
+        .collapsed-icon {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+.activityiconcontainer {
+    width: $activity-iconcontainer-width;
+    height: $activity-iconcontainer-height;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray-100;
+    border-radius: 4px;
+    padding: 0.7rem;
+    .activityicon,
+    .icon {
+        margin: 0;
+        height: 24px;
+        width: 24px;
+    }
+    &.small {
+        width: $activity-iconcontainer-width - 10px;
+        height: $activity-iconcontainer-height - 10px;
+    }
+}
+
+@each $type, $value in $activity-icon-colors {
+    .activityiconcontainer.#{$type} {
+        background-color: $value;
+        .activityicon,
+        .icon {
+            &:not(.nofilter) {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}
+
+// Make activtity colours available for custom modules.
+:root {
+    @each $type, $value in $activity-icon-colors {
+        --activity#{$type}: #{$value};
+    }
+}

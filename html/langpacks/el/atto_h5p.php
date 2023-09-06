@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'el', version '3.11'.
+ * Strings for component 'atto_h5p', language 'el', version '4.1'.
  *
  * @package     atto_h5p
  * @category    string
@@ -28,18 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['browserepositories'] = 'Περιήγηση στα αποθετήρια...';
 $string['copyrightbutton'] = 'Πλήκτρο δικαιωμάτων πνευματικής ιδιοκτησίας (Copyright)';
 $string['downloadbutton'] = 'Επιτρέπεται λήψη';
-$string['either'] = 'Είτε';
 $string['embedbutton'] = 'Ενσωμάτωση πλήκτρου';
-$string['enterurl'] = 'Διεύθυνση URL ή ενσωμάτωση κώδικα';
 $string['h5p:addembed'] = 'Προσθήκη ενσωματωμένου H5P';
 $string['h5pfile'] = 'Ανέβασμα αρχείου H5P';
 $string['h5pfileorurl'] = 'Διεύθυνση URL πακέτου H5P ή ανέβασμα αρχείου';
 $string['h5poptions'] = 'Επιλογές H5P';
-$string['h5pproperties'] = 'Ιδιότητες H5P';
 $string['h5purl'] = 'Διεύθυνση URL H5P';
 $string['instructions'] = 'Μπορείτε να εισάγετε περιεχόμενο H5P <strong>είτε</strong> δίνοντας μια διεύθυνση URL <strong>είτε</strong> ανεβάζοντας ένα αρχείο H5P.';
 $string['invalidh5purl'] = 'Μη έγκυρη διεύθυνση URL';
 $string['noh5pcontent'] = 'Δεν προστέθηκε κανένα περιεχόμενο H5P';
-$string['or'] = 'ή';
 $string['pluginname'] = 'Εισαγωγή H5P';
 $string['privacy:metadata'] = 'Το πρόσθετο atto_h5p δεν αποθηκεύει καθόλου προσωπικά δεδομένα.';

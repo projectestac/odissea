@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'en', version '3.11'.
+ * Strings for component 'forum', language 'en', version '4.1'.
  *
  * @package     forum
  * @category    string
@@ -29,9 +29,10 @@ $string['actionsforgraderinterface'] = 'Actions for the grader interface';
 $string['actionsforpost'] = 'Actions for post';
 $string['activitydate:due'] = 'Due:';
 $string['activityoverview'] = 'There are new forum posts';
-$string['addanewdiscussion'] = 'Add a new discussion topic';
+$string['addanewdiscussion'] = 'Add discussion topic';
 $string['addanewquestion'] = 'Add a new question';
 $string['addanewtopic'] = 'Add a new topic';
+$string['addreply'] = 'Add reply';
 $string['addtofavourites'] = 'Star this discussion';
 $string['advancedsearch'] = 'Advanced search';
 $string['alldiscussions'] = 'All discussions';
@@ -74,7 +75,6 @@ $string['cannotaddsubscriber'] = 'Could not add subscriber with id {$a} to this 
 $string['cannotaddteacherforumto'] = 'Could not add converted teacher forum instance to section 0 in the course';
 $string['cannotcreatediscussion'] = 'Could not create new discussion';
 $string['cannotcreateinstanceforteacher'] = 'Could not create new course module instance for the teacher forum';
-$string['cannotdeletediscussioninsinglediscussion'] = 'You cannot delete the first post in a single discussion';
 $string['cannotdeletepost'] = 'You can\'t delete this post!';
 $string['cannoteditposts'] = 'You can\'t edit other people\'s posts!';
 $string['cannotexportforum'] = 'You cannot export this forum';
@@ -97,7 +97,9 @@ $string['cannotsubscribe'] = 'Sorry, but you must be a group member to subscribe
 $string['cannottrack'] = 'Could not stop tracking that forum';
 $string['cannotunsubscribe'] = 'Could not unsubscribe you from that forum';
 $string['cannotupdatepost'] = 'You can not update this post';
-$string['cannotviewpostyet'] = 'You cannot read other students questions in this discussion yet because you haven\'t posted';
+$string['cannotuseseperategroupsandsingletopic'] = 'Separate groups can\'t be used with a single simple discussion.';
+$string['cannotusesingletopicandseperategroups'] = 'A single simple discussion can\'t be used with separate groups.';
+$string['cannotviewpostyet'] = 'You can\'t read other students\' posts in this discussion yet because you haven\'t posted.';
 $string['cannotviewusersposts'] = 'There are no posts made by this user that you are able to view.';
 $string['cleanreadtime'] = 'Mark old posts as read hour';
 $string['clicktofavourite'] = 'You have not starred this discussion. Click to star.';
@@ -128,7 +130,7 @@ $string['configdigestmailtime'] = 'People who choose to have emails sent to them
 $string['configdisplaymode'] = 'The default display mode for discussions if one isn\'t set.';
 $string['configenablerssfeeds'] = 'This switch will enable the possibility of RSS feeds for all forums.  You will still need to turn feeds on manually in the settings for each forum.';
 $string['configenabletimedposts'] = 'Set to \'yes\' if you want to allow setting of display periods when posting a new forum discussion.';
-$string['configlongpost'] = 'Any post over this length (in characters not including HTML) is considered long. Posts displayed on the site front page, social format course pages, or user profiles are shortened to a natural break somewhere between the forum_shortpost and forum_longpost values.';
+$string['configlongpost'] = 'Any post over this length (in characters not including HTML) is considered long. Posts displayed on the site home, social format course pages, or user profiles are shortened to a natural break somewhere between the forum_shortpost and forum_longpost values.';
 $string['configmanydiscussions'] = 'Maximum number of discussions shown in a forum per page';
 $string['configmaxattachments'] = 'Default maximum number of attachments allowed per post.';
 $string['configmaxbytes'] = 'Default maximum size for all forum attachments on the site (subject to course limits and other local settings)';
@@ -192,7 +194,7 @@ $string['discussionmoved'] = 'This discussion has been moved to \'{$a}\'.';
 $string['discussionmovedpost'] = 'This discussion has been moved to <a href="{$a->discusshref}">here</a> in the forum <a href="{$a->forumhref}">{$a->forumname}</a>';
 $string['discussionname'] = 'Discussion name';
 $string['discussionnownotsubscribed'] = '{$a->name} will NOT be notified of new posts in \'{$a->discussion}\' of \'{$a->forum}\'';
-$string['discussionnowsubscribed'] = '{$a->name} will be notified of new posts in \'{$a->discussion}\' of \'{$a->forum}\'';
+$string['discussionnowsubscribed'] = 'You will be notified of new posts in \'{$a->discussion}\' in the forum \'{$a->forum}\'.';
 $string['discussionpin'] = 'Pin';
 $string['discussionpinned'] = 'Pinned';
 $string['discussionpinned_help'] = 'Pinned discussions will appear at the top of a forum.';
@@ -201,6 +203,7 @@ $string['discussionsplit'] = 'Discussion has been split';
 $string['discussionsstartedby'] = 'Discussions started by {$a}';
 $string['discussionsstartedbyrecent'] = 'Discussions recently started by {$a}';
 $string['discussionsstartedbyuserincourse'] = 'Discussions started by {$a->fullname} in {$a->coursename}';
+$string['discussionsstartedincourse'] = 'Discussions started in {$a}';
 $string['discussionstartedby'] = 'Discussion started by {$a}';
 $string['discussionsubscribed'] = 'You are now subscribed to this discussion.';
 $string['discussionsubscribestart'] = 'Send me notifications of new posts in this discussion';
@@ -226,6 +229,8 @@ $string['duedate_help'] = 'This is when posting in the forum is due. Although th
 $string['duedatetodisplayincalendar'] = 'Due date to display in calendar';
 $string['eachuserforum'] = 'Each person posts one discussion';
 $string['edit'] = 'Edit';
+$string['editdiscussion'] = 'Edit discussion';
+$string['editdiscussiontopic'] = 'Edit discussion topic';
 $string['editedby'] = 'Edited by {$a->name} - original submission {$a->date}';
 $string['editedpostupdated'] = '{$a}\'s post was updated';
 $string['editing'] = 'Editing';
@@ -344,7 +349,7 @@ $string['forumtype_help'] = 'There are 5 forum types:
 
 * A single simple discussion - A single discussion topic which everyone can reply to (cannot be used with separate groups)
 * Each person posts one discussion - Each student can post exactly one new discussion topic, which everyone can then reply to
-* Q and A forum - Students must first post their perspectives before viewing other students\' posts
+* Q and A forum - A student must first post their reply to a question posted by the teacher, before viewing other students\' posts
 * Standard forum displayed in a blog-like format - An open forum where anyone can start a new discussion at any time, and in which discussion topics are displayed on one page with "Discuss this topic" links
 * Standard forum for general use - An open forum where anyone can start a new discussion at any time';
 $string['generalforum'] = 'Standard forum for general use';
@@ -383,7 +388,6 @@ $string['indicator:socialbreadthdef'] = 'Forum social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the Forum activities during this analysis interval (Levels = No participation, Participant alone, Participant with others)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inforum'] = 'in {$a}';
-$string['inpagereplysubject'] = 'Re: {$a}';
 $string['inreplyto'] = 'In reply to {$a}';
 $string['introblog'] = 'The posts in this forum were copied here automatically from blogs of users in this course because those blog entries are no longer available';
 $string['intronews'] = 'General news and announcements';
@@ -511,15 +515,13 @@ $string['nowallunsubscribed'] = 'You are now unsubscribed from all forums in {$a
 $string['nowgradinguser'] = 'Now grading {$a}';
 $string['nownotsubscribed'] = '{$a->name} will NOT be notified of new posts in \'{$a->forum}\'';
 $string['nownottracking'] = '{$a->name} is no longer tracking \'{$a->forum}\'.';
-$string['nowsubscribed'] = '{$a->name} will be notified of new posts in \'{$a->forum}\'';
+$string['nowsubscribed'] = 'You will be notified of new posts in the forum \'{$a->forum}\'.';
 $string['nowtracking'] = '{$a->name} is now tracking \'{$a->forum}\'.';
 $string['numberofreplies'] = 'Number of replies: {$a}';
 $string['numposts'] = '{$a} posts';
 $string['olderdiscussions'] = 'Older discussions';
 $string['oldertopics'] = 'Older topics';
 $string['oldpostdays'] = 'Read after days';
-$string['overviewnumpostssince'] = '{$a} posts since last login';
-$string['overviewnumunread'] = '{$a} total unread';
 $string['page-mod-forum-discuss'] = 'Forum module discussion thread page';
 $string['page-mod-forum-view'] = 'Forum module main page';
 $string['page-mod-forum-x'] = 'Any forum module page';
@@ -539,7 +541,7 @@ $string['postbymailsuccess'] = 'Your reply "{$a->subject}" was successfully post
 $string['postbymailsuccess_html'] = 'Your reply <a href="{$a->discussionurl}">{$a->subject}</a> was successfully posted.';
 $string['postbyuser'] = '{$a->post} by {$a->user}';
 $string['postincontext'] = 'See this post in context';
-$string['postisprivatereply'] = 'This is a private reply. It is only visible to you and anyone with the capability to view private replies, such as teachers or managers.';
+$string['postisprivatereply'] = 'This is a private reply. (Teachers and other users with the capability to view private replies can also see it.)';
 $string['postmailinfo'] = 'This is a copy of a message posted in {$a}.';
 $string['postmailinfolink'] = 'This is a copy of a message posted in {$a->coursename}.
 
@@ -554,6 +556,7 @@ $string['posts'] = 'Posts';
 $string['postsfrom'] = 'Posts from';
 $string['postsmadebyuser'] = 'Posts made by {$a}';
 $string['postsmadebyuserincourse'] = 'Posts made by {$a->fullname} in {$a->coursename}';
+$string['postsmadeincourse'] = 'Posts made in {$a}';
 $string['poststo'] = 'Posts to';
 $string['posttoforum'] = 'Post to forum';
 $string['posttomygroups'] = 'Post a copy to all groups';
@@ -624,14 +627,15 @@ $string['privacy:request:delete:post:message'] = 'The content of this post has b
 $string['privacy:request:delete:post:subject'] = 'Delete at the request of the author';
 $string['privacy:subscribedtoforum'] = 'You are subscribed to this forum.';
 $string['privatereply'] = 'Reply privately';
-$string['privatereply_help'] = 'A private reply can only be viewed by the author of the post being replied to, and any users with the capability to view private replies.';
+$string['privatereply_help'] = 'When you reply privately, your post is also visible to users with the capability to view private replies, such as teachers.';
 $string['processingdigest'] = 'Processing email digest for user {$a}';
 $string['processingpost'] = 'Processing post {$a}';
 $string['prune'] = 'Split';
+$string['prunediscussion'] = 'Split discussion';
 $string['prunedpost'] = 'A new discussion has been created from that post';
 $string['pruneheading'] = 'Split the discussion and move this post to a new discussion';
 $string['qandaforum'] = 'Q and A forum';
-$string['qandanotify'] = 'This is a question and answer forum. In order to see other responses to these questions, you must first post your answer';
+$string['qandanotify'] = 'This is a question and answer forum. To see other replies, you must first post your reply.';
 $string['re'] = 'Re:';
 $string['readtherest'] = 'Read the rest of this topic';
 $string['removeallforumtags'] = 'Remove all forum tags';
@@ -646,6 +650,7 @@ $string['replyauthorself'] = '{$a} (you)';
 $string['replyforum'] = 'Reply to forum';
 $string['replyingtoauthor'] = 'Replying to {$a}...';
 $string['replyplaceholder'] = 'Write your reply...';
+$string['replypostdiscussion'] = 'Reply to discussion';
 $string['replytopostbyemail'] = 'You can reply to this via email.';
 $string['replytouser'] = 'Use email address in reply';
 $string['resetdigests'] = 'Delete all per-user forum digest preferences';
@@ -698,7 +703,7 @@ $string['smallmessagedigest'] = 'Forum digest containing {$a} messages';
 $string['starredonly'] = 'Search starred discussions only';
 $string['startedby'] = 'Started by';
 $string['subject'] = 'Subject';
-$string['subscribe'] = 'Subscribe to this forum';
+$string['subscribe'] = 'Subscribe to forum';
 $string['subscribeall'] = 'Subscribe everyone to this forum';
 $string['subscribed'] = 'Subscribed';
 $string['subscribediscussion'] = 'Subscribe to this discussion';
@@ -721,6 +726,7 @@ $string['subscriptionmode_help'] = 'When a participant is subscribed to a forum 
 * Forced subscription - Everyone is subscribed and cannot unsubscribe
 * Auto subscription - Everyone is subscribed initially but can choose to unsubscribe at any time
 * Subscription disabled - Subscriptions are not allowed';
+$string['subscriptionmodeconfirm'] = 'Are you sure you want to change the subscription mode to {$a}?';
 $string['subscriptionoptional'] = 'Optional subscription';
 $string['subscriptions'] = 'Subscriptions';
 $string['tagarea_forum_posts'] = 'Forum posts';
@@ -756,7 +762,7 @@ $string['unreadpost'] = 'Unread post';
 $string['unreadposts'] = 'Unread posts';
 $string['unreadpostsnumber'] = '{$a} unread posts';
 $string['unreadpostsone'] = '1 unread post';
-$string['unsubscribe'] = 'Unsubscribe from this forum';
+$string['unsubscribe'] = 'Unsubscribe from forum';
 $string['unsubscribeall'] = 'Unsubscribe from all forums';
 $string['unsubscribeallconfirm'] = 'You are currently subscribed to {$a->forums} forums, and {$a->discussions} discussions. Do you really want to unsubscribe from all forums and discussions, and disable discussion auto-subscription?';
 $string['unsubscribeallconfirmdiscussions'] = 'You are currently subscribed to {$a->discussions} discussions. Do you really want to unsubscribe from all discussions and disable discussion auto-subscription?';

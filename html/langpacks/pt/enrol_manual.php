@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'pt', version '3.11'.
+ * Strings for component 'enrol_manual', language 'pt', version '4.1'.
  *
  * @package     enrol_manual
  * @category    string
@@ -42,7 +42,7 @@ $string['deleteselectedusers'] = 'Apagar inscrição dos utilizadores selecionad
 $string['editselectedusers'] = 'Editar inscrição dos utilizadores selecionados';
 $string['enrolledincourserole'] = 'Inscrito na disciplina "{$a->course}" como "{$a->role}"';
 $string['enrolusers'] = 'Inscrever utilizadores';
-$string['enroluserscohorts'] = 'Inscrever utilizadores e grupos globais selecionados';
+$string['enroluserscohorts'] = 'Inscrever utilizadores e grupos Globais selecionados';
 $string['expiredaction'] = 'Ação de expiração da inscrição';
 $string['expiredaction_help'] = 'Selecione a ação a implementar quando a inscrição do utilizador expira. Tenha em atenção que alguns dados e configurações do utilizador são eliminados da disciplina durante o cancelamento da inscrição.';
 $string['expirymessageenrolledbody'] = 'Caro(a) {$a->user},
@@ -57,6 +57,7 @@ $string['expirymessageenrollerbody'] = 'A inscrição na disciplina \'{$a->cours
 
 Para prolongar estas inscrições, vá a {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Notificação de expiração da inscrição';
+$string['managemanualenrolements'] = 'Gerir inscrições manuais';
 $string['manual:config'] = 'Configurar instâncias de inscrição manuais';
 $string['manual:enrol'] = 'Inscrever utilizadores';
 $string['manual:manage'] = 'Gerir inscrições de utilizadores';
@@ -68,7 +69,7 @@ $string['now'] = 'Agora';
 $string['pluginname'] = 'Inscrições manuais';
 $string['pluginname_desc'] = 'O módulo de inscrições manuais permite que os utilizadores sejam inscritos através de uma hiperligação no bloco de configurações > Administração da disciplina, por um utilizador com as permissões necessárias (por exemplo, professor). Normalmente este módulo deve estar ativo, uma vez que alguns módulos de inscrição, como o de autoinscrição, dependem deste módulo.';
 $string['privacy:metadata'] = 'O módulo Inscrições manuais não armazena quaisquer  dados pessoais.';
-$string['selectcohorts'] = 'Selecionar grupos globais';
+$string['selectcohorts'] = 'Selecionar Grupos globais';
 $string['selection'] = 'Seleção';
 $string['selectusers'] = 'Selecionar utilizadores';
 $string['sendexpirynotificationstask'] = 'Tarefa de envio de notificações de expiração de inscrições manuais';

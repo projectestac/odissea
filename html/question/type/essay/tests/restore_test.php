@@ -16,8 +16,6 @@
 
 namespace qtype_essay;
 
-use question_edit_contexts;
-
 defined('MOODLE_INTERNAL') || die();
 
 global $CFG;
@@ -45,7 +43,7 @@ class restore_test extends \restore_date_testcase {
         // Create a course with one essay question in its question bank.
         $generator = $this->getDataGenerator();
         $course = $generator->create_course();
-        $contexts = new question_edit_contexts(\context_course::instance($course->id));
+        $contexts = new \core_question\local\bank\question_edit_contexts(\context_course::instance($course->id));
         $category = question_make_default_categories($contexts->all());
         $questiongenerator = $this->getDataGenerator()->get_plugin_generator('core_question');
         $essay = $questiongenerator->create_question('essay', null, array('category' => $category->id));
@@ -57,9 +55,14 @@ class restore_test extends \restore_date_testcase {
         $newcourseid = $this->backup_and_restore($course);
 
         // Verify that the restored question has options.
-        $contexts = new question_edit_contexts(\context_course::instance($newcourseid));
+        $contexts = new \core_question\local\bank\question_edit_contexts(\context_course::instance($newcourseid));
         $newcategory = question_make_default_categories($contexts->all());
-        $newessay = $DB->get_record('question', ['category' => $newcategory->id, 'qtype' => 'essay']);
+        $newessay = $DB->get_record_sql('SELECT q.*
+                                              FROM {question} q
+                                              JOIN {question_versions} qv ON qv.questionid = q.id
+                                              JOIN {question_bank_entries} qbe ON qbe.id = qv.questionbankentryid
+                                             WHERE qbe.questioncategoryid = ?
+                                               AND q.qtype = ?', [$newcategory->id, 'essay']);
         $this->assertTrue($DB->record_exists('qtype_essay_options', ['questionid' => $newessay->id]));
     }
 }

@@ -32,9 +32,7 @@ Feature: Bulk released grades should not be sent to gradebook while submissions 
       | assignfeedback_comments_enabled     | 1                           |
       | assignfeedback_editpdf_enabled      | 1                           |
     # Add a submission.
-    And I log in as "student1"
-    And I am on "Course 1" course homepage
-    When I follow "Test assignment name"
+    And I am on the "Test assignment name" "assign activity" page logged in as "student1"
     Then I should not see "Feedback"
     And I should see "Not marked" in the "Grading status" "table_row"
     And I press "Add submission"
@@ -43,9 +41,7 @@ Feature: Bulk released grades should not be sent to gradebook while submissions 
     And I press "Save changes"
     And I log out
     # Add another submission.
-    And I log in as "student2"
-    And I am on "Course 1" course homepage
-    When I follow "Test assignment name"
+    And I am on the "Test assignment name" "assign activity" page logged in as "student2"
     Then I should not see "Feedback"
     And I should see "Not marked" in the "Grading status" "table_row"
     And I press "Add submission"
@@ -54,10 +50,8 @@ Feature: Bulk released grades should not be sent to gradebook while submissions 
     And I press "Save changes"
     And I log out
     # Mark the submissions.
-    And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    And I follow "Test assignment name"
-    And I navigate to "View all submissions" in current page administration
+    And I am on the "Test assignment name" "assign activity" page logged in as "teacher1"
+    And I follow "View all submissions"
     Then I should see "Not marked" in the "I'm student1's submission" "table_row"
     And I click on "Grade" "link" in the "I'm student1's submission" "table_row"
     And I set the field "Grade out of 100" to "50"
@@ -65,8 +59,8 @@ Feature: Bulk released grades should not be sent to gradebook while submissions 
     And I set the field "Feedback comments" to "Great job!"
     And I set the field "Notify student" to "0"
     And I press "Save changes"
-    And I follow "Test assignment name"
-    And I navigate to "View all submissions" in current page administration
+    And I am on the "Test assignment name" "assign activity" page
+    And I follow "View all submissions"
     Then I should see "Not marked" in the "I'm student2's submission" "table_row"
     And I click on "Grade" "link" in the "I'm student2's submission" "table_row"
     And I set the field "Grade out of 100" to "50"
@@ -74,8 +68,8 @@ Feature: Bulk released grades should not be sent to gradebook while submissions 
     And I set the field "Feedback comments" to "Great job!"
     And I set the field "Notify student" to "0"
     And I press "Save changes"
-    And I follow "Test assignment name"
-    And I navigate to "View all submissions" in current page administration
+    And I am on the "Test assignment name" "assign activity" page
+    And I follow "View all submissions"
     Then I should see "In review" in the "I'm student1's submission" "table_row"
     And I should see "In review" in the "I'm student2's submission" "table_row"
 
@@ -89,8 +83,8 @@ Feature: Bulk released grades should not be sent to gradebook while submissions 
     And I set the field "Marking workflow state" to "Released"
     And I set the field "Notify student" to "No"
     And I press "Save changes"
-    And I follow "Test assignment name"
-    And I navigate to "View all submissions" in current page administration
+    And I am on the "Test assignment name" "assign activity" page
+    And I follow "View all submissions"
     Then I should see "Released" in the "I'm student1's submission" "table_row"
     And I should see "Released" in the "I'm student2's submission" "table_row"
     And I log out
@@ -106,10 +100,8 @@ Feature: Bulk released grades should not be sent to gradebook while submissions 
     Then I should not see "50"
     And I should not see "Great job!"
     And I log out
-    And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    And I follow "Test assignment name"
-    And I navigate to "View all submissions" in current page administration
+    And I am on the "Test assignment name" "assign activity" page logged in as "teacher1"
+    And I follow "View all submissions"
     And I set the field "Grading action" to "Reveal student identities"
     And I press "Continue"
     Then I should see "Released" in the "Student 1" "table_row"
@@ -139,8 +131,8 @@ Feature: Bulk released grades should not be sent to gradebook while submissions 
     And I set the field "Marking workflow state" to "Released"
     And I set the field "Notify student" to "No"
     And I press "Save changes"
-    And I follow "Test assignment name"
-    And I navigate to "View all submissions" in current page administration
+    And I am on the "Test assignment name" "assign activity" page
+    And I follow "View all submissions"
     Then I should see "Released" in the "Student 1" "table_row"
     And I should see "Released" in the "Student 2" "table_row"
     And I log out

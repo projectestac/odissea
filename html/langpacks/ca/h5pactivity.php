@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'ca', version '3.11'.
+ * Strings for component 'h5pactivity', language 'ca', version '4.1'.
  *
  * @package     h5pactivity
  * @category    string
@@ -26,26 +26,26 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all_attempts'] = 'Tots els intents de l\'usuari';
-$string['answer_checked'] = 'Resposta verificada';
-$string['answer_correct'] = 'La vostra resposta és correcta';
+$string['answer_checked'] = 'Resposta comprovada';
+$string['answer_correct'] = 'La resposta és correcta.';
 $string['answer_fail'] = 'Resposta incorrecta';
-$string['answer_incorrect'] = 'La vostra resposta és incorrecta';
+$string['answer_incorrect'] = 'La resposta és incorrecta.';
 $string['answer_pass'] = 'Resposta correcta';
-$string['answer_text'] = 'Text de resposta';
-$string['answer_unchecked'] = 'Resposta no verificada';
+$string['answer_text'] = 'Text de la resposta';
+$string['answer_unchecked'] = 'Resposta no marcada';
 $string['answer_unknown'] = 'Resposta desconeguda';
-$string['areapackage'] = 'Fitxer de paquet';
+$string['areapackage'] = 'Fitxer del paquet';
 $string['attempt'] = 'Intent';
 $string['attempt_answer'] = 'Resposta de l\'intent';
 $string['attempt_average'] = 'Nota mitjana dels intents';
-$string['attempt_completion_no'] = 'L\'intent no s\'ha marcat com a completat';
-$string['attempt_completion_yes'] = 'S\'ha completat l\'intent';
+$string['attempt_completion_no'] = 'L\'intent no s\'ha marcat com a completat.';
+$string['attempt_completion_yes'] = 'L\'intent s\'ha completat.';
 $string['attempt_first'] = 'Primer intent';
 $string['attempt_highest'] = 'Intent amb la puntuació més alta';
 $string['attempt_last'] = 'Últim intent';
 $string['attempt_none'] = 'No s\'ha utilitzat cap intent per a la qualificació';
 $string['attempt_number'] = 'Intent #{$a}';
-$string['attempt_success_fail'] = 'Error';
+$string['attempt_success_fail'] = 'Incorrecte';
 $string['attempt_success_pass'] = 'Correcte';
 $string['attempt_success_unknown'] = 'No se n\'ha informat';
 $string['attempts'] = 'Intents';
@@ -54,85 +54,88 @@ $string['attempts_report'] = 'Informe d\'intents';
 $string['choice'] = 'Selecció';
 $string['completion'] = 'Compleció';
 $string['contentbank'] = 'Més informació sobre el banc de contingut';
-$string['contentbank_help'] = 'Al banc de contingut podeu crear i emmagatzemar contingut utilitzant diverses eines d\'autor, les quals inclouen un editor integrat d\'H5P.';
+$string['contentbank_help'] = 'Al banc de contingut, podeu crear i emmagatzemar contingut utilitzant diverses eines de creació, inclòs l\'editor d\'H5P integrat.';
 $string['correct_answer'] = 'Resposta correcta';
-$string['deleteallattempts'] = 'Suprimeix tots els intents H5P';
-$string['displaycopyright'] = 'Botó de copyright';
-$string['displayembed'] = 'Botó d\'incrustació';
+$string['deleteallattempts'] = 'Suprimeix tots els intents d\'H5P';
+$string['displaycopyright'] = 'Botó de drets d\'autor';
+$string['displayembed'] = 'Botó d\'inserció';
 $string['displayexport'] = 'Permet les baixades';
-$string['dnduploadh5pactivity'] = 'Afegeix una activitat H5P';
+$string['dnduploadh5pactivity'] = 'Afegeix una activitat d\'H5P';
 $string['duration'] = 'Durada';
-$string['enabletracking'] = 'Habilita el seguiment de l\'intent';
+$string['enabletracking'] = 'Activa el seguiment d\'intents';
 $string['false'] = 'Fals';
 $string['grade_average_attempt'] = 'Qualificació mitjana';
 $string['grade_first_attempt'] = 'Primer intent';
 $string['grade_grademethod'] = 'Mètode de qualificació';
-$string['grade_grademethod_help'] = 'Quan utilitzeu la qualificació per punts, estan disponibles els mètodes per calcular la qualificació final següents:
+$string['grade_grademethod_help'] = 'En utilitzar una qualificació per punts, la qualificació final es pot calcular mitjançant un dels mètodes següents:
 
 * Qualificació més alta de tots els intents
 * Qualificació mitjana de tots els intents
 * Primer intent (la resta d\'intents s\'ignoren)
 * Últim intent (la resta d\'intents s\'ignoren)
-* No utilitzeu intents per qualificar (inhabilita el càlcul de la qualificació )';
+* No s\'utilitzen intents per a la qualificació (es desactiva el càlcul de la qualificació )';
+$string['grade_h5p'] = 'Qualificació: {$a}';
 $string['grade_highest_attempt'] = 'Qualificació més alta';
 $string['grade_last_attempt'] = 'Últim intent';
 $string['grade_manual'] = 'No calculis cap qualificació';
-$string['h5pactivity:addinstance'] = 'Afegeix un H5P nou';
-$string['h5pactivity:reviewattempts'] = 'Revisa els intents de l\'H5P';
-$string['h5pactivity:submit'] = 'Tramet els intents de l\'H5P';
-$string['h5pactivity:view'] = 'Visualitza l\'H5P';
-$string['h5pactivityfieldset'] = 'Paràmetres de l\'H5P';
+$string['h5pactivity:addinstance'] = 'Afegiu contingut H5P nou';
+$string['h5pactivity:reviewattempts'] = 'Reviseu els intents d\'H5P';
+$string['h5pactivity:submit'] = 'Envieu els intents d\'H5P';
+$string['h5pactivity:view'] = 'Consulteu l\'H5P';
+$string['h5pactivityfieldset'] = 'Configuració de l\'H5P';
 $string['h5pactivityname'] = 'H5P';
-$string['h5pactivitysettings'] = 'Paràmetres';
+$string['h5pactivitysettings'] = 'Configuració';
 $string['h5pattempts'] = 'Opcions dels intents';
 $string['h5pdisplay'] = 'Opcions d\'H5P';
 $string['maxscore'] = 'Puntuació màxima';
 $string['modulename'] = 'H5P';
-$string['modulename_help'] = 'H5P és l\'abreviatura de paquet HTML5: contingut interactiu com ara presentacions, vídeos o altres elements multimèdia, preguntes, qüestionaris, jocs i més. L\'activitat H5P habilita que es puguin carregar continguts H5P i afegir-los a un curs.
+$string['modulename_help'] = 'H5P és l\'abreviatura de \'Paquet HTML5\': contingut interactiu com ara presentacions, vídeos i altres elements multimèdia, preguntes, qüestionaris, jocs i més. L\'activitat H5P permet penjar i afegir continguts H5P a un curs.
 
-Qualsevol intent d\'una pregunta es puntua de manera automàtica, i la qualificació es registra al llibre de qualificacions.';
+Tots els intents de pregunta es puntuen de manera automàtica i la qualificació es registra al llibre de qualificacions.';
 $string['modulename_link'] = 'mod/h5pactivity/view';
 $string['modulenameplural'] = 'H5P';
 $string['myattempts'] = 'Els meus intents';
-$string['no_compatible_track'] = 'La interacció ({$a}) no té informació de seguiment o bé el seguiment no és compatible amb la versió actual de l\'activitat.';
+$string['newsubmissions'] = 'H5P tramès';
+$string['no_compatible_track'] = 'La interacció {$a} no proporciona informació de seguiment o bé la informació de seguiment
+      proporcionada no és compatible amb la versió actual de l\'activitat.';
 $string['noparticipants'] = 'No hi ha cap participant per mostrar';
 $string['opencontentbank'] = '<a href="{$a}" target="_blank">Accedeix al fitxer H5P al banc de continguts</a> (s\'obre a una finestra nova).';
-$string['outcome'] = 'Competència';
+$string['outcome'] = 'Resultat';
 $string['package'] = 'Fitxer del paquet';
-$string['package_help'] = 'El fitxer del paquet és un fitxer h5p amb contingut interactiu H5P.';
+$string['package_help'] = 'El fitxer del paquet és un fitxer H5P amb contingut H5P interactiu.';
 $string['page-mod-h5pactivity-x'] = 'Qualsevol pàgina del mòdul H5P';
 $string['pluginadministration'] = 'Administració d\'H5P';
 $string['pluginname'] = 'H5P';
-$string['previewmode'] = 'S\'està previsualitzant el contingut. No es desarà el seguiment de l\'intent.';
-$string['privacy:metadata:attempt'] = 'El nombre de l\'intent';
-$string['privacy:metadata:rawscore'] = 'La puntuació obtinguda';
-$string['privacy:metadata:timecreated'] = 'El moment en què es va crear l\'element de què es fa el seguiment';
-$string['privacy:metadata:timemodified'] = 'L\'última vegada que es va fer el seguiment de l\'element';
-$string['privacy:metadata:userid'] = 'L\'identificador (ID) de l\'usuari que va accedir a l\'activitat H5P';
+$string['previewmode'] = 'El contingut s\'està previsualitzant. No es desarà cap seguiment de l\'intent.';
+$string['privacy:metadata:attempt'] = 'Número d\'intent';
+$string['privacy:metadata:rawscore'] = 'Puntuació obtinguda';
+$string['privacy:metadata:timecreated'] = 'Hora de creació de l\'element del qual s\'està fent el seguiment';
+$string['privacy:metadata:timemodified'] = 'Última vegada que s\'ha fet el seguiment de l\'element';
+$string['privacy:metadata:userid'] = 'Identificador de l\'usuari que ha accedit a l\'activitat H5P';
 $string['privacy:metadata:xapi_track'] = 'Informació de seguiment de l\'intent';
 $string['privacy:metadata:xapi_track_results'] = 'Informació de seguiment dels resultats de l\'intent';
 $string['report_viewed'] = 'S\'ha visualitzat l\'informe';
 $string['result_compound'] = 'Puntuació parcial combinada';
-$string['result_fill-in'] = 'Compleció de text';
-$string['result_fill-in_gap'] = 'Forat #{$a}';
-$string['result_matching'] = 'Elecció concordant';
+$string['result_fill-in'] = 'Text per emplenar';
+$string['result_fill-in_gap'] = 'Espai #{$a}';
+$string['result_matching'] = 'Elecció coincident';
 $string['result_other'] = 'Tipus d\'interacció desconeguda';
 $string['result_sequencing_answer'] = 'Valor de la posició';
 $string['result_sequencing_choice'] = 'Posicions';
 $string['result_sequencing_position'] = '#{$a}';
-$string['review_all_attempts'] = 'Visualitza tots els intents (se n\'han tramès: {$a})';
+$string['review_all_attempts'] = 'Mostra tots els intents (intents enviats: {$a})';
 $string['review_mode'] = 'Revisa els intents';
 $string['review_my_attempts'] = 'Mostra els meus intents';
-$string['review_none'] = 'Els participants no poden revisar els seus propis intents';
-$string['review_on_completion'] = 'Els participants poden revisar els seus propis intents';
-$string['review_user_attempts'] = 'Visualitza els intents de l\'usuari ({$a})';
+$string['review_none'] = 'Els participants no poden revisar els seus propis intents.';
+$string['review_on_completion'] = 'Els participants poden revisar els seus propis intents.';
+$string['review_user_attempts'] = 'Mostra els intents de l\'usuari ({$a})';
 $string['score'] = 'Puntuació';
-$string['score_out_of'] = '{$a->rawscore} sobre {$a->maxscore}';
+$string['score_out_of'] = '{$a->rawscore} de {$a->maxscore}';
 $string['startdate'] = 'Data d\'inici';
-$string['statement_received'] = 'S\'ha rebut';
+$string['statement_received'] = 'S\'ha rebut la instrucció xAPI';
 $string['totalscore'] = 'Puntuació total';
-$string['tracking_messages'] = 'Alguns H5P ofereixen dades de seguiment dels intents per informes avançats com ara el nombre d\'intents, respostes i puntuacions. Nota: Alguns H5P no ofereixen aquestes dades de seguiment. En aquests casos els arranjaments següents no tindran cap efecte.';
-$string['true'] = 'Vertader';
-$string['usecontentbank'] = 'Useu el <a href="{$a}" target="_blank">banc de continguts (s\'obre en una nova finestra)</a> per gestionar els vostres fitxers H5P';
-$string['view'] = 'Visualització';
-$string['view_report'] = 'Visualitza l\'informe';
+$string['tracking_messages'] = 'Certs H5P ofereixen dades de seguiment dels intents en informes avançats, com ara el nombre d\'intents, les respostes i les puntuacions. Nota: altres H5P no ofereixen aquestes dades de seguiment. En aquests casos, la configuració següent no tindrà cap efecte.';
+$string['true'] = 'Cert';
+$string['usecontentbank'] = 'Feu servir el <a href="{$a}" target="_blank">banc de contingut (s\'obre en una finestra nova)</a> per gestionar els fitxers H5P';
+$string['view'] = 'Mostra';
+$string['view_report'] = 'Mostra l\'informe';

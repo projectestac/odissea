@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'de', version '3.11'.
+ * Strings for component 'analytics', language 'de', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -123,6 +123,10 @@ $string['percentonline'] = 'Prozent online';
 $string['percentonline_help'] = 'Wenn Ihre Organisation gemischte oder hybride Kurse anbietet: wie viel Zeit wird online in Moodle durchgeführt? Geben Sie eine Zahl zwischen 0 und 100 ein.';
 $string['predictionsprocessor'] = 'Vorhersagen-Prozessor';
 $string['predictionsprocessor_help'] = 'Ein Vorhersagen-Prozessor ist ein Tool (Machine-Learning-Backend), das Datensätze verarbeitet, die aus Indikatoren und Zielen von Modellen berechnet werden. Jedes Modell kann einen anderen Vorhersagen-Prozessor nutzen. Der ausgewählte Vorhersagen-Prozessor wird bereits bei der Installation eingerichtet.';
+$string['privacy:metadata:analytics:analyticsmodels'] = 'Analytics Modelle';
+$string['privacy:metadata:analytics:analyticsmodels:usermodified'] = 'Person, die das Modell geändert hat';
+$string['privacy:metadata:analytics:analyticsmodelslog'] = 'Logdaten, die für Analytics Modelle verwendet wurden';
+$string['privacy:metadata:analytics:analyticsmodelslog:usermodified'] = 'Person, die die Logdaten geändert hat';
 $string['privacy:metadata:analytics:indicatorcalc'] = 'Berechnung der Indikatoren';
 $string['privacy:metadata:analytics:indicatorcalc:contextid'] = 'Der Kontext';
 $string['privacy:metadata:analytics:indicatorcalc:endtime'] = 'Endzeitpunkt für Berechnungen';
@@ -152,6 +156,7 @@ $string['processingsitecontents'] = 'Inhalte der Website werden verarbeitet.';
 $string['successfullyanalysed'] = 'Erfolgreich analysiert';
 $string['timesplittingmethod'] = 'Analyseintervall';
 $string['timesplittingmethod_help'] = 'Das Analyseintervall definiert, wann das System Vorhersagen berechnen soll und welche Teile der Aktivitätsprotokolle dabei berücksichtigt werden. Die Kursdauer kann in Teile unterteilt werden, wobei am Ende eines jeden Teils eine Vorhersage generiert wird.';
+$string['timesplittingmethod_link'] = 'Time_splitting_methods';
 $string['typeinstitution'] = 'Institutionstyp';
 $string['typeinstitutionacademic'] = 'Akademisch';
 $string['typeinstitutionngo'] = 'Nichtregierungsorganisation (NGO)';

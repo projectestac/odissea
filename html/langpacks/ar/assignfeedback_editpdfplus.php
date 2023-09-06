@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdfplus', language 'ar', version '3.11'.
+ * Strings for component 'assignfeedback_editpdfplus', language 'ar', version '4.1'.
  *
  * @package     assignfeedback_editpdfplus
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['admin_access_error'] = 'ليس مسموحًا لك بالوصول إلى هذه الصفحة، يرجى التواصل مع معلمك أو مشرفك: تحتاج أن تكون مقيِّم المقرر الدراسي لتخصيص القائمة.';
+$string['admin_access_error'] = 'ليس مسموحًا لك بالوصول إلى هذه الصفحة، يرجى التواصل مع معلمك أو مشرفك: تحتاج أن تكون مقيِّم المساق لتخصيص القائمة.';
 $string['adminaddtool'] = 'إضافة أداة جديدة';
 $string['adminaxisdelete_question'] = 'هل أنت متأكد من رغبتك في حذف المحور المحدد؟';
 $string['adminaxisimport_name'] = 'الاسم';

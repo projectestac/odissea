@@ -93,6 +93,8 @@ class base64_encode_final_element extends backup_final_element {
      * @param string $value Original value coming from backup step source, usually db.
      */
     public function set_value($value) {
+        // Avoid null being passed to base64_encode.
+        $value = $value ?? '';
         parent::set_value(base64_encode($value));
     }
 }
@@ -197,7 +199,7 @@ class encrypted_final_element extends backup_final_element {
         $iv = self::generate_encryption_random_key(openssl_cipher_iv_length(backup::CIPHER));
 
         // Everything is ready, let's encrypt and prepend the 1-shot iv.
-        $value = $iv . openssl_encrypt($value, backup::CIPHER, $this->key, OPENSSL_RAW_DATA, $iv);
+        $value = $iv . openssl_encrypt($value ?? '', backup::CIPHER, $this->key, OPENSSL_RAW_DATA, $iv);
 
         // Calculate the hmac of the value (iv + encrypted) and prepend it.
         $hmac = hash_hmac('sha256', $value, $this->key, true);

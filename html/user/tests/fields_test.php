@@ -22,6 +22,7 @@ namespace core_user;
  * @package core
  * @copyright 2014 The Open University
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \core_user\fields
  */
 class fields_test extends \advanced_testcase {
 
@@ -51,7 +52,7 @@ class fields_test extends \advanced_testcase {
      * Tests getting the identity fields.
      */
     public function test_get_identity_fields() {
-        global $DB, $CFG;
+        global $DB, $CFG, $COURSE;
 
         $this->resetAfterTest();
 
@@ -81,9 +82,8 @@ class fields_test extends \advanced_testcase {
         $usercontext = \context_user::instance($anotheruser->id);
         $generator->enrol_user($user->id, $course->id, 'student');
 
-        // When no context is provided, it does no access checks and should return all specified.
-        $this->assertEquals(['email', 'department', 'profile_field_a', 'profile_field_b',
-                'profile_field_c', 'profile_field_d'],
+        // When no context is provided, it does no access checks and should return all specified (other than non-visible).
+        $this->assertEquals(['email', 'department', 'profile_field_a', 'profile_field_b', 'profile_field_d'],
                 fields::get_identity_fields(null));
 
         // If you turn off custom profile fields, you don't get those.
@@ -104,6 +104,7 @@ class fields_test extends \advanced_testcase {
 
         // Give the student the basic identity fields permission (also makes them count as 'teacher'
         // for the teacher-restricted field).
+        $COURSE = $course; // Horrible hack, because PROFILE_VISIBLE_TEACHERS relies on this global.
         $roleid = $DB->get_field('role', 'id', ['shortname' => 'student']);
         role_change_permission($roleid, $coursecontext, 'moodle/site:viewuseridentity', CAP_ALLOW);
         $this->assertEquals(['department', 'profile_field_a', 'profile_field_d'],
@@ -151,6 +152,27 @@ class fields_test extends \advanced_testcase {
                 fields::get_identity_fields($usercontext));
         $this->assertEquals(['email', 'department'],
                 fields::get_identity_fields($usercontext, false));
+    }
+
+    /**
+     * Test getting identity fields, when one of them refers to a non-existing custom profile field
+     */
+    public function test_get_identity_fields_invalid(): void {
+        $this->resetAfterTest();
+
+        $this->getDataGenerator()->create_custom_profile_field([
+            'datatype' => 'text',
+            'shortname' => 'real',
+            'name' => 'I\'m real',
+        ]);
+
+        // The "fake" profile field does not exist.
+        set_config('showuseridentity', 'email,profile_field_real,profile_field_fake');
+
+        $this->assertEquals([
+            'email',
+            'profile_field_real',
+        ], fields::get_identity_fields(null));
     }
 
     /**
@@ -520,5 +542,78 @@ class fields_test extends \advanced_testcase {
         // No alias: fields do not have alias at all.
         $selects = $fields->get_sql()->selects;
         $this->assertEquals(', id, city', $selects);
+    }
+
+    /**
+     * Data provider for {@see test_get_sql_fullname}
+     *
+     * @return array
+     */
+    public function get_sql_fullname_provider(): array {
+        return [
+            ['firstname lastname', 'FN LN'],
+            ['lastname, firstname', 'LN, FN'],
+            ['alternatename \'middlename\' lastname!', 'AN \'MN\' LN!'],
+            ['[firstname lastname alternatename]', '[FN LN AN]'],
+            ['firstnamephonetic lastnamephonetic', 'FNP LNP'],
+            ['firstname alternatename lastname', 'FN AN LN'],
+        ];
+    }
+
+    /**
+     * Test sql_fullname_display method with various fullname formats
+     *
+     * @param string $fullnamedisplay
+     * @param string $expectedfullname
+     *
+     * @dataProvider get_sql_fullname_provider
+     */
+    public function test_get_sql_fullname(string $fullnamedisplay, string $expectedfullname): void {
+        global $DB;
+
+        $this->resetAfterTest();
+
+        set_config('fullnamedisplay', $fullnamedisplay);
+        $user = $this->getDataGenerator()->create_user([
+            'firstname' => 'FN',
+            'lastname' => 'LN',
+            'firstnamephonetic' => 'FNP',
+            'lastnamephonetic' => 'LNP',
+            'middlename' => 'MN',
+            'alternatename' => 'AN',
+        ]);
+
+        [$sqlfullname, $params] = fields::get_sql_fullname('u');
+        $fullname = $DB->get_field_sql("SELECT {$sqlfullname} FROM {user} u WHERE u.id = :id", $params + [
+            'id' => $user->id,
+        ]);
+
+        $this->assertEquals($expectedfullname, $fullname);
+    }
+
+    /**
+     * Test sql_fullname_display when one of the configured name fields is null
+     */
+    public function test_get_sql_fullname_null_field(): void {
+        global $DB;
+
+        $this->resetAfterTest();
+
+        set_config('fullnamedisplay', 'firstname lastname alternatename');
+        $user = $this->getDataGenerator()->create_user([
+            'firstname' => 'FN',
+            'lastname' => 'LN',
+        ]);
+
+        // Set alternatename field to null, ensure we still get result in later assertion.
+        $user->alternatename = null;
+        user_update_user($user, false);
+
+        [$sqlfullname, $params] = fields::get_sql_fullname('u');
+        $fullname = $DB->get_field_sql("SELECT {$sqlfullname} FROM {user} u WHERE u.id = :id", $params + [
+            'id' => $user->id,
+        ]);
+
+        $this->assertEquals('FN LN ', $fullname);
     }
 }

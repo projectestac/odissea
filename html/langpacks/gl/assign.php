@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'gl', version '3.11'.
+ * Strings for component 'assign', language 'gl', version '4.1'.
  *
  * @package     assign
  * @category    string
@@ -25,9 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityattachments'] = 'Anexos da actividade de tarefas';
 $string['activitydate:submissionsdue'] = 'Pendente:';
-$string['activitydate:submissionsopen'] = 'Apertura:';
-$string['activitydate:submissionsopened'] = 'Aberto:';
+$string['activitydate:submissionsopen'] = 'Abren:';
+$string['activitydate:submissionsopened'] = 'Abertas:';
+$string['activityeditor'] = 'Instrucións da actividade';
+$string['activityeditor_help'] = 'As accións que quere que o alumno complete para este traballo. Isto só se amosa na páxina de entregas onde un alumno edita e entrega a súa tarefa.';
 $string['activityoverview'] = 'Hai tarefas que requiren da súa atención';
 $string['addattempt'] = 'Permitir outro intento';
 $string['addnewattempt'] = 'Engadir un novo intento';
@@ -64,7 +67,7 @@ $string['assign:reviewgrades'] = 'Revisión de cualificacións';
 $string['assign:showhiddengrader'] = 'Ver a identidade dun cualificador agochado';
 $string['assign:submit'] = 'Entregar tarefa';
 $string['assign:view'] = 'Ver tarefa';
-$string['assign:viewblinddetails'] = 'Ver a identidade dos alumnos cando se active a puntuación cega';
+$string['assign:viewblinddetails'] = 'Ver a identidade dos alumnos cando se activan as entregas anónimas';
 $string['assign:viewgrades'] = 'Ver as cualificacións';
 $string['assign:viewownsubmissionsummary'] = 'Ver o resumo da propia entrega';
 $string['assignfeedback'] = 'Engadido de comentarios';
@@ -80,26 +83,28 @@ $string['assignmentmailhtml'] = 'O cualificador {$a->grader} fixo algúns coment
 na entrega da súa tarefa «<i>{$a->assignment}</i>»<br /><br />
 Pode velos anexos a entrega <a href="{$a->url}">da tarefa</a>.';
 $string['assignmentmailsmall'] = 'O cualificador {$a->grader} fixo algúns comentarios
-na entrega da súa tarefa «{$a->assignment}». pode ver los anexos a entrega da tarefa';
+na entrega da súa tarefa «{$a->assignment}». pode velos anexos a entrega da tarefa';
 $string['assignmentname'] = 'Nome da tarefa';
 $string['assignmentplugins'] = 'Engadidos de tarefa';
 $string['assignmentsperpage'] = 'Tarefas por páxina';
 $string['assignsubmission'] = 'Engadido de entregas';
 $string['assignsubmissionpluginname'] = 'Engadido de entregas';
+$string['assigntimeleft'] = 'Tempo restante';
 $string['attemptheading'] = 'Intento {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Intentos anteriores';
 $string['attemptnumber'] = 'Número do intento';
-$string['attemptreopenmethod'] = 'Intentos reabertos';
-$string['attemptreopenmethod_help'] = 'Determina como se reabren os intentos de entrega dos alumnos. As opcións dispoñíbeis son:
+$string['attemptreopenmethod'] = 'Intentos adicionais';
+$string['attemptreopenmethod_help'] = 'Este axuste determina se un alumno pode facer intentos adicionais na tarefa. Para cada intento gárdanse a nota e os comentarios e poden ser vistos polo profesor e o alumno. As opcións dispoñíbeis son:
 
-* Nunca - A entrega do alumno non se pode reabrir.
-* Manualmente: un profesor pode volver abrir a entrega.
-* Automaticamente ata aprobar - A entrega do alumno reábrese automaticamente ata que o alumno acada o nivel para aprobar respecto do valor estabelecido no libro de cualificacións para esta tarefa.';
+* Nunca: só é posíbel un intento.
+* Manual: un profesor pode permitir intentos adicionais.
+* Automaticamente ata aprobar - Permítense intentos adicionais automaticamente ata que o alumno acade a nota para aprobar estabelecida no libro de cualificacións para esta tarefa.';
 $string['attemptreopenmethod_manual'] = 'Manualmente';
 $string['attemptreopenmethod_none'] = 'Nunca';
 $string['attemptreopenmethod_untilpass'] = 'Automaticamente ata pasar';
 $string['attemptsettings'] = 'Axustes do intento';
 $string['availability'] = 'Dispoñibilidade';
+$string['back'] = 'Volver';
 $string['backtoassignment'] = 'Volver a tarefa';
 $string['batchoperationconfirmaddattempt'] = 'Permitir outro intento para as entregas seleccionadas?';
 $string['batchoperationconfirmdownloadselected'] = 'Descargar todas as entregas seleccionadas?';
@@ -116,12 +121,14 @@ $string['batchoperationsdescription'] = 'Co seleccionado...';
 $string['batchoperationunlock'] = 'desbloquear entregas';
 $string['batchsetallocatedmarker'] = 'Estabelecer o corrector asignado para {$a} usuario(s) seleccionado(s).';
 $string['batchsetmarkingworkflowstateforusers'] = 'Estabelecer o estado do fluxo de traballo de corrección para {$a} usuario(s) seleccionado(s).';
-$string['blindmarking'] = 'Puntuación cega';
-$string['blindmarking_help'] = 'A puntuación cega agocha a identidade dos alumnos aos correctores. Os axustes da corrección cega bloquearase dende o momento en que se faga unha entrega en relación con esta tarefa.';
-$string['blindmarkingenabledwarning'] = 'A corrección cega está activada para esta actividade.';
+$string['beginassignment'] = 'Comezar a tarefa';
+$string['blindmarking'] = 'Entregas anónimas';
+$string['blindmarking_help'] = 'As entregas anónimas agochan a identidade dos alumnos dos marcadores. Os axustes da entrega anónima bloquearase unha vez feita unha entrega ou nota en relación con esta tarefa.';
+$string['blindmarkingenabledwarning'] = 'As entregas anónimas están activadas para esta actividade. As cualificacións non se engadirán ao libro de cualificacións ata que se revelen as identidades dos alumnos a través do menú de acción de cualificación.';
 $string['cachedef_overrides'] = 'Información de anulación de usuarios e grupos';
 $string['calendardue'] = '{$a} pendente de entrega';
 $string['calendargradingdue'] = '{$a} pendente de cualificación';
+$string['caneditsubmission'] = 'Pode editar a súa entrega após que expire o prazo, mais marcarase como atrasado.';
 $string['changefilters'] = 'Cambiar os filtros';
 $string['changeuser'] = 'Cambiar o usuario';
 $string['choosegradingaction'] = 'Acción de cualificación';
@@ -134,7 +141,8 @@ $string['comment'] = 'Comentario';
 $string['completiondetail:submit'] = 'Facer unha entrega';
 $string['completionsubmit'] = 'O alumno debe entregar esta actividade para completala';
 $string['configshowrecentsubmissions'] = 'Calquera pode ver as notificacións das entregas nos informes de actividade recente.';
-$string['confirmbatchgradingoperation'] = 'Confirma que quere {$a->operation} a {$a->count} alumnos?';
+$string['confirmbatchgradingoperation'] = 'Confirma que quere {$a->operation} a  {$a->count} alumnos?';
+$string['confirmstart'] = 'A súa entrega terá un límite de tempo de {$a}. Cando inicie, o temporizador comezará a contar atrás e non se pode poñer en pausa. Debe rematar a súa entrega antes de que caduque. Confirma que queres comezar agora?';
 $string['confirmsubmission'] = 'Confirma que quere entregar o seu traballo para cualificación? Non poderá facerlle máis cambios.';
 $string['confirmsubmissionheading'] = 'Confirmar entrega';
 $string['conversionexception'] = 'Non foi posíbel converter a tarefa. Agás: {$a}.';
@@ -148,14 +156,14 @@ $string['currentassigngrade'] = 'Cualificación actual na tarefa';
 $string['currentattempt'] = 'Este é o intento {$a}.';
 $string['currentattemptof'] = 'Este é o intento {$a->attemptnumber} ( {$a->maxattempts} intentos permitidos ).';
 $string['currentgrade'] = 'Cualificación actual no libro de cualificacións';
-$string['cutoffdate'] = 'Data de corte';
+$string['cutoffdate'] = 'Data límite';
 $string['cutoffdate_help'] = 'De estar definida, a tarefa non aceptará entregas após esta data sen unha prórroga.';
-$string['cutoffdatecolon'] = 'Data de corte: {$a}';
+$string['cutoffdatecolon'] = 'Data límite: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'A data de corte debe ser posterior a data de inicio das entregas.';
 $string['cutoffdatevalidation'] = 'A data de corte non pode ser anterior á data límite.';
 $string['defaultlayout'] = 'Restaurar o deseño predeterminado';
-$string['defaultsettings'] = 'Axustes predeterminados da tarefa';
-$string['defaultsettings_help'] = 'Estes axustes definen os valores predeterminados para todas as novas tarefas.';
+$string['defaultsettings'] = 'Axustes predeterminados das tarefas';
+$string['defaultsettings_help'] = 'Esta configuración define os valores predeterminados para todas as novas tarefas.';
 $string['defaultteam'] = 'Grupo predeterminado';
 $string['deleteallsubmissions'] = 'Eliminar todas as entregas';
 $string['description'] = 'Descrición';
@@ -167,9 +175,8 @@ $string['downloadselectedsubmissions'] = 'Descargar as entregas seleccionadas';
 $string['duedate'] = 'Data límite';
 $string['duedate_help'] = 'Isto é cando caducou a tarefa. As entregas aínda se permitirán após esta data mais calquera tarefa entregada tras esta data corrixirase como serodia. Para evitar entregas após unha certa data estabeleza a data de corte da tarefa.';
 $string['duedatecolon'] = 'Data límite: {$a}';
-$string['duedateno'] = 'Sen data límite';
 $string['duedatereached'] = 'A data límite desta tarefa xa pasou';
-$string['duedatevalidation'] = 'A data límite debe ser posterior á data de inicio das entregas.';
+$string['duedatevalidation'] = 'A data límite debe ser posterior a data de inicio das entregas.';
 $string['duplicateoverride'] = 'Excepción duplicada';
 $string['editaction'] = 'Accións...';
 $string['editattemptfeedback'] = 'Editar a cualificación e os comentarios para o intento número {$a}.';
@@ -181,9 +188,11 @@ $string['editsubmission'] = 'Editar entrega';
 $string['editsubmission_help'] = 'Aínda pode facerlle cambios á súa entrega';
 $string['editsubmissionother'] = 'Editar entregas para {$a';
 $string['enabled'] = 'Activado';
+$string['enabletimelimit'] = 'Activar as tarefas cronometradas';
+$string['enabletimelimit_help'] = 'Se está activado, pode estabelecer un límite de tempo na páxina de axustes da tarefa.';
 $string['errornosubmissions'] = 'Non hai entregas que descargar';
 $string['errorquickgradingvsadvancedgrading'] = 'As cualificación non foron gardadas xa que esta tarefa emprega a cualificación avanzada';
-$string['errorrecordmodified'] = 'As cualificación non foron gardadas xa que alguén vén de modificar un ou máis rexistros, antes de que vostede cargara a páxina.';
+$string['errorrecordmodified'] = 'As cualificación non foron gardadas xa que alguén ven de modificar un ou máis rexistros, antes de que vostede cargara a páxina.';
 $string['eventallsubmissionsdownloaded'] = 'Estanse descargando todas as entregas.';
 $string['eventassessablesubmitted'] = 'Entrega feita.';
 $string['eventbatchsetmarkerallocationviewed'] = 'Vista a asignación de corrector por lotes';
@@ -216,7 +225,7 @@ $string['eventworkflowstateupdated'] = 'Actualizouse o estado do fluxo de trabal
 $string['expandreviewpanel'] = 'Expandir o panel de revisión';
 $string['extensionduedate'] = 'Ampliación do prazo.';
 $string['extensionnotafterduedate'] = 'A data da ampliación debe ser posterior á data límite';
-$string['extensionnotafterfromdate'] = 'A data da ampliación debe ser posterior á data de inicio das entregas';
+$string['extensionnotafterfromdate'] = 'A data da ampliación ser posterior a a data de inicio das entregas';
 $string['feedback'] = 'Comentarios';
 $string['feedbackavailableanonhtml'] = 'Ten un novo comentario sobre a súa
 entrega de tarefas para «<i>{$a->assignment}</i>»<br /><br />
@@ -235,7 +244,7 @@ $string['feedbackavailablesmall'] = 'O usuario {$a->username} fixo un comentario
 $string['feedbackavailabletext'] = 'O usuario {$a->username} fixo algúns comentarios
 na entrega da súa tarefa «{$a->assignment}»
 
-Pode ver os anexos a entrega da tarefa:
+Pode velos anexos a entrega da tarefa:
 
     {$a->url}';
 $string['feedbackplugin'] = 'Engadido de comentarios';
@@ -257,11 +266,11 @@ $string['fixrescalednullgradesconfirm'] = 'Confirma que quere arranxar cualifica
 $string['fixrescalednullgradesdone'] = 'Cualificacións corrixidas';
 $string['gradeabovemaximum'] = 'A cualificación debe ser menor ou igual que {$a}';
 $string['gradebelowzero'] = 'A cualificación debe ser maior ou igual que cero.';
-$string['gradecanbechanged'] = 'A cualificación pode ser cambiada';
+$string['gradecanbechanged'] = 'A cualificación pode seren cambiada';
 $string['gradechangessaveddetail'] = 'Gardáronse os cambios na cualificación e nos comentarios';
 $string['graded'] = 'Cualificado';
 $string['gradedby'] = 'Cualificado por';
-$string['gradedfollowupsubmit'] = 'Cualificada: entrega posterior recibida';
+$string['gradedfollowupsubmit'] = 'Cualificada: entrega de seguimento recibida';
 $string['gradedon'] = 'Cualificado o';
 $string['gradeitem:submissions'] = 'Entregas';
 $string['gradelocked'] = 'Esta cualificación está bloqueada ou foi modificada no libro de cualificacións';
@@ -316,14 +325,14 @@ $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcent
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
 $string['instructionfiles'] = 'Ficheiros de instrucións';
 $string['introattachments'] = 'Ficheiros adicionais';
-$string['introattachments_help'] = 'Poden engadirse ficheiros adicionais para usar na tarefa, tales como modelos de resposta. As ligazóns para descarga dos ficheiros amosaranse na paxina da tarefa, baixo a descrición.';
+$string['introattachments_help'] = 'Poden engadirse ficheiros adicionais para usar na tarefa, tales como modelos de resposta.';
 $string['invalidfloatforgrade'] = 'A cualificación fornecida podería non entenderse: {$a}';
 $string['invalidgradeforscale'] = 'A cualificación fornecida non está dentro da escala definida.';
 $string['invalidoverrideid'] = 'O id de anulación é incorrecto';
 $string['lastmodifiedgrade'] = 'Última modificación (cualificación)';
 $string['lastmodifiedsubmission'] = 'Última modificación (entrega)';
 $string['latesubmissions'] = 'Entregas atrasadas';
-$string['latesubmissionsaccepted'] = 'Permitido ata {$a}';
+$string['latesubmissionsaccepted'] = 'Só os alumnos que teña logrado unha prórroga poderán aínda enviar a tarefa.';
 $string['loading'] = 'Cargando...';
 $string['locksubmissionforstudent'] = 'Impide máis entregas do alumno: (id={$a->id}, nome completo={$a->fullname}).';
 $string['locksubmissions'] = 'Bloquear entregas';
@@ -360,17 +369,15 @@ $string['messageprovider:assign_notification'] = 'Notificación de tarefas';
 $string['modulename'] = 'Tarefa';
 $string['modulename_help'] = 'O módulo de actividade da tarefa permítelle a un profesor comunicar tarefas, recoller traballos e fornecer cualificacións e comentarios.
 
-Os alumnos poden enviar calquera contido dixital (ficheiros), tales como documentos tratados co procesador de texto, follas de cálculo, imaxes, ou fragmentos de son ou vídeos.
-Alternativamente, ou en adición, a tarefa pode requirir que os alumnos escriban texto directamente no editor de texto. Unha tarefa tamén se pode utilizar para lembrarlles aos alumnos do «mundo real» tarefas que deben completar sen estar en conexión, tales como deseños, así como aqueles que non requiren contido dixital. Os alumnos poden enviar, traballar individualmente ou como membros dun grupo.
+Os alumnos poden enviar calquera contido dixital (ficheiros), tales como documentos tratados co procesador de texto, follas de cálculo, imaxes, ou fragmentos de son ou vídeos. Alternativamente, ou en adición, a tarefa pode requirir que os alumnos escriban texto directamente no editor de texto. Unha tarefa tamén se pode utilizar para lembrarlles aos alumnos do «mundo real» tarefas que deben completar sen estar en conexión, tales como deseños, así como aqueles que non requiren contido dixital. Os alumnos poden enviar, traballar individualmente ou como membros dun grupo.
 
-Ao revisar as tarefas, os profesores poden deixar comentarios e subir ficheiros, tales como a puntuación de entregas dos alumnos con comentarios ou comentarios orais. As tarefas poden ser cualificadas utilizando unha escala numérica ou un método avanzado de cualificación como unha rúbrica. A cualificación final gárdase no libro de cualificacións.';
+Ao revisar as tarefas, os profesores poden deixar comentarios e enviar ficheiros, tales como a puntuación de entregas dos alumnos con comentarios ou comentarios orais. As tarefas poden ser cualificadas utilizando unha escala numérica ou un método avanzado de cualificación como unha rúbrica. A cualificación final gárdase no libro de cualificacións.';
 $string['modulename_link'] = 'mod/assignment/view';
 $string['modulenameplural'] = 'Tarefas';
 $string['moreusers'] = '{$a} máis...';
 $string['multipleteams'] = 'Membro de máis dun grupo';
 $string['multipleteams_desc'] = 'A tarefa require a entrega por grupos. Vostede é membro de máis dun grupo. Para poder enviarlle debe ser un membro de só un grupo. Póñase en contacto co seu profesor para cambiar a súa pertenza a grupos.';
 $string['multipleteamsgrader'] = 'Membro de máis dun grupo, polo que non pode facer entregas.';
-$string['mysubmission'] = 'A miña entrega:';
 $string['newsubmissions'] = 'Tarefas entregadas';
 $string['nextuser'] = 'Seguinte usuario';
 $string['noattempt'] = 'Sen intentos';
@@ -378,34 +385,36 @@ $string['noclose'] = 'Sen data límite';
 $string['nofiles'] = 'Sen ficheiros.';
 $string['nofilters'] = 'Sen filtros';
 $string['nograde'] = 'Sen cualificación';
-$string['nolatesubmissions'] = 'Non se aceptan entregas atrasadas.';
-$string['nomoresubmissionsaccepted'] = 'Só permitido para os participantes que teñan concedida unha prórroga';
+$string['nogroupoverrides'] = 'Actualmente non hai anulacións de grupos.';
+$string['nomoresubmissionsaccepted'] = 'Non se aceptan máis entregas';
 $string['none'] = 'Ningún';
 $string['noonlinesubmissions'] = 'Esta tarefa non require que entregue nada dende a Rede';
 $string['noopen'] = 'Sen data de apertura';
 $string['nooverridedata'] = 'Debe anular cando menos unha das opcións da tarefa.';
 $string['nosavebutnext'] = 'Seguinte';
 $string['nosubmission'] = 'Non foi enviado nada para esta tarefa';
-$string['nosubmissionsacceptedafter'] = 'Non se aceptan entregas após';
-$string['noteam'] = 'Non é membro de ningún grupo';
+$string['nosubmissionyet'] = 'Aínda non se realizaron entregas';
+$string['noteam'] = 'Vostede non é membro de ningún grupo; contacte co seu profesor';
 $string['noteam_desc'] = 'Esta tarefa require a entrega por grupos. Vostede non é membro de ningún grupo, polo que non pode crear unha entrega. Póñase en contacto co profesor para que o engada a un grupo.';
 $string['noteamgrader'] = 'Non é membro de ningún grupo, polo que non pode facer entregas.';
 $string['notgraded'] = 'Sen cualificar';
 $string['notgradedyet'] = 'Aínda non cualificada';
 $string['notifications'] = 'Notificacións';
-$string['notsubmittedyet'] = 'Aínda non entregada';
+$string['nouseroverrides'] = 'Actualmente non hai anulacións de usuarios.';
 $string['nousers'] = 'Sen usuarios';
 $string['nousersselected'] = 'Non hai ningún usuario seleccionado';
 $string['numberofdraftsubmissions'] = 'Versións preliminares';
 $string['numberofparticipants'] = 'Participantes';
 $string['numberofsubmissionsneedgrading'] = 'Necesita cualificación';
+$string['numberofsubmissionsneedgradinglabel'] = 'Necesita cualificación: {$a}';
 $string['numberofsubmittedassignments'] = 'Entregada';
 $string['numberofteams'] = 'Grupos';
 $string['offline'] = 'Non se requiren entregas en liña';
 $string['open'] = 'Abrir';
+$string['opensubmissionexists'] = 'A entrega de tarefas abertas xa existe.';
 $string['outlinegrade'] = 'Cualificar: {$a}';
 $string['outof'] = '{$a->current} dun total de {$a->total}';
-$string['overdue'] = '<font color="red">A tarefa foi atrasada por: {$a}</font>';
+$string['overdue'] = 'A tarefa está atrasada por: {$a}';
 $string['override'] = 'Anular';
 $string['overridedeletegroupsure'] = 'Confirma que quere eliminar a anulación do grupo {$a}?';
 $string['overridedeleteusersure'] = 'Confirma que quere eliminar a anulación do usuario {$a}?';
@@ -427,9 +436,9 @@ $string['preventsubmissionsshort'] = 'Impedir a actualización de entregas';
 $string['previous'] = 'Anterior';
 $string['previoususer'] = 'Usuario anterior';
 $string['privacy:attemptpath'] = 'intento {$a}';
-$string['privacy:blindmarkingidentifier'] = 'O identificador usado para a corrección a cegas';
+$string['privacy:blindmarkingidentifier'] = 'O identificador usado para entregas anónimas';
 $string['privacy:gradepath'] = 'cualificar';
-$string['privacy:metadata:assigndownloadasfolders'] = 'A preferencia do usuario por se se deben descargar varios ficheiros en cartafoles';
+$string['privacy:metadata:assigndownloadasfolders'] = 'A preferencia do usuario por se se deben descargar varios cartafoles en cartafoles';
 $string['privacy:metadata:assignfeedbackpluginsummary'] = 'Datos de comentarios para a tarefa.';
 $string['privacy:metadata:assignfilter'] = 'Opcións de filtro como «Entregada», «Non entregada», «Require cualificación» e «Prórroga concedida»';
 $string['privacy:metadata:assigngrades'] = 'Almacena as cualificacións dos usuarios para as tarefas';
@@ -442,7 +451,7 @@ $string['privacy:metadata:assignquickgrading'] = 'Unha preferencia sobre se se u
 $string['privacy:metadata:assignsubmissiondetail'] = 'Almacena a información de entregas do usuario';
 $string['privacy:metadata:assignsubmissionpluginsummary'] = 'Datos de entrega para a tarefa.';
 $string['privacy:metadata:assignuserflags'] = 'Almacena metadatos do usuario como datas de prorrogas';
-$string['privacy:metadata:assignusermapping'] = 'A asignación para a corrección a cegas';
+$string['privacy:metadata:assignusermapping'] = 'A asignación de entregas anónimas';
 $string['privacy:metadata:assignworkflowfilter'] = 'Filtrar por diferentes fases do fluxo de traballo.';
 $string['privacy:metadata:grade'] = 'A cualificación numérica para esta entrega de tarefas. Pode ser determinada por scales/advancedgradingforms etc. mais sempre será convertido de novo a un número de coma flotante.';
 $string['privacy:metadata:grader'] = 'O ID de usuario da persoa que cualifica.';
@@ -450,6 +459,7 @@ $string['privacy:metadata:groupid'] = 'O ID do grupo ao que pertence o usuario.'
 $string['privacy:metadata:latest'] = 'Simplifica enormemente as consultas que queren obter información só sobre o último intento.';
 $string['privacy:metadata:mailed'] = 'Xa se lle enviou o correo a este usuario?';
 $string['privacy:metadata:timecreated'] = 'Momento da creación';
+$string['privacy:metadata:timestarted'] = 'Tempo iniciado';
 $string['privacy:metadata:userid'] = 'O ID do usuario';
 $string['privacy:studentpath'] = 'entregasdosalumnos';
 $string['privacy:submissionpath'] = 'entrega';
@@ -464,15 +474,17 @@ $string['relativedatessubmissiontimeleft'] = 'Calculado para cada alumno';
 $string['removeallgroupoverrides'] = 'Eliminar todas as anulacións de grupo';
 $string['removealluseroverrides'] = 'Eliminar todas as anulacións de usuario';
 $string['removesubmission'] = 'Retirar a entrega';
-$string['removesubmissionconfirm'] = 'Confirma que quere retirar os datos da entrega?';
-$string['removesubmissionconfirmforstudent'] = 'Confirma que quere retirar os datos da entrega do alumno {$a}?';
+$string['removesubmissionconfirm'] = 'Confirma que quere retirar a súa entrega?';
+$string['removesubmissionconfirmforstudent'] = 'Confirma que quere retirar a entrega de {$a}?';
+$string['removesubmissionconfirmforstudentwithtimelimit'] = 'Confirma que quere retirar os datos da entrega de {$a}? Teña en conta que isto non restabelecerá o límite de tempo do alumno. Pode obter máis tempo engadindo unha anulación de usuario do límite de.';
+$string['removesubmissionconfirmwithtimelimit'] = 'Confirma que quere retirar a súa entrega? Teña en conta que isto non restabelecerá o seu límite de tempo.';
 $string['removesubmissionforstudent'] = 'Retirar a entrega do alumno: (id={$a->id}, nome completo={$a->fullname}).';
-$string['reopenuntilpassincompatiblewithblindmarking'] = 'Reabrir ata que a opción para pasar sexa incompatíbel coa puntuación cega, porque as cualificacións non son publicadas no libro de cualificacións ata que as identidades dos alumnos sexan reveladas.';
+$string['reopenuntilpassincompatiblewithblindmarking'] = 'A opción de reabrir ata que se aprobe é incompatíbel coas entregas anónimas, porque as cualificacións non son publicadas no libro de cualificacións ata que se revelan as identidades dos alumnos.';
 $string['requireallteammemberssubmit'] = 'Require a entrega de todos os membros do grupo';
 $string['requireallteammemberssubmit_help'] = 'De estar activado, todos os membros do grupo de alumnos deben premer o botón desta tarefa antes de que a entrega do grupo se considere entregada. De estar desactivado, considerarase que a entrega do grupo foi entregada tan pronto como calquera membro do grupo de alumnos prema no botón de envío.';
 $string['requiresubmissionstatement'] = 'Requirir que os alumnos acepten a declaración de entrega';
-$string['requiresubmissionstatement_help'] = 'Require que os alumnos acepten a declaración de entrega para todas as entregas desta tarefa.';
-$string['revealidentities'] = 'Amosar a identidade dos alumnos';
+$string['requiresubmissionstatement_help'] = 'Require que os alumnos acepten a situación de entrega para todas as entregas desta tarefa.';
+$string['revealidentities'] = 'Amosar identidade dos alumnos';
 $string['revealidentitiesconfirm'] = 'Confirma que quere revelar as identidades de todos os alumnos con esta tarefa. Esta operación non se pode desfacer. Unha vez que as identidades dos alumnos se revelaron, anotaranse as puntuacións no libro de cualificacións.';
 $string['reverttodefaults'] = 'Reverter cara aos predeterminados da tarefa';
 $string['reverttodraft'] = 'Reverter a entrega ao estado de versión preliminar.';
@@ -496,21 +508,23 @@ $string['sendlatenotifications'] = 'Notificar aos cualificadores as entregas fó
 $string['sendlatenotifications_help'] = 'Se está activado, os cualificadores (normalmente profesores) reciben unha mensaxe cando un alumno fai unha entrega fóra de prazo para unha tarefa. Os métodos de mensaxería poden configurarse.';
 $string['sendnotifications'] = 'Notificar aos cualificadores sobre entregas';
 $string['sendnotifications_help'] = 'Se está activado, os cualificadores (normalmente profesores) reciben unha mensaxe cando un alumno fai unha entrega antes da data requirida, dentro das datas estabelecidas, ou fóra de prazo para unha tarefa. Os métodos de mensaxería poden configurarse.';
-$string['sendstudentnotifications'] = 'Notificar aos alumnos';
-$string['sendstudentnotifications_help'] = 'Se está activado, os alumnos reciben unha mensaxe sobre a cualificación actualizada ou o comentario. Se o fluxo de traballo de cualificación está activado nesta tarefa, non se enviarán notificacións ata que a cualificación sexa «publicada»".';
-$string['sendstudentnotificationsdefault'] = 'Axuste predeterminado para «Notificar aos alumnos»';
-$string['sendstudentnotificationsdefault_help'] = 'Estabelecer o valor predeterminado para a caixa de verificación «Notificar aos alumnos» no formato de cualificación.';
+$string['sendstudentnotifications'] = 'Notificar ao alumno';
+$string['sendstudentnotifications_help'] = 'Marque esta caixa para enviar unha notificación sobre a cualificación ou comentarios actualizados. Se a tarefa utiliza un fluxo de traballo de cualificación, ou as cualificacións están agochadas no informe do cualificador, a notificación non se enviará ata que se publique a cualificación.';
+$string['sendstudentnotificationsdefault'] = 'Valor predeterminado para «Notificar ao alumno»';
+$string['sendstudentnotificationsdefault_help'] = 'Ao cualificar a cada alumno, debería marcarse de xeito predeterminado «Notificar ao alumno«?';
 $string['sendsubmissionreceipts'] = 'Enviar un recibo da entrega aos alumnos';
-$string['sendsubmissionreceipts_help'] = 'Esta opción activa os recibos de entrega dos alumnos. Os alumnos recibirán unha notificación cada vez que fagan correctamente a entrega dunha tarefa';
-$string['setmarkerallocationforlog'] = 'Configurar a asignación de corrector : (id={$a->id}, fullname={$a->fullname}, marker={$a->marker}).';
+$string['sendsubmissionreceipts_help'] = 'Esta opción activa os recibos de entrega dos alumnos. Os alumnos recibirán unha notificación cada vez que fagan correctamente unha entrega';
+$string['setmarkerallocationforlog'] = 'Configurar a signación de corrector : (id={$a->id}, fullname={$a->fullname}, marker={$a->marker}).';
 $string['setmarkingallocation'] = 'Estabelecer o corrector asignado';
 $string['setmarkingworkflowstate'] = 'Estabelecer o estado do fluxo de traballo de corrección';
-$string['setmarkingworkflowstateforlog'] = 'Configurar o estado do fluxo de traballo de cualificación : (id={$a->id}, nome={$a->fullname}, estado={$a->state}).';
-$string['settings'] = 'Axustes da tarefa';
+$string['setmarkingworkflowstateforlog'] = 'Configurar o estado do fluxo de traballo de cualificación : (id={$a->id}, fullname={$a->fullname}, state={$a->state}).).';
+$string['settings'] = 'Configuración da tarefa';
 $string['showrecentsubmissions'] = 'Amosar as entregas recentes';
 $string['status'] = 'Estado';
 $string['studentnotificationworkflowstateerror'] = 'O estado do fluxo de traballo de cualificación debe ser «Publicado» para notificárllelo aos alumnos.';
 $string['submission'] = 'Entrega';
+$string['submissionattachments'] = 'Amosar os ficheiros só durante a entrega';
+$string['submissionattachments_help'] = 'Marque a caixa para amosar os ficheiros só na páxina de entregas. En caso contrario, os ficheiros amosaranse tanto na páxina de tarefas como na páxina de entregas.';
 $string['submissioncopiedhtml'] = '<p>Fixo unha copia das entregas de tarefas
 previas para «<i>{$a->assignment}</i>».</p>
 <p> Pode ver o estado da súa <a href="{$a->url}">entrega de tarefa</a>.';
@@ -524,12 +538,13 @@ Pode ver o estado da entrega da súa tarefa:
 $string['submissiondrafts'] = 'Requirir que os alumnos preman no botón de entrega';
 $string['submissiondrafts_help'] = 'Se está activado, os alumnos terán que premer nun botón de entrega para declarar a súa entrega como final. Isto permite que os alumnos manteñan unha versión preliminar da entrega no seu sistema. Se se cambia este axuste «Non» a «Si» após que os alumnos xa teñan feito entregas, estas consideraranse como definitivas.';
 $string['submissioneditable'] = 'Os alumnos poden editar esta entrega';
-$string['submissionempty'] = 'Non foi entregado nada';
+$string['submissionempty'] = 'Nada non foi entregado';
 $string['submissionlog'] = 'Alumno: {$a->fullname}, estado: {$a->status}';
 $string['submissionmodified'] = 'Vostede ten datos de entregas existentes. Abandone esta páxina e ténteo de novo,';
 $string['submissionmodifiedgroup'] = 'A entrega foi modificada por alguén máis. Abandone esta páxina e ténteo de novo.';
 $string['submissionnotcopiedinvalidstatus'] = 'A entrega non foi copiada por mor de non ter sido editada posteriormente a que fora reaberta.';
 $string['submissionnoteditable'] = 'Os alumnos non poden editar esta entrega';
+$string['submissionnotopen'] = 'Esta tarefa non ten aberto o prazo para entregas';
 $string['submissionnotready'] = 'Esta tarefa non está lista para a súa entrega:';
 $string['submissionplugins'] = 'Engadidos de entregas';
 $string['submissionreceipthtml'] = 'Vostede fixo unha entrega para a tarefa «{$a->assignment}»<br /><br />
@@ -556,7 +571,6 @@ $string['submissionsclosed'] = 'Pechadas as entregas';
 $string['submissionsettings'] = 'Axustes de entregas';
 $string['submissionslocked'] = 'Esta tarefa non acepta entregas';
 $string['submissionslockedshort'] = 'Non se permiten cambios nas entregas';
-$string['submissionsnotgraded'] = 'Entregas non cualificadas: {$a}';
 $string['submissionstatement'] = 'Declaración da entrega';
 $string['submissionstatement_help'] = 'Declaración que cada alumno debe aceptar para entregar o seu traballo';
 $string['submissionstatementacceptedlog'] = 'Declaración para a entrega aceptada polo usuario {$a}';
@@ -571,7 +585,7 @@ $string['submissionstatus'] = 'Estado da entrega';
 $string['submissionstatus_'] = 'Nova entrega';
 $string['submissionstatus_draft'] = 'versión preliminar (non entregada)';
 $string['submissionstatus_marked'] = 'Cualificado';
-$string['submissionstatus_new'] = 'Sen entrega';
+$string['submissionstatus_new'] = 'Nova entrega';
 $string['submissionstatus_reopened'] = 'Reaberto';
 $string['submissionstatus_submitted'] = 'Entregado para cualificacións';
 $string['submissionstatusheading'] = 'Estado da entrega';
@@ -586,6 +600,8 @@ $string['submitted'] = 'Entregada';
 $string['submittedearly'] = 'A tarefa foi enviada {$a} en prazo';
 $string['submittedlate'] = 'A tarefa foi enviada {$a} fóra de prazo';
 $string['submittedlateshort'] = '{$a} fóra de prazo';
+$string['submittedovertime'] = 'A tarefa foi entregada {$a} após o límite de tempo';
+$string['submittedundertime'] = 'A tarefa foi entregada {$a} antes do límite de tempo';
 $string['subpagetitle'] = '{$a->contextname} - {$a->subpage}';
 $string['subplugintype_assignfeedback'] = 'Engadido de comentarios';
 $string['subplugintype_assignfeedback_plural'] = 'Engadidos de comentarios';
@@ -597,6 +613,10 @@ $string['teamsubmission_help'] = 'Si está activado, os alumnos dividiranse en g
 $string['teamsubmissiongroupingid'] = 'Agrupamento por grupos de alumnos';
 $string['teamsubmissiongroupingid_help'] = 'Este é o agrupamento que a tarefa usará para atopar grupos para os grupos de alumnos. De non estar estabelecido, utilizarase a definición predeterminada de grupos.';
 $string['textinstructions'] = 'Instrucións da tarefa';
+$string['timelimit'] = 'Límite de tempo';
+$string['timelimit_help'] = 'Se está activado, o límite de tempo indícase na páxina de tarefas e amosase un temporizador de conta atrás durante a tarefa.';
+$string['timelimitnotenabled'] = 'Non está estabelecido o límite de tempo para a tarefa.';
+$string['timelimitpassed'] = 'O prazo expirou';
 $string['timemodified'] = 'Última modificación';
 $string['timeremaining'] = 'Tempo restante';
 $string['timeremainingcolon'] = 'Tempo restante: {$a}';
@@ -632,7 +652,7 @@ $string['viewfull'] = 'Ver todo';
 $string['viewfullgradingpage'] = 'Abrir a páxina global de cualificacións para incluír comentarios';
 $string['viewgradebook'] = 'Ver o libro de cualificacións';
 $string['viewgrading'] = 'Ver/cualificar todas as entregas';
-$string['viewgradingformforstudent'] = 'Ver a páxina de cualificacións do alumno: (id={$a->id}, nome completo={$a->fullname}).';
+$string['viewgradingformforstudent'] = 'Ver a pácina de cualificacións do alumno: (id={$a->id}, nome completo={$a->fullname}).';
 $string['viewownsubmissionform'] = 'Ver a páxina das propias entregas de tarefas.';
 $string['viewownsubmissionstatus'] = 'Ver a páxina de estado das propias entregas de tarefas.';
 $string['viewrevealidentitiesconfirm'] = 'Ver a páxina de confirmación para revelar a identidade dos alumnos.';

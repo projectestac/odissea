@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'evoting', language 'el', version '3.11'.
+ * Strings for component 'evoting', language 'el', version '4.1'.
  *
  * @package     evoting
  * @category    string
@@ -78,7 +78,7 @@ $string['text'] = 'Κείμενο';
 $string['timechoice'] = 'Πρέπει να επιλέξετε μια ώρα ψηφοφορίας';
 $string['timevote'] = 'Ώρα ψηφοφορίας';
 $string['totalvote'] = 'Σύνολο ψήφων';
-$string['vote'] = 'Ψηφοφορία';
+$string['vote'] = 'Ψήφος';
 $string['votedeleted'] = 'Η ψήφος σας ακυρώθηκε';
 $string['voteok'] = 'Η ψήφος σας καταχωρήθηκε';
 $string['votesingledeleted'] = 'Η ψήφος σας ακυρώθηκε';

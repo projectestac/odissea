@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'fr', version '3.11'.
+ * Strings for component 'checklist', language 'fr', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -131,6 +131,7 @@ $string['lockteachermarks_help'] = 'Lorsque ce paramètre est activé, une fois 
 $string['lockteachermarkswarning'] = 'Remarque : une fois que vous avez enregistré ces coches, il vous sera impossible de changer toutes les coches « Oui »';
 $string['modulename'] = 'Liste des tâches';
 $string['modulename_help'] = 'L\'activité ­« Liste des tâches » permet aux enseignants de créer des listes de tâches pour le suivi des étudiants.';
+$string['modulename_link'] = 'mod/checklist/view';
 $string['modulenameplural'] = 'Listes des tâches';
 $string['moveitemdown'] = 'Descendre l\'élément';
 $string['moveitemup'] = 'Monter l\'élément';

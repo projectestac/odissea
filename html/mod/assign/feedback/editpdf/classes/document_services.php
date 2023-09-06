@@ -166,7 +166,7 @@ EOD;
 
         // Capability checks.
         if (!$assignment->can_view_submission($userid)) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermission');
         }
 
         $files = array();
@@ -278,7 +278,7 @@ EOD;
 
         // Capability checks.
         if (!$assignment->can_view_submission($userid)) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermissiontoaccesspage', 'error');
         }
 
         $grade = $assignment->get_user_grade($userid, true, $attemptnumber);
@@ -363,7 +363,7 @@ EOD;
         $assignment = self::get_assignment_from_param($assignment);
 
         if (!$assignment->can_view_submission($userid)) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermission');
         }
 
         // When in readonly we can return the number of images in the DB because they should already exist,
@@ -400,7 +400,7 @@ EOD;
         $assignment = self::get_assignment_from_param($assignment);
 
         if (!$assignment->can_view_submission($userid)) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermission');
         }
 
         // Need to generate the page images - first get a combined pdf.
@@ -408,7 +408,7 @@ EOD;
 
         $status = $document->get_status();
         if ($status === combined_document::STATUS_FAILED) {
-            print_error('Could not generate combined pdf.');
+            throw new \moodle_exception('Could not generate combined pdf.');
         } else if ($status === combined_document::STATUS_PENDING_INPUT) {
             // The conversion is still in progress.
             return [];
@@ -438,9 +438,13 @@ EOD;
         $fs->delete_area_files($record->contextid, $record->component, $record->filearea, $record->itemid);
 
         $files = array();
+        $images = $pdf->get_images();
         for ($i = 0; $i < $pagecount; $i++) {
             try {
-                $image = $pdf->get_image($i);
+                if (empty($images[$i])) {
+                    throw new \moodle_exception('error image');
+                }
+                $image = $images[$i];
                 if (!$resetrotation) {
                     $pagerotation = page_editor::get_page_rotation($grade->id, $i);
                     $degree = !empty($pagerotation) ? $pagerotation->degree : 0;
@@ -499,7 +503,7 @@ EOD;
         $assignment = self::get_assignment_from_param($assignment);
 
         if (!$assignment->can_view_submission($userid)) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermission');
         }
 
         if ($assignment->get_instance()->teamsubmission) {
@@ -576,14 +580,26 @@ EOD;
             }
         }
 
+        // This should never happen, there should be a version of the pages available
+        // whenever we are requesting the readonly version.
+        if (empty($pages) && $readonly) {
+            throw new \moodle_exception('Could not find readonly pages for grade ' . $grade->id);
+        }
+
+        // There are two situations where the number of page images generated does not
+        // match the number of pages in the PDF:
+        //
+        // 1. The document conversion adhoc task was interrupted somehow (node died, solar flare, etc)
+        // 2. The submission has been updated by the student
+        //
+        // In the case of 1. we need to regenerate the pages, see MDL-66626.
+        // In the case of 2. we should do nothing, see MDL-45580.
+        //
+        // To differentiate between 1. and 2. we can check if the submission has been modified since the
+        // pages were generated. If it has, then we're in situation 2.
         $totalpagesforattempt = self::page_number_for_attempt($assignment, $userid, $attemptnumber, false);
-        // Here we are comparing the total number of images against the total number of pages from the combined PDF.
-        if (empty($pages) || count($pages) != $totalpagesforattempt) {
-            if ($readonly) {
-                // This should never happen, there should be a version of the pages available
-                // whenever we are requesting the readonly version.
-                throw new \moodle_exception('Could not find readonly pages for grade ' . $grade->id);
-            }
+        $submissionmodified = isset($pagemodified) && $submission->timemodified > $pagemodified;
+        if (empty($pages) || (count($pages) != $totalpagesforattempt && !$submissionmodified)) {
             $pages = self::generate_page_images_for_attempt($assignment, $userid, $attemptnumber, $resetrotation);
         }
 
@@ -645,10 +661,10 @@ EOD;
         $assignment = self::get_assignment_from_param($assignment);
 
         if (!$assignment->can_view_submission($userid)) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermission');
         }
         if (!$assignment->can_grade()) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermission');
         }
 
         // Need to generate the page images - first get a combined pdf.
@@ -656,7 +672,7 @@ EOD;
 
         $status = $document->get_status();
         if ($status === combined_document::STATUS_FAILED) {
-            print_error('Could not generate combined pdf.');
+            throw new \moodle_exception('Could not generate combined pdf.');
         } else if ($status === combined_document::STATUS_PENDING_INPUT) {
             // The conversion is still in progress.
             return false;
@@ -814,7 +830,7 @@ EOD;
         $assignment = self::get_assignment_from_param($assignment);
 
         if (!$assignment->can_view_submission($userid)) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermission');
         }
 
         $grade = $assignment->get_user_grade($userid, true, $attemptnumber);
@@ -850,10 +866,10 @@ EOD;
         $assignment = self::get_assignment_from_param($assignment);
 
         if (!$assignment->can_view_submission($userid)) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermission');
         }
         if (!$assignment->can_grade()) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermission');
         }
 
         $grade = $assignment->get_user_grade($userid, true, $attemptnumber);
@@ -947,7 +963,7 @@ EOD;
         $grade = $assignment->get_user_grade($userid, true, $attemptnumber);
         // Check permission.
         if (!$assignment->can_view_submission($userid)) {
-            print_error('nopermission');
+            throw new \moodle_exception('nopermission');
         }
 
         $filearea = self::PAGE_IMAGE_FILEAREA;

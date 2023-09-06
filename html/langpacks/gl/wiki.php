@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'gl', version '3.11'.
+ * Strings for component 'wiki', language 'gl', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -77,7 +77,7 @@ $string['editblocks'] = 'Activar a edición de bloques';
 $string['editcomment'] = 'Editar comentario';
 $string['editfiles'] = 'Editar ficheiros do wiki';
 $string['editing'] = 'Editando unha páxina wiki';
-$string['editingcomment'] = 'Editando comentario';
+$string['editingcomment'] = 'Editar comentario';
 $string['editingpage'] = 'Editando esta páxina «{$a}»';
 $string['editsection'] = 'editar';
 $string['eventdiffviewed'] = 'Diferenza do wiki visto';
@@ -149,7 +149,7 @@ $string['lockingajaxtimeout'] = 'Editar o tempo de actualización do bloqueo da 
 $string['lockingtimeout'] = 'Límite de tempo para o bloqueo';
 $string['map'] = 'Mapa';
 $string['mapmenu'] = 'Menú Mapa';
-$string['migrationfinished'] = 'A migración rematou satisfactoriamente';
+$string['migrationfinished'] = 'A migración rematou correctamente';
 $string['migrationfinishednowikis'] = 'Rematou a migración, non foi migrada ningunha wiki';
 $string['missingpages'] = 'Páxinas sen contido';
 $string['modified'] = 'Modificado';
@@ -250,8 +250,8 @@ $string['privacy:metadata:wiki_versions:version'] = 'Número de versión';
 $string['rated'] = 'Vostede puntuou esta páxina como {$a}';
 $string['rating'] = 'Puntuación';
 $string['ratingmode'] = 'Modo de puntuación';
-$string['removeallwikitags'] = 'Retirar todas as etiquetas wiki';
-$string['removepages'] = 'Retirar páxinas';
+$string['removeallwikitags'] = 'Eliminar todas as etiquetas wiki';
+$string['removepages'] = 'Eliminar páxinas';
 $string['reparsetimeout'] = 'Analizando de novo o límite de tempo predeterminado';
 $string['repeatedsection'] = 'Erro no wiki: Non pode repetir o nome da sección «{$a}»';
 $string['restore'] = 'Restaurar';
@@ -296,7 +296,7 @@ $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Engadir un novo wiki';
 $string['wiki:createpage'] = 'Crear novas páxinas wiki';
 $string['wiki:editcomment'] = 'Engadir comentarios nas páxinas';
-$string['wiki:editpage'] = 'Gardar as páxinas wiki';
+$string['wiki:editpage'] = 'Editar páxinas wiki';
 $string['wiki:managecomment'] = 'Administrar os comentarios da wiki';
 $string['wiki:managefiles'] = 'Administrar os ficheiros da wiki';
 $string['wiki:managewiki'] = 'Administrar os axustes da wiki';
@@ -319,7 +319,7 @@ $string['wikimode'] = 'Modo wiki';
 $string['wikimode_help'] = 'O modo wiki determina se calquera pode editar a wiki (wiki colaborativa) ou se cada quen ten a súa propia wiki, que só esa persoa pode editar (wiki individual).';
 $string['wikimodecollaborative'] = 'Wiki colaborativa';
 $string['wikimodeindividual'] = 'Wiki individual';
-$string['wikiname'] = 'Nome do wiki';
+$string['wikiname'] = 'Nome da páxina';
 $string['wikinowikitext'] = 'Non hai texto no wiki';
 $string['wikiorderedlist'] = 'Lista ordenada';
 $string['wikipages'] = 'Páxinas do wiki';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'de', version '3.11'.
+ * Strings for component 'label', language 'de', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -25,35 +25,37 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdndmedia'] = 'Möglichkeit anbieten, einen Titel einzutragen, wenn Mediendateien per Drag-and-drop in den Kurs geschoben werden.';
-$string['configdndresizeheight'] = 'Wenn ein Titel für eine Bilddatei angelegt wurde, die durch Drag-and-drop in den Kurs übernommen wird, soll die Bilddatei in der Höhe angepasst werden wenn sie größer ist als diese Pixelzahl (0 für keinen Größenänderung)';
-$string['configdndresizewidth'] = 'Wenn ein Titel für eine Bilddatei angelegt wurde, die durch Drag-and-drop in den Kurs übernommen wird, soll die Bilddatei in der Breite angepasst werden wenn sie größer ist als diese Pixelzahl (0 für keinen Größenänderung)';
+$string['configdndmedia'] = 'Die Option erlaubt das Erstellen eines Text- und Medienfelds, wenn Mediendateien per Drag-and-drop in einen Kurs gezogen werden.';
+$string['configdndresizeheight'] = 'Beim Einfügen einer Mediendatei per Drag-and-drop in den Kurs wird  ein Text- und Medienfeld erzeugt. Die Größe wird automatisch reduziert, wenn die Höhe größer als die angegebene Pixelzahl ist.  (0 für keine Größenänderung)';
+$string['configdndresizewidth'] = 'Beim Einfügen einer Mediendatei per Drag-and-drop in den Kurs wird  ein Text- und Medienfeld erzeugt. Die Größe wird automatisch reduziert, wenn die Breite größer als die angegebene Pixelzahl ist.  (0 für keine Größenänderung)';
 $string['dndmedia'] = 'Drag-and-drop für Medien';
 $string['dndresizeheight'] = 'Drag-and-drop Höhe anpassen';
 $string['dndresizewidth'] = 'Drag-and-drop Beite anpassen';
 $string['dnduploadlabel'] = 'In Text- und Medienfeld einbinden';
-$string['dnduploadlabeltext'] = 'Textfeld zur Kursseite hinzufügen';
-$string['indicator:cognitivedepth'] = 'Textfeld kognitiv';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einem Textfeld erreicht hat.';
-$string['indicator:cognitivedepthdef'] = 'Textfeld kognitiv';
-$string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Textfelder während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht).';
-$string['indicator:socialbreadth'] = 'Textfeld sozial';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einem Textfeld erreicht hat.';
-$string['indicator:socialbreadthdef'] = 'Textfeld sozial';
-$string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Textfeld-Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
-$string['label:addinstance'] = 'Neues Textfeld hinzufügen';
-$string['label:view'] = 'Textfeld anzeigen';
-$string['labeltext'] = 'Textfeld';
-$string['modulename'] = 'Textfeld';
-$string['modulename_help'] = 'Ein Textfeld wird auf der Kursseite angezeigt, z.B. als Überschrift, als Hinweis, als kurzer Lerninhalt oder zur Orientierung. Ein Textfeld kann auch multimediale Elemente beinhalten, z.B. Video oder Audio. Textfelder sind sehr vielseitig und können, wenn sie sinnvoll eingesetzt werden, das Erscheinungsbild eines Kurses verbessern.
+$string['dnduploadlabeltext'] = 'Text- und Medienfeld zur Kursseite hinzufügen';
+$string['indicator:cognitivedepth'] = 'Text- und Medienfeld kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einem Text- und Medienfeld erreicht hat.';
+$string['indicator:cognitivedepthdef'] = 'Text- und Medienfeld kognitiv';
+$string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das das Text- und Medienfeld während dieses Analyseintervalls aufzeigen (Ebenen = keine Ansicht, Ansicht).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'Text- und Medienfeld sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einem Text- und Medienfeld erreicht hat.';
+$string['indicator:socialbreadthdef'] = 'Text- und Medienfeld sozial';
+$string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das das Text- und Medienfeld während dieses Analyseintervalls aufzeigen (Ebenen = keine Teilnahme, Teilnahme allein).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['label:addinstance'] = 'Text- und Medienfeld hinzufügen';
+$string['label:view'] = 'Text- und Medienfeld anzeigen';
+$string['labeltext'] = 'Text';
+$string['modulename'] = 'Text- und Medienfeld';
+$string['modulename_help'] = 'Das \'Text- und Medienfeld\' ermöglicht es, Texte und Multimedia auf der Kursseite anzuzeigen.
 
-Ein Textfeld kann verwendet werden
-
-* Um eine lange Liste von Aktivitäten mit einem Zwischentitel oder einem Bild zu unterteilen
-* Um eine eingebettete Sounddatei oder ein Video direkt auf der Kursseite anzuzeigen
-* Um eine kurze Beschreibung zu einem Kursabschnitt hinzuzufügen';
-$string['modulenameplural'] = 'Textfelder';
-$string['pluginadministration'] = 'Textfeld-Administration';
-$string['pluginname'] = 'Textfeld';
-$string['privacy:metadata'] = 'Das Plugin \'Textfeld\' speichert keine personenbezogenen Daten.';
-$string['search:activity'] = 'Textfeld';
+Sie können das \'Text- und Medienfeld\' auch verwenden,
+* um eine Liste von Aktivitäten mit Zwischentiteln oder Bildern zu unterteilen
+* um ein Audio oder ein Video direkt eingebettet in der Kursseite anzuzeigen
+* um eine kurze Beschreibung in einen Kursabschnitt einzufügen';
+$string['modulename_link'] = 'mod/label/view';
+$string['modulenameplural'] = 'Text- und Medienfeld';
+$string['pluginadministration'] = 'Administration Text- und Medienfeld';
+$string['pluginname'] = 'Text- und Medienfeld';
+$string['privacy:metadata'] = 'Das Plugin \'Text- und Medienfeld\' speichert keine personenbezogenen Daten.';
+$string['search:activity'] = 'Text- und Medienfeld';

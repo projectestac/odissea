@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupselect', language 'ru', version '3.11'.
+ * Strings for component 'groupselect', language 'ru', version '4.1'.
  *
  * @package     groupselect
  * @category    string
@@ -93,6 +93,7 @@ $string['modulename_help'] = 'Позволяет участникам созда
 * Наставников можно назначать на группы
 * Преподаватели могут экспортировать группы в csv-файл
 * Полная совместимость со встроенными группами Moodle: при необходимости группы могут быть созданы другими средствами, поддерживаются групповые задания и пр.';
+$string['modulename_link'] = 'mod/groupselect/view';
 $string['modulenameplural'] = 'Самостоятельные выборы групп';
 $string['nogroups'] = 'Нет доступных для выбора групп.';
 $string['notavailableanymore'] = 'Выбор групп более недоступен (начиная с {$a}).';

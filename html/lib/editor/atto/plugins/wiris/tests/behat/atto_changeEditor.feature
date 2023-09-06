@@ -30,7 +30,7 @@ I need to change between editors
     And I press cancel button in MathType Editor
     And I press "MathType" in "Page content" field in Atto editor
     And I set MathType formula to '<math><mfrac><mn>1</mn><msqrt><mn>2</mn><mi>&#x3c0;</mi></msqrt></mfrac></math>'
-    And I wait "1" seconds
+    And I wait "5" seconds
     And I press accept button in MathType Editor
     And I press "Save and display"
     And I wait "1" seconds

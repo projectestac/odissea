@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'ko', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'ko', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['endpointname'] = '이름';
+$string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
 $string['pluginname'] = '공개 표준 기반 인증 프로토콜2 서비스';

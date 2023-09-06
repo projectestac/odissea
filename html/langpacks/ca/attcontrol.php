@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attcontrol', language 'ca', version '3.11'.
+ * Strings for component 'attcontrol', language 'ca', version '4.1'.
  *
  * @package     attcontrol
  * @category    string
@@ -34,3 +34,4 @@ $string['export'] = 'Exporta';
 $string['newduration'] = 'Durada nova';
 $string['session'] = 'Sessió';
 $string['showduration'] = 'Mostra la durada';
+$string['student'] = 'Estudiant';

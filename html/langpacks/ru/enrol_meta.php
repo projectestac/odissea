@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'ru', version '3.11'.
+ * Strings for component 'enrol_meta', language 'ru', version '4.1'.
  *
  * @package     enrol_meta
  * @category    string
@@ -43,3 +43,7 @@ $string['privacy:metadata:core_group'] = 'Плагин способа запис
 $string['syncall'] = 'Синхронизировать всех записанных пользователей';
 $string['syncall_desc'] = 'Если параметр включен, то все записанные пользователи синхронизируются, даже если они не имеют роли в родительском курсе.
 Если отключен, то только пользователи, имеющие хотя бы одну синхронизируемую роль, будут записаны на дочерний курс.';
+$string['wscannotcreategroup'] = 'Нет разрешения на создание группы в связанном курсе id = {$a}.';
+$string['wsinvalidcourse'] = 'Курс с ID = {$a} не существует или нет разрешения на способ записи «Связанный метакурс»';
+$string['wsinvalidmetacourse'] = 'Метакурс с ID = {$a} не существует или нет разрешения на добавление экземпляра зачисления.';
+$string['wsnoinstancesspecified'] = 'Экземпляры не указаны';

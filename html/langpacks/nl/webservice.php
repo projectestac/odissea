@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'nl', version '3.11'.
+ * Strings for component 'webservice', language 'nl', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -33,6 +33,7 @@ $string['addcapabilitytousersdescription'] = 'Om webservices te kunnen gebruiken
 \'/webservice:createtoken\'  en een mogelijkheid die overeenkomt met de webservice protocols
 (\'webservice/rest:use\', \'webservice/soap:use\', ...).
 Om dit op te zetten maak je een  nieuwe "Webservice" systeemrol met de juiste mogelijkheden. Wijs deze systeemrol dan toe aan de webservicegebruiker.';
+$string['addexternalservice'] = 'Externe dienst toevoegen';
 $string['addfunction'] = 'Functie toevoegen';
 $string['addfunctionhelp'] = 'Kies de functie om aan de service toe te voegen.';
 $string['addfunctions'] = 'Functies toevoegen';
@@ -66,14 +67,16 @@ $string['default'] = 'Standaard naar "{$a}"';
 $string['deleteaservice'] = 'Verwijder service';
 $string['deleteservice'] = 'Verwijder de service: {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'Een service verwijderen zal ook alle tokens, gerelateerd aan deze service verwijderen. Wil je echt de externe service "{$a}" verwijderen?';
+$string['deletetoken'] = 'Token verwijderen';
 $string['deletetokenconfirm'] = 'Wil je echt dit webservice token voor <strong>{$a->user}</strong> verwijderen op de service <strong>{$a->service}</strong>?';
+$string['deprecated'] = 'Verouderd';
 $string['disabledwarning'] = 'Alle webserviceprotocols zijn uitgeschakeld. De "Webservices inschakelen"-instelling kan gevonden worden in Geavanceerde mogelijkheden.';
 $string['doc'] = 'Documentatie';
 $string['docaccessrefused'] = 'Je hebt het recht niet om de documentatie voor dit token te bekijken';
-$string['documentation'] = 'webservice documentatie';
 $string['downloadfiles'] = 'Kan bestanden downloaden';
 $string['downloadfiles_help'] = 'Indien ingeschakeld kan elke gebruiker bestanden downloaden met zijn beveiligingssleutel. Natuurlijk zijn ze beperkt tot de bestanden die ze mogen downloaden van de site.';
 $string['editaservice'] = 'Bewerk service';
+$string['editexternalservice'] = 'Externe service bewerken';
 $string['editservice'] = 'Bewerk de service: {$a->name} (id: {$a->id}) ';
 $string['enabled'] = 'Ingeschakeld';
 $string['enabledocumentation'] = 'Ontwikkelaarsdocumentatie inschakelen';
@@ -222,7 +225,7 @@ $string['unknownoptionkey'] = 'Onbekende optiesleutel ({$a})';
 $string['unnamedstringparam'] = 'Een stringparameter heeft geen naam.';
 $string['updateusersettings'] = 'Update';
 $string['uploadfiles'] = 'Kan bestanden uploaden';
-$string['uploadfiles_help'] = 'Indien ingeschakeld kan een gebruiker bestanden uplaoden met zijn beveiligingssleutels naar de eigen privé bestanden zone of naar de klad zone. Gebruikersquota gelden.';
+$string['uploadfiles_help'] = 'Indien ingeschakeld kan een gebruiker bestanden uploaden met zijn beveiligingssleutels naar de eigen privé bestanden zone of naar de conceptzone. Gebruikersquota gelden.';
 $string['userasclients'] = 'Gebruikers als clients met token';
 $string['userasclientsdescription'] = 'Volgende stappen helpen je met het configureren van Moodle webservices voor gebruikers als clients. Deze stappen helpen je ook om de aangeraden token authenticatiemethode  (met veiligheidssleutesl)  te configureren. Als je webservices zo gebruikt, dan zal de gebruiker zijn token genereren via zijn profielpagina.';
 $string['usermissingcaps'] = 'Ontbrekende mogelijkheden: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'sv', version '3.11'.
+ * Strings for component 'qtype_calculatedmulti', language 'sv', version '4.1'.
  *
  * @package     qtype_calculatedmulti
  * @category    string
@@ -29,6 +29,7 @@ $string['answeroptions'] = 'Svarsalternativ';
 $string['answeroptions_help'] = 'Den föreslagna formeln för svarsalternativ är ...<strong>{={x}+..}</strong>...';
 $string['pluginname'] = 'Beräknad flervalsfråga';
 $string['pluginname_help'] = 'Beräknade flervalsfrågor fungerar som flervalsfrågor där valet av svarsalternativ baseras på resultatet av en numerisk formel där platshållare inom klammerparanteraser fungerar som substituerande av individuella värden när kunskapstestet genomförs. Till exempel skulle frågan <em>"Vad är arean av en rektangel med längden {L} och bredd {W}?"</em> kunna ha ett svarsalternativ <code>{= {L} * {B}}</code> där <code>*</code> betecknar multiplikation.';
+$string['pluginname_link'] = 'question/type/calculatedmulti';
 $string['pluginnameadding'] = 'Lägg till en beräknad flervalsfråga';
 $string['pluginnameediting'] = 'Redigera en beräknad flervalsfråga';
 $string['pluginnamesummary'] = 'Beräknade flervalsfrågor är som flervalsfrågor  med svarsalternativ som genereras från numeriska värden som väljs slumpmässigt från en datamängd när testet tas.';

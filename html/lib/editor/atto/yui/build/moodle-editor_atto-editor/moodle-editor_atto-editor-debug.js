@@ -192,7 +192,10 @@ Y.extend(Editor, Y.Base, {
 
         this._eventHandles = [];
 
-        this._wrapper = Y.Node.create('<div class="' + CSS.WRAPPER + '" />');
+        var description = Y.Node.create('<div class="sr-only">' + M.util.get_string('richtexteditor', 'editor_atto') + '</div>');
+        this._wrapper = Y.Node.create('<div class="' + CSS.WRAPPER + '" role="application" />');
+        this._wrapper.appendChild(description);
+        this._wrapper.setAttribute('aria-describedby', description.generateID());
         template = Y.Handlebars.compile('<div id="{{elementid}}editable" ' +
                 'contenteditable="true" ' +
                 'role="textbox" ' +
@@ -1008,9 +1011,9 @@ EditorAutosave.prototype = {
                 NOTIFY_INFO, RECOVER_MESSAGE_TIMEOUT);
 
         // Fire an event that the editor content has changed.
-        require(['core/event'], function(event) {
-            event.notifyEditorContentRestored();
-        });
+        require(['core_editor/events'], function(editorEvents) {
+            editorEvents.notifyEditorContentRestored(this.editor.getDOMNode());
+        }.bind(this));
 
         return this;
     },
@@ -2309,7 +2312,13 @@ EditorToolbarNav.prototype = {
         var buttons = this.toolbar.all('button'),
             direction = 1,
             button,
-            current = e.target.ancestor('button', true);
+            current = e.target.ancestor('button', true),
+            innerButtons = e.target.all('button');
+
+        // If we are not on a button and the element we are on contains some buttons, then move between the inner buttons.
+        if (!current && innerButtons) {
+            buttons = innerButtons;
+        }
 
         if (e.keyCode === 37) {
             // Moving left so reverse the direction.
@@ -2337,7 +2346,6 @@ EditorToolbarNav.prototype = {
      */
     _findFirstFocusable: function(buttons, startAt, direction) {
         var checkCount = 0,
-            group,
             candidate,
             button,
             index;
@@ -2367,12 +2375,8 @@ EditorToolbarNav.prototype = {
             // Loop while:
             // * we haven't checked every button;
             // * the button is hidden or disabled;
-            // * the group is hidden.
-            if (candidate.hasAttribute('hidden') || candidate.hasAttribute('disabled')) {
-                continue;
-            }
-            group = candidate.ancestor('.atto_group');
-            if (group.hasAttribute('hidden')) {
+            // * the button is inside a hidden wrapper element.
+            if (candidate.hasAttribute('hidden') || candidate.hasAttribute('disabled') || candidate.ancestor('[hidden]')) {
                 continue;
             }
 

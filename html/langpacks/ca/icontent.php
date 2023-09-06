@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'icontent', language 'ca', version '3.11'.
+ * Strings for component 'icontent', language 'ca', version '4.1'.
  *
  * @package     icontent
  * @category    string
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advance'] = 'Següent';
 $string['comments'] = 'Comentaris';
+$string['edit'] = 'Edita';
 $string['highlighted'] = 'Realçat';
+$string['next'] = 'Següent';
+$string['questions'] = 'Preguntes';
 $string['reply'] = 'Respon';

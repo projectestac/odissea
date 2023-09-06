@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'collaborate', language 'ca', version '3.11'.
+ * Strings for component 'collaborate', language 'ca', version '4.1'.
  *
  * @package     collaborate
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attendance'] = 'Assistència';
 $string['canannotatewhiteboard'] = 'Escriure notes a la pissarra';
 $string['candownloadrecordings'] = 'Baixar els enregistraments';
 $string['canpostmessages'] = 'Publicar missatges';

@@ -23,7 +23,7 @@
  * @since 3.8
  */
 
-import {types} from 'core_form/events';
+import {eventTypes} from 'core_form/events';
 
 /** @property {number} ID for setInterval used when polling for download cookie */
 let cookieListener = 0;
@@ -107,6 +107,8 @@ const checkUploadCount = () => {
  * Initialises submit buttons.
  *
  * @param {String} elementId Form button element
+ * @listens event:uploadStarted
+ * @listens event:uploadCompleted
  */
 export const init = (elementId) => {
     const button = document.getElementById(elementId);
@@ -122,15 +124,13 @@ export const init = (elementId) => {
 
     if (!uploadListenersRegistered) {
         // Add event listener for file upload start.
-        document.addEventListener(types.uploadStarted, e => {
-            window.console.log(e.target); // This will be the element/section where the file is uploaded to.
+        document.addEventListener(eventTypes.uploadStarted, () => {
             currentUploadCount++;
             checkUploadCount();
         });
 
         // Add event listener for file upload complete.
-        document.addEventListener(types.uploadCompleted, e => {
-            window.console.log(e.target); // This will be the element/section where the file is uploaded to.
+        document.addEventListener(eventTypes.uploadCompleted, () => {
             currentUploadCount--;
             checkUploadCount();
         });

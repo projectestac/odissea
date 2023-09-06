@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'sv', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'sv', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -30,3 +30,4 @@ $string['pluginname'] = 'Klistra in från kalkylblad';
 $string['privacy:metadata'] = 'Pluginmodulen Importera betyg från kopierat kalkylblad lagrar inga personuppgifter.';
 $string['userdata'] = 'Hjälp med att kopiera in data i detta formulär.';
 $string['userdata_help'] = 'Betyg kan kopieras och klistras in från ett kalkylblad till betygsboken. Kalkylbladet ska ha en kolumn som innehåller användaridentitetsdata – antingen användarnamn eller ID-nummer eller e-postadress. Varje kolumn för import måste ha ett kolumnhuvud.';
+$string['userdata_link'] = 'grade/import/direct/index';

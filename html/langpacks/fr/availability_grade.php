@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'fr', version '3.11'.
+ * Strings for component 'availability_grade', language 'fr', version '4.1'.
  *
  * @package     availability_grade
  * @category    string
@@ -39,9 +39,9 @@ $string['option_min'] = 'doit être ≥';
 $string['pluginname'] = 'Restriction par note';
 $string['privacy:metadata'] = 'Le plugin Restriction par note n\'enregistre aucune donnée personnelle.';
 $string['requires_any'] = 'Vous ayez une note dans <strong>{$a}</strong>';
-$string['requires_max'] = 'Vous obteniez une note adéquate dans <strong>{$a}</strong>';
-$string['requires_min'] = 'Vous atteigniez une note requise dans <strong>{$a}</strong>';
+$string['requires_max'] = 'Vous obteniez une note plus base qu\'un certain score dans <strong>{$a}</strong>';
+$string['requires_min'] = 'Vous obteniez une note plus élevée qu\'un certain score dans <strong>{$a}</strong>';
 $string['requires_notany'] = 'Vous n\'ayez pas de note dans <strong>{$a}</strong>';
 $string['requires_notgeneral'] = 'Vous n\'obteniez pas des notes particulières dans <strong>{$a}</strong>';
-$string['requires_range'] = 'Vous obteniez une note particulière dans <strong>{$a}</strong>';
+$string['requires_range'] = 'Vous obteniez une note dans un certain intervalle dans <strong>{$a}</strong>';
 $string['title'] = 'Note';

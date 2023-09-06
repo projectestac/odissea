@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_simple_clock', language 'pt', version '3.11'.
+ * Strings for component 'block_simple_clock', language 'pt', version '4.1'.
  *
  * @package     block_simple_clock
  * @category    string
@@ -66,5 +66,5 @@ $string['loading'] = 'A carregar...';
 $string['pluginname'] = 'Relógio Simples';
 $string['server'] = 'Servidor';
 $string['simple_clock:addinstance'] = 'Adicionar um novo bloco de Relógio Simples';
-$string['simple_clock:myaddinstance'] = 'Adicionar um novo bloco de Relógio Simples à Minha página principal';
+$string['simple_clock:myaddinstance'] = 'Adicionar um novo bloco Relógio Simples ao Painel do utilizador';
 $string['you'] = 'Utilizador';

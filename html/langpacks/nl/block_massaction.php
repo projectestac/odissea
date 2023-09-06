@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_massaction', language 'nl', version '3.11'.
+ * Strings for component 'block_massaction', language 'nl', version '4.1'.
  *
  * @package     block_massaction
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['action_contentchangednotification'] = 'Verstuur melding inhoudswijziging';
 $string['action_delete'] = 'Verwijder';
 $string['action_duplicate'] = 'Dupliceer';
 $string['action_duplicatetosection'] = 'Dupliceer sectie';

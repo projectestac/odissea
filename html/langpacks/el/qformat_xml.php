@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xml', language 'el', version '3.11'.
+ * Strings for component 'qformat_xml', language 'el', version '4.1'.
  *
  * @package     qformat_xml
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['invalidxml'] = 'Μη έγκυρο αρχείο xml - αναμενόταν συμβολοσειρά (χρήση CDATA;)';
 $string['pluginname'] = 'Μορφότυπος ερωτήσεων Moodle XML';
 $string['pluginname_help'] = 'Αυτός είναι ένας μορφότυπος του Moodle για την εισαγωγή και την εξαγωγή ερωτήσεων.';
-$string['pluginname_link'] = 'qformat/XML';
+$string['pluginname_link'] = '';
 $string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις μορφότυπου XML» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['truefalseimporterror'] = '<b>Προειδοποίηση</b>: Δεν ήταν δυνατή η σωστή εισαγωγή της ερώτησης σωστού/λάθους «{$a->questiontext}». Δεν ήταν σαφές εάν η σωστή απάντηση είναι σωστό ή λάθος. Η ερώτηση έχει εισαχθεί υποθέτοντας ότι η απάντηση είναι «{$a->answer}». Εάν αυτό δεν είναι σωστό, θα πρέπει να επεξεργαστείτε την ερώτηση.';
 $string['unsupportedexport'] = 'Ο τύπος ερώτησης {$a} δεν υποστηρίζεται από την εξαγωγή XML';

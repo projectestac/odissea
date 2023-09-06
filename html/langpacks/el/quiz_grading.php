@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'el', version '3.11'.
+ * Strings for component 'quiz_grading', language 'el', version '4.1'.
  *
  * @package     quiz_grading
  * @category    string

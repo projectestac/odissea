@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onenote', language 'es', version '3.11'.
+ * Strings for component 'assignsubmission_onenote', language 'es', version '4.1'.
  *
  * @package     assignsubmission_onenote
  * @category    string
@@ -43,6 +43,11 @@ $string['numfilesforlog'] = 'El número de página(s) de OneNote: {$a}';
 $string['onenote'] = 'Entregas con OneNote';
 $string['onenoteactions'] = 'Acciones de OneNote:';
 $string['pluginname'] = 'Entregas con OneNote';
+$string['privacy:metadata:assignmentid'] = 'Identificador de Tarea';
+$string['privacy:metadata:numfiles'] = 'Número de archivos';
+$string['privacy:metadata:submissionpurpose'] = 'La ID del envío que enlaza a envíos para el usuario';
+$string['privacy:metadata:tablepurpose'] = 'almacena el número de archivos usados para el envío';
+$string['privacy:path'] = 'Número de archivos';
 $string['signinhelp'] = 'Clic en el botón de arriba para acceder a OneNote y poder trabajar en la página de entrega de la tarea.';
 $string['signinhelp1'] = 'Haga clic en el botón de arriba para iniciar sesión en OneNote si desea trabajar en la tarea.';
 $string['signinhelp2'] = 'Haga clic en el botón de arriba para iniciar sesión en OneNote si desea ver la entrega realizada.';
@@ -52,5 +57,6 @@ $string['submissionfilearea'] = 'Página de entrega de OneNote subida';
 $string['submissionlimitexceed'] = 'El tamaño de su entrega supera el límite disponible.';
 $string['submissionnotstarted'] = 'Por favor, trabaje la tarea en OneNote y después guarde los cambios.';
 $string['viewsubmission'] = 'Ver entrega';
+$string['viewsubmissionwarning'] = 'Advertencia: Ver envío sobrescribirá su página de OneNote para este envío, con la copia más reciente del alumno.';
 $string['workonthis'] = 'Trabajar en la tarea';
 $string['workonthishelp'] = 'Haga clic en el botón de arriba para trabajar en la tarea en OneNote. Recuerde que una vez haya terminado de editar su entrega, debe regresar a esta misma página y hacer clic en el botón "Guardar cambios".';

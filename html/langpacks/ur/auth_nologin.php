@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_nologin', language 'ur', version '3.11'.
+ * Strings for component 'auth_nologin', language 'ur', version '4.1'.
  *
  * @package     auth_nologin
  * @category    string
@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_nologindescription'] = 'معاون پلگ ان جو صارف کو سسٹم میں لاگ ان کرنے سے روکتا ہے اور صارف کو بھیجے گئے کسی بھی میل کو بھی رد کرتا ہے۔ صارف کے اکاؤنٹس کو <em>معطل</em> کرنے کے لیے استعمال کیا جا سکتا ہے۔';
 $string['pluginname'] = 'کوئی لاگ ان نا ہو';
+$string['privacy:metadata'] = 'کوئی لاگ ان توثیق پلگ ان کوئی ذاتی ڈیٹا محفوظ نہیں کرتا ہے۔';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'it', version '3.11'.
+ * Strings for component 'glossary', language 'it', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Aggiungi categoria';
 $string['addcomment'] = 'Aggiungi commento';
 $string['addentry'] = 'Aggiungi voce';
 $string['addingcomment'] = 'Aggiungi un commento';
+$string['addsingleentry'] = 'Aggiungi voce';
 $string['alias'] = 'Alias';
 $string['aliases'] = 'Alias (parole alternative)';
 $string['aliases_help'] = 'Ciascuna voce del glossario può essere associata ad un elenco di alias (parole alternative per lo stesso termine). Gli alias saranno anche collegati automaticamente alla voce associata.
@@ -169,6 +170,7 @@ $string['errconceptalreadyexists'] = 'La voce è già presente. In questo glossa
 $string['errdeltimeexpired'] = 'Eliminazione non consentita. Tempo scaduto!';
 $string['erredittimeexpired'] = 'È scaduto il tempo per la modifica di questa voce.';
 $string['errorparsingxml'] = 'Si sono verificati errori durante il parsing del file. Assicurarsi che la sintassi XML sia corretta.';
+$string['errreservedkeywords'] = 'Alcune  parole chiave contengono caratteri speciali che non possono essere utilizzati.';
 $string['eventcategorycreated'] = 'Creazione categoria';
 $string['eventcategorydeleted'] = 'Eliminazione categoria';
 $string['eventcategoryupdated'] = 'Aggiornamento categoria';
@@ -184,6 +186,7 @@ $string['explainalphabet'] = 'Sfoglia il glossario usando questo indice';
 $string['explainexport'] = 'Clicca sul pulsante sottostante per esportare le voci di glossario in un file.<br/>Puoi scaricarlo e salvarlo e  successivamente potrai importarlo in questo o in un altro corso.<p>Nota che gli allegati (es. immagini) e le informazioni sugli autori non vengono esportati.</p>';
 $string['explainimport'] = 'Devi specificare il file da importare, definendo il criterio per l\'elaborazione.<p>Invia qui la richiesta ed esamina i risultati.</p>';
 $string['explainspecial'] = 'Visualizza tutte le voci che non cominciano con una lettera';
+$string['export'] = 'Esporta';
 $string['exportedentry'] = 'Voce esportata';
 $string['exportentries'] = 'Esporta voci';
 $string['exportentriestoxml'] = 'Esporta voci in un file XML';
@@ -226,10 +229,12 @@ $string['indicator:cognitivedepth'] = 'Glossario cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Glossario.';
 $string['indicator:cognitivedepthdef'] = 'Glossario cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Gossario (Livelli: Nessuna visualizzazione, Visualizzazione, Invio)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Glossario sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Glossario.';
 $string['indicator:socialbreadthdef'] = 'Glossario sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Glossario (Livelli: Nessuna partecipazione, Partecipazione da solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = 'Glossario globale';
 $string['isglobal_help'] = 'le voci di un glossario globale sono collegati automaticamente in tutto il sito. Solo gli amministratori possono impostare glossari globali.';
 $string['letter'] = 'alfabetico';
@@ -255,6 +260,7 @@ Un docente può anche consentire l\'inserimento di commenti alle voci. Le voci p
 * Suggerimenti utili o buone pratiche su un dato argomento
 * Un\'area di condivisione di video, immagini, o file musicali
 * Una serie di argomenti da ricordare';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = 'Glossari';
 $string['newentries'] = 'Nuove voci di glossario';
 $string['newglossary'] = 'Nuovo glossario';
@@ -275,6 +281,7 @@ $string['onebyline'] = '(una per riga)';
 $string['page-mod-glossary-edit'] = 'Pagina di inserimento/modifica Glosasrio';
 $string['page-mod-glossary-view'] = 'Visualizza pagina di modifica glossario';
 $string['page-mod-glossary-x'] = 'Qualsiasi pagina con modulo glossario';
+$string['pendingapproval'] = 'In attesa di approvazione';
 $string['pluginadministration'] = 'Gestione Glossario';
 $string['pluginname'] = 'Glossario';
 $string['popupformat'] = 'Formato visualizzazione';
@@ -301,6 +308,7 @@ $string['resetglossaries'] = 'Elimina voci da';
 $string['resetglossariesall'] = 'Elimina voci da tutti i glossari';
 $string['rssarticles'] = 'Numero di articoli RSS';
 $string['rssarticles_help'] = 'L\'impostazione stabilisce il numero di voci da includere nel feed RSS. In genere un valore tra 5 e 20 è adeguato.';
+$string['rssfeed'] = 'Feed RSS';
 $string['rsssubscriberss'] = 'Visualizza RSS per \'{$a}\' voci';
 $string['rsstype'] = 'Feed RSS per questa attività';
 $string['rsstype_help'] = 'Abilita i feed RSS per l\'attività. È possibile scegliere se far comparire o meno l\'autore nel feed.';

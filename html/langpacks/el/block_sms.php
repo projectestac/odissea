@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_sms', language 'el', version '3.11'.
+ * Strings for component 'block_sms', language 'el', version '4.1'.
  *
  * @package     block_sms
  * @category    string
@@ -48,7 +48,7 @@ $string['selectmsg'] = 'Επιλογή μηνύματος';
 $string['selectrole'] = 'Επιλογή ρόλου';
 $string['sent'] = 'Απεσταλμένα';
 $string['serial_no'] = 'Σειριακός Αρ.';
-$string['sms:addinstance'] = 'Προσθήκη στιγμιότυπου';
+$string['sms:addinstance'] = 'Προσθήκη στιγμιοτύπου';
 $string['sms_api_from'] = 'Από αριθμό';
 $string['sms_api_key'] = 'Κλειδί API';
 $string['sms_api_password'] = 'Κωδικός πρόσβασης';

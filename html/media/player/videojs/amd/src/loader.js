@@ -23,12 +23,12 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-import Config from 'core/config';
-import Event from 'core/event';
-import jQuery from 'jquery';
 import Ajax from 'core/ajax';
+import Config from 'core/config';
+import {eventTypes} from 'core_filters/events';
 import LocalStorage from 'core/localstorage';
 import Notification from 'core/notification';
+import jQuery from 'jquery';
 
 /** @var {bool} Whether this is the first load of videojs module */
 let firstLoad;
@@ -40,29 +40,36 @@ let language;
 let langStringCache;
 
 /**
- * Set-up.
+ * Initialisei teh videojs Loader.
  *
  * Adds the listener for the event to then notify video.js.
+ *
+ * @method
  * @param {string} lang Language to be used in the player
+ * @listens event:filterContentUpdated
  */
 export const setUp = (lang) => {
     language = lang;
     firstLoad = true;
+
     // Notify Video.js about the nodes already present on the page.
-    notifyVideoJS(null, jQuery('body'));
-    // We need to call popover automatically if nodes are added to the page later.
-    Event.getLegacyEvents().done((events) => {
-        jQuery(document).on(events.FILTER_CONTENT_UPDATED, notifyVideoJS);
+    notifyVideoJS({
+        detail: {
+            nodes: document.body,
+        }
     });
+
+    // We need to call popover automatically if nodes are added to the page later.
+    document.addEventListener(eventTypes.filterContentUpdated, notifyVideoJS);
 };
 
 /**
  * Notify video.js of new nodes.
  *
  * @param {Event} e The event.
- * @param {NodeList} nodes List of new nodes.
  */
-const notifyVideoJS = (e, nodes) => {
+const notifyVideoJS = e => {
+    const nodes = jQuery(e.detail.nodes);
     const selector = '.mediaplugin_videojs';
     const langStrings = getLanguageJson();
 
@@ -81,10 +88,6 @@ const notifyVideoJS = (e, nodes) => {
                 // Add YouTube to the list of modules we require.
                 modulePromises.push(import('media_videojs/Youtube-lazy'));
             }
-            if (config.techOrder && config.techOrder.indexOf('flash') !== -1) {
-                // Add Flash to the list of modules we require.
-                modulePromises.push(import('media_videojs/videojs-flash-lazy'));
-            }
             if (config.techOrder && config.techOrder.indexOf('OgvJS') !== -1) {
                 config.ogvjs = {
                     worker: true,
@@ -97,11 +100,6 @@ const notifyVideoJS = (e, nodes) => {
             Promise.all([langStrings, ...modulePromises])
             .then(([langJson, videojs]) => {
                 if (firstLoad) {
-                    videojs.options.flash.swf = `${Config.wwwroot}/media/player/videojs/videojs/video-js.swf`;
-                    videojs.options.playbackRates = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
-                    videojs.options.userActions = {
-                        hotkeys: true,
-                    };
                     videojs.addLanguage(language, langJson);
 
                     firstLoad = false;

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'nl', version '3.11'.
+ * Strings for component 'auth', language 'nl', version '4.1'.
  *
  * @package     auth
  * @category    string
@@ -38,7 +38,7 @@ $string['auth_changingemailaddress'] = 'Je hebt gevraagd om je e-mailadres te wi
 $string['auth_common_settings'] = 'Algemene instellingen';
 $string['auth_data_mapping'] = 'Data mapping';
 $string['auth_fieldlock'] = 'Blokkeer waarde';
-$string['auth_fieldlock_expl'] = '<p><b>Blokkeerwaarde:</b>Indien ingeschakeld zal Moodle verhinderen dat gebruikers en beheerders dit veld rechtstreeks kunnen bewerken. Gebruik deze optie als je deze gegevens in het externe authentificatiesysteem wil bewaren.</p>';
+$string['auth_fieldlock_expl'] = '<p><b>Blokkeerwaarde:</b>Indien ingeschakeld kunnen gebruikers dit veld niet bewerken. Gebruik deze optie als je deze gegevens in het externe authentificatiesysteem wil bewaren.</p>';
 $string['auth_fieldlockfield'] = 'Blokkeer waarde ({$a})';
 $string['auth_fieldlocks'] = 'Blokkeer gebruikersvelden';
 $string['auth_fieldlocks_help'] = '<p>Je kunt gegevensvelden van de gebruikers blokkeren. Dit is nuttig voor sites waar het beheer van de gegevens van de gebruikers manueel of door de \'Upload gebruikers\'-functie gebeurt. Als je door Moodle vereiste velden blokkeert, zorg er dan voor dat je die gegevens voorziet wanneer je gebruikers aanmaakt of de accounts zullen onbruikbaar zijn.</p><p>Overweeg om de blokkeermodus in te stellen op \'Niet geblokkeerd als leeg\' om dit probleem te voorkomen.</p>';
@@ -149,6 +149,7 @@ $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'Een CAPTCHA dient om te verhinderen dat geautomatiseerde systemen misbruik maken. Volg de instructies die gaan controleren of je een mens bent. Dit kan een box zijn waarin je een vinkje moet zetten, tekens in een afbeelding die je moet herkennen of een reeks afbeeldingen die je moet kiezen.
 
 Als je niet zeker bent wat de afbeeldingen zijn, vraag dan een nieuwe CAPTCHA of een audio-CAPTCHA';
+$string['recaptcha_link'] = 'auth/email';
 $string['security_question'] = 'Beveiligingsvraag';
 $string['selfregistration'] = 'Zelfregistratie';
 $string['selfregistration_help'] = 'Als een authenticatieplugin, zoals e-mailgebaseerde zelfregistratie, is geselecteerd, dan kunnen potentiele gebruikers zichzelf registreren en accounts maken. Dit zorgt ervoor dat spammers accounts kunnen maken om forums en blogs te gaan gebruiken voor spam. Om dit risico te beperken zou zelfregistratie moeten uitgeschakeld worden of beperkt worden door de <em>Toegestane e-maildomeinen</em>-instelling.';

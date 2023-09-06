@@ -37,6 +37,8 @@ try {
     // In action cases, we'll throw this exception below. In non-action cases, we produce a lang string error.
 }
 
+$PAGE->set_primary_active_tab('siteadminnode');
+
 // Handle all the actions.
 if ($action) {
     // If dealing with an areaid, we need to check that the area exists.
@@ -161,6 +163,7 @@ $table->head = [
 ];
 
 $searchareas = \core_search\manager::get_search_areas_list();
+core_collator::asort_objects_by_method($searchareas, 'get_visible_name');
 $areasconfig = isset($searchmanager) ? $searchmanager->get_areas_config($searchareas) : false;
 foreach ($searchareas as $area) {
     $areaid = $area->get_area_id();

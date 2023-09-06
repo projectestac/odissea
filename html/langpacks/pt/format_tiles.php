@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'pt', version '3.11'.
+ * Strings for component 'format_tiles', language 'pt', version '4.1'.
  *
  * @package     format_tiles
  * @category    string
@@ -25,13 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Adicionar mosaicos';
+$string['addsections'] = 'Adicionar mosaico';
 $string['admintools'] = 'Ferramentas de administração';
 $string['all'] = 'Tudo';
 $string['allcomplete'] = 'Tudo concluído';
 $string['allcoursescomplypalette'] = 'Todas as disciplinas permitem mosaicos coloridos. Não foi efetuada qualquer reposição. Certifique-se de guardar as alterações das cores permitidas antes de efetuar a reposição.';
-$string['allowlabelconversion'] = 'Conversão de separadores em páginas';
-$string['allowlabelconversion_desc'] = 'Se ativar esta opção, os professores editores terão a opção de converter o separador numa página, nas configurações de edição de cada separador. Esta funcionalidade ainda está em fase experimental.';
 $string['allowphototiles'] = 'Permitir mosaicos com imagens';
 $string['allowphototiles_desc'] = 'Se ativar esta opção, os professores poderão carregar uma imagem para servir de fundo do mosaico. Poderão continuar a usar ícones na mesma disciplina. Se desativada, apenas os ícones de mosaicos serão permitidos e as configurações das imagens dos mosaicos que estão abaixo serão ignoradas.';
 $string['allowsubtilesview'] = 'Permitir vista de sub-mosaicos';
@@ -46,8 +44,6 @@ $string['assumedatastoreconsent_desc'] = 'Se ativar esta opção, a caixa de di�
 $string['backupfailed'] = 'Cópia de segurança sem sucesso';
 $string['basecolour'] = 'Cor dos mosaicos';
 $string['basecolour_help'] = 'A cor que será aplicada a todos os mosaicos desta disciplina. (As cores disponíveis são determinadas pelo administrador do site através da página de configurações do módulo Mosaicos).';
-$string['blockedpopup'] = 'O seu navegador bloqueou uma janela pop-up. Por favor, permita janelas pop-up neste site ou clique na hiperligação abaixo para visitar o site nesta janela';
-$string['blockedpopuptitle'] = 'Janela pop-up bloqueada';
 $string['brandcolour'] = 'Cor';
 $string['canceltask'] = 'Cancelar tarefa';
 $string['changedcolour'] = 'A cor do mosaico foi redefinida para a predefinição da disciplina {$a}';
@@ -65,7 +61,7 @@ $string['colournamegeneral'] = 'Exibir nome da cor acima';
 $string['colourpurple'] = 'Roxo';
 $string['colourred'] = 'Vermelho';
 $string['colours'] = 'Cores';
-$string['complete'] = 'concluído';
+$string['complete'] = 'Concluído';
 $string['complete-n-auto'] = 'Item não concluído. Será marcado como concluído quando forem verificados todos os critérios de conclusão. Não pode ser alterado manualmente.';
 $string['complete-y-auto'] = 'Item concluído. Foi marcado como concluído porque estão verificados os critérios de conclusão. Não pode ser alterado manualmente.';
 $string['completion_help'] = 'Um visto à direita de uma atividade pode ser usado para indicar quando a atividade está concluída (caso contrário, será mostrado um círculo vazio).
@@ -80,11 +76,10 @@ $string['completionwarning_help'] = 'É necessário ativar a \'Verificação da 
 $string['contact'] = 'Contactar';
 $string['contactdeveloper'] = 'Contacto';
 $string['contents'] = 'Conteúdo';
-$string['converttopage'] = 'Converter para página';
-$string['converttopage_confirm'] = 'Tem a certeza? Não é possível anular (terá que criar novamente o separador manualmente, se necessário).';
 $string['courseshowtileprogress'] = 'Progresso em cada mosaico';
 $string['courseshowtileprogress_error'] = 'A \'Verificação da conclusão > Ativar verificação da conclusão\' está definida como "Não" (ver mais abaixo nesta página), e por isso, está em conflito com esta configuração. Se pretende mostrar o progresso nos mosaicos, defina como "Sim" a \'Verificação da conclusão > Ativar verificação da conclusão\'. Caso contrário, defina esta configuração como \'Não\'.';
 $string['courseshowtileprogress_help'] = '<p>Quando selecionado, o progresso do utilizador nas atividades será mostrado em cada mosaico, como uma <em>fração</em> (por exemplo, \'Progresso 2/10\', significa que 2 de 10 atividades estão concluídas) ou como uma <em>percentagem</em> num círculo.</p><p>Só pode ser usado se a nas configurações abaixo, a opção \'Verificação da conclusão > Ativar verificação da conclusão\' estiver definida como "Sim".</p><p>Se não houver atividades a verificar a conclusão dentro de um determinado mosaico, o indicador não será exibido nesse mosaico.</p>';
+$string['courseshowtileprogress_link'] = 'Activity_completion_settings#Activity_settings';
 $string['coursetoomanysections'] = 'Aviso aos editores: esta disciplina tem mais mosaicos do que o máximo permitido. Será mostrado aos alunos um máximo de {$a- max} (até "{$a-> tilename}") (os editores podem ver mais).';
 $string['courseusebarforheadings'] = 'Enfatizar cabeçalhos com separador colorido';
 $string['courseusebarforheadings_help'] = 'Mostra um separador colorido à esquerda do cabeçalho da disciplina sempre que um estilo de cabeçalho for selecionado no editor de texto';
@@ -110,6 +105,7 @@ $string['disabledbyadmin'] = 'Desativado pelo administrador do site';
 $string['displayfilterbar'] = 'Barra de filtro';
 $string['displayfilterbar_error'] = 'A menos que já tenha configurado os resultados da aprendizagem para esta disciplina, só é possível mostrar a barra de filtro com base no número de mosaicos e não com base nos resultados. Crie alguns resultados e depois volte a configurar. Veja';
 $string['displayfilterbar_help'] = '<p>Quando selecionado, será mostrada automaticamente uma matriz de botões acima dos mosaicos da disciplina, na qual os utilizadores podem clicar para filtrar mosaicos para determinados intervalos</p><p>Quando for selecionado \'Com base no número de mosaicos\', será mostrada uma série de botões, por exemplo, um botão para os mosaicos 1-4, um botão para os mosaicos 5-8, etc.</p><p>Quando for selecionado \'Com base nos resultados da disciplina\', haverá um botão para cada resultado da aprendizagem da disciplina. A cada mosaico pode ser atribuído um determinado resultado (e, portanto, um determinado botão) na página de configuração do mosaico.</p>';
+$string['displayfilterbar_link'] = 'Outcomes';
 $string['displaytitle_mod_doc'] = 'Documento Word';
 $string['displaytitle_mod_html'] = 'Página Web';
 $string['displaytitle_mod_jpeg'] = 'Imagem';
@@ -124,6 +120,8 @@ $string['documentation'] = 'Documentação';
 $string['documentationurl'] = 'URL da documentação';
 $string['documentationurl_descr'] = 'URL da documentação acerca do formato Mosaicos.';
 $string['download'] = 'Descarregar';
+$string['editoradvicesubtiles'] = 'Nesta versão do módulo Mosaicos, as atividades só aparecerão como sub-mosaicos se o modo de edição estiver desligado';
+$string['editsection'] = 'Editar mosaico';
 $string['editsectionname'] = 'Editar nome do mosaico';
 $string['embeddedurlerror'] = 'Se o site externo se recusar a ligar na janela acima, use isto:';
 $string['enablelinebreakfilter'] = 'Ativar filtro de quebra de linha';
@@ -153,7 +151,6 @@ $string['hidden'] = 'Oculto';
 $string['hide'] = 'Ocultar';
 $string['hidefromothers'] = 'Ocultar mosaico';
 $string['highestsectionnum'] = 'Maior número de secção encontrado';
-$string['highlightoff'] = 'Retirar destaque';
 $string['home'] = 'Página inicial da disciplina';
 $string['hovercolour'] = 'Cor do mosaico ao passar o rato';
 $string['hovercolour_descr'] = 'Cor dos mosaicos ao passar o rato por cima';
@@ -269,12 +266,11 @@ $string['imagedeletedfrom'] = 'A imagem de "{$a}" foi apagada';
 $string['imagesavedfor'] = 'Imagem guardada para o mosaico {$a}';
 $string['imagesize'] = 'Tamanho da imagem';
 $string['items'] = 'itens';
-$string['jsactivate'] = 'Ativar navegação animada';
-$string['jsdeactivate'] = 'Desativar navegação animada';
+$string['jsactivate'] = 'Navegação animada - desativar';
+$string['jsdeactivate'] = 'Navegação animada - ativar';
 $string['jsdeactivated'] = 'Desativou a navegação animada';
 $string['jsnavsettings'] = 'Navegação com JavaScript';
 $string['jsreactivated'] = 'Ativou a navegação animada. Esta funcionalidade pode resultar numa navegação mais rápida. Requer o JavaScript ativado.';
-$string['labelconverted'] = 'Separador convertido';
 $string['links'] = 'Hiperligações';
 $string['loading'] = 'A carregar';
 $string['maxcoursesectionsallowed'] = 'Número máximo de secções da disciplina permitidas neste ambiente: {$a}.';
@@ -377,12 +373,12 @@ $string['tileicon_help'] = 'O item aqui selecionado substituirá, apenas neste m
 $string['tileicons'] = 'Ícones dos mosaicos';
 $string['tileoutcome'] = 'Resultados da aprendizagem para este mosaico';
 $string['tileoutcome_help'] = 'Se selecionar um resultado da aprendizagem para este mosaico, poderá mostrar, nas configurações da disciplina, um conjunto de <em>botões de filtro</em>, um para cada resultado da aprendizagem, que filtram os mosaicos a mostrar de acordo com o resultado que lhes foi atribuído';
-$string['tileoutofsequence'] = 'Este mosaico tem um número de secção fora da sequência. Clique no botão para corrigir ou apague o mosaico completamente (mova qualquer conteúdo para outro mosaico antes de apagar)';
 $string['tileselecttip'] = 'Esta é uma maneira mais fácil de alterar um ícone ou imagem do mosaico: na disciplina, com o modo de edição ativado, basta clicar no ícone ou imagem que pretende alterar. A janela do seletor de ícones aparecerá.';
 $string['tilesformatregistration'] = 'Registo do módulo';
-$string['tilesoutofsequencewarning'] = 'Aviso aos editores: Os seguintes mosaicos têm erros. Clique no botão ou apague um ou mais desses mosaicos para corrigir os problemas:';
 $string['tip'] = 'Ajuda';
 $string['togglecompletion'] = 'Clique para alternar o estado da conclusão';
+$string['togglecompletioncomplete'] = 'Clique para alternar o estado da conclusão (concluído)';
+$string['togglecompletionincomplete'] = 'Clique para alternar o estado da conclusão (não concluído)';
 $string['tootall'] = 'muito alta para o mosaico';
 $string['toowide'] = 'muito larga para o mosaico';
 $string['transparenttitleadjustments'] = 'Ajustes da transparência dos mosaicos';
@@ -400,5 +396,5 @@ $string['usesubtilesseczero'] = 'Usar sub-mosaicos na secção de topo';
 $string['usesubtilesseczero_help'] = 'Se ativar esta opção, na secção de topo da disciplina serão usados sub-mosaicos, bem como em todos os mosaicos. Apenas disponível se usar sub-mosaicos em toda a disciplina. Uma vez que os sub-mosaicos ocupam muito espaço no topo da disciplina, talvez seja melhor não ativar para que todos os itens da secção de topo possam ser mostrados no formato de lista normal.';
 $string['usetooltips'] = 'Usar dicas do JavaScript';
 $string['usetooltips_desc'] = 'Usar dicas do JavaScript quando o utilizador passa o rato sobre determinados itens, por exemplo, caixas de conclusão, mosaicos de conteúdos, etc.';
-$string['warningcompatibility'] = 'Peça a um administrador do site para atualizar o módulo do formato de disciplina Mosaicos. Não é compatível com esta versão do Moodle.';
+$string['version'] = 'Versão {$a}';
 $string['width'] = 'largura';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'es', version '3.11'.
+ * Strings for component 'search', language 'es', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -43,6 +43,7 @@ $string['confirm_delete'] = '¿Está seguro de que quiere eliminar el índice de
 $string['confirm_deleteall'] = '¿Está seguro de que quiere eliminar todos los elementos indexados? Hasta que el sitio no sea indexado de nuevo los usuarios no podrán obtener resultados de búsqueda.';
 $string['confirm_indexall'] = '¿Está seguro de que quiere actualizar los elementos indexados ahora? Si existe una gran cantidad de elementos que necesitan ser indexados esta operación puede llevar mucho tiempo. Para servidores que trabajen en tiempo real debería dejar la indexación para la tarea programada \'Indexación de búsqueda global\'.';
 $string['confirm_reindexall'] = '¿Está seguro de que quiere volver a indexar todos los contenidos del sitio ahora? Si su sitio tiene mucho contenido esta operación puede llevar mucho tiempo y puede que los usuarios no obtengan resultados de búsqueda completos hasta que esta operación finalice.';
+$string['content:courserole'] = '{$a->role} en {$a->course}';
 $string['core-all'] = 'Todos';
 $string['core-course-content'] = 'Contenido del curso';
 $string['core-courses'] = 'Cursos';
@@ -115,6 +116,7 @@ $string['schemaversionunknown'] = 'El motor de búsqueda no conoce la versión a
 $string['score'] = 'Puntuación';
 $string['search'] = 'Búsqueda';
 $string['search:course'] = 'Cursos';
+$string['search:course_teacher'] = 'Profesor del curso';
 $string['search:customfield'] = 'Campos personalizados del curso';
 $string['search:message_received'] = 'Mensajes - recibidos';
 $string['search:message_sent'] = 'Mensajes - enviados';
@@ -136,10 +138,11 @@ $string['thesewordsmustappear'] = 'Estas palabras deben aparecer';
 $string['thesewordsmustnotappear'] = 'Estas palabras no deben aparecer';
 $string['title'] = 'Título';
 $string['tofetchtheseresults'] = 'para rendir estos resultados';
+$string['topresults'] = 'Mejores resultados';
 $string['totalsize'] = 'Tamaño total';
 $string['totime'] = 'Modificado antes de';
 $string['type'] = 'Tipo';
 $string['uncompleteindexingerror'] = 'El indexado no se completó con éxito: por favor, reinícielo.';
 $string['versiontoolow'] = 'Lo sentimos, la búsqueda global requiere PHP 5.0 o superior';
 $string['viewresultincontext'] = 'Ver este resultado en su contexto';
-$string['wordsintitle'] = 'Palabras en el título';
+$string['wordsintitle'] = '¿Qué módulos buscar?';

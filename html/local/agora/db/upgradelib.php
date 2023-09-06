@@ -48,3 +48,30 @@ function create_user_tag_field(): bool {
 
     return true;
 }
+
+function transfer_config_fields(): bool {
+    global $DB;
+
+    try {
+        $old_theme_config_records = $DB->get_records('config_plugins', ['plugin' => 'theme_xtec2020']);
+    } catch (Exception $exception) {
+        mtrace($exception->getMessage());
+    }
+
+    foreach ($old_theme_config_records as $record) {
+        set_config($record->name, $record->value, 'theme_xtecboost');
+    }
+
+    // Copy logo to theme xtec2020
+    $fs = get_file_storage();
+    $files = $fs->get_area_files(1, 'theme_xtec2020', 'logo');
+
+    foreach ($files as $file) {
+        if (!$file->is_directory()) {
+            // First parameter is the difference with the original file
+            $fs->create_file_from_storedfile(['component' => 'theme_xtecboost'], $file->get_id());
+        }
+    }
+
+    return true;
+}

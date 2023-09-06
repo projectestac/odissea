@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'coursereport_log', language 'el', version '3.11'.
+ * Strings for component 'coursereport_log', language 'el', version '4.1'.
  *
  * @package     coursereport_log
  * @category    string
@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['log:view'] = 'Προβολή καταγραφών μαθημάτων';
 $string['log:viewlive'] = 'Προβολή ενεργών αρχείων καταγραφής';
+$string['log:viewtoday'] = 'Δείτε τις σημερινές καταγραφές';
 $string['loglive'] = 'Ενεργά αρχεία καταγραφής';
 $string['pluginname'] = 'Καταγραφές';
 $string['pluginpagetype'] = 'Αναφορά καταγραφών μαθήματος';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ja', version '3.11'.
+ * Strings for component 'webservice', language 'ja', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'アクティブなウェブサービスプロ�
 $string['addaservice'] = 'サービスを追加する';
 $string['addcapabilitytousers'] = 'ユーザケイパビリティをチェックする';
 $string['addcapabilitytousersdescription'] = 'ユーザは2つの異なるケイパビリティを必要とします: 「webservice:createtoken」およびウェブサービスプロトコルに合致するケイパビリ、例えば「webservice/rest:use」、「webservice/soap:use」です。 このケイパビリティを設定するには適切なケイパビリティを許可されたウェブサービスロールを作成した後、システムロールとしてウェブサービスユーザに割り当ててください。';
+$string['addexternalservice'] = '外部サービスを追加する';
 $string['addfunction'] = '関数を追加する';
 $string['addfunctionhelp'] = 'サービスに追加する関数を選択してください。';
 $string['addfunctions'] = '関数を追加する';
@@ -61,14 +62,16 @@ $string['default'] = 'デフォルト:  {$a}';
 $string['deleteaservice'] = 'サービスを削除する';
 $string['deleteservice'] = 'サービスを削除する: {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'サービスを削除することにより、このサービスに関連するトークンも削除されてしまいます。本当に外部サービス「 {$a} 」を削除してもよろしいですか?';
+$string['deletetoken'] = 'トークンを削除する';
 $string['deletetokenconfirm'] = '本当にサービス<strong>{$a->service}</strong>の<strong>{$a->user}</strong>用ウェブサービストークンを削除してもよろしいですか?';
+$string['deprecated'] = '非推奨';
 $string['disabledwarning'] = 'ウェブサービスプロトコルは無効にされています。拡張機能内に「ウェブサービスを有効にする」設定があります。';
 $string['doc'] = 'ドキュメンテーション';
 $string['docaccessrefused'] = 'あなたはこのトークンに関するドキュメンテーションの閲覧を許可されていません。';
-$string['documentation'] = 'ウェブサービスドキュメンテーション';
 $string['downloadfiles'] = 'ファイルをダウンロードできる';
 $string['downloadfiles_help'] = 'この設定を有効にした場合、すべてのユーザはセキュリティキーを使ってファイルをダウンロードすることができます。もちろん、サイト内でダウンロードを許可されたファイルに制限されます。';
 $string['editaservice'] = 'サービスを編集する';
+$string['editexternalservice'] = '外部サービスを編集する';
 $string['editservice'] = 'サービスを編集する: {$a->name} (id: {$a->id})';
 $string['enabled'] = '有効';
 $string['enabledocumentation'] = '開発者ドキュメントを有効にする';
@@ -201,7 +204,7 @@ $string['shortnametaken'] = 'すでに省略名が別のサービス ({$a}) で�
 $string['simpleauthlog'] = 'シンプル認証ログイン';
 $string['step'] = 'ステップ';
 $string['supplyinfo'] = '詳細';
-$string['testauserwithtestclientdescription'] = 'ウェブサービステストクライアントを使用してサービスへの外部アクセスをシミュレートします。シミュレートする前、「moodle/webservice:createtoken」ケイパビリティを設定したユーザでログインした後、ユーザプリファレンス設定経由でセキュリティキー (トークン) を取得してください。あなたはこのトークンをテストクライアントで使用します。また、テストクライアントでは有効にされたトークン認証のプロトコルを選択します。<strong>警告: あなたがテストする関数はこのユーザに対して実行されます。関数の選択には十分注意してください!</strong>';
+$string['testauserwithtestclientdescription'] = 'ウェブサービステストクライアントを使用してサービスへの外部アクセスをシミュレートします。シミュレートする前、「moodle/webservice:createtoken」ケイパビリティを設定したユーザでログインした後、ユーザプレファレンス設定経由でセキュリティキー (トークン) を取得してください。あなたはこのトークンをテストクライアントで使用します。また、テストクライアントでは有効にされたトークン認証のプロトコルを選択します。<strong>警告: あなたがテストする関数はこのユーザに対して実行されます。関数の選択には十分注意してください!</strong>';
 $string['testclient'] = 'ウェブサービステストクライアント';
 $string['testclientdescription'] = '* ウェブサービステストクライアントは関数を<strong>実際</strong>に<strong>実行</strong> します。あなたが知らない関数をテストしないでください。<br />
 * まだ、既存のすべてのウェブサービス関数はテストクライアントに実装されていません。<br />
@@ -222,7 +225,7 @@ $string['updateusersettings'] = '更新';
 $string['uploadfiles'] = 'ファイルをアップロードできる';
 $string['uploadfiles_help'] = 'この設定を有効にした場合、すべてのユーザは自分のプライベートファイルエリアまたは下書きファイルエリアにファイルおよびセキュリティキーをアップロードすることができます。すべてのユーザファイルに対してファイルクオータが適用されます。';
 $string['userasclients'] = 'トークンを使用したユーザのクライアントとして';
-$string['userasclientsdescription'] = '次のステップにより、あなたはユーザのクライアントとしてMoodleウェブサービスをセットアップすることができます。これらのステップは推奨トークン (セキュリティキー) 認証方法のセットアップにも役立ちます。この場合、ユーザはプリファレンスページを経由してセキュリティキーページでトークンを生成することができます。';
+$string['userasclientsdescription'] = '次のステップにより、あなたはユーザのクライアントとしてMoodleウェブサービスをセットアップすることができます。これらのステップは推奨トークン (セキュリティキー) 認証方法のセットアップにも役立ちます。この場合、ユーザはプレファレンスページを経由してセキュリティキーページでトークンを生成することができます。';
 $string['usermissingcaps'] = '不足しているケイパビリティ: {$a}';
 $string['usernameorid'] = 'ユーザ名/ユーザID';
 $string['usernameorid_help'] = 'ユーザ名またはユーザIDを入力してください。';

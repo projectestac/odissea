@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'de', version '3.11'.
+ * Strings for component 'contentbank', language 'de', version '4.1'.
  *
  * @package     contentbank
  * @category    string
@@ -26,9 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autor/in';
+$string['choosecontext'] = 'Kurs oder Kurbereich auswählen ...';
 $string['close'] = 'Schließen';
 $string['contentbank'] = 'Inhaltsspeicher';
-$string['contentbankpreferences'] = 'Einstellungen zum Inhaltsspeicher';
+$string['contentbankpreferences'] = 'Inhaltsspeicher einstellen';
 $string['contentdeleted'] = 'Der Inhalt wurde gelöscht.';
 $string['contentname'] = 'Dateiname';
 $string['contentnotdeleted'] = 'Beim Versuch, den Inhalt zu löschen, ist ein Fehler aufgetreten.';
@@ -54,10 +55,12 @@ $string['eventcontentreplaced'] = 'Inhalt durch Datei ersetzt';
 $string['eventcontentupdated'] = 'Inhalt aktualisiert';
 $string['eventcontentuploaded'] = 'Inhalt hochgeladen';
 $string['eventcontentviewed'] = 'Inhalt angezeigt';
+$string['exit'] = 'Abbrechen';
 $string['file'] = 'Inhalt hochladen';
 $string['file_help'] = 'Dateien können zur Verwendung in Kursen im Inhaltsspeicher gespeichert werden. Es dürfen nur Dateien hochgeladen werden, deren Inhaltstypen auf der Website aktiviert sind.';
 $string['itemsfound'] = '{$a} Elemente gefunden';
 $string['lastmodified'] = 'Zuletzt geändert';
+$string['more'] = 'Mehr';
 $string['name'] = 'Inhalt';
 $string['nocontentavailable'] = 'Kein Inhalt verfügbar';
 $string['nocontenttypes'] = 'Keine Inhaltstypen verfügbar';
@@ -82,14 +85,14 @@ $string['searchcontentbankbyname'] = 'Inhalte nach Namen suchen';
 $string['size'] = 'Größe';
 $string['timecreated'] = 'Erstellungsdatum';
 $string['type'] = 'Art';
-$string['unlisted'] = 'verborgen';
+$string['unlisted'] = 'nicht öffentlich';
 $string['unsupported'] = 'Dieser Inhaltstyp wird nicht unterstützt.';
 $string['upload'] = 'Hochladen';
 $string['uses'] = 'Orte verlinkt';
 $string['visibilitychoicepublic'] = 'Öffentlich';
-$string['visibilitychoiceunlisted'] = 'Verborgen';
+$string['visibilitychoiceunlisted'] = 'Nicht öffentlich';
 $string['visibilitypref'] = 'Standardmäßige Inhaltssichtbarkeit';
 $string['visibilitypref_help'] = 'Inhalte, die Sie im Inhaltsspeicher erstellen, verwenden standardmäßig diese Inhaltssichtbarkeit.';
 $string['visibilitysetpublic'] = 'Öffentlich machen';
-$string['visibilitysetunlisted'] = 'Verbergen';
-$string['visibilitytitleunlisted'] = '{$a} (Verborgen)';
+$string['visibilitysetunlisted'] = 'Nicht öffentlich machen';
+$string['visibilitytitleunlisted'] = '{$a} (Nicht öffentlich)';

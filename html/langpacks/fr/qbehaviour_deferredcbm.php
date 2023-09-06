@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'fr', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'fr', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -38,6 +38,7 @@ $string['cbmgrades_help'] = 'Dans l\'évaluation avec indication de certitude, o
 
 **Précision** est le pourcentage de réponses correctes sans tenir compte de l\'indication de certitude, mais pondéré en fonction du maximum de chaque question. La capacité de distinguer entre réponses plus ou moins fiables donne une meilleure note que le choix du même degré de certitude pour chaque réponse.
 **Précision** + **Bonus degré de certitude** est une meilleure mesure que **Précision**. Les idées fausses peuvent mener à un bonus négatif, incitant à réfléchir sur ce qui est su et ce qui ne l\'est pas.';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'Évaluation du degré de certitude {$a}';
 $string['certainty'] = 'Certitude';
 $string['certainty-1'] = 'Aucune idée';
@@ -53,6 +54,7 @@ Points si incorrect |    0          |   -2        |    -6
 Probabilité correct |  < 67%        | 67-80%      |  > 80%
 
 On gagne plus de points en reconnaissant son incertitude. Par exemple, si vous pensez qu\'il y a 1 chance sur 3 que votre réponse soit fausse, vous devriez saisir C = 1 et éviter ainsi le risque d\'obtenir des points négatifs.';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = 'Aucune idée';
 $string['certaintyshort1'] = 'C = 1';
 $string['certaintyshort2'] = 'C = 2';

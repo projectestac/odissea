@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ar', version '3.11'.
+ * Strings for component 'quiz_grading', language 'ar', version '4.1'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,11 +49,12 @@ $string['graded'] = '(مقيَّم)';
 $string['gradenextungraded'] = 'تقييم {$a} من المحاولات غير المقيمة الأخرى';
 $string['gradeungraded'] = 'قيم كل {$a} من المحاولات التي لم تقيم';
 $string['grading'] = 'منح التقديرات يدوياً';
-$string['grading:viewidnumber'] = 'مشاهدة مُعرَّف الطالب في أثناء التقييم';
+$string['grading:viewidnumber'] = 'مشاهدة حقول هوية الطالب في أثناء التقييم';
 $string['grading:viewstudentnames'] = 'مشاهدة أسماء الطلاب أثناء التقييم';
 $string['gradingall'] = 'كل {$a} محاولاته في هذا السؤال.';
 $string['gradingattempt'] = 'رقم المحاولة {$a->attempt} لــ {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'محاولات التقييم {$a->from}  لــ {$a->to}  من {$a->of}';
+$string['gradingattemptwithcustomfields'] = 'المحاولة المرقمة {$a->attempt} لـ {$a->fullname} ({$a->customfields})';
 $string['gradingattemptwithidnumber'] = 'عدد المحاولات {$a->attempt}  لـ {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'بعد {$a}  محاولات لم تقيم';
 $string['gradingnotallowed'] = 'ليست لديك صلاحية منح التقديرات يدوياً في هذا الاختبار';
@@ -69,6 +70,7 @@ $string['noquestionsfound'] = 'لا يوجد سؤال يقيّم يدوياً';
 $string['nothingfound'] = 'لا شيء لإظهاره';
 $string['options'] = 'الخيارات';
 $string['orderattempts'] = 'ترتيب المحاولات';
+$string['orderattemptsby'] = 'ترتيب المحاولات حسب';
 $string['pluginname'] = 'التقييم اليدوي';
 $string['privacy:preference:order'] = 'بأي ترتيب ينبغي إظهار المحاولات التي تحتاج تقييماً.';
 $string['privacy:preference:pagesize'] = 'كم عدد المحاولات التي ينبغي إظهارها في كل صفحة من واجهة التقييم.';
@@ -77,8 +79,9 @@ $string['questionname'] = 'اسم السؤال';
 $string['questionsperpage'] = 'عدد الأسئلة لكل صفحة';
 $string['questionsthatneedgrading'] = 'أسئلة تحتاج إلى تقييم';
 $string['questiontitle'] = 'سؤال {$a->number} : "{$a->name}" ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} attempts {$a->openspan}graded{$a->closespan}).';
+$string['random'] = 'عشوائي';
 $string['randomly'] = 'عشوائياً';
-$string['saveandnext'] = 'احفظ وانتقل للصفحة التالية';
+$string['saveandnext'] = 'إحفظ وأظهر التالي';
 $string['showstudentnames'] = 'إظهار أسماء الطلاب';
 $string['tograde'] = 'للتقييم';
 $string['total'] = 'الكل';

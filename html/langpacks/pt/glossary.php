@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'pt', version '3.11'.
+ * Strings for component 'glossary', language 'pt', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Adicionar categoria';
 $string['addcomment'] = 'Adicionar comentário';
 $string['addentry'] = 'Adicionar novo termo';
 $string['addingcomment'] = 'Adicionar um comentário';
+$string['addsingleentry'] = 'Adicionar entrada';
 $string['alias'] = 'Senha';
 $string['aliases'] = 'Palavra(s)-chave';
 $string['aliases_help'] = 'Cada termo do glossário pode ter associada uma lista de palavras-chave. Se o termo estiver com hiperligações automáticas ativas, todas as palavras-chave associadas serão igualmente objeto de hiperligação automática.
@@ -169,6 +170,7 @@ $string['errconceptalreadyexists'] = 'Este termo já existe. Este glossário nã
 $string['errdeltimeexpired'] = 'Não é possível apagar este termo. O tempo de edição expirou!';
 $string['erredittimeexpired'] = 'O tempo para editar este termo expirou.';
 $string['errorparsingxml'] = 'Ocorreram erros ao analisar o ficheiro. Certifique-se que a sintaxe XML é válida.';
+$string['errreservedkeywords'] = 'Uma ou mais palavras-chave contém caracteres especiais que não podem ser usados.';
 $string['eventcategorycreated'] = 'A categoria foi criada';
 $string['eventcategorydeleted'] = 'A categoria foi eliminada';
 $string['eventcategoryupdated'] = 'A categoria foi atualizada';
@@ -184,6 +186,7 @@ $string['explainalphabet'] = 'Consulte o glossário usando este índice';
 $string['explainexport'] = 'Clique no botão abaixo para exportar os termos do glossário.<br />Pode importá-lo a qualquer altura para esta ou outra disciplina.<p>Os anexos (por exemplo, imagens) e os autores não são exportados.</p>';
 $string['explainimport'] = 'Deve indicar o ficheiro a importar e definir os critérios do processo.<p>Submeta o pedido e reveja os resultados.</p>';
 $string['explainspecial'] = 'Mostra termos que não começam com uma letra.';
+$string['export'] = 'Exportar';
 $string['exportedentry'] = 'Termo exportado';
 $string['exportentries'] = 'Exportar termos';
 $string['exportentriestoxml'] = 'Exportar termos para XML';
@@ -226,10 +229,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão do Glossário';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Glossário.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Glossário';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Glossário durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização do Glossário';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Glossário.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Glossário';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Glossário durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = 'Este glossário é global?';
 $string['isglobal_help'] = 'Um glossário global contém termos que geram hiperligações em todo o site e não apenas da disciplina em que se encontra inserido. Apenas os administradores podem configurar um glossário como global.';
 $string['letter'] = 'letra';
@@ -275,6 +280,7 @@ $string['onebyline'] = '(um por linha)';
 $string['page-mod-glossary-edit'] = 'Adicionar Glossário  / editar página de entrada';
 $string['page-mod-glossary-view'] = 'Ver edição da página de entrada';
 $string['page-mod-glossary-x'] = 'Qualquer página da atividade glossário';
+$string['pendingapproval'] = 'Aprovação pendente';
 $string['pluginadministration'] = 'Administração do Glossário';
 $string['pluginname'] = 'Glossário';
 $string['popupformat'] = 'Formato pop-up';
@@ -285,7 +291,7 @@ $string['privacy'] = 'Privacidade dos resultados';
 $string['privacy:metadata:core_comments'] = 'Comentários feitos nas definições do glossário são armazenados através o sistema core_comment';
 $string['privacy:metadata:core_files'] = 'Ficheiros ligados às definições do glossário são armazenados através do sistema  core_files';
 $string['privacy:metadata:core_rating'] = 'Avaliações adicionadas a entradas do glossário são armazenadas através do sistema core_rating';
-$string['privacy:metadata:core_tag'] = 'Palavras chave adicionadas às definições do glossário são armazenadas através do sistema core_rating';
+$string['privacy:metadata:core_tag'] = 'As palavras-chave adicionadas às definições do glossário são armazenadas através do sistema core_tag';
 $string['privacy:metadata:glossary_entries'] = 'Informação sobre entradas do utilizador para uma determinada atividade do glossário';
 $string['privacy:metadata:glossary_entries:attachment'] = 'O anexo que o utilizador adicionou';
 $string['privacy:metadata:glossary_entries:concept'] = 'O conceito de entrada que o utilizador adicionou';
@@ -296,11 +302,12 @@ $string['privacy:metadata:glossary_entries:userid'] = 'O ID do utilizador que es
 $string['question'] = 'Pergunta';
 $string['rejectedentries'] = 'Termos rejeitados';
 $string['rejectionrpt'] = 'Relatório de rejeição';
-$string['removeallglossarytags'] = 'Remover todas as tags do glossário';
+$string['removeallglossarytags'] = 'Remover todas as palavras-chave do glossário';
 $string['resetglossaries'] = 'Apagar termos de';
 $string['resetglossariesall'] = 'Apagar termos de todos os glossários';
 $string['rssarticles'] = 'Número de artigos recentes na lista RSS';
 $string['rssarticles_help'] = 'Defina o número de termos do glossário a publicar na lista RSS. É aceitável um valor de 5 a 20 termos.';
+$string['rssfeed'] = 'Lista RSS';
 $string['rsssubscriberss'] = 'Mostrar a lista RSS para {$a} termos';
 $string['rsstype'] = 'Lista RSS para esta atividade';
 $string['rsstype_help'] = 'Para ativar listas RSS nesta atividade, selecione termos com autor ou termos sem autor a incluir na lista RSS.';
@@ -322,7 +329,7 @@ $string['special'] = 'Especial';
 $string['standardview'] = 'Consultar por alfabeto';
 $string['studentcanpost'] = 'Os alunos podem adicionar termos';
 $string['tagarea_glossary_entries'] = 'Entrada do glossário';
-$string['tagsdeleted'] = 'As tags do glossário foram apagadas';
+$string['tagsdeleted'] = 'As palavras-chave do glossário foram apagadas';
 $string['totalentries'] = 'Todos os termos';
 $string['usedynalink'] = 'Criar automaticamente hiperligações para o glossário';
 $string['usedynalink_help'] = 'Se ativar esta opção e as hiperligações automáticas para o glossário estiverem ativas pelo administrador, ao adicionar um novo termo poderá ativar a opção "Criar automaticamente hiperligação para este termo" para que todas as ocorrências do termo nos conteúdos da disciplina tenham uma hiperligação para a respetiva definição no glossário.';

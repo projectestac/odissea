@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'ja', version '3.11'.
+ * Strings for component 'editor_atto', language 'ja', version '4.1'.
  *
  * @package     editor_atto
  * @category    string
@@ -46,6 +46,7 @@ $string['privacy:metadata:database:atto_autosave:drafttext'] = '保存された�
 $string['privacy:metadata:database:atto_autosave:timemodified'] = 'コンテンツが修正された時間です。';
 $string['privacy:metadata:database:atto_autosave:userid'] = 'データが保存されたユーザのIDです。';
 $string['recover'] = '回復';
+$string['richtexteditor'] = 'リッチテキストエディタ';
 $string['settings'] = 'Attoツールバー設定';
 $string['subplugintype_atto'] = 'Attoプラグイン';
 $string['subplugintype_atto_plural'] = 'Attoプラグイン';

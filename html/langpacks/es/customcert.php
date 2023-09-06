@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'es', version '3.11'.
+ * Strings for component 'customcert', language 'es', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -25,8 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activity'] = 'Actividad';
 $string['addcertpage'] = 'Añadir otra página al certificado';
 $string['addelement'] = 'Añadir elemento';
+$string['aligncenter'] = 'Centrado';
+$string['alignleft'] = 'Alineación izquierda';
+$string['alignment'] = 'Alineación';
+$string['alignment_help'] = 'ESta propiedad configura la alineación horizontal del elemento. Algunos elementos podrían no soportar esto, mientras que el comportamiento de otros podría diferir.';
+$string['alignright'] = 'Alineación derecha';
 $string['awardedto'] = 'Expedido a';
 $string['cannotverifyallcertificates'] = 'No tiene el permiso para verificar todos los certificados en el sitio.';
 $string['certificate'] = 'Certificado';
@@ -40,6 +46,7 @@ $string['customcert:manage'] = 'Administrar un certificado personalizado';
 $string['customcert:manageemailothers'] = 'Administrar otras configuraciones del email';
 $string['customcert:manageemailstudents'] = 'Administrar la configuración del email de estudiantes';
 $string['customcert:manageemailteachers'] = 'Gestionar configuraciones de Email de profesores';
+$string['customcert:managelanguages'] = 'Gestionar idioma en formato de edición';
 $string['customcert:manageprotection'] = 'Gestionar configuraciones de protección';
 $string['customcert:managerequiredtime'] = 'Gestionar configuración de tiempo requerido';
 $string['customcert:manageverifyany'] = 'Gestionar configuraciones de verificación';
@@ -58,6 +65,9 @@ $string['deleteissueconfirm'] = '¿Está seguro de querer eliminar este caso del
 $string['deleteissuedcertificates'] = 'Eliminar certificados emitidos';
 $string['deletepageconfirm'] = '¿Estás seguro de que quieres borrar esta página del certificado?';
 $string['deletetemplateconfirm'] = '¿Estás seguro de que quieres borrar esta plantilla de certificado?';
+$string['deliveryoptiondownload'] = 'Enviar al navegador y forzar una descarga de archivo';
+$string['deliveryoptioninline'] = 'Enviar el archivo en línea al navegador';
+$string['deliveryoptions'] = 'Opciones para entregar';
 $string['description'] = 'Descripción';
 $string['duplicate'] = 'Duplicar';
 $string['duplicateconfirm'] = 'Confirmación de duplicación';
@@ -98,16 +108,17 @@ $string['fontcolour_help'] = 'Color de letra';
 $string['fontsize'] = 'Tamaño';
 $string['fontsize_help'] = 'El tamaño de la letra en puntos.';
 $string['getcustomcert'] = 'Descargar certificado';
+$string['gradeoutcome'] = 'Resultado';
 $string['height'] = 'Altura';
 $string['height_help'] = 'Esta es la altura del certificado en PDF en mm. Como referencia una hoja de papel A4 tiene 297mm de alto y una tamaño carta tiene 279mm de alto.';
 $string['invalidcode'] = 'Código suministrado inválido.';
 $string['invalidcolour'] = 'El color escogido es inválido, por favor ingrese un nombre de color válido en HTML, o un color hexadecimal de 3 o 6 dígitos.';
-$string['invalidelementwidth'] = 'Por favor introduzca un número positivo.';
 $string['invalidheight'] = 'La altura debe ser un número válido mayor que cero.';
 $string['invalidmargin'] = 'El márgen debe ser un número válido mayor que cero.';
 $string['invalidposition'] = 'Por favor, selecciona un número positivo para la posición de {$a}.';
 $string['invalidwidth'] = 'La anchura tiene que ser un número válido mayor que 0.';
 $string['landscape'] = 'Apaisado';
+$string['languageoptions'] = 'Forzar Idioma del Certificado';
 $string['leftmargin'] = 'Margen izquierdo';
 $string['leftmargin_help'] = 'Este es el margen izquierdo de la PDF certificado en mm.';
 $string['listofissues'] = 'Destinatarios: {$a}';
@@ -119,6 +130,7 @@ $string['managetemplatesdesc'] = 'Este enlace le llevará a una nueva pantalla d
 $string['modify'] = 'Modificar';
 $string['modulename'] = 'Certificado personalizado';
 $string['modulename_help'] = 'Este módulo permite la generación dinámica de certificados en PDF.';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['modulenameplural'] = 'Certificados personalizados';
 $string['mycertificates'] = 'Mis certificados';
 $string['mycertificatesdescription'] = 'Estos son los certificados que se han emitido por correo electrónico o mediante descarga manual.';
@@ -182,6 +194,8 @@ $string['topright'] = 'Superior derecha';
 $string['type'] = 'Tipo';
 $string['uploadimage'] = 'Subir imagen';
 $string['uploadimagedesc'] = 'Este enlace le llevará a una nueva pantalla donde podrá cargar imágene que estarán disponibles en su sitio para que sean usadas para los certificados personalizados.';
+$string['userlanguage'] = 'Usar preferencias del usuario';
+$string['userlanguage_help'] = 'Usted puede forzar el idioma del certificado para anular las preferencias de idioma del usuario.';
 $string['verified'] = 'Verificado';
 $string['verify'] = 'Verificar';
 $string['verifyallcertificates'] = 'Permitir verificación de todos los certificados';

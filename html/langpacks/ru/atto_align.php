@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_align', language 'ru', version '3.11'.
+ * Strings for component 'atto_align', language 'ru', version '4.1'.
  *
  * @package     atto_align
  * @category    string
@@ -29,4 +29,4 @@ $string['center'] = 'По центру';
 $string['leftalign'] = 'Выравнивание по левому краю';
 $string['pluginname'] = 'Выравнивание текста';
 $string['privacy:metadata'] = 'Плагин atto_align не хранит никаких персональных данных.';
-$string['rightalign'] = 'Выравнивать по правому краю';
+$string['rightalign'] = 'Выравнивание по правому краю';

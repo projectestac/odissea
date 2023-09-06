@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'it', version '3.11'.
+ * Strings for component 'tool_usertours', language 'it', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -43,9 +43,12 @@ $string['confirmtourremovalquestion'] = 'Sei sicuro di eliminare il tour?';
 $string['confirmtourremovaltitle'] = 'Conferma eliminazione tour';
 $string['content'] = 'Contenuto';
 $string['content_heading'] = 'Contenuto';
-$string['content_help'] = 'La descrizione di ciascun passo può essere inserita come testo semplice, eventualmente inserito nei tag multilingua qualora fosse necessario il filtraggio del testo in base alla lingua.
-
-In alternativa è possibile inserire un ID della stringa della lingua con il formato \'identifier, component\', senza aggiungere parentesi o spazi dopo la virgola.';
+$string['content_help'] = 'La descrizione di ciascun passo può essere inserita come testo semplice, eventualmente inserito nei tag multilingua qualora fosse necessario il filtraggio del testo in base alla lingua.';
+$string['content_type'] = 'Tipo di contenuto';
+$string['content_type_help'] = '* Inserti manualmente - Il contenuto viene inserito usando l\'editor
+* Letti da language pack - Gli ID delle stringhe di lingua possono essere inseriti nel formato identifier,component (senza parentesi o spazi dopo la virgola)';
+$string['content_type_langstring'] = 'ID della stringa di lingua';
+$string['content_type_manual'] = 'Manuale';
 $string['cssselector'] = 'Selettore CSS';
 $string['defaultvalue'] = 'Default ({$a})';
 $string['delay'] = 'Ritardo di visualizzazione del passo';
@@ -53,12 +56,22 @@ $string['delay_help'] = 'È possibile impostare un ritardo di visualizzazione de
 
 Il ritardo è espresso in millisecondi.';
 $string['description'] = 'Descrizione';
+$string['description_help'] = 'Per la descrizione di un tour è possibile utilizzare testo semplice anche all\'interno di tag multilingua per l\'utilizzo con il filtro multi lingua.
+
+In alternativa, è possibile specificare l\'ID della stringa di lingua utilizzando il formato identifier,component (senza parentesi o spazi dopo la virgola).';
+$string['displaystepnumbers'] = 'Visualizza numero di passi';
+$string['displaystepnumbers_help'] = 'Consente di visualizzare il numero di passi del tour, ad esempio 1/4, 2/4, in modo da renderne nota la lunghezza.';
 $string['done'] = 'Fatto';
 $string['duplicatetour'] = 'Duplica tour';
 $string['duplicatetour_name'] = '{$a} (copia)';
 $string['editstep'] = 'Modifica di "{$a}"';
 $string['enabled'] = 'Abilitato';
+$string['endonesteptour'] = 'Ho capito';
 $string['endtour'] = 'Fine tour';
+$string['endtourlabel'] = 'Etichetta del pulsante Fine tour';
+$string['endtourlabel_help'] = 'È possibile impostare un\'etichetta personalizzata per il pulsante Fine tour. L\'etichetta di default è "Ho capito" per i tour a passo singolo e "Fine tour" per i tour a più passi.
+
+In alternativa, è possibile specificare l\'ID della stringa di lingua utilizzando il formato identifier,component (senza parentesi o spazi dopo la virgola).';
 $string['event_step_shown'] = 'Visualizzazione passo';
 $string['event_tour_ended'] = 'Completamento tour';
 $string['event_tour_reset'] = 'Reimpostazione tour';
@@ -85,17 +98,23 @@ $string['filter_role_help'] = 'È possibile limitare la visibilità di un tour a
 $string['filter_theme'] = 'Tema';
 $string['filter_theme_help'] = 'Visualizza il tour quando l\'utente utilizza uno dei temi selezionato.';
 $string['importtour'] = 'Importa tour';
+$string['invalid_lang_id'] = 'L\'identificativo della lingua non è valido';
 $string['left'] = 'Sinistra';
 $string['modifyshippedtourwarning'] = 'Questo tour utente è fornito con Moodle. Eventuali modifiche saranno eliminate al prossimo aggiornamento del sito.';
+$string['moodle_language_identifier'] = 'ID della stringa di lingua';
 $string['movestepdown'] = 'Sposta il passo sotto';
 $string['movestepup'] = 'Sposta  il passo sopra';
 $string['movetourdown'] = 'Sposta sotto il tour';
 $string['movetourup'] = 'Sposta sopra il tour';
 $string['name'] = 'Nome';
+$string['name_help'] = 'Per il nome di un tour è possibile utilizzare testo semplice anche all\'interno di tag multilingua per l\'utilizzo con il filtro multi lingua.
+
+In alternativa, è possibile specificare l\'ID della stringa di lingua utilizzando il formato identifier,component (senza parentesi o spazi dopo la virgola).';
 $string['newstep'] = 'Aggiungi passo';
 $string['newtour'] = 'Crea tour';
-$string['next'] = 'Successivo';
-$string['nextstep'] = 'Successivo';
+$string['next'] = 'Prosegui';
+$string['nextstep'] = 'Prosegui';
+$string['nextstep_sequence'] = 'Prosegui ({$a->position}/{$a->total})';
 $string['options_heading'] = 'Opzioni';
 $string['orphan'] = 'Visualizza';
 $string['orphan_help'] = 'Visualizza il passo se l\'obiettivo non è presente nella pagina';
@@ -132,6 +151,7 @@ $string['selectordisplayname'] = 'Un selettore CSS corrispondente a \'{$a}\'';
 $string['selecttype'] = 'Seleziona il tipo di passo';
 $string['sharedtourslink'] = 'Repository dei tour';
 $string['skip'] = 'Salta';
+$string['skip_tour'] = 'Salta tour';
 $string['target'] = 'Obiettivo';
 $string['target_block'] = 'Blocco';
 $string['target_heading'] = 'Obiettivo del passo';
@@ -229,6 +249,27 @@ $string['tour_activityinfo_course_teacher_content'] = 'L\'impostazione \'Visuali
 $string['tour_activityinfo_course_teacher_title'] = 'Novità: informazioni sull’attività';
 $string['tour_final_step_content'] = 'Il tour è terminato. Per visualizzarlo di nuovo fai click sul link presente nel piè di pagina.';
 $string['tour_final_step_title'] = 'Fine del tour';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Inserire qui le novità importanti.';
+$string['tour_navigation_course_announcements_teacher_title'] = 'Informazioni da dare a tutti?';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Aggiungere contenuti o modificare gli esistenti.';
+$string['tour_navigation_course_edit_teacher_title'] = 'Attivare la modalità modfica';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Naviga tra le attività e controlla l\'avanzamento nel corso.';
+$string['tour_navigation_course_index_student_title'] = 'Orientarsi';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Trascina e rilascia attività per riordinare i contenuti del corso.';
+$string['tour_navigation_course_index_teacher_title'] = 'Indice del corso';
+$string['tour_navigation_course_student_tour_des'] = 'Dove sfogliare le attività di un corso';
+$string['tour_navigation_course_student_tour_name'] = 'Indice del corso';
+$string['tour_navigation_course_teacher_tour_des'] = 'Modalità modifica, trascinamento e rilascio delle attività e inserimento di annunci in un corso';
+$string['tour_navigation_course_teacher_tour_name'] = 'Modifica del corso';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Il pannello laterale può contenere funzionalità aggiuntive.';
+$string['tour_navigation_dashboard_title'] = 'Espandi per esplorare';
+$string['tour_navigation_dashboard_tour_des'] = 'Dove si trovano i blocchi';
+$string['tour_navigation_dashboard_tour_name'] = 'Cassetto dei blocchi';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>Da questo menu è possibile aggiungere, copiare, nascondere ed eliminare corsi.';
+$string['tour_navigation_mycourses_endtourlabel'] = 'Ho capito';
+$string['tour_navigation_mycourses_title'] = 'Corsi e categorie';
+$string['tour_navigation_mycourses_tour_des'] = 'Le opzioni di gestione della pagina i Miei corsi';
+$string['tour_navigation_mycourses_tour_name'] = 'Gestione del corso';
 $string['tour_resetforall'] = 'Lo stato del tour è stato reimpostato. Verrà visualizzato nuovamente a tutti gli utenti.';
 $string['tourconfig'] = 'File di configurazione tour da importare';
 $string['tourisenabled'] = 'Tour abilitato';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'pt', version '3.11'.
+ * Strings for component 'gradingform_rubric', language 'pt', version '4.1'.
  *
  * @package     gradingform_rubric
  * @category    string
@@ -41,9 +41,9 @@ $string['criterionmoveup'] = 'Mover para cima';
 $string['criterionremark'] = 'Comentário do critério {$a->description}: {$a->remark}';
 $string['definerubric'] = 'Configurar grelha';
 $string['description'] = 'Descrição';
-$string['enableremarks'] = 'Permitir que o avaliador adicione comentários de texto para cada critério';
+$string['enableremarks'] = 'Permitir que o avaliador adicione comentários para cada critério';
 $string['err_mintwolevels'] = 'Cada critério tem de ter pelo menos dois níveis';
-$string['err_nocriteria'] = 'A grelha tem de conter pelo menos um critério';
+$string['err_nocriteria'] = 'A grelha tem de ter pelo menos um critério';
 $string['err_nodefinition'] = 'A definição do nível não pode ficar em branco';
 $string['err_nodescription'] = 'A descrição do critério não pode ficar em branco';
 $string['err_novariations'] = 'Os níveis de critério não podem ter o mesmo número de pontos';
@@ -55,8 +55,8 @@ $string['leveldefinition'] = 'Definição do nível {$a}';
 $string['leveldelete'] = 'Apagar nível {$a}';
 $string['levelempty'] = 'Clique para editar nível';
 $string['levelsgroup'] = 'Grupo de níveis';
-$string['lockzeropoints'] = 'Calcular a nota tendo uma pontuação mínima da nota mínima possível para a rubrica';
-$string['lockzeropoints_help'] = 'Esta configuração só se aplica se a soma do número mínimo de pontos para cada critério for maior que 0. Se marcar esta opção, a pontuação mínima da atividade será a nota mínima possível para a rubrica. Se desmarcar esta opção, a pontuação mínima possível para a grelha será mapeada para a nota mínima disponível para a atividade (que é 0, a menos que seja usada uma escala).';
+$string['lockzeropoints'] = 'Calcular a nota tendo uma pontuação mínima da nota mínima possível para a grelha';
+$string['lockzeropoints_help'] = 'Esta configuração só se aplica se a soma do número mínimo de pontos para cada critério for maior que 0. Se marcar esta opção, a pontuação mínima da atividade será a nota mínima possível para a grelha. Se desmarcar esta opção, a pontuação mínima possível para a grelha será mapeada para a nota mínima disponível para a atividade (que é 0, a menos que seja usada uma escala).';
 $string['name'] = 'Nome';
 $string['needregrademessage'] = 'A definição da grelha alterou depois deste aluno ter sido avaliado. O aluno não pode ver a avaliação até ser conferida e atualizada a nota.';
 $string['notset'] = 'Não definido';
@@ -79,7 +79,7 @@ $string['rubricmappingexplained'] = 'A nota mínima para esta grelha é de <b>{$
 
 Se for usada uma escala para avaliação, a pontuação será arredondada e convertida para os elementos da escala como se fossem inteiros consecutivos.
 
-Este cálculo de nota pode ser alterado editando o formulário e marcando a caixa \'Calcular a nota tendo uma pontuação mínima da nota mínima possível para a rubrica\'.';
+Este cálculo de nota pode ser alterado editando o formulário e marcando a caixa \'Calcular a nota tendo uma pontuação mínima da nota mínima possível para a grelha\'.';
 $string['rubricnotcompleted'] = 'Por favor, atribua avaliação a todos os critérios';
 $string['rubricoptions'] = 'Opções da grelha';
 $string['rubricstatus'] = 'Estado atual da grelha';
@@ -96,5 +96,5 @@ $string['showscoreteacher'] = 'Mostrar pontos para cada nível durante a avalia�
 $string['sortlevelsasc'] = 'Ordem de classificação para os níveis:';
 $string['sortlevelsasc0'] = 'Decrescente por número de pontos';
 $string['sortlevelsasc1'] = 'Ascendente por número de pontos';
-$string['zerolevelsabsent'] = 'Aviso: a pontuação mínima possível para essa rubrica não é 0; isto pode resultar em notas inesperadas para a atividade. Para evitar esta situação, cada critério deve ter um nível com 0 pontos.<br>
-Este aviso pode ser ignorado se for usada uma escala para a classificação e os níveis mínimos na rubrica correspondem ao valor mínimo da escala.';
+$string['zerolevelsabsent'] = 'Atenção: a pontuação mínima possível para esta grelha não é 0; isto pode resultar em notas inesperadas para a atividade. Para evitar esta situação, cada critério deve ter um nível com 0 pontos.<br>
+Este aviso pode ser ignorado se for usada uma escala para a classificação e os níveis mínimos na grelha correspondem ao valor mínimo da escala.';

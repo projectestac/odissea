@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'de', version '3.11'.
+ * Strings for component 'format_topcoll', language 'de', version '4.1'.
  *
  * @package     format_topcoll
  * @category    string
@@ -26,27 +26,29 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addsection'] = 'Abschnitt hinzufügen';
-$string['arrow'] = 'Pfeil abgerundet';
-$string['bulb'] = 'Glühbirne';
+$string['arrow'] = 'Pfeil';
+$string['bulb'] = 'Glühlampe';
 $string['cachedef_activitymodulecountcache'] = 'Speichert die Anzahl der Teilnehmer/innen, die auf ein bestimmtes Modul in einem bestimmten Kurs zugreifen können.';
 $string['cachedef_activitystudentrolescache'] = 'Speichert die Rollen der Teilnehmer/innen';
 $string['cachedef_activitystudentscache'] = 'Speichert die IDs der Teilnehmer/innen für einen bestimmten Kurs';
-$string['cachedef_activityusercreatedcache'] = 'Speichert die IDs der neuen Nutzer/innen für einen bestimmten Kurs';
+$string['cachedef_activityusercreatedcache'] = 'Speichert die IDs von neuen Nutzer/innen für einen bestimmten Kurs';
 $string['cannotgetactivitycacheslock'] = 'Die Sperre der Aktivitäts-Caches für die Kurs-ID {$a} kann nicht abgerufen werden.';
 $string['center'] = 'Zentriert';
 $string['cloud'] = 'Wolke';
 $string['colourrule'] = 'Geben Sie bitte eine gültige RGB-Farbe (z.B. #336699) oder \'-\' für Standard ein.';
+$string['columndynamic'] = 'Dynamisch';
 $string['columnhorizontal'] = 'Waagerecht';
 $string['columnvertical'] = 'Senkrecht';
 $string['configurationheadingsub'] = 'Konfiguration';
-$string['configurationheadingsubdesc'] = 'Konfigurationseinstellungen';
+$string['configurationheadingsubdesc'] = 'Konfigurationseinstellungen der Website';
 $string['courseadditionalmoddatamaxstudents'] = 'Legen Sie die maximale Anzahl von Teilnehmer/innen in einem Kurs fest, für die "Zusätzliche Infos anzeigen" gelten soll';
-$string['courseadditionalmoddatamaxstudentsdesc'] = 'Die Berechnung zusätzlicher Infos kann einige Zeit dauern, besonders bei großen Kursen. Daher können Sie hier die maximale Anzahl von Teilnehmer/innen festlegen, die ein Kurs haben kann, damit die Funktionalität in diesem Kurs angezeigt wird. Oberhalb dieses Wertes werden die \'Zusätzlichen Infos\' unabhängig von den Kurseinstellungen NICHT berechnet oder angezeigt! Ein Wert von \'0\' bedeutet \'unbegrenzt\'. Hinweis: Löscht die Cache-Caches, wenn sie geändert werden.';
+$string['courseadditionalmoddatamaxstudentsdesc'] = 'Die Berechnung zusätzlicher Infos kann einige Zeit dauern, besonders bei großen Kursen. Deswegen können Sie hier die maximale Anzahl von Teilnehmer/innen im Kurs festlegen, damit die Funktionalität angezeigt werden kann. Bei einer größeren Anzahl werden die \'Zusätzlichen Infos\' unabhängig von den Kurseinstellungen NICHT berechnet uns NICHT angezeigt! Ein Wert von \'0\' bedeutet \'unbegrenzt\'. Hinweis: Die Caches werden gelöscht, wenn der Wert geändert wird.';
 $string['courseadditionalmoddatastudentsinfo'] = 'Status für zusätzliche Infos';
 $string['courseadditionalmoddatastudentsinfolimitednoshow'] = 'Zusätzliche Infos werden für die aktivierten Aktivitäten für {$a->students} Teilnehmer/innen NICHT angezeigt, da die maximale Anzahl {$a->maxstudents} überschritten ist, die administrativ in der Einstellung "courseadditionalmoddatamaxstudents" Für das Format "komprimierte Abschnitte" festgelegt wurde.';
-$string['courseadditionalmoddatastudentsinfolimitedshow'] = 'Zusätzliche Infos werden für die aktivierten Aktivitäten für {$a->students} Teilnehmer/innen angezeigt, da maximale Anzahl {$a->maxstudents} nicht überschritten ist, die administrativ in der Einstellung "courseadditionalmoddatamaxstudents" Für das Format "komprimierte Abschnitte" festgelegt wurde.';
+$string['courseadditionalmoddatastudentsinfolimitedshow'] = 'Zusätzliche Infos werden für die aktivierten Aktivitäten für {$a->students} Teilnehmer/innen angezeigt, wenn die maximale Anzahl {$a->maxstudents} nicht überschritten wird. Der Wert wurde von den Administrator/innen  mit der Einstellung "courseadditionalmoddatamaxstudents" für das Format "komprimierte Abschnitte" festgelegt.';
 $string['courseadditionalmoddatastudentsinfounlimited'] = 'Zusätzliche Infos werden für die aktivierten Aktivitäten für {$a} Teilnehmer/innen  angezeigt.';
 $string['coursesectionactivityfurtherinformation'] = 'Weitere Infos der Kursseite';
+$string['coursesectionactivityfurtherinformation_desc'] = 'Weitere Infoeinstellungen für Kursseite auf Website-Ebene';
 $string['coursesectionactivityfurtherinformationassign'] = 'Aufgabeninfos anzeigen';
 $string['coursesectionactivityfurtherinformationassigndesc'] = 'Im Kurs anzuzeigende Aufgabeninfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
 $string['coursesectionactivityfurtherinformationchoice'] = 'Abstimmungsinfos anzeigen';
@@ -67,15 +69,17 @@ $string['ctreset_help'] = 'Die Einstellungen können auf die Standardwerte für 
 $string['currentsection'] = 'Dieser Abschnitt';
 $string['default'] = 'Standardmäßig - {$a}';
 $string['defaultdisplayblocks'] = 'Blöcke zum Anzeigen';
-$string['defaultdisplayblocks_desc'] = 'Wählen Sie die Blöcke aus, die im Kurs angezeigt werden sollen, wenn er zum ersten Mal erstellt wird und dieses Format ausgewählt ist. Verwenden Sie die \'Strg\'-Taste in Kombination mit der Maus, um mehr als eine oder keine auszuwählen. Hinweis: Diese Einstellung gilt nur bei der eigentlichen Kurserstellung und zu keinem anderen Zeitpunkt, d.h. beim Wechsel zu reduzierten Themen von einem anderen Format.';
+$string['defaultdisplayblocks_desc'] = 'Wählen Sie die Blöcke aus, die in einem Kurs angezeigt werden sollen, der mit diesem Format erstellt wird. Eine Mehrfachauswahl bzw. eine Abwahl ist möglich, wenn Sie STRG bzw. CMD zusammen mit der Maus drücken. Hinweis: Diese Einstellung gilt nur bei der Kurserstellung und zu keinem anderen Zeitpunkt, z.B. beim Wechsel von einem anderen Format zu den komprimierten Abschnitten.';
 $string['defaultdisplayblocksloc'] = 'Ort für den Block in der Anzeige';
-$string['defaultdisplayblocksloc_desc'] = 'Wählen Sie den Ort für die ausgewählten Blöcke, um sie anzuzeigen, vor oder nach Seite.';
+$string['defaultdisplayblocksloc_desc'] = 'Wählen Sie den Ort für die ausgewählten Blöcke, um sie anzuzeigen.';
 $string['defaultdisplayinstructions'] = 'Bedienhinweis';
-$string['defaultdisplayinstructions_desc'] = 'Diese Option legt fest, ob ein kurzer Hinweis zur Bedienung angezeigt wird.';
+$string['defaultdisplayinstructions_desc'] = 'Diese Option legt fest, ob ein kurzer Bedienhinweis angezeigt wird.';
 $string['defaultheadingsub'] = 'Standardeinstellungen';
-$string['defaultheadingsubdesc'] = 'Die nachfolgenden Einstellungen werden angenommen, wenn ein Kurs im Format \'komprimierte Abschnitte\' angelegt oder zurückgesetzt wird.';
+$string['defaultheadingsubdesc'] = 'Standardeinstellungen, die auf Kursebene überschrieben werden können';
 $string['defaultlayoutcolumnorientation'] = 'Spaltenrichtung';
-$string['defaultlayoutcolumnorientation_desc'] = 'Die Spaltenrichtung kann senkrecht oder waagerecht sein.';
+$string['defaultlayoutcolumnorientation_desc'] = 'Standardmäßige Spaltenrichtung:
+<br>Dynamisch – Anzahl der Abschnitte pro "Zeile" wird an die Fenstergröße angepasst, die Einstellung "Spalte" wird derzeit nicht verwendet.
+<br>Horizontal – Abschnitte gehen von links nach rechts.<br>Vertikal – Abschnitte gehen von oben nach unten.';
 $string['defaultlayoutcolumns'] = 'Spaltenanzahl';
 $string['defaultlayoutcolumns_desc'] = 'Die Spaltenanzahl kann von 1 bis 4 sein.';
 $string['defaultlayoutelement'] = 'Inhalt der Abschnittstasten';
@@ -84,7 +88,7 @@ $string['defaultlayoutelement_desc'] = 'Die Layouteinstellung kann eine der folg
 <br />Kein \'Thema x\' / \'Woche x\' / \'Tag x\'.
 <br />Keine Abschnittsnummer.
 <br / >Kein \'Thema x\' / \'Woche x\' / \'Tag x\' und keine Abschnittsnummer.
-<br />Kein \'Umschalten\'-Wort.
+<br />Kein \'Umschalten\'.
 <br />Kein \'Umschalten\' und kein \'Thema x\' / \'Woche x \' / \'Tag x\'.
 <br />Kein \'Umschalten\', kein \'Thema x\' / \'Woche x\' / \'Tag x\' und keine Abschnittsnummer.';
 $string['defaultlayoutelement_descpositive'] = 'Die Layouteinstellung kann eine der folgenden sein:
@@ -92,7 +96,7 @@ $string['defaultlayoutelement_descpositive'] = 'Die Layouteinstellung kann eine 
 <br />\'Umschalten\' und \'Thema x\' / \'Woche x\' / \'Tag x\'.
 <br />\'Umschalten\' und Abschnittsnummer.
 <br />\'Thema x\' / \'Woche x\' / \'Tag x\' und Abschnittsnummer.
-<br />\'Umschalten‘-Wort.
+<br />\'Umschalten‘.
 <br />\'Thema x\' / \'Woche x\' / \'Tag x\'.
 <br />Abschnittsnummer.
 <br />Ohne Zusätze.';
@@ -100,36 +104,39 @@ $string['defaultlayoutstructure'] = 'Abschnittsformat';
 $string['defaultlayoutstructure_desc'] = 'Die Struktureinstellung kann eine der folgenden sein:
 <br />Thema
 <br />Woche
-<br />Neueste Woche zuerst
-<br />Aktuelles Thema zuerst<br />Tag';
-$string['defaultonesection'] = 'Ein Abschnitt';
-$string['defaultonesection_desc'] = 'Diese Option legt fest, dass immer nur genau ein Abschnitt zur gleichen Zeit angezeigt werden soll. Während der Kurs bearbeitet wird, wird diese Einstellung ignoriert, um Drag&Drop zu ermöglichen.';
+<br />Aktuelle Woche zuerst
+<br />Aktuelles Thema zuerst
+<br />Tag';
+$string['defaultonesection'] = 'Nur ein Abschnitt';
+$string['defaultonesection_desc'] = 'Diese Option legt fest, dass immer nur ein Abschnitt angezeigt wird. Beim Bearbeiten des Kurses wird die Einstellung ignoriert, um Aktivitäten und Ressourcen bewegen zu können.';
+$string['defaultonesectioniconfont'] = 'Icon Font für "Nur ein Abschnitt"';
+$string['defaultonesectioniconfont_desc'] = 'Geben Sie die Icon-Font-Klasse an, die für das Link-Icon mit einem Abschnitt verwendet werden soll, d.h. FontAwesome-Icon-Klassen. Wenn leer, wird das Standardsymbol "Nur ein Abschnitt" im Verzeichnis "pix" des Formats verwendet.';
 $string['defaultshowadditionalmoddata'] = 'Standardmäßiges \'Weitere Infos anzeigen\' im Kurs';
 $string['defaultshowadditionalmoddatadesc'] = 'Wenn eine Aktivität auf Website-Ebene (unten) so eingestellt ist, dass zusätzliche Infos angezeigt werden, gibt diese Einstellung den Standardstatus der kursspezifischen Instanz davon an.';
-$string['defaultshowsectionsummary'] = 'Abschnittsbeschreibung anzeigen';
-$string['defaultshowsectionsummary_desc'] = 'Diese Option legt fest, ob die Abschnittsbeschreibungen angezeigt werden, auch wenn die Abschnitte eingeklappt sind.';
+$string['defaultshowsectionsummary'] = 'Abschnittsbeschreibung anzeigen, wenn zugeklappt';
+$string['defaultshowsectionsummary_desc'] = 'Diese Option legt fest, ob die Abschnittsbeschreibungen angezeigt werden, auch wenn die Abschnitte zugeklappt sind.';
 $string['defaulttgbgcolour'] = 'Hintergrundfarbe';
-$string['defaulttgbgcolour_desc'] = 'Hintergrundfarbe als Hexadezimal-RGB';
+$string['defaulttgbgcolour_desc'] = 'Diese Option legt die Hintergrundfarbe als Hexadezimal-RGB fest.';
 $string['defaulttgbghvrcolour'] = 'Hintergrundfarbe bei Mauskontakt';
-$string['defaulttgbghvrcolour_desc'] = 'Hintergrundfarbe bei Mauskontakt als Hexadezimal-RGB';
+$string['defaulttgbghvrcolour_desc'] = 'Diese Option legt die Hintergrundfarbe bei Mauskontakt als Hexadezimal-RGB fest.';
 $string['defaulttgbghvropacity'] = 'Deckkraft der Hintergrundfarbe bei Mauskontakt';
-$string['defaulttgbghvropacity_desc'] = 'Legt die Deckkraft des Hintergrunds zwischen 0 und 1 in 0.1-Abständen fest. Aktiv, während die Fläche von der Maus berührt wird.';
+$string['defaulttgbghvropacity_desc'] = 'Die Option legt die Deckkraft des Hintergrunds bei Mauskontakt zwischen 0 und 1 in 0.1-Abständen fest.';
 $string['defaulttgbgopacity'] = 'Deckkraft der Hintergrundfarbe';
-$string['defaulttgbgopacity_desc'] = 'Legt die Deckkraft des Hintergrunds zwischen 0 und 1 in 0.1-Abständen fest.';
+$string['defaulttgbgopacity_desc'] = 'Die Option legt die Deckkraft des Hintergrunds zwischen 0 und 1 in 0.1-Abständen fest.';
 $string['defaulttgfgcolour'] = 'Textfarbe';
-$string['defaulttgfgcolour_desc'] = 'Textfarbe als Hexadezimal-RGB';
+$string['defaulttgfgcolour_desc'] = 'Diese Option legt die Textfarbe als Hexadezimal-RGB fest.';
 $string['defaulttgfghvrcolour'] = 'Textfarbe bei Mauskontakt';
-$string['defaulttgfghvrcolour_desc'] = 'Textfarbe bei Mauskontakt als Hexadezimal-RGB';
+$string['defaulttgfghvrcolour_desc'] = 'Die Option legt die Textfarbe bei Mauskontakt als Hexadezimal-RGB fest.';
 $string['defaulttgfghvropacity'] = 'Deckkraft der Textfarbe bei Mauskontakt';
-$string['defaulttgfghvropacity_desc'] = 'Legt die Deckkraft des Texts zwischen 0 und 1 in 0.1-Abständen fest. Aktiv, während die Fläche von der Maus berührt wird.';
+$string['defaulttgfghvropacity_desc'] = 'Diese Option legt die Deckkraft des Texts bei Mauskontakt zwischen 0 und 1 in 0.1-Abständen fest.';
 $string['defaulttgfgopacity'] = 'Deckkraft der Textfarbe';
-$string['defaulttgfgopacity_desc'] = 'Legt die Deckkraft des Texts zwischen 0 und 1 in 0.1-Abständen fest.';
+$string['defaulttgfgopacity_desc'] = 'Diese Option legt die Deckkraft des Texts zwischen 0 und 1 in 0.1-Abständen fest.';
 $string['defaulttogglealignment'] = 'Textausrichtung';
-$string['defaulttogglealignment_desc'] = 'Die Abschnittstitel können linksbündig, zentriert oder rechtsbündig angezeigt werden.';
+$string['defaulttogglealignment_desc'] = 'Diese Option legt die Ausrichtung der Abschnittstitel fest, also links, zentriert oder rechts.';
 $string['defaulttoggleallenabled'] = '"Alle umschalten" aktiviert';
-$string['defaulttoggleallenabled_desc'] = 'Gibt an, ob "Alle umschalten" aktiviert werden soll.';
+$string['defaulttoggleallenabled_desc'] = 'Diese Option legt fest, ob "Alle umschalten" aktiviert werden soll.';
 $string['defaulttoggleallhover'] = 'Symbol \'Alle\' bei Mauskontakt umschalten';
-$string['defaulttoggleallhover_desc'] = 'Die Option legt fest, ob die Symbole für \'Alle aufklappen\' und \'Alle schließen\' bei Mauskontakt umschalten.';
+$string['defaulttoggleallhover_desc'] = 'Die Option legt fest, ob die Symbole für \'Alle aufklappen\' und \'Alle zuklappen\' bei Mauskontakt umschalten.';
 $string['defaulttoggleborderradiusbl'] = 'Radius links unten';
 $string['defaulttoggleborderradiusbl_desc'] = 'Die Option legt die Rundung der Abschnittstasten links unten fest.';
 $string['defaulttoggleborderradiusbr'] = 'Radius rechts unten';
@@ -138,18 +145,22 @@ $string['defaulttoggleborderradiustl'] = 'Radius links oben';
 $string['defaulttoggleborderradiustl_desc'] = 'Die Option legt die Rundung der Abschnittstasten links oben fest.';
 $string['defaulttoggleborderradiustr'] = 'Radius rechts oben';
 $string['defaulttoggleborderradiustr_desc'] = 'Die Option legt die Rundung der Abschnittstasten rechts oben fest.';
+$string['defaulttoggleiconfontclosed'] = 'Geschlossenes Umschalten für Icon Font';
+$string['defaulttoggleiconfontclosed_desc'] = 'Wenn "defaulttoggleiconset" auf "Icon Font" gesetzt ist, gibt dies die Standard-CSS-Klassen an, die für das geschlossene Symbol verwendet werden sollen. Siehe FontAwesome-Icon-Klassen.';
+$string['defaulttoggleiconfontopen'] = 'Umschalten "Icon Font" öffnen';
+$string['defaulttoggleiconfontopen_desc'] = 'Wenn "defaulttoggleiconset" auf "Icon Font" gesetzt ist, gibt dies die Standard-CSS-Klassen an, die für das geöffnete Symbol verwendet werden sollen. Siehe die FontAwesome-Icon-Klassen.';
 $string['defaulttoggleiconposition'] = 'Icon Position';
-$string['defaulttoggleiconposition_desc'] = 'Standardeinstellung für die Position des Umschalticons. Darstellung ist links oder rechts vom Text möglich.';
+$string['defaulttoggleiconposition_desc'] = 'Die Option legt fest, ob  für das Icon links oder rechts vom Text sen soll.';
 $string['defaulttoggleiconset'] = 'Symbol';
-$string['defaulttoggleiconset_desc'] = 'Diese Option legt fest, welches Symbol standardmäßig auf den Abschnittstasten angezeigt wird.';
+$string['defaulttoggleiconset_desc'] = '<table><tbody><tr><td>Arrow</td><td>{$a->arrow}</td></tr><tr><td>Bulb</td><td>{$a->bulb}</td></tr><tr><td>Cloud</td><td>{$a->cloud}</td></tr><tr><td>Eye</td><td>{$a->eye}</td></tr><tr><td>Folder</td><td>{$a->folder}</td></tr><tr><td>Ground Signal</td><td>{$a->groundsignal}</td></tr><tr><td>Light Emitting Diode</td><td>{$a->led}</td></tr><tr><td>Point</td><td>{$a->point}</td></tr><tr><td>Power</td><td>{$a->power}</td></tr><tr><td>Radio</td><td>{$a->radio}</td></tr><tr><td>Smiley</td><td>{$a->smiley}</td></tr><tr><td>Square</td><td>{$a->square}</td></tr><tr><td>Sun / Moon</td><td>{$a->sunmoon}</td></tr><tr><td>Switch</td><td>{$a->switch}</td></tr><tr><td>Icon font</td><td>{$a->tif}</td></tr></tbody></table>';
 $string['defaulttoggleiconsize'] = 'Symbolgröße';
-$string['defaulttoggleiconsize_desc'] = 'Die Symbolgröße kann klein (=16px), mittel (=24px) oder groß (=32px) sein.';
+$string['defaulttoggleiconsize_desc'] = 'Symbolgröße: Small = 16px, Medium = 24px and Large = 32px, oder Icon Font: Small = 0.8em, Medium = 1.2em and Large = 1.8em.';
 $string['defaulttogglepersistence'] = 'Schaltzustand merken';
 $string['defaulttogglepersistence_desc'] = '\'An oder aus\'. Deaktivieren Sie diese Option, um die AJAX-Leistung zu steigern, aber die Umschaltauswahl von Nutzer/innen wird bei einer Seitenaktualisierung oder einem erneuten Besuch nicht gespeichert.<br />Hinweis: Wenn Sie die Persistenz deaktivieren, entfernen Sie bitte alle Zeilen, die \'topcoll_toggle_x\' im Feld \'name\' der Tabelle \'user_preferences\' enthalten. Wobei das "x" in "topcoll_toggle_x" eine Kurs-ID ist. Dies dient der Platzersparnis, wenn Sie nicht beabsichtigen, es wieder einzuschalten.';
 $string['defaultuserpreference'] = 'Schaltzustand beim ersten Aufruf';
 $string['defaultuserpreference_desc'] = 'Diese Option legt fest, ob Nutzer/innen beim ersten Aufruf eines Kurses standardmäßig alle Abschnitte geöffnet oder geschlossen angezeigt bekommen.';
-$string['defaultviewsinglesectionenabled'] = '"Einzelne Abschnitte anzeigen" aktiviert';
-$string['defaultviewsinglesectionenabled_desc'] = 'Gibt an, ob "Einzelne Abschnitte anzeigen" aktiviert werden soll.';
+$string['defaultviewsinglesectionenabled'] = '"Nur ein Abschnitt" aktiviert';
+$string['defaultviewsinglesectionenabled_desc'] = 'Die Option legt fest, ob "Nur ein Abschnitt" aktiviert werden soll.';
 $string['deletesection'] = 'Abschnitt löschen';
 $string['displayinstructions'] = 'Bedienhinweis';
 $string['displayinstructions_help'] = 'Diese Option legt fest, ob ein kurzer Hinweis zur Bedienung angezeigt wird.';
@@ -214,6 +225,10 @@ $string['formatsettingsinformation'] = '<br />Klicken Sie auf das Symbol rechts,
 $string['four'] = '4';
 $string['groundsignal'] = 'Massesignal';
 $string['hidefromothers'] = 'Abschnitt verbergen';
+$string['information'] = 'Infos';
+$string['informationchanges'] = 'Änderungen';
+$string['informationsettings'] = 'Einstellungen für Infos';
+$string['informationsettingsdesc'] = 'Infos zum Format "komprimierte Abschnitte"';
 $string['instructions'] = 'Hinweis: Ein Klick auf den Abschnittsnamen blendet den Inhalt ein oder aus.';
 $string['large'] = 'Groß';
 $string['layoutstructuredays'] = 'Tage';
@@ -221,6 +236,7 @@ $string['layoutstructuretopics'] = 'Themen';
 $string['layoutstructureweeks'] = 'Wochen';
 $string['led'] = 'LED';
 $string['left'] = 'Links';
+$string['love'] = 'Liebe';
 $string['maincoursepage'] = 'Kursübersicht';
 $string['markedthissection'] = 'Dieser Abschnitt ist als aktueller Abschnitt markiert';
 $string['markthissection'] = 'Markieren Sie diesen Abschnitt als den aktuellen Abschnitt';
@@ -230,80 +246,80 @@ $string['numbersections'] = 'Anzahl der Abschnitte';
 $string['off'] = 'Aus';
 $string['on'] = 'An';
 $string['one'] = '1';
-$string['onesection'] = 'Ein Abschnitt';
-$string['onesection_help'] = 'Diese Option legt fest, dass immer nur genau ein Abschnitt zur gleichen Zeit angezeigt werden soll. (Während der Kurs bearbeitet wird, wird diese Einstellung ignoriert, um Drag&Drop zu ermöglichen.)';
+$string['onesection'] = 'Nur ein Abschnitt';
+$string['onesection_help'] = 'Diese Option legt fest, dass immer nur ein Abschnitt angezeigt wird. Beim Bearbeiten des Kurses wird die Einstellung ignoriert, um Aktivitäten und Ressourcen bewegen zu können.';
 $string['page-course-view-topcoll'] = 'Jede Kurshauptseite im Format \'komprimierte Abschnitte\'';
 $string['page-course-view-topcoll-x'] = 'Jede Kursseite im Format \'komprimierte Abschnitte\'';
 $string['pluginname'] = 'Komprimierte Abschnitte';
-$string['point'] = 'Pfeil';
+$string['point'] = 'Punkt';
 $string['power'] = 'Plus / Minus';
 $string['privacy:metadata:preference:toggle'] = 'Auf-/Zuklappzustand innerhalb der Kurse';
 $string['privacy:request:preference:toggle'] = 'Für den Kurs mit der ID "{$a->name}" ist "{$a->value}" gespeichert, d.h. der Zustand ist "{$a->decoded}".';
 $string['progresscounter'] = 'Aktivitäten werden dupliziert ({$a->current}/{$a->size})';
 $string['progressfull'] = 'Abschnitt wird dupliziert ....';
 $string['radio'] = 'Radiobutton';
-$string['readme_desc'] = 'In der Datei \'{$a->url}\' finden Sie weitere Informationen zum Kursformat \'komprimierte Abschnitte\'.';
+$string['readme_desc'] = 'Weitere Infos zum Kursformat \'komprimierte Abschnitte\' finden Sie unter \'{$a->url}\' .';
 $string['readme_title'] = 'Weitere Infos';
-$string['rebuildcoursecache'] = 'Kurscache neu bauen';
+$string['rebuildcoursecache'] = 'Kurscache neu erstellen';
 $string['resetactivitymeta'] = 'Zusätzliche Modulinfo';
 $string['resetactivitymeta_help'] = 'Zusätzliche Modulinfo zurücksetzen, um den Standardwert für die Website einzustellen.';
 $string['resetallactivitymeta'] = 'Alle zusätzlichen Modulinfos';
 $string['resetallactivitymeta_help'] = 'Alle zusätzliche Modulinfos zurücksetzen, um die jeweiligen Standardwerte für die Website einzustellen.';
-$string['resetallcolour'] = 'Farbe';
+$string['resetallcolour'] = 'Farben';
 $string['resetallcolour_help'] = 'Die Einstellungen für Farben und Transparenz werden auf die Standardwerte der Website zurückgesetzt.';
 $string['resetalldisplayinstructions'] = 'Bedienhinweis';
-$string['resetalldisplayinstructions_help'] = 'Die Einstellung für die Anzeige des Bedienhinweises wird auf die Standardwerte der Website zurückgesetzt.';
+$string['resetalldisplayinstructions_help'] = 'Die Einstellung für die Anzeige des Bedienhinweises wird auf den Standardwert der Website zurückgesetzt.';
 $string['resetallgrp'] = 'Alle zurücksetzen:';
-$string['resetalllayout'] = 'Inhalt';
-$string['resetalllayout_help'] = 'Alle Einstellungen für Layoutelement, Struktur, Spalten, Umschalten, Einzelabschnitt, Symbolposition, und die angezeigte Abschnittsbeschreibung werden auf die Standardwerte der Website zurückgesetzt.';
+$string['resetalllayout'] = 'Layouts';
+$string['resetalllayout_help'] = 'Alle Einstellungen für das Layoutelement, wie Struktur, Spalten, alles umschalten, nur ein Abschnitt, Symbolposition und die angezeigte Abschnittsbeschreibung, werden auf die Standardwerte der Website zurückgesetzt.';
 $string['resetalltogglealignment'] = 'Ausrichtung';
-$string['resetalltogglealignment_help'] = 'Die Einstellung für die Ausrichtung des Abschnittstitels wird auf die Standardwerte der Website zurückgesetzt.';
+$string['resetalltogglealignment_help'] = 'Die Einstellung für die Ausrichtung des Abschnittstitels wird auf den Standardwert der Website zurückgesetzt.';
 $string['resetalltoggleiconset'] = 'Symbol';
 $string['resetalltoggleiconset_help'] = 'Die Einstellungen für das Symbol werden auf die Standardwerte der Website zurückgesetzt.';
 $string['resetcolour'] = 'Farbe';
 $string['resetcolour_help'] = 'Die Einstellungen für Farben und Transparenz werden auf die Standardwerte zurückgesetzt.';
 $string['resetdisplayinstructions'] = 'Bedienhinweis';
-$string['resetdisplayinstructions_help'] = 'Die Einstellung für die Anzeige des Bedienhinweises wird auf die Standardwerte der Website zurückgesetzt.';
+$string['resetdisplayinstructions_help'] = 'Die Einstellung für die Anzeige des Bedienhinweises wird auf den Standardwert der Website zurückgesetzt.';
 $string['resetgrp'] = 'Zurücksetzen:';
 $string['resetlayout'] = 'Inhalt';
-$string['resetlayout_help'] = 'Alle Einstellungen für Layoutelement, Struktur, Spalten, Umschalten, Einzelabschnitt, Symbolposition, und die angezeigte Abschnittsbeschreibung werden auf die Standardwerte der Website zurückgesetzt.';
+$string['resetlayout_help'] = 'Alle Einstellungen für das Layoutelement, wie Struktur, Spalten, alles umschalten, nur ein Abschnitt, Symbolposition und die angezeigte Abschnittsbeschreibung, werden auf die Standardwerte der Website zurückgesetzt.';
 $string['resettogglealignment'] = 'Ausrichtung';
-$string['resettogglealignment_help'] = 'Die Einstellung für die Ausrichtung des Abschnittstitels wird auf die Standardwerte der Website zurückgesetzt.';
+$string['resettogglealignment_help'] = 'Die Einstellung für die Ausrichtung des Abschnittstitels wird auf den Standardwert der Website zurückgesetzt.';
 $string['resettoggleiconset'] = 'Symbol';
 $string['resettoggleiconset_help'] = 'Die Einstellungen für das Symbol werden auf die Standardwerte der Website zurückgesetzt.';
 $string['right'] = 'Rechts';
-$string['sctcloseall'] = 'Alle {$a} schließen';
+$string['sctcloseall'] = 'Alle {$a} zuklappen';
 $string['sctopenall'] = 'Alle {$a} öffnen';
 $string['section0name'] = 'Allgemein';
 $string['sectionname'] = 'Abschnitt';
 $string['setcolour'] = 'Farbe';
 $string['setcolour_help'] = 'Farbeinstellung für Text, Hintergrund und Hintergrund bei Mauskontakt';
 $string['setlayout'] = 'Layout festlegen';
-$string['setlayout_all'] = 'Anzeigen von Thema/Woche/Tag';
-$string['setlayout_default'] = 'Alle Elemente';
+$string['setlayout_all'] = 'Umschalten, \'Thema x\' / \'Woche x\' / \'Tag x\' und Abschnittsnummer';
+$string['setlayout_default'] = 'Standard';
 $string['setlayout_help'] = 'Auswahl der Informationen, die zusätzlich zum Abschnittstitel angezeigt werden sollen.';
-$string['setlayout_no_additions'] = 'Kein Element anzeigen';
-$string['setlayout_no_section_no'] = '"Umschalten" und Thema/Woche/Tag';
-$string['setlayout_no_toggle_section_x'] = '"Umschalten" und Abschnittsnummer';
-$string['setlayout_no_toggle_section_x_section_no'] = '"Umschalten"';
-$string['setlayout_no_toggle_word'] = 'Abschnittsnummer und Thema/Woche/Tag';
-$string['setlayout_no_toggle_word_toggle_section_x'] = 'Abschnittsnummer';
-$string['setlayout_no_toggle_word_toggle_section_x_section_no'] = 'Kein Element anzeigen';
+$string['setlayout_no_additions'] = 'Keine Zusätze';
+$string['setlayout_no_section_no'] = 'Keine Abschnittsnummer';
+$string['setlayout_no_toggle_section_x'] = 'Kein Abschnitt x';
+$string['setlayout_no_toggle_section_x_section_no'] = 'Kein Abschnitt x, keine Abschnittsnummer';
+$string['setlayout_no_toggle_word'] = 'Kein Umschalten';
+$string['setlayout_no_toggle_word_toggle_section_x'] = 'Kein Umschalten, kein Abschnitt x';
+$string['setlayout_no_toggle_word_toggle_section_x_section_no'] = 'Kein Umschalten, kein Abschnitt x, keine Abschnittsnummer';
 $string['setlayout_section_number'] = 'Abschnittsnummer';
-$string['setlayout_toggle_section_x'] = '\'Thema x\'/\'Woche x\'/\'Tag x\'';
-$string['setlayout_toggle_section_x_section_number'] = 'Thema/Woche/Tag und Abschnittsnummer';
-$string['setlayout_toggle_word'] = '"Umschalten"';
-$string['setlayout_toggle_word_section_number'] = '"Umschalten" und Abschnittsnummer';
-$string['setlayout_toggle_word_section_x'] = '"Umschalten" und \'Thema x\'/\'Woche x\'/\'Tag x\'';
+$string['setlayout_toggle_section_x'] = '\'Thema x\' / \'Woche x\' / \'Tag x\'';
+$string['setlayout_toggle_section_x_section_number'] = '\'Thema x\' / \'Woche x\' / \'Tag x\', Abschnittsnummer';
+$string['setlayout_toggle_word'] = 'Umschalten';
+$string['setlayout_toggle_word_section_number'] = 'Umschalten, Abschnittsnummer';
+$string['setlayout_toggle_word_section_x'] = 'Umschalten, \'Thema x\' / \'Woche x\' / \'Tag x\'';
 $string['setlayoutcolumnorientation'] = 'Spaltenrichtung festlegen';
-$string['setlayoutcolumnorientation_help'] = 'Senkrecht - Abschnitte werden von oben nach unten angeordnet
-
+$string['setlayoutcolumnorientation_help'] = 'Dynamisch - die Anzahl der Abschnitte pro \'Reihe\' passt sich automatisch an die Fensterbreite an. \'Spalten\' wird nicht benutzt.<br>
+Senkrecht - Abschnitte werden von oben nach unten angeordnet<br>
 Waagerecht - Abschnitte werden von links nach rechts angeordnet';
-$string['setlayoutcolumns'] = 'Spalten festlegen';
-$string['setlayoutcolumns_help'] = 'Wie viele Spalten sollen benutzt werden?';
+$string['setlayoutcolumns'] = 'Spalten';
+$string['setlayoutcolumns_help'] = 'Wie viele Spalten sollen verwendet werden?';
 $string['setlayoutelements'] = 'Inhalt der Abschnittstasten';
 $string['setlayoutelements_help'] = 'Welche Informationen sollen auf den Abschnittstasten angezeigt werden?';
-$string['setlayoutstructure'] = 'Abschnittsformat';
+$string['setlayoutstructure'] = 'Struktur';
 $string['setlayoutstructure_help'] = 'Diese Option legt das Abschnittsformat für den Kurs fest.
 
 Thema  - Jeder Abschnitt ist ein Thema in der Reihenfolge der Abschnittsnummer.
@@ -320,36 +336,43 @@ $string['setlayoutstructureday'] = 'Tag';
 $string['setlayoutstructurelatweekfirst'] = 'Woche - aktuelle Woche zuerst';
 $string['setlayoutstructuretopic'] = 'Thema';
 $string['setlayoutstructureweek'] = 'Woche';
-$string['setshowsectionsummary'] = 'Abschnittsbeschreibung anzeigen';
-$string['setshowsectionsummary_help'] = 'Diese Option legt fest, ob die Abschnittsbeschreibungen angezeigt werden, auch wenn die Abschnitte eingeklappt sind.';
+$string['setshowsectionsummary'] = 'Abschnittsbeschreibung anzeigen, wenn zugeklappt';
+$string['setshowsectionsummary_help'] = 'Diese Option legt fest, ob die Abschnittsbeschreibungen angezeigt werden, auch wenn die Abschnitte zugeklappt sind.';
+$string['settings'] = 'Einstellungen';
+$string['settingssettings'] = 'Einstellungen';
+$string['settingssettingsdesc'] = 'Einstellungen zum Format "komprimierte Abschnitte"';
 $string['settogglealignment'] = 'Textausrichtung';
-$string['settogglealignment_help'] = 'Der Abschnittstitel kann linksbündig, zentriert oder rechtsbündig angezeigt werden.';
+$string['settogglealignment_help'] = 'Der Abschnittstitel kann links, zentriert oder rechts angezeigt werden.';
 $string['settoggleallenabled'] = '"Alle umschalten" aktiviert';
 $string['settoggleallenabled_help'] = '"Alle anzeigen" ist aktiviert.';
 $string['settoggleallhover'] = 'Symbol \'Alle\' bei Mauskontakt umschalten';
-$string['settoggleallhover_help'] = 'Die Option legt fest, ob die Symbole für \'Alle aufklappen\' und \'Alle schließen\' bei Mauskontakt umschalten.';
+$string['settoggleallhover_help'] = 'Die Option legt fest, ob die Symbole für \'Alle aufklappen\' und \'Alle zuklappen\' bei Mauskontakt umschalten.';
 $string['settogglebackgroundcolour'] = 'Hintergrundfarbe';
-$string['settogglebackgroundcolour_help'] = 'Auswahl der Hintergrundfarbe';
+$string['settogglebackgroundcolour_help'] = 'Die Option legt die Hintergrundfarbe fest.';
 $string['settogglebackgroundhovercolour'] = 'Hintergrundfarbe bei Mauskontakt';
-$string['settogglebackgroundhovercolour_help'] = 'Auswahl der Hintergrundfarbe bei Mauskontakt';
-$string['settogglebackgroundhoveropacity'] = 'Deckkraft der Hintergrundfarbe bei Mauskontakt';
-$string['settogglebackgroundhoveropacity_help'] = 'Legt die Deckkraft des Hintergrunds zwischen 0 und 1 in 0.1-Abständen fest. Aktiv, während die Fläche von der Maus berührt wird.';
-$string['settogglebackgroundopacity'] = 'Deckkraft der Hintergrundfarbe';
-$string['settogglebackgroundopacity_help'] = 'Legt die Deckkraft des Hintergrunds zwischen 0 und 1 in 0.1-Abständen fest.';
+$string['settogglebackgroundhovercolour_help'] = 'Die Option legt die Hintergrundfarbe bei Mauskontakt fest.';
+$string['settogglebackgroundhoveropacity'] = 'Deckkraft der Hintergrunds bei Mauskontakt';
+$string['settogglebackgroundhoveropacity_help'] = 'Die Option legt die Deckkraft des Hintergrunds bei Mauskontakt zwischen 0 und 1 in 0.1-Abständen fest.';
+$string['settogglebackgroundopacity'] = 'Deckkraft des Hintergrunds';
+$string['settogglebackgroundopacity_help'] = 'Die Option legt die Deckkraft des Hintergrunds zwischen 0 und 1 in 0.1-Abständen fest.';
 $string['settoggleforegroundcolour'] = 'Textfarbe';
-$string['settoggleforegroundcolour_help'] = 'Auswahl der Textfarbe';
+$string['settoggleforegroundcolour_help'] = 'Die Option legt die Textfarbe fest.';
 $string['settoggleforegroundhovercolour'] = 'Textfarbe bei Mauskontakt';
-$string['settoggleforegroundhovercolour_help'] = 'Auswahl der Vordergrundfarbe bei Mauskontakt';
+$string['settoggleforegroundhovercolour_help'] = 'Die Option legt die Textfarbe bei Mauskontakt fest.';
 $string['settoggleforegroundhoveropacity'] = 'Deckkraft der Textfarbe bei Mauskontakt';
-$string['settoggleforegroundhoveropacity_help'] = 'Legt die Deckkraft des Texts zwischen 0 und 1 in 0.1-Abständen fest.';
+$string['settoggleforegroundhoveropacity_help'] = 'Die Option legt die Deckkraft der Textfarbe bei Mauskontakt zwischen 0 und 1 in 0.1-Abständen fest.';
 $string['settoggleforegroundopacity'] = 'Deckkraft der Textfarbe';
-$string['settoggleforegroundopacity_help'] = 'Legt die Deckkraft des Texts zwischen 0 und 1 in 0.1-Abständen fest. Aktiv, während die Fläche von der Maus berührt wird.';
+$string['settoggleforegroundopacity_help'] = 'Die Option legt die Deckkraft der Textfarbe zwischen 0 und 1 in 0.1-Abständen fest.';
+$string['settoggleiconfontclosed'] = 'Umschalten "Icon Font" schließen';
+$string['settoggleiconfontclosed_help'] = 'Wenn \'toggleiconset\' auf \'Icon font\' gesetzt ist, gibt dies die Standard-CSS-Klassen an, die für das geschlossene Symbol verwendet werden sollen. Siehe die FontAwesome-Icon-Klassen. Wenn auf \'-\' gesetzt, wird die Standardeinstellung verwendet.';
+$string['settoggleiconfontopen'] = 'Umschalten "Icon Font" öffnen';
+$string['settoggleiconfontopen_help'] = 'Wenn \'toggleiconset\' auf \'Icon font\' gesetzt ist, gibt dies die Standard-CSS-Klassen an, die für das geöffnete Symbol verwendet werden sollen. Siehe die FontAwesome-Icon-Klassen. Wenn auf \'-\' gesetzt, wird die Standardeinstellung verwendet.';
 $string['settoggleiconposition'] = 'Symbolposition';
-$string['settoggleiconposition_help'] = 'Legt fest, ob das Umschalticon links oder rechts vom Text dargestellt wird.';
-$string['settoggleiconset'] = 'Symbol';
-$string['settoggleiconset_help'] = 'Auswahl des Symbols';
-$string['setviewsinglesectionenabled'] = '"Einzelne Abschnitte anzeigen" aktiviert';
-$string['setviewsinglesectionenabled_help'] = '"Einzelne Abschnitte anzeigen" ist aktiviert.';
+$string['settoggleiconposition_help'] = 'Die Option legt fest, ob das Umschalticon links oder rechts vom Text dargestellt wird.';
+$string['settoggleiconset'] = 'Symbolauswahl';
+$string['settoggleiconset_help'] = 'Die Option legt fest, welche Symbolauswahl verwendet wird.';
+$string['setviewsinglesectionenabled'] = '"Nur ein Abschnitt" aktiviert';
+$string['setviewsinglesectionenabled_help'] = 'Die Option legt fest, dass "Nur ein Abschnitt" ist aktiviert.';
 $string['showadditionalmoddata'] = 'Zusätzliche Infos für {$a} im Kurs anzeigen';
 $string['showadditionalmoddata_help'] = 'Ermöglichen Sie allen Nutzer/innen, die Aktivitätsfrist anzuzeigen, und Trainer/innen, die Anzahl der Aktivitätseinreichungen auf der Kursseite anzuzeigen.';
 $string['showfromothers'] = 'Abschnitt zeigen';
@@ -361,17 +384,25 @@ $string['square'] = 'Quadrat';
 $string['sunmoon'] = 'Sonne / Mond';
 $string['switch'] = 'Schalter';
 $string['three'] = '3';
+$string['tif'] = 'Icon Font';
+$string['toggleclose'] = 'Schließen';
+$string['toggleopen'] = 'Öffnen';
 $string['topcoll:changeactivitymeta'] = 'Aktivitätsmeta ändern oder zurücksetzen';
 $string['topcoll:changecolour'] = 'Farben der Abschnittstasten ändern';
-$string['topcoll:changelayout'] = 'Inhalt der Abschnittstasten ändern';
+$string['topcoll:changelayout'] = 'Layout der Abschnittstasten ändern';
 $string['topcoll:changetogglealignment'] = 'Ausrichtung der Abschnittstasten ändern';
-$string['topcoll:changetoggleiconset'] = 'Symbol der Abschnittstasten ändern';
+$string['topcoll:changetoggleiconset'] = 'Symbolauswahl der Abschnittstasten ändern';
 $string['topcollall'] = 'Abschnitte.';
-$string['topcollclosed'] = 'Alle schließen';
+$string['topcollclosed'] = 'Alle zuklappen';
 $string['topcollopened'] = 'Alle aufklappen';
 $string['topcollsidewidthlang'] = 'en-28px';
 $string['topcolltoggle'] = 'Umschalten';
 $string['two'] = '2';
+$string['versionalpha'] = 'Alpha-Version - Enthält mit ziemlicher Sicherheit Fehler. Dies ist eine Entwicklungsversion nur für Entwickler! Denken Sie nicht einmal daran, auf einem Produktionsserver zu installieren!';
+$string['versionbeta'] = 'Beta-Version - Enthält wahrscheinlich Fehler. Nur für Administrator/innen auf einem Testserver zum Testen.';
+$string['versioninfo'] = 'Release {$a->release}, Version {$a->version} auf Moodle {$a->moodle}. Gemacht mit {$a->love} in Großbritannien.';
+$string['versionrc'] = 'Release Candidate Version - Kann Fehler enthalten. Überprüfen Sie die Version vollständig auf einem Testserver, bevor Sie einen Produktionsserver in Betracht ziehen.';
+$string['versionstable'] = 'Stabile Version - Könnte Fehler enthalten. Überprüfen Sie die Version auf einen Testserver, bevor Sie ihn auf Ihrem Produktionsserver installieren.';
 $string['viewonly'] = 'Nur \'{$a->sectionname}\' anzeigen';
 $string['xanswered'] = '{$a->completed} haben beantwortet';
 $string['xattempted'] = '{$a->completed} haben versucht';

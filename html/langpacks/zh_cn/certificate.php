@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'zh_cn', version '3.11'.
+ * Strings for component 'certificate', language 'zh_cn', version '4.1'.
  *
  * @package     certificate
  * @category    string
@@ -120,6 +120,7 @@ $string['lastviewed'] = '您最后得到此证书于：';
 $string['letter'] = '信件';
 $string['lockingoptions'] = '锁定选项';
 $string['modulename'] = '证书';
+$string['modulename_link'] = 'Certificate_module';
 $string['modulenameplural'] = '证书';
 $string['mycertificates'] = '我的证书';
 $string['nocertificates'] = '没有证书';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'nl', version '3.11'.
+ * Strings for component 'antivirus', language 'nl', version '4.1'.
  *
  * @package     antivirus
  * @category    string
@@ -30,6 +30,8 @@ $string['antiviruscommonsettings'] = 'Standaard antivirus-instellingen';
 $string['antiviruses'] = 'Antivirusplugins';
 $string['antivirussettings'] = 'Beheer antivirusplugins';
 $string['configantivirusplugins'] = 'Kies de antivirusplugins die je wil gebruiken en rangschik ze in de volgorde waarin je ze wil toepassen.';
+$string['dataerrordesc'] = 'Er is een gegevensscannerfout opgetreden.';
+$string['dataerrorname'] = 'Fout gegevensscanner';
 $string['datainfecteddesc'] = 'Geïnfecteerde gegevens gevonden';
 $string['datainfectedname'] = 'Data geïnfecteerd';
 $string['datastream'] = 'Gegevens';
@@ -52,15 +54,23 @@ $string['enablequarantine'] = 'Quarantaine inschakelen';
 $string['enablequarantine_help'] = 'Wanneer quarantaine ingeschakeld is, zullen alle bestanden die als virus gemarkeerd zijn bewaard worden in een quarantaine-map voor verder onderzoek  ([dataroot]/{$a}).
 De upload naar Moodle zal mislukken.
 Als je een virusscanner op niveau van het bestandssysteem gebruikt, dan moet de quarantaine-map uitgesloten worden van de automatische viruscontrole om ervoor te zorgen dat de bestanden in quarantaine gedetecteerd worden.';
+$string['fileerrordesc'] = 'Er is een bestandsscannerfout opgetreden.';
+$string['fileerrorname'] = 'Fout in bestandsscanner';
 $string['fileinfecteddesc'] = 'Een geïnfecteerd bestand werd verwijderd.';
 $string['fileinfectedname'] = 'Bestand geïnfecteerd';
 $string['notifyemail'] = 'Antivirus-alarm notificatie e-mail';
 $string['notifyemail_help'] = 'Het e-mailadres voor meldingen wanneer een virus gevonden wordt. Indien leeg, zullen alle site-beheerders een melding ontvangen.';
+$string['notifylevel'] = 'Meldingsniveau';
+$string['notifylevel_help'] = 'De verschillende informatieniveaus waarover je op de hoogte wilt worden gehouden';
+$string['notifylevelerror'] = 'Gedetecteerde bedreigingen en scanproblemen';
+$string['notifylevelfound'] = 'Enkel gedtecteerde bedreigingen';
 $string['privacy:metadata'] = 'De antivirus-plugin bewaart geen persoonlijke gegevens.';
 $string['quarantinedfiles'] = 'Bestanden door antivirus in quarantaine geplaatst';
 $string['quarantinedisabled'] = 'Quarantaine uitgeschakeld. Het bestand is niet bewaard.';
 $string['quarantinetime'] = 'Maximale quarantaine-tijd';
 $string['quarantinetime_desc'] = 'Bestanden in quarantaine die ouder zijn dan deze periode zullen verwijderd worden.';
 $string['taskcleanup'] = 'Bestanden in quarantaine opschonen.';
+$string['threshold'] = 'Drempel voor statuscontrole';
+$string['threshold_desc'] = 'Bepaalt hoe ver terug te gaan om te controleren met eerdere resultaten op fouten/waarschuwingen/etc, zoals gerapporteerd in {$a}.';
 $string['unknown'] = 'Onbekend';
 $string['virusfound'] = '{$a->item}  is gescand op virussen en is geïnfecteerd!';

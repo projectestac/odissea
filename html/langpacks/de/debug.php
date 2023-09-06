@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'de', version '3.11'.
+ * Strings for component 'debug', language 'de', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,17 @@ $string['notables'] = 'Keine Tabellen!';
 $string['outputbuffer'] = 'Ausgabepuffer';
 $string['phpvaroff'] = 'Die PHP-Variable \'{$a->name}\' sollte ausgeschaltet werden: {$a->link}';
 $string['phpvaron'] = 'Die PHP-Variable \'{$a->name}\' sollte eingeschaltet werden: {$a->link}';
+$string['reactive_highlightoff'] = 'Hervorhebung AUS';
+$string['reactive_highlighton'] = 'Hervorhebung EIN';
+$string['reactive_instances'] = 'Instanzen reaktivieren:';
+$string['reactive_noinstances'] = 'Diese Seite hat keine reaktivierten Instanzen';
+$string['reactive_pin'] = 'Anpinnen';
+$string['reactive_readmodeoff'] = 'Lesemodus AUS';
+$string['reactive_readmodeon'] = 'Lesemodus EIN';
+$string['reactive_resetpanel'] = 'Panel zurücksetzen';
+$string['reactive_saveingwarning'] = 'Warnung: Das Bearbeiten des Status kann unerwartete Ergebnisse liefern.';
+$string['reactive_statedata'] = 'Statusdaten';
+$string['reactive_unpin'] = 'Abpinnen';
 $string['sessionmissing'] = 'Objekt {$a} fehlt für Session';
 $string['sqlrelyonobsoletetable'] = 'Dieses SQL beinhaltet fehlerhafte Tabellen: {$a}! Ein Entwickler muss den Code korrigieren.';
 $string['stacktrace'] = 'Stack trace';

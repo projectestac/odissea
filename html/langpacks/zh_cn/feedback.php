@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'zh_cn', version '3.11'.
+ * Strings for component 'feedback', language 'zh_cn', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -137,6 +137,7 @@ $string['feedback_is_not_open'] = '此调查反馈未开启';
 $string['feedbackclose'] = '允许回答到';
 $string['feedbackcompleted'] = '{$a->username}已完成{$a->feedbackname}';
 $string['feedbackopen'] = '允许回答从';
+$string['feedbackupdated'] = '反馈已更新。';
 $string['file'] = '文件';
 $string['filter_by_course'] = '按课程筛选';
 $string['handling_error'] = '反馈模块动作处理出错';
@@ -150,10 +151,12 @@ $string['indicator:cognitivedepth'] = '反馈活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在反馈活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '反馈认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到反馈活动提供的认知参与百分比（级别=无查看、查看、提交）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '反馈活动社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在反馈活动中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = '社会反馈';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到反馈活动提供的社会参与度的百分比（级别=不参与、参与者单独参与、参与者与其他人一起参与）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = '信息';
 $string['infotype'] = '信息类型';
 $string['insufficient_responses'] = '问卷数不够';
@@ -179,6 +182,7 @@ $string['minimal'] = '最小值';
 $string['mode'] = '模式';
 $string['modulename'] = '反馈';
 $string['modulename_help'] = '反馈模块可以建立自定义的问卷调查';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = '调查反馈';
 $string['move_item'] = '移动此题';
 $string['multichoice'] = '选择题';
@@ -220,6 +224,7 @@ $string['pagebreak'] = '分页符';
 $string['pluginadministration'] = '反馈管理';
 $string['pluginname'] = '调查反馈';
 $string['position'] = '位置';
+$string['previewquestions'] = '预览问题';
 $string['previous_page'] = '上一页';
 $string['privacy:metadata:completed'] = '反馈意见的提交记录';
 $string['privacy:metadata:completed:anonymousresponse'] = '提交内容是否匿名使用。';
@@ -287,3 +292,4 @@ $string['use_one_line_for_each_value'] = '<br />每个选项只占一行！';
 $string['use_this_template'] = '使用此模板';
 $string['using_templates'] = '选择一个模板';
 $string['vertical'] = '垂直';
+$string['whatfor'] = '您想做什么？';

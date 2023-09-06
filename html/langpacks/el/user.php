@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'el', version '3.11'.
+ * Strings for component 'user', language 'el', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -74,12 +74,12 @@ $string['privacy:metadata:fieldid'] = 'Το αναγνωριστικό που σ
 $string['privacy:metadata:filelink'] = 'Υπάρχουν πολλαπλά διαφορετικά αρχεία για τον χρήστη αποθηκευμένα στον πίνακα αρχείων.';
 $string['privacy:metadata:firstaccess'] = 'Πότε απέκτησε πρόσβαση πρώτη φορά αυτός ο χρήστης.';
 $string['privacy:metadata:firstip'] = 'Η πρώτη διεύθυνση IP που καταγράφηκε';
-$string['privacy:metadata:firstname'] = 'Το πρώτο όνομα του χρήστη.';
+$string['privacy:metadata:firstname'] = 'Το πρώτο/μικρό όνομα του χρήστη.';
 $string['privacy:metadata:firstnamephonetic'] = 'Οι φωνητικές λεπτομέρειες για το (μικρό) όνομα του χρήστη.';
 $string['privacy:metadata:fullname'] = 'Το πλήρες όνομα για αυτό το μάθημα.';
 $string['privacy:metadata:hash'] = 'Μια σύνοψη κατακερματισμού (hash, μη αντιστρεπτή αντιστοίχιση) ενός προηγούμενου κωδικού πρόσβασης.';
 $string['privacy:metadata:icq'] = 'Ο αριθμός ICQ του χρήστη.';
-$string['privacy:metadata:id'] = 'Το αναγνωριστικό για ένα χρήστη.';
+$string['privacy:metadata:id'] = 'Το αναγνωριστικό χρήστη.';
 $string['privacy:metadata:idnumber'] = 'Ένας αναγνωριστικός αριθμός που δίνεται από τον οργανισμό.';
 $string['privacy:metadata:imagealt'] = 'Εναλλακτικό κείμενο για την εικόνα του χρήστη.';
 $string['privacy:metadata:infotablesummary'] = 'Αποθηκεύει προσαρμοσμένη πληροφόρηση χρήστη.';
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'το μυστικό ορίστηκε και
 $string['privacy:metadata:trackforums'] = 'Μια προτίμηση για τα φόρουμ και την παρακολούθησή τους.';
 $string['privacy:metadata:trustbitmask'] = 'Η μάσκα δυαδικών ψηφίων εμπιστοσύνης';
 $string['privacy:metadata:url'] = 'Μια διεύθυνση URL που σχετίζεται με αυτόν τον χρήστη.';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Η χρονοσήμανση που καταγράφηκε όταν εμφανίστηκε το μήνυμα καλωσορίσματος στον χρήστη για πρώτη φορά.';
 $string['privacy:metadata:user_preferences'] = 'Προτιμήσεις που συσχετίζονται με τον συγκεκριμένο χρήστη';
 $string['privacy:metadata:user_preferences:name'] = 'Όνομα προτίμησης';
 $string['privacy:metadata:user_preferences:userid'] = 'Το αναγνωριστικό χρήστη';

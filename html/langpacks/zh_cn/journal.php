@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'zh_cn', version '3.11'.
+ * Strings for component 'journal', language 'zh_cn', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -44,6 +44,7 @@ $string['journalname'] = '心得报告名称';
 $string['journalquestion'] = '心得报告问题';
 $string['mailsubject'] = '心得报告反馈';
 $string['modulename'] = '心得报告';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = '心得报告';
 $string['newjournalentries'] = '新心得报告登记';
 $string['noentry'] = '没有登记';

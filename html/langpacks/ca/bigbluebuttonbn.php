@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ca', version '3.11'.
+ * Strings for component 'bigbluebuttonbn', language 'ca', version '4.1'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -47,16 +47,6 @@ $string['config_importrecordings_enabled_description'] = 'Quan aquesta opció i 
 $string['config_importrecordings_from_deleted_enabled'] = 'S\'ha activat la importació d\'enregistraments des d\'activitats eliminades';
 $string['config_recording_hide_button_default'] = 'Amaga el botó d\'enregistrar';
 $string['config_server_url'] = 'URL del servidor BigBlueButton';
-$string['email_body_notification_meeting_by'] = 'per';
-$string['email_body_notification_meeting_description'] = 'Descripció';
-$string['email_body_notification_meeting_details'] = 'Detalls';
-$string['email_body_notification_meeting_end_date'] = 'Data de finalització';
-$string['email_body_notification_meeting_has_been'] = 'ha estat';
-$string['email_body_notification_meeting_start_date'] = 'Data d\'inici';
-$string['email_body_notification_meeting_title'] = 'Títol';
-$string['email_body_recording_ready_for'] = 'Enregistrament per a';
-$string['email_footer_sent_by'] = 'Aquest missatge de notificació automàtic va ser enviat per';
-$string['email_footer_sent_from'] = 'del curs';
 $string['end_session_confirm'] = 'Segur que voleu acabar la sessió?';
 $string['end_session_confirm_title'] = 'Voleu acabar la sessió?';
 $string['event_activity_created'] = 'Activitat BigBlueButtonBN creada';
@@ -85,7 +75,7 @@ $string['mod_form_block_record'] = 'Configuració del registre';
 $string['mod_form_block_recordings'] = 'Configuració de l\'enregistrament';
 $string['mod_form_block_room'] = 'Configuració de la sala / l\'activitat';
 $string['mod_form_block_schedule'] = 'Calendari per a la sessió';
-$string['mod_form_field_closingtime'] = 'Accés tancat';
+$string['mod_form_field_closingtime'] = 'Tanca';
 $string['mod_form_field_conference_name'] = 'Nom de la conferència';
 $string['mod_form_field_duration'] = 'Durada';
 $string['mod_form_field_instanceprofiles'] = 'Tipus d\'instància';
@@ -94,14 +84,7 @@ $string['mod_form_field_intro_help'] = 'Breu descripció de la sala o la confer�
 $string['mod_form_field_muteonstart'] = 'Silencia a l\'inici de la reunió';
 $string['mod_form_field_name'] = 'Nom de l\'aula virtual';
 $string['mod_form_field_nosettings'] = 'No es pot editar cap paràmetre';
-$string['mod_form_field_notification'] = 'Envia una notificació';
-$string['mod_form_field_notification_created_help'] = 'Envia una notificació als usuaris inscrits per fer-los saber que s\'ha creat aquesta activitat';
-$string['mod_form_field_notification_help'] = 'Envia una notificació als usuaris inscrits per fer-los saber que s’ha creat o s’ha modificat aquesta activitat.';
-$string['mod_form_field_notification_modified_help'] = 'Envia una notificació als usuaris inscrits per fer-los saber que s\'ha modificat aquesta activitat';
-$string['mod_form_field_notification_msg_at'] = 'a';
-$string['mod_form_field_notification_msg_created'] = 'creat';
-$string['mod_form_field_notification_msg_modified'] = 'modificat';
-$string['mod_form_field_openingtime'] = 'Accés obert';
+$string['mod_form_field_openingtime'] = 'Obre';
 $string['mod_form_field_participant_add'] = 'Afegeix un participant';
 $string['mod_form_field_participant_bbb_role_moderator'] = 'Moderador';
 $string['mod_form_field_participant_bbb_role_viewer'] = 'Espectador';
@@ -125,13 +108,14 @@ $string['mod_form_field_welcome_help'] = 'Reemplaça el missatge per defecte est
 $string['modulename_help'] = 'BigBlueButtonBN us permet crear, dins Moodle, enllaços a aules en línia i en temps real emprant BigBlueButton, un sistema de codi obert per a conferències web per a l’educació a distància.
 
 Si utilititzeu BigBlueButtonBN, podeu indicar-hi el títol, la descripció, una entrada al calendari (la qual dona un interval de dates per unir-se a la sessió), els grups, i detalls sobre l’enregistrament de la sessió en línia.';
+$string['modulename_link'] = 'BigBlueButton/view';
 $string['started_at'] = 'Ha començat';
 $string['starts_at'] = 'Comença';
 $string['userlimitreached'] = 'S\'ha arribat al nombre d\'usuaris permesos en una sessió.';
 $string['view_conference_action_end'] = 'Finalitza la sessió';
 $string['view_conference_action_join'] = 'Accedeix a la sessió';
 $string['view_error_unable_join'] = 'No heu pogut unir-vos a la reunió. Comproveu l\'URL del servidor BigBlueButton, i si aquest està en funcionament.';
-$string['view_error_unable_join_student'] = 'No s\'ha pogut connectar al servidor BigBlueButton. Contacteu amb el professor o l\'administrador del campus.';
+$string['view_error_unable_join_student'] = 'No s\'ha pogut connectar al servidor BigBlueButton.';
 $string['view_error_unable_join_teacher'] = 'No s\'ha pogut connectar al servidor BigBlueButton. Contacteu amb l\'Administrador.';
 $string['view_error_url_missing_parameters'] = 'En aquest URL hi manquen paràmetres';
 $string['view_error_userlimit_reached'] = 'S\'ha arribat al nombre (màxim) d\'usuaris permès en una reunió.';
@@ -139,14 +123,14 @@ $string['view_groups_nogroups_warning'] = 'La sala s\'ha configurat per utilitza
 $string['view_groups_notenrolled_warning'] = 'La sala s\'ha configurat per utilitzar grups, però no n\'esteu inscrit a cap.';
 $string['view_groups_selection'] = 'Seleccioneu el grup on voleu unir-vos i confirmeu l\'acció';
 $string['view_groups_selection_join'] = 'Accedeix';
-$string['view_groups_selection_warning'] = 'Hi ha una sala de conferència per a cada grup, Si teniu accés a més d\'una, assegureu-vos de seleccionar la sala correcta.';
+$string['view_groups_selection_warning'] = 'Hi ha una sala per a cada grup i teniu accés a més d\'una. Assegureu-vos de seleccionar la sala correcta.';
 $string['view_login_moderator'] = 'S\'està iniciant la sessió com a moderador...';
 $string['view_login_viewer'] = 'S\'està iniciant la sessió com a participant...';
 $string['view_message_and'] = 'i';
 $string['view_message_conference_has_ended'] = 'La conferència ha finalitzat.';
-$string['view_message_conference_in_progress'] = 'La conferència ja ha començat.';
+$string['view_message_conference_in_progress'] = 'La sessió està en curs.';
 $string['view_message_conference_not_started'] = 'La conferència encara no ha començat.';
-$string['view_message_conference_room_ready'] = 'La sala de conferència està llesta. Ja podeu unir-vos a la sessió.';
+$string['view_message_conference_room_ready'] = 'La sala està llesta. Ja podeu unir-vos a la sessió.';
 $string['view_message_conference_wait_for_moderator'] = 'S\'està esperant l\'accés d\'un moderador.';
 $string['view_message_finished'] = 'Aquesta activitat ha finalitzat.';
 $string['view_message_has_joined'] = 'ha accedit';
@@ -155,9 +139,9 @@ $string['view_message_hour'] = 'hora';
 $string['view_message_hours'] = 'hores';
 $string['view_message_minute'] = 'minut';
 $string['view_message_minutes'] = 'minuts';
-$string['view_message_moderator'] = 'moderador';
-$string['view_message_moderators'] = 'moderadors';
-$string['view_message_norecordings'] = 'No hi ha cap enregistrament per a aquesta reunió.';
+$string['view_message_moderator'] = 'Moderador';
+$string['view_message_moderators'] = 'Moderadors';
+$string['view_message_norecordings'] = 'No hi ha cap enregistrament disponible.';
 $string['view_message_notavailableyet'] = 'Aquesta sessió encara no està disponible.';
 $string['view_message_room_closed'] = 'La sala està tancada.';
 $string['view_message_room_open'] = 'La sala està oberta.';
@@ -167,13 +151,13 @@ $string['view_message_session_has_user'] = 'Hi ha';
 $string['view_message_session_has_users'] = 'Hi ha';
 $string['view_message_session_no_users'] = 'No hi ha cap usuari en aquesta sessió';
 $string['view_message_session_running_for'] = 'Aquesta sessió ha estat oberta per';
-$string['view_message_session_started_at'] = 'Aquesta sessió ha començat a les';
+$string['view_message_session_started_at'] = 'La sessió ha començat a les';
 $string['view_message_tab_close'] = 'Has de tancar aquesta finestra/pestanya manualment';
 $string['view_message_times'] = 'vegades';
 $string['view_message_user'] = 'usuari';
 $string['view_message_users'] = 'usuaris';
-$string['view_message_viewer'] = 'participant';
-$string['view_message_viewers'] = 'participants';
+$string['view_message_viewer'] = 'Participant';
+$string['view_message_viewers'] = 'Participants';
 $string['view_noguests'] = 'El BigBlueButton no està obert a visitants.';
 $string['view_nojoin'] = 'El teu rol no permet accedir a aquesta sessió.';
 $string['view_recording'] = 'enregistrament';

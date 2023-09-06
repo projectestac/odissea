@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'sv', version '3.11'.
+ * Strings for component 'choice', language 'sv', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'Ändra och ta bort alternativ';
 $string['choice:downloadresponses'] = 'Ladda ner svar';
 $string['choice:readresponses'] = 'Visa svar';
 $string['choice:view'] = 'Visa aktiviteten Omröstning';
-$string['choiceactivityname'] = 'Omröstning: {$a}';
 $string['choiceclose'] = 'Tillåt svar till';
-$string['choicecloseson'] = 'Omröstningen stänger {$a}';
 $string['choicefull'] = 'Det här svarsalternativet är fullt. Dit svar har inte sparats. Vänligen välj ett annat alternativ.';
 $string['choicename'] = 'Svarsalternativets namn';
 $string['choiceopen'] = 'Tillåt svar från';
@@ -76,10 +74,12 @@ $string['indicator:cognitivedepth'] = 'Omröstning kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Omröstningsaktiviteten.';
 $string['indicator:cognitivedepthdef'] = 'Omröstning kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av Omröstningsaktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa, Skicka in, Visa återkoppling)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Omröstning social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Omröstningsaktivitet.';
 $string['indicator:socialbreadthdef'] = 'Omröstning social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Omröstningsaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt, Deltagaren tillsammans med andra)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'Begränsning';
 $string['limita'] = 'Gräns: {$a}';
 $string['limitanswers'] = 'Begränsa det antal val som är tillåtna';
@@ -99,6 +99,7 @@ En omröstning kan användas
 * Som en snabb undersökning för att stimulera tänkande i ett ämne
 * För att snabbt testa elevernas förståelse
 * För att underlätta studenternas beslutsfattande, till exempel att låta studenter rösta för en viss kursinriktning';
+$string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Svarsalternativ';
 $string['moveselectedusersto'] = 'Flytta de valda användarna till...';
 $string['multiplenotallowederror'] = 'Flera svar är inte tillåtna i denna omröstning';

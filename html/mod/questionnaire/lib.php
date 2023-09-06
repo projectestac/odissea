@@ -53,7 +53,8 @@ function questionnaire_supports($feature) {
             return true;
         case FEATURE_SHOW_DESCRIPTION:
             return true;
-
+        case FEATURE_MOD_PURPOSE:
+            return MOD_PURPOSE_COMMUNICATION;
         default:
             return null;
     }
@@ -239,6 +240,36 @@ function questionnaire_delete_instance($id) {
 }
 
 /**
+ * Add a get_coursemodule_info function in case any questionnaire type wants to add 'extra' information
+ * for the course (see resource).
+ *
+ * Given a course_module object, this function returns any "extra" information that may be needed
+ * when printing this activity in a course listing.  See get_array_of_activities() in course/lib.php.
+ *
+ * @param stdClass $coursemodule The coursemodule object (record).
+ * @return cached_cm_info An object on information that the courses
+ *                        will know about (most noticeably, an icon).
+ */
+function questionnaire_get_coursemodule_info($coursemodule) {
+    global $DB;
+
+    $questionnaire = $DB->get_record('questionnaire',
+        array('id' => $coursemodule->instance), 'id, name, intro, introformat,
+             completionsubmit');
+    if (!$questionnaire) {
+        return null;
+    }
+
+    $info = new cached_cm_info();
+    $info->customdata = (object)[];
+    // Populate the custom completion rules as key => value pairs, but only if the completion mode is 'automatic'.
+    if ($coursemodule->completion == COMPLETION_TRACKING_AUTOMATIC) {
+        $info->customdata->customcompletionrules['completionsubmit'] = $questionnaire->completionsubmit;
+    }
+    return $info;
+}
+
+/**
  * Return a small object with summary information about what a user has done with a given particular instance of this module.
  * Used for user activity reports.
  * $return->time = the time they did it
@@ -342,7 +373,7 @@ function questionnaire_get_user_grades($questionnaire, $userid=0) {
     $sql = "SELECT r.id, u.id AS userid, r.grade AS rawgrade, r.submitted AS dategraded, r.submitted AS datesubmitted
             FROM {user} u, {questionnaire_response} r
             WHERE u.id = r.userid AND r.questionnaireid = $questionnaire->id AND r.complete = 'y' $usersql";
-    return $DB->get_records_sql($sql, $params);
+    return $DB->get_records_sql($sql, $params) ?? [];
 }
 
 /**
@@ -543,20 +574,19 @@ function questionnaire_pluginfile($course, $cm, $context, $filearea, $args, $for
  *
  * $settings is unused, but API requires it. Suppress PHPMD warning.
  */
-function questionnaire_extend_settings_navigation(settings_navigation $settings,
-        navigation_node $questionnairenode) {
+function questionnaire_extend_settings_navigation(settings_navigation $settings, navigation_node $questionnairenode) {
+    global $DB, $USER, $CFG;
 
-    global $PAGE, $DB, $USER, $CFG;
     $individualresponse = optional_param('individualresponse', false, PARAM_INT);
     $rid = optional_param('rid', false, PARAM_INT); // Response id.
     $currentgroupid = optional_param('group', 0, PARAM_INT); // Group id.
 
     require_once($CFG->dirroot.'/mod/questionnaire/questionnaire.class.php');
 
-    $context = $PAGE->cm->context;
-    $cmid = $PAGE->cm->id;
-    $cm = $PAGE->cm;
-    $course = $PAGE->course;
+    $cm = $settings->get_page()->cm;
+    $context = $cm->context;
+    $cmid = $cm->id;
+    $course = $settings->get_page()->course;
 
     if (! $questionnaire = $DB->get_record("questionnaire", array("id" => $cm->instance))) {
         throw new \moodle_exception('invalidcoursemodule', 'mod_questionnaire');
@@ -1061,7 +1091,7 @@ function questionnaire_print_overview($courses, &$htmlarray) {
             // Deadline.
             $str .= $OUTPUT->box(get_string('closeson', 'questionnaire', userdate($questionnaire->closedate)), 'info');
             $attempts = $DB->get_records('questionnaire_response',
-                ['questionnaireid' => $questionnaire->id, 'userid' => $USER->id, 'complete' => 'y']);
+                ['questionnaireid' => $questionnaire->id, 'userid' => $USER->id, 'complete' => 'y']) ?? [];
             $nbattempts = count($attempts);
 
             // Do not display a questionnaire as due if it can only be sumbitted once and it has already been submitted!
@@ -1184,15 +1214,13 @@ function questionnaire_reset_userdata($data) {
  * Obtains the automatic completion state for this questionnaire based on the condition
  * in questionnaire settings.
  *
- * @param stdClass $course Course
- * @param stdClass $cm Course-module
+ * @param object $cm Course-module
  * @param int $userid User ID
  * @param bool $type Type of comparison (or/and; can be used as return value if no conditions)
  * @return bool True if completed, false if not, $type if conditions not set.
  *
- * $course is unused, but API requires it. Suppress PHPMD warning.
  */
-function questionnaire_get_completion_state($course, $cm, $userid, $type) {
+function questionnaire_get_completion_state($cm, $userid, $type) {
     global $DB;
 
     // Get questionnaire details.

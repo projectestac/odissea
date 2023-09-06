@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'ar', version '3.11'.
+ * Strings for component 'editor_atto', language 'ar', version '4.1'.
  *
  * @package     editor_atto
  * @category    string
@@ -46,6 +46,7 @@ $string['privacy:metadata:database:atto_autosave:drafttext'] = 'النص الذ�
 $string['privacy:metadata:database:atto_autosave:timemodified'] = 'وقت تعديل هذا المحتوى';
 $string['privacy:metadata:database:atto_autosave:userid'] = 'مُعرَّف المستخدم الذي تم حفظ بياناته';
 $string['recover'] = 'استعد';
+$string['richtexteditor'] = 'معالج النصوص';
 $string['settings'] = 'إعدادات شريط أدوات Atto';
 $string['subplugintype_atto'] = 'إضافة Atto';
 $string['subplugintype_atto_plural'] = 'إضافات Atto';

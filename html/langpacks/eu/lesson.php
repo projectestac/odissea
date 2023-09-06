@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'eu', version '3.11'.
+ * Strings for component 'lesson', language 'eu', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -52,7 +52,6 @@ $string['addedendofcluster'] = 'Multzo-amaiera gehitu da';
 $string['addendofbranch'] = 'Gehitu adar-taularen amaiera';
 $string['addendofcluster'] = 'Gehitu multzo-amaiera';
 $string['addessay'] = 'Sortu Entsegua-galdera orri bat';
-$string['additionalattemptsremaining'] = 'Osatua, berriz ere egin dezakezu saiakera ikasgai honetan';
 $string['addmatching'] = 'Sortu Lotu galdera-orri bat';
 $string['addmultichoice'] = 'Sortu Aukera-anizkoitzeko galdera-orri bat';
 $string['addnewgroupoverride'] = 'Gehitu talde-salbuespena';
@@ -173,6 +172,7 @@ $string['displayleftif'] = 'Gutxieneko puntuazioa menua erakusteko';
 $string['displayleftif_help'] = 'Ezarpen honek zehazten du ikasleak kalifikazio zehatz bat lortu behar duen ikasgaiaren menua ikusi ahal izateko. Honek ikaslea lehenengo saiakeran ikasgai osotik pasatzera behartzen du, eta ondoren, behar den kalifikazioa lortuz gero, berrikusketa egiteko menua ikusi ahal izango du.';
 $string['displayleftmenu'] = 'Erakutsi menua';
 $string['displayleftmenu_help'] = 'Gaituz gero, erabiltzaileari nabigatzeko aukera ematen dion orrien zerrenda erakusten duen menua erakusten da.';
+$string['displaymode'] = 'Erakusteko modua';
 $string['displayofgrade'] = 'Erakutsi kalifikazioa (ikasleentzat soilik)';
 $string['displayreview'] = 'Eman aukera galderari berriz erantzuteko';
 $string['displayreview_help'] = 'Gaituz gero, galdera bat modu okerrean erantzuten denean ikasleari puntuazioan eragin gabe berriz saiatzeko edo ikasgaiarekin jarraitzeko aukera ematen zaio. Ikasleak beste galdera batera mugitzeko klik egiten badu aukeratutako erantzuna (okerra) jarraituko da. Modu lehenetsian erantzun okerrek "orri honetara" salto egin eta 0 puntuazioa dute, eta beraz, ikasleen nahasmena ekiditeko, erantzun okerrak beste orri batera salto egiteko konfiguratzea gomendatzen da.';
@@ -188,7 +188,9 @@ $string['editcluster'] = 'Multzo bat editatzen';
 $string['editendofbranch'] = 'Adar-taularen amaiera bat editatzen';
 $string['editendofcluster'] = 'Multzo-amaiera bat editatzen';
 $string['editessay'] = 'Entsegua-galdera orri bat editatzen';
+$string['editinglesson'] = 'Ikasgaia editatzen';
 $string['editingquestionpage'] = '{$a} galdera-orria editatzen';
+$string['editlesson'] = 'Editatu ikasgaia';
 $string['editlessonsettings'] = 'Editatu ikasgaiaren ezarpenak';
 $string['editmatching'] = 'Lotu galdera-orri bat editatzen';
 $string['editmultichoice'] = 'Aukera-anizkoitzeko galdera-orri bat editatzen';
@@ -200,9 +202,9 @@ $string['editquestion'] = 'Galderara-orria editatzen';
 $string['editshortanswer'] = 'Erantzun laburreko galdera-orri bat editatzen';
 $string['edittruefalse'] = 'Egia/gezurra galdera-orri bat editatzen';
 $string['email'] = 'Posta elektronikoa';
-$string['emailallgradedessays'] = 'Bidali posta elektroniko bidez kalifikatutako entsegu GUZTIAK';
-$string['emailgradedessays'] = 'Bidali posta elektroniko bidez kalifikatutako entseguak';
-$string['emailsuccess'] = 'E-mailak ondo bidali dira';
+$string['emailallgradedessays'] = 'Bidali kalifikatutako entseguen jakinarazpenak';
+$string['emailgradedessays'] = 'Bidali kalifikatutako entseguen jakinarazpenak';
+$string['emailsuccess'] = 'Jakinarazpenak ondo bidali dira';
 $string['emptypassword'] = 'Pasahitza ezin da hutsik egon';
 $string['enabled'] = 'Gaituta';
 $string['endofbranch'] = 'Adarraren amaiera';
@@ -276,10 +278,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa ikasgaietan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Ikasgaia motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa ikasgaietan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Ikasgaia jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da, Feedbacka ikusi da, Feedbackari iruzkina egin da, Feedback ikusi ondoren berriz bidali da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala ikasgaietan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Ikasgaia motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala ikasgaietan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Ikasgaia jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea, parte-hartzea besteekin)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insertedpage'] = 'Txertatutako orria';
 $string['invalidfile'] = 'Fitxategi baliogabea';
 $string['invalidid'] = 'Ez da modulu edo ikasgaiaren ID gainditu ikastaroan';
@@ -300,14 +304,13 @@ $string['lesson:manage'] = 'Kudeatu ikasgaia';
 $string['lesson:manageoverrides'] = 'Kudeatu ikasgai-salbuespenak';
 $string['lesson:view'] = 'Ikusi ikasgaia';
 $string['lesson:viewreports'] = 'Ikusi ikasgaiaren txostenak';
+$string['lessonbeingpreviewed'] = 'Ikasgaia aurreikusia izaten ari da une honetan.';
 $string['lessonclosed'] = 'Ikasgai hau {$a} egunean itxi zen.';
 $string['lessoncloses'] = 'Ikasgaia ixten da';
-$string['lessoncloseson'] = 'Ikasgaia data honetan itxiko da: {$a}';
 $string['lessoneventcloses'] = '{$a}(r)en itxiera-data:';
 $string['lessoneventopens'] = '{$a}(r)en hasiera-data';
 $string['lessonformating'] = 'Ikasgaia formateatzen';
 $string['lessonmenu'] = 'Ikasgaiaren menua';
-$string['lessonname'] = 'Ikasgaia: {$a}';
 $string['lessonnotready'] = 'Ikasgai hau ez dago praktikatzeko prest. Zure {$a} (r)ekin harremanetan jarri, mesedez.';
 $string['lessonnotready2'] = 'Ikasgai hau ez dago prest.';
 $string['lessonopen'] = 'Ikasgai hau {$a} egunean irekiko da.';
@@ -318,6 +321,7 @@ $string['linkedmedia'] = 'Estekatutako media';
 $string['loginfail'] = 'Sarrerak huts egin du. Saiatu berriro, mesedez...';
 $string['lowscore'] = 'Puntuazio baxua';
 $string['lowtime'] = 'Denbora baxua';
+$string['manageoverrides'] = 'Kudeatu baliogabetzeak';
 $string['manualgrading'] = 'Kalifikatu entseguak';
 $string['matchesanswer'] = 'Erantzunarekin bat dator';
 $string['matching'] = 'Lotu';
@@ -352,6 +356,7 @@ Ikasgaiak ondokoetarako erabil daitezke
 * Gai berri bateko ikasketa auto-gidatua egiteko
 * Erabaki-hartze egoeren eta simulazio-ariketak egiteko
 * Bereizitako birpasorako ariketak egiteko, birpasorako galdera-multzo ezberdinekin, aurreko galderei erantzundakoaren araberakoak.';
+$string['modulename_link'] = 'mod/lesson/view';
 $string['modulenameplural'] = 'Ikasgaiak';
 $string['move'] = 'Mugitu orria';
 $string['movedpage'] = 'Orria mugitu da';
@@ -386,6 +391,7 @@ $string['nooneenteredthis'] = 'Inork ez du hau sartu.';
 $string['noonehasanswered'] = 'Inork ez dio entsegu-galderari oraingoz erantzun.';
 $string['noonehasansweredgroup'] = 'Hemengo Inork ({$a}) ez dio entsegu-galderari oraingoz erantzun.';
 $string['noopen'] = 'Ez dago hasiera-datarik';
+$string['nooverridecreated'] = 'Ez da baliogabetzerik sortu.';
 $string['nooverridedata'] = 'Gutxienez ikasgaiaren ezarpen baten salbuespena egin behar duzu.';
 $string['noretake'] = 'Ezin duzu ikasgai hau berriz hasi.';
 $string['normal'] = 'Normala - jarraitu ikasgaiaren ibilbidea';
@@ -540,6 +546,7 @@ $string['search:activity'] = 'Ikasgaia - jardueraren informazioa';
 $string['secondpluswrong'] = 'Ez. Berriz saiatu nahi al duzu?';
 $string['selectallattempts'] = 'Aukeratu saiakera guztiak';
 $string['selectaqtype'] = 'Aukeratu galdera-mota';
+$string['selectreport'] = 'Aukeratu txostena';
 $string['sent'] = 'Bidali da';
 $string['shortanswer'] = 'Erantzun laburra';
 $string['showanunansweredpage'] = 'Erakutsi erantzun ez den orri bat';
@@ -602,7 +609,6 @@ $string['withselectedattempts'] = 'Saiakera aukeratuekin...';
 $string['wronganswerjump'] = 'Erantzun okerrerako jauzia';
 $string['wronganswerscore'] = 'Erantzun okerraren puntuazioa';
 $string['wrongresponse'] = 'Erantzun okerra';
-$string['xattempts'] = '{$a} saiakera';
 $string['youhaveseen'] = 'Ikasgai honetako orri bat edo gehiago ikusi duzu jadanik.<br />Ikusitako azken orritik hasi nahi al duzu?';
 $string['youranswer'] = 'Zure erantzuna';
 $string['yourcurrentgradeis'] = 'Oraingo zure kalifikazioa {$a} da';

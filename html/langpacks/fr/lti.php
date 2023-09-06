@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'fr', version '3.11'.
+ * Strings for component 'lti', language 'fr', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -205,10 +205,12 @@ $string['indicator:cognitivedepth'] = 'LTI : aspect cognitif';
 $string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité LTI.';
 $string['indicator:cognitivedepthdef'] = 'LTI : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « LTI » (niveaux : pas de vue, vue, envoi, vue du feedback).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'LTI : aspect social';
 $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité LTI.';
 $string['indicator:socialbreadthdef'] = 'LTI : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « LTI » (niveaux : pas de participation, participant seul, participant avec d\'autres).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = 'URL d\'initiation de connexion';
 $string['initiatelogin_help'] = 'L\'URL de l\'outil à laquelle sont envoyées les requêtes d\'initiation de connexion. Cette URL est nécessaire avant qu\'un message puisse être envoyé correctement à l\'outil.';
 $string['invalidid'] = 'L\'identifiant LTI est incorrect';
@@ -283,8 +285,10 @@ Les outils externes diffèrent des ressources de type URL de plusieurs façons.
 * **Contextualisation** - Les outils externes ont accès à des informations sur l\'utilisateur qui lancent l\'outil, par exemple le nom de l\'institution, l\'identifiant du cours, l\'identifiant de l\'utilisateur et d\'autres informations comme le nom d\'utilisateur ou son adresse de courriel.
 * **Intégration élevée** - Les outils externes supportent la lecture, la modification et la suppression des notes associées à l\'activité. D\'autres points d\'intégration sont planifiés pour de prochaines versions.
 * **Sécurité** - Les configurations d\'outils externes créent une liaison sécurisée entre Moodle et le fournisseur de l\'outil, permettant une communication sûre entre eux.';
+$string['modulename_link'] = 'mod/lti/view';
+$string['modulename_shortcut_link'] = 'mod/lti/view/custom';
 $string['modulenameplural'] = 'Outils externes';
-$string['modulenamepluralformatted'] = 'Instances LTI';
+$string['modulenamepluralformatted'] = 'Outils externes';
 $string['name'] = 'Nom';
 $string['never'] = 'Jamais';
 $string['new_window'] = 'Nouvelle fenêtre';
@@ -308,12 +312,8 @@ $string['opensslconfiginvalid'] = 'LTI 1.3 nécessite la configuration d\'un fic
 $string['optionalsettings'] = 'Réglages optionnels';
 $string['organization'] = 'Informations sur l\'institution';
 $string['organizationdescr'] = 'Description de l\'institution';
-$string['organizationid'] = 'ID de l\'institution';
 $string['organizationid_default'] = 'ID par défaut de l\'institution';
 $string['organizationid_default_help'] = 'La valeur à utiliser par défaut pour l\'ID de l\'institution. L\'ID du site identifie cette installation de Moodle.';
-$string['organizationid_help'] = 'Un identifiant unique pour cette instance de Moodle. On utilise typiquement le nom DNS de l\'institution.
-
-Si le champ n\'est pas renseigné, le nom d\'hôte de ce site Moodle sera utilisé comme valeur par défaut.';
 $string['organizationidguid'] = 'ID de l\'institution';
 $string['organizationidguid_help'] = 'Une identifiant unique pour cette instance de Moodle, envoyé à l\'outil comme « Platform Instance GUID ».';
 $string['organizationurl'] = 'URL de l\'institution';
@@ -385,7 +385,7 @@ $string['registration_options'] = 'Options d\'enregistrement';
 $string['registrationname'] = 'Nom du fournisseur de l\'outil';
 $string['registrationname_help'] = 'Saisir le nom du fournisseur de l\'outil en cours d\'enregistrement';
 $string['registrationurl'] = 'URL d\'enregistrement';
-$string['registrationurl_help'] = 'L\'URL d\'enregistrement doit être mise à disposition par le fournisseur de l\'outil pour désigner l\'endroit où les demandes d\'enregistrement doivent être envoyées.';
+$string['registrationurl_help'] = 'L\'URL d\'enregistrement doit être mise à disposition par le fournisseur de l\'outil pour désigner où les demandes d\'enregistrement doivent être envoyées.';
 $string['reject'] = 'Rejeter';
 $string['rejected'] = 'Rejeté';
 $string['resource'] = 'Ressource';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'fr', version '3.11'.
+ * Strings for component 'atto_table', language 'fr', version '4.1'.
  *
  * @package     atto_table
  * @category    string
@@ -48,7 +48,7 @@ $string['deletecolumn'] = 'Supprimer colonne';
 $string['deleterow'] = 'Supprimer rangée';
 $string['dotted'] = 'Pointillé';
 $string['edittable'] = 'Modifier tableau';
-$string['headers'] = 'Définir les entêtes';
+$string['headers'] = 'Définir les en-têtes';
 $string['movecolumnleft'] = 'Déplacer la colonne vers la gauche';
 $string['movecolumnright'] = 'Déplacer la colonne vers la droite';
 $string['moverowdown'] = 'Déplacer la rangée vers le bas';

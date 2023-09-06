@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'sv', version '3.11'.
+ * Strings for component 'qformat_gift', language 'sv', version '4.1'.
  *
  * @package     qformat_gift
  * @category    string
@@ -36,4 +36,5 @@ $string['importminerror'] = 'Det finns ett fel i frågan. Det finns inte tillrä
 $string['nohandler'] = 'Ingen hanterare för frågetyp {$a}';
 $string['pluginname'] = 'GIFT-format';
 $string['pluginname_help'] = 'GIFT-formatet gör det möjligt att använda flervalsfrågor, sant-falskt, matchning, saknade ord, numeriska och essäfrågor och importera eller exportera dessa via en textfil';
+$string['pluginname_link'] = 'qformat/gift';
 $string['privacy:metadata'] = 'Pluginmodulen GIFT frågeformat lagrar ingen personinformation.';

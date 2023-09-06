@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_multianswer', language 'nl', version '3.11'.
+ * Strings for component 'qformat_multianswer', language 'nl', version '4.1'.
  *
  * @package     qformat_multianswer
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Ingebedde antwoorden (Cloze)';
 $string['pluginname_help'] = 'Met ingebedde antwoorden (Cloze) opmaak wordt het mogelijk om een stuk tekst te tonen met vragen, zoals meerkeuzevragen en kort antwoordvragen, ingebed in de tekst. ';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['privacy:metadata'] = 'De plug-in Embedded answers question slaat geen persoonlijke gegevens op.';

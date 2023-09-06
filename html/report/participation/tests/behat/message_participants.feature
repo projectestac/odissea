@@ -30,7 +30,8 @@ Feature: Use the particiaption report to message groups of students
 
   Scenario: Message all students from the participation report
     Given I am on the "Course 1" course page logged in as teacher1
-    And I navigate to "Reports > Course participation" in current page administration
+    And I navigate to "Reports" in current page administration
+    And I click on "Course participation" "link"
     And I set the field "instanceid" to "Test book name"
     And I set the field "roleid" to "Student"
     And I press "Go"
@@ -43,7 +44,8 @@ Feature: Use the particiaption report to message groups of students
 
   Scenario: Message students who have not participated in book
     Given I am on the "Course 1" course page logged in as teacher1
-    And I navigate to "Reports > Course participation" in current page administration
+    And I navigate to "Reports" in current page administration
+    And I click on "Course participation" "link"
     And I set the field "instanceid" to "Test book name"
     And I set the field "roleid" to "Student"
     And I press "Go"
@@ -61,7 +63,8 @@ Feature: Use the particiaption report to message groups of students
     Given the following config values are set as admin:
       | messaging | 0 |
     And I am on the "Course 1" course page logged in as teacher1
-    And I navigate to "Reports > Course participation" in current page administration
+    And I navigate to "Reports" in current page administration
+    And I click on "Course participation" "link"
     When I set the field "instanceid" to "Test book name"
     And I set the field "roleid" to "Student"
     And I press "Go"

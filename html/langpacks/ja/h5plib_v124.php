@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'ja', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'ja', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['editor:a11ytitlehidelabel'] = 'ATのラベルを非表示にする';
+$string['editor:a11ytitleshowlabel'] = 'ATのラベルを表示にする';
 $string['editor:add'] = '追加';
 $string['editor:addauthor'] = '作成者を保存する';
 $string['editor:addentity'] = ':entity を追加する';
 $string['editor:addfile'] = 'ファイルを追加する';
 $string['editor:addnewchange'] = '新しい変更を追加する';
 $string['editor:addtitle'] = 'タイトルを追加する';
-$string['editor:addvideodescription'] = 'H5Pはmp4、webmまたはogv、Vimeo Proのような外部ビデオソースをサポートします。また、YouTubeリンクもサポートします。';
+$string['editor:addvideodescription'] = 'H5Pはmp4、webmまたはogv、Vimeo Proのような外部ビデオソースをサポートします。またYouTubeおよびPanoptoリンクもサポートします。';
 $string['editor:atoz'] = 'A -> Z';
 $string['editor:avtablistlabel'] = '次を使用して挿入する';
 $string['editor:belowmin'] = ':property 値は最小の :min 以下にしてください。';
@@ -91,7 +93,7 @@ $string['editor:enteraudiotitle'] = 'リンクまたは他のオーディオソ�
 $string['editor:enteraudiourl'] = 'オーディオソースURLを入力する';
 $string['editor:enterfullscreenbuttonlabel'] = 'フルスクリーンに入る';
 $string['editor:entervideotitle'] = 'YouTubeリンクまたは他のソースURLを貼り付ける';
-$string['editor:entervideourl'] = 'ビデオソースURLまたはYouTubeリンクを入力する';
+$string['editor:entervideourl'] = 'ビデオURLを入力する';
 $string['editor:errorcalculatingmaxscore'] = 'このコンテンツの最高評点を計算できませんでした。最大評点は「0」であると思われます。これが正しくない場合、あなたの管理者にご連絡ください。';
 $string['editor:errorcommunicatinghubcontent'] = 'エラーが発生しました。再度お試しください。';
 $string['editor:errorcommunicatinghubtitle'] = 'ハブと連携できません。';

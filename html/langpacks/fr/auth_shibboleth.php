@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'fr', version '3.11'.
+ * Strings for component 'auth_shibboleth', language 'fr', version '4.1'.
  *
  * @package     auth_shibboleth
  * @category    string
@@ -43,7 +43,7 @@ $string['auth_shib_instructions_key'] = 'Instructions pour la connexion';
 $string['auth_shib_integrated_wayf'] = 'Service Moodle WAYF';
 $string['auth_shib_integrated_wayf_description'] = 'Si cette option est activée, Moodle utilisera son propre service WAYF au lieu de celui configuré pour Shibboleth. Moodle affichera sur cette page de connexion alternative un menu déroulant dans lequel l\'utilisateur devra choisir son fournisseur d\'identité.';
 $string['auth_shib_logout_return_url'] = 'URL alternative de retour de déconnexion';
-$string['auth_shib_logout_return_url_description'] = 'Indiquez l\'URL vers laquelle les utilisateurs Shibboleth seront envoyés après leur déconnexion.<br />Si ce champ n\'est pas renseigné, les utilisateurs seront envoyés vers l\'URL où Moodle envoie les utilisateurs dans ce cas';
+$string['auth_shib_logout_return_url_description'] = 'Indiquer l\'URL vers laquelle les utilisateurs Shibboleth seront envoyés après leur déconnexion.<br />Si ce champ n\'est pas renseigné, les utilisateurs seront envoyés vers l\'URL où Moodle envoie les utilisateurs dans ce cas';
 $string['auth_shib_logout_url'] = 'URL du gestionnaire de déconnexion du fournisseur de service Shibboleth';
 $string['auth_shib_logout_url_description'] = 'Indiquez l\'URL du gestionnaire de déconnexion du fournisseur de service Shibboleth. Par exemple, <tt>/Shibboleth.sso/Logout</tt>';
 $string['auth_shib_no_organizations_warning'] = 'Si vous voulez utiliser le service intégré WAYF, vous devez fournir une liste des identifiants (entityIDs) Fournisseurs d\'Identité, de leurs noms et optionnellement d\'un initiateur de session, séparés par des virgules (CSV).';

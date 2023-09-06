@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ko', version '3.11'.
+ * Strings for component 'page', language 'ko', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -32,11 +32,14 @@ $string['createpage'] = '세 웹페이지 자원 만들기';
 $string['displayoptions'] = '사용가능 표시 옵션';
 $string['displayselect'] = '표시';
 $string['displayselectexplain'] = '표시 형태 선택';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = '오래된 강좌파일 전환';
 $string['legacyfilesactive'] = '활성화';
 $string['legacyfilesdone'] = '마감됨';
 $string['modulename'] = '웹페이지';
 $string['modulename_help'] = '강좌 내에서 표시되고 수정될 수 있는 웹 페이지를 만들 수 있다.';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = '웹페이지';
 $string['optionsheader'] = '표시 옵션';
 $string['page-mod-page-x'] = '모든 페이지 모듈 페이지';

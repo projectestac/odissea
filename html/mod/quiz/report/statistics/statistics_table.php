@@ -188,7 +188,8 @@ class quiz_statistics_table extends flexible_table {
         if ($this->is_calculated_question_summary($questionstat)) {
             return '';
         } else {
-            return print_question_icon($questionstat->question, true);
+            $questionobject = $questionstat->question;
+            return print_question_icon($questionobject);
         }
     }
 
@@ -199,6 +200,8 @@ class quiz_statistics_table extends flexible_table {
      */
     protected function col_actions($questionstat) {
         if ($this->is_calculated_question_summary($questionstat)) {
+            return '';
+        } else if ($questionstat->question->qtype === 'missingtype') {
             return '';
         } else {
             return quiz_question_action_icons($this->quiz, $this->cmid,

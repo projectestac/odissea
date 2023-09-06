@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'ja', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'ja', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -30,12 +30,13 @@ $string['nosaincategory'] = 'あなたが選択したカテゴリ「 {$a->catnam
 $string['notenoughsaincategory'] = 'あなたが選択したカテゴリ「 {$a->catname} 」には {$a->nosaquestions} 問の問題のみ含まれています。異なるカテゴリを選択してさらに問題を含むようにするか、あなたが設定した選択問題数を減らしてください。';
 $string['pluginname'] = 'ランダム記述組み合わせ問題';
 $string['pluginname_help'] = '学生の視点からこれは組み合わせ問題のように見えます。異なる点は組み合わせのための名称または記述 (問題) 一覧が現在のカテゴリ内の記述問題からランダムに取得されることです。カテゴリ内に十分な未使用の記述問題が必要です。そうでない場合、エラーメッセージが表示されます。';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = 'ランダム記述組み合わせ問題の追加';
 $string['pluginnameediting'] = 'ランダム記述組み合わせ問題の編集';
 $string['pluginnamesummary'] = '組み合わせ問題に似ていますが特定のカテゴリ内の記述問題からランダムに作成されます。';
 $string['privacy:metadata'] = 'ランダム記述問題タイププラグインはいかなる個人データも保存しません。';
 $string['randomsamatch'] = 'ランダム記述組み合わせ';
-$string['randomsamatchintro'] = '以下それぞれの問題に関してメニュから合致する答えを選択してください。';
+$string['randomsamatchintro'] = '以下それぞれの問題に関してメニューから合致する答えを選択してください。';
 $string['randomsamatchnumber'] = '選択する問題数';
 $string['subcats'] = 'カテゴリを含む';
 $string['subcats_help'] = 'この設定を有効にした場合、サブカテゴリからも問題が選択されます。';

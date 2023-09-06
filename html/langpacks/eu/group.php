@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'eu', version '3.11'.
+ * Strings for component 'group', language 'eu', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -87,6 +87,7 @@ $string['eventgroupmemberadded'] = 'Taldekidea gehitu da';
 $string['eventgroupmemberremoved'] = 'Taldekidea ezabatu da';
 $string['eventgroupupdated'] = 'Taldea eguneratu da';
 $string['existingmembers'] = 'Dauden kideak: {$a}';
+$string['exportgroupsgroupings'] = 'Jaitsi taldeak eta talde-multzoak honela:';
 $string['filtergroups'] = 'Iragazi taldeak honen arabera:';
 $string['group'] = 'Taldea';
 $string['groupaddedsuccesfully'] = '{$a} taldea ondo gehitu da';
@@ -145,6 +146,7 @@ $string['importgroups_help'] = 'Taldeak testu-fitxategien bitartez inporta daite
 * Fitxategiko lehen errenkadak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
 * <i>groupname</i> eremua (taldearen izena) derrigorrezkoa da
 * Hautazko eremuak <i>groupidnumber</i> (talde-multzoaren IDa), <i>description</i> (deskribapena), <i>enrolmentkey</i> (matrikulazio-gakoa), <i>groupingname</i> (talde-multzoaren izena) eta <i>enablemessaging</i> (gaitu mezularitza) dira';
+$string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Sartu soilik aktibo dauden matrikulazioak';
 $string['includeonlyactiveenrol_help'] = 'Gaituz gero, kontua etenda duten erabiltzaileak ez dira taldeetan sartuko.';
 $string['javascriptrequired'] = 'Orri honek Javascript-a gaituta izan behar du.';

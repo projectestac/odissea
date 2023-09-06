@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'it', version '3.11'.
+ * Strings for component 'repository_googledocs', language 'it', version '4.1'.
  *
  * @package     repository_googledocs
  * @category    string
@@ -31,8 +31,10 @@ $string['defaultreturntype'] = 'Tipo restituito di default';
 $string['docsformat'] = 'Formato di default dell\'importazione documenti';
 $string['fileoptions'] = 'È possibile configurare il tipo ed il default dei file restituiti. Da notare che saranno a aggiornati i collegamenti a file esterni in modo che il proprietario diventi l\'account di sistema Moodle.';
 $string['googledocs:view'] = 'Visualizzare repository Google Drive';
+$string['importformat'] = 'Configura i formati di importazione predefiniti da Google';
 $string['internal'] = 'Interno (file memorizzati in Moodle)';
 $string['issuer'] = 'Servizio Oauth 2';
+$string['issuer_help'] = 'Selezionare il servizio OAuth 2 configurato per parlare con l\'API di Google Drive. Se il servizio non esiste ancora, è necessario crearlo.';
 $string['mydrive'] = 'My Drive';
 $string['oauth2serviceslink'] = '<a href="{$a}" title="Collegamento alla configurazione dei servizi OAuth 2">Configurazione servizi OAuth 2</a>';
 $string['owner'] = 'Proprietario: {$a}';

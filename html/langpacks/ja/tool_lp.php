@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'ja', version '3.11'.
+ * Strings for component 'tool_lp', language 'ja', version '4.1'.
  *
  * @package     tool_lp
  * @category    string
@@ -166,6 +166,7 @@ $string['nouserevidence'] = 'まだ事前学習エビデンスは追加されて
 $string['nouserplans'] = 'まだ学習プランは作成されていません。';
 $string['oneplanwascreated'] = '学習プランが作成されました。';
 $string['outcome'] = 'アウトカム';
+$string['overridegrade'] = '完了時、既存のコンピテンシ評定をオーバーライドします。';
 $string['parentcompetency'] = '親';
 $string['parentcompetency_edit'] = '親を編集する';
 $string['parentcompetency_help'] = '配下にコンピテンシを追加する親を定義してください。親は同じフレームワーク内の別のコンピテンシまたはトップレベルコンピテンシのためのコンピテンシフレームワークのルートにすることができます。';

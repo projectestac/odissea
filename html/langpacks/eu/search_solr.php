@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search_solr', language 'eu', version '3.11'.
+ * Strings for component 'search_solr', language 'eu', version '4.1'.
  *
  * @package     search_solr
  * @category    string
@@ -57,7 +57,7 @@ $string['solrauthpassword'] = 'HTTP autentifikaziorako pasahitza';
 $string['solrauthuser'] = 'HTTP autentifikaziorako erabiltzaile-izena';
 $string['solrhttpconnectionport'] = 'Ataka';
 $string['solrhttpconnectiontimeout'] = 'Denbora-muga';
-$string['solrhttpconnectiontimeout_desc'] = 'HTTP konexioaren denbora-muga datuen HTTP transferentzia-eragiketa egiteko baimentzen den gehieneko denbora (segundoetan) zehazten du.';
+$string['solrhttpconnectiontimeout_desc'] = 'HTTP konexioaren denbora-muga datuen HTTP transferentzia-eragiketa egiteko baimentzen den denbora-muga (segundoetan) zehazten du.';
 $string['solrindexname'] = 'Indizearen izena';
 $string['solrinfo'] = 'Solr';
 $string['solrnotselected'] = 'Solr motorra ez dago bilaketa-motorrean konfiguratuta';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'pt', version '3.11'.
+ * Strings for component 'block_myprofile', language 'pt', version '4.1'.
  *
  * @package     block_myprofile
  * @category    string
@@ -34,9 +34,11 @@ $string['display_currentlogin'] = 'Mostrar autenticação atual';
 $string['display_email'] = 'Mostrar e-mail';
 $string['display_firstaccess'] = 'Mostrar primeiro acesso';
 $string['display_icq'] = 'Mostrar ICQ';
+$string['display_idnumber'] = 'Mostrar número de identificação (ID)';
 $string['display_institution'] = 'Mostrar instituição';
 $string['display_lastaccess'] = 'Mostrar último acesso';
 $string['display_lastip'] = 'Mostrar último IP';
+$string['display_lastlogin'] = 'Mostrar última autenticação';
 $string['display_msn'] = 'Mostrar MSN';
 $string['display_phone1'] = 'Mostrar Telefone';
 $string['display_phone2'] = 'Mostrar Telemóvel';

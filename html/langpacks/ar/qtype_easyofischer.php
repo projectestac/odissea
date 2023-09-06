@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyofischer', language 'ar', version '3.11'.
+ * Strings for component 'qtype_easyofischer', language 'ar', version '4.1'.
  *
  * @package     qtype_easyofischer
  * @category    string
@@ -33,4 +33,5 @@ $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}.';
 $string['correctanswers'] = '<b>التعليمات</b>';
 $string['javaneeded'] = 'لاستعمال هذه الصفحة، تحتاج إلى مستعرض تم فيه تمكين Java. قم بتنزيل آخر إصدار من ملحق Java من {$a}.';
 $string['pleaseenterananswer'] = 'يرجى إدخال الإجابة.';
+$string['pluginname_link'] = 'question/type/easyofischer';
 $string['youranswer'] = 'إجابتك: {$a}';

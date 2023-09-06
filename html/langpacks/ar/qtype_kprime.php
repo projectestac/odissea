@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_kprime', language 'ar', version '3.11'.
+ * Strings for component 'qtype_kprime', language 'ar', version '4.1'.
  *
  * @package     qtype_kprime
  * @category    string
@@ -36,6 +36,7 @@ $string['mustsupplyresponses'] = 'ينبغي عليك إعطاء قيم لكل �
 $string['mustsupplyvalue'] = 'عليك إعطاء قيمة هنا.';
 $string['oneanswerperrow'] = 'يرجى إجابة كل أجزاء السؤال.';
 $string['optionsandfeedback'] = 'الخيارات والإفادة';
+$string['pluginname_link'] = 'question/type/kprime';
 $string['privacy:metadata'] = 'إن ملحق نوع السؤال، KPrime لا يخزن أي بيانات شخصية.';
 $string['responsetext1'] = 'صح';
 $string['responsetext2'] = 'خطأ';

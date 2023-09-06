@@ -51,9 +51,6 @@ class mod_page_generator extends testing_module_generator {
         if (!isset($record->display)) {
             $record->display = RESOURCELIB_DISPLAY_AUTO;
         }
-        if (!isset($record->printheading)) {
-            $record->printheading = 1;
-        }
         if (!isset($record->printintro)) {
             $record->printintro = 0;
         }
@@ -61,6 +58,19 @@ class mod_page_generator extends testing_module_generator {
             $record->printlastmodified = 1;
         }
 
-        return parent::create_instance($record, (array)$options);
+        $instance  = parent::create_instance($record, (array)$options);
+
+        // Insert files for the 'content' file area.
+        $instance = $this->insert_files(
+            $instance,
+            $record,
+            'page',
+            \context_module::instance($instance->cmid),
+            'mod_page',
+            'content',
+            0
+        );
+
+        return $instance;
     }
 }

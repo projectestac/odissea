@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_multilang', language 'nl', version '3.11'.
+ * Strings for component 'filter_multilang', language 'nl', version '4.1'.
  *
  * @package     filter_multilang
  * @category    string
@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Meertalige inhoud';
+$string['forceoldsyntax'] = 'Oude syntax opleggen';
+$string['forceoldsyntax_desc'] = 'Forceer oude multilang syntax: &lt;span&rt; zonder de class="multilang" en &lt;lang&rt;.';
 $string['privacy:metadata'] = 'De meertalige inhoudsplugin bewaart geen persoonlijke gegevens.';

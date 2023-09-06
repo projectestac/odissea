@@ -874,6 +874,28 @@ class filelib_test extends \advanced_testcase {
     }
 
     /**
+     * Testing deleting file_save_draft_area_files won't accidentally wipe unintended files.
+     */
+    public function test_file_save_draft_area_files_itemid_cannot_be_false() {
+        global $USER, $DB;
+        $this->resetAfterTest();
+
+        $generator = $this->getDataGenerator();
+        $user = $generator->create_user();
+        $usercontext = \context_user::instance($user->id);
+        $USER = $DB->get_record('user', ['id' => $user->id]);
+
+        $draftitemid = 0;
+        file_prepare_draft_area($draftitemid, $usercontext->id, 'user', 'private', 0);
+
+        // Call file_save_draft_area_files with itemid false - which could only happen due to a bug.
+        // This should throw an exception.
+        $this->expectExceptionMessage('file_save_draft_area_files was called with $itemid false. ' .
+                'This suggests a bug, because it would wipe all (' . $usercontext->id . ', user, private) files.');
+        file_save_draft_area_files($draftitemid, $usercontext->id, 'user', 'private', false);
+    }
+
+    /**
      * Tests the strip_double_headers function in the curl class.
      */
     public function test_curl_strip_double_headers() {
@@ -1703,25 +1725,30 @@ EOF;
         $filerecord['filename'] = 'file 3.png';
         self::create_draft_file($filerecord);
 
+        $filerecord['filename'] = 'file4.png';
+        self::create_draft_file($filerecord);
+
         // Confirm the user drafts area lists 3 files.
         $fs = get_file_storage();
         $usercontext = \context_user::instance($USER->id);
         $draftfiles = $fs->get_area_files($usercontext->id, 'user', 'draft', $draftitemid, 'itemid', 0);
-        $this->assertCount(3, $draftfiles);
+        $this->assertCount(4, $draftfiles);
 
         // Now, spoof some editor text content, referencing 2 of the files; one requiring name encoding, one not.
         $editor = [
             'itemid' => $draftitemid,
-            'text' => '
-                <img src="'.$CFG->wwwroot.'/draftfile.php/'.$usercontext->id.'/user/draft/'.$draftitemid.'/file%203.png" alt="">
-                <img src="'.$CFG->wwwroot.'/draftfile.php/'.$usercontext->id.'/user/draft/'.$draftitemid.'/file1.png" alt="">'
+            'text' => "
+                <img src=\"{$CFG->wwwroot}/draftfile.php/{$usercontext->id}/user/draft/{$draftitemid}/file%203.png\" alt=\"\">
+                <img src=\"{$CFG->wwwroot}/draftfile.php/{$usercontext->id}/user/draft/{$draftitemid}/file1.png\" alt=\"\">
+                <span>{$CFG->wwwroot}/draftfile.php/{$usercontext->id}/user/draft/{$draftitemid}/file4.png</span>"
         ];
 
         // Run the remove orphaned drafts function and confirm that only the referenced files remain in the user drafts.
-        $expected = ['file1.png', 'file 3.png']; // The drafts we expect will not be removed (are referenced in the online text).
+        // The drafts we expect will not be removed (are referenced in the online text).
+        $expected = ['file1.png', 'file 3.png', 'file4.png'];
         file_remove_editor_orphaned_files($editor);
         $draftfiles = $fs->get_area_files($usercontext->id, 'user', 'draft', $draftitemid, 'itemid', 0);
-        $this->assertCount(2, $draftfiles);
+        $this->assertCount(3, $draftfiles);
         foreach ($draftfiles as $file) {
             $this->assertContains($file->get_filename(), $expected);
         }

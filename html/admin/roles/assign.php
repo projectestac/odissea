@@ -61,6 +61,7 @@ if ($returnurl) {
 }
 $PAGE->set_url($pageurl);
 $PAGE->set_context($context);
+$PAGE->activityheader->disable();
 
 $contextname = $context->get_context_name();
 $courseid = $course->id;
@@ -74,7 +75,7 @@ if ($roleid && !isset($assignableroles[$roleid])) {
     $a = new stdClass;
     $a->roleid = $roleid;
     $a->context = $contextname;
-    print_error('cannotassignrolehere', '', $context->get_url(), $a);
+    throw new \moodle_exception('cannotassignrolehere', '', $context->get_url(), $a);
 }
 
 // Work out an appropriate page title.
@@ -164,7 +165,7 @@ switch ($context->contextlevel) {
         $showroles = 1;
         break;
     case CONTEXT_COURSECAT:
-        $PAGE->set_heading($SITE->fullname);
+        core_course_category::page_setup();
         break;
     case CONTEXT_COURSE:
         if ($isfrontpage) {
@@ -182,7 +183,34 @@ switch ($context->contextlevel) {
         break;
 }
 
+$PAGE->set_navigation_overflow_state(false);
+
+// Within a course context we need to explicitly set active tab as there isn't a reference in the nav tree.
+if ($context->contextlevel == CONTEXT_COURSE) {
+    $PAGE->set_secondary_active_tab('participants');
+}
 echo $OUTPUT->header();
+
+$backurl = null;
+// We are looking at a particular role. The page URL has been set correctly.
+if ($roleid) {
+    $backurl = $pageurl;
+} else if ($context->contextlevel == CONTEXT_COURSE && !$isfrontpage) {
+    // Return to the intermediary page when within the course context.
+    $backurl = new moodle_url('/enrol/otherusers.php', ['id' => $course->id]);
+} else if ($returnurl) {
+    // Factor in for $returnurl being passed.
+    $backurl = new moodle_url($returnurl);
+}
+
+if ($backurl) {
+    $backbutton = new single_button($backurl, get_string('back'), 'get');
+    $backbutton->class = 'singlebutton navitem';
+    echo html_writer::tag('div', $OUTPUT->render($backbutton), ['class' => 'tertiary-navigation']);
+} else if (in_array($context->contextlevel, [CONTEXT_COURSE, CONTEXT_MODULE, CONTEXT_COURSECAT])) {
+    // The front page doesn't have an intermediate page 'other users' but needs similar tertiary nav like a standard course.
+    echo $OUTPUT->render_participants_tertiary_nav($course);
+}
 
 // Print heading.
 echo $OUTPUT->heading_with_help($title, 'assignroles', 'core_role');
@@ -245,7 +273,6 @@ if ($roleid) {
     $select = new single_select($PAGE->url, 'roleid', $nameswithcounts, $roleid, null);
     $select->label = get_string('assignanotherrole', 'core_role');
     echo $OUTPUT->render($select);
-    echo '<p><a href="' . $url . '">' . get_string('backtoallroles', 'core_role') . '</a></p>';
     echo '</div>';
 
 } else if (empty($assignableroles)) {
@@ -314,17 +341,13 @@ if ($roleid) {
 
     echo html_writer::table($table);
 
-    if ($context->contextlevel > CONTEXT_USER) {
-
-        if ($returnurl) {
-            $url = new moodle_url($returnurl);
-        } else {
+    if (!$PAGE->has_secondary_navigation() && $context->contextlevel > CONTEXT_USER) {
+        if (!$returnurl) {
             $url = $context->get_url();
+            echo html_writer::start_tag('div', array('class' => 'backlink'));
+            echo html_writer::tag('a', get_string('backto', '', $contextname), array('href' => $url));
+            echo html_writer::end_tag('div');
         }
-
-        echo html_writer::start_tag('div', array('class'=>'backlink'));
-        echo html_writer::tag('a', get_string('backto', '', $contextname), array('href' => $url));
-        echo html_writer::end_tag('div');
     }
 }
 

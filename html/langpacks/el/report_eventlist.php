@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'el', version '3.11'.
+ * Strings for component 'report_eventlist', language 'el', version '4.1'.
  *
  * @package     report_eventlist
  * @category    string
@@ -31,6 +31,8 @@ $string['affectedtable'] = 'Επηρεασμένος πίνακας';
 $string['all'] = 'Όλες';
 $string['clear'] = 'Καθαρισμός';
 $string['component'] = 'Στοιχείο λογισμικού';
+$string['core'] = 'Πυρήνας';
+$string['coresubsystem'] = 'Υποσύστημα ({$a})';
 $string['create'] = 'δημιουργία';
 $string['crud'] = 'Τύπος ερωτήματος βάσης δεδομένων';
 $string['delete'] = 'διαγραφή';

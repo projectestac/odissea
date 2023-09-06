@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'ja', version '3.11'.
+ * Strings for component 'studentquiz', language 'ja', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -85,6 +85,7 @@ $string['finish_button'] = '終了';
 $string['latest_column_name'] = '最新';
 $string['mine_column_name'] = '自分';
 $string['modulename'] = 'スチューデントクイズ';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['modulenameplural'] = 'スチューデントクイズ';
 $string['more'] = 'さらに詳しく';
 $string['myattempts_column_name'] = '自分の受験';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_missingtype', language 'ru', version '3.11'.
+ * Strings for component 'qtype_missingtype', language 'ru', version '4.1'.
  *
  * @package     qtype_missingtype
  * @category    string
@@ -31,7 +31,7 @@ $string['deletedquestion'] = 'Вопрос отсутствует';
 $string['deletedquestiontext'] = 'Этот вопрос отсутствует. Невозможно ничего отобразить.';
 $string['missing'] = 'Тип такого вопроса не установлен в системе';
 $string['missingqtypewarning'] = 'Этот вопрос относится к типу, который в настоящее время не установлен в системе. Вы ничего не сможете сделать с этим вопросом.';
-$string['pluginname'] = 'Отсутствующий тип';
+$string['pluginname'] = 'Отсутствует заполнитель типа вопроса';
 $string['pluginnameadding'] = 'Добавление вопроса неустановленного в системе типа';
 $string['pluginnameediting'] = 'Редактирование вопроса неустановленного в системе типа';
 $string['privacy:metadata'] = 'Плагин «Тип вопроса Выбор пропущенных слов» не хранит никаких персональных данных';

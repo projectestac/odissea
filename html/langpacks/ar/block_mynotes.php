@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mynotes', language 'ar', version '3.11'.
+ * Strings for component 'block_mynotes', language 'ar', version '4.1'.
  *
  * @package     block_mynotes
  * @category    string
@@ -29,7 +29,7 @@ $string['bottomleft'] = 'أسفل اليسار';
 $string['bottomright'] = 'الأسفل يميناً';
 $string['charactersleft'] = 'الحروف الباقية:';
 $string['mynotes:addinstance'] = 'إضافة كتلة جديدة من ملاحظاتي';
-$string['mynotes:myaddinstance'] = 'إضافة كتلة جديدة من ملاحظاتي إلى لوحة التحكم';
+$string['mynotes:myaddinstance'] = 'إضافة كتلة جديدة من ملاحظاتي إلى دفة القيادة';
 $string['mynotes:post'] = 'إضافة ملاحظة جديدة';
 $string['mynotesperpage'] = 'لكل صفحة';
 $string['mynotesperpage_help'] = 'تحديد عدد ما يُعرض من ملاحظات لكل صفحة';

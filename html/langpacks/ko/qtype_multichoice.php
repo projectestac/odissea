@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ko', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'ko', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -59,6 +59,7 @@ $string['pleaseselectananswer'] = '답을 선택하세요.';
 $string['pleaseselectatleastoneanswer'] = '적어도 한개 답을 선택하세요.';
 $string['pluginname'] = '선다형';
 $string['pluginname_help'] = '질문(그림을 포함할 수 있음)에 대한 응답으로 응답자는 여러 답에서 선택합니다. 선다형 질문에는 두 종류가 있습니다. 단답형 혹은 다답형';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = '선다형 질문 추가';
 $string['pluginnameediting'] = '선다형 질문 편집';
 $string['pluginnamesummary'] = '이미 정의된 목록에서 하나 또는 다수의 응답을 선택할 수 있도록 허용합니다.';

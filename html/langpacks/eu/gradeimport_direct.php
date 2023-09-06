@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'eu', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'eu', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -30,3 +30,4 @@ $string['pluginname'] = 'Itsatsi kalkulu-orritik';
 $string['privacy:metadata'] = 'Kalifikazioak kopiatutako kalkulu-orritik inportatzeko pluginak ez du datu pertsonalik biltzen.';
 $string['userdata'] = 'Datuak formulario honetara kopiatzeko laguntza';
 $string['userdata_help'] = 'Kalifikazioak kalkulu-orri batetik kopiatu eta itsats  daitezke kalifikazio-liburura. Kalkulu-orriak erabiltzailea identifikatuko duen zutabe bat izan beharko luke - erabiltzailea, ID zenbakia edo helbide elektronikoa. Inportatu beharreko zutabe bakoitzak goiburua izan beharko luke.';
+$string['userdata_link'] = 'grade/import/direct/index';

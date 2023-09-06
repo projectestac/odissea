@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'fr', version '3.11'.
+ * Strings for component 'form', language 'fr', version '4.1'.
  *
  * @package     form
  * @category    string
@@ -44,8 +44,8 @@ $string['err_numeric'] = 'Vous devez saisir un nombre dans ce champ.';
 $string['err_positiveint'] = 'Vous devez saisir un nombre plus grand que 0.';
 $string['err_rangelength'] = 'Vous devez saisir entre {$a->format[0]} et {$a->format[1]} caractères dans ce champ.';
 $string['err_required'] = 'Vous devez remplir ce champ.';
-$string['err_wrappingwhitespace'] = 'La valeur ne doit pas commencer ou se terminer par une espace.';
-$string['err_wrongfileextension'] = 'Certains fichiers ({$a->wrongfiles}) ne peuvent pas être déposés. Seuls les types de fichiers {$a-> allowlist} sont autorisés.';
+$string['err_wrappingwhitespace'] = 'La valeur ne doit pas commencer ou se terminer par un espace.';
+$string['err_wrongfileextension'] = 'Certains fichiers ({$a->wrongfiles}) ne peuvent pas être déposés. Seuls les types de fichiers {$a->allowlist} sont autorisés.';
 $string['filesofthesetypes'] = 'Types de fichier acceptés :';
 $string['filetypesany'] = 'Tous les types de fichier';
 $string['filetypesnotall'] = 'Il n\'est pas permis de choisir ici « Tous les types de fichier ».';

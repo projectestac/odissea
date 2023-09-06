@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'pt', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'pt', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -40,6 +40,7 @@ $string['layoutselectinline'] = 'Lista pendente incorporada no texto';
 $string['layoutundefined'] = 'Aparência indefinida';
 $string['layoutvertical'] = 'Botões de rádio dispostos verticalmente';
 $string['missingsubquestion'] = 'Esta subpergunta está em falta no seu sistema e não pode ser exibida.';
+$string['multichoicex'] = 'Escolha múltipla {$a}';
 $string['nooptionsforsubquestion'] = 'Não foi possível obter as opções para a parte # {$a->sub} (question->id={$a->id}) da pergunta';
 $string['noquestions'] = 'A pergunta de escolha múltipla incorporada "<strong>{$a}</strong>" não possui nenhuma pergunta.';
 $string['pleaseananswerallparts'] = 'Por favor, responda a todas as partes da pergunta.';
@@ -66,6 +67,7 @@ $string['questionsmore'] = 'Mais {$a} pergunta(s) do que a pergunta de escolha m
 $string['questiontypechanged'] = 'Tipo de pergunta alterado';
 $string['questiontypechangedcomment'] = 'Pelo menos um tipo de pergunta foi alterado.<br />Adicionou, moveu ou apagou uma pergunta?<br />Veja em seguida.';
 $string['questionusedinquiz'] = 'Pergunta usada em {$a->nb_of_quiz} teste(s). Total de tentativas: {$a->nb_of_attempts}';
+$string['regradeissuenumsubquestionschanged'] = 'O número de sub-perguntas incorporadas na pergunta foi alterado.';
 $string['storedqtype'] = 'Tipo de pergunta {$a} restaurada';
 $string['subqresponse'] = 'parte {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Tipo de pergunta desconhecido: {$a->type} da parte da pergunta # {$a->sub}';

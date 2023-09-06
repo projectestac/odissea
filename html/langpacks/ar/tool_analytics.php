@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'ar', version '3.11'.
+ * Strings for component 'tool_analytics', language 'ar', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -88,7 +88,6 @@ $string['exportmodel'] = 'تصدير التهيئة';
 $string['exporttrainingdata'] = 'تصدير بيانات التدريب';
 $string['extrainfo'] = 'المعلومات';
 $string['generalerror'] = 'خطأ في التقييم. ترميز الحالة {$a}';
-$string['getpredictions'] = 'إجلب التنبؤات';
 $string['goodmodel'] = 'هذا نموذج جيد للحصول على تنبؤات.
 قم بتمكينه للحصول على التنبؤات.';
 $string['ignoreversionmismatches'] = 'تجاهل عدم تطابق الإصدار';
@@ -97,6 +96,7 @@ $string['importedsuccessfully'] = 'تم استيراد النموذج بنجاح
 $string['importmodel'] = 'استورد النموذج';
 $string['indicators'] = 'المؤشرات';
 $string['indicators_help'] = 'المؤشرات هي ما تعتقد أنها ستؤدي إلى تنبؤ دقيق للهدف.';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = 'عدد المؤشرات: {$a}';
 $string['info'] = 'المعلومات';
 $string['insights'] = 'الرؤى';
@@ -155,4 +155,4 @@ $string['trainmodels'] = 'تدريب النماذج';
 $string['versionnotsame'] = 'الملف المستورد كان من إصدار مختلف ({$a->importedversion}) عن الإصدار الحالي ({$a->version})';
 $string['viewlog'] = 'سجل التقييم';
 $string['weeksenddateautomaticallyset'] = 'تاريخ الانتهاء المحدد تلقائياً بناءً على تاريخ البدء وعدد المقاطع';
-$string['weeksenddatedefault'] = 'تاريخ الانتهاء المحسوب تلقائياً من تاريخ بدء المقرر الدراسي.';
+$string['weeksenddatedefault'] = 'تاريخ الانتهاء المحسوب تلقائياً من تاريخ بدء المساق.';

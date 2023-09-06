@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'pt', version '3.11'.
+ * Strings for component 'checkmark', language 'pt', version '4.1'.
  *
  * @package     checkmark
  * @category    string
@@ -27,6 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['absent'] = 'Faltou';
 $string['activateindividuals'] = 'Ativar a função individual';
+$string['activitydate:due'] = 'Fecho:';
+$string['activitydate:opened'] = 'Abriu:';
+$string['activitydate:opens'] = 'Abre:';
 $string['addnewgroupoverride'] = 'Adicionar exceção para grupo';
 $string['addnewuseroverride'] = 'Adicionar exceção para utilizador';
 $string['addsubmission'] = 'Adicionar submissão';
@@ -54,7 +57,7 @@ $string['attendancegradelink_hint'] = '<b>Atenção</b>: as notas calculadas aut
 $string['attendancestatus'] = 'Estado atual da sua assiduidade';
 $string['attendant'] = 'Presente';
 $string['autograde_all'] = 'Avaliar todas as submissões';
-$string['autograde_confirm'] = 'Está prestes a atualizar as notas e feedback de <strong>{$a->total}</strong>.  <strong>{$a->graded}</strong> notas e feedback já existentes serão substituídos.';
+$string['autograde_confirm'] = 'Está prestes a atualizar as notas e comentários de <strong>{$a->total}</strong>. <strong>{$a->graded}</strong> notas e comentários já existentes serão substituídos.';
 $string['autograde_confirm_continue'] = 'Tem a certeza que pretende continuar?';
 $string['autograde_custom'] = 'Avaliar utilizadores selecionados';
 $string['autograde_error'] = 'Ocorreu um erro durante a avaliação automática.';
@@ -88,6 +91,10 @@ $string['bulk_help'] = 'Aqui pode executar ações como "configuração da assid
 <strong>Nota:</strong> Se a assiduidade estiver associada às notas, somente os utilizadores presentes receberão pontos para as verificações assinaladas.
 Os utilizadores ausentes terão 0 pontos e os utilizadores com estado de assiduidade desconhecido serão ignorados!';
 $string['bulk_no_users_selected'] = 'Nenhum participante foi selecionado. Selecione os utilizadores através das caixas de seleção na coluna mais à esquerda da tabela abaixo.';
+$string['calendardue'] = 'Terminou o prazo de \'{$a}\'';
+$string['calendargradingdue'] = 'Terminou o prazo de avaliação de \'{$a}\'';
+$string['calendarteachers'] = 'Mostrar data limite no calendário dos professores';
+$string['calendarteachers_help'] = 'A data limite da checkmark pode opcionalmente ser exibida no calendário dos professores. Para os alunos, a data limite é exibida no calendário por predefinição. Atenção: Se houver muitos exercícios checkmark na disciplina, a visualização do calendário pode ficar confusa para os professores.';
 $string['cannotviewcheckmark'] = 'Não tem permissões para visualizar esta checkmark';
 $string['cantfixevent'] = 'Não foi possível corrigir o evento com ID {$a->id}, com o nome {$a->name} ({$a->matches} ocorrências).';
 $string['cfg_nowarning'] = 'Sem aviso';
@@ -111,18 +118,15 @@ $string['checkmark_overviewsummary_nograde'] = 'Foram marcadas {$a->checked_exam
 $string['checkmark_summary'] = 'Foram marcadas <span id="examples">{$a->checked_examples}</span> do total de {$a->total_examples} verificações.<br />(Nota: <span id="grade">{$a->checked_grade}</span> do máximo de {$a->total_grade} pontos)';
 $string['checkmarkdetails'] = 'Detalhes da Checkmark';
 $string['checkmarkisdue'] = 'O trabalho da Checkmark já fechou';
-$string['checkmarkmail'] = '{$a->grader} publicou um feedback na sua
-submissão da Checkmark \'{$a->checkmark}\'
+$string['checkmarkmail'] = '{$a->grader} publicou um comentário na sua submissão da Checkmark \'{$a->checkmark}\'
 
-Pode visualizar o feedback anexado à sua submissão em:
+Pode visualizar o comentário anexado à sua submissão em:
 
 {$a->url}';
-$string['checkmarkmailhtml'] = '{$a->grader} publicou um feedback na sua
-submissão da Checkmark \'<i>{$a->checkmark}</i>\'<br /><br />
+$string['checkmarkmailhtml'] = '{$a->grader} publicou um comentário na sua submissão da Checkmark \'<i>{$a->checkmark}</i>\'<br /><br />
 
-Pode visualizar o feedback anexado à sua <a href="{$a->url}">submissão</a>.';
-$string['checkmarkmailsmall'] = '{$a->grader} publicou um feedback na sua
-submissão da Checkmark \'{$a->checkmark}\'. Pode visualizar o feedback anexado à sua submissão';
+Pode visualizar o comentário anexado à sua <a href="{$a->url}">submissão</a>.';
+$string['checkmarkmailsmall'] = '{$a->grader} publicou um comentário na sua submissão da Checkmark \'{$a->checkmark}\'. Pode visualizar o comentário anexado à sua submissão';
 $string['checkmarkname'] = 'Nome da Checkmark';
 $string['checkmarks'] = 'Checkmarks';
 $string['checkmarkstatstitle'] = 'Checkmark global da disciplina';
@@ -227,10 +231,10 @@ $string['exporttemplates_help'] = 'Exportação rápida com modelos predefinidos
         contém as colunas: [fullname, idnumber, examples, checked, grade, signature]</li>
 </ul>';
 $string['extended_until'] = 'Prolongado até {$a}';
-$string['failedupdatefeedback'] = 'Falha ao atualizar o feedback da submissão para o utilizador {$a}';
-$string['feedback'] = 'Feedback';
-$string['feedbackfromteacher'] = 'Feedback recebido de {$a}';
-$string['feedbackupdated'] = 'Foram atualizados os feedback de {$a} utilizadores';
+$string['failedupdatefeedback'] = 'Falha ao atualizar o comentário da submissão do utilizador {$a}';
+$string['feedback'] = 'Comentário';
+$string['feedbackfromteacher'] = 'Comentário recebido de {$a}';
+$string['feedbackupdated'] = 'Foram atualizados os comentárioc de {$a} utilizadores';
 $string['filter'] = 'Filtro';
 $string['filtergrantedextension'] = 'Prolongar prazo';
 $string['filternotsubmitted'] = 'Não submetido';
@@ -243,6 +247,7 @@ $string['forcesinglelinenames'] = 'Forçar nomes numa linha única';
 $string['forcesinglelinenames_help'] = '<p>Obriga o nome a ser escrito numa única linha no PDF.</p>
 <p><b>Atenção</b>: Se houver muitas colunas ou o nome for muito longo, ficará distorcido e pode tornar-se ilegível. Se isso acontecer, oculte algumas colunas de menor importância para ter mais espaço para o nome.</p>';
 $string['format'] = 'Formato';
+$string['gotoactivity'] = 'Ir para a atividade';
 $string['grade'] = 'Nota';
 $string['grade_attendence_name'] = 'Nota da assiduidade';
 $string['grade_automatically'] = 'Avaliar automaticamente';
@@ -295,7 +300,7 @@ $string['noclose'] = 'Sem data de fecho';
 $string['nolatesubmissions'] = 'Não são permitidas';
 $string['nomoresubmissions'] = 'Não são permitidas mais submissões.';
 $string['nomoresubmissionsaccepted'] = 'Permitido apenas aos participantes que receberam prolongamento do prazo';
-$string['nonnegativeintrequired'] = 'Tem ser inteiro e maior ou igual a zero (>=0)!';
+$string['nonnegativeintrequired'] = 'Tem ser maior ou igual a zero (>=0) e inteiro!';
 $string['noopen'] = 'Sem data de início';
 $string['norequiregrading'] = 'Não existem checkmarks que seja necessário avaliar';
 $string['nostudents'] = 'Não existem utilizadores para mostrar!';
@@ -341,18 +346,18 @@ $string['pdftextsize'] = 'Tamanho do texto';
 $string['pluginadministration'] = 'Administração da Checkmark';
 $string['pluginname'] = 'Checkmark';
 $string['popupinnewwindow'] = 'Abrir numa janela pop-up';
-$string['posintrequired'] = 'Tem de ser inteiro e maior que zero (> 0)!';
-$string['posintst100required'] = 'Tem que ser um inteiro do intervalo [0,100] (0 <= X <= 100)!';
-$string['presentationfeedback'] = 'Feedback da apresentação';
-$string['presentationfeedback_table'] = 'Feedback (apresentação)';
-$string['presentationgrade'] = 'Nota da apresentação';
+$string['posintrequired'] = 'Tem ser maior ou igual a zero (>=0) e inteiro!';
+$string['posintst100required'] = 'Tem que ser um inteiro entre 0 e 100!';
+$string['presentationfeedback'] = 'Comentário (Apresentação)';
+$string['presentationfeedback_table'] = 'Comentário (apresentação)';
+$string['presentationgrade'] = 'Nota (Apresentação)';
 $string['presentationgrade_short'] = 'PT';
 $string['presentationgrade_table'] = 'Nota (apresentação)';
 $string['presentationgradebook'] = 'Mostrar nota da apresentação na pauta';
 $string['presentationgradebook_help'] = 'Esta opção determina se a nota da apresentação é mostrada, ou não, na pauta como item extra de avaliação.';
 $string['presentationgrading'] = 'Registar notas das apresentações';
 $string['presentationgrading_grade'] = 'Avaliar a apresentação';
-$string['presentationgrading_grade_help'] = 'Estes elementos determinam como pode ser avaliada a apresentação. Para a nota pode selecionar: <ul><li><strong>nenhuma</strong> - nenhuma nota será registada, mas pode usar um texto como feedback.</li><li><strong>escala</strong> - use uma escala para avaliar a apresentação do aluno </li><li><strong>pontos</strong> - use um valor numérico para avaliar a apresentação do aluno</li></ul>';
+$string['presentationgrading_grade_help'] = 'Estes elementos determinam como pode ser avaliada a apresentação. Para a nota pode selecionar: <ul><li><strong>nenhuma</strong> - nenhuma nota será registada, mas pode usar um texto como comentário.</li><li><strong>escala</strong> - usar uma escala para avaliar a apresentação do aluno.</li><li><strong>pontos</strong> - usar um valor numérico para avaliar a apresentação do aluno</li></ul>';
 $string['presentationgrading_help'] = 'Se ativar esta opção, as notas da apresentação podem ser registadas como elemento informativo extra da avaliação.';
 $string['presentationgradingcount'] = 'Apresentações avaliadas';
 $string['presentationheader'] = 'Avaliação da apresentação';
@@ -360,16 +365,17 @@ $string['printsettingstitle'] = 'Configurações da exportação';
 $string['privacy:metadata:attendance'] = 'Estado da assiduidade do utilizador';
 $string['privacy:metadata:grade'] = 'Nota do utilizador';
 $string['privacy:metadata:submission:timemodified'] = 'A data e a hora mais recentes em que a submissão foi atualizada/modificada.';
-$string['privacy:metadata:subsys:message'] = 'A atividade Checkmark envia mensagens para os utilizadores se receberem feedback e para os professores se alguém submeter (se estiver ativo).';
+$string['privacy:metadata:subsys:message'] = 'A atividade Checkmark envia mensagens para os utilizadores se receberem feedback via comentários e para os professores se alguém submeter (se estiver ativo).';
 $string['privacy:metadata:timeavailable'] = 'Intervalo de tempo desde o início do período de submissão.';
 $string['privacy:metadata:timedue'] = 'Data limite para submeter.';
-$string['privacy:path:feedback'] = 'Feedback';
+$string['privacy:path:feedback'] = 'Comentário';
 $string['privacy:path:submission'] = 'Submissão';
 $string['quickgrade'] = 'Permitir a avaliação rápida';
 $string['quickgrade_help'] = 'Se ativar esta opção, várias checkmarks podem ser avaliadas numa só página. Adicione as notas e comentários, e em seguida, clique no botão "Guardar tudo" para gravar todas as alterações efetuadas na página.';
 $string['remembertoupdategrades'] = 'Nesta Checkmark existem submissões que foram avaliadas automaticamente. É altamente recomendado que atualize ou reavalie as submissões se alterou as notas das verificações!';
 $string['requiregrading'] = 'Requerem avaliação';
 $string['requiresubmit'] = 'Requer submissão';
+$string['reverttodefaults'] = 'Reverter para predefinição da checkmark';
 $string['reviewed'] = 'Revistas';
 $string['saveallfeedback'] = 'Guardar todas as alterações';
 $string['search:activity'] = 'Checkmark - informações da atividade';
@@ -378,6 +384,8 @@ $string['selection'] = 'Com a seleção';
 $string['sendnotifications'] = 'Enviar notificações';
 $string['seperatenamecolumns'] = 'Dividir o nome completo em colunas separadas';
 $string['seperatenamecolumns_help'] = 'Se ativar esta opção, todas as partes que constituem o nome completo (nome e apelido) serão divididas em colunas separadas.';
+$string['sequentialnumbering'] = 'Numeração sequencial das linhas';
+$string['sequentialnumbering_help'] = 'Adicionar um prefixa a cada linha (aluno) com um número sequencial a começar em 1. Pode, por exemplo, ser usado para selecionar alunos aleatoriamente para apresentarem.';
 $string['setabsent'] = 'Marcar como ausente';
 $string['setabsentandgrade'] = 'Marcar como ausente e avaliar';
 $string['setattendant'] = 'Marcar como presente';
@@ -419,7 +427,7 @@ $string['strvalidmsgtime'] = 'Duração da validade da mensagem';
 $string['strvalidmsgtimedesc'] = 'Número de dias após os quais as notificações da avaliação para os utilizadores já não serão enviadas.';
 $string['studentpreview'] = 'Pré-visualização do aluno';
 $string['submission'] = 'Submissão';
-$string['submissionfeedback'] = 'Feedback da submissão';
+$string['submissionfeedback'] = 'Comentário da submissão';
 $string['submissions'] = 'Submissões';
 $string['submissionsamount'] = '{$a->submitted} de {$a->total} alunos já submeteram.';
 $string['submissionsaved'] = 'As suas alterações foram gravadas';
@@ -435,6 +443,7 @@ $string['trackattendance'] = 'Registar assiduidade';
 $string['trackattendance_help'] = 'Se ativar esta opção, pode registar a assiduidade dos participantes.';
 $string['ungraded'] = 'Sem nota';
 $string['unknown'] = 'Desconhecido';
+$string['upgradekeyerror'] = 'Ocorreu um erro na atualização devido a várias marcações existentes na checkmark para um determinado par de exemplo/submissão. Para mais detalhes, confira o seguinte problema no Github: {$a}';
 $string['user_dates_overridden'] = 'As datas do utilizador foram substituídas!';
 $string['usermisconf'] = 'Existe um erro na configuração do utilizador';
 $string['usernosubmit'] = 'Desculpe mas não tem permissão para submeter qualquer checkmark.';
@@ -442,8 +451,9 @@ $string['useroverride'] = 'Exceção de utilizador';
 $string['useroverride_edit'] = 'Editar exceção de utilizador';
 $string['useroverrides'] = 'Exceções de utilizador';
 $string['usersnone'] = 'Nenhum aluno tem acesso a esta tarefa.';
-$string['viewfeedback'] = 'Ver notas e feedback da Checkmark';
+$string['viewallsubmissions'] = 'Ver todas as submissões';
+$string['viewfeedback'] = 'Ver notas e comentários da Checkmark';
 $string['viewmysubmission'] = 'Ver a minha submissão';
-$string['viewsubmissions'] = 'Visualizar todas as submissões';
+$string['viewsubmissions'] = 'Submissões';
 $string['yoursubmission'] = 'A sua submissão';
 $string['zippedgrouppdfs'] = 'Grupos em PDFs separados';

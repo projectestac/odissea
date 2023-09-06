@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'simplecertificate', language 'pt', version '3.11'.
+ * Strings for component 'simplecertificate', language 'pt', version '4.1'.
  *
  * @package     simplecertificate
  * @category    string
@@ -98,7 +98,7 @@ $string['defaultcodex'] = 'Posição horizontal padrão do código QR';
 $string['defaultcodey'] = 'Posição vertical padrão do código QR';
 $string['defaultheight'] = 'Altura predefinida';
 $string['defaultperpage'] = 'Certificados por página';
-$string['defaultperpage_help'] = 'Número de certificados a mostrar por página (máximo de 200)';
+$string['defaultperpage_help'] = 'Número de certificados a mostrar por página (máximo de 200).';
 $string['defaultwidth'] = 'Largura predefinida';
 $string['deleteall'] = 'Apagar todos';
 $string['deleteselected'] = 'Apagar selecionado(s)';
@@ -138,7 +138,7 @@ Pode revê-lo aqui:
 $string['emailteachers'] = 'Enviar e-mail aos professores';
 $string['emailteachers_help'] = 'Se ativar esta opção, os professores serão avisados por e-mail sempre que os alunos recebem um certificado.';
 $string['enablesecondpage'] = 'Ativar verso da página do certificado';
-$string['enablesecondpage_help'] = 'Se desativar esta opção, apenas o código QR do certificado será impresso no verso da página (se imprimir código QR estiver ativo)';
+$string['enablesecondpage_help'] = 'Se desativar esta opção, apenas o código QR do certificado será impresso no verso da página (se imprimir código QR estiver ativo).';
 $string['eventcertificate_verified'] = 'Certificado verificado';
 $string['eventcertificate_verified_description'] = 'O utilizador com id {$a->userid} verificou o certificado com id {$a->certificateid}, emitido ao utilizador com id {$a->certiticate_userid}.';
 $string['filenotfound'] = 'Ficheiro não encontrado';
@@ -187,11 +187,11 @@ $string['printgrade_help'] = 'Pode selecionar qualquer item de avaliação dispo
 $string['printoutcome'] = 'Imprimir Competência';
 $string['printoutcome_help'] = 'Pode escolher qualquer competência da disciplina para imprimir no certificado: o nome da competência e o resultado obtido pelo utilizador. Um exemplo: Atribuição de Competência: Avançado.';
 $string['printqrcode'] = 'Imprimir código QR do certificado';
-$string['printqrcode_help'] = 'Imprimir (ou não) código QR do certificado';
+$string['printqrcode_help'] = 'Imprimir (ou não) código QR do certificado.';
 $string['qrcodefirstpage'] = 'Imprimir código QR na 1ª página';
-$string['qrcodefirstpage_help'] = 'Imprimir código QR na 1ª página';
+$string['qrcodefirstpage_help'] = 'Imprimir código QR na 1.ª página.';
 $string['qrcodeposition'] = 'Posição do código QR no certificado';
-$string['qrcodeposition_help'] = 'Coordenadas XY (em milímetros) do código QR do certificado';
+$string['qrcodeposition_help'] = 'Coordenadas XY (em milímetros) do código QR do certificado.';
 $string['receiveddate'] = 'Data de emissão';
 $string['report'] = 'Relatório';
 $string['requiredtimenotmet'] = 'Deverá participar nesta disciplina, pelo menos {$a->requiredtime} minutos, para que seja emitido este certificado';
@@ -209,11 +209,11 @@ $string['simplecertificate:addinstance'] = 'Adicionar atividade Certificado Simp
 $string['simplecertificate:manage'] = 'Gerir atividade Certificado Simples';
 $string['simplecertificate:view'] = 'Ver atividade Certificado Simples';
 $string['size'] = 'Tamanho do certificado';
-$string['size_help'] = 'Largura e Altura (em milímetros) do certificado. O tamanho predefinido é A4 Paisagem (horizontal)';
+$string['size_help'] = 'Largura e Altura (em milímetros) do certificado. O tamanho predefinido é A4 Paisagem (horizontal).';
 $string['standardview'] = 'Testar impressão do certificado';
 $string['summaryofattempts'] = 'Resumo dos Certificados obtidos';
 $string['textposition'] = 'Posição do texto do certificado';
-$string['textposition_help'] = 'Coordenadas XY (em milímetros) do texto do certificado';
+$string['textposition_help'] = 'Coordenadas XY (em milímetros) do texto do certificado.';
 $string['timestartdatefmt'] = 'Formato de data da inscrição inicial';
 $string['timestartdatefmt_help'] = 'Insira um formato de data válido em PHP (<a href="http://www.php.net/manual/en/function.strftime.php">Formatos de data</a>). Deixe em branco para usar o formato do idioma escolhido pelo utilizador.';
 $string['upgradeerror'] = 'Erro ao atualizar $a';

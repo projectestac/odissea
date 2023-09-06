@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'coursereport_progress', language 'el', version '3.11'.
+ * Strings for component 'coursereport_progress', language 'el', version '4.1'.
  *
  * @package     coursereport_progress
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Ολοκλήρωση δραστηριότητας';
 $string['pluginpagetype'] = 'Αναφορά ολοκλήρωσης δραστηριότητας';
+$string['progress:view'] = 'Προβολή αναφορών ολοκλήρωσης δραστηριότητας';

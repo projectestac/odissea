@@ -25,12 +25,12 @@ Feature: Allow teachers to edit the default activity completion rules in a cours
       | assign | C1 | a1 | Test assignment one | Submit something! | 300 |
     And I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode on
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I set the following fields to these values:
       | Enable completion tracking | Yes |
     And I press "Save and display"
     When I navigate to "Course completion" in current page administration
-    And I follow "Default activity completion"
+    And I select "Default activity completion" from the "Course completion tertiary navigation" singleselect
     And I click on "Assignments" "checkbox"
     And I click on "Edit" "button"
     And I should see "Completion tracking"

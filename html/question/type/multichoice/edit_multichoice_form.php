@@ -64,7 +64,8 @@ class qtype_multichoice_edit_form extends question_edit_form {
         $mform->addElement('selectyesno', 'showstandardinstruction',
             get_string('showstandardinstruction', 'qtype_multichoice'), null, null, [0, 1]);
         $mform->addHelpButton('showstandardinstruction', 'showstandardinstruction', 'qtype_multichoice');
-        $mform->setDefault('showstandardinstruction', $this->get_default_value('showstandardinstruction', 0));
+        $mform->setDefault('showstandardinstruction', $this->get_default_value('showstandardinstruction',
+                get_config('qtype_multichoice', 'showstandardinstruction')));
 
         $this->add_per_answer_fields($mform, get_string('choiceno', 'qtype_multichoice', '{no}'),
                 question_bank::fraction_options_full(), max(5, QUESTION_NUMANS_START));
@@ -79,11 +80,11 @@ class qtype_multichoice_edit_form extends question_edit_form {
             &$repeatedoptions, &$answersoption) {
         $repeated = array();
         $repeated[] = $mform->createElement('editor', 'answer',
-                $label, array('rows' => 1), $this->editoroptions);
+            $label, ['rows' => 2], $this->editoroptions);
         $repeated[] = $mform->createElement('select', 'fraction',
                 get_string('gradenoun'), $gradeoptions);
         $repeated[] = $mform->createElement('editor', 'feedback',
-                get_string('feedback', 'question'), array('rows' => 1), $this->editoroptions);
+            get_string('feedback', 'question'), ['rows' => 2], $this->editoroptions);
         $repeatedoptions['answer']['type'] = PARAM_RAW;
         $repeatedoptions['fraction']['default'] = 0;
         $answersoption = 'answers';

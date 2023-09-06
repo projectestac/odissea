@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'pt', version '3.11'.
+ * Strings for component 'label', language 'pt', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -25,36 +25,38 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdndmedia'] = 'Se ativar esta opção, o utilizador poderá optar por criar um recurso do tipo Separador ou do tipo Ficheiro quando arrasta e larga ficheiros multimédia numa disciplina.';
-$string['configdndresizeheight'] = 'Quando um separador é criado a partir de uma imagem que foi arrastada e largada numa disciplina, redimensionar se esta for mais alta do que este número de píxeis (0 para não redimensionar)';
-$string['configdndresizewidth'] = 'Quando um separador é criado a partir de uma imagem que foi arrastada e largada numa disciplina, redimensionar se esta for mais larga do que este número de píxeis (0 para não redimensionar)';
+$string['configdndmedia'] = 'Se ativar esta opção, o utilizador poderá optar por criar um recurso Área de texto e multimédia quando arrasta e larga ficheiros multimédia numa disciplina.';
+$string['configdndresizeheight'] = 'Quando é criado um recurso Área de texto e multimédia a partir de um ficheiro multimédia que foi arrastado e largado numa disciplina, redimensionar se for mais alto do que este número de píxeis. Não será redimensionado se definida como "0" (zero).';
+$string['configdndresizewidth'] = 'Quando é criado um recurso Área de texto e multimédia a partir de um ficheiro multimédia que foi arrastado e largado numa disciplina, redimensionar se for mais largo do que este número de píxeis. Não será redimensionado se definida como "0" (zero).';
 $string['dndmedia'] = 'Arrastar e largar ficheiros multimédia';
 $string['dndresizeheight'] = 'Redimensionar altura ao arrastar';
 $string['dndresizewidth'] = 'Redimensionar largura ao arrastar';
 $string['dnduploadlabel'] = 'Adicionar conteúdo multimédia à página da disciplina';
-$string['dnduploadlabeltext'] = 'Adicionar um separador à página da disciplina';
-$string['indicator:cognitivedepth'] = 'Compreensão do Separador';
-$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recurso Separador.';
-$string['indicator:cognitivedepthdef'] = 'Compreensão do Separador';
-$string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelos recursos Separador durante esse intervalo de análise (Níveis = Não visualizado, Visualizado)';
-$string['indicator:socialbreadth'] = 'Socialização do Separador';
-$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Separador.';
-$string['indicator:socialbreadthdef'] = 'Socialização do Separador';
-$string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelos recursos Separador durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
-$string['label:addinstance'] = 'Adicionar novo separador';
-$string['label:view'] = 'Ver separador';
-$string['labeltext'] = 'Texto do separador';
-$string['modulename'] = 'Separador';
-$string['modulename_help'] = 'O recurso Separador permite inserir texto e conteúdos multimédia entre as hiperligações para os recursos e atividades que se encontram dentro das secções (tópicos ou semanas) da disciplina. Os separadores são muito versáteis e, quando utilizados de forma correta, podem ajudar a melhorar a aparência de uma disciplina.
+$string['dnduploadlabeltext'] = 'Adicionar um recurso Área de texto e multimédia à página da disciplina';
+$string['indicator:cognitivedepth'] = 'Compreensão de Área de texto e multimédia';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recurso Área de texto e multimédia.';
+$string['indicator:cognitivedepthdef'] = 'Compreensão de Área de texto e multimédia';
+$string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelos recursos Área de texto e multimédia durante este intervalo de análise (Níveis = Não visualizado, Visualizado)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'Socialização de Área de texto e multimédia';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Área de texto e multimédia.';
+$string['indicator:socialbreadthdef'] = 'Socialização de Área de texto e multimédia';
+$string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelos recursos Área de texto e multimédia durante este intervalo de análise (Níveis = Sem participação, Participante individual)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['label:addinstance'] = 'Adicionar novo recurso Área de texto e multimédia';
+$string['label:view'] = 'Ver o recurso Área de texto e multimédia';
+$string['labeltext'] = 'Texto';
+$string['modulename'] = 'Área de texto e multimédia';
+$string['modulename_help'] = 'O recurso Área de texto e multimédia permite inserir texto e conteúdos multimédia na página da disciplina.
 
-Os separadores podem ser utilizados:
+Os recursos Área de texto e multimédia podem ser utilizados:
 
 * Para dividir uma longa lista de atividades com um subtítulo ou uma imagem;
-* Para exibir um ficheiro de som ou vídeo incorporados diretamente na página principal da disciplina;
-* Para adicionar uma pequena descrição a um tópico.';
+* Para exibir ficheiros de multimédia incorporados diretamente na página da disciplina;
+* Para adicionar uma pequena descrição a um tópico/secção.';
 $string['modulename_link'] = 'mod/label/link';
-$string['modulenameplural'] = 'Separadores';
-$string['pluginadministration'] = 'Administração do Separador';
-$string['pluginname'] = 'Separador';
-$string['privacy:metadata'] = 'O módulo do recurso Separador não armazena quaisquer dados pessoais.';
-$string['search:activity'] = 'Separador';
+$string['modulenameplural'] = 'Áreas de texto e multimédia';
+$string['pluginadministration'] = 'Administração de Área de texto e multimédia';
+$string['pluginname'] = 'Área de texto e multimédia';
+$string['privacy:metadata'] = 'O módulo Área de texto e multimédia não armazena quaisquer dados pessoais.';
+$string['search:activity'] = 'Área de texto e multimédia';

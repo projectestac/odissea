@@ -46,7 +46,7 @@ class repositorylib_test extends \advanced_testcase {
         $this->resetAfterTest(true);
 
         $syscontext = \context_system::instance();
-        $repositorypluginname = 'boxnet';
+        $repositorypluginname = 'dropbox';
         // override repository permission
         $capability = 'repository/' . $repositorypluginname . ':view';
         $guestroleid = $DB->get_field('role', 'id', array('shortname' => 'guest'));
@@ -485,8 +485,7 @@ class repositorylib_test extends \advanced_testcase {
         // Check that a user can view SOME repositories when logged in as someone else.
         $params = new \stdClass();
         $params->name = 'Dropbox';
-        $params->dropbox_key = 'key';
-        $params->dropbox_secret = 'secret';
+        $params->dropbox_issuerid = '2';
         $privaterepoid = $this->getDataGenerator()->create_repository('dropbox')->id;
         $notprivaterepoid = $this->getDataGenerator()->create_repository('upload')->id;
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'el', version '3.11'.
+ * Strings for component 'grading', language 'el', version '4.1'.
  *
  * @package     grading
  * @category    string
@@ -73,7 +73,7 @@ $string['privacy:metadata:grading_instances:feedback'] = 'Η ανατροφοδ�
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'Ο μορφότυπος κειμένου της ανατροφοδότησης που δόθηκε από το χρήστη.';
 $string['privacy:metadata:grading_instances:raterid'] = 'Το αναγνωριστικό του χρήστη που αξιολόγησε το στιγμιότυπο βαθμολόγησης.';
 $string['privacy:metadata:grading_instances:rawgrade'] = 'Ο βαθμός για το στιγμιότυπο βαθμολόγησης.';
-$string['privacy:metadata:grading_instances:status'] = 'Η κατάσταση του στιγμιότυπου βαθμολόγησης.';
+$string['privacy:metadata:grading_instances:status'] = 'Η κατάσταση του στιγμιοτύπου βαθμολόγησης.';
 $string['privacy:metadata:grading_instances:timemodified'] = 'Πότε τροποποιήθηκε τελευταία το στιγμιότυπο βαθμολόγησης.';
 $string['privacy:metadata:gradingformpluginsummary'] = 'Δεδομένα για τη μέθοδο βαθμολόγησης.';
 $string['searchownforms'] = 'Να περιλαμβάνονται και οι δικές μου φόρμες';

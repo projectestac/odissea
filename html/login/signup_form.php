@@ -36,9 +36,6 @@ class login_signup_form extends moodleform implements renderable, templatable {
 
         $mform = $this->_form;
 
-        $mform->addElement('header', 'createuserandpass', get_string('createuserandpass'), '');
-
-
         $mform->addElement('text', 'username', get_string('username'), 'maxlength="100" size="12" autocapitalize="none"');
         $mform->setType('username', PARAM_RAW);
         $mform->addRule('username', get_string('missingusername'), 'required', null, 'client');
@@ -46,11 +43,13 @@ class login_signup_form extends moodleform implements renderable, templatable {
         if (!empty($CFG->passwordpolicy)){
             $mform->addElement('static', 'passwordpolicyinfo', '', print_password_policy());
         }
-        $mform->addElement('password', 'password', get_string('password'), 'maxlength="32" size="12"');
+        $mform->addElement('password', 'password', get_string('password'), [
+            'maxlength' => 32,
+            'size' => 12,
+            'autocomplete' => 'new-password'
+        ]);
         $mform->setType('password', core_user::get_property_type('password'));
         $mform->addRule('password', get_string('missingpassword'), 'required', null, 'client');
-
-        $mform->addElement('header', 'supplyinfo', get_string('supplyinfo'),'');
 
         $mform->addElement('text', 'email', get_string('email'), 'maxlength="100" size="25"');
         $mform->setType('email', core_user::get_property_type('email'));
@@ -107,6 +106,7 @@ class login_signup_form extends moodleform implements renderable, templatable {
         $manager->signup_form($mform);
 
         // buttons
+        $this->set_display_vertical();
         $this->add_action_buttons(true, get_string('createaccount'));
 
     }

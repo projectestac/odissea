@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'nl', version '3.11'.
+ * Strings for component 'tool_behat', language 'nl', version '4.1'.
  *
  * @package     tool_behat
  * @category    string
@@ -27,14 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'Deze beheertool helpt ontwikkelaars en testers om .feature-bestanden te maken die de functionaliteit van Moodle beschrijft en ze automatisch laat lopen. De beschikbare definities om in .feature-bestanden te gebruiken zijn hieronder opgelijst.';
 $string['allavailablesteps'] = 'Alle beschikbare stappendefinities';
-$string['errorapproot'] = '$ CFG-> behat_ionic_dirroot verwijst niet naar een geldige Moodle app developer-installatie.';
 $string['errorbehatcommand'] = 'Fout bij het lopen van het behat CLI commando. Probeer manueel "{$a} --help" op de command line te laten lopen om meer informatie over het probleem te verkrijgen.';
 $string['errorcomposer'] = 'Composer dependencies zijn niet geïnstalleerd.';
 $string['errordataroot'] = '$CFG->behat_dataroot is niet ingesteld of is ongeldig.';
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix en $CFG->behat_wwwroot moeten geconfigureerd zijn in config.php.';
-$string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix en $CFG->behat_wwwroot waarden moeten verschillend zijn van $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG-> phpunit_dataroot en $CFG->phpunit_prefix.';
+$string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix en $CFG->behat_wwwroot waarden moeten verschillend zijn van $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG-> phpunit_dataroot en $CFG->phpunit_prefix.<br/>Of, als $CFG->behat_prefix hetzelfde is, dan moet $CFG->behat_dbname of $CFG->behat_dbhost verschillend zijn van $CFG->phpunit_dbname and $CFG->phpunit_dbhost en van $CFG->dbname en $CFG->dbhost.';
 $string['fieldvalueargument'] = 'Argumenten veldwaarde';
-$string['fieldvalueargument_help'] = 'Dit argument moet worden ingevuld door een veldwaarde. Er zijn vele veldtypen, eenvoudige, zoals selectievakjes of textzones of complexe,  zoals datumselectors. Zie  <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a> voor details van de verwachte veldwaardes.';
+$string['fieldvalueargument_help'] = 'Dit argument moet worden ingevuld door een veldwaarde. Er zijn vele veldtypen, eenvoudige, zoals selectievakjes of textzones of complexe,  zoals datumselectors. Zie  <a href="https://moodledev.io/general/development/tools/behat" target="_blank">Acceptance_testing</a> voor details van de verwachte veldwaardes.';
 $string['giveninfo'] = 'Given. Processen die de omgeving instellen';
 $string['infoheading'] = 'Info';
 $string['installinfo'] = 'Lees {$a} voor informatie over installatie en het uitvoeren van tests';

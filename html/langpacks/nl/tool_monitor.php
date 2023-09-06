@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'nl', version '3.11'.
+ * Strings for component 'tool_monitor', language 'nl', version '4.1'.
  *
  * @package     tool_monitor
  * @category    string
@@ -71,6 +71,7 @@ $string['messagetemplate_help'] = 'Er is een melding gestuurd naar wie ingeschre
 * Naam van de regel {rulename}
 * Beschrijving {description}
 * Gebeurtenis {eventname}';
+$string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Instantie';
 $string['monitor:managerules'] = 'Beheer regels gebeurtenismonitor';
 $string['monitor:managetool'] = 'Gebeurtenissen monitoren inschakelen en uitschakelen';

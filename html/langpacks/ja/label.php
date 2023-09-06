@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ja', version '3.11'.
+ * Strings for component 'label', language 'ja', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -25,35 +25,38 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdndmedia'] = 'メディアファイルがコースにドラッグ＆ドロップされた時にラベル作成を提案します。';
-$string['configdndresizeheight'] = 'イメージのドラッグ＆ドロップによるラベル作成時、ここで指定したピクセルより高さが大きい場合、リサイズします (0 = リサイズなし)。';
-$string['configdndresizewidth'] = 'イメージのドラッグ＆ドロップによるラベル作成時、ここで指定したピクセルより幅が大きい場合、リサイズします (0 = リサイズなし)。';
+$string['configdndmedia'] = 'メディアファイルがコースにドラッグ＆ドロップされた時にテキストおよびメディア領域作成を提案します。';
+$string['configdndresizeheight'] = 'メディアファイルのドラッグ＆ドロップによるテキストおよびメディア領域作成時、ここで指定したピクセルより高さが大きい場合、リサイズします。ゼロに設定した場合、リサイズされません。';
+$string['configdndresizewidth'] = 'メディアファイルのドラッグ＆ドロップによるテキストおよびメディア領域作成時、ここで指定したピクセルより幅が大きい場合、リサイズします。ゼロに設定した場合、リサイズされません。';
 $string['dndmedia'] = 'メディアドラッグ＆ドロップ';
 $string['dndresizeheight'] = 'リサイズドラッグ＆ドロップ高';
 $string['dndresizewidth'] = 'リサイズドラッグ＆ドロップ幅';
 $string['dnduploadlabel'] = 'コースページにメディアを追加する';
-$string['dnduploadlabeltext'] = 'コースページにラベルを追加する';
-$string['indicator:cognitivedepth'] = 'ラベル認知的';
-$string['indicator:cognitivedepth_help'] = 'この指標はラベルリソースで学生が到達した認識深度に基づきます。';
-$string['indicator:cognitivedepthdef'] = 'ラベル認知的';
-$string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がラベルリソースから提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧)。';
-$string['indicator:socialbreadth'] = 'ラベル社会的';
-$string['indicator:socialbreadth_help'] = 'この指標はラベルリソースで学生が到達した社会的広がりに基づきます。';
-$string['indicator:socialbreadthdef'] = 'ラベル社会的';
-$string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がラベルリソースから提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
-$string['label:addinstance'] = '新しいラベルを追加する';
-$string['label:view'] = 'ラベルを表示する';
-$string['labeltext'] = 'ラベルテキスト';
-$string['modulename'] = 'ラベル';
-$string['modulename_help'] = 'ラベルモジュールではテキストおよびマルチメディアをコース内の活動リンク間に追加することができます。ラベルは非常に多目的であり、良く考えて使用される場合、コースアピアランスの改善に役立ちます。
+$string['dnduploadlabeltext'] = 'コースページにテキストおよびメディア領域リソースを追加する';
+$string['indicator:cognitivedepth'] = 'テキストおよびメディア領域認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はテキストおよびメディア領域リソースで学生が到達した認識深度に基づきます。';
+$string['indicator:cognitivedepthdef'] = 'テキストおよびメディア領域認知的';
+$string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がテキストおよびメディア領域リソースから提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧)。';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'テキストおよびメディア領域社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はテキストおよびメディア領域リソースで学生が到達した社会的広がりに基づきます。';
+$string['indicator:socialbreadthdef'] = 'テキストおよびメディア領域社会的';
+$string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がテキストおよびメディア領域リソースから提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['label:addinstance'] = '新しいテキストおよびメディア領域を追加する';
+$string['label:view'] = 'テキストおよびメディア領域を表示する';
+$string['labeltext'] = 'テキスト';
+$string['modulename'] = 'テキストおよびメディア領域';
+$string['modulename_help'] = 'あなたはテキストおよびメディア領域でコースページにテキストおよびマルチメディアを表示できます。
 
-ラベルは以下のように使用することができます:
+あなたはテキストおよびメディア領域を以下のように使用できます:
 
-* 活動の長いリストをサブヘッディングまたはイメージで分割するため
-* コースページに埋め込み音声ファイルまたはビデオを直接表示するため
-* コースセクションに短い説明を追加するため';
-$string['modulenameplural'] = 'ラベル';
-$string['pluginadministration'] = 'ラベル管理';
-$string['pluginname'] = 'ラベル';
-$string['privacy:metadata'] = 'ラベルリソースプラグインはいかなる個人データも保存しません。';
-$string['search:activity'] = 'ラベル';
+* コース活動の長いリストをサブヘッディングまたはイメージで分割する
+* コースページに埋め込みビデオを直接表示する
+* コースセクションに短い説明を追加する';
+$string['modulename_link'] = 'mod/label/view';
+$string['modulenameplural'] = 'テキストおよびメディア領域';
+$string['pluginadministration'] = 'テキストおよびメディア領域管理';
+$string['pluginname'] = 'テキストおよびメディアエリア';
+$string['privacy:metadata'] = 'テキストおよびメディア領域プラグインはいかなる個人データも保存しません。';
+$string['search:activity'] = 'テキストおよびメディアエリア';

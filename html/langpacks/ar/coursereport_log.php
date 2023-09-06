@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'coursereport_log', language 'ar', version '3.11'.
+ * Strings for component 'coursereport_log', language 'ar', version '4.1'.
  *
  * @package     coursereport_log
  * @category    string
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['log:viewlive'] = 'معاينة الوقوعات المباشرة';
 $string['loglive'] = 'الوقوعات المباشرة';
 $string['pluginname'] = 'سجلات الوقوعات';
-$string['pluginpagetype'] = 'تقرير سجلات المقرر الدراسي';
+$string['pluginpagetype'] = 'تقرير سجلات المساق';

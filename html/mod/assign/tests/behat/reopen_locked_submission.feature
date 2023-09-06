@@ -17,7 +17,7 @@ Feature: Submissions are unlocked when a new attempt is given
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
 
-  @javascript @skip_chrome_zerosize
+  @javascript
   Scenario: A locked submission should unlock when a new attempt is automatically given.
     Given the following "activity" exists:
       | activity                             | assign                |
@@ -33,7 +33,7 @@ Feature: Submissions are unlocked when a new attempt is given
       | Test assignment name  | student1  | I'm the student1 submission  |
 
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    And I navigate to "View all submissions" in current page administration
+    And I follow "View all submissions"
     And I open the action menu in "Student 1" "table_row"
     And I follow "Prevent submission changes"
     And I should see "Submission changes not allowed"
@@ -45,7 +45,7 @@ Feature: Submissions are unlocked when a new attempt is given
     Then I should see "Reopened"
     And I should not see "Submission changes not allowed"
 
-  @javascript @skip_chrome_zerosize
+  @javascript
   Scenario: A locked submission should unlock when a new attempt is manually given.
     Given the following "activity" exists:
       | activity                            | assign                  |
@@ -59,7 +59,7 @@ Feature: Submissions are unlocked when a new attempt is given
       | Test assignment name  | student1  | I'm the student1 submission  |
 
     And I am on the "Test assignment name" Activity page logged in as teacher1
-    And I navigate to "View all submissions" in current page administration
+    And I follow "View all submissions"
     When I open the action menu in "Student 1" "table_row"
     And I follow "Prevent submission changes"
     Then I should see "Submission changes not allowed"

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'it', version '3.11'.
+ * Strings for component 'search', language 'it', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -43,6 +43,7 @@ $string['confirm_delete'] = 'Sei sicuro di eliminare l\'indice di {$a}? Fino a q
 $string['confirm_deleteall'] = 'Sei sicuro di eliminare tutti i contenuti indicizzati? Fino a quando il sito non sarà stato nuovamente indicizzato,gli utenti non potranno ottenere risultati dalla ricerca.';
 $string['confirm_indexall'] = 'Sei sicuro di aggiornare i contenuti indicizzati? L\'attività richiederà molto tempo se sarà necessario indicizzare una grande quantità di contenuti. Per i server in produzione normalmente è sufficiente l\'indicizzazione dell\'attività pianificata "Indicizzazione della ricerca globale".';
 $string['confirm_reindexall'] = 'Sei sicuro di re-indicizzare tutti i contenuti del sito? L\'attività richiederà molto tempo se sarà necessario indicizzare una grande quantità di contenuti e gli utenti non otterranno risultati di ricerca completi fino al termine della re-indicizzazione.';
+$string['content:courserole'] = '{$a->role} in {$a->course}';
 $string['core-all'] = 'Tutto';
 $string['core-course-content'] = 'Contenuto dei corsi';
 $string['core-courses'] = 'Corsi';
@@ -115,6 +116,7 @@ $string['schemaversionunknown'] = 'Il motore di ricerca non conosce l\'attuale v
 $string['score'] = 'Punteggio';
 $string['search'] = 'Ricerca';
 $string['search:course'] = 'Corsi';
+$string['search:course_teacher'] = 'Docente del corso';
 $string['search:customfield'] = 'Campi personalizzati del corso';
 $string['search:message_received'] = 'Messaggi - ricevuti';
 $string['search:message_sent'] = 'Messaggi - inviati';
@@ -136,6 +138,7 @@ $string['thesewordsmustappear'] = 'Queste parole devono comparire';
 $string['thesewordsmustnotappear'] = 'Queste parole non devono comparire';
 $string['title'] = 'Titolo';
 $string['tofetchtheseresults'] = 'per trovare questi risultati';
+$string['topresults'] = 'Risultati principali';
 $string['totalsize'] = 'Dimensione totale';
 $string['totime'] = 'Modificato prima del';
 $string['type'] = 'Tipo';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media_videojs', language 'es', version '3.11'.
+ * Strings for component 'media_videojs', language 'es', version '4.1'.
  *
  * @package     media_videojs
  * @category    string
@@ -43,4 +43,4 @@ $string['rtmp'] = 'Secuencias de RTMP';
 $string['useflash'] = 'Usar respaldo de Flash';
 $string['videocssclass'] = 'Clase CSS para vídeo';
 $string['videoextensions'] = 'Formatos de archivos de vídeo';
-$string['youtube'] = 'YouTube videos';
+$string['youtube'] = 'Vídeos de YouTube';

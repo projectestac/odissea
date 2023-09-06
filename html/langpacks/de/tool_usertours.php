@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'de', version '3.11'.
+ * Strings for component 'tool_usertours', language 'de', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -43,9 +43,12 @@ $string['confirmtourremovalquestion'] = 'Möchten Sie diese Nutzertour wirklich 
 $string['confirmtourremovaltitle'] = 'Tour entfernen';
 $string['content'] = 'Inhalt';
 $string['content_heading'] = 'Inhalt';
-$string['content_help'] = 'Der Inhalt, der den Schritt beschreibt, kann als Klartext hinzugefügt werden. Falls erforderlich, kann der Text  auch Multilang-Tags beinhalten (Verwendung mit dem Filter \'Mehrsprachiger Inhalt\').
-
-Alternativ kann eine Text-ID in die Formatkennung eingegeben werden  (ohne Klammern oder Leerzeichen nach dem Komma).';
+$string['content_help'] = 'Der Inhalt, der den Schritt beschreibt, kann als einfacher Text hinzugefügt werden. Falls gewünscht, können auch Multilang-Tags enthalten sein (Filter \'Mehrsprachiger Inhalt\').';
+$string['content_type'] = 'Inhaltstyp';
+$string['content_type_help'] = '* Manuell - Inhalt wird in Texteditor eingegeben
+* Sprachtext-ID - die Sprachtext-ID kann im Format identifier,component (ohne Leerzeichen nach dem Komma) eingegeben werden.';
+$string['content_type_langstring'] = 'Text-ID';
+$string['content_type_manual'] = 'Manuell';
 $string['cssselector'] = 'CSS-Selector';
 $string['defaultvalue'] = 'Standard ({$a})';
 $string['delay'] = 'Wartezeit vor dem Schritt';
@@ -53,12 +56,22 @@ $string['delay_help'] = 'Sie können optional eine Wartezeit einfügen, bevor de
 
 Die Wartezeit wird in Millisekunden angegeben.';
 $string['description'] = 'Beschreibung';
+$string['description_help'] = 'Die Beschreibung einer Tour kann als einfacher Text hinzugefügt werden. Falls gewünscht, können auch Multilang-Tags enthalten sein (Filter \'Mehrsprachiger Inhalt\').
+
+Alternativ kann eine Sprachtext-ID im Format identifier,component (ohne Klammern oder Leerzeichen nach dem Komma) eingegeben werden.';
+$string['displaystepnumbers'] = 'Schrittnummern anzeigen';
+$string['displaystepnumbers_help'] = 'Die Option legt fest, ob die Anzahl der verbleibenden Schritte innerhalb der Tour angezeigt wird, z.B. 1/4, 2/4 usw.';
 $string['done'] = 'Erledigt';
 $string['duplicatetour'] = 'Tour duplizieren';
 $string['duplicatetour_name'] = '{$a} (Kopie)';
 $string['editstep'] = 'Bearbeiten von \'{$a}\'';
 $string['enabled'] = 'Aktiviert';
+$string['endonesteptour'] = 'Alles klar!';
 $string['endtour'] = 'Tour beenden';
+$string['endtourlabel'] = 'Text für Schaltfäche "Tour beenden"';
+$string['endtourlabel_help'] = 'Sie können optional einen nutzerdefinierten Text für die Schaltfläche "Tour beenden" angeben. Der Standardtext ist "Alles klar!" für einstufige und "Tour beenden" für mehrstufige Touren.
+
+Alternativ kann eine Sprachtext-ID im Format identifier,component (ohne Klammern und ohne Leerzeichen nach dem Komma) eingegeben werden.';
 $string['event_step_shown'] = 'Schritt angezeigt';
 $string['event_tour_ended'] = 'Tour beendet';
 $string['event_tour_reset'] = 'Tour zurückgesetzt';
@@ -87,17 +100,23 @@ Eine Dashboard-Tour lässt sich aber nicht auf Nutzer/innen mit der Rolle "Teiln
 $string['filter_theme'] = 'Design';
 $string['filter_theme_help'] = 'Tour anzeigen, wenn eines der ausgewählten Designs verwendet wird.';
 $string['importtour'] = 'Tour importieren';
+$string['invalid_lang_id'] = 'Falsche Sprachtext-ID';
 $string['left'] = 'Links';
 $string['modifyshippedtourwarning'] = 'Diese Nutzertour wurde mit Moodle ausgeliefert. Alle Veränderungen, die Sie in dieser Tour vornehmen, werden bei der nächsten Aktualisierung der Website überschrieben.';
+$string['moodle_language_identifier'] = 'Sprachtext-ID';
 $string['movestepdown'] = 'Schritt nach unten bewegen';
 $string['movestepup'] = 'Schritt nach oben bewegen';
 $string['movetourdown'] = 'Tour nach unten bewegen';
 $string['movetourup'] = 'Tour nach oben bewegen';
 $string['name'] = 'Name';
+$string['name_help'] = 'Der Name einer Tour kann bei Bedarf als einfacher Text hinzugefügt werden. Falls gewünscht, können auch Multilang-Tags enthalten sein (Filter \'Mehrsprachiger Inhalt\').
+
+Alternativ kann eine Sprachstring-ID im Format identifier,component (ohne Klammern und ohne Leerzeichen nach dem Komma) eingegeben werden.';
 $string['newstep'] = 'Neuer Schritt';
 $string['newtour'] = 'Neue Tour anlegen';
 $string['next'] = 'Nächste';
 $string['nextstep'] = 'Weiter';
+$string['nextstep_sequence'] = 'Weiter ({$a->position}/{$a->total})';
 $string['options_heading'] = 'Optionen';
 $string['orphan'] = 'Anzeigen, wenn Ziel nicht gefunden';
 $string['orphan_help'] = 'Schritt anzeigen, wenn das Ziel auf der Seite nicht gefunden werden kann.';
@@ -135,6 +154,7 @@ $string['selectordisplayname'] = 'CSS-Selektor passend zu \'{$a}\'';
 $string['selecttype'] = 'Schritttyp auswählen';
 $string['sharedtourslink'] = 'Tour-Repository';
 $string['skip'] = 'Überspringen';
+$string['skip_tour'] = 'Tour abbrechen';
 $string['target'] = 'Ziel';
 $string['target_block'] = 'Block';
 $string['target_heading'] = 'Schrittziel';
@@ -154,7 +174,7 @@ $string['title_help'] = 'Der Titel eines Schrittes kann als einfacher Text hinzu
 Alternativ kann eine Sprachtext-ID im Format identifier,component eingegeben werden (ohne Klammern oder Leerzeichen nach dem Komma).';
 $string['tour1_content_addingblocks'] = 'Denken Sie bei der Verwendung von Blöcken daran, dass Blöcke in der Moodle-App nicht angezeigt werden. Ihre Website sollte auch ohne Blöcke problemlos funktionieren.';
 $string['tour1_content_blockregion'] = 'Es gibt weiterhin einen Blockbereich. Wir empfehlen, die Navigations- und Einstellungsblöcke zu entfernen, weil deren Funktionalität an anderer Stelle im Design Boost zu finden ist.';
-$string['tour1_content_customisation'] = 'Verwenden Sie das Einstellungsmenü am Rand dieser Kopfzeile, um Ihre Website anzupassen. Versuchen Sie, "Bearbeiten einschalten" jetzt zu aktivieren.';
+$string['tour1_content_customisation'] = 'Um das Erscheinungsbild Ihrer Website und der Startseite anzupassen, verwenden Sie bitte den Schalter rechts oben im Kopfbereich. Versuchen Sie jetzt, das Bearbeiten einzuschalten.';
 $string['tour1_content_end'] = 'Dies ist das Ende Ihrer Nutzertour. Sie wird nicht noch einmal angezeigt, außer Sie klicken auf den Link in der Fußzeile. Als Administrator/in können Sie solche Touren auch selbst erstellen.';
 $string['tour1_content_navigation'] = 'Die Hauptnavigation findet nun über diese Navigationsleiste statt. Die Inhalte aktualisieren sich abhängig davon, an welcher Stelle Sie auf der Website sind. Nutzen Sie die Taste oben links, um die Navigationsleiste ein- oder auszublenden.';
 $string['tour1_content_welcome'] = 'Willkommen beim Design "Boost". Falls Sie bereits eine frühere Version verwendet haben, werden Sie möglicherweise Dinge finden, die jetzt ein bisschen anders aussehen.';
@@ -232,6 +252,27 @@ $string['tour_activityinfo_course_teacher_content'] = 'Mit den neuen Kurseinstel
 $string['tour_activityinfo_course_teacher_title'] = 'Neu: Aktivitätsinfo';
 $string['tour_final_step_content'] = 'Dies ist das Ende Ihrer Nutzertour. Sie wird nicht wieder angezeigt, außer Sie setzen sie zurück, indem Sie auf den Link in der Fußzeile klicken.';
 $string['tour_final_step_title'] = 'Ende der Tour';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Veröffentlichen Sie hier wichtige Ankündigungen.';
+$string['tour_navigation_course_announcements_teacher_title'] = 'Möchten Sie allen etwas mitteilen?';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Fügen Sie neue Inhalte hinzu oder bearbeiten Sie vorhandene Inhalte.';
+$string['tour_navigation_course_edit_teacher_title'] = 'Bearbeitungsmodus einschalten';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Navigieren Sie durch die Aktivitäten und verfolgen Sie Ihren Fortschritt.';
+$string['tour_navigation_course_index_student_title'] = 'Finden Sie sich zurecht';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Ziehen Sie Aktivitäten per Drag-and-Drop, um Kursinhalte neu anzuordnen.';
+$string['tour_navigation_course_index_teacher_title'] = 'Kursindex';
+$string['tour_navigation_course_student_tour_des'] = 'Navigieren durch Aktivitäten in einem Kurs';
+$string['tour_navigation_course_student_tour_name'] = 'Kursindex';
+$string['tour_navigation_course_teacher_tour_des'] = 'Bearbeitungsmodus, Drag-and-Drop von Aktivitäten und Veröffentlichen von Ankündigungen in einem Kurs';
+$string['tour_navigation_course_teacher_tour_name'] = 'Kursbearbeitung';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Diese Seitenleiste kann weitere Funktionen enthalten.';
+$string['tour_navigation_dashboard_title'] = 'Zum Erkunden ausklappen';
+$string['tour_navigation_dashboard_tour_des'] = 'Wo können Blöcke gefunden werden?';
+$string['tour_navigation_dashboard_tour_name'] = 'Blockleiste';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>In diesem Menü können Sie Kurse hinzufügen, kopieren, löschen und verbergen.';
+$string['tour_navigation_mycourses_endtourlabel'] = 'Verstanden';
+$string['tour_navigation_mycourses_title'] = 'Kurse und Kursbereiche';
+$string['tour_navigation_mycourses_tour_des'] = 'Optionen für die Kursverwaltung im Dashboard';
+$string['tour_navigation_mycourses_tour_name'] = 'Kursverwaltung';
 $string['tour_resetforall'] = 'Der Status der Tour wurde zurückgesetzt. Die Tour wird allen Nutzer/innen erneut gezeigt.';
 $string['tourconfig'] = 'Konfigurationsdatei der Tour';
 $string['tourisenabled'] = 'Geführte Tour aktiv';

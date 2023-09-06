@@ -23,12 +23,10 @@
  * @author     T.J.Hunt@open.ac.uk
  * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License
  */
-
-defined('MOODLE_INTERNAL') || die();
-
-
-class core_weblib_testcase extends advanced_testcase {
-
+class weblib_test extends advanced_testcase {
+    /**
+     * @covers ::format_string
+     */
     public function test_format_string() {
         global $CFG;
 
@@ -47,6 +45,10 @@ class core_weblib_testcase extends advanced_testcase {
 
         // Unicode entities.
         $this->assertSame("&#4475;", format_string("&#4475;"));
+
+        // Nulls.
+        $this->assertSame('', format_string(null));
+        $this->assertSame('', format_string(null, true, ['escape' => false]));
 
         // < and > signs.
         $originalformatstringstriptags = $CFG->formatstringstriptags;
@@ -76,9 +78,9 @@ class core_weblib_testcase extends advanced_testcase {
         $generator = $this->getDataGenerator();
         $course = $generator->create_course();
         $user = $generator->create_user();
-        $rawstring = 'Shortname <a href="#">link</a> curseword';
-        $expectednofilter = strip_links($rawstring);
-        $expectedfilter = 'Shortname link \*\**';
+        $rawstring = '<span lang="en" class="multilang">English</span><span lang="ca" class="multilang">Catalan</span>';
+        $expectednofilter = strip_tags($rawstring);
+        $expectedfilter = 'English';
         $striplinks = true;
         $context = context_course::instance($course->id);
         $options = [
@@ -94,26 +96,28 @@ class core_weblib_testcase extends advanced_testcase {
         $nofilterresult = format_string($rawstring, $striplinks, $options);
         $this->assertEquals($expectednofilter, $nofilterresult);
 
-        // Add the censor filter. Make sure it's enabled globally.
+        // Add the multilang filter. Make sure it's enabled globally.
         $CFG->filterall = true;
-        $CFG->stringfilters = 'censor';
-        $CFG->filter_censor_badwords = 'curseword';
-        filter_set_global_state('censor', TEXTFILTER_ON);
-        filter_set_local_state('censor', $context->id, TEXTFILTER_ON);
+        $CFG->stringfilters = 'multilang';
+        filter_set_global_state('multilang', TEXTFILTER_ON);
+        filter_set_local_state('multilang', $context->id, TEXTFILTER_ON);
         // This time we want to apply the filters.
         $options['filter'] = true;
         $filterresult = format_string($rawstring, $striplinks, $options);
         $this->assertMatchesRegularExpression("/$expectedfilter/", $filterresult);
 
-        filter_set_local_state('censor', $context->id, TEXTFILTER_OFF);
+        filter_set_local_state('multilang', $context->id, TEXTFILTER_OFF);
 
         // Confirm that we get back the cached string. The result should be
         // the same as the filtered text above even though we've disabled the
-        // censor filter in between.
+        // multilang filter in between.
         $cachedresult = format_string($rawstring, $striplinks, $options);
         $this->assertMatchesRegularExpression("/$expectedfilter/", $cachedresult);
     }
 
+    /**
+     * @covers ::s
+     */
     public function test_s() {
         // Special cases.
         $this->assertSame('0', s(0));
@@ -164,6 +168,9 @@ class core_weblib_testcase extends advanced_testcase {
         }
     }
 
+    /**
+     * @covers ::format_text_email
+     */
     public function test_format_text_email() {
         $this->assertSame("This is a TEST\n",
             format_text_email('<p>This is a <strong>test</strong></p>', FORMAT_HTML));
@@ -177,6 +184,9 @@ class core_weblib_testcase extends advanced_testcase {
             format_text_email('&#x7fd2;&#x7FD2;', FORMAT_HTML));
     }
 
+    /**
+     * @covers ::obfuscate_email
+     */
     public function test_obfuscate_email() {
         $email = 'some.user@example.com';
         $obfuscated = obfuscate_email($email);
@@ -185,6 +195,9 @@ class core_weblib_testcase extends advanced_testcase {
         $this->assertSame($email, $back);
     }
 
+    /**
+     * @covers ::obfuscate_text
+     */
     public function test_obfuscate_text() {
         $text = 'Žluťoučký koníček 32131';
         $obfuscated = obfuscate_text($text);
@@ -193,6 +206,9 @@ class core_weblib_testcase extends advanced_testcase {
         $this->assertSame($text, $back);
     }
 
+    /**
+     * @covers ::highlight
+     */
     public function test_highlight() {
         $this->assertSame('This is <span class="highlight">good</span>',
                 highlight('good', 'This is good'));
@@ -231,19 +247,31 @@ class core_weblib_testcase extends advanced_testcase {
                     highlight('test -1', '<p>test 1</p><p>1</p>', false, '<b>', '</b>'));
     }
 
+    /**
+     * @covers ::replace_ampersands_not_followed_by_entity
+     */
     public function test_replace_ampersands() {
         $this->assertSame("This &amp; that &nbsp;", replace_ampersands_not_followed_by_entity("This & that &nbsp;"));
         $this->assertSame("This &amp;nbsp that &nbsp;", replace_ampersands_not_followed_by_entity("This &nbsp that &nbsp;"));
     }
 
+    /**
+     * @covers ::strip_links
+     */
     public function test_strip_links() {
         $this->assertSame('this is a link', strip_links('this is a <a href="http://someaddress.com/query">link</a>'));
     }
 
+    /**
+     * @covers ::wikify_links
+     */
     public function test_wikify_links() {
         $this->assertSame('this is a link [ http://someaddress.com/query ]', wikify_links('this is a <a href="http://someaddress.com/query">link</a>'));
     }
 
+    /**
+     * @covers ::clean_text
+     */
     public function test_clean_text() {
         $text = "lala <applet>xx</applet>";
         $this->assertSame($text, clean_text($text, FORMAT_PLAIN));
@@ -252,6 +280,9 @@ class core_weblib_testcase extends advanced_testcase {
         $this->assertSame('lala xx', clean_text($text, FORMAT_HTML));
     }
 
+    /**
+     * @covers ::qualified_me
+     */
     public function test_qualified_me() {
         global $PAGE, $FULLME, $CFG;
         $this->resetAfterTest();
@@ -265,7 +296,10 @@ class core_weblib_testcase extends advanced_testcase {
         $this->assertSame($CFG->wwwroot.'/course/view.php?id=1', qualified_me());
     }
 
-    public function test_null_progres_trace() {
+    /**
+     * @covers \null_progress_trace
+     */
+    public function test_null_progress_trace() {
         $this->resetAfterTest(false);
 
         $trace = new null_progress_trace();
@@ -278,7 +312,10 @@ class core_weblib_testcase extends advanced_testcase {
         $this->expectOutputString('');
     }
 
-    public function test_text_progres_trace() {
+    /**
+     * @covers \null_progress_trace
+     */
+    public function test_text_progress_trace() {
         $this->resetAfterTest(false);
 
         $trace = new text_progress_trace();
@@ -289,7 +326,10 @@ class core_weblib_testcase extends advanced_testcase {
         $this->expectOutputString("do\n  re\n    mi\n");
     }
 
-    public function test_html_progres_trace() {
+    /**
+     * @covers \html_progress_trace
+     */
+    public function test_html_progress_trace() {
         $this->resetAfterTest(false);
 
         $trace = new html_progress_trace();
@@ -300,6 +340,9 @@ class core_weblib_testcase extends advanced_testcase {
         $this->expectOutputString("<p>do</p>\n<p>&#160;&#160;re</p>\n<p>&#160;&#160;&#160;&#160;mi</p>\n");
     }
 
+    /**
+     * @covers \html_list_progress_trace
+     */
     public function test_html_list_progress_trace() {
         $this->resetAfterTest(false);
 
@@ -311,7 +354,10 @@ class core_weblib_testcase extends advanced_testcase {
         $this->expectOutputString("<ul>\n<li>do<ul>\n<li>re<ul>\n<li>mi</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n");
     }
 
-    public function test_progres_trace_buffer() {
+    /**
+     * @covers \progress_trace_buffer
+     */
+    public function test_progress_trace_buffer() {
         $this->resetAfterTest(false);
 
         $trace = new progress_trace_buffer(new html_progress_trace());
@@ -337,7 +383,10 @@ class core_weblib_testcase extends advanced_testcase {
         $this->expectOutputString('');
     }
 
-    public function test_combined_progres_trace() {
+    /**
+     * @covers \combined_progress_trace
+     */
+    public function test_combined_progress_trace() {
         $this->resetAfterTest(false);
 
         $trace1 = new progress_trace_buffer(new html_progress_trace(), false);
@@ -353,6 +402,9 @@ class core_weblib_testcase extends advanced_testcase {
         $this->expectOutputString('');
     }
 
+    /**
+     * @covers ::set_debugging
+     */
     public function test_set_debugging() {
         global $CFG;
 
@@ -393,6 +445,9 @@ class core_weblib_testcase extends advanced_testcase {
         $this->assertFalse($CFG->debugdeveloper);
     }
 
+    /**
+     * @covers ::strip_pluginfile_content
+     */
     public function test_strip_pluginfile_content() {
         $source = <<<SOURCE
 Hello!
@@ -431,6 +486,9 @@ EXPECTED;
         $this->assertSame($expected, strip_pluginfile_content($source));
     }
 
+    /**
+     * @covers \purify_html
+     */
     public function test_purify_html_ruby() {
 
         $this->resetAfterTest();
@@ -453,6 +511,7 @@ EXPECTED;
      * @param int|false $format    The content format
      * @param string    $expected  Expected value
      * @dataProvider provider_content_to_text
+     * @covers ::content_to_text
      */
     public function test_content_to_text($content, $format, $expected) {
         $content = content_to_text($content, $format);
@@ -536,6 +595,20 @@ EXPECTED;
             [
                 'email' => '"this<is>validbutwerejectit"@example.com',
                 'result' => false
+            ],
+
+            // Empty e-mail addresess are not valid.
+            [
+                'email' => '',
+                'result' => false,
+            ],
+            [
+                'email' => null,
+                'result' => false,
+            ],
+            [
+                'email' => false,
+                'result' => false,
             ],
 
             // Extra email addresses from Wikipedia page on Email Addresses.
@@ -629,6 +702,7 @@ EXPECTED;
      * @param string $email the email address to test
      * @param boolean $result Expected result (true or false)
      * @dataProvider    data_validate_email
+     * @covers ::validate_email
      */
     public function test_validate_email($email, $result) {
         if ($result) {
@@ -753,6 +827,7 @@ EXPECTED;
      * @param string $cfgslasharguments slasharguments setting.
      * @param string|false $expected Expected value.
      * @dataProvider provider_get_file_argument
+     * @covers ::get_file_argument
      */
     public function test_get_file_argument($server, $cfgslasharguments, $expected) {
         global $CFG;
@@ -797,6 +872,8 @@ EXPECTED;
 
     /**
      * Tests for extract_draft_file_urls_from_text() function.
+     *
+     * @covers ::extract_draft_file_urls_from_text
      */
     public function test_extract_draft_file_urls_from_text() {
         global $CFG;
@@ -843,6 +920,9 @@ EXPECTED;
         $this->assertEquals($draftareas, $extracteddraftareas);
     }
 
+    /**
+     * @covers ::print_password_policy
+     */
     public function test_print_password_policy() {
         $this->resetAfterTest(true);
         global $CFG;
@@ -876,5 +956,59 @@ EXPECTED;
         $CFG->maxconsecutiveidentchars = 1;
 
         $this->assertNotEquals($policydisabled, print_password_policy());
+    }
+
+    /**
+     * Data provider for the testing get_html_lang_attribute_value().
+     *
+     * @return string[][]
+     */
+    public function get_html_lang_attribute_value_provider() {
+        return [
+            'Empty lang code' => ['    ', 'unknown'],
+            'English' => ['en', 'en'],
+            'English, US' => ['en_us', 'en-us'],
+        ];
+    }
+
+    /**
+     * Test for get_html_lang_attribute_value().
+     *
+     * @covers ::get_html_lang_attribute_value()
+     * @dataProvider get_html_lang_attribute_value_provider
+     * @param string $langcode The language code to convert.
+     * @param string $expected The expected converted value.
+     * @return void
+     */
+    public function test_get_html_lang_attribute_value(string $langcode, string $expected): void {
+        $this->assertEquals($expected, get_html_lang_attribute_value($langcode));
+    }
+
+    /**
+     * Data provider for strip_querystring tests.
+     *
+     * @return array
+     */
+    public function strip_querystring_provider(): array {
+        return [
+            'Null' => [null, ''],
+            'Empty string' => ['', ''],
+            'No querystring' => ['https://example.com', 'https://example.com'],
+            'Querystring' => ['https://example.com?foo=bar', 'https://example.com'],
+            'Querystring with fragment' => ['https://example.com?foo=bar#baz', 'https://example.com'],
+            'Querystring with fragment and path' => ['https://example.com/foo/bar?foo=bar#baz', 'https://example.com/foo/bar'],
+        ];
+    }
+
+    /**
+     * Test the strip_querystring function with various exampels.
+     *
+     * @dataProvider strip_querystring_provider
+     * @param mixed $value
+     * @param mixed $expected
+     * @covers ::strip_querystring
+     */
+    public function test_strip_querystring($value, $expected): void {
+        $this->assertEquals($expected, strip_querystring($value));
     }
 }

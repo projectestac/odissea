@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupselect', language 'fr', version '3.11'.
+ * Strings for component 'groupselect', language 'fr', version '4.1'.
  *
  * @package     groupselect
  * @category    string
@@ -83,6 +83,7 @@ $string['minmembers_notification'] = 'Votre groupe compte trop peu de membres, l
 $string['miscellaneoussettings'] = 'Paramètres divers';
 $string['modulename'] = 'Auto-sélection de groupe';
 $string['modulename_help'] = '<p>Permet aux étudiants de créer et de sélectionner des groupes. Fonctionnalités: </p><ul><li>Les étudiants peuvent créer des groupes, leur donner une description et les protéger par un mot de passé, si désiré</li><li>les étudiants peuvent sélectionner et rejoindre des groupes</li><li>Des référents peuvent être assignés aux groupes</li><li>Les enseignants peuvent exporter les groupes du cours en fichier csv </li><li>Compatibilité totale avec des groupes de base de Moodle: Des groupes peuvent être créés par d\'autres moyens si nécessaire, gère la remise de devoirs de groupe etc.</li></ul>';
+$string['modulename_link'] = 'mod/groupselect/view';
 $string['modulenameplural'] = 'Auto-sélections de groupe';
 $string['nogroups'] = 'Désolé, pas de groupe disponible à choisir.';
 $string['notavailableanymore'] = 'Désolé, la sélection de groupe n\'est plus disponible (depuis {$a}).';

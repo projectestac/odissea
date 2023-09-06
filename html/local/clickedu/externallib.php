@@ -110,7 +110,7 @@ class local_clickedu_external extends external_api {
                     'idnumber' => $gradeitem->idnumber ?: '',
                 );
             }
-        }
+         }
         }
 
         return $activities;

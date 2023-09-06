@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'ja', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'ja', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -37,6 +37,7 @@ $string['fileurl'] = 'リモートファイルURL';
 $string['fileurl_help'] = 'リモートファイルURLフィールドは学生情報システム等のリモートサーバからデータを取得するためのものです。';
 $string['importxml'] = 'XMLインポート';
 $string['importxml_help'] = '評定はユーザIDナンバーおよび活動IDナンバーを含むXMLファイルによりインポートすることができます。正しいフォーマットを取得するには最初にXMLファイルに評定をエクスポートしてファイルを確認してください。';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'XMLファイル';
 $string['privacy:metadata'] = 'XMLから評定をインポートするプラグインはいかなる個人データも保存しません。';
 $string['xml:publish'] = 'XMLからの評定インポートを公開する';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'eu', version '3.11'.
+ * Strings for component 'hotpot', language 'eu', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -214,6 +214,7 @@ HotPot jarduerak hurrengo egile softwareak erabiliz sortutako ariketak maneia di
 * Xerte
 * iSpring
 * Edozein HTML editore';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'HotPot-ak';
 $string['nameadd'] = 'Izena';
 $string['nameedit'] = 'Izena';

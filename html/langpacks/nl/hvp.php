@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'nl', version '3.11'.
+ * Strings for component 'hvp', language 'nl', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -233,6 +233,7 @@ Niet alleen is H5P een authoring tool voor rijke inhoud, maar kun je er ook H5P 
 Gebruikersinteracties en scores worden opgeslagen met behulp van xAPI en zijn beschikbaar via het Moodle Cijferboek.
 
 Je kunt interactieve H5P-inhoud toevoegen door een .h5p bestand te uploaden. Je kunt .h5p bestanden maken en downloaden op H5P.org.';
+$string['modulename_link'] = 'https://h5p.org/moodle-more-help';
 $string['modulenameplural'] = 'Interactieve inhoud';
 $string['nextpage'] = 'Volgende pagina';
 $string['noanswersubmitted'] = 'Deze gebruiker heeft nog geen antwoord ingediend in de H5P activiteit';

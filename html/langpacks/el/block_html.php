@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'el', version '3.11'.
+ * Strings for component 'block_html', language 'el', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -30,10 +30,10 @@ $string['configallowadditionalcssclasses'] = 'Προσθέτει μια επιλ
 $string['configclasses'] = 'Επιπρόσθετες κλάσεις CSS';
 $string['configclasses_help'] = 'Σκοπός αυτών των ρυθμίσεων είναι να βοηθήσουν με τα θέματα βοηθώντας τη διάκριση των μπλοκ HTML μεταξύ τους. Οποιεσδήποτε κλάσεις CSS που εισάγονται εδώ (με κενό ως διαχωριστικό) θα προσαρτηθούν στις προεπιλεγμένες κλάσεις του μπλοκ.';
 $string['configcontent'] = 'Περιεχόμενο';
-$string['configtitle'] = 'Τίτλος μπλοκ HTML';
-$string['html:addinstance'] = 'Προσθήκη νέου μπλοκ HTML';
-$string['html:myaddinstance'] = 'Προσθήκη νέου μπλοκ HTML στο Ταμπλό';
-$string['newhtmlblock'] = '(Νέο μπλοκ HTML)';
-$string['pluginname'] = 'HTML';
-$string['privacy:metadata:block'] = 'Το μπλοκ HTML αποθηκεύει όλα τα δεδομένα του στο υποσύστημα μπλοκ.';
-$string['search:content'] = 'Περιεχόμενο μπλοκ HTML';
+$string['configtitle'] = 'Τίτλος μπλοκ κειμένου';
+$string['html:addinstance'] = 'Προσθήκη νέου μπλοκ κειμένου';
+$string['html:myaddinstance'] = 'Προσθήκη νέου μπλοκ κειμένου στο Ταμπλό';
+$string['newhtmlblock'] = '(Νέο μπλοκ κειμένου)';
+$string['pluginname'] = 'Κείμενο';
+$string['privacy:metadata:block'] = 'Το μπλοκ κειμένου αποθηκεύει όλα τα δεδομένα του στο υποσύστημα μπλοκ.';
+$string['search:content'] = 'Περιεχόμενο μπλοκ κειμένου';

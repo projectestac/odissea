@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_ejsapp_collab_session', language 'es', version '3.11'.
+ * Strings for component 'block_ejsapp_collab_session', language 'es', version '4.1'.
  *
  * @package     block_ejsapp_collab_session
  * @category    string
@@ -48,13 +48,18 @@ $string['invitationMsg2'] = 'Unirse a esta sesión.';
 $string['inviteParticipants'] = 'Invitar participantes';
 $string['navBarCollaborativeSession'] = 'Sesión colaborativa';
 $string['navBarNonMasterUser'] = 'Aceptando invitación';
-$string['navBarShowParticipants'] = 'Selecionando invitados';
+$string['navBarShowParticipants'] = 'Seleccionando invitados';
 $string['pageTitle'] = 'Sesión Colaborativa de Laboratorio';
 $string['pluginname'] = 'EJSApp colaborativo';
+$string['privacy:metadata'] = 'El bloque  EJSApp Collab Session solamente configura sesiones colaborativas entre usuarios.';
 $string['sarlab_IP'] = 'Nombre y dirección IP del servidor o servidores de Sarlab';
+$string['sarlab_IP_description'] = 'Si Usted desea usar Sarlab para establecer la comunicación en las sesiones colaborativas, Usted necesita proporcionar la dirección IP del servidor que corre el sistema Sarlab que desea usar. De otra forma, este valor no se usará, por lo que puede dejarlo el valor por defecto. Si Usted tiene más de un servidor Sarlab (por ejemplo, uno en 127.0.0.1 y un segundo en 127.0.0.2), inserte las direcciones IP separadas por punto y coma: 127.0.0.1;127.0.0.2. Adicionalmente, Usted puede proporcionar un nombre para identificar a cada servidor Sarlab: \'Sarlab Madrid\'127.0.0.1;\'Sarlab Huelva\'127.0.0.2';
 $string['sarlab_header'] = 'Configurar Sarlab para la instancia de este bloque';
 $string['sarlab_header_config'] = 'Configurar Sarlab para todas las instancias de este bloque';
+$string['sarlab_instance'] = 'Servidor Sarlab para las sesiones colaborativas';
+$string['sarlab_instance_help'] = 'El orden corresponde al usado para los valores en las variables sarlab_IP y sarlab_port  configuradas en la página de configuraciones del bloque';
 $string['sarlab_port'] = 'Puerto(s) de comunicación de Sarlab';
+$string['sarlab_port_description'] = 'Si Usted desea usar Sarlab para establecer la comunicación en las sesiones colaborativas, Usted necesita proporcionar un puerto válid para establecer la comunicación con el servidor Sarlab. De otra forma, este valor no se usará, por lo que puede dejarlo el valor por defecto. Si Usted tiene más de un servidor Sarlab (por ejemplo, uno que usa el puerto 443 y un segundo que también usa el puerto 433), inserte los valores separados por punto y coma: 443;443b Madrid\'127.0.0.1;\'Sarlab Huelva\'127.0.0.2';
 $string['selectInvitation'] = 'Seleccione una de las invitaciones pendientes:';
 $string['selectLabBut'] = 'Seleccionar este laboratorio';
 $string['start_collaborative_session:view'] = 'Ver Bloque para Sesiones Colaborativo';

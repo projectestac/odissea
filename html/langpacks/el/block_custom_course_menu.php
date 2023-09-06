@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_custom_course_menu', language 'el', version '3.11'.
+ * Strings for component 'block_custom_course_menu', language 'el', version '4.1'.
  *
  * @package     block_custom_course_menu
  * @category    string
@@ -26,17 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['adminonly'] = 'Μόνο διαχειριστής';
-$string['configenablefavorites'] = 'Προσθέτει ένα τμήμα που εμφανίζει τα επιλεγμένα «αγαπημένα».';
-$string['configenablelastviewed'] = 'Προσθέτει ένα τμήμα που εμφανίζει τα τελευταία μαθήματα που επισκέφθηκε ο χρήστης.';
-$string['configlastviewedamount'] = 'Ρύθμιση/προσαρμογή του μέγιστου αριθμού μαθημάτων προς εμφάνιση στο τμήμα των μαθημάτων που εμφανίστηκαν τελευταία/πρόσφατα.';
+$string['configenablefavorites'] = 'Προσθέτει μια ενότητα που εμφανίζει τα επιλεγμένα «αγαπημένα» του χρήστη.';
+$string['configenablelastviewed'] = 'Προσθέτει μια ενότητα που εμφανίζει τα τελευταία μαθήματα που επισκέφθηκε ο χρήστης.';
+$string['configlastviewedamount'] = 'Ρύθμιση/προσαρμογή του μέγιστου αριθμού μαθημάτων προς εμφάνιση στην ενότητα των μαθημάτων που εμφανίστηκαν τελευταία/πρόσφατα.';
 $string['configshowsearch'] = 'Προσθήκη ενός πλαισίου αναζήτησης μαθημάτων στην βάση του μενού.';
 $string['course'] = 'Μάθημα';
 $string['custom_course_menu:addinstance'] = 'Η δυνατότητα προσθηκών στην αρχική σελίδα';
 $string['custom_course_menu:myaddinstance'] = 'Η δυνατότητα προσθηκών στην αρχική σελίδα μου';
 $string['editingoff'] = 'Έναρξη επεξεργασίας';
 $string['editingon'] = 'Λήξη επεξεργασίας';
-$string['enablefavorites'] = 'Τμήμα αγαπημένων μαθημάτων';
-$string['enablelastviewed'] = 'Τμήμα μαθημάτων που εμφανίστηκαν τελευταία';
+$string['enablefavorites'] = 'Ενότητα αγαπημένων μαθημάτων';
+$string['enablelastviewed'] = 'Ενότητα μαθημάτων που εμφανίστηκαν τελευταία';
 $string['favorites'] = 'Αγαπημένα';
 $string['lastviewedamount'] = 'Αριθμός πρόσφατων μαθημάτων';
 $string['lastxviewed'] = 'Τελευταία {$a} εμφανισθέντα';

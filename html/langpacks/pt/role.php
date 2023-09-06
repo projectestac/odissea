@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'pt', version '3.11'.
+ * Strings for component 'role', language 'pt', version '4.1'.
  *
  * @package     role
  * @category    string
@@ -204,7 +204,7 @@ $string['course:reset'] = 'Repor disciplina';
 $string['course:reviewotherusers'] = 'Rever outros utilizadores';
 $string['course:sectionvisibility'] = 'Controlar visibilidade das secções';
 $string['course:setcurrentsection'] = 'Definir secção atual';
-$string['course:setforcedlanguage'] = 'Forçar idioma da disciplina';
+$string['course:setforcedlanguage'] = 'Forçar idioma da disciplina ou atividade';
 $string['course:tag'] = 'Alterar palavras-chave da disciplina';
 $string['course:togglecompletion'] = 'Marcar manualmente as atividades como concluídas';
 $string['course:update'] = 'Atualizar as configurações da disciplina';
@@ -375,6 +375,8 @@ $string['privacy:metadata:role_cohortroles'] = 'Papéis para Grupo global';
 $string['prohibit'] = 'Proibir';
 $string['prohibitedroles'] = 'Proibido';
 $string['question:add'] = 'Adicionar novas perguntas';
+$string['question:commentall'] = 'Comentar em todas as perguntas';
+$string['question:commentmine'] = 'Comentar em todas as suas perguntas';
 $string['question:config'] = 'Configurar tipos de pergunta';
 $string['question:editall'] = 'Editar todas as perguntas';
 $string['question:editmine'] = 'Editar perguntas próprias';
@@ -392,6 +394,10 @@ $string['rating:rate'] = 'Adicionar notas aos itens';
 $string['rating:view'] = 'Ver a sua nota total';
 $string['rating:viewall'] = 'Ver as notas dadas individualmente';
 $string['rating:viewany'] = 'Ver as notas totais de um utilizador';
+$string['reportbuilder:edit'] = 'Editar relatórios personalizados';
+$string['reportbuilder:editall'] = 'Editar todos os relatórios personalizados';
+$string['reportbuilder:scheduleviewas'] = 'Relatórios agendados para serem vistos como outros utilizadores';
+$string['reportbuilder:view'] = 'Ver relatórios personalizados';
 $string['resetrole'] = 'Redefinir';
 $string['resettingrole'] = 'Redefinir papel \'{$a}\'';
 $string['restore:configure'] = 'Configurar opções do restauro';

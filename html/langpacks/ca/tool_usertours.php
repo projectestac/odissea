@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ca', version '3.11'.
+ * Strings for component 'tool_usertours', language 'ca', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -43,9 +43,12 @@ $string['confirmtourremovalquestion'] = 'Esteu segur que voleu eliminar aquesta 
 $string['confirmtourremovaltitle'] = 'Confirmeu que voleu eliminar aquesta visita guiada';
 $string['content'] = 'Contingut';
 $string['content_heading'] = 'Contingut';
-$string['content_help'] = 'El contingut que descrigui el pas es pot afegir com a text sense format, inclòs en etiquetes multilingües (per utilitzar-lo amb el filtre de contingut multilingüe), si és necessari.
-
-Alternativament, es pot introduir un identificador de cadena d\'idioma a l\'identificador de format, component (sense claudàtors o espai després de la coma).';
+$string['content_help'] = 'El contingut que descriu el pas es pot afegir com a text net, sense format, inclòs entre etiquetes multilingües (per utilitzar-lo amb el filtre de contingut de diversos idiomes), si és necessari.';
+$string['content_type'] = 'Tipus de contingut';
+$string['content_type_help'] = '* Manual: el contingut s\'introdueix utilitzant un editor de text.
+*Identificador de la cadena d\'idioma: en el format identificador de la cadena,component (sense cap espai després de la coma).';
+$string['content_type_langstring'] = 'Identificador de la cadena d\'idioma';
+$string['content_type_manual'] = 'Manual';
 $string['cssselector'] = 'Selector de CSS';
 $string['defaultvalue'] = 'Per defecte ({$a})';
 $string['delay'] = 'Retard abans de mostrar el pas';
@@ -53,12 +56,22 @@ $string['delay_help'] = 'Podeu afegir un retard abans que es mostri el pas.
 
 Aquest retard és en mil·lisegons.';
 $string['description'] = 'Descripció';
+$string['description_help'] = 'La descripció d\'una visita guiada es pot afegir com a text net, sense format, inclòs entre etiquetes multilingües (per utilitzar-lo amb el filtre de contingut de diversos idiomes), en cas de ser necessari.
+
+Alternativament, es pot introduir un identificador de la cadena d\'idioma en el format identificador,component (sense claudàtors o espai després de la coma).';
+$string['displaystepnumbers'] = 'Mostra els números dels passos';
+$string['displaystepnumbers_help'] = 'Si s\'ha de mostrar el número del pas, p. ex., 1/4, 2/4, etc. per tal d\'indicar la durada de la visita guiada.';
 $string['done'] = 'Fet';
 $string['duplicatetour'] = 'Duplica la visita guiada';
 $string['duplicatetour_name'] = '{$a} (còpia)';
 $string['editstep'] = 'S\'està editant «{$a}»';
 $string['enabled'] = 'Habilitat';
+$string['endonesteptour'] = 'Entesos';
 $string['endtour'] = 'Finalitza la visita guiada';
+$string['endtourlabel'] = 'Etiqueta del botó de finalització de la visita guiada';
+$string['endtourlabel_help'] = 'Opcionalment, podeu especificar una etiqueta personalitzada per al botó de finalització de la visita guiada. L\'etiqueta predeterminada és «Entesos» per a un sol pas i «Finalitza la visita guiada» per a visites guiades de diversos passos.
+
+Alternativament, es pot introduir un identificador de la cadena d\'idioma en el format identificador,component (sense claudàtors o espai després de la coma).';
 $string['event_step_shown'] = 'Pas mostrat';
 $string['event_tour_ended'] = 'La visita guiada ha finalitzat';
 $string['event_tour_reset'] = 'La visita guiada s\'ha reiniciat';
@@ -85,17 +98,23 @@ $string['filter_role_help'] = 'Es pot restringir una visita guiada als usuaris a
 $string['filter_theme'] = 'Tema';
 $string['filter_theme_help'] = 'Mostra la visita guiada quan l\'usuari faci servir algun dels temes seleccionats.';
 $string['importtour'] = 'Importa una visita guiada';
+$string['invalid_lang_id'] = 'L\'identificador de la cadena d\'idioma no és vàlid';
 $string['left'] = 'Part esquerra';
 $string['modifyshippedtourwarning'] = 'Això és una visita guiada d\'usuari que ve per defecte amb Moodle. Qualsevol modificació que feu pot ser reemplaçada en l\'actualització següent.';
+$string['moodle_language_identifier'] = 'Identificador de la cadena d\'idioma';
 $string['movestepdown'] = 'Mou el pas a sota';
 $string['movestepup'] = 'Mou el pas a sobre';
 $string['movetourdown'] = 'Mou la visita guiada a sota';
 $string['movetourup'] = 'Mou la visita guiada a sobre';
 $string['name'] = 'Nom';
+$string['name_help'] = 'El nom d\'una visita guiada es pot afegir com a text sense format, inclòs en etiquetes multilingües (per utilitzar-lo amb el filtre de contingut de diversos idiomes), en cas de ser necessari.
+
+Alternativament, es pot introduir un identificador de cadena d\'idioma en el format identificador,component (sense claudàtors o espai després de la coma).';
 $string['newstep'] = 'Pas nou';
-$string['newtour'] = 'Crea una nova visita guiada';
+$string['newtour'] = 'Crea una visita guiada nova';
 $string['next'] = 'Següent';
 $string['nextstep'] = 'Següent';
+$string['nextstep_sequence'] = 'Següent ({$a->position}/{$a->total})';
 $string['options_heading'] = 'Opcions';
 $string['orphan'] = 'Mostra si no es troba la part de la pàgina associada amb el pas';
 $string['orphan_help'] = 'Es mostra el pas quan no es pugui trobar la part de la pàgina associada amb aquest pas.';
@@ -132,6 +151,7 @@ $string['selectordisplayname'] = 'Un selector de CSS que coincideixi amb «{$a}�
 $string['selecttype'] = 'Seleccioneu el tipus de pas';
 $string['sharedtourslink'] = 'Repositori de visites guiades';
 $string['skip'] = 'Omet';
+$string['skip_tour'] = 'Omet la visita guiada';
 $string['target'] = 'Destinació';
 $string['target_block'] = 'Bloc';
 $string['target_heading'] = 'Destinació del pas';
@@ -227,6 +247,27 @@ $string['tour_activityinfo_course_teacher_content'] = 'Els paràmetres nous de c
 $string['tour_activityinfo_course_teacher_title'] = 'Nou: informació de l\'activitat';
 $string['tour_final_step_content'] = 'Heu arribat al final de la visita guiada d\'usuari. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina.';
 $string['tour_final_step_title'] = 'Final de la visita guiada';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Envia notícies importants aquí.';
+$string['tour_navigation_course_announcements_teacher_title'] = 'Hi ha res que vulgueu contar a tothom?';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Afegeix contingut nou o edita\'n l\'existent.';
+$string['tour_navigation_course_edit_teacher_title'] = 'Activa el mode d\'edició';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Navegueu per les activitats i feu el seguiment del vostre progrés.';
+$string['tour_navigation_course_index_student_title'] = 'Trobeu el vostre camí';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Arrossega i deixa anar activitats per tornar a ordenar el contingut del curs.';
+$string['tour_navigation_course_index_teacher_title'] = 'Índex del curs';
+$string['tour_navigation_course_student_tour_des'] = 'On navegar a través de les activitats del curs';
+$string['tour_navigation_course_student_tour_name'] = 'Índex del curs';
+$string['tour_navigation_course_teacher_tour_des'] = 'Mode d\'edició, arrossegar i deixar anar activitats i publicació d\'anuncis a un curs';
+$string['tour_navigation_course_teacher_tour_name'] = 'Edició del curs';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Aquest panell lateral pot contenir més funcions.';
+$string['tour_navigation_dashboard_title'] = 'Amplieu per explorar';
+$string['tour_navigation_dashboard_tour_des'] = 'On es troben els blocs';
+$string['tour_navigation_dashboard_tour_name'] = 'Calaix de blocs';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>Afegeix, copia, suprimeix i oculta cursos des d\'aquest menú';
+$string['tour_navigation_mycourses_endtourlabel'] = 'Entesos';
+$string['tour_navigation_mycourses_title'] = 'Cursos i categories';
+$string['tour_navigation_mycourses_tour_des'] = 'Opcions d\'administració del curs a la pàgina Els meus cursos';
+$string['tour_navigation_mycourses_tour_name'] = 'Administració del curs';
 $string['tour_resetforall'] = 'S\'ha reiniciat l\'estat de la visita guiada. Es tornarà a mostrar a tots els usuaris.';
 $string['tourconfig'] = 'Fitxer de configuració de la visita guiada que s\'ha d\'importar';
 $string['tourisenabled'] = 'La visita guiada està activada';

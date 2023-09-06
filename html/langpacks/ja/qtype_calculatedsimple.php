@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'ja', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'ja', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = '生成';
 $string['newsetwildcardvalues'] = 'セットの新しいワイルドカード値';
 $string['pluginname'] = 'シンプル計算問題';
 $string['pluginname_help'] = 'シンプル計算問題は小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。シンプル計算問題では計算問題で使用されるほとんどの機能を簡単な作成インタフェースにより提供します。';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = 'シンプル計算問題を追加する';
 $string['pluginnameediting'] = 'シンプル計算問題を編集する';
 $string['pluginnamesummary'] = '計算問題のシンプルバージョンです。シンプル計算問題は数値問題に似ていますが小テスト受験時、設定された数値がランダムに使用されます';

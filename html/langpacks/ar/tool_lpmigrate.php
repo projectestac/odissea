@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpmigrate', language 'ar', version '3.11'.
+ * Strings for component 'tool_lpmigrate', language 'ar', version '4.1'.
  *
  * @package     tool_lpmigrate
  * @category    string
@@ -47,7 +47,7 @@ $string['explanation'] = 'يمكن استعمال هذه الأداة لتحدي
 لا يوصى بتحرير المجموعة القديمة من الكفاءات مباشرةً، حيث سيؤدي ذلك إلى تغيير كل الكفاءات التي تم منحها بالفعل في خطط تعلم المستخدمين.
 
 عادةً، ستقوم باستيراد الإصدار الجديد من إطار العمل وإخفاء الإطار القديم، ثم استعمال هذه الأداة لترحيل المقررات الدراسية الجديدة إلى إطار العمل الجديد.';
-$string['findingcoursecompetencies'] = 'العثور على كفاءات المقرر';
+$string['findingcoursecompetencies'] = 'العثور على كفاءات المساق';
 $string['findingmodulecompetencies'] = 'إيجاد كفاءات النشاط والمورد';
 $string['frameworks'] = 'أُطر العمل';
 $string['limittothese'] = 'الحد من هذه';

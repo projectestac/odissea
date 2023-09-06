@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'eu', version '3.11'.
+ * Strings for component 'report_loglive', language 'eu', version '4.1'.
  *
  * @package     report_loglive
  * @category    string
@@ -32,6 +32,7 @@ $string['eventorigin'] = 'Jatorria';
 $string['eventrelatedfullnameuser'] = 'Inplikatutako erabiltzailea';
 $string['eventreportviewed'] = 'Zuzeneko agerraldien txostena ikusi da';
 $string['livelogs'] = 'Azken orduko zuzeneko agerraldiak';
+$string['livelogswithupdate'] = 'Azken orduko zuzeneko agerraldiak ({$a})';
 $string['loglive:view'] = 'Ikusi zuzeneko agerraldiak';
 $string['nologreaderenabled'] = 'Ez dago gaituta agerraldien irakurlerik';
 $string['pause'] = 'Gelditu zuzeneko eguneraketak';

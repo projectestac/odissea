@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_dedication', language 'eu', version '3.11'.
+ * Strings for component 'block_dedication', language 'eu', version '4.1'.
  *
  * @package     block_dedication
  * @category    string
@@ -25,17 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['access_button'] = 'Dedikazioaren tresna';
-$string['access_info'] = 'Irakasleentzat bakarrik:';
-$string['connectionratiorow'] = 'Konexioak eguneko';
-$string['dedication:addinstance'] = 'Baimendu ikastaroko dedikazio blokea gehitzea';
-$string['dedication:use'] = 'Baimendu ikastaroko dedikazioa erabiltzea';
-$string['dedication_estimation'] = 'Zure dedikatutako denbora-estimazioa hurrengoa da';
-$string['dedicationall'] = 'Ikastaroko kide guztien dedikazioa. Klik egin izenean kide horren ikastaroko dedikazioaren xehetasunak ikusteko.';
-$string['dedicationgroup'] = '<em>{$a}</em> taldeko kide guztien dedikazioa. Klik egin izenean kide horren ikastaroko dedikazioaren xehetasunak ikusteko.';
-$string['dedicationrow'] = 'Ikastaroaren dedikazioa';
-$string['form'] = 'Ikastaroaren dedikazioaren konfigurazioa';
-$string['form_help'] = 'Denbora-estimazioa Saioa eta Saioaren iraupen kontzeptuak erregistro-sarreretara aplikatuz egiten da.
+$string['admin_filter_courseid'] = 'Ikastaroaren izena';
+$string['admin_filter_courseid_help'] = 'Iragazi txostena ikastaroaren izenaren arabera';
+$string['admin_filter_form'] = 'Ikastaroaren dedikazioaren ezarpenak';
+$string['admin_filter_form_help'] = 'Denbora-estimazioa Saioa eta Saioaren iraupen kontzeptuak erregistro-sarreretara aplikatuz egiten da.
 
 <strong>Klik:</strong> Erabiltzaile batek Moodleko orri batean sartzen denean erregistro bat gordetzen da.
 
@@ -43,26 +36,55 @@ $string['form_help'] = 'Denbora-estimazioa Saioa eta Saioaren iraupen kontzeptua
 
 <strong>Saioaren iraupena:</strong> saio bateko lehen eta azken klikaren arteko denbora tartea.
 
-<strong>Dedikatutako denbora:</strong> erabiltzaile baten saioen iraunpenen batura.';
-$string['form_text'] = 'Aukeratu data tartea eta saio bateko kliken arteko gehieneko denbora tartea.';
-$string['limit'] = 'Kliken arteko gehieneko denbora tartea (minututan).';
-$string['limit_help'] = 'Kliken arteko gehieneko denbora tarteak bi klik saio berekoak diren edo ez finkatzen du.';
-$string['maxtime'] = 'Tartearen bukaera';
-$string['maxtime_help'] = 'Data honen aurretiko erregistro sarrerak bakarrik hartzen dira kontuan';
-$string['meandedication'] = '<strong>Batez besteko dedikazioa:</strong> {$a}';
-$string['mintime'] = 'Tartearen hasiera';
-$string['mintime_help'] = 'Data honen ondorengoko erregistro sarrerak bakarrik hartzen dira kontuan';
-$string['pagetitle'] = '{$a}: ikastaroaren dedikazioa';
+<strong>Dedikatutako denbora:</strong> erabiltzaile baten saioen iraupenen batura.';
+$string['admin_filter_form_text'] = 'Aukeratu epearen datak eta saio bereko kliken arteko gehieneko denbora.';
+$string['admin_filter_maxtime'] = 'Epearen amaiera';
+$string['admin_filter_maxtime_help'] = 'Soilik hartu kontuan data honetara arteko erregistroak';
+$string['admin_filter_mintime'] = 'Epearen hasiera';
+$string['admin_filter_mintime_help'] = 'Soilik hartu kontuan data honetatik aurrerako erregistroak';
+$string['admin_filter_submit'] = 'Kalkulatu';
+$string['allloglifetime'] = 'Mantendu saioaren historia tarte honetan:';
+$string['averagetimespent'] = '<strong>Ikastaroan batez beste dedikatutako denbora:</strong> {$a}';
+$string['cleanuptask'] = 'Saioaren historia garbitze ataza';
+$string['collect_dedication'] = 'Bildu datuak dedikazio blokerako';
+$string['configallloglifetime'] = 'Ezarpen honek saioaren iraupenaren gaineko informazioa gorde beharreko tartea zehazten du. Epe hau baino zaharragoak diren saioak automatikoki ezabatuko dira.';
+$string['connectionratiorow'] = 'Konexioak eguneko';
+$string['dedication:addinstance'] = 'Baimendu dedikazio blokea gehitzea';
+$string['dedication:myaddinstance'] = 'Baimendu dedikazio blokea aginte-panelaren orrian gehitzea';
+$string['dedication:viewreports'] = 'Baimendu dedikazio txostenak ikustea';
+$string['dedicationall'] = 'Ikastaroko kide guztien dedikazioa. Klik egin izenean kide horren ikastaroko dedikazioaren xehetasunak ikusteko.';
+$string['dedicationrow'] = 'Ikastaroan dedikatutako denbora';
+$string['enrolmententity'] = 'Matrikulazioa';
+$string['enrolmentmethod'] = 'Matrikulazio-metodoa';
+$string['entity_dedication'] = 'Dedikazioa';
+$string['excludesessionslessthan'] = 'Alde batera utzi {$a} baino saio laburragoak';
+$string['group'] = 'Taldea';
+$string['groupentity'] = 'Taldea';
+$string['ignore_sessions_limit'] = 'Ez egin jaramonik saioaren mugari';
+$string['ignore_sessions_limit_desc'] = 'Saio laburrak kentzen ditu, balio hau (minututan) baino laburragoak diren saioak ez dira kontuan hartuko dedikazio txostenean.';
+$string['lastupdated'] = 'Azken eguneratzea: {$a}';
 $string['period'] = '<em>{$a->mintime}</em> eta <em>{$a->maxtime}</em> arteko tartea';
 $string['perioddiff'] = '<strong>Igarotako denbora:</strong> {$a}';
-$string['perioddiffrow'] = 'Igarotako denbora';
-$string['pluginname'] = 'Ikastaroaren dedikazioa';
-$string['sessionduration'] = 'Iraupena';
+$string['pluginname'] = 'Dedikazioa';
+$string['privacy:metadata'] = 'Dedikazio blokea pluginak erabiltzailek ikastaroetan dedikatutako denbora gordetzen du.';
+$string['privacy:metadata:block_dedication:courseid'] = 'Erabiltzaile-dedikazioaren ikastaroaren IDa.';
+$string['privacy:metadata:block_dedication:timespent'] = 'Ikastaroan dedikatutako denbora.';
+$string['privacy:metadata:block_dedication:timestart'] = 'Datuak biltzen hasteko unea.';
+$string['privacy:metadata:block_dedication:userid'] = 'Erabiltzaile-dedikazioaren erabiltzailearen IDa.';
+$string['report_dedication'] = 'Dedikazio tresnaren txostena';
+$string['report_timespent'] = 'Dedikatutako denboraren Txostena';
+$string['session_limit'] = 'Saioaren muga';
+$string['session_limit_desc'] = 'Saioaren muga txosten-orriko iragazkietarako';
+$string['sessionduration'] = 'Saioaren iraupena';
+$string['sessiondurationsum'] = 'Saioaren iraupena (batura)';
 $string['sessionstart'] = 'Saioaren hasiera';
-$string['show_dedication'] = 'Erakutsi ikasleei dedikazio denbora';
-$string['show_dedication_help'] = 'Berez irakasleek bakarrik ikusi ditzakete dedikazio denborak. Ezarpen honek euren dedikazio denbora erakustea ahalbidetzen du.';
-$string['sincerow'] = 'Noiztik';
-$string['submit'] = 'Kalkulatu';
-$string['torow'] = 'Noiz arte';
-$string['totaldedication'] = '<strong>Dedikazioa guztira:</strong> {$a}';
+$string['showestimatedtime'] = 'Erakutsi erabiltzaileei dedikatutako denboraren estimazioa';
+$string['showestimatedtime_help'] = 'Ezarpen honek erabiltzaileei euren dedikatutako denboraren estimazioa blokean ikustea baimentzen du.';
+$string['timespent_estimation'] = 'Ikastaroan zuk dedikatutako denboraren estimazioa:';
+$string['timespentincourse'] = 'Ikastaroan dedikatutako denbora';
+$string['timespentreport'] = 'Txosten osoa';
+$string['timespenttasknotrunning'] = 'Dedikatutako denbora kalkulatzeko ataza oraindik ez da exekutatu.';
+$string['totaltimespent'] = '<strong>Ikastaroan guztira dedikatutako denbora:</strong> {$a}';
+$string['user_dedication_datasource'] = 'Erabiltzaileen Dedikazioa';
 $string['userdedication'] = '<em>{$a}</em>(r)en ikastaroko dedikazioren zehaztasunak.';
+$string['viewsessiondurationreport'] = 'Ikusi saioaren iraupenaren txostena';

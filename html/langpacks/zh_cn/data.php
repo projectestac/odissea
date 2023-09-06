@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'zh_cn', version '3.11'.
+ * Strings for component 'data', language 'zh_cn', version '4.1'.
  *
  * @package     data
  * @category    string
@@ -121,6 +121,7 @@ $string['delete'] = '删除';
 $string['deleteallentries'] = '删除所有条目';
 $string['deletecomment'] = '您确定要删除这条这注释吗？';
 $string['deleted'] = '已删除';
+$string['deleteentry'] = '删除条目';
 $string['deletefield'] = '删除已有字段';
 $string['deletenotenrolled'] = '删除未选课用户的条目';
 $string['deletewarning'] = '您确定删除这个预设吗？';
@@ -131,6 +132,7 @@ $string['download'] = '下载';
 $string['edit'] = '编辑';
 $string['editcomment'] = '编辑注释';
 $string['editentry'] = '编辑条目';
+$string['editfield'] = '编辑字段';
 $string['editordisable'] = '不可编辑';
 $string['editorenable'] = '可编辑';
 $string['emptyadd'] = '模板为空，按缺省模板生成...';
@@ -163,6 +165,7 @@ $string['exportentries'] = '导出条目';
 $string['exportformat'] = '导出格式';
 $string['exportoptions'] = '导出选项';
 $string['exportownentries'] = '仅导出您自己的条目？({$a->mine}/{$a->all})';
+$string['exportpreset'] = '导出预设';
 $string['failedpresetdelete'] = '删除预设错误！';
 $string['fieldadded'] = '字段已添加';
 $string['fieldallowautolink'] = '允许自动链接';
@@ -182,6 +185,7 @@ $string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = '您文件中的下述字段不存在于数据库中：{$a}';
 $string['fieldoptions'] = '选项(每行一个)';
 $string['fields'] = '字段';
+$string['fieldsnavigation'] = '字段三级导航';
 $string['fieldupdated'] = '字段已更新';
 $string['fieldwidth'] = '宽度';
 $string['fieldwidthlistview'] = '列表视图中的宽度';
@@ -206,6 +210,7 @@ $string['headerlisttemplate'] = '定义浏览多个条目的界面';
 $string['headerrsstemplate'] = '定义条目在 RSS 种子中的表示';
 $string['headersingletemplate'] = '定义浏览独立条目的界面';
 $string['importentries'] = '导入条目';
+$string['importpreset'] = '导入预设';
 $string['importsuccess'] = '已成功采用了预设';
 $string['includeapproval'] = '包含审核状态';
 $string['includetags'] = '包含模板文件的标签';
@@ -215,10 +220,12 @@ $string['indicator:cognitivedepth'] = '数据库活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在数据库活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '数据库认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到数据库活动提供的认知参与百分比（级别=无查看、查看、提交）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '数据库活动社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在数据库活动中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = '社会数据库';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到数据库活动提供的社会参与度的百分比（级别=无参与，仅参与者一人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insufficiententries'] = '查看这个数据库需要更多的条目';
 $string['intro'] = '描述';
 $string['invalidaccess'] = '页面访问错误';
@@ -239,9 +246,11 @@ $string['latlonglinkservicesdisplayed'] = '要显示的 Link-out 服务';
 $string['latlongotherfields'] = '其他字段';
 $string['list'] = '显示列表';
 $string['listtemplate'] = '列表模板';
+$string['listview'] = '列表视图';
 $string['longitude'] = '经度';
 $string['manageapproved'] = '允许修改已批准的条目';
 $string['manageapproved_help'] = '如果禁用，已批准的条目将不再由添加它们的用户编辑或删除。除非启用“需要批准”，否则此设置无效。';
+$string['managefields'] = '管理字段';
 $string['mapexistingfield'] = '映射到{$a}';
 $string['mapnewfield'] = '创建一个新字段';
 $string['mappingwarning'] = '所有不能映射到新字段的旧字段将会丢失，而且此字段内的全部数据也会被删除。';
@@ -264,6 +273,7 @@ $string['modulename_help'] = '数据库活动模块使参与者能够创建、�
 
 * 网络链接、书籍、书评、期刊参考等的协作集合
 * 用于展示学生创作的照片、海报、网站或诗歌，供同行评论和评论。';
+$string['modulename_link'] = 'mod/data/view';
 $string['modulenameplural'] = '数据库';
 $string['more'] = '更多';
 $string['moreurl'] = '更多 网页地址';
@@ -309,6 +319,7 @@ $string['pluginadministration'] = '数据库活动管理';
 $string['pluginname'] = '数据库';
 $string['portfolionotfile'] = '导出到文件包而不是文件（只支持csv和leap2a）';
 $string['presetinfo'] = '保存为预设后，将发布这个模板。其他的用户也可以在他们的数据库中使用它。';
+$string['presetnotselected'] = '未选择预设。';
 $string['presets'] = '预设';
 $string['privacy:metadata:commentpurpose'] = '对数据库记录的评论';
 $string['privacy:metadata:data_content'] = '表示数据库活动模块中一个字段的一个答案';
@@ -362,6 +373,8 @@ $string['saveandadd'] = '保存并添加另一个';
 $string['saveandview'] = '保存并浏览';
 $string['saveaspreset'] = '保存为预设';
 $string['saveaspreset_help'] = '保存为预设值功能会发布此模板和字段，从而网站中的其他人也可以使用。（您随时可以将其从预设列表中删除。）';
+$string['saveaspresetmissingcapability'] = '用户没有将数据库另存为预设的权限。';
+$string['savedataaspreset'] = '将所有字段和模板保存为预设';
 $string['savesettings'] = '保存设置';
 $string['savesuccess'] = '保存成功。您的预设将在全站内可用。';
 $string['savetemplate'] = '保存模板';
@@ -374,6 +387,7 @@ $string['selectfields'] = '数据库-条目';
 $string['showall'] = '显示所有条目';
 $string['single'] = '独立视图';
 $string['singletemplate'] = '独立模板';
+$string['singleview'] = '单视图';
 $string['subplugintype_datafield'] = '数据库字段类型';
 $string['subplugintype_datafield_plural'] = '数据库字段类型';
 $string['subplugintype_datapreset'] = '预设';
@@ -384,6 +398,7 @@ $string['tagsdeleted'] = '数据库标记已被删除';
 $string['teachersandstudents'] = '{$a->teachers} 和 {$a->students}';
 $string['templates'] = '模板';
 $string['templatesaved'] = '模板已保存';
+$string['templatesnavigation'] = '模板三级导航';
 $string['text'] = '文本';
 $string['textarea'] = '文本域';
 $string['timeadded'] = '添加时间';
@@ -404,11 +419,15 @@ $string['uploadrecords_help'] = '条目可以通过文本文件上传。文件�
 * 第一条记录包含定义文件其余部分格式的字段名列表
 
 字段附件是围绕每个记录中每个字段的字符。它通常可以不设置。';
+$string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = '网页地址';
 $string['usedate'] = '包含在搜索中。';
+$string['usepredefinedset'] = '使用预定义集';
+$string['usepreset'] = '使用预设';
 $string['usestandard'] = '使用一个预设';
 $string['usestandard_help'] = '要使用可用于整个站点的预设，请从列表中选择它。（如果已使用“另存为预设”功能将预设添加到列表中，则可以选择将其删除。）';
 $string['viewfromdate'] = '从何时开始只读';
+$string['viewnavigation'] = '视图模式三级导航';
 $string['viewtodate'] = '只读到何时';
 $string['viewtodatevalidation'] = '只读截止日期不能早于只读起始日期。';
 $string['wrongdataid'] = '提供的数据 ID 错误';

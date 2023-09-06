@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_aiken', language 'eu', version '3.11'.
+ * Strings for component 'qformat_aiken', language 'eu', version '4.1'.
  *
  * @package     qformat_aiken
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Aiken formatua';
 $string['pluginname_help'] = 'Hau formatu erraza da aukera anizkoitzeko galderak inportatzeko testu-fitxategi batetik.';
+$string['pluginname_link'] = 'qformat/aiken';
 $string['privacy:metadata'] = 'Aiken formatua galdera-formatu pluginak ez du datu pertsonalik biltzen.';
 $string['questionmissinganswers'] = 'Galderak gutxienez bi erantzun online izan behar ditu {$a}';
 $string['questionnotcomplete'] = 'Galdera ez da bete hurrengo galdera online hasi aurretik {$a}';

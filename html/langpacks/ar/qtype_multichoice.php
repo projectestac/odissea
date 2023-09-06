@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ar', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'ar', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -63,6 +63,7 @@ $string['pleaseselectananswer'] = 'لطفاً، إختر جواباً.';
 $string['pleaseselectatleastoneanswer'] = 'لطفاً، إختر جواباً واحداً على الأقل.';
 $string['pluginname'] = 'متعدد الخيارات';
 $string['pluginname_help'] = 'استجابة لسؤال (قد يحتوي على صورة)، يقوم المستخدم بالتخير ما بين إجابات متعددة. سؤال الإجابات المتعددة قد يكون له خيار واحد صحيح أو عدة خيارات صحيحة.';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = 'إضافة سؤال متعدد الخيارات';
 $string['pluginnameediting'] = 'تحرير سؤال متعدد الخيارات';
 $string['pluginnamesummary'] = 'السماح لإختيار إجابة واحدة أو إجابات متعددة من القائمة المعدة مسبقاً';
@@ -73,10 +74,12 @@ $string['privacy:preference:penalty'] = 'الغرامة المفروضة على 
 $string['privacy:preference:showstandardinstruction'] = 'فيما إذا كان ينبغي إظهار التعليمات القياسية';
 $string['privacy:preference:shuffleanswers'] = 'فيما إذا كان ينبغي خلط الإجابات تلقائيًا';
 $string['privacy:preference:single'] = 'فيما إذا كان الجواب منفردًا ذي أزرار مذياع أم متعددًا ذي خانات تأشير';
+$string['regradeissuenumchoiceschanged'] = 'عدد الخيارات في السؤال قد تغير.';
 $string['selectmulti'] = 'إختر واحدة أو أكثر:';
 $string['selectone'] = 'إختر أحد الخيارات:';
 $string['showstandardinstruction'] = 'أظهر التعليمات القياسية';
-$string['showstandardinstruction_help'] = 'ما إذا كان ينبغي إظهار تعليمات "إختر واحداً:" أو "إختر واحداً أو أكثر:" قبل إجابات متعدد الخيارات.';
+$string['showstandardinstruction_desc'] = 'فيما إذا كان ينبغي إظهار التعليمات "إختر واحدًا:" أو "إختر واحدًا أو أكثر:" قبل إجابات متعدد الخيارات.';
+$string['showstandardinstruction_help'] = 'فيما إذا كان ينبغي إظهار التعليمات "إختر واحدًا:" أو "إختر واحدًا أو أكثر:" قبل إجابات متعدد الخيارات. أو بدلاً من ذلك، يمكنك تضمين تعليمات أخرى في نص السؤال.';
 $string['shuffleanswers'] = 'أتريد خلط الخيارات؟';
 $string['shuffleanswers_desc'] = 'فيما إذا كان ينبغي خلط الخيارات عشواياً لكل محاولة بشكل إفتراضي.';
 $string['shuffleanswers_help'] = 'في حالة التفعيل، سيتم خلط الأسئلة عشوائيا لكل محاولة، بشرط أن يتم تفعيل خلط الاجابات في كل سؤال في إعدادات الاختبار';

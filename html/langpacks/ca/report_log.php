@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ca', version '3.11'.
+ * Strings for component 'report_log', language 'ca', version '4.1'.
  *
  * @package     report_log
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allsources'] = 'Totes les fonts';
+$string['cli'] = 'CLI';
 $string['eventcomponent'] = 'Component';
 $string['eventcontext'] = 'Context de l\'esdeveniment';
 $string['eventloggedas'] = '{$a->realusername} com a {$a->asusername}';
@@ -36,6 +37,7 @@ $string['eventuserreportviewed'] = 'S\'ha visualitzat l\'informe dels registres 
 $string['log:view'] = 'Veure els registres del curs';
 $string['log:viewtoday'] = 'Veure els registres d\'avui';
 $string['logsformat'] = 'Format dels informes';
+$string['nocapability'] = 'No s\'ha pogut accedir a l\'informe dels registres de l\'usuari';
 $string['nologreaderenabled'] = 'No s\'ha habilitat cap lector de registres';
 $string['origin'] = 'Font';
 $string['other'] = 'Altres';
@@ -44,5 +46,8 @@ $string['page-report-log-index'] = 'Informe d\'activitat del curs';
 $string['page-report-log-user'] = 'Informe d\'activitat de l\'usuari';
 $string['page-report-log-x'] = 'Qualsevol informe d\'activitat';
 $string['pluginname'] = 'Registres';
+$string['privacy:metadata'] = 'Aquest connector no emmagatzema cap dada personal';
 $string['restore'] = 'Restaura';
 $string['selectlogreader'] = 'Escolliu el lector de registres';
+$string['web'] = 'Web';
+$string['ws'] = 'Servei web';

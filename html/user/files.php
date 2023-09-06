@@ -40,9 +40,11 @@ $PAGE->set_context($context);
 $PAGE->set_title($title);
 $PAGE->set_heading(fullname($USER));
 $PAGE->set_pagelayout('standard');
+$PAGE->add_body_class('limitedwidth');
 $PAGE->set_pagetype('user-files');
 
 echo $OUTPUT->header();
+echo $OUTPUT->heading($title);
 echo $OUTPUT->box_start('generalbox');
 
 echo html_writer::start_div('', ['id' => 'userfilesform']);

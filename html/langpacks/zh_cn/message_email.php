@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'zh_cn', version '3.11'.
+ * Strings for component 'message_email', language 'zh_cn', version '4.1'.
  *
  * @package     message_email
  * @category    string
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['email'] = 'Email通知发送到';
-$string['emaildigestsubject'] = '消息摘要';
 $string['emaildigestunreadmessages'] = '未读消息';
 $string['emaildigestviewallmessages'] = '查看所有消息';
 $string['emailonlyfromnoreplyaddress'] = '永远从这不要回信的地址上发送email？';

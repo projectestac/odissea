@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ca', version '3.11'.
+ * Strings for component 'completion', language 'ca', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -84,6 +84,7 @@ $string['completion_automatic'] = 'Mostra l\'activitat com a completada si es co
 $string['completion_help'] = 'Si s\'habilita, es fa un seguiment de compleció de l\'activitat, de forma manual o de forma automàtica, sobre la base de certes condicions. Es poden configurar múltiples condicions. Si es fa així, l\'activitat només es considerarà completada quan es complisquen TOTES les condicions.
 
 Una marca al costat del nom de l\'activitat en la pàgina del curs indica que l\'activitat s\'ha completat.';
+$string['completion_link'] = 'activity/completion';
 $string['completion_manual'] = 'Els estudiants poden marcar de forma manual l\'activitat com a completada';
 $string['completion_none'] = 'No indiqueu la compleció de l\'activitat';
 $string['completionactivitydefault'] = 'Utilitzeu el valor per defecte de l\'activitat';
@@ -108,6 +109,7 @@ $string['completionnotenabledforcourse'] = 'No s\'ha habilitat la compleció en 
 $string['completionnotenabledforsite'] = 'No s\'ha habilitat la compleció en aquest lloc';
 $string['completionondate'] = 'Data';
 $string['completionondatevalue'] = 'La data en què el curs es marcarà com a completat';
+$string['completionpassgrade_desc'] = 'L\'estudiant ha de rebre la qualificació mínima per aprovar per completar aquesta activitat';
 $string['completionsettingslocked'] = 'Bloquejats els paràmetres de compleció';
 $string['completionupdated'] = 'S\'ha actualitzat la compleció per a l\'activitat <b>{$a}</b>';
 $string['completionusegrade'] = 'Qualificació requerida';
@@ -145,6 +147,7 @@ $string['dependencies'] = 'Dependències';
 $string['dependenciescompleted'] = 'Compleció d\'altres cursos';
 $string['detail_desc:receivegrade'] = 'Rebre una qualificació';
 $string['detail_desc:view'] = 'Visualitza';
+$string['done'] = 'Fet';
 $string['editcoursecompletionsettings'] = 'Edita els paràmetres de compleció del curs';
 $string['enablecompletion'] = 'Habilita el seguiment de la compleció';
 $string['enablecompletion_help'] = 'Un cop activada, es poden establir condicions de compleció de l\'activitat als paràmetres de l\'activitat i/o es poden establir condicions de compleció de curs. Es recomana tenir-la habilitada; d\'aquesta manera, es mostraran dades significatives a la vista global del curs al Tauler.';
@@ -162,6 +165,7 @@ $string['eventcoursecompletionupdated'] = 'S\'ha actualitzat la compleció del c
 $string['eventcoursemodulecompletionupdated'] = 'S\'ha actualitzat la compleció d\'activitat del curs';
 $string['eventdefaultcompletionupdated'] = 'S\'ha actualitzat la compleció d\'activitat del curs per defecte';
 $string['excelcsvdownload'] = 'Descarrega en format compatible amb Excel (.csv)';
+$string['failed'] = 'Fallat';
 $string['fraction'] = 'Fracció';
 $string['graderequired'] = 'Qualificació del curs requerida';
 $string['gradexrequired'] = '{$a} requerit';
@@ -226,6 +230,7 @@ $string['selfcompletion'] = 'Auto-compleció';
 $string['showcompletionconditions'] = 'Mostra les condicions de compleció de l\'activitat';
 $string['showcompletionconditions_help'] = 'Les condicions de compleció de l’activitat sempre es mostren a la pàgina de l’activitat. Aquest paràmetre determina si les condicions de compleció de l\'activitat també es mostren a sota de cada activitat a la pàgina del curs.';
 $string['showinguser'] = 'Visualitza usuaris';
+$string['todo'] = 'Per fer';
 $string['unenrolingfromcourse'] = 'S\'està suprimint la inscripció al curs';
 $string['unenrolment'] = 'Cancel·lació de la inscripció';
 $string['unit'] = 'Unitat';

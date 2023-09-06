@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exaport', language 'el', version '3.11'.
+ * Strings for component 'block_exaport', language 'el', version '4.1'.
  *
  * @package     block_exaport
  * @category    string
@@ -39,7 +39,7 @@ $string['addstdcat'] = 'εισαγωγή τυπικών κατηγοριών';
 $string['attachincluded'] = 'Συνημμένο;';
 $string['attachment'] = 'Συνημμένο';
 $string['autofillview'] = 'Προσθέστε αυτόματα όλα τα διαθέσιμα αντικείμενα σε αυτήν την προβολή';
-$string['awaiting'] = '($a awaiting)';
+$string['awaiting'] = '($a σε αναμονή)';
 $string['back'] = 'Πίσω';
 $string['back_to_desp'] = 'πίσω στο χαρτοφυλάκιο γλώσσας';
 $string['backtocourse'] = 'Επιστροφή στο μάθημα';
@@ -146,8 +146,8 @@ $string['exaport:competences'] = 'Να επιτρέπονται προσόντα
 $string['exaport:export'] = 'Εξαγωγή αρχείων SCORM';
 $string['exaport:import'] = 'Εισαγωγή αρχείων SCORM';
 $string['exaport:importfrommoodle'] = 'Εισαγωγή από το Moodle';
-$string['exaport:shareextern'] = 'Εξωτερική κοινή χρήση εμφανίσεων';
-$string['exaport:shareintern'] = 'Εσωτερική κοινή χρήση εμφανίσεων';
+$string['exaport:shareextern'] = 'Εξωτερική κοινή χρήση προβολών';
+$string['exaport:shareintern'] = 'Εσωτερική κοινή χρήση προβολών';
 $string['exaport:use'] = 'Να επιτρέπεται η χρήση';
 $string['expandcomps'] = 'Ανάπτυξη όλων';
 $string['explaincategories'] = 'Κατηγορίες: εδώ μπορείτε να δημιουργήσετε και να τροποποιήσετε τις κατηγορίες';
@@ -172,7 +172,7 @@ $string['go'] = 'Μετάβαση!';
 $string['gradeitem'] = 'Βαθμολόγηση αυτού του στοιχείου';
 $string['grouptitle'] = 'Τίτλος ομάδας';
 $string['height'] = 'Ύψος';
-$string['hidesummary'] = '(απόκρυψη σύνοψης)';
+$string['hidesummary'] = '(απόκρυψη περίληψης)';
 $string['iconfile'] = 'Εικόνα εικονιδίου';
 $string['import'] = 'Εισαγωγή';
 $string['importexport'] = 'Εισαγωγή/Εξαγωγή';
@@ -225,13 +225,13 @@ $string['nopicture'] = 'καμία εικόνα';
 $string['noprofilepicture'] = 'καμία εικόνα προφίλ διαθέσιμη';
 $string['note'] = 'Σημείωση';
 $string['notetitle'] = 'Σημείωση';
-$string['nothingshared'] = 'Κανείς δεν μοιράζεται μαζί σας ένα χαρτοφυλάκιο';
-$string['nothingstructureshared'] = 'Κανείς δεν μοιράζεται μαζί σας μια δομή';
+$string['nothingshared'] = 'Κανείς δεν κάνει κοινή χρήση μαζί σας ενός χαρτοφυλακίου';
+$string['nothingstructureshared'] = 'Κανείς δεν κάνει κοινή χρήση μαζί σας μιας δομής';
 $string['notify'] = 'ειδοποίηση';
 $string['nouserforaccess'] = 'Αδυναμία εύρεσης χρήστης (άγνωστος κωδικός πρόσβασης)';
 $string['nouserforid'] = 'Αδυναμία εύρεσης χρήστη (άγνωστο αναγνωριστικό)';
 $string['nousersfound'] = 'Δεν βρέθηκαν χρήστες';
-$string['noviews'] = 'Παρακαλώ δημιουργήστε μια νέα προβολή';
+$string['noviews'] = 'Παρακαλούμε δημιουργήστε μια νέα προβολή';
 $string['opencomps'] = 'Επιλέξτε τα προσόντα σας';
 $string['other_groups_course'] = 'Άλλα μαθήματα';
 $string['other_users_course'] = 'Χρήστες όχι σε μαθήματά μου';
@@ -345,14 +345,14 @@ $string['show_sharedbyuser'] = 'Διαμοιραζόμενη από χρήστε
 $string['showallusers'] = 'Εμφάνιση χρηστών όλων των μαθημάτων μου';
 $string['showcourse'] = 'Εμφάνιση μόνο αυτού του μαθήματος';
 $string['showcourseusers'] = 'Εμφάνιση μόνο χρηστών του μαθήματος';
-$string['showsummary'] = '(εμφάνιση σύνοψης)';
+$string['showsummary'] = '(εμφάνιση περίληψης)';
 $string['steckbrief'] = 'Προφίλ';
 $string['strshare'] = 'Κοινή χρήση';
 $string['strunshare'] = 'Κατάργηση της κοινής χρήσης';
 $string['subcategory'] = 'Υπό-κατηγορία';
 $string['submititem'] = 'Υποβολή';
 $string['success'] = 'Η εισαγωγή του αρχείου έγινε με επιτυχία';
-$string['summary'] = 'Σύνοψη (προαιρετικά)';
+$string['summary'] = 'Περίληψη (προαιρετικά)';
 $string['supported'] = 'υποστηρίζεται από';
 $string['thiscourse'] = 'Αυτό το μάθημα';
 $string['tiles'] = 'Πλακίδια';
@@ -371,7 +371,7 @@ $string['url'] = 'Διεύθυνση URL';
 $string['urlnotempty'] = 'Πρέπει να δώσετε μια διεύθυνση URL.';
 $string['userdefinedsort'] = 'Καθορίστε την δική σας αναζήτηση';
 $string['view'] = 'Προβολή';
-$string['view_sharing'] = 'Σε κοινή χρήση';
+$string['view_sharing'] = 'Κοινή χρήση';
 $string['view_sharing_noaccess'] = 'Χωρίς πρόσβαση';
 $string['view_specialitem_badge'] = 'Διακριτικό';
 $string['view_specialitem_headline'] = 'Τίτλος επικεφαλίδας';

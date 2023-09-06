@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'it', version '3.11'.
+ * Strings for component 'choice', language 'it', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'Modificare e rimuovere le scelte';
 $string['choice:downloadresponses'] = 'Scaricare le scelte';
 $string['choice:readresponses'] = 'Visualizzare le scelte';
 $string['choice:view'] = 'Visualizzare attività scelta';
-$string['choiceactivityname'] = 'Scelta: {$a}';
 $string['choiceclose'] = 'Chiusura';
-$string['choicecloseson'] = 'La scelta si chiude il {$a}';
 $string['choicefull'] = 'Una o piu scelte da te operate sono già al completo. La riposta non è stata salvata, devi effettuare una nuova selezione.';
 $string['choicename'] = 'Titolo della scelta';
 $string['choiceopen'] = 'Apertura';
@@ -76,10 +74,12 @@ $string['indicator:cognitivedepth'] = 'Scelta cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Scelta.';
 $string['indicator:cognitivedepthdef'] = 'Scelta cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Scelta (Livelli: Nessuna visualizzazione, Visualizzazione, Invio, Visualizzazione feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Scelta sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Scelta.';
 $string['indicator:socialbreadthdef'] = 'Scelta sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Scelta (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'Limite';
 $string['limita'] = 'Limite: {$a}';
 $string['limitanswers'] = 'Limita il numero di scelte';
@@ -99,6 +99,7 @@ I risultati delle scelte possono essere pubblicati dopo che gli studenti hanno r
 * sondaggi veloci per stimolare la riflessione su un dato argomento;
 * valutare rapidamente cosa hanno capito  gli studenti;
 * facilitare le decisioni degli studenti, ad esempio consentendogli di esprimere preferenze sullo svolgimento del corso.';
+$string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Scelte';
 $string['moveselectedusersto'] = 'Sposta gli utenti selezionati in...';
 $string['multiplenotallowederror'] = 'Le scelte multiple non sono consentite';

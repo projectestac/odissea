@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'ar', version '3.11'.
+ * Strings for component 'atto_collapse', language 'ar', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'أظهر أزرار أقل';
 $string['showgroups'] = 'أظهر أول (كذا) مجموعة عند التصغير.';
 $string['showgroups_desc'] = 'عند تصغير شريط الأدوات (وهو كذلك افتراضياً)، سيتم إظهار هذا العدد من المجموعات فيه كل مرة.';
 $string['showmore'] = 'أظهر أزرار أكثر';
+$string['youareonsecondrow'] = 'أنت الآن في صف آخر من صفوف شريط أدوات المحرر حيث يوجد المزيد من الأزرار.';

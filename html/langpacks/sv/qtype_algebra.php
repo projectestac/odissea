@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_algebra', language 'sv', version '3.11'.
+ * Strings for component 'qtype_algebra', language 'sv', version '4.1'.
  *
  * @package     qtype_algebra
  * @category    string
@@ -43,3 +43,4 @@ $string['badfuncargs'] = 'Ogiltiga parametrer för funktionen \'{$a}';
 $string['checktolerance'] = 'Kontrollera toleransen';
 $string['compalgorithm'] = 'Jämförelse algoritm';
 $string['compareby'] = 'Jämförelse algoritm';
+$string['pluginname_link'] = 'question/type/algebra';

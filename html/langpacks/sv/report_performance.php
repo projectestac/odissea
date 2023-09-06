@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'sv', version '3.11'.
+ * Strings for component 'report_performance', language 'sv', version '4.1'.
  *
  * @package     report_performance
  * @category    string
@@ -32,6 +32,9 @@ $string['check_backup_details'] = 'Om automatiserad säkerhetskopiering aktivera
 $string['check_cachejs_comment_disable'] = 'Om aktiverad kan detta öka prestandan vid sidladdning.';
 $string['check_cachejs_comment_enable'] = 'Om inaktiverad kan det hända att sidor laddas långsamt.';
 $string['check_cachejs_details'] = 'Javascript-cachelagring och komprimering förbättrar sidinläsningen avsevärt. Det rekommenderas starkt för produktionsplatser.';
+$string['check_dbschema_errors'] = 'Databasschemat är inte korrekt.';
+$string['check_dbschema_name'] = 'Kontrollera databasschema';
+$string['check_dbschema_ok'] = 'Databasschemat är korrekt.';
 $string['check_debugmsg_comment_developer'] = 'Om satt till ett annat värde än DEVELOPER kan prestandan förbättras en aning.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Om satt till DEVELOPER kan prestandan påverkas en aning.';
 $string['check_debugmsg_details'] = 'Det finns sällan någon fördel i att gå över till Developer-läge, om det inte efterfrågats av en utvecklare. <p>När du väl du har fått felmeddelandet, och kopierat och klistrat in det någonstans, är det STARKT REKOMMENDERAT att ställa tillbaka Debug till NONE. Felsökningsmeddelanden kan avslöja ledtrådar till en hackare om installationen av din webbplats och kan påverka prestandan.</p>';

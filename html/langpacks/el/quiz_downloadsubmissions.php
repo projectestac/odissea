@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_downloadsubmissions', language 'el', version '3.11'.
+ * Strings for component 'quiz_downloadsubmissions', language 'el', version '4.1'.
  *
  * @package     quiz_downloadsubmissions
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadsubmissions'] = 'Λήψη υποβολών εκθέσεων';
 $string['downloadsubmissionsreport'] = 'Λήψη αναφοράς υποβολών';
 $string['noattempts'] = 'Δεν βρέθηκαν προσπάθειες.';
-$string['noessayquestion'] = 'Το κουίζ δεν περιέχει ερωτήσεις για δοκίμια/έκθεση.';
+$string['noessayquestion'] = 'Το κουίζ δεν περιέχει ερωτήσεις έκθεσης.';
 $string['noquestions'] = 'Δεν έχουν προστεθεί ακόμη ερωτήσεις.';
 $string['nosubmission'] = 'Δεν βρέθηκαν υποβολές.';
 $string['pluginname'] = 'Λήψη υποβολών εκθέσεων';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_rimport', language 'es', version '3.11'.
+ * Strings for component 'offlinequiz_rimport', language 'es', version '4.1'.
  *
  * @package     offlinequiz_rimport
  * @category    string
@@ -49,15 +49,17 @@ $string['errorpageerror'] = 'Error de página';
 $string['errorpngnotsupported'] = 'Imágenes PNG no soportadas';
 $string['errorresultexists'] = 'El resultado existe';
 $string['errortiffnotsupported'] = 'Imágenes TIFF no soportadas';
+$string['erroruseridviolation'] = 'Múltiples usuarios encontrados';
 $string['errorusernotincourse'] = 'El usuario no está en el curso';
 $string['errorusernotinlist'] = 'El usuario no está en la lista';
 $string['idnumber'] = 'Identificador';
-$string['import'] = 'Importar';
-$string['importedon'] = 'Importado en';
-$string['importforms'] = 'Importar formularios de respuesta';
+$string['import'] = 'Evaluar';
+$string['importedon'] = 'Evaluado el';
+$string['importforms'] = 'Cargar formularios de respuesta';
 $string['importlisterror'] = 'Lista no detectada';
-$string['importpforms'] = 'Importar lista de participantes';
+$string['importpforms'] = 'Cargar lista de asistencia';
 $string['newformsinqueue'] = '{$a} formulario(s) de respuesta pendinetes de evaluación.';
+$string['pluginname'] = 'Evaluación de resultados del cuestionario offline';
 $string['privacy:metadata'] = 'Esta extensión no almacena datos relacionados con el usuario.';
 $string['processingformsinqueue'] = '{$a} formulario(s) de respuesta están siendo procesados';
 $string['showpage'] = 'Mostrar';

@@ -31,14 +31,14 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['admindirname'] = 'Директориум аdmin';
 $string['availablelangs'] = 'Достапни јазични пакети';
-$string['chooselanguagehead'] = 'Изберете јазик';
+$string['chooselanguagehead'] = 'Избери јазик';
 $string['chooselanguagesub'] = 'Изберете јазик САМО за инсталацијата. Подоцна ќе можете да изберете јазик за страницата и за корисниците.';
 $string['clialreadyconfigured'] = 'Конфигурациската датотека config.php веќе постои. Ве молиме користете ја admin/cli/install_database.php за да го инсталирате Moodle на овој сајт.';
 $string['clialreadyinstalled'] = 'Конфигурациската датотека config.php веќе постои. Ве молиме користете ја admin/cli/install_database.php за да го надградите Moodle за овој сајт.';
 $string['cliinstallheader'] = 'Програма за инсталирање на Moodle {$a} командна линија';
-$string['databasehost'] = 'Домаќин на базата на податоци';
+$string['databasehost'] = 'Адреса на базата на податоци';
 $string['databasename'] = 'Име на базата на податоци';
-$string['databasetypehead'] = 'Одбери го двигателот на базата за податоци';
+$string['databasetypehead'] = 'Избери вид на база на податоци';
 $string['dataroot'] = 'Директориум за податоци';
 $string['datarootpermission'] = 'Дозвола за директориумот за податоци';
 $string['dbprefix'] = 'Префикс на табели';

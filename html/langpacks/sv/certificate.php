@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'sv', version '3.11'.
+ * Strings for component 'certificate', language 'sv', version '4.1'.
  *
  * @package     certificate
  * @category    string
@@ -126,6 +126,7 @@ $string['letter'] = 'Letter';
 $string['lockingoptions'] = 'Alternativ för låsning';
 $string['modulename'] = 'Certifikat';
 $string['modulename_help'] = 'Denna modul möjliggör dynamiskt skapade certifikat utifrån villkor uppsatta av handledaren.';
+$string['modulename_link'] = 'Certificate_module';
 $string['modulenameplural'] = 'Certifikat';
 $string['mycertificates'] = 'Mina certifikat';
 $string['nocertificates'] = 'Inga certifikat';

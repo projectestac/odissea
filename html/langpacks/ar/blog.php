@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ar', version '3.11'.
+ * Strings for component 'blog', language 'ar', version '4.1'.
  *
  * @package     blog
  * @category    string
@@ -29,18 +29,18 @@ $string['addnewentry'] = 'إضافة مشاركة جديدة';
 $string['addnewexternalblog'] = 'تسجيل مدونة خارجية';
 $string['assocdescription'] = 'إذا كنت تكتب عن وحدات مساق و/أو نشاط، فحددها هنا.';
 $string['associated'] = '{$a} مرتبطة';
-$string['associatewithcourse'] = 'مدونة عن المقرر الدراسي {$a->coursename}';
+$string['associatewithcourse'] = 'مدونة عن المساق {$a->coursename}';
 $string['associatewithmodule'] = 'مدونة عن {$a->modtype}: {$a->modname}';
 $string['association'] = 'ارتباط';
 $string['associations'] = 'ارتباطات';
-$string['associationunviewable'] = 'لا يمكن للآخرين مشاهدة هذه المشاركة حتى يتم ربطها بمقرر أو تغيير الحقل "نشر إلى"';
+$string['associationunviewable'] = 'لا يمكن للآخرين مشاهدة هذه المشاركة حتى يتم ربطها بمساق أو تغيير الحقل "نشر إلى"';
 $string['autotags'] = 'أضف هذه الوسوم';
 $string['autotags_help'] = 'أدخل واحد أو أكثر من الوسوم المحلية (مفصولة بفوارز) التي تريد إضافتها تلقائياً إلى كل مشاركة مدونة تم نسخها من المدونة الخارجية إلى مدونتك المحلية.';
 $string['backupblogshelp'] = 'في حالة تشغيله، سيتم تضمين المدونات في الحفظ الاحتياطي للموقع';
 $string['blockexternalstitle'] = 'المدونات الخارجية';
 $string['blog'] = 'المدونة';
 $string['blogaboutthis'] = 'مدونة عن هذا {$a->type}';
-$string['blogaboutthiscourse'] = 'إضافة مدخل عن هذا المقرر';
+$string['blogaboutthiscourse'] = 'إضافة مدخل عن هذا المساق';
 $string['blogaboutthismodule'] = 'إضافة مدخل عن هذا {$a}';
 $string['blogadministration'] = 'إدارة المدونة';
 $string['blogdeleteconfirm'] = 'حذف المدخل \'{$a}\' ؟';
@@ -54,22 +54,22 @@ $string['blogentriesbyuseraboutmodule'] = 'مشاركات المدونة عن ه
 $string['blogentrybyuser'] = 'المشاركات المكتوبة بواسطة {$a}';
 $string['blogpreferences'] = 'تفضيلات المدونة';
 $string['blogs'] = 'المدونات';
-$string['blogscourse'] = 'مدونات المقرر';
+$string['blogscourse'] = 'مدونات المساق';
 $string['blogssite'] = 'مدونات الموقع';
 $string['blogtags'] = 'وسوم المدونة';
-$string['cannotviewcourseblog'] = 'ليست لديك الصلاحيات المطلوبة لمعاينة المدونات في هذا المقرر';
-$string['cannotviewcourseorgroupblog'] = 'ليست لديك الصلاحيات المطلوبة لمعاينة المدونات في هذا المقرر/المجموعة';
+$string['cannotviewcourseblog'] = 'ليست لديك الصلاحيات المطلوبة لمعاينة المدونات في هذا المساق';
+$string['cannotviewcourseorgroupblog'] = 'ليست لديك الصلاحيات المطلوبة لمعاينة المدونات في هذا المساق/المجموعة';
 $string['cannotviewsiteblog'] = 'ليست لديك الصلاحيات المطلوبة لمعاينة كل مدونات الموقع';
 $string['cannotviewuserblog'] = 'لا تملك صلاحية قراءة مدونات المستخدم';
 $string['configexternalblogcrontime'] = 'كم مرة يتحقق مودل من المدونات الخارجية بحثاً عن تدوينات جديدة.';
 $string['configmaxexternalblogsperuser'] = 'عدد المدونات الخارجية المسموح للمستخدم بربطها بمدونة مودل الخاصة به.';
-$string['configuseblogassociations'] = 'تمكين ربط مدخلات المدونات بالمقررات الدراسية ووحدات المقررات الدراسية';
+$string['configuseblogassociations'] = 'تمكين ربط مدخلات المدونات بالمقررات ووحدات المقررات الدراسية';
 $string['configuseexternalblogs'] = 'تمكين المستخدمين من تحديد مغذيات مدونات خارجية. يتحقق مودل من هذه المغذيات بشكل دوري وينسخ المدخلات الجديدة إلى المدونة المحلية لذلك المستخدم.';
-$string['courseblog'] = 'مدونة المقرر الدراسي: {$a}';
-$string['courseblogdisable'] = 'تم تعطيل مدونات المقرر';
-$string['courseblogs'] = 'يستطيع المستخدمون رؤية مدونات من يشاركونهم في المقرر فقط';
+$string['courseblog'] = 'مدونة المساق: {$a}';
+$string['courseblogdisable'] = 'تم تعطيل مدونات المساق';
+$string['courseblogs'] = 'يستطيع المستخدمون رؤية مدونات من يشاركونهم في المساق فقط';
 $string['deleteblogassociations'] = 'حذف متعلقات المدونة';
-$string['deleteblogassociations_help'] = 'عند تأشيره فلن تعود مشاركات المدونة مرتبطة بهذا المقرر الدراسي أو أي من أنشطته وموارده. لن يتم حذف مدخلات المدونة نفسها.';
+$string['deleteblogassociations_help'] = 'عند تأشيره فلن تعود مشاركات المدونة مرتبطة بهذا المساق أو أي من أنشطته وموارده. لن يتم حذف مدخلات المدونة نفسها.';
 $string['deleteentry'] = 'حذف المشاركة';
 $string['deleteexternalblog'] = 'إلغاء تسجيل هذه المدونة الخارجية';
 $string['deleteotagswarn'] = 'هل أنت متأكد من رغبتك بإزالة هذه الوسوم من جميع مشاركات المدونة وإزالتها من النظام؟';
@@ -163,11 +163,11 @@ $string['publishto_help'] = 'لديك 3 خيارات:
 * شخصي (مسودة) - فقط أنت والإداريين يمكنهم رؤية هذه المداخلة
 * أي شخص على هذا الموقع - أي سخص مسجل في هذا الموقع يمكنه رؤية هذه المداخلة
 * أي شخص في العالم - يمكن لأي شخص، متضمناً الضيوف قراءة هذه المداخلة';
-$string['publishtocourse'] = 'المستخدمون المشتركون معك بالمقرر';
-$string['publishtocourseassoc'] = 'أعضاء المقرر المرتبط';
+$string['publishtocourse'] = 'المستخدمون المشتركون معك بالمساق';
+$string['publishtocourseassoc'] = 'أعضاء المساق المرتبط';
 $string['publishtocourseassocparam'] = 'أعضاء في {$a}';
 $string['publishtogroup'] = 'المستخدمون المشتركون معك في مجموعة';
-$string['publishtogroupassoc'] = 'أعضاء مجموعتك في المقرر المرتبط';
+$string['publishtogroupassoc'] = 'أعضاء مجموعتك في المساق المرتبط';
 $string['publishtogroupassocparam'] = 'أعضاء مجموعتك في {$a}';
 $string['publishtonoone'] = 'أنت (مسودة)';
 $string['publishtosite'] = 'أي شخص على هذا الموقع';
@@ -201,14 +201,14 @@ $string['viewallmodentries'] = 'عرض كل المدخلات حول هذا {$a->
 $string['viewallmyentries'] = 'عرض كافة تدويناتي';
 $string['viewblogentries'] = 'التدوينات حول هذا {$a->type}';
 $string['viewblogsfor'] = 'عرض كل التدوينات لـ...';
-$string['viewcourseblogs'] = 'معاينة كل التدوينات لهذا المقرر الدراسي';
-$string['viewentriesbyuseraboutcourse'] = 'معاينة التدوينات حول هذا المقرر الدراسي والتي من قِبَل {$a}';
+$string['viewcourseblogs'] = 'معاينة كل التدوينات لهذا المساق';
+$string['viewentriesbyuseraboutcourse'] = 'معاينة التدوينات حول هذا المساق والتي من قِبَل {$a}';
 $string['viewgroupblogs'] = 'عرض تدوينات المجموعة...';
 $string['viewgroupentries'] = 'تدوينات المجموعة';
 $string['viewmodblogs'] = 'المدونات لوحدة...';
 $string['viewmodentries'] = 'مدونات الوحدة';
 $string['viewmyentries'] = 'تدويناتي';
-$string['viewmyentriesaboutcourse'] = 'عرض تدويناتي حول هذا المقرر';
+$string['viewmyentriesaboutcourse'] = 'عرض تدويناتي حول هذا المساق';
 $string['viewmyentriesaboutmodule'] = 'عرض تدويناتي حول هذا {$a}';
 $string['viewsiteentries'] = 'عرض كل المشاركات';
 $string['viewuserentries'] = 'عرض كل تدوينات {$a}';

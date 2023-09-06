@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'ca', version '3.11'.
+ * Strings for component 'customcert', language 'ca', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -75,7 +75,6 @@ $string['fontsize_help'] = 'La mida de la lletra en punts.';
 $string['getcustomcert'] = 'Descarrega el certificat';
 $string['height'] = 'Alçària';
 $string['invalidcode'] = 'El codi proporcionat és no vàlid.';
-$string['invalidelementwidth'] = 'Afegiu un nombre positiu.';
 $string['invalidheight'] = 'L\'alçària ha de ser un número vàlid més gran que 0.';
 $string['invalidmargin'] = 'El marge ha de ser un número vàlid més gran que 0.';
 $string['invalidwidth'] = 'L\'amplada ha de ser un número vàlid més gran que 0.';
@@ -85,12 +84,14 @@ $string['loadtemplatemsg'] = 'Confirmeu que voleu carregar aquesta plantilla? Ai
 $string['managetemplates'] = 'Gestiona les plantilles';
 $string['modify'] = 'Modifica';
 $string['modulename'] = 'Certificat personalitzat';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['modulenameplural'] = 'Certificats personalitzats';
 $string['mycertificates'] = 'Els meus certificats';
 $string['mycertificatesdescription'] = 'Aquests són els certificats que us han emès, ja sigui per correu electrònic o descarregats manualment.';
 $string['name'] = 'Nom';
 $string['nocustomcerts'] = 'No hi ha certificats disponibles per a aquest curs.';
 $string['noimage'] = 'Sense imatge';
+$string['notemplates'] = 'No hi ha cap plantilla';
 $string['notissued'] = 'No s\'ha emès';
 $string['notverified'] = 'No s\'ha verificat';
 $string['options'] = 'Opcions';

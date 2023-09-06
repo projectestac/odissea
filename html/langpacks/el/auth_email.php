@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_email', language 'el', version '3.11'.
+ * Strings for component 'auth_email', language 'el', version '4.1'.
  *
  * @package     auth_email
  * @category    string
@@ -30,5 +30,5 @@ $string['auth_emailnoemail'] = 'Έγινε προσπάθεια να σας στ
 $string['auth_emailrecaptcha'] = 'Προσθέτει ένα στοιχείο φόρμας οπτικής/ηχητικής επιβεβαίωσης στη σελίδα εγγραφής για αυτο-καταχώρηση χρηστών με χρήση ηλε.ταχυδρομείου. Αυτό προστατεύει τον ιστότοπό σας από τους ανεπιθύμητους χρήστες. Για περισσότερες λεπτομέρειες, δείτε στο http://www.google.com/recaptcha.';
 $string['auth_emailrecaptcha_key'] = 'Ενεργοποίηση του στοιχείου reCAPTCHA';
 $string['auth_emailsettings'] = 'Ρυθμίσεις';
-$string['pluginname'] = 'Αυτο-καταχώρηση βασισμένη στο ηλε.ταχυδρομείο';
-$string['privacy:metadata'] = 'Το πρόσθετο «Αυθεντικοποίηση με βάση την διεύθυνση ηλε.ταχυδρομείου για αυτο-καταχώρηση» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['pluginname'] = 'Αυτο-καταχώρηση βάσει διεύθυνσης ηλε.ταχυδρομείου';
+$string['privacy:metadata'] = 'Το πρόσθετο αυθεντικοποίησης «Αυτο-καταχώρηση βάσει διεύθυνσης ηλε.ταχυδρομείου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

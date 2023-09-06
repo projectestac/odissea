@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_massaction', language 'pt', version '3.11'.
+ * Strings for component 'block_massaction', language 'pt', version '4.1'.
  *
  * @package     block_massaction
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['action_contentchangednotification'] = 'Enviar notificação de alteração do conteúdo';
 $string['action_delete'] = 'Apagar';
 $string['action_duplicate'] = 'Duplicar';
 $string['action_duplicatetocourse'] = 'Duplicar para outra disciplina';
@@ -58,7 +59,10 @@ $string['invalidcoursemodule'] = 'Módulo de disciplina inválido';
 $string['invalidmoduleid'] = 'ID do módulo inválido: {$a}';
 $string['jsonerror'] = 'Erro de codificação: formato JSON inválido';
 $string['keepsectionnum'] = 'Manter o número da secção original';
+$string['limittoenrolled'] = 'Limitar a lista de disciplinas às que o utilizador está inscrito';
+$string['limittoenrolled_description'] = 'Se ativar esta opção, a seleção disciplina da funcionalidade "Duplicar para outra disciplina" ficará limitada às disciplinas nas quais o utilizador está inscrito. É recomendado ativar nas instâncias com muitas disciplinas, porque não limitar as disciplinas provavelmente resultará em problemas de desempenho e tempos limite. A desativação desta opção é por sua conta e risco.';
 $string['massaction:addinstance'] = 'Adicionar um novo bloco de Ações em Massa';
+$string['massaction:sendcontentchangednotifications'] = 'Enviar notificação de alteração de conteúdo';
 $string['massaction:use'] = 'Usar o bloco de Ações em Massa';
 $string['modulename'] = 'Nome da atividade';
 $string['moduletype'] = 'Tipo de atividade';

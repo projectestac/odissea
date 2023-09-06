@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'ja', version '3.11'.
+ * Strings for component 'atto_image', language 'ja', version '4.1'.
  *
  * @package     atto_image
  * @category    string
@@ -43,7 +43,7 @@ $string['imageurlrequired'] = 'イメージにはURLが必要です。';
 $string['pluginname'] = 'イメージを挿入または編集する';
 $string['presentation'] = 'このイメージは装飾目的のみです。';
 $string['presentationoraltrequired'] = '装飾のみとマークされない限り、イメージには説明が必要です。';
-$string['preview'] = 'プレビュ';
+$string['preview'] = 'プレビュー';
 $string['privacy:metadata'] = 'atto_imageプラグインはいかなる個人データも保存しません。';
 $string['saveimage'] = 'イメージを保存する';
 $string['size'] = 'サイズ';

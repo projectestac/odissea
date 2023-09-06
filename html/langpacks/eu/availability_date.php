@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'eu', version '3.11'.
+ * Strings for component 'availability_date', language 'eu', version '4.1'.
  *
  * @package     availability_date
  * @category    string
@@ -31,13 +31,13 @@ $string['direction_before'] = 'Data';
 $string['direction_from'] = 'noiztik';
 $string['direction_label'] = 'Norabidea';
 $string['direction_until'] = 'noiz arte';
-$string['error_dateconflict'] = 'Gatazkak beste data murrizketekin';
+$string['error_dateconflict'] = 'Gatazkak dataren araberako beste eskuragarritasun baldintzekin';
 $string['full_from'] = '<strong>{$a}</strong> igaro ondoren.';
 $string['full_from_date'] = '<strong>{$a}</strong> edo ondoren';
 $string['full_until'] = '<strong>{$a}</strong> baino lehen.';
 $string['full_until_date'] = '<strong>{$a}</strong> amaitu baino lehen.';
-$string['pluginname'] = 'Dataren araberako baldintza';
-$string['privacy:metadata'] = 'Dataren araberako baldintza pluginak ez du datu pertsonalik biltzen.';
+$string['pluginname'] = 'Dataren araberako eskuragarritasun baldintza';
+$string['privacy:metadata'] = 'Dataren araberako eskuragarritasun baldintza pluginak ez du datu pertsonalik biltzen.';
 $string['short_from'] = 'Eskuragarri <strong>{$a}</strong>(e)tik aurrera';
 $string['short_from_date'] = 'Eskuragarri <strong>{$a}</strong>(e)tik aurrera';
 $string['short_until'] = 'Eskuragarri <strong>{$a}</strong>(e)ra arte';

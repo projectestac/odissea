@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'nl', version '3.11'.
+ * Strings for component 'choice', language 'nl', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'Wijzig en verwijder antwoorden';
 $string['choice:downloadresponses'] = 'Download antwoorden';
 $string['choice:readresponses'] = 'Bekijk antwoorden';
 $string['choice:view'] = 'Bekijk keuze-activiteit';
-$string['choiceactivityname'] = 'Keuze: {$a}';
 $string['choiceclose'] = 'Sta reacties toe tot';
-$string['choicecloseson'] = 'Keuze sluit op {$a}';
 $string['choicefull'] = 'Een of meer opties die je hebt geselecteerd zijn al vol. Jouw antwoord werd niet bewaard. Maak een nieuwe keuze.';
 $string['choicename'] = 'Naam keuze';
 $string['choiceopen'] = 'Sta reacties toe vanaf';
@@ -76,10 +74,12 @@ $string['indicator:cognitivedepth'] = 'Keuze cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Keuze activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Keuze cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de Choice-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Keuze sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Keuze activiteit.';
 $string['indicator:socialbreadthdef'] = 'Keuze sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de maatschappelijke betrokkenheid van de Choice-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, Alleen deelnemer, Deelnemer met anderen)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'Beperk';
 $string['limita'] = 'Limiet: {$a}';
 $string['limitanswers'] = 'Beperk het aantal toegelaten antwoorden';
@@ -99,6 +99,7 @@ Een keuze kan gebruikt worden
 * als een snelle bevraging om het denken over een onderwerp te stimuleren
 * om snel te testen of leerlingen iets begrepen hebben
 * om beslissingen door leerlingen mogelijk te maken, bijvoorbeeld door leerlingen te laten stemmen over de richting waarin de cursus zal evolueren';
+$string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Keuzes';
 $string['moveselectedusersto'] = 'Verplaats geselecteerde gebruikers naar...';
 $string['multiplenotallowederror'] = 'Meerdere antwoorden zijn niet toegestaan in deze keuze';

@@ -153,12 +153,14 @@ class player {
      * @param stdClass $config Configuration for H5P buttons.
      * @param bool $preventredirect Set to true in scripts that can not redirect (CLI, RSS feeds, etc.), throws exceptions
      * @param string $component optional moodle component to sent xAPI tracking
+     * @param bool $displayedit Whether the edit button should be displayed below the H5P content.
      *
      * @return string The embedable code to display a H5P file.
      */
     public static function display(string $url, \stdClass $config, bool $preventredirect = true,
-            string $component = ''): string {
-        global $OUTPUT;
+            string $component = '', bool $displayedit = false): string {
+        global $OUTPUT, $CFG;
+
         $params = [
                 'url' => $url,
                 'preventredirect' => $preventredirect,
@@ -175,6 +177,16 @@ class player {
 
         $template = new \stdClass();
         $template->embedurl = $fileurl->out(false);
+
+        if ($displayedit) {
+            list($originalfile, $h5p) = api::get_original_content_from_pluginfile_url($url, $preventredirect, true);
+            if ($originalfile) {
+                // Check if the user can edit this content.
+                if (api::can_edit_content($originalfile)) {
+                    $template->editurl = $CFG->wwwroot . '/h5p/edit.php?url=' . $url;
+                }
+            }
+        }
 
         $result = $OUTPUT->render_from_template('core_h5p/h5pembed', $template);
         $result .= self::get_resize_code();
@@ -305,6 +317,7 @@ class player {
 
         $systemcontext = \context_system::instance();
         $slug = $this->content['slug'] ? $this->content['slug'] . '-' : '';
+        $filename = "{$slug}{$this->content['id']}.h5p";
         // We have to build the right URL.
         // Depending the request was made through webservice/pluginfile.php or pluginfile.php.
         if (strpos($this->url, '/webservice/pluginfile.php')) {
@@ -314,7 +327,7 @@ class player {
                 \core_h5p\file_storage::EXPORT_FILEAREA,
                 '',
                 '',
-                "{$slug}{$this->content['id']}.h5p"
+                $filename
             );
         } else {
             // If the request is made by tokenpluginfile.php we need to indicates to generate a token for current user.
@@ -328,12 +341,17 @@ class player {
                 \core_h5p\file_storage::EXPORT_FILEAREA,
                 '',
                 '',
-                "{$slug}{$this->content['id']}.h5p",
+                $filename,
                 false,
                 $includetoken
             );
         }
 
+        // Get the required info from the export file to be able to get the export file by third apps.
+        $file = helper::get_export_info($filename, $url);
+        if ($file) {
+            $url->param('modified', $file['timemodified']);
+        }
         return $url;
     }
 
@@ -502,13 +520,16 @@ class player {
     /**
      * Return the info export file for Mobile App.
      *
-     * @return array
+     * @return array or null
      */
-    public function get_export_file(): array {
+    public function get_export_file(): ?array {
         // Get the export url.
         $exporturl = $this->get_export_settings(true);
         // Get the filename of the export url.
         $path = $exporturl->out_as_local_url();
+        // Check if the URL has parameters.
+        $parts = explode('?', $path);
+        $path = array_shift($parts);
         $parts = explode('/', $path);
         $filename = array_pop($parts);
         // Get the required info from the export file to be able to get the export file by third apps.

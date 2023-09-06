@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'gl', version '3.11'.
+ * Strings for component 'customcert', language 'gl', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['mycertificates'] = 'Os meus certificados';

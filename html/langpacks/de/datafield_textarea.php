@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'de', version '3.11'.
+ * Strings for component 'datafield_textarea', language 'de', version '4.1'.
  *
  * @package     datafield_textarea
  * @category    string
@@ -30,3 +30,4 @@ $string['maxbytes'] = 'Maximale Größe eingebetteter Dateien (Bytes)';
 $string['maxbytes_desc'] = 'Der Wert Null bedeutet unbegrenzt';
 $string['pluginname'] = 'Textbereich';
 $string['privacy:metadata'] = 'Die Feldkomponente \'Textbereich\' speichert keine personenbezogenen Daten. Es verwendet Tabellen von mod_data.';
+$string['sample'] = '<p>Dies ist ein Textbereich. Nutzer/innen können einen langen Text eingeben, der sich über mehrere Zeilen erstreckt.</p><p>Sie können die Größe Ihrer Textbereiche in Zeilen und Spalten auswählen. Der Text in einem Textbereich kann formatiert werden, z.B. <strong>fett</strong >. Der Text darf auch <a href="#"> Links </a> und Bilder enthalten.</p>';

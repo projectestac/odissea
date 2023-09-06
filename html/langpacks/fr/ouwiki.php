@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ouwiki', language 'fr', version '3.11'.
+ * Strings for component 'ouwiki', language 'fr', version '4.1'.
  *
  * @package     ouwiki
  * @category    string
@@ -35,7 +35,7 @@ $string['addnewsection1'] = 'Ajouter une nouvelle section';
 $string['advice_annotate'] = '<p>Annotez la page ci-dessous et cliquez sur <strong>Enregistrer</strong>.</p>
 <ul>
 <li>Pour annoter, cliquez sur un des marqueurs et saisir le texte.</li>
-<li>Les annotations peuvent être supprimées en enlevan t le texte ci-dessous.</li>
+<li>Les annotations peuvent être supprimées en enlevant le texte ci-dessous.</li>
 <li>Les numéros entre crochets font référence aux annotations.</li>
 </ul>';
 $string['advice_diff'] = 'L\'ancienne version est montrée à gauche<span class=\'accesshide\'> sous le titre Ancienne version</span>,

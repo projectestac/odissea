@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_sitenews', language 'ar', version '3.11'.
+ * Strings for component 'block_sitenews', language 'ar', version '4.1'.
  *
  * @package     block_sitenews
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['sitenews:addinstance'] = 'إضافة كتلة "أخبار الموقع" إلى المقرر الدراسي.';
+$string['sitenews:addinstance'] = 'إضافة كتلة "أخبار الموقع" إلى المساق.';
 $string['sitenews:myaddinstance'] = 'إضافة كتلة "أخبار الموقع" إلى صفحة البدء الخاصة بي.';

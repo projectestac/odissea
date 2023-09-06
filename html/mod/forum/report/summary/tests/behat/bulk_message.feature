@@ -19,8 +19,8 @@ Feature: Message users in the summary report
       | student1 | C1     | student        |
       | student2 | C1     | student        |
     And the following "activities" exist:
-      | activity | name   | description     | course | idnumber |
-      | forum    | forum1 | C1 first forum  | C1     | forum1   |
+      | activity | name   | course | idnumber |
+      | forum    | forum1 | C1     | forum1   |
     And the following forum discussions exist in course "Course 1":
       | user     | forum  | name        | message         |
       | teacher1 | forum1 | discussion1 | t1 earliest     |
@@ -41,7 +41,7 @@ Feature: Message users in the summary report
       | user     | course | role    |
       | student3 | C1     | student |
     When I am on the forum1 "forum activity" page logged in as teacher1
-    And I navigate to "Forum summary report" in current page administration
+    And I navigate to "Reports" in current page administration
     And I click on "Select 'Student 1'" "checkbox"
     And I click on "Select 'Student 3'" "checkbox"
     And I set the field "With selected users..." to "Send a message"
@@ -61,7 +61,7 @@ Feature: Message users in the summary report
   @javascript
   Scenario: Message all users
     When I am on the forum1 "forum activity" page logged in as teacher1
-    And I navigate to "Forum summary report" in current page administration
+    And I navigate to "Reports" in current page administration
     And I click on "Select all" "checkbox"
     And I set the field "With selected users..." to "Send a message"
     Then I should see "Send message to 3 people"
@@ -71,6 +71,6 @@ Feature: Message users in the summary report
     Given the following config values are set as admin:
       | messaging | 0 |
     When I am on the forum1 "forum activity" page logged in as teacher1
-    And I navigate to "Forum summary report" in current page administration
+    And I navigate to "Reports" in current page administration
     Then I should not see "With selected users..."
     And I should not see "Select all"

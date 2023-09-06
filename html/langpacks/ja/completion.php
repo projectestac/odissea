@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ja', version '3.11'.
+ * Strings for component 'completion', language 'ja', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = '評点達成';
+$string['achievingpassinggrade'] = '合格点達成';
 $string['activities'] = '活動';
 $string['activitiescompleted'] = '活動完了';
 $string['activitiescompletednote'] = '注意: 活動を上のリストに表示するには活動完了を設定する必要があります。';
@@ -36,6 +37,7 @@ $string['activityaggregation_any'] = '選択された活動のいずれかを完
 $string['activitycompletion'] = '活動完了';
 $string['activitycompletionupdated'] = '変更が保存されました。';
 $string['activitygradenotrequired'] = '評定未必須';
+$string['activitygradetopassnotset'] = 'この活動には合格するための有効な評点が設定されていません。活動設定の「評点」セクションで設定できます。';
 $string['affectedactivities'] = '変更は次の <b>{$a}</b> 件の活動またはリソースに影響します:';
 $string['aggregationmethod'] = '総計方法';
 $string['all'] = 'すべて';
@@ -63,10 +65,10 @@ $string['completion'] = '完了トラッキング';
 $string['completion-alt-auto-enabled'] = '状態に応じてシステムはこのアイテムに完了マークします: {$a}';
 $string['completion-alt-auto-fail'] = '完了: {$a} (合格点未到達)';
 $string['completion-alt-auto-n'] = '未完了: {$a}';
-$string['completion-alt-auto-n-override'] = '未完了: {$a->modname} ({$a->overrideuser} により設定)';
+$string['completion-alt-auto-n-override'] = '未完了: {$a->modname} ({$a->overrideuser} による設定)';
 $string['completion-alt-auto-pass'] = '完了: {$a} (合格点到達)';
 $string['completion-alt-auto-y'] = '完了: {$a}';
-$string['completion-alt-auto-y-override'] = '完了: {$a->modname} ({$a->overrideuser} により設定)';
+$string['completion-alt-auto-y-override'] = '完了: {$a->modname} ({$a->overrideuser} による設定)';
 $string['completion-alt-manual-enabled'] = 'ユーザはこのアイテムを手動で完了マークできます: {$a}';
 $string['completion-alt-manual-n'] = '未完了: {$a} 完了マークするには選択してください。';
 $string['completion-alt-manual-n-override'] = '未完了: {$a->modname} ({$a->overrideuser} による設定)  完了マークするには選択してください。';
@@ -80,6 +82,7 @@ $string['completion-y'] = '完了';
 $string['completion-y-override'] = '完了 ({$a} により設定)';
 $string['completion_automatic'] = '条件を満たした場合、活動完了を表示する';
 $string['completion_help'] = 'この設定を有効にした場合、コンディションに基づき手動または自動の活動完了がトラッキングされます。必要に応じて複数のコンディションを設定してください。その場合、すべてのコンディションに合致したときのみ活動が完了したとみなされます。';
+$string['completion_link'] = 'activity/completion';
 $string['completion_manual'] = 'ユーザが手動で活動を完了マークできる';
 $string['completion_none'] = '活動完了を表示しない';
 $string['completionactivitydefault'] = '活動デフォルトを使用する';
@@ -103,6 +106,9 @@ $string['completionnotenabledforcourse'] = 'このコースでは完了は有効
 $string['completionnotenabledforsite'] = 'このサイトでは完了は有効にされていません。';
 $string['completionondate'] = '日付';
 $string['completionondatevalue'] = 'コースが完了マークされる日付';
+$string['completionpassgrade'] = '合格点を必要とする';
+$string['completionpassgrade_desc'] = 'この活動を完了するには学生は合格点に達する必要があります。';
+$string['completionpassgrade_help'] = 'この設定を有効にした場合、学生が合格点に達した時点で活動は完了したとみなされます。';
 $string['completionsettingslocked'] = '完了設定ロック中';
 $string['completionupdated'] = '活動「 {$a} 」の完了が更新されました。';
 $string['completionusegrade'] = '評定を必要とする';
@@ -122,6 +128,7 @@ $string['coursecompleted'] = 'コース完了';
 $string['coursecompletedmessage'] = '<p>おめでとうございます!</p><p>あなたはコース <a href="{$a->courselink}">{$a->coursename}</a> を完了しました。</p>';
 $string['coursecompletion'] = 'コース完了';
 $string['coursecompletioncondition'] = 'コンディション: {$a}';
+$string['coursecompletionnavigation'] = 'コース完了3次ナビゲーション';
 $string['coursegrade'] = 'コース評定';
 $string['coursesavailable'] = '利用可能なコース';
 $string['coursesavailableexplaination'] = '注意: 上のリストに表示するにはコースのコース完了コンディションを設定する必要があります。';
@@ -133,13 +140,16 @@ $string['csvdownload'] = 'スプレッドシートフォーマットでダウン
 $string['datepassed'] = '合格日';
 $string['days'] = '日';
 $string['daysoftotal'] = '{$a->days} / {$a->total}';
+$string['daysuntilcompletion'] = '完了までの日数';
 $string['defaultcompletion'] = 'デフォルト活動完了';
 $string['defaultcompletionupdated'] = '変更が保存されました。';
 $string['deletecompletiondata'] = '完了データを削除する';
 $string['dependencies'] = '依存関係';
 $string['dependenciescompleted'] = '他のコースの完了';
 $string['detail_desc:receivegrade'] = '評定を受ける';
+$string['detail_desc:receivepassgrade'] = '合格点を取得する';
 $string['detail_desc:view'] = '閲覧する';
+$string['done'] = '完了';
 $string['editcoursecompletionsettings'] = 'コース完了設定を編集する';
 $string['enablecompletion'] = '完了トラッキングを有効にする';
 $string['enablecompletion_help'] = 'この設定を有効にした場合、活動完了コンディションが活動設定内に設定されます。また、コース完了コンディションも設定されます。ダッシュボードのコース概要に意味のあるデータを表示するため、この設定を有効にすることをお勧めします。';
@@ -157,6 +167,7 @@ $string['eventcoursecompletionupdated'] = 'コース完了が更新されまし�
 $string['eventcoursemodulecompletionupdated'] = 'コース活動完了が更新されました。';
 $string['eventdefaultcompletionupdated'] = 'コース活動完了のデフォルトが更新されました。';
 $string['excelcsvdownload'] = 'Excel互換フォーマットでダウンロードする (.csv)';
+$string['failed'] = '失敗';
 $string['fraction'] = '割合';
 $string['graderequired'] = '必須コース評点';
 $string['gradexrequired'] = '要求評点: {$a}';
@@ -193,6 +204,7 @@ $string['privacy:metadata:gradefinal'] = 'コース完了で取得した最終�
 $string['privacy:metadata:overrideby'] = '活動完了をオーバーライドした人のユーザIDです。';
 $string['privacy:metadata:reaggregate'] = 'コース完了が再合計されたか示します。';
 $string['privacy:metadata:timecompleted'] = 'コースが完了した日時です。';
+$string['privacy:metadata:timecreated'] = '活動完了が作成された日時です。';
 $string['privacy:metadata:timeenrolled'] = 'ユーザがコースに登録された日時です。';
 $string['privacy:metadata:timemodified'] = '活動完了が修正された日時です。';
 $string['privacy:metadata:timestarted'] = 'コースが開始された日時です。';
@@ -221,6 +233,8 @@ $string['selfcompletion'] = '自己完了';
 $string['showcompletionconditions'] = '活動完了コンディションを表示する';
 $string['showcompletionconditions_help'] = '活動完了コンディションは常に活動ページに表示されます。この設定ではコースページのそれぞれの活動の下にも活動完了コンディションを表示するかどうか決定します';
 $string['showinguser'] = 'ユーザの表示';
+$string['timecompleted'] = '完了日時';
+$string['todo'] = 'ToDo';
 $string['unenrolingfromcourse'] = 'コースから登録解除する';
 $string['unenrolment'] = '登録解除';
 $string['unit'] = 'ユニット';

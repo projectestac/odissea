@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'pt', version '3.11'.
+ * Strings for component 'qtype_essay', language 'pt', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -49,10 +49,10 @@ $string['graderinfoheader'] = 'Informação do avaliador';
 $string['maxbytes'] = 'Tamanho máximo do ficheiro';
 $string['maxwordlimit'] = 'Número máximo de palavras';
 $string['maxwordlimit_help'] = 'Se a resposta exigir que os alunos digitem texto, pode especificar o número máximo de palavras que o aluno poderá submeter.';
-$string['maxwordlimitboundary'] = 'O limite de palavras para esta pergunta é de {$a->limit} palavras e está  a tentar submeter {$a->count} palavras. Reduza sua resposta e tente novamente.';
+$string['maxwordlimitboundary'] = 'O limite de palavras para esta pergunta é de {$a->limit} palavras e está a tentar submeter {$a->count} palavras. Reduza o número de palavras da sua resposta e tente novamente.';
 $string['minwordlimit'] = 'Número mínimo de palavras';
 $string['minwordlimit_help'] = 'Se a resposta exigir que os alunos digitem texto, pode especificar o número mínimo de palavras que o aluno terá de submeter.';
-$string['minwordlimitboundary'] = 'Esta pergunta requer uma resposta com pelo menos {$a->limit} palavras e está a tentar submeter {$a->count} palavras. Aumente a sua resposta e tente novamente.';
+$string['minwordlimitboundary'] = 'Esta pergunta requer uma resposta com pelo menos {$a->limit} palavras e está a tentar submeter {$a->count} palavra(s). Aumente o número de palavras da sua resposta e tente novamente.';
 $string['mustattach'] = 'Quando é selecionada a opção "Sem texto online" ou as respostas são opcionais, tem de permitir pelo menos um anexo.';
 $string['mustrequire'] = 'Quando é selecionada a opção "Sem texto online" ou as respostas são opcionais, tem de exigir pelo menos um anexo.';
 $string['mustrequirefewer'] = 'Não pode exigir mais anexos do que aqueles que permite.';

@@ -19,7 +19,7 @@ Feature: View activity completion information for file resources
     And the following config values are set as admin:
       | displayoptions | 0,1,2,3,4,5,6 | resource |
     And I am on the "Course 1" course page logged in as teacher1
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     And I set the following fields to these values:
       | Enable completion tracking | Yes |
@@ -55,7 +55,7 @@ Feature: View activity completion information for file resources
       | activity | course | name   | display | defaultfilename                            | uploaded |
       | resource | C1     | Myfile | 1       | mod/resource/tests/fixtures/samplefile.txt | 1        |
     And I am on "Course 1" course homepage with editing mode on
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     And I set the field "Show activity completion conditions" to "Yes"
     And I press "Save and display"
@@ -82,7 +82,7 @@ Feature: View activity completion information for file resources
     Given the following "activities" exist:
       | activity | course | name   | display | defaultfilename                            | uploaded |
       | resource | C1     | Myfile | 1       | mod/resource/tests/fixtures/samplefile.txt | 1        |
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     And I set the field "Show activity completion conditions" to "Yes"
     And I press "Save and display"

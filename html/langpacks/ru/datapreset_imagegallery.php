@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datapreset_imagegallery', language 'ru', version '3.11'.
+ * Strings for component 'datapreset_imagegallery', language 'ru', version '4.1'.
  *
  * @package     datapreset_imagegallery
  * @category    string
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'Галерея изображений';
+$string['modulename_help'] = 'Используйте эту заготовку для коллекции изображений.';
 $string['pluginname'] = 'Галерея изображений';
 $string['privacy:metadata'] = 'Плагин заготовки базы данных «Галерея изображений» не хранит никаких персональных данных.';

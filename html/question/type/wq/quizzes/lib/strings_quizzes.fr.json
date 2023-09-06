@@ -586,8 +586,8 @@
 		
 		"evaluate_keyword": "évaluer",
 		
-		"home_getting_started_welcome_header_text": "Bienvenue à WirisQuizz 4.7.0",
-        "home_getting_started_welcome_description_text": "Bonjour, nous avons intégré une section de démarrage dans notre menu qui vous aidera à en savoir plus sur WirisQuizzes en accédant à notre documentation, nos formations et nos actualités.",
+		"home_getting_started_welcome_header_text": "Présentation de WirisQuizzes 4.8.0 : maintenant avec des réponses graphiques manuscrites",
+        "home_getting_started_welcome_description_text": "Nous sommes ravis de présenter un nouveau type de réponse qui permet à vos élèves de répondre en écrivant un graphique à la main. Pour en savoir plus sur cette fonctionnalité, consultez nos notes de version et notre documentation. Nous espérons que vos élèves et vous apprécierez ce nouvel ajout à WirisQuizzes !",
         "home_getting_started_release_notes_button_text": "Notes de version",
         "home_getting_give_us_feedback_button_text": "Faites-nous part de vos commentaires",
         "home_getting_started_create_question_header_text": "Comment créer votre première question",
@@ -603,7 +603,15 @@
         "home_getting_started_contact_us_button_text": "Contactez-nous",
         "home_getting_started_visit_our_webpage_button_text": "Visitez notre site Internet",
         "home_getting_started_report_an_issue_button_text": "Signaler un problème",
-		"home_getting_started_list_button_text": "Démarrage"
+		"home_getting_started_list_button_text": "Démarrage",
+
+		"quizzes_studio_home_answer_type_sketch_label": "Esquisser",
+		"quizzes_studio_home_initial_content_description_sketch": "Il s’agit de l’état initial du contenu de l’éditeur graphique qui s’affichera à vos élèves lorsqu’ils répondront à la question. N’oubliez pas que la barre d’outils des élèves ne présentera que des boutons d’écriture manuscrite et de suppression. Utilisez la fonction « Tester cette question » afin de vérifier à quoi cela ressemblera.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_1": "Saisissez la bonne réponse pour cette question. Vos élèves utiliseront l’outil d’écriture manuscrite pour esquisser leur solution : nous avons donc défini une tolérance minimale pour les réponses légèrement inexactes. Vous pouvez ajuster cet aspect en cliquant sur « Options de validation ».",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Utilisez le bouton « Tester cette question » afin de vérifier ce que verront vos élèves.",
+		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Esquisser de même",
+		"quizzes_demo_sketch_title_menu" : "Esquisser",
+		"home_getting_started_documentation_button_text" : "Documentation"
 	}
 }
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'it', version '3.11'.
+ * Strings for component 'webservice', language 'it', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'Protocolli Web service disponibili';
 $string['addaservice'] = 'Aggiungi servizio';
 $string['addcapabilitytousers'] = 'Verifica i privilegi degli utenti';
 $string['addcapabilitytousersdescription'] = 'Per usare i web service, gli utenti devono avere i privilegi: \'/webservice:createtoken\' ed il privilegio corrispondente al protocollo in uso, ad esempio webservice/rest:use, \'webservice/soap:use\'. È possibile creare un ruolo \'Web service\' con gli opportuni privilegi ed assegnare questo ruolo all\'utente web service a livello di sistema.';
+$string['addexternalservice'] = 'Aggiungi servizio esterno';
 $string['addfunction'] = 'Aggiungi funzione';
 $string['addfunctionhelp'] = 'Selezionare la funzione da aggiungere al servizio';
 $string['addfunctions'] = 'Aggiungi funzione';
@@ -61,14 +62,16 @@ $string['default'] = 'Default a "{$a}"';
 $string['deleteaservice'] = 'Servizio di default';
 $string['deleteservice'] = 'Elimina il servizio: {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'Eliminando un servizio si eliminano anche i token associati al servizio stesso. Sei sicuro di voler eliminare il servizio esterno "{$a}"?';
+$string['deletetoken'] = 'Elimina token';
 $string['deletetokenconfirm'] = 'Sei sicuro di eliminare il token web service di <strong>{$a->user}</strong> relativo al servizio <strong>{$a->service}</strong>?';
+$string['deprecated'] = 'Deprecato';
 $string['disabledwarning'] = 'Tutti i protocolli web service sono disabilitati. L\'impostazione "Abilita Web service" si trova nelle Funzionalità avanzate.';
 $string['doc'] = 'Documentazione';
 $string['docaccessrefused'] = 'Non sei autorizzato a visualizzare la documentazione di questo token.';
-$string['documentation'] = 'documentazione web service';
 $string['downloadfiles'] = 'Può scaricare file';
 $string['downloadfiles_help'] = 'Qualsiasi utente potrà scaricare file tramite le chiavi di sicurezza. I file scaricabili sono limitati a quelli che gli utenti possono effettivamente scaricare';
 $string['editaservice'] = 'Modifica servizio';
+$string['editexternalservice'] = 'Modifica servizio esterno';
 $string['editservice'] = 'Modifica il servizio: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Abilitato';
 $string['enabledocumentation'] = 'Abilita documentazione per sviluppatori';

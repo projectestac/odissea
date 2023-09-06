@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'it', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'it', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -38,6 +38,7 @@ $string['cbmgrades_help'] = 'Con il Certainty Based Marking (CBM) rispondere cor
 Le risposte sbagliate con elevato livello di confidenza abbassano la valutazione più delle risposte sbagliate con basso livello di confidenza, cosa che può produrre valutazioni finali negative.
 
 **Accuratezza** è la percentuale di risposte esatte senza la confidenza ma pesata sul punteggio massimo di ciascuna domanda. Distinguere correttamente le risposte più o meno corrette fornisce una valutazione più alta rispetto a scegliere lo stesso livello di confidenza per tutte le domande, cosa che si riflette nel **CBM Bonus**.  **Accuratezza** + **CBM Bonus** fornisce una misura della conoscenza più accurata rispetto a **Accuratezza**. Le risposte sbagliate con elevato livello di confidenza possono produrre bonus negativi, un richiamo a rivedere attentamente ciò che realmente si sa e cosa non si sa.';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'Punteggio CBM {$a}';
 $string['certainty'] = 'Confidenza';
 $string['certainty-1'] = 'Nessuna idea';
@@ -53,6 +54,7 @@ Punteggio se sbagliata | 0 | -2 | -6
 Probabilità se corretta | <67% | 67-80% | >80%
 
 I punteggi migliori si ottengono riconoscendo poca confidenza. Ad esempio se si pensa di avere più di una probabilità su tre di essere in errore, si dovrebbe inserire C=1 per evitare il rischio di punteggi negativi.';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = 'Nessuna idea';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';

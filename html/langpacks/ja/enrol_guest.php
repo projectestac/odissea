@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'ja', version '3.11'.
+ * Strings for component 'enrol_guest', language 'ja', version '4.1'.
  *
  * @package     enrol_guest
  * @category    string
@@ -43,5 +43,6 @@ $string['showhint_desc'] = 'ゲストアクセスパスワードの最初の文�
 $string['status'] = 'ゲストアクセスを許可する';
 $string['status_desc'] = 'デフォルトで一時的なゲストアクセスを許可します。';
 $string['status_help'] = 'この設定では登録なしにユーザがコースにゲストとしてアクセスできるかどうか決定します。';
+$string['status_link'] = 'enrol/guest';
 $string['usepasswordpolicy'] = 'パスワードポリシーを使用する';
 $string['usepasswordpolicy_desc'] = '標準パスワードポリシーをゲストアクセスのパスワードに使用します。';

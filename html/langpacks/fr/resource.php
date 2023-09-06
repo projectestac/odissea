@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'fr', version '3.11'.
+ * Strings for component 'resource', language 'fr', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -52,6 +52,7 @@ $string['displayselect_help'] = 'Ce réglage, ainsi que le type de fichier et la
 * Fenêtre surgissante : le fichier est affiché dans une nouvelle fenêtre de navigateur sans menus ni barre d\'adresse
 * Dans un cadre : le fichier est affiché dans un cadre en dessous de la barre de navigation et de la description du fichier
 * Nouvelle fenêtre : le fichier est affiché dans une nouvelle fenêtre du navigateur, avec menus et barre d\'adresse';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = 'Choisir le type d\'affichage. Tous les types ne sont pas adéquats pour tous les fichiers.';
 $string['dnduploadresource'] = 'Créer une ressource fichier';
 $string['encryptedcode'] = 'Code chiffré';
@@ -65,10 +66,12 @@ $string['indicator:cognitivedepth'] = 'Fichier : aspect cognitif';
 $string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Fichier.';
 $string['indicator:cognitivedepthdef'] = 'Fichier : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « Fichier » (niveaux : pas de vue, vue).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Fichier : aspect social';
 $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Fichier.';
 $string['indicator:socialbreadthdef'] = 'Fichier : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « Fichier » (niveaux : pas de participation, participant seul).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migration des anciens fichiers du cours';
 $string['legacyfilesactive'] = 'Activée';
 $string['legacyfilesdone'] = 'Terminée';
@@ -83,6 +86,7 @@ Un fichier peut être utilisé pour
 * partager un diaporama avec une classe
 * inclure un mini site web comme ressource de cours
 * fournir des fichiers partiellement terminés que les participants doivent modifier avec un logiciel et remettre terminés comme devoir';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Fichiers';
 $string['notmigrated'] = 'Cet ancien type de ressource ({$a}) n\'a pas été copié.';
 $string['optionsheader'] = 'Afficher les options';

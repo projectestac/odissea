@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'ja', version '3.11'.
+ * Strings for component 'journal', language 'ja', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -58,6 +58,7 @@ $string['journalquestion'] = '日誌質問';
 $string['mailsubject'] = '日誌フィードバック';
 $string['modulename'] = '日誌';
 $string['modulename_help'] = '日誌活動により、教師は特定のトピックに関して学生からフィードバックを取得することができます。';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = '日誌';
 $string['needsregrade'] = '最後にフィードバックが保存されてからエントリが変更されました。';
 $string['newjournalentries'] = '新しい日誌エントリ';

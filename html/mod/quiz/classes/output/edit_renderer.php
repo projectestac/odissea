@@ -25,8 +25,11 @@
 namespace mod_quiz\output;
 defined('MOODLE_INTERNAL') || die();
 
+use core_question\local\bank\question_version_status;
+use mod_quiz\question\bank\qbank_helper;
 use \mod_quiz\structure;
 use \html_writer;
+use qbank_previewquestion\question_preview_options;
 use renderable;
 
 /**
@@ -46,19 +49,17 @@ class edit_renderer extends \plugin_renderer_base {
      *
      * @param \quiz $quizobj object containing all the quiz settings information.
      * @param structure $structure object containing the structure of the quiz.
-     * @param \question_edit_contexts $contexts the relevant question bank contexts.
+     * @param \core_question\local\bank\question_edit_contexts $contexts the relevant question bank contexts.
      * @param \moodle_url $pageurl the canonical URL of this page.
      * @param array $pagevars the variables from {@link question_edit_setup()}.
      * @return string HTML to output.
      */
     public function edit_page(\quiz $quizobj, structure $structure,
-            \question_edit_contexts $contexts, \moodle_url $pageurl, array $pagevars) {
+        \core_question\local\bank\question_edit_contexts $contexts, \moodle_url $pageurl, array $pagevars) {
         $output = '';
 
         // Page title.
-        $output .= $this->heading_with_help(get_string('editingquizx', 'quiz',
-                format_string($quizobj->get_quiz_name())), 'editingquiz', 'quiz', '',
-                get_string('basicideasofquiz', 'quiz'), 2);
+        $output .= $this->heading(get_string('questions', 'quiz'));
 
         // Information at the top.
         $output .= $this->quiz_state_warnings($structure);
@@ -119,7 +120,8 @@ class edit_renderer extends \plugin_renderer_base {
                 $thiscontext->id,
                 $pagevars['cat'],
                 $pageurl->out_as_local_url(true),
-                $pageurl->param('cmid')
+                $pageurl->param('cmid'),
+                \core\plugininfo\qbank::is_plugin_enabled(\qbank_managecategories\helper::PLUGINNAME),
             ]);
 
             // Include the question chooser.
@@ -367,7 +369,7 @@ class edit_renderer extends \plugin_renderer_base {
         if ($structure->get_section_count() == 1) {
             $class .= ' only-one-section';
         }
-        return html_writer::start_tag('ul', array('class' => $class));
+        return html_writer::start_tag('ul', array('class' => $class, 'role' => 'presentation'));
     }
 
     /**
@@ -394,24 +396,32 @@ class edit_renderer extends \plugin_renderer_base {
             $sectionstyle = ' only-has-one-slot';
         }
 
+        if ($section->heading) {
+            $sectionheadingtext = format_string($section->heading);
+            $sectionheading = html_writer::span($sectionheadingtext, 'instancesection');
+        } else {
+            // Use a sr-only default section heading, so we don't end up with an empty section heading.
+            $sectionheadingtext = get_string('sectionnoname', 'quiz');
+            $sectionheading = html_writer::span($sectionheadingtext, 'instancesection sr-only');
+        }
+
         $output .= html_writer::start_tag('li', array('id' => 'section-'.$section->id,
-            'class' => 'section main clearfix'.$sectionstyle, 'role' => 'region',
-            'aria-label' => $section->heading));
+            'class' => 'section main clearfix'.$sectionstyle, 'role' => 'presentation',
+            'data-sectionname' => $sectionheadingtext));
 
         $output .= html_writer::start_div('content');
 
         $output .= html_writer::start_div('section-heading');
 
-        $headingtext = $this->heading(html_writer::span(
-                html_writer::span($section->heading, 'instancesection'), 'sectioninstance'), 3);
+        $headingtext = $this->heading(html_writer::span($sectionheading, 'sectioninstance'), 3);
 
         if (!$structure->can_be_edited()) {
             $editsectionheadingicon = '';
         } else {
             $editsectionheadingicon = html_writer::link(new \moodle_url('#'),
-                $this->pix_icon('t/editstring', get_string('sectionheadingedit', 'quiz', $section->heading),
+                $this->pix_icon('t/editstring', get_string('sectionheadingedit', 'quiz', $sectionheadingtext),
                         'moodle', array('class' => 'editicon visibleifjs')),
-                        array('class' => 'editing_section', 'data-action' => 'edit_section_title'));
+                        array('class' => 'editing_section', 'data-action' => 'edit_section_title', 'role' => 'button'));
         }
         $output .= html_writer::div($headingtext . $editsectionheadingicon, 'instancesectioncontainer');
 
@@ -482,7 +492,7 @@ class edit_renderer extends \plugin_renderer_base {
      * @return string HTML to output.
      */
     public function section_remove_icon($section) {
-        $title = get_string('sectionheadingremove', 'quiz', $section->heading);
+        $title = get_string('sectionheadingremove', 'quiz', format_string($section->heading));
         $url = new \moodle_url('/mod/quiz/edit.php',
                 array('sesskey' => sesskey(), 'removesection' => '1', 'sectionid' => $section->id));
         $image = $this->pix_icon('t/delete', $title);
@@ -497,7 +507,7 @@ class edit_renderer extends \plugin_renderer_base {
      *
      * @param structure $structure object containing the structure of the quiz.
      * @param \stdClass $section information about the section.
-     * @param \question_edit_contexts $contexts the relevant question bank contexts.
+     * @param \core_question\local\bank\question_edit_contexts $contexts the relevant question bank contexts.
      * @param array $pagevars the variables from {@link \question_edit_setup()}.
      * @param \moodle_url $pageurl the canonical URL of this page.
      * @return string HTML to output.
@@ -517,7 +527,7 @@ class edit_renderer extends \plugin_renderer_base {
      *
      * @param structure $structure object containing the structure of the quiz.
      * @param int $slot which slot we are outputting.
-     * @param \question_edit_contexts $contexts the relevant question bank contexts.
+     * @param \core_question\local\bank\question_edit_contexts $contexts the relevant question bank contexts.
      * @param array $pagevars the variables from {@link \question_edit_setup()}.
      * @param \moodle_url $pageurl the canonical URL of this page.
      * @return string HTML to output.
@@ -550,7 +560,7 @@ class edit_renderer extends \plugin_renderer_base {
      *
      * @param structure $structure object containing the structure of the quiz.
      * @param int $slot the first slot on the page we are outputting.
-     * @param \question_edit_contexts $contexts the relevant question bank contexts.
+     * @param \core_question\local\bank\question_edit_contexts $contexts the relevant question bank contexts.
      * @param array $pagevars the variables from {@link \question_edit_setup()}.
      * @param \moodle_url $pageurl the canonical URL of this page.
      * @return string HTML to output.
@@ -584,19 +594,18 @@ class edit_renderer extends \plugin_renderer_base {
      * @param structure $structure object containing the structure of the quiz.
      * @param int $page the page number that this menu will add to.
      * @param \moodle_url $pageurl the canonical URL of this page.
-     * @param \question_edit_contexts $contexts the relevant question bank contexts.
+     * @param \core_question\local\bank\question_edit_contexts $contexts the relevant question bank contexts.
      * @param array $pagevars the variables from {@link \question_edit_setup()}.
      * @return string HTML to output.
      */
     public function add_menu_actions(structure $structure, $page, \moodle_url $pageurl,
-            \question_edit_contexts $contexts, array $pagevars) {
+            \core_question\local\bank\question_edit_contexts $contexts, array $pagevars) {
 
         $actions = $this->edit_menu_actions($structure, $page, $pageurl, $pagevars);
         if (empty($actions)) {
             return '';
         }
         $menu = new \action_menu();
-        $menu->set_alignment(\action_menu::TR, \action_menu::TR);
         $menu->set_constraint('.mod-quiz-edit-content');
         $trigger = html_writer::tag('span', get_string('add', 'quiz'), array('class' => 'add-menu'));
         $menu->set_menu_trigger($trigger);
@@ -650,7 +659,7 @@ class edit_renderer extends \plugin_renderer_base {
                 'addonpage' => $page, 'appendqnumstring' => 'addquestion');
 
         $actions['addaquestion'] = new \action_menu_link_secondary(
-            new \moodle_url('/question/addquestion.php', $params),
+            new \moodle_url('/question/bank/editquestion/addquestion.php', $params),
             new \pix_icon('t/add', $str->addaquestion, 'moodle', array('class' => 'iconsmall', 'title' => '')),
             $str->addaquestion, array('class' => 'cm-edit-action addquestion', 'data-action' => 'addquestion')
         );
@@ -721,7 +730,7 @@ class edit_renderer extends \plugin_renderer_base {
 
         return html_writer::tag('form', html_writer::div($output),
                 array('class' => 'addnewquestion', 'method' => 'post',
-                        'action' => new \moodle_url('/question/addquestion.php')));
+                        'action' => new \moodle_url('/question/bank/editquestion/addquestion.php')));
     }
 
     /**
@@ -732,7 +741,10 @@ class edit_renderer extends \plugin_renderer_base {
      * @param \moodle_url $pageurl the canonical URL of this page.
      * @return string HTML to output.
      */
-    public function question(structure $structure, $slot, \moodle_url $pageurl) {
+    public function question(structure $structure, int $slot, \moodle_url $pageurl) {
+        // Get the data required by the question_slot template.
+        $slotid = $structure->get_slot_id_for_slot($slot);
+
         $output = '';
         $output .= html_writer::start_tag('div');
 
@@ -740,50 +752,98 @@ class edit_renderer extends \plugin_renderer_base {
             $output .= $this->question_move_icon($structure, $slot);
         }
 
-        $output .= html_writer::start_div('mod-indent-outer');
-        $checkbox = new \core\output\checkbox_toggleall($this->togglegroup, false, [
-            'id' => 'selectquestion-' . $structure->get_displayed_number_for_slot($slot),
-            'name' => 'selectquestion[]',
-            'value' => $structure->get_displayed_number_for_slot($slot),
-            'classes' => 'select-multiple-checkbox',
-        ]);
-        $output .= $this->render($checkbox);
-        $output .= $this->question_number($structure->get_displayed_number_for_slot($slot));
+        $data = [
+            'slotid' => $slotid,
+            'canbeedited' => $structure->can_be_edited(),
+            'checkbox' => $this->get_checkbox_render($structure, $slot),
+            'questionnumber' => $this->question_number($structure->get_displayed_number_for_slot($slot)),
+            'questionname' => $this->get_question_name_for_slot($structure, $slot, $pageurl),
+            'questionicons' => $this->get_action_icon($structure, $slot, $pageurl),
+            'questiondependencyicon' => ($structure->can_be_edited() ? $this->question_dependency_icon($structure, $slot) : ''),
+            'versionselection' => false,
+            'draftversion' => $structure->get_question_in_slot($slot)->status == question_version_status::QUESTION_STATUS_DRAFT,
+        ];
 
-        // This div is used to indent the content.
-        $output .= html_writer::div('', 'mod-indent');
+        $data['versionoptions'] = [];
+        if ($structure->get_slot_by_number($slot)->qtype !== 'random') {
+            $data['versionselection'] = true;
+            $data['versionoption'] = $structure->get_version_choices_for_slot($slot);
+            $this->page->requires->js_call_amd('mod_quiz/question_slot', 'init', [$slotid]);
+        }
 
+        // Render the question slot template.
+        $output .= $this->render_from_template('mod_quiz/question_slot', $data);
+
+        $output .= html_writer::end_tag('div');
+
+        return $output;
+    }
+
+    /**
+     * Get the checkbox render.
+     *
+     * @param structure $structure object containing the structure of the quiz.
+     * @param int $slot the slot on the page we are outputting.
+     * @return string HTML to output.
+     */
+    public function get_checkbox_render(structure $structure, int $slot) : string {
+        $questionslot = $structure->get_displayed_number_for_slot($slot);
+        $checkbox = new \core\output\checkbox_toggleall($this->togglegroup, false,
+            [
+                'id' => 'selectquestion-' . $questionslot,
+                'name' => 'selectquestion[]',
+                'value' => $questionslot,
+                'classes' => 'select-multiple-checkbox',
+                'label' => get_string('selectquestionslot', 'quiz', $questionslot),
+                'labelclasses' => 'sr-only',
+            ]);
+
+        return $this->render($checkbox);
+    }
+
+    /**
+     * Get the question name for the slot.
+     *
+     * @param structure $structure object containing the structure of the quiz.
+     * @param int $slot the slot on the page we are outputting.
+     * @param \moodle_url $pageurl the canonical URL of this page.
+     * @return string HTML to output.
+     */
+    public function get_question_name_for_slot(structure $structure, int $slot, \moodle_url $pageurl) : string {
         // Display the link to the question (or do nothing if question has no url).
-        if ($structure->get_question_type_for_slot($slot) == 'random') {
+        if ($structure->get_question_type_for_slot($slot) === 'random') {
             $questionname = $this->random_question($structure, $slot, $pageurl);
         } else {
             $questionname = $this->question_name($structure, $slot, $pageurl);
         }
 
-        // Start the div for the activity title, excluding the edit icons.
-        $output .= html_writer::start_div('activityinstance');
-        $output .= $questionname;
+        return $questionname;
+    }
 
-        // Closing the tag which contains everything but edit icons. Content part of the module should not be part of this.
-        $output .= html_writer::end_tag('div'); // .activityinstance.
-
+    /**
+     * Get the action icons render.
+     *
+     * @param structure $structure object containing the structure of the quiz.
+     * @param int $slot the slot on the page we are outputting.
+     * @param \moodle_url $pageurl the canonical URL of this page.
+     * @return string HTML to output.
+     */
+    public function get_action_icon(structure $structure, int $slot, \moodle_url $pageurl) : string {
         // Action icons.
+        $qtype = $structure->get_question_type_for_slot($slot);
+        $slotinfo = $structure->get_slot_by_number($slot);
         $questionicons = '';
-        $questionicons .= $this->question_preview_icon($structure->get_quiz(), $structure->get_question_in_slot($slot));
-        if ($structure->can_be_edited()) {
+        if ($qtype !== 'random') {
+            $questionicons .= $this->question_preview_icon($structure->get_quiz(),
+                    $structure->get_question_in_slot($slot),
+                    null, null, $slotinfo->requestedversion ?: question_preview_options::ALWAYS_LATEST);
+        }
+        if ($structure->can_be_edited() && $structure->has_use_capability($slot)) {
             $questionicons .= $this->question_remove_icon($structure, $slot, $pageurl);
         }
         $questionicons .= $this->marked_out_of_field($structure, $slot);
-        $output .= html_writer::span($questionicons, 'actions'); // Required to add js spinner icon.
-        if ($structure->can_be_edited()) {
-            $output .= $this->question_dependency_icon($structure, $slot);
-        }
 
-        // End of indentation div.
-        $output .= html_writer::end_tag('div');
-        $output .= html_writer::end_tag('div');
-
-        return $output;
+        return $questionicons;
     }
 
     /**
@@ -816,13 +876,21 @@ class edit_renderer extends \plugin_renderer_base {
      * Render the preview icon.
      *
      * @param \stdClass $quiz the quiz settings from the database.
-     * @param \stdClass $question data from the question and quiz_slots tables.
+     * @param \stdClass $questiondata which question to preview.
+     *      If ->questionid is set, that is used instead of ->id.
      * @param bool $label if true, show the preview question label after the icon
      * @param int $variant which question variant to preview (optional).
+     * @param int $restartversion version to use when restarting the preview
      * @return string HTML to output.
      */
-    public function question_preview_icon($quiz, $question, $label = null, $variant = null) {
-        $url = quiz_question_preview_url($quiz, $question, $variant);
+    public function question_preview_icon($quiz, $questiondata, $label = null, $variant = null, $restartversion = null) {
+        $question = clone($questiondata);
+        if (isset($question->questionid)) {
+
+            $question->id = $question->questionid;
+        }
+
+        $url = quiz_question_preview_url($quiz, $question, $variant, $restartversion);
 
         // Do we want a label?
         $strpreviewlabel = '';
@@ -835,7 +903,7 @@ class edit_renderer extends \plugin_renderer_base {
         $image = $this->pix_icon('t/preview', $strpreviewquestion);
 
         $action = new \popup_action('click', $url, 'questionpreview',
-                                        question_preview_popup_params());
+                \qbank_previewquestion\helper::question_preview_popup_params());
 
         return $this->action_link($url, $image . $strpreviewlabel, $action,
                 array('title' => $strpreviewquestion, 'class' => 'preview'));
@@ -945,9 +1013,9 @@ class edit_renderer extends \plugin_renderer_base {
         $output = '';
 
         $question = $structure->get_question_in_slot($slot);
-        $editurl = new \moodle_url('/question/question.php', array(
+        $editurl = new \moodle_url('/question/bank/editquestion/question.php', array(
                 'returnurl' => $pageurl->out_as_local_url(),
-                'cmid' => $structure->get_cmid(), 'id' => $question->id));
+                'cmid' => $structure->get_cmid(), 'id' => $question->questionid));
 
         $instancename = quiz_question_tostring($question);
 
@@ -980,15 +1048,14 @@ class edit_renderer extends \plugin_renderer_base {
      * @return string HTML to output.
      */
     public function random_question(structure $structure, $slotnumber, $pageurl) {
-
         $question = $structure->get_question_in_slot($slotnumber);
         $slot = $structure->get_slot_by_number($slotnumber);
-        $slottags = $structure->get_slot_tags_for_slot_id($slot->id);
         $editurl = new \moodle_url('/mod/quiz/editrandom.php',
                 array('returnurl' => $pageurl->out_as_local_url(), 'slotid' => $slot->id));
 
         $temp = clone($question);
         $temp->questiontext = '';
+        $temp->name = qbank_helper::describe_random_question($slot);
         $instancename = quiz_question_tostring($temp);
 
         $configuretitle = get_string('configurerandomquestion', 'quiz');
@@ -998,21 +1065,26 @@ class edit_renderer extends \plugin_renderer_base {
                 'class' => 'icon activityicon', 'alt' => ' ', 'role' => 'presentation'));
 
         $editicon = $this->pix_icon('t/edit', $configuretitle, 'moodle', array('title' => ''));
-        $qbankurlparams = array(
+        $qbankurlparams = [
             'cmid' => $structure->get_cmid(),
-            'cat' => $question->category . ',' . $question->contextid,
-            'recurse' => !empty($question->questiontext)
-        );
+            'cat' => $slot->category . ',' . $slot->contextid,
+            'recurse' => $slot->randomrecurse,
+        ];
 
+        $slottags = [];
+        if (isset($slot->randomtags)) {
+            $slottags = $slot->randomtags;
+        }
         foreach ($slottags as $index => $slottag) {
-            $qbankurlparams["qtagids[{$index}]"] = $slottag->tagid;
+            $slottag = explode(',', $slottag);
+            $qbankurlparams["qtagids[{$index}]"] = $slottag[0];
         }
 
         // If this is a random question, display a link to show the questions
         // selected from in the question bank.
         $qbankurl = new \moodle_url('/question/edit.php', $qbankurlparams);
         $qbanklink = ' ' . \html_writer::link($qbankurl,
-                get_string('seequestions', 'quiz'), array('class' => 'mod_quiz_random_qbank_link'));
+                        get_string('seequestions', 'quiz'), array('class' => 'mod_quiz_random_qbank_link'));
 
         return html_writer::link($editurl, $icon . $editicon, array('title' => $configuretitle)) .
                 ' ' . $instancename . ' ' . $qbanklink;
@@ -1088,13 +1160,13 @@ class edit_renderer extends \plugin_renderer_base {
      * is handled with the specific code for those.)
      *
      * @param structure $structure object containing the structure of the quiz.
-     * @param \question_edit_contexts $contexts the relevant question bank contexts.
+     * @param \core_question\local\bank\question_edit_contexts $contexts the relevant question bank contexts.
      * @param array $pagevars the variables from {@link \question_edit_setup()}.
      * @param \moodle_url $pageurl the canonical URL of this page.
      * @return bool Always returns true
      */
     protected function initialise_editing_javascript(structure $structure,
-            \question_edit_contexts $contexts, array $pagevars, \moodle_url $pageurl) {
+            \core_question\local\bank\question_edit_contexts $contexts, array $pagevars, \moodle_url $pageurl) {
 
         $config = new \stdClass();
         $config->resourceurl = '/mod/quiz/edit_rest.php';
@@ -1176,6 +1248,7 @@ class edit_renderer extends \plugin_renderer_base {
                 'numquestionsx',
                 'sectionheadingedit',
                 'sectionheadingremove',
+                'sectionnoname',
                 'removepagebreak',
                 'questiondependencyadd',
                 'questiondependencyfree',
@@ -1194,13 +1267,13 @@ class edit_renderer extends \plugin_renderer_base {
      * HTML for a page, with ids stripped, so it can be used as a javascript template.
      *
      * @param structure $structure object containing the structure of the quiz.
-     * @param \question_edit_contexts $contexts the relevant question bank contexts.
+     * @param \core_question\local\bank\question_edit_contexts $contexts the relevant question bank contexts.
      * @param array $pagevars the variables from {@link \question_edit_setup()}.
      * @param \moodle_url $pageurl the canonical URL of this page.
      * @return string HTML for a new page.
      */
     protected function new_page_template(structure $structure,
-            \question_edit_contexts $contexts, array $pagevars, \moodle_url $pageurl) {
+            \core_question\local\bank\question_edit_contexts $contexts, array $pagevars, \moodle_url $pageurl) {
         if (!$structure->has_questions()) {
             return '';
         }
@@ -1251,9 +1324,7 @@ class edit_renderer extends \plugin_renderer_base {
      */
     public function question_bank_contents(\mod_quiz\question\bank\custom_view $questionbank, array $pagevars) {
 
-        $qbank = $questionbank->render('editq', $pagevars['qpage'], $pagevars['qperpage'],
-                $pagevars['cat'], $pagevars['recurse'], $pagevars['showhidden'], $pagevars['qbshowtext'],
-                $pagevars['qtagids']);
+        $qbank = $questionbank->render($pagevars, 'editq');
         return html_writer::div(html_writer::div($qbank, 'bd'), 'questionbankformforpopup');
     }
 }

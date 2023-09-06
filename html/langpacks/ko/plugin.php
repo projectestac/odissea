@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ko', version '3.11'.
+ * Strings for component 'plugin', language 'ko', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -36,6 +36,7 @@ $string['filterupdatesonly'] = '업데이트할 수 있는 것만 보기';
 $string['moodleversion'] = '무들 {$a}';
 $string['noneinstalled'] = '이 유형의 플러그인은 설치되지 않았습니다.';
 $string['notdownloadable'] = '패키지를 다운로드 할 수 없습니다.';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = '노트';
 $string['notwritable'] = '플러그인 파일이 쓸 수 없습니다.';
 $string['otherplugin'] = '{$a->component}';
@@ -134,6 +135,7 @@ $string['validationmsg_filenotexists'] = '압축을 푼 파일을 찾을 수 없
 $string['validationmsg_filesnumber'] = '충분한 파일을 패키지에서 찾을 수 없습니다';
 $string['validationmsg_filestatus'] = '모든 파일을 추출 할 수 없습니다';
 $string['validationmsg_maturity'] = '선언된 성숙도 수준';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = '영어 언어 파일 이름 불일치';
 $string['validationmsg_missingexpectedlangenfile_info'] = '주어진 추가 기능 유형은 있어야 하는 영어 파일 {$a}이 없습니다.';
 $string['validationmsg_missinglangenfile'] = '영어 언어 파일을 찾을 수 없습니다.';

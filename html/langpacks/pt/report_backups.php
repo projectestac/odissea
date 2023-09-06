@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_backups', language 'pt', version '3.11'.
+ * Strings for component 'report_backups', language 'pt', version '4.1'.
  *
  * @package     report_backups
  * @category    string

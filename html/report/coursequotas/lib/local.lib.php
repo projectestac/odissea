@@ -36,15 +36,15 @@ function report_coursequotas_diskinfo($chartinfo) {
     $hasinfo = function_exists('is_agora') && is_agora() && function_exists('getDiskInfo');
 
     if ($hasinfo) {
-        // Get diskSpace and diskConsume from Agoraportal (might be out-of-date).
-        $tempinfo = getDiskInfo($CFG->dnscentre, 'moodle2');
+        // Get quota usage from Àgora portal (might be out-of-date).
+        $tempinfo = getDiskInfo($CFG->dnscentre, 'Moodle');
 
         $info = new \stdClass();
-        $info->space = round($tempinfo['diskSpace']); // In MB.
-        $info->consumed = $tempinfo['diskConsume'] / 1024; // Originally in kB.
+        $info->space = round($tempinfo['quota'] / (1024 * 1024)); // Bytes -> MB.
+        $info->consumed = $tempinfo['used_quota'] / (1024 * 1024); // Bytes -> MB.
 
-        // If disk info is not avalaible...
-        if ($info->consumed == 0) {
+        // If disk info is not available.
+        if ((int)$info->consumed === 0) {
             $info->consumed += report_coursequotas_get_chart_info_total($chartinfo);
         }
         $info->consumed = round($info->consumed);
@@ -56,31 +56,31 @@ function report_coursequotas_diskinfo($chartinfo) {
 /**
  * Get the summary of disk usage from database (config_plugins), grouped by type
  *
- * @return array
  * @throws dml_exception
+ * @return array
  */
 function report_course_quotas_get_chart_info(): array {
 
     $chartinfo = [];
 
     // Get quota used in courses.
-    $chartinfo['course'] = report_coursequotas_format_size(intval(get_config(REPORT_COMPONENTNAME, 'course_usage')));
+    $chartinfo['course'] = report_coursequotas_format_size((int)get_config(REPORT_COMPONENTNAME, 'course_usage'));
 
     // Get quota used in backups.
-    $chartinfo['backup'] = report_coursequotas_format_size(intval(get_config(REPORT_COMPONENTNAME, 'backup_usage')));
+    $chartinfo['backup'] = report_coursequotas_format_size((int)get_config(REPORT_COMPONENTNAME, 'backup_usage'));
 
     // Get quota used by users.
-    $chartinfo['user'] = report_coursequotas_format_size(intval(get_config(REPORT_COMPONENTNAME, 'user_usage')));
+    $chartinfo['user'] = report_coursequotas_format_size((int)get_config(REPORT_COMPONENTNAME, 'user_usage'));
 
     // Get quota used in H5P libraries.
-    $chartinfo['h5plib'] = report_coursequotas_format_size(intval(get_config(REPORT_COMPONENTNAME, 'h5plib_usage')));
+    $chartinfo['h5plib'] = report_coursequotas_format_size((int)get_config(REPORT_COMPONENTNAME, 'h5plib_usage'));
 
     // Get quota used in repositories.
-    $chartinfo['repository'] = report_coursequotas_format_size(floatval(get_config(REPORT_COMPONENTNAME, 'repositories_usage')));
+    $chartinfo['repository'] = report_coursequotas_format_size((float)get_config(REPORT_COMPONENTNAME, 'repositories_usage'));
 
     // Get quota used in files in temp and trash directories.
-    $chartinfo['temp'] = report_coursequotas_format_size(floatval(get_config(REPORT_COMPONENTNAME, 'tempdir_usage')));
-    $chartinfo['trash'] = report_coursequotas_format_size(floatval(get_config(REPORT_COMPONENTNAME, 'trashdir_usage')));
+    $chartinfo['temp'] = report_coursequotas_format_size((float)get_config(REPORT_COMPONENTNAME, 'tempdir_usage'));
+    $chartinfo['trash'] = report_coursequotas_format_size((float)get_config(REPORT_COMPONENTNAME, 'trashdir_usage'));
 
     return $chartinfo;
 }
@@ -91,9 +91,9 @@ function report_course_quotas_get_chart_info(): array {
  * @param $chartinfo
  * @param false $consumed
  * @param false $total
- * @return string
  * @throws coding_exception
  * @throws dml_exception
+ * @return string
  */
 function report_coursequotas_print_chart($chartinfo, $consumed = false, $total = false): string {
     global $CFG, $OUTPUT;
@@ -214,9 +214,9 @@ function report_coursequotas_print_chart($chartinfo, $consumed = false, $total =
 /**
  * Build the boxes with time and upgrade information shown over the pie chart
  *
- * @return string
  * @throws coding_exception
  * @throws dml_exception
+ * @return string
  */
 function report_coursequotas_get_notifications(): string {
 
@@ -226,7 +226,7 @@ function report_coursequotas_get_notifications(): string {
     define('UPDATED_WARNING', 86400); // 1 day
 
     // Distance in seconds from latest update
-    $diff = time() - intval(get_config(REPORT_COMPONENTNAME, 'updated'));
+    $diff = time() - (int)get_config(REPORT_COMPONENTNAME, 'updated');
 
     // Quota was updated very recently. Show time information and don't show upgrade button.
     if ($diff < UPDATED_OK) {
@@ -262,9 +262,9 @@ function report_coursequotas_get_notifications(): string {
 /**
  * Creates a tree of categories with size information.
  *
- * @return array Tree with data (see description)
  * @throws dml_exception
  * @throws coding_exception
+ * @return array Tree with data (see description)
  * @author Pau Ferrer (pau@moodle.com)
  *
  */
@@ -280,8 +280,8 @@ function report_coursequotas_get_category_sizes() {
     $cat->id = 0;
     $cat->name = get_string('front_page', REPORT_COMPONENTNAME);
     $courseid = $DB->get_field('course', 'id', ['category' => 0]);
-    $size = $DB->get_field(COURSESIZE_TABLENAME, COURSESIZE_FIELDQUOTA, [COURSESIZE_FIELDCOURSEID => intval($courseid)]);
-    $cat->categorysize = intval($size);
+    $size = $DB->get_field(COURSESIZE_TABLENAME, COURSESIZE_FIELDQUOTA, [COURSESIZE_FIELDCOURSEID => (int)$courseid]);
+    $cat->categorysize = (int)$size;
     $cat->visible = 1;
     $cat->subcategories = false;
     $cattree[0] = $cat;
@@ -294,8 +294,8 @@ function report_coursequotas_get_category_sizes() {
  *
  * @param array $catrecords Contains all the categories info from the data base
  * @param int $parent ID of the category where to start
- * @return array Tree with data (see description)
  * @throws dml_exception
+ * @return array Tree with data (see description)
  * @author Toni Ginard (aginard@xtec.cat)
  *
  */
@@ -306,11 +306,11 @@ function report_coursequotas_build_category_tree(array &$catrecords, $parent = 0
 
     // Find categories with the same parent and add them.
     foreach ($catrecords as $catid => $record) {
-        if ($record->parent == $parent) {
+        if ($record->parent === $parent) {
             $cat = new \stdClass();
             $cat->id = $catid;
             $cat->name = $record->name;
-            $cat->categorysize = intval($DB->get_field(CATEGORYSIZE_TABLENAME, CATEGORYSIZE_FIELDQUOTA, [CATEGORYSIZE_FIELDCATEGORYID => $catid]));
+            $cat->categorysize = (int)$DB->get_field(CATEGORYSIZE_TABLENAME, CATEGORYSIZE_FIELDQUOTA, [CATEGORYSIZE_FIELDCATEGORYID => $catid]);
             $cat->visible = $record->visible;
             $cattree[$catid] = $cat;
             // Efficiency improvement: Once the category is added to the tree, it won't be added again.
@@ -336,9 +336,9 @@ function report_coursequotas_build_category_tree(array &$catrecords, $parent = 0
  *
  * @param array $cattree Category tree
  *
- * @return string HTML code to be sent to the browser
  * @throws coding_exception
  * @throws dml_exception
+ * @return string HTML code to be sent to the browser
  * @author Pau Ferrer (pau@moodle.com)
  */
 function report_coursequotas_print_category_data(array $cattree): string {
@@ -355,7 +355,7 @@ function report_coursequotas_print_category_data(array $cattree): string {
 
         // Build list content.
         $content .= '<li>';
-        if ($catid == 0) {
+        if ($catid === 0) {
             $content .= $category->name;
         } else {
             $dimmed = $category->visible ? '' : ' class="dimmed"';

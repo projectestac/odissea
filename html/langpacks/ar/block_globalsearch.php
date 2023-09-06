@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_globalsearch', language 'ar', version '3.11'.
+ * Strings for component 'block_globalsearch', language 'ar', version '4.1'.
  *
  * @package     block_globalsearch
  * @category    string
@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['globalsearch:addinstance'] = 'إضافة كتلة جديدة للبحث العمومي';
-$string['globalsearch:myaddinstance'] = 'إضافة كتلة جديدة للبحث العمومي إلى لوحة التحكم';
+$string['globalsearch:myaddinstance'] = 'إضافة كتلة جديدة للبحث العمومي إلى دفة القيادة';
 $string['pluginname'] = 'البحث العمومي';
 $string['privacy:metadata'] = 'كتلة البحث العمومي تظهر فقط البيانات المخزونة في مواضع أخرى.';

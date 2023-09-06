@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'el', version '3.11'.
+ * Strings for component 'block_community', language 'el', version '4.1'.
  *
  * @package     block_community
  * @category    string
@@ -31,7 +31,7 @@ $string['addcommunitycourse'] = 'Προσθήκη μαθήματος κοινό�
 $string['addcourse'] = 'Αναζήτηση';
 $string['addedtoblock'] = 'Έχει προστεθεί ένας σύνδεσμος σε αυτό το μάθημα στο μπλοκ «Εύρεση κοινότητας»';
 $string['additionalcoursedesc'] = '{$a->lang} Δημιουργός: {$a->creatorname} - Εκδότης: {$a->publishername} - Θέμα: {$a->subject}
-- Ακροατήριο: {$a->audience} - Εκπαιδευτικό επίπεδο: {$a->educationallevel} - Άδεια: {$a->license}';
+- Ακροατήριο: {$a->audience} - Εκπαιδευτικό επίπεδο: {$a->educationallevel} - Άδεια χρήσης: {$a->license}';
 $string['addtocommunityblock'] = 'Αποθήκευση συνδέσμου σε αυτό το μάθημα';
 $string['audience'] = 'Σχεδιασμένο για';
 $string['audience_help'] = 'Τι είδους μάθημα ψάχνετε; Όπως παραδοσιακά μαθήματα που προορίζονται για τους μαθητές, μπορείτε να ψάξετε για κοινότητες Εκπαιδευτικών ή Διαχειριστών Moodle';
@@ -57,28 +57,28 @@ $string['downloadconfirmed'] = 'Το αντίγραφο ασφαλείας έχ�
 $string['downloaded'] = '...τελείωσε.';
 $string['downloadingcourse'] = 'Γίνεται λήψη μαθήματος';
 $string['downloadingsize'] = 'Παρακαλούμε περιμένετε... γίνεται λήψη του μαθήματος ({$a->total}Mb)...';
-$string['downloadtemplate'] = 'Δημιουργία μαθήματος από πρότυπο';
+$string['downloadtemplate'] = 'Δημιουργία μαθήματος από υπόδειγμα';
 $string['educationallevel'] = 'Εκπαιδευτικό επίπεδο';
 $string['educationallevel_help'] = 'Τι επίπεδο εκπαίδευσης αναζητείτε; Στην περίπτωση κοινοτήτων εκπαιδευτικών, το επίπεδο αυτό περιγράφει το επίπεδο στο οποίο διδάσκουν.';
 $string['enroldownload'] = 'Εύρεση';
-$string['enroldownload_help'] = 'Μερικά μαθήματα που περιλαμβάνονται στο επιλεγμένο κεντρικό κόμβο διαφημίζονται, προκειμένου να έλθουν άτομα και να λάβουν μέρος σε αυτά στον αρχικό ιστότοπο. Άλλα είναι πρότυπα μαθημάτων που παρέχονται για λήψη και χρήση στο δικό σας ιστότοπο Moodle.';
+$string['enroldownload_help'] = 'Μερικά μαθήματα που περιλαμβάνονται στον επιλεγμένο διανομέα διαφημίζονται, προκειμένου να έλθουν άτομα και να λάβουν μέρος σε αυτά στον αρχικό ιστότοπο. Άλλα είναι υποδείγματα μαθημάτων που παρέχονται για λήψη και χρήση στο δικό σας ιστότοπο Moodle.';
 $string['enrollable'] = 'μαθήματα που μπορώ να εγγραφώ';
 $string['enrollablecourses'] = 'Μαθήματα που μπορούν να γίνουν εγγραφές';
-$string['errorcourselisting'] = 'Σημείωση: Δεν είναι πλέον δυνατή η αναζήτηση για μαθήματα κοινότητας στο moodle.net. Τα προηγούμενα κοινά μαθήματα για λήψη είναι τώρα διαθέσιμα στο archive.moodle.net. Δείτε <a href="https://docs.moodle.org/en/Sunsetting_moodle.net">Δύση του moodle.net</a> για περισσότερες λεπτομέρειες.';
-$string['errorhublisting'] = 'Προέκυψε σφάλμα κατά την ανάκτηση της λίστας κεντρικών κόμβων από το Moodle.org. Παρακαλούμε προσπαθήστε ξανά αργότερα. ({$a})';
-$string['fileinfo'] = 'Γλώσσα: {$a->lang} - Άδεια: {$a->license} - Ώρα ενημέρωσης: {$a->timeupdated}';
-$string['hideall'] = 'Απόκρυψη κεντρικών κόμβων';
-$string['hub'] = 'κεντρικός κόμβος';
+$string['errorcourselisting'] = 'Σημείωση: Δεν είναι πλέον δυνατή η αναζήτηση για μαθήματα κοινότητας στο moodle.net. Τα προηγουμένως διαμοιραζόμενα μαθήματα για λήψη είναι τώρα διαθέσιμα στο archive.moodle.net. Δείτε <a href="https://docs.moodle.org/en/Sunsetting_moodle.net">Δύση του moodle.net</a> για περισσότερες λεπτομέρειες.';
+$string['errorhublisting'] = 'Προέκυψε σφάλμα κατά την ανάκτηση της λίστας διανομέων από το Moodle.org. Παρακαλούμε προσπαθήστε ξανά αργότερα. ({$a})';
+$string['fileinfo'] = 'Γλώσσα: {$a->lang} - Άδεια χρήσης: {$a->license} - Ώρα ενημέρωσης: {$a->timeupdated}';
+$string['hideall'] = 'Απόκρυψη διανομέων';
+$string['hub'] = 'διανομέας';
 $string['hubnottrusted'] = 'Μη έμπιστο';
-$string['hubtrusted'] = 'Αυτός ο κεντρικός κόμβος είναι έμπιστος του Moodle.org';
+$string['hubtrusted'] = 'Αυτός ο διανομέας είναι έμπιστος του Moodle.org';
 $string['install'] = 'Εγκατάσταση';
 $string['keywords'] = 'Λέξεις κλειδιά';
 $string['keywords_help'] = 'Μπορείτε να αναζητήσετε μαθήματα που περιέχουν συγκεκριμένο κείμενο στο όνομα, στην περιγραφή και σε άλλα πεδία της βάσης δεδομένων';
 $string['langdesc'] = 'Γλώσσα: {$a} -';
 $string['language'] = 'Γλώσσα';
 $string['language_help'] = 'Μπορείτε να αναζητήσετε μαθήματα σε συγκεκριμένη γλώσσα.';
-$string['licence'] = 'Άδεια';
-$string['licence_help'] = 'Μπορείτε να αναζητήσετε μαθήματα που έχουν λάβει άδεια με ένα συγκεκριμένο τρόπο.';
+$string['licence'] = 'Άδεια χρήσης';
+$string['licence_help'] = 'Μπορείτε να αναζητήσετε μαθήματα που έχουν λάβει άδεια χρήσης με ένα συγκεκριμένο τρόπο.';
 $string['moredetails'] = 'Περισσότερες λεπτομέρειες';
 $string['mycommunities'] = 'Οι κοινότητές μου:';
 $string['next'] = 'Επόμενο >>>';
@@ -106,13 +106,13 @@ $string['rating'] = 'Βαθμολόγηση';
 $string['removecommunitycourse'] = 'Αφαίρεση μαθήματος κοινότητας';
 $string['restorecourse'] = 'Επαναφορά μαθήματος';
 $string['restorecourseinfo'] = 'Επαναφορά του μαθήματος;';
-$string['screenshots'] = 'Στιγμιότυπα';
+$string['screenshots'] = 'Στιγμιότυπα οθόνης';
 $string['search'] = 'Αναζήτηση';
 $string['searchcommunitycourse'] = 'Αναζήτηση για μάθημα κοινότητας';
 $string['searchcourse'] = 'Αναζήτηση για μάθημα κοινότητας';
-$string['selecthub'] = 'Επιλογή κεντρικού κόμβου';
-$string['selecthub_help'] = 'Επιλέξτε τον κεντρικό κόμβο από όπου θα αναζητήσετε τα μαθήματα.';
-$string['showall'] = 'Εμφάνιση όλων των κεντρικών κόμβων';
+$string['selecthub'] = 'Επιλογή διανομέα';
+$string['selecthub_help'] = 'Επιλέξτε τον διανομέα από όπου θα αναζητήσετε τα μαθήματα.';
+$string['showall'] = 'Εμφάνιση όλων των διανομέων';
 $string['sites'] = 'Ιστότοποι';
 $string['subject'] = 'Θέμα';
 $string['subject_help'] = 'Για να περιορίσετε την αναζήτηση μαθημάτων για ένα συγκεκριμένο θέμα, επιλέξτε ένα από τη λίστα.';

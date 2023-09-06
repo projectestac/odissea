@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'googlemeet', language 'es', version '3.11'.
+ * Strings for component 'googlemeet', language 'es', version '4.1'.
  *
  * @package     googlemeet
  * @category    string
@@ -25,10 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'Clave de API';
 $string['checkweekdays'] = 'Seleccionar los días de la semana dentro del rango de fecha seleccionado.';
-$string['clientid'] = 'ID de cliente de OAuth 2.0';
-$string['clientid_desc'] = '<a href="https://github.com/ronefel/moodle-mod_googlemeet/wiki/How-to-create-the-API-key-and-OAuth-client-ID" target="_blank">Cómo crear la Clave de API y el ID de cliente de OAuth 2.0</a>';
 $string['date'] = 'Fecha';
 $string['duration'] = 'Duración';
 $string['earlierto'] = 'La fecha del evento no puede ser antes que la fecha de inicio del curso ({$a}).';
@@ -53,7 +50,6 @@ $string['emailcontent_help'] = 'Cuando se envía una notificación a un estudian
 $string['entertheroom'] = 'Entrar a la sala';
 $string['eventdate'] = 'Fecha del evento';
 $string['from'] = 'de';
-$string['generateurlroom'] = 'Generar URL de Sala';
 $string['googlemeet:addinstance'] = 'Añadir un nuevo Google Meet™ para Moodle';
 $string['googlemeet:editrecording'] = 'Editar grabaciones';
 $string['googlemeet:removerecording'] = 'Quitar grabaciones';
@@ -83,15 +79,12 @@ $string['multieventdateexpanded'] = 'Fecha de repetición del evento expandida';
 $string['multieventdateexpanded_desc'] = 'Mostrar las configuraciones de "Repetición de la fecha del evento" como expandidas de forma predeterminada al crear una Sala nueva.';
 $string['name'] = 'Nombre';
 $string['never'] = 'Nunca';
-$string['notfoundrecordingname'] = 'No se encontraron grabaciones con el nombre';
-$string['notfoundrecordingsfolder'] = 'La carpeta "Meet Recordings" no fue encontrada en Google Drive.';
 $string['notification'] = 'Notificación';
 $string['notificationexpanded'] = 'Notificación expandida';
 $string['notify'] = 'Enviar notificación al estudiante';
 $string['notify_help'] = 'Si se activa, se enviará una notificación al estudiante acerca de la fecha de inicio del evento.';
 $string['notifycationexpanded_desc'] = 'Mostrar las configuraciones de "Notificación" como expandidas de forma predeterminada al crear una Sala nueva.';
 $string['notifytask'] = 'Trabajo de notificación de Google Meet™ for Moodle';
-$string['notpossiblesync'] = 'No es posible sincronizar con una cuenta diferente de la usada para crear la sala.';
 $string['or'] = 'o';
 $string['play'] = 'Reproducir';
 $string['pluginadministration'] = 'Administración de Google Meet™ para Moodle';
@@ -112,7 +105,6 @@ $string['repeatasfollows'] = 'Repetir la fecha del evento de arriba como sigue';
 $string['repeatevery'] = 'Repetir cada';
 $string['repeaton'] = 'Repetir en';
 $string['repeatuntil'] = 'Repetir hasta';
-$string['requirednamefield'] = 'Escribir el nombre de la sala para crearla automáticamente.';
 $string['roomcreator'] = 'Creador de la sala:';
 $string['roomname'] = 'Nombre de la sala';
 $string['roomurl'] = 'URL de la sala';

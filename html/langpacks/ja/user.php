@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ja', version '3.11'.
+ * Strings for component 'user', language 'ja', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -54,8 +54,8 @@ $string['privacy:metadata:aim'] = 'ユーザのAIM IDです。';
 $string['privacy:metadata:alternatename'] = 'ユーザの代替名です。';
 $string['privacy:metadata:appid'] = 'アプリケーションIDです。通常次のようになります: com.moodle.moodlemobile';
 $string['privacy:metadata:auth'] = 'このユーザレコードに使用された認証プラグインです。';
-$string['privacy:metadata:autosubscribe'] = 'ユーザがフォーラムを自動購読する場合の投稿に関するプリファレンスです。';
-$string['privacy:metadata:calendartype'] = '使用するカレンダータイプのユーザプリファレンスです。';
+$string['privacy:metadata:autosubscribe'] = 'ユーザがフォーラムを自動購読する場合の投稿に関するプレファレンスです。';
+$string['privacy:metadata:calendartype'] = '使用するカレンダータイプのユーザプレファレンスです。';
 $string['privacy:metadata:category'] = 'カテゴリIDです。';
 $string['privacy:metadata:city'] = 'ユーザの市町村です。';
 $string['privacy:metadata:confirmed'] = 'これがアクティブユーザであるかどうか示します。';
@@ -69,7 +69,7 @@ $string['privacy:metadata:description'] = 'このユーザに関する一般詳�
 $string['privacy:metadata:devicename'] = 'occamまたはiPhoneのようなデバイス名です。';
 $string['privacy:metadata:devicetablesummary'] = 'このテーブルはプッシュ通知を送信するためユーザのモバイルデバイス情報を保存します。';
 $string['privacy:metadata:email'] = '連絡先のメールアドレスです。';
-$string['privacy:metadata:emailstop'] = 'ユーザへの通知の送信を無効にするプリファレンスです。';
+$string['privacy:metadata:emailstop'] = 'ユーザへの通知の送信を無効にするプレファレンスです。';
 $string['privacy:metadata:fieldid'] = 'カスタムユーザフィールドに関するIDです。';
 $string['privacy:metadata:filelink'] = 'ユーザのためにファイルテーブルに保存される複数の異なるファイルがあります。';
 $string['privacy:metadata:firstaccess'] = 'このユーザが最初にサイトにアクセスした日時です。';
@@ -84,7 +84,7 @@ $string['privacy:metadata:idnumber'] = 'インスティテューションから�
 $string['privacy:metadata:imagealt'] = 'ユーザのイメージの代替テキストです。';
 $string['privacy:metadata:infotablesummary'] = 'カスタムユーザ情報を保存します。';
 $string['privacy:metadata:institution'] = 'このユーザがメンバであるインスティテューションです。';
-$string['privacy:metadata:lang'] = '表示される言語のユーザプリファレンスです。';
+$string['privacy:metadata:lang'] = '表示される言語のユーザプレファレンスです。';
 $string['privacy:metadata:lastaccess'] = 'ユーザが最後にサイトにアクセスした日時です。';
 $string['privacy:metadata:lastaccesstablesummary'] = 'ユーザが最後にコースにアクセスした日時に関する情報です。';
 $string['privacy:metadata:lastip'] = 'ユーザのIPアドレスです。';
@@ -92,7 +92,7 @@ $string['privacy:metadata:lastlogin'] = 'このユーザの最終ログインで
 $string['privacy:metadata:lastname'] = 'ユーザの姓です。';
 $string['privacy:metadata:lastnamephonetic'] = 'ユーザの姓に関するヨミガナ詳細です。';
 $string['privacy:metadata:maildigest'] = 'このユーザのメールダイジェストに関する設定です。';
-$string['privacy:metadata:maildisplay'] = 'ユーザが他のユーザにメールアドレスを表示することに関するプリファレンスです。';
+$string['privacy:metadata:maildisplay'] = 'ユーザが他のユーザにメールアドレスを表示することに関するプレファレンスです。';
 $string['privacy:metadata:middlename'] = 'ユーザのミドルネームです。';
 $string['privacy:metadata:mnethostid'] = 'MNetホストのIDです (使用されている場合)。';
 $string['privacy:metadata:model'] = 'occamまたはiPhoneのようなデバイス名です。';
@@ -122,7 +122,7 @@ $string['privacy:metadata:skype'] = 'ユーザのSkype IDです。';
 $string['privacy:metadata:state'] = 'ゼロはノーマルセッションを意味します。';
 $string['privacy:metadata:summary'] = 'コース説明です。';
 $string['privacy:metadata:suspended'] = 'ユーザがこのシステムで利用停止にされたか示すフラグです。';
-$string['privacy:metadata:theme'] = '表示するテーマのユーザプリファレンスです。';
+$string['privacy:metadata:theme'] = '表示するテーマのユーザプレファレンスです。';
 $string['privacy:metadata:timeaccess'] = 'コースにアクセスした日時です。';
 $string['privacy:metadata:timecreated'] = 'このレコードが作成された日時です。';
 $string['privacy:metadata:timemodified'] = 'レコードが修正成された日時です。';
@@ -130,13 +130,14 @@ $string['privacy:metadata:timerequested'] = 'ユーザが最初にこのパス�
 $string['privacy:metadata:timererequested'] = 'ユーザがパスワードリセットを再度リクエストした日時です。';
 $string['privacy:metadata:timezone'] = 'ユーザのタイムゾーンです。';
 $string['privacy:metadata:token'] = '秘密鍵が設定されてユーザに送信されました。';
-$string['privacy:metadata:trackforums'] = 'フォーラムおよび未読管理のプリファレンスです。';
+$string['privacy:metadata:trackforums'] = 'フォーラムおよび未読管理のプレファレンスです。';
 $string['privacy:metadata:trustbitmask'] = 'トラストビットマスクです。';
 $string['privacy:metadata:url'] = 'このユーザに関連するURLです。';
-$string['privacy:metadata:user_preferences'] = '所与のユーザに関連するプリファレンスです。';
-$string['privacy:metadata:user_preferences:name'] = 'プリファレンス名です。';
+$string['privacy:metadata:user_preference:core_user_welcome'] = '初回、ユーザにウェルカムメッセージが表示された時点でタイムスタンプが記録されます。';
+$string['privacy:metadata:user_preferences'] = '所与のユーザに関連するプレファレンスです。';
+$string['privacy:metadata:user_preferences:name'] = 'プレファレンス名です。';
 $string['privacy:metadata:user_preferences:userid'] = 'ユーザDです。';
-$string['privacy:metadata:user_preferences:value'] = 'プリファレンス値です。';
+$string['privacy:metadata:user_preferences:value'] = 'プレファレンス値です。';
 $string['privacy:metadata:userid'] = 'このテーブルにリンクされたユーザIDです。';
 $string['privacy:metadata:username'] = 'このユーザのユーザ名です。';
 $string['privacy:metadata:usertablesummary'] = 'ユーザに関する主個人データを保存するテーブルです。';
@@ -149,6 +150,11 @@ $string['privacy:privatefilespath'] = 'プライベートファイルです。';
 $string['privacy:profileimagespath'] = 'プロファイルイメージです。';
 $string['privacy:sessionpath'] = 'セッションデータです。';
 $string['selectfiltertype'] = '選択';
+$string['supportmessagealternative'] = 'あなたは代わりに {$a} にメール送信できます。';
+$string['supportmessagenotsent'] = '残念ですが、あなたのメッセージを送信できませんでした。';
+$string['supportmessagesent'] = 'あなたのメッセージが送信されました。';
+$string['supportmessagesentforloggedoutuser'] = 'このメッセージには注意が必要です。送信者がログインしていないため、身元を確認できていません。';
 $string['target:upcomingactivitiesdue'] = '直近の活動期限';
 $string['target:upcomingactivitiesdue_help'] = 'このターゲットは直近の活動期限のリマインダを生成します。';
 $string['target:upcomingactivitiesdueinfo'] = 'すべての到来する活動期限洞察がここに一覧表示されます。これらの学生はこれらの洞察を直接受信しています。';
+$string['userprofile'] = 'ユーザプロファイル';

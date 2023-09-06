@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pcast', language 'ca', version '3.11'.
+ * Strings for component 'pcast', language 'ca', version '4.1'.
  *
  * @package     pcast
  * @category    string
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['requireapproval_help'] = 'Fes que calgui aprovar els episodis abans de publicar-los';
 $string['sortbycreation'] = 'Data de creació';
 $string['summary'] = 'Resum';
+$string['view'] = 'Visualitza';

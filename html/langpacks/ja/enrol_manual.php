@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ja', version '3.11'.
+ * Strings for component 'enrol_manual', language 'ja', version '4.1'.
  *
  * @package     enrol_manual
  * @category    string
@@ -57,6 +57,7 @@ $string['expirymessageenrollerbody'] = '以下ユーザに関して次の {$a->t
 
 登録期限を延長するには {$a->extendurl} にアクセスしてください。';
 $string['expirymessageenrollersubject'] = '登録期限切れ通知';
+$string['managemanualenrolements'] = '手動登録を管理する';
 $string['manual:config'] = '手動登録インスタンスを設定する';
 $string['manual:enrol'] = 'ユーザを登録する';
 $string['manual:manage'] = 'ユーザ登録を管理する';

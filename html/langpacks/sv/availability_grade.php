@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'sv', version '3.11'.
+ * Strings for component 'availability_grade', language 'sv', version '4.1'.
  *
  * @package     availability_grade
  * @category    string
@@ -39,9 +39,9 @@ $string['option_min'] = 'måste vara ≥';
 $string['pluginname'] = 'Begränsning via betyg';
 $string['privacy:metadata'] = 'Pluginmodulen Begränsning via betyg lagrar ingen personinformation.';
 $string['requires_any'] = 'Du har betyg i <strong>{$a}</strong>';
-$string['requires_max'] = 'Du får lämplig poäng i <strong>{$a}</strong>';
-$string['requires_min'] = 'Du uppnår nödvändiga poäng i <strong>{$a}</strong>';
+$string['requires_max'] = 'Du uppnår lägre än en viss poäng i <strong>{$a}</strong>';
+$string['requires_min'] = 'Du uppnår högre än en viss poäng i <strong>{$a}</strong>';
 $string['requires_notany'] = 'Du saknar betyg i <strong>{$a}</strong>';
 $string['requires_notgeneral'] = 'Du får inte vissa poäng i <strong>{$a}</strong>';
-$string['requires_range'] = 'Du får en viss poäng i <strong>{$a}</strong>';
+$string['requires_range'] = 'Du uppnår en poäng inom ett visst intervall i <strong>{$a}</strong>';
 $string['title'] = 'Betyg';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'es', version '3.11'.
+ * Strings for component 'mnet', language 'es', version '4.1'.
  *
  * @package     mnet
  * @category    string
@@ -58,7 +58,7 @@ $string['deletedhostinfo'] = 'Este host ha sido borrado.Si quiere deshacer el bo
 $string['deletedhosts'] = 'Hosts borrados: {$a}';
 $string['deletehost'] = 'Eliminar host';
 $string['deletekeycheck'] = '¿Está totalmente seguro que quiere eliminar esta clave?';
-$string['deleteoutoftime'] = 'Su ventana de 60 segundos para eliminar esta clave ha expirado.Por favor comience de nuevo.';
+$string['deleteoutoftime'] = 'Su ventana de 60 segundos para eliminar esta clave ha expirado. Por favor comience de nuevo.';
 $string['deleteuserrecord'] = 'SSO ACL: eliminar registro para el usuario \'{$a->user}\' de {$a->host}.';
 $string['deletewrongkeyvalue'] = 'Un error ha ocurrido. Si usted no estaba intentando eliminar su clave SSL, entonces es posible que usted haya sido sujeto de un ataque malicioso. Ninguna acción ha sido tomada.';
 $string['deny'] = 'Denegar';
@@ -118,6 +118,7 @@ $string['is_in_range'] = 'La dirección IP <code>{$a}</code>  representa un host
 $string['ispublished'] = '{$a} ha habilitado este servicio para usted.';
 $string['issubscribed'] = '{$a} se está suscribiendo a este servicio en su host.';
 $string['keydeleted'] = 'Su clave ha sido exitosamente eliminada y reemplazada.';
+$string['keydeletedcancelled'] = 'No se han hecho cambios en la clave.';
 $string['keymismatch'] = 'La clave pública que usted tiene para este host es diferente a la clave pública que está actualmente publicando. La clave publicada actualmente es:';
 $string['last_connect_time'] = 'Última conexión';
 $string['last_connect_time_help'] = 'La última vez que usted se conectó con este host.';

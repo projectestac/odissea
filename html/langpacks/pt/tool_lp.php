@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'pt', version '3.11'.
+ * Strings for component 'tool_lp', language 'pt', version '4.1'.
  *
  * @package     tool_lp
  * @category    string
@@ -50,7 +50,7 @@ $string['cannotcreateuserplanswhentemplateduedateispassed'] = 'Não é possível
 $string['cannotcreateuserplanswhentemplatehidden'] = 'Não podem ser criados novos planos de aprendizagem enquanto este modelo está oculto.';
 $string['category'] = 'Categoria';
 $string['chooserating'] = 'Selecione uma avaliação';
-$string['cohortssyncedtotemplate'] = 'Os grupos globais foram sincronizados com este modelo de plano de aprendizagem';
+$string['cohortssyncedtotemplate'] = 'Os grupos Globais foram sincronizados com este modelo de plano de aprendizagem';
 $string['competenciesforframework'] = 'Competências para {$a}';
 $string['competenciesmostoftennotproficient'] = 'Competências usualmente sem proficiênica em planos de aprendizagem concluídos';
 $string['competenciesmostoftennotproficientincourse'] = 'Competências sem proficiência nesta disciplina';
@@ -112,7 +112,7 @@ $string['findcourses'] = 'Pesquisar disciplinas';
 $string['frameworkcannotbedeleted'] = 'O quadro de competências \'{$a}\' não pode ser apagado';
 $string['hidden'] = 'Oculto';
 $string['hiddenhint'] = '(oculto)';
-$string['idnumber'] = 'Número ID';
+$string['idnumber'] = 'Número de identificação (ID)';
 $string['inheritfromframework'] = 'Herdar do quadro de competências (predefinido)';
 $string['itemstoadd'] = 'Itens para adicionar';
 $string['jumptocompetency'] = 'Seguir para a competência';
@@ -166,6 +166,7 @@ $string['nouserevidence'] = 'Ainda não foi adicionado nenhum comprovativo de ap
 $string['nouserplans'] = 'Ainda não foram criados planos de aprendizagem.';
 $string['oneplanwascreated'] = 'Foi criado um plano de aprendizagem';
 $string['outcome'] = 'Resultado da aprendizagem';
+$string['overridegrade'] = 'Substituir a nota da competência existente quando concluída.';
 $string['parentcompetency'] = 'Competência ascendente';
 $string['parentcompetency_edit'] = 'Editar competência ascendente';
 $string['parentcompetency_help'] = 'Indique a competência ascendente da competência que será adicionada. Pode indicar outra competência do mesmo quadro, ou a raiz do quadro de competências para uma competência de topo.';
@@ -203,7 +204,7 @@ $string['scale_help'] = 'Uma escala determina como é medida a proficiência num
 * Os item(ns) selecionado(s) como \'Proficiente\' indica(m) que valor(es) irão marcar as competências como proficientes quando estas são avaliadas.';
 $string['scalevalue'] = 'Valor da escala';
 $string['search'] = 'Pesquisar...';
-$string['selectcohortstosync'] = 'Selecione os grupos globais a sincronizar';
+$string['selectcohortstosync'] = 'Selecione os Grupos globais a sincronizar';
 $string['selectcompetencymovetarget'] = 'Selecione o local para onde pretende mover esta competência:';
 $string['selectedcompetency'] = 'Competência selecionada';
 $string['selectuserstocreateplansfor'] = 'Selecione os utilizadores para os quais pretende criar planos de aprendizagem';
@@ -215,7 +216,7 @@ $string['startreview'] = 'Iniciar a revisão';
 $string['state'] = 'Processo';
 $string['status'] = 'Estado';
 $string['stopreview'] = 'Terminar a revisão';
-$string['stopsyncingcohort'] = 'Parar de sincronizar grupos globais';
+$string['stopsyncingcohort'] = 'Parar de sincronizar Grupos globais';
 $string['taxonomies'] = 'Taxonomias';
 $string['taxonomy_add_behaviour'] = 'Adicionar comportamento';
 $string['taxonomy_add_competency'] = 'Adicionar competência';
@@ -263,8 +264,8 @@ $string['taxonomy_selected_skill'] = 'Habilidade selecionada';
 $string['taxonomy_selected_value'] = 'Valor selecionado';
 $string['template'] = 'Modelo de plano de aprendizagem';
 $string['templatebased'] = 'Baseado num modelo';
-$string['templatecohortnotsyncedwhileduedateispassed'] = 'Os grupos globais não serão sincronizados caso a data limite do modelo já tenha sido ultrapassada.';
-$string['templatecohortnotsyncedwhilehidden'] = 'Os grupos globais não serão sincronizados enquanto este modelo estiver oculto.';
+$string['templatecohortnotsyncedwhileduedateispassed'] = 'Os Grupos globais não serão sincronizados caso a data limite do modelo já tenha sido ultrapassada.';
+$string['templatecohortnotsyncedwhilehidden'] = 'Os Grupos globais não serão sincronizados enquanto este modelo estiver oculto.';
 $string['templatecompetencies'] = 'Competências do modelo de plano de aprendizagem';
 $string['templatecreated'] = 'Modelo de plano de aprendizagem criado';
 $string['templatename'] = 'Nome';

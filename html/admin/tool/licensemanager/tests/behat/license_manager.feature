@@ -40,7 +40,7 @@ Feature: Licence manager
       | sitedefaultlicense      | cc                        |
       | rememberuserlicensepref | <rememberuserlicensepref> |
     And I log in as "admin"
-    And I follow "Manage private files..."
+    And I follow "Private files" in the user menu
     And I follow "Add..."
     And I follow "Upload a file"
     And the field with xpath "//select[@name='license']" matches value "Creative Commons"
@@ -49,7 +49,6 @@ Feature: Licence manager
       | Save as | empty_copy.txt |
       | license | Public domain |
     And I press "Save changes"
-    And I follow "Manage private files..."
     And I follow "Add..."
     Then the field with xpath "//select[@name='license']" matches value "<expectedlicence>"
 

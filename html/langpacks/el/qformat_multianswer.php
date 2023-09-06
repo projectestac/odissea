@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_multianswer', language 'el', version '3.11'.
+ * Strings for component 'qformat_multianswer', language 'el', version '4.1'.
  *
  * @package     qformat_multianswer
  * @category    string
@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Ενσωματωμένες απαντήσεις (Cloze)';
 $string['pluginname_help'] = 'Ο μορφότυπος ενσωματωμένων απαντήσεων (Cloze) επιτρέπει την εισαγωγή ενός αποσπάσματος κειμένου με ερωτήσεις, όπως π.χ. πολλαπλής επιλογής ή σύντομης απάντησης, ενσωματωμένες μέσα σε αυτό.';
-$string['pluginname_link'] = 'ερώτηση/τύπος/πολλαπλήαπάντηση';
+$string['pluginname_link'] = '';
 $string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις ενσωματωμένων απαντήσεων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

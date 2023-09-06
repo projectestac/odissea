@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilitychecker', language 'pt', version '3.11'.
+ * Strings for component 'atto_accessibilitychecker', language 'pt', version '4.1'.
  *
  * @package     atto_accessibilitychecker
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['emptytext'] = 'Texto vazio';
 $string['entiredocument'] = 'Documento inteiro';
-$string['imagesmissingalt'] = 'As imagens requerem texto alternativo. Para corrigir este aviso, adicione um atributo alternativo às suas "img tags". Pode ser usado um atributo alternativo vazio, mas apenas quando a imagem é meramente ilustrativa e não inclui nenhuma informação.';
+$string['imagesmissingalt'] = 'As imagens requerem um texto alternativo. Para corrigir este aviso, adicione um atributo alternativo às suas tags \'img\'. Pode ser usado um atributo alternativo vazio, mas apenas quando a imagem é meramente decorativa e não inclui nenhuma informação.';
 $string['needsmorecontrast'] = 'As cores de primeiro plano e do texto de fundo não têm contraste suficiente. Para corrigir este aviso, altere a cor de primeiro plano ou a cor do texto de fundo, para que seja mais fácil de ler.';
 $string['needsmoreheadings'] = 'Existe uma grande quantidade de texto sem títulos. Os títulos irão permitir aos utilizadores do Leitor de Ecrã navegar facilmente através das páginas, tornando-as mais acessíveis para todos.';
 $string['nowarnings'] = 'Parabéns, não foram encontrados problemas de acessibilidade!';

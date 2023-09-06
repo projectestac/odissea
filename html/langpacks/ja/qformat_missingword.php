@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'ja', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'ja', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,4 +30,5 @@ $string['endanswernotfound'] = 'インポートされたファイルコンテン
 $string['noanswerfound'] = '問題に答えがありません。';
 $string['pluginname'] = 'ミッシングワードフォーマット';
 $string['pluginname_help'] = 'ミッシングワードフォーマットではテキストファイルを使用して問題をインポートすることができます。';
+$string['pluginname_link'] = 'qformat/missingword';
 $string['privacy:metadata'] = 'ミッシングワード問題フォーマットプラグインはいかなる個人データも保存しません。';

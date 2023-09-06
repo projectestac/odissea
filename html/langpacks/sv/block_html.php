@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'sv', version '3.11'.
+ * Strings for component 'block_html', language 'sv', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = 'Tillåt ytterligare CSS-klasser';
-$string['configallowadditionalcssclasses'] = 'Lägger till en konfigurationsalternativ till HTML blockera instanser som möjliggör ytterligare CSS-klasser som ska ställas in.';
+$string['configallowadditionalcssclasses'] = 'Lägger till ett konfigurationsalternativ i textblockinstanser som gör att ytterligare CSS-klasser kan anges.';
 $string['configclasses'] = 'Ytterligare CSS-klasser';
-$string['configclasses_help'] = 'Syftet med den här konfigurationen är att hjälpa till med temat genom att hjälpa till att skilja HTML-block från varandra. Alla CSS-klasser som anges här (avgränsade med blanksteg) läggs till i blockets standardklasser.';
+$string['configclasses_help'] = 'Syftet med den här konfigurationen är att hjälpa till vid applicering av teman genom att hjälpa till att skilja olika Textblock från varandra. CSS-klasser som anges här (avgränsade med blanksteg) läggs till i blockets standardklasser.';
 $string['configcontent'] = 'Innehåll';
 $string['configtitle'] = 'Titel';
-$string['html:addinstance'] = 'Lägg till ett ny HTML block';
-$string['html:myaddinstance'] = 'Lägg till ett nytt HTML block på Mitt Moodle';
-$string['newhtmlblock'] = '(nytt HTML-block)';
-$string['pluginname'] = 'HTML';
-$string['privacy:metadata:block'] = 'HTML-blocket lagrar all sin information inom block-undersystemet.';
-$string['search:content'] = 'Innehåll i HTML-block';
+$string['html:addinstance'] = 'Lägg till nytt Textblock';
+$string['html:myaddinstance'] = 'Lägg till ett nytt Textblock till översiktssidan';
+$string['newhtmlblock'] = '(nytt textblock)';
+$string['pluginname'] = 'Text';
+$string['privacy:metadata:block'] = 'Textblocket lagrar all sin information inom block-undersystemet.';
+$string['search:content'] = 'Innehåll i Textblock';

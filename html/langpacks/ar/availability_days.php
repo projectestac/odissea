@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_days', language 'ar', version '3.11'.
+ * Strings for component 'availability_days', language 'ar', version '4.1'.
  *
  * @package     availability_days
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ajaxerror'] = 'خطأ عند الاتصال بالمخدم لتحويل الأوقات';
 $string['conditiontitle'] = 'أيام من البدء';
-$string['full_days'] = 'متاح عند يوم <strong>{$a}</strong> بدءاً من تاريخ بدء المقرر الدراسي';
+$string['full_days'] = 'متاح عند يوم <strong>{$a}</strong> بدءاً من تاريخ بدء المساق';
 $string['pluginname'] = 'التقييد حسب مقدار من الأيام من تاريخ البدء';
 $string['short_days'] = 'متاح عند يوم <strong>{$a}</strong>';
 $string['title'] = 'أيام';

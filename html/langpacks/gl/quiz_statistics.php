@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'gl', version '3.11'.
+ * Strings for component 'quiz_statistics', language 'gl', version '4.1'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -101,7 +101,6 @@ $string['questiontype'] = 'Tipo de pregunta';
 $string['quizinformation'] = 'Información da proba';
 $string['quizname'] = 'Nome da proba';
 $string['quizoverallstatistics'] = 'Estatísticas xerais da proba';
-$string['quizstatisticscleanuptask'] = 'Limpar os rexistros de caché de estatísticas de probas antigas';
 $string['quizstructureanalysis'] = 'Análise da estrutura da proba';
 $string['random_guess_score'] = 'Cualificación estimada ao chou';
 $string['rangebetween'] = '{$a->min} − {$a->max}';

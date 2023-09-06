@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'en', version '3.11'.
+ * Strings for component 'qtype_gapselect', language 'en', version '4.1'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -49,6 +49,8 @@ $string['privacy:metadata'] = 'Select missing words question type plugin allows 
 $string['privacy:preference:defaultmark'] = 'The default mark set for a given question.';
 $string['privacy:preference:penalty'] = 'The penalty for each incorrect try when questions are run using the \'Interactive with multiple tries\' or \'Adaptive mode\' behaviour.';
 $string['privacy:preference:shuffleanswers'] = 'Whether the answers should be automatically shuffled.';
+$string['regradeissuenumchoiceschanged'] = 'The number of choices in group {$a} changed.';
+$string['regradeissuenumgroupsschanged'] = 'The number of groups of choices has changed.';
 $string['shuffle'] = 'Shuffle';
 $string['tagsnotallowed'] = '{$a->tag} is not allowed. (Only {$a->allowed} are permitted.)';
 $string['tagsnotallowedatall'] = '{$a->tag} is not allowed. (No HTML is allowed here.)';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'facetoface', language 'el', version '3.11'.
+ * Strings for component 'facetoface', language 'el', version '4.1'.
  *
  * @package     facetoface
  * @category    string
@@ -63,7 +63,7 @@ $string['cancelbookingfor'] = 'Ακύρωση κράτησης για {$a}';
 $string['cancellation'] = 'Ακύρωση';
 $string['cancellationconfirm'] = 'Σίγουρα θέλετε ακύρωση της κράτησής σας για αυτή τη σύνοδο;';
 $string['cancellationinstrmngr'] = '# Ειδοποίηση για διευθυντή';
-$string['cancellationinstrmngr_help'] = 'Όταν επιλεγεί **Αποστολή ειδοποίησης στον διευθυντή**, το κείμενο στο πεδίο **Ειδοποίηση για διευθυντή** αποστέλλεται στον διευθυντή ενός μαθητευόμενου, πληροφορώντας τον ότι μια σύνοδος Πρόσωπο-με Πρόσωπο έχει ακυρωθεί.';
+$string['cancellationinstrmngr_help'] = 'Όταν επιλεγεί **Αποστολή ειδοποίησης στον διευθυντή**, το κείμενο στο πεδίο **Ειδοποίηση για διευθυντή** αποστέλλεται στον διευθυντή ενός εκπαιδευόμενου, πληροφορώντας τον ότι μια σύνοδος Πρόσωπο-με Πρόσωπο έχει ακυρωθεί.';
 $string['cancellationmessage'] = 'Μήνυμα ακύρωσης';
 $string['cancellationmessage_help'] = 'Αυτό το μήνυμα αποστέλλεται όταν χρήστες ακυρώνουν την κράτησή τους για μια σύνοδο.';
 $string['cancellations'] = 'Ακυρώσεις';
@@ -72,7 +72,7 @@ $string['cancellationsentmgr'] = 'Εσείς και ο διευθυντής σα
 $string['cancellationstablesummary'] = 'Λίστα ατόμων που ακύρωσαν τις εγγραφές τους σε σύνοδο.';
 $string['cancelreason'] = 'Αιτία';
 $string['cannotapproveatcapacity'] = 'Δεν μπορείτε να εγκρίνετε κι άλλους παρόντες καθώς αυτή η σύνοδος είναι πλήρης.';
-$string['cannotsignupsessioninprogress'] = 'Δεν είναι δυνατή η εγγραφή, αυτή η συνεδρία είναι σε εξέλιξη';
+$string['cannotsignupsessioninprogress'] = 'Δεν είναι δυνατή η εγγραφή· αυτή η σύνοδος είναι σε εξέλιξη';
 $string['cannotsignupsessionover'] = 'Δεν είναι δυνατή η εγγραφή· αυτή η σύνοδος έχει τελειώσει.';
 $string['capacity'] = 'Χωρητικότητα';
 $string['changemanageremailaddress'] = 'Αλλαγή διεύθυνσης ηλε.ταχυδρομείου διευθυντή';
@@ -137,7 +137,7 @@ $string['emailmanagerreminder'] = '# Αποστολή ειδοποίησης σ�
 $string['enrolled'] = 'εγγεγραμμένος';
 $string['error:canttakeattendanceforunstartedsession'] = 'Δεν μπορούν να καταγραφούν παρουσίες για μια σύνοδο που δεν έχει ακόμη αρχίσει.';
 $string['error:couldnotupdatemanageremail'] = 'Αδυναμία ενημέρωσης διεύθυνσης ηλε.ταχυδρομείου του διαχειριστή.';
-$string['error:couldnotupdatenotice'] = 'Αδυναμία ενημέρωσης ειδοποίησης ιστοτόπου.';
+$string['error:couldnotupdatenotice'] = 'Ειδοποίηση αδυναμίας ενημέρωσης ιστοτόπου.';
 $string['error:couldnotupdatesession'] = 'Αδυναμία ενημέρωσης συνόδου';
 $string['error:coursemisconfigured'] = 'Το μάθημα έχει μη έγκυρες ρυθμίσεις';
 $string['error:emptylocation'] = 'Η τοποθεσία ήταν κενή.';
@@ -173,7 +173,7 @@ $string['exportattendance'] = 'Εξαγωγή παρουσιών';
 $string['exporttofile'] = 'Εξαγωγή σε αρχείο';
 $string['facetoface'] = 'Πρόσωπο-Με-Πρόσωπο';
 $string['facetoface:addattendees'] = 'Προσθήκη παρόντων σε μια Πρόσωπο-με-Πρόσωπο σύνοδο.';
-$string['facetoface:addinstance'] = 'Προσθήκη στιγμιότυπου';
+$string['facetoface:addinstance'] = 'Προσθήκη στιγμιοτύπου';
 $string['facetoface:editsessions'] = 'Προσθήκη, τροποποίηση, αντιγραφή και διαγραφή συνόδων πρόσωπο-με-πρόσωπο';
 $string['facetoface:overbook'] = 'Εγγραφή για πλήρεις συνόδους.';
 $string['facetoface:removeattendees'] = 'Διαγραφή παρόντων σε μια Πρόσωπο-με-Πρόσωπο σύνοδο.';
@@ -271,7 +271,7 @@ $string['sessiondate'] = 'Ημερομηνία συνόδου είναι η ημ
 $string['sessiondatetime'] = 'Ημερομηνία/ώρα συνόδου';
 $string['sessiondatetimeknown'] = 'Ημερομηνία/ώρα συνόδου γνωστή';
 $string['sessionfinishtime'] = 'Ώρα λήξης συνόδου';
-$string['sessioninprogress'] = 'συνεδρία σε εξέλιξη';
+$string['sessioninprogress'] = 'σύνοδος σε εξέλιξη';
 $string['sessionisfull'] = 'Αυτή η σύνοδος είναι τώρα πλήρης. Θα πρέπει να διαλέξετε άλλη ώρα ή να μιλήσετε στον εκπαιδευτή.';
 $string['sessionover'] = 'λήξη συνόδου';
 $string['sessionrequiresmanagerapproval'] = 'Για να γίνει κράτηση σε αυτή τη σύνοδο, απαιτείται έγκριση διευθυντή.';
@@ -337,7 +337,7 @@ $string['signupfor'] = 'Εγγραφή για τον/την {$a}';
 $string['signupforsession'] = 'Εγγραφή για μια διαθέσιμη επερχόμενη σύνοδο';
 $string['signupforthissession'] = 'Εγγραφή για αυτή την Πρόσωπο-με-Πρόσωπο σύνοδο';
 $string['signups'] = 'Εγγραφές';
-$string['sitenoticesheading'] = 'Σημειώσεις ιστοτόπου';
+$string['sitenoticesheading'] = 'Ειδοποιήσεις ιστοτόπου';
 $string['status'] = 'Κατάσταση';
 $string['status_approved'] = 'Εγκρίθηκε';
 $string['status_booked'] = 'Με κράτηση';
@@ -379,7 +379,7 @@ $string['userdeletedcancel'] = 'Ο/Η χρήστης διαγράφηκε';
 $string['usernotsignedup'] = 'Κατάσταση: δεν έχει γίνει σύνδεση';
 $string['usersignedup'] = 'Κατάσταση: έχει γίνει σύνδεση';
 $string['usersignedupon'] = 'Ο/Η χρήστης έκανε εγγραφή στις {$a}';
-$string['validation:needatleastonedate'] = 'Πρέπει να δώσετε τουλάχιστον μία ημερομηνία ή να επισημάνετε τη συνεδρία ως αναμονή.';
+$string['validation:needatleastonedate'] = 'Πρέπει να δώσετε τουλάχιστον μία ημερομηνία ή να επισημάνετε τη σύνοδο ως αναμονή.';
 $string['venue'] = 'Τόπος';
 $string['viewallsessions'] = 'Εμφάνιση όλων των συνόδων';
 $string['viewsubmissions'] = 'Εμφάνιση υποβολών';

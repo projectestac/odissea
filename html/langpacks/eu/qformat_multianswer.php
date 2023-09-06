@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_multianswer', language 'eu', version '3.11'.
+ * Strings for component 'qformat_multianswer', language 'eu', version '4.1'.
  *
  * @package     qformat_multianswer
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Txertatutako erantzunak (Cloze)';
 $string['pluginname_help'] = 'Txertatutako erantzunak (Cloze) formatuak aukera anizkoitzeko galderak edo galdera laburrak barruan dituen testu zati bat inportatzeko aukera ematen du.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['privacy:metadata'] = 'Txertatutako erantzunak (Cloze) galdera-formatu pluginak ez du datu pertsonalik biltzen.';

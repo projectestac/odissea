@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'eu', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'eu', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'Audioa eta bideoa';
 $string['audiobitrate'] = 'Audioaren bit-emaria';
 $string['audiobitrate_desc'] = 'Audio-grabazioaren kalitatea (zenbaki altuenak kalitate handiena adierazten du)';
 $string['audiortc'] = 'Grabatu audioa';
+$string['audiotimelimit'] = 'Audioaren iraupen-muga segundotan';
+$string['audiotimelimit_desc'] = 'Audio-klipen grabazioetan baimendutako gehieneko iraupena';
 $string['gumabort'] = 'Zerbait arraroa gertatu da webkamera/mikrofonoa erabiltzea ekidin duena';
 $string['gumabort_title'] = 'Zerbait gertatu da';
 $string['gumnotallowed'] = 'Erabiltzaileak nabigatzaileari webkamera/mikrofonoa erabiltzeko baimena eman behar dio';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'Hasi grabatzen';
 $string['stoprecording'] = 'Gelditu grabazioa';
 $string['timelimit'] = 'Denbora-muga (segundoetan)';
 $string['timelimit_desc'] = 'Audio/bideo klipetako grabazioetan baimendutako gehieneko luzera';
+$string['timelimitwarning'] = '0 baino handiagoa den zenbaki bat idatzi behar duzu.';
 $string['uploadaborted'] = 'Igoera geratu da:';
 $string['uploadfailed'] = 'Igoerak huts egin du:';
 $string['uploadfailed404'] = 'Igoerak huts egin du: fitxategia handiegia da';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'osatuta';
 $string['videobitrate'] = 'Bideoaren bit-emaria';
 $string['videobitrate_desc'] = 'Bideo-grabazioaren kalitatea (zenbaki handiagoek kalitate hobea esan nahi dute)';
 $string['videortc'] = 'Grabatu bideoa';
+$string['videotimelimit'] = 'Bideoaren iraupen-muga segundotan';
+$string['videotimelimit_desc'] = 'Bideo-klipen grabazioetan baimendutako gehieneko iraupena';

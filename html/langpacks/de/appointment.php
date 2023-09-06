@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'appointment', language 'de', version '3.11'.
+ * Strings for component 'appointment', language 'de', version '4.1'.
  *
  * @package     appointment
  * @category    string
@@ -27,16 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['duplicate'] = 'Duplizieren';
 $string['duplicateappointment'] = 'Verabredung duplizieren';
-$string['duration'] = 'Dauer';
-$string['edit'] = 'Bearbeiten';
-$string['editappointment'] = 'Verabredung bearbeiten';
 $string['editingappointment'] = 'Verabredung wird bearbeitet';
 $string['email:message'] = 'Mitteilung';
 $string['email:subject'] = 'Betreff';
 $string['empty'] = 'leer';
-$string['emptylocation'] = 'Ort war leer';
-$string['enablewaitlist'] = 'Warteliste freischalten';
 $string['endtime'] = 'Ende';
-$string['enrolled'] = 'eingeschrieben';
-$string['entitiyappointment'] = 'Verabredung';
 $string['entitiysession'] = 'Sitzung';
+$string['modulename_link'] = 'Appointments';

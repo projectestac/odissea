@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'ar', version '3.11'.
+ * Strings for component 'block_html', language 'ar', version '4.1'.
  *
  * @package     block_html
  * @category    string
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowadditionalcssclasses'] = 'إسمح بصنوف CSS إضافية';
-$string['configallowadditionalcssclasses'] = 'أضف خياراً لتهيئة عينة كتلة HTML يسمح بوضع صنوف CSS إضافية.';
+$string['configallowadditionalcssclasses'] = 'إضافة خيار تهيئة إلى عينات كتل النص يسمح بوضع صنوف CSS إضافية.';
 $string['configclasses'] = 'صنوف CSS إضاقية';
-$string['configclasses_help'] = 'الغرض من هذه التهيئة هو لإعانة التنميط عبر المساعدة في التمييز ما بين كتل HTML المختلفة. أي صنوف CSS يتم إدخالها هنا (مفصولة بفراغات) سيتم إلحاقها بالصنوف الافتراضية للكتلة.';
+$string['configclasses_help'] = 'الغرض من هذه التهيئة هو لإعانة التنميط عبر المساعدة في التمييز ما بين كتل النص المختلفة. أي صنوف CSS يتم إدخالها هنا (مفصولة بفراغات) سيتم إلحاقها بالصنوف الافتراضية للكتلة.';
 $string['configcontent'] = 'المحتوى';
-$string['configtitle'] = 'عنوان كتلة HTML';
-$string['html:addinstance'] = 'إضافة كتلة جديدة من HTML';
-$string['html:myaddinstance'] = 'إضافة كتلة جديدة من HTML إلى لوحة التحكم';
-$string['newhtmlblock'] = '(كتلة HTML جديدة)';
-$string['pluginname'] = 'HTML';
-$string['privacy:metadata:block'] = 'إن كتلة HTML تخزن كل بياناتها ضمن النظام الفرعي للكتل.';
-$string['search:content'] = 'محتوى كتلة HTML';
+$string['configtitle'] = 'عنوان كتلة النص';
+$string['html:addinstance'] = 'إضافة كتلة نص جديدة';
+$string['html:myaddinstance'] = 'إضافة كتلة جديدة من النص إلى دفة القيادة';
+$string['newhtmlblock'] = '(كتلة نص جديدة)';
+$string['pluginname'] = 'النص';
+$string['privacy:metadata:block'] = 'إن كتلة النص تخزن كل بياناتها ضمن النظام الفرعي للكتل.';
+$string['search:content'] = 'محتوى كتلة النص';

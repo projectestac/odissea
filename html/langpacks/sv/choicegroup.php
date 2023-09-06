@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'sv', version '3.11'.
+ * Strings for component 'choicegroup', language 'sv', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -103,6 +103,7 @@ $string['members/'] = 'Medlemmar';
 $string['members/max'] = 'Medlemmar / Gruppstorlek';
 $string['modulename'] = 'Gruppval';
 $string['modulename_help'] = 'Gruppvalet ger studenterna möjlighet att gå med i grupper på kursen. Läraren kan avgöra vilka grupper det är möjligt för studenterna att välja och vad gruppernas maxstorlek är.';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Gruppval';
 $string['moveselectedusersto'] = 'Flytta valda användare...';
 $string['multipleenrollmentspossible'] = 'Tillåt anmälan till flera grupper';

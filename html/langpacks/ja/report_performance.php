@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'ja', version '3.11'.
+ * Strings for component 'report_performance', language 'ja', version '4.1'.
  *
  * @package     report_performance
  * @category    string
@@ -32,6 +32,9 @@ $string['check_backup_details'] = '自動バックアップを有効にするこ
 $string['check_cachejs_comment_disable'] = 'この設定を有効にした場合、ページ読み込みのパフォーマンスが改善されます。';
 $string['check_cachejs_comment_enable'] = 'この設定を無効にした場合、ページ読み込みが遅くなる可能性があります。';
 $string['check_cachejs_details'] = 'JavaScriptキャッシングおよび圧縮はページ読み込みのパフォーマンスを大幅に改善します。実運用サイトでの使用を強くお勧めします。';
+$string['check_dbschema_errors'] = 'データベーススキーマが一致しません。';
+$string['check_dbschema_name'] = 'データベーススキーマチェック';
+$string['check_dbschema_ok'] = 'データベースに問題はありません。';
 $string['check_debugmsg_comment_developer'] = 'DEVELOPER以外を設定した場合、パフォーマンスは少しだけ改善されます。';
 $string['check_debugmsg_comment_nodeveloper'] = '「DEVELOPER」に設定した場合、パフォーマンスは少しだけ影響を受けます。';
 $string['check_debugmsg_details'] = '開発者からリクエストされない限り開発者レベルに移行することにはほとんど利点がありません。開発者の場合は強くお勧めします。<p>あなたがエラーメッセージを取得した場合、他の場所にコピー＆ペーストしてください。デバッグメッセージをNONEに戻すことを強くお勧めします。あなたのサイト設定に関してデバッグメッセージは不正侵入者にヒントを与えることになります。また、パフォーマンスにも影響を及ぼします。</p>';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_btec', language 'zh_cn', version '3.11'.
+ * Strings for component 'gradingform_btec', language 'zh_cn', version '4.1'.
  *
  * @package     gradingform_btec
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = '添加标准';
 $string['and'] = '和';
+$string['btecgrading_link'] = 'BTEC_marking';
 $string['confirmdeletecriterion'] = '你确定要删除这一项吗?';
 $string['name'] = '名字';
 $string['no'] = '不';

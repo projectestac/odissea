@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz_statistics', language 'fr', version '3.11'.
+ * Strings for component 'offlinequiz_statistics', language 'fr', version '4.1'.
  *
  * @package     offlinequiz_statistics
  * @category    string
@@ -29,7 +29,7 @@ $string['actualresponse'] = 'Réponse actuelle';
 $string['allattempts'] = 'toutes les tentatives';
 $string['allattemptsavg'] = 'Note moyenne de toutes les tentatives';
 $string['allattemptscount'] = 'Nombre total des tentatives évaluées';
-$string['allgroups'] = 'Statistiques pour tous les groupes du test hors-ligne';
+$string['allgroups'] = 'Tous les groupes';
 $string['analysisofresponses'] = 'Analyse des réponses';
 $string['analysisofresponsesfor'] = 'Analyse des réponses pour {$a}.';
 $string['attempts'] = 'Tentatives';
@@ -90,15 +90,15 @@ $string['positions'] = 'Position(s)';
 $string['preferencespage'] = 'Préférences pour cette page uniquement';
 $string['preferencessave'] = 'Enregistrer les préférences';
 $string['privacy:metadata'] = 'Ce plugin n\'enregistre aucune donnée personnelle.';
-$string['questionandanswerstats'] = 'Questions + Réponses';
-$string['questionandanswerstatsheader'] = 'Analyse statistique des - questions et - réponses';
+$string['questionandanswerstats'] = 'Questions et réponses';
+$string['questionandanswerstatsheader'] = 'Analyse des questions et des réponses';
 $string['questioninformation'] = 'Info question';
 $string['questionname'] = 'Nom de question';
 $string['questionnumber'] = 'N° Q';
 $string['questionstatistics'] = 'Statistiques question';
-$string['questionstats'] = 'Analyse question';
+$string['questionstats'] = 'Analyse des questions';
 $string['questionstatsfilename'] = 'statistiques_de_question';
-$string['questionstatsheader'] = 'Statistiques - Analyse des questions';
+$string['questionstatsheader'] = 'Analyse des questions';
 $string['questiontype'] = 'Type de question';
 $string['random_guess_score'] = 'Score de réponses au hasard';
 $string['recalculatenow'] = 'Recalculer maintenant';
@@ -111,12 +111,12 @@ $string['standarderror'] = 'Erreur standard pour {$a}';
 $string['statistics'] = 'Statistiques';
 $string['statistics:componentname'] = 'Rapport de statistiques des tests hors-ligne';
 $string['statistics:view'] = 'Consulter le rapport de statistiques';
-$string['statisticsforgroup'] = 'Statistiques pour le groupe';
+$string['statisticsforgroup'] = 'Groupe';
 $string['statisticshelp'] = 'Aide pour les statistiques de tests hors-ligne';
 $string['statisticsreport'] = 'Rapport de statistiques';
 $string['statisticsreportgraph'] = 'Statistique des positions de question';
 $string['statsfor'] = 'Statistiques de test hors-ligne pour {$a}';
 $string['statsoverview'] = 'Vue d\'ensemble';
-$string['statsoverviewheader'] = 'Vue d\'ensemble';
+$string['statsoverviewheader'] = 'Informations sur le test';
 $string['worstgrade'] = 'La note la plus basse :';
 $string['wrong'] = 'Réponse incorrecte';

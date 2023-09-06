@@ -70,13 +70,16 @@ class qtype_essaywiris_format_add_cas_renderer {
         // Warning: this function is repeated in qtype_wq_renderer. It could be static and reused.
         return html_writer::empty_tag('input', array('class' => 'wirisauxiliarcasapplet', 'type' => 'hidden'));
     }
+    public function set_displayoptions(question_display_options $displayoptions) {
+        $this->base->set_displayoptions($displayoptions);
+    }
 }
 
 /**
  * Output a hidden and empty input for answer field so the auxiliar CAS is the
  * only input field.
  * **/
-class qtype_essaywiris_format_replace_cas_renderer extends plugin_renderer_base {
+class qtype_essaywiris_format_replace_cas_renderer extends qtype_essay_format_renderer_base {
 
     public function response_area_read_only($name, question_attempt $qa, question_attempt_step $step, $lines, $context) {
         return $this->response_area_input($name, $qa, $step, $lines, $context);

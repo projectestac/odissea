@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'sv', version '3.11'.
+ * Strings for component 'availability', language 'sv', version '4.1'.
  *
  * @package     availability
  * @category    string
@@ -33,8 +33,8 @@ $string['condition_group_info'] = 'Lägg till en uppsättning nästlade begräns
 $string['enableavailability'] = 'Aktivera begränsad åtkomst';
 $string['enableavailability_desc'] = 'När detta är aktiverat kan du ange villkor (t.ex. datum, betyg eller slutförande) för att styra åtkomsten till aktiviteten.';
 $string['error_list_nochildren'] = 'Kombination av begränsningar måste innehålla minst ett villkor';
-$string['hidden_all'] = 'Helt dold om användaren inte uppfyller villkoren';
-$string['hidden_individual'] = 'Helt dold om användaren inte uppfyller detta villkor';
+$string['hidden_all'] = 'Helt dold om användaren <strong>inte</strong> uppfyller villkoren';
+$string['hidden_individual'] = 'Helt dold om användaren <strong>inte</strong> uppfyller detta villkor';
 $string['hidden_marker'] = '(annars dolt)';
 $string['hide_verb'] = 'Klicka för att dölja';
 $string['invalid'] = 'Vänligen ange';
@@ -65,7 +65,8 @@ $string['privacy:metadata'] = 'Undersystemet för åtkomstbegränsning lagrar in
 $string['restrictaccess'] = 'Begränsa åtkomst';
 $string['restrictbygroup'] = 'Lägg till åtkomstbegränsning för grupp/gruppindelning';
 $string['setheading'] = '{$a->number} Består av {$a->count} begränsning(ar)';
-$string['show_verb'] = 'Klicka för att visa gråmarkerade';
-$string['shown_all'] = 'Visas gråmarkerade om användaren inte uppfyller villkoren';
-$string['shown_individual'] = 'Visas gråmarkerade om användaren inte uppfyller detta villkor';
+$string['show_verb'] = 'Klicka för att visa';
+$string['showmore'] = 'Visa mer';
+$string['shown_all'] = 'Visas om användaren <strong>inte</strong> uppfyller villkoren';
+$string['shown_individual'] = 'Visas om användaren <strong>inte</strong> uppfyller detta villkor';
 $string['unknowncondition'] = 'Okänt villkor (borttagen villkorsplugin)';

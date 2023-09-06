@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'eu', version '3.11'.
+ * Strings for component 'tool_uploadcourse', language 'eu', version '4.1'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -39,7 +39,7 @@ $string['cannotreadbackupfile'] = 'Ezin da segurtasun-kopiaren fitxategia irakur
 $string['cannotrenamecoursenotexist'] = 'Ezin zaio existitzen ez den ikastaro bati izena aldatu';
 $string['cannotrenameidnumberconflict'] = 'Ezin zaio ikastaroari izena aldatu, ID zenbakiak gatazka sortzen du existitzen den beste ikastaro batenarekin';
 $string['cannotrenameshortnamealreadyinuse'] = 'Ezin zaio ikastaroari izena aldatu, dagoeneko izen laburra erabilita baitago';
-$string['cannotupdatefrontpage'] = 'Debekatuta dago hasiera-orria aldatzea';
+$string['cannotupdatefrontpage'] = 'Ez duzu hasiera-orria aldatzeko baimenik.';
 $string['canonlyrenameinupdatemode'] = 'Ikastaroari soilik eguneratzea baimenduta dagoenean aldatu dakioke izena.';
 $string['canonlyresetcourseinupdatemode'] = 'Ikastaro bat soilik eguneratze-moduan berrabiaraz daiteke';
 $string['couldnotresolvecatgorybyid'] = 'Ezin izan da ID hori duen kategoriarik aurkitu';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'es', version '3.11'.
+ * Strings for component 'hvp', language 'es', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -340,6 +340,7 @@ Además de ser una herramienta de autoría para contenido enriquecido, H5P le pe
 Las interacciones con el usuario y los puntajes son monitoreados usando xAPI y están disponibles mediante el Libro de Calificaciones de Moodle. Tenga en cuenta que es actualmente posible para personas con habilidades de programación el hacer trampa en interacciones H5P y obtener el puntaje completo sin saber las respuestas correctas. H5Ps no deben usarse  para exámenes sumativos o similares.
 
 Usted añade contenido interactivo H5P al crear contenido usando la herramienta de autoría incluida o al subir archivos H5P encontrados en otros sitios con H5P.';
+$string['modulename_link'] = 'https://h5p.org/moodle-more-help';
 $string['modulenameplural'] = 'Contenido interactivo';
 $string['next'] = 'Siguiente';
 $string['nextpage'] = 'Siguiente página';
@@ -366,7 +367,7 @@ $string['nopermissiontoviewcontenthubcache'] = 'Usted no tiene permiso para ver 
 $string['nopermissiontoviewcontenttypes'] = 'No tienes permiso para ver los tipos de contenido.';
 $string['nopermissiontoviewresult'] = 'No tiene permiso para ver los resultados de este contenido.';
 $string['nosuchlibrary'] = 'No hay tal biblioteca';
-$string['notapplicable'] = 'NO disponible';
+$string['notapplicable'] = 'No disponible';
 $string['nounzip'] = 'El archivo que cargó no es un paquete HTML5 válido (no podemos descomprimirlo)';
 $string['noversionattribution'] = 'Atribución';
 $string['noversionattributionnc'] = 'Atribución-NoComercial';

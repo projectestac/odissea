@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'zh_cn', version '3.11'.
+ * Strings for component 'error', language 'zh_cn', version '4.1'.
  *
  * @package     error
  * @category    string
@@ -158,6 +158,7 @@ $string['cannotsetupcapformod'] = '无法为{$a}设置权限';
 $string['cannotsetupcapforplugin'] = '无法为{$a}设置权限';
 $string['cannotshowhidecoursesincategory'] = '无法在类别{$a}中显示或隐藏课程。';
 $string['cannotsignup'] = '您不能创建新账户因为您已经以{$a}的身份登录了。';
+$string['cannotswitcheditmodeon'] = '无法打开编辑模式';
 $string['cannotunassigncap'] = '无法从角色{$a->role}取消已废弃的权限{$a->cap}';
 $string['cannotunassignrolefrom'] = '无法取消此用户id为{$a}的角色';
 $string['cannotunzipfile'] = '无法解压文件';
@@ -410,6 +411,7 @@ $string['messagingdisable'] = '本站的消息系统已禁用';
 $string['mimetexisnotexist'] = '您的系统未配置运行mimeTeX。您需要从<a href="http://www.forkosh.com/mimetex.zip">http://www.forkosh.com/mimetex.zip</a> 下载C语言源代码，编译后将可执行文件复制到您的 moodle/filter/tex/ 目录。';
 $string['mimetexnotexecutable'] = '自定义mimetex不可执行！';
 $string['missing_moodle_backup_xml_file'] = '找不到备份XML文件：{$a}';
+$string['missingcategoryrole'] = '无法为用户分配角色：缺少类别角色。';
 $string['missingfield'] = '字段“{$a}”不存在';
 $string['missingkeyinsql'] = '错误：查询语句缺少参数"{$a}"';
 $string['missingparam'] = '缺少必要的参数（{$a}）';
@@ -457,6 +459,7 @@ $string['nonmeaningfulcontent'] = '无意义的内容';
 $string['noparticipants'] = '找不到此课程的参与人';
 $string['noparticipatorycms'] = '很抱歉，您没有可参与的课程模块来生成报表';
 $string['nopermissions'] = '很抱歉，您目前没有执行此操作的权限（{$a}）';
+$string['nopermissiontoaccesspage'] = '您没有访问此页面的权限。';
 $string['nopermissiontocomment'] = '你不能添加评论';
 $string['nopermissiontodelentry'] = '您不能删除别人的条目！';
 $string['nopermissiontoeditcomment'] = '您不能编辑其他人的评论！';
@@ -566,6 +569,7 @@ $string['unknowcontext'] = '此场景({$a})在get_child_contexts中是未知场�
 $string['unknowformat'] = '未知格式（{$a}）';
 $string['unknownbackupexporterror'] = '准备导入信息时发生未知错误';
 $string['unknownblockregion'] = '此页无法识别版块区\'{$a}\'。';
+$string['unknowncategory'] = '类别 ID 编号为“{$a}”的未知类别';
 $string['unknowncontext'] = '这是未知场景。';
 $string['unknowncourse'] = '未知的课程命名为：“{$a}”';
 $string['unknowncourseidnumber'] = '未知的课程ID：“{$a}”';
@@ -597,6 +601,7 @@ $string['useradminodelete'] = '不能删除管理员账户';
 $string['userautherror'] = '未知的验证插件';
 $string['userauthunsupported'] = '这里不支持验证插件';
 $string['useremailduplicate'] = '地址重复';
+$string['userisfilteredout'] = '此用户与筛选器和表单选项不匹配！';
 $string['usermustbemnet'] = 'MNET访问控制列表中的用户必须是远程MNET用户';
 $string['usernamelowercase'] = '用户名必须小写';
 $string['usernotaddederror'] = '未添加用户-错误';

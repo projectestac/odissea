@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'fr', version '3.11'.
+ * Strings for component 'repository', language 'fr', version '4.1'.
  *
  * @package     repository
  * @category    string
@@ -267,5 +267,5 @@ $string['usenonjsfilemanager'] = 'Ouvrir le gestionnaire de fichiers dans une no
 $string['usenonjsfilepicker'] = 'Ouvrir le sélecteur de fichiers dans une nouvelle fenêtre';
 $string['usercontextrepositorydisabled'] = 'Vous ne pouvez pas modifier ce dépôt dans le contexte utilisateur';
 $string['wrongcontext'] = 'Vous ne pouvez pas accéder à ce contexte';
-$string['xhtmlerror'] = 'Vous utilisez probablement l\'entête XHTML strict. Certains composants YUI ne fonctionnent pas dans ce mode ; veuillez le désactiver.';
+$string['xhtmlerror'] = 'Vous utilisez probablement l\'en-tête XHTML strict. Certains composants YUI ne fonctionnent pas dans ce mode ; veuillez le désactiver.';
 $string['ziped'] = 'Dossier compressé correctement';

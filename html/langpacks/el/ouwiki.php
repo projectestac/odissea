@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ouwiki', language 'el', version '3.11'.
+ * Strings for component 'ouwiki', language 'el', version '4.1'.
  *
  * @package     ouwiki
  * @category    string
@@ -35,7 +35,7 @@ $string['editend'] = 'Αποτροπή επεξεργασίας από';
 $string['editingpage'] = 'Επεξεργασία σελίδας...';
 $string['editingsection'] = 'Επεξεργασία ενότητας: {$a}';
 $string['editpage'] = 'Επεξεργασία σελίδας';
-$string['editsection'] = 'Επεξεργασία τμήματος';
+$string['editsection'] = 'Επεξεργασία ενότητας';
 $string['emptypagetitle'] = 'Ο τίτλος της νέας σελίδας δεν πρέπει να είναι κενός.';
 $string['import_confirm_conflicts_label'] = 'Ρύθμιση συγχώνευσης:';
 $string['import_confirm_conflicts_locked'] = 'Η σελίδα {$a} είναι κλειδωμένη';

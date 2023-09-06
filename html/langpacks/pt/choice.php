@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'pt', version '3.11'.
+ * Strings for component 'choice', language 'pt', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'Modificar e apagar respostas';
 $string['choice:downloadresponses'] = 'Descarregar respostas';
 $string['choice:readresponses'] = 'Ver respostas';
 $string['choice:view'] = 'Ver atividade Sondagem';
-$string['choiceactivityname'] = 'Sondagem: {$a}';
 $string['choiceclose'] = 'Permitir respostas até';
-$string['choicecloseson'] = 'A sondagem encerra em {$a}';
 $string['choicefull'] = 'Uma, ou mais, das opções selecionadas já não estão disponíveis pois atingiram o limite de respostas. A sua resposta não foi guardada. Por favor, selecione outra opção.';
 $string['choicename'] = 'Designação';
 $string['choiceopen'] = 'Permitir respostas a partir de';
@@ -76,10 +74,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão da Sondagem';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Sondagem.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão da Sondagem';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Sondagem durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido, Visualizado feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização da Sondagem';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Sondagem.';
 $string['indicator:socialbreadthdef'] = 'Socialização da Sondagem';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Sondagem durante esse intervalo de análise (Níveis = Sem participação, Participante individual, Participante com outros)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'Limite máximo de respostas';
 $string['limita'] = 'Máximo de respostas: {$a}';
 $string['limitanswers'] = 'Limitar o número de respostas permitidas';

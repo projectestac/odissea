@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ca', version '3.11'.
+ * Strings for component 'admin', language 'ca', version '4.1'.
  *
  * @package     admin
  * @category    string
@@ -50,7 +50,6 @@ $string['allcountrycodes'] = 'Tots els codis de país';
 $string['allowattachments'] = 'Permet fitxers adjunts';
 $string['allowbeforeblock'] = 'La llista de permeses es processa inicialment';
 $string['allowbeforeblockdesc'] = 'Per defecte, les entrades de la llista d\'IP blocades es comproven primer. Si s\'activa aquesta opció, es processen abans les entrades de la llista d\'IP permeses que la llista de les blocades.';
-$string['allowblockstodock'] = 'Permet que els blocs utilitzin la barra lateral';
 $string['allowcategorythemes'] = 'Permet temes per categories';
 $string['allowcohortthemes'] = 'Permet temes de cohort';
 $string['allowcoursethemes'] = 'Permet temes per curs';
@@ -85,7 +84,6 @@ $string['authsettings'] = 'Gestió de l\'autenticació';
 $string['autolang'] = 'Detecció automàtica d\'idioma';
 $string['autolangusercreation'] = 'En crear un compte, estableix l\'idioma del navegador com a idioma preferit';
 $string['autologinguests'] = 'Inici de sessió automàtic dels visitants';
-$string['availablelicenses'] = 'Tipus de llicències de materials disponibles';
 $string['availableto'] = 'Disponible per a ';
 $string['backgroundcolour'] = 'Color transparent';
 $string['backup_shortname'] = 'Utilitza el nom del curs en el nom de fitxer de la còpia de seguretat';
@@ -169,7 +167,6 @@ $string['configallcountrycodes'] = 'Aquesta és la llista de països que es pot 
 Podeu escriure una llista de codis separats amb comes, per exemple «CT, FR_ES». Si n\'hi afegiu de nous, que no són estàndards, els haureu d\'afegir a la llista <i>countries.php</i> del vostre paquet d\'idioma i al paquet «en» (és el cas de l\'exemple CT, que no està inclòs a les llistes de països).';
 $string['configallowassign'] = 'Per cada rol de la columna de l\'esquerra, escolliu quins rols pot assignar a altres.';
 $string['configallowattachments'] = 'Si s\'habilita, els correus electrònics enviats des del lloc podran dur adjunts com ara insígnies.';
-$string['configallowblockstodock'] = 'Permet que els usuaris puguin minimitzar els blocs a la barra especial si el tema seleccionat té habilitada aquesta opció i en permet l\'ús.';
 $string['configallowcategorythemes'] = 'Si habiliteu aquesta opció, es podran definir temes diferents per a cada categoria de cursos. El tema definit per a una categoria s\'aplicarà a tots els cursos i a totes les subcategories dins d\'aquesta categoria, tret que es defineixin temes específics per a un curs o una subcategoria. AVÍS: pot afectar el rendiment del servidor.';
 $string['configallowcohortthemes'] = 'Si ho habiliteu, aleshores es podran establir temes a nivell de cohort. Això afectarà tots els usuaris amb només una cohort, o més d\'una si tenen el mateix tema.';
 $string['configallowcoursethemes'] = 'Si activeu aquesta opció, cada curs podrà definir el seu tema. Els temes dels cursos tenen prioritat sobre qualsevol altre tema seleccionat (lloc, usuari, categoria, cohort o temes definits per URL).';
@@ -191,7 +188,7 @@ $string['configallowuserswitchrolestheycantassign'] = 'Per defecte, moodle/role:
 És recomanable que els paràmetres de la taula «Permet l\'assignació de rols» no permetin als usuaris canviar cap a rols amb més capacitats que el que tenen en aqueix moment.';
 $string['configallowuserthemes'] = 'Si habiliteu aquesta opció, els usuaris podran definir els seus temes. Els temes dels usuaris tenen més prioritat sobre el tema del lloc (però no sobre els temes dels cursos).';
 $string['configallowview'] = 'Per cada rol de la columna de l\'esquerra, seleccioneu quins rols pot veure, cercar o filtrar per.';
-$string['configallusersaresitestudents'] = 'Cal considerar com a estudiants TOTS els usuaris en les activitats de la pàgina inicial d\'aquest lloc? Si la resposta és «Sí», llavors qualsevol usuari amb un compte confirmat podrà participar com a estudiant en aquestes activitats. Si la resposta és «No», llavors només els usuaris que ja siguin membres d\'almenys un curs podran participar en aquestes activitats de la pàgina inicial. Només els administradors i els professors que hi hagin estat assignats poden actuar com a professors d\'aquestes activitats.';
+$string['configallusersaresitestudents'] = 'Cal considerar com a estudiants TOTS els usuaris en les activitats de la pàgina inicial d\'aquest lloc? Si la resposta és «Sí», llavors qualsevol usuari amb un compte confirmat podrà participar com a estudiant en aquestes activitats. Si la resposta és «No», llavors només els usuaris que ja siguin membres d\'almenys un curs podran participar en aquestes activitats de la pàgina inicial. Només els administradors i els professors que hi hagin estat assignats expressament poden actuar com a professors de les activitats de la pàgina principal.';
 $string['configauthenticationplugins'] = 'Trieu els connectors d\'autenticació que vulgueu utilitzar i disposeu-los per ordre de preferència.';
 $string['configautolang'] = 'Configura l\'idioma per defecte segons el del navegador. Si inhabiliteu aquest paràmetre s\'utilitzarà l\'idioma per defecte del lloc.';
 $string['configautolangusercreation'] = 'Si està activat, quan es crea automàticament el compte d\'un usuari en entrar per primera vegada (per exemple, mitjançant autenticació LDAP o OAuth 2), s\'estableix com al seu idioma preferit l\'idioma del navegador de l\'usuari. Altrament, s\'estableix com a idioma preferit de l\'usuari l\'idioma per defecte del lloc.';
@@ -349,7 +346,6 @@ $string['configproxytype'] = 'Tipus d\'intermediari web (PHP5 i extensió cURL n
 $string['configproxyuser'] = 'Nom d\'usuari requerit per accedir a Internet a través d\'un intermediari. Si no, deixeu el paràmetre en blanc (extensió PHP cURL necessària).';
 $string['configrecaptchaprivatekey'] = 'Cadena de caràcters (clau privada) utilitzada per a la comunicació entre el vostre servidor Moodle i el servidor de reCAPTCHA. Podeu obtenir les claus reCAPTCHA a <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['configrecaptchapublickey'] = 'Cadena de caràcters (clau pública) utilitzada per visualitzar l\'element reCAPTCHA en el formulari de registre. Podeu obtenir les claus reCAPTCHA a <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
-$string['configrequestcategoryselection'] = 'Permet la selecció d\'una categoria quan se sol·licita un curs.';
 $string['configrequestedstudentname'] = 'Paraula per a «estudiant» en els cursos sol·licitats';
 $string['configrequestedstudentsname'] = 'Paraula per a «estudiants» en els cursos sol·licitats';
 $string['configrequestedteachername'] = 'Paraula per a «professor» en els cursos sol·licitats';
@@ -409,7 +405,6 @@ Per exemple: standard,orangewhite';
 $string['configtimezone'] = 'Aquesta és la zona horària per defecte en què es mostren les dates. Cada usuari pot rectificar aquest paràmetre al seu perfil. Les tasques «cron» i altres paràmetres del servidor s\'especifiquen en relació amb aquesta zona horària. Hauríeu de canviar aquest paràmetre si es mostra com «Zona horària no vàlida».';
 $string['configuseblogassociations'] = 'Els usuaris podran organitzar el seu blog associant-ne les entrades amb cursos i mòduls de cursos?';
 $string['configuseexternalyui'] = 'En lloc d\'utilitzar fitxers locals, utilitzeu fitxers en línia disponibles als servidors de Yahoo. COMPTE: la connexió a Internet ha d\'estar establerta; si no, no treballaran les característiques d\'AJAX al vostre lloc. Aquest paràmetre no és compatible amb llocs que utilitzin https.';
-$string['configuserquota'] = 'Nombre màxim de bytes que un usuari pot emmagatzemar a la seva pròpia àrea de fitxers privada. {$a->bytes} bytes == {$a->displaysize}';
 $string['configusesitenameforsitepages'] = 'Si està habilitat el nom curt del lloc s\'utilitzarà en la navegació per les pàgines del node en comptes d\'utilitzar \'Pàgines del lloc\'';
 $string['configusetags'] = 'Cal habilitar la funcionalitat d\'etiquetes arreu del lloc?';
 $string['configvariables'] = 'Variables';
@@ -441,6 +436,7 @@ $string['courselistshortnames'] = 'Mostra els noms expandits de cursos';
 $string['courselistshortnames_desc'] = 'Si està activat, a la llista de cursos es mostrarà el nom curt dels cursos, a més del nom complet. Si cal, els noms expandits de cursos poden ser personalitzats mitjançant l\'edició de la cadena de llengua «courseextendednamedisplay», utilitzant la funció de personalització d\'idioma.';
 $string['coursemgmt'] = 'Gestiona cursos i categories';
 $string['courseoverview'] = 'Resum dels cursos';
+$string['coursepage'] = 'Pàgina del curs';
 $string['courserequestnotify'] = 'Notificació de sol·licitud de curs';
 $string['courserequestnotifyemail'] = 'L\'usuari {$a->user} ha sol·licitat un nou curs: {$a->link}';
 $string['courserequests'] = 'Sol·licitud de cursos';
@@ -454,6 +450,7 @@ $string['cron'] = 'Cron';
 $string['cron_enabled'] = 'Activa el cron';
 $string['cron_enabled_desc'] = 'Normalment el cron hauria d\'estar activat, tot i que aquest paràmetre permet desactivar-lo temporalment, per exemple, abans d\'un reinici del servidor. Si està desactivat, el sistema impedeix que s\'iniciïn tasques de fons noves. Noteu que el cron no ha d\'estar desactivat durant un període de temps llarg, perquè això impedirà que funcionalitats importants es duguin a terme.';
 $string['cron_help'] = 'L\'script cron.php executa una sèrie de tasques en intervals programats, com ara l\'enviament de notificacions de nous missatges a fòrums. L\'script s\'ha d\'executar regularment, idealment cada minut.';
+$string['cron_link'] = 'admin/cron';
 $string['cronclionly'] = 'Execució del cron només des de la línia d\'ordres';
 $string['cronerrorclionly'] = 'L\'administrador ha inhabilitat l\'accés a aquesta pàgina per Internet.';
 $string['cronerrorpassword'] = 'No heu proporcionat una contrasenya vàlida per accedir a aquesta pàgina';
@@ -782,7 +779,6 @@ $string['managecontextunlock'] = 'Descongela aquest context';
 $string['manageformats'] = 'Gestiona els formats de curs';
 $string['manageformatsgotosettings'] = 'El format per defecte pot canviar-se en {$a}';
 $string['managelang'] = 'Gestió';
-$string['managelicenses'] = 'Gestiona les llicències';
 $string['manageqbehaviours'] = 'Gestiona el comportament de les preguntes';
 $string['manageqtypes'] = 'Gestiona els tipus de preguntes';
 $string['maturity100'] = 'Beta';
@@ -1051,10 +1047,6 @@ $string['quizattemptsupgradedmessage'] = 'En la versió Moodle 2.1 va haver-hi u
 $string['recaptchaprivatekey'] = 'Clau privada de ReCAPTCHA';
 $string['recaptchapublickey'] = 'Clau ReCAPTCHA del lloc';
 $string['register'] = 'Registreu el vostre lloc';
-$string['registermoodleorg'] = 'Quan registreu el vostre lloc';
-$string['registermoodleorgli1'] = 'Heu estat afegit a una llista de correu de baix volum per a notificacions importants com ara alertes de seguretat i nous llançaments de Moodle.';
-$string['registermoodleorgli2'] = 'Les estadístiques sobre el vostre lloc s\'afegiran a les {$a} de la comunitat Moodle de tot el món.';
-$string['registerwithmoodleorg'] = 'Registreu el vostre lloc a Moodle.org';
 $string['registration'] = 'Registre';
 $string['registration_help'] = 'Us recomanem que registreu el vostre lloc a Moodle.org per rebre les alertes de seguretat per correu electrònic i per accedir a Moodle.net, la nostra plataforma per compartir cursos.';
 $string['registrationwarning'] = 'El vostre lloc encara no està registrat.';
@@ -1063,7 +1055,6 @@ $string['releasenoteslink'] = 'Consulteu la informació sobre aquesta versió de
 $string['rememberusername'] = 'Recorda el nom d\'usuari';
 $string['rememberusername_desc'] = 'Habiliteu aquesta opció si voleu emmagatzemar les galetes permanents amb els noms d\'usuari durant l\'inici de sessió. Les galetes permanents poden ser considerades un problema de privacitat si s\'utilitzen sense el vostre consentiment.';
 $string['reportsmanage'] = 'Gestiona informes';
-$string['requestcategoryselection'] = 'Habilita la selecció de categories';
 $string['required'] = 'Obligatori';
 $string['requiredentrieschanged'] = '<strong>IMPORTANT: LLEGIU-HO<br/>(Aquest avís sols es mostra durant aquesta actualització)</strong><br/> A causa de la correcció d\'un error, el comportament de les activitats quan s\'utilitzen els paràmetres «Entrades requerides» i «Entrades requerides abans de veure els paràmetres» han canviat. Podeu llegir una explicació més detallada dels canvis al <a href="http://moodle.org/mod/forum/discuss.php?d=110928" target="_blank">mòdul fòrum de la base de dades</a>. El comportament esperat d\'aquests canvis pot llegir-se als <a href="http://docs.moodle.org/en/Adding/editing_a_database#Required_entries" target="_blank">documents de Moodle</a>. <br/><br/>Aquest canvi afecta les bases de dades següents del vostre sistema: (Anomeneu i deseu aquesta llista ara i, després de l\'actualització, comproveu que aquestes activitats encara funcionen de la forma en què els professors esperen.) <br/><strong>{$a->text}</strong><br/>';
 $string['requiremodintro'] = 'Demana una descripció de l\'activitat';
@@ -1310,6 +1301,7 @@ $string['upgradelogsinfo'] = 'S\'han introduït alguns canvis en la manera d\'em
 $string['upgradepluginsfirst'] = 'Es recomana que instal·leu abans totes les actualitzacions disponibles';
 $string['upgradepluginsinfo'] = 'S\'estan actualitzant els connectors';
 $string['upgradepluginsinfo_help'] = 'Hi ha actualitzacions disponibles per a alguns dels vostres connectors. Hauríeu d\'instal·lar-los tots abans d\'actualitzar la base de dades de Moodle. Si el vostre lloc no admet el desplegament automàtic d\'actualitzacions, haureu de descarregar les noves versions dels connectors i instal·lar-les al vostre servidor de forma manual.';
+$string['upgradepluginsinfo_link'] = 'admin/upgradepluginsinfo';
 $string['upgradesettings'] = 'Nous paràmetres';
 $string['upgradesettingsintro'] = 'Els paràmetres que es mostren a continuació han estat afegits en la darrera actualització de Moodle. Feu els canvis necessaris en els valors per defecte i tot seguit feu clic a «Desa els paràmetres» al capdavall de la pàgina.';
 $string['upgradestalefiles'] = 'S\'han detectat fitxers d\'instal·lació no vàlids, l\'actualització no pot continuar.';
@@ -1364,6 +1356,5 @@ $string['warningcurrentsetting'] = 'Valor actual no vàlid: {$a}';
 $string['warningiconvbuggy'] = 'La vostra versió de la llibreria iconv no és compatible amb el modificador //IGNORE. En lloc seu hauríeu d\'instal·lar l\'extensió mbstring que pot utilitzar-se per netejar cadenes que continguin caràcters UTF-8 no vàlids.';
 $string['webproxy'] = 'Intermediari web';
 $string['webproxyinfo'] = 'Empleneu les opcions següents si el vostre servidor Moodle no pot accedir directament a Internet. L\'accés a Internet és necessari per baixar dades d\'entorn, paquets d\'idioma, canals RSS, zones horàries, etc.<br /><em>Es recomana l\'extensió de PHP cURL</em>.';
-$string['xmlrpcrecommended'] = 'Us cal l\'extensió xmlrpc per a les comunicacions amb el concentrador (<em>hub</em>), i també és útil per als serveis web i les xarxes Moodle.';
 $string['yuicomboloading'] = 'Carregant el combinat YUI';
 $string['ziprequired'] = 'Us cal l\'extensió Zip de PHP a Moodle, no es poden utilitzar els binaris info-ZIP o la llibreria PclZip.';

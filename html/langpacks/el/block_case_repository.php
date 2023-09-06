@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_case_repository', language 'el', version '3.11'.
+ * Strings for component 'block_case_repository', language 'el', version '4.1'.
  *
  * @package     block_case_repository
  * @category    string
@@ -63,7 +63,7 @@ $string['activity_learningstyle_perspective_level3'] = 'μικτός εξίσο�
 $string['activity_learningstyle_perspective_level4'] = 'μάλλον σφαιρικός παρά σειριακός';
 $string['activity_learningstyle_perspective_level5'] = 'κυρίως σφαιρικός';
 $string['activity_learningstyle_processing'] = 'Τύπος διαδραστικότητας';
-$string['activity_learningstyle_processing_level1'] = 'Ενεργό';
+$string['activity_learningstyle_processing_level1'] = 'ενεργό';
 $string['activity_learningstyle_processing_level2'] = 'μάλλον για ενέργεια παρά για έκθεση';
 $string['activity_learningstyle_processing_level3'] = 'εξίσου και τα δύο';
 $string['activity_learningstyle_processing_level4'] = 'μάλλον εκθέτει παρά ενεργεί';
@@ -104,7 +104,7 @@ $string['config_difftype_none'] = '(ποτέ)';
 $string['config_header_preset'] = 'Ορισμός προρυθμίσεων μεταδεδομένων δραστηριότητας';
 $string['config_legend_action'] = 'Ενέργεια ρύθμισης/προσαρμογής';
 $string['config_legend_adjust'] = 'Ρύθμιση/προσαρμογή παραμέτρων περίπτωσης';
-$string['config_legend_autoadjust'] = 'Αυτόματη ρύθμιση ιδιοχαρακτηριστικών μαθητή';
+$string['config_legend_autoadjust'] = 'Αυτόματη ρύθμιση ιδιοχαρακτηριστικών εκπαιδευόμενου';
 $string['config_legend_compareto'] = 'Σύγκριση με';
 $string['config_legend_defaults'] = 'Προεπιλογές μεταδεδομένων δραστηριότητας';
 $string['config_legend_difftype'] = 'Συνθήκη';
@@ -154,7 +154,7 @@ $string['legend_dependent_on_add'] = 'Προσθήκη νέας κύριας δ�
 $string['legend_history'] = 'Μαθησιακές δραστηριότητες που έχουν δεχτεί επίσκεψη';
 $string['legend_semantic_net'] = 'Σημασιολογικές σχέσεις';
 $string['legend_solution'] = 'Λύση';
-$string['legend_usermeta'] = 'Μεταδεδομένα μαθητευόμενου';
+$string['legend_usermeta'] = 'Μεταδεδομένα εκπαιδευόμενου';
 $string['markup2_bad'] = 'Αυτό το μαθησιακό περιεχόμενο θα πρέπει να υποστεί επεξεργασία μόνο σε λίγες περιπτώσεις';
 $string['markup2_good'] = 'Αυτό το μαθησιακό περιεχόμενο είναι το επόμενο προς επεξεργασία';
 $string['markup2_medium'] = 'Αυτό το μαθησιακό περιεχόμενο μπορεί επίσης να υποστεί επεξεργασία';
@@ -165,7 +165,7 @@ $string['markup_unknown'] = 'Άγνωστος';
 $string['menu_case_repository'] = 'Αποθετήριο περιπτώσεων';
 $string['menu_dependencies'] = 'Σημασιολογικές Εξαρτήσεις';
 $string['menu_info'] = 'Τεκμηρίωση iLMS';
-$string['nameilms'] = 'Τμήμα';
+$string['nameilms'] = 'Ενότητα';
 $string['no_dependencies'] = 'Δεν βρέθηκαν εξαρτώμενες δραστηριότητες για αυτήν τη μαθησιακή δραστηριότητα.';
 $string['no_dependent_on'] = 'Δεν βρέθηκαν κύριες δραστηριότητες που να εξαρτώνται από αυτή τη μαθησιακή δραστηριότητα.';
 $string['panel_dependencies'] = 'Εξαρτώμενες δραστηριότητες';

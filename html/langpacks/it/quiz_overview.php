@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'it', version '3.11'.
+ * Strings for component 'quiz_overview', language 'it', version '4.1'.
  *
  * @package     quiz_overview
  * @category    string
@@ -64,10 +64,11 @@ $string['regradealldrydo'] = 'Rivaluta tentativi evidenziati da rivalutare ({$a}
 $string['regradealldrydogroup'] = 'Rivaluta tentativi ({$a->countregradeneeded}) evidenziati da rivalutare in gruppo \'{$a->groupname}\'';
 $string['regradealldrygroup'] = 'Prova rivalutazione totale per gruppo \'{$a->groupname}\'';
 $string['regradeallgroup'] = 'Rivaluta tutto per gruppo \'{$a->groupname}\'';
-$string['regradecomplete'] = 'Rivalutazione completata correttamente';
+$string['regradecomplete'] = 'Rivalutazione completata';
 $string['regradedsuccessfullyxofy'] = '({$a->done}/{$a->count}) rivalutati correttamente';
 $string['regradeheader'] = 'Rivalutazione';
 $string['regradeselected'] = 'Rivaluta tentativi selezionati';
+$string['regradingattemptissue'] = 'Slot {$a->slot}: {$a->reason}';
 $string['regradingattemptxofy'] = 'Rivalutazione tentativo ({$a->done}/{$a->count})';
 $string['show'] = 'Visualizza / scarica';
 $string['showattempts'] = 'Visualizza / scarica solamente i tentativi';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_iclicker', language 'el', version '3.11'.
+ * Strings for component 'block_iclicker', language 'el', version '4.1'.
  *
  * @package     block_iclicker
  * @category    string
@@ -87,5 +87,5 @@ $string['reg.remote.faqs'] = 'Συχνές ερωτήσεις Καταχώρησ
 $string['reg.remote.id.enter'] = 'Δώστε το απομακρυσμένο αναγνωριστικό σας στο i>clicker';
 $string['reg.remote.id.header'] = 'Αναγνωριστικό i>clicker';
 $string['reg.remove.submit.alt'] = 'Καταργήστε αυτήν την καταχώρηση';
-$string['reg.title'] = 'Καταχώρηση φοιτητή';
+$string['reg.title'] = 'Καταχώρηση Μαθητή';
 $string['updateerror'] = 'Η ενημέρωση απέτυχε';

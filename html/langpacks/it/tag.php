@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'it', version '3.11'.
+ * Strings for component 'tag', language 'it', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -78,7 +78,9 @@ $string['helprelatedtags'] = 'Tag correlati separati da virgola';
 $string['id'] = 'id';
 $string['inalltagcoll'] = 'Ovunque';
 $string['inputstandardtags'] = 'Inserisci l\'elenco dei tag separato da virgola';
+$string['itemid'] = 'ID elemento';
 $string['itemstaggedwith'] = '{$a->tagarea} è stata associata a "{$a->tag}"';
+$string['itemtype'] = 'Tipo di elemento';
 $string['lesstags'] = 'meno...';
 $string['managestandardtags'] = 'Gestione tag standard';
 $string['managetagcolls'] = 'Gestione raccolte di tag';
@@ -87,6 +89,7 @@ $string['moretags'] = 'altro...';
 $string['name'] = 'Nome tag';
 $string['namesalreadybeeingused'] = 'Nomi tag già usati';
 $string['nameuseddocombine'] = 'Il nome del tag è già utilizzato. Vuoi combinare questi tag?';
+$string['namewithlink'] = 'Nome del tag con link';
 $string['newcollnamefor'] = 'Nuovo nome per la collezione di tag {$a}';
 $string['newnamefor'] = 'Nuovo nome del tag {$a}';
 $string['nextpage'] = 'Altri';
@@ -144,6 +147,7 @@ $string['standardsuggest'] = 'Suggerisci';
 $string['standardtag'] = 'Standard';
 $string['suredeletecoll'] = 'Sei sicuro di eliminare la raccolta di tag "{$a}"?';
 $string['tag'] = 'Tag';
+$string['tagarea'] = 'Area del tag';
 $string['tagarea_blog_external'] = 'Intervento blog esterno';
 $string['tagarea_course'] = 'Corsi';
 $string['tagarea_course_modules'] = 'Attività e risorse';
@@ -152,10 +156,12 @@ $string['tagarea_user'] = 'Interessi dell\'utente';
 $string['tagareaenabled'] = 'Abilitato';
 $string['tagareaname'] = 'Nome';
 $string['tagareas'] = 'Aree di tag';
+$string['tagauthor'] = 'Autore del tag';
 $string['tagcollection'] = 'Raccolta di tag';
 $string['tagcollection_help'] = 'Le raccolte di tag sono insiemi di tag rivolti ad aree diverse. Ad esempio, una raccolta di tag standard può essere utilizzata per associare tag ai corsi, mentre gli interessi degli utenti e gli interventi blog possono utilizzare altre raccolte. Quando un utente clicca su un tag, la pagina dei tag visualizzerà solamente gli elementi associati al tag presenti nella stessa raccolta. È possibile sia inserire i tag nelle raccolte in modo automatico in funzione dell\'area associata al tag, sia inserire i tag manualmente come tag standard.';
 $string['tagcollections'] = 'Raccolte di tag';
 $string['tagdescription'] = 'Descrizione tag';
+$string['taginstance'] = 'Istanza del tag';
 $string['tags'] = 'Tag';
 $string['tagsaredisabled'] = 'I tag sono disabilitati';
 $string['thingstaggedwith'] = '"{$a->name}" è utilizzato {$a->count} volte';

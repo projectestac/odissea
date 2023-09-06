@@ -29,7 +29,7 @@ require_once($CFG->dirroot . '/blog/lib.php');
 require_login();
 
 if (empty($CFG->usetags)) {
-    print_error('tagsaredisabled', 'tag');
+    throw new \moodle_exception('tagsaredisabled', 'tag');
 }
 
 $tagid       = optional_param('id', 0, PARAM_INT); // tag id
@@ -72,13 +72,15 @@ if (empty($tag)) {
 if ($ctx && ($context = context::instance_by_id($ctx, IGNORE_MISSING)) && $context->contextlevel >= CONTEXT_COURSE) {
     list($context, $course, $cm) = get_context_info_array($context->id);
     require_login($course, false, $cm, false, true);
+    $PAGE->set_secondary_navigation(false);
 } else {
     $PAGE->set_context($systemcontext);
 }
 
 $tagcollid = $tag->tagcollid;
 
-$PAGE->set_url($tag->get_view_url($exclusivemode, $fromctx, $ctx, $rec));
+$pageurl = $tag->get_view_url($exclusivemode, $fromctx, $ctx, $rec);
+$PAGE->set_url($pageurl);
 $PAGE->set_subpage($tag->id);
 $tagnode = $PAGE->navigation->find('tags', null);
 $tagnode->make_active();
@@ -97,7 +99,7 @@ if ($PAGE->user_allowed_editing()) {
     $buttons .= $OUTPUT->edit_button(clone($PAGE->url));
 }
 
-$PAGE->navbar->add($tagname);
+$PAGE->navbar->add($tagname, $pageurl);
 $PAGE->set_title(get_string('tag', 'tag') .' - '. $tag->get_display_name());
 $PAGE->set_heading($COURSE->fullname);
 $PAGE->set_button($buttons);

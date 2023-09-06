@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'sv', version '3.11'.
+ * Strings for component 'tool_behat', language 'sv', version '4.1'.
  *
  * @package     tool_behat
  * @category    string
@@ -27,12 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'Detta administrationsverktyg hjälper utvecklare och testare att skapa .feature-filer som beskriver Moodles funktioner och kör dem automatiskt. Stegdefinitioner som är tillgängliga för användning i .feature-filer listas nedan.';
 $string['allavailablesteps'] = 'Tillgängliga stegdefinitioner';
-$string['errorapproot'] = '$CFG->behat_ionic_dirroot pekar inte mot en giltig Moodle utvecklarinstallation.';
 $string['errorbehatcommand'] = 'Fel vid körning av behat CLI-kommando. Försök köra "{$a} --help" manuellt för att få vidare information om problemet.';
 $string['errorcomposer'] = 'Composer-beroenden inte installerade.';
 $string['errordataroot'] = '$CFG->behat_dataroot har inte konfigurerats eller så är den ogiltig.';
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix och $CFG->behat_wwwroot måste specificeras i config.php.';
-$string['erroruniqueconfig'] = 'Värdena för $CFG->behat_dataroot, $CFG->behat_prefix och $CFG->behat_wwwroot måste skilja sig från värdena för $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot och $CFG->phpunit_prefix.';
+$string['erroruniqueconfig'] = '<code>$CFG->behat_dataroot</code>, <code>$CFG->behat_prefix</code> och <code>$CFG->behat_wwwroot</code> behöver skilja sig från värdena för <code>$CFG->dataroot</code>, <code>$CFG->prefix</code>, <code>$CFG->wwwroot</code>, <code>$CFG->phpunit_dataroot</code> och <code>$CFG->phpunit_prefix values</code>.<br/>Eller, om <code>$CFG->behat_prefix</code> är lika så måste <code>$CFG->behat_dbname</code> eller <code>$CFG->behat_dbhost</code> skilja sig från <code>$CFG->phpunit_dbname</code> och <code>$CFG->phpunit_dbhost</code> och från <code>$CFG->dbname</code> och <code>$CFG->dbhost</code>.';
 $string['fieldvalueargument'] = 'Fältvärdesargument';
 $string['fieldvalueargument_help'] = 'Detta argument ska fyllas i av ett fältvärde. Det finns många fälttyper, inklusive enkla som kryssrutor, val eller textområden eller komplexa som datumväljare. Se dev-dokumentationen <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a> för information om förväntade fältvärden.';
 $string['giveninfo'] = 'Givna. Processer för att ställa in miljön.';

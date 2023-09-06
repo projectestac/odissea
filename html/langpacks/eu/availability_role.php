@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_role', language 'eu', version '3.11'.
+ * Strings for component 'availability_role', language 'eu', version '4.1'.
  *
  * @package     availability_role
  * @category    string
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['description'] = 'Baimendu soilik ikastaroan zehaztutako rola duten erabiltzaileei.';
 $string['error_selectrole'] = 'Rol bat aukeratu behar duzu';
 $string['missing'] = '[Rola falta da]';
-$string['pluginname'] = 'Ikastaroko rolaren araberako baldintza';
-$string['privacy:metadata'] = 'Ikastaroko rolaren araberako baldintza pluginak ez du datu pertsonalik biltzen.';
+$string['pluginname'] = 'Ikastaroko rolaren araberako eskuragarritasun baldintza';
+$string['privacy:metadata'] = 'Ikastaroko rolaren araberako eskuragarritasun baldintza pluginak ez du datu pertsonalik biltzen.';
 $string['requires_notrole'] = '<em>{$a}</em> rola ez izatea';
 $string['requires_role'] = '<em>{$a}</em> rola izatea';
 $string['setting_supportedrolesheading'] = 'Onartutako rolak';

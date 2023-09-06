@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'ca', version '3.11'.
+ * Strings for component 'qtype_truefalse', language 'ca', version '4.1'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -34,6 +34,7 @@ $string['feedbacktrue'] = 'Retroacció per la resposta \'Vertader\'.';
 $string['pleaseselectananswer'] = 'Trieu una resposta.';
 $string['pluginname'] = 'Vertader/Fals';
 $string['pluginname_help'] = 'En resposta a una pregunta (que pot incloure una imatge), l\'estudiant ha d\'escollir entre vertader i fals.';
+$string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de vertader/fals';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de vertader/fals';
 $string['pluginnamesummary'] = 'Un senzill formulari equivalent a una pregunta d\'opció múltiple únicament amb les opcions «Vertader» i «Fals»';

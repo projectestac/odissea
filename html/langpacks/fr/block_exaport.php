@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exaport', language 'fr', version '3.11'.
+ * Strings for component 'block_exaport', language 'fr', version '4.1'.
  *
  * @package     block_exaport
  * @category    string
@@ -197,7 +197,7 @@ $string['firstname'] = 'Prénom';
 $string['firstnameshared'] = 'Prénom';
 $string['go'] = 'Allez!';
 $string['grouptitle'] = 'Intitulé du groupe';
-$string['headertext'] = 'TItre';
+$string['headertext'] = 'Titre';
 $string['height'] = 'hauteur';
 $string['hidesummary'] = '(cacher le sommaire)';
 $string['i_shared'] = 'J\'ai partagé un portfolio avec vous';

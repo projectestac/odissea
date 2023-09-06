@@ -36,26 +36,12 @@ use tool_usertours\tour;
 function xmldb_tool_usertours_upgrade($oldversion) {
     global $CFG, $DB;
 
-    // Automatically generated Moodle v3.6.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.7.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.8.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2020061501) {
-        // Updating shipped tours will fix broken sortorder records in existing tours.
-        manager::update_shipped_tours();
-
-        upgrade_plugin_savepoint(true, 2020061501, 'tool', 'usertours');
-    }
+    $dbman = $DB->get_manager();
 
     // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    if ($oldversion < 2020082700) {
+    if ($oldversion < 2021052501) {
         // Clean up user preferences of deleted tours.
         $select = $DB->sql_like('name', ':lastcompleted') . ' OR ' . $DB->sql_like('name', ':requested');
         $params = [
@@ -73,20 +59,79 @@ function xmldb_tool_usertours_upgrade($oldversion) {
             }
         }
 
-        upgrade_plugin_savepoint(true, 2020082700, 'tool', 'usertours');
+        upgrade_plugin_savepoint(true, 2021052501, 'tool', 'usertours');
     }
 
-    // Automatically generated Moodle v3.10.0 release upgrade line.
-    // Put any upgrade step following this.
+    if ($oldversion < 2021092300) {
+        // Define field endtourlabel to be added to tool_usertours_tours.
+        $table = new xmldb_table('tool_usertours_tours');
+        $field = new xmldb_field('endtourlabel', XMLDB_TYPE_CHAR, '255', null, null, null, null, 'sortorder');
 
-    if ($oldversion < 2021051700) {
-        // Updating shipped tours.
+        // Conditionally launch add field endtourlabel.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        // Usertours savepoint reached.
+        upgrade_plugin_savepoint(true, 2021092300, 'tool', 'usertours');
+    }
+
+    if ($oldversion < 2021100700) {
+
+        // Define field displaystepnumbers to be added to tool_usertours_tours.
+        $table = new xmldb_table('tool_usertours_tours');
+        $field = new xmldb_field('displaystepnumbers', XMLDB_TYPE_INTEGER, '1', null, XMLDB_NOTNULL, null, '0', 'configdata');
+
+        // Conditionally launch add field displaystepnumbers.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+
+        // Usertours savepoint reached.
+        upgrade_plugin_savepoint(true, 2021100700, 'tool', 'usertours');
+    }
+
+    if ($oldversion < 2022040601) {
+        // Define field contentformat to be added to tool_usertours_steps.
+        $table = new xmldb_table('tool_usertours_steps');
+        $field = new xmldb_field('contentformat', XMLDB_TYPE_INTEGER, '4', null, XMLDB_NOTNULL, null, FORMAT_MOODLE, 'content');
+
+        // Conditionally launch add field contentformat.
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        } else {
+            // Field was added by previous upgrade step with the default value is FORMAT_HTML.
+            // Need to drop the field and re-create with the new structure to make sure all the existing tours use FORMAT_MOODLE.
+            // FORMAT_MOODLE will force the external_format_text method to use nl2br to convert the new line to line break tag.
+            $dbman->drop_field($table, $field);
+            // Add the field again.
+            $dbman->add_field($table, $field);
+        }
+
+        // Usertours savepoint reached.
+        upgrade_plugin_savepoint(true, 2022040601, 'tool', 'usertours');
+    }
+
+    if ($oldversion < 2022040602) {
+        // Update shipped tours.
+        // Normally, we just bump the version numbers because we need to call update_shipped_tours only once.
         manager::update_shipped_tours();
 
-        upgrade_plugin_savepoint(true, 2021051700, 'tool', 'usertours');
+        upgrade_plugin_savepoint(true, 2022040602, 'tool', 'usertours');
     }
 
-    // Automatically generated Moodle v3.11.0 release upgrade line.
+    if ($oldversion < 2022061600) {
+        // Update shipped tours.
+        // Normally, we just bump the version numbers because we need to call update_shipped_tours only once.
+        manager::update_shipped_tours();
+
+        upgrade_plugin_savepoint(true, 2022061600, 'tool', 'usertours');
+    }
+
+    // Automatically generated Moodle v4.0.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v4.1.0 release upgrade line.
     // Put any upgrade step following this.
 
     return true;

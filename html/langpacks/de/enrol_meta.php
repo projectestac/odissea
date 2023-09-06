@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'de', version '3.11'.
+ * Strings for component 'enrol_meta', language 'de', version '4.1'.
  *
  * @package     enrol_meta
  * @category    string
@@ -42,3 +42,7 @@ $string['pluginname_desc'] = 'Das Plugin \'Meta-Einschreibung\' synchronisiert d
 $string['privacy:metadata:core_group'] = 'Das Plugin zur Meta-Einschreibung kann eine neue Gruppe anlegen oder eine bereits vorhandene Gruppe verwenden, um alle Mitglieder der globalen Gruppe hinzuzufügen.';
 $string['syncall'] = 'Eingeschriebene Nutzer/innen synchronisieren';
 $string['syncall_desc'] = 'Wenn diese Option aktiviert ist, werden alle Nutzer/innen synchronisiert, auch wenn sie im Hauptkurs keine Rolle haben. Wenn diese Option deaktiviert ist, werden nur Nutzer/innen synchronisiert, die im Hauptkurs eine synchronisierte Rolle haben.';
+$string['wscannotcreategroup'] = 'Kein Recht zum Anlegen von Gruppen in verlinkter Kurs-ID {$a}.';
+$string['wsinvalidcourse'] = 'Die Kurs-ID {$a} existiert nicht oder Sie haben nicht das Recht, eine Meta-Einschreibung zu verlinken.';
+$string['wsinvalidmetacourse'] = 'Die Meta-Kurs-ID {$a} existiert nicht oder Sie haben nicht das Recht, eine Einschreibemethode hinzuzufügen.';
+$string['wsnoinstancesspecified'] = 'Keine Instanzen angegeben';

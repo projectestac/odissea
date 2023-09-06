@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'zh_cn', version '3.11'.
+ * Strings for component 'questionnaire', language 'zh_cn', version '4.1'.
  *
  * @package     questionnaire
  * @category    string
@@ -37,6 +37,7 @@ $string['addquestiontosection'] = '添加问题到小节';
 $string['addselqtype'] = '添加选中的问题类型';
 $string['alignment'] = '对齐单选按钮';
 $string['alignment_help'] = '选择按钮对齐类型：垂直对齐（默认）或水平对齐。';
+$string['alignment_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['all'] = '所有';
 $string['allnameddegrees_help'] = '指定要显示比率值替换数字。值留空则不使用。';
 $string['alreadyfilled'] = '您已经完成我们的问卷调查，谢谢您的参与。';
@@ -72,6 +73,7 @@ $string['chart:vprogress'] = '垂直进程条';
 $string['checkallradiobuttons'] = '请选择<strong>{$a}</strong>单选按钮';
 $string['checkboxes'] = '复选框';
 $string['checkboxes_help'] = '每行填入一个选项，以供用户选择其中一个或多个答案。';
+$string['checkboxes_link'] = 'mod/questionnaire/questions#Check_Boxes';
 $string['checkbreaksadded'] = '在此处插入新分页符';
 $string['checkbreaksok'] = '呈现所有的分页符！';
 $string['checkbreaksremoved'] = '移除{$a}额外的分页符';
@@ -103,10 +105,12 @@ $string['couldnotcreatenewsurvey'] = '不能创建新的调查';
 $string['couldnotdelresp'] = '不能删除回答';
 $string['createcontent'] = '定义新内容';
 $string['createcontent_help'] = '从单选框中选择问卷建立方式。默认方式是“创建新的问卷”。';
+$string['createcontent_link'] = 'mod/questionnaire/mod#Content_Options';
 $string['createnew'] = '创建新的问卷';
 $string['crontask'] = '问卷清理工作';
 $string['date'] = '日期';
 $string['date_help'] = '如果您想要回答是正确格式的日期，请使用这种问题类型';
+$string['date_link'] = 'mod/questionnaire/questions#Date';
 $string['dateformatting'] = '使用天/月/年格式，比如1945年3月14日；<strong>14/3/1945</strong>';
 $string['deleteallresponses'] = '删除所有回答';
 $string['deletecurrentquestion'] = '删除问题{$a}';
@@ -121,6 +125,7 @@ $string['dependencies'] = '附属';
 $string['dependquestion'] = '上级问题';
 $string['dependquestion_help'] = '您可以选择一个父问题以及该问题的选择选项。
 如果先前已选择了其父问题和其选项，则子问题只会显示向学生发送。';
+$string['dependquestion_link'] = 'mod/questionnaire/questions#Parent_Question';
 $string['didnotrespondtoquestion'] = '没有回答问题';
 $string['directwarnings'] = '问题的直接关联将被删除。将影响：';
 $string['displaymethod'] = '显示问题中没有定义的方法';
@@ -129,10 +134,12 @@ $string['downloadpdf'] = '下载 PDF';
 $string['downloadtextformat'] = '下载';
 $string['downloadtextformat_help'] = '此功能使您可以将问卷的所有答复保存为可选的受支持的文件格式。
  您可以选择在导出中包括其他数据项，也可以选择自动将文件发送给指定的用户。';
+$string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
 $string['downloadtypes'] = '报告类型';
 $string['dropdown'] = '下拉框';
 $string['dropdown_help'] = '与使用单选按钮相比，使用下拉框没有真正的优势
  除了可能需要冗长的选项列表之外，以节省屏幕空间。';
+$string['dropdown_link'] = 'mod/questionnaire/questions#Dropdown_Box';
 $string['edit'] = '编辑';
 $string['editingfeedback'] = '编辑反馈设置';
 $string['editingquestionnaire'] = '编辑问卷设置';
@@ -168,6 +175,7 @@ $string['event_saved'] = '回复已保存';
 $string['event_submitted'] = '回复已提交';
 $string['feedback'] = '反馈';
 $string['feedback_help'] = '反馈帮助';
+$string['feedback_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Messages';
 $string['feedbackaddmorefeedbacks'] = '添加 {no} 更多反馈区';
 $string['feedbackbysection'] = '反馈小节';
 $string['feedbackdefaultlabel'] = '[New section]';
@@ -195,6 +203,7 @@ $string['feedbacknotes_help'] = '在此处输入的文字将在反馈报告的�
 $string['feedbackoptions'] = '反馈选项';
 $string['feedbackoptions_help'] = '如果您的调查问卷包含以下问题类型和问题设置，则反馈选项可用：
 单选按钮；下拉框；是/否；或费率（正常或Osgood标度）。这些问题必须设置为“必填”，其“问题名称”字段不能为空，“可能的答案” 选项必须包含一个值。';
+$string['feedbackoptions_link'] = 'mod/questionnaire/personality_test';
 $string['feedbackremovequestionfromsection'] = '此问题属于反馈小节 [{$a}]';
 $string['feedbackremovesection'] = '删除此问题将完全删除反馈小节 [{$a}]';
 $string['feedbackreport'] = '反馈报告';
@@ -212,6 +221,7 @@ $string['feedbacksectionquestions'] = '{$a} 小节问题';
 $string['feedbacksections'] = '反馈小节';
 $string['feedbacksectionsselect'] = '小节';
 $string['feedbacksectionsselect_help'] = '把你的问题放入小节';
+$string['feedbacksectionsselect_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Sections_2';
 $string['feedbacksettingssaved'] = '保存反馈设置';
 $string['feedbacktype'] = '反馈类型';
 $string['field'] = '问题{$a}';
@@ -240,9 +250,12 @@ $string['invalidresponserecord'] = '无效的回答记录';
 $string['invalidsurveyid'] = '无效的问卷ID号';
 $string['kindofratescale'] = '评分量表的类型。';
 $string['kindofratescale_help'] = '请查看Moodle在线文档帮助';
+$string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['length'] = '长度';
+$string['managequestions_link'] = 'mod/questionnaire/questions#Manage_questions';
 $string['maxdigitsallowed'] = '最大允许的数字位数';
 $string['maxdigitsallowed_help'] = '使用最大数字长度和小数点位数参数，您可以设置数字的位数和小数的位数。';
+$string['maxdigitsallowed_link'] = 'mod/questionnaire/questions#Numeric';
 $string['maxforcedresponses'] = '强制回答的最大数量';
 $string['maxtextlength'] = '文本的最大长度';
 $string['minforcedresponses'] = '强制回答的最小数量';
@@ -251,11 +264,13 @@ $string['misconfigured'] = '课程配置错误';
 $string['missingquestion'] = '您还有未回答的问题';
 $string['missingquestions'] = '您还有未回答的问题：';
 $string['modulename'] = '问卷调查';
+$string['modulename_link'] = 'mod/questionnaire/view';
 $string['modulenameplural'] = '问卷调查';
 $string['myresponses'] = '所有您填写的问卷';
 $string['myresponsetitle'] = '我的 {$a} 个回答';
 $string['myresults'] = '我的结果';
 $string['name'] = '名称';
+$string['navigate_link'] = 'mod/questionnaire/conditional_branching';
 $string['next'] = '继续';
 $string['nextpage'] = '下一页';
 $string['noanswer'] = '无回答';
@@ -272,10 +287,12 @@ $string['notapplicablecolumn'] = '带“不适合”选项列';
 $string['notavail'] = '此问卷暂时不能使用，请稍后再试。';
 $string['noteligible'] = '您不能参加这个问卷调查';
 $string['notemplatesurveys'] = '暂无调查问卷模版';
+$string['notifications_link'] = 'mod/questionnaire/mod#Submission_Notifications';
 $string['notopen'] = '该问卷调查到{$a}才开放。';
 $string['num'] = '编号';
 $string['numberfloat'] = '您所输入的数字<strong>{$a->precision}</strong>进行了格式重排或舍入。';
 $string['numberofdecimaldigits'] = '小数的位数<strong>{$a->number}</strong>已使用';
+$string['numberofdecimaldigits_link'] = 'mod/questionnaire/questions#Numeric';
 $string['numberscaleitems'] = '评分量表的点数';
 $string['numberscaleitems_help'] = '评分量表的点数。通常是3到5个点，默认为：**5**。';
 $string['numeric'] = '数值型';
@@ -285,6 +302,7 @@ $string['opendate'] = '问卷的开始日期';
 $string['option'] = '选项{$a}';
 $string['optionalname'] = '问题名称';
 $string['optionalname_help'] = '问题名称仅用于将回答导出为CSV/Excel格式时。如果您不需要导出到CSV，您根本不用考虑问题名称。如果您计划经常将问卷的结果导出为CSV格式，对于问题的命名您有两个选择。';
+$string['optionalname_link'] = 'mod/questionnaire/questions#Question_Name';
 $string['or'] = '-或-';
 $string['order_ascending'] = '递增顺序';
 $string['order_default'] = '按默认顺序查看';
@@ -298,6 +316,7 @@ $string['orderresponses_help'] = '对于以下四种问题类型，您可以在�
 *量表问题（包括李克特量表）。
 
 在“所有回答”页面，默认的排序是问卷设计者问题选项的顺序。您也可以选择按递增或者递减的顺序显示。';
+$string['orderresponses_link'] = 'mod/questionnaire/report#Order_Responses';
 $string['osgood'] = '奥斯古德语义差异法';
 $string['other'] = '其他:';
 $string['otherempty'] = '如果您选择该选项，必须在文本框中输入些文字！';
@@ -354,20 +373,25 @@ $string['questions'] = '问题';
 $string['questionsinsection'] = '此板块中的问题:';
 $string['questiontypes'] = '问题的类型';
 $string['questiontypes_help'] = '请查看Moodle在线文档帮助';
+$string['questiontypes_link'] = 'mod/questionnaire/questions#Question_Types';
 $string['radiobuttons'] = '单选按钮';
 $string['radiobuttons_help'] = '在这种问题类型中，填写人必须从提供的选项中选项一项。';
+$string['radiobuttons_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['rank'] = '等级';
 $string['ratescale'] = '评分量表(1..5)';
 $string['ratescale_help'] = '请查看Moodle在线文档帮助';
+$string['ratescale_link'] = 'mod/questionnaire/questions#Rate_.28scale_1..5.29';
 $string['realm'] = '调查问卷类型';
 $string['realm_help'] = '* **调查问卷一共有三种类：**
  * 私有 - 只属于问卷所在的课程。
  * 模版 - 可被复制和编辑。
  * 公共 - 可在课程间共享。';
+$string['realm_link'] = 'mod/questionnaire/qsettings#Questionnaire_Type';
 $string['redirecturl'] = '提交问卷之后重定向页面的URL地址。';
 $string['remove'] = '删除';
 $string['required'] = '是否必须回答';
 $string['required_help'] = '如果您选择***是***，填写人必须回答这个问题才能提交问卷。';
+$string['required_link'] = 'mod/questionnaire/questions#Response_Required';
 $string['requiredparameter'] = '缺少一个必要的参数。';
 $string['reset'] = '重置';
 $string['respeligiblerepl'] = '已通过角色重载代替';
@@ -378,6 +402,7 @@ $string['respondenteligibleteachers'] = '仅由教师';
 $string['respondents'] = '填写人';
 $string['respondenttype'] = '调查问卷类型';
 $string['respondenttype_help'] = '设置为“全名”将显示填写调查的用户全名。设置为“匿名”可隐藏用户的标识。';
+$string['respondenttype_link'] = 'mod/questionnaire/mod#Respondent_Type';
 $string['respondenttypeanonymous'] = '匿名';
 $string['respondenttypefullname'] = '全名';
 $string['response'] = '回答';
@@ -387,6 +412,7 @@ $string['responseoptions'] = '问卷选项';
 $string['responses'] = '回答';
 $string['responseview'] = '学生（角色）查看问卷结果';
 $string['responseview_help'] = '您可以设置谁可以查看问卷提交的所有回答（通常是统计表格）。';
+$string['responseview_link'] = 'mod/questionnaire/mod#Response_viewing';
 $string['responseviewstudentsalways'] = '总是可以';
 $string['responseviewstudentsnever'] = '从不可以';
 $string['responseviewstudentswhenanswered'] = '填写完问卷后可查看';
@@ -394,6 +420,7 @@ $string['responseviewstudentswhenclosed'] = '在问卷调查结束之后';
 $string['restrictedtoteacher'] = '这些功能只能由教师权限进行编辑';
 $string['resume'] = '保存/恢复问卷填写';
 $string['resume_help'] = '是否允许用户在提交问卷之前保存他们的回答。这样用户可以填写部分问卷，以后再从保存处恢复填写。';
+$string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
 $string['resumesurvey'] = '恢复调查问卷';
 $string['return'] = '返回';
 $string['save'] = '保存';
@@ -453,6 +480,7 @@ $string['vertical'] = '垂直对齐';
 $string['view'] = '查看';
 $string['viewallresponses'] = '查看所有的回答';
 $string['viewallresponses_help'] = '如果问卷调查被设置为 **小组模式**: *可视小组*，或者*分隔小组* 并且当前用户有访问所有组的权限，在当前课程中定义了组，那么用户可以访问下拉框中的组。这个下拉框可以让用户使用“过滤器”对问卷回答按小组进行分类。如果问卷调查被设置为 **小组模式**: *分隔小组*，那么没有访问所有组权限的用户(如学生，无权限教师等)只能查看他们所属小组的回答。';
+$string['viewallresponses_link'] = 'Viewing_Questionnaire_responses#Group_filtering';
 $string['viewbyresponse'] = '答复的列表';
 $string['viewindividualresponse'] = '个别答复';
 $string['viewresponses'] = '所有回答({$a})';

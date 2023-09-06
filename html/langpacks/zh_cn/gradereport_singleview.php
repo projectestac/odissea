@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'zh_cn', version '3.11'.
+ * Strings for component 'gradereport_singleview', language 'zh_cn', version '4.1'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -58,8 +58,6 @@ $string['privacy:metadata'] = '成绩独立视图报表只显示存储在其他�
 $string['save'] = '保存';
 $string['savegrades'] = '保存成绩';
 $string['savegradessuccess'] = '已为{$a}项设置了成绩';
-$string['selectgrade'] = '选择成绩项...';
-$string['selectuser'] = '选择用户...';
 $string['singleview:view'] = '查看报表';
 $string['summarygrade'] = '用户表，其中包含范围、成绩、反馈以及是否覆盖或排除特定成绩的列。';
 $string['summaryuser'] = '成绩项表，其中包含成绩类别、范围、成绩、反馈以及是否覆盖或排除某个特定成绩的列。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_immediatecbm', language 'el', version '3.11'.
+ * Strings for component 'qbehaviour_immediatecbm', language 'el', version '4.1'.
  *
  * @package     qbehaviour_immediatecbm
  * @category    string
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Επιλέξτε μια βεβαιότητα.';
-$string['pluginname'] = 'Άμεση ανατροφοδότηση με CBM (Certainty-based marking: βαθμολόγηση με βάση την βεβαιότητα)';
+$string['pluginname'] = 'Άμεση ανατροφοδότηση με CBM';
 $string['privacy:metadata'] = 'Το πρόσθετο «Συμπεριφορά ερώτησης άμεσης ανατροφοδότησης με CBM» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

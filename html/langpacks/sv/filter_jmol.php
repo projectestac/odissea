@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_jmol', language 'sv', version '3.11'.
+ * Strings for component 'filter_jmol', language 'sv', version '4.1'.
  *
  * @package     filter_jmol
  * @category    string
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['jsmol_link'] = 'http://google.co.uk';
 $string['togglefullscreen'] = 'Slå av/på fullskärmsläge';

@@ -216,7 +216,8 @@ class discussion {
                 'pindiscussion' => null,
                 'neighbourlinks' => $this->get_neighbour_links_html(),
                 'exportdiscussion' => !empty($CFG->enableportfolios) ? $this->get_export_discussion_html($user) : null
-            ]
+            ],
+            'settingsselector' => true,
         ]);
 
         $capabilities = (array) $exporteddiscussion['capabilities'];
@@ -426,7 +427,7 @@ class discussion {
             if ($this->capabilitymanager->must_post_before_viewing_discussion($user, $discussion)) {
                 $notifications[] = (new notification(
                     get_string('qandanotify', 'forum')
-                ))->set_show_closebutton(true);
+                ))->set_show_closebutton(true)->set_extra_classes(['mt-3']);
             }
         }
 

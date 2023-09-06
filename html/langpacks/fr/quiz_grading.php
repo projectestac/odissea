@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'fr', version '3.11'.
+ * Strings for component 'quiz_grading', language 'fr', version '4.1'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,11 +49,12 @@ $string['graded'] = '(évalué)';
 $string['gradenextungraded'] = 'Évaluer les {$a} tentatives non évaluées suivantes';
 $string['gradeungraded'] = 'Évaluer toutes les {$a} tentatives non évaluées';
 $string['grading'] = 'Évaluation manuelle';
-$string['grading:viewidnumber'] = 'Voir l\'identifiant de l\'étudiant durant l\'évaluation';
+$string['grading:viewidnumber'] = 'Voir les champs d\'identité de l\'étudiant durant l\'évaluation';
 $string['grading:viewstudentnames'] = 'Voir le nom des participants durant l\'évaluation';
 $string['gradingall'] = 'Toutes les {$a} tentatives pour cette question.';
 $string['gradingattempt'] = 'Tentative no {$a->attempt} de {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Évaluation des tentatives {$a->from} à {$a->to} sur {$a->of}';
+$string['gradingattemptwithcustomfields'] = 'Tentative no {$a->attempt} de {$a->fullname} ({$a->customfields})';
 $string['gradingattemptwithidnumber'] = 'Tentative n°{$a->attempt} de {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = '{$a} tentatives non évaluées suivantes';
 $string['gradingnotallowed'] = 'Vous n\'avez pas les permissions requises pour évaluer manuellement les réponses de ce test';
@@ -69,6 +70,7 @@ $string['noquestionsfound'] = 'Il n\'y a pas de question évaluée manuellement'
 $string['nothingfound'] = 'Rien à afficher';
 $string['options'] = 'Options';
 $string['orderattempts'] = 'Ordre des tentatives';
+$string['orderattemptsby'] = 'Trier les tentatives par';
 $string['pluginname'] = 'Évaluation manuelle';
 $string['privacy:preference:order'] = 'L\'ordre dans lequel afficher les tentatives à évaluer';
 $string['privacy:preference:pagesize'] = 'Le nombre de tentatives par page à afficher dans l\'interface d\'évaluation';
@@ -77,8 +79,9 @@ $string['questionname'] = 'Nom de la question';
 $string['questionsperpage'] = 'Questions par page';
 $string['questionsthatneedgrading'] = 'Questions à évaluer';
 $string['questiontitle'] = 'Question {$a->number} : « {$a->name} » ({$a->openspan}{$a->gradedattempts}{$a->closespan} / {$a->totalattempts} tentatives {$a->openspan}graded{$a->closespan}).';
+$string['random'] = 'Aléatoirement';
 $string['randomly'] = 'Aléatoirement';
-$string['saveandnext'] = 'Enregistrer et aller à la page suivante';
+$string['saveandnext'] = 'Enregistrer et afficher la suite';
 $string['showstudentnames'] = 'Montrer le nom des participants';
 $string['tograde'] = 'À évaluer';
 $string['total'] = 'Total';

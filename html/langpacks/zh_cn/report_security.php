@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'zh_cn', version '3.11'.
+ * Strings for component 'report_security', language 'zh_cn', version '4.1'.
  *
  * @package     report_security
  * @category    string
@@ -25,6 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['check_antivirus_details'] = '该状态会根据主防病毒设置中设定的阈值，检查是否有最近检测到的错误。';
+$string['check_antivirus_error'] = '在上一次 {$a->lookback} 中检测到 {$a->errors} 错误';
+$string['check_antivirus_info'] = '当前未启用任何防病毒扫描程序';
+$string['check_antivirus_logstore_not_supported'] = '由于选择的日志存储类型，无法验证防病毒扫描程序的状态';
+$string['check_antivirus_name'] = '杀毒软件';
+$string['check_antivirus_ok'] = '{$a->scanners} 防病毒扫描程序已启用，上次 {$a->lookback} 未检测到问题';
 $string['check_configrw_details'] = '<p>建议在安装完成后将config.php文件权限改为web服务器不可写。
 请注意，此度量不会显著提高服务器的安全性，不过它可能减慢或限制一般的攻击。</p>';
 $string['check_configrw_name'] = 'config.php文件可改写';
@@ -96,6 +102,8 @@ $string['check_preventexecpath_warning'] = '可执行路径可以在Admin GUI中
 $string['check_publicpaths_403'] = '（返回的是403，理想情况下应为404）';
 $string['check_publicpaths_generic'] = '{$a}文件不应该是公开的';
 $string['check_publicpaths_name'] = '检查所有公共/私有路径';
+$string['check_publicpaths_ok'] = '所有内部路径都不可公开访问';
+$string['check_publicpaths_warning'] = '一些内部路径可公开访问';
 $string['check_riskadmin_detailsok'] = '<p>请确认下列人员为系统管理员：</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>请确认下列系统管理员：</p>{$a->admins}
 <p>建议只在系统场景下分配管理员角色。下列用户在其它场景中被分配了管理员角色（不支持）：</p>{$a->unsupported}';

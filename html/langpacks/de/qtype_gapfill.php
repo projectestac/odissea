@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapfill', language 'de', version '3.11'.
+ * Strings for component 'qtype_gapfill', language 'de', version '4.1'.
  *
  * @package     qtype_gapfill
  * @category    string
@@ -83,6 +83,7 @@ $string['or'] = 'oder';
 $string['pleaseenterananswer'] = 'Bitte geben Sie eine Antwort ein.';
 $string['pluginname'] = 'Erweiterter Lückentext';
 $string['pluginname_help'] = 'Platzieren Sie  die Worte, welche hinzugefügt werden sollen, in eckige Klammern, z.B. Der [Ball] wurde ins [Tor] geschossen. Wenn "Matte" oder "Teppich" richtig sind, dann ist folgende Syntax richtig: [Matte|Teppich]. "Dropdown" und "Drag&Drop" Modus erlauben das Vermischen der Antwortliste, welche angezeigt wird. Diese Liste kann auch falsche Antwortmöglichkeiten beinhalten, die von den richtigen Antworten ablenken sollen.';
+$string['pluginname_link'] = 'question/type/gapfill';
 $string['pluginnameadding'] = 'Füge eine erweiterte Lückentext-Frage hinzu';
 $string['pluginnameediting'] = 'Erweiterten Lückentext bearbeiten';
 $string['pluginnamesummary'] = 'Eine Fragentyp, der sich mit dem Ausfüllen von Lücken beschäftigt. Erlaubt "drag&drop" und "drop down" Antwortmöglichkeiten mit dem Einblenden von falschen Antwortmöglichkeiten, welche zur Ablenkung bei der Beantwortung der Frage dienen. Eine sehr einfach zu erlernende Syntax zur Erstellung der Frage.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ca', version '3.11'.
+ * Strings for component 'question', language 'ca', version '4.1'.
  *
  * @package     question
  * @category    string
@@ -110,7 +110,7 @@ $string['correctfeedbackdefault'] = 'La resposta és correcta.';
 $string['created'] = 'Creació';
 $string['createdby'] = 'Creada per ';
 $string['createdmodifiedheader'] = 'Creat / darrera modificació';
-$string['createnewquestion'] = 'Crea una nova pregunta...';
+$string['createnewquestion'] = 'Crea una pregunta nova...';
 $string['cwrqpfs'] = 'Preguntes aleatòries que seleccionen preguntes de subcategories';
 $string['cwrqpfsinfo'] = '<p>Durant l\'actualització a Moodle 1.9 se separaran les categories de preguntes en diferents contextos. Caldrà canviar l\'estat de publicació d\'algunes preguntes i categories de preguntes del vostre lloc. Això és necessari en casos com el vostre, quan hi ha preguntes «aleatòries» en un qüestionari definides de manera que trien preguntes de subcategories i alguna d\'aquestes subcategories té un estat de publicació diferent de l\'estat de la categoria mare on està creada la pregunta aleatòria.</p>
 <p>Es canviarà l\'estat de publicació de les categories següents, d\'on treuen preguntes les preguntes «aleatòries» de categories mare, a l\'estat de publicació de la categoria que conté la pregunta aleatòria. Les preguntes afectades continuaran funcionant en tots els qüestionaris existents.</p>';
@@ -142,6 +142,7 @@ Cada categoria pertany a un context que determina on es poden utilitzar les preg
  * Context de sistema - Les preguntes queden disponibles en tots els cursos i totes les activitats del lloc.
 
 Les categories també es poden utilitzar per preparar qüestionaris de preguntes aleatòries, com amb les preguntes triades d\'una categoria en particular.';
+$string['editcategories_link'] = 'question/category';
 $string['editcategory'] = 'Edita la categoria';
 $string['editingcategory'] = 'S\'està editant una categoria';
 $string['editingquestion'] = 'S\'està editant una pregunta';
@@ -171,6 +172,7 @@ $string['errorsavingflags'] = 'S\'ha produït un error en desar l\'estat de l\'i
 $string['errorupdatingattempt'] = 'Error en actualitzar l\'intent {$a->id} a la base de dades.';
 $string['eventquestioncategorycreated'] = 'Categoria de preguntes creada';
 $string['export'] = 'Exporta';
+$string['exportasxml'] = 'Exporta com a XML de Moodle';
 $string['exportcategory'] = 'Exporta categoria';
 $string['exportcategory_help'] = '<p>Aquest paràmetre determina la categoria de la qual s\'exportaran les preguntes.</p>
 <p>Alguns formats d\'importació, com ara el GIFT i XML de Moodle, permeten copiar la categoria i el context al fitxer exportat, i això permet (opcionalment) recrear-los en una importació. Si cal, és recomanable que marqueu els quadres de selecció adequats.';
@@ -179,6 +181,7 @@ $string['exportfilename'] = 'preguntes';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
 $string['exportquestions'] = 'Exporta preguntes a un fitxer';
 $string['exportquestions_help'] = 'Aquesta funció habilita l\'exportació d\'una categoria completa de preguntes (i les seves subcategories) en un fitxer. Tingueu en compte que, en funció del format de fitxer escollit, algunes dades de les preguntes i certs tipus de preguntes possiblement no s\'exportaran.';
+$string['exportquestions_link'] = 'question/export';
 $string['feedback'] = 'Retroacció';
 $string['filecantmovefrom'] = 'Els fitxers de preguntes no es poden desplaçar perquè no teniu prou permisos per eliminar fitxers al lloc on ho intenteu.';
 $string['filecantmoveto'] = 'Els fitxers de preguntes no es poden desplaçar o copiar perquè no teniu prou permisos per afegir fitxers al lloc on ho intenteu.';
@@ -187,6 +190,7 @@ $string['filesareacourse'] = 'l\'àrea de fitxers del curs';
 $string['filesareasite'] = 'l\'àrea de fitxers del lloc';
 $string['filestomove'] = 'Voleu copiar o moure els fitxers a {$a}?';
 $string['fillincorrect'] = 'Emplena amb les respostes correctes';
+$string['filterbytags'] = 'Filtra per etiquetes...';
 $string['firsttry'] = 'Primer intent';
 $string['flagged'] = 'Marcada';
 $string['flagthisquestion'] = 'Marca aquesta pregunta';
@@ -207,6 +211,7 @@ $string['howquestionsbehave_help'] = 'Els estudiants poden interactuar amb les p
 Alternativament, podeu voler que els estudiants responguin cada pregunta i obtinguin una retroacció immediata i, si no contesten correctament de manera immediata, tinguin una altra oportunitat amb menor puntuació. Aquest mode seria «interactiu amb diversos intents».
 
 Aquests probablement són els dos modes de comportament usats més comunament.';
+$string['howquestionsbehave_link'] = 'question/behaviour';
 $string['idnumber'] = 'Nombre ID';
 $string['idnumber_help'] = 'Si l\'utilitzeu, el nombre ID ha de ser únic dins de cada categoria de preguntes. Ofereix una manera alternativa d\'identificar la pregunta que us pot ser útil, però que usualment podeu deixar en blanc.';
 $string['ignorebroken'] = 'Ignora enllaços trencats';
@@ -222,6 +227,7 @@ $string['importingquestions'] = 'S\'importaran {$a} preguntes del fitxer';
 $string['importparseerror'] = 'S\'han trobat error(s) en analitzar el fitxer d\'importació. No s\'ha importat cap pregunta. Per importar les preguntes ben formatades del fitxer, torneu-ho a intentar amb el paràmetre «Atura si es produeix un error» desactivat.';
 $string['importquestions'] = 'Importació de preguntes des d\'un fitxer';
 $string['importquestions_help'] = 'Aquesta funció activa la importació de preguntes de formats diversos via un fitxer de text. El fitxer ha d\'estar codificat amb l\'UTF-8.';
+$string['importquestions_link'] = 'question/import';
 $string['importwrongfiletype'] = 'El tipus de fitxer que heu triat ({$a->actualtype}) no s\'acorda al tipus esperat per aquest format d\'importació ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Un caràcter inviable {$a} detectat com a caràcter de parèntesis.';
 $string['includesubcategories'] = 'Mostra també les preguntes de les subcategories.';
@@ -310,6 +316,7 @@ $string['page-question-x'] = 'Qualsevol pàgina de preguntes';
 $string['parent'] = 'Mare';
 $string['parentcategory'] = 'Categoria mare';
 $string['parentcategory_help'] = 'La categoria mare és la que contindrà la categoria nova. "Dalt de tot" significa que aquesta categoria no queda continguda dins de cap altra. Els contextos de les categories apareixen en negreta. Hi ha d\'haver com a mínim una categoria en cada context.';
+$string['parentcategory_link'] = 'question/category';
 $string['parenthesisinproperclose'] = 'El parèntesi d\'abans de ** no queda ben tancat a {$a}**';
 $string['parenthesisinproperstart'] = 'El parèntesi de després de ** no queda ben obert a {$a}**.';
 $string['parsingquestions'] = 'Analitza i inclou preguntes d\'un fitxer d\'importació.';
@@ -337,6 +344,7 @@ $string['questionbehavioursdisabled'] = 'Comportaments de preguntes per desactiv
 $string['questionbehavioursdisabledexplained'] = 'Escriviu una llista separada per comes dels comportaments que no voleu que apareguin al menú de selecció.';
 $string['questionbehavioursorder'] = 'Ordre dels comportaments de les preguntes';
 $string['questionbehavioursorderexplained'] = 'Escriviu una llista separada per comes amb els comportaments de preguntes en l\'ordre que voleu que apareguin al menú de selecció.';
+$string['questioncategories'] = 'Categories de preguntes';
 $string['questioncategory'] = 'Categoria de preguntes';
 $string['questioncatsfor'] = 'Categories de preguntes en «{$a}»';
 $string['questiondoesnotexist'] = 'Aquesta pregunta no existeix';

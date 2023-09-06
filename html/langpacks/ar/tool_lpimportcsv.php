@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'ar', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'ar', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -40,6 +40,7 @@ $string['idnumber'] = 'رقم المعرف';
 $string['import'] = 'استيراد';
 $string['importfile'] = 'ملف وصف إطار العمل بصيغة CSV';
 $string['importfile_help'] = 'يمكن استيراد إطار الكفاءات عبر ملف نصي. يمكن تحديد تنسيق الملف عن طريق إنشاء إطار عمل كفاءات جديد على الموقع ثم تصديره.';
+$string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = 'استيراد بيانات الملف';
 $string['invalidimportfile'] = 'تنسيق الملف غير صالح.';
 $string['isframework'] = 'هو إطار عمل';

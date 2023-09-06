@@ -773,7 +773,7 @@ JSON;
    <token/>
    <uid_file_owner>tech</uid_file_owner>
    <displayname_file_owner>tech</displayname_file_owner>
-   <path>/System/Category Miscellaneous/Course Example Course/File morefiles/mod_resource/content/0/merge.txt</path>
+   <path>/System/Category Category 1/Course Example Course/File morefiles/mod_resource/content/0/merge.txt</path>
    <item_type>file</item_type>
    <mimetype>text/plain</mimetype>
    <storage_id>home::tech</storage_id>
@@ -798,7 +798,7 @@ JSON;
    <token/>
    <uid_file_owner>tech</uid_file_owner>
    <displayname_file_owner>tech</displayname_file_owner>
-   <path>/System/Category Miscellaneous/Course Example Course/File morefiles/mod_resource/content/0/merge.txt</path>
+   <path>/System/Category Category 1/Course Example Course/File morefiles/mod_resource/content/0/merge.txt</path>
    <item_type>file</item_type>
    <mimetype>text/plain</mimetype>
    <storage_id>home::tech</storage_id>

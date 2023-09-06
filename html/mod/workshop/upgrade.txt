@@ -1,7 +1,7 @@
 This files describes API changes in /mod/workshop - activity modules,
 information provided here is intended especially for developers.
 
-=== 3.11.5  ===
+=== 4.0 ===
 
 * \mod_workshop\event\phase_automatically_switched event is triggered when the phase is automatically switched within
   the cron task.

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'zh_cn', version '3.11'.
+ * Strings for component 'accredible', language 'zh_cn', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -43,18 +43,23 @@ $string['certificatename'] = '证书/徽章名称';
 $string['certificateurl'] = '证书/徽章超链接';
 $string['chooseexam'] = '选择最终测试';
 $string['completionissuecheckbox'] = '是，课程结业后发放';
-$string['completionissueheader'] = '自动发布条件：活动完成度';
+$string['completionissueheader'] = '自动发布条件：依据课程完成度';
 $string['dashboardlink'] = 'Accredible控制面板链接';
-$string['dashboardlinktext'] = '要删除或者设计证书的式样，请登陆<a href="https://accredible.com/issuer/login" target="_blank">控制面板</a>';
+$string['dashboardlinktext'] = '要删除或者设计证书的样式，请前往<a href="https://accredible.com/issuer/login" target="_blank">控制面板</a>';
 $string['datecreated'] = '日期已创建';
 $string['description'] = '描述';
+$string['emptygradeattributekeyname'] = '最终的课程成绩将被映射到所选择的可扩展的自定义属性中。如果您还没有创建自定义属性，您可以在<a href="{$a}" target="_blank">可扩展平台</a>创建.';
 $string['euhelp'] = '选择是否希望在欧盟（法兰克福）而不是美国托管数据';
 $string['eulabel'] = '欧盟（法兰克福）服务器';
-$string['eventcertificatecreated'] = '认证已发布到Accredible';
+$string['eventcertificatecreated'] = '已发布的可扩展的认证';
 $string['gotodashboard'] = '更新你的徽章外观和证书，请访问： <a href="https://www.accredible.com/issuer/dashboard" target="_blank">https://www.accredible.com/issuer/dashboard</a>';
+$string['gradeattributegradeitemselect'] = '选择纳入认证的Moodle成绩：';
+$string['gradeattributekeynameselect'] = '选择一个可扩展设计属性：';
 $string['gradeissueheader'] = '自动发布条件：根据期末测试成绩';
 $string['groupselect'] = '组';
 $string['id'] = '识别号';
+$string['includegradeattributecheckbox'] = '是的，证书中包括成绩。';
+$string['includegradeattributedescription'] = '将学生的成绩列入证书中';
 $string['indexheader'] = '{$a}的所有证书和徽章';
 $string['issued'] = '已发布';
 $string['manualheader'] = '手动发布证书/徽章';
@@ -62,8 +67,10 @@ $string['modulename'] = 'Accredible证书和徽章';
 $string['modulename_help'] = 'Accredible证书和徽章活动模块让你能在accredible.com上颁发课程证书或徽章给学生。
 
 在你想让学生们看到他们的证书或徽章的地方添加活动';
+$string['modulename_link'] = 'mod/accredible/view';
 $string['modulenameplural'] = 'Accredible证书/徽章';
 $string['nocertificates'] = '没有证书/徽章';
+$string['nouserswarning'] = '你需要选择一个组以便看到用户列表。';
 $string['overview'] = '总览';
 $string['passinggrade'] = '通过课程所需的百分率分数（%）';
 $string['pluginadministration'] = 'Accredible证书/徽章管理';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'nl', version '3.11'.
+ * Strings for component 'gradingform_rubric', language 'nl', version '4.1'.
  *
  * @package     gradingform_rubric
  * @category    string
@@ -72,7 +72,7 @@ $string['regrademessage1'] = 'Je gaat wijzigingen aanbrengen aan een rubric die 
 $string['regrademessage5'] = 'Je gaat belangrijke wijzigingen aan een rubric die al gebruikt is voor het beoordelen bewaren. Het cijfer in de cijferlijst zal niet aangepast worden, maar de rubric zal verborgen blijven voor leerlingen tot je hun item opnieuw hebt beoordeeld.';
 $string['regradeoption0'] = 'Niet markeren voor opnieuw beoordelen.';
 $string['regradeoption1'] = 'Markeren voor opnieuw beoordelen';
-$string['restoredfromdraft'] = 'OPMERKING: de laatste beoordelingspoging voor deze persoon is niet behoorlijk bewaard en daarom zijn de voorlopige cijfers teruggezet. Als je deze wijzigingen wil annuleren, klik dan op de \'Annuleer\'-knop onderaan.';
+$string['restoredfromdraft'] = 'OPMERKING: de laatste beoordelingspoging voor deze persoon is niet behoorlijk bewaard en daarom zijn de conceptcijfers teruggezet. Als je deze wijzigingen wil annuleren, klik dan op de \'Annuleer\'-knop onderaan.';
 $string['rubric'] = 'Rubric';
 $string['rubricmapping'] = 'Score naar cijfer mappingregels';
 $string['rubricmappingexplained'] = 'De kleinst mogelijke score voor deze rubric is <b>{$a->minscore}</b> punten en zal omgezet worden naar het minimale cijfer beschikbaar voor deze activiteit (welke nul is, tenzij een schaal wordt gebruikt). De maximale score van <b>{$a->maxscore} punten</b> zal omgezet worden naar het maximale cijfer.
@@ -85,7 +85,7 @@ $string['rubricoptions'] = 'Rubric opties';
 $string['rubricstatus'] = 'Huidige rubric status';
 $string['save'] = 'Bewaar';
 $string['saverubric'] = 'Bewaar rubric en maak het klaar';
-$string['saverubricdraft'] = 'Bewaar als klad';
+$string['saverubricdraft'] = 'Bewaar als concept';
 $string['scoreinputforlevel'] = 'Score input voor niveau {$a}';
 $string['scorepostfix'] = '{$a} punten';
 $string['showdescriptionstudent'] = 'Toon rubricbeschrijving aan wie beoordeeld is';

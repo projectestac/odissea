@@ -30,11 +30,11 @@ Feature: Test importing questions from Moodle XML format.
     Then I should see "Moodle acronym (True)"
 
     # Now export again.
-    And I follow "Export"
+    When I am on the "Course 1" "core_question > course question export" page logged in as "teacher"
     And I set the field "id_format_xml" to "1"
     And I set the field "Export category" to "TrueFalse"
     And I press "Export questions to file"
-    And following "click here" should download between "57100" and "58150" bytes
+    Then following "click here" should download between "57100" and "58150" bytes
 
   @javascript @_file_upload
   Scenario: import some multiple choice questions from Moodle XML format

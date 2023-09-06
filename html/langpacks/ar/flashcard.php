@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'flashcard', language 'ar', version '3.11'.
+ * Strings for component 'flashcard', language 'ar', version '4.1'.
  *
  * @package     flashcard
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addone'] = 'إضافة سؤال جديد';
 $string['answer'] = 'الإجابات';
 $string['answersmediatype'] = 'نوع الوسائط للإجابات';
-$string['backtocourse'] = 'عودة إلى المقرر الدراسي';
+$string['backtocourse'] = 'عودة إلى المساق';
 $string['backtodecks'] = 'عودة إلى منضدة المجموعة';
 $string['cardsindeck'] = 'المتبقي : {$a} من البطاقات';
 $string['cardsremaining'] = 'البطاقات المتبقية';

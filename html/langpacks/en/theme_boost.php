@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'en', version '3.11'.
+ * Strings for component 'theme_boost', language 'en', version '4.1'.
  *
  * @package     theme_boost
  * @category    string
@@ -36,19 +36,30 @@ $string['choosereadme'] = 'Boost is a modern highly-customisable theme. This the
 $string['configtitle'] = 'Boost';
 $string['currentinparentheses'] = '(current)';
 $string['generalsettings'] = 'General settings';
+$string['loginbackgroundimage'] = 'Login page background image';
+$string['loginbackgroundimage_desc'] = 'The image to display as a background for the login page.';
 $string['nobootswatch'] = 'None';
 $string['pluginname'] = 'Boost';
 $string['preset'] = 'Theme preset';
 $string['preset_desc'] = 'Pick a preset to broadly change the look of the theme.';
 $string['presetfiles'] = 'Additional theme preset files';
 $string['presetfiles_desc'] = 'Preset files can be used to dramatically alter the appearance of the theme. See <a href="https://docs.moodle.org/dev/Boost_Presets">Boost presets</a> for information on creating and sharing your own preset files, and see the <a href="https://archive.moodle.net/boost">Presets repository</a> for presets that others have shared.';
+$string['privacy:drawerblockclosed'] = 'The current preference for the block drawer is closed.';
+$string['privacy:drawerblockopen'] = 'The current preference for the block drawer is open.';
+$string['privacy:drawerindexclosed'] = 'The current preference for the index drawer is closed.';
+$string['privacy:drawerindexopen'] = 'The current preference for the index drawer is open.';
 $string['privacy:drawernavclosed'] = 'The current preference for the navigation drawer is closed.';
 $string['privacy:drawernavopen'] = 'The current preference for the navigation drawer is open.';
 $string['privacy:metadata'] = 'The Boost theme does not store any personal data about any user.';
+$string['privacy:metadata:preference:draweropenblock'] = 'The user\'s preference for hiding or showing the drawer with blocks.';
+$string['privacy:metadata:preference:draweropenindex'] = 'The user\'s preference for hiding or showing the drawer with course index.';
 $string['privacy:metadata:preference:draweropennav'] = 'The user\'s preference for hiding or showing the drawer menu navigation.';
 $string['rawscss'] = 'Raw SCSS';
 $string['rawscss_desc'] = 'Use this field to provide SCSS or CSS code which will be injected at the end of the style sheet.';
 $string['rawscsspre'] = 'Raw initial SCSS';
 $string['rawscsspre_desc'] = 'In this field you can provide initialising SCSS code, it will be injected before everything else. Most of the time you will use this setting to define variables.';
 $string['region-side-pre'] = 'Right';
+$string['showfooter'] = 'Show footer';
 $string['totop'] = 'Go to top';
+$string['unaddableblocks'] = 'Unneeded blocks';
+$string['unaddableblocks_desc'] = 'The blocks specified are not needed when using this theme and will not be listed in the \'Add a block\' menu.';

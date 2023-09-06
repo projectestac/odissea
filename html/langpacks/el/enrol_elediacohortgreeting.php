@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_elediacohortgreeting', language 'el', version '3.11'.
+ * Strings for component 'enrol_elediacohortgreeting', language 'el', version '4.1'.
  *
  * @package     enrol_elediacohortgreeting
  * @category    string
@@ -50,7 +50,7 @@ $string['description'] = 'Περιγραφή';
 $string['duplicateidnumber'] = 'Υπάρχει ήδη σύνολο χρηστών με τον ίδιο αριθμό αναγνωριστικού';
 $string['editcohort'] = 'Επεξεργασία συνόλου χρηστών';
 $string['elediacohortgreeting:assign'] = 'Ανάθεση μελών σε σύνολο χρηστών';
-$string['elediacohortgreeting:config'] = 'Διαμόρφωση στιγμιότυπων elediacohortgreeting (πρόσθετο της εταιρίας eLeDia για χαιρετισμό μετά την εγγραφή συνόλου χρηστών)';
+$string['elediacohortgreeting:config'] = 'Διαμόρφωση στιγμιοτύπων elediacohortgreeting (πρόσθετο της εταιρίας eLeDia για χαιρετισμό μετά την εγγραφή συνόλου χρηστών)';
 $string['elediacohortgreeting:manage'] = 'Διαχείριση συνόλων χρηστών';
 $string['elediacohortgreeting:unenrol'] = 'Ακύρωση εγγραφής χρηστών σε αναστολή';
 $string['elediacohortgreeting:view'] = 'Χρήση συνόλων χρηστών και προβολή μελών';

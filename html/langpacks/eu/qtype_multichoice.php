@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'eu', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'eu', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -63,6 +63,7 @@ $string['pleaseselectananswer'] = 'Mesedez, aukeratu erantzun bat.';
 $string['pleaseselectatleastoneanswer'] = 'Mesedez, aukeratu erantzun bat gutxienez.';
 $string['pluginname'] = 'Aukera anizkoitzak';
 $string['pluginname_help'] = 'Galdera honi erantzuteko (irudi bat izan dezakeena) ikasleak erantzun posible batzuen artean aukeratu behar du. Aukera anizkoitzeko galdera batek erantzun zuzen bakarra edo erantzun zuzen anizkoitzak izan ditzake.';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = 'Aukera anizkoitzeko galdera gehitzen';
 $string['pluginnameediting'] = 'Aukera anizkoitzeko galdera editatzen';
 $string['pluginnamesummary'] = 'Aurrez definitutako zerrendatik erantzun bat edo gehiago aukeratzea ahalbidetzen du.';
@@ -70,13 +71,15 @@ $string['privacy:metadata'] = 'Aukera anizkoitzak galdera mota pluginak egileari
 $string['privacy:preference:answernumbering'] = 'Erabili beharreko numerazio-estiloa (\'1., 2., 3....\', \'a., b., c....\' etab.)';
 $string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
 $string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
-$string['privacy:preference:showstandardinstruction'] = 'Argibide estandarrak erakutsi behar diren edo ez.';
+$string['privacy:preference:showstandardinstruction'] = 'Argibide estandarrak erakutsi behar diren ala ez.';
 $string['privacy:preference:shuffleanswers'] = 'Erantzunak automatikoki nahastu behar diren edo ez.';
 $string['privacy:preference:single'] = 'Erantzuna bakarra edo aukera anizkoitzekoa izango den.';
+$string['regradeissuenumchoiceschanged'] = 'Galderako aukera kopurua aldatu da.';
 $string['selectmulti'] = 'Aukeratu bat edo gehiago:';
 $string['selectone'] = 'Aukeratu bat:';
 $string['showstandardinstruction'] = 'Erakutsi argibide estandarrak';
-$string['showstandardinstruction_help'] = 'Aukera anizkoitzeko galderen aurretik "Aukeratu bat:" edo "Aukeratu bat edo gehiago:" argibideak erakutsiko diren edo ez.';
+$string['showstandardinstruction_desc'] = 'Aukera anizkoitzeko galderen aurretik "Aukeratu bat:" edo "Aukeratu bat edo gehiago:" argibideak erakutsiko diren edo ez.';
+$string['showstandardinstruction_help'] = 'Aukera anizkoitzeko galderen aurretik \'Aukeratu bat:\' edo \'Aukeratu bat edo gehiago:\' argibideak erakutsiko diren ala ez. Bestela, galderaren testuan ere argibideak gehitu ditzakezu.';
 $string['shuffleanswers'] = 'Nahastu aukerak?';
 $string['shuffleanswers_desc'] = 'Saiakera bakoitzeko aukerak modu lehenetsian ausaz nahastu behar diren edo ez.';
 $string['shuffleanswers_help'] = 'Gaituz gero, saiakera bakoitzean erantzunak ausaz ordenatzen dira, betiere galdetegiaren ezarpenetako "Nahastu galderen barruan" ezarpenean "Bai" ezarrita badago.';

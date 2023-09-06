@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'en', version '3.11'.
+ * Strings for component 'backup', language 'en', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -73,6 +73,7 @@ $string['automatedsetup'] = 'Automated backup setup';
 $string['automatedstorage'] = 'Automated backup storage';
 $string['automatedstoragehelp'] = 'Choose the location where you want backups to be stored when they are automatically created.';
 $string['backupactivity'] = 'Backup activity: {$a}';
+$string['backupautoactivitiesdescription'] = 'Sets the default for including activities in a backup. For the recycle bin to work, this setting must be enabled.';
 $string['backupcourse'] = 'Backup course: {$a}';
 $string['backupcoursedetails'] = 'Course details';
 $string['backupcoursesection'] = 'Section: {$a}';
@@ -205,7 +206,7 @@ $string['errorfilenametoolong'] = 'The filename must be less than 255 characters
 $string['errorinvalidformat'] = 'Unknown backup format';
 $string['errorinvalidformatinfo'] = 'The selected file is not a valid Moodle backup file and can\'t be restored.';
 $string['errorminbackup20version'] = 'This backup file has been created with one development version of Moodle backup ({$a->backup}). Minimum required is {$a->min}. Cannot be restored.';
-$string['errorrestorefrontpagebackup'] = 'You can only restore front page backups on the front page';
+$string['errorrestorefrontpagebackup'] = 'You can only restore site home backups on the site home';
 $string['executionsuccess'] = 'The backup file was successfully created.';
 $string['extractingbackupfileto'] = 'Extracting backup file to: {$a}';
 $string['failed'] = 'Backup failed';
@@ -310,13 +311,13 @@ $string['qcategory2coursefallback'] = 'The questions category "{$a->name}", orig
 $string['qcategorycannotberestored'] = 'The questions category "{$a->name}" cannot be created by restore';
 $string['question2coursefallback'] = 'The questions category "{$a->name}", originally at system/course category context in backup file, will be created at course context by restore';
 $string['questionegorycannotberestored'] = 'The questions "{$a->name}" cannot be created by restore';
-$string['recyclebin_desc'] = 'Note that these settings will be also be used for the recycle bin.';
+$string['recyclebin_desc'] = 'Note that these settings will also be used for the recycle bin.';
 $string['replacerestoredefaults'] = 'Restore defaults when restoring into another course deleting contents';
 $string['restoreactivity'] = 'Restore activity';
 $string['restorecourse'] = 'Restore course';
 $string['restorecoursesettings'] = 'Course settings';
 $string['restoredcourseid'] = 'Restored course ID: {$a}';
-$string['restoreexecutionsuccess'] = 'The course was restored successfully, clicking the continue button below will take you to view the course you restored.';
+$string['restoreexecutionsuccess'] = 'The course was successfully restored.';
 $string['restorefileweremissing'] = 'Some files could not be restored because they were missing in the backup.';
 $string['restorenewcoursefullname'] = 'New course name';
 $string['restorenewcourseshortname'] = 'New course short name';
@@ -393,7 +394,7 @@ $string['setting_overwrite_course_fullname'] = 'Overwrite course full name';
 $string['setting_overwrite_course_shortname'] = 'Overwrite course short name';
 $string['setting_overwrite_course_startdate'] = 'Overwrite course start date';
 $string['showtypes'] = 'Show type options';
-$string['sitecourseformatwarning'] = 'This is a front page backup. It can only be restored on the front page.';
+$string['sitecourseformatwarning'] = 'This is a site home backup. It can only be restored on the site home.';
 $string['skiphidden'] = 'Skip hidden courses';
 $string['skiphiddenhelp'] = 'Choose whether or not to skip hidden courses';
 $string['skipmodifdays'] = 'Skip courses not modified since';

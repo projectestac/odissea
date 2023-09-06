@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'el', version '3.11'.
+ * Strings for component 'completion', language 'el', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Επίτευξη βαθμού';
+$string['achievingpassinggrade'] = 'Επίτευξη βαθμού επιτυχίας';
 $string['activities'] = 'Δραστηριότητες';
 $string['activitiescompleted'] = 'Ολοκλήρωση δραστηριότητας';
 $string['activitiescompletednote'] = 'Σημείωση: Θα πρέπει να οριστεί η ολοκλήρωση δραστηριότητας για να εμφανιστεί μια δραστηριότητα στην παραπάνω λίστα.';
@@ -36,6 +37,7 @@ $string['activityaggregation_any'] = 'ΟΠΟΙΕΣΔΗΠΟΤΕ επιλεγμέ�
 $string['activitycompletion'] = 'Ολοκλήρωση δραστηριοτήτων';
 $string['activitycompletionupdated'] = 'Οι αλλαγές αποθηκεύτηκαν';
 $string['activitygradenotrequired'] = 'Δεν απαιτείται βαθμός';
+$string['activitygradetopassnotset'] = 'Αυτή η δραστηριότητα δεν έχει έγκυρο σετ βαθμών επιτυχίας. Μπορεί να οριστεί στην ενότητα Βαθμών των ρυθμίσεων της δραστηριότητας.';
 $string['affectedactivities'] = 'Οι αλλαγές θα επηρεάσουν τις ακόλουθες δραστηριότητες ή πόρους <b>{$a}</b>:';
 $string['aggregationmethod'] = 'Μέθοδος συνάθροισης';
 $string['all'] = 'Όλα';
@@ -52,9 +54,9 @@ $string['bulkcompletiontracking_help'] = '<strong>Καμία:</strong> Να μη
 <strong>Χειροκίνητα:</strong> Οι μαθητές μπορούν να επισημάνουν χειροκίνητα τη δραστηριότητα ως ολοκληρωμένη
 
 <strong>Με προϋποθέσεις:</strong> Εμφάνιση της δραστηριότητας ως ολοκληρωμένης όταν πληρούνται κάποιες προϋποθέσεις';
-$string['checkactivity'] = 'Πλαίσιο ελέγχου για δραστηριότητα/πόρο: {$a}';
+$string['checkactivity'] = 'Πλαίσιο επιλογής για δραστηριότητα/πόρο: {$a}';
 $string['checkall'] = 'Επιλογή ή αποεπιλογή όλων των δραστηριοτήτων και πόρων';
-$string['checkallsection'] = 'Επιλογή ή αποεπιλογή όλων των δραστηριοτήτων και πόρων στο παρακάτω τμήμα: {$a}';
+$string['checkallsection'] = 'Επιλογή ή αποεπιλογή όλων των δραστηριοτήτων και πόρων στην παρακάτω ενότητα: {$a}';
 $string['completeactivity'] = 'Ολοκλήρωση δραστηριότητας';
 $string['completed'] = 'Ολοκληρωμένο';
 $string['completedunlocked'] = 'Οι επιλογές ολοκλήρωσης ξεκλειδώθηκαν';
@@ -82,7 +84,7 @@ $string['completion-y'] = 'Ολοκληρωμένο';
 $string['completion-y-override'] = 'Ολοκληρώθηκε (τέθηκε από {$a})';
 $string['completion_automatic'] = 'Η δραστηριότητα σημειώνεται ολοκληρωμένη όταν ικανοποιηθούν κάποιες συνθήκες';
 $string['completion_help'] = 'Εάν ενεργοποιηθεί, η ολοκλήρωση δραστηριότητας παρακολουθείται, είτε με το χέρι είτε αυτόματα, με βάση συγκεκριμένες συνθήκες. Μπορούν να ρυθμιστούν πολλαπλές συνθήκες αν είναι επιθυμητό. Αν ναι, η δραστηριότητα θα θεωρείται ολοκληρωμένη μόνο όταν καλύπτονται όλες οι συνθήκες. Μια επισήμανση (σημαδάκι &#10004;) δίπλα στο όνομα της δραστηριότητας στη σελίδα του μαθήματος δείχνει πότε έχει ολοκληρωθεί η δραστηριότητα.';
-$string['completion_link'] = 'δραστηριότητα/ολοκλήρωση';
+$string['completion_link'] = '';
 $string['completion_manual'] = 'Οι μαθητές μπορούν να επισημάνουν χειροκίνητα τη δραστηριότητα ως ολοκληρωμένη';
 $string['completion_none'] = 'Να μην φαίνεται η ολοκλήρωση της δραστηριότητας';
 $string['completionactivitydefault'] = 'Χρήση προεπιλογής δραστηριότητας';
@@ -102,6 +104,9 @@ $string['completionnotenabledforcourse'] = 'Η ολοκλήρωση δεν εί�
 $string['completionnotenabledforsite'] = 'Η ολοκλήρωση δεν είναι ενεργοποιημένη για αυτό τον ιστότοπο';
 $string['completionondate'] = 'Ημερομηνία';
 $string['completionondatevalue'] = 'Ημερομηνία κατά την οποία το μάθημα θα επισημανθεί ως ολοκληρωμένο';
+$string['completionpassgrade'] = 'Απαιτείται βαθμός επιτυχίας';
+$string['completionpassgrade_desc'] = 'Ο μαθητής πρέπει να λάβει έναν ελάχιστο βαθμό επιτυχίας για να ολοκληρώσει αυτή τη δραστηριότητα';
+$string['completionpassgrade_help'] = 'Εάν ενεργοποιηθεί, η δραστηριότητα θα θεωρείται ολοκληρωμένη όταν ένας μαθητής λάβει βαθμό επιτυχίας.';
 $string['completionsettingslocked'] = 'Οι ρυθμίσεις ολοκλήρωσης είναι κλειδωμένες';
 $string['completionupdated'] = 'Ενημερώθηκε η ολοκλήρωση της δραστηριότητας <b>{$a}</b>';
 $string['completionusegrade'] = 'Απαιτείται βαθμός';
@@ -138,6 +143,7 @@ $string['deletecompletiondata'] = 'Διαγραφή δεδομένων ολοκ�
 $string['dependencies'] = 'Εξαρτήσεις';
 $string['dependenciescompleted'] = 'Ολοκλήρωση';
 $string['detail_desc:receivegrade'] = 'Λάβετε βαθμό';
+$string['detail_desc:receivepassgrade'] = 'Λάβετε βαθμό επιτυχίας';
 $string['detail_desc:view'] = 'Προβολή';
 $string['editcoursecompletionsettings'] = 'Επεξεργασία ρυθμίσεων ολοκλήρωσης μαθημάτων';
 $string['enablecompletion'] = 'Ενεργοποίηση παρακολούθησης ολοκλήρωσης';

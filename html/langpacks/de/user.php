@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'de', version '3.11'.
+ * Strings for component 'user', language 'de', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -36,9 +36,9 @@ $string['clearfilterselection'] = '"{$a}" aus dem Filter entfernen';
 $string['countparticipantsfound'] = '{$a} Teilnehmer/innen gefunden';
 $string['filterbykeyword'] = 'Stichwort';
 $string['filterrowlegend'] = 'Filter {$a}';
-$string['filtersetmatchdescription'] = 'Wie mehrere Filter kombiniert werden sollen';
+$string['filtersetmatchdescription'] = 'Wie mehrere Filter kombiniert werden sollten';
 $string['filtertype'] = 'Filtertyp';
-$string['match'] = 'Passend';
+$string['match'] = 'Passen';
 $string['matchofthefollowing'] = 'aus Folgendem';
 $string['moodlenetprofile'] = 'MoodleNet-Profil-ID';
 $string['moodlenetprofile_help'] = 'Dieses Feld stellt Ihre MoodleNet-Profil-ID dar, die verwendet wird, um Ihr MoodleNet-Profil mit Moodle zu verknüpfen.';
@@ -89,7 +89,7 @@ $string['privacy:metadata:lastaccess'] = 'Zeitpunkt des letzten Zugriffs auf die
 $string['privacy:metadata:lastaccesstablesummary'] = 'Information über den Zeitpunkt des letzten Zugriffs auf den Kurs';
 $string['privacy:metadata:lastip'] = 'Letzte IP-Adresse des Nutzers';
 $string['privacy:metadata:lastlogin'] = 'Letzer Login des Nutzers';
-$string['privacy:metadata:lastname'] = 'Nachname des Nutzers';
+$string['privacy:metadata:lastname'] = 'Nachname der Person';
 $string['privacy:metadata:lastnamephonetic'] = 'Phonetische Aussprache des Nachnamens';
 $string['privacy:metadata:maildigest'] = 'Einstellung des Nutzers für E-Mailversand';
 $string['privacy:metadata:maildisplay'] = 'Einstellung des Nutzers zur Anzeige seiner E-Mail-Adresse für andere Nutzer';
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'Secret wurde gesetzt und dem Nutzer mitgete
 $string['privacy:metadata:trackforums'] = 'Voreinstellung für Foren und Lesetracking';
 $string['privacy:metadata:trustbitmask'] = 'Trust Bit Mask';
 $string['privacy:metadata:url'] = 'URL des Nutzers';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Zeitpunkt, zu dem einer Person die Willkommensnachricht erstmalig angezeigt wurde.';
 $string['privacy:metadata:user_preferences'] = 'Einstellungen des benannten Nutzers';
 $string['privacy:metadata:user_preferences:name'] = 'Einstellungsbezeichnung';
 $string['privacy:metadata:user_preferences:userid'] = 'Nutzer-ID';
@@ -149,6 +150,11 @@ $string['privacy:privatefilespath'] = 'Meine Dateien';
 $string['privacy:profileimagespath'] = 'Profilbilder';
 $string['privacy:sessionpath'] = 'Sessiondaten';
 $string['selectfiltertype'] = 'Auswählen';
+$string['supportmessagealternative'] = 'Sie können auch eine E-Mail an {$a} senden.';
+$string['supportmessagenotsent'] = 'Leider kann Ihre Mitteilung nicht versendet werden!';
+$string['supportmessagesent'] = 'Ihre Mitteilung wurde gesendet.';
+$string['supportmessagesentforloggedoutuser'] = 'Seien Sie vorsichtig mit dieser Mitteilung, Der Absender war nicht angemeldet und seine Identität wurde nicht geprüft.';
 $string['target:upcomingactivitiesdue'] = 'Fälligkeit für anstehende Aktivitäten';
 $string['target:upcomingactivitiesdue_help'] = 'Dieses Ziel generiert Erinnerungen für anstehende Aktivitäten.';
 $string['target:upcomingactivitiesdueinfo'] = 'Alle anstehenden Fälligkeiten für Aktivitäten sind hier aufgelistet. Folgende Teilnehmer/innen haben den Hinweis direkt erhalten.';
+$string['userprofile'] = 'Nutzerprofil';

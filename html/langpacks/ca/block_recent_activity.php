@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'ca', version '3.11'.
+ * Strings for component 'block_recent_activity', language 'ca', version '4.1'.
  *
  * @package     block_recent_activity
  * @category    string

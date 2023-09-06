@@ -191,7 +191,8 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             // Choose best answer.
             $max = 0.0;
             $maxwqgrade = 0.0;
-            $answer = null;
+            $matchinganswerposition = -1;
+            
             for ($i = 0; $i < count($correctanswers); $i++) {
                 $wqgrade = $qi->getAnswerGrade($i, 0, $this->wirisquestion);
                 $grade = $wqgrade * $correctanswers[$i]->fraction;
@@ -202,20 +203,24 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
                 if ($grade > $max || ($grade == $max && $wqgrade > $maxwqgrade)) {
                     $max = $grade;
                     $maxwqgrade = $wqgrade;
-                    $answer = $correctanswers[$i];
+                    $matchinganswerposition = $i;
                 }
             }
+
             // Backup matching answer.
             $matchinganswerid = 0;
+            $answer = null;
+            
             // Reset variable.
             $this->step->set_var('_matching_answer_grade', null);
-            if (!empty($answer)) {
+            if ($matchinganswerposition != -1) {
+                $answer = $correctanswers[$matchinganswerposition];
                 $matchinganswerid = $answer->id;
                 if ($max < 1.0) {
                     $this->step->set_var('_matching_answer_grade', $maxwqgrade, true);
                 }
+                $this->step->set_var('_matching_answer_wq_position', $matchinganswerposition, true);
             }
-
             $this->step->set_var('_matching_answer', $matchinganswerid, true);
             $this->step->set_var('_response_hash', $responsehash, true);
             $this->step->set_var('_qi', $qi->serialize(), true);

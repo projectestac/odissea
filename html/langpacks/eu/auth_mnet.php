@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'eu', version '3.11'.
+ * Strings for component 'auth_mnet', language 'eu', version '4.1'.
  *
  * @package     auth_mnet
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_mnet_auto_add_remote_users'] = 'Bai aukeratuz gero, urrutiko erabiltzailea lehen aldiz sartzen denean erabiltzaile lokalaren erregistroa automatikoki sortzen da.';
 $string['auth_mnet_roamin'] = 'Ostalari honetako erabiltzaileak zure gunean ibil daitezke';
 $string['auth_mnet_roamout'] = 'Zure erabiltzaileak ostalari honetan ibil daitezke';
-$string['auth_mnet_rpc_negotiation_timeout'] = 'XMLRCP-ren bidez autentifikatzeko gehieneko denbora (segundoetan).';
+$string['auth_mnet_rpc_negotiation_timeout'] = 'XMLRCP-ren bidez autentifikatzeko denbora-muga (segundoetan).';
 $string['auth_mnetdescription'] = 'Zure Moodle Sarearen ezarpenetan definitutako web-konfiantzaren arabera autentifikatuko dira erabiltzaileak.';
 $string['auto_add_remote_users'] = 'Gehitu automatikoki urrutiko erabiltzaileak';
 $string['crontask'] = 'MNET autentifikazioaren atzeko planoko prozesatzea';
@@ -90,7 +90,7 @@ $string['privacy:metadata:mnet_log:time'] = 'Ekintza gertatu zeneko unea.';
 $string['privacy:metadata:mnet_log:url'] = 'Ekintza gertatu zeneko urruneko sistemako URLa.';
 $string['privacy:metadata:mnet_log:userid'] = 'Ekintza egin zuen urruneko sistemako erabiltzailearen ID lokala.';
 $string['privacy:metadata:mnet_session'] = 'MNet erabiltzaile-saio bakoitzaren xehetasunak urruneko sistema batean. Datuak behin behinean gordetzen dira.';
-$string['privacy:metadata:mnet_session:expires'] = 'Saioa iraungituko den unea.';
+$string['privacy:metadata:mnet_session:expires'] = 'Saioa iraungiko den unea.';
 $string['privacy:metadata:mnet_session:mnethostid'] = 'Urruneko sistemako MNet IDa.';
 $string['privacy:metadata:mnet_session:token'] = 'Saioaren identifikatzaile bakarra';
 $string['privacy:metadata:mnet_session:useragent'] = 'Orrian sartzean erabiltzaileak erabilitako agentea';

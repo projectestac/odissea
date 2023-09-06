@@ -34,17 +34,17 @@ $pageid    = optional_param('pageid', 0, PARAM_INT);
 $returnurl = optional_param('returnurl', '', PARAM_LOCALURL);
 
 if (!$subwiki = wiki_get_subwiki($subwikiid)) {
-    print_error('incorrectsubwikiid', 'wiki');
+    throw new \moodle_exception('incorrectsubwikiid', 'wiki');
 }
 
 // Checking wiki instance of that subwiki
 if (!$wiki = wiki_get_wiki($subwiki->wikiid)) {
-    print_error('incorrectwikiid', 'wiki');
+    throw new \moodle_exception('incorrectwikiid', 'wiki');
 }
 
 // Checking course module instance
 if (!$cm = get_coursemodule_from_instance("wiki", $subwiki->wikiid)) {
-    print_error('invalidcoursemodule');
+    throw new \moodle_exception('invalidcoursemodule');
 }
 
 // Checking course instance
@@ -55,7 +55,7 @@ $context = context_module::instance($cm->id);
 require_login($course, true, $cm);
 
 if (!wiki_user_can_view($subwiki, $wiki)) {
-    print_error('cannotviewpage', 'wiki');
+    throw new \moodle_exception('cannotviewpage', 'wiki');
 }
 require_capability('mod/wiki:managefiles', $context);
 
@@ -78,6 +78,11 @@ $PAGE->set_title($title);
 $PAGE->set_heading($course->fullname);
 $PAGE->navbar->add(format_string(get_string('wikifiles', 'wiki')), $CFG->wwwroot . '/mod/wiki/files.php?pageid=' . $pageid);
 $PAGE->navbar->add(format_string($title));
+$PAGE->set_secondary_active_tab('modulepage');
+$PAGE->activityheader->set_attrs([
+    'hidecompletion' => true
+]);
+$PAGE->add_body_class('limitedwidth');
 
 $data = new stdClass();
 $data->returnurl = $returnurl;
@@ -97,8 +102,6 @@ if ($mform->is_cancelled()) {
 }
 
 echo $OUTPUT->header();
-echo $OUTPUT->heading(format_string($wiki->name));
-echo $OUTPUT->box(format_module_intro('wiki', $wiki, $PAGE->cm->id), 'generalbox', 'intro');
 echo $OUTPUT->box_start('generalbox');
 $mform->display();
 echo $OUTPUT->box_end();

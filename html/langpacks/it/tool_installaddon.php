@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'it', version '3.11'.
+ * Strings for component 'tool_installaddon', language 'it', version '4.1'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -42,6 +42,7 @@ $string['installfromziprootdir_help'] = 'Alcuni pacchetti ZIP, come ad esempio i
 $string['installfromzipsubmit'] = 'Installa plugin da file ZIP';
 $string['installfromziptype'] = 'Tipo plugin';
 $string['installfromziptype_help'] = 'l\'installer è in grado di rilevare automaticamente il tipo di plugin per quei plugin che dichiarano correttamente il proprio nome del componente. Se il rilevamento automatico dovesse fallire, è possibile selezionare il tipo di plugin a mano. Attenzione: selezionando un tipo di plugin errato l\'installazione non andrà a buon fine.';
+$string['installfromziptype_link'] = 'Development:Plugins';
 $string['permcheck'] = 'È necessario accertarsi che la cartella radice del tipo di plugin sia scrivibile dal processo web server';
 $string['permcheckerror'] = 'Si è verificato un errore durante il controllo dei permessi di scrittura';
 $string['permcheckprogress'] = 'Verifica permessi di scrittura in corso...';

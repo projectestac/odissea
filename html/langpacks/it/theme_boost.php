@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'it', version '3.11'.
+ * Strings for component 'theme_boost', language 'it', version '4.1'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,6 +34,7 @@ $string['choosereadme'] = 'Boost è un tema moderno e fortemente personalizzabil
 $string['configtitle'] = 'Boost';
 $string['currentinparentheses'] = '(zttuale)';
 $string['generalsettings'] = 'Impostazioni generali';
+$string['loginbackgroundimage'] = 'Immagine di sfondo della pagina di autenticazione';
 $string['nobootswatch'] = 'Nessuno';
 $string['pluginname'] = 'Boost';
 $string['preset'] = 'Preimpostazioni tema';
@@ -48,4 +49,6 @@ $string['rawscss_desc'] = 'Utilizzare il campo per impostare un SCSS o CSS che s
 $string['rawscsspre'] = 'SCSS grezzo iniziale';
 $string['rawscsspre_desc'] = 'Utilizzare il campo per impostare un SCSS di inizializzazione che sarò inserito prima di qualsiasi altra cosa. Generalmente utilizzato per definire variabili.';
 $string['region-side-pre'] = 'Destra';
+$string['showfooter'] = 'Visualizza piè di pagina';
 $string['totop'] = 'Vai all\'inizio';
+$string['unaddableblocks'] = 'Blocchi non necessari';

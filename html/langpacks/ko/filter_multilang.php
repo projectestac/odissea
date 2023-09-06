@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_multilang', language 'ko', version '3.11'.
+ * Strings for component 'filter_multilang', language 'ko', version '4.1'.
  *
  * @package     filter_multilang
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = '다중언어 제공';
+$string['forceoldsyntax_desc'] = '강제로 예전의 다중언어 문법 사용: &lt;span&gt; without the class="multilang" and &lt;lang&gt;';

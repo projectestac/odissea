@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'es', version '3.11'.
+ * Strings for component 'availability', language 'es', version '4.1'.
  *
  * @package     availability
  * @category    string
@@ -65,7 +65,8 @@ $string['privacy:metadata'] = 'El subsistema de Restricción del acceso no almac
 $string['restrictaccess'] = 'Restricciones de acceso';
 $string['restrictbygroup'] = 'Añadir restricción de acceso por grupo/agrupamiento';
 $string['setheading'] = '{$a->number} Conjunto de {$a->count} restricción(es)';
-$string['show_verb'] = 'Haga clic para mostrar en gris';
-$string['shown_all'] = 'Se muestra en gris si el usuario no cumple las condiciones';
-$string['shown_individual'] = 'Se muestra en gris si el usuario no cumple con esta condición';
+$string['show_verb'] = 'Haga clic para mostrar';
+$string['showmore'] = 'Mostrar más';
+$string['shown_all'] = 'Se muestra si el/la estudiante no cumple con las condiciones.';
+$string['shown_individual'] = 'Se muestra si el/la estudiante no cumple con esta condición.';
 $string['unknowncondition'] = 'Condición desconocida (plugin de condición borrado)';

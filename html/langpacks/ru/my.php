@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'ru', version '3.11'.
+ * Strings for component 'my', language 'ru', version '4.1'.
  *
  * @package     my
  * @category    string
@@ -28,9 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['addpage'] = 'Добавить страницу';
 $string['alldashboardswerereset'] = 'Все настройки страниц «Личный кабинет» были сброшены к значениям по умолчанию.';
 $string['allprofileswerereset'] = 'Все страницы профилей были сброшены к настройкам по умолчанию.';
+$string['coursemanagementoptions'] = 'Параметры управления курсом';
 $string['defaultpage'] = 'Страница «Мой Moodle» по умолчанию';
 $string['defaultprofilepage'] = 'Страница профиля по умолчанию';
 $string['delpage'] = 'Удалить страницу';
+$string['error:dashboardisdisabled'] = 'Личный кабинет отключен администратором.';
 $string['managepages'] = 'Управлять страницами';
 $string['mymoodle'] = 'Личный кабинет';
 $string['nocourses'] = 'Нет информации для отображения.';

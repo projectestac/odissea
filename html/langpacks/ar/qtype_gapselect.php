@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'ar', version '3.11'.
+ * Strings for component 'qtype_gapselect', language 'ar', version '4.1'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -41,6 +41,7 @@ $string['group'] = 'مجموعة';
 $string['pleaseputananswerineachbox'] = 'يرجى وضع إجابة في كل مربع.';
 $string['pluginname'] = 'إختيار الكلمات المفقودة';
 $string['pluginname_help'] = 'تتطلب أسئلة تحديد الكلمات المفقودة من المجيب تحديد الإجابات الصحيحة من القوائم المنسدلة. يتم استخدام [[1]] ، [[2]] ، [[3]] ، ... كعناصر نائبة في نص السؤال ، مع تحديد الإجابات الصحيحة كأجوبة اختيار 1 ، 2 ، 3 ، ... على التوالي. يمكن إضافة إجابات اختيار إضافي لجعل السؤال أكثر صعوبة. قد يتم تجميع إجابات الاختيار لتقييد الإجابات المتوفرة في كل قائمة منسدلة.';
+$string['pluginname_link'] = 'question/type/gapselect';
 $string['pluginnameadding'] = 'إضافة سؤال إختيار الكلمات المفقودة';
 $string['pluginnameediting'] = 'تحرير سؤال تحديد الكلمات المفقودة';
 $string['pluginnamesummary'] = 'يتم ملء الكلمات المفقودة في نص السؤال باستخدام القوائم المنسدلة.';
@@ -48,6 +49,8 @@ $string['privacy:metadata'] = 'إن ملحق نوع السؤال، إختيار 
 $string['privacy:preference:defaultmark'] = 'الدرجة الافتراضية المعدة لسؤال معين';
 $string['privacy:preference:penalty'] = 'الغرامة المفروضة على كل محاولة خاطئة عند تشغيل الأسئلة باستعمال السلوك \'تفاعلي مع محاولات متعددة\' أو \'النمط المتكيف\'';
 $string['privacy:preference:shuffleanswers'] = 'فيما إذا كان ينبغي خلط الإجابات تلقائيًا';
+$string['regradeissuenumchoiceschanged'] = 'عدد الخيارات في المجموعة {$a} قد تغيرت.';
+$string['regradeissuenumgroupsschanged'] = 'عدد مجموعات الخيارات قد تغير.';
 $string['shuffle'] = 'الخلط';
 $string['tagsnotallowed'] = '{$a->tag} غير مسموح به.
 (فقط {$a->allowed}  مسموح به.)';

@@ -28,7 +28,7 @@ Feature: A teacher navigates to response reports of students
     And I set the field "What action from anyone in the forums did you find most affirming or helpful?" to "most helpful student1"
     And I set the field "What action from anyone in the forums did you find most puzzling or confusing?" to "most confusing student1"
     And I set the field "What event surprised you most?" to "most surprised student1"
-    And I press "Click here to continue"
+    And I press "Submit"
     And I press "Continue"
     And I am on the "Test survey name" "survey activity" page logged in as student2
     And I set the field "At what moment in class were you most engaged as a learner?" to "most engaged as student2"
@@ -36,10 +36,11 @@ Feature: A teacher navigates to response reports of students
     And I set the field "What action from anyone in the forums did you find most affirming or helpful?" to "most helpful student2"
     And I set the field "What action from anyone in the forums did you find most puzzling or confusing?" to "most confusing student2"
     And I set the field "What event surprised you most?" to "most surprised student1"
-    And I press "Click here to continue"
+    And I press "Submit"
     And I press "Continue"
     When I am on the "Test survey name" "survey activity" page logged in as teacher1
-    And "Summary" "link" should not exist in current page administration
-    And "Scales" "link" should not exist in current page administration
-    And "Response reports > Question" "link" should exist in current page administration
-    And "Response reports > Participants" "link" should exist in current page administration
+    And I navigate to "Response reports" in current page administration
+    Then I should not see "Summary"
+    And I should not see "Scales"
+    And I should see "Questions"
+    And I should see "Participants"

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'el', version '3.11'.
+ * Strings for component 'block_progress', language 'el', version '4.1'.
  *
  * @package     block_progress
  * @category    string
@@ -80,7 +80,7 @@ $string['hsuforum'] = 'Προχωρημένο φόρουμ';
 $string['imscp'] = 'Πακέτο περιεχομένου IMS';
 $string['jclic'] = 'JClic';
 $string['journal'] = 'Χρονικό';
-$string['lastonline'] = 'Τελευταίο στο μάθημα';
+$string['lastonline'] = 'Τελευταία στο μάθημα';
 $string['lesson'] = 'Διδασκαλία';
 $string['lti'] = 'Εξωτερικό εργαλείο';
 $string['marked'] = 'επισημασμένο';

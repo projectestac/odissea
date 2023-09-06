@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'nl', version '3.11'.
+ * Strings for component 'completion', language 'nl', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Cijfer behalen';
+$string['achievingpassinggrade'] = 'Slaagcijfer behalen';
 $string['activities'] = 'Activiteiten';
 $string['activitiescompleted'] = 'Voltooide activiteiten';
 $string['activitiescompletednote'] = 'Opmerking: Voltooide activiteiten moet voor een activiteit ingeschakeld zijn om in bovenstaande lijst te kunnen verschijnen.';
@@ -36,6 +37,7 @@ $string['activityaggregation_any'] = 'EEN geselecteerde activiteit moet voltooid
 $string['activitycompletion'] = 'Voltooide activiteiten';
 $string['activitycompletionupdated'] = 'Wijzigingen opgeslagen';
 $string['activitygradenotrequired'] = 'Cijfer niet vereist';
+$string['activitygradetopassnotset'] = 'Voor deze activiteit is nog geen geldig slaagcijfer ingesteld. Je kunt dit doen in de cijfer-sectie van de activiteitsinstellingen.';
 $string['affectedactivities'] = 'De wijzigingen zijn van toepassing op de volgende <b>{$a}</b> activiteiten of bronnen:';
 $string['aggregationmethod'] = 'Aggregatiemethode';
 $string['all'] = 'Alle';
@@ -83,6 +85,7 @@ $string['completion-y'] = 'Voltooid';
 $string['completion-y-override'] = 'Voltooid (ingesteld door {$a})';
 $string['completion_automatic'] = 'Toon activiteit als voltooid als aan de voorwaarden voldaan is';
 $string['completion_help'] = 'Indien ingeschakeld wordt het voltooien van activiteiten opgevolgd, ofwel manueel ofwel automatisch, gebaseerd op bepaalde voorwaarden. Meerdere voorwaarden kunnen ingesteld worden indien gewenst. Indien er meerdere voorwaarden zijn, wordt de activiteit pas als voltooid beschouwd als aan alle voorwaarden voldaan is.';
+$string['completion_link'] = 'activity/completion';
 $string['completion_manual'] = 'Gebruikers kunnen de activiteit manueel als voltooid markeren';
 $string['completion_none'] = 'Voltooide activiteiten niet aanduiden';
 $string['completionactivitydefault'] = 'Gebruik activiteitsstandaard';
@@ -106,6 +109,9 @@ $string['completionnotenabledforcourse'] = 'Voltooien is niet ingeschakeld voor 
 $string['completionnotenabledforsite'] = 'Voltooien is niet ingeschakeld voor deze site';
 $string['completionondate'] = 'Datum';
 $string['completionondatevalue'] = 'Datum wanneer de cursus als voltooid gemarkeerd zal worden';
+$string['completionpassgrade'] = 'Slaagcijfer vereist';
+$string['completionpassgrade_desc'] = 'De leerling moet een slaagcijfer behalen om deze activiteit te voltooien';
+$string['completionpassgrade_help'] = 'Indien ingeschakeld wordt deze activiteit als voltooid beschouwd wanneer de leerling het slaagcijfer behaald.';
 $string['completionsettingslocked'] = 'Instellingen voor voltooien geblokkeerd';
 $string['completionupdated'] = 'Voltooiing voor activiteit <b>{$a}</b> geüpdatet';
 $string['completionusegrade'] = 'Cijfer vereist';
@@ -125,6 +131,7 @@ $string['coursecompleted'] = 'Cursus voltooid';
 $string['coursecompletedmessage'] = '<p>Proficiat!</p><p>Je hebt net volgende cursus voltooid:<a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Cursus voltooien';
 $string['coursecompletioncondition'] = 'Voorwaarde:{$a}';
+$string['coursecompletionnavigation'] = 'Cursusvoltooiing tertiaire navigatie';
 $string['coursegrade'] = 'Cursuscijfer';
 $string['coursesavailable'] = 'Cursus beschikbaar';
 $string['coursesavailableexplaination'] = 'Opmerking: de criteria voor het voltooien van een cursus moeten ingesteld zijn om in bovenstaande lijst te verschijnen.';
@@ -136,13 +143,16 @@ $string['csvdownload'] = 'Download als rekenblad (UTF-8.csv)';
 $string['datepassed'] = 'Datum geslaagd';
 $string['days'] = 'Dagen';
 $string['daysoftotal'] = '{$a->days} van {$a->total}';
+$string['daysuntilcompletion'] = 'Dagen tot voltooiing';
 $string['defaultcompletion'] = 'Standaard voltooide activiteiten';
 $string['defaultcompletionupdated'] = 'Wijzigingen opgeslagen';
 $string['deletecompletiondata'] = 'Verwijder voltooiingsgegevens';
 $string['dependencies'] = 'Voorwaarden';
 $string['dependenciescompleted'] = 'Voltooien van andere cursussen';
 $string['detail_desc:receivegrade'] = 'Krijg een cijfer';
+$string['detail_desc:receivepassgrade'] = 'Het slaagcijfer behalen';
 $string['detail_desc:view'] = 'Bekijk';
+$string['done'] = 'Klaar';
 $string['editcoursecompletionsettings'] = 'Bewerk instelling voor cursusvoltooiing';
 $string['enablecompletion'] = 'Bijhouden van voltooiing inschakelen';
 $string['enablecompletion_help'] = 'Indien ingeschakeld kunnen er in de activiteit en/of cursus voorwaarden voor voltooiing ingesteld worden.  Het wordt aangeraden dit in te schakelen, zodat het Cursusoverzicht op Mijn startpagina betekenisvolle gegevens toont.';
@@ -160,6 +170,7 @@ $string['eventcoursecompletionupdated'] = 'Cursus voltooien aangepast';
 $string['eventcoursemodulecompletionupdated'] = 'Voltooien van cursusactiviteit aangepast';
 $string['eventdefaultcompletionupdated'] = 'Standaardwaarde voor voltooide activiteiten in cursus geüpdatet';
 $string['excelcsvdownload'] = 'Download in Excel-compatibel formaat (.csv)';
+$string['failed'] = 'Mislukt';
 $string['fraction'] = 'Breuk';
 $string['graderequired'] = 'Vereist cursuscijfer';
 $string['gradexrequired'] = '{$a} vereist';
@@ -196,6 +207,7 @@ $string['privacy:metadata:gradefinal'] = 'Het behaalde eindcijfer voor het volto
 $string['privacy:metadata:overrideby'] = 'De gebruikersID van de persoon die het voltooien van de module overschreven heeft';
 $string['privacy:metadata:reaggregate'] = 'Of het voltooien van de cursus opnieuw geaggregeerd werd.';
 $string['privacy:metadata:timecompleted'] = 'Het tijdstip waarop de cursus voltooid werd.';
+$string['privacy:metadata:timecreated'] = 'Het tijdstip waarop de activiteitsvoltooiing was gemakt.';
 $string['privacy:metadata:timeenrolled'] = 'Het tijdstip waarop de gebruiker aangemeld was in de cursus';
 $string['privacy:metadata:timemodified'] = 'Het tijdstip waarop het voltooien van de cursusmodule was aangepast';
 $string['privacy:metadata:timestarted'] = 'Het tijdstip waarop de cursus gestart was.';
@@ -224,6 +236,8 @@ $string['selfcompletion'] = 'Zelf voltooien';
 $string['showcompletionconditions'] = 'Toon voltooiingsvoorwaarden op de cursuspagina';
 $string['showcompletionconditions_help'] = 'De voltooiingsvoorwaarden worden altijd getoond op de activiteitenpagina. Deze instelling bepaalt of die ook getoond worden onder elke activiteit op de cursuspagina.';
 $string['showinguser'] = 'Gebruiker tonen';
+$string['timecompleted'] = 'Tijd voltooid';
+$string['todo'] = 'Te doen';
 $string['unenrolingfromcourse'] = 'Afmelden van de cursus';
 $string['unenrolment'] = 'Afmelding';
 $string['unit'] = 'Unit';

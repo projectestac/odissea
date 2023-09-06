@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_multilang', language 'es', version '3.11'.
+ * Strings for component 'filter_multilang', language 'es', version '4.1'.
  *
  * @package     filter_multilang
  * @category    string
@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Contenido multi-idioma';
+$string['forceoldsyntax'] = 'Forzar sintaxis antigua';
+$string['forceoldsyntax_desc'] = 'Forzar sintaxis vieja multi-idioma: <span> sin la class="multilang" and <lang>';
 $string['privacy:metadata'] = 'El complemento de contenido multi-idioma no';

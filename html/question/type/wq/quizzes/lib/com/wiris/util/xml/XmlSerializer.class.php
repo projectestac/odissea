@@ -249,13 +249,13 @@ class com_wiris_util_xml_XmlSerializer {
 		}
 		return $data;
 	}
-	public function textContent($content) {
+	public function textContentImpl($content, $forceCData) {
 		if($this->mode === com_wiris_util_xml_XmlSerializer::$MODE_READ) {
 			$content = com_wiris_util_xml_XmlSerializer::getXmlTextContent($this->element);
 		} else {
 			if($this->mode === com_wiris_util_xml_XmlSerializer::$MODE_WRITE && $content !== null && $this->ignoreTagStackCount === 0) {
 				$textNode = null;
-				if(strlen($content) > 100 || StringTools::startsWith($content, "<") && StringTools::endsWith($content, ">")) {
+				if(strlen($content) > 100 || StringTools::startsWith($content, "<") && StringTools::endsWith($content, ">") || $forceCData) {
 					$k = _hx_index_of($content, "]]>", null);
 					$i = 0;
 					while($k > -1) {
@@ -276,6 +276,9 @@ class com_wiris_util_xml_XmlSerializer {
 			}
 		}
 		return $content;
+	}
+	public function textContent($content) {
+		return $this->textContentImpl($content, false);
 	}
 	public function attributeFloat($name, $value, $def) {
 		return Std::parseFloat($this->attributeString($name, "" . _hx_string_rec($value, ""), "" . _hx_string_rec($def, "")));

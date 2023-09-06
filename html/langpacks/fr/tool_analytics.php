@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'fr', version '3.11'.
+ * Strings for component 'tool_analytics', language 'fr', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -88,7 +88,6 @@ $string['exportmodel'] = 'Exporter la configuration';
 $string['exporttrainingdata'] = 'Exporter les données d\'entraînement';
 $string['extrainfo'] = 'Infos';
 $string['generalerror'] = 'Erreur d\'évaluation. Code d\'erreur {$a}';
-$string['getpredictions'] = 'Obtenir les prédictions';
 $string['goodmodel'] = 'Ce modèle est bon et il peut être utilisé pour effectuer des prédictions. Activez-le pour commencer à obtenir des prédictions.';
 $string['ignoreversionmismatches'] = 'Ignorer les différences de version';
 $string['ignoreversionmismatchescheckbox'] = 'Ignorer les différences entre la version de ce site et la version du site original.';
@@ -96,6 +95,7 @@ $string['importedsuccessfully'] = 'Le modèle a été correctement importé';
 $string['importmodel'] = 'Importer le modèle';
 $string['indicators'] = 'Indicateurs';
 $string['indicators_help'] = 'Les indicateurs sont les éléments dont vous pensez qu\'ils mèneront à une prédiction précise de la cible.';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = 'Nombre d\'indicateurs : {$a}';
 $string['info'] = 'Infos';
 $string['insights'] = 'Indications';
@@ -144,6 +144,7 @@ $string['scheduledanalysisresultscli'] = 'Résultats utilisant la méthode de di
 $string['selecttimesplittingforevaluation'] = 'Sélectionner l\'intervalle d\'analyse que vous voulez utiliser pour évaluer la configuration du modèle.';
 $string['target'] = 'Cible';
 $string['target_help'] = 'La cible est ce que le modèle prédira.';
+$string['target_link'] = 'Targets';
 $string['timesplittingnotdefined'] = 'Aucun intervalle d\'analyse n\'est défini.';
 $string['timesplittingnotdefined_help'] = 'Vous devez sélectionner un intervalle d\'analyse avant d\'activer le modèle.';
 $string['trainandpredictmodel'] = 'Entrainement du modèle et calcul des prédictions';

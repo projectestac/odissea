@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'currencies', language 'gl', version '3.11'.
+ * Strings for component 'currencies', language 'gl', version '4.1'.
  *
  * @package     currencies
  * @category    string
@@ -35,12 +35,12 @@ $string['ARS'] = 'Peso arxentino';
 $string['AUD'] = 'Dólar australiano';
 $string['AWG'] = 'Florín de Aruba';
 $string['AZN'] = 'Manat acerbaixano';
-$string['BAM'] = 'Marco convertíbel de Bosnia e Hercegovina';
+$string['BAM'] = 'Marco convertíbel de Bosnia e Herzegovina';
 $string['BBD'] = 'Dólar das Barbados';
 $string['BDT'] = 'Taka bangladechiano';
 $string['BGN'] = 'Lev búlgaro';
-$string['BHD'] = 'Dinar de Bahrein';
-$string['BIF'] = 'Franco burundiano';
+$string['BHD'] = 'Dinar de Barein';
+$string['BIF'] = 'Franco burundés';
 $string['BMD'] = 'Dólar das Bermudas';
 $string['BND'] = 'Dólar do Brunei';
 $string['BOB'] = 'Boliviano de Bolivia';
@@ -48,7 +48,7 @@ $string['BRL'] = 'Real brasileiro';
 $string['BSD'] = 'Dólar das Bahamas';
 $string['BTN'] = 'Ngultrum butanés';
 $string['BWP'] = 'Pula botswaniano';
-$string['BYR'] = 'Rublo Bielorruso';
+$string['BYR'] = 'Rublo belaruso';
 $string['BZD'] = 'Dólar do Belize';
 $string['CAD'] = 'Dólar do Canadá';
 $string['CDF'] = 'Franco congolés';
@@ -71,7 +71,7 @@ $string['ERN'] = 'Nakfa eritreo';
 $string['ETB'] = 'Birr etíope';
 $string['EUR'] = 'Euro';
 $string['FJD'] = 'Dólar de Fidxi';
-$string['FKP'] = 'Libra das Illas Falklands';
+$string['FKP'] = 'Libra das Illas Falkland';
 $string['GBP'] = 'Libra Esterlina';
 $string['GEL'] = 'Lari xeorxiano';
 $string['GHS'] = 'Cedi ganés';
@@ -102,7 +102,7 @@ $string['KPW'] = 'Won norcoreano';
 $string['KRW'] = 'Won surcoreano';
 $string['KWD'] = 'Dinar kuwaití';
 $string['KYD'] = 'Dólar das Illas Caimán';
-$string['KZT'] = 'Tenge casaquistanés';
+$string['KZT'] = 'Tenge cazaquistanés';
 $string['LAK'] = 'Kip laosiano';
 $string['LBP'] = 'Libra libanesa';
 $string['LKR'] = 'Rupia de Sri Lanka';
@@ -111,7 +111,7 @@ $string['LSL'] = 'Loti lesotiano';
 $string['LTL'] = 'Litas lituano';
 $string['LVL'] = 'Lats letón';
 $string['LYD'] = 'Dinar libio';
-$string['MAD'] = 'Dirham marroquí';
+$string['MAD'] = 'Dirham marroquío';
 $string['MDL'] = 'Leu moldavo';
 $string['MGA'] = 'Franco malgaxe';
 $string['MKD'] = 'Denar macedonio';
@@ -158,10 +158,10 @@ $string['SSP'] = 'Libra sursudanesa';
 $string['STD'] = 'Dobra de San Tomé e Príncipe';
 $string['SVC'] = 'Colón salvadoreño';
 $string['SYP'] = 'Libra siria';
-$string['SZL'] = 'Lilangeni suacilandés';
+$string['SZL'] = 'Lilangeni suazilandés';
 $string['THB'] = 'Baht tailandés';
 $string['TJS'] = 'Somoni taxiquistanés';
-$string['TMT'] = 'Manat do Turcomenistán';
+$string['TMT'] = 'Manat do Turquemenistán';
 $string['TND'] = 'Dinar tunisiano';
 $string['TOP'] = 'Pa\\`anga tongano';
 $string['TRY'] = 'Lira turca';
@@ -183,5 +183,5 @@ $string['XOF'] = 'Franco CFA BCEAO';
 $string['XPF'] = 'Franco CFP';
 $string['YER'] = 'Riyal iemení';
 $string['ZAR'] = 'Rand sudafricano';
-$string['ZMK'] = 'Kwacha de Zambia';
+$string['ZMW'] = 'Kwacha de Zambia';
 $string['ZWL'] = 'Dólar do Cimbabue';

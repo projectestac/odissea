@@ -80,6 +80,32 @@ abstract class base {
     }
 
     /**
+     * Enable or disable a plugin.
+     * When possible, the change will be stored into the config_log table, to let admins check when/who has modified it.
+     *
+     * @param string $pluginname The plugin name to enable/disable.
+     * @param int $enabled Whether the pluginname should be enabled (1) or not (0). This is an integer because some plugins, such
+     * as filters or repositories, might support more statuses than just enabled/disabled.
+     *
+     * @return bool Whether $pluginname has been updated or not.
+     */
+    public static function enable_plugin(string $pluginname, int $enabled): bool {
+        return false;
+    }
+
+    /**
+     * Returns current status for a pluginname.
+     *
+     * @param string $pluginname The plugin name to check.
+     * @return int The current status (enabled, disabled...) of $pluginname.
+     */
+    public static function get_enabled_plugin(string $pluginname): int {
+        $enabledplugins = static::get_enabled_plugins();
+        $value = $enabledplugins && array_key_exists($pluginname, $enabledplugins);
+        return (int) $value;
+    }
+
+    /**
      * Gathers and returns the information about all plugins of the given type,
      * either on disk or previously installed.
      *
@@ -259,7 +285,8 @@ abstract class base {
         }
 
         if (isset($plugin->incompatible) && $plugin->incompatible !== null) {
-            if ((ctype_digit($plugin->incompatible) || is_int($plugin->incompatible)) && (int) $plugin->incompatible > 0) {
+            if (((is_string($plugin->incompatible) && ctype_digit($plugin->incompatible)) || is_int($plugin->incompatible))
+                    && (int) $plugin->incompatible > 0) {
                 $this->pluginincompatible = intval($plugin->incompatible);
             } else {
                 throw new coding_exception('Incorrect syntax in plugin incompatible declaration in '."$this->name");
@@ -503,27 +530,17 @@ abstract class base {
      *
      * @return null|moodle_url
      */
-    public function get_settings_url() {
+    public function get_settings_url(): ?moodle_url {
         $section = $this->get_settings_section_name();
         if ($section === null) {
             return null;
         }
+
         $settings = admin_get_root()->locate($section);
-        if ($settings) {
-            if ($settings instanceof \admin_settingpage) {
-                return new moodle_url('/admin/settings.php', [
-                    'section' => $section,
-                ]);
-            }
-
-            if ($settings instanceof \admin_externalpage) {
-                return new moodle_url($settings->url);
-            }
-
-            if ($settings instanceof \admin_category) {
-                return $settings->get_settings_page_url();
-            }
+        if ($settings && $settings instanceof \core_admin\local\settings\linkable_settings_page) {
+            return $settings->get_settings_page_url();
         }
+
         return null;
     }
 
@@ -580,6 +597,10 @@ abstract class base {
      */
     public function get_dir() {
         global $CFG;
+
+        if (!isset($this->rootdir)) {
+            return '';
+        }
 
         return substr($this->rootdir, strlen($CFG->dirroot));
     }

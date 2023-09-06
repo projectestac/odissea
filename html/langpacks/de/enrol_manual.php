@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'de', version '3.11'.
+ * Strings for component 'enrol_manual', language 'de', version '4.1'.
  *
  * @package     enrol_manual
  * @category    string
@@ -63,6 +63,7 @@ Sie können auf der folgenden Seite die Einschreibedauer verlängern: {$a->exten
 
 Ihr E-Learning Team';
 $string['expirymessageenrollersubject'] = 'Benachrichtigung zum Teilnahmeende';
+$string['managemanualenrolements'] = 'Manuelle Einschreibungen verwalten';
 $string['manual:config'] = 'Manuelle Einschreibung verwalten';
 $string['manual:enrol'] = 'Nutzer/innen einschreiben';
 $string['manual:manage'] = 'Nutzereinschreibung verwalten';

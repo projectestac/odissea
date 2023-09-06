@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_learning_plan', language 'el', version '3.11'.
+ * Strings for component 'block_learning_plan', language 'el', version '4.1'.
  *
  * @package     block_learning_plan
  * @category    string
@@ -35,7 +35,7 @@ $string['assignee'] = 'Εξεταστής';
 $string['attachment'] = 'Ανέβασμα αρχείου';
 $string['block/learning_plan:managepages'] = 'Σελίδες διαχείρισης σχεδίου μάθησης';
 $string['block/learning_plan:viewpages'] = 'Σελίδες εμφάνισης σχεδίου μάθησης';
-$string['classroom'] = 'Εκπαίδευση/κατάρτιση σε αίθουσα διδασκαλίας';
+$string['classroom'] = 'Εκπαίδευση σε τάξη';
 $string['date_val'] = 'Η ημερομηνία λήξης πρέπει να είναι μετά την ημερομηνία έναρξης.';
 $string['department'] = 'Ομάδα';
 $string['desc'] = 'Περιγραφή';
@@ -44,7 +44,7 @@ $string['elearning'] = 'ηλε.Μάθηση';
 $string['end_date'] = 'Ημερομηνία λήξης';
 $string['group_selection'] = 'Επιλογή ομάδας';
 $string['learning_plan'] = 'Σχέδιο μάθησης';
-$string['learning_plan:addinstance'] = 'Προσθήκη στιγμιότυπου';
+$string['learning_plan:addinstance'] = 'Προσθήκη στιγμιοτύπου';
 $string['learning_plan:managepages'] = 'Διαχείριση σελίδων';
 $string['learning_plan:viewpages'] = 'Εμφάνιση σελίδων';
 $string['learning_plan_error'] = 'Το σχέδιο μάθησης είναι κενό';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'ko', version '3.11'.
+ * Strings for component 'imscp', language 'ko', version '4.1'.
  *
  * @package     imscp
  * @category    string
@@ -31,10 +31,13 @@ $string['contentheader'] = '콘텐츠';
 $string['deploymenterror'] = '콘텐츠 패키지 오류!';
 $string['imscp:addinstance'] = '새 IMS 콘텐츠 패키지 추가';
 $string['imscp:view'] = 'IMS 콘텐츠 보기';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['keepold'] = '보관된 팩';
 $string['keepoldexplain'] = '얼마나 많은 팩이 보관되어야 하나?';
 $string['modulename'] = 'IMS 콘덴츠팩키지';
 $string['modulename_help'] = 'IMS 콘텐츠 팩키지는 IMS 콘텐츠 패키징 규정에 따라 제작된 팩키지가  강좌에서 표시될 수 있게 합니다.';
+$string['modulename_link'] = 'mod/imscp/view';
 $string['modulenameplural'] = 'IMS 콘덴츠팩키지';
 $string['navigation'] = '찾아가기';
 $string['packagefile'] = '팩 파일';

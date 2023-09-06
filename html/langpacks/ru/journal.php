@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'ru', version '3.11'.
+ * Strings for component 'journal', language 'ru', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -55,6 +55,7 @@ $string['journalquestion'] = 'Вопрос в рабочей тетради';
 $string['mailsubject'] = 'Отзыв для рабочей тетради';
 $string['modulename'] = 'Рабочая тетрадь';
 $string['modulename_help'] = 'Активный элемент «Рабочая тетрадь» позволяет учителям дать отзывы на работы студентов по конкретной теме.';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = 'Рабочие тетради';
 $string['newjournalentries'] = 'Новые записи в рабочих тетрадях';
 $string['nodeadline'] = 'Всегда открыта';

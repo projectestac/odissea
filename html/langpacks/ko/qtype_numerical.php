@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'ko', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'ko', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -65,6 +65,7 @@ $string['pleaseenterananswer'] = '답을 입력하세요.';
 $string['pleaseenteranswerwithoutthousandssep'] = '천단위 구분자 ({$a}).를 사용하지 말고 답을 입력하세요.';
 $string['pluginname'] = '수치형';
 $string['pluginname_help'] = '학생 관점에서 보면 수치형 질문은 단답형 질문처럼 보입니다. 차이는 수치형 질문은 답들이 인정된 오차를 허용한다는 것입니다. 이로 인해 정해진 범위의 답이 하나의 답으로 평가되는 것을 허용합니다. 예를 들면 답이 10이고 허용 오차가 2라면 8에서부터 12까지의 답은 맞은 것으로 인정됩니다.';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = '수치형 질문 추가';
 $string['pluginnameediting'] = '수치형 질문 편집';
 $string['pluginnamesummary'] = '다양한 모범답안과 비교하여 채점할 수 있는, 오차 및 단위를 포함할 수 있는 수치로 응답할 수 있게 합니다.';
@@ -97,11 +98,6 @@ $string['unitposition'] = '단위 위치';
 $string['units'] = '단위';
 $string['unitselect'] = '드롭다운 메뉴';
 $string['unitx'] = '유닛 {no}';
-$string['validnumberformats'] = '유효한 숫자 형식';
-$string['validnumberformats_help'] = '* 보통의 수 13500.67, 13 500.67, 13500,67 or 13 500,67
-* 만일 천 단위 구분자로 , 를 사용하면 소수점은 13,500.67 : 13,500. 에서와 같이 항상  . 으로 표시해야 합니다.
-* 지수형식 예를 들면 1.350067 * 10<sup>4</sup>은 1.350067 E4 : 1.350067 E04를 사용하십시요.';
-$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 혹은 1.350067 E04';
 $string['xmustbenumeric'] = '{$a}는 수이어야 합니다.';
 $string['xmustnotbenumeric'] = '{$a}는 수가 될 수 없습니다.';
 $string['youmustenteramultiplierhere'] = '지수를 넣어야만 합니다.';

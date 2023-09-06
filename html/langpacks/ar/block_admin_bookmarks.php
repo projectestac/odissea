@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_bookmarks', language 'ar', version '3.11'.
+ * Strings for component 'block_admin_bookmarks', language 'ar', version '4.1'.
  *
  * @package     block_admin_bookmarks
  * @category    string
@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['admin_bookmarks:addinstance'] = 'إضافة كتلة جديدة من الإشارات المرجعية للمشرف';
-$string['admin_bookmarks:myaddinstance'] = 'إضافة كتلة جديدة من الإشارات المرجعية للمشرف إلى لوحة التحكم';
+$string['admin_bookmarks:myaddinstance'] = 'إضافة كتلة جديدة من الإشارات المرجعية للمشرف إلى دفة القيادة';
 $string['pluginname'] = 'الإشارات المرجعية للمشرف';
 $string['privacy:metadata'] = 'كتلة الإشارات المرجعية للمشرف تظهر فقط البيانات المخزونة في مواضع أخرى.';

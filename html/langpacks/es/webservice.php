@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'es', version '3.11'.
+ * Strings for component 'webservice', language 'es', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'Protocolos activos de servicio web';
 $string['addaservice'] = 'Agregar servicio';
 $string['addcapabilitytousers'] = 'Comprobar permisos de los usuarios';
 $string['addcapabilitytousersdescription'] = 'Los usuarios deben tener dos capacidades (permisos) - webservice:createtoken y una capacidad que concuerde con los protocolos utilizados, por ejemplo webservice/rest:use, webservice/soap:use. Para lograr esto, cree un rol de servicios web con las capacidades apropiadas habilitadas y asígnelo a usuario de servicios web como un rol del sistema.';
+$string['addexternalservice'] = 'Añadir servicio externo';
 $string['addfunction'] = 'Agregar función';
 $string['addfunctionhelp'] = 'Seleccione la función a agregar al servicio.';
 $string['addfunctions'] = 'Agregar funciones';
@@ -61,14 +62,16 @@ $string['default'] = 'Valor por defecto para "{$a}"';
 $string['deleteaservice'] = 'Eliminar servicio';
 $string['deleteservice'] = 'Eliminar el servicio: {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'Eliminar un servicio también eliminará las fichas (tokens) relacionadas con este servicio. ¿Realmente desea eliminar el servicio externo "{$a}"?';
+$string['deletetoken'] = 'Borrar token';
 $string['deletetokenconfirm'] = '¿Realmente desea eliminar esta ficha (token) para servicio web para <strong>{$a->user}</strong> en el servicio <strong>{$a->service}</strong>?';
+$string['deprecated'] = 'Deprecado';
 $string['disabledwarning'] = 'Todos los protocolos de servicios web están desactivados. El parámetro "Activar servicios Web"  se puede encontrar en "Características avanzadas".';
 $string['doc'] = 'Documentación';
 $string['docaccessrefused'] = 'Usted no está autorizado para ver la documentación de esta ficha';
-$string['documentation'] = 'Documentación de Servicios Web';
 $string['downloadfiles'] = 'Puede descargar archivos';
 $string['downloadfiles_help'] = 'Si se habilita, cualquier usuario puede descargar archivos con su clave de seguridad. Por supuesto que están restringidos a los archivos que se les permite descargar en el sitio.';
 $string['editaservice'] = 'Editar servicio';
+$string['editexternalservice'] = 'Editar servicio externo';
 $string['editservice'] = 'Editar el servicio: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Habilitado';
 $string['enabledocumentation'] = 'Habilitar documentación del desarrollador';

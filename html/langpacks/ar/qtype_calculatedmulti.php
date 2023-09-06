@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'ar', version '3.11'.
+ * Strings for component 'qtype_calculatedmulti', language 'ar', version '4.1'.
  *
  * @package     qtype_calculatedmulti
  * @category    string
@@ -29,6 +29,7 @@ $string['answeroptions'] = 'خيارات الاختيار';
 $string['answeroptions_help'] = 'صيغة الاختيار المقترحة هي ... {= {x} + ..} ...';
 $string['pluginname'] = 'مسائل حسابية باختيارات متعددة';
 $string['pluginname_help'] = 'أسئلة متعدد الخيارات الحسابي مثل أسئلة متعدد الخيارات التي يمكن أن تتضمن عناصر خياراتها نتائج معادلات رقمية باستعمال القيم البديلة في الأقواس المتموجة والتي يتم استبدالها بالقيم الفردية عندما يتم أخذ هذا الاختبار. على سبيل المثال، إذا كان السؤال "ما هي مساحة مستطيل طوله {L} وعرضه {W}؟" إحدى الخيارات هي {={L}*{W}} (حيث * تدل على الضرب).';
+$string['pluginname_link'] = 'question/type/calculatedmulti';
 $string['pluginnameadding'] = 'إضافة سؤال حسابي باختيارات متعددة';
 $string['pluginnameediting'] = 'تحرير سؤال حسابي من الاختيار المتعدد';
 $string['pluginnamesummary'] = 'أسئلة حسابية باختيارات متعددة، مثل أسئلة الاختيار المتعدد التي يمكن أن تشمل اختيار نتائج صيغة من القيم الرقمية التي يتم اختيارها عشوائياً من مجموعة، عندما يتم أخذ هذا الاختبار.';

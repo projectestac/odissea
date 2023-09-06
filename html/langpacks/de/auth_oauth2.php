@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'de', version '3.11'.
+ * Strings for component 'auth_oauth2', language 'de', version '4.1'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -81,14 +81,17 @@ $string['emailpasswordchangeinfosubject'] = '{$a}: Kennwort ändern';
 $string['info'] = 'Externes Nutzerkonto';
 $string['issuer'] = 'OAuth 2 Service';
 $string['issuernologin'] = 'Der Aussteller kann nicht als Login verwendet werden';
+$string['key'] = 'Schlüssel';
 $string['linkedlogins'] = 'Weitere Logins';
 $string['linkedloginshelp'] = 'Hilfe für weitere Logins';
+$string['loggedin'] = 'Nutzer/in erfolgreich beim Provider authentifiziert.';
 $string['loginerror_authenticationfailed'] = 'Der Authentifizierungsvorgang ist fehlgeschlagen.';
 $string['loginerror_cannotcreateaccounts'] = 'Ein Nutzerkonto mit dieser E-Mail-Adresse konnte nicht gefunden werden.';
 $string['loginerror_invaliddomain'] = 'Die E-Mail-Adresse ist für diese Website nicht erlaubt.';
 $string['loginerror_nouserinfo'] = 'Es wurden keine Nutzerinfos zurückgegeben. Der OAuth 2 Service ist möglicherweise falsch konfiguriert.';
 $string['loginerror_userincomplete'] = 'Die zurückgegebenen Nutzerinfos enthalten keinen Nutzernamen und keine E-Mail-Adresse. Der OAuth 2 Service ist möglicherweise falsch konfiguriert.';
-$string['noissuersavailable'] = 'Keiner der konfigurierten OAuth2 services erlaubt Ihnen die Verknüpfung von Login-Accounts.';
+$string['noconfiguredidps'] = 'Keine OAuth2-Provider konfiguriert.';
+$string['noissuersavailable'] = 'Keiner der konfigurierten OAuth 2 Services erlaubt Ihnen die Verknüpfung von Login-Accounts.';
 $string['notenabled'] = 'Das Plugin zur OAuth 2 Authentifizierung ist leider nicht aktiviert.';
 $string['notloggedindebug'] = 'Der Login-Versuch ist fehlgeschlagen. {$a}';
 $string['notwhileloggedinas'] = 'Weitere Logins können nicht verwaltet werden, wenn Sie mit einem anderen Nutzerkonto eingeloggt sind.';
@@ -107,3 +110,6 @@ $string['privacy:metadata:auth_oauth2:timemodified'] = 'Zeitstempel wann der Dat
 $string['privacy:metadata:auth_oauth2:userid'] = 'ID der Person, mit der dieser OAuth2-Login verknüpft ist.';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'ID des Nutzers, der diesen Account bearbeitet hat.';
 $string['privacy:metadata:auth_oauth2:username'] = 'Der externe  Nutzername, der mit diesem Account verbunden ist';
+$string['testidplogin'] = 'Testanmeldung mit:';
+$string['userinfo'] = 'Nutzerdaten vom Provider:';
+$string['value'] = 'Wert';

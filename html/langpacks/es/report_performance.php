@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'es', version '3.11'.
+ * Strings for component 'report_performance', language 'es', version '4.1'.
  *
  * @package     report_performance
  * @category    string
@@ -32,6 +32,9 @@ $string['check_backup_details'] = 'Habilitar las copias de seguridad automática
 $string['check_cachejs_comment_disable'] = 'Si se habilita, se mejora el rendimiento en la carga de páginas.';
 $string['check_cachejs_comment_enable'] = 'Si se deshabilita, las páginas pueden cargarse más lentamente.';
 $string['check_cachejs_details'] = 'El almacenamiento en caché Javascript y la compresión mejoran en gran medida el rendimiento en la carga de página. Es altamente recomendable en los sitios en producción.';
+$string['check_dbschema_errors'] = 'El esquema de la base de datos no está alineado.';
+$string['check_dbschema_name'] = 'Comprobación del esquema de la base de datos';
+$string['check_dbschema_ok'] = 'El esquema de la base de datos es correcto.';
 $string['check_debugmsg_comment_developer'] = 'Si se establece otro diferente a DESARROLLADOR, el rendimiento puede mejorar ligeramente.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Si se establece a DESARROLLADOR, el rendimiento puede verse afectado ligeramente.';
 $string['check_debugmsg_details'] = 'Pocas veces hay alguna ventaja en ir a nivel de Desarrollador, a menos que lo haga un desarrollador. <p>Una vez que haya recibido el mensaje de error y lo haya copiado y pegado en otra parte, es ALTAMENTE RECOMENDABLE volver a cambiar Depurando a NINGUNO. Los mensajes de depuración pueden dar pistas a un hacker sobre la configuración de su sitio y puede afectar al rendimiento.</p>';

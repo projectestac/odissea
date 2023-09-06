@@ -66,7 +66,7 @@ if (!empty($add)) {
     $courseformat = course_get_format($course);
     $maxsections = $courseformat->get_max_sections();
     if ($section > $maxsections) {
-        print_error('maxsectionslimit', 'moodle', '', $maxsections);
+        throw new \moodle_exception('maxsectionslimit', 'moodle', '', $maxsections);
     }
 
     list($module, $context, $cw, $cm, $data) = prepare_new_moduleinfo_data($course, $add, $section);
@@ -127,7 +127,7 @@ if (!empty($add)) {
 
 } else {
     require_login();
-    print_error('invalidaction');
+    throw new \moodle_exception('invalidaction');
 }
 
 $pagepath = 'mod-' . $module->name . '-';
@@ -138,12 +138,14 @@ if (!empty($type)) { //TODO: hopefully will be removed in 2.0
 }
 $PAGE->set_pagetype($pagepath);
 $PAGE->set_pagelayout('admin');
+$PAGE->add_body_class('limitedwidth');
+
 
 $modmoodleform = "$CFG->dirroot/mod/$module->name/mod_form.php";
 if (file_exists($modmoodleform)) {
     require_once($modmoodleform);
 } else {
-    print_error('noformdesc');
+    throw new \moodle_exception('noformdesc');
 }
 
 $mformclassname = 'mod_'.$module->name.'_mod_form';
@@ -167,7 +169,7 @@ if ($mform->is_cancelled()) {
     } else if (!empty($fromform->add)) {
         $fromform = add_moduleinfo($fromform, $course, $mform);
     } else {
-        print_error('invaliddata');
+        throw new \moodle_exception('invaliddata');
     }
 
     if (isset($fromform->submitbutton)) {
@@ -200,13 +202,14 @@ if ($mform->is_cancelled()) {
     if (isset($navbaraddition)) {
         $PAGE->navbar->add($navbaraddition);
     }
+    $PAGE->activityheader->disable();
 
     echo $OUTPUT->header();
 
     if (get_string_manager()->string_exists('modulename_help', $module->name)) {
-        echo $OUTPUT->heading_with_help($pageheading, 'modulename', $module->name, 'icon');
+        echo $OUTPUT->heading_with_help($pageheading, 'modulename', $module->name, 'monologo');
     } else {
-        echo $OUTPUT->heading_with_help($pageheading, '', $module->name, 'icon');
+        echo $OUTPUT->heading_with_help($pageheading, '', $module->name, 'monologo');
     }
 
     $mform->display();

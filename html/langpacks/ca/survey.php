@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ca', version '3.11'.
+ * Strings for component 'survey', language 'ca', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -201,6 +201,8 @@ $string['howlong'] = '¿Quant de temps t’ha portat completar aquest questionar
 $string['howlongoptions'] = 'menys de 1 <abbr title=minuto>min.</abbr>, 1-2 <abbr title=minuto>min.</abbr>,  2-3 <abbr title=minuto>min.</abbr>,  3-4 <abbr title=minuto>min.</abbr>,  4-5 <abbr title=minuto>min.</abbr>,  5-10 <abbr title=minuto>min.</abbr>, més de 10 minuts.';
 $string['ifoundthat'] = 'Trobat:';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats d\'Enquesta en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = 'Text d’introducció';
 $string['invalidsurveyid'] = 'L\'ID de l\'enquesta és incorrecte';
 $string['invalidtmptid'] = 'L\'ID de la plantilla és invàlid';
@@ -209,6 +211,7 @@ $string['modulename'] = 'Enquesta';
 $string['modulename_help'] = 'El mòdul d\'enquestes proporciona uns tipus d\'instruments d\'enquestes verificats que s\'han considerat útils per determinar i estimular l\'aprenentatge en entorns en línia. El professor pot utilitzar-los per recopilar dades dels estudiants que poden ajudar-lo a aprendre sobre les seves classes i reflexionar sobre la tasca docent.
 
 Noteu que aquestes eines d\'enquesta tenen les preguntes preestablertes. Els professors que vulguin crear la seva pròpia enquesta han d\'utilitzar l\'activitat de «Retroacció».';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = 'Enquestes';
 $string['name'] = 'Nombre';
 $string['newsurveyresponses'] = 'Noves respostes a l’enquesta';
@@ -255,6 +258,7 @@ $string['surveytype_help'] = 'Hi ha tres tipus d\'exàmens disponibles:
 * Examen d\'incidents crític.
 
 *Examen d\'aprenentatge constructivista en línia (COLLES)- Per monitoritzar el grau en qua la capacitat d\'interactuar en la web pot ser utilitzada per engegar en els estudiants pràctiques d\'aprenentatges dinàmics.';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Gràcies por contestar l\'enquesta, {$a}';
 $string['time'] = 'Temps';
 $string['viewsurveyresponses'] = 'Visualitza {$a} respostes a l’enquesta';

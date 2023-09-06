@@ -24,15 +24,17 @@ Feature: Check that the page listing the shared external tools is functioning as
 
   Scenario: I want to edit an external tool
     Given I log in as "teacher1"
-    And I am on "Course 1" course homepage with editing mode on
-    And I navigate to "Users > Enrolment methods" in current page administration
+    And I turn editing mode on
+    And I am on the "Course 1" "enrolment methods" page
     And I select "Publish as LTI tool" from the "Add method" singleselect
     And I set the following fields to these values:
       | Custom instance name | Assignment - LTI |
       | Tool to be published | Test assignment name |
+      | LTI version          | Legacy LTI (1.1/2.0) |
     And I press "Add method"
     And I am on "Course 1" course homepage
     And I navigate to "Published as LTI tools" in current page administration
+    And I click on "Legacy LTI (1.1/2.0" "link"
     And I should see "Assignment - LTI" in the ".generaltable" "css_element"
     When I click on "Disable" "link" in the "Assignment - LTI" "table_row"
     Then ".dimmed_text" "css_element" should exist in the "Assignment - LTI" "table_row"
@@ -49,5 +51,5 @@ Feature: Check that the page listing the shared external tools is functioning as
     And I should see "Course - LTI" in the ".generaltable" "css_element"
     And I click on "Delete" "link" in the "Course - LTI" "table_row"
     And I press "Continue"
-    And I should see "No tools provided"
+    And I should see "No resources or activities are published yet"
     And I should not see "Course - LTI"

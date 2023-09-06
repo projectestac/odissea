@@ -22,8 +22,7 @@ Feature: Scorm with no calendar capabilites
       | timeclose       | ##first day of February 2017##                 |
       | packagefilepath | mod/scorm/tests/packages/singlesco_scorm12.zip |
     And I log in as "admin"
-    And I am on "Course 1" course homepage
-    And I navigate to "Users > Permissions" in current page administration
+    And I am on the "Course 1" "permissions" page
     And I override the system permissions of "Teacher" role with:
       | capability | permission |
       | moodle/calendar:manageentries | Prohibit |

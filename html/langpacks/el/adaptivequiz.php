@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'adaptivequiz', language 'el', version '3.11'.
+ * Strings for component 'adaptivequiz', language 'el', version '4.1'.
  *
  * @package     adaptivequiz
  * @category    string
@@ -31,7 +31,7 @@ $string['adaptivequiz:attempt'] = 'Προσπάθεια για ένα προσα
 $string['adaptivequiz:reviewattempts'] = 'Εξέταση υποβολών προσαρμόσιμου κουίζ';
 $string['adaptivequiz:viewreport'] = 'Εμφάνιση αναφορών προσαρμόσιμου κουίζ';
 $string['adaptivequizname'] = 'Όνομα';
-$string['adaptivequizname_help'] = 'Δώστε το όνομα του στιγμιότυπου του προσαρμόσιμου κουίζ';
+$string['adaptivequizname_help'] = 'Δώστε το όνομα του στιγμιοτύπου του προσαρμόσιμου κουίζ';
 $string['all_attempts_deleted'] = 'Διαγράφηκαν όλες οι προσπάθειες προσαρμόσιμων κουίζ';
 $string['all_grades_removed'] = 'Διαγράφηκαν όλοι οι βαθμοί προσαρμόσιμων κουίζ';
 $string['answer'] = 'Απάντηση';
@@ -41,7 +41,7 @@ $string['answerdistgraph_title'] = 'Κατανομή απαντήσεων για
 $string['answers_display_name'] = 'Απαντήσεις';
 $string['attempt_questiondetails'] = 'Λεπτομέρειες ερώτησης';
 $string['attempt_state'] = 'Κατάσταση προσπάθειας';
-$string['attempt_summary'] = 'Σύνοψη προσπάθειας';
+$string['attempt_summary'] = 'Περίληψη προσπάθειας';
 $string['attempt_user'] = 'Χρήστης';
 $string['attemptclosed'] = 'Η προσπάθεια έκλεισε χειροκίνητα.';
 $string['attemptclosedstatus'] = 'Έκλεισε χειροκίνητα από τον/την {$a->current_user_name} (αναγνωριστικό χρήστη: {$a->current_user_id}) στις {$a->now}.';
@@ -87,7 +87,7 @@ $string['downloadcsv'] = 'Λήψη CSV (κείμενο με κόμματα)';
 $string['enterrequiredpassword'] = 'Εισαγωγή του απαιτούμενου κωδικού πρόσβασης';
 $string['errorattemptstate'] = 'Παρουσιάστηκε κάποιο σφάλμα κατά τον καθορισμό της κατάστασης της προσπάθειας';
 $string['errorclosingattempt_alreadycomplete'] = 'Η προσπάθεια αυτή είναι ήδη ολοκληρωμένη. Δεν μπορεί να κλείσει χειροκίνητα.';
-$string['errorfetchingquest'] = 'Αδυναμία κλήσης/λήψης μιας ερώτησης για το επίπεδο {$a->level}';
+$string['errorfetchingquest'] = 'Αδυναμία εύρεσης/λήψης μιας ερώτησης για το επίπεδο {$a->level}';
 $string['errorlastattpquest'] = 'Σφάλμα κατά τον έλεγχο της τιμής της απόκρισης για την τελευταία προσπάθεια ερώτησης';
 $string['errornumattpzero'] = 'Σφάλμα με τον αριθμό ερωτήσεων που επιχειρήθηκαν να ισούται με μηδέν, ενώ ο χρήστης έχει υποβάλλει απάντηση σε προηγούμενη ερώτηση';
 $string['errorsumrightwrong'] = 'Το άθροισμα των σωστών και λανθασμένων απαντήσεων δεν ισούται με το συνολικό αριθμό των ερωτήσεων που προσπαθήθηκαν';
@@ -162,7 +162,7 @@ $string['pluginname'] = 'Προσαρμοστικό κουίζ';
 $string['question_report'] = 'Ανάλυση ερώτησης';
 $string['questionanalysisbtn'] = 'Ανάλυση ερώτησης';
 $string['questionnumber'] = 'Ερώτηση #';
-$string['questionpool'] = 'Τράπεζα ερωτήσεων';
+$string['questionpool'] = 'Δεξαμενή ερωτήσεων';
 $string['questionpool_help'] = 'Επιλογή της κατηγορίας/-ών ερώτησης από όπου θα αντλήσει ερωτήσεις η δραστηριότητα κατά τη διάρκεια μιας προσπάθειας.';
 $string['questions_report'] = 'Αναφορά ερωτήσεων';
 $string['questionsattempted'] = 'Άθροισμα για τις ερωτήσεις για τις οποίες έγινε προσπάθεια';

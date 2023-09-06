@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'eu', version '3.11'.
+ * Strings for component 'tool_analytics', language 'eu', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -88,7 +88,6 @@ $string['exportmodel'] = 'Esportatu konfigurazioa';
 $string['exporttrainingdata'] = 'Esportatu trebatze-datuak';
 $string['extrainfo'] = 'Informazioa';
 $string['generalerror'] = 'Ebaluatze errorea. Egoeraren kodea {$a}';
-$string['getpredictions'] = 'Eskuratu aurreikuspenak';
 $string['goodmodel'] = 'Aurreikuspenak lortzeko eredu ona da hau. Gaitu ezazu aurreikuspenak lortzen hasteko.';
 $string['ignoreversionmismatches'] = 'Ez hartu kontuan bertsio-ezberdintasunak';
 $string['ignoreversionmismatchescheckbox'] = 'Ez hartu kontuan gune honen eta jatorrizko gunearen bertsioen arteko ezberdintasunak.';
@@ -96,6 +95,7 @@ $string['importedsuccessfully'] = 'Eredua ondo inportatu da.';
 $string['importmodel'] = 'Inportatu eredua';
 $string['indicators'] = 'Adierazleak';
 $string['indicators_help'] = 'Adierazleek zure ustez helburuetako aurreikuspen zehatzera eramango dutenak dira.';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = 'Adierazle kopurua: {$a}';
 $string['info'] = 'Informazioa';
 $string['insights'] = 'Pertzepzioak';
@@ -144,6 +144,7 @@ $string['scheduledanalysisresultscli'] = '{$a->name} (IDa: {$a->id}) analisi-tar
 $string['selecttimesplittingforevaluation'] = 'Aukeratu ereduaren konfigurazioa ebaluatzeko erabili nahi duzun analisi-tartea.';
 $string['target'] = 'Helburua';
 $string['target_help'] = 'Helburua ereduak aurreikusiko duena da.';
+$string['target_link'] = 'Targets';
 $string['timesplittingnotdefined'] = 'Ez da analisi-tartea zehaztu.';
 $string['timesplittingnotdefined_help'] = 'Eredua gaitu baino lehen analisi-tarte bat aukeratu behar duzu.';
 $string['trainandpredictmodel'] = 'Ereduak trebatu eta aurreikuspenak kalkulatu';

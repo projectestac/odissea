@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_webdav', language 'es', version '3.11'.
+ * Strings for component 'repository_webdav', language 'es', version '4.1'.
  *
  * @package     repository_webdav
  * @category    string
@@ -31,12 +31,12 @@ $string['https'] = 'HTTPS';
 $string['pluginname'] = 'Repositorio WebDAV';
 $string['privacy:metadata'] = 'El complemento del repositorio de WebDAV no almacena ningún dato personal, pero sí se transmiten desde Moodle al sistema remoto.';
 $string['webdav'] = 'WebDAV';
-$string['webdav:view'] = 'Ver repositorio WebDAB';
-$string['webdav_password'] = 'Contraseña del servidor WebDAB';
+$string['webdav:view'] = 'Ver repositorio WebDAV';
+$string['webdav_password'] = 'Contraseña del servidor WebDAV';
 $string['webdav_path'] = 'Ruta WebDAV';
-$string['webdav_port'] = 'Puerto del servidor WebDAB';
-$string['webdav_server'] = 'Servidor WebDAB';
+$string['webdav_port'] = 'Puerto del servidor WebDAV';
+$string['webdav_server'] = 'Servidor WebDAV';
 $string['webdav_type'] = 'Tipo WebDAV';
-$string['webdav_user'] = 'Usuario del servidor WebDAB';
+$string['webdav_user'] = 'Usuario del servidor WebDAV';
 $string['webdavbasicauth'] = 'Identificación básica WebDAV';
 $string['webdavdigestauth'] = 'Identificación implícita WebDAV';

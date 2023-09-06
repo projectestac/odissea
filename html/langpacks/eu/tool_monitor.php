@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'eu', version '3.11'.
+ * Strings for component 'tool_monitor', language 'eu', version '4.1'.
  *
  * @package     tool_monitor
  * @category    string
@@ -71,6 +71,7 @@ $string['messagetemplate_help'] = 'Harpidedunei jakinarazpen-mezua bidaltzen zai
 * Arauaren izena {rulename}
 * Deskribapena {description}
 * Gertaera {eventname}';
+$string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'Instantzia';
 $string['monitor:managerules'] = 'Kudeatu gertaeren jarraipen-arauak';
 $string['monitor:managetool'] = 'Gaitu/desgaitu gertaeren jarraipena';

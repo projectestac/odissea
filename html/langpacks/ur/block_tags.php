@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'ur', version '3.11'.
+ * Strings for component 'block_tags', language 'ur', version '4.1'.
  *
  * @package     block_tags
  * @category    string
@@ -25,4 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'بلاک کا عنوان';
+$string['anycollection'] = 'کوئی بھی';
+$string['anytype'] = 'تمام';
+$string['configtitle'] = 'ٹیگز بلاک ٹائٹل';
+$string['defaultdisplay'] = 'ڈسپلے ٹیگز';
+$string['disabledtags'] = 'ٹیگز غیر فعال ہیں';
+$string['pluginname'] = 'ٹیگز';
+$string['privacy:metadata'] = 'ٹیگز بلاک صرف دوسرے مقامات پر ذخیرہ شدہ ڈیٹا کو دکھاتا ہے۔';
+$string['recursivecontext'] = 'بچوں کے سیاق و سباق شامل کریں';
+$string['recursivecontext_help'] = 'اگر نشان نہیں لگایا گیا تو، اوپر بیان کردہ سیاق و سباق میں آئٹمز کے ٹیگز ظاہر ہوں گے، لیکن نچلے سیاق و سباق میں آئٹمز کے ٹیگز نہیں۔ مثال کے طور پر، کورس کے ٹیگز ظاہر کیے جا سکتے ہیں، لیکن کورس کی سرگرمی کے ٹیگز نہیں۔';
+$string['standardonly'] = 'صرف معیاری';
+$string['tagcollection'] = 'ٹیگ مجموعہ';
+$string['tagcollection_help'] = 'ٹیگز کو ظاہر کرنے کے لیے ٹیگ کلیکشن کو منتخب کریں۔ اگر آپ "کوئی" کا انتخاب کرتے ہیں تو تمام مجموعوں سے ٹیگز ظاہر ہوں گے سوائے * کے نشان والے کے';
+$string['taggeditemscontext'] = 'ٹیگ کردہ آئٹمز سیاق و سباق';
+$string['taggeditemscontext_help'] = 'آپ ٹیگ کلاؤڈ کو ان ٹیگز تک محدود کر سکتے ہیں جو موجودہ کورس کے زمرے، کورس یا ماڈیول میں موجود ہیں';
+$string['tags:addinstance'] = 'ایک نیا ٹیگز بلاک شامل کریں';
+$string['tags:myaddinstance'] = 'ڈیش بورڈ میں ایک نیا ٹیگز بلاک شامل کریں';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'ru', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'ru', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -33,6 +33,7 @@ $string['newsetwildcardvalues'] = 'новых наборов значений п
 $string['pluginname'] = 'Простой Вычисляемый';
 $string['pluginname_help'] = 'Простые вычисляемые вопросы позволяют использовать индивидуальные числовые вопросы,  созданные с использованием подстановочных знаков, которые заменяются конкретными значениями при прохождении теста. Простые вычисляемые вопросы
 позволяют реализовать большинство возможностей вычисляемого вопроса с помощью простого интерфейса.';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = 'Добавление «Простого вычисляемого вопроса»';
 $string['pluginnameediting'] = 'Редактирование «Простого вычисляемого вопроса»';
 $string['pluginnamesummary'] = 'Более простая версия вычисляемых вопросов, которые подобны числовым вопросам, но с использованием чисел, выбираемых случайным образом из определенного набора при прохождении теста.';

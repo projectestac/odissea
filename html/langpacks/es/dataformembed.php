@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataformembed', language 'es', version '3.11'.
+ * Strings for component 'dataformembed', language 'es', version '4.1'.
  *
  * @package     dataformembed
  * @category    string

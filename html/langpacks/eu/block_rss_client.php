@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'eu', version '3.11'.
+ * Strings for component 'block_rss_client', language 'eu', version '4.1'.
  *
  * @package     block_rss_client
  * @category    string
@@ -88,7 +88,7 @@ $string['shownumentrieslabel'] = 'Blokeko erakuts daitekeen gehieneko sarrera-ko
 $string['submitters'] = 'Nork sortu ahalko ditu RSS albiste-jarioak? Sortutako jarioak zure gunearen orri guztietatik eskuratu ahal izango dira.';
 $string['submitters2'] = 'Igorleak';
 $string['timeout'] = 'Minututan neurtutako denbora RSS jarioa iraungi aurretik. Hartu kontuan denbora honek iraungi aurretiko gutxieneko tartea definitzen duela; jarioa cron-aren hurrengo exekuzioan freskatuko da. Gomendatutako balioak 30 minutu edo gehiago dira.';
-$string['timeout2'] = 'Itxaroteko denbora';
+$string['timeout2'] = 'Denbora-muga';
 $string['timeoutdesc'] = 'Albiste-jarioak cachean iraun dezakeen denbora-epea (minututan)';
 $string['updatefeed'] = 'Eguneratu albiste-jario baten URLa:';
 $string['viewfeed'] = 'Ikusi jarioa';

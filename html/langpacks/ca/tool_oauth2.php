@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'ca', version '3.11'.
+ * Strings for component 'tool_oauth2', language 'ca', version '4.1'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -34,6 +34,7 @@ $string['createnewmicrosoftissuer'] = 'Crea un servei de Microsoft nou';
 $string['createnewnextcloudissuer'] = 'Crea un servei de Nextcloud nou';
 $string['endpointname'] = 'Nom';
 $string['issueralloweddomains'] = 'Dominis d\'inici de sessió';
+$string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
 $string['issuerbaseurl'] = 'URL base de servei';
 $string['issuerclientid'] = 'ID de client';
 $string['issuerclientsecret'] = 'Secret de client';

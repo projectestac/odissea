@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'nl', version '3.11'.
+ * Strings for component 'questionnaire', language 'nl', version '4.1'.
  *
  * @package     questionnaire
  * @category    string
@@ -37,6 +37,7 @@ $string['addquestiontosection'] = 'Vraag toevoegen aan sectie';
 $string['addselqtype'] = 'Geselecteerde vraagtype toevoegen';
 $string['alignment'] = 'Uitlijning van de keuzerondjes';
 $string['alignment_help'] = 'Selecteer uitlijning voor de selectievakjes: verticaal (standaard) of horizontaal';
+$string['alignment_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['all'] = 'Alles';
 $string['allnameddegrees'] = 'Namen voor waardes';
 $string['allnameddegrees_help'] = 'Specificeer een weer te geven tekst voor beoordelingswaardes in plaats van het cijfer. Leeg laten om niet te gebruiken.';
@@ -77,6 +78,7 @@ $string['chart:vprogress'] = 'Verticale voortgangsbalk';
 $string['checkallradiobuttons'] = 'Selecteer <strong>{$a}</strong> selectievakje(s) alstublieft!';
 $string['checkboxes'] = 'Selectievakjes';
 $string['checkboxes_help'] = 'Voer één optie in per regel waarvan de gebruiker één of meerdere antwoorden kan selecteren.';
+$string['checkboxes_link'] = 'mod/questionnaire/questions#Check_Boxes';
 $string['checkbreaksadded'] = 'Nieuw pagina-einde ingevoegd op positie(s):';
 $string['checkbreaksok'] = 'Alle vereiste pagina-eindes zijn aanwezig!';
 $string['checkbreaksremoved'] = '{$a} extra pagina-einde(s) verwijderd.';
@@ -112,10 +114,12 @@ $string['couldnotcreatenewsurvey'] = 'Kon geen nieuwe enquête maken!';
 $string['couldnotdelresp'] = 'Kon antwoord niet verwijderen';
 $string['createcontent'] = 'Maak nieuwe inhoud';
 $string['createcontent_help'] = 'Selecteer een van de opties voor keuzerondjes. \'Maak nieuwe\' is standaard.';
+$string['createcontent_link'] = 'mod/questionnaire/mod#Content_Options';
 $string['createnew'] = 'Maak nieuwe';
 $string['crontask'] = 'Enquête opruimtaak';
 $string['date'] = 'Datum';
 $string['date_help'] = 'Gebruik dit vraagtype als je verwacht dat het antwoord een correct geformatteerde datum is.';
+$string['date_link'] = 'mod/questionnaire/questions#Date';
 $string['dateformatting'] = 'Gebruik het dag/maand/jaar format, bijv. voor 14 maart 1945:&nbsp;<strong>14/3/1945</strong>';
 $string['deleteallresponses'] = 'Verwijder ALLE antwoorden';
 $string['deletecurrentquestion'] = 'Verwijder vraag {$a}';
@@ -129,6 +133,7 @@ $string['deletingresp'] = 'Dit antwoord verwijderen';
 $string['dependencies'] = 'Afhankelijkheden';
 $string['dependquestion'] = 'Bovenliggende vraag';
 $string['dependquestion_help'] = 'Je kunt een bovenliggende vraag en keuzeoptie voor deze vraag selecteren. Een onderliggende vraag wordt alleen aan de leerling getoond wanneer de bovenliggende vraag en bovenliggende keuze eerder zijn geselecteerd.';
+$string['dependquestion_link'] = 'mod/questionnaire/questions#Parent_Question';
 $string['didnotrespondtoquestion'] = 'Vraag niet beantwoord';
 $string['directwarnings'] = 'Directe afhankelijkheden naar deze vraag zullen worden verwijderd. Dit beïnvloedt:';
 $string['displaymethod'] = 'Vertoningsmethode is niet gedefinieerd voor deze vraag.';
@@ -137,9 +142,11 @@ $string['downloadpdf'] = 'PDF downloaden';
 $string['downloadtextformat'] = 'Downloaden';
 $string['downloadtextformat_help'] = 'Hiermee kun je alle antwoorden van een enquête bewaren naar een geselecteerd, en ondersteund file format.
 Je kan eventueel extra data items toevoegen aan een export, en tevens automatisch rapportages als een bestand sturen naar geselecteerde gebruikers.';
+$string['downloadtextformat_link'] = 'mod/questionnaire/report#Download_in_text_format';
 $string['downloadtypes'] = 'Rapport type';
 $string['dropdown'] = 'Rolmenu';
 $string['dropdown_help'] = 'Er is geen werkelijk voordeel voor het gebruiken van het rolmenu  boven keuzerondjes, behalve wellicht de ietwat lange lijsten met opties, om ruimte te besparen.';
+$string['dropdown_link'] = 'mod/questionnaire/questions#Dropdown_Box';
 $string['edit'] = 'Bewerk';
 $string['editingfeedback'] = 'Feedbackinstellingen bewerken';
 $string['editingquestionnaire'] = 'Enquête-instellingen bewerken';
@@ -173,6 +180,7 @@ $string['event_saved'] = 'Antwoorden opgeslagen';
 $string['event_submitted'] = 'Antwoorden ingestuurd';
 $string['feedback'] = 'Feedback';
 $string['feedback_help'] = 'Hulp bij Feedback';
+$string['feedback_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Messages';
 $string['feedbackaddmorefeedbacks'] = 'Voeg {no} feedbackvelden toe';
 $string['feedbackbysection'] = 'Categorie feedback';
 $string['feedbackdefaultlabel'] = '[Nieuwe sectie]';
@@ -200,6 +208,7 @@ $string['feedbacknotes_help'] = 'De hier ingevoerde tekst zal aan respondenten w
 $string['feedbackoptions'] = 'Feedbackopties';
 $string['feedbackoptions_help'] = 'Feedbackopties zijn beschikbaar indien je enquête de volgende vraagtypen en -instellingen bevat:
 Radio buttons; Dropdown box of Beoordeel. Deze vragen moeten ingesteld zijn als Vereist, hun vraagnaam mag NIET leeg gelaten worden en de Mogelijke antwoordkeuzes moeten een waarde bevatten.';
+$string['feedbackoptions_link'] = 'mod/questionnaire/personality_test';
 $string['feedbackremovequestionfromsection'] = 'Deze vraag maakt deel uit van feedbacksectie [{$a}]';
 $string['feedbackremovesection'] = 'Het verwijderen van deze vraag zal feedbacksectie [{$a}] volledig verwijderen';
 $string['feedbackreport'] = 'Feedbackrapport';
@@ -217,6 +226,7 @@ $string['feedbacksectionquestions'] = '{$a} vragen in sectie';
 $string['feedbacksections'] = 'Feedback-secties';
 $string['feedbacksectionsselect'] = 'Categorieën';
 $string['feedbacksectionsselect_help'] = 'Plaats je vragen in deze secties';
+$string['feedbacksectionsselect_link'] = 'mod/questionnaire/personality_test#Editing_Questionnaire_Feedback_Sections_2';
 $string['feedbacksettingssaved'] = 'Feedbackinstellingen opgeslagen';
 $string['feedbacktype'] = 'Feedbacktype';
 $string['field'] = 'Vraag {$a}';
@@ -247,13 +257,16 @@ $string['invalidsectionid'] = 'Ongeldige feedbacksectie gespecificeerd.';
 $string['invalidsurveyid'] = 'Ongeldige enquête ID';
 $string['kindofratescale'] = 'Type beoordelingsschaal';
 $string['kindofratescale_help'] = 'Rechtermuisklik op de link Meer Hulp hieronder.';
+$string['kindofratescale_link'] = 'mod/questionnaire/questions#Type_of_rate_scale';
 $string['lastrespondent'] = 'Laatste respondent';
 $string['length'] = 'Lengte';
 $string['managequestions'] = 'Beheer de vragen';
 $string['managequestions_help'] = 'In de sectie Beheer vragen van de pagina Bewerk vragen kun je een aantal handelingen uitvoeren op de vragen in de Enquête.';
+$string['managequestions_link'] = 'mod/questionnaire/questions#Manage_questions';
 $string['mandatory'] = 'Verplicht - Al deze afhankelijkheden moeten worden voldaan.';
 $string['maxdigitsallowed'] = 'Max. aantal tekens toegestaan';
 $string['maxdigitsallowed_help'] = 'Gebruik **Max. aantal tekens toegestaan** om een limiet in te stellen op het aantal tekens dat kan worden ingevoerd bij een Numerieke vraag. Let op dat het decimaalpunt ook telt als een teken!';
+$string['maxdigitsallowed_link'] = 'mod/questionnaire/questions#Numeric';
 $string['maxforcedresponses'] = 'Max. geforceerde antwoorden';
 $string['maxforcedresponses_help'] = 'Gebruik deze parameters om respondenten te dwingen een minimum van **Min.** en een maximum van **Max.** vakjes aan te vinken.
 Stel **Min.** en **Max.** op dezelfde waarde in om een exact aantal vakjes aan te laten vinken. Als er alleen een min of max waarde gewenst is, laat dan de andere waarde op standaard **0**. Als je de **Min.** of **Max.** op een andere waarde instelt dan de standaard **0**, wordt er een waarschuwing getoond als de respondent niet voldoet aan de vereisten. Het is vanzelfsprekend dat je de vereisten duidelijk maakt aan de respondenten, ofwel in de algemene instructies van je Enquête ofwel in de tekst van relevante vragen.';
@@ -273,6 +286,7 @@ $string['missingquestions'] = 'Beantwoord alle verplichte vragen a.u.b.:';
 $string['missingrequired'] = 'Vraag {$a} kan niet gebruikt worden in deze feedbacksectie omdat deze niet vereist is.';
 $string['modulename'] = 'Enquête';
 $string['modulename_help'] = 'Met de enquête-module bouw je enquêtes met een breed scala aan vraagtypes, om gegevens van gebruikers te verzamelen.';
+$string['modulename_link'] = 'mod/questionnaire/view';
 $string['modulenameplural'] = 'Enquêtes';
 $string['movedisabled'] = 'Dit item kan niet worden verplaatst';
 $string['myresponses'] = 'Al uw antwoorden';
@@ -281,6 +295,7 @@ $string['myresults'] = 'Jouw resultaat';
 $string['name'] = 'Naam';
 $string['navigate'] = 'Vertakkende vragen toestaan';
 $string['navigate_help'] = 'Ja/Nee en vragen met keuzerondjes instellen om onderliggende vragen te hebben afhankelijk van hun keuzes in je enquête.';
+$string['navigate_link'] = 'mod/questionnaire/conditional_branching';
 $string['navigatetosection'] = 'Ga naar de feedbacksectie';
 $string['next'] = 'Volgende';
 $string['nextpage'] = 'Volgende pagina';
@@ -307,6 +322,7 @@ $string['notenoughscaleitems'] = 'Je moet een minimumwaarde van 2 items op de sc
 $string['notificationfull'] = 'Volledige inzending';
 $string['notifications'] = 'Stuur een melding bij inzending';
 $string['notifications_help'] = 'Stuur een melding van inzending naar de rollen met het recht "mod/questionnair:submissionnotification"';
+$string['notifications_link'] = 'mod/questionnaire/mod#Submission_Notifications';
 $string['notificationsimple'] = 'Alleen melding';
 $string['notopen'] = 'Deze enquête start pas op {$a}.';
 $string['notrequired'] = 'Antwoord is niet vereist';
@@ -317,6 +333,7 @@ $string['numattemptsmade'] = '{$a} pogingen voor deze enquête';
 $string['numberfloat'] = 'Het getal dat je hebt ingevoerd <strong>{$a->number}</strong> is opnieuw opgemaakt/afgerond met <strong>{$a->precision}</strong> decimalen.';
 $string['numberofdecimaldigits'] = 'Aantal decimalen';
 $string['numberofdecimaldigits_help'] = 'Gebruik **aantal decimalen** om het format te specificeren voor de berekende en getoonde gemiddelde waarde op de rapportage-pagina van de enquête.';
+$string['numberofdecimaldigits_link'] = 'mod/questionnaire/questions#Numeric';
 $string['numberscaleitems'] = 'Aantal schaalitems';
 $string['numberscaleitems_help'] = 'Aantal items in schaal is het te gebruiken *aantal items* voor je beoordelingsschaal. Je zou normaal gesproken een waarde van 3 tot 5 gebruiken. Standaardwaarde is **5**.';
 $string['numeric'] = 'Numeriek';
@@ -328,6 +345,7 @@ $string['option'] = 'optie  {$a}';
 $string['optional'] = 'Optioneel - Ten minste één van deze afhankelijkheden moet worden voldaan.';
 $string['optionalname'] = 'Vraagnaam';
 $string['optionalname_help'] = 'De vraagnaam wordt alleen gebruikt wanneer je antwoorden exporteert naar CSV/Excel format. Als je nooit naar CSV exporteert, hoef je je geen zorgen te maken om vraagnamen. Als je regelmatig gegevens van enquêtes wilt exporteren naar CSV, kun je de vragen op twee manieren namen geven.';
+$string['optionalname_link'] = 'mod/questionnaire/questions#Question_Name';
 $string['or'] = '- OF -';
 $string['order_ascending'] = 'Oplopende volgorde';
 $string['order_default'] = 'Bekijk standaardvolgorde';
@@ -342,6 +360,7 @@ $string['orderresponses_help'] = 'Wanneer Alle Antwoorden worden getoond, kun je
 
 Wanneer je op de pagina Alle Antwoorden komt, zijn alle antwoorden standaard gerangschikt in de volgorde die de maker van de enquête heeft ingesteld voor de vraagkeuzes.
 Je kunt deze op- of aflopend rangschikken.';
+$string['orderresponses_link'] = 'mod/questionnaire/report#Order_Responses';
 $string['osgood'] = 'Osgood';
 $string['other'] = 'Overige:';
 $string['otherempty'] = 'Als je deze keuze aanvinkt, moet je wat tekst in het tekstvak invoeren!';
@@ -447,22 +466,27 @@ $string['questions'] = 'Vragen';
 $string['questionsinsection'] = 'Vragen in deze sectie:';
 $string['questiontypes'] = 'Vraagtypes';
 $string['questiontypes_help'] = 'Zie de Moodle Documentatie hieronder';
+$string['questiontypes_link'] = 'mod/questionnaire/questions#Question_Types';
 $string['radiobuttons'] = 'Radio Buttons';
 $string['radiobuttons_help'] = 'In dit vraagtype moet de respondent één van de geboden keuzes selecteren.';
+$string['radiobuttons_link'] = 'mod/questionnaire/questions#Radio_Buttons';
 $string['rank'] = 'Rangschik';
 $string['ratescale'] = 'Beoordeel (schaal 1 - 5)';
 $string['ratescale_help'] = 'Zie de Moodle Documentatie hieronder';
+$string['ratescale_link'] = 'mod/questionnaire/questions#Rate_.28scale_1..5.29';
 $string['realm'] = 'Enquête-type';
 $string['realm_help'] = '** Er zijn drie soorten enquêtes: **
  * Privé - hoort alleen bij de cursus waarbinnen deze is gedefinieerd.
  * Sjabloon - kan worden gekopieerd en bewerkt.
  * Publiek - kan worden gedeeld tussen cursussen.';
+$string['realm_link'] = 'mod/questionnaire/qsettings#Questionnaire_Type';
 $string['redirecturl'] = 'De URL waarnaar een gebruiker wordt doorgeleid na het voltooien van deze enquête.';
 $string['remove'] = 'Verwijder';
 $string['removeallquestionnaireattempts'] = 'Verwijder alle antwoorden van deze enquête';
 $string['removenotinuse'] = 'Deze enquête was afhankelijk van een Publieke enquête die verwijderd is. Daarom kan deze niet langer worden gebruikt en zou deze verwijderd moeten worden.';
 $string['required'] = 'Antwoord is vereist';
 $string['required_help'] = 'Als je ***Ja*** selecteert, wordt het antwoord op deze vraag vereist. Dat wil zeggen dat de respondent de enquête niet kan insturen wanneer deze vraag niet beantwoord is.';
+$string['required_link'] = 'mod/questionnaire/questions#Response_Required';
 $string['requiredparameter'] = 'Er ontbreekt een vereiste parameter.';
 $string['reset'] = 'Resetten';
 $string['respeligiblerepl'] = '(vervangen door overschrijven rollen)';
@@ -473,6 +497,7 @@ $string['respondenteligibleteachers'] = 'enkel leraren';
 $string['respondents'] = 'Respondenten';
 $string['respondenttype'] = 'Type respondent';
 $string['respondenttype_help'] = 'Je kunt de volledige naam van je gebruikers tonen bij ieder antwoord door dit in te stellen op "volledige naam". Je kunt de identiteit van je gebruikers verbergen door dit in te stellen op "anoniem".';
+$string['respondenttype_link'] = 'mod/questionnaire/mod#Respondent_Type';
 $string['respondenttypeanonymous'] = 'anoniem';
 $string['respondenttypefullname'] = 'volledige naam';
 $string['response'] = 'Antwoord';
@@ -482,6 +507,7 @@ $string['responseoptions'] = 'Antwoordopties';
 $string['responses'] = 'Antwoorden';
 $string['responseview'] = 'Leerling kan ALLE antwoorden zien';
 $string['responseview_help'] = 'Je kunt specificeren wie de antwoorden van alle respondenten op ingediende enquêtes kunnen zien (algemene statistische tabellen).';
+$string['responseview_link'] = 'mod/questionnaire/mod#Response_viewing';
 $string['responseviewstudentsalways'] = 'Altijd';
 $string['responseviewstudentsnever'] = 'Nooit';
 $string['responseviewstudentswhenanswered'] = 'Na het beantwoorden van de enquête';
@@ -490,6 +516,7 @@ $string['restrictedtoteacher'] = 'Deze functies zijn alleen toegankelijk voor le
 $string['resume'] = 'Bewaar antwoorden en ga verder';
 $string['resume_help'] = 'Door deze optie in te schakelen kunnen gebruikers hun antwoorden bewaren voordat zij de enquête insturen.
 Gebruikers kunnen de enquête onvoltooid laten en hervatten vanaf het bewaarde punt op een later moment.';
+$string['resume_link'] = 'mod/questionnaire/mod#Save/Resume_answers';
 $string['resumesurvey'] = 'Ga verder';
 $string['return'] = 'Terug';
 $string['save'] = 'Bewaar';
@@ -578,6 +605,7 @@ $string['view'] = 'Bekijk';
 $string['viewallresponses'] = 'Bekijk alle antwoorden';
 $string['viewallresponses_help'] = 'Als de enquête is ingesteld op **Groepsmodus**: *Zichtbare groepen*, of is ingesteld op *Gescheiden groepen* en de huidige gebruiker heeft het recht *moodle/site:accessallgroups* (in de huidige context), en er zijn groepen gedefinieerd binnen de huidige cursus, dan heeft de gebruiker toegang tot een dropdown lijst met groepen. Deze dropdown lijst zorgt ervoor dat de gebruiker de antwoorden op de enquête kan filteren op groepen.
 Als de instelling **Groepsmodus**: *Gescheiden groepen* is, kunnen gebruikers zonder het recht *moodle/site:accessallgroups* (zoals leerlingen of leraren niet bewerken, etc.) alleen de antwoorden bekijken van de groep(en) waartoe zij behoren.';
+$string['viewallresponses_link'] = 'Viewing_Questionnaire_responses#Group_filtering';
 $string['viewbyresponse'] = 'Lijst van antwoorden';
 $string['viewindividualresponse'] = 'Individuele antwoorden';
 $string['viewindividualresponse_help'] = 'Klik op de naam van de respondenten in onderstaande lijst om hun individuele antwoorden te bekijken.';

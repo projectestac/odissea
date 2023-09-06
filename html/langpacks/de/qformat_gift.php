@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'de', version '3.11'.
+ * Strings for component 'qformat_gift', language 'de', version '4.1'.
  *
  * @package     qformat_gift
  * @category    string
@@ -36,4 +36,5 @@ $string['importminerror'] = 'Fehler in der Frage - nicht genügend Antworten fü
 $string['nohandler'] = 'Fragetyp {$a} kann nicht verwandt werden';
 $string['pluginname'] = 'GIFT-Format';
 $string['pluginname_help'] = 'Das GIFT-Format erlaubt den Import und Export von Frageformen (Multiple-Choice, Wahr/Falsch, Kurzantwort, Zuordnung, Fehlende Wörter, Numerisch, Freitext) als Textdatei.';
+$string['pluginname_link'] = 'qformat/gift';
 $string['privacy:metadata'] = 'Das GIFT Frageformat Plugin speichert keine personenbezogenen Daten.';

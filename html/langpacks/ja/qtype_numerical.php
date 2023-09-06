@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'ja', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'ja', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -65,12 +65,13 @@ $string['pleaseenterananswer'] = '答えを入力してください。';
 $string['pleaseenteranswerwithoutthousandssep'] = '3桁区切り ({$a}) を使用せずに答えを入力してください。';
 $string['pluginname'] = '数値問題';
 $string['pluginname_help'] = '数値問題は学生からは記述問題のように見えます。記述問題と異なる点は数値問題では間違いを受け入れるようにできることです。このことにより連続した範囲の答えを設定することができます。例えば正解が10で受け入れることのできるエラー範囲が2の場合、8から12までの間の答えが正解とされます。';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = '数値問題の追加';
 $string['pluginnameediting'] = '数値問題の編集';
 $string['pluginnamesummary'] = '単位を使って数値で解答することができます。また、さまざまな解答モデルに対して許容範囲を設定して評定することができます。';
-$string['privacy:metadata'] = '数字問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
+$string['privacy:metadata'] = '数字問題タイププラグインは問題作成者がユーザプレファレンスとしてデフォルトオプションを設定できます。';
 $string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';
-$string['privacy:preference:multichoicedisplay'] = '単位をテキスト入力要素として表示するか、複数選択肢から選択するか、ドロップダウンメニュとして表示するか指定します。';
+$string['privacy:preference:multichoicedisplay'] = '単位をテキスト入力要素として表示するか、複数選択肢から選択するか、ドロップダウンメニューとして表示するか指定します。';
 $string['privacy:preference:penalty'] = '問題が「複数回受験インタラクティブ」または「アダプティブモード」で出題された場合のそれぞれの不正解のペナルティです。';
 $string['privacy:preference:unitgradingtypes'] = '単位ペナルティが解答評点または問題評点の端数 (0-1) として適用されるかどうか指定します。';
 $string['privacy:preference:unitpenalty'] = '解答評点または問題評点の何分の1 (0-1) を適用しますか?';
@@ -105,15 +106,8 @@ $string['unitpenalty_help'] = '次の場合にペナルティが適用されま�
 * 数字入力ボックスに単位が入力された場合';
 $string['unitposition'] = '単位の位置';
 $string['units'] = '単位';
-$string['unitselect'] = 'ドロップダウンメニュ';
+$string['unitselect'] = 'ドロップダウンメニュー';
 $string['unitx'] = '単位 {no}';
-$string['validnumberformats'] = '有効な数値フォーマット';
-$string['validnumberformats_help'] = '* 正則数 13500.67、13 500.67、13500,67または13 500,67
-
- * あなたの言語パック設定 (langconfig.phpファイル) が3桁区切りに「,」を使用する場合、常に13,500.67 : 13,500のように小数点を入力してください。
-
-* 例えば1.350067 * 10<sup>4</sup>のような指数の場合、1.350067 E4 : 1.350067 E04を使用してください。';
-$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4または1.350067 E04';
 $string['xmustbenumeric'] = '{$a} は数字にする必要があります。';
 $string['xmustnotbenumeric'] = '{$a} を数字にすることはできません。';
 $string['youmustenteramultiplierhere'] = 'あなたはここに乗数を入力する必要があります。';

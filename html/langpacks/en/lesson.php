@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'en', version '3.11'.
+ * Strings for component 'lesson', language 'en', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -52,7 +52,6 @@ $string['addedendofcluster'] = 'Added an end of cluster';
 $string['addendofbranch'] = 'Add end of branch';
 $string['addendofcluster'] = 'Add an end of cluster';
 $string['addessay'] = 'Create an Essay question page';
-$string['additionalattemptsremaining'] = 'Completed, You can re-attempt this lesson';
 $string['addmatching'] = 'Create a Matching question page';
 $string['addmultichoice'] = 'Create a Multichoice question page';
 $string['addnewgroupoverride'] = 'Add group override';
@@ -175,6 +174,7 @@ $string['displayleftif'] = 'Minimum grade to display menu';
 $string['displayleftif_help'] = 'This setting determines whether a student must obtain a certain grade before viewing the lesson menu. This forces the student to go through the entire lesson on their first attempt, then after obtaining the required grade they can use the menu for review.';
 $string['displayleftmenu'] = 'Display menu';
 $string['displayleftmenu_help'] = 'If enabled, a menu allowing users to navigate through the list of pages is displayed.';
+$string['displaymode'] = 'Display mode';
 $string['displayofgrade'] = 'Display of grade (for students only)';
 $string['displayreview'] = 'Provide option to try a question again';
 $string['displayreview_help'] = 'If enabled, when a question is answered incorrectly, the student is given the option to try it again for no point credit, or continue with the lesson. If the student clicks to move on to another question then the selected (wrong) answer will be followed. By default wrong answer jumps are set to "this page" and have a score of 0, so it is recommended that you set the wrong answer jump to a different page to avoid confusion with your students.';
@@ -189,7 +189,9 @@ $string['editcluster'] = 'Editing a cluster';
 $string['editendofbranch'] = 'Editing an end of branch page';
 $string['editendofcluster'] = 'Editing an end of cluster page';
 $string['editessay'] = 'Editing an Essay question page';
+$string['editinglesson'] = 'Editing lesson';
 $string['editingquestionpage'] = 'Editing {$a} question page';
+$string['editlesson'] = 'Edit lesson';
 $string['editlessonsettings'] = 'Edit lesson settings';
 $string['editmatching'] = 'Editing a Matching question page';
 $string['editmultichoice'] = 'Editing a Multichoice question page';
@@ -201,9 +203,9 @@ $string['editquestion'] = 'Editing a question page';
 $string['editshortanswer'] = 'Editing a Short answer question page';
 $string['edittruefalse'] = 'Editing a True/false question page';
 $string['email'] = 'Email';
-$string['emailallgradedessays'] = 'Email ALL graded essays';
-$string['emailgradedessays'] = 'Email graded essays';
-$string['emailsuccess'] = 'Emails sent successfully';
+$string['emailallgradedessays'] = 'Send essay graded notifications';
+$string['emailgradedessays'] = 'Send essay graded notifications';
+$string['emailsuccess'] = 'Notifications sent successfully';
 $string['emptypassword'] = 'Password cannot be empty';
 $string['enabled'] = 'Enabled';
 $string['endofbranch'] = 'End of branch';
@@ -302,14 +304,13 @@ $string['lesson:manage'] = 'Manage a lesson activity';
 $string['lesson:manageoverrides'] = 'Manage lesson overrides';
 $string['lesson:view'] = 'View lesson activity';
 $string['lesson:viewreports'] = 'View lesson reports';
+$string['lessonbeingpreviewed'] = 'Lesson is currently being previewed.';
 $string['lessonclosed'] = 'This lesson closed on {$a}.';
 $string['lessoncloses'] = 'Lesson closes';
-$string['lessoncloseson'] = 'Lesson closes on {$a}';
 $string['lessoneventcloses'] = '{$a} closes';
 $string['lessoneventopens'] = '{$a} opens';
 $string['lessonformating'] = 'Lesson formatting';
 $string['lessonmenu'] = 'Lesson menu';
-$string['lessonname'] = 'Lesson: {$a}';
 $string['lessonnotready'] = 'This lesson is not ready to be taken.  Please contact your {$a}.';
 $string['lessonnotready2'] = 'This lesson is not ready to be taken.';
 $string['lessonopen'] = 'This lesson will be open on {$a}.';
@@ -320,6 +321,7 @@ $string['linkedmedia'] = 'Linked media';
 $string['loginfail'] = 'Login failed, please try again...';
 $string['lowscore'] = 'Low score';
 $string['lowtime'] = 'Low time';
+$string['manageoverrides'] = 'Manage overrides';
 $string['manualgrading'] = 'Grade essays';
 $string['matchesanswer'] = 'Matches with answer';
 $string['matching'] = 'Matching';
@@ -389,6 +391,7 @@ $string['nooneenteredthis'] = 'No one entered this.';
 $string['noonehasanswered'] = 'No one has answered an essay question yet.';
 $string['noonehasansweredgroup'] = 'No one in {$a} has answered an essay question yet.';
 $string['noopen'] = 'No open date';
+$string['nooverridecreated'] = 'No overrides created.';
 $string['nooverridedata'] = 'You must override at least one of the lesson settings.';
 $string['noretake'] = 'You are not allowed to retake this lesson.';
 $string['normal'] = 'Normal - follow lesson path';
@@ -543,6 +546,7 @@ $string['search:activity'] = 'Lesson - activity information';
 $string['secondpluswrong'] = 'Not quite.  Would you like to try again?';
 $string['selectallattempts'] = 'Select all attempts';
 $string['selectaqtype'] = 'Select a question type';
+$string['selectreport'] = 'Select report';
 $string['sent'] = 'Sent';
 $string['shortanswer'] = 'Short answer';
 $string['showanunansweredpage'] = 'Show an unanswered page';
@@ -605,7 +609,6 @@ $string['withselectedattempts'] = 'With selected attempts...';
 $string['wronganswerjump'] = 'Wrong answer jump';
 $string['wronganswerscore'] = 'Wrong answer score';
 $string['wrongresponse'] = 'Wrong response';
-$string['xattempts'] = '{$a} attempts';
 $string['youhaveseen'] = 'You have seen more than one page of this lesson already.<br />Do you want to start at the last page you saw?';
 $string['youranswer'] = 'Your answer';
 $string['yourcurrentgradeis'] = 'Your current grade is {$a}';

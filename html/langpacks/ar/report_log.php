@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ar', version '3.11'.
+ * Strings for component 'report_log', language 'ar', version '4.1'.
  *
  * @package     report_log
  * @category    string
@@ -34,7 +34,7 @@ $string['eventorigin'] = 'المصدر';
 $string['eventrelatedfullnameuser'] = 'المستخدم المتأثر';
 $string['eventreportviewed'] = 'تقرير سجل وقوعات تمت معاينته';
 $string['eventuserreportviewed'] = 'تقرير سجل وقوعات مستخدم تمت معاينته';
-$string['log:view'] = 'معاينة سجلات المقرر الدراسي';
+$string['log:view'] = 'معاينة سجلات المساق';
 $string['log:viewtoday'] = 'معاينة سجلات الوقوعات لهذا اليوم';
 $string['logsformat'] = 'تنسيق سجلات الوقوعات';
 $string['nocapability'] = 'تعذر الوصول إلى تقرير سجل وقوعات المستخدم';
@@ -42,8 +42,8 @@ $string['nologreaderenabled'] = 'لا قارئ مُمَكَّن لسجل الو�
 $string['origin'] = 'المصدر';
 $string['other'] = 'غيره';
 $string['page'] = 'صفحة {$a}';
-$string['page-report-log-index'] = 'تقرير سجل المقرر الدراسي';
-$string['page-report-log-user'] = 'تقرير سجل وقوعات المستخدم في المقرر الدراسي';
+$string['page-report-log-index'] = 'تقرير سجل المساق';
+$string['page-report-log-user'] = 'تقرير سجل وقوعات المستخدم في المساق';
 $string['page-report-log-x'] = 'أي  تقرير لسجلات الوقوعات';
 $string['pluginname'] = 'سجلات الوقوعات';
 $string['privacy:metadata'] = 'إن ملحق سجلات الوقوعات لا يخزن أي بيانات شخصية.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_database', language 'ca', version '3.11'.
+ * Strings for component 'logstore_database', language 'ca', version '4.1'.
  *
  * @package     logstore_database
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['buffersize'] = 'Mida de la memòria intermèdia';
 $string['buffersize_help'] = 'Nombre d\'entrades de registre inserides en una operació de base de dades per lots, la qual cosa millora el rendiment.';
 $string['conectexception'] = 'No es pot connectar amb la base de dades.';
-$string['create'] = 'Crea';
+$string['create'] = 'Creació';
 $string['databasecollation'] = 'Regles d\'ordenació de la base de dades';
 $string['databasepersist'] = 'Connexions de base de dades persistents';
 $string['databaseschema'] = 'Esquema de la base de dades';
@@ -50,4 +50,4 @@ $string['tablenotfound'] = 'La taula especificada no s\'ha trobat';
 $string['teaching'] = 'Ensenyament';
 $string['testingsettings'] = 'S\'estan provant els paràmetres de la base de dades...';
 $string['testsettings'] = 'Prova la connexió';
-$string['update'] = 'Actualitza';
+$string['update'] = 'Actualització';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'es', version '3.11'.
+ * Strings for component 'auth_ldap', language 'es', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -106,7 +106,7 @@ $string['auth_ntlmsso_ie_fastpath_yesattempt'] = 'Sí, intentar NTLM en otros na
 $string['auth_ntlmsso_ie_fastpath_yesform'] = 'Sí, el resto de navegadores utilizan un formulario de acceso estándar';
 $string['auth_ntlmsso_maybeinvalidformat'] = 'No se pudo extraer el nombre de usuario del encabezado de REMOTE_USER (USUARIO_REMOTO). ¿Está correcto el formato configurado?';
 $string['auth_ntlmsso_missing_username'] = 'Usted necesita especificar al menos %username% en el formato de nombre de usuario remoto';
-$string['auth_ntlmsso_remoteuserformat'] = 'Si Usted ha elegido \'NTLM\' en \'Tipo de Autenticación\', Usted puede especificar aquí el formato de nombredeusuario remoto. Si lo deja vacío, se usará el formato de DOMAINusername. Usted puede usar el remplazable opcional <b>%domain%</b> para especificar dónde aparece el nombre del dominio, y el remplazable obligatorio <b>%username%</b> para especificar dónde aparece el nombre de usuario. <br /><br />Algunos de los formatos ampliamente usados son <tt>%domain%%username%</tt> (MS Windows por defecto), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> y simplemente <tt>%username%</tt> (si no hubiera la parte del dominio).';
+$string['auth_ntlmsso_remoteuserformat'] = 'Si usted ha elegido \'NTLM\' en \'Tipo de Autenticación\', puede especificar aquí el formato de nombredeusuario remoto. Si lo deja vacío, se usará el formato de DOMAINusername. Usted puede usar el remplazable opcional <b>%domain%</b> para especificar dónde aparece el nombre del dominio, y el remplazable obligatorio <b>%username%</b> para especificar dónde aparece el nombre de usuario. <br /><br />Algunos de los formatos ampliamente usados son <tt>%domain%%username%</tt> (MS Windows por defecto), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> y simplemente <tt>%username%</tt> (si no hubiera la parte del dominio).';
 $string['auth_ntlmsso_remoteuserformat_key'] = 'Formato de nombre de usuario remoto';
 $string['auth_ntlmsso_subnet'] = 'Si se activa la opción, sólo se intentará el SSO con clientes de esta sub-red. Formato: xxx.xxx.xxx.xxx/bitmask.
 Separe varias sub-redes con "," (coma).';
@@ -126,6 +126,10 @@ $string['didntfindexpiretime'] = 'password_expire() no ha encontrado la fecha de
 $string['didntgetusersfromldap'] = 'No se obtuvieron usuarios desde el LDAP. -- ¿error? -- saliendo';
 $string['gotcountrecordsfromldap'] = 'Obtenidos {$a} registros de LDAP
 ';
+$string['invalidusererrors'] = 'Advertencia: se omitió la creación de {$a} cuentas de usuario.';
+$string['invaliduserexception'] = 'Error: No se puede crear una nueva cuenta de usuario. Detalles y motivo:
+{$a}
+Omitiendo este usuario.';
 $string['ldapnotconfigured'] = 'La url del host LDAP no está configurada actualmente';
 $string['morethanoneuser'] = 'Se ha encontrado más de un registro de usuario en LDAP. Se usa sólo el primero.';
 $string['needbcmath'] = 'Necesita la extensión BCMath para usar la verificación de contraseñas caducadas con Active Directory.';
@@ -159,7 +163,6 @@ $string['updatepasserrorexpire'] = 'Error en user_update_password() al leer el m
 $string['updatepasserrorexpiregrace'] = 'Error en user_update_password() al modificar el momento de expiración y/o los intentos de identificación. Código de error: {$a->errno}; Cadena de error: {$a->errstring}';
 $string['updateremfail'] = 'Error actualizando registro LDAP. Código de error: {$a->errno}; Cadena de error: {$a->errstring}<br/>Clave ({$a->key}) - anterior valor de moodle value: \'{$a->ouvalue}\' nuevo valor: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'No se pudo actualizar LDAP con el campo ambiguo {$a->key}; anterior valor de moodle: \'{$a->ouvalue}\', nuevo valor: \'{$a->nuvalue}\'';
-$string['updateremfailfield'] = 'Fallo al actualizar LDAP con un campo inexistente (\'{$a->ldapkey}\'). Clave ({$a->key}) - antiguo valor Moodle: \'{$a->ouvalue}\' nuevo valor: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'No se ha encontrado el usuario al actualizar externamente. Detalles: base de búsqueda: \'{$a->userdn}\'; filtro de búsqueda: \'(objectClass=*)\'; atributos de búsqueda: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: la función de ldap user_activate() no admite el tipo de usuario seleccionado: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: la función de ldap user_disable() no admite el tipo de usuario seleccionado: {$a}';

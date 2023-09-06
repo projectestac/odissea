@@ -54,6 +54,16 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
     const COMPRESSOR_PHP_ZSTD = 2;
 
     /**
+     * @var string Suffix used on key name (for hash) to store the TTL sorted list
+     */
+    const TTL_SUFFIX = '_ttl';
+
+    /**
+     * @var int Number of items to delete from cache in one batch when expiring old TTL data.
+     */
+    const TTL_EXPIRE_BATCH = 10000;
+
+    /**
      * Name of this store.
      *
      * @var string
@@ -103,6 +113,22 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
     protected $compressor = self::COMPRESSOR_NONE;
 
     /**
+     * Bytes read or written by last call to set()/get() or set_many()/get_many().
+     *
+     * @var int
+     */
+    protected $lastiobytes = 0;
+
+    /** @var int Maximum number of seconds to wait for a lock before giving up. */
+    protected $lockwait = 60;
+
+    /** @var int Timeout before lock is automatically released (in case of crashes) */
+    protected $locktimeout = 600;
+
+    /** @var ?array Array of current locks, or null if we haven't registered shutdown function */
+    protected $currentlocks = null;
+
+    /**
      * Determines if the requirements for this type of store are met.
      *
      * @return bool
@@ -128,6 +154,10 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @return int
      */
     public static function get_supported_features(array $configuration = array()) {
+        // Although this plugin now supports TTL I did not add SUPPORTS_NATIVE_TTL here, because
+        // doing so would cause Moodle to stop adding a 'TTL wrapper' to data items which enforces
+        // the precise specified TTL. Unless the scheduled task is set to run rather frequently,
+        // this could cause change in behaviour. Maybe later this should be reconsidered...
         return self::SUPPORTS_DATA_GUARANTEE + self::DEREFERENCES_OBJECTS + self::IS_SEARCHABLE;
     }
 
@@ -161,6 +191,12 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
         }
         $password = !empty($configuration['password']) ? $configuration['password'] : '';
         $prefix = !empty($configuration['prefix']) ? $configuration['prefix'] : '';
+        if (array_key_exists('lockwait', $configuration)) {
+            $this->lockwait = (int)$configuration['lockwait'];
+        }
+        if (array_key_exists('locktimeout', $configuration)) {
+            $this->locktimeout = (int)$configuration['locktimeout'];
+        }
         $this->redis = $this->new_redis($configuration['server'], $prefix, $password);
     }
 
@@ -175,12 +211,16 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      */
     protected function new_redis($server, $prefix = '', $password = '') {
         $redis = new Redis();
-        // Check if it isn't a Unix socket to set default port.
-        $port = ($server[0] === '/') ? null : 6379;
-        if (strpos($server, ':')) {
-            $serverconf = explode(':', $server);
-            $server = $serverconf[0];
-            $port = $serverconf[1];
+        // Check for Unix socket.
+        if ($server[0] === '/') {
+            $port = 0;
+        } else {
+            $port = 6379; // No Unix socket so set default port.
+            if (strpos($server, ':')) { // Check for custom port.
+                $serverconf = explode(':', $server);
+                $server = $serverconf[0];
+                $port = $serverconf[1];
+            }
         }
 
         try {
@@ -195,8 +235,7 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
                 if (!empty($prefix)) {
                     $redis->setOption(Redis::OPT_PREFIX, $prefix);
                 }
-                // Database setting option...
-                $this->isready = $this->ping($redis);
+                $this->isready = true;
             } else {
                 $this->isready = false;
             }
@@ -276,6 +315,9 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
             return $value;
         }
 
+        // When using compression, values are always strings, so strlen will work.
+        $this->lastiobytes = strlen($value);
+
         return $this->uncompress($value);
     }
 
@@ -292,11 +334,32 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
             return $values;
         }
 
+        $this->lastiobytes = 0;
         foreach ($values as &$value) {
+            $this->lastiobytes += strlen($value);
             $value = $this->uncompress($value);
         }
 
         return $values;
+    }
+
+    /**
+     * Gets the number of bytes read from or written to cache as a result of the last action.
+     *
+     * If compression is not enabled, this function always returns IO_BYTES_NOT_SUPPORTED. The reason is that
+     * when compression is not enabled, data sent to the cache is not serialized, and we would
+     * need to serialize it to compute the size, which would have a significant performance cost.
+     *
+     * @return int Bytes read or written
+     * @since Moodle 4.0
+     */
+    public function get_last_io_bytes(): int {
+        if ($this->compressor != self::COMPRESSOR_NONE) {
+            return $this->lastiobytes;
+        } else {
+            // Not supported unless compression is on.
+            return parent::get_last_io_bytes();
+        }
     }
 
     /**
@@ -309,9 +372,20 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
     public function set($key, $value) {
         if ($this->compressor != self::COMPRESSOR_NONE) {
             $value = $this->compress($value);
+            $this->lastiobytes = strlen($value);
         }
 
-        return ($this->redis->hSet($this->hash, $key, $value) !== false);
+        if ($this->redis->hSet($this->hash, $key, $value) === false) {
+            return false;
+        }
+        if ($this->definition->get_ttl()) {
+            // When TTL is enabled, we also store the key name in a list sorted by the current time.
+            $this->redis->zAdd($this->hash . self::TTL_SUFFIX, [], self::get_time(), $key);
+            // The return value to the zAdd function never indicates whether the operation succeeded
+            // (it returns zero when there was no error if the item is already in the list) so we
+            // ignore it.
+        }
+        return true;
     }
 
     /**
@@ -323,13 +397,35 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      */
     public function set_many(array $keyvaluearray) {
         $pairs = [];
+        $usettl = false;
+        if ($this->definition->get_ttl()) {
+            $usettl = true;
+            $ttlparams = [];
+            $now = self::get_time();
+        }
+
+        $this->lastiobytes = 0;
         foreach ($keyvaluearray as $pair) {
             $key = $pair['key'];
             if ($this->compressor != self::COMPRESSOR_NONE) {
                 $pairs[$key] = $this->compress($pair['value']);
+                $this->lastiobytes += strlen($pairs[$key]);
             } else {
                 $pairs[$key] = $pair['value'];
             }
+            if ($usettl) {
+                // When TTL is enabled, we also store the key names in a list sorted by the current
+                // time.
+                $ttlparams[] = $now;
+                $ttlparams[] = $key;
+            }
+        }
+        if ($usettl) {
+            // Store all the key values with current time.
+            $this->redis->zAdd($this->hash . self::TTL_SUFFIX, [], ...$ttlparams);
+            // The return value to the zAdd function never indicates whether the operation succeeded
+            // (it returns zero when there was no error if the item is already in the list) so we
+            // ignore it.
         }
         if ($this->redis->hMSet($this->hash, $pairs)) {
             return count($pairs);
@@ -344,7 +440,15 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @return bool True if the delete operation succeeds, false otherwise.
      */
     public function delete($key) {
-        return ($this->redis->hDel($this->hash, $key) > 0);
+        $ok = true;
+        if (!$this->redis->hDel($this->hash, $key)) {
+            $ok = false;
+        }
+        if ($this->definition->get_ttl()) {
+            // When TTL is enabled, also remove the key from the TTL list.
+            $this->redis->zRem($this->hash . self::TTL_SUFFIX, $key);
+        }
+        return $ok;
     }
 
     /**
@@ -354,9 +458,16 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @return int The number of keys successfully deleted.
      */
     public function delete_many(array $keys) {
-        // Redis needs the hash as the first argument, so we have to put it at the start of the array.
-        array_unshift($keys, $this->hash);
-        return call_user_func_array(array($this->redis, 'hDel'), $keys);
+        // If there are no keys to delete, do nothing.
+        if (!$keys) {
+            return 0;
+        }
+        $count = $this->redis->hDel($this->hash, ...$keys);
+        if ($this->definition->get_ttl()) {
+            // When TTL is enabled, also remove the keys from the TTL list.
+            $this->redis->zRem($this->hash . self::TTL_SUFFIX, ...$keys);
+        }
+        return $count;
     }
 
     /**
@@ -365,6 +476,13 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @return bool
      */
     public function purge() {
+        if ($this->definition->get_ttl()) {
+            // Purge the TTL list as well.
+            $this->redis->del($this->hash . self::TTL_SUFFIX);
+            // According to documentation, there is no error return for the 'del' command (it
+            // only returns the number of keys deleted, which could be 0 or 1 in this case) so we
+            // do not need to check the return value.
+        }
         return ($this->redis->del($this->hash) !== false);
     }
 
@@ -372,7 +490,6 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * Cleans up after an instance of the store.
      */
     public function instance_deleted() {
-        $this->purge();
         $this->redis->close();
         unset($this->redis);
     }
@@ -429,7 +546,38 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      * @return bool True if the lock was acquired, false if it was not.
      */
     public function acquire_lock($key, $ownerid) {
-        return $this->redis->setnx($key, $ownerid);
+        $timelimit = time() + $this->lockwait;
+        do {
+            // If the key doesn't already exist, grab it and return true.
+            if ($this->redis->setnx($key, $ownerid)) {
+                // Ensure Redis deletes the key after a bit in case something goes wrong.
+                $this->redis->expire($key, $this->locktimeout);
+                // If we haven't got it already, better register a shutdown function.
+                if ($this->currentlocks === null) {
+                    core_shutdown_manager::register_function([$this, 'shutdown_release_locks']);
+                    $this->currentlocks = [];
+                }
+                $this->currentlocks[$key] = $ownerid;
+                return true;
+            }
+            // Wait 1 second then retry.
+            sleep(1);
+        } while (time() < $timelimit);
+        return false;
+    }
+
+    /**
+     * Releases any locks when the system shuts down, in case there is a crash or somebody forgets
+     * to use 'try-finally'.
+     *
+     * Do not call this function manually (except from unit test).
+     */
+    public function shutdown_release_locks() {
+        foreach ($this->currentlocks as $key => $ownerid) {
+            debugging('Automatically releasing Redis cache lock: ' . $key . ' (' . $ownerid .
+                    ') - did somebody forget to call release_lock()?', DEBUG_DEVELOPER);
+            $this->release_lock($key, $ownerid);
+        }
     }
 
     /**
@@ -443,7 +591,7 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      */
     public function check_lock_state($key, $ownerid) {
         $result = $this->redis->get($key);
-        if ($result === $ownerid) {
+        if ($result === (string)$ownerid) {
             return true;
         }
         if ($result === false) {
@@ -488,9 +636,113 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
      */
     public function release_lock($key, $ownerid) {
         if ($this->check_lock_state($key, $ownerid)) {
+            unset($this->currentlocks[$key]);
             return ($this->redis->del($key) !== false);
         }
         return false;
+    }
+
+    /**
+     * Runs TTL expiry process for this cache.
+     *
+     * This is not part of the standard cache API and is intended for use by the scheduled task
+     * \cachestore_redis\ttl.
+     *
+     * @return array Various keys with information about how the expiry went
+     */
+    public function expire_ttl(): array {
+        $ttl = $this->definition->get_ttl();
+        if (!$ttl) {
+            throw new \coding_exception('Cache definition ' . $this->definition->get_id() . ' does not use TTL');
+        }
+        $limit = self::get_time() - $ttl;
+        $count = 0;
+        $batches = 0;
+        $timebefore = microtime(true);
+        $memorybefore = $this->store_total_size();
+        do {
+            $keys = $this->redis->zRangeByScore($this->hash . self::TTL_SUFFIX, 0, $limit,
+                    ['limit' => [0, self::TTL_EXPIRE_BATCH]]);
+            $this->delete_many($keys);
+            $count += count($keys);
+            $batches++;
+        } while (count($keys) === self::TTL_EXPIRE_BATCH);
+        $memoryafter = $this->store_total_size();
+        $timeafter = microtime(true);
+
+        $result = ['keys' => $count, 'batches' => $batches, 'time' => $timeafter - $timebefore];
+        if ($memorybefore !== null) {
+            $result['memory'] = $memorybefore - $memoryafter;
+        }
+        return $result;
+    }
+
+    /**
+     * Gets the current time for TTL functionality. This wrapper makes it easier to unit-test
+     * the TTL behaviour.
+     *
+     * @return int Current time
+     */
+    protected static function get_time(): int {
+        global $CFG;
+        if (PHPUNIT_TEST && !empty($CFG->phpunit_cachestore_redis_time)) {
+            return $CFG->phpunit_cachestore_redis_time;
+        }
+        return time();
+    }
+
+    /**
+     * Sets the current time (within unit test) for TTL functionality.
+     *
+     * This setting is stored in $CFG so will be automatically reset if you use resetAfterTest.
+     *
+     * @param int $time Current time (set 0 to start using real time).
+     */
+    public static function set_phpunit_time(int $time = 0): void {
+        global $CFG;
+        if (!PHPUNIT_TEST) {
+            throw new \coding_exception('Function only available during unit test');
+        }
+        if ($time) {
+            $CFG->phpunit_cachestore_redis_time = $time;
+        } else {
+            unset($CFG->phpunit_cachestore_redis_time);
+        }
+    }
+
+    /**
+     * Estimates the stored size, taking into account whether compression is turned on.
+     *
+     * @param mixed $key Key name
+     * @param mixed $value Value
+     * @return int Approximate stored size
+     */
+    public function estimate_stored_size($key, $value): int {
+        if ($this->compressor == self::COMPRESSOR_NONE) {
+            // If uncompressed, use default estimate.
+            return parent::estimate_stored_size($key, $value);
+        } else {
+            // If compressed, compress value.
+            return strlen($this->serialize($key)) + strlen($this->compress($value));
+        }
+    }
+
+    /**
+     * Gets Redis reported memory usage.
+     *
+     * @return int|null Memory used by Redis or null if we don't know
+     */
+    public function store_total_size(): ?int {
+        try {
+            $details = $this->redis->info('MEMORY');
+        } catch (\RedisException $e) {
+            return null;
+        }
+        if (empty($details['used_memory'])) {
+            return null;
+        } else {
+            return (int)$details['used_memory'];
+        }
     }
 
     /**
@@ -552,6 +804,13 @@ class cachestore_redis extends cache_store implements cache_is_key_aware, cache_
         }
         if (!empty($config->test_password)) {
             $configuration['password'] = $config->test_password;
+        }
+        // Make it possible to test TTL performance by hacking a copy of the cache definition.
+        if (!empty($config->test_ttl)) {
+            $definition = clone $definition;
+            $property = (new ReflectionClass($definition))->getProperty('ttl');
+            $property->setAccessible(true);
+            $property->setValue($definition, 999);
         }
         $cache = new cachestore_redis('Redis test', $configuration);
         $cache->initialise($definition);

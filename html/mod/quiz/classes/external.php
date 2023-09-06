@@ -24,6 +24,8 @@
  * @since      Moodle 3.1
  */
 
+use core_course\external\helper_for_get_mods_by_courses;
+
 defined('MOODLE_INTERNAL') || die;
 
 require_once($CFG->libdir . '/externallib.php');
@@ -96,24 +98,15 @@ class mod_quiz_external extends external_api {
                 $quiz = quiz_update_effective_access($quiz, $USER->id);
 
                 // Entry to return.
-                $quizdetails = array();
-                // First, we return information that any user can see in the web interface.
-                $quizdetails['id'] = $quiz->id;
-                $quizdetails['coursemodule']      = $quiz->coursemodule;
-                $quizdetails['course']            = $quiz->course;
-                $quizdetails['name']              = external_format_string($quiz->name, $context->id);
+                $quizdetails = helper_for_get_mods_by_courses::standard_coursemodule_element_values(
+                        $quiz, 'mod_quiz', 'mod/quiz:view', 'mod/quiz:view');
 
                 if (has_capability('mod/quiz:view', $context)) {
-                    // Format intro.
-                    $options = array('noclean' => true);
-                    list($quizdetails['intro'], $quizdetails['introformat']) =
-                        external_format_text($quiz->intro, $quiz->introformat, $context->id, 'mod_quiz', 'intro', null, $options);
-
                     $quizdetails['introfiles'] = external_util::get_area_files($context->id, 'mod_quiz', 'intro', false, false);
-                    $viewablefields = array('timeopen', 'timeclose', 'grademethod', 'section', 'visible', 'groupmode',
-                                            'groupingid', 'attempts', 'timelimit', 'grademethod', 'decimalpoints',
+                    $viewablefields = array('timeopen', 'timeclose', 'attempts', 'timelimit', 'grademethod', 'decimalpoints',
                                             'questiondecimalpoints', 'sumgrades', 'grade', 'preferredbehaviour');
-                    // Some times this function returns just empty.
+
+                    // Sometimes this function returns just empty.
                     $hasfeedback = quiz_has_feedback($quiz);
                     $quizdetails['hasfeedback'] = (!empty($hasfeedback)) ? 1 : 0;
 
@@ -131,9 +124,12 @@ class mod_quiz_external extends external_api {
                                                     'reviewspecificfeedback', 'reviewgeneralfeedback', 'reviewrightanswer',
                                                     'reviewoverallfeedback', 'questionsperpage', 'navmethod',
                                                     'browsersecurity', 'delay1', 'delay2', 'showuserpicture', 'showblocks',
-                                                    'completionattemptsexhausted', 'completionpass', 'overduehandling',
+                                                    'completionattemptsexhausted', 'overduehandling',
                                                     'graceperiod', 'canredoquestions', 'allowofflineattempts');
                         $viewablefields = array_merge($viewablefields, $additionalfields);
+
+                        // Any course module fields that previously existed in quiz.
+                        $quizdetails['completionpass'] = $quizobj->get_cm()->completionpassgrade;
                     }
 
                     // Fields only for managers.
@@ -165,15 +161,9 @@ class mod_quiz_external extends external_api {
         return new external_single_structure(
             array(
                 'quizzes' => new external_multiple_structure(
-                    new external_single_structure(
-                        array(
-                            'id' => new external_value(PARAM_INT, 'Standard Moodle primary key.'),
-                            'course' => new external_value(PARAM_INT, 'Foreign key reference to the course this quiz is part of.'),
-                            'coursemodule' => new external_value(PARAM_INT, 'Course module id.'),
-                            'name' => new external_value(PARAM_RAW, 'Quiz name.'),
-                            'intro' => new external_value(PARAM_RAW, 'Quiz introduction text.', VALUE_OPTIONAL),
-                            'introformat' => new external_format_value('intro', VALUE_OPTIONAL),
-                            'introfiles' => new external_files('Files in the introduction text', VALUE_OPTIONAL),
+                    new external_single_structure(array_merge(
+                        helper_for_get_mods_by_courses::standard_coursemodule_elements_returns(true),
+                        [
                             'timeopen' => new external_value(PARAM_INT, 'The time when this quiz opens. (0 = no restriction.)',
                                                                 VALUE_OPTIONAL),
                             'timeclose' => new external_value(PARAM_INT, 'The time when this quiz closes. (0 = no restriction.)',
@@ -265,12 +255,8 @@ class mod_quiz_external extends external_api {
                             'hasfeedback' => new external_value(PARAM_INT, 'Whether the quiz has any non-blank feedback text',
                                                                 VALUE_OPTIONAL),
                             'hasquestions' => new external_value(PARAM_INT, 'Whether the quiz has questions', VALUE_OPTIONAL),
-                            'section' => new external_value(PARAM_INT, 'Course section id', VALUE_OPTIONAL),
-                            'visible' => new external_value(PARAM_INT, 'Module visibility', VALUE_OPTIONAL),
-                            'groupmode' => new external_value(PARAM_INT, 'Group mode', VALUE_OPTIONAL),
-                            'groupingid' => new external_value(PARAM_INT, 'Grouping id', VALUE_OPTIONAL),
-                        )
-                    )
+                        ]
+                    ))
                 ),
                 'warnings' => new external_warnings(),
             )
@@ -463,6 +449,8 @@ class mod_quiz_external extends external_api {
                 'timecheckstate' => new external_value(PARAM_INT, 'Next time quiz cron should check attempt for
                                                         state changes.  NULL means never check.', VALUE_OPTIONAL),
                 'sumgrades' => new external_value(PARAM_FLOAT, 'Total marks for this attempt.', VALUE_OPTIONAL),
+                'gradednotificationsenttime' => new external_value(PARAM_INT,
+                    'Time when the student was notified that manual grading of their attempt was complete.', VALUE_OPTIONAL),
             )
         );
     }
@@ -1062,6 +1050,7 @@ class mod_quiz_external extends external_api {
      * @throws moodle_quiz_exceptions
      */
     public static function get_attempt_data($attemptid, $page, $preflightdata = array()) {
+        global $PAGE;
 
         $warnings = array();
 
@@ -1079,6 +1068,10 @@ class mod_quiz_external extends external_api {
         } else {
             $nextpage = $params['page'] + 1;
         }
+
+        // TODO: Remove the code once the long-term solution (MDL-76728) has been applied.
+        // Set a default URL to stop the debugging output.
+        $PAGE->set_url('/fake/url');
 
         $result = array();
         $result['attempt'] = $attemptobj->get_attempt();

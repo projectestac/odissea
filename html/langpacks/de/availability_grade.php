@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'de', version '3.11'.
+ * Strings for component 'availability_grade', language 'de', version '4.1'.
  *
  * @package     availability_grade
  * @category    string
@@ -39,9 +39,9 @@ $string['option_min'] = 'muss ≥ sein';
 $string['pluginname'] = 'Voraussetzung: Bewertung';
 $string['privacy:metadata'] = 'Das Plugin \'Voraussetzung: Bewertung\' speichert keine personenbezogenen Daten.';
 $string['requires_any'] = 'Sie haben eine Bewertung in <strong>{$a}</strong>';
-$string['requires_max'] = 'Sie haben eine angemessene Punktzahl in <strong>{$a}</strong>';
-$string['requires_min'] = 'Sie haben die erforderliche Punktzahl in <strong>{$a}</strong> erhalten';
+$string['requires_max'] = 'Sie haben weniger als die erforderliche Punktzahl in <strong>{$a}</strong> erhalten.';
+$string['requires_min'] = 'Sie haben mehr als die erforderliche Punktzahl in <strong>{$a}</strong> erhalten,';
 $string['requires_notany'] = 'Sie haben keine Bewertung in <strong>{$a}</strong> erhalten.';
 $string['requires_notgeneral'] = 'Sie haben keine Punktzahl in <strong>{$a}</strong> erhalten.';
-$string['requires_range'] = 'Sie haben teilweise Punkte erhalten in <strong>{$a}</strong>.';
+$string['requires_range'] = 'Sie haben Punkte im erforderlichen Bereich in <strong>{$a}</strong> erhalten.';
 $string['title'] = 'Bewertung';

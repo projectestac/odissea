@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_kprime', language 'eu', version '3.11'.
+ * Strings for component 'qtype_kprime', language 'eu', version '4.1'.
  *
  * @package     qtype_kprime
  * @category    string
@@ -46,6 +46,7 @@ $string['optionno'] = '{$a} aukera';
 $string['optionsandfeedback'] = 'Aukerak eta feedbacka';
 $string['pluginname'] = 'Kprime (ETH)';
 $string['pluginname_help'] = 'Kprime galdera lau aukera dituen item-multzo batean datza. Ikasleak aukera bakoitza "egia" edo "gezurra" den erabaki behar du.';
+$string['pluginname_link'] = 'question/type/kprime';
 $string['pluginnameadding'] = 'Kprime galdera bat gehitzen';
 $string['pluginnameediting'] = 'Kprime galdera editatzen';
 $string['pluginnamesummary'] = 'Kprime galderetan lau aukerak "egia" edo "gezurra" diren zuzen erantzun behar da.';

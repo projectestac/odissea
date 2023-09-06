@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'it', version '3.11'.
+ * Strings for component 'datafield_picture', language 'it', version '4.1'.
  *
  * @package     datafield_picture
  * @category    string
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'Immagine';
 $string['pluginname'] = 'Immagine';
 $string['privacy:metadata'] = 'Il plugin Immagine non memorizza dati personali, utilizza tabelle definite in mod_data.';
+$string['sample'] = 'Segnaposto della descrizione dell\'immagine';

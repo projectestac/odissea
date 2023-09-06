@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'fr', version '3.11'.
+ * Strings for component 'journal', language 'fr', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -57,6 +57,7 @@ $string['journalquestion'] = 'Question du journal';
 $string['mailsubject'] = 'Feedback du journal';
 $string['modulename'] = 'Journal';
 $string['modulename_help'] = 'L\'activité journal permet aux enseignants d\'obtenir des étudiants un feedback sur un sujet précis';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = 'Journaux';
 $string['needsregrade'] = 'L\'entrée a changé depuis que le dernier feedback a été sauvegardé';
 $string['newjournalentries'] = 'Nouvelles entrées';

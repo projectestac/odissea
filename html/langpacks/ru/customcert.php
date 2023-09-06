@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'ru', version '3.11'.
+ * Strings for component 'customcert', language 'ru', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -25,8 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activity'] = 'Активный элемент';
 $string['addcertpage'] = 'Добавить страницу';
 $string['addelement'] = 'Добавить элемент';
+$string['aligncenter'] = 'По центру';
+$string['alignleft'] = 'По левому краю';
+$string['alignment'] = 'Центрирование';
+$string['alignment_help'] = 'Эта настройка задает горизонтальное положение элемента. Так как не все элементы поддерживают данную настройку и поведение некоторых элементов непредсказуемо, пожалуйста, всегда проверяйте полученный результат.';
+$string['alignright'] = 'По правому краю';
 $string['awardedto'] = 'Награждается';
 $string['cannotverifyallcertificates'] = 'У Вас нет права для проверки всех сертификатов на этом сайте.';
 $string['certificate'] = 'Сертификат';
@@ -40,6 +46,7 @@ $string['customcert:manage'] = 'Управлять сертификатом';
 $string['customcert:manageemailothers'] = 'Управлять настройками электронной почты других пользователей';
 $string['customcert:manageemailstudents'] = 'Управлять настройками электронной почты студентов';
 $string['customcert:manageemailteachers'] = 'Управлять настройками электронной почты преподавателей';
+$string['customcert:managelanguages'] = 'Управлять языком в форме редактирования';
 $string['customcert:manageprotection'] = 'Управлять настройками защиты';
 $string['customcert:managerequiredtime'] = 'Управлять необходимыми настройками времени';
 $string['customcert:manageverifyany'] = 'Управлять настройками проверки';
@@ -58,13 +65,18 @@ $string['deleteissueconfirm'] = 'Вы уверены, что хотите отм
 $string['deleteissuedcertificates'] = 'Удалить выданные сертификаты';
 $string['deletepageconfirm'] = 'Вы уверены, что хотите удалить страницу сертификата?';
 $string['deletetemplateconfirm'] = 'Вы уверены, что хотите удалить шаблон сертификата?';
+$string['deliveryoptiondownload'] = 'Отправить в браузер и принудительно скачать файл';
+$string['deliveryoptioninline'] = 'Отправить файл в браузер';
+$string['deliveryoptions'] = 'Варианты доставки';
 $string['description'] = 'Описание';
 $string['duplicate'] = 'Дублировать';
 $string['duplicateconfirm'] = 'Подтверждение дубликата';
 $string['duplicatetemplateconfirm'] = 'Вы уверены, что хотите продублировать этот шаблон сертификата?';
-$string['editcustomcert'] = 'Редактировать сетрификат';
+$string['editcustomcert'] = 'Редактировать сертификат';
 $string['editelement'] = 'Редактировать элемент';
 $string['edittemplate'] = 'Редактировать шаблон';
+$string['elementheight'] = 'Высота';
+$string['elementheight_help'] = 'Укажите высоту элемента. Если выбрать "0", то высота рассчитывается автоматически.';
 $string['elementname'] = 'Название элемента';
 $string['elementname_help'] = 'Оно будет использовано для идентификации этого элемента в процессе редактирования сертификата. Например, на странице сертификата может быть несколько изображений и Вам будет необходимо отличать их друг от друга при редактировании. Примечание: название не будет отображаться на PDF.';
 $string['elementplugins'] = 'Плагины элементов';
@@ -76,18 +88,27 @@ $string['emailnonstudentbody'] = 'Во вложении сертификат «{
 $string['emailnonstudentbodyplaintext'] = 'В приложении сертификат «{$a->certificatename}» пользователя {$a->userfullname} для курса «{$a->coursefullname}».';
 $string['emailnonstudentcertificatelinktext'] = 'Посмотреть отчет по сертификатам';
 $string['emailnonstudentgreeting'] = 'Привет';
-$string['emailnonstudentsubject'] = '{$a->coursename}: {$a->certificatename}';
+$string['emailnonstudentsubject'] = '{$a->coursefullname}: {$a->certificatename}';
 $string['emailothers'] = 'Отправить эл. почту другим';
-$string['emailothers_help'] = 'При выбранном параметре на указанные здесь адреса (разделенные запятой) будут высланы электронные письма с копией сертификата (когда он станет доступным).';
+$string['emailothers_help'] = 'При выбранном параметре на указанные здесь адреса (через запятую) будут высланы электронные письма с копией сертификата (когда он станет доступным). <strong>ВНИМАНИЕ:</strong> Задание этого параметра до того, как вы закончили создание сертификата, приведет к тому, что на почту адресатам отправится незаконченный сертификат.';
 $string['emailstudentbody'] = 'Во вложении Ваш сертификат «{$a->certificatename}» курса «{$a->coursefullname}».';
 $string['emailstudentbodyplaintext'] = 'В приложении Ваш сертификат «{$a->certificatename}» за курс «{$a->coursefullname}».';
 $string['emailstudentcertificatelinktext'] = 'Просмотреть сертификат';
 $string['emailstudentgreeting'] = 'Уважаемый (ая) {$a}';
 $string['emailstudents'] = 'Отправить эл. почту студентам';
-$string['emailstudents_help'] = 'При выбранном параметре студент получит письмо с копией сертификата (когда он станет доступным).';
-$string['emailstudentsubject'] = '{$a->coursename}: {$a->certificatename}';
+$string['emailstudents_help'] = 'При выбранном параметре студент получит письмо с копией сертификата (когда он станет доступным).  <strong>ВНИМАНИЕ:</strong> Установка значения на "Да" до того, как вы закончили создание сертификата, приведет к тому, что на почту учащемуся отправится незаконченный сертификат.';
+$string['emailstudentsubject'] = '{$a->coursefullname}: {$a->certificatename}';
 $string['emailteachers'] = 'Отправить эл. почту учителям';
 $string['emailteachers_help'] = 'При выбранном параметре учителя получат письма с копией сертификата (когда он станет доступным).';
+$string['eventelementcreated'] = 'Настраиваемый сертификат создан';
+$string['eventelementdeleted'] = 'Настраиваемый сертификат удален';
+$string['eventelementupdated'] = 'Настраиваемый сертификат обновлен';
+$string['eventpagecreated'] = 'Создана страница настраиваемого сертификата';
+$string['eventpagedeleted'] = 'Удалена страница настраиваемого сертификата';
+$string['eventpageupdated'] = 'Обновлена страница настраиваемого сертификата';
+$string['eventtemplatecreated'] = 'Создан шаблон настраиваемого сертификата';
+$string['eventtemplatedeleted'] = 'Шаблон настраиваемого сертификата удален';
+$string['eventtemplateupdated'] = 'Шаблон настраиваемого сертификата обновлен';
 $string['exampledatawarning'] = 'Некоторые из этих значений могут быть просто примером того, как можно размещать элементы.';
 $string['font'] = 'Шрифт';
 $string['font_help'] = 'Шрифт, используемый при создании данного элемента.';
@@ -95,17 +116,21 @@ $string['fontcolour'] = 'Цвет';
 $string['fontcolour_help'] = 'Цвет шрифта.';
 $string['fontsize'] = 'Размер';
 $string['fontsize_help'] = 'Размер шрифта в пунктах.';
-$string['getcustomcert'] = 'Скачать сертификат';
+$string['getcustomcert'] = 'Просмотреть сертификат';
+$string['gradeoutcome'] = 'Результат';
 $string['height'] = 'Высота';
 $string['height_help'] = 'Это высота (в мм) сертификата в формате PDF. Для справки, высота листа формата А4 равна 297 мм, а высота листа формата Letter - 279 мм.';
 $string['invalidcode'] = 'Введен недопустимый код.';
 $string['invalidcolour'] = 'Выбран недопустимый цвет, пожалуйста введите допустимое для HTML название цвета (шестизначный или трехзначный шестнадцатеричный цвет).';
-$string['invalidelementwidth'] = 'Введите положительное число.';
+$string['invalidelementwidthorheightnotnumber'] = 'Пожалуйста, введите подходящее числовое значение.';
+$string['invalidelementwidthorheightzeroallowed'] = 'Пожалуйста, введите число большее или равное 0.';
+$string['invalidelementwidthorheightzeronotallowed'] = 'Пожалуйста, введите число больше 0.';
 $string['invalidheight'] = 'Высота должна быть равна числу больше 0.';
 $string['invalidmargin'] = 'Отступ должен быть равен числу больше 0.';
 $string['invalidposition'] = 'Выберите положительное число для позиции {$a}.';
 $string['invalidwidth'] = 'Ширина должна быть равна числу больше 0.';
 $string['landscape'] = 'Альбомная';
+$string['languageoptions'] = 'Принудительный язык сертификата';
 $string['leftmargin'] = 'Левый отступ';
 $string['leftmargin_help'] = 'Это левое поле сертификата PDF в мм.';
 $string['listofissues'] = 'Получатели: {$a}';
@@ -117,6 +142,7 @@ $string['managetemplatesdesc'] = 'Эта ссылка переведет Вас 
 $string['modify'] = 'Изменить';
 $string['modulename'] = 'Сертификат';
 $string['modulename_help'] = 'Этот модуль позволяет динамическое создание сертификатов в формате PDF.';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['modulenameplural'] = 'Сертификаты';
 $string['mycertificates'] = 'Мои сертификаты';
 $string['mycertificatesdescription'] = 'Это сертификаты, которые Вы получили по электронной почте или загрузили вручную.';
@@ -180,6 +206,8 @@ $string['topright'] = 'Верхний правый';
 $string['type'] = 'Тип';
 $string['uploadimage'] = 'Загрузить изображение';
 $string['uploadimagedesc'] = 'Эта ссылка переключит Вас на новую вкладку, где Вы сможете загрузить изображения. Изображения, загруженные с помощью этого метода, будут доступны на Вашем сайте для всех пользователей, которые могут создать сертификат.';
+$string['userlanguage'] = 'Использовать предпочтительный язык пользователя';
+$string['userlanguage_help'] = 'Вы можете принудительно заменить языковые предпочтения пользователя на язык сертификата.';
 $string['verified'] = 'Подтверждено';
 $string['verify'] = 'Подтвердить';
 $string['verifyallcertificates'] = 'Разрешить проверку всех сертификатов';

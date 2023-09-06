@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ja', version '3.11'.
+ * Strings for component 'quiz_statistics', language 'ja', version '4.1'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -101,12 +101,12 @@ $string['questiontype'] = '問題タイプ';
 $string['quizinformation'] = '小テスト情報';
 $string['quizname'] = '小テスト名';
 $string['quizoverallstatistics'] = '小テスト全体の統計';
-$string['quizstatisticscleanuptask'] = '古い小テスト統計キャッシュレコードを削除する';
 $string['quizstructureanalysis'] = '問題構造分析';
 $string['random_guess_score'] = '当てずっぽうの評点';
 $string['rangebetween'] = '{$a->min} − {$a->max}';
 $string['rangeofvalues'] = '問題の統計範囲';
 $string['recalculatenow'] = '再計算する';
+$string['recalculatetask'] = '問題統計を再計算する';
 $string['reportsettings'] = '統計計算設定';
 $string['response'] = '解答';
 $string['skewness'] = '評点分布の歪み ({$a})';

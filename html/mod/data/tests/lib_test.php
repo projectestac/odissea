@@ -24,6 +24,8 @@
  */
 namespace mod_data;
 
+use stdClass;
+
 defined('MOODLE_INTERNAL') || die();
 
 global $CFG;
@@ -933,48 +935,6 @@ class lib_test extends \advanced_testcase {
         // Ensure that the value was updated by reference in $database.
         $config = json_decode($database->config);
         $this->assertEquals($value, $config->$key);
-    }
-
-    /**
-     * Test data_view
-     * @return void
-     */
-    public function test_data_view() {
-        global $CFG;
-
-        $CFG->enablecompletion = 1;
-        $this->resetAfterTest();
-
-        $this->setAdminUser();
-        // Setup test data.
-        $course = $this->getDataGenerator()->create_course(array('enablecompletion' => 1));
-        $data = $this->getDataGenerator()->create_module('data', array('course' => $course->id),
-                                                            array('completion' => 2, 'completionview' => 1));
-        $context = \context_module::instance($data->cmid);
-        $cm = get_coursemodule_from_instance('data', $data->id);
-
-        // Trigger and capture the event.
-        $sink = $this->redirectEvents();
-
-        data_view($data, $course, $cm, $context);
-
-        $events = $sink->get_events();
-        // 2 additional events thanks to completion.
-        $this->assertCount(3, $events);
-        $event = array_shift($events);
-
-        // Checking that the event contains the expected values.
-        $this->assertInstanceOf('\mod_data\event\course_module_viewed', $event);
-        $this->assertEquals($context, $event->get_context());
-        $moodleurl = new \moodle_url('/mod/data/view.php', array('id' => $cm->id));
-        $this->assertEquals($moodleurl, $event->get_url());
-        $this->assertEventContextNotUsed($event);
-        $this->assertNotEmpty($event->get_name());
-
-        // Check completion status.
-        $completion = new \completion_info($course);
-        $completiondata = $completion->get_data($cm);
-        $this->assertEquals(1, $completiondata->completionstate);
     }
 
     public function test_mod_data_get_tagged_records() {
@@ -2009,5 +1969,74 @@ class lib_test extends \advanced_testcase {
             'timeviewto' => $time + 2000,
         );
         $generator->create_instance($params);
+    }
+
+    /**
+     * Test for data_generate_default_template(). This method covers different scenarios for checking when the returned value
+     * is empty or not, but doesn't check if the content has the expected value when it's not empty.
+     *
+     * @covers ::data_generate_default_template
+     */
+    public function test_data_generate_default_template(): void {
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        $course = $this->getDataGenerator()->create_course();
+        $activity = $this->getDataGenerator()->create_module(manager::MODULE, ['course' => $course]);
+
+        // Check the result is empty when $data and/or $template are null.
+        $nullactivity = null;
+        $result = data_generate_default_template($nullactivity, 'listtemplate', 0, false, false);
+        $this->assertEmpty($result);
+        $result = data_generate_default_template($activity, null, 0, false, false);
+        $this->assertEmpty($result);
+        $result = data_generate_default_template($nullactivity, null, 0, false, false);
+        $this->assertEmpty($result);
+
+        // Check the result is empty when any of the templates that are empty are given.
+        $emptytemplates = [
+            'csstemplate',
+            'jstemplate',
+            'listtemplateheader',
+            'listtemplatefooter',
+            'rsstitletemplate',
+        ];
+        foreach ($emptytemplates as $emptytemplate) {
+            $result = data_generate_default_template($activity, $emptytemplate, 0, false, false);
+            $this->assertEmpty($result);
+        }
+
+        $templates = [
+            'listtemplate',
+            'singletemplate',
+            'asearchtemplate',
+        ];
+        // Check the result is empty when the database has no fields.
+        foreach ($templates as $template) {
+            $result = data_generate_default_template($activity, $template, 0, false, false);
+            $this->assertEmpty($result);
+            $this->assertEmpty($activity->{$template});
+        }
+
+        // Add a field to the activity.
+        $fieldrecord = new stdClass();
+        $fieldrecord->name = 'field-1';
+        $fieldrecord->type = 'text';
+        $datagenerator = $this->getDataGenerator()->get_plugin_generator('mod_data');
+        $datagenerator->create_field($fieldrecord, $activity);
+
+        // Check the result is not empty when the database has no entries.
+        foreach ($templates as $template) {
+            $result = data_generate_default_template($activity, $template, 0, false, false);
+            $this->assertNotEmpty($result);
+            $this->assertEmpty($activity->{$template});
+        }
+
+        // Check the result is not empty when the database has no entries and the result is saved when $update = true.
+        foreach ($templates as $template) {
+            $result = data_generate_default_template($activity, $template, 0, false, true);
+            $this->assertNotEmpty($result);
+            $this->assertNotEmpty($activity->{$template});
+        }
     }
 }

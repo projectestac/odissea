@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'el', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'el', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -94,7 +94,7 @@ $string['editor:entervideotitle'] = 'Επικόλληση συνδέσμου You
 $string['editor:entervideourl'] = 'Εισαγωγή διεύθυνσης URL πηγής βίντεο ή συνδέσμου YouTube';
 $string['editor:errorcalculatingmaxscore'] = 'Δεν ήταν δυνατός ο υπολογισμός του μέγιστου σκορ για αυτό το περιεχόμενο. Το μέγιστο σκορ θεωρείται ότι είναι 0. Επικοινωνήστε με το διαχειριστή σας, εάν αυτό δεν είναι σωστό.';
 $string['editor:errorcommunicatinghubcontent'] = 'Παρουσιάστηκε σφάλμα. Παρακαλούμε, προσπαθήστε ξανά.';
-$string['editor:errorcommunicatinghubtitle'] = 'Δεν είναι δυνατή η επικοινωνία με το διανομέα (hub, κεντρικός κόμβος).';
+$string['editor:errorcommunicatinghubtitle'] = 'Δεν είναι δυνατή η επικοινωνία με το διανομέα.';
 $string['editor:errorheader'] = 'Παρουσιάστηκε σφάλμα';
 $string['editor:errornotsupported'] = 'Οι παράμετροι περιέχουν %used που δεν υποστηρίζεται.';
 $string['editor:errorparamsbroken'] = 'Οι παράμετροι είναι κατεστραμμένες.';
@@ -131,7 +131,7 @@ $string['editor:licensecannotholdliable'] = 'Χωρίς δυνατότητα α�
 $string['editor:licensecansublicense'] = 'Μπορεί να παραχωρήσει υπο-άδεια (σε τρίτους)';
 $string['editor:licensecanusecommercially'] = 'Δυνατότητα εμπορικής χρήσης';
 $string['editor:licensedescription'] = 'Μερικά από τα χαρακτηριστικά αυτής της άδειας αναφέρονται παρακάτω. Κάντε κλικ στο παραπάνω εικονίδιο πληροφοριών για να διαβάσετε το αρχικό κείμενο της άδειας χρήσης.';
-$string['editor:licensefetchdetailsfailed'] = 'Αποτυχία αποστολής για λήψη λεπτομερειών άδειας χρήσης';
+$string['editor:licensefetchdetailsfailed'] = 'Αποτυχία εύρεσης/λήψης λεπτομερειών άδειας χρήσης';
 $string['editor:licensemodalsubtitle'] = 'Επιλέξτε μια άδεια χρήσης για να δείτε πληροφορίες σχετικά με την ορθή χρήση';
 $string['editor:licensemodaltitle'] = 'Λεπτομέρειες άδειας χρήσης';
 $string['editor:licensemustincludecopyright'] = 'Πρέπει να περιλαμβάνει πνευματικά δικαιώματα';
@@ -212,7 +212,7 @@ $string['editor:thiswillpotentially'] = 'Αυτό θα επαναφέρει πι
 $string['editor:title'] = 'Τίτλος';
 $string['editor:toolong'] = 'Η τιμή πεδίου είναι πολύ μεγάλη. Θα πρέπει να περιέχει :max γράμματα ή λιγότερα.';
 $string['editor:tryagain'] = 'Προσπαθήστε ξανά';
-$string['editor:tutorial'] = 'Καθοδηγούμενη αυτοδιδασκαλία';
+$string['editor:tutorial'] = 'Βίντεο εκμάθησης';
 $string['editor:unabletointerpreterror'] = 'Αδυναμία ερμηνείας της απόκρισης.';
 $string['editor:unabletointerpretsolution'] = 'Παρακαλούμε, ελέγξτε το αρχείο καταγραφών σφαλμάτων.';
 $string['editor:unknownfieldpath'] = 'Αδυναμία εύρεσης του «:path».';
@@ -223,7 +223,7 @@ $string['editor:uploadaudiotitle'] = 'Ανέβασμα αρχείου ήχου';
 $string['editor:uploaderror'] = 'Σφάλμα ανεβάσματος αρχείου';
 $string['editor:uploadfilebuttonchangelabel'] = 'Αλλαγή αρχείου';
 $string['editor:uploadfilebuttonlabel'] = 'Ανέβασμα αρχείου';
-$string['editor:uploading'] = 'Ανέβασμα, παρακαλώ περιμένετε...';
+$string['editor:uploading'] = 'Ανέβασμα, παρακαλούμε περιμένετε...';
 $string['editor:uploadingthrobber'] = 'Γίνεται ανέβασμα/μεταφόρτωση ...';
 $string['editor:uploadinstructionscontent'] = 'Μπορείτε να ξεκινήσετε με παραδείγματα από το <a href="https://h5p.org/content-types-and-applications" target="blank">H5P.org</a>.';
 $string['editor:uploadinstructionstitle'] = 'Ανέβασμα ενός αρχείου H5P.';

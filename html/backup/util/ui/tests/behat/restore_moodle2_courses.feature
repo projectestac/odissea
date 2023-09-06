@@ -12,16 +12,16 @@ Feature: Restore Moodle 2 course backups
       | Course 3 | C3 | 0 | topics | 2 | 0 |
       | Course 4 | C4 | 0 | topics | 20 | 0 |
     And the following "activities" exist:
-      | activity | course | idnumber | name | intro | section | externalurl           |
-      | assign | C3 | assign1 | Test assign name | Assign description | 1 |           |
-      | data | C3 | data1 | Test database name | Database description | 2 |           |
-      | url      | C1     | url1     | Test URL name | Test URL description | 3       | http://www.moodle.org |
+      | activity | course | idnumber | name               | intro                | section | externalurl           |
+      | assign   | C3     | assign1  | Test assign name   | Assign description   | 1       |                       |
+      | data     | C3     | data1    | Test database name | Database description | 2       |                       |
+      | forum    | C1     | 0001     | Test forum name    |                      | 1       |                       |
+      | url      | C1     | url1     | Test URL name      | Test URL description | 3       | http://www.moodle.org |
+    And the following "blocks" exist:
+      | blockname        | contextlevel | reference | pagetypepattern | defaultregion |
+      | activity_modules | Course       | C1        | course-view-*   | side-pre      |
     And I log in as "admin"
     And I am on "Course 1" course homepage with editing mode on
-    And I add a "Forum" to section "1" and I fill the form with:
-      | Forum name | Test forum name |
-      | Description | Test forum description |
-    And I add the "Activities" block
 
   @javascript
   Scenario: Restore a course in another existing course
@@ -43,7 +43,7 @@ Feature: Restore Moodle 2 course backups
     And I should see "Test forum name"
     And I should see "Topic 15"
     And I should not see "Topic 16"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     And the field "id_format" matches value "Topics format"
     And I press "Cancel"
@@ -63,11 +63,12 @@ Feature: Restore Moodle 2 course backups
   Scenario: Restore a backup into the same course removing it's contents before that
     When I backup "Course 1" course using this options:
       | Confirmation | Filename | test_backup.mbz |
-    And I am on "Course 1" course homepage
-    And I add a "Forum" to section "1" and I fill the form with:
-      | Forum name | Test forum post backup name |
-      | Description | Test forum post backup description |
-    And I navigate to "Restore" in current page administration
+    And the following "activity" exists:
+      | activity | forum                              |
+      | course   | C1                                 |
+      | section  | 1                                  |
+      | name     | Test forum post backup name        |
+    And I am on the "Course 1" "restore" page
     And I merge "test_backup.mbz" backup into the current course after deleting it's contents using this options:
       | Schema | Section 3 | 0 |
     Then I should see "Course 1"
@@ -83,7 +84,7 @@ Feature: Restore Moodle 2 course backups
     When I restore "test_backup.mbz" backup into a new course using this options:
     Then I should see "Topic 1"
     And I should see "Test forum name"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     And the field "id_format" matches value "Topics format"
     And I set the following fields to these values:
@@ -95,14 +96,14 @@ Feature: Restore Moodle 2 course backups
     And I press "Save and display"
     And I should see "1 January - 7 January"
     And I should see "Test forum name"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     And the field "id_format" matches value "Weekly format"
     And I set the following fields to these values:
       | id_format | Social format |
     And I press "Save and display"
     And I should see "An open forum for chatting about anything you want to"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     And the field "id_format" matches value "Social format"
     And I press "Cancel"
@@ -115,7 +116,7 @@ Feature: Restore Moodle 2 course backups
       | Confirmation | Filename | test_backup.mbz |
     And I restore "test_backup.mbz" backup into "Course 2" course using this options:
       | Schema | Overwrite course configuration | Yes |
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     Then the field "id_format" matches value "Topics format"
     And the field "Course layout" matches value "Show one section per page"
@@ -137,7 +138,7 @@ Feature: Restore Moodle 2 course backups
       | Confirmation | Filename | test_backup.mbz |
     And I restore "test_backup.mbz" backup into "Course 2" course using this options:
       | Schema | Overwrite course configuration | No |
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     Then the field "id_format" matches value "Topics format"
     And the field "Course short name" matches value "C2"
@@ -158,11 +159,10 @@ Feature: Restore Moodle 2 course backups
     When I backup "Course 1" course using this options:
       | Initial |  Include enrolled users | 0 |
       | Confirmation | Filename | test_backup.mbz |
-    And I am on "Course 2" course homepage
-    And I navigate to "Restore" in current page administration
+    And I am on the "Course 2" "restore" page
     And I merge "test_backup.mbz" backup into the current course after deleting it's contents using this options:
       | Schema | Overwrite course configuration | Yes |
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     Then the field "id_format" matches value "Topics format"
     And the field "Course layout" matches value "Show one section per page"
@@ -183,11 +183,10 @@ Feature: Restore Moodle 2 course backups
     When I backup "Course 1" course using this options:
       | Initial |  Include enrolled users | 0 |
       | Confirmation | Filename | test_backup.mbz |
-    And I am on "Course 2" course homepage
-    And I navigate to "Restore" in current page administration
+    And I am on the "Course 2" "restore" page
     And I merge "test_backup.mbz" backup into the current course after deleting it's contents using this options:
       | Schema | Overwrite course configuration | No |
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     Then the field "id_format" matches value "Topics format"
     And the field "Course short name" matches value "C2"
@@ -208,11 +207,10 @@ Feature: Restore Moodle 2 course backups
     When I backup "Course 1" course using this options:
       | Initial |  Include enrolled users | 0 |
       | Confirmation | Filename | test_backup.mbz |
-    And I am on "Course 4" course homepage
-    And I navigate to "Restore" in current page administration
+    And I am on the "Course 4" "restore" page
     And I merge "test_backup.mbz" backup into the current course after deleting it's contents using this options:
       | Schema | Overwrite course configuration | No |
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I expand all fieldsets
     Then the field "id_format" matches value "Topics format"
     And the field "Course short name" matches value "C4"
@@ -235,7 +233,7 @@ Feature: Restore Moodle 2 course backups
       | Confirmation | Filename | test_backup.mbz |
     When I restore "test_backup.mbz" backup into a new course using this options:
       | Settings | Include permission overrides | 1 |
-    Then I navigate to "Users > Permissions" in current page administration
+    Then I am on the "Course 1 copy 1" "permissions" page
     And I should see "Non-editing teacher (1)"
     And I set the field "Advanced role override" to "Non-editing teacher (1)"
     And "enrol/manual:enrol" capability has "Allow" permission
@@ -249,5 +247,5 @@ Feature: Restore Moodle 2 course backups
       | Confirmation | Filename | test_backup.mbz |
     When I restore "test_backup.mbz" backup into a new course using this options:
       | Settings | Include permission overrides | 0 |
-    Then I navigate to "Users > Permissions" in current page administration
+    Then I am on the "Course 1 copy 1" "permissions" page
     And I should see "Non-editing teacher (0)"

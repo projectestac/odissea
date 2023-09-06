@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'zh_cn', version '3.11'.
+ * Strings for component 'debug', language 'zh_cn', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,17 @@ $string['notables'] = '无表！';
 $string['outputbuffer'] = '输出缓冲器';
 $string['phpvaroff'] = 'PHP服务器变量 \'{$a->name}\' 应设置为 Off - {$a->link}';
 $string['phpvaron'] = 'PHP服务器变量”{$a->name}“未开启 - {$a->link}';
+$string['reactive_highlightoff'] = '突出显示关闭';
+$string['reactive_highlighton'] = '突出显示开启';
+$string['reactive_instances'] = '反应实例：';
+$string['reactive_noinstances'] = '此页面没有反应实例。';
+$string['reactive_pin'] = 'Pin码';
+$string['reactive_readmodeoff'] = '阅读模式关闭';
+$string['reactive_readmodeon'] = '阅读模式开启';
+$string['reactive_resetpanel'] = '重置面板';
+$string['reactive_saveingwarning'] = '警告：编辑当前状态可能会导致意外结果。';
+$string['reactive_statedata'] = '状态数据';
+$string['reactive_unpin'] = '取消固定';
 $string['sessionmissing'] = '对象{$a}在会话中丢失';
 $string['sqlrelyonobsoletetable'] = 'SQL语句使用了废弃的表：{$a}！必须由开发者来修改您的代码。';
 $string['stacktrace'] = '堆栈跟踪';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ko', version '3.11'.
+ * Strings for component 'webservice', language 'ko', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -64,7 +64,6 @@ $string['deletetokenconfirm'] = '서비스 <strong>{$a->service}</strong>에 있
 $string['disabledwarning'] = '모든 웹서비스 프로토콜이 비활성화 되어 있습니다. "웹서비스 활성화" 설정은 고급 기능에서 찾을 수 있습니다.';
 $string['doc'] = '문서';
 $string['docaccessrefused'] = '이 토큰에 대한 문서를 볼 수 있는 권한이 없습니다.';
-$string['documentation'] = '웹서비스 문서';
 $string['downloadfiles'] = '파일을 다운로드 할 수 있습니다.';
 $string['editaservice'] = '서비스 편집';
 $string['editservice'] = '서비스 편집: {$a->name} (id: {$a->id})';

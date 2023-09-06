@@ -23,14 +23,12 @@
 define(
 [
     'jquery',
-    'core/str',
     'block_timeline/event_list',
     'core/pubsub',
     'core/paged_content_events'
 ],
 function(
     $,
-    Str,
     EventList,
     PubSub,
     PagedContentEvents
@@ -38,35 +36,7 @@ function(
 
     var SELECTORS = {
         EVENT_LIST_CONTAINER: '[data-region="event-list-container"]',
-    };
-
-    var DEFAULT_PAGE_LIMIT = [5, 10, 25];
-
-    /**
-     * Generate a paged content array of limits taking into account user preferences
-     *
-     * @param {object} root The root element for the timeline dates view.
-     * @return {array} Array of limit objects
-     */
-    var getPagingLimits = function(root) {
-        var limitPref = parseInt(root.data('limit'), 10);
-        var isDefaultSet = false;
-        var limits = DEFAULT_PAGE_LIMIT.map(function(value) {
-            if (limitPref == value) {
-                isDefaultSet = true;
-            }
-
-            return {
-                value: value,
-                active: limitPref == value
-            };
-        });
-
-        if (!isDefaultSet) {
-            limits[0].active = true;
-        }
-
-        return limits;
+        NO_COURSES_EMPTY_MESSAGE: '[data-region="no-courses-empty-message"]',
     };
 
     /**
@@ -88,24 +58,18 @@ function(
      * @param {object} root The root element for the timeline dates view.
      */
     var load = function(root) {
-        var eventListContainer = root.find(SELECTORS.EVENT_LIST_CONTAINER);
-        var namespace = $(eventListContainer).attr('id') + "user_block_timeline" + Math.random();
-        registerEventListeners(root, namespace);
 
-        var limits = getPagingLimits(root);
-        var config = {
-            persistentLimitKey: "block_timeline_user_limit_preference",
-            eventNamespace: namespace
-        };
-        Str.get_string('ariaeventlistpaginationnavdates', 'block_timeline')
-            .then(function(string) {
-                EventList.init(eventListContainer, limits, {}, string, config);
-                return string;
-            })
-            .catch(function() {
-                // Ignore if we can't load the string. Still init the event list.
-                EventList.init(eventListContainer, limits, {}, "", config);
-            });
+        if (!root.find(SELECTORS.NO_COURSES_EMPTY_MESSAGE).length) {
+            var eventListContainer = root.find(SELECTORS.EVENT_LIST_CONTAINER);
+            var namespace = $(eventListContainer).attr('id') + "user_block_timeline" + Math.random();
+            registerEventListeners(root, namespace);
+
+            var config = {
+                persistentLimitKey: "block_timeline_user_limit_preference",
+                eventNamespace: namespace
+            };
+            EventList.init(eventListContainer, config);
+        }
     };
 
     /**
@@ -116,7 +80,9 @@ function(
      */
     var init = function(root) {
         root = $(root);
-        if (root.hasClass('active')) {
+
+        // Only need to handle events loading if the user is actively enrolled in a course and this view is active.
+        if (root.hasClass('active') && !root.find(SELECTORS.NO_COURSES_EMPTY_MESSAGE).length) {
             load(root);
             root.attr('data-seen', true);
         }

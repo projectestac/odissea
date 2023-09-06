@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'fr', version '3.11'.
+ * Strings for component 'qtype_shortanswer', language 'fr', version '4.1'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughanswers'] = 'Ce type de question demande au moins {$a} répons
 $string['pleaseenterananswer'] = 'Veuillez saisir une réponse.';
 $string['pluginname'] = 'Réponse courte';
 $string['pluginname_help'] = 'Pour répondre à la question (qui peut contenir une image), les participants doivent écrire un mot ou une phrase courte. Il peut y avoir plusieurs réponses correctes, chacune avec une note différente. Si l\'option « Sensible à la casse » est activée, vous pourrez alors avoir des notes différentes pour « Cheval » et « cheval ».';
+$string['pluginname_link'] = 'question/type/shortanswer';
 $string['pluginnameadding'] = 'Ajout d\'une question à réponse courte';
 $string['pluginnameediting'] = 'Modification d\'une question à réponse courte';
 $string['pluginnamesummary'] = 'Permet une réponse d\'un ou quelques mots, évaluée en comparant divers modèles de réponses, pouvant contenir des jokers.';

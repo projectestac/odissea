@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'sv', version '3.11'.
+ * Strings for component 'tool_recyclebin', language 'sv', version '4.1'.
  *
  * @package     tool_recyclebin
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_poodll', language 'el', version '3.11'.
+ * Strings for component 'filter_poodll', language 'el', version '4.1'.
  *
  * @package     filter_poodll
  * @category    string
@@ -124,7 +124,7 @@ $string['ppn_filter_generico'] = 'Φίλτρο Generico';
 $string['ppn_filter_poodll'] = 'Φίλτρο Poodll';
 $string['ppn_filter_videoeasy'] = 'Φίλτρο VideoEasy';
 $string['ppn_local_trigger'] = 'Πρόκληση';
-$string['readaloud_recorder'] = 'Διάβασμα φωναχτά';
+$string['readaloud_recorder'] = 'Εκφώνηση';
 $string['recorderorder'] = 'Σειρά προτίμησης εγγραφέων';
 $string['recorderorder_audio'] = 'Σειρά εγγραφέων ήχου';
 $string['recorderorder_audio_desc'] = '';
@@ -142,9 +142,9 @@ $string['recui_echo'] = 'Καταστολή ηχούς';
 $string['recui_finished'] = 'Τελείωσε';
 $string['recui_loopback'] = 'Βρόχος επιστροφής';
 $string['recui_nothingtosaveerror'] = 'Δεν έγινε καθόλου σύλληψη. Λυπούμαστε... Τίποτα προς ανέβασμα.';
-$string['recui_off'] = 'Απενεργοποιημένο';
+$string['recui_off'] = 'Όχι';
 $string['recui_ok'] = 'ΟΚ';
-$string['recui_on'] = 'Ενεργοποιημένο';
+$string['recui_on'] = 'Ναι';
 $string['recui_pause'] = 'Παύση';
 $string['recui_play'] = 'Παίξτε';
 $string['recui_playing'] = 'Παίζει:';
@@ -168,8 +168,8 @@ $string['registrationkey'] = 'Κλειδί καταχώρηση';
 $string['shadow_recorder'] = 'Σκιά';
 $string['sitedefault'] = 'Προεπιλογή ιστοτόπου';
 $string['size'] = 'Μέγεθος';
-$string['skinstyleaudio'] = 'Στυλ δέρματος (ήχος)';
-$string['skinstylevideo'] = 'Στυλ εξωτερικής εμφάνισης (βίντεο)';
+$string['skinstyleaudio'] = 'Στυλ όψης (ήχος)';
+$string['skinstylevideo'] = 'Στυλ όψης (βίντεο)';
 $string['split_recorder'] = 'Διαχωρισμός';
 $string['start'] = 'Έναρξη';
 $string['subscription'] = 'Εγγραφή';

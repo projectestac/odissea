@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'facetoface', language 'ar', version '3.11'.
+ * Strings for component 'facetoface', language 'ar', version '4.1'.
  *
  * @package     facetoface
  * @category    string
@@ -49,7 +49,7 @@ $string['error:cancellationsnotallowed'] = 'ليس مسموحًا لك بإلغ�
 $string['error:emptyvenue'] = 'كان المكان فارغًا.';
 $string['error:eventoccurred'] = 'لا يمكنك إلغاء حدث وقع بالفعل.';
 $string['error:incorrectfacetofaceid'] = 'مُعرَّف وجهاً لوجه كان خاطئاً';
-$string['error:mustspecifycoursemodulefacetoface'] = 'ينبغي تحديد وحدة المقرر الدراسي أو مُعرَّف وجهاً لوجه';
+$string['error:mustspecifycoursemodulefacetoface'] = 'ينبغي تحديد وحدة المساق أو مُعرَّف وجهاً لوجه';
 $string['error:nopermissiontosignup'] = 'ليست لديك صلاحية الاشتراك في جلسة وجه لوجه هذه.';
 $string['eventaddsession'] = 'جلسة تمت إضافتها';
 $string['eventaddsessionfailed'] = 'إضافة جلسة (فشل)';
@@ -130,7 +130,7 @@ $string['sessiondatetimeknown'] = 'تاريخ/وقت الجلسة معلومان
 $string['sessionfinishtime'] = 'وقت إنتهاء الجلسة';
 $string['sessioninprogress'] = 'الجلسة قيد التنفيذ';
 $string['sessionsoncoursepage'] = 'الجلسات المعروضة في صفحة المساق';
-$string['sessionsoncoursepage_help'] = 'هذا هو عدد الجلسات لكل نشاط من أنشطة وجه لوجه التي سيتم إظهارها في صفحة المقرر الرئيسية.';
+$string['sessionsoncoursepage_help'] = 'هذا هو عدد الجلسات لكل نشاط من أنشطة وجه لوجه التي سيتم إظهارها في صفحة المساق الرئيسية.';
 $string['sessionstartdateandtime'] = '{$a->startdate}، {$a->starttime} - {$a->endtime} (المنطقة الزمنية: {$a->timezone})';
 $string['sessionstartdateandtimewithouttimezone'] = '{$a->startdate}، {$a->starttime} - {$a->endtime}';
 $string['sessionstartfinishdateandtime'] = '{$a->startdate} - {$a->enddate}، {$a->starttime} - {$a->endtime} (المنطقة الزمنية: {$a->timezone})';

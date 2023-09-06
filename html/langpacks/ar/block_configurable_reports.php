@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'ar', version '3.11'.
+ * Strings for component 'block_configurable_reports', language 'ar', version '4.1'.
  *
  * @package     block_configurable_reports
  * @category    string
@@ -38,7 +38,7 @@ $string['comp_calculations_help'] = '<p> يمكنك هنا إضافة حسابا
 $string['comp_columns'] = 'خانات';
 $string['comp_columns_help'] = '<p> يمكنك هنا اختيار الخانات المختلفة لتقريرك بناءً على نوع التقرير </ p>
 <p>معلومات اكثر: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['comp_conditions_help'] = '<p>يمكنك هنا تعريف الشروط (مثلاً، فقط المقررات التي ضمن هذا التصنيف، فقط المستخدمون من سوريا، إلخ.. </p>
+$string['comp_conditions_help'] = '<p>يمكنك هنا تعريف الشروط (مثلاً، فقط المقررات الدراسية التي ضمن هذا التصنيف، فقط المستخدمون من سوريا، إلخ.. </p>
 
 <p>يمكنك إضافة تعبير منطقي إن كنت تستعمل أكثر من شرط واحد.</p>
 
@@ -65,7 +65,7 @@ $string['configurable_reports:managereports'] = 'إدارة التقارير';
 $string['configurable_reports:managesqlreports'] = 'إدارة تقارير SQL';
 $string['configurable_reports:myaddinstance'] = 'إضافة كتلة جديدة من التقارير القابلة للإعداد إلى صفحتي الرئيسية';
 $string['configurable_reports:viewreports'] = 'عرض التقارير';
-$string['coursededicationtime'] = 'الوقت الحصري للمقرر';
+$string['coursededicationtime'] = 'الوقت الحصري للمساق';
 $string['currentuser'] = 'المستخدم الحالي';
 $string['datatables_sortascending'] = ': تنشيط فرز العمود تصاعدياً';
 $string['datatables_sortdescending'] = ': تنشيط فرز العمود تنازلياً';
@@ -77,7 +77,7 @@ $string['email_send'] = 'إرسل';
 $string['error_value_expected_integer'] = 'المتوقع قيمة رقمية صحيحة';
 $string['executeatinfo'] = 'سيقوم مشغل الوظائف الدورية لمودل بتشغيل استعلامات مجدولة لـ SQL بعد الوقت المحدد، مرة كل 24 ساعة';
 $string['filter_all'] = 'الكل';
-$string['filtercourses_summary'] = 'هذا المرشح يظهر قائمة من المقررات الدراسية. يمكن إختيار مقرر دراسي واحد في كل مرة.';
+$string['filtercourses_summary'] = 'هذا المرشح يظهر قائمة من المقررات الدراسية. يمكن إختيار مقرر واحد في كل مرة.';
 $string['filterrole_summary'] = 'ترشيح أدوار النظام (معلم، طالب، ...)';
 $string['footer'] = 'التذييل';
 $string['globalstatsshouldbeenabled'] = 'لا بد من تمكين إحائيات الموقع. إذهب إلى الإدارة > المخدم > الإحصائيات';
@@ -99,7 +99,7 @@ $string['puserfield_summary'] = 'المستخدم ذو القيمة المحدد
 $string['report_timeline'] = 'تقرير الجدول الزمني';
 $string['reports'] = 'تقارير';
 $string['reportscapabilities'] = 'إمكانيات التقرير';
-$string['roleincourse'] = 'المستخدمون الذين لهم ما هو محدد من الأدوار في التقرير الحالي للمقرر';
+$string['roleincourse'] = 'المستخدمون الذين لهم ما هو محدد من الأدوار في التقرير الحالي للمساق';
 $string['roleusersn'] = 'عدد المستخدمين الذين لهم دور...';
 $string['sharedsqlrepositoryinfo'] = 'اسم مالك حساب GitHub + slash + اسم المستودع';
 $string['student'] = 'الطالب';
@@ -107,7 +107,7 @@ $string['tablealign'] = 'محاذاة الجدول';
 $string['timeinterval'] = 'الفاصل الزمني';
 $string['timeline'] = 'الجدول الزمني';
 $string['timemode'] = 'نمط الوقت';
-$string['usersincurrentcourse_summary'] = 'المستخدم الذي له ما هو محدد من الأدوار في التقرير الحالي للمقرر';
+$string['usersincurrentcourse_summary'] = 'المستخدم الذي له ما هو محدد من الأدوار في التقرير الحالي للمساق';
 $string['userstats'] = 'إحصائيات المستخدم';
 $string['value'] = 'القيمة';
 $string['value_fields'] = 'حقول القيم';

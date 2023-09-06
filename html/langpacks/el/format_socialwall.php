@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_socialwall', language 'el', version '3.11'.
+ * Strings for component 'format_socialwall', language 'el', version '4.1'.
  *
  * @package     format_socialwall
  * @category    string
@@ -74,7 +74,7 @@ $string['missingcapposturl'] = 'Δεν έχετε το δικαίωμα να α�
 $string['missingcapupdatepost'] = 'Δεν έχετε το δικαίωμα να ενημερώσετε αυτή την ανάρτηση.';
 $string['missingcapwritecomment'] = 'Λείπει η δυνατότητα συγγραφής για σχόλια.';
 $string['nf_comment_created'] = 'Ο/Η {$a->creator} σχολίασε μια ανάρτηση: {$a->commenttext}';
-$string['nf_gotocourse'] = 'Μεταβείτε στο μάθημα';
+$string['nf_gotocourse'] = 'Μετάβαση στο μάθημα';
 $string['nf_like_created'] = 'Ο/Η {$a->creator} δήλωσε ότι του αρέσει μια ανάρτηση: {$a->posttext}';
 $string['nf_like_deleted'] = 'Ο/Η {$a->creator} δήλωσε ότι δεν του αρέσει πια μια ανάρτηση: {$a->posttext}';
 $string['norecentactivities'] = 'Δεν υπάρχει καμία πρόσφατη δραστηριότητα';

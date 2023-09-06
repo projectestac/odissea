@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_gismo', language 'es', version '3.11'.
+ * Strings for component 'block_gismo', language 'es', version '4.1'.
  *
  * @package     block_gismo
  * @category    string
@@ -71,7 +71,7 @@ $string['detail_resources'] = 'Detalles sobre los recursos';
 $string['detail_show'] = 'Ver detalles';
 $string['details'] = 'Detalles';
 $string['err_access_denied'] = 'Usted No está autorizado para realizar esta acción.';
-$string['err_authentication'] = 'Usted no se ha autentificado. Es posible que la sesión moodle ha expirado.<br /><br /><a href="">Iniciar Sesión</a>';
+$string['err_authentication'] = 'Usted no se ha autentificado. Es posible que la sesión moodle haya expirado.<br /><br /><a href="">Iniciar Sesión</a>';
 $string['err_block_instance_id_not_set'] = '¡No se ha establecido Id para la instancia Bloque!';
 $string['err_cannot_extract_data'] = '¡No se pueden extraer los datos desde el servidor!';
 $string['err_course_not_set'] = '¡No se ha establecido Id para el Curso!';

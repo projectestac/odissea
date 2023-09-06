@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'es', version '3.11'.
+ * Strings for component 'url', language 'es', version '4.1'.
  *
  * @package     url
  * @category    string
@@ -49,10 +49,12 @@ $string['indicator:cognitivedepth'] = 'URL cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso URL.';
 $string['indicator:cognitivedepthdef'] = 'URL cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje de participación cognitiva ofrecida por los recursos de URL durante este intervalo de análisis (Niveles = Sin ver, Ver)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'URL social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso URL.';
 $string['indicator:socialbreadthdef'] = 'URL social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje de participación social ofrecida por los recursos de URL durante este intervalo de análisis (Niveles = Sin ver, Ver)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidstoredurl'] = 'No se puede mostrar el recurso, la URL no es válida.';
 $string['invalidurl'] = 'La URL introducida no es válida';
 $string['modulename'] = 'URL';
@@ -61,7 +63,14 @@ $string['modulename_help'] = 'El recurso URL permite que el profesor pueda propo
 Hay una serie de opciones de visualización de la URL, como incrustada o abierta en una nueva ventana, y opciones avanzadas,  como parsear información a la URL, como el nombre de un estudiante.
 
 Tenga en cuenta que las URLs también pueden ser añadidas en otros recursos o actividades a través del editor de texto.';
+$string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = 'URLs';
+$string['name'] = 'Nombre';
+$string['name_help'] = 'Esto servirá como texto de enlace de la URL.
+
+Introduzca un texto con sentido que describa el propósito de la URL.
+
+Evite usar la palabra "link/enlace". Esto ayudará a los usuarios de lectores de pantalla porque éstos anuncian los enlaces (p.ej. "Moodle.org, enlace") así que no hay necesidad de incluir la palabra "enlace" en el nombre del campo.';
 $string['page-mod-url-x'] = 'Cualquier página del módulo URL';
 $string['parameterinfo'] = '&amp;parámetro=variable';
 $string['parametersheader'] = 'Variables URL';

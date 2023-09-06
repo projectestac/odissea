@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'gl', version '3.11'.
+ * Strings for component 'glossary', language 'gl', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Engadir categoría:';
 $string['addcomment'] = 'Engadir comentario';
 $string['addentry'] = 'Engadir un novo artigo';
 $string['addingcomment'] = 'Engadir un comentario';
+$string['addsingleentry'] = 'Engadir entrada';
 $string['alias'] = 'Palabra clave';
 $string['aliases'] = 'Palabras clave(s)';
 $string['aliases_help'] = 'Cada entrada do glosario pode ter unha lista asociada de palabras clave (ou alias). Se a entrada está autoligada, entón calquera palabra clave tamén será autoligada.
@@ -41,7 +42,7 @@ $string['allowcomments_help'] = 'De estar activado, todos os participantes con p
 $string['allowduplicatedentries'] = 'Permitidas as entradas duplicadas';
 $string['allowduplicatedentries_help'] = 'De estar activado, varias entradas poden ter o mesmo nome de concepto.';
 $string['allowprintview'] = 'Permitir vista de impresión';
-$string['allowprintview_help'] = 'De estar activado, os estudantes teñen unha ligazón a unha versión apta para impresión do glosario. A ligazón está sempre dispoñíbel para os profesores.';
+$string['allowprintview_help'] = 'De estar activado, os alumnos teñen unha ligazón a unha versión apta para impresión do glosario. A ligazón está sempre dispoñíbel para os profesores.';
 $string['andmorenewentries'] = 'e {$a} máis novas entradas.';
 $string['answer'] = 'Resposta';
 $string['approvaldisplayformat'] = 'Formato de presentación da aprobación';
@@ -49,7 +50,7 @@ $string['approvaldisplayformat_help'] = 'Ao aprobar elementos do glosario pode q
 $string['approve'] = 'Aprobar';
 $string['areaattachment'] = 'Anexos';
 $string['areaentry'] = 'Definicións';
-$string['areyousuredelete'] = 'Confirma que quere eliminar esta entrada?';
+$string['areyousuredelete'] = 'Confirma que quere eliminar estas entradas?';
 $string['areyousuredeletecomment'] = 'Confirma que quere eliminar este comentario?';
 $string['areyousureexport'] = 'Confirma que quere exportar esta entrada';
 $string['ascending'] = 'ascendente';
@@ -58,7 +59,7 @@ $string['attachment_help'] = 'Opcionalmente, pode engadir un ou máis ficheiros 
 $string['author'] = 'autor';
 $string['authorview'] = 'Ver por autor';
 $string['back'] = 'Atrás';
-$string['cachedef_concepts'] = 'Ligazón cara ao concepto';
+$string['cachedef_concepts'] = 'Ligazón cara o concepto';
 $string['cantinsertcat'] = 'Non é posíbel inserir categoría';
 $string['cantinsertrec'] = 'Non é posíbel inserir rexistro';
 $string['cantinsertrel'] = 'Non é posíbel inserir relación categoría-entrada';
@@ -72,7 +73,7 @@ $string['categoryview'] = 'Ver por categoría';
 $string['changeto'] = 'cambiar a {$a}';
 $string['cnfallowcomments'] = 'Definir se un glosario aceptará comentarios nas entradas predeterminadas';
 $string['cnfallowdupentries'] = 'Definir se un glosario permitirá entradas duplicadas de modo predeterminado';
-$string['cnfapprovalstatus'] = 'Definir o estado de aprobación predeterminado dunha entrada remitida por un estudante';
+$string['cnfapprovalstatus'] = 'Definir o estado de aprobación predeterminado dunha entrada remitida por un alumno';
 $string['cnfcasesensitive'] = 'Definir se unha entrada, cando está ligada, diferencia maiúsculas de minúsculas de modo predeterminado';
 $string['cnfdefaulthook'] = 'Seleccionar a selección predeterminada para amosar cando o glosario se ve por vez primeira';
 $string['cnfdefaultmode'] = 'Seleccionar o marco predeterminado para amosar cando o glosario se ve por vez primeira.';
@@ -83,7 +84,7 @@ $string['cnfrelatedview'] = 'Seleccionar o formato de exhibición que se debe ut
 $string['cnfshowgroup'] = 'Especificar se a creba de grupo tería que ser amosada ou non.';
 $string['cnfsortkey'] = 'Seleccionar a clave de ordenación predeterminada.';
 $string['cnfsortorder'] = 'Seleccionar a orde de ordenación predeterminada.';
-$string['cnfstudentcanpost'] = 'Decida se os estudantes poden ou non comentar entradas de modo predeterminado';
+$string['cnfstudentcanpost'] = 'Decida se os alumnos poden ou non comentar entradas de modo predeterminado';
 $string['cnftabs'] = 'Seleccionar as lapelas visíbeis para este formato de glosario';
 $string['comment'] = 'Comentario';
 $string['commentdeleted'] = 'Eliminouse o comentario.';
@@ -91,7 +92,7 @@ $string['comments'] = 'Comentarios';
 $string['commentson'] = 'Comentarios en funcionamento';
 $string['commentupdated'] = 'Actualizouse o comentario.';
 $string['completiondetail:entries'] = 'Facer entradas: {$a}';
-$string['completionentries'] = 'O estudante debe crear entradas:';
+$string['completionentries'] = 'O alumno debe crear entradas:';
 $string['completionentriesdesc'] = 'O alumno debe crear polo menos {$a} entradas)';
 $string['completionentriesgroup'] = 'Require entradas';
 $string['concept'] = 'Concepto';
@@ -163,7 +164,7 @@ $string['entrynotapproved'] = 'Entrada non aprobada';
 $string['entrysaved'] = 'Gardouse esta entrada';
 $string['entryupdated'] = 'Actualizouse esta entrada';
 $string['entryusedynalink'] = 'Esta entrada debería ser ligada automaticamente';
-$string['entryusedynalink_help'] = 'Se o autoligado do glosario global do sitio está activado por parte dun administrador e esta caixa de verificación está activa, a entrada será automaticamente ligada cando os termos e frases aparezan entre o resto do curso.';
+$string['entryusedynalink_help'] = 'Se o autoligado do glosario global do sitio está activado por parte dun administrador e esta caixa de selección está activa, a entrada será automaticamente ligada cando os termos e frases aparezan entre o resto do curso.';
 $string['errcannoteditothers'] = 'Non pode editar as entradas doutra persoa.';
 $string['errconceptalreadyexists'] = 'Este concepto xa existe. Non se permiten duplicados neste glosario.';
 $string['errdeltimeexpired'] = 'Non pode editar isto. O tempo esgotouse!';
@@ -184,6 +185,7 @@ $string['explainalphabet'] = 'Explorar o glosario usando este índice';
 $string['explainexport'] = 'Prema no botón seguinte para exportar as entradas do glosario. <br />Pode importalo en calquera momento neste ou noutro curso.<p>Os anexos (i. e. imaxes) e os autores non se exportan.</p>';
 $string['explainimport'] = 'Debe especificar o ficheiro para importar e definir os criterios do proceso. <p>Remitir a súa pregunta e revisar os resultados.</p>';
 $string['explainspecial'] = 'Amosar as entradas que non comezan cunha letra';
+$string['export'] = 'Exportar';
 $string['exportedentry'] = 'Entrada exportada';
 $string['exportentries'] = 'Exportar entradas';
 $string['exportentriestoxml'] = 'Exportar as entradas a un ficheiro XML';
@@ -251,7 +253,7 @@ Un profesor pode permitir comentarios en entradas. As entradas tamén poden ser 
 
 Os glosarios teñen moitos usos, tales como
 
-* Unha base de datos de termos claves
+* Unha base de datos de termos clave
 * Un espazo «para coñecerse» onde os alumnos novos engaden o seu nome e detalles persoais
 * Un recurso con «notas manuais» de boas prácticas en asuntos prácticos
 * Unha área de compartición de vídeos útiles, imaxes ou o ficheiros de son
@@ -277,6 +279,7 @@ $string['onebyline'] = '(unha por liña)';
 $string['page-mod-glossary-edit'] = 'Páxina para engadir/editar entrada';
 $string['page-mod-glossary-view'] = 'Ver a páxina de edición do glosario';
 $string['page-mod-glossary-x'] = 'Calquera páxina do módulo de glosario';
+$string['pendingapproval'] = 'Pendente de aprobación';
 $string['pluginadministration'] = 'Administración do glosario';
 $string['pluginname'] = 'Glosario';
 $string['popupformat'] = 'Formato de xanela emerxente';
@@ -303,8 +306,9 @@ $string['resetglossaries'] = 'Eliminar as entradas dende';
 $string['resetglossariesall'] = 'Eliminar as entradas de todos os glosarios';
 $string['rssarticles'] = 'Número de artigos recentes en RSS';
 $string['rssarticles_help'] = 'Este axuste especifica o número de conceptos do glosario para incluír na fonte RSS. Entre 5 e 20 é xeralmente aceptábel.';
+$string['rssfeed'] = 'Fonte RSS';
 $string['rsssubscriberss'] = 'Presentar a fonte RSS de «{$a}» conceptos';
-$string['rsstype'] = 'Fonte RSS desta actividade';
+$string['rsstype'] = 'Fonte RSS para esta actividade';
 $string['rsstype_help'] = 'Para activar a fonte RSS desta actividade, seleccione tanto conceptos con autor ou conceptos sen autor para ser incluídos na fonte.';
 $string['search:activity'] = 'Glosario, información de actividade';
 $string['search:entry'] = 'Glosario, entradas';
@@ -312,7 +316,7 @@ $string['searchindefinition'] = 'Buscar o texto completo';
 $string['secondaryglossary'] = 'Glosario secundario';
 $string['showall'] = 'Amosar a ligazón «TODO»';
 $string['showall_help'] = 'Se activado, os participantes poden ver todas as entradas á vez.';
-$string['showalphabet'] = 'Amosar ligazóns do alfabeto';
+$string['showalphabet'] = 'Mostrar alfabeto';
 $string['showalphabet_help'] = 'Se activado, os participantes poder ver o glosario por letras do alfabeto.';
 $string['showspecial'] = 'Amosar a ligazón «Especial»';
 $string['showspecial_help'] = 'Se activado, os participantes poden ver o glosario por caracteres especiais, tales como @ e #.';
@@ -322,7 +326,7 @@ $string['sortbylastupdate'] = 'Por última actualización';
 $string['sortchronogically'] = 'Ordenar cronoloxicamente';
 $string['special'] = 'Especial';
 $string['standardview'] = 'Ver por alfabeto';
-$string['studentcanpost'] = 'Os estudantes poden engadir entradas';
+$string['studentcanpost'] = 'Os alumnos poden engadir entradas';
 $string['tagarea_glossary_entries'] = 'Entradas do glosario:';
 $string['tagsdeleted'] = 'As etiquetas do glosario foron eliminadas';
 $string['totalentries'] = 'Total de entradas';

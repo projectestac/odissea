@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ar', version '3.11'.
+ * Strings for component 'tag', language 'ar', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -43,11 +43,11 @@ $string['component'] = 'المكون';
 $string['confirmdeletetag'] = 'هل أنت متأكد من رغبتك في حذف هذا الوسم؟';
 $string['confirmdeletetags'] = 'هل أنت متأكد من رغبتك في حذف الوسوم المحددة؟';
 $string['count'] = 'العدد';
-$string['coursetags'] = 'وسوم المقرر الدراسي';
+$string['coursetags'] = 'وسوم المساق';
 $string['defautltagcoll'] = 'المجموعة الافتراضية';
 $string['delete'] = 'إحذف';
 $string['deleted'] = 'تم حذف الوسم/الوسوم';
-$string['deletedcoursetags'] = 'المحذوفة - وسوم المقرر الدراسي';
+$string['deletedcoursetags'] = 'المحذوفة - وسوم المساق';
 $string['deleteselected'] = 'إحذف المحددة';
 $string['description'] = 'الوصف';
 $string['editcollname'] = 'تحرير اسم مجموعة الوسوم';
@@ -78,7 +78,9 @@ $string['helprelatedtags'] = 'وسوم ذات صلة بينها فواصل';
 $string['id'] = 'المُعرَّف';
 $string['inalltagcoll'] = 'كل مكان';
 $string['inputstandardtags'] = 'أدخل قائمة مفصولة بفوارز للوسوم الجديدة';
+$string['itemid'] = 'مُعرَّف العنصر';
 $string['itemstaggedwith'] = '{$a->tagarea} موسومة بـ "{$a->tag}"';
+$string['itemtype'] = 'نوع العنصر';
 $string['lesstags'] = 'أقل...';
 $string['managestandardtags'] = 'إدارة الوسوم القياسية';
 $string['managetagcolls'] = 'إدارة مجموعات الوسوم';
@@ -87,6 +89,7 @@ $string['moretags'] = 'أكثر...';
 $string['name'] = 'اسم الوسم';
 $string['namesalreadybeeingused'] = 'أسماء الوسوم مستعملة سلفاً';
 $string['nameuseddocombine'] = 'اسم الوسم مستعمل سلفاً. هل ترغب بدمج هذه الوسوم؟';
+$string['namewithlink'] = 'اسم الوسم مع رابطه';
 $string['newcollnamefor'] = 'الاسم الجديد لمجموعة الوسوم {$a}';
 $string['newnamefor'] = 'الاسم الجديد للوسم {$a}';
 $string['nextpage'] = 'أكثر';
@@ -121,7 +124,7 @@ $string['resetfilter'] = 'إعادة تعيين المرشح';
 $string['resetflag'] = 'إعادة تعيين العلم';
 $string['responsiblewillbenotified'] = 'الشخص المسؤول سيتم إشعاره';
 $string['rssdesc'] = 'مغذي RSS هذا تم إنشاؤه تلقائياً من قبل مودل وهو يحتوي على الوسوم المولدة من قبل المستخدمين في المقررات الدراسية.';
-$string['rsstitle'] = 'تغذية أخبار وسوم المقرر للمستخدم: {$a}';
+$string['rsstitle'] = 'تغذية أخبار وسوم المساق للمستخدم: {$a}';
 $string['search'] = 'بحث';
 $string['searchable'] = 'قابل للبحث';
 $string['searchable_help'] = 'عند تأشيره، الوسوم في مجموعة البحث هذه يمكن العثور عليها عبر صفحة "بحث الوسوم". عند عدم تأشيره، لا يزال بالإمكان العثور على الوسوم عبر صفحات البحث الأخرى.';
@@ -144,6 +147,7 @@ $string['standardsuggest'] = 'إقترح';
 $string['standardtag'] = 'القياسية';
 $string['suredeletecoll'] = 'هل أنت متأكد من رغبتك في حذف مجموعة الوسوم "{$a}"؟';
 $string['tag'] = 'الوسم';
+$string['tagarea'] = 'منطقة الوسم';
 $string['tagarea_blog_external'] = 'منشورات المدونة الخارجية';
 $string['tagarea_course'] = 'المقررات الدراسية';
 $string['tagarea_course_modules'] = 'النشاطات والموارد';
@@ -152,10 +156,12 @@ $string['tagarea_user'] = 'إهتمامات المستخدم';
 $string['tagareaenabled'] = 'مُمَكَّنة';
 $string['tagareaname'] = 'الاسم';
 $string['tagareas'] = 'مناطق الوسم';
+$string['tagauthor'] = 'كاتب الوسم';
 $string['tagcollection'] = 'مجموعة الوسوم';
 $string['tagcollection_help'] = 'مجموعات الوسوم هي حزم من الوسوم لمناطق مختلفة. على سبيل المثال، مجموعة من الوسوم القياسية يمكن استعمالها لوسم المقررات الدراسية، مع الإبقاء على وسوم إهتمامات المستخدمين ومنشورات المدونات ضمن مجموعة أخرى. عندما ينقر المستخدم على وسم، فإن صفحة الوسوم ستعرض له فقط العناصر التي معه ضمن نفس المجموعة. يمكن إضافة الوسوم تلقائياً إلى مجموعة وفقاً للمنطقة الموسومة أو يمكن إضافتها يدوياً بمثابة وسوم قياسية.';
 $string['tagcollections'] = 'مجموعات الوسوم';
 $string['tagdescription'] = 'وصف الوسم';
+$string['taginstance'] = 'عيِّنة الوسم';
 $string['tags'] = 'الوسوم';
 $string['tagsaredisabled'] = 'الوسوم معطّلة';
 $string['thingstaggedwith'] = '"{$a->name}" مستعمل {$a->count} مرة/مرات';

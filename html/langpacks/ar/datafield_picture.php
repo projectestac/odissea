@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_picture', language 'ar', version '3.11'.
+ * Strings for component 'datafield_picture', language 'ar', version '4.1'.
  *
  * @package     datafield_picture
  * @category    string
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_invalidparam1'] = 'العُرض في المعاينة المنفردة ينبغي أن يكون قيمة رقمية.';
+$string['error_invalidparam2'] = 'الارتفاع في المعاينة المنفردة ينبغي أن يكون قيمة رقمية.';
+$string['error_invalidparam4'] = 'العُرض في معاينة القائمة ينبغي أن يكون قيمة رقمية.';
+$string['error_invalidparam5'] = 'الارتفاع في معاينة القائمة ينبغي أن يكون قيمة رقمية.';
 $string['fieldtypelabel'] = 'الصورة';
 $string['pluginname'] = 'الصورة';
 $string['privacy:metadata'] = 'إن مُكون حقل الصورة لا يخزن أي بيانات شخصية، بل يستعمل الجداول المعرفة في mod_data.';
+$string['sample'] = 'العنصر النائب لوصف الصورة';

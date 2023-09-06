@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'sv', version '3.11'.
+ * Strings for component 'tool_mobile', language 'sv', version '4.1'.
  *
  * @package     tool_mobile
  * @category    string
@@ -31,7 +31,9 @@ $string['androidappid_desc'] = 'Denna inställning kan lämnas tom såvida du in
 $string['apppolicy'] = 'URL till App-policy';
 $string['apppolicy_help'] = 'Webbadressen till en policy för appanvändare som anges på sidan Om i appen. Om fältet lämnas tomt kommer URL:en för webbplatspolicyn att användas i stället.';
 $string['apprequired'] = 'Denna funktionalitet är bara tillgänglig via Moodle mobile eller skrivbordsappen.';
-$string['autologinkeygenerationlockout'] = 'Generering av automatisk inloggningsnyckel är blockerad. Du måste vänta 6 minuter mellan förfrågningarna.';
+$string['autologinkeygenerationlockout'] = 'Generering av automatisk inloggningsnyckel är blockerad. Du måste vänta {$a} minuter mellan förfrågningarna.';
+$string['autologinmintimebetweenreq'] = 'Minsta tid mellan begäran om automatisk inloggning.';
+$string['autologinmintimebetweenreq_desc'] = 'Den här inställningen bestämmer den minsta tiden mellan begäranden om automatisk inloggning från appen. Du bör ställa in den här inställningen till ett lågt värde om mobilappanvändare ofta uppmanas att ange sina autentiseringsuppgifter när de visar innehåll som är inbäddat från webbplatsen.';
 $string['autologinnotallowedtoadmins'] = 'Autoinloggning är inte tillåtet för webbplatsadministratörer.';
 $string['cachedef_plugininfo'] = 'Denna lagrar listan med plugin-moduler som har tillägg för mobil.';
 $string['cachedef_subscriptiondata'] = 'Denna lagrar information om prenumerationen på mobilappen.';
@@ -130,6 +132,10 @@ $string['qrcodetype'] = 'Inloggning med QR-kod';
 $string['qrcodetype_desc'] = 'En QR-kod kan tillhandahållas för mobila app-användare att skanna. Detta kan användas för att fylla i webbplatsens URL, eller där webbplatsen är säkrad med hjälp av HTTPS, för att automatiskt logga in användaren utan att behöva ange sitt användarnamn och lösenord.';
 $string['qrcodetypelogin'] = 'QR-kod med automatisk inloggning';
 $string['qrcodetypeurl'] = 'QR-kod med webbplats-URL';
+$string['qrkeyttl'] = 'Varaktighet för QR-autentiseringsnyckel';
+$string['qrkeyttl_desc'] = 'Hur lång tid en QR-kod för autentisering är giltig. Tomma värden tillåts inte. I så fall används standardvärdet för inställningen.';
+$string['qrsameipcheck'] = 'QR-inloggning - kontrollera om samma IP';
+$string['qrsameipcheck_desc'] = 'Denna inställning tvingar användare att använda samma nätverk för att både generera och skanna en QR-kod för inloggning. Inaktivera endast denna inställning om dina användare rapporterar problem med QR-inloggning.';
 $string['qrsiteadminsnotallowed'] = 'Av säkerhetsskäl är inloggning via QR-kod inte tillåtet för webbplatsadministratörer eller om du är inloggad som en annan användare.';
 $string['readingthisemailgettheapp'] = 'Läser du detta i ett e-postmeddelande? <a href="{$a}">Ladda ned mobilappen för att få notifieringar i din mobila enhet</a>.';
 $string['remoteaddons'] = 'Fjärrtillägg';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'it', version '3.11'.
+ * Strings for component 'wiki', language 'it', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -106,6 +106,7 @@ $string['formatcreole'] = 'Formato Creole';
 $string['formatcreole_help'] = 'Creole è un diffuso linguaggio di markup wiki che fornisce una barra di strumenti per facilitare l\'inserimento del markup.
 
 Per creare una pagina,  racchiudi il nome della pagina stessa tra doppie partentesi quadre, ad esempio [[Pagina 2]]';
+$string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'Formato HTML';
 $string['formathtml_help'] = 'L\'editor HTML semplifica la formattazione del contenuto.
 
@@ -114,6 +115,7 @@ $string['formatnwiki'] = 'Formato NWiki';
 $string['formatnwiki_help'] = 'Nwiki è Il linguaggio di markup utilizzato nel modulo contrib Nwiki.
 
 Per creare una pagina, racchiudi il nome della pagina stessa tra doppie parentesi quadre, ad esempio [[Pagina 2]]';
+$string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Storico';
 $string['history_help'] = 'Lo storico elenca i link alle versioni precedenti della pagina.';
 $string['html'] = 'HTML';
@@ -125,10 +127,12 @@ $string['indicator:cognitivedepth'] = 'Wiki cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Wiki.';
 $string['indicator:cognitivedepthdef'] = 'Wiki cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Wiki (Livelli: Nessuna visualizzazione, Visualizzazione, Invio)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Wiki sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Wiki.';
 $string['indicator:socialbreadthdef'] = 'Wiki sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Wiki (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = 'La pagina wiki individuale non esiste';
 $string['insertcomment'] = 'Inserisci commento';
 $string['insertimage'] = 'Inserisci un\'immagine...';
@@ -161,6 +165,7 @@ Il wiki mantiene lo storico delle modifiche, elencando ciascuna modifica accanto
 * scrittura collaborativa di testi su argomenti stabiliti dal docente
 * scrittura collaborativa di racconti e di poesie, dove ciascun partecipane può scrivere un paragrafo o un verso
 * diario personale dei partecipanti e note di esame (utilizzando wiki individuali)';
+$string['modulename_link'] = 'mod/wiki/view';
 $string['modulenameplural'] = 'Wiki';
 $string['navigation'] = 'Navigazione';
 $string['navigationfrom'] = 'La pagina proviene da';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'es', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'es', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -58,6 +58,8 @@ Para obtener información, las tres formas usan coordenadas de esta manera:
 Seleccionar un texto de marcador agregará ese texto a la forma en la vista previa.';
 $string['followingarewrong'] = 'Los siguientes marcadores han sido situados en el área equivocada: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Los siguientes marcadores fueron situados incorrectamente: {$a}. Los marcadores resaltados se muestran en la posición correcta. <br/>Pulsar en el marcador para resaltar el área permitida.';
+$string['formerror_dragrequired'] = 'Debe añadir al menos un marcador para esta pregunta.';
+$string['formerror_droprequired'] = 'Debe definir al menos una zona de arrastre para esta pregunta.';
 $string['formerror_nobgimage'] = 'Debe seleccionar una imagen para ser utilizada como fondo para la zona de arrastrar y soltar.';
 $string['formerror_noitemselected'] = 'Usted ha especificado una zona para soltar pero no ha elegido un marcador que deba ser arrastrado a la zona.';
 $string['formerror_nosemicolons'] = 'No hay puntos y comas en su cadena de coordenadas. Sus coordenadas para un {$a->shape} deben ser expresadas como - {$a->coordsstring}.';
@@ -78,6 +80,7 @@ $string['noofdrags'] = 'Número';
 $string['pleasedragatleastonemarker'] = 'Su respuesta no es completa; debe situar al menos un marcador en la imagen.';
 $string['pluginname'] = 'Arrastrar y soltar marcadores';
 $string['pluginname_help'] = 'Arrastrar y soltar marcadores requiere que el usuario arrastre etiquetas de texto y las suelte dentro de zonas de descarga definidas sobre de una imagen de fondo.';
+$string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = 'Añadiendo arrastrar y soltar marcadores';
 $string['pluginnameediting'] = 'Editando arrastrar y soltar marcadores';
 $string['pluginnamesummary'] = 'Los marcadores se arrastran y sueltan sobre una imagen de fondo.

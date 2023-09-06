@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'ru', version '3.11'.
+ * Strings for component 'atto_collapse', language 'ru', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = 'Показывать основные кнопки';
 $string['showgroups'] = 'Показывать первые n групп при свертывании';
 $string['showgroups_desc'] = 'При свернутой панели (по умолчанию) будут показаны лишь некоторые группы';
 $string['showmore'] = 'Показать больше кнопок';
+$string['youareonsecondrow'] = 'Теперь вы находитесь в другом ряду панели инструментов редактора, где больше кнопок.';

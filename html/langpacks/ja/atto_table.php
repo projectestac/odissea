@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'ja', version '3.11'.
+ * Strings for component 'atto_table', language 'ja', version '4.1'.
  *
  * @package     atto_table
  * @category    string
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcolumnafter'] = '次の後にカラムを追加する';
-$string['addrowafter'] = '次の後に行を追加する';
+$string['addcolumnafter'] = 'すぐ右に列を追加する';
+$string['addrowafter'] = 'すぐ下に行を追加する';
 $string['all'] = 'セルの周囲';
 $string['allowbackgroundcolour'] = '背景色を許可する';
 $string['allowborder'] = '枠線スタイリングを許可する';
@@ -41,21 +41,21 @@ $string['borderstyles'] = '枠線スタイル';
 $string['both'] = '両方';
 $string['caption'] = '説明';
 $string['captionposition'] = '説明のポジション';
-$string['columns'] = 'カラム';
+$string['columns'] = '列';
 $string['createtable'] = 'テーブルを作成する';
 $string['dashed'] = '破線 (dashed)';
-$string['deletecolumn'] = 'カラムを削除する';
+$string['deletecolumn'] = '列を削除する';
 $string['deleterow'] = '行を削除する';
 $string['dotted'] = '点線 (dotted)';
 $string['edittable'] = 'テーブルを編集する';
 $string['headers'] = 'ヘッダの定義先';
-$string['movecolumnleft'] = 'カラムを左に移動する';
-$string['movecolumnright'] = 'カラムを右に移動する';
+$string['movecolumnleft'] = '列を左に移動する';
+$string['movecolumnright'] = '列を右に移動する';
 $string['moverowdown'] = '行を下に移動する';
 $string['moverowup'] = '行を上に移動する';
 $string['noborder'] = '枠線なし';
 $string['none'] = 'なし';
-$string['numberofcolumns'] = 'カラム数';
+$string['numberofcolumns'] = '列数';
 $string['numberofrows'] = '行数';
 $string['outer'] = 'テーブルの周囲';
 $string['pluginname'] = 'テーブル';

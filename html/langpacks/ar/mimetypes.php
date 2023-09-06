@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'ar', version '3.11'.
+ * Strings for component 'mimetypes', language 'ar', version '4.1'.
  *
  * @package     mimetypes
  * @category    string
@@ -35,14 +35,14 @@ $string['application/vnd.ms-excel'] = 'جدول Excel';
 $string['application/vnd.ms-excel.sheet.macroEnabled.12'] = 'مصنف Excel 2007 مع تمكين الماكرو';
 $string['application/vnd.ms-powerpoint'] = 'عرض Powerpoint';
 $string['application/vnd.oasis.opendocument.spreadsheet'] = 'جدول OpenDocument';
-$string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'قالب جدول OpenDocument';
+$string['application/vnd.oasis.opendocument.spreadsheet-template'] = 'مظهر جدول OpenDocument';
 $string['application/vnd.oasis.opendocument.text'] = 'مستند نصي OpenDocument';
-$string['application/vnd.oasis.opendocument.text-template'] = 'قالب نصي OpenDocument';
-$string['application/vnd.oasis.opendocument.text-web'] = 'قالب صفحة ويب OpenDocument';
+$string['application/vnd.oasis.opendocument.text-template'] = 'مظهر نصي OpenDocument';
+$string['application/vnd.oasis.opendocument.text-web'] = 'مظهر صفحة ويب OpenDocument';
 $string['application/vnd.openxmlformats-officedocument.presentationml.presentation'] = 'عرض تقديمي Powerpoint 2007';
 $string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'] = 'عرض شرائح Powerpoint 2007';
 $string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'جدول Excel 2007';
-$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'قالب Excel 2007';
+$string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'مظهر Excel 2007';
 $string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'مستند Word 2007';
 $string['application/x-iwork-keynote-sffkey'] = 'عرض تقديمي iWork Keynote';
 $string['application/x-iwork-numbers-sffnumbers'] = 'جدول iWork Numbers';

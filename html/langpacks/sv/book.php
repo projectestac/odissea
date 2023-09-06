@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'sv', version '3.11'.
+ * Strings for component 'book', language 'sv', version '4.1'.
  *
  * @package     book
  * @category    string
@@ -54,10 +54,12 @@ $string['indicator:cognitivedepth'] = 'Bok kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator är baserad på det kognitiva djup som studenten nått i en Bok-resurs.';
 $string['indicator:cognitivedepthdef'] = 'Bok kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av Bokaktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Bok socialt';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd användaren nått i en Bok-resurs.';
 $string['indicator:socialbreadthdef'] = 'Bok socialt';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Bokaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = 'Bok';
 $string['modulename_help'] = 'Aktiviteten <em>Bok</em> gör det möjligt för en lärare att skapa en flersidig resurs i ett bokliknande format, inklusive kapitel och underkapitel. Böcker kan innehålla media och text och är användbara för att visa långa passager av information som kan delas in i sektioner.
 
@@ -66,6 +68,7 @@ En bok kan t.ex. användas
 * För att visa litteratur för enskilda studiemoment
 * Som en personalhandbok
 * Som en portfölj/presentation av studentarbeten';
+$string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Böcker';
 $string['movechapterdown'] = 'Flytta kapitel ner "{$a}"';
 $string['movechapterup'] = 'Flytta kapitel upp "{$a}"';

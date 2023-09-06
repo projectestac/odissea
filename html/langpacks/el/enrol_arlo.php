@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_arlo', language 'el', version '3.11'.
+ * Strings for component 'enrol_arlo', language 'el', version '4.1'.
  *
  * @package     enrol_arlo
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accessed'] = 'Έγινε πρόσβαση';
-$string['alert'] = 'Συναγερμική ειδοποίηση';
+$string['alert'] = 'Επαγρύπνηση';
 $string['allowcompletedevents'] = 'Επιτρέπονται ολοκληρωμένα γεγονότα';
 $string['allowcompletedevents_help'] = 'Ολοκληρωμένα γεγονότα θα μπορούν να επιλεγούν και να συνδεθούν με ένα στιγμιότυπο εγγραφής.';
 $string['allowcompletedevents_text'] = 'Μπορούν να υπάρχουν σύνδεσμοι προς ολοκληρωμένα γεγονότα.';

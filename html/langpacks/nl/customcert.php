@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'nl', version '3.11'.
+ * Strings for component 'customcert', language 'nl', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -102,7 +102,6 @@ $string['height'] = 'Hoogte';
 $string['height_help'] = 'Dit is de hoogte van het certificaat pdf in mm. Ter referentie: een vel A4-papier is 297 mm hoog en een brief is 279 mm hoog.';
 $string['invalidcode'] = 'Ongeldige code opgegeven.';
 $string['invalidcolour'] = 'Ongeldige kleur gekozen. Voer een geldige HTML-kleurnaam in, of een zescijferige of driecijferige hexadecimale kleur.';
-$string['invalidelementwidth'] = 'Voer een positief getal in.';
 $string['invalidheight'] = 'De hoogte moet een geldig getal zijn groter dan 0.';
 $string['invalidmargin'] = 'De marge moet een geldig getal zijn groter dan 0.';
 $string['invalidposition'] = 'Selecteer een positief getal voor positie {$a}.';
@@ -119,6 +118,7 @@ $string['managetemplatesdesc'] = 'Deze link brengt je naar een nieuw scherm waar
 $string['modify'] = 'Aanpassen';
 $string['modulename'] = 'Custom certificaat';
 $string['modulename_help'] = 'Deze module maakt het mogelijk om dynamisch PDF-certificaten te genereren.';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['modulenameplural'] = 'Custom certificaten';
 $string['mycertificates'] = 'Mijn certificaten';
 $string['mycertificatesdescription'] = 'Dit zijn de certificaten die u hebt gekregen via e-mail of handmatig downloaden.';

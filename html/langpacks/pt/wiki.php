@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'pt', version '3.11'.
+ * Strings for component 'wiki', language 'pt', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -127,10 +127,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão do Wiki';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na profundidade cognitiva alcançada pelo aluno numa atividade de Wiki.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Wiki';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Wiki durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização do Wiki';
 $string['indicator:socialbreadth_help'] = 'Este indicador baseia-se na amplitude social alcançada pelo aluno numa atividade de Wiki.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Wiki';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Wiki durante esse intervalo de análise (Níveis = Sem participação, Participante individual, Participante com outros)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = 'Não existem página de wiki individual';
 $string['insertcomment'] = 'Inserir comentário';
 $string['insertimage'] = 'Inserir uma imagem…';

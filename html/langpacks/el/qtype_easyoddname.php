@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyoddname', language 'el', version '3.11'.
+ * Strings for component 'qtype_easyoddname', language 'el', version '4.1'.
  *
  * @package     qtype_easyoddname
  * @category    string
@@ -36,7 +36,7 @@ $string['caseorientfalse'] = 'Λάθος';
 $string['caseorienttrue'] = 'Σωστό';
 $string['configeasyoddnameoptions'] = '';
 $string['correctansweris'] = 'Η σωστή απάντηση είναι: {$a}.';
-$string['correctanswers'] = '<b>Ιδρύματα</b>';
+$string['correctanswers'] = '<b>Οδηγίες</b>';
 $string['insert'] = 'Εισαγωγή από τον επεξεργαστή κειμένου';
 $string['insertfromeditor'] = 'Εισαγωγή από τον επεξεργαστή κειμένου';
 $string['instructions'] = '';
@@ -44,6 +44,7 @@ $string['javaneeded'] = 'Για να χρησιμοποιήσετε αυτή τ�
 $string['notenoughanswers'] = 'Αυτός ο τύπος ερώτησης απαιτεί τουλάχιστον {$a} απαντήσεις';
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
 $string['pluginname'] = 'Ονοματολογία με μεταφορά και απόθεση';
+$string['pluginname_link'] = 'question/type/easyoddname';
 $string['pluginnameadding'] = 'Προσθήκη ερώτησης Ονοματολογίας με μεταφορά και απόθεση';
 $string['pluginnameediting'] = 'Επεξεργασία ερώτησης Ονοματολογίας με μεταφορά και απόθεση';
 $string['prefixes'] = 'Προθέματα';

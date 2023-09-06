@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'nl', version '3.11'.
+ * Strings for component 'editor_tinymce', language 'nl', version '4.1'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -600,7 +600,7 @@ $string['paste:selectall_desc'] = 'Alles selecteren';
 $string['paste_dlg:text_linebreaks'] = 'Regelafbreking bewaren';
 $string['paste_dlg:text_title'] = 'Gebruik Ctrl+v op je toetsenbord om tekst in het venster te plakken.';
 $string['paste_dlg:word_title'] = 'Gebruik Ctrl+v op je toetsenbord om tekst in het venster te plakken.';
-$string['pluginname'] = 'TinyMCE HTML-editor';
+$string['pluginname'] = 'TinyMCE HTML-editor (verouderd)';
 $string['preview:preview_desc'] = 'Voorbeeld';
 $string['print:print_desc'] = 'Afdrukken';
 $string['privacy:metadata'] = 'DeTinyMCE HTML-editor-plugin bewaart geen persoonlijke gegevens.';

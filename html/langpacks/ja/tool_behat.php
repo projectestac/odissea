@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'ja', version '3.11'.
+ * Strings for component 'tool_behat', language 'ja', version '4.1'.
  *
  * @package     tool_behat
  * @category    string
@@ -27,14 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'この管理ツールは開発者およびテスト作成者のMoodle機能が記述された.featureファイル作成に役立ちます。.featureファイルは自動実行されます。.featureファイルで使用できるステップ定義を以下に一覧表示します。';
 $string['allavailablesteps'] = 'すべての利用可能なステップ定義';
-$string['errorapproot'] = '$CFG->behat_ionic_dirrootは有効なMoodleアプリ開発者インストールを指定していません。';
 $string['errorbehatcommand'] = 'behat CLIコマンドの実行中にエラーが発生しました。CLIで「{$a} --help」を手動実行して問題を調査してください。';
 $string['errorcomposer'] = 'Composer依存関係がインストールされていません。';
 $string['errordataroot'] = '$CFG->behat_datarootが設定されていないか有効ではありません。';
 $string['errorsetconfig'] = 'config.php内で「$CFG->behat_dataroot」「$CFG->behat_prefix」および「$CFG->behat_wwwroot」を設定する必要があります。';
-$string['erroruniqueconfig'] = '「$CFG->behat_dataroot」「$CFG->behat_prefix」および「$CFG->behat_wwwroot」の値は「$CFG->dataroot」「$CFG->prefix」「$CFG->wwwroot」「$CFG->phpunit_dataroot」および「$CFG->phpunit_prefix」の値と異なる必要があります。';
+$string['erroruniqueconfig'] = '「$CFG->behat_dataroot」「$CFG->behat_prefix」「$CFG->behat_wwwroot」の値は「$CFG->dataroot」「$CFG->prefix」「$CFG->wwwroot」「$CFG->phpunit_dataroot」「$CFG->phpunit_prefix」の値と異なる必要があります。 <br />また、「$CFG->behat_prefix」が同じ場合、「$CFG->behat_dbname」または「$CFG->behat_dbhost」は「$CFG->phpunit_dbname」「$CFG->phpunit_dbhost」「$CFG->dbname」「$CFG->dbhost」と異なる必要があります。';
 $string['fieldvalueargument'] = 'フィールド値変数';
-$string['fieldvalueargument_help'] = 'この変数にはフィールド値を設定してください。シンプルなチェックボックス、テキストエリア、セレクトまたは複雑な日付選択を含む数多くのフィールドタイプがあります。期待されるフィールド値の詳細に関して<a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a>をご覧ください。';
+$string['fieldvalueargument_help'] = 'この変数にはフィールド値を設定してください。シンプルなチェックボックス、テキストエリア、セレクトまたは複雑な日付選択を含む数多くのフィールドタイプがあります。期待されるフィールド値の詳細に関して<a href="https://moodledev.io/general/development/tools/behat" target="_blank">Acceptance_testing</a>をご覧ください。';
 $string['giveninfo'] = 'Given - 環境セットアップ作業';
 $string['infoheading'] = '情報';
 $string['installinfo'] = 'インストールおよびテスト実行情報に関して {$a} をご覧ください。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forumreport_summary', language 'ar', version '3.11'.
+ * Strings for component 'forumreport_summary', language 'ar', version '4.1'.
  *
  * @package     forumreport_summary
  * @category    string
@@ -42,7 +42,7 @@ $string['filter:groupsbuttonlabel'] = 'إفتح مرشح المجموعات';
 $string['filter:groupscountall'] = 'المجموعات (الكل)';
 $string['filter:groupscountnumber'] = 'المجموعات ({$a})';
 $string['filter:groupsname'] = 'المجموعات';
-$string['forumselectcourseoption'] = 'كل المنتديات في المقرر الدراسي';
+$string['forumselectcourseoption'] = 'كل المنتديات في المساق';
 $string['forumselectlabel'] = 'تم تحديد المنتدى';
 $string['latestpost'] = 'المنشور الأحدث';
 $string['nodetitle'] = 'تقرير ملخص المنتدى';

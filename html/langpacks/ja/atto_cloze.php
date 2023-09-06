@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_cloze', language 'ja', version '3.11'.
+ * Strings for component 'atto_cloze', language 'ja', version '4.1'.
  *
  * @package     atto_cloze
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '穴埋め問題 (Cloze) エディタ';
-$string['privacy:metadata'] = 'Atto穴埋め問題 (Cloze) エディタはどのような個人データも保存しません。';
+$string['privacy:metadata'] = 'Atto穴埋め問題 (Cloze) エディタはいかなる個人データも保存しません。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'es', version '3.11'.
+ * Strings for component 'resource', language 'es', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -51,6 +51,7 @@ Las opciones pueden incluir:
 * Forzar descarga - Se le pregunta al usuario si desea descargar el fichero
 * Abrir - Sólo se muestra la dirección en la ventana del navegador
 * En ventana emergente - La URL se muestra en una ventana nueva del navegador sin menús y sin barra de direcciones';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = 'Elegir tipo (desafortunadamente no todos los tipos funcionan en todos los archivos).';
 $string['dnduploadresource'] = 'Crear recurso archivo';
 $string['encryptedcode'] = 'Código encriptado';
@@ -64,10 +65,12 @@ $string['indicator:cognitivedepth'] = 'Archivo cognitivo';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Archivo.';
 $string['indicator:cognitivedepthdef'] = 'Archivo cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por los recursos de Archivo durante este intervalo de análisis (Niveles = Sin vista, Ver)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Archivo social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Archivo.';
 $string['indicator:socialbreadthdef'] = 'Archivo social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por los recursos de Archivo durante este intervalo de análisis (Niveles = Sin participación, Participante solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migración de archivo antiguo de curso';
 $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Terminado';
@@ -82,6 +85,7 @@ Un Archivo puede utilizarse para
 * Compartir presentaciones utilizadas en clase
 * Incluire una mini-web como recurso del curso
 * Proveer a los estudiantes de borradores de archivos para que los editen y los envíen en sus tareas';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Archivos';
 $string['notmigrated'] = 'Este tipo de recurso heredado ({$a}) no ha sido trasladado aún.';
 $string['optionsheader'] = 'Mostrar opciones';

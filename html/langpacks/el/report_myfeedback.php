@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_myfeedback', language 'el', version '3.11'.
+ * Strings for component 'report_myfeedback', language 'el', version '4.1'.
  *
  * @package     report_myfeedback
  * @category    string
@@ -86,7 +86,7 @@ $string['gradetblheader_availablegrade'] = 'Διαθέσιμος βαθμός';
 $string['gradetblheader_course'] = 'Μάθημα';
 $string['gradetblheader_course_info'] = 'Το όνομα και ο σύνδεσμος προς το μάθημα που περιέχει την αξιολόγηση.';
 $string['gradetblheader_duedate'] = 'Οφειλόμενη ημερομηνία';
-$string['gradetblheader_duedate_info'] = 'Η ημερομηνία μετά την οποία η ανάθεση έγινε καθυστερημένη (αν εφαρμόζεται).';
+$string['gradetblheader_duedate_info'] = 'Η ημερομηνία μετά την οποία η αξιολόγηση/ανάθεση έγινε καθυστερημένη (αν εφαρμόζεται).';
 $string['gradetblheader_feedback'] = 'Πλήρης ανατροφοδότηση';
 $string['gradetblheader_generalfeedback'] = 'Γενική ανατροφοδότηση';
 $string['gradetblheader_grade'] = 'Βαθμός';
@@ -109,7 +109,7 @@ $string['livedomaindefault'] = 'https://';
 $string['livedomaininfo'] = 'Το πλήρες όνομα τομέα (FQDN) μαζί με το http/https';
 $string['manual_gradeitem'] = 'Χειροκίνητο στοιχείο';
 $string['markingguide'] = 'Οδηγός βαθμολόγησης';
-$string['meet_tutor'] = 'Συναντήστε τον εκπαιδευτή σας';
+$string['meet_tutor'] = 'Συναντήστε τον εκπαιδευτικό σας';
 $string['mod_tutor_exportheader'] = 'Όνομα Μαθήματος/Χρήστη Όνομα,Επώνυμο,Αξιολογήσεις,Μη-υποβολές,Καθυστερημένες υποβολές,Βαθμολογημένες αξιολογήσεις,Χαμηλοί βαθμοί';
 $string['mod_tutor_filename'] = 'ΑνατροφοδοτήσειςΜου_αρθρ_εκπ_αναφορά';
 $string['mod_tutor_report'] = 'Αναφορά ταμπλό εκπαιδευτικού αρθρώματος';
@@ -176,8 +176,8 @@ $string['return-2-dash'] = 'Επιστροφή στο ταμπλό μου';
 $string['review'] = 'εξέταση';
 $string['reviewaattempt'] = 'εξέταση {$a} προσπάθειας';
 $string['reviewlastof'] = 'εξέταση τελευταίας από {$a} προσπάθειες';
-$string['rubric'] = '';
-$string['rubrictext'] = '';
+$string['rubric'] = 'εμφάνιση ρουμπρίκας';
+$string['rubrictext'] = 'Ρουμπρίκα';
 $string['savefeedback'] = 'Αποθήκευση ανατροφοδότησης και κλείσιμο';
 $string['savenotes'] = 'Αποθήκευση σημειώσεων και κλείσιμο';
 $string['search'] = 'Αναζήτηση';

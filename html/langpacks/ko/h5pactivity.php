@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'ko', version '3.11'.
+ * Strings for component 'h5pactivity', language 'ko', version '4.1'.
  *
  * @package     h5pactivity
  * @category    string
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['answer_fail'] = '오답';
 $string['answer_incorrect'] = '답이 틀렸습니다.';
 $string['answer_pass'] = '정답';
+$string['modulename_link'] = 'mod/h5pactivity/view';
 $string['startdate'] = '시작 날짜';
 $string['totalscore'] = '총점';

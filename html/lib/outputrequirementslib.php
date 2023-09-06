@@ -314,12 +314,17 @@ class page_requirements_manager {
 
             // It is possible that the $page->context is null, so we can't use $page->context->id.
             $contextid = null;
+            $contextinstanceid = null;
             if (!is_null($page->context)) {
                 $contextid = $page->context->id;
+                $contextinstanceid = $page->context->instanceid;
+                $courseid = $page->course->id;
+                $coursecontext = context_course::instance($courseid);
             }
 
             $this->M_cfg = array(
                 'wwwroot'               => $CFG->wwwroot,
+                'homeurl'               => $page->navigation->action,
                 'sesskey'               => sesskey(),
                 'sessiontimeout'        => $CFG->sessiontimeout,
                 'sessiontimeoutwarning' => $CFG->sessiontimeoutwarning,
@@ -331,7 +336,10 @@ class page_requirements_manager {
                 'admin'                 => $CFG->admin,
                 'svgicons'              => $page->theme->use_svg_icons(),
                 'usertimezone'          => usertimezone(),
+                'courseId'              => isset($courseid) ? (int) $courseid : 0,
+                'courseContextId'       => isset($coursecontext) ? $coursecontext->id : 0,
                 'contextid'             => $contextid,
+                'contextInstanceId'     => (int) $contextinstanceid,
                 'langrev'               => get_string_manager()->get_revision(),
                 'templaterev'           => $this->get_templaterev()
             );
@@ -712,7 +720,7 @@ class page_requirements_manager {
 
         if ($url instanceof moodle_url) {
             return $url;
-        } else if (strpos($url, '/') === 0) {
+        } else if (null !== $url && strpos($url, '/') === 0) {
             // Fix the admin links if needed.
             if ($CFG->admin !== 'admin') {
                 if (strpos($url, "/admin/") === 0) {
@@ -1033,11 +1041,12 @@ class page_requirements_manager {
     public function js_call_amd($fullmodule, $func = null, $params = array()) {
         global $CFG;
 
-        list($component, $module) = explode('/', $fullmodule, 2);
+        $modulepath = explode('/', $fullmodule);
 
-        $component = clean_param($component, PARAM_COMPONENT);
-        $module = clean_param($module, PARAM_ALPHANUMEXT);
-        $modname = "{$component}/{$module}";
+        $modname = clean_param(array_shift($modulepath), PARAM_COMPONENT);
+        foreach ($modulepath as $module) {
+            $modname .= '/' . clean_param($module, PARAM_ALPHANUMEXT);
+        }
 
         $functioncode = [];
         if ($func !== null) {
@@ -1614,14 +1623,6 @@ EOF;
         // First the skip links.
         $output = $renderer->render_skip_links($this->skiplinks);
 
-        // The polyfill needs to load before the other JavaScript in order to make sure
-        // that we have access to the functions it provides.
-        if (empty($CFG->cachejs)) {
-            $output .= html_writer::script('', $this->js_fix_url('/lib/babel-polyfill/polyfill.js'));
-        } else {
-            $output .= html_writer::script('', $this->js_fix_url('/lib/babel-polyfill/polyfill.min.js'));
-        }
-
         // Include the Polyfills.
         $output .= html_writer::script('', $this->js_fix_url('/lib/polyfills/polyfill.js'));
 
@@ -1668,6 +1669,7 @@ EOF;
         $this->js_call_amd('core/log', 'setConfig', array($logconfig));
         // Add any global JS that needs to run on all pages.
         $this->js_call_amd('core/page_global', 'init');
+        $this->js_call_amd('core/utility');
 
         // Call amd init functions.
         $output .= $this->get_amd_footercode();

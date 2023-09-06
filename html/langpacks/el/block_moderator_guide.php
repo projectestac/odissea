@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_moderator_guide', language 'el', version '3.11'.
+ * Strings for component 'block_moderator_guide', language 'el', version '4.1'.
  *
  * @package     block_moderator_guide
  * @category    string
@@ -36,7 +36,7 @@ $string['configtitle'] = 'Τίτλος';
 $string['confirmdeleteguide'] = 'Επιβεβαίωση διαγραφής οδηγού';
 $string['confirmdeleteguidetext'] = 'Σίγουρα θέλετε διαγραφή αυτού του οδηγού: {$a->name} ;';
 $string['confirmdeletetemplate'] = 'Επιβεβαίωση διαγραφής υποδείγματος';
-$string['confirmdeletetemplatetext'] = 'Σίγουρα θέλετε να διαγραφούν αυτά τα υποδείγματα: {$a->name};';
+$string['confirmdeletetemplatetext'] = 'Σίγουρα θέλετε να διαγραφεί αυτό το υπόδειγμα: {$a->name};';
 $string['course'] = 'Μάθημα';
 $string['defaultguidename'] = 'Προεπιλεγμένο όνομα οδηγού';
 $string['delete'] = 'Διαγραφή';
@@ -48,7 +48,7 @@ $string['guides'] = 'Οδηγοί';
 $string['hide'] = 'Απόκρυψη';
 $string['manageguides'] = 'Διαχείριση οδηγών';
 $string['managetemplates'] = 'Διαχείριση υποδειγμάτων';
-$string['moderation'] = 'Τμήμα συντονισμού';
+$string['moderation'] = 'Ενότητα συντονισμού';
 $string['moderator_guide:addinstance'] = 'Δυνατότητα προσθήκης ενός στιγμιοτύπου μπλοκ οδηγού συντονιστή';
 $string['moderator_guide:cancomplete'] = 'Μπορεί να επισημάνει έναν οδηγό ως πλήρη';
 $string['moderator_guide:canreview'] = 'Μπορεί να εξετάσει έναν οδηγό';
@@ -63,6 +63,6 @@ $string['previewguide'] = 'Προεπισκόπηση';
 $string['profilerestriction'] = 'Περιορισμός κατά προσαρμοσμένο πεδίο προφίλ';
 $string['reviewcomment'] = 'Εξέταση σχολίου';
 $string['reviewed'] = 'Εξετάστηκε';
-$string['sectionx'] = 'Τμήμα {$a->id}';
+$string['sectionx'] = 'Ενότητα {$a->id}';
 $string['show'] = 'Εμφάνιση';
 $string['template'] = 'Υπόδειγμα';

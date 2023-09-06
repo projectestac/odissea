@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'eu', version '3.11'.
+ * Strings for component 'qtype_ddimageortext', language 'eu', version '4.1'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -42,6 +42,8 @@ $string['dropbackground'] = 'Atzeko planoko irudia, bertara markatzaileak eramat
 $string['dropzone'] = '{$a} askatze-eremua';
 $string['dropzoneheader'] = 'Askatze-eremuak';
 $string['formerror_disallowedtags'] = 'Soilik "{$a}" etiketak onartzen dira hartu eta testu eramangarri honetan.';
+$string['formerror_dragrequired'] = 'Galdera honetara gutxienez elementu eramangarri bat gehitu behar duzu.';
+$string['formerror_droprequired'] = 'Gutxienez askatze-eremu bat zehaztu behar duzu galdera honentzako.';
 $string['formerror_multipledraginstance'] = '{$a} irudia aukera zuzen gisa aukeratu duzu askatze-eremu baten baino gehiagotan, baina ez dago markatuta mugarik gabe arrastatu daiteken elementu gisa.';
 $string['formerror_multipledraginstance2'] = 'Irudi hau aukera zuzen gisa aukeratu duzu askatze-eremu baten baino gehiagotan, baina ez dago markatuta mugarik gabe arrastatu daiteken elementu gisa.';
 $string['formerror_noallowedtags'] = 'HTML etiketak ez dira onartzen testu honetan irudi eramangarri baten testu alternatiboa delako.';
@@ -59,6 +61,7 @@ $string['nolabel'] = 'Ez dago testurik etiketan';
 $string['pleasedraganimagetoeachdropregion'] = 'Zure erantzuna osatu gabe dago; mesedez, eraman elementu bat askatze-eremu bakoitzera.';
 $string['pluginname'] = 'Hartu eta eraman irudira';
 $string['pluginname_help'] = 'Hartu era eraman irudira motako galderek ikasleei irudi edo testuak hartu eta atzeko planoko irudian zehaztuta dauden askatze-eremuetara eramatea eskatzen diete. Elementu eramangarriak taldekatu daitezke talde bakoitzeko elementu guztiak askatze-eremuen kolore berdina izan dezaten. \'Mugarik gabe\' gisa markatutako elementu eramangarriak eremu bat baino gehiagotara eraman daitezke.';
+$string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnameadding'] = 'Hartu eta eraman irudira motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman irudira motako galdera editatzen';
 $string['pluginnamesummary'] = 'Irudiak edo testu-etiketak hartu eta atzeko planoko irudiko askatze-eremuetara eramaten dira.

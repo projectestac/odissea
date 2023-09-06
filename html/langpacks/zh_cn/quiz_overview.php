@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'zh_cn', version '3.11'.
+ * Strings for component 'quiz_overview', language 'zh_cn', version '4.1'.
  *
  * @package     quiz_overview
  * @category    string
@@ -70,7 +70,9 @@ $string['regradecomplete'] = '重新计分已经顺利完成';
 $string['regradedsuccessfullyxofy'] = '已成功重新评分（{$a->done}/{$a->count}）';
 $string['regradeheader'] = '正在重新评分';
 $string['regradeselected'] = '重新评分所选的试卷';
+$string['regradingattemptissue'] = '插槽 {$a->slot}: {$a->reason}';
 $string['regradingattemptxofy'] = '重新计分({$a->done}/{$a->count})';
+$string['regradingattemptxofyproblem'] = '以下问题无法由{$a->name} (id {$a->attemptid})在尝试{$a->attemptnum}时重新评分';
 $string['regradingattemptxofywithdetails'] = '重新评分({$a->done}/{$a->count}) -  {$a->name} (id {$a->attemptid})完成的尝试{$a->attemptnum}';
 $string['show'] = '包括';
 $string['showattempts'] = '只显示/下载试卷';

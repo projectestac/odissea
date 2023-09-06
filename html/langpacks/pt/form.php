@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'pt', version '3.11'.
+ * Strings for component 'form', language 'pt', version '4.1'.
  *
  * @package     form
  * @category    string
@@ -43,7 +43,7 @@ $string['err_nopunctuation'] = 'Não pode inserir pontuação neste campo.';
 $string['err_numeric'] = 'Tem de inserir um número neste campo.';
 $string['err_positiveint'] = 'Tem de inserir um número maior que 0.';
 $string['err_rangelength'] = 'Tem de inserir entre {$a->format[0]} e {$a->format[1]} caracteres neste campo.';
-$string['err_required'] = 'Tem de indicar um valor para este campo';
+$string['err_required'] = 'Tem de indicar um valor para este campo.';
 $string['err_wrappingwhitespace'] = 'O valor não pode iniciar ou terminar com espaço em branco.';
 $string['err_wrongfileextension'] = 'Alguns ficheiros ({$a->wrongfiles}) não foram carregados. Apenas são permitidos ficheiros do tipo {$a->allowlist}.';
 $string['filesofthesetypes'] = 'Tipos de ficheiro permitidos:';
@@ -60,7 +60,7 @@ $string['minute'] = 'Minuto';
 $string['miscellaneoussettings'] = 'Outras opções';
 $string['modstandardels'] = 'Opções gerais do módulo';
 $string['month'] = 'Mês';
-$string['mustbeoverriden'] = 'Abstract form_definition() método na classe {$a} deve ser substituído. Por favor, corrija o código.';
+$string['mustbeoverriden'] = 'O método Abstract form_definition() na classe {$a} deve ser substituído. Por favor, corrija o código.';
 $string['newvaluefor'] = 'Novo valor para {$a}';
 $string['nomethodforaddinghelpbutton'] = 'Não existe nenhum método para adicionar um botão de ajuda ao elemento de formulário {$a->name} (class {$a->classname})';
 $string['nonexistentformelements'] = 'Tentativa de adicionar botões de ajuda a elementos de formulário não existentes: {$a}';

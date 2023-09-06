@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_quizanalytics', language 'ar', version '3.11'.
+ * Strings for component 'gradereport_quizanalytics', language 'ar', version '4.1'.
  *
  * @package     gradereport_quizanalytics
  * @category    string
@@ -28,9 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['attemptsummarydes'] = 'هذا الرسم البياني يصور كيفية نجاحك في محاولتك.';
 $string['avgscore'] = 'متوسط الدرجة';
 $string['bestscore'] = 'أفضل درجة';
-$string['cutoffscore'] = 'درجة التوقف';
-$string['fbsharetitle'] = 'إضافة عنوان';
-$string['fbsharetitledes'] = 'يرجى إضافة النص الذي تريد إظهاره كعنوان للمنشورات المشاركة في فيسبوك.';
 $string['hardestquestion'] = 'أصعب سؤال';
 $string['lowestscore'] = 'أدنى درجة';
 $string['noofpartialcorrect'] = 'عدد الإجابات الصحيحة الجزئية';
@@ -42,11 +39,8 @@ $string['noquizfound'] = 'لم يتم العثور على أي اختبار!';
 $string['peerscores'] = 'درجات النظراء';
 $string['pluginname'] = 'تحليلات الاختبار';
 $string['questionspercategory'] = 'الأسئلة حسب الصنف';
-$string['quizanalytics:view'] = 'معاينة تقرير تحليل الاختبار';
 $string['quizname'] = 'اسم الاختبار';
 $string['score'] = 'الدرجة';
-$string['tab4'] = 'درجات \'الأسئلة\' وإحصائياتها';
-$string['tab4subtab1'] = 'الدرجات حسب النسب المئوية (كل المستخدمين)';
 $string['timechartdes'] = 'هذا الرسم البياني يظهر ما أحرزه نظراؤك من درجات مقارنة بك.';
 $string['totalquizattempt'] = 'إجمالي المحاولات';
 $string['userscore'] = 'درجة المستخدم';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'it', version '3.11'.
+ * Strings for component 'completion', language 'it', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Voto minimo';
+$string['achievingpassinggrade'] = 'Ottenere la sufficienza';
 $string['activities'] = 'Attività';
 $string['activitiescompleted'] = 'Completamento attività';
 $string['activitiescompletednote'] = 'Nota: affinché un\'attività possa comparire nell\'elenco delle attività è necessario impostare i relativi criteri di completamento';
@@ -36,6 +37,7 @@ $string['activityaggregation_any'] = 'Deve essere completata ALMENO UNA delle at
 $string['activitycompletion'] = 'Completamento attività';
 $string['activitycompletionupdated'] = 'Le modifiche sono state salvate';
 $string['activitygradenotrequired'] = 'Valutazione non richiesta';
+$string['activitygradetopassnotset'] = 'Per questa attività non è stata impostata una sufficienza. È possibile impostarla nella sezione Valutazione disponibile nelle impostazioni dell\'attività stessa.';
 $string['affectedactivities'] = 'Le modifiche riguarderanno le seguenti  <b>{$a}</b> attività o risorse:';
 $string['aggregationmethod'] = 'Metodo di aggregazione';
 $string['all'] = 'Tutti';
@@ -83,6 +85,7 @@ $string['completion-y'] = 'Completato';
 $string['completion-y-override'] = 'Completato: (impostato da {$a})';
 $string['completion_automatic'] = 'Considera l\'attività completata in base alle condizioni seguenti';
 $string['completion_help'] = 'Il completamento delle attività consente di tenere traccia delle attività svolte, sia manualmente sia automaticamente, al soddisfacimento di condizioni impostate. È possibile impostare più condizioni, che dovranno essere tutte soddisfatte affinché l\'attività sia considerata completata.';
+$string['completion_link'] = 'activity/completion';
 $string['completion_manual'] = 'Gli studenti possono spuntare manualmente l\'attività per indicarla completata';
 $string['completion_none'] = 'Non tracciare il completamento delle attività';
 $string['completionactivitydefault'] = 'Utilizza il default delle attività';
@@ -106,6 +109,9 @@ $string['completionnotenabledforcourse'] = 'Il completamento non è abilitato in
 $string['completionnotenabledforsite'] = 'Il completamento non è abilitato in questo sito';
 $string['completionondate'] = 'Data';
 $string['completionondatevalue'] = 'Data nella quale il corso sarà contrassegnato come completato';
+$string['completionpassgrade'] = 'Valutazione sufficiente';
+$string['completionpassgrade_desc'] = 'Lo studente deve ottenere una valutazione sufficiente per completare l\'attività';
+$string['completionpassgrade_help'] = 'L\'attività sarà considerata completata se lo studente ottiene la sufficienza.';
 $string['completionsettingslocked'] = 'Impostazioni di completamento bloccate';
 $string['completionupdated'] = 'Il completamento dell\'attività <b>{$a}</b> è stato aggiornato';
 $string['completionusegrade'] = 'Ricevere una valutazione';
@@ -125,6 +131,7 @@ $string['coursecompleted'] = 'Corso completato';
 $string['coursecompletedmessage'] = '<p>Congratulazioni!</p><p>Hai appena completato il corso <a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Criteri di completamento';
 $string['coursecompletioncondition'] = 'Criterio: {$a}';
+$string['coursecompletionnavigation'] = 'Navigazione terziaria del completamento corso';
 $string['coursegrade'] = 'Valutazione del corso';
 $string['coursesavailable'] = 'Corsi disponibili';
 $string['coursesavailableexplaination'] = 'Nota: affinché un corso possa comparire nell\'elenco dei corsi disponibili è necessario impostare i relativi criteri di completamento';
@@ -136,13 +143,16 @@ $string['csvdownload'] = 'Scarica nel formato per foglio elettronico (UTF-8 .csv
 $string['datepassed'] = 'Data di superamento';
 $string['days'] = 'Giorni';
 $string['daysoftotal'] = '{$a->days} su {$a->total}';
+$string['daysuntilcompletion'] = 'Giorni fino al completamento';
 $string['defaultcompletion'] = 'Default del completamento attività';
 $string['defaultcompletionupdated'] = 'Le modifiche sono state salvate';
 $string['deletecompletiondata'] = 'Elimina dati di completamento';
 $string['dependencies'] = 'Prerequisiti';
 $string['dependenciescompleted'] = 'Completamento di altri corsi';
 $string['detail_desc:receivegrade'] = 'Ricevere una valutazione';
+$string['detail_desc:receivepassgrade'] = 'Ottenere la sufficienza';
 $string['detail_desc:view'] = 'Visualizzare';
+$string['done'] = 'Fatto';
 $string['editcoursecompletionsettings'] = 'Modifica criteri di completamento del corso';
 $string['enablecompletion'] = 'Traccia il completamento';
 $string['enablecompletion_help'] = 'Abilita la funzionalità di tracciamento del completamento dei corsi e delle attività. Si consiglia di abilitare questa opzione in modo che vengano visualizzati dati significativi nella panoramica del corso sulla Dashboard.';
@@ -160,6 +170,7 @@ $string['eventcoursecompletionupdated'] = 'Aggiornamento completamento corso';
 $string['eventcoursemodulecompletionupdated'] = 'Aggiornamento completamento attività del corso';
 $string['eventdefaultcompletionupdated'] = 'Aggiornamento default del completamento delle attività del corso';
 $string['excelcsvdownload'] = 'Scarica in formato compatibile con Excel (.csv)';
+$string['failed'] = 'Non superato';
 $string['fraction'] = 'Frazione';
 $string['graderequired'] = 'Valutazione minima';
 $string['gradexrequired'] = 'È richiesto {$a}';
@@ -196,13 +207,14 @@ $string['privacy:metadata:gradefinal'] = 'Valutazione finale ottenuta per il com
 $string['privacy:metadata:overrideby'] = 'ID utente della persona che ha modificato il completamento attività';
 $string['privacy:metadata:reaggregate'] = 'Indicatore di ri-aggregazione del completamento del corso.';
 $string['privacy:metadata:timecompleted'] = 'Orario di completamento del corso.';
+$string['privacy:metadata:timecreated'] = 'Orario di creazione del completamento dell’attività';
 $string['privacy:metadata:timeenrolled'] = 'Orario di iscrizione al corso';
 $string['privacy:metadata:timemodified'] = 'Orario di modifica del completamento dell\'attività.';
 $string['privacy:metadata:timestarted'] = 'Orario di inizio del corso.';
 $string['privacy:metadata:unenroled'] = 'Indicatore di disiscrizione dell\'utente dal corso.';
 $string['privacy:metadata:userid'] = 'ID utente della persona che ha dati di completamento del corso e delle attività';
 $string['privacy:metadata:viewed'] = 'Indicatore di visualizzazione dell\'attività.';
-$string['progress'] = 'Situazione dello studente';
+$string['progress'] = 'Stato di avanzamento';
 $string['progress-title'] = '{$a->user}, {$a->activity}: {$a->state} {$a->date}';
 $string['progresstotal'] = 'Stato di avanzamento: {$a->complete} / {$a->total}';
 $string['recognitionofpriorlearning'] = 'Riconoscimento di corsi precedenti';
@@ -224,6 +236,8 @@ $string['selfcompletion'] = 'Auto completamento';
 $string['showcompletionconditions'] = 'Visualizza criteri di completamento attività';
 $string['showcompletionconditions_help'] = 'I criteri di completamento attività vengono sempre visualizzati nelle pagina delle attività. L\'impostazione consente di visualizzare i criteri di completamento anche nella pagina home del corso sotto ciascuna attività.';
 $string['showinguser'] = 'Stato utente';
+$string['timecompleted'] = 'Orario di completamento';
+$string['todo'] = 'Da fare';
 $string['unenrolingfromcourse'] = 'Disiscrizione dal corso';
 $string['unenrolment'] = 'Disiscrizione';
 $string['unit'] = 'Unità';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'zh_cn', version '3.11'.
+ * Strings for component 'search', language 'zh_cn', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -43,6 +43,7 @@ $string['confirm_delete'] = '您确定要删除 {$a} 的索引吗？ 在搜索�
 $string['confirm_deleteall'] = '您确定要立即删除所有索引内容吗？ 在该站点再次被编入索引之前，用户将不会获得搜索结果。';
 $string['confirm_indexall'] = '您确定要立即更新索引内容吗？ 如果大量内容需要索引，这可能需要很长时间。 对于实时服务器，您通常应该将索引留给“全局搜索索引”计划任务。';
 $string['confirm_reindexall'] = '您确定现在要重新索引所有网站内容吗？ 如果您的网站包含大量内容，这将需要很长时间，并且用户可能在完成之前无法获得完整的搜索结果。';
+$string['content:courserole'] = '{$a->course}中的角色{$a->role}';
 $string['core-all'] = '全部';
 $string['core-course-content'] = '课程内容';
 $string['core-courses'] = '培训班';
@@ -115,6 +116,7 @@ $string['schemaversionunknown'] = '搜索引擎不知道当前的架构版本。
 $string['score'] = '得分';
 $string['search'] = '搜索';
 $string['search:course'] = '课程';
+$string['search:course_teacher'] = '课程教师';
 $string['search:customfield'] = '课程自定义字段';
 $string['search:message_received'] = '消息 - 收到';
 $string['search:message_sent'] = '消息 - 已发送';
@@ -136,6 +138,7 @@ $string['thesewordsmustappear'] = '这些关键字必须出现';
 $string['thesewordsmustnotappear'] = '这些关键字不能出现';
 $string['title'] = '标题';
 $string['tofetchtheseresults'] = '获得这些结果';
+$string['topresults'] = '最佳结果';
 $string['totalsize'] = '总大小';
 $string['totime'] = '修改时间早于';
 $string['type'] = '类型';

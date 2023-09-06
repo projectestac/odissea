@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'sv', version '3.11'.
+ * Strings for component 'block_timeline', language 'sv', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Alla';
-$string['ariadayfilter'] = 'Filtrera händelser på tidslinjen';
+$string['ariadayfilter'] = 'Filtrera tidslinje efter datum';
 $string['ariadayfilteroption'] = '{$a} val för filter';
 $string['ariaeventlistitem'] = 'Deadline för {$a->name} activity in {$a->course}:  {$a->date}';
 $string['ariaeventlistpagelimit'] = 'Visa {$a} aktiviteter per sida';
@@ -35,18 +35,20 @@ $string['ariaeventlistpaginationnavdates'] = 'Sidindelning för tidslinjeaktivit
 $string['ariaviewselector'] = 'Sotera händelser på tidslinjen';
 $string['ariaviewselectoroption'] = '{$a} val för sortering';
 $string['duedate'] = 'Förfallodatum';
-$string['morecourses'] = 'Fler kurser';
+$string['moreactivities'] = 'Visa fler aktiviteter';
+$string['morecourses'] = 'Visa fler kurser';
 $string['next30days'] = 'Kommande 30 dagar';
 $string['next3months'] = 'Kommande 3 månader';
 $string['next6months'] = 'Kommande 6 månader';
 $string['next7days'] = 'Kommande 7 dagar';
 $string['nocoursesinprogress'] = 'Inga pågående kurser';
-$string['noevents'] = 'Inga kommande aktiviteter som förfaller';
+$string['noevents'] = 'Inga aktiviteter kräver åtgärd';
 $string['overdue'] = 'Försenad';
 $string['pluginname'] = 'Tidslinje';
 $string['privacy:metadata:timelinefilterpreference'] = 'Användarens inställning för hur dagar ska filtreras i blocket Tidslinje';
 $string['privacy:metadata:timelinelimitpreference'] = 'Användarinställningen för gräns för tidslinjeblocket.';
 $string['privacy:metadata:timelinesortpreference'] = 'Användarens inställning för sortering i blocket Tidslinje';
+$string['searchevents'] = 'Sök efter aktivitetstyp eller -namn';
 $string['sortbycourses'] = 'Sortera efter kurser';
 $string['sortbydates'] = 'Sortera efter datum';
 $string['timeline'] = 'Tidslinje';

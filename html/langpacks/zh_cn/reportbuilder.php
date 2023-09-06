@@ -1,0 +1,276 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'reportbuilder', language 'zh_cn', version '4.1'.
+ *
+ * @package     reportbuilder
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['access'] = '访问';
+$string['actions'] = '动作';
+$string['addaudience'] = '添加访问群体\'{$a}\'';
+$string['addcolumn'] = '新增字段“{$a}”';
+$string['addusers'] = '手动新增用户';
+$string['aggregatecolumn'] = '聚合列\'{$a}\'';
+$string['aggregationavg'] = '平均值';
+$string['aggregationcount'] = '计数';
+$string['aggregationcountdistinct'] = '唯一计数';
+$string['aggregationgroupconcat'] = '逗号分隔值';
+$string['aggregationgroupconcatdistinct'] = '逗号分隔的不同值';
+$string['aggregationmax'] = '最大值';
+$string['aggregationmin'] = '最小值';
+$string['aggregationnone'] = '无加总';
+$string['aggregationpercent'] = '百分比';
+$string['aggregationsum'] = '总和';
+$string['allsiteusers'] = '所有网站用户';
+$string['allusers'] = '所有用户';
+$string['apply'] = '申请';
+$string['audience'] = '观众';
+$string['audienceadded'] = '已添加访问群体\'{$a}\'';
+$string['audiencecreated'] = '已创建访问群体';
+$string['audiencedeleted'] = '已删除访问群体\'{$a}\'';
+$string['audiencedeletedevent'] = '已删除访问群体';
+$string['audiencelabel'] = '{$a->name}: {$a->description}';
+$string['audiencemultiselectpostfix'] = '{$a->elements} 加上 {$a->morecount} 更多';
+$string['audiencenotsaved'] = '未保存访问群体';
+$string['audiencesaved'] = '已保存访问群体';
+$string['audienceupdated'] = '已更新访问群体';
+$string['cardview'] = '卡片视图';
+$string['cardview_help'] = '卡片视图允许您定义在窄设备上查看时报告的布局。列将在超过这里设置的限制时折叠，可通过切换来展开卡片，以查看所有的报告数据。';
+$string['cardviewfirstcolumntitle'] = '卡片视图设置已保存';
+$string['cardviewsettingssaved'] = '卡片视图设置已保存';
+$string['cardviewvisiblecolumns'] = '可见的列';
+$string['categoryselect'] = '选择类别';
+$string['close'] = '关闭';
+$string['closeeditor'] = '关闭“{$a}”编辑器';
+$string['columnadded'] = '已添加列“{$a}”';
+$string['columnaggregated'] = '已汇总列“{$a}”';
+$string['columndeleted'] = '已删除列“{$a}”';
+$string['columnmoved'] = '已移动列“{$a}”';
+$string['columnsortdirectionasc'] = '对列“{$a}”进行升序排序';
+$string['columnsortdirectiondesc'] = '对列“{$a}”进行降序排序';
+$string['columnsortdisable'] = '禁用列“{$a}”的排序';
+$string['columnsortenable'] = '为列“{$a}”启用排序';
+$string['columnsortupdated'] = '更新了列“{$a}”的排序';
+$string['conditionadded'] = '添加条件“{$a}”';
+$string['conditiondeleted'] = '已删除条件“{$a}”';
+$string['conditionmoved'] = '已移动条件“{$a}”';
+$string['conditions'] = '条件';
+$string['conditions_help'] = '通过报表条件您可以控制报表中展示哪些数据。查看报表的用户不能改变这些条件。';
+$string['conditionsapplied'] = '适用条件';
+$string['conditionsreset'] = '条件重置';
+$string['coursefullnamewithlink'] = '带有链接的课程全名';
+$string['courseidnumberewithlink'] = '带有链接的课程ID号';
+$string['courseselect'] = '选择课程';
+$string['courseshortnamewithlink'] = '带有链接的课程简称';
+$string['customfieldcolumn'] = '{$a}';
+$string['customreports'] = '自定义报表';
+$string['customreportslimit'] = '自定义报告限制';
+$string['customreportslimit_desc'] = '出于性能原因，自定义报告的数量可能会受到限制。 如果设置为零，则没有限制。';
+$string['customreportssettings'] = '自定义报告设置';
+$string['deleteaudience'] = '删除访问群体 “{$a}”';
+$string['deleteaudienceconfirm'] = '您确定要删除访问群体“{$a}”吗？';
+$string['deletecolumn'] = '删除字段 “{$a}”';
+$string['deletecolumnconfirm'] = '您确定要删除“{$a}”列吗？';
+$string['deletecondition'] = '删除条件“{$a}”';
+$string['deleteconditionconfirm'] = '您确定要删除条件“{$a}”吗？';
+$string['deletefilter'] = '删除过滤器“{$a}”';
+$string['deletefilterconfirm'] = '您确定要删除过滤器“{$a}”吗？';
+$string['deletereport'] = '删除报表';
+$string['deletereportconfirm'] = '您确定要删除报表“{$a}”和所有相关的数据吗？此操作无法撤销。';
+$string['deleteschedule'] = '删除排程';
+$string['deletescheduleconfirm'] = '您确定要删除计划“{$a}”吗？';
+$string['disableschedule'] = '禁用计划';
+$string['editaudience'] = '编辑访问群体“{$a}”';
+$string['editdetails'] = '编辑细节';
+$string['editor'] = '编辑';
+$string['editreportcontent'] = '编辑报告内容';
+$string['editreportdetails'] = '编辑报告详细信息';
+$string['editreportname'] = '编辑报表名称';
+$string['editscheduledetails'] = '编辑计划详细信息';
+$string['editschedulename'] = '编辑计划名称';
+$string['enablecustomreports'] = '启用自定义报告';
+$string['enablecustomreports_desc'] = '如果启用，用户可以创建和查看报告生成器自定义报告。';
+$string['enableschedule'] = '启用计划';
+$string['entitycourse'] = '课程';
+$string['entityuser'] = '用户';
+$string['errorreportcreate'] = '您无法创建新报告';
+$string['errorreportedit'] = '您无法编辑此报告';
+$string['errorreportview'] = '您无法查看此报告';
+$string['errorsourceinvalid'] = '找不到有效的报告来源';
+$string['errorsourceunavailable'] = '报告来源不可用';
+$string['filteradded'] = '已添加过滤器“{$a}”';
+$string['filtercontains'] = '包含';
+$string['filterdatecurrent'] = '当前';
+$string['filterdatedays'] = '天';
+$string['filterdatefrom'] = '日期从';
+$string['filterdatehours'] = '小时';
+$string['filterdatelast'] = '过去';
+$string['filterdateminutes'] = '分钟';
+$string['filterdatemonths'] = '月份';
+$string['filterdatenext'] = '下一个';
+$string['filterdateseconds'] = '秒';
+$string['filterdateto'] = '日期至';
+$string['filterdateweeks'] = '周';
+$string['filterdateyears'] = '年';
+$string['filterdeleted'] = '已删除过滤器“{$a}”';
+$string['filterdoesnotcontain'] = '不包含';
+$string['filterdurationunit'] = '{$a}单位';
+$string['filterendswith'] = '结束于';
+$string['filterequalorgreaterthan'] = '大于或等于';
+$string['filterequalorlessthan'] = '小于或等于';
+$string['filterfieldoperator'] = '{$a}运算符';
+$string['filterfieldvalue'] = '{$a}值';
+$string['filtergreaterthan'] = '大于';
+$string['filterinvalid'] = '无效过滤器';
+$string['filterisanyvalue'] = '是任意值';
+$string['filterisempty'] = '空的';
+$string['filterisequalto'] = '等于';
+$string['filterisnotempty'] = '不为空';
+$string['filterisnotequalto'] = '不等于';
+$string['filterlessthan'] = '少于';
+$string['filtermoved'] = '已移除过滤器“{$a}”';
+$string['filterrange'] = '范围';
+$string['filters'] = '过滤器';
+$string['filters_help'] = '通过报表过滤器，用户可以通过选择自己的过滤器值，从而进一步控制报表中展示的数据。每个用户都有自己的过滤器值设置。';
+$string['filtersapplied'] = '应用的过滤器';
+$string['filtersappliedx'] = '过滤器（{$a}）';
+$string['filtersreset'] = '重置过滤器';
+$string['filterstartswith'] = '开始于';
+$string['hassystemrole'] = '分配的系统角色';
+$string['includedefaultsetup'] = '包括默认设置';
+$string['includedefaultsetup_help'] = '使用所选源定义的默认布局填充报告。其中包括预定义的纵列、过滤器和条件。';
+$string['manuallyaddedusers'] = '手动添加的用户';
+$string['messagebody'] = '主要部分';
+$string['messagecontent'] = '消息内容';
+$string['messagesubject'] = '主题';
+$string['movecolumn'] = '移动字段“{$a}”';
+$string['movecondition'] = '移除条件“{$a}”';
+$string['movefilter'] = '移动过滤器“{$a}”';
+$string['movesorting'] = '移动字段“{$a}”的排序';
+$string['newreport'] = '新的报表';
+$string['newschedule'] = '新排程';
+$string['noaudiences'] = '此报告没有受众';
+$string['noconditions'] = '没有选择任何条件';
+$string['nofilters'] = '没有选择过滤器';
+$string['nosortablecolumns'] = '尚未添加可排序的字段';
+$string['or'] = '或';
+$string['privacy:metadata:audience'] = '定义报告受众';
+$string['privacy:metadata:audience:classname'] = '受众使用的课程';
+$string['privacy:metadata:audience:configdata'] = '受众使用的配置数据';
+$string['privacy:metadata:audience:heading'] = '受众使用的自定义标题';
+$string['privacy:metadata:audience:timecreated'] = '创建受众的时间';
+$string['privacy:metadata:audience:timemodified'] = '上次修改受众的时间';
+$string['privacy:metadata:audience:usercreated'] = '创建受众的用户 ID';
+$string['privacy:metadata:audience:usermodified'] = '上次修改受众的用户 ID';
+$string['privacy:metadata:column'] = '定义报告的列';
+$string['privacy:metadata:column:uniqueidentifier'] = '该列的唯一标识符';
+$string['privacy:metadata:column:usercreated'] = '创建该列的用户ID';
+$string['privacy:metadata:column:usermodified'] = '上次修改该列的用户 ID';
+$string['privacy:metadata:filter'] = '报告过滤器定义';
+$string['privacy:metadata:filter:uniqueidentifier'] = '过滤器的唯一标识符';
+$string['privacy:metadata:filter:usercreated'] = '创建该过滤器的用户的ID';
+$string['privacy:metadata:filter:usermodified'] = '上次修改过滤器的用户的ID';
+$string['privacy:metadata:preference:reportfilter'] = '存储的报告过滤器值';
+$string['privacy:metadata:report'] = '报告定义';
+$string['privacy:metadata:report:conditiondata'] = '报告条件的配置数据';
+$string['privacy:metadata:report:name'] = '报告名称';
+$string['privacy:metadata:report:settingsdata'] = '报告的常规配置';
+$string['privacy:metadata:report:source'] = '报告来源';
+$string['privacy:metadata:report:timecreated'] = '报告创建时间';
+$string['privacy:metadata:report:timemodified'] = '上次修改报告的时间';
+$string['privacy:metadata:report:uniquerows'] = '是否删除重复行';
+$string['privacy:metadata:report:usercreated'] = '创建报告的用户的ID';
+$string['privacy:metadata:report:usermodified'] = '上次修改报告的用户 ID';
+$string['privacy:metadata:schedule'] = '定义报告计划';
+$string['privacy:metadata:schedule:audiences'] = '此日程的受众是';
+$string['privacy:metadata:schedule:enabled'] = '日程的状态';
+$string['privacy:metadata:schedule:format'] = '预定报告的格式';
+$string['privacy:metadata:schedule:message'] = '日程的消息';
+$string['privacy:metadata:schedule:name'] = '日程的名称';
+$string['privacy:metadata:schedule:recurrence'] = '日程的重复';
+$string['privacy:metadata:schedule:reportempty'] = '日程报告为空时要采取的措施';
+$string['privacy:metadata:schedule:subject'] = '日程的主题';
+$string['privacy:metadata:schedule:timecreated'] = '创建日程的时间';
+$string['privacy:metadata:schedule:timemodified'] = '上次修改日程的时间';
+$string['privacy:metadata:schedule:timescheduled'] = '日程安排开始的时间';
+$string['privacy:metadata:schedule:usercreated'] = '创建日程的用户的ID';
+$string['privacy:metadata:schedule:usermodified'] = '上次修改日程的用户的ID';
+$string['privacy:metadata:schedule:userviewas'] = '日程表将被查看的用户的 ID';
+$string['recurrence'] = '循环';
+$string['recurrenceannually'] = '每年';
+$string['recurrencedaily'] = '每日';
+$string['recurrencemonthly'] = '每月';
+$string['recurrenceweekdays'] = '每日（仅限工作日）';
+$string['recurrenceweekly'] = '每周';
+$string['renameaudience'] = '重命名受众“{$a}”';
+$string['renamecolumn'] = '重命名列“{$a}”';
+$string['renamefilter'] = '重命名过滤器“{$a}”';
+$string['reportbuilder'] = '报表精灵';
+$string['reportcreated'] = '已建立报表';
+$string['reportdeleted'] = '已删除报表';
+$string['reports'] = '报表';
+$string['reportsource'] = '报表来源';
+$string['reportsource_help'] = '报表来源';
+$string['reportupdated'] = '已更新报表';
+$string['reportviewed'] = '已查看报告';
+$string['resetall'] = '全部重设';
+$string['resetconditions'] = '重置条件';
+$string['resetconditionsconfirm'] = '您确定要重置此报告的所有条件吗？';
+$string['schedulecreated'] = '日程已创建';
+$string['scheduledeleted'] = '日程已删除';
+$string['scheduleempty'] = '如果报告为空';
+$string['scheduleemptydontsend'] = '不发送消息';
+$string['scheduleemptysendwithattachment'] = '发送消息而不发报告';
+$string['scheduleemptysendwithoutattachment'] = '发送消息而不发报告';
+$string['schedules'] = '日程表';
+$string['schedulesent'] = '发送日程表';
+$string['scheduleupdated'] = '更新日程表';
+$string['scheduleviewas'] = '查看数据报告';
+$string['scheduleviewascreator'] = '日程创建者';
+$string['scheduleviewasrecipient'] = '日程接收者';
+$string['selectacondition'] = '选择条件';
+$string['selectafilter'] = '选择过滤器';
+$string['selectareportsource'] = '选择报告来源';
+$string['sendschedule'] = '发送日程表';
+$string['sendscheduleconfirm'] = '您确定要将日程表“{$a}”排队以便立即发送吗？';
+$string['showhide'] = '显示/隐藏\'{$a}\'';
+$string['sorting'] = '排序';
+$string['sorting_help'] = '排序定义了报表中字段的初始排序顺序。可以通过点击上/下图标切换排序方向。用户还可以通过点击字段名定义自己的排序顺序。';
+$string['switchedit'] = '切换到编辑模式';
+$string['switchpreview'] = '切换到预览模式';
+$string['tasksendschedules'] = '发送报告日程表';
+$string['timeadded'] = '添加的时间';
+$string['timecreated'] = '创建的时间';
+$string['timelastsent'] = '上次发送的时间';
+$string['timemodified'] = '修改的时间';
+$string['uniquerows'] = '删除所有重复行';
+$string['uniquerows_help'] = '如果报表源包含重复的行，则是否应该从此报表中删除这些行？如果汇总报表列，此设置无效。';
+$string['userany'] = '任何用户';
+$string['usercurrent'] = '当前用户';
+$string['userfullnamewithlink'] = '带有个人资料连结的全名';
+$string['userfullnamewithpicture'] = '带有图片的全名';
+$string['userfullnamewithpicturelink'] = '带有图片和链接的全名';
+$string['usermodified'] = '修改人';
+$string['userpicture'] = '用户图片';
+$string['userselect'] = '选择用户';
+$string['viewreport'] = '查看报告';

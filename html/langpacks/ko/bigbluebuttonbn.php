@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ko', version '3.11'.
+ * Strings for component 'bigbluebuttonbn', language 'ko', version '4.1'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['mod_form_block_presentation'] = '프리젠테이션 내용';
+$string['modulename_link'] = 'BigBlueButton/view';

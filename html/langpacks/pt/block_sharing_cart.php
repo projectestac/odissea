@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_sharing_cart', language 'pt', version '3.11'.
+ * Strings for component 'block_sharing_cart', language 'pt', version '4.1'.
  *
  * @package     block_sharing_cart
  * @category    string
@@ -85,9 +85,13 @@ $string['restore'] = 'Copiar para a disciplina';
 $string['restore_heavy_load_warning_message'] = 'O tempo de carregamento é maior porque estão a ser processadas mais de 10 atividades/recursos.';
 $string['section_name_conflict'] = 'Conflito de secções';
 $string['settings:add_to_sharing_cart'] = 'Adicionar ao carrinho';
-$string['settings:add_to_sharing_cart_desc'] = 'Escolha entre o método de arrastar e largar ou clicar para adicionar módulos e secções ao carrinho de partilha.';
+$string['settings:add_to_sharing_cart_desc'] = 'Escolha entre o método de arrastar e largar ou clicar para adicionar módulos e secções ao carrinho de partilha.
+O método \'Clique para adicionar\' é o predefinido do carrinho de partilha, onde tem de clicar no ícone do cesto antes de ser adicionado ao carrinho de partilha.
+O  método de \'Arrastar e largar\' permite que arraste e largue os módulos/atividades e secções no bloco de carrinho de partilha ou no ícone do cesto no rodapé. Por favor, tenha em atenção que esta opção apenas é suportada no Moodle 4.0+.';
 $string['settings:click_to_add'] = 'Clique para adicionar';
 $string['settings:drag_and_drop'] = 'Arrastar e largar';
+$string['settings:show_copy_section_in_block'] = 'Mostrar "Copiar secção"';
+$string['settings:show_copy_section_in_block_desc'] = 'Mostra "Copiar secção" no bloco de carrinho de partilha, abaixo de todos os módulos/atividades';
 $string['settings:userdata_copyable_modtypes'] = 'Tipo de módulos com dados de utilizador copiáveis';
 $string['settings:userdata_copyable_modtypes_desc'] = 'Ao copiar uma atividade para o Carrinho de Partilha, uma caixa de diálogo aparece a perguntar se pretende incluir, ou não, os dados de utilizador na cópia.
 Se o tipo de módulo estiver marcado acima e o utilizador tiver as permissões: <strong>moodle/backup:userinfo</strong>, <strong>moodle/backup:anonymise</strong> e  <strong>moodle/restore:userinfo</strong> (por predefinição, apenas o papel de Gestor tem  estas permissões), os dados serão incluídos .';

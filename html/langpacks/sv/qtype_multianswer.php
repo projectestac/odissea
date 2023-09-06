@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'sv', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'sv', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -45,6 +45,7 @@ $string['noquestions'] = 'The Cloze(multianswer) question "<strong>{$a}</strong>
 $string['pleaseananswerallparts'] = 'Vänligen besvara alla delar av frågan.';
 $string['pluginname'] = 'Inbäddade svar (Cloze)';
 $string['pluginname_help'] = 'Inbäddade svar (Cloze) frågor består av en löpande text med frågor såsom flervalsfrågor och korta svar inbäddad i texten.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnameadding'] = 'Lägga till en Inbäddat svar (Cloze) fråga';
 $string['pluginnameediting'] = 'Redigera en inbäddat svar (Cloze) fråga';
 $string['pluginnamesummary'] = 'Frågor av detta slag är mycket flexibla, men kan endast skapas genom att lägga till text som innehåller speciella koder som skapar inbäddade flervalsfrågor, korta svar och numeriska frågor.';
@@ -65,6 +66,7 @@ $string['questionsmore'] = '{$a} fråga(or) mer än i flervalsfrågan lagrat i d
 $string['questiontypechanged'] = 'Frågetyp ändrad';
 $string['questiontypechangedcomment'] = 'Minst en frågetyp har ändrats.<br >Har du lagt till, tagit bort eller flyttat en fråga?<br >Se vidare framåt.';
 $string['questionusedinquiz'] = 'Denna fråga används i {$a->nb_of_quiz} test(er), totalt antal försök : {$a->nb_of_attempts}';
+$string['regradeissuenumsubquestionschanged'] = 'Antalet inbäddade underfrågor i den här frågan har ändrats.';
 $string['storedqtype'] = 'Lagrad frågetyp {$a}';
 $string['subqresponse'] = 'del {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Okänd frågetyp: {$a->type} av frågedel # {$a->sub}';

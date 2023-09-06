@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ja', version '3.11'.
+ * Strings for component 'enrol', language 'ja', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -57,6 +57,7 @@ $string['enrollednewusers'] = '{$a} 名の新しいユーザが正常に登録�
 $string['enrolledusers'] = '登録済みユーザ';
 $string['enrolledusersmatching'] = '合致する登録済みユーザ';
 $string['enrolme'] = 'このコースに私を登録する';
+$string['enrolment'] = '登録';
 $string['enrolmentinstances'] = '登録方法';
 $string['enrolmentmethod'] = '登録方法';
 $string['enrolmentnew'] = '{$a} の新しい登録';
@@ -85,7 +86,7 @@ $string['eventenrolinstancedeleted'] = '登録インスタンスが削除され�
 $string['eventenrolinstanceupdated'] = '登録インスタンスが更新されました。';
 $string['eventuserenrolmentcreated'] = 'ユーザがコースに登録されました。';
 $string['eventuserenrolmentdeleted'] = 'ユーザがコースから登録解除されました。';
-$string['eventuserenrolmentupdated'] = 'ユーザ登録解除が更新されました。';
+$string['eventuserenrolmentupdated'] = 'ユーザ登録が更新されました。';
 $string['expirynotify'] = '登録期限切れの前に通知する';
 $string['expirynotify_help'] = 'この設定では登録期限切れ通知メッセージを送信するかどうか決定します。';
 $string['expirynotifyall'] = '登録者および登録済みユーザ';
@@ -110,6 +111,7 @@ $string['invalidrequest'] = '無効なリクエスト';
 $string['invalidrole'] = '無効なロール';
 $string['manageenrols'] = '登録プラグイン管理';
 $string['manageinstance'] = '管理';
+$string['method'] = '登録方法';
 $string['migratetomanual'] = '手動登録に移行する';
 $string['nochange'] = '変更なし';
 $string['noexistingparticipants'] = '参加者は登録されていません。';
@@ -150,6 +152,10 @@ $string['startdatetoday'] = '本日';
 $string['synced'] = '同期';
 $string['testsettings'] = '設定テスト';
 $string['testsettingsheading'] = '登録設定テスト - {$a}';
+$string['timeended'] = '終了日時';
+$string['timeenrolled'] = '登録日時';
+$string['timereaggregated'] = '再集計日時';
+$string['timestarted'] = '開始日時';
 $string['totalenrolledusers'] = '登録済みユーザ数: {$a}';
 $string['totalotherusers'] = '他のユーザ数: {$a} ';
 $string['totalunenrolledusers'] = '登録解除ユーザ数: {$a}';

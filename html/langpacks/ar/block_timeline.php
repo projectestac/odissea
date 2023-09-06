@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'ar', version '3.11'.
+ * Strings for component 'block_timeline', language 'ar', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,29 +26,31 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'الكل';
-$string['ariadayfilter'] = 'ترشيح عناصر المخطط الزمني';
+$string['ariadayfilter'] = 'ترشيح المخطط الزمني حسب التاريخ';
 $string['ariadayfilteroption'] = 'خيارات ترشيح {$a}';
 $string['ariaeventlistitem'] = 'النشاط {$a->name} في {$a->course} يستحق في {$a->date}';
 $string['ariaeventlistpagelimit'] = 'إظهار {$a} من النشاطات في الصفحة';
-$string['ariaeventlistpaginationnavcourses'] = 'ترقيم صفحات المخطط الزمني للنشاطات في المقرر الدراسي {$a}';
+$string['ariaeventlistpaginationnavcourses'] = 'ترقيم صفحات المخطط الزمني للنشاطات في المساق {$a}';
 $string['ariaeventlistpaginationnavdates'] = 'ترقيم صفحات المخطط الزمني للنشاطات';
 $string['ariaviewselector'] = 'فرز عناصر المخطط الزمني';
 $string['ariaviewselectoroption'] = 'خيارات فرز {$a}';
 $string['duedate'] = 'تاريخ الاستحقاق';
-$string['morecourses'] = 'المزيد من السياقات';
+$string['moreactivities'] = 'إظهار المزيد من النشاطات';
+$string['morecourses'] = 'إظهار المزيد من المقررات الدراسية';
 $string['next30days'] = 'الثلاثون يوماً القادمة';
 $string['next3months'] = 'الأشهر الثلاثة القادمة';
 $string['next6months'] = 'الأشهر الستة القادمة';
 $string['next7days'] = 'الأيام السبعة القادمة';
 $string['nocoursesinprogress'] = 'لا سياقات مستمرة حالياً';
-$string['noevents'] = 'لا نشاطات قادمة مستحقة';
+$string['noevents'] = 'لا نشاطات تتطلب إجراءات';
 $string['overdue'] = 'المتأخرة';
 $string['pluginname'] = 'المخطط الزمني';
 $string['privacy:metadata:timelinefilterpreference'] = 'تفضيل المستخدم لترشيح الأيام في كتلة المخطط الزمني';
 $string['privacy:metadata:timelinelimitpreference'] = 'تفضيل المستخدم لحد الصفحات في كتلة المخطط الزمني';
 $string['privacy:metadata:timelinesortpreference'] = 'تفضيل المستخدم للفرز في كتلة المخطط الزمني';
+$string['searchevents'] = 'البحث حسب نوع النشاط أو اسمه';
 $string['sortbycourses'] = 'الفرز حسب المقررات الدراسية';
 $string['sortbydates'] = 'الفرز حسب الأيام';
 $string['timeline'] = 'المخطط الزمني';
-$string['timeline:myaddinstance'] = 'إضافة كتلة جديدة من المخطط الزمني إلى لوحة التحكم';
-$string['viewcourse'] = 'معاينة المقرر الدراسي';
+$string['timeline:myaddinstance'] = 'إضافة كتلة جديدة من المخطط الزمني إلى دفة القيادة';
+$string['viewcourse'] = 'معاينة المساق';

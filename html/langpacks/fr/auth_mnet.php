@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'fr', version '3.11'.
+ * Strings for component 'auth_mnet', language 'fr', version '4.1'.
  *
  * @package     auth_mnet
  * @category    string
@@ -59,7 +59,7 @@ $string['privacy:metadata:mnet_external:lang'] = 'Une préférence indiquant la 
 $string['privacy:metadata:mnet_external:lastaccess'] = 'La date et l\'heure à laquelle l\'utilisateur a accédé au site la dernière fois.';
 $string['privacy:metadata:mnet_external:lastlogin'] = 'La dernière connexion de l\'utilisateur.';
 $string['privacy:metadata:mnet_external:lastname'] = 'Le nom de famille de l\'utilisateur.';
-$string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Les informations phonétiques sur le nom de l\'utilisateur.';
+$string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Les informations phonétiques sur le nom de famille de l\'utilisateur.';
 $string['privacy:metadata:mnet_external:maildigest'] = 'Un réglage pour les récapitulatifs de messages de cet utilisateur.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'Une préférence de l\'utilisateur sur l\'affichage de son adresse de courriel à d\'autres utilisateurs.';
 $string['privacy:metadata:mnet_external:middlename'] = 'Le deuxième prénom de l\'utilisateur';

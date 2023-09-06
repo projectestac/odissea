@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_massaction', language 'en', version '3.11'.
+ * Strings for component 'block_massaction', language 'en', version '4.1'.
  *
  * @package     block_massaction
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['action_contentchangednotification'] = 'Send content changed notification';
 $string['action_delete'] = 'Delete';
 $string['action_duplicate'] = 'Duplicate';
 $string['action_duplicatetocourse'] = 'Duplicate to another course';
@@ -58,7 +59,10 @@ $string['invalidcoursemodule'] = 'Invalid course module';
 $string['invalidmoduleid'] = 'Invalid module ID: {$a}';
 $string['jsonerror'] = 'Error coding: Invalid JSON format';
 $string['keepsectionnum'] = 'Keep original section number';
+$string['limittoenrolled'] = 'Limit target course list to courses in which the user is enrolled';
+$string['limittoenrolled_description'] = 'If enabled the course selection of the feature "Duplicate to another course" will be limited to courses in which the user is enrolled. Enabling this is recommended for instances with many courses, because not limiting the courses is likely to result in performance issues and timeouts. Disabling this option is at one own\'s risk.';
 $string['massaction:addinstance'] = 'Add a new Mass Actions Block';
+$string['massaction:sendcontentchangednotifications'] = 'Send content changed notifications';
 $string['massaction:use'] = 'Use the Mass Actions block';
 $string['modulename'] = 'Activity name';
 $string['moduletype'] = 'Activity type';

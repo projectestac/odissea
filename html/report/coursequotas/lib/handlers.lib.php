@@ -26,11 +26,11 @@ function report_coursequotas_coursedeleted_handler($params): bool {
 
     include_once($CFG->dirroot . '/report/coursequotas/constants.php');
 
-    if (!isset($params->objectid) || empty($params->objectid)) {
+    if (empty($params->objectid)) {
         return false;
     }
 
-    $courseid = intval($params->objectid);
+    $courseid = (int)$params->objectid;
 
     return $DB->delete_records(COURSESIZE_TABLENAME, [COURSESIZE_FIELDCOURSEID => $courseid]);
 }
@@ -47,11 +47,11 @@ function report_coursequotas_categorydeleted_handler($params): bool {
 
     include_once($CFG->dirroot . '/report/coursequotas/constants.php');
 
-    if (!isset($params->objectid) || empty($params->objectid)) {
+    if (empty($params->objectid)) {
         return false;
     }
 
-    $categoryid = intval($params->objectid);
+    $categoryid = (int)$params->objectid;
 
     return $DB->delete_records(CATEGORYSIZE_TABLENAME, [CATEGORYSIZE_FIELDCATEGORYID => $categoryid]);
 }

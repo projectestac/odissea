@@ -1,4 +1,4 @@
-@core @core_blog
+@core @core_blog @javascript
 Feature: Comment on a blog entry
   In order to respond to a blog post
   As a user
@@ -15,6 +15,8 @@ Feature: Comment on a blog entry
     And I log in as "admin"
     And I am on site homepage
     And I turn editing mode on
+    And the following config values are set as admin:
+      | unaddableblocks | | theme_boost|
     # TODO MDL-57120 "Site blogs" link not accessible without navigation block.
     And I add the "Navigation" block if not present
     And I configure the "Navigation" block
@@ -23,10 +25,8 @@ Feature: Comment on a blog entry
     And I press "Save changes"
     And I log out
 
-  @javascript
   Scenario: Commenting on my own blog entry
-    Given I am on site homepage
-    And I log in as "testuser"
+    Given I log in as "testuser"
     And I click on "Site pages" "list_item" in the "Navigation" "block"
     And I click on "Site blogs" "link" in the "Navigation" "block"
     And I follow "Blog post from user 1"
@@ -39,10 +39,8 @@ Feature: Comment on a blog entry
     And I follow "Save comment"
     And I should see "Comments (2)" in the ".comment-link" "css_element"
 
-  @javascript
   Scenario: Deleting my own comment
-    Given I am on site homepage
-    And I log in as "testuser"
+    Given I log in as "testuser"
     And I click on "Site pages" "list_item" in the "Navigation" "block"
     And I click on "Site blogs" "link" in the "Navigation" "block"
     And I follow "Blog post from user 1"
@@ -59,7 +57,6 @@ Feature: Comment on a blog entry
     And I should not see "$My own >nasty< \"string\"!"
     And I should see "Comments (0)" in the ".comment-link" "css_element"
 
-  @javascript
   Scenario: Commenting on someone's blog post
     Given I am on site homepage
     And I log in as "testuser2"

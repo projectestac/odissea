@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_classic', language 'ja', version '3.11'.
+ * Strings for component 'theme_classic', language 'ja', version '4.1'.
  *
  * @package     theme_classic
  * @category    string
@@ -38,3 +38,4 @@ $string['privacy:metadata'] = 'クラシックテーマはいかなる個人デ�
 $string['region-side-post'] = '右';
 $string['region-side-pre'] = '左';
 $string['sitetitle'] = 'サイトタイトル';
+$string['totop'] = 'トップに移動する';

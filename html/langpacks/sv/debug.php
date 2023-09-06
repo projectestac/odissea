@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'sv', version '3.11'.
+ * Strings for component 'debug', language 'sv', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,17 @@ $string['notables'] = 'Inga tabeller!';
 $string['outputbuffer'] = 'Utmatningsbuffert';
 $string['phpvaroff'] = 'PHP-server-variabeln \'{$a->name}\' bör vara inställd som Off - {$a->link}';
 $string['phpvaron'] = 'PHP-servervariabeln <code>{$a->name}</em> är inte satt till <em>"On"</em> - {$a->link}';
+$string['reactive_highlightoff'] = 'Markera AV';
+$string['reactive_highlighton'] = 'Markera PÅ';
+$string['reactive_instances'] = 'Reaktiva instanser:';
+$string['reactive_noinstances'] = 'Den här sidan har inga reaktiva instanser';
+$string['reactive_pin'] = 'Fäst';
+$string['reactive_readmodeoff'] = 'Läsläge AV';
+$string['reactive_readmodeon'] = 'Läsläge PÅ';
+$string['reactive_resetpanel'] = 'Återställ panel';
+$string['reactive_saveingwarning'] = '<strong>Varning!</strong> Redigering av tillståndet kan medföra oväntade resultat.';
+$string['reactive_statedata'] = 'Tillståndsdata';
+$string['reactive_unpin'] = 'Ej fäst';
 $string['sessionmissing'] = '{$a} objekt saknas i sessionen';
 $string['sqlrelyonobsoletetable'] = 'Denna SQL förlitar sig på tabeller \'{$a}\' som inte längre används! Koden behöver korrigeras av en utvecklare.';
 $string['stacktrace'] = 'Stackspårning';

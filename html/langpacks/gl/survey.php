@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'gl', version '3.11'.
+ * Strings for component 'survey', language 'gl', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -47,7 +47,7 @@ $string['attls14'] = 'Tento sinalar as debilidades na maneira de pensar dos dema
 $string['attls14short'] = 'sinale os puntos débiles';
 $string['attls15'] = 'Tento poñerme no lugar das outras persoas cando se fala de temas controvertidos, a ver que pensan e de que maneira o fan.';
 $string['attls15short'] = 'póñase no lugar dos outros';
-$string['attls16'] = 'Alguén podería chamarlle á miña maneira de analizar as cousas «poñelas a proba» xa que teño en conta coidadosamente todas as evidencias.';
+$string['attls16'] = 'Alguén podería chamarlle á miña maneira de analizar as cosas «poñelas a proba» xa que teño en conta coidadosamente todas as evidencias.';
 $string['attls16short'] = 'poñer a proba';
 $string['attls17'] = 'Cando se trata de resolver problemas, valoro o uso da lóxica e da razón por enriba dos meus propios intereses.';
 $string['attls17short'] = 'valoro sobre todo a lóxica';
@@ -66,7 +66,7 @@ $string['attls4'] = 'A parte máis importante da miña educación foi ter aprend
 $string['attls4short'] = 'entender as persoas diferentes';
 $string['attls5'] = 'Sinto que a mellor maneira de conseguir a miña propia identidade é interactuar con persoas diferentes.';
 $string['attls5short'] = 'interactuar coa diversidade';
-$string['attls6'] = 'Gozo ao escoitar as opinións das persoas que veñen de contornos diferentes ao meu; axúdame a entender como cousas iguais poden ser vistas de maneiras diferentes.';
+$string['attls6'] = 'Gozo ao escoitar as opinións das persoas que veñen de contornos diferentes ao meu; axúdame a entender como cosas iguais poden ser vistas de maneiras diferentes.';
 $string['attls6short'] = 'gozar escoitando opinións';
 $string['attls7'] = 'Vexo que podo fortalecer a miña propia posición debatendo con persoas que discrepa comigo.';
 $string['attls7short'] = 'fortalecer a través do debate';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'es', version '3.11'.
+ * Strings for component 'competency', language 'es', version '4.1'.
  *
  * @package     competency
  * @category    string
@@ -51,7 +51,7 @@ $string['errorinvalidcourse'] = 'Curso no válido.';
 $string['errornocompetency'] = 'La competencia {$a} no existe';
 $string['errorplanstatus'] = 'El estado de plan de aprendizaje \'{$a}\' es desconocido';
 $string['errorscalealreadyused'] = 'La escala no se puede modificar porque ya está en uso.';
-$string['errorscaleconfiguration'] = 'La escala precisa ser configurada selecionando los apartados de valor por defecto y competente';
+$string['errorscaleconfiguration'] = 'La escala precisa ser configurada seleccionando los apartados de valor por defecto y competente';
 $string['errorusercomptencystatus'] = 'El estado de la competencia del usuario \'{$a}\' es desconocido';
 $string['eventcompetencycreated'] = 'Competencia creada.';
 $string['eventcompetencydeleted'] = 'Competencia eliminada.';

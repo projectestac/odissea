@@ -5,6 +5,8 @@ class HList implements IteratorAggregate{
 		if(!php_Boot::$skip_constructor) {
 		$this->length = 0;
 	}}
+	
+	#[\ReturnTypeWillChange]
 	public function getIterator() {
 		return $this->iterator();
 	}

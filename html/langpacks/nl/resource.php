@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'nl', version '3.11'.
+ * Strings for component 'resource', language 'nl', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -52,6 +52,7 @@ $string['displayselect_help'] = 'Deze instelling, samen met het bestandstype en 
 * In pop-up - Het bestand wordt getoond in een nieuw browservenster zonder menu\'s en zonder adresbalk
 * In frame - Het bestand wordt getoond in een frame onder de navigatiebalk en bestandsbeschrijving
 * Nieuw venster - Het bestand wordt getoond in een nieuw browservenster met menu\'s en een adresbalk';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = 'Kiest de manier om te tonen. Jammer genoeg zijn niet alle types geschikt voor alle bestanden.';
 $string['dnduploadresource'] = 'Maak bron met een bestand';
 $string['encryptedcode'] = 'Geëncrypteerde code';
@@ -65,10 +66,12 @@ $string['indicator:cognitivedepth'] = 'Bestand cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Bestand bron.';
 $string['indicator:cognitivedepthdef'] = 'Bestand cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de bestandsresources tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Weergave)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Bestand sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Bestand bron.';
 $string['indicator:socialbreadthdef'] = 'Bestand sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de bestandsresources tijdens dit analyse-interval bereikt (niveaus = geen deelname, alleen deelnemer)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migratie van oude cursusbestanden';
 $string['legacyfilesactive'] = 'Actief';
 $string['legacyfilesdone'] = 'Beëindigd';
@@ -82,7 +85,8 @@ Een bestand kan gebruikt worden
 
 * om presentaties die in de klas gegeven zijn te delen
 * om een kleine website als cursusbron aan te bieden
-* om kladbestanden van bepaalde softwareprogramma\'s te voorzien (zoals Photoshop .psd) zodat leerlingen ze kunnen bewerken en dan insturen voor beoordeling';
+* om conceptbestanden van bepaalde softwareprogramma\'s te voorzien (zoals Photoshop .psd) zodat leerlingen ze kunnen bewerken en dan insturen voor beoordeling';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Bestanden';
 $string['notmigrated'] = 'Dit verouderd brontype ({$a}) is nog niet omgezet.';
 $string['optionsheader'] = 'Toon opties';

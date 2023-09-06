@@ -37,15 +37,17 @@ class qtype_wirisstep {
     const MAX_ATTEMPS_SHORTANSWER_WIRIS = 2;
 
     private $step;
+    private $step_id;
+    private $extraprefix;
 
     public function __construct() {
         $this->step = null;
     }
 
     public function load($step) {
-        $conditiona = !($step instanceof question_attempt_step_read_only);
-        $conditionb = $step instanceof question_attempt_step_subquestion_adapter;
-        if ($conditiona && !($conditionb && $step->realqas instanceof question_attempt_step_read_only)) {
+        $notReadOnly = !($step instanceof question_attempt_step_read_only);
+        $notAdapterOfReadOnly = !($step instanceof question_attempt_step_subquestion_adapter_wiris && $step->is_adapter_of_read_only());
+        if ($notReadOnly && $notAdapterOfReadOnly) {
             $this->step = $step;
             // It is a regrade or the first attempt.
             try {
@@ -98,6 +100,11 @@ class qtype_wirisstep {
 
         $name = $this->get_step_var_internal($name, $subquesbool);
 
+        if (strlen($name) > 32) {
+            // Database only allows keys up to length 32.
+            $name = substr($name, 0, 32);
+        }
+
         $gc = $DB->get_record('question_attempt_step_data', array('attemptstepid' => $this->step_id, 'name' => $name), 'value');
         if ($gc == null) {
             $gc = new stdClass();
@@ -137,6 +144,10 @@ class qtype_wirisstep {
         $DB = $this->get_db();
 
         $name = $this->get_step_var_internal($name, $subquesbool);
+
+        if (strlen($name) > 32) {
+            $name = substr($name, 0, 32);
+        }
 
         $gc = $DB->get_record('question_attempt_step_data', array('attemptstepid' => $this->step_id, 'name' => $name), 'value');
         if ($gc == null) {
@@ -239,5 +250,17 @@ class qtype_wirisstep {
         // method we save $this->step only if it isn't readonly, so in particular
         // only if it is the first step.
         return (!is_null($this->step));
+    }
+}
+
+class question_attempt_step_subquestion_adapter_wiris extends question_attempt_step_subquestion_adapter {
+
+    public function is_adapter_of_read_only() {
+        // In Moodle 4.1 and earlier the variable $this->realstep was misspelled as $this->realqas.
+        // Therefore we need to check for both possibilities. In Moodle 4.2 we use this extension class
+        // because $this->realstep is protected.
+        return 
+            (isset($this->realqas) && ($this->realqas instanceof question_attempt_step_read_only)) ||
+            (isset($this->realstep) && ($this->realstep instanceof question_attempt_step_read_only));
     }
 }

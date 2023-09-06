@@ -6,17 +6,17 @@ class com_wiris_util_geometry_GeometryFile {
 		$this->data = $data;
 	}}
 	public function getGeometryHandwriting($i) {
-		return new com_wiris_util_geometry_GeometryHandwriting(com_wiris_util_json_JSon::getHash(_hx_array_get($this->getHandwritings(), $i)));
+		return new com_wiris_util_geometry_GeometryHandwriting(com_wiris_util_json_JSon::getHash(_hx_array_get($this->getHandwritingTraces(), $i)));
 	}
-	public function getHandwritingsLength() {
-		$a = $this->getHandwritings();
+	public function getHandwritingTracesLength() {
+		$a = $this->getHandwritingTraces();
 		return com_wiris_util_geometry_GeometryFile_0($this, $a);
 	}
-	public function getHandwritings() {
-		return com_wiris_util_json_JSon::getArray($this->data->get(com_wiris_util_geometry_GeometryFile::$HANDWRITING));
+	public function getHandwritingTraces() {
+		return com_wiris_util_json_JSon::getArray($this->data->get(com_wiris_util_geometry_GeometryFile::$HANDWRITING_TRACES));
 	}
 	public function addHandwriting($h) {
-		$this->getHandwritings()->push($h->data);
+		$this->getHandwritingTraces()->push($h->data);
 	}
 	public function deleteElement($i) {
 		if($i < 0 || $i >= $this->getElementsLength()) {
@@ -101,7 +101,7 @@ class com_wiris_util_geometry_GeometryFile {
 	static $ELEMENTS = "elements";
 	static $CONSTRAINTS = "constraints";
 	static $DISPLAYS = "displays";
-	static $HANDWRITING = "handwriting";
+	static $HANDWRITING_TRACES = "handwriting_traces";
 	static function readJSON($json) {
 		return new com_wiris_util_geometry_GeometryFile(com_wiris_util_json_JSon::getHash(com_wiris_util_json_JSon::decode($json)));
 	}
@@ -110,7 +110,7 @@ class com_wiris_util_geometry_GeometryFile {
 		$data->set(com_wiris_util_geometry_GeometryFile::$ELEMENTS, new _hx_array(array()));
 		$data->set(com_wiris_util_geometry_GeometryFile::$CONSTRAINTS, new _hx_array(array()));
 		$data->set(com_wiris_util_geometry_GeometryFile::$DISPLAYS, new _hx_array(array()));
-		$data->set(com_wiris_util_geometry_GeometryFile::$HANDWRITING, new _hx_array(array()));
+		$data->set(com_wiris_util_geometry_GeometryFile::$HANDWRITING_TRACES, new _hx_array(array()));
 		return new com_wiris_util_geometry_GeometryFile($data);
 	}
 	static function isGeometryFile($str) {
@@ -120,7 +120,7 @@ class com_wiris_util_geometry_GeometryFile {
 				if($hash === null || !com_wiris_system_TypeTools::isHash($hash)) {
 					return false;
 				}
-				$geometryTags = new _hx_array(array("elements", "constraints", "displays", "handwriting"));
+				$geometryTags = new _hx_array(array(com_wiris_util_geometry_GeometryFile::$ELEMENTS, com_wiris_util_geometry_GeometryFile::$CONSTRAINTS, com_wiris_util_geometry_GeometryFile::$DISPLAYS));
 				{
 					$_g = 0;
 					while($_g < $geometryTags->length) {

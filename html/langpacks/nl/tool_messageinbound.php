@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'nl', version '3.11'.
+ * Strings for component 'tool_messageinbound', language 'nl', version '4.1'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -63,6 +63,7 @@ $string['messageinboundenabled_desc'] = 'Verwerking van inkomende e-mail moet in
 $string['messageinboundgeneralconfiguration'] = 'Algemene configuratie';
 $string['messageinboundgeneralconfiguration_desc'] = 'Met inkomende berichtverwerking kun je e-mail met Moodle ontvangen en verwerken. Hiermee kun je bijvoorbeeld forumberichten beantwoorden via e-mail of bestanden toevoegen aan privébestanden van gebruikers.';
 $string['messageinboundhost'] = 'Inkomende mail server';
+$string['messageinboundhostoauth_help'] = 'OAuth 2 Service om de IMAP-server te bereiken via XOAUTH2-authenticatie. Als de service niet bestaat, moet je hem aanmaken.';
 $string['messageinboundhostpass'] = 'Wachtwoord';
 $string['messageinboundhostpass_desc'] = 'Dit is het wachtwoord dat je serviceprovider gegeven heeft om in je e-mailaccount aan te melden.';
 $string['messageinboundhostssl'] = 'Gebruik SSL';

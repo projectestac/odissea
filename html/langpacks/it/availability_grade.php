@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'it', version '3.11'.
+ * Strings for component 'availability_grade', language 'it', version '4.1'.
  *
  * @package     availability_grade
  * @category    string
@@ -39,9 +39,9 @@ $string['option_min'] = 'deve essere  ≥';
 $string['pluginname'] = 'Criterio basato sulla valutazione';
 $string['privacy:metadata'] = 'l plugin "criterio di accesso basato sulla valutazione" non memorizza dati personali.';
 $string['requires_any'] = 'Aver ricevuto una valutazione in <strong>{$a}</strong>';
-$string['requires_max'] = 'Non aver ottenuto né superato una determinata valutazione in <strong>{$a}</strong>';
+$string['requires_max'] = 'Non aver ottenuto una determinata valutazione in <strong>{$a}</strong>';
 $string['requires_min'] = 'Aver ottenuto o superato la valutazione richiesta in <strong>{$a}</strong>';
 $string['requires_notany'] = 'Non aver ricevuto una valutazione in <strong>{$a}</strong>';
 $string['requires_notgeneral'] = 'Non aver ottenuto una determinata valutazione in <strong>{$a}</strong>';
-$string['requires_range'] = 'Aver ricevuto una valutazione compresa in un intervallo in <strong>{$a}</strong>';
+$string['requires_range'] = 'Aver ricevuto una valutazione compresa in un dato intervallo in <strong>{$a}</strong>';
 $string['title'] = 'Valutazione';

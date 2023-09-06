@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'englishcentral', language 'el', version '3.11'.
+ * Strings for component 'englishcentral', language 'el', version '4.1'.
  *
  * @package     englishcentral
  * @category    string
@@ -140,7 +140,7 @@ $string['readonlymode'] = 'Κατάσταση μόνο ανάγνωσης';
 $string['reattempt'] = 'Προσπαθήστε ξανά';
 $string['refreshtoken'] = 'Ανανέωση πληροφοριών άδειας';
 $string['removevideo'] = 'Διαγραφή βίντεο';
-$string['removevideohelp'] = 'Για διαγραφή ενός βίντεο από αυτή τη σελίδα, κάντε μεταφορά και απόθεση σε αυτό το εικονίδιο.';
+$string['removevideohelp'] = 'Για διαγραφή ενός βίντεο από αυτή τη σελίδα, κάντε μεταφορά & απόθεση σε αυτό το εικονίδιο.';
 $string['reports'] = 'Αναφορές';
 $string['reporttitle'] = 'Τίτλος αναφοράς {$a}';
 $string['returntoreports'] = 'Επιστροφή στις αναφορές';

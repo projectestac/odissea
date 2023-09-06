@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'fr', version '3.11'.
+ * Strings for component 'qtype_gapselect', language 'fr', version '4.1'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -49,6 +49,8 @@ $string['privacy:metadata'] = 'Le plugin de type de question Sélectionner les m
 $string['privacy:preference:defaultmark'] = 'Le nombre de points par défaut pour une question.';
 $string['privacy:preference:penalty'] = 'La pénalité pour chaque tentative incorrecte lorsque les questions sont utilisées dans le comportement « Interactif avec essais multiples » ou « Adaptatif ».';
 $string['privacy:preference:shuffleanswers'] = 'Si les réponses doivent être mélangées automatiquement.';
+$string['regradeissuenumchoiceschanged'] = 'Le nombre de choix du groupe {$a} a été modifié.';
+$string['regradeissuenumgroupsschanged'] = 'Le nombre de groupes de choix a été modifié.';
 $string['shuffle'] = 'Mélanger';
 $string['tagsnotallowed'] = '{$a->tag} n\'est pas permis (seulement {$a->allowed} sont permis).';
 $string['tagsnotallowedatall'] = '{$a->tag} n\'est pas permis (aucun code HTML n\'est permis ici).';

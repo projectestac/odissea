@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'pt', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'pt', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['editor:a11ytitlehidelabel'] = 'Ocultar etiqueta de Tecnologias de Apoio';
+$string['editor:a11ytitleshowlabel'] = 'Mostrar etiqueta de Tecnologias de Apoio';
 $string['editor:add'] = 'Adicionar';
 $string['editor:addauthor'] = 'Guardar autor';
 $string['editor:addentity'] = 'Adicionar :entity';
 $string['editor:addfile'] = 'Adicionar ficheiro';
 $string['editor:addnewchange'] = 'Adicionar nova alteração';
 $string['editor:addtitle'] = 'Adicionar título';
-$string['editor:addvideodescription'] = 'O H5P suporta todas as fontes de vídeo externas formatadas como mp4, webm ou ogv, como por exemplo, o Vimeo Pro, e possui suporte para hiperligações do YouTube.';
+$string['editor:addvideodescription'] = 'O H5P suporta todas as fontes de vídeo externas formatadas como mp4, webm ou ogv, como por exemplo, o Vimeo Pro, e possui suporte para hiperligações do YouTube e Panopto.';
 $string['editor:atoz'] = 'De A a Z';
 $string['editor:avtablistlabel'] = 'Inserir usando';
 $string['editor:belowmin'] = 'O valor de :property está abaixo do mínimo :min.';
@@ -91,7 +93,7 @@ $string['editor:enteraudiotitle'] = 'Cole a hiperligação ou outro URL da orige
 $string['editor:enteraudiourl'] = 'Introduza o URL da origem do áudio';
 $string['editor:enterfullscreenbuttonlabel'] = 'Mudar para ecrã inteiro';
 $string['editor:entervideotitle'] = 'Cole a hiperligação do Youtube ou outro URL da origem do vídeo';
-$string['editor:entervideourl'] = 'Digite o URL da origem do vídeo ou a hiperligação do YouTube';
+$string['editor:entervideourl'] = 'Digite/cole o URL do vídeo';
 $string['editor:errorcalculatingmaxscore'] = 'Não foi possível calcular a pontuação máxima para este conteúdo. A pontuação máxima está definida como 0. Contacte um administrador se achar que não estár correto.';
 $string['editor:errorcommunicatinghubcontent'] = 'Ocorreu um erro. Por favor, tente novamente.';
 $string['editor:errorcommunicatinghubtitle'] = 'Não é possível comunicar com o hub.';

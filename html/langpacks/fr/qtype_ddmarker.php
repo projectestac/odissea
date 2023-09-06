@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'fr', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'fr', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -57,6 +57,8 @@ Pour information, les trois types de formes utilisent les coordonnées ainsi :
 Sélectionner un marqueur de texte ajoutera ce texte à la zone dans l\'aperçu.';
 $string['followingarewrong'] = 'Les marqueurs suivants ont été placés dans la mauvaise zone : {$a}.';
 $string['followingarewrongandhighlighted'] = 'Les marqueurs suivants étaient placés de manière incorrecte : {$a}. Les marqueurs en surbrillance sont à présent à leur place.<br /> Cliquez sur le marqueur pour mettre la zone autorisée en surbrillance.';
+$string['formerror_dragrequired'] = 'Vous devez ajouter à cette question au moins un marqueur.';
+$string['formerror_droprequired'] = 'Vous devez définir pour cette question au moins une zone de glisser-déposer.';
 $string['formerror_nobgimage'] = 'Vous devez sélectionner une image à utiliser comme fond pour cette aire de glisser-déposer.';
 $string['formerror_noitemselected'] = 'Vous avez spécifié une zone de dépôt mais n\'avez pas choisi de marqueur qui doive être déplacé sur cette zone.';
 $string['formerror_nosemicolons'] = 'Il n\'y a pas de point-virgule dans votre chaîne de caractère définissant les coordonnées. Vos coordonnées pour un(e) {$a->shape} doivent être exprimées de la manière suivante : {$a->coordsstring}.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_formulas', language 'el', version '3.11'.
+ * Strings for component 'qtype_formulas', language 'el', version '4.1'.
  *
  * @package     qtype_formulas
  * @category    string
@@ -47,7 +47,7 @@ $string['answertype_help'] = 'Υπάρχουν τέσσερις τύποι απ�
 Διαφορετικοί τύποι απαντήσεων θα επιβάλλουν διαφορετικούς περιορισμούς κατά την εισαγωγή απαντήσεων, έτσι οι μαθητές θα πρέπει να ξέρουν πώς να τα εισαγάγουν.
 Επίσης ο έλεγχος μορφής στον κωδικό ερώτησης θα τους πει όταν πληκτρολογούν, εάν κάτι δεν πάει καλά.
 Παρακαλούμε, διαβάστε την τεκμηρίωση για λεπτομέρειες.';
-$string['answertype_link'] = 'https://docs.moodle.org/33/en/Formulas_question_page#Answer_type';
+$string['answertype_link'] = '';
 $string['answerunitmulti'] = 'Μονάδα για το μέρος {$a->part}';
 $string['answerunitsingle'] = 'Μονάδα';
 $string['choiceno'] = 'Όχι';
@@ -56,7 +56,7 @@ $string['commonsiunit'] = 'Κοινή μονάδα SI';
 $string['correctansweris'] = 'Μια πιθανή σωστή απάντηση είναι: {$a}';
 $string['correctfeedback'] = 'Για οποιαδήποτε σωστή απόκριση';
 $string['correctness'] = 'Κριτήριο βαθμολόγησης*';
-$string['correctness_link'] = 'https://docs.moodle.org/33/en/Formulas:_Answers_and_marking#Manual_grading_criteria';
+$string['correctness_link'] = '';
 $string['correctnessexpert'] = 'Eμπειρογνώμονα';
 $string['correctnesssimple'] = 'Απλός';
 $string['defaultanswermark'] = 'Προεπιλεγμένη βαθμολογία για το μέρος';
@@ -64,12 +64,13 @@ $string['illegalformulasyntax'] = 'Ανεπίτρεπτη σύνταξη τύπ�
 $string['incorrectfeedback'] = 'Για οποιαδήποτε λανθασμένη απόκριση';
 $string['none'] = 'Κανένα';
 $string['number'] = 'Αριθμός';
+$string['pluginname_link'] = 'question/type/formulas';
 $string['questiontext'] = 'Κείμενο ερώτησης';
 $string['renew'] = 'Ενημέρωση';
 $string['settingusepopup'] = 'Χρήση αναδυόμενων συμβουλών εργαλείων';
 $string['settingusepopup_desc'] = 'Εμφάνιση σωστής απάντησης και ανατροφοδότησης σε μια αναδυόμενη συμβουλή εργαλείου';
 $string['subqoptions'] = 'Επιπλέον επιλογές';
-$string['vars2_link'] = 'https://docs.moodle.org/33/en/Formulas:_Answers_and_marking#Grading_variables';
-$string['varsglobal_link'] = 'https://docs.moodle.org/33/en/Formulas_question_page#Global_variables';
-$string['varsrandom_link'] = 'https://docs.moodle.org/33/en/Formulas_question_page#Random_variables';
+$string['vars2_link'] = '';
+$string['varsglobal_link'] = '';
+$string['varsrandom_link'] = '';
 $string['varsstatistics'] = 'Στατιστικά';

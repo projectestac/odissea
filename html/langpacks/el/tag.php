@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'el', version '3.11'.
+ * Strings for component 'tag', language 'el', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -111,7 +111,7 @@ $string['privacy:metadata:taginstance:ordering'] = 'Η σχετική σειρά
 $string['privacy:metadata:taginstance:tagid'] = 'Ο σύνδεσμος προς την ετικέτα.';
 $string['privacy:metadata:taginstance:timecreated'] = 'Πότε συνδέθηκε αυτή η ετικέτα με το στόχο.';
 $string['privacy:metadata:taginstance:timemodified'] = 'Πότε τροποποιήθηκε αυτή η ετικέτα για τον στόχο.';
-$string['privacy:metadata:taginstance:tiuserid'] = 'Όταν κοινόχρηστο περιεχόμενο μπορεί να πάρει ετικέτες μεμονωμένα από χρήστες, αποθηκεύεται ο κάτοχος του στιγμιότυπου ετικέτας.';
+$string['privacy:metadata:taginstance:tiuserid'] = 'Όταν κοινόχρηστο περιεχόμενο μπορεί να πάρει ετικέτες μεμονωμένα από χρήστες, αποθηκεύεται ο κάτοχος του στιγμιοτύπου ετικέτας.';
 $string['ptags'] = 'Ετικέτες χρηστών (χωρισμένες με κόμματα)';
 $string['relatedblogs'] = 'Οι πιο πρόσφατες αναρτήσεις ιστολογίου';
 $string['relatedtags'] = 'Σχετικές ετικέτες';

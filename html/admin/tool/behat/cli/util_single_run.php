@@ -19,6 +19,9 @@
  *
  * All CLI utilities uses $CFG->behat_dataroot and $CFG->prefix_dataroot as
  * $CFG->dataroot and $CFG->prefix
+ * Same applies for $CFG->behat_dbname, $CFG->behat_dbuser, $CFG->behat_dbpass
+ * and $CFG->behat_dbhost. But if any of those is not defined $CFG->dbname,
+ * $CFG->dbuser, $CFG->dbpass and/or $CFG->dbhost will be used.
  *
  * @package    tool_behat
  * @copyright  2012 David Monllaó
@@ -49,7 +52,7 @@ list($options, $unrecognized) = cli_get_params(
         'updatesteps' => false,
         'optimize-runs' => '',
         'add-core-features-to-theme' => false,
-        'axe'         => false,
+        'axe'         => true,
     ),
     array(
         'h' => 'help',
@@ -76,7 +79,7 @@ Options:
 --disable        Disables test environment
 --diag           Get behat test environment status code
 --updatesteps    Update feature step file.
---axe            Include axe accessibility tests
+--no-axe         Disable axe accessibility tests.
 
 -o, --optimize-runs Split features with specified tags in all parallel runs.
 -a, --add-core-features-to-theme Add all core features to specified theme's
@@ -86,7 +89,7 @@ Options:
 Example from Moodle root directory:
 \$ php admin/tool/behat/cli/util_single_run.php --enable
 
-More info in http://docs.moodle.org/dev/Acceptance_testing#Running_tests
+More info in https://moodledev.io/general/development/tools/behat/running
 ";
 
 if (!empty($options['help'])) {
@@ -183,7 +186,7 @@ if ($options['install']) {
         behat_config_manager::set_behat_run_config_value('behatsiteenabled', 1);
     }
 
-    // Define whether to run Behat with axe tests.
+    // Configure axe according to option.
     behat_config_manager::set_behat_run_config_value('axe', $options['axe']);
 
     // Enable test mode.

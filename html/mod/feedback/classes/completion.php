@@ -713,13 +713,13 @@ class mod_feedback_completion extends mod_feedback_structure {
 
         if ($this->form->is_cancelled()) {
             // Form was cancelled - return to the course page.
-            $urltogo = course_get_url($this->courseid ?: $this->feedback->course);
+            $urltogo = new moodle_url('/mod/feedback/view.php', ['id' => $this->get_cm()->id]);
         } else if ($this->form->is_submitted() &&
                 ($this->form->is_validated() || $gopreviouspage)) {
             // Form was submitted (skip validation for "Previous page" button).
             $data = $this->form->get_submitted_data();
             if (!isset($SESSION->feedback->is_started) OR !$SESSION->feedback->is_started == true) {
-                print_error('error', '', $CFG->wwwroot.'/course/view.php?id='.$this->courseid);
+                throw new \moodle_exception('error', '', $CFG->wwwroot.'/course/view.php?id='.$this->courseid);
             }
             $this->save_response_tmp($data);
             if (!empty($data->savevalues) || !empty($data->gonextpage)) {

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_configlog', language 'ar', version '3.11'.
+ * Strings for component 'report_configlog', language 'ar', version '4.1'.
  *
  * @package     report_configlog
  * @category    string
@@ -28,13 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['configlog'] = 'تغييرات التهيئة';
 $string['datefrom'] = 'التاريخ من';
 $string['dateto'] = 'التاريخ إلى';
+$string['entityconfigchange'] = 'تغيير الإعداد';
 $string['plugin'] = 'الإضافة';
 $string['pluginname'] = 'تغييرات التهيئة';
 $string['privacy:metadata'] = 'إن ملحق تغييرات التهيئة لا يخزن أي بيانات شخصية.';
 $string['setting'] = 'الإعداد';
 $string['timemodified'] = 'التاريخ';
 $string['user'] = 'المستخدم';
-$string['user_help'] = 'البحث بواسطة الاسم الأول للمستخدم أو اسم عائلته';
+$string['user_help'] = 'البحث بواسطة الاسم الأول للمستخدم أو اسمه الأخير';
 $string['usernone'] = 'واجهة سطر الأوامر أو التنصيب';
 $string['value'] = 'القيمة';
 $string['value_help'] = 'البحث بواسطة القيمة الجديدة أو الأصلية للتهيئة';

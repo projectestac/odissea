@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'de', version '3.11'.
+ * Strings for component 'survey', language 'de', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -214,10 +214,12 @@ $string['indicator:cognitivedepth'] = 'Umfrage kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Umfrageaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Umfrage kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Umfrageaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Umfrage sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Umfrageaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Umfrage sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Umfrageaktivität während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = 'Anleitungstext';
 $string['invalidsurveyid'] = 'Falsche Umfrage-ID';
 $string['invalidtmptid'] = 'Ungültige Masken-ID';
@@ -226,6 +228,7 @@ $string['modulename'] = 'Umfrage';
 $string['modulename_help'] = 'Die Umfrage unterstützt drei Typen von Umfrageinstrumenten zur Bewertung und Förderung des Online-Lernens. Die Trainer/innen können damit Daten sammeln, die helfen, mehr über die Lerngruppe zu erfahren und die eigene Lehrtätigkeit zu reflektieren.
 
 Die Fragen des Umfrage-Moduls sind vordefiniert und können nicht geändert werden. Individuelle Befragungen können Sie mit dem Feedback-Modul erstellen.';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = 'Umfragen';
 $string['name'] = 'Name';
 $string['newsurveyresponses'] = 'Neue Antworten zu den Umfragen';
@@ -279,6 +282,7 @@ $string['surveytype_help'] = 'Es gibt 3 verfügbare Umfragetypen:
 * Attitudes to Thinking and Learning Survey (ATTLS) - Umfrage zum Denk- und Lernverhalten. Dieser Typ zielt auf die Feststellung, in wie weit eine Person ein \'verbundener Kenner\' (Spaß beim Lernen, mehr kooperativ, Ideen anderer einbeziehend, mit anderen zusammen) oder ein \'separater Kenner\' (kritisch beim Lernen, argumentierend, auf sich selbst verlassend) ist.
 * Critical Incidents survey - Untersuchung kritischer Vorfälle
 * Constructivist On-line Learning Environment Survey (COLLES) - Umfrage zur konstruktivistischen Online-Lernumgebung. Dieser Typ könnte erfassen, in welchem Ausmaß die interaktiven Möglichkeiten des Internets auf die Lernmotivation wirken.';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Danke {$a}, dass Sie sich an dieser Umfrage beteiligt haben.';
 $string['time'] = 'Zeit';
 $string['viewsurveyresponses'] = '{$a} Antworten zur Umfrage anzeigen';

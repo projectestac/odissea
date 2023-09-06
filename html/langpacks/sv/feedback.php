@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'sv', version '3.11'.
+ * Strings for component 'feedback', language 'sv', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -127,6 +127,7 @@ $string['feedback_is_not_open'] = 'Denna återkoppling är inte öppen';
 $string['feedbackclose'] = 'Tillåt svar till';
 $string['feedbackcompleted'] = '{$a->username} slutförde {$a->feedbackname}';
 $string['feedbackopen'] = 'Tillåt svar från';
+$string['feedbackupdated'] = 'Återkoppling uppdaterad';
 $string['file'] = 'Fil';
 $string['filter_by_course'] = 'Filtrera per kurs';
 $string['handling_error'] = 'Ett fel uppstod i återkopplingsmodulens hantering av händelser';
@@ -140,10 +141,12 @@ $string['indicator:cognitivedepth'] = 'Återkoppling kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Återkopplingsaktivitet.';
 $string['indicator:cognitivedepthdef'] = 'Återkoppling kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av Återkopplings-aktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa, Skicka in)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Återkoppling social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Återkopplingsaktivitet.';
 $string['indicator:socialbreadthdef'] = 'Återkoppling social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Återkopplingsaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt, Deltagaren tillsammans med andra)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Kursinformation';
 $string['infotype'] = 'Informationstyp';
 $string['insufficient_responses'] = 'otillräckligt antal svar';
@@ -178,6 +181,7 @@ Feedbackaktiviteter kan användas
 * För att deltagarna ska kunna anmäla sig till kursmoduler, evenemang m.m.
 * För gästundersökningar rörande kursval, skolpolicyer etc.
 * För antimobbningsundersökningar där studenter kan rapportera incidenter anonymt';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = 'Återkopplingar';
 $string['move_item'] = 'Flytta den här frågan';
 $string['multichoice'] = 'Flerval';
@@ -219,6 +223,7 @@ $string['pagebreak'] = 'Sidbrytning';
 $string['pluginadministration'] = 'Administrera återkoppling';
 $string['pluginname'] = 'Återkoppling';
 $string['position'] = 'Position';
+$string['previewquestions'] = 'Förhandsgranska frågor';
 $string['previous_page'] = 'Föregående sida';
 $string['privacy:metadata:completed'] = 'En post över inlämningarna till feedbacken';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Om inlämningen ska användas anonymt.';
@@ -286,3 +291,4 @@ $string['use_one_line_for_each_value'] = 'Använd en rad för varje svar.';
 $string['use_this_template'] = 'Använd den här mallen';
 $string['using_templates'] = 'Använd en mall';
 $string['vertical'] = 'Lodrät';
+$string['whatfor'] = 'Vad vill du göra?';

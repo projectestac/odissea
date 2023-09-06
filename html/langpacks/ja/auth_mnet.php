@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ja', version '3.11'.
+ * Strings for component 'auth_mnet', language 'ja', version '4.1'.
  *
  * @package     auth_mnet
  * @category    string
@@ -38,15 +38,15 @@ $string['privacy:metadata:external:moodle'] = 'このプラグインは外部に
 $string['privacy:metadata:mnet_external:address'] = 'ユーザのアドレスです。';
 $string['privacy:metadata:mnet_external:aim'] = 'ユーザのAIM IDです。';
 $string['privacy:metadata:mnet_external:alternatename'] = 'ユーザの代替名です。';
-$string['privacy:metadata:mnet_external:autosubscribe'] = 'ユーザがフォーラムを自動購読する場合の投稿に関するプリファレンスです。';
-$string['privacy:metadata:mnet_external:calendartype'] = '使用するカレンダータイプのユーザプリファレンスです。';
+$string['privacy:metadata:mnet_external:autosubscribe'] = 'ユーザがフォーラムを自動購読する場合の投稿に関するプレファレンスです。';
+$string['privacy:metadata:mnet_external:calendartype'] = '使用するカレンダータイプのユーザプレファレンスです。';
 $string['privacy:metadata:mnet_external:city'] = 'ユーザの市町村です。';
 $string['privacy:metadata:mnet_external:country'] = 'ユーザの国です。';
 $string['privacy:metadata:mnet_external:currentlogin'] = 'このユーザの現在のログインです。';
 $string['privacy:metadata:mnet_external:department'] = 'このユーザを見つけることのできる学部です。';
 $string['privacy:metadata:mnet_external:description'] = 'このユーザに関する一般詳細です。';
 $string['privacy:metadata:mnet_external:email'] = '連絡先のメールアドレスです。';
-$string['privacy:metadata:mnet_external:emailstop'] = 'ユーザへのメール送信を停止するプリファレンスです。';
+$string['privacy:metadata:mnet_external:emailstop'] = 'ユーザへのメール送信を停止するプレファレンスです。';
 $string['privacy:metadata:mnet_external:firstaccess'] = 'このユーザが最初にサイトにアクセスした日時です。';
 $string['privacy:metadata:mnet_external:firstname'] = 'ユーザの名です。';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'ユーザの名に関するヨミガナ詳細です。';
@@ -55,13 +55,13 @@ $string['privacy:metadata:mnet_external:id'] = 'ユーザのIDです。';
 $string['privacy:metadata:mnet_external:idnumber'] = 'インスティテューションによって与えられたIDナンバーです。';
 $string['privacy:metadata:mnet_external:imagealt'] = 'ユーザのイメージの代替テキストです。';
 $string['privacy:metadata:mnet_external:institution'] = 'ユーザがメンバであるインスティテューションです。';
-$string['privacy:metadata:mnet_external:lang'] = '表示される言語のユーザプリファレンスです。';
+$string['privacy:metadata:mnet_external:lang'] = '表示される言語のユーザプレファレンスです。';
 $string['privacy:metadata:mnet_external:lastaccess'] = 'ユーザが最後にサイトにアクセスした日時です。';
 $string['privacy:metadata:mnet_external:lastlogin'] = 'このユーザの最終ログイン日時です。';
 $string['privacy:metadata:mnet_external:lastname'] = 'ユーザの姓です。';
 $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'ユーザの姓に関するヨミガナ詳細です。';
 $string['privacy:metadata:mnet_external:maildigest'] = 'このユーザのメールダイジェストに関する設定です。';
-$string['privacy:metadata:mnet_external:maildisplay'] = 'ユーザが他のユーザにメールアドレスを表示することに関するプリファレンスです。';
+$string['privacy:metadata:mnet_external:maildisplay'] = 'ユーザが他のユーザにメールアドレスを表示することに関するプレファレンスです。';
 $string['privacy:metadata:mnet_external:middlename'] = 'ユーザのミドルネームです。';
 $string['privacy:metadata:mnet_external:msn'] = 'ユーザのMSN IDです。';
 $string['privacy:metadata:mnet_external:phone1'] = 'ユーザの電話番号です。';
@@ -71,7 +71,7 @@ $string['privacy:metadata:mnet_external:policyagreed'] = 'ユーザがサイト�
 $string['privacy:metadata:mnet_external:skype'] = 'ユーザのSkype IDです。';
 $string['privacy:metadata:mnet_external:suspended'] = 'ユーザがこのシステムで利用停止された場合に表示されるフラグです。';
 $string['privacy:metadata:mnet_external:timezone'] = 'ユーザのタイムゾーンです。';
-$string['privacy:metadata:mnet_external:trackforums'] = 'フォーラムおよび未読管理に関するプリファレンスです。';
+$string['privacy:metadata:mnet_external:trackforums'] = 'フォーラムおよび未読管理に関するプレファレンスです。';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'トラストビットマスクです。';
 $string['privacy:metadata:mnet_external:url'] = 'このユーザに関連するURLです。';
 $string['privacy:metadata:mnet_external:username'] = 'このユーザのユーザ名です。';

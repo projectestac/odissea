@@ -59,6 +59,7 @@ class com_wiris_quizzes_impl_QuizzesEnumUtils {
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$comparisonNames->set(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_ALL, com_wiris_quizzes_api_assertion_ComparisonName::$ANY_ANSWER);
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$comparisonNames->set(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_FUNCTION, com_wiris_quizzes_api_assertion_ComparisonName::$GRADING_FUNCTION);
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$comparisonNames->set(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_GRAPHIC, com_wiris_quizzes_api_assertion_ComparisonName::$GRAPHICALLY_EQUAL);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$comparisonNames->set(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_SKETCH, com_wiris_quizzes_api_assertion_ComparisonName::$SKETCH_EQUAL);
 		}
 		return com_wiris_quizzes_impl_QuizzesEnumUtils::$comparisonNames;
 	}
@@ -172,6 +173,7 @@ class com_wiris_quizzes_impl_QuizzesEnumUtils {
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_HANDWRITING_CONSTRAINTS, com_wiris_quizzes_api_PropertyName::$HANDWRITING_CONSTRAINTS);
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_OPENANSWER_GRAPH_TOOLBAR, com_wiris_quizzes_api_PropertyName::$GRAPH_TOOLBAR);
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_AUXILIARY_CAS_HIDE_FILE_MENU, com_wiris_quizzes_api_PropertyName::$AUXILIARY_CAS_HIDE_FILE_MENU);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames->set(com_wiris_quizzes_impl_LocalData::$KEY_ELEMENTS_TO_HANDWRITE, com_wiris_quizzes_api_PropertyName::$ELEMENTS_TO_HANDWRITE);
 		}
 		return com_wiris_quizzes_impl_QuizzesEnumUtils::$propertyNames;
 	}

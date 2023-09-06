@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'it', version '3.11'.
+ * Strings for component 'enrol_meta', language 'it', version '4.1'.
  *
  * @package     enrol_meta
  * @category    string
@@ -42,3 +42,7 @@ $string['pluginname_desc'] = 'Il plugin di iscrizione collegamento meta corso si
 $string['privacy:metadata:core_group'] = 'Il plugin di iscrizione "Collegamento meta corso" può creare un nuovo gruppo o usare un gruppo esistente dove inserire i gli iscritti al corso collegato.';
 $string['syncall'] = 'Sincronizza tutti gli utenti iscritti';
 $string['syncall_desc'] = 'Consente di sincronizzare tutti gli utenti, anche se privi di ruolo nel corso padre. In alternativa saranno sincronizzati nei corsi figli solo gli utenti con almeno un ruolo.';
+$string['wscannotcreategroup'] = 'Non ci sono autorizzazioni alla creazione di gruppi nel corso collegato con id = {$a}.';
+$string['wsinvalidcourse'] = 'Il corso con id = {$a} non esiste o non ci sono autorizzazioni per il collegamento alle iscrizioni meta corso.';
+$string['wsinvalidmetacourse'] = 'Il meta corso con id id = {$a}  non esiste o non ci sono autorizzazioni per aggiungere istanze di metodi di iscrizione.';
+$string['wsnoinstancesspecified'] = 'Non sono state specificate istanze';

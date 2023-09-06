@@ -17,7 +17,7 @@
  * Implement an accessible aria tree widget, from a nested unordered list.
  * Based on http://oaa-accessibility.org/example/41/.
  *
- * @module     tool_lp/tree
+ * @module     core/tree
  * @copyright  2015 Damyon Wiese <damyon@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -355,7 +355,7 @@ define(['jquery'], function($) {
      // eslint-disable-next-line complexity
     Tree.prototype.handleKeyDown = function(e) {
         var item = $(e.target);
-        var currentIndex = this.getVisibleItems().index(item);
+        var currentIndex = this.getVisibleItems()?.index(item);
 
         if ((e.altKey || e.ctrlKey || e.metaKey) || (e.shiftKey && e.keyCode != this.keys.tab)) {
             // Do nothing.
@@ -480,23 +480,12 @@ define(['jquery'], function($) {
     };
 
     /**
-     * Handle a click (select).
+     * Handle an item click.
      *
-     * @method handleClick
-     * @param {Event} e The event.
+     * @param {Event} event the click event
+     * @param {jQuery} item the item clicked
      */
-    Tree.prototype.handleClick = function(e) {
-        if (e.altKey || e.ctrlKey || e.shiftKey || e.metaKey) {
-            // Do nothing.
-            return;
-        }
-
-        // Get the closest tree item from the event target.
-        var item = $(e.target).closest('[role="treeitem"]');
-        if (!item.is(e.currentTarget)) {
-            return;
-        }
-
+    Tree.prototype.handleItemClick = function(event, item) {
         // Update the active item.
         item.focus();
 
@@ -504,6 +493,27 @@ define(['jquery'], function($) {
         if (this.isGroupItem(item)) {
             this.toggleGroup(item);
         }
+    };
+
+    /**
+     * Handle a click (select).
+     *
+     * @method handleClick
+     * @param {Event} event The event.
+     */
+    Tree.prototype.handleClick = function(event) {
+        if (event.altKey || event.ctrlKey || event.shiftKey || event.metaKey) {
+            // Do nothing.
+            return;
+        }
+
+        // Get the closest tree item from the event target.
+        var item = $(event.target).closest('[role="treeitem"]');
+        if (!item.is(event.currentTarget)) {
+            return;
+        }
+
+        this.handleItemClick(event, item);
     };
 
     /**

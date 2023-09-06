@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'ca', version '3.11'.
+ * Strings for component 'auth_cas', language 'ca', version '4.1'.
  *
  * @package     auth_cas
  * @category    string
@@ -26,8 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['CASform'] = 'Opció d\'autenticació';
-$string['accesCAS'] = 'usuaris CAS';
-$string['accesNOCAS'] = 'altres usuaris';
 $string['auth_cas_auth_user_create'] = 'Crea usuaris externament';
 $string['auth_cas_baseuri'] = 'URI del servidor (en blanc si no té baseUri)<br />Per exemple, si el servidor CAS respon a l\'adreça ordinador.domini.cat/CAS/ llavors <br />auth_cas_baseuri = CAS/';
 $string['auth_cas_baseuri_key'] = 'URI base';

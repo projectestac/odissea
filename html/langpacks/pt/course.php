@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'pt', version '3.11'.
+ * Strings for component 'course', language 'pt', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -49,6 +49,8 @@ $string['aria:favourite'] = 'Disciplina está marcada com estrela';
 $string['aria:favouritestab'] = 'Atividades marcadas com estrela';
 $string['aria:modulefavourite'] = 'Marcar a atividade {$a} com estrela';
 $string['aria:recommendedtab'] = 'Atividades recomendadas';
+$string['browsecourseadminindex'] = 'Navegue pela administração da disciplina com este índice.';
+$string['browsesettingindex'] = 'Navegue pelas configurações com este índice.';
 $string['completion_automatic:done'] = 'Concluída:';
 $string['completion_automatic:failed'] = 'Sem aprovação:';
 $string['completion_automatic:todo'] = 'Por concluir:';
@@ -61,9 +63,17 @@ $string['completion_setby:auto:todo'] = 'Por concluir: {$a->condition} (marcada 
 $string['completion_setby:manual:done'] = '{$a->activityname} foi marcada como concluída por {$a->setby}. Clique para desmarcar.';
 $string['completion_setby:manual:markdone'] = '{$a->activityname} foi marcada como não concluída por {$a->setby}. Clique para marcar como concluída.';
 $string['completionrequirements'] = 'Requisitos de conclusão de {$a}';
+$string['courseaccess'] = 'Acesso à disciplina';
 $string['coursealreadyfinished'] = 'Disciplina já terminada';
+$string['coursecontentnotification'] = 'Enviar notificação de alteração de conteúdo';
+$string['coursecontentnotification_help'] = 'Se ativar esta opção, será enviada uma notificação aos utilizadores da disciplina sobre qualquer alteração da atividade/recurso ou sobre nova atividade/recurso. Tenha em atenção que a notificação será enviada apenas se o novo recurso ou a nova atividade estiver visível.';
+$string['coursecontentnotifnew'] = 'Novo conteúdo em {$a->coursename}';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> é novo/a na disciplina <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Alterar as preferências de notificação</a></p>';
+$string['coursecontentnotifupdate'] = 'Alteração de conteúdo em {$a->coursename}';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> foi alterado/a na disciplina <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Alterar as preferências de notificação</a></p>';
 $string['coursenotyetfinished'] = 'A disciplina ainda não terminou';
 $string['coursenotyetstarted'] = 'A disciplina ainda não iniciou';
+$string['courseparticipants'] = 'Participantes da disciplina';
 $string['coursetoolong'] = 'A disciplina é muito longa';
 $string['customfield_islocked'] = 'Bloqueado';
 $string['customfield_islocked_help'] = 'Se o campo estiver bloqueado, apenas os utilizadores com a permissão de alterar campos personalizados bloqueados (por predefinição, apenas os utilizadores com a função predefinida de gestor) poderão alterá-lo nas configurações da disciplina.';
@@ -73,6 +83,10 @@ $string['customfield_visibility_help'] = 'Esta configuração determina quem pod
 $string['customfield_visibletoall'] = 'Todos';
 $string['customfield_visibletoteachers'] = 'Professores';
 $string['customfieldsettings'] = 'Configurações gerais dos campos personalizados da disciplina';
+$string['daystakingcourse'] = 'Dias de disciplina';
+$string['downloadcontent'] = 'Incluir no descarregamento do conteúdo da disciplina';
+$string['downloadcontent_help'] = 'Esta atividade ou recurso deve ser incluída(o) no arquivo Zip do conteúdo da disciplina disponível para descarregamento? Ficheiros, Pastas, Páginas e Separadores podem ser descarregados na íntegra. Para todas as outras atividades e ou recursos, apenas o nome e a descrição são descarregados. Esta opção requer que a opção \'Ativar descarregamento do conteúdo da disciplina\' esteja ativa nas configurações da disciplina.
+Esta configuração não tem efeito no descarregamento de conteúdo através da Aplicação móvel para uso offline.';
 $string['downloadcourseconfirmation'] = 'Está prestes a descarregar um arquivo Zip com o conteúdo da disciplina (estão excluídos os itens que não podem ser descarregados e quaisquer ficheiros maiores do que {$a}).';
 $string['downloadcoursecontent'] = 'Descarregar o conteúdo da disciplina';
 $string['downloadcoursecontent_help'] = 'Esta configuração determina se o conteúdo da disciplina pode, ou não, ser descarregado por utilizadores com a permissão para descarregar o conteúdo da disciplina (por predefinição, utilizadores com o papel de aluno ou professor).';
@@ -82,6 +96,7 @@ $string['favourite'] = 'Disciplina com estrela';
 $string['gradetopassnotset'] = 'Esta disciplina não tem nota de aprovação definida. Pode ser definida em Avaliação da disciplina (Configuração da pauta).';
 $string['informationformodule'] = 'Informações sobre a atividade {$a}';
 $string['module'] = 'Atividade';
+$string['namewithlink'] = 'Nome da categoria com hiperligação';
 $string['noaccesssincestartinfomessage'] = 'Olá {$a->userfirstname},
 <p>Alguns alunos da disciplina \'{$a->coursename}\' nunca acederam à disciplina.</p>';
 $string['nocourseactivity'] = 'Não existe atividade da disciplina suficiente entre o início e o fim da disciplina';
@@ -92,6 +107,9 @@ $string['norecentaccessesinfomessage'] = 'Olá {$a->userfirstname},
 <p>Alguns alunos da disciplina \'{$a->coursename}\' não acederam à disciplina ultimamente.</p>';
 $string['noteachinginfomessage'] = 'Olá {$a->userfirstname},
 <p>As disciplinas com datas de início na próxima semana foram identificadas como sem inscrições de alunos ou sem professor.</p>';
+$string['participants:perpage'] = 'Participantes por página';
+$string['participants:perpage_help'] = 'Especifique o número de participantes a mostrar por página em cada disciplina.';
+$string['participantsnavigation'] = 'Participantes de navegação terciária.';
 $string['privacy:completionpath'] = 'Conclusão da disciplina';
 $string['privacy:favouritespath'] = 'Informação da disciplina com estrela';
 $string['privacy:metadata:activityfavouritessummary'] = 'O sistema da disciplina contém informações sobre quais itens do seletor de atividades foram marcados com uma estrela pelo utilizador.';

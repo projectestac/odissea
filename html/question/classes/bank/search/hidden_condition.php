@@ -24,12 +24,14 @@
  */
 
 namespace core_question\bank\search;
-defined('MOODLE_INTERNAL') || die();
+
+use core_question\local\bank\question_version_status;
 
 /**
  * This class controls whether hidden / deleted questions are hidden in the list.
  *
  * @copyright 2013 Ray Morris
+ * @author    2021 Safat Shahin <safatshahin@catalyst-au.net>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class hidden_condition extends condition {
@@ -46,10 +48,16 @@ class hidden_condition extends condition {
     public function __construct($hide = true) {
         $this->hide = $hide;
         if ($hide) {
-            $this->where = 'q.hidden = 0';
+            $this->where = "qv.status = '" . question_version_status::QUESTION_STATUS_READY . "' " .
+                " OR qv.status = '" . question_version_status::QUESTION_STATUS_DRAFT . "' ";
         }
     }
 
+    /**
+     * SQL fragment to add to the where clause.
+     *
+     * @return string
+     */
     public function where() {
         return  $this->where;
     }
@@ -58,11 +66,11 @@ class hidden_condition extends condition {
      * Print HTML to display the "Also show old questions" checkbox
      */
     public function display_options_adv() {
-        echo \html_writer::start_div();
-        echo \html_writer::empty_tag('input', array('type' => 'hidden', 'name' => 'showhidden',
-                                                   'value' => '0', 'id' => 'showhidden_off'));
-        echo \html_writer::checkbox('showhidden', '1', (! $this->hide), get_string('showhidden', 'question'),
-                                   array('id' => 'showhidden_on', 'class' => 'searchoptions mr-1'));
-        echo \html_writer::end_div() . "\n";
+        global $PAGE;
+        $displaydata = [];
+        if (!$this->hide) {
+            $displaydata['checked'] = 'checked';
+        }
+        return $PAGE->get_renderer('core_question', 'bank')->render_hidden_condition_advanced($displaydata);
     }
 }

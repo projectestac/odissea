@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'ca', version '3.11'.
+ * Strings for component 'userkey', language 'ca', version '4.1'.
  *
  * @package     userkey
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['createnewkey'] = 'Crea una nova clau d\'usuari';
+$string['createnewkey'] = 'Crea una clau d\'usuari nova';
 $string['createuserkey'] = 'Crea clau d\'usuari';
 $string['deletekeyconfirm'] = 'Segur que voleu suprimir aquesta clau d\'usuari?';
 $string['edituserkey'] = 'Edita clau d\'usuari';
@@ -37,5 +37,5 @@ $string['keyvaliduntil_help'] = 'Seleccioneu una data opcional després de la qu
 $string['keyvalue'] = 'Valor de la clau';
 $string['newuserkey'] = 'Nova clau d\'usuari';
 $string['userkey'] = 'Clau d\'usuari';
-$string['userkey_help'] = 'Seleccioneu una clau, prèviament desada, per donar accés als usuaris a les dades publicades amb aquest connector d\'exportació (sense que hagin d\'iniciar una sessió a Moodle). Seleccioneu «Crea una nova clau d\'usuari» per generar una nova clau quan envieu aquest formulari.';
+$string['userkey_help'] = 'Seleccioneu una clau, prèviament desada, per donar accés als usuaris a les dades publicades amb aquest connector d\'exportació (sense que hagin d\'iniciar una sessió a Moodle). Seleccioneu «Crea una clau d\'usuari nova» per generar una clau nova quan envieu aquest formulari.';
 $string['userkeys'] = 'Claus d\'usuari';

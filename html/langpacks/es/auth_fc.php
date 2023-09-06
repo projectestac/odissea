@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_fc', language 'es', version '3.11'.
+ * Strings for component 'auth_fc', language 'es', version '4.1'.
  *
  * @package     auth_fc
  * @category    string
@@ -39,3 +39,4 @@ $string['auth_fcpasswd_key'] = 'Contraseña';
 $string['auth_fcuserid'] = 'Identificador de usuario de la cuenta FirstClass con privilegios de \'Subadministrador\'.';
 $string['auth_fcuserid_key'] = 'ID del Usuario';
 $string['pluginname'] = 'Usar servidor FirstClass';
+$string['privacy:metadata'] = 'El plugin de Autenticación FirstClass no almacena ningun dato personal.';

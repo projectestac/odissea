@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'ca', version '3.11'.
+ * Strings for component 'booking', language 'ca', version '4.1'.
  *
  * @package     booking
  * @category    string
@@ -30,5 +30,9 @@ $string['cancelbooking'] = 'Cancel·la la reserva';
 $string['comments'] = 'Comentaris';
 $string['eventduration'] = 'Durada de l\'esdeveniment';
 $string['location'] = 'Ubicació';
+$string['next'] = 'Següent';
+$string['question'] = 'Pregunta';
+$string['responses'] = 'Respostes';
 $string['sendreminderemail'] = 'Envia un recordatori per correu electrònic';
 $string['withselected'] = 'Amb els usuaris seleccionats:';
+$string['yes'] = 'Sí';

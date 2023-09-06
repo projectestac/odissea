@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'zh_cn', version '3.11'.
+ * Strings for component 'lesson', language 'zh_cn', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -52,7 +52,6 @@ $string['addedendofcluster'] = '新建了一个簇结束页';
 $string['addendofbranch'] = '新建分支结束页';
 $string['addendofcluster'] = '新建簇结束页';
 $string['addessay'] = '新建一个问答题页';
-$string['additionalattemptsremaining'] = '已完成，你能重新尝试本练习';
 $string['addmatching'] = '新建一个匹配题页面';
 $string['addmultichoice'] = '新建一个选择题（可多选）页';
 $string['addnewgroupoverride'] = '添加群组覆盖';
@@ -187,7 +186,9 @@ $string['editcluster'] = '编辑一个簇';
 $string['editendofbranch'] = '编辑一个分支结束页';
 $string['editendofcluster'] = '编辑一个簇结束页';
 $string['editessay'] = '编辑一个简答题页';
+$string['editinglesson'] = '编辑程序教学';
 $string['editingquestionpage'] = '编辑{$a}题目页面';
+$string['editlesson'] = '编辑{$a}';
 $string['editlessonsettings'] = '修改程序教学的设置';
 $string['editmatching'] = '编辑一个匹配题页';
 $string['editmultichoice'] = '编辑一个选择题页';
@@ -276,10 +277,12 @@ $string['indicator:cognitivedepth'] = '程序教学活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在程序教学活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '课程认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到课程活动提供的认知参与百分比（级别=无查看、查看、提交、查看反馈、评论反馈、查看反馈后重新提交）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '程序教学活动社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在程序教学活动中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = '社会课';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到课程活动提供的社会参与度的百分比（级别=不参与、参与者单独参与、参与者与其他人一起参与）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insertedpage'] = '已经插入页面';
 $string['invalidfile'] = '无效文件';
 $string['invalidid'] = '没有课程模块ID或练习ID传入';
@@ -300,14 +303,13 @@ $string['lesson:manage'] = '管理程序教学活动';
 $string['lesson:manageoverrides'] = '管理课程覆盖';
 $string['lesson:view'] = '查看课程活动';
 $string['lesson:viewreports'] = '查看程序教学报表';
+$string['lessonbeingpreviewed'] = '当前正在预览程序教学模块。';
 $string['lessonclosed'] = '此程序教学在 {$a} 关闭。';
 $string['lessoncloses'] = '关闭程序教学';
-$string['lessoncloseson'] = '程序教学在{$a}关闭';
 $string['lessoneventcloses'] = '{$a}关闭';
 $string['lessoneventopens'] = '{$a}打开';
 $string['lessonformating'] = '程序教学显示格式';
 $string['lessonmenu'] = '程序教学菜单';
-$string['lessonname'] = '课程：{$a}';
 $string['lessonnotready'] = '这个程序教学还没有准备好。请与{$a}联系。';
 $string['lessonnotready2'] = '此程序教学还没准备。';
 $string['lessonopen'] = '本程序教学将在 {$a} 开放。';
@@ -346,6 +348,7 @@ $string['modattempts_help'] = '如果启用，学生可以再次从头浏览此�
 $string['modattemptsnoteacher'] = '学生回顾仅适用于学生。';
 $string['modulename'] = '程序教学';
 $string['modulename_help'] = '程序教学模块使教师可以为学生创造自适应性的学习体验。它由一系列的页面组成，每个页面都可以包含题目。';
+$string['modulename_link'] = 'mod/lesson/view';
 $string['modulenameplural'] = '程序教学';
 $string['move'] = '移动页面';
 $string['movedpage'] = '已移动的页面';
@@ -380,6 +383,7 @@ $string['nooneenteredthis'] = '没有人输入这个。';
 $string['noonehasanswered'] = '还没有人回答问答题。';
 $string['noonehasansweredgroup'] = '{$a}还没有人回答过一个论文问题。';
 $string['noopen'] = '没有开放日期';
+$string['nooverridecreated'] = '未创建覆盖。';
 $string['nooverridedata'] = '必须至少替代一个课程设置。';
 $string['noretake'] = '您不可以重新学习此程序教学。';
 $string['normal'] = '常规-按照自定义流程';
@@ -596,7 +600,6 @@ $string['withselectedattempts'] = '通过选定的尝试。。。';
 $string['wronganswerjump'] = '回答错误跳转到';
 $string['wronganswerscore'] = '回答错误得分';
 $string['wrongresponse'] = '给错误答案的回应';
-$string['xattempts'] = '{$a}尝试';
 $string['youhaveseen'] = '您已经看过本程序教学多个页面。<br />您要从上次看过的页面开始吗？';
 $string['youranswer'] = '您的回答';
 $string['yourcurrentgradeis'] = '您当前的分数是{$a}';

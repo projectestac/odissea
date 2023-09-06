@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'it', version '3.11'.
+ * Strings for component 'qtype_match', language 'it', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -40,9 +40,12 @@ $string['pleaseananswerallparts'] = 'Per favore rispondi a tutte le parti della 
 $string['pluginname'] = 'Corrispondenza';
 $string['pluginname_help'] = 'Lo studente dovrà far corrispondere i termini presenti nell\'elenco delle domande con i termini presenti nell\'elenco delle risposte.
 ';
+$string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = 'Creazione domanda Corrispondenza';
 $string['pluginnameediting'] = 'Modifica domanda Corrispondenza';
 $string['pluginnamesummary'] = 'La risposta a ciascuna sotto domanda deve essere selezionata da un elenco di risposte possibili.';
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Corrispondenza\' non memorizza dati personali.';
+$string['regradeissuenumchoiceschanged'] = 'Il numero di scelte è stato modificato.';
+$string['regradeissuenumstemschanged'] = 'Il numero di sotto domande è stato modificato.';
 $string['shuffle'] = 'Mescola';
 $string['shuffle_help'] = 'Ogni volta che lo studente tenterà il quiz, le domande saranno presentate in ordine casuale  contenente questa domanda, l\'ordine delle possibili risposte sarà casuale - sempre che l\'impostazione del Quiz "Domande in ordine casuale" sia abilitata. In una domanda di tipo Corrispondenza, solo le domande saranno influenzate da questa impostazione. La possibili risposte saranno sempre ordinate casualmente.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_multianswer', language 'ko', version '3.11'.
+ * Strings for component 'qformat_multianswer', language 'ko', version '4.1'.
  *
  * @package     qformat_multianswer
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '내장된 답 (Cloze)';
 $string['pluginname_help'] = 'Cloze (답 내장) 형식은 질문 안에 단답 및 다답 등의 요소를 내장한 일련의 문구를 가져올 수 있게 합니다.';
+$string['pluginname_link'] = 'question/type/multianswer';

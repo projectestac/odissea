@@ -45,8 +45,7 @@ $begin = optional_param('begin', '', PARAM_TEXT);
 $end = optional_param('end', '', PARAM_TEXT);
 
 // 2. Load Grades
-$grades = rgrade_get_grades(
-		$courseid, $bookid, $unitid, $groupid, $studentid, $stateid, $begin, $end);
+$grades = rgrade_get_grades($courseid, $bookid, $studentid, $unitid, $groupid, $stateid, $begin, $end);
 
 if (!$grades){
 	rgrade_json_error("Error SQL");

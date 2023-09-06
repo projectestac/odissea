@@ -17,7 +17,6 @@
 namespace qtype_ddmarker\form;
 
 use qtype_ddmarker_edit_form;
-use question_edit_contexts;
 
 defined('MOODLE_INTERNAL') || die();
 global $CFG;
@@ -61,7 +60,7 @@ class edit_form_test extends \advanced_testcase {
         $fakequestion->inputs = null;
 
         $form = new qtype_ddmarker_edit_form(new \moodle_url('/'), $fakequestion, $category,
-                new question_edit_contexts($syscontext));
+                new \core_question\local\bank\question_edit_contexts($syscontext));
 
         return [$form, $category];
     }

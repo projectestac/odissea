@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'it', version '3.11'.
+ * Strings for component 'offlinequiz', language 'it', version '4.1'.
  *
  * @package     offlinequiz
  * @category    string
@@ -228,7 +228,6 @@ $string['gradingoptionsheading'] = 'Opzioni di valutazione';
 $string['greeniscross'] = 'conteggiato come una croce';
 $string['group'] = 'Gruppo';
 $string['groupoutofrange'] = 'Il gruppo era fuori dal limite ed è stato sostituito con il gruppo A.';
-$string['groupquestions'] = 'Domande gruppo';
 $string['hasresult'] = 'Esiste un risultato';
 $string['hotspotdeletiontask'] = 'Eliminazione degli hotspot';
 $string['html'] = 'HTML';
@@ -517,7 +516,6 @@ $string['questiontextisempty'] = '[testo della domanda vuoto]';
 $string['quizdate'] = 'Data del quiz offline';
 $string['quizopenclose'] = 'Date di apertura e chiusura';
 $string['quizopenclose_help'] = 'Gli studenti possono vedere i loro tentativi solo dopo la data di apertura e prima della data di chiusura.';
-$string['quizquestions'] = 'Domande quiz';
 $string['randomfromexistingcategory'] = 'Domande casuali da una categoria esistente';
 $string['randomnumber'] = 'Numero di domande casuali';
 $string['randomquestionusinganewcategory'] = 'Domande casuali utilizzando una nuova categoria';

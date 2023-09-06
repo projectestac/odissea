@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'pt', version '3.11'.
+ * Strings for component 'webservice', language 'pt', version '4.1'.
  *
  * @package     webservice
  * @category    string
@@ -30,6 +30,7 @@ $string['actwebserviceshhdr'] = 'Protocolos de web services disponíveis';
 $string['addaservice'] = 'Adicionar serviço';
 $string['addcapabilitytousers'] = 'Verificar permissões dos utilizadores';
 $string['addcapabilitytousersdescription'] = 'Os utilizadores devem ter duas permissões: a permissão "webservice:createtoken" e a permissão correspondente aos protocolos usados (ex: webservice/rest:use, webservice/soap:use). Para ter acesso a esta configuração é necessário criar um papel "web services" com as permissões necessárias e atribuir este papel, no contexto do site, ao utilizador que irá usar os web services.';
+$string['addexternalservice'] = 'Adicionar serviço externo';
 $string['addfunction'] = 'Adicionar função';
 $string['addfunctionhelp'] = 'Selecionar função a adicionar ao serviço';
 $string['addfunctions'] = 'Adicionar funções';
@@ -61,14 +62,16 @@ $string['default'] = 'Predefinido para "{$a}"';
 $string['deleteaservice'] = 'Apagar serviço';
 $string['deleteservice'] = 'Apagar o serviço: {$a->name} (id: {$a->id})';
 $string['deleteserviceconfirm'] = 'Ao apagar um serviço os tokens relacionados com este serviço serão também apagados.  Tem a certeza de que pretende apagar o serviço externo "{$a}"?';
+$string['deletetoken'] = 'Apagar token';
 $string['deletetokenconfirm'] = 'Tem a certeza de que pretende apagar este token de web service para o utilizador <strong>{$a->user}</strong> no serviço <strong>{$a->service}</strong>?';
+$string['deprecated'] = 'Descontinuado';
 $string['disabledwarning'] = 'Todos os protocolos de web service estão desativados. A opção "Ativar web services" faz parte das "Funcionalidades avançadas".';
 $string['doc'] = 'Documentação';
 $string['docaccessrefused'] = 'Não tem permissão para consultar a documentação deste token';
-$string['documentation'] = 'documentação do web service';
 $string['downloadfiles'] = 'Pode descarregar ficheiros';
 $string['downloadfiles_help'] = 'Se ativar esta opção, qualquer utilizador pode descarregar ficheiros com chaves de segurança. É claro que eles estão limitados aos ficheiros que estão autorizados a descarregar no site.';
 $string['editaservice'] = 'Alterar serviço';
+$string['editexternalservice'] = 'Editar serviço externo';
 $string['editservice'] = 'Alterar o serviço: {$a->name} (id: {$a->id})';
 $string['enabled'] = 'Ativo';
 $string['enabledocumentation'] = 'Ativar documentação para programadores';

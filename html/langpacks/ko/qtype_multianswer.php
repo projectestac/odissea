@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ko', version '3.11'.
+ * Strings for component 'qtype_multianswer', language 'ko', version '4.1'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -40,6 +40,7 @@ $string['noquestions'] = '답 내장형(복수답) "<strong>{$a}</strong>" 의 �
 $string['pleaseananswerallparts'] = '질문의 모든 부분에 대해 답하세요.';
 $string['pluginname'] = '답 내장형(Cloze)';
 $string['pluginname_help'] = '답 내장형 질문(Cloze)에는 선다형 혹은 단답형 답이 포함된 문장 구절이 질문과 같이 있습니다.';
+$string['pluginname_link'] = 'question/type/multianswer';
 $string['pluginnameadding'] = '답 내장형(Cloze) 질문 추가';
 $string['pluginnameediting'] = '답 내장형(Cloze) 질문 편집';
 $string['pluginnamesummary'] = '본 형식의 질문은 매우 융통성이 있지만 반드시 엠베드된 선다형, 단답형 및 수치형 질문을 만들때  특별한 코드를 포함하는 문장을 입력하여 만들 수 있습니다.';

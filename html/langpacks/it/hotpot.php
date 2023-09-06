@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'it', version '3.11'.
+ * Strings for component 'hotpot', language 'it', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -79,6 +79,7 @@ $string['isgreaterthan'] = 'è maggiore di';
 $string['islessthan'] = 'è minore di';
 $string['lastaccess'] = 'Ultimo accesso';
 $string['modulename'] = 'Quiz Hot Potatoes';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'Quiz Hot Potatoes';
 $string['navigation'] = 'Navigazione';
 $string['navigation_frame'] = 'Frame di navigazione';

@@ -47,11 +47,11 @@ export const addToastRegion = async(parent) => {
  * Add a new toast or snackbar notification to the page.
  *
  * @method
- * @param {String} message
+ * @param {String|Promise<string>} message
  * @param {Object} configuration
  * @param {String} [configuration.title]
  * @param {String} [configuration.subtitle]
- * @param {String} [configuration.type] Optional type of the toast notification ('success', 'info', 'warning' or 'danger')
+ * @param {String} [configuration.type=info] Optional type of the toast notification ('success', 'info', 'warning' or 'danger')
  * @param {Boolean} [configuration.autohide=true]
  * @param {Boolean} [configuration.closeButton=false]
  * @param {Number} [configuration.delay=4000]
@@ -60,20 +60,22 @@ export const addToastRegion = async(parent) => {
  * import {add as addToast} from 'core/toast';
  * import {get_string as getString} from 'core/str';
  *
- * getString('example', 'mod_myexample')
- * .then(str => {
- *     addToast(str, {
- *         type: 'warning',
- *         autohide: false,
- *         closeButton: true,
- *     });
- *     return;
- * })
- * .catch();
+ * addToast('Example string', {
+ *     type: 'warning',
+ *     autohide: false,
+ *     closeButton: true,
+ * });
+ *
+ * addToast(getString('example', 'mod_myexample'), {
+ *     type: 'warning',
+ *     autohide: false,
+ *     closeButton: true,
+ * });
  */
 export const add = async(message, configuration) => {
     const pendingPromise = new Pending('addToastRegion');
     configuration = {
+        type: 'info',
         closeButton: false,
         autohide: true,
         delay: 4000,
@@ -84,7 +86,7 @@ export const add = async(message, configuration) => {
     try {
         const targetNode = await getTargetNode();
         const {html, js} = await Templates.renderForPromise(templateName, {
-            message,
+            message: await message,
             ...configuration
         });
         Templates.prependNodeContents(targetNode, html, js);

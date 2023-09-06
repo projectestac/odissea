@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_truefalse', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -34,9 +34,12 @@ $string['feedbacktrue'] = '选择“对”时的反馈。';
 $string['pleaseselectananswer'] = '请选择答案。';
 $string['pluginname'] = '判断题';
 $string['pluginname_help'] = '回答问题（可以包含图片）时，答题者要选择对或是错。';
+$string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = '添加判断题';
 $string['pluginnameediting'] = '编辑判断题';
 $string['pluginnamesummary'] = '选择题的一种简单形式，只有“对”和“错”两个选项。';
 $string['privacy:metadata'] = '判断题类型插件不存储任何个人数据。';
+$string['privacy:preference:showstandardinstruction'] = '是否显示标准说明。';
 $string['selectone'] = '选择一项：';
+$string['showstandardinstruction'] = '显示标准说明';
 $string['true'] = '对';

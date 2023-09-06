@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'ko', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'ko', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -55,6 +55,7 @@ $string['deletelastitem'] = '마지막 항목 삭제';
 $string['distributionoption'] = '배포 옵션 선택';
 $string['editdatasets'] = '와일드카드 숫자집합 편집';
 $string['editdatasets_help'] = '임의 값들은 각 와일드카드 파라메터에 해당하는 값들을 넣은 후 "추가" 버튼을 누르면 만들어 집니다. 자동으로 10 또는 그 이상의 값을 만들고 싶으면, "추가" 버튼을 누르기 전에 필요한 값의 갯수를 선택하면 됩니다. 균일 분산이란 한계 내에서 동일하게 생성될 수 있음을 의미합니다. 로그형 분산이란, 하위 한계에 다가갈수록 더 자주 나타날 분포를 말합니다.';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = '기존의 공유 숫자집합 사용';
 $string['existingcategory2'] = '본 범주의 다른 질문에서도 사용된 기존 파일 집합 중의 한 파일';
 $string['existingcategory3'] = '본 범주의 다른 질문에서도 사용된 기존 링크 집합 중의 한 링크';
@@ -111,6 +112,7 @@ $string['param'] = '매개변수 {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = '부분답에 대해';
 $string['pluginname'] = '계산형';
 $string['pluginname_help'] = '계산형 질문은 퀴즈가 실시될 때, 중괄호 속의 와일드카드 대신 개개의 값으로 대치된 질문이 만들어 질 수 있도록 합니다. 예를 들어 "길이 {l} 과 폭 {w} 로 만들어진 직사각형의 면적은 얼마인가?"라는 질문에 대해서 "{l}*{w}"이 정답 공식이 될 것입니다.(여기서 *는 곱셈기호입니다)';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = '계산형 질문 추가';
 $string['pluginnameediting'] = '계산형 질문 편집';
 $string['pluginnamesummary'] = '계산형 질문은 수치형  질문과 유사하나 퀴즈가 치루어질 때 숫자집합에서 무작위로 추출한 숫자를 사용합니다.';

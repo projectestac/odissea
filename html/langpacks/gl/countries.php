@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'gl', version '3.11'.
+ * Strings for component 'countries', language 'gl', version '4.1'.
  *
  * @package     countries
  * @category    string
@@ -47,7 +47,7 @@ $string['BD'] = 'Bangladesh';
 $string['BE'] = 'Bélxica';
 $string['BF'] = 'Burkina Faso';
 $string['BG'] = 'Bulgaria';
-$string['BH'] = 'Bahrein';
+$string['BH'] = 'Barein';
 $string['BI'] = 'Burundi';
 $string['BJ'] = 'Benín';
 $string['BL'] = 'San Bartolomeu';
@@ -60,7 +60,7 @@ $string['BS'] = 'Bahamas';
 $string['BT'] = 'Bután';
 $string['BV'] = 'Illa Bouvet';
 $string['BW'] = 'Botsuana';
-$string['BY'] = 'Bielorrusia';
+$string['BY'] = 'Belarús';
 $string['BZ'] = 'Belice';
 $string['CA'] = 'Canadá';
 $string['CC'] = 'Illas Cocos (Keeling)';
@@ -81,7 +81,7 @@ $string['CW'] = 'Curaçao';
 $string['CX'] = 'Illa Christmas';
 $string['CY'] = 'Chipre';
 $string['CZ'] = 'República Checa';
-$string['DE'] = 'Alemaña';
+$string['DE'] = 'Alemania';
 $string['DJ'] = 'Xibutí';
 $string['DK'] = 'Dinamarca';
 $string['DM'] = 'Dominica';
@@ -90,7 +90,7 @@ $string['DZ'] = 'Alxeria';
 $string['EC'] = 'Ecuador';
 $string['EE'] = 'Estonia';
 $string['EG'] = 'Exipto';
-$string['EH'] = 'Sáhara Occidental';
+$string['EH'] = 'Sáhara Ocidental';
 $string['ER'] = 'Eritrea';
 $string['ES'] = 'España';
 $string['ET'] = 'Etiopía';
@@ -98,7 +98,7 @@ $string['FI'] = 'Finlandia';
 $string['FJ'] = 'Fidxi';
 $string['FK'] = 'Illas Malvinas (Falkland)';
 $string['FM'] = 'Micronesia (Estados Federados da)';
-$string['FO'] = 'Illas Feroe';
+$string['FO'] = 'Illas Feroes';
 $string['FR'] = 'Francia';
 $string['GA'] = 'Gabón';
 $string['GB'] = 'Reino Unido';
@@ -117,8 +117,8 @@ $string['GR'] = 'Grecia';
 $string['GS'] = 'Xeorxia do Sur e as Illas Sandwich do Sur';
 $string['GT'] = 'Guatemala';
 $string['GU'] = 'Guam';
-$string['GW'] = 'Guinea-Bissau';
-$string['GY'] = 'Güiana';
+$string['GW'] = 'Guinea-Bisau';
+$string['GY'] = 'Guiana';
 $string['HK'] = 'Hong Kong';
 $string['HM'] = 'Illa Heard e Illas McDonald';
 $string['HN'] = 'Honduras';
@@ -147,9 +147,9 @@ $string['KM'] = 'Comores';
 $string['KN'] = 'San Cristovo e Nevis';
 $string['KP'] = 'Corea (República democrática popular de)';
 $string['KR'] = 'Corea (República de)';
-$string['KW'] = 'Kuwait';
+$string['KW'] = 'Kuvait';
 $string['KY'] = 'Illas Caimán';
-$string['KZ'] = 'Casaquistán';
+$string['KZ'] = 'Cazaquistán';
 $string['LA'] = 'República Popular Democrática de Laos';
 $string['LB'] = 'Líbano';
 $string['LC'] = 'Santa Lucía';
@@ -203,7 +203,7 @@ $string['PF'] = 'Polinesia francesa';
 $string['PG'] = 'Papúa Nova Guinea';
 $string['PH'] = 'Filipinas';
 $string['PK'] = 'Paquistán';
-$string['PL'] = 'Polonia';
+$string['PL'] = 'Polónia';
 $string['PM'] = 'San Pedro e Miquelón';
 $string['PN'] = 'Pitcairn';
 $string['PR'] = 'Porto Rico';
@@ -249,7 +249,7 @@ $string['TL'] = 'Timor do Leste';
 $string['TM'] = 'Turquemenistán';
 $string['TN'] = 'Tunisia';
 $string['TO'] = 'Tonga';
-$string['TR'] = 'Turquía';
+$string['TR'] = 'Turquia';
 $string['TT'] = 'Trinidad e Tobago';
 $string['TV'] = 'Tuvalu';
 $string['TW'] = 'Taiwán';

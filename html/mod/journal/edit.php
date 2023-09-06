@@ -50,6 +50,7 @@ $PAGE->set_url('/mod/journal/edit.php', array('id' => $id));
 $PAGE->navbar->add(get_string('edit'));
 $PAGE->set_title(format_string($journal->name));
 $PAGE->set_heading($course->fullname);
+$PAGE->set_activity_record($journal);
 
 $data = new stdClass();
 
@@ -142,7 +143,9 @@ if ($form->is_cancelled()) {
 echo $OUTPUT->header();
 echo $OUTPUT->heading(format_string($journal->name));
 
-$intro = format_module_intro('journal', $journal, $cm->id);
-echo $OUTPUT->box($intro);
+if ($CFG->branch < 400) {
+    $intro = format_module_intro('journal', $journal, $cm->id);
+    echo $OUTPUT->box($intro);
+}
 $form->display();
 echo $OUTPUT->footer();

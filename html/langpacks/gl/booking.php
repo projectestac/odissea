@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'gl', version '3.11'.
+ * Strings for component 'booking', language 'gl', version '4.1'.
  *
  * @package     booking
  * @category    string
@@ -26,11 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcategory'] = 'Editar categorías';
-$string['addeditbooking'] = 'Editar reservas';
 $string['addmorebookings'] = 'Engadir máis reservas';
-$string['addnewbookingoption'] = 'Engadir unha nova opción de reserva';
 $string['addnewcategory'] = 'Engadir unha nova categoría';
-$string['addteachers'] = 'Engadir profesores';
 $string['addtocalendar'] = 'Engadir ao calendario';
 $string['addtogroup'] = 'Engadir os usuarios ao grupo de xeito automático';
 $string['addtogroup_help'] = 'Engadir os usuarios ao grupo de xeito automático - o grupo será creado co nome «Nome da reserva - Nome da opción»';
@@ -76,7 +73,6 @@ $string['booking:subscribeusers'] = 'Facer reservas para outros usuarios';
 $string['booking:updatebooking'] = 'Xestionar as opcións de reserva';
 $string['bookingattachment'] = 'Ficheiro anexo';
 $string['bookingcategory'] = 'Categoría';
-$string['bookingclose'] = 'Ata';
 $string['bookingdeleted'] = 'A súa reserva foi anulada';
 $string['bookingduration'] = 'Duración';
 $string['bookingfull'] = 'Non hai prazas dispoñibles';
@@ -99,49 +95,17 @@ $string['category'] = 'Categoría';
 $string['categoryname'] = 'Nome de categoría';
 $string['choosecourse'] = 'Escoller un curso';
 $string['closed'] = 'Reservas pechadas';
-$string['confirmationmessage'] = 'A súa reserva foi rexistrada
-
-
-Estado da reserva: {$a->status}
-Participante: {$a->participant}
-Curso: {$a->title}
-Data: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Para consultar as súas reservas faga clic na seguinte ligazón: {$a->bookinglink}
-O curso asociado pode está dispoñible en: {$a->courselink}';
 $string['confirmationmessagesettings'] = 'Configuración do correo de confirmación';
-$string['confirmationmessagewaitinglist'] = 'Ola {$a->participant}:
-
-Rexistrouse a súa solicitude de reserva
-
-Estado da reserva: {$a->status}
-Participante: {$a->participant}
-Curso: {$a->title}
-Data: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Para consultar as súas reservas faga clic na seguinte ligazón: {$a->bookinglink}';
-$string['confirmationsubject'] = 'Confirmación de reserva para {$a->title}';
-$string['confirmationsubjectbookingmanager'] = 'Nova reserva para {$a->title} enviada por {$a->participant}';
-$string['confirmationsubjectwaitinglist'] = 'Estado da reserva para {$a->title}';
-$string['confirmationsubjectwaitinglistmanager'] = 'Estado da reserva para {$a->title}';
 $string['confirmbookingoffollowing'] = 'Por favor, confirme a reserva para o seguinte curso';
 $string['confirmdeletebookingoption'] = 'Desexa eliminar esta opción da reserva?';
 $string['coursedate'] = 'Data';
 $string['courseendtime'] = 'Data de remate do curso';
 $string['coursestarttime'] = 'Data de inicio do curso';
-$string['createdby'] = 'Módulo de reservas creado por edulabs.org';
 $string['days'] = '{$a} días';
 $string['daystonotify'] = 'Cantos días antes do comezo da actividade hai que avisar aos participantes?';
 $string['defaultbookingoption'] = 'Opcións por defecto da reserva';
 $string['deletebooking'] = 'Desexa anular a matrícula do seguinte curso? <br /><br /> <b>{$a} </b>';
-$string['deletebookingoption'] = 'Eliminar esta opción de reserva';
 $string['deletecategory'] = 'Eliminar';
-$string['deletedbookingmessage'] = 'Reserva para o seguinte curso eliminado: {$a->title}
-
-Usuario: {$a->participant}
-Título: {$a->title}
-Data: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Curso: {$a->courselink}
-Ligazón reserva: {$a->bookinglink}';
-$string['deletedbookingsubject'] = 'Reserva eliminada: {$a->title} by {$a->participant}';
 $string['deletedbookingusermessage'] = 'Ola {$a->participant},
 
 A súa reserva para {$a->title} ({$a->startdate} {$a->starttime}) foi cancelada.';
@@ -211,7 +175,6 @@ $string['noresultsviewable'] = 'Neste intre, non se poden consultar os resultado
 $string['norighttobook'] = 'Non é posible facer a reserva para o seu papel. Debe contactar co administrador do sitio para que lle conceda os permisos necesarios, ou inicie sesión.';
 $string['nosubscribers'] = 'Non se asignaron profesores!';
 $string['notbooked'] = 'Sen reservas';
-$string['notificationsubject'] = 'Próximo curso...';
 $string['notopenyet'] = 'Desculpe, esta actividade non está dispoñible ata {$a}';
 $string['onwaitinglist'] = 'Vostede está na lista de agarda';
 $string['organizatorname'] = 'Nome do organizador';
@@ -245,8 +208,6 @@ $string['rootcategory'] = 'Inicio';
 $string['searchtag'] = 'Etiquetas de busca';
 $string['select'] = 'Selección';
 $string['selectcategory'] = 'Seleccionar categoría';
-$string['sendconfirmmail'] = 'Enviar correo de confirmación';
-$string['sendconfirmmailtobookingmanger'] = 'Enviar correo de confirmación ao xestor das reservas';
 $string['sendcustommessage'] = 'Enviar mensaxe personalizada';
 $string['sendmailtobooker'] = 'Páxina de reserva para outros usuarios: Enviar correo ao usuario que fai a reserva en lugar de aqueles que xa están rexistrados';
 $string['sendmailtobooker_help'] = 'Marca esta opción para enviar o correo de confirmación ao usuario que fai a reserva para outros usuarios, en lugar de envialo aos propios usuarios que foron engadidos á opción de reserva.
@@ -277,7 +238,6 @@ $string['subscribetocourse'] = 'Matricular usuarios no curso';
 $string['subscribeuser'] = 'Desexa matricular os usuarios no seguinte curso';
 $string['teachers'] = 'Profesores:';
 $string['timerestrict'] = 'Restrinxir as respostas durante este período';
-$string['unlimited'] = 'Sen límite';
 $string['updatebooking'] = 'Editar esta opción de reserva';
 $string['usedinbooking'] = 'Non se pode eliminar esta categoría, por que está sendo usada nas reservas!';
 $string['userdownload'] = 'Descargar usuarios';

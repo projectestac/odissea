@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'zh_cn', version '3.11'.
+ * Strings for component 'message', language 'zh_cn', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = '阻止非联系人向我发送消息';
 $string['blockuser'] = '屏蔽用户';
 $string['blockuserconfirm'] = '您确定要屏蔽{$a}吗？';
 $string['blockuserconfirmbutton'] = '屏蔽';
-$string['canceledit'] = '取消编辑信息';
 $string['cancelselection'] = '取消消息选择';
 $string['cantblockuser'] = '您无法阻止 {$a}，因为他们拥有有权向所有用户发送消息的角色。';
 $string['contactableprivacy'] = '接受消息从：';
@@ -86,6 +85,7 @@ $string['eventmessageviewed'] = '已查看消息';
 $string['eventnotificationsent'] = '已发送通知';
 $string['eventnotificationviewed'] = '已查看通知';
 $string['forced'] = '强制';
+$string['forcedmessage'] = '锁定';
 $string['groupconversations'] = '小组';
 $string['groupinfo'] = '小组信息';
 $string['guestnoeditmessage'] = '访客用户不能编辑消息选项';
@@ -105,8 +105,6 @@ $string['loggedoffdescription'] = '当我离线时';
 $string['managemessageoutputs'] = '管理消息输出';
 $string['message'] = '消息';
 $string['messagecontactrequest'] = '{$a->user} 请求添加为联系人。 访问您的<a href="{$a->url}">联系请求</a>页面以响应请求';
-$string['messagecontactrequestsnotification'] = '{$a}请求加为联系人';
-$string['messagecontactrequestsnotificationsubject'] = '来自{$a}的联系请求';
 $string['messagecontactrequestsubject'] = '{$a->sitename}：来自 {$a->user} 的联系请求';
 $string['messagecontentaudio'] = '音频';
 $string['messagecontentimage'] = '图片';
@@ -137,7 +135,6 @@ $string['nofavourites'] = '没有标星的对话';
 $string['noframesjs'] = '使用无障碍界面';
 $string['nogroupconversations'] = '没有小组对话';
 $string['noindividualconversations'] = '没有私人对话';
-$string['nomessages'] = '没有新消息';
 $string['nomessagesfound'] = '没有消息';
 $string['noncontacts'] = '不是联系人';
 $string['nonotifications'] = '您没有通知';
@@ -156,11 +153,7 @@ $string['offline'] = '离线';
 $string['on'] = '打开';
 $string['online'] = '在线';
 $string['otherparticipants'] = '其他参与者';
-$string['outputdisabled'] = '已禁止输出';
-$string['outputdoesnotexist'] = '消息输出不存在';
-$string['outputenabled'] = '已允许输出';
 $string['outputnotavailable'] = '不可用';
-$string['outputnotconfigured'] = '未配置';
 $string['page-message-x'] = '任意消息页面';
 $string['participants'] = '参与者';
 $string['pendingcontactrequests'] = '有 {$a} 个待处理的联系请求';
@@ -223,6 +216,9 @@ $string['privacy:metadata:preference:core_message_settings'] = '与消息相关�
 $string['privacy:request:preference:set'] = '设置 \'{$a->name}\' 的值为 \'{$a->value}\'';
 $string['privacy_desc'] = '允许给我发送消息';
 $string['processorsettings'] = '处理器设置';
+$string['providerenabled'] = '正在发送“{$a}”启用状态';
+$string['providerprocesorisdisallowed'] = '“{$a->processor}”上的“{$a->provider}”被锁定';
+$string['providerprocesorislocked'] = '“{$a->processor}”上的“{$a->provider}”被锁定';
 $string['removecontact'] = '移除联系人';
 $string['removecontactconfirm'] = '您确定要从联系人中移除{$a}吗?';
 $string['removecoursefilter'] = '删除课程 {$a} 的过滤器';
@@ -247,6 +243,8 @@ $string['sendbulkmessagesingle'] = '向 1 人发送消息';
 $string['sendcontactrequest'] = '发送联系人请求';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = '正通过“{$a->processor}”发送“{$a->provider}”';
+$string['sendingviaenabled'] = '通过“{$a->processor}”启用状态发送“{$a->provider}”';
+$string['sendingvialocked'] = '通过“{$a->processor}”锁定状态发送“{$a->provider}”';
 $string['sendingviawhen'] = '{$a->state}时通过“{$a->processor}”发送“{$a->provider}”';
 $string['sendmessage'] = '发送消息';
 $string['sendmessageto'] = '发消息给 {$a}';

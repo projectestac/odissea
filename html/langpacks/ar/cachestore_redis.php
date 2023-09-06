@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'ar', version '3.11'.
+ * Strings for component 'cachestore_redis', language 'ar', version '4.1'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -42,12 +42,15 @@ $string['serializer_igbinary'] = 'المسلسل igbinary.';
 $string['serializer_php'] = 'التسلسل الافتراضي PHP .';
 $string['server'] = 'الخادم';
 $string['server_help'] = 'هذا يعين اسم المضيف أو عنوان IP لخادم Redis لاستخدامه.';
+$string['task_ttl'] = 'تفريغ الذاكرة المستعملة من قبل المُدخلات منتهية الصلاحية في مخبوءات Redis';
 $string['test_password'] = 'إختبار كلمة مرور المخدم';
 $string['test_password_desc'] = 'اختبار كلمة مرور المخدم Redis.';
 $string['test_serializer'] = 'مسلسل';
 $string['test_serializer_desc'] = 'Serializer لاستخدامه للاختبار.';
 $string['test_server'] = 'خادم الاختبار';
 $string['test_server_desc'] = 'خادم Redis لاستخدامه للاختبار.';
+$string['test_ttl'] = 'فحص TTL';
+$string['test_ttl_desc'] = 'تشغيل إختبار الفحص باستعمال خبء يتطلب TTL (أبطأ).';
 $string['usecompressor'] = 'استعمل الضغط';
 $string['usecompressor_help'] = 'حدد برنامج الضغط المستعمل بعد التحويل إلى سلسلة. هذا الأمر يتم على مستوى واجهة برمجة التطبيق لمخبأ مودل، وليس على مستوى تقليعة php';
 $string['useserializer'] = 'استخدام التسلسل';

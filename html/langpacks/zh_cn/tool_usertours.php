@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'zh_cn', version '3.11'.
+ * Strings for component 'tool_usertours', language 'zh_cn', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -42,18 +42,34 @@ $string['confirmtourremovalquestion'] = '您确定要删除此导览吗？';
 $string['confirmtourremovaltitle'] = '确认删除导览';
 $string['content'] = '内容';
 $string['content_heading'] = '内容';
+$string['content_help'] = '可以纯文本格式添加描述该步骤的内容，如果需要的话，可以用多语言标签括起来（用于多语言内容过滤器）。';
+$string['content_type'] = '内容类型';
+$string['content_type_help'] = '* 手动 - 使用文本编辑器输入内容
+* 语言字符串ID - 格式为字符串标识符，组件（逗号后无空格）';
+$string['content_type_langstring'] = '语言字符串ID';
+$string['content_type_manual'] = '手动';
 $string['cssselector'] = 'CSS选择器';
 $string['defaultvalue'] = '默认 ({$a})';
 $string['delay'] = '显示步骤前的延迟时间';
 $string['delay_help'] = '您可以选择在显示步骤之前添加延迟。
 此延迟以毫秒为单位。';
 $string['description'] = '描述';
+$string['description_help'] = '可以以纯文本格式添加导览的描述，如果需要的话，可以用多语言标签括起来（用于多语言内容过滤器）。
+
+另外，语言字符串ID可以以标识符、组件的格式输入（逗号后没有括号或空格）。';
+$string['displaystepnumbers'] = '显示步骤编号';
+$string['displaystepnumbers_help'] = '是否显示步骤计数，例如1/4、2/4等，以指示用户导览的长度。';
 $string['done'] = '完成';
 $string['duplicatetour'] = '复制导览';
 $string['duplicatetour_name'] = '{$a}（副本）';
 $string['editstep'] = '编辑“{$a}”';
 $string['enabled'] = '启用';
+$string['endonesteptour'] = '知道了';
 $string['endtour'] = '结束教程';
+$string['endtourlabel'] = '结束导览按钮的标签';
+$string['endtourlabel_help'] = '你可以选择为“结束导览”按钮指定一个自定义标签。对于单步导览，默认标签是 "知道了"，对于多步导览，默认标签是 "结束导览"。
+
+另外，语言字符串ID可以以标识符、组件的格式输入（逗号后没有括号或空格）。';
 $string['event_step_shown'] = '显示的步骤';
 $string['event_tour_ended'] = '导览结束';
 $string['event_tour_reset'] = '导览重置';
@@ -80,17 +96,22 @@ $string['filter_role_help'] = '在显示导览的环境中，一个导览可能�
 $string['filter_theme'] = '主题';
 $string['filter_theme_help'] = '当用户使用其中一个选定主题时显示导览。';
 $string['importtour'] = '导入导览';
+$string['invalid_lang_id'] = '无效的语言字符串ID';
 $string['left'] = '左边';
 $string['modifyshippedtourwarning'] = '这是Moodle附带的用户导览。你所做的任何修改都可能在下次站点升级时被覆盖。';
+$string['moodle_language_identifier'] = '语言字符串ID';
 $string['movestepdown'] = '下移导览';
 $string['movestepup'] = '创建新的导览';
 $string['movetourdown'] = '下移导览';
 $string['movetourup'] = '上移导览';
 $string['name'] = '名称';
+$string['name_help'] = '可以以纯文本添加导览的名称，如果需要的话，可以用多语言标签括起来（用于多语言内容过滤器）。
+另外，语言字符串ID可以以标识符、组件的格式输入（逗号后没有括号或空格）。';
 $string['newstep'] = '新步骤';
 $string['newtour'] = '创建新的导览';
 $string['next'] = '下一个';
 $string['nextstep'] = '下一个';
+$string['nextstep_sequence'] = '下一步({$a->position}/{$a->total})';
 $string['options_heading'] = '选项';
 $string['orphan'] = '如果未找到目标，则显示';
 $string['orphan_help'] = '如果在页面上找不到目标，则显示步骤。';
@@ -128,6 +149,7 @@ $string['selectordisplayname'] = '匹配“{$A}”的CSS选择器';
 $string['selecttype'] = '选择步骤类型';
 $string['sharedtourslink'] = '导览资源库';
 $string['skip'] = '跳过';
+$string['skip_tour'] = '跳过浏览';
 $string['target'] = '目标';
 $string['target_block'] = '板块';
 $string['target_heading'] = '步骤目标';
@@ -225,6 +247,27 @@ $string['tour_activityinfo_course_teacher_content'] = '新的课程设置 "显�
 $string['tour_activityinfo_course_teacher_title'] = '新增：活动信息';
 $string['tour_final_step_content'] = '您的用户导览已结束。除非使用页脚中的链接重置它，否则它不会再次显示。';
 $string['tour_final_step_title'] = '导览结束';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>在这里发布重要消息。';
+$string['tour_navigation_course_announcements_teacher_title'] = '有什么要告诉大家的吗？';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>添加新内容或编辑现有内容。';
+$string['tour_navigation_course_edit_teacher_title'] = '启动编辑模式';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>浏览活动并跟踪进度。';
+$string['tour_navigation_course_index_student_title'] = '找到你的方向';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>拖放活动以重新排列课程内容。';
+$string['tour_navigation_course_index_teacher_title'] = '课程索引';
+$string['tour_navigation_course_student_tour_des'] = '在哪里浏览课程中的活动？';
+$string['tour_navigation_course_student_tour_name'] = '课程索引';
+$string['tour_navigation_course_teacher_tour_des'] = '编辑模式，在课程中拖放活动和发布公告';
+$string['tour_navigation_course_teacher_tour_name'] = '课程编辑';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>这个侧面板可以包含更多的功能。';
+$string['tour_navigation_dashboard_title'] = '展开以探索';
+$string['tour_navigation_dashboard_tour_des'] = '可以找到版块的地方';
+$string['tour_navigation_dashboard_tour_name'] = '版块抽屉';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>从此菜单中添加、复制、删除和隐藏课程。';
+$string['tour_navigation_mycourses_endtourlabel'] = '我明白';
+$string['tour_navigation_mycourses_title'] = '课程和类别';
+$string['tour_navigation_mycourses_tour_des'] = '“我的课程”页面上的课程管理选项';
+$string['tour_navigation_mycourses_tour_name'] = '课程管理';
 $string['tour_resetforall'] = '导览状态已重置，所有用户可见。';
 $string['tourconfig'] = '要导入的导览配置文件';
 $string['tourisenabled'] = '导览已启用';

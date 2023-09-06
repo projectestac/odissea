@@ -586,8 +586,8 @@
 		
 		"evaluate_keyword": "avaliar",
 		
-		"home_getting_started_welcome_header_text": "Bem-vindo ao WirisQuizzes 4.7.0",
-        "home_getting_started_welcome_description_text": "Olá, incluímos uma seção introdutória no nosso menu a fim de ajudar você a saber mais sobre o WirisQuizzes acessando nossa documentação, treinamento e novidades.",
+		"home_getting_started_welcome_header_text": "Apresentamos o WirisQuizzes 4.8.0: Agora com respostas baseadas em gráficos feitos à mão",
+        "home_getting_started_welcome_description_text": "Temos o prazer de apresentar um novo tipo de resposta que permite que seus alunos respondam criando um gráfico à mão. Para saber mais sobre este recurso, confira nossos detalhes de versão e documentação. Esperamos que você e seus alunos gostem desta nova funcionalidade do WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Notas da versão",
         "home_getting_give_us_feedback_button_text": "Queremos saber sua opinião",
         "home_getting_started_create_question_header_text": "Como criar sua primeira pergunta",
@@ -603,7 +603,15 @@
         "home_getting_started_contact_us_button_text": "Contato",
         "home_getting_started_visit_our_webpage_button_text": "Acesse nosso site",
         "home_getting_started_report_an_issue_button_text": "Reportar um problema",
-		"home_getting_started_list_button_text": "Introdução"
+		"home_getting_started_list_button_text": "Introdução",
+
+		"quizzes_studio_home_answer_type_sketch_label": "Desenhar",
+		"quizzes_studio_home_initial_content_description_sketch": "Este é o conteúdo inicial do editor gráfico que seus alunos visualizarão ao tentar solucionar a pergunta. Lembre-se de que a barra de ferramentas dos alunos terá apenas botões de escrita e exclusão. Use o recurso \"Testar esta pergunta\" para ver como ela parecerá.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_1": "Digite a resposta correta para esta pergunta. Seus alunos usarão a ferramenta de escrita à mão para esboçar a solução, por isso definimos uma tolerância mínima para respostas ligeiramente imprecisas. Você pode ajustar essa tolerância clicando nas “opções de validação”.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Use o botão \"Testar esta pergunta\" para entrar no modo de visualização do aluno.",
+		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Reproduzir ",
+		"quizzes_demo_sketch_title_menu" : "Desenhar",
+		"home_getting_started_documentation_button_text" : "Documentação"
 	}
 }
 

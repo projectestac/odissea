@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'ur', version '3.11'.
+ * Strings for component 'block_quiz_results', language 'ur', version '4.1'.
  *
  * @package     block_quiz_results
  * @category    string
@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'معلوماتی آزمائش کے نتائج';
+$string['pluginname'] = 'کوئز کے نتائج (غیر فعال)';
+$string['privacy:metadata'] = 'کوئز کے نتائج کا بلاک صرف دوسرے مقامات پر ذخیرہ کردہ ڈیٹا کو دکھاتا ہے۔';
+$string['quiz_results:addinstance'] = 'کوئز کے نتائج کا ایک نیا بلاک شامل کریں';

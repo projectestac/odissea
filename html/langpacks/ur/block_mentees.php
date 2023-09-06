@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'ur', version '3.11'.
+ * Strings for component 'block_mentees', language 'ur', version '4.1'.
  *
  * @package     block_mentees
  * @category    string
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'بلاک کا عنوان';
-$string['newmenteesblock'] = 'نیا مینٹیس کا بلاک';
-$string['pluginname'] = 'مینٹیس';
+$string['configtitle'] = 'مینٹیز بلاک ٹائٹل';
+$string['configtitleblankhides'] = 'مینٹیز بلاک ٹائٹل (اگر خالی تو کوئی عنوان نہیں)';
+$string['mentees:addinstance'] = 'ایک نیا مینٹیز بلاک شامل کریں';
+$string['mentees:myaddinstance'] = 'ڈیش بورڈ میں ایک نیا مینٹیز بلاک شامل کریں';
+$string['newmenteesblock'] = '(نیا مینٹیز بلاک)';
+$string['pluginname'] = 'مینٹیز';
+$string['privacy:metadata'] = 'مینٹیز بلاک صرف دوسرے مقامات پر ذخیرہ شدہ ڈیٹا دکھاتا ہے۔';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'ja', version '3.11'.
+ * Strings for component 'tool_task', language 'ja', version '4.1'.
  *
  * @package     tool_task
  * @category    string
@@ -54,6 +54,7 @@ $string['enablerunnow_desc'] = '定期的な実行を待つのではなく、管
 $string['faildelay'] = '失敗時の待機';
 $string['fromcomponent'] = '次のコンポーネントから: {$a}';
 $string['hostname'] = 'ホスト名';
+$string['lastcronstart'] = '前回のcron実行からの時間: {$a}';
 $string['lastruntime'] = '最近の実行';
 $string['lastupdated'] = '最終更新日時 {$a}';
 $string['nextruntime'] = '次の実行';

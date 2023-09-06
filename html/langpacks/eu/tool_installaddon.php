@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'eu', version '3.11'.
+ * Strings for component 'tool_installaddon', language 'eu', version '4.1'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -42,6 +42,7 @@ $string['installfromziprootdir_help'] = 'ZIP pakete batzuek, Github-ek sortutako
 $string['installfromzipsubmit'] = 'Instalatu plugina ZIP fitxategitik';
 $string['installfromziptype'] = 'Plugin mota';
 $string['installfromziptype_help'] = 'Euren osagaiaren izena ondo adierazten duten pluginen kasuan, instalatzailea pluginaren mota automatikoki antzemateko gai da. Antzemate-automatikoa huts egiten badu, aukeratu ezazu eskuz plugin mota egokia. Kontuz: instalatze-prozesuak larriki huts egin dezake plugin mota modu egokian zehazten ez bada.';
+$string['installfromziptype_link'] = 'Development:Plugins';
 $string['permcheck'] = 'Ziurtatu web-zerbitzariaren prozesuak plugin motaren jatorriaren kokapenean idazteko baimena duela.';
 $string['permcheckerror'] = 'Errorea idazte-baimenak egiaztatzean';
 $string['permcheckprogress'] = 'Egiaztatzen idazteko baimena...';

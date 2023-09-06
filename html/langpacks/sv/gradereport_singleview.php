@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'sv', version '3.11'.
+ * Strings for component 'gradereport_singleview', language 'sv', version '4.1'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -58,8 +58,6 @@ $string['privacy:metadata'] = 'Rapporten Bedöm enstaka vy visar bara data som l
 $string['save'] = 'Spara';
 $string['savegrades'] = 'Sparar betyg';
 $string['savegradessuccess'] = 'Betygsatte {$a} objekt.';
-$string['selectgrade'] = 'Välj objekt att betygsätta';
-$string['selectuser'] = 'Välj användare...';
 $string['singleview:view'] = 'Visa rapport';
 $string['summarygrade'] = 'En tabell med användare, med kolumner för intervall, betyg, återkoppling och om ett visst betyg ska åsidosättas eller uteslutas.';
 $string['summaryuser'] = 'En tabell med betygsobjekt, med kolumner för betygskategori, intervall, betyg, återkoppling och om ett visst betyg ska åsidosättas eller uteslutas.';

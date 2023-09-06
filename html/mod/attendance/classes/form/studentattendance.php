@@ -23,8 +23,6 @@
  */
 namespace mod_attendance\form;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Class studentattendance
  *
@@ -38,27 +36,16 @@ class studentattendance extends \moodleform {
      * @return void
      */
     public function definition() {
-        global $USER;
+        global $USER, $DB;
 
         $mform  =& $this->_form;
 
         $attforsession = $this->_customdata['session'];
         $attblock = $this->_customdata['attendance'];
         $password = $this->_customdata['password'];
+        $existingstatus = null;
 
-        $statuses = $attblock->get_statuses();
-        // Check if user has access to all statuses.
-        $disabledduetotime = false;
-        foreach ($statuses as $status) {
-            if ($status->studentavailability === '0') {
-                unset($statuses[$status->id]);
-            }
-            if (!empty($status->studentavailability) &&
-                time() > $attforsession->sessdate + ($status->studentavailability * 60)) {
-                unset($statuses[$status->id]);
-                $disabledduetotime = true;
-            }
-        }
+        [$statuses, $disabledduetotime] = $attblock->get_student_statuses($attforsession);
 
         $mform->addElement('hidden', 'sessid', null);
         $mform->setType('sessid', PARAM_INT);
@@ -78,29 +65,45 @@ class studentattendance extends \moodleform {
         if (!empty($attforsession->description)) {
             $mform->addElement('html', $attforsession->description);
         }
-        if (!empty($attforsession->studentpassword)) {
+        if (!empty($attforsession->studentpassword) &&
+            !(attendance_is_status_availablebeforesession($attforsession->id) && !attendance_session_open_for_students($attforsession))) {
             $mform->addElement('text', 'studentpassword', get_string('password', 'attendance'));
             $mform->setType('studentpassword', PARAM_TEXT);
             $mform->addRule('studentpassword', get_string('passwordrequired', 'attendance'), 'required');
             $mform->setDefault('studentpassword', $password);
         }
-        if (!$attforsession->autoassignstatus) {
 
-            // Create radio buttons for setting the attendance status.
-            $radioarray = array();
-            foreach ($statuses as $status) {
-                $name = \html_writer::span($status->description, 'statusdesc');
-                $radioarray[] =& $mform->createElement('radio', 'status', '', $name, $status->id, array());
+        // Display current status:
+        if (attendance_check_allow_update($attforsession->id)) {
+            // Check if an existing status is set, and show it.
+            $existingstatusid = $DB->get_field('attendance_log', 'statusid',
+                ['sessionid' => $attforsession->id, 'studentid' => $USER->id]);
+            if (!empty($existingstatusid)) {
+                $existingstatus = $attblock->get_statuses(false)[$existingstatusid];
+                if (!empty($existingstatus)) {
+                    $mform->addElement('static', '', '', get_string("userexistingstatus", 'mod_attendance', $existingstatus->description));
+                }
             }
-            if ($disabledduetotime) {
-                $warning = \html_writer::span(get_string('somedisabledstatus', 'attendance'), 'somedisabledstatus');
-                $radioarray[] =& $mform->createElement('static', '', '', $warning);
-            }
-            // Add the radio buttons as a control with the user's name in front.
-            $radiogroup = $mform->addGroup($radioarray, 'statusarray', fullname($USER).':', array(''), false);
-            $radiogroup->setAttributes(array('class' => 'statusgroup'));
-            $mform->addRule('statusarray', get_string('attendancenotset', 'attendance'), 'required', '', 'client', false, false);
         }
+
+        // Create radio buttons for setting the attendance status.
+        $radioarray = array();
+        foreach ($statuses as $status) {
+            $name = \html_writer::span($status->description, 'statusdesc');
+            $radioarray[] =& $mform->createElement('radio', 'status', '', $name, $status->id, array());
+        }
+        if ($disabledduetotime) {
+            $warning = \html_writer::span(get_string('somedisabledstatus', 'attendance'), 'somedisabledstatus');
+            $radioarray[] =& $mform->createElement('static', '', '', $warning);
+        }
+        // Add the radio buttons as a control with the user's name in front.
+        $radiogroup = $mform->addGroup($radioarray, 'statusarray', fullname($USER).':', array(''), false);
+        $radiogroup->setAttributes(array('class' => 'statusgroup'));
+        $mform->addRule('statusarray', get_string('attendancenotset', 'attendance'), 'required', '', 'client', false, false);
+        if (!empty($existingstatus) && !empty($statuses[$existingstatus->id])) {
+            $mform->setDefault('status', $existingstatus->id);
+        }
+
         $this->add_action_buttons();
     }
 

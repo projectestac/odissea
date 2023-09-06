@@ -176,7 +176,13 @@ class manager {
             }
             if ($moduledata instanceof cm_info && !is_null($moduledata->completiongradeitemnumber) ||
                 ($moduledata instanceof stdClass && !empty($moduledata->completionusegrade))) {
-                $activeruledescriptions[] = get_string('completionusegrade_desc', 'completion');
+
+                $description = 'completionusegrade_desc';
+                if (!empty($moduledata->completionpassgrade)) {
+                    $description = 'completionpassgrade_desc';
+                }
+
+                $activeruledescriptions[] = get_string($description, 'completion');
             }
 
             // Now, ask the module to provide descriptions for its custom conditional completion rules.
@@ -217,7 +223,7 @@ class manager {
         $canmanage = has_capability('moodle/course:manageactivities', $coursecontext);
         $course = get_course($this->courseid);
         foreach ($data->modules as $module) {
-            $module->icon = $OUTPUT->image_url('icon', $module->name)->out();
+            $module->icon = $OUTPUT->image_url('monologo', $module->name)->out();
             $module->formattedname = format_string(get_string('modulenameplural', 'mod_' . $module->name),
                 true, ['context' => $coursecontext]);
             $module->canmanage = $canmanage && course_allowed_module($course, $module->name);
@@ -256,10 +262,14 @@ class manager {
     /**
      * Gets the available completion tabs for the current course and user.
      *
+     * @deprecated since Moodle 4.0
      * @param stdClass|int $courseorid the course object or id.
      * @return tabobject[]
      */
     public static function get_available_completion_tabs($courseorid) {
+        debugging('get_available_completion_tabs() has been deprecated. Please use ' .
+            'core_completion\manager::get_available_completion_options() instead.', DEBUG_DEVELOPER);
+
         $tabs = [];
 
         $courseid = is_object($courseorid) ? $courseorid->id : $courseorid;
@@ -290,6 +300,34 @@ class manager {
         }
 
         return $tabs;
+    }
+
+    /**
+     * Returns an array with the available completion options (url => name) for the current course and user.
+     *
+     * @param int $courseid The course id.
+     * @return array
+     */
+    public static function get_available_completion_options(int $courseid): array {
+        $coursecontext = context_course::instance($courseid);
+        $options = [];
+
+        if (has_capability('moodle/course:update', $coursecontext)) {
+            $completionlink = new moodle_url('/course/completion.php', ['id' => $courseid]);
+            $options[$completionlink->out(false)] = get_string('coursecompletion', 'completion');
+        }
+
+        if (has_capability('moodle/course:manageactivities', $coursecontext)) {
+            $defaultcompletionlink = new moodle_url('/course/defaultcompletion.php', ['id' => $courseid]);
+            $options[$defaultcompletionlink->out(false)] = get_string('defaultcompletion', 'completion');
+        }
+
+        if (self::can_edit_bulk_completion($courseid)) {
+            $bulkcompletionlink = new moodle_url('/course/bulkcompletion.php', ['id' => $courseid]);
+            $options[$bulkcompletionlink->out(false)] = get_string('bulkactivitycompletion', 'completion');
+        }
+
+        return $options;
     }
 
     /**
@@ -351,8 +389,11 @@ class manager {
     protected function apply_completion_cm(\cm_info $cm, $data, $updateinstance) {
         global $DB;
 
-        $defaults = ['completion' => COMPLETION_DISABLED, 'completionview' => COMPLETION_VIEW_NOT_REQUIRED,
-            'completionexpected' => 0, 'completiongradeitemnumber' => null];
+        $defaults = [
+            'completion' => COMPLETION_DISABLED, 'completionview' => COMPLETION_VIEW_NOT_REQUIRED,
+            'completionexpected' => 0, 'completiongradeitemnumber' => null,
+            'completionpassgrade' => 0
+        ];
 
         $data += ['completion' => $cm->completion,
             'completionexpected' => $cm->completionexpected,
@@ -374,6 +415,8 @@ class manager {
             $data['completiongradeitemnumber'] = !empty($data['completionusegrade']) ? 0 : null;
             unset($data['completionusegrade']);
         } else {
+            // Completion grade item number is classified in mod_edit forms as 'use grade'.
+            $data['completionusegrade'] = is_null($cm->completiongradeitemnumber) ? 0 : 1;
             $data['completiongradeitemnumber'] = $cm->completiongradeitemnumber;
         }
 
@@ -415,7 +458,8 @@ class manager {
             'completion' => COMPLETION_DISABLED,
             'completionview' => COMPLETION_VIEW_NOT_REQUIRED,
             'completionexpected' => 0,
-            'completionusegrade' => 0
+            'completionusegrade' => 0,
+            'completionpassgrade' => 0
         ];
 
         $data = (array)$data;
@@ -472,7 +516,7 @@ class manager {
     public static function get_default_completion($course, $module, $flatten = true) {
         global $DB, $CFG;
         if ($data = $DB->get_record('course_completion_defaults', ['course' => $course->id, 'module' => $module->id],
-            'completion, completionview, completionexpected, completionusegrade, customrules')) {
+            'completion, completionview, completionexpected, completionusegrade, completionpassgrade, customrules')) {
             if ($data->customrules && ($customrules = @json_decode($data->customrules, true))) {
                 // MDL-72375 This will override activity id for new mods. Skip this field, it is already exposed as courseid.
                 unset($customrules['id']);

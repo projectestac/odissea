@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'it', version '3.11'.
+ * Strings for component 'grading', language 'it', version '4.1'.
  *
  * @package     grading
  * @category    string
@@ -29,6 +29,7 @@ $string['activemethodinfo'] = '\'{$a->method}\'  è selezionato come metodo di v
 $string['activemethodinfonone'] = 'Non ci sono metodi di valutazione avanzata per l\'area \'{$a->area}\'. Verrà utilizzata la valutazione semplice diretta.';
 $string['changeactivemethod'] = 'Cambia il metodo di valutazione attivo in';
 $string['clicktoclose'] = 'click per chiudere';
+$string['error:gradingunavailable'] = 'Il metodo di valutazione avanzato non è impostato correttamente. Controllare le opzioni di valutazione dell\'intero forum nelle impostazioni del forum.';
 $string['error:notinrange'] = 'La valutazione \'{$a->grade}\' non è valida. le valutazioni devono essere tra 0 e {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Non è possibile istanziare lo schema di valutazione';
 $string['formnotavailable'] = 'È stato selezionato il metodo di valutazione avanzato ma lo schema di valutazione non è ancora pronto. Puoi prepararlo tramite il collegamento disponibile nel blocco Amministrazione';

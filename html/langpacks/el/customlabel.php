@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlabel', language 'el', version '3.11'.
+ * Strings for component 'customlabel', language 'el', version '4.1'.
  *
  * @package     customlabel
  * @category    string
@@ -95,7 +95,7 @@ $string['typecode'] = 'Κωδικός';
 $string['typename'] = 'Όνομα';
 $string['typetype'] = 'Τύπος';
 $string['up'] = 'Πάνω';
-$string['updateall'] = 'Ενημέρωση όλων των στιγμιότυπων';
-$string['updatelabels'] = 'Επαναδημιουργία στιγμιότυπων του {$a}';
+$string['updateall'] = 'Ενημέρωση όλων των στιγμιοτύπων';
+$string['updatelabels'] = 'Επαναδημιουργία στιγμιοτύπων του {$a}';
 $string['usedas'] = 'Χρήση ως&ensp;';
 $string['value'] = 'Τιμή';

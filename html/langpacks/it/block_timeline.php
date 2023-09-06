@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_timeline', language 'it', version '3.11'.
+ * Strings for component 'block_timeline', language 'it', version '4.1'.
  *
  * @package     block_timeline
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Tutto';
-$string['ariadayfilter'] = 'Filtra voci della cronologia';
+$string['ariadayfilter'] = 'Filtra cronologia per data';
 $string['ariadayfilteroption'] = '{$a} opzione filtro';
 $string['ariaeventlistitem'] = 'L\'attività {$a->name} del corso {$a->course} scadrà il {$a->date}';
 $string['ariaeventlistpagelimit'] = 'Visualizza {$a} attività per pagina';
@@ -35,7 +35,8 @@ $string['ariaeventlistpaginationnavdates'] = 'Paginazione della cronologia delle
 $string['ariaviewselector'] = 'Ordina voci della cronologia';
 $string['ariaviewselectoroption'] = '{$a} opzione ordinamento';
 $string['duedate'] = 'Data di scadenza';
-$string['morecourses'] = 'Ulteriori corsi';
+$string['moreactivities'] = 'Visualizza altre attiività';
+$string['morecourses'] = 'Visualizza altri corsi';
 $string['next30days'] = 'Prossimi 30 giorni';
 $string['next3months'] = 'Prossimi 3 mesi';
 $string['next6months'] = 'Prossimi 6 mesi';
@@ -47,6 +48,7 @@ $string['pluginname'] = 'Cronologia';
 $string['privacy:metadata:timelinefilterpreference'] = '';
 $string['privacy:metadata:timelinelimitpreference'] = 'Preferenza utente: limite pagine del blocco Cronologia';
 $string['privacy:metadata:timelinesortpreference'] = 'Preferenza utente: ordinamento del blocco Cronologia';
+$string['searchevents'] = 'Cerca per tipo o per nome dell\'attività';
 $string['sortbycourses'] = 'Ordina per corso';
 $string['sortbydates'] = 'Ordina per data';
 $string['timeline'] = 'Cronologia';

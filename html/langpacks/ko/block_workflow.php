@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_workflow', language 'ko', version '3.11'.
+ * Strings for component 'block_workflow', language 'ko', version '4.1'.
  *
  * @package     block_workflow
  * @category    string
@@ -62,6 +62,9 @@ $string['removeworkflow'] = '작업 흐름 삭제';
 $string['removeworkflowcheck'] = '{$a->contexttitle} 에서 \'{$a->workflowname}\' 작업 흐름을 제거하는것이 맞습니까? 작업 흐름과 관련된 모든 자료는 사라지며, 되돌릴 수 없습니다!';
 $string['removeworkflowfromcontext'] = '{$a->contexttitle} 에서 \'{$a->workflowname}\' 작업 흐름을 제거 하시겠습니까?';
 $string['shortnametaken'] = '이 이름은 현재 다른 작업 흐름에서 사용중입니다. ({$a})';
+$string['stepactivation_link'] = 'block/workflow';
+$string['stepcompletion_link'] = 'block/workflow';
+$string['stepextranotify_link'] = 'block/workflow';
 $string['thisworkflowappliesto'] = '이 작업 흐름을 적용';
 $string['vieweditworkflow'] = '작업 흐름 보기/편집';
 $string['workflow'] = '작업 흐름';

@@ -16,8 +16,6 @@
 
 namespace qtype_ddwtos\form;
 
-use question_edit_contexts;
-
 defined('MOODLE_INTERNAL') || die();
 global $CFG;
 
@@ -62,7 +60,7 @@ class edit_form_test extends \advanced_testcase {
         $fakequestion->inputs = null;
 
         $form = new $classname(new \moodle_url('/'), $fakequestion, $category,
-                new question_edit_contexts($syscontext));
+                new \core_question\local\bank\question_edit_contexts($syscontext));
 
         return [$form, $category];
     }

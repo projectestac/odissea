@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_fn_mentor', language 'ar', version '3.11'.
+ * Strings for component 'block_fn_mentor', language 'ar', version '4.1'.
  *
  * @package     block_fn_mentor
  * @category    string
@@ -42,7 +42,7 @@ $string['firstname'] = 'الاسم الأول';
 $string['fn_mentor:viewblock'] = 'معاينة الكتلة';
 $string['idnumber'] = 'رقم المُعرَّف';
 $string['linktomentorpage'] = 'رابط التقرير عبر الإنترنت: <a href="{$a}">{$a}</a>';
-$string['markinmanagerscoursecatsdesc'] = 'حدد تصنيفات المساقات التي ستتم معالجتها من قبل كتلة مدير المرشدين في صفحة واجهة مودل وفي لوحة التحكم.';
+$string['markinmanagerscoursecatsdesc'] = 'حدد تصنيفات المقررات الدراسية التي ستتم معالجتها من قبل كتلة مدير المرشدين في صفحة واجهة مودل وفي لوحة التحكم.';
 $string['mentee_without_course'] = 'إظهار التلاميذ الذين بلا مقررات دراسية';
 $string['mentees_without_groups'] = 'التلاميذ الذين بلا مجموعات';
 $string['mentees_without_mentor'] = 'التلاميذ الذين بلا مرشد';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'it', version '3.11'.
+ * Strings for component 'format_tiles', language 'it', version '4.1'.
  *
  * @package     format_tiles
  * @category    string
@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['courseshowtileprogress_link'] = 'Activity_completion_settings#Activity_settings';
+$string['displayfilterbar_link'] = 'Outcomes';
 $string['icontitle-asterisk'] = 'Asterisco';

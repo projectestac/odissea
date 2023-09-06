@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'zh_cn', version '3.11'.
+ * Strings for component 'my', language 'zh_cn', version '4.1'.
  *
  * @package     my
  * @category    string
@@ -28,9 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['addpage'] = '添加页面';
 $string['alldashboardswerereset'] = '所有仪表板页面都已重置为默认值。';
 $string['allprofileswerereset'] = '所有个人资料页面都被重置为默认值。';
+$string['coursemanagementoptions'] = '课程管理选项';
 $string['defaultpage'] = '缺省我的Moodle页面';
 $string['defaultprofilepage'] = '缺省个人资料页';
 $string['delpage'] = '删除页面';
+$string['error:dashboardisdisabled'] = '仪表板已被管理员禁用。';
 $string['managepages'] = '管理页面';
 $string['mymoodle'] = '个人主页';
 $string['nocourses'] = '没有课程信息显示。';

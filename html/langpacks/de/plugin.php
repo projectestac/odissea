@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'de', version '3.11'.
+ * Strings for component 'plugin', language 'de', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -67,6 +67,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Kein solches Plugin installiert';
 $string['notdownloadable'] = 'Paket kann nicht geladen werden';
 $string['notdownloadable_help'] = 'Die Aktualisierung kann nicht automatisch heruntergeladen werden.';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = 'Hinweise';
 $string['notsupported'] = 'Das Plugin könnte inkompatibel mit der Moodle-Version {$a} sein.';
 $string['notwritable'] = 'Plugin-Verzeichnis schreibgeschützt';
@@ -126,6 +127,8 @@ $string['type_calendartype'] = 'Kalendertyp';
 $string['type_calendartype_plural'] = 'Kalendertypen';
 $string['type_contentbank'] = 'Inhaltsspeicher';
 $string['type_contentbank_plural'] = 'Inhaltsspeicher-Plugins';
+$string['type_contenttype'] = 'Inhaltsspeicher';
+$string['type_contenttype_plural'] = 'Inhaltsspeicher-Plugins';
 $string['type_coursereport'] = 'Kursbericht';
 $string['type_coursereport_plural'] = 'Kursberichte';
 $string['type_customfield'] = 'Kursfeld';
@@ -174,6 +177,8 @@ $string['type_portfolio'] = 'Portfolio';
 $string['type_portfolio_plural'] = 'Portfolios';
 $string['type_profilefield'] = 'Profilfeldtyp';
 $string['type_profilefield_plural'] = 'Profilfeldtypen';
+$string['type_qbank'] = 'Fragensammlungsplugin';
+$string['type_qbank_plural'] = 'Fragensammlungsplugins';
 $string['type_qbehaviour'] = 'Frageverhalten';
 $string['type_qbehaviour_plural'] = 'Frageverhalten';
 $string['type_qformat'] = 'Format zum Fragenimport/-export';
@@ -224,6 +229,7 @@ $string['validationmsg_maturity'] = 'Entwicklungsstand';
 $string['validationmsg_maturity_help'] = 'Das Plugin kann seinen Entwicklungsstand angeben. Wenn der Entwickler als Entwicklungsstand des Plugin als \'stabil\' definiert, wird MATURITY_STABLE angezeigt. Alle anderen Entwicklungsstände (wie alpha oder beta) werden als unstable bestätigt und ein Warnhinweis wird angezeigt.';
 $string['validationmsg_missingcomponent'] = 'Das Plugin zeigt keinen Modulnamen an.';
 $string['validationmsg_missingcomponent_help'] = 'Alle Plugins müssen ihren vollständigen Modulnamen bereitstellen, u.z. über den Parameter \'$plugin->component\' in der Datei version.php.';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = 'Name der englischen Sprachdatei ist falsch';
 $string['validationmsg_missingexpectedlangenfile_info'] = 'Für den angegebenen Plugin-Typ fehlt eine englische Sprachdatei {$a}.';
 $string['validationmsg_missinglangenfile'] = 'Keine englische Sprachdatei gefunden';

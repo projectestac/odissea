@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'el', version '3.11'.
+ * Strings for component 'auth_cas', language 'el', version '4.1'.
  *
  * @package     auth_cas
  * @category    string
@@ -26,17 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['CASform'] = 'Επιλογή αυθεντικοποίησης';
-$string['accesCAS'] = 'Χρήστες CAS';
-$string['accesNOCAS'] = 'άλλοι χρήστες';
 $string['auth_cas_auth_logo'] = 'Λογότυπο μεθόδου αυθεντικοποίησης';
 $string['auth_cas_auth_logo_description'] = 'Δώστε ένα λογότυπο για τη μέθοδο αυθεντικοποίησης CAS που είναι οικεία στους χρήστες σας.';
 $string['auth_cas_auth_name'] = 'Όνομα μεθόδου αυθεντικοποίησης';
 $string['auth_cas_auth_name_description'] = 'Δώστε ένα όνομα για τη μέθοδο αυθεντικοποίησης CAS που είναι οικεία στους χρήστες σας.';
 $string['auth_cas_auth_service'] = 'CAS';
-$string['auth_cas_auth_user_create'] = 'Create users externally';
-$string['auth_cas_baseuri'] = 'URI του εξυπηρετητή (τίποτα αν δεν υπάρχει baseURI)<br />Για παράδειγμα, εάν ο εξυπηρετητής CAS απαντάει στο host.domaine.fr/CAS/ τότε <br />cas_baseuri = CAS/';
-$string['auth_cas_baseuri_key'] = 'Base URI';
-$string['auth_cas_broken_password'] = 'Δεν μπορείτε να προχωρήσετε χωρίς να αλλάξετε τον κωδικό πρόσβασής σας, ωστόσο δεν υπάρχει διαθέσιμη σελίδα για την αλλαγή του. Παρακαλούμε επικοινωνήστε με τον διαχειριστή του Moodle.';
+$string['auth_cas_auth_user_create'] = 'Δημιουργία χρηστών εξωτερικά';
+$string['auth_cas_baseuri'] = 'Διεύθυνση URI του εξυπηρετητή (τίποτα αν δεν υπάρχει baseURI)<br />Για παράδειγμα, εάν ο εξυπηρετητής CAS απαντάει στο host.domaine.fr/CAS/ τότε <br />cas_baseuri = CAS/';
+$string['auth_cas_baseuri_key'] = 'Βασική διεύθυνση URI';
+$string['auth_cas_broken_password'] = 'Δεν μπορείτε να προχωρήσετε χωρίς να αλλάξετε τον κωδικό πρόσβασής σας, ωστόσο δεν υπάρχει διαθέσιμη σελίδα για την αλλαγή του. Παρακαλούμε επικοινωνήστε με τον διαχειριστή του Moodle σας.';
 $string['auth_cas_cantconnect'] = 'Το LDAP μέρος του αρθρώματος CAS δεν μπορεί να συνδεθεί στον εξυπηρετητή: {$a}';
 $string['auth_cas_casversion'] = 'Έκδοση πρωτοκόλλου CAS';
 $string['auth_cas_certificate_check'] = 'Επιλέξτε «ναι» αν θέλετε να επικυρώσετε το πιστοποιητικό του εξυπηρετητή';
@@ -78,9 +76,9 @@ $string['auth_cas_server_settings'] = 'Ρυθμίσεις του εξυπηρε�
 $string['auth_cas_text'] = 'Ασφαλή σύνδεση';
 $string['auth_cas_use_cas'] = 'Χρήση CAS';
 $string['auth_cas_version'] = 'Έκδοση του πρωτοκόλλου CAS προς χρήση';
-$string['auth_casdescription'] = 'Αυτή η μέθοδος χρησιμοποιεί ένα εξυπηρετητή CAS (Central Authentication Service: κεντρική υπηρεσία αυθεντικοποίησης) για την πιστοποίηση των χρηστών σε ένα SSO περιβάλλον (Single Sign On: μία και μόνον ενιαία αυθεντικοποίηση). Μπορείτε επίσης να χρησιμοποιήσετε απλή LDAP (Lightweight Directory Access Protocol) πιστοποίηση. Εάν το όνομα χρήστη και ο κωδικός πρόσβασης είναι έγκυρα σύμφωνα με το CAS, το Moodle δημιουργεί μια καινούργια καταχώρηση για τον χρήστη στην βάση δεδομένων του, λαμβάνοντας ιδιοχαρακτηριστικά του χρήστη μέσω LDAP αν χρειαστεί. Στις επόμενες συνδέσεις μόνο το όνομα χρήστη και ο κωδικός ελέγχονται.';
+$string['auth_casdescription'] = 'Αυτή η μέθοδος χρησιμοποιεί ένα εξυπηρετητή CAS (Central Authentication Service: κεντρική υπηρεσία αυθεντικοποίησης) για την πιστοποίηση των χρηστών σε ένα περιβάλλον ενιαίας αυθεντικοποίησης SSO (Single Sign On: μία και μόνον ενιαία αυθεντικοποίηση). Μπορείτε επίσης να χρησιμοποιήσετε απλή LDAP (Lightweight Directory Access Protocol) πιστοποίηση. Εάν το όνομα χρήστη και ο κωδικός πρόσβασης είναι έγκυρα σύμφωνα με το CAS, το Moodle δημιουργεί μια καινούργια καταχώρηση για τον χρήστη στην βάση δεδομένων του, λαμβάνοντας ιδιοχαρακτηριστικά του χρήστη μέσω LDAP αν χρειαστεί. Στις επόμενες συνδέσεις μόνο το όνομα χρήστη και ο κωδικός ελέγχονται.';
 $string['auth_casnotinstalled'] = 'Δεν είναι δυνατή η χρήση της αυθεντικοποίησης CAS. Το άρθρωμα LDAP της PHP δεν είναι εγκατεστημένο.';
 $string['noldapserver'] = 'Κανένας εξυπηρετητής LDAP δεν ρυθμίστηκε για CAS! Ο συγχρονισμός απενεργοποιήθηκε. (Central Authentication Service: κεντρική υπηρεσία αυθεντικοποίησης)';
 $string['pluginname'] = 'Εξυπηρετητής CAS (SSO)';
-$string['privacy:metadata'] = 'Το πρόσθετο «Αυθεντικοποίηση εξυπηρετητή CAS (SSO)» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata'] = 'Το πρόσθετο αυθεντικοποίησης εξυπηρετητή CAS (SSO) δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['synctask'] = 'CAS εργασία συγχρονισμού χρηστών';

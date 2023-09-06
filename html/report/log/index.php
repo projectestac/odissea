@@ -50,8 +50,7 @@ $params = array();
 if (!empty($id)) {
     $params['id'] = $id;
 } else {
-    $site = get_site();
-    $id = $site->id;
+    $id = $SITE->id;
 }
 if ($group !== 0) {
     $params['group'] = $group;
@@ -105,15 +104,13 @@ $url = new moodle_url("/report/log/index.php", $params);
 $PAGE->set_url('/report/log/index.php', array('id' => $id));
 $PAGE->set_pagelayout('report');
 
-report_helper::save_selected_report($id, $url);
-
 // Get course details.
-$course = null;
-if ($id) {
+if ($id != $SITE->id) {
     $course = $DB->get_record('course', array('id' => $id), '*', MUST_EXIST);
     require_login($course);
     $context = context_course::instance($course->id);
 } else {
+    $course = $SITE;
     require_login();
     $context = context_system::instance();
     $PAGE->set_context($context);
@@ -144,9 +141,10 @@ if ($PAGE->user_allowed_editing() && $adminediting != -1) {
     $USER->editing = $adminediting;
 }
 
-if (empty($course) || ($course->id == $SITE->id)) {
+if ($course->id == $SITE->id) {
     admin_externalpage_setup('reportlog', '', null, '', array('pagelayout' => 'report'));
     $PAGE->set_title($SITE->shortname .': '. $strlogs);
+    $PAGE->set_primary_active_tab('siteadminnode');
 } else {
     $PAGE->set_title($course->shortname .': '. $strlogs);
     $PAGE->set_heading($course->fullname);
@@ -194,7 +192,7 @@ if (empty($readers)) {
         // Print selector dropdown.
         $pluginname = get_string('pluginname', 'report_log');
         report_helper::print_report_selector($pluginname);
-        echo $output->heading(get_string('chooselogs') .':');
+        echo $output->heading(get_string('chooselogs') .':', 3);
         echo $output->render($reportlog);
     }
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'de', version '3.11'.
+ * Strings for component 'book', language 'de', version '4.1'.
  *
  * @package     book
  * @category    string
@@ -55,10 +55,12 @@ $string['indicator:cognitivedepth'] = 'Buch kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einem Buch erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Buch kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Buchaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Buch sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einem Buch erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Buch sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Buchaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = 'Buch';
 $string['modulename_help'] = 'Statt endlos durch lange Texte am Bildschirm zu scrollen, teilen Sie Ihre Lerninhalte auf kurze Seiten innerhalb eines Buchs in einem buchähnlichen Format mit Kapiteln und Unterkapiteln auf.
 
@@ -69,6 +71,7 @@ Ein Buch kann verwendet werden
 * Um Lesematerial für individuelle Studienmodule anzuzeigen
 * Als Abteilungshandbuch für Mitarbeiter/innen
 * Als Schaukasten für Portfolios von studentischen Arbeiten';
+$string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Bücher';
 $string['movechapterdown'] = 'Kapitel "{$a}"nach unten verschieben';
 $string['movechapterup'] = 'Kapitel "{$a}" nach oben verschieben';

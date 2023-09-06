@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_stats', language 'ar', version '3.11'.
+ * Strings for component 'report_stats', language 'ar', version '4.1'.
  *
  * @package     report_stats
  * @category    string
@@ -28,20 +28,20 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventreportviewed'] = 'تقرير إحصائيات تمت معاينته';
 $string['eventuserreportviewed'] = 'تقرير إحصائيات مستخدم تمت معاينته';
 $string['nocapability'] = 'تعذر الوصول إلى تقرير إحصائيات المستخدم';
-$string['page-report-stats-index'] = 'تقرير إحصائيات المقرر الدراسي';
-$string['page-report-stats-user'] = 'تقرير إحصائيات المستخدم في المقرر الدراسي';
+$string['page-report-stats-index'] = 'تقرير إحصائيات المساق';
+$string['page-report-stats-user'] = 'تقرير إحصائيات المستخدم في المساق';
 $string['page-report-stats-x'] = 'أي تقرير إحصائيات';
 $string['pluginname'] = 'الإحصائيات';
 $string['privacy:dailypath'] = 'إحصائيات يومية';
 $string['privacy:metadata'] = 'إن ملحق الإحصائيات لا يخزن أي بيانات شخصية.';
-$string['privacy:metadata:courseid'] = 'مُعرَّف المقرر الدراسي';
+$string['privacy:metadata:courseid'] = 'مُعرَّف المساق';
 $string['privacy:metadata:roleid'] = 'مُعرَّف دور المستخدم';
 $string['privacy:metadata:statsreads'] = 'معاينات المحتوى';
 $string['privacy:metadata:statssummary'] = 'يسجل إحصائيات أساسية عن تفاعل المستخدم في المقررات الدراسية';
-$string['privacy:metadata:statswrites'] = 'المحتوى المصنوع في المقرر الدراسي';
+$string['privacy:metadata:statswrites'] = 'المحتوى المصنوع في المساق';
 $string['privacy:metadata:stattype'] = 'نوع الإحصائية التي يجري تسجيلها';
 $string['privacy:metadata:timeend'] = 'وقت انتهاء معاينة سجلات الوقوعات';
 $string['privacy:metadata:userid'] = 'مُعرَّف المستخدم المرتبط بهذا الجدول';
 $string['privacy:monthlypath'] = 'إحصائيات شهرية';
 $string['privacy:weeklypath'] = 'إحصائيات أسبوعية';
-$string['stats:view'] = 'معاينة تقرير إحصائيات المقرر الدراسي';
+$string['stats:view'] = 'معاينة تقرير إحصائيات المساق';

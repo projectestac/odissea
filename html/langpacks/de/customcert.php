@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customcert', language 'de', version '3.11'.
+ * Strings for component 'customcert', language 'de', version '4.1'.
  *
  * @package     customcert
  * @category    string
@@ -112,7 +112,6 @@ $string['height'] = 'Höhe';
 $string['height_help'] = 'Dies ist die Höhe der erstellten PDF Datei in mm. Eine A4 Seite ist 297 mm und ein US-Letter 279 mm hoch.';
 $string['invalidcode'] = 'Sie haben einen ungültigen Code eingegeben.';
 $string['invalidcolour'] = 'Ungültige Farbe ausgewählt. Bitte geben Sie eine gültige HTML Farbbezeichnung oder einen sechs- oder dreistelligen HEX-Code der Farbe ein.';
-$string['invalidelementwidth'] = 'Geben Sie eine Zahl größer als 0 ein.';
 $string['invalidheight'] = 'Der Wert für die Höhe muss eine gültige Zahl größer als 0 sein.';
 $string['invalidmargin'] = 'Der Wert für den Rand muss eine gültige Zahl größer als 0 sein.';
 $string['invalidposition'] = 'Bitte geben Sie eine positive Zahl für Postion {$a} an.';
@@ -129,6 +128,7 @@ $string['managetemplatesdesc'] = 'Dieser Link öffnet eine neue Seite, auf der S
 $string['modify'] = 'Bearbeiten';
 $string['modulename'] = 'Zertifikat';
 $string['modulename_help'] = 'Dieses Modul ermöglicht die dynamische Erstellung von PDF Zertifikaten.';
+$string['modulename_link'] = 'Custom_certificate_module';
 $string['modulenameplural'] = 'Zertifikate';
 $string['mycertificates'] = 'Meine Zertifikate';
 $string['mycertificatesdescription'] = 'Dies sind die Zertifikate, die Sie entweder per E-Mail erhalten oder manuell heruntergeladen haben.';

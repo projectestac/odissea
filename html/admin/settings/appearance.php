@@ -55,9 +55,11 @@ if ($hassiteconfig or has_any_capability($capabilities, $systemcontext)) { // sp
         'customusermenuitems',
         new lang_string('customusermenuitems', 'admin'),
         new lang_string('configcustomusermenuitems', 'admin'),
-        'grades,grades|/grade/report/mygrades.php|t/grades
-messages,message|/message/index.php|t/message
-preferences,moodle|/user/preferences.php|t/preferences',
+        'profile,moodle|/user/profile.php
+grades,grades|/grade/report/mygrades.php
+calendar,core_calendar|/calendar/view.php?view=month
+privatefiles,moodle|/user/files.php
+reports,core_reportbuilder|/reportbuilder/index.php',
         PARAM_RAW,
         '50',
         '10'
@@ -112,6 +114,14 @@ preferences,moodle|/user/preferences.php|t/preferences',
     $description = get_string('logocompact_desc', 'admin');
     $setting = new admin_setting_configstoredfile('core_admin/logocompact', $title, $description, 'logocompact', 0,
         ['maxfiles' => 1, 'accepted_types' => ['.jpg', '.png']]);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+
+    // Favicon file setting.
+    $title = get_string('favicon', 'admin');
+    $description = get_string('favicon_desc', 'admin');
+    $setting = new admin_setting_configstoredfile('core_admin/favicon', $title, $description, 'favicon', 0,
+        ['maxfiles' => 1, 'accepted_types' => ['image']]);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
@@ -219,14 +229,29 @@ preferences,moodle|/user/preferences.php|t/preferences',
 
     // Navigation settings
     $temp = new admin_settingpage('navigation', new lang_string('navigation'));
-    $choices = array(
-        HOMEPAGE_SITE => new lang_string('site'),
-        HOMEPAGE_MY => new lang_string('mymoodle', 'admin'),
-        HOMEPAGE_USER => new lang_string('userpreference', 'admin')
-    );
+    $temp->add(new admin_setting_configcheckbox(
+        'enabledashboard',
+        new lang_string('enabledashboard', 'admin'),
+        new lang_string('enabledashboard_help', 'admin'),
+        1
+    ));
+
+    $choices = [HOMEPAGE_SITE => new lang_string('home')];
+    if (!empty($CFG->enabledashboard)) {
+        $choices[HOMEPAGE_MY] = new lang_string('mymoodle', 'admin');
+    }
+    $choices[HOMEPAGE_MYCOURSES] = new lang_string('mycourses', 'admin');
+    $choices[HOMEPAGE_USER] = new lang_string('userpreference', 'admin');
     $temp->add(new admin_setting_configselect('defaulthomepage', new lang_string('defaulthomepage', 'admin'),
-            new lang_string('configdefaulthomepage', 'admin'), HOMEPAGE_MY, $choices));
-    $temp->add(new admin_setting_configcheckbox('allowguestmymoodle', new lang_string('allowguestmymoodle', 'admin'), new lang_string('configallowguestmymoodle', 'admin'), 1));
+            new lang_string('configdefaulthomepage', 'admin'), get_default_home_page(), $choices));
+    if (!empty($CFG->enabledashboard)) {
+        $temp->add(new admin_setting_configcheckbox(
+            'allowguestmymoodle',
+            new lang_string('allowguestmymoodle', 'admin'),
+            new lang_string('configallowguestmymoodle', 'admin'),
+            1
+        ));
+    }
     $temp->add(new admin_setting_configcheckbox('navshowfullcoursenames', new lang_string('navshowfullcoursenames', 'admin'), new lang_string('navshowfullcoursenames_help', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('navshowcategories', new lang_string('navshowcategories', 'admin'), new lang_string('confignavshowcategories', 'admin'), 1));
     $temp->add(new admin_setting_configcheckbox('navshowmycoursecategories', new lang_string('navshowmycoursecategories', 'admin'), new lang_string('navshowmycoursecategories_help', 'admin'), 0));
@@ -269,9 +294,11 @@ preferences,moodle|/user/preferences.php|t/preferences',
     $temp->add(new admin_setting_configcheckbox('doctonewwindow', new lang_string('doctonewwindow', 'admin'), new lang_string('configdoctonewwindow', 'admin'), 0));
     $ADMIN->add('appearance', $temp);
 
-    $temp = new admin_externalpage('mypage', new lang_string('mypage', 'admin'), $CFG->wwwroot . '/my/indexsys.php',
-            'moodle/my:configsyspages');
-    $ADMIN->add('appearance', $temp);
+    if (!empty($CFG->enabledashboard)) {
+        $temp = new admin_externalpage('mypage', new lang_string('mypage', 'admin'), $CFG->wwwroot . '/my/indexsys.php',
+                'moodle/my:configsyspages');
+        $ADMIN->add('appearance', $temp);
+    }
 
     $temp = new admin_externalpage('profilepage', new lang_string('myprofile', 'admin'), $CFG->wwwroot . '/user/profilesys.php',
             'moodle/my:configsyspages');
@@ -288,10 +315,13 @@ preferences,moodle|/user/preferences.php|t/preferences',
             new lang_string('courselistshortnames_desc', 'admin'), 0));
     $temp->add(new admin_setting_configtext('coursesperpage', new lang_string('coursesperpage', 'admin'), new lang_string('configcoursesperpage', 'admin'), 20, PARAM_INT));
     $temp->add(new admin_setting_configtext('courseswithsummarieslimit', new lang_string('courseswithsummarieslimit', 'admin'), new lang_string('configcourseswithsummarieslimit', 'admin'), 10, PARAM_INT));
+
     $temp->add(new admin_setting_configtext('courseoverviewfileslimit', new lang_string('courseoverviewfileslimit'),
             new lang_string('configcourseoverviewfileslimit', 'admin'), 1, PARAM_INT));
-    $temp->add(new admin_setting_configtext('courseoverviewfilesext', new lang_string('courseoverviewfilesext'),
-            new lang_string('configcourseoverviewfilesext', 'admin'), '.jpg,.gif,.png'));
+    $temp->add(new admin_setting_filetypes('courseoverviewfilesext', new lang_string('courseoverviewfilesext'),
+        new lang_string('configcourseoverviewfilesext', 'admin'), 'web_image'
+    ));
+
     $temp->add(new admin_setting_configtext('coursegraceperiodbefore', new lang_string('coursegraceperiodbefore', 'admin'),
         new lang_string('configcoursegraceperiodbefore', 'admin'), 0, PARAM_INT));
     $temp->add(new admin_setting_configtext('coursegraceperiodafter', new lang_string('coursegraceperiodafter', 'admin'),

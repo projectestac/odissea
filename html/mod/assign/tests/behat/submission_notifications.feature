@@ -36,7 +36,7 @@ Feature: Manage assignment submission web notifications
     And I am on the "Assign 1" "assign activity" page logged in as student1
     And the following "user preferences" exist:
       | user      | preference                                                | value |
-      | teacher1  | message_provider_mod_assign_assign_notification_loggedin  | popup |
+      | teacher1  | message_provider_mod_assign_assign_notification_enabled   | popup |
     # This should generate a notification
     And I press "Edit submission"
     And I set the field "Online text" to "updated"

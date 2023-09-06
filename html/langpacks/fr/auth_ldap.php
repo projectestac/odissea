@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'fr', version '3.11'.
+ * Strings for component 'auth_ldap', language 'fr', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -104,7 +104,7 @@ $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Tenter NTLM avec tous les navigat
 $string['auth_ntlmsso_ie_fastpath_key'] = 'Chemin rapide NTLM SSO';
 $string['auth_ntlmsso_ie_fastpath_yesattempt'] = 'Oui, tenter NTLM avec d\'autres navigateurs';
 $string['auth_ntlmsso_ie_fastpath_yesform'] = 'Oui, tous les autres navigateurs utilisent le mode de connexion standard.';
-$string['auth_ntlmsso_maybeinvalidformat'] = 'Impossible d\'extraire le nom d\'utilisateur à partir de l\'entête REMOTE_USER. Le format est-il configuré correctement ?';
+$string['auth_ntlmsso_maybeinvalidformat'] = 'Impossible d\'extraire le nom d\'utilisateur à partir de l\'en-tête REMOTE_USER. Le format est-il configuré correctement ?';
 $string['auth_ntlmsso_missing_username'] = 'Vous devez au moins indiquer %username% dans le format du nom d\'utilisateur distant';
 $string['auth_ntlmsso_remoteuserformat'] = 'Si vous avez choisi « NTLM » comme « Type d\'authentification », vous pouvez spécifier ici le format du nom d\'utilisateur distant. Si vous ne renseignez pas ce champ, le format par défaut DOMAIN\\username sera utilisé. Vous pouvez utiliser le paramètre fictif optionnel <b>%domain%</b> pour indiquer où doit apparaître le nom du domaine et le paramètre fictif obligatoire <b>%username%</b> pour indiquer où le nom d\'utilisateur doit apparaître.<br /><br />Les formats les plus utilisés sont <tt>%domain%\\%username%</tt> (défaut sous MS Windows), <tt>%domain%/%username%</tt>, <tt>%domain%+%username%</tt> ou simplement <tt>%username%</tt> (si le domaine n\'est pas présent).';
 $string['auth_ntlmsso_remoteuserformat_key'] = 'Format du nom d\'utilisateur distant';
@@ -124,6 +124,10 @@ $string['diag_toooldversion'] = 'Il est très improbable qu\'un serveur LDAP mod
 $string['didntfindexpiretime'] = 'La fonction password_expire() n\'a pas trouvé de durée d\'échéance';
 $string['didntgetusersfromldap'] = 'Aucun utilisateur obtenu depuis LDAP';
 $string['gotcountrecordsfromldap'] = '{$a} enregistrements obtenus de LDAP';
+$string['invalidusererrors'] = 'Attention ! La création de {$a} comptes utilisateurs a été omise.';
+$string['invaliduserexception'] = 'Erreur : impossible de cérer un compte utilisateur. Informations et raison :
+{$a}
+Utilisateur omis.';
 $string['ldapnotconfigured'] = 'L\'hôte LDAP n\'est pas configuré';
 $string['morethanoneuser'] = 'Plus d\'un enregistrement utilisateur trouvé dans LDAP. Seul le premier sera utilisé.';
 $string['needbcmath'] = 'L\'extension BCMath est nécessaire pour pouvoir vérifier l\'échéance des mots de passe avec Active Directory.';
@@ -157,7 +161,6 @@ $string['updatepasserrorexpire'] = 'Erreur dans user_update_password() lors de l
 $string['updatepasserrorexpiregrace'] = 'Erreur dans user_update_password() lors de la modification de l\'échéance et/ou des tolérances de connexion. Code d\'erreur : {$a->errno} ; Texte de l\'erreur : {$a->errstring}';
 $string['updateremfail'] = 'Erreur de modification de l\'enregistrement LDAP. Code d\'erreur : {$a->errno} ; Texte d\'erreur : {$a->errstring}<br/>Clef ({$a->key}) - ancienne valeur moodle : « {$a->ouvalue} » ; nouvelle valeur : « {$a->nuvalue} »';
 $string['updateremfailamb'] = 'Échec de la mise à jour de LDAP sur le champ ambigu {$a->key} ; ancienne valeur moodle : « {$a->ouvalue} » ; nouvelle valeur : « {$a->nuvalue} »';
-$string['updateremfailfield'] = 'Échec de modification LDAP avec un champ non existant (« {$a->ldapkey} »). Clef ({$a->key}) - ancienne valeur Moodle : « {$a->ouvalue} », nouvelle valeur : « {$a->nuvalue} »';
 $string['updateusernotfound'] = 'Impossible de trouver l\'utilisateur lors de la mise à jour externe. Des informations suivent. Base de recherche : « {$a->userdn} »; filtre de recherche : « (objectClass=*) »; attributs de recherche : {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'La fonction auth: ldap user_activate() ne supporte pas le type d\'utilisateur sélectionné : {$a}';
 $string['user_disablenotsupportusertype'] = 'La fonction auth: ldap user_disable() ne supporte pas le type d\'utilisateur sélectionné : {$a}';

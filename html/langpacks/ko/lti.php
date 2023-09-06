@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ko', version '3.11'.
+ * Strings for component 'lti', language 'ko', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -105,6 +105,8 @@ $string['global_tool_types'] = '전역 도구 유형';
 $string['grading'] = '성적 라우팅';
 $string['icon_url'] = '아이콘 URL';
 $string['id'] = '아이디';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidid'] = 'LTI 아이디가 틀립니다.';
 $string['launch_in_moodle'] = '무들에서 도구 기동';
 $string['launch_in_popup'] = '팝업에서 도구 기동';
@@ -129,6 +131,7 @@ $string['misconfiguredtools'] = '잘못 구성된 도구 인스턴스가 발견�
 $string['missingparameterserror'] = '페이지가 잘 못 구성되었습니다. "{$a}"';
 $string['module_class_type'] = '무들 모듈 유형';
 $string['modulename'] = '외부 도구';
+$string['modulename_link'] = 'mod/lti/view';
 $string['modulenameplural'] = '외부 툴';
 $string['modulenamepluralformatted'] = 'LTI 인스턴스';
 $string['never'] = '전혀 없음';
@@ -144,7 +147,6 @@ $string['noviewusers'] = '이 도구를 사용할 수 있는 권한을 가진 �
 $string['optionalsettings'] = '선택적인 설정';
 $string['organization'] = '조직 세부정보';
 $string['organizationdescr'] = '조직 설명';
-$string['organizationid'] = '조직 ID';
 $string['organizationurl'] = '조직 URL';
 $string['pagesize'] = '페이지당 보여지는 제출물';
 $string['password'] = '공유 암호';

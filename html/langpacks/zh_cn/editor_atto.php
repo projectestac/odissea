@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'zh_cn', version '3.11'.
+ * Strings for component 'editor_atto', language 'zh_cn', version '4.1'.
  *
  * @package     editor_atto
  * @category    string
@@ -46,6 +46,7 @@ $string['privacy:metadata:database:atto_autosave:drafttext'] = '保存的文本�
 $string['privacy:metadata:database:atto_autosave:timemodified'] = '内容被修改的时间。';
 $string['privacy:metadata:database:atto_autosave:userid'] = '数据被保存的用户的ID。';
 $string['recover'] = '恢复';
+$string['richtexteditor'] = '富文本编辑器';
 $string['settings'] = 'Atto 工具栏设置';
 $string['subplugintype_atto'] = 'Atto 插件';
 $string['subplugintype_atto_plural'] = 'Atto 插件';

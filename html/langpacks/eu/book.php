@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'eu', version '3.11'.
+ * Strings for component 'book', language 'eu', version '4.1'.
  *
  * @package     book
  * @category    string
@@ -55,10 +55,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa liburuetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Liburua motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa liburuetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Liburua baliabideak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala liburuetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Liburua motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala liburuetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Liburua baliabideak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['modulename'] = 'Liburua';
 $string['modulename_help'] = 'Liburua moduluak aukera ematen dio irakasleari liburu formatuko hainbat orritako baliabidea sortzeko, atal eta azpiatalduna. Liburuak media fitxategiak izan ditzake eta baita testua ere eta erabilgarria da ataletan bana daitezkeen informazio-pasarte luzeak erakusteko.
 
@@ -67,6 +69,7 @@ Liburua honetarako erabil daiteke:
 * Ikasteko banakako irakur-materialak erakusteko.
 * Saileko langileen esku-liburu gisa
 * Ikasleen lanaren portfolioaren adibide gisa';
+$string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Liburuak';
 $string['movechapterdown'] = 'Mugitu "{$a}" atala behera';
 $string['movechapterup'] = 'Mugitu "{$a}" atala gora';

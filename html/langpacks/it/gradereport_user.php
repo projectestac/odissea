@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'it', version '3.11'.
+ * Strings for component 'gradereport_user', language 'it', version '4.1'.
  *
  * @package     gradereport_user
  * @category    string
@@ -25,11 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allusersnum'] = 'Tutti gli utenti ({$a})';
 $string['eventgradereportviewed'] = 'Visualizzazione scheda individuale';
-$string['myself'] = 'Me stesso';
-$string['otheruser'] = 'Utente';
+$string['gotonextreport'] = 'Vai al prossimo report utente';
+$string['gotopreviousreport'] = 'Vai al precedete report utente';
 $string['pluginname'] = 'Scheda individuale';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Scelta di visualizzare il report come utente corrente o come altro utente nel registro valutatore.';
 $string['tablesummary'] = 'La tabella è organizzata come elenco di elementi valutati e delle rispettive categorie. È evidenziata l\'appartenenza di un elemento ad una categoria.';
-$string['user:view'] = 'Visualizzare la propria scheda individuale';
-$string['viewas'] = 'Visualizza report come';
+$string['user:view'] = 'Visualizzare scheda individuale';
+$string['userreports'] = 'Selezionare sopra un utente per visualizzane il report';

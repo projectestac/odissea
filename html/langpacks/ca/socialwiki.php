@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'socialwiki', language 'ca', version '3.11'.
+ * Strings for component 'socialwiki', language 'ca', version '4.1'.
  *
  * @package     socialwiki
  * @category    string
@@ -25,5 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['edit'] = 'Edita';
 $string['files'] = 'Fitxers';
+$string['formatcreole_link'] = 'mod/socialwiki/creole';
+$string['formatnwiki_link'] = 'mod/socialwiki/nwiki';
+$string['modulename_link'] = 'mod/socialwiki/view';
 $string['noattachments'] = '<strong>Cap fitxer adjunt</strong>';
+$string['view'] = 'Visualitza';

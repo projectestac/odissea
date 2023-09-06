@@ -22,8 +22,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Defines the complete attendance structure for backup, with file and id annotations
  *
@@ -48,7 +46,7 @@ class backup_attendance_activity_structure_step extends backup_activity_structur
 
         $statuses = new backup_nested_element('statuses');
         $status  = new backup_nested_element('status', array('id'), array(
-            'acronym', 'description', 'grade', 'studentavailability', 'setunmarked', 'visible', 'deleted', 'setnumber'));
+            'acronym', 'description', 'grade', 'studentavailability', 'availablebeforesession', 'setunmarked', 'visible', 'deleted', 'setnumber'));
 
         $warnings = new backup_nested_element('warnings');
         $warning  = new backup_nested_element('warning', array('id'), array('warningpercent', 'warnafter',
@@ -57,9 +55,14 @@ class backup_attendance_activity_structure_step extends backup_activity_structur
         $sessions = new backup_nested_element('sessions');
         $session  = new backup_nested_element('session', array('id'), array(
             'groupid', 'sessdate', 'duration', 'lasttaken', 'lasttakenby', 'timemodified',
-            'description', 'descriptionformat', 'studentscanmark', 'studentpassword', 'autoassignstatus',
+            'description', 'descriptionformat', 'studentscanmark', 'allowupdatestatus', 'studentpassword', 'autoassignstatus',
             'subnet', 'automark', 'automarkcompleted', 'statusset', 'absenteereport', 'preventsharedip',
-            'preventsharediptime', 'caleventid', 'calendarevent', 'includeqrcode', 'automarkcmid'));
+            'preventsharediptime', 'caleventid', 'calendarevent', 'includeqrcode', 'automarkcmid',
+            'studentsearlyopentime'));
+
+        $customfields = new backup_nested_element('customfields');
+        $customfield = new backup_nested_element('customfield', ['id'], [
+            'sessionid', 'shortname', 'type', 'value', 'valueformat']);
 
         // XML nodes declaration - user data.
         $logs = new backup_nested_element('logs');
@@ -76,6 +79,9 @@ class backup_attendance_activity_structure_step extends backup_activity_structur
         $attendance->add_child($sessions);
         $sessions->add_child($session);
 
+        $attendance->add_child($customfields);
+        $customfields->add_child($customfield);
+
         $session->add_child($logs);
         $logs->add_child($log);
 
@@ -89,6 +95,10 @@ class backup_attendance_activity_structure_step extends backup_activity_structur
             array('idnumber' => backup::VAR_PARENTID));
 
         $session->set_source_table('attendance_sessions', array('attendanceid' => backup::VAR_PARENTID));
+
+        $handler = mod_attendance\customfield\session_handler::create();
+        $fieldsforbackup = $handler->get_instance_data_for_backup_by_activity($this->task->get_activityid());
+        $customfield->set_source_array($fieldsforbackup);
 
         // Data sources - user related data.
         if ($userinfo) {

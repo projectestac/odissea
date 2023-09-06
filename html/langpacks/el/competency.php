@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'el', version '3.11'.
+ * Strings for component 'competency', language 'el', version '4.1'.
  *
  * @package     competency
  * @category    string
@@ -42,9 +42,9 @@ $string['deletecompetencyratings'] = 'Διαγραφή εκτιμήσεων πρ
 $string['duplicateditemname'] = '{$a} (αντίγραφο)';
 $string['enablecompetencies'] = 'Ενεργοποίηση προσόντων';
 $string['enablecompetencies_desc'] = 'Τα προσόντα επιτρέπουν στους χρήστες να αξιολογούνται σύμφωνα με σχέδια μάθησης.';
-$string['errorcannotchangeapastduedate'] = 'H οφειλόμενη ημερομηνία έχει περάσει· δεν μπορεί να αλλάξει.';
-$string['errorcannotsetduedateinthepast'] = 'H οφειλόμενη ημερομηνία δεν μπορεί να οριστεί στο παρελθόν.';
-$string['errorcannotsetduedatetoosoon'] = 'H οφειλόμενη ημερομηνία είναι πάρα πολύ σύντομα.';
+$string['errorcannotchangeapastduedate'] = 'Η οφειλόμενη ημερομηνία έχει περάσει· δεν μπορεί να αλλάξει.';
+$string['errorcannotsetduedateinthepast'] = 'Η οφειλόμενη ημερομηνία δεν μπορεί να οριστεί στο παρελθόν.';
+$string['errorcannotsetduedatetoosoon'] = 'Η οφειλόμενη ημερομηνία είναι πάρα πολύ σύντομα.';
 $string['errorcompetencyrule'] = 'Ο κανόνας προσόντος μαθήματος «{$a}» δεν βρέθηκε';
 $string['errorcoursecompetencyrule'] = 'Ο κανόνας προσόντος μαθήματος «{$a}» δεν βρέθηκε';
 $string['errorinvalidcourse'] = 'Μη έγκυρο μάθημα.';
@@ -145,7 +145,7 @@ $string['privacy:metadata:evidence:grade'] = 'Ο βαθμός που συσχε�
 $string['privacy:metadata:evidence:note'] = 'Μια μη μεταφρασμένη σημείωση συνημμένη στο αποδεικτικό';
 $string['privacy:metadata:evidence:url'] = 'Μια διεύθυνση URL που συσχετίζεται με το αποδεικτικό';
 $string['privacy:metadata:plan:description'] = 'Η περιγραφή του σχεδίου μάθησης';
-$string['privacy:metadata:plan:duedate'] = 'H οφειλόμενη ημερομηνία του σχεδίου μάθησης';
+$string['privacy:metadata:plan:duedate'] = 'Η οφειλόμενη ημερομηνία του σχεδίου μάθησης';
 $string['privacy:metadata:plan:name'] = 'Το όνομα του σχεδίου μάθησης';
 $string['privacy:metadata:plan:reviewerid'] = 'Το αναγνωριστικό του εξεταστή του σχεδίου μάθησης';
 $string['privacy:metadata:plan:status'] = 'Η κατάσταση του σχεδίου μάθησης';

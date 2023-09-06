@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'es', version '3.11'.
+ * Strings for component 'cachestore_file', language 'es', version '4.1'.
  *
  * @package     cachestore_file
  * @category    string
@@ -25,8 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['asyncpurge'] = 'Purgar directorio de forma asíncrona';
+$string['asyncpurge_help'] = 'Si está habilitado, se crea un nuevo directorio con revisión de caché y el directorio anterior se eliminará de forma asíncrona a través de una tarea programada';
 $string['autocreate'] = 'Crear directorio automáticamente';
 $string['autocreate_help'] = 'Si está habilitado el directorio especificado en la ruta se creará automáticamente, si no existe.';
+$string['lockwait'] = 'Tiempo máximo de espera del bloqueo';
+$string['lockwait_help'] = 'La cantidad máxima de tiempo en segundos a esperar para un bloqueo exclusivo antes de leer o escribir una clave de caché. Esto solamente es usado para definiciones de caché que requieran bloqueo de lectura o escritura.';
 $string['path'] = 'Ruta del caché';
 $string['path_help'] = 'Directorio que se usará para almacenar la caché de archivos de este almacén. Si se deja en blanco (por defecto) el directorio se creará automáticamente en moodledata. Este ajuste puede ser usado para apuntando un almacén de archivos hacia un directorio concreto, mejorando el rendimiento (tal como uno en la memoria).';
 $string['pluginname'] = 'Caché de archivos';
@@ -42,3 +46,4 @@ Es aconsejable activarlo solo si se cumple lo siguiente:
 
 * Si sabe que la cantidad de elementos en la caché será lo suficientemente pequeña como para que no cause problemas en el sistema de archivos con el que está ejecutando.
 * Los datos que se almacenan en caché no son costosos de generar. Si es así, seguir con el valor predeterminado puede ser la mejor opción, ya que reduce la posibilidad de problemas.';
+$string['task_asyncpurge'] = 'Purgar asíncronamente los directorios de revisión de caché antiguos del almacén de archivos';

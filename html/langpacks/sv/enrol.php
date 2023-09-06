@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'sv', version '3.11'.
+ * Strings for component 'enrol', language 'sv', version '4.1'.
  *
  * @package     enrol
  * @category    string
@@ -57,6 +57,7 @@ $string['enrollednewusers'] = '{$a} nya användare registrerades framgångsrikt'
 $string['enrolledusers'] = 'Registrerade användare';
 $string['enrolledusersmatching'] = 'Matchar registrerade användare';
 $string['enrolme'] = 'Registrera mig på den här kursen';
+$string['enrolment'] = 'Kursregistrering';
 $string['enrolmentinstances'] = 'Registreringsmetoder';
 $string['enrolmentmethod'] = 'Registreringsmetod';
 $string['enrolmentnew'] = 'Ny registrering på {$a}';
@@ -110,6 +111,7 @@ $string['invalidrequest'] = 'Ogiltig begäran';
 $string['invalidrole'] = 'Ogiltig roll';
 $string['manageenrols'] = 'Hantera pluginmoduler för registrering';
 $string['manageinstance'] = 'Hantera';
+$string['method'] = 'Metod';
 $string['migratetomanual'] = 'Migrera till manuella registreringar';
 $string['nochange'] = 'Ingen förändring';
 $string['noexistingparticipants'] = 'Inga befintliga deltagare';
@@ -150,6 +152,10 @@ $string['startdatetoday'] = 'Idag';
 $string['synced'] = 'Synkroniserad';
 $string['testsettings'] = 'Testa inställningarna';
 $string['testsettingsheading'] = 'Testa registreringsinställningar - {$a}';
+$string['timeended'] = 'Avslutstid';
+$string['timeenrolled'] = 'Registrerad';
+$string['timereaggregated'] = 'Tid omaggregerad';
+$string['timestarted'] = 'Starttid';
 $string['totalenrolledusers'] = '{$a} registrerade användare';
 $string['totalotherusers'] = '{$a} övriga användare';
 $string['totalunenrolledusers'] = '{$a} avregistrerade användare';

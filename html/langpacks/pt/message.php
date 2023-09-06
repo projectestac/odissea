@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'pt', version '3.11'.
+ * Strings for component 'message', language 'pt', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Bloquear mensagens de pessoas que não estão na 
 $string['blockuser'] = 'Bloquear utilizador';
 $string['blockuserconfirm'] = 'Tem a certeza de que pretende bloquear {$a}?';
 $string['blockuserconfirmbutton'] = 'Bloquear';
-$string['canceledit'] = 'Cancelar a edição de mensagens';
 $string['cancelselection'] = 'Cancelar a seleção de mensagens';
 $string['cantblockuser'] = 'Não pode bloquear {$a} porque eles têm um papel com permissão para enviar mensagens para todos os utilizadores.';
 $string['contactableprivacy'] = 'Aceitar mensagens de:';
@@ -67,7 +66,7 @@ $string['deleteselectedmessagesconfirm'] = 'Tem a certeza de que pretende apagar
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Tem a certeza de que pretende apagar as mensagens pessoais selecionadas?';
 $string['disableall'] = 'Desativar notificações';
 $string['disabled'] = 'O sistema de mensagens foi desativado neste site';
-$string['disallowed'] = 'Não permitido';
+$string['disallowed'] = 'Bloqueado';
 $string['editmessages'] = 'Editar mensagens';
 $string['emailtagline'] = 'Este e-mail é uma cópia de uma mensagem enviada para si no site "{$a->sitename}". Aceda a <a href="{$a->url}">{$a->url}</a> para responder.';
 $string['enabled'] = 'Ativado';
@@ -86,6 +85,7 @@ $string['eventmessageviewed'] = 'Mensagem visualizada';
 $string['eventnotificationsent'] = 'Notificação enviada';
 $string['eventnotificationviewed'] = 'Notificação visualizada';
 $string['forced'] = 'Bloqueado';
+$string['forcedmessage'] = 'Ativado';
 $string['groupconversations'] = 'Grupo';
 $string['groupinfo'] = 'Informação do grupo';
 $string['guestnoeditmessage'] = 'Os visitantes não podem alterar as definições das mensagens';
@@ -105,8 +105,6 @@ $string['loggedoffdescription'] = 'Quando está offline';
 $string['managemessageoutputs'] = 'Predefinições das notificações';
 $string['message'] = 'Mensagem';
 $string['messagecontactrequest'] = '{$a->user} está a solicitar que adicione como seu contacto. Visite a sua <a href="{$a->url}">página de solicitações de contacto</a> para responder à solicitação';
-$string['messagecontactrequestsnotification'] = '{$a} está a solicitar para ser adicionado como contacto.';
-$string['messagecontactrequestsnotificationsubject'] = 'Solicitação de contacto de {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: Solicitação de contacto de {$a->user}';
 $string['messagecontentaudio'] = 'Áudio';
 $string['messagecontentimage'] = 'Imagem';
@@ -137,7 +135,6 @@ $string['nofavourites'] = 'Nenhuma conversação com estrela';
 $string['noframesjs'] = 'Usar interface mais acessível';
 $string['nogroupconversations'] = 'Nenhuma conversação de grupo';
 $string['noindividualconversations'] = 'Nenhuma conversação privada';
-$string['nomessages'] = 'Sem mensagens';
 $string['nomessagesfound'] = 'Não foram encontradas mensagens';
 $string['noncontacts'] = 'Outros contactos';
 $string['nonotifications'] = 'Não tem notificações';
@@ -156,11 +153,7 @@ $string['offline'] = 'Offline';
 $string['on'] = 'On';
 $string['online'] = 'Online';
 $string['otherparticipants'] = 'Outros participantes';
-$string['outputdisabled'] = 'Método de envio desativado';
-$string['outputdoesnotexist'] = 'Método de envio de mensagens não existente';
-$string['outputenabled'] = 'Enviadas ativo';
 $string['outputnotavailable'] = 'Não está disponível';
-$string['outputnotconfigured'] = 'Não está configurado';
 $string['page-message-x'] = 'Qualquer página de mensagens';
 $string['participants'] = 'Participantes';
 $string['pendingcontactrequests'] = 'Tem {$a} solicitações de contacto pendentes';
@@ -223,6 +216,9 @@ $string['privacy:metadata:preference:core_message_settings'] = 'Configurações 
 $string['privacy:request:preference:set'] = 'O valor da configuração \'{$a->name}\' era \'{$a->value}\'';
 $string['privacy_desc'] = 'Pode restringir as pessoas que podem enviar-lhe uma mensagem';
 $string['processorsettings'] = 'Configurações do processador';
+$string['providerenabled'] = 'Estado da ativação do envio de "{$a}"';
+$string['providerprocesorisdisallowed'] = '"{$a->provider}" via "{$a->processor}" está bloqueado';
+$string['providerprocesorislocked'] = '"{$a->provider}" via "{$a->processor}" está ativado';
 $string['removecontact'] = 'Remover contacto';
 $string['removecontactconfirm'] = 'Tem a certeza de que pretende remover {$a} dos seus contactos?';
 $string['removecoursefilter'] = 'Remover filtro para a disciplina {$a}';
@@ -247,6 +243,8 @@ $string['sendbulkmessagesingle'] = 'Enviar mensagem para 1 participante';
 $string['sendcontactrequest'] = 'Enviar pedido de contacto';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = 'A enviar "{$a->provider}" via "{$a->processor}"';
+$string['sendingviaenabled'] = 'Estado da ativação do envio de "{$a->provider}" via "{$a->processor}"';
+$string['sendingvialocked'] = 'Estado do bloqueio do envio de "{$a->provider}" via "{$a->processor}"';
 $string['sendingviawhen'] = 'A enviar "{$a->provider}" via "{$a->processor}" em {$a->state}';
 $string['sendmessage'] = 'Enviar mensagem';
 $string['sendmessageto'] = 'Enviar mensagem para {$a}';

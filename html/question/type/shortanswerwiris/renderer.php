@@ -44,18 +44,19 @@ class qtype_shortanswerwiris_renderer extends qtype_wq_renderer {
             $inputattributes['readonly'] = 'readonly';
         }
 
-        $feedbackimg = '';
-
         if ($options->correctness) {
             $answer = $question->get_matching_answer(array('answer' => $currentanswer));
             $fraction = $answer ? $answer->fraction : 0;
             $inputattributes['class'] .= ' wirisembeddedfeedback ' . $this->feedback_class($fraction);
-            // Feedback image delegate to wirisembeddedfeedback class.
+            $matchingauthoranswer = $qa->get_last_qt_var('_matching_answer_wq_position');
+            if (!is_null($matchingauthoranswer)) {
+                $inputattributes['wirisauthoranswer'] = $matchingauthoranswer;
+            }
         }
 
         $questiontext = $question->format_questiontext($qa);
 
-        $input = html_writer::empty_tag('input', $inputattributes) . $feedbackimg;
+        $input = html_writer::empty_tag('input', $inputattributes);
 
         $result = html_writer::tag('div', $questiontext, array('class' => 'qtext'));
 

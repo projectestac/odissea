@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'de', version '3.11'.
+ * Strings for component 'course', language 'de', version '4.1'.
  *
  * @package     course
  * @category    string
@@ -46,9 +46,11 @@ $string['aria:coursename'] = 'Kursname';
 $string['aria:courseshortname'] = 'Kurzer Kursname';
 $string['aria:defaulttab'] = 'Standard-Aktivitäten';
 $string['aria:favourite'] = 'Der Kurs ist als Favorit markiert.';
-$string['aria:favouritestab'] = 'Markierte Akvititäten';
+$string['aria:favouritestab'] = 'Favorisierte Akvititäten';
 $string['aria:modulefavourite'] = 'Aktivität {$a} als Favorit markieren';
 $string['aria:recommendedtab'] = 'Empfohlene Aktivitäten';
+$string['browsecourseadminindex'] = 'Kurs-Administration mit diesem Index durchsuchen';
+$string['browsesettingindex'] = 'Einstellungen mit diesem Index durchsuchen';
 $string['completion_automatic:done'] = 'Erledigt:';
 $string['completion_automatic:failed'] = 'Nicht bestanden:';
 $string['completion_automatic:todo'] = 'Zu erledigen:';
@@ -61,9 +63,17 @@ $string['completion_setby:auto:todo'] = 'Zu erledigen: {$a->condition} (von {$a-
 $string['completion_setby:manual:done'] = '{$a->activityname} wurde von {$a->setby} als erledigt gekennzeichnet. Zum Rückgängigmachen klicken.';
 $string['completion_setby:manual:markdone'] = '{$a->activityname} wurde von {$a->setby} als nicht erledigt gekennzeichnet. Zum als erledigt kennzeichnen klicken.';
 $string['completionrequirements'] = 'Voraussetzungen für den Abschluss von {$a}';
+$string['courseaccess'] = 'Kurszugriff';
 $string['coursealreadyfinished'] = 'Kurs bereits beendet';
+$string['coursecontentnotification'] = 'Benachrichtigungen über Inhaltsänderung senden';
+$string['coursecontentnotification_help'] = 'Aktivieren Sie diese Option, um Teilnehmer/innen über diese neue oder geänderte Aktivität oder Ressource zu informieren. Nur Nutzer/innen, die auf die Aktivität oder Ressource zugreifen können, erhalten die Benachrichtigung.';
+$string['coursecontentnotifnew'] = 'Neuer Inhalt in {$a->coursename}';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> ist neu im Kurs <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Ändern Sie Ihre Benachrichtigungseinstellungen</a></p>';
+$string['coursecontentnotifupdate'] = 'Inhalt geändert in {$a->coursename}';
+$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> wurde im Kurs <a href="{$a->courselink}">{$a->coursename}</a> geändert.</p><p><a href="{$a->notificationpreferenceslink}">Ändern Sie Ihre Benachrichtigungseinstellungen</a></p>';
 $string['coursenotyetfinished'] = 'Der Kurs ist noch nicht beendet.';
 $string['coursenotyetstarted'] = 'Der Kurs hat noch nicht begonnen.';
+$string['courseparticipants'] = 'Kursteilnehmer/innen';
 $string['coursetoolong'] = 'Der Kurs ist zu lang';
 $string['customfield_islocked'] = 'Gesperrt';
 $string['customfield_islocked_help'] = 'Wenn das Feld gesperrt ist, können nur Personen, die gesperrte Kursfelder ändern dürfen, dies in den Kurseinstellungen ändern. Dies sind zunächst ausschließlich Personen mit der Rolle Manager/in.';
@@ -73,6 +83,11 @@ $string['customfield_visibility_help'] = 'Diese Einstellung legt fest, wer den N
 $string['customfield_visibletoall'] = 'Alle';
 $string['customfield_visibletoteachers'] = 'Trainer/innen';
 $string['customfieldsettings'] = 'Einstellungen für Kursfelder';
+$string['daystakingcourse'] = 'Kursdauer (in Tagen)';
+$string['downloadcontent'] = 'In Downloads von Kursinhalten einschließen';
+$string['downloadcontent_help'] = 'Soll diese Aktivität oder Ressource in die ZIP-Datei der zum Download verfügbaren Kursinhalte aufgenommen werden? Datei, Verzeichnis, Textseite und Textfeld können vollständig heruntergeladen werden. Für alle anderen Aktivitäten und Ressourcen werden nur der Name und die Beschreibung heruntergeladen. Diese Option erfordert, dass der Download von Kursinhalten in den Kurseinstellungen aktiviert ist.
+
+Die Einstellung hat keine Auswirkung auf das Herunterladen von Inhalten der mobilen App für die Offline-Nutzung.';
 $string['downloadcourseconfirmation'] = 'Sie sind dabei, eine Zip-Datei mit den Kursinhalten herunterzuladen. Ausgenommen sind Elemente, die nicht heruntergeladen werden können, und Dateien, die größer als {$a} sind.';
 $string['downloadcoursecontent'] = 'Kursinhalt herunterladen';
 $string['downloadcoursecontent_help'] = 'Diese Einstellung legt fest, ob Kursinhalte von Nutzer/innen mit der Funktion zum Kursinhalt herunterladen heruntergeladen werden dürfen (standardmäßig Benutzer mit der Rolle von Teilnehmer/innen oder Trainer/innen).';
@@ -82,6 +97,7 @@ $string['favourite'] = 'Favorisierte Kurse';
 $string['gradetopassnotset'] = 'Für diesen Kurs wurde keine Bestehensgrenze festgelegt, die erreichet werden muss. Dies kann im Bewertungselement des Kurses festgelegt werden (Bewertungseinstellungen).';
 $string['informationformodule'] = 'Info zur Aktivität {$a}';
 $string['module'] = 'Aktivität';
+$string['namewithlink'] = 'Kursbereichsname mit Link';
 $string['noaccesssincestartinfomessage'] = 'Guten Tag {$a->userfirstname},
 <p>einige Teilnehmer/innen im Kurs {$a->coursename} haben noch nie auf den Kurs zugegriffen.</p>';
 $string['nocourseactivity'] = 'Es gibt nicht genügend Aktivitäten zwischen dem Anfangs- und dem Enddatum.';
@@ -92,6 +108,9 @@ $string['norecentaccessesinfomessage'] = 'Guten Tag {$a->userfirstname},
 <p>einige Teilnehmer/innen im Kurs {$a->coursename} haben bisher noch nicht auf den Kurs zugegriffen.</p>';
 $string['noteachinginfomessage'] = 'Guten Tag {$a->userfirstname},
 <p>bei in der nächsten Woche beginnenden Kursen wurde festgestellt, dass weder Trainer/innen noch Teilnehmer/innen eingeschrieben sind.</p>';
+$string['participants:perpage'] = 'Anzahl der Teilnehmer/innen pro Seite';
+$string['participants:perpage_help'] = 'Die Anzahl der Teilnehmer/innen, die pro Seite auf der Teilnehmerseite in jedem Kurs angezeigt werden.';
+$string['participantsnavigation'] = 'Tertiäre Navigation für Teilnehmer/innen';
 $string['privacy:completionpath'] = 'Kursabschluss';
 $string['privacy:favouritespath'] = 'Info zur Kursfavorisierung';
 $string['privacy:metadata:activityfavouritessummary'] = 'Das Kurssystem enthält Informationen darüber, welche Elemente aus der Aktivitätsauswahl von Nutzern als Favorit markiert worden sind.';

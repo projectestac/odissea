@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'ru', version '3.11'.
+ * Strings for component 'block', language 'ru', version '4.1'.
  *
  * @package     block
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = 'Переместить в док';
 $string['anypagematchingtheabove'] = 'Любая страница, подходящая под вышеуказанное';
 $string['appearsinsubcontexts'] = 'Отображаются в подчиненных контекстах';
 $string['assignrolesinblock'] = 'Назначение ролей в блоке «{$a}»';
@@ -44,12 +43,12 @@ $string['defaultregion_help'] = 'Темы могут определять одн
 $string['defaultweight'] = 'Вес по умолчанию';
 $string['defaultweight_help'] = 'Вес по умолчанию позволяет ориентировочно выбрать, где Вы хотите отображать блок в указанной области - вверху или внизу. Окончательное местоположение рассчитывается исходя из всех блоков в этой области (в действительности только один блок может быть вверху). При необходимости это значение на конкретных страницах может быть изменено.';
 $string['deleteblock'] = 'Удалить блок «{$a}»';
-$string['deleteblockcheck'] = 'Вы уверены, что хотите удалить блок с заголовком «{$a}»?';
+$string['deleteblockcheck'] = 'Вы уверены, что хотите удалить блок «{$a}»?';
+$string['deleteblockinprogress'] = 'Удаление блока {$a} ...';
 $string['deleteblockwarning'] = '<p> Вы собираетесь удалить блок, который отображается где-то в другом месте. </p><p> Оригинальное расположение блока: {$a->location} <br /> Отображается на страницах: {$a->pagetype} </p><p> Вы уверены, что хотите продолжить? </p>';
 $string['deletecheck'] = 'Удалить блок «{$a}»?';
-$string['dockblock'] = 'Поместить блок «{$a}» в док';
+$string['deletecheck_modal'] = 'Удалить блок?';
 $string['hideblock'] = 'Скрыть блок «{$a}»';
-$string['hidedockpanel'] = 'Скрыть док-панель';
 $string['hidepanel'] = 'Скрыть панель';
 $string['moveblock'] = 'Переместить блок «{$a}»';
 $string['moveblockafter'] = 'Поместить блок после блока «{$a}»';
@@ -74,9 +73,6 @@ $string['showonfrontpageandsubs'] = 'Показывать на главной с
 $string['showonfrontpageonly'] = 'Отображать только на главной странице';
 $string['subpages'] = 'Выберите страницы';
 $string['thisspecificpage'] = 'Эта конкретная страница';
-$string['undockall'] = 'Убрать все элементы из дока';
-$string['undockblock'] = 'Убрать блок «{$a}» из дока';
-$string['undockitem'] = 'Убрать этот элемент из дока';
 $string['visible'] = 'Видимый';
 $string['weight'] = 'Вес';
 $string['wherethisblockappears'] = 'Где отображать этот блок';

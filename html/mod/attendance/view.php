@@ -84,9 +84,9 @@ if (has_any_capability($capabilities, $context) &&
         $USER->attendanceediting = false;
     }
 
-    if (($edit == 1) and confirm_sesskey()) {
+    if (($edit == 1) && confirm_sesskey()) {
         $USER->attendanceediting = true;
-    } else if ($edit == 0 and confirm_sesskey()) {
+    } else if ($edit == 0 && confirm_sesskey()) {
         $USER->attendanceediting = false;
     }
 
@@ -102,7 +102,7 @@ if (has_any_capability($capabilities, $context) &&
     $PAGE->set_button($OUTPUT->render($button));
 }
 
-$userdata = new attendance_user_data($att, $userid);
+$userdata = new mod_attendance\output\user_data($att, $userid);
 
 // Create url for link in log screen.
 $filterparams = array(
@@ -113,7 +113,6 @@ $filterparams = array(
 );
 $params = array_merge($userdata->pageparams->get_significant_params(), $filterparams);
 
-$header = new mod_attendance_header($att);
 
 if (empty($userdata->pageparams->studentid)) {
     $relateduserid = $USER->id;
@@ -151,8 +150,5 @@ $PAGE->navbar->add(get_string('attendancereport', 'attendance'));
 $output = $PAGE->get_renderer('mod_attendance');
 
 echo $output->header();
-
-echo $output->render($header);
 echo $output->render($userdata);
-
 echo $output->footer();

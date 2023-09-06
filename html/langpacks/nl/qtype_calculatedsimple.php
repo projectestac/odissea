@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'nl', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'nl', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = 'Genereer';
 $string['newsetwildcardvalues'] = 'nieuwe set(s) jokerwaarden';
 $string['pluginname'] = 'Berekend eenvoudig';
 $string['pluginname_help'] = 'Een eenvoudige versie van berekende vragen. Deze zijn als numerieke vragen maar met de getallen willekeurig gekozen uit een set terwijl de test wordt afgenomen. Eenvoudig numerieke vragen bieden de meeste mogelijkheden van berekende vragen, maar met een eenvoudiger interface om ze te maken.';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = 'Een eenvoudige berekende vraag toevoegen';
 $string['pluginnameediting'] = 'Een eenvoudige berekende vraag bewerken';
 $string['pluginnamesummary'] = 'Een eenvoudige versie van berekende vragen. Deze zijn als numerieke vragen maar met de getallen willekeurig gekozen uit een set terwijl de test wordt afgenomen.';

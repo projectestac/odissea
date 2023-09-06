@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'it', version '3.11'.
+ * Strings for component 'resource', language 'it', version '4.1'.
  *
  * @package     resource
  * @category    string
@@ -52,6 +52,7 @@ $string['displayselect_help'] = 'L\'impostazione, assieme al tipo di file e alle
 * Popup - Il file viene visualizzato in un nuova finestra browser priva di menu e barra dell\'indirizzo
 * Frame - Il file viene visualizzato all\'interno di un frame sotto la barra di navigazione
 * Nuova finestra - Il file viene visualizzato in una nuova finestra browser completa di menu e barra dell\'indirizzo.';
+$string['displayselect_link'] = 'mod/file/mod';
 $string['displayselectexplain'] = 'Imposta il tipo di visualizzazione di default. Tenere presente che i vari tipi di file potrebbero consentire solo alcuni tipi di visualizzazione.';
 $string['dnduploadresource'] = 'Crea una risorsa file';
 $string['encryptedcode'] = 'Codice criptato';
@@ -65,10 +66,12 @@ $string['indicator:cognitivedepth'] = 'File cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse File.';
 $string['indicator:cognitivedepthdef'] = 'File cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalla risorsa File (Livelli: Nessuna visualizzazione, Visualizzazione)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'File sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse File.';
 $string['indicator:socialbreadthdef'] = 'File sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dalle risorse File (Livelli: Nessuna partecipazione, Partecipazione da solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migrazione dei file di corsi precedenti';
 $string['legacyfilesactive'] = 'Attivo';
 $string['legacyfilesdone'] = 'Completato';
@@ -83,6 +86,7 @@ Da notare che lo studente nel proprio computer deve avere il software necessario
 * Condividere una presentazione svolta in classe
 * Includere nel corso piccoli siti web
 * Fornire bozze da usare con software client che gli studenti possono usare per preparare e consegnare i propri compiti';
+$string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'File';
 $string['notmigrated'] = 'Spiacente, ma questo tipo di risorsa legacy ({$a}) non è stato ancora migrata.';
 $string['optionsheader'] = 'Opzioni di visualizzazione';

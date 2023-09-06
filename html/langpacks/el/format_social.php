@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'el', version '3.11'.
+ * Strings for component 'format_social', language 'el', version '4.1'.
  *
  * @package     format_social
  * @category    string
@@ -29,4 +29,4 @@ $string['numberdiscussions'] = 'Αριθμός συζητήσεων';
 $string['numberdiscussions_help'] = 'Αυτή η ρύθμιση καθορίζει πόσες συζητήσεις πρέπει να εμφανίζονται.';
 $string['pluginname'] = 'Κοινωνικός μορφότυπος μαθήματος';
 $string['privacy:metadata'] = 'Το πρόσθετο «Κοινωνικός μορφότυπος μαθήματος» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
-$string['sectionname'] = 'τομέας';
+$string['sectionname'] = 'ενότητα';

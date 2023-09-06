@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'ar', version '3.11'.
+ * Strings for component 'pdfannotator', language 'ar', version '4.1'.
  *
  * @package     pdfannotator
  * @category    string
@@ -94,6 +94,7 @@ $string['likeForbidden'] = 'ليس مسموحًا لك بالإعجاب بهذا
 $string['messageprovider:newanswer'] = 'عند تقديم إجابة على السؤال الذي اشتركتَ فيه';
 $string['missingAnnotation'] = 'تعذر العثور على التعليق ذي الصلة!';
 $string['modulename'] = 'تعليق PDF';
+$string['modulename_link'] = 'mod/pdfannotator/view';
 $string['modulenameplural'] = 'تعليقات PDF';
 $string['myanswers'] = 'إجاباتي';
 $string['myprivate'] = 'ملاحظاتي الشخصية';
@@ -113,9 +114,9 @@ $string['newquestiontext'] = 'تمت إضافة سؤال جديد من قبل {$
 السؤال متاح في {$a->urltoanswer}';
 $string['nextPage'] = 'الصفحة التالية';
 $string['noCommentsupported'] = 'هذا النوع من التعليقات لا يدعم التعقيب.';
-$string['noanswers'] = 'ليست هناك إجابات في هذا المقرر الدراسي في الوقت الحاضر.';
-$string['noanswerssubscribed'] = 'ليست هناك إجابات على الإسئلة المشترك فيها في هذا المقرر الدراسي في الوقت الحاضر.';
-$string['nomyposts'] = 'لم تقم بطرح سؤال أو تقديم جواب في هذا المقرر الدراسي بعد.';
+$string['noanswers'] = 'ليست هناك إجابات في هذا المساق في الوقت الحاضر.';
+$string['noanswerssubscribed'] = 'ليست هناك إجابات على الإسئلة المشترك فيها في هذا المساق في الوقت الحاضر.';
+$string['nomyposts'] = 'لم تقم بطرح سؤال أو تقديم جواب في هذا المساق بعد.';
 $string['noquestions'] = 'لا توجد أسئلة في هذه الصفحة!';
 $string['notificationsubject:newanswer'] = 'إجابة جديدة على سؤال مشترك فيه في {$a}';
 $string['ownpoststabicon_help'] = 'هذه الصفحة تعرض كل التعليقات التي نشرتها في هذا المساق.';

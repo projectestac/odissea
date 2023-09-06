@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mediagallery', language 'en', version '3.11'.
+ * Strings for component 'mediagallery', language 'en', version '4.1'.
  *
  * @package     mediagallery
  * @category    string
@@ -131,6 +131,7 @@ $string['enablethebox'] = 'Enable theBox';
 $string['enforcedefaults'] = 'Enforce gallery defaults';
 $string['enforcedefaults_help'] = 'If enabled, then the gallery defaults determined by the instructor are enforced.';
 $string['errorchooseimportoption'] = 'Please select an option to import';
+$string['errornopermissiontoadd'] = 'You can not add a gallery to this collection';
 $string['errornotyouritem'] = 'You cannot edit this media object, it belongs to another user.';
 $string['errortheboxunavailable'] = 'Sorry, it looks like theBox is unavailable right now. Please try again later.';
 $string['errortoomanygalleries'] = 'Sorry, you or your group has exceeded the maximum number of galleries allowed in this collection ({$a}).';

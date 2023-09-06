@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'es', version '3.11'.
+ * Strings for component 'atto_charmap', language 'es', version '4.1'.
  *
  * @package     atto_charmap
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aacute'] = 'a - aguda';
-$string['aacute_caps'] = 'A - acute';
+$string['aacute_caps'] = 'A - aguda';
 $string['acircumflex'] = 'a - circunflejo';
 $string['acircumflex_caps'] = 'A - circunflejo';
 $string['acuteaccent'] = 'acento agudo';
@@ -97,8 +97,8 @@ $string['emdash'] = 'guión largo';
 $string['emspace'] = 'espacio largo';
 $string['endash'] = 'guión corto';
 $string['enspace'] = 'espacio corto';
-$string['epsilon'] = 'epsilon';
-$string['epsilon_caps'] = 'Epsilon';
+$string['epsilon'] = 'épsilon';
+$string['epsilon_caps'] = 'Épsilon';
 $string['eta'] = 'eta';
 $string['eta_caps'] = 'Eta';
 $string['eth'] = 'ésimo';
@@ -289,5 +289,5 @@ $string['ydiaeresis_caps'] = 'Y - diéresis';
 $string['yensign'] = 'signo de yen';
 $string['zerowidthjoiner'] = 'conector de ancho cero';
 $string['zerowidthnonjoiner'] = 'no-conector de ancho cero';
-$string['zeta'] = 'zeta';
+$string['zeta'] = 'seta';
 $string['zeta_caps'] = 'Zeta';

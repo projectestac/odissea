@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'es', version '3.11'.
+ * Strings for component 'backup', language 'es', version '4.1'.
  *
  * @package     backup
  * @category    string
@@ -38,7 +38,7 @@ $string['asyncemailenable'] = 'Habilitar notificaciones de mensajes';
 $string['asyncemailenabledetail'] = 'Cuando se habilita, los usuarios recibirán un mensaje cuando se complete una restauración o copia de seguridad asincrónicos.';
 $string['asyncgeneralsettings'] = 'Copia de seguridad/restauración asincrónicos';
 $string['asyncmessagebody'] = 'Mensaje';
-$string['asyncmessagebodydefault'] = 'Hola {user_firstname} {user_lastname}, <br/> ¡Su {operation} (ID: {backupid}) ha sido completado exitosamente <br/><br/>Puede verla aquí {link}.';
+$string['asyncmessagebodydefault'] = 'Hola {user_firstname} {user_lastname}, <br/> ¡Su {operation} (ID: {backupid}) ha sido completado exitosamente <br/><br/>Puede verla aquí: <a href="{link}">{link}</a>.';
 $string['asyncmessagebodydetail'] = 'Mensaje a enviar cuando se complete una restauración o copia de seguridad asincrónicos.';
 $string['asyncmessagesubject'] = 'Asunto';
 $string['asyncmessagesubjectdefault'] = '{operation} de Moodle se completó exitosamente';
@@ -73,6 +73,7 @@ $string['automatedsetup'] = 'Copia de seguridad programada';
 $string['automatedstorage'] = 'Almacén de copias de seguridad automáticas';
 $string['automatedstoragehelp'] = 'Elija la ubicación donde desea almacenar las copias de seguridad automáticas';
 $string['backupactivity'] = 'Copia de seguridad actividad: {$a}';
+$string['backupautoactivitiesdescription'] = 'Ajuste por defecto para incluir actividades en una copia de seguridad. Para que funcione la papelera de reciclaje, debe habilitarse este ajuste.';
 $string['backupcourse'] = 'Copia de seguridad curso: {$a}';
 $string['backupcoursedetails'] = 'Detalles del curso';
 $string['backupcoursesection'] = 'Sección: {$a}';
@@ -173,7 +174,7 @@ $string['copycoursedesc'] = 'Este curso se duplicará y se incluirá en la categ
 $string['copycourseheading'] = 'Copiar un curso';
 $string['copycoursetitle'] = 'Copiar curso: {$a}';
 $string['copydest'] = 'Destino';
-$string['copyfieldnotfound'] = 'No se encontró un campo obligatorio';
+$string['copyfieldnotfound'] = 'No se han encontrado los datos del campo requerido para los campos: {$a}';
 $string['copyformfail'] = 'El envío de AJAX del formulario de copia del curso ha fallado.';
 $string['copyingcourse'] = 'Copia de curso en proceso';
 $string['copyingcourseshortname'] = 'copiando';
@@ -211,6 +212,7 @@ $string['extractingbackupfileto'] = 'Extrayendo archivo de copia de seguridad a:
 $string['failed'] = 'Falló la copia de seguridad';
 $string['filealiasesrestorefailures'] = 'Fallos en la restauración de alias';
 $string['filealiasesrestorefailures_help'] = 'Los alias son enlaces simbólicos a otros archivos, incluyendo aquellos almacenados en repositorios externos. En algunos casos, Moodle no puede restaurarlos - por ejemplo cuando se restaura una copia de seguridad en otro sitio o cuando el archivo al que se hace referencia no existe.';
+$string['filealiasesrestorefailures_link'] = 'restore/filealiases';
 $string['filealiasesrestorefailuresinfo'] = 'Algunos alias incluidos en el archivo de copia de seguridad no pudieron restaurarse. La lista siguiente contiene su localización esperada y el archivo origen al que se estaban refiriendo en el sitio original.';
 $string['filename'] = 'Nombre de archivo';
 $string['filereferencesincluded'] = 'Las referencias de archivo a contenidos externos se han incluido en el paquete de copia de seguridad, no funcionarán en otros sitios.';
@@ -313,7 +315,7 @@ $string['restoreactivity'] = 'Restaurar actividad';
 $string['restorecourse'] = 'Restaurar curso';
 $string['restorecoursesettings'] = 'Configuración del curso';
 $string['restoredcourseid'] = 'ID del curso restaurado: {$a}';
-$string['restoreexecutionsuccess'] = 'Se ha restaurado el curso con éxito. Si pulsa en el botón \'Continuar\' podrá ver el curso que ha restaurado.';
+$string['restoreexecutionsuccess'] = 'Se ha restaurado el curso con éxito.';
 $string['restorefileweremissing'] = 'Algunos archivos no pudieron restaurarse debido a que faltaban en la copia de seguridad.';
 $string['restorenewcoursefullname'] = 'Nombre del nuevo curso';
 $string['restorenewcourseshortname'] = 'Nombre corto del nuevo curso';
@@ -390,7 +392,7 @@ $string['setting_overwrite_course_fullname'] = 'Sobrescribir el nombre completo 
 $string['setting_overwrite_course_shortname'] = 'Sobrescribir el nombre corto del curso';
 $string['setting_overwrite_course_startdate'] = 'Sobrescribir la fecha de inicio del curso';
 $string['showtypes'] = 'Mostrar tipo de opciones';
-$string['sitecourseformatwarning'] = 'Esto es un respaldo de una página principal, tenga en cuenta que estos sólo pueden ser restaurados en la página principal.';
+$string['sitecourseformatwarning'] = 'Esto es un respaldo de una página principal. Sólo puede restaurarse en la página principal.';
 $string['skiphidden'] = 'Pasar por alto cursos ocultos';
 $string['skiphiddenhelp'] = 'Elija si desea o no pasar por alto cursos ocultos';
 $string['skipmodifdays'] = 'Pasar por alto cursos no modificados desde';

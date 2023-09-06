@@ -28,7 +28,7 @@ define([
     'core/key_codes',
     'core/custom_interaction_events',
     'core/modal_backdrop',
-    'core/event',
+    'core_filters/events',
     'core/modal_events',
     'core/local/aria/focuslock',
     'core/pending',
@@ -41,7 +41,7 @@ define([
     KeyCodes,
     CustomEvents,
     ModalBackdrop,
-    Event,
+    FilterEvents,
     ModalEvents,
     FocusLock,
     Pending,
@@ -103,6 +103,7 @@ define([
         this.modalCount = modalCounter++;
         this.attachmentPoint = document.createElement('div');
         document.body.append(this.attachmentPoint);
+        this.focusOnClose = null;
 
         if (!this.root.is(SELECTORS.CONTAINER)) {
             Notification.exception({message: 'Element is not a modal container'});
@@ -321,6 +322,7 @@ define([
      *
      * @method setBody
      * @param {(string|object)} value The body string or jQuery promise which resolves to the body.
+     * @fires event:filterContentUpdated
      */
     Modal.prototype.setBody = function(value) {
         this.bodyPromise = $.Deferred();
@@ -330,7 +332,7 @@ define([
         if (typeof value === 'string') {
             // Just set the value if it's a string.
             body.html(value);
-            Event.notifyFilterContentUpdated(body);
+            FilterEvents.notifyFilterContentUpdated(body);
             this.getRoot().trigger(ModalEvents.bodyRendered, this);
             this.bodyPromise.resolve(body);
         } else {
@@ -421,7 +423,7 @@ define([
                 return result;
             }.bind(this))
             .then(function(result) {
-                Event.notifyFilterContentUpdated(body);
+                FilterEvents.notifyFilterContentUpdated(body);
                 this.getRoot().trigger(ModalEvents.bodyRendered, this);
                 return result;
             }.bind(this))
@@ -692,6 +694,11 @@ define([
 
         this.attachToDOM();
 
+        // If the focusOnClose was not set. Set the focus back to triggered element.
+        if (!this.focusOnClose && document.activeElement) {
+            this.focusOnClose = document.activeElement;
+        }
+
         return this.getBackdrop()
         .then(function(backdrop) {
             var currentIndex = this.calculateZIndex();
@@ -846,9 +853,20 @@ define([
 
         CustomEvents.define(this.getModal(), [CustomEvents.events.activate]);
         this.getModal().on(CustomEvents.events.activate, SELECTORS.HIDE, function(e, data) {
-            this.hide();
+            if (this.removeOnClose) {
+                this.destroy();
+            } else {
+                this.hide();
+            }
             data.originalEvent.preventDefault();
         }.bind(this));
+
+        this.getRoot().on(ModalEvents.hidden, () => {
+            if (this.focusOnClose) {
+                // Focus on the element that actually triggers the modal.
+                this.focusOnClose.focus();
+            }
+        });
     };
 
     /**
@@ -959,6 +977,15 @@ define([
      */
     Modal.prototype.setRemoveOnClose = function(remove) {
         this.removeOnClose = remove;
+    };
+
+    /**
+     * Set the return element for the modal.
+     *
+     * @param {Element|jQuery} element Element to focus when the modal is closed
+     */
+    Modal.prototype.setReturnElement = function(element) {
+        this.focusOnClose = element;
     };
 
     return Modal;

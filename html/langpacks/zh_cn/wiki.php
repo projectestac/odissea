@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'zh_cn', version '3.11'.
+ * Strings for component 'wiki', language 'zh_cn', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -106,6 +106,7 @@ $string['formatcreole'] = 'Creole格式';
 $string['formatcreole_help'] = 'Creole是一种常用的wiki标记语言。通过它的编辑工具条可以直接插入想要的标记。
 
 要建立新页面，只需输入新页面名，并在前后加上双方括号。例如[[页面2]]。';
+$string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'HTML格式';
 $string['formathtml_help'] = '可以使用HTML编辑器对文字排版。
 
@@ -114,6 +115,7 @@ $string['formatnwiki'] = 'NWiki格式';
 $string['formatnwiki_help'] = 'Nwiki是Mediawiki风格的标记语言，由Nwiki模块支持。
 
 要建立新页面，只需输入新页面名，并在前后加上双方括号。例如[[页面2]]。';
+$string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = '历史';
 $string['history_help'] = '历史会列出所有此页面先前版本的链接。';
 $string['html'] = 'HTML';
@@ -125,10 +127,12 @@ $string['indicator:cognitivedepth'] = 'Wiki协作活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 Wiki协作活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '维基认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到Wiki活动提供的认知参与百分比（级别=无查看、查看、提交）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Wiki协作活动社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在Wiki协作活动中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = '维基社交网站';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到维基活动提供的社会参与度的百分比（级别=无参与、参与者单独、参与者与其他人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = '个人wiki页面不存在';
 $string['insertcomment'] = '插入评论';
 $string['insertimage'] = '插入一个图片...';
@@ -162,6 +166,7 @@ Wikis 有很多用途，诸如
 * 学生进行合作出版在线书目，针对他们导师设置的主题创作内容
 * 用来合作创作故事或诗歌，其中每个参与者写一行或者一节诗。
 * 作为个人的日志，记录考试笔记或复习内容（使用个人 wiki）';
+$string['modulename_link'] = 'mod/wiki/view';
 $string['modulenameplural'] = 'Wiki 协作';
 $string['navigation'] = '导航';
 $string['navigationfrom'] = '此页面来自';

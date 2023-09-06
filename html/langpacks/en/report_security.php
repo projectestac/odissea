@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'en', version '3.11'.
+ * Strings for component 'report_security', language 'en', version '4.1'.
  *
  * @package     report_security
  * @category    string
@@ -25,6 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['check_antivirus_details'] = 'This status checks whether or not there has been a recent error detected based on the threshold set in the main antivirus settings.';
+$string['check_antivirus_error'] = '{$a->errors} errors have been detected within the last {$a->lookback}';
+$string['check_antivirus_info'] = 'No antivirus scanners are currently enabled';
+$string['check_antivirus_logstore_not_supported'] = 'Unable to verify state of antivirus scanners due to the type of log store chosen';
+$string['check_antivirus_name'] = 'Antivirus';
+$string['check_antivirus_ok'] = '{$a->scanners} antivirus scanner(s) enabled, no issues have been detected in the last {$a->lookback}';
 $string['check_configrw_details'] = '<p>It is recommended that the file permissions of <code>config.php</code> are changed after installation so that the file cannot be modified by the web server.
 Please note that this measure does not improve security of the server significantly, though it may slow down or limit general exploits.</p>';
 $string['check_configrw_name'] = 'Writable config.php';
@@ -41,7 +47,8 @@ $string['check_crawlers_info'] = 'Search engines may enter as guests.';
 $string['check_crawlers_name'] = 'Open to search engines';
 $string['check_crawlers_ok'] = 'Search engine access is not enabled.';
 $string['check_defaultuserrole_details'] = '<p>All logged in users are given capabilities of the default user role. Please make sure no risky capabilities are allowed in this role.</p>
-<p>The only supported legacy type for the default user role is <em>Authenticated user</em>. The course view capability must not be enabled.</p>';
+<p>The only supported legacy type for the default user role is <em>Authenticated user</em>. The course view capability must not be enabled.</p>
+<p>Please check if the automatic data deletion request approval(tool_dataprivacy | automaticdatadeletionapproval) option is enabled. Users can request deletions that could delete large amounts of data.</p>';
 $string['check_defaultuserrole_error'] = 'The default user role "{$a}" is incorrectly defined!';
 $string['check_defaultuserrole_name'] = 'Default role for all users';
 $string['check_defaultuserrole_notset'] = 'Default role is not set.';
@@ -62,12 +69,12 @@ $string['check_embed_details'] = '<p>Unlimited object embedding is very dangerou
 $string['check_embed_error'] = 'Unlimited object embedding enabled - this is very dangerous for the majority of servers.';
 $string['check_embed_name'] = 'Allow EMBED and OBJECT';
 $string['check_embed_ok'] = 'Unlimited object embedding is not allowed.';
-$string['check_frontpagerole_details'] = '<p>The default frontpage role is given to all authenticated users for frontpage activities. Please make sure no risky capabilities are allowed for this role.</p>
+$string['check_frontpagerole_details'] = '<p>The default site home role is given to all authenticated users for site home activities. Please make sure no risky capabilities are allowed for this role.</p>
 <p>It is recommended that a special role is created for this purpose and a legacy type role is not used.</p>';
-$string['check_frontpagerole_error'] = 'Incorrectly defined frontpage role "{$a}" detected!';
-$string['check_frontpagerole_name'] = 'Frontpage role';
-$string['check_frontpagerole_notset'] = 'Frontpage role is not set.';
-$string['check_frontpagerole_ok'] = 'Frontpage role definition is OK.';
+$string['check_frontpagerole_error'] = 'Incorrectly defined site home role "{$a}" detected!';
+$string['check_frontpagerole_name'] = 'Site home role';
+$string['check_frontpagerole_notset'] = 'Site home role is not set.';
+$string['check_frontpagerole_ok'] = 'Site home role definition is OK.';
 $string['check_guestrole_details'] = '<p>The guest role is used for guests, not logged in users and temporary guest course access. Please make sure no risky capabilities are allowed in this role.</p>
 <p>The only supported legacy type for guest role is <em>Guest</em>.</p>';
 $string['check_guestrole_error'] = 'The guest role "{$a}" is incorrectly defined!';
@@ -97,6 +104,8 @@ $string['check_preventexecpath_warning'] = 'Executable paths can be set in the A
 $string['check_publicpaths_403'] = '(Returned a 403, ideally should be 404)';
 $string['check_publicpaths_generic'] = '{$a} files should not be public';
 $string['check_publicpaths_name'] = 'Check all public / private paths';
+$string['check_publicpaths_ok'] = 'All internal paths are not publicly accessible';
+$string['check_publicpaths_warning'] = 'Some internal paths are publicly accessible';
 $string['check_riskadmin_detailsok'] = '<p>Please verify the following list of system administrators:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Please verify the following list of system administrators:</p>{$a->admins}
 <p>It is recommended to assign administrator role in the system context only. The following users have (unsupported) admin role assignments in other contexts:</p>{$a->unsupported}';

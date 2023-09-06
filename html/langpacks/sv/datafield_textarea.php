@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'sv', version '3.11'.
+ * Strings for component 'datafield_textarea', language 'sv', version '4.1'.
  *
  * @package     datafield_textarea
  * @category    string
@@ -30,3 +30,4 @@ $string['maxbytes'] = 'Maximal storlek för inbäddad fil (bytes)';
 $string['maxbytes_desc'] = 'Om satt till noll är storleken obegränsad som standard';
 $string['pluginname'] = 'Textområde';
 $string['privacy:metadata'] = 'Fältkomponenten Textområde lagrar ingen personinformation. Den använder tabeller definierade i <code>mod_data</code>.';
+$string['sample'] = '<p>Detta är ett textområde. Det låter användare ange en lång formulärtext som sträcker sig över flera rader.</p> <p>Du kan välja hur många rader och kolumner ditt textområde ska ha.</p> <p>Texten i ett textområde kan formateras, till exempel som <b>fetstil</b> och även innehålla <a href="#">hyperlänkar</a> eller bilder.</p>';

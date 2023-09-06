@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'ca', version '3.11'.
+ * Strings for component 'qtype_randomsamatch', language 'ca', version '4.1'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -30,6 +30,7 @@ $string['nosaincategory'] = 'No hi ha preguntes de resposta breu en la categoria
 $string['notenoughsaincategory'] = 'Només hi ha {$a->nosaquestions} preguntes de resposta breu en la categoria seleccionada \'{$a->catname}\'. Trieu una altra categoria, creeu més preguntes en aquesta categoria o reduïu la quantitat de preguntes seleccionades.';
 $string['pluginname'] = 'Aparellament de respostes curtes aleatòries';
 $string['pluginname_help'] = 'Des de la perspectiva dels estudiants, això s\'assembla a una pregunta d\'aparellament. La diferència és que la llista de noms o enunciats (preguntes) per aparellament s\'extreuen a l\'atzar de les preguntes de resposta breu de la mateixa categoria. Hi ha d\'haver suficients preguntes de resposta breu no utilitzades en la categoria; en cas contrari, es mostrarà un missatge d\'error.';
+$string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta aleatòria de resposta breu';
 $string['pluginnameediting'] = 'S\'està editant una pregunta aleatòria de resposta breu';
 $string['pluginnamesummary'] = 'Igual que una pregunta d\'aparellament, però creada a l\'atzar de les preguntes de resposta breu en una categoria particular.';

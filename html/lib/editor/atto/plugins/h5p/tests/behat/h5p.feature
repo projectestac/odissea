@@ -18,6 +18,9 @@ Feature: Add h5ps to Atto
     And the "displayh5p" filter is "on"
     And the following config values are set as admin:
       | allowedsources | https://moodle.h5p.com/content/[id] | filter_displayh5p |
+    And the following "blocks" exist:
+      | blockname     | contextlevel | reference | pagetypepattern | defaultregion |
+      | private_files | System       | 1         | my-index        | side-post     |
 
   @javascript @external
   Scenario: Insert an embedded h5p
@@ -113,7 +116,7 @@ Feature: Add h5ps to Atto
     Then I should not see "reveal"
     And I should see "Cloudberries"
     And I switch to the main frame
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I click on ".h5p-placeholder" "css_element"
     And I click on "Insert H5P" "button" in the "#fitem_id_page" "css_element"
 #   External URL
@@ -149,7 +152,7 @@ Feature: Add h5ps to Atto
     And I should not see "Embed"
     And I should not see "Rights of use"
     And I switch to the main frame
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I click on ".h5p-placeholder" "css_element"
     And I click on "Insert H5P" "button" in the "#fitem_id_page" "css_element"
     And I click on "H5P options" "link"
@@ -165,7 +168,7 @@ Feature: Add h5ps to Atto
     And I should not see "Embed"
     And I should not see "Rights of use"
     And I switch to the main frame
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I click on ".h5p-placeholder" "css_element"
     And I click on "Insert H5P" "button" in the "#fitem_id_page" "css_element"
 #   Embed and copyright buttons displayed. Download not displayed
@@ -197,7 +200,7 @@ Feature: Add h5ps to Atto
     And I should see "Far far away"
     And I should not see "Embed"
     And I switch to the main frame
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I click on ".h5p-placeholder" "css_element"
     And I click on "Insert H5P" "button" in the "#fitem_id_page" "css_element"
     And I click on "H5P options" "link"

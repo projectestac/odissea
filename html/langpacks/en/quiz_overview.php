@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'en', version '3.11'.
+ * Strings for component 'quiz_overview', language 'en', version '4.1'.
  *
  * @package     quiz_overview
  * @category    string
@@ -66,11 +66,13 @@ $string['regradealldrydo'] = 'Regrade attempts marked as needing regrading ({$a}
 $string['regradealldrydogroup'] = 'Regrade attempts ({$a->countregradeneeded}) marked as needing regrading in group \'{$a->groupname}\'';
 $string['regradealldrygroup'] = 'Dry run a full regrade for group \'{$a->groupname}\'';
 $string['regradeallgroup'] = 'Full regrade for group \'{$a->groupname}\'';
-$string['regradecomplete'] = 'Regrade completed successfully';
-$string['regradedsuccessfullyxofy'] = 'Successfully regraded ({$a->done}/{$a->count})';
+$string['regradecomplete'] = 'Regrade completed';
+$string['regradedsuccessfullyxofy'] = 'Finished regrading ({$a->done}/{$a->count})';
 $string['regradeheader'] = 'Regrading';
 $string['regradeselected'] = 'Regrade selected attempts';
+$string['regradingattemptissue'] = 'Slot {$a->slot}: {$a->reason}';
 $string['regradingattemptxofy'] = 'Regrading attempt ({$a->done}/{$a->count})';
+$string['regradingattemptxofyproblem'] = 'The following questions could not be regraded in attempt {$a->attemptnum} by {$a->name} (id {$a->attemptid})';
 $string['regradingattemptxofywithdetails'] = 'Regrading attempt ({$a->done}/{$a->count}) - Attempt {$a->attemptnum} by {$a->name} (id {$a->attemptid})';
 $string['show'] = 'Show / download';
 $string['showattempts'] = 'Only show / download attempts';

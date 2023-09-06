@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'sv', version '3.11'.
+ * Strings for component 'my', language 'sv', version '4.1'.
  *
  * @package     my
  * @category    string
@@ -28,9 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['addpage'] = 'Lägg till sida';
 $string['alldashboardswerereset'] = 'Alla översiktssidor har återställts till standard';
 $string['allprofileswerereset'] = 'Alla profilsidor har återställts till standard';
+$string['coursemanagementoptions'] = 'Kurshanteringsalternativ';
 $string['defaultpage'] = 'Standardöversiktssida';
 $string['defaultprofilepage'] = 'Standardprofilsida';
 $string['delpage'] = 'Ta bort sida';
+$string['error:dashboardisdisabled'] = 'Översikten har inaktiverats av administratören';
 $string['managepages'] = 'Hantera sidor';
 $string['mymoodle'] = 'Översikt';
 $string['nocourses'] = 'Det finns ingen kursinformation att visa.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'de', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'de', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -38,7 +38,7 @@ $string['atleastoneanswer'] = 'Sie müssen mindestens eine Antwort angeben.';
 $string['atleastonerealdataset'] = 'Im Fragetext sollte mindestens einer realer Datensatz vorkommen.';
 $string['atleastonewildcard'] = 'In der Antwortformel oder im Fragetext sollte mindestens ein Ersatzzeichen vorkommen.';
 $string['calcdistribution'] = 'Verteilung';
-$string['calclength'] = 'Dezimalstellen';
+$string['calclength'] = 'Nachkommastellen';
 $string['calcmax'] = 'Maximum';
 $string['calcmin'] = 'Minimum';
 $string['choosedatasetproperties'] = 'Datensatzeinstellungen für Ersatzzeichen auswählen';
@@ -55,6 +55,7 @@ $string['deletelastitem'] = 'Letztes Objekt löschen';
 $string['distributionoption'] = 'Distributions-Option auswählen';
 $string['editdatasets'] = 'Datensatz für Ersatzzeichen bearbeiten';
 $string['editdatasets_help'] = 'Ein Datensatz für die Ersatzzeichen kann erstellt werden, indem jeweils eine Zahl in die Ersatzzeichenfelder eingetragen und anschließend die Taste \'Hinzufügen\' gedrückt wird. Um automatisch 10 oder mehr Datensätze zu erstellen, wählen Sie die Anzahl der Datensätze aus, bevor Sie die Taste drücken. Eine einfache Verteilung erzeugt die Werte gleichmäßig verteilt zwischen den vorgegebenen Grenzen, eine logarithmische Verteilung bevorzugt Werte in der Nähe der unteren Grenze.';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = 'wird einen bereits existierenden gemeinsamen Datensatz verwenden';
 $string['existingcategory2'] = 'eine bestehende Datei, die auch von anderen Fragen in dieser Kategorie genutzt wird';
 $string['existingcategory3'] = 'ein bestehender Link, der auch von anderen Fragen in dieser Kategorie genutzt wird ';
@@ -68,7 +69,7 @@ $string['functiontakesoneortwoargs'] = 'Die Funktion {$a} muss entweder ein oder
 $string['functiontakestwoargs'] = 'Die Funktion {$a} muss genau zwei Argumente haben';
 $string['generatevalue'] = 'Wählen Sie einen neuen Wert zwischen';
 $string['getnextnow'] = 'Neues \'Objekt zum Hinzufügen\' erzeugen';
-$string['hexanotallowed'] = 'Der Datensatz <strong>{$a->name}</strong> enthält einen nicht erlaubten Hexadezimal-Wert: {$a->value}';
+$string['hexanotallowed'] = 'Der Datensatz <strong>{$a->name}</strong> enthält einen nicht erlaubten Hex-Wert: {$a->value}';
 $string['illegalformulasyntax'] = 'Ungültige Formelsyntax beginnend mit \'{$a}\'';
 $string['incorrectfeedback'] = 'Für jede falsche Antwort';
 $string['itemno'] = 'Eintrag {$a}';
@@ -111,6 +112,7 @@ $string['param'] = 'Parameter {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Für jede teilweise richtige Antwort';
 $string['pluginname'] = 'Berechnet';
 $string['pluginname_help'] = 'Berechnete Multiple-Choice-Fragen entsprechen normalen Multiple-Choice-Fragen, können aber im Gegensatz zu diesen Ersatzzeichen (Wildcards) in geschweiften Klammern enthalten, welche dann bei der Durchführung des Tests durch vordefinierte Werte ersetzt werden. Beispiel: Auf die Frage "Welche Fläche hat ein Rechteck mit der Länge {l} und der Breite {b}?" wäre "{={l}*{b}}" eine Antwortmöglichkeit (das Sternchen (*) steht für die Multiplikation).';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = 'Eine berechnete Frage hinzufügen';
 $string['pluginnameediting'] = 'Berechnete Frage ändern';
 $string['pluginnamesummary'] = 'Berechnete Fragen ähneln numerischen Fragen. Die Zahlen werden jedoch zufällig beim Start des Tests gewählt.';
@@ -138,7 +140,7 @@ $string['tolerancetype'] = 'Typ';
 $string['trueanswerinsidelimits'] = 'Richtige Antwort: {$a->correct} liegt innerhalb der Grenzen des wahren Wertes {$a->true}';
 $string['trueansweroutsidelimits'] = '<span class="error">Fehler in der richtigen Antwort: {$a->correct} liegt außerhalb der Grenzen des wahren Wertes {$a->true}</span>';
 $string['uniform'] = 'Einfach';
-$string['uniformbit'] = 'Dezimalzahlen aus einer gleichmäßigen Verteilung';
+$string['uniformbit'] = 'Nachkommastellen aus einer gleichmäßigen Verteilung';
 $string['unsupportedformulafunction'] = 'Die Funktion {$a} wird nicht unterstützt';
 $string['updatecategory'] = 'Kategorie aktualisieren';
 $string['updatedatasetparam'] = 'Datensatzparameter aktualisieren';

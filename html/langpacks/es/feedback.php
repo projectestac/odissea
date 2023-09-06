@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'es', version '3.11'.
+ * Strings for component 'feedback', language 'es', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -59,7 +59,7 @@ $string['completed_feedbacks'] = 'Respuestas enviadas';
 $string['completedon'] = 'Completada en {$a}';
 $string['completiondetail:submit'] = 'Enviar retroalimentación';
 $string['completionsubmit'] = 'Ver como "completado" si se envía la encuesta';
-$string['configallowfullanonymous'] = 'Si se establece a "sí", los usuarios pueden pueden completar una encuesta en la página principal sin necesidad de que inicien sesión.';
+$string['configallowfullanonymous'] = 'Si se establece a "sí", los usuarios pueden pueden completar una encuesta en la página de sitio sin necesidad de que inicien sesión.';
 $string['confirmdeleteentry'] = '¿Está seguro que quiere borrar esta entrada?';
 $string['confirmdeleteitem'] = '¿Está seguro que quiere borrar este elemento?';
 $string['confirmdeletetemplate'] = '¿Está seguro que quiere utilizar esta plantilla?';
@@ -91,7 +91,7 @@ $string['depending_help'] = 'Ítems (preguntas de la encuesta) dependientes le p
 $string['dependitem'] = 'Elemento del que depende';
 $string['dependvalue'] = 'Valor del que depende';
 $string['description'] = 'Descripción';
-$string['do_not_analyse_empty_submits'] = 'No analizar envíos vacíos';
+$string['do_not_analyse_empty_submits'] = 'Omitir envíos vacíos en el análisis';
 $string['downloadresponseas'] = 'Descargar todas las respuestas como:';
 $string['drop_feedback'] = 'Eliminar de este curso';
 $string['dropdown'] = 'Opción múltiple - una respuesta permitida (lista desplegable)';
@@ -131,6 +131,7 @@ $string['feedback_is_not_open'] = 'La encuesta no está disponible';
 $string['feedbackclose'] = 'Permitir respuestas hasta';
 $string['feedbackcompleted'] = '{$a->username} ha completado {$a->feedbackname}';
 $string['feedbackopen'] = 'Permitir respuestas de';
+$string['feedbackupdated'] = 'Encuesta actualizada.';
 $string['file'] = 'Archivo';
 $string['filter_by_course'] = 'Filtrar por curso';
 $string['handling_error'] = 'Error en la ejecución del módulo Encuesta';
@@ -144,10 +145,12 @@ $string['indicator:cognitivedepth'] = 'Retroalimentación cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Retroalimentación.';
 $string['indicator:cognitivedepthdef'] = 'Retroalimentación cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades de Encuesta durante este intervalo de análisis (Niveles = Sin vista, Ver, Enviar)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Retroalimentación social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Retroalimentación.';
 $string['indicator:socialbreadthdef'] = 'Retroalimentación social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por las actividades de Encuesta durante este intervalo de análisis (Niveles = Sin vista, Ver, Enviar)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Información';
 $string['infotype'] = 'Tipo de información';
 $string['insufficient_responses'] = 'Respuestas insuficientes';
@@ -180,6 +183,7 @@ La actividad Encuesta puede ser utilizada
 * Para permitir que los participantes se inscriban en módulos de cursos, eventos, etc
 * Para encuestar a los invitados a la hora de la elección de cursos, las políticas escolares, etc
 * Para que en caso de "acoso escolar" los estudiantes pueden reportar incidentes de forma anónima';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = 'Encuestas';
 $string['move_item'] = 'Mover esta pregunta';
 $string['multichoice'] = 'Elección múltiple';
@@ -221,6 +225,7 @@ $string['pagebreak'] = 'Salto de página';
 $string['pluginadministration'] = 'Administración de la encuesta';
 $string['pluginname'] = 'Módulo de encuesta';
 $string['position'] = 'Posición';
+$string['previewquestions'] = 'Vista previa';
 $string['previous_page'] = 'Página anterior';
 $string['privacy:metadata:completed'] = 'Un registro de los envíos a la encuesta';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Si el envío será utilizado de forma anónima.';
@@ -288,3 +293,4 @@ $string['use_one_line_for_each_value'] = '¡Use una línea por cada respuesta!';
 $string['use_this_template'] = 'Utilizar esta plantilla';
 $string['using_templates'] = 'Utilizar una plantilla';
 $string['vertical'] = 'Vertical';
+$string['whatfor'] = '¿Que quiere hacer?';

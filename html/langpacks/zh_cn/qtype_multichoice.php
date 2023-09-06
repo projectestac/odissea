@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -63,6 +63,7 @@ $string['pleaseselectananswer'] = '请选择一个答案。';
 $string['pleaseselectatleastoneanswer'] = '请选择至少一个答案。';
 $string['pluginname'] = '选择题';
 $string['pluginname_help'] = '从多个选项中做选择来回答问题，题目中可以包含图片。有两种选择题——单项选择和多项选择。';
+$string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = '添加一道选择题';
 $string['pluginnameediting'] = '编辑一道选择题';
 $string['pluginnamesummary'] = '从预先定义的选项中选择一个或多个做为答案。';
@@ -73,6 +74,7 @@ $string['privacy:preference:penalty'] = '当使用“多次尝试交互”或“
 $string['privacy:preference:showstandardinstruction'] = '是否显示标准说明。';
 $string['privacy:preference:shuffleanswers'] = '答案是否自动重新排序。';
 $string['privacy:preference:single'] = '答案是带有单选按钮的单个答案还是带有复选框的多个答案。';
+$string['regradeissuenumchoiceschanged'] = '问题中的选项数量发生了变化。';
 $string['selectmulti'] = '选择一项或多项：';
 $string['selectone'] = '选择一项：';
 $string['showstandardinstruction'] = '显示标准说明';

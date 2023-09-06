@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mediasite', language 'ar', version '3.11'.
+ * Strings for component 'mediasite', language 'ar', version '4.1'.
  *
  * @package     mediasite
  * @category    string
@@ -32,9 +32,9 @@ $string['basiclti_in_new_window'] = 'لقد تم فتح نشاطك في نافذ
 $string['description'] = 'الوصف';
 $string['duplicatesitename'] = '{$a} مستعمل مسبقاً. لطفاً، استعمل اسماً مختلفاً للموقع.';
 $string['longsitename'] = 'اسم الموقع طويل جداً';
-$string['mediasite:addinstance'] = 'إضافة محتوى Mediasite إلى المقرر الدراسي';
-$string['mediasite:view'] = 'معاينة محتوى Mediasite في المقرر الدراسي';
-$string['my_mediasite_course_menu'] = 'قائمة المقرر الدراسي';
+$string['mediasite:addinstance'] = 'إضافة محتوى Mediasite إلى المساق';
+$string['mediasite:view'] = 'معاينة محتوى Mediasite في المساق';
+$string['my_mediasite_course_menu'] = 'قائمة المساق';
 $string['my_mediasite_site_pages'] = 'الصفحة الرئيسية للموقع';
 $string['nosites'] = 'ليست هناك مواقع مهيئة.';
 $string['openaspopup'] = 'إفتح المحتوى بنافذة جديدة';
@@ -45,8 +45,8 @@ $string['privacy:metadata:group_member:userlastname'] = 'تم إرسال اسم�
 $string['requiredsitename'] = 'اسم الموقع مطلوب حتماً';
 $string['resourcetitle'] = 'العنوان';
 $string['showdescription'] = 'عَرض الوصف في صفحة المساق';
-$string['site_deletion_inuse_confirmation'] = 'هذا الموقع مستعمل من قبل {$a} من عناصر محتوى المقرر الدراسي. حذف الموقع سيؤدي إلى حذف تلك العناصر. هل أنت متأكد من رغبتك في حذف هذا الموقع؟';
-$string['site_deletion_unused_confirmation'] = 'الموقع غير مشار إليه بأي محتوى في المقرر الدراسي. هل ترغب في حذف هذا الموقع؟';
+$string['site_deletion_inuse_confirmation'] = 'هذا الموقع مستعمل من قبل {$a} من عناصر محتوى المساق. حذف الموقع سيؤدي إلى حذف تلك العناصر. هل أنت متأكد من رغبتك في حذف هذا الموقع؟';
+$string['site_deletion_unused_confirmation'] = 'الموقع غير مشار إليه بأي محتوى في المساق. هل ترغب في حذف هذا الموقع؟';
 $string['siteaddbuttonlabel'] = 'إضافة موقع';
 $string['sitename'] = 'العنوان';
 $string['sitenames'] = 'إختر المخدم الافتراضي';

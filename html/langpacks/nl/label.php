@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'nl', version '3.11'.
+ * Strings for component 'label', language 'nl', version '4.1'.
  *
  * @package     label
  * @category    string
@@ -25,35 +25,37 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdndmedia'] = 'Het maken van een label aanbieden wanneer mediabestanden in een cursus gesleept worden.';
-$string['configdndresizeheight'] = 'Wanneer een label gemaakt wordt van een naar de cursus gesleepte afbeelding, herschaal die dan als ze hoger is dan dit aantal pixels (0 voor niet herschalen).';
-$string['configdndresizewidth'] = 'Wanneer een label gemaakt wordt van een naar de cursus gesleepte afbeelding, herschaal die dan als ze breder is dan dit aantal pixels (0 voor niet herschalen).';
+$string['configdndmedia'] = 'Aanbieden om een Tekst- en mediazone aan te maken wanneer mediabestanden in een cursus gesleept worden.';
+$string['configdndresizeheight'] = 'Wanneer een Tekst- en mediazone gemaakt wordt door een afbeelding  naar de cursus te slepen,  herschaal die dan als ze hoger is dan dit aantal pixels. Als dit op 0 gezet wordt gebeurt er geen herschaling.';
+$string['configdndresizewidth'] = 'Wanneer een Tekst- en mediazone gemaakt wordt van een naar de cursus gesleepte afbeelding, herschaal die dan als ze breder is dan dit aantal pixels. Als dit op 0 gezet wordt gebeurt er geen herschaling.';
 $string['dndmedia'] = 'Media slepen en neerzetten';
 $string['dndresizeheight'] = 'Herschalen hoogte bij slepen en neerzetten';
 $string['dndresizewidth'] = 'Herschalen breedte bij slepen en neerzetten';
 $string['dnduploadlabel'] = 'Media toevoegen aan de cursuspagina';
-$string['dnduploadlabeltext'] = 'Voeg tekst toe aan de cursuspagina';
-$string['indicator:cognitivedepth'] = 'Label cognitief';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Label bron.';
-$string['indicator:cognitivedepthdef'] = 'Label cognitief';
-$string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid bereikt die door de Label-bronnen wordt aangeboden tijdens dit analyse-interval (Niveaus = Geen weergave, Weergave)';
-$string['indicator:socialbreadth'] = 'Label sociaal';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Label bron.';
-$string['indicator:socialbreadthdef'] = 'Label sociaal';
-$string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid bereikt die door de Label-middelen wordt aangeboden tijdens dit analyse-interval (Niveaus = Geen deelname, alleen deelnemer)';
-$string['label:addinstance'] = 'Voeg een nieuw label toe';
-$string['label:view'] = 'Bekijk label';
-$string['labeltext'] = 'Label tekst';
-$string['modulename'] = 'Label';
-$string['modulename_help'] = 'Een label maakt het mogelijk om tekst en afbeeldingen in te voegen tussen de activiteitenlinks op de cursuspagina. Labels zijn heel flexibel en kunnen helpen een cursus er aantrekkelijk te laten uitzien als je ze goed gebruikt.
+$string['dnduploadlabeltext'] = 'Voeg tekst- en mediazone toe aan de cursuspagina';
+$string['indicator:cognitivedepth'] = 'Tekst- en mediazone cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Tekst- en mediazone.';
+$string['indicator:cognitivedepthdef'] = 'Tekst- en mediazone cognitief';
+$string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid bereikt die door de Tekst- en mediazones wordt aangeboden tijdens dit analyse-interval (Niveaus = Geen weergave, Weergave)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'Tekst- en mediazone sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Tekst- en mediazone.';
+$string['indicator:socialbreadthdef'] = 'Tekst -en mediazone sociaal';
+$string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid bereikt die door de Tekst- en mediazone wordt aangeboden tijdens dit analyse-interval (Niveaus = Geen deelname, alleen deelnemer)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['label:addinstance'] = 'Voeg een nieuwe Tekst- en mediazone toe';
+$string['label:view'] = 'Bekijk Tekst- en mediazone';
+$string['labeltext'] = 'Tekst';
+$string['modulename'] = 'Tekst- en mediazone';
+$string['modulename_help'] = 'Tekst- en mediazone maakt het mogelijk om tekst en multimedia te tonen op de cursuspagina.
 
-Labels kunnen gebruikt worden
-
+Tekst- en mediazone kun je gebruiken:
 * Om een lange lijst activiteiten op te splitsen met een ondertitel of een afbeelding
-* Om een ingebed geluidsbestand of video rechtstreeks op de cursuspagina te tonen
+* Om een ingebedde video rechtstreeks op de cursuspagina te tonen
 * Om een korte beschrijving te geven bij een cursussectie';
-$string['modulenameplural'] = 'Labels';
-$string['pluginadministration'] = 'Label beheer';
-$string['pluginname'] = 'Label';
-$string['privacy:metadata'] = 'De Label Resource Plugin slaat geen persoonlijke gegevens op';
-$string['search:activity'] = 'Label';
+$string['modulename_link'] = 'mod/label/view';
+$string['modulenameplural'] = 'Tekst- en mediazones';
+$string['pluginadministration'] = 'Beheer Tekst- en mediazone';
+$string['pluginname'] = 'Tekst- en mediazone';
+$string['privacy:metadata'] = 'De Tekst- en mediazone-plugin slaat geen persoonlijke gegevens op';
+$string['search:activity'] = 'Tekst- en mediazone';

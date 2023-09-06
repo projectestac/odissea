@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'ru', version '3.11'.
+ * Strings for component 'atto_media', language 'ru', version '4.1'.
  *
  * @package     atto_media
  * @category    string
@@ -37,7 +37,7 @@ $string['addtrack'] = 'Добавить трек';
 $string['advancedsettings'] = 'Расширенные настройки';
 $string['audio'] = 'Аудио';
 $string['audiosourcelabel'] = 'URL источника аудио';
-$string['autoplay'] = 'Автоматическое воспроизведение';
+$string['autoplay'] = 'Воспроизводить автоматически';
 $string['browserepositories'] = 'Выбрать из хранилища...';
 $string['captions'] = 'Титры';
 $string['captions_help'] = 'Титры могут использоваться для описания всего происходящего в треке, включая несловестные звуки, такие как телефонные звонки.';
@@ -51,7 +51,7 @@ $string['default'] = 'По умолчанию';
 $string['descriptions'] = 'Описания';
 $string['descriptions_help'] = 'Описания аудио могут использоваться для предоставления повествования, которое объясняет визуальные детали, не очевидные из аудио.';
 $string['descriptionssourcelabel'] = 'URL описания трека';
-$string['displayoptions'] = 'Показать варианты';
+$string['displayoptions'] = 'Параметры отображения';
 $string['entername'] = 'Введите название';
 $string['entersource'] = 'URL источника';
 $string['entertitle'] = 'Введите название';

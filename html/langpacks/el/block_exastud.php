@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exastud', language 'el', version '3.11'.
+ * Strings for component 'block_exastud', language 'el', version '4.1'.
  *
  * @package     block_exastud
  * @category    string
@@ -71,11 +71,11 @@ $string['class'] = 'Τάξη';
 $string['class_default_template'] = 'Προεπιλεγμένο υπόδειγμα';
 $string['class_delete'] = 'Διαγραφή τάξης';
 $string['class_educationplan'] = 'Σχέδιο εκπαίδευσης';
-$string['class_info'] = 'Επεξεργασίας τάξης';
+$string['class_info'] = 'Επεξεργασία τάξης';
 $string['class_logo'] = 'Λογότυπο τάξης';
 $string['class_marked_as_todelete'] = 'Αυτή η τάξη επισημάνθηκε για διαγραφή από διαχειριστή ιστοτόπου';
-$string['class_marked_as_todelete_hover'] = 'Αυτή η τάξη επισημάνθηκε για διαγραφή από διαχειριστή ιστότοπου. Κάντε κλικ για επανάληψη αιτήματος διαγραφής.';
-$string['class_owner'] = 'Τρέχων διδάσκοντας τάξης';
+$string['class_marked_as_todelete_hover'] = 'Αυτή η τάξη επισημάνθηκε για διαγραφή από διαχειριστή ιστοτόπου. Κάντε κλικ για επανάληψη αιτήματος διαγραφής.';
+$string['class_owner'] = 'Τρέχων διδάσκων τάξης';
 $string['class_settings_can_edit_crosscompetencies'] = 'μπορεί να τροποποιήσει διεπιστημονικά προσόντα';
 $string['class_settings_can_edit_learnsocial'] = 'μπορεί να τροποποιήσει μαθησιακά και κοινωνικά προσόντα';
 $string['class_settings_class_teacher'] = 'Διδάσκοντας τάξης';
@@ -84,7 +84,7 @@ $string['class_title_for_report'] = 'Όνομα τάξης στην αναφορ
 $string['class_title_for_report_description'] = 'Αυτός ο τίτλος τάξης χρησιμοποιείται στις αναφορές. Εάν αυτό το πεδίο είναι κενό, στις αναφορές χρησιμοποιείται ο τίτλος της τάξης παραπάνω';
 $string['class_title_limit_message'] = 'Μέγ. αριθμ. {$a} χαρακτήρων.';
 $string['classleader_fieldtitle'] = 'Επικεφαλής της τάξης';
-$string['classowner_changed_message'] = 'Αλλάξατε τον διδάσκοντα της τάξης «{$ a-> classtitle}» σε {$a->owner}. Έτσι, δεν θα έχετε πρόσβαση τροποποίησης για αυτήν την τάξη από τώρα!';
+$string['classowner_changed_message'] = 'Αλλάξατε τον διδάσκοντα της τάξης «{$a-> classtitle}» σε {$a->owner}. Έτσι, δεν θα έχετε πρόσβαση τροποποίησης για αυτήν την τάξη από τώρα!';
 $string['classteacher_grade_interdisciplinary_competences'] = 'Ο διδάσκων της τάξης μπορεί να επεξεργαστεί διεπιστημονικά προσόντα';
 $string['classteacher_grade_learn_and_social_behaviour'] = 'Ο διδάσκων της τάξης μπορεί να επεξεργαστεί τη μαθησιακή και την κοινωνική συμπεριφορά';
 $string['clear_filter'] = 'Καθαρισμός φίλτρων';
@@ -161,14 +161,14 @@ $string['event_studenthidden_name'] = 'Ο μαθητής αποκρύφτηκε'
 $string['event_subjectcreated_name'] = 'Το θέμα δημιουργήθηκε';
 $string['event_subjectdeleted_name'] = 'Το θέμα διαγράφηκε';
 $string['event_subjectstudentdatachanged_name'] = 'Τα δεδομένα του μαθητή άλλαξαν για το θέμα/αντικείμενο';
-$string['event_subjectupdated_name'] = 'Το θέμα ενημερώθηκε';
+$string['event_subjectupdated_name'] = 'Το θέμα/αντικείμενο ενημερώθηκε';
 $string['exastud:addinstance'] = 'Προσθήκη της αναφοράς μαθητή Exabis στο μάθημα';
 $string['exastud:admin'] = 'Διαχειριστής';
 $string['exastud:editperiods'] = 'Επεξεργασία περιόδων';
 $string['exastud:myaddinstance'] = 'Προσθήκη της αναφοράς μαθητή Exabis στην αρχική μου σελίδα';
 $string['exastud:uploadpicture'] = 'Ανέβασμα λογότυπου';
 $string['exastud:use'] = 'Χρήση της αναφοράς μαθητή Exabis';
-$string['export_class'] = 'Δημιουργία εφεδρικών αντιγράφων για τα δεδομένα αξιολόγησης της τάξης';
+$string['export_class'] = 'Δημιουργία αντιγράφου ασφαλείας για τα δεδομένα αξιολόγησης της τάξης';
 $string['export_class_password_message'] = 'Παρακαλούμε, θυμηθείτε τον κωδικό πρόσβασης «<strong>{$a}</strong>» πριν συνεχίσετε';
 $string['export_password_message'] = 'Παρακαλούμε, θυμηθείτε τον κωδικό πρόσβασης «<strong>{$a}</strong>» πριν συνεχίσετε';
 $string['filter_bp'] = 'Αναλυτικό πρόγραμμα';
@@ -186,7 +186,7 @@ $string['form_subject_teacher_form_select_new_teacher'] = 'Νέος διδάσκ
 $string['gender'] = 'Φύλο';
 $string['grade_and_difflevel'] = 'Βαθμός και επίπεδο δυσκολίας';
 $string['grading'] = 'Βαθμολόγηση';
-$string['groupleader_fieldtitle'] = 'Φροντιστής ομάδας μάθησης';
+$string['groupleader_fieldtitle'] = 'Επιμελητής ομάδας μάθησης';
 $string['head_teacher'] = 'Επικεφαλής διδάσκων';
 $string['head_teachers'] = 'Διδάσκοντες τάξης';
 $string['hide_all'] = 'Απόκρυψη όλων';

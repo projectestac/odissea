@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'eu', version '3.11'.
+ * Strings for component 'choicegroup', language 'eu', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:closingbeforeopening'] = 'Hasiera data amaiera data baino lehenagokoa izan behar da.';
 $string['activitydate:exceeded'] = 'Entregatze-data igaro da.';
 $string['activitydate:hasopened'] = 'Ireki zen:';
 $string['activitydate:notavailableyet'] = 'Oraindik ez dago eskuragarri.';
@@ -111,6 +112,7 @@ $string['members/'] = 'Kideak';
 $string['members/max'] = 'Kideka / Muga';
 $string['modulename'] = 'Talde-aukeraketa';
 $string['modulename_help'] = 'Talde-aukeraketa moduluak ikasleei euren ikastaro barruko taldea hautatzeko aukera ematen du. Irakasleak ikasleek aukeratu dezaketen taldeen zerrenda eta talde bakoitzeko gehieneko kide kopurua zehaztu dezake.';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Talde-aukeraketak';
 $string['moveselectedusersto'] = 'Mugitu aukeratutako erabiltzaileak hona...';
 $string['multipleenrollmentspossible'] = 'Baimendu hainbat taldetan matrikulatzea';

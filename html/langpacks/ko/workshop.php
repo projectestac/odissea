@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ko', version '3.11'.
+ * Strings for component 'workshop', language 'ko', version '4.1'.
  *
  * @package     workshop
  * @category    string
@@ -33,6 +33,8 @@ $string['allocation'] = '할당';
 $string['allocationconfigured'] = '할당 구성';
 $string['allocationdone'] = '할당 완료';
 $string['allocationerror'] = '배당 오류';
+$string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index';
+$string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
 $string['allsubmissions'] = '모든 제출 ({$a})';
 $string['alreadygraded'] = '이미 채점되었습니다.';
 $string['areaconclusion'] = '결론 문장';
@@ -158,6 +160,8 @@ $string['gradinggradeover'] = '평가 성적 덮어쓰기';
 $string['gradingsettings'] = '점수화 설정';
 $string['groupnoallowed'] = '이 워크샵에서 모둠에 접근하는 것이 허용되지 않습니다.';
 $string['iamsure'] = '예, 확실합니다';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = '정보';
 $string['instructauthors'] = '제출 요령';
 $string['instructreviewers'] = '평가 요령';
@@ -168,6 +172,7 @@ $string['latesubmissions_help'] = '활성화되면 저자는 제출 마감일후
 $string['latesubmissionsallowed'] = '늦게 제출하는 것이 허용됨';
 $string['maxbytes'] = '최대 제출 첨부 크기';
 $string['modulename'] = '상호평가';
+$string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = '상호평가';
 $string['mysubmission'] = '내 제출물';
 $string['nattachments'] = '첨부물의 최대 수';

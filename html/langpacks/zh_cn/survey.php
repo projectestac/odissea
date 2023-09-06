@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'zh_cn', version '3.11'.
+ * Strings for component 'survey', language 'zh_cn', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -214,16 +214,19 @@ $string['indicator:cognitivedepth'] = '问卷调查活动认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 问卷调查活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '调查认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到调查活动提供的认知参与百分比（级别=无查看、查看、提交）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '问卷调查活动社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在问卷调查活动中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = '社会调查';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到调查活动提供的社会参与度的百分比（级别=无参与，仅参与者一人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = '描述';
 $string['invalidsurveyid'] = '调查 ID 不正确';
 $string['invalidtmptid'] = '无效的模板 id';
 $string['ipreferthat'] = '我希望';
 $string['modulename'] = '问卷调查';
 $string['modulename_help'] = '调查模块提供三种调查问卷，来评估和鼓励在线环境下的学习。教师可以用它们来收集数据，帮助他们了解课程情况，改进自己的教学。';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = '问卷调查';
 $string['name'] = '名字';
 $string['newsurveyresponses'] = '新的调查答卷';
@@ -277,6 +280,7 @@ $string['surveytype_help'] = '有 3 种调查类型：
 * 思考与学习态度调查（ATTLS）- 用来度量个体是“连接型学习者”（愿意寻找学习的乐趣，乐于合作和接受他人意见）还是“分隔型学习者”（对学习采用更批评和思辨的立场）
 * 关键事件调查
 * 建构式在线学习环境调查（COLLES）- 了解互联网的哪种交互能力更能促进学生实践动态学习';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = '{$a}，谢谢您回答了这个问卷！';
 $string['time'] = '时间';
 $string['viewsurveyresponses'] = '查看 {$a} 个调查答卷';

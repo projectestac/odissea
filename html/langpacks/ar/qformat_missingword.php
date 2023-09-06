@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_missingword', language 'ar', version '3.11'.
+ * Strings for component 'qformat_missingword', language 'ar', version '4.1'.
  *
  * @package     qformat_missingword
  * @category    string
@@ -30,4 +30,5 @@ $string['endanswernotfound'] = 'تعذر العثور على الرمز "}" ال
 $string['noanswerfound'] = 'تعذر العثور على إجابات للسؤال';
 $string['pluginname'] = 'صيغة الكلمة المفقودة';
 $string['pluginname_help'] = 'صيغة الكلمة المفقودة تسمح باستيراد الأسئلة عبر ملف نصي.';
+$string['pluginname_link'] = 'qformat/missingword';
 $string['privacy:metadata'] = 'إن ملحق صيغة السؤال، الكلمة المفقودة لا يخزن أي بيانات شخصية.';

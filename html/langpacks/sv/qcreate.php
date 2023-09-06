@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qcreate', language 'sv', version '3.11'.
+ * Strings for component 'qcreate', language 'sv', version '4.1'.
  *
  * @package     qcreate
  * @category    string
@@ -29,5 +29,6 @@ $string['indicator:cognitivedepth'] = 'Frågeskapande kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Frågeskapandeaktivitet.';
 $string['indicator:socialbreadth'] = 'Frågeskapande social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Frågeskapanderesurs.';
+$string['modulename_link'] = 'mod/qcreate/view';
 $string['needsregrading'] = 'Behöver ny betygsättning';
 $string['showneedsregrade'] = 'frågor som behöver betygsättas på nytt';

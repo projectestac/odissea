@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_office365', language 'es', version '3.11'.
+ * Strings for component 'repository_office365', language 'es', version '4.1'.
  *
  * @package     repository_office365
  * @category    string
@@ -33,7 +33,8 @@ $string['errorbadpath'] = 'Ruta errónea';
 $string['errorcoursenotfound'] = 'Curso no encontrado';
 $string['errorwhiledownload'] = 'Se ha producido un error mientras se descargaba el archivo';
 $string['file'] = 'Archivo';
-$string['myfiles'] = 'Mis Archivos';
+$string['groups'] = 'Grupos (Cursos)';
+$string['myfiles'] = 'Mi OneDrive';
 $string['office365:view'] = 'Ver el repositorio de OneDrive for Business';
 $string['pluginname'] = 'OneDrive for Business';
 $string['pluginname_help'] = 'Repositorio de OneDrive for Business';

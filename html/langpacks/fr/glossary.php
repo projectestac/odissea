@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'fr', version '3.11'.
+ * Strings for component 'glossary', language 'fr', version '4.1'.
  *
  * @package     glossary
  * @category    string
@@ -29,6 +29,7 @@ $string['addcategory'] = 'Ajouter une catégorie';
 $string['addcomment'] = 'Ajouter un commentaire';
 $string['addentry'] = 'Ajouter un nouvel article';
 $string['addingcomment'] = 'Ajout d\'un commentaire';
+$string['addsingleentry'] = 'Ajouter un article';
 $string['alias'] = 'Terme associé';
 $string['aliases'] = 'Termes associés';
 $string['aliases_help'] = 'À chaque article d\'un glossaire peut être associée une liste de termes associés ou de mots clefs. Si l\'article est lié automatiquement, les termes associés le seront également.';
@@ -167,6 +168,7 @@ $string['errconceptalreadyexists'] = 'Ce concept existe déjà dans le glossaire
 $string['errdeltimeexpired'] = 'Vous ne pouvez pas supprimer ceci. Le délai est échu !';
 $string['erredittimeexpired'] = 'La durée de modification de cet article est échue.';
 $string['errorparsingxml'] = 'Des erreurs sont survenues lors de l\'analyse du fichier. Veuillez vérifier que sa syntaxe XML est valide.';
+$string['errreservedkeywords'] = 'Un ou plusieurs mots-clefs saisis contiennent un caractère spécial qui ne peut pas être utilisé.';
 $string['eventcategorycreated'] = 'Catégorie créée';
 $string['eventcategorydeleted'] = 'Catégorie supprimée';
 $string['eventcategoryupdated'] = 'Catégorie modifiée';
@@ -182,6 +184,7 @@ $string['explainalphabet'] = 'Consultez le glossaire à l\'aide de cet index';
 $string['explainexport'] = 'Presser le bouton ci-dessous pour exporter les articles du glossaire.<br />Vous pourrez importer ce fichier à votre convenance dans ce cours ou un autre.<br />Veuillez noter que les annexes (par exemple les images) et les auteurs ne sont pas exportés.';
 $string['explainimport'] = '<p>Vous devez indiquer le fichier à importer et sélectionner vos options.</p><p>Lancez votre requête et contrôlez les résultats.</p>';
 $string['explainspecial'] = 'Afficher les articles ne commençant pas par une lettre';
+$string['export'] = 'Exporter';
 $string['exportedentry'] = 'Article exporté';
 $string['exportentries'] = 'Exporter des articles';
 $string['exportentriestoxml'] = 'Exporter des articles vers un ficher XML';
@@ -224,10 +227,12 @@ $string['indicator:cognitivedepth'] = 'Glossaire : aspect cognitif';
 $string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Glossaire.';
 $string['indicator:cognitivedepthdef'] = 'Glossaire : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Glossaire » (niveaux : pas de vue, vue, envoi).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Glossaire : aspect social';
 $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Glossaire.';
 $string['indicator:socialbreadthdef'] = 'Glossaire : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Glossaire » (niveaux : pas de participation, participant seul).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['isglobal'] = 'Glossaire global';
 $string['isglobal_help'] = 'Les articles d\'un glossaire global sont utilisés dans tout le site pour la création automatique des liens, et pas seulement dans le cours auquel il appartient. Seuls les administrateurs peuvent définir un glossaire comme étant global.';
 $string['letter'] = 'lettre';
@@ -252,6 +257,7 @@ Les glossaires ont de nombreux emplois, par exemple :
 * une ressource de trucs et astuces utiles sur un sujet particulier
 * une zone de partage de vidéos, d\'images ou de sons
 * une ressource permettant la révision de faits à mémoriser';
+$string['modulename_link'] = 'mod/glossary/view';
 $string['modulenameplural'] = 'Glossaires';
 $string['newentries'] = 'Nouveaux articles du glossaire';
 $string['newglossary'] = 'Nouveau glossaire';
@@ -272,6 +278,7 @@ $string['onebyline'] = '(une par ligne)';
 $string['page-mod-glossary-edit'] = 'Page d\'ajout et de modification d\'article de glossaire';
 $string['page-mod-glossary-view'] = 'Page d\'affichage d\'article de glossaire';
 $string['page-mod-glossary-x'] = 'Toute page du module glossaire';
+$string['pendingapproval'] = 'En attente d\'approbation';
 $string['pluginadministration'] = 'Administration du glossaire';
 $string['pluginname'] = 'Glossaire';
 $string['popupformat'] = 'Format des fenêtres surgissantes';
@@ -300,6 +307,7 @@ $string['rssarticles'] = 'Nombres d\'articles RSS récents';
 $string['rssarticles_help'] = '<p>Cette option vous permet de fixer le nombre d\'articles récents à inclure dans le flux RSS.</p>
 
 <p>Un nombre entre 5 et 20 est adéquat pour la plupart des glossaires. Si le glossaire est très actif, il est souhaitable d\'augmenter ce nombre.</p>';
+$string['rssfeed'] = 'Flux RSS';
 $string['rsssubscriberss'] = 'Affichage du flux RSS des articles du glossaire « {$a} »';
 $string['rsstype'] = 'Flux RSS de cette activité';
 $string['rsstype_help'] = '<p>Cette option vous permet d\'activer le flux RSS de ce glossaire.</p>

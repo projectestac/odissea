@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_openclosedate', language 'ar', version '3.11'.
+ * Strings for component 'quizaccess_openclosedate', language 'ar', version '4.1'.
  *
  * @package     quizaccess_openclosedate
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notavailable'] = 'هذا الاختبار غير متاح حالياً';
+$string['notavailable'] = 'هذا الاختبار غير متاح حالياً.';
 $string['pluginname'] = 'قاعدة الوصول عبر تاريخي الفتح والإغلاق';
 $string['privacy:metadata'] = 'إن ملحق قاعدة الوصول إلى الاختبار المتعلقة بتاريخ فتحه وإغلاقه لا يخزن أي بيانات شخصية.';
 $string['quiznotavailable'] = 'الاختبار لن يكون متاحاً حتى {$a}';

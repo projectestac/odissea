@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'es', version '3.11'.
+ * Strings for component 'scorm', language 'es', version '4.1'.
  *
  * @package     scorm
  * @category    string
@@ -93,6 +93,7 @@ $string['completed'] = 'Finalizado';
 $string['completiondetail:allscos'] = 'Hacer todas las partes de esta actividad';
 $string['completiondetail:completionscore'] = 'Obtener una calificación de {$a} o más';
 $string['completiondetail:completionstatuscompleted'] = 'Completar la actividad';
+$string['completiondetail:completionstatuscompletedorpassed'] = 'Completar o superar la actividad';
 $string['completiondetail:completionstatuspassed'] = 'Superar la actividad';
 $string['completionscorerequired'] = 'Requiere puntuación mínima';
 $string['completionscorerequired_help'] = 'Al habilitar este parámetro se requerirá que el usuario tenga al menos la puntuación mínima registrada para que se marque la actividad SCORM como finalizada, así como cualquier otro requerimiento de Finalización de Actividad.';
@@ -134,7 +135,6 @@ $string['displaydesc'] = 'Mostrar el paquete SCORM en una nueva ventana.';
 $string['displaysettings'] = 'Configuración de pantalla.';
 $string['dnduploadscorm'] = 'Añadir paquete SCORM';
 $string['domxml'] = 'Librería externa DOMXML';
-$string['duedate'] = 'Vencimiento';
 $string['element'] = 'Elemento';
 $string['enter'] = 'Entrar';
 $string['entercourse'] = 'Introducir el curso SCORM';
@@ -219,10 +219,12 @@ $string['indicator:cognitivedepth'] = 'SCORM cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad SCORM.';
 $string['indicator:cognitivedepthdef'] = 'SCORM Cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades SCORM durante este intervalo de análisis (Niveles = Sin vista, Vista, Enviar, Ver comentarios)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'SCORM social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad SCORM.';
 $string['indicator:socialbreadthdef'] = 'SCORM Social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por las actividades SCORM durante este intervalo de análisis (Niveles = Sin participación, Solo participante)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interacciones';
 $string['invalidactivity'] = 'La actividad SCORM es incorrecta';
@@ -263,6 +265,7 @@ Las actividades SCORM se puede usar
 
 * Para la presentación de contenidos multimedia y animaciones
 * Como herramienta de evaluación';
+$string['modulename_link'] = 'mod/scorm/view';
 $string['modulenameplural'] = 'Paquetes SCORM';
 $string['myaiccsessions'] = 'Mis sesiones AICC';
 $string['myattempts'] = 'Mis intentos';

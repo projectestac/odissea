@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'studentquiz', language 'ar', version '3.11'.
+ * Strings for component 'studentquiz', language 'ar', version '4.1'.
  *
  * @package     studentquiz
  * @category    string
@@ -52,6 +52,7 @@ $string['filter_label_question_creation_item_inputtext'] = '{$a->inputtext} {$a-
 $string['filter_label_questiontext'] = 'محتوى السؤال';
 $string['lastattempt_right'] = '✓';
 $string['lastattempt_right_label'] = 'أخر محاولة صحيحة';
+$string['modulename_link'] = 'mod/studentquiz/view';
 $string['pagesize'] = 'حجم الصفحة:';
 $string['please_enrole_message'] = 'رجاءً، انضم إلى هذا المساق لمشاهدة تقدمك الشخصي';
 $string['privacy:metadata:studentquiz_attempt:categoryid'] = 'مُعرَّف الصنف';
@@ -64,7 +65,6 @@ $string['privacy:metadata:studentquiz_notification:status'] = 'حالة الإش
 $string['privacy:metadata:studentquiz_progress'] = 'يخزن معلومات التقدم للطالب مع هذا السؤال';
 $string['privacy:metadata:studentquiz_progress:attempts'] = 'عدد محاولات الإجابة على هذا السؤال';
 $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'عدد الإجابات الصحيحة';
-$string['privacy:metadata:studentquiz_progress:questionid'] = 'مُعرَّف السؤال';
 $string['report_comment_condition3'] = 'يضم محتوى فاحش مثل المواد الإباحية';
 $string['report_comment_emailpreface'] = 'تم الإبلاغ عن التعليق من قبل {$a->fullname} ({$a->username}،
 {$a->email}).';

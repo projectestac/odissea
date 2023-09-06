@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'registration', language 'el', version '3.11'.
+ * Strings for component 'registration', language 'el', version '4.1'.
  *
  * @package     registration
  * @category    string
@@ -60,7 +60,7 @@ $string['note'] = 'Σημείωση';
 $string['notsubmittedyet'] = 'Δεν αξιολογήθηκε ακόμα';
 $string['or'] = 'ή';
 $string['order'] = 'Σειρά';
-$string['place'] = 'Δωμάτιο';
+$string['place'] = 'Αίθουσα';
 $string['pluginadministration'] = 'Διαχείριση καταχώρησης';
 $string['pluginname'] = 'καταχώρηση';
 $string['points'] = 'Πόντοι';

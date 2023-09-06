@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'ca', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'ca', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -39,6 +39,7 @@ $string['cbmgrades_help'] = 'Amb Qualificació Basada en la Certesa (Certainty B
 **Precisió** és el % d\'encerts ignorant la certesa però ponderat per la nota màxima de cada pregunta. Distingir correctament les respostes més fiables de les que són menys fiables dóna una millor nota que seleccionar la mateixa certesa per a cada pregunta. Això es reflecteix en el ** Bonus CBM **.
 
 **Precisió** + **Bonificació QBC** és una millor mesura del coneixement que **Precisió**. Els errors conceptuals poden portar a bonificacions negatives, una advertència per tal de fixar-se amb cura en allò que se sap i allò que no.';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'Puntuació QBC (CBM) {$a}';
 $string['certainty'] = 'Certesa';
 $string['certainty-1'] = 'Ni idea';
@@ -54,6 +55,7 @@ Puntuació si és errònia          |      0         |     -2      |       -6
 Probabilitat que sigui correcta  |     <67%       |   67%-80%   |      >80%
 
 Les millors qualificacions s\'aconsegueixen reconeixent la incertesa. Per exemple, si us sembla que la probabilitat d\'equivocar-vos és més alta d\'1 entre 3, heu d\'introduir C = 1 i evitar així el risc d\'una qualificació negativa.';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = 'Ni idea';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';

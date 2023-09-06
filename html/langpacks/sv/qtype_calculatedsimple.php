@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'sv', version '3.11'.
+ * Strings for component 'qtype_calculatedsimple', language 'sv', version '4.1'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -32,6 +32,7 @@ $string['generatenewitemsset'] = 'Generera';
 $string['newsetwildcardvalues'] = 'Ny datamängd för wildcard värden';
 $string['pluginname'] = 'Enkel beräkning';
 $string['pluginname_help'] = 'Enkla beräkningsfrågor möjliggör individuella numeriska frågor att skapas med hjälp av wildcards som ersätts med individuella värden när testet tas. Enkla beräkningsfrågor erbjuder de vanligaste funktionera av beräknade frågor men med ett enklare gränssnitt.';
+$string['pluginname_link'] = 'question/type/calculatedsimple';
 $string['pluginnameadding'] = 'Lägg till en enkel beräkning';
 $string['pluginnameediting'] = 'Redigera en enkel beräkningsfråga';
 $string['pluginnamesummary'] = 'En enklare version av beräknade frågor är som numeriska frågor fast med tal som genereras slumpmässigt från en datamängd när testet tas.';

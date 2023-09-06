@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'timezones', language 'ar', version '3.11'.
+ * Strings for component 'timezones', language 'ar', version '4.1'.
  *
  * @package     timezones
  * @category    string
@@ -30,7 +30,6 @@ $string['africa/accra'] = 'أفريقيا / أكرا';
 $string['africa/addis_ababa'] = 'أفريقيا / أديسا بابا';
 $string['africa/algiers'] = 'أفريقيا / الجزائر';
 $string['africa/asmara'] = 'أفريقيا / أسمرة';
-$string['africa/asmera'] = 'أفريقيا / أسمرا';
 $string['africa/bamako'] = 'أفريقيا / باماكو';
 $string['africa/bangui'] = 'أفريقيا / بانغي';
 $string['africa/banjul'] = 'أفريقيا / بانجول';
@@ -75,7 +74,6 @@ $string['africa/nouakchott'] = 'افريقيا / نواكشوط';
 $string['africa/ouagadougou'] = 'أفريقيا / واغادوغو';
 $string['africa/porto-novo'] = 'أفريقيا / بورتو نوفو';
 $string['africa/sao_tome'] = 'أفريقيا / ساو_توم';
-$string['africa/timbuktu'] = 'أفريقيا / تمبكتو';
 $string['africa/tripoli'] = 'أفريقيا / طرابلس';
 $string['africa/tunis'] = 'أفريقيا / تونس';
 $string['africa/windhoek'] = 'أفريقيا / ويندهوك';
@@ -86,7 +84,6 @@ $string['america/antigua'] = 'أمريكا / أنتيغوا';
 $string['america/araguaina'] = 'أمريكا / الأرجنتين';
 $string['america/argentina/buenos_aires'] = 'أمريكا / الأرجنتين / بونوس_آيريس';
 $string['america/argentina/catamarca'] = 'أمريكا / الأرجنتين / كاتاماركا';
-$string['america/argentina/comodrivadavia'] = 'أمريكا / الأرجنتين / كومود ريفادافيا';
 $string['america/argentina/cordoba'] = 'أمريكا / الأرجنتين / قرطبة';
 $string['america/argentina/jujuy'] = 'أمريكا / الأرجنتين / خوخوي';
 $string['america/argentina/la_rioja'] = 'أمريكا / الأرجنتين / لاريوجا';
@@ -153,7 +150,6 @@ $string['america/indiana/tell_city'] = 'أمريكا / إنديانا / تل س�
 $string['america/indiana/vevay'] = 'أمريكا / إنديانا / فيفي';
 $string['america/indiana/vincennes'] = 'أمريكا / إنديانا / فنسن';
 $string['america/indiana/winamac'] = 'أمريكا / إنديانا / ويناماك';
-$string['america/indianapolis'] = 'أمريكا / انديانابلس';
 $string['america/inuvik'] = 'أمريكا / إنوفيك';
 $string['america/iqaluit'] = 'أمريكا / إكالويت';
 $string['america/jamaica'] = 'أمريكا / جاميكا';
@@ -164,7 +160,6 @@ $string['america/kralendijk'] = 'أمريكا / كرالانديك';
 $string['america/la_paz'] = 'أمريكا / لاباز';
 $string['america/lima'] = 'أمريكا / ليما';
 $string['america/los_angeles'] = 'أمريكا / لوس أنجلس';
-$string['america/louisville'] = 'أمريكا / لويسفيل';
 $string['america/lower_princes'] = 'أمريكا / لور برنسس';
 $string['america/maceio'] = 'أمريكا / ماسيو';
 $string['america/managua'] = 'أمريكا / ماناغوا';
@@ -181,7 +176,6 @@ $string['america/miquelon'] = 'أمريكا / ميكلون';
 $string['america/moncton'] = 'أمريكا / مونتون';
 $string['america/monterrey'] = 'أمريكا / مونتيري';
 $string['america/montevideo'] = 'أمريكا / مونتيفيديو';
-$string['america/montreal'] = 'أمريكا / مونتريال';
 $string['america/montserrat'] = 'أمريكا / مونتسيرات';
 $string['america/nassau'] = 'أمريكا / ناسو';
 $string['america/new_york'] = 'أمريكا / نيويورك';
@@ -260,10 +254,8 @@ $string['asia/barnaul'] = 'آسيا / بارنول';
 $string['asia/beirut'] = 'آسيا / بيروت';
 $string['asia/bishkek'] = 'آسيا / بيشكيك';
 $string['asia/brunei'] = 'آسيا / بروناي';
-$string['asia/calcutta'] = 'آسيا /  كالا كوتا';
 $string['asia/chita'] = 'آسيا / شيتا';
 $string['asia/choibalsan'] = 'آسيا / شويبالسان';
-$string['asia/chongqing'] = 'آسيا / تشونغتشينغ';
 $string['asia/colombo'] = 'آسيا / كولومبو';
 $string['asia/damascus'] = 'آسيا / دمشق';
 $string['asia/dhaka'] = 'آسيا / دكا';
@@ -272,7 +264,6 @@ $string['asia/dubai'] = 'آسيا / دبي';
 $string['asia/dushanbe'] = 'آسيا / دوشانبي';
 $string['asia/famagusta'] = 'آسيا / فاماغوستا';
 $string['asia/gaza'] = 'آسيا / غزة';
-$string['asia/harbin'] = 'آسيا / هاربين';
 $string['asia/hebron'] = 'آسيا / هبرون';
 $string['asia/ho_chi_minh'] = 'آسيا / هو شي من';
 $string['asia/hong_kong'] = 'آسيا / هونكونغ';
@@ -284,9 +275,7 @@ $string['asia/jerusalem'] = 'آسيا / القدس';
 $string['asia/kabul'] = 'آسيا / كابول';
 $string['asia/kamchatka'] = 'آسيا / كامتشاتكا';
 $string['asia/karachi'] = 'آسيا / كراتشي';
-$string['asia/kashgar'] = 'آسيا / كاشغر';
 $string['asia/kathmandu'] = 'آسيا / كاتماندو';
-$string['asia/katmandu'] = 'آسيا / كاتماندو';
 $string['asia/khandyga'] = 'آسيا / كانديرا';
 $string['asia/kolkata'] = 'آسيا / كلكاتا';
 $string['asia/krasnoyarsk'] = 'آسيا / كراسنويارسك';
@@ -309,9 +298,7 @@ $string['asia/pyongyang'] = 'آسيا / بيونغ يانغ';
 $string['asia/qatar'] = 'آسيا / قطر';
 $string['asia/qostanay'] = 'آسيا / كوستاناي';
 $string['asia/qyzylorda'] = 'آسيا / كيزيلوردا';
-$string['asia/rangoon'] = 'آسيا / رانغون';
 $string['asia/riyadh'] = 'آسيا / الرياض';
-$string['asia/saigon'] = 'آسيا / سايغون';
 $string['asia/sakhalin'] = 'آسيا / سخالين';
 $string['asia/samarkand'] = 'آسيا / سمرقند';
 $string['asia/seoul'] = 'آسيا / سيول';
@@ -338,7 +325,6 @@ $string['atlantic/azores'] = 'الأطلسي / الازور';
 $string['atlantic/bermuda'] = 'الأطلسي / برمودا';
 $string['atlantic/canary'] = 'الأطلسي / الكناري';
 $string['atlantic/cape_verde'] = 'الأطلسي / كيب فردا';
-$string['atlantic/faeroe'] = 'الأطلسي / فارو';
 $string['atlantic/faroe'] = 'الأطلسي / فارو';
 $string['atlantic/madeira'] = 'الأطلسي / ماديرا';
 $string['atlantic/reykjavik'] = 'الأطلسي / ريكيافيك';
@@ -361,7 +347,6 @@ $string['europe/amsterdam'] = 'أوربا / أمستردام';
 $string['europe/andorra'] = 'أوربا / اندورا';
 $string['europe/astrakhan'] = 'أوربا / أستراخان';
 $string['europe/athens'] = 'أوربا / أثينا';
-$string['europe/belfast'] = 'أوربا / بلفاست';
 $string['europe/belgrade'] = 'أوربا / بلغراد';
 $string['europe/berlin'] = 'أوربا / برلين';
 $string['europe/bratislava'] = 'أوربا / براتسلافا';
@@ -461,15 +446,12 @@ $string['pacific/pago_pago'] = 'المحيط الهادئ / باغو باغو';
 $string['pacific/palau'] = 'المحيط الهادئ / بالاو';
 $string['pacific/pitcairn'] = 'المحيط الهادئ / بيتكيرن';
 $string['pacific/pohnpei'] = 'المحيط الهادئ / بوهنباي';
-$string['pacific/ponape'] = 'المحيط الهادئ / بونابي';
 $string['pacific/port_moresby'] = 'المحيط الهادئ / بورت مورسبي';
 $string['pacific/rarotonga'] = 'المحيط الهادئ / راروتونغا';
 $string['pacific/saipan'] = 'المحيط الهادئ / سايبان';
 $string['pacific/tahiti'] = 'المحيط الهادئ / تاهيتي';
 $string['pacific/tarawa'] = 'المحيط الهادئ / تاراوا';
 $string['pacific/tongatapu'] = 'المحيط الهادئ / تونجاتابو';
-$string['pacific/truk'] = 'المحيط الهادئ / تراك';
 $string['pacific/wake'] = 'المحيط الهادئ / ويك';
 $string['pacific/wallis'] = 'المحيط الهادئ / واليس';
-$string['pacific/yap'] = 'المحيط الهادئ / ياب';
 $string['utc'] = 'التوقيت العالمي';

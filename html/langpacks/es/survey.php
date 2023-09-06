@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'es', version '3.11'.
+ * Strings for component 'survey', language 'es', version '4.1'.
  *
  * @package     survey
  * @category    string
@@ -214,10 +214,12 @@ $string['indicator:cognitivedepth'] = 'Encuesta predefinida cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad de Encuesta predefinida.';
 $string['indicator:cognitivedepthdef'] = 'Encuesta cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades de Encuesta durante este intervalo de análisis (Niveles = Sin visualización, Visualización, Envío)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Encuesta predefinida social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad de Encuesta predefinida.';
 $string['indicator:socialbreadthdef'] = 'Encuesta social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por las actividades de Encuesta durante este intervalo de análisis (Niveles = Sin participación, Participante solo)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['introtext'] = 'Texto de introducción';
 $string['invalidsurveyid'] = 'ID de la encuesta incorrecto';
 $string['invalidtmptid'] = 'Id de plantilla no válido';
@@ -226,6 +228,7 @@ $string['modulename'] = 'Encuestas predefinidas';
 $string['modulename_help'] = 'El módulo de actividad <b>Encuestas predefinidas</b> proporciona una serie de instrumentos que se han mostrado útiles para evaluar y estimular el aprendizaje en entornos en línea. Un profesor puede usarlos para recopilar información entre sus alumnos que le ayude a conocer mejor su clase así como su propia forma de enseñar.
 
 Tenga en cuenta que estas encuestas tienen ya las preguntas previamente predefinidas. Los profesores que deseen crear sus propias encuestas debe utilizar el módulo de actividad <b>Encuesta</b>';
+$string['modulename_link'] = 'mod/survey/view';
 $string['modulenameplural'] = 'Encuestas';
 $string['name'] = 'Nombre';
 $string['newsurveyresponses'] = 'Nuevas respuestas a la encuesta';
@@ -280,6 +283,7 @@ $string['surveytype_help'] = 'Hay disponibles tres tipos de Encuesta predefinida
 crítica y argumentativa).
 * Critical incidents survey, o Encuesta de Incidentes Críticos
 * COLLES - Constructivist on line Learning Enviroment Survey, o lo que es lo mismo, Encuesta en línea sobre el Ambiente de Aprendizaje Constructivista. Sirve para hacer el seguimiento del nivel en que la capacidad interactiva de la World Wide Web puede ser explotado para los estudiantes involucrarse en prácticas educativas dinámicas.';
+$string['surveytype_link'] = 'mod/survey/mod';
 $string['thanksforanswers'] = 'Gracias por responder a esta encuesta, {$a}';
 $string['time'] = 'Tiempo';
 $string['viewsurveyresponses'] = 'Ver las respuestas a la encuesta {$a}';

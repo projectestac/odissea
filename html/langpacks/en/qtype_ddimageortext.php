@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'en', version '3.11'.
+ * Strings for component 'qtype_ddimageortext', language 'en', version '4.1'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -42,6 +42,8 @@ $string['dropbackground'] = 'Background image for dragging markers onto';
 $string['dropzone'] = 'Drop zone {$a}';
 $string['dropzoneheader'] = 'Drop zones';
 $string['formerror_disallowedtags'] = 'Only "{$a}" tags are allowed in this draggable text.';
+$string['formerror_dragrequired'] = 'You must add at least one draggable item to this question.';
+$string['formerror_droprequired'] = 'You must define at least one drop zone for this question.';
 $string['formerror_multipledraginstance'] = 'You have selected this image {$a} more than once as the correct choice for a drop zone but it is not marked as being an unlimited drag item.';
 $string['formerror_multipledraginstance2'] = 'You have selected this image more than once as the correct choice for a drop zone but it is not marked as being an unlimited drag item.';
 $string['formerror_noallowedtags'] = 'HTML tags are not allowed in this text which is the alt text for a draggable image.';

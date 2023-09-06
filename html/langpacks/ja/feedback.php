@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ja', version '3.11'.
+ * Strings for component 'feedback', language 'ja', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -103,10 +103,10 @@ $string['description'] = '説明';
 $string['do_not_analyse_empty_submits'] = '分析時に空を省略する';
 $string['downloadresponseas'] = 'すべての回答をダウンロードする:';
 $string['drop_feedback'] = 'このコースから削除する';
-$string['dropdown'] = '多肢選択 - 単一回答 (ドロップダウンメニュ)';
+$string['dropdown'] = '多肢選択 - 単一回答 (ドロップダウンメニュー)';
 $string['dropdown_values'] = '回答';
-$string['dropdownlist'] = '多肢選択 - 単一回答 (ドロップダウンメニュ)';
-$string['dropdownrated'] = 'ドロップダウンメニュ (評定)';
+$string['dropdownlist'] = '多肢選択 - 単一回答 (ドロップダウンメニュー)';
+$string['dropdownrated'] = 'ドロップダウンメニュー (評定)';
 $string['edit_item'] = '質問を編集する';
 $string['edit_items'] = '質問を編集する';
 $string['email_notification'] = '送信通知を有効にする';
@@ -140,6 +140,7 @@ $string['feedback_is_not_open'] = 'フィードバックは利用できません
 $string['feedbackclose'] = 'フィードバック終了日時';
 $string['feedbackcompleted'] = '{$a->username} が {$a->feedbackname} を完了しました。';
 $string['feedbackopen'] = 'フィードバック開始日時';
+$string['feedbackupdated'] = 'フィードバックが更新されました。';
 $string['file'] = 'ファイル';
 $string['filter_by_course'] = 'コースでフィルタする';
 $string['handling_error'] = 'フィードバックモジュール処理中にエラーが発生しました。';
@@ -153,10 +154,12 @@ $string['indicator:cognitivedepth'] = 'フィードバック認知的';
 $string['indicator:cognitivedepth_help'] = 'この指標はフィードバック活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'フィードバック認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がフィードバック活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信)。';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'フィードバック社会的';
 $string['indicator:socialbreadth_help'] = 'この指標はフィードバック活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'フィードバック社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がフィードバック活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = '情報';
 $string['infotype'] = '情報タイプ';
 $string['insufficient_responses'] = '不十分な回答';
@@ -189,6 +192,7 @@ $string['modulename_help'] = 'フィードバック活動モジュールにお�
 * 参加者がコースモジュール、イベント等に参加できるようにするため
 * コース選択、学校方針等のゲスト調査として
 * 学生が匿名で内容を報告できるイジメ対策として';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = 'フィードバック';
 $string['move_item'] = 'この質問を移動する';
 $string['multichoice'] = '多肢選択';
@@ -230,6 +234,7 @@ $string['pagebreak'] = '改ページ';
 $string['pluginadministration'] = 'フィードバック管理';
 $string['pluginname'] = 'フィードバック';
 $string['position'] = 'ポジション';
+$string['previewquestions'] = '質問をプレビューする';
 $string['previous_page'] = '前のページ';
 $string['privacy:metadata:completed'] = 'フィードバックへの送信のレコードです。';
 $string['privacy:metadata:completed:anonymousresponse'] = '送信が匿名で使用されるかどうか決定します。';
@@ -297,3 +302,4 @@ $string['use_one_line_for_each_value'] = 'それぞれの回答に1行使用し�
 $string['use_this_template'] = 'このテンプレートを使用する';
 $string['using_templates'] = 'テンプレートを使用する';
 $string['vertical'] = '垂直';
+$string['whatfor'] = '何をしたいですか?';

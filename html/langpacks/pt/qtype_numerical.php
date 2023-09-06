@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'pt', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'pt', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -109,14 +109,6 @@ $string['unitposition'] = 'Posição da unidade';
 $string['units'] = 'Unidades';
 $string['unitselect'] = 'Lista pendente';
 $string['unitx'] = 'Unidade {no}';
-$string['validnumberformats'] = 'Formatos numéricos válidos';
-$string['validnumberformats_help'] = '* números regulares  13500.67 : 13 500.67 : 13500,67: 13 500,67
-
-* se as configurações do seu pacote linguístico (langconfig.php file) usarem uma vírgula [,] como separador dos milhares, introduza SEMPRE o ponto [.] como separador decimal, tal como: 13,500.67 : 13,500.
-
-* para formas exponenciais, por exemplo 1,350067 * 10<sup>4</sup>,  use
- 1,350067 E4 : 1,350067 E04';
-$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 ou 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} tem de ser um número.';
 $string['xmustnotbenumeric'] = '{$a} não pode ser um número.';
 $string['youmustenteramultiplierhere'] = 'Tem de indicar um multiplicador aqui.';

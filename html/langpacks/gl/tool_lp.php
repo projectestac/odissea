@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'gl', version '3.11'.
+ * Strings for component 'tool_lp', language 'gl', version '4.1'.
  *
  * @package     tool_lp
  * @category    string
@@ -119,7 +119,7 @@ $string['jumptocompetency'] = 'Ir á competencia';
 $string['jumptouser'] = 'Ir ao usuario';
 $string['learningplancompetencies'] = 'Competencias do plan de aprendizaxe';
 $string['learningplans'] = 'Plans de aprendizaxe';
-$string['levela'] = 'Nivel {$a}';
+$string['levela'] = 'Nivel';
 $string['linkcompetencies'] = 'Relacionar competencias';
 $string['linkcompetency'] = 'Relacionar competencia';
 $string['linkedcompetencies'] = 'Competencias relacionadas';

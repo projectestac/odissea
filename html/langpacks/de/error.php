@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'de', version '3.11'.
+ * Strings for component 'error', language 'de', version '4.1'.
  *
  * @package     error
  * @category    string
@@ -156,6 +156,7 @@ $string['cannotsetupcapformod'] = 'Rechte für {$a} konnten nicht angelegt werde
 $string['cannotsetupcapforplugin'] = 'Rechte für {$a} konnten nicht angelegt werden.';
 $string['cannotshowhidecoursesincategory'] = 'Die Kurse in der Kategorie {$a} können nicht angezeigt / verborgen werden.';
 $string['cannotsignup'] = 'Sie können kein neues Nutzerkonto anlegen, weil Sie bereits als {$a} angemeldet sind.';
+$string['cannotswitcheditmodeon'] = 'Der Bearbeitungsmodus konnte nicht eingeschaltet werden.';
 $string['cannotunassigncap'] = 'Abgelehnte Berechtigung {$a->cap} für Rolle {$a->role} konnte nicht ausgetragen werden.';
 $string['cannotunassignrolefrom'] = 'Dieses Nutzerkonto konnte nicht aus der Rollenzuweisung gelöscht werden: {$a}';
 $string['cannotunzipfile'] = 'Die Datei kann nicht entpackt werden';
@@ -335,6 +336,7 @@ $string['invalidcourseformat'] = 'Ungültiges Kursformat';
 $string['invalidcourseid'] = 'Sie versuchen, eine ungültige Kurs-ID zu benutzen.';
 $string['invalidcourselevel'] = 'Falsche Kontext-Stufe';
 $string['invalidcoursemodule'] = 'Ungültige Kursmodul-ID';
+$string['invalidcoursemoduleid'] = 'Ungültige Kursmodul-ID: {$a}';
 $string['invalidcoursenameshort'] = 'Ungültige Kurzbezeichnung für den Kurs';
 $string['invaliddata'] = 'Übermittelte Daten sind ungültig';
 $string['invaliddatarootpermissions'] = 'Während des Versuchs, ein Verzeichnis anzulegen, wurden ungültige Berechtigungen festgestellt. Aktivieren Sie das Debugging, um weitere Details zu erfahren.';
@@ -377,7 +379,7 @@ $string['invalidscaleid'] = 'Falsche Skalen-ID';
 $string['invalidsection'] = 'Der Datensatz des Kursmoduls enthält ungültigen Abschnitt.';
 $string['invalidsesskey'] = 'Ihre Sitzung ist höchstwahrscheinlich abgelaufen. Bitte melden Sie sich erneut an.';
 $string['invalidshortname'] = 'Ungültige Kurzbezeichnung für den Kurs';
-$string['invalidsourcefield'] = 'Der Eintrag im Feld für die Datei (draft file) ist ungültig.';
+$string['invalidsourcefield'] = 'Der Eintrag im Dateifeld (draft file) ist ungültig.';
 $string['invalidstatedetected'] = 'Eigentlich hätte hier kein Fehler passieren dürfen: {$a}';
 $string['invalidurl'] = 'Ungültige URL';
 $string['invaliduser'] = 'Ungültige Nutzer/in';
@@ -409,6 +411,7 @@ $string['messagingdisable'] = 'Die Mitteilungen sind für diese Website deaktivi
 $string['mimetexisnotexist'] = 'Ihr System ist nicht konfiguriert, um mimeTeX ausführen zu können. Sie müssen den C-Quellcode unter <a href="https://www.forkosh.com/mimetex.zip"> https://www.forkosh.com/mimetex.zip</a> herunterladen, kompilieren und das ausführbare Programm in das Verzeichnis moodle/filter/tex/ legen.';
 $string['mimetexnotexecutable'] = 'Das spezifische Programm mimetex ist nicht ausführbar!';
 $string['missing_moodle_backup_xml_file'] = 'XML-Datei im Backup fehlt: {$a}';
+$string['missingcategoryrole'] = 'Rolle konnte Nutzer/in nicht zugewiesen werden: fehlende Rolle für Kategorie.';
 $string['missingfield'] = 'Feld "{$a}" fehlt';
 $string['missingkeyinsql'] = 'Fehler: fehlender Parameter "{$a}" in der Abfrage';
 $string['missingparam'] = 'Notwendiger Parameter "{$a}" fehlt';
@@ -455,6 +458,7 @@ $string['nonmeaningfulcontent'] = 'Kein sinnvoller Inhalt';
 $string['noparticipants'] = 'Keine Teilnehmer/innen für diesen Kurs gefunden';
 $string['noparticipatorycms'] = 'Sie haben keine beteiligten Kursmodule für einen Bericht.';
 $string['nopermissions'] = 'Sie haben aktuell nicht das Recht, dies zu tun ({$a}).';
+$string['nopermissiontoaccesspage'] = 'Sie haben kein Recht, auf diese Seite zuzugreifen.';
 $string['nopermissiontocomment'] = 'Sie können keine Kommentare hinzufügen';
 $string['nopermissiontodelentry'] = 'Sie dürfen Diesen Kommentar nicht löschen!';
 $string['nopermissiontoeditcomment'] = 'Sie dürfen keine fremden Kommentare bearbeiten!';
@@ -488,6 +492,8 @@ $string['oauth2upgradetokenerror'] = 'Das OAuth 2 Token konnte nicht aktualisier
 $string['onlyadmins'] = 'Diese Funktion können nur Administratoren/innen ausführen';
 $string['onlyeditingteachers'] = 'Diese Funktion können nur Trainer/innen mit Bearbeitungsrecht ausführen';
 $string['onlyeditown'] = 'Sie können nur eigene Informationen bearbeiten.';
+$string['opensslsealerror'] = 'OpenSSL kann die Daten nicht versiegeln';
+$string['opensslsignerror'] = 'OpenSSL kann die Daten nicht signieren';
 $string['orderidnotfound'] = 'Die Befehls-ID {$a} wurde nicht gefunden';
 $string['pagenotexist'] = '<p>Ein unerwarteter  Fehler ist aufgetreten, weil eine nicht existierende Seite aufgerufen wurde.</p>{$a}';
 $string['pagenotexisttitle'] = 'Fehler 404: Datei nicht gefunden';
@@ -526,6 +532,9 @@ $string['sendmessage'] = 'Mitteilung senden';
 $string['sendmessagesent'] = 'Danke für Ihr Feedback zu: <br>{$a}';
 $string['serverconnection'] = 'Fehler beim Verbinden zum Server';
 $string['servicedonotexist'] = 'Service existiert nicht';
+$string['sessioncannotobtainlock'] = '<p>Die Sperre für die Sitzungs-ID {$a->id} konnte innerhalb von {$a->acquiretimeout} nicht aktiviert werden.</p>
+<p>Wahrscheinlich läuft in einem anderen Browser-Tab eine andere Seite ({$a->whohaslock}) oder die Sperre wurde wegen eines Fehlers nicht freigegeben.</p>
+<p>Sie können bis zum Timeout der Sitzungssperre ({$a->lockexpire}) warten oder Ihre Browsersitzung neu starten. Wenn dieser Fehler weiterhin besteht, fragen Sie bitte die Administrator/innen.</p>';
 $string['sessioncookiesdisable'] = 'Fehlerhafte Verwendung von  require_key_login() - Session Cookie sollte deaktiviert werden!';
 $string['sessiondiskfull'] = 'Die Session-Partition ist voll. Ein Login ist zurzeit nicht möglich. Bitte benachrichtigen Sie die Server-Administrator/innen.';
 $string['sessionerroruser'] = 'Ihre Session ist ungültig. Sie müssen sich neu anmelden.';
@@ -564,6 +573,7 @@ $string['unknowcontext'] = 'Dies ist ein unbekannter Kontext "{$a}" in get_child
 $string['unknowformat'] = 'Unbekanntes Format ({$a})';
 $string['unknownbackupexporterror'] = 'Unbekannter Fehler bei der Importbearbeitung';
 $string['unknownblockregion'] = 'Der Blockbereich \'{$a}\' ist auf dieser Seite nicht zugelassen';
+$string['unknowncategory'] = 'Unbekannte Kategorie mit Kategorie-ID "{$a}"';
 $string['unknowncontext'] = 'Unbekannter Kontext';
 $string['unknowncourse'] = 'Unbekannter Kurs "{$a}"';
 $string['unknowncourseidnumber'] = 'Unbekannte Kurs-ID "{$a}"';
@@ -595,6 +605,7 @@ $string['useradminodelete'] = 'Nutzerkonten von Administrator/innen können nich
 $string['userautherror'] = 'Unbekanntes Plugin zur Authentifizierung';
 $string['userauthunsupported'] = 'Plugin zur Authentifizierung wird nicht unterstützt';
 $string['useremailduplicate'] = 'Doppelte Adresse';
+$string['userisfilteredout'] = 'Diese Person passt nicht zu den Filtern und Tabelleneinstellungen!';
 $string['usermustbemnet'] = 'Nutzer/innen in der MNET-Zugangskontrolle müssen Remote-MNET-Nutzer/innen sein.';
 $string['usernamelowercase'] = 'Der Anmeldename muss in Kleinbuchstaben sein';
 $string['usernotaddederror'] = 'Fehler. Nutzer/in wurde nicht hinzugefügt';

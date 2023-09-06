@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ja', version '3.11'.
+ * Strings for component 'portfolio', language 'ja', version '4.1'.
  *
  * @package     portfolio
  * @category    string
@@ -171,8 +171,8 @@ $string['portfolio'] = 'ポートフォリオ';
 $string['portfolios'] = 'ポートフォリオ';
 $string['privacy:metadata'] = 'ポートフォリオサブシステムはプラグインから様々なポートフォリオプラグインへのリクエストを渡すためのチャネルとして動作します。';
 $string['privacy:metadata:instance'] = 'ポートフォリオのIDです。';
-$string['privacy:metadata:instancesummary'] = 'ポートフォリオのインスタンスおよびプリファレンスを保存します。';
-$string['privacy:metadata:name'] = 'プリファレンス名です。';
+$string['privacy:metadata:instancesummary'] = 'ポートフォリオのインスタンスおよびプレファレンスを保存します。';
+$string['privacy:metadata:name'] = 'プレファレンス名です。';
 $string['privacy:metadata:portfolio_log'] = 'ポートフォリオ転送のログです (後で重複を確認するため使用されます)。';
 $string['privacy:metadata:portfolio_log:caller_class'] = '転送を作成するため使用されるクラス名です。';
 $string['privacy:metadata:portfolio_log:caller_component'] = 'エクスポートに関与するコンポーネント名です。';
@@ -184,7 +184,7 @@ $string['privacy:metadata:portfolio_tempdata:expirytime'] = 'このレコード�
 $string['privacy:metadata:portfolio_tempdata:instance'] = '使用されるポートフォリオプラグインインスタンスです。';
 $string['privacy:metadata:portfolio_tempdata:userid'] = 'エクスポートを実施するユーザです。';
 $string['privacy:metadata:userid'] = 'ユーザIDです。';
-$string['privacy:metadata:value'] = 'プリファレンスの値です。';
+$string['privacy:metadata:value'] = 'プレファレンスの値です。';
 $string['privacy:path'] = 'ポートフォリオインスタンスです。';
 $string['queuesummary'] = '現在キューに入れられている転送';
 $string['returntowhereyouwere'] = '戻る';

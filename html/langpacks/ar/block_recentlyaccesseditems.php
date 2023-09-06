@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recentlyaccesseditems', language 'ar', version '3.11'.
+ * Strings for component 'block_recentlyaccesseditems', language 'ar', version '4.1'.
  *
  * @package     block_recentlyaccesseditems
  * @category    string
@@ -25,12 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['moreitems'] = 'إظهار المزيد من العناصر';
 $string['noitems'] = 'لا عناصر مؤخراً';
 $string['pluginname'] = 'العناصر التي تم الوصول إليها مؤخراً';
 $string['privacy:metadata:block_recentlyaccesseditemstablesummary'] = 'كتلة العناصر التي تم الوصول إليها مؤخراً تحفظ معلومات عن العناصر التي وصل إليها المستخدم مؤخراً';
 $string['privacy:metadata:cmid'] = 'مُعرَّف النشاط أو المورد';
-$string['privacy:metadata:courseid'] = 'المقرر العائد له العنصر';
+$string['privacy:metadata:courseid'] = 'المساق العائد له العنصر';
 $string['privacy:metadata:timeaccess'] = 'وقت آخر وصول للمستخدم إلى العنصر';
 $string['privacy:metadata:userid'] = 'مُعرَّف المستخدم الذي وصل إلى العنصر';
 $string['privacy:recentlyaccesseditemspath'] = 'العناصر التي تم الوصول إليها مؤخراً';
-$string['recentlyaccesseditems:myaddinstance'] = 'إضافة كتلة جديدة للعناصر التي تم الوصول إليها مؤخراً إلى لوحة التحكم';
+$string['recentlyaccesseditems:myaddinstance'] = 'إضافة كتلة جديدة للعناصر التي تم الوصول إليها مؤخراً إلى دفة القيادة';

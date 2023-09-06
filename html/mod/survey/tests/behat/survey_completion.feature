@@ -44,7 +44,7 @@ Feature: A teacher can use activity completion to track a student progress
     And the "Submit answers" completion condition of "Test survey name" is displayed as "todo"
     And I follow "Test survey name"
     And the "Submit answers" completion condition of "Test survey name" is displayed as "todo"
-    And I press "Click here to continue"
+    And I press "Submit"
     And I am on "Course 1" course homepage
     And the "Submit answers" completion condition of "Test survey name" is displayed as "done"
     And I follow "Test survey name"
@@ -59,7 +59,7 @@ Feature: A teacher can use activity completion to track a student progress
     # Teacher view.
     And the manual completion button for "Test survey name" should be disabled
     # Student view.
-    When I am on the "Test survey name" "survey activity" page logged in as student1
+    When I am on the "survey1" Activity page logged in as student1
     Then the manual completion button of "Test survey name" is displayed as "Mark as done"
     And I toggle the manual completion state of "Test survey name"
     And the manual completion button of "Test survey name" is displayed as "Done"

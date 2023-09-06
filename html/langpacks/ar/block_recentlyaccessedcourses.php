@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recentlyaccessedcourses', language 'ar', version '3.11'.
+ * Strings for component 'block_recentlyaccessedcourses', language 'ar', version '4.1'.
  *
  * @package     block_recentlyaccessedcourses
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['displaycategories'] = 'عرض التصنيفات';
 $string['displaycategories_help'] = 'إعرض تصنيف المقرر ضمن عناصر كتلة المقررات الدراسية التي تم الوصول إليها مؤخراً.';
-$string['nocourses'] = 'لا مقررات دراسية تم الوصول إليها مؤخراً';
+$string['nocourses'] = 'لا توجد مقررات دراسية تم الوصول إليها مؤخراً';
 $string['pluginname'] = 'مقررات دراسية تم الوصول إليها مؤخراً';
 $string['privacy:metadata'] = 'كتلة المقررات الدراسية التي تم الوصول إليها مؤخراً لا تخزن أي بيانات شخصية.';
-$string['recentlyaccessedcourses:myaddinstance'] = 'إضافة كتلة جديدة من المقررات الدراسية التي تم الوصول إليها مؤخراً إلى لوحة التحكم';
+$string['recentlyaccessedcourses:myaddinstance'] = 'إضافة كتلة جديدة من المقررات الدراسية التي تم الوصول إليها مؤخراً إلى دفة القيادة';

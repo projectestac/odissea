@@ -26,7 +26,7 @@ Feature: Adding questions to a quiz from the question bank
       | Test questions   | essay     | question 02 name | teacher1 | Question 02 text | qidnum   |
 
   Scenario: The questions can be filtered by tag
-    Given I am on the "question 01 name" "core_question > edit" page logged in as "teacher1"
+    Given I am on the "question 01 name" "core_question > edit" page logged in as teacher1
     And I set the following fields to these values:
       | Tags | foo |
     And I press "id_submitbutton"
@@ -76,7 +76,7 @@ Feature: Adding questions to a quiz from the question bank
     Then I should see "question 21 name" in the "categoryquestions" "table"
     And I should see "question 22 name" in the "categoryquestions" "table"
     And I should not see "question 01 name" in the "categoryquestions" "table"
-    And I click on "Show all 22" "link" in the ".pagingbottom" "css_element"
+    And I click on "Show all 22" "link" in the ".question-showall-text" "css_element"
     And I should see "question 01 name" in the "categoryquestions" "table"
     And I should see "question 22 name" in the "categoryquestions" "table"
 
@@ -118,7 +118,22 @@ Feature: Adding questions to a quiz from the question bank
     And I am on the "Quiz 1" "mod_quiz > Edit" page logged in as "teacher1"
     When I open the "last" add to quiz menu
     And I follow "from question bank"
+    And I click on "Sort by Question ascending" "link"
+    Then "question 01 name" "text" should appear before "question 02 name" "text"
+    And I click on "Sort by Question descending" "link"
+    And "question 03 name" "text" should appear before "question 01 name" "text"
+    And I follow "Sort by Question type ascending"
+    Then "question 01 name" "text" should appear before "question 03 name" "text"
     And I follow "Sort by Question type descending"
-    Then "question 03 name" "checkbox" should appear before "question 01 name" "checkbox"
-    And I follow "Sort by Question ascending"
-    And "question 01 name" "checkbox" should appear before "question 02 name" "checkbox"
+    Then "question 03 name" "text" should appear before "question 01 name" "text"
+
+  Scenario: Shuffle option could be set before adding any question to the quiz
+    Given the following "questions" exist:
+      | questioncategory | qtype | name             | questiontext     |
+      | Test questions   | essay | question 03 name | question 03 text |
+    And I log in as "teacher1"
+    And I am on the "Quiz 1" "mod_quiz > Edit" page
+    When I set the field "Shuffle" to "1"
+    And I open the "last" add to quiz menu
+    And I follow "from question bank"
+    Then I should see "question 01 name"

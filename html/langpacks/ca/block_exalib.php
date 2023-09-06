@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exalib', language 'ca', version '3.11'.
+ * Strings for component 'block_exalib', language 'ca', version '4.1'.
  *
  * @package     block_exalib
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['download'] = 'Descarrega';
+$string['edit'] = 'Edita';

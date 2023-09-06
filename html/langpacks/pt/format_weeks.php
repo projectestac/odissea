@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'pt', version '3.11'.
+ * Strings for component 'format_weeks', language 'pt', version '4.1'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Adicionar semanas';
+$string['addsections'] = 'Adicionar semana';
 $string['automaticenddate'] = 'Calcular a data de fim a partir do número de secções';
 $string['automaticenddate_help'] = 'Se ativar esta opção, a data de fim da disciplina será calculada automaticamente a partir do número de secções e da data de início da disciplina.';
 $string['currentsection'] = 'Esta semana';
@@ -33,6 +33,8 @@ $string['deletesection'] = 'Apagar semana';
 $string['editsection'] = 'Editar semana';
 $string['editsectionname'] = 'Editar o nome da semana';
 $string['hidefromothers'] = 'Ocultar semana';
+$string['indentation'] = 'Permitir indentação na página da disciplina';
+$string['indentation_help'] = 'Permitir que os professores, e outros utilizadores com permissão para gerir atividades, possam indentar itens na página da disciplina.';
 $string['newsectionname'] = 'Novo nome para a semana {$a}';
 $string['page-course-view-weeks'] = 'Qualquer página principal de disciplina em formato semanal';
 $string['page-course-view-weeks-x'] = 'Qualquer disciplina no formato semanal';
@@ -40,4 +42,4 @@ $string['pluginname'] = 'Formato Semanal';
 $string['privacy:metadata'] = 'O módulo Formato Semanal não armazena quaisquer dados pessoais.';
 $string['section0name'] = 'Geral';
 $string['sectionname'] = 'Semana';
-$string['showfromothers'] = 'Show week';
+$string['showfromothers'] = 'Mostrar semana';

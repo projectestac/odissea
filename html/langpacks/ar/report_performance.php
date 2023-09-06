@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'ar', version '3.11'.
+ * Strings for component 'report_performance', language 'ar', version '4.1'.
  *
  * @package     report_performance
  * @category    string
@@ -32,6 +32,9 @@ $string['check_backup_details'] = 'تمكين الحفظ الاحتياطي يق
 $string['check_cachejs_comment_disable'] = 'عند تمكينه، سيتحسن أداء تحميل الصفحات.';
 $string['check_cachejs_comment_enable'] = 'عند تعطيله، قد يكون تحميل الصفحات أبطأ.';
 $string['check_cachejs_details'] = 'استعمال ميزة الخبء والضغط لـ Javascript يحسن كثيراً من أداء تحميل الصفحات. يوصى به بشدة في المواقع الإنتاجية.';
+$string['check_dbschema_errors'] = 'مخطط قاعدة البيانات غير متراصف.';
+$string['check_dbschema_name'] = 'فحص مخطط قاعدة البيانات';
+$string['check_dbschema_ok'] = 'مخطط قاعدة البيانات صحيح.';
 $string['check_debugmsg_comment_developer'] = 'إذا تم ضبطه على قيمة مغايرة لـ DEVELOPER، قد يتحسن الأداء قليلاً.';
 $string['check_debugmsg_comment_nodeveloper'] = 'إذا تم ضبطه على DEVELOPER، قد يتأثر الأداء قليلاً.';
 $string['check_debugmsg_details'] = 'نادراً ما تكون هناك فؤائد من الانتقال إلى مستوى المطور، ما لم يتم طلبه من قبل مطور.<p>بمجرد حصولك على رسالة الخطأ ونسخها ولصقها في موضع ما، يوصى بشدة بإعادة وضع الكشف عن الأخطاء إلى لا شيء. رسائل الكشف عن الأخطاء قد تعطي أدلة يستفيد منها المخترق بشأن إعدادات موقعك وقد تؤثر على الأداء.</p>';

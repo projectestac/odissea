@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'ar', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'ar', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -65,6 +65,7 @@ $string['pleaseenterananswer'] = 'لطفاً، أدخل جواباً.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'لطفاً، أدخل إجابتك بدون استعمال فاصل الآلاف ({$a}).';
 $string['pluginname'] = 'رقمي';
 $string['pluginname_help'] = 'من وجهة نظر الطلبة، يبدو السؤال الرقمي مشابهاً إلى حد كبير لسؤال الإجابة القصيرة. الفرق هو أن الإجابات الرقمية يُسمح فيها بهامش خطأ مقبول. هذا يسمح بمعاملة مدى ثابت من الإجابات بمثابة إجابة صائبة. على سبيل المثال، إذا كان الجواب هو 10 بهامش خطأ مقبول مقداره 2، فأي رقم ما بين 8 و12 سيعتبر جواباً صائباً.';
+$string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = 'تجري إضافة سؤال رقمي';
 $string['pluginnameediting'] = 'يجري تحرير سؤال رقمي';
 $string['pluginnamesummary'] = 'يسمح بجواب رقمي، مُمكن أن يتضمن وحدات، تُمنح درجاته عبر المقارنة مع نماذج إجابات متعددة، إحتمالاً مع هوامش تسامح.';
@@ -108,13 +109,6 @@ $string['unitposition'] = 'وحدات القياس المقبولة';
 $string['units'] = 'وحدات القياس';
 $string['unitselect'] = 'قائمة منسدلة';
 $string['unitx'] = 'وحدة القياس {no}';
-$string['validnumberformats'] = 'تنسيقات الرقم الصائبة';
-$string['validnumberformats_help'] = '* أرقام عادية 13500.67، 500.6 13، 13500,67 أو 500,67 13
-
-* إن كانت إعدادات حزمة اللغة الخاصة بك (ملف langconfig.php) تستعمل الفارزة (,) بمثابة فاصل الآلاف، *دائماً* ضع الفاصلة العشرية (.) كما في 13,500.67 : 13,500.
-
-* لتنسيق الأسس، ولنقل 1.350067 * 10<sup>4</sup>، استعمل 1.350067 E4 : 1.350067 E04';
-$string['validnumbers'] = '13500.67، 500.67 13، 13,500.67، 13500,67، 500,67 13، 1.350067 E4 أو 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} ينبغي أن يكون رقماً.';
 $string['xmustnotbenumeric'] = '{$a} لا يمكن أن يكون رقماً.';
 $string['youmustenteramultiplierhere'] = 'عليك إدخال عامل الضرب هنا.';

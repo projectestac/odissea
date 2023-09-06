@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'nl', version '3.11'.
+ * Strings for component 'cohort', language 'nl', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -36,6 +36,7 @@ $string['bulkadd'] = 'Voeg toe aan site-groep';
 $string['bulknocohort'] = 'Geen beschikbare site-groepen gevonden';
 $string['categorynotfound'] = 'Categorie  <b>{$a}</b> niet gevonden of je hebt het recht niet om hier een site-groep te maken. De standaardcontext zal gebruikt worden.';
 $string['cohort'] = 'Site-groep';
+$string['cohortmember'] = 'Site-groep lid';
 $string['cohorts'] = 'Site-groepen';
 $string['cohortsin'] = '{$a}: beschikbare site-groepen';
 $string['component'] = 'Bron';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = 'Site-groep geüpdate';
 $string['external'] = 'Externe site-groep';
 $string['idnumber'] = 'Site-groep ID';
 $string['invalidtheme'] = 'Site-groep-thema bestaat niet';
+$string['memberofcohort'] = 'Lid van site-groep';
 $string['memberscount'] = 'Site-groepgrootte';
 $string['name'] = 'Naam';
 $string['namecolumnmissing'] = 'Er is wat mis met de opmaak van het CSV-bestand. Controleer of de juiste kolomnamen er in staan. Ga om gebruikers aan site-groepen toe te voegen naar Gebruikers uploaden in het site-beheer.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'nl', version '3.11'.
+ * Strings for component 'format_tiles', language 'nl', version '4.1'.
  *
  * @package     format_tiles
  * @category    string
@@ -35,7 +35,6 @@ $string['areyousure'] = 'Ben je zeker?';
 $string['asfraction'] = 'Toon als onderdeel';
 $string['aspercentagedial'] = 'Toon als % in een cirkel';
 $string['backupfailed'] = 'Backup fout';
-$string['blockedpopuptitle'] = 'Pop-up geblokkeerd';
 $string['canceltask'] = 'Annuleer';
 $string['clickiffailstoload'] = 'Klik hier als de pagina niet wil laden';
 $string['close'] = 'Sluiten';
@@ -48,6 +47,7 @@ $string['colourred'] = 'Rood';
 $string['colours'] = 'Kleuren';
 $string['complete'] = 'compleet';
 $string['contents'] = 'Inhoud';
+$string['courseshowtileprogress_link'] = 'Activity_completion_settings#Activity_settings';
 $string['currentsection'] = 'Deze tegel';
 $string['customcss'] = 'Aangepaste CSS';
 $string['defaulttilecolour'] = 'Standaard tegelkleur';
@@ -57,6 +57,7 @@ $string['deleteimage'] = 'Verwijder afbeelding';
 $string['deletesection'] = 'Verwijder tegel';
 $string['deletetile'] = 'Verwijder tegel';
 $string['developer'] = 'Ontwikkelaar';
+$string['displayfilterbar_link'] = 'Outcomes';
 $string['displaytitle_mod_doc'] = 'Word-document';
 $string['displaytitle_mod_html'] = 'Web-pagina';
 $string['displaytitle_mod_jpeg'] = 'Afbeelding';

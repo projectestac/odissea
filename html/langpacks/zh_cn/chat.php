@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'zh_cn', version '3.11'.
+ * Strings for component 'chat', language 'zh_cn', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -61,7 +61,7 @@ $string['currentusers'] = '当前用户';
 $string['deletesession'] = '删除此会话';
 $string['deletesessionsure'] = '您确定要删除此会话吗?';
 $string['donotusechattime'] = '不显示聊天时间';
-$string['enterchat'] = '点击进入聊天室';
+$string['enterchat'] = '进入聊天室';
 $string['entermessage'] = '输入您的消息';
 $string['errornousers'] = '找不到任何用户!';
 $string['eventmessagesent'] = '消息已发送';
@@ -75,10 +75,12 @@ $string['indicator:cognitivedepth'] = '聊天认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在聊天活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '聊天认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与人已经达到了聊天活动所提供的认知参与度(级别=没有查看、查看、提交、查看反馈、评论反馈)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '聊天社会广度';
 $string['indicator:socialbreadth_help'] = '这个指标基于学生在聊天活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '聊天社会广度';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔内，参与人已经达到了聊天活动所提供的社会参与度(级别=没有参与，单独参与，和他人一起参与)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = '输入区';
 $string['invalidid'] = '找不到那个聊天室!';
 $string['list_all_sessions'] = '列出所有会话。';
@@ -107,6 +109,7 @@ $string['modulename_help'] = '聊天活动模块使参与人能够进行基于�
 * 年幼的孩子晚上在家使用聊天工具，作为进入社交网络世界的一种控制(指导)方式
 * 与邀请的演讲者在不同位置进行的问答环节
 * 帮助学生准备考试的会议，老师或其他学生将提出例题讨论';
+$string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = '聊天';
 $string['neverdeletemessages'] = '不删除聊天消息';
 $string['nextchattime'] = '下次聊天时间：';
@@ -124,6 +127,7 @@ $string['notlogged'] = '您没有登录！';
 $string['oldping'] = '断开超时';
 $string['page-mod-chat-x'] = '任意聊天模块页面';
 $string['pastchats'] = '过去的聊天会话';
+$string['pastsessions'] = '以前的会话';
 $string['pluginadministration'] = '聊天管理';
 $string['pluginname'] = '聊天';
 $string['privacy:metadata:chat_messages_current'] = '当前的聊天会话。此数据是临时的，在聊天会话删除后删除';
@@ -175,4 +179,4 @@ $string['usingchat_help'] = '聊天模块提供了一些功能以让聊天更加
 * 表演 - 在行首添加“/me”或者“:”可以将这行变成动作描述。例如，假设您叫柱子，那么您输入了“:手舞足蹈！”或者“/me 手舞足蹈！”，则所有人都会看到“柱子手舞足蹈！”
 * 呼叫 - 您可以通过点击别人姓名旁的“呼叫”链接发送一个声音给他。要想一下子呼叫所有的人，可以输入“beep all”。
 * HTML - 如果您知道如何使用HTML，您可以使用它们，这样就可以插入图片、播放声音或者创建不同颜色的文字';
-$string['viewreport'] = '查看过去的聊天会话';
+$string['viewreport'] = '过去的会话';

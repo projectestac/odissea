@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'eu', version '3.11'.
+ * Strings for component 'chat', language 'eu', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -61,7 +61,7 @@ $string['currentusers'] = 'Oraingo erabiltzaileak';
 $string['deletesession'] = 'Ezabatu txosten hau';
 $string['deletesessionsure'] = 'Ziur zaude txosten hau ezabatu nahi duzula?';
 $string['donotusechattime'] = 'Ez argitaratu txat-saioetarako orduak';
-$string['enterchat'] = 'Egin klik hemen txat-gelara sartzeko';
+$string['enterchat'] = 'Sartu txat-gelan';
 $string['entermessage'] = 'Idatzi zure mezua';
 $string['errornousers'] = 'Ezin topatu erabiltzailerik!';
 $string['eventmessagesent'] = 'Mezua bidali da';
@@ -75,10 +75,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa txatetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Txat motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa txatetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Txat jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da, Feedbacka ikusi da, Feedbackari iruzkina egin da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala txatetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Txat motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala txatetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Txat jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea, parte-hartzea besteekin)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = 'Sarrera-gunea';
 $string['invalidid'] = 'Ezin da aurkitu txat-gela hori!';
 $string['list_all_sessions'] = 'Saio guztien zerrenda.';
@@ -107,6 +109,7 @@ Txatak bereziki erabilgarriak dira aurrez aurreko talde-bilerak egin ezin direne
 * Gaztetxoenek etxetik txata erabiltzeko, sare sozialen mundura sarbide kontrolatu (monitorizatu) bat egiteko.
 * Kokapen geografiko ezberdinean dagoen hizlari gonbidatu batekin galde-erantzun saio bat egiteko.
 * Ikasleei azterketak prestatzen laguntzeko saioak egiteko, non irakasleak edo beste ikasle batzuk adibide galderak planteatuko dituzten';
+$string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Txat-gelak';
 $string['neverdeletemessages'] = 'Ez ezabatu mezuak';
 $string['nextchattime'] = 'Hurrengo txataren unea:';
@@ -121,9 +124,10 @@ $string['normalstream'] = 'Stream';
 $string['noscheduledsession'] = 'Ez dago programatuta txat-saiorik';
 $string['notallowenter'] = 'Zuk ez duzu txat-gela honetan sartzeko baimenik.';
 $string['notlogged'] = 'Ez duzu saioa hasi!';
-$string['oldping'] = 'Deskonektatzeko itxarote-epea';
+$string['oldping'] = 'Deskonektatzeko denbora-muga';
 $string['page-mod-chat-x'] = 'Txat moduluaren edozein orri';
 $string['pastchats'] = 'Izandako txat-saioak';
+$string['pastsessions'] = 'Iraganeko saioak';
 $string['pluginadministration'] = 'Txat-kudeaketa';
 $string['pluginname'] = 'Txat-gela';
 $string['privacy:metadata:chat_messages_current'] = 'Oraingo txat-saioa. Datu hauek behin behinekoak dira eta ezabatuak izaten dira txat-saioa ezabatzen denean.';
@@ -175,4 +179,4 @@ $string['usingchat_help'] = 'Txatean ondorengo baliabideak erabil ditzakegu modu
 * Emozioak - Lerro bat "/me" edo ":" -rekin has dezakezu emozio bat erakusteko. Adibidez, Ana baduzu izena eta ": irribartsu dago"  idazten baduzu, denek ikusiko dute "Ana irribartsu dago"
 * Beeps-ak - Beste pertsona bati txistua bidali ahal diozu izenaren ondoko "beep" estekan klik eginda. Txateko beste pertsona bati abisua emateko erabil dezakegu eta gu han gaudela ohartarazteko. Txat-saioko partaide guztiei ere egin ahal diezu beep-a "beep all" idatzita.
 * HTML - Zure testuan HTML lengoaia erabil dezakezu irudiak txertatzeko, soinuak eragiteko edo testuari formatua emateko, beste aukeren artean.';
-$string['viewreport'] = 'Ikusi izan diren txat-saioak';
+$string['viewreport'] = 'Iraganeko txat-saioak';

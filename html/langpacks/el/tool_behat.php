@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'el', version '3.11'.
+ * Strings for component 'tool_behat', language 'el', version '4.1'.
  *
  * @package     tool_behat
  * @category    string
@@ -27,14 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'Αυτό το διαχειριστικό εργαλείο βοηθά τους διαχειριστές και τους δημιουργούς δοκιμών να δημιουργήσουν αρχεία .feature που περιγράφουν τις λειτουργίες του Moodle να τις εκτελούν αυτόματα. Λίστα με τους διαθέσιμους ορισμούς βημάτων που χρησιμοποιούνται στα αρχεία .feature παρατίθεται παρακάτω.';
 $string['allavailablesteps'] = 'Όλοι οι διαθέσιμοι ορισμοί βημάτων';
-$string['errorapproot'] = 'Το $CFG->behat_ionic_dirroot δεν δείχνει σε μια έγκυρη εγκατάσταση ανάπτυξης της εφαρμογής Moodle για κινητά.';
 $string['errorbehatcommand'] = 'Σφάλμα κατά την εκτέλεση της εντολής behat από τη γραμμή εντολών. Δοκιμάστε να εκτελέσετε «{$a} --help» χειροκίνητα από τη γραμμή εντολών για να μάθετε περισσότερα σχετικά με το πρόβλημα.';
 $string['errorcomposer'] = 'Δεν υπάρχουν εγκατεστημένες εξαρτήσεις συνθέτη.';
 $string['errordataroot'] = '$CFG->behat_dataroot δεν ορίστηκε ή έχει άκυρη τιμή.';
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix και $CFG->behat_wwwroot πρέπει να οριστούν στο config.php.';
 $string['erroruniqueconfig'] = 'Οι τιμές $CFG->behat_dataroot, $CFG->behat_prefix και $CFG->behat_wwwroot πρέπει να είναι διαφορετικές από τις τιμές $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot και $CFG->phpunit_prefix.';
 $string['fieldvalueargument'] = 'Παράμετροι τιμής πεδίου';
-$string['fieldvalueargument_help'] = 'Αυτό το όρισμα πρέπει να συμπληρωθεί με μια τιμή πεδίου. Υπάρχουν πολλοί τύποι πεδίων, που συμπεριλαμβάνουν απλούς όπως πλαίσια ελέγχου, επιλογές ή περιοχές κειμένου και πολύπλοκους, όπως επιλογείς ημερομηνίας. Μπορείτε να δείτε την τεκμηρίωση ανάπτυξης λογισμικού για τις <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Δοκιμές αποδοχής</a> για λεπτομέρειες σχετικά με τις αναμενόμενες τιμές πεδίου.';
+$string['fieldvalueargument_help'] = 'Αυτό το όρισμα πρέπει να συμπληρωθεί με μια τιμή πεδίου. Υπάρχουν πολλοί τύποι πεδίων, που συμπεριλαμβάνουν απλούς όπως πλαίσια επιλογής, επιλογές ή περιοχές κειμένου και πολύπλοκους, όπως επιλογείς ημερομηνίας. Μπορείτε να δείτε την τεκμηρίωση ανάπτυξης λογισμικού για τις <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Δοκιμές αποδοχής</a> για λεπτομέρειες σχετικά με τις αναμενόμενες τιμές πεδίου.';
 $string['giveninfo'] = 'Δεδομένο. Διεργασίες για τη ρύθμιση του περιβάλλοντος';
 $string['infoheading'] = 'Πληροφορίες';
 $string['installinfo'] = 'Διαβάστε {$a} για πληροφορίες εγκατάστασης και εκτέλεσης δοκιμών';

@@ -25,7 +25,7 @@ Feature: The description and picture of a group can be viewed by students and te
     And I set the following fields to these values:
       | Group mode | Visible groups |
     And I press "Save and display"
-    And I navigate to "Users > Groups" in current page administration
+    And I am on the "Course 1" "groups" page
     And I press "Create group"
     And I set the following fields to these values:
       | Group name | Group A |
@@ -73,7 +73,7 @@ Feature: The description and picture of a group can be viewed by students and te
     And I set the following fields to these values:
       | Group mode | Separate groups |
     And I press "Save and display"
-    And I navigate to "Users > Groups" in current page administration
+    And I am on the "Course 1" "groups" page
     And I press "Create group"
     And I set the following fields to these values:
       | Group name | Group A |

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_hotpot', language 'fr', version '3.11'.
+ * Strings for component 'qformat_hotpot', language 'fr', version '4.1'.
  *
  * @package     qformat_hotpot
  * @category    string
@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['hotpot'] = 'Format XML Hot Potatoes';
+$string['hotpot_link'] = 'qformat/hotpot';
 $string['pluginname'] = 'Format XML Hot Potatoes';
+$string['pluginname_link'] = 'qformat/hotpot';

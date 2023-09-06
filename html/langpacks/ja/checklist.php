@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checklist', language 'ja', version '3.11'.
+ * Strings for component 'checklist', language 'ja', version '4.1'.
  *
  * @package     checklist
  * @category    string
@@ -114,6 +114,7 @@ $string['lockteachermarks_help'] = 'この設定を有効にした場合、教�
 $string['lockteachermarkswarning'] = '注意: これらのマークを保存した場合、あなたは「Yes」マークに変更することはできません。';
 $string['modulename'] = 'チェックリスト';
 $string['modulename_help'] = 'チェックリストモジュールにおいて、教師は学生が取り組むためのチェックリスト/ToDoリスト/タスクリストを作成することができます。';
+$string['modulename_link'] = 'mod/checklist/view';
 $string['modulenameplural'] = 'チェックリスト';
 $string['moveitemdown'] = 'アイテムを下に移動する';
 $string['moveitemup'] = 'アイテムを上に移動する';

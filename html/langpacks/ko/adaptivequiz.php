@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'adaptivequiz', language 'ko', version '3.11'.
+ * Strings for component 'adaptivequiz', language 'ko', version '4.1'.
  *
  * @package     adaptivequiz
  * @category    string
@@ -43,9 +43,7 @@ $string['browsersecurity'] = '브라우저 보안';
 $string['closeattempt'] = '도전 종료';
 $string['deleteattemp'] = '도전 삭제';
 $string['downloadcsv'] = 'CSV 다운로드';
-$string['errorclosingattempt'] = '도전 이력을 찾을 수 없습니다.';
 $string['errorclosingattempt_alreadycomplete'] = '이 도전은 이미 완료되어 수동으로 종료할 수 없습니다.';
-$string['errordeletingattempt'] = '도전 이력을 찾을 수 없습니다.';
 $string['formminquestgreaterthan'] = '최소 질문 수는 최대 질문 수보다 적어야 합니다.';
 $string['formquestionpool'] = '적어도 하나의 질문 범주를 선택하세요';
 $string['formstderror'] = '0과 같거나 높으면서 50 이하인 퍼센트를 입력해야 합니다';
@@ -62,7 +60,6 @@ $string['minimumquestions_help'] = '반드시 도전해야 하는 최대 질문 
 $string['modulenameplural'] = '적응 퀴즈';
 $string['na'] = '해당 없음';
 $string['name'] = '이름';
-$string['noattemptrecords'] = '이 학생의 도전 기록이 없습니다';
 $string['noattemptsallowed'] = '이 활동에서 더 이상 도전할 수 없습니다';
 $string['nopermission'] = '당신은 이 리소스를 볼 수 있는 권한이 없습니다';
 $string['notinprogress'] = '이 도전은 진행 중이 아닙니다';
@@ -82,6 +79,5 @@ $string['score'] = '점수';
 $string['startattemptbtn'] = '도전 시작';
 $string['stopingconditionshdr'] = '조건 중지';
 $string['submitanswer'] = '답변 제출';
-$string['unknownuser'] = '알 수 없는 사용자';
 $string['user'] = '사용자';
 $string['value'] = '값';

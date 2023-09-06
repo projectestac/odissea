@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'zh_cn', version '3.11'.
+ * Strings for component 'qtype_gapselect', language 'zh_cn', version '4.1'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -41,6 +41,7 @@ $string['group'] = '组';
 $string['pleaseputananswerineachbox'] = '请在每个盒子里放一个答案。';
 $string['pluginname'] = '选词填空题';
 $string['pluginname_help'] = '选词填空题要求做题者从下拉菜单中选择正确的答案。[[1]], [[2]], [[3]], ... 作为题干占位符，正确答案被分别指定为选项1, 2, 3, ... 另外的可选答案可以添加以增加题目的难度。可选答案可以分组，以限制每个下拉菜单中可见的可选答案。';
+$string['pluginname_link'] = 'question/type/gapselect';
 $string['pluginnameadding'] = '添加一道选词填空题';
 $string['pluginnameediting'] = '编辑一道选词填空题';
 $string['pluginnamesummary'] = '在下拉菜单中选择合适的词语填空。';
@@ -48,6 +49,8 @@ $string['privacy:metadata'] = '选词填空题类型插件允许问题作者将�
 $string['privacy:preference:defaultmark'] = '为给定问题设置的默认分数。';
 $string['privacy:preference:penalty'] = '当使用“多次尝试交互”或“自适应模式”行为运行问题时，每次错误尝试的罚分。';
 $string['privacy:preference:shuffleanswers'] = '答案是否应该被自动重新排序。';
+$string['regradeissuenumchoiceschanged'] = '组 {$a} 中的选项数量发生了变化。';
+$string['regradeissuenumgroupsschanged'] = '选项的组的数量发生了变化。';
 $string['shuffle'] = '随机排序';
 $string['tagsnotallowed'] = '不允许使用“{$a->tag}”。（只有{$a->allowed}被允许。）';
 $string['tagsnotallowedatall'] = '不允许使用“{$a->tag}”。（此处不允许使用HTML。）';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_equella', language 'ar', version '3.11'.
+ * Strings for component 'repository_equella', language 'ar', version '4.1'.
  *
  * @package     repository_equella
  * @category    string
@@ -40,7 +40,7 @@ $string['restrictionitemsonly'] = 'ملخص العنصر فقط';
 $string['restrictionnone'] = 'بلا قيد';
 $string['search'] = 'بحث EQUELLA';
 $string['selectrestriction'] = 'تقييد الاختيار';
-$string['selectrestriction.desc'] = 'حدد ما إذا كان ينبغي على محرر النصوص في المقرر الدراسي أن يكون قادراً على اختيار ملخص الفقرة فقط، موارد المرفقات، أو كليهما';
+$string['selectrestriction.desc'] = 'حدد ما إذا كان ينبغي على محرر النصوص في المساق أن يكون قادراً على اختيار ملخص الفقرة فقط، موارد المرفقات، أو كليهما';
 $string['sharedid'] = 'مُعرَّف السر الذي تتم مشاركته';
 $string['sharedidtitle'] = 'مُعرَّف السر الذي تتم مشاركته';
 $string['sharedsecrets'] = 'السر الذي تمت مشاركته';

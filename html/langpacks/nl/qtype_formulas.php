@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_formulas', language 'nl', version '3.11'.
+ * Strings for component 'qtype_formulas', language 'nl', version '4.1'.
  *
  * @package     qtype_formulas
  * @category    string
@@ -54,6 +54,7 @@ Getal, numeriek en numerieke formule-antwoorden vereisen een getal of een lijst 
 Algebraïsche formule vereist een string of een lijst strings als antwoord.
 
 Verschillende antwoordtypes zullen beperkingen opleggen wanneer antwoorden gegeven worden, zodat leerlingen weten hoe ze ingegeven moeten worden. De opmaakcontrole in de code van de vraag zal hen ook vertellen wanneer ze iets fout typen. Lees de documentatie voor meer details.';
+$string['answertype_link'] = 'https://moodleformulas.org/';
 $string['answerunitmulti'] = 'Eenheid voor deel {$a->part}';
 $string['answerunitsingle'] = 'Eenheid';
 $string['checkvarshdr'] = 'Controleer variablen';
@@ -68,6 +69,7 @@ $string['correctness_help'] = '**Vereist**.
 Je kunt ofwel een relatieve fout of een absolute fout met foutenmarge kiezen. Relatieve fout kan niet gebruikt worden voor het algebraïsche antwoordtype.
 
 Lees de documentatie voor de juiste definitie van relatieve- en absolute fout wanneer er meer dan één antwoordveld is.';
+$string['correctness_link'] = 'https://moodleformulas.org/';
 $string['correctnessexpert'] = 'Expert';
 $string['correctnesssimple'] = 'Eenvoudig';
 $string['defaultanswermark'] = 'Standaard deelcijfer';
@@ -156,6 +158,7 @@ Ga voor eventuele vragen naar <a href="https://moodleformulas.org/">moodleformul
 Ga voor opties in het onderstaand bewerkingsformulier naar <a href="https://moodleformulas.org/">moodleformulas.org</a>
 
 Ga voor de volledige documentatie naar <a href="https://moodleformulas.org/">moodleformulas.org</a>';
+$string['pluginname_link'] = 'question/type/formulas';
 $string['pluginnameadding'] = 'Formule-vragen toevoegen';
 $string['pluginnameediting'] = 'Een formule-vraag bewerken';
 $string['pluginnamesummary'] = 'Vraagtype met willekeurige waarden en meerdere antwoorden.
@@ -206,16 +209,19 @@ $string['vars1'] = 'Locale variabelen';
 $string['vars1_help'] = 'Je kunt hier variabelen definiëren zoals globale variabelen gedefinieerd worden op niveau van de vraag. Variabelen die je hier definieert kunnen in het antwoord van de deelvraag of de feedback gebruikt worden en het bereik van hun zichtbaarheid is beperkt tot de deelvraag.';
 $string['vars2'] = 'Beoordelingsvariabelen';
 $string['vars2_help'] = 'Alle lokale variabelen en de antwoorden van de leerlingen kunnen hier gebruikt worden. Lees de documentatie voor geavanceerd gebruik.';
+$string['vars2_link'] = 'https://moodleformulas.org/';
 $string['varsdata'] = 'Geïnstantieerde dataset';
 $string['varsglobal'] = 'Globale variabelen';
 $string['varsglobal_help'] = 'Hier kunnen formules opgegeven worden om de geïnstantieerde willekeurige variabelen te manipuleren (alle willekeurige variabelen zijn hier beschikbaar). De volledige lijst met mathematische functies en operators staat in de documentatie.
 
 <pre class="prettyprint">a = 1.11111;<br>b = exp(3);<br>c = A + a + b;<br>d = sin(1.5*pi()) + c;<br>e = round(a, 0);<br>f = [0,1,2,3][A];<br>g = ["zero","one","two","three"][A];<br>distance = sqrt(a*a + b*b);</pre>';
+$string['varsglobal_link'] = 'https://moodleformulas.org/';
 $string['varsrandom'] = 'Willekeurige variabelen';
 $string['varsrandom_help'] = 'Voor deze variabelen worden nieuwe willekeurige waarden berekend bij het begin van elke poging. Dit kan bereikt worden door een set elementen te definiëren waaruit gekozen kan worden:
 
 <pre class="prettyprint">A = {1,2,3};<br>C = {[1,-1], [2,-2], [3,-3]};<br>E = {10:100:10, 100, 1000};</pre>
 
 De elementen kunnen getallen, strings of lijsten daarvan zijn. Aan het begin van een nieuwe poging wordt er één element uit de set gehaald en toegewezen aan de variabele aan de linkerkant. Voor getallen kun je ook de notatie voor het bereik gebruiken, zoals 10:100:10 (Zie voorbeeld E hierboven).';
+$string['varsrandom_link'] = 'https://moodleformulas.org/';
 $string['varsstatistics'] = 'Statistieken';
 $string['yougotnright'] = 'Je hebt {$a->num} delen van deze vraag juist beantwoord';

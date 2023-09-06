@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'el', version '3.11'.
+ * Strings for component 'qtype_truefalse', language 'el', version '4.1'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -34,10 +34,12 @@ $string['feedbacktrue'] = 'Ανατροφοδότηση για την απόκρ
 $string['pleaseselectananswer'] = 'Παρακαλούμε επιλέξτε μία απάντηση.';
 $string['pluginname'] = 'Σωστό/Λάθος';
 $string['pluginname_help'] = 'Σε απάντηση σε μια ερώτηση (που μπορεί να περιλαμβάνει μια εικόνα) ο αποκρινόμενος επιλέγει ανάμεσα σε σωστό ή λάθος.';
-$string['pluginname_link'] = 'ερώτηση/τύπος/σωστόλάθος';
+$string['pluginname_link'] = '';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης τύπου Σωστό/Λάθος';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης τύπου Σωστό/Λάθος';
 $string['pluginnamesummary'] = 'Μια απλή μορφή ερώτησης πολλαπλής επιλογής με τις δύο μόνο επιλογές «Σωστό» και «Λάθος».';
 $string['privacy:metadata'] = 'Το πρόσθετο τύπου ερώτησης Σωστό/Λάθος δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:preference:showstandardinstruction'] = 'Εάν θα εμφανίζονται τυπικές οδηγίες.';
 $string['selectone'] = 'Επιλέξτε ένα:';
+$string['showstandardinstruction'] = 'Εμφάνιση τυπικών οδηγιών';
 $string['true'] = 'Σωστό';

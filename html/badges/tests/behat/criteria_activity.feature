@@ -1,4 +1,4 @@
-@mod @mod_quiz @core @core_badges @_file_upload @javascript
+@mod @mod_quiz @core @core_badges @javascript
 Feature: Award badges based on activity completion
   In order to ensure a student has learned the material before being marked complete
   As a teacher
@@ -27,8 +27,8 @@ Feature: Award badges based on activity completion
       | questioncategory | qtype     | name           | questiontext              |
       | Test questions   | truefalse | First question | Answer the first question |
     And the following "activities" exist:
-      | activity   | name           | course | idnumber | attempts | gradepass | completion | completionattemptsexhausted | completionpass | completionusegrade |
-      | quiz       | Test quiz name | C1     | quiz1    | 2        | 5.00      | 2          | 1                           | 1              | 1                  |
+      | activity   | name           | course | idnumber | attempts | gradepass | completion | completionattemptsexhausted | completionpassgrade | completionusegrade |
+      | quiz       | Test quiz name | C1     | quiz1    | 2        | 5.00      | 2          | 1                           | 1                   | 1                  |
     And quiz "Test quiz name" contains the following questions:
       | question       | page |
       | First question | 1    |
@@ -38,21 +38,20 @@ Feature: Award badges based on activity completion
     And user "student2" has attempted "Test quiz name" with responses:
       | slot | response |
       |   1  | False    |
-    And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    And I navigate to "Badges > Add a new badge" in current page administration
-    And I follow "Add a new badge"
-    And I set the following fields to these values:
-      | Name | Course Badge |
-      | Description | Course badge description |
-    And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
-    And I press "Create badge"
+    And the following "core_badges > Badge" exists:
+      | name        | Course Badge                 |
+      | status      | 0                            |
+      | type        | 2                            |
+      | course      | C1                           |
+      | description | Course badge description     |
+      | image       | badges/tests/behat/badge.png |
 
   Scenario: Student earns a badge using activity completion, but does not get passing grade
     Given I am on the "Course 1" course page logged in as teacher1
-    And I navigate to "Badges > Manage badges" in current page administration
+    And I navigate to "Badges" in current page administration
+    And I press "Manage badges"
     And I follow "Course Badge"
-    And I follow "Criteria"
+    And I select "Criteria" from the "jump" singleselect
     And I set the field "type" to "Activity completion"
     And I set the field "Quiz - Test quiz name" to "1"
     And I press "Save"
@@ -61,14 +60,15 @@ Feature: Award badges based on activity completion
     And I should see "Recipients (0)"
     And I log out
     And I am on the "Course 1" course page logged in as student1
-    And the "Receive a grade" completion condition of "Test quiz name" is displayed as "failed"
+    And the "Receive a grade" completion condition of "Test quiz name" is displayed as "done"
+    And the "Receive a passing grade" completion condition of "Test quiz name" is displayed as "failed"
     And the "Receive a pass grade or complete all available attempts" completion condition of "Test quiz name" is displayed as "todo"
     When I am on the "Test quiz name" "quiz activity" page
     And I press "Re-attempt quiz"
     And I set the field "False" to "1"
     And I press "Finish attempt ..."
     And I press "Submit all and finish"
-    And I click on "Submit all and finish" "button" in the "Confirmation" "dialogue"
+    And I click on "Submit" "button" in the "Submit all your answers and finish?" "dialogue"
     And I log out
 
     And I am on the "Course 1" course page logged in as teacher1
@@ -78,9 +78,10 @@ Feature: Award badges based on activity completion
 
   Scenario Outline: Previously graded pass/fail students should earn a badge after enabling a badge
     Given I am on the "Course 1" course page logged in as teacher1
-    And I navigate to "Badges > Manage badges" in current page administration
+    And I navigate to "Badges" in current page administration
+    And I press "Manage badges"
     And I follow "Course Badge"
-    And I follow "Criteria"
+    And I select "Criteria" from the "jump" singleselect
     And I set the field "type" to "Activity completion"
     And I click on "Expand all" "link"
     And I set the field "Quiz - Test quiz name" to "1"
@@ -94,7 +95,7 @@ Feature: Award badges based on activity completion
     And I set the field "False" to "1"
     And I press "Finish attempt ..."
     And I press "Submit all and finish"
-    And I click on "Submit all and finish" "button" in the "Confirmation" "dialogue"
+    And I click on "Submit" "button" in the "Submit all your answers and finish?" "dialogue"
     And I log out
 
     # Pass grade with student1
@@ -104,7 +105,7 @@ Feature: Award badges based on activity completion
     And I set the field "False" to "0"
     And I press "Finish attempt ..."
     And I press "Submit all and finish"
-    And I click on "Submit all and finish" "button" in the "Confirmation" "dialogue"
+    And I click on "Submit" "button" in the "Submit all your answers and finish?" "dialogue"
     And I log out
 
     # Enable badge access once all students have completed an activity.

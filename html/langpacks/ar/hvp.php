@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'ar', version '3.11'.
+ * Strings for component 'hvp', language 'ar', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -76,12 +76,13 @@ $string['maxscore'] = 'الدرجة القصوى';
 $string['missingcontentfolder'] = 'المجلد الصحيح للمحتوى مفقود';
 $string['missingcontentuserdata'] = 'خطأ: تعذر العثور على بيانات مستخدم المحتوى';
 $string['modulename'] = 'محتوى تفاعلي';
+$string['modulename_link'] = 'https://h5p.org/moodle-more-help';
 $string['modulenameplural'] = 'محتوى تفاعلي';
 $string['nextpage'] = 'الصفحة التالية';
 $string['nocontent'] = 'تعذر العثور على ملف content.json أو تحليله';
 $string['nocontenttype'] = 'لم يتم تحديد نوع المحتوى.';
 $string['nocopyright'] = 'لا توجد معلومات الحقوق الفكرية لهذا المحتوى.';
-$string['noh5ps'] = 'لا يوجد هناك محتوى تفاعلي في هذا المقرر الدراسي.';
+$string['noh5ps'] = 'لا يوجد هناك محتوى تفاعلي في هذا المساق.';
 $string['nojson'] = 'ملف h5p.json الرئيسي غير صالح';
 $string['noparse'] = 'تعذر تحليل ملف h5p.json الرئيسي';
 $string['nopermissiontogettranslations'] = 'ليست لديك صلاحية استرجاع الترجمات';

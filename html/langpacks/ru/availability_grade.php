@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'ru', version '3.11'.
+ * Strings for component 'availability_grade', language 'ru', version '4.1'.
  *
  * @package     availability_grade
  * @category    string
@@ -39,9 +39,9 @@ $string['option_min'] = 'должна быть ≥';
 $string['pluginname'] = 'Ограничение по оценкам';
 $string['privacy:metadata'] = 'Плагин ограничения доступности «Ограничение по оценкам» не хранит никаких персональных данных.';
 $string['requires_any'] = 'Вы получили оценку за <strong>{$a}</strong>';
-$string['requires_max'] = 'Вы получили соответствующую оценку за <strong>{$a}</strong>';
-$string['requires_min'] = 'Вы получили необходимую оценку за <strong>{$a}</strong>';
+$string['requires_max'] = 'Вы получили меньше необходимой оценки <strong>{$a}</strong>';
+$string['requires_min'] = 'Вы получили больше необходимой оценки <strong>{$a}</strong>';
 $string['requires_notany'] = 'Вы не получили оценку за <strong>{$a}</strong>';
 $string['requires_notgeneral'] = 'Вы не получили заданную оценку за <strong>{$a}</strong>';
-$string['requires_range'] = 'Вы получили заданную оценку за <strong>{$a}</strong>';
+$string['requires_range'] = 'Вы получили оценку в заданном диапазоне <strong>{$a}</strong>';
 $string['title'] = 'Оценка';

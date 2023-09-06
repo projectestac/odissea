@@ -253,6 +253,7 @@ class testing_generator_test extends \advanced_testcase {
             'completion' => COMPLETION_TRACKING_AUTOMATIC, // "Show activity as complete when conditions are met."
             'completionview' => 1, // "Student must view this activity to complete it"
             'completionusegrade' => 1, // "Student must receive a grade to complete this activity"
+            'completionpassgrade' => 1, // "Student must receive a passing grade to complete this activity"
         );
 
         // Module supports FEATURE_RATE:
@@ -322,6 +323,7 @@ class testing_generator_test extends \advanced_testcase {
         $cm3 = $modinfo->cms[$m3->cmid];
         $this->assertEquals($featurecompletionautomatic['completion'], $cm3->completion);
         $this->assertEquals($featurecompletionautomatic['completionview'], $cm3->completionview);
+        $this->assertEquals($featurecompletionautomatic['completionpassgrade'], $cm3->completionpassgrade);
         $this->assertEquals(0, $cm3->completiongradeitemnumber); // Zero instead of default null since 'completionusegrade' was set.
         $gradingitem = \grade_item::fetch(array('courseid'=>$course->id, 'itemtype'=>'mod', 'itemmodule' => 'assign', 'iteminstance' => $m3->id));
         $this->assertEquals(0, $gradingitem->grademin);

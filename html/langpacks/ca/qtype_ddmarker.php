@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ca', version '3.11'.
+ * Strings for component 'qtype_ddmarker', language 'ca', version '4.1'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -68,6 +68,7 @@ $string['noofdrags'] = 'Número';
 $string['pleasedragatleastonemarker'] = 'La vostra resposta és incompleta; heu de posar com a mínim un marcador a la imatge.';
 $string['pluginname'] = 'Arrossegar i deixar anar marcadors';
 $string['pluginname_help'] = 'Arrossegar i deixar anar marcadors demana que qui respon arrossegui etiquetes de text i les deixi anar dins de zones de col·locació definides sobre una imatge de fons.';
+$string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'arrossegar i deixar anar marcadors';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'arrossegar i deixar anar marcadors';
 $string['pluginnamesummary'] = 'Permet definir marcadors que s\'hauran d\'arrossegar i deixar anar sobre una imatge de fons.';

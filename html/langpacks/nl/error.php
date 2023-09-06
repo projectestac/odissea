@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'nl', version '3.11'.
+ * Strings for component 'error', language 'nl', version '4.1'.
  *
  * @package     error
  * @category    string
@@ -158,6 +158,7 @@ $string['cannotsetupcapformod'] = 'Kon de mogelijkheden (capabilities) niet inst
 $string['cannotsetupcapforplugin'] = 'Kon de mogelijkheden (capabilities) niet instellen voor {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Kan cursussen in categorie {$a} niet tonen/verbergen';
 $string['cannotsignup'] = 'Je kunt geen nieuw account maken want je bent al aangemeld als {$a}.';
+$string['cannotswitcheditmodeon'] = 'Kon bewerkmodus niet inschaklen';
 $string['cannotunassigncap'] = 'Kon ongebruikte mogelijkheid (capability) {$a->cap} niet wegnemen van rol {$a->role}';
 $string['cannotunassignrolefrom'] = 'Kon rol id {$a} niet wegnemen van deze gebruiker';
 $string['cannotunzipfile'] = 'Kon bestand niet unzippen';
@@ -336,6 +337,7 @@ $string['invalidcourseformat'] = 'Ongeldig cursusformaat';
 $string['invalidcourseid'] = 'Je probeert een ongeldig cursus ID te geven';
 $string['invalidcourselevel'] = 'Contextniveau niet juist';
 $string['invalidcoursemodule'] = 'Cursus module ID niet juist';
+$string['invalidcoursemoduleid'] = 'Ongeldige cursusmodule-ID: {$a}';
 $string['invalidcoursenameshort'] = 'Korte cursusnaam niet geldig';
 $string['invaliddata'] = 'Ingestuurde gegevens niet geldig.';
 $string['invaliddatarootpermissions'] = 'Ongeldige rechten gevonden tijdens het maken van een map. Schakel foutopsporing aan om meer details te krijgen.';
@@ -378,7 +380,7 @@ $string['invalidscaleid'] = 'Ongeldige schaal-ID';
 $string['invalidsection'] = 'Cursusmodulerecord bevat ongeldige sectie';
 $string['invalidsesskey'] = 'Je sessie is waarschijnlijk verlopen. Opnieuw inloggen aub.';
 $string['invalidshortname'] = 'Ongeldig korte cursusnaam';
-$string['invalidsourcefield'] = 'Het bronveld van het kladbestand is niet geldig';
+$string['invalidsourcefield'] = 'Het bronveld van het concept is niet geldig';
 $string['invalidstatedetected'] = 'Er ging wat fout: {$a}. Dit zou normaal niet mogen gebeuren';
 $string['invalidurl'] = 'Ongeldige url';
 $string['invaliduser'] = 'Ongeldige gebruiker';
@@ -410,6 +412,7 @@ $string['messagingdisable'] = 'Berichten zijn uitgeschakeld op deze site';
 $string['mimetexisnotexist'] = 'Je systeem is niet geconfigureerd om mimeTeX te gebruiken. Je moet de C bronbestanden verkrijgen van  <a href="https://www.forkosh.com/mimetex.zip"> https://www.forkosh.com/mimetex.zip</a>, ze compileren en het uitvoerbaar bestand in je moodle/filter/tex/ map zetten.';
 $string['mimetexnotexecutable'] = 'Aangepast mimetex bestand is niet uitvoerbaar!';
 $string['missing_moodle_backup_xml_file'] = 'Het XML-bestand {$a} ontbreekt in de back-up';
+$string['missingcategoryrole'] = 'Kan rol niet toewijzen aan gebruiker: ontbrekende rol voor categorie.';
 $string['missingfield'] = 'Veld "{$a}" ontbreekt';
 $string['missingkeyinsql'] = 'FOUT: ontbrekende param "{$a}" in query';
 $string['missingparam'] = 'Een vereiste parameter ({$a}) ontbreekt';
@@ -456,6 +459,7 @@ $string['nonmeaningfulcontent'] = 'Geen zinnige inhoud';
 $string['noparticipants'] = 'Geen gebruikers gevonden in deze cursus';
 $string['noparticipatorycms'] = 'Sorry, maar je hebt geen vereiste cursusmodules om over te rapporteren';
 $string['nopermissions'] = 'Sorry, maar je hebt nu niet het recht om dat te doen ({$a}).';
+$string['nopermissiontoaccesspage'] = 'Je hebt geen rechten om deze pagina te bekijken.';
 $string['nopermissiontocomment'] = 'Je kunt geen commentaren toevoegen in deze woordenlijst';
 $string['nopermissiontodelentry'] = 'Je kunt deze opmerking niet verwijderen!';
 $string['nopermissiontoeditcomment'] = 'Je kunt de commentaren van anderen niet bewerken!';
@@ -489,6 +493,8 @@ $string['oauth2upgradetokenerror'] = 'Kon OAuth 2 token niet upgraden. HTTP-stat
 $string['onlyadmins'] = 'Enkel beheerders mogen dit doen.';
 $string['onlyeditingteachers'] = 'Alleen leraren met het recht om te wijzigen kunnen dit doen';
 $string['onlyeditown'] = 'Je kunt enkel je eigen informatie bewerken';
+$string['opensslsealerror'] = 'OpenSSL kan gegevens niet verzegelen';
+$string['opensslsignerror'] = 'OpenSSL kan gegevens niet ondertekenen';
 $string['orderidnotfound'] = 'Order ID {$a} niet gevonden';
 $string['pagenotexist'] = '<p> Er is een ongebruikelijke fout opgetreden bij het bekijken van een pagina die niet bestaat: </p>{$a}';
 $string['pagenotexisttitle'] = '404 Fout: bestand niet gevonden';
@@ -500,7 +506,7 @@ $string['prefixcannotbeempty'] = '<p>Fout: databank tabel prefix kan niet leeg z
 <p>De site-beheerder moet dit probleem oplossen.</p>';
 $string['prefixtoolong'] = '<p>Fout: databank tabel prefix is te lang ({$a->dbfamily})</p>
 <p>De site-beheerder moet dit probleem oplossen. De maximale lengte voor de tabelprefix in {$a->dbfamily} is {$a->maxlength} tekens.</p>';
-$string['privatefilesupload'] = 'Rechtstreeks uploaden naar privé-bestanden van een gebruiker wordt niet meer ondersteund. Upload naar een ontwerp-zone en verplaats de bestanden dan met core_user::add_user_private_files';
+$string['privatefilesupload'] = 'Rechtstreeks uploaden naar privé-bestanden van een gebruiker wordt niet meer ondersteund. Upload naar een conceptzone en verplaats de bestanden dan met core_user::add_user_private_files';
 $string['processingstops'] = 'Verwerking stopt hier. De overgebleven records worden genegeerd';
 $string['protected_cc_not_supported'] = 'Protected cartridge niet ondersteund.';
 $string['querystringcannotbeempty'] = 'De query string kan niet leeg zijn.';
@@ -527,6 +533,9 @@ $string['sendmessage'] = 'Stuur bericht';
 $string['sendmessagesent'] = 'Bedankt voor je feedback over: <br>{$a}';
 $string['serverconnection'] = 'Fout bij het verbinden met de server';
 $string['servicedonotexist'] = 'De service bestaat niet';
+$string['sessioncannotobtainlock'] = '<p>Kon geen slot krijgen voor sessie id {$a->id} binnen {$a->acquiretimeout}.</p>
+<p>Waarschijnlijk heb je een andere pagina  ({$a->whohaslock}) nog open is in een ander browsertab of dat het slot niet vrijgegeven is door een fout.</p>
+<p>Je kunt wachten tot de time-out van het slot ({$a->lockexpire}) of je kan je je browsersessie herstarten. Als deze fout blijft aanhouden, waarschuw dan je serverbeheerder.</p>';
 $string['sessioncookiesdisable'] = 'Fout gebruik van require_key_login() - sessie cookies moet uitgeschakeld worden!';
 $string['sessiondiskfull'] = 'De sessiepartitie is vol. Het is nu niet mogelijk om aan te melden. Waarschuw de systeembeheerder.';
 $string['sessionerroruser'] = 'Je sessie bleef te lang zonder activiteit. Je moet opnieuw inloggen.';
@@ -566,6 +575,7 @@ $string['unknowcontext'] = 'Dit is een onbekende context ({$a}) in get_child_con
 $string['unknowformat'] = 'Format niet gekend ({$a})';
 $string['unknownbackupexporterror'] = 'Onbekende fout bij het voorbereiden van de informatie voor import';
 $string['unknownblockregion'] = 'De blokplaats \'{$a}\' wordt niet herkend op deze pagina';
+$string['unknowncategory'] = 'Onbekende categorie met categorie-ID-nummer "{$a}"';
 $string['unknowncontext'] = 'Dit is een onbekende context';
 $string['unknowncourse'] = 'Onbekende cursus "{$a}"';
 $string['unknowncourseidnumber'] = 'Onbekend cursusID "{$a}"';
@@ -597,6 +607,7 @@ $string['useradminodelete'] = 'Beheerderaccounts kunnen niet verwijderd worden.'
 $string['userautherror'] = 'Onbekende authenticatieplugin';
 $string['userauthunsupported'] = 'Authenticatieplugin niet ondersteund';
 $string['useremailduplicate'] = 'Duplicaat adres';
+$string['userisfilteredout'] = 'Deze gebruiker komt past niet in filters en tabelvoorkeuren!';
 $string['usermustbemnet'] = 'De gebruikers in de MNET-toeganscontrolelijst moeten externe MNET-gebruikers zijn';
 $string['usernamelowercase'] = 'De gebruikersnaam moet in kleine letters zijn';
 $string['usernotaddederror'] = 'Gebruiker niet toegevoegd - fout';

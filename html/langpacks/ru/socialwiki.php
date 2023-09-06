@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'socialwiki', language 'ru', version '3.11'.
+ * Strings for component 'socialwiki', language 'ru', version '4.1'.
  *
  * @package     socialwiki
  * @category    string
@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['format'] = 'Формат';
+$string['formatcreole_link'] = 'mod/socialwiki/creole';
+$string['formatnwiki_link'] = 'mod/socialwiki/nwiki';
+$string['modulename_link'] = 'mod/socialwiki/view';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'pt', version '3.11'.
+ * Strings for component 'availability_grade', language 'pt', version '4.1'.
  *
  * @package     availability_grade
  * @category    string
@@ -39,9 +39,9 @@ $string['option_min'] = 'tem de ser ≥';
 $string['pluginname'] = 'Condição de acesso com base em notas';
 $string['privacy:metadata'] = 'O módulo Condição de acesso com base em notas não armazena quaisquer dados pessoais.';
 $string['requires_any'] = 'Tem nota em <strong>{$a}</strong>';
-$string['requires_max'] = 'Tem uma nota suficiente em <strong>{$a}</strong>';
-$string['requires_min'] = 'Atingiu nota mínima em <strong>{$a}</strong>';
+$string['requires_max'] = 'Tem uma nota insuficiente em <strong>{$a}</strong>';
+$string['requires_min'] = 'Atingiu a nota mínima em <strong>{$a}</strong>';
 $string['requires_notany'] = 'Não tem nota em <strong>{$a}</strong>';
 $string['requires_notgeneral'] = 'Não obteve determinada nota em <strong>{$a}</strong>';
-$string['requires_range'] = 'Obteve determinada nota em <strong>{$a}</strong>';
+$string['requires_range'] = 'Obteve uma determinada nota em <strong>{$a}</strong>';
 $string['title'] = 'Nota';

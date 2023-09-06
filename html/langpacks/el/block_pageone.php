@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_pageone', language 'el', version '3.11'.
+ * Strings for component 'block_pageone', language 'el', version '4.1'.
  *
  * @package     block_pageone
  * @category    string
@@ -69,7 +69,7 @@ $string['error_code_507'] = 'Ανεπαρκείς πιστώσεις';
 $string['error_code_551'] = 'Αποτυχία ασφαλείας';
 $string['error_code_552'] = 'Ανενεργός εγγεγραμμένος';
 $string['error_code_553'] = 'Επιτεύχθηκε το μέγιστο όριο';
-$string['error_code_554'] = 'Παρακαλώ, επικοινωνήστε με τον πάροχο υπηρεσιών';
+$string['error_code_554'] = 'Παρακαλούμε, επικοινωνήστε με τον πάροχο υπηρεσιών';
 $string['error_code_555'] = 'Σφάλμα συστήματος';
 $string['error_code_556'] = 'Άγνωστο σφάλμα';
 $string['error_code_559'] = 'Ανεπαρκείς πόροι';

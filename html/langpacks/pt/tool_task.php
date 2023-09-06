@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'pt', version '3.11'.
+ * Strings for component 'tool_task', language 'pt', version '4.1'.
  *
  * @package     tool_task
  * @category    string
@@ -50,10 +50,11 @@ $string['disabled'] = 'Desativada';
 $string['disabled_help'] = 'As tarefas agendadas mas desativadas não são executadas a partir do cron, no entanto, estas podem continuar a ser executadas manualmente através da ferramenta CLI.';
 $string['edittaskschedule'] = 'Editar agendamento da tarefa: {$a}';
 $string['enablerunnow'] = 'Permitir \'Executar agora\' para tarefas agendadas';
-$string['enablerunnow_desc'] = 'Permite que os administradores executem imediatamente uma tarefa agendada, em vez de esperar que ela seja executada conforme o programado. Este recurso requer que o \'Caminho para o CLI do PHP\' (pathtophp) seja definido nos caminhos do sistema. A tarefa é executada no servidor web, por isso pode querer desativar este recurso para evitar potenciais problemas de desempenho.';
+$string['enablerunnow_desc'] = 'Permite que os administradores executem imediatamente uma tarefa agendada, em vez de esperar que ela seja executada conforme o programado. Este recurso requer que o \'Caminho para a CLI do PHP\' (pathtophp) seja definido nos caminhos do sistema. A tarefa é executada no servidor web, no entanto, pode querer desativar esta funcionalidade para evitar potenciais problemas de desempenho.';
 $string['faildelay'] = 'Execução adiada';
 $string['fromcomponent'] = 'Componente: {$a}';
 $string['hostname'] = 'Nome do servidor';
+$string['lastcronstart'] = 'A última execução do cron foi há {$a}.';
 $string['lastruntime'] = 'Última execução';
 $string['lastupdated'] = 'Última atualização: {$a}.';
 $string['nextruntime'] = 'Próxima execução';

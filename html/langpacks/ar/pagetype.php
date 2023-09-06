@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'ar', version '3.11'.
+ * Strings for component 'pagetype', language 'ar', version '4.1'.
  *
  * @package     pagetype
  * @category    string
@@ -30,15 +30,15 @@ $string['page-admin-x'] = 'أي صفحة إدارة للموقع';
 $string['page-course-index'] = 'صفحة معاينة التصنيف الأساسي';
 $string['page-course-index-category'] = 'صفحة معاينة التصنيف الحالي';
 $string['page-course-index-x'] = 'صفحة معاينة أي تصنيف';
-$string['page-course-report-x'] = 'أي تقرير للمقرر';
+$string['page-course-report-x'] = 'أي تقرير للمساق';
 $string['page-course-search'] = 'صفحة البحث في المقررات الدراسية';
-$string['page-course-view-x'] = 'أي صفحة رئيسية لمقرر من أي نوع';
-$string['page-course-x'] = 'أي صفحة مقرر دراسي';
+$string['page-course-view-x'] = 'أي صفحة رئيسية لمساق من أي نوع';
+$string['page-course-x'] = 'أي صفحة مساق';
 $string['page-mod-x'] = 'أي صفحة لوحدة النشاط';
 $string['page-mod-x-view'] = 'أي صفحة لوحدة النشاط الرئيسي';
-$string['page-my-index'] = 'صفحة لوحة التحكم';
+$string['page-my-index'] = 'صفحة دفة القيادة';
 $string['page-report-x'] = 'صفحة أي تقرير';
-$string['page-site-index'] = 'صفحة الواجهة فقط';
+$string['page-site-index'] = 'واجهة الموقع فقط';
 $string['page-site-x'] = 'أي صفحة من المستوى الرئيسي';
 $string['page-user-profile'] = 'صفحات ملف المستخدم الشخصي فقط';
 $string['page-user-view'] = 'فقط صفحات حسابات المستخدمين';

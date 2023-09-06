@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_unorderedlist', language 'ru', version '3.11'.
+ * Strings for component 'atto_unorderedlist', language 'ru', version '4.1'.
  *
  * @package     atto_unorderedlist
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Ненумерованный список';
+$string['pluginname'] = 'Маркированный список';
 $string['privacy:metadata'] = 'Плагин atto_unorderedlist не хранит никаких персональных данных.';

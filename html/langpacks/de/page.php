@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'de', version '3.11'.
+ * Strings for component 'page', language 'de', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -36,10 +36,12 @@ $string['indicator:cognitivedepth'] = 'Textseite kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einer Textseite erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Textseite kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Textseitenaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Textseite sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einer Textseite erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Textseite sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Textseiten-Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = 'Migration einer alten Kursdatei';
 $string['legacyfilesactive'] = 'Aktiv';
 $string['legacyfilesdone'] = 'Beendet';
@@ -48,12 +50,12 @@ $string['modulename_help'] = 'Auf einer Textseite stellen Sie Inhalte für die T
 
 Die Textseite ist einfacher zu bearbeiten als eine hochgeladene Datei. Bei der Nutzung von mobilen Endgeräten kann der Inhalt besser dargestellt werden.
 
-Alternative: Umfangreiche Inhalte können mit dem Modul \'Buch\' auf mehreren Seiten verteilt und gegliedert werden.
+Alternative: Umfangreiche Inhalte können mit der Ressource \'Buch\' auf mehreren Seiten verteilt und gegliedert werden.
 
 Eine Textseite kann verwendet werden
-
-* Zur Anzeige der Teilnahmebedingungen eines Kurses oder einer Zusammenfassung des Lehrplans
-* Um mehrere Videos oder Audiodateien zusammen mit einem erläuternden Text einzubetten';
+* zur Anzeige der Teilnahmebedingungen eines Kurses oder einer Zusammenfassung des Lehrplans
+* um mehrere Videos oder Audiodateien zusammen mit einem erläuternden Text einzubetten';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Textseiten';
 $string['optionsheader'] = 'Optionen';
 $string['page-mod-page-x'] = 'Jede Textseite';

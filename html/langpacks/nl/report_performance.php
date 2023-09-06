@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'nl', version '3.11'.
+ * Strings for component 'report_performance', language 'nl', version '4.1'.
  *
  * @package     report_performance
  * @category    string
@@ -32,6 +32,9 @@ $string['check_backup_details'] = 'Het inschakelen van automatische backups zal 
 $string['check_cachejs_comment_disable'] = 'Indien ingeschakeld wordt de performantie van het laden van de pagina verbeterd.';
 $string['check_cachejs_comment_enable'] = 'Indien uigeschakeld zou de pagina traag kunnen laden.';
 $string['check_cachejs_details'] = 'Javascript caching en compressie verbeteren de performantie voor het laden van een pagina. Aangeraden wordt om dit in te schakelen op productieservers.';
+$string['check_dbschema_errors'] = 'Database schema is niet in lijn.';
+$string['check_dbschema_name'] = 'Database schema controle';
+$string['check_dbschema_ok'] = 'Database schema is juist.';
 $string['check_debugmsg_comment_developer'] = 'De performantie kan lichtjes beter zijn indien anders ingesteld dan DEVELOPER';
 $string['check_debugmsg_comment_nodeveloper'] = 'De performantie kan lichtjes achteruit gaan indien ingesteld op DEVELOPER';
 $string['check_debugmsg_details'] = 'Er is zelden nood aan het DEVELOPER-niveau, tenzij dit gevraagd wordt door een ontwikkelaar. <p>Als je de foutmelding gevonden hebt en ergens gekopieerd en geplakt, dan kun je best je debug-niveau terug op NONE zetten. Debug-berichten kunnen hackers informatie geven over de installatie van je site en kan performantie beïnvloeden.</p>';

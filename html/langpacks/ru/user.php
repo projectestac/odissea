@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ru', version '3.11'.
+ * Strings for component 'user', language 'ru', version '4.1'.
  *
  * @package     user
  * @category    string
@@ -133,6 +133,7 @@ $string['privacy:metadata:token'] = 'секрет задан и отправле
 $string['privacy:metadata:trackforums'] = 'Настройка для форумов и их отслеживания.';
 $string['privacy:metadata:trustbitmask'] = 'Битовая маска доверия';
 $string['privacy:metadata:url'] = 'URL, связанный с этим пользователем.';
+$string['privacy:metadata:user_preference:core_user_welcome'] = 'Отметка времени, когда приветственное сообщение было впервые показано пользователю.';
 $string['privacy:metadata:user_preferences'] = 'Настройки, связанные с данным пользователем';
 $string['privacy:metadata:user_preferences:name'] = 'Название настройки';
 $string['privacy:metadata:user_preferences:userid'] = 'ID пользователя';
@@ -149,6 +150,11 @@ $string['privacy:privatefilespath'] = 'Личные файлы';
 $string['privacy:profileimagespath'] = 'Изображения профиля';
 $string['privacy:sessionpath'] = 'Данные сессии';
 $string['selectfiltertype'] = 'Выбрать';
-$string['target:upcomingactivitiesdue'] = 'Предстоящая деятельность';
-$string['target:upcomingactivitiesdue_help'] = 'Эта цель создаёт напоминания о предстоящей деятельности.';
-$string['target:upcomingactivitiesdueinfo'] = 'Здесь перечислена вся предстоящая деятельность согласно прогнозу. Эти студенты получили эти прогнозы напрямую.';
+$string['supportmessagealternative'] = 'Вместо этого вы можете отправить электронное письмо {$a}.';
+$string['supportmessagenotsent'] = 'К сожалению, ваше сообщение не может быть отправлено.';
+$string['supportmessagesent'] = 'Ваше сообщение отправлено.';
+$string['supportmessagesentforloggedoutuser'] = 'Будьте осторожны с этим сообщением. Отправитель не вошел в систему - его личность не подтверждена.';
+$string['target:upcomingactivitiesdue'] = 'Ближайшие учебные мероприятия';
+$string['target:upcomingactivitiesdue_help'] = 'Эта цель генерирует напоминания о предстоящих учебных мероприятиях.';
+$string['target:upcomingactivitiesdueinfo'] = 'Здесь перечислены все предстоящие действия, связанные с инсайтами. Эти студенты получили эти инсайты напрямую.';
+$string['userprofile'] = 'Профиль пользователя';

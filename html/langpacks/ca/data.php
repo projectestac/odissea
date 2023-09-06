@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ca', version '3.11'.
+ * Strings for component 'data', language 'ca', version '4.1'.
  *
  * @package     data
  * @category    string
@@ -26,8 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = 'Acció';
+$string['actionsmenu'] = 'Menú d\'accions';
 $string['add'] = 'Afegeix una entrada';
 $string['addcomment'] = 'Afegeix un comentari';
+$string['addedby'] = 'Afegit per';
 $string['addentries'] = 'Afegeix entrades';
 $string['addtemplate'] = 'Plantilla d\'introducció';
 $string['advancedsearch'] = 'Cerca avançada';
@@ -40,8 +42,8 @@ $string['areacontent'] = 'Camps';
 $string['ascending'] = 'Ascendent';
 $string['asearchtemplate'] = 'Plantilla de cerca avançada';
 $string['atmaxentry'] = 'Heu introduït el nombre màxim d\'entrades permès';
-$string['authorfirstname'] = 'Nom de l\'autor/autora';
-$string['authorlastname'] = 'Cognoms de l\'autor/autora';
+$string['authorfirstname'] = 'Nom';
+$string['authorlastname'] = 'Cognoms';
 $string['autogenallforms'] = 'Genera totes les plantilles per defecte';
 $string['autolinkurl'] = 'Enllaça l\'URL automàticament';
 $string['availablefromdate'] = 'Disponible des de';
@@ -82,6 +84,9 @@ $string['configenablerssfeeds'] = 'Aquest commutador habilita la possibilitat de
 $string['confirmdeletefield'] = 'Segur que voleu suprimir aquest camp?';
 $string['confirmdeleterecord'] = 'Segur que voleu suprimir aquesta entrada?';
 $string['confirmdeleterecords'] = 'Segur que voleu suprimir aquestes entrades?';
+$string['createactivity'] = 'Creeu els vostres propis camps per recopilar dades, o empreu una preconfiguració que ja inclogui camps.';
+$string['createfields'] = 'Creeu camps per recopilar diferents tipus de dades.';
+$string['createtemplates'] = 'Les plantilles defineixen la interfície de la vostra activitat. Un cop creats els camps, les plantilles es crearan de manera automàtica. Com a alternativa a això podeu emprar una preconfiguració, la qual inclou camps i plantilles.';
 $string['csstemplate'] = 'Plantilla CSS';
 $string['csvfailed'] = 'No es poden llegir les dades del fitxer CSV';
 $string['csvfile'] = 'Fitxer CSV:';
@@ -194,6 +199,7 @@ $string['fieldname'] = 'Nom del camp';
 $string['fieldnotmatched'] = 'Aquests camps del fitxer no es troben en aquesta base de dades: {$a}';
 $string['fieldoptions'] = 'Opcions (una per línia)';
 $string['fields'] = 'Camps';
+$string['fieldshelp'] = 'Creeu camps per recopilar diferents tipus de dades. Els camps defineixen l\'estructura de les entrades a la vostra base de dades.';
 $string['fieldupdated'] = 'S\'ha actualitzat el camp';
 $string['fieldwidth'] = 'Amplada';
 $string['fieldwidthlistview'] = 'Amplada en visualització de llistes';
@@ -205,7 +211,7 @@ $string['filtername'] = 'Enllaços automàtics a bases de dades';
 $string['footer'] = 'Peu de pàgina';
 $string['forcelinkname'] = 'Nom imposat a l\'enllaç';
 $string['foundnorecords'] = 'No s\'han trobat registres (<a href="{$a->reseturl}">Reinicialitza filtres</a>)';
-$string['foundrecords'] = 'S\'han trobat els registres:{$a->num}/{$a->max} (<a href="{$a->reseturl}">Reinicialitza filtres</a>)';
+$string['foundrecords'] = 'S\'han trobat {$a->num} de {$a->max} registres. <a href="{$a->reseturl}">Neteja-ho tot</a>';
 $string['fromfile'] = 'Importa d\'un fitxer zip';
 $string['fromfile_help'] = 'La importació des de la funció fitxer zip us permet navegar i carregar un zip predefinit de plantilles i camps';
 $string['generateerror'] = 'No s\'han generat tots els fitxers!';
@@ -217,12 +223,15 @@ $string['headerjstemplate'] = 'Defineix Javascript personalitzat per a les altre
 $string['headerlisttemplate'] = 'Defineix la interfície per a la navegació per múltiples entrades';
 $string['headerrsstemplate'] = 'Defineix l\'aparença de l\'entrades en els canals RSS';
 $string['headersingletemplate'] = 'Defineix la interfície de visualització d\'entrades individuals';
+$string['importapreset'] = 'Importa una preconfiguració';
 $string['importentries'] = 'Importa les entrades';
 $string['importsuccess'] = 'La predefinició s\'ha aplicat amb èxit';
 $string['includeapproval'] = 'Inclou l\'estat d\'aprovació';
 $string['includetime'] = 'Inclou el temps afegit/modificat';
 $string['includeuserdetails'] = 'Inclou els detalls de l\'usuari';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Base de Dades en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insufficiententries'] = 'fan falta més entrades per veure aquesta base de dades';
 $string['intro'] = 'Descripció';
 $string['invalidaccess'] = 'No heu accedit a aquesta pàgina correctament';
@@ -270,6 +279,7 @@ El professor pot permetre comentaris per a les entrades. Les entrades també pod
 Les activitats de base de dades tenen moltes aplicacions, com ara:
 * Una col·lecció col·laborativa d\'enllaços web, llibres, ressenyes de llibres, referències de revistes, etc.
 * Per visualitzar fotos, pòsters, llocs web o poemes creats pels estudiants i per a la revisió entre iguals';
+$string['modulename_link'] = 'mod/data/view';
 $string['modulenameplural'] = 'Bases de dades';
 $string['more'] = 'Més';
 $string['moreurl'] = 'Més (URL)';
@@ -278,7 +288,7 @@ $string['multientry'] = 'Entrada repetida';
 $string['multimenu'] = 'Menú (selecció múltiple)';
 $string['multipletags'] = 'S\'han trobat múltiples etiquetes. No s\'ha desat la plantilla.';
 $string['newentry'] = 'Nova entrada';
-$string['newfield'] = 'Crea un nou camp';
+$string['newfield'] = 'Crea un camp';
 $string['newfield_help'] = '<p align="center"><strong>Camps</strong></p>
 
 <p>En aquesta pantalla podeu crear els camps que formaran part de la vostra base de dades.</p>
@@ -288,12 +298,14 @@ $string['noaccess'] = 'No teniu accés a aquesta pàgina';
 $string['nodefinedfields'] = 'El nou predefinit no té camps';
 $string['nofieldcontent'] = 'No e stroba el contingut del camp';
 $string['nofieldindatabase'] = 'No s\'han definit camps en aquesta base de dades.';
+$string['nofields'] = 'Encara no hi ha cap camp';
 $string['nolisttemplate'] = 'Encara no s\'ha definit la plantilla de llista.';
 $string['nomatch'] = 'No s\'han trobat entrades que coincideixin';
 $string['nomaximum'] = 'No hi ha un valor màxim';
-$string['norecords'] = 'No hi ha entrades en la base de dades';
+$string['norecords'] = 'Encara no hi ha entrades';
 $string['nosingletemplate'] = 'Encara no s\'ha definit la plantilla única';
-$string['notapproved'] = 'L\'entrada encara no està aprovada.';
+$string['notapproved'] = 'Pendent d\'aprovació';
+$string['notemplates'] = 'Encara no hi ha cap plantilla';
 $string['notinjectivemap'] = 'No hi ha un mapa d\'injecció';
 $string['notopenyet'] = 'Aquesta activitat no estarà disponible fins al dia {$a}';
 $string['number'] = 'Nombre';
@@ -317,6 +329,7 @@ $string['pluginname'] = 'Base de dades';
 $string['portfolionotfile'] = 'Exporta a un portafolis abans que a un fitxer (només csv i leap2a)';
 $string['presetinfo'] = 'Desar la plantilla com a predefinida farà que es publiqui. Altres usuaris podran utilitzar-la en les seves bases de dades.';
 $string['presets'] = 'Predefinits';
+$string['presetshelp'] = 'Trieu una preconfiguració per emprar-la com a punt de partida.';
 $string['radiobutton'] = 'Botons d\'opció';
 $string['recordapproved'] = 'S\'ha aprovat l\'entrada';
 $string['recorddeleted'] = 'S\'ha suprimit l\'entrada';
@@ -361,6 +374,7 @@ $string['selectedrequired'] = 'Cal que estigui tot seleccionat';
 $string['showall'] = 'Mostra totes les entrades';
 $string['single'] = 'Visualitza una entrada';
 $string['singletemplate'] = 'Plantilla única';
+$string['startbuilding'] = 'Comenceu a construir la vostra activitat';
 $string['subplugintype_datafield'] = 'Tipus de camp de la base de dades';
 $string['subplugintype_datafield_plural'] = 'Els tipus de camp de la base de dades';
 $string['subplugintype_datapreset'] = 'Predefinit';
@@ -389,6 +403,7 @@ $string['uploadrecords_help'] = 'Es poden carregar les entrades mitjançant un f
 *El primer registre conté una llista dels noms de camp i defineix el format de la resta del fitxer
 
 El tancament és un caràcter que envolta cada camp en cada registre. Normalment es pot deixar desactivat.';
+$string['uploadrecords_link'] = 'mod/data/import';
 $string['url'] = 'URL';
 $string['usedate'] = 'Inclou en la cerca.';
 $string['usestandard'] = 'Utilitza un predefinit';

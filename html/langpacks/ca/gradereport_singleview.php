@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ca', version '3.11'.
+ * Strings for component 'gradereport_singleview', language 'ca', version '4.1'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -56,8 +56,6 @@ $string['pluginname'] = 'Informe de vista única';
 $string['save'] = 'Desa';
 $string['savegrades'] = 'S\'estan desant les qualificacions';
 $string['savegradessuccess'] = 'S\'han establert les qualificacions de {$a} elements';
-$string['selectgrade'] = 'Selecciona l\'element de qualificació...';
-$string['selectuser'] = 'Selecciona l\'usuari...';
 $string['singleview:view'] = 'Mostra l\'informe';
 $string['summarygrade'] = 'Una taula d\'usuaris, amb columnes per l\'interval, qualificació, retroacció i si una qualificació concreta està exclosa o rectificada.';
 $string['summaryuser'] = 'Una taula d\'elements de qualificació, amb columnes per la categoria de qualificació, interval, qualificació, retroacció i si una qualificació concreta està exclosa o rectificada.';

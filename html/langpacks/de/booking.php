@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'de', version '3.11'.
+ * Strings for component 'booking', language 'de', version '4.1'.
  *
  * @package     booking
  * @category    string
@@ -27,21 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activitycompletionsuccess'] = 'Alle ausgewählten Nutzer/innen wurden für den Aktivitätsabschluss markiert.';
 $string['addcategory'] = 'Kategorien bearbeiten';
-$string['addeditbooking'] = 'Buchung bearbeiten';
 $string['addmorebookings'] = 'Buchungen hinzufügen';
-$string['addnewbookingoption'] = 'Neue Buchung hinzufügen';
 $string['addnewcategory'] = 'Neue Kategorie hinzufügen';
 $string['addnewinstitution'] = 'Neue Institution hinzufügen';
 $string['addnewtagtemplate'] = 'Neue Schlagwort-Vorlage hinzufügen';
 $string['address'] = 'Adresse';
-$string['addteachers'] = 'Trainer/innen hinzufügen';
 $string['addtocalendar'] = 'Zum Kalender hinzufügen';
 $string['addtogroup'] = 'Nutzer/innen automatisch in Gruppe einschreiben';
 $string['addtogroup_help'] = 'Nutzer/innen automatisch in Gruppe eintragen. Die Gruppe wird nach folgendem Schema automatisch erstellt: "Aktivitätsname - Name der Buchungsoption"';
 $string['advancedoptions'] = 'Erweiterte Einstellungen';
 $string['agreetobookingpolicy'] = 'Ich habe folgende Buchungsbedingungen gelesen und erkläre mich damit einverstanden';
 $string['allbookingoptions'] = 'Nutzer/innen für alle Buchungsmöglichkeiten herunterladen';
-$string['allchangessave'] = 'Alle Änderungen wurden gespeichert.';
 $string['allmailssend'] = 'Alle Benachrichtigungen wurden erfolgreich versandt!';
 $string['allowdelete'] = 'Teilnehmer/innen dürfen Buchungen selbst stornieren';
 $string['allowupdate'] = 'Buchungen dürfen aktualisiert werden';
@@ -107,7 +103,6 @@ $string['booking:viewanyrating'] = 'Die Gesamtbewertung einer Person einsehen';
 $string['booking:viewrating'] = 'Die eigene Gesamtbewertung einsehen';
 $string['bookingattachment'] = 'Anhang';
 $string['bookingcategory'] = 'Kategorie';
-$string['bookingclose'] = 'bis';
 $string['bookingdeleted'] = 'Ihre Buchung wurde gelöscht';
 $string['bookingduration'] = 'Dauer';
 $string['bookingfull'] = 'Es gibt keine verfügbaren Orte';
@@ -144,29 +139,7 @@ $string['closed'] = 'Buchung geschlossen';
 $string['completed'] = 'Abgeschlossen';
 $string['conectedbooking'] = 'Vorgeschaltete Buchung';
 $string['conectedbooking_help'] = 'Buchung von der Teilnehmer/innen übernommen werden. Es kann bestimmt werden wie viele Teilnehmer/innen übernommen werden.';
-$string['confirmationmessage'] = 'Ihre Buchung wurde angenommen
-
-
-Status der Buchung: {$a->status}
-Name:   {$a->participant}
-Kurs:   {$a->title}
-Termin: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Link zur Übersicht über alle Buchungen: {$a->bookinglink}
-Link zum zugehörigen Kurs: {$a->courselink}';
 $string['confirmationmessagesettings'] = 'E-Mail-Einstellungen bestätigen';
-$string['confirmationmessagewaitinglist'] = 'Guten Tag {$a->participant}
-
-vielen Dank für die Buchung von {$a->title}.
-
-Buchungsstatus: {$a->status}
-Name: {$a->participant}
-Kurs:   {$a->title}
-Termin: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Link zur Übersicht über alle Buchungen: {$a->bookinglink}';
-$string['confirmationsubject'] = 'Buchungsbestätigung für {$a->title}';
-$string['confirmationsubjectbookingmanager'] = 'Neue Buchung für {$a->title} von {$a->participant}';
-$string['confirmationsubjectwaitinglist'] = 'Buchung auf Warteliste für {$a->title}';
-$string['confirmationsubjectwaitinglistmanager'] = 'Wartelistenbuchung für {$a->title} von {$a->participant}';
 $string['confirmbookingoffollowing'] = 'Bitte bestätigen Sie folgende Buchung';
 $string['confirmdeletebookingoption'] = 'Möchten Sie diese Buchungsmöglichkeit wirklich löschen?';
 $string['copyonlythisbookingurl'] = 'Link zur Buchung kopieren';
@@ -175,7 +148,6 @@ $string['copytoclipboard'] = 'In die Zwischenablage kopieren: Strg+C, Enter';
 $string['coursedate'] = 'Termin';
 $string['courseendtime'] = 'Ende';
 $string['coursestarttime'] = 'Beginn';
-$string['createdby'] = 'Dieses Buchungsmodul wurde von edulabs.org entwickelt';
 $string['csvfile'] = 'CSV-Datei';
 $string['csvfile_help'] = 'CSV-Datei darf nur eine Spalte mit der Bezeichnung Institution beinhalten.';
 $string['customfieldtype'] = 'Feldtyp';
@@ -191,16 +163,7 @@ $string['daystonotify_help'] = 'Funktioniert nur, wenn Anfangs- und Endzeit ange
 $string['defaultbookingoption'] = 'Standardeinstellungen für Buchungen';
 $string['defaultdateformat'] = 'j.n.Y H:i:s';
 $string['deletebooking'] = 'Wollen Sie wirklich folgende Buchung stornieren? <br /><br /> <b>{$a}</b>';
-$string['deletebookingoption'] = 'Diese Buchung löschen';
 $string['deletecategory'] = 'Löschen';
-$string['deletedbookingmessage'] = 'Folgende Buchung wurde storniert: {$a->title}
-
-Nutzer/in: {$a->participant}
-Titel: {$a->title}
-Termin: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Kurs: {$a->courselink}
-Link: {$a->bookinglink}';
-$string['deletedbookingsubject'] = 'Buchung {$a->title} wurde von {$a->participant} storniert';
 $string['deletedbookingusermessage'] = 'Guten Tag {$a->participant},
 
 die Buchung für {$a->title} wurde erfolgreich storniert';
@@ -262,8 +225,6 @@ Termin: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
 Link: {$a->bookinglink}
 Kurs: {$a->courselink}';
 $string['errorpagination'] = 'Bitte geben sie eine Zahl größer 0 ein';
-$string['eventbooking_cancelled'] = 'Buchung storniert';
-$string['eventbookingoption_booked'] = 'Buchung durchgeführt';
 $string['eventduration'] = 'Dauer';
 $string['eventpoints'] = 'Punkte';
 $string['eventreport_viewed'] = 'Übersicht über Buchungen für eine Buchungsmöglichkeit angesehen';
@@ -285,7 +246,6 @@ $string['gotop'] = 'Nach oben';
 $string['groupexists'] = 'Die Gruppe existiert bereits im Zielkurs. Bitte wählen Sie für die Buchungsmöglichkeit einen anderen Namen.';
 $string['groupname'] = 'Gruppenname';
 $string['hours'] = '{$a} Stunden';
-$string['howmanyusers'] = 'Wie viele Teilnehmer/innen können gebucht werden?';
 $string['importcsvbookingoption'] = 'Buchungsoptionen via CSV-Datei importieren';
 $string['importcsvtitle'] = 'CSV-Datei importieren';
 $string['importexcelbutton'] = 'Aktivitätsabschluss importieren';
@@ -337,7 +297,6 @@ $string['nosubscribers'] = 'Keine Trainer/innen zugewiesen!';
 $string['notbooked'] = 'Noch nicht gebucht';
 $string['notconectedbooking'] = 'Keine vorgeschaltete Buchung';
 $string['noteacherfound'] = 'Kein/e Trainer/in in Zeile {$a} gefunden.';
-$string['notificationsubject'] = 'Demnächst stattfindender Kurs';
 $string['notificationtext'] = 'Benachrichtungstext bei Aktivitätsabschluss';
 $string['notificationtext_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
 <ul>
@@ -364,11 +323,6 @@ $string['notificationtext_help'] = 'Lassen Sie dieses Feld leer, um den Standard
 <li>{qr_username} - QR Code des Usernamen einfügen</li>
 <li>{times} - Zeiten</li>
 </ul>';
-$string['notificationtextmessage'] = 'Kursbeginn:
-
-Kurs: {$a->title}
-Termin: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}';
-$string['notificationtextsubject'] = 'Information über den Beginn';
 $string['notifyemail'] = 'Benachrichtigung vor dem Beginn';
 $string['notifyemail_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext der Website zu verwenden. Folgende Platzhalter können im Text verwendet werden:
 <ul>
@@ -395,15 +349,6 @@ $string['notifyemail_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext 
 <li>{qr_username} - QR Code des Usernamen einfügen</li>
 <li>{times} - Zeiten</li>
 </ul>';
-$string['notifyemaildefaultmessage'] = 'Ihre Buchung wurde registriert
-
-
-Status der Buchung: {$a->status}
-Nutzer/in: {$a->participant}
-Titel: {$a->title}
-Termin: {$a->startdate} {$a->starttime} - {$a->enddate} {$a->endtime}
-Link: {$a->bookinglink}
-Kurs: {$a->courselink}';
 $string['notopenyet'] = 'Diese Aktivität ist vor {$a} nicht verfügbar';
 $string['nouserfound'] = 'Kein/e Nutzer/in gefunden:';
 $string['nousers'] = 'Keine Nutzer/innen!';
@@ -411,7 +356,6 @@ $string['numgenerator'] = 'Automatische Nummerierung aktivieren?';
 $string['numrec'] = 'Nummerierung';
 $string['onlythisbookingurl'] = 'Nur dieser Buchungslink';
 $string['onwaitinglist'] = 'Sie sind auf der Warteliste';
-$string['optiondates'] = 'Mehrer Termine';
 $string['optiondatestime'] = 'Zeiten';
 $string['optionid'] = 'ID der Veranstaltung';
 $string['optionmenu'] = 'Diese Veranstaltung';
@@ -422,12 +366,6 @@ $string['otherbookinglimit_help'] = 'Anzahl der Nutzer/innen, die diese Buchungs
 $string['otherbookingnumber'] = 'Anzahl an Nutzer/innen';
 $string['otherbookingoptions'] = 'Nutzer/innen dieser Buchungsmölgichkeit zulassen';
 $string['paginationnum'] = 'Anzahl der Einträge pro Seite';
-$string['pdfdate'] = 'Buchungstermine';
-$string['pdflocation'] = 'Orte';
-$string['pdfroom'] = 'Räume';
-$string['pdfsignature'] = 'Unterschriften';
-$string['pdfstudentname'] = 'Teilnehmer/in';
-$string['pdftodaydate'] = 'Datum:';
 $string['pluginadministration'] = 'Buchungs-Verwaltung';
 $string['pluginname'] = 'Buchung';
 $string['pollstrftimedate'] = '%Y-%m-%d';
@@ -541,7 +479,6 @@ Link zur Umfrage: {pollurl}';
 $string['pollurltextsubject'] = 'Bitte nehmen Sie an der Umfrage teil';
 $string['potentialsubscribers'] = 'Mögliche Nutzer/innen';
 $string['question'] = 'Fragen';
-$string['ratingsuccess'] = 'Die Beurtleilungen wurden erfolgreich aktualisiert';
 $string['removeafterminutes'] = 'Aktivitätsabschluss nach N Minuten löschen';
 $string['removeresponses'] = 'Alle Antworten löschen';
 $string['reset'] = 'Zurücksetzen';
@@ -559,8 +496,6 @@ $string['selectatleastoneuser'] = 'Bitte mindestens 1 Nutzer/in auswählen!';
 $string['selectcategory'] = 'Kategorie auswählen';
 $string['selectoptionid'] = 'Bitte eine Buchungsmöglichkeit auswählen!';
 $string['selectoptioninotherbooking'] = 'Auswahl';
-$string['sendconfirmmail'] = 'Bestätigungsmail versenden';
-$string['sendconfirmmailtobookingmanger'] = 'Eine Kopie des Bestätigungsmail an den Buchungsverwalter senden';
 $string['sendcustommessage'] = 'Nachricht selber schreiben und senden';
 $string['sendmailtobooker'] = 'Buchung für andere durchführen: E-Mail an den/die buchende Nutzer/in senden, anstatt an den/die Nutzer/in für den/die gebucht wurde.';
 $string['sendmailtobooker_help'] = 'Diese Option aktivieren, um Buchungsbestätigungsmails anstatt an die gebuchten Nutzer/innen zu senden an den/die Nutzer/in senden, die die Buchung durchgeführt hat. Dies betrifft nur Buchungen, die auf der Seite "Buchung für andere Nutzer/innen durchführen" getätigt wurden.';
@@ -612,13 +547,11 @@ $string['tagtemplates'] = 'Schlagwort Vorlagen';
 $string['tagtext'] = 'Schlagwort-Text';
 $string['taken'] = 'gebucht';
 $string['teachers'] = 'Trainer/innen';
-$string['timecloseoption'] = 'Buchungsmöglichkeit nur bis zu einem bestimmten Zeitpunkt ermöglichen';
 $string['timecreated'] = 'Erstellungsdatum';
 $string['timerestrict'] = 'Buchungsmöglichkeit auf diesen Zeitraum beschränken: Diese Option ist veraltet und sollte nicht mehr verwendet werden. Stattdessen verwenden Sie bitte die Optionen unter "Voraussetzungen", um die Buchungen für einen bestimmten Zeitraum zu beschränken.';
 $string['to'] = 'bis';
 $string['toomuchusersbooked'] = 'Maximale Anzahl an Benutzern, die Sie buchen können: {$a}';
 $string['topic'] = 'Thema';
-$string['unlimited'] = 'Unbegrenzt';
 $string['updatebooking'] = 'Diese Buchung bearbeiten';
 $string['usedinbooking'] = 'Das Löschen dieser Kategorie ist nicht möglich, da sie verwendet wird!';
 $string['userdownload'] = 'Nutzer/innenliste herunterladen';
@@ -649,13 +582,8 @@ $string['userleave_help'] = 'Lassen Sie dieses Feld leer, um den Standardtext de
 <li>{qr_username} - QR Code des Usernamen einfügen</li>
 <li>{times} - Zeiten</li>
 </ul>';
-$string['userleavebookedmessage'] = 'Hallo {$a->participant},
-
-Sie wurden erfolgreich von {$a->title} abgemeldet.';
-$string['userleavebookedsubject'] = 'Sie wurden erfolgreich abgemeldet von: {$a->title}';
 $string['usernameofbookingmanager'] = 'Name des Buchungsverwalters';
 $string['usernameofbookingmanager_help'] = 'Benutzername des/der Nutzer/in, der als Absender/in der Buchungsbestätigunsmitteilungen angeführt wird. Wenn die Option "Eine Kopie des Bestätigungsmail an Buchungsverwalter senden" aktiviert ist, wird die Kopie der Buchungsbestätigung an diese/n Nutzer/in gesendet.';
-$string['users'] = '<< Antworten bearbeiten';
 $string['usersonlist'] = 'Nutzerliste';
 $string['viewallresponses'] = '{$a} Antworten verwalten';
 $string['waitinglist'] = 'Warteliste';

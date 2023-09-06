@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_cmanager', language 'el', version '3.11'.
+ * Strings for component 'block_cmanager', language 'el', version '4.1'.
  *
  * @package     block_cmanager
  * @category    string
@@ -36,7 +36,7 @@ $string['SaveEMail'] = 'Προσθήκη διεύθυνσης ηλε.ταχυδ�
 $string['actions'] = 'Ενέργειες';
 $string['addviewcomments'] = 'Προσθήκη/Εμφάνιση σχολίων';
 $string['administratorConfig'] = 'Άλλες ρυθμίσεις';
-$string['alert'] = 'Συναγερμική ειδοποίηση';
+$string['alert'] = 'Επαγρύπνηση';
 $string['allarchivedrequests'] = 'Όλα τα αρχειοθετημένα αιτήματα';
 $string['allowSelfCategorization'] = 'Να επιτρέπεται στο χρήστη να επιλέξει κατηγορία';
 $string['approve'] = 'Έγκριση';
@@ -62,13 +62,13 @@ $string['clearsearch'] = 'Καθαρισμός αναζήτησης';
 $string['clickHereToReturn'] = 'Κλικ εδώ για να επιστρέψετε';
 $string['clickhere'] = 'Κάντε κλικ εδώ';
 $string['cmanager:addcomment'] = 'Προσθήκη σχολίου';
-$string['cmanager:addinstance'] = 'Προσθήκη στιγμιότυπου';
+$string['cmanager:addinstance'] = 'Προσθήκη στιγμιοτύπου';
 $string['cmanager:addrecord'] = 'Προσθήκη εγγραφής';
 $string['cmanager:approverecord'] = 'Έγκριση εγγραφής';
 $string['cmanager:deleterecord'] = 'Διαγραφή εγγραφής';
 $string['cmanager:denyrecord'] = 'Απόρριψη εγγραφής';
 $string['cmanager:editrecord'] = 'Επεξεργασία εγγραφής';
-$string['cmanager:myaddinstance'] = 'Προσθήκη στιγμιότυπου';
+$string['cmanager:myaddinstance'] = 'Προσθήκη στιγμιοτύπου';
 $string['cmanager:viewconfig'] = 'Εμφάνιση ρυθμίσεων';
 $string['cmanager:viewrecord'] = 'Εμφάνιση εγγραφής';
 $string['cmanagerActions'] = 'Ενέργειες';
@@ -82,7 +82,7 @@ $string['cmanagerHistoryTab'] = 'Ιστορικό αιτημάτων';
 $string['cmanagerRequestBtn'] = 'Αίτημα νέας διαμόρφωσης μαθήματος';
 $string['cmanagerStats'] = 'Στατιστικά CManager';
 $string['cmanagerWelcome'] = 'Καλώς ορίσατε στον Διαχειριστή αιτημάτων μαθήματος του Moodle. Πριν ζητήσετε νέο μάθημα, ελέγξτε τις τοπικές οδηγίες.';
-$string['cmanager_admin_enterstring'] = 'Παρακαλώ εισάγετε μια συμβολοσειρά αναζήτησης';
+$string['cmanager_admin_enterstring'] = 'Παρακαλούμε εισαγάγετε μια συμβολοσειρά αναζήτησης';
 $string['cmanagernonePending'] = 'Λυπούμαστε! Δεν εκκρεμεί τίποτα!';
 $string['comments'] = 'Σχόλια';
 $string['comments_Forward'] = 'Όλα τα σχόλια θα προωθηθούν αυτόματα και μέσω ηλε.ταχυδρομείου';

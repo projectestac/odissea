@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'nl', version '3.11'.
+ * Strings for component 'feedback', language 'nl', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -59,7 +59,7 @@ $string['completed_feedbacks'] = 'Ingevulde antwoorden';
 $string['completedon'] = 'Voltooid op {$a}';
 $string['completiondetail:submit'] = 'Feedback insturen';
 $string['completionsubmit'] = 'Bekijk als voltooid als de feedback verstuurd is';
-$string['configallowfullanonymous'] = 'Als deze optie op ja staat, dan kan de feedback op de startpagina ingevuld worden zonder aangemeld te zijn.';
+$string['configallowfullanonymous'] = 'Als deze optie op ja staat, dan kan de feedback op de site startpagina ingevuld worden zonder aangemeld te zijn.';
 $string['confirmdeleteentry'] = 'Ben je zeker dat je dit wil verwijderen?';
 $string['confirmdeleteitem'] = 'Ben je zeker dat je dit element wil verwijderen?';
 $string['confirmdeletetemplate'] = 'Ben je zeker dat je dit sjabloon wil verwijderen?';
@@ -104,7 +104,7 @@ $string['dropdownrated'] = 'Rolmenu (beoordeeld)';
 $string['edit_item'] = 'Bewerk vraag';
 $string['edit_items'] = 'Bewerk vragen...';
 $string['email_notification'] = 'Stuur e-mailnotificaties voor inzendingen';
-$string['email_notification_help'] = 'Indien ingeschakeld krijgen leraars een melding via wanneer er een formulier is ingestuurd.';
+$string['email_notification_help'] = 'Indien ingeschakeld krijgen leraren een melding wanneer er een formulier is ingestuurd.';
 $string['emailteachermail'] = '{$a->username} heeft het feedbackformulier \'{$a->feedback}\' ingevuld en opgestuurd.
 
 Je kunt het hier bekijken:
@@ -134,6 +134,7 @@ $string['feedback_is_not_open'] = 'De feedback is niet open';
 $string['feedbackclose'] = 'Antwoorden toestaan tot';
 $string['feedbackcompleted'] = '{$a->username} heeft {$a->feedbackname} voltooid';
 $string['feedbackopen'] = 'Antwoorden toestaan van';
+$string['feedbackupdated'] = 'Feedback bijgewerkt.';
 $string['file'] = 'Bestand';
 $string['filter_by_course'] = 'Filter op cursus';
 $string['handling_error'] = 'Er is een fout opgetreden bij de verwerking door de feedback';
@@ -147,10 +148,12 @@ $string['indicator:cognitivedepth'] = 'Feedbackformulier cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Feedbackformulier activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Feedback cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de Feedback-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Feedbackformulier sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Feedbackformulier activiteit.';
 $string['indicator:socialbreadthdef'] = 'Feedback sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de Feedback-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, Alleen deelnemer, Deelnemer met anderen)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Informatie';
 $string['infotype'] = 'Informatietype';
 $string['insufficient_responses'] = 'Onvoldoende antwoorden';
@@ -183,6 +186,7 @@ Feedback kan gebruikt worden
 * om deelnemer te laten intekenen voor cursusmodules, activiteiten enz.
 * voor gastonderzoek naar cursuskeuze, schoolbeleid enz.
 * voor anti-pest onderzoek waar leerlingen anoniem incidenten kunnen rapporteren.';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = 'Feedbackformulieren';
 $string['move_item'] = 'Verplaats deze vraag';
 $string['multichoice'] = 'Meerkeuze';
@@ -224,6 +228,7 @@ $string['pagebreak'] = 'Paginascheiding';
 $string['pluginadministration'] = 'Feedback beheer';
 $string['pluginname'] = 'Feedbackformulier';
 $string['position'] = 'Positie';
+$string['previewquestions'] = 'Vragen bekijken';
 $string['previous_page'] = 'Vorige pagina';
 $string['privacy:metadata:completed'] = 'Gegevens over de inzendingen voor de feedback';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Of de inzending anoniem gebruikt moet worden.';
@@ -291,3 +296,4 @@ $string['use_one_line_for_each_value'] = 'Gebruik één regel per antwoord!';
 $string['use_this_template'] = 'Gebruik dit sjabloon';
 $string['using_templates'] = 'Gebruik een sjabloon';
 $string['vertical'] = 'Verticaal';
+$string['whatfor'] = 'Wat wil je doen';

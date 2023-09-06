@@ -249,6 +249,15 @@ class MoodleQuickForm_editor extends HTML_QuickForm_element implements templatab
     }
 
     /**
+     * Returns editor text content
+     *
+     * @return string Text content
+     */
+    public function get_text(): string {
+        return $this->_values['text'];
+    }
+
+    /**
      * Returns editor format
      *
      * @return int.
@@ -444,6 +453,7 @@ class MoodleQuickForm_editor extends HTML_QuickForm_element implements templatab
         $context['id'] = $id;
         $context['value'] = $text;
         $context['format'] = $format;
+        $context['formatlabel'] = get_string('editorxformat', 'editor', $this->_label);
 
         if (!is_null($this->getAttribute('onblur')) && !is_null($this->getAttribute('onchange'))) {
             $context['changelistener'] = true;
@@ -491,13 +501,12 @@ class MoodleQuickForm_editor extends HTML_QuickForm_element implements templatab
     }
 
     /**
-     * What to display when element is frozen.
+     * Returns the formatted value. The return from parent class is not acceptable.
      *
-     * @return empty string
+     * @return string
      */
-    function getFrozenHtml() {
-
-        return '';
+    public function getFrozenHtml(): string {
+        return format_text($this->get_text(), $this->getFormat()) . $this->_getPersistantData();
     }
 
     /**

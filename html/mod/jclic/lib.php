@@ -80,6 +80,7 @@ function jclic_supports($feature) {
         case FEATURE_BACKUP_MOODLE2:          return true;
 //        case FEATURE_SHOW_DESCRIPTION:        return true;
 //        case FEATURE_ADVANCED_GRADING:        return true;
+        case FEATURE_MOD_PURPOSE:             return MOD_PURPOSE_ASSESSMENT;
         default:
           if (defined('FEATURE_SHOW_DESCRIPTION') && $feature==FEATURE_SHOW_DESCRIPTION) return true;
           else return null;

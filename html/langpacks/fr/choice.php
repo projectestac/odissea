@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'fr', version '3.11'.
+ * Strings for component 'choice', language 'fr', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'Modifier et supprimer les réponses';
 $string['choice:downloadresponses'] = 'Télécharger les réponses';
 $string['choice:readresponses'] = 'Consulter les réponses';
 $string['choice:view'] = 'Consulter l\'activité sondage';
-$string['choiceactivityname'] = 'Sondage : {$a}';
 $string['choiceclose'] = 'Permettre les réponses jusqu\'au';
-$string['choicecloseson'] = 'Le sondage se termine le {$a}';
 $string['choicefull'] = 'Une ou plusieurs des options choisies ont déjà été renseignées. Votre réponse n\'a pas été enregistrée. Veuillez faire un autre choix.';
 $string['choicename'] = 'Nom du sondage';
 $string['choiceopen'] = 'Permettre les réponses dès le';
@@ -76,10 +74,12 @@ $string['indicator:cognitivedepth'] = 'Sondage : aspect cognitif';
 $string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Sondage.';
 $string['indicator:cognitivedepthdef'] = 'Sondage : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Sondage » (niveaux : pas de vue, vue, envoi, vue du feedback).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Sondage : aspect social';
 $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Sondage.';
 $string['indicator:socialbreadthdef'] = 'Sondage : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Sondage » (niveaux : pas de participation, participant seul, participant avec d\'autres).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'Limite';
 $string['limita'] = 'Limite : {$a}';
 $string['limitanswers'] = 'Limiter le nombre de réponses permises';
@@ -99,6 +99,7 @@ Un sondage peut être utilisé pour :
 * une question rapide afin de stimuler la réflexion sur un thème
 * tester la compréhension des étudiants
 * faciliter une décision par les étudiants, en leur permettant par exemple de choisir une direction pour la suite du cours';
+$string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Sondages';
 $string['moveselectedusersto'] = 'Déplacer les utilisateurs sélectionnés vers…';
 $string['multiplenotallowederror'] = 'Il n\'est pas permis de fournir plusieurs réponses à ce sondage';

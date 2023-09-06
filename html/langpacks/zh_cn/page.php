@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'zh_cn', version '3.11'.
+ * Strings for component 'page', language 'zh_cn', version '4.1'.
  *
  * @package     page
  * @category    string
@@ -36,15 +36,18 @@ $string['indicator:cognitivedepth'] = '网页资源认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 网页资源中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '页面认知';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到页面资源提供的认知参与百分比（级别=无视图，视图）';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = '网页资源社会宽度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在网页资源中所达到的社会宽度。';
 $string['indicator:socialbreadthdef'] = '页面社交';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到页面资源提供的社交参与的百分比（级别=无参与，仅参与者一人）';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['legacyfiles'] = '迁移所有课程旧文件';
 $string['legacyfilesactive'] = '活动的';
 $string['legacyfilesdone'] = '已结束';
 $string['modulename'] = '网页';
 $string['modulename_help'] = '在课程中显示和编辑Web页面。';
+$string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = '页面';
 $string['optionsheader'] = '选项';
 $string['page-mod-page-x'] = '任意网页模块页面';

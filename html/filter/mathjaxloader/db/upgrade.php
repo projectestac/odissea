@@ -31,34 +31,10 @@ defined('MOODLE_INTERNAL') || die();
 function xmldb_filter_mathjaxloader_upgrade($oldversion) {
     global $CFG;
 
-    // Automatically generated Moodle v3.6.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.7.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.8.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2020050401) {
-        // Update CDN url.
-        $originalurl = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js';
-        $newurl = 'https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js';
-        $currenturl = get_config('filter_mathjaxloader', 'httpsurl');
-        if ($currenturl == $originalurl) {
-            set_config('httpsurl', $newurl, 'filter_mathjaxloader');
-        }
-
-        upgrade_plugin_savepoint(true, 2020050401, 'filter', 'mathjaxloader');
-    }
-
     // Automatically generated Moodle v3.9.0 release upgrade line.
     // Put any upgrade step following this.
 
-    // Automatically generated Moodle v3.10.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2021012000) {
+    if ($oldversion < 2021052501) {
         // Update CDN url.
         $originalurl = 'https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js';
         $newurl = 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js';
@@ -67,10 +43,13 @@ function xmldb_filter_mathjaxloader_upgrade($oldversion) {
             set_config('httpsurl', $newurl, 'filter_mathjaxloader');
         }
 
-        upgrade_plugin_savepoint(true, 2021012000, 'filter', 'mathjaxloader');
+        upgrade_plugin_savepoint(true, 2021052501, 'filter', 'mathjaxloader');
     }
 
-    // Automatically generated Moodle v3.11.0 release upgrade line.
+    // Automatically generated Moodle v4.0.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v4.1.0 release upgrade line.
     // Put any upgrade step following this.
 
     return true;

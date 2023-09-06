@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'gl', version '3.11'.
+ * Strings for component 'url', language 'gl', version '4.1'.
  *
  * @package     url
  * @category    string
@@ -69,7 +69,7 @@ $string['modulenameplural'] = 'URL';
 $string['page-mod-url-x'] = 'Calquera URL do módulo páxina';
 $string['parameterinfo'] = '&amp;parámetro=variábel';
 $string['parametersheader'] = 'Variábeis de URL';
-$string['parametersheader_help'] = 'Algunhas variábeis internas de Moodle poden asociarse automaticamente ao URL. Escriba o nome do parámetro en cada caixa(s) de texto e logo seleccione a variábel requirida de coincidencia.';
+$string['parametersheader_help'] = 'Esta sección permítelle pasar información interna como parte do URL. Isto é útil se o URL é unha páxina web interactiva que leva parámetros e, por exemplo, quere pasar algo así como o nome do usuario actual. Introduza o nome do parámetro do URL na caixa de texto e seleccione a variábel do sitio correspondente.';
 $string['pluginadministration'] = 'Administración do módulo URL';
 $string['pluginname'] = 'URL';
 $string['popupheight'] = 'Altura da xanela emerxente (en píxeles)';

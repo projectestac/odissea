@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'fr', version '3.11'.
+ * Strings for component 'lesson', language 'fr', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -52,7 +52,6 @@ $string['addedendofcluster'] = 'Fin de groupe ajoutée';
 $string['addendofbranch'] = 'Ajouter une fin de branchement';
 $string['addendofcluster'] = 'Ajouter une fin de groupe';
 $string['addessay'] = 'Créer une page de question composition';
-$string['additionalattemptsremaining'] = 'Terminé. Vous pouvez refaire cette leçon';
 $string['addmatching'] = 'Créer une page Question d\'appariement';
 $string['addmultichoice'] = 'Créer un page Question à choix multiples';
 $string['addnewgroupoverride'] = 'Ajouter une dérogation de groupe';
@@ -175,6 +174,7 @@ $string['displayleftif'] = 'Note minimale pour afficher le menu';
 $string['displayleftif_help'] = 'Ce réglage détermine si un étudiant doit obtenir une note minimale pour que le menu de la leçon soit affiché. Ceci impose à l\'étudiant de parcourir la totalité de la leçon lors de sa première tentative, puis lui permet d\'utiliser le menu pour sa relecture, s\'il a obtenu la note requise.';
 $string['displayleftmenu'] = 'Afficher le menu';
 $string['displayleftmenu_help'] = 'Si ce réglage est activé, un menu est affiché, permettant aux utilisateurs de parcourir les pages de la leçon.';
+$string['displaymode'] = 'Mode d\'affichage';
 $string['displayofgrade'] = 'Affichage de la note (pour l\'étudiant)';
 $string['displayreview'] = 'Offrir la possibilité de refaire une question';
 $string['displayreview_help'] = 'Si cette option est activée, lorsqu\'une question reçoit une réponse incorrecte, l\'étudiant a la possibilité de corriger celle-ci (sans obtenir de point) ou de continuer la leçon. Si l\'étudiant choisit de continuer vers une autre question, il sera dirigé vers la page à suivre après une réponse (fausse). Par défaut, les sauts de pages pour une réponse fausse sont définis sur « Cette page » et donnent un score de 0. Il est donc recommandé de spécifier un saut vers une page différente en cas de réponse fausse pour éviter de prêter à confusion pour les étudiants.';
@@ -189,7 +189,9 @@ $string['editcluster'] = 'Modification d\'un groupe';
 $string['editendofbranch'] = 'Modification d\'une page fin de branchement';
 $string['editendofcluster'] = 'Modification d\'une page de fin de groupe';
 $string['editessay'] = 'Modification d\'une page Question de composition';
+$string['editinglesson'] = 'Modification de la leçon';
 $string['editingquestionpage'] = 'Modification de la page de question {$a}';
+$string['editlesson'] = 'Modifier la leçon';
 $string['editlessonsettings'] = 'Modifier les réglages de la leçon';
 $string['editmatching'] = 'Modification d\'une page Question de correspondance';
 $string['editmultichoice'] = 'Modification d\'une page Question à choix multiples';
@@ -201,9 +203,9 @@ $string['editquestion'] = 'Modification d\'une page de question';
 $string['editshortanswer'] = 'Modification d\'une page Question à réponse courte';
 $string['edittruefalse'] = 'Modification d\'une page Question vrai/faux';
 $string['email'] = 'Courriel';
-$string['emailallgradedessays'] = 'Envoyer par courriel TOUTES les compositions évaluées';
-$string['emailgradedessays'] = 'Envoyer par courriel les compositions évaluées';
-$string['emailsuccess'] = 'Envoi effectué avec succès';
+$string['emailallgradedessays'] = 'Envoyer les notifications des compositions évaluées';
+$string['emailgradedessays'] = 'Envoyer les notifications des compositions évaluées';
+$string['emailsuccess'] = 'Notifications envoyées correctement';
 $string['emptypassword'] = 'Le mot de passe ne peut pas être vide';
 $string['enabled'] = 'Activée';
 $string['endofbranch'] = 'Fin de branchement';
@@ -276,10 +278,12 @@ $string['indicator:cognitivedepth'] = 'Leçon : aspect cognitif';
 $string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Leçon.';
 $string['indicator:cognitivedepthdef'] = 'Leçon : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Leçon » (niveaux : pas de vue, vue, envoi, vue du feedback, commentaire du feedback, nouvel envoi après vue du feedback).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Leçon : aspect social';
 $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Leçon.';
 $string['indicator:socialbreadthdef'] = 'Leçon : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Leçon » (niveaux : pas de participation, participant seul, participant avec d\'autres).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insertedpage'] = 'Page insérée';
 $string['invalidfile'] = 'Fichier non valide';
 $string['invalidid'] = 'Aucun identifiant de cours ou de leçon n\'a été fourni';
@@ -300,14 +304,13 @@ $string['lesson:manage'] = 'Gérer les activités leçon';
 $string['lesson:manageoverrides'] = 'Gérer les dérogations de leçon';
 $string['lesson:view'] = 'Consulter une activité leçon';
 $string['lesson:viewreports'] = 'Consulter les rapports des leçons';
+$string['lessonbeingpreviewed'] = 'La leçon est en cours de prévisualisation.';
 $string['lessonclosed'] = 'Cette leçon s\'est terminée le {$a}.';
 $string['lessoncloses'] = 'La leçon se termine';
-$string['lessoncloseson'] = 'La leçon se termine le {$a}';
 $string['lessoneventcloses'] = '{$a} se termine';
 $string['lessoneventopens'] = '{$a} s\'ouvre';
 $string['lessonformating'] = 'Format de la leçon';
 $string['lessonmenu'] = 'Menu leçon';
-$string['lessonname'] = 'Leçon : {$a}';
 $string['lessonnotready'] = 'Cette leçon n\'est pas encore prête. Veuillez contacter votre {$a}.';
 $string['lessonnotready2'] = 'Cette leçon n\'est pas encore prête.';
 $string['lessonopen'] = 'Cette leçon sera ouverte le {$a}.';
@@ -318,6 +321,7 @@ $string['linkedmedia'] = 'Médias liés';
 $string['loginfail'] = 'Connexion échouée, veuillez réessayer…';
 $string['lowscore'] = 'Note la plus basse';
 $string['lowtime'] = 'Plus courte durée';
+$string['manageoverrides'] = 'Gérer les dérogations';
 $string['manualgrading'] = 'Évaluer les compositions';
 $string['matchesanswer'] = 'Correspond avec la réponse';
 $string['matching'] = 'Correspondant';
@@ -354,6 +358,7 @@ Les leçons peuvent être utilisées par exemple :
 * pour des simulations ou des jeux de rôles exerçant la prise de décision
 * comme un moyen de combiner plusieurs canaux différents, permettant ainsi de renforcer l\'apprentissage
 * pour des supports de révision différenciés, avec plusieurs jeux de questions de révision suivant les réponses précédemment données';
+$string['modulename_link'] = 'mod/lesson/view';
 $string['modulenameplural'] = 'Leçons';
 $string['move'] = 'Déplacer la page';
 $string['movedpage'] = 'Page déplacée';
@@ -388,6 +393,7 @@ $string['nooneenteredthis'] = 'Personne n\'a tapé ceci.';
 $string['noonehasanswered'] = 'Personne n\'a encore répondu à une question de composition.';
 $string['noonehasansweredgroup'] = 'Aucun membre de {$a} n\'a encore répondu à une question de composition.';
 $string['noopen'] = 'Pas de date d\'ouverture';
+$string['nooverridecreated'] = 'Aucune dérogation créée.';
 $string['nooverridedata'] = 'Vous devez définir une dérogation pour au moins un des paramètres de la leçon.';
 $string['noretake'] = 'Vous n\'êtes pas autorisé à refaire cette leçon.';
 $string['normal'] = 'Normal - suivre le parcours de la leçon';
@@ -543,6 +549,7 @@ $string['search:activity'] = 'Leçon – information sur l\'activité';
 $string['secondpluswrong'] = 'Pas tout à fait. Voulez-vous essayer à nouveau ?';
 $string['selectallattempts'] = 'Sélectionner toutes les tentatives';
 $string['selectaqtype'] = 'Sélectionner un type de question';
+$string['selectreport'] = 'Sélectionner un rapport';
 $string['sent'] = 'Envoyé';
 $string['shortanswer'] = 'Réponse courte';
 $string['showanunansweredpage'] = 'Afficher une page sans réponse';
@@ -605,7 +612,6 @@ $string['withselectedattempts'] = 'Avec les tentatives sélectionnées...';
 $string['wronganswerjump'] = 'Saut après mauvaise réponse';
 $string['wronganswerscore'] = 'Score des mauvaises réponses';
 $string['wrongresponse'] = 'Feedback mauvaise réponse';
-$string['xattempts'] = '{$a} tentatives';
 $string['youhaveseen'] = 'Vous avez déjà vu au moins une page de cette leçon.<br />Voulez-vous commencer à la dernière page que vous avez vue ?';
 $string['youranswer'] = 'Votre réponse';
 $string['yourcurrentgradeis'] = 'Votre note actuelle est {$a}';

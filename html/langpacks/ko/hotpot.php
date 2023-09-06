@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ko', version '3.11'.
+ * Strings for component 'hotpot', language 'ko', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -200,6 +200,7 @@ $string['migratingfiles'] = '핫포테이토 퀴즈 파일 변환';
 $string['missingsourcetype'] = 'HotPot 레코드에 소스타입이 없습니다.';
 $string['modulename'] = 'HotPot';
 $string['modulename_help'] = 'HoptPot 모듈은 선생님이 핫 포테이토 퀴즈를 강좌에 포함시키는 것을 가능하게 합니다. 매번 시도는 자동으로 채점되며 개별 질문이 어떻게 답해졌는지와 점수에서 통계적 경향을 보여주는 보고서를 볼 수 있습니다.';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'HotPot';
 $string['nameadd'] = '이름';
 $string['nameedit'] = '이름';

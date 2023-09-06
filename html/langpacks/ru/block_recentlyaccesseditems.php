@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recentlyaccesseditems', language 'ru', version '3.11'.
+ * Strings for component 'block_recentlyaccesseditems', language 'ru', version '4.1'.
  *
  * @package     block_recentlyaccesseditems
  * @category    string
@@ -25,12 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['moreitems'] = 'Показать больше элементов';
 $string['noitems'] = 'Нет новых элементов';
-$string['pluginname'] = 'Недавние объекты';
-$string['privacy:metadata:block_recentlyaccesseditemstablesummary'] = 'Блок «Недавние объекты» содержит информацию об элементах, к которым недавно обращался пользователь';
+$string['pluginname'] = 'Недавно посещенные элементы';
+$string['privacy:metadata:block_recentlyaccesseditemstablesummary'] = 'Блок «Недавно посещенные элементы» содержит информацию об элементах, к которым недавно обращался пользователь';
 $string['privacy:metadata:cmid'] = 'ID элемента курса или ресурса';
 $string['privacy:metadata:courseid'] = 'Элемент курса относится к';
 $string['privacy:metadata:timeaccess'] = 'Время, когда пользователь последний раз обращался к элементу';
 $string['privacy:metadata:userid'] = 'ID пользователя, который получил доступ к элементу';
-$string['privacy:recentlyaccesseditemspath'] = 'Недавние объекты';
-$string['recentlyaccesseditems:myaddinstance'] = 'Добавлять новый блок «Недавние объекты» на страницу «Личный кабинет»';
+$string['privacy:recentlyaccesseditemspath'] = 'Недавно посещенные элементы';
+$string['recentlyaccesseditems:myaddinstance'] = 'Добавлять новый блок «Недавно посещенные элементы на страницу «Личный кабинет»';

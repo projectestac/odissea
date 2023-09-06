@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'ar', version '3.11'.
+ * Strings for component 'block_course_list', language 'ar', version '4.1'.
  *
  * @package     block_course_list
  * @category    string
@@ -30,7 +30,7 @@ $string['allcourses'] = 'مدير الموقع يستطيع مشاهدة جمي�
 $string['configadminview'] = 'فيما إذا كان ينبغي عرض كل المقررات الدراسية في كتلة المقررات، أو تلك المنضم إليها المشرف فقط.';
 $string['confighideallcourseslink'] = 'إزالة رابط \'كل المقررات الدراسية\' أسفل قائمة المقررات الدراسية. (هذا الإعداد لا يؤثر على معاينة المشرف).';
 $string['course_list:addinstance'] = 'إضافة كتلة مقررات دراسية جديدة';
-$string['course_list:myaddinstance'] = 'إضافة كتلة مقررات دراسية جديدة إلى لوحة التحكم';
+$string['course_list:myaddinstance'] = 'إضافة كتلة مقررات دراسية جديدة إلى دفة القيادة';
 $string['hideallcourseslink'] = 'إخفاء رابط \'كل المقررات الدراسية\'';
 $string['owncourses'] = 'مدير الموقع يستطيع مشاهدة مقرراته الدراسية';
 $string['pluginname'] = 'المقررات الدراسية';

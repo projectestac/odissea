@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'socialwiki', language 'eu', version '3.11'.
+ * Strings for component 'socialwiki', language 'eu', version '4.1'.
  *
  * @package     socialwiki
  * @category    string
@@ -30,6 +30,8 @@ $string['defaultformat_help'] = 'CEzarpen honek wiki orriak editatzerakoan erabi
 * HTML - HTML editorea eskuragarri dago
 * Creole - Wiki markup hizkuntza arrunta eta horretarako tresna-barra txikia eskuragarri dago
 * Nwiki -  Nwiki moduluan erabilitako Mediawiki moduko markup hizkuntza';
+$string['formatcreole_link'] = 'mod/socialwiki/creole';
+$string['formatnwiki_link'] = 'mod/socialwiki/nwiki';
 $string['help_create'] = 'upSortu ikuspegiak wiki orri berri bat sortzeko aukera emango dizu. </br>
 Behar den guztia orriaren izenburua da, baina formatua hautatzeko aukera ere egon liteke. </br>
 Formatu eremua erabilgarri badago, 3 aukera egongo dira:
@@ -39,3 +41,4 @@ Formatu eremua erabilgarri badago, 3 aukera egongo dira:
 Formatua aukeratu da orrialde honetako bertsio guztietarako. Etorkizuneko bertsio guztiek aukeratutako formatua erabili beharko dute. </br>
 </br>
 Egin klik Sortu orria botoian orrialde honen lehen bertsioan lan egiteko. Puntu honetan orria sortu da eta ezin duzu ekintza hau desegin, lehenengo bertsioa gorde beharko duzu edo orri zuri bat sortuko da zehaztutako izenarekin.';
+$string['modulename_link'] = 'mod/socialwiki/view';

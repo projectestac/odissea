@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlesson', language 'sv', version '3.11'.
+ * Strings for component 'customlesson', language 'sv', version '4.1'.
  *
  * @package     customlesson
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actionaftercorrectanswer'] = 'Åtgärd efter rätt svar';
+$string['modulename_link'] = 'mod/customlesson/view';

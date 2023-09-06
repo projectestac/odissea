@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'fr', version '3.11'.
+ * Strings for component 'analytics', language 'fr', version '4.1'.
  *
  * @package     analytics
  * @category    string
@@ -123,6 +123,10 @@ $string['percentonline'] = 'Pourcentage en ligne';
 $string['percentonline_help'] = 'Si votre organisation propose des cours hybrides, quel pourcentage de travail est effectué en ligne par les étudiants ? Indiquez un nombre entre 0 et 100.';
 $string['predictionsprocessor'] = 'Processeur de prédictions';
 $string['predictionsprocessor_help'] = 'Un processeur de prédictions est un programme d\'apprentissage automatique qui traite les jeux de données générés en calculant les indicateurs et cibles des modèles. Chaque modèle peut utiliser un processeur différent. Celui spécifié ici sera le processeur par défaut.';
+$string['privacy:metadata:analytics:analyticsmodels'] = 'Modèles d\'analyse de données';
+$string['privacy:metadata:analytics:analyticsmodels:usermodified'] = 'L\'utilisateur qui a modifié le modèle';
+$string['privacy:metadata:analytics:analyticsmodelslog'] = 'Le journal utilisé pour les modèles d\'analyse de données';
+$string['privacy:metadata:analytics:analyticsmodelslog:usermodified'] = 'L\'utilisateur qui a modifié le journal';
 $string['privacy:metadata:analytics:indicatorcalc'] = 'Calculs d\'indicateurs';
 $string['privacy:metadata:analytics:indicatorcalc:contextid'] = 'Le contexte';
 $string['privacy:metadata:analytics:indicatorcalc:endtime'] = 'Fin du temps de calcul';
@@ -152,6 +156,7 @@ $string['processingsitecontents'] = 'Contenus du site en cours de traitement';
 $string['successfullyanalysed'] = 'Analysé avec succès';
 $string['timesplittingmethod'] = 'Intervalle d\'analyse';
 $string['timesplittingmethod_help'] = 'L\'intervalle d\'analyse définit quand le système calcule les prédictions, ainsi que la partie des journaux d\'activité considérée pour ces prédictions. Par exemple, la durée du cours peut être divisée en périodes, et une prédiction générée à la fin de chaque période.';
+$string['timesplittingmethod_link'] = 'Time_splitting_methods';
 $string['typeinstitution'] = 'Type d\'institution';
 $string['typeinstitutionacademic'] = 'Académique';
 $string['typeinstitutionngo'] = 'Organisation non gouvernementale (ONG)';

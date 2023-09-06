@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'es', version '3.11'.
+ * Strings for component 'qtype_calculated', language 'es', version '4.1'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -53,8 +53,9 @@ $string['decimals'] = 'Con {$a}';
 $string['deleteitem'] = 'Eliminar elemento';
 $string['deletelastitem'] = 'Eliminar último elemento';
 $string['distributionoption'] = 'Seleccionar opción de distribución';
-$string['editdatasets'] = 'Editar el conjunto de datos de os comodines';
+$string['editdatasets'] = 'Editar el conjunto de datos de los comodines';
 $string['editdatasets_help'] = 'Los valores comodín se pueden crear mediante la introducción de un número en cada campo "comodín" y clic en el botón añadir. Para generar automáticamente 10 o más valores, seleccione el número de valores necesarios antes de hacer clic en el botón añadir. Una "distribución uniforme" significa que cualquier valor entre los límites establecidos tiene la misma probabilidad de que se genere;  una "distribución log-uniforme" significa que los valores situados hacia el límite inferior tienen más probabilidad.';
+$string['editdatasets_link'] = 'question/type/calculated';
 $string['existingcategory1'] = 'usará un conjunto de datos compartidos ya existente';
 $string['existingcategory2'] = 'un archivo de un conjunto existente de archivos que también son usados por otras preguntas de esta categoría';
 $string['existingcategory3'] = 'un enlace de un conjunto existente de enlaces que también son usados por otras preguntas de esta categoría';
@@ -111,6 +112,7 @@ $string['param'] = 'Parámetro {<strong> {$a} </strong>}';
 $string['partiallycorrectfeedback'] = 'Para cualquier respuesta parcialmente correcta';
 $string['pluginname'] = 'Calculada';
 $string['pluginname_help'] = 'Las preguntas calculadas permiten crear preguntas numéricas utilizando comodines dentro de llaves que se sustituyen por valores concretos cuando se realiza el cuestionario. Por ejemplo, la pregunta "¿Cuál es el área de un rectángulo de longitud {I} y ancho {w}?" tendría como respuesta correcta la fórmual "{l} * {w}" (donde * es el signo de multiplicación).';
+$string['pluginname_link'] = 'question/type/calculated';
 $string['pluginnameadding'] = 'Agregando una pregunta calculada';
 $string['pluginnameediting'] = 'Editando una pregunta calculada';
 $string['pluginnamesummary'] = 'Las preguntas calculadas son similares a preguntas numéricas pero con números seleccionados aleatoriamente de un conjunto cuando se intenta resolver el cuestionario.';

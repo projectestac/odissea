@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'es', version '3.11'.
+ * Strings for component 'editor_tinymce', language 'es', version '4.1'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -291,7 +291,7 @@ $string['colors:00CCFF'] = 'Celeste';
 $string['colors:00FF00'] = 'Lima';
 $string['colors:00FFFF'] = 'Agua';
 $string['colors:333300'] = 'Oliva oscuro';
-$string['colors:333333'] = 'Gris oscuro';
+$string['colors:333333'] = 'Gris muy oscuro';
 $string['colors:333399'] = 'Añil';
 $string['colors:3366FF'] = 'Azul real';
 $string['colors:339966'] = 'Verde mar';

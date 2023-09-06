@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'it', version '3.11'.
+ * Strings for component 'h5plib_v124', language 'it', version '4.1'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['editor:a11ytitlehidelabel'] = 'Nascondi etichetta per AT';
+$string['editor:a11ytitleshowlabel'] = 'Visualizza etichetta per AT';
 $string['editor:add'] = 'Aggiungi';
 $string['editor:addauthor'] = 'Salva autore';
 $string['editor:addentity'] = 'Aggiungi :entity';
 $string['editor:addfile'] = 'Inserisci file';
 $string['editor:addnewchange'] = 'Aggiungere modifica';
 $string['editor:addtitle'] = 'Inserisci titolo';
-$string['editor:addvideodescription'] = 'H5P supporta tutte le fonti video esterne in formato mp4, webm o ogv, come Vimeo Pro, e supporta i link di YouTube.';
+$string['editor:addvideodescription'] = 'H5P supporta tutte le fonti video esterne in formato mp4, webm o ogv, come Vimeo Pro, e supporta i link di YouTube e Panopto.';
 $string['editor:atoz'] = 'Dall\'A alla Z';
 $string['editor:avtablistlabel'] = 'Inserisci con';
 $string['editor:belowmin'] = 'I valore di :property  è inferiore al minimo di :min.';
@@ -40,6 +42,7 @@ $string['editor:cancellabel'] = 'Annulla';
 $string['editor:changefile'] = 'Cambia file';
 $string['editor:changelanguage'] = 'Cambiare la lingua in :language?';
 $string['editor:changelibrary'] = 'Cambiare il tipo di contenuto?';
+$string['editor:changelogdescription'] = 'Alcune licenze richiedono che le modifiche apportate all\'opera originale o ai derivati vengano registrate e visualizzate. È possibile registrare le modifiche qui per motivi di licenza o semplicemente per tenere traccia delle modifiche apportate a questo contenuto.';
 $string['editor:close'] = 'Chiudi';
 $string['editor:commonfieldsdescription'] = 'Consente di modificare le impostazioni o tradurre i testi utilizzati in questo contenuto.';
 $string['editor:confirmchangelibrary'] = 'Con questa operazione verrà eliminato tutto il lavoro effettuato con il tipo di contenuto corrente. Sei sicuro di modificare il tipo di contenuto?';
@@ -50,6 +53,7 @@ $string['editor:confirmremoval'] = 'Sei sicuro di rimuovere questo :type?';
 $string['editor:confirmremoveauthor'] = 'Sei sicuro di rimuovere questo autore?';
 $string['editor:contenttypebackbuttonlabel'] = 'Indietro';
 $string['editor:contenttypecacheoutdated'] = 'L\'elenco dei tipi di contenuto è obsoleto';
+$string['editor:contenttypecacheoutdateddesc'] = 'Il sito ha difficoltà a connettersi a H5P.org per controllare gli aggiornamenti del tipo di contenuto. Potrebbe non essere possibile aggiornare o installare nuovi tipi di contenuto.';
 $string['editor:contenttypedemobuttonlabel'] = 'Demo del contenuto';
 $string['editor:contenttypedetailbuttonlabel'] = 'Dettagli';
 $string['editor:contenttypeiconalttext'] = 'icona';
@@ -86,7 +90,7 @@ $string['editor:enteraudiotitle'] = 'Incolla un collegamento o un URL di una fon
 $string['editor:enteraudiourl'] = 'Inserisci un URL della fonte audio';
 $string['editor:enterfullscreenbuttonlabel'] = 'Passa a schermo intero';
 $string['editor:entervideotitle'] = 'Incolla un collegamento YouTube o un\'altra fonte video';
-$string['editor:entervideourl'] = 'Inserisci una fonte video o un collegamento YouTube';
+$string['editor:entervideourl'] = 'Inserire URL del video';
 $string['editor:errorcalculatingmaxscore'] = 'Impossibile calcolare il punteggio massimo per questo contenuto. Si presuppone che il punteggio massimo sia 0. Contattare l\'amministratore se non è corretto.';
 $string['editor:errorcommunicatinghubcontent'] = 'Si è verificato un errore. Si prega di riprovare più tardi.';
 $string['editor:errorcommunicatinghubtitle'] = 'Non è possibile comunicare con l\'hub';
@@ -119,6 +123,14 @@ $string['editor:insert'] = 'Inserisci';
 $string['editor:invalidformat'] = 'Il campo è valorizzato con un formato non valido oppure con un carattere non valido.';
 $string['editor:language'] = 'Lingua';
 $string['editor:librarymissing'] = 'La libreria %lib è mancante.';
+$string['editor:licensecandistribute'] = 'Può essere distribuito';
+$string['editor:licensecanholdliable'] = 'Può essere ritenuto responsabile';
+$string['editor:licensecanmodify'] = 'Può essere modificato';
+$string['editor:licensecannotholdliable'] = 'Non può essere ritenuto responsabile';
+$string['editor:licensecansublicense'] = 'Può concedere una sottolicenza';
+$string['editor:licensecanusecommercially'] = 'Può essere usato commercialmente';
+$string['editor:licensedescription'] = 'Alcune delle caratteristiche di questa licenza sono indicate di seguito. Fare clic sull\'icona delle informazioni in alto per leggere il testo della licenza originale.';
+$string['editor:licensefetchdetailsfailed'] = 'Non è stato possibile ottenere i dettagli della licenza';
 $string['editor:licensemodalsubtitle'] = 'Seleziona una licenza per visualizzare le informazioni sull\'uso consentito';
 $string['editor:licensemodaltitle'] = 'Dettagli licenza';
 $string['editor:licensemustincludecopyright'] = 'Deve includere il copyright';
@@ -129,13 +141,20 @@ $string['editor:listexceedsmax'] = 'L\'elenco supera il massimo di :max elementi
 $string['editor:listlabel'] = 'Elenco';
 $string['editor:loading'] = 'Caricamento in corso, attendere...';
 $string['editor:loadingimageeditor'] = 'Caricamento dell\'editor dell\'immagine in corso, attendere...';
+$string['editor:loggedchanges'] = 'Modifiche registrate';
+$string['editor:logthischange'] = 'Registra la modifica';
+$string['editor:maxscoresemanticsmissing'] = 'Non è stato possibile trovare la semantica attesa nel contenuto.';
 $string['editor:metadata'] = 'Metadati';
 $string['editor:metadatasharingandlicensinginfo'] = 'Metadati (informazioni su condivisione e licenza)';
+$string['editor:missingproperty'] = 'Al campo :index manca la proprietà :property.';
 $string['editor:missingtranslation'] = '[Traduzione mancante :key]';
+$string['editor:newchangehasbeenlogged'] = 'È stata registrata una nuova modifica';
 $string['editor:newestfirst'] = 'Prima i più recenti';
 $string['editor:nextimage'] = 'Immagine successiva';
+$string['editor:nochangeshavebeenlogged'] = 'Non è stata registrata nessuna modifica';
 $string['editor:nocontenttypesavailable'] = 'Non sono disponibili tipi di contenuto.';
 $string['editor:nocontenttypesavailabledesc'] = 'Si sono verificati dei problemi connettendosi a H5P.org per scaricare l\'elenco dei tipi contenuto disponibili.';
+$string['editor:nofollow'] = 'Non è possibile seguire il campo ":path".';
 $string['editor:nolanguagessupported'] = 'Nessuna lingua supportata';
 $string['editor:noresultsfound'] = 'Nessun risultato';
 $string['editor:noresultsfounddesc'] = 'Non ci sono tipo di contenuto che soddisfino i criteri di ricerca.';
@@ -155,6 +174,8 @@ $string['editor:pastecontentrestricted'] = 'Nel sito non è consentito il conten
 $string['editor:pasteerror'] = 'Non è stato possibile incollare dalla clipboard';
 $string['editor:pastefromclipboard'] = 'Incolla contenuto H5P dalla clipboard';
 $string['editor:pastenocontent'] = 'La clipboard non contiene H5P';
+$string['editor:pastetoonew'] = 'Il contenuto negli appunti H5P è di una versione superiore (:clip) rispetto a quella supportata in questo contesto (:local). Se possibile, provare prima ad aggiornare il contenuto, quindi provare a incollarlo di nuovo.';
+$string['editor:pastetooold'] = 'Il contenuto negli appunti H5P è di una versione inferiore (:clip) rispetto a quella supportata in questo contesto (:local). Se possibile, provare prima ad aggiornare il contenuto, quindi provare a incollarlo di nuovo.';
 $string['editor:popularfirst'] = 'Più popolari';
 $string['editor:previousimage'] = 'Immagine precedente';
 $string['editor:readless'] = 'Leggi di meno';

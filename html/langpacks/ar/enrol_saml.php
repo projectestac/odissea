@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_saml', language 'ar', version '3.11'.
+ * Strings for component 'enrol_saml', language 'ar', version '4.1'.
  *
  * @package     enrol_saml
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['created_group_info'] = 'وصف للمجموعات الجديدة';
 $string['created_group_info_description'] = 'ضعف في هذا الحقل النص الذي سيتم استعماله لوصف المجموعات الجديدة المنشأة من قبل الإضافة';
-$string['wsusercannotassign'] = 'ليست لديك صلاحية تعيين هذا الدور ({$a->roleid}) إلى هذا المستخدم ({$a->userid}) في هذا المقرر الدراسي ({$a->courseid}).';
+$string['wsusercannotassign'] = 'ليست لديك صلاحية تعيين هذا الدور ({$a->roleid}) إلى هذا المستخدم ({$a->userid}) في هذا المساق ({$a->courseid}).';

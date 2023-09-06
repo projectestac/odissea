@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_structured', language 'en', version '3.11'.
+ * Strings for component 'assignfeedback_structured', language 'en', version '4.1'.
  *
  * @package     assignfeedback_structured
  * @category    string
@@ -72,6 +72,10 @@ $string['criterionname'] = 'Criterion {$a} name';
 $string['criteriontitle'] = '<span class="criterion-name">{$a->name}:</span> <span class="criterion-desc">{$a->desc}</span>';
 $string['default'] = 'Enabled by default';
 $string['default_help'] = 'If set, this feedback method will be enabled by default for all new assignments.';
+$string['defaultcritdesc'] = 'Default description for first criterion';
+$string['defaultcritdesc_help'] = 'Optional default description for the first feedback criterion in all new assignments.';
+$string['defaultcritname'] = 'Default name for first criterion';
+$string['defaultcritname_help'] = 'Optional default name for the first feedback criterion in all new assignments.<br>Note that entering a value here will automatically enable the structured feedback method for all new assignments.';
 $string['enabled'] = 'Structured feedback';
 $string['enabled_help'] = 'If enabled, the teacher will be able to define any number of criteria on which to provide specific feedback.';
 $string['escapetocancel'] = 'Escape to cancel';

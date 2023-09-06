@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_importhtml', language 'fr', version '3.11'.
+ * Strings for component 'booktool_importhtml', language 'fr', version '4.1'.
  *
  * @package     booktool_importhtml
  * @category    string
@@ -35,7 +35,7 @@ $string['pluginname'] = 'Importation de chapitre de livre';
 $string['privacy:metadata'] = 'Le plugin Importation de chapitre de livre n\'enregistre aucune donnée personnelle.';
 $string['relinking'] = 'Mise à jour des liens';
 $string['type'] = 'Type';
-$string['typeonefile'] = 'Un fichier HTML avec les entêtes comme chapitres';
+$string['typeonefile'] = 'Un fichier HTML avec les en-têtes comme chapitres';
 $string['typezipdirs'] = 'Chaque dossier représente un chapitre';
 $string['typezipfiles'] = 'Chaque fichier HTML représente un chapitre';
 $string['ziparchive'] = 'Fichier ZIP';

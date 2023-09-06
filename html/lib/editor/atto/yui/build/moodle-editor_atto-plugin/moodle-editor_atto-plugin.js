@@ -182,6 +182,7 @@ var MENUTEMPLATE = '' +
             'id="{{id}}" ' +
             'tabindex="-1" ' +
             'title="{{title}}" ' +
+            'aria-label="{{title}}" ' +
             'type="button" ' +
             'aria-haspopup="true" ' +
             'aria-controls="{{id}}_menu">' +
@@ -364,8 +365,10 @@ EditorPluginButtons.prototype = {
         button = Y.Node.create('<button type="button" class="' + buttonClass + '"' +
                 'tabindex="-1"></button>');
         button.setAttribute('title', title);
+        button.setAttribute('aria-label', title);
         window.require(['core/templates'], function(Templates) {
-            Templates.renderPix(config.icon, config.iconComponent, title).then(function(iconhtml) {
+            // The button already has title and label, so no need to set them again on the icon.
+            Templates.renderPix(config.icon, config.iconComponent, '').then(function(iconhtml) {
                 button.append(iconhtml);
             });
         });
@@ -399,10 +402,12 @@ EditorPluginButtons.prototype = {
 
             if (this._primaryKeyboardShortcut[buttonClass]) {
                 // If we have a valid keyboard shortcut description, then set it with the title.
-                button.setAttribute('title', M.util.get_string('plugin_title_shortcut', 'editor_atto', {
-                        title: title,
-                        shortcut: this._primaryKeyboardShortcut[buttonClass]
-                    }));
+                title = M.util.get_string('plugin_title_shortcut', 'editor_atto', {
+                    title: title,
+                    shortcut: this._primaryKeyboardShortcut[buttonClass]
+                });
+                button.setAttribute('title', title);
+                button.setAttribute('aria-label', title);
             }
         }
 
@@ -541,7 +546,8 @@ EditorPluginButtons.prototype = {
         config.buttonId = id;
 
         window.require(['core/templates'], function(Templates) {
-            Templates.renderPix(config.icon, config.iconComponent, title).then(function(iconhtml) {
+            // The button already has title and label, so no need to set them again on the icon.
+            Templates.renderPix(config.icon, config.iconComponent, '').then(function(iconhtml) {
                 button.one(CSS.MENUICON).append(iconhtml);
             });
             Templates.renderPix('t/expanded', 'core', '').then(function(iconhtml) {
@@ -551,6 +557,8 @@ EditorPluginButtons.prototype = {
 
         // Append it to the group.
         group.append(button);
+        group.append(Y.Node.create('<div class="menuplaceholder" id="' + id + '_menu"></div>'));
+        config.attachmentPoint = '#' + id + '_menu';
 
         currentFocus = this.toolbar.getAttribute('aria-activedescendant');
         if (!currentFocus) {
@@ -591,9 +599,9 @@ EditorPluginButtons.prototype = {
             return;
         }
 
+        // Ensure menu button was clicked, and isn't itself disabled.
         var menuButton = e.currentTarget.ancestor('button', true);
-        if (menuButton.hasAttribute(DISABLED)) {
-            // Exit early if the clicked button was disabled.
+        if (menuButton === null || menuButton.hasAttribute(DISABLED)) {
             return;
         }
 
@@ -1032,11 +1040,13 @@ EditorPluginButtons.prototype = {
         if (button) {
             if (this.buttons[button]) {
                 this.buttons[button][method](HIGHLIGHT);
+                this.buttons[button].setAttribute('aria-pressed', highlight ? 'true' : 'false');
                 this._buttonHighlightToggled(button, highlight);
             }
         } else {
             Y.Object.each(this.buttons, function(button) {
                 button[method](HIGHLIGHT);
+                button.setAttribute('aria-pressed', highlight ? 'true' : 'false');
                 this._buttonHighlightToggled(button, highlight);
             }, this);
         }

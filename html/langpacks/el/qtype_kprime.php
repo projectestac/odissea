@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_kprime', language 'el', version '3.11'.
+ * Strings for component 'qtype_kprime', language 'el', version '4.1'.
  *
  * @package     qtype_kprime
  * @category    string
@@ -41,7 +41,7 @@ $string['mustsupplyvalue'] = 'Πρέπει να δώσετε μια τιμή ε�
 $string['optionno'] = 'Επιλογή {$a}';
 $string['optionsandfeedback'] = 'Επιλογές και Ανατροφοδότηση';
 $string['pluginname'] = 'Kprime (ETH)';
-$string['pluginname_link'] = 'ερώτηση/τύπος/kprime';
+$string['pluginname_link'] = '';
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης Kprime';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης Kprime';
 $string['responsedesc'] = 'Το κείμενο που χρησιμοποιείται ως προεπιλογή για την απόκριση {$a}.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'es', version '3.11'.
+ * Strings for component 'quiz_statistics', language 'es', version '4.1'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -101,12 +101,12 @@ $string['questiontype'] = 'Tipo de pregunta';
 $string['quizinformation'] = 'Información sobre el cuestionario';
 $string['quizname'] = 'Nombre del cuestionario';
 $string['quizoverallstatistics'] = 'Estadísticas globales del cuestionario';
-$string['quizstatisticscleanuptask'] = 'Limpiar registros de caché de estadísticas de cuestionarios antiguos';
 $string['quizstructureanalysis'] = 'Análisis de la estructura del cuestionario';
 $string['random_guess_score'] = 'Calificación aleatoria estimada';
 $string['rangebetween'] = '{$a->min} − {$a->max}';
 $string['rangeofvalues'] = 'Rango de estadísticas para estas preguntas';
 $string['recalculatenow'] = 'Volver a calcular';
+$string['recalculatetask'] = 'Recalcular estadísticas de pregunta';
 $string['reportsettings'] = 'Configuración del cálculo de estadísticas';
 $string['response'] = 'Respuesta';
 $string['skewness'] = 'Asimetría de la distribución de puntuaciones (para {$a})';

@@ -102,12 +102,19 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use core_admin\local\settings\linkable_settings_page;
+
 defined('MOODLE_INTERNAL') || die();
 
 /// Add libraries
 require_once($CFG->libdir.'/ddllib.php');
 require_once($CFG->libdir.'/xmlize.php');
 require_once($CFG->libdir.'/messagelib.php');
+
+// Add classes, traits, and interfaces which should be autoloaded.
+// The autoloader is configured late in setup.php, after ABORT_AFTER_CONFIG.
+// This is also required where the setup system is not included at all.
+require_once($CFG->dirroot.'/'.$CFG->admin.'/classes/local/settings/linkable_settings_page.php');
 
 define('INSECURE_DATAROOT_WARNING', 1);
 define('INSECURE_DATAROOT_ERROR', 2);
@@ -770,7 +777,7 @@ interface parentable_part_of_admin_tree extends part_of_admin_tree {
  *
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class admin_category implements parentable_part_of_admin_tree {
+class admin_category implements parentable_part_of_admin_tree, linkable_settings_page {
 
     /** @var part_of_admin_tree[] An array of part_of_admin_tree objects that are this object's children */
     protected $children;
@@ -812,7 +819,7 @@ class admin_category implements parentable_part_of_admin_tree {
     }
 
     /**
-     * Get the URL to view this page.
+     * Get the URL to view this settings page.
      *
      * @return moodle_url
      */
@@ -1206,7 +1213,7 @@ class admin_root extends admin_category {
  *
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class admin_externalpage implements part_of_admin_tree {
+class admin_externalpage implements part_of_admin_tree, linkable_settings_page {
 
     /** @var string An internal name for this external page. Must be unique amongst ALL part_of_admin_tree objects */
     public $name;
@@ -1254,6 +1261,15 @@ class admin_externalpage implements part_of_admin_tree {
         }
         $this->hidden = $hidden;
         $this->context = $context;
+    }
+
+    /**
+     * Get the URL to view this settings page.
+     *
+     * @return moodle_url
+     */
+    public function get_settings_page_url(): moodle_url {
+        return new moodle_url($this->url);
     }
 
     /**
@@ -1427,7 +1443,7 @@ class admin_settingdependency {
  *
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class admin_settingpage implements part_of_admin_tree {
+class admin_settingpage implements part_of_admin_tree, linkable_settings_page {
 
     /** @var string An internal name for this external page. Must be unique amongst ALL part_of_admin_tree objects */
     public $name;
@@ -1477,6 +1493,20 @@ class admin_settingpage implements part_of_admin_tree {
         }
         $this->hidden      = $hidden;
         $this->context     = $context;
+    }
+
+    /**
+     * Get the URL to view this page.
+     *
+     * @return moodle_url
+     */
+    public function get_settings_page_url(): moodle_url {
+        return new moodle_url(
+            '/admin/settings.php',
+            [
+                'section' => $this->name,
+            ]
+        );
     }
 
     /**
@@ -1786,7 +1816,7 @@ abstract class admin_setting {
         global $CFG;
 
         if (empty($this->plugin)) {
-            if (array_key_exists($this->name, $CFG->config_php_settings)) {
+            if ($this->is_forceable() && array_key_exists($this->name, $CFG->config_php_settings)) {
                 return true;
             }
         } else {
@@ -2129,6 +2159,18 @@ abstract class admin_setting {
      */
     public function has_custom_form_control(): bool {
         return $this->customcontrol;
+    }
+
+    /**
+     * Whether the setting can be overridden in config.php.
+     *
+     * Returning true will allow the setting to be defined and overridden in config.php.
+     * Returning false will prevent the config setting from being overridden even when it gets defined in config.php.
+     *
+     * @return bool
+     */
+    public function is_forceable(): bool {
+        return true;
     }
 }
 
@@ -4020,13 +4062,13 @@ class admin_setting_configduration extends admin_setting {
         $context = (object) [
             'id' => $this->get_id(),
             'name' => $this->get_full_name(),
-            'value' => $data['v'],
+            'value' => $data['v'] ?? '',
             'readonly' => $this->is_readonly(),
             'options' => array_map(function($unit) use ($units, $data, $defaultunit) {
                 return [
                     'value' => $unit,
                     'name' => $units[$unit],
-                    'selected' => ($data['v'] == 0 && $unit == $defaultunit) || $unit == $data['u']
+                    'selected' => isset($data) && (($data['v'] == 0 && $unit == $defaultunit) || $unit == $data['u'])
                 ];
             }, array_keys($units))
         ];
@@ -4510,10 +4552,19 @@ class admin_setting_sitesetselect extends admin_setting_configselect {
         if ($SITE->id == $COURSE->id) {
             $COURSE = $SITE;
         }
-        format_base::reset_course_cache($SITE->id);
+        core_courseformat\base::reset_course_cache($SITE->id);
 
         return '';
 
+    }
+
+    /**
+     * admin_setting_sitesetselect is not meant to be overridden in config.php.
+     *
+     * @return bool
+     */
+    public function is_forceable(): bool {
+        return false;
     }
 }
 
@@ -4721,9 +4772,18 @@ class admin_setting_sitesetcheckbox extends admin_setting_configcheckbox {
         if ($SITE->id == $COURSE->id) {
             $COURSE = $SITE;
         }
-        format_base::reset_course_cache($SITE->id);
+        core_courseformat\base::reset_course_cache($SITE->id);
 
         return '';
+    }
+
+    /**
+     * admin_setting_sitesetcheckbox is not meant to be overridden in config.php.
+     *
+     * @return bool
+     */
+    public function is_forceable(): bool {
+        return false;
     }
 }
 
@@ -4803,12 +4863,44 @@ class admin_setting_sitesettext extends admin_setting_configtext {
         if ($SITE->id == $COURSE->id) {
             $COURSE = $SITE;
         }
-        format_base::reset_course_cache($SITE->id);
+        core_courseformat\base::reset_course_cache($SITE->id);
 
         return '';
     }
+
+    /**
+     * admin_setting_sitesettext is not meant to be overridden in config.php.
+     *
+     * @return bool
+     */
+    public function is_forceable(): bool {
+        return false;
+    }
 }
 
+
+/**
+ * This type of field should be used for mandatory config settings.
+ *
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class admin_setting_requiredtext extends admin_setting_configtext {
+
+    /**
+     * Validate data before storage.
+     *
+     * @param string $data The string to be validated.
+     * @return bool|string true for success or error string if invalid.
+     */
+    public function validate($data) {
+        $cleaned = clean_param($data, PARAM_TEXT);
+        if ($cleaned === '') {
+            return get_string('required');
+        }
+
+        return parent::validate($data);
+    }
+}
 
 /**
  * Special text editor for site description.
@@ -4855,9 +4947,18 @@ class admin_setting_special_frontpagedesc extends admin_setting_confightmleditor
         if ($SITE->id == $COURSE->id) {
             $COURSE = $SITE;
         }
-        format_base::reset_course_cache($SITE->id);
+        core_courseformat\base::reset_course_cache($SITE->id);
 
         return '';
+    }
+
+    /**
+     * admin_setting_special_frontpagedesc is not meant to be overridden in config.php.
+     *
+     * @return bool
+     */
+    public function is_forceable(): bool {
+        return false;
     }
 }
 
@@ -7547,98 +7648,6 @@ class admin_setting_manageantiviruses extends admin_setting {
 }
 
 /**
- * Special class for license administration.
- *
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @deprecated since Moodle 3.9 MDL-45184. Please use \tool_licensemanager\manager instead.
- * @todo MDL-45184 This class will be deleted in Moodle 4.1.
- */
-class admin_setting_managelicenses extends admin_setting {
-    /**
-     * @deprecated since Moodle 3.9 MDL-45184. Please use \tool_licensemanager\manager instead.
-     * @todo MDL-45184 This class will be deleted in Moodle 4.1
-     */
-    public function __construct() {
-        global $ADMIN;
-
-        debugging('admin_setting_managelicenses class is deprecated. Please use \tool_licensemanager\manager instead.',
-            DEBUG_DEVELOPER);
-
-        // Replace admin setting load with new external page load for tool_licensemanager, if not loaded already.
-        if (!is_null($ADMIN->locate('licensemanager'))) {
-            $temp = new admin_externalpage('licensemanager',
-                get_string('licensemanager', 'tool_licensemanager'),
-                \tool_licensemanager\helper::get_licensemanager_url());
-
-            $ADMIN->add('license', $temp);
-        }
-    }
-
-    /**
-     * Always returns true, does nothing
-     *
-     * @deprecated since Moodle 3.9 MDL-45184.
-     * @todo MDL-45184 This method will be deleted in Moodle 4.1
-     *
-     * @return true
-     */
-    public function get_setting() {
-        debugging('admin_setting_managelicenses class is deprecated. Please use \tool_licensemanager\manager instead.',
-            DEBUG_DEVELOPER);
-
-        return true;
-    }
-
-    /**
-     * Always returns true, does nothing
-     *
-     * @deprecated since Moodle 3.9 MDL-45184.
-     * @todo MDL-45184 This method will be deleted in Moodle 4.1
-     *
-     * @return true
-     */
-    public function get_defaultsetting() {
-        debugging('admin_setting_managelicenses class is deprecated. Please use \tool_licensemanager\manager instead.',
-            DEBUG_DEVELOPER);
-
-        return true;
-    }
-
-    /**
-     * Always returns '', does not write anything
-     *
-     * @deprecated since Moodle 3.9 MDL-45184.
-     * @todo MDL-45184 This method will be deleted in Moodle 4.1
-     *
-     * @return string Always returns ''
-     */
-    public function write_setting($data) {
-        debugging('admin_setting_managelicenses class is deprecated. Please use \tool_licensemanager\manager instead.',
-            DEBUG_DEVELOPER);
-
-        // do not write any setting
-        return '';
-    }
-
-    /**
-     * Builds the XHTML to display the control
-     *
-     * @deprecated since Moodle 3.9 MDL-45184. Please use \tool_licensemanager\manager instead.
-     * @todo MDL-45184 This method will be deleted in Moodle 4.1
-     *
-     * @param string $data Unused
-     * @param string $query
-     * @return string
-     */
-    public function output_html($data, $query='') {
-        debugging('admin_setting_managelicenses class is deprecated. Please use \tool_licensemanager\manager instead.',
-            DEBUG_DEVELOPER);
-
-        redirect(\tool_licensemanager\helper::get_licensemanager_url());
-    }
-}
-
-/**
  * Course formats manager. Allows to enable/disable formats and jump to settings
  */
 class admin_setting_manageformats extends admin_setting {
@@ -7882,6 +7891,7 @@ class admin_setting_managecustomfields extends admin_setting {
 
             if ($field->is_enabled()) {
                 $strfieldname = $field->displayname;
+                $class = '';
                 $hideshow = html_writer::link($url->out(false, array('action' => 'disable')),
                         $OUTPUT->pix_icon('t/hide', $txt->disable, 'moodle', array('class' => 'iconsmall')));
             } else {
@@ -7899,6 +7909,7 @@ class admin_setting_managecustomfields extends admin_setting {
                 $uninstall = html_writer::link($uninstallurl, $txt->uninstall);
             }
             $row = new html_table_row(array($strfieldname, $hideshow, $uninstall, $settings));
+            $row->attributes['class'] = $class;
             $table->data[] = $row;
         }
         $return .= html_writer::table($table);
@@ -8725,6 +8736,7 @@ class admin_setting_managecontentbankcontenttypes extends admin_setting {
  *      page (e.g. admin/roles/allow.php, instead of admin/roles/manage.php, you can pass the alternate URL here.
  * @param array $options Additional options that can be specified for page setup.
  *      pagelayout - This option can be used to set a specific pagelyaout, admin is default.
+ *      nosearch - Do not display search bar
  */
 function admin_externalpage_setup($section, $extrabutton = '', array $extraurlparams = null, $actualurl = '', array $options = array()) {
     global $CFG, $PAGE, $USER, $SITE, $OUTPUT;
@@ -8746,21 +8758,22 @@ function admin_externalpage_setup($section, $extrabutton = '', array $extraurlpa
     $adminroot = admin_get_root(false, false); // settings not required for external pages
     $extpage = $adminroot->locate($section, true);
 
+    $hassiteconfig = has_capability('moodle/site:config', context_system::instance());
     if (empty($extpage) or !($extpage instanceof admin_externalpage)) {
         // The requested section isn't in the admin tree
         // It could be because the user has inadequate capapbilities or because the section doesn't exist
-        if (!has_capability('moodle/site:config', context_system::instance())) {
+        if (!$hassiteconfig) {
             // The requested section could depend on a different capability
             // but most likely the user has inadequate capabilities
-            print_error('accessdenied', 'admin');
+            throw new \moodle_exception('accessdenied', 'admin');
         } else {
-            print_error('sectionerror', 'admin', "$CFG->wwwroot/$CFG->admin/");
+            throw new \moodle_exception('sectionerror', 'admin', "$CFG->wwwroot/$CFG->admin/");
         }
     }
 
     // this eliminates our need to authenticate on the actual pages
     if (!$extpage->check_access()) {
-        print_error('accessdenied', 'admin');
+        throw new \moodle_exception('accessdenied', 'admin');
         die;
     }
 
@@ -8806,7 +8819,7 @@ function admin_externalpage_setup($section, $extrabutton = '', array $extraurlpa
 
     $visiblepathtosection = array_reverse($extpage->visiblepath);
 
-    if ($PAGE->user_allowed_editing()) {
+    if ($PAGE->user_allowed_editing() && !$PAGE->theme->haseditswitch) {
         if ($PAGE->user_is_editing()) {
             $caption = get_string('blockseditoff');
             $url = new moodle_url($PAGE->url, array('adminedit'=>'0', 'sesskey'=>sesskey()));
@@ -8819,6 +8832,13 @@ function admin_externalpage_setup($section, $extrabutton = '', array $extraurlpa
 
     $PAGE->set_title("$SITE->shortname: " . implode(": ", $visiblepathtosection));
     $PAGE->set_heading($SITE->fullname);
+
+    if ($hassiteconfig && empty($options['nosearch'])) {
+        $PAGE->add_header_action($OUTPUT->render_from_template('core_admin/header_search_input', [
+            'action' => new moodle_url('/admin/search.php'),
+            'query' => $PAGE->url->get_param('query'),
+        ]));
+    }
 
     // prevent caching in nav block
     $PAGE->navigation->clear_cache();
@@ -8896,6 +8916,10 @@ function admin_apply_default_settings($node=null, $unconditional=true, $admindef
 
     } else if ($node instanceof admin_settingpage) {
         foreach ($node->settings as $setting) {
+            if ($setting->nosave) {
+                // Not a real setting, must be a heading or description.
+                continue;
+            }
             if (!$unconditional && !is_null($setting->get_setting())) {
                 // Do not override existing defaults.
                 continue;
@@ -9190,7 +9214,7 @@ function format_admin_setting($setting, $title='', $form='', $description='', $l
     $context->warning = $warning;
     $context->override = '';
     if (empty($setting->plugin)) {
-        if (array_key_exists($setting->name, $CFG->config_php_settings)) {
+        if ($setting->is_forceable() && array_key_exists($setting->name, $CFG->config_php_settings)) {
             $context->override = get_string('configoverride', 'admin');
         }
     } else {
@@ -10336,16 +10360,21 @@ class admin_setting_managewebserviceprotocols extends admin_setting {
         $strversion = get_string('version');
 
         $protocols_available = core_component::get_plugin_list('webservice');
-        $active_protocols = empty($CFG->webserviceprotocols) ? array() : explode(',', $CFG->webserviceprotocols);
+        $activeprotocols = empty($CFG->webserviceprotocols) ? array() : explode(',', $CFG->webserviceprotocols);
         ksort($protocols_available);
 
-        foreach ($active_protocols as $key=>$protocol) {
+        foreach ($activeprotocols as $key => $protocol) {
             if (empty($protocols_available[$protocol])) {
-                unset($active_protocols[$key]);
+                unset($activeprotocols[$key]);
             }
         }
 
         $return = $OUTPUT->heading(get_string('actwebserviceshhdr', 'webservice'), 3, 'main');
+        if (in_array('xmlrpc', $activeprotocols)) {
+            $notify = new \core\output\notification(get_string('xmlrpcwebserviceenabled', 'admin'),
+                \core\output\notification::NOTIFY_WARNING);
+            $return .= $OUTPUT->render($notify);
+        }
         $return .= $OUTPUT->box_start('generalbox webservicesui');
 
         $table = new html_table();
@@ -10367,7 +10396,7 @@ class admin_setting_managewebserviceprotocols extends admin_setting {
             $version = isset($plugin->version) ? $plugin->version : '';
 
             // hide/show link
-            if (in_array($protocol, $active_protocols)) {
+            if (in_array($protocol, $activeprotocols)) {
                 $hideshow = "<a href=\"$url&amp;action=disable&amp;webservice=$protocol\">";
                 $hideshow .= $OUTPUT->pix_icon('t/hide', $strdisable) . '</a>';
                 $displayname = "<span>$name</span>";
@@ -10700,7 +10729,7 @@ class admin_setting_configstoredfile extends admin_setting {
     }
 
     public function output_html($data, $query = '') {
-        global $PAGE, $CFG;
+        global $CFG;
 
         $options = $this->get_options();
         $id = $this->get_id();
@@ -10716,24 +10745,17 @@ class admin_setting_configstoredfile extends admin_setting {
         $fmoptions->mainfile       = $options['mainfile'];
         $fmoptions->maxbytes       = $options['maxbytes'];
         $fmoptions->maxfiles       = $options['maxfiles'];
-        $fmoptions->client_id      = uniqid();
-        $fmoptions->itemid         = $draftitemid;
         $fmoptions->subdirs        = $options['subdirs'];
-        $fmoptions->target         = $id;
         $fmoptions->accepted_types = $options['accepted_types'];
         $fmoptions->return_types   = $options['return_types'];
         $fmoptions->context        = $options['context'];
         $fmoptions->areamaxbytes   = $options['areamaxbytes'];
 
-        $fm = new form_filemanager($fmoptions);
-        $output = $PAGE->get_renderer('core', 'files');
-        $html = $output->render($fm);
-
-        $html .= '<input value="'.$draftitemid.'" name="'.$elname.'" type="hidden" />';
-        $html .= '<input value="" id="'.$id.'" type="hidden" />';
+        $fm = new MoodleQuickForm_filemanager($elname, $this->visiblename, ['id' => $id], $fmoptions);
+        $fm->setValue($draftitemid);
 
         return format_admin_setting($this, $this->visiblename,
-            '<div class="form-filemanager" data-fieldtype="filemanager">'.$html.'</div>',
+            '<div class="form-filemanager" data-fieldtype="filemanager">' . $fm->toHtml() . '</div>',
             $this->description, true, '', '', $query);
     }
 }
@@ -11268,6 +11290,18 @@ class admin_setting_searchsetupinfo extends admin_setting {
         $row[1] = $status;
         $table->data[] = $row;
 
+        // Replace front page search.
+        $row = array();
+        $url = new moodle_url("/admin/search.php?query=searchincludeallcourses");
+        $row[0] = '6. ' . html_writer::tag('a', get_string('replacefrontsearch', 'admin'),
+                                           array('href' => $url));
+        $status = html_writer::tag('span', get_string('no'), array('class' => 'badge badge-danger'));
+        if (\core_search\manager::can_replace_course_search()) {
+            $status = html_writer::tag('span', get_string('yes'), array('class' => 'badge badge-success'));
+        }
+        $row[1] = $status;
+        $table->data[] = $row;
+
         $return .= html_writer::table($table);
 
         return highlight($query, $return);
@@ -11378,16 +11412,22 @@ class admin_setting_filetypes extends admin_setting_configtext {
      * @return bool|string True if ok, the string if error found
      */
     public function validate($data) {
-
-        // No need to call parent's validation here as we are PARAM_RAW.
-
-        if ($this->util->is_listed($data, $this->onlytypes)) {
-            return true;
-
-        } else {
-            $troublemakers = $this->util->get_not_listed($data, $this->onlytypes);
-            return get_string('filetypesnotallowed', 'core_form', implode(' ', $troublemakers));
+        $parentcheck = parent::validate($data);
+        if ($parentcheck !== true) {
+            return $parentcheck;
         }
+
+        // Check for unknown file types.
+        if ($unknown = $this->util->get_unknown_file_types($data)) {
+            return get_string('filetypesunknown', 'core_form', implode(', ', $unknown));
+        }
+
+        // Check for disallowed file types.
+        if ($notlisted = $this->util->get_not_listed($data, $this->onlytypes)) {
+            return get_string('filetypesnotallowed', 'core_form', implode(', ', $notlisted));
+        }
+
+        return true;
     }
 
     /**

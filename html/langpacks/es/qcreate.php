@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qcreate', language 'es', version '3.11'.
+ * Strings for component 'qcreate', language 'es', version '4.1'.
  *
  * @package     qcreate
  * @category    string
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comment'] = 'Comentario';
+$string['modulename_link'] = 'mod/qcreate/view';
 $string['pagesize'] = 'Número de preguntas a mostrar por página';
 $string['show'] = 'Mostrar';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ja', version '3.11'.
+ * Strings for component 'tool_monitor', language 'ja', version '4.1'.
  *
  * @package     tool_monitor
  * @category    string
@@ -71,6 +71,7 @@ $string['messagetemplate_help'] = '通知閾値に達した場合、購読者に
 * ルール名 {rulename}
 * 説明 {description}
 * イベント {eventname}';
+$string['messagetemplate_link'] = 'admin/tool/monitor/managerules';
 $string['moduleinstance'] = 'インスタンス';
 $string['monitor:managerules'] = 'イベントモニタルールを管理する';
 $string['monitor:managetool'] = 'イベントモニタリングを有効/無効にする';

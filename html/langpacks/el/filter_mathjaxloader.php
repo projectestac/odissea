@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mathjaxloader', language 'el', version '3.11'.
+ * Strings for component 'filter_mathjaxloader', language 'el', version '4.1'.
  *
  * @package     filter_mathjaxloader
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['additionaldelimiters'] = 'Επιπρόσθετα διαχωριστικά εξισώσεων';
-$string['additionaldelimiters_help'] = 'Το φίλτρο MathJax αναλύει το κείμενο για εξισώσεις που περιέχονται μεταξύ διαχωριστικών χαρακτήρων.
+$string['additionaldelimiters_help'] = 'Το φίλτρο MathJax αναλύει συντακτικά το κείμενο για εξισώσεις που περιέχονται μεταξύ διαχωριστικών χαρακτήρων.
 
 Η λίστα των αναγνωρισμένων διαχωριστικών χαρακτήρων μπορεί να προστεθεί εδώ (π.χ. το AsciiMath χρησιμοποιεί `). Τα διαχωριστικά μπορούν να περιέχουν πολλούς χαρακτήρες και τα πολλαπλά διαχωριστικά μπορούν να διαχωριστούν με κόμματα.';
 $string['filtername'] = 'MathJax';
@@ -42,4 +42,4 @@ $string['mathjaxsettings'] = 'Ρυθμίσεις του MathJax';
 $string['mathjaxsettings_desc'] = 'Οι προεπιλεγμένες ρυθμίσεις του MathJax θα πρέπει να είναι κατάλληλες για τους περισσότερους χρήστες, αλλά το MathJax είναι ιδιαίτερα διαμορφώσιμο και μπορεί να προστεθεί εδώ οποιαδήποτε από τις τυπικές επιλογές ρυθμίσεων του MathJax.';
 $string['privacy:metadata'] = 'Το πρόσθετο «MathJax» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['texfiltercompatibility'] = 'Φίλτρο συμβατότητας TeX';
-$string['texfiltercompatibility_help'] = 'Το φίλτρο MathJax μπορεί να χρησιμοποιηθεί ως υποκατάστατο του φίλτρου σημειογραφίας TeX. Για να υποστηρίξει όλα τα διαχωριστικά που υποστηρίζονται από το φίλτρο σημειογραφίας TeX, το MathJax θα ρυθμιστεί ώστε να εμφανίζει όλες τις εξισώσεις στην ίδια γραμμή με το κείμενο.';
+$string['texfiltercompatibility_help'] = 'Το φίλτρο MathJax μπορεί να χρησιμοποιηθεί ως υποκατάστατο του φίλτρου σημειογραφίας TeX. Για να υποστηρίξει όλα τα διαχωριστικά που υποστηρίζονται από το φίλτρο σημειογραφίας TeX, το MathJax θα ρυθμιστεί ώστε να εμφανίζει όλες τις εξισώσεις «Στην ίδια γραμμή» με το κείμενο.';

@@ -5,7 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-Last release of this plugin is 8.0.1 (23rd of nov. 2022).
+Last release of this plugin is 8.1.0 (29th of mar. 2023).
+
+## v8.3.0 - 12th jun. 2023
+- fix: Improve data reporting
+- fix: Some issues with PHP 8.2
+
+## v8.2.6 - 24th apr. 2023
+- feat: Compatibility with Moodle 4.2
+- feat: Compatibility with TinyMCE 6
+
+## v8.1.0 - 29th nov. 2023
+- fix: Added support for PHP 8.1
+- fix: Improve data reporting
 
 ## v8.0.1 - 23rd nov. 2022
 - chore: update PHP integration to 8.0.0

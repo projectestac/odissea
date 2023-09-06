@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_formulas', language 'sv', version '3.11'.
+ * Strings for component 'qtype_formulas', language 'sv', version '4.1'.
  *
  * @package     qtype_formulas
  * @category    string
@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['answertype_link'] = 'https://moodleformulas.org/';
 $string['choiceno'] = 'Nej';
 $string['choiceyes'] = 'Ja';
+$string['correctness_link'] = 'https://moodleformulas.org/';
+$string['pluginname_link'] = 'question/type/formulas';
+$string['vars2_link'] = 'https://moodleformulas.org/';
+$string['varsglobal_link'] = 'https://moodleformulas.org/';
+$string['varsrandom_link'] = 'https://moodleformulas.org/';

@@ -179,6 +179,7 @@ class moodlelib_test extends \advanced_testcase {
 
         // Invalid utf8 string.
         $this->assertSame('aš', fix_utf8('a'.chr(130).'š'), 'This fails with buggy iconv() when mbstring extenstion is not available as fallback.');
+        $this->assertSame('Hello ', fix_utf8('Hello ￿'));
     }
 
     public function test_optional_param() {
@@ -474,32 +475,40 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame(
             '#()*#,9789\'".,<42897></?$(*DSFMO#$*)(SDJ)($*)',
             clean_param('#()*#,9789\'".,<42897></?$(*DSFMO#$*)(SDJ)($*)', PARAM_RAW));
+        $this->assertSame(null, clean_param(null, PARAM_RAW));
     }
 
     public function test_clean_param_trim() {
         $this->assertSame('Frog toad', clean_param("   Frog toad   \r\n  ", PARAM_RAW_TRIMMED));
+        $this->assertSame('', clean_param(null, PARAM_RAW_TRIMMED));
     }
 
     public function test_clean_param_clean() {
         // PARAM_CLEAN is an ugly hack, do not use in new code (skodak),
         // instead use more specific type, or submit sothing that can be verified properly.
         $this->assertSame('xx', clean_param('xx<script>', PARAM_CLEAN));
+        $this->assertSame('', clean_param(null, PARAM_CLEAN));
+        $this->assertSame('', clean_param(null, PARAM_CLEANHTML));
     }
 
     public function test_clean_param_alpha() {
         $this->assertSame('DSFMOSDJ', clean_param('#()*#,9789\'".,<42897></?$(*DSFMO#$*)(SDJ)($*)', PARAM_ALPHA));
+        $this->assertSame('', clean_param(null, PARAM_ALPHA));
     }
 
     public function test_clean_param_alphanum() {
         $this->assertSame('978942897DSFMOSDJ', clean_param('#()*#,9789\'".,<42897></?$(*DSFMO#$*)(SDJ)($*)', PARAM_ALPHANUM));
+        $this->assertSame('', clean_param(null, PARAM_ALPHANUM));
     }
 
     public function test_clean_param_alphaext() {
         $this->assertSame('DSFMOSDJ', clean_param('#()*#,9789\'".,<42897></?$(*DSFMO#$*)(SDJ)($*)', PARAM_ALPHAEXT));
+        $this->assertSame('', clean_param(null, PARAM_ALPHAEXT));
     }
 
     public function test_clean_param_sequence() {
         $this->assertSame(',9789,42897', clean_param('#()*#,9789\'".,<42897></?$(*DSFMO#$*)(SDJ)($*)', PARAM_SEQUENCE));
+        $this->assertSame('', clean_param(null, PARAM_SEQUENCE));
     }
 
     public function test_clean_param_component() {
@@ -528,6 +537,7 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame('', clean_param('_user', PARAM_COMPONENT));
         $this->assertSame('', clean_param('2rating', PARAM_COMPONENT));
         $this->assertSame('', clean_param('user_', PARAM_COMPONENT));
+        $this->assertSame('', clean_param(null, PARAM_COMPONENT));
     }
 
     public function test_clean_param_localisedfloat() {
@@ -544,6 +554,7 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame(false, clean_param('1X000X5', PARAM_LOCALISEDFLOAT));
         $this->assertSame(false, clean_param('nan', PARAM_LOCALISEDFLOAT));
         $this->assertSame(false, clean_param('10.6blah', PARAM_LOCALISEDFLOAT));
+        $this->assertSame(null, clean_param(null, PARAM_LOCALISEDFLOAT));
 
         // Tests with a localised decimal separator.
         $this->define_local_decimal_separator();
@@ -593,6 +604,7 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame('', clean_param('Xx', PARAM_PLUGIN));
         $this->assertSame('', clean_param('_xx', PARAM_PLUGIN));
         $this->assertSame('', clean_param('xx_', PARAM_PLUGIN));
+        $this->assertSame('', clean_param(null, PARAM_PLUGIN));
     }
 
     public function test_clean_param_area() {
@@ -609,6 +621,7 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame('', clean_param('some-thing', PARAM_AREA));
         $this->assertSame('', clean_param('somethííng', PARAM_AREA));
         $this->assertSame('', clean_param('something.x', PARAM_AREA));
+        $this->assertSame('', clean_param(null, PARAM_AREA));
     }
 
     public function test_clean_param_text() {
@@ -630,6 +643,7 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame('<lang lang="en">a>a</lang>', clean_param('<lang lang="en">a>a</lang>', PARAM_TEXT)); // Standard strip_tags() behaviour.
         $this->assertSame('a', clean_param('<lang lang="en">a<a</lang>', PARAM_TEXT));
         $this->assertSame('<lang lang="en">aa</lang>', clean_param('<lang lang="en">a<br>a</lang>', PARAM_TEXT));
+        $this->assertSame('', clean_param(null, PARAM_TEXT));
     }
 
     public function test_clean_param_url() {
@@ -655,6 +669,7 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame('', clean_param('mailto:support@moodle.org', PARAM_URL));
         $this->assertSame('', clean_param('mailto:support@moodle.org?subject=Hello%20Moodle', PARAM_URL));
         $this->assertSame('', clean_param('mailto:support@moodle.org?subject=Hello%20Moodle&cc=feedback@moodle.org', PARAM_URL));
+        $this->assertSame('', clean_param(null, PARAM_URL));
     }
 
     public function test_clean_param_localurl() {
@@ -695,6 +710,9 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame('', clean_param('http://www.example.com.evil.net/hack.php', PARAM_LOCALURL));
         $CFG->wwwroot = 'https://www.example.com';
         $this->assertSame('', clean_param('https://www.example.com.evil.net/hack.php', PARAM_LOCALURL));
+
+        $this->assertSame('', clean_param('', PARAM_LOCALURL));
+        $this->assertSame('', clean_param(null, PARAM_LOCALURL));
     }
 
     public function test_clean_param_file() {
@@ -719,6 +737,7 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame(' . .dontltrim.me', clean_param(' . .dontltrim.me', PARAM_FILE));
         $this->assertSame('here is a tab.txt', clean_param("here is a tab\t.txt", PARAM_FILE));
         $this->assertSame('here is a linebreak.txt', clean_param("here is a line\r\nbreak.txt", PARAM_FILE));
+        $this->assertSame('', clean_param(null, PARAM_FILE));
 
         // The following behaviours have been maintained although they seem a little odd.
         $this->assertSame('funnything', clean_param('funny:thing', PARAM_FILE));
@@ -746,6 +765,13 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame('/..b../.../myfile.txt', clean_param('/..b../.../myfile.txt', PARAM_PATH));
         $this->assertSame('..b../.../myfile.txt', clean_param('..b../.../myfile.txt', PARAM_PATH));
         $this->assertSame('/super/slashes/', clean_param('/super//slashes///', PARAM_PATH));
+        $this->assertSame('', clean_param(null, PARAM_PATH));
+    }
+
+    public function test_clean_param_safepath() {
+        $this->assertSame('folder/file', clean_param('folder/file', PARAM_SAFEPATH));
+        $this->assertSame('folder//file', clean_param('folder/../file', PARAM_SAFEPATH));
+        $this->assertSame('', clean_param(null, PARAM_SAFEPATH));
     }
 
     public function test_clean_param_username() {
@@ -767,6 +793,7 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame(clean_param('john#$%&() ', PARAM_USERNAME), 'john');
         $this->assertSame('johnd', clean_param('JOHNdóé ', PARAM_USERNAME));
         $this->assertSame(clean_param('john.,:;-_/|\ñÑ[]A_X-,D {} ~!@#$%^&*()_+ ?><[] ščřžžý ?ýá?ý??doe ', PARAM_USERNAME), 'john.-_a_x-d@_doe');
+        $this->assertSame('', clean_param(null, PARAM_USERNAME));
 
         // Test success condition, if extendedusernamechars == ENABLE;.
         $CFG->extendedusernamechars = true;
@@ -796,6 +823,7 @@ class moodlelib_test extends \advanced_testcase {
         $this->assertSame('', clean_param('0numeric', PARAM_STRINGID));
         $this->assertSame('', clean_param('*', PARAM_STRINGID));
         $this->assertSame('', clean_param(' ', PARAM_STRINGID));
+        $this->assertSame('', clean_param(null, PARAM_STRINGID));
     }
 
     public function test_clean_param_timezone() {
@@ -830,12 +858,35 @@ class moodlelib_test extends \advanced_testcase {
             '13.5'                           => '',
             '+13.5'                          => '',
             '-13.5'                          => '',
-            '0.2'                            => '');
+            '0.2'                            => '',
+            ''                               => '',
+            null                             => '',
+        );
 
         foreach ($testvalues as $testvalue => $expectedvalue) {
             $actualvalue = clean_param($testvalue, PARAM_TIMEZONE);
             $this->assertEquals($expectedvalue, $actualvalue);
         }
+    }
+
+    public function test_clean_param_null_argument() {
+        $this->assertEquals(0, clean_param(null, PARAM_INT));
+        $this->assertEquals(0, clean_param(null, PARAM_FLOAT));
+        $this->assertEquals(0, clean_param(null, PARAM_LOCALISEDFLOAT));
+        $this->assertEquals(false, clean_param(null, PARAM_BOOL));
+        $this->assertEquals('', clean_param(null, PARAM_NOTAGS));
+        $this->assertEquals('', clean_param(null, PARAM_SAFEDIR));
+        $this->assertEquals('', clean_param(null, PARAM_HOST));
+        $this->assertEquals('', clean_param(null, PARAM_PEM));
+        $this->assertEquals('', clean_param(null, PARAM_BASE64));
+        $this->assertEquals('', clean_param(null, PARAM_TAG));
+        $this->assertEquals('', clean_param(null, PARAM_TAGLIST));
+        $this->assertEquals('', clean_param(null, PARAM_CAPABILITY));
+        $this->assertEquals(0, clean_param(null, PARAM_PERMISSION));
+        $this->assertEquals('', clean_param(null, PARAM_AUTH));
+        $this->assertEquals('', clean_param(null, PARAM_LANG));
+        $this->assertEquals('', clean_param(null, PARAM_THEME));
+        $this->assertEquals('', clean_param(null, PARAM_EMAIL));
     }
 
     public function test_validate_param() {
@@ -2744,7 +2795,8 @@ EOF;
         $modulebytes = 10240;
         $result = get_max_upload_sizes($sitebytes, $coursebytes, $modulebytes);
 
-        $this->assertSame('Activity upload limit (10KB)', $result['0']);
+        $nbsp = "\xc2\xa0";
+        $this->assertSame("Activity upload limit (10{$nbsp}KB)", $result['0']);
         $this->assertCount(2, $result);
 
         // Test course limit smallest.
@@ -2753,7 +2805,7 @@ EOF;
         $modulebytes = 51200;
         $result = get_max_upload_sizes($sitebytes, $coursebytes, $modulebytes);
 
-        $this->assertSame('Course upload limit (10KB)', $result['0']);
+        $this->assertSame("Course upload limit (10{$nbsp}KB)", $result['0']);
         $this->assertCount(2, $result);
 
         // Test site limit smallest.
@@ -2762,7 +2814,7 @@ EOF;
         $modulebytes = 51200;
         $result = get_max_upload_sizes($sitebytes, $coursebytes, $modulebytes);
 
-        $this->assertSame('Site upload limit (10KB)', $result['0']);
+        $this->assertSame("Site upload limit (10{$nbsp}KB)", $result['0']);
         $this->assertCount(2, $result);
 
         // Test site limit not set.
@@ -2771,7 +2823,7 @@ EOF;
         $modulebytes = 51200;
         $result = get_max_upload_sizes($sitebytes, $coursebytes, $modulebytes);
 
-        $this->assertSame('Activity upload limit (50KB)', $result['0']);
+        $this->assertSame("Activity upload limit (50{$nbsp}KB)", $result['0']);
         $this->assertCount(3, $result);
 
         $sitebytes = 0;
@@ -2779,7 +2831,7 @@ EOF;
         $modulebytes = 102400;
         $result = get_max_upload_sizes($sitebytes, $coursebytes, $modulebytes);
 
-        $this->assertSame('Course upload limit (50KB)', $result['0']);
+        $this->assertSame("Course upload limit (50{$nbsp}KB)", $result['0']);
         $this->assertCount(3, $result);
 
         // Test custom bytes in range.
@@ -2822,9 +2874,9 @@ EOF;
         $sitebytes = 51200;
         $result = get_max_upload_sizes($sitebytes);
 
-        $this->assertSame('Site upload limit (50KB)', $result['0']);
-        $this->assertSame('50KB', $result['51200']);
-        $this->assertSame('10KB', $result['10240']);
+        $this->assertSame("Site upload limit (50{$nbsp}KB)", $result['0']);
+        $this->assertSame("50{$nbsp}KB", $result['51200']);
+        $this->assertSame("10{$nbsp}KB", $result['10240']);
         $this->assertCount(3, $result);
 
         // Test no limit.
@@ -3952,6 +4004,7 @@ EOF;
             [2, "one\ftwo"],
             [1, "SO<sub>4</sub><sup>2-</sup>"],
             [6, '4+4=8 i.e. O(1) a,b,c,d I’m black&blue_really'],
+            [1, '<span>a</span><span>b</span>'],
         ];
     }
 
@@ -5033,25 +5086,25 @@ EOF;
     public function display_size_provider() {
 
         return [
-            [0,     '0 bytes'    ],
-            [1,     '1 bytes'    ],
-            [1023,  '1023 bytes' ],
-            [1024,      '1KB'    ],
-            [2222,      '2.2KB'  ],
-            [33333,     '32.6KB' ],
-            [444444,    '434KB'  ],
-            [5555555,       '5.3MB'  ],
-            [66666666,      '63.6MB' ],
-            [777777777,     '741.7MB'],
-            [8888888888,        '8.3GB'  ],
-            [99999999999,       '93.1GB' ],
-            [111111111111,      '103.5GB'],
-            [2222222222222,         '2TB'    ],
-            [33333333333333,        '30.3TB' ],
-            [444444444444444,       '404.2TB'],
-            [5555555555555555,          '4.9PB'  ],
-            [66666666666666666,         '59.2PB' ],
-            [777777777777777777,        '690.8PB'],
+            [0, '0 bytes'],
+            [1, '1 bytes'],
+            [1023, '1023 bytes'],
+            [1024, '1.0 KB'],
+            [2222, '2.2 KB'],
+            [33333, '32.6 KB'],
+            [444444, '434.0 KB'],
+            [5555555, '5.3 MB'],
+            [66666666, '63.6 MB'],
+            [777777777, '741.7 MB'],
+            [8888888888, '8.3 GB'],
+            [99999999999, '93.1 GB'],
+            [111111111111, '103.5 GB'],
+            [2222222222222, '2.0 TB'],
+            [33333333333333, '30.3 TB'],
+            [444444444444444, '404.2 TB'],
+            [5555555555555555, '4.9 PB'],
+            [66666666666666666, '59.2 PB'],
+            [777777777777777777, '690.8 PB'],
         ];
     }
 
@@ -5063,6 +5116,383 @@ EOF;
      */
     public function test_display_size($size, $expected) {
         $result = display_size($size);
+        $expected = str_replace(' ', "\xc2\xa0", $expected); // Should be non-breaking space.
         $this->assertEquals($expected, $result);
+    }
+
+    /**
+     * Provider for display_size using fixed units.
+     *
+     * @return array of ($size, $units, $expected)
+     */
+    public function display_size_fixed_provider(): array {
+        return [
+            [0, 'KB', '0.0 KB'],
+            [1, 'MB', '0.0 MB'],
+            [777777777, 'GB', '0.7 GB'],
+            [8888888888, 'PB', '0.0 PB'],
+            [99999999999, 'TB', '0.1 TB'],
+            [99999999999, 'B', '99999999999 bytes'],
+        ];
+    }
+
+    /**
+     * Test display_size using fixed units.
+     *
+     * @dataProvider display_size_fixed_provider
+     * @param int $size Size in bytes
+     * @param string $units Fixed units
+     * @param string $expected Expected string.
+     */
+    public function test_display_size_fixed(int $size, string $units, string $expected): void {
+        $result = display_size($size, 1, $units);
+        $expected = str_replace(' ', "\xc2\xa0", $expected); // Should be non-breaking space.
+        $this->assertEquals($expected, $result);
+    }
+
+    /**
+     * Provider for display_size using specified decimal places.
+     *
+     * @return array of ($size, $decimalplaces, $units, $expected)
+     */
+    public function display_size_dp_provider(): array {
+        return [
+            [0, 1, 'KB', '0.0 KB'],
+            [1, 6, 'MB', '0.000001 MB'],
+            [777777777, 0, 'GB', '1 GB'],
+            [777777777, 0, '', '742 MB'],
+            [42, 6, '', '42 bytes'],
+        ];
+    }
+
+    /**
+     * Test display_size using specified decimal places.
+     *
+     * @dataProvider display_size_dp_provider
+     * @param int $size Size in bytes
+     * @param int $places Number of decimal places
+     * @param string $units Fixed units
+     * @param string $expected Expected string.
+     */
+    public function test_display_size_dp(int $size, int $places, string $units, string $expected): void {
+        $result = display_size($size, $places, $units);
+        $expected = str_replace(' ', "\xc2\xa0", $expected); // Should be non-breaking space.
+        $this->assertEquals($expected, $result);
+    }
+
+    /**
+     * Test that the get_list_of_plugins function includes/excludes directories as appropriate.
+     *
+     * @dataProvider get_list_of_plugins_provider
+     * @param   array $expectedlist The expected list of folders
+     * @param   array $content The list of file content to set up in the virtual file root
+     * @param   string $dir The base dir to look at in the virtual file root
+     * @param   string $exclude Any additional folder to exclude
+     */
+    public function test_get_list_of_plugins(array $expectedlist, array $content, string $dir, string $exclude): void {
+        $vfileroot = \org\bovigo\vfs\vfsStream::setup('root', null, $content);
+        $base = \org\bovigo\vfs\vfsStream::url('root');
+
+        $this->assertEquals($expectedlist, get_list_of_plugins($dir, $exclude, $base));
+    }
+
+    /**
+     * Data provider for get_list_of_plugins checks.
+     *
+     * @return  array
+     */
+    public function get_list_of_plugins_provider(): array {
+        return [
+            'Standard excludes' => [
+                ['amdd', 'class', 'local', 'test'],
+                [
+                    '.' => [],
+                    '..' => [],
+                    'amd' => [],
+                    'amdd' => [],
+                    'class' => [],
+                    'classes' => [],
+                    'local' => [],
+                    'test' => [],
+                    'tests' => [],
+                    'yui' => [],
+                ],
+                '',
+                '',
+            ],
+            'Standard excludes with addition' => [
+                ['amdd', 'local', 'test'],
+                [
+                    '.' => [],
+                    '..' => [],
+                    'amd' => [],
+                    'amdd' => [],
+                    'class' => [],
+                    'classes' => [],
+                    'local' => [],
+                    'test' => [],
+                    'tests' => [],
+                    'yui' => [],
+                ],
+                '',
+                'class',
+            ],
+            'Files excluded' => [
+                ['def'],
+                [
+                    '.' => [],
+                    '..' => [],
+                    'abc' => 'File with filename abc',
+                    'def' => [
+                        '.' => [],
+                        '..' => [],
+                        'example.txt' => 'In a directory called "def"',
+                    ],
+                ],
+                '',
+                '',
+            ],
+            'Subdirectories only' => [
+                ['abc'],
+                [
+                    '.' => [],
+                    '..' => [],
+                    'foo' => [
+                        '.' => [],
+                        '..' => [],
+                        'abc' => [],
+                    ],
+                    'bar' => [
+                        '.' => [],
+                        '..' => [],
+                        'def' => [],
+                    ],
+                ],
+                'foo',
+                '',
+            ],
+        ];
+    }
+
+    /**
+     * Test get_home_page() method.
+     *
+     * @dataProvider get_home_page_provider
+     * @param string $user Whether the user is logged, guest or not logged.
+     * @param int $expected Expected value after calling the get_home_page method.
+     * @param int $defaulthomepage The $CFG->defaulthomepage setting value.
+     * @param int $enabledashboard Whether the dashboard should be enabled or not.
+     * @param int $userpreference User preference for the home page setting.
+     * @covers ::get_home_page
+     */
+    public function test_get_home_page(string $user, int $expected, ?int $defaulthomepage = null, ?int $enabledashboard = null,
+            ?int $userpreference = null) {
+        global $CFG, $USER;
+
+        $this->resetAfterTest();
+
+        if ($user == 'guest') {
+            $this->setGuestUser();
+        } else if ($user == 'logged') {
+            $this->setUser($this->getDataGenerator()->create_user());
+        }
+
+        if (isset($defaulthomepage)) {
+            $CFG->defaulthomepage = $defaulthomepage;
+        }
+        if (isset($enabledashboard)) {
+            $CFG->enabledashboard = $enabledashboard;
+        }
+
+        if ($USER) {
+            set_user_preferences(['user_home_page_preference' => $userpreference], $USER->id);
+        }
+
+        $homepage = get_home_page();
+        $this->assertEquals($expected, $homepage);
+    }
+
+    /**
+     * Data provider for get_home_page checks.
+     *
+     * @return array
+     */
+    public function get_home_page_provider(): array {
+        return [
+            'No logged user' => [
+                'user' => 'nologged',
+                'expected' => HOMEPAGE_SITE,
+            ],
+            'Guest user' => [
+                'user' => 'guest',
+                'expected' => HOMEPAGE_SITE,
+            ],
+            'Logged user. Dashboard set as default home page and enabled' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_MY,
+                'defaulthomepage' => HOMEPAGE_MY,
+                'enabledashboard' => 1,
+            ],
+            'Logged user. Dashboard set as default home page but disabled' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_MYCOURSES,
+                'defaulthomepage' => HOMEPAGE_MY,
+                'enabledashboard' => 0,
+            ],
+            'Logged user. My courses set as default home page with dashboard enabled' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_MYCOURSES,
+                'defaulthomepage' => HOMEPAGE_MYCOURSES,
+                'enabledashboard' => 1,
+            ],
+            'Logged user. My courses set as default home page with dashboard disabled' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_MYCOURSES,
+                'defaulthomepage' => HOMEPAGE_MYCOURSES,
+                'enabledashboard' => 0,
+            ],
+            'Logged user. Site set as default home page with dashboard enabled' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_SITE,
+                'defaulthomepage' => HOMEPAGE_SITE,
+                'enabledashboard' => 1,
+            ],
+            'Logged user. Site set as default home page with dashboard disabled' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_SITE,
+                'defaulthomepage' => HOMEPAGE_SITE,
+                'enabledashboard' => 0,
+            ],
+            'Logged user. User preference set as default page with dashboard enabled and user preference set to dashboard' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_MY,
+                'defaulthomepage' => HOMEPAGE_USER,
+                'enabledashboard' => 1,
+                'userpreference' => HOMEPAGE_MY,
+            ],
+            'Logged user. User preference set as default page with dashboard disabled and user preference set to dashboard' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_MYCOURSES,
+                'defaulthomepage' => HOMEPAGE_USER,
+                'enabledashboard' => 0,
+                'userpreference' => HOMEPAGE_MY,
+            ],
+            'Logged user. User preference set as default page with dashboard enabled and user preference set to my courses' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_MYCOURSES,
+                'defaulthomepage' => HOMEPAGE_USER,
+                'enabledashboard' => 1,
+                'userpreference' => HOMEPAGE_MYCOURSES,
+            ],
+            'Logged user. User preference set as default page with dashboard disabled and user preference set to my courses' => [
+                'user' => 'logged',
+                'expected' => HOMEPAGE_MYCOURSES,
+                'defaulthomepage' => HOMEPAGE_USER,
+                'enabledashboard' => 0,
+                'userpreference' => HOMEPAGE_MYCOURSES,
+            ],
+        ];
+    }
+
+    /**
+     * Test get_default_home_page() method.
+     *
+     * @covers ::get_default_home_page
+     */
+    public function test_get_default_home_page() {
+        global $CFG;
+
+        $this->resetAfterTest();
+
+        $CFG->enabledashboard = 1;
+        $default = get_default_home_page();
+        $this->assertEquals(HOMEPAGE_MY, $default);
+
+        $CFG->enabledashboard = 0;
+        $default = get_default_home_page();
+        $this->assertEquals(HOMEPAGE_MYCOURSES, $default);
+    }
+
+    /**
+     * Tests the get_performance_info function with regard to locks.
+     *
+     * @covers ::get_performance_info
+     */
+    public function test_get_performance_info_locks(): void {
+        global $PERF;
+
+        // Unset lock data just in case previous tests have set it.
+        unset($PERF->locks);
+
+        // With no lock data, there should be no information about locks in the results.
+        $result = get_performance_info();
+        $this->assertStringNotContainsString('Lock', $result['html']);
+        $this->assertStringNotContainsString('Lock', $result['txt']);
+
+        // Rather than really do locks, just fill the array with fake data in the right format.
+        $PERF->locks = [
+            (object) [
+                'type' => 'phpunit',
+                'resource' => 'lock1',
+                'wait' => 0.59,
+                'success' => true,
+                'held' => '6.04'
+            ], (object) [
+                'type' => 'phpunit',
+                'resource' => 'lock2',
+                'wait' => 0.91,
+                'success' => false
+            ]
+        ];
+        $result = get_performance_info();
+
+        // Extract HTML table rows.
+        $this->assertEquals(1, preg_match('~<table class="locktimings.*?</table>~s',
+                $result['html'], $matches));
+        $this->assertEquals(3, preg_match_all('~<tr[> ].*?</tr>~s', $matches[0], $matches2));
+        $rows = $matches2[0];
+
+        // Check header.
+        $this->assertMatchesRegularExpression('~Lock.*Waited.*Obtained.*Held~s', $rows[0]);
+        // Check both locks.
+        $this->assertMatchesRegularExpression('~phpunit/lock1.*0\.6.*&#x2713;.*6\.0~s', $rows[1]);
+        $this->assertMatchesRegularExpression('~phpunit/lock2.*0\.9.*&#x274c;.*-~s', $rows[2]);
+
+        $this->assertStringContainsString('Locks (waited/obtained/held): ' .
+                'phpunit/lock1 (0.6/y/6.0) phpunit/lock2 (0.9/n/-).', $result['txt']);
+    }
+
+    /**
+     * Tests the get_performance_info function with regard to session wait time.
+     *
+     * @covers ::get_performance_info
+     */
+    public function test_get_performance_info_session_wait(): void {
+        global $PERF;
+
+        // With no session lock data, there should be no session wait information in the results.
+        unset($PERF->sessionlock);
+        $result = get_performance_info();
+        $this->assertStringNotContainsString('Session wait', $result['html']);
+        $this->assertStringNotContainsString('sessionwait', $result['txt']);
+
+        // With suitable data, it should be included in the result.
+        $PERF->sessionlock = ['wait' => 4.2];
+        $result = get_performance_info();
+        $this->assertStringContainsString('Session wait: 4.200 secs', $result['html']);
+        $this->assertStringContainsString('sessionwait: 4.200 secs', $result['txt']);
+    }
+
+    /**
+     * Test the html_is_blank() function.
+     *
+     * @covers ::html_is_blank
+     */
+    public function test_html_is_blank() {
+        $this->assertEquals(true, html_is_blank(null));
+        $this->assertEquals(true, html_is_blank(''));
+        $this->assertEquals(true, html_is_blank('<p> </p>'));
+        $this->assertEquals(false, html_is_blank('<p>.</p>'));
+        $this->assertEquals(false, html_is_blank('<img src="#">'));
     }
 }

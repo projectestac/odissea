@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_paypal', language 'es', version '3.11'.
+ * Strings for component 'availability_paypal', language 'es', version '4.1'.
  *
  * @package     availability_paypal
  * @category    string
@@ -39,12 +39,17 @@ $string['error_itemnumber'] = 'Usted debe proporcionar un número del elemento.'
 $string['itemname'] = 'Nombre del elemento';
 $string['itemname_help'] = 'Número del elemento a ser mostrado en el formato de PayPal';
 $string['itemnumber'] = 'Número del elemento';
+$string['messageprovider:payment_error'] = 'Errores al pagar';
+$string['messageprovider:payment_pending'] = 'Pagos pendientes';
 $string['notdescription'] = 'Usted no ha enviado un <a href="{$a}">pago con PayPal</a>';
-$string['paymentcompleted'] = 'Su pago fue aceptado y ahora Usted puede acceder a la actividad o recurso. Gracias.';
+$string['paymentcompleted'] = 'Su pago fue aceptado y ahora puede acceder a la actividad o recurso. Gracias.';
 $string['paymentinstant'] = 'Use el botón inferior para pagar y acceder a la actividad o recurso.';
-$string['paymentpending'] = 'Hay un pago pendiente registrado para Usted.';
+$string['paymentpending'] = 'Hay un pago pendiente registrado para usted.';
 $string['paymentrequired'] = 'Usted debe de hacer un pago con PayPal para acceder a la actividad o el recurso.';
+$string['paypal:managetransactions'] = 'Gestionar transacciones de pago';
+$string['paypal:receivenotifications'] = 'Recibir notificaciones de pago';
 $string['paypalaccepted'] = 'Pago PayPal aceptado';
 $string['pluginname'] = 'PayPal';
 $string['sendpaymentbutton'] = 'Enviar pago por PayPal';
 $string['title'] = 'Pago PayPal';
+$string['transactionsreport'] = 'Pagos de disponibilidad Paypal';

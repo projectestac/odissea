@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_missingtype', language 'ja', version '3.11'.
+ * Strings for component 'qtype_missingtype', language 'ja', version '4.1'.
  *
  * @package     qtype_missingtype
  * @category    string
@@ -31,7 +31,7 @@ $string['deletedquestion'] = '穴埋め問題';
 $string['deletedquestiontext'] = '問題が見つからないため表示することはできません。';
 $string['missing'] = 'このシステムにインストールされていない問題タイプ';
 $string['missingqtypewarning'] = '現在、この問題タイプはシステムにインストールされていません。あなたはこの問題に関して何もすることはできません。';
-$string['pluginname'] = 'タイプ不明';
+$string['pluginname'] = '問題タイププレースホルダ不明';
 $string['pluginnameadding'] = 'このシステムにインストールされていない問題タイプの追加';
 $string['pluginnameediting'] = 'このシステムにインストールされていない問題タイプの編集';
 $string['privacy:metadata'] = 'ミッシングタイプ問題タイププラグインはいかなる個人データも保存しません。';

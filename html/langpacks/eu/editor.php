@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'eu', version '3.11'.
+ * Strings for component 'editor', language 'eu', version '4.1'.
  *
  * @package     editor
  * @category    string
@@ -59,6 +59,7 @@ Badaude 3 zeharbide saiatzeko, nahi izanez gero: Ctrl-v ordez, erabili Shift-Ins
 $string['delete'] = 'Ezabatu';
 $string['editors'] = 'Testu-editoreak';
 $string['editorsettings'] = 'Kudeatu editoreak';
+$string['editorxformat'] = '{$a} formatua';
 $string['enterurlfirst'] = 'Lehenik URLa jarri behar duzu';
 $string['filebrowser'] = 'Fitxategi-nabigatzailea';
 $string['findwhat'] = 'Bilatu';

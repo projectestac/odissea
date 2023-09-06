@@ -24,7 +24,6 @@
  */
 namespace mod_assign;
 
-use assign_header;
 use mod_assign_grade_form;
 use mod_assign_test_generator;
 use mod_assign_testable_assign;
@@ -864,7 +863,7 @@ class locallib_test extends \advanced_testcase {
 
         // Test you can see the submit button for an online text assignment with a submission.
         $this->setUser($student);
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertStringContainsString(get_string('submitassignment', 'assign'),
             $output, 'Can submit non empty onlinetext assignment');
     }
@@ -1995,7 +1994,7 @@ class locallib_test extends \advanced_testcase {
 
         // Check we can see the submit button.
         $this->setUser($student);
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertStringContainsString(get_string('submitassignment', 'assign'), $output);
 
         $submission = $assign->get_group_submission($student->id, 0, true);
@@ -2003,18 +2002,18 @@ class locallib_test extends \advanced_testcase {
         $assign->testable_update_submission($submission, $student->id, true, true);
 
         // Check that the student does not see "Submit" button.
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertStringNotContainsString(get_string('submitassignment', 'assign'), $output);
 
         // Change to another user in the same group.
         $this->setUser($otherstudent);
-        $output = $assign->view_student_summary($otherstudent, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $otherstudent);
         $this->assertStringContainsString(get_string('submitassignment', 'assign'), $output);
 
         $submission = $assign->get_group_submission($otherstudent->id, 0, true);
         $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
         $assign->testable_update_submission($submission, $otherstudent->id, true, true);
-        $output = $assign->view_student_summary($otherstudent, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $otherstudent);
         $this->assertStringNotContainsString(get_string('submitassignment', 'assign'), $output);
     }
 
@@ -2049,8 +2048,9 @@ class locallib_test extends \advanced_testcase {
         $this->add_submission($student, $assign);
 
         // Check we can see the submit button.
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertStringContainsString(get_string('submitassignment', 'assign'), $output);
+        $output = $assign->view_student_summary($student, true);
         $this->assertStringContainsString(get_string('timeremaining', 'assign'), $output);
         $difftime = time() - $time;
         $this->assertStringContainsString(get_string('overdue', 'assign', format_time((2 * DAYSECS) + $difftime)), $output);
@@ -2060,15 +2060,16 @@ class locallib_test extends \advanced_testcase {
         $assign->testable_update_submission($submission, $student->id, true, true);
 
         // Check that the student does not see "Submit" button.
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertStringNotContainsString(get_string('submitassignment', 'assign'), $output);
 
         // Change to another user in the same group.
         $this->setUser($otherstudent);
-        $output = $assign->view_student_summary($otherstudent, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $otherstudent);
         $this->assertStringNotContainsString(get_string('submitassignment', 'assign'), $output);
 
         // Check that time remaining is not overdue.
+        $output = $assign->view_student_summary($otherstudent, true);
         $this->assertStringContainsString(get_string('timeremaining', 'assign'), $output);
         $difftime = time() - $time;
         $this->assertStringContainsString(get_string('submittedlate', 'assign', format_time((2 * DAYSECS) + $difftime)), $output);
@@ -2076,7 +2077,7 @@ class locallib_test extends \advanced_testcase {
         $submission = $assign->get_group_submission($otherstudent->id, 0, true);
         $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
         $assign->testable_update_submission($submission, $otherstudent->id, true, true);
-        $output = $assign->view_student_summary($otherstudent, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $otherstudent);
         $this->assertStringNotContainsString(get_string('submitassignment', 'assign'), $output);
     }
 
@@ -2512,7 +2513,7 @@ class locallib_test extends \advanced_testcase {
 
         // Student should be able to see an add submission button.
         $this->setUser($student);
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertNotEquals(false, strpos($output, get_string('addsubmission', 'assign')));
 
         // Add a submission.
@@ -2543,13 +2544,15 @@ class locallib_test extends \advanced_testcase {
         // Need a better check.
         $this->assertNotEquals(false, strpos($output, 'Submission text'), 'Contains: Submission text');
 
-        // Check that the student now has a button for Add a new attempt".
-        $this->assertNotEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
-        // Check that the student now does not have a button for Submit.
-        $this->assertEquals(false, strpos($output, get_string('submitassignment', 'assign')));
-
         // Check that the student now has a submission history.
         $this->assertNotEquals(false, strpos($output, get_string('attempthistory', 'assign')));
+
+        // Check that the student now does not have a button for Submit.
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
+        $this->assertEquals(false, strpos($output, get_string('submitassignment', 'assign')));
+
+        // Check that the student now has a button for Add a new attempt".
+        $this->assertNotEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
 
         $this->setUser($teacher);
         // Check that the grading table loads correctly and contains this user.
@@ -2613,7 +2616,7 @@ class locallib_test extends \advanced_testcase {
 
         // Student should be able to see an add submission button.
         $this->setUser($student);
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertNotEquals(false, strpos($output, get_string('addsubmission', 'assign')));
 
         // Add a submission.
@@ -2632,15 +2635,15 @@ class locallib_test extends \advanced_testcase {
         $output = $assign->view_student_summary($student, true);
         $this->assertNotEquals(false, strpos($output, '50.0'));
 
-        // Check that the student now has a button for Add a new attempt.
-        $output = $assign->view_student_summary($student, true);
-        $this->assertNotEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
-
-        // Check that the student now does not have a button for Submit.
-        $this->assertEquals(false, strpos($output, get_string('submitassignment', 'assign')));
-
         // Check that the student now has a submission history.
         $this->assertNotEquals(false, strpos($output, get_string('attempthistory', 'assign')));
+
+        // Check that the student now does not have a button for Submit.
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
+        $this->assertEquals(false, strpos($output, get_string('submitassignment', 'assign')));
+
+        // Check that the student now has a button for Add a new attempt.
+        $this->assertNotEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
 
         // Add a second submission.
         $this->add_submission($student, $assign);
@@ -2659,7 +2662,7 @@ class locallib_test extends \advanced_testcase {
 
         // Check that the student now has a button for Add a new attempt.
         $this->setUser($student);
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertMatchesRegularExpression('/' . get_string('addnewattempt', 'assign') . '/', $output);
         $this->assertNotEquals(false, strpos($output, get_string('addnewattempt', 'assign')));
     }
@@ -2687,7 +2690,7 @@ class locallib_test extends \advanced_testcase {
 
         // Student should be able to see an add submission button.
         $this->setUser($student);
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertNotEquals(false, strpos($output, get_string('addsubmission', 'assign')));
 
         // Add a submission as a student.
@@ -2730,7 +2733,7 @@ class locallib_test extends \advanced_testcase {
 
         // Student should be able to see an add submission button.
         $this->setUser($student);
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertNotEquals(false, strpos($output, get_string('addsubmission', 'assign')));
 
         // Add a submission.
@@ -3017,7 +3020,7 @@ class locallib_test extends \advanced_testcase {
 
         // Student should be able to see an add submission button.
         $this->setUser($student);
-        $output = $assign->view_student_summary($student, true);
+        $output = $assign->view_submission_action_bar($assign->get_instance(), $student);
         $this->assertNotEquals(false, strpos($output, get_string('addsubmission', 'assign')));
 
         // Add a submission but don't submit now.
@@ -3598,7 +3601,18 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
             $fileareas = $plugin->get_file_areas();
 
             if ($type == 'editpdf') {
-                $this->assertEquals(array('download' => 'Annotate PDF'), $fileareas);
+                $checkareas = [
+                    'download' => 'Annotate PDF',
+                    'combined' => 'Annotate PDF',
+                    'partial' => 'Annotate PDF',
+                    'importhtml' => 'Annotate PDF',
+                    'pages' => 'Annotate PDF',
+                    'readonlypages' => 'Annotate PDF',
+                    'stamps' => 'Annotate PDF',
+                    'tmp_jpg_to_pdf' => 'Annotate PDF',
+                    'tmp_rotated_jpg' => 'Annotate PDF'
+                ];
+                $this->assertEquals($checkareas, $fileareas);
                 $usingfilearea++;
             } else if ($type == 'file') {
                 $this->assertEquals(array('feedback_files' => 'Feedback files'), $fileareas);
@@ -3665,7 +3679,8 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
                 'sortorder' => 1,
                 'allowsubmissionsfromdate' => 1,
                 'duedate' => 2,
-                'cutoffdate' => 3
+                'cutoffdate' => 3,
+                'timelimit' => null
             ],
             (object) [
                 // Override for group 2, lower priority (numerically higher sortorder).
@@ -3675,7 +3690,8 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
                 'sortorder' => 2,
                 'allowsubmissionsfromdate' => 5,
                 'duedate' => 6,
-                'cutoffdate' => 6
+                'cutoffdate' => 6,
+                'timelimit' => null
             ],
             (object) [
                 // User override.
@@ -3685,7 +3701,8 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
                 'sortorder' => null,
                 'allowsubmissionsfromdate' => 7,
                 'duedate' => 8,
-                'cutoffdate' => 9
+                'cutoffdate' => 9,
+                'timelimit' => null
             ],
         ];
 
@@ -4224,106 +4241,6 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
     }
 
     /**
-     * Data provider for test_view_group_override
-     *
-     * @return array Provider data
-     */
-    public function view_group_override_provider() {
-        return [
-            'Other users should see their duedate' => [
-                'student',
-                ['group2'],
-                'group1',
-                '7 June 2019, 5:37 PM',
-            ],
-            'Teacher should be able to see all group override duedate' => [
-                'teacher',
-                ['group1'],
-                'group1',
-                '20 September 2019, 10:37 PM',
-            ],
-            'Teacher should be able to see all group override duedate even if they are not member' => [
-                'editingteacher',
-                ['group1'],
-                'group2',
-                '7 June 2019, 5:37 PM',
-            ]
-        ];
-    }
-
-    /**
-     * Test showing group override duedate for admin
-     *
-     * @dataProvider view_group_override_provider
-     * @param string $role the role of the user (teacher, student, etc)
-     * @param string[] $groups the groups the user are member of
-     * @param string $activegroup The selected group
-     * @param string $expecteddate The expected due date
-     */
-    public function test_view_group_override(string $role, array $groups, string $activegroup, string $expecteddate) {
-        global $DB, $PAGE, $SESSION;
-
-        $this->resetAfterTest();
-        $course = $this->getDataGenerator()->create_course();
-
-        $group1 = $this->getDataGenerator()->create_group(['courseid' => $course->id]);
-        $group2 = $this->getDataGenerator()->create_group(['courseid' => $course->id]);
-
-        $user = $this->getDataGenerator()->create_and_enrol($course, $role);
-        if (in_array('group1', $groups)) {
-            groups_add_member($group1, $user);
-        }
-        if (in_array('group2', $groups)) {
-            groups_add_member($group2, $user);
-        }
-        $activegroup = $$activegroup;
-
-        $assign = $this->create_instance($course, [
-            'groupmode' => SEPARATEGROUPS,
-            'duedate' => 1558999899, // 28 May 2019, 7:31 AM.
-        ]);
-        $instance = $assign->get_instance();
-
-        // Overrides for two groups.
-        $overrides = [
-            (object) [
-                'assignid' => $instance->id,
-                'groupid' => $group1->id,
-                'userid' => null,
-                'sortorder' => 1,
-                'duedate' => 1568990258, // 20 September 2019, 10:37 PM.
-            ],
-            (object) [
-                'assignid' => $instance->id,
-                'groupid' => $group2->id,
-                'userid' => null,
-                'sortorder' => 2,
-                'duedate' => 1559900258, // 7 June 2019, 5:37 PM.
-            ],
-        ];
-
-        foreach ($overrides as &$override) {
-            $override->id = $DB->insert_record('assign_overrides', $override);
-        }
-
-        $currenturl = new \moodle_url('/mod/assign/view.php', ['id' => $assign->get_course_module()->id]);
-        $PAGE->set_url($currenturl);
-
-        $this->setUser($user);
-        $_GET['group'] = $activegroup->id;
-
-        /** @var assign $assign */
-        $header = new assign_header(
-            $assign->get_instance(),
-            $assign->get_context(),
-            false,
-            $assign->get_course_module()->id
-        );
-        $output = $assign->get_renderer()->render($header);
-        $this->assertStringContainsStringIgnoringCase($expecteddate, $output);
-    }
-
-    /**
      * Test that cron task uses task API to get its last run time.
      */
     public function test_cron_use_task_api_to_get_lastruntime() {
@@ -4371,5 +4288,322 @@ Anchor link 2:<a title=\"bananas\" href=\"../logo-240x60.gif\">Link text</a>
         $event2 = $DB->get_record('event', $params);
         $this->assertNotEmpty($event2);
         $this->assertSame('This one should be re-created', $event2->description);
+    }
+
+    /**
+     * Test submissions that need grading output after one ungraded submission
+     */
+    public function test_submissions_need_grading() {
+        global $PAGE;
+
+        $this->resetAfterTest();
+        $course = $this->getDataGenerator()->create_course();
+        $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
+        $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
+
+        // Setup the assignment.
+        $this->setUser($teacher);
+        $time = time();
+        $assign = $this->create_instance($course, [
+                'assignsubmission_onlinetext_enabled' => 1,
+            ]);
+        $PAGE->set_url(new \moodle_url('/mod/assign/view.php', [
+            'id' => $assign->get_course_module()->id,
+            'action' => 'grading',
+        ]));
+
+        // Check for 0 submissions.
+        $summary = $assign->view('viewcourseindex');
+
+        $this->assertStringContainsString('/mod/assign/view.php?id=' .
+            $assign->get_course_module()->id . '&amp;action=grading">' .
+            get_string('numberofsubmissionsneedgradinglabel', 'assign', 0) . '</a>', $summary);
+
+        // Simulate an assignment submission.
+        $this->setUser($student);
+        $submission = $assign->get_user_submission($student->id, true);
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign->testable_update_submission($submission, $student->id, true, false);
+        $data = new \stdClass();
+        $data->onlinetext_editor = [
+            'itemid' => file_get_unused_draft_itemid(),
+            'text' => 'Submission text',
+            'format' => FORMAT_MOODLE,
+        ];
+        $plugin = $assign->get_submission_plugin_by_type('onlinetext');
+        $plugin->save($submission, $data);
+
+        // Check for 1 ungraded submission.
+        $this->setUser($teacher);
+
+        $summary = $assign->view('viewcourseindex');
+
+        $this->assertStringContainsString('/mod/assign/view.php?id=' .
+            $assign->get_course_module()->id .  '&amp;action=grading">' .
+            get_string('numberofsubmissionsneedgradinglabel', 'assign', 1) . '</a>', $summary);
+    }
+
+    /**
+     * Test that attachments should not be provided if \assign->show_intro returns false.
+     *
+     * @covers \assign::should_provide_intro_attachments
+     */
+    public function test_should_provide_intro_attachments_with_show_intro_disabled() {
+        $this->resetAfterTest();
+        $futuredate = time() + 300;
+        list($assign, $instance, $student) = $this->create_submission([
+            'alwaysshowdescription' => '0',
+            'allowsubmissionsfromdate' => $futuredate,
+        ]);
+        $this->assertFalse($assign->should_provide_intro_attachments($student->id));
+    }
+
+    /**
+     * Test that attachments should be provided if user has capability to manage activity.
+     *
+     * @covers \assign::should_provide_intro_attachments
+     */
+    public function test_should_provide_intro_attachments_with_bypass_capability() {
+        $this->resetAfterTest();
+        list($assign, $instance, $student) = $this->create_submission([
+            'submissionattachments' => 1,
+        ]);
+        // Provide teaching role to student1 so they are able to bypass time limit restrictions on viewing attachments.
+        $this->getDataGenerator()->enrol_user($student->id, $instance->course, 'editingteacher');
+        $this->assertTrue($assign->should_provide_intro_attachments($student->id));
+    }
+
+    /**
+     * Test that attachments should be provided if submissionattachments is disabled.
+     *
+     * @covers \assign::should_provide_intro_attachments
+     */
+    public function test_should_provide_intro_attachments_with_submissionattachments_disabled() {
+        $this->resetAfterTest();
+        list($assign, $instance, $student) = $this->create_submission();
+        $this->assertTrue($assign->should_provide_intro_attachments($student->id));
+    }
+
+    /**
+     * Test that attachments should not be provided if submissionattachments is enabled with no open submission.
+     *
+     * @covers \assign::should_provide_intro_attachments
+     */
+    public function test_should_provide_intro_attachments_with_submissionattachments_enabled_and_submissions_closed() {
+        $this->resetAfterTest();
+        // Set cut-off date to the past.
+        list($assign, $instance, $student) = $this->create_submission([
+            'timelimit' => '300',
+            'submissionattachments' => 1,
+            'cutoffdate' => time() - 300,
+        ]);
+        $this->assertFalse($assign->should_provide_intro_attachments($student->id));
+    }
+
+    /**
+     * Test that attachments should be provided if submissionattachments is enabled with an open submission.
+     *
+     * @covers \assign::should_provide_intro_attachments
+     */
+    public function test_should_provide_intro_attachments_submissionattachments_enabled_and_an_open_submission() {
+        $this->resetAfterTest();
+        set_config('enabletimelimit', '1', 'assign');
+        list($assign, $instance, $student) = $this->create_submission([
+            'timelimit' => '300',
+            'submissionattachments' => 1,
+        ]);
+
+        // Open a submission.
+        $assign->get_user_submission($student->id, true);
+
+        $this->assertTrue($assign->should_provide_intro_attachments($student->id));
+    }
+
+    /**
+     * Test that a submission using a time limit is currently open.
+     *
+     * @covers \assign::is_attempt_in_progress
+     */
+    public function test_is_attempt_in_progress_with_open_submission() {
+        global $DB;
+        $this->resetAfterTest();
+        set_config('enabletimelimit', '1', 'assign');
+        list($assign, $instance, $student) = $this->create_submission([
+            'timelimit' => '300',
+        ]);
+        $submission = $assign->get_user_submission($student->id, true);
+        // Set a timestarted.
+        $submission->timestarted = time() - 300;
+        $DB->update_record('assign_submission', $submission);
+        $this->assertTrue($assign->is_attempt_in_progress());
+    }
+
+    /**
+     * Test that a submission using a time limit is started without a start time.
+     *
+     * @covers \assign::is_attempt_in_progress
+     */
+    public function test_is_attempt_in_progress_with_open_submission_and_no_timestarted() {
+        $this->resetAfterTest();
+        set_config('enabletimelimit', '1', 'assign');
+        list($assign, $instance, $student) = $this->create_submission([
+            'timelimit' => '300',
+        ]);
+        $assign->get_user_submission($student->id, true);
+        $this->assertFalse($assign->is_attempt_in_progress());
+    }
+
+    /**
+     * Test that a submission using a time limit is currently not open.
+     *
+     * @covers \assign::is_attempt_in_progress
+     */
+    public function test_is_attempt_in_progress_with_no_open_submission() {
+        global $DB;
+        $this->resetAfterTest();
+        set_config('enabletimelimit', '1', 'assign');
+        list($assign, $instance, $student) = $this->create_submission([
+            'timelimit' => '300',
+        ]);
+        // Clear all current submissions.
+        $DB->delete_records('assign_submission', ['assignment' => $instance->id]);
+        $this->assertFalse($assign->is_attempt_in_progress());
+    }
+
+    /**
+     * Create a submission for testing.
+     * @param  array $params Optional params to use for creating assignment instance.
+     * @return array an array containing all the required data for testing
+     */
+    protected function create_submission(array $params = []) {
+        global $DB;
+
+        // Create a course and assignment and users.
+        $course = self::getDataGenerator()->create_course(array('groupmode' => SEPARATEGROUPS, 'groupmodeforce' => 1));
+
+        $generator = $this->getDataGenerator()->get_plugin_generator('mod_assign');
+        $params = array_merge(array(
+            'course' => $course->id,
+            'assignsubmission_file_maxfiles' => 1,
+            'assignsubmission_file_maxsizebytes' => 1024 * 1024,
+            'assignsubmission_onlinetext_enabled' => 1,
+            'assignsubmission_file_enabled' => 1,
+            'submissiondrafts' => 1,
+            'assignfeedback_file_enabled' => 1,
+            'assignfeedback_comments_enabled' => 1,
+            'attemptreopenmethod' => ASSIGN_ATTEMPT_REOPEN_METHOD_MANUAL,
+            'sendnotifications' => 0
+        ), $params);
+
+        set_config('submissionreceipts', 0, 'assign');
+
+        $instance = $generator->create_instance($params);
+        $cm = get_coursemodule_from_instance('assign', $instance->id);
+        $context = \context_module::instance($cm->id);
+
+        $assign = new \mod_assign_testable_assign($context, $cm, $course);
+
+        $student = self::getDataGenerator()->create_user();
+        $studentrole = $DB->get_record('role', array('shortname' => 'student'));
+        $this->getDataGenerator()->enrol_user($student->id, $course->id, $studentrole->id);
+
+        $this->setUser($student);
+
+        // Create a student1 with an online text submission.
+        // Simulate a submission.
+        $submission = $assign->get_user_submission($student->id, true);
+
+        $data = new \stdClass();
+        $data->onlinetext_editor = array(
+            'itemid' => file_get_unused_draft_itemid(),
+            'text' => 'Submission text with a <a href="@@PLUGINFILE@@/intro.txt">link</a>',
+            'format' => FORMAT_MOODLE);
+
+        $draftidfile = file_get_unused_draft_itemid();
+        $usercontext = \context_user::instance($student->id);
+        $filerecord = array(
+            'contextid' => $usercontext->id,
+            'component' => 'user',
+            'filearea'  => 'draft',
+            'itemid'    => $draftidfile,
+            'filepath'  => '/',
+            'filename'  => 't.txt',
+        );
+        $fs = get_file_storage();
+        $fs->create_file_from_string($filerecord, 'text contents');
+
+        $data->files_filemanager = $draftidfile;
+
+        $notices = array();
+        $assign->save_submission($data, $notices);
+
+        return array($assign, $instance, $student);
+    }
+
+    /**
+     * Test user filtering by First name, Last name and Submission status.
+     *
+     * @covers \assign::is_userid_filtered
+     */
+    public function test_is_userid_filtered() {
+        $this->resetAfterTest();
+
+        // Generate data and simulate student submissions.
+        $course = $this->getDataGenerator()->create_course();
+        $params1 = ['firstname' => 'Valentin', 'lastname' => 'Ivanov'];
+        $student1 = $this->getDataGenerator()->create_and_enrol($course, 'student', $params1);
+        $params2 = ['firstname' => 'Nikolay', 'lastname' => 'Petrov'];
+        $student2 = $this->getDataGenerator()->create_and_enrol($course, 'student', $params2);
+        $assign = $this->create_instance($course, ['assignsubmission_onlinetext_enabled' => 1]);
+        $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
+        $this->setUser($student1);
+        $submission = $assign->get_user_submission($student1->id, true);
+        $submission->status = ASSIGN_SUBMISSION_STATUS_SUBMITTED;
+        $assign->testable_update_submission($submission, $student1->id, true, false);
+        $this->setUser($student2);
+        $submission = $assign->get_user_submission($student2->id, true);
+        $submission->status = ASSIGN_SUBMISSION_STATUS_DRAFT;
+        $assign->testable_update_submission($submission, $student2->id, true, false);
+        $this->setUser($teacher);
+
+        // By default, both users should match filters.
+        $this->AssertTrue($assign->is_userid_filtered($student1->id));
+        $this->AssertTrue($assign->is_userid_filtered($student2->id));
+
+        // Filter by First name starting with V.
+        $_GET['tifirst'] = 'V';
+        $this->AssertTrue($assign->is_userid_filtered($student1->id));
+        $this->AssertFalse($assign->is_userid_filtered($student2->id));
+
+        // Add Last name to filter out both users.
+        $_GET['tilast'] = 'G';
+        $this->AssertFalse($assign->is_userid_filtered($student1->id));
+        $this->AssertFalse($assign->is_userid_filtered($student2->id));
+
+        // Unsetting variables doesn't change behaviour because filters are stored in user preferences.
+        unset($_GET['tifirst']);
+        unset($_GET['tilast']);
+        $this->AssertFalse($assign->is_userid_filtered($student1->id));
+        $this->AssertFalse($assign->is_userid_filtered($student2->id));
+
+        // Reset table preferences.
+        $_GET['treset'] = '1';
+        $this->AssertTrue($assign->is_userid_filtered($student1->id));
+        $this->AssertTrue($assign->is_userid_filtered($student2->id));
+
+        // Display users with submitted submissions only.
+        set_user_preference('assign_filter', ASSIGN_SUBMISSION_STATUS_SUBMITTED);
+        $this->AssertTrue($assign->is_userid_filtered($student1->id));
+        $this->AssertFalse($assign->is_userid_filtered($student2->id));
+
+        // Display users with drafts.
+        set_user_preference('assign_filter', ASSIGN_SUBMISSION_STATUS_DRAFT);
+        $this->AssertFalse($assign->is_userid_filtered($student1->id));
+        $this->AssertTrue($assign->is_userid_filtered($student2->id));
+
+        // Reset the filter.
+        set_user_preference('assign_filter', '');
+        $this->AssertTrue($assign->is_userid_filtered($student1->id));
+        $this->AssertTrue($assign->is_userid_filtered($student2->id));
     }
 }

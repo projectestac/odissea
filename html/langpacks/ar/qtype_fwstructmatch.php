@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_fwstructmatch', language 'ar', version '3.11'.
+ * Strings for component 'qtype_fwstructmatch', language 'ar', version '4.1'.
  *
  * @package     qtype_fwstructmatch
  * @category    string
@@ -33,3 +33,4 @@ $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}.';
 $string['correctanswers'] = 'الإجابات الصحيحة';
 $string['notenoughanswers'] = 'هذا النوع من الأسئلة يتطلب {$a} من الإجابات على الأقل';
 $string['pleaseenterananswer'] = 'يرجى إدخال الإجابة.';
+$string['pluginname_link'] = 'question/type/fwstructmatch';

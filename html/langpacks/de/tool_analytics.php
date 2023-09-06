@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'de', version '3.11'.
+ * Strings for component 'tool_analytics', language 'de', version '4.1'.
  *
  * @package     tool_analytics
  * @category    string
@@ -88,7 +88,6 @@ $string['exportmodel'] = 'Konfiguration exportieren';
 $string['exporttrainingdata'] = 'Trainingsdaten exportieren';
 $string['extrainfo'] = 'Information';
 $string['generalerror'] = 'Fehler bei der Bewertung. Statuscode {$a}';
-$string['getpredictions'] = 'Vorhersagen erstellen';
 $string['goodmodel'] = 'Dieses Modell kann gut für Vorhersagen genutzt werden. Aktivieren Sie es, um das Erstellen von Vorhersagen zu beginnen.';
 $string['ignoreversionmismatches'] = 'Versionsfehler ignorieren';
 $string['ignoreversionmismatchescheckbox'] = 'Ignorieren Sie die Unterschiede zwischen dieser System-Version und der ursprünglichen System-Version.';
@@ -96,6 +95,7 @@ $string['importedsuccessfully'] = 'Das Modell wurde erfolgreich importiert.';
 $string['importmodel'] = 'Importiertes Modell';
 $string['indicators'] = 'Indikatoren';
 $string['indicators_help'] = 'Die Indikatoren sind das, was Ihrer Meinung nach zu einer genauen Vorhersage des Ziels führen wird.';
+$string['indicators_link'] = 'Indicators';
 $string['indicatorsnum'] = 'Anzahl der Indikatoren: {$a}';
 $string['info'] = 'Information';
 $string['insights'] = 'Einschätzungen';
@@ -144,6 +144,7 @@ $string['scheduledanalysisresultscli'] = 'Ergebnisse mit dem Analyseintervall {$
 $string['selecttimesplittingforevaluation'] = 'Wählen Sie das Analyseintervall, das Sie zur Auswertung der Modellkonfiguration verwenden möchten.';
 $string['target'] = 'Ziel';
 $string['target_help'] = 'Das Ziel ist das, was das Modell vorhersagen wird.';
+$string['target_link'] = 'Targets';
 $string['timesplittingnotdefined'] = 'Es ist kein Analyseintervall definiert.';
 $string['timesplittingnotdefined_help'] = 'Sie müssen ein Analyseintervall wählen, bevor Sie das Modell aktivieren können.';
 $string['trainandpredictmodel'] = 'Modell trainieren und Vorhersagen berechnen';

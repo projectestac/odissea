@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ja', version '3.11'.
+ * Strings for component 'tag', language 'ja', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -78,7 +78,9 @@ $string['helprelatedtags'] = 'カンマ区切り関連タグ';
 $string['id'] = 'id';
 $string['inalltagcoll'] = 'どこでも';
 $string['inputstandardtags'] = '新しいタグのカンマ区切りの一覧を入力してください。';
+$string['itemid'] = 'アイテムID';
 $string['itemstaggedwith'] = '「 {$a->tag} 」がタグ付けされた {$a->tagarea}';
+$string['itemtype'] = 'アイテムタイプ';
 $string['lesstags'] = '減らす ...';
 $string['managestandardtags'] = '標準タグを管理する';
 $string['managetagcolls'] = 'タグコレクションを管理する';
@@ -87,6 +89,7 @@ $string['moretags'] = '増やす ...';
 $string['name'] = 'タグ名';
 $string['namesalreadybeeingused'] = 'タグ名がすでに使用されています。';
 $string['nameuseddocombine'] = 'このタグ名はすでに使用されています。これらのタグを結合しますか?';
+$string['namewithlink'] = 'リンク付きタグ名';
 $string['newcollnamefor'] = 'タグコレクション {$a} の新しい名称';
 $string['newnamefor'] = 'タグ {$a} の新しい名称';
 $string['nextpage'] = 'さらに';
@@ -144,6 +147,7 @@ $string['standardsuggest'] = 'サジェストする';
 $string['standardtag'] = '標準';
 $string['suredeletecoll'] = '本当にタグコレクション「 {$a} 」を削除してもよろしいですか?';
 $string['tag'] = 'タグ';
+$string['tagarea'] = 'タグエリア';
 $string['tagarea_blog_external'] = '外部ブログ記事';
 $string['tagarea_course'] = 'コース';
 $string['tagarea_course_modules'] = '活動およびリソース';
@@ -152,10 +156,12 @@ $string['tagarea_user'] = 'ユーザの興味のあること';
 $string['tagareaenabled'] = '有効';
 $string['tagareaname'] = '名称';
 $string['tagareas'] = 'タグエリア';
+$string['tagauthor'] = 'タグ作成者';
 $string['tagcollection'] = 'タグコレクション';
 $string['tagcollection_help'] = 'タグコレクションは異なるエリアのための一連のタグです。例えば標準タグのコレクションはユーザの興味のあることおよびブログ投稿タグを別のコレクションに分けた上で、コース内でタグ付けする場合に使用することができます。ユーザがタグをクリックした場合、そのタグと同じタグ内のタグのみ表示されます。タグはタグ付けされたエリアに基づきコレクションに自動追加することができます。また、標準タグに手動追加することもできます。';
 $string['tagcollections'] = 'タグコレクション';
 $string['tagdescription'] = 'タグ説明';
+$string['taginstance'] = 'タグインスタンス';
 $string['tags'] = 'タグ';
 $string['tagsaredisabled'] = 'タグが無効にされています。';
 $string['thingstaggedwith'] = '「 {$a->name} 」は {$a->count} 回使用されています。';

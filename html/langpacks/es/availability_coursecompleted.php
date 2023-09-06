@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_coursecompleted', language 'es', version '3.11'.
+ * Strings for component 'availability_coursecompleted', language 'es', version '4.1'.
  *
  * @package     availability_coursecompleted
  * @category    string
@@ -30,6 +30,7 @@ $string['getdescription'] = 'Ha terminado este curso.';
 $string['getdescriptionnot'] = 'Usted <b>no</b> ha finalizado este curso.';
 $string['missing'] = '(Debe decidir si el curso ha sido terminado o no)';
 $string['pluginname'] = 'Restricción por finalización de curso';
+$string['privacy:metadata'] = 'El plugin de Disponibilidad por curso completado no almacena ningún dato personal.';
 $string['requires_completed'] = 'Ha finalizado este curso';
 $string['requires_notcompleted'] = '<b>No</b> ha finalizado este curso.';
 $string['title'] = 'Curso finalizado';

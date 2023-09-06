@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_autoattend', language 'el', version '3.11'.
+ * Strings for component 'block_autoattend', language 'el', version '4.1'.
  *
  * @package     block_autoattend
  * @category    string
@@ -60,7 +60,7 @@ $string['add_one'] = 'Προσθήκη (ένα)';
 $string['add_session'] = 'Προσθήκη συνόδου';
 $string['addmultiplesessions'] = 'Προσθήκη πολλαπλών συνόδων';
 $string['addsession'] = 'Προσθήκη συνόδου';
-$string['allclasses'] = 'Όλες οι τάξεις';
+$string['allclasses'] = 'Όλες οι συναντήσεις τάξεων';
 $string['allgrouping'] = 'Όλες οι ομάδες';
 $string['allstudents'] = 'Όλοι οι μαθητές';
 $string['alltaken'] = 'Πάρθηκαν όλα';
@@ -93,8 +93,8 @@ $string['changeclass'] = 'Αλλαγή τάξης';
 $string['changesession'] = 'Αλλαγή συνόδου';
 $string['choosegrouping'] = 'Επιλογή ομαδοποίησης';
 $string['class_division'] = 'Κατηγοριοποιήσεις';
-$string['class_settings'] = 'Ρυθμίσεις τάξης';
-$string['classname'] = 'Τάξη';
+$string['class_settings'] = 'Ρυθμίσεις συνάντησης τάξης';
+$string['classname'] = 'Συνάντηση τάξης';
 $string['cleanupdb'] = 'Εκκαθάριση βάσης δεδομένων';
 $string['cleanupdb_confirm'] = 'Εκτέλεση για καθαρισμό βάσης δεδομένων;';
 $string['cleanupdbok'] = 'Εκκαθάριση';
@@ -121,7 +121,7 @@ $string['deleteddb'] = 'Οι παλιές σύνοδοι διαγράφηκαν.
 $string['deleteok'] = 'Διαγραφή';
 $string['deleteselect'] = 'Διαγραφή επιλεγμένου';
 $string['deletesession'] = 'Διαγραφή συνόδου';
-$string['deletingclasses'] = 'Διαγραφή τάξεων στο μάθημα';
+$string['deletingclasses'] = 'Διαγραφή συναντήσεων τάξεων στο μάθημα';
 $string['deletingsession'] = 'Διαγραφή συνόδου στο μάθημα';
 $string['denysameip'] = 'Αποκλεισμός ίδιας διεύθυνσης IP';
 $string['description'] = 'Περιγραφή';
@@ -171,7 +171,7 @@ $string['newsessionstarttime'] = 'Νέος χρόνος έναρξης';
 $string['newsessionsummertime'] = 'Νέα θερινή ώρα';
 $string['noattforuser'] = 'Δεν υπάρχει καμία παρουσία για τον χρήστη';
 $string['nodescription'] = 'τίποτα';
-$string['nonclass'] = 'Καμία αίθουσα διδασκαλίας';
+$string['nonclass'] = 'Καμία συνάντηση τάξης';
 $string['noofdaysabsent'] = 'Αριθμός ημερών απουσίας';
 $string['noofdaysexcused'] = 'Αριθμός ημερών δικαιολογημένης απουσίας';
 $string['noofdayslate'] = 'Αριθμός ημερών καθυστερημένης προσέλευσης';
@@ -199,7 +199,7 @@ $string['page_column_size'] = 'Μέγεθος σελίδας σε στήλες';
 $string['page_column_size_desc'] = 'Ένα όνομα χρήστη εμφανίζεται για κάθε αριθμό στηλών από αυτό.';
 $string['page_row_size'] = 'Μέγεθος σελίδας σε σειρές';
 $string['period'] = 'Περίοδος';
-$string['pleasefeedback'] = 'Παρακαλώ ανατροφοδοτήστε';
+$string['pleasefeedback'] = 'Παρακαλούμε ανατροφοδοτήστε';
 $string['pluginname'] = 'Μπλοκ αυτόματων παρουσιών';
 $string['recalcgrades'] = 'Υπολογισμός βαθμών ξανά';
 $string['refreshdata'] = 'Ανανέωση';
@@ -226,7 +226,7 @@ $string['session'] = 'Σύνοδος';
 $string['sessionadded'] = 'Η σύνοδος προστέθηκε με επιτυχία';
 $string['sessionallowip'] = 'Επιτρεπόμενες IP';
 $string['sessionalreadyexists'] = 'Υπάρχει ήδη σύνοδος σε αυτήν την ημερομηνία';
-$string['sessiondate'] = 'Ημερομηνία συνόδου\\r\\r';
+$string['sessiondate'] = 'Ημερομηνία συνόδου';
 $string['sessiondays'] = 'Ημέρες συνόδου';
 $string['sessiondeleted'] = 'Η σύνοδος διαγράφηκε με επιτυχία';
 $string['sessionduration'] = 'Διάρκεια';
@@ -270,7 +270,7 @@ $string['title'] = 'Τίτλος';
 $string['toNok'] = 'ΟΚ';
 $string['toNtitle'] = 'σε «Δεν ξεκίνησε»';
 $string['tuesday'] = 'Τρί.';
-$string['unknownclass'] = 'Άγνωστη αίθουσα διδασκαλίας';
+$string['unknownclass'] = 'Άγνωστη συνάντηση τάξης';
 $string['update'] = 'Ενημέρωση';
 $string['updateordel'] = 'Ενημέρωση ή Διαγραφή';
 $string['updatesession'] = 'Ενημέρωση συνόδου';

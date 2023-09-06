@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attcontrol', language 'el', version '3.11'.
+ * Strings for component 'attcontrol', language 'el', version '4.1'.
  *
  * @package     attcontrol
  * @category    string
@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['Aacronym'] = 'Α';
-$string['Afull'] = 'Απών';
+$string['Afull'] = 'Απουσία';
 $string['Eacronym'] = 'Δ';
 $string['Efull'] = 'Δικαιολογημένος';
 $string['Lacronym'] = 'Κ';
-$string['Lfull'] = 'Αργά';
+$string['Lfull'] = 'Καθυστέρηση';
 $string['Pacronym'] = 'Π';
 $string['Pfull'] = 'Παρουσία';
 $string['acronym'] = 'Ακρώνυμο';
@@ -143,7 +143,7 @@ $string['myvariables'] = 'Οι μεταβλητές μου';
 $string['newdate'] = 'Νέα ημερομηνία';
 $string['newduration'] = 'Νέα διάρκεια';
 $string['noattforuser'] = 'Δεν υπάρχουν εγγραφές attcontrol για τον χρήστη';
-$string['nodescription'] = 'Κανονική σύνοδος τάξης';
+$string['nodescription'] = 'Κανονική σύνοδος συνάντησης τάξης';
 $string['nogroups'] = 'Δεν μπορείτε να προσθέσετε συνόδους ομάδας. Δεν υπάρχει καμία ομάδα στο μάθημα.';
 $string['noguest'] = 'Οι επισκέπτες δεν μπορούν να δουν AttControl';
 $string['noofdaysabsent'] = 'Αριθμός ημερών απουσίας';
@@ -154,7 +154,7 @@ $string['nosessiondayselected'] = 'Δεν επιλέχθηκε ημέρα συν
 $string['nosessionexists'] = 'Δεν υπάρχει σύνοδος για αυτό το μάθημα';
 $string['nosessionsselected'] = 'Δεν επιλέχθηκαν σύνοδοι';
 $string['nostudentselected'] = 'Επιλέξτε ένα μαθητή για να ελέγξετε την προσωπική του αναφορά.';
-$string['notfound'] = 'Δραστηριότητα παρουσιών δεν βρέθηκε για αυτό το μάθημα!';
+$string['notfound'] = 'Η δραστηριότητα με παρουσίες δεν βρέθηκε για αυτό το μάθημα!';
 $string['olddate'] = 'Παλιά ημερομηνία';
 $string['pagination_options'] = 'Επιλογές σελιδοποίησης';
 $string['pagination_perpage'] = 'Στοιχεία ανά σελίδα';

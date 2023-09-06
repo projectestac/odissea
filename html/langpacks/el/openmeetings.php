@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'openmeetings', language 'el', version '3.11'.
+ * Strings for component 'openmeetings', language 'el', version '4.1'.
  *
  * @package     openmeetings
  * @category    string
@@ -32,7 +32,7 @@ $string['Interview'] = 'Συνέντευξη (2 συμμετέχοντες)';
 $string['Max_User'] = 'Μέγιστο χρηστών';
 $string['Moderation_Description'] = '(Οι διαχειριστές του Moodle, οι διδάσκοντες και οι δημιουργοί μαθημάτων είναι αυτόματα συντονιστές)';
 $string['Restricted'] = 'Ιστοσεμινάριο (μέγιστο 150 συμμετέχοντες)';
-$string['Room_Language'] = 'Γλώσσα Αίθουσας';
+$string['Room_Language'] = 'Γλώσσα αίθουσας';
 $string['Room_Name'] = 'Όνομα αίθουσας';
 $string['Room_Type'] = 'Τύπος αίθουσας';
 $string['checkhost'] = 'Επαλήθευση κεντρικού Η/Υ';

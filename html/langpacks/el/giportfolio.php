@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'giportfolio', language 'el', version '3.11'.
+ * Strings for component 'giportfolio', language 'el', version '4.1'.
  *
  * @package     giportfolio
  * @category    string
@@ -69,7 +69,7 @@ $string['navprev'] = 'Προηγούμενο';
 $string['nocomments'] = 'Χωρίς σχόλια διδάσκοντα';
 $string['noshared'] = 'Καμία συνεισφορές από άλλους μαθητές';
 $string['nosubmisson'] = 'Καμία υποβολή';
-$string['notifyaddentry'] = 'Ενημέρωση εκπαιδευτικών για νέες καταχωρήσεις';
+$string['notifyaddentry'] = 'Ενημέρωση διδασκόντων για νέες καταχωρήσεις';
 $string['notifyaddentry_subject'] = 'Νέα συνεισφορά χαρτοφυλακίου από {$a}';
 $string['notstarted'] = 'Δεν έχει γίνει έναρξη';
 $string['notyourchapter'] = 'Αυτό το κεφάλαιο χρήστη δεν σας ανήκει';

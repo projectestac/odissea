@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'sv', version '3.11'.
+ * Strings for component 'message_airnotifier', language 'sv', version '4.1'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -49,6 +49,8 @@ $string['messageprovidersempty'] = 'Inga mobilmeddelanden är aktiverade i stand
 $string['messageproviderslow'] = 'Endast ett fåtal mobilmeddelanden är aktiverade i standardinställningarna för meddelanden.';
 $string['moodleappsportallimitswarning'] = 'Observera att antalet användarenheter som tillåts ta emot meddelanden beror på din Moodle app prenumeration. För mer information, besök <a href="{$a}" target="_blank">Moodle Apps Portal</a>.';
 $string['nodevices'] = 'Inga registrerade enheter. Enheter visas automatiskt när du har installerat Moodle-appen och lagt till den här webbplatsen.';
+$string['noemailevernotset'] = '$CFG->noemailever inaktiverat';
+$string['noemaileverset'] = '$CFG->noemailever är inaktiverat i <code>config.php</code>. Du måste ange den här inställningen till <code>falskt</code>, eller ta bort den.';
 $string['nopermissiontomanagedevices'] = 'Du har inte behörighet att hantera enheter.';
 $string['notconfigured'] = 'Airnotifier-servern har inte konfigurerats. Push-meddelanden kan inte skickas.';
 $string['notificationsserverconfiguration'] = 'Konfiguration av meddelandeserver (Airnotifier)';

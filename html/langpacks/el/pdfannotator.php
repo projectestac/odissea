@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pdfannotator', language 'el', version '3.11'.
+ * Strings for component 'pdfannotator', language 'el', version '4.1'.
  *
  * @package     pdfannotator
  * @category    string
@@ -154,9 +154,9 @@ $string['me'] = 'εγώ';
 $string['messageprovider:newanswer'] = 'Όταν δίνεται μια απάντηση σε μια ερώτηση στην οποία εγγραφήκατε';
 $string['messageprovider:newquestion'] = 'Όταν γίνεται μια νέα ερώτηση';
 $string['messageprovider:newreport'] = 'Όταν γίνεται ένα σχόλιο';
-$string['min2Chars'] = 'Ερώτηση ή σχόλιο με λιγότερους από δύο χαρακτήρες δεν επιτρέπεται.';
 $string['minute'] = 'λεπτό';
 $string['minutes'] = 'λεπτά';
+$string['modulename_link'] = 'mod/pdfannotator/view';
 $string['month'] = 'μήνας';
 $string['months'] = 'μήνες';
 $string['myanswers'] = 'Οι απαντήσεις μου';
@@ -185,7 +185,7 @@ $string['ownpoststabicon_help'] = 'Αυτή η σελίδα εμφανίζει �
 $string['page'] = 'σελίδα';
 $string['pdfButton'] = 'Έγγραφο';
 $string['pdfannotator'] = 'Έγγραφο';
-$string['pdfannotator:addinstance'] = 'προσθήκη στιγμιότυπου';
+$string['pdfannotator:addinstance'] = 'προσθήκη στιγμιοτύπου';
 $string['pdfannotator:closeanyquestion'] = 'Κλείστε οποιαδήποτε ερώτηση';
 $string['pdfannotator:closequestion'] = 'Κλείστε τις δικές σας ερωτήσεις';
 $string['pdfannotator:create'] = 'Δημιουργία επισημειώσεων και σχολίων';
@@ -257,7 +257,7 @@ $string['sendAnonymous'] = 'ανώνυμη ανάρτηση';
 $string['setting_alternative_name'] = 'Όνομα';
 $string['setting_alternative_name_desc'] = 'Δώστε ένα εναλλακτικό όνομα για το PDF. Αν αφεθεί κενό, το όνομα του PDF θα θεωρηθεί ως αντιπροσωπευτικό όνομα.';
 $string['setting_anonymous'] = 'Επιτρέπονται ανώνυμες αναρτήσεις;';
-$string['setting_use_studentdrawing'] = 'Σχέδια';
+$string['setting_use_studentdrawing'] = 'Σκίτσο';
 $string['setting_use_studenttextbox'] = 'Πλαίσιο κειμένου';
 $string['setting_use_studenttextbox_help'] = 'Παρακαλούμε, σημειώστε ότι οι επισημειώσεις πλαισίου κειμένου δεν είναι ανώνυμες και δεν μπορούν ούτε να σχολιαστούν ούτε να αναφερθούν.';
 $string['setting_useprint'] = 'αποθήκευση και εκτύπωση';

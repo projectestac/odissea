@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyonamejs', language 'de', version '3.11'.
+ * Strings for component 'qtype_easyonamejs', language 'de', version '4.1'.
  *
  * @package     qtype_easyonamejs
  * @category    string
@@ -72,6 +72,7 @@ $string['notenoughanswers'] = 'Dieser Fragetyp benötogt mindestens {$a} Antwort
 $string['pleaseenterananswer'] = 'Bitte geben Sie eine Antwort ein.';
 $string['pluginname'] = 'Chemie - Name zu Struktur oder Reaktion (MarvinJS)';
 $string['pluginname_help'] = 'Die Teilnehmer/innen müssen vorgegebene Strukturen zeichnen. Sie können folgende Fragen stellen;<ul><li>Zeichnen Sie (1S,2R)-2-methylcyclohexanol.</li><li>Bitte zeichnen Sie die Strukturformel von Wasser mit allen freien Elektronenpaaren."</li><li>Zeichnen Sie das Essigsäuremolekül und dessen Dissoziation."</li></ul>Unterstützt das Zeichnen von freien Elektronenpaaren, Radikalen, Ladungen, Reaktionen, R/S, E/Z-Konfiguration und vieles mehr.';
+$string['pluginname_link'] = 'question/type/easyonamejs';
 $string['pluginnameadding'] = 'Eine "Name zu Struktur oder Reaktion" Frage hinzufügen';
 $string['pluginnameediting'] = 'Ein "Name zu Struktur oder Reaktion" Frage bearbeiten';
 $string['pluginnamesummary'] = 'Die Teilnehmer sollen eine Struktur anhand des Namens einer Verbindung zeichnen, den Sie vorgeben. Sie können z.B. solche Fragen stellen:<ul><li>Zeichnen Sie (1S,2R)-2-Methylcyclohexanol.</li><li>Bitte zeichnen Sie die Strukturformel von Wasser mit allen freien Elektronenpaaren."</li><li>Zeichnen Sie das Essigsäuremolekül und dessen Dissoziation."</li></ul>Unterstützt das Zeichnen von freien Elektronenpaaren, Radikalen, Ladungen, Reaktionen, R/S, E/Z-Konfiguration und vieles mehr.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ur', version '3.11'.
+ * Strings for component 'report_log', language 'ur', version '4.1'.
  *
  * @package     report_log
  * @category    string
@@ -25,5 +25,29 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allsources'] = 'تمام ذرائع';
+$string['cli'] = 'سی ایل آئی';
+$string['eventcomponent'] = 'جزو';
+$string['eventcontext'] = 'واقعہ کا سیاق و سباق';
+$string['eventloggedas'] = '{$a->realusername} بطور {$a->asusername}';
+$string['eventorigin'] = 'اصل';
+$string['eventrelatedfullnameuser'] = 'متاثرہ صارف';
+$string['eventreportviewed'] = 'لاگ رپورٹ دیکھی گئی';
+$string['eventuserreportviewed'] = 'صارف لاگ رپورٹ دیکھی گئی';
 $string['log:view'] = 'کورس کی لاگز دیکھیں';
 $string['log:viewtoday'] = 'آج کی لاگز دیکھیں';
+$string['logsformat'] = 'لاگز فارمیٹ';
+$string['nocapability'] = 'صارف لاگ رپورٹ تک رسائی حاصل نہیں کر سکتے';
+$string['nologreaderenabled'] = 'کوئی لاگ ریڈر فعال نہیں ہے';
+$string['origin'] = 'ذریعہ';
+$string['other'] = 'دوسرے';
+$string['page'] = 'صفحہ {$a}';
+$string['page-report-log-index'] = 'کورس لاگ رپورٹ';
+$string['page-report-log-user'] = 'صارف کورس لاگ رپورٹ';
+$string['page-report-log-x'] = 'کوئی لاگ رپورٹ';
+$string['pluginname'] = 'لاگز';
+$string['privacy:metadata'] = 'لاگ ان پلگ ان کوئی ذاتی ڈیٹا ذخیرہ نہیں کرتا ہے۔';
+$string['restore'] = 'بحال کریں';
+$string['selectlogreader'] = 'لاگ ریڈر منتخب کریں';
+$string['web'] = 'ویب';
+$string['ws'] = 'ویب سروس';

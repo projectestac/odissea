@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mediasite', language 'el', version '3.11'.
+ * Strings for component 'mediasite', language 'el', version '4.1'.
  *
  * @package     mediasite
  * @category    string
@@ -31,8 +31,8 @@ $string['Disabled'] = 'Απενεργοποιημένο';
 $string['MetadataLight'] = 'Μικρογραφία';
 $string['MetadataOnly'] = 'Μόνο περίληψη';
 $string['MetadataPlusPlayer'] = 'Περίληψη + Αναπαραγωγός';
-$string['Opt-In'] = 'Επιλογή-εισόδου';
-$string['Opt-Out'] = 'Επιλογή-εξόδου';
+$string['Opt-In'] = 'Επιλογή ένταξης';
+$string['Opt-Out'] = 'Επιλογή εξαίρεσης';
 $string['PlayerOnly'] = 'Μόνο αναπαραγωγός';
 $string['PresentationLink'] = 'Μόνο σύνδεσμος';
 $string['actiondelete'] = 'Διαγραφή υπάρχοντος ιστοτόπου';

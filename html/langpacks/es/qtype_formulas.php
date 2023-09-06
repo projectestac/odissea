@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_formulas', language 'es', version '3.11'.
+ * Strings for component 'qtype_formulas', language 'es', version '4.1'.
  *
  * @package     qtype_formulas
  * @category    string
@@ -54,6 +54,7 @@ Las respuestas de tipo número, numérica y fórmula numérica requieren un núm
 Las respuestas de tipo fórmula algebraica requieren una cadena o una lista de cadenas como respuesta.
 
 Los distintos tipos de respuestas imponen diferentes restricciones al introducir respuestas, por lo que los estudiantes deberán saber cómo introducirlas. La comprobación del formato en el código de la pregunta también les indicará si algo no es correcto cuando estén escribiendo. Lea la documentación para obtener más detalles.';
+$string['answertype_link'] = 'https://moodleformulas.org/';
 $string['answerunitmulti'] = 'Unidad para parte {$a->part}';
 $string['answerunitsingle'] = 'Unidad';
 $string['checkvarshdr'] = 'Comprobar la creación de instancias de las variables';
@@ -67,6 +68,7 @@ $string['correctness'] = 'Criterios* de calificación';
 $string['correctness_help'] = '**Obligatorios**. Puede escoger entre un error relativo o un error absoluto con un rango de error. El error relativo no se puede utilizar para el tipo de respuesta algebraica.
 
 Para una definición precisa del error relativo y del error absoluto cuando existe más de un campo de respuesta, consulte la documentación.';
+$string['correctness_link'] = 'https://moodleformulas.org/';
 $string['correctnessexpert'] = 'Experto';
 $string['correctnesssimple'] = 'Simple';
 $string['defaultanswermark'] = 'Calificación de la parte predeterminada';
@@ -156,6 +158,7 @@ o consulte las <a href="http://code.google.com/p/moodle-coordinate-question/wiki
 Para las opciones del siguiente formulario de edición, lea las <a href="http://code.google.com/p/moodle-coordinate-question/wiki/QuestionOptions">Opciones de la pregunta</a>
 
 Para consultar la documentación completa, lea la <a href="http://code.google.com/p/moodle-coordinate-question/wiki/Documentation">Documentación</a>';
+$string['pluginname_link'] = 'question/type/formulas';
 $string['pluginnameadding'] = 'Añadir una pregunta de fórmulas';
 $string['pluginnameediting'] = 'Editar una pregunta de fórmulas';
 $string['pluginnamesummary'] = 'Tipo de pregunta con valores aleatorios y múltiples respuestas
@@ -206,16 +209,19 @@ $string['vars1'] = 'Variables locales';
 $string['vars1_help'] = 'Aquí puede definir las variables del mismo modo que las variables globales se definen en el nivel de la pregunta. Las variables que se definen aquí se pueden utilizar en los comentarios o en la respuesta de una parte y solo serán visibles en la parte.';
 $string['vars2'] = 'Variables de calificación';
 $string['vars2_help'] = 'Aquí se pueden utilizar todas las variables locales y las respuestas del estudiante. Consulte la documentación sobre los usos avanzados.';
+$string['vars2_link'] = 'https://moodleformulas.org/';
 $string['varsdata'] = 'Conjunto de datos de creación de instancias';
 $string['varsglobal'] = 'Variables globales';
 $string['varsglobal_help'] = 'Aquí se pueden especificar las fórmulas para manipular las variables aleatorias de creación de instancias (están disponibles todas las variables aleatorias). En la documentación se incluye la lista completa de operadores y funciones matemáticas.
 
 <pre class="prettyprint">a = 1.11111;<br>b = exp(3);<br>c = A + a + b;<br>d = sin(1.5*pi()) + c;<br>e = round(a, 0);<br>f = [0,1,2,3][A];<br>g = ["zero","one","two","three"][A];<br>distance = sqrt(a*a + b*b);</pre>';
+$string['varsglobal_link'] = 'https://moodleformulas.org/';
 $string['varsrandom'] = 'Variables aleatorias';
 $string['varsrandom_help'] = 'Al principio de cada intento se generan nuevos valores aleatorios para estas variables.  Puede realizarse definiendo un conjunto de elementos para escoger entre:
 
 <pre class="prettyprint">A = {1,2,3};<br>C = {[1,-1], [2,-2], [3,-3]};<br>E = {10:100:10, 100, 1000};</pre>
 
 Estos elementos pueden ser números, cadenas o listas de estas. Al iniciar un nuevo intento, se extraerá un elemento del conjunto y se asignará a la variable de la izquierda.  Además, para un conjunto de números, puede utilizar la notación de rangos como por ejemplo 10:100:10 (consulte el ejemplo E anterior). </p>';
+$string['varsrandom_link'] = 'https://moodleformulas.org/';
 $string['varsstatistics'] = 'Estadísticas';
 $string['yougotnright'] = 'Ha respondido correctamente a {$a->num} partes de esta pregunta.';

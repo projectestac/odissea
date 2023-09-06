@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredfeedbackexplain', language 'el', version '3.11'.
+ * Strings for component 'qbehaviour_deferredfeedbackexplain', language 'el', version '4.1'.
  *
  * @package     qbehaviour_deferredfeedbackexplain
  * @category    string
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseexplain'] = 'Δώστε τους λόγους σας';
-$string['pluginname'] = 'Καθυστερημένη ανατροφοδότηση με εξήγηση';
+$string['pluginname'] = 'Καθυστερημένη ανατροφοδότηση με επεξήγηση';
 $string['responsewithreason'] = '{$a->response} | Λόγος: {$a->explanation}';

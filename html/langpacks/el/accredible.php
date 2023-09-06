@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'el', version '3.11'.
+ * Strings for component 'accredible', language 'el', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accredible:addinstance'] = 'Προσθήκη στιγμιότυπου πιστοποιητικού/διακριτικού';
-$string['accredible:manage'] = 'Διαχείριση στιγμιότυπου πιστοποιητικού/διακριτικού';
+$string['accredible:addinstance'] = 'Προσθήκη στιγμιοτύπου πιστοποιητικού/διακριτικού';
+$string['accredible:manage'] = 'Διαχείριση στιγμιοτύπου πιστοποιητικού/διακριτικού';
 $string['accredible:student'] = 'Ανάκτηση πιστοποιητικού ή διακριτικού';
 $string['accredible:view'] = 'Εμφάνιση ενός πιστοποιητικού ή διακριτικού';
 $string['achievementid'] = 'Αναγνωριστικό επιτεύγματος / όνομα συνόλου χρηστών (πρέπει να είναι μοναδικό)';
@@ -43,7 +43,7 @@ $string['chooseexam'] = 'Επιλέξτε τελικό κουίζ';
 $string['completionissuecheckbox'] = 'Ναι, έκδοση με την ολοκλήρωση του μαθήματος';
 $string['completionissueheader'] = 'Κριτήρια αυτόματης έκδοσης: με την ολοκλήρωση του μαθήματος';
 $string['dashboardlink'] = 'Σύνδεσμος ταμπλό Accredible';
-$string['dashboardlinktext'] = 'Για να διαγράψετε ή να πιστοποιήσετε τα διαπιστευτήρια, συνδεθείτε στο <a href="https://dashboard.accredible.com" target="_blank">ταμπλό</a>';
+$string['dashboardlinktext'] = 'Για διαγραφή ή για στυλ διαπιστευτηρίων, συνδεθείτε στο <a href="https://dashboard.accredible.com" target="_blank">ταμπλό</a>';
 $string['datecreated'] = 'Ημερομηνία δημιουργίας';
 $string['description'] = 'Περιγραφή';
 $string['euhelp'] = 'Επιλέξτε αν θέλετε να φιλοξενήσετε δεδομένα στην ΕΕ (Φρανκφούρτη) αντί για τις ΗΠΑ';
@@ -60,7 +60,7 @@ $string['modulename'] = 'Accredible πιστοποιητικά & διακριτ�
 $string['modulename_help'] = 'Το άρθρωμα δραστηριότητας Accredible πιστοποιητικά & διακριτικά επιτρέπει την έκδοση πιστοποιητικών ή διακριτικών μαθημάτων σε μαθητές στο accredible.com.
 
 Προσθέστε τη δραστηριότητα όπου θέλετε οι μαθητές σας να βλέπουν το πιστοποιητικό ή το διακριτικό τους.';
-$string['modulename_link'] = 'άρθρωμα/accredible/εμφάνιση';
+$string['modulename_link'] = '';
 $string['modulenameplural'] = 'Accredible πιστοποιητικά/διακριτικά';
 $string['nocertificates'] = 'Δεν υπάρχουν πιστοποιητικά/διακριτικά';
 $string['overview'] = 'Επισκόπηση';
@@ -73,7 +73,7 @@ $string['unissueddescription'] = 'Αυτοί οι χρήστες έχουν κα
 $string['unissuedheader'] = 'Πιστοποιητικά/διακριτικά που δεν έχουν εκδοθεί';
 $string['usestemplatesdescription'] = 'Επιβεβαιώστε ότι έχετε ένα σύνολο χρηστών στο ταμπλό με το ίδιο όνομα με το αναγνωριστικό επιτεύγματος.';
 $string['viewheader'] = 'Πιστοποιητικά & διακριτικά για {$a}';
-$string['viewimgcomplete'] = 'Παρακαλώ πατήστε για να δείτε το πιστοποιητικό ή το διακριτικό σας';
+$string['viewimgcomplete'] = 'Παρακαλούμε πατήστε για να δείτε το πιστοποιητικό ή το διακριτικό σας';
 $string['viewimgincomplete'] = 'Μάθημα σε εξέλιξη';
 $string['viewsubheader'] = 'Αναγνωριστικό ομάδας: {$a}';
 $string['viewsubheaderold'] = 'Κωδικός επιτεύγματος: {$a}';

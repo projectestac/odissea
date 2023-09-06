@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_loglive', language 'pt', version '3.11'.
+ * Strings for component 'report_loglive', language 'pt', version '4.1'.
  *
  * @package     report_loglive
  * @category    string
@@ -32,6 +32,7 @@ $string['eventorigin'] = 'Origem';
 $string['eventrelatedfullnameuser'] = 'Utilizador afetado';
 $string['eventreportviewed'] = 'Relatório de registos em tempo real visualizado';
 $string['livelogs'] = 'Registos de atividade na última hora';
+$string['livelogswithupdate'] = 'Registos de atividade na última hora ({$a})';
 $string['loglive:view'] = 'Ver registos de atividade em tempo real';
 $string['nologreaderenabled'] = 'Nenhum leitor de registos ativado';
 $string['pause'] = 'Suspender atualizações em tempo real';

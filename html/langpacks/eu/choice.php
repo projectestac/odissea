@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'eu', version '3.11'.
+ * Strings for component 'choice', language 'eu', version '4.1'.
  *
  * @package     choice
  * @category    string
@@ -40,9 +40,7 @@ $string['choice:deleteresponses'] = 'Aldatu eta ezabatu erantzunak';
 $string['choice:downloadresponses'] = 'Jaitsi erantzunak';
 $string['choice:readresponses'] = 'Ikusi erantzunak';
 $string['choice:view'] = 'Ikusi kontsulta jarduera';
-$string['choiceactivityname'] = 'Aukera: {$a}';
 $string['choiceclose'] = 'Erantzunetarako amaiera-data';
-$string['choicecloseson'] = 'Kontsultaren itxiera: {$a}';
 $string['choicefull'] = 'Hautatu duzun aukeretakoren bat beteta dago jada. Zure erantzuna ez da gorde. Mesedez aukeratu ezazu berriz ere.';
 $string['choicename'] = 'Kontsultaren izena';
 $string['choiceopen'] = 'Erantzunetarako hasiera-data';
@@ -76,10 +74,12 @@ $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa kontsultetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Kontsulta motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa kontsultetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Kontsulta jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da, Feedbacka ikusi da)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala kontsultetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Kontsulta motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala kontsultetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Kontsulta jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea, parte-hartzea besteekin)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'Muga';
 $string['limita'] = 'Muga: {$a}';
 $string['limitanswers'] = 'Onar daitezkeen erantzunen kopurua mugatu';
@@ -99,6 +99,7 @@ Kontsultak  ondokoetarako erabili daitezke
 * Gai zehatz baten inguruan inkesta azkarrak egiteko, hausnarketa estimulatzeko
 * Ikasleen ulermen-maila modu azkarrean neurtzeko
 * Ikasleen erabakiak errazteko, ikastaroaren norabidea aukeratzeko bozketak egiteko, adibidez';
+$string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Kontsultak';
 $string['moveselectedusersto'] = 'Mugitu aukeratutako erabiltzaileak hona...';
 $string['multiplenotallowederror'] = 'Erantzun anizkoitzak ez daude baimenduta inkesta xume honetan';

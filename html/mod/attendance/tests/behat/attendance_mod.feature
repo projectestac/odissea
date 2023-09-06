@@ -24,23 +24,14 @@ Feature: Teachers and Students can record session attendance
       | course | user     | role           | timestart     |
       | C1     | student1 | student        | ##yesterday## |
       | C1     | teacher1 | editingteacher | ##yesterday## |
-
-    And I log in as "teacher1"
-    And I am on "Course 1" course homepage with editing mode on
-    And I follow "Add a block"
-    And I follow "Administration"
-    And I add a "Attendance" to section "1" and I fill the form with:
-      | Name        | Attendance       |
-    And I log out
-    And I log in as "student1"
-    And I am on "Course 1" course homepage
-    And I should see "Attendance"
-    And I log out
+    And the following "activities" exist:
+      | activity   | name       | course |
+      | attendance | Attendance | C1     |
 
   @javascript
   Scenario: Students can mark their own attendance and teacher can hide specific status from students.
     Given I am on the "Attendance" "mod_attendance > View" page logged in as "teacher1"
-    And I follow "Add"
+    And I click on "Add session" "button"
     And I set the field "Allow students to record own attendance" to "1"
     And I set the following fields to these values:
       | id_sestime_starthour | 00 |
@@ -53,8 +44,9 @@ Feature: Teachers and Students can record session attendance
     And I should see "Excused"
     And I log out
     And I am on the "Attendance" "mod_attendance > View" page logged in as "teacher1"
-    And I follow "Status set"
-    And I set the field with xpath "//*[@id='preferencesform']/table/tbody/tr[3]/td[5]/input" to "0"
+    And I click on "More" "link" in the ".secondary-navigation" "css_element"
+    And I select "Status set" from secondary navigation
+    And I set the field with xpath "//*[@id='statusrow3']/td[5]/select" to "0"
     And I press "Update"
     And I log out
     And I am on the "Attendance" "mod_attendance > View" page logged in as "student1"
@@ -64,30 +56,62 @@ Feature: Teachers and Students can record session attendance
     And I press "Save changes"
     And I should see "Self-recorded"
     And I log out
-    When I log in as "teacher1"
+    When I log in as "admin"
     And I am on "Course 1" course homepage
-    And I expand "Reports" node
-    And I follow "Logs"
+    And I navigate to "Reports" in current page administration
+    And I click on "Logs" "link"
+    And I click on "Get these logs" "button"
+    Then "Attendance taken by student" "link" should exist
+
+  @javascript
+  Scenario: If allowed, students can mark their own attendance before the session starts and teacher can choose which statuses are available.
+    Given I am on the "Attendance" "mod_attendance > View" page logged in as "teacher1"
+    And I click on "Add session" "button"
+    And I set the field "Allow students to record own attendance" to "1"
+    And I set the following fields to these values:
+      | id_sessiondate       | ##tomorrow## |
+      | id_sestime_starthour | 00 |
+      | id_sestime_endhour   | 23 |
+      | id_sestime_endminute | 55 |
+    And I click on "id_submitbutton" "button"
+    And I click on "More" "link" in the ".secondary-navigation" "css_element"
+    And I select "Status set" from secondary navigation
+    And I set the field with xpath "//*[@id='statusrow2']/td[6]/input" to "1"
+    And I set the field with xpath "//*[@id='statusrow4']/td[6]/input" to "1"
+    And I press "Update"
+    And I log out
+    And I am on the "Attendance" "mod_attendance > View" page logged in as "student1"
+    And I follow "Report future absence"
+    And I should see "Absent"
+    And I should not see "Excused"
+    And I set the field "Late" to "1"
+    And I press "Save changes"
+    And I should see "Self-recorded"
+    And I log out
+    When I log in as "admin"
+    And I am on "Course 1" course homepage
+    And I navigate to "Reports" in current page administration
+    And I click on "Logs" "link"
     And I click on "Get these logs" "button"
     Then "Attendance taken by student" "link" should exist
 
   @javascript
   Scenario: Teachers can view below % report and send a message
     Given I am on the "Attendance" "mod_attendance > View" page logged in as "teacher1"
-    And I follow "Add"
+    And I click on "Add session" "button"
     And I set the following fields to these values:
       | id_sestime_starthour | 01 |
       | id_sestime_endhour   | 02 |
     And I click on "id_submitbutton" "button"
-    And I follow "Report"
+    And I am on the "Attendance" "mod_attendance > Report" page
     And I follow "Below"
     And I set the field "cb_selector" to "1"
     And I click on "Send a message" "button"
     And I should see "Message body"
     And I should see "student1@asd.com"
-    And I follow "Course 1"
-    And I expand "Reports" node
-    And I follow "Logs"
+    And I am on "Course 1" course homepage
+    And I navigate to "Reports" in current page administration
+    And I click on "Logs" "link"
     And I click on "Get these logs" "button"
     Then "Attendance report viewed" "link" should exist
 
@@ -100,7 +124,7 @@ Feature: Teachers and Students can record session attendance
 
     And I log out
     And I am on the "Attendance" "mod_attendance > View" page logged in as "teacher1"
-    And I follow "Add"
+    And I click on "Add session" "button"
     And I set the following fields to these values:
       | id_sestime_starthour | 01 |
       | id_sestime_endhour   | 02 |
@@ -142,7 +166,7 @@ Feature: Teachers and Students can record session attendance
 
     And I log out
     And I am on the "Attendance" "mod_attendance > View" page logged in as "teacher1"
-    And I follow "Add"
+    And I click on "Add session" "button"
     And I set the following fields to these values:
       | id_sestime_starthour | 01 |
       | id_sestime_endhour   | 02 |

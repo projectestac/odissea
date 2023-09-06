@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_live_services', language 'el', version '3.11'.
+ * Strings for component 'block_live_services', language 'el', version '4.1'.
  *
  * @package     block_live_services
  * @category    string
@@ -27,22 +27,22 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['alertsCancelButtonText'] = 'Άκυρο';
 $string['alertsCloseButtonText'] = 'Κλείσιμο';
-$string['alertsIconAltText'] = 'συναγερμικές ειδοποιήσεις';
+$string['alertsIconAltText'] = 'επαγρυπνήσεις';
 $string['alertsMessage'] = 'Μήνυμα';
-$string['alertsNotSubscribed'] = 'Δεν λαμβάνετε συναγερμικές ειδοποιήσεις για αυτό το μάθημα. <a href=\'[[url]]\'>Εγγραφείτε</a>';
-$string['alertsSendAlertMessage'] = 'Αποστολή ενός μηνύματος στους μαθητές που έχουν εγγραφεί στις συναγερμικές ειδοποιήσεις <strong>[[groupDescription]]</strong>.';
-$string['alertsSendAnAlertLinkText'] = 'Αποστολή συναγερμικής ειδοποίησης';
+$string['alertsNotSubscribed'] = 'Δεν λαμβάνετε επαγρυπνήσεις για αυτό το μάθημα. <a href=\'[[url]]\'>Εγγραφείτε</a>';
+$string['alertsSendAlertMessage'] = 'Αποστολή ενός μηνύματος στους μαθητές που έχουν εγγραφεί στις επαγρυπνήσεις <strong>[[groupDescription]]</strong>.';
+$string['alertsSendAnAlertLinkText'] = 'Αποστολή επαγρύπνησης';
 $string['alertsSendAnAlertText'] = 'προς τα μέλη αυτού του μαθήματος.';
 $string['alertsSendButtonText'] = 'Αποστολή';
 $string['alertsSubject'] = 'Θέμα';
 $string['alertsSubscribeButtonText'] = 'Εγγραφή';
-$string['alertsSubscribeConfirmation2'] = 'Έχετε τώρα καταχωρηθεί για να λαμβάνετε συναγερμικές ειδοποιήσεις για <strong>[[groupDescription]]</strong>.';
-$string['alertsSubscribed'] = 'Λαμβάνετε συναγερμικές ειδοποιήσεις για αυτό το μάθημα. <a href=\'[[url]]\'>Απ-εγγραφείτε</a>';
+$string['alertsSubscribeConfirmation2'] = 'Έχετε τώρα καταχωρηθεί για να λαμβάνετε επαγρυπνήσεις για <strong>[[groupDescription]]</strong>.';
+$string['alertsSubscribed'] = 'Λαμβάνετε επαγρυπνήσεις για αυτό το μάθημα. <a href=\'[[url]]\'>Απ-εγγραφείτε</a>';
 $string['alertsUnsubscribeAllButtonText'] = 'Απ-εγγραφείτε από όλα';
-$string['alertsUnsubscribeAllConfirmation'] = 'Έχετε αφαιρεθεί από τις ομάδες συναγερμικών ειδοποιήσεων για όλα τα μαθήματα.';
+$string['alertsUnsubscribeAllConfirmation'] = 'Έχετε αφαιρεθεί από τις ομάδες επαγρυπνήσεων για όλα τα μαθήματα.';
 $string['alertsUnsubscribeButtonText'] = 'Απ-εγγραφείτε';
-$string['alertsUnsubscribeConfirmation'] = 'Έχετε αφαιρεθεί από την ομάδα συναγερμικών ειδοποιήσεων για το μάθημα <strong>[[groupDescription]]</strong>.';
-$string['alertsUntitled'] = 'Συναγερμική ειδοποίηση χωρίς τίτλο';
+$string['alertsUnsubscribeConfirmation'] = 'Έχετε αφαιρεθεί από την ομάδα επαγρυπνήσεων για το μάθημα <strong>[[groupDescription]]</strong>.';
+$string['alertsUntitled'] = 'Επαγρύπνηση χωρίς τίτλο';
 $string['calendarAllDayEvent'] = 'Ολοήμερο γεγονός';
 $string['calendarAllDayEventMessage'] = 'Αυτό είναι ένα ολοήμερο γεγονός';
 $string['calendarCancel'] = 'Άκυρο';
@@ -86,9 +86,9 @@ $string['emailToTooltip'] = 'Διαχωρίστε πολλαπλά ονόματ�
 $string['emailUntitled'] = 'Μήνυμα χωρίς τίτλο';
 $string['emailViewLink'] = 'Εισερχόμενα';
 $string['enablebingsearch'] = 'Ενεργοποίηση αναζήτησης Bing';
-$string['faqWLSA10'] = 'Οι διδάσκοντες μέσα σε ένα μάθημα Moodle μπορούν να αποστείλουν συναγερμικές ειδοποιήσεις στους μαθητές που έχουν εγγραφεί σε αυτό το μάθημα.';
-$string['faqWLSA13'] = 'Αν ο διαχειριστής Moodle αλλάξει το σύντομο όνομα που χρησιμοποιείται για το μάθημα, οι υπάρχουσες εγγραφές συναγερμικών ειδοποιήσεων για αυτό το μάθημα θα σταματήσουν να λειτουργούν. Για εξακολούθηση της λήψης τέτοιων ειδοποιήσεων για το μάθημα, θα χρειαστεί εγγραφή στις ειδοποιήσεις αυτές ξανά.';
-$string['faqWLSQ13'] = 'Γιατί σταμάτησαν ξαφνικά να λειτουργούν οι συναγερμικές ειδοποιήσεις του μαθήματός μου;';
+$string['faqWLSA10'] = 'Οι διδάσκοντες μέσα σε ένα μάθημα Moodle μπορούν να αποστείλουν επαγρυπνήσεις στους μαθητές που έχουν εγγραφεί σε αυτό το μάθημα.';
+$string['faqWLSA13'] = 'Αν ο διαχειριστής Moodle αλλάξει το σύντομο όνομα που χρησιμοποιείται για το μάθημα, οι υπάρχουσες εγγραφές επαγρυπνήσεων για αυτό το μάθημα θα σταματήσουν να λειτουργούν. Για εξακολούθηση της λήψης τέτοιων ειδοποιήσεων για το μάθημα, θα χρειαστεί εγγραφή στις ειδοποιήσεις αυτές ξανά.';
+$string['faqWLSQ13'] = 'Γιατί σταμάτησαν ξαφνικά να λειτουργούν οι επαγρυπνήσεις του μαθήματός μου;';
 $string['faqWLSQ2'] = 'Γιατί δεν μπορώ να έχω πρόσβαση στο ηλε.ταχυδρομείο μου;';
 $string['identityHelpLink'] = 'Συχνές ερωτήσεις';
 $string['identityPrivacyLink'] = 'Ιδιωτικότητα';
@@ -103,7 +103,7 @@ $string['messengerTeachersHeader'] = 'Διδάσκοντες';
 $string['outlookurlstr'] = 'Διεύθυνση URL στο Outlook';
 $string['passwordstr'] = 'Κωδικός πρόσβασης';
 $string['placeholderstr'] = 'Συμβολοσειρά κράτησης θέσης';
-$string['popupSendAlertTitle'] = 'Αποστολή συναγερμικών ειδοποιήσεων';
+$string['popupSendAlertTitle'] = 'Αποστολή επαγρυπνήσεων';
 $string['privacy'] = 'Ιδιωτικότητα';
 $string['profile_str'] = 'Προφίλ';
 $string['searchHeader'] = 'Αναζήτηση στον Ιστό';

@@ -34,9 +34,15 @@ define("LABEL_MAX_NAME_LENGTH", 50);
  * @return string
  */
 function get_label_name($label) {
-    $name = strip_tags(format_string($label->intro,true));
+    $context = context_module::instance($label->coursemodule);
+    $intro = format_text($label->intro, $label->introformat, ['filter' => false, 'context' => $context]);
+    $name = html_to_text(format_string($intro, true, ['context' => $context]));
+    $name = preg_replace('/@@PLUGINFILE@@\/[[:^space:]]+/i', '', $name);
+    // Remove double space and also nbsp; characters.
+    $name = preg_replace('/\s+/u', ' ', $name);
+    $name = trim($name);
     if (core_text::strlen($name) > LABEL_MAX_NAME_LENGTH) {
-        $name = core_text::substr($name, 0, LABEL_MAX_NAME_LENGTH)."...";
+        $name = core_text::substr($name, 0, LABEL_MAX_NAME_LENGTH) . "...";
     }
 
     if (empty($name)) {
@@ -68,6 +74,15 @@ function label_add_instance($label) {
     \core_completion\api::update_completion_date_event($label->coursemodule, 'label', $id, $completiontimeexpected);
 
     return $id;
+}
+
+/**
+ * Sets the special label display on course page.
+ *
+ * @param cm_info $cm Course-module object
+ */
+function label_cm_info_view(cm_info $cm) {
+    $cm->set_custom_cmlist_item(true);
 }
 
 /**
@@ -172,7 +187,7 @@ function label_reset_userdata($data) {
  * @uses FEATURE_GRADE_HAS_GRADE
  * @uses FEATURE_GRADE_OUTCOMES
  * @param string $feature FEATURE_xx constant for requested feature
- * @return bool|null True if module supports feature, false if not, null if doesn't know
+ * @return mixed True if module supports feature, false if not, null if doesn't know or string for the module purpose.
  */
 function label_supports($feature) {
     switch($feature) {
@@ -186,6 +201,7 @@ function label_supports($feature) {
         case FEATURE_MOD_ARCHETYPE:           return MOD_ARCHETYPE_RESOURCE;
         case FEATURE_BACKUP_MOODLE2:          return true;
         case FEATURE_NO_VIEW_LINK:            return true;
+        case FEATURE_MOD_PURPOSE:             return MOD_PURPOSE_CONTENT;
 
         default: return null;
     }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xhtml', language 'ru', version '3.11'.
+ * Strings for component 'qformat_xhtml', language 'ru', version '4.1'.
  *
  * @package     qformat_xhtml
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Формат XHTML';
 $string['pluginname_help'] = 'Формат XHTML позволяет экспортировать все вопросы из категории в одну XHTML-страницу для возможного использования в других приложениях.';
+$string['pluginname_link'] = 'qformat/xhtml';
 $string['privacy:metadata'] = 'Плагин «Формат XHTML» не хранит никаких персональных данных.';

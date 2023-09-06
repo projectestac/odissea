@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'gl', version '3.11'.
+ * Strings for component 'qtype_multichoice', language 'gl', version '4.1'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = 'Unha ou varias respostas?';
-$string['answerhowmany_desc'] = 'Se o valor predeterminado debe ser unha resposta (é dicir, botóns de opción) ou varias respostas (isto é, caixas de verificación).';
+$string['answerhowmany_desc'] = 'Se o valor predeterminado debe ser unha resposta (é dicir, botóns de opción) ou varias respostas (isto é, caixas de selección).';
 $string['answernumbering'] = 'Numerar as escollas?';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
@@ -55,7 +55,7 @@ $string['fractionsnomax'] = 'Unha das respostas ten que ser 100% para <br />pode
 $string['incorrectfeedback'] = 'Para calquera resposta incorrecta';
 $string['notenoughanswers'] = 'Este tipo de pregunta require polo menos {$a} respostas';
 $string['overallcorrectfeedback'] = 'Avaliación de calquera resposta correcta';
-$string['overallfeedback'] = 'Retroalimentación xeral';
+$string['overallfeedback'] = 'Comentarios xerais';
 $string['overallincorrectfeedback'] = 'Avaliación de calquera resposta incorrecta';
 $string['overallpartiallycorrectfeedback'] = 'Avaliación de calquera resposta parcialmente correcta';
 $string['partiallycorrectfeedback'] = 'Para calquera resposta parcialmente correcta';
@@ -67,7 +67,7 @@ $string['pluginname_link'] = 'question/type/multichoice';
 $string['pluginnameadding'] = 'Engadindo unha pregunta de escolla múltiple';
 $string['pluginnameediting'] = 'Editando unha pregunta de escolla múltiple';
 $string['pluginnamesummary'] = 'Permite seleccionar unha ou varias respostas dunha lista predefinida.';
-$string['privacy:metadata'] = 'O engadido de opción múltiple non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O complemento de tipo de pregunta de escolla múltiple permite aos autores de preguntas estabelecer opcións predeterminadas como preferencias do usuario.';
 $string['privacy:preference:answernumbering'] = 'Que estilo de numeración se debe utilizar («1, 2, 3, ...», «a, b, c, ...» etc.).';
 $string['privacy:preference:defaultmark'] = 'A marca predeterminada estabelecida para unha determinada pregunta.';
 $string['privacy:preference:penalty'] = 'A penalización por cada intento incorrecto cando se executan preguntas mediante o comportamento «Interactivo con intentos múltiples» ou «Modo adaptativo».';
@@ -76,10 +76,10 @@ $string['privacy:preference:shuffleanswers'] = 'Indica se as respostas deben ser
 $string['privacy:preference:single'] = 'Indica se a resposta é única con botóns de escolla ou múltiple con caixas de verificación.';
 $string['selectmulti'] = 'Seleccione unha ou máis:';
 $string['selectone'] = 'Seleccione unha:';
-$string['showstandardinstruction'] = 'Amosar as instruccións estándar';
-$string['showstandardinstruction_help'] = 'Para amosar as instrucións "Selecione unha:" ou "Seleccione unha ou máis:" antes das respostas de múltiple elección.';
-$string['shuffleanswers'] = 'Barallar as respostas?';
+$string['showstandardinstruction'] = 'Amosar instrucións estándar.';
+$string['showstandardinstruction_help'] = 'Indica se amosar as instrucións «Seleccione unha:» ou «Seleccione unha ou máis:» antes das respostas de opción múltiple.';
+$string['shuffleanswers'] = 'Barallar respostas';
 $string['shuffleanswers_desc'] = 'Indica se as opcións deben ser baralladas para cada intento como predeterminado.';
-$string['shuffleanswers_help'] = 'De estar activado, a orde das escollas varía ao chou para cadanseu intento, sempre que «Barallar dentro das preguntas» tamén estea activado nos axustes da actividade.';
-$string['singleanswer'] = 'Escolla unha resposta.';
+$string['shuffleanswers_help'] = 'De estar activado, a orde das escollas varía ao chou para cadanseu intento, sempre que «Barallar dentro das preguntas» tamén estea activado na configuración da actividade.';
+$string['singleanswer'] = 'Escoller unha resposta.';
 $string['toomanyselected'] = 'Seleccionou respostas de máis.';

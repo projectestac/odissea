@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'el', version '3.11'.
+ * Strings for component 'tool_lpimportcsv', language 'el', version '4.1'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -40,7 +40,7 @@ $string['idnumber'] = 'Αναγνωριστικός αριθμός';
 $string['import'] = 'Εισαγωγή';
 $string['importfile'] = 'Αρχείο περιγραφής πλαισίου με μορφότυπο CSV (αρχείο κειμένου τιμών διαχωρισμένων με κόμμα)';
 $string['importfile_help'] = 'Ένα πλαίσιο προσόντων μπορεί να εισαχθεί μέσω αρχείου κειμένου. Ο μορφότυπος του αρχείου μπορεί να προσδιοριστεί δημιουργώντας ένα νέο πλαίσιο προσόντων στον ιστότοπο και μετά εξάγοντάς το.';
-$string['importfile_link'] = 'διαχείριση/εργαλείο/LPεισαγωγήCSV';
+$string['importfile_link'] = '';
 $string['importingfile'] = 'Εισαγωγή δεδομένων αρχείου';
 $string['invalidimportfile'] = 'Ο μορφότυπος αρχείου δεν είναι έγκυρος.';
 $string['isframework'] = 'Είναι πλαίσιο (λογισμικού)';

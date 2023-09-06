@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'ru', version '3.11'.
+ * Strings for component 'atto_recordrtc', language 'ru', version '4.1'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -32,6 +32,8 @@ $string['audioandvideo'] = 'Аудио и видео';
 $string['audiobitrate'] = 'Битрейт аудио';
 $string['audiobitrate_desc'] = 'Качество записи звука (большее значение соответствует более высокому качеству)';
 $string['audiortc'] = 'Записать аудио';
+$string['audiotimelimit'] = 'Ограничение времени аудио';
+$string['audiotimelimit_desc'] = 'Максимальная длина записи, разрешенная для аудиоклипов';
 $string['gumabort'] = 'Произошло что-то странное, что не даёт использовать веб-камеру/микрофон';
 $string['gumabort_title'] = 'Что-то произошло';
 $string['gumnotallowed'] = 'Пользователь должен разрешить браузеру доступ к веб-камере/микрофону';
@@ -69,6 +71,7 @@ $string['startrecording'] = 'Начать запись';
 $string['stoprecording'] = 'Остановить запись';
 $string['timelimit'] = 'Лимит времени в секундах';
 $string['timelimit_desc'] = 'Максимально разрешенная длина записи для аудио/видеоклипов';
+$string['timelimitwarning'] = 'Вы должны ввести число больше 0.';
 $string['uploadaborted'] = 'Загрузка прервана:';
 $string['uploadfailed'] = 'Загрузка не удалась:';
 $string['uploadfailed404'] = 'Загрузка не удалась: файл слишком большой';
@@ -76,3 +79,5 @@ $string['uploadprogress'] = 'завершена';
 $string['videobitrate'] = 'Битрейт видео';
 $string['videobitrate_desc'] = 'Качество записи видео (большее значение соответствует более высокому качеству)';
 $string['videortc'] = 'Записать видео';
+$string['videotimelimit'] = 'Ограничение времени видео';
+$string['videotimelimit_desc'] = 'Максимальная длина записи, разрешенная для видеоклипов';

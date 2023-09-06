@@ -14,7 +14,7 @@ Feature: Admin can set default status set for use in new attendance
     And I log in as "admin"
     And I navigate to "Plugins > Attendance" in site administration
     And I follow "Default status set"
-    And I set the field with xpath "//*[@id='preferencesform']/table/tbody/tr[2]/td[3]/input" to "customstatusdescription"
+    And I set the field with xpath "//*[@id='statusrow2']/td[3]/input" to "customstatusdescription"
     And I click on "Update" "button" in the "#preferencesform" "css_element"
     And I should see "Status updated"
     And I log out
@@ -27,5 +27,6 @@ Feature: Admin can set default status set for use in new attendance
     And I add a "Attendance" to section "1" and I fill the form with:
       | Name        | Attendance1       |
     And I am on the "Attendance1" "mod_attendance > View" page
-    And I follow "Status set"
-    Then the field with xpath "//*[@id='preferencesform']/table/tbody/tr[2]/td[3]/input" matches value "customstatusdescription"
+    And I click on "More" "link" in the ".secondary-navigation" "css_element"
+    And I select "Status set" from secondary navigation
+    Then the field with xpath "//*[@id='statusrow2']/td[3]/input" matches value "customstatusdescription"

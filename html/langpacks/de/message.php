@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'de', version '3.11'.
+ * Strings for component 'message', language 'de', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Mitteilungen nur für Kontakte zulassen';
 $string['blockuser'] = 'Person blockieren';
 $string['blockuserconfirm'] = 'Möchten Sie wirklich {$a} blockieren?';
 $string['blockuserconfirmbutton'] = 'Blockieren';
-$string['canceledit'] = 'Mitteilungsbearbeitung abbrechen';
 $string['cancelselection'] = 'Mitteilungsauswahl abbrechen';
 $string['cantblockuser'] = 'Sie können {$a} nicht blockieren, da sie das Recht haben, allen Nutzer/innen eine Mitteilung zu senden.';
 $string['contactableprivacy'] = 'Mitteilungen akzeptieren von:';
@@ -67,7 +66,7 @@ $string['deleteselectedmessagesconfirm'] = 'Möchten Sie wirklich die ausgewähl
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Möchten Sie wirklich die ausgewählten persönlichen Mitteilungen löschen?';
 $string['disableall'] = 'Systemnachrichten deaktivieren';
 $string['disabled'] = 'Mitteilungen sind für diese Website deaktiviert.';
-$string['disallowed'] = 'Deaktiviert';
+$string['disallowed'] = 'Aus (gesperrt)';
 $string['editmessages'] = 'Mitteilungen bearbeiten';
 $string['emailtagline'] = 'Dies ist eine Kopie einer Mitteilung, die Ihnen auf der Website "{$a->sitename}" gesendet wurde. Gehen Sie zu <a href="{$a->url}">{$a->url}</a>, um zu antworten.';
 $string['enabled'] = 'Aktiviert';
@@ -86,6 +85,7 @@ $string['eventmessageviewed'] = 'Mitteilung angezeigt';
 $string['eventnotificationsent'] = 'Mitteilungen gesendet';
 $string['eventnotificationviewed'] = 'Mitteilungen angezeigt';
 $string['forced'] = 'Gesperrt';
+$string['forcedmessage'] = 'An (gesperrt)';
 $string['groupconversations'] = 'Gruppe';
 $string['groupinfo'] = 'Gruppeninfo';
 $string['guestnoeditmessage'] = 'Gäste dürfen keine Einstellungen ändern.';
@@ -105,8 +105,6 @@ $string['loggedoffdescription'] = 'Wenn Sie nicht in Moodle angemeldet sind';
 $string['managemessageoutputs'] = 'Standardeinstellungen für Systemnachrichten';
 $string['message'] = 'Mitteilung';
 $string['messagecontactrequest'] = '{$a->user} möchte als Kontakt hinzugefügt werden. Schauen Sie in Ihre <a href="{$a->url}">Kontaktanfragen</a>, um zu antworten.';
-$string['messagecontactrequestsnotification'] = '{$a} möchte als Kontakt hinzugefügt werden.';
-$string['messagecontactrequestsnotificationsubject'] = 'Kontaktanfrage von {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename} - Kontaktanfrage von {$a->user}';
 $string['messagecontentaudio'] = 'Audio';
 $string['messagecontentimage'] = 'Bild';
@@ -137,12 +135,11 @@ $string['nofavourites'] = 'Keine Kommunikation als Favorit markiert';
 $string['noframesjs'] = 'Barrierefreie Oberfläche';
 $string['nogroupconversations'] = 'Keine Gruppenkommunikation';
 $string['noindividualconversations'] = 'Keine persönliche Kommunikation';
-$string['nomessages'] = 'Keine Mitteilungen';
 $string['nomessagesfound'] = 'Keine Mitteilungen gefunden';
 $string['noncontacts'] = 'Weitere Personen';
 $string['nonotifications'] = 'Keine Systemnachrichten';
 $string['noparticipants'] = 'Keine Teilnehmer/innen';
-$string['noreply'] = 'Antworten Sie nicht auf diese Mitteilung.';
+$string['noreply'] = 'Antworten Sie nicht auf diese Mitteilung';
 $string['notificationdatahasnotbeenmigrated'] = 'Ihre Mitteilungen sind vorübergehend wegen einer Änderung der Mitteilungsinfrastruktur nicht verfügbar. Warten Sie bitte und versuchen Sie es später noch einmal.';
 $string['notificationimage'] = 'Bild für Mitteilungen';
 $string['notificationpreferences'] = 'Systemnachrichten';
@@ -156,11 +153,7 @@ $string['offline'] = 'Offline';
 $string['on'] = 'An';
 $string['online'] = 'Online';
 $string['otherparticipants'] = 'Weitere Teilnehmer/innen';
-$string['outputdisabled'] = 'Ausgabe deaktiviert';
-$string['outputdoesnotexist'] = 'Dieser Mitteilungskanal ist nicht verfügbar.';
-$string['outputenabled'] = 'Ausgabe aktiviert';
 $string['outputnotavailable'] = 'Nicht verfügbar';
-$string['outputnotconfigured'] = 'Nicht konfiguriert';
 $string['page-message-x'] = 'Jede Mitteilungsseite';
 $string['participants'] = 'Teilnehmer/innen';
 $string['pendingcontactrequests'] = 'Es gibt {$a} anstehende Kontaktanfragen.';
@@ -223,6 +216,9 @@ $string['privacy:metadata:preference:core_message_settings'] = 'Einstellungen zu
 $string['privacy:request:preference:set'] = 'Der Wert der Einstellung \'{$a->name}\' war \'{$a->value}\'';
 $string['privacy_desc'] = 'Welche Personen sollen Ihnen persönliche Mitteilungen senden können?';
 $string['processorsettings'] = 'Einstellungen';
+$string['providerenabled'] = 'Status aktiviert: "{$a}" wird gesendet';
+$string['providerprocesorisdisallowed'] = '"{$a->provider}" in "{$a->processor}" ist aus (gesperrt)';
+$string['providerprocesorislocked'] = '"{$a->provider}" in "{$a->processor}" ist an (gesperrt)';
 $string['removecontact'] = 'Kontakt entfernen';
 $string['removecontactconfirm'] = 'Möchten Sie wirklich {$a} aus Ihren Kontakten entfernen?';
 $string['removecoursefilter'] = 'Filter für Kurs {$a} entfernen';
@@ -247,6 +243,8 @@ $string['sendbulkmessagesingle'] = 'Mitteilung an 1 Person senden';
 $string['sendcontactrequest'] = 'Kontaktanfrage senden';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = 'Ausgabe \'{$a->provider}\' über \'{$a->processor}\'';
+$string['sendingviaenabled'] = 'Status aktiviert: "{$a->provider}" wird über "{$a->processor}" gesendet';
+$string['sendingvialocked'] = 'Gesperrter Status "{$a->provider}" in "{$a->processor}" wird gesendet';
 $string['sendingviawhen'] = 'Ausgabe \'{$a->provider}\' über \'{$a->processor}\' bei {$a->state}';
 $string['sendmessage'] = 'Mitteilung senden';
 $string['sendmessageto'] = 'Mitteilung an {$a} senden';

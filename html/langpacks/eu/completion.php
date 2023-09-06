@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'eu', version '3.11'.
+ * Strings for component 'completion', language 'eu', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Lorpen-kalifikazioa';
+$string['achievingpassinggrade'] = 'Gainditzeko kalifikazioa lortzea';
 $string['activities'] = 'Jarduerak';
 $string['activitiescompleted'] = 'Jarduera-osaketa';
 $string['activitiescompletednote'] = 'Oharra: Jarduera-osaketak ezarrita egon behar du jarduera batean beheko zerrenda ager dadin.';
@@ -36,6 +37,7 @@ $string['activityaggregation_any'] = 'Aukeratutako EDOZEIN jarduera osatu behar 
 $string['activitycompletion'] = 'Jarduera-osaketa';
 $string['activitycompletionupdated'] = 'Aldaketak gorde dira';
 $string['activitygradenotrequired'] = 'Ez da kalifikazioa behar';
+$string['activitygradetopassnotset'] = 'Jarduera honek ez dauka zehaztuta gainditzeko kalifikazio baliagarria. Jarduera-ezarpenen Kalifikazioa atalean zehaztu daiteke.';
 $string['affectedactivities'] = 'Aldaketek hurrengo <b>{$a}</b> jarduera edota baliabideetan eragingo du:';
 $string['aggregationmethod'] = 'Osatu beharreko elementu-kopurua';
 $string['all'] = 'Guztiak';
@@ -44,7 +46,7 @@ $string['approval'] = 'Onartu';
 $string['areyousureoverridecompletion'] = 'Ziur zaude jarduera honetako oraingo osatze-egoera baliogabetu eta "{$a}" gisa markatu nahi duzula?';
 $string['badautocompletion'] = 'Auto-osaketa aukeratzen baduzu, gutxienez baldintza bat gaitu behar duzu (beherago)';
 $string['badcompletiongradeitemnumber'] = '\'Kalifikazioa behar du\' ezin da gaitu <b>{$a}</b> jardueran kalifikazioa ez dagoelako gaituta {$a}(r)entzat.';
-$string['bulkactivitycompletion'] = 'Masiboki editatu jardueren osaketa';
+$string['bulkactivitycompletion'] = 'Jardueren osaketaren editatze masiboa';
 $string['bulkactivitydetail'] = 'Aukeratu batera editatu nahi dituzun jarduerak.';
 $string['bulkcompletiontracking'] = 'Osaketaren jarraipena';
 $string['bulkcompletiontracking_help'] = '<strong>Bat ere ez:</strong> Ez adierazi jarduera osaketa
@@ -63,10 +65,10 @@ $string['completedwarning'] = 'Osaketa-aukerak blokeatuta';
 $string['completedwarningtext'] = 'Erabiltzaile batek edo gehiagok ({$a}) markatu dute dagoeneko jarduera hau osatu gisa. Osaketa-aukerak aldatzeak euren osaketa-egoera ezabatu egingo du eta horrek nahasmena sortu dezake. Aukerak blokeatu egin dira eta ez desblokeatzeko gomendatzen dizugu baldin eta ez bada erabat derrigorrezko.';
 $string['completion'] = 'Osaketaren jarraipena';
 $string['completion-alt-auto-enabled'] = 'Sistemak osatu gisa markatuko du elementu hau baldintzen arabera: {$a}';
-$string['completion-alt-auto-fail'] = 'Osatuta: {$a} (ez dute gutxieneko kalifikazioa lortu)';
+$string['completion-alt-auto-fail'] = 'Osatuta: {$a} (ez da gainditzeko kalifikazioa lortu)';
 $string['completion-alt-auto-n'] = 'Osatu gabea: {$a}';
 $string['completion-alt-auto-n-override'] = 'Osatu gabea: {$a->modname} ({$a->overrideuser}(e)k baliogabetua)';
-$string['completion-alt-auto-pass'] = 'Osatuta: {$a} (gutxieneko kalifikazioa lortu dute)';
+$string['completion-alt-auto-pass'] = 'Osatuta: {$a} (gainditzeko kalifikazioa lortu da)';
 $string['completion-alt-auto-y'] = 'Osatuta: {$a}';
 $string['completion-alt-auto-y-override'] = 'Osatua: {$a->modname} ({$a->overrideuser}(e)k baliogabetua)';
 $string['completion-alt-manual-enabled'] = 'Ikasleek marka dezakete elementu hau osatu gisa: {$a}';
@@ -74,10 +76,10 @@ $string['completion-alt-manual-n'] = 'Osatu gabea: {$a}. Aukeratu osatutzat mark
 $string['completion-alt-manual-n-override'] = 'Osatu gabea: {$a->modname} ({$a->overrideuser}(e)k baliogabetua). Aukeratu osatutzat markatzeko.';
 $string['completion-alt-manual-y'] = 'Osatuta: {$a}. Aukeratu osatugabe gisa markatzeko';
 $string['completion-alt-manual-y-override'] = 'Osatua: {$a->modname} ({$a->overrideuser}(e)k baliogabetua). Aukeratu osatu gabe gisa markatzeko.';
-$string['completion-fail'] = 'Osatuta (ez dute gutxieneko kalifikazioa lortu)';
+$string['completion-fail'] = 'Osatuta (ez da gainditzeko kalifikazioa lortu)';
 $string['completion-n'] = 'Osatu gabea';
 $string['completion-n-override'] = 'Osatu gabea ({$a}(e)k zehaztua)';
-$string['completion-pass'] = 'Osatuta (gutxieneko kalifikazioa lortu dute)';
+$string['completion-pass'] = 'Osatuta (gainditzeko kalifikazioa lortu da)';
 $string['completion-y'] = 'Osatuta';
 $string['completion-y-override'] = 'Osatua ({$a}(e)k zehaztua)';
 $string['completion_automatic'] = 'Erakutsi jarduera osatu gisa baldintzak betetzen direnean';
@@ -106,11 +108,14 @@ $string['completionnotenabledforcourse'] = 'Osaketa ez dago gaituta ikastaro hon
 $string['completionnotenabledforsite'] = 'Osaketa ez dago gaituta gune honetarako';
 $string['completionondate'] = 'Data';
 $string['completionondatevalue'] = 'Ikastaroa osatutzat markatuko deneko data';
+$string['completionpassgrade'] = 'Gainditzeko kalifikazioa jasotzea';
+$string['completionpassgrade_desc'] = 'Ikasleak gainditzeko kalifikazioa jaso behar du jarduera osatzeko';
+$string['completionpassgrade_help'] = 'Gaituz gero, jarduera osatutzat hartuko da ikasleak gainditzeko kalifikazio bat jasotzen duenean.';
 $string['completionsettingslocked'] = 'Osaketa-ezarpenak blokeatuta';
 $string['completionupdated'] = '<b>{$a}</b> jardueraren osatze-informazioa eguneratu da';
 $string['completionusegrade'] = 'Kalifikazioa jasotzea';
 $string['completionusegrade_desc'] = 'Ikasleak kalifikazioa jaso behar du jarduera hau osatzeko';
-$string['completionusegrade_help'] = 'Gaituz gero, jarduera hau osatutzat hartuko da ikasleak kalifikazioa jasotzen duenean. Jarduera gainditzeko kalifikazioa zehaztu bada gainditu izanaren edo huts egin izanaren ikonoak erakutsiko dira.';
+$string['completionusegrade_help'] = 'Gaituz gero, jarduera hau osatutzat hartuko da ikasleak kalifikazioa jasotzen duenean. Jarduera gainditzeko kalifikazioa zehaztu bada gainditu izanaren edo gainditu ez izanaren ikonoak erakutsiko dira.';
 $string['completionview'] = 'Ikusi beharra dago';
 $string['completionview_desc'] = 'Ikasleak jarduera hau ikusi egin behar du osatzeko';
 $string['configcompletiondefault'] = 'Lehenetsitako osaketaren jarraipena jarduera berriak sortzean.';
@@ -125,6 +130,7 @@ $string['coursecompleted'] = 'Ikastaroa osatuta';
 $string['coursecompletedmessage'] = '<p>Zorionak!</p><p><a href="{$a->courselink}">{$a->coursename}</a> ikastaroa osatu duzu.</p>';
 $string['coursecompletion'] = 'Ikastaro-osaketa';
 $string['coursecompletioncondition'] = 'Baldintza: {$a}';
+$string['coursecompletionnavigation'] = 'Ikastaro-osaketaren hirugarren mailako nabigazioa';
 $string['coursegrade'] = 'Ikastaroaren kalifikazioa';
 $string['coursesavailable'] = 'Eskura dauden ikastaroak';
 $string['coursesavailableexplaination'] = 'Oharra: Ikastaro-osaketarako baldintzak ezarri behar zaizkio ikastaro bati beheko zerrendan ager dadin.';
@@ -136,13 +142,16 @@ $string['csvdownload'] = 'Jaitsi kalkulu-orri formatuan (UTF-8 .csv)';
 $string['datepassed'] = 'Data igarota';
 $string['days'] = 'Egun';
 $string['daysoftotal'] = '{$a->days} egun {$a->total}(e)tik';
+$string['daysuntilcompletion'] = 'Osatzeko falta den egun kopurua';
 $string['defaultcompletion'] = 'Lehenetsitako jarduera-osaketa';
 $string['defaultcompletionupdated'] = 'Aldaketak gorde dira';
 $string['deletecompletiondata'] = 'Ezabatu osaketaren datuak';
 $string['dependencies'] = 'Mendekotasunak';
 $string['dependenciescompleted'] = 'Beste ikastaro batzuen osaketa';
 $string['detail_desc:receivegrade'] = 'Kalifikazio bat jasotzea';
+$string['detail_desc:receivepassgrade'] = 'Gainditzeko kalifikazioa jasotzea';
 $string['detail_desc:view'] = 'Ikustea';
+$string['done'] = 'Eginda';
 $string['editcoursecompletionsettings'] = 'Editatu ikastaro-osaketaren ezarpenak';
 $string['enablecompletion'] = 'Gaitu osaketaren jarraipena';
 $string['enablecompletion_help'] = 'Gaituz gero, jardueraren ezarpenetan jardueren osaketaren baldintzak edo/eta ikastaroaren osaketaren baldintzak zehaztu daitezke. Aukera hau gaituta izatea gomendatzen da Aginte-panelean ikastaroaren aurrebistan datu esanguratsuak agertu daitezen.';
@@ -160,6 +169,7 @@ $string['eventcoursecompletionupdated'] = 'Ikastaro-osaketa eguneratu da';
 $string['eventcoursemodulecompletionupdated'] = 'Ikastaroko jarduera-osaketa eguneratu da';
 $string['eventdefaultcompletionupdated'] = 'Ikastaroko jarduera-osaketaren balio lehenetsiak eguneratu dira';
 $string['excelcsvdownload'] = 'Jaitsi Excel-ekin bateragarria den formatuan (.csv)';
+$string['failed'] = 'Huts egin du';
 $string['fraction'] = 'Zatikia';
 $string['graderequired'] = 'Ikastaro-kalifikazioa behar du';
 $string['gradexrequired'] = '{$a} behar du';
@@ -196,6 +206,7 @@ $string['privacy:metadata:gradefinal'] = 'Ikastaro-osatzerako jasotako behin bet
 $string['privacy:metadata:overrideby'] = 'Jarduera-osatzea baliogabetu duen pertsonaren erabiltzailearen IDa.';
 $string['privacy:metadata:reaggregate'] = 'Ikastaro-osaketa berriz agregatua izan den.';
 $string['privacy:metadata:timecompleted'] = 'Ikastaroa osatu zeneko unea.';
+$string['privacy:metadata:timecreated'] = 'Jarduera osaketa sortu zeneko unea';
 $string['privacy:metadata:timeenrolled'] = 'Erabiltzailea ikastaroan matrikulatu zeneko unea';
 $string['privacy:metadata:timemodified'] = 'Jarduera-osaketa aldatu zeneko unea';
 $string['privacy:metadata:timestarted'] = 'Ikastaroa hasi zeneko unea.';
@@ -224,6 +235,8 @@ $string['selfcompletion'] = 'Auto-osaketa';
 $string['showcompletionconditions'] = 'Erakutsi jardueren osaketa-baldintzak';
 $string['showcompletionconditions_help'] = 'Jardueraren osaketa-baldintzak beti erakusten dira jarduera-orrian. Ezarpen honek jardueraren osaketa-baldintzak ikastaro-orriko jarduera-zerrendan ere jarduera bakoitzaren azpian erakutsiko diren zehazten du.';
 $string['showinguser'] = 'Erabiltzailea erakusten';
+$string['timecompleted'] = 'Osatze-unea';
+$string['todo'] = 'Egiteko';
 $string['unenrolingfromcourse'] = 'Ikastarotik desmatrikulatzen';
 $string['unenrolment'] = 'Desmatrikulazioa';
 $string['unit'] = 'Unitatea';

@@ -37,6 +37,7 @@
     <incorrectfeedback format="html">
       <text>Your answer is incorrect.</text>
     </incorrectfeedback>
+    <shownumcorrect>1</shownumcorrect>
     <answer fraction="1.0000000" format="moodle_auto_format">
       <text>Modular</text>
     </answer>
@@ -55,5 +56,13 @@
     <answer fraction="6.0000000" format="moodle_auto_format">
       <text>Environment</text>
     </answer>
+    <hint format="html">
+      <text/>
+      <shownumcorrect/>
+    </hint>
+    <hint format="html">
+      <text/>
+      <options>1</options>
+    </hint>
   </question>
 </quiz>

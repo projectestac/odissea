@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_noautolink', language 'nl', version '3.11'.
+ * Strings for component 'atto_noautolink', language 'nl', version '4.1'.
  *
  * @package     atto_noautolink
  * @category    string

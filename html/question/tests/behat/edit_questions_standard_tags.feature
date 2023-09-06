@@ -20,7 +20,7 @@ Feature: The questions can be tagged
       | bar  | 1          |
 
   Scenario: The tags autocomplete should include standard tags
-    When I am on the "Course 1" "core_question > course question bank" page logged in as teacher1
+    When I am on the "Course 1" "core_question > course question bank" page logged in as "teacher1"
     And I press "Create a new question ..."
     And I set the field "item_qtype_truefalse" to "1"
     And I click on "Add" "button" in the "Choose a question type to add" "dialogue"

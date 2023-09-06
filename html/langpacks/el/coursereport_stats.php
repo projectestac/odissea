@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'coursereport_stats', language 'el', version '3.11'.
+ * Strings for component 'coursereport_stats', language 'el', version '4.1'.
  *
  * @package     coursereport_stats
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Στατιστικά μαθήματος';
 $string['pluginpagetype'] = 'Αναφορά στατιστικών μαθήματος';
+$string['stats:view'] = 'Προβολή αναφοράς στατιστικών για τα μαθήματα';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'nl', version '3.11'.
+ * Strings for component 'contentbank', language 'nl', version '4.1'.
  *
  * @package     contentbank
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Auteur';
+$string['choosecontext'] = 'Kies cursus of categorie...';
 $string['close'] = 'Sluiten';
 $string['contentbank'] = 'Inhoudsbank';
 $string['contentbankpreferences'] = 'Voorkeuren voor de inhoudsbank';
@@ -54,10 +55,12 @@ $string['eventcontentreplaced'] = 'Inhoud vervangen door bestand';
 $string['eventcontentupdated'] = 'Inhoud aangepast';
 $string['eventcontentuploaded'] = 'Inhoud geuploaded';
 $string['eventcontentviewed'] = 'Inhoud bekeken';
+$string['exit'] = 'Verlaat';
 $string['file'] = 'Upload inhoud';
 $string['file_help'] = 'Bestanden kunnen worden opgeslagen in de inhoudsbank voor gebruik in cursussen. Alleen bestanden die worden gebruikt door inhoudstypen die op de site zijn ingeschakeld, mogen worden geüpload.';
 $string['itemsfound'] = '{$a} items gevonden';
 $string['lastmodified'] = 'Laatst gewijzigd';
+$string['more'] = 'Meer';
 $string['name'] = 'Inhoud';
 $string['nocontentavailable'] = 'Geen inhoud beschikbaar';
 $string['nocontenttypes'] = 'Geen inhoudstypes beschikbaar';

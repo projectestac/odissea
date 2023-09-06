@@ -46,10 +46,16 @@ if (!empty($attforsession->groupid) && !groups_is_member($attforsession->groupid
     throw new moodle_exception('cannottakethisgroup', 'attendance');
 }
 
+if ($DB->record_exists('attendance_log', ['sessionid' => $id, 'studentid' => $USER->id]) && !attendance_check_allow_update($id)) {
+    $url = new moodle_url('/mod/attendance/view.php', ['id' => $cm->id]);
+    throw new moodle_exception('attendance_already_submitted', 'mod_attendance', $url);
+}
+
 $qrpassflag = false;
+list($canmark, $reason) = attendance_can_student_mark($attforsession);
 
 // If the randomised code is on grab it.
-if ($attforsession->rotateqrcode == 1) {
+if ($canmark && attendance_session_open_for_students($attforsession) && $attforsession->rotateqrcode == 1) {
     $cookiename = 'attendance_'.$attforsession->id;
     $secrethash = md5($USER->id.$attforsession->rotateqrcodesecret);
     $url = new moodle_url('/mod/attendance/view.php', array('id' => $cm->id));
@@ -95,7 +101,7 @@ if ($attforsession->rotateqrcode == 1) {
     }
 }
 
-list($canmark, $reason) = attendance_can_student_mark($attforsession);
+
 if (!$canmark) {
     redirect(new moodle_url('/mod/attendance/view.php', array('id' => $cm->id)), get_string($reason, 'attendance'));
     exit;
@@ -116,7 +122,7 @@ if (empty($attforsession->includeqrcode)) {
 }
 
 // Check to see if autoassignstatus is in use and no password required or Qrpass given and passed.
-if ($attforsession->autoassignstatus && (empty($attforsession->studentpassword)) || $qrpassflag) {
+if ($attforsession->autoassignstatus && attendance_session_open_for_students($attforsession) && (empty($attforsession->studentpassword)) || $qrpassflag) {
     $statusid = attendance_session_get_highest_status($att, $attforsession);
     $url = new moodle_url('/mod/attendance/view.php', array('id' => $cm->id));
     if (empty($statusid)) {
@@ -135,7 +141,7 @@ if ($attforsession->autoassignstatus && (empty($attforsession->studentpassword))
     }
 }
 
-if (!empty($qrpass) && !empty($attforsession->autoassignstatus)) {
+if (!empty($qrpass) && !empty($attforsession->autoassignstatus) && attendance_session_open_for_students($attforsession)) {
     $fromform = new stdClass();
 
     // Check if password required and if set correctly.
@@ -169,7 +175,7 @@ if (!empty($qrpass) && !empty($attforsession->autoassignstatus)) {
     }
 }
 
-$PAGE->set_url($att->url_sessions());
+$PAGE->set_url($att->url_sessions((array)$pageparams));
 
 // Create the form.
 if ($attforsession->rotateqrcode == 1) {
@@ -189,12 +195,15 @@ if ($mform->is_cancelled()) {
 } else if ($fromform = $mform->get_data()) {
     // Check if password required and if set correctly.
     if (!empty($attforsession->studentpassword) &&
-        $attforsession->studentpassword !== $fromform->studentpassword) {
+        // Session is not currently open, but this status is allowed to be set before the session, don't require password.
+        !(!attendance_session_open_for_students($attforsession) && attendance_is_status_availablebeforesession($attforsession->id, $fromform->status))
+        // Check if password being passed is valid.
+        && $attforsession->studentpassword !== $fromform->studentpassword) {
 
         $url = new moodle_url('/mod/attendance/attendance.php', array('sessid' => $id, 'sesskey' => sesskey()));
         redirect($url, get_string('incorrectpassword', 'mod_attendance'), null, \core\output\notification::NOTIFY_ERROR);
     }
-    if ($attforsession->autoassignstatus) {
+    if (attendance_session_open_for_students($attforsession) && $attforsession->autoassignstatus) {
         $fromform->status = attendance_session_get_highest_status($att, $attforsession);
         if (empty($fromform->status)) {
             $url = new moodle_url('/mod/attendance/view.php', array('id' => $cm->id));
@@ -203,6 +212,10 @@ if ($mform->is_cancelled()) {
     }
 
     if (!empty($fromform->status)) {
+        [$statuses, $unused] = $att->get_student_statuses($attforsession);
+        if (!isset($statuses[$fromform->status])) {
+            throw new moodle_exception('attendance_status_not_allowed', 'mod_attendance', $url);
+        }
         $success = $att->take_from_student($fromform);
 
         $url = new moodle_url('/mod/attendance/view.php', array('id' => $cm->id));

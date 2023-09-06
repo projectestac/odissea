@@ -27,7 +27,6 @@ Feature: In a participation report, admin can filter student actions
       | book    | Test book name       |
       | title   | Test chapter         |
       | content | Test chapter content |
-    And I am on the "Test book name" "book activity" page logged in as teacher1
 
   @javascript
   Scenario: Filter participation report when only legacy log reader is enabled
@@ -41,7 +40,8 @@ Feature: In a participation report, admin can filter student actions
     And I am on the "Test book name" "book activity" page logged in as student1
 
     When I am on the "Course 1" course page logged in as admin
-    When I navigate to "Reports > Course participation" in current page administration
+    When I navigate to "Reports" in current page administration
+    And I click on "Course participation" "link"
     And I set the field "instanceid" to "Test book name"
     And I set the field "roleid" to "Student"
     And I press "Go"
@@ -57,6 +57,7 @@ Feature: In a participation report, admin can filter student actions
       | loglegacy | 1 | logstore_legacy |
 
     And I am on the "Test book name" "book activity" page logged in as student1
+    And I log out
 
     And I log in as "admin"
     And I navigate to "Plugins > Logging > Manage log stores" in site administration
@@ -65,7 +66,8 @@ Feature: In a participation report, admin can filter student actions
     And I am on the "Test book name" "book activity" page logged in as student1
 
     And I am on the "Course 1" course page logged in as admin
-    When I navigate to "Reports > Course participation" in current page administration
+    When I navigate to "Reports" in current page administration
+    And I click on "Course participation" "link"
     And I set the field "instanceid" to "Test book name"
     And I set the field "roleid" to "Student"
     And I press "Go"
@@ -76,7 +78,8 @@ Feature: In a participation report, admin can filter student actions
     Given I am on the "Test book name" "book activity" page logged in as student1
 
     And I am on the "Course 1" course page logged in as admin
-    When I navigate to "Reports > Course participation" in current page administration
+    And I navigate to "Reports" in current page administration
+    And I click on "Course participation" "link"
     And I set the field "instanceid" to "Test book name"
     And I set the field "roleid" to "Student"
     And I press "Go"
@@ -85,7 +88,8 @@ Feature: In a participation report, admin can filter student actions
   @javascript
   Scenario Outline: Filter participation report by viewable roles
     Given I am on the "Course 1" course page logged in as "teacher1"
-    When I navigate to "Reports > Course participation" in current page administration
+    When I navigate to "Reports" in current page administration
+    And I click on "Course participation" "link"
     # Teacher role cannot see Manager by default.
     Then "Manager" "option" should not exist in the "Show only" "select"
     And I set the following fields to these values:

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ja', version '3.11'.
+ * Strings for component 'group', language 'ja', version '4.1'.
  *
  * @package     group
  * @category    string
@@ -87,6 +87,7 @@ $string['eventgroupmemberadded'] = 'グループメンバが追加されまし�
 $string['eventgroupmemberremoved'] = 'グループメンバが削除されました。';
 $string['eventgroupupdated'] = 'グループが更新されました。';
 $string['existingmembers'] = '既存のメンバ: {$a}';
+$string['exportgroupsgroupings'] = 'グループおよびグルーピングをダウンロードする:';
 $string['filtergroups'] = 'グループをフィルタする:';
 $string['group'] = 'グループ';
 $string['groupaddedsuccesfully'] = 'グループ「 {$a} 」が正常に追加されました。';
@@ -132,7 +133,7 @@ $string['groupsgroupings'] = 'グループ&グルーピング';
 $string['groupsinselectedgrouping'] = 'グループ:';
 $string['groupsnone'] = 'グループなし';
 $string['groupsonly'] = 'グループのみ';
-$string['groupspreview'] = 'グループプレビュ';
+$string['groupspreview'] = 'グループプレビュー';
 $string['groupsseparate'] = '分離グループ';
 $string['groupsvisible'] = '可視グループ';
 $string['grouptemplate'] = 'グループ @';
@@ -145,6 +146,7 @@ $string['importgroups_help'] = 'テキストファイル経由でグループを
 * 先頭レコードには残りのデータのフォーマットを定義したフィールド名を記述してください。
 * 必須フィールド名は「groupname」です。
 * 任意フィールド名は「groupidnumber」「description」「enrolmentkey」「groupingname」「enablemessaging」です。';
+$string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'アクティブな登録のみ含む';
 $string['includeonlyactiveenrol_help'] = 'この設定を有効にした場合、利用停止ユーザはグループに含まれません。';
 $string['javascriptrequired'] = 'このページではJavaScriptを有効にする必要があります。';

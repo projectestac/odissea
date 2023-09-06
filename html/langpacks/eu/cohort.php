@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'eu', version '3.11'.
+ * Strings for component 'cohort', language 'eu', version '4.1'.
  *
  * @package     cohort
  * @category    string
@@ -36,6 +36,7 @@ $string['bulkadd'] = 'Gehitu kohortera';
 $string['bulknocohort'] = 'Ez da kohorte eskuragarririk aurkitu';
 $string['categorynotfound'] = '<b>{$a}</b> kategoria ez da aurkitu edo zuk ez duzu baimenik kohortea sortzeko bertan. Lehenetsitako testuingurua erabiliko da.';
 $string['cohort'] = 'Kohortea';
+$string['cohortmember'] = 'Kohortearen partaidea';
 $string['cohorts'] = 'Kohorteak';
 $string['cohortsin'] = 'Eskura dauden kohorteak: {$a}';
 $string['component'] = 'Mota';
@@ -62,6 +63,7 @@ $string['eventcohortupdated'] = 'Kohortea eguneratu da';
 $string['external'] = 'Kanpoko kohortea';
 $string['idnumber'] = 'Kohortearen IDa';
 $string['invalidtheme'] = 'Kohortearen azala ez da existitzen';
+$string['memberofcohort'] = 'Kohortearen partaidea';
 $string['memberscount'] = 'Kohortearen tamaina';
 $string['name'] = 'Izena';
 $string['namecolumnmissing'] = 'Arazoren bat dago CSV fitxategiaren formatuan. Mesedez, egiazta ezazu zutabeen izenak egokiak direla.  Erabiltzaileak kohorteetara gehitzeko, joan Gunearen Kudeaketako \'Igo erabiltzaileak\' atalera.';

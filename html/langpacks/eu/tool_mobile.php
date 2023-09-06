@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'eu', version '3.11'.
+ * Strings for component 'tool_mobile', language 'eu', version '4.1'.
  *
  * @package     tool_mobile
  * @category    string
@@ -31,7 +31,9 @@ $string['androidappid_desc'] = 'Ezarpen hau lehenetsitako balioarekin utz daitek
 $string['apppolicy'] = 'Aplikazioaren politikaren URLa';
 $string['apppolicy_help'] = 'Aplikazioaren erabiltzaileentzako politikaren URLa aplikazioaren Honi buruz orrian zerrendatzen dena. Eremua hutsik badago, horren ordez gunearen politikaren URLa erabiliko da.';
 $string['apprequired'] = 'Funtzionalitate hau eskuragarria izango da Moodle mobile edo mahaigaineko aplikazioaren bidez soilik.';
-$string['autologinkeygenerationlockout'] = 'Saio-hasiera automatikorako gakoak sortzea blokeatuta dago. Eskaeren artean 6 minutu itxaron behar dituzu.';
+$string['autologinkeygenerationlockout'] = 'Saio-hasiera automatikorako gakoak sortzea blokeatuta dago. Eskaeren artean {$a} minutu itxaron behar dituzu.';
+$string['autologinmintimebetweenreq'] = 'Gutxieneko denbora saio-hasiera automatikorako eskaeren artean';
+$string['autologinmintimebetweenreq_desc'] = 'Aplikazioaren bitartez egindako saio-hasiera automatikorako eskaeren arteko gutxieneko denbora. Aplikazioko erabiltzaileei guneko eduki enbotatua ikustean euren kredentzialak sartzeko maiz eskatzen bazaie, hemen balio txikiago bat ezarri ezazu.';
 $string['autologinnotallowedtoadmins'] = 'Saio-hasiera automatikoa ez dago guneko kudeatzaileentzat baimenduta.';
 $string['cachedef_plugininfo'] = 'Honek mobile-gehigarriak dituzten pluginak biltzen ditu';
 $string['cachedef_subscriptiondata'] = 'Hemen Moodle aplikazioaren harpidetzaren inguruko informazioa gordetzen da.';
@@ -78,7 +80,7 @@ $string['h5poffline'] = 'Ikusi H5P edukia lineaz kanpo';
 $string['httpsrequired'] = 'HTTPS beharrezkoa da';
 $string['insecurealgorithmwarning'] = 'Badirudi HTTPS ziurtagiriak zifratze-algoritmo ez segurua erabiltzen ari dela sinaduretarako (SHA-1). Mesedez saiatu ziurtagiria eguneratzen.';
 $string['invalidcertificatechainwarning'] = 'Badirudi ziurtagiri-katea baliogabea dela. Baliteke ziurtagiri honek web-nabigatzaile batean funtzionatzea baina ez aplikazio mugikor batean.';
-$string['invalidcertificateexpiredatewarning'] = 'Badirudi guneko HTTPS ziurtagiria iraungitua dagoela.';
+$string['invalidcertificateexpiredatewarning'] = 'Badirudi guneko HTTPS ziurtagiria iraungita dagoela.';
 $string['invalidcertificatestartdatewarning'] = 'Badirudi guneko HTTPS ziurtagiria ez dela oraindik baliozkoa (etorkizuneko hasiera-data dauka).';
 $string['invalidprivatetoken'] = 'Token pribatu baliogabea. Tokena ez da hutsik egon edo GET parametro bidez bidali.';
 $string['invaliduserquotawarning'] = 'Erabiltzailearen kuota (userquota) zenbaki baliogabea du ezarrita. Baliozko zenbaki bat zehaztu behar da (balio oso bat) Gunearen segurtasun-ezarpenetan.';
@@ -122,12 +124,16 @@ $string['privacy:metadata:core_userkey'] = 'Oraingo erabiltzailearen saio-hasier
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'Azken saio-hasiera automatikoko eskaeraren data. Eskaeren artean beharrezkoa da 6 minutu igarotzea.';
 $string['qrcodedisabled'] = 'QR kodearen bidezko sarbidea desgaituta';
 $string['qrcodeformobileappaccess'] = 'QR kodea mobile aplikazio bidezko sarbiderako';
-$string['qrcodeformobileapploginabout'] = 'Eskaneatu QR kodea zure mobile aplikazioarekin eta automatikoki sartuko zara. QR kodea {$a} minututan iraungiko da.';
+$string['qrcodeformobileapploginabout'] = 'Eskaneatu QR kodea zure mobile aplikazioarekin eta automatikoki sartuko zara. QR kodearen iraungitze-epea {$a} da.';
 $string['qrcodeformobileappurlabout'] = 'Eskaneatu QR kodea zure mobile aplikazioan gunearen URLa betetzeko.';
 $string['qrcodetype'] = 'QR kode bidezko sarbidea';
 $string['qrcodetype_desc'] = 'QR kode bat eskaini daiteke mobile aplikazioko erabiltzaileek eskaneatzeko. Aukera hau gunearen URLa betetzeko edo, guneak HTTPS nabigazio segurua erabiltzen badu, saioa erabiltzaile-izena eta pasahitza idatzi behar izan gabe automatikoki hasteko erabili daiteke.';
 $string['qrcodetypelogin'] = 'QR kodea saio-hasiera automatikorako';
 $string['qrcodetypeurl'] = 'QR kodea gunearen URLarekin';
+$string['qrkeyttl'] = 'QR autentifikazio-gakoaren iraupena';
+$string['qrkeyttl_desc'] = 'Saio-hasiera automatikorako QR kode bat baliozkoa izango den denbora-tartea.';
+$string['qrsameipcheck'] = 'QR eta autentifikazioaren IP beraren egiaztatzea';
+$string['qrsameipcheck_desc'] = 'Erabiltzaileari saioa hasteko QR kodea sortu eta egiaztatzeko sare bera erabiltzera behartuko zaion ala ez. Soilik desgaitu ezazu erabiltzaileek QR bidezko saio hasierarekin arazoak izatekotan.';
 $string['qrsiteadminsnotallowed'] = 'Segurtasun arrazoiengatik guneko kudeatzaileei edo beste erabiltzaile bat bezala sartuta daudenei ez zaie QR kode bidezko saio-hasiera baimentzen.';
 $string['readingthisemailgettheapp'] = 'Mezu hau zure posta elektronikoan irakurtzen ari zara? <a href="{$a}">Mugikorrentzako aplikazioa jaitsi ezazu eta jakinarazpenak zure gailu mugikorrean jasoko dituzu</a>.';
 $string['remoteaddons'] = 'Urruneko gehigarriak';

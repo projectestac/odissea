@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'de', version '3.11'.
+ * Strings for component 'lti', language 'de', version '4.1'.
  *
  * @package     lti
  * @category    string
@@ -192,10 +192,12 @@ $string['indicator:cognitivedepth'] = 'LTI kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer LTI-Aktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'LTI kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die LTI-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen).';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'LTI sozial';
 $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer LTI-Aktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'LTI sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die LTI-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = 'Anmelde-URL';
 $string['initiatelogin_help'] = 'Die Tool-URL, an die Anfragen zur Initiierung eines Logins gesendet werden sollen. Diese URL ist erforderlich, bevor eine Nachricht erfolgreich an das Tool gesendet werden kann.';
 $string['invalidid'] = 'LTI ID war fehlerhaft';
@@ -271,8 +273,10 @@ Externe Tool-Aktivitäten unterscheiden sich in einigen Punkten von URL-Ressourc
 * Externe Tools sind kontextabhängig, d.h. sie haben Zugriff auf Informationen über die Person, die das Tool gestartet hat, wie z.B. Institution, Kurs und Name.
 * Externe Tools unterstützen das Lesen, Aktualisieren und Löschen von Bewertungen, die mit der Aktivitätsinstanz verbunden sind.
 * Konfigurationen von externen Tools schaffen eine wechselseitige Beziehung zwischen Ihrer Website und dem Werkzeuganbieter und ermöglichen eine sichere Kommunikation zwischen ihnen.';
+$string['modulename_link'] = 'mod/lti/view';
+$string['modulename_shortcut_link'] = 'mod/lti/view/custom';
 $string['modulenameplural'] = 'Externe Tools';
-$string['modulenamepluralformatted'] = 'LTI Instanzen';
+$string['modulenamepluralformatted'] = 'Externe Tools';
 $string['name'] = 'Name';
 $string['never'] = 'Nie';
 $string['new_window'] = 'Neues Fenster';
@@ -296,10 +300,8 @@ $string['opensslconfiginvalid'] = 'Für LTI 1.3 muss eine gültige openssl.cnf k
 $string['optionalsettings'] = 'Optionale Einstellungen';
 $string['organization'] = 'Organisationsdetails';
 $string['organizationdescr'] = 'Beschreibung der Institution';
-$string['organizationid'] = 'Organisations-ID';
 $string['organizationid_default'] = 'Standard-Organisations-ID';
 $string['organizationid_default_help'] = 'Der Standardwert, der für die Organisation verwendet wird. Über die Website-ID wird diese Installation von Moodle identifiziert.';
-$string['organizationid_help'] = 'Eindeutige Identifizierung für diese Moodle-Instanz. Üblicherweise wird der DNS-Name der Institution verwendet. Wenn das Feld leer ist, wird der Host-Name des Moodle-Systems als Standardwert benutzt.';
 $string['organizationidguid'] = 'Organisations-ID';
 $string['organizationidguid_help'] = 'Ein eindeutiger Identifikator für diese Moodle-Instanz, der als Plattform-Instanz-GUID an das Tool übergeben wird.
 

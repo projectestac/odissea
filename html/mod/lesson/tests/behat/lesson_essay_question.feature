@@ -39,7 +39,7 @@ Feature: In a lesson activity, teacher can add an essay question
     And I should see "Your 1 essay question(s) will be graded and added into your final score at a later date."
     And I should see "Your current grade without the essay question(s) is 0 out of 1."
     And I am on the "Test lesson name" "lesson activity" page logged in as teacher1
-    And I follow "Grade essays"
+    And I grade lesson essays
     And I should see "Student 1"
     And I should see "Essay question"
     And I follow "Essay question"
@@ -50,7 +50,7 @@ Feature: In a lesson activity, teacher can add an essay question
       | Essay score | 1 |
     And I press "Save changes"
     And I should see "Changes saved"
-    And I follow "Reports"
+    And I navigate to "Reports" in current page administration
     And I should see "Student 1"
     And I click on ".lesson-attempt-link" "css_element" in the "Student 1" "table_row"
     And I should see "Essay: Essay question"

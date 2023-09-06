@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'currencies', language 'es', version '3.11'.
+ * Strings for component 'currencies', language 'es', version '4.1'.
  *
  * @package     currencies
  * @category    string
@@ -183,5 +183,5 @@ $string['XOF'] = 'Franco CFA de África Occidental';
 $string['XPF'] = 'Franco CFP';
 $string['YER'] = 'Rial yemení';
 $string['ZAR'] = 'Rand Sudafricano';
-$string['ZMK'] = 'Kwacha Zambiano';
+$string['ZMW'] = 'Kwacha Zambiano';
 $string['ZWL'] = 'Dólar Zimbabuense';

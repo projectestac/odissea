@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_case_repository', language 'ar', version '3.11'.
+ * Strings for component 'block_case_repository', language 'ar', version '4.1'.
  *
  * @package     block_case_repository
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_module'] = 'وحدة النشاط';
 $string['apply_metadata_presets'] = 'تطبيق القيم الافتراضية للبيانات الوصفية';
-$string['apply_presets'] = 'عند إملاء البيانات الوصفية للنشاط، كل قيم البيانات الوصفية الحالية لكل نشاطات التعلم في هذا المقرر ستتم إعادة تعيينها إلى قيمها الافتراضية.';
+$string['apply_presets'] = 'عند إملاء البيانات الوصفية للنشاط، كل قيم البيانات الوصفية الحالية لكل نشاطات التعلم في هذا المساق ستتم إعادة تعيينها إلى قيمها الافتراضية.';
 $string['apply_presets_question'] = 'هل ينبغي إملاء البيانات الوصفية للنشاط؟';
 $string['capability_no_store'] = 'لن يتم إنشاء حالات جديدة لما أدخلته في تكيف المتعلم لأن حساب المستخدم الخاص بك ليس بدور متعلم.';
 $string['case_repository:apply_metadata_presets'] = 'ضبط القيمة المُعرَّفة مسبقًا للبيانات الوصفية';
@@ -53,6 +53,6 @@ $string['relation_querverweis'] = 'مرتبط مع';
 $string['state_complete'] = 'مكتمل';
 $string['time_visited'] = 'آخر دخول';
 $string['usermeta_empty_headline'] = 'لم يتم ضبط تفضيلاتك الشخصية بعد';
-$string['usermeta_update'] = '<p>تفضيلاتك الشخصية ينبغي تحديثها للمساعدة في جعل هيكلية هذا المقرر الدراسي في الوضع المثالي.</p>';
+$string['usermeta_update'] = '<p>تفضيلاتك الشخصية ينبغي تحديثها للمساعدة في جعل هيكلية هذا المساق في الوضع المثالي.</p>';
 $string['usermeta_update_headline'] = 'تفضيلاتك الشخصية قديمة';
 $string['value_unknown'] = 'لا تتوفر أي قيمة';

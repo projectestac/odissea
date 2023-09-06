@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_textarea', language 'nl', version '3.11'.
+ * Strings for component 'datafield_textarea', language 'nl', version '4.1'.
  *
  * @package     datafield_textarea
  * @category    string
@@ -30,3 +30,4 @@ $string['maxbytes'] = 'Maximale grootte van het ingebedde bestand (bytes)';
 $string['maxbytes_desc'] = 'Indien ingesteld op nul wordt het standaard onbeperkt';
 $string['pluginname'] = 'Tekstzone';
 $string['privacy:metadata'] = 'De tekstzonecomponent bewaart geen persoonlijke gegevens, maar gebruikt tabellen in mod_data.';
+$string['sample'] = '<p>Dit is een tekstzone. Hiermee kunnen gebruikers lange tekst invoeren die meerdere regels beslaat.</p><p>Je kunt de grootte van je tekstzone in rijen en kolommen kiezen.</p><p>De tekst in een tekstzoen kan worden opgemaakt , bijvoorbeeld in <strong>bold</strong>, en voeg ook <a href="#">hyperlinks</a> of afbeeldingen toe.</p>';

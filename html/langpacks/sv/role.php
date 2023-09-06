@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'sv', version '3.11'.
+ * Strings for component 'role', language 'sv', version '4.1'.
  *
  * @package     role
  * @category    string
@@ -62,6 +62,7 @@ $string['assignrole'] = 'Tilldela roll';
 $string['assignrolenameincontext'] = 'Tilldela rollen  \'{$a->role}\' i {$a->context}';
 $string['assignroles'] = 'Tilldela roller';
 $string['assignroles_help'] = 'Genom att tilldela en användare en roll i en kontext ger du dem de behörigheter som finns i den rollen, för den aktuella kontexten och alla lägre kontexter. Om en användare till exempel tilldelas rollen som student i en kurs kommer de också att ha rollen som student för alla aktiviteter och block inom kursen.';
+$string['assignroles_link'] = 'admin/roles/assign';
 $string['assignrolesin'] = 'Tilldela roller i {$a}';
 $string['assignrolesrelativetothisuser'] = 'Tilldela roller relativt den här användaren';
 $string['backtoallroles'] = 'Tillbaka till listan över alla roller';
@@ -262,8 +263,8 @@ $string['export'] = 'Exportera';
 $string['extusers'] = 'Befintliga användare';
 $string['extusersmatching'] = 'Befintliga användare som matchar \'{$a}\'';
 $string['filter:manage'] = 'Hantera lokala filterinställningar';
-$string['frontpageuser'] = 'Inloggad användare på startsidan';
-$string['frontpageuserdescription'] = 'Alla användare som är inloggade på förstasideskursen';
+$string['frontpageuser'] = 'Autentiserad användare på startsidan';
+$string['frontpageuserdescription'] = 'Alla användare som är inloggade i kursen på startsidan.';
 $string['globalrole'] = 'Systemroll';
 $string['globalroleswarning'] = '<strong>VARNING!</strong> Roller du tilldelar från den här sidan kommer att gälla för de tilldelade användarna över hela webbplatsen, inklusive på startsidan och i alla kurser.';
 $string['gotoassignroles'] = 'Gå till \'Tilldela roller\' för det här {$a->contextlevel}';
@@ -331,6 +332,7 @@ $string['overrideanotherrole'] = 'Åsidosätt en annan roll';
 $string['overridecontext'] = 'Åsidosätt sammanhang';
 $string['overridepermissions'] = 'Åsidosätt behörigheter';
 $string['overridepermissions_help'] = 'Behörighetsåsidosättande gör att valda funktioner kan tillåtas eller förhindras i en viss kontext.';
+$string['overridepermissions_link'] = 'admin/roles/override';
 $string['overridepermissionsforrole'] = 'Åsidosätt behörigheter för rollen \'{$a->role}\' i {$a->context}';
 $string['overridepermissionsin'] = 'Åsidosätt behörigheter i {$a}';
 $string['overrideroles'] = 'Åsidosätt roller';
@@ -376,6 +378,8 @@ $string['privacy:metadata:role_cohortroles'] = 'Roller-Kohortroller';
 $string['prohibit'] = 'Förbjud';
 $string['prohibitedroles'] = 'Förbjuden';
 $string['question:add'] = 'Lägg till nya frågor';
+$string['question:commentall'] = 'Kommentera alla frågor';
+$string['question:commentmine'] = 'Kommentera egna frågor';
 $string['question:config'] = 'Konfigurera frågetyper';
 $string['question:editall'] = 'Redigera alla frågor';
 $string['question:editmine'] = 'Redigera dina egna frågor';
@@ -393,6 +397,10 @@ $string['rating:rate'] = 'Lägg till betyg till objekt';
 $string['rating:view'] = 'Visa ditt sammanlagda betyg';
 $string['rating:viewall'] = 'Visa alla \'råa\' bedömningar som har givits av enskilda';
 $string['rating:viewany'] = 'Visa de sammanlagda bedömningar som någon har fått';
+$string['reportbuilder:edit'] = 'Skapa/redigera anpassade rapporter';
+$string['reportbuilder:editall'] = 'Skapa/redigera alla anpassade rapporter';
+$string['reportbuilder:scheduleviewas'] = 'Schemalägg rapporter att visas som andra användare';
+$string['reportbuilder:view'] = 'Visa anpassade rapporter';
 $string['resetrole'] = 'Återställ';
 $string['resettingrole'] = 'Återställer roll \'{$a}\'';
 $string['restore:configure'] = 'Konfigurera återställningsslternativ';
@@ -426,6 +434,7 @@ $string['roleresetrole'] = 'Använd roll eller arketyp';
 $string['rolerisks'] = 'Rollrisker';
 $string['roles'] = 'Roller';
 $string['roles_help'] = 'En roll är en samling behörigheter som definierats för hela systemet och som du kan tilldela specifika användare i specifika sammanhang.';
+$string['roles_link'] = 'roles';
 $string['roleselect'] = 'Välj roll';
 $string['rolesforuser'] = 'Roller för {$a}';
 $string['roleshortname'] = 'Kortnamn';

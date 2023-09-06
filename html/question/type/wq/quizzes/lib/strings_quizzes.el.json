@@ -502,7 +502,7 @@
 		"gotsession": "Οι αλλαγές αποθηκεύτηκαν (αναθεώρηση ${n}).",
 		"showcas": "Χρήση του Wiris CAS",
 		"showcalcme": "Χρήση του CalcMe",
-		"learnmore": "Μάθετε περισσότερα",
+		"learnmore": "Περισσότερες πληροφορίες",
 
 
 		"catalan": "Català",
@@ -586,8 +586,8 @@
 		
 		"evaluate_keyword": "αξιολόγηση",
 		
-		"home_getting_started_welcome_header_text": "Καλώς ορίσατε στο WirisQuizzes 4.7.0",
-        "home_getting_started_welcome_description_text": "Γεια σας, εισαγάγαμε μια ενότητα για γρήγορα αποτελέσματα στο μενού μας προκειμένου να σας βοηθήσουμε να ενημερωθείτε καλύτερα για το WirisQuizzes με πρόσβαση σε τεκμηρίωση, εκπαίδευση και ειδήσεις.",
+		"home_getting_started_welcome_header_text": "Παρουσίαση του WirisQuizzes 4.8.0: Τώρα με Χειρόγραφες Αποκρίσεις Γραφημάτων",
+        "home_getting_started_welcome_description_text": "Είμαστε στην ευχάριστη θέση να σας παρουσιάσουμε έναν νέο τύπο απάντησης που επιτρέπει στους μαθητές σας να αποκρίνονται χειρόγραφα στα γραφήματα. Για περισσότερες πληροφορίες σχετικά με αυτή τη δυνατότητα, ανατρέξτε στις σημειώσεις έκδοσης και την τεκμηρίωσή μας. Ελπίζουμε ότι τόσο εσείς όσο και οι μαθητές σας θα απολαύσετε αυτή τη νέα προσθήκη στο WirisQuizzes!",
         "home_getting_started_release_notes_button_text": "Σημειώσεις έκδοσης",
         "home_getting_give_us_feedback_button_text": "Παροχή σχολίων",
         "home_getting_started_create_question_header_text": "Πώς να δημιουργήσετε την πρώτη σας ερώτηση",
@@ -603,7 +603,15 @@
         "home_getting_started_contact_us_button_text": "Επικοινωνία",
         "home_getting_started_visit_our_webpage_button_text": "Επισκεφθείτε τον ιστότοπό μας",
         "home_getting_started_report_an_issue_button_text": "Αναφορά προβλήματος",
-		"home_getting_started_list_button_text": "Γρήγορα αποτελέσματα"
+		"home_getting_started_list_button_text": "Γρήγορα αποτελέσματα",
+
+		"quizzes_studio_home_answer_type_sketch_label": "Σκίτσο",
+		"quizzes_studio_home_initial_content_description_sketch": "Αυτή είναι η αρχική κατάσταση περιεχομένου του επεξεργαστή γραφημάτων που θα δουν οι μαθητές σας όταν επιχειρήσουν να απαντήσουν στην ερώτηση. Λάβετε υπόψη ότι η γραμμή εργαλείων των μαθητών θα διαθέτει μόνο κουμπιά χειρογράφου και διαγραφής. Χρησιμοποιήστε τη δυνατότητα «Δοκιμή αυτής της ερώτησης» για να δείτε πώς θα φαίνεται.",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_1": "Εισαγάγετε τη σωστή απάντηση για την ερώτηση αυτή. Οι μαθητές σας θα χρησιμοποιήσουν το εργαλείο χειρογράφου για να σχεδιάσουν τη λύση τους, οπότε έχουμε ορίσει ελάχιστη ανοχή για ελαφρώς ανακριβείς απαντήσεις. Μπορείτε να το ρυθμίσετε αυτό κάνοντας κλικ στις «Επιλογές επαλήθευσης».",
+		"quizzes_studio_home_correct_answer_description_sketch_paragraph_2": "Χρησιμοποιήστε το κουμπί «Δοκιμή αυτής της ερώτησης» για να δείτε την προβολή του μαθητή.",
+		"quizzes_studio_test_question_student_answer_feedback_assertion_equivalent_sketch_label" : "Σκίτσο ίσο",
+		"quizzes_demo_sketch_title_menu" : "Σκίτσο",
+		"home_getting_started_documentation_button_text" : "Τεκμηρίωση"
 	}
 }
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilitychecker', language 'fr', version '3.11'.
+ * Strings for component 'atto_accessibilitychecker', language 'fr', version '4.1'.
  *
  * @package     atto_accessibilitychecker
  * @category    string
@@ -35,5 +35,5 @@ $string['pluginname'] = 'Contrôle d\'accessibilité';
 $string['privacy:metadata'] = 'Le plugin atto_accessibilitychecker n\'enregistre aucune donnée personnelle.';
 $string['report'] = 'Rapport d\'accessibilité :';
 $string['tablesmissingcaption'] = 'Les tables doivent avoir une légende. Bien qu\'il ne soit pas nécessaire à chaque table d\'avoir une légende, celle-ci est en général très utile.';
-$string['tablesmissingheaders'] = 'Les tables doivent avoir une rangée et/ou une colonne d\'entête.';
+$string['tablesmissingheaders'] = 'Les tables doivent avoir une rangée et/ou une colonne d\'en-tête.';
 $string['tableswithmergedcells'] = 'Les tables ne doivent pas comporter de cellules fusionnées. Bien que le formatage de telles cellules soit standard depuis de nombreuses années, certains lecteurs d\'écran ne lisent pas encore correctement des tables complexes. Si possible, rendez votre table simple et évitez les cellules fusionnées.';

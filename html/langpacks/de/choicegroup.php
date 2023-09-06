@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'de', version '3.11'.
+ * Strings for component 'choicegroup', language 'de', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:closingbeforeopening'] = 'Das Startdatum muss früher als das Enddatum sein.';
 $string['activitydate:exceeded'] = 'Fälligkeitsdatum verstrichen.';
 $string['activitydate:hasopened'] = 'Geöffnet:';
 $string['activitydate:notavailableyet'] = 'Noch nicht verfügbar.';
@@ -85,9 +86,9 @@ $string['double_click_grouping_legend'] = 'Zum Auf- und Einklappen auf eine Grup
 $string['event:answered'] = 'Wahl durchgeführt';
 $string['event:answered_desc'] = 'Nutzer/in \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid}\' eine Gruppe auswählt.';
 $string['event:removed'] = 'Wahl entfernt';
-$string['event:removed_desc'] = 'Nutzer/in \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid\' die Wahl entfernt.';
+$string['event:removed_desc'] = 'Nutzer/in \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid}\' die Wahl entfernt.';
 $string['event:reportviewed'] = 'Bericht angezeigt';
-$string['event:reportviewed_desc'] = 'Nutzer/in \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid\' den Bericht angezeigt.';
+$string['event:reportviewed_desc'] = 'Nutzer/in \'{$a->userid}\' hat in der Gruppenwahl \'{$a->contextinstanceid}\' den Bericht angezeigt.';
 $string['expand_all_groupings'] = 'Alle Gruppierungen aufklappen';
 $string['expired'] = 'Die Wahl ist seit {$a} beendet und nicht länger verfügbar.';
 $string['fillinatleastoneoption'] = 'Mindestens eine Wahloption angeben';
@@ -111,6 +112,7 @@ $string['members/'] = 'Gruppenmitglieder';
 $string['members/max'] = 'Gruppenmitglieder / Maximalzahl';
 $string['modulename'] = 'Gruppenwahl';
 $string['modulename_help'] = 'Mit der \'Gruppenwahl\' ist es möglich, dass Teilnehmer/innen sich selber in Gruppen innerhalb eines Kurses eintragen. Die Trainer/innen geben die Gruppen im Kurs vor, die als Wahloption verfügbar sind, außerdem die maximale Gruppengröße.';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Gruppenwahlen';
 $string['moveselectedusersto'] = 'Ausgewählte Nutzer/innen verschieben ...';
 $string['multipleenrollmentspossible'] = 'Eintrag in mehrere Gruppen erlauben';

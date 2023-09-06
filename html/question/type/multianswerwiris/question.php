@@ -45,9 +45,9 @@ class qtype_multianswerwiris_question extends qtype_wq_question implements quest
     }
 
     protected function get_substep($step, $i) {
-        // Cannot call $this->base because it is a protected method. So the
-        // following is a copy of the multianswer get_substep() implementation.
-        return new question_attempt_step_subquestion_adapter($step, 'sub' . $i . '_');
+        // We wrap the default moodle implementation in a wrapper that allows us access
+        // to protected properties.
+        return new question_attempt_step_subquestion_adapter_wiris($step, 'sub' . $i . '_');
     }
 
     protected function load_step($step) {

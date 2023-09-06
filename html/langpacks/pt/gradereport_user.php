@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_user', language 'pt', version '3.11'.
+ * Strings for component 'gradereport_user', language 'pt', version '4.1'.
  *
  * @package     gradereport_user
  * @category    string
@@ -25,11 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allusersnum'] = 'Todos ({$a})';
 $string['eventgradereportviewed'] = 'Relatório de notas do utilizador visualizado';
-$string['myself'] = 'Eu';
-$string['otheruser'] = 'Utilizador';
+$string['gotonextreport'] = 'Ir para o próximo relatório de utilizador';
+$string['gotopreviousreport'] = 'Ir para o relatório de utilizador anterior';
 $string['pluginname'] = 'Relatório do aluno';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Se devo visualizar os relatórios como o utilizador atual ou como outro utilizador nos relatórios da pauta';
 $string['tablesummary'] = 'A tabela é organizada como uma lista de itens avaliados incluindo categorias de itens avaliados. Quando os itens estão numa categoria, estes serão indicados como tal.';
-$string['user:view'] = 'Ver notas do próprio';
-$string['viewas'] = 'Ver relatório como';
+$string['user:view'] = 'Ver relatório do utilizador';
+$string['userreportdesc'] = 'Os relatórios do utilizador incluem a nota, o feedback e o total da disciplina.';
+$string['userreports'] = 'Selecione um utilizador acima para ver o relatório respetivo';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'gl', version '3.11'.
+ * Strings for component 'plugin', language 'gl', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -66,12 +66,12 @@ $string['moodlebranch'] = 'Moodle {$a->min} - {$a->max}';
 $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Ningún engadido deste tipo está instalado';
 $string['notdownloadable'] = 'Non é posíbel descargar o paquete';
-$string['notdownloadable_help'] = 'Non foi posíbel descargar automaticamente o paquete ZIP coa actualización. Vexa a páxina de documentación para obter máis axuda.';
+$string['notdownloadable_help'] = 'Non é posíbel descargar automaticamente o paquete ZIP coa actualización .';
 $string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = 'Notas';
 $string['notsupported'] = 'É posible que o engadido non sexa compatíbel coa versión de Moodle {$a}';
 $string['notwritable'] = 'Os ficheiros de engadidos non son escribíbeis';
-$string['notwritable_help'] = 'O servidor web non pode escribir ficheiros de engadidos. O proceso do servidor web debe ter acceso por escrito ao cartafol de complementos e a todo o seu contido. Tamén pode ser necesario o acceso de escritura ao cartafol raíz do tipo de complemento dado.';
+$string['notwritable_help'] = 'O servidor web non pode escribir ficheiros deengadidos. O proceso do servidor web debe ter acceso por escrito ao cartafol de complementos e a todo o seu contido. Tamén pode ser necesario o acceso de escritura ao cartafol raíz do tipo de complemento dado.';
 $string['otherplugin'] = '{$a->component}';
 $string['otherpluginversion'] = '{$a->component} ({$a->version})';
 $string['overviewall'] = 'Todos os engadidos';
@@ -86,7 +86,7 @@ $string['packagesvalidatingok'] = 'Validación correcta, a instalación pode con
 $string['plugincheckall'] = 'Todos os engadidos';
 $string['plugincheckattention'] = 'Engadidos que requiren atención';
 $string['pluginchecknone'] = 'Ningún engadido require da súa atención agora';
-$string['pluginchecknotice'] = 'Esta páxina presenta os engadidos que poden requirir a súa atención durante a actualización. Os elementos resaltados inclúen novos engadidos que están a piques de ser instalados, os que van ser actualizados e os engadidos anteriores que agora faltan. Os engadidos adicionais tamén se destacan se existe unha actualización para eles. Recomendase que comprobe se existen versións máis recentes dos engadidos e que lles actualice o seu código fonte antes de continuar con esta actualización de Moodle.';
+$string['pluginchecknotice'] = 'Esta páxina presenta os engadidos que poden requirir a súa atención durante a actualización. Os elementos resaltados inclúen novos engadidos que están a pique de seren instalados, os que van ser actualizados e os engadidos anteriores que agora faltan. Os engadidos adicionais tamén se destacan se existe unha actualización para eles. Recomendase que comprobe se existen versións máis recentes dos engadidos e que lles actualice o seu código fonte antes de continuar con esta actualización de Moodle.';
 $string['plugindisable'] = 'Desactivar';
 $string['plugindisabled'] = 'Desactivado';
 $string['pluginenable'] = 'Activar';
@@ -126,6 +126,8 @@ $string['type_calendartype'] = 'Tipo de calendario';
 $string['type_calendartype_plural'] = 'Tipos de calendario';
 $string['type_contentbank'] = 'Banco de contidos';
 $string['type_contentbank_plural'] = 'Engadidos do banco de contidos';
+$string['type_contenttype'] = 'Banco de contidos';
+$string['type_contenttype_plural'] = 'Engadidos do banco de contidos';
 $string['type_coursereport'] = 'Informe do curso';
 $string['type_coursereport_plural'] = 'Informes do curso';
 $string['type_customfield'] = 'Campo personalizado';
@@ -174,6 +176,8 @@ $string['type_portfolio'] = 'Portafolios';
 $string['type_portfolio_plural'] = 'Portafolios';
 $string['type_profilefield'] = 'Tipo do campo de perfil';
 $string['type_profilefield_plural'] = 'Tipos de campo de perfil';
+$string['type_qbank'] = 'Engadido do banco de preguntas';
+$string['type_qbank_plural'] = 'Engadidos do banco de preguntas';
 $string['type_qbehaviour'] = 'Comportamento da pregunta';
 $string['type_qbehaviour_plural'] = 'Comportamento das preguntas';
 $string['type_qformat'] = 'Formato para importar/exportar preguntas';
@@ -197,7 +201,7 @@ $string['uninstallconfirm'] = 'Está a piques de desinstalar o engadido <em>{$a-
 $string['uninstalldelete'] = 'Todos os datos asociados co engadido <em>{$a->name}</em> foron eliminados da base de datos. Para impedir que o engadido se reinstale a si mesmo, debe retirar manualmente o seu cartafol <em>{$a->rootdir}</em> do servidor agora. O propio Moodle non pode retirar o cartafol por mor dos permisos de escritura.';
 $string['uninstalldeleteconfirm'] = 'Todos os datos asociados co engadido <em>{$a->name}</em> foron eliminados da base de datos. Para impedir que o engadido se reinstale a si mesmo, debe retirar o seu cartafol <em>{$a->rootdir}</em> do servidor. Quere retirar o cartafol do engadido agora?';
 $string['uninstalldeleteconfirmexternal'] = 'Semella que a versión actual do engadido foi obtida mediante o sistema de xestión de código fonte ({$a}) de pago. Se vostede retira o cartafol do engadido, pode perder modificacións locais importantes do código. Asegúrese de que quere, definitivamente, retirar o cartafol do engadido antes de continuar.';
-$string['uninstallextraconfirmblock'] = 'Hai {$a->instances} instancias deste bloque.';
+$string['uninstallextraconfirmblock'] = 'Haiy {$a->instances} instancias deste bloque.';
 $string['uninstallextraconfirmenrol'] = 'Hai {$a->enrolments} matriculacións de usuarios.';
 $string['uninstallextraconfirmmod'] = 'Hai {$a->instances} instancias deste módulo en {$a->courses} cursos.';
 $string['uninstalling'] = 'Desinstalando {$a->name}';
@@ -222,10 +226,10 @@ $string['validationmsg_foundlangfile'] = 'Atopouse o ficheiro de idioma';
 $string['validationmsg_maturity'] = 'Declarado o nivel de madurez';
 $string['validationmsg_maturity_help'] = 'O engadido pode declarar o seu nivel de madurez. Se o mantedor considera que o engadido é estábel, o nivel de madurez declarado lerá MATURITY_STABLE. Todos os demais niveis de madurez (como alfa ou beta) deberían de considerarse inestábeis e aparecerá unha advertencia.';
 $string['validationmsg_missingcomponent'] = 'O engadido non declara o nome do seu compoñente';
-$string['validationmsg_missingcomponent_help'] = 'Todos os engadidos deben fornecer o seu nome completo mediante a declaración de «$plugin->component» no ficheiro version.php.';
+$string['validationmsg_missingcomponent_help'] = 'Todos os engadidos deben fornecer o seu nome completo mediante a declaración de  «$plugin->component» no ficheiro version.php.';
 $string['validationmsg_missingcomponent_link'] = 'Desenvolvemento:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = 'Non coincide o nome do ficheiro de idioma inglés';
-$string['validationmsg_missingexpectedlangenfile_info'] = 'Ao tipo de engadido dado fáltalle o ficheiro de idioma inglés agardado {$a}.';
+$string['validationmsg_missingexpectedlangenfile_info'] = 'Ao tipo de engadido dado fáltalle o ficheiro de idioma inglés agardado  {$a}.';
 $string['validationmsg_missinglangenfile'] = 'Non se atopou o ficheiro de idioma inglés';
 $string['validationmsg_missinglangenfolder'] = 'Falta o cartafol do idioma inglés';
 $string['validationmsg_missingversion'] = 'O engadido non declara a súa versión';
@@ -249,7 +253,7 @@ $string['validationmsg_unknowntype'] = 'Tipo de engadido descoñecido';
 $string['validationmsg_versionphpsyntax'] = 'Sintaxe non compatíbel no ficheiro version.php';
 $string['validationmsglevel_debug'] = 'Depuración';
 $string['validationmsglevel_error'] = 'Erro';
-$string['validationmsglevel_info'] = 'Aceptar';
+$string['validationmsglevel_info'] = 'De acordo';
 $string['validationmsglevel_warning'] = 'Advertencia';
 $string['version'] = 'Versión';
 $string['versiondb'] = 'Versión actual';

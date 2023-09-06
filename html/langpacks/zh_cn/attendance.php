@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'zh_cn', version '3.11'.
+ * Strings for component 'attendance', language 'zh_cn', version '4.1'.
  *
  * @package     attendance
  * @category    string
@@ -64,7 +64,6 @@ $string['attendance_no_status'] = '没有可用的有效状态-您可能太晚�
 $string['attendancedata'] = '考勤数据';
 $string['attendancefile'] = '考勤文件（csv格式）';
 $string['attendancefile_help'] = '该文件必须是一个CSV文件，带有标题行和用于识别用户的字段，以及记录的出勤时间，例如（电子邮件，扫描时间）或（用户名，时间）';
-$string['attendanceforthecourse'] = '本课程考勤状况';
 $string['attendancegrade'] = '考勤成绩';
 $string['attendancenotset'] = '你必须设置你的考勤';
 $string['attendancenotstarted'] = '课程还未开始考勤';
@@ -182,6 +181,8 @@ $string['includenottaken'] = '包含未点名的上课时间';
 $string['includeqrcode'] = '包括二维码';
 $string['includeremarks'] = '包含备注';
 $string['indetail'] = '详细……';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidaction'] = '你必须选择一个动作';
 $string['invalidsessionenddate'] = '上课结束日期不能早于开始日期';
 $string['invalidsessionendtime'] = '结束时间必须大于开始时间';
@@ -340,7 +341,6 @@ $string['strftimedmyhm'] = '%d.%m.%Y %H.%M';
 $string['strftimedmyw'] = '<nobr>%Y-%m-%d %a</nobr>';
 $string['strftimehm'] = '%H:%M';
 $string['strftimeshortdate'] = '%d.%m.%Y';
-$string['studentavailability'] = '学生时效（分钟）';
 $string['studentid'] = '学生ID';
 $string['studentmarking'] = '学生登记';
 $string['studentpassword'] = '学生密码';

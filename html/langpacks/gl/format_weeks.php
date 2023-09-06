@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'gl', version '3.11'.
+ * Strings for component 'format_weeks', language 'gl', version '4.1'.
  *
  * @package     format_weeks
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Engadir semanas';
+$string['addsections'] = 'Engadir semana';
 $string['automaticenddate'] = 'Calcule a data de remate a partires do número de seccións';
 $string['automaticenddate_help'] = 'Se está activado, a data de remate do curso calcúlase automaticamente a partires do número de seccións e da data de inicio do curso.';
 $string['currentsection'] = 'Esta semana';
@@ -39,5 +39,5 @@ $string['page-course-view-weeks-x'] = 'Páxina de calquera curso en formato sema
 $string['pluginname'] = 'Formato semanal';
 $string['privacy:metadata'] = 'O engadido de formato semanal non almacena ningún dato persoal.';
 $string['section0name'] = 'Xeral';
-$string['sectionname'] = 'Semana';
+$string['sectionname'] = 'semana';
 $string['showfromothers'] = 'Amosar a semana';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'nl', version '3.11'.
+ * Strings for component 'grading', language 'nl', version '4.1'.
  *
  * @package     grading
  * @category    string
@@ -85,7 +85,7 @@ $string['searchtemplate'] = 'Beoordelingsformulieren zoeken';
 $string['searchtemplate_help'] = 'Je kunt zoeken naar een beoordelingsformulier en het hier als sjabloon gebruiken voor een nieuw beoordelingsformulier. Typ woorden die in de formuliernaam, de beschrijving of in het formulier zelf zouden moeten voorkomen. Om een zin te zoeken, plaats je de woorden tussen dubbele aanhalingstekens.
 
 Standaard worden alleen beoordelingsformulieren die als gedeelde sjablonen bewaard zijn getoond. Je kunt ook al je eigen formulieren in de zoekresultaten opnemen. Hiermee kun je eenvoudig je eigen formulieren hergebruiken zonder ze te moeten delen. Enkel formulieren die gemarkeerd zijn met \'Klaar voor gebruik\' kunnen op deze manier herbruikt worden.';
-$string['statusdraft'] = 'Klad';
+$string['statusdraft'] = 'Concept';
 $string['statusready'] = 'Klaar voor gebruik';
 $string['templatedelete'] = 'Verwijder';
 $string['templatedeleteconfirm'] = 'Je gaat dit gedeelde sjabloon \'{$a}\' verwijderen. Het verwijderen van een sjabloon heeft geen invloed op bestaande formulieren die er op gebaseerd zijn.';

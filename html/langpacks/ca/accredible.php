@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'accredible', language 'ca', version '3.11'.
+ * Strings for component 'accredible', language 'ca', version '4.1'.
  *
  * @package     accredible
  * @category    string
@@ -33,5 +33,6 @@ $string['datecreated'] = 'Data de creació';
 $string['description'] = 'Descripció';
 $string['groupselect'] = 'Grup';
 $string['id'] = 'ID';
+$string['modulename_link'] = 'mod/accredible/view';
 $string['viewimgcomplete'] = 'Feu clic per visualitzar el vostre certificat o la vostra insígnia';
 $string['viewsubheader'] = 'ID del grup: {$a}';

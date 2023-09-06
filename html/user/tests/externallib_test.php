@@ -29,6 +29,7 @@ namespace core_user;
 use core_files_external;
 use core_user_external;
 use externallib_advanced_testcase;
+use external_api;
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -356,6 +357,12 @@ class externallib_test extends externallib_advanced_testcase {
         $this->getDataGenerator()->enrol_user($return->user2->id, $return->course->id, $return->roleid, 'manual');
         $this->getDataGenerator()->enrol_user($USER->id, $return->course->id, $return->roleid, 'manual');
 
+        $group1 = $this->getDataGenerator()->create_group(['courseid' => $return->course->id, 'name' => 'G1']);
+        $group2 = $this->getDataGenerator()->create_group(['courseid' => $return->course->id, 'name' => 'G2']);
+
+        groups_add_member($group1->id, $return->user1->id);
+        groups_add_member($group2->id, $return->user2->id);
+
         return $return;
     }
 
@@ -399,6 +406,9 @@ class externallib_test extends externallib_advanced_testcase {
 
         // We need to execute the return values cleaning process to simulate the web service server.
         $enrolledusers = \external_api::clean_returnvalue(core_user_external::get_course_user_profiles_returns(), $enrolledusers);
+        // Check we get the requested user and that is in a group.
+        $this->assertCount(1, $enrolledusers);
+        $this->assertCount(1, $enrolledusers[0]['groups']);
 
         foreach($enrolledusers as $enrolleduser) {
             if ($enrolleduser['username'] == $data->user1->username) {
@@ -721,6 +731,7 @@ class externallib_test extends externallib_advanced_testcase {
         global $USER, $CFG, $DB;
 
         $this->resetAfterTest(true);
+        $this->preventResetByRollback();
 
         $wsuser = self::getDataGenerator()->create_user();
         self::setUser($wsuser);
@@ -786,8 +797,20 @@ class externallib_test extends externallib_advanced_testcase {
         $user4['id'] = $userdeleted->id;
         user_delete_user($userdeleted);
 
+        $user5 = self::getDataGenerator()->create_user();
+        $user5 = array('id' => $user5->id, 'email' => $user5->email);
+
         // Call the external function.
-        core_user_external::update_users(array($user1, $user2, $user3, $user4));
+        $returnvalue = core_user_external::update_users(array($user1, $user2, $user3, $user4));
+        $returnvalue = \external_api::clean_returnvalue(core_user_external::update_users_returns(), $returnvalue);
+
+        // Check warnings.
+        $this->assertEquals($user2['id'], $returnvalue['warnings'][0]['itemid']); // Guest user.
+        $this->assertEquals('usernotupdatedguest', $returnvalue['warnings'][0]['warningcode']);
+        $this->assertEquals($user3['id'], $returnvalue['warnings'][1]['itemid']); // Admin user.
+        $this->assertEquals('usernotupdatedadmin', $returnvalue['warnings'][1]['warningcode']);
+        $this->assertEquals($user4['id'], $returnvalue['warnings'][2]['itemid']); // Deleted user.
+        $this->assertEquals('usernotupdateddeleted', $returnvalue['warnings'][2]['warningcode']);
 
         $dbuser2 = $DB->get_record('user', array('id' => $user2['id']));
         $this->assertNotEquals($dbuser2->username, $user2['username']);
@@ -830,6 +853,39 @@ class externallib_test extends externallib_advanced_testcase {
         $dbuserdelpic = $DB->get_record('user', array('id' => $user1['id']));
         $this->assertEquals(0, $dbuserdelpic->picture, 'Picture must be deleted when sent as 0.');
 
+        // Updating user with an invalid email.
+        $user5['email'] = 'bogus';
+        $returnvalue = core_user_external::update_users(array($user5));
+        $returnvalue = \external_api::clean_returnvalue(core_user_external::update_users_returns(), $returnvalue);
+        $this->assertEquals('useremailinvalid', $returnvalue['warnings'][0]['warningcode']);
+        $this->assertStringContainsString('Invalid email address',
+            $returnvalue['warnings'][0]['message']);
+
+        // Updating user with a duplicate email.
+        $user5['email'] = $user1['email'];
+        $returnvalue = core_user_external::update_users(array($user1, $user5));
+        $returnvalue = \external_api::clean_returnvalue(core_user_external::update_users_returns(), $returnvalue);
+        $this->assertEquals('useremailduplicate', $returnvalue['warnings'][0]['warningcode']);
+        $this->assertStringContainsString('Duplicate email address',
+                $returnvalue['warnings'][0]['message']);
+
+        // Updating a user that does not exist.
+        $user5['id'] = -1;
+        $returnvalue = core_user_external::update_users(array($user5));
+        $returnvalue = \external_api::clean_returnvalue(core_user_external::update_users_returns(), $returnvalue);
+        $this->assertEquals('invaliduserid', $returnvalue['warnings'][0]['warningcode']);
+        $this->assertStringContainsString('Invalid user ID',
+                $returnvalue['warnings'][0]['message']);
+
+        // Updating a remote user.
+        $user1['mnethostid'] = 5;
+        user_update_user($user1); // Update user not using webservice.
+        unset($user1['mnethostid']); // The mnet host ID field is not in the allowed field list for the webservice.
+        $returnvalue = core_user_external::update_users(array($user1));
+        $returnvalue = \external_api::clean_returnvalue(core_user_external::update_users_returns(), $returnvalue);
+        $this->assertEquals('usernotupdatedremote', $returnvalue['warnings'][0]['warningcode']);
+        $this->assertStringContainsString('User is a remote user',
+                $returnvalue['warnings'][0]['message']);
 
         // Call without required capability.
         $this->unassignUserCapability('moodle/user:update', $context->id, $roleid);
@@ -967,6 +1023,55 @@ class externallib_test extends externallib_advanced_testcase {
         $this->assertNotEmpty($file);
     }
 
+
+    /**
+     * Test add_user_private_files quota
+     */
+    public function test_add_user_private_files_quota() {
+        global $USER, $CFG, $DB;
+
+        $this->resetAfterTest(true);
+
+        $context = \context_system::instance();
+        $roleid = $this->assignUserCapability('moodle/user:manageownfiles', $context->id);
+
+        $context = \context_user::instance($USER->id);
+        $contextid = $context->id;
+        $component = "user";
+        $filearea = "draft";
+        $itemid = 0;
+        $filepath = "/";
+        $filename = "Simple.txt";
+        $filecontent = base64_encode("Let us create a nice simple file");
+        $contextlevel = null;
+        $instanceid = null;
+        $browser = get_file_browser();
+
+        // Call the files api to create a file.
+        $draftfile = core_files_external::upload($contextid, $component, $filearea, $itemid, $filepath,
+            $filename, $filecontent, $contextlevel, $instanceid);
+        $draftfile = \external_api::clean_returnvalue(core_files_external::upload_returns(), $draftfile);
+        $draftid = $draftfile['itemid'];
+
+        // Call the external function to add the file to private files.
+        core_user_external::add_user_private_files($draftid);
+
+        // Force the quota so we are sure it won't be space to add the new file.
+        $fileareainfo = file_get_file_area_info($contextid, 'user', 'private');
+        $CFG->userquota = $fileareainfo['filesize_without_references'] + 1;
+
+        // Generate a new draftitemid for the same testfile.
+        $draftfile = core_files_external::upload($contextid, $component, $filearea, $itemid, $filepath,
+            $filename, $filecontent, $contextlevel, $instanceid);
+        $draftid = $draftfile['itemid'];
+
+        $this->expectException('moodle_exception');
+        $this->expectExceptionMessage(get_string('maxareabytes', 'error'));
+
+        // Call the external function to include the new file.
+        core_user_external::add_user_private_files($draftid);
+    }
+
     /**
      * Test add user device
      */
@@ -982,7 +1087,8 @@ class externallib_test extends externallib_advanced_testcase {
                 'platform' => 'Android',
                 'version' => '4.2.2',
                 'pushid' => 'apushdkasdfj4835',
-                'uuid' => 'asdnfl348qlksfaasef859'
+                'uuid' => 'asdnfl348qlksfaasef859',
+                'publickey' => null,
                 );
 
         // Call the external function.
@@ -1003,9 +1109,10 @@ class externallib_test extends externallib_advanced_testcase {
 
         // Test update an existing device.
         $device['pushid'] = 'different than before';
+        $device['publickey'] = 'MFsxCzAJBgNVBAYTAkZSMRMwEQYDVQQ';
         $warnings = core_user_external::add_user_device($device['appid'], $device['name'], $device['model'], $device['platform'],
-                                                        $device['version'], $device['pushid'], $device['uuid']);
-        $warnings = \external_api::clean_returnvalue(core_user_external::add_user_device_returns(), $warnings);
+            $device['version'], $device['pushid'], $device['uuid'], $device['publickey']);
+        $warnings = external_api::clean_returnvalue(core_user_external::add_user_device_returns(), $warnings);
 
         $this->assertEquals(1, $DB->count_records('user_devices'));
         $updated = $DB->get_record('user_devices', array('pushid' => $device['pushid']));

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'nl', version '3.11'.
+ * Strings for component 'url', language 'nl', version '4.1'.
  *
  * @package     url
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'Kies een variable';
-$string['clicktoopen'] = 'Klik op {$a} om de bron te openen';
+$string['clicktoopen'] = 'Klik op {$a} om de bron te openen.';
 $string['configdisplayoptions'] = 'Selecteer alle opties die beschikbaar zouden kunnen zijn, bestaande instellingen worden niet aangepast. Hou de CTRL-toets ingedrukt om meerdere velden te kunnen selecteren.';
 $string['configframesize'] = 'Wanneer een webpagina of een geupload bestand getoond wordt in een frame, dan is deze waarde de hoogte (in pixels) van het top frame (waar de navigatie inzit).';
-$string['configrolesinparams'] = 'Inschakelen als je gelocaliseerde rolnamen in de lijst met beschikbare parametervariabelen wil.';
+$string['configrolesinparams'] = 'Moeten aangepaste rolnamen (van de cursusinstellingen) beschikbaar zijn als variabelen voor URL-parameters?.';
 $string['configsecretphrase'] = 'De geheime zin wordt gebruikt om geëncrypteerde code te maken die naar sommige servers gestuurd kan worden als een parameter. De geëncrypteerde code wordt gemaakt door een md5-waarde van het IP-adres van de gebruiker te concateneren met jouw geheime zin. vb code is md5(IP.geheimezin). Merk op dat dit is niet betrouwbaar omdat IP-adressen kunnen wijzigen in dikwijls gedeeld worden door meerdere computers.';
 $string['contentheader'] = 'Inhoud';
 $string['createurl'] = 'Maak een URL';
@@ -50,10 +50,12 @@ $string['indicator:cognitivedepth'] = 'URL cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een URL bron.';
 $string['indicator:cognitivedepthdef'] = 'URL cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid bereikt die door de URL-bronnen wordt aangeboden tijdens dit analyse-interval (Niveaus = Geen weergave, Weergave)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'URL sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een URL bron.';
 $string['indicator:socialbreadthdef'] = 'URL sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid bereikt die wordt aangeboden door de URL-bronnen tijdens dit analyse-interval (Niveaus = Geen deelname, alleen deelnemer)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidstoredurl'] = 'Kan deze bron niet tonen, URL is niet geldig.';
 $string['invalidurl'] = 'Externe URL is niet geldig';
 $string['modulename'] = 'URL';
@@ -62,7 +64,14 @@ $string['modulename_help'] = 'Met de URL-module kan een leraar een weblink als b
 Er zijn een aantal toonmogelijkheden voor de URL, zoals ingebed of openen in een nieuw venster en geavanceerde opties voor het doorgeven van informatie aan de URL, zoals de naam van een leerling, indien dit vereist is.
 
 Merk op dat URL\'s aan elke andere activiteit kan toegevoegd worden via de tekstverwerker.';
+$string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = 'URL\'s';
+$string['name'] = 'Naam';
+$string['name_help'] = 'Dit zal dienen als de linktekst voor de URL.
+
+Voer een betekenisvolle tekst in die beknopt het doel van de URL beschrijft.
+
+Vermijd het gebruik van het woord "link". Dit zal gebruikers van schermlezers helpen, aangezien schermlezers links aankondigen (bijv. "Moodle.org, link"), dus het is niet nodig om het woord "link" in het naamveld op te nemen.';
 $string['page-mod-url-x'] = 'Elke URL module-pagina';
 $string['parameterinfo'] = '&amp;parameter=variable';
 $string['parametersheader'] = 'URL variabelen';
@@ -76,7 +85,7 @@ $string['popupwidthexplain'] = 'Bepaalt de standaardbreedte van pop-upvensters';
 $string['printintro'] = 'Toon URL-beschrijving';
 $string['printintroexplain'] = 'Toon URL-beschrijving onder de inhoud? Sommige schermtypes zullen dit niet kunnen tonen, zelfs niet als dit ingeschakeld is.';
 $string['privacy:metadata'] = 'De URL bron-plugin bewaart geen persoonlijke gegevens.';
-$string['rolesinparams'] = 'Rolnamen mee opnemen in parameters';
+$string['rolesinparams'] = 'Rolnamen mee opnemen als URL-variabelen';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'Server URL';
 $string['url:addinstance'] = 'Voeg een nieuwe URL-bron toe';

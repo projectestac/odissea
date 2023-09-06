@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ouwiki', language 'ar', version '3.11'.
+ * Strings for component 'ouwiki', language 'ar', version '4.1'.
  *
  * @package     ouwiki
  * @category    string
@@ -65,8 +65,8 @@ $string['event:pageunlock'] = 'ouwiki تمت إلغاء تأمينه';
 $string['event:savefailed'] = 'فشل جلسة عند الصفحة تم حفظه';
 $string['expandallannotations'] = 'توسيع الشروحات';
 $string['expandannotation'] = 'توسيع الشرح';
-$string['externaldashboardadd'] = 'إضافة ويكي إلى لوحة التحكم';
-$string['externaldashboardremove'] = 'إزالة الويكي من لوحة التحكم';
+$string['externaldashboardadd'] = 'إضافة ويكي إلى دفة القيادة';
+$string['externaldashboardremove'] = 'إزالة الويكي من دفة القيادة';
 $string['feeditemdescriptiondate'] = '{$a->main} في {$a->date}.';
 $string['feeditemdescriptionnodate'] = '{$a->main}.';
 $string['feedtitle'] = 'ويكي {$a->course}: {$a->name} - {$a->subtitle}';

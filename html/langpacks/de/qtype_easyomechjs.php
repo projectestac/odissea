@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyomechjs', language 'de', version '3.11'.
+ * Strings for component 'qtype_easyomechjs', language 'de', version '4.1'.
  *
  * @package     qtype_easyomechjs
  * @category    string
@@ -57,6 +57,7 @@ $string['notenoughanswers'] = 'Dieser Fragetyp benötigt mindestens {$a} Antwort
 $string['pleaseenterananswer'] = 'Bitte geben Sie eine Antwort ein.';
 $string['pluginname'] = 'Chemie - Elektronenübertragung / Mechanismen (MarvinJS)';
 $string['pluginname_help'] = 'Prüft und festigt das Wissen des Teilnehmers über Reaktionsmechanismen, Mesomerie und Elektronenübertragungen.  Zeichnen Sie einen Reaktionsmechanismus oder mesomere Grenzstrukturen in dem Editor.  Bitte achten Sie auf die richtige Positionierung der Pfeile.  Wählen Sie aus zwei Schwierigkeitsstufen; Produkte anzeigen (leichter) oder Produkte nicht anzeigen (schwieriger).  Sie können Fragen, wie zum Beispiel<br><ul><li>Bitte zeichnen Sie die Pfeile, die die Elektronenübertragung in der folgenden Reaktion darstellen.</li><li>Bitte zeichnen Sie die Pfeile, die die Elektronenübertragung in den folgenden Resonanzstrukturen darstellen.</li></ul>';
+$string['pluginname_link'] = 'question/type/easyomechjs';
 $string['pluginnameadding'] = 'Eine Frage zur Elektronenübertragung / zu Mechanismen hinzufügen';
 $string['pluginnameediting'] = 'Eine Frage zur Elektronenübertragung / zu Mechanismen bearbeiten';
 $string['pluginnamesummary'] = 'Teilnehmer/innen müssen Pfeile zu einer vorgegebenen Struktur oder Reaktion hinzufügen. Sie können Fragen, wie zum Beispiel<br><ul><li>Bitte zeichnen Sie die Pfeile, die die Elektronenübertragung in der folgenden Reaktion darstellen.</li><li>Bitte zeichnen Sie die Pfeile, die die Elektronenübertragung in den folgenden Resonanzstrukturen darstellen.</li></ul>';

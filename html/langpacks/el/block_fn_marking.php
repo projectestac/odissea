@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_fn_marking', language 'el', version '3.11'.
+ * Strings for component 'block_fn_marking', language 'el', version '4.1'.
  *
  * @package     block_fn_marking
  * @category    string
@@ -39,7 +39,7 @@ $string['cfgdisplaytitle'] = 'Εμφανιζόμενος τίτλος';
 $string['checkagain'] = 'Έλεγχος ξανά';
 $string['close'] = 'Κλείσιμο';
 $string['config_showreportlink'] = 'Εμφάνιση συνδέσμου αναφοράς';
-$string['config_title'] = 'Τίτλος στιγμιότυπου';
+$string['config_title'] = 'Τίτλος στιγμιοτύπου';
 $string['config_unsubmitted'] = 'Εμφάνιση δραστηριοτήτων που δεν υποβλήθηκαν';
 $string['coursecategories'] = 'Κατηγορίες μαθήματος';
 $string['coursecategoriesincluded'] = 'Κατηγορίες μαθήματος που συμπεριλαμβάνονται';
@@ -48,7 +48,7 @@ $string['displaytitle'] = 'Δραστηριότητες που υποβλήθη�
 $string['editortoggle'] = 'Εναλλαγή επεξεργαστή κειμένου εντός σύνδεσης';
 $string['enrolledcourses'] = 'Μαθήματα με εγγραφή';
 $string['experimental'] = 'Πειραματικά';
-$string['fn_marking:addinstance'] = 'Προσθήκη στιγμιότυπου';
+$string['fn_marking:addinstance'] = 'Προσθήκη στιγμιοτύπου';
 $string['fn_marking:viewblock'] = 'Εμφάνιση μπλοκ';
 $string['fn_marking:viewreadonly'] = 'Εμφάνιση μόνο για ανάγνωση';
 $string['forum'] = 'Φόρουμ';
@@ -85,7 +85,7 @@ $string['posts'] = 'Αναρτήσεις';
 $string['progressreport'] = 'Αναφορά προόδου';
 $string['quiz'] = 'Κουίζ';
 $string['rating'] = 'Αξιολόγηση';
-$string['refreshmodefrontpage'] = 'Κατάσταση λειτουργίας ανανέωσης μπλοκ - Αρχική σελίδα';
+$string['refreshmodefrontpage'] = 'Κατάσταση λειτουργίας ανανέωσης μπλοκ - Πρώτη σελίδα';
 $string['refreshnow'] = 'Ανανέωση τώρα';
 $string['removeoverride'] = 'Αφαίρεση παράκαμψης';
 $string['replies'] = 'Απαντήσεις';

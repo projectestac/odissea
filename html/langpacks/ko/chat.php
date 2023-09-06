@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ko', version '3.11'.
+ * Strings for component 'chat', language 'ko', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -69,6 +69,8 @@ $string['explainmethoddaemon'] = 'chat_method로 "채팅서버"를 선택하였�
 $string['explainmethodnormal'] = 'chat_method로 "일반 방법"을 선택하였을 때만 작동';
 $string['generalconfig'] = '일반 설정';
 $string['idle'] = '쉼';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = '입력창';
 $string['invalidid'] = '대화방을 찾을 수 없음!';
 $string['list_all_sessions'] = '대화 목록';
@@ -86,6 +88,7 @@ $string['methoddaemon'] = '채팅 데몬';
 $string['methodnormal'] = '일반 방법';
 $string['modulename'] = '대화방';
 $string['modulename_help'] = '대화방 모률은 참석자들이 온라인 상에서 실시간으로 토론을 할 수 있게 합니다. 이는 비 실시간으로 제공되는 포럼과는 달리, 대화방을 이용하여 논제를 토론하고 서로간의 이해를 증진시키는 데 유용합니다. ';
+$string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = '대화모음';
 $string['neverdeletemessages'] = '쪽지 삭제 금지';
 $string['nextsession'] = '다음번 예정된 대화';

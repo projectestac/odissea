@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'zh_cn', version '3.11'.
+ * Strings for component 'block', language 'zh_cn', version '4.1'.
  *
  * @package     block
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtodock'] = '移到停靠栏';
 $string['anypagematchingtheabove'] = '任何符合上面条件的页面';
 $string['appearsinsubcontexts'] = '出现在子上下文';
 $string['assignrolesinblock'] = '在 {$a} 版块中分配角色';
@@ -44,11 +43,11 @@ $string['defaultweight'] = '缺省重量';
 $string['defaultweight_help'] = '缺省重量使得您可以严格设置此版块在选定区域的上面还是下面显示。最终位置要根据该区域的所有版块计算得出（例如，只有一个版块可以在最顶端）。如果需要，此设置可以在某些特殊页面覆盖。';
 $string['deleteblock'] = '删除 {$a} 版块';
 $string['deleteblockcheck'] = '您确定要删除名为 {$a} 的版块？';
+$string['deleteblockinprogress'] = '正在删除模块 {$a}...';
 $string['deleteblockwarning'] = '<p>你要删除一个别的地方使用的模块。</p><p>原始模块位置： {$a->location}<br />在页面显示的类型： {$a->pagetype}</p><p>你确认要删除么？</p>';
 $string['deletecheck'] = '删除版块 {$a}？';
-$string['dockblock'] = '停靠 {$a} 版块';
+$string['deletecheck_modal'] = '删除模块？';
 $string['hideblock'] = '隐藏 {$a} 版块';
-$string['hidedockpanel'] = '隐藏停靠栏';
 $string['hidepanel'] = '隐藏栏位';
 $string['moveblock'] = '移动 {$a} 版块';
 $string['moveblockafter'] = '移动版块到 {$a} 版块之后';
@@ -73,9 +72,6 @@ $string['showonfrontpageandsubs'] = '显示在首页和所有添加到首页的�
 $string['showonfrontpageonly'] = '只显示在首页';
 $string['subpages'] = '选择页面';
 $string['thisspecificpage'] = '指定的页面';
-$string['undockall'] = '全部移走';
-$string['undockblock'] = '移走 {$a} 版块';
-$string['undockitem'] = '移走此项';
 $string['visible'] = '可见';
 $string['weight'] = '重量';
 $string['wherethisblockappears'] = '此版块显示在哪里';

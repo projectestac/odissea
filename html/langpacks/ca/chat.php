@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ca', version '3.11'.
+ * Strings for component 'chat', language 'ca', version '4.1'.
  *
  * @package     chat
  * @category    string
@@ -60,7 +60,7 @@ $string['currentusers'] = 'Usuaris actuals';
 $string['deletesession'] = 'Suprimeix aquesta sessió';
 $string['deletesessionsure'] = 'Esteu segur que voleu suprimir aquesta sessió?';
 $string['donotusechattime'] = 'No publiquis el dia i hora dels xats';
-$string['enterchat'] = 'Feu clic aquí per entrar al xat';
+$string['enterchat'] = 'Entra al xat';
 $string['entermessage'] = 'Escriviu el vostre missatge';
 $string['errornousers'] = 'No s\'ha pogut trobar cap usuari!';
 $string['eventmessagesent'] = 'S\'ha enviat el missatge';
@@ -71,6 +71,8 @@ $string['explainmethodnormal'] = 'Aquests paràmetres <strong>només</strong> co
 $string['generalconfig'] = 'Configuració normal';
 $string['idle'] = 'Inactiu';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Xat en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions, Comenaris a les retroalimentacions)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['inputarea'] = 'Àrea d\'entrada de text';
 $string['invalidid'] = 'No s\'ha pogut trobar aquesta sala de xat';
 $string['list_all_sessions'] = 'Llista totes les sessions';
@@ -98,6 +100,7 @@ Els xats són especialment útils quan el grup no es pot trobar presencialment. 
 * Els estudiants més joves poden utilitzar el xat des de casa fora de l\'horari escolar com una forma (controlada) d\'iniciació al món de les xarxes socials.
 * Una sessió de preguntes i respostes amb un expert convidat.
 * Sessions per a ajudar els estudiants a preparar-se per als exàmens, en les quals el professor o altres estudiants posen exemples de preguntes.';
+$string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Xats';
 $string['neverdeletemessages'] = 'No suprimeixis mai els missatges';
 $string['nextsession'] = 'Propera sessió programada';
@@ -171,4 +174,4 @@ $string['usingchat_help'] = 'p>El mòdul de xat té algunes característiques qu
   <dd>Si sabeu una mica de codi HTML, el podeu utilitzar per fer coses com ara inserir imatges en el text, fer sons o crear text de mides i colors diversos.</dd>
 
 </dl>';
-$string['viewreport'] = 'Visualitza les sessions de xat anteriors';
+$string['viewreport'] = 'Sessions de xat anteriors';

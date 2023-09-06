@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'it', version '3.11'.
+ * Strings for component 'tool_dataprivacy', language 'it', version '4.1'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -170,7 +170,7 @@ $string['explanationtitle'] = 'Icone usate in questa pagina e loro significato';
 $string['external'] = 'Aggiuntivo';
 $string['externalexplanation'] = 'Plugin aggiuntivo installato';
 $string['filteroption'] = '{$a->category}: {$a->name}';
-$string['frontpagecourse'] = 'Pagina home del sito';
+$string['frontpagecourse'] = 'Corso della pagina home del sito';
 $string['gdpr_art_6_1_a_description'] = 'L’interessato ha espresso il consenso al trattamento dei propri dati personali per una o più specifiche finalità';
 $string['gdpr_art_6_1_a_name'] = 'Consenso (GDPR Art. 6.1(a))';
 $string['gdpr_art_6_1_b_description'] = 'Il trattamento è necessario all’esecuzione di un contratto di cui l’interessato è parte o all’esecuzione di misure precontrattuali adottate su richiesta dello stesso';
@@ -243,6 +243,8 @@ $string['pluginregistrytitle'] = 'Registro della conformità alla privacy dei pl
 $string['privacy'] = 'Privacy';
 $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = 'Filtro applicato alla pagina delle richieste di dati.';
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = 'Numero di richiesta di dati che l\'utente desidera visualizzare sulla pagina.';
+$string['privacy:metadata:purpose'] = 'Informazioni dalle finalità dei dati create per questo sito.';
+$string['privacy:metadata:purpose:usermodified'] = 'ID dell\'utente che ha modificato la finalità';
 $string['privacy:metadata:request'] = 'Informazioni su richieste di dai personali (con oggetto accesso e richieste di eliminazione) effettuate nel sito';
 $string['privacy:metadata:request:comments'] = 'I commenti dell\'utente a corredo della richiesta';
 $string['privacy:metadata:request:dpocomment'] = 'I commenti del responsabile del trattamento dei dati del sito al riguardo della richiesta.';

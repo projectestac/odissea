@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ar', version '3.11'.
+ * Strings for component 'plugin', language 'ar', version '4.1'.
  *
  * @package     plugin
  * @category    string
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['actions'] = 'الإجراءات';
 $string['availability'] = 'حالة التوفر';
 $string['cancelinstallall'] = 'إلغاء عمليات التنصيب الجديدة ({$a})';
-$string['cancelinstallhead'] = 'يجري إلغاء تثبيت الإضافات';
-$string['cancelinstallinfo'] = 'لم يتم تثبيت الإضافات الآتية بشكل كامل بعد، لذلك يمكن إلغاء تنصيبها. للقيام بذلك، يجب إزالة مجلد الإضافة من المخدم الآن. يجب عليك التأكد من أن هذا هو ما تريده فعلاً لتجنب فقدان البيانات بطريق الخطأ (مثل التعديلات البرمجية التي أضفتها).';
+$string['cancelinstallhead'] = 'يجري إلغاء تنصيب الإضافات';
+$string['cancelinstallinfo'] = 'لم يتم تنصيب الإضافات الآتية بشكل كامل بعد، لذلك يمكن إلغاء تنصيبها. للقيام بذلك، يجب إزالة مجلد الإضافة من المخدم الآن. يجب عليك التأكد من أن هذا هو ما تريده فعلاً لتجنب فقدان البيانات بطريق الخطأ (مثل التعديلات البرمجية التي أضفتها).';
 $string['cancelinstallinfodir'] = 'مجلد مطلوب حذفه: {$a}';
 $string['cancelinstallone'] = 'إلغاء هذا التنصيب';
 $string['cancelupgradeall'] = 'إلغاء الترقيات ({$a})';
@@ -67,6 +67,7 @@ $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'لم يتم تنصيب أي إضافات من هذا النوع';
 $string['notdownloadable'] = 'لا يمكن تحميل الحزمة';
 $string['notdownloadable_help'] = 'لا يمكن تنزيل حزمة ZIP مع التحديث تلقائياً. يرجى الرجوع إلى صفحة التوثيقات لمزيد من المساعدة.';
+$string['notdownloadable_link'] = 'admin/mdeploy/notdownloadable';
 $string['notes'] = 'الملاحظات';
 $string['notsupported'] = 'الإضافة قد لا تكون متوافقة مع مودل بإصداره {$a}';
 $string['notwritable'] = 'ملفات الإضافة غير قابلة للكتابة عليها';
@@ -125,8 +126,10 @@ $string['type_calendartype'] = 'نوع التقويم';
 $string['type_calendartype_plural'] = 'أنواع التقويم';
 $string['type_contentbank'] = 'بنك المحتوى';
 $string['type_contentbank_plural'] = 'إضافات بنك المحتوى';
-$string['type_coursereport'] = 'تقرير المقرر الدراسي';
-$string['type_coursereport_plural'] = 'تقارير المقرر الدراسي';
+$string['type_contenttype'] = 'بنك المحتوى';
+$string['type_contenttype_plural'] = 'إضافات بنك المحتوى';
+$string['type_coursereport'] = 'تقرير المساق';
+$string['type_coursereport_plural'] = 'تقارير المساق';
 $string['type_customfield'] = 'حقل مخصص';
 $string['type_customfield_plural'] = 'حقول مخصصة';
 $string['type_dataformat'] = 'تصميم البيانات';
@@ -140,8 +143,8 @@ $string['type_fileconverter_plural'] = 'محولات المستندات';
 $string['type_fileconvertermanage'] = 'إدارة محولات المستندات';
 $string['type_filter'] = 'مرشح النصوص';
 $string['type_filter_plural'] = 'منقحات النصوص';
-$string['type_format'] = 'تنسيق المقرر الدراسي';
-$string['type_format_plural'] = 'تنسيقات المقرر الدراسي';
+$string['type_format'] = 'تنسيق المساق';
+$string['type_format_plural'] = 'تنسيقات المساق';
 $string['type_gradeexport'] = 'طريقة تصدير التقديرات';
 $string['type_gradeexport_plural'] = 'طُرق تصدير التقديرات';
 $string['type_gradeimport'] = 'طريقة استيراد التقديرات';
@@ -173,6 +176,8 @@ $string['type_portfolio'] = 'محفظة';
 $string['type_portfolio_plural'] = 'المحافظ';
 $string['type_profilefield'] = 'نوع حقل الملف الشخصي';
 $string['type_profilefield_plural'] = 'أنواع حقول الملف الشخصي';
+$string['type_qbank'] = 'ملحق بنك الأسئلة';
+$string['type_qbank_plural'] = 'إضافات بنك الأسئلة';
 $string['type_qbehaviour'] = 'سلوك السؤال';
 $string['type_qbehaviour_plural'] = 'سلوكات الأسئلة';
 $string['type_qformat'] = 'تنسيق إستيراد/تصدير السؤال';
@@ -185,8 +190,8 @@ $string['type_repository'] = 'مستودع';
 $string['type_repository_plural'] = 'مستودعات';
 $string['type_search'] = 'محرك بحث';
 $string['type_search_plural'] = 'محركات بحث';
-$string['type_theme'] = 'قالب';
-$string['type_theme_plural'] = 'المظاهر';
+$string['type_theme'] = 'مظهر';
+$string['type_theme_plural'] = 'مظاهر';
 $string['type_tool'] = 'أداة الإدارة';
 $string['type_tool_plural'] = 'أدوات الإدارة';
 $string['type_webservice'] = 'بروتوكول خدمات الويب';
@@ -199,7 +204,7 @@ $string['uninstalldeleteconfirm'] = 'تم حذف كل البيانات المر�
 $string['uninstalldeleteconfirmexternal'] = 'يبدو أن الإصدار الحالي من الإضافة قد تم الحصول عليه من خلال نظام إدارة شفرة المصدر ({$a}). إذا أردت إزالة مجلد هذه الإضافة، فقد تفقد تعديلات محلية هامة من التعليمات البرمجية. الرجاء <strong>التأكد</strong> من أنك بلا شك تريد إزالة مجلد الإضافة قبل المتابعة.';
 $string['uninstallextraconfirmblock'] = 'هناك عدة نسخ {$a->instances} من هذه المجموعة.';
 $string['uninstallextraconfirmenrol'] = 'يوجد {$a->enrolments} لتسجيلات المستخدمين.';
-$string['uninstallextraconfirmmod'] = 'يوجد  {$a->instances} نسخ مطابقة لهذا النموذج في {$a->courses} مقررات دراسية';
+$string['uninstallextraconfirmmod'] = 'يوجد  {$a->instances} نسخ مطابقة لهذا النموذج في {$a->courses} مساقات';
 $string['uninstalling'] = 'يجري إلغاء تنصيب {$a->name}';
 $string['updateavailable'] = 'هناك إصدار جديد {$a} متاح!';
 $string['updateavailable_moreinfo'] = 'مزيد من المعلومات...';
@@ -223,6 +228,7 @@ $string['validationmsg_maturity'] = 'مستوى النضج المعلن';
 $string['validationmsg_maturity_help'] = 'يمكن للملحق أن يُعلن عن مستوى نضجه. إذا اعتبر القَيِّم عليه أنه مستقر، سيقرأ مستوى النضج المعلن له MATURITY_STABLE. ينبغي اعتبار كل مستويات النضج الأخرى (مثل ألفا أو بيتا) غير مستقرة ويُرفع معها عَلَمُ التحذير.';
 $string['validationmsg_missingcomponent'] = 'الإضافة لا تعلن اسم المُكون الخاص به';
 $string['validationmsg_missingcomponent_help'] = 'يجب أن توفر كل الإضافات اسم مكونها الكامل عبر تعريف`$plugin->component` في ملف version.php.';
+$string['validationmsg_missingcomponent_link'] = 'Development:version.php';
 $string['validationmsg_missingexpectedlangenfile'] = 'عدم تطابق اسم ملف اللغة الإنجليزية';
 $string['validationmsg_missingexpectedlangenfile_info'] = 'يفتقد نوع الإضافة المحدد إلى ملف اللغة الإنجليزية المتوقع {$a}.';
 $string['validationmsg_missinglangenfile'] = 'لم يتم العثور على ملف باللغة الإنجليزية';

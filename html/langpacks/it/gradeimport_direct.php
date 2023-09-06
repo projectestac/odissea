@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'it', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'it', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -30,3 +30,4 @@ $string['pluginname'] = 'Incolla da foglio elettronico';
 $string['privacy:metadata'] = 'Il plugin per l\'importazione delle valutazioni \'Incolla da foglio elettronico\' non memorizza dati personali.';
 $string['userdata'] = 'Aiuto su Incolla da foglio elettronico';
 $string['userdata_help'] = 'Le valutazioni possono essere copiate da un foglio elettronico e incollate all\'interno del registro valutatore. Il foglio elettronico deve avere una colonna contenente i dati riguardanti l\'identità dell\'utente (lo username, il codice identificativo oppure l\'indirizzo e-mail). Ogni colonna da importare deve avere un\'intestazione di colonna.';
+$string['userdata_link'] = 'grade/import/direct/index';

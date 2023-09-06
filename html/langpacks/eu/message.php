@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'eu', version '3.11'.
+ * Strings for component 'message', language 'eu', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Galarazi niri mezuak bidaltzea nire kontaktu ez d
 $string['blockuser'] = 'Blokeatu erabiltzailea';
 $string['blockuserconfirm'] = 'Ziur zaude {$a} blokeatu nahi duzula?';
 $string['blockuserconfirmbutton'] = 'Blokeatu';
-$string['canceledit'] = 'Utzi mezuak editatzeari';
 $string['cancelselection'] = 'Ezeztatu mezu-hautaketa';
 $string['cantblockuser'] = 'Ezin duzu {$a} blokeatu erabiltzaile guztiei mezuak bidaltzeko baimenak dituen rola dutelako.';
 $string['contactableprivacy'] = 'Onartu hauen mezuak:';
@@ -67,7 +66,7 @@ $string['deleteselectedmessagesconfirm'] = 'Ziur zaude aukeratutako mezuak ezaba
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Ziur zaude aukeratutako mezu pertsonalak ezabatu nahi dituzula?';
 $string['disableall'] = 'Desgaitu jakinarazpenak';
 $string['disabled'] = 'Mezularitza desgaituta dago gune honetan';
-$string['disallowed'] = 'Ez dago baimenduta';
+$string['disallowed'] = 'Blokeatuta';
 $string['editmessages'] = 'Editatu mezuak';
 $string['emailtagline'] = 'Mezu hau {$a->sitename} gunean zuri bidalitako mezu baten kopia da. Erantzuteko <a href="{$a->url}">hona sartu zaitez</a>.';
 $string['enabled'] = 'Gaituta';
@@ -86,6 +85,7 @@ $string['eventmessageviewed'] = 'Mezua ikusi da';
 $string['eventnotificationsent'] = 'Jakinarazpena bidali da';
 $string['eventnotificationviewed'] = 'Jakinarazpena ikusi da';
 $string['forced'] = 'Blokeatuta';
+$string['forcedmessage'] = 'Blokeatuta';
 $string['groupconversations'] = 'Taldea';
 $string['groupinfo'] = 'Taldearen informazioa';
 $string['guestnoeditmessage'] = 'Gonbidatuek ezin dituzte mezularitzaren aukerak editatu';
@@ -105,8 +105,6 @@ $string['loggedoffdescription'] = 'On-line ez nagoenean';
 $string['managemessageoutputs'] = 'Jakinarazpen-hobespen lehenetsiak';
 $string['message'] = 'Mezua';
 $string['messagecontactrequest'] = '{$a->user} erabiltzaileak kontaktu gisa gehitzea eskatzen ari da. Eskaerari erantzuteko joan zaitez zure <a href="{$a->url}">kontaktu-eskaeren orrira</a> .';
-$string['messagecontactrequestsnotification'] = '{$a} erabiltzaileak kontaktu gisa gehitua izatea eskatzen ari da.';
-$string['messagecontactrequestsnotificationsubject'] = '{$a}(e)k egindako kontaktu-eskaera';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: {$a->user} erabiltzailearen kontaktu-eskaera';
 $string['messagecontentaudio'] = 'Audioa';
 $string['messagecontentimage'] = 'Irudia';
@@ -137,7 +135,6 @@ $string['nofavourites'] = 'Ez dago nabarmendutako elkarrizketarik';
 $string['noframesjs'] = 'Erabili interfaz eskuragarriagoa';
 $string['nogroupconversations'] = 'Taldeko elkarrizketarik ez';
 $string['noindividualconversations'] = 'Elkarrizketa pribaturik ez';
-$string['nomessages'] = 'Mezurik ez';
 $string['nomessagesfound'] = 'Ez da mezurik aurkitu';
 $string['noncontacts'] = 'Kontaktu ez direnak';
 $string['nonotifications'] = 'Ez duzu jakinarazpenik';
@@ -156,11 +153,7 @@ $string['offline'] = 'Lineaz kanpo';
 $string['on'] = 'Piztu';
 $string['online'] = 'On-line';
 $string['otherparticipants'] = 'Bestelako partaide batzuk';
-$string['outputdisabled'] = 'Irteera desgaituta';
-$string['outputdoesnotexist'] = 'Irteerako mezua ez da existitzen';
-$string['outputenabled'] = 'Irteera gaituta';
 $string['outputnotavailable'] = 'Ez dago eskuragarri';
-$string['outputnotconfigured'] = 'Ezarri gabea';
 $string['page-message-x'] = 'Edozein mezu-orri';
 $string['participants'] = 'Partaideak';
 $string['pendingcontactrequests'] = 'Itxaron-zerrendan {$a} kontaktu-eskaera daude';
@@ -223,6 +216,9 @@ $string['privacy:metadata:preference:core_message_settings'] = 'Mezularitzarekin
 $string['privacy:request:preference:set'] = '\'{$a->name}\' ezarpenaren balioa \'{$a->value}\' da';
 $string['privacy_desc'] = 'Mezuak nork bidal ahalko dizkizun zehaztu dezakezu';
 $string['processorsettings'] = 'Prozesatzailearen ezarpenak';
+$string['providerenabled'] = 'Gaitutako "{$a}" egoera bidaltzen';
+$string['providerprocesorisdisallowed'] = '"{$a->processor}" prozesatzaileko "{$a->provider}" hornitzailea blokeatuta dago';
+$string['providerprocesorislocked'] = '"{$a->processor}" prozesatzaileko "{$a->provider}" hornitzailea blokeatuta dago';
 $string['removecontact'] = 'Ezabatu kontaktua';
 $string['removecontactconfirm'] = 'Ziur zaude {$a} kendu nahi duzula zure kontaktuetatik?';
 $string['removecoursefilter'] = 'Ezabatu iragazkia {$a} ikastarotik';
@@ -247,6 +243,8 @@ $string['sendbulkmessagesingle'] = 'Bidali mezua pertsona bati';
 $string['sendcontactrequest'] = 'Bidali kontaktu-eskaria';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = '"{$a->provider}" hornitzailea bidaltzen "{$a->processor}" prozesatzailearen bidez';
+$string['sendingviaenabled'] = '"{$a->provider}" hornitzailea bidaltzen "{$a->processor}" prozesatzailearen bidez gaituta';
+$string['sendingvialocked'] = '"{$a->provider}" hornitzailea bidaltzen "{$a->processor}" prozesatzailearen bidez blokeatuta';
 $string['sendingviawhen'] = '"{$a->provider}" hornitzailea bidaltzen "{$a->processor}" prozesatzailearen bidez egoera {$a->state} denean';
 $string['sendmessage'] = 'Bidali mezua';
 $string['sendmessageto'] = 'Bidali mezua {$a}(e)ri';

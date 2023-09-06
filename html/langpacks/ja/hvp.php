@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'ja', version '3.11'.
+ * Strings for component 'hvp', language 'ja', version '4.1'.
  *
  * @package     hvp
  * @category    string
@@ -178,6 +178,7 @@ $string['modulename_help'] = 'H5P活動モジュールでは、インタラク�
 ユーザのインタラクションと点数はxAPIをつかって追跡され、Moodleの評定表を通して利用可能です。
 
 .h5pファイルをアップロードすることでインタラクティブなH5Pコンテンツを 追加することができます。 h5p.orgのサイト上で作成して .h5pファイルをダウンロードすることができます。';
+$string['modulename_link'] = 'https://h5p.org/moodle-more-help';
 $string['modulenameplural'] = 'インタラクティブコンテンツ';
 $string['nextpage'] = '次のページ';
 $string['nocontent'] = 'content.jsonファイルを見つけたり解析したりできませんでした';

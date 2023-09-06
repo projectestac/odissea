@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'el', version '3.11'.
+ * Strings for component 'gradeimport_direct', language 'el', version '4.1'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -30,4 +30,4 @@ $string['pluginname'] = 'Επικόλληση από Φύλλο εργασίας
 $string['privacy:metadata'] = 'Το πρόσθετο «Εισαγωγή βαθμών από αντίγραφο υπολογιστικού φύλλου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['userdata'] = 'Βοήθεια στην αντιγραφή δεδομένων σε αυτή τη φόρμα.';
 $string['userdata_help'] = 'Οι βαθμοί μπορούν να αντιγραφούν και να επικολληθούν από ένα λογιστικό φύλλο στο βαθμολόγιο. Το λογιστικό φύλλο θα πρέπει να περιέχει μια στήλη που να περιέχει δεδομένα ταυτότητας χρήστη - είτε όνομα χρήστη, είτε αναγνωριστικό αριθμό, είτε διεύθυνση ηλε.ταχυδρομείου. Κάθε στήλη για εισαγωγή θα πρέπει να έχει μια κεφαλίδα στήλης.';
-$string['userdata_link'] = 'βαθμός/εισαγωγή/άμεση/ευρετήριο';
+$string['userdata_link'] = '';

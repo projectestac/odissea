@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ar', version '3.11'.
+ * Strings for component 'tool_installaddon', language 'ar', version '4.1'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'العرفان';
-$string['acknowledgementtext'] = 'أدرك أنه من مسؤوليتي الحصول على نسخ احتياطية كاملة لهذا الموقع قبل تثبيت إضافات إضافية. أقبل وأتفهم أن الإضافات الإضافية (خاصة ولكن ليس فقط تلك التي تنشأ من مصادر غير رسمية) قد تحتوي على ثغرات أمنية، أو قد تجعل الموقع غير متاح، أو تتسبب في تسرب البيانات الخاصة أو فقدها.';
+$string['acknowledgementtext'] = 'أدرك أنه من مسؤوليتي الحصول على نسخ احتياطية كاملة لهذا الموقع قبل تنصيب إضافات إضافية. أقبل وأتفهم أن الإضافات الإضافية (خاصة ولكن ليس فقط تلك التي تنشأ من مصادر غير رسمية) قد تحتوي على ثغرات أمنية، أو قد تجعل الموقع غير متاح، أو تتسبب في تسرب البيانات الخاصة أو فقدها.';
 $string['featuredisabled'] = 'مُنصِّب الإضافات معطَّل في هذا الموقع.';
 $string['installaddon'] = 'تنصيب الإضافة!';
 $string['installaddons'] = 'تنصيب الإضافات';
@@ -42,8 +42,8 @@ $string['installfromziprootdir_help'] = 'قد تحتوي بعض حزم ZIP ، م
 $string['installfromzipsubmit'] = 'تنصيب الإضافة من ملف ZIP';
 $string['installfromziptype'] = 'نوع الإضافة';
 $string['installfromziptype_help'] = 'بالنسبة إلى الإضافات التي تعلن عن اسم المكون الخاص بها بشكل صحيح، يكون المنصِّب قادراً على اكتشاف نوع الإضافة تلقائياً. في حالة فشل الاكتشاف التلقائي، إختر النوع الصحيح للإضافة يدوياً.
-تحذير: قد يفشل إجراء التثبيت بشدة إذا تم تحديد نوع غير صحيح للإضافة.';
-$string['installfromziptype_link'] = 'تطوير : الإضافات';
+تحذير: قد يفشل إجراء التنصيب بشدة إذا تم تحديد نوع غير صحيح للإضافة.';
+$string['installfromziptype_link'] = 'تطوير : الملاحق';
 $string['permcheck'] = 'تأكد من أن موقع جذر نوع البرنامج المساعد قابل للكتابة بواسطة عملية خادم الويب.';
 $string['permcheckerror'] = 'خطأ أثناء التحقق من إذن الكتابة';
 $string['permcheckprogress'] = 'جارٍ التحقق من إذن الكتابة ...';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_apply', language 'es', version '3.11'.
+ * Strings for component 'enrol_apply', language 'es', version '4.1'.
  *
  * @package     enrol_apply
  * @category    string
@@ -28,9 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['applicationcancelednotification'] = 'Se canceló la solicitud de inscripción al curso.';
 $string['applicationconfirmednotification'] = 'Se confirmó la solicitud de inscripción al curso.';
 $string['applicationdeferrednotification'] = 'Su solicitud de inscripción al curso se aplazó (actualmente está en la lista de espera).';
+$string['apply:config'] = 'Configurar instancias de aplicar inscripción';
 $string['apply:manage'] = 'Administrar matriculación de usuarios';
 $string['apply:manageapplications'] = 'Administrar solicitud de inscripción';
 $string['apply:unenrol'] = 'Cancelar usuarios del curso';
+$string['apply:unenrolself'] = 'Cancelarse a sí mismo del curso';
+$string['applycomment'] = 'Comentario';
 $string['applydate'] = 'Fecha de inscripción';
 $string['applymanage'] = 'Administrar opciones de inscripción';
 $string['applyuser'] = 'Nombre / Apellido';
@@ -59,7 +62,9 @@ $string['defaultperiod_help'] = 'Tiempo durante la matriculación se mantendrá 
 $string['editdescription'] = 'Descripción del área de texto';
 $string['enrolname'] = 'Confirmación de inscripción al curso';
 $string['enrolusers'] = 'Inscribir usuarios';
+$string['expiredaction'] = 'Acción de expiración de inscripción';
 $string['expiredaction_help'] = 'Seleccione la acción a llevar a cabo cuando la matriculación expire. Por favor, note que algunos datos del usuario y algunas configuraciones serán eliminadas del curso cuando se realicen las desmatriculaciones.';
+$string['expiry_heading'] = 'Configuraciones de expiración';
 $string['mailtoteacher_suject'] = 'Solicitud de inscripción nueva!';
 $string['maxenrolled'] = 'Cantidad máxima de usuarios matriculados';
 $string['maxenrolled_help'] = 'Especifica la cantidad máxima de usuarios que se pueden matricular.  Cero (0) singnifica sin límite.';
@@ -70,17 +75,26 @@ $string['maxenrolledreached_right'] = 'ya ha sido alcanzado.';
 $string['messageprovider:application'] = 'Notificaciones de la solicitud de inscripción al curso';
 $string['messageprovider:cancelation'] = 'Notificaciones de cancelación de la solicitud de inscripción al curso';
 $string['messageprovider:confirmation'] = 'Notificaciones de confirmación de la solicitud de inscripción al curso';
+$string['messageprovider:waitinglist'] = 'Notificaciones de diferimiento de solicitudes de inscripción a curso';
 $string['newapplicationnotification'] = 'Hay nuevas solicitudes de matriculación esperando su revisión.';
 $string['newenrols'] = 'Permitir nuevas solicitudes de matriculación';
 $string['notification'] = '<b>La solicitud de matriculación se envió satisfactoriamente</b>. <br/><br/>Será informado por e-mail cuando su matriculación sea confirmada.';
 $string['notify_desc'] = 'Define quién es notificado cuando hay nuevas solicitudes de matriculación.';
 $string['notify_heading'] = 'Configuraciones de notificaciones';
+$string['notifycoursebased'] = 'Nueva notificación de solicitud de inscripción (basada en instancia, por ejemplo, profesores del curso)';
+$string['notifycoursebased_desc'] = 'Valor por defecto para nuevas instancias. Notificar a todos los que tengan la capacidad de \'Gestionar aplicar inscripción\' para el curso correspondiente (por ejemplo, profesores y mánagers)';
+$string['notifyglobal'] = 'Nueva notificación de solicitud de inscripción (global, por ejemplo administradores y mánagers globales)';
 $string['notifyglobal_desc'] = 'Define quién es notificado cuando hay nuevas solicitudes de matriculación para cualquier curso.';
 $string['pluginname'] = 'Confirmación de matriculación al curso';
+$string['pluginname_desc'] = 'Con este plugin, los usuarios pueden solicitar ser inscritos en un curso. Un profesor o administrador del sitio tiene entonces que aceptarlos antes de que el usuario sea inscrito.';
+$string['privacy:metadata'] = 'El plugin de confirmación de inscripción no almacena ningún dato personal.';
 $string['show_extra_user_profile'] = 'Muestra campos adicionales del perfil del usuario en la pantalla de matriculación';
 $string['show_standard_user_profile'] = 'Muestra los campos estandar del perfil del usuario en la pantalla de matriculación';
 $string['status'] = 'Permitir la matriculación con confirmación en el curso';
 $string['status_desc'] = 'Permitir el acceso al curso de los usuarios matriculados internamente.';
 $string['submitted_info'] = 'Información de matriculación';
 $string['user_profile'] = 'Perfil de usuario';
+$string['waitmail_heading'] = 'Emial de lista de espera';
 $string['waitmailcontent'] = 'Contenido del e-mail de la lista de espera';
+$string['waitmailcontent_desc'] = 'Por favor, use las marcas especiales siguientes para remplazar el contenido del Email con datos de Moodle.<br/>{firstname}:Nombre(s) del usuario; {content}:El nombre del curso;{lastname}:Apellido(s) del usuario;{username}:El nombre_de_usuario registrado del usuario';
+$string['waitmailsubject'] = 'Asunto de correo lista de espera';

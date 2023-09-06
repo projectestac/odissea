@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'gl', version '3.11'.
+ * Strings for component 'completion', language 'gl', version '4.1'.
  *
  * @package     completion
  * @category    string
@@ -26,19 +26,21 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Acadando a cualificación';
+$string['achievingpassinggrade'] = 'Acadou a cualificación de aprobado';
 $string['activities'] = 'Actividades';
 $string['activitiescompleted'] = 'Completado da actividade';
 $string['activitiescompletednote'] = 'Nota: O completado da actividade debe configurarse para que na lista de enriba apareza unha actividade.';
 $string['activitieslabel'] = 'Actividades / recursos';
 $string['activityaggregation'] = 'Condición requirida';
 $string['activityaggregation_all'] = 'TODAS as actividades seleccionadas para ser completadas';
-$string['activityaggregation_any'] = 'CALQUERA actividade seleccionada para ser completada';
+$string['activityaggregation_any'] = 'CALQUERA actividade seleccionada para seren completada';
 $string['activitycompletion'] = 'Completado da actividade';
 $string['activitycompletionupdated'] = 'Cambios gardados';
 $string['activitygradenotrequired'] = 'Non é obrigatoria a cualificación';
+$string['activitygradetopassnotset'] = 'Esta actividade non ten unha cualificación válida para aprobar. Pódese estabelecer na sección Cualificación da configuración da actividade.';
 $string['affectedactivities'] = 'Os cambios afectarán as seguintes <b>{$a}</b> actividades ou recursos:';
 $string['aggregationmethod'] = 'Método de agregación';
-$string['all'] = 'Todos';
+$string['all'] = 'Todo';
 $string['any'] = 'Calquera';
 $string['approval'] = 'Aprobación';
 $string['areyousureoverridecompletion'] = 'Confirma que quere anular o estado de completado actual desta actividade para este usuario e marcalo como «{$a}»?';
@@ -52,7 +54,7 @@ $string['bulkcompletiontracking_help'] = '<strong>Ningunha:</strong> Non indicar
 <strong>Manual:</strong> O alumno pode marcar manualmente a actividade como completada
 
 <strong>Con condición(s):</strong> Amosar a actividade como completada cando se cumpran as condicións';
-$string['checkactivity'] = 'Caixa de verificación para actividade / recurso: {$a}';
+$string['checkactivity'] = 'Caixa de selección para actividade / recurso: {$a}';
 $string['checkall'] = 'Marcar ou desmarcar todas as actividades e recursos';
 $string['checkallsection'] = 'Marcar ou desmarcar todas as actividades e recursos na sección seguinte: {$a}';
 $string['completeactivity'] = 'Completar a actividade';
@@ -81,19 +83,17 @@ $string['completion-pass'] = 'Completado (acadou a cualificación de aprobado)';
 $string['completion-y'] = 'Completado';
 $string['completion-y-override'] = 'Completado (estabelecido por {$a})';
 $string['completion_automatic'] = 'Amosar a actividade como completada cando se cumpran as condicións';
-$string['completion_help'] = 'Se está activada esta opción, faise un seguimento do grao de completado de calquera actividade, ben manual, ben automaticamente, baseándose en determinadas condicións. Pódense fixar múltiples condicións. De ser así, a actividade unicamente se considerará completada cando se cumpran TODAS as condicións.
-
-Una marca a carón do nome da actividade na páxina do curso indica cando está completada a actividade.';
+$string['completion_help'] = 'Se está activada esta opción, faise un seguimento do grao de completado de calquera actividade, ben manual, ben automaticamente, baseándose en determinadas condicións. Pódense fixar múltiples condicións. De ser así, a actividade unicamente se considerará completada cando se cumpran TODAS as condicións.';
 $string['completion_link'] = 'activity/completion';
 $string['completion_manual'] = 'Os alumnos poden marcar manualmente a actividade como completada';
 $string['completion_none'] = 'Non indicar o completado da actividade';
-$string['completionactivitydefault'] = 'Usar os valores predeterminados de actividade';
+$string['completionactivitydefault'] = 'Usar os valores  predeterminados de actividade';
 $string['completiondefault'] = 'Seguimento predeterminado o completado';
 $string['completiondisabled'] = 'Desactivado, non se amosa nos axustes da actividade';
 $string['completionduration'] = 'Matriculación';
 $string['completionenabled'] = 'Activado, control por medio dos axustes de completado e de actividade';
 $string['completionexpected'] = 'Agardase completala en';
-$string['completionexpected_help'] = 'Este axuste especifica a data na que agarda que a actividade estea completada.';
+$string['completionexpected_help'] = 'Este axuste especifica a data na que agarda que a actividade estea completada. Cando se aproxime a data, a actividade aparecerá no bloque Cronoloxía do taboleiro.';
 $string['completionexpecteddesc'] = 'Completado agardado en {$a}';
 $string['completionexpectedfor'] = '{$a->instancename} debería estar completada';
 $string['completionicons'] = 'Caixas para marcar o grao de completado';
@@ -108,25 +108,29 @@ $string['completionnotenabledforcourse'] = 'O completado non está activado para
 $string['completionnotenabledforsite'] = 'O completado non está activado para este sitio';
 $string['completionondate'] = 'Data';
 $string['completionondatevalue'] = 'A data na que se marcará o curso como completado';
+$string['completionpassgrade'] = 'Requirir cualificación de aprobado';
+$string['completionpassgrade_desc'] = 'O alumno debe recibir unha cualificación aprobada para completar esta actividade';
+$string['completionpassgrade_help'] = 'Se está activada, a actividade considerase completada cando un alumno recibe unha cualificación.';
 $string['completionsettingslocked'] = 'Axustes de completado bloqueados';
 $string['completionupdated'] = 'Actualizado o completado para a actividade <b>{$a}</b>';
 $string['completionusegrade'] = 'Require cualificación';
 $string['completionusegrade_desc'] = 'O alumno debe recibir unha cualificación para completar esta actividade';
-$string['completionusegrade_help'] = 'Se está activada, a actividade considerase completada cando un alumno recibe unha cualificación. As iconas Aprobar e Suspender preséntanse se foi estabelecida unha cualificación de aprobado para a actividade.';
-$string['completionview'] = 'Requirir ver';
+$string['completionusegrade_help'] = 'Se está activada, a actividade considerase completada cando un alumno recibe unha cualificación. Se se estabelece unha cualificación de aprobado para a actividade, amósanse as iconas de aprobado e suspenso no informe de completado.';
+$string['completionview'] = 'Require a vista';
 $string['completionview_desc'] = 'O alumno debe ver esta actividade para completala';
-$string['configcompletiondefault'] = 'Os axustes predeterminados para o seguimento do completado cando se crean actividades novas.';
+$string['configcompletiondefault'] = 'A configuración predeterminada para o seguimento do completado cando se crean actividades novas.';
 $string['configenablecompletion'] = 'Se está activado, pódense estabelecer condicións de completado de actividades e cursos. Recoméndase configurar as condicións de completado da actividade para que se amosen datos significativos para os usuarios na súa vista xeral do curso no Taboleiro.';
 $string['confirmselfcompletion'] = 'Confirmar o completado propio';
 $string['courseaggregation'] = 'Condición requirida';
 $string['courseaggregation_all'] = 'TODOS os cursos seleccionados para ser completados';
-$string['courseaggregation_any'] = 'CALQUERA curso seleccionado para ser completado';
+$string['courseaggregation_any'] = 'CALQUERA curso seleccionado para seren completado';
 $string['coursealreadycompleted'] = 'Vostede xa completou este curso';
 $string['coursecomplete'] = 'Completado do curso';
 $string['coursecompleted'] = 'Curso concluído';
 $string['coursecompletedmessage'] = '<p>Parabéns!</p><p> Completou o curso <a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Completado de cursos';
 $string['coursecompletioncondition'] = 'Condición: {$a}';
+$string['coursecompletionnavigation'] = 'Completado do curso de navegación terciaria';
 $string['coursegrade'] = 'Cualificación do curso';
 $string['coursesavailable'] = 'Cursos dispoñíbeis';
 $string['coursesavailableexplaination'] = 'Nota: As condicións do grao de completado deben configurarse para que na lista de arriba apareza un curso.';
@@ -144,7 +148,9 @@ $string['deletecompletiondata'] = 'Eliminar os datos de completado';
 $string['dependencies'] = 'Dependencias';
 $string['dependenciescompleted'] = 'Grao de completado doutros cursos';
 $string['detail_desc:receivegrade'] = 'Recibir unha cualificación';
+$string['detail_desc:receivepassgrade'] = 'Recibir unha cualificación de aprobado';
 $string['detail_desc:view'] = 'Ver';
+$string['done'] = 'Feito';
 $string['editcoursecompletionsettings'] = 'Editar os axustes de completado do curso';
 $string['enablecompletion'] = 'Activar o seguimento do progreso (para o completado)';
 $string['enablecompletion_help'] = 'Se se activa, poden estabelecerse as condicións de completado da actividade e/ou as condicións de completado do curso. Recomendase ter isto activado para que se amosen datos significativos na vista xeral do curso no Taboleiro.';
@@ -162,6 +168,7 @@ $string['eventcoursecompletionupdated'] = 'Actualizado o curso completado';
 $string['eventcoursemodulecompletionupdated'] = 'Completado de actividade de curso actualizado';
 $string['eventdefaultcompletionupdated'] = 'Valor predeterminado para completado de actividade de curso actualizado';
 $string['excelcsvdownload'] = 'Descargar en formato compatíbel con Excel (.csv)';
+$string['failed'] = 'Suspenso';
 $string['fraction'] = 'Fracción';
 $string['graderequired'] = 'Requírese unha cualificación';
 $string['gradexrequired'] = '{$a} requirido';
@@ -170,8 +177,8 @@ $string['inprogress'] = 'Avanzando';
 $string['manual'] = 'Manual';
 $string['manualcompletionby'] = 'Completado manual por';
 $string['manualcompletionbynote'] = 'Nota: A funcionalidade moodle/course:markcomplete debe estar activada para que un rol apareza na lista.';
-$string['manualselfcompletion'] = 'Autocompletado manual';
-$string['manualselfcompletionnote'] = 'Nota: O bloque de autocompletado debería ser engadido se se activa o autocompletado manual.';
+$string['manualselfcompletion'] = 'Completado propio manual';
+$string['manualselfcompletionnote'] = 'Nota: O bloque de autocompletado debería seren engadido se se activa o autocompletado manual.';
 $string['markcomplete'] = 'Marcar como completado';
 $string['markedcompleteby'] = 'Marcado como completado por {$a}';
 $string['markingyourselfcomplete'] = 'Marcado como completado por vostede';
@@ -215,8 +222,8 @@ $string['requiredcriteria'] = 'Criterios requiridos';
 $string['resetactivities'] = 'Limpar todas as actividades e recursos marcados';
 $string['restoringcompletiondata'] = 'Escribindo os datos do grao de completado';
 $string['roleaggregation'] = 'Condición requirida';
-$string['roleaggregation_all'] = 'TODAS as matriculas seleccionadas para marcar cando se cumpren as condicións';
-$string['roleaggregation_any'] = 'CALQUERA das matriculas seleccionadas para marcar cando se cumpren as condicións';
+$string['roleaggregation_all'] = 'TODOS os roles seleccionados marquen cando se cumpren as condicións';
+$string['roleaggregation_any'] = 'CALQUERA dos roles seleccionados marquen cando se cumpren as condicións';
 $string['roleidnotfound'] = 'Non se atopa a matricula co ID {$a}';
 $string['saved'] = 'Gardado';
 $string['seedetails'] = 'Ver detalles';
@@ -226,6 +233,7 @@ $string['selfcompletion'] = 'Completado propio';
 $string['showcompletionconditions'] = 'Amosar as condicións de realización da actividade';
 $string['showcompletionconditions_help'] = 'As condicións de realización da actividade amósanse sempre na páxina da actividade. Esta configuración determina se as condicións de realización da actividade tamén se amosan debaixo de cada actividade na páxina do curso.';
 $string['showinguser'] = 'Amosando o usuario';
+$string['todo'] = 'Para facer';
 $string['unenrolingfromcourse'] = 'Dando de baixa do curso';
 $string['unenrolment'] = 'Dar de baixa';
 $string['unit'] = 'Unidade';

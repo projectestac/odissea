@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'pt', version '3.11'.
+ * Strings for component 'tool_usertours', language 'pt', version '4.1'.
  *
  * @package     tool_usertours
  * @category    string
@@ -43,9 +43,12 @@ $string['confirmtourremovalquestion'] = 'Tem a certeza de que pretende remover e
 $string['confirmtourremovaltitle'] = 'Confirmar a eliminação da demonstração';
 $string['content'] = 'Conteúdo';
 $string['content_heading'] = 'Conteúdo';
-$string['content_help'] = 'O conteúdo que descreve a etapa pode ser adicionado como texto simples, incluído em palavras-chave multilingue se for necessário (para uso com o filtro de conteúdo em vários idiomas).
-
-Em alternativa, um ID de string do idioma pode ser inserido no identificador de formato, componente (sem parêntesis ou espaço após a vírgula).';
+$string['content_help'] = 'O conteúdo que descreve a etapa pode ser adicionado como texto simples, incluído em palavras-chave multilingue (para uso com o filtro de conteúdo em vários idiomas), se for necessário.';
+$string['content_type'] = 'Tipo de conteúdo';
+$string['content_type_help'] = '* Manual - usar um editor para inserir o conteúdo
+* ID de string do idioma - no formato identifier,component (sem espaço após a vírgula)';
+$string['content_type_langstring'] = 'ID de string do idioma';
+$string['content_type_manual'] = 'Manual';
 $string['cssselector'] = 'Seletor CSS';
 $string['defaultvalue'] = 'Valor predefinido ({$a})';
 $string['delay'] = 'Atraso antes de mostrar a etapa';
@@ -53,12 +56,22 @@ $string['delay_help'] = 'Opcionalmente, pode optar por adicionar um atraso antes
 
 Este atraso é em milissegundos.';
 $string['description'] = 'Descrição';
+$string['description_help'] = 'A descrição de uma demonstração ao utilizador pode ser inserida como texto simples, e se necessário, entre tags multilingue (para uso com o filtro Conteúdos multilingue para vários idiomas).
+
+Alternativamente, um ID de string de idioma pode ser inserido no formato identifier,component (sem parênteses ou espaço após a vírgula).';
+$string['displaystepnumbers'] = 'Mostrar número das etapas';
+$string['displaystepnumbers_help'] = 'Se deve, ou não, exibir a contagem do número de etapas, por exemplo, 1/4, 2/4, etc. para indicar o tamanho da demonstração ao utilizador.';
 $string['done'] = 'Concluído';
 $string['duplicatetour'] = 'Duplicar a demonstração ao utilizador';
 $string['duplicatetour_name'] = '{$a} (cópia)';
 $string['editstep'] = 'Edição de "{$a}"';
 $string['enabled'] = 'Ativado';
+$string['endonesteptour'] = 'Entendido';
 $string['endtour'] = 'Fim da demonstração';
+$string['endtourlabel'] = 'Texto do botão de \'Fim da demonstração\'';
+$string['endtourlabel_help'] = 'Pode opcionalmente especificar um texto personalizado para o botão de fim da demonstração ao utilizador. O texto predefinido é \'Entendido\' para demonstrações de uma única etapa e "Fim da demonstração" para demonstrações de várias etapas.
+
+Em alternativa, um ID de string do idioma pode ser inserido no formato identifier,component (sem parênteses ou espaço após a vírgula).';
 $string['event_step_shown'] = 'Etapa visualizada';
 $string['event_tour_ended'] = 'Demonstração terminada';
 $string['event_tour_reset'] = 'Reiniciar demonstração';
@@ -85,17 +98,23 @@ $string['filter_role_help'] = 'Uma demonstração pode ser exclusiva para utiliz
 $string['filter_theme'] = 'Tema';
 $string['filter_theme_help'] = 'Mostrar a demonstração quando o utilizador estiver a usar um dos temas selecionados.';
 $string['importtour'] = 'Importar demonstração';
+$string['invalid_lang_id'] = 'ID de string do idioma inválido';
 $string['left'] = 'Esquerda';
 $string['modifyshippedtourwarning'] = 'Esta demonstração ao utilizador faz parte do código base do Moodle. Quaisquer modificações poderão ser substituídas na próxima atualização do site.';
+$string['moodle_language_identifier'] = 'ID de string do idioma';
 $string['movestepdown'] = 'Ir para etapa anterior';
 $string['movestepup'] = 'Ir para etapa seguinte';
 $string['movetourdown'] = 'Mover demonstração para baixo';
 $string['movetourup'] = 'Mover demonstração para cima';
 $string['name'] = 'Nome';
+$string['name_help'] = 'O nome de uma demonstração ao utilizador pode ser inserido como texto simples, e se necessário, entre tags multilingue (para uso com o filtro Conteúdos multilingue para vários idiomas).
+
+Alternativamente, um ID de string de idioma pode ser inserido no formato identifier,component (sem parênteses ou espaço após a vírgula).';
 $string['newstep'] = 'Nova etapa';
 $string['newtour'] = 'Criar nova demonstração';
 $string['next'] = 'Seguinte';
 $string['nextstep'] = 'Seguinte';
+$string['nextstep_sequence'] = 'Próxima ({$a->position}/{$a->total})';
 $string['options_heading'] = 'Opções';
 $string['orphan'] = 'Mostrar se o destino não for encontrado';
 $string['orphan_help'] = 'Mostrar a etapa se o destino não for encontrado na página.';
@@ -133,12 +152,13 @@ $string['selectordisplayname'] = 'Um seletor CSS correspondente a \'{$a}\'';
 $string['selecttype'] = 'Selecione o tipo de etapa';
 $string['sharedtourslink'] = 'Repositório de demonstrações';
 $string['skip'] = 'Saltar';
+$string['skip_tour'] = 'Ignorar a demonstração';
 $string['target'] = 'Destino';
 $string['target_block'] = 'Bloco';
 $string['target_heading'] = 'Destino da etapa';
 $string['target_selector'] = 'Seletor';
 $string['target_selector_targetvalue'] = 'Seletores CSS';
-$string['target_selector_targetvalue_help'] = 'Um seletor CSS serve para poder usar como destino quase todos os elementos da página. O seletor apropriado pode ser facilmente encontrado através das ferramentas de desenvolvimento para o seu navegador da Web.';
+$string['target_selector_targetvalue_help'] = 'Um seletor CSS serve para poder usar como destino quase todos os elementos da página. O seletor apropriado pode ser facilmente encontrado através das ferramentas de desenvolvimento para o seu navegador web.';
 $string['target_unattached'] = 'Mostrar no meio da página';
 $string['targettype'] = 'Tipo de destino';
 $string['targettype_help'] = 'Cada etapa é associada a uma parte da página - o destino. Os tipos de destino são:
@@ -230,6 +250,27 @@ $string['tour_activityinfo_course_teacher_content'] = 'As novas configurações 
 $string['tour_activityinfo_course_teacher_title'] = 'Novo: Informação da atividade';
 $string['tour_final_step_content'] = 'Chegou ao fim da demonstração ao utilizador. Não será mostrada novamente a menos que a reponha através da hiperligação existente no rodapé.';
 $string['tour_final_step_title'] = 'Fim da demonstração';
+$string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Publique aqui as notícias importantes.';
+$string['tour_navigation_course_announcements_teacher_title'] = 'Alguma informação para comunicar a todos?';
+$string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Adicionar novo conteúdo ou editar o conteúdo existente.';
+$string['tour_navigation_course_edit_teacher_title'] = 'Ativar o modo de edição';
+$string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Explore as atividades e acompanhe o seu progresso.';
+$string['tour_navigation_course_index_student_title'] = 'Encontre o seu caminho';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Arraste e largue as atividades para reordenar o conteúdo da disciplina.';
+$string['tour_navigation_course_index_teacher_title'] = 'Índice da disciplina';
+$string['tour_navigation_course_student_tour_des'] = 'Onde explorar as atividades de uma disciplina';
+$string['tour_navigation_course_student_tour_name'] = 'Índice da disciplina';
+$string['tour_navigation_course_teacher_tour_des'] = 'Modo de edição, arrastar e largar atividades e publicar anúncios numa disciplina';
+$string['tour_navigation_course_teacher_tour_name'] = 'Editar disciplina';
+$string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Este painel lateral pode conter mais funcionalidades.';
+$string['tour_navigation_dashboard_title'] = 'Expandir para explorar';
+$string['tour_navigation_dashboard_tour_des'] = 'Onde os blocos podem ser encontrados';
+$string['tour_navigation_dashboard_tour_name'] = 'Painel dos blocos';
+$string['tour_navigation_mycourses_content'] = '@@PIXICON::tour/tour_mycourses::tool_usertours@@<br>Adicione, copie, apague e oculte disciplinas através deste menu.';
+$string['tour_navigation_mycourses_endtourlabel'] = 'Entendido';
+$string['tour_navigation_mycourses_title'] = 'Disciplinas e categorias';
+$string['tour_navigation_mycourses_tour_des'] = 'Opções da gestão da disciplina na página Minhas disciplinas';
+$string['tour_navigation_mycourses_tour_name'] = 'Gestão da disciplina';
 $string['tour_resetforall'] = 'O estado da demonstração foi redefinido. Será mostrada novamente a todos os utilizadores.';
 $string['tourconfig'] = 'Ficheiro de configuração da demonstração a ser importado';
 $string['tourisenabled'] = 'Demonstração ativada';

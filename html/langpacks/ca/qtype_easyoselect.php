@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_easyoselect', language 'ca', version '3.11'.
+ * Strings for component 'qtype_easyoselect', language 'ca', version '4.1'.
  *
  * @package     qtype_easyoselect
  * @category    string
@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['orderimportant'] = 'Sí';
 $string['pleaseenterananswer'] = 'Introduïu una resposta.';
+$string['pluginname_link'] = 'question/type/easyoselect';

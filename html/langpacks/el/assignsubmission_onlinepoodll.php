@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinepoodll', language 'el', version '3.11'.
+ * Strings for component 'assignsubmission_onlinepoodll', language 'el', version '4.1'.
  *
  * @package     assignsubmission_onlinepoodll
  * @category    string
@@ -78,7 +78,7 @@ $string['replywhiteboard'] = 'Ασπροπίνακας';
 $string['safesave'] = 'Ενεργοποίηση ασφαλούς αποθήκευσης - απενεργοποιεί το πλήκτρο υποβολής ανάθεσης έως ότου ολοκληρωθεί η μεταφόρτωση εγγραφής Poodll';
 $string['setting_audio_heading'] = 'Ρυθμίσεις προγράμματος αναπαραγωγής ήχου';
 $string['setting_audio_heading_details'] = 'Ρυθμίσεις που διαμορφώνουν την εμφάνιση του λογισμικού αναπαραγωγής στην εξέταση υποβολών και στις σελίδες λίστας';
-$string['setting_snapshot_heading'] = 'Ρυθμίσεις εικόνας στιγμιότυπου οθόνης';
+$string['setting_snapshot_heading'] = 'Ρυθμίσεις εικόνας στιγμιοτύπου οθόνης';
 $string['setting_snapshot_heading_details'] = 'Ρυθμίσεις που διαμορφώνουν την εμφάνιση εικόνας στην εξέταση υποβολών και στις σελίδες λίστας';
 $string['setting_video_heading'] = 'Ρυθμίσεις λογισμικού αναπαραγωγής βίντεο';
 $string['setting_video_heading_details'] = 'Ρυθμίσεις που διαμορφώνουν την εμφάνιση του λογισμικού αναπαραγωγής στην εξέταση υποβολών και στις σελίδες λίστας';
@@ -91,6 +91,6 @@ $string['showexpanded'] = 'Εμφάνιση (σε ανάπτυξη)';
 $string['showminimized'] = 'Εμφάνιση (ελαχιστοποιημένο)';
 $string['shownoimage'] = 'Να μην εμφανίζεται εικόνα';
 $string['shownovideo'] = 'Να μην εμφανίζεται βίντεο';
-$string['timelimit'] = 'Χρονικό Όριο Καταγραφής PoodLL';
+$string['timelimit'] = 'Όριο χρόνου Καταγραφής PoodLL';
 $string['videoplaceholder'] = '[βίντεο που υποβλήθηκε]';
 $string['yes'] = 'Ναι';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'it', version '3.11'.
+ * Strings for component 'report_eventlist', language 'it', version '4.1'.
  *
  * @package     report_eventlist
  * @category    string
@@ -31,6 +31,8 @@ $string['affectedtable'] = 'Tabella coinvolta';
 $string['all'] = 'Tutti';
 $string['clear'] = 'Reimposta';
 $string['component'] = 'Componente';
+$string['core'] = 'Core';
+$string['coresubsystem'] = 'Sottosistema ({$a})';
 $string['create'] = 'create';
 $string['crud'] = 'Tipo query database';
 $string['delete'] = 'delete';

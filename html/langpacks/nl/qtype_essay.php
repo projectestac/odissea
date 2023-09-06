@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'nl', version '3.11'.
+ * Strings for component 'qtype_essay', language 'nl', version '4.1'.
  *
  * @package     qtype_essay
  * @category    string
@@ -47,9 +47,9 @@ $string['formatplain'] = 'Platte tekst';
 $string['graderinfo'] = 'Informatie voor beoordelaars';
 $string['graderinfoheader'] = 'Beoordelersinformatie';
 $string['maxbytes'] = 'Maximale bestandsgrootte';
-$string['maxwordlimit'] = 'Maximum woordlimit';
+$string['maxwordlimit'] = 'Maximum woordlimiet';
 $string['maxwordlimit_help'] = 'Als het antwoord vereist dat leerlingen tekst invoeren, is dit het maximale aantal woorden dat elke leerling mag indienen.';
-$string['maxwordlimitboundary'] = 'De woordlimiet voor deze vraag is $a->limit}  woorden en je probeert {$a->count} woorden in te dienen. Kort je antwoord in en probeer het opnieuw.';
+$string['maxwordlimitboundary'] = 'De woordlimiet voor deze vraag is {$a->limit}  woorden en je probeert {$a->count} woorden in te dienen. Kort je antwoord in en probeer het opnieuw.';
 $string['minwordlimit'] = 'Minimale woordlimiet';
 $string['minwordlimit_help'] = 'Als het antwoord vereist dat leerlingen tekst invoeren, is dit het minimum aantal woorden dat elke leerling mag inleveren.';
 $string['minwordlimitboundary'] = 'Deze vraag vereist een antwoord van ten minste {$a->limit} woorden en u probeert {$a->count} woorden in te dienen. Breid je antwoord uit en probeer het opnieuw.';
@@ -61,6 +61,7 @@ $string['nonexistentfiletypes'] = 'De volgende bestandstypes werden niet herkend
 $string['pluginname'] = 'Open vraag';
 $string['pluginname_help'] = 'Als antwoord op de vraag kan de respondent één of meer bestanden uploaden en/of een antwoord online noteren. Er kan een antwoordsjabloon voorzien worden.
 De antwoorden moeten manueel beoordeeld worden.';
+$string['pluginname_link'] = 'question/type/essay';
 $string['pluginnameadding'] = 'Open vraag toevoegen';
 $string['pluginnameediting'] = 'Open vraag bewerken';
 $string['pluginnamesummary'] = 'Hiermee kun je een antwoord laten geven dat bestaat uit enkele zinnen of paragrafen. Deze antwoorden moeten manueel beoordeeld worden.';
@@ -82,5 +83,5 @@ $string['responsetemplate'] = 'Antwoordsjabloon';
 $string['responsetemplate_help'] = 'Alle tekst die hier gezet wordt, zal getoond worden in de antwoordbox wanneer een nieuwe poging voor het beantwoorden van de vraag begint.';
 $string['responsetemplateheader'] = 'Antwoordsjabloon';
 $string['wordcount'] = 'Aantal woorden: {$a}';
-$string['wordcounttoofew'] = 'Aantal woorden: {{$a->count}, dit is minder dan de vereiste {$a->limit} woorden.';
-$string['wordcounttoomuch'] = 'Aantal woorden: {$a->count}, meer dan de limiet van {$a->limit} woorden.';
+$string['wordcounttoofew'] = 'Aantal woorden: {$a->count}. Dit is minder dan de vereiste {$a->limit} woorden.';
+$string['wordcounttoomuch'] = 'Aantal woorden: {$a->count}. Dit is meer dan de limiet van {$a->limit} woorden.';

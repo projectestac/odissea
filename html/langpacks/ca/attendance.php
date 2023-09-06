@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'ca', version '3.11'.
+ * Strings for component 'attendance', language 'ca', version '4.1'.
  *
  * @package     attendance
  * @category    string
@@ -44,6 +44,8 @@ $string['adduser'] = 'Afegeix un usuari';
 $string['addwarning'] = 'Afegeix un advertiment';
 $string['all'] = 'Tots';
 $string['allcourses'] = 'Tots els cursos';
+$string['allowupdatestatus'] = 'Permet que els alumnes actualitzin la seva pròpia assistència';
+$string['allowupdatestatus_desc'] = 'Si es marca, els estudiants podran actualitzar la seva assistència a una sessió després d\'haver-ne informat ells mateixos.';
 $string['allpast'] = 'Tots els passats';
 $string['allsessions'] = 'Totes les sessions';
 $string['attendance:addinstance'] = 'Afegeix una activitat d\'assistència nova';
@@ -61,7 +63,6 @@ $string['attendance:warningemails'] = 'Es pot subscriure a correus electrònics 
 $string['attendance_already_submitted'] = 'No podeu registrar l\'assistència que ja s\'ha establert.';
 $string['attendance_no_status'] = 'No hi ha cap estat vàlid disponible. És possible que sigui massa tard per registrar l\'assistència.';
 $string['attendancedata'] = 'Dades d\'assistència';
-$string['attendanceforthecourse'] = 'Assistència per al curs';
 $string['attendancegrade'] = 'Qualificació de l\'assistència';
 $string['attendancenotset'] = 'Heu d\'establir la vostra assistència';
 $string['attendancenotstarted'] = 'L\'assistència no ha començat encara per aquest curs';
@@ -259,6 +260,8 @@ $string['includeremarks'] = 'Inclou comentaris';
 $string['incorrectpassword'] = 'Heu introduït una contrasenya incorrecta i la vostra assistència no s\'ha registrat; introduïu la contrasenya correcta.';
 $string['incorrectpasswordshort'] = 'Contrasenya incorrecta; l\'assistència no s\'ha registrat.';
 $string['indetail'] = 'En detall...';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidaction'] = 'Heu de seleccionar una acció';
 $string['invalidemails'] = 'Heu d\'especificar adreces dels comptes d\'usuari existents, no s\'ha trobat: {$a}';
 $string['invalidimportfile'] = 'El format del fitxer no és vàlid.';
@@ -489,9 +492,6 @@ $string['strftimedmyhm'] = '%d.%m.%Y %H.%M';
 $string['strftimedmyw'] = '%d.%m.%y (%a)';
 $string['strftimehm'] = '%H:%M';
 $string['strftimeshortdate'] = '%d.%m.%Y';
-$string['studentavailability'] = 'Disponible per als estudiants (minuts)';
-$string['studentavailability_help'] = 'Quan els estudiants marquen la seva pròpia assistència, el nombre de minuts que aquest estat està disponible després que la sessió comenci.
- <br/> Si està buit, aquest estat sempre estarà disponible, Si s\'estableix a 0, sempre quedarà amagat als estudiants';
 $string['studentid'] = 'ID de l\'estudiant';
 $string['studentmarked'] = 'S\'ha registrat la vostra assistència en aquesta sessió.';
 $string['studentmarking'] = 'Enregistrament de l\'estudiant';
@@ -505,6 +505,8 @@ $string['studentscanmarksessiontime'] = 'Els alumnes registren l\'assistència d
 $string['studentscanmarksessiontime_desc'] = 'Si està marcada, els estudiants només poden registrar la seva assistència durant la sessió.';
 $string['studentscanmarksessiontimeend'] = 'Final de sessió (minuts)';
 $string['studentscanmarksessiontimeend_desc'] = 'Si la sessió no té un temps de finalització, quants minuts hauria d\'estar disponible la sessió perquè els estudiants registrin la seva assistència.';
+$string['studentsearlyopentime'] = 'Obre la sessió prest per qualificar-la';
+$string['studentsearlyopentime_help'] = 'Això permet que els professors obrin la sessió prest, la qual cosa permet prendre\'n l\'assistència abans de l\'hora real d\'inici.';
 $string['submitattendance'] = 'Tramet l\'assistència';
 $string['subnet'] = 'Subxarxa';
 $string['subnetactivitylevel'] = 'Permet la configuració de subxarxa a nivell d\'activitat';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'fr', version '3.11'.
+ * Strings for component 'error', language 'fr', version '4.1'.
  *
  * @package     error
  * @category    string
@@ -158,6 +158,7 @@ $string['cannotsetupcapformod'] = 'Impossible d\'installer les capacités de {$a
 $string['cannotsetupcapforplugin'] = 'Impossible d\'installer les capacités de {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Impossible d\'afficher/de cacher les cours dans la catégorie {$a}.';
 $string['cannotsignup'] = 'Impossible de créer un nouveau compte, car vous êtes déjà connecté sous le nom « {$a} ».';
+$string['cannotswitcheditmodeon'] = 'Impossible d\'activer le mode d\'édition';
 $string['cannotunassigncap'] = 'Impossible de retirer l\'attribution de la capacité obsolète {$a->cap} du rôle {$a->role}';
 $string['cannotunassignrolefrom'] = 'Impossible de retirer l\'attribution du rôle d\'identifiant {$a} pour cet utilisateur';
 $string['cannotunzipfile'] = 'Décompression du fichier ZIP impossible';
@@ -202,11 +203,11 @@ $string['courserequestdisabled'] = 'Désolé, la demande d\'ouverture de cours a
 $string['csvcolumnduplicates'] = 'Colonnes identiques détectées';
 $string['csvemptyfile'] = 'Le fichier CSV est vide';
 $string['csvfewcolumns'] = 'Pas assez de colonnes. Veuillez vérifier le réglage du séparateur';
-$string['csvfileerror'] = 'Il y a un problème avec le format du fichier CSV. Veuillez vérifier que le nombre de colonnes de l\'entête et des données corresponde et que le séparateur et l\'encodage du fichier soient corrects. {$a}';
-$string['csvinvalidcols'] = '<b>Fichier CSV non valide !</b> La première ligne doit comporter l\'entête de définition des champs et le fichier doit être du type <br />Champs étendus/Séparateur virgule<br />ou<br />Champs étendus avec code CAVV/Séparateur virgule';
+$string['csvfileerror'] = 'Il y a un problème avec le format du fichier CSV. Veuillez vérifier que le nombre de colonnes de l\'en-tête et des données corresponde et que le séparateur et l\'encodage du fichier soient corrects. {$a}';
+$string['csvinvalidcols'] = '<b>Fichier CSV non valide !</b> La première ligne doit comporter l\'en-tête de définition des champs et le fichier doit être du type <br />Champs étendus/Séparateur virgule<br />ou<br />Champs étendus avec code CAVV/Séparateur virgule';
 $string['csvinvalidcolsnum'] = 'Fichier CSV non valide. Chaque ligne doit comporter 49 ou 70 champs';
 $string['csvloaderror'] = 'Une erreur est survenue lors du chargement du fichier CSV : {$a}';
-$string['csvnodata'] = 'Fichier CSV non valide – Le fichier CSV a une entête, mais en comporte aucune donnée.';
+$string['csvnodata'] = 'Fichier CSV non valide – Le fichier CSV a un en-tête, mais ne comporte aucune donnée.';
 $string['csvweirdcolumns'] = 'Format de fichier CSV non valide : le nombre de colonnes n\'est pas toujours le même !';
 $string['dbconnectionfailed'] = '<p>Erreur : la connexion à la base de données a échoué.</p><p>Il est possible que la base de données soit surchargée ou qu\'elle ne fonctionne pas correctement.</p><p>L\'administrateur du site doit vérifier que les informations concernant la base de données sont indiquées correctement dans le fichier <em>config.php</em></p>';
 $string['dbdriverproblem'] = '<p>Erreur : problème avec le pilote de la base de données.</p><p>L\'administrateur du site doit vérifier la configuration du serveur.</p><p>{$a}</p>';
@@ -299,7 +300,7 @@ $string['guestnorate'] = 'Les visiteurs anonymes ne peuvent pas évaluer les art
 $string['guestsarenotallowed'] = 'Les visiteurs anonymes ne peuvent pas faire ceci';
 $string['hackdetected'] = 'Attaque détectée !';
 $string['hashpoolproblem'] = 'Contenu incorrect {$a} de la collection de fichiers.';
-$string['headersent'] = 'Entêtes déjà envoyés';
+$string['headersent'] = 'En-têtes déjà envoyés';
 $string['idnumbertaken'] = 'Cet identifiant est déjà utilisé pour un autre cours';
 $string['idnumbertoolong'] = 'Numéro d\'identification trop long';
 $string['importformatnotimplement'] = 'L\'importation de ce format n\'est pas encore implémentée !';
@@ -333,6 +334,7 @@ $string['invalidcourseformat'] = 'Format de cours non valide';
 $string['invalidcourseid'] = 'Vous essayez d\'utiliser un identifiant de cours non valable';
 $string['invalidcourselevel'] = 'Niveau de contexte incorrect';
 $string['invalidcoursemodule'] = 'Identifiant de module de cours non valide';
+$string['invalidcoursemoduleid'] = 'ID de module de cours non valide : {$a}';
 $string['invalidcoursenameshort'] = 'Le nom abrégé du cours n\'est pas valide';
 $string['invaliddata'] = 'Les données envoyées ne sont pas valides';
 $string['invaliddatarootpermissions'] = 'Des droits d\'accès non valides ont été détectés lors de la création d\'un dossier. Veuillez activer le débogage pour plus d\'informations.';
@@ -407,6 +409,7 @@ $string['messagingdisable'] = 'La messagerie est désactivée sur ce site';
 $string['mimetexisnotexist'] = 'Votre serveur n\'est pas configuré pour lancer mimeTeX. Veuillez télécharger les sources en C du programme ici <a href="https://www.forkosh.com/mimetex.zip"> https://www.forkosh.com/mimetex.zip</a>, les compiler et placer le programme dans le dossier moodle/filter/tex/.';
 $string['mimetexnotexecutable'] = 'Votre programme <em>mimetex</em> n\'est pas exécutable !';
 $string['missing_moodle_backup_xml_file'] = 'Fichier de sauvegarde XML manquant : {$a}';
+$string['missingcategoryrole'] = 'Impossible d\'attribuer le rôle à un utilisateur : rôle manquant pour la catégorie.';
 $string['missingfield'] = 'Le champ « {$a} » est manquant';
 $string['missingkeyinsql'] = 'Erreur : paramètre « {$a} » manquant dans la requête';
 $string['missingparam'] = 'Un paramètre requis ({$a}) est manquant';
@@ -453,6 +456,7 @@ $string['nonmeaningfulcontent'] = 'Le contenu ne fait pas de sens';
 $string['noparticipants'] = 'Aucun participant trouvé dans ce cours';
 $string['noparticipatorycms'] = 'Désolé, aucun module de participation pour lequel faire un rapport';
 $string['nopermissions'] = 'Désolé, vous n\'avez actuellement pas les permissions requises pour effectuer ceci ({$a})';
+$string['nopermissiontoaccesspage'] = 'Vous n\'avez pas les permissions requises pour accéder à cette page.';
 $string['nopermissiontocomment'] = 'Vous n\'avez pas les permissions requises pour ajouter des commentaires !';
 $string['nopermissiontodelentry'] = 'Vous ne pouvez pas supprimer ce commentaire !';
 $string['nopermissiontoeditcomment'] = 'Vous n\'avez pas les permissions requises pour modifier les commentaires d\'autres utilisateurs !';
@@ -486,6 +490,8 @@ $string['oauth2upgradetokenerror'] = 'Impossible de mettre à jour le jeton OAut
 $string['onlyadmins'] = 'Seuls les administrateurs peuvent faire ceci';
 $string['onlyeditingteachers'] = 'Seuls les enseignants (éditeurs) peuvent faire ceci';
 $string['onlyeditown'] = 'Vous ne pouvez modifier que vos propres informations';
+$string['opensslsealerror'] = 'OpenSSL ne peut pas crypter les données';
+$string['opensslsignerror'] = 'OpenSSL ne peut pas signer les données';
 $string['orderidnotfound'] = 'Identifiant de commande {$a} non trouvé';
 $string['pagenotexist'] = '<p>Une erreur inhabituelle est survenue en essayant d\'atteindre une page qui n\'existe pas :</p>{$a}';
 $string['pagenotexisttitle'] = 'Erreur 404 : fichier non trouvé';
@@ -523,6 +529,9 @@ $string['sendmessage'] = 'Envoyer message';
 $string['sendmessagesent'] = 'Merci pour votre feedback sur :<br />{$a}';
 $string['serverconnection'] = 'Erreur lors de la connexion au serveur';
 $string['servicedonotexist'] = 'Le service n\'existe pas';
+$string['sessioncannotobtainlock'] = '<p>Impossible d\'obtenir un verrou pour l\'identifiant de session {$a->id} durant {$a->acquiretimeout}.</p>
+<p>Il est probable qu\'une autre page ({$a->whohaslock}) est active dans un autre onglet du navigateur ou qu\'un verrou n\'a pas été libéré suite à une erreur.</p>
+<p>Vous pouvez attendre jusqu\'à l\'échéance du délai du verrou ({$a->lockexpire}) ou redémarrer la session de navigateur. Si l\'erreur persiste, veuillez en informer l\'administrateur du serveur.</p>';
 $string['sessioncookiesdisable'] = 'Utilisation incorrecte de require_key_login(). Les cookies de session doivent être désactivés !';
 $string['sessiondiskfull'] = 'La partition de session est pleine. Il n\'est actuellement pas possible de se connecter. Veuillez contacter l\'administrateur du serveur.';
 $string['sessionerroruser'] = 'Votre session est échue. Veuillez vous reconnecter.';
@@ -562,6 +571,7 @@ $string['unknowcontext'] = 'Ceci est un contexte inconnu ({$a}) dans get_child_c
 $string['unknowformat'] = 'Format inconnu ({$a})';
 $string['unknownbackupexporterror'] = 'Erreur inconnue lors de la préparation des information pour l\'importation';
 $string['unknownblockregion'] = 'La région de bloc « {$a} » n\'est pas reconnue sur cette page.';
+$string['unknowncategory'] = 'Catégorie inconnue d\'ID de catégorie « {$a} »';
 $string['unknowncontext'] = 'Contexte inconnu';
 $string['unknowncourse'] = 'Le cours « {$a} » est inconnu';
 $string['unknowncourseidnumber'] = 'L\'identifiant de cours « {$a} » est inconnu';
@@ -593,6 +603,7 @@ $string['useradminodelete'] = 'Les comptes administrateurs ne peuvent pas être 
 $string['userautherror'] = 'Plugin d\'authentification inconnu';
 $string['userauthunsupported'] = 'Plugin d\'authentification non supportée ici';
 $string['useremailduplicate'] = 'Adresse de courriel en doublon';
+$string['userisfilteredout'] = 'Cet utilisateur ne correspond pas aux préférences des filtres et de la table !';
 $string['usermustbemnet'] = 'Les utilisateurs de la liste d\'accès MNET doivent être des utilisateurs distants MNET';
 $string['usernamelowercase'] = 'Le nom d\'utilisateur doit être entièrement en caractères bas de casse';
 $string['usernotaddederror'] = 'Utilisateur pas ajouté : erreur inconnue';

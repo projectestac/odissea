@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'ar', version '3.11'.
+ * Strings for component 'block_mnet_hosts', language 'ar', version '4.1'.
  *
  * @package     block_mnet_hosts
  * @category    string
@@ -29,7 +29,7 @@ $string['error_authmnetneeded'] = 'لا بد من تمكين إضافة مصاد
 $string['error_localusersonly'] = 'لا يمكن للمستخدمين البعيدين الفقز إلى مخدمات أخرى لشبكة مودل من هذا المضيف';
 $string['error_roamcapabilityneeded'] = 'المستخدمون بحاجة الى الإمكانية \'التجوال إلى تطبيق بعيد بواسطة شبكة مودل\' لمعاينة قائمة مخدمات شبكة مودل';
 $string['mnet_hosts:addinstance'] = 'إضافة كتلة جديدة لمخدمات الشبكة';
-$string['mnet_hosts:myaddinstance'] = 'إضافة كتلة جديدة لمخدمات الشبكة إلى لوحة التحكم';
+$string['mnet_hosts:myaddinstance'] = 'إضافة كتلة جديدة لمخدمات الشبكة إلى دفة القيادة';
 $string['pluginname'] = 'مخدمات الشبكة';
 $string['privacy:metadata'] = 'كتلة مخدمات الشبكة تسمح فقط بالتفاعل مع تلك المخدمات ولا تخزن أو تصدر البيانات بحد ذاتها.';
 $string['server'] = 'خادم';

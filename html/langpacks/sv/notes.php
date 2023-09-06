@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'sv', version '3.11'.
+ * Strings for component 'notes', language 'sv', version '4.1'.
  *
  * @package     notes
  * @category    string
@@ -31,6 +31,7 @@ $string['addbulknotedonesingle'] = 'Anteckning tillagd till 1 person';
 $string['addbulknotesingle'] = 'Lägg till ny anteckning till 1 person';
 $string['addnewnote'] = 'Ny anteckning';
 $string['addnewnoteselect'] = 'Välj de användare du vill skriva anteckningar om';
+$string['author'] = 'Författare';
 $string['bynameondate'] = 'av {$a->name} - {$a->date}';
 $string['configenablenotes'] = 'Aktivera lagring av anteckningar om individuella användare';
 $string['content'] = 'Innehåll';
@@ -74,6 +75,7 @@ $string['publishstate_help'] = '<p>Det finns tre möjliga inställningar här</p
 <li><strong>Kurs</strong> - Anteckningen kommer att vara synlig för lärarna på kursen.</li>
 <li><strong>Webbplats</strong> - Anteckningen kommer att vara synlig för lärarna på alla kurser.</li>
 </ul>';
+$string['recipient'] = 'Mottagare';
 $string['site'] = 'webbplats';
 $string['sitenotes'] = 'Webbplatsanteckningar';
 $string['unknown'] = 'okänd';

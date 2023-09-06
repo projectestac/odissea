@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'ja', version '3.11'.
+ * Strings for component 'tool_mobile', language 'ja', version '4.1'.
  *
  * @package     tool_mobile
  * @category    string
@@ -31,7 +31,9 @@ $string['androidappid_desc'] = 'あなたがカスタムAndroidアプリを使�
 $string['apppolicy'] = 'アプリポリシーURL';
 $string['apppolicy_help'] = 'アプリのAboutページに一覧表示されるアプリユーザのためのポリシーのURLです。このフィールドを空白のままにした場合、代わりにサイトポリシーURLが使用されます。';
 $string['apprequired'] = 'この機能はMoodleモバイルまたはデスクトップアプリ経由のアクセス時のみ使用できます。';
-$string['autologinkeygenerationlockout'] = '自動ログインキー生成がブロックされました。あなたはリクエスト間に6分間待つ必要があります。';
+$string['autologinkeygenerationlockout'] = '自動ログインキー生成がブロックされました。あなたはリクエスト間に {$a 分間待つ必要があります。';
+$string['autologinmintimebetweenreq'] = '自動ログインリクエスト間の最小時間';
+$string['autologinmintimebetweenreq_desc'] = 'モバイルアプリからの自動ログインリクエスト間の最小時間です。サイトの埋め込みコンテンツ閲覧時にアプリユーザが頻繁に認証情報の入力を要求される場合、低い値に設定してください。';
 $string['autologinnotallowedtoadmins'] = 'サイト管理への自動ログインは許可されません。';
 $string['cachedef_plugininfo'] = 'モバイルアドオンのプラグイン一覧';
 $string['cachedef_subscriptiondata'] = 'ここではMoodleアプリサブスクリプション情報を保存します。';
@@ -44,8 +46,8 @@ mm.user.student|Learner|en
 mm.user.student|Aprendiz|es
 </pre>
 完全なストリングID一覧およびさらなる情報に関してドキュメンテーションをご覧ください。';
-$string['custommenuitems'] = 'カスタムメニュアイテム';
-$string['custommenuitems_desc'] = 'ここで指定することによりアプリのメインメニュに追加アイテムを追加することができます。新しい行に次のフォーマットでそれぞれのカスタムメニュを入力してください: アイテムテキスト、リンクURL、リンクオープン方法および言語コード (任意: 指定された言語のみでユーザにアイテムを表示します)、パイプ文字 (|) で分離してください。
+$string['custommenuitems'] = 'カスタムメニューアイテム';
+$string['custommenuitems_desc'] = 'ここで指定することによりアプリのメインメニューに追加アイテムを追加することができます。新しい行に次のフォーマットでそれぞれのカスタムメニューを入力してください: アイテムテキスト、リンクURL、リンクオープン方法および言語コード (任意: 指定された言語のみでユーザにアイテムを表示します)、パイプ文字 (|) で分離してください。
 
 リンクオープン方法は次のとおりです: app (アプリでサポートされる活動にリンクします), inappbrowser (アプリから離れずにブラウザでリンクを開きます), browser (デバイスのアプリの外にあるデフォルトブラウザでリンクを開きます)、embedded (アプリの新しいページのiframe内にリンクを表示します)
 
@@ -89,7 +91,7 @@ $string['loginintheapp'] = 'アプリ経由';
 $string['logininthebrowser'] = 'ブラウザウィンドウ経由 (SSOプラグイン用)';
 $string['loginintheembeddedbrowser'] = '埋め込みブラウザ経由 (SSOプラグイン用)';
 $string['logoutconfirmation'] = '本当にあなたのモバイルデバイスのモバイルアプリからログアウトしてもよろしいですか? ログアウトした場合、あなたがアプリをインストールしているすべてのデバイスのモバイルアプリにユーザ名およびパスワードを再入力する必要があります。';
-$string['mainmenu'] = 'メインメニュ';
+$string['mainmenu'] = 'メインメニュー';
 $string['managefiletypes'] = 'ファイルタイプを管理する';
 $string['minimumversion'] = 'アプリバージョンが指定された場合 (3.8.0またはそれ以上)、古いバージョンのアプリのユーザすべてにサイトへアクセスできるようにするためアプリをアップグレードするよう指示されます。';
 $string['minimumversion_key'] = '要求される最小アプリバージョン';
@@ -122,16 +124,20 @@ $string['privacy:metadata:core_userkey'] = '現在のユーザの自動ログイ
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = '自動ログインキーが最後にリクエストされた日時です。それぞれのリクエストには6分間の間隔が必要です。';
 $string['qrcodedisabled'] = 'QRコードによるアクセス無効';
 $string['qrcodeformobileappaccess'] = 'モバイルアプリアクセスのためのQRコード';
-$string['qrcodeformobileapploginabout'] = 'あなたのモバイルアプリでQRコードをスキャンして自動的にログインします。QRコードは {$a} 分で有効期限が切れます。';
+$string['qrcodeformobileapploginabout'] = 'あなたのモバイルアプリでQRコードをスキャンして自動的にログインします。QRコードは {$a} で有効期限が切れます。';
 $string['qrcodeformobileappurlabout'] = 'あなたのアプリにサイトURLを自動入力するにはモバイルアプリでQRコードをスキャンしてください。';
 $string['qrcodetype'] = 'QRコードアクセス';
 $string['qrcodetype_desc'] = 'モバイルアプリユーザがスキャンできるようQRコードを提供できます。これはサイトURLまたはサイトがHTTPSを使用して安全化されている場合にユーザ名およびパスワードを入力せずに自動ログインさせるため使用できます。';
 $string['qrcodetypelogin'] = 'QRコードによる自動ログイン';
 $string['qrcodetypeurl'] = 'QRコードによるサイトURL';
+$string['qrkeyttl'] = 'QR認証キー持続時間';
+$string['qrkeyttl_desc'] = '自動ログインQRコードの有効期間です。';
+$string['qrsameipcheck'] = 'QR認証同一IPチェック';
+$string['qrsameipcheck_desc'] = 'ログインのためのQRコードの生成およびスキャンの両方でユーザが同一ネットワークを使用する必要があるかどうか決定します。ユーザからQRログインに関する問題が報告された場合のみ、無効にしてください。';
 $string['qrsiteadminsnotallowed'] = 'セキュリティ上の理由からサイト管理者または別のユーザとしてのログイン時にはQRコードでのログインは許可されません。';
-$string['readingthisemailgettheapp'] = 'これをあなたのメールで読んでいますか? <a href="{$a}">モバイルアプリをダウンロードして、あなたのモバイルデバイスで通知を受信してください</a>。';
+$string['readingthisemailgettheapp'] = 'これをメールで読んでいますか? <a href="{$a}">モバイルアプリをダウンロードしてあなたのモバイルデバイスで通知を受信してください</a>。';
 $string['remoteaddons'] = 'リモートアドオン';
-$string['responsivemainmenuitems'] = 'レスポンシブメニュアイテム';
+$string['responsivemainmenuitems'] = 'レスポンシブメニューアイテム';
 $string['scanqrcode'] = 'QRコードをスキャンする';
 $string['selfsignedoruntrustedcertificatewarning'] = 'HTTPS証明書が自己署名されているか、信頼されていないようです。モバイルアプリは信頼できるサイトでのみ動作します。オンラインのSSLチェッカを使用してさらに問題を診断してください。これらのツールで証明書に問題がないと表示された場合、あなたはこの警告を無視できます。';
 $string['setuplink'] = 'アプリダウンロードページ';

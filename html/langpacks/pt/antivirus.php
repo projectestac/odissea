@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'pt', version '3.11'.
+ * Strings for component 'antivirus', language 'pt', version '4.1'.
  *
  * @package     antivirus
  * @category    string
@@ -30,6 +30,8 @@ $string['antiviruscommonsettings'] = 'Configurações gerais do antivírus';
 $string['antiviruses'] = 'Módulos antivírus';
 $string['antivirussettings'] = 'Gerir módulos antivírus';
 $string['configantivirusplugins'] = 'Selecione o módulo antivírus que pretende utilizar e organize os módulos pela ordem em que serão aplicados.';
+$string['dataerrordesc'] = 'Ocorreu um erro ao verificar dados.';
+$string['dataerrorname'] = 'Erro ao verificar dados';
 $string['datainfecteddesc'] = 'Foram detetados dados infetados.';
 $string['datainfectedname'] = 'Dados infetados';
 $string['datastream'] = 'Dados';
@@ -52,16 +54,24 @@ $string['enablequarantine'] = 'Ativar quarentena';
 $string['enablequarantine_help'] = 'Se ativar esta opção, todos os ficheiros detetados como vírus serão mantidos numa pasta de quarentena para posterior exame ([dataroot]/{$a}).
 O carregamento para o Moodle falhará.
 Se houver alguma verificação de vírus ao nível do sistema de ficheiros, a pasta de quarentena deve ser excluída da verificação do antivírus para evitar a deteção dos ficheiros em quarentena.';
+$string['fileerrordesc'] = 'Ocorreu um erro ao verificar ficheiro.';
+$string['fileerrorname'] = 'Erro ao verificar ficheiro';
 $string['fileinfecteddesc'] = 'Foi detetado um ficheiro infetado.';
 $string['fileinfectedname'] = 'Ficheiro infetado';
 $string['notifyemail'] = 'E-mail para notificação de alerta do antivírus';
 $string['notifyemail_help'] = 'O endereço de e-mail para notificações quando um vírus for detetado.
 Se ficar em branco, serão enviadas notificações a todos os administradores do site.';
+$string['notifylevel'] = 'Nível de notificação';
+$string['notifylevel_help'] = 'Os diferentes níveis de informação sobre os quais pretende ser notificado';
+$string['notifylevelerror'] = 'Detetado ameaças e problemas de verificação';
+$string['notifylevelfound'] = 'Apenas detetado ameaças';
 $string['privacy:metadata'] = 'O Sistema Antivirus não armazena quaisquer dados pessoais.';
 $string['quarantinedfiles'] = 'Ficheiros da quarentena do antivírus';
 $string['quarantinedisabled'] = 'Quarentena está desativada. O ficheiro não foi armazenado.';
 $string['quarantinetime'] = 'Permanência máxima em quarentena';
 $string['quarantinetime_desc'] = 'Os ficheiros em quarentena anteriores ao período especificado serão apagados.';
-$string['taskcleanup'] = 'Limpar os ficheiros da quarentena.';
+$string['taskcleanup'] = 'Limpar os ficheiros da quarentena';
+$string['threshold'] = 'Limite da verificação de estado';
+$string['threshold_desc'] = 'Até quando verificar os resultados anteriores de erros, etc. conforme relatado em {$a}.';
 $string['unknown'] = 'Desconhecido';
 $string['virusfound'] = '{$a->item} foi verificado por um detetor de vírus e foi considerado infetado!';

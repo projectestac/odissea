@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'en', version '3.11'.
+ * Strings for component 'message', language 'en', version '4.1'.
  *
  * @package     message
  * @category    string
@@ -41,7 +41,6 @@ $string['blocknoncontacts'] = 'Prevent non-contacts from messaging me';
 $string['blockuser'] = 'Block user';
 $string['blockuserconfirm'] = 'Are you sure you want to block {$a}?';
 $string['blockuserconfirmbutton'] = 'Block';
-$string['canceledit'] = 'Cancel editing messages';
 $string['cancelselection'] = 'Cancel message selection';
 $string['cantblockuser'] = 'You can\'t block {$a} because they have a role with permission to message all users.';
 $string['contactableprivacy'] = 'Accept messages from:';
@@ -67,7 +66,7 @@ $string['deleteselectedmessagesconfirm'] = 'Are you sure you would like to delet
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Are you sure you would like to delete the selected personal messages?';
 $string['disableall'] = 'Disable notifications';
 $string['disabled'] = 'Messaging is disabled on this site';
-$string['disallowed'] = 'Disallowed';
+$string['disallowed'] = 'Locked off';
 $string['editmessages'] = 'Edit messages';
 $string['emailtagline'] = 'This is a copy of a message sent to you on the site {$a->sitename}. Go to <a href="{$a->url}">{$a->url}</a> to reply.';
 $string['enabled'] = 'Enabled';
@@ -86,6 +85,7 @@ $string['eventmessageviewed'] = 'Message viewed';
 $string['eventnotificationsent'] = 'Notification sent';
 $string['eventnotificationviewed'] = 'Notification viewed';
 $string['forced'] = 'Locked';
+$string['forcedmessage'] = 'Locked on';
 $string['groupconversations'] = 'Group';
 $string['groupinfo'] = 'Group info';
 $string['guestnoeditmessage'] = 'Guest user can not edit messaging options';
@@ -105,8 +105,6 @@ $string['loggedoffdescription'] = 'When you are not logged into Moodle';
 $string['managemessageoutputs'] = 'Default notification preferences';
 $string['message'] = 'Message';
 $string['messagecontactrequest'] = '{$a->user} is requesting to be added as a contact. Visit your <a href="{$a->url}">contact requests</a> page to respond to the request';
-$string['messagecontactrequestsnotification'] = '{$a} is requesting to be added as a contact.';
-$string['messagecontactrequestsnotificationsubject'] = 'Contact request from {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: Contact request from {$a->user}';
 $string['messagecontentaudio'] = 'Audio';
 $string['messagecontentimage'] = 'Image';
@@ -137,7 +135,6 @@ $string['nofavourites'] = 'No starred conversations';
 $string['noframesjs'] = 'Use more accessible interface';
 $string['nogroupconversations'] = 'No group conversations';
 $string['noindividualconversations'] = 'No private conversations';
-$string['nomessages'] = 'No messages';
 $string['nomessagesfound'] = 'No messages were found';
 $string['noncontacts'] = 'Non-contacts';
 $string['nonotifications'] = 'You have no notifications';
@@ -156,11 +153,7 @@ $string['offline'] = 'Offline';
 $string['on'] = 'On';
 $string['online'] = 'Online';
 $string['otherparticipants'] = 'Other participants';
-$string['outputdisabled'] = 'Output disabled';
-$string['outputdoesnotexist'] = 'Message output does not exist';
-$string['outputenabled'] = 'Output enabled';
 $string['outputnotavailable'] = 'Not available';
-$string['outputnotconfigured'] = 'Not configured';
 $string['page-message-x'] = 'Any message pages';
 $string['participants'] = 'Participants';
 $string['pendingcontactrequests'] = 'There are {$a} pending contact requests';
@@ -223,6 +216,9 @@ $string['privacy:metadata:preference:core_message_settings'] = 'Settings related
 $string['privacy:request:preference:set'] = 'The value of the setting \'{$a->name}\' was \'{$a->value}\'';
 $string['privacy_desc'] = 'You can restrict who can message you';
 $string['processorsettings'] = 'Processor settings';
+$string['providerenabled'] = 'Sending "{$a}" enabled status';
+$string['providerprocesorisdisallowed'] = '"{$a->provider}" on "{$a->processor}" is locked off';
+$string['providerprocesorislocked'] = '"{$a->provider}" on "{$a->processor}" is locked on';
 $string['removecontact'] = 'Remove contact';
 $string['removecontactconfirm'] = 'Are you sure you want to remove {$a} from your contacts?';
 $string['removecoursefilter'] = 'Remove filter for course {$a}';
@@ -247,6 +243,8 @@ $string['sendbulkmessagesingle'] = 'Send message to 1 person';
 $string['sendcontactrequest'] = 'Send contact request';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = 'Sending "{$a->provider}" via "{$a->processor}"';
+$string['sendingviaenabled'] = 'Sending "{$a->provider}" via "{$a->processor}" enabled status';
+$string['sendingvialocked'] = 'Sending "{$a->provider}" via "{$a->processor}" locked status';
 $string['sendingviawhen'] = 'Sending "{$a->provider}" via "{$a->processor}" when {$a->state}';
 $string['sendmessage'] = 'Send message';
 $string['sendmessageto'] = 'Send message to {$a}';

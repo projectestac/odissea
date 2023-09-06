@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'gl', version '3.11'.
+ * Strings for component 'search', language 'gl', version '4.1'.
  *
  * @package     search
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsearch'] = 'Busca avanzada';
-$string['all'] = 'Todos';
+$string['all'] = 'Todo';
 $string['allareas'] = 'Todas as áreas';
 $string['allcourses'] = 'Todos os cursos';
 $string['allusers'] = 'Todos os usuarios';
@@ -43,7 +43,8 @@ $string['confirm_delete'] = 'Confirma que quere eliminar o índice de {$a}? Ata 
 $string['confirm_deleteall'] = 'Confirma que quere eliminar todos os contidos indexados agora? Ata que o sitio non se indexa de novo, os usuarios non obterán resultados de busca.';
 $string['confirm_indexall'] = 'Confirma que quere actualizar os contidos indexados agora? Se unha gran cantidade de contido precisa de indexación, isto pode levar moito tempo. Para os servidores en directo, normalmente debería deixar a indexación na tarefa programada «Indexado de busca global».';
 $string['confirm_reindexall'] = 'Confirma que quere volver indexar todos os contidos do sitio agora? Se o sitio contén unha gran cantidade de contido, isto levará moito tempo e os usuarios non poderán obter os resultados da busca completa ata que se complete.';
-$string['core-all'] = 'Todos';
+$string['content:courserole'] = '{$a->role} en {$a->course}';
+$string['core-all'] = 'Todo';
 $string['core-course-content'] = 'Contido do curso';
 $string['core-courses'] = 'Cursos';
 $string['core-other'] = 'Outro';
@@ -115,6 +116,7 @@ $string['schemaversionunknown'] = 'O motor de busca non sabe sobre a versión ac
 $string['score'] = 'Puntuación';
 $string['search'] = 'Buscar';
 $string['search:course'] = 'Cursos';
+$string['search:course_teacher'] = 'Profesor de curso';
 $string['search:customfield'] = 'Campos personalizados do curso';
 $string['search:message_received'] = 'Mensaxes, recibidas';
 $string['search:message_sent'] = 'Mensaxes, enviadas';
@@ -136,6 +138,7 @@ $string['thesewordsmustappear'] = 'Estas palabras deben aparecer';
 $string['thesewordsmustnotappear'] = 'Estas palabras non deben aparecer';
 $string['title'] = 'Título';
 $string['tofetchtheseresults'] = 'en busca destes resultados';
+$string['topresults'] = 'Principais resultados';
 $string['totalsize'] = 'Tamaño total';
 $string['totime'] = 'Modificado antes de';
 $string['type'] = 'Tipo';

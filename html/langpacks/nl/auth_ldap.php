@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'nl', version '3.11'.
+ * Strings for component 'auth_ldap', language 'nl', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_ldap_ad_create_req'] = 'Kan de nieuwe account niet aanmaken in de Active Directory. Zorg ervoor dat alle vereisten om dit mogelijk te maken voorzien zijn (LDAPS-verbinding, bind-gebruiker met de juiste rechten enz.)';
-$string['auth_ldap_attrcreators'] = 'Lijst van groepen of contexten waarvan de leden het recht hebben attributen aan te maken. Gebruik een \';\' als scheidingsteken tussen meerdere groepen. Gewoonlijk wordt dat iets als \'cn=leraars,ou=personeel,o=mijn_organisatie\'';
+$string['auth_ldap_attrcreators'] = 'Lijst van groepen of contexten waarvan de leden het recht hebben attributen aan te maken. Gebruik een \';\' als scheidingsteken tussen meerdere groepen. Gewoonlijk wordt dat iets als \'cn=leraren,ou=personeel,o=mijn_organisatie\'';
 $string['auth_ldap_attrcreators_key'] = 'Wie attributen mag aanmaken';
 $string['auth_ldap_auth_user_create_key'] = 'Maak gebruikers extern aan';
 $string['auth_ldap_bind_dn'] = 'Als je \'bind-user\' wilt gebruiken om gebruikers te zoeken, dan moet je dat hier aangeven. Bijvoorbeeld \'cn=ldapuser,ou=public,o=org\'';
@@ -50,7 +50,7 @@ $string['auth_ldap_graceattr_desc'] = 'Optioneel: gaat voor op het gracelogin-at
 $string['auth_ldap_gracelogin_key'] = 'Grace login attribuut';
 $string['auth_ldap_gracelogins_desc'] = 'Schakel de gracelogin-ondersteuning voor LDAP in. Nadat een wachtwoord is verlopen kan een gebruiker nog aanmelden tot de teller van gracelogin 0 is geworden. Door deze instelling  in te schakelen, wordt de gracelogin-boodschap getoond als het wachtwoord verlopen is.';
 $string['auth_ldap_gracelogins_key'] = 'Grace logins';
-$string['auth_ldap_groupecreators'] = 'Lijst van groepen of contexten waarvan de leden het recht hebben groepen aan te maken. Gebruik een \';\' als scheidingsteken tussen meerdere groepen. Gewoonlijk wordt dat iets als \'cn=leraars,ou=personeel,o=mijn_organisatie\'';
+$string['auth_ldap_groupecreators'] = 'Lijst van groepen of contexten waarvan de leden het recht hebben groepen aan te maken. Gebruik een \';\' als scheidingsteken tussen meerdere groepen. Gewoonlijk wordt dat iets als \'cn=leraren,ou=personeel,o=mijn_organisatie\'';
 $string['auth_ldap_groupecreators_key'] = 'Wie groepen mag aanmaken';
 $string['auth_ldap_host_url'] = 'Geef de LDAP-host in de vorm van een URL zoals bijvoorbeeld: \'ldap://ldap.myorg.com/\' of \'ldaps://ldap.myorg.com/\'. Scheidt meerdere servers met \',\' om fouttolerantie mogelijk te maken.';
 $string['auth_ldap_host_url_key'] = 'Host URL';
@@ -127,6 +127,10 @@ $string['diag_toooldversion'] = 'Het is zeer onwaarschijnlijk dat een moderne LD
 $string['didntfindexpiretime'] = 'password_expire() vond de verlooptijd niet';
 $string['didntgetusersfromldap'] = 'Kreeg geen enkele gebruiker van LDAP. Configuratiefout?';
 $string['gotcountrecordsfromldap'] = 'Kreeg {$a} records van LDAP';
+$string['invalidusererrors'] = 'Waarschuwing: het aanmaken van {$a} gebruikersaccounts is overgeslagen.';
+$string['invaliduserexception'] = 'Fout: kan geen nieuw gebruikersaccount maken. Details en reden:
+{$a}
+Deze gebruiker overslaan.';
 $string['ldapnotconfigured'] = 'De LDAP-host url is momenteel niet geconfigureerd';
 $string['morethanoneuser'] = 'Meer dan één gebruikersrecord gevonden in LDAP. Alleen de eerste wordt gebruikt.';
 $string['needbcmath'] = 'Je hebt de BCMath extensie nodig om te controleren op verlopen wachtwoorden met Active Directory.';
@@ -160,7 +164,6 @@ $string['updatepasserrorexpire'] = 'Fout in user_update_password() bij het lezen
 $string['updatepasserrorexpiregrace'] = 'Fout in user_update_password() bij het wijzigen van de verlooptijd en/of gracelogins.  Foutcode: {$a->errno}; Foutstring: {$a->errstring}';
 $string['updateremfail'] = 'Fout updaten LDAP-record  Foutcode: {$a->errno}; Foutstring: {$a->errstring}<br />Sleutel ({$a->key}) - oude moodle-waarde: \'{$a->ouvalue}\' nieuwe waarde: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'LDAP updaten met abigu veld {$a->key} mislukt; oude Moodle waarde: \'{$a->ouvalue}\', nieuwe waarde: \'{$a->nuvalue}\'';
-$string['updateremfailfield'] = 'Het updaten van  LDAP met onbestaand veld (\'{$a->ldapkey}\') is mislukt. Sleutel ({$a->key}) - oude moodle-waarde: \'{$a->ouvalue}\' nieuwe waarde: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Kon gebruiker niet vinden tijdens extern updaten. Details volgen: zoek base: \'{$a->userdn}\'; zoek filter: \'(objectClass=*)\'; zoek attributen: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() ondersteunt het gekozen gebruikerstype niet: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() ondersteunt het gekozen gebruikerstype niet: {$a}';

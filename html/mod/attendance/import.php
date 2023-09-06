@@ -82,7 +82,7 @@ if ($form->is_cancelled()) {
             $form = new \mod_attendance\form\import\sessions($att->url_import(), $formparams);
             $form->set_import_error($error);
         } else {
-            $sessions = $importer->import();
+            $importer->import();
             redirect($att->url_import());
         }
     } else {
@@ -97,11 +97,8 @@ if ($form->is_cancelled()) {
 }
 
 $output = $PAGE->get_renderer('mod_attendance');
-$tabs = new attendance_tabs($att, attendance_tabs::TAB_IMPORT);
 echo $output->header();
-echo $output->heading(get_string('attendanceforthecourse', 'attendance') . ' :: ' . format_string($course->fullname));
 mod_attendance_notifyqueue::show();
-echo $output->render($tabs);
 
 $form->display();
 

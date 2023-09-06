@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'zh_cn', version '3.11'.
+ * Strings for component 'atto_collapse', language 'zh_cn', version '4.1'.
  *
  * @package     atto_collapse
  * @category    string
@@ -32,3 +32,4 @@ $string['showfewer'] = '显示更少按钮';
 $string['showgroups'] = '折叠时显示前 (n) 个分组。';
 $string['showgroups_desc'] = '当折叠工具栏 (或默认如此) 时这些数目的分组将被显示。';
 $string['showmore'] = '显示更多按钮';
+$string['youareonsecondrow'] = '你现在在编辑器的另一行工具栏上，那里有更多的按钮。';

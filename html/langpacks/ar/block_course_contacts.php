@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_contacts', language 'ar', version '3.11'.
+ * Strings for component 'block_course_contacts', language 'ar', version '4.1'.
  *
  * @package     block_course_contacts
  * @category    string
@@ -28,11 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['alphabetical'] = 'أبجدي';
 $string['captcha'] = 'تم تمكين reCAPTCHA';
 $string['captchadesc'] = 'إذا تمت تهيئة reCAPTCHA لهذا الموقع، هل ينبغي تمكينها عندما يستعمل المستخدمون نموذج البريد الالكتروني؟';
-$string['course_contacts'] = 'جهات إتصال مقرر دراسي';
+$string['course_contacts'] = 'جهات إتصال مساق';
 $string['course_contacts:addinstance'] = 'إضافة كتلة جديدة من جهات اتصال المساق';
-$string['course_contacts:myaddinstance'] = 'إضافة كتلة جديدة من جهات اتصال المساق إلى لوحة التحكم';
+$string['course_contacts:myaddinstance'] = 'إضافة كتلة جديدة من جهات اتصال المساق إلى دفة القيادة';
 $string['hideblockforguest'] = 'إخفاء الكتلة بأكملها عن المستخدمين ذوي دور الضيوف.';
 $string['online'] = 'متصل بالإنترنت';
-$string['pluginname'] = 'جهات اتصال المقرر الدراسي';
+$string['pluginname'] = 'جهات اتصال المساق';
 $string['privacy:metadata'] = 'إن كتلة جهات اتصال المساق لا تخزن أي بيانات شخصية عن الأفراد.';
 $string['recentlyactive'] = 'نشيطة مؤخراً';

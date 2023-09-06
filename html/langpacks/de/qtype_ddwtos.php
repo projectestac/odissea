@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'de', version '3.11'.
+ * Strings for component 'qtype_ddwtos', language 'de', version '4.1'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -28,12 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoiceblanks'] = 'Leerfelder für {no} weitere Wahlmöglichkeiten';
 $string['answer'] = 'Antwort';
 $string['blank'] = 'leer';
+$string['blanknumber'] = 'Leer {$a}';
 $string['correctansweris'] = 'Die richtige Antwort lautet: {$a}';
 $string['errorlimitedchoice'] = 'Die Wahlmöglichkeit [[{$a}]] wurde mehr als einmal verwendet, ohne auf "Unbegrenzt" gesetzt zu sein. Bitte überprüfen Sie diese Frage erneut.';
 $string['infinite'] = 'Unbegrenzt';
 $string['pleaseputananswerineachbox'] = 'Schieben Sie eine Antwort in jedes Feld.';
 $string['pluginname'] = 'Drag-and-drop auf Text';
 $string['pluginname_help'] = 'Fragetexte mit Drag-and-drop-Lücken benötigen Platzhalter, um die richtigen Antworten in die entsprechenden Lücken im Fragetext zuordnen zu können. [[1]], [[2]], [[3]], ... werden als Platzhalter im Fragetext benutzt, wobei die richtigen Antworten als Auswahlantworten 1, 2, 3, ... angegeben sind. Antworten können gruppiert werden, um alle Antwortenmöglichkeiten für eine Lücke farblich zu markieren. Wenn Antwortmöglichkeiten als \'unbegrenzt\' markiert sind, können sie in mehr als einer Lücke verwendet werden.';
+$string['pluginname_link'] = 'question/type/ddwtos';
 $string['pluginnameadding'] = '"Drag-and-drop auf Text" hinzufügen';
 $string['pluginnameediting'] = '"Drag-and-drop auf Text" bearbeiten';
 $string['pluginnamesummary'] = 'Fehlende Wörter im Fragetext werden per Drag-and-drop ausgefüllt.';

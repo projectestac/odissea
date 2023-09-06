@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_classicpay', language 'el', version '3.11'.
+ * Strings for component 'enrol_classicpay', language 'el', version '4.1'.
  *
  * @package     enrol_classicpay
  * @category    string
@@ -92,7 +92,7 @@ $string['checkcode'] = 'Έλεγχος κωδικού κουπονιού';
 $string['classicpay:createcoupon'] = 'Δημιουργία κουπονιών';
 $string['classicpay:deletecoupon'] = 'Διαγραφή κουπονιών';
 $string['classicpay:editcoupon'] = 'Τροποποίηση κουπονιών';
-$string['classicpay:manage'] = 'Διαχείριση κλασικής πληρωμής';
+$string['classicpay:manage'] = 'Διαχείριση Κλασικής Πληρωμής';
 $string['classicpay:unenrol'] = 'Ακύρωση εγγραφής χρηστών';
 $string['classicpay:unenrolself'] = 'Ακύρωση εγγραφής';
 $string['cost'] = 'Κόστος εγγραφής';
@@ -125,7 +125,7 @@ $string['enrolperiod_desc'] = 'Προεπιλεγμένη διάρκεια ισ�
 $string['enrolperiod_help'] = 'Διάρκεια ισχύος της εγγραφής, ξεκινώντας από τη στιγμή εγγραφής του χρήστη. Αν απενεργοποιηθεί, η διάρκεια εγγραφής θα είναι απεριόριστη.';
 $string['enrolstartdate'] = 'Ημερομηνία έναρξης';
 $string['enrolstartdate_help'] = 'Εάν ενεργοποιηθεί, οι χρήστες μπορούν να εγγραφούν μόνο από την ημερομηνία αυτή και μετά.';
-$string['expiredaction_help'] = 'Επιλέξτε την ενέργεια που θα εκτελεστεί όταν λήξει η εγγραφή του χρήστη. Παρακαλώ έχετε υπόψη ότι ορισμένα δεδομένα χρήστη και ρυθμίσεις εξαλείφονται από το μάθημα κατά την ακύρωση εγγραφής στο μάθημα.';
+$string['expiredaction_help'] = 'Επιλέξτε την ενέργεια που θα εκτελεστεί όταν λήξει η εγγραφή του χρήστη. Παρακαλούμε έχετε υπόψη ότι ορισμένα δεδομένα χρήστη και ρυθμίσεις εξαλείφονται από το μάθημα κατά την ακύρωση εγγραφής στο μάθημα.';
 $string['maximum'] = 'Μέγιστο';
 $string['maxusage'] = 'Μέγιστη χρήση';
 $string['minimum'] = 'Ελάχιστο';

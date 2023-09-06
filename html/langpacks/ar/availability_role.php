@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_role', language 'ar', version '3.11'.
+ * Strings for component 'availability_role', language 'ar', version '4.1'.
  *
  * @package     availability_role
  * @category    string
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'السماح فقط للمستخدمين الذين لهم دور محدد في المقرر الدراسي.';
-$string['privacy:metadata'] = 'إن ملحق التقييد حسب دور المقرر لا يخزن أي بيانات شخصية.';
+$string['description'] = 'السماح فقط للمستخدمين الذين لهم دور محدد في المساق.';
+$string['privacy:metadata'] = 'إن إضافة التقييد حسب دور المساق لا تخزن أي بيانات شخصية.';
 $string['setting_supportedrolesheading'] = 'الأدوار المدعومة';
-$string['setting_supportguestrole_desc'] = 'إذا تم تنشيطه، يمكن تقييد إتاحة النشاطات أو منعها عن المستخدمين الذين يعاينون المقرر الدراسي بصفة ضيوف.';
+$string['setting_supportguestrole_desc'] = 'إذا تم تنشيطه، يمكن تقييد إتاحة النشاطات أو منعها عن المستخدمين الذين يعاينون المساق بصفة ضيوف.';
 $string['setting_supportnotloggedinrole_desc'] = 'إذا تم تنشيطه، يمكن تقييد إتاحة النشاطات أو منعها عن المستخدمين الذين لم يسجلوا دخولهم.';

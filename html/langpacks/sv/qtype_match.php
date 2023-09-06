@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'sv', version '3.11'.
+ * Strings for component 'qtype_match', language 'sv', version '4.1'.
  *
  * @package     qtype_match
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughquestions'] = 'Du måste ange åtminstone {$a} kombination/er 
 $string['pleaseananswerallparts'] = 'Vänligen besvara alla delar av frågan.';
 $string['pluginname'] = 'Matchande';
 $string['pluginname_help'] = 'Matchningsfrågor kräver att den som svarar på ett korrekt sätt matchar en lista med namn eller påståenden (frågor) med en anna lista med anmn eller påståenden (svar).';
+$string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = 'Lägga till en matchningsfråga';
 $string['pluginnameediting'] = 'Redigera en matchningsfråga';
 $string['pluginnamesummary'] = 'Svaret på var och en av ett antal underfrågor måste väljas från en lista över möjliga svar.';
@@ -46,5 +47,7 @@ $string['privacy:metadata'] = 'Pluginmodulen för frågetypen Matchande frågor 
 $string['privacy:preference:defaultmark'] = 'Standardpoängen för en viss fråga.';
 $string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök när frågor körs med beteendet "Interaktivt med flera försök" eller "Adaptivt läge".';
 $string['privacy:preference:shuffleanswers'] = 'Om svaren ska blandas automatiskt.';
+$string['regradeissuenumchoiceschanged'] = 'Antalet alternativ har ändrats.';
+$string['regradeissuenumstemschanged'] = 'Antalet underfrågor har ändrats.';
 $string['shuffle'] = 'Blanda';
 $string['shuffle_help'] = 'Om aktiverat blandas frågornas ordning slumpmässigt för varje försök förutsatt att "Blanda inom frågor" i aktivitetsinställningarna också är aktiverat. I en matchande fråga påverkas endast frågorna av den här parametern. Svarsalternativen kommer alltid att blandas.';

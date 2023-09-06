@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'en', version '3.11'.
+ * Strings for component 'tool_lp', language 'en', version '4.1'.
  *
  * @package     tool_lp
  * @category    string
@@ -166,6 +166,7 @@ $string['nouserevidence'] = 'No evidence of prior learning has been added yet.';
 $string['nouserplans'] = 'No learning plans have been created yet.';
 $string['oneplanwascreated'] = 'A learning plan was created';
 $string['outcome'] = 'Outcome';
+$string['overridegrade'] = 'Override existing competency grade when completed.';
 $string['parentcompetency'] = 'Parent';
 $string['parentcompetency_edit'] = 'Edit parent';
 $string['parentcompetency_help'] = 'Define the parent under which the competency will be added. It can either be another competency within the same framework, or the root of the competency framework for a top-level competency.';

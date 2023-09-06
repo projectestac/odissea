@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'gl', version '3.11'.
+ * Strings for component 'badges', language 'gl', version '4.1'.
  *
  * @package     badges
  * @category    string
@@ -38,18 +38,18 @@ $string['addcohort_help'] = 'Seleccionar todos os círculos que deberían engadi
 $string['addcompetency'] = 'Engadir competencia';
 $string['addcompetency_help'] = 'Seleccione todas as competencias que se deben engadir a este requisito para insignia. Manteña premida a tecla CTRL para seleccionar varios elementos.';
 $string['addcourse'] = 'Engadir cursos';
-$string['addcourse_help'] = 'Seleccionar todos os cursos que deberían engadirse a este requisito de insignia. Manteña premida a tecla CTRL para seleccionar varios elementos.';
+$string['addcourse_help'] = 'Seleccionar todos os curso que deberían engadirse a este requisito de insignia. Manteña premida a tecla CTRL para seleccionar varios elementos.';
 $string['addcriteria'] = 'Engadir criterios';
 $string['addcriteriatext'] = 'Para comezar a engadir criterios, seleccione unha das opcións do menú despregábel.';
 $string['addedtobackpack'] = 'Engadida a insignia á mochila';
 $string['addrelated'] = 'Engadir a insignia relacionada';
 $string['addtobackpack'] = 'Engadir á mochila';
 $string['adminonly'] = 'Esta páxina é de acceso restrinxido só para administradores.';
-$string['after'] = 'após a data de concesión.';
+$string['after'] = 'despois da data recepción.';
 $string['aggregationmethod'] = 'Método de agregación';
 $string['alignment'] = 'Aliñamento';
-$string['all'] = 'Todos';
-$string['allmethod'] = 'Danse todas as condicións seleccionadas';
+$string['all'] = 'Todo';
+$string['allmethod'] = 'Dánse todas as condicións seleccionadas';
 $string['allmethodactivity'] = 'Todas as actividades seleccionadas están completas';
 $string['allmethodbadges'] = 'Foron gañadas todas as insignias seleccionadas';
 $string['allmethodcohort'] = 'Membros en todos os círculos seleccionados';
@@ -62,7 +62,7 @@ $string['allowcoursebadges_desc'] = 'Permitir que se creen insignias e se conced
 $string['allowexternalbackpack'] = 'Conexión coa mochila externa';
 $string['allowexternalbackpack_desc'] = 'Se está activado, os usuarios poden conectarse cunha mochila externa e compartir as súas insignias neste sitio. Os usuarios tamén poden optar por amosar coleccións de insignias públicas da súa mochila externa na súa páxina de perfil neste sitio. Recoméndase deixar desactivada esta opción se o seu sitio non é accesíbel dende Internet.';
 $string['any'] = 'Calquera';
-$string['anymethod'] = 'Cúmprese algunha das condicións seleccionadas';
+$string['anymethod'] = 'Dánse algunha das condicións seleccionadas';
 $string['anymethodactivity'] = 'Algunha das actividades seleccionadas están completas';
 $string['anymethodbadges'] = 'Foi gañada calquera das insignias seleccionadas';
 $string['anymethodcohort'] = 'Membros en calquera dos círculos seleccionados';
@@ -104,13 +104,13 @@ $string['backpackconnected'] = 'A mochila está conectada';
 $string['backpackconnection'] = 'Conexión coa mochila';
 $string['backpackconnection_help'] = 'Conectarse a unha mochila permítelle compartir as súas insignias neste sitio e amosar coleccións de insignias públicas da súa mochila na súa páxina de perfil neste sitio.';
 $string['backpackconnectioncancelattempt'] = 'Conéctese mediante un enderezo de correo diferente';
-$string['backpackconnectionconnect'] = 'Conéctese á mochila';
+$string['backpackconnectionconnect'] = 'Conéctate á mochila';
 $string['backpackconnectionnottested'] = 'A conexión non pode probarse para esta mochila porque só a admiten mochilas Open Badges v2.0.';
 $string['backpackconnectionok'] = 'Estabeleceuse correctamente a conexión da mochila';
 $string['backpackconnectionresendemail'] = 'Reenviar o correo de verificación';
 $string['backpackconnectionunexpectedmessage'] = 'A mochila devolveu o erro: «{$a}».';
 $string['backpackconnectionunexpectedresult'] = 'Houbo un problema ao conectar a súa mochila. Comprobe as credenciais e ténteo de novo.';
-$string['backpackdetails'] = 'Axustes da mochila';
+$string['backpackdetails'] = 'Configuración da mochila';
 $string['backpackdisconnected'] = 'A mochila está desconectada';
 $string['backpackemail'] = 'Enderezo de correo';
 $string['backpackemail_help'] = 'Enderezo de correo asociado coa súa mochila. Mentres estea conectado, as insignias gañadas neste sitio asociaranse con esta conta de correo.';
@@ -132,20 +132,18 @@ $string['backpackemailverifypending'] = 'Enviouse un correo de verificación a <
 $string['backpackemailverifysuccess'] = 'Grazas por verificar o seu enderezo de correo. Agora está conectado á súa mochila.';
 $string['backpackemailverifytokenmismatch'] = 'O testemuño na ligazón que premeu non coincide co testemuño almacenado. Asegúrese de premer na ligazón no correo máis recente que recibiu.';
 $string['backpackexporterror'] = 'Non é posíbel exportar a insignia á mochila';
-$string['backpackimport'] = 'Axustes de importación de insignia';
+$string['backpackimport'] = 'Configuración de importación de insignia';
 $string['backpackimport_help'] = 'Tras unha conexión de mochila correcta, as insignias da súa mochila presentaranse na súa páxina «Insignias persoais» e na súa páxina de perfil.
 
 Nesta área, pode seleccionar as coleccións de insignias da súa mochila que lle gustaría presentar no seu perfil.';
 $string['backpackneedsupdate'] = 'A mochila conectada a este perfil non coincide coa mochila do sitio. Debe desconectar e volver conectar a mochila.';
 $string['backpackprovider'] = 'Provedor de mochilas';
-$string['backpacksettings'] = 'Axustes da mochila';
+$string['backpacksettings'] = 'Configuración da mochila';
 $string['backpackweburl'] = 'URL da Mochila';
 $string['badgedetails'] = 'Detalles da insignia';
 $string['badgeimage'] = 'Imaxe';
-$string['badgeimage_help'] = 'Esta é unha imaxe que se utilizará cando se emita a insignia.
-
-Para engadir unha nova imaxe, navegue e seleccione unha imaxe (en formato JPG ou PNG), logo prema en «Gardar cambios». A imaxe recórtase en cadrado e redimensiónase para coincidir cos requisitos das imaxes das insignias.';
-$string['badgeprivacysetting'] = 'Axustes de privacidade da insignia';
+$string['badgeimage_help'] = 'The image should be at least 300 x 300 pixels in size. It will be displayed as 300 x 300 pixels on the badge page and 100 x 100 pixels on the user\'s profile page.';
+$string['badgeprivacysetting'] = 'Configuración de privacidade da insignia';
 $string['badgeprivacysetting_help'] = 'As insignias que gañe poden presentarse na súa páxina de perfil. Este axuste permítelle estabelecer automaticamente a visibilidade de novas insignias gañadas.
 
 Aínda pode controlar a configuración de insignias privadas individuais na súa páxina «Insignias persoais».';
@@ -157,7 +155,7 @@ $string['badgesalt_desc'] = 'A utilización dunha cadea de control permítelle a
 Nota: A efecto de verificar o destinatario, evite cambiar esta configuración unha ves comece a emisión de insignias.';
 $string['badgesdisabled'] = 'As insignias non están activas neste sitio.';
 $string['badgesearned'] = 'Número de insignias gañadas: {$a}';
-$string['badgesettings'] = 'Axustes de insignias';
+$string['badgesettings'] = 'Configuración de insignias';
 $string['badgestatus_0'] = 'Non está dispoñíbel para os usuarios';
 $string['badgestatus_1'] = 'Dispoñíbel para os usuarios';
 $string['badgestatus_2'] = 'Non está dispoñíbel para os usuarios';
@@ -178,8 +176,8 @@ $string['bydate'] = 'completado por';
 $string['claim'] = 'Reclamación';
 $string['claimcomment'] = 'Comentario á aprobación';
 $string['claimid'] = 'URL da reclamación';
-$string['clearsettings'] = 'Limpar os axustes';
-$string['completioninfo'] = 'Esta insignia concedeuse polo completado de:';
+$string['clearsettings'] = 'Limpar a configuración';
+$string['completioninfo'] = 'Esta insignia emitiuse polo completado de:';
 $string['completionnotenabled'] = 'O completado do curso non está activado para este curso, así non é posíbel incluílo nos criterios da insignia. O completado do curso pode activarse nos axustes do curso.';
 $string['configenablebadges'] = 'Se está activado, esta característica permítelle crear insignias e concedelos aos usuarios do sitio';
 $string['configuremessage'] = 'Mensaxe da insignia';
@@ -217,8 +215,8 @@ $string['criteria_8'] = 'Membro do círculo';
 $string['criteria_8_help'] = 'Permite que se outorgue unha insignia aos usuarios en función da participación no círculo.';
 $string['criteria_9'] = 'Competencias';
 $string['criteria_9_help'] = 'Permite conceder unha insignia aos usuarios en función das competencias que completaron.';
-$string['criteria_descr'] = 'Os alumnos reciben esta insignia cando completan o seguinte requisito:';
-$string['criteria_descr_0'] = 'Os alumnos reciben esta insignia cando completan <strong>{$a}</strong> dos requisitos listados.';
+$string['criteria_descr'] = 'Os alumnos reciben esta insignia cando completan o seguinte requirimento:';
+$string['criteria_descr_0'] = 'Complete <strong>{$a}</strong> of the listed requirements.';
 $string['criteria_descr_1'] = '<strong>{$a}</strong> das actividades seguintes están completadas:';
 $string['criteria_descr_2'] = 'Esta insignia debe concederse aos usuarios con <strong>{$a}</strong> dos seguintes roles:';
 $string['criteria_descr_4'] = 'Os alumnos deben completar este curso';
@@ -247,7 +245,7 @@ $string['criteria_descr_single_7'] = 'Ten que gañar a seguinte insignia:';
 $string['criteria_descr_single_8'] = 'Requírese ser membro dos seguintes círculos:';
 $string['criteria_descr_single_9'] = 'Teñen que ser completadas as competencias seguintes:';
 $string['criteria_descr_single_short1'] = 'Completar:';
-$string['criteria_descr_single_short2'] = 'Concedido por:';
+$string['criteria_descr_single_short2'] = 'Concedida por:';
 $string['criteria_descr_single_short4'] = 'Completar o curso';
 $string['criteria_descr_single_short5'] = 'Completar:';
 $string['criteria_descr_single_short6'] = 'Completar:';
@@ -284,7 +282,6 @@ $string['delparamconfirm'] = 'Confirma que quere eliminar este parámetro?';
 $string['description'] = 'Descrición';
 $string['disconnect'] = 'Desconectar';
 $string['donotaward'] = 'Actualmente, esta insignia non está activa, de modo que non é posíbel concederlla aos usuarios. Se quere conceder esta insignia, poña o seu estado como activo.';
-$string['editsettings'] = 'Editar os axustes';
 $string['enablebadges'] = 'Activar as insignias';
 $string['endorsement'] = 'Aprobación';
 $string['error:backpackdatainvalid'] = 'A data devolvida pola mochila é incorrecta';
@@ -295,7 +292,7 @@ $string['error:badgeawardnotfound'] = 'Non é posíbel verificar esta insignia o
 $string['error:badgenotfound'] = 'Non se atopa a insignia';
 $string['error:cannotact'] = 'Non foi posíbel activar a insignia.';
 $string['error:cannotawardbadge'] = 'Non foi posíbel conceder a insignia a un usuario.';
-$string['error:cannotdeletecriterion'] = 'Este criterio non se pode eliminar.';
+$string['error:cannotdeletecriterion'] = 'Non é posíbel eliminar este criterio.';
 $string['error:cannotrevokebadge'] = 'Non foi posíbel revogar a insignia dun usuario.';
 $string['error:clone'] = 'Non foi posíbel clonar a insignia.';
 $string['error:connectionunknownreason'] = 'Fracasou a conexión, mais non se coñecen as razóns.';
@@ -308,13 +305,13 @@ $string['error:invalidexpireperiod'] = 'O período de caducidade non pode ser ne
 $string['error:invalidparambadge'] = 'Esa insignia non existe.';
 $string['error:invalidparamcohort'] = 'Ese círculo non existe.';
 $string['error:noactivities'] = 'Non hai actividades con criterio de completado activado neste curso.';
-$string['error:nobadges'] = 'Non hai insignias de curso nin de sitio con acceso activado para engadir como criterios.';
+$string['error:nobadges'] = 'Actualmente non hai insignias con acceso activado para ser engadidas como criterio. Unha insignia de sitio só pode ter outras insignias de sitio como criterio. Unha insignia de curso pode ter outras insignias de curso ou de sitio como criterios.';
 $string['error:nocohorts'] = 'Sen círculos';
 $string['error:nocourses'] = 'O completado do curso non está activado en ningún dos curso deste sitio, así que non se pode presentar ningún. O completado do curso pode activarse nos axustes do curso.';
 $string['error:nogroupslink'] = '<p>Só se amosan as coleccións públicas. <a href="{$a}" target="_blank" rel="nofollow">Visite a súa mochila</a> para crear algunhas coleccións públicas.</p>';
 $string['error:nogroupssummary'] = '<p>Non hai coleccións públicas de insignias dispoñíbeis na súa mochila. </p>';
 $string['error:nopermissiontoview'] = 'Non ten permisos para ver os receptores de insignias';
-$string['error:nosuchbadge'] = 'Non existe a insignia co ID {$a}.';
+$string['error:nosuchbadge'] = 'A insignia co ID {$a} non existe.';
 $string['error:nosuchcohort'] = 'Advertencia: Este círculo xa non está dispoñíbel.';
 $string['error:nosuchcourse'] = 'Advertencia: Este curso xa non está dispoñíbel.';
 $string['error:nosuchfield'] = 'Advertencia: este campo de usuario xa non está dispoñíbel.';
@@ -361,7 +358,7 @@ $string['externalbadges_help'] = 'Esta área presenta as insignias da súa mochi
 $string['externalbadgesp'] = 'Insignias doutros sitios web:';
 $string['externalconnectto'] = 'Para presentar insignias persoais externas, necesita <a href="{$a}">conectar cunha mochila</a>.';
 $string['fixed'] = 'Data fixa';
-$string['hidden'] = 'Agochada';
+$string['hidden'] = 'Agochado';
 $string['hiddenbadge'] = 'Desafortunadamente, o propietario da insignia non puxo esta información dispoñíbel.';
 $string['hostedurl'] = 'URL externo';
 $string['hostedurldescription'] = 'URL externo onde está aloxada a insignia';
@@ -380,7 +377,7 @@ $string['issuedbadge'] = 'Información da insignia emitida';
 $string['issuedby'] = 'Emitida por {$a}';
 $string['issuedon'] = 'Emitida o {$a}';
 $string['issuerdetails'] = 'Detalles do emisor';
-$string['issueremail'] = 'Correo';
+$string['issueremail'] = 'Correo-e';
 $string['issueremail_help'] = 'Un enderezo de correo de contacto da organización que emite o aprobado.';
 $string['issuername'] = 'Nome do emisor';
 $string['issuername_endorsement'] = 'Nome de quen aproba';
@@ -405,7 +402,7 @@ $string['makepublic'] = 'Facer pública';
 $string['managebackpacks'] = 'Xestionar as mochilas';
 $string['managebadges'] = 'Xestionar as insignias';
 $string['message'] = 'Corpo da mensaxe';
-$string['messagebody'] = '<p>Concedéuselle unha insignia «%badgename%»!</p>
+$string['messagebody'] = '<p>Concedéuselle unha insignia «% badgename»!</p>
 <p>Pode atopar máis información sobre esta insignia en %badgelink%.</p>
 <p>Pode xestionar e descargar a insignia da páxina {$a}.</p>';
 $string['messagesubject'] = 'Parabéns! Vén de concedérselle unha insignia!';
@@ -413,7 +410,7 @@ $string['method'] = 'Este criterio está completo cando...';
 $string['mingrade'] = 'Cualificación mínima requirida';
 $string['month'] = 'Mes(es)';
 $string['moredetails'] = 'Máis detalles';
-$string['mybackpack'] = 'Axustes da mochila persoal';
+$string['mybackpack'] = 'Configuración da mochila persoal';
 $string['mybadges'] = 'Insignias persoais';
 $string['never'] = 'Nunca';
 $string['newbackpack'] = 'Engade unha nova mochila';
@@ -425,8 +422,8 @@ $string['nobackpack'] = 'Non hai ningún servizo de mochila conectado a esta con
 $string['nobackpackbadgessummary'] = 'Non hai insignias nas coleccións que seleccionou.';
 $string['nobackpackcollectionssummary'] = 'Non hai coleccións seleccionadas.';
 $string['nobackpacks'] = 'Non hai mochilas dispoñíbeis.';
-$string['nobadges'] = 'Non hai insignias dispoñíbeis.';
-$string['nocompetencies'] = 'Non hai ningún competencia seleccionada.';
+$string['nobadges'] = 'Actualmente non hai insignias dispoñíbeis para os usuarios';
+$string['nocompetencies'] = 'Non hai ningunha competencia seleccionada.';
 $string['nocriteria'] = 'Os criterios para esta insignia aínda non foron configurados.';
 $string['noendorsement'] = 'Esta insignia non ten un aprobado.';
 $string['noexpiry'] = 'Esta insignia non ten unha data de caducidade.';
@@ -452,7 +449,7 @@ Están dispoñíbeis as seguintes opcións:
 
 * **SEMANALMENTE** - Enviar notificacións una vez cada semana.
 
-*** MENSUALMENTE** - Enviar notificacións unha vez cada mes.';
+* **MENSUALMENTE** - Enviar notificacións unha vez cada mes.';
 $string['notifydaily'] = 'Diaria';
 $string['notifyevery'] = 'Sempre';
 $string['notifymonthly'] = 'Mensual';
@@ -463,6 +460,7 @@ $string['oauth2issuer'] = 'Servizos de OAuth 2';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
+$string['othernavigation'] = 'Outra navegación...';
 $string['overallcrit'] = 'dos criterios seleccionados están completados.';
 $string['potentialrecipients'] = 'Destinatarios potenciais da insignia';
 $string['preferences'] = 'Preferencias da insignia';
@@ -503,7 +501,7 @@ $string['privacy:metadata:manualaward:recipientid'] = 'O ID do usuario ao que se
 $string['recipientdetails'] = 'Detalles do receptor';
 $string['recipientidentificationproblem'] = 'Non foi posíbel atopar un destinatario desta insignia entre os usuarios existentes.';
 $string['recipients'] = 'Destinatarios da insignia';
-$string['recipientvalidationproblem'] = 'Non é posíbel confirmar que o usuario actual é o receptor da insignia.';
+$string['recipientvalidationproblem'] = 'Non é posíbel confirmar que o usuario é o receptor desta insignia.';
 $string['relatedbages'] = 'Insignias relacionadas';
 $string['relative'] = 'Data relativa';
 $string['requiredbadge'] = 'Debe engadirse, polo menos, unha insignia ao criterio de insignia.';
@@ -530,10 +528,9 @@ $string['sitebackpack'] = 'Mochila externa activa';
 $string['sitebackpack_help'] = 'A mochila externa coa que os usuarios poden conectarse dende este sitio. Teña en conta que cambiar estes axustes após que os usuarios conectaron as súas mochilas requirirá que cada usuario vaia á súa páxina de axustes de mochila, se desconecte e volva conectarse.';
 $string['sitebackpackdeleted'] = 'Eliminouse a mochila do sitio.';
 $string['sitebackpacknotdeleted'] = 'Non foi posíbel eliminar esta mochila porque actualmente é o sitio predeterminado.';
-$string['sitebackpackverify'] = 'Conexión coa mochila';
 $string['sitebackpackwarning'] = 'Non foi posíbel conectar coa mochila. <br/><br/>Comprobe que o axuste de administración do «enderezo de correo do emisor de insignias» é o correo válido para unha conta no sitio web da mochila. <br/><br/>Comprobe que o «contrasinal do emisor de insignias» na <a href="{$a->url}">páxina de axustes da mochila do sitio</a>, é o contrasinal correcto para a conta no sitio web da mochila. <br/><br/>A mochila devolveu: «{$a->warning}»';
 $string['sitebadges'] = 'Insignias do sitio';
-$string['sitebadges_help'] = 'As insignias só poden serlles concedidas aos usuarios por actividades relacionadas co sitio. Isto inclúe o completado dunha serie de cursos ou partes dos perfís de usuarios. As insignias do sitio tamén se poden emitir manualmente dun usuario a outro.
+$string['sitebadges_help'] = 'As insignias do sitio só poden serlles concedidas aos usuarios por actividades relacionadas co sitio. Isto inclúe o completado dunha serie de cursos ou partes dos perfís de usuarios. As insignias do sitio tamén se poden emitir manualmente dun usuario a outro.
 
 As insignias por actividades relacionadas co curso débense crear no nivel do curso. As insignias do curso pódense atopar en Administración do curso > Insignias.';
 $string['sitebadgetitle'] = 'Insignia {$a} do sitio';

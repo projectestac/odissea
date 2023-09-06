@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'sv', version '3.11'.
+ * Strings for component 'enrol_guest', language 'sv', version '4.1'.
  *
  * @package     enrol_guest
  * @category    string
@@ -44,5 +44,6 @@ $string['showhint_desc'] = 'Visa första bokstaven eller siffran i gästlösenor
 $string['status'] = 'Tillåt gäster';
 $string['status_desc'] = '"Tillåt gäster" som förinställning';
 $string['status_help'] = 'Denna inställning avgör om kursen tillåter gäster utan att kräva registrering.';
+$string['status_link'] = 'enrol/guest';
 $string['usepasswordpolicy'] = 'Följ regler för att bestämma lösenord';
 $string['usepasswordpolicy_desc'] = 'Använd systemets regler för lösenord för att bestämma gästlösenord';

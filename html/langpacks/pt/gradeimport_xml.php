@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'pt', version '3.11'.
+ * Strings for component 'gradeimport_xml', language 'pt', version '4.1'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -36,8 +36,9 @@ $string['errorduringimport'] = 'Ocorreu um erro ao tentar importar: {$a}';
 $string['fileurl'] = 'URL do ficheiro remoto';
 $string['fileurl_help'] = 'O campo URL do ficheiro remoto serve para pesquisar informação num servidor remoto, tal como informação de um aluno no sistema.';
 $string['importxml'] = 'Importar XML';
-$string['importxml_help'] = 'As notas podem ser importadas através de um ficheiro XML que contenha os números de ID dos utilizadores e os números de ID das atividades.
+$string['importxml_help'] = 'As notas podem ser importadas através de um ficheiro XML que contenha os números de identificação (ID) dos utilizadores e os números de identificação (ID) das atividades.
 Para obter o formato correto, exporte primeiro algumas notas para um ficheiro XML e visualize-o.';
+$string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'Ficheiro XML';
 $string['privacy:metadata'] = 'O módulo Importar ficheiro XML não armazena quaisquer dados pessoais.';
 $string['xml:publish'] = 'Publicar notas importadas a partir do ficheiro XML';

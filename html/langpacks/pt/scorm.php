@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'pt', version '3.11'.
+ * Strings for component 'scorm', language 'pt', version '4.1'.
  *
  * @package     scorm
  * @category    string
@@ -87,7 +87,7 @@ $string['completed'] = 'Concluído';
 $string['completiondetail:allscos'] = 'Realizar todas as partes desta atividade';
 $string['completiondetail:completionscore'] = 'Receber pontuação de {$a} ou mais';
 $string['completiondetail:completionstatuscompleted'] = 'Concluir a atividade';
-$string['completiondetail:completionstatuscompletedandpassed'] = 'Concluir e ficar aprovado na atividade';
+$string['completiondetail:completionstatuscompletedorpassed'] = 'Concluir ou obter aprovação na atividade';
 $string['completiondetail:completionstatuspassed'] = 'Ficar aprovado na atividade';
 $string['completionscorerequired'] = 'Exigir nota mínima';
 $string['completionscorerequired_help'] = 'Ativar esta configuração vai exigir que o utilizador tenha pelo menos a pontuação mínima inserida para marcar como concluída esta atividade SCORM, bem como quaisquer outros requisitos de conclusão da atividade.';
@@ -129,7 +129,6 @@ $string['displaydesc'] = 'Esta opção define se o Pacote SCORM é exibido numa 
 $string['displaysettings'] = 'Exibir configurações';
 $string['dnduploadscorm'] = 'Adicionar um pacote SCORM';
 $string['domxml'] = 'Biblioteca externa DOMXML';
-$string['duedate'] = 'Data limite';
 $string['element'] = 'Elemento';
 $string['enter'] = 'Entrar';
 $string['entercourse'] = 'Entrar';
@@ -210,10 +209,12 @@ $string['indicator:cognitivedepth'] = 'Compreensão do SCORM';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade SCORM.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do SCORM';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecido pelas atividades SCORM durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido, Visualizado feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Socialização do SCORM';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade SCORM.';
 $string['indicator:socialbreadthdef'] = 'Socialização do SCORM';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades SCORM durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'Informação';
 $string['interactions'] = 'Interações';
 $string['invalidactivity'] = 'A atividade SCORM está incorreta';
@@ -337,7 +338,7 @@ $string['privacy:metadata:scorm_scoes_track'] = 'Os dados localizados dos SCOes 
 $string['privacy:metadata:timemodified'] = 'A hora de quando o elemento localizado foi modificado pela última vez';
 $string['privacy:metadata:userid'] = 'O ID do utilizador que acedeu à atividade SCORM';
 $string['protectpackagedownloads'] = 'Impedir que os pacotes SCORM sejam descarregados';
-$string['protectpackagedownloads_desc'] = 'Se ativar esta configuração, os pacotes SCORM poderão apenas ser descarregados por utilizadores que possuam a permissão \'course:manageactivities\'. Se desativada, os pacotes SCORM poderão ser sempre descarregados (pelos dispositivos móveis ou por outros meios).';
+$string['protectpackagedownloads_desc'] = 'Se ativar esta opção, os pacotes SCORM apenas poderão ser descarregados por utilizadores que possuam a permissão \'course:manageactivities\'. Se desativada, os pacotes SCORM poderão ser sempre descarregados (por dispositivos móveis ou por outros meios).';
 $string['raw'] = 'Nota bruta';
 $string['regular'] = 'Manifesto regular';
 $string['report'] = 'Relatório';

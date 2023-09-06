@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_xp', language 'pt', version '3.11'.
+ * Strings for component 'block_xp', language 'pt', version '4.1'.
  *
  * @package     block_xp
  * @category    string
@@ -247,6 +247,7 @@ $string['property:component'] = 'Componente do evento';
 $string['property:crud'] = 'CRUD do evento';
 $string['property:eventname'] = 'Nome do evento';
 $string['property:target'] = 'Alvo do evento';
+$string['questreleasenotice'] = 'Temos o prazer de anunciar o nosso **novo módulo de gamificação**: **Subir de nível Quest** 🥳. Transforme as suas disciplinas em **aventuras emocionantes**, repletas de **estratégias de compromisso** e **comemorações** 🤯! Confira o [site da Quest]({$a->questurl}) e a nossa [nota de lançamento]({$a->questblogurl}).';
 $string['rank'] = 'Posição';
 $string['ranking'] = 'Classificação';
 $string['ranking_help'] = 'A classificação é a posição absoluta do utilizador atual na grelha de classificação. A classificação relativa é a diferença dos pontos de experiência entre um utilizador e os seus vizinhos.';

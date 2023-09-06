@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_search_forums', language 'ko', version '3.11'.
+ * Strings for component 'block_search_forums', language 'ko', version '4.1'.
  *
  * @package     block_search_forums
  * @category    string

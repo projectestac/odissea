@@ -23,10 +23,10 @@ $PAGE->set_url('/mod/scorm/index.php', array('id' => $id));
 
 if (!empty($id)) {
     if (!$course = $DB->get_record('course', array('id' => $id))) {
-        print_error('invalidcourseid');
+        throw new \moodle_exception('invalidcourseid');
     }
 } else {
-    print_error('missingparameter');
+    throw new \moodle_exception('missingparameter');
 }
 
 require_course_login($course);
@@ -48,7 +48,6 @@ $PAGE->set_title($strscorms);
 $PAGE->set_heading($course->fullname);
 $PAGE->navbar->add($strscorms);
 echo $OUTPUT->header();
-echo $OUTPUT->heading($strscorms);
 
 $usesections = course_format_uses_sections($course->format);
 

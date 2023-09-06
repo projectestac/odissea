@@ -1,7 +1,7 @@
-Plugin local Clickedu (Moodle 3.6+)
+Plugin local Clickedu (Moodle 4.0)
 ==================================
 
-Compatibilidad con Moodle 3.6 hasta 3.10.
+Compatibilidad con Moodle 4.0.
 
 Este plugin integra Moodle con la plataforma Clickedu.
 

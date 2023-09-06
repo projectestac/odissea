@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ur', version '3.11'.
+ * Strings for component 'quiz_overview', language 'ur', version '4.1'.
  *
  * @package     quiz_overview
  * @category    string
@@ -25,27 +25,57 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allattempts'] = 'تمام کوششیں دکھاؤ';
-$string['allattemptscontributetograde'] = 'تمام کوششیں استعمال کنندہ کے آخری درجہ میں ممد ہیں';
-$string['allstudents'] = 'تمام {$a} دکھاؤ';
-$string['attemptsonly'] = 'صرف کوششیں کے ساتھ {$a} دکھاؤ';
-$string['attemptsprepage'] = 'دکھائی دینے والی کوششیں فی صفحہ';
-$string['deleteselected'] = 'منتخب کوششیں خارج کرو';
-$string['highlightinggraded'] = 'استعمال کنندہ کی وہ کوشش جو آخری درجہ میں ممد ہے، واضح ہے';
-$string['noattemptsonly'] = 'صرف بخیر کوشش کی گئی {$a} دکھاؤ/ ڈاؤنلوڈ کرو';
-$string['onlyoneattemptallowed'] = 'اس معلوماتی آزمائش کیلیے صرف ایک کوشش فی استعمال کنندہ کی اجازت ہے۔';
+$string['allattempts'] = 'تمام کوششیں دکھائیں';
+$string['allattemptscontributetograde'] = 'تمام کوششیں صارف کے آخری درجے میں حصہ ڈالتی ہیں۔';
+$string['allstudents'] = 'تمام {$a} دکھائیں';
+$string['attemptsonly'] = '{$a} کو صرف کوششوں کے ساتھ دکھائیں';
+$string['attemptsprepage'] = 'فی صفحہ کوششیں دکھائی گئیں';
+$string['deleteselected'] = 'منتخب کوششوں کو حذف کریں';
+$string['done'] = 'ہو گیا';
+$string['err_failedtodeleteregrades'] = 'کوشش کے حسابی درجات کو حذف کرنے میں ناکام';
+$string['err_failedtorecalculateattemptgrades'] = 'کوشش کے درجات کو دوبارہ شمار کرنے میں ناکام';
+$string['highlightinggraded'] = 'صارف کی وہ کوشش جو فائنل گریڈ میں حصہ ڈالتی ہے اس پر روشنی ڈالی جاتی ہے۔';
+$string['needed'] = 'ضرورت ہے';
+$string['noattemptsonly'] = 'بغیر کسی کوشش کے {$a} دکھائیں / ڈاؤن لوڈ کریں';
+$string['noattemptstoregrade'] = 'کسی کوشش کو دوبارہ ترتیب دینے کی ضرورت نہیں ہے';
+$string['nogradepermission'] = 'آپ کو اس کوئز کو گریڈ کرنے کی اجازت نہیں ہے۔';
+$string['onlyoneattemptallowed'] = 'اس کوئز پر فی صارف صرف ایک کوشش کی اجازت ہے۔';
 $string['optallattempts'] = 'تمام کوششیں';
-$string['optallstudents'] = 'تمام \'{$a}\'';
-$string['optattemptsonly'] = '\'{$a}\' صرف کوششوں کے ساتھ';
-$string['optnoattemptsonly'] = '\'{$a}\' صرف بخیر کسی کوشش کے';
-$string['overview'] = 'سرسری جائزہ';
-$string['overviewdownload'] = 'ڈاؤنلوڈ کا سرسری جائزہ';
-$string['overviewreportgraph'] = 'طالبعلموں کے حاصل کردہ مخصوص درجہ کا بار گراف';
+$string['optallstudents'] = 'تمام {$a} جنہوں نے کوئز کی کوشش کی ہے یا نہیں کی ہے';
+$string['optattemptsonly'] = '{$a} جنہوں نے کوئز کی کوشش کی ہے';
+$string['optnoattemptsonly'] = '{$a} جنہوں نے کوئز کی کوشش نہیں کی ہے';
+$string['optonlyregradedattempts'] = 'جن کو ری گریڈ کیا گیا ہے / ریگریڈنگ کی ضرورت کے طور پر نشان زد کیا گیا ہے';
+$string['overview'] = 'درجات';
+$string['overviewdownload'] = 'جائزہ ڈاؤن لوڈ';
+$string['overviewfilename'] = 'درجات';
+$string['overviewreport'] = 'درجات کی رپورٹ';
+$string['overviewreportgraph'] = 'گریڈ رینجز حاصل کرنے والے طلباء کی مجموعی تعداد';
+$string['overviewreportgraphgroup'] = 'گروپ \'{$a}\' میں گریڈ رینجز حاصل کرنے والے طلباء کی تعداد';
 $string['pagesize'] = 'صفحہ کا سائز';
-$string['preferencespage'] = 'صرف اس صفحہ کیلیے من پسندیدگی';
-$string['preferencessave'] = 'من پسندیدگی محفوظ کرو';
-$string['preferencesuser'] = 'اس رپورٹ کیلیےآپ کی من پسندیدگی';
-$string['show'] = 'دکھاؤ / ڈاؤنلوڈ کرو';
-$string['showdetailedmarks'] = 'ہر ایک سوال کے نمبر دیکھو / ڈاؤنلوڈ کرو';
-$string['showinggraded'] = 'صرف درجہ دی گئی کوشش فی استعمال کنندہ دکھائی جا رہی ہیں۔';
-$string['showinggradedandungraded'] = 'درجہ دی گئی اور بغیر درجہ کی گئی کوششیں فی استعمال کنندہ دکھائی جا رہی ہیں۔ ایک درجہ دی گئی کوشش فی استعمال کنندہ واضح ہے۔ اس معلوماتی آزمائش کیلیے {$a} طریقہ کار استعمال کیا گیا ہے۔';
+$string['pluginname'] = 'درجات';
+$string['preferencespage'] = 'ترجیحات صرف اس صفحہ کے لیے';
+$string['preferencessave'] = 'رپورٹ دکھائیں';
+$string['preferencesuser'] = 'اس رپورٹ کے لیے آپ کی ترجیحات';
+$string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'آیا ہر سوال کی سلاٹ کے لیے نشانات دکھائے جائیں۔';
+$string['privacy:preference:slotmarks:no'] = 'سوال نمبر کے ساتھ نشانات نہیں دکھائے گئے ہیں۔';
+$string['privacy:preference:slotmarks:yes'] = 'سوال نمبر کے ساتھ نشانات دکھائے جاتے ہیں۔';
+$string['regrade'] = 'دوبارہ درجہ بندی';
+$string['regradeall'] = 'سب کی دوبارہ درجہ بندی کریں';
+$string['regradealldry'] = 'Dry run مکمل regrade';
+$string['regradealldrydo'] = 'ریگریڈ کی کوششوں کو ریگریڈنگ کی ضرورت کے طور پر نشان زد کیا گیا ({$a})';
+$string['regradealldrydogroup'] = 'ریگریڈ کی کوششیں ({$a->countregradeneeded}) کو گروپ \'{$a->groupname}\' میں ری گریڈنگ کی ضرورت کے طور پر نشان زد کیا گیا';
+$string['regradealldrygroup'] = 'گروپ \'{$a->groupname}\' کے لیے مکمل ریگریڈ Dry run';
+$string['regradeallgroup'] = 'گروپ \'{$a->groupname}\' کے لیے مکمل ریگریڈ';
+$string['regradecomplete'] = 'ریگریڈ کامیابی کے ساتھ مکمل ہو گیا';
+$string['regradedsuccessfullyxofy'] = 'کامیابی کے ساتھ ری گریڈ کیا گیا ({$a->done}/{$a->count})';
+$string['regradeheader'] = 'دوبارہ درجہ بندی';
+$string['regradeselected'] = 'منتخب کوششوں کو دوبارہ ترتیب دیں';
+$string['regradingattemptxofy'] = 'ریگریڈنگ کی کوشش ({$a->done}/{$a->count})';
+$string['regradingattemptxofywithdetails'] = 'ریگریڈنگ کی کوشش ({$a->done}/{$a->count}) - کوشش {$a->attemptnum} بذریعہ {$a->name} (id {$a->attemptid})';
+$string['show'] = 'دکھائیں / ڈاؤن لوڈ کریں';
+$string['showattempts'] = 'صرف دکھائیں / ڈاؤن لوڈ کرنے کی کوشش کریں';
+$string['showdetailedmarks'] = 'ہر سوال کے لیے نشانات';
+$string['showinggraded'] = 'ہر صارف کے لیے صرف درجہ بندی کی کوشش دکھا رہا ہے۔';
+$string['showinggradedandungraded'] = 'ہر صارف کے لیے گریڈ شدہ اور غیر گریڈ شدہ کوششیں دکھا رہا ہے۔ درجہ بندی کرنے والے ہر صارف کے لیے ایک کوشش کو نمایاں کیا گیا ہے۔ اس کوئز کے لیے درجہ بندی کا طریقہ {$a} ہے۔';
+$string['studentingroup'] = '\'{$a->coursestudent}\' گروپ \'{$a->groupname}\' میں';
+$string['studentingrouplong'] = 'اس گروپ میں \'{$a->coursestudent}\'';

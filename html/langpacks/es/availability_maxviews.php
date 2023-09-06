@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_maxviews', language 'es', version '3.11'.
+ * Strings for component 'availability_maxviews', language 'es', version '4.1'.
  *
  * @package     availability_maxviews
  * @category    string
@@ -30,4 +30,6 @@ $string['description'] = 'Impedir el acceso después de que el usuario haya vist
 $string['eitherdescription'] = 'has alcanzado el límite de {$a->viewslimit} vistas (llevas {$a->viewscount} vistas)';
 $string['eithernotdescription'] = 'no has alcanzado el límite de {$a->viewslimit} vistas (llevas {$a->viewscount} vistas)';
 $string['fieldlabel'] = 'El máximo de vistas es menos que:';
+$string['pluginname'] = 'Máximo de Vistas';
 $string['title'] = 'Máximo de vistas';
+$string['validnumber'] = 'Usted debe añadir un número mayor de 0';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'fr', version '3.11'.
+ * Strings for component 'qtype_calculatedmulti', language 'fr', version '4.1'.
  *
  * @package     qtype_calculatedmulti
  * @category    string
@@ -29,6 +29,7 @@ $string['answeroptions'] = 'Options à choix';
 $string['answeroptions_help'] = 'La formule de choix suggérée est …<strong>{={x}+..}</strong>…';
 $string['pluginname'] = 'Calculée à choix multiple';
 $string['pluginname_help'] = 'Les questions calculées à choix multiple se présentent comme des questions à choix multiple standard, mais peuvent utiliser des variables, placées entre deux accolades, qui sont remplacées par des valeurs quand le test est lancé. Par exemple, pour la question « Quelle est l\'aire d\'un rectangle de longueur {a} et de largeur {b} ?» l\'un des choix disponible sera {={a}*{b}} (où le symbole * représente la multiplication).';
+$string['pluginname_link'] = 'question/type/calculatedmulti';
 $string['pluginnameadding'] = 'Ajout d\'une question calculée à choix multiple';
 $string['pluginnameediting'] = 'Modification d\'une question calculée à choix multiple';
 $string['pluginnamesummary'] = 'Les questions calculées à choix multiple sont comme des questions à choix multiple, dans lesquelles les éléments de choix peuvent inclure des résultats de fonctions intégrant des valeurs de variables tirées aléatoirement d\'un jeu de données au lancement du test.';

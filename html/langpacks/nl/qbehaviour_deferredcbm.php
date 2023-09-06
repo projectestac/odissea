@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'nl', version '3.11'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'nl', version '4.1'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -37,6 +37,7 @@ $string['cbmgrades'] = 'CBM cijfers';
 $string['cbmgrades_help'] = 'Met Certainty-Based Marking (CBM) krijgt elke vraag met een juist antwoord met C=1 (kleine zekerheid) een cijfer van 100%. Cijfers kunnen tot 300% stijgen als elke vraag juist is met C=3 (grote zekerheid). Een fout begrip (fout antwoord met veel zelfvertrouwen gegeven) verlaagt het cijfer meer dan een fout antwoord waarvoor de leerling toegeeft dat die niet zeker is. Dit kan zelfs leiden tot een negatieve totaalscore.
 
 **Accuraatheid** is het percentage juiste antwoorden waarbij de zekerheid genegeerd wordt, maar gewogen voor het maximum cijfer van elke vraag. Het juist kunnen onderscheiden van meer of minder betrouwbare antwoorden levert een hoger cijfer op. dan dezelfde zekerheid selecteren voor elke vraag. Dit wordt weergegeven met de **CBM Bonus**. **Accuraatheid** + **CBM-Bonus** is een betere maat voor kennis dan enkel de **Accuraatheid**.  Slecht begrip kan leiden tot een negatieve bonus - een waarschuwing om goed na te denken over wat je zeker weet en wat je denkt te weten.';
+$string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'CBM score {$a}';
 $string['certainty'] = 'Zekerheid';
 $string['certainty-1'] = 'Geen idee';
@@ -52,6 +53,7 @@ Geef indien fout      |        0        |        -2   |         -6
 Waarschijnlijk just  |    <67%   | 67-80% |    >80%
 
 De beste scores worden verkregen door je onzekerheid toe te geven. Bijvoorbeeld als je denkt dat er meer dan 1 kans op 3 is dat je fout bent, geef dan Z=1 en vermijdt het risico van een negatief cijfer.';
+$string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
 $string['certaintyshort-1'] = 'Geen idee';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';

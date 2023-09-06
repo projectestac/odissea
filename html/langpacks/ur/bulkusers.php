@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bulkusers', language 'ur', version '3.11'.
+ * Strings for component 'bulkusers', language 'ur', version '4.1'.
  *
  * @package     bulkusers
  * @category    string
@@ -25,19 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addall'] = 'سب کو جمع کرو';
-$string['addsel'] = 'منتخب شدہ میں جمع کرو';
+$string['addall'] = 'سب شامل کریں';
+$string['addsel'] = 'انتخاب میں شامل کریں';
 $string['allfilteredusers'] = 'تمام فلٹر شدہ ) {$a->count}/{$a->total} (';
 $string['allselectedusers'] = 'تمام منتخب شدہ ) {$a->count}/{$a->total} (';
-$string['allusers'] = 'تمام استعمال کنندہ) {$a} (';
+$string['allusers'] = 'تمام صارفین ({$a})';
 $string['available'] = 'میسر';
-$string['confirmmessage'] = 'کیا واقع آپ واقع درج بالا پیغام ان تمام استعمال کنندگان کو بھیجنا چاہتے ہیں؟ <br /> {$a}';
-$string['nofilteredusers'] = 'کوئی استعمال کنندہ نہیں ملا (0/{$a})';
-$string['noselectedusers'] = 'کوئی استعمال کنندہ منتخب نہیں';
-$string['removeall'] = 'سب کو خارج کرو';
-$string['removesel'] = 'انتخاب میں سے خارج کرو';
+$string['confirmmessage'] = 'کیا آپ واقعی ان تمام صارفین کو مذکورہ پیغام بھیجنا چاہتے ہیں؟<br />{$a}';
+$string['deleteduser'] = 'حذف شدہ صارف';
+$string['nofilteredusers'] = 'کوئی صارف نہیں ملا (0/{$a})';
+$string['noselectedusers'] = 'کوئی صارف منتخب نہیں کیا گیا';
+$string['removeall'] = 'سب کو خارج کریں';
+$string['removesel'] = 'انتخاب میں سے خارج کریں';
 $string['selected'] = 'منتخب';
-$string['selectedlist'] = 'منتخب استعمال کنندگان کی فہرست۔۔۔';
-$string['usersfound'] = '{$a} استعمال کنندہ تلاش ہوئے ہیں';
-$string['usersinlist'] = 'فہرست میں موجود استعمال کنندگان';
-$string['usersselected'] = '{$a} استعمال کننگان منتخب ہو چکے';
+$string['selectedlist'] = 'منتخب صارف کی فہرست۔۔۔';
+$string['selectedlist_help'] = 'صارفین کے ناموں پر کلک کر کے پھر کسی مناسب بٹن پر کلک کر کے منتخب صارفین کی فہرست سے صارفین کو شامل یا ہٹایا جا سکتا ہے۔ ایک سے زیادہ صارفین کو ایپل یا Ctrl کی کو دبائے رکھ کر منتخب کیا جا سکتا ہے جب کہ صارفین کے ناموں پر کلک کریں۔';
+$string['users'] = 'صارفین';
+$string['users_help'] = 'فعال فلٹرز پاس کرنے والے تمام صارفین دستیاب باکس میں درج ہیں۔ اگر کوئی فلٹر سیٹ نہیں کیا گیا ہے، تو سائٹ کے تمام صارفین درج ہیں۔';
+$string['usersfound'] = '{$a} صارف ملا۔';
+$string['usersinlist'] = 'فہرست میں موجود صارفین';
+$string['usersselected'] = '{$a} صارف کو منتخب کیا گیا۔';

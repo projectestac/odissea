@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'ja', version '3.11'.
+ * Strings for component 'userkey', language 'ja', version '4.1'.
  *
  * @package     userkey
  * @category    string
@@ -25,9 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adduserkey'] = 'ユーザキーを追加する';
 $string['createnewkey'] = '新しいユーザキーを作成する';
 $string['createuserkey'] = 'ユーザキーを作成する';
 $string['deletekeyconfirm'] = '本当にこのユーザキーを削除してもよろしいですか?';
+$string['deleteuserkey'] = 'ユーザキーを削除する';
 $string['edituserkey'] = 'ユーザキーを編集する';
 $string['keyiprestriction'] = 'キーIP制限';
 $string['keyiprestriction_help'] = 'このデータにアクセスできる唯一のIPアドレスまたはIPアドレスのレンジを入力してください。IP制限を無効にするには空白のままにしてください (お勧めできません)。';

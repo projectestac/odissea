@@ -66,8 +66,13 @@ $title = get_string('overridesforquiz', 'quiz',
         format_string($quiz->name, true, ['context' => $context]));
 $PAGE->set_url($url);
 $PAGE->set_pagelayout('admin');
+$PAGE->add_body_class('limitedwidth');
 $PAGE->set_title($title);
 $PAGE->set_heading($course->fullname);
+$PAGE->activityheader->disable();
+
+// Activate the secondary nav tab.
+$PAGE->set_secondary_active_tab("mod_quiz_useroverrides");
 
 // Delete orphaned group overrides.
 $sql = 'SELECT o.id
@@ -108,17 +113,16 @@ if ($groupmode) {
     // User overrides.
     $colclasses[] = 'colname';
     $headers[] = get_string('user');
-    // TODO Does not support custom user profile fields (MDL-70456).
-    $userfieldsapi = \core_user\fields::for_identity($context, false)->with_name()->with_userpic();
+    $userfieldsapi = \core_user\fields::for_identity($context)->with_name()->with_userpic();
     $extrauserfields = $userfieldsapi->get_required_fields([\core_user\fields::PURPOSE_IDENTITY]);
+    $userfieldssql = $userfieldsapi->get_sql('u', true, '', 'userid', false);
     foreach ($extrauserfields as $field) {
         $colclasses[] = 'col' . $field;
         $headers[] = \core_user\fields::get_display_name($field);
     }
 
-    list($sort, $params) = users_order_by_sql('u');
+    list($sort, $params) = users_order_by_sql('u', null, $context, $extrauserfields);
     $params['quizid'] = $quiz->id;
-    $userfields = $userfieldsapi->get_sql('u', true, '', 'userid', false)->selects;
 
     if ($showallgroups) {
         $groupsjoin = '';
@@ -137,14 +141,15 @@ if ($groupmode) {
     }
 
     $overrides = $DB->get_records_sql("
-            SELECT o.*, $userfields
+            SELECT o.*, {$userfieldssql->selects}
               FROM {quiz_overrides} o
               JOIN {user} u ON o.userid = u.id
+                  {$userfieldssql->joins}
               $groupsjoin
              WHERE o.quiz = :quizid
                $groupswhere
              ORDER BY $sort
-            ", $params);
+            ", array_merge($params, $userfieldssql->params));
 }
 
 // Initialise table.
@@ -230,7 +235,7 @@ foreach ($overrides as $override) {
         $groupcell = new html_table_cell();
         $groupcell->rowspan = count($fields);
         $groupcell->text = html_writer::link(new moodle_url($groupurl, ['group' => $override->groupid]),
-                $override->name . $extranamebit);
+            format_string($override->name, true, ['context' => $context]) . $extranamebit);
         $usercells[] = $groupcell;
     } else {
         $usercell = new html_table_cell();
@@ -298,9 +303,50 @@ foreach ($overrides as $override) {
     }
 }
 
-// Display a list of overrides.
+// Work out what else needs to be displayed.
+$addenabled = true;
+$warningmessage = '';
+if ($canedit) {
+    if ($groupmode) {
+        if (empty($groups)) {
+            // There are no groups.
+            $warningmessage = get_string('groupsnone', 'quiz');
+            $addenabled = false;
+        }
+    } else {
+        // See if there are any students in the quiz.
+        if ($showallgroups) {
+            $users = get_users_by_capability($context, 'mod/quiz:attempt', 'u.id');
+            $nousermessage = get_string('usersnone', 'quiz');
+        } else if ($groups) {
+            $users = get_users_by_capability($context, 'mod/quiz:attempt', 'u.id', '', '', '', array_keys($groups));
+            $nousermessage = get_string('usersnone', 'quiz');
+        } else {
+            $users = [];
+            $nousermessage = get_string('groupsnone', 'quiz');
+        }
+        $info = new \core_availability\info_module($cm);
+        $users = $info->filter_user_list($users);
+
+        if (empty($users)) {
+            // There are no students.
+            $warningmessage = $nousermessage;
+            $addenabled = false;
+        }
+    }
+}
+
+// Tertiary navigation.
 echo $OUTPUT->header();
-echo $OUTPUT->heading($title);
+$renderer = $PAGE->get_renderer('mod_quiz');
+$tertiarynav = new \mod_quiz\output\overrides_actions($cmid, $mode, $canedit, $addenabled);
+echo $renderer->render($tertiarynav);
+
+if ($mode === 'user') {
+    echo $OUTPUT->heading(get_string('useroverrides', 'quiz'));
+} else {
+    echo $OUTPUT->heading(get_string('groupoverrides', 'quiz'));
+}
 
 // Output the table and button.
 echo html_writer::start_tag('div', ['id' => 'quizoverrides']);
@@ -317,43 +363,8 @@ if ($hasinactive) {
     echo $OUTPUT->notification(get_string('inactiveoverridehelp', 'quiz'), 'info', false);
 }
 
-if ($canedit) {
-    echo html_writer::start_tag('div', ['class' => 'buttons']);
-    $options = [];
-    if ($groupmode) {
-        if (empty($groups)) {
-            // There are no groups.
-            echo $OUTPUT->notification(get_string('groupsnone', 'quiz'), 'error');
-            $options['disabled'] = true;
-        }
-        echo $OUTPUT->single_button($overrideediturl->out(true,
-                ['action' => 'addgroup', 'cmid' => $cm->id]),
-                get_string('addnewgroupoverride', 'quiz'), 'post', $options);
-    } else {
-        $users = [];
-        // See if there are any students in the quiz.
-        if ($showallgroups) {
-            $users = get_users_by_capability($context, 'mod/quiz:attempt', 'u.id');
-            $nousermessage = get_string('usersnone', 'quiz');
-        } else if ($groups) {
-            $users = get_users_by_capability($context, 'mod/quiz:attempt', 'u.id', '', '', '', array_keys($groups));
-            $nousermessage = get_string('usersnone', 'quiz');
-        } else {
-            $nousermessage = get_string('groupsnone', 'quiz');
-        }
-        $info = new \core_availability\info_module($cm);
-        $users = $info->filter_user_list($users);
-
-        if (empty($users)) {
-            // There are no students.
-            echo $OUTPUT->notification($nousermessage, 'error');
-            $options['disabled'] = true;
-        }
-        echo $OUTPUT->single_button($overrideediturl->out(true,
-                ['action' => 'adduser', 'cmid' => $cm->id]),
-                get_string('addnewuseroverride', 'quiz'), 'get', $options);
-    }
-    echo html_writer::end_tag('div');
+if ($warningmessage) {
+    echo $OUTPUT->notification($warningmessage, 'error');
 }
 
 echo html_writer::end_tag('div');

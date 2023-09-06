@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ur', version '3.11'.
+ * Strings for component 'hotpot', language 'ur', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['navigation'] = 'نیویگیشن';

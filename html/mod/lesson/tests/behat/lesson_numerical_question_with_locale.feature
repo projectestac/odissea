@@ -38,15 +38,15 @@ Feature: In a lesson activity, I need to edit pages in the lesson taking into ac
 
   Scenario: Edit a numerical question with the locale specific variables
     Given I am on the "Test lesson name" "lesson activity" page logged in as teacher1
-    And I click on "Edit" "link" in the "region-main" "region"
+    And I edit the lesson
     And I follow "Hardest question ever"
     Then I should see "2#87"
     And I should see "2#1:2#8"
 
   Scenario: View the detailed page of lesson
     Given I am on the "Test lesson name" "lesson activity" page logged in as teacher1
-    And I click on "Edit" "link" in the "region-main" "region"
-    And I click on "Expanded" "link" in the "region-main" "region"
+    And I edit the lesson
+    And I select edit type "Expanded"
     Then I should see "2#87"
     And I should see "2#1:2#8"
 
@@ -57,6 +57,7 @@ Feature: In a lesson activity, I need to edit pages in the lesson taking into ac
       | Your answer | 2#87 |
     And I press "Submit"
     Then I should see "Correct answer"
+    And I should see "2#87"
     And I should not see "Incorrect answer"
     And I press "Continue"
     And I should see "Congratulations - end of lesson reached"
@@ -69,6 +70,7 @@ Feature: In a lesson activity, I need to edit pages in the lesson taking into ac
       | Your answer | 2#7 |
     And I press "Submit"
     Then I should not see "Correct answer"
+    And I should see "2#7"
     And I should see "Incorrect answer"
     And I press "Continue"
     And I should see "Congratulations - end of lesson reached"
@@ -81,6 +83,7 @@ Feature: In a lesson activity, I need to edit pages in the lesson taking into ac
       | Your answer | 2#87 |
     And I press "Submit"
     Then I should see "Correct answer"
+    And I should see "2#87"
     And I should not see "Incorrect answer"
     And I press "Continue"
     And I should see "Congratulations - end of lesson reached"
@@ -96,7 +99,7 @@ Feature: In a lesson activity, I need to edit pages in the lesson taking into ac
       | component       | stringid | value |
       | core_langconfig | decsep   | ,     |
     When I am on the "Test lesson name" "lesson activity" page
-    Then I click on "Edit" "link" in the "region-main" "region"
+    And I edit the lesson
     And I follow "Hardest question ever"
     Then I should see "2,87"
     And I should see "2,1:2,8"
@@ -106,6 +109,7 @@ Feature: In a lesson activity, I need to edit pages in the lesson taking into ac
       | Your answer | 2,7 |
     And I press "Submit"
     And I should see "Incorrect answer"
+    And I should see "2,7"
     And I should not see "Correct answer"
     And I press "Continue"
     And I should see "Congratulations - end of lesson reached"

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'it', version '3.11'.
+ * Strings for component 'cachestore_file', language 'it', version '4.1'.
  *
  * @package     cachestore_file
  * @category    string
@@ -25,8 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['asyncpurge'] = 'Svuotamento asincrono directory';
+$string['asyncpurge_help'] = 'Consente la creazione della nuova directory con uso di cache revison e l’eliminazione asincrona della directory vecchia tramite elaborazione pianificata.';
 $string['autocreate'] = 'Crea cartella automaticamente';
 $string['autocreate_help'] = 'Consente di creare automaticamente la cartella specificata qualora non sia già esistente.';
+$string['lockwait'] = 'Tempo massimo di attesa del lock';
+$string['lockwait_help'] = 'Il tempo massimo di attesa di un lock esclusivo prima di una lettura o scrittura in cache di una chiave. L\'impostazione verrà utilizzata solo per le definizioni di cache che richiedono il lock in scrittura o lettura.';
 $string['path'] = 'Percorso cache';
 $string['path_help'] = 'La cartella da usare per memorizzare i file di questo cache store. Lasciando il campo vuoto, una cartella verrà creata automaticamente all\'interno della cartella moodledata. Questa cartella potrà essere usata per puntare ad un file sore posizionata su un disco veloce, come ad esempio un disco in memoria.';
 $string['pluginname'] = 'File cache';
@@ -42,3 +46,4 @@ Si consiglia di attivare l\'impostazione solo nei seguenti casi:
 
 * è certo che il numero di elementi in cache sarà sufficientemente piccolo da non raggiungere i limiti del file system in uso
 * i dati da inserire nella cache non richiedono troppe risorse per essere generati, nel qual caso per evitare problemi è preferibile lasciare l\'impostazione al suo default.';
+$string['task_asyncpurge'] = 'Eliminazione asincrona delle vecchie cartelle di revisione della cache del file store';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'ar', version '3.11'.
+ * Strings for component 'choicegroup', language 'ar', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -64,6 +64,7 @@ $string['limitanswers'] = 'حدد عدد الاستجابات المسموح ب�
 $string['members/max'] = 'الأعضاء/السعة';
 $string['modulename'] = 'اختيار مجموعة';
 $string['modulename_help'] = 'يسمح هذا النشاط للطلاب باختيار مجموعة للانضمام لها.';
+$string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'الاختيارات';
 $string['moveselectedusersto'] = 'أنقل المستخدمين الذين تم اختيارهم إلى';
 $string['mustchooseone'] = 'ينبغي عليك اختيار الإجابة قبل الحفظ. لم يُحفظ شيء.';

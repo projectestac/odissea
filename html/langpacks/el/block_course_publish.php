@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_publish', language 'el', version '3.11'.
+ * Strings for component 'block_course_publish', language 'el', version '4.1'.
  *
  * @package     block_course_publish
  * @category    string
@@ -29,15 +29,15 @@ $string['appid'] = 'Αναγνωριστικό εφαρμογής κινητού
 $string['callbackurl'] = 'Διεύθυνση URL συνάρτησης επανάκλησης (callback)';
 $string['course_publish:addinstance'] = 'Προσθήκη ενός μπλοκ δημοσίευσης μαθημάτων';
 $string['course_publish:myaddinstance'] = 'Προσθήκη ενός μπλοκ δημοσίευσης μαθημάτων στην αρχική μου σελίδα';
-$string['descconfig'] = 'Περιγραφή του τμήματος διαμόρφωσης/ρυθμίσεων';
-$string['descfoo'] = 'Περιγραφή διαμόρφωσης/ρυθμίσεων';
+$string['descconfig'] = 'Περιγραφή της ενότητας ρυθμίσεων';
+$string['descfoo'] = 'Περιγραφή ρυθμίσεων';
 $string['description'] = 'Περιγραφή';
-$string['headerconfig'] = 'Επικεφαλίδα τμήματος διαμόρφωσης/ρυθμίσεων';
-$string['labelfoo'] = 'Ταμπέλα διαμόρφωσης/ρυθμίσεων';
+$string['headerconfig'] = 'Επικεφαλίδα ενότητας ρυθμίσεων';
+$string['labelfoo'] = 'Ταμπέλα ρυθμίσεων';
 $string['link'] = 'Σύνδεσμος';
 $string['loginwithfacebook'] = 'Σύνδεση με Facebook';
 $string['message'] = 'Μήνυμα';
 $string['pageaccesstoken'] = 'ΚουπόνιΠρόσβασηςΣελίδας';
-$string['pageid'] = 'Αναγνωριστικόσελίδας';
+$string['pageid'] = 'ΑναγνωριστικόΣελίδας';
 $string['pluginname'] = 'Δημοσίευση μαθήματος';
 $string['secretkey'] = 'Μυστικό κλειδί';

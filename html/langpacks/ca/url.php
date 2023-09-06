@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ca', version '3.11'.
+ * Strings for component 'url', language 'ca', version '4.1'.
  *
  * @package     url
  * @category    string
@@ -47,6 +47,8 @@ $string['displayselectexplain'] = 'Trieu el tipus de visualització. No tots els
 $string['externalurl'] = 'URL extern';
 $string['framesize'] = 'Alçada del marc';
 $string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta pels recursos d\'URL en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['invalidstoredurl'] = 'No es pot visualitzar aquest recurs: l\'URL és invàlid.';
 $string['invalidurl'] = 'L\'URL que heu introduït no és vàlid';
 $string['modulename'] = 'URL';
@@ -55,6 +57,7 @@ $string['modulename_help'] = 'El mòdul URL permet al professor subministrar un 
 Hi ha certes opcions de visualització per a l\'URL, com ara incrustat o en una nova finestra, i opcions avançades per passar informació —com ara el nom de l\'estudiant— a l\'URL, si és necessari.
 
 Tingueu en compte que els URL també es poden afegir a qualsevol altre recurs o activitat a través de l\'editor de textos.';
+$string['modulename_link'] = 'mod/url/view';
 $string['modulenameplural'] = 'URL';
 $string['page-mod-url-x'] = 'Qualsevol pàgina del mòdul URL';
 $string['parameterinfo'] = '&amp;parameter=variable';

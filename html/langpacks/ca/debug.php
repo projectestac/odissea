@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'ca', version '3.11'.
+ * Strings for component 'debug', language 'ca', version '4.1'.
  *
  * @package     debug
  * @category    string
@@ -55,6 +55,7 @@ $string['notables'] = 'Cap taula';
 $string['outputbuffer'] = 'Memòria intermèdia de sortida';
 $string['phpvaroff'] = 'La variable de servidor PHP \'{$a->name}\' hauria d\'estar desactivada - {$a->link}';
 $string['phpvaron'] = 'La variable de servidor PHP \'{$a->name}\' no s\'ha activat {$a->link}';
+$string['reactive_saveingwarning'] = 'Atenció: Editar l\'estat pot causar resultats inesperats.';
 $string['sessionmissing'] = 'S\'ha perdut de la sessió l\'objecte {$a}';
 $string['sqlrelyonobsoletetable'] = 'Aquesta SQL es basa en taules obsoletes: {$a}!  El codi ha de ser arreglat per un desenvolupador.';
 $string['withoutversion'] = 'El fitxer principal version.php s\'ha perdut, no és llegible o s\'ha espatllat.';

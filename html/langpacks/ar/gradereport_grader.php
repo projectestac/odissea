@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ar', version '3.11'.
+ * Strings for component 'gradereport_grader', language 'ar', version '4.1'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -36,7 +36,7 @@ $string['grader:view'] = 'معاينة تقرير المقيم';
 $string['overriddengrade'] = 'علامة تم تجاوزها';
 $string['pluginname'] = 'تقرير المُقِّيم';
 $string['preferences'] = 'تفضيلات تقرير المقيم';
-$string['privacy:metadata:preference:grade_report_aggregationposition'] = 'فيما إذا كان ينبغي عَرض عمودَي إجمالي التصنيف وإجمالي المقرر الدراسي عند بداية التقرير أو نهايته';
+$string['privacy:metadata:preference:grade_report_aggregationposition'] = 'فيما إذا كان ينبغي عَرض عمودَي إجمالي التصنيف وإجمالي المساق عند بداية التقرير أو نهايته';
 $string['privacy:metadata:preference:grade_report_averagesdecimalpoints'] = 'عدد المراتب العشرية المستعملة لعرض المتوسطات، أو فيما إذا كان إعداد المراتب العشرية العمومي للتصنيف أو مفردة التقييم هو المستعمل (وراثة)';
 $string['privacy:metadata:preference:grade_report_averagesdisplaytype'] = 'فيما إذا كان المتوسط (المعدل) معروضاً بقيمه الحقيقية، نسبه المئوية، أو بالحروف، أو أن طريقة العرض للتصنيف أو مفردة التقييم هي المستعملة (وراثة)';
 $string['privacy:metadata:preference:grade_report_enableajax'] = 'فيما إذا كان ينبغي إضافة مستوى من وظائف AJAX إلى تقرير المقيم، لتبسيط وتسريع العمليات الشائعة';
@@ -57,7 +57,7 @@ $string['privacy:metadata:preference:grade_report_showquickfeedback'] = 'فيم�
 $string['privacy:metadata:preference:grade_report_showranges'] = 'فيما إذا كان ينبغي عرض سطر إضافي يحتوي على المدى لكل تصنيف أو مفردة تقييم';
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'فيما إذا كان ينبغي إظهار صورة المستخدم بجوار اسمه';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'عدد الطلبة المعروضين في الصفحة في تقرير المقيِّم';
-$string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'لديك بعض التصنيفات المطوية في سجل التقديرات للمقرر الدراسي "{$a->name}"';
-$string['summarygrader'] = 'جدول فيه أسماء الطلاب في العمود الأول مع النشاطات القابلة للتقييم منظمة في مجموعات حسب المقرر الدراسي والتصنيف عند رأسه.';
+$string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'لديك بعض التصنيفات المطوية في سجل التقديرات للمساق الدراسي "{$a->name}"';
+$string['summarygrader'] = 'جدول فيه أسماء الطلاب في العمود الأول مع النشاطات القابلة للتقييم منظمة في مجموعات حسب المساق والتصنيف عند رأسه.';
 $string['useractivityfeedback'] = 'إفادة {$a}';
 $string['useractivitygrade'] = 'علامة {$a}';

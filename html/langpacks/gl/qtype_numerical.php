@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'gl', version '3.11'.
+ * Strings for component 'qtype_numerical', language 'gl', version '4.1'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -69,7 +69,7 @@ $string['pluginname_link'] = 'pregunta/tipo/numérica';
 $string['pluginnameadding'] = 'Engadindo unha pregunta numérica';
 $string['pluginnameediting'] = 'Engadir unha pregunta numérica';
 $string['pluginnamesummary'] = 'Permite unha resposta numérica, posibelmente con unidades, que se cualifica comparando contra varios modelos de respostas, posibelmente con tolerancias.';
-$string['privacy:metadata'] = 'O engadido de pregunta numérica non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O complemento de tipo de pregunta numérica permite aos autores de preguntas estabelecer opcións predeterminadas como preferencias do usuario.';
 $string['privacy:preference:defaultmark'] = 'A marca predeterminada estabelecida para unha determinada pregunta.';
 $string['privacy:preference:multichoicedisplay'] = 'Indica se as unidades se amosan como elemento de entrada de texto, selección de escolla múltiple ou menú despregábel.';
 $string['privacy:preference:penalty'] = 'A penalización por cada intento incorrecto cando se executan preguntas mediante o comportamento «Interactivo con intentos múltiples» ou «Modo adaptativo».';
@@ -109,13 +109,6 @@ $string['unitposition'] = 'As unidades van';
 $string['units'] = 'Unidades';
 $string['unitselect'] = 'un menú despregábel';
 $string['unitx'] = 'Unidade {no}';
-$string['validnumberformats'] = 'Formatos válidos de número';
-$string['validnumberformats_help'] = '* números regulares 13500.67, 13 500.67, 13500,67 ou 13 500,67
-
-* se os axustes do paquete de idioma (langconfig.php file) utiliza a coma (,) como separador de milleiros poña *sempre* o punto (.) decimal como en 13,500.67 : 13,500.
-
-* para a forma do expoñente, é dicir 1.350067 * 10<sup>4</sup>, utilice 1.350067 E4 : 1.350067 E04';
-$string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 ou 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} debe ser un número.';
 $string['xmustnotbenumeric'] = '{$a} non pode ser un número.';
 $string['youmustenteramultiplierhere'] = 'Introduza aquí un multiplicador.';

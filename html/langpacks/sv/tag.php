@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'sv', version '3.11'.
+ * Strings for component 'tag', language 'sv', version '4.1'.
  *
  * @package     tag
  * @category    string
@@ -78,7 +78,9 @@ $string['helprelatedtags'] = 'Kommaseparerade etiketter som är relaterade';
 $string['id'] = 'id';
 $string['inalltagcoll'] = 'Överallt';
 $string['inputstandardtags'] = 'Ange en kommaseparerad lista med nya etiketter';
+$string['itemid'] = 'ID';
 $string['itemstaggedwith'] = '{$a->tagarea} taggades med "{$a->tag}"';
+$string['itemtype'] = 'Typ';
 $string['lesstags'] = 'mindre...';
 $string['managestandardtags'] = 'Hantera standardetiketter';
 $string['managetagcolls'] = 'Hantera etikettsamlingar';
@@ -87,6 +89,7 @@ $string['moretags'] = 'mer...';
 $string['name'] = 'Namn på etikett';
 $string['namesalreadybeeingused'] = 'Namn på etiketter som redan är tagna i bruk';
 $string['nameuseddocombine'] = 'Etikettnamnet används redan. Vill du slå ihop dessa etiketter?';
+$string['namewithlink'] = 'Etikettnamn med länk';
 $string['newcollnamefor'] = 'Nytt namn för etikettsamling {$a}';
 $string['newnamefor'] = 'Nytt namn för etikett {$a}';
 $string['nextpage'] = 'Mer';
@@ -144,6 +147,7 @@ $string['standardsuggest'] = 'Föreslå';
 $string['standardtag'] = 'Standard';
 $string['suredeletecoll'] = 'Är du säker på att du vill ta bort etikettsamlingen "{$a}"?';
 $string['tag'] = 'Rubrik för intresse';
+$string['tagarea'] = 'Etikettområde';
 $string['tagarea_blog_external'] = 'Externa blogginlägg';
 $string['tagarea_course'] = 'Kurser';
 $string['tagarea_course_modules'] = 'Aktiviteter och resurser';
@@ -152,10 +156,12 @@ $string['tagarea_user'] = 'Användarintressen';
 $string['tagareaenabled'] = 'Aktiverad';
 $string['tagareaname'] = 'Namn';
 $string['tagareas'] = 'Etikettområden';
+$string['tagauthor'] = 'Etikettförfattare';
 $string['tagcollection'] = 'Etikettsamling';
 $string['tagcollection_help'] = 'Etikettsamlingar är uppsättningar med etiketter för olika områden. En samling standardetiketter kan till exempel användas för att tagga kurser, medan användarintressen och etiketter för blogginlägg hålls i en separat samling. När en användare klickar på en etikett visas bara objekt med den etiketten i samma samling. Etiketter kan automatiskt läggas till i en samling enligt det taggade området eller så kan de läggas till manuellt som standardtaggar.';
 $string['tagcollections'] = 'Etikettsamlingar';
 $string['tagdescription'] = 'Beskrivning av rubrik för intresse';
+$string['taginstance'] = 'Etikettinstans';
 $string['tags'] = 'Etiketter';
 $string['tagsaredisabled'] = 'Etiketter inaktiverade';
 $string['thingstaggedwith'] = '"{$a->name}" har använts {$a->count} gånger';

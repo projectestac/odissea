@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_coursefiles', language 'ar', version '3.11'.
+ * Strings for component 'repository_coursefiles', language 'ar', version '4.1'.
  *
  * @package     repository_coursefiles
  * @category    string
@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'تهيئة مستودع ملفات المقرر الموروثة';
-$string['coursefiles:view'] = 'استعمال ملحق مستودع ملفات المقرر الدراسي';
+$string['configplugin'] = 'تهيئة مستودع ملفات المساق الموروثة';
+$string['coursefiles:view'] = 'استعمال ملحق مستودع ملفات المساق';
 $string['emptyfilelist'] = 'لا ملفات لمعاينتها';
 $string['notitle'] = 'بلا عنوان';
-$string['pluginname'] = 'ملفات المقرر الموروثة';
-$string['pluginname_help'] = 'ملفات المقرر الموروثة';
-$string['privacy:metadata'] = 'إن ملحق مستودع ملفات المقرر الموروثة لا يخزن أي بيانات شخصية.';
+$string['pluginname'] = 'ملفات المساق الموروثة';
+$string['pluginname_help'] = 'ملفات المساق الموروثة';
+$string['privacy:metadata'] = 'إن ملحق مستودع ملفات المساق الموروثة لا يخزن أي بيانات شخصية.';
 $string['remember'] = 'تذكرني';

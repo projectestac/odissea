@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ar', version '3.11'.
+ * Strings for component 'auth_mnet', language 'ar', version '4.1'.
  *
  * @package     auth_mnet
  * @category    string
@@ -78,9 +78,9 @@ $string['privacy:metadata:mnet_external:username'] = 'اسم الدخول لهذ
 $string['privacy:metadata:mnet_external:yahoo'] = 'مُعرَّف Yahoo للمستخدم';
 $string['privacy:metadata:mnet_log'] = 'تفاصيل عن الإجراءات البعيدة المتخذة من قبل مستخدم محلي وموثقة في نظام بعيد';
 $string['privacy:metadata:mnet_log:action'] = 'الإجراء المتخذ من قبل المستخدم';
-$string['privacy:metadata:mnet_log:cmid'] = 'مُعرَّف وحدة المقرر الدراسي';
-$string['privacy:metadata:mnet_log:course'] = 'مُعرَّف المقرر الدراسي في النظام البعيد حيث وقع الإجراء';
-$string['privacy:metadata:mnet_log:coursename'] = 'الاسم الكامل للممقرر الدراسي في النظام البعيد حيث وقع الإجراء';
+$string['privacy:metadata:mnet_log:cmid'] = 'مُعرَّف وحدة المساق';
+$string['privacy:metadata:mnet_log:course'] = 'مُعرَّف المساق في النظام البعيد حيث وقع الإجراء';
+$string['privacy:metadata:mnet_log:coursename'] = 'الاسم الكامل للممساق الدراسي في النظام البعيد حيث وقع الإجراء';
 $string['privacy:metadata:mnet_log:hostid'] = 'مُعرَّف شبكة مودل للنظام البعيد';
 $string['privacy:metadata:mnet_log:info'] = 'معلومات إضافية عن الإجراء';
 $string['privacy:metadata:mnet_log:ip'] = 'عنوان IP المستعمل وقت وقوع الإجراء';

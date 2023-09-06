@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_number', language 'es', version '3.11'.
+ * Strings for component 'datafield_number', language 'es', version '4.1'.
  *
  * @package     datafield_number
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo numérico';
+$string['fieldtypelabel'] = 'Número';
 $string['pluginname'] = 'Número';
 $string['privacy:metadata'] = 'El componente de campo de número no almacena ningún dato personal, utiliza tabla definidas en mod_data.';

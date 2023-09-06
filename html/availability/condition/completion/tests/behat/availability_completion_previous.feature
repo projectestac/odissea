@@ -32,7 +32,7 @@ Feature: Confirm that availability_completion works with previous activity setti
     And I expand all fieldsets
     And I click on "Add restriction..." "button"
     And I click on "Activity completion" "button" in the "Add restriction..." "dialogue"
-    And I click on "Displayed greyed-out if user does not meet this condition • Click to hide" "link"
+    And I click on "Displayed if student doesn't meet this condition • Click to hide" "link"
     And I set the field "Activity or resource" to "Previous activity with completion"
     And I press "Save and return to course"
     Then I should see "Not available unless: The previous activity with completion" in the "region-main" "region"
@@ -42,6 +42,7 @@ Feature: Confirm that availability_completion works with previous activity setti
 
     # Remove Page 2 and check Page3 depends now on Page1.
     When I turn editing mode on
+    And I change window size to "large"
     And I delete "Page2" activity
     And I turn editing mode off
     Then I should see "Not available unless: The activity Page1 is marked complete" in the "region-main" "region"
@@ -57,7 +58,7 @@ Feature: Confirm that availability_completion works with previous activity setti
     And I expand all fieldsets
     And I click on "Add restriction..." "button"
     And I click on "Activity completion" "button" in the "Add restriction..." "dialogue"
-    And I click on "Displayed greyed-out if user does not meet this condition • Click to hide" "link"
+    And I click on "Displayed if student doesn't meet this condition • Click to hide" "link"
     And I set the field "Activity or resource" to "Previous activity with completion"
     And I press "Save and return to course"
     Then I should see "Not available unless: The previous activity with completion" in the "region-main" "region"
@@ -82,7 +83,7 @@ Feature: Confirm that availability_completion works with previous activity setti
     And I expand all fieldsets
     And I click on "Add restriction..." "button"
     And I click on "Activity completion" "button" in the "Add restriction..." "dialogue"
-    And I click on "Displayed greyed-out if user does not meet this condition • Click to hide" "link"
+    And I click on "Displayed if student doesn't meet this condition • Click to hide" "link"
     And I set the field "Activity or resource" to "Previous activity with completion"
     And I press "Save and return to course"
     Then I should see "Not available unless: The previous activity with completion" in the "region-main" "region"
@@ -92,6 +93,7 @@ Feature: Confirm that availability_completion works with previous activity setti
 
     # Test if I disable completion tracking on Page2 section 5 depends on Page2.
     When I turn editing mode on
+    And I change window size to "large"
     When I open "Page2" actions menu
     And I click on "Edit settings" "link" in the "Page2" activity
     And I set the following fields to these values:
@@ -110,7 +112,7 @@ Feature: Confirm that availability_completion works with previous activity setti
     And I expand all fieldsets
     And I click on "Add restriction..." "button"
     And I click on "Activity completion" "button" in the "Add restriction..." "dialogue"
-    And I click on "Displayed greyed-out if user does not meet this condition • Click to hide" "link"
+    And I click on "Displayed if student doesn't meet this condition • Click to hide" "link"
     And I set the field "Activity or resource" to "Previous activity with completion"
     And I press "Save changes"
     Then I should see "Not available unless: The previous activity with completion" in the "region-main" "region"
@@ -120,6 +122,7 @@ Feature: Confirm that availability_completion works with previous activity setti
 
     # Remove Page 2 and check Section 4 depends now on Page1.
     When I turn editing mode on
+    And I change window size to "large"
     And I delete "Page2" activity
     And I turn editing mode off
     Then I should see "Not available unless: The activity Page1 is marked complete" in the "region-main" "region"
@@ -135,7 +138,7 @@ Feature: Confirm that availability_completion works with previous activity setti
     And I expand all fieldsets
     And I click on "Add restriction..." "button"
     And I click on "Activity completion" "button" in the "Add restriction..." "dialogue"
-    And I click on "Displayed greyed-out if user does not meet this condition • Click to hide" "link"
+    And I click on "Displayed if student doesn't meet this condition • Click to hide" "link"
     Then the "Activity or resource" select box should not contain "Previous activity with completion"
 
     # Set Page2 restriction to Previous Activity with completion and delete Page1.
@@ -145,7 +148,7 @@ Feature: Confirm that availability_completion works with previous activity setti
     And I expand all fieldsets
     And I click on "Add restriction..." "button"
     And I click on "Activity completion" "button" in the "Add restriction..." "dialogue"
-    And I click on "Displayed greyed-out if user does not meet this condition • Click to hide" "link"
+    And I click on "Displayed if student doesn't meet this condition • Click to hide" "link"
     And I set the field "Activity or resource" to "Previous activity with completion"
     And I press "Save and return to course"
     Then I should see "Not available unless: The previous activity with completion" in the "region-main" "region"
@@ -160,13 +163,14 @@ Feature: Confirm that availability_completion works with previous activity setti
   Scenario: Test previous activities on empty sections
     Given I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode on
+    And I change window size to "large"
 
     # Set section 2 restriction to Previous Activity with completion.
     When I edit the section "2"
     And I expand all fieldsets
     And I click on "Add restriction..." "button"
     And I click on "Activity completion" "button" in the "Add restriction..." "dialogue"
-    And I click on "Displayed greyed-out if user does not meet this condition • Click to hide" "link"
+    And I click on "Displayed if student doesn't meet this condition • Click to hide" "link"
     And I set the field "Activity or resource" to "Previous activity with completion"
     And I press "Save changes"
     Then I should see "Not available unless: The previous activity with completion" in the "region-main" "region"
@@ -180,7 +184,7 @@ Feature: Confirm that availability_completion works with previous activity setti
     And I expand all fieldsets
     And I click on "Add restriction..." "button"
     And I click on "Activity completion" "button" in the "Add restriction..." "dialogue"
-    And I click on "Displayed greyed-out if user does not meet this condition • Click to hide" "link"
+    And I click on "Displayed if student doesn't meet this condition • Click to hide" "link"
     And I set the field "Activity or resource" to "Previous activity with completion"
     And I press "Save changes"
     Then I should see "Not available unless: The previous activity with completion" in the "region-main" "region"

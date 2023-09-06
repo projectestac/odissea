@@ -50,13 +50,13 @@ if ($message) {
 
 list ($course, $cm) = get_course_and_cm_from_cmid($id, 'feedback');
 if (! $feedback = $DB->get_record("feedback", array("id"=>$cm->instance))) {
-    print_error('invalidcoursemodule');
+    throw new \moodle_exception('invalidcoursemodule');
 }
 
 //this page only can be shown on nonanonymous feedbacks in courses
 //we should never reach this page
 if ($feedback->anonymous != FEEDBACK_ANONYMOUS_NO OR $feedback->course == SITEID) {
-    print_error('error');
+    throw new \moodle_exception('error');
 }
 
 $url = new moodle_url('/mod/feedback/show_nonrespondents.php', array('id'=>$cm->id));
@@ -70,8 +70,10 @@ $coursecontext = context_course::instance($course->id);
 
 require_login($course, true, $cm);
 
+$actionbar = new \mod_feedback\output\responses_action_bar($cm->id, $url);
+
 if (($formdata = data_submitted()) AND !confirm_sesskey()) {
-    print_error('invalidsesskey');
+    throw new \moodle_exception('invalidsesskey');
 }
 
 require_capability('mod/feedback:viewreports', $context);
@@ -135,10 +137,19 @@ if ($action == 'sendmessage' AND $canbulkmessaging) {
 /// Print the page header
 $PAGE->set_heading($course->fullname);
 $PAGE->set_title($feedback->name);
+$PAGE->set_secondary_active_tab('responses');
+if ($responsesnode = $PAGE->settingsnav->find('responses', navigation_node::TYPE_CUSTOM)) {
+    $responsesnode->make_active();
+}
+$PAGE->activityheader->set_attrs([
+    'hidecompletion' => true,
+    'description' => ''
+]);
 echo $OUTPUT->header();
-echo $OUTPUT->heading(format_string($feedback->name));
 
-require('tabs.php');
+/** @var \mod_feedback\output\renderer $renderer */
+$renderer = $PAGE->get_renderer('mod_feedback');
+echo $renderer->main_action_bar($actionbar);
 
 /// Print the main part of the page
 ///////////////////////////////////////////////////////////////////////////

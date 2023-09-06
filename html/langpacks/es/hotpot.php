@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'es', version '3.11'.
+ * Strings for component 'hotpot', language 'es', version '4.1'.
  *
  * @package     hotpot
  * @category    string
@@ -80,6 +80,7 @@ $string['completed'] = 'Finalizada';
 $string['completioncompleted'] = 'Requerir estado completo';
 $string['completionmingrade'] = 'Requiere una calificación mínima';
 $string['completionpass'] = 'Requiere una nota de aprobado.';
+$string['completionwarning'] = 'Estos campos están deshabilitados si el límite de calificación para esta calificación fuera "Sin calificación" o la ponderación de calificación fuera "Sin calificación"';
 $string['configbodystyles'] = 'Por defecto, los estilos del tema gráfico de Moodle anularán los estilos de la actividad HotPot. Sin embargo, cualquiera de los estilos HotPot elegidos aquí tendrán prioridad sobre los estilos del tema de Moodle,';
 $string['configenablecache'] = 'Mantener el caché de HotPot puede aumentar en gran manera la velocidad de entrega de las preguntas a los estudiantes.';
 $string['configenablecron'] = 'Especifique los horarios, en su zona horaria, en los que el script del cron de HotPot debe ejecutarse';
@@ -178,6 +179,21 @@ $string['entrypage_help'] = '¿Se mostrará a los estudiantes una página inicia
 Una página de entrada se mostrará siempre al profesor con el fin de facilitar el acceso a los informes y editar las páginas de preguntas.';
 $string['entrypagehdr'] = 'Página de entrada';
 $string['entrytext'] = 'Texto de la página de entrada';
+$string['event_attempt_reviewed'] = 'Intento HotPot revisado';
+$string['event_attempt_reviewed_description'] = 'El usuario con id "{$a->userid}" revisó un intento de la actividad "hotpot" con ID del módulo del curso "{$a->cmid}"';
+$string['event_attempt_reviewed_explanation'] = 'Un usuario recién revisó un intento de una actividad HotPot';
+$string['event_attempt_started'] = 'Intento HotPot iniciado';
+$string['event_attempt_started_description'] = 'El usuario con id "{$a->userid}" inició un intento a la actividad "hotpot" con ID del módulo del curso "{$a->cmid}"';
+$string['event_attempt_started_explanation'] = 'Un usuario recién inició un intento a una actividad HotPot';
+$string['event_attempt_submitted'] = 'Intento HotPot enviado';
+$string['event_attempt_submitted_description'] = 'El usuario con id "{$a->userid}" envió un intento a la actividad "hotpot" con ID de módulo del curso "{$a->cmid}"';
+$string['event_attempt_submitted_explanation'] = 'Un usuario recién envió un intento a una actividad HotPot';
+$string['event_base'] = 'Evento HotPot detectado';
+$string['event_base_description'] = 'El usuario con id "{$a->userid}" inició un evento en la actividad "hotpot" con ID de módulo del curso "{$a->cmid}"';
+$string['event_base_explanation'] = 'Un evento fue detectado por el módulo HotPot';
+$string['event_report_viewed'] = 'Informe de HotPot visto';
+$string['event_report_viewed_description'] = 'El usuario con ID "{$a->userid}" vió un informe con intentos en la actividad "hotpot" con ID de curso "{$a->cmid}"';
+$string['event_report_viewed_explanation'] = 'Un usuario acaba de ver un informe de intentos en una actividad HotPot';
 $string['exit_areyouok'] = '¡Hola!, ¿aún está ahí?';
 $string['exit_attemptscore'] = 'Su puntuación de este intento fue {$a}';
 $string['exit_course'] = 'Curso';
@@ -317,6 +333,7 @@ $string['maxeventlength'] = 'Número máximo de días para un único evento de c
 $string['mediafilter_hotpot'] = 'Filtro de medios para HotPot';
 $string['mediafilter_moodle'] = 'Filtros de medios estándar de Moodle';
 $string['migratingfiles'] = 'Migración de los ficheros de cuestionarios de Hot Potatoes';
+$string['migratinglogs'] = 'Migrando bitácoras HotPot';
 $string['missingsourcetype'] = 'A este HotPot le falta el tipo de archivo';
 $string['modulename'] = 'HotPot';
 $string['modulename_help'] = 'El módulo HotPot le permite a los profesores distribuir materiales de aprendizaje interactivos a sus estudiantes vía Moodle y ver reportes sobre las respuestas y resultados de sus estudiantes.
@@ -330,6 +347,7 @@ Una actividad HotPot puede manejar ejercicios creados con los siguientes program
 * Xerte
 * iSpring
 * acualquier editor de HTML';
+$string['modulename_link'] = 'mod/hotpot/view';
 $string['modulenameplural'] = 'Hot Potatoes Quizzes';
 $string['nameadd'] = 'Nombre';
 $string['nameadd_help'] = 'El nombre puede ser un texto específico introducido por el profesor o puede ser generado de forma automática.
@@ -382,6 +400,7 @@ $string['noreview'] = 'Lo sentimos, no tiene permiso para ver los detalles de es
 $string['noreviewafterclose'] = 'Lo sentimos, este cuestionario está ya cerrado. No se le permiten ver los detalles de este intento.';
 $string['noreviewbeforeclose'] = 'Lo sentimos, este cuestionario está ya cerrado. No se le permite ver los detalles de este intento hasta {$a}';
 $string['nosourcefilesettings'] = 'A este HotPot le falta la información de archivo';
+$string['notattemptedyet'] = 'Aun no intentado';
 $string['notavailable'] = 'Lo sentimos, esta actividad no está actualmente isponible para usted.';
 $string['outputformat'] = 'Formato de salida';
 $string['outputformat_best'] = 'el mejor posible';
@@ -390,6 +409,42 @@ $string['outputformat_help'] = 'El formato de salida especifica cómo se present
 Los formatos de salida disponibles dependen del tipo de archivo de origen. Algunos tipos de archivos de origen tienen solo un formato de salida, mientras que otros tienen varios.
 
 "El mejor posible" mostrará el contenido usando el formato de salida más óptimo según el navegador del estudiante.';
+$string['outputformat_hp_6_jcloze_html'] = 'JCloze(v6) desde html';
+$string['outputformat_hp_6_jcloze_html_dropdown'] = 'Desplegable desde HTML';
+$string['outputformat_hp_6_jcloze_html_findit_a'] = 'Findit (a) desde html';
+$string['outputformat_hp_6_jcloze_html_findit_b'] = 'Findit (b) desde html';
+$string['outputformat_hp_6_jcloze_html_jgloss'] = 'JGloss desde HTML';
+$string['outputformat_hp_6_jcloze_xml_anctscan'] = 'ANCT-Scan desde HP6 JCloze xml';
+$string['outputformat_hp_6_jcloze_xml_dropdown'] = 'Desplegable desde HP6 JCloze xml';
+$string['outputformat_hp_6_jcloze_xml_findit_a'] = 'FindIt (a) desde HP6 JCloze xml';
+$string['outputformat_hp_6_jcloze_xml_findit_b'] = 'FindIt (b)  desde HP6 JCloze xml';
+$string['outputformat_hp_6_jcloze_xml_jgloss'] = 'JGloss desde HP6 JCloze xml';
+$string['outputformat_hp_6_jcloze_xml_v6'] = 'JCloze (v6) desde HP6 xml';
+$string['outputformat_hp_6_jcloze_xml_v6_autoadvance'] = 'JCloze (v6) desde HP6 xml (Auto-avance)';
+$string['outputformat_hp_6_jcross_html'] = 'JCross (v6) desde html';
+$string['outputformat_hp_6_jcross_xml_v6'] = 'JCross (v6) desde xml';
+$string['outputformat_hp_6_jmatch_html'] = 'JMatch (v6) desde html';
+$string['outputformat_hp_6_jmatch_html_sort'] = 'JMatch Sort desde html';
+$string['outputformat_hp_6_jmatch_xml_flashcard'] = 'JMatch (flashcard) desde xml';
+$string['outputformat_hp_6_jmatch_xml_jmemori'] = 'JMemori desde xml';
+$string['outputformat_hp_6_jmatch_xml_sort'] = 'JMatch Sort desde xml';
+$string['outputformat_hp_6_jmatch_xml_v6'] = 'JMatch (v6) desde xml';
+$string['outputformat_hp_6_jmatch_xml_v6_plus'] = 'JMatch (v6+) desde xml';
+$string['outputformat_hp_6_jmix_html'] = 'JMix (v6) desde html';
+$string['outputformat_hp_6_jmix_xml_v6'] = 'JMix (v6) desde xml';
+$string['outputformat_hp_6_jmix_xml_v6_plus'] = 'JMix (v6+) desde xml';
+$string['outputformat_hp_6_jmix_xml_v6_plus_deluxe'] = 'JMix (v6+ con prefijo, sufijo con distractores) desde xml';
+$string['outputformat_hp_6_jmix_xml_v6_plus_keypress'] = 'JMix (v6+ con presionar tecla) desde xml';
+$string['outputformat_hp_6_jquiz_html'] = 'JQuiz (v6) desde html';
+$string['outputformat_hp_6_jquiz_xml_v6'] = 'JQuiz (v6) desde xml';
+$string['outputformat_hp_6_jquiz_xml_v6_autoadvance'] = 'JQuiz (v6) desde xml  (Auto-avanzar)';
+$string['outputformat_hp_6_jquiz_xml_v6_exam'] = 'JQuiz (v6) desde xml (Examen)';
+$string['outputformat_hp_6_rhubarb_html'] = 'Rhubarb (v6) desde html';
+$string['outputformat_hp_6_rhubarb_xml'] = 'Rhubarb (v6) desde xml';
+$string['outputformat_hp_6_sequitur_html'] = 'Sequitur (v6) desde html';
+$string['outputformat_hp_6_sequitur_html_incremental'] = 'Sequitur (v6) desde html, calificación incremental';
+$string['outputformat_hp_6_sequitur_xml'] = 'Sequitur (v6) desde xml';
+$string['outputformat_hp_6_sequitur_xml_incremental'] = 'Sequitur (v6) desde xml, calificación incremental';
 $string['outputformat_html_ispring'] = 'Archivo HTML iSpring';
 $string['outputformat_html_xerte'] = 'Archivo Xerte';
 $string['outputformat_html_xhtml'] = 'Archivo HTML estándar';
@@ -400,10 +455,29 @@ $string['percent'] = 'Porcentaje';
 $string['pluginadministration'] = 'Administración de HotPot';
 $string['pluginname'] = 'Hot Potatoes Quiz';
 $string['pressoktocontinue'] = 'Presione OK para cotinuar, o Cancelar para permanecer en la página actual.';
+$string['privacy'] = 'Privacidad de resultados';
+$string['privacy:metadata:hotpot_attempts'] = 'Información acerca de los intentos del usuario en actividades Hotot';
+$string['privacy:metadata:hotpot_attempts:attempt'] = 'El intento que indica el número de intentos por el usuario';
+$string['privacy:metadata:hotpot_attempts:clickreportid'] = 'El ID del informe de acciones que indica el ID de la acción del usuario';
+$string['privacy:metadata:hotpot_attempts:endtime'] = 'La hora_de_terminación que indica cuando fue terminado el intento por el usuario';
+$string['privacy:metadata:hotpot_attempts:hotpotid'] = 'La ID de los intentos de actividades HotPot';
+$string['privacy:metadata:hotpot_attempts:penalties'] = 'Los castigos que indican los castigos recibidos por los intentos por el usuario';
+$string['privacy:metadata:hotpot_attempts:score'] = 'El puntaje que indica el puntaje recibido por los intentos por el usuario';
+$string['privacy:metadata:hotpot_attempts:starttime'] = 'La hora_de_inicio que indica cuando fueron iniciados los intentos por el usuario';
+$string['privacy:metadata:hotpot_attempts:status'] = 'El estado que indica el estado de los intentos por el usuario';
+$string['privacy:metadata:hotpot_attempts:timefinish'] = 'La hora_de_terminación que indica cuando fueron terminados los intentos por el usuario';
+$string['privacy:metadata:hotpot_attempts:timemodified'] = 'La hora_de_modificación que indica cuando fueron modificados los intentos por el usuario';
+$string['privacy:metadata:hotpot_attempts:timestart'] = 'La hora_de_inicio que indica cuando fueron iniciados los intentos por el usuario';
+$string['privacy:metadata:hotpot_attempts:userid'] = 'La ID de los intentos del usuario  en actividades HotPot';
 $string['questionshort'] = 'Q-{$a}';
 $string['quizname_help'] = 'texto de ayuda para el nombre del cuestionario';
 $string['quizzes'] = 'Preguntas';
+$string['responses'] = 'Respuestas';
 $string['responsesreport'] = 'Respuestas';
+$string['reviewafterattempt'] = 'Permitir revisión posterior al intento';
+$string['reviewafterclose'] = 'Permitir revisión posterior al cierre de HotPot';
+$string['reviewduringattempt'] = 'Permitir revisión durante el intento';
+$string['reviewoptions'] = 'Opciones de revisión';
 $string['score'] = 'Puntuación';
 $string['scoresreport'] = 'Puntuaciones';
 $string['selectattempts'] = 'Seleccione intentos';
@@ -492,9 +566,11 @@ $string['title_help'] = 'Este ajuste especifica el título que se mostrará en l
 
 **Usar ruta de archivo origen**
 : se muestra como título de la página web la ruta del archivo origen, incluyendo los nombres de carpeta.';
+$string['toolsindex'] = 'Índice de Herramientas HotPot';
 $string['unitname_help'] = 'texto de ayuda para el nombre';
 $string['unrecognizedsourcefile'] = 'Lo sentimos, el módulo HotPot no ha podido detectar el tipo de archivo de origen: {$a}';
 $string['updated'] = 'Actualizado';
+$string['updatinggrades'] = 'Actualizando calificaciones de HotPot';
 $string['usefilters'] = 'Usar filtros';
 $string['usefilters_help'] = 'Si este parámetro está activado, el contenido pasará a través de los filtros de Moodle antes de ser enviado al navegador.';
 $string['useglossary'] = 'Usar glosario';

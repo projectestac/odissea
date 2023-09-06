@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilitychecker', language 'ja', version '3.11'.
+ * Strings for component 'atto_accessibilitychecker', language 'ja', version '4.1'.
  *
  * @package     atto_accessibilitychecker
  * @category    string
@@ -29,7 +29,7 @@ $string['emptytext'] = '空のテキスト';
 $string['entiredocument'] = 'ドキュメント全体';
 $string['imagesmissingalt'] = 'イメージに代替テキストを必要とします。この警告を修正するにはあなたのimgタグにalt属性を追加してください。空のalt属性が使用されますが、イメージは完全に装飾的であり、情報を伝えることはありません。';
 $string['needsmorecontrast'] = '前景および背景テキスト色に十分なコントラストがありません。この警告を修正するには簡単に読めるよう前景または背景テキスト色を変更してください。';
-$string['needsmoreheadings'] = 'ヘッディングのないテキストが数多く存在します。ヘッディングはスクリーンリーダユーザのページ間ナビゲートを容易にします。また、すべての人に対してページをさらに使いやすくします。';
+$string['needsmoreheadings'] = '見出しのないテキストが数多く存在します。見出しがあれば、画面読み上げソフト利用者が容易にページ内を移動でき、誰にとってもさらに使いやすいページになります。';
 $string['nowarnings'] = 'おめでとうございます、アクセシビリティ問題は発見されませんでした!';
 $string['pluginname'] = 'アクセシビリティチェッカ';
 $string['privacy:metadata'] = 'atto_accessibilitycheckerプラグインはいかなる個人データも保存しません。';

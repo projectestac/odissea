@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'ja', version '3.11'.
+ * Strings for component 'block_myprofile', language 'ja', version '4.1'.
  *
  * @package     block_myprofile
  * @category    string
@@ -34,9 +34,11 @@ $string['display_currentlogin'] = '現在のログインを表示する';
 $string['display_email'] = 'メールを表示する';
 $string['display_firstaccess'] = '初回アクセスを表示する';
 $string['display_icq'] = 'ICQを表示する';
+$string['display_idnumber'] = 'IDナンバーを表示する';
 $string['display_institution'] = 'インスティテューションを表示する';
 $string['display_lastaccess'] = '最終アクセスを表示する';
 $string['display_lastip'] = '最終IPアドレスを表示する';
+$string['display_lastlogin'] = '最終ログインを表示する';
 $string['display_msn'] = 'MSNを表示する';
 $string['display_phone1'] = '電話番号を表示する';
 $string['display_phone2'] = '携帯電話番号を表示する';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'en', version '3.11'.
+ * Strings for component 'choicegroup', language 'en', version '4.1'.
  *
  * @package     choicegroup
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:closingbeforeopening'] = 'Opening date must be earlier than closing date.';
 $string['activitydate:exceeded'] = 'Due date exceeded.';
 $string['activitydate:hasopened'] = 'Opened:';
 $string['activitydate:notavailableyet'] = 'Not available yet.';

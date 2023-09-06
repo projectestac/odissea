@@ -30,7 +30,8 @@ const SELECTORS = {
     ADD_BLOCK: '[data-key="addblock"]'
 };
 
-let addBlockModal = null;
+// Ensure we only add our listeners once.
+let listenerEventsRegistered = false;
 
 /**
  * Register related event listeners.
@@ -38,23 +39,23 @@ let addBlockModal = null;
  * @method registerListenerEvents
  * @param {String} pageType The type of the page
  * @param {String} pageLayout The layout of the page
- * @param {String} addBlockUrl The add block URL
+ * @param {String|null} addBlockUrl The add block URL
  * @param {String} subPage The subpage identifier
  */
 const registerListenerEvents = (pageType, pageLayout, addBlockUrl, subPage) => {
     document.addEventListener('click', e => {
 
-        if (e.target.closest(SELECTORS.ADD_BLOCK)) {
+        const addBlock = e.target.closest(SELECTORS.ADD_BLOCK);
+        if (addBlock) {
             e.preventDefault();
 
-            if (addBlockModal) { // The 'add block' modal has been already created.
-                // Display the 'add block' modal.
-                addBlockModal.show();
-            } else {
-                buildAddBlockModal()
+            let addBlockModal = null;
+            let addBlockModalUrl = addBlockUrl ?? addBlock.dataset.url;
+
+            buildAddBlockModal()
                 .then(modal => {
                     addBlockModal = modal;
-                    const modalBody = renderBlocks(addBlockUrl, pageType, pageLayout, subPage);
+                    const modalBody = renderBlocks(addBlockModalUrl, pageType, pageLayout, subPage);
                     modal.setBody(modalBody);
                     modal.show();
 
@@ -62,10 +63,7 @@ const registerListenerEvents = (pageType, pageLayout, addBlockUrl, subPage) => {
                 })
                 .catch(() => {
                     addBlockModal.destroy();
-                    // Unset the addBlockModal in case this is a transient error and it goes away on a relaunch.
-                    addBlockModal = null;
                 });
-            }
         }
     });
 };
@@ -132,9 +130,12 @@ const getAddableBlocks = async(pageType, pageLayout, subPage) => {
  * @method init
  * @param {String} pageType The type of the page
  * @param {String} pageLayout The layout of the page
- * @param {String} addBlockUrl The add block URL
+ * @param {String|null} addBlockUrl The add block URL
  * @param {String} subPage The subpage identifier
  */
-export const init = (pageType, pageLayout, addBlockUrl, subPage = '') => {
-    registerListenerEvents(pageType, pageLayout, addBlockUrl, subPage);
+export const init = (pageType, pageLayout, addBlockUrl = null, subPage = '') => {
+    if (!listenerEventsRegistered) {
+        registerListenerEvents(pageType, pageLayout, addBlockUrl, subPage);
+        listenerEventsRegistered = true;
+    }
 };

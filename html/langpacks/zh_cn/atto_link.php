@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_link', language 'zh_cn', version '3.11'.
+ * Strings for component 'atto_link', language 'zh_cn', version '4.1'.
  *
  * @package     atto_link
  * @category    string
@@ -31,4 +31,5 @@ $string['enterurl'] = '输入网址';
 $string['openinnewwindow'] = '在新窗口打开';
 $string['pluginname'] = '链接';
 $string['privacy:metadata'] = 'atto_link 插件不储存任何私人数据。';
+$string['texttodisplay'] = '要显示的文本';
 $string['unlink'] = '取消链接';

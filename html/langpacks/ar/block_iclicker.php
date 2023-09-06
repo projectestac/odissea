@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_iclicker', language 'ar', version '3.11'.
+ * Strings for component 'block_iclicker', language 'ar', version '4.1'.
  *
  * @package     block_iclicker
  * @category    string
@@ -46,7 +46,7 @@ $string['iclicker:myaddinstance'] = 'إضافة كتلة جديدة من i>click
 $string['inst.all.courses'] = 'كل المساقات';
 $string['inst.course.view.students'] = 'معاينة الطلاب';
 $string['inst.courses.table.summary'] = 'يستعرض المقررات الدراسية المقدمة من قبل هذا المرشد؛ العنوان، رابط إلى قائمة الطلاب';
-$string['inst.no.courses'] = 'بدون مقررات';
+$string['inst.no.courses'] = 'بدون مقررات دراسية';
 $string['inst.student.name.header'] = 'الاسم';
 $string['inst.students'] = 'الطلاب';
 $string['leaveblanktohide'] = 'أتركه فارغاً لإخفائه';

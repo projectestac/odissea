@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'el', version '3.11'.
+ * Strings for component 'langconfig', language 'el', version '4.1'.
  *
  * @package     langconfig
  * @category    string
@@ -46,7 +46,9 @@ $string['strftimedatemonthabbr'] = '%d %b %Y';
 $string['strftimedateshort'] = '%d %B';
 $string['strftimedateshortmonthabbr'] = '%d %b';
 $string['strftimedatetime'] = '%d %B %Y, %I:%M %p';
+$string['strftimedatetimeaccurate'] = '%d %B %Y, %I:%M:%S %p';
 $string['strftimedatetimeshort'] = '%d/%m/%y, %H:%M';
+$string['strftimedatetimeshortaccurate'] = '%d/%m/%y, %H:%M:%S';
 $string['strftimedaydate'] = '%A, %d %B %Y';
 $string['strftimedaydatetime'] = '%A, %d %B %Y, %I:%M %p';
 $string['strftimedayshort'] = '%A, %d %B';

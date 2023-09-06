@@ -1,0 +1,273 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'reportbuilder', language 'gl', version '4.1'.
+ *
+ * @package     reportbuilder
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['access'] = 'Acceso';
+$string['actions'] = 'Accións';
+$string['addaudience'] = 'Engadir a audiencia «{$a}»';
+$string['addcolumn'] = 'Engadir a columna «{$a}»';
+$string['addusers'] = 'Engadir usuarios manualmente';
+$string['aggregatecolumn'] = 'Agregar a columna «{$a}»';
+$string['aggregationavg'] = 'Media';
+$string['aggregationcount'] = 'Número';
+$string['aggregationcountdistinct'] = 'Número distintos';
+$string['aggregationgroupconcat'] = 'Valores separados por coma';
+$string['aggregationgroupconcatdistinct'] = 'Valores distintos separados por coma';
+$string['aggregationmax'] = 'Máximo';
+$string['aggregationmin'] = 'Mínimo';
+$string['aggregationnone'] = 'Sen agregación';
+$string['aggregationpercent'] = 'Porcentaxe';
+$string['aggregationsum'] = 'Suma';
+$string['allsiteusers'] = 'Todos os usuarios do sitio';
+$string['allusers'] = 'Todos os usuarios';
+$string['apply'] = 'Aplicar';
+$string['audience'] = 'Audiencia';
+$string['audienceadded'] = 'Engadiuse a audiencia «{$a}»';
+$string['audiencecreated'] = 'Creouse a audiencia';
+$string['audiencedeleted'] = 'Eliminouse a audiencia «{$a}»';
+$string['audiencedeletedevent'] = 'Foi eliminada a audiencia';
+$string['audiencelabel'] = '{$a->name}: {$a->description}';
+$string['audiencemultiselectpostfix'] = '{$a->elements} máis {$a->morecount} máis';
+$string['audiencenotsaved'] = 'A audiencia non foi gardada';
+$string['audiencesaved'] = 'A audiencia foi gardada';
+$string['audienceupdated'] = 'Actualizouse a audiencia';
+$string['cardview'] = 'Vista de tarxeta';
+$string['cardview_help'] = 'A vista de tarxeta permítelle definir o deseño do informe cando se ve en dispositivos estreitos. As columnas máis aló do límite estabelecido aquí contraeranse, cunha opción para expandir a tarxeta para ver todos os datos do informe.';
+$string['cardviewfirstcolumntitle'] = 'Título da primeira columna';
+$string['cardviewsettingssaved'] = 'Gardados os axustes da vista de tarxeta';
+$string['cardviewvisiblecolumns'] = 'Columnas visíbeis';
+$string['categoryselect'] = 'Escoller unha categoría';
+$string['close'] = 'Pechar';
+$string['closeeditor'] = 'Pechar o editor «{$a}»';
+$string['columnadded'] = 'Engadiuse a columna «{$a}»';
+$string['columnaggregated'] = 'Agregouse a columna «{$a}»';
+$string['columndeleted'] = 'Eliminouse a columna «{$a}»';
+$string['columnmoved'] = 'Moveuse a columna «{$a}»';
+$string['columnsortdirectionasc'] = 'Ordenar a columna «{$a}» en ascendente';
+$string['columnsortdirectiondesc'] = 'Ordenar a columna «{$a}» en descendente';
+$string['columnsortdisable'] = 'Desactivar a ordenación da columna «{$a}»';
+$string['columnsortenable'] = 'Activar a ordenación da columna «{$a}»';
+$string['columnsortupdated'] = 'Actualizouse a ordenación da columna «{$a}«';
+$string['conditionadded'] = 'Engadiuse a condición «{$a}»';
+$string['conditiondeleted'] = 'Eliminouse a condición «{$a}»';
+$string['conditionmoved'] = 'Moveuse a condición «{$a}»';
+$string['conditions'] = 'Condicións';
+$string['conditions_help'] = 'As condicións do informe permítenlle limitar os datos que se amosan cando se ve o informe. Os usuarios que ven o informe non poden anular os valores destas condicións.';
+$string['conditionsapplied'] = 'Condicións aplicadas';
+$string['conditionsreset'] = 'Condicións restabelecidas';
+$string['coursefullnamewithlink'] = 'Nome completo do curso con ligazón';
+$string['courseidnumberewithlink'] = 'Número id do curso con ligazón';
+$string['courseselect'] = 'Seleccionar curso';
+$string['courseshortnamewithlink'] = 'Nome abreviado do curso con ligazón';
+$string['customfieldcolumn'] = '{$a}';
+$string['customreports'] = 'Informes personalizados';
+$string['deleteaudience'] = 'Eliminar a audiencia «{$a}»';
+$string['deleteaudienceconfirm'] = 'Confirma que quere eliminar a audiencia «{$a}»?';
+$string['deletecolumn'] = 'Eliminar a columna «{$a}»';
+$string['deletecolumnconfirm'] = 'Confirma que quere eliminar a columna «{$a}»?';
+$string['deletecondition'] = 'Eliminar a condición «{$a}»';
+$string['deleteconditionconfirm'] = 'Confirma que quere eliminar a condición «{$a}»?';
+$string['deletefilter'] = 'Eliminar o filtro «{$a}»';
+$string['deletefilterconfirm'] = 'Confirma que quere eliminar o filtro «{$a}»?';
+$string['deletereport'] = 'Eliminar o informe';
+$string['deletereportconfirm'] = 'Confirma que quere eliminar o informe «{$a}» e todos os datos asociados?';
+$string['deleteschedule'] = 'Eliminar a programación';
+$string['deletescheduleconfirm'] = 'Confirma que quere eliminar a programación «{$a}»?';
+$string['disableschedule'] = 'Desactivar a programación';
+$string['editaudience'] = 'Editar a audiencia «{$a}»';
+$string['editdetails'] = 'Editar os detalles';
+$string['editor'] = 'Editor';
+$string['editreportcontent'] = 'Editar o contido do informe';
+$string['editreportdetails'] = 'Editar detalles do informe';
+$string['editreportname'] = 'Editar o nome do informe';
+$string['editscheduledetails'] = 'Editar detalles da programación';
+$string['editschedulename'] = 'Editar o nome da programación';
+$string['enablecustomreports'] = 'Activar os informes personalizados';
+$string['enablecustomreports_desc'] = 'Se está activado, os usuarios poden crear e ver informes personalizados do creador de informes.';
+$string['enableschedule'] = 'Activar a programación';
+$string['entitycourse'] = 'Curso';
+$string['entityuser'] = 'Usuario';
+$string['errorreportcreate'] = 'Vostede non pode crear este informe';
+$string['errorreportedit'] = 'Vostede non pode editar a este informe';
+$string['errorreportview'] = 'Vostede non pode ver este informe';
+$string['errorsourceinvalid'] = 'Non foi posíbel atopar a orixe do informe válida';
+$string['errorsourceunavailable'] = 'A orixe do informe non está dispoñíbel';
+$string['filteradded'] = 'Engadiuse o filtro «{$a}»';
+$string['filtercontains'] = 'Contén';
+$string['filterdatecurrent'] = 'Actualt';
+$string['filterdatedays'] = 'día(s)';
+$string['filterdatefrom'] = 'Dende a data';
+$string['filterdatehours'] = 'hora(s)';
+$string['filterdatelast'] = 'Último';
+$string['filterdateminutes'] = 'minuto(s)';
+$string['filterdatemonths'] = 'mes(es)';
+$string['filterdatenext'] = 'Seguinte';
+$string['filterdateseconds'] = 'segundo(s)';
+$string['filterdateto'] = 'Ata a data';
+$string['filterdateweeks'] = 'semana(s)';
+$string['filterdateyears'] = 'ano(s)';
+$string['filterdeleted'] = 'Eliminouse o filtro «{$a}»';
+$string['filterdoesnotcontain'] = 'Non contén';
+$string['filterdurationunit'] = 'Unidade {$a}';
+$string['filterendswith'] = 'Remata en';
+$string['filterequalorgreaterthan'] = 'Maior que ou igual';
+$string['filterequalorlessthan'] = 'Menor que ou igual';
+$string['filterfieldoperator'] = 'Operador {$a}';
+$string['filterfieldvalue'] = 'valor {$a}';
+$string['filtergreaterthan'] = 'Maior que';
+$string['filterinvalid'] = 'Filtro non válido';
+$string['filterisanyvalue'] = 'É calquera valor';
+$string['filterisempty'] = 'Está baleiro';
+$string['filterisequalto'] = 'É igual a';
+$string['filterisnotempty'] = 'Non está baleiro';
+$string['filterisnotequalto'] = 'Non é igual a';
+$string['filterlessthan'] = 'Menor que';
+$string['filtermoved'] = 'Moveuse o filtro «{$a}»';
+$string['filterrange'] = 'Intervalo';
+$string['filters'] = 'Filtros';
+$string['filters_help'] = 'Os filtros de informes permiten aos usuarios que vexan o informe limitar aínda máis os datos que se amosan, seleccionando os seus propios valores para cada filtro. Os valores dos filtros almacénanse por usuario.';
+$string['filtersapplied'] = 'Filtros aplicados';
+$string['filtersappliedx'] = 'Filtros ({$a})';
+$string['filtersreset'] = 'Filtros restabelecidos';
+$string['filterstartswith'] = 'Comeza con';
+$string['hassystemrole'] = 'Rol do sistema asignado';
+$string['includedefaultsetup'] = 'Inclúe a configuración predeterminada';
+$string['includedefaultsetup_help'] = 'Enche o informe co deseño predeterminado segundo o definido pola orixe seleccionada. Estes inclúen columnas, filtros e condicións predefinidas.';
+$string['manuallyaddedusers'] = 'Usuarios engadidos manualmente';
+$string['messagebody'] = 'Corpo';
+$string['messagecontent'] = 'Contido da mensaxe';
+$string['messagesubject'] = 'Asunto';
+$string['movecolumn'] = 'Mover a columna «{$a}»';
+$string['movecondition'] = 'Mover a condición «{$a}»';
+$string['movefilter'] = 'Mover o filtro «{$a}»';
+$string['movesorting'] = 'Mover a ordenación da columna «{$a}»';
+$string['newreport'] = 'Novo informe';
+$string['newschedule'] = 'Nova programación';
+$string['noaudiences'] = 'Non hai audiencias para este informe';
+$string['noconditions'] = 'Non hai ningunha condición seleccionada';
+$string['nofilters'] = 'Non hai filtros seleccionados';
+$string['nosortablecolumns'] = 'Non hai columnas ordenábeis';
+$string['or'] = 'ou';
+$string['privacy:metadata:audience'] = 'Definicións da audiencia do informe';
+$string['privacy:metadata:audience:classname'] = 'A clase utilizada pola audiencia';
+$string['privacy:metadata:audience:configdata'] = 'Datos de configuración utilizados pola audiencia';
+$string['privacy:metadata:audience:heading'] = 'A cabeceira personalizada utilizada pol público';
+$string['privacy:metadata:audience:timecreated'] = 'O momento no que se creou a audiencia';
+$string['privacy:metadata:audience:timemodified'] = 'O momento no que se modificou a audiencia por última vez';
+$string['privacy:metadata:audience:usercreated'] = 'O ID do usuario que creou a audiencia';
+$string['privacy:metadata:audience:usermodified'] = 'O ID do usuario que modificou o rexistro por última vez.';
+$string['privacy:metadata:column'] = 'Definicións das columnas do informe';
+$string['privacy:metadata:column:uniqueidentifier'] = 'Identificador único da columna';
+$string['privacy:metadata:column:usercreated'] = 'O ID do usuario que creou a columna';
+$string['privacy:metadata:column:usermodified'] = 'O ID do usuario que modificou a columna por última vez';
+$string['privacy:metadata:filter'] = 'Definicións de filtros do informe';
+$string['privacy:metadata:filter:uniqueidentifier'] = 'Identificador único do filtro';
+$string['privacy:metadata:filter:usercreated'] = 'O ID do usuario que creou o filtro';
+$string['privacy:metadata:filter:usermodified'] = 'O ID do usuario que modificou o filtro por última vez';
+$string['privacy:metadata:preference:reportfilter'] = 'Valores de filtro de informes almacenados';
+$string['privacy:metadata:report'] = 'Definicións dos informes';
+$string['privacy:metadata:report:conditiondata'] = 'Datos de configuración para as condicións do informe';
+$string['privacy:metadata:report:name'] = 'O nome do informe';
+$string['privacy:metadata:report:settingsdata'] = 'Configuración xeral para o informe';
+$string['privacy:metadata:report:source'] = 'A orixe do informe';
+$string['privacy:metadata:report:timecreated'] = 'O momento no que se creou o informe';
+$string['privacy:metadata:report:timemodified'] = 'O momento no que se modificou o informe por última vez';
+$string['privacy:metadata:report:uniquerows'] = 'Se se eliminan as filas duplicadas';
+$string['privacy:metadata:report:usercreated'] = 'O ID do usuario que creou o informe';
+$string['privacy:metadata:report:usermodified'] = 'O ID do usuario que modificou o informe por última vez';
+$string['privacy:metadata:schedule'] = 'Definicións da programación do informe';
+$string['privacy:metadata:schedule:audiences'] = 'A audiencia á que vai dirixida esta programación';
+$string['privacy:metadata:schedule:enabled'] = 'O estado da programación';
+$string['privacy:metadata:schedule:format'] = 'O formato do informe programado';
+$string['privacy:metadata:schedule:message'] = 'A mensaxe da programación';
+$string['privacy:metadata:schedule:name'] = 'O nome da programación';
+$string['privacy:metadata:schedule:recurrence'] = 'A recorrencia da programación';
+$string['privacy:metadata:schedule:reportempty'] = 'Que facer se o informe programado está baleiro';
+$string['privacy:metadata:schedule:subject'] = 'O asunto da programación';
+$string['privacy:metadata:schedule:timecreated'] = 'O momento no que se creou a programación';
+$string['privacy:metadata:schedule:timemodified'] = 'O momento no que se modificou a programación por última vez';
+$string['privacy:metadata:schedule:timescheduled'] = 'O momento en que comezará a programación';
+$string['privacy:metadata:schedule:usercreated'] = 'O ID do usuario que creou a programación';
+$string['privacy:metadata:schedule:usermodified'] = 'O ID do usuario que modificou a programación por última vez';
+$string['privacy:metadata:schedule:userviewas'] = 'O ID do usuario co que se verá a programación';
+$string['recurrence'] = 'Recorrencia';
+$string['recurrenceannually'] = 'Anualmente';
+$string['recurrencedaily'] = 'Diaria';
+$string['recurrencemonthly'] = 'Mensual';
+$string['recurrenceweekdays'] = 'Diaria (só entre semana)';
+$string['recurrenceweekly'] = 'Semanal';
+$string['renameaudience'] = 'Cambia o nome da audiencia «{$a}»';
+$string['renamecolumn'] = 'Cambiar o nome da columna «{$a}»';
+$string['renamefilter'] = 'Cambia o nome do filtro «{$a}»';
+$string['reportbuilder'] = 'Creador de informes';
+$string['reportcreated'] = 'Informe creado';
+$string['reportdeleted'] = 'Informe eliminado';
+$string['reports'] = 'Informes';
+$string['reportsource'] = 'Orixe do informe';
+$string['reportsource_help'] = 'A orixe do informe define de onde procederán os datos do informe.';
+$string['reportupdated'] = 'Informe actualizado';
+$string['reportviewed'] = 'Informe visto';
+$string['resetall'] = 'Restabelecer todo';
+$string['resetconditions'] = 'Restabelecer as condicións';
+$string['resetconditionsconfirm'] = 'Confirma que quere restabelecer todas as condicións deste informe?';
+$string['schedulecreated'] = 'Programación creada';
+$string['scheduledeleted'] = 'Programación eliminada';
+$string['scheduleempty'] = 'Se o informe está baleiro';
+$string['scheduleemptydontsend'] = 'Non enviar mensaxe';
+$string['scheduleemptysendwithattachment'] = 'Enviar mensaxe co informe baleiro';
+$string['scheduleemptysendwithoutattachment'] = 'Enviar mensaxe sen informe';
+$string['schedules'] = 'Programacións';
+$string['schedulesent'] = 'Programación enviada';
+$string['scheduleupdated'] = 'Programación actualizada';
+$string['scheduleviewas'] = 'Ver os datos do informe como';
+$string['scheduleviewascreator'] = 'Creador da programación';
+$string['scheduleviewasrecipient'] = 'Destinatario da programación';
+$string['selectacondition'] = 'Seleccione unha condición';
+$string['selectafilter'] = 'Seleccione un filtro';
+$string['selectareportsource'] = 'Seleccione unha orixe de informe';
+$string['sendschedule'] = 'Enviar a programación';
+$string['sendscheduleconfirm'] = 'Confirma que quere poñer en cola a programación «{$a}» para enviar inmediatamente?';
+$string['showhide'] = 'Amosar/agochar «{$a}»';
+$string['sorting'] = 'Ordenando';
+$string['sorting_help'] = 'A ordenación define a orde inicial das columnas do informe. A orde pódese inverter premendo na icona Arriba/abaixo. Os usuarios poden definir a súa propia orde de clasificación premendo no nome dunha columna.';
+$string['switchedit'] = 'Cambiar ao modo de edición';
+$string['switchpreview'] = 'Cambiar ao modo anterior';
+$string['tasksendschedules'] = 'Enviar a programación dos informes';
+$string['timeadded'] = 'Momento do engadido';
+$string['timecreated'] = 'Momento da creación';
+$string['timelastsent'] = 'Momento do último envío';
+$string['timemodified'] = 'Momento da modificación';
+$string['uniquerows'] = 'Retirar todas as filas duplicadas';
+$string['uniquerows_help'] = 'Se a orixe do informe contén filas duplicadas, deberían eliminarse deste informe? Esta configuración non ten efecto se as columnas do informe son agregadas.';
+$string['userany'] = 'Calquera usuario';
+$string['usercurrent'] = 'Usuario actual:';
+$string['userfullnamewithlink'] = 'Nome completo con ligazón';
+$string['userfullnamewithpicture'] = 'Nome completo con imaxe';
+$string['userfullnamewithpicturelink'] = 'Nome completo con imaxe e ligazón';
+$string['usermodified'] = 'Modificado por';
+$string['userpicture'] = 'Imaxe do usuario';
+$string['userselect'] = 'Seleccionar un usuario';
+$string['viewreport'] = 'Ver informe';

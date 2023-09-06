@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_pam', language 'es', version '3.11'.
+ * Strings for component 'auth_pam', language 'es', version '4.1'.
  *
  * @package     auth_pam
  * @category    string
@@ -29,3 +29,4 @@ $string['auth_pamdescription'] = 'Este método utiliza PAM para acceder a los no
 $string['auth_passwordisexpired'] = 'Su contraseña ha caducado. ¿Desea cambiar su contraseña ahora?';
 $string['auth_passwordwillexpire'] = 'Su contraseña caducará en {$a} días. ¿Desea cambiar su contraseña ahora?';
 $string['pluginname'] = 'PAM (Pluggable Authentication Modules)';
+$string['privacy:metadata'] = 'El plugin de Autenticación PAM   (Pluggable Authentication Modules)  no almacena ningun dato personal.';

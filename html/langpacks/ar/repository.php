@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ar', version '3.11'.
+ * Strings for component 'repository', language 'ar', version '4.1'.
  *
  * @package     repository
  * @category    string
@@ -36,8 +36,8 @@ $string['addplugin'] = 'أضف موصل للمخزن';
 $string['aliaseschange'] = 'هناك {$a} من الروابط المتصلة بهذا الملف. إذا تابعت، فتلك المواضع المتصلة حاليًا به سيتم تحديثها تلقائيًا لتستعمل نُسخة من الملف بدلاً منه.';
 $string['allowexternallinks'] = 'إسمح بالروابط الخارجية';
 $string['areacategoryintro'] = 'مقدمة الفتئة';
-$string['areacourseintro'] = 'مقدمة المقرر الدراسي';
-$string['areacourseoverviewfiles'] = 'صورة المقرر الدراسي';
+$string['areacourseintro'] = 'مقدمة المساق';
+$string['areacourseoverviewfiles'] = 'صورة المساق';
 $string['areamainfile'] = 'الملف الرئيسي';
 $string['arearoot'] = 'النظام';
 $string['areauserbackup'] = 'الحفظ الاحتياطي الخاص بالمستخدم';
@@ -83,7 +83,7 @@ $string['confirmrenamefolder'] = 'هل أنت متأكد من رغبتك في ن
 $string['continueuninstall'] = 'استمر';
 $string['continueuninstallanddownload'] = 'استمر وقم بالتنزيل';
 $string['copying'] = 'نسخ';
-$string['coursebackup'] = 'النسخ الاحتياطية للمقررات الدراسية';
+$string['coursebackup'] = 'النسخ الاحتياطية للمساقات الدراسية';
 $string['create'] = 'أنشئ';
 $string['createfolder'] = 'إنشاء مجلد';
 $string['createfolderfail'] = 'فشل إنشاء هذا المجلد';
@@ -112,7 +112,7 @@ $string['draftareanofiles'] = 'تعذر تنزيله لعدم إرفاق أي م
 $string['editrepositoryinstance'] = 'تحرير نسخة المخزن';
 $string['emptylist'] = 'قائمة فارغة';
 $string['emptytype'] = 'تعذر إنشاء نوع المستودع؛ اسم النوع فارغ';
-$string['enablecourseinstances'] = 'إسمح للمستخدمين بإضافة عينة مستودع في المقرر الدراسي';
+$string['enablecourseinstances'] = 'إسمح للمستخدمين بإضافة عينة مستودع في المساق';
 $string['enableuserinstances'] = 'إسمح للمستخدمين بإضافة عينة مستودع في سياق المستخدم';
 $string['enter'] = 'ادخل';
 $string['entername'] = 'الرجاء إدخال اسم المجلد';
@@ -146,7 +146,7 @@ $string['imagesize'] = '{$a->width} × {$a->height} بكسل';
 $string['instance'] = 'نسخة';
 $string['instancedeleted'] = 'تم حذف العينة';
 $string['instances'] = 'عينات المستودع';
-$string['instancesforcourses'] = 'العينة/العينات الشائعة على مستوى المقرر الدراسي من {$a}';
+$string['instancesforcourses'] = 'العينة/العينات الشائعة على مستوى المساق من {$a}';
 $string['instancesforsite'] = 'العينة/العينات الشائعة على مستوى الموقع من {$a}';
 $string['instancesforusers'] = 'عينات المستخدم الخاصة من {$a}';
 $string['invalidfiletype'] = 'نوع الملف لـ {$a} لا يمكن قبوله.';

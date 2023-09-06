@@ -30,7 +30,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clianswerno'] = 'n';
-$string['cliansweryes'] = 'w';
+$string['cliansweryes'] = 'y';
 $string['cliincorrectvalueerror'] = 'Erè, valè kòrèk "{$ a-> valè}" pou "{$ a-> opsyon}"';
 $string['cliincorrectvalueretry'] = 'Valè ki pa kòrèk, tanpri eseye ankò';
 $string['clitypevalue'] = 'valè kalite';
@@ -38,6 +38,7 @@ $string['clitypevaluedefault'] = 'tape valè, peze Antre pou itilize valè defau
 $string['cliunknowoption'] = 'Opsyon ki pa rekonèt:
   {$ a}
 Tanpri itilize opsyon --help.';
-$string['cliyesnoprompt'] = 'Tape w (pou wi) oswa n (pou non)';
+$string['cliyesnoprompt'] = 'tape y (vle di wi) oswa n (vle di non)';
 $string['environmentrequireinstall'] = 'dwe enstale ak pèmèt';
 $string['environmentrequireversion'] = 'vèsyon {$ a-> bezwen} obligatwa epi w ap kouri {$ a-> current}';
+$string['upgradekeyset'] = 'Mizajou kle (kite vid pou pa mete li)';

@@ -25,12 +25,12 @@ Feature: A teacher can set three types of survey activity
       | Survey type | ATTLS (20 item version) |
     And I press "Save and display"
     Then I should see "Attitudes Towards Thinking and Learning"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I set the following fields to these values:
       | Survey type | Critical incidents |
     And I press "Save and display"
     And I should see "At what moment in class were you most engaged as a learner?"
-    And I navigate to "Edit settings" in current page administration
+    And I navigate to "Settings" in current page administration
     And I set the following fields to these values:
       | Survey type | COLLES (Preferred and Actual) |
     And I press "Save and display"
@@ -38,7 +38,7 @@ Feature: A teacher can set three types of survey activity
     And I should see "my learning focuses on issues that interest me."
 
   @javascript
-  Scenario: Survey activity is create via UI
+  Scenario: Survey activity is created via UI
     Given I am on the "Course 1" course page
     And I turn editing mode on
     And I add a "Survey" to section "1"

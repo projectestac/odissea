@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'sv', version '3.11'.
+ * Strings for component 'journal', language 'sv', version '4.1'.
  *
  * @package     journal
  * @category    string
@@ -57,6 +57,7 @@ $string['journalname'] = 'Namn på journal';
 $string['journalquestion'] = 'Journalfråga';
 $string['mailsubject'] = 'Återkoppling på journalen';
 $string['modulename'] = 'Utvecklingskontakt';
+$string['modulename_link'] = 'mod/journal/view';
 $string['modulenameplural'] = 'Journaler';
 $string['needsregrade'] = 'Inlägget har ändrats sedan den senaste återkopplingen sparades.';
 $string['newjournalentries'] = 'Nya inlägg i journalen';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ja', version '3.11'.
+ * Strings for component 'badges', language 'ja', version '4.1'.
  *
  * @package     badges
  * @category    string
@@ -40,7 +40,7 @@ $string['addcompetency_help'] = 'このバッジ必要条件に追加するす�
 $string['addcourse'] = 'コースを追加する';
 $string['addcourse_help'] = 'このバッジ必要条件に追加するすべてのコースを選択してください。複数のアイテムを選択するにはCTRLキーを押したままにしてください。';
 $string['addcriteria'] = 'クライテリアを追加する';
-$string['addcriteriatext'] = 'クライテリアの追加を開始するにはドロップダウンメニュよりオプションの1つを選択してください。';
+$string['addcriteriatext'] = 'クライテリアの追加を開始するにはドロップダウンメニューよりオプションの1つを選択してください。';
 $string['addedtobackpack'] = 'バッジをバックパックに追加しました。';
 $string['addrelated'] = '関連するバッジを追加する';
 $string['addtobackpack'] = 'バックパックを追加する';
@@ -96,11 +96,12 @@ $string['backpackconnectionnottested'] = 'オープンバッジ v2.0バックパ
 $string['backpackconnectionok'] = 'バックパック接続が正常に確立されました。';
 $string['backpackconnectionresendemail'] = '確認メールを再送する';
 $string['backpackconnectionunexpectedmessage'] = 'バックパックにエラーが発生しました: {$a}';
-$string['backpackconnectionunexpectedresult'] = 'あなたのバックパックへの接続中に問題が生じました。証明情報を確認して再度お試しください。';
+$string['backpackconnectionunexpectedresult'] = 'あなたのバックパックへの接続中に問題が生じました。あなたのバックパックプロバイダが次のメッセージを送信しました: {$a}';
 $string['backpackdetails'] = 'バックパック設定';
 $string['backpackdisconnected'] = 'バックパックの接続が解除されました。';
 $string['backpackemail'] = 'メールアドレス';
 $string['backpackemail_help'] = 'あなたのバックパックに関連付けられたメールアドレスです。あなたが接続している間、このサイトで取得したすべてのバッジはこのメールアドレスに関連付けられます。';
+$string['backpackemail_required'] = 'メールアドレスは空白にできません。';
 $string['backpackemailverificationpending'] = '確認保留';
 $string['backpackemailverifyemailbody'] = 'あなたのバッジバックパックへの新しい接続が「 {$a->sitename} 」からあなたのメールアドレスを使ってリクエストされました。 あなたのバックパックへの接続を確認および有効化するには以下にアクセスしてください。 {$a->link} ほとんどのメールプログラムではこのリンクはあなたがクリックできる青いリンクとして表示されます。動作しない場合、アドレスをあなたのウェブブラウザ上部にあるアドレス入力欄にコピー＆ペーストしてください。 分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。';
 $string['backpackemailverifyemailsubject'] = '{$a}: バッジバックパックメール確認';
@@ -108,6 +109,7 @@ $string['backpackemailverifypending'] = '<strong>{$a}</strong>に確認メール
 $string['backpackemailverifysuccess'] = 'あなたのメールアドレスをご確認くださいましてありがとうございます。あなたのバックパックに接続しました。';
 $string['backpackemailverifytokenmismatch'] = 'あなたがクリックしたリンクのトークンが保存されているトークンと合致しません。あなたが受信した最新のメール内リンクをクリックしたことをご確認ください。';
 $string['backpackexporterror'] = 'バックパックにバッジをエクスポートできません。';
+$string['backpackexporterrorwithinfo'] = 'バッジ「 {$a->badgename} 」をバックパックにエクスポートできません。エラー: {$a->error}';
 $string['backpackimport'] = 'バッジインポート設定';
 $string['backpackimport_help'] = 'バックパック接続が正常に確立された後、あなたのバックパックのバッジをバッジページおよびプロファイルページに表示できます。 このエリアではあなたのプロファイルに表示したいバックパックのバッジのコレクションを選択できます。';
 $string['backpackneedsupdate'] = 'このプロファイルに接続したバックパックはサイトのバックパックと合致しません。あなたはバックパックの接続を解除して再度接続する必要があります。';
@@ -117,6 +119,7 @@ $string['backpackweburl'] = 'バックパックURL';
 $string['badgedetails'] = 'バッジ詳細';
 $string['badgeimage'] = 'イメージ';
 $string['badgeimage_help'] = 'イメージのサイズは少なくとも300×300ピクセルある必要があります。イメージはバッジページでは300×300ピクセル、ユーザのプロファイルページでは100×100ピクセルで表示されます。';
+$string['badgeissued'] = 'バッジ発行';
 $string['badgeprivacysetting'] = 'バッジプライバシー設定';
 $string['badgeprivacysetting_help'] = 'あなたのアカウントプロファイルページに取得したバッジを表示できます。この設定においてあなたは新しく取得したバッジの可視性を自動的に設定できます。 また、あなたのバッジページで個別のバッジのプライバシー設定をコントロールできます。';
 $string['badgeprivacysetting_str'] = '私が取得したバッジをプロファイルページに自動的に表示する';
@@ -251,7 +254,6 @@ $string['delparamconfirm'] = '本当にこのパラメータを削除しても�
 $string['description'] = '説明';
 $string['disconnect'] = '接続解除';
 $string['donotaward'] = '現在、このバッジは有効ではないためユーザに授与できません。このバッジを授与したい場合、ステータスを有効にしてください。';
-$string['editsettings'] = '設定を編集する';
 $string['enablebadges'] = 'バッジを有効にする';
 $string['endorsement'] = '承認';
 $string['error:backpackdatainvalid'] = 'バックパックから戻されたデータが有効ではありません。';
@@ -411,9 +413,11 @@ $string['oauth2issuer'] = 'OAuth 2サービス';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
+$string['othernavigation'] = 'その他のナビゲーション ...';
 $string['overallcrit'] = 'の選択されたクライテリアが完了した場合';
+$string['password_required'] = 'パスワードは空白にできません。';
 $string['potentialrecipients'] = '潜在的なバッジ取得者';
-$string['preferences'] = 'バッジプリファレンス';
+$string['preferences'] = 'バッジプレファレンスンス';
 $string['privacy:metadata:backpack'] = 'ユーザのバックパックのレコードです。';
 $string['privacy:metadata:backpack:backpackuid'] = 'バックパックのユニークIDです。';
 $string['privacy:metadata:backpack:email'] = 'バックパックに関連付けられたメールアドレスです。';
@@ -448,6 +452,7 @@ $string['privacy:metadata:manualaward:datemet'] = 'ユーザにバッジが授�
 $string['privacy:metadata:manualaward:issuerid'] = 'バッジを授与するユーザのIDです。';
 $string['privacy:metadata:manualaward:issuerrole'] = 'バッジを授与するユーザのロールです。';
 $string['privacy:metadata:manualaward:recipientid'] = 'バッジを手動授与されたユーザのIDです。';
+$string['recipient'] = 'バッジ取得者';
 $string['recipientdetails'] = '取得者詳細';
 $string['recipientidentificationproblem'] = '既存のユーザの中から、このバッジの取得者を見つけることはできません。';
 $string['recipients'] = 'バッジ取得者';
@@ -472,7 +477,6 @@ $string['sitebackpack'] = 'アクティブ外部バックパック';
 $string['sitebackpack_help'] = 'このサイトからユーザが接続できる外部バックパックです。ユーザのバックパック接続後にこの設定を変更した場合、それぞれのユーザはバックパック設定ページに移動して接続解除および再接続する必要がある点に留意してください。';
 $string['sitebackpackdeleted'] = 'サイトバックパックが削除されました。';
 $string['sitebackpacknotdeleted'] = '現在サイトデフォルトであるため、このバックパックを削除できませんでした。';
-$string['sitebackpackverify'] = 'バックパック接続';
 $string['sitebackpackwarning'] = 'バックパックに接続できませんでした。<br/><br/>「バッジイシュアメールアドレス」管理設定がバックパックウェブサイトのアカウントの有効なメールアドレスであることを確認してください。<br/><br/><a href="{$a->url}">サイトバックパック設定ページ</a>の「バッジイシュアパスワード」がバックパックウェブサイトのアカウントの正しいパスワードであることを確認してください。<br/><br/>バックパックメッセージ:  {$a->warning}';
 $string['sitebadges'] = 'サイトバッジ';
 $string['sitebadges_help'] = 'サイトバッジはサイト関連活動にのみユーザに授与ができます。これには一連のコースまたはユーザプロファイルの一部の完了も含みます。サイトバッジはユーザから別のユーザへの発行もできます。

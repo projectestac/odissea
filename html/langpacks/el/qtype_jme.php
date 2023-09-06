@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_jme', language 'el', version '3.11'.
+ * Strings for component 'qtype_jme', language 'el', version '4.1'.
  *
  * @package     qtype_jme
  * @category    string
@@ -37,7 +37,7 @@ $string['insert'] = 'Εισαγωγή από τον επεξεργαστή κε�
 $string['insertfromeditor'] = 'Εισαγωγή από τον επεξεργαστή κειμένου';
 $string['notenoughanswers'] = 'Αυτός ο τύπος ερώτησης απαιτεί τουλάχιστον {$a} απαντήσεις';
 $string['pleaseenterananswer'] = 'Παρακαλούμε, δώστε μια απάντηση.';
-$string['pluginname_link'] = 'ερώτηση/τύπος/jme';
+$string['pluginname_link'] = '';
 $string['setoptions'] = 'Ορισμός επιλογών JSME';
 $string['width'] = 'πλάτος';
 $string['youranswer'] = 'Η απάντησή σας: {$a}';

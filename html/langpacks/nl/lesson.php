@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'nl', version '3.11'.
+ * Strings for component 'lesson', language 'nl', version '4.1'.
  *
  * @package     lesson
  * @category    string
@@ -52,7 +52,6 @@ $string['addedendofcluster'] = 'Einde van een cluster toegevoegd';
 $string['addendofbranch'] = 'Voeg einde van vertakking toe';
 $string['addendofcluster'] = 'Voeg het einde van een cluster toe';
 $string['addessay'] = 'Maak een open vraagpagina';
-$string['additionalattemptsremaining'] = 'Voltooid. Je kunt deze les opnieuw proberen';
 $string['addmatching'] = 'Maak een koppelvraagpagina';
 $string['addmultichoice'] = 'Maak een meerkeuzevraagpagina';
 $string['addnewgroupoverride'] = 'Voeg groep verschrijving toe';
@@ -178,6 +177,7 @@ $string['displayleftif'] = 'Minimum cijfer om het linkermenu te tonen';
 $string['displayleftif_help'] = 'Deze instelling bepaalt of een leerling een bepaald cijfer moet halen voor die het linker menu kan zien. Dit verplicht een leerling om door de hele les te gaan tijdens de eerste poging, dan kan die na het behalen van het vereiste cijfer, het menu gebruiken om na te kijken.';
 $string['displayleftmenu'] = 'Toon menu';
 $string['displayleftmenu_help'] = 'Indien ingeschakeld, wordt een menu getoond waarmee de gebruiker door een lijst van pagina\'s kan navigeren.';
+$string['displaymode'] = 'Weergavemodus';
 $string['displayofgrade'] = 'Tonen van het cijfer (voor de leerling)';
 $string['displayreview'] = 'Geef de optie om een vraag opnieuw te proberen';
 $string['displayreview_help'] = 'Indien ingeschakeld, zal bij een fout antwoord de leerling de optie krijgen om ofwel de vraag vrijblijvend opnieuw te proberen (zonder cijfer), ofwel verder te gaan met de les. Als de leerling klikt om verder te gaan naar een volgende vraag, dan zal het geselecteerde (foute) antwoord gevolgd worden. Standaard wordt de sprong bij een fout antwoord ingesteld op naar "huidige pagina" met een score van 0. Het is daarom aangeraden om de sprong bij fout antwoord in te stellen op een andere pagina om verwarring bij je leerlingen te vermijden.';
@@ -190,7 +190,9 @@ $string['editcluster'] = 'Bewerk een cluster';
 $string['editendofbranch'] = 'Bewerk het einde van een vertakkingspagina';
 $string['editendofcluster'] = 'Bewerk een einde van een clusterpagina';
 $string['editessay'] = 'Bewerk een open vraagpagina';
+$string['editinglesson'] = 'Les bewerken';
 $string['editingquestionpage'] = 'Bewerken {$a} vragenpagina';
+$string['editlesson'] = 'Bewerk les';
 $string['editlessonsettings'] = 'Bewerk de instellingen van deze les';
 $string['editmatching'] = 'Bewerk een koppelvraagpagina';
 $string['editmultichoice'] = 'Bewerk een meerkeuzevraagpagina';
@@ -202,9 +204,9 @@ $string['editquestion'] = 'Bewerk een vraagpagina';
 $string['editshortanswer'] = 'Bewerk een kort antwoordpagina';
 $string['edittruefalse'] = 'Bewerk een waar/niet waar vraagpagina';
 $string['email'] = 'E-mail';
-$string['emailallgradedessays'] = 'E-mail ALLE beoordeelde werken';
-$string['emailgradedessays'] = 'E-mail de beoordeling';
-$string['emailsuccess'] = 'E-mails verzenden gelukt';
+$string['emailallgradedessays'] = 'Verstuur melding voor de  beoordeelde taken';
+$string['emailgradedessays'] = 'Verstuur melding voor de beoordeelde taken';
+$string['emailsuccess'] = 'Meldingen verstuurd';
 $string['emptypassword'] = 'Wachtwoord kan niet leeg zijn';
 $string['enabled'] = 'Ingeschakeld';
 $string['endofbranch'] = 'Einde vertakking';
@@ -281,10 +283,12 @@ $string['indicator:cognitivedepth'] = 'Les cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Les activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Les cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de lesactiviteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken, Reageren op feedback, Opnieuw verzenden na het bekijken van feedback)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'Les sociaal';
 $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Les activiteit.';
 $string['indicator:socialbreadthdef'] = 'Les sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de lesactiviteiten tijdens dit analyse-interval bereikt (niveaus = geen deelname, alleen deelnemer, deelnemer met anderen)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['insertedpage'] = 'Pagina ingevoegd';
 $string['invalidfile'] = 'Ingeldig bestand';
 $string['invalidid'] = 'Geen cursusmodule ID of le ID is doorgegeven';
@@ -305,14 +309,13 @@ $string['lesson:manage'] = 'Beheer een les';
 $string['lesson:manageoverrides'] = 'Beheer lesoverschrijvingen';
 $string['lesson:view'] = 'Bekijk lesactiviteit';
 $string['lesson:viewreports'] = 'Toon lesrapporten';
+$string['lessonbeingpreviewed'] = 'De les wordt momenteel bekeken.';
 $string['lessonclosed'] = 'Deze les sluit op {$a}.';
 $string['lessoncloses'] = 'Les sluit';
-$string['lessoncloseson'] = 'Les sluit op {$a}';
 $string['lessoneventcloses'] = '{$a} sluit';
 $string['lessoneventopens'] = '{$a} opent';
 $string['lessonformating'] = 'Opmaken van de les';
 $string['lessonmenu'] = 'Lesmenu';
-$string['lessonname'] = 'Les: {$a}';
 $string['lessonnotready'] = 'Deze les is nog niet klaar. Contacteer aub je {$a}';
 $string['lessonnotready2'] = 'Deze les is niet klaar om te starten';
 $string['lessonopen'] = 'Deze les zal openen op {$a}.';
@@ -323,6 +326,7 @@ $string['linkedmedia'] = 'Gelinkte media';
 $string['loginfail'] = 'Login mislukt. Probeer nog eens...';
 $string['lowscore'] = 'Laagste score';
 $string['lowtime'] = 'kortste duur';
+$string['manageoverrides'] = 'Overschrijvingen beheren';
 $string['manualgrading'] = 'Beoordeel open vragen';
 $string['matchesanswer'] = 'Komt overeen met antwoord';
 $string['matching'] = 'Koppelen';
@@ -358,6 +362,7 @@ Les kan gebruikt worden
 * voor zelfgestuurd leren van een nieuw onderwerp
 * voor scenario\'s of simulaties van oefeningen rond beslissingen nemen
 * voor gedifferentieerde herhaling met verschillende herhalingsvragen, afhankelijk van gegeven antwoorden op initiële vragen.';
+$string['modulename_link'] = 'mod/lesson/view';
 $string['modulenameplural'] = 'Lessen';
 $string['move'] = 'Verplaats pagina';
 $string['movedpage'] = 'Pagina verplaatst';
@@ -392,6 +397,7 @@ $string['nooneenteredthis'] = 'Niemand heeft dit ingegeven';
 $string['noonehasanswered'] = 'Niemand heeft een open vraag beantwoord';
 $string['noonehasansweredgroup'] = 'Niemand in {$a} heeft deze vraag al beantwoord.';
 $string['noopen'] = 'Geen opendatum';
+$string['nooverridecreated'] = 'Geen overschrijvingen gemaakt.';
 $string['nooverridedata'] = 'Je moet minstens één lesinstelling overschrijven.';
 $string['noretake'] = 'Je mag deze les niet opnieuw maken';
 $string['normal'] = 'Normaal - volg het lespad';
@@ -555,6 +561,7 @@ $string['search:activity'] = 'Les - activiteitsinformatie';
 $string['secondpluswrong'] = 'Niet echt. Wil je nog eens proberen?';
 $string['selectallattempts'] = 'Selecteer alle pogingen';
 $string['selectaqtype'] = 'Kies een vraagtype';
+$string['selectreport'] = 'Selecteer rapport';
 $string['sent'] = 'Verstuurd';
 $string['shortanswer'] = 'Kort antwoord';
 $string['showanunansweredpage'] = 'Toon een onbeantwoorde pagina';
@@ -618,7 +625,6 @@ $string['withselectedattempts'] = 'Met geselecteerde pogingen';
 $string['wronganswerjump'] = 'Verkeerde antwoordsprong';
 $string['wronganswerscore'] = 'Verkeerd antwoordcijfer';
 $string['wrongresponse'] = 'Verkeerd antwoord';
-$string['xattempts'] = '{$a} pogingen';
 $string['youhaveseen'] = 'Je hebt al meer dan één pagina van deze les bekeken.<br />Wil je beginnen bij de laatste pagina die je vorige keer bekeken hebt?';
 $string['youranswer'] = 'Jouw antwoord';
 $string['yourcurrentgradeis'] = 'Je cijfer is nu {$a}';

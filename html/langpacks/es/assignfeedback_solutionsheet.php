@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_solutionsheet', language 'es', version '3.11'.
+ * Strings for component 'assignfeedback_solutionsheet', language 'es', version '4.1'.
  *
  * @package     assignfeedback_solutionsheet
  * @category    string
@@ -35,6 +35,7 @@ $string['dohidesolutions'] = 'Clic para ocultar las soluciones a los estudiantes
 $string['doshowsolutions'] = 'Clic para mostrar las soluciones a los estudiantes ahora.';
 $string['enabled'] = 'Hojas de soluciones';
 $string['enabled_help'] = 'Si se marca, el profesor podrá subir hoja(s) con soluciones para esta tarea.';
+$string['enabled_link'] = 'assignfeedback/solutionsheet';
 $string['fromnowon'] = 'Activar desde ahora';
 $string['fromnowon_help'] = 'Si se marca, el profesor puede optar por mostrar la hoja de soluciones al crear la actividad.';
 $string['hidesolutionsafter'] = 'Ocultar soluciones después de';

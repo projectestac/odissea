@@ -92,9 +92,10 @@ class qtype_essay_test_helper extends question_test_helper {
         $fromform->attachments = 0;
         $fromform->attachmentsrequired = 0;
         $fromform->maxbytes = 0;
-        $fromform->filetypeslist = '';
+        $fromform->filetypeslist = ''; // Although once saved in the DB, this becomes null, the form returns '' here.
         $fromform->graderinfo = array('text' => '', 'format' => FORMAT_HTML);
         $fromform->responsetemplate = array('text' => '', 'format' => FORMAT_HTML);
+        $fromform->status = \core_question\local\bank\question_version_status::QUESTION_STATUS_READY;
 
         return $fromform;
     }
@@ -144,9 +145,10 @@ class qtype_essay_test_helper extends question_test_helper {
         $fromform->attachments = 3;
         $fromform->attachmentsrequired = 0;
         $fromform->maxbytes = 0;
-        $fromform->filetypeslist = '';
+        $fromform->filetypeslist = ''; // Although once saved in the DB, this becomes null, the form returns '' here.
         $fromform->graderinfo = array('text' => '', 'format' => FORMAT_HTML);
         $fromform->responsetemplate = array('text' => '', 'format' => FORMAT_HTML);
+        $fromform->status = \core_question\local\bank\question_version_status::QUESTION_STATUS_READY;
 
         return $fromform;
     }
@@ -181,9 +183,10 @@ class qtype_essay_test_helper extends question_test_helper {
         $fromform->attachments = 0;
         $fromform->attachmentsrequired = 0;
         $fromform->maxbytes = 0;
-        $fromform->filetypeslist = '';
+        $fromform->filetypeslist = ''; // Although once saved in the DB, this becomes null, the form returns '' here.
         $fromform->graderinfo = array('text' => '', 'format' => FORMAT_HTML);
         $fromform->responsetemplate = array('text' => '', 'format' => FORMAT_HTML);
+        $fromform->status = \core_question\local\bank\question_version_status::QUESTION_STATUS_READY;
 
         return $fromform;
     }

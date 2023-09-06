@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ko', version '3.11'.
+ * Strings for component 'tool_uploaduser', language 'ko', version '4.1'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -61,6 +61,7 @@ $string['uploadusers_help'] = '사용자는 텍스트 파일을 통하여 업로
 * 각 레코드들은 콤마로 분리된 데이터들의 연속입니다.
 * 첫 레코드는 파일의 나머지 포맷을 정의하는 항목 이름 목록을 포함합니다.
 * 필요한 항목이름은 사용자 이름, 암호, 이름, 성, 이메일 입니다.';
+$string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = '올린 사용자 미리보기';
 $string['uploadusersresult'] = '올린 사용자  결과';
 $string['useraccountupdated'] = '사용자가 업데이트됨';

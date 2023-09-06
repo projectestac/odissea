@@ -16,7 +16,6 @@
 
 namespace mod_lti;
 
-use externallib_advanced_testcase;
 use mod_lti_external;
 use mod_lti_testcase;
 
@@ -26,6 +25,7 @@ global $CFG;
 
 require_once($CFG->dirroot . '/webservice/tests/helpers.php');
 require_once($CFG->dirroot . '/mod/lti/lib.php');
+require_once($CFG->dirroot . '/mod/lti/tests/mod_lti_testcase.php');
 
 /**
  * External tool module external functions tests
@@ -36,7 +36,7 @@ require_once($CFG->dirroot . '/mod/lti/lib.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since      Moodle 3.0
  */
-class externallib_test extends externallib_advanced_testcase {
+class externallib_test extends mod_lti_testcase {
 
     /**
      * Set up for every test
@@ -82,39 +82,6 @@ class externallib_test extends externallib_advanced_testcase {
             'studentrole' => $studentrole,
             'teacherrole' => $teacherrole
         ];
-    }
-
-    /**
-     * Generate a tool type.
-     *
-     * @param string $uniqueid Each tool type needs a different base url. Provide a unique string for every tool type created.
-     * @param int|null $toolproxyid Optional proxy to associate with tool type.
-     * @return stdClass A tool type.
-     */
-    protected function generate_tool_type(string $uniqueid, int $toolproxyid = null): \stdClass {
-        // Create a tool type.
-        $type = new \stdClass();
-        $type->state = LTI_TOOL_STATE_CONFIGURED;
-        $type->name = "Test tool $uniqueid";
-        $type->description = "Example description $uniqueid";
-        $type->toolproxyid = $toolproxyid;
-        $type->baseurl = $this->getExternalTestFileUrl("/test$uniqueid.html");
-        lti_add_type($type, new \stdClass());
-        return $type;
-    }
-
-    /**
-     * Generate a tool proxy.
-     *
-     * @param string $uniqueid Each tool proxy needs a different reg url. Provide a unique string for every tool proxy created.
-     * @return stdClass A tool proxy.
-     */
-    protected function generate_tool_proxy(string $uniqueid): \stdClass {
-        // Create a tool proxy.
-        $proxy = mod_lti_external::create_tool_proxy("Test proxy $uniqueid",
-                $this->getExternalTestFileUrl("/proxy$uniqueid.html"), array(), array());
-        $proxy = (object)\external_api::clean_returnvalue(mod_lti_external::create_tool_proxy_returns(), $proxy);
-        return $proxy;
     }
 
     /**
@@ -225,7 +192,7 @@ class externallib_test extends externallib_advanced_testcase {
 
         // Create what we expect to be returned when querying the two courses.
         // First for the student user.
-        $expectedfields = array('id', 'coursemodule', 'course', 'name', 'intro', 'introformat', 'introfiles',
+        $expectedfields = array('id', 'coursemodule', 'course', 'name', 'intro', 'introformat', 'introfiles', 'lang',
             'launchcontainer', 'showtitlelaunch', 'showdescriptionlaunch', 'icon', 'secureicon');
 
         // Add expected coursemodule and data.
@@ -236,7 +203,9 @@ class externallib_test extends externallib_advanced_testcase {
         $lti1->visible = true;
         $lti1->groupmode = 0;
         $lti1->groupingid = 0;
+        $lti1->section = 0;
         $lti1->introfiles = [];
+        $lti1->lang = '';
 
         $lti2->coursemodule = $lti2->cmid;
         $lti2->introformat = 1;
@@ -244,7 +213,9 @@ class externallib_test extends externallib_advanced_testcase {
         $lti2->visible = true;
         $lti2->groupmode = 0;
         $lti2->groupingid = 0;
+        $lti2->section = 0;
         $lti2->introfiles = [];
+        $lti2->lang = '';
 
         foreach ($expectedfields as $field) {
             $expected1[$field] = $lti1->{$field};
@@ -288,7 +259,7 @@ class externallib_test extends externallib_advanced_testcase {
         $additionalfields = array('timecreated', 'timemodified', 'typeid', 'toolurl', 'securetoolurl',
             'instructorchoicesendname', 'instructorchoicesendemailaddr', 'instructorchoiceallowroster',
             'instructorchoiceallowsetting', 'instructorcustomparameters', 'instructorchoiceacceptgrades', 'grade',
-            'resourcekey', 'password', 'debuglaunch', 'servicesalt', 'visible', 'groupmode', 'groupingid');
+            'resourcekey', 'password', 'debuglaunch', 'servicesalt', 'visible', 'groupmode', 'groupingid', 'section', 'lang');
 
         foreach ($additionalfields as $field) {
             $expectedltis[0][$field] = $lti1->{$field};
@@ -475,7 +446,6 @@ class externallib_test extends externallib_advanced_testcase {
      * Test get_tool_types.
      */
     public function test_mod_lti_get_tool_types() {
-        // Create a tool proxy.
         $this->setAdminUser();
         $proxy = mod_lti_external::create_tool_proxy('Test proxy', $this->getExternalTestFileUrl('/test.html'), array(), array());
         $proxy = (object) \external_api::clean_returnvalue(mod_lti_external::create_tool_proxy_returns(), $proxy);

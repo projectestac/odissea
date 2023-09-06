@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'ko', version '3.11'.
+ * Strings for component 'qtype_shortanswer', language 'ko', version '4.1'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -39,6 +39,7 @@ $string['notenoughanswers'] = '이 유형의 질문은 적어도  {$a} 답이 �
 $string['pleaseenterananswer'] = '답을 입력하세요.';
 $string['pluginname'] = '주관식 단답형';
 $string['pluginname_help'] = '질문(그림을 포함할 수 있음)에 대하여 응답자들은 단어나 간단한 구문을 입력합니다. 여러가지 가능한 정답이 있을 수 있으며 각각 점수가 다를 수 있습니다. 만일 "대소문자 구별"이 선택되면 "Word"와 "word"에 대해 다른 점수를 받게 됩니다.';
+$string['pluginname_link'] = 'question/type/shortanswer';
 $string['pluginnameadding'] = '단답형 질문 추가';
 $string['pluginnameediting'] = '단답형 질문 편집';
 $string['pluginnamesummary'] = '몇 개의 표준답안(대체문자 포함가능)과 비교하여 채점될 수 있는, 한 단어 혹은 몇 단어의 응답을 허용합니다.';

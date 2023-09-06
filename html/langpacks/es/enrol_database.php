@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'es', version '3.11'.
+ * Strings for component 'enrol_database', language 'es', version '4.1'.
  *
  * @package     enrol_database
  * @category    string
@@ -76,5 +76,5 @@ $string['settingsheaderlocal'] = 'Asignación de campos locales';
 $string['settingsheadernewcourses'] = 'Creación de nuevos cursos';
 $string['settingsheaderremote'] = 'Sincronización de matriculación remota';
 $string['syncenrolmentstask'] = 'Tarea de sincronización de las  inscripciones por base de datos externa';
-$string['templatecourse'] = 'Nueva plantilla de curso';
-$string['templatecourse_desc'] = 'Opcional: Auto-crear cursos puede copiar su configuración de una plantilla de curso. Escriba aquí el nombre corto de la plantilla de curso.';
+$string['templatecourse'] = 'Plantilla para nuevo curso';
+$string['templatecourse_desc'] = 'Opcional: Auto-crear cursos puede copiar su configuración de un curso plantilla. Escriba aquí el nombre corto del curso  plantilla.';

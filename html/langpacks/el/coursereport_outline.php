@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'coursereport_outline', language 'el', version '3.11'.
+ * Strings for component 'coursereport_outline', language 'el', version '4.1'.
  *
  * @package     coursereport_outline
  * @category    string
@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['outline:view'] = 'Προβολή αναφοράς δραστηριότητας μαθήματος';
 $string['pluginname'] = 'Δραστηριότητα μαθημάτων';
 $string['pluginpagetype'] = 'Αναφορά δραστηριότητας μαθήματος';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'gl', version '3.11'.
+ * Strings for component 'auth_ldap', language 'gl', version '4.1'.
  *
  * @package     auth_ldap
  * @category    string
@@ -157,7 +157,6 @@ $string['updatepasserrorexpire'] = 'Produciuse un erro en user_update_password()
 $string['updatepasserrorexpiregrace'] = 'Produciuse un erro en user_update_password() ao modificar a caducidade e/ou os accesos libres. Código de erro: {$a->errno}. Cadea do erro: {$a->errstring}';
 $string['updateremfail'] = 'Produciuse un erro ao actualizar o rexistro LDAP. Código de erro: {$a->errno}; Cadea do erro: {$a->errstring}<br/>Chave ({$a->key}). anterior valor de moodle: «{$a->ouvalue}» novo valor: «{$a->nuvalue}»';
 $string['updateremfailamb'] = 'Non foi posíbel actualizar LDAP co campo ambiguo {$a->key}; anterior valor de moodle: «{$a->ouvalue}», novo valor: «{$a->nuvalue}»';
-$string['updateremfailfield'] = 'Non foi posíbel actualizar LDAP co campo inexistente {$a->ldapkey}. Chave ({$a->key}); anterior valor de moodle: «{$a->ouvalue}», novo valor: «{$a->nuvalue}»';
 $string['updateusernotfound'] = 'Non foi posíbel atopar o usuario ao actualizar externamente. Detalles: base da busca: «{$a->userdn}»; filtro de busca: «(objectClass=*)»; atributos da busca: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() non admite o tipo de usuario seleccionado: usertype: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() non admite o tipo de usuario seleccionado: usertype: {$a}';

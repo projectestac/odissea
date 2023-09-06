@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_analytics_graphs', language 'fr', version '3.11'.
+ * Strings for component 'block_analytics_graphs', language 'fr', version '4.1'.
  *
  * @package     block_analytics_graphs
  * @category    string
@@ -74,7 +74,7 @@ $string['lowest_grade'] = 'Note la plus basse';
 $string['mailcopyalert'] = 'Copie du message de Graphiques d\'analyse ! ----';
 $string['message_text'] = 'Texte du message';
 $string['new_message'] = 'Nouveau message';
-$string['no_access'] = 'Pas d\'accès';
+$string['no_access'] = 'Aucun accès';
 $string['no_deadline'] = 'Pas de date limite';
 $string['no_graph'] = 'Aucune donnée pour générer le graphique';
 $string['no_messages'] = 'Cet étudiant n\'a pas de message';
@@ -127,7 +127,7 @@ $string['timeaccesschart_title'] = 'Activités des étudiants';
 $string['title_access'] = 'Distribution de l\'accès aux éléments (activités et ressources)';
 $string['title_students'] = 'Étudiants';
 $string['tooltip_grade_achievement'] = 'avec notes inférieures ou égales à';
-$string['topic'] = 'Sujet';
+$string['topic'] = 'Section';
 $string['total_accessed_resources'] = 'Total des ressources consultées';
 $string['total_grades'] = 'Nombre de notes';
 $string['total_not_accessed_resources'] = 'Total des ressources non consultées';

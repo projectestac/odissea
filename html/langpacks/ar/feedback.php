@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ar', version '3.11'.
+ * Strings for component 'feedback', language 'ar', version '4.1'.
  *
  * @package     feedback
  * @category    string
@@ -43,8 +43,8 @@ $string['average'] = 'متوسط';
 $string['bold'] = 'داكن';
 $string['calendarend'] = '{$a} يُغلق';
 $string['calendarstart'] = '{$a} يُفتح';
-$string['cannotaccess'] = 'يمكنك الوصول إلى هذه الإفادة حصراً من مقرر دراسي';
-$string['cannotsavetempl'] = 'حفظ القوالب غير مسموح به';
+$string['cannotaccess'] = 'يمكنك الوصول إلى هذه الإفادة حصراً من مساق';
+$string['cannotsavetempl'] = 'حفظ المظاهر غير مسموح به';
 $string['captcha'] = 'كلمة التحقق';
 $string['captchanotset'] = 'لم يتم إعداد كلمة التحقق.';
 $string['check'] = 'متعدد الخيارات - متعدد الاجابات';
@@ -59,21 +59,21 @@ $string['completed_feedbacks'] = 'الاجابات المسلمة';
 $string['completedon'] = 'مكتمل في {$a}';
 $string['completiondetail:submit'] = 'تقديم الإفادة';
 $string['completionsubmit'] = 'المعاينة بمثابة مكتمل إذا تم تسليم الإفادة';
-$string['configallowfullanonymous'] = 'عند ضبطه على \'نعم\'، يمكن للمستخدمين إكمال نشاط الإفادة في صفحة الواجهة دون الحاجة إلى تسجيل دخولهم.';
+$string['configallowfullanonymous'] = 'عند ضبطه على \'نعم\'، يمكن للمستخدمين إكمال نشاط الإفادة في واجهة الموقع دون الحاجة إلى تسجيل دخولهم.';
 $string['confirmdeleteentry'] = 'هل أنت متأكد من رغبتك في حذف هذا الادخال؟';
 $string['confirmdeleteitem'] = 'هل أنت متأكد من رغبتك في حذف هذا العنصر؟';
-$string['confirmdeletetemplate'] = 'هل أنت متأكد من رغبتك في حذف هذا القالب؟';
-$string['confirmusetemplate'] = 'هل أنت متأكد من رغبتك في استعمال هذا القالب؟';
+$string['confirmdeletetemplate'] = 'هل أنت متأكد من رغبتك في حذف هذا المظهر؟';
+$string['confirmusetemplate'] = 'هل أنت متأكد من رغبتك في استعمال هذا المظهر؟';
 $string['continue_the_form'] = 'استمر بإجابة الأسئلة';
 $string['count_of_nums'] = 'عدد الأرقام';
-$string['courseid'] = 'مُعرَّف المقرر الدراسي';
-$string['creating_templates'] = 'حفظ هذه الأسئلة كقالب جديد';
+$string['courseid'] = 'مُعرَّف المساق';
+$string['creating_templates'] = 'أحفظ هذه الأسئلة كمظهر جديد';
 $string['delete_entry'] = 'احذف المدخل';
 $string['delete_item'] = 'احذف سؤال';
 $string['delete_old_items'] = 'احذف العناصر القديمة';
 $string['delete_pagebreak'] = 'حذف فاصل الصفحات';
-$string['delete_template'] = 'حذف القالب';
-$string['delete_templates'] = 'حذف القالب...';
+$string['delete_template'] = 'احذف مظهر';
+$string['delete_templates'] = 'إحذف المظهر...';
 $string['depending'] = 'التبِعات';
 $string['depending_help'] = 'من الممكن إظهار العنصر المعتمد على قيمة عنصر آخر.<br />
 <strong>إليك مثالاً على ذلك.</strong><br />
@@ -97,7 +97,7 @@ $string['dependvalue'] = 'القيمة المعتَمَد عليها';
 $string['description'] = 'الوصف';
 $string['do_not_analyse_empty_submits'] = 'تغافل عن التسليمات الفارغة في التحليلات';
 $string['downloadresponseas'] = 'قم بتنزيل كل الإجابات بشكل:';
-$string['drop_feedback'] = 'أحذف من المقرر الدراسي هذا';
+$string['drop_feedback'] = 'أحذف من المساق هذا';
 $string['dropdown'] = 'خيارات متعددة - إجابة واحدة مسموح بها (قائمة منسدلة)';
 $string['dropdown_values'] = 'إجابات';
 $string['dropdownlist'] = 'خيارات متعددة - إجابة واحدة (قائمة منسدلة)';
@@ -121,10 +121,10 @@ $string['export_questions'] = 'تصدير الأسئلة';
 $string['export_to_excel'] = 'تصدير إلى Excel';
 $string['feedback:addinstance'] = 'إضافة إفادة جديدة';
 $string['feedback:complete'] = 'إكمال الإفادة';
-$string['feedback:createprivatetemplate'] = 'إنشاء قالب خاص';
-$string['feedback:createpublictemplate'] = 'إنشاء قالب عام';
+$string['feedback:createprivatetemplate'] = 'إنشاء مظهر خاص';
+$string['feedback:createpublictemplate'] = 'إنشاء مظهر عام';
 $string['feedback:deletesubmissions'] = 'حذف التسليمات المكتملة';
-$string['feedback:deletetemplate'] = 'حذف القالب';
+$string['feedback:deletetemplate'] = 'حذف المظهر';
 $string['feedback:edititems'] = 'تحرير العناصر';
 $string['feedback:mapcourse'] = 'تعيين المقررات الدراسية للإفادات العمومية';
 $string['feedback:receivemail'] = 'تلقي إشعار البريد الالكتروني';
@@ -136,8 +136,9 @@ $string['feedback_is_not_open'] = 'الإفادة ليست مفتوحة';
 $string['feedbackclose'] = 'السماح بالإجابات إلى';
 $string['feedbackcompleted'] = '{$a->username} قد أكمل {$a->feedbackname}';
 $string['feedbackopen'] = 'السماح بالإجابات من';
+$string['feedbackupdated'] = 'تم تحديث الإفادة';
 $string['file'] = 'الملف';
-$string['filter_by_course'] = 'الترشيح حسب المقرر الدراسي';
+$string['filter_by_course'] = 'الترشيح حسب المساق';
 $string['handling_error'] = 'وقع خطأ عند معاملة إجراء وحدة الإفادة';
 $string['hide_no_select_option'] = 'إخفِ خيار "غير محدد"';
 $string['horizontal'] = 'أفقي';
@@ -149,10 +150,12 @@ $string['indicator:cognitivedepth'] = 'الإفادة معرفياً';
 $string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في نشاط الإفادة.';
 $string['indicator:cognitivedepthdef'] = 'الإفادة معرفياً';
 $string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها نشاطات الإفادة خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة، تقديم)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
 $string['indicator:socialbreadth'] = 'الإفادة إجتماعياً';
 $string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في نشاط الإفادة.';
 $string['indicator:socialbreadthdef'] = 'الإفادة إجتماعياً';
 $string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها نشاطات الإفادة خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً، المشاركة مع الآخرين)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['info'] = 'المعلومات';
 $string['infotype'] = 'نوع المعلومات';
 $string['insufficient_responses'] = 'إجابات غير كافية';
@@ -181,10 +184,11 @@ $string['modulename_help'] = 'وحدة نشاط الإفادة تُمكن الم
 
 يمكن استعمال نشاطات الإفادة:
 
-* لتقييم المقرر، للمساعدة في تحسين المحتوى للمشاركين المستقبليين
-* لتمكين المشاركين من التسجيل في وحدات المقرر، أحداثه... إلخ.
+* لتقييم المقرر الدراسي، للمساعدة في تحسين المحتوى للمشاركين المستقبليين
+* لتمكين المشاركين من التسجيل في وحدات المساق، أحداثه... إلخ.
 * استطلاع آراء الضيوف بشأن إختيار المقررات الدراسية، سياسات المدرسة... إلخ.
 * الاستبيانات بشأن محاربة الاعتداءات الشخصية حيث يمكن للطلاب الإبلاغ عن الحوادث دون كشف هوياتهم';
+$string['modulename_link'] = 'mod/feedback/view';
 $string['modulenameplural'] = 'إفادات';
 $string['move_item'] = 'أنقل هذا السؤال ';
 $string['multichoice'] = 'متعدد الخيارات';
@@ -202,7 +206,7 @@ $string['no_handler'] = 'لا يتوفر معامل إجراء لـ';
 $string['no_itemlabel'] = 'بلا ملصق';
 $string['no_itemname'] = 'لا يوجد اسم عنصر';
 $string['no_items_available_yet'] = 'لم يتم وضع أي أسئلة بعد';
-$string['no_templates_available_yet'] = 'لا قوالب متاحة بعد';
+$string['no_templates_available_yet'] = 'لا مظاهر متاحة بعد';
 $string['non_anonymous'] = 'سيتم تسجيل اسم المستخدم وعرضه مع الإجابات';
 $string['non_anonymous_entries'] = 'الإدخالات مكشوفة الهوية ({$a})';
 $string['non_respondents_students'] = 'الطلاب غير المتجاوبين ({$a})';
@@ -226,6 +230,7 @@ $string['pagebreak'] = 'فاصل الصفحات';
 $string['pluginadministration'] = 'إدارة الإفادة';
 $string['pluginname'] = 'الإفادة';
 $string['position'] = 'موضع';
+$string['previewquestions'] = 'استعراض الأسئلة';
 $string['previous_page'] = 'الصفحة السابقة';
 $string['privacy:metadata:completed'] = 'سِجل بالتسليمات المقدمة إلى الإفادة';
 $string['privacy:metadata:completed:anonymousresponse'] = 'فيما إذا كان التسليم معداً لإخفاء هوية صاحبه';
@@ -250,14 +255,14 @@ $string['response_nr'] = 'رقم الإجابة';
 $string['responses'] = 'إجابات';
 $string['responsetime'] = 'وقت الاستجابات';
 $string['save_as_new_item'] = 'أحفظ كسؤال جديد';
-$string['save_as_new_template'] = 'الحفظ بمثابة قالب جديد';
+$string['save_as_new_template'] = 'أحفظ كمظهر جديد';
 $string['save_entries'] = 'تسليم إجاباتك';
 $string['save_item'] = 'أحفظ السؤال';
 $string['saving_failed'] = 'فشل الحفظ';
 $string['search:activity'] = 'الإفادة - معلومات النشاط';
-$string['search_course'] = 'البحث في مقرر دراسي';
+$string['search_course'] = 'البحث في مساق';
 $string['searchcourses'] = 'البحث في المقررات الدراسية';
-$string['searchcourses_help'] = 'إبحث عن رمز أو اسم المقرر/المقررات التي تريد ربطها مع هذه الإفادة.';
+$string['searchcourses_help'] = 'إبحث عن رمز أو اسم المقرر/المقررات الدراسية التي تريد ربطها مع هذه الإفادة.';
 $string['selected_dump'] = 'الفهارس المختارة لمتغير $SESSION مطروحة أدناه:';
 $string['send'] = 'أرسل';
 $string['send_message'] = 'أرسل الإشعار';
@@ -267,16 +272,16 @@ $string['show_entries'] = 'عرض الردود';
 $string['show_entry'] = 'إظهار إجابة';
 $string['show_nonrespondents'] = 'معاينة غير المستجيبين';
 $string['site_after_submit'] = 'الموقع بعد التسليم';
-$string['sort_by_course'] = 'أفرز حسب المقرر الدراسي';
+$string['sort_by_course'] = 'أفرز حسب المساق';
 $string['started'] = 'بدأ';
 $string['startedon'] = 'بدأ في {$a}';
 $string['subject'] = 'موضوع';
 $string['switch_item_to_not_required'] = 'إجعله غير مطلوب';
 $string['switch_item_to_required'] = 'إجعله مطلوباً';
-$string['template'] = 'القالب';
-$string['template_deleted'] = 'تم حذف القالب';
-$string['template_saved'] = 'القالب الذي تم حفظه';
-$string['templates'] = 'القوالب';
+$string['template'] = 'مظهر';
+$string['template_deleted'] = 'تم حذف المظهر';
+$string['template_saved'] = 'المظهر الذي تم حفظه';
+$string['templates'] = 'مظاهر';
 $string['textarea'] = 'إجابة بنص أطول';
 $string['textarea_height'] = 'عدد الأسطر';
 $string['textarea_width'] = 'العرض';
@@ -288,8 +293,9 @@ $string['this_feedback_is_already_submitted'] = 'لقد قمت مسبقاً بإ
 $string['typemissing'] = 'قيمة مفقودة "النوع"';
 $string['update_item'] = 'حفظ تغييرات السؤال';
 $string['url_for_continue'] = 'إربطه مع النشاط التالي';
-$string['url_for_continue_help'] = 'بعد تقديم الإفادة، سيتم عرض زر الاستمرار، والذي يذهب إلى صفحة المقرر الدراسي. كبديل عن ذلك، قد يرتبط بالنشاط الآتي إذا تم وضع رابطه هنا.';
+$string['url_for_continue_help'] = 'بعد تقديم الإفادة، سيتم عرض زر الاستمرار، والذي يذهب إلى صفحة المساق. كبديل عن ذلك، قد يرتبط بالنشاط الآتي إذا تم وضع رابطه هنا.';
 $string['use_one_line_for_each_value'] = 'استعمل سطراً واحداً لكل إجابة!';
-$string['use_this_template'] = 'استعمل هذا القالب';
-$string['using_templates'] = 'استعمل القالب';
+$string['use_this_template'] = 'استخدم هذا المظهر';
+$string['using_templates'] = 'استخدم مظهر';
 $string['vertical'] = 'عمودي';
+$string['whatfor'] = 'ماذا تريد أن تفعل؟';

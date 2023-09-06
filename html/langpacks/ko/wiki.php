@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ko', version '3.11'.
+ * Strings for component 'wiki', language 'ko', version '4.1'.
  *
  * @package     wiki
  * @category    string
@@ -93,6 +93,7 @@ $string['formatcreole'] = '크리올 포맷';
 $string['formatcreole_help'] = 'Creole은 적절한 마크업을 삽입하기 위한 편집 도구바가 있는 보편적인 위키 마크업 언어입니다.
 
 새로운 페이지를 만들기 위해서는 새로운 페이지 이름을 이중 대괄호안에 입력하면 됩니다. 예 [[페이지 2]]';
+$string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'HTML 포맷';
 $string['formathtml_help'] = 'HTML 에디터는 콘텐츠를 포맷하는데 사용할 수 있습니다.
 
@@ -101,10 +102,13 @@ $string['formatnwiki'] = 'NWiki 포맷';
 $string['formatnwiki_help'] = 'Nwiki는 Nwiki 모듈에 사용되는 미디어위키와 유사한 마크업 언어입니다.
 
 새로운 페이지를 만들기 위해서는 새로운 페이지 이름을 이중 대괄호안에 입력하면 됩니다. 예 [[페이지 2]]';
+$string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = '이력';
 $string['history_help'] = '페이지의 이전버전에 링크된 이력 목록';
 $string['html'] = 'HTML';
 $string['incorrectdeleteversions'] = '제거하기위해 입력한 페이지 버전이 맞지 않습니다.';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['individualpagedoesnotexist'] = '개인 위키페이지가 없습니다.';
 $string['insertcomment'] = '의견 삽입';
 $string['insertimage'] = '이미지 삽입 ...';
@@ -126,6 +130,7 @@ $string['migrationfinishednowikis'] = '이전이 완료되었습니다. 아무 �
 $string['missingpages'] = '내용이 없는 페이지들';
 $string['modified'] = '수정됨';
 $string['modulename'] = '위키';
+$string['modulename_link'] = 'mod/wiki/view';
 $string['modulenameplural'] = '위키문서';
 $string['navigation'] = '찾아가기';
 $string['navigationfrom'] = '이 페이지가 온 곳';

@@ -6,6 +6,7 @@
 
 .userprofile .page-context-header {
     margin-bottom: 10px;
+    column-count: 1;
 }
 
 .userprofile .description {
@@ -314,5 +315,14 @@
 [data-filterregion="value"] {
     div:first-of-type {
         @extend .align-top;
+    }
+}
+
+#page-user-contactsitesupport {
+    .supporticon {
+        i {
+            font-size: 35px;
+        }
+
     }
 }

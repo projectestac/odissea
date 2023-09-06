@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'it', version '3.11'.
+ * Strings for component 'tool_uploadcourse', language 'it', version '4.1'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -31,7 +31,7 @@ $string['allowrenames'] = 'Consenti cambio titoli';
 $string['allowrenames_help'] = 'Consente di accettare il campo cambio titoli';
 $string['allowresets'] = 'Consenti reset';
 $string['allowresets_help'] = 'Consente di accettare il campo reset';
-$string['cachedef_helper'] = 'Cache helper';
+$string['cachedef_helper'] = 'Aiuto per la cache';
 $string['cannotdeletecoursenotexist'] = 'Non è possibile eliminare un corso inesistente';
 $string['cannotforcelang'] = 'Non sei autorizzato a forzare la lingua del corso';
 $string['cannotgenerateshortnameupdatemode'] = 'Non è possibile generare un titolo abbreviato se sono ammessi aggiornamenti';
@@ -39,7 +39,7 @@ $string['cannotreadbackupfile'] = 'Non è possibile leggere il file di backup';
 $string['cannotrenamecoursenotexist'] = 'Non è possibile cambiare titolo ad un corso inesistente';
 $string['cannotrenameidnumberconflict'] = 'Non è possibile cambiare titolo al corso, il codice identificativo è in conflitto con un corso esistente';
 $string['cannotrenameshortnamealreadyinuse'] = 'Non è possibile cambiare titolo al corso, il titolo abbreviato è già utilizzato';
-$string['cannotupdatefrontpage'] = 'Non è consentito modificare la pagina home';
+$string['cannotupdatefrontpage'] = 'Non sei autorizzato a modificare la pagina home del sito.';
 $string['canonlyrenameinupdatemode'] = 'È possibile cambiare il titolo del corso solo quando è consentito l\'aggiornamento';
 $string['canonlyresetcourseinupdatemode'] = 'È possibile solamente il reset del corso in modalità aggiornamento';
 $string['couldnotresolvecatgorybyid'] = 'Non è stato possibile individuare la categoria tramite l\'ID';
