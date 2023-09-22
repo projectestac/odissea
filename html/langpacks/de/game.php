@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allattempts'] = 'Zeige alle Versuche';
+$string['allattempts'] = 'Alle Versuche anzeigen';
 $string['allstudents'] = 'Alle anzeigen $a';
 $string['and'] = 'und';
 $string['attempt'] = 'Versuch';
@@ -38,7 +38,7 @@ $string['attemptsonly'] = 'Nur Teilnehmer mit Versuchen zeigen';
 $string['bookquiz_cant_update_lastchaperid'] = 'Die Tabelle game_bookquiz kann mit lastchapterid nicht zu %d aktualisiert werden';
 $string['bookquiz_categories'] = 'Kategorien';
 $string['bookquiz_chapters'] = 'Kapitel';
-$string['bookquiz_empty'] = 'Das Buch ist leer';
+$string['bookquiz_empty'] = 'Das Buch ist leer.';
 $string['bookquiz_layout'] = 'Layout';
 $string['bookquiz_layout0'] = 'Fragen oben anzeigen';
 $string['bookquiz_layout1'] = 'Fragen unten anzeigen';

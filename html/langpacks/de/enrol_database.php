@@ -75,6 +75,6 @@ $string['settingsheaderdb'] = 'Externe Datenbankverbindung';
 $string['settingsheaderlocal'] = 'Lokale Feldzuordnung';
 $string['settingsheadernewcourses'] = 'Erstellen eines neuen Kurses';
 $string['settingsheaderremote'] = 'Einschreibesynchronisation (Remote)';
-$string['syncenrolmentstask'] = 'Externe Einschreibeverfahren Synchronisierungs-Task';
+$string['syncenrolmentstask'] = 'Synchronisierung von Einschreibungen über externe Datenbanken';
 $string['templatecourse'] = 'Vorlage für neue Kurse';
 $string['templatecourse_desc'] = 'Optional: Automatisch angelegte Kurse können ihre Einstellungen aus einem Vorlagenkurs beziehen. Tragen Sie hier den Kursnamen des Vorlagenkurses ein. ';

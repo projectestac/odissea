@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addfiletypes'] = 'Dateityp hinzufügen';
 $string['corestring'] = 'Alternativer Text';
-$string['corestring_help'] = 'Diese Option kann verwendet werden, um einen von den Einträgen in mimetypes.php abweichenden Text festzulegen.  Meist sollte die Option leer bleiben. Für benutzerdefinierte Typen verwenden Sie das Feld \'Beschreibung\'.';
+$string['corestring_help'] = 'Diese Option kann verwendet werden, um einen von den Einträgen in mimetypes.php abweichenden Text festzulegen.  Meist sollte die Option leer bleiben. Für nutzerdefinierte Typen verwenden Sie das Feld \'Beschreibung\'.';
 $string['defaulticon'] = 'Icon für MIME-Typ';
 $string['defaulticon_help'] = 'Falls es mehrere Dateiendungen für den gleichen MIME-Type gibt, wählen Sie in dieser Option aus, welches Icon für diesen MIME-Typ verwendet werden soll.';
 $string['delete_confirmation'] = 'Möchten Sie wirklich \'.{$a}\' löschen?';

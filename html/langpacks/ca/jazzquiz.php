@@ -163,6 +163,7 @@ $string['instructions_for_instructor'] = '<h3>Assegureu-vos de llegir les instru
             </td>
         </tr>
     </table>';
+$string['instructions_for_student'] = '<p>Espereu que l\'instructor comenci el qüestionari.</p>';
 $string['instructor_sessions_going'] = 'Ja hi ha una sessió en curs. Cliqueu el botó de sota per anar-hi';
 $string['join_quiz'] = 'Uniu-vos al qüestionari';
 $string['join_quiz_instructions'] = 'Cliqueu avall per unir-vos al qüestionari';

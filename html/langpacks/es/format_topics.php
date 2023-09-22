@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Añadir secciones';
+$string['addsections'] = 'Añadir sección';
 $string['currentsection'] = 'Tema actual';
 $string['deletesection'] = 'Borrar tema';
 $string['editsection'] = 'Editar tema';

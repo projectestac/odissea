@@ -50,4 +50,4 @@ $string['privacy:preference:shuffleanswers'] = 'Si las respuestas deben barajars
 $string['regradeissuenumchoiceschanged'] = 'El número de opciones ha cambiado.';
 $string['regradeissuenumstemschanged'] = 'Ha cambiado el número de subpreguntas.';
 $string['shuffle'] = 'Barajar';
-$string['shuffle_help'] = 'Si está habilitado, el orden de los elementos (respuestas) se elaborará al azar en cada intento, siempre que suponiendo que la opcion "Ordenar al azar" en los ajustes del cuestionario este también habilitada.';
+$string['shuffle_help'] = 'Si está habilitado, el orden de los elementos (respuestas) se elaborará al azar en cada intento, siempre que suponiendo que la opcion "Ordenar al azar" en los ajustes del cuestionario esté también habilitada. En una pregunta de emparejamiento, sólo están afectadas por este parámetro las preguntas. Las respuestas siempre estarán barajadas aleatoriamente.';

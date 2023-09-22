@@ -29,5 +29,5 @@ $string['fieldtypelabel'] = 'Área de texto';
 $string['maxbytes'] = 'Tamaño máximo de archivo incrustado (bytes)';
 $string['maxbytes_desc'] = 'Si se pone en cero será ilimitado por defecto';
 $string['pluginname'] = 'Área de texto';
-$string['privacy:metadata'] = 'El componente de campo de área de texto no almacena ningún dato personal, utiliza tabla definidas en mod_data.';
+$string['privacy:metadata'] = 'El componente de campo de área de texto no almacena ningún dato personal, utiliza tablas definidas en mod_data.';
 $string['sample'] = '</p>Esta es un área de texto. Permite a los usuarios introducir textos largos que se expanden sobre múltiples líneas.</p></p>Puede elegir el tamaño de sus áreas de texto en líneas y en columnas.</p></p>Se puede dar formato al texto de un área de texto, por ejemplo en <strong>negrita</strong>, y también incluir <a href="#">enlaces</a> o imágenes.</p>';

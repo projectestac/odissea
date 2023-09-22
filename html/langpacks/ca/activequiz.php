@@ -43,4 +43,5 @@ $string['sessionname'] = 'Nom de la sessió';
 $string['sessionname_required'] = 'El nom de la sessió és necessari';
 $string['start_session'] = 'Comença la sessió';
 $string['startquiz'] = 'Comença el qüestionari';
+$string['studentquizinst'] = '<p>Espereu que l\'instructor comenci el qüestionari. Un cop hagi començat, veureu un temporitzador amb un compte enrere per al començament de la primera pregunta.</p>';
 $string['waitforquestiontime'] = 'Espera abans que comenci el temps per respondre la pregunta';

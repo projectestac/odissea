@@ -34,8 +34,7 @@ $string['upload_error_cant_write'] = 'Fehler beim Speichern der Datei';
 $string['upload_error_extension'] = 'Eine PHP Extension hat das Hochladen der Datei abgebrochen';
 $string['upload_error_form_size'] = 'Die ausgewählte Datei ist größer als MAX_FILE_SIZE
 ';
-$string['upload_error_ini_size'] = 'Die ausgewählte Datei ist größer als UPLOAD_MAX_FILESIZE in der Datei php.ini
-';
+$string['upload_error_ini_size'] = 'Die Datei ist größer als die erlaubte Maximalgröße.';
 $string['upload_error_invalid_file'] = 'Die Datei \'{$a}\' enthält keine Daten oder ist ein Verzeichnis. Zum Upload eines Verzeichnisses, zippen Sie dieses zuerst.';
 $string['upload_error_no_file'] = 'Keine Datei hochgeladen';
 $string['upload_error_no_tmp_dir'] = 'PHP benötigt ein temporäres Verzeichnis';

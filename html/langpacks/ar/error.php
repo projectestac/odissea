@@ -126,7 +126,7 @@ $string['cannotmoverolewithid'] = 'لا يمكن نقل الدور ذي المُ
 $string['cannotopencsv'] = 'لا يمكن فتح ملف CSV';
 $string['cannotopenfile'] = 'لا يمكن فتح ملف ({$a})';
 $string['cannotopenforwrit'] = 'لا يمكن فتح {$a} للكتابة';
-$string['cannotopentemplate'] = 'لا يمكن فتح ملف المظهر ({$a})';
+$string['cannotopentemplate'] = 'لا يمكن فتح ملف القالب ({$a})';
 $string['cannotopenzip'] = 'لا يمكن فتح الملف المضغوط، ربما لوجود خطأ في امتداده على نظام 64 بت.';
 $string['cannotoverridebaserole'] = 'لا يمكن تجاوز إمكانيات الدور الأساسي';
 $string['cannotoverriderolehere'] = 'لا يُسمح لك بتجاوز هذا الدور (المُعرَّف = {$a->roleid}) في هذا السياق ({$a->context})';
@@ -567,7 +567,7 @@ $string['tagdisabled'] = 'الوسوم معطّلة!';
 $string['tagnotfound'] = 'تعذر العثور على الوسم المحدد في قاعدة البيانات';
 $string['targetdatabasenotempty'] = 'قاعدة البيانات الهدف ليست فارغة. تم إيقاف عملية النقل لأسباب تتعلق بالسلامة.';
 $string['textconditionsnotallowed'] = 'مقارنات شروط أعمدة النصوص أمر غير مسموح به. لطفاً، استعمل الدالة sql_compare_text() في استعلامك.';
-$string['themenotinstall'] = 'هذا المظهر غير منصب!';
+$string['themenotinstall'] = 'هذا القالب غير منصب!';
 $string['tokengenerationfailed'] = 'تعذر توليد ترميز جديد.';
 $string['transactionvoid'] = 'تعذر تفريغ التبادل لأنه سبق القيام بذلك';
 $string['unenrolerror'] = 'وقع خطأ ما عند محاولة إلغاء انضمام ذلك الشخص';

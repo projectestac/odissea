@@ -760,7 +760,7 @@ Dans le cadre du cours {$a->courseid} {$a->coursefullname}, l\'étudiant {$a->se
 Le système de messagerie Moodle';
 $string['register_notify_teacher:register:group:fullmessage'] = 'Bonjour {$a->receivername} !
 
-Dans le cadre du cours {$a->courseid} {$a->coursefullname}, l\'étudiant {$a->sendername} a inscrit le groupe {$a->groupname} pour le créneau horaire du {$a-> date} à {$a->time} à {$a->location}.
+Dans le cadre du cours {$a->courseid} {$a->coursefullname}, l\'étudiant {$a->sendername} a inscrit le groupe {$a->groupname} pour le créneau horaire du {$a->date} à {$a->time} à {$a->location}.
 
 Le système de messagerie Moodle';
 $string['register_notify_teacher:register:group:smallmessage'] = 'L\'étudiant {$a->sendername} a enregistré le groupe {$a->groupname} pour le créneau horaire du {$a->date} à {$a->time} à {$a->location}.';

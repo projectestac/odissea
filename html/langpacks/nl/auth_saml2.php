@@ -83,8 +83,10 @@ $string['debug'] = 'Fouten opsporen';
 $string['debug_help'] = '<p>Dit voegt extra foutopsporing toe aan de normale Moodle logs | <a href=\'{$a}\'>Bekijk SSP configuratie</a></p>';
 $string['duallogin'] = 'Dubbele login';
 $string['duallogin_help'] = '<p>Indien ingeschakeld kunnen gebruikers zowel de knop voor manueel aanmelden als een SAML-loginknop zien. Indien uitgeschakeld worden ze onmiddellijk naar de loginpagina van de Idp gebracht.</p>
+<p>Indien passief kunnen gebruikers die al aangemeld zijn op de IDP automatisch aangemeld worden, anders worden ze naar de Moodle loginpagina gestuurd.</p>
 <p>Indien uitgeschakeld kunnen beheerders nog wel de manuele loginpagina zien via /login/index.php?saml=off</p>
-<p>Indien ingeschakeld kunnen externe pagina\'s diep linken in Moodle door gebruik te maken van saml, vb /course/view.php?id=45&saml=on</p>';
+<p>Indien ingeschakeld kunnen externe pagina\'s diep linken in Moodle door gebruik te maken van saml, vb /course/view.php?id=45&saml=on</p>
+<p>Indien ingesteld om de IDP-connectie te testen, zal het netwerk op verbinding gecontroleerd worden en als dat werkt zal de SAML-aanmelding opgestart worden.</p>';
 $string['emailtaken'] = 'Kan geen nieuwe account maken want  het e-mailadres {$a} is al geregistreerd';
 $string['emailtakenupdate'] = 'Je e-mailadres is niet geüpdatet want {$a} is al geregistreerd';
 $string['error'] = 'Login fout';
@@ -184,6 +186,9 @@ $string['regeneratepath'] = 'Certificaatspad: {$a}';
 $string['regeneratesuccess'] = 'Private sleutel en certificaat met succes opnieuw gegenereerd';
 $string['regeneratewarning'] = 'Waarschuwing! Het opnieuw genereren van een certificaat zal het huidige certificaat overschrijven en het zou kunnen dat je dit moet aanpassen op je IdP';
 $string['rememberidp'] = 'Aanmeldservice onthouden';
+$string['requestedattributes'] = 'Vereiste attributen';
+$string['requestedattributes_help'] = 'Sommige idp\'s willen dat de SP verklaart welke attributen gevraagd of vereist zijn. Voeg elk attribuut toe op een nieuwe regel en deze zullen in de SP metadata te vinden zijn onder de <code>AttributeConsumingService</code> tag. Als je een vereist veld wil aangeven, voeg dan een spatie en een * toe aan het einde van die regel.
+{$a->example}';
 $string['required'] = 'Dit veld is vereist';
 $string['requireint'] = 'Dit veld is vereist en moet een positief geheel getal zijn';
 $string['selectloginservice'] = 'Kies een aanmeldservice';
@@ -211,6 +216,9 @@ $string['taskmetadatarefresh'] = 'Metadata ververs-taak';
 $string['test_auth_button_login'] = 'IdP login';
 $string['test_auth_button_logout'] = 'IdP afmelden';
 $string['test_auth_str'] = 'Test isAuthenticated en login';
+$string['test_endpoint'] = 'URL connectietest';
+$string['test_endpoint_desc'] = 'Geef een URL om de connectie met je IDP-redirect te testen vanaf de client browser. Sommige gebruikers of netwerken hebben misschien geen verbinding met de IDP, gebaseerd op account of netwerkrechten.';
+$string['test_idp_conn'] = 'Test IDP-verbinding';
 $string['test_noticetestrequirements'] = 'Om de test te gebruiken, moet de plugin geconfigureerd zij, ingeschakeld en foutopsporing moet ingeschakeld zijn in de plugin-instellingen.';
 $string['test_passive_str'] = 'Test gebruik isPassive';
 $string['testdebuggingdisabled'] = 'Om deze testpagina te gebruiken moet SAML foutopsporing ingeschakeld zijn';

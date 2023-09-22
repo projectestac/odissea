@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addlanguage'] = 'Gehitu hizkuntza eskuz';
+$string['addlanguage_desc'] = 'Aukera hau hautatzen baduzu, hizkuntzak eskuz gehitu ahalko dituzu hizkuntzari dagokion ISO kodea azpiko testu-kutxan sartuta. Bestela, Hizkuntza-paketeak atalean gutxienez 2 hizkuntza instalatuta izan beharko dituzu.';
 $string['fallbackspantag'] = 'Onartu &lt;span&gt; etiketak';
 $string['fallbackspantag_desc'] = '{mlang} sintaxiaz gain baimendu ohiko &lt;span class="multilang"&gt; etiketak erabiltzea.';
 $string['helplinktext'] = 'Eduki eleaniztuna (2.bertsioa)';
@@ -45,12 +47,18 @@ Bloke eleaniztunak nabarmendu nahi badituzu, hurrengoaren moduko zerbait erabili
     color: #ffffff;
 }
 </pre>';
+$string['language_options_desc'] = 'Aukeratu Hizkuntza botoian zabaltzen den menuaren aukerak.
+<br>Zerrenda osoa eskuragarri dago hemen:<small><a href=\'https://www.w3schools.com/tags/ref_language_codes.asp\'><u>https://www.w3schools.com/tags/ref_language_codes.asp</u></a></small>';
+$string['language_setting'] = 'Hizkuntza botoiaren ezarpenak';
+$string['languageoptions'] = 'Hizkuntza';
 $string['multilang2:desc'] = 'Eduki eleaniztuna gehitzen laguntzen du (aurretik eduki eleaniztuna (2.bertsioa) iragazkia gaituta izan behar duzu)';
 $string['multilang2:language'] = 'Hizkuntza';
 $string['multilang2:other'] = 'Besteak';
+$string['multilang2:removetag'] = 'Kendu hizkuntza etiketa';
 $string['multilang2:viewlanguagemenu'] = 'Ikusi hizkuntzen aukera-menua TinyMCE editorean';
 $string['pluginname'] = 'Eduki eleaniztuna (2.bertsioa)';
 $string['privacy:metadata'] = 'Tiny editorearentzako eduki eleaniztuna (2.bertsioa) pluginak ez du datu pertsonalik biltzen.';
+$string['removealltags'] = 'Kendu hizkuntza etiketa guztiak';
 $string['requiremultilang2'] = 'Behartu Eduki eleaniztuna (2.bertsioa) iragazkia';
 $string['requiremultilang2_desc'] = 'Gaituz gero, hizkuntzen aukera-menua soilik egongo da ikusgai Eduki eleaniztuna (2.bertsioa) iragazkia gaituta badago.';
 $string['settings'] = 'Tiny editorearentzako eduki eleaniztunaren (2.bertsioa) ezarpenak';

@@ -75,3 +75,4 @@ $string['userselect'] = 'Seleziona attività';
 $string['viewby'] = '';
 $string['viewsinglegradeitem'] = 'Selezionare un elemento di valutazione sopra';
 $string['viewsingleuser'] = 'Selezionare sopra un utente per visualizzane le valutazioni';
+$string['viewsingleuserorgradeitem'] = 'Visualizza tutte le valutazioni di un singolo utente o elemento di valutazione.';

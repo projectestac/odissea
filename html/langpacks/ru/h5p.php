@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['a11yTitle:label'] = 'Ярлык вспомогательных технологий (ВТ)';
 $string['acceptTerms'] = 'Я принимаю <a href=":url" target="_blank">условия использования</a>';
 $string['accountDetailsLinkText'] = 'здесь';
 $string['actions'] = 'Действия';

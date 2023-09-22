@@ -39,7 +39,7 @@ $string['cachedef_plugininfo'] = 'Hier wird die Liste von Plugins mit mobilen Ad
 $string['cachedef_subscriptiondata'] = 'Hier werden die Infos zum Moodle-App-Abonnement gespeichert.';
 $string['clickheretolaunchtheapp'] = 'Tippen Sie hier, falls sich die mobile App nicht automatisch öffnet.';
 $string['configmobilecssurl'] = 'Die CSS-Datei ermöglicht die optische Anpassung der mobilen App.';
-$string['customlangstrings'] = 'Benutzerdefinierte Texte';
+$string['customlangstrings'] = 'Nutzerdefinierte Texte';
 $string['customlangstrings_desc'] = 'Wörter und Texteinträge für die mobile App können angepasst werden. Schreiben Sie jeden angepassten Text in eine neue Zeile, u.z. in folgendem Format: Text-ID, angepasster Text und Sprachcode, jeweils getrennt durch Pipe-Zeichen |.
 
 Beispiel:<pre>
@@ -47,8 +47,8 @@ mm.user.student|Learner|en
 mm.user.student|Aprendiz|es
 </pre>
 Die vollständige Liste der Text-IDs und weitere Infos finden Sie in der Dokumentation.';
-$string['custommenuitems'] = 'Benutzerdefinierte Menüpunkte';
-$string['custommenuitems_desc'] = 'Im Hauptmenü der App können zusätzliche Punkte hinzugefügt werden. Geben Sie jeden benutzerdefinierten Menüpunkt in eine neue Zeile mit folgendem Format ein: Menütext, Link-URL, Link-Öffnungsmethode und Sprachcode (optional zum Anzeigen in der angegebenen Sprache), jeweils getrennt durch Pipe-Zeichen.
+$string['custommenuitems'] = 'Nutzerdefinierte Menüpunkte';
+$string['custommenuitems_desc'] = 'Im Hauptmenü der App können zusätzliche Punkte hinzugefügt werden. Geben Sie jeden nutzerdefinierten Menüpunkt in eine neue Zeile mit folgendem Format ein: Menütext, Link-URL, Link-Öffnungsmethode und Sprachcode (optional zum Anzeigen in der angegebenen Sprache), jeweils getrennt durch Pipe-Zeichen.
 
 Methoden zum Öffnen von Links sind: App (zum Verknüpfen mit einer von der App unterstützten Aktivität), inappbrowser (zum Öffnen im Browser innerhalb der App), Browser (zum Öffnen im Standardbrowser außerhalb der App) und embedded (zum Anzeigen in einem iframe auf einer neuen Seite innerhalb der App).
 

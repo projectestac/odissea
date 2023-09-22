@@ -230,6 +230,7 @@ $string['customrolename_help'] = 'Les noms des rôles standards sont fournis aut
 $string['defaultrole'] = 'Rôle par défaut';
 $string['defaultx'] = 'Défaut : {$a}';
 $string['defineroles'] = 'Définition des rôles';
+$string['definitionofrolex'] = 'Définition du rôle « {$a} »';
 $string['deletecourseoverrides'] = 'Supprimer toutes les dérogations du cours';
 $string['deletelocalroles'] = 'Supprimer toutes les attributions de rôles locales';
 $string['deleterolesure'] = '<p>Voulez-vous vraiment supprimer le rôle « {$a->name} ({$a->shortname}) » ?</p><p>Ce rôle est actuellement attribué à {$a->count} utilisateurs.</p>';

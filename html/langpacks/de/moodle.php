@@ -39,6 +39,7 @@ $string['activities_help'] = 'Aktivitäten, wie Foren, Tests und Wikis, können 
 $string['activity'] = 'Aktivität';
 $string['activityclipboard'] = 'Aktivität verschieben: {$a}';
 $string['activityheader'] = 'Aktivitätsmenü';
+$string['activityicon'] = 'Icon {$a}';
 $string['activityiscurrentlyhidden'] = 'Diese Aktivität ist im Moment nicht verfügbar.';
 $string['activitymodule'] = 'Aktivitäten';
 $string['activitymodules'] = 'Aktivitäten';
@@ -379,7 +380,7 @@ $string['coursecreatorsdescription'] = 'Kursersteller/innen dürfen neue Kurse a
 $string['coursedeleted'] = 'Kurs {$a} gelöscht';
 $string['coursedetails'] = 'Kursdetails';
 $string['coursedisplay'] = 'Kursdarstellung';
-$string['coursedisplay_help'] = 'Diese Option legt fest, ob der Kurs auf einer Seite oder über mehrere Seiten verteilt angezeigt wird.';
+$string['coursedisplay_help'] = 'Kursabschnitte können alle auf einer Seite angezeigt oder auf mehrere Seiten verteilt werden.';
 $string['coursedisplay_multi'] = 'Nur ein Abschnitt pro Seite';
 $string['coursedisplay_single'] = 'Alle Abschnitte auf einer Seite';
 $string['courseduration'] = 'Kursdauer';
@@ -416,7 +417,7 @@ $string['courselegacyfilesofcourse'] = 'Alte Kursdateien: {$a}';
 $string['coursenotaccessible'] = 'Dieser Kurs ist nicht öffentlich zugänglich.';
 $string['courseoverview'] = 'Kursbeschreibung';
 $string['courseoverviewfiles'] = 'Kursbild';
-$string['courseoverviewfiles_help'] = 'Das Kursbild wird in der Kursübersicht im Dashboard angezeigt. Weitere Dateitypen und zusätzliche Dateien können von Administrator/innen der Website aktiviert werden. Wenn weitere Dateien hochgeladen sind, werden sie neben der Kursbeschreibung in der Kursübersicht angezeigt.';
+$string['courseoverviewfiles_help'] = 'Das Kursbild wird unter „Meine Kurse“ und in der Liste der verfügbaren Kurse auf der Startseite angezeigt. In der Website-Administratiom können zusätzliche Dateitypen und die Verwendung mehrerer Dateien aktiviert werden. Wenn Sie mehrere Dateien verwenden, werden diese alle in der Liste der verfügbaren Kurse angezeigt.';
 $string['courseoverviewfilesext'] = 'Dateitypen für Kursbild';
 $string['courseoverviewfileslimit'] = 'Max. Anzahl von Kursbildern';
 $string['courseoverviewgraph'] = 'Kursübersichtsgrafik';
@@ -451,17 +452,20 @@ $string['coursesearch_help'] = 'Sie können nach mehreren Begriffen gleichzeitig
 * +Begriff - nur exakte Treffer werden gefunden
 * -Begriff - schließt Treffer aus, die den Begriff enthalten';
 $string['coursesectionsummaries'] = 'Beschreibung zu Kursabschnitten';
-$string['coursesectiontitle'] = 'Kurs: {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
+$string['coursesectiontitle'] = '{$a->sectionname}: {$a->sectiontitle} | {$a->course}';
+$string['coursesectiontitleediting'] = 'Bearbeitung {$a->sectionname}: {$a->sectiontitle} | {$a->course}';
 $string['coursesettings'] = 'Grundeinstellungen';
 $string['coursesmovedout'] = 'Kurse aus {$a} verschoben';
 $string['coursespending'] = 'Kursanträge bearbeiten';
 $string['coursestart'] = 'Kursbeginn';
 $string['coursesummary'] = 'Kursbeschreibung';
-$string['coursesummary_help'] = 'Die Kursbeschreibung wird in der Kursübersicht angezeigt. Bei einer Kurssuche werden zusätzlich zu den Kursnamen auch die Kursbeschreibungen durchsucht.';
+$string['coursesummary_help'] = 'Bei einer Kurssuche wird die Kursbeschreibung zusätzlich zum Kursnamen durchsucht.';
 $string['coursetitle'] = 'Kurs: {$a->course}';
+$string['coursetitleediting'] = 'Bearbeitung von Kurs: {$a->course}';
 $string['courseupdates'] = 'Kursaktualisierungen';
 $string['coursevisibility'] = 'Kurssichtbarkeit';
-$string['coursevisibility_help'] = 'Diese Einstellung legt fest, ob der Kurs in der Kursliste angezeigt wird und ob Teilnehmer/innen darauf zugreifen können. Wenn die Einstellung auf \'Verbergen\' gesetzt ist, wird der Zugriff auf Nutzer/innen mit der Fähigkeit eingeschränkt, verborgene Kurse  sehen zu können (z.B. Trainer/innen des Kurses oder Manager/innen).';
+$string['coursevisibility_help'] = '* Anzeigen: Der Kurs erscheint in der Kursliste und Teilmehmer/innen können darauf zugreifen.
+* Verbergen: Der Zugriff ist auf Trainer/innen und Nutzer/innen beschränkt, die das Recht haben, verborgene Kurse anzuzeigen.';
 $string['create'] = 'Erstellen';
 $string['createaccount'] = 'Neues Nutzerkonto anlegen';
 $string['createcategory'] = 'Kursbereich erstellen';
@@ -716,7 +720,7 @@ $string['emailenable'] = 'E-Mail-Adresse ist aktiviert';
 $string['emailenableclick'] = 'Klicken Sie hier, um den E-Mail-Versand an diese Adresse zu reaktivieren.';
 $string['emailexists'] = 'Diese E-Mail-Adresse ist bereits registriert.';
 $string['emailexistshintlink'] = 'Anmeldename oder Kennwort vergessen?';
-$string['emailexistssignuphint'] = 'Haben Sie vor einiger Zeit bereits einen Account erstellt? {$a}';
+$string['emailexistssignuphint'] = 'Haben Sie vor einiger Zeit bereits ein Konto erstellt? {$a}';
 $string['emailformat'] = 'E-Mail-Format';
 $string['emailmustbereal'] = 'Wichtig: Ihre E-Mail-Adresse muss gültig sein. Sie bekommen eine Bestätigung Ihrer Anmeldung.';
 $string['emailnotallowed'] = 'E-Mail-Adressen mit folgenden Domains sind nicht erlaubt: {$a}';
@@ -810,7 +814,7 @@ $string['emptysectionids'] = 'Leere Kursabschnitt-IDs';
 $string['enable'] = 'Aktivieren';
 $string['encryptedcode'] = 'Verschlüsselter Code';
 $string['enddate'] = 'Kursende';
-$string['enddate_help'] = 'Das Kursende bestimmt, ob ein Kurs in der Kursübersicht als vergangen aufgeführt wird. Das Enddatum des Kurses kann auch von nutzerdefinierten Berichten verwendet werden. Beachten Sie, dass Nutzer/innen den Kurs auch nach dem Enddatum noch betreten können, also dass das Datum den Zugriff nicht einschränkt.';
+$string['enddate_help'] = 'Das Enddatum schränkt den Zugang von Teilnehmer/innen zum Kurs nicht ein. Das Enddatum bestimmt, dass ein Kurs in "Meine Kurse" als "vergangen" aufgeführt wird.';
 $string['english'] = 'Englisch';
 $string['enrolmentmethods'] = 'Einschreibemethoden';
 $string['entercourse'] = 'Hier klicken, um den Kurs zu betreten';
@@ -973,7 +977,7 @@ $string['frontpagesettings'] = 'Einstellungen der Startseite';
 $string['fulllistofcourses'] = 'Alle Kurse';
 $string['fullname'] = 'Vollständiger Name';
 $string['fullnamecourse'] = 'Vollständiger Kursname';
-$string['fullnamecourse_help'] = 'Der vollständige Kursname wird auf jeder Kursseite oben und in der Kursübersicht angezeigt.';
+$string['fullnamecourse_help'] = 'Der Kursname, der in "Meine Kurse" und in der Liste der verfügbaren Kurse auf der Startseite angezeigt wird.';
 $string['fullnamedisplay'] = '{$a->firstname} {$a->lastname}';
 $string['fullnameuser'] = 'Vollständiger Name';
 $string['fullprofile'] = 'Ganzes Profil';
@@ -1041,7 +1045,7 @@ $string['hiddenassign'] = 'Verborgene Zuweisung';
 $string['hiddenfromstudents'] = 'Für Teilnehmer/innen verborgen';
 $string['hiddenoncoursepage'] = 'Verfügbar, aber auf Kursseite verborgen';
 $string['hiddensections'] = 'Verborgene Abschnitte';
-$string['hiddensections_help'] = 'Diese Option legt fest, dass verborgene Abschnitte in der Kursübersicht als nicht verfügbar angezeigt werden (z.B. für einen Kurs im Wochenformat, um Ferien darzustellen) oder ob sie vollständig verborgen sind.';
+$string['hiddensections_help'] = 'Verborgene Abschnitte können den Teilnehmer/innen auf der Kursseite als "nicht verfügbar" angezeigt oder vollständig ausgeblendet bleiben.';
 $string['hiddensectionscollapsed'] = 'Verborgene Abschnitte werden als nicht verfügbar angezeigt';
 $string['hiddensectionsinvisible'] = 'Vollständig unsichtbar';
 $string['hiddenwithbrackets'] = '(Verborgen)';
@@ -1078,7 +1082,7 @@ $string['icon'] = 'Icon
 $string['icqnumber'] = 'ICQ';
 $string['idnumber'] = 'ID-Nummer';
 $string['idnumbercourse'] = 'Kurs-ID';
-$string['idnumbercourse_help'] = 'Die Kurs-ID-Nummer wird lediglich zum Abgleich von Kursdaten durch externe Datenbanken benötigt. In Moodle selbst wird die Nummer nicht weiter benötigt bzw. angezeigt. Wenn Sie eine offizielle Kursnummer haben, können Sie diese hier eintragen, andernfalls lassen Sie das Feld leer.';
+$string['idnumbercourse_help'] = 'Die Kurs-ID wird nur zur Verbindung des Kurses mit externen Systemen verwendet. Lassen Sie das Feld leer, wenn Sie keine Kurs-ID haben.';
 $string['idnumbercoursecategory'] = 'Kursbereichs-ID';
 $string['idnumbercoursecategory_help'] = 'Die ID des Kursbereichs wird nur verwendet, wenn der Kursbereich mit externen Systemen verbunden ist und nicht auf der Webseite gezeigt wird. Falls der Kursbereich eine offizielle Namenscodierung hat, kann diese hier eingetragen werden, andernfalls kann das Feld leer bleiben.';
 $string['idnumbergroup'] = 'Gruppen-ID';
@@ -1086,7 +1090,7 @@ $string['idnumbergroup_help'] = 'Die ID-Nummer einer Gruppe wird nur zum Abgleic
 $string['idnumbergrouping'] = 'Gruppierungs-ID';
 $string['idnumbergrouping_help'] = 'Die ID-Nummer einer Gruppierung wird nur zum Abgleich mit externen Systemen verwandt. Sie wird nicht an anderen Orten angezeigt. Wenn die Gruppierung eine offizielle Code-Bezeichnung hat, kann diese hier eingetragen werden. Andernfalls kann das Feld leer bleiben.';
 $string['idnumbermod'] = 'ID-Nummer';
-$string['idnumbermod_help'] = 'Durch das Festlegen einer ID-Nummer kann die Aktivität oder das Material für Zwecke wie die Berechnung der Bewertung oder benutzerdefinierte Berichte identifiziert werden. Andernfalls kann das Feld leer bleiben.
+$string['idnumbermod_help'] = 'Durch das Festlegen einer ID-Nummer kann die Aktivität oder das Material für Zwecke wie die Berechnung der Bewertung oder nutzerdefinierte Berichte identifiziert werden. Andernfalls kann das Feld leer bleiben.
 
 Für bewertbare Aktivitäten kann die ID-Nummer auch im Setup für Bewertungen festgelegt werden, sie kann jedoch nur auf der Seite mit den Einstellungen der Aktivität oder des Materials bearbeitet werden.';
 $string['idnumbertaken'] = 'Diese ID-Nummer wird bereits benutzt!';
@@ -1213,12 +1217,9 @@ $string['loginaspasswordexplain'] = '<p>Sie müssen das spezielle \'Login als\'-
 $string['loginguest'] = 'Anmelden als Gast';
 $string['loginsite'] = 'Hier können Sie sich anmelden';
 $string['loginsteps'] = 'Für den vollen Zugriff auf die Website brauchen Sie ein Nutzerkonto.';
-$string['loginstepsnone'] = 'Guten Tag!
+$string['loginstepsnone'] = 'Um an den verschiedenen Kursen teilnehmen zu können, müssen Sie sich ein Nutzerkonto anlegen.
 
-Um an den verschiedenen Kursen teilnehmen zu können, müssen Sie sich einen Nutzerzugang für diese Webseite anlegen.
-
-Wählen Sie einen Anmeldenamen und ein Kennwort, die Sie im Formular auf dieser Seite eintragen.
-Wenn jemand anders bereits Ihren Anmeldenamen gewählt hat, müssen Sie einen anderen Anmeldenamen verwenden.';
+Wählen Sie einen Anmeldenamen und ein Kennwort, die Sie oben auf dieser Seite eintragen. Falls jemand bereits Ihren Anmeldenamen hat, müssen Sie einen anderen Anmeldenamen verwenden.';
 $string['loginto'] = 'Login bei \'{$a}\'';
 $string['logoof'] = 'Logo von {$a}';
 $string['logout'] = 'Logout';
@@ -1262,9 +1263,7 @@ $string['maximumgrade'] = 'Beste Bewertung';
 $string['maximumgradex'] = 'Beste Bewertung: {$a}';
 $string['maximumshort'] = 'Max.';
 $string['maximumupload'] = 'Maximale Dateigröße';
-$string['maximumupload_help'] = 'Diese Einstellungen legt die maximale Größe einer Datei fest, die Teilnehmer/innen im Kurs hochladen können. Diese wird nach oben begrenzt durch die Voraussetzungen des Servers und die Einstellung der Administrator/innen für die gesamte Moodle-Installation.
-
-Es ist möglich, diese Einstellung für einzelne Aktivitäten im Kurs weiter einzuschränken, indem Sie die gleichnamige Einstellung für die einzelne Aktivität entsprechend anpassen.';
+$string['maximumupload_help'] = 'Diese Einstellung legt die maximal zulässige Dateigröße fest, die Teilnehmer/innen im Kurs hochladen können. Zusätzlich können Sie die maximale Dateiröße für jede Aktivität weiter einschränken.';
 $string['maxnumberweeks'] = 'Maximale Anzahl von Abschnitten';
 $string['maxnumberweeks_desc'] = 'Diese Option legt die maximale Anzahl von Abschnitten fest, die in den Kurseinstellungen gewählt werden kann (gilt nur für bestimmte Kursformate).';
 $string['maxnumcoursesincombo'] = '<a href="{$a->link}">Übersicht mit {$a->numberofcourses} Kurse</a>.';
@@ -1454,11 +1453,11 @@ $string['newsectionname'] = 'Neuer Name für Abschnitt {$a}';
 $string['newsitem'] = 'Nachricht';
 $string['newsitems'] = 'Ankündigungen';
 $string['newsitemsnumber'] = 'Anzahl von Ankündigungen';
-$string['newsitemsnumber_help'] = 'Das Ankündigungsforum ist ein spezielles Forum, welches automatisch im Kurs erstellt wird, automatisch abonniert ist und in dem nur Nutzer/innen mit entsprechenden Rechten (Trainer/innen) Ankündigungen schreiben dürfen.
+$string['newsitemsnumber_help'] = 'Im Ankündigungsforum ist standardmäßig ein verbindliches Abonnement festgelegt. Nur Trainer/innen und Nutzer/innen mit entsprechenden Rechten können darin Beiträge schreiben.
 
-Diese Option legt fest, wie viele Ankündigungen im Block \'Neue Ankündigungen\' angezeigt werden.
+Wenn Sie kein Ankündigungsforum benötigen, setzen Sie diesen Wert auf Null.
 
-Falls ein Ankündigungforum im Kurs nicht benötigt wird, sollte die Einstellung auf 0 gesetzt werden.';
+Die Einstellung bestimmt auch, wie viele Ankündigungen im Block „Neue Ankündigungen“ angezeigt werden.';
 $string['newuser'] = 'Neues Nutzerprofil';
 $string['newusernewpasswordsubj'] = 'Neuer Nutzerzugang';
 $string['newusernewpasswordtext'] = 'Guten Tag {$a->firstname},
@@ -1678,7 +1677,7 @@ $string['previous'] = 'Zurück';
 $string['previouslyselectedusers'] = 'Früher gewählte Nutzer passen nicht zu \'{$a}\'';
 $string['previouspage'] = 'Vorherige Seite';
 $string['previoussection'] = 'Vorheriger Abschnitt';
-$string['primaryadminsetup'] = 'Account für Hauptadmin';
+$string['primaryadminsetup'] = 'Konto für Hauptadministrator/in';
 $string['privacy:metadata:config_log'] = 'Die Logdaten der Konfigurationsänderung';
 $string['privacy:metadata:config_log:name'] = 'Der Name der geänderten Einstellung.';
 $string['privacy:metadata:config_log:oldvalue'] = 'Der vorherige Wert dieser Einstellung.';
@@ -1711,7 +1710,7 @@ $string['privacy:metadata:oauth2_refresh_token:userid'] = 'Nutzer-ID der Person,
 $string['privacy:metadata:task_adhoc'] = 'Der Status von Adhoc-Tasks.';
 $string['privacy:metadata:task_adhoc:component'] = 'Komponente, der die Aufgabe gehört';
 $string['privacy:metadata:task_adhoc:nextruntime'] = 'Frühester Zeitpunkt zur Ausführung der Aufgabe';
-$string['privacy:metadata:task_adhoc:userid'] = 'Der Nutzer, als der die Aktion ausgeführt wurde';
+$string['privacy:metadata:task_adhoc:userid'] = 'Nutzer-ID, mit der die Aktion ausgeführt wurde';
 $string['privacy:metadata:task_log'] = 'Ausgabe für Logdaten';
 $string['privacy:metadata:task_log:component'] = 'Komponente, zu der die Task gehört.';
 $string['privacy:metadata:task_log:userid'] = 'Person, zu der die Task gehört.';
@@ -1972,14 +1971,14 @@ $string['settings'] = 'Einstellungen';
 $string['shortname'] = 'Kurzbezeichnung';
 $string['shortnamecollisionwarning'] = '[*] = Diese Kurzbezeichnung wird bereits für einen anderen Kurs genutzt. Bitte ändern Sie den Eintrag.';
 $string['shortnamecourse'] = 'Kurzer Kursname';
-$string['shortnamecourse_help'] = 'Der kurze Kursname wird an verschiedenen Stellen verwendet, an denen der vollständige Kursname nicht passen würde (z.B. in der Navigation oder im Betreff von E-Mails).';
+$string['shortnamecourse_help'] = 'Der Kursname wird an Stellen mit begrenztem Platz angezeigt. Er muss eindeutig sein.';
 $string['shortnametaken'] = 'Diese Kurzbezeichnung wird bereits für einen anderen Kurs ({$a}) verwendet.';
 $string['shortnameuser'] = 'Nutzername (kurz)';
 $string['shortsitename'] = 'Kurzbezeichnung';
 $string['show'] = 'Anzeigen';
 $string['showactions'] = 'Aktivitäten anzeigen';
 $string['showactivitydates'] = 'Aktivitätsdaten anzeigen';
-$string['showactivitydates_help'] = 'Aktivitätsdaten werden immer auf der Aktivitätsseite angezeigt. Diese Einstellung bestimmt, ob Aktivitätsdaten auch unter jeder Aktivität auf der Kursseite angezeigt werden.';
+$string['showactivitydates_help'] = 'Aktivitätsdaten auf der Kursseite anzeigen.';
 $string['showadvancededitor'] = 'Erweitert';
 $string['showadvancedsettings'] = 'Optionale Felder anzeigen';
 $string['showall'] = 'Alle {$a} anzeigen';
@@ -1993,7 +1992,7 @@ $string['showcommentsnonjs'] = 'Kommentare anzeigen';
 $string['showdescription'] = 'Beschreibung im Kurs zeigen';
 $string['showdescription_help'] = 'Wenn diese Option aktiviert ist, wird die Beschreibung zusammen mit dem Link auf der Kursseite angezeigt.';
 $string['showgrades'] = 'Bewertungen anzeigen';
-$string['showgrades_help'] = 'Bei vielen Aktivitäten im Kurs können Bewertungen festgelegt werden. Diese Einstellung legt fest, ob Teilnehmer/innen eine Liste ihrer Bewertungen im Kurs anzeigen können.';
+$string['showgrades_help'] = 'Teilnehmer/innen erlauben, eine Liste ihrer Bewertungen im Kurs zu sehen.';
 $string['showingacourses'] = 'Alle {$a} Kurse werden angezeigt';
 $string['showingxofycourses'] = 'Die Kurse {$a->start} bis {$a->end} von {$a->total} werden angezeigt';
 $string['showlistofcourses'] = 'Kursliste anzeigen';
@@ -2004,7 +2003,7 @@ $string['showperpage'] = '{$a} pro Seite anzeigen';
 $string['showpopoverwindow'] = 'Popover-Fenster anzeigen';
 $string['showrecent'] = 'Neue Aktivitäten anzeigen';
 $string['showreports'] = 'Aktivitätsberichte';
-$string['showreports_help'] = 'Aktivitätsberichte sind für alle Teilnehmer/innen verfügbar und zeigen deren eigenen Aktivitäten im Kurs an (Forenbeiträge, Aufgabenabgabe, Kommentare, Kurszugriffe, usw.). Diese Einstellung legt fest, ob Teilnehmer/innen ihre eigenen Aktivitätsberichte über ihre Profilseite sehen können.';
+$string['showreports_help'] = 'Teilnehmer/innen erlauben, die eigenen Aktivitätsberichte über ihre Profilseite zu sehen.';
 $string['showsettings'] = 'Einstellungen anzeigen';
 $string['showtheselogs'] = 'Diese Logdaten anzeigen';
 $string['showthishelpinlanguage'] = 'Anzeige dieser Hilfe in der Sprache: {$a}';
@@ -2056,7 +2055,9 @@ $string['specifyname'] = 'Sie müssen einen Namen festlegen';
 $string['standard'] = 'Standard';
 $string['starpending'] = '([*] = Kursantrag in Bearbeitung)';
 $string['startdate'] = 'Kursbeginn';
-$string['startdate_help'] = 'Wenn Sie im Kurs das Wochenformat benutzen, definiert die Einstellung den ersten Tag der ersten angezeigten Woche im Kurs. Die Einstellung legt auch fest, ab wann Aktivitätsberichte im Kurs erfasst werden. Wenn der Kurs zurückgesetzt und der Kursbeginn geändert wird, ändern sich auch die anderen Zeitangaben im Kurs in Abhängigkeit vom neuen Kursbeginn.';
+$string['startdate_help'] = 'Das Startdatum bestimmt den Beginn der ersten Woche für einen Kurs im Wochenformat. Es ist auch das Startdatum für Protokolle der Kursaktivitäten.
+
+Wenn Sie den Kurs zurücksetzen und das Startdatum ändern, werden alle Termine im Kurs in Bezug auf das neue Datum verschoben.';
 $string['startingfrom'] = 'Beginn ab';
 $string['startsignup'] = 'Neues Konto anlegen';
 $string['state'] = 'Bundesland/Kanton';

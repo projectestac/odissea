@@ -26,11 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allrightsreserved'] = 'Tots els drets reservats';
+$string['cannotdeletecore'] = 'No es pot suprimir una llicència estàndard';
+$string['cannotdeletelicenseinuse'] = 'No es pot suprimir una llicència que actualment està assignada a un o més fitxers';
 $string['cc'] = 'Creative Commons';
 $string['cc-nc'] = 'Creative Commons - No Comercial';
 $string['cc-nc-nd'] = 'Creative Commons - NoComercial - SenseObraDerivada';
 $string['cc-nc-sa'] = 'Creative Commons - NoComercial - CompartirIgual';
 $string['cc-nd'] = 'Creative Commons - SenseObraDerivada';
 $string['cc-sa'] = 'Creative Commons - CompartirIgual';
+$string['licensenotfoundshortname'] = 'No es pot trobar una llicència amb el nom curt «{$a}»';
+$string['missinglicensesortorder'] = 'No es pot establir l\'ordenació de les llicències, en la nova ordenació hi manquen una o més llicències instal·lades';
 $string['public'] = 'Domini Públic';
 $string['unknown'] = 'No s\'ha especificat cap llicència';

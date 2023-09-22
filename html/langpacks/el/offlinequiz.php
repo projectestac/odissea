@@ -222,7 +222,6 @@ $string['questionsinthisofflinequiz'] = 'Ερωτήσεις σε αυτό το �
 $string['questiontextisempty'] = '[Κενό κείμενο ερώτησης]';
 $string['quizdate'] = 'Ημερομηνία κουίζ εκτός σύνδεσης';
 $string['quizopenclose'] = 'Ημερομηνίες ανοίγματος και κλεισίματος';
-$string['quizquestions'] = 'Ερωτήσεις κουίζ';
 $string['randomfromexistingcategory'] = 'Τυχαίες ερωτήσεις από μία υπάρχουσα κατηγορία';
 $string['randomnumber'] = 'Αριθμός τυχαίων ερωτήσεων';
 $string['randomquestionusinganewcategory'] = 'Τυχαίες ερωτήσεις χρησιμοποιώντας μία νέα κατηγορία';

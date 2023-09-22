@@ -39,7 +39,7 @@ $string['cannotreadbackupfile'] = 'No se puede leer el archivo de copia de segur
 $string['cannotrenamecoursenotexist'] = 'No se puede renombrar un curso que no existe';
 $string['cannotrenameidnumberconflict'] = 'No se puede renombrar el curso, hay conflicto con el número ID de un curso que ya existe';
 $string['cannotrenameshortnamealreadyinuse'] = 'No se puede renombrar el curso, el nombre corto se está utilizando';
-$string['cannotupdatefrontpage'] = 'Está prohibido modificar la página principal';
+$string['cannotupdatefrontpage'] = 'Used no puede modificar la página principal del sitio.';
 $string['canonlyrenameinupdatemode'] = 'Sólo puede renombrar un curso cuando la actualización está permitida';
 $string['canonlyresetcourseinupdatemode'] = 'Sólo se puede reiniciar un curso en modo de actualización';
 $string['couldnotresolvecatgorybyid'] = 'No se ha podido resolver la categoría por su ID';
@@ -75,7 +75,7 @@ $string['createnew'] = 'Crear solo cursos nuevos, saltar los existentes';
 $string['createorupdate'] = 'Crear cursos nuevos, o actualizar los existentes';
 $string['csvdelimiter'] = 'Separador CSV';
 $string['csvdelimiter_help'] = 'El carácter que separa las series de datos en cada registro.';
-$string['csvfileerror'] = 'Hay algo erróneo en el formato del archivo CSV. Por favor, compruebe la coincidencia entre el número de cabeceras y columnas  y que el delimitador y la codificación del archivo sean correctos: {$a}';
+$string['csvfileerror'] = 'Hay algo erróneo en el formato del archivo CSV. Por favor, compruebe la coincidencia entre el número de cabeceras y columnas, y que el delimitador y la codificación del archivo sean correctos. {$a}';
 $string['csvline'] = 'Línea';
 $string['customfieldinvalid'] = 'El campo personalizado \'{$a}\' está vacío o contiene datos no válidos';
 $string['defaultvalues'] = 'Valores por defecto del curso';
@@ -134,9 +134,9 @@ $string['updatewithdataordefaults'] = 'Actualizar los datos CSV y los valores pr
 $string['uploadcourses'] = 'Subir cursos';
 $string['uploadcourses_help'] = 'Los cursos pueden ser cargados a través de archivos de texto. El formato del archivo debe ser el siguiente:
 
-* Cada línea del archivo contiene un registro
-* Cada registro es una serie de datos separados por comas (u otros delimitadores)
-* El primer registro contiene una lista de nombres de campo que define el formato del resto del archivo
-* los campos requeridos son nombre corto, nombre completo, el resumen y la categoría';
+* Cada línea del archivo contiene un registro.
+* Cada registro es una serie de datos separados por el delimitador elegido.
+* El primer registro contiene una lista de nombres de campo que define el formato del resto del archivo.
+* Los campos requeridos son nombre corto (shortname), nombre completo (fullname) y categoría (category).';
 $string['uploadcoursespreview'] = 'Previsualización de los cursos cargados';
 $string['uploadcoursesresult'] = 'Resultados de la carga de cursos';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['download'] = 'Descarrega';
 $string['edit'] = 'Edita';
+$string['name'] = 'Nom';

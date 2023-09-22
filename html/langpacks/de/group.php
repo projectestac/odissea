@@ -111,15 +111,13 @@ $string['groupmembers'] = 'Gruppenmitglieder';
 $string['groupmemberssee'] = 'Gruppenmitglieder anzeigen';
 $string['groupmembersselected'] = 'Mitglieder der markierten Gruppe';
 $string['groupmode'] = 'Gruppenmodus';
-$string['groupmode_help'] = 'Für den Gruppenmodus stehen drei Optionen zur Verfügung:
+$string['groupmode_help'] = '* Keine Gruppen
+* Getrennte Gruppen - Teilnehmer/innen sind in Gruppen geteilt und können nur die Arbeit der eigenen Gruppe sehen.
+* Sichtbare Gruppen - Teilnehmer/innen sind in Gruppen geteilt, aber sie können die Arbeit anderer Gruppen sehen.
 
-* Keine Gruppen - Im Kurs gibt es keine Gruppen und alle nutzen alles zusammen.
-* Getrennte Gruppen - Im Kurs gibt es getrennte Gruppen, d.h. jedes Gruppenmitglied kann nur Mitglieder der eigenen Gruppe sehen, alle anderen sind unsichtbar.
-* Sichtbare Gruppen - Im Kurs gibt es sichtbare Gruppen, d.h. jedes Gruppenmitglied arbeitet in der eigenen Gruppe, kann aber die anderen Gruppen sehen.
-
-Der Gruppenmodus auf Kursebene ist der Standardmodus für alle Aktivitäten im Kurs. Jede Aktivität, die Gruppen unterstützt, kann aber auch ihren eigenen Gruppenmodus haben. Falls allerdings der Gruppenmodus auf Kursebene erzwungen wird, werden die Einstellungen zum Gruppenmodus für alle Aktivitäten ignoriert.';
+Der Gruppenmodus, der auf Kursebene gesetzt wird, ist der Standardmodus für alle Aktivitäten im Kurs. Falls der Gruppenmodus auf Kursebene erzwungen wird, kann diese Einstellung für keine Aktivität geändert werden.';
 $string['groupmodeforce'] = 'Gruppenmodus erzwingen';
-$string['groupmodeforce_help'] = 'Wenn der Gruppenmodus erzwungen wird, dann wird der Gruppenmodus des Kurses auch auf jede Aktivität im Kurs angewendet. Die Gruppeneinstellungen in jeder Aktivität werden ignoriert.';
+$string['groupmodeforce_help'] = 'Der Gruppenmodus ist für den ganzen Kurs erzwungen und kann für keine Aktivität geändert werden.';
 $string['groupmy'] = 'Meine Gruppe';
 $string['groupname'] = 'Gruppenname';
 $string['groupnameexists'] = 'Der Gruppenname \'{$a}\' existiert in diesem Kurs bereits.';

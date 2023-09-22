@@ -107,6 +107,7 @@ $string['forcechangepassword_help'] = 'Obliga els usuaris a canviar la contrasen
 $string['forcechangepasswordfirst_help'] = 'Obliga els usuaris a canviar la contrasenya la primera vegada que iniciïn la sessió a Moodle.';
 $string['forgottenpassword'] = 'Si introduïu un URL aquí, s\'utilitzarà com a pàgina de recuperació de contrasenyes d\'aquest lloc. Aquest paràmetre està pensat per als casos en què les contrasenyes es gestionen totalment fora de Moodle. Deixeu el camp en blanc per utilitzar el mecanisme per defecte de recuperació de contrasenyes.';
 $string['forgottenpasswordurl'] = 'URL de recuperació de contrasenyes';
+$string['getrecaptchaapi'] = 'Per utilitzar reCAPTCHA heu d\'obtenir una clau API de <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
 $string['guestloginbutton'] = 'Botó d\'inici de sessió de visitants';
 $string['incorrectpleasetryagain'] = 'Incorrecte. Torneu a intentar-ho.';
 $string['infilefield'] = 'Camp requerit en el fitxer';
@@ -134,9 +135,14 @@ $string['plaintext'] = 'Text net';
 $string['pluginnotenabled'] = 'El connector d\'autenticació \'{$a}\' no està habilitat.';
 $string['pluginnotinstalled'] = 'El connector d\'autenticació \'{$a}\' no està instal·lat.';
 $string['potentialidps'] = 'Autentiqueu-vos utilitzant el vostre compte a:';
+$string['privacy:metadata:userpref:createpassword'] = 'Indica que s\'ha de generar una contrasenya per a l\'usuari';
+$string['privacy:metadata:userpref:forcepasswordchange'] = 'Indica si l\'usuari hauria de canviar la seva contrasenya en iniciar la sessió';
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Nombre de vegades que ha fallat l\'autenticació de l\'usuari';
 $string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Nombre de vegades que ha fallat l\'autenticació de l\'usuari des de l\'últim inici de sessió';
+$string['privacy:metadata:userpref:loginfailedlast'] = 'La data en què es va registrar l\'últim intent d\'inici de sessió fallit';
 $string['privacy:metadata:userpref:loginlockout'] = 'Indica si el compte de l\'usuari està bloquejat a causa d\'intents d\'inici de sessió fallits, i la data en què el compte va entrar en estat de bloqueig';
+$string['privacy:metadata:userpref:loginlockoutignored'] = 'Indica que el compte d\'un usuari no hauria d\'estar subjecte a cap bloqueig';
+$string['privacy:metadata:userpref:loginlockoutsecret'] = 'Quan estigui bloquejat, el secret que l\'usuari ha d\'utilitzar per a desbloquejar el seu compte';
 $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'El CAPTCHA s\'usa per evitar l\'abús dels programes automàtics. Simplement introduïu les paraules al quadre, en ordre i separades per un espai.
 

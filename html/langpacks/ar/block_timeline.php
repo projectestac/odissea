@@ -52,5 +52,5 @@ $string['searchevents'] = 'البحث حسب نوع النشاط أو اسمه';
 $string['sortbycourses'] = 'الفرز حسب المقررات الدراسية';
 $string['sortbydates'] = 'الفرز حسب الأيام';
 $string['timeline'] = 'المخطط الزمني';
-$string['timeline:myaddinstance'] = 'إضافة كتلة جديدة من المخطط الزمني إلى دفة القيادة';
+$string['timeline:myaddinstance'] = 'إضافة كتلة جديدة من المخطط الزمني إلى لوحة التحكم';
 $string['viewcourse'] = 'معاينة المساق';

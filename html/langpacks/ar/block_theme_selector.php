@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['createwindow'] = 'إنشاء نافذة';
-$string['theme_selector:addinstance'] = 'إضافة كتلة جديدة من محدد المظاهر';
-$string['theme_selector:myaddinstance'] = 'إضافة كتلة جديدة من محدد المظاهر إلى دفة القيادة';
-$string['urlswitch_desc'] = 'التبديل باستعمال عنوان الرابط، يتطلب ضبط إعداد نواة المظهر المسمى \'allowthemechangeonurl\'.';
-$string['urlswitchurlwarning'] = 'إن إعداد نواة المظهر المسمى \'allowthemechangeonurl\' بحاجة إلى ضبط.';
+$string['theme_selector:addinstance'] = 'إضافة كتلة جديدة من محدد القوالب';
+$string['theme_selector:myaddinstance'] = 'إضافة كتلة جديدة من محدد القوالب إلى لوحة التحكم';
+$string['urlswitch_desc'] = 'التبديل باستعمال عنوان الرابط، يتطلب ضبط إعداد نواة القالب المسمى \'allowthemechangeonurl\'.';
+$string['urlswitchurlwarning'] = 'إن إعداد نواة القالب المسمى \'allowthemechangeonurl\' بحاجة إلى ضبط.';
 $string['urlswitchwarning'] = 'إعداد تبديل عنوان الرابط غير مهيأ، تحقق من تنصيب الكتلة.';
 $string['windowinformation'] = 'معلومات النافذة';
 $string['windowinformation_desc'] = 'عرض معلومات عن الحجم الداخلي للنافذة الحالية والسماح بإنشاء نافذة جديدة بالأبعاد المعطاة.';

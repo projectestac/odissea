@@ -408,9 +408,9 @@ $string['makepublic'] = 'Maak openbaar';
 $string['managebackpacks'] = 'Beheer backpacks';
 $string['managebadges'] = 'Beheer badges';
 $string['message'] = 'Berichtinhoud';
-$string['messagebody'] = '<p>Je hebt een badge "%badgename%" verdiend!</p>
-<p>Meer informatie over deze badge kun je vinden op %badgelink% de badge informatiepagina.</p>
-<p>Je kunt de badge beheren en downloaden vanaf de pagina {$a}.</p>';
+$string['messagebody'] = '<p>Je hebt de badge "%badgename%" verdiend!</p>
+<p>Meer informatie over deze badge kun je vinden op de badge informatiepagina:  %badgelink% .</p>
+<p>Je kunt de badge beheren en downloaden vanaf jouw {$a}-pagina.</p>';
 $string['messagesubject'] = 'Proficiat! Je hebt een badge verdiend!';
 $string['method'] = 'Dit criterium is behaald als...';
 $string['mingrade'] = 'Minimum vereist cijfer';

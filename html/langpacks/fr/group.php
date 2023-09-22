@@ -113,15 +113,13 @@ $string['groupmembers'] = 'Membres du groupe';
 $string['groupmemberssee'] = 'Voir les membres du groupe';
 $string['groupmembersselected'] = 'Membres du groupe sélectionné';
 $string['groupmode'] = 'Mode de groupe';
-$string['groupmode_help'] = 'Ce réglage a trois options :
+$string['groupmode_help'] = '* Pas de groupe.
+* Groupes séparés : les étudiants sont séparés en groupes et ne peuvent voir que le travail de leur groupe.
+* Groupes visibles : les étudiants sont séparés en groupes, mais peuvent aussi voir le travail des autres groupes.
 
-* Pas de groupe ;
-* Groupes séparés - chaque membre du groupe ne peut voir que son propre groupe, les autres groupes étant invisibles ;
-* Groupes visibles - chaque membre du groupe travaille uniquement dans son propre groupe, mais peut aussi voir les autres groupes.
-
-Le mode de groupe défini au niveau du cours est le type par défaut pour toutes les activités du cours. Chaque activité qui supporte les groupes peut définir son propre mode de groupe. Toutefois, si dans le cours le paramètre « Imposer le mode des groupes » a été choisi, le mode des groupes défini dans les activités sera ignoré.';
+Le mode de groupe défini au niveau du cours est le mode par défaut pour toutes les activités. Si le mode de groupe est imposé au niveau du cours, il ne peut pas être modifié dans une activité.';
 $string['groupmodeforce'] = 'Imposer le mode de groupe';
-$string['groupmodeforce_help'] = 'Lorsque le type des groupes est imposé, le type des groupes défini dans le cours est appliqué à chaque activité du cours. Le type des groupes défini dans les activités est ignoré.';
+$string['groupmodeforce_help'] = 'Le mode de groupe est imposé pour toutes les activités et ne peut pas être changé dans une activité.';
 $string['groupmy'] = 'Mon groupe';
 $string['groupname'] = 'Nom du groupe';
 $string['groupnameexists'] = 'Le nom de groupe « {$a} » existe déjà dans ce cours. Veuillez en choisir un autre.';

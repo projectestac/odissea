@@ -44,7 +44,7 @@ $string['bold'] = 'داكن';
 $string['calendarend'] = '{$a} يُغلق';
 $string['calendarstart'] = '{$a} يُفتح';
 $string['cannotaccess'] = 'يمكنك الوصول إلى هذه الإفادة حصراً من مساق';
-$string['cannotsavetempl'] = 'حفظ المظاهر غير مسموح به';
+$string['cannotsavetempl'] = 'حفظ القوالب غير مسموح به';
 $string['captcha'] = 'كلمة التحقق';
 $string['captchanotset'] = 'لم يتم إعداد كلمة التحقق.';
 $string['check'] = 'متعدد الخيارات - متعدد الاجابات';
@@ -62,8 +62,8 @@ $string['completionsubmit'] = 'المعاينة بمثابة مكتمل إذا �
 $string['configallowfullanonymous'] = 'عند ضبطه على \'نعم\'، يمكن للمستخدمين إكمال نشاط الإفادة في واجهة الموقع دون الحاجة إلى تسجيل دخولهم.';
 $string['confirmdeleteentry'] = 'هل أنت متأكد من رغبتك في حذف هذا الادخال؟';
 $string['confirmdeleteitem'] = 'هل أنت متأكد من رغبتك في حذف هذا العنصر؟';
-$string['confirmdeletetemplate'] = 'هل أنت متأكد من رغبتك في حذف هذا المظهر؟';
-$string['confirmusetemplate'] = 'هل أنت متأكد من رغبتك في استعمال هذا المظهر؟';
+$string['confirmdeletetemplate'] = 'هل أنت متأكد من رغبتك في حذف هذا القالب؟';
+$string['confirmusetemplate'] = 'هل أنت متأكد من رغبتك في استعمال هذا القالب؟';
 $string['continue_the_form'] = 'استمر بإجابة الأسئلة';
 $string['count_of_nums'] = 'عدد الأرقام';
 $string['courseid'] = 'مُعرَّف المساق';
@@ -73,7 +73,7 @@ $string['delete_item'] = 'احذف سؤال';
 $string['delete_old_items'] = 'احذف العناصر القديمة';
 $string['delete_pagebreak'] = 'حذف فاصل الصفحات';
 $string['delete_template'] = 'احذف مظهر';
-$string['delete_templates'] = 'إحذف المظهر...';
+$string['delete_templates'] = 'إحذف القالب...';
 $string['depending'] = 'التبِعات';
 $string['depending_help'] = 'من الممكن إظهار العنصر المعتمد على قيمة عنصر آخر.<br />
 <strong>إليك مثالاً على ذلك.</strong><br />
@@ -124,7 +124,7 @@ $string['feedback:complete'] = 'إكمال الإفادة';
 $string['feedback:createprivatetemplate'] = 'إنشاء مظهر خاص';
 $string['feedback:createpublictemplate'] = 'إنشاء مظهر عام';
 $string['feedback:deletesubmissions'] = 'حذف التسليمات المكتملة';
-$string['feedback:deletetemplate'] = 'حذف المظهر';
+$string['feedback:deletetemplate'] = 'حذف القالب';
 $string['feedback:edititems'] = 'تحرير العناصر';
 $string['feedback:mapcourse'] = 'تعيين المقررات الدراسية للإفادات العمومية';
 $string['feedback:receivemail'] = 'تلقي إشعار البريد الالكتروني';
@@ -279,8 +279,8 @@ $string['subject'] = 'موضوع';
 $string['switch_item_to_not_required'] = 'إجعله غير مطلوب';
 $string['switch_item_to_required'] = 'إجعله مطلوباً';
 $string['template'] = 'مظهر';
-$string['template_deleted'] = 'تم حذف المظهر';
-$string['template_saved'] = 'المظهر الذي تم حفظه';
+$string['template_deleted'] = 'تم حذف القالب';
+$string['template_saved'] = 'القالب الذي تم حفظه';
 $string['templates'] = 'مظاهر';
 $string['textarea'] = 'إجابة بنص أطول';
 $string['textarea_height'] = 'عدد الأسطر';
@@ -295,7 +295,7 @@ $string['update_item'] = 'حفظ تغييرات السؤال';
 $string['url_for_continue'] = 'إربطه مع النشاط التالي';
 $string['url_for_continue_help'] = 'بعد تقديم الإفادة، سيتم عرض زر الاستمرار، والذي يذهب إلى صفحة المساق. كبديل عن ذلك، قد يرتبط بالنشاط الآتي إذا تم وضع رابطه هنا.';
 $string['use_one_line_for_each_value'] = 'استعمل سطراً واحداً لكل إجابة!';
-$string['use_this_template'] = 'استخدم هذا المظهر';
+$string['use_this_template'] = 'استخدم هذا القالب';
 $string['using_templates'] = 'استخدم مظهر';
 $string['vertical'] = 'عمودي';
 $string['whatfor'] = 'ماذا تريد أن تفعل؟';

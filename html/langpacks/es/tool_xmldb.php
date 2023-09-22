@@ -44,14 +44,32 @@ $string['checkforeignkeys'] = 'Comprobar las claves foráneas';
 $string['checkindexes'] = 'Comprobar índices';
 $string['checkoraclesemantics'] = 'Comprobar la semántica';
 $string['completelogbelow'] = '(ver abajo el registro completo de la búsqueda)';
-$string['confirmcheckbigints'] = 'Esta funcionalidad buscará <a href="http://tracker.moodle.org/browse/MDL-11038">potential wrong integer fields</a> en su servidor Moodle, generando (¡pero no ejecutando!) automáticamente las acciones SQL necesarias para tener todos los enteros de su base de datos adecuadamente definidos.<br /><br />
-Una vez generados, puede copiarlas y ejecutarlas con seguridad en su interfaz SQL preferida (no olvide hacer una copia de seguridad de sus datos antes de hacerlo).<br /><br />Se recomienda ejecutar la última (+) versión de Moodle disponible (1.8, 1.9, 2.x ...) antes de llevar a cabo la búsqueda de enteros erróneos.<br /><br />Esta funcionalidad no ejecuta ninguna acción contra la BD (únicamente la lee), de modo que puede ser realizada con seguridad en cualquier momento.';
-$string['confirmcheckdefaults'] = 'Esta funcionalidad buscará valores por defecto inconsistentes en su servidor Moodle, y generará (pero no ejecutará) los comandos SQL necesarios para hacer que todos los valores por defecto se definan apropiadamente.<br /><br />Una vez generados, puede copiar tales comandos y ejecutarlos con seguridad en su interfaz SQL favorita (no olvide hacer una copia de sus datos antes).<br /><br />Es muy recomendable ejecutar la última versión (+version) disponible de Moodle (1.8, 1.9, 2x...) antes de ejecutar la búsqueda de valores por defecto inconsistentes.<br /><br />
+$string['confirmcheckbigints'] = 'Esta funcionalidad buscará <a href="https://tracker.moodle.org/browse/MDL-11038">campos con campos enteros erróneos</a> en su servidor Moodle, generando (¡pero no ejecutando!) automáticamente los comandos SQL necesarios para tener todos los enteros de su base de datos adecuadamente definidos.
+
+Una vez generados, puede copiarlos y ejecutarlos con seguridad en su interfaz SQL preferida (no olvide hacer una copia de seguridad de sus datos antes de hacerlo).
+
+Se recomienda ejecutar la última (+) versión de Moodle disponible antes de llevar a cabo la búsqueda de enteros erróneos.
+
+Esta funcionalidad no ejecuta ninguna acción contra la BD (únicamente la lee), de modo que puede ser realizada con seguridad en cualquier momento.';
+$string['confirmcheckdefaults'] = 'Esta funcionalidad buscará valores por defecto inconsistentes en su servidor Moodle, y generará (pero no ejecutará) los comandos SQL necesarios para hacer que todos los valores por defecto se definan apropiadamente.
+
+Una vez generados, puede copiar tales comandos y ejecutarlos con seguridad en su interfaz SQL favorita (no olvide hacer una copia de sus datos antes).
+
+Es muy recomendable ejecutar la última versión (+version) disponible de Moodle antes de ejecutar la búsqueda de valores por defecto inconsistentes.
+
 Esta funcionalidad no ejecuta ninguna acción contra la base de datos (simplemente la lee), de modo que puede ejecutarse con seguridad en cualquier momento.';
-$string['confirmcheckforeignkeys'] = 'Esta funcionalidad buscará posibles violaciones de las claves externas  defindas en install.xml. (Moodle no generan actualmente restricciones de clave externa en la base de datos, por lo que datos no válidos pueden estar presentes.) <br /> <br /> Es muy recomendable que se ejecuta la última (+ versión) disponible en su versión de Moodle ( 1.8, 1.9, 2.x ...) antes de ejecutar la búsqueda de índices perdidos. <br /> <br /> Esta funcionalidad no realiza ninguna acción contra la Base de Datos (sólo lee de ella), por lo que se puede ejecutar de forma segura en cualquier momento.';
-$string['confirmcheckindexes'] = 'Esta funcionalidad buscará potenciales índices ausentes en su servidor Moodle, generando (no ejecutando) automáticamente los comandos SQL necesarios para mantener todo actualizado. Una vez generados, puede copiar los comandos y ejecutarlos con seguridad con su interfaz SQL favorita.<br /><br />
-Es muy recomendable ejecutar la última versión disponible de Moodle (1.8, 1.9, 2.x ...) antes de llevar a cabo la búsqueda de los índices ausentes.<br /><br />
-Esta funcionalidad no ejecuta ninguna acción contra la BD (simplemente lee en ella), de modo que puede ejecutarse con seguridad en cualquier momento.';
+$string['confirmcheckforeignkeys'] = 'Esta funcionalidad buscará posibles violaciones de las claves externas defindas en las definiciones install.xml. (Moodle no genera actualmente restricciones de clave externa en la base de datos, por lo que podría haber datos no válidos).
+
+Es muy recomendable que se ejecute la última (+ versión) disponible en su versión de Moodle  antes de ejecutar la búsqueda de posibles violaciones de claves externas.
+
+Esta funcionalidad no realiza ninguna acción contra la Base de Datos (sólo la lee), por lo que se puede ejecutar de forma segura en cualquier momento.';
+$string['confirmcheckindexes'] = 'Esta funcionalidad buscará potenciales índices ausentes en su servidor Moodle, generando (no ejecutando) automáticamente los comandos SQL necesarios para mantener todo actualizado.
+
+Una vez generados, puede copiar los comandos y ejecutarlos con seguridad en su interfaz SQL favorita.
+
+Es muy recomendable ejecutar la última versión disponible de Moodle antes de llevar a cabo la búsqueda de los índices ausentes.
+
+Esta funcionalidad no ejecuta ninguna acción contra la BD (simplemente la lee), de modo que puede ejecutarse con seguridad en cualquier momento.';
 $string['confirmcheckoraclesemantics'] = 'Esta funcionalidad buscará <a href="https://tracker.moodle.org/browse/MDL-29322">columnas Oracle varchar2 usando semántica BYTE</a> en su servidor Moodle, generando (¡pero no ejecutándose!) automáticamente las sentencias SQL necesarias para que todas las columnas se conviertan para usar semántica CHAR en su lugar (mejor para compatibilidad entre bases de datos y mayor longitud máxima de contenido).
 
 Una vez generadas, puede copiar dichas declaraciones y ejecutarlas de forma segura con su interfaz SQL favorita (no olvide hacer una copia de seguridad de sus datos antes de hacerlo).
@@ -210,7 +228,9 @@ $string['wrongreservedwords'] = 'Palabras reservadas utilizadas actualmente <br 
 $string['yesextraindexesfound'] = 'Se encontraron los siguientes índices adicionales.';
 $string['yesmissingindexesfound'] = '<p>Se han detectado que faltan algunos índices en su base de datos. Aquí están sus detalles y las instrucciones SQL necesarias para ser ejecutadas con su interfaz SQL favorita para crear todos. ¡Recuerde hacer antes una copia de seguridad de sus datos!</p>
 <p>Después de hacer eso, es muy recomendable ejecutar esta utilidad de nuevo para verificar que no se encuentren más índices que falten.</p>';
-$string['yeswrongdefaultsfound'] = 'En su base de datos se han encontrado algunos valores por defecto inconsistentes. Aquí se presentan los detalles y las acciones SQL que deben ejecutarse en su interfaz SQL favorita para crearlos (no olvide hacer una copia de seguridad de sus datos).<br /><br />Una vez realizado, se recomienda ejecutar de nuevo esta utilidad para comprobar que no se encuentran más valores por defecto inconsistentes.';
-$string['yeswrongintsfound'] = 'Se han encontrado algunos enteros erróneos en su BD. Aquí se presentan los detalles y las acciones SQL que deben ejecutarse en su interfaz SQL favorita para crearlos (no olvide hacer una copia de seguridad de sus datos).<br /><br />Una vez realizado, se recomienda ejecutar de nuevo esta utilidad para comprobar que no se encuentran más enteros erróneos.';
+$string['yeswrongdefaultsfound'] = '<p>Se han encontrado algunos valores por defecto inconsistentes en su Base de Datos. Aquí se presentan los detalles y los comandos SQL que deben ejecutarse en su interfaz SQL favorita para arreglarlos todos. ¡No olvide hacer una copia de seguridad de sus datos!.</p>
+<p>Una vez realizado, se recomienda ejecutar de nuevo esta utilidad para comprobar que no hay más valores por defecto inconsistentes.</p>';
+$string['yeswrongintsfound'] = '<p>Se han encontrado algunos enteros erróneos en su BD. Aquí se presentan los detalles y los comandos SQL que deben ejecutarse en su interfaz SQL favorita para repararlos. ¡No olvide hacer una copia de seguridad de sus datos antes!</p>
+<p>Una vez reparados, se recomienda ejecutar de nuevo esta utilidad para comprobar que no hay más enteros erróneos.</p>';
 $string['yeswrongoraclesemanticsfound'] = '<p>Se han encontrado algunas columnas de Oracle que utilizan semántica BYTE en su base de datos. Aquí están sus detalles y las declaraciones SQL necesarias para ser ejecutadas con su interfaz SQL favorita para convertirlas todas. ¡Recuerde hacer una copia de seguridad de sus datos antes!</p>
 <p>Después de hacer eso, es muy recomendable ejecutar esta utilidad nuevamente para verificar que no se encuentren más semánticas incorrectas.</p>';

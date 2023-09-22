@@ -30,6 +30,7 @@ $string['adminheadermiscsettings'] = 'Paràmetres diversos';
 $string['adminlabelaccdesc'] = 'Descripció del compte:';
 $string['labelgroupdesc'] = 'Descripció del grup:';
 $string['nexttoken'] = 'Següent';
+$string['optionallusers'] = 'Tots els usuaris';
 $string['optionmove'] = 'Mou a...';
 $string['sendfragnext'] = 'Següent';
 $string['sendlabelaccountdesc'] = 'Descripció del compte:';

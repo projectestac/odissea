@@ -53,7 +53,6 @@ $string['notintendedforstudents_desc'] = 'Standaard worden evaluatieve en proced
 $string['pluginname'] = 'Components for learning (C4L)';
 $string['preview'] = 'Voorbeeldweergave';
 $string['previewdefault'] = 'Beweeg de muis over een component om een voorbeeld te zien.';
-$string['privacy:metadata'] = 'Components for learning (C4L) slaat geen persoonlijke gegevens op.';
 $string['procedural'] = 'Procedureel';
 $string['proceduralcontext'] = 'Procedurele context';
 $string['quote'] = 'Quote';

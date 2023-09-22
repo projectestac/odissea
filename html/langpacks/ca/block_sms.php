@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['edit'] = 'Edita';
+$string['name'] = 'Nom';
 $string['picturedesc'] = 'Descripció';
 $string['selectcourse'] = 'Selecciona un curs';

@@ -656,7 +656,6 @@ $string['questiontextisempty'] = '[نص السؤال فارغ]';
 $string['quizdate'] = 'تاريخ الاختبار غير المتصل';
 $string['quizopenclose'] = 'تاريخا الفتح والإغلاق';
 $string['quizopenclose_help'] = 'يمكن للطلبة فقط مشاهدة محاولاتهم بعد وقت الفتح وقبل وقت الإغلاق.';
-$string['quizquestions'] = 'أسئلة الاختبار';
 $string['randomfromexistingcategory'] = 'سؤال عشوائي من صنف موجود';
 $string['randomnumber'] = 'عدد الأسئلة العشوائية';
 $string['randomquestionusinganewcategory'] = 'سؤال عشوائي باستعمال صنف جديد';

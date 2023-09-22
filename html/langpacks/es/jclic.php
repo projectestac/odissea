@@ -41,32 +41,36 @@ $string['description'] = 'Descripción';
 $string['duedate'] = 'Fecha de vencimiento';
 $string['event_course_module_viewed'] = 'Módulo de curso visto';
 $string['event_instances_list_viewed'] = 'Lista de casos vista';
+$string['exiturl'] = 'URL de salida';
 $string['exiturl_help'] = 'Esta es la URL que aparece cuando los alumnos terminan la última actividad JClic.
 
 Para hacer que esta redirección funcione es necesario asociar a la última actividad en la pestaña de secuencias la acción "JClic de salida" en la sección de la flecha hacia adelante.';
 $string['expired'] = 'Disculpe, esta actividad se cerró el {$a} y ya no está disponible.';
 $string['filetype'] = 'Tipo';
-$string['filetype_help'] = 'Este ajuste determina cómo se incluye en el curso la actividad JClic. Hay 2 opciones:
+$string['filetype_help'] = 'Este ajuste determina cómo se incluye en el curso la actividad JClic. Hay un total de dos opciones:
 
-* JClic cargado - Permite que se elija un paquete ".jclic.zip" válido en el selector de ficheros.
+* JClic cargado - Permite que se elija un paquete JClic válido en el selector de ficheros.
 * URL externa - Permite que se indique una URL. Nota: La URL debe empezar con http(s) o www y contener un fichero "jclic.zip" válido.';
 $string['filetypeexternal'] = 'URL externa';
 $string['filetypelocal'] = 'Jclic cargado';
 $string['height'] = 'Altura';
-$string['invalidjclicfile'] = 'El JClic indicado no es válido. Debe tener la extensión ".jclic.zip".';
-$string['invalidurl'] = 'La URL indicada no es válida. Debe empezar con http(s) y debe ser un fichero ".jclic.zip" válido.';
+$string['invalidjclicfile'] = 'El JClic indicado no es válido. Debe tener la extensión ".jclic"';
+$string['invalidurl'] = 'La URL indicada no es válida. Debe empezar con http(s) y debe ser un fichero JClic válido.';
 $string['jclic'] = 'JClic';
 $string['jclic:addinstance'] = 'Añadir JClic';
 $string['jclic:grade'] = 'Evaluar JClic';
 $string['jclic:submit'] = 'Enviar JClic';
 $string['jclic:view'] = 'Ver JClic';
 $string['jclicfile'] = 'Fichero JClic';
-$string['jclicfile_help'] = 'El fichero .jclic.zip que contiene los ficheros JClic.';
+$string['jclicfile_help'] = 'El fichero .jclic que contiene los ficheros JClic.';
 $string['jclicjarbase'] = 'Raíz de archivos jar';
 $string['jclicjarbase_help'] = 'Dirección web donde localizar todos los ficheros jar JClic';
+$string['jclicjs'] = 'URL de archivo jclic.js';
+$string['jclicjs_help'] = 'URL donde encontrar jclic.js necesaria para no usar reproductor  Java player';
 $string['jclicurl'] = 'URL';
 $string['jclicurl_help'] = 'Este ajuste permite que se indique una URL para el paquete JClic, en vez de elegir un fichero mediante el selector de ficheros.';
 $string['lang'] = 'Idioma';
+$string['lap'] = 'Vuelta';
 $string['lap_help'] = 'Tiempo entre transacciones cliente-servidor (en segundos)';
 $string['lastaccess'] = 'Último visitado';
 $string['maxattempts'] = 'Número máximo de intentos';
@@ -80,3 +84,30 @@ Este módulo le permite a los maestros añadir actividades JClic a cualquier cur
 $string['modulenameplural'] = 'JClic';
 $string['msg_noattempts'] = 'Has intentado esta actividad el número máximo de veces';
 $string['msg_nosessions'] = 'Esta actividad JClic no tiene ninguna sesión aún';
+$string['notopenyet'] = 'Lo siento, esta actividad no está disponible hasta {$a}';
+$string['pluginadministration'] = 'Administración JClic';
+$string['pluginjs'] = 'URL de archivo js de plugin JClic';
+$string['pluginjs_help'] = 'Es necesaria la URL donde encontrar jclicplugin.js para que funcione. Si está vacía, usará el archivo del módulo.';
+$string['pluginname'] = 'JClic';
+$string['preview_jclic'] = 'Vista previa de actividad JClic';
+$string['report_details'] = 'Resultados detallados con todas las sesiones';
+$string['report_normal'] = 'Resumen de resultados';
+$string['results'] = 'Resultados';
+$string['return_results'] = 'Volver a resutados';
+$string['score'] = 'Puntuación';
+$string['sessions'] = 'Sesiones';
+$string['show_my_results'] = 'Ver mis resultados';
+$string['size'] = 'Tamaño';
+$string['skin'] = 'Aspecto';
+$string['solved'] = 'Correcto';
+$string['solveddone'] = 'Actividades resueltas / hechas';
+$string['starttime'] = 'Fecha de comienzo';
+$string['time'] = 'Hora';
+$string['timing'] = 'Tiempo';
+$string['totals'] = 'Totales';
+$string['totaltime'] = 'Tiempo total';
+$string['unlimited'] = 'Sin límite';
+$string['url'] = 'URL';
+$string['urledit'] = 'Archivo de actividad JClic';
+$string['urledit_help'] = 'El archivo "jclic.zip" donde encontrará el paquete de la actividad JClic';
+$string['width'] = 'Ancho';

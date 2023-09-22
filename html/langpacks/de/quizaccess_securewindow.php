@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'JavaScript Sicherheit';
-$string['popupwithjavascriptsupport'] = 'Vollbild-Popup mit Javascript-Sicherheit';
+$string['popupwithjavascriptsupport'] = 'Vollbild-Popup mit JavaScript-Sicherheit';
 $string['privacy:metadata'] = 'Das JavaScript Sicherheit Plugin für Testzugriffe speichert keine personenbezogenen Daten.';

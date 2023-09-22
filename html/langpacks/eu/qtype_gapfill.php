@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addhinttext'] = 'Gehitu pista-testua editatzen ari zaren inprimakian';
-$string['addhinttext_text'] = 'Gehitu automatikoki pista-testua  lehen pista-eremuetan';
+$string['addhinttext_text'] = 'Gehitu automatikoki lehen bi pista-testu inprimakiko saiakera anitzen atalean';
 $string['additemsettings'] = 'Gehitu hutsunearen ezarpenak';
 $string['answerdisplay'] = 'Erakutsi erantzunak';
 $string['answerdisplay_help'] = 'Hartu eta eraman aukerak hutsuneetara eramateko hitz-zerrenda bat erakusten du. Hutsuneak bete aukerak hutsuneak erakusten ditu hitzak erakutsi gabe. Zabaltzen den zerrendak eremu bakoitzari dagokion hitz zuzenen (eta agian okerren) zerrenda bera erakusten du';

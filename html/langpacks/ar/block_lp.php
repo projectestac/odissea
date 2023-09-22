@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'الكفاءات المزمعة مراجعتها';
 $string['lp:addinstance'] = 'إضافة كتلة جديدة لخطط التعلم';
-$string['lp:myaddinstance'] = 'إضافة كتلة جديدة لخطط التعلم إلى دفة القيادة';
+$string['lp:myaddinstance'] = 'إضافة كتلة جديدة لخطط التعلم إلى لوحة التحكم';
 $string['myplans'] = 'خططي';
 $string['noactiveplans'] = 'لا خطط نشطة حالياً.';
 $string['planstoreview'] = 'الخطط المزمعة مراجعتها';

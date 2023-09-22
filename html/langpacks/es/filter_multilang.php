@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Contenido multi-idioma';
 $string['forceoldsyntax'] = 'Forzar sintaxis antigua';
-$string['forceoldsyntax_desc'] = 'Forzar sintaxis vieja multi-idioma: <span> sin la class="multilang" and <lang>';
-$string['privacy:metadata'] = 'El complemento de contenido multi-idioma no';
+$string['forceoldsyntax_desc'] = 'Forzar sintaxis vieja multi-idioma:  &lt;span&gt; sin la clase class="multilang" y &lt;lang&gt;.';
+$string['privacy:metadata'] = 'El complemento de contenido multi-idioma no almacena ningún dato personal.';

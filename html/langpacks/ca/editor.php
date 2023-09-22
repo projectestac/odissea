@@ -58,6 +58,7 @@ $string['cutpastemozilla'] = 'Malauradament, a hores d\'ara no podeu utilitzar l
 $string['delete'] = 'Suprimeix';
 $string['editors'] = 'Editors de text';
 $string['editorsettings'] = 'Gestiona els editors';
+$string['editorxformat'] = 'Format {$a}';
 $string['enterurlfirst'] = 'Primer heu d\'introduir un URL';
 $string['filebrowser'] = 'Explorador de fitxers';
 $string['findwhat'] = 'Cerca';

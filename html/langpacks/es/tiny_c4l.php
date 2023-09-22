@@ -53,7 +53,6 @@ $string['notintendedforstudents_desc'] = 'Por defecto, el uso de componentes eva
 $string['pluginname'] = 'Componentes para el aprendizaje (C4L)';
 $string['preview'] = 'Previsualización';
 $string['previewdefault'] = 'Desplaza el cursor sobre los componentes para previsualizarlos.';
-$string['privacy:metadata'] = 'El plugin de TinyMCE Componentes para el aprendizaje no almacena ningún dato personal.';
 $string['procedural'] = 'Procedimental';
 $string['proceduralcontext'] = 'Contexto procedimental';
 $string['quote'] = 'Cita';

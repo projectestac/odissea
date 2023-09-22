@@ -30,6 +30,7 @@ $string['addpresenter'] = 'Afegeix';
 $string['admin_httpauth'] = 'Capçalera d\'autenticació HTTP';
 $string['admin_httpauth_desc'] = 'El valor HTTP_AUTH_HEADER emprat al vostre custom.ini';
 $string['adminemptyxml'] = 'No s\'ha pogut connectar al servidor d\'Adobe Connect Pro en aquest moment. Feu clic a \'Continua\' per seguir amb la pàgina de configuració de l\'activitat i verificar la connexió';
+$string['allusers'] = 'tots els usuaris';
 $string['host'] = 'Amfitrió';
 $string['invalidurl'] = 'L\'URL ha de començar amb una lletra (a-z)';
 $string['private'] = 'Privat';

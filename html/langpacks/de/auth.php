@@ -144,9 +144,9 @@ $string['privacy:metadata:userpref:forcepasswordchange'] = 'Legt fest, ob eine P
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Anzahl der Fehllogins des Nutzers';
 $string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Anzahl der Fehllogins des Nutzers nach seinem letzten erfolgreichen Login';
 $string['privacy:metadata:userpref:loginfailedlast'] = 'Das Datum, an dem der letzte Loginversuch erfolgte';
-$string['privacy:metadata:userpref:loginlockout'] = 'Kennzeichnet, ob ein Nutzeraccount geblockt ist weil er vergebliche Loginversuche hatte und zu welchem Zeitpunkt der Account geblockt wurde';
-$string['privacy:metadata:userpref:loginlockoutignored'] = 'Kennzeichnet, dass ein Nutzeraccount niemals geblockt werden soll.';
-$string['privacy:metadata:userpref:loginlockoutsecret'] = '\'Kennzeichen\' mit dem ein geblockter Nutzer den Account entsperren kann.';
+$string['privacy:metadata:userpref:loginlockout'] = 'Kennzeichnet, ob ein Nutzerkonto geblockt ist, weil er vergebliche Loginversuche hatte und zu welchem Zeitpunkt das Konto geblockt wurde';
+$string['privacy:metadata:userpref:loginlockoutignored'] = 'Kennzeichnet, dass ein Nutzerkonto niemals geblockt werden soll.';
+$string['privacy:metadata:userpref:loginlockoutsecret'] = '\'Kennzeichen\' mit dem eine geblockte Person das Konto entsperren kann.';
 $string['recaptcha'] = 'ReCaptcha';
 $string['recaptcha_help'] = 'Das Captcha dient dazu, Missbrauch durch automatisierte Programme zu verhindern. Befolgen Sie die Anleitung zur Bestätigung, dass Sie kein Roboter sind. Verschiedene Dinge sind möglich, z.B. eine Box zum Markieren, Buchstaben in einem angezeigten Bild oder eine Reihe zur Auswahl angezeigte Bilder.
 

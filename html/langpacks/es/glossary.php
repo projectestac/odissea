@@ -137,34 +137,15 @@ $string['destination_help'] = '<P>Puede especificar dónde desea importar las en
 </ul>';
 $string['disapprove'] = 'Deshacer aprobación';
 $string['displayformat'] = 'Formato de visualización de entradas';
-$string['displayformat_help'] = '<P>Esta variable define la manera cómo se mostrará cada entrada dentro del glosario.
-Los formatos disponibles son:</p>
-<blockquote>
-<dl>
-<dt><b>Diccionario simple</b>:</dt>
-<dd>Luce como un diccionario convencional, con las entradas separadas. No se
-muestra a ningún autor y los archivos adjuntos aparecen como enlaces.</dd>
-<dt><b>Contínuo</b>:</dt>
-<dd>Presenta las entradas una después de la otra sin otra separación que los
-iconos de separación.</dd>
-<dt><b>Completo con autor</b>:</dt>
-<dd>Un formato semajante al de los foros, que muestra la información del autor
-de cada entrada. Los archivos adjuntos aparecen como enlaces.</dd>
-<dt><b>Completo sin autor</b>:</dt>
-<dd>Un formato semajante al de los foros, que no muestra la información del autor
-de cada entrada. Los archivos adjuntos aparecen como enlaces.</dd>
-<dt><b>Enciclopedia</b>:</dt>
-<dd>Semejante a \'Completo con autor\' pero en el que las imágenes adjuntas se muestran
-en línea.</dd>
-<dt><b>FAQ</b>:</dt>
-<dd>Útil para presentar listas de Preguntas Frecuentemente Respondidas. Automáticamente
-añade las palabras Pregunta y Respuesta en el concepto y la definición respectivamente.</dd>
-</dl>
-</blockquote>
+$string['displayformat_help'] = 'Hay 7 formatos de vista:
 
-<hr />
-<p>Los administradores de Moodle pueden crear nuevos formatos siguiendo las instrucciones que
-aparecen en el archivo <b>mod/glossary/formats/README.txt</b> de su instalación.</p>';
+* Simple, estilo diccionario - No se muestran los autores y los adjuntos se ven como enlaces.
+* Contínua sin autor - Las entradas se ven una tras otra sin ninguna separación aparte de los iconos de edición.
+* Completa con autor - Una vista estilo forum que muestra los datos del autor y con adjuntos mostrados como enlaces.
+* Completa sin autor - Una vista estilo forum sin autores y con adjuntos mostrados como enlaces.
+* Enciclopedia - Como "Completa con autor" pero las imágenes adjuntas se ven en línea.
+* Lista de entradas - Los conceptos se listan como enlaces.
+* FAQ - Las palabras PREGUNTA y RESPUESTA se adjuntan a sus respectivos conceptos y definiciones.';
 $string['displayformatcontinuous'] = 'Continuo sin autor';
 $string['displayformatdefault'] = 'Por defecto la misma que el formato de visualización';
 $string['displayformatdictionary'] = 'Simple, estilo diccionario';

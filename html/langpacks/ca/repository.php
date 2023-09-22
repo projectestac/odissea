@@ -58,6 +58,7 @@ $string['cannotdownload'] = 'No es pot baixar aquest fitxer';
 $string['cannotdownloaddir'] = 'No es pot baixar aquesta carpeta';
 $string['cannotinitplugin'] = 'Crida a plugin_init fallada';
 $string['cannotunzipcontentunreadable'] = 'No s\'ha pogut descomprimir aquest arxiu atès que no se\'n pot llegir el contingut.';
+$string['cannotunzipextractfileerror'] = 'No es pot descomprimir aquest fitxer perquè un o més dels seus fitxers no es poden llegir.';
 $string['cannotunzipquotaexceeded'] = 'No s\'ha pogut descomprimir aquest arxiu atès que s\'ultrapassaria la capacitat màxima permesa en aquesta àrea d\'esborranys.';
 $string['choosealink'] = 'Escull un enllaç...';
 $string['chooselicense'] = 'Tria una llicència';

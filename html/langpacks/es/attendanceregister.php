@@ -150,6 +150,10 @@ $string['recalc_scheduled_on_next_cron'] = 'El re-cálculo de la sesión ha sido
 $string['ref_course'] = 'Curso de Referencia';
 $string['registername'] = 'nombre del registro de asistencia';
 $string['registertype'] = 'Modo de seguimiento de asistencia';
+$string['registertype_help'] = 'El Modo de Seguimiento de Asistencia determina cursos monitorizados por el registro (p.ej., donde la actividad de los usuarios está monitorizada)_
+* _Únicamente este curso_: Sólo en el curso donde está el módulo de asistencia.
+* _Todos los cursos de la misma categoría_: Se monitorizará la actividad de todos los cursos de la misma categoría en la que está el curso que tiene el módulo.
+* _Todos los cursos enlazados mediante metaenlace de curso_: Se monitorizará la actividad en este curso y en todos los cursos enlazados mediante metaenlace de curso.';
 $string['schedule_reclalc_all_session'] = 'Agendar Re-cálculo de Sesiones';
 $string['select_a_course'] = '- Seleccione un Curso -';
 $string['select_a_course_if_any'] = '- Seleccione un curso, si acaso -';

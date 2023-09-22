@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['editor:a11ytitlehidelabel'] = 'Ocultar etiqueta para AT';
+$string['editor:a11ytitleshowlabel'] = 'Mostrar etiqueta para AT';
 $string['editor:add'] = 'Agregar';
 $string['editor:addauthor'] = 'Guardar autor';
 $string['editor:addentity'] = 'Agregar :entity';
@@ -91,7 +93,7 @@ $string['editor:enteraudiotitle'] = 'Pegar enlace u otra URL de fuente de audio'
 $string['editor:enteraudiourl'] = 'Escribir URL de fuente de audio';
 $string['editor:enterfullscreenbuttonlabel'] = 'Pasar a pantalla completa';
 $string['editor:entervideotitle'] = 'Pegar enlace hacia YouTube o alguna otra URL de fuente de video';
-$string['editor:entervideourl'] = 'Ingresar URL de fuente de video o enlace hacia YouTube';
+$string['editor:entervideourl'] = 'Introducir URL de fuente de video';
 $string['editor:errorcalculatingmaxscore'] = 'No se pudo calcular el puntaje máximo para este contenido. Se asume que el puntaje máximo sea 0. Póngase en contacto con su administrador si esto es incorrecto.';
 $string['editor:errorcommunicatinghubcontent'] = 'Ocurrió un error. Por favor inténtelo nuevamente.';
 $string['editor:errorcommunicatinghubtitle'] = 'No se puede comunicar con hub.';
@@ -209,7 +211,7 @@ $string['editor:tabtitleinputlinkurl'] = 'Enlace/URL';
 $string['editor:textfield'] = 'campo de texto';
 $string['editor:thecontenttype'] = 'el tipo de contenido';
 $string['editor:thiswillpotentially'] = 'Esto potencialmente reiniciará todo el texto y las traducciones. Usted no podrá deshacerlo. El contenido mismo no será cambiado. ¿Desea proceder?';
-$string['editor:title'] = 'Esto potencialmente reiniciará todo el texto y las traducciones. Usted no podrá deshacerlo. El contenido mismo no será cambiado. ¿Desea proceder?';
+$string['editor:title'] = 'Título';
 $string['editor:toolong'] = 'El valor del campo es demasiado largo; debería contener :max letras o menos.';
 $string['editor:tryagain'] = 'Intentar nuevamente';
 $string['editor:tutorial'] = 'Tutorial';
@@ -230,7 +232,7 @@ $string['editor:uploadinstructionstitle'] = 'Subir un archivo H5P.';
 $string['editor:uploadplaceholder'] = 'No se eligió archivo';
 $string['editor:uploadsuccess'] = '¡ :title fue subido exitosamente!';
 $string['editor:uploadtablabel'] = 'Subir';
-$string['editor:uploadvideotitle'] = '3.9+ | editor:uploadvideotitle | h5plib_v124';
+$string['editor:uploadvideotitle'] = 'Subir archivo de video.';
 $string['editor:usedforsearchingreportsandcopyrightinformation'] = 'Usado para búsqueda, reportes e información de copyright';
 $string['editor:videoquality'] = 'Etiqueta de calidad del video';
 $string['editor:videoqualitydefaultlabel'] = 'Calidad :index';

@@ -60,9 +60,9 @@ $string['checkallsection'] = 'Activar o desactivar todas las actividades y recur
 $string['completeactivity'] = 'Completar la actividad';
 $string['completed'] = 'Finalizado';
 $string['completedunlocked'] = 'Opciones de finalización desbloqueadas';
-$string['completedunlockedtext'] = 'Cuando guarda los cambios, se borrará el estado de finalización de todos los estudiantes. Si cambia de parecer sobre este asunto, no guarde el formulario.';
+$string['completedunlockedtext'] = 'Cuando guarde los cambios, se borrará el estado de finalización de todos los estudiantes y después se recalculará tanto como sea posible. Para evitar esto, puede salir de la navegación sin guardar.';
 $string['completedwarning'] = 'Opciones de finalización bloqueadas';
-$string['completedwarningtext'] = 'Esta actividad ya ha sido completada por {$a} participante(s). Cambiar las opciones de finalización borrará su estado de finalización y puede ocasionar confusión. Por tanto, estas opciones han sido bloqueadas y no se deberían desbloquear salvo que fuera absolutamente necesario.';
+$string['completedwarningtext'] = 'Esta actividad ya ha sido completada por uno o más estudiantes. Si usted desbloquea las opciones de finalización y guarda los cambios, borrará su estado de finalización y se volverá a recalcular como sea posible. La finalización de actividad marcada manualmente no se puede recalcular, por lo que en este caso el estudiante tendrá que marcarla de nuevo.';
 $string['completion'] = 'Rastreo de finalización';
 $string['completion-alt-auto-enabled'] = 'El sistema marca este ítem como finalizado de acuerdo con las condiciones {$a}';
 $string['completion-alt-auto-fail'] = 'Finalizado {$a} (no ha alcanzado la calificación de aprobado)';
@@ -95,7 +95,8 @@ $string['completiondisabled'] = 'Desactivado, no se muestra en los ajustes de la
 $string['completionduration'] = 'Matriculación';
 $string['completionenabled'] = 'Activado, control por medio de los ajustes de finalización y de actividad';
 $string['completionexpected'] = 'Se espera finalizar en';
-$string['completionexpected_help'] = 'Esta opción especifica la fecha en que se espera que la actividad esté finalizada.';
+$string['completionexpected_help'] = 'Esta opción especifica la fecha en que se espera que la actividad esté finalizada.
+Cuando la fecha esté próxima, la actividad se mostrará en el bloque de Línea del Tiempo del Área Personal';
 $string['completionexpecteddesc'] = 'Finalización esperada en {$a}';
 $string['completionexpectedfor'] = '{$a->instancename} debería ser completado';
 $string['completionicons'] = 'Casillas para marcar el grado de finalización';
@@ -103,7 +104,7 @@ $string['completionicons_help'] = 'Una marca junto al nombre de la actividad pue
 
 Si se muestra una casilla con el borde punteado, la marca aparecerá automáticamente cuando se haya completado la actividad de acuerdo con las condiciones establecidas por el profesor.
 
-Si se muestra una casilla con el borde sólido, entonces será posible hacer clic sobre ella cuando piense que ha finalizado la actividad. (Si se vuelve a hacer clic sobre ella, la marca desaparece en caso de que haya cambiado de opinión). Esto es una acción opcional que se utiliza para llevar un seguimiento personal del progreso a lo largo del curso.';
+Si se muestra una casilla con el borde sólido, entonces será posible hacer clic sobre ella cuando piense que ha finalizado la actividad. (Si se vuelve a hacer clic sobre ella, la marca desaparece en caso de que haya cambiado de opinión).';
 $string['completionmenuitem'] = 'Finalización';
 $string['completionnotenabled'] = 'Completar curso no está habilitada';
 $string['completionnotenabledforcourse'] = 'Completar curso no está habilitada';
@@ -156,7 +157,7 @@ $string['detail_desc:view'] = 'Ver';
 $string['done'] = 'Completado';
 $string['editcoursecompletionsettings'] = 'Editar ajustes de finalización del curso';
 $string['enablecompletion'] = 'Habilitar seguimiento del grado de finalización';
-$string['enablecompletion_help'] = 'Si se habilita, pueden configurarse las condiciones de la finalización de la actividad y/o las condiciones de finalización del curso en las configuraciones de la actividad. Se recomienda tener esto habilitado para se muestren datos significativos en el Tablero de la vista general del curso';
+$string['enablecompletion_help'] = 'Si se habilita, usted puede configurar las condiciones de la finalización de la actividad y/o las condiciones de finalización del curso.';
 $string['enrolmentduration'] = 'Periodo de tiempo de la matrícula';
 $string['enrolmentdurationlength'] = 'El usuario debe permanecer matriculado por';
 $string['err_noactivities'] = 'No está habilitada la información sobre la finalización de ninguna actividad. Puede activar la información sobre la finalización de una actividad editando su  parámetros de configuración.';
@@ -235,15 +236,15 @@ $string['select'] = 'Seleccionar';
 $string['self'] = 'Auto';
 $string['selfcompletion'] = 'Completar automáticamente';
 $string['showcompletionconditions'] = 'Mostrar condiciones de finalización de actividad';
-$string['showcompletionconditions_help'] = 'Las condiciones de finalización de actividad son mostradas siempre en la  página de la actividad. Esta configuración determina si es que las condiciones de finalización de la actividad son también mostradas debajo de cada actividad en la página del curso.';
+$string['showcompletionconditions_help'] = 'Mostrar condiciones de finalización de actividad en la  página del curso.';
 $string['showinguser'] = 'Mostrando usuario';
 $string['timecompleted'] = 'Hora de finalización';
 $string['todo'] = 'Pendiente de hacer';
 $string['unenrolingfromcourse'] = 'Desmatricularse del curso';
 $string['unenrolment'] = 'Dar de baja';
 $string['unit'] = 'Unidad';
-$string['unlockcompletion'] = 'Desbloquear opciones de grado de finalización';
-$string['unlockcompletiondelete'] = 'Desbloquear opciones de grado de finalización y eliminar los datos de grado de finalización del usuario';
+$string['unlockcompletion'] = 'Desbloquear ajustes de grado de finalización';
+$string['unlockcompletiondelete'] = 'Desbloquear ajustes de grado de finalización y eliminar los datos de finalización del usuario';
 $string['updateactivities'] = 'Actualizar estado de finalización de actividades seleccionadas';
 $string['usealternateselector'] = 'Usar el selector de curso alternativo';
 $string['usernotenroled'] = 'El usuario no está matriculado en este curso';

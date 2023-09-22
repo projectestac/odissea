@@ -76,9 +76,9 @@ $string['consent_agree'] = 'Accepto les condicions';
 $string['consent_alert_message'] = 'Heu de donar el vostre consentiment abans d\'accedir al qüestionari. Desplaceu-vos cap avall i accepteu les condicions aband de clicar a «Següent».';
 $string['consent_header'] = 'Vull participar en l\'activitat de formació de grups i accepto l\'enviament de les respostes al qüestionari. La participació, o no, no té cap impacte sobre el procés d\'avaluació (o la puntuació obtinguda).';
 $string['consent_message'] = '<ul><li>
-El professorat no té accés directa a les meves respostes per la formació de grups (jo només puc accedir a l\'avaluació de la meva personalitat i a la mitjana del grup).
+El professorat no té accés directe a les meves respostes per la formació de grups (jo només puc accedir a l\'avaluació de la meva personalitat i a la mitjana del grup).
 </li><li>
-Les meves dades personals s\'esborraran en acabar el curs - com a màxim al cap de 360 dies.</li></ul>';
+Les meves dades personals s\'esborraran en acabar el curs; com a màxim, al cap de {$a->archivedays} dies.</li></ul>';
 $string['consent_opt_in'] = 'Consentiment (acceptació)';
 $string['contact_members'] = 'Per posar-vos en contacte amb els membres del vostre grup podeu clicar damunt dels seus noms.';
 $string['continueTheForm'] = 'Continua';

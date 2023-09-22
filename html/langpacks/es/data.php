@@ -127,7 +127,7 @@ $string['data:exportuserinfo'] = 'Exportar la información del  usuario';
 $string['data:managecomments'] = 'Gestionar comentarios';
 $string['data:manageentries'] = 'Gestionar entradas';
 $string['data:managetemplates'] = 'Gestionar plantillas';
-$string['data:manageuserpresets'] = 'Gestionar ajustes previos de plantillas';
+$string['data:manageuserpresets'] = 'Gestionar ajustes previos';
 $string['data:rate'] = 'Calificar entradas';
 $string['data:readentry'] = 'Leer entradas';
 $string['data:view'] = 'Ver actividad de la base de datos';
@@ -152,7 +152,7 @@ $string['deleted'] = 'eliminado';
 $string['deleteentry'] = 'Eliminar entrada';
 $string['deletefield'] = 'Eliminar campo';
 $string['deletenotenrolled'] = 'Eliminar entradas de usuarios no matriculados';
-$string['deletewarning'] = '¿Está seguro de que desea eliminar estos ajustes previos?';
+$string['deletewarning'] = 'Borrar un ajuste previo lo borra de la lista de ajustes previos disponibles en todos los cursos.';
 $string['descending'] = 'Descendente';
 $string['directorynotapreset'] = '{$a->directory} No preset: archivos perdidos: {$a->missing_files}';
 $string['disapprove'] = 'Desaprobar';
@@ -210,17 +210,10 @@ $string['fieldheightlistview'] = 'Altura (en píxeles) en vista de lista';
 $string['fieldheightsingleview'] = 'Altura (en píxeles) en vista individual';
 $string['fieldids'] = 'Ids. de campo';
 $string['fieldmappings'] = 'Mapeos de campo';
-$string['fieldmappings_help'] = '<p align="center"><strong>Mapeos de campo</strong></p>
-<p>Este menú le permite guardar los datos de la base de datos existente.
-Para conservar los datos en un campo, debe mapearlo a un nuevo campo,
-en el que aparecerán los datos. Puede asmimismo dejar en blanco cualquier
-campo, sin que en él se copie información alguna. Cualquier campo antiguo
-no mapeado a uno nuevo se perderá, y todos sus datos quedarán eliminados.</p>
-<p>
+$string['fieldmappings_help'] = 'Este menú le permite guardar los datos de la base de datos existente. Para conservar los datos en un campo, debe mapearlo a un nuevo campo, en el que aparecerán los datos. Puede asimismo dejar en blanco cualquier campo, sin que en él se copie información alguna. Cualquier campo antiguo no mapeado a uno nuevo se perderá, y todos sus datos quedarán eliminados.
 Usted sólo puede mapear campos del mismo tipo, de modo que cada desplegable
-contendrá distintos campos. Del mismo modo, debe ser cuidadoso en no tratar y
-mapear un campo viejo a más de un campo nuevo.
-</p>';
+contendrá distintos campos. Del mismo modo, debe ser cuidadoso en no intentar
+mapear un campo viejo a más de un campo nuevo.';
 $string['fieldname'] = 'Nombre de campo';
 $string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'Los campos siguientes de su archivo no figuran en esta base de datos: {$a}';
@@ -341,9 +334,7 @@ $string['multimenu'] = 'Menú (selección múltiple)';
 $string['multipletags'] = 'Se han encontrado múltiples marcas. Plantilla no guardada';
 $string['newentry'] = 'Nueva entrada';
 $string['newfield'] = 'Crear un campo';
-$string['newfield_help'] = 'Un campo permite la entrada de datos.
-
-Cada entrada en una actividad de base de datos puede tener varios campos de varios tipos, tales como un campo de fecha, que permite a los participantes para seleccionar un día, mes y año a partir de una lista desplegable, un campo de imagen, que permite a los participantes para cargar un archivo de imagen, o una casilla de verificación de campo, que permite a los participantes para seleccionar una o más opciones.
+$string['newfield_help'] = 'Un campo permite la entrada de datos. Cada entrada en una actividad de base de datos puede tener varios campos de varios tipos, tales como un campo de fecha, que permite a los participantes seleccionar un día, mes y año a partir de una lista desplegable; un campo de imagen, que permite a los participantes cargar un archivo de imagen; o una casilla de verificación de campo, que permite a los participantes seleccionar una o más opciones.
 
 Cada campo debe tener un nombre de campo único. La descripción del campo es opcional.';
 $string['noaccess'] = 'No tiene acceso a esta página';
@@ -443,12 +434,12 @@ $string['rsstype'] = 'Canal RSS para esta actividad';
 $string['save'] = 'Guardar';
 $string['saveandadd'] = 'Guardar y añadir otro';
 $string['saveandview'] = 'Guardar y ver';
-$string['saveaspreset'] = 'Guardar como ajuste previo';
+$string['saveaspreset'] = 'Publicar ajuste previo en este sitio';
 $string['saveaspreset_help'] = 'La opción Guardar como predeterminado publica las plantillas y los campos como un ajuste preestablecido que otros usuarios del sitio pueden utilizar. (Puede borrarla de la lista de valores predeterminados en cualquier momento.)';
 $string['saveaspresetmissingcapability'] = 'El usuario no tiene permiso para guardar la base de datos como un ajuste predefinido.';
-$string['savedataaspreset'] = 'Guardar todos los campos y plantillas como ajuste predefinido';
+$string['savedataaspreset'] = 'Guardar todos los campos y plantillas y publicar como ajuste predefinido del sitio';
 $string['savesettings'] = 'Guardar ajustes';
-$string['savesuccess'] = 'Guardado con éxito. Su ajuste previo estará ahora disponible en todo el sitio.';
+$string['savesuccess'] = 'Ajuste previo guardado. <a href="{$a->url}">Vista previa</a>';
 $string['savetemplate'] = 'Guardar plantilla';
 $string['search'] = 'Buscar';
 $string['search:activity'] = 'Base de datos - información de actividad';

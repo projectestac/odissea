@@ -30,6 +30,7 @@ $string['description'] = 'Descripció';
 $string['disabled'] = 'Inhabilitat';
 $string['edit'] = 'Edita';
 $string['export'] = 'Exporta';
+$string['name'] = 'Nom';
 $string['state_history'] = 'Historial';
 $string['stepactivation_link'] = 'block/workflow';
 $string['stepcompletion_link'] = 'block/workflow';

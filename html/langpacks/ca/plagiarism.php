@@ -26,9 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['availableplugins'] = 'Connectors disponibles';
-$string['configenableplagiarism'] = 'Això permetrà als administradors configurar connectors de plagi (si estan instal·lats)';
-$string['configplagiarismplugins'] = 'Trieu el connector de plagi que us agradaria configurar';
-$string['enableplagiarism'] = 'Activa connectors de plagi';
-$string['manageplagiarism'] = 'Gestionar plugins de plagi';
-$string['nopluginsinstalled'] = 'No hi ha cap connector de plagi instal·lat.';
+$string['configenableplagiarism'] = 'Això permetrà als administradors configurar connectors de prevenció del plagi (si estan instal·lats)';
+$string['configplagiarismplugins'] = 'Trieu el connector de prevenció del plagi que us agradaria configurar';
+$string['enableplagiarism'] = 'Activa connectors de prevenció del plagi';
+$string['manageplagiarism'] = 'Gestiona els connectors de prevenció del plagi';
+$string['nopluginsinstalled'] = 'No hi ha cap connector de prevenció del plagi instal·lat.';
 $string['plagiarism'] = 'Prevenció de plagi';
+$string['privacy:metadata:plagiarism'] = 'El subsistema de prevenció del plagi actua com un canal, passant peticions de connectors a diversos connectors antiplagi.';

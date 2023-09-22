@@ -44,6 +44,7 @@ $string['oldcharset'] = 'ISO-8859-1';
 $string['parentlanguage'] = '';
 $string['pm'] = 'nachmittags';
 $string['pmcaps'] = 'nachmittags';
+$string['questioniconfollowlangdirection'] = 'ja';
 $string['strftimedate'] = '%d. %B %Y';
 $string['strftimedatefullshort'] = '%d.%m.%y';
 $string['strftimedatemonthabbr'] = '%d. %b %Y';

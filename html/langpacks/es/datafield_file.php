@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo de archivo';
+$string['fieldtypelabel'] = 'Archivo';
 $string['pluginname'] = 'Archivo';
-$string['privacy:metadata'] = 'El componente de campo de archivo no almacena ningún dato personal, utiliza tabla definidas en mod_data.';
+$string['privacy:metadata'] = 'El componente de campo de archivo no almacena ningún dato personal. Utiliza tablas definidas en mod_data.';

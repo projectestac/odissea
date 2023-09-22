@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['authpluginnotfound'] = 'Authentifierung {$a} nicht gefunden';
+$string['authpluginnotfound'] = 'Plugin zur Authentifizierung {$a} nicht gefunden';
 $string['blocknotexist'] = 'Block {$a} existiert nicht!';
 $string['cannotbenull'] = '{$a} darf nicht Null sein!';
 $string['cannotdowngrade'] = 'Ein Downgrade des Plugins \'{$a->plugin}\' von {$a->oldversion} nach {$a->newversion} ist nicht möglich.';
@@ -57,8 +57,8 @@ $string['phpvaroff'] = 'Die PHP-Variable \'{$a->name}\' sollte ausgeschaltet wer
 $string['phpvaron'] = 'Die PHP-Variable \'{$a->name}\' sollte eingeschaltet werden: {$a->link}';
 $string['reactive_highlightoff'] = 'Hervorhebung AUS';
 $string['reactive_highlighton'] = 'Hervorhebung EIN';
-$string['reactive_instances'] = 'Instanzen reaktivieren:';
-$string['reactive_noinstances'] = 'Diese Seite hat keine reaktivierten Instanzen';
+$string['reactive_instances'] = 'Reaktive Instanzen:';
+$string['reactive_noinstances'] = 'Diese Seite hat keine reaktiven Instanzen';
 $string['reactive_pin'] = 'Anpinnen';
 $string['reactive_readmodeoff'] = 'Lesemodus AUS';
 $string['reactive_readmodeon'] = 'Lesemodus EIN';

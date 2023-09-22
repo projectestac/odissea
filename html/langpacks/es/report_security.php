@@ -46,8 +46,9 @@ $string['check_crawlers_error'] = 'Se permite el acceso al motor de búsquedas p
 $string['check_crawlers_info'] = 'Los motores de búsqueda pueden entrar como invitados.';
 $string['check_crawlers_name'] = 'Abrir a Google';
 $string['check_crawlers_ok'] = 'El acceso a los motores de búsqueda está deshabilitado.';
-$string['check_defaultuserrole_details'] = '<p>A todos los usuarios identificados se les asignan los permisos del rol de usuario por defecto. Por favor, asegúrese de que no se admiten permisos de riego en este rol. </p>
-<p>Para el rol de usuario por defecto solo se permite heredar el tipo <em>usuario autenticado</em>. El  permiso para ver el curso no debe estar habilitado. </p>';
+$string['check_defaultuserrole_details'] = '<p>A todos los usuarios identificados se les asignan los permisos del rol de usuario por defecto. Por favor, asegúrese de que no se admiten permisos de riesgo en este rol. </p>
+<p>Para el rol de usuario por defecto sólo se permite heredar el tipo <em>usuario autenticado</em>. El  permiso para ver el curso no debe estar habilitado.</p>
+<p>Por favor, compruebe si la opcion de solicitud de aprobación de borrado de datos automática (tool_dataprivacy | automaticdatadeletionapproval) está habilitada. Los usuarios pueden solicitar borrados que podrían eliminar grandes cantidades de datos.</p>';
 $string['check_defaultuserrole_error'] = 'El rol default para el usuario "{$a}" ¡está incorrectamente definido!';
 $string['check_defaultuserrole_name'] = 'Rol por defecto de todos los usuarios';
 $string['check_defaultuserrole_notset'] = 'No se ha determinado el rol por defecto';
@@ -67,12 +68,12 @@ $string['check_embed_details'] = '<p> La Incrustación ilimitada de objetos es m
 $string['check_embed_error'] = 'Incrustación ilimitada de objetos habilitada - esto es muy peligroso en la mayoría de los servidores.';
 $string['check_embed_name'] = 'Permitir EMBED (incrustar) y OBJECT (objeto)';
 $string['check_embed_ok'] = 'No se permite la incrustación ilimitada de objetos.';
-$string['check_frontpagerole_details'] = '<p>El rol por defecto en la página principal se da a todos los usuarios registrados para las actividades en la portada. Por favor, asegúrese de que no están permitidos privilegios con riesgo para este rol.</p>
+$string['check_frontpagerole_details'] = '<p>El rol por defecto en la página principal del sitio se da a todos los usuarios registrados para las actividades en la portada. Por favor, asegúrese de que no están permitidos privilegios con riesgo para este rol.</p>
 <p>Se recomienda crear un rol especial a tal efecto y no se use un tipo de rol preestablecido.</p>';
-$string['check_frontpagerole_error'] = '¡Detectado un rol en la página principal "{$a}" definido de forma incorrecta!';
-$string['check_frontpagerole_name'] = 'Rol en la página principal';
-$string['check_frontpagerole_notset'] = 'El rol en la página principal no está establecido.';
-$string['check_frontpagerole_ok'] = 'La definición del rol en la página principal es correcta.';
+$string['check_frontpagerole_error'] = '¡Detectado un rol en la página principal del sitio "{$a}" definido de forma incorrecta!';
+$string['check_frontpagerole_name'] = 'Rol en la página principal del sitio';
+$string['check_frontpagerole_notset'] = 'El rol en la página principal del sitio no está establecido.';
+$string['check_frontpagerole_ok'] = 'La definición del rol en la página principal del sitio es correcta.';
 $string['check_guestrole_details'] = '<p>El rol de invitados se emplea para el acceso a cursos para invitados, para usuarios no-identificados y para invitados temporales. Por favor asegúrese que no se permitan permisos riesgosos en este rol.</p>
 <p>El único rol heredado soportado para el rol de invitado es <em>Invitado</em>.</p>';
 $string['check_guestrole_error'] = '¡El rol de invitado "{$a}" está definido incorrectamente!';
@@ -95,7 +96,7 @@ N ponga unos requisitos demasiado estrictos, ya que puede ocurrir que los usuari
 $string['check_passwordpolicy_error'] = 'No se ha configurado la política de contraseñas.';
 $string['check_passwordpolicy_name'] = 'Política de contraseñas';
 $string['check_passwordpolicy_ok'] = 'Política de contraseñas habilitada.';
-$string['check_preventexecpath_details'] = '<p>El permitir que las rutas hacia los ejecutables sean configuradas mediante la Interfase Gráfica del Usuario es un vector para escalamiento de privilegios. Esto debe estar forzado en config.php:</p><p><code>$CFG->preventexecpath = true;<code></p>';
+$string['check_preventexecpath_details'] = '<p>Permitir que las rutas hacia los ejecutables sean configuradas mediante la Interfase Gráfica del Usuario Admin GUI es un vector para escalamiento de privilegios. Esto debe estar forzado en config.php:</p><p><code>$CFG->preventexecpath = true;</code></p>';
 $string['check_preventexecpath_name'] = 'Rutas hacia ejecutables';
 $string['check_preventexecpath_ok'] = 'Las rutas hacia ejecutables solamente son configurables en config.php.';
 $string['check_preventexecpath_warning'] = 'Las rutas hacia ejecutables pueden configurarse en la Interfaz Gráfica del Usuario Administrador.';

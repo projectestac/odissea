@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['author'] = 'Autoria';
+$string['choosecontext'] = 'Trieu un curs o una categoria...';
 $string['close'] = 'Tanca';
 $string['contentbank'] = 'Banc de contingut';
 $string['contentbankpreferences'] = 'Preferències del banc de continguts';
@@ -59,6 +60,7 @@ $string['file'] = 'Carrega el contingut';
 $string['file_help'] = 'Els fitxers es poden emmagatzemar en el banc de contingut per a utilitzar-los en els cursos. Només es poden carregar fitxers utilitzats pels tipus de contingut habilitats al servidor.';
 $string['itemsfound'] = 'S\'han trobat {$a} elements';
 $string['lastmodified'] = 'Última modificació';
+$string['more'] = 'Més';
 $string['name'] = 'Contingut';
 $string['nocontentavailable'] = 'No hi ha cap contingut disponible';
 $string['nocontenttypes'] = 'No hi ha tipus de contingut disponibles';

@@ -81,10 +81,10 @@ $string['uploaduser:uploaduserpictures'] = 'Subir foto del usuario';
 $string['uploadusers'] = 'Subir usuarios';
 $string['uploadusers_help'] = 'Los usuarios pueden cargarse (y, opcionalmente, inscribirse en cursos) a través de un archivo de texto. El formato del archivo debe ser el siguiente:
 
-* Cada línea del archivo contiene un registro
-* Cada registro es una serie de datos separados por comas (u otros delimitadores)
-* El primer registro contiene una lista de nombres de campo que definen el formato del resto del archivo
-* Los nombres de campo obligatorios son nombre de usuario, contraseña, nombre, apellido, correo electrónico';
+* Cada línea del archivo contiene un registro.
+* Cada registro es una serie de datos separados por el delimitador elegido.
+* El primer registro contiene una lista de nombres de campo que definen el formato del resto del archivo.
+* Los nombres de campo obligatorios son nombre de usuario (username), contraseña (password), nombre (firsname), apellido (lastname), correo electrónico (email).';
 $string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Previsualizar subida de usuarios';
 $string['uploadusersresult'] = 'Resultados de subida de usuarios';

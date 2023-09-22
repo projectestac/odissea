@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accountexists'] = 'Es existiert bereits eine Person mit diesem Anmeldenamen. Falls es sich dabei um Ihr Nutzerkonto handelt, melden Sie sich bitte mit Ihrem Anmeldenamen und Kennwort an und fügen Sie ihn über Ihre Favoritenseite als verbundenen Login hinzu.';
-$string['alreadylinked'] = 'Dieser externe Account ist bereits mit einem Nutzerkonto auf dieser Seite verknüpft.';
+$string['alreadylinked'] = 'Dieses externe Konto ist bereits mit einem Nutzerkonto auf dieser Seite verknüpft.';
 $string['auth_oauth2description'] = 'OAuth 2 Standard-basierte Authentifizierung';
 $string['auth_oauth2settings'] = 'Einstellungen zur OAuth 2 Authentifizierung';
 $string['confirmaccountemail'] = 'Guten Tag {$a->fullname},
 
-auf \'{$a->sitename}\' wurde ein neuer Account mit Ihrer E-Mailadresse angelegt.
+auf \'{$a->sitename}\' wurde ein neues Nutzerkonto mit Ihrer E-Mailadresse angelegt.
 
 Bitte folgen Sie diesem Link, um das neue Profil zu bestätigen:
 
@@ -91,7 +91,7 @@ $string['loginerror_invaliddomain'] = 'Die E-Mail-Adresse ist für diese Website
 $string['loginerror_nouserinfo'] = 'Es wurden keine Nutzerinfos zurückgegeben. Der OAuth 2 Service ist möglicherweise falsch konfiguriert.';
 $string['loginerror_userincomplete'] = 'Die zurückgegebenen Nutzerinfos enthalten keinen Nutzernamen und keine E-Mail-Adresse. Der OAuth 2 Service ist möglicherweise falsch konfiguriert.';
 $string['noconfiguredidps'] = 'Keine OAuth2-Provider konfiguriert.';
-$string['noissuersavailable'] = 'Keiner der konfigurierten OAuth 2 Services erlaubt Ihnen die Verknüpfung von Login-Accounts.';
+$string['noissuersavailable'] = 'Keiner der konfigurierten OAuth 2 Services erlaubt Ihnen die Verknüpfung von Login-Konten.';
 $string['notenabled'] = 'Das Plugin zur OAuth 2 Authentifizierung ist leider nicht aktiviert.';
 $string['notloggedindebug'] = 'Der Login-Versuch ist fehlgeschlagen. {$a}';
 $string['notwhileloggedinas'] = 'Weitere Logins können nicht verwaltet werden, wenn Sie mit einem anderen Nutzerkonto eingeloggt sind.';
@@ -102,13 +102,13 @@ $string['privacy:metadata:auth_oauth2'] = 'OAuth2 Authentifizierung';
 $string['privacy:metadata:auth_oauth2:authsubsystem'] = 'Dieses Plugin ist mit dem Authentifizierungs-Subsystem verbunden.';
 $string['privacy:metadata:auth_oauth2:confirmtoken'] = 'Das Bestätigungs-Token';
 $string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'Zeitstempel für Ablauf des Bestätigungs-Token';
-$string['privacy:metadata:auth_oauth2:email'] = 'Externe E-Mail-Adresse, die mit diesem Account verbunden ist';
+$string['privacy:metadata:auth_oauth2:email'] = 'Externe E-Mail-Adresse, die mit diesem Konto verbunden ist';
 $string['privacy:metadata:auth_oauth2:issuerid'] = 'ID des OAuth2-Ausstellers für dieses OAuth2-Login';
-$string['privacy:metadata:auth_oauth2:tableexplanation'] = 'OAuth2-Accounts, die mit einem Moodle-Nutzeraccount verbunden sind.';
+$string['privacy:metadata:auth_oauth2:tableexplanation'] = 'OAuth2-Accounts, die mit einem Moodle-Nutzerkonto verbunden sind.';
 $string['privacy:metadata:auth_oauth2:timecreated'] = 'Zeitstempel mit dem der Nutzer mit dem OAuth2-Login verknüpft wurde';
 $string['privacy:metadata:auth_oauth2:timemodified'] = 'Zeitstempel wann der Datensatz verändert wurde';
 $string['privacy:metadata:auth_oauth2:userid'] = 'ID der Person, mit der dieser OAuth2-Login verknüpft ist.';
-$string['privacy:metadata:auth_oauth2:usermodified'] = 'ID des Nutzers, der diesen Account bearbeitet hat.';
+$string['privacy:metadata:auth_oauth2:usermodified'] = 'ID des Nutzers, der dieses Konto bearbeitet hat.';
 $string['privacy:metadata:auth_oauth2:username'] = 'Der externe  Nutzername, der mit diesem Account verbunden ist';
 $string['testidplogin'] = 'Testanmeldung mit:';
 $string['userinfo'] = 'Nutzerdaten vom Provider:';

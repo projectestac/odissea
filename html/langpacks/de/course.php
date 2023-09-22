@@ -79,7 +79,7 @@ $string['customfield_islocked'] = 'Gesperrt';
 $string['customfield_islocked_help'] = 'Wenn das Feld gesperrt ist, können nur Personen, die gesperrte Kursfelder ändern dürfen, dies in den Kurseinstellungen ändern. Dies sind zunächst ausschließlich Personen mit der Rolle Manager/in.';
 $string['customfield_notvisible'] = 'Niemand';
 $string['customfield_visibility'] = 'Sichtbar für';
-$string['customfield_visibility_help'] = 'Diese Einstellung legt fest, wer den Namen und den Wert des benutzerdefinierten Feldes in der Kursliste oder im Feldfilter des Dashboards anzeigen kann.';
+$string['customfield_visibility_help'] = 'Diese Einstellung legt fest, wer den Namen und den Wert des nutzerdefinierten Feldes in der Kursliste oder im Feldfilter des Dashboards anzeigen kann.';
 $string['customfield_visibletoall'] = 'Alle';
 $string['customfield_visibletoteachers'] = 'Trainer/innen';
 $string['customfieldsettings'] = 'Einstellungen für Kursfelder';
@@ -90,7 +90,7 @@ $string['downloadcontent_help'] = 'Soll diese Aktivität oder Ressource in die Z
 Die Einstellung hat keine Auswirkung auf das Herunterladen von Inhalten der mobilen App für die Offline-Nutzung.';
 $string['downloadcourseconfirmation'] = 'Sie sind dabei, eine Zip-Datei mit den Kursinhalten herunterzuladen. Ausgenommen sind Elemente, die nicht heruntergeladen werden können, und Dateien, die größer als {$a} sind.';
 $string['downloadcoursecontent'] = 'Kursinhalt herunterladen';
-$string['downloadcoursecontent_help'] = 'Diese Einstellung legt fest, ob Kursinhalte von Nutzer/innen mit der Funktion zum Kursinhalt herunterladen heruntergeladen werden dürfen (standardmäßig Benutzer mit der Rolle von Teilnehmer/innen oder Trainer/innen).';
+$string['downloadcoursecontent_help'] = 'Diese Einstellung legt fest, ob Kursinhalte von Nutzer/innen mit der Funktion zum Kursinhalt herunterladen heruntergeladen werden dürfen (standardmäßig mit der Rolle von Teilnehmer/innen oder Trainer/innen).';
 $string['enabledownloadcoursecontent'] = 'Kursinhalt herunterladen aktivieren';
 $string['errorendbeforestart'] = 'Das Enddatum  ({$a})  liegt vor dem Anfangsdatum.';
 $string['favourite'] = 'Favorisierte Kurse';

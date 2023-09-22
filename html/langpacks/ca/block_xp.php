@@ -52,6 +52,7 @@ $string['level'] = 'Nivell';
 $string['levels'] = 'Nivells';
 $string['levelup'] = 'Puja de nivell!';
 $string['levelx'] = 'Nivell #{$a}';
+$string['name'] = 'Nom';
 $string['navinfos'] = 'Informació';
 $string['navladder'] = 'Classificació';
 $string['navlevels'] = 'Nivells';

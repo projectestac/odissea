@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addtoquicklist'] = 'Añadir a la lista rápida';
-$string['admin_access_error'] = 'No tiene permisos para acceder a esta página, por favor contacte con su profesor o gestor.';
+$string['admin_access_error'] = 'No tiene permisos para acceder a esta página, por favor contacte con su profesor o gestor: necesita ser calificador del curso para personalizar el menú.';
 $string['admin_messageko'] = 'Error al registrar';
 $string['adminaddtool'] = 'Añadir nueva herramienta';
 $string['adminaddtool_messagelibelleko'] = '<strong>¡Advertencia!</strong> La etiqueta del botón no está completada.';
@@ -61,7 +61,7 @@ $string['adminplugin_color'] = 'Color';
 $string['adminplugin_color_desc'] = 'Color de anotación';
 $string['adminsubtitle'] = 'Configuración de barra de herramientas para Anotación PDF avanzada';
 $string['admintitle'] = 'Configuración de retroalimentación';
-$string['admintoolboxaction'] = 'Acción';
+$string['admintoolboxaction'] = 'Acciones';
 $string['admintoolboxannotation'] = 'Anotación';
 $string['admintoolboxannotation_color'] = 'Color';
 $string['admintoolboxannotation_reply'] = 'Pregunta/respuesta';

@@ -7,8 +7,8 @@ Oauth2 Library has been taken from https://github.com/bshaffer/oauth2-server-php
 * #### Moodle 2.8 o higher installed
 * #### Admin account
 
-## Instalation steps
-1. Clone this repository in a directory named "oauth".  `$ git clone https://github.com/cognitivabrasil/moodle-local_oauth.git oauth`
+## Installation steps
+1. Clone this repository in a directory named "oauth".  `$ git clone https://github.com/projectestac/moodle-local_oauth.git oauth`
 
 2. Compress it to a _.zip_ file.
 
@@ -40,7 +40,9 @@ Oauth2 Library has been taken from https://github.com/bshaffer/oauth2-server-php
 
 6. Finally, send a POST request to `http://moodledomain.com/local/oauth/user_info.php` passing the access token as a parameter, like: `{'access_token':'79d687a0ea4910c6662b2e38116528fdcd65f0d1'}`. 
 
-7. If the token given is valid, a JSON containing the user information is returned. Ex: `{"id":"22","username":"foobar","idnumber":"","firstname":"Foo","lastname":"Bar","email":"foo@bar.com","lang":"en","phone1":"5551619192"}`
+7. If the token given is valid, a JSON containing the user information is returned. Ex: `{"id":"22","username":"foobar","idnumber":"","firstname":"Foo","lastname":"Bar","email":"foo@bar.com","lang":"en","phone1":"5551619192","auth":"manual","country":"foo","description":"bar"}`
+
+Note: If testing in Postman, you need to set encoding to `x-www-form-urlencoded` for POST requests.
 
 
 

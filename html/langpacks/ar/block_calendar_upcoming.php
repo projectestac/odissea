@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = 'إضافة كتلة جديدة للأحداث القادمة';
-$string['calendar_upcoming:myaddinstance'] = 'إضافة كتلة جديدة للأحداث القادمة إلى دفة القيادة';
+$string['calendar_upcoming:myaddinstance'] = 'إضافة كتلة جديدة للأحداث القادمة إلى لوحة التحكم';
 $string['gotocalendar'] = 'إذهب إلى التقويم..';
 $string['pluginname'] = 'الأحداث القادمة';
 $string['privacy:metadata'] = 'كتلة الأحداث القادمة تظهر فقط بيانات التقويم الموجودة.';

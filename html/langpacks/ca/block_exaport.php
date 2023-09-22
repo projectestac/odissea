@@ -40,6 +40,7 @@ $string['invalidassignmentid'] = 'L\'ID de la tasca no és vàlid';
 $string['invalidcourseid'] = 'Aquest no és un ID de curs vàlid';
 $string['invalidinstance'] = 'Aquesta no és una instància vàlida';
 $string['mediacontent'] = 'URL o codi d\'incrustació *';
+$string['name'] = 'Nom';
 $string['new'] = 'Nou';
 $string['resume_enddate'] = 'Data de finalització';
 $string['role'] = 'Rol';

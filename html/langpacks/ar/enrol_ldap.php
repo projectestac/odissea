@@ -115,7 +115,7 @@ $string['server_settings'] = 'إعدادات مخدم LDAP';
 $string['synccourserole'] = '== مزامنة المساق \'{$a->idnumber}\' لدور \'{$a->role_shortname}\\';
 $string['syncenrolmentstask'] = 'مهمة مزامنة انضمامات LDAP';
 $string['template'] = 'إختياري: المقررات الدراسية المنشأة تلقائياً يمكنها أن تنسخ إعداداتها من مقرر يعمل بمثابة مظهر';
-$string['template_key'] = 'المظهر';
+$string['template_key'] = 'القالب';
 $string['unassignrole'] = 'إلغاء تعيين دور \'{$a->role_shortname}\' للمستخدم \'{$a->user_username}\' من المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
 $string['unassignrolefailed'] = 'فشل إلغاء تعيين دور \'{$a->role_shortname}\' للمستخدم \'{$a->user_username}\' في المساق \'{$a->course_shortname}\' (المُعرَّف {$a->course_id})';
 $string['unassignroleid'] = 'إلغاء الدور ذي المُعرَّف \'{$a->role_id}\' للمستخدم ذي المُعرَّف \'{$a->user_id}\\';

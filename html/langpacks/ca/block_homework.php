@@ -31,5 +31,6 @@ $string['duration'] = 'Durada';
 $string['duration_help'] = 'Durada esperada';
 $string['durationnotspecified'] = '(durada sense especificar)';
 $string['export'] = 'Exporta';
+$string['name'] = 'Nom';
 $string['save'] = 'Desa';
 $string['student'] = 'Estudiant';

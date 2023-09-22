@@ -44,6 +44,7 @@ $string['oldcharset'] = 'EUC-JP';
 $string['parentlanguage'] = '';
 $string['pm'] = 'pm';
 $string['pmcaps'] = 'PM';
+$string['questioniconfollowlangdirection'] = 'yes';
 $string['strftimedate'] = '%Y年 %m月 %d日';
 $string['strftimedatefullshort'] = '%y/%m/%d';
 $string['strftimedatemonthabbr'] = '%Y年 %m月 %d日';

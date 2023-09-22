@@ -113,15 +113,13 @@ $string['groupmembers'] = 'Membros do grupo';
 $string['groupmemberssee'] = 'Ver membros do grupo';
 $string['groupmembersselected'] = 'Membros do grupo selecionado';
 $string['groupmode'] = 'Modo de grupo';
-$string['groupmode_help'] = 'A definição do modo de grupo pode ser uma das três seguintes:
+$string['groupmode_help'] = '* Não há grupos
+* Grupos separados - Os alunos são divididos em grupos e só podem ver o trabalho do seu grupo.
+* Grupos visíveis - Os alunos são divididos em grupos, mas podem ver o trabalho dos outros grupos.
 
-* Não há grupos
-* Grupos separados - cada grupo pode ver apenas o seu próprio grupo, estando os restantes grupos invisíveis.
-* Grupos visíveis - cada grupo trabalha apenas dentro do seu próprio grupo, mas pode ver os outros grupos.
-
-O modo de grupo definido ao nível da disciplina será o modo aplicado automaticamente a todas as atividades nessa disciplina. Contudo, cada atividade poderá também ter a sua própria definição de modo de grupo. No entanto, se o modo de grupo for forçado ao nível da disciplina, o modo de grupo definido no âmbito das atividades será ignorado.';
+O modo de grupo definido ao nível da disciplina será o modo predefinido para todas as atividades nessa disciplina. Se o modo de grupo for forçado ao nível da disciplina, o modo de grupo não poderá ser alterado nas atividades.';
 $string['groupmodeforce'] = 'Forçar modo de grupo';
-$string['groupmodeforce_help'] = 'Se esta configuração tiver o valor "Sim", então o modo de grupo é forçado ao nível da disciplina e o modo de grupo definido no âmbito das atividades será ignorado.';
+$string['groupmodeforce_help'] = 'O modo de grupo está forçado para todas as atividades e não pode ser alterado nas atividades.';
 $string['groupmy'] = 'Meu grupo';
 $string['groupname'] = 'Nome do grupo';
 $string['groupnameexists'] = 'O nome de grupo \'{$a}\' já existe nesta disciplina, escolha outro.';

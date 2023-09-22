@@ -231,6 +231,7 @@ $string['customrolename_help'] = 'Если отображаемое назван
 $string['defaultrole'] = 'Роль по умолчанию';
 $string['defaultx'] = 'По умолчанию: {$a}';
 $string['defineroles'] = 'Определить роли';
+$string['definitionofrolex'] = 'Определение роли «{$a}»';
 $string['deletecourseoverrides'] = 'Удалить все переопределения в курсе';
 $string['deletelocalroles'] = 'Удалить все локальные назначения ролей';
 $string['deleterolesure'] = '<p>Вы уверены, что хотите удалить роль «{$a->name} ({$a->shortname})»?</p><p> В настоящее время эта роль назначена {$a->count} пользователю(ям).</p>';

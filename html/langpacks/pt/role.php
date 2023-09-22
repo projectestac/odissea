@@ -230,6 +230,7 @@ $string['customrolename_help'] = 'Os nomes dos papéis-padrão são localizados 
 $string['defaultrole'] = 'Papel predefinido';
 $string['defaultx'] = 'Predefinido: {$a}';
 $string['defineroles'] = 'Definir papéis';
+$string['definitionofrolex'] = 'Definição do papel \'{$a}\'';
 $string['deletecourseoverrides'] = 'Apagar todas as redefinições existentes na disciplina';
 $string['deletelocalroles'] = 'Apagar todas as atribuições locais de papéis';
 $string['deleterolesure'] = '<p>Tem a certeza de que pretende apagar o papel "{$a->name} ({$a->shortname})"?</p><p>Atualmente existem {$a->count} utilizadores aos quais foi atribuído este papel.</p>';

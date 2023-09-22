@@ -53,7 +53,6 @@ $string['notintendedforstudents_desc'] = 'Par défaut, les composants évaluatif
 $string['pluginname'] = 'Composants pour l\'apprentissage (C4L)';
 $string['preview'] = 'Aperçu';
 $string['previewdefault'] = 'Placer le pointeur sur un composant pour voir son aperçu.';
-$string['privacy:metadata'] = 'Components for Learning (C4L) n\'enregistre aucune donnée personnelle';
 $string['procedural'] = 'Procédure';
 $string['proceduralcontext'] = 'Contexte procédural';
 $string['quote'] = 'Citation';

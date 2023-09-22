@@ -53,7 +53,6 @@ $string['notintendedforstudents_desc'] = 'Per defecte, l\'ús dels components av
 $string['pluginname'] = 'Components per a l\'aprenentatge (C4L)';
 $string['preview'] = 'Previsualització';
 $string['previewdefault'] = 'Col·loca el cursor sobre els components per veure\'n la previsualització.';
-$string['privacy:metadata'] = 'Components per a l\'aprenentatge (C4L) no emmagatzema cap dada personal';
 $string['procedural'] = 'Procedimentals';
 $string['proceduralcontext'] = 'Context procedimental';
 $string['quote'] = 'Citació';

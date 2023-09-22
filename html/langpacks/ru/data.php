@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = 'Действия';
+$string['actionsmenu'] = 'Меню действий';
 $string['add'] = 'Добавить запись';
 $string['addcomment'] = 'Добавить комментарий';
 $string['addedby'] = 'Добавлено';

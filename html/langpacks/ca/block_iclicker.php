@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['inst.student.name.header'] = 'Nom';
 $string['invalidcourse'] = 'El CourseID no és vàlid:';

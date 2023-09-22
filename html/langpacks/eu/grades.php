@@ -409,7 +409,7 @@ $string['idnumbers'] = 'ID zenbakiak';
 $string['ignore'] = 'Baztertu';
 $string['import'] = 'Inportatu';
 $string['importas'] = 'Inportatu honela:';
-$string['importcsv'] = 'inportatu CSV';
+$string['importcsv'] = 'Inportatu CSV';
 $string['importcsv_help'] = 'Kalifikazioak CSV fitxategiak erabiliz inporta daitezke hurrengo formatua erabilita:
 
 * Fitxategiko errenkada bakoitzak erregistro bana du
@@ -440,7 +440,7 @@ $string['importoutcomes'] = 'Inportatu ikaste-emaitzak';
 $string['importoutcomes_help'] = 'Ikaste-emaitzak CSV fitxategi bat erabiliz inporta daitezke, esportatutako ikaste-emaitzen CSV fitxategi baten formatua erabilita.';
 $string['importoutcomes_link'] = 'grade/outcome';
 $string['importoutcomesuccess'] = 'Inportatutako ikaste-emaitza ({$a->name}) #{$a->id} ID-arekin';
-$string['importplugins'] = 'inportatu pluginak';
+$string['importplugins'] = 'Inportatu pluginak';
 $string['importpreview'] = 'Inportazioaren aurrebista';
 $string['importsettings'] = 'Inportazioaren ezarpenak';
 $string['importskippednomanagescale'] = 'Ez duzu eskala berria gehitzeko baimenik, beraz {$a} ikaste-emaitza alde batera utziko da eskala berria sortzea eskatzen baitu.';

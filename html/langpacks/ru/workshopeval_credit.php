@@ -36,3 +36,4 @@ $string['modeall'] = 'Всё или ничего';
 $string['modeone'] = 'Как минимум одна работа';
 $string['modeproportional'] = 'Пропорционально';
 $string['pluginname'] = 'Бонус за участие';
+$string['privacy:metadata'] = 'Кредит на участие не хранит никаких личных данных';

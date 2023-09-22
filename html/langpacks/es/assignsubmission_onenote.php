@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configmaxbytes'] = 'Tamaño máximo de página de OneNote';
-$string['countfiles'] = '{$a} páginas de OneNotes';
+$string['countfiles'] = 'OneNote: {$a}';
 $string['default'] = 'Habilitado por defecto';
 $string['default_help'] = 'Cuando esta opción está activada, este método de entrega queda seleccionado por defecto para todas las nuevas tareas.';
 $string['download'] = 'Descargar';

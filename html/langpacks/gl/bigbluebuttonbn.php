@@ -112,6 +112,8 @@ $string['config_extended_capabilities'] = 'Capacidades ampliadas';
 $string['config_extended_capabilities_description'] = 'Configuración para capacidades estendidas cando o servidor BigBlueButton as ofrece.';
 $string['config_general'] = 'Axustes xerais';
 $string['config_general_description'] = 'Estes axustes úsanse sempre.';
+$string['config_guestaccess_enabled'] = 'Acceso para persoas convidadas';
+$string['config_guestaccess_enabled_description'] = 'Permite que persoas sen unha conta no seu sitio accedan á sala.';
 $string['config_hideuserlist_default'] = 'Agochar a lista de usuarios activada e xeito predeterminado';
 $string['config_hideuserlist_default_description'] = 'Se está activado, agocharase a lista de usuarios da sesión.';
 $string['config_hideuserlist_editable'] = 'Agochar a lista de usuarios pódese editar';
@@ -136,6 +138,8 @@ $string['config_participant'] = 'Participantes';
 $string['config_participant_description'] = 'Estes axustes definen o rol predeterminado dos participantes.';
 $string['config_participant_moderator_default'] = 'Moderador';
 $string['config_participant_moderator_default_description'] = 'Esta regra úsase como predeterminada cando se engade unha nova sala.';
+$string['config_poll_interval'] = 'Intervalo de enquisa (en segundos) para actualizar o estado da sala';
+$string['config_poll_interval_description'] = 'O intervalo de enquisa debe ser de polo menos 2 segundos. Se é necesario, pode reducir a carga no servidor remoto aumentando o intervalo.';
 $string['config_presentation_default'] = 'Ficheiro de presentación predeterminado';
 $string['config_presentation_default_description'] = 'Pódese fornecer un ficheiro para o seu uso en todas as salas.';
 $string['config_preuploadpresentation'] = 'Presentación precargada';
@@ -222,6 +226,7 @@ $string['config_welcome_default'] = 'Mensaxe predeterminada de benvida';
 $string['config_welcome_default_description'] = 'A mensaxe de benvida amosase cando os participantes entran na sala. Se se deixa en branco o campo, amosase unha mensaxe definida no servidor BigBlueButton.';
 $string['config_welcome_editable'] = 'Os profesores poden editar a mensaxe de benvida predeterminada';
 $string['config_welcome_editable_description'] = 'A mensaxe de benvida pódese editar cando se engade ou actualice a instancia';
+$string['dpainfonotsigned'] = 'Antes de activar este complemento, debes confirmar que liches e aceptaches o <a href="{$a}">acordo de procesamento de datos de Blindside Networks</a>.';
 $string['enablingbigbluebutton'] = 'Activando a actividade de BigBlueButton';
 $string['enablingbigbluebuttondpainfo'] = 'Para cumprir coas súas obrigas de protección de datos, antes de activar este complemento, é posible que teña que asegurarse de que leu e aceptou o <a href="{$a}" target="_blank">acordo de tratamento de datos</a> con Blindside Networks Inc.<br/>
 Consulte cos seus propios profesionais da privacidade para obter consello.';
@@ -253,6 +258,37 @@ $string['general_error_not_allowed_to_create_instances'] = 'O usuario non pode c
 $string['general_error_not_found'] = 'Non se atopou a entidade: {$a}.';
 $string['general_error_unable_connect'] = 'Non é posíbel conectar. Comprobe o URL do servidor BigBlueButton E comprobe se o servidor BigBlueButton se está a executar.
 Detalles: {$a}';
+$string['guest_invitation_full_message'] = 'Ola,
+<p>Estás convidado a unha sesión de BigBlueButton <strong>{$a->name}</strong> no curso {$a->course_fullname}.</p>
+<p>Ligazón: {$a->guestjoinurl}<br/>
+<p>Contrasinal: {$a->contrasinal de convidado}</p>
+<p>Se precisas axuda, ponte en contacto con {$a->sender}.</p>';
+$string['guest_invitation_small_message'] = 'Ola,
+
+Estás convidado a unha sesión de BigBlueButton {$a->name} no curso {$a->course_fullname}.
+
+Ligazón: {$a->guestjoinurl}
+Contrasinal: {$a->contrasinal convidado}
+
+Se precisas axuda, ponte en contacto con {$a->sender}.';
+$string['guest_invitation_subject'] = 'Invitación: sesión {$a->name} en {$a->course_fullname}';
+$string['guestaccess_activitynotfound'] = 'Non se atopou a actividade.';
+$string['guestaccess_add'] = 'Engadir convidados/as';
+$string['guestaccess_add_no_id'] = 'Non se proporcionou ningún ID de instancia de BigBlueButton.';
+$string['guestaccess_copy_password'] = 'Copiar contrasinal';
+$string['guestaccess_emails'] = 'Correos electrónicos dos/as convidados/as';
+$string['guestaccess_emails_help'] = 'Unha lista de enderezos de correo electrónico, separados por comas.';
+$string['guestaccess_emails_invalidemail'] = 'Correo electrónico non válido: {$a}';
+$string['guestaccess_feature_disabled'] = 'Acceso para convidados/as desactivado.';
+$string['guestaccess_invite_failure'] = 'Erro {$a->errors} ao invitar {$a->emails}.';
+$string['guestaccess_invite_success'] = 'Enviarase unha invitación a {$a->emails}.';
+$string['guestaccess_join_meeting'] = 'Entrar á reunión';
+$string['guestaccess_meeting_invalid_password'] = 'Contrasinal incorrecto.';
+$string['guestaccess_meeting_not_started'] = 'A reunión aínda non comezou. Por favor, volve máis tarde.';
+$string['guestaccess_meeting_password'] = 'Contrasinal da reunión';
+$string['guestaccess_password'] = 'Contrasinal';
+$string['guestaccess_title'] = 'Engadir persoas convidadas a esta reunión';
+$string['guestaccess_username'] = 'Nome da persoa convidada';
 $string['index_confirm_end'] = 'Quere rematar a sesión?';
 $string['index_disabled'] = 'desactivado';
 $string['index_enabled'] = 'activado';
@@ -283,6 +319,7 @@ $string['messageprovider:recording_ready'] = 'Gravación de BigBlueButton dispo�
 $string['minute'] = 'minuto';
 $string['minutes'] = 'minutos';
 $string['mod_form_block_general'] = 'Xeral';
+$string['mod_form_block_guestaccess'] = 'Acceso para persoas convidadas';
 $string['mod_form_block_participants'] = 'Rol asignado durante a sesión en directo';
 $string['mod_form_block_presentation'] = 'Contido da presentación';
 $string['mod_form_block_presentation_default'] = 'Contido predeterminado da presentación';
@@ -299,11 +336,13 @@ $string['mod_form_field_disableprivatechat'] = 'Desactivar as conversas privadas
 $string['mod_form_field_disablepublicchat'] = 'Desactivar as conversas públicas';
 $string['mod_form_field_duration'] = 'Duración';
 $string['mod_form_field_duration_help'] = 'Axustando a duración dunha xuntanza estabelecerá o tempo máximo para que a xuntanza continúe activa antes de que remate a gravación';
+$string['mod_form_field_guestallowed'] = 'Permitir o acceso a persoas convidadas';
 $string['mod_form_field_hideuserlist'] = 'Agochar a lista de usuarios';
 $string['mod_form_field_instanceprofiles'] = 'Tipo de instancia';
 $string['mod_form_field_instanceprofiles_help'] = 'Se se quere gravar unha sesión, seleccione «Sala con gravacións», se non, «Só sala». Após gravar unha sesión, se non hai máis sesións, seleccione «Só gravacións».';
 $string['mod_form_field_intro'] = 'Descrición';
 $string['mod_form_field_intro_help'] = 'Breve descrición da sala.';
+$string['mod_form_field_mustapproveuser'] = 'As persoas convidadas que se unan deben ser admitidas por un moderador';
 $string['mod_form_field_muteonstart'] = 'Silenciada ao iniciar';
 $string['mod_form_field_name'] = 'Nome da sala';
 $string['mod_form_field_nosettings'] = 'Non é posíbel editar ningún axuste';
@@ -382,6 +421,9 @@ $string['removedevents'] = 'Eventos eliminados';
 $string['removedlogs'] = 'Rexistros personalizados eliminados';
 $string['removedrecordings'] = 'Gravacións eliminadas';
 $string['removedtags'] = 'Etiquetas eliminadas';
+$string['report_join_info'] = '{$a} reunión(s)';
+$string['report_play_recording_info'] = 'Reproducíronse {$a} gravacións';
+$string['report_room_view'] = 'visto';
 $string['resetevents'] = 'Eliminar eventos';
 $string['resetlogs'] = 'Eliminar os rexistros personalizados';
 $string['resetlogs_help'] = 'A eliminación dos rexistros provocará a perda de referencias ás gravacións.';
@@ -394,6 +436,7 @@ $string['sendnotification'] = 'Enviar unha notificación';
 $string['settings'] = 'Axustes de BigBlueButton';
 $string['started_at'] = 'Comezou ás';
 $string['starts_at'] = 'Comeza';
+$string['taskname:check_dismissed_recordings'] = 'Buscar gravacións que aínda non se atoparon';
 $string['taskname:check_pending_recordings'] = 'Obter gravacións pendentes';
 $string['userlimitreached'] = 'Acadouse o número de usuarios permitidos nunha sesión.';
 $string['view_conference_action_end'] = 'Fin da sesión';
@@ -427,7 +470,9 @@ $string['view_message_conference_has_ended'] = 'A sesión rematou.';
 $string['view_message_conference_in_progress'] = 'A sesión está en curso.';
 $string['view_message_conference_not_started'] = 'A sesión aínda non comezou.';
 $string['view_message_conference_room_ready'] = 'Esta sala está lista. Pode unirse á sesión agora.';
+$string['view_message_conference_user_limit_reached'] = 'Alcanzouse o límite de usuarios permitidos nunha sesión.';
 $string['view_message_conference_wait_for_moderator'] = 'Agardando a que acceda un moderador.';
+$string['view_message_cron_disabled'] = 'É posible que a lista de gravacións non estea actualizada. Póñase en contacto co administrador do sitio coa seguinte información: {$a}';
 $string['view_message_finished'] = 'Esta actividade rematou.';
 $string['view_message_has_joined'] = 'uniuse';
 $string['view_message_have_joined'] = 'uníronse';
@@ -436,8 +481,8 @@ $string['view_message_hours'] = 'horas';
 $string['view_message_importrecordings_disabled'] = 'As ligazóns de gravación de importación están desactivadas no servidor.';
 $string['view_message_minute'] = 'minuto';
 $string['view_message_minutes'] = 'minutos';
-$string['view_message_moderator'] = 'moderador';
-$string['view_message_moderators'] = 'moderadores';
+$string['view_message_moderator'] = 'Moderador';
+$string['view_message_moderators'] = 'Moderadores';
 $string['view_message_norecordings'] = 'Non hai gravacións dispoñíbeis.';
 $string['view_message_notavailableyet'] = 'Esta sesión aínda non está dispoñíbel.';
 $string['view_message_recordings_disabled'] = 'As gravacións están desactivadas no servidor. Non se poden usar actividades de BigBlueButton do tipo «Só gravacións».';
@@ -452,10 +497,10 @@ $string['view_message_session_running_for'] = 'Esta sesión estivo activa durant
 $string['view_message_session_started_at'] = 'Esta sesión comezou ás';
 $string['view_message_tab_close'] = 'Esta lapela/xanela debe ser pechada manualmente';
 $string['view_message_times'] = 'veces';
-$string['view_message_user'] = 'usuario';
-$string['view_message_users'] = 'usuarios';
-$string['view_message_viewer'] = 'espectador';
-$string['view_message_viewers'] = 'espectadores';
+$string['view_message_user'] = 'Usuario';
+$string['view_message_users'] = 'Usuarios';
+$string['view_message_viewer'] = 'Espectador';
+$string['view_message_viewers'] = 'Espectadores';
 $string['view_mobile_message_groups_not_supported'] = 'Esta instancia está activada para funcionar con grupos, mais a aplicación móbil aínda non o admite. Use a versión web.';
 $string['view_mobile_message_reload_page_creation_time_meeting'] = 'Superou os 45 segundos nesta páxina. Actualice a páxina para unirse á sesión.';
 $string['view_noguests'] = 'A sala BigBlueButton non está aberta aos convidados.';

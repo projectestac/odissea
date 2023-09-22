@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['choosereadme'] = 'Classic ist ein sehr anpassungsfähiges Design, das auf Boost basiert und über ein alternatives Navigationslayout verfügt. Dieses Design ist für die direkte Verwendung oder als übergeordnetes Design bei der Erstellung oder Aktualisierung benutzerdefinierter Designs zur Verwendung von Bootstrap 4 vorgesehen.';
+$string['choosereadme'] = 'Classic ist ein sehr anpassungsfähiges Design, das auf Boost basiert und über ein alternatives Navigationslayout verfügt. Dieses Design ist für die direkte Verwendung oder als übergeordnetes Design bei der Erstellung oder Aktualisierung nutzerdefinierter Designs zur Verwendung von Bootstrap 4 vorgesehen.';
 $string['configtitle'] = 'Classic';
 $string['navbardark'] = 'Dunkle Navigationsleiste';
 $string['navbardarkdesc'] = 'Wechselt Text- und Hintergrundfarben für die Navigationsleiste oben auf der Seite zwischen dunkel und hell.';

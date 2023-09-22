@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['bim_table_details'] = 'Detalls';
+$string['bim_table_name'] = 'Nom';
 $string['mark'] = 'Puntua';
 $string['student_details_question_heading'] = 'Pregunta';

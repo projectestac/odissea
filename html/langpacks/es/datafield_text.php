@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Texto corto';
 $string['pluginname'] = 'Texto corto';
-$string['privacy:metadata'] = 'El componente de campo de texto no almacena ningún dato personal, utiliza tabla definidas en mod_data.';
+$string['privacy:metadata'] = 'El componente de campo de texto no almacena ningún dato personal, utiliza tablas definidas en mod_data.';
 $string['sample'] = 'Esto es un texto breve';

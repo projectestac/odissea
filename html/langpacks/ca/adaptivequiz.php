@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adaptivequizname'] = 'Nom';
 $string['attempt_questiondetails'] = 'Detalls de la pregunta';
+$string['attempt_user'] = 'Usuari';
+$string['name'] = 'Nom';
+$string['user'] = 'Usuari';

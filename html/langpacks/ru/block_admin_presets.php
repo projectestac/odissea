@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['eventpresetslisted'] = 'Просмотрен список предустановок';
 $string['site'] = 'Сайт';

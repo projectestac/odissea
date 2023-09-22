@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowedtypes'] = 'Tipos permitidos';
-$string['allowedtypes_desc'] = 'Qué botones de grabación deberían aparecer en Atto. Además de esta configuración, hay capacidades que pueden controlar el acceso a los botones para usuarios particulares en contextos particulares.';
+$string['allowedtypes'] = 'Tipo permitido';
+$string['allowedtypes_desc'] = '¿Qué botones de grabación deberían aparecer en el editor TinyMCE? Además de esta configuración, hay dos permisos que pueden controlar el acceso a las opciones de grabación.';
 $string['attachrecording'] = 'Adjuntar grabación';
 $string['audioandvideo'] = 'Audio y vídeo';
 $string['audiobitrate'] = 'Bitrate de audio';
 $string['audiobitrate_desc'] = 'Calidad de la grabación de audio (números más altos significan mayor calidad)';
 $string['audiobuttontitle'] = 'Grebar audio';
-$string['audiotimelimit'] = 'Tiempo límite de audio en segundos';
+$string['audiotimelimit'] = 'Tiempo límite de audio';
 $string['audiotimelimit_desc'] = 'Duración máxima permitida para los clips de audio';
 $string['audiotitle'] = 'Grabar audio';
 $string['confirm_yes'] = 'Si';
@@ -42,15 +42,15 @@ $string['gumabort'] = 'Algo extraño ha sucedido que impide usar la webcam/micr�
 $string['gumabort_title'] = 'Algo ha sucedido';
 $string['gumnotallowed'] = 'El usuario debe permitir al navegador acceder a la webcam/micrófono';
 $string['gumnotallowed_title'] = 'Error de permisos';
-$string['gumnotfound'] = 'No hay ningún dispositivo de entrada conectado o habilitado';
+$string['gumnotfound'] = 'No se ha detectado ningún dispositivo de entrada.';
 $string['gumnotfound_title'] = 'No hay dispositivo';
 $string['gumnotreadable'] = 'Algo está impidiendo al navegador acceder a la webcam/micrófono';
 $string['gumnotreadable_title'] = 'Error de hardware';
-$string['gumnotsupported'] = 'Su navegador no soporta la grabación con una conexión no segura y debe cerrar el plugin';
+$string['gumnotsupported'] = 'Su navegador no soporta la grabación con una conexión no segura.';
 $string['gumnotsupported_title'] = 'No soportado para una conexión no segura';
 $string['gumoverconstrained'] = 'La actual webcam/micrófono no puede producir un flujo con las condiciones necesarias';
 $string['gumoverconstrained_title'] = 'Problema con las condiciones';
-$string['gumsecurity'] = 'Su navegador no soporta la grabación con una conexión no segura y debe cerrar el plugin';
+$string['gumsecurity'] = 'Su navegador no soporta la grabación con una conexión no segura.';
 $string['gumsecurity_title'] = 'No soportado para una conexión no segura';
 $string['gumtype'] = 'Intentando conseguir el flujo de la webcam/micrófono, pero no se especificaron las condiciones';
 $string['gumtype_title'] = 'Condiciones no especificadas';
@@ -85,6 +85,6 @@ $string['uploadprogress'] = 'completada';
 $string['videobitrate'] = 'Bitrate de vídeo';
 $string['videobitrate_desc'] = 'Calidad de la grabación de vídeo (números más altos significan mayor calidad)';
 $string['videobuttontitle'] = 'Grabar video';
-$string['videotimelimit'] = 'Tiempo límite de vídeo en segundos';
+$string['videotimelimit'] = 'Tiempo límite de vídeo';
 $string['videotimelimit_desc'] = 'Duración máxima permitida para los clips de vídeo';
 $string['videotitle'] = 'Grabar video';

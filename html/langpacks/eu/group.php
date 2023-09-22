@@ -113,15 +113,13 @@ $string['groupmembers'] = 'Taldekideak';
 $string['groupmemberssee'] = 'Ikusi taldekideak';
 $string['groupmembersselected'] = 'Aukeratutako taldeko kideak';
 $string['groupmode'] = 'Talde-modua';
-$string['groupmode_help'] = 'Hiru aukera dago:
+$string['groupmode_help'] = '* Talderik ez
+* Taldeek ezin elkar ikusi - Ikasleak taldeetan banatuta daude eta bakoitzak bere taldearen lana baino ezin du ikusi.
+* Taldeek elkar ikusten dute - Ikasleak taldeetan banatuta daude eta bakoitzak bere taldean egiten du lan baina gainerako taldeen lana ere ikusten ditu.
 
-* Talderik ez
-* Taldeek ezin elkar ikusi - taldekide bakoitzak bere taldea baino ezin du ikusi; gainerakoak ezin ditu ikusi
-* Taldeek elkar ikusten dute - taldekide bakoitzak bere taldean egiten du lan baina gainerakoak ere ikusten ditu
-
-Ikastaro mailan definitutako talde-modua izango da lehenetsitako modua ikastaroko jarduera guztietan. Taldeak onartzen dituen jarduera bakoitzean ere talde-modua ezarri daiteke, baina ikastaro mailan talde-modua behartzen bada, ez zaio jaramonik egingo jarduera bakoitzaren talde-modua ezarpenari.';
+Ikastaro mailan zehaztutako talde-modua jarduera guztietan lehenetsitakoa da. Ikastaro mailan talde-modua behartzen bada ezin da jardueretan aldatu.';
 $string['groupmodeforce'] = 'Behartu talde-modua';
-$string['groupmodeforce_help'] = 'Talde-modua behartuta badago, ikastaroko talde-modua aplikatuko zaio ikastaroko edozein jarduerari. Jarduera bakoitzeko talde-modua ezarpenari ez zaio jaramonik egingo.';
+$string['groupmodeforce_help'] = 'Talde-modua jarduera guztientzako behartuta dago eta ezin da jardueretan aldatu.';
 $string['groupmy'] = 'Neure taldea';
 $string['groupname'] = 'Taldearen izena';
 $string['groupnameexists'] = 'Dagoeneko bada ikastaro honetan \'{$a}\' izeneko taldea; mesedez, aukeratu beste bat.';

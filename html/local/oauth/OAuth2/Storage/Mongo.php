@@ -22,6 +22,7 @@ class Mongo implements AuthorizationCodeInterface,
     UserCredentialsInterface,
     RefreshTokenInterface,
     JwtBearerInterface,
+    PublicKeyInterface,
     OpenIDAuthorizationCodeInterface
 {
     protected $db;
@@ -40,16 +41,13 @@ class Mongo implements AuthorizationCodeInterface,
             $this->db = $m->{$connection['database']};
         }
 
-        // Unix timestamps might get larger than 32 bits,
-        // so let's add native support for 64 bit ints.
-        ini_set('mongo.native_long', 1);
-
         $this->config = array_merge(array(
             'client_table' => 'oauth_clients',
             'access_token_table' => 'oauth_access_tokens',
             'refresh_token_table' => 'oauth_refresh_tokens',
             'code_table' => 'oauth_authorization_codes',
             'user_table' => 'oauth_users',
+            'key_table' => 'oauth_keys',
             'jwt_table' => 'oauth_jwt',
         ), $config);
     }
@@ -101,16 +99,15 @@ class Mongo implements AuthorizationCodeInterface,
                 ))
             );
         } else {
-            $this->collection('client_table')->insert(
-                array(
-                    'client_id'     => $client_id,
-                    'client_secret' => $client_secret,
-                    'redirect_uri'  => $redirect_uri,
-                    'grant_types'   => $grant_types,
-                    'scope'         => $scope,
-                    'user_id'       => $user_id,
-                )
+            $client = array(
+                'client_id'     => $client_id,
+                'client_secret' => $client_secret,
+                'redirect_uri'  => $redirect_uri,
+                'grant_types'   => $grant_types,
+                'scope'         => $scope,
+                'user_id'       => $user_id,
             );
+            $this->collection('client_table')->insert($client);
         }
 
         return true;
@@ -151,18 +148,26 @@ class Mongo implements AuthorizationCodeInterface,
                 ))
             );
         } else {
-            $this->collection('access_token_table')->insert(
-                array(
-                    'access_token' => $access_token,
-                    'client_id' => $client_id,
-                    'expires' => $expires,
-                    'user_id' => $user_id,
-                    'scope' => $scope
-                )
+            $token = array(
+                'access_token' => $access_token,
+                'client_id' => $client_id,
+                'expires' => $expires,
+                'user_id' => $user_id,
+                'scope' => $scope
             );
+            $this->collection('access_token_table')->insert($token);
         }
 
         return true;
+    }
+
+    public function unsetAccessToken($access_token)
+    {
+        $result = $this->collection('access_token_table')->remove(array(
+            'access_token' => $access_token
+        ), array('w' => 1));
+
+        return $result['n'] > 0;
     }
 
 
@@ -174,7 +179,7 @@ class Mongo implements AuthorizationCodeInterface,
         return is_null($code) ? false : $code;
     }
 
-    public function setAuthorizationCode($code, $client_id, $user_id, $redirect_uri, $expires, $scope = null, $id_token = null)
+    public function setAuthorizationCode($code, $client_id, $user_id, $redirect_uri, $expires, $scope = null, $id_token = null, $code_challenge = null, $code_challenge_method = null)
     {
         // if it exists, update it.
         if ($this->getAuthorizationCode($code)) {
@@ -187,20 +192,23 @@ class Mongo implements AuthorizationCodeInterface,
                     'expires' => $expires,
                     'scope' => $scope,
                     'id_token' => $id_token,
+                    'code_challenge' => $code_challenge,
+                    'code_challenge_method' => $code_challenge_method,
                 ))
             );
         } else {
-            $this->collection('code_table')->insert(
-                array(
-                    'authorization_code' => $code,
-                    'client_id' => $client_id,
-                    'user_id' => $user_id,
-                    'redirect_uri' => $redirect_uri,
-                    'expires' => $expires,
-                    'scope' => $scope,
-                    'id_token' => $id_token,
-                )
+            $token = array(
+                'authorization_code' => $code,
+                'client_id' => $client_id,
+                'user_id' => $user_id,
+                'redirect_uri' => $redirect_uri,
+                'expires' => $expires,
+                'scope' => $scope,
+                'id_token' => $id_token,
+                'code_challenge' => $code_challenge,
+                'code_challenge_method' => $code_challenge_method,
             );
+            $this->collection('code_table')->insert($token);
         }
 
         return true;
@@ -212,7 +220,6 @@ class Mongo implements AuthorizationCodeInterface,
 
         return true;
     }
-
 
     /* UserCredentialsInterface */
     public function checkUserCredentials($username, $password)
@@ -243,26 +250,26 @@ class Mongo implements AuthorizationCodeInterface,
 
     public function setRefreshToken($refresh_token, $client_id, $user_id, $expires, $scope = null)
     {
-        $this->collection('refresh_token_table')->insert(
-            array(
-                'refresh_token' => $refresh_token,
-                'client_id' => $client_id,
-                'user_id' => $user_id,
-                'expires' => $expires,
-                'scope' => $scope
-            )
+        $token = array(
+            'refresh_token' => $refresh_token,
+            'client_id' => $client_id,
+            'user_id' => $user_id,
+            'expires' => $expires,
+            'scope' => $scope
         );
+        $this->collection('refresh_token_table')->insert($token);
 
         return true;
     }
 
     public function unsetRefreshToken($refresh_token)
     {
-        $this->collection('refresh_token_table')->remove(array('refresh_token' => $refresh_token));
+        $result = $this->collection('refresh_token_table')->remove(array(
+            'refresh_token' => $refresh_token
+        ), array('w' => 1));
 
-        return true;
+        return $result['n'] > 0;
     }
-
 
     // plaintext passwords are bad!  Override this for your application
     protected function checkPassword($user, $password)
@@ -289,14 +296,13 @@ class Mongo implements AuthorizationCodeInterface,
                 ))
             );
         } else {
-            $this->collection('user_table')->insert(
-                array(
-                    'username' => $username,
-                    'password' => $password,
-                    'first_name' => $firstName,
-                    'last_name' => $lastName
-                )
+            $user = array(
+                'username' => $username,
+                'password' => $password,
+                'first_name' => $firstName,
+                'last_name' => $lastName
             );
+            $this->collection('user_table')->insert($user);
         }
 
         return true;
@@ -335,5 +341,56 @@ class Mongo implements AuthorizationCodeInterface,
     {
         //TODO: Needs mongodb implementation.
         throw new \Exception('setJti() for the MongoDB driver is currently unimplemented.');
+    }
+
+    public function getPublicKey($client_id = null)
+    {
+        if ($client_id) {
+            $result = $this->collection('key_table')->findOne(array(
+                'client_id' => $client_id
+            ));
+            if ($result) {
+                return $result['public_key'];
+            }
+        }
+
+        $result = $this->collection('key_table')->findOne(array(
+            'client_id' => null
+        ));
+        return is_null($result) ? false : $result['public_key'];
+    }
+
+    public function getPrivateKey($client_id = null)
+    {
+        if ($client_id) {
+            $result = $this->collection('key_table')->findOne(array(
+                'client_id' => $client_id
+            ));
+            if ($result) {
+                return $result['private_key'];
+            }
+        }
+
+        $result = $this->collection('key_table')->findOne(array(
+            'client_id' => null
+        ));
+        return is_null($result) ? false : $result['private_key'];
+    }
+
+    public function getEncryptionAlgorithm($client_id = null)
+    {
+        if ($client_id) {
+            $result = $this->collection('key_table')->findOne(array(
+                'client_id' => $client_id
+            ));
+            if ($result) {
+                return $result['encryption_algorithm'];
+            }
+        }
+
+        $result = $this->collection('key_table')->findOne(array(
+            'client_id' => null
+        ));
+        return is_null($result) ? 'RS256' : $result['encryption_algorithm'];
     }
 }

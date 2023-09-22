@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Campo de botón de opción';
-$string['pluginname'] = 'Botón de opción';
-$string['privacy:metadata'] = 'El componente de campo de botón de opción no almacena ningún dato personal, utiliza tabla definidas en mod_data.';
+$string['fieldtypelabel'] = 'Campo de botón de opción (botón de radio)';
+$string['pluginname'] = 'Botón de opción (botón de radio)';
+$string['privacy:metadata'] = 'El componente de campo de botón de opción (botón de radio) no almacena ningún dato personal, utiliza tablas definidas en mod_data.';

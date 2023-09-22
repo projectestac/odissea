@@ -31,3 +31,4 @@ $string['hotpot_link'] = 'qformat/hotpot';
 $string['pluginname'] = 'Formato Hot Potatoes XML';
 $string['pluginname_help'] = 'Este es el archivo de formato para importar preguntas de archivos XML de Hot Potatoes JCloze (JCL), JCross (JCW), JMatch (JMT), JMix (JMX), JQuiz (jqz), al banco de preguntas de Moodle.';
 $string['pluginname_link'] = 'qformat/hotpot';
+$string['requiremodhotpot'] = 'El plugin de importación de preguntas de Hot Potatoes no se puede instalar porque falta el módulo de actividad HotPot. Por favor, descargue el módulo de actividad HotPot, póngalo en {$a}/mod/hotpot y recargue esta página.';

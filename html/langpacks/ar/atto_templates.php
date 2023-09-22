@@ -26,16 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'إختر مظهراً لاستعراض ما سيبدو عليه، ثم أنقر إدراج';
-$string['dialogtitle'] = 'إدراج محتوى المظهر المعرف سابقاً';
-$string['pluginname'] = 'المظاهر';
+$string['dialogtitle'] = 'إدراج محتوى القالب المعرف سابقاً';
+$string['pluginname'] = 'القوالب';
 $string['privacy:metadata'] = 'إن إضافة atto_templates لا تخزن أي بيانات شخصية.';
-$string['selectatemplate'] = 'إختر المظهر...';
-$string['settings'] = 'إعدادات المظهر';
-$string['template'] = 'متن المظهر {$a}';
-$string['template_desc'] = 'ضع المظهر هنا';
-$string['templatecount'] = 'عدد المظاهر';
-$string['templatecount_desc'] = 'عدد المظاهر التي ترغب بالحصول عليها.';
-$string['templateheading'] = 'إعدادات المظهر: {$a}';
-$string['templatekey'] = 'المفتاح الذي يُعرِّف المظهر {$a}';
+$string['selectatemplate'] = 'إختر القالب...';
+$string['settings'] = 'إعدادات القالب';
+$string['template'] = 'متن القالب {$a}';
+$string['template_desc'] = 'ضع القالب هنا';
+$string['templatecount'] = 'عدد القوالب';
+$string['templatecount_desc'] = 'عدد القوالب التي ترغب بالحصول عليها.';
+$string['templateheading'] = 'إعدادات القالب: {$a}';
+$string['templatekey'] = 'المفتاح الذي يُعرِّف القالب {$a}';
 $string['templatekey_desc'] = 'ينبغي أن يكون المفتاح من كلمة واحدة ويتضمن فقط الحروف اللاتينية، الأرقام، الشُّرط التحتانية (_)، الشُرط (-)، والنقاط (.).';
-$string['templatepageheading'] = 'المظهر: {$a}';
+$string['templatepageheading'] = 'القالب: {$a}';

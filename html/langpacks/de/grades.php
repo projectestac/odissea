@@ -57,21 +57,20 @@ $string['aggregatesum'] = 'Summe';
 $string['aggregateweightedmean'] = 'Gewichteter Durchschnitt';
 $string['aggregateweightedmean2'] = 'Einfach gewichteter Durchschnitt';
 $string['aggregation'] = 'Gesamtergebnis';
-$string['aggregation_help'] = 'Diese Einstellung legt fest, wie die einzelnen Bewertungsaspekte der Kategorie zusammengefasst werden.
+$string['aggregation_help'] = 'Diese Einstellung bestimmt, wie Bewertungen in einer Kategorie kombiniert werden, z.B.
 
-* Durchschnitt: Die Summe aller Bewertungsaspekte wird durch ihre Anzahl geteilt.
+* Durchschnitt: Die Summe aller Bewertungen wird durch deren Anzahl geteilt.
 * Gewichteter Durchschnitt: Vor der Durchschnittberechnung kann jeder Bewertungsaspekt wird mit einer Gewichtung versehen werden.
 * Einfach gewichteter Durchschnitt: Vor der Durchschnittberechnung wird jeder Bewertungsaspekt automatisch mit der Gewichtung seiner Maximalpunktezahl versehen.
-* Durchschnitt (mit Zusatzpunkten): Wird nicht mehr unterstützt und sollte nicht verwendet werden.
-* Median aller Bewertungen: Die Bewertungen der Bewertungsaspekte werden der Größe nach sortiert. Der Median ist der Wert in der Mitte.
+* Median aller Bewertungen: Alle Bewertungen werden der Größe nach sortiert. Der Median ist der Wert in der Mitte.
 * Niedrigste Bewertung
 * Höchste Bewertung
-* Modus (Modalwert) aller Bewertungen: Die Bewertung, die am häufigsten vorkommt, wird verwendet. Diese Methode wird oft bei nichtnumerischen Bewertungen eingesetzt.
-* Natürlich: Die Summe aller Bewertungen.';
+* Modus aller Bewertungen: Die Bewertung, die am häufigsten vorkommt, wird verwendet. Diese Methode wird oft bei nichtnumerischen Bewertungen eingesetzt.
+* Summe: Die Summe aller Bewertungen, skaliert mit deren Gewichtung.';
 $string['aggregation_link'] = 'grade/aggregation';
 $string['aggregationcoef'] = 'Summenkoeffizient';
 $string['aggregationcoefextra'] = 'Zusatzpunkte';
-$string['aggregationcoefextra_help'] = 'Wenn die Ergebnisse \'Natürlich\' oder \'Einfach gewichteter Durchschnitt\'  zusammengefasst werden und die Option \'Zusatzpunkte\' aktiviert ist, wird die höchste Bewertung nicht zur höchsten Bewertung der Kategorie hinzugezählt.  Daher kann hierbei die Höchstnote erreicht werden, obwohl nicht bei allen Bewertigen die Höchstnote erreicht wurde.  Wenn in der Systemverwaltung festgelegt wurde, dass Bewertungen veregebn werden können, die den Höchstwert übersteigen, kann die Bewertungsberechnung ein Ergebnis anzeigen, dass höher ist als der eingestellte Höchstwert.
+$string['aggregationcoefextra_help'] = 'Wenn die Ergebnisse \'Summe\' oder \'Einfach gewichteter Durchschnitt\'  zusammengefasst werden und die Option \'Zusatzpunkte\' aktiviert ist, wird die höchste Bewertung nicht zur höchsten Bewertung der Kategorie hinzugezählt.  Daher kann hierbei die Höchstnote erreicht werden, obwohl nicht bei allen Bewertigen die Höchstnote erreicht wurde.  Wenn in der Systemverwaltung festgelegt wurde, dass Bewertungen veregebn werden können, die den Höchstwert übersteigen, kann die Bewertungsberechnung ein Ergebnis anzeigen, dass höher ist als der eingestellte Höchstwert.
 
 Wenn die Berechnung auf Basis des \'Durchschnitts (mit Zusatzpunkten)\'  gesetzt ist und Extrapunkte einen Wert größer als Null haben, so wird der Wert für den Extrapunkte erst multipliziert und dann dem Durchschnitt der Bewertungen hinzuaddiert.';
 $string['aggregationcoefextra_link'] = 'grade/aggregation';

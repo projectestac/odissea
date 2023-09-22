@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['fallbackspantag'] = '&lt;span&gt;-Tags unterstützen';
+$string['fallbackspantag_desc'] = 'Zusätzlich zur {mlang}-Syntax sind die herkömmlichen &lt;span class="multilang"&gt;-Tags weiterhin erlaubt.';
 $string['helplinktext'] = 'Multi-Language-Content (v2)';
 $string['highlight'] = 'Trennzeichen hervorheben';
 $string['highlight_desc'] = 'Die Trennzeichen für sprachabhängige Inhalte sollen im Editor hervorgehoben werden (z.B. {mlang XX} und {mlang}).';
-$string['highlightcss'] = 'CSS für Sprachtag';
+$string['highlightcss'] = 'CSS für Sprach-Tag';
 $string['highlightcss_desc'] = 'CSS zum Hervorheben der Trennzeichen für die sprachabhängigen Inhalte.
 
 Wenn Sie die Sprache anzeigen möchten, die in einem sprachabhängigen Block verwendet wird, kann folgendes CSS verwendet werden. Dieses Beispiel ist für Deutsch. Die Farben sind eventuell nicht optimal gewählt.
@@ -46,7 +48,7 @@ Wenn Sie die Sprache anzeigen möchten, die in einem sprachabhängigen Block ver
 $string['multilang2:desc'] = 'Unterstützung zum Hinzufügen von sprachabhängigen Inhalten. Der Filter "Multi-Language-Content (v2)" muss aktiviert sein.';
 $string['multilang2:language'] = 'Sprache';
 $string['multilang2:other'] = 'Andere';
-$string['multilang2:viewlanguagemenu'] = 'Sprachen als Dropdown-Menü im TinyMCE Editor anzeigen';
+$string['multilang2:viewlanguagemenu'] = 'Sprachen als Dropdown-Menü im Editor anzeigen';
 $string['pluginname'] = 'Multi-Language-Content (v2)';
 $string['privacy:metadata'] = 'Das Plugin "Multi-Language-Content (v2)" speichert keine personenbezogenen Daten.';
 $string['requiremultilang2'] = 'Filter "Multi-Language-Content (v2)" notwendig';

@@ -2,6 +2,12 @@
 Change log for qformat_hotpot
 ========================================
 
+2022-10-26 (26)
+ - Merge pull request #1 from danielneis/composer  adding composer.json
+
+2022-10-26 (24)
+ - Merge pull request #2 from AdilIqbal95/master  Updated privacy files
+
 2019-10-12 (21)
  - standardize layout and spelling in CHANGES.txt
 

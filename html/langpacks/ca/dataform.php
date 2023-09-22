@@ -71,6 +71,7 @@ $string['dataform:entryownexport'] = 'Entrada pròpia - Exporta';
 $string['dataform:entryownupdate'] = 'Entrada pròpia - Actualitza';
 $string['dataform:entryownview'] = 'Entrada pròpia - Visualitza';
 $string['dataform:indexview'] = 'Visualitza índex';
+$string['dataform:managefields'] = 'Gestiona els camps';
 $string['dataform:viewaccess'] = 'Visualitza - Accés';
 $string['dataform:viewaccessearly'] = 'Visualitza - Accés anticipat';
 $string['dataform:viewaccesshidden'] = 'Visualitza - Accés ocult';

@@ -159,9 +159,9 @@ Muchas gracias.';
 $string['collesaname'] = 'COLLES (Real)';
 $string['collesapintro'] = 'El propósito de esta encuesta es ayudarnos a entender hasta qué punto la presentación en línea de esta unidad le facilitó el aprendizaje.
 
-Cada una de las 24 afirmaciones siguientes le pedirán que compare en esta unidad su experiencia  strong>esperada</strong> (la ideal para usted) y su experiencia <strong>real</strong>
+Cada una de las 24 afirmaciones siguientes le pedirán que compare en esta unidad su experiencia  strong>esperada</strong> (ideal) y su experiencia <strong>real</strong> en esta unidad.
 
-No hay respuetas "correctas" o "incorrectas": nos interesa solo su opinión. Puede estar seguro de que sus respuestas serán tratadas con un alto grado de confidencialidad y no afectarán su evaluación.
+No hay respuestas "correctas" o "incorrectas": nos interesa sólo su opinión. Puede estar seguro de que sus respuestas serán tratadas con un alto grado de confidencialidad y no influirán en su evaluación.
 
 Sus respuestas, pensadas cuidadosamente, nos ayudarán a mejorar la manera de presentar esta unidad en el futuro.
 

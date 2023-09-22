@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['category:config'] = 'Kursbereichseinschreibung konfigurieren';
 $string['category:synchronised'] = 'Rollen werden für Kurseinschreibungen synchronisiert';
-$string['enrolcategorysynctask'] = 'Synchronisierungsaufgabe der Kursbereichseinschreibung';
+$string['enrolcategorysynctask'] = 'Synchronisierung von Kursbereichseinschreibungen';
 $string['pluginname'] = 'Kursbereichseinschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Kursbereichseinschreibung\' synchronisiert Rollenzuweisungen auf alle Kurse eines Kursbereichs, u.z. wenn für die jeweilige Rolle enrol/category:synchronised erlaubt ist.';
 $string['privacy:metadata'] = 'Die Einschreibemethode \'Kursbereichseinschreibung\' speichert keine personenbezogenen Daten.';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:closingbeforeopening'] = 'La fecha de apertura debe ser anterior a la de cierre.';
 $string['activitydate:exceeded'] = 'Fecha de vencimiento excedida.';
 $string['activitydate:hasopened'] = 'Abierto:';
 $string['activitydate:notavailableyet'] = 'No disponible todavía.';
@@ -134,7 +135,7 @@ $string['numberofuser'] = 'El número de usuarios';
 $string['onlyactive'] = 'Filtrar datos de la respuesta para usuarios con matriculación expirada o suspendida.';
 $string['option'] = 'Grupo';
 $string['page-mod-choice-x'] = 'Cualquier página del módulo Elección de grupo';
-$string['pleaseselectonegroup'] = 'Por favor seleccione al menos un grupo del cual elegir.';
+$string['pleaseselectonegroup'] = 'Por favor, seleccione al menos un grupo del cual elegir.';
 $string['pleasesetgroups'] = 'Por favor, genere al menos un grupo en este curso.';
 $string['pleasesetonegroupor'] = 'Por favor, cree al menos un grupo dentro de este curso.<br /><br />
 <ul>

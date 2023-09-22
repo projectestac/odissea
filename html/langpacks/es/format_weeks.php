@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Añadir semanas';
+$string['addsections'] = 'Añadir semana';
 $string['automaticenddate'] = 'Calcula la fecha de finalización del curso a partir del número de secciones';
 $string['automaticenddate_help'] = 'Se está habilitado, la fecha de fin del curso se calculará de forma automática a partir de número de secciones y de la fecha de inicio del curso.';
 $string['currentsection'] = 'Semana actual';

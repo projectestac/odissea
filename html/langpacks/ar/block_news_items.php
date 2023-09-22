@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['news_items:addinstance'] = 'إضافة كتلة آخر الأخبار جديدة';
-$string['news_items:myaddinstance'] = 'إضافة كتلة جديدة لأحدث الإعلانات إلى دفة القيادة';
+$string['news_items:myaddinstance'] = 'إضافة كتلة جديدة لأحدث الإعلانات إلى لوحة التحكم';
 $string['pluginname'] = 'آخر الإعلانات';
 $string['privacy:metadata'] = 'كتلة آخر الإعلانات تظهر فقط البيانات المخزونة في المنتدى ولا تخزن أي بيانات بحد ذاتها.';

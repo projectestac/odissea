@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadas'] = 'Baixa les dades de la taula com a';
+$string['missingrequiredfields'] = 'Falta un o més filtres obligatoris ({$a})';
+$string['privacy:metadata'] = 'L\'API de la taula no emmagatzema ara per ara cap dada d\'usuari';

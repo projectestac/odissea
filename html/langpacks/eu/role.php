@@ -230,6 +230,7 @@ $string['customrolename_help'] = 'Rol estandarren izenak automatikoki itzultzen 
 $string['defaultrole'] = 'Lehenetsitako rola';
 $string['defaultx'] = 'Lehenetsitakoa: {$a}';
 $string['defineroles'] = 'Zehaztu rolak';
+$string['definitionofrolex'] = '\'{$a}\' rolaren definizioa';
 $string['deletecourseoverrides'] = 'Ezabatu ikastaroan baliogabetutako baimen guztiak';
 $string['deletelocalroles'] = 'Ezabatu rol-esleipen lokal guztiak';
 $string['deleterolesure'] = '<p>Ziur zaude {"{$a->name}} ({$a->shortname})" rola ezabatu nahi duzula?</p><p> Une honetan {$a->count} erabiltzailek dute rol hori.</p>';

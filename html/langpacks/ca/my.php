@@ -28,9 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['addpage'] = 'Afegeix pàgina';
 $string['alldashboardswerereset'] = 'S\'han restablert per defecte totes les pàgines del tauler.';
 $string['allprofileswerereset'] = 'S\'han restablert per defecte totes les pàgines del perfil.';
+$string['coursemanagementoptions'] = 'Opcions de gestió del curs';
 $string['defaultpage'] = 'Pàgina per defecte d\'«El meu Moodle»';
 $string['defaultprofilepage'] = 'Pàgina per defecte del perfil';
 $string['delpage'] = 'Suprimeix la pàgina';
+$string['error:dashboardisdisabled'] = 'Un administrador ha desactivat el tauler.';
 $string['managepages'] = 'Gestiona pàgines';
 $string['mymoodle'] = 'Tauler';
 $string['nocourses'] = 'No hi ha informació de cursos per mostrar.';
@@ -42,3 +44,4 @@ $string['reseterror'] = 'S\'ha produït un error en reinicialitzar la vostra pà
 $string['reseteveryonesdashboard'] = 'Restableix el tauler per a tots els usuaris';
 $string['reseteveryonesprofile'] = 'Restableix el perfil per a tots els usuaris';
 $string['resetpage'] = 'Reinicialitza la pàgina per defecte';
+$string['resettingdashboards'] = 'S\'estan restablint els taulers d\'usuari als valors predeterminats...';

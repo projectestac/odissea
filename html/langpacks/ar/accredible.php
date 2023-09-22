@@ -44,7 +44,7 @@ $string['chooseexam'] = 'اختر اختبار نهائي';
 $string['completionissuecheckbox'] = 'نعم. أصدر بمجرد إتمام المساق';
 $string['completionissueheader'] = 'معيار الإصدار التلقاءي: إتمام المساق';
 $string['dashboardlink'] = 'رابط دفة قيادة Accredible';
-$string['dashboardlinktext'] = 'لمحو أو تنميط الاعتمادات، قم بالدخول إلى هذا الرابط: <a href="https://dashboard.accredible.com" target="_blank">دفة القيادة</a>';
+$string['dashboardlinktext'] = 'لمحو أو تنميط الاعتمادات، قم بالدخول إلى هذا الرابط: <a href="https://dashboard.accredible.com" target="_blank">لوحة التحكم</a>';
 $string['datecreated'] = 'تاريخ الإنشاء';
 $string['description'] = 'الوصف';
 $string['eventcertificatecreated'] = 'معطيات نُشرت إلى Accredible';

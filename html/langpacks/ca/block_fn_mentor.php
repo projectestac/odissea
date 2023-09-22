@@ -30,5 +30,6 @@ $string['edit'] = 'Edita';
 $string['export'] = 'Exporta';
 $string['importexport'] = 'Importa-Exporta';
 $string['incompleted'] = 'No completada';
+$string['name'] = 'Nom';
 $string['student'] = 'Estudiant';
 $string['title:incompleted'] = 'No completada';

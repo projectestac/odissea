@@ -90,7 +90,7 @@ $string['hideremote'] = 'Ocultar usuarios remotos';
 $string['host'] = 'host';
 $string['hostcoursenotfound'] = 'Host o curso no encontrado';
 $string['hostdeleted'] = 'Host borrado';
-$string['hostexists'] = 'Ya existe un registro para un host con ese nombre (puede ser eliminado). <a href="{$a}">Haga clic aquí</a>para editar ese registro.';
+$string['hostexists'] = 'Ya existe un registro para un host con ese nombre (puede ser eliminado). <a href="{$a}">Editar el registro</a>';
 $string['hostlist'] = 'Lista de hosts en red';
 $string['hostname'] = 'Nombre del host';
 $string['hostnamehelp'] = 'El nombre completo del dominio del host remoto, por ejemplo www.ejemplo.com';

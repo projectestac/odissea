@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['accountcreatedsuccess'] = 'حسابك تم إنشاؤه وهو الآن جاهز للاستعمال.';
 $string['accountlinkedsuccess'] = 'حسابك الموجود تم ربطه بنجاح.';
-$string['auth_ltidescription'] = 'إن إضافة مصادقة LTI، مع إضافة الانضمام \'النشر بمثابة أداة LTI\'، تسمحان للمستخدمين بالوصول إلى مساقات ونشاطات محددة. بعبارة أخرى، مودل يعمل بمثابة مزود أداة LTI.';
+$string['auth_ltidescription'] = 'إن إضافة مصادقة LTI، مع إضافة الانضمام \'النشر بمثابة أداة LTI\'، تسمحان للمستخدمين بالوصول إلى مقررات ونشاطات محددة. بعبارة أخرى، مودل يعمل بمثابة مزود أداة LTI.';
 $string['cannotcreateaccounts'] = 'إنشاء الحسابات محظور الآن في هذا الموقع.';
 $string['createaccount'] = 'إنشاء الحساب';
 $string['createaccountforme'] = 'إنشاء حساب لي';

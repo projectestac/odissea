@@ -171,6 +171,7 @@ $string['downloadasfolders_help'] = 'Inlämningsuppgifter kan laddas ned i mappa
 $string['downloadselectedsubmissions'] = 'Ladda ned valda inlämningar';
 $string['duedate'] = 'Förfallodatum';
 $string['duedate_help'] = 'Detta är då inlämningsuppgiften förfaller. Inlämningar tillåts fortfarande efter detta datum, men alla inlämningsuppgifter som skickas in efter detta datum markeras som försenade. Ange ett slutdatum för inlämningsuppgiften för att förhindra inlämningar efter ett visst datum.';
+$string['duedateaftersubmissionvalidation'] = 'Förfallodatum måste vara senare än tillåt inlämningar från-datum.';
 $string['duedatecolon'] = 'Förfallodatum: {$a}';
 $string['duedatereached'] = 'Förfallodatum för denna inlämningsuppgift har nu passerats';
 $string['duedatevalidation'] = 'Slutdatum måste vara efter datum för <em>Tillåt inlämningar från</em>-datumet.';

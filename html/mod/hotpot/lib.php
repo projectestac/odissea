@@ -159,6 +159,14 @@ function hotpot_process_formdata(stdclass &$data, $mform) {
     global $CFG;
     require_once($CFG->dirroot.'/mod/hotpot/locallib.php');
 
+    // The intro field was added in Moodle 4.0 because it is expected in
+    // "lib/classes/output/activity_header.php". If left unset, it may
+    // generate a database error, so we force it to a reasonable default.
+    if (! isset($data->intro)) {
+        $data->intro = '';
+        $data->introformat = 0;
+    }
+
     if ($mform->is_add()) {
         $data->timecreated = time();
     } else {
@@ -2255,6 +2263,21 @@ function hotpot_get_context($contextlevel, $instanceid=0, $strictness=0) {
  * @todo Finish documenting this function
  */
 function hotpot_textlib() {
+
+    $args = func_get_args();
+    $method = array_shift($args);
+
+    // We need to detect and avoid "utf8_to_entities" on Moodle >= 4.x,
+    // because it includes a "mb_strtolower()" to force all lower case.
+    // See "utf8_to_entities()" method in "lib/classes/text.php".
+    if ($method == 'utf8_to_entities') {
+        if (class_exists('core_text') && method_exists('core_text', 'typo3') == false) {
+            $str = array_shift($args);
+            $map = [0xa0, 0xffff, 0, 0xffff]; // start_code, end_code, offset, mask
+            return mb_encode_numericentity($str, $map, 'UTF-8', true);
+        }
+    }
+
     if (class_exists('core_text')) {
         // Moodle >= 2.6
         $textlib = 'core_text';
@@ -2265,8 +2288,6 @@ function hotpot_textlib() {
         // Moodle 2.2 - 2.5
         $textlib = 'textlib';
     }
-    $args = func_get_args();
-    $method = array_shift($args);
     if (method_exists($textlib, $method)) {
         $callback = array($textlib, $method);
         return call_user_func_array($callback, $args);

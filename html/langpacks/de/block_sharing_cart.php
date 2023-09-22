@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activity_string'] = 'Aktivität';
-$string['backup'] = 'Ins Zwischenlager kopieren';
+$string['backup'] = 'In den Zwischenspeicher kopieren';
 $string['backup_heavy_load_warning_message'] = 'Wenn der Abschnitt mehrere Aktivitäten beinhaltet, kann die Verarbeitung längere Zeit in Anspruch nehmen.';
 $string['bulkdelete'] = 'Mehrere Elemente löschen';
 $string['clicktomove'] = 'Klicken um zu verschieben';
 $string['clipboard'] = 'Dieses Element kopieren';
-$string['confirm_backup'] = 'Möchten Sie dieses Element ins Zwischenlager zum Teilen kopieren?';
-$string['confirm_backup_section'] = 'Möchten Sie diesen Kursabschnitt und seine Aktivitäten/Materialien ins Zwischenlager zum Teilen kopieren?';
+$string['confirm_backup'] = 'Möchten Sie dieses Element in den Zwischenspeicher zum Teilen kopieren?';
+$string['confirm_backup_section'] = 'Möchten Sie diesen Kursabschnitt und alle seine Aktivitäten bzw. Materialien in den Zwischenspeicher zum Teilen kopieren?';
 $string['confirm_delete'] = 'Möchten Sie das Element wirklich löschen?';
 $string['confirm_delete_selected'] = 'Möchten Sie wirklich alle ausgewählten Elemente löschen?';
 $string['confirm_restore'] = 'Möchten Sie dieses Element in den Kurs kopieren?';
@@ -59,52 +59,52 @@ $string['missing_capabilities'] = 'Notwendige Rechte fehlen: {$a}';
 $string['missing_capability'] = 'Notwendiges Recht fehlt: {$a}';
 $string['modal_bulkdelete_confirm'] = 'Markierte löschen';
 $string['modal_bulkdelete_title'] = 'Möchten Sie wirklich löschen?';
-$string['modal_checkbox'] = 'Möchten Sie Nutzerdaten mitkopieren (z.B. Glossar-, Wiki-, Datenbankeinträge)?';
+$string['modal_checkbox'] = 'Möchten Sie Nutzerdaten mitkopieren (z.B. Glossar-, Wiki-, Datenbankinhalte)?';
 $string['modal_confirm_backup'] = 'Bestätigen';
 $string['modal_confirm_delete'] = 'Löschen';
 $string['movedir'] = 'In Verzeichnis bewegen';
 $string['no_backup_support'] = 'Dieses Modul wird nicht unterstützt.';
 $string['notarget'] = 'Ziel nicht gefunden';
-$string['pluginname'] = 'Zwischenlager zum Teilen';
-$string['privacy:metadata:block_sharing_cart'] = 'Die Daten für das Zwischenlager zum Teilen werden hier gespeichert';
+$string['pluginname'] = 'Zwischenspeicher zum Teilen';
+$string['privacy:metadata:block_sharing_cart'] = 'Die Daten für den Zwischenspeicher zum Teilen werden hier gespeichert';
 $string['privacy:metadata:block_sharing_cart:ctime'] = 'Zeit der Erstellung';
 $string['privacy:metadata:block_sharing_cart:modicon'] = 'Icon des Aktivitätsmoduls';
 $string['privacy:metadata:block_sharing_cart:modname'] = 'Name des Aktivitätsmoduls';
 $string['privacy:metadata:block_sharing_cart:modtext'] = 'Titel des Aktivitätsmoduls';
-$string['privacy:metadata:block_sharing_cart:tree'] = 'Titel des Zwischenlager zum Teilen, der im Block angezeigt wird';
+$string['privacy:metadata:block_sharing_cart:tree'] = 'Titel des Zwischenspeichers, der im Block angezeigt wird';
 $string['privacy:metadata:block_sharing_cart:userid'] = 'Nutzer-ID';
 $string['privacy:metadata:block_sharing_cart:weight'] = 'Sortierung der Elemente, in aufsteigender Reihenfolge';
-$string['privacy:metadata:block_sharing_cart_plugins'] = 'Die Daten für das Zwischenlager zum Teilen werden hier gespeichert';
-$string['privacy:metadata:block_sharing_cart_plugins:data'] = 'Plugin-Daten für das Zwischenlager zum Teilen';
+$string['privacy:metadata:block_sharing_cart_plugins'] = 'Die Daten für den Zwischenspeicher werden hier gespeichert';
+$string['privacy:metadata:block_sharing_cart_plugins:data'] = 'Plugin-Daten für den Zwischenspeicher';
 $string['privacy:metadata:block_sharing_cart_plugins:plugin'] = 'Name des Plugins';
 $string['privacy:metadata:block_sharing_cart_plugins:userid'] = 'Nutzer-ID';
-$string['recordnotfound'] = 'Das geteilte Element wurde nicht gefunden';
-$string['requireajax'] = 'Das Zwischenlager zum Teilen benötigt AJAX';
-$string['requirejs'] = 'Um das Zwischenlager zum Teilen nutzen zu können, muss JavaScript in Ihrem Browser aktiviert sein';
+$string['recordnotfound'] = 'Geteiltes Element wurde nicht gefunden';
+$string['requireajax'] = 'Der Zwischenspeicher zum Teilen benötigt AJAX';
+$string['requirejs'] = 'Um den Zwischenspeicher zum Teilen nutzen zu können, muss JavaScript in Ihrem Browser aktiviert sein';
 $string['restore'] = 'In den Kurs kopieren';
-$string['restore_heavy_load_warning_message'] = 'Ladezeiten können länger sein, da mehr als 10 Aktivitäten / Materialien verarbeitet werden.';
+$string['restore_heavy_load_warning_message'] = 'Ladezeiten können länger sein, da mehr als 10 Aktivitäten und Materialien verarbeitet werden.';
 $string['section_name_conflict'] = 'Konflikt im Abschnitt';
-$string['settings:add_to_sharing_cart'] = 'Zum Zwischenlager hinzufügen';
-$string['settings:add_to_sharing_cart_desc'] = 'Wählen Sie zwischen der Drag-and-Drop- oder der Anklicken-Methode zum Hinzufügen von Modulen und Abschnitten zum gemeinsamen Sharing Card.
-Die "Anklicken"-Methode ist die Standardmethode für das "Zwischenlager zum Teilen", bei der Sie auf das Warenkorbsymbol klicken müssen, bevor das Modul ins Zwischenlager gelegt wird.
-Mit "Drag and Drop" können Sie Module/Aktivitäten und Abschnitte per Drag and Drop ins Zwischenlager oder auf das Warenkorbsymbol in der Fußzeile ziehen. Beachten Sie bitte, dass dies nur für Moodle 4.0+ unterstützt wird.';
+$string['settings:add_to_sharing_cart'] = 'Zum Zwischenspeicher hinzufügen';
+$string['settings:add_to_sharing_cart_desc'] = 'Wählen Sie zwischen der Drag-and-Drop- oder der Anklicken-Methode zum Hinzufügen von Modulen und Abschnitten zum gemeinsamen Zwischenspeicher.
+Die "Anklicken"-Methode ist die Standardmethode für den "Zwischenspeicher zum Teilen", bei der Sie auf das Warenkorbsymbol klicken müssen, bevor das Modul in den Zwischenspeicher gelegt wird.
+Mit "Drag and Drop" können Sie Module und Aktivitäten sowie ganze Abschnitte per Drag and Drop in den Zwischenspeicher oder auf das Warenkorbsymbol in der Fußzeile ziehen. Beachten Sie bitte, dass dies nur für Moodle 4.0+ unterstützt wird.';
 $string['settings:click_to_add'] = 'Klicken zum Hinzufügen';
 $string['settings:drag_and_drop'] = 'Drag-and-Drop';
 $string['settings:show_copy_section_in_block'] = '"Abschnitt kopieren" im Block anzeigen';
-$string['settings:show_copy_section_in_block_desc'] = '"Abschnitt kopieren" im Block "Zwischenlager zum Teilen" anzeigen';
+$string['settings:show_copy_section_in_block_desc'] = '"Abschnitt kopieren" im Block "Zwischenspeicher zum Teilen" anzeigen';
 $string['settings:userdata_copyable_modtypes'] = 'Aktivitätstypen mit kopierbaren Nutzerdaten';
-$string['settings:userdata_copyable_modtypes_desc'] = 'Wenn eine Aktivität ins Zwischenlager zum Teilen kopiert wird, erscheint ein Optionsfeld, dass fragt, ob die Nutzerdaten mitkopiert werden sollen. Dies geschieht bei allen nebenstehend markierten Aktivitäten, wenn die Person die Berechtigungen <strong>moodle/backup:userinfo</strong>, <strong>moodle/backup:anonymise</strong> und <strong>moodle/restore:userinfo</strong> hat. (Standardmäßig haben nur Manager diese Berechtigungen).';
+$string['settings:userdata_copyable_modtypes_desc'] = 'Wenn eine Aktivität in den Zwischenspeicher zum Teilen kopiert wird, erscheint ein Optionsfeld, dass fragt, ob die Nutzerdaten mitkopiert werden sollen. Dies geschieht bei allen nebenstehend markierten Aktivitäten, wenn die Person die Berechtigungen <strong>moodle/backup:userinfo</strong>, <strong>moodle/backup:anonymise</strong> und <strong>moodle/restore:userinfo</strong> hat. (Standardmäßig haben nur Manager diese Berechtigungen).';
 $string['settings:workaround_qtypes'] = 'Problembehandlung für Frage-Typen';
 $string['settings:workaround_qtypes_desc'] = 'Die Problembehandlung bei der Wiederherstellung von Frage-Typen wird für die nebenstehend markierten Frage-Typen durchgeführt. Wenn die wiederherzustellende Frage bereits existiert, so wird die Problembehanldung versuchen, eine neue Kopie zu erstellen anstatt bereits vorhandene Daten wiederzuverwenden. Dies kann sinnvoll sein um Fehler, wie <i>error_question_match_sub_missing_in_db</i> beim Wiederherstellen zu vermeiden.';
-$string['sharing_cart'] = 'Zwischenlager zum Teilen';
-$string['sharing_cart:addinstance'] = 'Neuen Block \'Zwischenlager zum Teilen\' hinzufügen';
+$string['sharing_cart'] = 'Zwischenspeicher zum Teilen';
+$string['sharing_cart:addinstance'] = 'Neuen Block \'Zwischenspeicher zum Teilen\' hinzufügen';
 $string['sharing_cart_help'] = '<div>
-    <strong>Elemente vom Kurs ins Zwischenlager kopieren</strong>
-        <p>Neben jedem Arbeitsmaterial und jeder Aktivität befindet sich ein kleines Symbol "Ins Zwischenlager zum Teilen kopieren". Klicken Sie auf dieses Symbol, um eine Kopie dieses Arbeitsmaterials bzw. dieser Aktivität ins Zwischenlager zu kopieren. Es wird dabei nur die Aktivität selbst kopiert, jedoch keine Nutzerdaten.</p>
-    <strong>Elemente vom Zwischenlager in den Kurs kopieren</strong>
-        <p>Klicken Sie auf das Symbol "In den Kurs kopieren" im Zwischenlager und wählen Sie danach die Zielmarkierung im gewünschten Kursabschnitt aus. Um den Vorgang abzubrechen klicken Sie auf das Symbol "Abbrechen".</p>
-    <strong>Nutzung von Verzeichnissen im Zwischenlager</strong>
-        <p>Um ein Verzeichnis im Zwischenlager anzulegen, klicken Sie auf das Symbol "Ins Verzeichnis bewegen" neben einem Zwischenlager-Element. Es erscheint ein Eingabefeld, in welches Sie den Namen für ein neues Verzeichnis eingeben können, und eine Option, aus welcher Sie ein existierendes Verzeichnis auswählen können.</p>
+    <strong>Elemente vom Kurs in den  Zwischenspeicher kopieren</strong>
+        <p>Neben jedem Arbeitsmaterial und jeder Aktivität befindet sich ein kleines Symbol "In den Zwischenspeicher kopieren". Klicken Sie auf dieses Symbol, um eine Kopie dieses Arbeitsmaterials bzw. dieser Aktivität in den Zwischenspeicher zu kopieren. Es wird dabei nur die Aktivität selbst kopiert, jedoch keine Nutzerdaten.</p>
+    <strong>Elemente vom Zwischenspeicher in den Kurs kopieren</strong>
+        <p>Klicken Sie auf das Symbol "In den Kurs kopieren" im Zwischenspeicher und wählen Sie danach die Zielmarkierung im gewünschten Kursabschnitt aus. Um den Vorgang abzubrechen klicken Sie auf das Symbol "Abbrechen".</p>
+    <strong>Nutzung von Verzeichnissen im Zwischenspeicher</strong>
+        <p>Um ein Verzeichnis im Zwischenspeicher anzulegen, klicken Sie auf das Symbol "Ins Verzeichnis bewegen" neben einem Zwischenspeicher-Element. Es erscheint ein Eingabefeld, in welches Sie den Namen für ein neues Verzeichnis eingeben können, und eine Option, aus welcher Sie ein existierendes Verzeichnis auswählen können.</p>
 </div>';
 $string['unexpectederror'] = 'Ein unerwarteter Fehler ist aufgetreten';
 $string['uninstalled_plugin_warning_title'] = 'Dieses Plugin ist deinstalliert. Der Versuch, es wiederherzustellen, ohne das Plugin neu zu installieren: {$a} wird zu Fehlern führen. Die Wiederherstellung ist deaktiviert';

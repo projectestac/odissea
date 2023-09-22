@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allusersnum'] = 'Tots els usuaris  ({$a})';
 $string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe d\'usuari de qualificacions';
 $string['pluginname'] = 'Informe d\'usuari';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Veure l\'informe com a l\'usuari actual o com un altre usuari en els informes del butlletí de qualificacions';

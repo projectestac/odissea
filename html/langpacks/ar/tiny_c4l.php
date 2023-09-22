@@ -27,4 +27,3 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['expectedfeedback'] = 'الإفادة المتوقعة';
 $string['gradingvalue'] = 'قيمة التقييم';
-$string['privacy:metadata'] = 'إن إضافة TinyMCE للتعلم لا تخزن أيّ بيانات شخصية.';

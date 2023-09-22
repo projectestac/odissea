@@ -85,7 +85,7 @@ $string['messageprovider:expiry_notification'] = 'Notificações de expiração 
 $string['newenrols'] = 'Permitir novas inscrições';
 $string['newenrols_desc'] = 'Permitir, por predefinição, que os utilizadores se autoinscrevam nas novas disciplinas.';
 $string['newenrols_help'] = 'Esta configuração determina se o utilizador se pode inscrever nesta disciplina.';
-$string['nopassword'] = 'Não é pedida senha de inscrição';
+$string['nopassword'] = 'Não necessário senha de inscrição.';
 $string['password'] = 'Senha de inscrição';
 $string['password_help'] = 'A senha de inscrição permite restringir o acesso à disciplina apenas aos utilizadores que conheçam a senha de inscrição.
 

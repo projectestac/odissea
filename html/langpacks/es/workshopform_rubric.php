@@ -39,4 +39,4 @@ $string['mustbeunique'] = 'Las calificaciones de nivel deben ser únicas siguien
 $string['mustchooseone'] = 'Tiene que seleccionar uno de estos ítems';
 $string['mustdefinelevel'] = 'Se requiere al menos un nivel';
 $string['pluginname'] = 'Rúbrica';
-$string['privacy:metadata'] = 'El complemento Rubric solo almacena los detalles del formulario de evaluación. Los datos personales reales de cómo se llenó el formulario se almacenan en el módulo de Taller y se adjuntan a las evaluaciones exportadas.';
+$string['privacy:metadata'] = 'El plugin de Rúbricas sólo almacena los detalles del formulario de evaluación. Los datos personales reales de cómo se ha rellenado el formulario son almacenados por el propio módulo Taller y se adjuntan a las evaluaciones exportadas.';

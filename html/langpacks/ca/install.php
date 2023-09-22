@@ -46,6 +46,7 @@ $string['cliinstallfinished'] = 'La instal·lació ha finalitzat amb èxit.';
 $string['cliinstallheader'] = 'Programa d\'instal·lació de línia d\'ordres de Moodle {$a}';
 $string['climustagreelicense'] = 'En el mode no interactiu heu d\'estar d\'acord amb la llicència especificant l\'opció --d\'acord-';
 $string['cliskipdatabase'] = 'S\'està ometent la instal·lació de la base de dades.';
+$string['clisupportemail'] = 'Adreça electrònica de suport';
 $string['clitablesexist'] = 'Les taules de la base de dades ja existeixen. La instal·lació per línia d\'ordres no pot continuar.';
 $string['compatibilitysettings'] = 'S\'estan comprovant els paràmetres del PHP...';
 $string['compatibilitysettingshead'] = 'S\'estan comprovant els paràmetres del PHP...';
@@ -120,6 +121,7 @@ $string['inputdatadirectory'] = 'Directori de dades:';
 $string['inputwebadress'] = 'Adreça web:';
 $string['inputwebdirectory'] = 'Directori de Moodle';
 $string['installation'] = 'Instal·lació';
+$string['invaliddbprefix'] = 'Prefix no vàlid. El prefix només pot consistir en lletres minúscules i guió baix.';
 $string['langdownloaderror'] = 'Dissortadament l\'idioma "{$a}" no es pot baixar. La instal·lació prosseguirà en anglès.';
 $string['langdownloadok'] = 'L\'dioma "{$a}" s\'ha instal·lat amb èxit. La instal·lació prosseguirà en aquest idioma.';
 $string['memorylimit'] = 'Límit de memòria';
@@ -137,6 +139,12 @@ $string['memorylimithelp'] = '<p>El límit de memòria del PHP del vostre servid
 <p>Tanmateix, en alguns servidors això farà que no funcioni <b>cap</b> pàgina PHP (es visualitzaran errors); en aquest cas, hauríeu de suprimir el fitxer .htaccess.</p></li>
 </ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'El PHP no ha estat configurat adequadament amb l\'extensió MySQLi de manera que pugui comunicar-se amb MySQL. Reviseu el fitxer php.ini o recompileu el PHP.';
+$string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
+$string['nativeauroramysqlhelp'] = '<p>La base de dades és on s\'emmagatzemen la majoria dels paràmetres i dades de Moodle i s\'han de configurar aquí.</p>
+<p>El nom de la base de dades, el nom d\'usuari i la contrasenya són camps obligatoris; el prefix de la taula és opcional.</p>
+<p>El nom de la base de dades només pot contenir caràcters alfanumèrics, dòlar ($) i guió baix (_).</p>
+<p>Si la base de dades no existeix actualment i l\'usuari que especifiqueu té permís, Moodle provarà de crear una base de dades nova amb els permisos i paràmetres correctes.</p>
+<p>Aquest controlador no és compatible amb el motor MyISAM antic.</p>';
 $string['nativemariadb'] = 'MariaDB (native/MariaDB)';
 $string['nativemariadbhelp'] = '<p>La base de dades és on s\'emmagatzemen la majoria dels paràmetres i de les dades de Moodle, i s\'ha de configurar aquí.</p> <p>El nom de la base de dades, el nom d\'usuari i la contrasenya són camps obligatoris; el prefix de les taules és opcional.</p> <p>El nom de la base de dades pot contenir únicament caràcters alfanumèrics, el símbol del dòlar ($) i el caràcter de subratllat (_).</p> <p>Si actualment la base de dades no existeix, i l\'usuari que heu especificat té permís, Moodle intentarà crear una base de dades nova amb els permisos i els paràmetres correctes.</p>
 <p>Aquest controlador no és compatible amb el motor MyISAM heretat.</p>';

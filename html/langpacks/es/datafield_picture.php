@@ -31,5 +31,5 @@ $string['error_invalidparam4'] = 'El ancho en vista de lista necesita un valor n
 $string['error_invalidparam5'] = 'La altura en vista de lista necesita un valor numérico.';
 $string['fieldtypelabel'] = 'Imagen';
 $string['pluginname'] = 'Imagen';
-$string['privacy:metadata'] = 'El componente de campo de imagen no almacena ningún dato personal, utiliza tabla definidas en mod_data.';
+$string['privacy:metadata'] = 'El componente de campo de imagen no almacena ningún dato personal, utiliza tablas definidas en mod_data.';
 $string['sample'] = 'Zona de descripción de imagen';

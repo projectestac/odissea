@@ -29,7 +29,7 @@ $string['chooseavariable'] = 'Escoja una variable';
 $string['clicktoopen'] = 'Haga clic en el enlace {$a} para abrir el recurso.';
 $string['configdisplayoptions'] = 'Seleccione todas las opciones que deben estar disponibles; los valores existentes no se modifican. Mantenga pulsada la tecla CTRL para seleccionar varios campos.';
 $string['configframesize'] = 'Cuando una página web o un archivo subido se muestra dentro de un marco, este valor es la altura (en píxeles) del marco superior (el que contiene la barra de navegación).';
-$string['configrolesinparams'] = 'Activar si desea incluir los nombres de rol localizados en la lista de parámetros variables disponibles';
+$string['configrolesinparams'] = '¿Deberían estar disponibles como variables de parámetros URL los nombres de roles personalizados?';
 $string['configsecretphrase'] = 'Esta frase secreta se utiliza para producir código cifrado válido que pueda ser enviado a algunos servidores como parámetro. El código de cifrado se produce por un valor md5 del usuario actual dirección IP concatenado con su frase secreta. es decir, el código = md5 (IP.frase_secreta). Tenga en cuenta que esto no es fiable porque la dirección IP puede cambiar y habitualmente es compartida por diferentes equipos.';
 $string['contentheader'] = 'Contenido';
 $string['createurl'] = 'Crear una URL';
@@ -41,7 +41,9 @@ Las opciones pueden incluir:
 * Automático - Se selecciona de forma automática la mejor opción para visualizar la dirección URL
 * Incrustar - La URL se muestra dentro de la página debajo de la barra de navegación junto con la descripción y cualquier otro bloque
 * Abrir  - Sólo se muestra la dirección en la ventana del navegador
-* En ventana emergente - La URL se muestra en una ventana nueva del navegador sin menús y sin barra de direcciones';
+* En ventana emergente - La URL se muestra en una ventana nueva del navegador sin menús y sin barra de direcciones
+* En marco - La URL se muestra en un marco bajo la barra de navegación y la descripción de la URL
+* Nueva ventana - La URL se muestra en una nueva ventana del navegador con menús y una barra de direcciones';
 $string['displayselectexplain'] = 'Elija el modo de visualización; por desgracia no todos los modos son adecuados para todas las direcciones URL.';
 $string['externalurl'] = 'URL externa';
 $string['framesize'] = 'Altura del marco';
@@ -84,7 +86,7 @@ $string['popupwidthexplain'] = 'Especifica la anchura por defecto de las ventana
 $string['printintro'] = 'Mostrar la descripción de la URL';
 $string['printintroexplain'] = '¿Mostrar la descripción URL debajo del contenido? Algunos tipos de visualización pueden no mostrar la descripción incluso aunque esté activada esa opción.';
 $string['privacy:metadata'] = 'El complemento de recursos URL no almacena ningún dato personal.';
-$string['rolesinparams'] = 'Incluye los nombres de rol en los parámetros';
+$string['rolesinparams'] = 'Nombres de rol como variables URL';
 $string['search:activity'] = 'URL';
 $string['serverurl'] = 'URL del servidor';
 $string['url:addinstance'] = 'Añadir un nuevo recurso URL';

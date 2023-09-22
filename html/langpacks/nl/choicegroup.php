@@ -25,7 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:closingbeforeopening'] = 'Begindatum moet eerder zijn dan einddatum.';
+$string['activitydate:exceeded'] = 'Einddatum overschreden.';
 $string['activitydate:hasopened'] = 'Geopend:';
+$string['activitydate:notavailableyet'] = 'Nog niet beschikbaar.';
 $string['activitydate:willclose'] = 'Sluit op:';
 $string['activitydate:willopen'] = 'Opent op:';
 $string['add'] = 'Toevoegen';
@@ -68,6 +71,7 @@ $string['choicetext'] = 'Keuze tekst';
 $string['chooseaction'] = 'Selecteer een actie...';
 $string['choosegroup'] = 'Selecteer een groep';
 $string['collapse_all_groupings'] = 'Alle groeperingen inklappen';
+$string['completiondetail:submit'] = 'Kies een groep';
 $string['completionsubmit'] = 'Beschouw als voltooid wanneer de deelnemer een keuze heeft gemaakt';
 $string['createdate'] = 'Aanmaakdatum groep';
 $string['defaultsettings'] = 'Standaardinstellingen';

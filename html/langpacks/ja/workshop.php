@@ -231,7 +231,7 @@ $string['noexamplesformready'] = 'あなたは提出例を提供する前に評�
 $string['nogradeyet'] = '未評価';
 $string['nosubmissionfound'] = 'このユーザの提出はありません。';
 $string['nosubmissions'] = 'このワークショップの提出はまだありません。';
-$string['nosubmissiontype'] = '少なくとも1つの提出タイプを利用可にする必要があります。';
+$string['nosubmissiontype'] = '少なくとも1つの提出タイプを利用可能にする必要があります。';
 $string['notassessed'] = '未評価';
 $string['nothingfound'] = '表示するものはありません。';
 $string['nothingtoreview'] = 'レビューするものはありません。';
@@ -377,10 +377,10 @@ $string['submissionstartdatetime'] = '提出開始日時 {$a->daydatetime} ({$a-
 $string['submissionstartevent'] = '{$a} 提出開始';
 $string['submissiontitle'] = 'タイトル';
 $string['submissiontypedisabled'] = 'このワークショップのこの提出タイプは無効にされています。';
-$string['submissiontypefileavailable'] = 'ファイル添付<span class="accesshide"> 利用可</span>';
+$string['submissiontypefileavailable'] = 'ファイル添付<span class="accesshide"> 利用可能</span>';
 $string['submissiontypefilerequired'] = '<span class="accesshide">ファイル添付 </span>要';
 $string['submissiontypes'] = '提出タイプ';
-$string['submissiontypetextavailable'] = 'オンラインテキスト<span class="accesshide"> 利用可</span>';
+$string['submissiontypetextavailable'] = 'オンラインテキスト<span class="accesshide"> 利用可能</span>';
 $string['submissiontypetextrequired'] = '<span class="accesshide">オンラインテキスト </span>要';
 $string['submittednotsubmitted'] = '提出 ({$a->submitted}) / 未提出 ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = '提出割り当て方法';

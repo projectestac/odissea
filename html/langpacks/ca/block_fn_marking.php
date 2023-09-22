@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['name'] = 'Nom';
 $string['save'] = 'Desa';
 $string['student'] = 'Estudiant';
 $string['type'] = 'Tipus';

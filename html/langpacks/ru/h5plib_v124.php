@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['editor:a11ytitlehidelabel'] = 'Скрыть ярлык ВТ';
+$string['editor:a11ytitleshowlabel'] = 'Показать ярлык ВТ';
 $string['editor:add'] = 'Добавить';
 $string['editor:addauthor'] = 'Сохранить автора';
 $string['editor:addentity'] = 'Добавить :entity';

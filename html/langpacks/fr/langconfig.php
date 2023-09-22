@@ -44,6 +44,7 @@ $string['oldcharset'] = 'ISO-8859-1';
 $string['parentlanguage'] = '';
 $string['pm'] = 'pm';
 $string['pmcaps'] = 'PM';
+$string['questioniconfollowlangdirection'] = 'yes';
 $string['strftimedate'] = '%d %B %Y';
 $string['strftimedatefullshort'] = '%d %b %y';
 $string['strftimedatemonthabbr'] = '%d %b %Y';

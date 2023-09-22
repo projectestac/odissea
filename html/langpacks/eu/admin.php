@@ -124,6 +124,7 @@ $string['calendarexportsalt'] = 'Egutegia esportatzeko eraldaketa';
 $string['calendarsettings'] = 'Egutegia';
 $string['calendartype'] = 'Egutegi mota';
 $string['calendartype_desc'] = 'Aukeratu lehenetsitako egutegi-mota bat gune osorako. Ezarpen honek salbuespenak izan ditzake ikastaroaren ezarpenen bidez edo erabiltzaileek beren profiletan zehaztutakoaren bidez.';
+$string['campaign'] = 'Kanpaina';
 $string['cannotdeletemodfilter'] = 'Ezin duzu \'{$a->filter}\' desinstalatu \'{$a->module}\' moduluaren zati bat baita.';
 $string['cannotuninstall'] = '{$a} ezin da desinstalatu.';
 $string['categoryemail'] = 'Posta elektronikoa';
@@ -488,6 +489,7 @@ $string['customusermenuitems'] = 'Erabiltzaile-menuaren elementuak';
 $string['datarootsecurityerror'] = '<p><strong>SEGURTASUN-ALERTA!</strong></p><p>Zure dataroot direktorioa ez dago ondo kokatuta eta agerian dago web-ean. Horrek esan nahi du zure fitxategi pribatuak edozeinek eskura ditzakeela eta horietako batzuk edozein cracker-ek erabil ditzake zure gunean baimenik gabe sartzeko!</p>
 <p>Mugitu egin <em>behar</em> duzu dataroot direktorioa ({$a}) kokapen berri batera, zure web direktorio publikotik kanpo, eta ondorioz eguneratu <code>$CFG->dataroot</code> ezarpena zure config.php-en.</p>';
 $string['datarootsecuritywarning'] = 'Zure gunearen konfigurazioa agian ez da segurua izango. Mesedez, ziurta ezazu zure sustrai-direktoriora ({$a}) ezin dela zuzenean web-etik heldu.';
+$string['dbprefixtoolong'] = 'Zure guneko datu-basearen aurrizkia ($CFG->prefix) luzeegia da ({$a->current} karaktere). Baimendutako gehieneko karaktere kopurua {$a->maximum} da.';
 $string['dbsessions'] = 'Erabili datu-basea saioaren informazioa lortzeko';
 $string['debug'] = 'Arazketa mezuen maila';
 $string['debugall'] = 'DENAK: Erakutsi PHP arazketa-mezu guztiak';
@@ -926,8 +928,10 @@ $string['navshowmycoursecategories'] = 'Erakutsi nire ikastaro-kategoriak';
 $string['navshowmycoursecategories_help'] = 'Gaituz gero, erabiltzaileen Nire Ikastaroak blokean ikastaroak kategorietan erakutsiko dira nabigazio-blokean (soilik azal Klasikoan oinarritutako azaletan).';
 $string['navsortmycourseshiddenlast'] = 'Erakutsi nire ezkutuko ikastaroak zerrendaren amaieran';
 $string['navsortmycourseshiddenlast_help'] = 'Gaituz gero, ezkutuan dagoen edozein ikastaro ikusgarri dauden ikastaroen ondoren zerrendatuko da (ezkutuko ikastaroak ikusi ditzaketen erabiltzaileen kasuan). Bestela, ikastaro guztiak, ikusgarritasuna edozein izanda ere, \'Ordenatu nire ikastaroak\' ezarpenaren arabera zerrendatuko dira.';
-$string['navsortmycoursessort'] = 'Ordenatu nire ikastaroak';
-$string['navsortmycoursessort_help'] = 'Aukera honek zehazten du Nire ikastaroak atalean ikastaroak ordenatze-irizpidearen arabera (Gunearen Kudeaketa > Ikastaroak > Kudeatu ikastaroak eta kategoriak atalean zehaztutakoaren arabera) edo alfabetikoki erakutsiko diren.';
+$string['navsortmycoursessort'] = 'Ikastaroen ordena nabigazio-blokean';
+$string['navsortmycoursessort_help'] = 'Ikastaroak Gunearen Kudeaketa > Ikastaroak > Kudeatu ikastaroak eta kategoriak atalean zehaztutakoaren arabera ordenatu behar dira ala ikastaroko ezarpenen arabera alfabetikoki? Ezarpen hau soilik aplikatzen da Klasikoa azalean oinarritutako azaletan.
+
+Aukera honek zehazten du Nire ikastaroak atalean ikastaroak ordenatze-irizpidearen arabera () edo alfabetikoki erakutsiko diren.';
 $string['never'] = 'Inoiz ez';
 $string['neverdeleteruns'] = 'Inoiz ez ezabatu exekuzioak';
 $string['newestdocindexed'] = 'Indexatutako dokumentu berriena';
@@ -1315,6 +1319,7 @@ $string['stickyblocksmymoodle'] = 'Nire Moodle';
 $string['stickyblockspagetype'] = 'Konfiguratu beharreko orri mota';
 $string['strictformsrequired'] = 'Beharrezko eremuen balidatze zorrotza';
 $string['stripalltitletags'] = 'Ezabatu HTML etiketak jarduera-izen guztietatik';
+$string['supportandservices'] = 'Laguntza eta zerbitzuak';
 $string['supportavailability'] = 'Laguntza-kontaktuaren eskuragarritasuna';
 $string['supportcontact'] = 'Laguntzarako kontaktua';
 $string['supportemail'] = 'Laguntzarako helbide elektronikoa';

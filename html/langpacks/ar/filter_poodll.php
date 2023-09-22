@@ -52,7 +52,7 @@ $string['servername'] = 'عنوان مخدم Poodll Red5';
 $string['sitedefault'] = 'إفتراضي الموقع';
 $string['size'] = 'الحجم';
 $string['supportinfo'] = 'معلومات الدعم';
-$string['templatealternate'] = 'المحتوى البديل (المظهر {$a})';
+$string['templatealternate'] = 'المحتوى البديل (القالب {$a})';
 $string['templatealternate_end'] = 'نهاية المحتوى البديل (المظهر {$a})';
 $string['templatedefaults_desc'] = 'حدد الافتراضيات عبر أزواج مفصولة بمحددات من الاسم=القيمة. أي width=800,height=900,feeling=joy';
 $string['thirty_days'] = '30 يومًا';

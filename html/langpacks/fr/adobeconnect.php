@@ -164,7 +164,7 @@ $string['roletoassign'] = 'Rôle à attribuer';
 $string['samemeettime'] = 'Heure de réunion invalide';
 $string['savechanges'] = 'Enregistrer';
 $string['selectparticipants'] = 'Attribuer des rôles';
-$string['settingblurb'] = '<center><img src = "{$a-> image}" /> </center><br />
+$string['settingblurb'] = '<center><img src = "{$a->image}" /> </center><br />
     <p>Adobe Systems Inc. et Remote-Learner.net se sont associés pour créer le premier logiciel disponible au public et sponsorisé officiellement, méthode d\'intégration entre Moodle et Adobe Acrobat Connect Pro. Cette nouvelle intégration est conçue pour simplifier l\'utilisation des événements synchrones dans Moodle. Il fournit une connexion unique entre les deux systèmes avec la création et gestion faciles de réunions Adobe Connect Pro
      </p><br />
     <p><center> À propos de Remote-Learner </center>

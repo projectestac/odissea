@@ -114,14 +114,13 @@ $string['groupmemberssee'] = 'Ver los integrantes del grupo';
 $string['groupmembersselected'] = 'Miembros del grupo seleccionado';
 $string['groupmode'] = 'Modo de grupo';
 $string['groupmode_help'] = 'Esta configuración tiene 3 opciones:
+* Sin grupos.
+* Grupos separados - Los estudiantes se dividen en grupos y sólo pueden ver el trabajo de su propio grupo.
+* Grupos visibles - Los estudiantes se dividen en grupos, pero pueden ver el trabajo de otros grupos.
 
-* Sin grupos
-* Grupos separados - Cada miembro del grupo solamente puede ver a su propio grupo, los demás son invisibles
-* Grupos visible - Cada miembro del grupo trabaja en su propio grupo, pero también puede ver a los otros grupos
-
-El modo de grupo definido a nivel del curso es el modo por defecto para todas las actividades dentro del curso. Cada actividad que soporta grupos también puede definir su propio modo de grupo, aunque si se forza el modo de grupo a nivel del curso, la configuración del modo de grupo para cada actividad es ignorada.';
+El modo de grupo definido a nivel del curso es el modo por defecto para todas las actividades dentro del curso. Si el modo de grupo se fuerza a nivel de curso, no se puede cambiar en ninguna actividad.';
 $string['groupmodeforce'] = 'Forzar el modo de grupo';
-$string['groupmodeforce_help'] = 'Si se fuerza el modo grupo, entonces el modo de grupo en el curso se aplica a todas las actividades del curso. En ese caso se pasan por alto los ajustes del modo de grupo.';
+$string['groupmodeforce_help'] = 'El modo de grupo se fuerza para todas las actividades y no se puede cambiar en actividades específicas.';
 $string['groupmy'] = 'Mi grupo';
 $string['groupname'] = 'Nombre del grupo';
 $string['groupnameexists'] = 'El nombre de grupo \'{$a}\' ya existe en este curso; por favor, elija otro.';
@@ -139,10 +138,10 @@ $string['groupsvisible'] = 'Grupos visibles';
 $string['grouptemplate'] = 'Grupo @';
 $string['hidepicture'] = 'Ocultar imagen';
 $string['importgroups'] = 'Importar grupos';
-$string['importgroups_help'] = 'Los grupos pueden ser importados mediante un archivo de texto. El formato del archivo debe tener la siguiente estructura:
+$string['importgroups_help'] = 'Los grupos pueden importarse mediante un archivo de texto. El formato del archivo debe tener la siguiente estructura:
 
 * Cada línea del archivo contiene un registro
-* Cada registro es una serie de datos separados por comas
+* Cada registro es una serie de datos separados por el delimitador elegido
 * El primer registro contiene una lista de nombres de campos que definen el formato del resto del archivo
 * Es obligatorio el campo groupname
 * Son opcionales los campos groupidnumber, description, enrolmentkey, groupingname, enablemessaging';

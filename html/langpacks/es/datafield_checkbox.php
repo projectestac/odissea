@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Casilla de selección';
-$string['pluginname'] = 'Casilla de selección';
+$string['pluginname'] = 'Casillas de selección';
 $string['privacy:metadata'] = 'El componente de campo de casilla de verificación no almacena ningún dato personal en sí mismo, utiliza tabla definidas en mod_data.';

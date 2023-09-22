@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addlanguage'] = 'Adicionar idioma manualmente';
+$string['addlanguage_desc'] = 'Se ativar esta opção, poderá adicionar idiomas manualmente inserindo o código iso do idioma na caixa de texto abaixo. Caso contrário, deverá instalar pelo menos 2 idiomas nos Pacotes linguísticos.';
+$string['fallbackspantag'] = 'Suporte a tags &lt;span&gt;';
+$string['fallbackspantag_desc'] = 'Para além da sintaxe {mlang} preserva as tradicional tags &lt;span class="multilang"&gt;.';
+$string['helplinktext'] = 'Conteúdo Multilingue (v2)';
 $string['highlight'] = 'Destacar delimitadores';
 $string['highlight_desc'] = 'Destacar visualmente no editor os delimitadores de conteúdos multilingue (por exemplo: {mlang XX} e {mlang}) no editor WYSIWYG).';
 $string['highlightcss'] = 'CSS para tag de idioma';
@@ -43,12 +48,18 @@ Se pretende mostrar o idioma para os blocos multilingues, pode usar algo como o 
     color: #ffffff;
 }
 </pre>';
+$string['language_options_desc'] = 'Selecione as opções para a lista pendente do botão Idioma.
+<br>A lista completa está disponível em <small><a href=\'https://www.w3schools.com/tags/ref_language_codes.asp\'><u>https://www.w3schools.com/tags/ref_language_codes.asp</u></a></small>';
+$string['language_setting'] = 'Configurações do botão de idioma';
+$string['languageoptions'] = 'Idioma';
 $string['multilang2:desc'] = 'Ajuda a adicionar conteúdo multilingue (o Filtro Conteúdo Multilingue (v2) tem de estar ativado)';
 $string['multilang2:language'] = 'Idioma';
 $string['multilang2:other'] = 'Outro';
+$string['multilang2:removetag'] = 'Remover a tag idioma';
 $string['multilang2:viewlanguagemenu'] = 'Ver a lista pendente de idiomas no editor TinyMCE';
 $string['pluginname'] = 'Conteúdo Multilingue (v2)';
 $string['privacy:metadata'] = 'O módulo Conteúdo Multilingue (v2) para o Tiny não armazena quaisquer dados pessoais.';
+$string['removealltags'] = 'Remover todas as tags de idioma';
 $string['requiremultilang2'] = 'Requer o Filtro Conteúdo Multilingue (v2)';
 $string['requiremultilang2_desc'] = 'Se ativar esta opção, a lista pendente de idiomas fica visível apenas quando o Filtro Conteúdo Multilingue (v2) está ativado.';
 $string['settings'] = 'Configuração do Conteúdo Multilingue (v2) para o Tiny';

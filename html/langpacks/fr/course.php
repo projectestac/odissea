@@ -66,7 +66,7 @@ $string['completionrequirements'] = 'Conditions d\'achèvement pour {$a}';
 $string['courseaccess'] = 'Accès au cours';
 $string['coursealreadyfinished'] = 'Cours déjà terminé';
 $string['coursecontentnotification'] = 'Envoyer une notification de modification de contenu';
-$string['coursecontentnotification_help'] = 'Cocher la case pour envoyer aux participants au cours une notification lors de chaque création ou modification de ressource ou d\'activité. La notification ne sera envoyée qu\'aux utilisateurs ayant accès à l\'activité ou à la ressource.';
+$string['coursecontentnotification_help'] = 'Cocher la case pour envoyer aux participants au cours une notification lors de la création ou de la modification de cette ressource ou activité. La notification ne sera envoyée qu\'aux utilisateurs ayant accès à l\'activité ou à la ressource.';
 $string['coursecontentnotifnew'] = 'Nouveau contenu de {$a->coursename}';
 $string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> a été créé dans le cours <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Modifier vos préférences de notification</a></p>';
 $string['coursecontentnotifupdate'] = 'Changement de contenu de {$a->coursename}';

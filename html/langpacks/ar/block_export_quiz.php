@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['export_quiz:addinstance'] = 'إضافة كتلة تصدير اختبار جديدة';
-$string['export_quiz:myaddinstance'] = 'إضافة كتلة تصدير اختبار جديدة إلى دفة القيادة';
+$string['export_quiz:myaddinstance'] = 'إضافة كتلة تصدير اختبار جديدة إلى لوحة التحكم';
 $string['footer'] = 'أنقر اسم الاختبار لتنزيله.';
 $string['noaccess'] = 'لا وصول إلى الاختبار المعطى';
 $string['pluginname'] = 'تصدير الاختبار';

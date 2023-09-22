@@ -30,7 +30,8 @@ $string['privacy:metadata'] = 'El complemento de limpieza de spam no almacena ni
 $string['spamauto'] = 'Detectar automáticamente patrones comunes de spam';
 $string['spamcannotdelete'] = 'No se puede eliminar este usuario';
 $string['spamcannotfinduser'] = 'No hay usuarios que se ajusten a su búsqueda';
-$string['spamcleanerintro'] = 'Este scipt le permite buscar todos los perfiles de usuario para ciertas cadenas y luego eliminar esas cuentas que han sido creadas por difusores de spam. Puede buscar por múltiples palabras clave usando comas (e.g., casino, porno)<br /><br />Moodle docs tiene más información sobre este asunto en <a href="http://docs.moodle.org/en/Reducing_spam_in_Moodle">Reducción del spam en Moodle</a>.';
+$string['spamcleanerintro'] = '<p>Este script le permite buscar todos los perfiles de usuario para ciertas cadenas y luego eliminar esas cuentas que han sido creadas por difusores de spam. Puede buscar por múltiples palabras clave usando comas (e.g., casino, porno).</p>
+<p>Más información en <a href="https://docs.moodle.org/en/Reducing_spam_in_Moodle">Reducir spam en Moodle</a>.</p>';
 $string['spamdeleteall'] = 'Eliminar las cuentas de estos usuarios';
 $string['spamdeleteallconfirm'] = '¿Está seguro de que quiere eliminar todas estas cuentas? No podrá deshacer esta operación.';
 $string['spamdeleteconfirm'] = '¿Está seguro de que quiere eliminar esta entrada? No podrá deshacer esta operación.';

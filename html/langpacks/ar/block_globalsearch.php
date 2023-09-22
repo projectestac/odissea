@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['globalsearch:addinstance'] = 'إضافة كتلة جديدة للبحث العمومي';
-$string['globalsearch:myaddinstance'] = 'إضافة كتلة جديدة للبحث العمومي إلى دفة القيادة';
+$string['globalsearch:myaddinstance'] = 'إضافة كتلة جديدة للبحث العمومي إلى لوحة التحكم';
 $string['pluginname'] = 'البحث العمومي';
 $string['privacy:metadata'] = 'كتلة البحث العمومي تظهر فقط البيانات المخزونة في مواضع أخرى.';

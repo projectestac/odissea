@@ -1030,6 +1030,26 @@ function xmldb_hotpot_upgrade($oldversion) {
         upgrade_mod_savepoint(true, "$newversion", 'hotpot');
     }
 
+    $newversion = 2022091548;
+    if ($oldversion < $newversion) {
+        $table = new xmldb_table('hotpot');
+        $fields = array(
+            new xmldb_field('intro', XMLDB_TYPE_TEXT, 'small', null, null, null, null, 'name'),
+            new xmldb_field('introformat', XMLDB_TYPE_INTEGER, '4', XMLDB_UNSIGNED, XMLDB_NOTNULL, null, '0', 'intro'),
+        );
+        foreach ($fields as $field) {
+            xmldb_hotpot_fix_previous_field($dbman, $table, $field);
+            if ($dbman->field_exists($table, $field)) {
+                $dbman->change_field_type($table, $field);
+            } else {
+                $dbman->add_field($table, $field);
+            }
+        }
+        // Set NULL intros to empty string - just to be tidy ;-)
+        $DB->set_field_select('hotpot', 'intro', '', 'intro IS NULL');
+        upgrade_mod_savepoint(true, "$newversion", 'hotpot');
+    }
+
     if ($empty_cache) {
         $DB->delete_records('hotpot_cache');
     }

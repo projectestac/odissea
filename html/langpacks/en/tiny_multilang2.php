@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addlanguage'] = 'Add language manually';
+$string['addlanguage_desc'] = 'If you choose this option, you can manually add languages by entering the iso code of the language in the textbox below. Otherwise, you must install at least 2 languages in the Language Pack.';
 $string['fallbackspantag'] = 'Support &lt;span&gt; tags';
 $string['fallbackspantag_desc'] = 'In addition to the {mlang} syntax preserve the traditional &lt;span class="multilang"&gt; tags.';
 $string['helplinktext'] = 'Multi-Language Content (v2)';
@@ -45,12 +47,19 @@ If you want to display the language for the multilang blocks, you can use someth
     color: #ffffff;
 }
 </pre>';
+$string['language_options_desc'] = 'Select options for the Language button drop-down menu.
+                             <br>The full list is available from  <small><a href=\'https://www.w3schools.com/tags/ref_language_codes.asp\'>
+                             <u>https://www.w3schools.com/tags/ref_language_codes.asp</u></a></small>';
+$string['language_setting'] = 'Language button settings';
+$string['languageoptions'] = 'Language';
 $string['multilang2:desc'] = 'Helps adding multilingual content (you need the Multi-Language Content (v2) filter enabled)';
 $string['multilang2:language'] = 'Language';
 $string['multilang2:other'] = 'Fallback';
+$string['multilang2:removetag'] = 'Remove language tag';
 $string['multilang2:viewlanguagemenu'] = 'View language dropdown menu in TinyMCE editor';
 $string['pluginname'] = 'Multi-Language Content (v2)';
 $string['privacy:metadata'] = 'The Tiny Multi-Language Content (v2) plugin does not store any personal data.';
+$string['removealltags'] = 'Remove all lang tags';
 $string['requiremultilang2'] = 'Require Multi-Language Content (v2) filter';
 $string['requiremultilang2_desc'] = 'If enabled, the language drop down menu is visible only when the Multi-Language Content (v2) filter is enabled.';
 $string['settings'] = 'Tiny Multi-Language Content (v2) settings';

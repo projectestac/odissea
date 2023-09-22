@@ -234,7 +234,7 @@ Em alternativa, pode configurar de modo a que os alunos obtenham feedback imedia
 Estes são provavelmente os dois modos de comportamento mais usados.';
 $string['howquestionsbehave_link'] = 'question/behaviour';
 $string['idnumber'] = 'Número de identificação (ID)';
-$string['idnumber_help'] = 'Se usado, o número de identificação (ID) deve ser único dentro de cada categoria de perguntas. É outro modo de identificar uma pergunta, que às vezes é útil, mas geralmente pode ficar em branco.';
+$string['idnumber_help'] = 'Se usado, o número de identificação (ID) tem de ser único dentro de cada categoria de perguntas. É outro modo de identificar uma pergunta, que às vezes é útil, mas geralmente pode ficar em branco.';
 $string['ignorebroken'] = 'Ignorar ligações quebradas';
 $string['import'] = 'Importar';
 $string['importcategory'] = 'Importar para a categoria';
@@ -314,7 +314,7 @@ $string['nopermissionadd'] = 'Não tem permissão para adicionar perguntas aqui.
 $string['nopermissionedit'] = 'Não tem permissão para editar perguntas a partir daqui.';
 $string['nopermissionmove'] = 'Não tem permissão para mover perguntas a partir desta categoria. Tem de guardar a pergunta nesta categoria ou como uma nova pergunta.';
 $string['noprobs'] = 'Não foram encontrados problemas na base de dados das perguntas.';
-$string['noquestionbanks'] = 'Nenhum módulo de base de dados de perguntas encontrado.';
+$string['noquestionbanks'] = 'Nenhum módulo da base de dados de perguntas encontrado.';
 $string['noquestions'] = 'Não foram encontradas perguntas para exportação. Certifique-se que selecionou uma categoria com perguntas.';
 $string['noquestionsinfile'] = 'Não existem perguntas no ficheiro de importação';
 $string['noresponse'] = 'Sem resposta';
@@ -390,7 +390,7 @@ $string['privacy:metadata:link:qbehaviour'] = 'O subsistema Pergunta utiliza o m
 $string['privacy:metadata:link:qformat'] = 'O subsistema Pergunta utiliza o módulo Formato de pergunta com a finalidade de importar e exportar perguntas em diferentes formatos.';
 $string['privacy:metadata:link:qtype'] = 'O subsistema Pergunta interage com o módulo Tipo de pergunta que contém os diferentes tipos de pergunta.';
 $string['published'] = 'partilhada';
-$string['qbanknotfound'] = 'O módulo de base de dados de perguntas \'{$a}\' não existe ou não é reconhecido.';
+$string['qbanknotfound'] = 'O módulo da base de dados de perguntas \'{$a}\' não existe ou não é reconhecido.';
 $string['qtypeveryshort'] = 'T';
 $string['question_version'] = 'Versão da pergunta';
 $string['questionaffected'] = 'A <a href="{$a->qurl}">pergunta "{$a->name}" ({$a->qtype})</a> está nesta categoria mas também está a ser usada no <a href="{$a->qurl}">teste "{$a->quizname}"</a> da disciplina "{$a->coursename}".';
@@ -503,5 +503,5 @@ $string['withselected'] = 'Com as selecionadas';
 $string['wrongprefix'] = 'nameprefix {$a} formatado incorretamente';
 $string['xoutofmax'] = '{$a->mark} em {$a->max}';
 $string['yougotnright'] = 'Selecionou {$a->num} respostas corretas.';
-$string['youmustselectaqtype'] = 'Tem de selecionar um tipo de pergunta';
+$string['youmustselectaqtype'] = 'Tem de selecionar um tipo de pergunta.';
 $string['yourfileshoulddownload'] = 'A exportação do seu ficheiro deve iniciar dentro de instantes. Se não acontecer nos próximos segundos, por favor, <a href="{$a}">clique aqui</a>.';

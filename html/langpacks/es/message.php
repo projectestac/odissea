@@ -68,7 +68,7 @@ $string['disableall'] = 'Desactivar las notificaciones';
 $string['disabled'] = 'La mensajería está deshabilitada en este sitio';
 $string['disallowed'] = 'No permitido';
 $string['editmessages'] = 'Editar mensajes';
-$string['emailtagline'] = 'Ésta es una copia del mensaje que se le ha enviado en "{$a->sitename}". Vaya a {$a->url} para contestar.';
+$string['emailtagline'] = 'Esta es una copia del mensaje que se le ha enviado en el sitio {$a->sitename}. Vaya a <a href="{$a->url}">{$a->url}</a> para contestar.';
 $string['enabled'] = 'Habilitado';
 $string['errorcallingprocessor'] = 'Error al llamar al proceso de salida definido';
 $string['errorconversationdoesnotexist'] = 'La conversación no existe';

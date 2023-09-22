@@ -31,7 +31,7 @@ $string['autocreate'] = '<p>Kurse können automatisch in Moodle angelegt werden,
 $string['autocreate_key'] = 'Automatisches Erstellen';
 $string['autocreation_settings'] = 'Einstellungen für automatisch angelegte Kurse';
 $string['autoupdate_settings'] = 'Einstellungen für automatisch aktualisierte Kurse';
-$string['autoupdate_settings_desc'] = '<p>Wählen Sie die Felder aus, die aktualisiert werden sollen, wenn die geplante Aufgabe "LDAP-Einschreibungen synchronisieren" ausgeführt wird.</p>
+$string['autoupdate_settings_desc'] = '<p>Wählen Sie die Felder aus, die aktualisiert werden sollen, wenn die Task "Synchronisierung von LDAP-Einschreibungen" ausgeführt wird.</p>
 <p>Wenn mindestens ein Feld ausgewählt ist, erfolgt die Aktualisierung.</p>';
 $string['bind_dn'] = 'Wenn Sie einen sog. bind-user für die LDAP-Suche nach Nutzer/innen verwenden wollen, geben Sie diesen hier an, z.B. \'cn=ldapuser,ou=public,o=org\'';
 $string['bind_dn_key'] = 'Anmeldename des Bind Users';
@@ -123,7 +123,7 @@ $string['role_mapping_key'] = 'Rollen über LDAP zuweisen';
 $string['roles'] = 'Rollenabbildung';
 $string['server_settings'] = 'Einstellungen für LDAP-Server';
 $string['synccourserole'] = '== Synching Kurs \'{$a->idnumber}\' für Rolle \'{$a->role_shortname}\'';
-$string['syncenrolmentstask'] = 'LDAP-Einschreibeprozess synchronisieren';
+$string['syncenrolmentstask'] = 'Synchronisierung von LDAP-Einschreibungen';
 $string['template'] = 'Optional: Automatisch angelegte Kurse können ihre Kurseinstellungen aus einer Kursvorlage kopieren. Tragen Sie hier die Kurzbezeichnung dieser Kursvorlage ein.';
 $string['template_key'] = 'Vorlage';
 $string['unassignrole'] = 'Rollenzuordnung \'{$a->role_shortname}\' für Nutzer \'{$a->user_username}\' im Kurs \'{$a->course_shortname}\' (id {$a->course_id}) aufheben';

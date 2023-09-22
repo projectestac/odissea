@@ -34,3 +34,4 @@ $string['pluginname_help'] = 'This is file format for importing questions from H
 $string['pluginname_link'] = 'qformat/hotpot';
 
 $string['requiremodhotpot'] = 'The Hot Potatoes question import plugin cannot be installed because the HotPot activity module is missing. Please download the HotPot activity module, put it at {$a}/mod/hotpot, and reload this page.';
+$string['privacy:metadata'] = 'The Hot Potatoes question import plugin does not store personal data.';

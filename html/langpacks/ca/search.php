@@ -29,6 +29,7 @@ $string['advancedsearch'] = 'Cerca avançada';
 $string['all'] = 'Tots';
 $string['allareas'] = 'Totes les àrees';
 $string['allcourses'] = 'Tots els cursos';
+$string['allusers'] = 'Tots els usuaris';
 $string['author'] = 'Autor/a';
 $string['authorname'] = 'Nom de l\'autor/a';
 $string['back'] = 'Enrere';

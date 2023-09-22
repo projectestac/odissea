@@ -25,22 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['choosetemplate'] = 'إختر المظهر';
+$string['choosetemplate'] = 'إختر القالب';
 $string['configmaxfiles'] = 'القيمة الافتراضية للإعداد \'أقصى عدد من ملفات PDF المرفوعة\' في صفحة تهيئة الواجب';
 $string['coversheettemplate'] = 'مظهر الغلاف';
-$string['deletetemplate'] = 'حذف المظهر';
-$string['duplicatetemplate'] = 'تكرار المظهر';
-$string['edittemplates'] = 'تحرير المظاهر';
+$string['deletetemplate'] = 'حذف القالب';
+$string['duplicatetemplate'] = 'تكرار القالب';
+$string['edittemplates'] = 'تحرير القوالب';
 $string['enabled_help'] = 'هذا سيسمح بالتسليم والتجميع التلقائي لملفات PDF من الطلاب. هو مصمم لاستعماله مقترنًا مع نوع التصحيحات في ملفات PDF.';
 $string['itemsettingmore'] = 'اسم الحقل (للحقول النصية) أو تنسيق التاريخ (مثل d/m/Y)';
 $string['missingfield'] = 'ينبغي عليك إملاء حقل \'{$a}\' في نموذج التسليم.';
 $string['newtemplate'] = 'مظهر جديد';
 $string['notemplate'] = 'لا مظهر';
 $string['pluginname'] = 'تسليم PDF';
-$string['savetemplate'] = 'حفظ المظهر';
-$string['showused'] = 'المظهر المستعمل في الواجبات';
+$string['savetemplate'] = 'حفظ القالب';
+$string['showused'] = 'القالب المستعمل في الواجبات';
 $string['sitetemplate'] = 'مظهر عمومي';
 $string['sitetemplatehelp'] = 'يمكن مشاهدتها في أرجاء الموقع، ولكن يمكن تحريرها من قبل مشرف الموقع حصراً';
-$string['templatename'] = 'اسم المظهر';
-$string['templatenotused'] = 'هذا المظهر ليس مستعملاً حالياً';
-$string['templateusecount'] = 'هذا المظهر مستعمل حالياً من قبل {$a} من الواجبات';
+$string['templatename'] = 'اسم القالب';
+$string['templatenotused'] = 'هذا القالب ليس مستعملاً حالياً';
+$string['templateusecount'] = 'هذا القالب مستعمل حالياً من قبل {$a} من الواجبات';

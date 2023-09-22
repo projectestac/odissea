@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'الملفات الخاصة';
 $string['privacy:metadata'] = 'كتلة الملفات الخاصة تعطي فقط نظرة على ملفات المستخدم الخاصة ورابطاً لها.';
 $string['private_files:addinstance'] = 'إضافة كتلة جديدة من الملفات الخاصة';
-$string['private_files:myaddinstance'] = 'إضافة كتلة جديدة من الملفات الخاصة إلى دفة القيادة';
+$string['private_files:myaddinstance'] = 'إضافة كتلة جديدة من الملفات الخاصة إلى لوحة التحكم';
 $string['privatefiles'] = 'الملفات الخاصة';

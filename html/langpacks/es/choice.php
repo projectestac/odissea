@@ -92,14 +92,12 @@ $string['limitno'] = 'Límite {no}';
 $string['modulename'] = 'Consulta';
 $string['modulename_help'] = 'El módulo Consulta permite al profesor hacer una pregunta especificando las posibles respuestas posibles.
 
-Los resultados de la elección puede ser publicados después que los estudiantes hayan respondido, después de cierta fecha, o no publicarse. Los resultados pueden ser publicados, con los nombres de los estudiantes o de forma anónima.
+Los resultados de la elección puede ser publicados después que los estudiantes hayan respondido, después de cierta fecha, o no publicarse. Los resultados pueden ser publicados con los nombres de los estudiantes o de forma anónima (aunque los profesores siempre verán los nombres de los estudiantes y sus respuestas).
 
 Una Consulta puede utilizarse
 
 * Para realizar una encuesta rápida que estimule a los alunmos a reflexionar sobre un tema
-
 * Para comprobar rápidamente que los estudiantes han entendido algo concreto
-
 * Para facilitar la toma de decisiones, por ejemplo permitiendo a los estudiantes votar algún aspecto relacionado con el curso.';
 $string['modulename_link'] = 'mod/choice/view';
 $string['modulenameplural'] = 'Consultas';
