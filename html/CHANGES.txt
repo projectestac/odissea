@@ -3,6 +3,31 @@ Release notes for Odissea (https://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+
+Changes 24.06.10
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.1.10
+- Updated langpacks
+- Attendance: Upgraded module
+- Choicegroup: Upgraded module
+- Completion progress: Upgraded module
+- Course format simple: Show content of labels in non-editing view
+- coursequotas: Fixed lang string
+- Custom user menu items: Synchronized with Àgora. Fixed several links.
+- GeoGebra: Upgraded module
+- Hot Potatoes: Upgraded module
+- Hot Potatoes: Upgraded question format
+- langs: Removed limitation by code
+- lesson: Fixed Matching questions does not match with expected response (MDL-79937)
+- local_oauth: Upgraded module
+- Question Type Numerical: Fixed PHP 8.x compatibility error
+- Questionnaire: Upgraded module
+- tool_oauth2: Fixed loading of form to create a custom service
+- Theme xtecboost: Fixed scroll in list of conversations
+- Theme xtecboost: Reduced the size of the icons of the activities in the course view
+- Wiris: Upgraded all components
+
+
 Changes 23.09.12
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 4.1.5+
