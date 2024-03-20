@@ -62,11 +62,11 @@ $CFG->local_redislock_logging = false;
 // Use the system temporary directory
 $CFG->localrequestdir = '/tmp';
 
-$CFG->customusermenuitems = "grades,grades|/grade/report/mygrades.php|grades
-    messages,message|/message/index.php|message
-    badges,badges|/badges/mybadges.php|award
-    calendar,calendar|/calendar/view.php|i/calendar
-    preferences,moodle|/user/preferences.php|preferences";
+$CFG->customusermenuitems = 'profile,moodle|/user/profile.php
+messages,message|/message/index.php
+grades,grades|/grade/report/mygrades.php
+badges,badges|/badges/mybadges.php
+calendar,core_calendar|/calendar/view.php?view=month';
 
 $CFG->forced_plugin_settings = [
     'block_configurable_reports' => [
